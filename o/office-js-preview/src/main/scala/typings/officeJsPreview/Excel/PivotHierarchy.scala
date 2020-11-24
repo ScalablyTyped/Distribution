@@ -8,7 +8,7 @@ import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -18,9 +18,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PivotHierarchy extends ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_PivotHierarchy: RequestContext = js.native
+  
   /**
     *
     * Returns the PivotFields associated with the PivotHierarchy.
@@ -28,6 +30,7 @@ trait PivotHierarchy extends ClientObject {
     * [Api set: ExcelApi 1.8]
     */
   val fields: PivotFieldCollection = js.native
+  
   /**
     *
     * Id of the PivotHierarchy.
@@ -35,13 +38,7 @@ trait PivotHierarchy extends ClientObject {
     * [Api set: ExcelApi 1.8]
     */
   val id: String = js.native
-  /**
-    *
-    * Name of the PivotHierarchy.
-    *
-    * [Api set: ExcelApi 1.8]
-    */
-  var name: String = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -52,6 +49,15 @@ trait PivotHierarchy extends ClientObject {
   def load(propertyNamesAndPaths: Expand): PivotHierarchy = js.native
   def load(propertyNames: String): PivotHierarchy = js.native
   def load(propertyNames: js.Array[String]): PivotHierarchy = js.native
+  
+  /**
+    *
+    * Name of the PivotHierarchy.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
+  var name: String = js.native
+  
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks
@@ -67,10 +73,10 @@ trait PivotHierarchy extends ClientObject {
   def set(properties: PivotHierarchyUpdateData, options: UpdateOptions): Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: PivotHierarchy): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.PivotHierarchy object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotHierarchyData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): PivotHierarchyData = js.native
 }
-

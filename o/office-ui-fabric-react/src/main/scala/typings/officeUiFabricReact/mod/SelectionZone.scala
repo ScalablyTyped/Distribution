@@ -5,7 +5,7 @@ import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneProps
 import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.react.mod.DeprecatedLifecycle because Already inherited
@@ -21,12 +21,12 @@ class SelectionZone protected ()
   extends typings.officeUiFabricReact.libDetailsListMod.SelectionZone {
   def this(props: ISelectionZoneProps) = this()
 }
-
 /* static members */
 @JSImport("office-ui-fabric-react", "SelectionZone")
 @js.native
 object SelectionZone extends js.Object {
+  
   var defaultProps: IsSelectedOnFocus = js.native
+  
   def getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState): ISelectionZoneState = js.native
 }
-

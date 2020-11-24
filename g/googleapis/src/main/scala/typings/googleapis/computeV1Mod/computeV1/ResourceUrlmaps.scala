@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Urlmaps")
 @js.native
 class ResourceUrlmaps protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.urlMaps.delete
     * @desc Deletes the specified UrlMap resource.
@@ -99,6 +101,7 @@ class ResourceUrlmaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.urlMaps.get
     * @desc Returns the specified UrlMap resource. Gets a list of available URL
@@ -185,6 +188,7 @@ class ResourceUrlmaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUrlMap]
   ): Unit = js.native
+  
   /**
     * compute.urlMaps.insert
     * @desc Creates a UrlMap resource in the specified project using the data
@@ -273,6 +277,7 @@ class ResourceUrlmaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.urlMaps.invalidateCache
     * @desc Initiates a cache invalidation operation, invalidating the
@@ -365,6 +370,7 @@ class ResourceUrlmaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.urlMaps.list
     * @desc Retrieves the list of UrlMap resources available to the specified
@@ -464,6 +470,7 @@ class ResourceUrlmaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUrlMapList]
   ): Unit = js.native
+  
   /**
     * compute.urlMaps.patch
     * @desc Patches the specified UrlMap resource with the data included in the
@@ -559,6 +566,7 @@ class ResourceUrlmaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.urlMaps.update
     * @desc Updates the specified UrlMap resource with the data included in the
@@ -653,6 +661,7 @@ class ResourceUrlmaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.urlMaps.validate
     * @desc Runs static validation for the UrlMap. In particular, the tests of
@@ -749,4 +758,3 @@ class ResourceUrlmaps protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUrlMapsValidateResponse]
   ): Unit = js.native
 }
-

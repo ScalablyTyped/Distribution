@@ -10,9 +10,9 @@ Typings are for version 6.3
 | ------------------ | :-------------: |
 | Full name          | react-instantsearch-core |
 | Keywords           | algolia, components, fast, instantsearch, react, search |
-| # releases         | 23 |
+| # releases         | 20 |
 | # dependents       | 3 |
-| # downloads        | 2831078 |
+| # downloads        | 6585769 |
 | # stars            | 0 |
 
 ## Links

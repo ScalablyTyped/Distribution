@@ -1,0 +1,73 @@
+package typings.ecmarkdown.anon
+
+import typings.ecmarkdown.ecmarkdownStrings.pipe
+import typings.ecmarkdown.nodeTypesMod.LocationRange
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Inlined std.Pick<ecmarkdown.ecmarkdown/dist/node-types.PipeNode, 'optional' | 'contents' | 'name' | 'nonTerminal' | 'params'> & {  location :ecmarkdown.ecmarkdown/dist/node-types.LocationRange} */
+@js.native
+trait PickPipeNodeoptionalconte extends js.Object {
+  
+  var contents: Null = js.native
+  
+  var location: LocationRange = js.native
+  
+  var name: pipe = js.native
+  
+  var nonTerminal: String = js.native
+  
+  var optional: Boolean = js.native
+  
+  var params: String = js.native
+}
+object PickPipeNodeoptionalconte {
+  
+  @scala.inline
+  def apply(
+    contents: Null,
+    location: LocationRange,
+    name: pipe,
+    nonTerminal: String,
+    optional: Boolean,
+    params: String
+  ): PickPipeNodeoptionalconte = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nonTerminal = nonTerminal.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PickPipeNodeoptionalconte]
+  }
+  
+  @scala.inline
+  implicit class PickPipeNodeoptionalconteOps[Self <: PickPipeNodeoptionalconte] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setContents(value: Null): Self = this.set("contents", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLocation(value: LocationRange): Self = this.set("location", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setName(value: pipe): Self = this.set("name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNonTerminal(value: String): Self = this.set("nonTerminal", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOptional(value: Boolean): Self = this.set("optional", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParams(value: String): Self = this.set("params", value.asInstanceOf[js.Any])
+  }
+}

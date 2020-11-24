@@ -3,7 +3,7 @@ package typings.oniguruma.mod
 import typings.oniguruma.anon.CaptureIndexmatchstring
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("oniguruma", "OnigRegExp")
 @js.native
@@ -13,10 +13,7 @@ class OnigRegExp protected () extends js.Object {
     * @param pattern A string pattern
     */
   def this(pattern: String) = this()
-  /** The OnigScanner instance used internally for regex matching */
-  val scanner: OnigScanner = js.native
-  /** The regex pattern that the OnigRegExp matches against */
-  val source: String = js.native
+  
   /**
     * Augment the capture indices for the given Match object by extracting
     * the substrings associated with each capture, assinging them to the
@@ -27,6 +24,10 @@ class OnigRegExp protected () extends js.Object {
     *         the original text that triggered the match
     */
   def captureIndicesForMatch(string: js.Any, `match`: Match): js.Array[CaptureIndexmatchstring] = js.native
+  
+  /** The OnigScanner instance used internally for regex matching */
+  val scanner: OnigScanner = js.native
+  
   /**
     * Search the string for a match starting at the beginning of the string.
     * @param string The string to search.
@@ -44,6 +45,7 @@ class OnigRegExp protected () extends js.Object {
     *        array of objects for each matched group.
     */
   def search(string: String, startPosition: Double, callback: Callback[js.Array[CaptureIndex] | Null]): Unit = js.native
+  
   /**
     * Synchronously search the string for a match starting at the given
     * position.
@@ -54,6 +56,10 @@ class OnigRegExp protected () extends js.Object {
     */
   def searchSync(string: String): js.Array[CaptureIndex] | Null = js.native
   def searchSync(string: String, startPosition: Double): js.Array[CaptureIndex] | Null = js.native
+  
+  /** The regex pattern that the OnigRegExp matches against */
+  val source: String = js.native
+  
   /**
     * Test if this regular expression matches the given string.
     * @param string The string to test against.
@@ -61,6 +67,7 @@ class OnigRegExp protected () extends js.Object {
     *        will be true if at least one match was found, or false otherwise.
     */
   def test(sring: String, callback: Callback[Boolean]): Unit = js.native
+  
   /**
     * Synchronously test if this regular expression matches the given string.
     * @param string The string to test against.
@@ -68,4 +75,3 @@ class OnigRegExp protected () extends js.Object {
     */
   def testSync(string: String): Boolean = js.native
 }
-

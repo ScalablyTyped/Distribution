@@ -2,9 +2,10 @@ package typings.awsSdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object applicationautoscalingMod {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ChangeInCapacity
     - typings.awsSdk.awsSdkStrings.PercentChangeInCapacity
@@ -12,11 +13,17 @@ package object applicationautoscalingMod {
     - java.lang.String
   */
   type AdjustmentType = typings.awsSdk.applicationautoscalingMod._AdjustmentType | java.lang.String
+  
   type Alarms = js.Array[typings.awsSdk.applicationautoscalingMod.Alarm]
+  
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.applicationautoscalingMod.ClientApiVersions
+  
   type Cooldown = scala.Double
+  
   type DisableScaleIn = scala.Boolean
+  
   type MaxResults = scala.Double
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Average_
     - typings.awsSdk.awsSdkStrings.Minimum_
@@ -24,12 +31,19 @@ package object applicationautoscalingMod {
     - java.lang.String
   */
   type MetricAggregationType = typings.awsSdk.applicationautoscalingMod._MetricAggregationType | java.lang.String
+  
   type MetricDimensionName = java.lang.String
+  
   type MetricDimensionValue = java.lang.String
+  
   type MetricDimensions = js.Array[typings.awsSdk.applicationautoscalingMod.MetricDimension]
+  
   type MetricName = java.lang.String
+  
   type MetricNamespace = java.lang.String
+  
   type MetricScale = scala.Double
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Average_
     - typings.awsSdk.awsSdkStrings.Minimum_
@@ -39,6 +53,7 @@ package object applicationautoscalingMod {
     - java.lang.String
   */
   type MetricStatistic = typings.awsSdk.applicationautoscalingMod._MetricStatistic | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.DynamoDBReadCapacityUtilization
     - typings.awsSdk.awsSdkStrings.DynamoDBWriteCapacityUtilization
@@ -56,23 +71,34 @@ package object applicationautoscalingMod {
     - typings.awsSdk.awsSdkStrings.LambdaProvisionedConcurrencyUtilization
     - typings.awsSdk.awsSdkStrings.CassandraReadCapacityUtilization
     - typings.awsSdk.awsSdkStrings.CassandraWriteCapacityUtilization
+    - typings.awsSdk.awsSdkStrings.KafkaBrokerStorageUtilization
     - java.lang.String
   */
   type MetricType = typings.awsSdk.applicationautoscalingMod._MetricType | java.lang.String
+  
   type MetricUnit = java.lang.String
+  
   type MinAdjustmentMagnitude = scala.Double
+  
   type PolicyName = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.StepScaling
     - typings.awsSdk.awsSdkStrings.TargetTrackingScaling
     - java.lang.String
   */
   type PolicyType = typings.awsSdk.applicationautoscalingMod._PolicyType | java.lang.String
+  
   type ResourceCapacity = scala.Double
+  
   type ResourceId = java.lang.String
+  
   type ResourceIdMaxLen1600 = java.lang.String
+  
   type ResourceIdsMaxLen1600 = js.Array[typings.awsSdk.applicationautoscalingMod.ResourceIdMaxLen1600]
+  
   type ResourceLabel = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ecsColonserviceColonDesiredCount
     - typings.awsSdk.awsSdkStrings.`ec2Colonspot-fleet-requestColonTargetCapacity`
@@ -86,14 +112,19 @@ package object applicationautoscalingMod {
     - typings.awsSdk.awsSdkStrings.sagemakerColonvariantColonDesiredInstanceCount
     - typings.awsSdk.awsSdkStrings.`custom-resourceColonResourceTypeColonProperty`
     - typings.awsSdk.awsSdkStrings.`comprehendColondocument-classifier-endpointColonDesiredInferenceUnits`
+    - typings.awsSdk.awsSdkStrings.`comprehendColonentity-recognizer-endpointColonDesiredInferenceUnits`
     - typings.awsSdk.awsSdkStrings.lambdaColonfunctionColonProvisionedConcurrency
     - typings.awsSdk.awsSdkStrings.cassandraColontableColonReadCapacityUnits
     - typings.awsSdk.awsSdkStrings.cassandraColontableColonWriteCapacityUnits
+    - typings.awsSdk.awsSdkStrings.`kafkaColonbroker-storageColonVolumeSize`
     - java.lang.String
   */
   type ScalableDimension = typings.awsSdk.applicationautoscalingMod._ScalableDimension | java.lang.String
+  
   type ScalableTargets = js.Array[typings.awsSdk.applicationautoscalingMod.ScalableTarget]
+  
   type ScalingActivities = js.Array[typings.awsSdk.applicationautoscalingMod.ScalingActivity]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Pending_
     - typings.awsSdk.awsSdkStrings.InProgress_
@@ -104,11 +135,17 @@ package object applicationautoscalingMod {
     - java.lang.String
   */
   type ScalingActivityStatusCode = typings.awsSdk.applicationautoscalingMod._ScalingActivityStatusCode | java.lang.String
+  
   type ScalingAdjustment = scala.Double
+  
   type ScalingPolicies = js.Array[typings.awsSdk.applicationautoscalingMod.ScalingPolicy]
+  
   type ScalingSuspended = scala.Boolean
+  
   type ScheduledActionName = java.lang.String
+  
   type ScheduledActions = js.Array[typings.awsSdk.applicationautoscalingMod.ScheduledAction]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ecs_
     - typings.awsSdk.awsSdkStrings.elasticmapreduce
@@ -121,12 +158,17 @@ package object applicationautoscalingMod {
     - typings.awsSdk.awsSdkStrings.comprehend
     - typings.awsSdk.awsSdkStrings.lambda__
     - typings.awsSdk.awsSdkStrings.cassandra
+    - typings.awsSdk.awsSdkStrings.kafka_
     - java.lang.String
   */
   type ServiceNamespace = typings.awsSdk.applicationautoscalingMod._ServiceNamespace | java.lang.String
+  
   type StepAdjustments = js.Array[typings.awsSdk.applicationautoscalingMod.StepAdjustment]
+  
   type TimestampType = typings.std.Date
+  
   type XmlString = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2016-02-06`
     - typings.awsSdk.awsSdkStrings.latest_

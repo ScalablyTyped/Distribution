@@ -5,11 +5,12 @@ import typings.tstl.errorConditionMod.ErrorCondition
 import typings.tstl.errorInstanceMod.ErrorInstance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/exception/ErrorCode", JSImport.Namespace)
 @js.native
 object errorCodeMod extends js.Object {
+  
   @js.native
   /**
     * Default Constructor.
@@ -22,6 +23,7 @@ object errorCodeMod extends js.Object {
       * @param category An error category instance.
       */
     def this(`val`: Double, category: ErrorCategory) = this()
+    
     /**
       * Get default error condition.
       *
@@ -29,6 +31,4 @@ object errorCodeMod extends js.Object {
       */
     def default_error_condition(): ErrorCondition = js.native
   }
-  
 }
-

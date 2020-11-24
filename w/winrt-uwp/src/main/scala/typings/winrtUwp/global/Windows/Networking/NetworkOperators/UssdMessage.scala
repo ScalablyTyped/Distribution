@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Networking.NetworkOperators
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a USSD message that is used for sending messages to and receiving messages from the network. */
 @JSGlobal("Windows.Networking.NetworkOperators.UssdMessage")
@@ -15,4 +15,3 @@ class UssdMessage protected ()
     */
   def this(messageText: String) = this()
 }
-

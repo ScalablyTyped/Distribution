@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "domelementtype" : "2.0.1"
+      "domelementtype" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "domelementtype" : "2.0.1"
+      "domelementtype" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

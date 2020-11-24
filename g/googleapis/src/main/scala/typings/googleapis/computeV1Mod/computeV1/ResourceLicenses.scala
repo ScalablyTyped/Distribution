@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Licenses")
 @js.native
 class ResourceLicenses protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.licenses.delete
     * @desc Deletes the specified license.
@@ -43,6 +45,7 @@ class ResourceLicenses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.licenses.get
     * @desc Returns the specified License resource.
@@ -128,6 +131,7 @@ class ResourceLicenses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLicense]
   ): Unit = js.native
+  
   /**
     * compute.licenses.getIamPolicy
     * @desc Gets the access control policy for a resource. May be empty if no
@@ -158,6 +162,7 @@ class ResourceLicenses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.licenses.insert
     * @desc Create a License resource in the specified project.
@@ -188,6 +193,7 @@ class ResourceLicenses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.licenses.list
     * @desc Retrieves the list of licenses available in the specified project.
@@ -225,6 +231,7 @@ class ResourceLicenses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLicensesListResponse]
   ): Unit = js.native
+  
   /**
     * compute.licenses.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -256,6 +263,7 @@ class ResourceLicenses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.licenses.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -290,4 +298,3 @@ class ResourceLicenses protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

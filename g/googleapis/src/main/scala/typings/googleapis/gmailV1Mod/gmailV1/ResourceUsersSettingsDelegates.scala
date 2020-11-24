@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Settings$Delegates")
 @js.native
 class ResourceUsersSettingsDelegates protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gmail.users.settings.delegates.create
     * @desc Adds a delegate with its verification status set directly to
@@ -52,6 +54,7 @@ class ResourceUsersSettingsDelegates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDelegate]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.delegates.delete
     * @desc Removes the specified delegate (which can be of any verification
@@ -85,6 +88,7 @@ class ResourceUsersSettingsDelegates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.delegates.get
     * @desc Gets the specified delegate.  Note that a delegate user must be
@@ -117,6 +121,7 @@ class ResourceUsersSettingsDelegates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDelegate]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.delegates.list
     * @desc Lists the delegates for the specified account.  This method is only
@@ -151,4 +156,3 @@ class ResourceUsersSettingsDelegates protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListDelegatesResponse]
   ): Unit = js.native
 }
-

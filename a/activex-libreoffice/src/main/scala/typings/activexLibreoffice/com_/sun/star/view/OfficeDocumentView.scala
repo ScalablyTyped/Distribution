@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.XControlModel
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a view of a standard office document. */
 @js.native
@@ -14,8 +14,8 @@ trait OfficeDocumentView
   extends XSelectionSupplier
      with XViewSettingsSupplier
      with XControlAccess
-
 object OfficeDocumentView {
+  
   @scala.inline
   def apply(
     Selection: js.Any,
@@ -34,4 +34,3 @@ object OfficeDocumentView {
     __obj.asInstanceOf[OfficeDocumentView]
   }
 }
-

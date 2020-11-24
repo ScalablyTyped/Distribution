@@ -2,11 +2,12 @@ package typings.byteRange.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("byte-range", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Calculates integer ranges for a given number of bytes.
     *
@@ -15,4 +16,3 @@ object ^ extends js.Object {
   def apply(bytes: Double): ByteRange = js.native
   def apply(bytes: Double, options: Options): ByteRange = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.hdrHistogramJs.mod
 import typings.hdrHistogramJs.packedHistogramMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * <h3>A High Dynamic Range (HDR) Histogram that uses a packed internal representation</h3>
@@ -42,4 +42,3 @@ class PackedHistogram protected () extends default {
     numberOfSignificantValueDigits: Double
   ) = this()
 }
-

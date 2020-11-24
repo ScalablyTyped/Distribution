@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | @jest/console |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 6 |
-| # downloads        | 121059473 |
+| # releases         | 27 |
+| # dependents       | 10 |
+| # downloads        | 304309922 |
 | # stars            | 0 |
 
 ## Links

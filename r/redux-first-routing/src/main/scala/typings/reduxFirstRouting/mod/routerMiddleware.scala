@@ -7,11 +7,11 @@ import typings.redux.mod.Dispatch
 import typings.redux.mod.Middleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-first-routing", "routerMiddleware")
 @js.native
 object routerMiddleware extends js.Object {
+  
   def apply(history: History[LocationState]): Middleware[_, State, Dispatch[AnyAction]] = js.native
 }
-

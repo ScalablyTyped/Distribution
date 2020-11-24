@@ -2,13 +2,14 @@ package typings.npmWhich.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the static instance of `npm-which`.
   */
 @js.native
 trait StaticWhich extends WhichBase[StaticWhichOptions] {
+  
   /**
     * Initializes an `NpmWhich`-instance for the specified working-directory.
     *
@@ -16,6 +17,7 @@ trait StaticWhich extends WhichBase[StaticWhichOptions] {
     * The working-directory to browse.
     */
   def apply(): NpmWhich = js.native
+  
   /**
     * Searches for the specified command.
     *
@@ -27,4 +29,3 @@ trait StaticWhich extends WhichBase[StaticWhichOptions] {
     */
   def sync(cmd: String, options: StaticWhichOptions): String = js.native
 }
-

@@ -1,17 +1,16 @@
 package typings.awsSdk.imagebuilderMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Imagebuilder extends Service {
-  @JSName("config")
-  var config_Imagebuilder: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * CancelImageCreation cancels the creation of Image. This operation can only be used on images in a non-terminal state.
     */
@@ -25,6 +24,10 @@ trait Imagebuilder extends Service {
     params: CancelImageCreationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CancelImageCreationResponse, Unit]
   ): Request[CancelImageCreationResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_Imagebuilder: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a new component that can be used to build, validate, test, and assess your image.
     */
@@ -38,6 +41,7 @@ trait Imagebuilder extends Service {
     params: CreateComponentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateComponentResponse, Unit]
   ): Request[CreateComponentResponse, AWSError] = js.native
+  
   /**
     * Creates a new distribution configuration. Distribution configurations define and configure the outputs of your pipeline. 
     */
@@ -53,6 +57,7 @@ trait Imagebuilder extends Service {
     params: CreateDistributionConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDistributionConfigurationResponse, Unit]
   ): Request[CreateDistributionConfigurationResponse, AWSError] = js.native
+  
   /**
     *  Creates a new image. This request will create a new image along with all of the configured output resources defined in the distribution configuration. 
     */
@@ -66,6 +71,7 @@ trait Imagebuilder extends Service {
     params: CreateImageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateImageResponse, Unit]
   ): Request[CreateImageResponse, AWSError] = js.native
+  
   /**
     *  Creates a new image pipeline. Image pipelines enable you to automate the creation and distribution of images. 
     */
@@ -79,6 +85,7 @@ trait Imagebuilder extends Service {
     params: CreateImagePipelineRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateImagePipelineResponse, Unit]
   ): Request[CreateImagePipelineResponse, AWSError] = js.native
+  
   /**
     *  Creates a new image recipe. Image recipes define how images are configured, tested, and assessed. 
     */
@@ -92,6 +99,7 @@ trait Imagebuilder extends Service {
     params: CreateImageRecipeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateImageRecipeResponse, Unit]
   ): Request[CreateImageRecipeResponse, AWSError] = js.native
+  
   /**
     *  Creates a new infrastructure configuration. An infrastructure configuration defines the environment in which your image will be built and tested. 
     */
@@ -107,6 +115,7 @@ trait Imagebuilder extends Service {
     params: CreateInfrastructureConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateInfrastructureConfigurationResponse, Unit]
   ): Request[CreateInfrastructureConfigurationResponse, AWSError] = js.native
+  
   /**
     *  Deletes a component build version. 
     */
@@ -120,6 +129,7 @@ trait Imagebuilder extends Service {
     params: DeleteComponentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteComponentResponse, Unit]
   ): Request[DeleteComponentResponse, AWSError] = js.native
+  
   /**
     *  Deletes a distribution configuration. 
     */
@@ -135,6 +145,7 @@ trait Imagebuilder extends Service {
     params: DeleteDistributionConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDistributionConfigurationResponse, Unit]
   ): Request[DeleteDistributionConfigurationResponse, AWSError] = js.native
+  
   /**
     *  Deletes an image. 
     */
@@ -148,6 +159,7 @@ trait Imagebuilder extends Service {
     params: DeleteImageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteImageResponse, Unit]
   ): Request[DeleteImageResponse, AWSError] = js.native
+  
   /**
     *  Deletes an image pipeline. 
     */
@@ -161,6 +173,7 @@ trait Imagebuilder extends Service {
     params: DeleteImagePipelineRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteImagePipelineResponse, Unit]
   ): Request[DeleteImagePipelineResponse, AWSError] = js.native
+  
   /**
     *  Deletes an image recipe. 
     */
@@ -174,6 +187,7 @@ trait Imagebuilder extends Service {
     params: DeleteImageRecipeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteImageRecipeResponse, Unit]
   ): Request[DeleteImageRecipeResponse, AWSError] = js.native
+  
   /**
     *  Deletes an infrastructure configuration. 
     */
@@ -189,6 +203,7 @@ trait Imagebuilder extends Service {
     params: DeleteInfrastructureConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteInfrastructureConfigurationResponse, Unit]
   ): Request[DeleteInfrastructureConfigurationResponse, AWSError] = js.native
+  
   /**
     *  Gets a component object. 
     */
@@ -202,6 +217,7 @@ trait Imagebuilder extends Service {
     params: GetComponentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetComponentResponse, Unit]
   ): Request[GetComponentResponse, AWSError] = js.native
+  
   /**
     *  Gets a component policy. 
     */
@@ -215,6 +231,7 @@ trait Imagebuilder extends Service {
     params: GetComponentPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetComponentPolicyResponse, Unit]
   ): Request[GetComponentPolicyResponse, AWSError] = js.native
+  
   /**
     *  Gets a distribution configuration. 
     */
@@ -228,6 +245,7 @@ trait Imagebuilder extends Service {
     params: GetDistributionConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionConfigurationResponse, Unit]
   ): Request[GetDistributionConfigurationResponse, AWSError] = js.native
+  
   /**
     *  Gets an image. 
     */
@@ -241,6 +259,7 @@ trait Imagebuilder extends Service {
     params: GetImageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetImageResponse, Unit]
   ): Request[GetImageResponse, AWSError] = js.native
+  
   /**
     *  Gets an image pipeline. 
     */
@@ -254,6 +273,7 @@ trait Imagebuilder extends Service {
     params: GetImagePipelineRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetImagePipelineResponse, Unit]
   ): Request[GetImagePipelineResponse, AWSError] = js.native
+  
   /**
     *  Gets an image policy. 
     */
@@ -267,6 +287,7 @@ trait Imagebuilder extends Service {
     params: GetImagePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetImagePolicyResponse, Unit]
   ): Request[GetImagePolicyResponse, AWSError] = js.native
+  
   /**
     *  Gets an image recipe. 
     */
@@ -280,6 +301,7 @@ trait Imagebuilder extends Service {
     params: GetImageRecipeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetImageRecipeResponse, Unit]
   ): Request[GetImageRecipeResponse, AWSError] = js.native
+  
   /**
     *  Gets an image recipe policy. 
     */
@@ -293,6 +315,7 @@ trait Imagebuilder extends Service {
     params: GetImageRecipePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetImageRecipePolicyResponse, Unit]
   ): Request[GetImageRecipePolicyResponse, AWSError] = js.native
+  
   /**
     *  Gets an infrastructure configuration. 
     */
@@ -308,6 +331,7 @@ trait Imagebuilder extends Service {
     params: GetInfrastructureConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInfrastructureConfigurationResponse, Unit]
   ): Request[GetInfrastructureConfigurationResponse, AWSError] = js.native
+  
   /**
     * Imports a component and transforms its data into a component document. 
     */
@@ -321,6 +345,7 @@ trait Imagebuilder extends Service {
     params: ImportComponentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ImportComponentResponse, Unit]
   ): Request[ImportComponentResponse, AWSError] = js.native
+  
   /**
     *  Returns the list of component build versions for the specified semantic version. 
     */
@@ -334,6 +359,7 @@ trait Imagebuilder extends Service {
     params: ListComponentBuildVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListComponentBuildVersionsResponse, Unit]
   ): Request[ListComponentBuildVersionsResponse, AWSError] = js.native
+  
   /**
     * Returns the list of component build versions for the specified semantic version. 
     */
@@ -347,6 +373,7 @@ trait Imagebuilder extends Service {
     params: ListComponentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListComponentsResponse, Unit]
   ): Request[ListComponentsResponse, AWSError] = js.native
+  
   /**
     *  Returns a list of distribution configurations. 
     */
@@ -362,6 +389,7 @@ trait Imagebuilder extends Service {
     params: ListDistributionConfigurationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDistributionConfigurationsResponse, Unit]
   ): Request[ListDistributionConfigurationsResponse, AWSError] = js.native
+  
   /**
     *  Returns a list of image build versions. 
     */
@@ -375,6 +403,7 @@ trait Imagebuilder extends Service {
     params: ListImageBuildVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListImageBuildVersionsResponse, Unit]
   ): Request[ListImageBuildVersionsResponse, AWSError] = js.native
+  
   /**
     *  Returns a list of images created by the specified pipeline. 
     */
@@ -388,6 +417,7 @@ trait Imagebuilder extends Service {
     params: ListImagePipelineImagesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListImagePipelineImagesResponse, Unit]
   ): Request[ListImagePipelineImagesResponse, AWSError] = js.native
+  
   /**
     * Returns a list of image pipelines. 
     */
@@ -401,6 +431,7 @@ trait Imagebuilder extends Service {
     params: ListImagePipelinesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListImagePipelinesResponse, Unit]
   ): Request[ListImagePipelinesResponse, AWSError] = js.native
+  
   /**
     *  Returns a list of image recipes. 
     */
@@ -414,6 +445,7 @@ trait Imagebuilder extends Service {
     params: ListImageRecipesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListImageRecipesResponse, Unit]
   ): Request[ListImageRecipesResponse, AWSError] = js.native
+  
   /**
     *  Returns the list of images that you have access to. 
     */
@@ -427,6 +459,7 @@ trait Imagebuilder extends Service {
     params: ListImagesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListImagesResponse, Unit]
   ): Request[ListImagesResponse, AWSError] = js.native
+  
   /**
     *  Returns a list of infrastructure configurations. 
     */
@@ -442,6 +475,7 @@ trait Imagebuilder extends Service {
     params: ListInfrastructureConfigurationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListInfrastructureConfigurationsResponse, Unit]
   ): Request[ListInfrastructureConfigurationsResponse, AWSError] = js.native
+  
   /**
     *  Returns the list of tags for the specified resource. 
     */
@@ -455,6 +489,7 @@ trait Imagebuilder extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     *  Applies a policy to a component. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutComponentPolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared. 
     */
@@ -468,6 +503,7 @@ trait Imagebuilder extends Service {
     params: PutComponentPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutComponentPolicyResponse, Unit]
   ): Request[PutComponentPolicyResponse, AWSError] = js.native
+  
   /**
     * Applies a policy to an image. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutImagePolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared. 
     */
@@ -481,6 +517,7 @@ trait Imagebuilder extends Service {
     params: PutImagePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutImagePolicyResponse, Unit]
   ): Request[PutImagePolicyResponse, AWSError] = js.native
+  
   /**
     *  Applies a policy to an image recipe. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutImageRecipePolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared. 
     */
@@ -494,6 +531,7 @@ trait Imagebuilder extends Service {
     params: PutImageRecipePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutImageRecipePolicyResponse, Unit]
   ): Request[PutImageRecipePolicyResponse, AWSError] = js.native
+  
   /**
     *  Manually triggers a pipeline to create an image. 
     */
@@ -507,6 +545,7 @@ trait Imagebuilder extends Service {
     params: StartImagePipelineExecutionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartImagePipelineExecutionResponse, Unit]
   ): Request[StartImagePipelineExecutionResponse, AWSError] = js.native
+  
   /**
     *  Adds a tag to a resource. 
     */
@@ -520,6 +559,7 @@ trait Imagebuilder extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     *  Removes a tag from a resource. 
     */
@@ -533,6 +573,7 @@ trait Imagebuilder extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     *  Updates a new distribution configuration. Distribution configurations define and configure the outputs of your pipeline. 
     */
@@ -548,6 +589,7 @@ trait Imagebuilder extends Service {
     params: UpdateDistributionConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDistributionConfigurationResponse, Unit]
   ): Request[UpdateDistributionConfigurationResponse, AWSError] = js.native
+  
   /**
     *  Updates a new image pipeline. Image pipelines enable you to automate the creation and distribution of images. 
     */
@@ -561,6 +603,7 @@ trait Imagebuilder extends Service {
     params: UpdateImagePipelineRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateImagePipelineResponse, Unit]
   ): Request[UpdateImagePipelineResponse, AWSError] = js.native
+  
   /**
     *  Updates a new infrastructure configuration. An infrastructure configuration defines the environment in which your image will be built and tested. 
     */
@@ -577,4 +620,3 @@ trait Imagebuilder extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateInfrastructureConfigurationResponse, Unit]
   ): Request[UpdateInfrastructureConfigurationResponse, AWSError] = js.native
 }
-

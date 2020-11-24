@@ -3,11 +3,12 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends {@link XTopWindow} with additional functionality */
 @js.native
 trait XTopWindow2 extends XTopWindow {
+  
   /**
     * controls on which display the window is shown.
     *
@@ -18,13 +19,15 @@ trait XTopWindow2 extends XTopWindow {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if you attempt to set this property to a value which does not correspond to the number of an exis
     */
   var Display: Double = js.native
+  
   /** controls whether the window is currently maximized */
   var IsMaximized: Boolean = js.native
+  
   /** controls whether the window is currently minimized */
   var IsMinimized: Boolean = js.native
 }
-
 object XTopWindow2 {
+  
   @scala.inline
   def apply(
     Display: Double,
@@ -42,24 +45,29 @@ object XTopWindow2 {
     val __obj = js.Dynamic.literal(Display = Display.asInstanceOf[js.Any], IsMaximized = IsMaximized.asInstanceOf[js.Any], IsMinimized = IsMinimized.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addTopWindowListener = js.Any.fromFunction1(addTopWindowListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeTopWindowListener = js.Any.fromFunction1(removeTopWindowListener), setMenuBar = js.Any.fromFunction1(setMenuBar), toBack = js.Any.fromFunction0(toBack), toFront = js.Any.fromFunction0(toFront))
     __obj.asInstanceOf[XTopWindow2]
   }
+  
   @scala.inline
   implicit class XTopWindow2Ops[Self <: XTopWindow2] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDisplay(value: Double): Self = this.set("Display", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsMaximized(value: Boolean): Self = this.set("IsMaximized", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsMinimized(value: Boolean): Self = this.set("IsMinimized", value.asInstanceOf[js.Any])
   }
-  
 }
-

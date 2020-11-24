@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Advertisergroups")
 @js.native
 class ResourceAdvertisergroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.advertiserGroups.delete
     * @desc Deletes an existing advertiser group.
@@ -42,6 +44,7 @@ class ResourceAdvertisergroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * dfareporting.advertiserGroups.get
     * @desc Gets one advertiser group by ID.
@@ -71,6 +74,7 @@ class ResourceAdvertisergroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdvertiserGroup]
   ): Unit = js.native
+  
   /**
     * dfareporting.advertiserGroups.insert
     * @desc Inserts a new advertiser group.
@@ -103,6 +107,7 @@ class ResourceAdvertisergroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdvertiserGroup]
   ): Unit = js.native
+  
   /**
     * dfareporting.advertiserGroups.list
     * @desc Retrieves a list of advertiser groups, possibly filtered. This
@@ -141,6 +146,7 @@ class ResourceAdvertisergroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdvertiserGroupsListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.advertiserGroups.patch
     * @desc Updates an existing advertiser group. This method supports patch
@@ -172,6 +178,7 @@ class ResourceAdvertisergroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdvertiserGroup]
   ): Unit = js.native
+  
   /**
     * dfareporting.advertiserGroups.update
     * @desc Updates an existing advertiser group.
@@ -205,4 +212,3 @@ class ResourceAdvertisergroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAdvertiserGroup]
   ): Unit = js.native
 }
-

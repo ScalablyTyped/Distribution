@@ -10,9 +10,9 @@ a few common utility template tags for ES2015
 | ------------------ | :-------------: |
 | Full name          | common-tags |
 | Keywords           | array, babel, es2015, es2015-tag, es6, es6-tag, heredoc, html, indent, indents, line, literal, multi, multiline, normalize, one, oneline, single, singleline, string, strings, strip, tag, tagged, template |
-| # releases         | 7 |
-| # dependents       | 559 |
-| # downloads        | 132899274 |
+| # releases         | 2 |
+| # dependents       | 632 |
+| # downloads        | 192603668 |
 | # stars            | 32 |
 
 ## Links

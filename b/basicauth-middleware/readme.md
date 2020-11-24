@@ -11,8 +11,8 @@ Express js basic auth middleware
 | Full name          | basicauth-middleware |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 230575 |
+| # dependents       | 2 |
+| # downloads        | 148761 |
 | # stars            | 1 |
 
 ## Links

@@ -6,14 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Groups")
 @js.native
 class ResourceGroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var aliases: ResourceGroupsAliases = js.native
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.groups.delete
     * @desc Delete Group
@@ -38,6 +41,7 @@ class ResourceGroups protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceGroupsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceGroupsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * directory.groups.get
     * @desc Retrieve Group
@@ -66,6 +70,7 @@ class ResourceGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroup]
   ): Unit = js.native
+  
   /**
     * directory.groups.insert
     * @desc Create Group
@@ -94,6 +99,7 @@ class ResourceGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroup]
   ): Unit = js.native
+  
   /**
     * directory.groups.list
     * @desc Retrieve all groups of a domain or of a user given a userKey
@@ -130,6 +136,7 @@ class ResourceGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroups]
   ): Unit = js.native
+  
   /**
     * directory.groups.patch
     * @desc Update Group. This method supports patch semantics.
@@ -159,6 +166,7 @@ class ResourceGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroup]
   ): Unit = js.native
+  
   /**
     * directory.groups.update
     * @desc Update Group
@@ -189,4 +197,3 @@ class ResourceGroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGroup]
   ): Unit = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.pulumiPulumi.outputMod.Inputs
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/pulumi", "ComponentResource")
 @js.native
@@ -21,21 +21,37 @@ class ComponentResource[TData] protected ()
     * @param name The _unique_ name of the resource.
     * @param args Information passed to [initialize] method.
     * @param opts A bag of options that control this resource's behavior.
+    * @param remote True if this is a remote component resource.
     */
   def this(`type`: String, name: String) = this()
   def this(`type`: String, name: String, args: Inputs) = this()
   def this(`type`: String, name: String, args: js.UndefOr[scala.Nothing], opts: ComponentResourceOptions) = this()
   def this(`type`: String, name: String, args: Inputs, opts: ComponentResourceOptions) = this()
+  def this(
+    `type`: String,
+    name: String,
+    args: js.UndefOr[scala.Nothing],
+    opts: js.UndefOr[scala.Nothing],
+    remote: Boolean
+  ) = this()
+  def this(
+    `type`: String,
+    name: String,
+    args: js.UndefOr[scala.Nothing],
+    opts: ComponentResourceOptions,
+    remote: Boolean
+  ) = this()
+  def this(`type`: String, name: String, args: Inputs, opts: js.UndefOr[scala.Nothing], remote: Boolean) = this()
+  def this(`type`: String, name: String, args: Inputs, opts: ComponentResourceOptions, remote: Boolean) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/pulumi", "ComponentResource")
 @js.native
 object ComponentResource extends js.Object {
+  
   /**
     * Returns true if the given object is an instance of CustomResource.  This is designed to work even when
     * multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource<any> */ Boolean = js.native
 }
-

@@ -1,17 +1,16 @@
 package typings.awsSdk.qldbMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait QLDB extends Service {
-  @JSName("config")
-  var config_QLDB: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Ends a given Amazon QLDB journal stream. Before a stream can be canceled, its current status must be ACTIVE. You can't restart a stream after you cancel it. Canceled QLDB stream resources are subject to a 7-day retention period, so they are automatically deleted after this limit expires.
     */
@@ -25,6 +24,10 @@ trait QLDB extends Service {
     params: CancelJournalKinesisStreamRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CancelJournalKinesisStreamResponse, Unit]
   ): Request[CancelJournalKinesisStreamResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_QLDB: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a new ledger in your AWS account.
     */
@@ -38,6 +41,7 @@ trait QLDB extends Service {
     params: CreateLedgerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLedgerResponse, Unit]
   ): Request[CreateLedgerResponse, AWSError] = js.native
+  
   /**
     * Deletes a ledger and all of its contents. This action is irreversible. If deletion protection is enabled, you must first disable it before you can delete the ledger using the QLDB API or the AWS Command Line Interface (AWS CLI). You can disable it by calling the UpdateLedger operation to set the flag to false. The QLDB console disables deletion protection for you when you use it to delete a ledger.
     */
@@ -51,6 +55,7 @@ trait QLDB extends Service {
     params: DeleteLedgerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Returns detailed information about a given Amazon QLDB journal stream. The output includes the Amazon Resource Name (ARN), stream name, current status, creation time, and the parameters of your original stream creation request.
     */
@@ -64,6 +69,7 @@ trait QLDB extends Service {
     params: DescribeJournalKinesisStreamRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeJournalKinesisStreamResponse, Unit]
   ): Request[DescribeJournalKinesisStreamResponse, AWSError] = js.native
+  
   /**
     * Returns information about a journal export job, including the ledger name, export ID, when it was created, current status, and its start and end time export parameters. This action does not return any expired export jobs. For more information, see Export Job Expiration in the Amazon QLDB Developer Guide. If the export job with the given ExportId doesn't exist, then throws ResourceNotFoundException. If the ledger with the given Name doesn't exist, then throws ResourceNotFoundException.
     */
@@ -77,6 +83,7 @@ trait QLDB extends Service {
     params: DescribeJournalS3ExportRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeJournalS3ExportResponse, Unit]
   ): Request[DescribeJournalS3ExportResponse, AWSError] = js.native
+  
   /**
     * Returns information about a ledger, including its state and when it was created.
     */
@@ -90,6 +97,7 @@ trait QLDB extends Service {
     params: DescribeLedgerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeLedgerResponse, Unit]
   ): Request[DescribeLedgerResponse, AWSError] = js.native
+  
   /**
     * Exports journal contents within a date and time range from a ledger into a specified Amazon Simple Storage Service (Amazon S3) bucket. The data is written as files in Amazon Ion format. If the ledger with the given Name doesn't exist, then throws ResourceNotFoundException. If the ledger with the given Name is in CREATING status, then throws ResourcePreconditionNotMetException. You can initiate up to two concurrent journal export requests for each ledger. Beyond this limit, journal export requests throw LimitExceededException.
     */
@@ -103,6 +111,7 @@ trait QLDB extends Service {
     params: ExportJournalToS3Request,
     callback: js.Function2[/* err */ AWSError, /* data */ ExportJournalToS3Response, Unit]
   ): Request[ExportJournalToS3Response, AWSError] = js.native
+  
   /**
     * Returns a block object at a specified address in a journal. Also returns a proof of the specified block for verification if DigestTipAddress is provided. For information about the data contents in a block, see Journal contents in the Amazon QLDB Developer Guide. If the specified ledger doesn't exist or is in DELETING status, then throws ResourceNotFoundException. If the specified ledger is in CREATING status, then throws ResourcePreconditionNotMetException. If no block exists with the specified address, then throws InvalidParameterException.
     */
@@ -116,6 +125,7 @@ trait QLDB extends Service {
     params: GetBlockRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetBlockResponse, Unit]
   ): Request[GetBlockResponse, AWSError] = js.native
+  
   /**
     * Returns the digest of a ledger at the latest committed block in the journal. The response includes a 256-bit hash value and a block address.
     */
@@ -129,6 +139,7 @@ trait QLDB extends Service {
     params: GetDigestRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDigestResponse, Unit]
   ): Request[GetDigestResponse, AWSError] = js.native
+  
   /**
     * Returns a revision data object for a specified document ID and block address. Also returns a proof of the specified revision for verification if DigestTipAddress is provided.
     */
@@ -142,6 +153,7 @@ trait QLDB extends Service {
     params: GetRevisionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRevisionResponse, Unit]
   ): Request[GetRevisionResponse, AWSError] = js.native
+  
   /**
     * Returns an array of all Amazon QLDB journal stream descriptors for a given ledger. The output of each stream descriptor includes the same details that are returned by DescribeJournalKinesisStream. This action returns a maximum of MaxResults items. It is paginated so that you can retrieve all the items by calling ListJournalKinesisStreamsForLedger multiple times.
     */
@@ -157,6 +169,7 @@ trait QLDB extends Service {
     params: ListJournalKinesisStreamsForLedgerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListJournalKinesisStreamsForLedgerResponse, Unit]
   ): Request[ListJournalKinesisStreamsForLedgerResponse, AWSError] = js.native
+  
   /**
     * Returns an array of journal export job descriptions for all ledgers that are associated with the current AWS account and Region. This action returns a maximum of MaxResults items, and is paginated so that you can retrieve all the items by calling ListJournalS3Exports multiple times. This action does not return any expired export jobs. For more information, see Export Job Expiration in the Amazon QLDB Developer Guide.
     */
@@ -170,6 +183,7 @@ trait QLDB extends Service {
     params: ListJournalS3ExportsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListJournalS3ExportsResponse, Unit]
   ): Request[ListJournalS3ExportsResponse, AWSError] = js.native
+  
   /**
     * Returns an array of journal export job descriptions for a specified ledger. This action returns a maximum of MaxResults items, and is paginated so that you can retrieve all the items by calling ListJournalS3ExportsForLedger multiple times. This action does not return any expired export jobs. For more information, see Export Job Expiration in the Amazon QLDB Developer Guide.
     */
@@ -183,6 +197,7 @@ trait QLDB extends Service {
     params: ListJournalS3ExportsForLedgerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListJournalS3ExportsForLedgerResponse, Unit]
   ): Request[ListJournalS3ExportsForLedgerResponse, AWSError] = js.native
+  
   /**
     * Returns an array of ledger summaries that are associated with the current AWS account and Region. This action returns a maximum of 100 items and is paginated so that you can retrieve all the items by calling ListLedgers multiple times.
     */
@@ -196,6 +211,7 @@ trait QLDB extends Service {
     params: ListLedgersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListLedgersResponse, Unit]
   ): Request[ListLedgersResponse, AWSError] = js.native
+  
   /**
     * Returns all tags for a specified Amazon QLDB resource.
     */
@@ -209,6 +225,7 @@ trait QLDB extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Creates a journal stream for a given Amazon QLDB ledger. The stream captures every document revision that is committed to the ledger's journal and delivers the data to a specified Amazon Kinesis Data Streams resource.
     */
@@ -222,6 +239,7 @@ trait QLDB extends Service {
     params: StreamJournalToKinesisRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StreamJournalToKinesisResponse, Unit]
   ): Request[StreamJournalToKinesisResponse, AWSError] = js.native
+  
   /**
     * Adds one or more tags to a specified Amazon QLDB resource. A resource can have up to 50 tags. If you try to create more than 50 tags for a resource, your request fails and returns an error.
     */
@@ -235,6 +253,7 @@ trait QLDB extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Removes one or more tags from a specified Amazon QLDB resource. You can specify up to 50 tag keys to remove.
     */
@@ -248,6 +267,7 @@ trait QLDB extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates properties on a ledger.
     */
@@ -262,4 +282,3 @@ trait QLDB extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateLedgerResponse, Unit]
   ): Request[UpdateLedgerResponse, AWSError] = js.native
 }
-

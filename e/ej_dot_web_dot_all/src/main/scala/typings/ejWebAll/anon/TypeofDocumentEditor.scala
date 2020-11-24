@@ -8,7 +8,7 @@ import typings.ejWebAll.ej.DocumentEditor.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofDocumentEditor
@@ -18,7 +18,8 @@ trait TypeofDocumentEditor
       /* options */ Model, 
       DocumentEditor
     ] {
+  
   var Locale: js.Any = js.native
+  
   var fn: DocumentEditor = js.native
 }
-

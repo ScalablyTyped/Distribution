@@ -11,8 +11,8 @@ Get Pretty Quick
 | Full name          | pretty-quick |
 | Keywords           | git, mercurial, hg, prettier, pretty-quick, formatting, code, vcs, precommit |
 | # releases         | 13 |
-| # dependents       | 78 |
-| # downloads        | 14156180 |
+| # dependents       | 107 |
+| # downloads        | 25273870 |
 | # stars            | 0 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.chrome.global.chrome
 import typings.chrome.chrome.topSites.MostVisitedURL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Top Sites
@@ -16,6 +16,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.topSites")
 @js.native
 object topSites extends js.Object {
+  
   def get(callback: js.Function1[/* data */ js.Array[MostVisitedURL], Unit]): Unit = js.native
 }
-

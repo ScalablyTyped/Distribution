@@ -9,13 +9,15 @@ import typings.emberData.mod.DS.AttrOptions
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ember-data/attr", JSImport.Namespace)
 @js.native
 object attrMod extends js.Object {
+  
   def default(): ComputedProperty[_, _] = js.native
   def default(options: AttrOptions[_]): ComputedProperty[_, _] = js.native
+  def default(target: js.Any, propertyKey: String): Unit = js.native
   @JSName("default")
   def default_boolean(`type`: boolean): ComputedProperty[Boolean, Boolean] = js.native
   @JSName("default")
@@ -41,4 +43,3 @@ object attrMod extends js.Object {
   @JSName("default")
   def default_string(`type`: string, options: AttrOptions[String]): ComputedProperty[String, String] = js.native
 }
-

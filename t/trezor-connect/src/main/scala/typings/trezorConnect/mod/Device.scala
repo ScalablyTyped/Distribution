@@ -5,7 +5,7 @@ import typings.trezorConnect.trezorConnectStrings.unacquired
 import typings.trezorConnect.trezorConnectStrings.unreadable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.trezorConnect.anon.Features
@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
   - typings.trezorConnect.anon.Path
 */
 trait Device extends js.Object
-
 object Device {
+  
   @scala.inline
   def Features(
     features: typings.trezorConnect.mod.Features,
@@ -30,12 +30,14 @@ object Device {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]
   }
+  
   @scala.inline
   def Label(label: String, path: String, `type`: unacquired): Device = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]
   }
+  
   @scala.inline
   def Path(label: String, path: String, `type`: unreadable): Device = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
@@ -43,4 +45,3 @@ object Device {
     __obj.asInstanceOf[Device]
   }
 }
-

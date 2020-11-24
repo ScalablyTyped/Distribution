@@ -1,7 +1,7 @@
 
 # Scala.js typings for bulma-calendar
 
-Typings are for version 6.0
+Typings are for version 6.0.9
 
 ## Library description:
 Display a calendar for date/time selection, in different colors and sizes
@@ -10,9 +10,9 @@ Display a calendar for date/time selection, in different colors and sizes
 | ------------------ | :-------------: |
 | Full name          | bulma-calendar |
 | Keywords           | Bulma, bulma, bulma.io, extensions, extension, calendar, datepicker, date picker |
-| # releases         | 42 |
-| # dependents       | 5 |
-| # downloads        | 114848 |
+| # releases         | 21 |
+| # dependents       | 6 |
+| # downloads        | 146267 |
 | # stars            | 1 |
 
 ## Links
@@ -24,7 +24,7 @@ Display a calendar for date/time selection, in different colors and sizes
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

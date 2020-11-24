@@ -3,12 +3,12 @@ package typings.winrt.Windows.ApplicationModel
 import typings.winrt.Windows.System.ProcessorArchitecture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PackageId extends IPackageId
-
 object PackageId {
+  
   @scala.inline
   def apply(
     architecture: ProcessorArchitecture,
@@ -24,4 +24,3 @@ object PackageId {
     __obj.asInstanceOf[PackageId]
   }
 }
-

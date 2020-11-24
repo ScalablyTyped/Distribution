@@ -12,7 +12,7 @@ JavaScript LIME implementation
 | Keywords           | LIME, MessagingHub, TypeScript, TCP, WebSocket, WS |
 | # releases         | 7 |
 | # dependents       | 5 |
-| # downloads        | 16265 |
+| # downloads        | 15681 |
 | # stars            | 0 |
 
 ## Links

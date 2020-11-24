@@ -3,7 +3,7 @@ package typings.angularRouter.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "UrlSegment")
 @js.native
@@ -14,10 +14,12 @@ class UrlSegment protected () extends js.Object {
     /** The matrix parameters associated with a segment */
   parameters: StringDictionary[String]
   ) = this()
+  
+  def parameterMap: ParamMap = js.native
+  
   /** The matrix parameters associated with a segment */
   var parameters: StringDictionary[String] = js.native
+  
   /** The path part of a URL segment */
   var path: String = js.native
-  def parameterMap: ParamMap = js.native
 }
-

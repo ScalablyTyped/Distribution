@@ -4,10 +4,9 @@ import org.scalablytyped.runtime.TopLevel
 import typings.angularCore.mod.Provider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_h")
 @js.native
 object ɵangularPackagesPlatformBrowserPlatformBrowserH
   extends TopLevel[js.Array[Provider]]
-

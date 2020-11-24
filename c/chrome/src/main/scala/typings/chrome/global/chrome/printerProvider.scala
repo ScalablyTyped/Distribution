@@ -6,7 +6,7 @@ import typings.chrome.chrome.printerProvider.PrinterInfoRequestedEvent
 import typings.chrome.chrome.printerProvider.PrinterRequestedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Printer Provider
@@ -19,9 +19,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.printerProvider")
 @js.native
 object printerProvider extends js.Object {
+  
   var onGetCapabilityRequested: CapabilityRequestedEvent = js.native
+  
   var onGetPrintersRequested: PrinterRequestedEvent = js.native
+  
   var onGetUsbPrinterInfoRequested: PrinterInfoRequestedEvent = js.native
+  
   var onPrintRequested: PrintRequestedEvent = js.native
 }
-

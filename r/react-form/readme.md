@@ -10,9 +10,9 @@ Typings are for version 2.16
 | ------------------ | :-------------: |
 | Full name          | react-form |
 | Keywords           | - |
-| # releases         | 56 |
-| # dependents       | 16 |
-| # downloads        | 875052 |
+| # releases         | 19 |
+| # dependents       | 19 |
+| # downloads        | 717288 |
 | # stars            | 5 |
 
 ## Links

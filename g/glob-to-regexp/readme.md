@@ -10,9 +10,9 @@ Convert globs to regular expressions
 | ------------------ | :-------------: |
 | Full name          | glob-to-regexp |
 | Keywords           | regexp, glob, regexps, regular expressions, regular expression, wildcard |
-| # releases         | 3 |
-| # dependents       | 124 |
-| # downloads        | 186554101 |
+| # releases         | 2 |
+| # dependents       | 152 |
+| # downloads        | 297825065 |
 | # stars            | 3 |
 
 ## Links

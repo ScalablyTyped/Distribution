@@ -3,7 +3,7 @@ package typings.videoJs.videoCoreNovttMod.default
 import typings.videoJs.mod.videojs.MenuItemOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "MenuItem")
 @js.native
@@ -22,4 +22,3 @@ class MenuItemCls protected ()
   def this(player: typings.videoJs.mod.videojs.Player) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: MenuItemOptions) = this()
 }
-

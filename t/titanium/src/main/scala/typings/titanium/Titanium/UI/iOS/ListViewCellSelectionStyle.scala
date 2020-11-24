@@ -2,7 +2,7 @@ package typings.titanium.Titanium.UI.iOS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of constants for the style that can be used for the `selectionStyle` property of a
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Titanium.UI.iOS.ListViewCellSelectionStyle")
 @js.native
 object ListViewCellSelectionStyle extends js.Object
-

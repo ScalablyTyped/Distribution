@@ -7,9 +7,67 @@ import typings.reactReduxToastr.mod.transitionInType
 import typings.reactReduxToastr.mod.transitionOutType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactReduxToastrStrings {
+  
+  @scala.inline
+  def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
+  
+  @scala.inline
+  def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
+  
+  @scala.inline
+  def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
+  
+  @scala.inline
+  def bounceIn: bounceIn = "bounceIn".asInstanceOf[bounceIn]
+  
+  @scala.inline
+  def bounceInDown: bounceInDown = "bounceInDown".asInstanceOf[bounceInDown]
+  
+  @scala.inline
+  def bounceOut: bounceOut = "bounceOut".asInstanceOf[bounceOut]
+  
+  @scala.inline
+  def bounceOutUp: bounceOutUp = "bounceOutUp".asInstanceOf[bounceOutUp]
+  
+  @scala.inline
+  def confirm: confirm = "confirm".asInstanceOf[confirm]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def fadeIn: fadeIn = "fadeIn".asInstanceOf[fadeIn]
+  
+  @scala.inline
+  def fadeOut: fadeOut = "fadeOut".asInstanceOf[fadeOut]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def light: light = "light".asInstanceOf[light]
+  
+  @scala.inline
+  def message: message = "message".asInstanceOf[message]
+  
+  @scala.inline
+  def success: success = "success".asInstanceOf[success]
+  
+  @scala.inline
+  def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
+  
+  @scala.inline
+  def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  
+  @scala.inline
+  def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
+  
   @js.native
   sealed trait `bottom-center` extends positionType
   
@@ -74,44 +132,4 @@ object reactReduxToastrStrings {
   sealed trait warning
     extends iconType
        with toastType
-  
-  @scala.inline
-  def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
-  @scala.inline
-  def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
-  @scala.inline
-  def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
-  @scala.inline
-  def bounceIn: bounceIn = "bounceIn".asInstanceOf[bounceIn]
-  @scala.inline
-  def bounceInDown: bounceInDown = "bounceInDown".asInstanceOf[bounceInDown]
-  @scala.inline
-  def bounceOut: bounceOut = "bounceOut".asInstanceOf[bounceOut]
-  @scala.inline
-  def bounceOutUp: bounceOutUp = "bounceOutUp".asInstanceOf[bounceOutUp]
-  @scala.inline
-  def confirm: confirm = "confirm".asInstanceOf[confirm]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fadeIn: fadeIn = "fadeIn".asInstanceOf[fadeIn]
-  @scala.inline
-  def fadeOut: fadeOut = "fadeOut".asInstanceOf[fadeOut]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
-  def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
-  @scala.inline
-  def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
-  @scala.inline
-  def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
 }
-

@@ -3,7 +3,7 @@ package typings.officeJs.Office
 import typings.officeJs.Office.MailboxEnums.AttachmentContentFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the content of an attachment on a message or appointment item.
@@ -18,10 +18,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AttachmentContent extends js.Object {
+  
   /**
     * The content of an attachment as a string.
     */
   var content: String = js.native
+  
   /**
     * The string format to use for an attachment's content.
     * 
@@ -39,29 +41,33 @@ trait AttachmentContent extends js.Object {
     */
   var format: AttachmentContentFormat | String = js.native
 }
-
 object AttachmentContent {
+  
   @scala.inline
   def apply(content: String, format: AttachmentContentFormat | String): AttachmentContent = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentContent]
   }
+  
   @scala.inline
   implicit class AttachmentContentOps[Self <: AttachmentContent] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFormat(value: AttachmentContentFormat | String): Self = this.set("format", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -4,20 +4,20 @@
 Typings are for version 0.1.22
 
 ## Library description:
-A W3C Standard XML DOM(Level2 CORE) implementation and parser(DOMParser/XMLSerializer).
+A pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | xmldom |
 | Keywords           | w3c, dom, xml, parser, javascript, DOMParser, XMLSerializer |
-| # releases         | 6 |
-| # dependents       | 1377 |
-| # downloads        | 84431117 |
+| # releases         | 7 |
+| # dependents       | 1503 |
+| # downloads        | 139029683 |
 | # stars            | 46 |
 
 ## Links
 - [Homepage](https://github.com/xmldom/xmldom)
-- [Bugs](http://github.com/xmldom/xmldom/issues)
+- [Bugs](https://github.com/xmldom/xmldom/issues)
 - [Repository](https://github.com/xmldom/xmldom)
 - [Npm](https://www.npmjs.com/package/xmldom)
     

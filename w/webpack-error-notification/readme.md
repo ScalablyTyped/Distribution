@@ -10,9 +10,9 @@ Use system notification to inform developer about compilation error
 | ------------------ | :-------------: |
 | Full name          | webpack-error-notification |
 | Keywords           | webpack, build |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 78013 |
+| # downloads        | 54722 |
 | # stars            | 3 |
 
 ## Links

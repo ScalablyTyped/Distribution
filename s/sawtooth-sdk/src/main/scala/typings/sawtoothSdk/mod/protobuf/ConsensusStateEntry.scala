@@ -8,7 +8,7 @@ import typings.sawtoothSdk.protobufMod.IConsensusStateEntry
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ConsensusStateEntry")
 @js.native
@@ -20,11 +20,11 @@ class ConsensusStateEntry ()
   extends typings.sawtoothSdk.protobufMod.ConsensusStateEntry {
   def this(properties: IConsensusStateEntry) = this()
 }
-
 /* static members */
 @JSImport("sawtooth-sdk", "protobuf.ConsensusStateEntry")
 @js.native
 object ConsensusStateEntry extends js.Object {
+  
   /**
     * Creates a new ConsensusStateEntry instance using the specified properties.
     * @param [properties] Properties to set
@@ -32,6 +32,7 @@ object ConsensusStateEntry extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.ConsensusStateEntry = js.native
   def create(properties: IConsensusStateEntry): typings.sawtoothSdk.protobufMod.ConsensusStateEntry = js.native
+  
   /**
     * Decodes a ConsensusStateEntry message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,6 +45,7 @@ object ConsensusStateEntry extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ConsensusStateEntry = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusStateEntry = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ConsensusStateEntry = js.native
+  
   /**
     * Decodes a ConsensusStateEntry message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -53,6 +55,7 @@ object ConsensusStateEntry extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusStateEntry = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusStateEntry = js.native
+  
   /**
     * Encodes the specified ConsensusStateEntry message. Does not implicitly {@link ConsensusStateEntry.verify|verify} messages.
     * @param message ConsensusStateEntry message or plain object to encode
@@ -61,6 +64,7 @@ object ConsensusStateEntry extends js.Object {
     */
   def encode(message: IConsensusStateEntry): Writer = js.native
   def encode(message: IConsensusStateEntry, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ConsensusStateEntry message, length delimited. Does not implicitly {@link ConsensusStateEntry.verify|verify} messages.
     * @param message ConsensusStateEntry message or plain object to encode
@@ -69,12 +73,14 @@ object ConsensusStateEntry extends js.Object {
     */
   def encodeDelimited(message: IConsensusStateEntry): Writer = js.native
   def encodeDelimited(message: IConsensusStateEntry, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ConsensusStateEntry message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ConsensusStateEntry
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ConsensusStateEntry = js.native
+  
   /**
     * Creates a plain object from a ConsensusStateEntry message. Also converts values to other types if specified.
     * @param message ConsensusStateEntry
@@ -83,6 +89,7 @@ object ConsensusStateEntry extends js.Object {
     */
   def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusStateEntry): StringDictionary[js.Any] = js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusStateEntry, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ConsensusStateEntry message.
     * @param message Plain object to verify
@@ -90,4 +97,3 @@ object ConsensusStateEntry extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

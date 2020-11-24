@@ -6,11 +6,13 @@ import typings.mariasql.mariasqlStrings.error
 import typings.mariasql.mariasqlStrings.row
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MariaResult extends js.Object {
+  
   def abort(): Unit = js.native
+  
   def on(signal: String, cb: MariaCallBackVoid): MariaResult = js.native
   @JSName("on")
   def on_abort(signal: abort, cb: MariaCallBackVoid): MariaResult = js.native
@@ -21,4 +23,3 @@ trait MariaResult extends js.Object {
   @JSName("on")
   def on_row(signal: row, cb: MariaCallBackRow): MariaResult = js.native
 }
-

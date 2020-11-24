@@ -11,8 +11,8 @@ The lodash method `_.isPlainObject` exported as a module.
 | Full name          | lodash.isplainobject |
 | Keywords           | lodash-modularized, isplainobject |
 | # releases         | 0 |
-| # dependents       | 580 |
-| # downloads        | 189327199 |
+| # dependents       | 616 |
+| # downloads        | 271142996 |
 | # stars            | 2 |
 
 ## Links

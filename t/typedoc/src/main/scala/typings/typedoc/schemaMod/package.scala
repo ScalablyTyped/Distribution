@@ -2,15 +2,20 @@ package typings.typedoc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object schemaMod {
+  
   type ModelToObject[T] = typings.typedoc.schemaMod._ModelToObject[T] | js.Array[typings.typedoc.schemaMod._ModelToObject[js.Any]]
+  
   type Primitive = js.UndefOr[java.lang.String | scala.Double | scala.Null | scala.Boolean]
+  
   type ProjectReflection = typings.typedoc.schemaMod.ContainerReflection
+  
   type S[T, K /* <: /* keyof T */ java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {-readonly [ K2 in K ]: T[K2] extends typedoc.typedoc/dist/lib/serialization/schema.Primitive? T[K2] : typedoc.typedoc/dist/lib/serialization/schema.ModelToObject<T[K2]>}
     */ typings.typedoc.typedocStrings.S with org.scalablytyped.runtime.TopLevel[js.Any]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.typedoc.schemaMod.SourceReference
     - typings.typedoc.schemaMod.Decorator

@@ -5,7 +5,7 @@ import typings.pulumiAws.snsMixinsMod.TopicEventSubscriptionArgs
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "sns.TopicEventSubscription")
 @js.native
@@ -33,4 +33,3 @@ class TopicEventSubscription protected ()
     opts: ComponentResourceOptions
   ) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -12,6 +12,11 @@ import scala.scalajs.js.annotation._
 @JSImport("mq", JSImport.Namespace)
 @js.native
 object mqMod extends js.Object {
+  
+  def invoke(hdlr: ClassHandler, v: ClassObject): Unit = js.native
+  
+  def nullHandler(): ClassHandler = js.native
+  
   @js.native
   class Chain () extends ClassChain
   
@@ -26,8 +31,4 @@ object mqMod extends js.Object {
   
   @js.native
   class Routing () extends ClassRouting
-  
-  def invoke(hdlr: ClassHandler, v: ClassObject): Unit = js.native
-  def nullHandler(): ClassHandler = js.native
 }
-

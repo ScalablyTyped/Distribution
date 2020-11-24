@@ -10,9 +10,9 @@ Detect if DevTools is open and its orientation
 | ------------------ | :-------------: |
 | Full name          | devtools-detect |
 | Keywords           | browser, detect, identify, check, dev, devtools, developer, orientation, placement, docked |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 8 |
-| # downloads        | 48403 |
+| # downloads        | 35651 |
 | # stars            | 1 |
 
 ## Links

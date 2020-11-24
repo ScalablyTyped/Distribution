@@ -36,7 +36,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service is for an open Bezier shape. */
 @js.native
@@ -48,8 +48,8 @@ trait OpenBezierShape
      with TextProperties
      with ShadowProperties
      with RotationDescriptor
-
 object OpenBezierShape {
+  
   @scala.inline
   def apply(
     BorderDistance: Double,
@@ -309,4 +309,3 @@ object OpenBezierShape {
     __obj.asInstanceOf[OpenBezierShape]
   }
 }
-

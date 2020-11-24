@@ -1,53 +1,27 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.anon.AnimationGroups
-import typings.babylonjs.iparticlesystemMod.IParticleSystem
+import typings.babylonjs.sceneLoaderMod.IRegisteredPlugin
+import typings.babylonjs.sceneLoaderMod.ISceneLoaderAsyncResult
 import typings.babylonjs.sceneLoaderMod.ISceneLoaderPlugin
 import typings.babylonjs.sceneLoaderMod.ISceneLoaderPluginAsync
 import typings.babylonjs.sceneLoaderMod.ISceneLoaderPluginFactory
+import typings.babylonjs.sceneLoaderMod.ISceneLoaderProgressEvent
+import typings.babylonjs.sceneLoaderMod.SceneLoaderSuccessCallback
 import typings.babylonjs.typesMod.Nullable
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "SceneLoader")
 @js.native
 class SceneLoader ()
   extends typings.babylonjs.legacyMod.SceneLoader
-
 /* static members */
 @JSImport("babylonjs", "SceneLoader")
 @js.native
 object SceneLoader extends js.Object {
-  /**
-    * Detailled logging while loading
-    */
-  val DETAILED_LOGGING: Double = js.native
-  /**
-    * Minimal logging while loading
-    */
-  val MINIMAL_LOGGING: Double = js.native
-  /**
-    * No logging while loading
-    */
-  val NO_LOGGING: Double = js.native
-  /**
-    * Event raised when a plugin is used to load a scene
-    */
-  var OnPluginActivatedObservable: typings.babylonjs.observableMod.Observable[ISceneLoaderPlugin | ISceneLoaderPluginAsync] = js.native
-  /**
-    * Summary logging while loading
-    */
-  val SUMMARY_LOGGING: Double = js.native
-  var _getDefaultPlugin: js.Any = js.native
-  var _getDirectLoad: js.Any = js.native
-  var _getFileInfo: js.Any = js.native
-  var _getPluginForDirectLoad: js.Any = js.native
-  var _getPluginForExtension: js.Any = js.native
-  var _getPluginForFilename: js.Any = js.native
-  var _loadData: js.Any = js.native
-  var _registeredPlugins: js.Any = js.native
+  
   /**
     * Append a scene
     * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -61,26 +35,23 @@ object SceneLoader extends js.Object {
     */
   def Append(
     rootUrl: String,
-    sceneFilename: js.UndefOr[File | String],
+    sceneFilename: js.UndefOr[String | File],
     scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
     onSuccess: js.UndefOr[Nullable[js.Function1[/* scene */ typings.babylonjs.sceneMod.Scene, Unit]]],
-    onProgress: js.UndefOr[
-      Nullable[
-        js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-      ]
-    ],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
     onError: js.UndefOr[
       Nullable[
         js.Function3[
           /* scene */ typings.babylonjs.sceneMod.Scene, 
           /* message */ String, 
-          js.UndefOr[_], 
+          /* exception */ js.UndefOr[_], 
           Unit
         ]
       ]
     ],
     pluginExtension: js.UndefOr[Nullable[String]]
   ): Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync] = js.native
+  
   /**
     * Append a scene
     * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -91,60 +62,85 @@ object SceneLoader extends js.Object {
     * @returns The given scene
     */
   def AppendAsync(rootUrl: String): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  def AppendAsync(
+    rootUrl: String,
+    sceneFilename: js.UndefOr[scala.Nothing],
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  def AppendAsync(
+    rootUrl: String,
+    sceneFilename: js.UndefOr[scala.Nothing],
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  def AppendAsync(
+    rootUrl: String,
+    sceneFilename: js.UndefOr[scala.Nothing],
+    scene: Nullable[typings.babylonjs.sceneMod.Scene]
+  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
   def AppendAsync(rootUrl: String, sceneFilename: String): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  def AppendAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  def AppendAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
   def AppendAsync(rootUrl: String, sceneFilename: String, scene: Nullable[typings.babylonjs.sceneMod.Scene]): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
-  def AppendAsync(
-    rootUrl: String,
-    sceneFilename: String,
-    scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    onProgress: Nullable[
-      js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-    ]
-  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
-  def AppendAsync(
-    rootUrl: String,
-    sceneFilename: String,
-    scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    onProgress: Nullable[
-      js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-    ],
-    pluginExtension: Nullable[String]
-  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
   def AppendAsync(rootUrl: String, sceneFilename: File): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
-  def AppendAsync(rootUrl: String, sceneFilename: File, scene: Nullable[typings.babylonjs.sceneMod.Scene]): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
   def AppendAsync(
     rootUrl: String,
     sceneFilename: File,
-    scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    onProgress: Nullable[
-      js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-    ]
-  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
-  def AppendAsync(
-    rootUrl: String,
-    sceneFilename: File,
-    scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    onProgress: Nullable[
-      js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-    ],
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
     pluginExtension: Nullable[String]
   ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  def AppendAsync(
+    rootUrl: String,
+    sceneFilename: File,
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  def AppendAsync(rootUrl: String, sceneFilename: File, scene: Nullable[typings.babylonjs.sceneMod.Scene]): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  
   /**
     * Gets or set a boolean indicating if matrix weights must be cleaned upon loading
     */
   def CleanBoneMatrixWeights: Boolean = js.native
-  def CleanBoneMatrixWeights(value: Boolean): js.Any = js.native
+  def CleanBoneMatrixWeights_=(value: Boolean): Unit = js.native
+  
+  /**
+    * Detailled logging while loading
+    */
+  val DETAILED_LOGGING: Double = js.native
+  
   /**
     * Gets or sets a boolean indicating if entire scene must be loaded even if scene contains incremental data
     */
   def ForceFullSceneLoadingForIncremental: Boolean = js.native
-  def ForceFullSceneLoadingForIncremental(value: Boolean): js.Any = js.native
+  def ForceFullSceneLoadingForIncremental_=(value: Boolean): Unit = js.native
+  
+  /**
+    * Gets the default plugin (used to load Babylon files)
+    * @returns the .babylon plugin
+    */
+  def GetDefaultPlugin(): IRegisteredPlugin = js.native
+  
   /**
     * Gets a plugin that can load the given extension
     * @param extension defines the extension to load
     * @returns a plugin or null if none works
     */
   def GetPluginForExtension(extension: String): ISceneLoaderPlugin | ISceneLoaderPluginAsync | ISceneLoaderPluginFactory = js.native
+  
   /**
     * Import animations from a file into a scene
     * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -156,31 +152,30 @@ object SceneLoader extends js.Object {
     * @param onSuccess a callback with the scene when import succeeds
     * @param onProgress a callback with a progress event for each file being loaded
     * @param onError a callback with the scene, a message, and possibly an exception when import fails
+    * @param pluginExtension the extension used to determine the plugin
     */
   def ImportAnimations(
     rootUrl: String,
-    sceneFilename: js.UndefOr[File | String],
+    sceneFilename: js.UndefOr[String | File],
     scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
     overwriteAnimations: js.UndefOr[Boolean],
     animationGroupLoadingMode: js.UndefOr[typings.babylonjs.sceneLoaderMod.SceneLoaderAnimationGroupLoadingMode],
     targetConverter: js.UndefOr[Nullable[js.Function1[/* target */ _, _]]],
     onSuccess: js.UndefOr[Nullable[js.Function1[/* scene */ typings.babylonjs.sceneMod.Scene, Unit]]],
-    onProgress: js.UndefOr[
-      Nullable[
-        js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-      ]
-    ],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
     onError: js.UndefOr[
       Nullable[
         js.Function3[
           /* scene */ typings.babylonjs.sceneMod.Scene, 
           /* message */ String, 
-          js.UndefOr[_], 
+          /* exception */ js.UndefOr[_], 
           Unit
         ]
       ]
-    ]
+    ],
+    pluginExtension: js.UndefOr[Nullable[String]]
   ): Unit = js.native
+  
   /**
     * Import animations from a file into a scene
     * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -192,39 +187,38 @@ object SceneLoader extends js.Object {
     * @param onSuccess a callback with the scene when import succeeds
     * @param onProgress a callback with a progress event for each file being loaded
     * @param onError a callback with the scene, a message, and possibly an exception when import fails
+    * @param pluginExtension the extension used to determine the plugin
     * @returns the updated scene with imported animations
     */
   def ImportAnimationsAsync(
     rootUrl: String,
-    sceneFilename: js.UndefOr[File | String],
+    sceneFilename: js.UndefOr[String | File],
     scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
     overwriteAnimations: js.UndefOr[Boolean],
     animationGroupLoadingMode: js.UndefOr[typings.babylonjs.sceneLoaderMod.SceneLoaderAnimationGroupLoadingMode],
     targetConverter: js.UndefOr[Nullable[js.Function1[/* target */ _, _]]],
     onSuccess: js.UndefOr[Nullable[js.Function1[/* scene */ typings.babylonjs.sceneMod.Scene, Unit]]],
-    onProgress: js.UndefOr[
-      Nullable[
-        js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-      ]
-    ],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
     onError: js.UndefOr[
       Nullable[
         js.Function3[
           /* scene */ typings.babylonjs.sceneMod.Scene, 
           /* message */ String, 
-          js.UndefOr[_], 
+          /* exception */ js.UndefOr[_], 
           Unit
         ]
       ]
-    ]
+    ],
+    pluginExtension: js.UndefOr[Nullable[String]]
   ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  
   /**
     * Import meshes into a scene
     * @param meshNames an array of mesh names, a single mesh name, or empty string for all meshes that filter what meshes are imported
     * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
     * @param sceneFilename a string that defines the name of the scene file or starts with "data:" following by the stringified version of the scene or a File object (default: empty string)
     * @param scene the instance of BABYLON.Scene to append to
-    * @param onSuccess a callback with a list of imported meshes, particleSystems, and skeletons when import succeeds
+    * @param onSuccess a callback with a list of imported meshes, particleSystems, skeletons, and animationGroups when import succeeds
     * @param onProgress a callback with a progress event for each file being loaded
     * @param onError a callback with the scene, a message, and possibly an exception when import fails
     * @param pluginExtension the extension used to determine the plugin
@@ -233,36 +227,23 @@ object SceneLoader extends js.Object {
   def ImportMesh(
     meshNames: js.Any,
     rootUrl: String,
-    sceneFilename: js.UndefOr[File | String],
+    sceneFilename: js.UndefOr[String | File],
     scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
-    onSuccess: js.UndefOr[
-      Nullable[
-        js.Function4[
-          /* meshes */ js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh], 
-          /* particleSystems */ js.Array[IParticleSystem], 
-          /* skeletons */ js.Array[typings.babylonjs.skeletonMod.Skeleton], 
-          /* animationGroups */ js.Array[typings.babylonjs.animationGroupMod.AnimationGroup], 
-          Unit
-        ]
-      ]
-    ],
-    onProgress: js.UndefOr[
-      Nullable[
-        js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-      ]
-    ],
+    onSuccess: js.UndefOr[Nullable[SceneLoaderSuccessCallback]],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
     onError: js.UndefOr[
       Nullable[
         js.Function3[
           /* scene */ typings.babylonjs.sceneMod.Scene, 
           /* message */ String, 
-          js.UndefOr[_], 
+          /* exception */ js.UndefOr[_], 
           Unit
         ]
       ]
     ],
     pluginExtension: js.UndefOr[Nullable[String]]
   ): Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync] = js.native
+  
   /**
     * Import meshes into a scene
     * @param meshNames an array of mesh names, a single mesh name, or empty string for all meshes that filter what meshes are imported
@@ -273,65 +254,80 @@ object SceneLoader extends js.Object {
     * @param pluginExtension the extension used to determine the plugin
     * @returns The loaded list of imported meshes, particle systems, skeletons, and animation groups
     */
-  def ImportMeshAsync(meshNames: js.Any, rootUrl: String): js.Promise[AnimationGroups] = js.native
-  def ImportMeshAsync(meshNames: js.Any, rootUrl: String, sceneFilename: String): js.Promise[AnimationGroups] = js.native
+  def ImportMeshAsync(meshNames: js.Any, rootUrl: String): js.Promise[ISceneLoaderAsyncResult] = js.native
+  def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: js.UndefOr[scala.Nothing],
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[ISceneLoaderAsyncResult] = js.native
+  def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: js.UndefOr[scala.Nothing],
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[ISceneLoaderAsyncResult] = js.native
+  def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: js.UndefOr[scala.Nothing],
+    scene: Nullable[typings.babylonjs.sceneMod.Scene]
+  ): js.Promise[ISceneLoaderAsyncResult] = js.native
+  def ImportMeshAsync(meshNames: js.Any, rootUrl: String, sceneFilename: String): js.Promise[ISceneLoaderAsyncResult] = js.native
+  def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: String,
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[ISceneLoaderAsyncResult] = js.native
+  def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: String,
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[ISceneLoaderAsyncResult] = js.native
   def ImportMeshAsync(
     meshNames: js.Any,
     rootUrl: String,
     sceneFilename: String,
     scene: Nullable[typings.babylonjs.sceneMod.Scene]
-  ): js.Promise[AnimationGroups] = js.native
+  ): js.Promise[ISceneLoaderAsyncResult] = js.native
+  def ImportMeshAsync(meshNames: js.Any, rootUrl: String, sceneFilename: File): js.Promise[ISceneLoaderAsyncResult] = js.native
   def ImportMeshAsync(
     meshNames: js.Any,
     rootUrl: String,
-    sceneFilename: String,
-    scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    onProgress: Nullable[
-      js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-    ]
-  ): js.Promise[AnimationGroups] = js.native
-  def ImportMeshAsync(
-    meshNames: js.Any,
-    rootUrl: String,
-    sceneFilename: String,
-    scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    onProgress: Nullable[
-      js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-    ],
+    sceneFilename: File,
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
     pluginExtension: Nullable[String]
-  ): js.Promise[AnimationGroups] = js.native
-  def ImportMeshAsync(meshNames: js.Any, rootUrl: String, sceneFilename: File): js.Promise[AnimationGroups] = js.native
+  ): js.Promise[ISceneLoaderAsyncResult] = js.native
+  def ImportMeshAsync(
+    meshNames: js.Any,
+    rootUrl: String,
+    sceneFilename: File,
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[ISceneLoaderAsyncResult] = js.native
   def ImportMeshAsync(
     meshNames: js.Any,
     rootUrl: String,
     sceneFilename: File,
     scene: Nullable[typings.babylonjs.sceneMod.Scene]
-  ): js.Promise[AnimationGroups] = js.native
-  def ImportMeshAsync(
-    meshNames: js.Any,
-    rootUrl: String,
-    sceneFilename: File,
-    scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    onProgress: Nullable[
-      js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-    ]
-  ): js.Promise[AnimationGroups] = js.native
-  def ImportMeshAsync(
-    meshNames: js.Any,
-    rootUrl: String,
-    sceneFilename: File,
-    scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    onProgress: Nullable[
-      js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-    ],
-    pluginExtension: Nullable[String]
-  ): js.Promise[AnimationGroups] = js.native
+  ): js.Promise[ISceneLoaderAsyncResult] = js.native
+  
   /**
     * Gets a boolean indicating that the given extension can be loaded
     * @param extension defines the extension to load
     * @returns true if the extension is supported
     */
   def IsPluginForExtensionAvailable(extension: String): Boolean = js.native
+  
   /**
     * Load a scene
     * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -345,26 +341,23 @@ object SceneLoader extends js.Object {
     */
   def Load(
     rootUrl: String,
-    sceneFilename: js.UndefOr[File | String],
+    sceneFilename: js.UndefOr[String | File],
     engine: js.UndefOr[Nullable[typings.babylonjs.engineMod.Engine]],
     onSuccess: js.UndefOr[Nullable[js.Function1[/* scene */ typings.babylonjs.sceneMod.Scene, Unit]]],
-    onProgress: js.UndefOr[
-      Nullable[
-        js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-      ]
-    ],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
     onError: js.UndefOr[
       Nullable[
         js.Function3[
           /* scene */ typings.babylonjs.sceneMod.Scene, 
           /* message */ String, 
-          js.UndefOr[_], 
+          /* exception */ js.UndefOr[_], 
           Unit
         ]
       ]
     ],
     pluginExtension: js.UndefOr[Nullable[String]]
   ): Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync] = js.native
+  
   /**
     * Load a scene into an asset container
     * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -378,30 +371,27 @@ object SceneLoader extends js.Object {
     */
   def LoadAssetContainer(
     rootUrl: String,
-    sceneFilename: js.UndefOr[File | String],
+    sceneFilename: js.UndefOr[String | File],
     scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
     onSuccess: js.UndefOr[
       Nullable[
         js.Function1[/* assets */ typings.babylonjs.assetContainerMod.AssetContainer, Unit]
       ]
     ],
-    onProgress: js.UndefOr[
-      Nullable[
-        js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-      ]
-    ],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
     onError: js.UndefOr[
       Nullable[
         js.Function3[
           /* scene */ typings.babylonjs.sceneMod.Scene, 
           /* message */ String, 
-          js.UndefOr[_], 
+          /* exception */ js.UndefOr[_], 
           Unit
         ]
       ]
     ],
     pluginExtension: js.UndefOr[Nullable[String]]
   ): Nullable[ISceneLoaderPlugin | ISceneLoaderPluginAsync] = js.native
+  
   /**
     * Load a scene into an asset container
     * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -412,25 +402,40 @@ object SceneLoader extends js.Object {
     * @returns The loaded asset container
     */
   def LoadAssetContainerAsync(rootUrl: String): js.Promise[typings.babylonjs.assetContainerMod.AssetContainer] = js.native
-  def LoadAssetContainerAsync(rootUrl: String, sceneFilename: String): js.Promise[typings.babylonjs.assetContainerMod.AssetContainer] = js.native
-  def LoadAssetContainerAsync(rootUrl: String, sceneFilename: String, scene: Nullable[typings.babylonjs.sceneMod.Scene]): js.Promise[typings.babylonjs.assetContainerMod.AssetContainer] = js.native
   def LoadAssetContainerAsync(
     rootUrl: String,
-    sceneFilename: String,
-    scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    onProgress: Nullable[
-      js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-    ]
-  ): js.Promise[typings.babylonjs.assetContainerMod.AssetContainer] = js.native
-  def LoadAssetContainerAsync(
-    rootUrl: String,
-    sceneFilename: String,
-    scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    onProgress: Nullable[
-      js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-    ],
+    sceneFilename: js.UndefOr[scala.Nothing],
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
     pluginExtension: Nullable[String]
   ): js.Promise[typings.babylonjs.assetContainerMod.AssetContainer] = js.native
+  def LoadAssetContainerAsync(
+    rootUrl: String,
+    sceneFilename: js.UndefOr[scala.Nothing],
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.assetContainerMod.AssetContainer] = js.native
+  def LoadAssetContainerAsync(
+    rootUrl: String,
+    sceneFilename: js.UndefOr[scala.Nothing],
+    scene: Nullable[typings.babylonjs.sceneMod.Scene]
+  ): js.Promise[typings.babylonjs.assetContainerMod.AssetContainer] = js.native
+  def LoadAssetContainerAsync(rootUrl: String, sceneFilename: String): js.Promise[typings.babylonjs.assetContainerMod.AssetContainer] = js.native
+  def LoadAssetContainerAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.assetContainerMod.AssetContainer] = js.native
+  def LoadAssetContainerAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.assetContainerMod.AssetContainer] = js.native
+  def LoadAssetContainerAsync(rootUrl: String, sceneFilename: String, scene: Nullable[typings.babylonjs.sceneMod.Scene]): js.Promise[typings.babylonjs.assetContainerMod.AssetContainer] = js.native
+  
   /**
     * Load a scene
     * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -441,60 +446,108 @@ object SceneLoader extends js.Object {
     * @returns The loaded scene
     */
   def LoadAsync(rootUrl: String): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  def LoadAsync(
+    rootUrl: String,
+    sceneFilename: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[Nullable[typings.babylonjs.engineMod.Engine]],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  def LoadAsync(
+    rootUrl: String,
+    sceneFilename: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[Nullable[typings.babylonjs.engineMod.Engine]],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  def LoadAsync(
+    rootUrl: String,
+    sceneFilename: js.UndefOr[scala.Nothing],
+    engine: Nullable[typings.babylonjs.engineMod.Engine]
+  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
   def LoadAsync(rootUrl: String, sceneFilename: String): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  def LoadAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    engine: js.UndefOr[Nullable[typings.babylonjs.engineMod.Engine]],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
+    pluginExtension: Nullable[String]
+  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  def LoadAsync(
+    rootUrl: String,
+    sceneFilename: String,
+    engine: js.UndefOr[Nullable[typings.babylonjs.engineMod.Engine]],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
   def LoadAsync(rootUrl: String, sceneFilename: String, engine: Nullable[typings.babylonjs.engineMod.Engine]): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
-  def LoadAsync(
-    rootUrl: String,
-    sceneFilename: String,
-    engine: Nullable[typings.babylonjs.engineMod.Engine],
-    onProgress: Nullable[
-      js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-    ]
-  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
-  def LoadAsync(
-    rootUrl: String,
-    sceneFilename: String,
-    engine: Nullable[typings.babylonjs.engineMod.Engine],
-    onProgress: Nullable[
-      js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-    ],
-    pluginExtension: Nullable[String]
-  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
   def LoadAsync(rootUrl: String, sceneFilename: File): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
-  def LoadAsync(rootUrl: String, sceneFilename: File, engine: Nullable[typings.babylonjs.engineMod.Engine]): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
   def LoadAsync(
     rootUrl: String,
     sceneFilename: File,
-    engine: Nullable[typings.babylonjs.engineMod.Engine],
-    onProgress: Nullable[
-      js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-    ]
-  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
-  def LoadAsync(
-    rootUrl: String,
-    sceneFilename: File,
-    engine: Nullable[typings.babylonjs.engineMod.Engine],
-    onProgress: Nullable[
-      js.Function1[/* event */ typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent, Unit]
-    ],
+    engine: js.UndefOr[Nullable[typings.babylonjs.engineMod.Engine]],
+    onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
     pluginExtension: Nullable[String]
   ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  def LoadAsync(
+    rootUrl: String,
+    sceneFilename: File,
+    engine: js.UndefOr[Nullable[typings.babylonjs.engineMod.Engine]],
+    onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+  ): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  def LoadAsync(rootUrl: String, sceneFilename: File, engine: Nullable[typings.babylonjs.engineMod.Engine]): js.Promise[typings.babylonjs.sceneMod.Scene] = js.native
+  
+  /**
+    * Minimal logging while loading
+    */
+  val MINIMAL_LOGGING: Double = js.native
+  
+  /**
+    * No logging while loading
+    */
+  val NO_LOGGING: Double = js.native
+  
+  /**
+    * Event raised when a plugin is used to load a scene
+    */
+  var OnPluginActivatedObservable: typings.babylonjs.observableMod.Observable[ISceneLoaderPlugin | ISceneLoaderPluginAsync] = js.native
+  
   /**
     * Adds a new plugin to the list of registered plugins
     * @param plugin defines the plugin to add
     */
   def RegisterPlugin(plugin: ISceneLoaderPlugin): Unit = js.native
   def RegisterPlugin(plugin: ISceneLoaderPluginAsync): Unit = js.native
+  
+  /**
+    * Summary logging while loading
+    */
+  val SUMMARY_LOGGING: Double = js.native
+  
   /**
     * Gets or sets a boolean indicating if loading screen must be displayed while loading a scene
     */
   def ShowLoadingScreen: Boolean = js.native
-  def ShowLoadingScreen(value: Boolean): js.Any = js.native
+  def ShowLoadingScreen_=(value: Boolean): Unit = js.native
+  
+  var _GetDirectLoad: js.Any = js.native
+  
+  var _GetFileInfo: js.Any = js.native
+  
+  var _GetPluginForDirectLoad: js.Any = js.native
+  
+  var _GetPluginForExtension: js.Any = js.native
+  
+  var _GetPluginForFilename: js.Any = js.native
+  
+  var _LoadData: js.Any = js.native
+  
+  var _registeredPlugins: js.Any = js.native
+  
+  var _showingLoadingScreen: js.Any = js.native
+  
   /**
     * Defines the current logging level (while loading the scene)
     * @ignorenaming
     */
   def loggingLevel: Double = js.native
-  def loggingLevel(value: Double): js.Any = js.native
+  def loggingLevel_=(value: Double): Unit = js.native
 }
-

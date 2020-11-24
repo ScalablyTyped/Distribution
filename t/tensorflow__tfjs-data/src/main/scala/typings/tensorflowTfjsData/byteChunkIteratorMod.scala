@@ -5,13 +5,15 @@ import typings.tensorflowTfjsData.lazyIteratorMod.LazyIterator
 import typings.tensorflowTfjsData.stringIteratorMod.StringIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-data/dist/iterators/byte_chunk_iterator", JSImport.Namespace)
 @js.native
 object byteChunkIteratorMod extends js.Object {
+  
   @js.native
   abstract class ByteChunkIterator () extends LazyIterator[Uint8Array] {
+    
     /**
       * Decode a stream of UTF8-encoded byte arrays to a stream of strings.
       *
@@ -23,6 +25,4 @@ object byteChunkIteratorMod extends js.Object {
       */
     def decodeUTF8(): StringIterator = js.native
   }
-  
 }
-

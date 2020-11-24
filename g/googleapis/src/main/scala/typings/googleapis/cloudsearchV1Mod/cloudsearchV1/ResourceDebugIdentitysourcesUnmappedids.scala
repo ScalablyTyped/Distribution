@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Resource$Debug$Identitysources$Unmappedids")
 @js.native
 class ResourceDebugIdentitysourcesUnmappedids protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudsearch.debug.identitysources.unmappedids.list
     * @desc Lists unmapped user identities for an identity source.
@@ -49,4 +51,3 @@ class ResourceDebugIdentitysourcesUnmappedids protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListUnmappedIdentitiesResponse]
   ): Unit = js.native
 }
-

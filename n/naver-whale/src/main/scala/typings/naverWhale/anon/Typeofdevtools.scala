@@ -2,10 +2,11 @@ package typings.naverWhale.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Typeofdevtools extends js.Object {
+  
   ////////////////////
   // Dev Tools - Inspected Window
   ////////////////////
@@ -14,6 +15,7 @@ trait Typeofdevtools extends js.Object {
     * Availability: Since Chrome 18.
     */
   val inspectedWindow: js.Any = js.native
+  
   ////////////////////
   // Dev Tools - Network
   ////////////////////
@@ -22,6 +24,7 @@ trait Typeofdevtools extends js.Object {
     * Availability: Since Chrome 18.
     */
   val network: js.Any = js.native
+  
   ////////////////////
   // Dev Tools - Panels
   ////////////////////
@@ -31,31 +34,36 @@ trait Typeofdevtools extends js.Object {
     */
   val panels: js.Any = js.native
 }
-
 object Typeofdevtools {
+  
   @scala.inline
   def apply(inspectedWindow: js.Any, network: js.Any, panels: js.Any): Typeofdevtools = {
     val __obj = js.Dynamic.literal(inspectedWindow = inspectedWindow.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any], panels = panels.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofdevtools]
   }
+  
   @scala.inline
   implicit class TypeofdevtoolsOps[Self <: Typeofdevtools] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setInspectedWindow(value: js.Any): Self = this.set("inspectedWindow", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNetwork(value: js.Any): Self = this.set("network", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPanels(value: js.Any): Self = this.set("panels", value.asInstanceOf[js.Any])
   }
-  
 }
-

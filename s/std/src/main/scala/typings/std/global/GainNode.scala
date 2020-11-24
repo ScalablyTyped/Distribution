@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.GainOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("GainNode")
 @js.native
@@ -14,7 +14,6 @@ class GainNode protected ()
   def this(context: typings.std.BaseAudioContext) = this()
   def this(context: typings.std.BaseAudioContext, options: GainOptions) = this()
 }
-
 @JSGlobal("GainNode")
 @js.native
 object GainNode
@@ -24,4 +23,3 @@ object GainNode
       /* options */ GainOptions, 
       typings.std.GainNode
     ]
-

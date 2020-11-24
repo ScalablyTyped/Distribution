@@ -5,12 +5,12 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("i18n-abide", "abide")
 @js.native
 object abide extends js.Object {
+  
   def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(options: AbideOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
-

@@ -13,31 +13,51 @@ import typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85Backg
 import typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.stop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BackgroundGeolocationPlugin extends js.Object {
+  
   var ACTIVITY_PROVIDER: LocationProvider = js.native
+  
   var AUTHORIZED: AuthorizationStatus = js.native
+  
   var AUTHORIZED_FOREGROUND: AuthorizationStatus = js.native
+  
   var BACKGROUND_MODE: ServiceMode = js.native
+  
   var DISTANCE_FILTER_PROVIDER: LocationProvider = js.native
+  
   var FOREGROUND_MODE: ServiceMode = js.native
+  
   var HIGH_ACCURACY: AccuracyLevel = js.native
+  
   var LOCATION_UNAVAILABLE: LocationErrorCode = js.native
+  
   var LOG_DEBUG: LogLevel = js.native
+  
   var LOG_ERROR: LogLevel = js.native
+  
   var LOG_INFO: LogLevel = js.native
+  
   var LOG_TRACE: LogLevel = js.native
+  
   var LOG_WARN: LogLevel = js.native
+  
   var LOW_ACCURACY: AccuracyLevel = js.native
+  
   var MEDIUM_ACCURACY: AccuracyLevel = js.native
+  
   var NOT_AUTHORIZED: AuthorizationStatus = js.native
+  
   var PASSIVE_ACCURACY: AccuracyLevel = js.native
+  
   var PERMISSION_DENIED: LocationErrorCode = js.native
+  
   var RAW_PROVIDER: LocationProvider = js.native
+  
   var TIMEOUT: LocationErrorCode = js.native
-  var events: js.Array[Event] = js.native
+  
   /**
     * Check status of the service
     *
@@ -49,6 +69,7 @@ trait BackgroundGeolocationPlugin extends js.Object {
     success: js.Function1[/* status */ ServiceStatus, Unit],
     fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]
   ): Unit = js.native
+  
   /**
     * Configure plugin.
     * Platform: iOS, Android
@@ -61,6 +82,7 @@ trait BackgroundGeolocationPlugin extends js.Object {
   def configure(options: ConfigureOptions, success: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
   def configure(options: ConfigureOptions, success: js.Function0[Unit]): Unit = js.native
   def configure(options: ConfigureOptions, success: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Delete all stored locations.
     *
@@ -79,6 +101,7 @@ trait BackgroundGeolocationPlugin extends js.Object {
   ): Unit = js.native
   def deleteAllLocations(success: js.Function0[Unit]): Unit = js.native
   def deleteAllLocations(success: js.Function0[Unit], fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]): Unit = js.native
+  
   /**
     * Delete location by locationId.
     *
@@ -100,6 +123,7 @@ trait BackgroundGeolocationPlugin extends js.Object {
     success: js.Function0[Unit],
     fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]
   ): Unit = js.native
+  
   /**
     * End background task indentified by taskKey (iOS only)
     *
@@ -119,6 +143,9 @@ trait BackgroundGeolocationPlugin extends js.Object {
     success: js.Function0[Unit],
     fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]
   ): Unit = js.native
+  
+  var events: js.Array[Event] = js.native
+  
   /**
     * Force sync of pending locations.
     * Option <code>syncThreshold</code> will be ignored and all pending locations will be immediately posted to <code>syncUrl</code> in single batch.
@@ -135,6 +162,7 @@ trait BackgroundGeolocationPlugin extends js.Object {
   ): Unit = js.native
   def forceSync(success: js.Function0[Unit]): Unit = js.native
   def forceSync(success: js.Function0[Unit], fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]): Unit = js.native
+  
   /**
     * Get stored configuration options.
     *
@@ -146,6 +174,7 @@ trait BackgroundGeolocationPlugin extends js.Object {
     success: js.Function1[/* options */ ConfigureOptions, Unit],
     fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]
   ): Unit = js.native
+  
   /**
     * One time location check to get current location of the device.
     *
@@ -170,6 +199,7 @@ trait BackgroundGeolocationPlugin extends js.Object {
     fail: js.Function1[/* error */ LocationError, Unit | Null],
     options: LocationOptions
   ): Unit = js.native
+  
   /**
     * Return all stored locations.
     * Useful for initial rendering of user location on a map just after application launch.
@@ -185,6 +215,7 @@ trait BackgroundGeolocationPlugin extends js.Object {
     success: js.Function1[/* locations */ js.Array[Location], Unit],
     fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]
   ): Unit = js.native
+  
   /**
     * Return all logged events. Useful for plugin debugging.
     *
@@ -209,6 +240,7 @@ trait BackgroundGeolocationPlugin extends js.Object {
     success: js.Function1[/* entries */ js.Array[LogEntry], Unit],
     fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]
   ): Unit = js.native
+  
   /**
     * Returns current stationaryLocation if available. Null if not
     *
@@ -222,6 +254,7 @@ trait BackgroundGeolocationPlugin extends js.Object {
     success: js.Function1[/* location */ StationaryLocation | Null, Unit],
     fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]
   ): Unit = js.native
+  
   /**
     * Method will return locations which have not yet been posted to server.
     * Platform: iOS, Android
@@ -234,6 +267,7 @@ trait BackgroundGeolocationPlugin extends js.Object {
     success: js.Function1[/* location */ js.Array[Location], Unit],
     fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]
   ): Unit = js.native
+  
   /**
     * A special task that gets executed when the app is terminated, but
     * the plugin was configured to continue running in the background
@@ -256,6 +290,7 @@ trait BackgroundGeolocationPlugin extends js.Object {
     *  });
     */
   def headlessTask(task: js.Function1[/* event */ HeadlessTaskEvent, Unit]): Unit = js.native
+  
   /**
     * Register abort_requested event listener.
     *
@@ -359,6 +394,7 @@ trait BackgroundGeolocationPlugin extends js.Object {
     */
   @JSName("on")
   def on_stop(eventName: stop, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Unregister all event listeners for given event.
     * 
@@ -368,23 +404,27 @@ trait BackgroundGeolocationPlugin extends js.Object {
     */
   def removeAllListeners(): Unit = js.native
   def removeAllListeners(event: Event): Unit = js.native
+  
   /**
     * Show app settings to allow change of app location permissions.
     *
     * Platform: Android >= 6, iOS >= 8.0
     */
   def showAppSettings(): Unit = js.native
+  
   /**
     * Show system settings to allow configuration of current location sources.
     *
     * Platform: Android
     */
   def showLocationSettings(): Unit = js.native
+  
   /**
     * Start background geolocation.
     * Platform: iOS, Android
     */
   def start(): Unit = js.native
+  
   /**
     * Start background task (iOS only)
     *
@@ -400,11 +440,13 @@ trait BackgroundGeolocationPlugin extends js.Object {
     success: js.Function1[/* taskKey */ Double, Unit],
     fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]
   ): Unit = js.native
+  
   /**
     * Stop background geolocation.
     * Platform: iOS, Android
     */
   def stop(): Unit = js.native
+  
   /**
     * Switch plugin operation mode,
     *
@@ -433,4 +475,3 @@ trait BackgroundGeolocationPlugin extends js.Object {
     fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]
   ): Unit = js.native
 }
-

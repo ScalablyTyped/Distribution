@@ -4,12 +4,12 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.Rect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PointerDevice extends IPointerDevice
-
 object PointerDevice {
+  
   @scala.inline
   def apply(
     isIntegrated: Boolean,
@@ -23,4 +23,3 @@ object PointerDevice {
     __obj.asInstanceOf[PointerDevice]
   }
 }
-

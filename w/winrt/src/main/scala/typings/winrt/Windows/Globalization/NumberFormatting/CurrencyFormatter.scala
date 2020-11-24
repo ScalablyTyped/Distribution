@@ -3,12 +3,12 @@ package typings.winrt.Windows.Globalization.NumberFormatting
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CurrencyFormatter extends ICurrencyFormatter
-
 object CurrencyFormatter {
+  
   @scala.inline
   def apply(
     currency: String,
@@ -33,4 +33,3 @@ object CurrencyFormatter {
     __obj.asInstanceOf[CurrencyFormatter]
   }
 }
-

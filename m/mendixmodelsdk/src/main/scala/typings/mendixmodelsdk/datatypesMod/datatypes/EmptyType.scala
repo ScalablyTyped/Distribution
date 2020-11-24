@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.datatypesMod.datatypes
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.appservicesMod.appservices.AppServiceAction
 import typings.mendixmodelsdk.appservicesMod.appservices.AppServiceActionParameter
 import typings.mendixmodelsdk.baseModelMod.IModel
@@ -19,11 +20,12 @@ import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterBase
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterObject
 import typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling
 import typings.mendixmodelsdk.restMod.rest.RestOperationParameter
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedParameter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * In version 7.9.0: introduced
@@ -42,41 +44,46 @@ class EmptyType protected () extends DataType {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FEmptyType: IModel = js.native
+  
   @JSName("containerAsAppServiceActionParameter")
   def containerAsAppServiceActionParameter_MEmptyType: AppServiceActionParameter = js.native
+  
   @JSName("containerAsAppServiceAction")
   def containerAsAppServiceAction_MEmptyType: AppServiceAction = js.native
+  
   @JSName("containerAsConstant")
   def containerAsConstant_MEmptyType: Constant = js.native
+  
   @JSName("containerAsDataSetParameter")
   def containerAsDataSetParameter_MEmptyType: DataSetParameter = js.native
+  
   @JSName("containerAsDocumentTemplateParameter")
   def containerAsDocumentTemplateParameter_MEmptyType: DocumentTemplateParameter = js.native
+  
   @JSName("containerAsImportMapping")
   def containerAsImportMapping_MEmptyType: ImportMapping = js.native
+  
   @JSName("containerAsMicroflowBase")
   def containerAsMicroflowBase_MEmptyType: MicroflowBase = js.native
+  
   @JSName("containerAsMicroflowParameterBase")
   def containerAsMicroflowParameterBase_MEmptyType: MicroflowParameterBase = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EmptyType")
 @js.native
 object EmptyType extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'parameterType' property
@@ -86,6 +93,7 @@ object EmptyType extends js.Object {
     *  7.9.0 and higher
     */
   def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'actionReturnType' property
@@ -95,6 +103,7 @@ object EmptyType extends js.Object {
     *  7.9.0 and higher
     */
   def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'type' property
@@ -104,6 +113,7 @@ object EmptyType extends js.Object {
     *  7.9.0 and higher
     */
   def createInConstantUnderType(container: Constant): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'variableType' property
@@ -113,6 +123,7 @@ object EmptyType extends js.Object {
     *  7.9.0 and higher
     */
   def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'columnType' property
@@ -122,6 +133,7 @@ object EmptyType extends js.Object {
     *  7.9.0 and higher
     */
   def createInDataSetColumnUnderColumnType(container: DataSetColumn): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'parameterType' property
@@ -131,6 +143,7 @@ object EmptyType extends js.Object {
     *  7.9.0 and higher
     */
   def createInDataSetParameterUnderParameterType(container: DataSetParameter): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'parameterType' property
@@ -140,6 +153,7 @@ object EmptyType extends js.Object {
     *  7.9.0 and higher
     */
   def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'parameterType' property
@@ -149,6 +163,7 @@ object EmptyType extends js.Object {
     *  7.16.0 and higher
     */
   def createInImportMappingUnderParameterType(container: ImportMapping): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'microflowReturnType' property
@@ -158,6 +173,7 @@ object EmptyType extends js.Object {
     *  7.9.0 and higher
     */
   def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'parameterType' property
@@ -167,6 +183,7 @@ object EmptyType extends js.Object {
     *  7.9.0 and higher
     */
   def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'variableType' property
@@ -176,6 +193,7 @@ object EmptyType extends js.Object {
     *  7.9.0 and higher
     */
   def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'operationReturnType' property
@@ -185,6 +203,7 @@ object EmptyType extends js.Object {
     *  7.9.0 and higher
     */
   def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'parameterType' property
@@ -194,6 +213,7 @@ object EmptyType extends js.Object {
     *  7.9.0 and higher
     */
   def createInPublishedParameterUnderParameterType(container: PublishedParameter): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'type' property
@@ -203,6 +223,7 @@ object EmptyType extends js.Object {
     *  7.17.0 and higher
     */
   def createInRestOperationParameterUnderType(container: RestOperationParameter): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'variableType' property
@@ -212,6 +233,7 @@ object EmptyType extends js.Object {
     *  7.9.0 and higher
     */
   def createInResultHandlingUnderVariableType(container: ResultHandling): EmptyType = js.native
+  
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * The new EmptyType will be automatically stored in the 'type' property
@@ -221,5 +243,8 @@ object EmptyType extends js.Object {
     *  7.9.0 and higher
     */
   def createInValueMappingElementUnderType(container: ValueMappingElement): EmptyType = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

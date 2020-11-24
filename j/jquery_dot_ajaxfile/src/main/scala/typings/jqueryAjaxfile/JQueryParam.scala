@@ -2,10 +2,11 @@ package typings.jqueryAjaxfile
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQueryParam extends js.Object {
+  
   /**
     * Create a serialized representation of an array or object, suitable for use in a URL query string or Ajax request.
     * 
@@ -20,4 +21,3 @@ trait JQueryParam extends js.Object {
     */
   def apply(obj: js.Any, traditional: Boolean): String = js.native
 }
-

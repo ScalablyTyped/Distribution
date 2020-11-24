@@ -2,7 +2,7 @@ package typings.crittersWebpackPlugin.mod.Critters
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Controls log level of the plugin.
@@ -25,19 +25,23 @@ import scala.scalajs.js.annotation._
   - typings.crittersWebpackPlugin.crittersWebpackPluginStrings.silent
 */
 trait LogLevel extends js.Object
-
 object LogLevel {
+  
   @scala.inline
   def debug: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.debug = "debug".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.debug]
+  
   @scala.inline
   def error: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.error = "error".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.error]
+  
   @scala.inline
   def info: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.info = "info".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.info]
+  
   @scala.inline
   def silent: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.silent = "silent".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.silent]
+  
   @scala.inline
   def trace: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.trace = "trace".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.trace]
+  
   @scala.inline
   def warn: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.warn = "warn".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.warn]
 }
-

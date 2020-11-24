@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createWatchCompilerHost")
 @js.native
 object createWatchCompilerHost extends js.Object {
+  
   /**
     * Create the watch compiler host for either configFile or fileNames and its options
     */
@@ -306,4 +307,3 @@ object createWatchCompilerHost extends js.Object {
     watchOptions: WatchOptions
   ): WatchCompilerHostOfFilesAndCompilerOptions[T] = js.native
 }
-

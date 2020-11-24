@@ -2,11 +2,10 @@ package typings.officeJsPreview.Visio
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ToolBarType extends js.Object
-
 /**
   *
   * Toolbar IDs of the app
@@ -16,6 +15,7 @@ sealed trait ToolBarType extends js.Object
 @JSGlobal("Visio.ToolBarType")
 @js.native
 object ToolBarType extends js.Object {
+  
   /**
     *
     * CommandBar
@@ -39,6 +39,4 @@ object ToolBarType extends js.Object {
     */
   @js.native
   sealed trait statusBar extends ToolBarType
-  
 }
-

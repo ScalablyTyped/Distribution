@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.glueMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "Glue")
 @js.native
@@ -14,4 +14,3 @@ class Glue ()
   extends typings.awsSdk.allMod.Glue {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -3,10 +3,11 @@ package typings.lodash.fpMod
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashInvokeArgsMap extends LodashConvertible {
+trait LodashInvokeArgsMap extends js.Object {
+  
   def apply(methodNameOrMethod: __, args: js.Array[_]): LodashInvokeArgsMap1x6 = js.native
   def apply(methodNameOrMethod: __, args: js.Array[_], collection: js.Object): LodashInvokeArgsMap1x6 = js.native
   def apply(methodNameOrMethod: __, args: __): LodashInvokeArgsMap1x4 = js.native
@@ -22,4 +23,3 @@ trait LodashInvokeArgsMap extends LodashConvertible {
   def apply[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: __): LodashInvokeArgsMap2x5[TResult] = js.native
   def apply[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: __, collection: js.Object): LodashInvokeArgsMap2x5[TResult] = js.native
 }
-

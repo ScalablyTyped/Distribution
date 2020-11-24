@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Creativefieldvalues")
 @js.native
 class ResourceCreativefieldvalues protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.creativeFieldValues.delete
     * @desc Deletes an existing creative field value.
@@ -43,6 +45,7 @@ class ResourceCreativefieldvalues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * dfareporting.creativeFieldValues.get
     * @desc Gets one creative field value by ID.
@@ -76,6 +79,7 @@ class ResourceCreativefieldvalues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativeFieldValue]
   ): Unit = js.native
+  
   /**
     * dfareporting.creativeFieldValues.insert
     * @desc Inserts a new creative field value.
@@ -109,6 +113,7 @@ class ResourceCreativefieldvalues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativeFieldValue]
   ): Unit = js.native
+  
   /**
     * dfareporting.creativeFieldValues.list
     * @desc Retrieves a list of creative field values, possibly filtered. This
@@ -148,6 +153,7 @@ class ResourceCreativefieldvalues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativeFieldValuesListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.creativeFieldValues.patch
     * @desc Updates an existing creative field value. This method supports
@@ -183,6 +189,7 @@ class ResourceCreativefieldvalues protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativeFieldValue]
   ): Unit = js.native
+  
   /**
     * dfareporting.creativeFieldValues.update
     * @desc Updates an existing creative field value.
@@ -217,4 +224,3 @@ class ResourceCreativefieldvalues protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCreativeFieldValue]
   ): Unit = js.native
 }
-

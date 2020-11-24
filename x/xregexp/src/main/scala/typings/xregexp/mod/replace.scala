@@ -2,11 +2,12 @@ package typings.xregexp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xregexp", "replace")
 @js.native
 object replace extends js.Object {
+  
   /**
     * Returns a new string with one or all matches of a pattern replaced. The pattern can be a string
     * or regex, and the replacement can be a string or a function to be called for each match. To
@@ -39,4 +40,3 @@ object replace extends js.Object {
   def apply(str: String, search: Pattern, replacement: ReplacementValue): String = js.native
   def apply(str: String, search: Pattern, replacement: ReplacementValue, scope: MatchScope): String = js.native
 }
-

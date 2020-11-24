@@ -11,8 +11,8 @@ A translation module for AngularJS
 | Full name          | angular-translate |
 | Keywords           | angular-translate, angular, AngularJS, translation |
 | # releases         | 3 |
-| # dependents       | 103 |
-| # downloads        | 4428151 |
+| # dependents       | 107 |
+| # downloads        | 4282451 |
 | # stars            | 13 |
 
 ## Links

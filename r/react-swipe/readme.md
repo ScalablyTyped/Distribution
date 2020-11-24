@@ -12,7 +12,7 @@ Brad Birdsall's Swipe.js as a React component
 | Keywords           | react, component, carousel, swipe, react-component |
 | # releases         | 6 |
 | # dependents       | 14 |
-| # downloads        | 1095474 |
+| # downloads        | 1293812 |
 | # stars            | 9 |
 
 ## Links

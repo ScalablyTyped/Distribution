@@ -2,10 +2,11 @@ package typings.mfiles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultManagementOperationsAsync extends js.Object {
+  
   def ArchiveOldVersions(ArchiveOldVersionsJob: IArchiveOldVersionsJob): Unit = js.native
   def ArchiveOldVersions(
     ArchiveOldVersionsJob: IArchiveOldVersionsJob,
@@ -42,6 +43,7 @@ trait IVaultManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ExportContent(ExportContentJob: IExportContentJob): Unit = js.native
   def ExportContent(
     ExportContentJob: IExportContentJob,
@@ -78,6 +80,7 @@ trait IVaultManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetEventHandlers(): Unit = js.native
   def GetEventHandlers(
     successCallback: js.UndefOr[scala.Nothing],
@@ -108,6 +111,7 @@ trait IVaultManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetVaultProperties(): Unit = js.native
   def GetVaultProperties(
     successCallback: js.UndefOr[scala.Nothing],
@@ -138,6 +142,7 @@ trait IVaultManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ImportContent(ImportContentJob: IImportContentJob): Unit = js.native
   def ImportContent(
     ImportContentJob: IImportContentJob,
@@ -174,6 +179,7 @@ trait IVaultManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ImportContentAsync(ImportContentJob: IImportContentJob): Unit = js.native
   def ImportContentAsync(
     ImportContentJob: IImportContentJob,
@@ -210,6 +216,7 @@ trait IVaultManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def IsAsyncJobRunning(JobID: Double): Unit = js.native
   def IsAsyncJobRunning(
     JobID: Double,
@@ -246,6 +253,7 @@ trait IVaultManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def PreviewImportContent(ImportContentJob: IImportContentJob, SummaryFile: String): Unit = js.native
   def PreviewImportContent(
     ImportContentJob: IImportContentJob,
@@ -288,6 +296,7 @@ trait IVaultManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RebuildFullTextSearchIndex(Metadata: Boolean, FileContents: Boolean): Unit = js.native
   def RebuildFullTextSearchIndex(
     Metadata: Boolean,
@@ -330,6 +339,7 @@ trait IVaultManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def SetEventHandlers(EventHandlers: IEventHandlers): Unit = js.native
   def SetEventHandlers(
     EventHandlers: IEventHandlers,
@@ -366,6 +376,7 @@ trait IVaultManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateVaultProperties(VaultProperties: IVaultProperties, RegistrationDataOnly: Boolean): Unit = js.native
   def UpdateVaultProperties(
     VaultProperties: IVaultProperties,
@@ -412,6 +423,7 @@ trait IVaultManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def VerifyVault(VerifyVaultJob: IVerifyVaultJob): Unit = js.native
   def VerifyVault(
     VerifyVaultJob: IVerifyVaultJob,
@@ -451,6 +463,7 @@ trait IVaultManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def WaitAsyncJob(JobID: Double): Unit = js.native
   def WaitAsyncJob(
     JobID: Double,
@@ -488,4 +501,3 @@ trait IVaultManagementOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

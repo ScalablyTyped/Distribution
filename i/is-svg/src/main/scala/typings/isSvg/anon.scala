@@ -3,13 +3,15 @@ package typings.isSvg
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
+    
     /**
     	Check if a string or buffer is [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics).
     	@param input - The data to check.
@@ -24,6 +26,4 @@ object anon extends js.Object {
     def apply(input: String): Boolean = js.native
     def apply(input: Buffer): Boolean = js.native
   }
-  
 }
-

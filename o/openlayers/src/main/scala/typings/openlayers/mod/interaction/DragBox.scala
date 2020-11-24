@@ -6,7 +6,7 @@ import typings.openlayers.mod.geom.Polygon
 import typings.openlayers.mod.olx.interaction.DragBoxOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -42,6 +42,7 @@ import scala.scalajs.js.annotation._
   */
 class DragBox () extends Pointer {
   def this(opt_options: DragBoxOptions) = this()
+  
   /**
     * Returns geometry of last drawn box.
     * @return Geometry.
@@ -49,10 +50,10 @@ class DragBox () extends Pointer {
     */
   def getGeometry(): Polygon = js.native
 }
-
 @JSImport("openlayers", "interaction.DragBox")
 @js.native
 object DragBox extends js.Object {
+  
   /**
     * @classdesc
     * Events emitted by {@link ol.interaction.DragBox} instances are instances of
@@ -75,18 +76,18 @@ object DragBox extends js.Object {
       * @param mapBrowserEvent Originating event.
       */
     def this(`type`: String, coordinate: Coordinate_, mapBrowserEvent: MapBrowserEvent) = this()
+    
     /**
       * The coordinate of the drag event.
       * @const
       * @api stable
       */
     var coordinate: Coordinate_ = js.native
+    
     /**
       * @const
       * @api
       */
     var mapBrowserEvent: MapBrowserEvent = js.native
   }
-  
 }
-

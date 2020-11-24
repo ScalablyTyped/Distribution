@@ -2,7 +2,7 @@ package typings.amapJsApi.global.AMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.LngLat")
 @js.native
@@ -17,4 +17,3 @@ class LngLat protected ()
   def this(lng: Double, lat: Double) = this()
   def this(lng: Double, lat: Double, noAutofix: Boolean) = this()
 }
-

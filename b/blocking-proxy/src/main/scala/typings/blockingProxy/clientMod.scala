@@ -2,17 +2,22 @@ package typings.blockingProxy
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("blocking-proxy/built/lib/client", JSImport.Namespace)
 @js.native
 object clientMod extends js.Object {
+  
   @js.native
   class BPClient protected () extends js.Object {
     def this(bpUrlValue: String) = this()
+    
     var hostname: String = js.native
-    var port: Double = js.native
+    
     def isWaitEnabled(): js.Promise[js.Object] = js.native
+    
+    var port: Double = js.native
+    
     /**
       * Toggle whether waiting for Angular is enabled.
       *
@@ -20,6 +25,7 @@ object clientMod extends js.Object {
       * @returns {Promise<T>}
       */
     def setWaitEnabled(enabled: Boolean): js.Promise[_] = js.native
+    
     /**
       * Set the selector used to find the root element of the Angular application to wait for. See
       * AngularWaitBarrier for more details.
@@ -28,6 +34,4 @@ object clientMod extends js.Object {
       */
     def setWaitParams(rootSelector: String): js.Promise[_] = js.native
   }
-  
 }
-

@@ -4,12 +4,12 @@ import typings.lodash.mod.PropertyPath
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashResult extends LodashConvertible {
+trait LodashResult extends js.Object {
+  
   def apply(path: PropertyPath): LodashResult1x1 = js.native
   def apply(path: __, `object`: js.Any): LodashResult1x2 = js.native
   def apply[TResult](path: PropertyPath, `object`: js.Any): TResult = js.native
 }
-

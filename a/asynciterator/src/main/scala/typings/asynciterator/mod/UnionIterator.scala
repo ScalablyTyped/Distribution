@@ -2,7 +2,7 @@ package typings.asynciterator.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asynciterator", "UnionIterator")
 @js.native
@@ -14,11 +14,16 @@ class UnionIterator[T] protected () extends BufferedIterator[T] {
     */
   def this(sources: AsyncIteratorOrArray[AsyncIterator[T]]) = this()
   def this(sources: AsyncIteratorOrArray[AsyncIterator[T]], options: BufferedIteratorOptions) = this()
-  var _currentSource: js.Any = js.native
-  var _pending: js.Any = js.native
-  var _sources: js.Any = js.native
+  
   /* protected */ def _addSource(source: InternalSource[T]): Unit = js.native
+  
+  var _currentSource: js.Any = js.native
+  
   /* protected */ def _loadSources(): Unit = js.native
+  
+  var _pending: js.Any = js.native
+  
   /* protected */ def _removeEmptySources(): Unit = js.native
+  
+  var _sources: js.Any = js.native
 }
-

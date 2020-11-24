@@ -3,7 +3,7 @@ package typings.uirouterAngularjs.mod
 import typings.uirouterCore.anon.TypeofTransition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "Transition")
 @js.native
@@ -28,12 +28,11 @@ class Transition protected ()
     router: typings.uirouterCore.routerMod.UIRouter
   ) = this()
 }
-
 /* static members */
 @JSImport("@uirouter/angularjs", "Transition")
 @js.native
 object Transition extends js.Object {
+  
   /** @internal */
   var diToken: TypeofTransition = js.native
 }
-

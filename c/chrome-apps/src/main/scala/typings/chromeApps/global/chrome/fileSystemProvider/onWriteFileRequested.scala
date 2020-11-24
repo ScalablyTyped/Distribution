@@ -24,7 +24,7 @@ import typings.chromeApps.chromeAppsStrings.TOO_MANY_OPENED
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Raised when writing contents to a file opened previously with openRequestId is requested.
@@ -53,4 +53,3 @@ object onWriteFileRequested
         ]
       ]
     ]
-

@@ -2,7 +2,7 @@ package typings.reactFoundation.enumsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactFoundation.reactFoundationStrings.auto
@@ -10,12 +10,13 @@ import scala.scalajs.js.annotation._
   - typings.reactFoundation.reactFoundationStrings.shrink
 */
 trait SpaceControls extends js.Object
-
 @JSImport("react-foundation/enums", "SpaceControls")
 @js.native
 object SpaceControls extends js.Object {
+  
   var AUTO: SpaceControls = js.native
+  
   var GROW: SpaceControls = js.native
+  
   var SHRINK: SpaceControls = js.native
 }
-

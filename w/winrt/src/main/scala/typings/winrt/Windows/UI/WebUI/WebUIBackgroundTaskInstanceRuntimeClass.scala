@@ -5,14 +5,14 @@ import typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskRegistrat
 import typings.winrt.Windows.ApplicationModel.Background.IBackgroundTaskInstance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebUIBackgroundTaskInstanceRuntimeClass
   extends IWebUIBackgroundTaskInstance
      with IBackgroundTaskInstance
-
 object WebUIBackgroundTaskInstanceRuntimeClass {
+  
   @scala.inline
   def apply(
     getDeferral: () => BackgroundTaskDeferral,
@@ -28,4 +28,3 @@ object WebUIBackgroundTaskInstanceRuntimeClass {
     __obj.asInstanceOf[WebUIBackgroundTaskInstanceRuntimeClass]
   }
 }
-

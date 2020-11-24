@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.clouddirectoryMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.CloudDirectory")
 @js.native
@@ -14,4 +14,3 @@ class CloudDirectory ()
   extends typings.awsSdk.mod.CloudDirectory {
   def this(options: ClientConfiguration) = this()
 }
-

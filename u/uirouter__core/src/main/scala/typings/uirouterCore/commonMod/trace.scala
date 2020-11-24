@@ -3,7 +3,7 @@ package typings.uirouterCore.commonMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The [[Trace]] singleton
@@ -18,4 +18,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object trace
   extends TopLevel[typings.uirouterCore.traceMod.Trace_]
-

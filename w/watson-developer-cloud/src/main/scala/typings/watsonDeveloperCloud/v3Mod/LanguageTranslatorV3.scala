@@ -3,13 +3,14 @@ package typings.watsonDeveloperCloud.v3Mod
 import typings.ibmCloudSdkCore.mod.BaseService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IBM Watson&trade; Language Translator translates text from one language to another. The service offers multiple IBM provided translation models that you can customize based on your unique terminology and language. Use Language Translator to take news from across the globe and present it in your language, communicate with your customers in their own language, and more.
   */
 @js.native
 trait LanguageTranslatorV3 extends BaseService {
+  
   /*************************
     * models
     ************************/
@@ -50,6 +51,7 @@ trait LanguageTranslatorV3 extends BaseService {
     */
   def createModel(params: CreateModelParams): js.Promise[_] | Unit = js.native
   def createModel(params: CreateModelParams, callback: Callback[TranslationModel]): js.Promise[_] | Unit = js.native
+  
   /**
     * Delete model.
     *
@@ -63,6 +65,7 @@ trait LanguageTranslatorV3 extends BaseService {
     */
   def deleteModel(params: DeleteModelParams): js.Promise[_] | Unit = js.native
   def deleteModel(params: DeleteModelParams, callback: Callback[DeleteModelResult]): js.Promise[_] | Unit = js.native
+  
   /**
     * Get model details.
     *
@@ -77,6 +80,7 @@ trait LanguageTranslatorV3 extends BaseService {
     */
   def getModel(params: GetModelParams): js.Promise[_] | Unit = js.native
   def getModel(params: GetModelParams, callback: Callback[TranslationModel]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * identification
     ************************/
@@ -93,6 +97,7 @@ trait LanguageTranslatorV3 extends BaseService {
     */
   def identify(params: IdentifyParams): js.Promise[_] | Unit = js.native
   def identify(params: IdentifyParams, callback: Callback[IdentifiedLanguages]): js.Promise[_] | Unit = js.native
+  
   /**
     * List identifiable languages.
     *
@@ -108,6 +113,7 @@ trait LanguageTranslatorV3 extends BaseService {
   def listIdentifiableLanguages(params: js.UndefOr[scala.Nothing], callback: Callback[IdentifiableLanguages]): js.Promise[_] | Unit = js.native
   def listIdentifiableLanguages(params: ListIdentifiableLanguagesParams): js.Promise[_] | Unit = js.native
   def listIdentifiableLanguages(params: ListIdentifiableLanguagesParams, callback: Callback[IdentifiableLanguages]): js.Promise[_] | Unit = js.native
+  
   /**
     * List models.
     *
@@ -128,6 +134,7 @@ trait LanguageTranslatorV3 extends BaseService {
   def listModels(params: js.UndefOr[scala.Nothing], callback: Callback[TranslationModels]): js.Promise[_] | Unit = js.native
   def listModels(params: ListModelsParams): js.Promise[_] | Unit = js.native
   def listModels(params: ListModelsParams, callback: Callback[TranslationModels]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * translation
     ************************/
@@ -150,4 +157,3 @@ trait LanguageTranslatorV3 extends BaseService {
   def translate(params: TranslateParams): js.Promise[_] | Unit = js.native
   def translate(params: TranslateParams, callback: Callback[TranslationResult]): js.Promise[_] | Unit = js.native
 }
-

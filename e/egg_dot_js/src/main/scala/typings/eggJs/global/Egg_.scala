@@ -3,7 +3,7 @@ package typings.eggJs.global
 import typings.eggJs.Egg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Egg.js is a simple JS library that has no prerequisites and allows you to easily add web easter
@@ -34,4 +34,3 @@ class Egg_ () extends Egg {
     */
   def this(keySequence: String, fn: js.Function0[_], metadata: js.Any) = this()
 }
-

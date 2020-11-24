@@ -3,7 +3,7 @@ package typings.sequelize.mod
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait castStatic
@@ -14,4 +14,3 @@ trait castStatic
   * @param type The type to cast it to
   */
 Instantiable2[/* val */ js.Any, /* type */ String, cast]
-

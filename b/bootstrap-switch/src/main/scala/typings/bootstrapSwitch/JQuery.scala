@@ -20,10 +20,11 @@ import typings.bootstrapSwitch.bootstrapSwitchStrings.switchChangeDotbootstrapSw
 import typings.bootstrapSwitch.bootstrapSwitchStrings.wrapperClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   def bootstrapSwitch(): JQuery = js.native
   def bootstrapSwitch(method: String): JQuery = js.native
   def bootstrapSwitch(method: String, param1: js.Any, param2: js.Any): JQuery = js.native
@@ -55,6 +56,7 @@ trait JQuery extends js.Object {
   def bootstrapSwitch_state(method: state): Boolean = js.native
   @JSName("bootstrapSwitch")
   def bootstrapSwitch_wrapperClass(method: wrapperClass): String = js.native
+  
   @JSName("off")
   def off_initbootstrapSwitch(events: initDotbootstrapSwitch): JQuery = js.native
   @JSName("off")
@@ -97,6 +99,7 @@ trait JQuery extends js.Object {
     selector: String,
     handler: js.Function1[/* eventobject */ BootstrapSwitchChangeEventObject, _]
   ): JQuery = js.native
+  
   @JSName("on")
   def on_initbootstrapSwitch(events: initDotbootstrapSwitch): JQuery = js.native
   @JSName("on")
@@ -140,4 +143,3 @@ trait JQuery extends js.Object {
     handler: js.Function1[/* eventobject */ BootstrapSwitchChangeEventObject, _]
   ): JQuery = js.native
 }
-

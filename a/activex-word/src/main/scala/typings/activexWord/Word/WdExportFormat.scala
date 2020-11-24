@@ -4,18 +4,18 @@ import typings.activexWord.activexWordNumbers.`17`
 import typings.activexWord.activexWordNumbers.`18`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexWord.activexWordNumbers.`17`
   - typings.activexWord.activexWordNumbers.`18`
 */
 trait WdExportFormat extends js.Object
-
 object WdExportFormat {
+  
   @scala.inline
   def wdExportFormatPDF: `17` = 17.asInstanceOf[`17`]
+  
   @scala.inline
   def wdExportFormatXPS: `18` = 18.asInstanceOf[`18`]
 }
-

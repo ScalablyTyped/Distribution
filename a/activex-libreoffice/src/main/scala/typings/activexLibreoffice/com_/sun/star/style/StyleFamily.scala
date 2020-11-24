@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service is a container of style sheets of the same style family.
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 trait StyleFamily
   extends XNameContainer
      with XIndexAccess
-
 object StyleFamily {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -41,4 +41,3 @@ object StyleFamily {
     __obj.asInstanceOf[StyleFamily]
   }
 }
-

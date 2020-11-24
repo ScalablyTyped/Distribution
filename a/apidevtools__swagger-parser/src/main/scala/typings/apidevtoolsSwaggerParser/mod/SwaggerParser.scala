@@ -3,7 +3,7 @@ package typings.apidevtoolsSwaggerParser.mod
 import typings.openapiTypes.mod.OpenAPI.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is the default export of Swagger Parser. You can creates instances of this class using new SwaggerParser(), or you can just call its static methods.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SwaggerParser extends js.Object {
+  
   /**
     * The $refs property is a `$Refs` object, which lets you access all of the externally-referenced files in the OpenAPI definition, as well as easily get and set specific values in the OpenAPI definition using JSON pointers.
     *
@@ -21,12 +22,14 @@ trait SwaggerParser extends js.Object {
     */
   @JSName("$refs")
   var $refs: Refs = js.native
+  
   /**
     * The `api` property is the parsed/bundled/dereferenced OpenAPI definition. This is the same value that is passed to the callback function (or Promise) when calling the parse, bundle, or dereference methods.
     *
     * See https://apitools.dev/swagger-parser/docs/swagger-parser.html#api
     */
   var api: Document = js.native
+  
   def bundle(api: String): js.Promise[Document] = js.native
   /**
     * Bundles all referenced files/URLs into a single API definition that only has internal `$ref` pointers. This lets you split-up your API definition however you want while you're building it, but easily combine all those files together when it's time to package or distribute the API definition to other people. The resulting API definition size will be small, since it will still contain internal JSON references rather than being fully-dereferenced.
@@ -50,6 +53,7 @@ trait SwaggerParser extends js.Object {
   def bundle(baseUrl: String, api: String, options: Options, callback: ApiCallback): Unit = js.native
   def bundle(baseUrl: String, api: Document, options: Options): js.Promise[Document] = js.native
   def bundle(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = js.native
+  
   def dereference(api: String): js.Promise[Document] = js.native
   /**
     * Dereferences all `$ref` pointers in the OpenAPI definition, replacing each reference with its resolved value. This results in an API definition that does not contain any `$ref` pointers. Instead, it's a normal JavaScript object tree that can easily be crawled and used just like any other JavaScript object. This is great for programmatic usage, especially when using tools that don't understand JSON references.
@@ -73,6 +77,7 @@ trait SwaggerParser extends js.Object {
   def dereference(baseUrl: String, api: String, options: Options, callback: ApiCallback): Unit = js.native
   def dereference(baseUrl: String, api: Document, options: Options): js.Promise[Document] = js.native
   def dereference(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = js.native
+  
   def parse(api: String): js.Promise[Document] = js.native
   /**
     * *This method is used internally by other methods, such as `bundle` and `dereference`. You probably won't need to call this method yourself.*
@@ -96,6 +101,7 @@ trait SwaggerParser extends js.Object {
   def parse(baseUrl: String, api: String, options: Options, callback: ApiCallback): Unit = js.native
   def parse(baseUrl: String, api: Document, options: Options): js.Promise[Document] = js.native
   def parse(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = js.native
+  
   def resolve(api: String): js.Promise[Refs] = js.native
   /**
     * *This method is used internally by other methods, such as `bundle` and `dereference`. You probably won't need to call this method yourself.*
@@ -119,6 +125,7 @@ trait SwaggerParser extends js.Object {
   def resolve(baseUrl: String, api: String, options: Options, callback: RefsCallback): Unit = js.native
   def resolve(baseUrl: String, api: Document, options: Options): js.Promise[Refs] = js.native
   def resolve(baseUrl: String, api: Document, options: Options, callback: RefsCallback): Unit = js.native
+  
   def validate(api: String): js.Promise[Document] = js.native
   /**
     * Parses, dereferences, and validates the given Swagger API.
@@ -142,4 +149,3 @@ trait SwaggerParser extends js.Object {
   def validate(baseUrl: String, api: Document, options: Options): js.Promise[Document] = js.native
   def validate(baseUrl: String, api: Document, options: Options, callback: ApiCallback): Unit = js.native
 }
-

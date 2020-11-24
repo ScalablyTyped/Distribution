@@ -1,7 +1,7 @@
 
 # Scala.js typings for vivus
 
-Typings are for version 0.4.0
+Typings are for version 0.4
 
 ## Library description:
 JavaScript library to make drawing animation on SVG
@@ -10,9 +10,9 @@ JavaScript library to make drawing animation on SVG
 | ------------------ | :-------------: |
 | Full name          | vivus |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 16 |
-| # downloads        | 206456 |
+| # releases         | 2 |
+| # dependents       | 17 |
+| # downloads        | 195515 |
 | # stars            | 4 |
 
 ## Links

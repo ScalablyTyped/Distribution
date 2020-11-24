@@ -2,14 +2,14 @@ package typings.sharepoint.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ViewType extends js.Object
-
 @JSGlobal("SP.ViewType")
 @js.native
 object ViewType extends js.Object {
+  
   @js.native
   sealed trait calendar extends ViewType
   
@@ -30,6 +30,4 @@ object ViewType extends js.Object {
   
   @js.native
   sealed trait recurrence extends ViewType
-  
 }
-

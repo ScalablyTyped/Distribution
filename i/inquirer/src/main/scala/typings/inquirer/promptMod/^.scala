@@ -4,7 +4,7 @@ import typings.inquirer.mod.StreamOptions
 import typings.inquirer.mod.prompts.PromptCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the prompt ui.
@@ -24,4 +24,3 @@ class ^ protected () extends PromptUI {
   def this(prompts: PromptCollection) = this()
   def this(prompts: PromptCollection, options: StreamOptions) = this()
 }
-

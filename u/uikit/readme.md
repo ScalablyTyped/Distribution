@@ -10,9 +10,9 @@ UIkit is a lightweight and modular front-end framework for developing fast and p
 | ------------------ | :-------------: |
 | Full name          | uikit |
 | Keywords           | - |
-| # releases         | 285 |
-| # dependents       | 65 |
-| # downloads        | 1389912 |
+| # releases         | 287 |
+| # dependents       | 86 |
+| # downloads        | 2361655 |
 | # stars            | 11 |
 
 ## Links

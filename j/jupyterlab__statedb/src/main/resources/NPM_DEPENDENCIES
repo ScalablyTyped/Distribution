@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/statedb" : "2.2.0"
+      "@jupyterlab/statedb" : "2.2.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/statedb" : "2.2.0"
+      "@jupyterlab/statedb" : "2.2.5"
     }
   ],
   "compile-devDependencies" : [

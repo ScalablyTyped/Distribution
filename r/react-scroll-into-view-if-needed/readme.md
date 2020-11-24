@@ -10,9 +10,9 @@ A thin component wrapper around scroll-into-view-if-needed
 | ------------------ | :-------------: |
 | Full name          | react-scroll-into-view-if-needed |
 | Keywords           | react, scroll-into-view-if-needed, scroll, scrolling |
-| # releases         | 15 |
-| # dependents       | 0 |
-| # downloads        | 67326 |
+| # releases         | 2 |
+| # dependents       | 4 |
+| # downloads        | 306545 |
 | # stars            | 0 |
 
 ## Links

@@ -7,11 +7,12 @@ import typings.reactWithStyles.reactWithStylesStrings.styles
 import typings.reactWithStyles.reactWithStylesStrings.theme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-with-styles", "withStyles")
 @js.native
 object withStyles extends js.Object {
+  
   def apply[T](): js.Function1[
     /* component */ ComponentType[_], 
     ComponentClass[
@@ -63,4 +64,3 @@ object withStyles extends js.Object {
     ]
   ] = js.native
 }
-

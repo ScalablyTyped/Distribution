@@ -3,7 +3,7 @@ package typings.listJs.mod
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("list.js", JSImport.Namespace)
 @js.native
@@ -17,4 +17,3 @@ class ^ protected () extends List {
   def this(element: HTMLElement, options: js.UndefOr[scala.Nothing], values: js.Array[js.Object]) = this()
   def this(element: HTMLElement, options: ListOptions, values: js.Array[js.Object]) = this()
 }
-

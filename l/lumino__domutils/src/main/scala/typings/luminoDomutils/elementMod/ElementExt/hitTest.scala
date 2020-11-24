@@ -3,11 +3,12 @@ package typings.luminoDomutils.elementMod.ElementExt
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/domutils/types/element", "ElementExt.hitTest")
 @js.native
 object hitTest extends js.Object {
+  
   /**
     * Test whether a client position lies within an element.
     *
@@ -21,4 +22,3 @@ object hitTest extends js.Object {
     */
   def apply(element: Element, clientX: Double, clientY: Double): Boolean = js.native
 }
-

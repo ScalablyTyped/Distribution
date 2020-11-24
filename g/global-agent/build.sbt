@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "global-agent"
-version := "2.1-dt-20200127Z-ed20c7"
+version := "2.1-dt-20200127Z-f13d94"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

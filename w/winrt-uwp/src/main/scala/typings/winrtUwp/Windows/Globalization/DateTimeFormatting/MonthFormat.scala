@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Globalization.DateTimeFormatting
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MonthFormat extends js.Object
-
 /** Specifies the intended format for the month in a DateTimeFormatter object. */
 @JSGlobal("Windows.Globalization.DateTimeFormatting.MonthFormat")
 @js.native
 object MonthFormat extends js.Object {
+  
   /** Display an abbreviated version of the month (for example, "Sep" for September). */
   @js.native
   sealed trait abbreviated extends MonthFormat
@@ -30,6 +30,4 @@ object MonthFormat extends js.Object {
   /** Display the month as a number (for example, "9" for September). */
   @js.native
   sealed trait numeric extends MonthFormat
-  
 }
-

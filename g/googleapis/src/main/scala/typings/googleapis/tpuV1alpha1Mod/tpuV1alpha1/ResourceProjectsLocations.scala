@@ -6,17 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tpu/v1alpha1", "tpu_v1alpha1.Resource$Projects$Locations")
 @js.native
 class ResourceProjectsLocations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var acceleratorTypes: ResourceProjectsLocationsAcceleratortypes = js.native
+  
   var context: APIRequestContext = js.native
-  var nodes: ResourceProjectsLocationsNodes = js.native
-  var operations: ResourceProjectsLocationsOperations = js.native
-  var tensorflowVersions: ResourceProjectsLocationsTensorflowversions = js.native
+  
   /**
     * tpu.projects.locations.get
     * @desc Gets information about a location.
@@ -45,6 +45,7 @@ class ResourceProjectsLocations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLocation]
   ): Unit = js.native
+  
   /**
     * tpu.projects.locations.list
     * @desc Lists information about the supported locations for this service.
@@ -79,5 +80,10 @@ class ResourceProjectsLocations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListLocationsResponse]
   ): Unit = js.native
+  
+  var nodes: ResourceProjectsLocationsNodes = js.native
+  
+  var operations: ResourceProjectsLocationsOperations = js.native
+  
+  var tensorflowVersions: ResourceProjectsLocationsTensorflowversions = js.native
 }
-

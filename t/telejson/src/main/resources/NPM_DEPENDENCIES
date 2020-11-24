@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "telejson" : "3.3.0"
+      "telejson" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "telejson" : "3.3.0"
+      "telejson" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@stylable/optimizer" : "3.11.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@stylable/optimizer" : "3.11.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

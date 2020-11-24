@@ -3,7 +3,7 @@ package typings.babylonjs.mod
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "StandardRenderingPipeline")
 @js.native
@@ -29,19 +29,20 @@ class StandardRenderingPipeline protected ()
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
     ratio: Double,
-    originalPostProcess: Nullable[typings.babylonjs.postProcessMod.PostProcess],
+    originalPostProcess: js.UndefOr[Nullable[typings.babylonjs.postProcessMod.PostProcess]],
     cameras: js.Array[typings.babylonjs.cameraMod.Camera]
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs", "StandardRenderingPipeline")
 @js.native
 object StandardRenderingPipeline extends js.Object {
+  
   /**
     * Luminance steps
     */
   var LuminanceSteps: Double = js.native
+  
   /**
     * Parse the serialized pipeline
     * @param source Source pipeline.
@@ -51,4 +52,3 @@ object StandardRenderingPipeline extends js.Object {
     */
   def Parse(source: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.standardRenderingPipelineMod.StandardRenderingPipeline = js.native
 }
-

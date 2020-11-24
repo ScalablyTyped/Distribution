@@ -2,7 +2,7 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A &lt;a
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaHistogramChartSpec extends js.Object {
+  
   /**
     * By default the bucket size (the range of values stacked in a single
     * column) is chosen automatically, but it may be overridden here. E.g., A
@@ -22,10 +23,12 @@ trait SchemaHistogramChartSpec extends js.Object {
     * Cannot be negative. This field is optional.
     */
   var bucketSize: js.UndefOr[Double] = js.native
+  
   /**
     * The position of the chart legend.
     */
   var legendPosition: js.UndefOr[String] = js.native
+  
   /**
     * The outlier percentile is used to ensure that outliers do not adversely
     * affect the calculation of bucket sizes.  For example, setting an outlier
@@ -35,59 +38,74 @@ trait SchemaHistogramChartSpec extends js.Object {
     * Must be between 0.0 and 0.5.
     */
   var outlierPercentile: js.UndefOr[Double] = js.native
+  
   /**
     * The series for a histogram may be either a single series of values to be
     * bucketed or multiple series, each of the same length, containing the name
     * of the series followed by the values to be bucketed for that series.
     */
   var series: js.UndefOr[js.Array[SchemaHistogramSeries]] = js.native
+  
   /**
     * Whether horizontal divider lines should be displayed between items in
     * each column.
     */
   var showItemDividers: js.UndefOr[Boolean] = js.native
 }
-
 object SchemaHistogramChartSpec {
+  
   @scala.inline
   def apply(): SchemaHistogramChartSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHistogramChartSpec]
   }
+  
   @scala.inline
   implicit class SchemaHistogramChartSpecOps[Self <: SchemaHistogramChartSpec] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBucketSize(value: Double): Self = this.set("bucketSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBucketSize: Self = this.set("bucketSize", js.undefined)
+    
     @scala.inline
     def setLegendPosition(value: String): Self = this.set("legendPosition", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLegendPosition: Self = this.set("legendPosition", js.undefined)
+    
     @scala.inline
     def setOutlierPercentile(value: Double): Self = this.set("outlierPercentile", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOutlierPercentile: Self = this.set("outlierPercentile", js.undefined)
+    
     @scala.inline
     def setSeriesVarargs(value: SchemaHistogramSeries*): Self = this.set("series", js.Array(value :_*))
+    
     @scala.inline
     def setSeries(value: js.Array[SchemaHistogramSeries]): Self = this.set("series", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSeries: Self = this.set("series", js.undefined)
+    
     @scala.inline
     def setShowItemDividers(value: Boolean): Self = this.set("showItemDividers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteShowItemDividers: Self = this.set("showItemDividers", js.undefined)
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the properties of <view> elements, as well as methods to manipulate them. */
 @js.native
@@ -10,8 +10,7 @@ trait SVGViewElement
   extends SVGElement
      with SVGFitToViewBox
      with SVGZoomAndPan {
-  /** @deprecated */
-  val viewTarget: SVGStringList = js.native
+  
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -22,6 +21,7 @@ trait SVGViewElement
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -32,5 +32,7 @@ trait SVGViewElement
     callback: EventListenerOrEventListenerObject,
     options: EventListenerOptions
   ): Unit = js.native
+  
+  /** @deprecated */
+  val viewTarget: SVGStringList = js.native
 }
-

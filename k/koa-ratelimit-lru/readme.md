@@ -10,9 +10,9 @@ Rate limiter middleware backed by lru-cache
 | ------------------ | :-------------: |
 | Full name          | koa-ratelimit-lru |
 | Keywords           | koa, middleware, ratelimiter, ratelimit, rate |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 16851 |
+| # downloads        | 4856 |
 | # stars            | 1 |
 
 ## Links

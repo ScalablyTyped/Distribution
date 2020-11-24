@@ -4,11 +4,12 @@ import typings.winjs.Element
 import typings.winjs.WinJS.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("WinJS.UI.process")
 @js.native
 object process extends js.Object {
+  
   /**
     * Applies declarative control binding to the specified element.
     * @param element The element to bind.
@@ -16,4 +17,3 @@ object process extends js.Object {
     **/
   def apply(element: Element): Promise[_] = js.native
 }
-

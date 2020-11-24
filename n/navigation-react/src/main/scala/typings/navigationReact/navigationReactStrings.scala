@@ -2,9 +2,19 @@ package typings.navigationReact
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navigationReactStrings {
+  
+  @scala.inline
+  def add: add = "add".asInstanceOf[add]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
+  
   @js.native
   sealed trait add extends js.Object
   
@@ -13,12 +23,4 @@ object navigationReactStrings {
   
   @js.native
   sealed trait replace extends js.Object
-  
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
 }
-

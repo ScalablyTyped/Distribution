@@ -1,7 +1,7 @@
 
 # Scala.js typings for properties-reader
 
-Typings are for version 0.0
+Typings are for version 2.1
 
 ## Library description:
 Properties file reader for Node.js
@@ -10,9 +10,9 @@ Properties file reader for Node.js
 | ------------------ | :-------------: |
 | Full name          | properties-reader |
 | Keywords           | properties, ini, parser |
-| # releases         | 4 |
-| # dependents       | 110 |
-| # downloads        | 2168299 |
+| # releases         | 5 |
+| # dependents       | 125 |
+| # downloads        | 2568868 |
 | # stars            | 1 |
 
 ## Links

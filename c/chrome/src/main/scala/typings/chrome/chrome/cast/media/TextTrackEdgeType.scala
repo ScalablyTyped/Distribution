@@ -2,14 +2,14 @@ package typings.chrome.chrome.cast.media
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TextTrackEdgeType extends js.Object
-
 @JSGlobal("chrome.cast.media.TextTrackEdgeType")
 @js.native
 object TextTrackEdgeType extends js.Object {
+  
   @js.native
   sealed trait DEPRESSED extends TextTrackEdgeType
   
@@ -24,6 +24,4 @@ object TextTrackEdgeType extends js.Object {
   
   @js.native
   sealed trait RAISED extends TextTrackEdgeType
-  
 }
-

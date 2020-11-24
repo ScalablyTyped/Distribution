@@ -2,13 +2,12 @@ package typings.topojson
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topojsonStrings {
-  @js.native
-  sealed trait GeometryCollection extends js.Object
   
   @scala.inline
   def GeometryCollection: GeometryCollection = "GeometryCollection".asInstanceOf[GeometryCollection]
+  @js.native
+  sealed trait GeometryCollection extends js.Object
 }
-

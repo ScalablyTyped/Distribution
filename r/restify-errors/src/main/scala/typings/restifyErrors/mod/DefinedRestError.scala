@@ -2,7 +2,7 @@ package typings.restifyErrors.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("restify-errors", "DefinedRestError")
 @js.native
@@ -23,4 +23,3 @@ class DefinedRestError () extends RestError {
   ) = this()
   def this(priorErr: js.Any, options: RestifyHttpErrorOptions, printf: String, args: js.Any*) = this()
 }
-

@@ -2,11 +2,12 @@ package typings.phaser.global.Phaser.Input
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Input.Touch")
 @js.native
 object Touch extends js.Object {
+  
   /**
     * The Touch Manager is a helper class that belongs to the Input Manager.
     * 
@@ -23,6 +24,4 @@ object Touch extends js.Object {
       */
     def this(inputManager: typings.phaser.Phaser.Input.InputManager) = this()
   }
-  
 }
-

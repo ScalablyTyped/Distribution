@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "CascadedShadowGenerator")
 @js.native
@@ -24,28 +24,36 @@ class CascadedShadowGenerator protected ()
     usefulFloatFirst: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "CascadedShadowGenerator")
 @js.native
 object CascadedShadowGenerator extends js.Object {
+  
   /**
     * Name of the CSM class
     */
   var CLASSNAME: String = js.native
+  
   /**
     * Defines the default number of cascades used by the CSM.
     */
   val DEFAULT_CASCADES_COUNT: Double = js.native
+  
+  /**
+    *  Support test.
+    */
+  def IsSupported: Boolean = js.native
+  
   /**
     * Defines the maximum number of cascades used by the CSM.
     */
   val MAX_CASCADES_COUNT: Double = js.native
+  
   /**
     * Defines the minimum number of cascades used by the CSM.
     */
   val MIN_CASCADES_COUNT: Double = js.native
-  val frustumCornersNDCSpace: js.Any = js.native
+  
   /**
     * Parses a serialized ShadowGenerator and returns a new ShadowGenerator.
     * @param parsedShadowGenerator The JSON object to parse
@@ -53,7 +61,9 @@ object CascadedShadowGenerator extends js.Object {
     * @returns The parsed shadow generator
     */
   def Parse(parsedShadowGenerator: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = js.native
+  
   /** @hidden */
   def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = js.native
+  
+  val frustumCornersNDCSpace: js.Any = js.native
 }
-

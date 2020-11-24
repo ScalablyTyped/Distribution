@@ -1,14 +1,15 @@
 package typings.tensorflowTfjsCore.mod
 
-import typings.tensorflowTfjsCore.anon.GradsValue
-import typings.tensorflowTfjsCore.tensorMod.Tensor
+import typings.tensorflowTfjsCore.anon.Grads
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core", "valueAndGrads")
 @js.native
 object valueAndGrads extends js.Object {
+  
   /**
     * Like `tf.grads`, but returns also the value of `f()`. Useful when `f()`
     * returns a metric you want to show.
@@ -37,12 +38,12 @@ object valueAndGrads extends js.Object {
     * console.log('db');
     * db.print();
     * ```
+    *
+    * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  /** @doc {heading: 'Training', subheading: 'Gradients'} */
   def apply[O /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](f: js.Function1[/* repeated */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], O]): js.Function2[
     /* args */ js.Array[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]], 
     /* dy */ js.UndefOr[O], 
-    GradsValue[O]
+    Grads[O]
   ] = js.native
 }
-

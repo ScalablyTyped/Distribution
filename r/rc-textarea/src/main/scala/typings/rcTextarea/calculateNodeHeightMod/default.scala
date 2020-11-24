@@ -4,11 +4,12 @@ import typings.rcTextarea.anon.MaxHeight
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-textarea/es/calculateNodeHeight", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def apply(uiTextNode: HTMLTextAreaElement): MaxHeight = js.native
   def apply(
     uiTextNode: HTMLTextAreaElement,
@@ -40,4 +41,3 @@ object default extends js.Object {
   def apply(uiTextNode: HTMLTextAreaElement, useCache: Boolean, minRows: Double, maxRows: Double): MaxHeight = js.native
   def apply(uiTextNode: HTMLTextAreaElement, useCache: Boolean, minRows: Null, maxRows: Double): MaxHeight = js.native
 }
-

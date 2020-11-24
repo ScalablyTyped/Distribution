@@ -2,17 +2,17 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "MultiObserver")
 @js.native
 class MultiObserver[T] ()
   extends typings.babylonjs.indexMod.MultiObserver[T]
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "MultiObserver")
 @js.native
 object MultiObserver extends js.Object {
+  
   /**
     * Raise a callback when one of the observable will notify
     * @param observables defines a list of observables to watch
@@ -28,6 +28,12 @@ object MultiObserver extends js.Object {
   def Watch[T](
     observables: js.Array[typings.babylonjs.observableMod.Observable[T]],
     callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.observableMod.EventState, Unit],
+    mask: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): typings.babylonjs.observableMod.MultiObserver[T] = js.native
+  def Watch[T](
+    observables: js.Array[typings.babylonjs.observableMod.Observable[T]],
+    callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.observableMod.EventState, Unit],
     mask: Double
   ): typings.babylonjs.observableMod.MultiObserver[T] = js.native
   def Watch[T](
@@ -37,4 +43,3 @@ object MultiObserver extends js.Object {
     scope: js.Any
   ): typings.babylonjs.observableMod.MultiObserver[T] = js.native
 }
-

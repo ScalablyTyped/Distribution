@@ -5,7 +5,7 @@ import typings.std.Promise
 import typings.std.PromiseConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("core-js/es6/promise", JSImport.Namespace)
 @js.native
@@ -17,13 +17,11 @@ class ^[T] protected () extends Promise[T] {
     * and a reject callback used to reject the promise with a provided reason or error.
     */
   def this(executor: js.Function2[
-        /* resolve */ js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], Unit], 
+        /* resolve */ js.Function1[/* value */ T | js.Thenable[T], Unit], 
         /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
         Unit
       ]) = this()
 }
-
 @JSImport("core-js/es6/promise", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[PromiseConstructor]
-

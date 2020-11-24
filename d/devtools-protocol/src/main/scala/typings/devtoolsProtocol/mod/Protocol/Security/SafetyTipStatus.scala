@@ -2,18 +2,18 @@ package typings.devtoolsProtocol.mod.Protocol.Security
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.badReputation
   - typings.devtoolsProtocol.devtoolsProtocolStrings.lookalike
 */
 trait SafetyTipStatus extends js.Object
-
 object SafetyTipStatus {
+  
   @scala.inline
   def badReputation: typings.devtoolsProtocol.devtoolsProtocolStrings.badReputation = "badReputation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.badReputation]
+  
   @scala.inline
   def lookalike: typings.devtoolsProtocol.devtoolsProtocolStrings.lookalike = "lookalike".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.lookalike]
 }
-

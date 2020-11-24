@@ -24,23 +24,35 @@ import typings.vegaTypings.encodeMod.TextBaselineValueRef
 import typings.vegaTypings.titleMod.TitleAnchor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vega-typings/types/spec/values", JSImport.Namespace)
 @js.native
 object valuesMod extends js.Object {
+  
   type AlignValue = Align | AlignValueRef
+  
   type AnchorValue = TitleAnchor | AnchorValueRef
+  
   type BooleanValue = Boolean | BooleanValueRef
+  
   type ColorValue = Null | Color | ColorValueRef
+  
   type DashArrayValue = js.Array[Double] | ArrayValueRef
+  
   type FontStyleValue = FontStyle | FontStyleValueRef
+  
   type FontWeightValue = FontWeight | FontWeightValueRef
+  
   type NumberValue = Double | NumericValueRef
+  
   type OrientValue = Orient | OrientValueRef
+  
   type StringValue = String | StringValueRef
+  
   type StrokeCapValue = StrokeCap | StrokeCapValueRef
+  
   type SymbolShapeValue = SymbolShape | SymbolShapeValueRef
+  
   type TextBaselineValue = TextBaseline | TextBaselineValueRef
 }
-

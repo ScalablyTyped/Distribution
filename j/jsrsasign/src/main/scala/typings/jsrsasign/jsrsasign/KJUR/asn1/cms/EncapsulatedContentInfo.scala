@@ -5,7 +5,7 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.HexParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * class for EncapsulatedContentInfo ASN.1 structure for CMS
@@ -28,10 +28,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait EncapsulatedContentInfo extends ASN1Object {
+  
   def setContentType(nameOrOid: String): Unit = js.native
+  
   def setContentValue(params: HexParam): Unit = js.native
   def setContentValue(params: StringParam): Unit = js.native
+  
   def setContentValueHex(valueHex: String): Unit = js.native
+  
   def setContentValueStr(valueStr: String): Unit = js.native
 }
-

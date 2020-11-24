@@ -2,11 +2,13 @@ package typings.nightwatch.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NightwatchCommonAssertions extends js.Object {
+  
   var NightwatchAssertionsError: typings.nightwatch.mod.NightwatchAssertionsError = js.native
+  
   /**
     * Checks if the given attribute of an element contains the expected value.
     *
@@ -18,6 +20,7 @@ trait NightwatchCommonAssertions extends js.Object {
     */
   def attributeContains(selector: String, attribute: String, expected: String): NightwatchAPI = js.native
   def attributeContains(selector: String, attribute: String, expected: String, message: String): NightwatchAPI = js.native
+  
   /**
     * Checks if the given attribute of an element has the expected value.
     *
@@ -29,6 +32,7 @@ trait NightwatchCommonAssertions extends js.Object {
     */
   def attributeEquals(selector: String, attribute: String, expected: String): NightwatchAPI = js.native
   def attributeEquals(selector: String, attribute: String, expected: String, message: String): NightwatchAPI = js.native
+  
   /**
     * Checks if the given element contains the specified text.
     *
@@ -40,6 +44,7 @@ trait NightwatchCommonAssertions extends js.Object {
     */
   def containsText(selector: String, expectedText: String): NightwatchAPI = js.native
   def containsText(selector: String, expectedText: String, message: String): NightwatchAPI = js.native
+  
   /**
     * Checks if the given element exists in the DOM.
     *
@@ -51,6 +56,7 @@ trait NightwatchCommonAssertions extends js.Object {
     */
   def cssClassNotPresent(selector: String, className: String): NightwatchAPI = js.native
   def cssClassNotPresent(selector: String, className: String, msg: String): NightwatchAPI = js.native
+  
   /**
     * Checks if the given element has the specified CSS class.
     *
@@ -62,6 +68,7 @@ trait NightwatchCommonAssertions extends js.Object {
     */
   def cssClassPresent(selector: String, className: String): NightwatchAPI = js.native
   def cssClassPresent(selector: String, className: String, message: String): NightwatchAPI = js.native
+  
   /**
     * Checks if the specified css property of a given element has the expected value.
     *
@@ -75,12 +82,16 @@ trait NightwatchCommonAssertions extends js.Object {
   def cssProperty(selector: String, cssProperty: String, expected: String, msg: String): NightwatchAPI = js.native
   def cssProperty(selector: String, cssProperty: String, expected: Double): NightwatchAPI = js.native
   def cssProperty(selector: String, cssProperty: String, expected: Double, msg: String): NightwatchAPI = js.native
+  
   def deepEqual(value: js.Any, expected: js.Any): NightwatchAPI = js.native
   def deepEqual(value: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
+  
   def deepStrictEqual(value: js.Any, expected: js.Any): NightwatchAPI = js.native
   def deepStrictEqual(value: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
+  
   def doesNotThrow(value: js.Any, expected: js.Any): NightwatchAPI = js.native
   def doesNotThrow(value: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
+  
   /**
     * Checks if the given element exists in the DOM.
     *
@@ -92,6 +103,7 @@ trait NightwatchCommonAssertions extends js.Object {
     */
   def elementNotPresent(selector: String): NightwatchAPI = js.native
   def elementNotPresent(selector: String, msg: String): NightwatchAPI = js.native
+  
   /**
     * Checks if the given element exists in the DOM.
     *
@@ -103,8 +115,10 @@ trait NightwatchCommonAssertions extends js.Object {
     */
   def elementPresent(selector: String): NightwatchAPI = js.native
   def elementPresent(selector: String, msg: String): NightwatchAPI = js.native
+  
   def equal(value: js.Any, expected: js.Any): NightwatchAPI = js.native
   def equal(value: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
+  
   def fail(): NightwatchAPI = js.native
   def fail(
     actual: js.UndefOr[scala.Nothing],
@@ -141,6 +155,7 @@ trait NightwatchCommonAssertions extends js.Object {
   def fail(actual: js.Any, expected: js.Any, message: js.UndefOr[scala.Nothing], operator: String): NightwatchAPI = js.native
   def fail(actual: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
   def fail(actual: js.Any, expected: js.Any, message: String, operator: String): NightwatchAPI = js.native
+  
   /**
     * Checks if the given element is not visible on the page.
     *
@@ -152,22 +167,31 @@ trait NightwatchCommonAssertions extends js.Object {
     */
   def hidden(selector: String): NightwatchAPI = js.native
   def hidden(selector: String, msg: String): NightwatchAPI = js.native
+  
   def ifError(value: js.Any): NightwatchAPI = js.native
   def ifError(value: js.Any, message: String): NightwatchAPI = js.native
+  
   def notDeepEqual(actual: js.Any, expected: js.Any): NightwatchAPI = js.native
   def notDeepEqual(actual: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
+  
   def notDeepStrictEqual(value: js.Any): NightwatchAPI = js.native
   def notDeepStrictEqual(value: js.Any, message: String): NightwatchAPI = js.native
+  
   def notEqual(actual: js.Any, expected: js.Any): NightwatchAPI = js.native
   def notEqual(actual: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
+  
   def notStrictEqual(value: js.Any, expected: js.Any): NightwatchAPI = js.native
   def notStrictEqual(value: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
+  
   def ok(actual: Boolean): NightwatchAPI = js.native
   def ok(actual: Boolean, message: String): NightwatchAPI = js.native
+  
   def strictEqual(value: js.Any, expected: js.Any): NightwatchAPI = js.native
   def strictEqual(value: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
+  
   def throws(fn: js.Function0[Unit]): NightwatchAPI = js.native
   def throws(fn: js.Function0[Unit], message: String): NightwatchAPI = js.native
+  
   /**
     * Checks if the page title equals the given value.
     *
@@ -179,6 +203,7 @@ trait NightwatchCommonAssertions extends js.Object {
     */
   def title(expected: String): NightwatchAPI = js.native
   def title(expected: String, message: String): NightwatchAPI = js.native
+  
   /**
     * Checks if the page title equals the given value.
     *
@@ -190,6 +215,7 @@ trait NightwatchCommonAssertions extends js.Object {
     */
   def titleContains(expected: String): NightwatchAPI = js.native
   def titleContains(expected: String, message: String): NightwatchAPI = js.native
+  
   /**
     * Checks if the current URL contains the given value.
     *
@@ -201,6 +227,7 @@ trait NightwatchCommonAssertions extends js.Object {
     */
   def urlContains(expectedText: String): NightwatchAPI = js.native
   def urlContains(expectedText: String, message: String): NightwatchAPI = js.native
+  
   /**
     * Checks if the current url equals the given value.
     *
@@ -212,6 +239,7 @@ trait NightwatchCommonAssertions extends js.Object {
     */
   def urlEquals(expected: String): NightwatchAPI = js.native
   def urlEquals(expected: String, message: String): NightwatchAPI = js.native
+  
   /**
     * Checks if the given form element's value equals the expected value.
     *
@@ -223,6 +251,7 @@ trait NightwatchCommonAssertions extends js.Object {
     */
   def value(selector: String, expectedText: String): NightwatchAPI = js.native
   def value(selector: String, expectedText: String, message: String): NightwatchAPI = js.native
+  
   /**
     * Checks if the given form element's value contains the expected value.
     *
@@ -234,6 +263,7 @@ trait NightwatchCommonAssertions extends js.Object {
     */
   def valueContains(selector: String, expectedText: String): NightwatchAPI = js.native
   def valueContains(selector: String, expectedText: String, message: String): NightwatchAPI = js.native
+  
   /**
     * Checks if the given element is visible on the page.
     *
@@ -246,4 +276,3 @@ trait NightwatchCommonAssertions extends js.Object {
   def visible(selector: String): NightwatchAPI = js.native
   def visible(selector: String, message: String): NightwatchAPI = js.native
 }
-

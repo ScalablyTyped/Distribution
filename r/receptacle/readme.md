@@ -10,9 +10,9 @@ In memory cache lru cache with ttl support.
 | ------------------ | :-------------: |
 | Full name          | receptacle |
 | Keywords           | cache, expires, lru, map, memory, receptacle, ttl |
-| # releases         | 3 |
-| # dependents       | 11 |
-| # downloads        | 385922 |
+| # releases         | 0 |
+| # dependents       | 10 |
+| # downloads        | 423305 |
 | # stars            | 0 |
 
 ## Links

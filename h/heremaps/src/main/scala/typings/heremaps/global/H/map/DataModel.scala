@@ -4,7 +4,7 @@ import typings.heremaps.H.map.layer.Layer
 import typings.heremaps.H.util.OList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The class represents data model of the map. It holds list of layers that are rendered by map's RenderEngine.
@@ -19,4 +19,3 @@ import scala.scalajs.js.annotation._
 class DataModel () extends OList {
   def this(opt_layers: js.Array[Layer]) = this()
 }
-

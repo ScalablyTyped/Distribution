@@ -2,7 +2,7 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Secure storage for credentials._
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Keychain")
 @js.native
 object Keychain extends js.Object {
+  
   /**
     * _Check if keychain contains a key._
     *
@@ -19,6 +20,7 @@ object Keychain extends js.Object {
     * @see https://docs.scriptable.app/keychain/#contains
     */
   def contains(key: String): Boolean = js.native
+  
   /**
     * _Reads a value from the keychain._
     *
@@ -27,16 +29,18 @@ object Keychain extends js.Object {
     * @see https://docs.scriptable.app/keychain/#get
     */
   def get(key: String): String = js.native
+  
   /**
     * _Remove key from keychain._
     * @param key - Key to remove from the keychain.
     * @see https://docs.scriptable.app/keychain/#remove
     */
   def remove(key: String): Unit = js.native
+  
   /**
     * _Add value for a specified key to keychain._
     *
-    * Adds the the value to the keychain, assigning it to the specified key. If the key already exists in the keychain, the value is overwritten.
+    * Adds the value to the keychain, assigning it to the specified key. If the key already exists in the keychain, the value is overwritten.
     *
     * Values are securely stored in an encrypted database.
     * @param key - Key which the value should be assigned to.
@@ -45,4 +49,3 @@ object Keychain extends js.Object {
     */
   def set(key: String, value: String): Unit = js.native
 }
-

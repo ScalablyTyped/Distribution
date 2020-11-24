@@ -3,7 +3,7 @@ package typings.pgPromise.mod
 import typings.spex.mod.ISpexBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Additional methods available inside tasks + transactions;
 // API: http://vitaly-t.github.io/pg-promise/Task.html
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 trait ITask[Ext]
   extends IBaseProtocol[Ext]
      with ISpexBase {
+  
   val ctx: ITaskContext = js.native
 }
-

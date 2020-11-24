@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Groups")
 @js.native
 class ResourceProjectsGroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var members: ResourceProjectsGroupsMembers = js.native
+  
   /**
     * monitoring.projects.groups.create
     * @desc Creates a new group.
@@ -91,6 +92,7 @@ class ResourceProjectsGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroup]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.groups.delete
     * @desc Deletes an existing group.
@@ -167,6 +169,7 @@ class ResourceProjectsGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.groups.get
     * @desc Gets a single group.
@@ -242,6 +245,7 @@ class ResourceProjectsGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroup]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.groups.list
     * @desc Lists the existing groups.
@@ -328,6 +332,9 @@ class ResourceProjectsGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListGroupsResponse]
   ): Unit = js.native
+  
+  var members: ResourceProjectsGroupsMembers = js.native
+  
   /**
     * monitoring.projects.groups.update
     * @desc Updates an existing group. You can change any group attributes
@@ -413,4 +420,3 @@ class ResourceProjectsGroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGroup]
   ): Unit = js.native
 }
-

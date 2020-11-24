@@ -11,8 +11,8 @@ Property descriptor factory
 | Full name          | d |
 | Keywords           | descriptor, es, ecmascript, ecma, property, descriptors, meta, properties |
 | # releases         | 2 |
-| # dependents       | 86 |
-| # downloads        | 227767916 |
+| # dependents       | 99 |
+| # downloads        | 314766202 |
 | # stars            | 7 |
 
 ## Links

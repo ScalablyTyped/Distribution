@@ -18,14 +18,17 @@ import typings.activexAccess.activexAccessStrings.`MS-DOS Text LeftparenthesisAs
 import typings.std.VarDate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DoCmd extends js.Object {
+  
   @JSName("Access.DoCmd_typekey")
   var AccessDotDoCmd_typekey: DoCmd = js.native
+  
   def AddMenu(MenuName: String, MenuMacroName: String): Unit = js.native
   def AddMenu(MenuName: String, MenuMacroName: String, StatusBarText: String): Unit = js.native
+  
   def ApplyFilter(): Unit = js.native
   def ApplyFilter(
     FilterName: js.UndefOr[scala.Nothing],
@@ -38,11 +41,14 @@ trait DoCmd extends js.Object {
   def ApplyFilter(FilterName: String, WhereCondition: js.UndefOr[scala.Nothing], ControlName: js.Any): Unit = js.native
   def ApplyFilter(FilterName: String, WhereCondition: String): Unit = js.native
   def ApplyFilter(FilterName: String, WhereCondition: String, ControlName: js.Any): Unit = js.native
+  
   def ApplyFilterOld0(): Unit = js.native
   def ApplyFilterOld0(FilterName: js.UndefOr[scala.Nothing], WhereCondition: String): Unit = js.native
   def ApplyFilterOld0(FilterName: String): Unit = js.native
   def ApplyFilterOld0(FilterName: String, WhereCondition: String): Unit = js.native
+  
   def Beep(): Unit = js.native
+  
   /** @param DataMode [DataMode=1] */
   def BrowseTo(ObjectType: AcBrowseToObjectType, ObjectName: String): Unit = js.native
   def BrowseTo(
@@ -150,8 +156,11 @@ trait DoCmd extends js.Object {
     Page: String,
     DataMode: AcFormOpenDataMode
   ): Unit = js.native
+  
   def CancelEvent(): Unit = js.native
+  
   def ClearMacroError(): Unit = js.native
+  
   def Close(): Unit = js.native
   /**
     * @param ObjectType [ObjectType=-1]
@@ -159,7 +168,9 @@ trait DoCmd extends js.Object {
     */
   def Close(ObjectType: AcObjectType, ObjectName: String): Unit = js.native
   def Close(ObjectType: AcObjectType, ObjectName: String, Save: AcCloseSave): Unit = js.native
+  
   def CloseDatabase(): Unit = js.native
+  
   def CopyDatabaseFile(DatabaseFileName: String): Unit = js.native
   def CopyDatabaseFile(
     DatabaseFileName: String,
@@ -168,6 +179,7 @@ trait DoCmd extends js.Object {
   ): Unit = js.native
   def CopyDatabaseFile(DatabaseFileName: String, OverwriteExistingFile: Boolean): Unit = js.native
   def CopyDatabaseFile(DatabaseFileName: String, OverwriteExistingFile: Boolean, DisconnectAllUsers: Boolean): Unit = js.native
+  
   /** @param SourceObjectType [SourceObjectType=-1] */
   def CopyObject(DestinationDatabase: String, NewName: String): Unit = js.native
   def CopyObject(
@@ -183,11 +195,13 @@ trait DoCmd extends js.Object {
     SourceObjectType: AcObjectType,
     SourceObjectName: String
   ): Unit = js.native
+  
   /** @param ObjectType [ObjectType=-1] */
   def DeleteObject(): Unit = js.native
   def DeleteObject(ObjectType: js.UndefOr[scala.Nothing], ObjectName: String): Unit = js.native
   def DeleteObject(ObjectType: AcObjectType): Unit = js.native
   def DeleteObject(ObjectType: AcObjectType, ObjectName: String): Unit = js.native
+  
   /** @deprecated Use the **RunCommand** method */
   def DoMenuItem(
     MenuBar: `0` | Double,
@@ -196,9 +210,12 @@ trait DoCmd extends js.Object {
     Subcommand: js.UndefOr[`0` | `3` | Double],
     Version: js.UndefOr[`70` | `20` | `11`]
   ): Unit = js.native
+  
   def Echo(EchoOn: Boolean): Unit = js.native
   def Echo(EchoOn: Boolean, StatusBarText: String): Unit = js.native
+  
   def FindNext(): Unit = js.native
+  
   /**
     * @param Match [Match=1]
     * @param MatchCase [MatchCase=false]
@@ -215,11 +232,14 @@ trait DoCmd extends js.Object {
     OnlyCurrentField: js.UndefOr[AcFindField],
     FindFirst: js.UndefOr[Boolean]
   ): Unit = js.native
+  
   def GoToControl(ControlName: String): Unit = js.native
+  
   def GoToPage(PageNumber: Double): Unit = js.native
   def GoToPage(PageNumber: Double, Right: js.UndefOr[scala.Nothing], Down: Double): Unit = js.native
   def GoToPage(PageNumber: Double, Right: Double): Unit = js.native
   def GoToPage(PageNumber: Double, Right: Double, Down: Double): Unit = js.native
+  
   /**
     * @param ObjectType [ObjectType=-1]
     * @param Record [Record=1]
@@ -364,10 +384,15 @@ trait DoCmd extends js.Object {
   def GoToRecord_5(ObjectType: AcDataObjectType, ObjectName: js.UndefOr[scala.Nothing], Record: `5`): Unit = js.native
   @JSName("GoToRecord")
   def GoToRecord_5(ObjectType: AcDataObjectType, ObjectName: String, Record: `5`): Unit = js.native
+  
   def Hourglass(HourglassOn: Boolean): Unit = js.native
+  
   def LockNavigationPane(Lock: Boolean): Unit = js.native
+  
   def Maximize(): Unit = js.native
+  
   def Minimize(): Unit = js.native
+  
   def MoveSize(): Unit = js.native
   def MoveSize(
     Right: js.UndefOr[scala.Nothing],
@@ -389,14 +414,18 @@ trait DoCmd extends js.Object {
   def MoveSize(Right: Double, Down: Double, Width: js.UndefOr[scala.Nothing], Height: Double): Unit = js.native
   def MoveSize(Right: Double, Down: Double, Width: Double): Unit = js.native
   def MoveSize(Right: Double, Down: Double, Width: Double, Height: Double): Unit = js.native
+  
   def NavigateTo(): Unit = js.native
   def NavigateTo(Category: js.UndefOr[scala.Nothing], Group: js.Any): Unit = js.native
   def NavigateTo(Category: js.Any): Unit = js.native
   def NavigateTo(Category: js.Any, Group: js.Any): Unit = js.native
+  
   /** @param View [View=0] */
   def OpenDataAccessPage(DataAccessPageName: String): Unit = js.native
   def OpenDataAccessPage(DataAccessPageName: String, View: AcDataAccessPageView): Unit = js.native
+  
   def OpenDiagram(DiagramName: String): Unit = js.native
+  
   /**
     * @param View [View=0]
     * @param DataMode [DataMode=-1]
@@ -411,6 +440,7 @@ trait DoCmd extends js.Object {
     WindowMode: js.UndefOr[AcWindowMode],
     OpenArgs: js.UndefOr[String]
   ): Unit = js.native
+  
   /**
     * @param View [View=0]
     * @param DataMode [DataMode=1]
@@ -419,10 +449,12 @@ trait DoCmd extends js.Object {
   def OpenFunction(FunctionName: String, View: js.UndefOr[scala.Nothing], DataMode: AcOpenDataMode): Unit = js.native
   def OpenFunction(FunctionName: String, View: AcView): Unit = js.native
   def OpenFunction(FunctionName: String, View: AcView, DataMode: AcOpenDataMode): Unit = js.native
+  
   def OpenModule(): Unit = js.native
   def OpenModule(ModuleName: js.UndefOr[scala.Nothing], ProcedureName: String): Unit = js.native
   def OpenModule(ModuleName: String): Unit = js.native
   def OpenModule(ModuleName: String, ProcedureName: String): Unit = js.native
+  
   /**
     * @param View [View=0]
     * @param DataMode [DataMode=1]
@@ -431,6 +463,7 @@ trait DoCmd extends js.Object {
   def OpenQuery(QueryName: String, View: js.UndefOr[scala.Nothing], DataMode: AcOpenDataMode): Unit = js.native
   def OpenQuery(QueryName: String, View: AcView): Unit = js.native
   def OpenQuery(QueryName: String, View: AcView, DataMode: AcOpenDataMode): Unit = js.native
+  
   /**
     * @param View [View=0]
     * @param WindowMode [WindowMode=0]
@@ -632,6 +665,7 @@ trait DoCmd extends js.Object {
     WindowMode: AcWindowMode,
     OpenArgs: String
   ): Unit = js.native
+  
   /** @param View [View=0] */
   def OpenReportOld0(ReportName: js.Any): Unit = js.native
   def OpenReportOld0(
@@ -646,6 +680,7 @@ trait DoCmd extends js.Object {
   def OpenReportOld0(ReportName: js.Any, View: AcView, FilterName: js.UndefOr[scala.Nothing], WhereCondition: js.Any): Unit = js.native
   def OpenReportOld0(ReportName: js.Any, View: AcView, FilterName: js.Any): Unit = js.native
   def OpenReportOld0(ReportName: js.Any, View: AcView, FilterName: js.Any, WhereCondition: js.Any): Unit = js.native
+  
   /**
     * @param View [View=0]
     * @param DataMode [DataMode=1]
@@ -654,6 +689,7 @@ trait DoCmd extends js.Object {
   def OpenStoredProcedure(ProcedureName: String, View: js.UndefOr[scala.Nothing], DataMode: AcOpenDataMode): Unit = js.native
   def OpenStoredProcedure(ProcedureName: String, View: AcView): Unit = js.native
   def OpenStoredProcedure(ProcedureName: String, View: AcView, DataMode: AcOpenDataMode): Unit = js.native
+  
   /**
     * @param View [View=0]
     * @param DataMode [DataMode=1]
@@ -662,6 +698,7 @@ trait DoCmd extends js.Object {
   def OpenTable(TableName: String, View: js.UndefOr[scala.Nothing], DataMode: AcOpenDataMode): Unit = js.native
   def OpenTable(TableName: String, View: AcView): Unit = js.native
   def OpenTable(TableName: String, View: AcView, DataMode: AcOpenDataMode): Unit = js.native
+  
   /**
     * @param View [View=0]
     * @param DataMode [DataMode=1]
@@ -670,6 +707,7 @@ trait DoCmd extends js.Object {
   def OpenView(ViewName: String, View: js.UndefOr[scala.Nothing], DataMode: AcOpenDataMode): Unit = js.native
   def OpenView(ViewName: String, View: AcView): Unit = js.native
   def OpenView(ViewName: String, View: AcView, DataMode: AcOpenDataMode): Unit = js.native
+  
   /** @param OutputQuality [OutputQuality=0] */
   def OutputTo(
     ObjectType: AcOutputObjectType,
@@ -701,6 +739,7 @@ trait DoCmd extends js.Object {
     Encoding: js.Any,
     OutputQuality: AcExportQuality
   ): Unit = js.native
+  
   def OutputToOld0(ObjectType: AcOutputObjectType): Unit = js.native
   def OutputToOld0(
     ObjectType: AcOutputObjectType,
@@ -908,6 +947,7 @@ trait DoCmd extends js.Object {
     AutoStart: js.Any,
     TemplateFile: js.Any
   ): Unit = js.native
+  
   def OutputToOld1(
     ObjectType: AcOutputObjectType,
     ObjectName: js.UndefOr[js.Any],
@@ -917,6 +957,7 @@ trait DoCmd extends js.Object {
     TemplateFile: js.UndefOr[js.Any],
     Encoding: js.UndefOr[js.Any]
   ): Unit = js.native
+  
   /**
     * @param PrintRange [PrintRange=0]
     * @param PrintQuality [PrintQuality=0]
@@ -1258,32 +1299,45 @@ trait DoCmd extends js.Object {
     Copies: Double,
     CollateCopies: Boolean
   ): Unit = js.native
+  
   /** @param Options [Options=1] */
   def Quit(): Unit = js.native
   def Quit(Options: AcQuitOption): Unit = js.native
+  
   def RefreshRecord(): Unit = js.native
+  
   def Rename(NewName: String): Unit = js.native
   /** @param ObjectType [ObjectType=-1] */
   def Rename(NewName: String, ObjectType: AcObjectType, OldName: String): Unit = js.native
+  
   def RepaintObject(): Unit = js.native
   /** @param ObjectType [ObjectType=-1] */
   def RepaintObject(ObjectType: AcObjectType, ObjectName: String): Unit = js.native
+  
   def Requery(): Unit = js.native
   def Requery(ControlName: String): Unit = js.native
+  
   def Restore(): Unit = js.native
+  
   def RunCommand(Command: AcCommand): Unit = js.native
+  
   def RunDataMacro(MacroName: String): Unit = js.native
+  
   def RunMacro(MacroName: String): Unit = js.native
   def RunMacro(MacroName: String, RepeatCount: js.UndefOr[scala.Nothing], RepeatExpression: String): Unit = js.native
   def RunMacro(MacroName: String, RepeatCount: Double): Unit = js.native
   def RunMacro(MacroName: String, RepeatCount: Double, RepeatExpression: String): Unit = js.native
+  
   def RunSQL(SQLStatement: String): Unit = js.native
   def RunSQL(SQLStatement: String, UseTransaction: Boolean): Unit = js.native
+  
   def RunSavedImportExport(SavedImportExportName: String): Unit = js.native
+  
   def Save(): Unit = js.native
   def Save(ObjectType: js.UndefOr[scala.Nothing], ObjectName: String): Unit = js.native
   /** @param ObjectType [ObjectType=-1] */
   def Save(ObjectType: AcObjectType, ObjectName: String): Unit = js.native
+  
   /**
     * @param ObjectType [ObjectType=-1]
     * @param Record [Record=2]
@@ -1339,11 +1393,13 @@ trait DoCmd extends js.Object {
   ): Unit = js.native
   def SearchForRecord(ObjectType: AcDataObjectType, ObjectName: String, Record: AcRecord): Unit = js.native
   def SearchForRecord(ObjectType: AcDataObjectType, ObjectName: String, Record: AcRecord, WhereCondition: String): Unit = js.native
+  
   def SelectObject(ObjectType: AcObjectType, ObjectName: String): Unit = js.native
   @JSName("SelectObject")
   def SelectObject_true(ObjectType: AcObjectType, ObjectName: js.UndefOr[scala.Nothing], InDatabaseWindow: `true`): Unit = js.native
   @JSName("SelectObject")
   def SelectObject_true(ObjectType: AcObjectType, ObjectName: String, InDatabaseWindow: `true`): Unit = js.native
+  
   /** @param ObjectType [ObjectType=-1] */
   def SendObject(
     ObjectType: js.UndefOr[AcSendObjectType],
@@ -1357,8 +1413,10 @@ trait DoCmd extends js.Object {
     EditMessage: js.UndefOr[Boolean],
     TemplateFile: js.UndefOr[String]
   ): Unit = js.native
+  
   def SetDisplayedCategories(Show: Boolean): Unit = js.native
   def SetDisplayedCategories(Show: Boolean, Category: String): Unit = js.native
+  
   def SetFilter(): Unit = js.native
   def SetFilter(
     FilterName: js.UndefOr[scala.Nothing],
@@ -1371,6 +1429,7 @@ trait DoCmd extends js.Object {
   def SetFilter(FilterName: String, WhereCondition: js.UndefOr[scala.Nothing], ControlName: String): Unit = js.native
   def SetFilter(FilterName: String, WhereCondition: String): Unit = js.native
   def SetFilter(FilterName: String, WhereCondition: String, ControlName: String): Unit = js.native
+  
   def SetMenuItem(MenuIndex: Double): Unit = js.native
   def SetMenuItem(
     MenuIndex: Double,
@@ -1394,20 +1453,28 @@ trait DoCmd extends js.Object {
   ): Unit = js.native
   def SetMenuItem(MenuIndex: Double, CommandIndex: Double, SubcommandIndex: Double): Unit = js.native
   def SetMenuItem(MenuIndex: Double, CommandIndex: Double, SubcommandIndex: Double, Flag: AcSetMenuItemState): Unit = js.native
+  
   def SetOrderBy(OrderBy: String): Unit = js.native
   def SetOrderBy(OrderBy: String, ControlName: String): Unit = js.native
+  
   def SetParameter(Name: String, Expression: js.Any): Unit = js.native
+  
   /** @param Property [Property=0] */
   def SetProperty(ControlName: String): Unit = js.native
   def SetProperty(ControlName: String, Property: js.UndefOr[scala.Nothing], Value: js.Any): Unit = js.native
   def SetProperty(ControlName: String, Property: AcProperty): Unit = js.native
   def SetProperty(ControlName: String, Property: AcProperty, Value: js.Any): Unit = js.native
+  
   def SetWarnings(WarningsOn: Boolean): Unit = js.native
+  
   def ShowAllRecords(): Unit = js.native
+  
   /** @param Show [Show=0] */
   def ShowToolbar(ToolbarName: String): Unit = js.native
   def ShowToolbar(ToolbarName: String, Show: AcShowToolbar): Unit = js.native
+  
   def SingleStep(): Unit = js.native
+  
   /**
     * @param TransferType [TransferType=0]
     * @param ObjectType [ObjectType=0]
@@ -1424,6 +1491,7 @@ trait DoCmd extends js.Object {
     StructureOnly: js.UndefOr[Boolean],
     StoreLogin: js.UndefOr[Boolean]
   ): Unit = js.native
+  
   def TransferSQLDatabase(Server: String, Database: String): Unit = js.native
   def TransferSQLDatabase(
     Server: String,
@@ -1514,6 +1582,7 @@ trait DoCmd extends js.Object {
     Password: String,
     TransferCopyData: Boolean
   ): Unit = js.native
+  
   def TransferSharePointList(TransferType: AcSharePointListTransferType, SiteAddress: String, ListID: String): Unit = js.native
   def TransferSharePointList(
     TransferType: AcSharePointListTransferType,
@@ -1562,6 +1631,7 @@ trait DoCmd extends js.Object {
     TableName: String,
     GetLookupDisplayValues: Boolean
   ): Unit = js.native
+  
   /**
     * @param TransferType [TransferType=0]
     * @param SpreadsheetType [SpreadsheetType=10]
@@ -1978,6 +2048,7 @@ trait DoCmd extends js.Object {
     HasFieldNames: Boolean,
     Range: js.Any
   ): Unit = js.native
+  
   /**
     * @param TransferType [TransferType=0]
     * @param Encoding For valid values see https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx
@@ -1992,4 +2063,3 @@ trait DoCmd extends js.Object {
     CodePage: js.UndefOr[Double]
   ): Unit = js.native
 }
-

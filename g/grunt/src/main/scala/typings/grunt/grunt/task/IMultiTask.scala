@@ -3,13 +3,14 @@ package typings.grunt.grunt.task
 import typings.grunt.grunt.file.IFilesArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * {@link http://gruntjs.com/inside-tasks#inside-multi-tasks}
   */
 @js.native
 trait IMultiTask[T] extends ITask {
+  
   /**
     * In a multi task, this is the actual data stored in the Grunt config object for the given target.
     * For example, if a "sample" multi task was run as grunt sample:foo with the config data
@@ -19,6 +20,7 @@ trait IMultiTask[T] extends ITask {
     *       as their values are normalized.
     */
   var data: T = js.native
+  
   /**
     * In a multi task, all files specified using any Grunt-supported file formats and options,
     * globbing patterns or dynamic mappings will automatically be normalized into a single format:
@@ -38,12 +40,14 @@ trait IMultiTask[T] extends ITask {
     *       so you may want to explicitly test that source files exist before using them.
     */
   var files: IFilesArray = js.native
+  
   /**
     * In a multi task, all src files files specified via any file format are reduced to a single array.
     * If your task is "read only" and doesn't care about destination filepaths,
     * use this array instead of this.files.
     */
   var filesSrc: js.Array[String] = js.native
+  
   /**
     * In a multi task, this property contains the name of the target currently being iterated over.
     * For example, if a "sample" multi task was run as grunt sample:foo with the config data
@@ -51,4 +55,3 @@ trait IMultiTask[T] extends ITask {
     */
   var target: String = js.native
 }
-

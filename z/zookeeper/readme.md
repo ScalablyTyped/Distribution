@@ -11,8 +11,8 @@ apache zookeeper client (zookeeper async API v3.4.x - v3.5.x)
 | Full name          | zookeeper |
 | Keywords           | apache, zookeeper, client |
 | # releases         | 14 |
-| # dependents       | 21 |
-| # downloads        | 78464 |
+| # dependents       | 22 |
+| # downloads        | 90139 |
 | # stars            | 13 |
 
 ## Links

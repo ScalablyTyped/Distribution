@@ -6,7 +6,7 @@ import typings.googleCloudCommon.serviceObjectMod.MetadataCallback
 import typings.googleCloudStorage.bucketMod.Bucket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Notification object is created from your {@link Bucket} object using
@@ -33,11 +33,13 @@ import scala.scalajs.js.annotation._
 class Notification protected ()
   extends ServiceObject[js.Any] {
   def this(bucket: Bucket, id: String) = this()
+  
   def delete(options: DeleteNotificationOptions): js.Promise[js.Array[Metadata]] = js.native
   def delete(options: DeleteNotificationOptions, callback: DeleteNotificationCallback): Unit = js.native
+  
   def get(options: GetNotificationOptions): js.Promise[GetNotificationResponse] = js.native
   def get(options: GetNotificationOptions, callback: GetNotificationCallback): Unit = js.native
+  
   def getMetadata(options: GetNotificationMetadataOptions): js.Promise[GetNotificationMetadataResponse] = js.native
   def getMetadata(options: GetNotificationMetadataOptions, callback: MetadataCallback): Unit = js.native
 }
-

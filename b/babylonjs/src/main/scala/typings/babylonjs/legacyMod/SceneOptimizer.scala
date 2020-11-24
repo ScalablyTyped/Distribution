@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "SceneOptimizer")
 @js.native
@@ -22,8 +22,31 @@ class SceneOptimizer protected ()
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
+    options: js.UndefOr[scala.Nothing],
+    autoGeneratePriorities: Boolean
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
     options: typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions,
     autoGeneratePriorities: Boolean
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    options: js.UndefOr[scala.Nothing],
+    autoGeneratePriorities: js.UndefOr[scala.Nothing],
+    improvementMode: Boolean
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    options: js.UndefOr[scala.Nothing],
+    autoGeneratePriorities: Boolean,
+    improvementMode: Boolean
+  ) = this()
+  def this(
+    scene: typings.babylonjs.sceneMod.Scene,
+    options: typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions,
+    autoGeneratePriorities: js.UndefOr[scala.Nothing],
+    improvementMode: Boolean
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
@@ -32,11 +55,11 @@ class SceneOptimizer protected ()
     improvementMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "SceneOptimizer")
 @js.native
 object SceneOptimizer extends js.Object {
+  
   /**
     * Helper function to create a SceneOptimizer with one single line of code
     * @param scene defines the scene to work on
@@ -48,7 +71,30 @@ object SceneOptimizer extends js.Object {
   def OptimizeAsync(scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.sceneOptimizerMod.SceneOptimizer = js.native
   def OptimizeAsync(
     scene: typings.babylonjs.sceneMod.Scene,
+    options: js.UndefOr[scala.Nothing],
+    onSuccess: js.UndefOr[scala.Nothing],
+    onFailure: js.Function0[Unit]
+  ): typings.babylonjs.sceneOptimizerMod.SceneOptimizer = js.native
+  def OptimizeAsync(
+    scene: typings.babylonjs.sceneMod.Scene,
+    options: js.UndefOr[scala.Nothing],
+    onSuccess: js.Function0[Unit]
+  ): typings.babylonjs.sceneOptimizerMod.SceneOptimizer = js.native
+  def OptimizeAsync(
+    scene: typings.babylonjs.sceneMod.Scene,
+    options: js.UndefOr[scala.Nothing],
+    onSuccess: js.Function0[Unit],
+    onFailure: js.Function0[Unit]
+  ): typings.babylonjs.sceneOptimizerMod.SceneOptimizer = js.native
+  def OptimizeAsync(
+    scene: typings.babylonjs.sceneMod.Scene,
     options: typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions
+  ): typings.babylonjs.sceneOptimizerMod.SceneOptimizer = js.native
+  def OptimizeAsync(
+    scene: typings.babylonjs.sceneMod.Scene,
+    options: typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions,
+    onSuccess: js.UndefOr[scala.Nothing],
+    onFailure: js.Function0[Unit]
   ): typings.babylonjs.sceneOptimizerMod.SceneOptimizer = js.native
   def OptimizeAsync(
     scene: typings.babylonjs.sceneMod.Scene,
@@ -62,4 +108,3 @@ object SceneOptimizer extends js.Object {
     onFailure: js.Function0[Unit]
   ): typings.babylonjs.sceneOptimizerMod.SceneOptimizer = js.native
 }
-

@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/iam/group", "Group")
 @js.native
@@ -23,28 +23,32 @@ class Group protected () extends CustomResource {
   def this(name: String, args: GroupArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: GroupArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN assigned by AWS for this group.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The group's name. The name must consist of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: `=,.@-_.`. Group names are not distinguished by case. For example, you cannot create groups named both "ADMINS" and "admins".
     */
   val name: Output_[String] = js.native
+  
   /**
     * Path in which to create the group.
     */
   val path: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The [unique ID][1] assigned by AWS.
     */
   val uniqueId: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/iam/group", "Group")
 @js.native
 object Group extends js.Object {
+  
   /**
     * Get an existing Group resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -58,10 +62,10 @@ object Group extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Group = js.native
   def get(name: String, id: Input[ID], state: GroupState): Group = js.native
   def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): Group = js.native
+  
   /**
     * Returns true if the given object is an instance of Group.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/group.Group */ Boolean = js.native
 }
-

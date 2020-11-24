@@ -6,11 +6,12 @@ import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/cells", "CellDragUtils")
 @js.native
 object CellDragUtils extends js.Object {
+  
   /**
     * Create an image for the cell(s) to be dragged
     *
@@ -18,6 +19,7 @@ object CellDragUtils extends js.Object {
     * @param selectedCells - The cells to be dragged
     */
   def createCellDragImage(activeCell: typings.jupyterlabCells.widgetMod.Cell, selectedCells: js.Array[ICell]): HTMLElement = js.native
+  
   /**
     * Detect which part of the cell triggered the MouseEvent
     *
@@ -25,6 +27,7 @@ object CellDragUtils extends js.Object {
     * @param target - The DOM node which triggered the MouseEvent
     */
   def detectTargetArea(cell: typings.jupyterlabCells.widgetMod.Cell, target: HTMLElement): ICellTargetArea = js.native
+  
   /**
     * Find the cell index containing the target html element.
     * This function traces up the DOM hierarchy to find the root cell
@@ -43,6 +46,7 @@ object CellDragUtils extends js.Object {
     cells: IterableOrArrayLike[typings.jupyterlabCells.widgetMod.Cell],
     isCellNode: js.Function1[/* node */ HTMLElement, Boolean]
   ): Double = js.native
+  
   /**
     * Detect if a drag event should be started. This is down if the
     * mouse is moved beyond a certain distance (DRAG_THRESHOLD).
@@ -54,4 +58,3 @@ object CellDragUtils extends js.Object {
     */
   def shouldStartDrag(prevX: Double, prevY: Double, nextX: Double, nextY: Double): Boolean = js.native
 }
-

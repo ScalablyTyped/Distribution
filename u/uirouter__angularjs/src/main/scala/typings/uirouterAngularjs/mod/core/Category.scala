@@ -2,7 +2,7 @@ package typings.uirouterAngularjs.mod.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Trace categories Enum
@@ -20,12 +20,17 @@ import scala.scalajs.js.annotation._
 @JSImport("@uirouter/angularjs", "core.Category")
 @js.native
 object Category extends js.Object {
-  /* 2 */ val HOOK: typings.uirouterCore.traceMod.Category.HOOK with Double = js.native
-  /* 0 */ val RESOLVE: typings.uirouterCore.traceMod.Category.RESOLVE with Double = js.native
-  /* 1 */ val TRANSITION: typings.uirouterCore.traceMod.Category.TRANSITION with Double = js.native
-  /* 3 */ val UIVIEW: typings.uirouterCore.traceMod.Category.UIVIEW with Double = js.native
-  /* 4 */ val VIEWCONFIG: typings.uirouterCore.traceMod.Category.VIEWCONFIG with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.uirouterCore.traceMod.Category with Double] = js.native
+  
+  /* 2 */ val HOOK: typings.uirouterCore.traceMod.Category.HOOK with Double = js.native
+  
+  /* 0 */ val RESOLVE: typings.uirouterCore.traceMod.Category.RESOLVE with Double = js.native
+  
+  /* 1 */ val TRANSITION: typings.uirouterCore.traceMod.Category.TRANSITION with Double = js.native
+  
+  /* 3 */ val UIVIEW: typings.uirouterCore.traceMod.Category.UIVIEW with Double = js.native
+  
+  /* 4 */ val VIEWCONFIG: typings.uirouterCore.traceMod.Category.VIEWCONFIG with Double = js.native
 }
-

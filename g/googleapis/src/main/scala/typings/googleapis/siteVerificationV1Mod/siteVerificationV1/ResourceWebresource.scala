@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/siteVerification/v1", "siteVerification_v1.Resource$Webresource")
 @js.native
 class ResourceWebresource protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * siteVerification.webResource.delete
     * @desc Relinquish ownership of a website or domain.
@@ -41,6 +43,7 @@ class ResourceWebresource protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * siteVerification.webResource.get
     * @desc Get the most current data for a website or domain.
@@ -72,6 +75,7 @@ class ResourceWebresource protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSiteVerificationWebResourceResource]
   ): Unit = js.native
+  
   /**
     * siteVerification.webResource.getToken
     * @desc Get a verification token for placing on a website or domain.
@@ -103,6 +107,7 @@ class ResourceWebresource protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSiteVerificationWebResourceGettokenResponse]
   ): Unit = js.native
+  
   /**
     * siteVerification.webResource.insert
     * @desc Attempt verification of a website or domain.
@@ -135,6 +140,7 @@ class ResourceWebresource protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSiteVerificationWebResourceResource]
   ): Unit = js.native
+  
   /**
     * siteVerification.webResource.list
     * @desc Get the list of your verified websites and domains.
@@ -165,6 +171,7 @@ class ResourceWebresource protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSiteVerificationWebResourceListResponse]
   ): Unit = js.native
+  
   /**
     * siteVerification.webResource.patch
     * @desc Modify the list of owners for your website or domain. This method
@@ -198,6 +205,7 @@ class ResourceWebresource protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSiteVerificationWebResourceResource]
   ): Unit = js.native
+  
   /**
     * siteVerification.webResource.update
     * @desc Modify the list of owners for your website or domain.
@@ -231,4 +239,3 @@ class ResourceWebresource protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSiteVerificationWebResourceResource]
   ): Unit = js.native
 }
-

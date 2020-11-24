@@ -3,7 +3,7 @@ package typings.luminoDatagrid.mod
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/datagrid", "GraphicsContext")
 @js.native
@@ -16,4 +16,3 @@ class GraphicsContext protected ()
     */
   def this(context: CanvasRenderingContext2D) = this()
 }
-

@@ -7,7 +7,7 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/index", "ScreenSpaceReflectionPostProcess")
 @js.native
@@ -23,93 +23,27 @@ class ScreenSpaceReflectionPostProcess protected ()
     * @param engine The engine which the post process will be applied. (default: current engine)
     * @param reusable If the post process can be reused on the same frame. (default: false)
     * @param textureType Type of textures used when performing the post process. (default: 0)
-    * @param blockCompilation If compilation of the shader should not be done in the constructor. The updateEffect method can be used to compile the shader at a later time. (default: false)
+    * @param blockCompilation If compilation of the shader should not be done in the constructor. The updateEffect method can be used to compile the shader at a later time. (default: true)
+    * @param forceGeometryBuffer If this post process should use geometry buffer instead of prepass (default: false)
     */
-  def this(name: String, scene: Scene, options: Double, camera: Nullable[Camera]) = this()
-  def this(name: String, scene: Scene, options: PostProcessOptions, camera: Nullable[Camera]) = this()
-  def this(name: String, scene: Scene, options: Double, camera: Nullable[Camera], samplingMode: Double) = this()
   def this(
     name: String,
     scene: Scene,
-    options: PostProcessOptions,
+    options: Double | PostProcessOptions,
     camera: Nullable[Camera],
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    scene: Scene,
-    options: Double,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine
-  ) = this()
-  def this(
-    name: String,
-    scene: Scene,
-    options: PostProcessOptions,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine
-  ) = this()
-  def this(
-    name: String,
-    scene: Scene,
-    options: Double,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    scene: Scene,
-    options: PostProcessOptions,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    scene: Scene,
-    options: Double,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean,
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    scene: Scene,
-    options: PostProcessOptions,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean,
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    scene: Scene,
-    options: Double,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean,
-    textureType: Double,
-    blockCompilation: Boolean
-  ) = this()
-  def this(
-    name: String,
-    scene: Scene,
-    options: PostProcessOptions,
-    camera: Nullable[Camera],
-    samplingMode: Double,
-    engine: Engine,
-    reusable: Boolean,
-    textureType: Double,
-    blockCompilation: Boolean
+    samplingMode: js.UndefOr[Double],
+    engine: js.UndefOr[Engine],
+    reusable: js.UndefOr[Boolean],
+    textureType: js.UndefOr[Double],
+    blockCompilation: js.UndefOr[Boolean],
+    forceGeometryBuffer: js.UndefOr[Boolean]
   ) = this()
 }
-
+/* static members */
+@JSImport("babylonjs/PostProcesses/index", "ScreenSpaceReflectionPostProcess")
+@js.native
+object ScreenSpaceReflectionPostProcess extends js.Object {
+  
+  /** @hidden */
+  def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): typings.babylonjs.screenSpaceReflectionPostProcessMod.ScreenSpaceReflectionPostProcess = js.native
+}

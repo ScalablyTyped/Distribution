@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a collection of area links.
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
 trait CellAreaLinks
   extends XAreaLinks
      with XEnumerationAccess
-
 object CellAreaLinks {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -38,4 +38,3 @@ object CellAreaLinks {
     __obj.asInstanceOf[CellAreaLinks]
   }
 }
-

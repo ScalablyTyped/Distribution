@@ -3,7 +3,7 @@ package typings.smartFoxServer.global.SFS2X.Requests.System
 import typings.smartFoxServer.SFS2X.Entities.SFSRoom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.System.ChangeRoomCapacityRequest")
 @js.native
@@ -17,4 +17,3 @@ class ChangeRoomCapacityRequest protected ()
     */
   def this(room: SFSRoom, newMaxUsers: Double, newMaxSpect: Double) = this()
 }
-

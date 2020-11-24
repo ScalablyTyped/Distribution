@@ -2,7 +2,7 @@ package typings.blessed.mod.Widgets
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A box which can render content drawn as 8x14 cell characters using the terminus font.
@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class BigTextElement protected () extends BoxElement {
   def this(opts: BigTextOptions) = this()
+  
   /**
     * Original options object.
     */
   @JSName("options")
   var options_BigTextElement: BigTextOptions = js.native
 }
-

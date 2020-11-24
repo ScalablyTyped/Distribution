@@ -3,15 +3,11 @@ package typings.jsdevtoolsOno.typesMod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Ono[T /* <: ErrorLike */] extends js.Object {
-  /**
-    * The type of Error that this `Ono` function produces.
-    */
-  @JSName(js.Symbol.species)
-  val species: ErrorLikeConstructor[T] = js.native
+  
   def apply(error: ErrorPOJO): T with ErrorPOJO with (OnoError[T with ErrorPOJO]) = js.native
   def apply(error: ErrorPOJO, message: String, params: js.Any*): T with ErrorPOJO with (OnoError[T with ErrorPOJO]) = js.native
   /**
@@ -69,5 +65,10 @@ trait Ono[T /* <: ErrorLike */] extends js.Object {
     * @param params - Optional arguments to replace the corresponding placeholders in the message
     */
   def apply[P /* <: js.Object */](props: P, message: String, params: js.Any*): T with P with (OnoError[T with P]) = js.native
+  
+  /**
+    * The type of Error that this `Ono` function produces.
+    */
+  @JSName(js.Symbol.species)
+  val species: ErrorLikeConstructor[T] = js.native
 }
-

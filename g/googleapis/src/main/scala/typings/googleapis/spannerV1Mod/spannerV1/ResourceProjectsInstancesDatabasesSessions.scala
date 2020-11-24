@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/spanner/v1", "spanner_v1.Resource$Projects$Instances$Databases$Sessions")
 @js.native
 class ResourceProjectsInstancesDatabasesSessions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * spanner.projects.instances.databases.sessions.beginTransaction
     * @desc Begins a new transaction. This step can often be skipped: Read,
@@ -46,6 +46,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTransaction]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.sessions.commit
     * @desc Commits a transaction. The request includes the mutations to be
@@ -83,6 +84,9 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommitResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * spanner.projects.instances.databases.sessions.create
     * @desc Creates a new session. A session can be used to perform
@@ -127,6 +131,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSession]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.sessions.delete
     * @desc Ends a session, releasing server resources associated with it. This
@@ -160,6 +165,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.sessions.executeBatchDml
     * @desc Executes a batch of SQL DML statements. This method allows many
@@ -203,6 +209,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExecuteBatchDmlResponse]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.sessions.executeSql
     * @desc Executes an SQL statement, returning all results in a single reply.
@@ -242,6 +249,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaResultSet]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.sessions.executeStreamingSql
     * @desc Like ExecuteSql, except returns the result set as a stream. Unlike
@@ -280,6 +288,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPartialResultSet]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.sessions.get
     * @desc Gets a session. Returns `NOT_FOUND` if the session does not exist.
@@ -312,6 +321,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSession]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.sessions.list
     * @desc Lists all sessions in a given database.
@@ -346,6 +356,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListSessionsResponse]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.sessions.partitionQuery
     * @desc Creates a set of partition tokens that can be used to execute a
@@ -387,6 +398,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPartitionResponse]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.sessions.partitionRead
     * @desc Creates a set of partition tokens that can be used to execute a
@@ -430,6 +442,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPartitionResponse]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.sessions.read
     * @desc Reads rows from the database using key lookups and scans, as a
@@ -469,6 +482,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaResultSet]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.sessions.rollback
     * @desc Rolls back a transaction, releasing any locks it holds. It is a
@@ -506,6 +520,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.sessions.streamingRead
     * @desc Like Read, except returns the result set as a stream. Unlike Read,
@@ -542,4 +557,3 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends js.Object 
     callback: BodyResponseCallback[SchemaPartialResultSet]
   ): Unit = js.native
 }
-

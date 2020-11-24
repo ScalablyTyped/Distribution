@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Regioncommitments")
 @js.native
 class ResourceRegioncommitments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.regionCommitments.aggregatedList
     * @desc Retrieves an aggregated list of commitments.
@@ -48,6 +48,9 @@ class ResourceRegioncommitments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommitmentAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.regionCommitments.get
     * @desc Returns the specified commitment resource. Gets a list of available
@@ -79,6 +82,7 @@ class ResourceRegioncommitments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommitment]
   ): Unit = js.native
+  
   /**
     * compute.regionCommitments.insert
     * @desc Creates a commitment in the specified project using the data
@@ -111,6 +115,7 @@ class ResourceRegioncommitments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionCommitments.list
     * @desc Retrieves a list of commitments contained within the specified
@@ -145,6 +150,7 @@ class ResourceRegioncommitments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommitmentList]
   ): Unit = js.native
+  
   /**
     * compute.regionCommitments.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -179,6 +185,7 @@ class ResourceRegioncommitments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * compute.regionCommitments.updateReservations
     * @desc Update the shape of reservations for GPUS/Local SSDs of
@@ -216,4 +223,3 @@ class ResourceRegioncommitments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

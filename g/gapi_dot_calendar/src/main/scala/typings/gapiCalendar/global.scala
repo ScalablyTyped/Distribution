@@ -24,17 +24,21 @@ import typings.gapiCalendar.gapi.client.calendar.FreeBusyQueryParameters
 import typings.gapiCalendar.gapi.client.calendar.FreeBusy_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object gapi extends js.Object {
+    
     @js.native
     object client extends js.Object {
+      
       @js.native
       object calendar extends js.Object {
+        
         @js.native
         class Event ()
           extends typings.gapiCalendar.gapi.client.calendar.Event
@@ -42,70 +46,75 @@ object global extends js.Object {
         @js.native
         class acl ()
           extends typings.gapiCalendar.gapi.client.calendar.acl
+        /* static members */
+        @js.native
+        object acl extends js.Object {
+          
+          def delete(parameters: AclDeleteParameters): HttpRequest[Unit] = js.native
+          
+          def get(parameters: AclGetParameters): HttpRequest[Acl_] = js.native
+          
+          def insert(parameters: AclInsertParameters): HttpRequest[Acl_] = js.native
+          
+          def update(parameters: AclUpdateParameters): HttpRequest[Acl_] = js.native
+        }
         
         @js.native
         class calendarList ()
           extends typings.gapiCalendar.gapi.client.calendar.calendarList
-        
-        @js.native
-        class calendars ()
-          extends typings.gapiCalendar.gapi.client.calendar.calendars
-        
-        @js.native
-        class events ()
-          extends typings.gapiCalendar.gapi.client.calendar.events
-        
-        @js.native
-        class freebusy ()
-          extends typings.gapiCalendar.gapi.client.calendar.freebusy
-        
-        /* static members */
-        @js.native
-        object acl extends js.Object {
-          def delete(parameters: AclDeleteParameters): HttpRequest[Unit] = js.native
-          def get(parameters: AclGetParameters): HttpRequest[Acl_] = js.native
-          def insert(parameters: AclInsertParameters): HttpRequest[Acl_] = js.native
-          def update(parameters: AclUpdateParameters): HttpRequest[Acl_] = js.native
-        }
-        
         /* static members */
         @js.native
         object calendarList extends js.Object {
+          
           def insert(parameters: CalendarListInsertParameters): HttpRequest[CalendarListEntry] = js.native
+          
           def list(): HttpRequest[CalendarList_] = js.native
           def list(parameters: CalendarListListParameters): HttpRequest[CalendarList_] = js.native
         }
         
+        @js.native
+        class calendars ()
+          extends typings.gapiCalendar.gapi.client.calendar.calendars
         /* static members */
         @js.native
         object calendars extends js.Object {
+          
           def delete(parameters: CalendarsDeleteParameters): HttpRequest[Unit] = js.native
+          
           def insert(parameters: CalendarsInsertParameters): HttpRequest[Calendar] = js.native
+          
           def update(parameters: CalendarsUpdateParameters): HttpRequest[Calendar] = js.native
         }
         
+        @js.native
+        class events ()
+          extends typings.gapiCalendar.gapi.client.calendar.events
         /* static members */
         @js.native
         object events extends js.Object {
+          
           // delete the existing event from calendar
           def delete(parameters: EventsDeleteParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = js.native
+          
           def get(parameters: EventsGetParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = js.native
+          
           def insert(parameters: EventsInsertParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = js.native
+          
           def list(parameters: EventsListParameters): HttpRequest[Events_] = js.native
+          
           def update(parameters: EventsUpdateParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = js.native
         }
         
+        @js.native
+        class freebusy ()
+          extends typings.gapiCalendar.gapi.client.calendar.freebusy
         /* static members */
         @js.native
         object freebusy extends js.Object {
+          
           def query(parameters: FreeBusyQueryParameters): HttpRequest[FreeBusy_] = js.native
         }
-        
       }
-      
     }
-    
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Upload对象管理一个上传任务
@@ -11,55 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusUploaderUpload extends js.Object {
-  /**
-    * 上传任务的标识
-    * 在创建任务时系统自动分配，用于标识上传任务的唯一性。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
-    */
-  var id: js.UndefOr[String] = js.native
-  /**
-    * 上传任务的参数
-    * 上传任务配置的参数，参考UploadOptions。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
-    */
-  var options: js.UndefOr[PlusUploaderUploadOptions] = js.native
-  /**
-    * 上传任务完成后服务器返回的数据
-    * 表示当前上传任务的状态，可通过addEventListener()方法监听statechanged事件监听任务状态的变化。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
-    */
-  var responseText: js.UndefOr[String] = js.native
-  /**
-    * 任务的状态
-    * 上传任务的状态，参考UploadState，在UploadCompleteCallback事件和UploadStateChangedCallback事件触发时更新。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
-    */
-  var state: js.UndefOr[Double] = js.native
-  /**
-    * 上传数据的总大小
-    * 整数类型，单位为字节（byte），上传任务开始传输数据时更新。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
-    */
-  var totalSize: js.UndefOr[Double] = js.native
-  /**
-    * 已完成上传数据的大小）
-    * 整数类型，单位为字节（byte），上传任务开始传输数据时，每次触发statechanged事件或上传任务完成更新。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
-    */
-  var uploadedSize: js.UndefOr[Double] = js.native
-  /**
-    * 上传文件的服务器地址
-    * 调用plus.uploader.createUpload()方法创建上传任务时设置的值。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
-    */
-  var url: js.UndefOr[String] = js.native
+  
   /**
     * 取消上传任务
     * 如果任务未完成，则终止上传，并从任务列表中删除。
@@ -67,6 +19,7 @@ trait PlusUploaderUpload extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   def abort(): Unit = js.native
+  
   /**
     * 添加上传数据
     * 向上传任务中添加数据，必须在任务开始上传前调用。
@@ -80,6 +33,7 @@ trait PlusUploaderUpload extends js.Object {
   def addData(key: js.UndefOr[scala.Nothing], value: String): Boolean = js.native
   def addData(key: String): Boolean = js.native
   def addData(key: String, value: String): Boolean = js.native
+  
   /**
     * 添加上传任务事件监听器
     * 上传任务添加事件监听器后，当监听的事件发生时触发listener回调。
@@ -105,6 +59,7 @@ trait PlusUploaderUpload extends js.Object {
     listener: js.Function2[/* result0 */ this.type, /* result1 */ Double, Unit],
     capture: Boolean
   ): Unit = js.native
+  
   /**
     * 添加上传文件
     * 向上传任务中添加文件，必须在任务开始上传前调用。
@@ -119,6 +74,7 @@ trait PlusUploaderUpload extends js.Object {
   def addFile(path: js.UndefOr[scala.Nothing], options: PlusUploaderUploadFileOptions): Boolean = js.native
   def addFile(path: String): Boolean = js.native
   def addFile(path: String, options: PlusUploaderUploadFileOptions): Boolean = js.native
+  
   /**
     * 获取上传请求HTTP响应头部信息
     * HTTP响应头部全部内容作为未解析的字符串返回，如果没有接收到这个HTTP响应头数据或者上传请求未完成则为空字符串。
@@ -126,6 +82,7 @@ trait PlusUploaderUpload extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   def getAllResponseHeaders(): String = js.native
+  
   /**
     * 获取上传请求指定的HTTP响应头部的值
     * 其参数是要返回的HTTP响应头部的名称，可以使用任何大小写来制定这个头部名字，和响应头部的比较是不区分大小写的。
@@ -135,6 +92,23 @@ trait PlusUploaderUpload extends js.Object {
     */
   def getResponseHeader(): String = js.native
   def getResponseHeader(headerName: String): String = js.native
+  
+  /**
+    * 上传任务的标识
+    * 在创建任务时系统自动分配，用于标识上传任务的唯一性。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
+    */
+  var id: js.UndefOr[String] = js.native
+  
+  /**
+    * 上传任务的参数
+    * 上传任务配置的参数，参考UploadOptions。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
+    */
+  var options: js.UndefOr[PlusUploaderUploadOptions] = js.native
+  
   /**
     * 暂停上传任务
     * 暂停上传任务，如果任务已经处于初始状态或暂停状态则无任何响应。
@@ -142,6 +116,15 @@ trait PlusUploaderUpload extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   def pause(): Unit = js.native
+  
+  /**
+    * 上传任务完成后服务器返回的数据
+    * 表示当前上传任务的状态，可通过addEventListener()方法监听statechanged事件监听任务状态的变化。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
+    */
+  var responseText: js.UndefOr[String] = js.native
+  
   /**
     * 恢复暂停的上传任务
     * 继续暂停的上传任务，如果任务处于非暂停状态则无任何响应。
@@ -149,6 +132,7 @@ trait PlusUploaderUpload extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   def resume(): Unit = js.native
+  
   /**
     * 设置上传请求的HTTP头数据
     * Http的Header应该包含在通过后续start()调用而发起的请求中，此方法必需在调用start()之前设置才能生效。
@@ -160,6 +144,7 @@ trait PlusUploaderUpload extends js.Object {
   def setRequestHeader(headerName: js.UndefOr[scala.Nothing], headerValue: String): Unit = js.native
   def setRequestHeader(headerName: String): Unit = js.native
   def setRequestHeader(headerName: String, headerValue: String): Unit = js.native
+  
   /**
     * 开始上传任务
     * 开始调度上传任务，如果任务已经处于开始状态则无任何响应。
@@ -168,5 +153,36 @@ trait PlusUploaderUpload extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   def start(): Unit = js.native
+  
+  /**
+    * 任务的状态
+    * 上传任务的状态，参考UploadState，在UploadCompleteCallback事件和UploadStateChangedCallback事件触发时更新。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
+    */
+  var state: js.UndefOr[Double] = js.native
+  
+  /**
+    * 上传数据的总大小
+    * 整数类型，单位为字节（byte），上传任务开始传输数据时更新。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
+    */
+  var totalSize: js.UndefOr[Double] = js.native
+  
+  /**
+    * 已完成上传数据的大小）
+    * 整数类型，单位为字节（byte），上传任务开始传输数据时，每次触发statechanged事件或上传任务完成更新。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
+    */
+  var uploadedSize: js.UndefOr[Double] = js.native
+  
+  /**
+    * 上传文件的服务器地址
+    * 调用plus.uploader.createUpload()方法创建上传任务时设置的值。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
+    */
+  var url: js.UndefOr[String] = js.native
 }
-

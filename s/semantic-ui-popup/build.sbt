@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-popup"
-version := "2.2-dt-20200515Z-df4786"
+version := "2.2-dt-20200515Z-bf39ef"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

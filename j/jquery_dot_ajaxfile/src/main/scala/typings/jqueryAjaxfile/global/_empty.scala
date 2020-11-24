@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.jqueryAjaxfile.JQueryStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("$")
 @js.native
 object _empty extends TopLevel[JQueryStatic]
-

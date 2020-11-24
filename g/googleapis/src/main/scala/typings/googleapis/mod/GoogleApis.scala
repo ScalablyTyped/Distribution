@@ -3,7 +3,7 @@ package typings.googleapis.mod
 import typings.googleapisCommon.apiMod.GlobalOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis", "GoogleApis")
 @js.native
@@ -21,4 +21,3 @@ class GoogleApis ()
   extends typings.googleapis.googleapisMod.GoogleApis {
   def this(options: GlobalOptions) = this()
 }
-

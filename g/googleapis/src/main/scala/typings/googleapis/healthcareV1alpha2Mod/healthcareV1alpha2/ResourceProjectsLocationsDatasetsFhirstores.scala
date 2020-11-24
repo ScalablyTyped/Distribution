@@ -6,15 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha2", "healthcare_v1alpha2.Resource$Projects$Locations$Datasets$Fhirstores")
 @js.native
 class ResourceProjectsLocationsDatasetsFhirstores protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var fhir: ResourceProjectsLocationsDatasetsFhirstoresFhir = js.native
-  var securityLabels: ResourceProjectsLocationsDatasetsFhirstoresSecuritylabels = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.create
     * @desc Creates a new FHIR store within the parent dataset.
@@ -48,6 +48,7 @@ class ResourceProjectsLocationsDatasetsFhirstores protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFhirStore]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.delete
     * @desc Deletes the specified FHIR store and removes all resources within
@@ -80,6 +81,7 @@ class ResourceProjectsLocationsDatasetsFhirstores protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.executeBundle
     * @desc Executes all the requests in the given Bundle.
@@ -112,6 +114,7 @@ class ResourceProjectsLocationsDatasetsFhirstores protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.export
     * @desc Export resources from the FHIR store to the specified destination.
@@ -149,6 +152,9 @@ class ResourceProjectsLocationsDatasetsFhirstores protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var fhir: ResourceProjectsLocationsDatasetsFhirstoresFhir = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.get
     * @desc Gets the configuration of the specified FHIR store.
@@ -180,6 +186,7 @@ class ResourceProjectsLocationsDatasetsFhirstores protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFhirStore]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.getIamPolicy
     * @desc Gets the access control policy for a FHIR store or security label
@@ -216,6 +223,7 @@ class ResourceProjectsLocationsDatasetsFhirstores protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.getMetadata
     * @desc Gets the FHIR capability statement for the store, which contains a
@@ -248,6 +256,7 @@ class ResourceProjectsLocationsDatasetsFhirstores protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.import
     * @desc Import resources to the FHIR store by loading data from the specified
@@ -295,6 +304,7 @@ class ResourceProjectsLocationsDatasetsFhirstores protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.list
     * @desc Lists the FHIR stores in the given dataset.
@@ -329,6 +339,7 @@ class ResourceProjectsLocationsDatasetsFhirstores protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListFhirStoresResponse]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.patch
     * @desc Updates the configuration of the specified FHIR store.
@@ -362,6 +373,9 @@ class ResourceProjectsLocationsDatasetsFhirstores protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFhirStore]
   ): Unit = js.native
+  
+  var securityLabels: ResourceProjectsLocationsDatasetsFhirstoresSecuritylabels = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.setIamPolicy
     * @desc Sets the access control policy for a FHIR store or security label
@@ -398,6 +412,7 @@ class ResourceProjectsLocationsDatasetsFhirstores protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -438,4 +453,3 @@ class ResourceProjectsLocationsDatasetsFhirstores protected () extends js.Object
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.hdrHistogramJs.mod
 import typings.hdrHistogramJs.recorderMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Records integer values, and provides stable interval {@link Histogram} samples from
@@ -51,11 +51,10 @@ class Recorder () extends default {
   ) = this()
   def this(numberOfSignificantValueDigits: Double, packed: Boolean, clock: js.Function0[Double]) = this()
 }
-
 /* static members */
 @JSImport("hdr-histogram-js", "Recorder")
 @js.native
 object Recorder extends js.Object {
+  
   var idGenerator: Double = js.native
 }
-

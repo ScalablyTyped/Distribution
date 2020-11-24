@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Tokens")
 @js.native
 class ResourceTokens protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.tokens.delete
     * @desc Delete all access tokens issued by a user for an application.
@@ -38,6 +40,7 @@ class ResourceTokens protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceTokensDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTokensDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * directory.tokens.get
     * @desc Get information about an access token issued by a user.
@@ -67,6 +70,7 @@ class ResourceTokens protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaToken]
   ): Unit = js.native
+  
   /**
     * directory.tokens.list
     * @desc Returns the set of tokens specified user has issued to 3rd party
@@ -97,4 +101,3 @@ class ResourceTokens protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTokens]
   ): Unit = js.native
 }
-

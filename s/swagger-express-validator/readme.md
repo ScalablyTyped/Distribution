@@ -10,9 +10,9 @@ Validation middleware that validates request/response against provided swagger s
 | ------------------ | :-------------: |
 | Full name          | swagger-express-validator |
 | Keywords           | validation, swagger, middleware, connect, express |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 82551 |
+| # downloads        | 77396 |
 | # stars            | 0 |
 
 ## Links

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v2", "androidpublisher_v2.Resource$Reviews")
 @js.native
 class ResourceReviews protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.reviews.get
     * @desc Returns a single review.
@@ -43,6 +45,7 @@ class ResourceReviews protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReview]
   ): Unit = js.native
+  
   /**
     * androidpublisher.reviews.list
     * @desc Returns a list of reviews. Only reviews from last week will be
@@ -76,6 +79,7 @@ class ResourceReviews protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReviewsListResponse]
   ): Unit = js.native
+  
   /**
     * androidpublisher.reviews.reply
     * @desc Reply to a single review, or update an existing reply.
@@ -107,4 +111,3 @@ class ResourceReviews protected () extends js.Object {
     callback: BodyResponseCallback[SchemaReviewsReplyResponse]
   ): Unit = js.native
 }
-

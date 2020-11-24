@@ -3,7 +3,7 @@ package typings.babylonjs.frameMod
 import typings.babylonjs.mathVectorMod.Vector2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Textures/Packer/frame", "TexturePackerFrame")
 @js.native
@@ -16,20 +16,4 @@ class TexturePackerFrame protected () extends ITexturePackerFrame {
     * @returns TexturePackerFrame
     */
   def this(id: Double, scale: Vector2, offset: Vector2) = this()
-  /**
-    * The frame ID
-    */
-  /* CompleteClass */
-  override var id: Double = js.native
-  /**
-    * The Frames offset
-    */
-  /* CompleteClass */
-  override var offset: Vector2 = js.native
-  /**
-    * The frames Scale
-    */
-  /* CompleteClass */
-  override var scale: Vector2 = js.native
 }
-

@@ -10,9 +10,9 @@ PhantomJS integration module for NodeJS
 | ------------------ | :-------------: |
 | Full name          | phantom |
 | Keywords           | phantom, phantomjs, driver |
-| # releases         | 10 |
-| # dependents       | 331 |
-| # downloads        | 3550583 |
+| # releases         | 4 |
+| # dependents       | 327 |
+| # downloads        | 2262272 |
 | # stars            | 58 |
 
 ## Links

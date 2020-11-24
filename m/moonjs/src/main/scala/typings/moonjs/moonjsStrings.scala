@@ -2,13 +2,12 @@ package typings.moonjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object moonjsStrings {
-  @js.native
-  sealed trait Numbersigntext extends js.Object
   
   @scala.inline
   def Numbersigntext: Numbersigntext = "#text".asInstanceOf[Numbersigntext]
+  @js.native
+  sealed trait Numbersigntext extends js.Object
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for luxon
 
-Typings are for version 1.24
+Typings are for version 1.25
 
 ## Library description:
 Immutable date wrapper
@@ -10,10 +10,10 @@ Immutable date wrapper
 | ------------------ | :-------------: |
 | Full name          | luxon |
 | Keywords           | date, immutable |
-| # releases         | 80 |
-| # dependents       | 431 |
-| # downloads        | 11736942 |
-| # stars            | 12 |
+| # releases         | 55 |
+| # dependents       | 639 |
+| # downloads        | 26243585 |
+| # stars            | 13 |
 
 ## Links
 - [Homepage](https://github.com/moment/luxon#readme)

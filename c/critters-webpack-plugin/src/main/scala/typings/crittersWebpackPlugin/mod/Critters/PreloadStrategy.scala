@@ -2,7 +2,7 @@ package typings.crittersWebpackPlugin.mod.Critters
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The mechanism to use for lazy-loading stylesheets.
@@ -22,17 +22,20 @@ import scala.scalajs.js.annotation._
   - typings.crittersWebpackPlugin.crittersWebpackPluginStrings.`js-lazy`
 */
 trait PreloadStrategy extends js.Object
-
 object PreloadStrategy {
+  
   @scala.inline
   def body: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.body = "body".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.body]
+  
   @scala.inline
   def `js-lazy`: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.`js-lazy` = "js-lazy".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.`js-lazy`]
+  
   @scala.inline
   def js_ : typings.crittersWebpackPlugin.crittersWebpackPluginStrings.js_ = "js".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.js_]
+  
   @scala.inline
   def media: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.media = "media".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.media]
+  
   @scala.inline
   def swap: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.swap = "swap".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.swap]
 }
-

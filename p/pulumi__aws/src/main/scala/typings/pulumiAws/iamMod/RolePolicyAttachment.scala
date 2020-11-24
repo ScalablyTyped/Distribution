@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/iam", "RolePolicyAttachment")
 @js.native
@@ -23,11 +23,11 @@ class RolePolicyAttachment protected ()
   def this(name: String, args: RolePolicyAttachmentArgs) = this()
   def this(name: String, args: RolePolicyAttachmentArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/iam", "RolePolicyAttachment")
 @js.native
 object RolePolicyAttachment extends js.Object {
+  
   /**
     * Get an existing RolePolicyAttachment resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object RolePolicyAttachment extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.rolePolicyAttachmentMod.RolePolicyAttachment = js.native
   def get(name: String, id: Input[ID], state: RolePolicyAttachmentState): typings.pulumiAws.rolePolicyAttachmentMod.RolePolicyAttachment = js.native
   def get(name: String, id: Input[ID], state: RolePolicyAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.rolePolicyAttachmentMod.RolePolicyAttachment = js.native
+  
   /**
     * Returns true if the given object is an instance of RolePolicyAttachment.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/rolePolicyAttachment.RolePolicyAttachment */ Boolean = js.native
 }
-

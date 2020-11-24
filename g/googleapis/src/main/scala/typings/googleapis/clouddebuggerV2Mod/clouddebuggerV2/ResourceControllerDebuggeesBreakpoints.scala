@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouddebugger/v2", "clouddebugger_v2.Resource$Controller$Debuggees$Breakpoints")
 @js.native
 class ResourceControllerDebuggeesBreakpoints protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * clouddebugger.controller.debuggees.breakpoints.list
     * @desc Returns the list of all active breakpoints for the debuggee.  The
@@ -106,6 +108,7 @@ class ResourceControllerDebuggeesBreakpoints protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListActiveBreakpointsResponse]
   ): Unit = js.native
+  
   /**
     * clouddebugger.controller.debuggees.breakpoints.update
     * @desc Updates the breakpoint state or mutable fields. The entire
@@ -206,4 +209,3 @@ class ResourceControllerDebuggeesBreakpoints protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUpdateActiveBreakpointResponse]
   ): Unit = js.native
 }
-

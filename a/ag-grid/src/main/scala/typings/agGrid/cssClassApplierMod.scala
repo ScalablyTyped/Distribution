@@ -8,17 +8,18 @@ import typings.agGrid.originalColumnGroupMod.OriginalColumnGroup
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", JSImport.Namespace)
 @js.native
 object cssClassApplierMod extends js.Object {
+  
   @js.native
   class CssClassApplier () extends js.Object
-  
   /* static members */
   @js.native
   object CssClassApplier extends js.Object {
+    
     def addColumnClassesFromCollDef(
       classesOrFunc: String,
       abstractColDef: AbstractColDef,
@@ -67,6 +68,7 @@ object cssClassApplierMod extends js.Object {
       column: Column,
       columnGroup: OriginalColumnGroup
     ): Unit = js.native
+    
     def addHeaderClassesFromColDef(
       abstractColDef: AbstractColDef,
       eHeaderCell: HTMLElement,
@@ -74,6 +76,7 @@ object cssClassApplierMod extends js.Object {
       column: Column,
       columnGroup: ColumnGroup
     ): Unit = js.native
+    
     def addToolPanelClassesFromColDef(
       abstractColDef: AbstractColDef,
       eHeaderCell: HTMLElement,
@@ -82,6 +85,4 @@ object cssClassApplierMod extends js.Object {
       columnGroup: OriginalColumnGroup
     ): Unit = js.native
   }
-  
 }
-

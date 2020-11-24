@@ -7,14 +7,12 @@ import typings.node.BufferEncoding
 import typings.node.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("get-stream", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var MaxBufferError: Instantiable0[MaxBufferErrorClass] = js.native
-  // TODO: Remove this for the next major release
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof getStream */ js.Any = js.native
+  
   /**
   	Get the `stream` as a string.
   	@returns A promise that resolves when the end event fires on the stream, indicating that there is no more data to be read. The stream is switched to flowing mode.
@@ -49,6 +47,9 @@ object ^ extends js.Object {
   	*/
   def apply(stream: Stream): js.Promise[String] = js.native
   def apply(stream: Stream, options: OptionsWithEncoding[BufferEncoding]): js.Promise[String] = js.native
+  
+  var MaxBufferError: Instantiable0[MaxBufferErrorClass] = js.native
+  
   def array(stream: Stream, options: OptionsWithEncoding[BufferEncoding]): js.Promise[js.Array[String]] = js.native
   /**
   	Get the `stream` as an array of values.
@@ -61,6 +62,7 @@ object ^ extends js.Object {
   def array[StreamObjectModeType](stream: Stream, options: Options): js.Promise[js.Array[StreamObjectModeType]] = js.native
   @JSName("array")
   def array_buffer(stream: Stream, options: OptionsWithEncoding[buffer]): js.Promise[js.Array[Buffer]] = js.native
+  
   /**
   	Get the `stream` as a buffer.
   	It honors the `maxBuffer` option as above, but it refers to byte length rather than string length.
@@ -68,4 +70,3 @@ object ^ extends js.Object {
   def buffer(stream: Stream): js.Promise[Buffer] = js.native
   def buffer(stream: Stream, options: OptionsWithEncoding[BufferEncoding]): js.Promise[Buffer] = js.native
 }
-

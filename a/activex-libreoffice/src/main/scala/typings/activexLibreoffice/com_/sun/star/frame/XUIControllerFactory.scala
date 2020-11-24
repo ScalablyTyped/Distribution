@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * a factory to create User Interface controllers.
@@ -24,8 +24,8 @@ import scala.scalajs.js.annotation._
 trait XUIControllerFactory
   extends XMultiComponentFactory
      with XUIControllerRegistration
-
 object XUIControllerFactory {
+  
   @scala.inline
   def apply(
     AvailableServiceNames: SafeArray[String],
@@ -43,4 +43,3 @@ object XUIControllerFactory {
     __obj.asInstanceOf[XUIControllerFactory]
   }
 }
-

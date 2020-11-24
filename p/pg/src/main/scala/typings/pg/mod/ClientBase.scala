@@ -11,20 +11,26 @@ import typings.pg.pgStrings.notification
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pg", "ClientBase")
 @js.native
 class ClientBase () extends EventEmitter {
   def this(config: String) = this()
   def this(config: ClientConfig) = this()
+  
   def connect(): js.Promise[Unit] = js.native
   def connect(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   // tslint:enable:no-unnecessary-generics
   def copyFrom(queryText: String): Writable = js.native
+  
   def copyTo(queryText: String): Readable = js.native
+  
   def escapeIdentifier(str: String): String = js.native
+  
   def escapeLiteral(str: String): String = js.native
+  
   @JSName("on")
   def on_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
   // tslint:disable-next-line unified-signatures
@@ -36,7 +42,9 @@ class ClientBase () extends EventEmitter {
   def on_notice(event: notice, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("on")
   def on_notification(event: notification, listener: js.Function1[/* message */ Notification, Unit]): this.type = js.native
+  
   def pauseDrain(): Unit = js.native
+  
   def query[T /* <: Submittable */](queryStream: T): T = js.native
   // tslint:disable:no-unnecessary-generics
   def query[R /* <: js.Array[_] */, I /* <: js.Array[_] */](queryConfig: QueryArrayConfig[I]): js.Promise[QueryArrayResult[R]] = js.native
@@ -62,6 +70,6 @@ class ClientBase () extends EventEmitter {
     values: js.Array[_],
     callback: js.Function2[/* err */ Error, /* result */ QueryResult[R], Unit]
   ): Unit = js.native
+  
   def resumeDrain(): Unit = js.native
 }
-

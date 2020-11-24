@@ -4,14 +4,14 @@ import typings.dateFns.anon.`0`
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("date-fns/esm", "setWeek")
 @js.native
 object setWeek extends js.Object {
+  
   def apply(date: Double, week: Double): Date = js.native
   def apply(date: Double, week: Double, options: `0`): Date = js.native
   def apply(date: Date, week: Double): Date = js.native
   def apply(date: Date, week: Double, options: `0`): Date = js.native
 }
-

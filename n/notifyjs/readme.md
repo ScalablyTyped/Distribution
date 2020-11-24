@@ -11,8 +11,8 @@ A handy wrapper for the Web Notifications API
 | Full name          | notifyjs |
 | Keywords           | web, notification, nofity |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 531794 |
+| # dependents       | 6 |
+| # downloads        | 379770 |
 | # stars            | 2 |
 
 ## Links

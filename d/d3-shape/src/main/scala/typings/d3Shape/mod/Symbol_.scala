@@ -3,10 +3,11 @@ package typings.d3Shape.mod
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Symbol_[This, Datum] extends js.Object {
+  
   /**
     * Generates a symbol for the given arguments.
     *
@@ -22,6 +23,7 @@ trait Symbol_[This, Datum] extends js.Object {
     */
   def apply(d: Datum, args: js.Any*): String | Null = js.native
   def apply(d: js.UndefOr[scala.Nothing], args: js.Any*): String | Null = js.native
+  
   /**
     * Returns the current rendering context, which defaults to null.
     */
@@ -42,6 +44,7 @@ trait Symbol_[This, Datum] extends js.Object {
     * @param context The rendering context.
     */
   def context(context: CanvasRenderingContext2D): this.type = js.native
+  
   /**
     * Returns the current size accessor, which defaults to a function returning a constant value of 64.
     */
@@ -62,6 +65,7 @@ trait Symbol_[This, Datum] extends js.Object {
     * @param size A fixed size (area in square pixels).
     */
   def size(size: Double): this.type = js.native
+  
   /**
     * Returns the current symbol type accessor, which defaults to a function returning the circle symbol type.
     */
@@ -81,4 +85,3 @@ trait Symbol_[This, Datum] extends js.Object {
     */
   def `type`(`type`: SymbolType): this.type = js.native
 }
-

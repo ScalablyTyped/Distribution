@@ -3,7 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`line-3d`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LineSymbol3D
@@ -12,6 +12,7 @@ trait LineSymbol3D
      with Symbol2D3D
      with typings.arcgisJsApi.esri.symbols.Symbol3D
      with symbolsSymbol3D {
+  
   /**
     * The symbol type.
     *
@@ -20,4 +21,3 @@ trait LineSymbol3D
   @JSName("type")
   val type_LineSymbol3D: `line-3d` = js.native
 }
-

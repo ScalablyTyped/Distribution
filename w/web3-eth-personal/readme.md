@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-eth-personal
 
-Typings are for version 1.2.11
+Typings are for version 1.3.0
 
 ## Library description:
 Web3 module to interact with the Ethereum blockchain accounts stored in the node.
@@ -10,9 +10,9 @@ Web3 module to interact with the Ethereum blockchain accounts stored in the node
 | ------------------ | :-------------: |
 | Full name          | web3-eth-personal |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 19 |
-| # downloads        | 4178038 |
+| # releases         | 41 |
+| # dependents       | 24 |
+| # downloads        | 5696584 |
 | # stars            | 0 |
 
 ## Links

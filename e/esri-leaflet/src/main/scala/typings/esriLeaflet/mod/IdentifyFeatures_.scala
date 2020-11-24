@@ -3,7 +3,7 @@ package typings.esriLeaflet.mod
 import typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeaturesOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `L.esri.IdentifyFeatures` is an abstraction for the Identify API found in Map Services. It provides a
@@ -16,4 +16,3 @@ class IdentifyFeatures_ protected ()
   def this(options: IdentifyFeaturesOptions) = this()
   def this(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_) = this()
 }
-

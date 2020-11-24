@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Threads")
 @js.native
 class ResourceUsersThreads protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gmail.users.threads.delete
     * @desc Immediately and permanently deletes the specified thread. This
@@ -43,6 +45,7 @@ class ResourceUsersThreads protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gmail.users.threads.get
     * @desc Gets the specified thread.
@@ -74,6 +77,7 @@ class ResourceUsersThreads protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaThread]
   ): Unit = js.native
+  
   /**
     * gmail.users.threads.list
     * @desc Lists the threads in the user's mailbox.
@@ -107,6 +111,7 @@ class ResourceUsersThreads protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListThreadsResponse]
   ): Unit = js.native
+  
   /**
     * gmail.users.threads.modify
     * @desc Modifies the labels applied to the thread. This applies to all
@@ -138,6 +143,7 @@ class ResourceUsersThreads protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaThread]
   ): Unit = js.native
+  
   /**
     * gmail.users.threads.trash
     * @desc Moves the specified thread to the trash.
@@ -167,6 +173,7 @@ class ResourceUsersThreads protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaThread]
   ): Unit = js.native
+  
   /**
     * gmail.users.threads.untrash
     * @desc Removes the specified thread from the trash.
@@ -197,4 +204,3 @@ class ResourceUsersThreads protected () extends js.Object {
     callback: BodyResponseCallback[SchemaThread]
   ): Unit = js.native
 }
-

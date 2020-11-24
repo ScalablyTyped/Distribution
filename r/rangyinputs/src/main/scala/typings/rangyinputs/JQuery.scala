@@ -6,22 +6,28 @@ import typings.rangyinputs.rangyinputsStrings.collapseToStart
 import typings.rangyinputs.rangyinputsStrings.select
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /** Collapses the selection to an insertion point (caret) either at the start of the current selection if toStart is true or the end of the current selection otherwise. */
   def collapseSelection(): JQuery = js.native
   def collapseSelection(toStart: Boolean): JQuery = js.native
+  
   /** Deletes the currently selected text within the text input or textarea element and places the caret at the position where the deleted text had been. */
   def deleteSelectedText(): JQuery = js.native
+  
   /** Deletes the text within the text input or textarea element between the specified start and end character indices and optionally places the caret at the position where the deleted text had been if moveSelection is true. */
   def deleteText(start: Double, end: Double): JQuery = js.native
   def deleteText(start: Double, end: Double, moveSelection: Boolean): JQuery = js.native
+  
   /** Deletes the currently selected text within the text input or textarea element, places the caret at the position where the deleted text had been and returns the text that was deleted. */
   def extractSelectedText(): String = js.native
+  
   /** Note that in IE the textarea or text input must have the focus before calling this method. You can ensure this by calling the focus() method of the element (or its jQuery object). */
   def getSelection(): Selection = js.native
+  
   /**
     * Inserts the specified text at the specified character position within the text input or textarea element and optionally updates the selection depending on the value of selectionBehaviour. Possible values are:
     *
@@ -38,6 +44,7 @@ trait JQuery extends js.Object {
   def insertText_collapseToStart(text: String, pos: Double, selectionBehaviour: collapseToStart): JQuery = js.native
   @JSName("insertText")
   def insertText_select(text: String, pos: Double, selectionBehaviour: select): JQuery = js.native
+  
   /**
     * Replaces the currently selected text in the text input or textarea element with the specified text and optionally updates the selection depending on the value of selectionBehaviour. Possible values are:
     *
@@ -54,9 +61,11 @@ trait JQuery extends js.Object {
   def replaceSelectedText_collapseToStart(text: String, selectionBehaviour: collapseToStart): JQuery = js.native
   @JSName("replaceSelectedText")
   def replaceSelectedText_select(text: String, selectionBehaviour: select): JQuery = js.native
+  
   /** Selects the text within the text input or textarea element between the specified start and end character indices. */
   def setSelection(start: Double): JQuery = js.native
   def setSelection(start: Double, end: Double): JQuery = js.native
+  
   /**
     * Surrounds the currently selected text in the text input or textarea element with the specified pieces of text and optionally updates the selection depending on the value of selectionBehaviour. Possible values are:
     *
@@ -74,4 +83,3 @@ trait JQuery extends js.Object {
   @JSName("surroundSelectedText")
   def surroundSelectedText_select(textBefore: String, textAfter: String, selectionBehaviour: select): JQuery = js.native
 }
-

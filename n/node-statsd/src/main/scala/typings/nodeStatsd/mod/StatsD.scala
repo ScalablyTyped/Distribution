@@ -3,7 +3,7 @@ package typings.nodeStatsd.mod
 import typings.node.dgramMod.Socket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-statsd", "StatsD")
 @js.native
@@ -30,18 +30,14 @@ class StatsD protected () extends js.Object {
     mock: js.UndefOr[Boolean],
     global_tags: js.UndefOr[js.Array[String]]
   ) = this()
+  
   var cacheDns: Boolean = js.native
-  var global_tags: js.Array[String] = js.native
-  var host: String = js.native
-  var mock: Boolean = js.native
-  var port: Double = js.native
-  var prefix: String = js.native
-  var socket: Socket = js.native
-  var suffix: String = js.native
+  
   /**
     * Close the underlying socket and stop listening for data on it.
     */
   def close(): Unit = js.native
+  
   /**
     * Decrements a stat by a specified amount
     * @param stat The stat(s) to send
@@ -242,6 +238,7 @@ class StatsD protected () extends js.Object {
     tags: js.Array[String],
     callback: Callback
   ): Unit = js.native
+  
   /**
     * Gauges a stat by a specified amount
     * @param stat The stat(s) to send
@@ -328,6 +325,9 @@ class StatsD protected () extends js.Object {
     tags: js.Array[String],
     callback: Callback
   ): Unit = js.native
+  
+  var global_tags: js.Array[String] = js.native
+  
   /**
     * Represents the histogram stat
     * @param stat The stat(s) to send
@@ -414,6 +414,9 @@ class StatsD protected () extends js.Object {
     tags: js.Array[String],
     callback: Callback
   ): Unit = js.native
+  
+  var host: String = js.native
+  
   /**
     * Increments a stat by a specified amount
     * @param stat The stat(s) to send
@@ -583,6 +586,13 @@ class StatsD protected () extends js.Object {
     tags: js.Array[String],
     callback: Callback
   ): Unit = js.native
+  
+  var mock: Boolean = js.native
+  
+  var port: Double = js.native
+  
+  var prefix: String = js.native
+  
   /**
     * Sends a stat across the wire
     * @param stat The stat(s) to send
@@ -716,6 +726,7 @@ class StatsD protected () extends js.Object {
     tags: js.Array[String],
     callback: Callback
   ): Unit = js.native
+  
   /**
     * Checks if stats is an array and sends all stats calling back once all have sent
     * @param stat The stat(s) to send
@@ -849,6 +860,7 @@ class StatsD protected () extends js.Object {
     tags: js.Array[String],
     callback: Callback
   ): Unit = js.native
+  
   /**
     * See StatsD.unique
     */
@@ -930,6 +942,11 @@ class StatsD protected () extends js.Object {
     tags: js.Array[String],
     callback: Callback
   ): Unit = js.native
+  
+  var socket: Socket = js.native
+  
+  var suffix: String = js.native
+  
   /**
     * Represents the timing stat
     * @param stat The stat(s) to send
@@ -1016,6 +1033,7 @@ class StatsD protected () extends js.Object {
     tags: js.Array[String],
     callback: Callback
   ): Unit = js.native
+  
   /**
     * Counts unique values by a specified amount
     * @param stat The stat(s) to send
@@ -1103,4 +1121,3 @@ class StatsD protected () extends js.Object {
     callback: Callback
   ): Unit = js.native
 }
-

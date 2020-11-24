@@ -10,9 +10,9 @@ Hierarchical node.js configuration with files, environment variables, command-li
 | ------------------ | :-------------: |
 | Full name          | nconf |
 | Keywords           | configuration, key value store, plugabble |
-| # releases         | 1 |
-| # dependents       | 1219 |
-| # downloads        | 26709499 |
+| # releases         | 0 |
+| # dependents       | 1283 |
+| # downloads        | 40236416 |
 | # stars            | 177 |
 
 ## Links

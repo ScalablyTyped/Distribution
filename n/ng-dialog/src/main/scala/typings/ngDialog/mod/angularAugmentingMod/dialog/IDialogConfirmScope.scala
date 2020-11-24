@@ -2,10 +2,11 @@ package typings.ngDialog.mod.angularAugmentingMod.dialog
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IDialogConfirmScope extends IDialogScope {
+  
   /**
     * Use this method to close the dialog and resolve the promise that was returned when opening the modal.
     *
@@ -15,4 +16,3 @@ trait IDialogConfirmScope extends IDialogScope {
   def confirm(): Unit = js.native
   def confirm(value: js.Any): Unit = js.native
 }
-

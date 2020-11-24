@@ -11,8 +11,8 @@ Get the command from a shebang
 | Full name          | shebang-command |
 | Keywords           | cmd, command, parse, shebang |
 | # releases         | 2 |
-| # dependents       | 56 |
-| # downloads        | 454689019 |
+| # dependents       | 94 |
+| # downloads        | 830391477 |
 | # stars            | 1 |
 
 ## Links

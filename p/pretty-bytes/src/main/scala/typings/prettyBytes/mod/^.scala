@@ -2,11 +2,12 @@ package typings.prettyBytes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pretty-bytes", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Convert bytes to a human readable string: `1337` → `1.34 kB`.
   @param number - The number to format.
@@ -28,4 +29,3 @@ object ^ extends js.Object {
   def apply(number: Double): String = js.native
   def apply(number: Double, options: Options): String = js.native
 }
-

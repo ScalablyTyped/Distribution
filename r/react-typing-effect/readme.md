@@ -12,7 +12,7 @@ Simulates typing effect, eraser effect and blinking cursor.
 | Keywords           | - |
 | # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 21893 |
+| # downloads        | 23995 |
 | # stars            | 0 |
 
 ## Links

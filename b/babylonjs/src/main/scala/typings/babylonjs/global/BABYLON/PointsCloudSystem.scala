@@ -1,9 +1,9 @@
 package typings.babylonjs.global.BABYLON
 
-import typings.babylonjs.anon.UpdatableBoolean
+import typings.babylonjs.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PointsCloudSystem")
 @js.native
@@ -18,11 +18,5 @@ class PointsCloudSystem protected ()
     * * updatable (optional boolean, default true) : if the PCS must be updatable or immutable
     */
   def this(name: String, pointSize: Double, scene: typings.babylonjs.BABYLON.Scene) = this()
-  def this(name: String, pointSize: Double, scene: typings.babylonjs.BABYLON.Scene, options: UpdatableBoolean) = this()
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
+  def this(name: String, pointSize: Double, scene: typings.babylonjs.BABYLON.Scene, options: `0`) = this()
 }
-

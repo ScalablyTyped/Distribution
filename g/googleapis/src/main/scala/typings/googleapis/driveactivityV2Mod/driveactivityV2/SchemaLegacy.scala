@@ -2,7 +2,7 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A strategy which consolidates activities using the grouping rules from the
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaLegacy extends js.Object
-

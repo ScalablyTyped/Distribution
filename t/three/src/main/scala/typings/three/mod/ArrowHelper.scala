@@ -2,223 +2,26 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "ArrowHelper")
 @js.native
 class ArrowHelper protected ()
   extends typings.three.arrowHelperMod.ArrowHelper {
-  def this(dir: typings.three.vector3Mod.Vector3) = this()
-  def this(dir: typings.three.vector3Mod.Vector3, origin: typings.three.vector3Mod.Vector3) = this()
-  def this(dir: typings.three.vector3Mod.Vector3, origin: js.UndefOr[scala.Nothing], length: Double) = this()
-  def this(dir: typings.three.vector3Mod.Vector3, origin: typings.three.vector3Mod.Vector3, length: Double) = this()
+  /**
+  	 * @param [dir=new THREE.Vector3( 0, 0, 1 )]
+  	 * @param [origin=new THREE.Vector3( 0, 0, 0 )]
+  	 * @param [length=1]
+  	 * @param [color=0xffff00]
+  	 * @param headLength
+  	 * @param headWidth
+  	 */
   def this(
     dir: typings.three.vector3Mod.Vector3,
-    origin: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    color: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: js.UndefOr[scala.Nothing],
-    length: Double,
-    color: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: typings.three.vector3Mod.Vector3,
-    length: js.UndefOr[scala.Nothing],
-    color: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: typings.three.vector3Mod.Vector3,
-    length: Double,
-    color: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    color: js.UndefOr[scala.Nothing],
-    headLength: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    color: Double,
-    headLength: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: js.UndefOr[scala.Nothing],
-    length: Double,
-    color: js.UndefOr[scala.Nothing],
-    headLength: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: js.UndefOr[scala.Nothing],
-    length: Double,
-    color: Double,
-    headLength: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: typings.three.vector3Mod.Vector3,
-    length: js.UndefOr[scala.Nothing],
-    color: js.UndefOr[scala.Nothing],
-    headLength: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: typings.three.vector3Mod.Vector3,
-    length: js.UndefOr[scala.Nothing],
-    color: Double,
-    headLength: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: typings.three.vector3Mod.Vector3,
-    length: Double,
-    color: js.UndefOr[scala.Nothing],
-    headLength: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: typings.three.vector3Mod.Vector3,
-    length: Double,
-    color: Double,
-    headLength: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    color: js.UndefOr[scala.Nothing],
-    headLength: js.UndefOr[scala.Nothing],
-    headWidth: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    color: js.UndefOr[scala.Nothing],
-    headLength: Double,
-    headWidth: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    color: Double,
-    headLength: js.UndefOr[scala.Nothing],
-    headWidth: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    color: Double,
-    headLength: Double,
-    headWidth: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: js.UndefOr[scala.Nothing],
-    length: Double,
-    color: js.UndefOr[scala.Nothing],
-    headLength: js.UndefOr[scala.Nothing],
-    headWidth: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: js.UndefOr[scala.Nothing],
-    length: Double,
-    color: js.UndefOr[scala.Nothing],
-    headLength: Double,
-    headWidth: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: js.UndefOr[scala.Nothing],
-    length: Double,
-    color: Double,
-    headLength: js.UndefOr[scala.Nothing],
-    headWidth: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: js.UndefOr[scala.Nothing],
-    length: Double,
-    color: Double,
-    headLength: Double,
-    headWidth: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: typings.three.vector3Mod.Vector3,
-    length: js.UndefOr[scala.Nothing],
-    color: js.UndefOr[scala.Nothing],
-    headLength: js.UndefOr[scala.Nothing],
-    headWidth: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: typings.three.vector3Mod.Vector3,
-    length: js.UndefOr[scala.Nothing],
-    color: js.UndefOr[scala.Nothing],
-    headLength: Double,
-    headWidth: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: typings.three.vector3Mod.Vector3,
-    length: js.UndefOr[scala.Nothing],
-    color: Double,
-    headLength: js.UndefOr[scala.Nothing],
-    headWidth: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: typings.three.vector3Mod.Vector3,
-    length: js.UndefOr[scala.Nothing],
-    color: Double,
-    headLength: Double,
-    headWidth: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: typings.three.vector3Mod.Vector3,
-    length: Double,
-    color: js.UndefOr[scala.Nothing],
-    headLength: js.UndefOr[scala.Nothing],
-    headWidth: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: typings.three.vector3Mod.Vector3,
-    length: Double,
-    color: js.UndefOr[scala.Nothing],
-    headLength: Double,
-    headWidth: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: typings.three.vector3Mod.Vector3,
-    length: Double,
-    color: Double,
-    headLength: js.UndefOr[scala.Nothing],
-    headWidth: Double
-  ) = this()
-  def this(
-    dir: typings.three.vector3Mod.Vector3,
-    origin: typings.three.vector3Mod.Vector3,
-    length: Double,
-    color: Double,
-    headLength: Double,
-    headWidth: Double
+    origin: js.UndefOr[typings.three.vector3Mod.Vector3],
+    length: js.UndefOr[Double],
+    color: js.UndefOr[typings.three.colorMod.Color | String | Double],
+    headLength: js.UndefOr[Double],
+    headWidth: js.UndefOr[Double]
   ) = this()
 }
-

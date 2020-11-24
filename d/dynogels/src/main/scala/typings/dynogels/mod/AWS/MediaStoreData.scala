@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.mediastoredataMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.MediaStoreData")
 @js.native
@@ -14,4 +14,3 @@ class MediaStoreData ()
   extends typings.awsSdk.mod.MediaStoreData {
   def this(options: ClientConfiguration) = this()
 }
-

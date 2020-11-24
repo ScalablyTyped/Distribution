@@ -4,12 +4,12 @@ import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait b2WeldJoint extends b2Joint
-
 object b2WeldJoint {
+  
   @scala.inline
   def apply(
     GetAnchorA: () => b2Vec2,
@@ -28,4 +28,3 @@ object b2WeldJoint {
     __obj.asInstanceOf[b2WeldJoint]
   }
 }
-

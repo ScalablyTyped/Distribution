@@ -10,9 +10,9 @@ Enhances html-webpack-plugin functionality with async and defer attributes for s
 | ------------------ | :-------------: |
 | Full name          | script-ext-html-webpack-plugin |
 | Keywords           | webpack, plugin, html-webpack-plugin, async, defer, inline, script, module, resource hints, prefetch, preload, dynamic script, async script |
-| # releases         | 9 |
-| # dependents       | 104 |
-| # downloads        | 3677387 |
+| # releases         | 7 |
+| # dependents       | 118 |
+| # downloads        | 4948470 |
 | # stars            | 7 |
 
 ## Links

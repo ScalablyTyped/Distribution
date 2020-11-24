@@ -7,35 +7,38 @@ import typings.materialTextfield.characterCounterAdapterMod.MDCTextFieldCharacte
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/textfield/character-counter/index", JSImport.Namespace)
 @js.native
 object indexMod extends js.Object {
+  
   @js.native
   class MDCTextFieldCharacterCounter ()
     extends typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter
+  /* static members */
+  @js.native
+  object MDCTextFieldCharacterCounter extends js.Object {
+    
+    def attachTo(root: Element): typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter = js.native
+  }
   
   @js.native
   class MDCTextFieldCharacterCounterFoundation ()
     extends typings.materialTextfield.foundationMod.MDCTextFieldCharacterCounterFoundation {
     def this(adapter: PartialMDCTextFieldCharac) = this()
   }
-  
-  /* static members */
-  @js.native
-  object MDCTextFieldCharacterCounter extends js.Object {
-    def attachTo(root: Element): typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter = js.native
-  }
-  
   /* static members */
   @js.native
   object MDCTextFieldCharacterCounterFoundation extends js.Object {
+    
     def cssClasses: ROOT = js.native
+    
     /**
       * See {@link MDCTextFieldCharacterCounterAdapter} for typing information on parameters and return types.
       */
     def defaultAdapter: MDCTextFieldCharacterCounterAdapter = js.native
+    
     def strings: ROOTSELECTOR = js.native
   }
   
@@ -63,13 +66,13 @@ object indexMod extends js.Object {
     */
   @js.native
   object characterCountCssClasses extends js.Object {
+    
     var ROOT: String = js.native
   }
   
   @js.native
   object characterCountStrings extends js.Object {
+    
     var ROOT_SELECTOR: String = js.native
   }
-  
 }
-

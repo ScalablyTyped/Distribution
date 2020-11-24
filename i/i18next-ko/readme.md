@@ -12,7 +12,7 @@ KnockoutJS bindings for i18next.
 | Keywords           | i18n, knockoutjs, knockout, internationalization |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 1679 |
+| # downloads        | 2051 |
 | # stars            | 0 |
 
 ## Links

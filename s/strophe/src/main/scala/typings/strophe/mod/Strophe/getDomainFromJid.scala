@@ -2,11 +2,12 @@ package typings.strophe.mod.Strophe
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strophe", "Strophe.getDomainFromJid")
 @js.native
 object getDomainFromJid extends js.Object {
+  
   /** Function: getDomainFromJid
     *  Get the domain portion of a JID String.
     *
@@ -18,4 +19,3 @@ object getDomainFromJid extends js.Object {
     */
   def apply(jid: String): String = js.native
 }
-

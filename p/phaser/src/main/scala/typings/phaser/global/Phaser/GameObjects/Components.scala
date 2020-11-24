@@ -2,11 +2,12 @@ package typings.phaser.global.Phaser.GameObjects
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.GameObjects.Components")
 @js.native
 object Components extends js.Object {
+  
   /**
     * A Matrix used for display transformations for rendering.
     * 
@@ -39,6 +40,4 @@ object Components extends js.Object {
       ty: js.UndefOr[Double]
     ) = this()
   }
-  
 }
-

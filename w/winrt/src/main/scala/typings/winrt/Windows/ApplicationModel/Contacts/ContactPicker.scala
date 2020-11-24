@@ -5,12 +5,12 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ContactPicker extends IContactPicker
-
 object ContactPicker {
+  
   @scala.inline
   def apply(
     commitButtonText: String,
@@ -23,4 +23,3 @@ object ContactPicker {
     __obj.asInstanceOf[ContactPicker]
   }
 }
-

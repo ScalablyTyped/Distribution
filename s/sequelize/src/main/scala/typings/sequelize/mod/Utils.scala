@@ -1,31 +1,43 @@
 package typings.sequelize.mod
 
-import typings.lodash.mod.LoDashImplicitWrapper
+import typings.lodash.mod.Collection
+import typings.lodash.mod.Function
+import typings.lodash.mod.List
+import typings.lodash.mod.Object
+import typings.lodash.mod.Primitive
+import typings.lodash.mod.String
 import typings.sequelize.anon.FnCall
 import typings.sequelize.anon.Instantiable
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Utils extends js.Object {
+  
   var Promise: Instantiable = js.native
+  
+  @JSName("_")
+  def _underscore(): String = js.native
+  @JSName("_")
+  def _underscore(value: java.lang.String): String = js.native
+  @JSName("_")
+  def _underscore[T /* <: js.Object */](value: T): Object[T] = js.native
+  @JSName("_")
+  def _underscore[T](value: List[T]): Collection[T] = js.native
   @JSName("_")
   var _underscore_Original: SequelizeLoDash = js.native
-  var and: andStatic = js.native
-  var cast: castStatic = js.native
-  var col: colStatic = js.native
-  var fn: fnStatic = js.native
-  var json: jsonStatic = js.native
-  var literal: literalStatic = js.native
-  /**
-    * Same concept as _.merge, but don't overwrite properties that have already been assigned
-    */
-  @JSName("mergeDefaults")
-  var mergeDefaults_Original: FnCall = js.native
-  var or: orStatic = js.native
-  var where: whereStatic = js.native
+  @JSName("_")
+  def _underscore_T_Collection[T](): Collection[T] = js.native
+  @JSName("_")
+  def _underscore_T_Function1AnyWildcard_Function[T /* <: js.Function1[/* args */ js.Any, _] */](value: T): Function[T] = js.native
+  @JSName("_")
+  def _underscore_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
+  @JSName("_")
+  def _underscore_T_Primitive[T](value: T): Primitive[T] = js.native
+  @JSName("_")
+  def `_underscore_T_UnionNull<undefined>_Primitive`[T /* <: js.UndefOr[Null] */](value: T): Primitive[T] = js.native
   /**
     * Creates a lodash object which wraps value to enable implicit method chain sequences.
     * Methods that operate on and return arrays, collections, and functions can be chained together.
@@ -95,29 +107,56 @@ trait Utils extends js.Object {
     * upperFirst, value, and words.
     **/
   @JSName("_")
-  def _underscore[T](value: T): LoDashImplicitWrapper[T] = js.native
-  def addTicks(s: String): String = js.native
-  def addTicks(s: String, tickChar: String): String = js.native
+  def _underscore_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[_] with Function[_] with Object[_] with Primitive[_] with String = js.native
+  
+  def addTicks(s: java.lang.String): java.lang.String = js.native
+  def addTicks(s: java.lang.String, tickChar: java.lang.String): java.lang.String = js.native
+  
+  var and: andStatic = js.native
+  
   def argsArePrimaryKeys(args: js.Array[_], primaryKeys: js.Object): Boolean = js.native
-  def camelize(str: String): String = js.native
+  
+  def camelize(str: java.lang.String): java.lang.String = js.native
+  
   def canTreatArrayAsAnd(arr: js.Array[_]): Boolean = js.native
+  
+  var cast: castStatic = js.native
+  
   def cloneDeep[T /* <: js.Object */](obj: T): T = js.native
   def cloneDeep[T /* <: js.Object */](obj: T, fn: js.Function1[/* value */ T, _]): T = js.native
-  def combineTableNames(tableName1: String, tableName2: String): String = js.native
+  
+  var col: colStatic = js.native
+  
+  def combineTableNames(tableName1: java.lang.String, tableName2: java.lang.String): java.lang.String = js.native
+  
   /**
     * Determine if the default value provided exists and can be described
     * in a db schema using the DEFAULT directive.
     */
   def defaultValueSchemable(value: js.Any): Boolean = js.native
-  def format(arr: js.Array[_]): String = js.native
-  def format(arr: js.Array[_], dialect: String): String = js.native
-  def formatNamedParameters(sql: String, parameters: js.Any): String = js.native
-  def formatNamedParameters(sql: String, parameters: js.Any, dialect: String): String = js.native
+  
+  var fn: fnStatic = js.native
+  
+  def format(arr: js.Array[_]): java.lang.String = js.native
+  def format(arr: js.Array[_], dialect: java.lang.String): java.lang.String = js.native
+  
+  def formatNamedParameters(sql: java.lang.String, parameters: js.Any): java.lang.String = js.native
+  def formatNamedParameters(sql: java.lang.String, parameters: js.Any, dialect: java.lang.String): java.lang.String = js.native
+  
   def formatReferences(obj: js.Object): js.Object = js.native
+  
   def inherit(subClass: js.Object, superClass: js.Object): js.Object = js.native
-  def lowercaseFirst(str: String): String = js.native
+  
+  var json: jsonStatic = js.native
+  
+  var literal: literalStatic = js.native
+  
+  def lowercaseFirst(str: java.lang.String): java.lang.String = js.native
+  
   def mapOptionFieldNames[T /* <: js.Object */](options: T, Model: Model[_, _, _]): T = js.native
-  def mapValueFieldNames(dataValues: js.Object, fields: js.Array[String], Model: Model[_, _, _]): js.Object = js.native
+  
+  def mapValueFieldNames(dataValues: js.Object, fields: js.Array[java.lang.String], Model: Model[_, _, _]): js.Object = js.native
+  
   /**
     * Same concept as _.merge, but don't overwrite properties that have already been assigned
     */
@@ -138,24 +177,46 @@ trait Utils extends js.Object {
     * Same concept as _.merge, but don't overwrite properties that have already been assigned
     */
   def mergeDefaults[TObject, TSource1, TSource2, TSource3, TSource4](`object`: TObject, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TObject with TSource1 with TSource2 with TSource3 with TSource4 = js.native
-  def now(dialect: String): Date = js.native
-  def pluralize(s: String): String = js.native
-  def removeCommentsFromFunctionString(s: String): String = js.native
+  /**
+    * Same concept as _.merge, but don't overwrite properties that have already been assigned
+    */
+  @JSName("mergeDefaults")
+  var mergeDefaults_Original: FnCall = js.native
+  
+  def now(dialect: java.lang.String): Date = js.native
+  
+  var or: orStatic = js.native
+  
+  def pluralize(s: java.lang.String): java.lang.String = js.native
+  
+  def removeCommentsFromFunctionString(s: java.lang.String): java.lang.String = js.native
+  
   def removeNullValuesFromHash(hash: js.Object): js.Any = js.native
+  def removeNullValuesFromHash(hash: js.Object, omitNull: js.UndefOr[scala.Nothing], options: js.Object): js.Any = js.native
   def removeNullValuesFromHash(hash: js.Object, omitNull: Boolean): js.Any = js.native
   def removeNullValuesFromHash(hash: js.Object, omitNull: Boolean, options: js.Object): js.Any = js.native
-  def removeTicks(s: String): String = js.native
-  def removeTicks(s: String, tickChar: String): String = js.native
-  def singularize(s: String): String = js.native
+  
+  def removeTicks(s: java.lang.String): java.lang.String = js.native
+  def removeTicks(s: java.lang.String, tickChar: java.lang.String): java.lang.String = js.native
+  
+  def singularize(s: java.lang.String): java.lang.String = js.native
+  
   def sliceArgs(args: js.Array[_]): js.Array[_] = js.native
   def sliceArgs(args: js.Array[_], begin: Double): js.Array[_] = js.native
-  def spliceStr(str: String, index: Double, count: Double, add: String): String = js.native
-  def stack(): String = js.native
+  
+  def spliceStr(str: java.lang.String, index: Double, count: Double, add: java.lang.String): java.lang.String = js.native
+  
+  def stack(): java.lang.String = js.native
+  
   def tick(f: js.Function): Unit = js.native
+  
   def toDefaultValue(value: js.Function0[DataTypeAbstract]): js.Any = js.native
   def toDefaultValue(value: DataTypeAbstract): js.Any = js.native
-  def uppercaseFirst(str: String): String = js.native
+  
+  def uppercaseFirst(str: java.lang.String): java.lang.String = js.native
+  
   def validateParameter(value: js.Object, expectation: js.Object): Boolean = js.native
   def validateParameter(value: js.Object, expectation: js.Object, options: js.Object): Boolean = js.native
+  
+  var where: whereStatic = js.native
 }
-

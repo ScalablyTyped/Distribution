@@ -8,13 +8,15 @@ import typings.ndarray.mod.ndarray
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait FnCall extends js.Object {
+    
     def apply(gl: WebGLRenderingContext, array: ndarray[Double]): Texture = js.native
     def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double]): Texture = js.native
     def apply(
@@ -34,6 +36,4 @@ object anon extends js.Object {
     def apply(gl: WebGLRenderingContext, input: RawObject, format: GLenum): Texture = js.native
     def apply(gl: WebGLRenderingContext, input: RawObject, format: GLenum, `type`: GLenum): Texture = js.native
   }
-  
 }
-

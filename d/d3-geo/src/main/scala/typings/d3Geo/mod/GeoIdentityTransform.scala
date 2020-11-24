@@ -3,10 +3,30 @@ package typings.d3Geo.mod
 import typings.geojson.mod.GeoJsonProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GeoIdentityTransform extends GeoStreamWrapper {
+  
+  /**
+    * Returns a new array [x, y] (typically in pixels) representing the projected point of the given point.
+    * The point must be specified as a two-element array [longitude, latitude] in degrees.
+    * May return null if the specified point has no defined projected position, such as when the point is outside the clipping bounds of the projection.
+    *
+    * @param point A point specified as a two-dimensional array [longitude, latitude] in degrees.
+    */
+  def apply(point: js.Tuple2[Double, Double]): (js.Tuple2[Double, Double]) | Null = js.native
+  
+  /**
+    * Returns the projection’s current angle, which defaults to 0°.
+    */
+  def angle(): Double = js.native
+  /**
+    * Sets the projection’s post-projection planar rotation angle to the specified angle in degrees and returns the projection.
+    * @param angle The new rotation angle of the projection.
+    */
+  def angle(angle: Double): this.type = js.native
+  
   /**
     * Returns the current viewport clip extent which defaults to null.
     */
@@ -29,6 +49,7 @@ trait GeoIdentityTransform extends GeoStreamWrapper {
     * @param extent Set to null to disable viewport clipping.
     */
   def clipExtent(extent: Null): this.type = js.native
+  
   /**
     * Sets the projection’s scale and translate to fit the specified geographic feature in the center of the given extent.
     * Returns the projection.
@@ -81,6 +102,7 @@ trait GeoIdentityTransform extends GeoStreamWrapper {
     extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]],
     `object`: GeoGeometryObjects
   ): this.type = js.native
+  
   /**
     * Sets the projection’s scale and translate to fit the specified geographic feature in the center of an extent with the given size and top-left corner of [0, 0].
     * Returns the projection.
@@ -127,6 +149,28 @@ trait GeoIdentityTransform extends GeoStreamWrapper {
     * @param object A GeoJson Geometry Object or GeoSphere object supported by d3-geo (An extension of GeoJSON).
     */
   def fitSize(size: js.Tuple2[Double, Double], `object`: GeoGeometryObjects): this.type = js.native
+  
+  /**
+    * Returns a new array [longitude, latitude] in degrees representing the unprojected point of the given projected point.
+    * May return null if the specified point has no defined projected position, such as when the point is outside the clipping bounds of the projection.
+    *
+    * @param point The projected point, specified as a two-element array [x, y] (typically in pixels).
+    */
+  def invert(point: js.Tuple2[Double, Double]): (js.Tuple2[Double, Double]) | Null = js.native
+  
+  /**
+    * Returns the current cartesian clipping function.
+    * Post-clipping occurs on the plane, when a projection is bounded to a certain extent such as a rectangle.
+    */
+  def postclip(): js.Function1[/* stream */ GeoStream_, GeoStream_] = js.native
+  /**
+    * Sets the projection’s cartesian clipping to the specified function and returns the projection.
+    *
+    * @param postclip A cartesian clipping function. Clipping functions are implemented as transformations of a projection stream.
+    * Post-clipping operates on planar coordinates, in pixels.
+    */
+  def postclip(postclip: js.Function1[/* stream */ GeoStream_, GeoStream_]): this.type = js.native
+  
   /**
     * Returns true if x-reflection is enabled, which defaults to false.
     */
@@ -137,6 +181,7 @@ trait GeoIdentityTransform extends GeoStreamWrapper {
     * @param reflect true = reflect x-dimension, false = do not reflect x-dimension.
     */
   def reflectX(reflect: Boolean): this.type = js.native
+  
   /**
     * Returns true if y-reflection is enabled, which defaults to false.
     */
@@ -151,6 +196,7 @@ trait GeoIdentityTransform extends GeoStreamWrapper {
     * @param reflect true = reflect y-dimension, false = do not reflect y-dimension.
     */
   def reflectY(reflect: Boolean): this.type = js.native
+  
   /**
     * Returns the current scale factor.
     *
@@ -164,6 +210,7 @@ trait GeoIdentityTransform extends GeoStreamWrapper {
     * @param scale Scale factor to be used for the projection.
     */
   def scale(scale: Double): this.type = js.native
+  
   /**
     * Returns the current translation offset.
     * The translation offset determines the pixel coordinates of the projection’s center.
@@ -177,4 +224,3 @@ trait GeoIdentityTransform extends GeoStreamWrapper {
     */
   def translate(point: js.Tuple2[Double, Double]): this.type = js.native
 }
-

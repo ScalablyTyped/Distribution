@@ -2,18 +2,21 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Appointments
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the way in which an appointment conflicts with another appointment. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentConflictType")
 @js.native
 object AppointmentConflictType extends js.Object {
-  /* 1 */ val adjacent: typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentConflictType.adjacent with Double = js.native
-  /* 0 */ val none: typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentConflictType.none with Double = js.native
-  /* 2 */ val overlap: typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentConflictType.overlap with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
     typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentConflictType with Double
   ] = js.native
+  
+  /* 1 */ val adjacent: typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentConflictType.adjacent with Double = js.native
+  
+  /* 0 */ val none: typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentConflictType.none with Double = js.native
+  
+  /* 2 */ val overlap: typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentConflictType.overlap with Double = js.native
 }
-

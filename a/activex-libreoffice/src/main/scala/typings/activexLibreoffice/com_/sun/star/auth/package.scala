@@ -2,39 +2,46 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object auth {
+  
   /**
     * indicates failure to authenticate using the specified security context.
     * @since OOo 1.1.2
     */
   type AuthenticationFailedException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * indicates an invalid argument was passed to SSO API.
     * @since OOo 1.1.2
     */
   type InvalidArgumentException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * indicates an attempt was made to use an invalid source or target context.
     * @since OOo 1.1.2
     */
   type InvalidContextException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * indicates an attempt was made to use an invalid or non existent credential.
     * @since OOo 1.1.2
     */
   type InvalidCredentialException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * indicates an invalid principal was specified.
     * @since OOo 1.1.2
     */
   type InvalidPrincipalException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * indicates an underlying persistence implementation failure.
     * @since OOo 1.1.2
     */
   type PersistenceFailureException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * represents a starting point for Single Sign-on interactions.
     *
@@ -52,6 +59,7 @@ package object auth {
     * @since OOo 1.1.2
     */
   type SSOManagerFactory = typings.activexLibreoffice.com_.sun.star.auth.XSSOManagerFactory
+  
   /**
     * provided as a convenience for simple username/password based Single Sign-on implementations which don't provide some sort of authentication
     * information repository.
@@ -60,6 +68,7 @@ package object auth {
     * @since OOo 1.1.2
     */
   type SSOPasswordCache = typings.activexLibreoffice.com_.sun.star.auth.XSSOPasswordCache
+  
   /**
     * indicates an operation unsupported by the implementation.
     * @since OOo 1.1.2

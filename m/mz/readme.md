@@ -10,9 +10,9 @@ modernize node.js to current ECMAScript standards
 | ------------------ | :-------------: |
 | Full name          | mz |
 | Keywords           | promisify, promise, thenify, then, es6 |
-| # releases         | 1 |
-| # dependents       | 1260 |
-| # downloads        | 56471224 |
+| # releases         | 0 |
+| # dependents       | 1317 |
+| # downloads        | 95182363 |
 | # stars            | 54 |
 
 ## Links

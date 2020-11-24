@@ -12,7 +12,7 @@ Get all property keys of an object including non-enumerable and inherited ones
 | Keywords           | get, all, object, property, names, keys, properties, inherited, prototype, enumerable, non-enumerable, reflect, ownkeys, symbol, symbols |
 | # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 1269 |
+| # downloads        | 665 |
 | # stars            | 0 |
 
 ## Links

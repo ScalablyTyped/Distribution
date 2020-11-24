@@ -14,18 +14,21 @@ import typings.typedGithubApi.typedGithubApiStrings.pushed
 import typings.typedGithubApi.typedGithubApiStrings.updated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typed-github-api/dist/user-ref", JSImport.Namespace)
 @js.native
 object userRefMod extends js.Object {
+  
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UserRef * / any */ @js.native
   class UserRefClass protected () extends GitHubRef {
     def this(login: String, options: OptionsOrRef) = this()
-    var login: String = js.native
+    
     def getRepository(name: String): RepositoryRef = js.native
+    
     def loadAsync(): js.Promise[User | Null] = js.native
+    
     def loadRepositoriesAsync(): js.Promise[js.Array[Repository]] = js.native
     def loadRepositoriesAsync(_type: js.UndefOr[scala.Nothing], _sort: js.UndefOr[scala.Nothing], _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
     def loadRepositoriesAsync(_type: all, _sort: created): js.Promise[js.Array[Repository]] = js.native
@@ -80,7 +83,7 @@ object userRefMod extends js.Object {
     def loadRepositoriesAsync_updated(_type: js.UndefOr[scala.Nothing], _sort: updated): js.Promise[js.Array[Repository]] = js.native
     @JSName("loadRepositoriesAsync")
     def loadRepositoriesAsync_updated(_type: js.UndefOr[scala.Nothing], _sort: updated, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    
+    var login: String = js.native
   }
-  
 }
-

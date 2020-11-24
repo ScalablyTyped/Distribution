@@ -10,9 +10,9 @@ Mimic a Node.js HTTP response stream
 | ------------------ | :-------------: |
 | Full name          | mimic-response |
 | Keywords           | mimic, response, stream, http, https, request, get, core |
-| # releases         | 6 |
-| # dependents       | 21 |
-| # downloads        | 210142607 |
+| # releases         | 5 |
+| # dependents       | 27 |
+| # downloads        | 268147937 |
 | # stars            | 0 |
 
 ## Links

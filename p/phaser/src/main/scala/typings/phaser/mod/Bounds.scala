@@ -3,7 +3,7 @@ package typings.phaser.mod
 import typings.phaser.MatterJS.IBound
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Matter.Bounds` module contains methods for creating and manipulating axis-aligned bounding boxes (AABB).
@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Bounds ()
   extends typings.phaser.MatterJS.Bounds
-
 /* static members */
 @JSImport("matter", "Bounds")
 @js.native
 object Bounds extends js.Object {
+  
   /**
     * Returns true if the bounds contains the given point.
     * @method contains
@@ -27,6 +27,7 @@ object Bounds extends js.Object {
     * @return {boolean} True if the bounds contain the point, otherwise false
     */
   def contains(bounds: IBound, point: typings.phaser.MatterJS.Vector): Boolean = js.native
+  
   /**
     * Creates a new axis-aligned bounding box (AABB) for the given vertices.
     * @method create
@@ -34,6 +35,7 @@ object Bounds extends js.Object {
     * @return {IBound} A new bounds object
     */
   def create(vertices: typings.phaser.MatterJS.Vertices): IBound = js.native
+  
   /**
     * Returns true if the two bounds intersect.
     * @method overlaps
@@ -42,6 +44,7 @@ object Bounds extends js.Object {
     * @return {boolean} True if the bounds overlap, otherwise false
     */
   def overlaps(boundsA: IBound, boundsB: IBound): Boolean = js.native
+  
   /**
     * Shifts the bounds to the given position.
     * @method shift
@@ -49,6 +52,7 @@ object Bounds extends js.Object {
     * @param {vector} position
     */
   def shift(bounds: IBound, position: typings.phaser.MatterJS.Vector): Unit = js.native
+  
   /**
     * Translates the bounds by the given vector.
     * @method translate
@@ -56,6 +60,7 @@ object Bounds extends js.Object {
     * @param {vector} vector
     */
   def translate(bounds: IBound, vector: typings.phaser.MatterJS.Vector): Unit = js.native
+  
   /**
     * Updates bounds using the given vertices and extends the bounds given a velocity.
     * @method update
@@ -69,4 +74,3 @@ object Bounds extends js.Object {
     velocity: typings.phaser.MatterJS.Vector
   ): Unit = js.native
 }
-

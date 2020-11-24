@@ -19,7 +19,7 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait XSelectionFunction
@@ -30,8 +30,8 @@ trait XSelectionFunction
      with XMouseClickHandler
      with XMouseMotionHandler
      with XSelectionChangeListener
-
 object XSelectionFunction {
+  
   @scala.inline
   def apply(
     ImplementationName: String,
@@ -61,4 +61,3 @@ object XSelectionFunction {
     __obj.asInstanceOf[XSelectionFunction]
   }
 }
-

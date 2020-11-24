@@ -10,9 +10,9 @@ A list of browser globals that are often used by mistake instead of local variab
 | ------------------ | :-------------: |
 | Full name          | confusing-browser-globals |
 | Keywords           | eslint, globals |
-| # releases         | 23 |
-| # dependents       | 222 |
-| # downloads        | 113424588 |
+| # releases         | 19 |
+| # dependents       | 299 |
+| # downloads        | 184357065 |
 | # stars            | 0 |
 
 ## Links

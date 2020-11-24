@@ -2,22 +2,17 @@ package typings.jupyterlabCoreutils
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/coreutils/lib/markdowncodeblocks", JSImport.Namespace)
 @js.native
 object markdowncodeblocksMod extends js.Object {
+  
   @js.native
   object MarkdownCodeBlocks extends js.Object {
-    @js.native
-    class MarkdownCodeBlock protected () extends js.Object {
-      def this(startLine: Double) = this()
-      var code: String = js.native
-      var endLine: Double = js.native
-      var startLine: Double = js.native
-    }
     
     val CODE_BLOCK_MARKER: /* "```" */ String = js.native
+    
     /**
       * Construct all code snippets from current text
       * (this could be potentially optimized if we can cache and detect differences)
@@ -26,6 +21,7 @@ object markdowncodeblocksMod extends js.Object {
       * @returns An array of MarkdownCodeBlocks.
       */
     def findMarkdownCodeBlocks(text: String): js.Array[MarkdownCodeBlock] = js.native
+    
     /**
       * Check whether the given file extension is a markdown extension
       * @param extension - A file extension
@@ -33,7 +29,16 @@ object markdowncodeblocksMod extends js.Object {
       * @returns true/false depending on whether this is a supported markdown extension
       */
     def isMarkdown(extension: String): Boolean = js.native
+    
+    @js.native
+    class MarkdownCodeBlock protected () extends js.Object {
+      def this(startLine: Double) = this()
+      
+      var code: String = js.native
+      
+      var endLine: Double = js.native
+      
+      var startLine: Double = js.native
+    }
   }
-  
 }
-

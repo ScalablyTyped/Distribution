@@ -2,17 +2,17 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ScreenSize extends js.Object
-
 /**
   * Breakpoint names for different screen sizes.
   */
 @JSGlobal("sap.m.ScreenSize")
 @js.native
 object ScreenSize extends js.Object {
+  
   @js.native
   sealed trait Desktop extends ScreenSize
   
@@ -42,6 +42,4 @@ object ScreenSize extends js.Object {
   
   @js.native
   sealed trait XXSmall extends ScreenSize
-  
 }
-

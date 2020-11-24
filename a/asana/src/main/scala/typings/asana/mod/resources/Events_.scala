@@ -3,7 +3,7 @@ package typings.asana.mod.resources
 import typings.asana.mod.resources.Events.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An _event_ is an object representing a change to a resource that was observed
@@ -36,10 +36,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Events_ extends Resource {
+  
   /**
     * Dispatches a GET request to /events of the API to get a set of recent
     * changes to a resource.
-    * @param  {Number} resourceId  The id of the resource to get events for
+    * @param  {String|Number} resourceId  The id of the resource to get events for
     * @param  {String} [syncToken] Token from a previous sync, if any
     * @return {Promise}            The result of the API call:
     *     {String} sync     The new sync token to use for the next request
@@ -47,10 +48,11 @@ trait Events_ extends Resource {
     *                       may not exist if sync token is new.
     */
   def get(resourceId: String): typings.bluebird.mod.^[Type] = js.native
+  def get(resourceId: String, syncToken: js.UndefOr[scala.Nothing], params: Params): typings.bluebird.mod.^[Type] = js.native
   def get(resourceId: String, syncToken: String): typings.bluebird.mod.^[Type] = js.native
   def get(resourceId: String, syncToken: String, params: Params): typings.bluebird.mod.^[Type] = js.native
   def get(resourceId: Double): typings.bluebird.mod.^[Type] = js.native
+  def get(resourceId: Double, syncToken: js.UndefOr[scala.Nothing], params: Params): typings.bluebird.mod.^[Type] = js.native
   def get(resourceId: Double, syncToken: String): typings.bluebird.mod.^[Type] = js.native
   def get(resourceId: Double, syncToken: String, params: Params): typings.bluebird.mod.^[Type] = js.native
 }
-

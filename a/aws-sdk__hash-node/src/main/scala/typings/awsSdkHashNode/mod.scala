@@ -6,17 +6,20 @@ import typings.awsSdkHashNode.awsSdkHashNodeStrings.utf8
 import typings.awsSdkTypes.cryptoMod.SourceData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/hash-node", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class Hash protected ()
     extends typings.awsSdkTypes.cryptoMod.Hash {
     def this(algorithmIdentifier: String) = this()
     def this(algorithmIdentifier: String, secret: SourceData) = this()
+    
     val hash: js.Any = js.native
+    
     @JSName("update")
     def update_ascii(toHash: SourceData, encoding: ascii): Unit = js.native
     @JSName("update")
@@ -24,6 +27,4 @@ object mod extends js.Object {
     @JSName("update")
     def update_utf8(toHash: SourceData, encoding: utf8): Unit = js.native
   }
-  
 }
-

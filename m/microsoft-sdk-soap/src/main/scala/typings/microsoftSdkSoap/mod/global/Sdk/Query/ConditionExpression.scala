@@ -2,7 +2,7 @@ package typings.microsoftSdkSoap.mod.global.Sdk.Query
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Query.ConditionExpression")
 @js.native
@@ -29,37 +29,45 @@ class ConditionExpression protected () extends js.Object {
     */
   def this(entityName: String, attributeName: String, operator: ConditionOperator) = this()
   def this(entityName: String, attributeName: String, operator: ConditionOperator, values: ValueBase) = this()
+  
   /**
     * Returns the logical name of the attribute in the condition expression.
     */
   def getAttributeName(): String = js.native
+  
   /**
     * Returns the logical name of the entity in the condition expression.
     */
   def getEntityName(): String = js.native
+  
   /**
     * Returns the condition operator.
     */
   def getOperator(): ConditionOperator = js.native
+  
   /**
     * Returns the values for the attribute.
     */
   def getValues(): ValueBase = js.native
+  
   /**
     * Sets the logical name of the attribute in the condition expression.
     * @param name The logical name of the attribute in the condition expression.
     */
   def setAttributeName(name: String): Unit = js.native
+  
   /**
     * Sets the logical name of the entity in the condition expression.
     * @param name The logical name of the entity in the condition expression.
     */
   def setEntityName(name: String): Unit = js.native
+  
   /**
     * Sets the condition operator.
     * @param operator The condition operator.
     */
   def setOperator(operator: ConditionOperator): Unit = js.native
+  
   /**
     * Sets the values for the attribute.
     * @param The value(s) to compare
@@ -79,4 +87,3 @@ class ConditionExpression protected () extends js.Object {
     */
   def setValues(values: ValueBase): Unit = js.native
 }
-

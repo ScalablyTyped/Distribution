@@ -5,47 +5,14 @@ import typings.std.Date
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows users to select time values.
   **/
 @js.native
 trait TimePicker extends js.Object {
-  //#endregion Methods
-  //#region Properties
-  /**
-    * Gets or sets the type of clock to display (12HourClock or 24HourClock). It defaults to the user setting.
-    **/
-  var clock: String = js.native
-  /**
-    * Gets or sets the current time of the TimePicker. Note that the date value is always July 15, 2011.
-    **/
-  var current: Date = js.native
-  /**
-    * Specifies whether the TimePicker is disabled.
-    **/
-  var disabled: Boolean = js.native
-  /**
-    * Gets the DOM element for the TimePicker.
-    **/
-  var element: HTMLElement = js.native
-  /**
-    * Gets or sets the display pattern for the hour. The default hour pattern is hour.integer(2). You can change the hour pattern by changing the number of integers displayed.
-    **/
-  var hourPattern: String = js.native
-  /**
-    * Gets or sets the minute increment. For example, 15 specifies that the TimePicker minute control should display only the choices 00, 15, 30, 45.
-    **/
-  var minuteIncrement: Double = js.native
-  /**
-    * Gets or sets the display pattern for the minute. The default minute pattern is minute.integer(2). You can change the minute pattern by changing the number of integers displayed.
-    **/
-  var minutePattern: String = js.native
-  /**
-    * Gets or sets the display pattern for the period. The default period pattern is period.abbreviated(2). You can change the period pattern by changing the number of integers displayed.
-    **/
-  var periodPattern: String = js.native
+  
   //#endregion Events
   //#region Methods
   /**
@@ -56,6 +23,24 @@ trait TimePicker extends js.Object {
     **/
   def addEventListener(`type`: String, listener: js.Function): Unit = js.native
   def addEventListener(`type`: String, listener: js.Function, capture: Boolean): Unit = js.native
+  
+  //#endregion Methods
+  //#region Properties
+  /**
+    * Gets or sets the type of clock to display (12HourClock or 24HourClock). It defaults to the user setting.
+    **/
+  var clock: String = js.native
+  
+  /**
+    * Gets or sets the current time of the TimePicker. Note that the date value is always July 15, 2011.
+    **/
+  var current: Date = js.native
+  
+  /**
+    * Specifies whether the TimePicker is disabled.
+    **/
+  var disabled: Boolean = js.native
+  
   /**
     * Raises an event of the specified type and with additional properties.
     * @param type The type (name) of the event.
@@ -63,10 +48,32 @@ trait TimePicker extends js.Object {
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
   def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  
   /**
     * Releases resources held by this TimePicker. Call this method when the TimePicker is no longer needed. After calling this method, the TimePicker becomes unusable.
     **/
   def dispose(): Unit = js.native
+  
+  /**
+    * Gets the DOM element for the TimePicker.
+    **/
+  var element: HTMLElement = js.native
+  
+  /**
+    * Gets or sets the display pattern for the hour. The default hour pattern is hour.integer(2). You can change the hour pattern by changing the number of integers displayed.
+    **/
+  var hourPattern: String = js.native
+  
+  /**
+    * Gets or sets the minute increment. For example, 15 specifies that the TimePicker minute control should display only the choices 00, 15, 30, 45.
+    **/
+  var minuteIncrement: Double = js.native
+  
+  /**
+    * Gets or sets the display pattern for the minute. The default minute pattern is minute.integer(2). You can change the minute pattern by changing the number of integers displayed.
+    **/
+  var minutePattern: String = js.native
+  
   //#endregion Constructors
   //#region Events
   /**
@@ -74,6 +81,12 @@ trait TimePicker extends js.Object {
     * @param eventInfo An object that contains information about the event.
     **/
   def onchange(eventInfo: CustomEvent[_]): Unit = js.native
+  
+  /**
+    * Gets or sets the display pattern for the period. The default period pattern is period.abbreviated(2). You can change the period pattern by changing the number of integers displayed.
+    **/
+  var periodPattern: String = js.native
+  
   /**
     * Removes a listener for the specified event.
     * @param type The name of the event for which to remove a listener.
@@ -83,4 +96,3 @@ trait TimePicker extends js.Object {
   def removeEventListener(`type`: String, listener: js.Function): Unit = js.native
   def removeEventListener(`type`: String, listener: js.Function, useCapture: js.Any): Unit = js.native
 }
-

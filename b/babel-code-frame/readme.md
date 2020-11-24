@@ -11,8 +11,8 @@ Generate errors that contain a code frame that point to source locations.
 | Full name          | babel-code-frame |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 221 |
-| # downloads        | 344042169 |
+| # dependents       | 228 |
+| # downloads        | 384923525 |
 | # stars            | 5 |
 
 ## Links

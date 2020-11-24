@@ -7,10 +7,9 @@ import typings.aceBuilds.mod.Ace.SyntaxMode
 import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableEditSession
   extends Instantiable1[(/* text */ Document) | (/* text */ String), EditSession]
      with Instantiable2[(/* text */ Document) | (/* text */ String), /* mode */ SyntaxMode, EditSession]
-

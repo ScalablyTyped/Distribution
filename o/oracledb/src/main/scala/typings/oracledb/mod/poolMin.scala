@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The minimum number of connections a connection pool maintains, even when there is no activity to the target database.
@@ -21,4 +21,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "poolMin")
 @js.native
 object poolMin extends TopLevel[Double]
-

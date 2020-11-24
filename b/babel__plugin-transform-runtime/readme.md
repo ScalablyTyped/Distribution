@@ -10,9 +10,9 @@ Externalise references to helpers and builtins, automatically polyfilling your c
 | ------------------ | :-------------: |
 | Full name          | @babel/plugin-transform-runtime |
 | Keywords           | babel-plugin |
-| # releases         | 37 |
-| # dependents       | 1816 |
-| # downloads        | 218655843 |
+| # releases         | 23 |
+| # dependents       | 2200 |
+| # downloads        | 295358692 |
 | # stars            | 2 |
 
 ## Links

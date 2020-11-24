@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Scanners
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ImageScannerColorMode extends js.Object
-
 /** Specifies the color modes for the scan source. */
 @JSGlobal("Windows.Devices.Scanners.ImageScannerColorMode")
 @js.native
 object ImageScannerColorMode extends js.Object {
+  
   /** The device automatically detects the right color mode based on the scan content. In this case the decision between color, grayscale and black and white for example relies on the device, and not the app. */
   @js.native
   sealed trait autoColor extends ImageScannerColorMode
@@ -26,6 +26,4 @@ object ImageScannerColorMode extends js.Object {
   /** 1 bit bi-tonal, also called monochrome or ‘black and white’ (1 channel at 1 bit per channel). */
   @js.native
   sealed trait monochrome extends ImageScannerColorMode
-  
 }
-

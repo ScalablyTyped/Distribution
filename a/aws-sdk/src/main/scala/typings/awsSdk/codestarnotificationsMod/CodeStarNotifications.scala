@@ -1,17 +1,19 @@
 package typings.awsSdk.codestarnotificationsMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CodeStarNotifications extends Service {
+  
   @JSName("config")
   var config_CodeStarNotifications: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a notification rule for a resource. The rule specifies the events you want notifications about and the targets (such as SNS topics) where you want to receive them.
     */
@@ -25,6 +27,7 @@ trait CodeStarNotifications extends Service {
     params: CreateNotificationRuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateNotificationRuleResult, Unit]
   ): Request[CreateNotificationRuleResult, AWSError] = js.native
+  
   /**
     * Deletes a notification rule for a resource.
     */
@@ -38,6 +41,7 @@ trait CodeStarNotifications extends Service {
     params: DeleteNotificationRuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteNotificationRuleResult, Unit]
   ): Request[DeleteNotificationRuleResult, AWSError] = js.native
+  
   /**
     * Deletes a specified target for notifications.
     */
@@ -51,6 +55,7 @@ trait CodeStarNotifications extends Service {
     params: DeleteTargetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteTargetResult, Unit]
   ): Request[DeleteTargetResult, AWSError] = js.native
+  
   /**
     * Returns information about a specified notification rule.
     */
@@ -64,6 +69,7 @@ trait CodeStarNotifications extends Service {
     params: DescribeNotificationRuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeNotificationRuleResult, Unit]
   ): Request[DescribeNotificationRuleResult, AWSError] = js.native
+  
   /**
     * Returns information about the event types available for configuring notifications.
     */
@@ -77,6 +83,7 @@ trait CodeStarNotifications extends Service {
     params: ListEventTypesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListEventTypesResult, Unit]
   ): Request[ListEventTypesResult, AWSError] = js.native
+  
   /**
     * Returns a list of the notification rules for an AWS account.
     */
@@ -90,6 +97,7 @@ trait CodeStarNotifications extends Service {
     params: ListNotificationRulesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListNotificationRulesResult, Unit]
   ): Request[ListNotificationRulesResult, AWSError] = js.native
+  
   /**
     * Returns a list of the tags associated with a notification rule.
     */
@@ -103,6 +111,7 @@ trait CodeStarNotifications extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResult, Unit]
   ): Request[ListTagsForResourceResult, AWSError] = js.native
+  
   /**
     * Returns a list of the notification rule targets for an AWS account.
     */
@@ -116,6 +125,7 @@ trait CodeStarNotifications extends Service {
     params: ListTargetsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTargetsResult, Unit]
   ): Request[ListTargetsResult, AWSError] = js.native
+  
   /**
     * Creates an association between a notification rule and an SNS topic so that the associated target can receive notifications when the events described in the rule are triggered.
     */
@@ -129,6 +139,7 @@ trait CodeStarNotifications extends Service {
     params: SubscribeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SubscribeResult, Unit]
   ): Request[SubscribeResult, AWSError] = js.native
+  
   /**
     * Associates a set of provided tags with a notification rule.
     */
@@ -142,6 +153,7 @@ trait CodeStarNotifications extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResult, Unit]
   ): Request[TagResourceResult, AWSError] = js.native
+  
   /**
     * Removes an association between a notification rule and an Amazon SNS topic so that subscribers to that topic stop receiving notifications when the events described in the rule are triggered.
     */
@@ -155,6 +167,7 @@ trait CodeStarNotifications extends Service {
     params: UnsubscribeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UnsubscribeResult, Unit]
   ): Request[UnsubscribeResult, AWSError] = js.native
+  
   /**
     * Removes the association between one or more provided tags and a notification rule.
     */
@@ -168,6 +181,7 @@ trait CodeStarNotifications extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResult, Unit]
   ): Request[UntagResourceResult, AWSError] = js.native
+  
   /**
     * Updates a notification rule for a resource. You can change the events that trigger the notification rule, the status of the rule, and the targets that receive the notifications.  To add or remove tags for a notification rule, you must use TagResource and UntagResource. 
     */
@@ -182,4 +196,3 @@ trait CodeStarNotifications extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateNotificationRuleResult, Unit]
   ): Request[UpdateNotificationRuleResult, AWSError] = js.native
 }
-

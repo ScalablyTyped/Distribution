@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait HorizontalAlignment extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.HorizontalAlignment")
 @js.native
 object HorizontalAlignment extends js.Object {
+  
   //Used to align text horizontally on center of node/connector
   @js.native
   sealed trait Center extends HorizontalAlignment
@@ -21,6 +21,4 @@ object HorizontalAlignment extends js.Object {
   //Used to align text horizontally on right side of node/connector
   @js.native
   sealed trait Right extends HorizontalAlignment
-  
 }
-

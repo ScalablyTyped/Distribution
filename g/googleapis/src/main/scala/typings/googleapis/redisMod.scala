@@ -12,24 +12,32 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/redis", JSImport.Namespace)
 @js.native
 object redisMod extends js.Object {
+  
   def redis(options: Options): Redis = js.native
   def redis(options: typings.googleapis.redisV1beta1Mod.redisV1beta1.Options): typings.googleapis.redisV1beta1Mod.redisV1beta1.Redis = js.native
   @JSName("redis")
   def redis_v1(version: v1): Redis = js.native
   @JSName("redis")
   def redis_v1beta1(version: v1beta1): typings.googleapis.redisV1beta1Mod.redisV1beta1.Redis = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Redis {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v1
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Redis]
+            ]
     
     @js.native
     class v1beta1 protected ()
@@ -37,13 +45,6 @@ object redisMod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    object v1
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Redis]
-            ]
-    
     @js.native
     object v1beta1
       extends TopLevel[
@@ -53,11 +54,11 @@ object redisMod extends js.Object {
                 typings.googleapis.redisV1beta1Mod.redisV1beta1.Redis
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -85,8 +86,5 @@ object redisMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

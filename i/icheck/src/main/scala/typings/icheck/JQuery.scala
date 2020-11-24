@@ -12,10 +12,11 @@ import typings.icheck.icheckStrings.uncheck
 import typings.icheck.icheckStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   def iCheck(): this.type = js.native
   def iCheck(options: Options): this.type = js.native
   def iCheck[T /* <: /* keyof icheck.ICheck.Methods */ check | uncheck | toggle | disable | enable | indeterminate | determinate | update | destroy */](method: T): this.type = js.native
@@ -24,4 +25,3 @@ trait JQuery extends js.Object {
     callback: /* import warning: importer.ImportType#apply Failed type conversion: icheck.ICheck.Methods[T] */ js.Any
   ): this.type = js.native
 }
-

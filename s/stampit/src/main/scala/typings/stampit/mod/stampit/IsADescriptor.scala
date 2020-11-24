@@ -2,7 +2,7 @@ package typings.stampit.mod.stampit
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @internal Checks that a type is a ExtendedDescriptor (except `any` and `unknown`).
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
   - typings.stampit.stampitBooleans.`true`
 */
 trait IsADescriptor[Type] extends js.Object
-

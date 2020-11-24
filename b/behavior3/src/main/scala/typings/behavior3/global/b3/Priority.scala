@@ -3,7 +3,7 @@ package typings.behavior3.global.b3
 import typings.behavior3.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Priority ticks its children sequentially until one of them returns
@@ -20,4 +20,3 @@ class Priority ()
   extends typings.behavior3.b3.Priority {
   def this(hasChildren: `0`) = this()
 }
-

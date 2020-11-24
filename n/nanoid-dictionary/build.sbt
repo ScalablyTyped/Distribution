@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nanoid-dictionary"
-version := "3.0-dt-20200707Z-a6500d"
+version := "4.1-dt-20201020Z-5c085f"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

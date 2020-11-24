@@ -12,7 +12,7 @@ import typings.jsrsasign.jsrsasignStrings.EC
 import typings.jsrsasign.jsrsasignStrings.RSA
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * class for RSA/ECC/DSA key utility
@@ -75,12 +75,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class KEYUTIL ()
   extends typings.jsrsasign.jsrsasign.KEYUTIL
-
 /* static members */
 @JSGlobal("jsrsasign.KEYUTIL")
 @js.native
 object KEYUTIL extends js.Object {
-  val version: String = js.native
+  
   @JSName("generateKeypair")
   def generateKeypair_EC(alg: EC, keylenOrCurve: String): PrvKeyObj_ = js.native
   @JSName("generateKeypair")
@@ -111,6 +110,7 @@ object KEYUTIL extends js.Object {
     */
   @JSName("generateKeypair")
   def generateKeypair_RSA(alg: RSA, keylenOrCurve: Double): PrvKeyObj_ = js.native
+  
   def getJWKFromKey(keyObj: DSA): JsonWebKey = js.native
   def getJWKFromKey(keyObj: ECDSA): JsonWebKey = js.native
   /**
@@ -133,6 +133,7 @@ object KEYUTIL extends js.Object {
     * jwkPub2.kid = KJUR.jws.JWS.getJWKthumbprint(jwkPub2);
     */
   def getJWKFromKey(keyObj: typings.jsrsasign.jsrsasign.RSAKey): JsonWebKey = js.native
+  
   def getKey(param: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
   def getKey(param: String, passcode: js.UndefOr[scala.Nothing], hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
   def getKey(param: String, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
@@ -233,18 +234,21 @@ object KEYUTIL extends js.Object {
   def getKey(param: typings.jsrsasign.jsrsasign.RSAKey, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
   def getKey(param: typings.jsrsasign.jsrsasign.RSAKey, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
   def getKey(param: typings.jsrsasign.jsrsasign.RSAKey, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  
   /**
     * get RSAKey/DSA/ECDSA public key object from hexadecimal string of PKCS#10 CSR
     * @param csrHex hexadecimal string of PKCS#10 CSR
     * @return RSAKey/DSA/ECDSA public key object
     */
   def getKeyFromCSRHex(csrHex: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  
   /**
     * get RSAKey/DSA/ECDSA public key object from PEM formatted PKCS#10 CSR string
     * @param csrPEM PEM formatted PKCS#10 CSR string
     * @return RSAKey/DSA/ECDSA public key object
     */
   def getKeyFromCSRPEM(csrPEM: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  
   /**
     * get PEM formatted private or public key file from a RSA/ECDSA/DSA key object
     * @param keyObjOrHex key object `RSAKey`, `KJUR.crypto.ECDSA` or `KJUR.crypto.DSA` to encode to
@@ -277,7 +281,8 @@ object KEYUTIL extends js.Object {
     encAlg: js.UndefOr[String],
     hexType: js.UndefOr[String],
     ivsaltHex: js.UndefOr[String]
-  ): Unit = js.native
+  ): String = js.native
+  
   /**
     * parse hexadecimal string of PKCS#10 CSR (certificate signing request)
     * @param csrHex hexadecimal string of PKCS#10 CSR
@@ -289,5 +294,6 @@ object KEYUTIL extends js.Object {
     *
     */
   def parseCSRHex(csrHex: String): CSRHexResult = js.native
+  
+  val version: String = js.native
 }
-

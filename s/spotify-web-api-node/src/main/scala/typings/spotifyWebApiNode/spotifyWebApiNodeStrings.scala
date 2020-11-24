@@ -3,9 +3,40 @@ package typings.spotifyWebApiNode
 import typings.spotifyWebApiNode.mod.SearchType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spotifyWebApiNodeStrings {
+  
+  @scala.inline
+  def album: album = "album".asInstanceOf[album]
+  
+  @scala.inline
+  def artist: artist = "artist".asInstanceOf[artist]
+  
+  @scala.inline
+  def audio: audio = "audio".asInstanceOf[audio]
+  
+  @scala.inline
+  def context: context = "context".asInstanceOf[context]
+  
+  @scala.inline
+  def long_term: long_term = "long_term".asInstanceOf[long_term]
+  
+  @scala.inline
+  def medium_term: medium_term = "medium_term".asInstanceOf[medium_term]
+  
+  @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  
+  @scala.inline
+  def playlist: playlist = "playlist".asInstanceOf[playlist]
+  
+  @scala.inline
+  def short_term: short_term = "short_term".asInstanceOf[short_term]
+  
+  @scala.inline
+  def track: track = "track".asInstanceOf[track]
+  
   @js.native
   sealed trait album extends SearchType
   
@@ -35,26 +66,4 @@ object spotifyWebApiNodeStrings {
   
   @js.native
   sealed trait track extends SearchType
-  
-  @scala.inline
-  def album: album = "album".asInstanceOf[album]
-  @scala.inline
-  def artist: artist = "artist".asInstanceOf[artist]
-  @scala.inline
-  def audio: audio = "audio".asInstanceOf[audio]
-  @scala.inline
-  def context: context = "context".asInstanceOf[context]
-  @scala.inline
-  def long_term: long_term = "long_term".asInstanceOf[long_term]
-  @scala.inline
-  def medium_term: medium_term = "medium_term".asInstanceOf[medium_term]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def playlist: playlist = "playlist".asInstanceOf[playlist]
-  @scala.inline
-  def short_term: short_term = "short_term".asInstanceOf[short_term]
-  @scala.inline
-  def track: track = "track".asInstanceOf[track]
 }
-

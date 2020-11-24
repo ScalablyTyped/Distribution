@@ -2,7 +2,7 @@ package typings.verror.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * SError is like VError, but stricter about types.  You cannot pass "null" or
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSImport("verror", "SError")
 @js.native
 class SError () extends VError
-

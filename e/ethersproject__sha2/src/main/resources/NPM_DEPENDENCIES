@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ethersproject/sha2" : "5.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ethersproject/sha2" : "5.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

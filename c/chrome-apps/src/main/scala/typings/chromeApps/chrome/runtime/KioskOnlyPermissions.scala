@@ -3,7 +3,7 @@ package typings.chromeApps.chrome.runtime
 import typings.chromeApps.chromeAppsStrings.audio_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.chromeApps.chromeAppsStrings.audio_
@@ -12,15 +12,17 @@ import scala.scalajs.js.annotation._
   - typings.chromeApps.chromeAppsStrings.virtualKeyboard
 */
 trait KioskOnlyPermissions extends Permission
-
 object KioskOnlyPermissions {
+  
   @scala.inline
   def audio: audio_ = "audio".asInstanceOf[audio_]
+  
   @scala.inline
   def networkingDotonc: typings.chromeApps.chromeAppsStrings.networkingDotonc = "networking.onc".asInstanceOf[typings.chromeApps.chromeAppsStrings.networkingDotonc]
+  
   @scala.inline
   def systemDotpowerSource: typings.chromeApps.chromeAppsStrings.systemDotpowerSource = "system.powerSource".asInstanceOf[typings.chromeApps.chromeAppsStrings.systemDotpowerSource]
+  
   @scala.inline
   def virtualKeyboard: typings.chromeApps.chromeAppsStrings.virtualKeyboard = "virtualKeyboard".asInstanceOf[typings.chromeApps.chromeAppsStrings.virtualKeyboard]
 }
-

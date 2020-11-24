@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is the basic interface for managing a set of SDBC drivers.
@@ -24,8 +24,8 @@ trait XDriverManager2
   extends XEnumerationAccess
      with XDriverManager
      with XDriverAccess
-
 object XDriverManager2 {
+  
   @scala.inline
   def apply(
     ElementType: `type`,
@@ -46,4 +46,3 @@ object XDriverManager2 {
     __obj.asInstanceOf[XDriverManager2]
   }
 }
-

@@ -3,12 +3,12 @@ package typings.phaser.spine
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FakeTexture extends Texture
-
 object FakeTexture {
+  
   @scala.inline
   def apply(
     _image: HTMLImageElement,
@@ -21,4 +21,3 @@ object FakeTexture {
     __obj.asInstanceOf[FakeTexture]
   }
 }
-

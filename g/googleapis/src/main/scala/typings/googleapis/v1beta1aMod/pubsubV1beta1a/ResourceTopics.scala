@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/pubsub/v1beta1a", "pubsub_v1beta1a.Resource$Topics")
 @js.native
 class ResourceTopics protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * pubsub.topics.create
     * @desc Creates the given topic with the given name.
@@ -41,6 +43,7 @@ class ResourceTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTopic]
   ): Unit = js.native
+  
   /**
     * pubsub.topics.delete
     * @desc Deletes the topic with the given name. Returns NOT_FOUND if the
@@ -71,6 +74,7 @@ class ResourceTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * pubsub.topics.get
     * @desc Gets the configuration of a topic. Since the topic only has the
@@ -102,6 +106,7 @@ class ResourceTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTopic]
   ): Unit = js.native
+  
   /**
     * pubsub.topics.list
     * @desc Lists matching topics.
@@ -132,6 +137,7 @@ class ResourceTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListTopicsResponse]
   ): Unit = js.native
+  
   /**
     * pubsub.topics.publish
     * @desc Adds a message to the topic.  Returns NOT_FOUND if the topic does
@@ -161,6 +167,7 @@ class ResourceTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * pubsub.topics.publishBatch
     * @desc Adds one or more messages to the topic. Returns NOT_FOUND if the
@@ -194,4 +201,3 @@ class ResourceTopics protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPublishBatchResponse]
   ): Unit = js.native
 }
-

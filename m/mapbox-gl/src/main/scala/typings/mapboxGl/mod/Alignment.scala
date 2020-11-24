@@ -2,7 +2,7 @@ package typings.mapboxGl.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.mapboxGl.mapboxGlStrings.map
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.mapboxGl.mapboxGlStrings.auto
 */
 trait Alignment extends js.Object
-
 object Alignment {
+  
   @scala.inline
   def auto: typings.mapboxGl.mapboxGlStrings.auto = "auto".asInstanceOf[typings.mapboxGl.mapboxGlStrings.auto]
+  
   @scala.inline
   def map: typings.mapboxGl.mapboxGlStrings.map = "map".asInstanceOf[typings.mapboxGl.mapboxGlStrings.map]
+  
   @scala.inline
   def viewport: typings.mapboxGl.mapboxGlStrings.viewport = "viewport".asInstanceOf[typings.mapboxGl.mapboxGlStrings.viewport]
 }
-

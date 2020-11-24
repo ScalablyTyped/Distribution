@@ -3,7 +3,7 @@ package typings.angularCompiler.srcCompilerMod
 import typings.angularCompiler.r3AstMod.Reference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compiler", "TmplAstReference")
 @js.native
@@ -16,4 +16,3 @@ class TmplAstReference protected () extends Reference {
     valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
 }
-

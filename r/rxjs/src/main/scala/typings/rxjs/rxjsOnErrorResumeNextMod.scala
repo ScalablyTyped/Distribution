@@ -2,11 +2,12 @@ package typings.rxjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/operators/onErrorResumeNext", JSImport.Namespace)
 @js.native
 object rxjsOnErrorResumeNextMod extends js.Object {
+  
   def onErrorResumeNext[T](): js.Any = js.native
   def onErrorResumeNext[T, R](
     array: js.Array[
@@ -46,4 +47,3 @@ object rxjsOnErrorResumeNextMod extends js.Object {
     v: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any
   ): js.Any = js.native
 }
-

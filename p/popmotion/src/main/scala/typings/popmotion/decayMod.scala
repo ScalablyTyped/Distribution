@@ -1,18 +1,14 @@
 package typings.popmotion
 
-import typings.popmotion.actionMod.Action
-import typings.popmotion.actionTypesMod.ColdSubscription
-import typings.popmotion.decayTypesMod.DecayProps
-import typings.popmotion.vectorMod.ActionFactory
+import typings.popmotion.typesMod.Animation
+import typings.popmotion.typesMod.DecayOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("popmotion/lib/animations/decay", JSImport.Namespace)
+@JSImport("popmotion/lib/animations/generators/decay", JSImport.Namespace)
 @js.native
 object decayMod extends js.Object {
-  val default: ActionFactory = js.native
-  def decaySole(): Action[ColdSubscription] = js.native
-  def decaySole(props: DecayProps): Action[ColdSubscription] = js.native
+  
+  def decay(hasVelocityFromPowerTimeConstantRestDeltaModifyTarget: DecayOptions): Animation[Double] = js.native
 }
-

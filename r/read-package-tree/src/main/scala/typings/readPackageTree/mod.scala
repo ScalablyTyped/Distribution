@@ -5,11 +5,19 @@ import typings.readPackageTree.readPackageTreeBooleans.`true`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("read-package-tree", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def apply(root: String, cb: js.Function2[/* er */ Error | Null, /* data */ Node, Unit]): Unit = js.native
+  def apply(
+    root: String,
+    filterWith: js.Function2[/* node */ Node, /* kidName */ String, js.UndefOr[Unit | Boolean]],
+    cb: js.Function2[/* er */ Error | Null, /* data */ Node, Unit]
+  ): Unit = js.native
+  
   @js.native
   class Link protected () extends Node {
     def this(
@@ -28,8 +36,10 @@ object mod extends js.Object {
       er: Error,
       cache: StringDictionary[Node]
     ) = this()
+    
     @JSName("isLink")
     var isLink_Link: `true` = js.native
+    
     var target: Node = js.native
   }
   
@@ -53,23 +63,24 @@ object mod extends js.Object {
       cache: StringDictionary[Node],
       fromLink: Boolean
     ) = this()
+    
     @JSName("package")
     var _package: js.Any = js.native
+    
     var children: js.Array[Node] = js.native
+    
     var error: Error | Null = js.native
+    
     var id: Double = js.native
+    
     var isLink: Boolean = js.native
+    
     var name: String = js.native
+    
     var parent: Node | Null = js.native
+    
     var path: String = js.native
+    
     var realpath: String = js.native
   }
-  
-  def apply(root: String, cb: js.Function2[/* er */ Error | Null, /* data */ Node, Unit]): Unit = js.native
-  def apply(
-    root: String,
-    filterWith: js.Function2[/* node */ Node, /* kidName */ String, js.UndefOr[Unit | Boolean]],
-    cb: js.Function2[/* er */ Error | Null, /* data */ Node, Unit]
-  ): Unit = js.native
 }
-

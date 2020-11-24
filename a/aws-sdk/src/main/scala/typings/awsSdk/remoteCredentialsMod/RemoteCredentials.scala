@@ -3,7 +3,7 @@ package typings.awsSdk.remoteCredentialsMod
 import typings.awsSdk.credentialsMod.Credentials
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/lib/credentials/remote_credentials", "RemoteCredentials")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class RemoteCredentials () extends Credentials {
   def this(options: RemoteCredentialsOptions) = this()
 }
-

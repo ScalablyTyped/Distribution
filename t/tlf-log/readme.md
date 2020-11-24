@@ -10,9 +10,9 @@ A small logging library
 | ------------------ | :-------------: |
 | Full name          | tlf-log |
 | Keywords           | logging |
-| # releases         | 7 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 618 |
+| # downloads        | 560 |
 | # stars            | 0 |
 
 ## Links

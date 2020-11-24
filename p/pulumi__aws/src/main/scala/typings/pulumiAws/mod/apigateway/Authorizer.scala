@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "apigateway.Authorizer")
 @js.native
@@ -23,11 +23,11 @@ class Authorizer protected ()
   def this(name: String, args: AuthorizerArgs) = this()
   def this(name: String, args: AuthorizerArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "apigateway.Authorizer")
 @js.native
 object Authorizer extends js.Object {
+  
   /**
     * Get an existing Authorizer resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object Authorizer extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.apigatewayAuthorizerMod.Authorizer = js.native
   def get(name: String, id: Input[ID], state: AuthorizerState): typings.pulumiAws.apigatewayAuthorizerMod.Authorizer = js.native
   def get(name: String, id: Input[ID], state: AuthorizerState, opts: CustomResourceOptions): typings.pulumiAws.apigatewayAuthorizerMod.Authorizer = js.native
+  
   /**
     * Returns true if the given object is an instance of Authorizer.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/authorizer.Authorizer */ Boolean = js.native
 }
-

@@ -11,8 +11,8 @@ List of known void HTML elements
 | Full name          | html-void-elements |
 | Keywords           | html, void, tag, name, element, tagname, w3c, whatwg |
 | # releases         | 3 |
-| # dependents       | 11 |
-| # downloads        | 10345578 |
+| # dependents       | 15 |
+| # downloads        | 33746895 |
 | # stars            | 0 |
 
 ## Links

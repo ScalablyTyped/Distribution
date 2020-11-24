@@ -2,13 +2,12 @@ package typings.npmRunPath.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("npm-run-path", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: Remove this for the next major release
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof npmRunPath */ js.Any = js.native
+  
   /**
   	Get your [PATH](https://en.wikipedia.org/wiki/PATH_(variable)) prepended with locally installed binaries.
   	@returns The augmented path string.
@@ -28,10 +27,13 @@ object ^ extends js.Object {
   	*/
   def apply(): String = js.native
   def apply(options: RunPathOptions): String = js.native
+  
+  // TODO: Remove this for the next major release
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof npmRunPath */ js.Any = js.native
+  
   /**
   	@returns The augmented [`process.env`](https://nodejs.org/api/process.html#process_process_env) object.
   	*/
   def env(): ProcessEnv = js.native
   def env(options: EnvOptions): ProcessEnv = js.native
 }
-

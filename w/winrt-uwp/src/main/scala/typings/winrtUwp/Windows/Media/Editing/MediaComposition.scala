@@ -14,26 +14,27 @@ import typings.winrtUwp.Windows.Media.Transcoding.TranscodeFailureReason
 import typings.winrtUwp.Windows.Storage.IStorageFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a collection of media clips and background audio tracks. */
 @js.native
 trait MediaComposition extends js.Object {
+  
   /** A collection of background audio tracks for playback in the media composition. */
   var backgroundAudioTracks: IVector[BackgroundAudioTrack] = js.native
+  
   /** A collection of media clips for playback in the media composition. */
   var clips: IVector[MediaClip] = js.native
-  /** The total playback time of the media composition. */
-  var duration: Double = js.native
-  /** Gets the list of overlay layers for the media composition. */
-  var overlayLayers: IVector[MediaOverlayLayer] = js.native
-  /** An associative collection for storing custom properties associated with the media composition. */
-  var userData: IMap[String, String] = js.native
+  
   /**
     * Create a new default media encoding profile which can be modified if necessary.
     * @return The newly created MediaEncodingProfile .
     */
   def createDefaultEncodingProfile(): MediaEncodingProfile = js.native
+  
+  /** The total playback time of the media composition. */
+  var duration: Double = js.native
+  
   /**
     * Creates a new MediaStreamSource .
     * @return The newly created MediaStreamSource .
@@ -45,6 +46,7 @@ trait MediaComposition extends js.Object {
     * @return The newly created MediaStreamSource .
     */
   def generateMediaStreamSource(encodingProfile: MediaEncodingProfile): MediaStreamSource = js.native
+  
   /**
     * Creates a new MediaStreamSource used to preview the edited media.
     * @param scaledWidth The width of the preview media.
@@ -52,6 +54,7 @@ trait MediaComposition extends js.Object {
     * @return The new MediaStreamSource used to preview the edited media.
     */
   def generatePreviewMediaStreamSource(scaledWidth: Double, scaledHeight: Double): MediaStreamSource = js.native
+  
   /**
     * Asynchronously gets an image stream that represents a thumbnail of the media composition.
     * @param timeFromStart Specifies the point in the timeline of the MediaComposition from which to render the thumbnail, offset from the start of the MediaComposition.
@@ -66,6 +69,7 @@ trait MediaComposition extends js.Object {
     scaledHeight: Double,
     framePrecision: VideoFramePrecision
   ): IPromiseWithIAsyncOperation[ImageStream] = js.native
+  
   /**
     * Asynchronously gets a vector view of thumbnails of the media composition.
     * @param timesFromStart Specifies the points in the timeline of the MediaComposition from which to render the thumbnails, offset from the start of the MediaComposition.
@@ -80,6 +84,10 @@ trait MediaComposition extends js.Object {
     scaledHeight: Double,
     framePrecision: VideoFramePrecision
   ): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  
+  /** Gets the list of overlay layers for the media composition. */
+  var overlayLayers: IVector[MediaOverlayLayer] = js.native
+  
   /**
     * Asynchronously renders the MediaComposition to the specified file.
     * @param destination The file to which this MediaComposition is rendered.
@@ -105,11 +113,14 @@ trait MediaComposition extends js.Object {
     trimmingPreference: MediaTrimmingPreference,
     encodingProfile: MediaEncodingProfile
   ): IPromiseWithIAsyncOperationWithProgress[TranscodeFailureReason, Double] = js.native
+  
   /**
     * Asynchronously serializes the MediaComposition to disk so that it can be loaded and modified in the future.
     * @param file The file to which the MediaComposition is saved.
     * @return An async action which can be used to track the success or failure of the operation.
     */
   def saveAsync(file: IStorageFile): IPromiseWithIAsyncAction = js.native
+  
+  /** An associative collection for storing custom properties associated with the media composition. */
+  var userData: IMap[String, String] = js.native
 }
-

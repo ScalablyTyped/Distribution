@@ -2,7 +2,7 @@ package typings.behavior3.b3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The BehaviorTree class, as the name implies, represents the Behavior Tree
@@ -64,6 +64,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BehaviorTree extends js.Object {
+  
   /**
     * This method dump the current BT into a data structure.
     *
@@ -72,6 +73,7 @@ trait BehaviorTree extends js.Object {
     *
     */
   def dump(): js.Any = js.native
+  
   /**
     * This method loads a Behavior Tree from a data structure, populating this
     * object with the provided data. Notice that, the data structure must
@@ -99,6 +101,7 @@ trait BehaviorTree extends js.Object {
     */
   def load(data: js.Any): Unit = js.native
   def load(data: js.Any, names: js.Any): Unit = js.native
+  
   /**
     * Propagates the tick signal through the tree, starting from the root.
     *
@@ -119,4 +122,3 @@ trait BehaviorTree extends js.Object {
     */
   def tick(target: js.Any, blackboard: Blackboard): String = js.native
 }
-

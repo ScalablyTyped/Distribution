@@ -2,11 +2,12 @@ package typings.parsimmon.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("parsimmon", "seq")
 @js.native
 object seq extends js.Object {
+  
   /**
     * accepts a variable number of parsers that it expects to find in order, yielding an array of the results.
     */
@@ -30,4 +31,3 @@ object seq extends js.Object {
     p7: Parser[Z]
   ): Parser[js.Tuple7[T, U, V, W, X, Y, Z]] = js.native
 }
-

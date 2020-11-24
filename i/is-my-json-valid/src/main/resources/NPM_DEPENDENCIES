@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-my-json-valid" : "2.20.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-my-json-valid" : "2.20.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

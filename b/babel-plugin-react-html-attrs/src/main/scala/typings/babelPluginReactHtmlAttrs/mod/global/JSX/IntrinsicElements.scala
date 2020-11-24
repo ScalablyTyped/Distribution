@@ -169,192 +169,367 @@ import typings.std.SVGUseElement
 import typings.std.SVGViewElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IntrinsicElements extends js.Object {
+  
   // HTML
   var a: DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement] = js.native
+  
   var abbr: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var address: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var animate: SVGProps[SVGElement] = js.native
+  
    // TODO: It is SVGAnimateElement but is not in TypeScript's lib.dom.d.ts for now.
   var animateMotion: SVGProps[SVGElement] = js.native
+  
   var animateTransform: SVGProps[SVGElement] = js.native
+  
   var area: DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement] = js.native
+  
   var article: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var aside: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var audio: DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement] = js.native
+  
   var b: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var base: DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement] = js.native
+  
   var bdi: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var bdo: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var big: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var blockquote: DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var body: DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement] = js.native
+  
   var br: DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement] = js.native
+  
   var button: DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement] = js.native
+  
   var canvas: DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement] = js.native
+  
   var caption: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
    // TODO: It is SVGAnimateTransformElement but is not in TypeScript's lib.dom.d.ts for now.
   var circle: SVGProps[SVGCircleElement] = js.native
+  
   var cite: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var clipPath: SVGProps[SVGClipPathElement] = js.native
+  
   var code: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var col: DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement] = js.native
+  
   var colgroup: DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement] = js.native
+  
   var data: DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement] = js.native
+  
   var datalist: DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement] = js.native
+  
   var dd: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var defs: SVGProps[SVGDefsElement] = js.native
+  
   var del: DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var desc: SVGProps[SVGDescElement] = js.native
+  
   var details: DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var dfn: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var dialog: DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement] = js.native
+  
   var div: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement] = js.native
+  
   var dl: DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement] = js.native
+  
   var dt: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var ellipse: SVGProps[SVGEllipseElement] = js.native
+  
   var em: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var embed: DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement] = js.native
+  
   var feBlend: SVGProps[SVGFEBlendElement] = js.native
+  
   var feColorMatrix: SVGProps[SVGFEColorMatrixElement] = js.native
+  
   var feComponentTransfer: SVGProps[SVGFEComponentTransferElement] = js.native
+  
   var feComposite: SVGProps[SVGFECompositeElement] = js.native
+  
   var feConvolveMatrix: SVGProps[SVGFEConvolveMatrixElement] = js.native
+  
   var feDiffuseLighting: SVGProps[SVGFEDiffuseLightingElement] = js.native
+  
   var feDisplacementMap: SVGProps[SVGFEDisplacementMapElement] = js.native
+  
   var feDistantLight: SVGProps[SVGFEDistantLightElement] = js.native
+  
   var feDropShadow: SVGProps[SVGFEDropShadowElement] = js.native
+  
   var feFlood: SVGProps[SVGFEFloodElement] = js.native
+  
   var feFuncA: SVGProps[SVGFEFuncAElement] = js.native
+  
   var feFuncB: SVGProps[SVGFEFuncBElement] = js.native
+  
   var feFuncG: SVGProps[SVGFEFuncGElement] = js.native
+  
   var feFuncR: SVGProps[SVGFEFuncRElement] = js.native
+  
   var feGaussianBlur: SVGProps[SVGFEGaussianBlurElement] = js.native
+  
   var feImage: SVGProps[SVGFEImageElement] = js.native
+  
   var feMerge: SVGProps[SVGFEMergeElement] = js.native
+  
   var feMergeNode: SVGProps[SVGFEMergeNodeElement] = js.native
+  
   var feMorphology: SVGProps[SVGFEMorphologyElement] = js.native
+  
   var feOffset: SVGProps[SVGFEOffsetElement] = js.native
+  
   var fePointLight: SVGProps[SVGFEPointLightElement] = js.native
+  
   var feSpecularLighting: SVGProps[SVGFESpecularLightingElement] = js.native
+  
   var feSpotLight: SVGProps[SVGFESpotLightElement] = js.native
+  
   var feTile: SVGProps[SVGFETileElement] = js.native
+  
   var feTurbulence: SVGProps[SVGFETurbulenceElement] = js.native
+  
   var fieldset: DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement] = js.native
+  
   var figcaption: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var figure: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var filter: SVGProps[SVGFilterElement] = js.native
+  
   var footer: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var foreignObject: SVGProps[SVGForeignObjectElement] = js.native
+  
   var form: DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement] = js.native
+  
   var g: SVGProps[SVGGElement] = js.native
+  
   var h1: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+  
   var h2: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+  
   var h3: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+  
   var h4: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+  
   var h5: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+  
   var h6: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+  
   var head: DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement] = js.native
+  
   var header: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var hgroup: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var hr: DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement] = js.native
+  
   var html: DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement] = js.native
+  
   var i: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var iframe: DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement] = js.native
+  
   var image: SVGProps[SVGImageElement] = js.native
+  
   var img: DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement] = js.native
+  
   var input: DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
+  
   var ins: DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement] = js.native
+  
   var kbd: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var keygen: DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var label: DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement] = js.native
+  
   var legend: DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement] = js.native
+  
   var li: DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement] = js.native
+  
   var line: SVGProps[SVGLineElement] = js.native
+  
   var linearGradient: SVGProps[SVGLinearGradientElement] = js.native
+  
   var link: DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement] = js.native
+  
   var main: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var map: DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement] = js.native
+  
   var mark: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var marker: SVGProps[SVGMarkerElement] = js.native
+  
   var mask: SVGProps[SVGMaskElement] = js.native
+  
   var menu: DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var menuitem: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var meta: DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement] = js.native
+  
   var metadata: SVGProps[SVGMetadataElement] = js.native
+  
   var meter: DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var mpath: SVGProps[SVGElement] = js.native
+  
   var nav: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var noindex: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var noscript: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var `object`: DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement] = js.native
+  
   var ol: DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement] = js.native
+  
   var optgroup: DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement] = js.native
+  
   var option: DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement] = js.native
+  
   var output: DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var p: DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement] = js.native
+  
   var param: DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement] = js.native
+  
   var path: SVGProps[SVGPathElement] = js.native
+  
   var pattern: SVGProps[SVGPatternElement] = js.native
+  
   var picture: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var polygon: SVGProps[SVGPolygonElement] = js.native
+  
   var polyline: SVGProps[SVGPolylineElement] = js.native
+  
   var pre: DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement] = js.native
+  
   var progress: DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement] = js.native
+  
   var q: DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement] = js.native
+  
   var radialGradient: SVGProps[SVGRadialGradientElement] = js.native
+  
   var rect: SVGProps[SVGRectElement] = js.native
+  
   var rp: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var rt: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var ruby: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var s: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var samp: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var script: DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement] = js.native
+  
   var section: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var select: DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement] = js.native
+  
   var slot: DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement] = js.native
+  
   var small: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var source: DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement] = js.native
+  
   var span: DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement] = js.native
+  
   var stop: SVGProps[SVGStopElement] = js.native
+  
   var strong: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var style: DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement] = js.native
+  
   var sub: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var summary: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var sup: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   // SVG
   var svg: SVGProps[SVGSVGElement] = js.native
+  
   var switch: SVGProps[SVGSwitchElement] = js.native
+  
   var symbol: SVGProps[SVGSymbolElement] = js.native
+  
   var table: DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement] = js.native
+  
   var tbody: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement] = js.native
+  
   var td: DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement] = js.native
+  
   var template: DetailedHTMLProps[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement] = js.native
+  
   var text: SVGProps[SVGTextElement] = js.native
+  
   var textPath: SVGProps[SVGTextPathElement] = js.native
+  
   var textarea: DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement] = js.native
+  
   var tfoot: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement] = js.native
+  
   var th: DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement] = js.native
+  
   var thead: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement] = js.native
+  
   var time: DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var title: DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement] = js.native
+  
   var tr: DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement] = js.native
+  
   var track: DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement] = js.native
+  
   var tspan: SVGProps[SVGTSpanElement] = js.native
+  
   var u: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var ul: DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement] = js.native
+  
   var use: SVGProps[SVGUseElement] = js.native
+  
   var `var`: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var video: DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement] = js.native
+  
   var view: SVGProps[SVGViewElement] = js.native
+  
   var wbr: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  
   var webview: DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement] = js.native
 }
-
 object IntrinsicElements {
+  
   @scala.inline
   def apply(
     a: DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement],
@@ -538,368 +713,545 @@ object IntrinsicElements {
     __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrinsicElements]
   }
+  
   @scala.inline
   implicit class IntrinsicElementsOps[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setA(value: DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]): Self = this.set("a", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAbbr(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("abbr", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAddress(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("address", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAnimate(value: SVGProps[SVGElement]): Self = this.set("animate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAnimateMotion(value: SVGProps[SVGElement]): Self = this.set("animateMotion", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAnimateTransform(value: SVGProps[SVGElement]): Self = this.set("animateTransform", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setArea(value: DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement]): Self = this.set("area", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setArticle(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("article", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAside(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("aside", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAudio(value: DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement]): Self = this.set("audio", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setB(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("b", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBase(value: DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement]): Self = this.set("base", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBdi(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("bdi", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBdo(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("bdo", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBig(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("big", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBlockquote(value: DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("blockquote", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBody(value: DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]): Self = this.set("body", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBr(value: DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement]): Self = this.set("br", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setButton(value: DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement]): Self = this.set("button", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCanvas(value: DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement]): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCaption(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("caption", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCircle(value: SVGProps[SVGCircleElement]): Self = this.set("circle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCite(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("cite", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClipPath(value: SVGProps[SVGClipPathElement]): Self = this.set("clipPath", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCode(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("code", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCol(value: DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement]): Self = this.set("col", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setColgroup(value: DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement]): Self = this.set("colgroup", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setData(value: DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement]): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDatalist(value: DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement]): Self = this.set("datalist", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDd(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("dd", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDefs(value: SVGProps[SVGDefsElement]): Self = this.set("defs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDel(value: DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("del", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDesc(value: SVGProps[SVGDescElement]): Self = this.set("desc", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDetails(value: DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("details", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDfn(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("dfn", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDialog(value: DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement]): Self = this.set("dialog", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDiv(value: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]): Self = this.set("div", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDl(value: DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement]): Self = this.set("dl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDt(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("dt", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEllipse(value: SVGProps[SVGEllipseElement]): Self = this.set("ellipse", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEm(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("em", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEmbed(value: DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement]): Self = this.set("embed", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeBlend(value: SVGProps[SVGFEBlendElement]): Self = this.set("feBlend", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeColorMatrix(value: SVGProps[SVGFEColorMatrixElement]): Self = this.set("feColorMatrix", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeComponentTransfer(value: SVGProps[SVGFEComponentTransferElement]): Self = this.set("feComponentTransfer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeComposite(value: SVGProps[SVGFECompositeElement]): Self = this.set("feComposite", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeConvolveMatrix(value: SVGProps[SVGFEConvolveMatrixElement]): Self = this.set("feConvolveMatrix", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeDiffuseLighting(value: SVGProps[SVGFEDiffuseLightingElement]): Self = this.set("feDiffuseLighting", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeDisplacementMap(value: SVGProps[SVGFEDisplacementMapElement]): Self = this.set("feDisplacementMap", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeDistantLight(value: SVGProps[SVGFEDistantLightElement]): Self = this.set("feDistantLight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeDropShadow(value: SVGProps[SVGFEDropShadowElement]): Self = this.set("feDropShadow", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeFlood(value: SVGProps[SVGFEFloodElement]): Self = this.set("feFlood", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeFuncA(value: SVGProps[SVGFEFuncAElement]): Self = this.set("feFuncA", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeFuncB(value: SVGProps[SVGFEFuncBElement]): Self = this.set("feFuncB", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeFuncG(value: SVGProps[SVGFEFuncGElement]): Self = this.set("feFuncG", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeFuncR(value: SVGProps[SVGFEFuncRElement]): Self = this.set("feFuncR", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeGaussianBlur(value: SVGProps[SVGFEGaussianBlurElement]): Self = this.set("feGaussianBlur", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeImage(value: SVGProps[SVGFEImageElement]): Self = this.set("feImage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeMerge(value: SVGProps[SVGFEMergeElement]): Self = this.set("feMerge", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeMergeNode(value: SVGProps[SVGFEMergeNodeElement]): Self = this.set("feMergeNode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeMorphology(value: SVGProps[SVGFEMorphologyElement]): Self = this.set("feMorphology", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeOffset(value: SVGProps[SVGFEOffsetElement]): Self = this.set("feOffset", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFePointLight(value: SVGProps[SVGFEPointLightElement]): Self = this.set("fePointLight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeSpecularLighting(value: SVGProps[SVGFESpecularLightingElement]): Self = this.set("feSpecularLighting", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeSpotLight(value: SVGProps[SVGFESpotLightElement]): Self = this.set("feSpotLight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeTile(value: SVGProps[SVGFETileElement]): Self = this.set("feTile", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeTurbulence(value: SVGProps[SVGFETurbulenceElement]): Self = this.set("feTurbulence", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFieldset(value: DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement]): Self = this.set("fieldset", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFigcaption(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("figcaption", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFigure(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("figure", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFilter(value: SVGProps[SVGFilterElement]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFooter(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("footer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setForeignObject(value: SVGProps[SVGForeignObjectElement]): Self = this.set("foreignObject", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setForm(value: DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement]): Self = this.set("form", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setG(value: SVGProps[SVGGElement]): Self = this.set("g", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setH1(value: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = this.set("h1", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setH2(value: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = this.set("h2", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setH3(value: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = this.set("h3", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setH4(value: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = this.set("h4", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setH5(value: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = this.set("h5", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setH6(value: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = this.set("h6", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHead(value: DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement]): Self = this.set("head", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHeader(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("header", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHgroup(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("hgroup", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHr(value: DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement]): Self = this.set("hr", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHtml(value: DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement]): Self = this.set("html", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setI(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("i", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIframe(value: DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement]): Self = this.set("iframe", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setImage(value: SVGProps[SVGImageElement]): Self = this.set("image", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setImg(value: DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]): Self = this.set("img", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setInput(value: DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]): Self = this.set("input", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIns(value: DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement]): Self = this.set("ins", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setKbd(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("kbd", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setKeygen(value: DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("keygen", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLabel(value: DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement]): Self = this.set("label", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLegend(value: DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement]): Self = this.set("legend", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLi(value: DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement]): Self = this.set("li", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLine(value: SVGProps[SVGLineElement]): Self = this.set("line", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLinearGradient(value: SVGProps[SVGLinearGradientElement]): Self = this.set("linearGradient", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLink(value: DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement]): Self = this.set("link", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMain(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("main", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMap(value: DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement]): Self = this.set("map", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMark(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("mark", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMarker(value: SVGProps[SVGMarkerElement]): Self = this.set("marker", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMask(value: SVGProps[SVGMaskElement]): Self = this.set("mask", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMenu(value: DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("menu", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMenuitem(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("menuitem", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMeta(value: DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement]): Self = this.set("meta", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMetadata(value: SVGProps[SVGMetadataElement]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMeter(value: DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("meter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMpath(value: SVGProps[SVGElement]): Self = this.set("mpath", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNav(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("nav", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNoindex(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("noindex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNoscript(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("noscript", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setObject(value: DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement]): Self = this.set("object", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOl(value: DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement]): Self = this.set("ol", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOptgroup(value: DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement]): Self = this.set("optgroup", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOption(value: DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement]): Self = this.set("option", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOutput(value: DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("output", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setP(value: DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]): Self = this.set("p", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParam(value: DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement]): Self = this.set("param", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPath(value: SVGProps[SVGPathElement]): Self = this.set("path", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPattern(value: SVGProps[SVGPatternElement]): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPicture(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("picture", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPolygon(value: SVGProps[SVGPolygonElement]): Self = this.set("polygon", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPolyline(value: SVGProps[SVGPolylineElement]): Self = this.set("polyline", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPre(value: DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement]): Self = this.set("pre", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setProgress(value: DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement]): Self = this.set("progress", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQ(value: DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement]): Self = this.set("q", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRadialGradient(value: SVGProps[SVGRadialGradientElement]): Self = this.set("radialGradient", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRect(value: SVGProps[SVGRectElement]): Self = this.set("rect", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRp(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("rp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRt(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("rt", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRuby(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("ruby", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setS(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("s", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSamp(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("samp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setScript(value: DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement]): Self = this.set("script", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSection(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("section", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSelect(value: DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement]): Self = this.set("select", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSlot(value: DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement]): Self = this.set("slot", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSmall(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("small", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSource(value: DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement]): Self = this.set("source", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSpan(value: DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement]): Self = this.set("span", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStop(value: SVGProps[SVGStopElement]): Self = this.set("stop", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStrong(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("strong", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStyle(value: DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement]): Self = this.set("style", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSub(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("sub", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSummary(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("summary", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSup(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("sup", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSvg(value: SVGProps[SVGSVGElement]): Self = this.set("svg", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSwitch(value: SVGProps[SVGSwitchElement]): Self = this.set("switch", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSymbol(value: SVGProps[SVGSymbolElement]): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTable(value: DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]): Self = this.set("table", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTbody(value: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]): Self = this.set("tbody", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTd(value: DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement]): Self = this.set("td", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTemplate(value: DetailedHTMLProps[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement]): Self = this.set("template", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setText(value: SVGProps[SVGTextElement]): Self = this.set("text", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTextPath(value: SVGProps[SVGTextPathElement]): Self = this.set("textPath", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTextarea(value: DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement]): Self = this.set("textarea", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTfoot(value: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]): Self = this.set("tfoot", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTh(value: DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement]): Self = this.set("th", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setThead(value: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]): Self = this.set("thead", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTime(value: DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("time", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTitle(value: DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement]): Self = this.set("title", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTr(value: DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement]): Self = this.set("tr", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTrack(value: DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement]): Self = this.set("track", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTspan(value: SVGProps[SVGTSpanElement]): Self = this.set("tspan", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setU(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("u", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUl(value: DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]): Self = this.set("ul", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUse(value: SVGProps[SVGUseElement]): Self = this.set("use", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setVar(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("var", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setVideo(value: DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]): Self = this.set("video", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setView(value: SVGProps[SVGViewElement]): Self = this.set("view", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWbr(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("wbr", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWebview(value: DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement]): Self = this.set("webview", value.asInstanceOf[js.Any])
   }
-  
 }
-

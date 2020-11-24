@@ -15,31 +15,11 @@ import typings.angularRouter.mod.UrlHandlingStrategy
 import typings.angularRouter.mod.UrlSerializer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router/testing/testing", JSImport.Namespace)
 @js.native
 object testingTestingMod extends js.Object {
-  @js.native
-  class RouterTestingModule () extends js.Object
-  
-  @js.native
-  class SpyNgModuleFactoryLoader protected () extends NgModuleFactoryLoader {
-    def this(compiler: Compiler) = this()
-    /**
-      * @docsNotRequired
-      */
-    var _stubbedModules: js.Any = js.native
-    var compiler: js.Any = js.native
-    /**
-      * @docsNotRequired
-      */
-    def stubbedModules: StringDictionary[js.Any] = js.native
-    /**
-      * @docsNotRequired
-      */
-    def stubbedModules_=(modules: StringDictionary[js.Any]): Unit = js.native
-  }
   
   def setupTestingRouter(
     urlSerializer: UrlSerializer,
@@ -92,12 +72,35 @@ object testingTestingMod extends js.Object {
     routes: js.Array[js.Array[Route]],
     urlHandlingStrategy: UrlHandlingStrategy
   ): Router = js.native
+  
+  @js.native
+  class RouterTestingModule () extends js.Object
   /* static members */
   @js.native
   object RouterTestingModule extends js.Object {
+    
     def withRoutes(routes: Routes): ModuleWithProviders[RouterTestingModule] = js.native
     def withRoutes(routes: Routes, config: ExtraOptions): ModuleWithProviders[RouterTestingModule] = js.native
   }
   
+  @js.native
+  class SpyNgModuleFactoryLoader protected () extends NgModuleFactoryLoader {
+    def this(compiler: Compiler) = this()
+    
+    /**
+      * @docsNotRequired
+      */
+    var _stubbedModules: js.Any = js.native
+    
+    var compiler: js.Any = js.native
+    
+    /**
+      * @docsNotRequired
+      */
+    def stubbedModules: StringDictionary[js.Any] = js.native
+    /**
+      * @docsNotRequired
+      */
+    def stubbedModules_=(modules: StringDictionary[js.Any]): Unit = js.native
+  }
 }
-

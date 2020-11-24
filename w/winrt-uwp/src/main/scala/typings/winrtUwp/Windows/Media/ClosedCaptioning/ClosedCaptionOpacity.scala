@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.ClosedCaptioning
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ClosedCaptionOpacity extends js.Object
-
 /** Specifies the opacity of closed caption text. */
 @JSGlobal("Windows.Media.ClosedCaptioning.ClosedCaptionOpacity")
 @js.native
 object ClosedCaptionOpacity extends js.Object {
+  
   /** Default opacity. */
   @js.native
   sealed trait default extends ClosedCaptionOpacity
@@ -30,6 +30,4 @@ object ClosedCaptionOpacity extends js.Object {
   /** Completely transparent. */
   @js.native
   sealed trait zeroPercent extends ClosedCaptionOpacity
-  
 }
-

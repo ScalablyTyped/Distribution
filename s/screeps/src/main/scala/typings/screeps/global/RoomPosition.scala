@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.screeps.RoomPositionConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("RoomPosition")
 @js.native
@@ -18,8 +18,6 @@ class RoomPosition protected ()
     */
   def this(x: Double, y: Double, roomName: String) = this()
 }
-
 @JSGlobal("RoomPosition")
 @js.native
 object RoomPosition extends TopLevel[RoomPositionConstructor]
-

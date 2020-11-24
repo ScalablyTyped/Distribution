@@ -2,7 +2,7 @@ package typings.babylonWalk.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait visitors[V]
@@ -11,12 +11,11 @@ trait visitors[V]
      with flowVisitors[V]
      with jsxVisitors[V]
      with miscVisitors[V]
-
 object visitors {
+  
   @scala.inline
   def apply[V](): visitors[V] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[visitors[V]]
   }
 }
-

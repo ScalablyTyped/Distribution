@@ -10,9 +10,9 @@ This is a simple module to validate IP address, check ip address version, check 
 | ------------------ | :-------------: |
 | Full name          | range_check |
 | Keywords           | IP Address, CIDR, V4, V6, valid, range, addr, ip, ipv4, ipv6 |
-| # releases         | 0 |
-| # dependents       | 81 |
-| # downloads        | 1096038 |
+| # releases         | 5 |
+| # dependents       | 83 |
+| # downloads        | 1713288 |
 | # stars            | 2 |
 
 ## Links

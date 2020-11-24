@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lazy-ass"
-version := "1.6.0-589907"
+version := "1.6.0-8565da"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

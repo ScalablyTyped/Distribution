@@ -8,11 +8,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface extends the base {@link XStorage} interface. */
 @js.native
 trait XStorage2 extends XStorage {
+  
   /**
     * allows to get readonly copy of a child encrypted stream with encryption data.
     *
@@ -31,6 +32,7 @@ trait XStorage2 extends XStorage {
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
   def cloneEncryptedStream(sStreamName: String, aEncryptionData: SeqEquiv[NamedValue]): XStream = js.native
+  
   /**
     * allows to get access to a child encrypted stream with EncryptionData.
     *
@@ -49,8 +51,8 @@ trait XStorage2 extends XStorage {
     */
   def openEncryptedStream(sStreamName: String, nOpenMode: Double, aEncryptionData: SeqEquiv[NamedValue]): XStream = js.native
 }
-
 object XStorage2 {
+  
   @scala.inline
   def apply(
     ElementNames: SafeArray[String],
@@ -86,22 +88,26 @@ object XStorage2 {
     val __obj = js.Dynamic.literal(ElementNames = ElementNames.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), cloneEncryptedStream = js.Any.fromFunction2(cloneEncryptedStream), cloneEncryptedStreamElement = js.Any.fromFunction2(cloneEncryptedStreamElement), cloneStreamElement = js.Any.fromFunction1(cloneStreamElement), copyElementTo = js.Any.fromFunction3(copyElementTo), copyLastCommitTo = js.Any.fromFunction1(copyLastCommitTo), copyStorageElementLastCommitTo = js.Any.fromFunction2(copyStorageElementLastCommitTo), copyToStorage = js.Any.fromFunction1(copyToStorage), dispose = js.Any.fromFunction0(dispose), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), isStorageElement = js.Any.fromFunction1(isStorageElement), isStreamElement = js.Any.fromFunction1(isStreamElement), moveElementTo = js.Any.fromFunction3(moveElementTo), openEncryptedStream = js.Any.fromFunction3(openEncryptedStream), openEncryptedStreamElement = js.Any.fromFunction3(openEncryptedStreamElement), openStorageElement = js.Any.fromFunction2(openStorageElement), openStreamElement = js.Any.fromFunction2(openStreamElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeElement = js.Any.fromFunction1(removeElement), removeEventListener = js.Any.fromFunction1(removeEventListener), renameElement = js.Any.fromFunction2(renameElement))
     __obj.asInstanceOf[XStorage2]
   }
+  
   @scala.inline
   implicit class XStorage2Ops[Self <: XStorage2] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCloneEncryptedStream(value: (String, SeqEquiv[NamedValue]) => XStream): Self = this.set("cloneEncryptedStream", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setOpenEncryptedStream(value: (String, Double, SeqEquiv[NamedValue]) => XStream): Self = this.set("openEncryptedStream", js.Any.fromFunction3(value))
   }
-  
 }
-

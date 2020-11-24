@@ -10,9 +10,9 @@ Create and use boilerplates with ease
 | ------------------ | :-------------: |
 | Full name          | go |
 | Keywords           | boilerplate, automation, template, generator, scaffold, cli |
-| # releases         | 9 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 7726 |
+| # downloads        | 8411 |
 | # stars            | 0 |
 
 ## Links

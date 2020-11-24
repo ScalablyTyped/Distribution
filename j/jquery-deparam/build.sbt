@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-deparam"
-version := "v1.0.0-dt-20200515Z-db62e2"
+version := "v1.0.0-dt-20201002Z-97dd2c"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

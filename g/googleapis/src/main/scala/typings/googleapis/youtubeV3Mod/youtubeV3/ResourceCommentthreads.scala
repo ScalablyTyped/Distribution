@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Commentthreads")
 @js.native
 class ResourceCommentthreads protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.commentThreads.insert
     * @desc Creates a new top-level comment. To add a reply to an existing
@@ -43,6 +45,7 @@ class ResourceCommentthreads protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommentThread]
   ): Unit = js.native
+  
   /**
     * youtube.commentThreads.list
     * @desc Returns a list of comment threads that match the API request
@@ -85,6 +88,7 @@ class ResourceCommentthreads protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommentThreadListResponse]
   ): Unit = js.native
+  
   /**
     * youtube.commentThreads.update
     * @desc Modifies the top-level comment in a comment thread.
@@ -115,4 +119,3 @@ class ResourceCommentthreads protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCommentThread]
   ): Unit = js.native
 }
-

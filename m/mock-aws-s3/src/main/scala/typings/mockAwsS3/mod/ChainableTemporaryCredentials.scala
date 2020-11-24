@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.chainableTemporaryCredentialsMod.ChainableTemporaryCredentials.ChainableTemporaryCredentialsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "ChainableTemporaryCredentials")
 @js.native
@@ -14,9 +14,7 @@ class ChainableTemporaryCredentials ()
   extends typings.awsSdk.mod.ChainableTemporaryCredentials {
   def this(options: ChainableTemporaryCredentialsOptions) = this()
 }
-
 // Needed to expose interfaces on the class
 @JSImport("mock-aws-s3", "ChainableTemporaryCredentials")
 @js.native
 object ChainableTemporaryCredentials extends js.Object
-

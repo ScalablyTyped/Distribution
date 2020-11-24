@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,26 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassInt64 extends ClassObject {
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 高 32 位数值
-    * 
-    * 
-    * @type Long
-    */
-  var hi: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 低 32 位数值
-    * 
-    * 
-    * @type Long
-    */
-  var lo: Double = js.native
+  
   /**
     * 
     * @brief 将 Int64 内的数值与给定的数值进行加操作，此操作不影响 Int64 原有数值
@@ -41,6 +22,7 @@ trait ClassInt64 extends ClassObject {
     * 
     */
   def add(num: ClassInt64): ClassInt64 = js.native
+  
   /**
     * 
     * @brief 将 Int64 内的数值与给定的数值进行按位 and 操作，此操作不影响 Int64 原有数值
@@ -51,6 +33,7 @@ trait ClassInt64 extends ClassObject {
     * 
     */
   def and(num: ClassInt64): ClassInt64 = js.native
+  
   /**
     * 
     * @brief 将 Int64 内的数值与给定数值比较大小
@@ -61,6 +44,7 @@ trait ClassInt64 extends ClassObject {
     * 
     */
   def compare(num: ClassInt64): Double = js.native
+  
   /**
     * 
     * @brief 将 Int64 内的数值与给定的数值进行除操作，此操作不影响 Int64 原有数值
@@ -71,6 +55,7 @@ trait ClassInt64 extends ClassObject {
     * 
     */
   def div(num: ClassInt64): ClassInt64 = js.native
+  
   /**
     * 
     * @brief 比较当前对象与给定的对象是否相等
@@ -81,6 +66,29 @@ trait ClassInt64 extends ClassObject {
     * 
     */
   def equals(expected: ClassObject): Boolean = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 高 32 位数值
+    * 
+    * 
+    * @type Long
+    */
+  var hi: Double = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 低 32 位数值
+    * 
+    * 
+    * @type Long
+    */
+  var lo: Double = js.native
+  
   /**
     * 
     * @brief 将 Int64 内的数值与给定的数值进行乘操作，此操作不影响 Int64 原有数值
@@ -91,6 +99,7 @@ trait ClassInt64 extends ClassObject {
     * 
     */
   def multi(num: ClassInt64): ClassInt64 = js.native
+  
   /**
     * 
     * @brief 将 Int64 内的数值与给定的数值进行按位 or 操作，此操作不影响 Int64 原有数值
@@ -101,6 +110,7 @@ trait ClassInt64 extends ClassObject {
     * 
     */
   def or(num: ClassInt64): ClassInt64 = js.native
+  
   /**
     * 
     * @brief 将 Int64 内的数值左移相应的位数，此操作不影响 Int64 原有数值
@@ -111,6 +121,7 @@ trait ClassInt64 extends ClassObject {
     * 
     */
   def shiftLeft(bits: Double): ClassInt64 = js.native
+  
   /**
     * 
     * @brief 将 Int64 内的数值右移相应的位数，此操作不影响 Int64 原有数值
@@ -121,6 +132,7 @@ trait ClassInt64 extends ClassObject {
     * 
     */
   def shiftRight(bits: Double): ClassInt64 = js.native
+  
   /**
     * 
     * @brief 将 Int64 内的数值与给定的数值进行减操作，此操作不影响 Int64 原有数值
@@ -131,6 +143,7 @@ trait ClassInt64 extends ClassObject {
     * 
     */
   def sub(num: ClassInt64): ClassInt64 = js.native
+  
   /**
     * 
     * @brief 转换成数字类型
@@ -140,7 +153,9 @@ trait ClassInt64 extends ClassObject {
     * 
     */
   def toNumber(): Double = js.native
+  
   def toString(base: Double): String = js.native
+  
   /**
     * 
     * @brief 将 Int64 内的数值与给定的数值进行按位 xor 操作，此操作不影响 Int64 原有数值
@@ -152,4 +167,3 @@ trait ClassInt64 extends ClassObject {
     */
   def xor(num: ClassInt64): ClassInt64 = js.native
 }
-

@@ -2,44 +2,59 @@ package typings.babylonjs.xRIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/XR/index", "WebXRFeatureName")
 @js.native
 class WebXRFeatureName ()
   extends typings.babylonjs.webXRFeaturesManagerMod.WebXRFeatureName
-
 /* static members */
 @JSImport("babylonjs/XR/index", "WebXRFeatureName")
 @js.native
 object WebXRFeatureName extends js.Object {
+  
   /**
     * The name of the anchor system feature
     */
-  var ANCHOR_SYSTEM: String = js.native
+  val ANCHOR_SYSTEM: String = js.native
+  
   /**
     * The name of the background remover feature
     */
-  var BACKGROUND_REMOVER: String = js.native
+  val BACKGROUND_REMOVER: String = js.native
+  
+  /**
+    * The name of the feature points feature.
+    */
+  val FEATURE_POINTS: String = js.native
+  
+  /**
+    * The name of the hand tracking feature.
+    */
+  val HAND_TRACKING: String = js.native
+  
   /**
     * The name of the hit test feature
     */
-  var HIT_TEST: String = js.native
+  val HIT_TEST: String = js.native
+  
   /**
     * physics impostors for xr controllers feature
     */
-  var PHYSICS_CONTROLLERS: String = js.native
+  val PHYSICS_CONTROLLERS: String = js.native
+  
   /**
     * The name of the plane detection feature
     */
-  var PLANE_DETECTION: String = js.native
+  val PLANE_DETECTION: String = js.native
+  
   /**
     * The name of the pointer selection feature
     */
-  var POINTER_SELECTION: String = js.native
+  val POINTER_SELECTION: String = js.native
+  
   /**
     * The name of the teleportation feature
     */
-  var TELEPORTATION: String = js.native
+  val TELEPORTATION: String = js.native
 }
-

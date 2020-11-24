@@ -5,11 +5,12 @@ import typings.std.Window
 import typings.std.stdStrings.dragstart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("removeEventListener")
 @js.native
 object removeEventListener_dragstart extends js.Object {
+  
   def apply(
     `type`: dragstart,
     listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, _]
@@ -25,4 +26,3 @@ object removeEventListener_dragstart extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
 }
-

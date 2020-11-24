@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Reports$Files")
 @js.native
 class ResourceReportsFiles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.reports.files.get
     * @desc Retrieves a report file. This method supports media download.
@@ -43,6 +45,7 @@ class ResourceReportsFiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFile]
   ): Unit = js.native
+  
   /**
     * dfareporting.reports.files.list
     * @desc Lists files for a report.
@@ -77,4 +80,3 @@ class ResourceReportsFiles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaFileList]
   ): Unit = js.native
 }
-

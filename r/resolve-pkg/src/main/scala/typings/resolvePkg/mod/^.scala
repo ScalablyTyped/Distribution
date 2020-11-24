@@ -2,11 +2,12 @@ package typings.resolvePkg.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("resolve-pkg", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Resolve the path of a package regardless of it having an entry point.
   @param moduleId - What you would use in `require()`.
@@ -24,4 +25,3 @@ object ^ extends js.Object {
   def apply(moduleId: String): js.UndefOr[String] = js.native
   def apply(moduleId: String, options: Options): js.UndefOr[String] = js.native
 }
-

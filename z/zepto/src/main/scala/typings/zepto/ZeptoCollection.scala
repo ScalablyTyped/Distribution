@@ -5,14 +5,11 @@ import typings.std.HTMLElement
 import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ZeptoCollection extends js.Object {
-  /**
-    * Get the number of elements in this collection.
-    **/
-  var length: Double = js.native
+  
   /**
     * Core
     **/
@@ -24,12 +21,14 @@ trait ZeptoCollection extends js.Object {
     **/
   def add(selector: String): ZeptoCollection = js.native
   def add(selector: String, context: js.Any): ZeptoCollection = js.native
+  
   /**
     * Add class name to each of the elements in the collection. Multiple class names can be given in a space-separated string.
     * @param name
     * @return Self object.
     **/
   def addClass(name: String): ZeptoCollection = js.native
+  
   /**
     * Add content to the DOM after each elements in the collection. The content can be an HTML string, a DOM node or an array of nodes.
     * @param content
@@ -48,6 +47,7 @@ trait ZeptoCollection extends js.Object {
     * @see ZeptoCollection.after
     **/
   def after(content: ZeptoCollection): ZeptoCollection = js.native
+  
   /**
     * Effects
     **/
@@ -106,6 +106,7 @@ trait ZeptoCollection extends js.Object {
     * @param options Animation options.
     **/
   def animate(properties: js.Any, options: ZeptoAnimateSettings): ZeptoCollection = js.native
+  
   /**
     * Append content to the DOM inside each individual element in the collection. The content can be an HTML string, a DOM node or an array of nodes.
     * @param content
@@ -124,6 +125,7 @@ trait ZeptoCollection extends js.Object {
     * @see ZeptoCollection.append
     **/
   def append(content: ZeptoCollection): ZeptoCollection = js.native
+  
   /**
     * Append elements from the current collection to the target element. This is like append, but with reversed operands.
     * @param target
@@ -142,6 +144,7 @@ trait ZeptoCollection extends js.Object {
     * @see ZeptoCollection.appendTo
     **/
   def appendTo(target: ZeptoCollection): ZeptoCollection = js.native
+  
   /**
     * Read or set DOM attributes. When no value is given, reads specified attribute from the first element in the collection. When value is given, sets the attribute to that value on each element in the collection. When value is null, the attribute is removed (like with removeAttr). Multiple attributes can be set by passing an object with name-value pairs.
     * To read DOM properties such as checked or selected, use prop.
@@ -165,6 +168,7 @@ trait ZeptoCollection extends js.Object {
     * @param object
     **/
   def attr(`object`: js.Any): ZeptoCollection = js.native
+  
   /**
     * Add content to the DOM before each element in the collection. The content can be an HTML string, a DOM node or an array of nodes.
     * @param content
@@ -183,6 +187,7 @@ trait ZeptoCollection extends js.Object {
     * @see ZeptoCollection.before
     **/
   def before(content: ZeptoCollection): ZeptoCollection = js.native
+  
   /**
     * Event
     **/
@@ -194,10 +199,13 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def bind(`type`: String, fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   def blur(): ZeptoCollection = js.native
   def blur(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   def change(): ZeptoCollection = js.native
   def change(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   /**
     * Get immediate children of each element in the current collection. If selector is given, filter the results to only include ones matching the CSS selector.
     * @param selector
@@ -205,8 +213,10 @@ trait ZeptoCollection extends js.Object {
     **/
   def children(): ZeptoCollection = js.native
   def children(selector: String): ZeptoCollection = js.native
+  
   def click(): ZeptoCollection = js.native
   def click(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   /**
     * Traverse upwards from the current element to find the first element that matches the selector. If context node is given, consider only elements that are its descendants. This method is similar to parents(selector), but it only returns the first ancestor matched.
     * If a Zepto collection or element is given, the resulting element will have to match one of the given elements instead of a selector.
@@ -216,6 +226,7 @@ trait ZeptoCollection extends js.Object {
     **/
   def closest(selector: String): ZeptoCollection = js.native
   def closest(selector: String, context: js.Any): ZeptoCollection = js.native
+  
   /**
     * Modify the collection by adding elements to it. If any of the arguments is an array, its elements are merged into the current collection.
     * (!) This is a Zepto-provided method that is not part of the jQuery API.
@@ -223,11 +234,13 @@ trait ZeptoCollection extends js.Object {
     * @return Self object.
     **/
   def concat(nodes: js.Any*): ZeptoCollection = js.native
+  
   /**
     * Get the children of each element in the collection, including text and comment nodes.
     * @return Children including text and comment nodes.
     **/
   def contents(): ZeptoCollection = js.native
+  
   /**
     * @see ZeptoCollection.css
     * @param properties
@@ -245,6 +258,7 @@ trait ZeptoCollection extends js.Object {
     * @param value
     **/
   def css(property: String, value: js.Any): ZeptoCollection = js.native
+  
   /**
     * Read or write data-* DOM attributes. Behaves like attr, but prepends data- to the attribute name.
     * When reading attribute values, the following conversions apply:
@@ -262,8 +276,10 @@ trait ZeptoCollection extends js.Object {
     * @param value
     **/
   def data(name: String, value: js.Any): ZeptoCollection = js.native
+  
   def dblclick(): ZeptoCollection = js.native
   def dblclick(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   /**
     * Attach an event handler that is only triggered when the event originated from a node that matches a selector.
     * @depcreated use ZeptoCollection.on instead.
@@ -273,6 +289,7 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def delegate(selector: String, `type`: String, fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   /**
     * Detach event handler added by live.
     * @deprecated use ZeptoCollection.off instead.
@@ -287,6 +304,7 @@ trait ZeptoCollection extends js.Object {
     * @param types
     **/
   def die(types: js.Any): ZeptoCollection = js.native
+  
   /**
     * Iterate through every element of the collection. Inside the iterator function, this keyword refers to the current item (also passed as the second argument to the function). If the iterator function returns false, iteration stops.
     * @param fn
@@ -294,19 +312,23 @@ trait ZeptoCollection extends js.Object {
     * @return Self object.
     **/
   def each(fn: js.Function2[/* index */ Double, /* item */ js.Any, Boolean]): ZeptoCollection = js.native
+  
   /**
     * Clear DOM contents of each element in the collection.
     * @return Self object.
     **/
   def empty(): ZeptoCollection = js.native
+  
   /**
     * Get the item at position specified by index from the current collection.
     * @param index
     * @return Item specified by index in this collection.
     **/
   def eq(index: Double): ZeptoCollection = js.native
+  
   def error(): ZeptoCollection = js.native
   def error(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   /**
     * @see ZeptoCollection.filter
     * @param fn
@@ -319,6 +341,7 @@ trait ZeptoCollection extends js.Object {
     * @return Filtered collection.
     **/
   def filter(selector: String): ZeptoCollection = js.native
+  
   /**
     * @see ZeptoCollection.find
     * @param collection
@@ -336,17 +359,22 @@ trait ZeptoCollection extends js.Object {
     * @return Found items.
     **/
   def find(selector: String): ZeptoCollection = js.native
+  
   /**
     * Get the first element of the current collection.
     * @return First element in the current collection.
     **/
   def first(): ZeptoCollection = js.native
+  
   def focus(): ZeptoCollection = js.native
   def focus(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   def focusin(): ZeptoCollection = js.native
   def focusin(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   def focusout(): ZeptoCollection = js.native
   def focusout(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   /**
     * Iterate through every element of the collection. Similar to each, but the arguments for the iterator functions are different, and returning false from the iterator won’t stop the iteration.
     * (!) This is a Zepto-provided method that is not part of the jQuery API.
@@ -354,6 +382,7 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def forEach(fn: js.Function3[/* item */ js.Any, /* index */ Double, /* array */ js.Array[_], Unit]): ZeptoCollection = js.native
+  
   /**
     * Get all elements or a single element from the current collection. When no index is given, returns all elements in an ordinary array. When index is specified, return only the element at that position. This is different than eq in the way that the returned node is not wrapped in a Zepto collection.
     * @return
@@ -364,6 +393,7 @@ trait ZeptoCollection extends js.Object {
     * @param index
     **/
   def get(index: Double): HTMLElement = js.native
+  
   /**
     * @see ZeptoCollection.has
     * @param node
@@ -375,12 +405,14 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def has(selector: String): ZeptoCollection = js.native
+  
   /**
     * Check if any elements in the collection have the specified class.
     * @param name
     * @return
     **/
   def hasClass(name: String): Boolean = js.native
+  
   /**
     * Get the height of the first element in the collection; or set the height of all elements in the collection.
     * @return
@@ -396,11 +428,13 @@ trait ZeptoCollection extends js.Object {
     * @param value
     **/
   def height(value: Double): ZeptoCollection = js.native
+  
   /**
     * Hide elements in this collection by setting their display CSS property to none.
     * @return
     **/
   def hide(): ZeptoCollection = js.native
+  
   /**
     * Get or set HTML contents of elements in the collection. When no content given, returns innerHTML of the first element. When content is given, use it to replace contents of each element. Content can be any of the types described in append.
     * @return
@@ -426,6 +460,7 @@ trait ZeptoCollection extends js.Object {
     * @param fn
     **/
   def html(fn: js.Function2[/* index */ Double, /* oldHtml */ String, Unit]): ZeptoCollection = js.native
+  
   /**
     * Get the position of an element. When no element is given, returns position of the current element among its siblings. When an element is given, returns its position in the current collection. Returns -1 if not found.
     * @param element
@@ -435,6 +470,7 @@ trait ZeptoCollection extends js.Object {
   def index(element: String): Double = js.native
   def index(element: js.Any): Double = js.native
   def index(element: HTMLElement): Double = js.native
+  
    // not sure so leaving in for now
   /**
     * Get the position of an element in the current collection. If fromIndex number is given, search only from that position onwards. Returns the 0-based position when found and -1 if not found. Use of index is recommended over this method.
@@ -458,6 +494,7 @@ trait ZeptoCollection extends js.Object {
     **/
   def indexOf(element: HTMLElement): Double = js.native
   def indexOf(element: HTMLElement, fromIndex: Double): Double = js.native
+  
    // not sure so leaving in for now
   /**
     * Insert elements from the current collection after the target element in the DOM. This is like after, but with reversed operands.
@@ -470,6 +507,7 @@ trait ZeptoCollection extends js.Object {
     * @param target
     **/
   def insertAfter(target: HTMLElement): ZeptoCollection = js.native
+  
   /**
     * Insert elements from the current collection before each of the target elements in the DOM. This is like before, but with reversed operands.
     * @param target
@@ -481,6 +519,7 @@ trait ZeptoCollection extends js.Object {
     * @param target
     **/
   def insertBefore(target: HTMLElement): ZeptoCollection = js.native
+  
   /**
     * Check if the first element of the current collection matches the CSS selector. For basic support of jQuery’s non-standard pseudo-selectors such as :visible, include the optional “selector” module.
     * (!) jQuery CSS extensions are not supported. The optional "selector" module only provides limited support for few of the most used ones.
@@ -489,17 +528,27 @@ trait ZeptoCollection extends js.Object {
     **/
   def is(): Boolean = js.native
   def is(selector: String): Boolean = js.native
+  
   def keydown(): ZeptoCollection = js.native
   def keydown(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   def keypress(): ZeptoCollection = js.native
   def keypress(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   def keyup(): ZeptoCollection = js.native
   def keyup(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   /**
     * Get the last element of the current collection.
     * @return
     **/
   def last(): ZeptoCollection = js.native
+  
+  /**
+    * Get the number of elements in this collection.
+    **/
+  var length: Double = js.native
+  
   /**
     * Like delegate where the selector is taken from the current collection.
     * @deprepcated use ZeptoCollection.on instead.
@@ -508,6 +557,7 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def live(`type`: String, fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   def load(): ZeptoCollection = js.native
   def load(fn: ZeptoEventHandler): ZeptoCollection = js.native
   /**
@@ -529,6 +579,7 @@ trait ZeptoCollection extends js.Object {
     url: String,
     fn: js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
   ): ZeptoCollection = js.native
+  
   /**
     * Iterate through all elements and collect the return values of the iterator function. Inside the iterator function, this keyword refers to the current item (also passed as the second argument to the function).
     * Returns a collection of results of iterator function, with null and undefined values filtered out.
@@ -536,20 +587,28 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def map(fn: js.Function2[/* index */ Double, /* item */ js.Any, _]): ZeptoCollection = js.native
+  
   def mousedown(): ZeptoCollection = js.native
   def mousedown(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   def mouseenter(): ZeptoCollection = js.native
   def mouseenter(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   def mouseleave(): ZeptoCollection = js.native
   def mouseleave(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   def mousemove(): ZeptoCollection = js.native
   def mousemove(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   def mouseout(): ZeptoCollection = js.native
   def mouseout(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   def mouseover(): ZeptoCollection = js.native
   def mouseover(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   def mouseup(): ZeptoCollection = js.native
   def mouseup(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   /**
     * Get the next sibling—optinally filtered by selector—of each element in the collection.
     * @param selector
@@ -557,6 +616,7 @@ trait ZeptoCollection extends js.Object {
     **/
   def next(): ZeptoCollection = js.native
   def next(selector: String): ZeptoCollection = js.native
+  
   /**
     * @see ZeptoCollection.not
     * @param collection
@@ -574,6 +634,7 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def not(selector: String): ZeptoCollection = js.native
+  
   /**
     * @see ZeptoCollection.off
     **/
@@ -601,6 +662,7 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def off(`type`: String, selector: String, fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   /**
     * Get position of the element in the document. Returns an object with properties: top, left, width and height.
     * When given an object with properties left and top, use those values to position each element in the collection relative to the document.
@@ -617,11 +679,13 @@ trait ZeptoCollection extends js.Object {
     * @param fn
     **/
   def offset(fn: js.Function2[/* index */ Double, /* oldOffset */ Double, Unit]): ZeptoCollection = js.native
+  
   /**
     * Find the first ancestor element that is positioned, meaning its CSS position value is “relative”, “absolute” or “fixed”.
     * @return
     **/
   def offsetParent(): ZeptoCollection = js.native
+  
   // todo: v0.9 will introduce string literals
   //on(type: 'ajaxStart', fn: ZeptoAjaxStartEvent): ZeptoCollection;
   //on(type: 'ajaxBeforeSend', fn: ZeptoAjaxBeforeSendEvent): ZeptoCollection;
@@ -649,6 +713,7 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def on(`type`: String, selector: String, fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   /**
     * @see ZeptoCollection.one
     * @param events
@@ -661,6 +726,7 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def one(`type`: String, fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   /**
     * Get immediate parents of each element in the collection. If CSS selector is given, filter results to include only ones matching the selector.
     * @param selector
@@ -668,6 +734,7 @@ trait ZeptoCollection extends js.Object {
     **/
   def parent(): ZeptoCollection = js.native
   def parent(selector: String): ZeptoCollection = js.native
+  
   /**
     * Get all ancestors of each element in the collection. If CSS selector is given, filter results to include only ones matching the selector.
     * To get only immediate parents, use parent. To only get the first ancestor that matches the selector, use closest.
@@ -676,6 +743,7 @@ trait ZeptoCollection extends js.Object {
     **/
   def parents(): ZeptoCollection = js.native
   def parents(selector: String): ZeptoCollection = js.native
+  
   /**
     * Get values from a named property of each element in the collection, with null and undefined values filtered out.
     * (!) This is a Zepto-provided method that is not part of the jQuery API.
@@ -683,12 +751,14 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def pluck(property: String): js.Array[String] = js.native
+  
   /**
     * Get the position of the first element in the collection, relative to the offsetParent. This information is useful when absolutely positioning an element to appear aligned with another.
     * Returns an object with properties: top, left.
     * @return
     **/
   def position(): ZeptoPosition = js.native
+  
   /**
     * Prepend content to the DOM inside each element in the collection. The content can be an HTML string, a DOM node or an array of nodes.
     * @param content
@@ -710,6 +780,7 @@ trait ZeptoCollection extends js.Object {
     * @param content
     **/
   def prepend(content: ZeptoCollection): ZeptoCollection = js.native
+  
   /**
     * Prepend elements of the current collection inside each of the target elements. This is like prepend, only with reversed operands.
     * @param content
@@ -731,6 +802,7 @@ trait ZeptoCollection extends js.Object {
     * @param content
     **/
   def prependTo(content: ZeptoCollection): ZeptoCollection = js.native
+  
   /**
     * Get the previous sibling—optionally filtered by selector—of each element in the collection.
     * @param selector
@@ -738,6 +810,7 @@ trait ZeptoCollection extends js.Object {
     **/
   def prev(): ZeptoCollection = js.native
   def prev(selector: String): ZeptoCollection = js.native
+  
   /**
     * Read or set properties of DOM elements. This should be preferred over attr in case of reading values of properties that change with user interaction over time, such as checked and selected.
     * @param prop
@@ -754,6 +827,7 @@ trait ZeptoCollection extends js.Object {
     * @param value
     **/
   def prop(name: String, value: js.Any): ZeptoCollection = js.native
+  
   /**
     * Add elements to the end of the current collection.
     * (!) This is a Zepto-provided method that is not part of the jQuery API.
@@ -761,12 +835,14 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def push(elements: js.Any*): ZeptoCollection = js.native
+  
   /**
     * Attach an event handler for the “DOMContentLoaded” event that fires when the DOM on the page is ready. It’s recommended to use the $() function instead of this method.
     * @param fn
     * @return
     **/
   def ready(fn: js.Function1[/* $ */ ZeptoStatic, Unit]): ZeptoCollection = js.native
+  
   /**
     * Identical to Array.reduce that iterates over current collection.
     * (!) This is a Zepto-provided method that is not part of the jQuery API.
@@ -783,17 +859,20 @@ trait ZeptoCollection extends js.Object {
       _
     ]
   ): js.Any = js.native
+  
   /**
     * Remove elements in the current collection from their parent nodes, effectively detaching them from the DOM.
     * @return
     **/
   def remove(): ZeptoCollection = js.native
+  
   /**
     * Remove the specified attribute from all elements in the collection.
     * @param name
     * @return
     **/
   def removeAttr(name: String): ZeptoCollection = js.native
+  
   /**
     * Remove the specified class name from all elements in the collection. When the class name isn’t given, remove all class names. Multiple class names can be given in a space-separated string.
     * @param name
@@ -806,6 +885,7 @@ trait ZeptoCollection extends js.Object {
     **/
   def removeClass(fn: js.Function2[/* index */ Double, /* oldClassName */ String, Unit]): ZeptoCollection = js.native
   def removeClass(name: String): ZeptoCollection = js.native
+  
   /**
     * Replace each element in the collection—both its contents and the element itself—with the new content. Content can be of any type described in before.
     * @param content
@@ -822,17 +902,22 @@ trait ZeptoCollection extends js.Object {
     * @param content
     **/
   def replaceWith(content: HTMLElement): ZeptoCollection = js.native
+  
   def resize(): ZeptoCollection = js.native
   def resize(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   def scroll(): ZeptoCollection = js.native
   def scroll(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   /**
     * Gets the value of how many pixels were scrolled so far on window or scrollable element on the page.
     * @return
     **/
   def scrollTop(): Double = js.native
+  
   def select(): ZeptoCollection = js.native
   def select(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   /**
     * Form
     **/
@@ -841,16 +926,19 @@ trait ZeptoCollection extends js.Object {
     * @return Seralized form values in URL-encoded string.
     **/
   def serialize(): String = js.native
+  
   /**
     * Serialize form into an array of objects with name and value properties. Disabled form controls, buttons, and unchecked radio buttons/checkboxes are skipped. The result doesn’t include data from file inputs.
     * @return Array with name value pairs from the Form.
     **/
   def serializeArray(): js.Array[_] = js.native
+  
   /**
     * Restore the default value for the “display” property of each element in the array, effectively showing them if they were hidden with hide.
     * @return
     **/
   def show(): ZeptoCollection = js.native
+  
   /**
     * Get all sibling nodes of each element in the collection. If CSS selector is specified, filter the results to contain only elements that match the selector.
     * @param selector
@@ -858,11 +946,13 @@ trait ZeptoCollection extends js.Object {
     **/
   def siblings(): ZeptoCollection = js.native
   def siblings(selector: String): ZeptoCollection = js.native
+  
   /**
     * Get the number of elements in this collection.
     * @return
     **/
   def size(): Double = js.native
+  
   /**
     * Extract the subset of this array, starting at start index. If end is specified, extract up to but not including end index.
     * @param start
@@ -873,6 +963,7 @@ trait ZeptoCollection extends js.Object {
   def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[ZeptoCollection] = js.native
   def slice(start: Double): js.Array[ZeptoCollection] = js.native
   def slice(start: Double, end: Double): js.Array[ZeptoCollection] = js.native
+  
   /**
     * Trigger or attach a handler for the submit event. When no function given, trigger the “submit” event on the current form and have it perform its submit action unless preventDefault() was called for the event.
     * When a function is given, this simply attaches it as a handler for the “submit” event on current elements.
@@ -885,6 +976,7 @@ trait ZeptoCollection extends js.Object {
     * @return Self object.
     **/
   def submit(fn: js.Function1[/* e */ js.Any, Unit]): ZeptoCollection = js.native
+  
   /**
     * Get or set the text content of elements in the collection. When no content is given, returns the text content of the first element in the collection. When content is given, uses it to replace the text contents of each element in the collection. This is similar to html, with the exception it can’t be used for getting or setting HTML.
     * @return
@@ -896,6 +988,7 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def text(content: String): ZeptoCollection = js.native
+  
   /**
     * Toggle between showing and hiding each of the elements, based on whether the first element is visible or not. If setting is present, this method behaves like show if setting is truthy or hide otherwise.
     * @param setting
@@ -903,6 +996,7 @@ trait ZeptoCollection extends js.Object {
     **/
   def toggle(): ZeptoCollection = js.native
   def toggle(setting: Boolean): ZeptoCollection = js.native
+  
   /**
     * @see ZeptoCollection.toggleClass
     * @param fn
@@ -917,6 +1011,7 @@ trait ZeptoCollection extends js.Object {
     **/
   def toggleClass(names: String): ZeptoCollection = js.native
   def toggleClass(names: String, setting: Boolean): ZeptoCollection = js.native
+  
   /**
     * Trigger the specified event on elements of the collection. Event can either be a string type, or a full event object obtained with $.Event. If a data array is given, it is passed as additional arguments to event handlers.
     * (!) Zepto only supports triggering events on DOM elements.
@@ -926,6 +1021,7 @@ trait ZeptoCollection extends js.Object {
     **/
   def trigger(event: String): ZeptoCollection = js.native
   def trigger(event: String, data: js.Array[_]): ZeptoCollection = js.native
+  
   /**
     * Like trigger, but triggers only event handlers on current elements and doesn’t bubble.
     * @param event
@@ -934,6 +1030,7 @@ trait ZeptoCollection extends js.Object {
     **/
   def triggerHandler(event: String): ZeptoCollection = js.native
   def triggerHandler(event: String, data: js.Array[_]): ZeptoCollection = js.native
+  
   /**
     * Detach event handler added with bind.
     * @deprecated use ZeptoCollection.off instead.
@@ -942,6 +1039,7 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def unbind(`type`: String, fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   /**
     * Detach event handler added with delegate.
     * @deprecated use ZeptoCollection.off instead.
@@ -951,13 +1049,16 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def undelegate(selector: String, `type`: String, fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   def unload(): ZeptoCollection = js.native
   def unload(fn: ZeptoEventHandler): ZeptoCollection = js.native
+  
   /**
     * Remove immediate parent nodes of each element in the collection and put their children in their place. Basically, this method removes one level of ancestry while keeping current elements in the DOM.
     * @return
     **/
   def unwrap(): ZeptoCollection = js.native
+  
   /**
     * Get or set the value of form controls. When no value is given, return the value of the first element. For <select multiple>, an array of values is returend. When a value is given, set all elements to this value.
     * @return
@@ -974,6 +1075,7 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def `val`(value: js.Any): ZeptoCollection = js.native
+  
   /**
     * Get the width of the first element in the collection; or set the width of all elements in the collection.
     * @return
@@ -990,6 +1092,7 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def width(value: Double): ZeptoCollection = js.native
+  
   /**
     * @see ZeptoCollection.wrap
     * @param fn
@@ -1007,6 +1110,7 @@ trait ZeptoCollection extends js.Object {
     * @param structure
     **/
   def wrap(structure: HTMLElement): ZeptoCollection = js.native
+  
   /**
     * Wrap all elements in a single structure. Structure can be a single element or several nested elements, and can be passed in as a HTML string or DOM node.
     * @param structure
@@ -1018,6 +1122,7 @@ trait ZeptoCollection extends js.Object {
     * @param structure
     **/
   def wrapAll(structure: HTMLElement): ZeptoCollection = js.native
+  
   /**
     * @see ZeptoCollection.wrapInner
     * @param fn
@@ -1035,4 +1140,3 @@ trait ZeptoCollection extends js.Object {
     **/
   def wrapInner(structure: HTMLElement): ZeptoCollection = js.native
 }
-

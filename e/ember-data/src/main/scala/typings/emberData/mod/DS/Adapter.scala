@@ -4,8 +4,11 @@ import typings.emberObject.mod.default
 import typings.rsvp.mod.default.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Instead of declaring `coalesceFindRequests` as a property we now declare it in an
+// interface. This works around the issue noted here with TypeScript 4:
+// https://github.com/microsoft/TypeScript/issues/40220
 /**
   * An adapter is an object that receives requests from a store and
   * translates them into the appropriate action to take against your
@@ -17,6 +20,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "DS.Adapter")
 @js.native
 class Adapter () extends default {
+  
   /**
     * By default the store will try to coalesce all `fetchRecord` calls within the same runloop
     * into as few requests as possible by calling groupRecordsForFindMany and passing it into a findMany call.
@@ -24,12 +28,7 @@ class Adapter () extends default {
     * coalesceFindRequests to false.
     */
   var coalesceFindRequests: Boolean = js.native
-  /**
-    * If you would like your adapter to use a custom serializer you can
-    * set the `defaultSerializer` property to be the name of the custom
-    * serializer.
-    */
-  var defaultSerializer: String = js.native
+  
   /**
     * Implement this method in a subclass to handle the creation of
     * new records.
@@ -39,6 +38,14 @@ class Adapter () extends default {
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     snapshot: Snapshot[K]
   ): Promise[_] = js.native
+  
+  /**
+    * If you would like your adapter to use a custom serializer you can
+    * set the `defaultSerializer` property to be the name of the custom
+    * serializer.
+    */
+  var defaultSerializer: String = js.native
+  
   /**
     * Implement this method in a subclass to handle the deletion of
     * a record.
@@ -48,6 +55,7 @@ class Adapter () extends default {
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     snapshot: Snapshot[K]
   ): Promise[_] = js.native
+  
   /**
     * The `findAll()` method is used to retrieve all records for a given type.
     */
@@ -57,6 +65,7 @@ class Adapter () extends default {
     sinceToken: String,
     snapshotRecordArray: SnapshotRecordArray[K]
   ): Promise[_] = js.native
+  
   /**
     * The store will call `findMany` instead of multiple `findRecord`
     * requests to find multiple records at once if coalesceFindRequests
@@ -68,6 +77,7 @@ class Adapter () extends default {
     ids: js.Array[_],
     snapshots: js.Array[_]
   ): Promise[_] = js.native
+  
   /**
     * The `findRecord()` method is invoked when the store is asked for a record that
     * has not previously been loaded. In response to `findRecord()` being called, you
@@ -81,6 +91,7 @@ class Adapter () extends default {
     id: String,
     snapshot: Snapshot[K]
   ): Promise[_] = js.native
+  
   /**
     * If the globally unique IDs for your records should be generated on the client,
     * implement the `generateIdForRecord()` method. This method will be invoked
@@ -92,11 +103,13 @@ class Adapter () extends default {
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     inputProperties: js.Object
   ): String | Double = js.native
+  
   /**
     * Organize records into groups, each of which is to be passed to separate
     * calls to `findMany`.
     */
   def groupRecordsForFindMany(store: Store, snapshots: js.Array[_]): js.Array[_] = js.native
+  
   /**
     * This method is called when you call `query` on the store.
     */
@@ -106,6 +119,7 @@ class Adapter () extends default {
     query: js.Object,
     recordArray: AdapterPopulatedRecordArray[_]
   ): Promise[_] = js.native
+  
   /**
     * The `queryRecord()` method is invoked when the store is asked for a single
     * record through a query object.
@@ -115,34 +129,40 @@ class Adapter () extends default {
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     query: js.Object
   ): Promise[_] = js.native
+  
   /**
     * Proxies to the serializer's `serialize` method.
     */
   def serialize[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](snapshot: Snapshot[K], options: js.Object): js.Object = js.native
+  
   /**
     * This method is used by the store to determine if the store should
     * reload a record array after the `store.findAll` method resolves
     * with a cached record array.
     */
   def shouldBackgroundReloadAll[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](store: Store, snapshotRecordArray: SnapshotRecordArray[K]): Boolean = js.native
+  
   /**
     * This method is used by the store to determine if the store should
     * reload a record after the `store.findRecord` method resolves a
     * cached record.
     */
   def shouldBackgroundReloadRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](store: Store, snapshot: Snapshot[K]): Boolean = js.native
+  
   /**
     * This method is used by the store to determine if the store should
     * reload all records from the adapter when records are requested by
     * `store.findAll`.
     */
   def shouldReloadAll[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](store: Store, snapshotRecordArray: SnapshotRecordArray[K]): Boolean = js.native
+  
   /**
     * This method is used by the store to determine if the store should
     * reload a record from the adapter when a record is requested by
     * `store.findRecord`.
     */
   def shouldReloadRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](store: Store, snapshot: Snapshot[K]): Boolean = js.native
+  
   /**
     * Implement this method in a subclass to handle the updating of
     * a record.
@@ -153,4 +173,3 @@ class Adapter () extends default {
     snapshot: Snapshot[K]
   ): Promise[_] = js.native
 }
-

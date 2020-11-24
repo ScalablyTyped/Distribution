@@ -2,7 +2,7 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains a list of pc.MorphTarget, a combined delta AABB and some associated data.
@@ -19,4 +19,3 @@ class Morph protected ()
     graphicsDevice: typings.playcanvas.pc.GraphicsDevice
   ) = this()
 }
-

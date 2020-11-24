@@ -16,37 +16,18 @@ import typings.chromeApps.chromeAppsStrings.setter
 import typings.chromeApps.chromeAppsStrings.unmanaged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Typeofonc extends js.Object {
+  
   /**
     * Partial classes for internal use
     * @internal
     * @private
     */
   val _internal_ : js.Any = js.native
-  /**
-    * Fired when the list of devices has changed or any device state properties have changed.
-    */
-  val onDeviceStateListChanged: Event[js.Function0[Unit]] = js.native
-  /**
-    * Fired when the list of networks has changed. Sends a complete list of GUIDs for all the current networks.
-    */
-  val onNetworkListChanged: Event[js.Function1[/* changes */ js.Array[String], Unit]] = js.native
-  //
-  // EVENTS
-  //
-  /**
-    * Fired when the properties change on any of the networks.
-    * Sends a list of GUIDs for networks whose properties have changed.
-    */
-  val onNetworksChanged: Event[js.Function1[/* changes */ js.Array[String], Unit]] = js.native
-  /**
-    * Fired when a portal detection for a network completes.
-    * Sends the GUID of the network and the corresponding captive portal status.
-    */
-  val onPortalDetectionCompleted: Event[js.Function2[/* networkGuid */ String, /* status */ CaptivePortalStatus, Unit]] = js.native
+  
   /**
     * Creates a new network configuration from properties.
     * If a matching configured network already exists, this will fail.
@@ -59,18 +40,21 @@ trait Typeofonc extends js.Object {
     */
   def createNetwork(shared: `false`, properties: NetworkConfigProperties[setter]): Unit = js.native
   def createNetwork(shared: `false`, properties: NetworkConfigProperties[setter], callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Disables any devices matching the specified network type.
     * Note, the type might represent multiple network types (e.g. 'Wireless').
     * @param networkType The type of network to disable.
     */
   def disableNetworkType(networkType: NetworkType): Unit = js.native
+  
   /**
     * Enables any devices matching the specified network type.
     * Note, the type might represent multiple network types (e.g. 'Wireless').
     * @param networkType The type of network to enable.
     */
   def enableNetworkType(networkType: NetworkType): Unit = js.native
+  
   /**
     * Forgets a network configuration by clearing any configured properties for the network with GUID networkGuid.
     * This may also include any other networks with matching identifiers (e.g. WiFi SSID and Security).
@@ -81,22 +65,26 @@ trait Typeofonc extends js.Object {
     */
   def forgetNetwork(networkGuid: String): Unit = js.native
   def forgetNetwork(networkGuid: String, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Returns captive portal status for the network matching 'networkGuid'.
     * @param networkGuid The GUID of the network to get captive portal status for.
     * @param callback A callback function that returns the results of the query for network captive portal status.
     */
   def getCaptivePortalStatus(networkGuid: String, callback: js.Function1[/* result */ CaptivePortalStatus, Unit]): Unit = js.native
+  
   /**
     * Returns states of available networking devices.
     * @param callback Called with a list of devices and their state.
     */
   def getDeviceStates(callback: js.Function1[/* result */ js.Array[DeviceStates], Unit]): Unit = js.native
+  
   /**
     * Gets the global policy properties.
     * These properties are not expected to change during a session.
     */
   def getGlobalPolicy(callback: js.Function1[/* result */ GlobalPolicy, Unit]): Unit = js.native
+  
   /**
     * Gets the merged properties of the network with id networkGuid from the sources:
     * User settings, shared settings, user policy, device policy and the currently active settings.
@@ -104,6 +92,7 @@ trait Typeofonc extends js.Object {
     * @param callback Called with the managed network properties when received.
     */
   def getManagedProperties(networkGuid: String, callback: js.Function1[/* result */ ManagedProperties, Unit]): Unit = js.native
+  
   /**
     * Returns a list of network objects with the same properties provided by *getState*.
     * A filter is provided to specify the type of networks returned and to limit the number of networks.
@@ -111,6 +100,7 @@ trait Typeofonc extends js.Object {
     * @param callback Called with a interface of networks and their state properties when received.
     */
   def getNetworks(filter: Filter, callback: js.Function1[/* result */ js.Array[NetworkStateProperties], Unit]): Unit = js.native
+  
   /**
     * Gets all the properties of the network with id *networkGuid*.
     * Includes all properties of the network (read-only and read/write values).
@@ -118,6 +108,7 @@ trait Typeofonc extends js.Object {
     * @param callback Called with the network properties when received.
     */
   def getProperties(networkGuid: String, callback: js.Function1[/* result */ NetworkProperties[unmanaged, full], Unit]): Unit = js.native
+  
   /**
     * Gets the cached read-only properties of the network with id *networkGuid*.
     * This is meant to be a higher performance function than *getProperties*,
@@ -131,6 +122,32 @@ trait Typeofonc extends js.Object {
     * @param callback Called immediately with the network state properties.
     */
   def getState(networkGuid: String, callback: js.Function1[/* result */ NetworkStateProperties, Unit]): Unit = js.native
+  
+  /**
+    * Fired when the list of devices has changed or any device state properties have changed.
+    */
+  val onDeviceStateListChanged: Event[js.Function0[Unit]] = js.native
+  
+  /**
+    * Fired when the list of networks has changed. Sends a complete list of GUIDs for all the current networks.
+    */
+  val onNetworkListChanged: Event[js.Function1[/* changes */ js.Array[String], Unit]] = js.native
+  
+  //
+  // EVENTS
+  //
+  /**
+    * Fired when the properties change on any of the networks.
+    * Sends a list of GUIDs for networks whose properties have changed.
+    */
+  val onNetworksChanged: Event[js.Function1[/* changes */ js.Array[String], Unit]] = js.native
+  
+  /**
+    * Fired when a portal detection for a network completes.
+    * Sends the GUID of the network and the corresponding captive portal status.
+    */
+  val onPortalDetectionCompleted: Event[js.Function2[/* networkGuid */ String, /* status */ CaptivePortalStatus, Unit]] = js.native
+  
   /**
     * Requests that the networking subsystem scan for new networks and update the list returned by *getVisibleNetworks*.
     * This is only a request: the network subsystem can choose to ignore it.
@@ -145,6 +162,7 @@ trait Typeofonc extends js.Object {
     * @since Chrome 63.
     */
   def requestNetworkScan(networkType: NetworkType): Unit = js.native
+  
   /**
     * Sets the properties of the network with id *networkGuid*.
     * This is only valid for configured networks (Source != None).
@@ -158,6 +176,7 @@ trait Typeofonc extends js.Object {
   def setProperties_setter(networkGuid: String, properties: NetworkConfigProperties[setter]): Unit = js.native
   @JSName("setProperties")
   def setProperties_setter(networkGuid: String, properties: NetworkConfigProperties[setter], callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * @description Starts a connection to the network with networkGuid.
     * @param networkGuid The GUID of the network to connect to.
@@ -167,6 +186,7 @@ trait Typeofonc extends js.Object {
     */
   def startConnect(networkGuid: String): Unit = js.native
   def startConnect(networkGuid: String, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * @description Starts a disconnect from the network with networkGuid.
     * @param networkGuid The GUID of the network to connect to.
@@ -175,4 +195,3 @@ trait Typeofonc extends js.Object {
   def startDisconnect(networkGuid: String): Unit = js.native
   def startDisconnect(networkGuid: String, callback: js.Function0[Unit]): Unit = js.native
 }
-

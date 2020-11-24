@@ -10,9 +10,9 @@ Utilities for determining if characters belong to character classes defined by t
 | ------------------ | :-------------: |
 | Full name          | xmlchars |
 | Keywords           | XML, validation |
-| # releases         | 12 |
-| # dependents       | 5 |
-| # downloads        | 69302731 |
+| # releases         | 7 |
+| # dependents       | 20 |
+| # downloads        | 188353707 |
 | # stars            | 0 |
 
 ## Links

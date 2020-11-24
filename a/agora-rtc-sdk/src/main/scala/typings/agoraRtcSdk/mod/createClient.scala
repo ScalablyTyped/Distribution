@@ -2,11 +2,12 @@ package typings.agoraRtcSdk.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("agora-rtc-sdk", "createClient")
 @js.native
 object createClient extends js.Object {
+  
   /**
     * Creates a Client Object
     *
@@ -16,4 +17,3 @@ object createClient extends js.Object {
     */
   def apply(config: ClientConfig): Client = js.native
 }
-

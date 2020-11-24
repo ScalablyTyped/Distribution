@@ -11,21 +11,19 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An HTTP request client.
   */
 @js.native
 trait Client_ extends js.Object {
+  
   /**
     * An object containing the node agents used for pooling connections for `http` and `https`.
     */
   var agents: Agents = js.native
-  /**
-    * An event emitter used to deliver events when the `events` option is set.
-    */
-  var events: js.UndefOr[Events] = js.native
+  
   /**
     * Creates a new client using the current client options as defaults and the provided options as override.
     * 
@@ -34,6 +32,7 @@ trait Client_ extends js.Object {
     * @returns a new client.
     */
   def defaults(options: Options): Client = js.native
+  
   /**
     * Performs an HTTP DELETE request.
     *
@@ -47,6 +46,12 @@ trait Client_ extends js.Object {
     uri: String,
     options: typings.hapiWreck.mod.Client.request.Options with typings.hapiWreck.mod.Client.read.Options
   ): js.Promise[Response[T]] = js.native
+  
+  /**
+    * An event emitter used to deliver events when the `events` option is set.
+    */
+  var events: js.UndefOr[Events] = js.native
+  
   /**
     * Performs an HTTP GET request.
     * 
@@ -60,6 +65,7 @@ trait Client_ extends js.Object {
     uri: String,
     options: typings.hapiWreck.mod.Client.request.Options with typings.hapiWreck.mod.Client.read.Options
   ): js.Promise[Response[T]] = js.native
+  
   /**
     * Parses the HTTP Cache-Control header.
     * 
@@ -68,6 +74,7 @@ trait Client_ extends js.Object {
     * @returns an object with the header parameters or null if invalid.
     */
   def parseCacheControl(field: String): Parameters | Null = js.native
+  
   /**
     * Performs an HTTP PATCH request.
     *
@@ -81,6 +88,7 @@ trait Client_ extends js.Object {
     uri: String,
     options: typings.hapiWreck.mod.Client.request.Options with typings.hapiWreck.mod.Client.read.Options
   ): js.Promise[Response[T]] = js.native
+  
   /**
     * Performs an HTTP POST request.
     *
@@ -94,6 +102,7 @@ trait Client_ extends js.Object {
     uri: String,
     options: typings.hapiWreck.mod.Client.request.Options with typings.hapiWreck.mod.Client.read.Options
   ): js.Promise[Response[T]] = js.native
+  
   /**
     * Performs an HTTP PUT request.
     *
@@ -107,6 +116,7 @@ trait Client_ extends js.Object {
     uri: String,
     options: typings.hapiWreck.mod.Client.request.Options with typings.hapiWreck.mod.Client.read.Options
   ): js.Promise[Response[T]] = js.native
+  
   def read[T](res: IncomingMessage): js.Promise[T] = js.native
   def read[T](res: IncomingMessage, options: typings.hapiWreck.mod.Client.read.Options): js.Promise[T] = js.native
   /**
@@ -119,6 +129,7 @@ trait Client_ extends js.Object {
     */
   def read[T](res: Readable): js.Promise[T] = js.native
   def read[T](res: Readable, options: typings.hapiWreck.mod.Client.read.Options): js.Promise[T] = js.native
+  
   /**
     * Request an HTTP resource.
     * 
@@ -130,6 +141,7 @@ trait Client_ extends js.Object {
     */
   def request(method: String, url: String): PromiseIncomingMessagereq = js.native
   def request(method: String, url: String, options: typings.hapiWreck.mod.Client.request.Options): PromiseIncomingMessagereq = js.native
+  
   /**
     * Converts a buffer, string, or an array of them into a readable stream.
     * 
@@ -141,4 +153,3 @@ trait Client_ extends js.Object {
   def toReadableStream(payload: Payload): Readable = js.native
   def toReadableStream(payload: Payload, encoding: String): Readable = js.native
 }
-

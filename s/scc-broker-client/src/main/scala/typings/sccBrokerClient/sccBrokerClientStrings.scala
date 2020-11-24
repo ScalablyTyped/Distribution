@@ -2,9 +2,43 @@ package typings.sccBrokerClient
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sccBrokerClientStrings {
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def message: message = "message".asInstanceOf[message]
+  
+  @scala.inline
+  def publish: publish = "publish".asInstanceOf[publish]
+  
+  @scala.inline
+  def publishFail: publishFail = "publishFail".asInstanceOf[publishFail]
+  
+  @scala.inline
+  def simple: simple = "simple".asInstanceOf[simple]
+  
+  @scala.inline
+  def skeletonRendezvous: skeletonRendezvous = "skeletonRendezvous".asInstanceOf[skeletonRendezvous]
+  
+  @scala.inline
+  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
+  
+  @scala.inline
+  def subscribeFail: subscribeFail = "subscribeFail".asInstanceOf[subscribeFail]
+  
+  @scala.inline
+  def unsubscribe: unsubscribe = "unsubscribe".asInstanceOf[unsubscribe]
+  
+  @scala.inline
+  def updateBrokers: updateBrokers = "updateBrokers".asInstanceOf[updateBrokers]
+  
+  @scala.inline
+  def updateWorkers: updateWorkers = "updateWorkers".asInstanceOf[updateWorkers]
+  
   @js.native
   sealed trait error extends js.Object
   
@@ -37,28 +71,4 @@ object sccBrokerClientStrings {
   
   @js.native
   sealed trait updateWorkers extends js.Object
-  
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def publish: publish = "publish".asInstanceOf[publish]
-  @scala.inline
-  def publishFail: publishFail = "publishFail".asInstanceOf[publishFail]
-  @scala.inline
-  def simple: simple = "simple".asInstanceOf[simple]
-  @scala.inline
-  def skeletonRendezvous: skeletonRendezvous = "skeletonRendezvous".asInstanceOf[skeletonRendezvous]
-  @scala.inline
-  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
-  @scala.inline
-  def subscribeFail: subscribeFail = "subscribeFail".asInstanceOf[subscribeFail]
-  @scala.inline
-  def unsubscribe: unsubscribe = "unsubscribe".asInstanceOf[unsubscribe]
-  @scala.inline
-  def updateBrokers: updateBrokers = "updateBrokers".asInstanceOf[updateBrokers]
-  @scala.inline
-  def updateWorkers: updateWorkers = "updateWorkers".asInstanceOf[updateWorkers]
 }
-

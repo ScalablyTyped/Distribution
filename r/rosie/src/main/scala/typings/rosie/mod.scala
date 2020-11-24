@@ -5,13 +5,17 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rosie", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  var Factory: IFactoryStatic = js.native
+  
   @js.native
   trait IFactory[T] extends js.Object {
+    
     /**
       * Sets a post-processor callback that will receive built objects and the
       * options for the build just before they are returned from the #build
@@ -21,6 +25,7 @@ object mod extends js.Object {
       * @return {Factory}
       */
     def after(functionArg: js.Function2[/* obj */ T, /* opts */ js.UndefOr[js.Any], Unit]): IFactory[T] = js.native
+    
     /**
       * Define an attribute on this factory. Attributes can optionally define a
       * default value, either as a value (e.g. a string or number) or as a builder
@@ -121,6 +126,7 @@ object mod extends js.Object {
           /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
         ]
     ): IFactory[T] = js.native
+    
     /**
       * Builds a plain object containing values for each of the declared
       * attributes. The result of this is the same as the result when using #build
@@ -143,6 +149,7 @@ object mod extends js.Object {
       options: js.Any
     ): T = js.native
     def attributes(attributes: js.UndefOr[scala.Nothing], options: js.Any): T = js.native
+    
     /**
       * Convenience function for defining a set of attributes on this object as
       * builder functions or static values. If you need to specify dependencies,
@@ -163,6 +170,7 @@ object mod extends js.Object {
     {[ K in Keys ]: T[K] | (opts : any | undefined): T[K]}
       */ typings.rosie.rosieStrings.IFactory with TopLevel[js.Any]
     ): IFactory[T] = js.native
+    
     /**
       * Builds objects by getting values for all attributes and optionally passing
       * the result to a constructor function.
@@ -184,6 +192,7 @@ object mod extends js.Object {
       options: js.Any
     ): T = js.native
     def build(attributes: js.UndefOr[scala.Nothing], options: js.Any): T = js.native
+    
     def buildList(size: Double): js.Array[T] = js.native
     def buildList(
       size: Double,
@@ -199,6 +208,7 @@ object mod extends js.Object {
       options: js.Any
     ): js.Array[T] = js.native
     def buildList(size: Double, attributes: js.UndefOr[scala.Nothing], options: js.Any): js.Array[T] = js.native
+    
     /**
       * Extends a given factory by copying over its attributes, options,
       * callbacks, and constructor. This can be useful when you want to make
@@ -209,6 +219,7 @@ object mod extends js.Object {
       */
     def extend[K /* <: T */, T](name: String): IFactory[K] = js.native
     def extend[K /* <: T */, T](name: IFactory[T]): IFactory[K] = js.native
+    
     /**
       * Sets the constructor for this factory to be another factory. This can be
       * used to create more specific sub-types of factories.
@@ -217,6 +228,7 @@ object mod extends js.Object {
       * @return {Factory}
       */
     def inherits(functionArg: js.Function1[/* parentFactory */ IFactory[T], Unit]): IFactory[T] = js.native
+    
     /**
       * Define an option for this factory. Options are values that may inform
       * dynamic attribute behavior but are not included in objects built by the
@@ -251,6 +263,7 @@ object mod extends js.Object {
     def option(name: String, dependenciesOrValue: js.Any, value: js.Any): IFactory[T] = js.native
     def option(name: String, dependenciesOrValue: js.Array[String]): IFactory[T] = js.native
     def option(name: String, dependenciesOrValue: js.Array[String], value: js.Any): IFactory[T] = js.native
+    
     /**
       * Generates values for all the registered options using the values given.
       *
@@ -259,6 +272,7 @@ object mod extends js.Object {
       * @return {object}
       */
     def options(options: js.Any): js.Any = js.native
+    
     /**
       * Defines an attribute that, by default, simply has an auto-incrementing
       * numeric value starting at 1. You can provide your own builder function
@@ -288,6 +302,7 @@ object mod extends js.Object {
   @js.native
   trait IFactoryStatic
     extends Instantiable0[IFactory[js.Object]] {
+    
     /**
       * Locates a factory by name and calls #attributes on it.
       *
@@ -298,6 +313,7 @@ object mod extends js.Object {
       */
     def attributes(name: String, attributes: js.Any): js.Any = js.native
     def attributes(name: String, attributes: js.Any, options: js.Any): js.Any = js.native
+    
     /**
       * Locates a factory by name and calls #build on it.
       *
@@ -321,6 +337,7 @@ object mod extends js.Object {
       options: js.Any
     ): T = js.native
     def build[T](name: String, attributes: js.UndefOr[scala.Nothing], options: js.Any): T = js.native
+    
     /**
       * Builds a collection of objects using the named factory.
       *
@@ -330,10 +347,24 @@ object mod extends js.Object {
       * @param {object=} options
       * @return {Array.<*>}
       */
-    def buildList(name: String, size: Double): js.Array[_] = js.native
-    def buildList(name: String, size: Double, attributes: js.UndefOr[scala.Nothing], options: js.Any): js.Array[_] = js.native
-    def buildList(name: String, size: Double, attributes: js.Any): js.Array[_] = js.native
-    def buildList(name: String, size: Double, attributes: js.Any, options: js.Any): js.Array[_] = js.native
+    def buildList[T](name: String, size: Double): js.Array[T] = js.native
+    def buildList[T](
+      name: String,
+      size: Double,
+      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ k in keyof T ]:? T[k] | boolean}
+      */ typings.rosie.rosieStrings.IFactoryStatic with TopLevel[T]
+    ): js.Array[T] = js.native
+    def buildList[T](
+      name: String,
+      size: Double,
+      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ k in keyof T ]:? T[k] | boolean}
+      */ typings.rosie.rosieStrings.IFactoryStatic with TopLevel[T],
+      options: js.Any
+    ): js.Array[T] = js.native
+    def buildList[T](name: String, size: Double, attributes: js.UndefOr[scala.Nothing], options: js.Any): js.Array[T] = js.native
+    
     /**
       * Defines a factory by name and constructor function. Call #attr and #option
       * on the result to define the properties of this factory.
@@ -346,7 +377,4 @@ object mod extends js.Object {
     def define[T](name: String, constructor: js.Function1[/* repeated */ js.Any, _]): IFactory[T] = js.native
     def define[T](name: String, constructor: Instantiable1[/* opts (repeated) */ js.Any, js.Any]): IFactory[T] = js.native
   }
-  
-  var Factory: IFactoryStatic = js.native
 }
-

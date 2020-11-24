@@ -2,11 +2,12 @@ package typings.rxjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/operators/findIndex", JSImport.Namespace)
 @js.native
 object operatorsFindIndexMod extends js.Object {
+  
   def findIndex[T](
     predicate: js.Function3[
       /* value */ T, 
@@ -25,4 +26,3 @@ object operatorsFindIndexMod extends js.Object {
     thisArg: js.Any
   ): js.Any = js.native
 }
-

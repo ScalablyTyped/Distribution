@@ -1,7 +1,7 @@
 
 # Scala.js typings for node
 
-Typings are for version 14.0
+Typings are for version 14.14
 
 ## Library description:
 node
@@ -10,9 +10,9 @@ node
 | ------------------ | :-------------: |
 | Full name          | node |
 | Keywords           | runtime |
-| # releases         | 108 |
-| # dependents       | 171 |
-| # downloads        | 3286651 |
+| # releases         | 122 |
+| # dependents       | 245 |
+| # downloads        | 5328351 |
 | # stars            | 23 |
 
 ## Links

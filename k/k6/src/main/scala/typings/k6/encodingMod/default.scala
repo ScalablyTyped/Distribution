@@ -2,7 +2,7 @@ package typings.k6.encodingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The encoding module provides base64 encoding/decoding.
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("k6/encoding", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * Base64 decode a string.
     * https://k6.io/docs/javascript-api/k6-encoding/b64decode-input-encoding
@@ -23,6 +24,7 @@ object default extends js.Object {
     */
   def b64decode(input: String): String = js.native
   def b64decode(input: String, encoding: Base64Variant): String = js.native
+  
   /**
     * Base64 decode a string.
     * https://k6.io/docs/javascript-api/k6-encoding/b64decode-input-encoding
@@ -36,4 +38,3 @@ object default extends js.Object {
   def b64encode(input: String): String = js.native
   def b64encode(input: String, encoding: Base64Variant): String = js.native
 }
-

@@ -12,7 +12,7 @@ Babel plugin to transform sx prop
 | Keywords           | babel, sx, glaze |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 61 |
+| # downloads        | 392 |
 | # stars            | 0 |
 
 ## Links

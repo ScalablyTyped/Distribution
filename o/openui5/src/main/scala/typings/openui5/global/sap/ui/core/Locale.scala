@@ -2,7 +2,7 @@ package typings.openui5.global.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.Locale")
 @js.native
@@ -14,4 +14,3 @@ class Locale protected ()
     */
   def this(sLocaleId: String) = this()
 }
-

@@ -2,13 +2,17 @@ package typings.dexie.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Database extends js.Object {
+  
   val name: String = js.native
-  val tables: js.Array[Table[_, IndexableType]] = js.native
+  
   def table[T, TKey](tableName: String): Table[T, TKey] = js.native
+  
+  val tables: js.Array[Table[_, IndexableType]] = js.native
+  
   def transaction[U](
     mode: TransactionMode,
     tables: js.Array[Table[_, IndexableType]],
@@ -46,4 +50,3 @@ trait Database extends js.Object {
     scope: js.Function0[js.Thenable[U] | U]
   ): PromiseExtended[U] = js.native
 }
-

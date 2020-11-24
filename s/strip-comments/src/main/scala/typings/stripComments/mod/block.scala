@@ -2,11 +2,12 @@ package typings.stripComments.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strip-comments", "block")
 @js.native
 object block extends js.Object {
+  
   /**
     * Strip only block comments.
     *
@@ -22,4 +23,3 @@ object block extends js.Object {
   def apply(input: String): String = js.native
   def apply(input: String, options: Options): String = js.native
 }
-

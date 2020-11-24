@@ -6,11 +6,12 @@ import typings.relayRuntime.relayStoreTypesMod.Props
 import typings.relayRuntime.relayStoreTypesMod.RelayContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("relay-runtime/lib/store/createFragmentSpecResolver", JSImport.Namespace)
 @js.native
 object createFragmentSpecResolverMod extends js.Object {
+  
   def createFragmentSpecResolver(context: RelayContext, containerName: String, fragments: FragmentMap, props: Props): FragmentSpecResolver = js.native
   def createFragmentSpecResolver(
     context: RelayContext,
@@ -20,4 +21,3 @@ object createFragmentSpecResolverMod extends js.Object {
     callback: js.Function0[Unit]
   ): FragmentSpecResolver = js.native
 }
-

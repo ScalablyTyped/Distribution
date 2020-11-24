@@ -5,16 +5,19 @@ import typings.std.Record
 import typings.std.RegExp
 import typings.std.ReturnType
 import typings.std.SVGElement
+import typings.testingLibraryJestDom.anon.Exact
 import typings.testingLibraryJestDom.anon.NormalizeWhitespace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jest")
 @js.native
 object jest extends js.Object {
+  
   @js.native
   trait Matchers[R, T] extends js.Object {
+    
     /**
       * @description
       * Assert whether the given element is checked.
@@ -39,6 +42,7 @@ object jest extends js.Object {
       * [testing-library/jest-dom#tobechecked](https:github.com/testing-library/jest-dom#tobechecked)
       */
     def toBeChecked(): R = js.native
+    
     /**
       * @description
       * Allows you to check whether an element is disabled from the user's perspective.
@@ -59,6 +63,7 @@ object jest extends js.Object {
       * [testing-library/jest-dom#tobedisabled](https:github.com/testing-library/jest-dom#tobedisabled)
       */
     def toBeDisabled(): R = js.native
+    
     /**
       * @deprecated
       * since v5.9.0
@@ -75,6 +80,7 @@ object jest extends js.Object {
       * [testing-library/jest-dom#tobeempty](https:github.com/testing-library/jest-dom#tobeempty)
       */
     def toBeEmpty(): R = js.native
+    
     /**
       * @description
       * Assert whether an element has content or not.
@@ -89,6 +95,7 @@ object jest extends js.Object {
       * [testing-library/jest-dom#tobeemptydomelement](https:github.com/testing-library/jest-dom#tobeemptydomelement)
       */
     def toBeEmptyDOMElement(): R = js.native
+    
     /**
       * @description
       * Allows you to check whether an element is not disabled from the user's perspective.
@@ -109,6 +116,7 @@ object jest extends js.Object {
       * [testing-library/jest-dom#tobeenabled](https:github.com/testing-library/jest-dom#tobeenabled)
       */
     def toBeEnabled(): R = js.native
+    
     /**
       * @deprecated
       * since v1.9.0
@@ -124,6 +132,7 @@ object jest extends js.Object {
     def toBeInTheDOM(): R = js.native
     def toBeInTheDOM(container: HTMLElement): R = js.native
     def toBeInTheDOM(container: SVGElement): R = js.native
+    
     /**
       * @description
       * Assert whether an element is present in the document or not.
@@ -136,6 +145,7 @@ object jest extends js.Object {
       * [testing-library/jest-dom#tobeinthedocument](https:github.com/testing-library/jest-dom#tobeinthedocument)
       */
     def toBeInTheDocument(): R = js.native
+    
     /**
       * @description
       * Check if a form element, or the entire `form`, is currently invalid.
@@ -155,6 +165,7 @@ object jest extends js.Object {
       * [testing-library/jest-dom#tobeinvalid](https:github.com/testing-library/jest-dom#tobeinvalid)
       */
     def toBeInvalid(): R = js.native
+    
     /**
       * @description
       * This allows you to check whether the given element is partially checked.
@@ -193,6 +204,7 @@ object jest extends js.Object {
       * [testing-library/jest-dom#tobepartiallychecked](https:github.com/testing-library/jest-dom#tobepartiallychecked)
       */
     def toBePartiallyChecked(): R = js.native
+    
     /**
       * @description
       * This allows you to check if a form element is currently required.
@@ -211,6 +223,7 @@ object jest extends js.Object {
       * [testing-library/jest-dom#toberequired](https:github.com/testing-library/jest-dom#toberequired)
       */
     def toBeRequired(): R = js.native
+    
     /**
       * @description
       * Allows you to check if a form element is currently required.
@@ -230,6 +243,7 @@ object jest extends js.Object {
       * [testing-library/jest-dom#tobevalid](https:github.com/testing-library/jest-dom#tobevalid)
       */
     def toBeValid(): R = js.native
+    
     /**
       * @description
       * This allows you to check if an element is currently visible to the user.
@@ -257,6 +271,7 @@ object jest extends js.Object {
       * [testing-library/jest-dom#tobevisible](https:github.com/testing-library/jest-dom#tobevisible)
       */
     def toBeVisible(): R = js.native
+    
     /**
       * @description
       * Allows you to assert whether an element contains another element as a descendant or not.
@@ -277,20 +292,19 @@ object jest extends js.Object {
     def toContainElement(): R = js.native
     def toContainElement(element: HTMLElement): R = js.native
     def toContainElement(element: SVGElement): R = js.native
+    
     /**
       * @description
       * Assert whether a string representing a HTML element is contained in another element.
       * @example
-      * <span data-testid="parent">
-      *   <span data-testid="child"></span>
-      * </span>
+      * <span data-testid="parent"><span data-testid="child"></span></span>
       *
-      * const parent = getByTestId('parent')
-      * expect(parent).toContainerHTML(<span data-testid="child"></span>)
+      * expect(getByTestId('parent')).toContainHTML('<span data-testid="child"></span>')
       * @see
       * [testing-library/jest-dom#tocontainhtml](https:github.com/testing-library/jest-dom#tocontainhtml)
       */
     def toContainHTML(htmlText: String): R = js.native
+    
     /**
       * @description
       * Allows you to check if a given element has an attribute or not.
@@ -315,6 +329,7 @@ object jest extends js.Object {
       */
     def toHaveAttribute(attr: String): R = js.native
     def toHaveAttribute(attr: String, value: js.Any): R = js.native
+    
     /**
       * @description
       * Check whether the given element has certain classes within its `class` attribute.
@@ -334,11 +349,16 @@ object jest extends js.Object {
       * const noClasses = getByTestId('no-classes')
       * expect(deleteButton).toHaveClass('btn')
       * expect(deleteButton).toHaveClass('btn-danger xs')
+      * expect(deleteButton).toHaveClass('btn xs btn-danger', {exact: true})
+      * expect(deleteButton).not.toHaveClass('btn xs btn-danger', {exact: true})
       * expect(noClasses).not.toHaveClass()
       * @see
       * [testing-library/jest-dom#tohaveclass](https:github.com/testing-library/jest-dom#tohaveclass)
       */
     def toHaveClass(classNames: String*): R = js.native
+    def toHaveClass(classNames: String): R = js.native
+    def toHaveClass(classNames: String, options: Exact): R = js.native
+    
     /**
       * @description
       * Check the accessible description for an element.
@@ -393,6 +413,7 @@ object jest extends js.Object {
           /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof expect.stringContaining */ _
         ]
     ): R = js.native
+    
     /**
       * @description
       * This allows you to check whether the given form element has the specified displayed value (the one the
@@ -437,6 +458,7 @@ object jest extends js.Object {
     def toHaveDisplayValue(value: String): R = js.native
     def toHaveDisplayValue(value: js.Array[String | RegExp]): R = js.native
     def toHaveDisplayValue(value: RegExp): R = js.native
+    
     /**
       * @description
       * Assert whether an element has focus or not.
@@ -454,6 +476,7 @@ object jest extends js.Object {
       * [testing-library/jest-dom#tohavefocus](https:github.com/testing-library/jest-dom#tohavefocus)
       */
     def toHaveFocus(): R = js.native
+    
     /**
       * @description
       * Check if a form or fieldset contains form controls for each given name, and having the specified value.
@@ -475,6 +498,7 @@ object jest extends js.Object {
       * [testing-library/jest-dom#tohaveformvalues](https:github.com/testing-library/jest-dom#tohaveformvalues)
       */
     def toHaveFormValues(expectedValues: Record[String, _]): R = js.native
+    
     /**
       * @description
       * Check if an element has specific css properties with specific values applied.
@@ -499,6 +523,7 @@ object jest extends js.Object {
       */
     def toHaveStyle(css: String): R = js.native
     def toHaveStyle(css: Record[String, _]): R = js.native
+    
     /**
       * @description
       * Check whether the given element has a text content or not.
@@ -526,6 +551,7 @@ object jest extends js.Object {
     def toHaveTextContent(text: String, options: NormalizeWhitespace): R = js.native
     def toHaveTextContent(text: RegExp): R = js.native
     def toHaveTextContent(text: RegExp, options: NormalizeWhitespace): R = js.native
+    
     /**
       * @description
       * Check whether the given form element has the specified value.
@@ -550,6 +576,4 @@ object jest extends js.Object {
     def toHaveValue(value: js.Array[String]): R = js.native
     def toHaveValue(value: Double): R = js.native
   }
-  
 }
-

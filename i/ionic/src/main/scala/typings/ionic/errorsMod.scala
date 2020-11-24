@@ -3,11 +3,12 @@ package typings.ionic
 import typings.ionicCliFramework.mod.BaseError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ionic/lib/errors", JSImport.Namespace)
 @js.native
 object errorsMod extends js.Object {
+  
   @js.native
   class BaseException () extends BaseError
   
@@ -19,8 +20,10 @@ object errorsMod extends js.Object {
     def this(message: String) = this()
     def this(message: js.UndefOr[scala.Nothing], exitCode: Double) = this()
     def this(message: String, exitCode: Double) = this()
+    
     @JSName("exitCode")
     var exitCode_FatalException: Double = js.native
+    
     var fatal: Boolean = js.native
   }
   
@@ -44,6 +47,4 @@ object errorsMod extends js.Object {
   
   @js.native
   class SessionException () extends BaseException
-  
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Targettcpproxies")
 @js.native
 class ResourceTargettcpproxies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.targetTcpProxies.delete
     * @desc Deletes the specified TargetTcpProxy resource.
@@ -100,6 +102,7 @@ class ResourceTargettcpproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetTcpProxies.get
     * @desc Returns the specified TargetTcpProxy resource. Gets a list of
@@ -187,6 +190,7 @@ class ResourceTargettcpproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetTcpProxy]
   ): Unit = js.native
+  
   /**
     * compute.targetTcpProxies.insert
     * @desc Creates a TargetTcpProxy resource in the specified project using
@@ -275,6 +279,7 @@ class ResourceTargettcpproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetTcpProxies.list
     * @desc Retrieves the list of TargetTcpProxy resources available to the
@@ -377,6 +382,7 @@ class ResourceTargettcpproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetTcpProxyList]
   ): Unit = js.native
+  
   /**
     * compute.targetTcpProxies.setBackendService
     * @desc Changes the BackendService for TargetTcpProxy.
@@ -470,6 +476,7 @@ class ResourceTargettcpproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetTcpProxies.setProxyHeader
     * @desc Changes the ProxyHeaderType for TargetTcpProxy.
@@ -564,4 +571,3 @@ class ResourceTargettcpproxies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

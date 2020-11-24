@@ -10,9 +10,9 @@ Calculates the color representing a number based on the gradient supplied
 | ------------------ | :-------------: |
 | Full name          | linear-gradient |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1684 |
+| # downloads        | 3374 |
 | # stars            | 0 |
 
 ## Links

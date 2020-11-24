@@ -10,11 +10,12 @@ import typings.uirouterCore.transitionInterfaceMod.TreeChanges
 import typings.uirouterCore.viewViewMod.ViewService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/path", JSImport.Namespace)
 @js.native
 object pathMod extends js.Object {
+  
   @js.native
   class PathNode protected ()
     extends typings.uirouterCore.pathNodeMod.PathNode {
@@ -23,14 +24,10 @@ object pathMod extends js.Object {
     /** Creates a new (empty) PathNode for a State */
     def this(state: StateObject) = this()
   }
-  
-  @js.native
-  class PathUtils ()
-    extends typings.uirouterCore.pathUtilsMod.PathUtils
-  
   /* static members */
   @js.native
   object PathNode extends js.Object {
+    
     /**
       * Returns a clone of the PathNode
       * @deprecated use instance method `node.clone()`
@@ -38,9 +35,13 @@ object pathMod extends js.Object {
     def clone(node: typings.uirouterCore.pathNodeMod.PathNode): typings.uirouterCore.pathNodeMod.PathNode = js.native
   }
   
+  @js.native
+  class PathUtils ()
+    extends typings.uirouterCore.pathUtilsMod.PathUtils
   /* static members */
   @js.native
   object PathUtils extends js.Object {
+    
     /**
       * Creates ViewConfig objects and adds to nodes.
       *
@@ -51,9 +52,12 @@ object pathMod extends js.Object {
       path: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
       states: js.Array[StateObject]
     ): Unit = js.native
+    
     def buildPath(targetState: TargetState): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
+    
     /** Given a fromPath: PathNode[] and a TargetState, builds a toPath: PathNode[] */
     def buildToPath(fromPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode], targetState: TargetState): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
+    
     /**
       * Returns true if two paths are identical.
       *
@@ -71,6 +75,7 @@ object pathMod extends js.Object {
       pathB: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
       paramsFn: GetParamsFn
     ): Boolean = js.native
+    
     /**
       * Given a fromPath and a toPath, returns a new to path which inherits parameters from the fromPath
       *
@@ -91,8 +96,10 @@ object pathMod extends js.Object {
       toPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
       toKeys: js.Array[String]
     ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
+    
     /** Given a PathNode[], create an TargetState */
     def makeTargetState(registry: StateRegistry, path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]): TargetState = js.native
+    
     /**
       * Returns a new path which is: the subpath of the first path which matches the second path.
       *
@@ -117,9 +124,12 @@ object pathMod extends js.Object {
       pathB: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
       paramsFn: GetParamsFn
     ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
+    
     def nonDynamicParams(node: typings.uirouterCore.pathNodeMod.PathNode): js.Array[Param] = js.native
+    
     /** Gets the raw parameter values from a path */
     def paramValues(path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]): js.Any = js.native
+    
     /**
       * Return a subpath of a path, which stops at the first matching node
       *
@@ -134,6 +144,7 @@ object pathMod extends js.Object {
       path: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
       predicate: Predicate[typings.uirouterCore.pathNodeMod.PathNode]
     ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
+    
     /**
       * Computes the tree changes (entering, exiting) between a fromPath and toPath.
       */
@@ -143,6 +154,4 @@ object pathMod extends js.Object {
       reloadState: StateObject
     ): TreeChanges = js.native
   }
-  
 }
-

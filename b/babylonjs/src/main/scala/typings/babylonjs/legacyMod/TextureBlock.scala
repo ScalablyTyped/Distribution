@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "TextureBlock")
 @js.native
@@ -13,5 +13,5 @@ class TextureBlock protected ()
     * @param name defines the block name
     */
   def this(name: String) = this()
+  def this(name: String, fragmentOnly: Boolean) = this()
 }
-

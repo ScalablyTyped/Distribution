@@ -4,7 +4,7 @@ import typings.xrm.xrmNumbers.`1`
 import typings.xrm.xrmNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An enumeration for open file dialog options
@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmNumbers.`2`
 */
 trait OpenFileOptions extends js.Object
-
 object OpenFileOptions {
+  
   @scala.inline
   def Open: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def Save: `2` = 2.asInstanceOf[`2`]
 }
-

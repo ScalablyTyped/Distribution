@@ -5,7 +5,7 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Particles/index", "ModelShape")
 @js.native
@@ -42,4 +42,3 @@ class ModelShape protected ()
     material: Nullable[Material]
   ) = this()
 }
-

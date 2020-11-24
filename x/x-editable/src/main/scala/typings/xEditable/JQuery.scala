@@ -2,10 +2,11 @@ package typings.xEditable
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Initializes editable with the specified options
     * @param options an object with options specific to the editable instance
@@ -20,4 +21,3 @@ trait JQuery extends js.Object {
   def editable(method: String, params: js.Any): XEditable = js.native
   def editable(options: js.Any): XEditable = js.native
 }
-

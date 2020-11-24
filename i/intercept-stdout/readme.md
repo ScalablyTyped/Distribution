@@ -11,8 +11,8 @@ Hooking Node.js stdout
 | Full name          | intercept-stdout |
 | Keywords           | stdout, stderr |
 | # releases         | 0 |
-| # dependents       | 65 |
-| # downloads        | 726991 |
+| # dependents       | 71 |
+| # downloads        | 853588 |
 | # stars            | 1 |
 
 ## Links

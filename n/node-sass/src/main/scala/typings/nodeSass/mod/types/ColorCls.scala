@@ -2,7 +2,7 @@ package typings.nodeSass.mod.types
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-sass", "types.Color")
 @js.native
@@ -40,4 +40,3 @@ class ColorCls protected () extends Color {
   def this(r: Double, g: Double, b: Double) = this()
   def this(r: Double, g: Double, b: Double, a: Double) = this()
 }
-

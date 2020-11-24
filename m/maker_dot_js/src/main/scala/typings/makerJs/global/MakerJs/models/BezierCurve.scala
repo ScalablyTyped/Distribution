@@ -5,7 +5,7 @@ import typings.makerJs.MakerJs.IPathBezierSeed
 import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.models.BezierCurve")
 @js.native
@@ -24,15 +24,17 @@ class BezierCurve protected ()
   def this(origin: IPoint, control: IPoint, end: IPoint, accuracy: Double) = this()
   def this(origin: IPoint, control1: IPoint, control2: IPoint, end: IPoint, accuracy: Double) = this()
 }
-
 /* static members */
 @JSGlobal("MakerJs.models.BezierCurve")
 @js.native
 object BezierCurve extends js.Object {
-  var typeName: String = js.native
+  
   def computeLength(seed: IPathBezierSeed): Double = js.native
+  
   def computePoint(seed: IPathBezierSeed, t: Double): IPoint = js.native
+  
   def getBezierSeeds(curve: typings.makerJs.MakerJs.models.BezierCurve): js.Array[IPathBezierSeed] = js.native
   def getBezierSeeds(curve: typings.makerJs.MakerJs.models.BezierCurve, options: IFindChainsOptions): js.Array[IPathBezierSeed] = js.native
+  
+  var typeName: String = js.native
 }
-

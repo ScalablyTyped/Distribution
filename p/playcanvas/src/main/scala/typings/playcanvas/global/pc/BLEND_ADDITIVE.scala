@@ -3,7 +3,7 @@ package typings.playcanvas.global.pc
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Add the color of the source fragment to the destination fragment
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.BLEND_ADDITIVE")
 @js.native
 object BLEND_ADDITIVE extends TopLevel[Double]
-

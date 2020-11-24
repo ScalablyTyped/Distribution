@@ -6,7 +6,7 @@ import typings.chromeApps.chromeAppsBooleans.`true`
 import typings.chromeApps.chromeAppsNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.chromeApps.chrome.runtime.ValidKioskManifest
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
   - typings.chromeApps.chrome.runtime.InvalidManifest
 */
 trait Manifest extends js.Object
-
 object Manifest {
+  
   @scala.inline
   def ValidKioskManifest(
     app: Background,
@@ -28,6 +28,7 @@ object Manifest {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], externally_connectable = externally_connectable.asInstanceOf[js.Any], kiosk_enabled = kiosk_enabled.asInstanceOf[js.Any], manifest_version = manifest_version.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Manifest]
   }
+  
   @scala.inline
   def ValidNonKioskManifest(
     app: Background,
@@ -39,6 +40,7 @@ object Manifest {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], externally_connectable = externally_connectable.asInstanceOf[js.Any], manifest_version = manifest_version.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Manifest]
   }
+  
   @scala.inline
   def InvalidManifest(
     app: Background,
@@ -51,4 +53,3 @@ object Manifest {
     __obj.asInstanceOf[Manifest]
   }
 }
-

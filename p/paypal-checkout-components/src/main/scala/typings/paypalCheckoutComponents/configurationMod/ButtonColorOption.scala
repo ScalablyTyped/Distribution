@@ -3,14 +3,17 @@ package typings.paypalCheckoutComponents.configurationMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ButtonColorOption extends js.Object
-
 @JSImport("paypal-checkout-components/modules/configuration", "ButtonColorOption")
 @js.native
 object ButtonColorOption extends js.Object {
+  
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[ButtonColorOption with String] = js.native
+  
   /**
     * Third alternate
     * If your website demands a monochromatic button experience, try the black button.
@@ -19,6 +22,8 @@ object ButtonColorOption extends js.Object {
     */
   @js.native
   sealed trait Black extends ButtonColorOption
+  /* "black" */ @js.native
+  object Black extends TopLevel[Black with String]
   
   /**
     * First alternate
@@ -28,6 +33,8 @@ object ButtonColorOption extends js.Object {
     */
   @js.native
   sealed trait Blue extends ButtonColorOption
+  /* "blue" */ @js.native
+  object Blue extends TopLevel[Blue with String]
   
   /**
     * Recommended
@@ -37,6 +44,8 @@ object ButtonColorOption extends js.Object {
     */
   @js.native
   sealed trait Gold extends ButtonColorOption
+  /* "gold" */ @js.native
+  object Gold extends TopLevel[Gold with String]
   
   /**
     * Second alternate
@@ -46,20 +55,6 @@ object ButtonColorOption extends js.Object {
     */
   @js.native
   sealed trait Silver extends ButtonColorOption
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ButtonColorOption with String] = js.native
-  /* "black" */ @js.native
-  object Black extends TopLevel[Black with String]
-  
-  /* "blue" */ @js.native
-  object Blue extends TopLevel[Blue with String]
-  
-  /* "gold" */ @js.native
-  object Gold extends TopLevel[Gold with String]
-  
   /* "silver" */ @js.native
   object Silver extends TopLevel[Silver with String]
-  
 }
-

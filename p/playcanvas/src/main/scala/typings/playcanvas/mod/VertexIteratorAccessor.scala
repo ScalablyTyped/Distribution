@@ -4,7 +4,7 @@ import typings.playcanvas.anon.DataType
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Returns a new pc.VertexIteratorAccessor object.
@@ -56,4 +56,3 @@ class VertexIteratorAccessor protected ()
   extends typings.playcanvas.pc.VertexIteratorAccessor {
   def this(buffer: ArrayBuffer, vertexElement: DataType, vertexFormat: typings.playcanvas.pc.VertexFormat) = this()
 }
-

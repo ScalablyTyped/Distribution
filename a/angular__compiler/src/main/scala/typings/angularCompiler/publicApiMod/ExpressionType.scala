@@ -3,7 +3,7 @@ package typings.angularCompiler.publicApiMod
 import typings.angularCompiler.outputAstMod.TypeModifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/public_api", "ExpressionType")
 @js.native
@@ -21,10 +21,4 @@ class ExpressionType protected ()
     modifiers: js.Array[TypeModifier],
     typeParams: js.Array[typings.angularCompiler.outputAstMod.Type]
   ) = this()
-  def this(
-    value: typings.angularCompiler.outputAstMod.Expression,
-    modifiers: Null,
-    typeParams: js.Array[typings.angularCompiler.outputAstMod.Type]
-  ) = this()
 }
-

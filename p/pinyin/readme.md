@@ -10,13 +10,13 @@ Typings are for version 2.8
 | ------------------ | :-------------: |
 | Full name          | pinyin |
 | Keywords           | 拼音, 汉语, 汉字, 中文, Pinyin |
-| # releases         | 2 |
-| # dependents       | 88 |
-| # downloads        | 455683 |
-| # stars            | 35 |
+| # releases         | 3 |
+| # dependents       | 108 |
+| # downloads        | 858727 |
+| # stars            | 36 |
 
 ## Links
-- [Homepage](http://pinyin.hotoo.me/)
+- [Homepage](https://github.com/hotoo/pinyin#readme)
 - [Bugs](https://github.com/hotoo/pinyin/issues)
 - [Repository](https://github.com/hotoo/pinyin)
 - [Npm](https://www.npmjs.com/package/pinyin)

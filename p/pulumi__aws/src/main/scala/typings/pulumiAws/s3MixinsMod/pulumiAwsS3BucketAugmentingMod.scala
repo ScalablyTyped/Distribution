@@ -3,14 +3,16 @@ package typings.pulumiAws.s3MixinsMod
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("@pulumi/aws/s3/bucket", JSImport.Namespace)
 @js.native
 object pulumiAwsS3BucketAugmentingMod extends js.Object {
+  
   @js.native
   trait Bucket extends js.Object {
+    
     /**
       * Creates a new subscription to events fired from this Bucket to the handler provided,
       * along with options to control the behavior of the subscription.  This function should be
@@ -24,6 +26,7 @@ object pulumiAwsS3BucketAugmentingMod extends js.Object {
       args: BucketEventSubscriptionArgs,
       opts: ComponentResourceOptions
     ): BucketEventSubscription = js.native
+    
     /**
       * Creates a new subscription to events fired from this Bucket to the handler provided,
       * along with options to control the behavior of the subscription.  The handler will be
@@ -43,6 +46,7 @@ object pulumiAwsS3BucketAugmentingMod extends js.Object {
       args: ObjectCreatedSubscriptionArgs,
       opts: ComponentResourceOptions
     ): BucketEventSubscription = js.native
+    
     /**
       * Creates a new subscription to events fired from this Bucket to the handler provided,
       * along with options to control the behavior of the subscription.  The handler will be
@@ -63,6 +67,4 @@ object pulumiAwsS3BucketAugmentingMod extends js.Object {
       opts: ComponentResourceOptions
     ): BucketEventSubscription = js.native
   }
-  
 }
-

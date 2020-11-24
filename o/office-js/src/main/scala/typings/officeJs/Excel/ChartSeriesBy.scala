@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartSeriesBy extends js.Object
-
 /**
   *
   * Specifies whether the series are by rows or by columns. On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, "auto" will simply default to "columns".
@@ -16,6 +15,7 @@ sealed trait ChartSeriesBy extends js.Object
 @JSGlobal("Excel.ChartSeriesBy")
 @js.native
 object ChartSeriesBy extends js.Object {
+  
   /**
     * On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, "auto" will simply default to "columns".
     *
@@ -28,6 +28,4 @@ object ChartSeriesBy extends js.Object {
   
   @js.native
   sealed trait rows extends ChartSeriesBy
-  
 }
-

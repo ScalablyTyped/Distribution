@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that is activated when the ActivitySensor receives input. This is used when your application needs to respond to the activity sensor. */
 @JSGlobal("Windows.ApplicationModel.Background.ActivitySensorTrigger")
@@ -15,4 +15,3 @@ class ActivitySensorTrigger protected ()
     */
   def this(reportIntervalInMilliseconds: Double) = this()
 }
-

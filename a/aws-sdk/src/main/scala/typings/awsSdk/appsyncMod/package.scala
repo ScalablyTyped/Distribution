@@ -2,10 +2,12 @@ package typings.awsSdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object appsyncMod {
+  
   type AdditionalAuthenticationProviders = js.Array[typings.awsSdk.appsyncMod.AdditionalAuthenticationProvider]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AVAILABLE
     - typings.awsSdk.awsSdkStrings.CREATING
@@ -15,6 +17,7 @@ package object appsyncMod {
     - java.lang.String
   */
   type ApiCacheStatus = typings.awsSdk.appsyncMod._ApiCacheStatus | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.T2_SMALL
     - typings.awsSdk.awsSdkStrings.T2_MEDIUM
@@ -34,13 +37,16 @@ package object appsyncMod {
     - java.lang.String
   */
   type ApiCacheType = typings.awsSdk.appsyncMod._ApiCacheType | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.FULL_REQUEST_CACHING
     - typings.awsSdk.awsSdkStrings.PER_RESOLVER_CACHING
     - java.lang.String
   */
   type ApiCachingBehavior = typings.awsSdk.appsyncMod._ApiCachingBehavior | java.lang.String
+  
   type ApiKeys = js.Array[typings.awsSdk.appsyncMod.ApiKey]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.API_KEY
     - typings.awsSdk.awsSdkStrings.AWS_IAM
@@ -49,17 +55,24 @@ package object appsyncMod {
     - java.lang.String
   */
   type AuthenticationType = typings.awsSdk.appsyncMod._AuthenticationType | java.lang.String
+  
   type AuthorizationType = typings.awsSdk.awsSdkStrings.AWS_IAM | java.lang.String
+  
   type Boolean = scala.Boolean
+  
   type BooleanValue = scala.Boolean
+  
   type CachingKeys = js.Array[typings.awsSdk.appsyncMod.String]
+  
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.appsyncMod.ClientApiVersions
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.VERSION
     - typings.awsSdk.awsSdkStrings.NONE
     - java.lang.String
   */
   type ConflictDetectionType = typings.awsSdk.appsyncMod._ConflictDetectionType | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.OPTIMISTIC_CONCURRENCY
     - typings.awsSdk.awsSdkStrings.LAMBDA
@@ -68,6 +81,7 @@ package object appsyncMod {
     - java.lang.String
   */
   type ConflictHandlerType = typings.awsSdk.appsyncMod._ConflictHandlerType | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AWS_LAMBDA
     - typings.awsSdk.awsSdkStrings.AMAZON_DYNAMODB
@@ -78,13 +92,16 @@ package object appsyncMod {
     - java.lang.String
   */
   type DataSourceType = typings.awsSdk.appsyncMod._DataSourceType | java.lang.String
+  
   type DataSources = js.Array[typings.awsSdk.appsyncMod.DataSource]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ALLOW
     - typings.awsSdk.awsSdkStrings.DENY
     - java.lang.String
   */
   type DefaultAction = typings.awsSdk.appsyncMod._DefaultAction | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.NONE
     - typings.awsSdk.awsSdkStrings.ERROR
@@ -92,30 +109,45 @@ package object appsyncMod {
     - java.lang.String
   */
   type FieldLogLevel = typings.awsSdk.appsyncMod._FieldLogLevel | java.lang.String
+  
   type Functions = js.Array[typings.awsSdk.appsyncMod.FunctionConfiguration]
+  
   type FunctionsIds = js.Array[typings.awsSdk.appsyncMod.String]
+  
   type GraphqlApis = js.Array[typings.awsSdk.appsyncMod.GraphqlApi]
+  
   type Long = scala.Double
+  
   type MapOfStringToString = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.appsyncMod.String]
+  
   type MappingTemplate = java.lang.String
+  
   type MaxResults = scala.Double
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.SDL
     - typings.awsSdk.awsSdkStrings.JSON
     - java.lang.String
   */
   type OutputType = typings.awsSdk.appsyncMod._OutputType | java.lang.String
+  
   type PaginationToken = java.lang.String
+  
   type RelationalDatabaseSourceType = typings.awsSdk.awsSdkStrings.RDS_HTTP_ENDPOINT | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.UNIT
     - typings.awsSdk.awsSdkStrings.PIPELINE
     - java.lang.String
   */
   type ResolverKind = typings.awsSdk.appsyncMod._ResolverKind | java.lang.String
+  
   type Resolvers = js.Array[typings.awsSdk.appsyncMod.Resolver]
+  
   type ResourceArn = java.lang.String
+  
   type ResourceName = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PROCESSING
     - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -126,19 +158,28 @@ package object appsyncMod {
     - java.lang.String
   */
   type SchemaStatus = typings.awsSdk.appsyncMod._SchemaStatus | java.lang.String
+  
   type String = java.lang.String
+  
   type TagKey = java.lang.String
+  
   type TagKeyList = js.Array[typings.awsSdk.appsyncMod.TagKey]
+  
   type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.appsyncMod.TagValue]
+  
   type TagValue = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.SDL
     - typings.awsSdk.awsSdkStrings.JSON
     - java.lang.String
   */
   type TypeDefinitionFormat = typings.awsSdk.appsyncMod._TypeDefinitionFormat | java.lang.String
+  
   type TypeList = js.Array[typings.awsSdk.appsyncMod.Type]
+  
   type _Blob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.appsyncMod.Blob | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2017-07-25`
     - typings.awsSdk.awsSdkStrings.latest_

@@ -25,7 +25,7 @@ import typings.html5plus.html5plusStrings.top
 import typings.html5plus.html5plusStrings.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON对象，Webview窗口对象的样式
@@ -34,6 +34,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusWebviewWebviewStyles extends js.Object {
+  
   /**
     * 窗口加载页面时额外添加的HTTP请求头数据
     * 仅在Webview窗口第一次加载页面时使用，如用户点击的触发的链接跳转则不再添加此额外请求头数据。
@@ -43,6 +44,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var additionalHttpHeaders: js.UndefOr[js.Any] = js.native
+  
   /**
     * 窗口动画优化方式
     * 可取值：
@@ -53,6 +55,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var animationOptimization: js.UndefOr[String] = js.native
+  
   /**
     * Webview窗口自动处理返回键逻辑
     * 当Webview窗口在显示栈顶，并且Webview窗口中没有调用JS监听返回键（plus.key.addEventListener('backbutton',...)）时按下返回键响应行为。
@@ -74,6 +77,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var backButtonAutoControl: js.UndefOr[hide | close | none] = js.native
+  
   /**
     * 窗口的背景颜色
     * 窗口空白区域的背景模式，设置background为颜色值(参考CSS Color Names，可取值/十六进制值/rgb值/rgba值)，窗口为独占模式显示（占整个屏幕区域）；
@@ -82,6 +86,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var background: js.UndefOr[String] = js.native
+  
   /**
     * 窗口底部背景颜色
     * 窗口内容滚动到底部上拉时可见。
@@ -93,6 +98,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var backgroundColorBottom: js.UndefOr[String] = js.native
+  
   /**
     * 窗口顶部背景颜色值
     * 窗口内容滚动到顶部下拉时可见。
@@ -104,6 +110,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var backgroundColorTop: js.UndefOr[String] = js.native
+  
   /**
     * 是否阻塞网络图片的加载
     * 布尔类型，true表示阻塞，false表示不阻塞，默认值为false。
@@ -112,6 +119,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var blockNetworkImage: js.UndefOr[Boolean] = js.native
+  
   /**
     * 窗口垂直向上的偏移量
     * 支持百分比、像素值，默认值无值（根据top和height属性值来自动计算）。
@@ -121,6 +129,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var bottom: js.UndefOr[String] = js.native
+  
   /**
     * 窗口遇到边框是否有反弹效果
     * 可取值：
@@ -137,6 +146,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var bounce: js.UndefOr[none | vertical | horizontal | all] = js.native
+  
   /**
     * 窗口回弹效果区域的背景
     * 窗口回弹效果区域背景可支持颜色值或图片：
@@ -146,6 +156,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var bounceBackground: js.UndefOr[String] = js.native
+  
   /**
     * 窗口的缓存模式
     * 可取值：
@@ -170,6 +181,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var cachemode: js.UndefOr[default | cacheElseNetwork | noCache | cacheOnly] = js.native
+  
   /**
     * 窗口内容停止滑动的减速度
     * 当Webview加载的内容超过其高度时，可以拖拽滑动内容，decelerationRate属性控制手指松开后页面滑动的速度。
@@ -178,6 +190,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var decelerationRate: js.UndefOr[Double] = js.native
+  
   /**
     * 窗口的停靠方式
     * 当Webview窗口添加到另外一个窗口中时，停靠方式才会生效，采用停靠方式添加会导致原Webview窗口自动调整其大小避免其内容被子窗口盖住。
@@ -191,6 +204,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var dock: js.UndefOr[top | bottom | right | left] = js.native
+  
   /**
     * 窗口加载错误时跳转的页面地址
     * 当Webview窗口无法加载指定的url地址时（如本地页面不存在，或者无法访问的网络地址），此时会自动跳转到指定的错误页面地址（仅支持本地页面地址）。
@@ -200,6 +214,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var errorPage: js.UndefOr[none] = js.native
+  
   /**
     * 窗口是否开启硬件加速
     * 布尔类型，true表示开启硬件加速，false表示不开启硬件加速，默认情况5+ Runtime会根据设备实际支持情况自动选择是否开启硬件加速，可以通过plus.webview.defaultHardwareAccelerated()方法获取默认Webview是否开启硬件加速。
@@ -208,6 +223,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var hardwareAccelerated: js.UndefOr[Boolean] = js.native
+  
   /**
     * 窗口的高度
     * 支持百分比、像素值，默认为100%。
@@ -216,6 +232,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var height: js.UndefOr[String] = js.native
+  
   /**
     * 窗口使用的内核
     * 可取值：
@@ -242,6 +259,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var kernel: js.UndefOr[WKWebview | UIWebview] = js.native
+  
   /**
     * 窗口水平向右的偏移量
     * 支持百分比、像素值，默认值为0px。
@@ -250,6 +268,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var left: js.UndefOr[String] = js.native
+  
   /**
     * 窗口的边距
     * 用于定位窗口的位置，支持auto，auto表示居中。若设置了left、right、top、bottom则对应的边距值失效。
@@ -257,6 +276,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var margin: js.UndefOr[String] = js.native
+  
   /**
     * 窗口的遮罩
     * 用于设置Webview窗口的遮罩层样式，遮罩层会覆盖Webview中所有内容，包括子webview，并且截获webview的所有触屏事件，此时Webview窗口的点击操作会触发maskClick事件。
@@ -268,6 +288,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var mask: js.UndefOr[String] = js.native
+  
   /**
     * 窗口的不透明度
     * 0为全透明，1为不透明，默认值为1，即不透明。
@@ -275,6 +296,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var opacity: js.UndefOr[Double] = js.native
+  
   /**
     * 控制Webview注入5+ API时机
     * 可取值：
@@ -287,6 +309,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var plusrequire: js.UndefOr[String] = js.native
+  
   /**
     * 窗口的侧滑返回功能
     * 可取值：
@@ -300,6 +323,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var popGesture: js.UndefOr[none | close | hide] = js.native
+  
   /**
     * Webview窗口的排版位置
     * 当Webview窗口添加到另外一个窗口中时，排版位置才会生效，排版位置决定子窗口在父窗口中的定位方式。
@@ -312,6 +336,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var position: js.UndefOr[static | absolute | dock] = js.native
+  
   /**
     * 窗口的进度条样式
     * 设置此属性则在Webview窗口的顶部显示进度条，可配置进度条颜色及高度。
@@ -321,6 +346,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var progress: js.UndefOr[PlusWebviewWebviewProgressStyles] = js.native
+  
   /**
     * 窗口下拉刷新配置
     * 设置窗口是否开启下拉刷新功能及样式。
@@ -329,6 +355,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var pullToRefresh: js.UndefOr[PlusWebviewWebviewPullToRefreshStyles] = js.native
+  
   /**
     * 窗口渲染模式
     * 支持以下属性值：
@@ -342,6 +369,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var render: js.UndefOr[onscreen | always] = js.native
+  
   /**
     * 替换H5标准API
     * 用于解决在部分设备上调用H5标准定位接口可能无法获取定位数据的问题。
@@ -349,6 +377,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var replacewebapi: js.UndefOr[PlusWebviewWebviewReplaceWebApiOptions] = js.native
+  
   /**
     * 窗口水平向左的偏移量
     * 支持百分比、像素值，默认无值（根据left和width属性值来自动计算）。
@@ -358,6 +387,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var right: js.UndefOr[String] = js.native
+  
   /**
     * 窗口是否可缩放
     * 窗口设置为可缩放（scalable:true）时，用户可通过双指操作放大或缩小页面，此时html页面可通过meta节点设置“name="viewport" content="user-scalable=no"”来限制页面不可缩放。
@@ -367,6 +397,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var scalable: js.UndefOr[Boolean] = js.native
+  
   /**
     * 窗口是否显示滚动条
     * 用于控制窗口滚动条样式，可取值：
@@ -384,6 +415,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var scrollIndicator: js.UndefOr[all | vertical | horizontal | none] = js.native
+  
   /**
     * 点击设备的状态栏时是否滚动返回至顶部
     * true表示点击设备的状态栏可以滚动返回至顶部，false表示点击设备的状态栏不可以，默认值为true。
@@ -392,6 +424,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var scrollsToTop: js.UndefOr[Boolean] = js.native
+  
   /**
     * 是否可分享窗口加载的链接地址
     * 在流应用环境（流应用/5+浏览器）中可通过分享按钮分享页面链接地址，
@@ -403,6 +436,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var shareable: js.UndefOr[Boolean] = js.native
+  
   /**
     * 弹出系统软键盘模式
     * 可选值：“adjustPan”- 弹出软键盘时Webview窗口自动上移，以保证当前输入框可见；“adjustResize”- 自动调整Webview窗口大小（屏幕区域减去软键盘区域），同时自动滚动Webview保证输入框可见。
@@ -413,6 +447,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var softinputMode: js.UndefOr[adjustPan | adjustResize] = js.native
+  
   /**
     * 窗口状态栏样式
     * 仅在应用设置为沉浸式状态栏样式下有效，设置此属性后将自动保留系统状态栏区域不被Webview窗口占用（即Webview窗口非沉浸式样式显示）。
@@ -420,6 +455,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var statusbar: js.UndefOr[PlusWebviewWebviewStatusbarStyles] = js.native
+  
   /**
     * 定义窗口的原生子View控件
     * 数组类型，可通过配置项设置原生子View控件，每个配置项对应添加一个原生子View控件。
@@ -428,6 +464,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var subNViews: js.UndefOr[js.Array[PlusWebview]] = js.native
+  
   /**
     * 定义窗口的标题栏控件样式
     * 设置此属性值则表明创建Webview窗口的标题栏控件，并可通过其属性值设置背景颜色、文本内容、文本颜色等。
@@ -436,6 +473,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var titleNView: js.UndefOr[PlusWebviewWebviewTitleNViewStyles] = js.native
+  
   /**
     * 窗口垂直向下的偏移量
     * 支持百分比、像素值，默认值为0px。
@@ -444,18 +482,21 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var top: js.UndefOr[String] = js.native
+  
   /**
     * 窗口定义窗口变形效果
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var transform: js.UndefOr[PlusWebviewWebviewTransform] = js.native
+  
   /**
     * 窗口定义窗口变换的动画效果
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var transition: js.UndefOr[PlusWebviewWebviewTransition] = js.native
+  
   /**
     * 用户是否可选择内容
     * 可取值：
@@ -467,6 +508,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var userSelect: js.UndefOr[Boolean] = js.native
+  
   /**
     * 视频全屏播放时的显示方向
     * 可取值：
@@ -481,6 +523,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var videoFullscreen: js.UndefOr[String] = js.native
+  
   /**
     * 窗口的宽度
     * 支持百分比、像素值，默认为100%。未设置width属性值时，可同时设置left和right属性值改变窗口的默认宽度。
@@ -488,6 +531,7 @@ trait PlusWebviewWebviewStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var width: js.UndefOr[String] = js.native
+  
   /**
     * 窗口的堆叠顺序值
     * 拥有更高堆叠顺序的窗口总是会处于堆叠顺序较低的窗口的前面，拥有相同堆叠顺序的窗口后调用show方法则在前面。
@@ -496,203 +540,294 @@ trait PlusWebviewWebviewStyles extends js.Object {
     */
   var zindex: js.UndefOr[Double] = js.native
 }
-
 object PlusWebviewWebviewStyles {
+  
   @scala.inline
   def apply(): PlusWebviewWebviewStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewStyles]
   }
+  
   @scala.inline
   implicit class PlusWebviewWebviewStylesOps[Self <: PlusWebviewWebviewStyles] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAdditionalHttpHeaders(value: js.Any): Self = this.set("additionalHttpHeaders", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAdditionalHttpHeaders: Self = this.set("additionalHttpHeaders", js.undefined)
+    
     @scala.inline
     def setAnimationOptimization(value: String): Self = this.set("animationOptimization", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationOptimization: Self = this.set("animationOptimization", js.undefined)
+    
     @scala.inline
     def setBackButtonAutoControl(value: hide | close | none): Self = this.set("backButtonAutoControl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBackButtonAutoControl: Self = this.set("backButtonAutoControl", js.undefined)
+    
     @scala.inline
     def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBackground: Self = this.set("background", js.undefined)
+    
     @scala.inline
     def setBackgroundColorBottom(value: String): Self = this.set("backgroundColorBottom", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBackgroundColorBottom: Self = this.set("backgroundColorBottom", js.undefined)
+    
     @scala.inline
     def setBackgroundColorTop(value: String): Self = this.set("backgroundColorTop", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBackgroundColorTop: Self = this.set("backgroundColorTop", js.undefined)
+    
     @scala.inline
     def setBlockNetworkImage(value: Boolean): Self = this.set("blockNetworkImage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBlockNetworkImage: Self = this.set("blockNetworkImage", js.undefined)
+    
     @scala.inline
     def setBottom(value: String): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBottom: Self = this.set("bottom", js.undefined)
+    
     @scala.inline
     def setBounce(value: none | vertical | horizontal | all): Self = this.set("bounce", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBounce: Self = this.set("bounce", js.undefined)
+    
     @scala.inline
     def setBounceBackground(value: String): Self = this.set("bounceBackground", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBounceBackground: Self = this.set("bounceBackground", js.undefined)
+    
     @scala.inline
     def setCachemode(value: default | cacheElseNetwork | noCache | cacheOnly): Self = this.set("cachemode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCachemode: Self = this.set("cachemode", js.undefined)
+    
     @scala.inline
     def setDecelerationRate(value: Double): Self = this.set("decelerationRate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDecelerationRate: Self = this.set("decelerationRate", js.undefined)
+    
     @scala.inline
     def setDock(value: top | bottom | right | left): Self = this.set("dock", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDock: Self = this.set("dock", js.undefined)
+    
     @scala.inline
     def setErrorPage(value: none): Self = this.set("errorPage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteErrorPage: Self = this.set("errorPage", js.undefined)
+    
     @scala.inline
     def setHardwareAccelerated(value: Boolean): Self = this.set("hardwareAccelerated", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHardwareAccelerated: Self = this.set("hardwareAccelerated", js.undefined)
+    
     @scala.inline
     def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeight: Self = this.set("height", js.undefined)
+    
     @scala.inline
     def setKernel(value: WKWebview | UIWebview): Self = this.set("kernel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKernel: Self = this.set("kernel", js.undefined)
+    
     @scala.inline
     def setLeft(value: String): Self = this.set("left", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLeft: Self = this.set("left", js.undefined)
+    
     @scala.inline
     def setMargin(value: String): Self = this.set("margin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMargin: Self = this.set("margin", js.undefined)
+    
     @scala.inline
     def setMask(value: String): Self = this.set("mask", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMask: Self = this.set("mask", js.undefined)
+    
     @scala.inline
     def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOpacity: Self = this.set("opacity", js.undefined)
+    
     @scala.inline
     def setPlusrequire(value: String): Self = this.set("plusrequire", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePlusrequire: Self = this.set("plusrequire", js.undefined)
+    
     @scala.inline
     def setPopGesture(value: none | close | hide): Self = this.set("popGesture", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePopGesture: Self = this.set("popGesture", js.undefined)
+    
     @scala.inline
     def setPosition(value: static | absolute | dock): Self = this.set("position", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePosition: Self = this.set("position", js.undefined)
+    
     @scala.inline
     def setProgress(value: PlusWebviewWebviewProgressStyles): Self = this.set("progress", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProgress: Self = this.set("progress", js.undefined)
+    
     @scala.inline
     def setPullToRefresh(value: PlusWebviewWebviewPullToRefreshStyles): Self = this.set("pullToRefresh", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePullToRefresh: Self = this.set("pullToRefresh", js.undefined)
+    
     @scala.inline
     def setRender(value: onscreen | always): Self = this.set("render", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRender: Self = this.set("render", js.undefined)
+    
     @scala.inline
     def setReplacewebapi(value: PlusWebviewWebviewReplaceWebApiOptions): Self = this.set("replacewebapi", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReplacewebapi: Self = this.set("replacewebapi", js.undefined)
+    
     @scala.inline
     def setRight(value: String): Self = this.set("right", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRight: Self = this.set("right", js.undefined)
+    
     @scala.inline
     def setScalable(value: Boolean): Self = this.set("scalable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteScalable: Self = this.set("scalable", js.undefined)
+    
     @scala.inline
     def setScrollIndicator(value: all | vertical | horizontal | none): Self = this.set("scrollIndicator", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteScrollIndicator: Self = this.set("scrollIndicator", js.undefined)
+    
     @scala.inline
     def setScrollsToTop(value: Boolean): Self = this.set("scrollsToTop", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteScrollsToTop: Self = this.set("scrollsToTop", js.undefined)
+    
     @scala.inline
     def setShareable(value: Boolean): Self = this.set("shareable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteShareable: Self = this.set("shareable", js.undefined)
+    
     @scala.inline
     def setSoftinputMode(value: adjustPan | adjustResize): Self = this.set("softinputMode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSoftinputMode: Self = this.set("softinputMode", js.undefined)
+    
     @scala.inline
     def setStatusbar(value: PlusWebviewWebviewStatusbarStyles): Self = this.set("statusbar", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStatusbar: Self = this.set("statusbar", js.undefined)
+    
     @scala.inline
     def setSubNViewsVarargs(value: PlusWebview*): Self = this.set("subNViews", js.Array(value :_*))
+    
     @scala.inline
     def setSubNViews(value: js.Array[PlusWebview]): Self = this.set("subNViews", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSubNViews: Self = this.set("subNViews", js.undefined)
+    
     @scala.inline
     def setTitleNView(value: PlusWebviewWebviewTitleNViewStyles): Self = this.set("titleNView", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTitleNView: Self = this.set("titleNView", js.undefined)
+    
     @scala.inline
     def setTop(value: String): Self = this.set("top", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTop: Self = this.set("top", js.undefined)
+    
     @scala.inline
     def setTransform(value: PlusWebviewWebviewTransform): Self = this.set("transform", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTransform: Self = this.set("transform", js.undefined)
+    
     @scala.inline
     def setTransition(value: PlusWebviewWebviewTransition): Self = this.set("transition", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTransition: Self = this.set("transition", js.undefined)
+    
     @scala.inline
     def setUserSelect(value: Boolean): Self = this.set("userSelect", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUserSelect: Self = this.set("userSelect", js.undefined)
+    
     @scala.inline
     def setVideoFullscreen(value: String): Self = this.set("videoFullscreen", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteVideoFullscreen: Self = this.set("videoFullscreen", js.undefined)
+    
     @scala.inline
     def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWidth: Self = this.set("width", js.undefined)
+    
     @scala.inline
     def setZindex(value: Double): Self = this.set("zindex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZindex: Self = this.set("zindex", js.undefined)
   }
-  
 }
-

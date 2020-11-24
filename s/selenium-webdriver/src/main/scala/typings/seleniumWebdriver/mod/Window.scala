@@ -3,7 +3,7 @@ package typings.seleniumWebdriver.mod
 import typings.seleniumWebdriver.anon.PartialIRectangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "Window")
 @js.native
@@ -14,6 +14,7 @@ class Window protected () extends js.Object {
     * @constructor
     */
   def this(driver: WebDriver) = this()
+  
   // endregion
   // region Methods
   /**
@@ -23,10 +24,12 @@ class Window protected () extends js.Object {
     *     window's position in the form of a {x:number, y:number} object literal.
     */
   def getPosition(): js.Promise[ILocation] = js.native
+  
   /**
     * Returns the current top-level window's size and position.
     */
   def getRect(): js.Promise[IRectangle] = js.native
+  
   /**
     * Retrieves the window's current size.
     * @return {!Promise} A promise that will be resolved with the
@@ -34,12 +37,14 @@ class Window protected () extends js.Object {
     *     literal.
     */
   def getSize(): js.Promise[ISize] = js.native
+  
   /**
     * Maximizes the current window.
     * @return {!Promise} A promise that will be resolved when the
     *     command has completed.
     */
   def maximize(): js.Promise[Unit] = js.native
+  
   /**
     * Repositions the current window.
     * @param {number} x The desired horizontal position, relative to the left
@@ -50,12 +55,14 @@ class Window protected () extends js.Object {
     *     command has completed.
     */
   def setPosition(x: Double, y: Double): js.Promise[Unit] = js.native
+  
   /**
     * Sets the current top-level window's size and position. You may update
     * just the size by omitting `x` & `y`, or just the position by omitting
     * `width` & `height` options.
     */
   def setRect(hasXYWidthHeight: PartialIRectangle): js.Promise[IRectangle] = js.native
+  
   /**
     * Resizes the current window.
     * @param {number} width The desired window width.
@@ -65,4 +72,3 @@ class Window protected () extends js.Object {
     */
   def setSize(width: Double, height: Double): js.Promise[Unit] = js.native
 }
-

@@ -26,7 +26,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service is for an ellipse or circle shape. */
 @js.native
@@ -38,15 +38,18 @@ trait EllipseShape
      with TextProperties
      with ShadowProperties
      with RotationDescriptor {
+  
   /** If the kind specifies an open circle, this is the end angle. */
   var CircleEndAngle: Double = js.native
+  
   /** This is the kind of circle. */
   var CircleKind: typings.activexLibreoffice.com_.sun.star.drawing.CircleKind = js.native
+  
   /** If the kind specifies an open circle, this is the start angle. */
   var CircleStartAngle: Double = js.native
 }
-
 object EllipseShape {
+  
   @scala.inline
   def apply(
     CircleEndAngle: Double,
@@ -162,24 +165,29 @@ object EllipseShape {
     js.Dynamic.global.Object.assign(__obj, TextProperties)
     __obj.asInstanceOf[EllipseShape]
   }
+  
   @scala.inline
   implicit class EllipseShapeOps[Self <: EllipseShape] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCircleEndAngle(value: Double): Self = this.set("CircleEndAngle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCircleKind(value: CircleKind): Self = this.set("CircleKind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCircleStartAngle(value: Double): Self = this.set("CircleStartAngle", value.asInstanceOf[js.Any])
   }
-  
 }
-

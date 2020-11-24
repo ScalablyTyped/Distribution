@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "peer-id" : "0.14.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "peer-id" : "0.14.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

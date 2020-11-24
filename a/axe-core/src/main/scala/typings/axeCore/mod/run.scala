@@ -3,11 +3,12 @@ package typings.axeCore.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("axe-core", "run")
 @js.native
 object run extends js.Object {
+  
   /**
   	 * Runs a number of rules against the provided HTML page and returns the resulting issue list
   	 *
@@ -25,4 +26,3 @@ object run extends js.Object {
   def apply(options: RunOptions): js.Promise[AxeResults] = js.native
   def apply(options: RunOptions, callback: RunCallback): Unit = js.native
 }
-

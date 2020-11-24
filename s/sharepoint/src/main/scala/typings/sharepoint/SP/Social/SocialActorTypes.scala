@@ -2,15 +2,15 @@ package typings.sharepoint.SP.Social
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SocialActorTypes extends js.Object
-
 /** Specifies one or more actor types in a query to the server. */
 @JSGlobal("SP.Social.SocialActorTypes")
 @js.native
 object SocialActorTypes extends js.Object {
+  
   @js.native
   sealed trait all extends SocialActorTypes
   
@@ -32,6 +32,4 @@ object SocialActorTypes extends js.Object {
   
   @js.native
   sealed trait users extends SocialActorTypes
-  
 }
-

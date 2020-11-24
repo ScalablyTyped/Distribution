@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.HumanInterfaceDevice
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait HidCollectionType extends js.Object
-
 /** Identifies the relationship that defines a grouping of controls on the device. */
 @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidCollectionType")
 @js.native
 object HidCollectionType extends js.Object {
+  
   /** The controls are related by intended application. */
   @js.native
   sealed trait application extends HidCollectionType
@@ -42,6 +42,4 @@ object HidCollectionType extends js.Object {
   /** The controls are related by a usage switch. */
   @js.native
   sealed trait usageSwitch extends HidCollectionType
-  
 }
-

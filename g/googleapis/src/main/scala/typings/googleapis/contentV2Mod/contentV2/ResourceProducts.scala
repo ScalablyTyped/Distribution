@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Resource$Products")
 @js.native
 class ResourceProducts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * content.products.custombatch
     * @desc Retrieves, inserts, and deletes multiple products in a single
@@ -46,6 +48,7 @@ class ResourceProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProductsCustomBatchResponse]
   ): Unit = js.native
+  
   /**
     * content.products.delete
     * @desc Deletes a product from your Merchant Center account.
@@ -72,6 +75,7 @@ class ResourceProducts protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceProductsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceProductsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * content.products.get
     * @desc Retrieves a product from your Merchant Center account.
@@ -101,6 +105,7 @@ class ResourceProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProduct]
   ): Unit = js.native
+  
   /**
     * content.products.insert
     * @desc Uploads a product to your Merchant Center account. If an item with
@@ -133,6 +138,7 @@ class ResourceProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProduct]
   ): Unit = js.native
+  
   /**
     * content.products.list
     * @desc Lists the products in your Merchant Center account.
@@ -165,4 +171,3 @@ class ResourceProducts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaProductsListResponse]
   ): Unit = js.native
 }
-

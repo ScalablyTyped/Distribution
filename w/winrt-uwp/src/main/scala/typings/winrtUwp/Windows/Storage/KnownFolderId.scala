@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Storage
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait KnownFolderId extends js.Object
-
 /** Provides values that identify storage folders. */
 @JSGlobal("Windows.Storage.KnownFolderId")
 @js.native
 object KnownFolderId extends js.Object {
+  
   /** App Captures folder. */
   @js.native
   sealed trait appCaptures extends KnownFolderId
@@ -66,6 +66,4 @@ object KnownFolderId extends js.Object {
   /** Videos library folder. */
   @js.native
   sealed trait videosLibrary extends KnownFolderId
-  
 }
-

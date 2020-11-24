@@ -10,9 +10,9 @@ jQuery Responsive notification plugin
 | ------------------ | :-------------: |
 | Full name          | lobibox |
 | Keywords           | jQuery, plugin, notification, responsive, messagebox, css3, animation, window, ajax loading |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 7889 |
+| # downloads        | 11899 |
 | # stars            | 0 |
 
 ## Links

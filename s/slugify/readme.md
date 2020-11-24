@@ -1,7 +1,7 @@
 
 # Scala.js typings for slugify
 
-Typings are for version 1.4.5
+Typings are for version 1.4.6
 
 ## Library description:
 Slugifies a String
@@ -10,9 +10,9 @@ Slugifies a String
 | ------------------ | :-------------: |
 | Full name          | slugify |
 | Keywords           | slugify, slug, url, urlify |
-| # releases         | 8 |
-| # dependents       | 493 |
-| # downloads        | 16892251 |
+| # releases         | 11 |
+| # dependents       | 749 |
+| # downloads        | 45095508 |
 | # stars            | 20 |
 
 ## Links

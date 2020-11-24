@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/people/v1", "people_v1.Resource$Contactgroups$Members")
 @js.native
 class ResourceContactgroupsMembers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * people.contactGroups.members.modify
     * @desc Modify the members of a contact group owned by the authenticated
@@ -49,4 +51,3 @@ class ResourceContactgroupsMembers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaModifyContactGroupMembersResponse]
   ): Unit = js.native
 }
-

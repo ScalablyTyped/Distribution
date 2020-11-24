@@ -10,9 +10,9 @@ Multi Backend system compatible with React DnD
 | ------------------ | :-------------: |
 | Full name          | react-dnd-multi-backend |
 | Keywords           | react, dnd, drag, drop, html5, touch, react-dnd |
-| # releases         | 25 |
-| # dependents       | 17 |
-| # downloads        | 491282 |
+| # releases         | 23 |
+| # dependents       | 30 |
+| # downloads        | 839792 |
 | # stars            | 0 |
 
 ## Links

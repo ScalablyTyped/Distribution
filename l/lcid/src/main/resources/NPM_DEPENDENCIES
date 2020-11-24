@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "lcid" : "3.0.0"
+      "lcid" : "3.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "lcid" : "3.0.0"
+      "lcid" : "3.1.1"
     }
   ],
   "compile-devDependencies" : [

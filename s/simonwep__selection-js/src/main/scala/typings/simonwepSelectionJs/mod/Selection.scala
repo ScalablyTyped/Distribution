@@ -23,26 +23,36 @@ import typings.std.Node
 import typings.std.UIEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Selection extends js.Object {
+  
   def cancel(): Unit = js.native
   def cancel(keepEvent: Boolean): Unit = js.native
+  
   def clearSelection(): Unit = js.native
+  
   def destroy(): Unit = js.native
+  
   def disable(): Unit = js.native
+  
   def enable(): Unit = js.native
+  
   def getSelection(): js.Array[Element] = js.native
+  
   def keepSelection(): Unit = js.native
+  
   def off[E /* <: /* keyof @simonwep/selection-js.@simonwep/selection-js.SelectionEvents */ beforestart | start | move | stop */](
     ev: E,
     cb: /* import warning: importer.ImportType#apply Failed type conversion: @simonwep/selection-js.@simonwep/selection-js.SelectionEvents[E] */ js.Any
   ): this.type = js.native
+  
   def on[E /* <: /* keyof @simonwep/selection-js.@simonwep/selection-js.SelectionEvents */ beforestart | start | move | stop */](
     ev: E,
     cb: /* import warning: importer.ImportType#apply Failed type conversion: @simonwep/selection-js.@simonwep/selection-js.SelectionEvents[E] */ js.Any
   ): this.type = js.native
+  
   @JSName("option")
   def option_boundaries(name: boundaries): js.UndefOr[js.Array[String]] = js.native
   @JSName("option")
@@ -98,13 +108,16 @@ trait Selection extends js.Object {
   def option_tapMode(name: tapMode): js.UndefOr[TapMode] = js.native
   @JSName("option")
   def option_tapMode(name: tapMode, value: js.UndefOr[TapMode]): js.UndefOr[TapMode] = js.native
+  
   def removeFromSelection(el: Element): Unit = js.native
+  
   def resolveSelectables(): Unit = js.native
+  
   @JSName("select")
   def select_0(
     query: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(selector : string | std.HTMLElement | std.ReadonlyArray<string | std.HTMLElement>): std.Array<std.Element>>[0] */ js.Any
   ): this.type = js.native
+  
   def trigger(evt: UIEvent): Unit = js.native
   def trigger(evt: UIEvent, silent: Boolean): Unit = js.native
 }
-

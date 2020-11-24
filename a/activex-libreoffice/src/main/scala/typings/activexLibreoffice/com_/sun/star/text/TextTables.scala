@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to all tables in a document. */
 @js.native
 trait TextTables
   extends XIndexAccess
      with XNameAccess
-
 object TextTables {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -35,4 +35,3 @@ object TextTables {
     __obj.asInstanceOf[TextTables]
   }
 }
-

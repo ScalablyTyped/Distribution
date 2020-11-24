@@ -3,7 +3,7 @@ package typings.babylonjs.mod
 import typings.babylonjs.webVRCameraMod.WebVROptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "WebVRFreeCamera")
 @js.native
@@ -28,4 +28,3 @@ class WebVRFreeCamera protected ()
     webVROptions: WebVROptions
   ) = this()
 }
-

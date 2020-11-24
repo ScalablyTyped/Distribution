@@ -8,7 +8,7 @@ import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.LoadOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -18,11 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TableStyleCollection extends ClientObject {
-  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-  @JSName("context")
-  var context_TableStyleCollection: RequestContext = js.native
-  /** Gets the loaded child items in this collection. */
-  val items: js.Array[TableStyle] = js.native
+  
   /**
     * Creates a blank TableStyle with the specified name.
     *
@@ -34,12 +30,18 @@ trait TableStyleCollection extends ClientObject {
     */
   def add(name: String): TableStyle = js.native
   def add(name: String, makeUniqueName: Boolean): TableStyle = js.native
+  
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_TableStyleCollection: RequestContext = js.native
+  
   /**
     * Gets the number of table styles in the collection.
     *
     * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
+  
   /**
     * Gets the default TableStyle for the parent object's scope.
     *
@@ -47,6 +49,7 @@ trait TableStyleCollection extends ClientObject {
     * @returns The TableStyle object that is the current default TableStyle.
     */
   def getDefault(): TableStyle = js.native
+  
   /**
     * Gets a TableStyle by name.
     *
@@ -56,6 +59,7 @@ trait TableStyleCollection extends ClientObject {
     * @returns The TableStyle object whose name matches the input.
     */
   def getItem(name: String): TableStyle = js.native
+  
   /**
     * Gets a TableStyle by name. If the TableStyle does not exist, will return a null object.
     *
@@ -65,6 +69,10 @@ trait TableStyleCollection extends ClientObject {
     * @returns The TableStyle object whose name matches the input.
     */
   def getItemOrNullObject(name: String): TableStyle = js.native
+  
+  /** Gets the loaded child items in this collection. */
+  val items: js.Array[TableStyle] = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -75,6 +83,7 @@ trait TableStyleCollection extends ClientObject {
   def load(propertyNamesAndPaths: LoadOption): TableStyleCollection = js.native
   def load(propertyNames: String): TableStyleCollection = js.native
   def load(propertyNames: js.Array[String]): TableStyleCollection = js.native
+  
   def setDefault(newDefaultStyle: String): Unit = js.native
   /**
     * Sets the default TableStyle for use in the parent object's scope.
@@ -84,10 +93,10 @@ trait TableStyleCollection extends ClientObject {
     * @param newDefaultStyle The TableStyle object or name of the TableStyle object that should be the new default.
     */
   def setDefault(newDefaultStyle: TableStyle): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original `Excel.TableStyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableStyleCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     */
   def toJSON(): TableStyleCollectionData = js.native
 }
-

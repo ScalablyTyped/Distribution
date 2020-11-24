@@ -17,11 +17,12 @@ import typings.stripe.mod.refunds.IRefund
 import typings.stripe.mod.refunds.IRefundCreationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Charges")
 @js.native
 class Charges () extends StripeResource {
+  
   /**
     * Capture the payment of an existing, uncaptured, charge. This is the second half of the two-step payment flow, where first
     * you created a charge with the capture option set to false. Uncaptured payments expire exactly seven days after they are
@@ -43,6 +44,7 @@ class Charges () extends StripeResource {
     response: IResponseFn[ICharge]
   ): js.Promise[ICharge] = js.native
   def capture(id: String, data: IChargeCaptureOptions, options: HeaderOptions): js.Promise[ICharge] = js.native
+  
   def create(data: IChargeCreationOptions): js.Promise[ICharge] = js.native
   /**
     * To charge a credit card, you create a charge object. If your API key is in test mode, the supplied card won't actually be charged, though
@@ -60,6 +62,7 @@ class Charges () extends StripeResource {
   def create(data: IChargeCreationOptions, options: HeaderOptions): js.Promise[ICharge] = js.native
   def create(data: IChargeCreationOptions, options: HeaderOptions, response: IResponseFn[ICharge]): js.Promise[ICharge] = js.native
   def create(data: IChargeCreationOptions, response: IResponseFn[ICharge]): js.Promise[ICharge] = js.native
+  
   def createRefund(id: String): js.Promise[IRefund] = js.native
   def createRefund(id: String, data: IRefundCreationOptions): js.Promise[IRefund] = js.native
   /**
@@ -84,6 +87,7 @@ class Charges () extends StripeResource {
   def createRefund(id: String, options: HeaderOptions): js.Promise[IRefund] = js.native
   def createRefund(id: String, options: HeaderOptions, response: IResponseFn[IRefund]): js.Promise[IRefund] = js.native
   def createRefund(id: String, response: IResponseFn[IRefund]): js.Promise[IRefund] = js.native
+  
   def list(): IListPromise[ICharge] = js.native
   def list(data: IChargeListOptions): IListPromise[ICharge] = js.native
   /**
@@ -103,6 +107,7 @@ class Charges () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[ICharge] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[ICharge]]): IListPromise[ICharge] = js.native
   def list(response: IResponseFn[IList[ICharge]]): IListPromise[ICharge] = js.native
+  
   def listRefunds(chargeId: String): IListPromise[IRefund] = js.native
   def listRefunds(chargeId: String, data: IListOptions): IListPromise[IRefund] = js.native
   /**
@@ -129,10 +134,13 @@ class Charges () extends StripeResource {
   def listRefunds(chargeId: String, options: HeaderOptions): IListPromise[IRefund] = js.native
   def listRefunds(chargeId: String, options: HeaderOptions, response: IResponseFn[IList[IRefund]]): IListPromise[IRefund] = js.native
   def listRefunds(chargeId: String, response: IResponseFn[IList[IRefund]]): IListPromise[IRefund] = js.native
+  
   def markAsFraudulent(chargeId: String): js.Promise[ICharge] = js.native
   def markAsFraudulent(chargeId: String, response: IResponseFn[ICharge]): js.Promise[ICharge] = js.native
+  
   def markAsSafe(chargeId: String): js.Promise[ICharge] = js.native
   def markAsSafe(chargeId: String, response: IResponseFn[ICharge]): js.Promise[ICharge] = js.native
+  
   def refund(chargeId: String): js.Promise[IRefund] = js.native
   def refund(chargeId: String, data: IRefundCreationOptions): js.Promise[IRefund] = js.native
   /**
@@ -152,6 +160,7 @@ class Charges () extends StripeResource {
   def refund(chargeId: String, options: HeaderOptions): js.Promise[IRefund] = js.native
   def refund(chargeId: String, options: HeaderOptions, response: IResponseFn[IRefund]): js.Promise[IRefund] = js.native
   def refund(chargeId: String, response: IResponseFn[IRefund]): js.Promise[IRefund] = js.native
+  
   def retrieve(id: String): js.Promise[ICharge] = js.native
   def retrieve(id: String, data: IDataOptions): js.Promise[ICharge] = js.native
   /**
@@ -168,6 +177,7 @@ class Charges () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions): js.Promise[ICharge] = js.native
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[ICharge]): js.Promise[ICharge] = js.native
   def retrieve(id: String, response: IResponseFn[ICharge]): js.Promise[ICharge] = js.native
+  
   def retrieveRefund(chargeId: String, refundId: String): js.Promise[IRefund] = js.native
   /**
     * By default, you can see the 10 most recent refunds stored directly on the charge object, but you can also retrieve details about a specific
@@ -179,6 +189,7 @@ class Charges () extends StripeResource {
   def retrieveRefund(chargeId: String, refundId: String, options: HeaderOptions): js.Promise[IRefund] = js.native
   def retrieveRefund(chargeId: String, refundId: String, options: HeaderOptions, response: IResponseFn[IRefund]): js.Promise[IRefund] = js.native
   def retrieveRefund(chargeId: String, refundId: String, response: IResponseFn[IRefund]): js.Promise[IRefund] = js.native
+  
   def update(id: String, data: IChargeUpdateOptions): js.Promise[ICharge] = js.native
   /**
     * Updates the specified charge by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
@@ -190,6 +201,7 @@ class Charges () extends StripeResource {
   def update(id: String, data: IChargeUpdateOptions, options: HeaderOptions): js.Promise[ICharge] = js.native
   def update(id: String, data: IChargeUpdateOptions, options: HeaderOptions, response: IResponseFn[ICharge]): js.Promise[ICharge] = js.native
   def update(id: String, data: IChargeUpdateOptions, response: IResponseFn[ICharge]): js.Promise[ICharge] = js.native
+  
   def updateRefund(chargeId: String, refundId: String, data: IDataOptionsWithMetadata): js.Promise[IRefund] = js.native
   /**
     * Updates the specified refund by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
@@ -208,4 +220,3 @@ class Charges () extends StripeResource {
   ): js.Promise[IRefund] = js.native
   def updateRefund(chargeId: String, refundId: String, data: IDataOptionsWithMetadata, response: IResponseFn[IRefund]): js.Promise[IRefund] = js.native
 }
-

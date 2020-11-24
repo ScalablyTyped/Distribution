@@ -13,25 +13,15 @@ import typings.facebookInstantGames.FBInstant.Player
 import typings.facebookInstantGames.FBInstant.SharePayload
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object FBInstant extends js.Object {
-    /**
-      * Contains functions and properties related to the current game context.
-      */
-    var context: Context = js.native
-    /**
-      * Contains functions and properties related to payments and purchases of game products.
-      */
-    var payments: Payments = js.native
-    /**
-      * Contains functions and properties related to the current player.
-      */
-    var player: Player = js.native
+    
     /**
       * Returns whether or not the user is eligible to have shortcut creation requested.
       *
@@ -43,6 +33,7 @@ object global extends js.Object {
       * @throws INVALID_OPERATION
       */
     def canCreateShortcutAsync(): js.Promise[Boolean] = js.native
+    
     /**
       * Checks if the current player is eligible for the matchPlayerAsync API.
       * @returns  A promise that resolves with true if the player is eligible to match with other players and false otherwise.
@@ -50,6 +41,12 @@ object global extends js.Object {
       * @throws CLIENT_UNSUPPORTED_OPERATION
       */
     def checkCanPlayerMatchAsync(): js.Promise[Boolean] = js.native
+    
+    /**
+      * Contains functions and properties related to the current game context.
+      */
+    var context: Context = js.native
+    
     /**
       * Prompts the user to create a shortcut to the game if they are eligible to Can only be called once per session. (see canCreateShortcutAsync)
       * @throws USER_INPUT
@@ -58,6 +55,7 @@ object global extends js.Object {
       * @throws INVALID_OPERATION
       */
     def createShortcutAsync(): js.Promise[Unit] = js.native
+    
     /**
       * Returns the entry point that the game was launched from.
       * This function should be called after FBInstant.startGameAsync() resolves.
@@ -65,6 +63,7 @@ object global extends js.Object {
       * @returns The name of the entry point from which the user started the game.
       */
     def getEntryPointAsync(): js.Promise[String] = js.native
+    
     /**
       * Returns any data object associated with the entry point that the game was launched from.
       *
@@ -74,6 +73,7 @@ object global extends js.Object {
       * @returns Data associated with the current entry point.
       */
     def getEntryPointData(): js.Any = js.native
+    
     /**
       * Attempt to create an instance of interstitial ad. This instance can then be preloaded and presented.
       * @param placementID The placement ID that's been setup in your Audience Network settings.
@@ -82,6 +82,7 @@ object global extends js.Object {
       * @throws CLIENT_UNSUPPORTED_OPERATION
       */
     def getInterstitialAdAsync(placementID: String): js.Promise[AdInstance] = js.native
+    
     /**
       * Fetch a specific leaderboard belonging to this Instant Game.
       *
@@ -94,6 +95,7 @@ object global extends js.Object {
       * @throws INVALID_PARAM
       */
     def getLeaderboardAsync(name: String): js.Promise[Leaderboard] = js.native
+    
     /**
       * The current locale. Use this to determine what language the current game should be localized with.
       * The value will not be accurate until FBInstant.startGameAsync() resolves.
@@ -101,10 +103,12 @@ object global extends js.Object {
       * @returns The current locale.
       */
     def getLocale(): String | Null = js.native
+    
     /**
       * The platform on which the game is currently running. The value will always be null until FBInstant.initializeAsync() resolves.
       */
     def getPlatform(): Platform | Null = js.native
+    
     /**
       * Attempt to create an instance of rewarded video. This instance can then be preloaded and presented.
       * @param placementID The placement ID that's been setup in your Audience Network settings.
@@ -113,18 +117,21 @@ object global extends js.Object {
       * @throws CLIENT_UNSUPPORTED_OPERATION
       */
     def getRewardedVideoAsync(placementID: String): js.Promise[AdInstance] = js.native
+    
     /**
       * The string representation of this SDK version.
       *
       * @returns The SDK version.
       */
     def getSDKVersion(): String = js.native
+    
     /**
       * Provides a list of API functions that are supported by the client.
       *
       * @returns List of API functions that the client explicitly supports.
       */
     def getSupportedAPIs(): js.Array[String] = js.native
+    
     /**
       * Initializes the SDK library. This should be called before any other SDK functions.
       *
@@ -132,6 +139,7 @@ object global extends js.Object {
       * @throws INVALID_OPERATION
       */
     def initializeAsync(): js.Promise[Unit] = js.native
+    
     /**
       * Log an app event with FB Analytics. See https://developers.facebook.com/docs/javascript/reference/v2.8#app_events for more details about FB Analytics.
       *
@@ -145,6 +153,7 @@ object global extends js.Object {
     def logEvent(eventName: String, valueToSum: js.UndefOr[scala.Nothing], parameters: StringDictionary[String]): APIError | Null = js.native
     def logEvent(eventName: String, valueToSum: Double): APIError | Null = js.native
     def logEvent(eventName: String, valueToSum: Double, parameters: StringDictionary[String]): APIError | Null = js.native
+    
     /**
       * Attempts to match the current player with other users looking for people to play with. If successful, a new Messenger group
       * thread will be created containing the matched players and the player will be context switched to that thread.
@@ -177,11 +186,23 @@ object global extends js.Object {
     def matchPlayerAsync(matchTag: String, switchContextWhenMatched: js.UndefOr[scala.Nothing], offlineMatch: Boolean): js.Promise[Unit] = js.native
     def matchPlayerAsync(matchTag: String, switchContextWhenMatched: Boolean): js.Promise[Unit] = js.native
     def matchPlayerAsync(matchTag: String, switchContextWhenMatched: Boolean, offlineMatch: Boolean): js.Promise[Unit] = js.native
+    
     /**
       * Set a callback to be fired when a pause event is triggered.
       * @param func A function to call when a pause event occurs.
       */
     def onPause(func: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * Contains functions and properties related to payments and purchases of game products.
+      */
+    var payments: Payments = js.native
+    
+    /**
+      * Contains functions and properties related to the current player.
+      */
+    var player: Player = js.native
+    
     /**
       * Posts the player's best score for the session to Facebook.
       * This API should be called whenever the player achieves their best score in a session, preferably at the end of an activity
@@ -191,16 +212,19 @@ object global extends js.Object {
       * @returns void
       */
     def postSessionScore(score: Double): Unit = js.native
+    
     /**
       * Quits the game.
       */
     def quit(): Unit = js.native
+    
     /**
       * Report the game's initial loading progress.
       *
       * @param percentage A number between 0 and 100.
       */
     def setLoadingProgress(percentage: Double): Unit = js.native
+    
     /**
       * Sets the data associated with the individual gameplay session for the current context.
       *
@@ -210,6 +234,7 @@ object global extends js.Object {
       * @param sessionData An arbitrary data object, which must be less than or equal to 1000 characters when stringified.
       */
     def setSessionData(sessionData: js.Any): Unit = js.native
+    
     /**
       * This invokes a dialog to let the user share specified content, either as a message in Messenger or as a post on the user's timeline.
       * A blob of data can be attached to the share which every game session launched from the share will be able to access from FBInstant.getEntryPointData().
@@ -225,6 +250,7 @@ object global extends js.Object {
       * @throws INVALID_OPERATION
       */
     def shareAsync(payload: SharePayload): js.Promise[Unit] = js.native
+    
     /**
       * This indicates that the game has finished initial loading and is ready to start.
       * Context information will be up-to-date when the returned promise resolves.
@@ -234,6 +260,7 @@ object global extends js.Object {
       * @throws CLIENT_UNSUPPORTED_OPERATION
       */
     def startGameAsync(): js.Promise[Unit] = js.native
+    
     /**
       * Request that the client switch to a different Instant Game. The API will reject if the switch fails - else, the client will load the new game.
       *
@@ -247,6 +274,7 @@ object global extends js.Object {
       */
     def switchGameAsync(appID: String): js.Promise[Unit] = js.native
     def switchGameAsync(appID: String, data: js.Any): js.Promise[Unit] = js.native
+    
     /**
       * Informs Facebook of an update that occurred in the game. This will temporarily yield control to Facebook and Facebook will decide what to do based on what the update is.
       * The returned promise will resolve/reject when Facebook returns control to the game.
@@ -260,6 +288,4 @@ object global extends js.Object {
     def updateAsync(payload: CustomUpdatePayload): js.Promise[Unit] = js.native
     def updateAsync(payload: LeaderboardUpdatePayload): js.Promise[Unit] = js.native
   }
-  
 }
-

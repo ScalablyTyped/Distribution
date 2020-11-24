@@ -10,7 +10,7 @@ import typings.xrm.xrmNumbers.`5`
 import typings.xrm.xrmNumbers.`6`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enumeration of entity form states/types.
@@ -26,29 +26,35 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmNumbers.`11`
 */
 trait FormType extends js.Object
-
 object FormType {
+  
   @scala.inline
   def BulkEdit: `6` = 6.asInstanceOf[`6`]
+  
   @scala.inline
   def Create: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def Disabled: `4` = 4.asInstanceOf[`4`]
+  
   /**
     * @deprecated QuickCreate has been deprecated
     */
   @scala.inline
   def QuickCreate: `5` = 5.asInstanceOf[`5`]
+  
   @scala.inline
   def ReadOnly: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * @deprecated ReadOptimized has been deprecated.
     */
   @scala.inline
   def ReadOptimized: `11` = 11.asInstanceOf[`11`]
+  
   @scala.inline
   def Undefined: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def Update: `2` = 2.asInstanceOf[`2`]
 }
-

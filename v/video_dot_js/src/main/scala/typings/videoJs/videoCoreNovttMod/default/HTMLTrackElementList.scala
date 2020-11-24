@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.HTMLTrackElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "HTMLTrackElementList")
 @js.native
@@ -21,4 +21,3 @@ Instantiable0[typings.videoJs.mod.videojs.HTMLTrackElementList]
       /* tracks */ js.Array[HTMLTrackElement], 
       typings.videoJs.mod.videojs.HTMLTrackElementList
     ]
-

@@ -2,7 +2,7 @@ package typings.tstl.tstlModuleMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/module", "Entry")
 @js.native
@@ -16,4 +16,3 @@ class Entry[Key, T] protected ()
     */
   def this(first: Key, second: T) = this()
 }
-

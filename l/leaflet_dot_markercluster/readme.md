@@ -10,9 +10,9 @@ Provides Beautiful Animated Marker Clustering functionality for Leaflet
 | ------------------ | :-------------: |
 | Full name          | leaflet.markercluster |
 | Keywords           | gis, map, cluster |
-| # releases         | 4 |
-| # dependents       | 88 |
-| # downloads        | 2121488 |
+| # releases         | 1 |
+| # dependents       | 100 |
+| # downloads        | 3092021 |
 | # stars            | 1 |
 
 ## Links

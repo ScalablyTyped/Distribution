@@ -10,9 +10,9 @@ The core package of hemera
 | ------------------ | :-------------: |
 | Full name          | nats-hemera |
 | Keywords           | micro, service, microservice, micro-service, microservices, micro-services, services, micro services, micro service, framework, minimum, viable, product, toolkit, startup, nats, messaging, pubsub, publish, subscribe, queue, distributed, queueing |
-| # releases         | 62 |
+| # releases         | 7 |
 | # dependents       | 31 |
-| # downloads        | 223852 |
+| # downloads        | 207988 |
 | # stars            | 2 |
 
 ## Links

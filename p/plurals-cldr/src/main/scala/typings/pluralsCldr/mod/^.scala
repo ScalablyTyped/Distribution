@@ -2,16 +2,12 @@ package typings.pluralsCldr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plurals-cldr", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  /**
-    * Gets the CLDR ordinal plural forms for numbers in different locales.
-    */
-  @JSName("ordinal")
-  var ordinal_Original: Plural = js.native
+  
   def apply(locale: String, number: String): Form | Null = js.native
   /**
     * Returns the form name for a given number. If the locale is not
@@ -22,6 +18,7 @@ object ^ extends js.Object {
     *     trailing zeroes.
     */
   def apply(locale: String, number: Double): Form | Null = js.native
+  
   /**
     * Returns an array of available forms for the given locale. If the
     * locale is not supported, returns `null`.
@@ -29,6 +26,7 @@ object ^ extends js.Object {
     * @param locale The locale code.
     */
   def forms(locale: String): js.Array[Form] | Null = js.native
+  
   def indexOf(locale: String, number: String): Double = js.native
   /**
     * Returns the index of the form for a given number. If the locale is
@@ -44,6 +42,7 @@ object ^ extends js.Object {
     *     trailing zeroes.
     */
   def indexOf(locale: String, number: Double): Double = js.native
+  
   def ordinal(locale: String, number: String): Form | Null = js.native
   /**
     * Returns the form name for a given number. If the locale is not
@@ -57,5 +56,9 @@ object ^ extends js.Object {
     * Gets the CLDR ordinal plural forms for numbers in different locales.
     */
   def ordinal(locale: String, number: Double): Form | Null = js.native
+  /**
+    * Gets the CLDR ordinal plural forms for numbers in different locales.
+    */
+  @JSName("ordinal")
+  var ordinal_Original: Plural = js.native
 }
-

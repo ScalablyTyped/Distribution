@@ -5,7 +5,7 @@ import typings.fridaGum.NativeCallbackImplementation
 import typings.fridaGum.NativeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("NativeCallback")
 @js.native
@@ -19,4 +19,3 @@ class NativeCallback protected ()
     abi: NativeABI
   ) = this()
 }
-

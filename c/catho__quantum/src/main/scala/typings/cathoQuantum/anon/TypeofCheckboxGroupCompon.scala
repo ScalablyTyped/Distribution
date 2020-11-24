@@ -6,11 +6,12 @@ import typings.cathoQuantum.checkboxMod.CheckboxGroup
 import typings.cathoQuantum.checkboxMod.CheckboxType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofCheckboxGroupCompon extends Instantiable0[CheckboxGroup] {
+  
   var Button: CheckboxButton = js.native
+  
   var Checkbox: CheckboxType = js.native
 }
-

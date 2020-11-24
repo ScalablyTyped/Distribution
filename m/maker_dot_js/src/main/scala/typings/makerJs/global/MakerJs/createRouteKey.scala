@@ -2,11 +2,12 @@ package typings.makerJs.global.MakerJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.createRouteKey")
 @js.native
 object createRouteKey extends js.Object {
+  
   /**
     * Create a string representation of a route array.
     *
@@ -15,4 +16,3 @@ object createRouteKey extends js.Object {
     */
   def apply(route: js.Array[String]): String = js.native
 }
-

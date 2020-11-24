@@ -3,22 +3,23 @@ package typings.antDesignReactNative.toastMod
 import typings.antDesignReactNative.anon.Duration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native/lib/toast", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   var LONG: Double = js.native
+  
   var SHORT: Double = js.native
-  var defaultConfig: IToastConfigurable = js.native
-  var removeAll: js.Function0[Unit] = js.native
+  
   def config(props: IToastConfigurable): Unit = js.native
+  
+  var defaultConfig: IToastConfigurable = js.native
+  
   /**
     *
     * @param props: toast props
-    * @deprecated duration: use props instead
-    * @deprecated onClose: use props instead
-    * @deprecated mask: use props instead
     */
   def fail(props: String): Double = js.native
   def fail(
@@ -51,13 +52,12 @@ object default extends js.Object {
   def fail(props: IToastProps, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
   def fail(props: IToastProps, duration: Double, onClose: js.Function0[Unit]): Double = js.native
   def fail(props: IToastProps, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = js.native
+  
   def getConfig(): Duration = js.native
+  
   /**
     *
     * @param props: toast props
-    * @deprecated duration: use props instead
-    * @deprecated onClose: use props instead
-    * @deprecated mask: use props instead
     */
   def info(props: String): Double = js.native
   def info(
@@ -90,12 +90,10 @@ object default extends js.Object {
   def info(props: IToastProps, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
   def info(props: IToastProps, duration: Double, onClose: js.Function0[Unit]): Double = js.native
   def info(props: IToastProps, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = js.native
+  
   /**
     *
     * @param props: toast props
-    * @deprecated duration: use props instead
-    * @deprecated onClose: use props instead
-    * @deprecated mask: use props instead
     */
   def loading(props: String): Double = js.native
   def loading(
@@ -128,12 +126,10 @@ object default extends js.Object {
   def loading(props: IToastProps, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
   def loading(props: IToastProps, duration: Double, onClose: js.Function0[Unit]): Double = js.native
   def loading(props: IToastProps, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = js.native
+  
   /**
     *
     * @param props: toast props
-    * @deprecated duration: use props instead
-    * @deprecated onClose: use props instead
-    * @deprecated mask: use props instead
     */
   def offline(props: String): Double = js.native
   def offline(
@@ -166,7 +162,11 @@ object default extends js.Object {
   def offline(props: IToastProps, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
   def offline(props: IToastProps, duration: Double, onClose: js.Function0[Unit]): Double = js.native
   def offline(props: IToastProps, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = js.native
-  def remove(key: Double): Unit = js.native
+  
+  var remove: js.Function1[/* key */ Double, Unit] = js.native
+  
+  var removeAll: js.Function0[Unit] = js.native
+  
   /**
     * @deprecated use Toast.info instead
     */
@@ -178,12 +178,10 @@ object default extends js.Object {
   def show(props: IToastProps, duration: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
   def show(props: IToastProps, duration: Double): Double = js.native
   def show(props: IToastProps, duration: Double, mask: Boolean): Double = js.native
+  
   /**
     *
     * @param props: toast props
-    * @deprecated duration: use props instead
-    * @deprecated onClose: use props instead
-    * @deprecated mask: use props instead
     */
   def success(props: String): Double = js.native
   def success(
@@ -217,4 +215,3 @@ object default extends js.Object {
   def success(props: IToastProps, duration: Double, onClose: js.Function0[Unit]): Double = js.native
   def success(props: IToastProps, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = js.native
 }
-

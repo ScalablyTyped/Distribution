@@ -8,11 +8,12 @@ import typings.materialUi.MaterialUI.Stepper.StepperProps
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__MaterialUI.Stepper")
 @js.native
 object Stepper extends js.Object {
+  
   @js.native
   class Step ()
     extends Component[StepProps, js.Object, js.Any]
@@ -32,6 +33,4 @@ object Stepper extends js.Object {
   @js.native
   class Stepper ()
     extends Component[StepperProps, js.Object, js.Any]
-  
 }
-

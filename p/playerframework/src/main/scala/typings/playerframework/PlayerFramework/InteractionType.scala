@@ -2,14 +2,14 @@ package typings.playerframework.PlayerFramework
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait InteractionType extends js.Object
-
 @JSGlobal("PlayerFramework.InteractionType")
 @js.native
 object InteractionType extends js.Object {
+  
   /**
     * Indicates both "soft" and "hard" interactions.
     **/
@@ -33,6 +33,4 @@ object InteractionType extends js.Object {
     **/
   @js.native
   sealed trait soft extends InteractionType
-  
 }
-

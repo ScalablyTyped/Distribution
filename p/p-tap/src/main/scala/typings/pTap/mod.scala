@@ -3,14 +3,12 @@ package typings.pTap
 import typings.pTap.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-tap", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  // TODO: Remove this for the next major release
-  @JSName("default")
-  var default_Original: Call = js.native
+  
   /**
   	Tap into a promise chain without affecting its value or state. Use this in a `.then()` method.
   	@param tapHandler - Any return value is ignored. Exceptions thrown in `tapHandler` are relayed back to the original promise chain. If `tapHandler` returns a `Promise`, it will be awaited before passing through the original value.
@@ -31,6 +29,7 @@ object mod extends js.Object {
   	```
   	*/
   def apply[ValueType](tapHandler: js.Function1[/* value */ ValueType, _]): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = js.native
+  
   /**
   	Tap into a promise chain without affecting its value or state. Use this in a `.catch()` method.
   	@param tapHandler - Any return value is ignored. Exceptions thrown in `tapHandler` are relayed back to the original promise chain. If `tapHandler` returns a `Promise`, it will be awaited before passing through the original value.
@@ -45,6 +44,7 @@ object mod extends js.Object {
   	```
   	*/
   def `catch`[ErrorType](tapHandler: js.Function1[/* error */ ErrorType, _]): js.Function1[/* error */ ErrorType, js.Promise[scala.Nothing]] = js.native
+  
   /**
   	Tap into a promise chain without affecting its value or state. Use this in a `.then()` method.
   	@param tapHandler - Any return value is ignored. Exceptions thrown in `tapHandler` are relayed back to the original promise chain. If `tapHandler` returns a `Promise`, it will be awaited before passing through the original value.
@@ -66,5 +66,7 @@ object mod extends js.Object {
   	*/
   // TODO: Remove this for the next major release
   def default[ValueType](tapHandler: js.Function1[/* value */ ValueType, _]): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = js.native
+  // TODO: Remove this for the next major release
+  @JSName("default")
+  var default_Original: Call = js.native
 }
-

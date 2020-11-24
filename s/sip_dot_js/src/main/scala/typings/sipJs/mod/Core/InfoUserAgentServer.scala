@@ -3,7 +3,7 @@ package typings.sipJs.mod.Core
 import typings.sipJs.incomingRequestMod.IncomingRequestDelegate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.InfoUserAgentServer")
 @js.native
@@ -19,4 +19,3 @@ class InfoUserAgentServer protected ()
     delegate: IncomingRequestDelegate
   ) = this()
 }
-

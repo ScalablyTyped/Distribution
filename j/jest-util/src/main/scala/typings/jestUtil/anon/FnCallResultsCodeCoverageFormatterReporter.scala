@@ -6,10 +6,11 @@ import typings.jestTestResult.typesMod.CodeCoverageReporter
 import typings.jestTestResult.typesMod.FormattedTestResults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallResultsCodeCoverageFormatterReporter extends js.Object {
+  
   def apply(results: AggregatedResult): FormattedTestResults = js.native
   def apply(
     results: AggregatedResult,
@@ -23,4 +24,3 @@ trait FnCallResultsCodeCoverageFormatterReporter extends js.Object {
     reporter: CodeCoverageReporter
   ): FormattedTestResults = js.native
 }
-

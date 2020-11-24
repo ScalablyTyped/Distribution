@@ -10,9 +10,9 @@ Enjoyable content drag-to-scroll library
 | ------------------ | :-------------: |
 | Full name          | scrollbooster |
 | Keywords           | drag, draggable, scroll, scrollable, UI, microlibrary |
-| # releases         | 12 |
-| # dependents       | 5 |
-| # downloads        | 58137 |
+| # releases         | 10 |
+| # dependents       | 4 |
+| # downloads        | 119314 |
 | # stars            | 1 |
 
 ## Links

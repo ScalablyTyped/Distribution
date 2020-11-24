@@ -2,11 +2,12 @@ package typings.youtubeDl.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("youtube-dl", "getExtractors")
 @js.native
 object getExtractors extends js.Object {
+  
   def apply(callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = js.native
   def apply(
     descriptions: Boolean,
@@ -18,4 +19,3 @@ object getExtractors extends js.Object {
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
   ): Unit = js.native
 }
-

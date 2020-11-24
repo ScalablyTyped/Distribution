@@ -11,8 +11,8 @@ Yet another JS code coverage tool that computes statement, line, function and br
 | Full name          | istanbul |
 | Keywords           | coverage, code coverage, JS code coverage, JS coverage |
 | # releases         | 1 |
-| # dependents       | 844 |
-| # downloads        | 57261599 |
+| # dependents       | 842 |
+| # downloads        | 48935105 |
 | # stars            | 222 |
 
 ## Links

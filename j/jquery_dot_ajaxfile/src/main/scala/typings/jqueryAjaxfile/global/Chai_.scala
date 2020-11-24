@@ -2,11 +2,12 @@ package typings.jqueryAjaxfile.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Chai")
 @js.native
 object Chai_ extends js.Object {
+  
   @js.native
   class AssertionError protected ()
     extends typings.jqueryAjaxfile.Chai.AssertionError {
@@ -15,6 +16,4 @@ object Chai_ extends js.Object {
     def this(message: String, _props: js.UndefOr[scala.Nothing], ssf: js.Function) = this()
     def this(message: String, _props: js.Any, ssf: js.Function) = this()
   }
-  
 }
-

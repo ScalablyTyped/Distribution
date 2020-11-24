@@ -10,9 +10,9 @@ js function for hashing messages with MD5
 | ------------------ | :-------------: |
 | Full name          | md5 |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 2237 |
-| # downloads        | 77665950 |
+| # releases         | 2 |
+| # dependents       | 2707 |
+| # downloads        | 109965806 |
 | # stars            | 69 |
 
 ## Links

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataflow/v1b3", "dataflow_v1b3.Resource$Projects$Jobs$Debug")
 @js.native
 class ResourceProjectsJobsDebug protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dataflow.projects.jobs.debug.getConfig
     * @desc Get encoded debug configuration for component. Not cacheable.
@@ -46,6 +48,7 @@ class ResourceProjectsJobsDebug protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetDebugConfigResponse]
   ): Unit = js.native
+  
   /**
     * dataflow.projects.jobs.debug.sendCapture
     * @desc Send encoded debug capture data for component.
@@ -80,4 +83,3 @@ class ResourceProjectsJobsDebug protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSendDebugCaptureResponse]
   ): Unit = js.native
 }
-

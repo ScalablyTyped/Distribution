@@ -12,7 +12,7 @@ Vkontakte Open API for websites for use with Browserify.
 | Keywords           | vk, vkontakte, browserify |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 625 |
+| # downloads        | 486 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.chrome.global.chrome
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Events
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.events")
 @js.native
 object events extends js.Object
-

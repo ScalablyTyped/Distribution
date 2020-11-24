@@ -11,8 +11,8 @@ Visualize flow between nodes in a directed acyclic network.
 | Full name          | d3-sankey |
 | Keywords           | d3, d3-module, sankey |
 | # releases         | 15 |
-| # dependents       | 49 |
-| # downloads        | 3843788 |
+| # dependents       | 55 |
+| # downloads        | 6609956 |
 | # stars            | 1 |
 
 ## Links

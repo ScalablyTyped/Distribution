@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__react-native
 
-Typings are for version 5.3.19
+Typings are for version 5.3.23
 
 ## Library description:
 A better way to develop React Native Components for your app
@@ -10,15 +10,15 @@ A better way to develop React Native Components for your app
 | ------------------ | :-------------: |
 | Full name          | @storybook/react-native |
 | Keywords           | react, react-native, storybook |
-| # releases         | 382 |
-| # dependents       | 13 |
-| # downloads        | 2404527 |
+| # releases         | 353 |
+| # dependents       | 19 |
+| # downloads        | 3232023 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/app/react-native)
-- [Bugs](https://github.com/storybookjs/storybook/issues)
-- [Repository](https://github.com/storybookjs/storybook)
+- [Homepage](https://storybook.js.org/)
+- [Bugs](https://github.com/storybookjs/react-native/issues)
+- [Repository](https://github.com/storybookjs/react-native)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Freact-native)
     
 

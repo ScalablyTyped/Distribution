@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "serialize-javascript"
-version := "4.0-dt-20200716Z-ebdb6b"
+version := "4.0-dt-20200716Z-d8618e"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

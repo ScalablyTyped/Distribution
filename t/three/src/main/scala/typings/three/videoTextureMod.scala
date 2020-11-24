@@ -10,13 +10,25 @@ import typings.three.textureMod.Texture
 import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/textures/VideoTexture", JSImport.Namespace)
 @js.native
 object videoTextureMod extends js.Object {
+  
   @js.native
   class VideoTexture protected () extends Texture {
+    /**
+    	 * @param video
+    	 * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+    	 * @param [wrapS=THREE.ClampToEdgeWrapping]
+    	 * @param [wrapT=THREE.ClampToEdgeWrapping]
+    	 * @param [magFilter=THREE.LinearFilter]
+    	 * @param [minFilter=THREE.LinearFilter]
+    	 * @param [format=THREE.RGBFormat]
+    	 * @param [type=THREE.UnsignedByteType]
+    	 * @param [anisotropy=1]
+    	 */
     def this(
       video: HTMLVideoElement,
       mapping: js.UndefOr[Mapping],
@@ -28,8 +40,7 @@ object videoTextureMod extends js.Object {
       `type`: js.UndefOr[TextureDataType],
       anisotropy: js.UndefOr[Double]
     ) = this()
+    
     val isVideoTexture: `true` = js.native
   }
-  
 }
-

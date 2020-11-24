@@ -12,7 +12,7 @@ A small library for generalized transformation of data. This provides a bunch of
 | Keywords           | browser, client, functional, util |
 | # releases         | 0 |
 | # dependents       | 17 |
-| # downloads        | 53063 |
+| # downloads        | 72003 |
 | # stars            | 3 |
 
 ## Links

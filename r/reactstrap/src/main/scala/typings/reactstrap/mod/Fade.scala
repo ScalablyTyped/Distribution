@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.fadeMod.FadeProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "Fade")
+@JSImport("reactstrap/lib", "Fade")
 @js.native
-class Fade[T] ()
+class Fade ()
   extends Component[FadeProps, js.Object, js.Any]
-

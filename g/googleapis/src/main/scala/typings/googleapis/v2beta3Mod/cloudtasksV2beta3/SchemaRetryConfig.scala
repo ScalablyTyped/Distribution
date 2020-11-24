@@ -2,7 +2,7 @@ package typings.googleapis.v2beta3Mod.cloudtasksV2beta3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Retry config.  These settings determine when a failed task attempt is
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaRetryConfig extends js.Object {
+  
   /**
     * Number of attempts per task.  Cloud Tasks will attempt the task
     * `max_attempts` times (that is, if the first attempt fails, then there
@@ -20,6 +21,7 @@ trait SchemaRetryConfig extends js.Object {
     * queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
     */
   var maxAttempts: js.UndefOr[Double] = js.native
+  
   /**
     * A task will be scheduled for retry between min_backoff and max_backoff
     * duration after it fails, if the queue&#39;s RetryConfig specifies that
@@ -30,6 +32,7 @@ trait SchemaRetryConfig extends js.Object {
     * queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
     */
   var maxBackoff: js.UndefOr[String] = js.native
+  
   /**
     * The time between retries will double `max_doublings` times.  A task&#39;s
     * retry interval starts at min_backoff, then doubles `max_doublings` times,
@@ -46,6 +49,7 @@ trait SchemaRetryConfig extends js.Object {
     * queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
     */
   var maxDoublings: js.UndefOr[Double] = js.native
+  
   /**
     * If positive, `max_retry_duration` specifies the time limit for retrying a
     * failed task, measured from when the task was first attempted. Once
@@ -58,6 +62,7 @@ trait SchemaRetryConfig extends js.Object {
     * queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
     */
   var maxRetryDuration: js.UndefOr[String] = js.native
+  
   /**
     * A task will be scheduled for retry between min_backoff and max_backoff
     * duration after it fails, if the queue&#39;s RetryConfig specifies that
@@ -69,45 +74,57 @@ trait SchemaRetryConfig extends js.Object {
     */
   var minBackoff: js.UndefOr[String] = js.native
 }
-
 object SchemaRetryConfig {
+  
   @scala.inline
   def apply(): SchemaRetryConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRetryConfig]
   }
+  
   @scala.inline
   implicit class SchemaRetryConfigOps[Self <: SchemaRetryConfig] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMaxAttempts(value: Double): Self = this.set("maxAttempts", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaxAttempts: Self = this.set("maxAttempts", js.undefined)
+    
     @scala.inline
     def setMaxBackoff(value: String): Self = this.set("maxBackoff", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaxBackoff: Self = this.set("maxBackoff", js.undefined)
+    
     @scala.inline
     def setMaxDoublings(value: Double): Self = this.set("maxDoublings", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaxDoublings: Self = this.set("maxDoublings", js.undefined)
+    
     @scala.inline
     def setMaxRetryDuration(value: String): Self = this.set("maxRetryDuration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaxRetryDuration: Self = this.set("maxRetryDuration", js.undefined)
+    
     @scala.inline
     def setMinBackoff(value: String): Self = this.set("minBackoff", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMinBackoff: Self = this.set("minBackoff", js.undefined)
   }
-  
 }
-

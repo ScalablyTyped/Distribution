@@ -11,8 +11,8 @@ A progress bar for Webpack.
 | Full name          | progress-bar-webpack-plugin |
 | Keywords           | webpack, plugin, progress, bar |
 | # releases         | 5 |
-| # dependents       | 451 |
-| # downloads        | 7362550 |
+| # dependents       | 520 |
+| # downloads        | 6798310 |
 | # stars            | 15 |
 
 ## Links

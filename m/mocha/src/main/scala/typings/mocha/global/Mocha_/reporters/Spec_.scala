@@ -3,7 +3,7 @@ package typings.mocha.global.Mocha_.reporters
 import typings.mocha.Mocha.reporters.Base
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Initialize a new `Spec` test reporter.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Mocha.reporters.Spec")
 @js.native
 class Spec_ () extends Base
-

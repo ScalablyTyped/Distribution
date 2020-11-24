@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Foundation.Diagnostics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LoggingFieldFormat extends js.Object
-
 /** Specifies the format of an event field. */
 @JSGlobal("Windows.Foundation.Diagnostics.LoggingFieldFormat")
 @js.native
 object LoggingFieldFormat extends js.Object {
+  
   /** A boolean field. */
   @js.native
   sealed trait boolean extends LoggingFieldFormat
@@ -86,6 +86,4 @@ object LoggingFieldFormat extends js.Object {
   /** An Extensible Markup Language (XML) field. */
   @js.native
   sealed trait xml extends LoggingFieldFormat
-  
 }
-

@@ -5,11 +5,12 @@ import typings.samchon.idistributedserverMod.IDistributedServer
 import typings.samchon.invokeMod.Invoke
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates", "distributed")
 @js.native
 object distributed extends js.Object {
+  
   @js.native
   class DSInvokeHistory protected ()
     extends typings.samchon.distributedMod.DSInvokeHistory {
@@ -133,6 +134,4 @@ object distributed extends js.Object {
     */
   abstract class DistributedSystemArrayMediator[System /* <: typings.samchon.distributedSystemMod.DistributedSystem */] ()
     extends typings.samchon.distributedMod.DistributedSystemArrayMediator[System]
-  
 }
-

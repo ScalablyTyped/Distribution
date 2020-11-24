@@ -2,7 +2,7 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "RectAreaLight")
 @js.native
@@ -80,4 +80,3 @@ class RectAreaLight ()
   ) = this()
   def this(color: typings.three.colorMod.Color, intensity: Double, width: Double, height: Double) = this()
 }
-

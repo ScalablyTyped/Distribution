@@ -3,18 +3,12 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.mod.transaction.TransactionData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "BankAccounts")
 @js.native
 class BankAccounts () extends js.Object {
-  /**
-    * Retrieve list of transactions for a bank account
-    * @param bankAccountId
-    * @param options
-    */
-  @JSName("getTransactions")
-  var getTransactions_Original: MethodOverload[String, js.Array[TransactionData]] = js.native
+  
   /**
     * Retrieve list of transactions for a bank account
     * @param bankAccountId
@@ -49,5 +43,11 @@ class BankAccounts () extends js.Object {
     */
   def getTransactions(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[TransactionData]]] = js.native
   def getTransactions(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[TransactionData]] = js.native
+  /**
+    * Retrieve list of transactions for a bank account
+    * @param bankAccountId
+    * @param options
+    */
+  @JSName("getTransactions")
+  var getTransactions_Original: MethodOverload[String, js.Array[TransactionData]] = js.native
 }
-

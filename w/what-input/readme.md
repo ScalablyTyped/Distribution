@@ -10,9 +10,9 @@ A global utility for tracking the current input method (mouse, keyboard or touch
 | ------------------ | :-------------: |
 | Full name          | what-input |
 | Keywords           | accessibility, a11y, input, javascript |
-| # releases         | 11 |
-| # dependents       | 59 |
-| # downloads        | 4394000 |
+| # releases         | 12 |
+| # dependents       | 63 |
+| # downloads        | 5152449 |
 | # stars            | 5 |
 
 ## Links

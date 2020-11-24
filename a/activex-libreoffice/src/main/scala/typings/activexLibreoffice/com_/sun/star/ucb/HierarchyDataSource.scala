@@ -4,7 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * manages one or more complete sets of hierarchy data and serves as a factory for objects that provide access to a subset of the data.
@@ -17,4 +17,3 @@ import scala.scalajs.js.annotation._
 trait HierarchyDataSource
   extends XMultiServiceFactory
      with XComponent
-

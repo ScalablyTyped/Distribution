@@ -4,7 +4,7 @@ import typings.babylonjs.typesMod.DeepImmutable
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Maths/math", "Vector2")
 @js.native
@@ -17,15 +17,21 @@ class Vector2 ()
   extends typings.babylonjs.mathVectorMod.Vector2 {
   def this(/** defines the first coordinate */
   x: Double) = this()
+  def this(
+    /** defines the first coordinate */
+  x: js.UndefOr[scala.Nothing],
+    /** defines the second coordinate */
+  y: Double
+  ) = this()
   def this(/** defines the first coordinate */
   x: Double, /** defines the second coordinate */
   y: Double) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Maths/math", "Vector2")
 @js.native
 object Vector2 extends js.Object {
+  
   /**
     * Gets a new Vector2 located for "amount" (float) on the CatmullRom spline defined by the given four Vector2
     * @param value1 defines 1st point of control
@@ -42,6 +48,7 @@ object Vector2 extends js.Object {
     value4: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     amount: Double
   ): typings.babylonjs.mathVectorMod.Vector2 = js.native
+  
   /**
     * Gets a new Vector2 located at the center of the vectors "value1" and "value2"
     * @param value1 defines first vector
@@ -52,6 +59,7 @@ object Vector2 extends js.Object {
     value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     value2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]
   ): typings.babylonjs.mathVectorMod.Vector2 = js.native
+  
   /**
     * Returns a new Vector2 set with same the coordinates than "value" ones if the vector "value" is in the square defined by "min" and "max".
     * If a coordinate of "value" is lower than "min" coordinates, the returned Vector2 is given this "min" coordinate.
@@ -66,6 +74,7 @@ object Vector2 extends js.Object {
     min: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     max: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]
   ): typings.babylonjs.mathVectorMod.Vector2 = js.native
+  
   /**
     * Gets the distance between the vectors "value1" and "value2"
     * @param value1 defines first vector
@@ -76,6 +85,7 @@ object Vector2 extends js.Object {
     value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     value2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]
   ): Double = js.native
+  
   /**
     * Gets the shortest distance (float) between the point "p" and the segment defined by the two points "segA" and "segB".
     * @param p defines the middle point
@@ -88,6 +98,7 @@ object Vector2 extends js.Object {
     segA: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     segB: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]
   ): Double = js.native
+  
   /**
     * Returns the squared distance between the vectors "value1" and "value2"
     * @param value1 defines first vector
@@ -98,6 +109,7 @@ object Vector2 extends js.Object {
     value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     value2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]
   ): Double = js.native
+  
   /**
     * Gets the dot product of the vector "left" and the vector "right"
     * @param left defines first vector
@@ -108,6 +120,7 @@ object Vector2 extends js.Object {
     left: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     right: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]
   ): Double = js.native
+  
   /**
     * Gets a new Vector2 set from the given index element of the given array
     * @param array defines the data source
@@ -116,6 +129,7 @@ object Vector2 extends js.Object {
     */
   def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathVectorMod.Vector2 = js.native
   def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.mathVectorMod.Vector2 = js.native
+  
   /**
     * Sets "result" from the given index element of the given array
     * @param array defines the data source
@@ -127,6 +141,7 @@ object Vector2 extends js.Object {
     offset: Double,
     result: typings.babylonjs.mathVectorMod.Vector2
   ): Unit = js.native
+  
   /**
     * Returns a new Vector2 located for "amount" (float) on the Hermite spline defined by the vectors "value1", "value3", "tangent1", "tangent2"
     * @param value1 defines the 1st control point
@@ -143,6 +158,7 @@ object Vector2 extends js.Object {
     tangent2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     amount: Double
   ): typings.babylonjs.mathVectorMod.Vector2 = js.native
+  
   /**
     * Returns a new Vector2 located for "amount" (float) on the linear interpolation between the vector "start" adn the vector "end".
     * @param start defines the start vector
@@ -155,6 +171,7 @@ object Vector2 extends js.Object {
     end: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     amount: Double
   ): typings.babylonjs.mathVectorMod.Vector2 = js.native
+  
   /**
     * Gets a new Vecto2 set with the maximal coordinate values from the "left" and "right" vectors
     * @param left defines 1st vector
@@ -165,6 +182,7 @@ object Vector2 extends js.Object {
     left: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     right: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]
   ): typings.babylonjs.mathVectorMod.Vector2 = js.native
+  
   /**
     * Gets a new Vector2 set with the minimal coordinate values from the "left" and "right" vectors
     * @param left defines 1st vector
@@ -175,17 +193,20 @@ object Vector2 extends js.Object {
     left: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     right: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]
   ): typings.babylonjs.mathVectorMod.Vector2 = js.native
+  
   /**
     * Returns a new Vector2 equal to the normalized given vector
     * @param vector defines the vector to normalize
     * @returns a new Vector2
     */
   def Normalize(vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]): typings.babylonjs.mathVectorMod.Vector2 = js.native
+  
   /**
     * Gets a new Vector2(1, 1)
     * @returns a new Vector2
     */
   def One(): typings.babylonjs.mathVectorMod.Vector2 = js.native
+  
   /**
     * Determines if a given vector is included in a triangle
     * @param p defines the vector to test
@@ -200,6 +221,7 @@ object Vector2 extends js.Object {
     p1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     p2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]
   ): Boolean = js.native
+  
   /**
     * Gets a new Vector2 set with the transformed coordinates of the given vector by the given transformation matrix
     * @param vector defines the vector to transform
@@ -210,6 +232,7 @@ object Vector2 extends js.Object {
     vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     transformation: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]
   ): typings.babylonjs.mathVectorMod.Vector2 = js.native
+  
   /**
     * Transforms the given vector coordinates by the given transformation matrix and stores the result in the vector "result" coordinates
     * @param vector defines the vector to transform
@@ -221,10 +244,10 @@ object Vector2 extends js.Object {
     transformation: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     result: typings.babylonjs.mathVectorMod.Vector2
   ): Unit = js.native
+  
   /**
     * Gets a new Vector2(0, 0)
     * @returns a new Vector2
     */
   def Zero(): typings.babylonjs.mathVectorMod.Vector2 = js.native
 }
-

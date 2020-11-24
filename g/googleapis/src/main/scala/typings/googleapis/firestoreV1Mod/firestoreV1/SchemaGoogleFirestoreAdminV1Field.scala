@@ -2,7 +2,7 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a single field in the database.  Fields are grouped by their
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaGoogleFirestoreAdminV1Field extends js.Object {
+  
   /**
     * The index configuration for this field. If unset, field indexing will
     * revert to the configuration defined by the `ancestor_field`. To
@@ -18,6 +19,7 @@ trait SchemaGoogleFirestoreAdminV1Field extends js.Object {
     * with an empty list of indexes.
     */
   var indexConfig: js.UndefOr[SchemaGoogleFirestoreAdminV1IndexConfig] = js.native
+  
   /**
     * A field name of the form
     * `projects/{project_id}/databases/{database_id}/collectionGroups/{collection_id}/fields/{field_path}`
@@ -41,33 +43,39 @@ trait SchemaGoogleFirestoreAdminV1Field extends js.Object {
     */
   var name: js.UndefOr[String] = js.native
 }
-
 object SchemaGoogleFirestoreAdminV1Field {
+  
   @scala.inline
   def apply(): SchemaGoogleFirestoreAdminV1Field = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleFirestoreAdminV1Field]
   }
+  
   @scala.inline
   implicit class SchemaGoogleFirestoreAdminV1FieldOps[Self <: SchemaGoogleFirestoreAdminV1Field] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setIndexConfig(value: SchemaGoogleFirestoreAdminV1IndexConfig): Self = this.set("indexConfig", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIndexConfig: Self = this.set("indexConfig", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
   }
-  
 }
-

@@ -7,7 +7,7 @@ import typings.luminoWidgets.widgetMod.Widget
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/focustracker", "FocusTracker")
 @js.native
@@ -15,34 +15,48 @@ import scala.scalajs.js.annotation._
   * Construct a new focus tracker.
   */
 class FocusTracker_[T /* <: Widget */] () extends IDisposable {
+  
   var _activeChanged: js.Any = js.native
+  
   var _activeWidget: js.Any = js.native
+  
   var _counter: js.Any = js.native
+  
   var _currentChanged: js.Any = js.native
+  
   var _currentWidget: js.Any = js.native
+  
   /**
     * Handle the `'blur'` event for a tracked widget.
     */
   var _evtBlur: js.Any = js.native
+  
   /**
     * Handle the `'focus'` event for a tracked widget.
     */
   var _evtFocus: js.Any = js.native
+  
   var _nodes: js.Any = js.native
+  
   var _numbers: js.Any = js.native
+  
   /**
     * Handle the `disposed` signal for a tracked widget.
     */
   var _onWidgetDisposed: js.Any = js.native
+  
   /**
     * Set the current and active widgets for the tracker.
     */
   var _setWidgets: js.Any = js.native
+  
   var _widgets: js.Any = js.native
+  
   /**
     * A signal emitted when the active widget has changed.
     */
   val activeChanged: ISignal[this.type, IChangedArgs[T]] = js.native
+  
   /**
     * The active widget in the tracker.
     *
@@ -51,10 +65,25 @@ class FocusTracker_[T /* <: Widget */] () extends IDisposable {
     * has the *descendant node* which is currently focused.
     */
   val activeWidget: T | Null = js.native
+  
+  /**
+    * Add a widget to the focus tracker.
+    *
+    * @param widget - The widget of interest.
+    *
+    * #### Notes
+    * A widget will be automatically removed from the tracker if it
+    * is disposed after being added.
+    *
+    * If the widget is already tracked, this is a no-op.
+    */
+  def add(widget: T): Unit = js.native
+  
   /**
     * A signal emitted when the current widget has changed.
     */
   val currentChanged: ISignal[this.type, IChangedArgs[T]] = js.native
+  
   /**
     * The current widget in the tracker.
     *
@@ -74,22 +103,7 @@ class FocusTracker_[T /* <: Widget */] () extends IDisposable {
     * of whether that instance still has focus.
     */
   val currentWidget: T | Null = js.native
-  /**
-    * A read only array of the widgets being tracked.
-    */
-  val widgets: js.Array[T] = js.native
-  /**
-    * Add a widget to the focus tracker.
-    *
-    * @param widget - The widget of interest.
-    *
-    * #### Notes
-    * A widget will be automatically removed from the tracker if it
-    * is disposed after being added.
-    *
-    * If the widget is already tracked, this is a no-op.
-    */
-  def add(widget: T): Unit = js.native
+  
   /**
     * Get the focus number for a particular widget in the tracker.
     *
@@ -110,6 +124,7 @@ class FocusTracker_[T /* <: Widget */] () extends IDisposable {
     * the widget has not been focused since being added to the tracker.
     */
   def focusNumber(widget: T): Double = js.native
+  
   /**
     * Handle the DOM events for the focus tracker.
     *
@@ -121,6 +136,7 @@ class FocusTracker_[T /* <: Widget */] () extends IDisposable {
     * not be called directly by user code.
     */
   def handleEvent(event: Event): Unit = js.native
+  
   /**
     * Test whether the focus tracker contains a given widget.
     *
@@ -129,6 +145,7 @@ class FocusTracker_[T /* <: Widget */] () extends IDisposable {
     * @returns `true` if the widget is tracked, `false` otherwise.
     */
   def has(widget: T): Boolean = js.native
+  
   /**
     * Remove a widget from the focus tracker.
     *
@@ -142,5 +159,9 @@ class FocusTracker_[T /* <: Widget */] () extends IDisposable {
     * If the widget is not tracked, this is a no-op.
     */
   def remove(widget: T): Unit = js.native
+  
+  /**
+    * A read only array of the widgets being tracked.
+    */
+  val widgets: js.Array[T] = js.native
 }
-

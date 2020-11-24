@@ -4,11 +4,11 @@ import typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridC
 import typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridCellStyles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/SwatchColorPicker/ColorPickerGridCell.styles", JSImport.Namespace)
 @js.native
 object colorPickerGridCellStylesMod extends js.Object {
+  
   def getStyles(props: IColorPickerGridCellStyleProps): IColorPickerGridCellStyles = js.native
 }
-

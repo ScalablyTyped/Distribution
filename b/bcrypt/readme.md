@@ -11,8 +11,8 @@ A bcrypt library for NodeJS.
 | Full name          | bcrypt |
 | Keywords           | bcrypt, password, auth, authentication, encryption, crypt, crypto |
 | # releases         | 13 |
-| # dependents       | 1241 |
-| # downloads        | 15125234 |
+| # dependents       | 1477 |
+| # downloads        | 20657609 |
 | # stars            | 341 |
 
 ## Links

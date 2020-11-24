@@ -2,11 +2,12 @@ package typings.ol
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/format/filter/Spatial", JSImport.Namespace)
 @js.native
 object spatialMod extends js.Object {
+  
   @js.native
   abstract class default protected ()
     extends typings.ol.filterFilterMod.default {
@@ -21,4 +22,3 @@ object spatialMod extends js.Object {
   
   type Spatial = typings.ol.filterFilterMod.default
 }
-

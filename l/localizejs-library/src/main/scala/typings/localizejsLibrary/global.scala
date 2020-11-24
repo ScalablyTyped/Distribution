@@ -12,28 +12,33 @@ import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object Localize extends js.Object {
+    
     /**
       * Bootstrapping translations enables your app to translate without fetching translations remotely from Localizejs.com
       * @param translations Required. Generate properly formatted translations on your Languages page
       */
     def bootstrap(translations: js.Any): Unit = js.native
+    
     /**
       * Returns the visitor's list of preferred languages, based on the browser's "accept-language" header.
       * @param callback Required.
       */
     def detectLanguage(callback: js.Function2[/* error */ js.Any, /* languages */ js.Array[String], Unit]): Unit = js.native
+    
     /**
       * Returns all available languages for the project.
       * @param callback Required.
       */
     def getAvailableLanguages(callback: js.Function2[/* error */ js.Any, /* languages */ js.Array[String], Unit]): Unit = js.native
+    
     /**
       * Returns exchange rate for provided currencies.
       *
@@ -46,15 +51,18 @@ object global extends js.Object {
       toCurrency: String,
       callback: js.Function2[/* error */ js.Any, /* rateData */ RateData, Unit]
     ): Unit = js.native
+    
     /**
       * Returns the current language of the page. If a language hasn't been set, source is returned.
       */
     def getLanguage(): String = js.native
+    
     /**
       * Initializes LocalizeJS with the supplied options.
       * @param options An object containing the supplied options.
       */
     def initialize(options: Options): Unit = js.native
+    
     /**
       * Remove an event handler.
       * @param eventName Required. Name of event to unbind to. Can optionally be namespaced: "setLanguage.ns"
@@ -84,6 +92,7 @@ object global extends js.Object {
     def off_updatedDictionary(eventName: updatedDictionary): Unit = js.native
     @JSName("off")
     def off_updatedDictionary(eventName: updatedDictionary, fn: js.Function1[/* event */ Event, Unit]): Unit = js.native
+    
     /**
       * Attach an event handler to Localize events.
       * @param eventName Required. Name of event to bind to. Can optionally be namespaced: "setLanguage.ns"
@@ -101,6 +110,7 @@ object global extends js.Object {
     def on_untranslatePage(eventName: untranslatePage, fn: js.Function1[/* event */ Event, Unit]): Unit = js.native
     @JSName("on")
     def on_updatedDictionary(eventName: updatedDictionary, fn: js.Function1[/* event */ Event, Unit]): Unit = js.native
+    
     /**
       * Saves the phrase, if unrecognized, to your Localize project. Useful for ensuring rarely printed text
       * (ie. an obscure error message) is translated. Returns the phrase it was passed.
@@ -108,17 +118,20 @@ object global extends js.Object {
       */
     def phrase(phrase: String): String | js.Array[String] = js.native
     def phrase(phrase: js.Array[String]): String | js.Array[String] = js.native
+    
     /**
       * Speed up language switching by prefetching
       * @param languages Required. Accepts a string or an array or languages (ex. 'zh-CN')
       */
     def prefetch(languages: String): Unit = js.native
     def prefetch(languages: js.Array[String]): Unit = js.native
+    
     /**
       * Translates the page into the given language.
       * @param language Required. Language codes can be found on your Languages page.
       */
     def setLanguage(language: String): Unit = js.native
+    
     /**
       * Translates text or text within html.
       *
@@ -159,20 +172,21 @@ object global extends js.Object {
       variables: js.Any,
       callback: js.Function1[/* translation */ String | HTMLElement, Unit]
     ): Unit = js.native
+    
     /**
       * Translates all text on the page
       */
     def translatePage(): Unit = js.native
+    
     /**
       * Untranslates a specified element on the page. Use Localize.untranslatePage() if untranslating the whole page.
       * @param element Required. A DOM node to untranslate
       */
     def untranslate(element: String): Unit = js.native
+    
     /**
       * Untranslates all text on the page
       */
     def untranslatePage(): Unit = js.native
   }
-  
 }
-

@@ -11,8 +11,8 @@ HTTP Hawk Authentication Scheme
 | Full name          | @hapi/hawk |
 | Keywords           | http, authentication, scheme, hawk |
 | # releases         | 6 |
-| # dependents       | 8 |
-| # downloads        | 44291 |
+| # dependents       | 9 |
+| # downloads        | 247009 |
 | # stars            | 0 |
 
 ## Links

@@ -9,41 +9,18 @@ import typings.prosemirrorState.anon.Plugins
 import typings.prosemirrorState.anon.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-state", "EditorState")
 @js.native
 class EditorState[S /* <: Schema[_, _] */] () extends js.Object {
-  /**
-    * The current document.
-    */
-  var doc: Node[S] = js.native
-  /**
-    * The plugins that are active in this state.
-    */
-  var plugins: js.Array[Plugin[_, S]] = js.native
-  /**
-    * The schema of the state's document.
-    */
-  var schema: S = js.native
-  /**
-    * The selection.
-    */
-  var selection: Selection[S] = js.native
-  /**
-    * A set of marks to apply to the next input. Will be null when
-    * no explicit marks have been set.
-    */
-  var storedMarks: js.UndefOr[js.Array[Mark[S]] | Null] = js.native
-  /**
-    * Start a [transaction](#state.Transaction) from this state.
-    */
-  var tr: Transaction[S] = js.native
+  
   /**
     * Apply the given transaction to produce a new state.
     */
   @JSName("apply")
   def apply(tr: Transaction[S]): EditorState[S] = js.native
+  
   /**
     * Verbose variant of [`apply`](#state.EditorState.apply) that
     * returns the precise transactions that were applied (which might
@@ -52,6 +29,17 @@ class EditorState[S /* <: Schema[_, _] */] () extends js.Object {
     * plugins) along with the new state.
     */
   def applyTransaction(tr: Transaction[S]): State[S] = js.native
+  
+  /**
+    * The current document.
+    */
+  var doc: Node[S] = js.native
+  
+  /**
+    * The plugins that are active in this state.
+    */
+  var plugins: js.Array[Plugin[_, S]] = js.native
+  
   /**
     * Create a new state based on this one, but with an adjusted set of
     * active plugins. State fields that exist in both sets of plugins
@@ -61,6 +49,23 @@ class EditorState[S /* <: Schema[_, _] */] () extends js.Object {
     * configuration object..
     */
   def reconfigure(config: Plugins[S]): EditorState[S] = js.native
+  
+  /**
+    * The schema of the state's document.
+    */
+  var schema: S = js.native
+  
+  /**
+    * The selection.
+    */
+  var selection: Selection[S] = js.native
+  
+  /**
+    * A set of marks to apply to the next input. Will be null when
+    * no explicit marks have been set.
+    */
+  var storedMarks: js.UndefOr[js.Array[Mark[S]] | Null] = js.native
+  
   /**
     * Serialize this state to JSON. If you want to serialize the state
     * of plugins, pass an object mapping property names to use in the
@@ -70,16 +75,22 @@ class EditorState[S /* <: Schema[_, _] */] () extends js.Object {
   def toJSON(pluginFields: String): StringDictionary[js.Any] = js.native
   def toJSON(pluginFields: StringDictionary[Plugin[_, S]]): StringDictionary[js.Any] = js.native
   def toJSON(pluginFields: Double): StringDictionary[js.Any] = js.native
+  
+  /**
+    * Start a [transaction](#state.Transaction) from this state.
+    */
+  var tr: Transaction[S] = js.native
 }
-
 /* static members */
 @JSImport("prosemirror-state", "EditorState")
 @js.native
 object EditorState extends js.Object {
+  
   /**
     * Create a new state.
     */
   def create[S /* <: Schema[_, _] */](config: Doc[S]): EditorState[S] = js.native
+  
   /**
     * Deserialize a JSON representation of a state. `config` should
     * have at least a `schema` field, and should contain array of
@@ -94,4 +105,3 @@ object EditorState extends js.Object {
     pluginFields: StringDictionary[Plugin[_, S]]
   ): EditorState[S] = js.native
 }
-

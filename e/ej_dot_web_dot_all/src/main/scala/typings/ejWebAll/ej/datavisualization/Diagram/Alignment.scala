@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Alignment extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.Alignment")
 @js.native
 object Alignment extends js.Object {
+  
   //Used to align the label either bottom or right(after) of the connector segment
   @js.native
   sealed trait After extends Alignment
@@ -21,6 +21,4 @@ object Alignment extends js.Object {
   //Used to align the label at center of the connector segment
   @js.native
   sealed trait Center extends Alignment
-  
 }
-

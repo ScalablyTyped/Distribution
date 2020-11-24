@@ -2,10 +2,12 @@ package typings.awsSdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object swfMod {
+  
   type ActivityId = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.START_TO_CLOSE
     - typings.awsSdk.awsSdkStrings.SCHEDULE_TO_START
@@ -14,22 +16,29 @@ package object swfMod {
     - java.lang.String
   */
   type ActivityTaskTimeoutType = typings.awsSdk.swfMod._ActivityTaskTimeoutType | java.lang.String
+  
   type ActivityTypeInfoList = js.Array[typings.awsSdk.swfMod.ActivityTypeInfo]
+  
   type Arn = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.TIMER_ID_UNKNOWN
     - typings.awsSdk.awsSdkStrings.OPERATION_NOT_PERMITTED
     - java.lang.String
   */
   type CancelTimerFailedCause = typings.awsSdk.swfMod._CancelTimerFailedCause | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.UNHANDLED_DECISION
     - typings.awsSdk.awsSdkStrings.OPERATION_NOT_PERMITTED
     - java.lang.String
   */
   type CancelWorkflowExecutionFailedCause = typings.awsSdk.swfMod._CancelWorkflowExecutionFailedCause | java.lang.String
+  
   type Canceled = scala.Boolean
+  
   type CauseMessage = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.TERMINATE
     - typings.awsSdk.awsSdkStrings.REQUEST_CANCEL
@@ -37,7 +46,9 @@ package object swfMod {
     - java.lang.String
   */
   type ChildPolicy = typings.awsSdk.swfMod._ChildPolicy | java.lang.String
+  
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.swfMod.ClientApiVersions
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.COMPLETED
     - typings.awsSdk.awsSdkStrings.FAILED
@@ -48,12 +59,14 @@ package object swfMod {
     - java.lang.String
   */
   type CloseStatus = typings.awsSdk.swfMod._CloseStatus | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.UNHANDLED_DECISION
     - typings.awsSdk.awsSdkStrings.OPERATION_NOT_PERMITTED
     - java.lang.String
   */
   type CompleteWorkflowExecutionFailedCause = typings.awsSdk.swfMod._CompleteWorkflowExecutionFailedCause | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.UNHANDLED_DECISION
     - typings.awsSdk.awsSdkStrings.WORKFLOW_TYPE_DEPRECATED
@@ -67,10 +80,15 @@ package object swfMod {
     - java.lang.String
   */
   type ContinueAsNewWorkflowExecutionFailedCause = typings.awsSdk.swfMod._ContinueAsNewWorkflowExecutionFailedCause | java.lang.String
+  
   type Count = scala.Double
+  
   type Data = java.lang.String
+  
   type DecisionList = js.Array[typings.awsSdk.swfMod.Decision]
+  
   type DecisionTaskTimeoutType = typings.awsSdk.awsSdkStrings.START_TO_CLOSE | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ScheduleActivityTask
     - typings.awsSdk.awsSdkStrings.RequestCancelActivityTask
@@ -88,13 +106,21 @@ package object swfMod {
     - java.lang.String
   */
   type DecisionType = typings.awsSdk.swfMod._DecisionType | java.lang.String
+  
   type Description = java.lang.String
+  
   type DomainInfoList = js.Array[typings.awsSdk.swfMod.DomainInfo]
+  
   type DomainName = java.lang.String
+  
   type DurationInDays = java.lang.String
+  
   type DurationInSeconds = java.lang.String
+  
   type DurationInSecondsOptional = java.lang.String
+  
   type EventId = scala.Double
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.WorkflowExecutionStarted
     - typings.awsSdk.awsSdkStrings.WorkflowExecutionCancelRequested
@@ -153,44 +179,63 @@ package object swfMod {
     - java.lang.String
   */
   type EventType = typings.awsSdk.swfMod._EventType | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.OPEN
     - typings.awsSdk.awsSdkStrings.CLOSED
     - java.lang.String
   */
   type ExecutionStatus = typings.awsSdk.swfMod._ExecutionStatus | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.UNHANDLED_DECISION
     - typings.awsSdk.awsSdkStrings.OPERATION_NOT_PERMITTED
     - java.lang.String
   */
   type FailWorkflowExecutionFailedCause = typings.awsSdk.swfMod._FailWorkflowExecutionFailedCause | java.lang.String
+  
   type FailureReason = java.lang.String
+  
   type FunctionId = java.lang.String
+  
   type FunctionInput = java.lang.String
+  
   type FunctionName = java.lang.String
+  
   type HistoryEventList = js.Array[typings.awsSdk.swfMod.HistoryEvent]
+  
   type Identity = java.lang.String
+  
   type LambdaFunctionTimeoutType = typings.awsSdk.awsSdkStrings.START_TO_CLOSE | java.lang.String
+  
   type LimitedData = java.lang.String
+  
   type MarkerName = java.lang.String
+  
   type Name = java.lang.String
+  
   type OpenDecisionTasksCount = scala.Double
+  
   type PageSize = scala.Double
+  
   type PageToken = java.lang.String
+  
   type RecordMarkerFailedCause = typings.awsSdk.awsSdkStrings.OPERATION_NOT_PERMITTED | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.REGISTERED
     - typings.awsSdk.awsSdkStrings.DEPRECATED
     - java.lang.String
   */
   type RegistrationStatus = typings.awsSdk.swfMod._RegistrationStatus | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ACTIVITY_ID_UNKNOWN
     - typings.awsSdk.awsSdkStrings.OPERATION_NOT_PERMITTED
     - java.lang.String
   */
   type RequestCancelActivityTaskFailedCause = typings.awsSdk.swfMod._RequestCancelActivityTaskFailedCause | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION
     - typings.awsSdk.awsSdkStrings.REQUEST_CANCEL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED
@@ -198,11 +243,17 @@ package object swfMod {
     - java.lang.String
   */
   type RequestCancelExternalWorkflowExecutionFailedCause = typings.awsSdk.swfMod._RequestCancelExternalWorkflowExecutionFailedCause | java.lang.String
+  
   type ResourceTagKey = java.lang.String
+  
   type ResourceTagKeyList = js.Array[typings.awsSdk.swfMod.ResourceTagKey]
+  
   type ResourceTagList = js.Array[typings.awsSdk.swfMod.ResourceTag]
+  
   type ResourceTagValue = java.lang.String
+  
   type ReverseOrder = scala.Boolean
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ACTIVITY_TYPE_DEPRECATED
     - typings.awsSdk.awsSdkStrings.ACTIVITY_TYPE_DOES_NOT_EXIST
@@ -218,6 +269,7 @@ package object swfMod {
     - java.lang.String
   */
   type ScheduleActivityTaskFailedCause = typings.awsSdk.swfMod._ScheduleActivityTaskFailedCause | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ID_ALREADY_IN_USE
     - typings.awsSdk.awsSdkStrings.OPEN_LAMBDA_FUNCTIONS_LIMIT_EXCEEDED
@@ -226,6 +278,7 @@ package object swfMod {
     - java.lang.String
   */
   type ScheduleLambdaFunctionFailedCause = typings.awsSdk.swfMod._ScheduleLambdaFunctionFailedCause | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION
     - typings.awsSdk.awsSdkStrings.SIGNAL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED
@@ -233,7 +286,9 @@ package object swfMod {
     - java.lang.String
   */
   type SignalExternalWorkflowExecutionFailedCause = typings.awsSdk.swfMod._SignalExternalWorkflowExecutionFailedCause | java.lang.String
+  
   type SignalName = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.WORKFLOW_TYPE_DOES_NOT_EXIST
     - typings.awsSdk.awsSdkStrings.WORKFLOW_TYPE_DEPRECATED
@@ -249,7 +304,9 @@ package object swfMod {
     - java.lang.String
   */
   type StartChildWorkflowExecutionFailedCause = typings.awsSdk.swfMod._StartChildWorkflowExecutionFailedCause | java.lang.String
+  
   type StartLambdaFunctionFailedCause = typings.awsSdk.awsSdkStrings.ASSUME_ROLE_FAILED | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.TIMER_ID_ALREADY_IN_USE
     - typings.awsSdk.awsSdkStrings.OPEN_TIMERS_LIMIT_EXCEEDED
@@ -258,18 +315,31 @@ package object swfMod {
     - java.lang.String
   */
   type StartTimerFailedCause = typings.awsSdk.swfMod._StartTimerFailedCause | java.lang.String
+  
   type Tag = java.lang.String
+  
   type TagList = js.Array[typings.awsSdk.swfMod.Tag]
+  
   type TaskPriority = java.lang.String
+  
   type TaskToken = java.lang.String
+  
   type TerminateReason = java.lang.String
+  
   type TimerId = java.lang.String
+  
   type Timestamp = typings.std.Date
+  
   type Truncated = scala.Boolean
+  
   type Version = java.lang.String
+  
   type VersionOptional = java.lang.String
+  
   type WorkflowExecutionCancelRequestedCause = typings.awsSdk.awsSdkStrings.CHILD_POLICY_APPLIED | java.lang.String
+  
   type WorkflowExecutionInfoList = js.Array[typings.awsSdk.swfMod.WorkflowExecutionInfo]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.CHILD_POLICY_APPLIED
     - typings.awsSdk.awsSdkStrings.EVENT_LIMIT_EXCEEDED
@@ -277,11 +347,17 @@ package object swfMod {
     - java.lang.String
   */
   type WorkflowExecutionTerminatedCause = typings.awsSdk.swfMod._WorkflowExecutionTerminatedCause | java.lang.String
+  
   type WorkflowExecutionTimeoutType = typings.awsSdk.awsSdkStrings.START_TO_CLOSE | java.lang.String
+  
   type WorkflowId = java.lang.String
+  
   type WorkflowRunId = java.lang.String
+  
   type WorkflowRunIdOptional = java.lang.String
+  
   type WorkflowTypeInfoList = js.Array[typings.awsSdk.swfMod.WorkflowTypeInfo]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2012-01-25`
     - typings.awsSdk.awsSdkStrings.latest_

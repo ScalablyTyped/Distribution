@@ -4,7 +4,7 @@ import typings.playcanvas.pc.callbacks.FilterAsset
 import typings.playcanvas.pc.callbacks.LoadAsset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create an instance of an AssetRegistry.
@@ -14,10 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AssetRegistry extends EventHandler {
-  /**
-    * A URL prefix that will be added to all asset loading requests.
-    */
-  var prefix: String = js.native
+  
   /**
     * Add an asset to the registry.
     * @example
@@ -28,6 +25,7 @@ trait AssetRegistry extends EventHandler {
     * @param asset - The asset to add.
     */
   def add(asset: Asset): Unit = js.native
+  
   /**
     * Return all Assets that satisfy filter callback.
     * @example
@@ -39,6 +37,7 @@ trait AssetRegistry extends EventHandler {
     * @returns A list of all Assets found.
     */
   def filter(callback: FilterAsset): js.Array[Asset] = js.native
+  
   /**
     * Return the first Asset with the specified name and type found in the registry.
     * @example
@@ -49,6 +48,7 @@ trait AssetRegistry extends EventHandler {
     */
   def find(name: String): Asset = js.native
   def find(name: String, `type`: String): Asset = js.native
+  
   /**
     * Return all Assets with the specified name and type found in the registry.
     * @example
@@ -60,6 +60,7 @@ trait AssetRegistry extends EventHandler {
     */
   def findAll(name: String): js.Array[Asset] = js.native
   def findAll(name: String, `type`: String): js.Array[Asset] = js.native
+  
   /**
     * Return all Assets that satisfy the search query.
     * Query can be simply a string, or comma separated strings,
@@ -81,6 +82,7 @@ trait AssetRegistry extends EventHandler {
     * @returns A list of all Assets matched query.
     */
   def findByTag(query: js.Any*): js.Array[Asset] = js.native
+  
   /**
     * Retrieve an asset from the registry by its id field.
     * @example
@@ -89,6 +91,7 @@ trait AssetRegistry extends EventHandler {
     * @returns The asset.
     */
   def get(id: Double): Asset = js.native
+  
   /**
     * Retrieve an asset from the registry by it's file's URL field.
     * @example
@@ -97,12 +100,14 @@ trait AssetRegistry extends EventHandler {
     * @returns The asset.
     */
   def getByUrl(url: String): Asset = js.native
+  
   /**
     * Create a filtered list of assets from the registry.
     * @param filters - Properties to filter on, currently supports: 'preload: true|false'.
     * @returns The filtered list of assets.
     */
   def list(filters: js.Any): js.Array[Asset] = js.native
+  
   /**
     * Load the asset's file from a remote source. Listen for "load" events on the asset to find out when it is loaded.
     * @example
@@ -124,6 +129,7 @@ trait AssetRegistry extends EventHandler {
     * @param asset - The asset to load.
     */
   def load(asset: Asset): Unit = js.native
+  
   /**
     * Use this to load and create an asset if you don't have assets created. Usually you would only use this
     * if you are not integrated with the PlayCanvas Editor.
@@ -136,6 +142,7 @@ trait AssetRegistry extends EventHandler {
     * @param callback - Function called when asset is loaded, passed (err, asset), where err is null if no errors were encountered.
     */
   def loadFromUrl(url: String, `type`: String, callback: LoadAsset): Unit = js.native
+  
   /**
     * Use this to load and create an asset when both the URL and filename are required. For example, use this function when loading
     * BLOB assets, where the URL does not adequately identify the file.
@@ -150,6 +157,12 @@ trait AssetRegistry extends EventHandler {
     * @param callback - Function called when asset is loaded, passed (err, asset), where err is null if no errors were encountered.
     */
   def loadFromUrlAndFilename(url: String, filename: String, `type`: String, callback: LoadAsset): Unit = js.native
+  
+  /**
+    * A URL prefix that will be added to all asset loading requests.
+    */
+  var prefix: String = js.native
+  
   /**
     * Remove an asset from the registry.
     * @example
@@ -160,4 +173,3 @@ trait AssetRegistry extends EventHandler {
     */
   def remove(asset: Asset): Boolean = js.native
 }
-

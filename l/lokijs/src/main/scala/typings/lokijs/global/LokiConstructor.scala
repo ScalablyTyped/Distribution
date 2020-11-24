@@ -3,7 +3,7 @@ package typings.lokijs.global
 import typings.lokijs.anon.PartialLokiConstructorOpt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * LokiJS
@@ -17,10 +17,20 @@ class LokiConstructor protected ()
   def this(filename: String) = this()
   def this(filename: String, options: PartialLokiConstructorOpt) = this()
 }
-
 @JSGlobal("LokiConstructor")
 @js.native
 object LokiConstructor extends js.Object {
+  
+  var LokiOps: typings.lokijs.LokiOps = js.native
+  
+  def aeq(prop1: js.Any, prop2: js.Any): Boolean = js.native
+  
+  def gt(prop1: js.Any, prop2: js.Any): Boolean = js.native
+  def gt(prop1: js.Any, prop2: js.Any, equal: Boolean): Boolean = js.native
+  
+  def lt(prop1: js.Any, prop2: js.Any): Boolean = js.native
+  def lt(prop1: js.Any, prop2: js.Any, equal: Boolean): Boolean = js.native
+  
   @js.native
   class Collection[E /* <: js.Object */] ()
     extends typings.lokijs.Collection[E]
@@ -45,17 +55,11 @@ object LokiConstructor extends js.Object {
   class LokiPartitioningAdapter ()
     extends typings.lokijs.LokiPartitioningAdapter
   
-  var LokiOps: typings.lokijs.LokiOps = js.native
-  def aeq(prop1: js.Any, prop2: js.Any): Boolean = js.native
-  def gt(prop1: js.Any, prop2: js.Any): Boolean = js.native
-  def gt(prop1: js.Any, prop2: js.Any, equal: Boolean): Boolean = js.native
-  def lt(prop1: js.Any, prop2: js.Any): Boolean = js.native
-  def lt(prop1: js.Any, prop2: js.Any, equal: Boolean): Boolean = js.native
   @js.native
   object persistenceAdapters extends js.Object {
+    
     var fs: typings.lokijs._LokiFsAdapter = js.native
+    
     var localStorage: typings.lokijs._LokiLocalStorageAdapter = js.native
   }
-  
 }
-

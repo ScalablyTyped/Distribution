@@ -51,40 +51,11 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojTagCloud_[K, D] extends dvtBaseComponent[ojTagCloudSettableProperties[K, D]] {
-  var animationOnDataChange: auto | none = js.native
-  var animationOnDisplay: auto | none = js.native
-  var as: String = js.native
-  var data: (DataProvider[K, D]) | Null = js.native
-  var hiddenCategories: js.Array[String] = js.native
-  var highlightMatch: any | all = js.native
-  var highlightedCategories: js.Array[String] = js.native
-  var hoverBehavior: dim | none = js.native
-  var layout: cloud | rectangular = js.native
-  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
-  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], _]) | Null = js.native
-  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
-  var onLayoutChanged: (js.Function1[/* event */ JetElementCustomEvent[cloud | rectangular], _]) | Null = js.native
-  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], _]) | Null = js.native
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
-  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[HoverBehaviorDelay], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`26`[K]], _]) | Null = js.native
-  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
-  var selection: js.Array[K] = js.native
-  var selectionMode: single | multiple | none = js.native
-  var styleDefaults: HoverBehaviorDelay = js.native
-  var tooltip: `26`[K] = js.native
-  var touchResponse: touchStart | auto = js.native
-  @JSName("translations")
-  var translations_ojTagCloud_ : LabelAndValue = js.native
+  
   def addEventListener(
     `type`: animationOnDataChangeChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _]
@@ -233,9 +204,21 @@ trait ojTagCloud_[K, D] extends dvtBaseComponent[ojTagCloudSettableProperties[K,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`26`[K]], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var animationOnDataChange: auto | none = js.native
+  
+  var animationOnDisplay: auto | none = js.native
+  
+  var as: String = js.native
+  
+  var data: (DataProvider[K, D]) | Null = js.native
+  
   def getContextByNode(node: Element): NodeContext | Null = js.native
+  
   def getItem(index: Double): ItemContext | Null = js.native
+  
   def getItemCount(): Double = js.native
+  
   @JSName("getProperty")
   def getProperty_animationOnDataChange(property: animationOnDataChange): auto | none = js.native
   @JSName("getProperty")
@@ -264,7 +247,51 @@ trait ojTagCloud_[K, D] extends dvtBaseComponent[ojTagCloudSettableProperties[K,
   def getProperty_tooltip(property: tooltip): `26`[K] = js.native
   @JSName("getProperty")
   def getProperty_touchResponse(property: touchResponse): touchStart | auto = js.native
+  
+  var hiddenCategories: js.Array[String] = js.native
+  
+  var highlightMatch: any | all = js.native
+  
+  var highlightedCategories: js.Array[String] = js.native
+  
+  var hoverBehavior: dim | none = js.native
+  
+  var layout: cloud | rectangular = js.native
+  
+  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
+  
+  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], _]) | Null = js.native
+  
+  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
+  
+  var onLayoutChanged: (js.Function1[/* event */ JetElementCustomEvent[cloud | rectangular], _]) | Null = js.native
+  
+  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], _]) | Null = js.native
+  
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
+  
+  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[HoverBehaviorDelay], _]) | Null = js.native
+  
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`26`[K]], _]) | Null = js.native
+  
+  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
+  
+  var selection: js.Array[K] = js.native
+  
+  var selectionMode: single | multiple | none = js.native
+  
   def setProperties(properties: ojTagCloudSettablePropertiesLenient[K, D]): Unit = js.native
+  
   def setProperty(property: animationOnDataChange, value: auto): Unit = js.native
   def setProperty(property: animationOnDataChange, value: none): Unit = js.native
   def setProperty(property: animationOnDisplay, value: auto): Unit = js.native
@@ -298,5 +325,13 @@ trait ojTagCloud_[K, D] extends dvtBaseComponent[ojTagCloudSettableProperties[K,
   def setProperty_tooltip(property: tooltip, value: `26`[K]): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: LabelAndValue): Unit = js.native
+  
+  var styleDefaults: HoverBehaviorDelay = js.native
+  
+  var tooltip: `26`[K] = js.native
+  
+  var touchResponse: touchStart | auto = js.native
+  
+  @JSName("translations")
+  var translations_ojTagCloud_ : LabelAndValue = js.native
 }
-

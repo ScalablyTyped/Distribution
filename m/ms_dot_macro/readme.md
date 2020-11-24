@@ -12,7 +12,7 @@ Convert various time formats to milliseconds at build time in Babel.
 | Keywords           | babel-macros |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 51370 |
+| # downloads        | 114998 |
 | # stars            | 0 |
 
 ## Links

@@ -2,11 +2,12 @@ package typings.luminoCommands.mod.CommandRegistry
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/commands", "CommandRegistry.parseKeystroke")
 @js.native
 object parseKeystroke extends js.Object {
+  
   /**
     * Parse a keystroke into its constituent components.
     *
@@ -31,4 +32,3 @@ object parseKeystroke extends js.Object {
     */
   def apply(keystroke: String): IKeystrokeParts = js.native
 }
-

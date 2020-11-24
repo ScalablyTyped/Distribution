@@ -5,19 +5,28 @@ import typings.three.threeBooleans.`true`
 import typings.three.vector3Mod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/math/SphericalHarmonics3", JSImport.Namespace)
 @js.native
 object sphericalHarmonics3Mod extends js.Object {
+  
   @js.native
   class SphericalHarmonics3 () extends js.Object {
-    var coefficients: js.Array[Vector3] = js.native
-    val isSphericalHarmonics3: `true` = js.native
+    
     def add(sh: SphericalHarmonics3): SphericalHarmonics3 = js.native
+    
     def addScaledSH(sh: SphericalHarmonics3, s: Double): SphericalHarmonics3 = js.native
+    
+    /**
+    	 * @default [new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3()]
+    	 */
+    var coefficients: js.Array[Vector3] = js.native
+    
     def copy(sh: SphericalHarmonics3): SphericalHarmonics3 = js.native
+    
     def equals(sh: SphericalHarmonics3): Boolean = js.native
+    
     /**
     	 * Sets the values of this spherical harmonics from the provided array.
     	 * @param array the source array.
@@ -32,11 +41,19 @@ object sphericalHarmonics3Mod extends js.Object {
     	 */
     def fromArray(array: ArrayLike[Double]): this.type = js.native
     def fromArray(array: ArrayLike[Double], offset: Double): this.type = js.native
+    
     def getAt(normal: Vector3, target: Vector3): Vector3 = js.native
+    
     def getIrradianceAt(normal: Vector3, target: Vector3): Vector3 = js.native
+    
+    val isSphericalHarmonics3: `true` = js.native
+    
     def lerp(sh: SphericalHarmonics3, alpha: Double): SphericalHarmonics3 = js.native
+    
     def scale(s: Double): SphericalHarmonics3 = js.native
+    
     def set(coefficients: js.Array[Vector3]): SphericalHarmonics3 = js.native
+    
     /**
     	 * Returns an array with the values of this spherical harmonics, or copies them into the provided array.
     	 * @param array (optional) array to store the spherical harmonics to. If this is not provided, a new array will be created.
@@ -55,14 +72,13 @@ object sphericalHarmonics3Mod extends js.Object {
     	 */
     def toArray(array: ArrayLike[Double]): ArrayLike[Double] = js.native
     def toArray(array: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
+    
     def zero(): SphericalHarmonics3 = js.native
   }
-  
   /* static members */
   @js.native
   object SphericalHarmonics3 extends js.Object {
+    
     def getBasisAt(normal: Vector3, shBasis: js.Array[Double]): Unit = js.native
   }
-  
 }
-

@@ -8,50 +8,63 @@ import typings.pouchdbCore.pouchdbCoreStrings.now
 import typings.pouchdbFind.PouchDB.Find.Selector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChangesOptions extends js.Object {
+  
   /** Include attachments. */
   var attachments: js.UndefOr[Boolean] = js.native
+  
   /**
     * Only available for http databases, this configures how many changes to fetch at a time.
     * Increasing this can reduce the number of requests made. Default is 25.
     */
   var batch_size: js.UndefOr[Double] = js.native
+  
   /** Return attachment data as Blobs/Buffers, instead of as base64-encoded strings. */
   var binary: js.UndefOr[Boolean] = js.native
+  
   /** Include conflicts. */
   var conflicts: js.UndefOr[Boolean] = js.native
+  
   /** Reverse the order of the output documents. */
   var descending: js.UndefOr[Boolean] = js.native
+  
   /** Only show changes for docs with these ids (array of strings). */
   var doc_ids: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Reference a filter function from a design document to selectively get updates.
     * To use a view function, pass '_view' here and provide a reference to the view function in options.view.
     * See filtered changes for details.
     */
   var filter: js.UndefOr[String | (js.Function2[/* doc */ js.Any, /* params */ js.Any, _])] = js.native
+  
   /**
     * For http adapter only, time in milliseconds for server to give a heartbeat to keep long connections open.
     * Defaults to 10000 (10 seconds), use false to disable the default.
     */
   var heartbeat: js.UndefOr[Double | `false`] = js.native
+  
   /** Include contents for each document. */
   var include_docs: js.UndefOr[Boolean] = js.native
+  
   /** Maximum number of documents to return. */
   var limit: js.UndefOr[Double | `false`] = js.native
+  
   /**
     * Does "live" changes.
     */
   var live: js.UndefOr[Boolean] = js.native
+  
   /**
     * Object containing properties that are passed to the filter function, e.g. {"foo:"bar"},
     * where "bar" will be available in the filter function as params.query.foo.
     * To access the params, define your filter function like function (doc, params).
     */
   var query_params: js.UndefOr[StringDictionary[js.Any]] = js.native
+  
   /**
     * (previously options.returnDocs): Is available for non-http databases and defaults to true.
     * Passing false prevents the changes feed from keeping all the documents in memory – in other
@@ -59,23 +72,27 @@ trait ChangesOptions extends js.Object {
     * Useful for large change sets where otherwise you would run out of memory.
     */
   var return_docs: js.UndefOr[Boolean] = js.native
+  
   /**
     * Filter using a query/pouchdb-find selector. Note: Selectors are not supported in CouchDB 1.x.
     * Cannot be used in combination with the filter option.
     */
   var selector: js.UndefOr[Selector] = js.native
+  
   /**
     * Only available for http databases. Specifies that seq information only be generated every N changes.
     * Larger values can improve changes throughput with CouchDB 2.0 and later.
     * Note that last_seq is always populated regardless.
     */
   var seq_interval: js.UndefOr[Double] = js.native
+  
   /**
     * Start the results from the change immediately after the given sequence number.
     * You can also pass `'now'` if you want only new changes (when `live` is `true`).
     *
     */
   var since: js.UndefOr[now | Double | String] = js.native
+  
   /**
     * Specifies how many revisions are returned in the changes array.
     * The default, 'main_only', will only return the current “winning” revision;
@@ -83,10 +100,12 @@ trait ChangesOptions extends js.Object {
     * Most likely you won’t need this unless you’re writing a replicator.
     */
   var style: js.UndefOr[main_only | all_docs] = js.native
+  
   /**
     * Request timeout (in milliseconds).
     */
   var timeout: js.UndefOr[Double | `false`] = js.native
+  
   /**
     * Specify a view function (e.g. 'design_doc_name/view_name' or 'view_name' as shorthand for 'view_name/view_name') to act as a filter.
     * Documents counted as “passed” for a view filter if a map function emits at least one record for them.
@@ -94,105 +113,147 @@ trait ChangesOptions extends js.Object {
     */
   var view: js.UndefOr[String] = js.native
 }
-
 object ChangesOptions {
+  
   @scala.inline
   def apply(): ChangesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChangesOptions]
   }
+  
   @scala.inline
   implicit class ChangesOptionsOps[Self <: ChangesOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAttachments(value: Boolean): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAttachments: Self = this.set("attachments", js.undefined)
+    
     @scala.inline
     def setBatch_size(value: Double): Self = this.set("batch_size", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBatch_size: Self = this.set("batch_size", js.undefined)
+    
     @scala.inline
     def setBinary(value: Boolean): Self = this.set("binary", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBinary: Self = this.set("binary", js.undefined)
+    
     @scala.inline
     def setConflicts(value: Boolean): Self = this.set("conflicts", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteConflicts: Self = this.set("conflicts", js.undefined)
+    
     @scala.inline
     def setDescending(value: Boolean): Self = this.set("descending", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescending: Self = this.set("descending", js.undefined)
+    
     @scala.inline
     def setDoc_idsVarargs(value: String*): Self = this.set("doc_ids", js.Array(value :_*))
+    
     @scala.inline
     def setDoc_ids(value: js.Array[String]): Self = this.set("doc_ids", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDoc_ids: Self = this.set("doc_ids", js.undefined)
+    
     @scala.inline
     def setFilterFunction2(value: (/* doc */ js.Any, /* params */ js.Any) => _): Self = this.set("filter", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setFilter(value: String | (js.Function2[/* doc */ js.Any, /* params */ js.Any, _])): Self = this.set("filter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFilter: Self = this.set("filter", js.undefined)
+    
     @scala.inline
     def setHeartbeat(value: Double | `false`): Self = this.set("heartbeat", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeartbeat: Self = this.set("heartbeat", js.undefined)
+    
     @scala.inline
     def setInclude_docs(value: Boolean): Self = this.set("include_docs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInclude_docs: Self = this.set("include_docs", js.undefined)
+    
     @scala.inline
     def setLimit(value: Double | `false`): Self = this.set("limit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLimit: Self = this.set("limit", js.undefined)
+    
     @scala.inline
     def setLive(value: Boolean): Self = this.set("live", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLive: Self = this.set("live", js.undefined)
+    
     @scala.inline
     def setQuery_params(value: StringDictionary[js.Any]): Self = this.set("query_params", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteQuery_params: Self = this.set("query_params", js.undefined)
+    
     @scala.inline
     def setReturn_docs(value: Boolean): Self = this.set("return_docs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReturn_docs: Self = this.set("return_docs", js.undefined)
+    
     @scala.inline
     def setSelector(value: Selector): Self = this.set("selector", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSelector: Self = this.set("selector", js.undefined)
+    
     @scala.inline
     def setSeq_interval(value: Double): Self = this.set("seq_interval", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSeq_interval: Self = this.set("seq_interval", js.undefined)
+    
     @scala.inline
     def setSince(value: now | Double | String): Self = this.set("since", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSince: Self = this.set("since", js.undefined)
+    
     @scala.inline
     def setStyle(value: main_only | all_docs): Self = this.set("style", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStyle: Self = this.set("style", js.undefined)
+    
     @scala.inline
     def setTimeout(value: Double | `false`): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTimeout: Self = this.set("timeout", js.undefined)
+    
     @scala.inline
     def setView(value: String): Self = this.set("view", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteView: Self = this.set("view", js.undefined)
   }
-  
 }
-

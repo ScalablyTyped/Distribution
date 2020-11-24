@@ -14,14 +14,16 @@ import typings.ionicCore.virtualScrollInterfaceMod.HeaderHeightFn
 import typings.ionicCore.virtualScrollInterfaceMod.ItemHeightFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular/directives/virtual-scroll/virtual-scroll", JSImport.Namespace)
 @js.native
 object virtualScrollMod extends js.Object {
+  
   @js.native
   class IonVirtualScroll protected () extends js.Object {
     def this(z: NgZone, iterableDiffers: IterableDiffers, elementRef: ElementRef[_]) = this()
+    
     /**
       * The approximate width of each footer template's cell.
       * This dimension is used to help determine how many cells should
@@ -32,6 +34,7 @@ object virtualScrollMod extends js.Object {
       * initial dimensions before the item has been rendered.
       */
     var approxFooterHeight: Double = js.native
+    
     /**
       * The approximate height of each header template's cell.
       * This dimension is used to help determine how many cells should
@@ -42,6 +45,7 @@ object virtualScrollMod extends js.Object {
       * initial dimensions before the item has been rendered.
       */
     var approxHeaderHeight: Double = js.native
+    
     /**
       * It is important to provide this
       * if virtual item height will be significantly larger than the default
@@ -54,8 +58,22 @@ object virtualScrollMod extends js.Object {
       * initial dimensions before the item has been rendered.
       */
     var approxItemHeight: Double = js.native
+    
+    /**
+      * This method marks the tail the items array as dirty, so they can be re-rendered.  It's equivalent to calling:  ```js    * virtualScroll.checkRange(lastItemLen, items.length - lastItemLen);    * ```
+      */
+    def checkEnd(): Unit = js.native
+    
+    /**
+      * This method marks a subset of items as dirty, so they can be re-rendered. Items should be marked as dirty any time the content or their style changes.  The subset of items to be updated can are specifing by an offset and a length.
+      */
+    def checkRange(offset: Double): Unit = js.native
+    def checkRange(offset: Double, len: Double): Unit = js.native
+    
     var differ: js.Any = js.native
+    
     var el: js.Any = js.native
+    
     /**
       * Section footers and the data used within its given
       * template can be dynamically created by passing a function to `footerFn`.
@@ -64,13 +82,18 @@ object virtualScrollMod extends js.Object {
       * must return `null` if a footer cell shouldn't be created.
       */
     var footerFn: js.UndefOr[HeaderFn] = js.native
+    
     /**
       * An optional function that maps each item footer within their height.
       */
     var footerHeight: js.UndefOr[FooterHeightFn] = js.native
+    
     var ftrTmp: VirtualFooter = js.native
+    
     var getComponent: js.Any = js.native
+    
     var hdrTmp: VirtualHeader = js.native
+    
     /**
       * Section headers and the data used within its given
       * template can be dynamically created by passing a function to `headerFn`.
@@ -82,10 +105,12 @@ object virtualScrollMod extends js.Object {
       * `null` if a header cell shouldn't be created.
       */
     var headerFn: js.UndefOr[HeaderFn] = js.native
+    
     /**
       * An optional function that maps each item header within their height.
       */
     var headerHeight: js.UndefOr[HeaderHeightFn] = js.native
+    
     /**
       * An optional function that maps each item within their height.
       * When this function is provided, heavy optimizations and fast path can be taked by
@@ -95,6 +120,7 @@ object virtualScrollMod extends js.Object {
       * to massive performance
       */
     var itemHeight: js.UndefOr[ItemHeightFn] = js.native
+    
     /**
       * The data that builds the templates within the virtual scroll.
       * It's important to note that when this data has changed, then the
@@ -102,36 +128,34 @@ object virtualScrollMod extends js.Object {
       * should be avoided if possible.
       */
     var items: js.UndefOr[js.Array[_]] = js.native
+    
     var iterableDiffers: js.Any = js.native
+    
     var itmTmp: VirtualItem = js.native
+    
+    def ngDoCheck(): Unit = js.native
+    
+    def ngOnChanges(changes: SimpleChanges): Unit = js.native
+    
     var nodeRender: js.Any = js.native
+    
+    /**
+      * Returns the position of the virtual item at the given index.
+      */
+    def positionForItem(index: Double): js.Promise[Double] = js.native
+    
     var refMap: js.Any = js.native
+    
+    /**
+      * Same as `ngForTrackBy` which can be used on `ngFor`.
+      */
+    def trackBy(index: Double, item: js.Any): js.Any = js.native
     /**
       * Same as `ngForTrackBy` which can be used on `ngFor`.
       */
     @JSName("trackBy")
     var trackBy_Original: TrackByFunction[_] = js.native
+    
     var z: js.Any = js.native
-    /**
-      * This method marks the tail the items array as dirty, so they can be re-rendered.  It's equivalent to calling:  ```js    * virtualScroll.checkRange(lastItemLen, items.length - lastItemLen);    * ```
-      */
-    def checkEnd(): Unit = js.native
-    /**
-      * This method marks a subset of items as dirty, so they can be re-rendered. Items should be marked as dirty any time the content or their style changes.  The subset of items to be updated can are specifing by an offset and a length.
-      */
-    def checkRange(offset: Double): Unit = js.native
-    def checkRange(offset: Double, len: Double): Unit = js.native
-    def ngDoCheck(): Unit = js.native
-    def ngOnChanges(changes: SimpleChanges): Unit = js.native
-    /**
-      * Returns the position of the virtual item at the given index.
-      */
-    def positionForItem(index: Double): js.Promise[Double] = js.native
-    /**
-      * Same as `ngForTrackBy` which can be used on `ngFor`.
-      */
-    def trackBy(index: Double, item: js.Any): js.Any = js.native
   }
-  
 }
-

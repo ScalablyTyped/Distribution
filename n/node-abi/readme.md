@@ -10,9 +10,9 @@ Get the Node ABI for a given target and runtime, and vice versa.
 | ------------------ | :-------------: |
 | Full name          | node-abi |
 | Keywords           | node, electron, node_module_version, abi, v8 |
-| # releases         | 20 |
-| # dependents       | 35 |
-| # downloads        | 38408867 |
+| # releases         | 17 |
+| # dependents       | 42 |
+| # downloads        | 70022828 |
 | # stars            | 1 |
 
 ## Links

@@ -3,11 +3,13 @@ package typings.simpleMock.mod
 import typings.std.PromiseConstructorLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Static extends js.Object {
+  
   var Promise: js.UndefOr[PromiseConstructorLike] = js.native
+  
   /**
     * Returns a stub function that is also a spy.
     */
@@ -32,6 +34,7 @@ trait Static extends js.Object {
   def mock_T[T](): Stub[T] = js.native
   @JSName("mock")
   def mock_T[T](obj: js.Any, key: String): Stub[T] = js.native
+  
   /**
     * Restores all current mocks.
     */
@@ -40,10 +43,12 @@ trait Static extends js.Object {
     * Use this if you need to restore only a single mock value or function on an object.
     */
   def restore(obj: js.Any, key: String): Unit = js.native
+  
   /**
     * Wraps fn in a spy.
     */
   def spy[T](fn: Fn[T]): Spy[T] = js.native
+  
   /**
     * Returns a stub function that is also a spy.
     */
@@ -51,4 +56,3 @@ trait Static extends js.Object {
   @JSName("stub")
   def stub_T[T](): Stub[T] = js.native
 }
-

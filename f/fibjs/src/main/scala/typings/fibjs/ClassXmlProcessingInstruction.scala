@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassXmlProcessingInstruction extends ClassXmlNode {
+  
   /**
     * class prop 
     *
@@ -17,6 +18,7 @@ trait ClassXmlProcessingInstruction extends ClassXmlNode {
     * @type String
     */
   var data: String = js.native
+  
   /**
     * class prop 
     *
@@ -29,4 +31,3 @@ trait ClassXmlProcessingInstruction extends ClassXmlNode {
     */
   var target: String = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.vscode.mod
 import typings.vscode.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Range")
 @js.native
@@ -26,22 +26,7 @@ class Range protected () extends js.Object {
     * @param endCharacter A zero-based character value.
     */
   def this(startLine: Double, startCharacter: Double, endLine: Double, endCharacter: Double) = this()
-  /**
-    * The end position. It is after or equal to [start](#Range.start).
-    */
-  val end: Position = js.native
-  /**
-    * `true` if `start` and `end` are equal.
-    */
-  var isEmpty: Boolean = js.native
-  /**
-    * `true` if `start.line` and `end.line` are equal.
-    */
-  var isSingleLine: Boolean = js.native
-  /**
-    * The start position. It is before or equal to [end](#Range.end).
-    */
-  val start: Position = js.native
+  
   /**
     * Check if a position or a range is contained in this range.
     *
@@ -51,6 +36,12 @@ class Range protected () extends js.Object {
     */
   def contains(positionOrRange: Position): Boolean = js.native
   def contains(positionOrRange: Range): Boolean = js.native
+  
+  /**
+    * The end position. It is after or equal to [start](#Range.start).
+    */
+  val end: Position = js.native
+  
   /**
     * Intersect `range` with this range and returns a new range or `undefined`
     * if the ranges have no overlap.
@@ -60,6 +51,12 @@ class Range protected () extends js.Object {
     * return undefined when there is no overlap.
     */
   def intersection(range: Range): js.UndefOr[Range] = js.native
+  
+  /**
+    * `true` if `start` and `end` are equal.
+    */
+  var isEmpty: Boolean = js.native
+  
   /**
     * Check if `other` equals this range.
     *
@@ -68,6 +65,17 @@ class Range protected () extends js.Object {
     * start and end of this range.
     */
   def isEqual(other: Range): Boolean = js.native
+  
+  /**
+    * `true` if `start.line` and `end.line` are equal.
+    */
+  var isSingleLine: Boolean = js.native
+  
+  /**
+    * The start position. It is before or equal to [end](#Range.end).
+    */
+  val start: Position = js.native
+  
   /**
     * Compute the union of `other` with this range.
     *
@@ -75,6 +83,7 @@ class Range protected () extends js.Object {
     * @return A range of smaller start position and the greater end position.
     */
   def union(other: Range): Range = js.native
+  
   /**
     * Derived a new range from this range.
     *
@@ -96,4 +105,3 @@ class Range protected () extends js.Object {
   def `with`(start: Position): Range = js.native
   def `with`(start: Position, end: Position): Range = js.native
 }
-

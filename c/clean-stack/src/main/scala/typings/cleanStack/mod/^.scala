@@ -2,11 +2,12 @@ package typings.cleanStack.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("clean-stack", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Clean up error stack traces. Removes the mostly unhelpful internal Node.js entries.
   @param stack - The `stack` property of an `Error`.
@@ -31,4 +32,3 @@ object ^ extends js.Object {
   def apply(stack: String): String = js.native
   def apply(stack: String, options: Options): String = js.native
 }
-

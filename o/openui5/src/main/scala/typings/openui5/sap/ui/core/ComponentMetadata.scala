@@ -2,15 +2,17 @@ package typings.openui5.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ComponentMetadata extends js.Object {
+  
   /**
     * Returns the name of the Component (which is the namespace only with the module name)
     * @returns Component name
     */
   def getComponentName(): String = js.native
+  
   /**
     * Returns array of components specified in the metadata of the Component.If not specified or the array
     * is empty, the return value is null.<p><b>Important:</b></br>If a Component is loaded using the
@@ -20,6 +22,7 @@ trait ComponentMetadata extends js.Object {
     * @returns Required Components.
     */
   def getComponents(): js.Array[String] = js.native
+  
   /**
     * Returns a copy of the configuration property to disallow modifications.If no key is specified it
     * returns the complete configuration property
@@ -30,6 +33,7 @@ trait ComponentMetadata extends js.Object {
     */
   def getConfig(sKey: String): js.Any = js.native
   def getConfig(sKey: String, bDoNotMerge: Boolean): js.Any = js.native
+  
   /**
     * Returns the custom Component configuration entry with the specified key (this must be a JSON
     * object).If no key is specified, the return value is null.Example:<code> 
@@ -43,6 +47,7 @@ trait ComponentMetadata extends js.Object {
     * @returns custom Component configuration with the specified key.
     */
   def getCustomEntry(sKey: String, bMerged: Boolean): js.Any = js.native
+  
   /**
     * Returns the dependencies defined in the metadata of the Component. If not specified, the return
     * value is null.<p><b>Important:</b></br>If a Component is loaded using the manifest URL (or according
@@ -52,6 +57,7 @@ trait ComponentMetadata extends js.Object {
     * @returns Component dependencies.
     */
   def getDependencies(): js.Any = js.native
+  
   /**
     * Returns the array of the included files that the Component requires suchas CSS and JavaScript. If
     * not specified or the array is empty, the returnvalue is null.<p><b>Important:</b></br>If a Component
@@ -61,6 +67,7 @@ trait ComponentMetadata extends js.Object {
     * @returns Included files.
     */
   def getIncludes(): js.Array[String] = js.native
+  
   /**
     * Returns array of libraries specified in metadata of the Component, thatare automatically loaded when
     * an instance of the component is created.If not specified or the array is empty, the return value is
@@ -71,6 +78,7 @@ trait ComponentMetadata extends js.Object {
     * @returns Required libraries.
     */
   def getLibs(): js.Array[String] = js.native
+  
   /**
     * Returns the manifest defined in the metadata of the Component.If not specified, the return value is
     * null.
@@ -78,6 +86,7 @@ trait ComponentMetadata extends js.Object {
     * @returns manifest.
     */
   def getManifest(): js.Any = js.native
+  
   /**
     * Returns the configuration of a manifest section or the value for aspecific path. If no section or
     * key is specified, the return value is null.Example:<code>  {    "sap.ui5": {      "dependencies": { 
@@ -97,12 +106,14 @@ trait ComponentMetadata extends js.Object {
     */
   def getManifestEntry(sKey: String): js.Any = js.native
   def getManifestEntry(sKey: String, bMerged: Boolean): js.Any = js.native
+  
   /**
     * Returns the manifest object.
     * @since 1.33.0
     * @returns manifest.
     */
   def getManifestObject(): Manifest = js.native
+  
   /**
     * Returns the version of the metadata which could be 1 or 2. 1 is for legacymetadata whereas 2 is for
     * the manifest.
@@ -110,6 +121,7 @@ trait ComponentMetadata extends js.Object {
     * @returns metadata version (1: legacy metadata, 2: manifest)
     */
   def getMetadataVersion(): Double = js.native
+  
   /**
     * Returns the raw manifest defined in the metadata of the Component.If not specified, the return value
     * is null.
@@ -117,6 +129,7 @@ trait ComponentMetadata extends js.Object {
     * @returns manifest
     */
   def getRawManifest(): js.Any = js.native
+  
   /**
     * Returns the required version of SAPUI5 defined in the metadata of theComponent. If returned value is
     * null, then no special UI5 version isrequired.<p><b>Important:</b></br>If a Component is loaded using
@@ -126,6 +139,7 @@ trait ComponentMetadata extends js.Object {
     * @returns Required version of UI5 or if not specified then null.
     */
   def getUI5Version(): String = js.native
+  
   /**
     * Returns the version of the component. If not specified, the return valueis
     * null.<p><b>Important:</b></br>If a Component is loaded using the manifest URL (or according
@@ -135,6 +149,7 @@ trait ComponentMetadata extends js.Object {
     * @returns The version of the component.
     */
   def getVersion(): String = js.native
+  
   /**
     * Returns whether the class of this metadata is a component base classor not.
     * @since 1.33.0
@@ -142,4 +157,3 @@ trait ComponentMetadata extends js.Object {
     */
   def isBaseClass(): Boolean = js.native
 }
-

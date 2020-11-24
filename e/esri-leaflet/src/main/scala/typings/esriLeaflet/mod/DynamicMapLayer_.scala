@@ -3,7 +3,7 @@ package typings.esriLeaflet.mod
 import typings.esriLeaflet.mod.leafletAugmentingMod.esri.DynamicMapLayerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Render and visualize Map Services from ArcGIS Online and ArcGIS Server. `L.esri.DynamicMapLayer` also
@@ -19,4 +19,3 @@ class DynamicMapLayer_ protected ()
   extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.DynamicMapLayer_ {
   def this(options: DynamicMapLayerOptions) = this()
 }
-

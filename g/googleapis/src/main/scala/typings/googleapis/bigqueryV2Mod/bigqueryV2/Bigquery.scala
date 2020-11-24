@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * BigQuery API
@@ -27,12 +27,18 @@ import scala.scalajs.js.annotation._
 class Bigquery protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var context: APIRequestContext = js.native
+  
   var datasets: ResourceDatasets = js.native
+  
   var jobs: ResourceJobs = js.native
+  
   var models: ResourceModels = js.native
+  
   var projects: ResourceProjects = js.native
+  
   var tabledata: ResourceTabledata = js.native
+  
   var tables: ResourceTables = js.native
 }
-

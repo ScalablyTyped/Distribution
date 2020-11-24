@@ -2,7 +2,7 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "LoadingManager")
 @js.native
@@ -38,4 +38,3 @@ class LoadingManager ()
     onError: js.Function1[/* url */ String, Unit]
   ) = this()
 }
-

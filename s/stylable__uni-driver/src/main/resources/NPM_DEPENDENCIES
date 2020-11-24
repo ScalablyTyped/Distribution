@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@stylable/uni-driver" : "2.5.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@stylable/uni-driver" : "2.5.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

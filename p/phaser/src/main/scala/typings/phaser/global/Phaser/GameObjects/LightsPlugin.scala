@@ -3,7 +3,7 @@ package typings.phaser.global.Phaser.GameObjects
 import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Scene plugin that provides a {@link Phaser.GameObjects.LightsManager} for the Light2D pipeline.
@@ -36,4 +36,3 @@ class LightsPlugin protected ()
     */
   def this(scene: Scene) = this()
 }
-

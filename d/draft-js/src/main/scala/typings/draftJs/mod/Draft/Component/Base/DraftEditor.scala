@@ -3,7 +3,7 @@ package typings.draftJs.mod.Draft.Component.Base
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `DraftEditor` is the root editor component. It composes a `contentEditable`
@@ -13,9 +13,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DraftEditor
   extends Component[DraftEditorProps, js.Object, js.Any] {
+  
   /** Remove focus from the editor node. */
   def blur(): Unit = js.native
+  
   /** Force focus back onto the editor node. */
   def focus(): Unit = js.native
 }
-

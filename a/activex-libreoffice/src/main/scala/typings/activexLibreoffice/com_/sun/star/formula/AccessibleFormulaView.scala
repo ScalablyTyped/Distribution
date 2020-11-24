@@ -20,7 +20,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The accessible view of a formula documents visual representation.
@@ -33,8 +33,8 @@ trait AccessibleFormulaView
      with XAccessibleContext
      with XAccessibleText
      with XAccessibleEventBroadcaster
-
 object AccessibleFormulaView {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -106,4 +106,3 @@ object AccessibleFormulaView {
     __obj.asInstanceOf[AccessibleFormulaView]
   }
 }
-

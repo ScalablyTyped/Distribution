@@ -9,9 +9,9 @@ A binding library for redux to react-i18nify
 | ------------------ | :-------------: |
 | Full name          | react-redux-i18n |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 433502 |
+| # releases         | 0 |
+| # dependents       | 8 |
+| # downloads        | 467264 |
 | # stars            | 2 |
 
 ## Links

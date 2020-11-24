@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.ClosedCaptioning
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ClosedCaptionColor extends js.Object
-
 /** Specifies the color of closed caption UI elements. */
 @JSGlobal("Windows.Media.ClosedCaptioning.ClosedCaptionColor")
 @js.native
 object ClosedCaptionColor extends js.Object {
+  
   /** Black */
   @js.native
   sealed trait black extends ClosedCaptionColor
@@ -46,6 +46,4 @@ object ClosedCaptionColor extends js.Object {
   /** Yellow */
   @js.native
   sealed trait yellow extends ClosedCaptionColor
-  
 }
-

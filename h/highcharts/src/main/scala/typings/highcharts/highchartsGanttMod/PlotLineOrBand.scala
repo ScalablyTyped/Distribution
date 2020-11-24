@@ -4,7 +4,7 @@ import typings.highcharts.mod.AxisPlotBandsOptions
 import typings.highcharts.mod.AxisPlotLinesOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts/highcharts-gantt", "PlotLineOrBand")
 @js.native
@@ -17,4 +17,3 @@ class PlotLineOrBand protected ()
   def this(axis: typings.highcharts.mod.Axis, options: AxisPlotBandsOptions) = this()
   def this(axis: typings.highcharts.mod.Axis, options: AxisPlotLinesOptions) = this()
 }
-

@@ -15,7 +15,7 @@ import typings.estree.estreeStrings.script
 import typings.estree.estreeStrings.set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.estree.mod.Identifier
@@ -40,8 +40,8 @@ import scala.scalajs.js.annotation._
   - typings.estree.mod.ModuleSpecifier
 */
 trait Node extends js.Object
-
 object Node {
+  
   @scala.inline
   def AssignmentExpression(
     left: Pattern | MemberExpression,
@@ -53,6 +53,7 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def Program(
     body: js.Array[Directive | Statement | ModuleDeclaration],
@@ -63,6 +64,7 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def TaggedTemplateExpression(
     quasi: TemplateLiteral,
@@ -73,24 +75,28 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def EmptyStatement(`type`: typings.estree.estreeStrings.EmptyStatement): Node = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def LabeledStatement(body: Statement, label: Identifier, `type`: typings.estree.estreeStrings.LabeledStatement): Node = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def SimpleLiteral(`type`: typings.estree.estreeStrings.Literal): Node = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ExportDefaultDeclaration(
     declaration: Declaration | Expression,
@@ -100,12 +106,14 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ReturnStatement(`type`: typings.estree.estreeStrings.ReturnStatement): Node = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ArrowFunctionExpression(
     body: BlockStatement | Expression,
@@ -117,6 +125,7 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def SwitchStatement(
     cases: js.Array[SwitchCase],
@@ -127,6 +136,7 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ConditionalExpression(
     alternate: Expression,
@@ -138,36 +148,42 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ChainExpression(expression: ChainElement, `type`: typings.estree.estreeStrings.ChainExpression): Node = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def RegExpLiteral(regex: Flags, `type`: typings.estree.estreeStrings.Literal): Node = {
     val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def Identifier(name: String, `type`: typings.estree.estreeStrings.Identifier): Node = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ForStatement(body: Statement, `type`: typings.estree.estreeStrings.ForStatement): Node = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def MetaProperty(meta: Identifier, property: Identifier, `type`: typings.estree.estreeStrings.MetaProperty): Node = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def FunctionExpression(
     body: BlockStatement,
@@ -178,18 +194,21 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ImportDefaultSpecifier(local: Identifier, `type`: typings.estree.estreeStrings.ImportDefaultSpecifier): Node = {
     val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ImportNamespaceSpecifier(local: Identifier, `type`: typings.estree.estreeStrings.ImportNamespaceSpecifier): Node = {
     val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ObjectExpression(
     properties: js.Array[Property | SpreadElement],
@@ -199,18 +218,21 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def SwitchCase(consequent: js.Array[Statement], `type`: typings.estree.estreeStrings.SwitchCase): Node = {
     val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def RestElement(argument: Pattern, `type`: typings.estree.estreeStrings.RestElement): Node = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ArrayExpression(
     elements: js.Array[Expression | SpreadElement],
@@ -220,6 +242,7 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def UpdateExpression(
     argument: Expression,
@@ -231,6 +254,7 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def NewExpression(
     arguments: js.Array[Expression | SpreadElement],
@@ -241,6 +265,7 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ForInStatement(
     body: Statement,
@@ -252,12 +277,14 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def DoWhileStatement(body: Statement, test: Expression, `type`: typings.estree.estreeStrings.DoWhileStatement): Node = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def MethodDefinition(
     computed: Boolean,
@@ -271,6 +298,7 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def WithStatement(body: Statement, `object`: Expression, `type`: typings.estree.estreeStrings.WithStatement): Node = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
@@ -278,6 +306,7 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def AssignmentProperty(
     computed: Boolean,
@@ -292,18 +321,21 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def CatchClause(body: BlockStatement, `type`: typings.estree.estreeStrings.CatchClause): Node = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def YieldExpression(delegate: Boolean, `type`: typings.estree.estreeStrings.YieldExpression): Node = {
     val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ObjectPattern(
     properties: js.Array[AssignmentProperty | RestElement],
@@ -313,24 +345,28 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ExportNamedDeclaration(specifiers: js.Array[ExportSpecifier], `type`: typings.estree.estreeStrings.ExportNamedDeclaration): Node = {
     val __obj = js.Dynamic.literal(specifiers = specifiers.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def SpreadElement(argument: Expression, `type`: typings.estree.estreeStrings.SpreadElement): Node = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def IfStatement(consequent: Statement, test: Expression, `type`: typings.estree.estreeStrings.IfStatement): Node = {
     val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def BinaryExpression(
     left: Expression,
@@ -342,12 +378,14 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ContinueStatement(`type`: typings.estree.estreeStrings.ContinueStatement): Node = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def TemplateLiteral(
     expressions: js.Array[Expression],
@@ -358,6 +396,7 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def SimpleCallExpression(
     arguments: js.Array[Expression | SpreadElement],
@@ -369,30 +408,35 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def BreakStatement(`type`: typings.estree.estreeStrings.BreakStatement): Node = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def TryStatement(block: BlockStatement, `type`: typings.estree.estreeStrings.TryStatement): Node = {
     val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ClassExpression(body: ClassBody, `type`: typings.estree.estreeStrings.ClassExpression): Node = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ExportAllDeclaration(source: Literal, `type`: typings.estree.estreeStrings.ExportAllDeclaration): Node = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def Property(
     computed: Boolean,
@@ -407,6 +451,7 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def MemberExpression(
     computed: Boolean,
@@ -420,36 +465,42 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ArrayPattern(elements: js.Array[Pattern], `type`: typings.estree.estreeStrings.ArrayPattern): Node = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def WhileStatement(body: Statement, test: Expression, `type`: typings.estree.estreeStrings.WhileStatement): Node = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def SequenceExpression(expressions: js.Array[Expression], `type`: typings.estree.estreeStrings.SequenceExpression): Node = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ImportExpression(source: Expression, `type`: typings.estree.estreeStrings.ImportExpression): Node = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ImportSpecifier(imported: Identifier, local: Identifier, `type`: typings.estree.estreeStrings.ImportSpecifier): Node = {
     val __obj = js.Dynamic.literal(imported = imported.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def UnaryExpression(
     argument: Expression,
@@ -461,12 +512,14 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ThrowStatement(argument: Expression, `type`: typings.estree.estreeStrings.ThrowStatement): Node = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def VariableDeclaration(
     declarations: js.Array[VariableDeclarator],
@@ -477,12 +530,14 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def AwaitExpression(argument: Expression, `type`: typings.estree.estreeStrings.AwaitExpression): Node = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def LogicalExpression(
     left: Expression,
@@ -494,24 +549,28 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def DebuggerStatement(`type`: typings.estree.estreeStrings.DebuggerStatement): Node = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ExpressionStatement(expression: Expression, `type`: typings.estree.estreeStrings.ExpressionStatement): Node = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def Super(`type`: typings.estree.estreeStrings.Super): Node = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ForOfStatement(
     await: Boolean,
@@ -524,24 +583,28 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def TemplateElement(tail: Boolean, `type`: typings.estree.estreeStrings.TemplateElement, value: Cooked): Node = {
     val __obj = js.Dynamic.literal(tail = tail.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ThisExpression(`type`: typings.estree.estreeStrings.ThisExpression): Node = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ExportSpecifier(exported: Identifier, local: Identifier, `type`: typings.estree.estreeStrings.ExportSpecifier): Node = {
     val __obj = js.Dynamic.literal(exported = exported.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def FunctionDeclaration(
     body: BlockStatement,
@@ -552,6 +615,7 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ImportDeclaration(
     source: Literal,
@@ -562,30 +626,35 @@ object Node {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ClassBody(body: js.Array[MethodDefinition], `type`: typings.estree.estreeStrings.ClassBody): Node = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def AssignmentPattern(left: Pattern, right: Expression, `type`: typings.estree.estreeStrings.AssignmentPattern): Node = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def VariableDeclarator(id: Pattern, `type`: typings.estree.estreeStrings.VariableDeclarator): Node = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def BlockStatement(body: js.Array[Statement], `type`: typings.estree.estreeStrings.BlockStatement): Node = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
   @scala.inline
   def ClassDeclaration(body: ClassBody, `type`: typings.estree.estreeStrings.ClassDeclaration): Node = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
@@ -593,4 +662,3 @@ object Node {
     __obj.asInstanceOf[Node]
   }
 }
-

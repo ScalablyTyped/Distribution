@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.mvc.JSONView
 import typings.openui5.sap.ui.core.mvc.View
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.jsonview")
 @js.native
 object jsonview extends js.Object {
+  
   /**
     * Creates a JSON view of the given name and id.The <code>viewName</code> must either correspond to a
     * JSON module that can be loadedvia the module system (viewName + suffix ".view.json") and which
@@ -27,4 +28,3 @@ object jsonview extends js.Object {
   //  Creates a JSON view of the given name and id.
   def apply(vView: js.Any): View = js.native
 }
-

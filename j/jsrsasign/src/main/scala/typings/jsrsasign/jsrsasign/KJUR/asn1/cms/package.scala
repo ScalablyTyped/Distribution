@@ -2,9 +2,10 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object cms {
+  
   /**
     * class for CMS ContentType attribute
     * @param params associative array of parameters
@@ -21,6 +22,7 @@ package object cms {
     * o = new KJUR.asn1.cms.ContentType({oid: '1.2.840.113549.1.9.16.1.4'});
     */
   type ContentType = typings.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute
+  
   /**
     * class for CMS MessageDigest attribute
     * @param params associative array of parameters
@@ -36,6 +38,7 @@ package object cms {
     * o = new KJUR.asn1.cms.MessageDigest({hex: 'a1a2a3a4...'});
     */
   type MessageDigest = typings.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute
+  
   /**
     * class for CMS SigningTime attribute
     * @param params associative array of parameters

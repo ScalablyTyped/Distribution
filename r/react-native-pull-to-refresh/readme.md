@@ -12,7 +12,7 @@ The Pull-To-Refresh ScrollView component for React Native
 | Keywords           | react-component, react-native, ios, android, pull-to-refresh, scroll-view |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 36469 |
+| # downloads        | 36420 |
 | # stars            | 2 |
 
 ## Links

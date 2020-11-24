@@ -5,11 +5,12 @@ import typings.tensorflowTfjsData.datasourceMod.DataSource
 import typings.tensorflowTfjsData.fileChunkIteratorMod.FileChunkIteratorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-data/dist/sources/url_data_source", JSImport.Namespace)
 @js.native
 object urlDataSourceMod extends js.Object {
+  
   @js.native
   class URLDataSource protected () extends DataSource {
     /**
@@ -21,9 +22,9 @@ object urlDataSourceMod extends js.Object {
       */
     def this(url: RequestInfo) = this()
     def this(url: RequestInfo, fileOptions: FileChunkIteratorOptions) = this()
+    
     val fileOptions: FileChunkIteratorOptions = js.native
+    
     val url: RequestInfo = js.native
   }
-  
 }
-

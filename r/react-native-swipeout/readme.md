@@ -10,9 +10,9 @@ iOS-style swipeout buttons behind component
 | ------------------ | :-------------: |
 | Full name          | react-native-swipeout |
 | Keywords           | react-native, react-component, ios, swipeout, button, swipe, ui |
-| # releases         | 6 |
-| # dependents       | 19 |
-| # downloads        | 1665909 |
+| # releases         | 0 |
+| # dependents       | 24 |
+| # downloads        | 1938553 |
 | # stars            | 10 |
 
 ## Links

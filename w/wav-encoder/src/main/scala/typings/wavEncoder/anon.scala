@@ -5,18 +5,19 @@ import typings.wavEncoder.mod.AudioData
 import typings.wavEncoder.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
+    
     def apply(audioData: AudioData): js.Promise[ArrayBuffer] = js.native
     def apply(audioData: AudioData, opts: Options): js.Promise[ArrayBuffer] = js.native
+    
     def sync(audioData: AudioData): ArrayBuffer = js.native
     def sync(audioData: AudioData, opts: Options): ArrayBuffer = js.native
   }
-  
 }
-

@@ -2,11 +2,12 @@ package typings.resourceLoader.resourceLoaderMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("resource-loader", "encodeBinary")
 @js.native
 object encodeBinary extends js.Object {
+  
   /**
     * Encodes binary into base64.
     *
@@ -16,4 +17,3 @@ object encodeBinary extends js.Object {
     */
   def apply(input: String): String = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "transform")
 @js.native
 object transform extends js.Object {
+  
   /**
     * Transform one or more nodes using the supplied transformers.
     * @param source A single `Node` or an array of `Node` objects.
@@ -22,4 +23,3 @@ object transform extends js.Object {
     compilerOptions: CompilerOptions
   ): TransformationResult[T] = js.native
 }
-

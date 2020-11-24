@@ -1,13 +1,28 @@
 package typings.aframe.mod.THREE
 
+import typings.three.colorMod.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aframe", "THREE.ArrowHelper")
 @js.native
 class ArrowHelper protected ()
   extends typings.three.mod.ArrowHelper {
-  def this(dir: typings.three.vector3Mod.Vector3) = this()
+  /**
+  	 * @param [dir=new THREE.Vector3( 0, 0, 1 )]
+  	 * @param [origin=new THREE.Vector3( 0, 0, 0 )]
+  	 * @param [length=1]
+  	 * @param [color=0xffff00]
+  	 * @param headLength
+  	 * @param headWidth
+  	 */
+  def this(
+    dir: typings.three.vector3Mod.Vector3,
+    origin: js.UndefOr[typings.three.vector3Mod.Vector3],
+    length: js.UndefOr[Double],
+    color: js.UndefOr[Color | String | Double],
+    headLength: js.UndefOr[Double],
+    headWidth: js.UndefOr[Double]
+  ) = this()
 }
-

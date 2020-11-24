@@ -6,7 +6,7 @@ import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.sortedMapMod.SortedMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChildrenNodeConstructor extends Instantiable3[
@@ -15,6 +15,6 @@ trait ChildrenNodeConstructor extends Instantiable3[
       /* indexMap_ */ IndexMap, 
       ChildrenNode
     ] {
+  
   var EMPTY_NODE: ChildrenNode = js.native
 }
-

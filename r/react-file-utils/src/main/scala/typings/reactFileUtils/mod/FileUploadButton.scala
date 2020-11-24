@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactFileUtils.anon.Accepts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-file-utils", "FileUploadButton")
 @js.native
 class FileUploadButton ()
   extends Component[Accepts, js.Object, js.Any]
-

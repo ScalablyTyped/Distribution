@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to the cells or to sub-ranges of all sheets.
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XCellRangesAccess extends XInterface {
+  
   /**
     * Returns a single cell within the range.
     * @param nColumn is the column index of the cell inside the sheet.
@@ -25,6 +26,7 @@ trait XCellRangesAccess extends XInterface {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if an index is outside the dimensions of this range.
     */
   def getCellByPosition(nColumn: Double, nRow: Double, nSheet: Double): XCell = js.native
+  
   /**
     * Returns a sub-range of cells within the range.
     * @param nLeft is the column index of the first cell inside the range.
@@ -37,6 +39,7 @@ trait XCellRangesAccess extends XInterface {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if an index is outside the dimensions of this range.
     */
   def getCellRangeByPosition(nLeft: Double, nTop: Double, nRight: Double, nBottom: Double, nSheet: Double): XCellRange = js.native
+  
   /**
     * Returns a sub-range of cells within the range.
     *
@@ -48,8 +51,8 @@ trait XCellRangesAccess extends XInterface {
     */
   def getCellRangesByName(aRange: String): SafeArray[XCellRange] = js.native
 }
-
 object XCellRangesAccess {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -62,24 +65,29 @@ object XCellRangesAccess {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getCellByPosition = js.Any.fromFunction3(getCellByPosition), getCellRangeByPosition = js.Any.fromFunction5(getCellRangeByPosition), getCellRangesByName = js.Any.fromFunction1(getCellRangesByName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XCellRangesAccess]
   }
+  
   @scala.inline
   implicit class XCellRangesAccessOps[Self <: XCellRangesAccess] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetCellByPosition(value: (Double, Double, Double) => XCell): Self = this.set("getCellByPosition", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setGetCellRangeByPosition(value: (Double, Double, Double, Double, Double) => XCellRange): Self = this.set("getCellRangeByPosition", js.Any.fromFunction5(value))
+    
     @scala.inline
     def setGetCellRangesByName(value: String => SafeArray[XCellRange]): Self = this.set("getCellRangesByName", js.Any.fromFunction1(value))
   }
-  
 }
-

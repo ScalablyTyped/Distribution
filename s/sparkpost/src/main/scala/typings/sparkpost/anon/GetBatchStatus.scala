@@ -9,10 +9,11 @@ import typings.sparkpost.mod.Webhook
 import typings.sparkpost.mod.WebhookLinks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GetBatchStatus extends js.Object {
+  
   /**
     * Create a new webhook
     *
@@ -27,6 +28,7 @@ trait GetBatchStatus extends js.Object {
     * @param callback The request callback with webhook id results
     */
   def create(options: Webhook, callback: ResultsCallback[WebhookLinksidstring]): Unit = js.native
+  
   /**
     * Delete an existing webhook.
     *
@@ -39,6 +41,7 @@ trait GetBatchStatus extends js.Object {
     * @param callback The request callback
     */
   def delete(id: String, callback: Callback[Unit]): Unit = js.native
+  
   /**
     * Retrieve details about a specified webhook by its id
     *
@@ -63,6 +66,7 @@ trait GetBatchStatus extends js.Object {
     * @param callback The request callback with RelayWebhook results
     */
   def get(id: String, options: Timezone, callback: ResultsCallback[WebhookLinks with Webhook]): Unit = js.native
+  
   /**
     * Gets recent status information about a webhook.
     *
@@ -86,6 +90,7 @@ trait GetBatchStatus extends js.Object {
     * @param callback The request callback with status results
     */
   def getBatchStatus(id: String, options: Limit, callback: ResultsCallback[js.Array[Attempts]]): Unit = js.native
+  
   /**
     * Lists descriptions of the events, event types, and event fields that could be included in a Webhooks post to your target URL.
     *
@@ -97,6 +102,7 @@ trait GetBatchStatus extends js.Object {
     * @param callback The request callback containing documentation results
     */
   def getDocumentation(callback: ResultsCallback[_]): Unit = js.native
+  
   /**
     * List an example of the event data that will be posted by a Webhook for the specified events.
     *
@@ -116,6 +122,7 @@ trait GetBatchStatus extends js.Object {
     * @param callback The request callback containing examples
     */
   def getSamples(options: Events, callback: Callback[_]): Unit = js.native
+  
   /**
     * List currently existing webhooks.the timezone to use for the last_successful and last_failure properties | Default: UTC
     *
@@ -133,6 +140,7 @@ trait GetBatchStatus extends js.Object {
     * @param callback The request callback with RelayWebhook results array
     */
   def list(options: Timezone, callback: ResultsCallback[js.Array[WebhookLinks with Webhook]]): Unit = js.native
+  
   /**
     * Update an existing webhook
     *
@@ -145,6 +153,7 @@ trait GetBatchStatus extends js.Object {
     * @param callback The request callback with webhook id results
     */
   def update(id: String, options: UpdateWebhook, callback: ResultsCallback[WebhookLinksidstring]): Unit = js.native
+  
   /**
     * Sends an example message event batch from the Webhook API to the target URL.
     *
@@ -162,4 +171,3 @@ trait GetBatchStatus extends js.Object {
     */
   def validate(id: String, options: MessageAny, callback: ResultsCallback[Msg]): Unit = js.native
 }
-

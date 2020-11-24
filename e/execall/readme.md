@@ -11,8 +11,8 @@ Find multiple RegExp matches in a string
 | Full name          | execall |
 | Keywords           | regex, regexp, regular, expression, exec, match, matches, execall, all, find, findall, immutable, string, multiple, many, global |
 | # releases         | 2 |
-| # dependents       | 32 |
-| # downloads        | 49063429 |
+| # dependents       | 43 |
+| # downloads        | 75407869 |
 | # stars            | 1 |
 
 ## Links

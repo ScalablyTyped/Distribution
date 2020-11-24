@@ -5,11 +5,12 @@ import typings.jestValidate.mod.ValidationError
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jest-config/build/ReporterValidationErrors", JSImport.Namespace)
 @js.native
 object reporterValidationErrorsMod extends js.Object {
+  
   def createArrayReporterError(
     arrayReporter: ReporterConfig,
     reporterIndex: Double,
@@ -26,8 +27,9 @@ object reporterValidationErrorsMod extends js.Object {
     expectedType: String,
     valueName: String
   ): ValidationError = js.native
+  
   def createReporterError(reporterIndex: Double, reporterValue: String): ValidationError = js.native
   def createReporterError(reporterIndex: Double, reporterValue: js.Array[ReporterConfig]): ValidationError = js.native
+  
   def validateReporters(reporterConfig: js.Array[ReporterConfig | String]): Boolean = js.native
 }
-

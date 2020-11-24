@@ -10,7 +10,7 @@ import typings.gun.mod.Gun.ChainReference
 import typings.gun.mod.Gun.ConstructorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gun/gun", JSImport.Namespace)
 @js.native
@@ -20,17 +20,13 @@ class ^[DataType] ()
   def this(options: js.Array[String]) = this()
   def this(options: ConstructorOptions) = this()
 }
-
 @JSImport("gun/gun", JSImport.Namespace)
 @js.native
 object ^
   extends TopLevel[
       (Instantiable0[ChainReference[js.Object, js.Any, pre_root]]) with (Instantiable1[/* options */ String, ChainReference[js.Object, js.Any, pre_root]]) with (Instantiable1[/* options */ js.Array[String], ChainReference[js.Object, js.Any, pre_root]]) with (Instantiable1[/* options */ ConstructorOptions, ChainReference[js.Object, js.Any, pre_root]])
     ] {
-  val Gun: js.Any = js.native
-  /** @see https://gun.eco/docs/SEA */
-  var SEA: Decrypt = js.native
-  var node: Ify = js.native
+  
   /**
     * @description
     * no parameters creates a local datastore using the default persistence layer, either localStorage or Radisk.
@@ -43,5 +39,11 @@ object ^
   def apply[DataType](options: String): ChainReference[DataType, _, pre_root] = js.native
   def apply[DataType](options: js.Array[String]): ChainReference[DataType, _, pre_root] = js.native
   def apply[DataType](options: ConstructorOptions): ChainReference[DataType, _, pre_root] = js.native
+  
+  val Gun: js.Any = js.native
+  
+  /** @see https://gun.eco/docs/SEA */
+  var SEA: Decrypt = js.native
+  
+  var node: Ify = js.native
 }
-

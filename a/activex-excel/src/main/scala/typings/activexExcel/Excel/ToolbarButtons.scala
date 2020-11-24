@@ -2,15 +2,13 @@ package typings.activexExcel.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ToolbarButtons extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val Count: Double = js.native
-  val Creator: XlCreator = js.native
-  val Parent: js.Any = js.native
+  
   def apply(Index: Double): ToolbarButton = js.native
+  
   def Add(
     Button: js.UndefOr[js.Any],
     Before: js.UndefOr[js.Any],
@@ -21,7 +19,16 @@ trait ToolbarButtons extends js.Object {
     HelpFile: js.UndefOr[js.Any],
     HelpContextID: js.UndefOr[js.Any]
   ): ToolbarButton = js.native
+  
+  val Application: typings.activexExcel.Excel.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: XlCreator = js.native
+  
   def Item(Index: Double): ToolbarButton = js.native
+  
+  val Parent: js.Any = js.native
+  
   def _Default(Index: Double): ToolbarButton = js.native
 }
-

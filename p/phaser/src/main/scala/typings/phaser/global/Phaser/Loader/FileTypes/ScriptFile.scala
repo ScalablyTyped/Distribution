@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Types.Loader.FileTypes.ScriptFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single Script File suitable for loading by the Loader.
@@ -39,4 +39,3 @@ class ScriptFile protected ()
   ) = this()
   def this(loader: LoaderPlugin, key: ScriptFileConfig, url: String, xhrSettings: XHRSettingsObject) = this()
 }
-

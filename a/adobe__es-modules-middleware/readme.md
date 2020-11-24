@@ -12,7 +12,7 @@ A Connect-style and Karma middleware for resolving ES-module imports and exports
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 2 |
-| # downloads        | 5466 |
+| # downloads        | 9065 |
 | # stars            | 0 |
 
 ## Links

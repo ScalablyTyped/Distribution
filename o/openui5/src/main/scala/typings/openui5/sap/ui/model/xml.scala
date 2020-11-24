@@ -2,17 +2,20 @@ package typings.openui5.sap.ui.model
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.xml")
 @js.native
 object xml extends js.Object {
+  
   @js.native
   trait XMLModel extends ClientModel {
+    
     /**
       * Serializes the current XML data of the model into a string.
       */
     def getXML(): Unit = js.native
+    
     def loadData(
       sURL: String,
       oParameters: String,
@@ -41,11 +44,13 @@ object xml extends js.Object {
       bCache: String,
       mHeaders: js.Any
     ): Unit = js.native
+    
     /**
       * Sets the provided XML encoded data object to the model
       * @param oData the data to set to the model
       */
     def setData(oData: js.Any): Unit = js.native
+    
     /**
       * Sets an XML namespace to use in the binding path
       * @param sNameSpace the namespace URI
@@ -53,6 +58,7 @@ object xml extends js.Object {
       */
     def setNameSpace(sNameSpace: String): Unit = js.native
     def setNameSpace(sNameSpace: String, sPrefix: String): Unit = js.native
+    
     /**
       * Sets a new value for the given property <code>sPropertyName</code> in the model.If the model value
       * changed all interested parties are informed.
@@ -67,12 +73,11 @@ object xml extends js.Object {
     def setProperty(sPath: String, oValue: js.Any, oContext: js.UndefOr[scala.Nothing], bAsyncUpdate: Boolean): Boolean = js.native
     def setProperty(sPath: String, oValue: js.Any, oContext: js.Any): Boolean = js.native
     def setProperty(sPath: String, oValue: js.Any, oContext: js.Any, bAsyncUpdate: Boolean): Boolean = js.native
+    
     /**
       * Sets the specified XML formatted string text to the model
       * @param sXMLText the XML data as string
       */
     def setXML(sXMLText: String): Unit = js.native
   }
-  
 }
-

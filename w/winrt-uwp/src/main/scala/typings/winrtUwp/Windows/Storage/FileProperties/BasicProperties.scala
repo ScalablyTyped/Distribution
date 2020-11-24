@@ -8,23 +8,25 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the basic properties, like the size of the item or the date the item was last modified, of the item (like a file or folder). */
 @js.native
 trait BasicProperties extends js.Object {
+  
   /** Gets the timestamp of the last time the file was modified. */
   var dateModified: Date = js.native
+  
   /** Gets the most relevant date for the item. */
   var itemDate: Date = js.native
-  /** Gets the size of the file. */
-  var size: Double = js.native
+  
   /**
     * Retrieves the specified properties associated with the item.
     * @param propertiesToRetrieve A collection that contains the names of the properties to retrieve.
     * @return When this method completes successfully, it returns a collection (type IMap ) that contains the specified properties and values as key-value pairs.
     */
   def retrievePropertiesAsync(propertiesToRetrieve: IIterable[String]): IPromiseWithIAsyncOperation[IMap[_, _]] = js.native
+  
   /**
     * Saves all properties associated with the item.
     * @return No object or value is returned when this method completes.
@@ -36,5 +38,7 @@ trait BasicProperties extends js.Object {
     * @return No object or value is returned when this method completes.
     */
   def savePropertiesAsync(propertiesToSave: IIterable[IKeyValuePair[_, _]]): IPromiseWithIAsyncAction = js.native
+  
+  /** Gets the size of the file. */
+  var size: Double = js.native
 }
-

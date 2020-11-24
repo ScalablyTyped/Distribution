@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__completer
 
-Typings are for version 2.1.1
+Typings are for version 2.2.4
 
 ## Library description:
 JupyterLab - Completer
@@ -10,9 +10,9 @@ JupyterLab - Completer
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/completer |
 | Keywords           | - |
-| # releases         | 65 |
-| # dependents       | 11 |
-| # downloads        | 757049 |
+| # releases         | 111 |
+| # dependents       | 12 |
+| # downloads        | 1372460 |
 | # stars            | 0 |
 
 ## Links

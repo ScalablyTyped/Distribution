@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.ioteventsdataMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "IoTEventsData")
 @js.native
@@ -14,4 +14,3 @@ class IoTEventsData ()
   extends typings.awsSdk.allMod.IoTEventsData {
   def this(options: ClientConfiguration) = this()
 }
-

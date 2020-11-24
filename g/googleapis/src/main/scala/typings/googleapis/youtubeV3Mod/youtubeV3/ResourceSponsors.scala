@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Sponsors")
 @js.native
 class ResourceSponsors protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.sponsors.list
     * @desc Lists sponsors for a channel.
@@ -45,4 +47,3 @@ class ResourceSponsors protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSponsorListResponse]
   ): Unit = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.egg.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Response
   extends typings.koa.mod.Response {
+  
   // tslint:disable-line
   /**
     * read response real status code.
@@ -19,4 +20,3 @@ trait Response
     */
   var realStatus: Double = js.native
 }
-

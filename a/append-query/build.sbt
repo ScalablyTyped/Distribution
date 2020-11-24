@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "append-query"
-version := "2.0-dt-20190608Z-9aa957"
+version := "2.0-dt-20190608Z-764d2e"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

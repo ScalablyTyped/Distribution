@@ -3,7 +3,7 @@ package typings.yandexMaps.mod
 import typings.yandexMaps.mod.clusterer.Hint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.yandexMaps.mod.IEventEmitter because Already inherited
@@ -13,10 +13,13 @@ class Clusterer_ ()
   extends IChild[IControlParent]
      with IParentOnMap {
   def this(options: IClustererOptions) = this()
+  
   var balloon: typings.yandexMaps.mod.clusterer.Balloon = js.native
+  
   //     balloonopen:
   var hint: Hint = js.native
+  
   var options: IOptionManager = js.native
+  
   def setParent(parent: IControlParent): this.type = js.native
 }
-

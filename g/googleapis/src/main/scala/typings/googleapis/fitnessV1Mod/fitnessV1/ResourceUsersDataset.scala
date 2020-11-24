@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fitness/v1", "fitness_v1.Resource$Users$Dataset")
 @js.native
 class ResourceUsersDataset protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * fitness.users.dataset.aggregate
     * @desc Aggregates data of a certain type or stream into buckets divided by
@@ -48,5 +48,6 @@ class ResourceUsersDataset protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAggregateResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
 }
-

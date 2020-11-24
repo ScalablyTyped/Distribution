@@ -2,10 +2,11 @@ package typings.minappEnv.wx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IntersectionObserver extends js.Object {
+  
   /** [IntersectionObserver.disconnect()](IntersectionObserver.disconnect.md)
     *
     * 停止监听。回调函数将不再触发
@@ -15,12 +16,14 @@ trait IntersectionObserver extends js.Object {
     *
     * 与页面显示区域的相交区域并不准确代表用户可见的区域，因为参与计算的区域是“布局区域”，布局区域可能会在绘制时被其他节点裁剪隐藏（如遇祖先节点中 overflow 样式为 hidden 的节点）或遮盖（如遇 fixed 定位的节点）。 */
   def disconnect(): Unit = js.native
+  
   /** [IntersectionObserver.observe(string targetSelector, function callback)](IntersectionObserver.observe.md)
     *
     * 指定目标节点并开始监听相交状态变化情况 */
   def observe(/** 选择器 */
   targetSelector: String, /** 监听相交状态变化的回调函数 */
   callback: ObserveCallback): Unit = js.native
+  
   /** [IntersectionObserver.relativeTo(string selector, Object margins)](IntersectionObserver.relativeTo.md)
     *
     * 使用选择器指定一个节点，作为参照区域之一。 */
@@ -29,6 +32,7 @@ trait IntersectionObserver extends js.Object {
   def relativeTo(/** 选择器 */
   selector: String, /** 用来扩展（或收缩）参照节点布局区域的边界 */
   margins: RelativeToMargins): Unit = js.native
+  
   /** [IntersectionObserver.relativeToViewport(Object margins)](IntersectionObserver.relativeToViewport.md)
   *
   * 指定页面显示区域作为参照区域之一
@@ -55,4 +59,3 @@ trait IntersectionObserver extends js.Object {
   def relativeToViewport(/** 用来扩展（或收缩）参照节点布局区域的边界 */
   margins: RelativeToViewportMargins): Unit = js.native
 }
-

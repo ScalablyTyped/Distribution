@@ -2,11 +2,12 @@ package typings.terminalKit.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("terminal-kit", "autoComplete")
 @js.native
 object autoComplete extends js.Object {
+  
   def apply(array: js.Array[String], startString: String): String = js.native
   def apply(
     array: js.Array[String],
@@ -45,4 +46,3 @@ object autoComplete extends js.Object {
     postfix: String
   ): String = js.native
 }
-

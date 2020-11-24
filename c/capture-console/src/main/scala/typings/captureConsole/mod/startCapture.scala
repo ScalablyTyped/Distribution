@@ -3,11 +3,12 @@ package typings.captureConsole.mod
 import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("capture-console", "startCapture")
 @js.native
 object startCapture extends js.Object {
+  
   def apply(
     stream: WritableStream,
     exec: js.Function3[
@@ -28,4 +29,3 @@ object startCapture extends js.Object {
     ]
   ): Boolean = js.native
 }
-

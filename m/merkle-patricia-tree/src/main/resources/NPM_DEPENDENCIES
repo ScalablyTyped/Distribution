@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "merkle-patricia-tree" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "merkle-patricia-tree" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

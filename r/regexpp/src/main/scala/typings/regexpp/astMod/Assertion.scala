@@ -7,15 +7,15 @@ import typings.regexpp.regexppStrings.start
 import typings.regexpp.regexppStrings.word
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.regexpp.astMod.BoundaryAssertion
   - typings.regexpp.astMod.LookaroundAssertion
 */
 trait Assertion extends Element
-
 object Assertion {
+  
   @scala.inline
   def EdgeAssertion(
     end: Double,
@@ -29,6 +29,7 @@ object Assertion {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Assertion]
   }
+  
   @scala.inline
   def WordBoundaryAssertion(
     end: Double,
@@ -43,6 +44,7 @@ object Assertion {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Assertion]
   }
+  
   @scala.inline
   def LookaheadAssertion(
     alternatives: js.Array[Alternative],
@@ -58,6 +60,7 @@ object Assertion {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Assertion]
   }
+  
   @scala.inline
   def LookbehindAssertion(
     alternatives: js.Array[Alternative],
@@ -74,4 +77,3 @@ object Assertion {
     __obj.asInstanceOf[Assertion]
   }
 }
-

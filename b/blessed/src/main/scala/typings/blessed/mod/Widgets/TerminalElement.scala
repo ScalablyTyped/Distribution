@@ -2,22 +2,21 @@ package typings.blessed.mod.Widgets
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("blessed", "Widgets.TerminalElement")
 @js.native
 class TerminalElement protected () extends BoxElement {
   def this(opts: TerminalOptions) = this()
+  
   @JSName("options")
   var options_TerminalElement: TerminalOptions = js.native
+  
   /**
     * reference to the pty.js pseudo terminal.
     */
   var pty: js.Any = js.native
-  /**
-    * reference to the headless term.js terminal.
-    */
-  var term: js.Any = js.native
+  
   def screenshot(
     xi: js.UndefOr[scala.Nothing],
     xl: js.UndefOr[scala.Nothing],
@@ -37,9 +36,14 @@ class TerminalElement protected () extends BoxElement {
   def screenshot(xi: Double, xl: Double): String = js.native
   def screenshot(xi: Double, xl: Double, yi: js.UndefOr[scala.Nothing], yl: Double): String = js.native
   def screenshot(xi: Double, xl: Double, yi: Double): String = js.native
+  
+  /**
+    * reference to the headless term.js terminal.
+    */
+  var term: js.Any = js.native
+  
   /**
     * write data to the terminal.
     */
   def write(data: String): Unit = js.native
 }
-

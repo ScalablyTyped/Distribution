@@ -11,8 +11,8 @@ ES2015 `Array#findIndex()` ponyfill
 | Full name          | array-find-index |
 | Keywords           | es2015, ponyfill, polyfill, shim, find, index, findindex, array |
 | # releases         | 0 |
-| # dependents       | 136 |
-| # downloads        | 268282668 |
+| # dependents       | 168 |
+| # downloads        | 334938533 |
 | # stars            | 2 |
 
 ## Links

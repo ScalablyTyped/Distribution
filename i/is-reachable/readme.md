@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-reachable
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Check if servers are reachable
@@ -10,9 +10,9 @@ Check if servers are reachable
 | ------------------ | :-------------: |
 | Full name          | is-reachable |
 | Keywords           | browser, online, offline, network, connected, connectivity, internet, is, has, detect, reachable, reachability, server, host, accessible, socket |
-| # releases         | 5 |
-| # dependents       | 55 |
-| # downloads        | 2051859 |
+| # releases         | 4 |
+| # dependents       | 69 |
+| # downloads        | 2636196 |
 | # stars            | 7 |
 
 ## Links

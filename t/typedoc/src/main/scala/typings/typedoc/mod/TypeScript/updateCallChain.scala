@@ -6,11 +6,12 @@ import typings.typescript.mod.QuestionDotToken
 import typings.typescript.mod.TypeNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.updateCallChain")
 @js.native
 object updateCallChain extends js.Object {
+  
   def apply(
     node: CallChain,
     expression: Expression,
@@ -32,6 +33,7 @@ object updateCallChain extends js.Object {
     typeArguments: js.UndefOr[scala.Nothing],
     argumentsArray: js.Array[Expression]
   ): CallChain = js.native
+  /** @deprecated Use `factory.updateCallChain` or the factory supplied by your transformation context instead. */
   def apply(
     node: CallChain,
     expression: Expression,
@@ -40,4 +42,3 @@ object updateCallChain extends js.Object {
     argumentsArray: js.Array[Expression]
   ): CallChain = js.native
 }
-

@@ -6,37 +6,71 @@ import typings.firebaseAnalyticsTypes.mod.EventParams
 import typings.firebaseAnalyticsTypes.mod.Gtag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/analytics/dist/src/functions", JSImport.Namespace)
 @js.native
 object functionsMod extends js.Object {
-  def logEvent(gtagFunction: Gtag, analyticsId: String, eventName: String): Unit = js.native
+  
+  def logEvent(gtagFunction: Gtag, initializationPromise: js.Promise[String], eventName: String): js.Promise[Unit] = js.native
   def logEvent(
     gtagFunction: Gtag,
-    analyticsId: String,
+    initializationPromise: js.Promise[String],
     eventName: String,
     eventParams: js.UndefOr[scala.Nothing],
     options: AnalyticsCallOptions
-  ): Unit = js.native
-  def logEvent(gtagFunction: Gtag, analyticsId: String, eventName: String, eventParams: EventParams): Unit = js.native
+  ): js.Promise[Unit] = js.native
   def logEvent(
     gtagFunction: Gtag,
-    analyticsId: String,
+    initializationPromise: js.Promise[String],
+    eventName: String,
+    eventParams: EventParams
+  ): js.Promise[Unit] = js.native
+  def logEvent(
+    gtagFunction: Gtag,
+    initializationPromise: js.Promise[String],
     eventName: String,
     eventParams: EventParams,
     options: AnalyticsCallOptions
-  ): Unit = js.native
-  def setAnalyticsCollectionEnabled(analyticsId: String, enabled: Boolean): Unit = js.native
-  def setCurrentScreen(gtagFunction: Gtag, analyticsId: String): Unit = js.native
-  def setCurrentScreen(gtagFunction: Gtag, analyticsId: String, screenName: String): Unit = js.native
-  def setCurrentScreen(gtagFunction: Gtag, analyticsId: String, screenName: String, options: AnalyticsCallOptions): Unit = js.native
-  def setCurrentScreen(gtagFunction: Gtag, analyticsId: String, screenName: Null, options: AnalyticsCallOptions): Unit = js.native
-  def setUserId(gtagFunction: Gtag, analyticsId: String): Unit = js.native
-  def setUserId(gtagFunction: Gtag, analyticsId: String, id: String): Unit = js.native
-  def setUserId(gtagFunction: Gtag, analyticsId: String, id: String, options: AnalyticsCallOptions): Unit = js.native
-  def setUserId(gtagFunction: Gtag, analyticsId: String, id: Null, options: AnalyticsCallOptions): Unit = js.native
-  def setUserProperties(gtagFunction: Gtag, analyticsId: String, properties: CustomParams): Unit = js.native
-  def setUserProperties(gtagFunction: Gtag, analyticsId: String, properties: CustomParams, options: AnalyticsCallOptions): Unit = js.native
+  ): js.Promise[Unit] = js.native
+  
+  def setAnalyticsCollectionEnabled(initializationPromise: js.Promise[String], enabled: Boolean): js.Promise[Unit] = js.native
+  
+  def setCurrentScreen(gtagFunction: Gtag, initializationPromise: js.Promise[String]): js.Promise[Unit] = js.native
+  def setCurrentScreen(gtagFunction: Gtag, initializationPromise: js.Promise[String], screenName: String): js.Promise[Unit] = js.native
+  def setCurrentScreen(
+    gtagFunction: Gtag,
+    initializationPromise: js.Promise[String],
+    screenName: String,
+    options: AnalyticsCallOptions
+  ): js.Promise[Unit] = js.native
+  def setCurrentScreen(
+    gtagFunction: Gtag,
+    initializationPromise: js.Promise[String],
+    screenName: Null,
+    options: AnalyticsCallOptions
+  ): js.Promise[Unit] = js.native
+  
+  def setUserId(gtagFunction: Gtag, initializationPromise: js.Promise[String]): js.Promise[Unit] = js.native
+  def setUserId(gtagFunction: Gtag, initializationPromise: js.Promise[String], id: String): js.Promise[Unit] = js.native
+  def setUserId(
+    gtagFunction: Gtag,
+    initializationPromise: js.Promise[String],
+    id: String,
+    options: AnalyticsCallOptions
+  ): js.Promise[Unit] = js.native
+  def setUserId(
+    gtagFunction: Gtag,
+    initializationPromise: js.Promise[String],
+    id: Null,
+    options: AnalyticsCallOptions
+  ): js.Promise[Unit] = js.native
+  
+  def setUserProperties(gtagFunction: Gtag, initializationPromise: js.Promise[String], properties: CustomParams): js.Promise[Unit] = js.native
+  def setUserProperties(
+    gtagFunction: Gtag,
+    initializationPromise: js.Promise[String],
+    properties: CustomParams,
+    options: AnalyticsCallOptions
+  ): js.Promise[Unit] = js.native
 }
-

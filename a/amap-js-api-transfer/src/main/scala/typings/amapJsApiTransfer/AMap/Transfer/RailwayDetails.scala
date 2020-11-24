@@ -2,15 +2,15 @@ package typings.amapJsApiTransfer.AMap.Transfer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.amapJsApiTransfer.AMap.Transfer.RailwayDetailsBase
   - typings.amapJsApiTransfer.AMap.Transfer.RailwayDetailsExt
 */
 trait RailwayDetails extends js.Object
-
 object RailwayDetails {
+  
   @scala.inline
   def RailwayDetailsBase(
     arrival_stop: RailStop,
@@ -27,6 +27,7 @@ object RailwayDetails {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RailwayDetails]
   }
+  
   @scala.inline
   def RailwayDetailsExt(
     alters: js.Array[Alter],
@@ -47,4 +48,3 @@ object RailwayDetails {
     __obj.asInstanceOf[RailwayDetails]
   }
 }
-

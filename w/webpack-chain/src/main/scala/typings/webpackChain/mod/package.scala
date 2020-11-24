@@ -2,9 +2,10 @@ package typings.webpackChain
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.webpackChain.webpackChainStrings.eval
     - typings.webpackChain.webpackChainStrings.`inline-source-map`
@@ -49,7 +50,10 @@ package object mod {
     - scala.Boolean
   */
   type DevTool = typings.webpackChain.mod._DevTool | scala.Boolean
+  
   type LoaderOptions = org.scalablytyped.runtime.StringDictionary[js.Any]
+  
   type RuntimeChunkFunction = js.Function1[/* entryPoint */ typings.webpackChain.mod.EntryPoint, java.lang.String]
+  
   type SplitChunksOptions = org.scalablytyped.runtime.StringDictionary[js.Any]
 }

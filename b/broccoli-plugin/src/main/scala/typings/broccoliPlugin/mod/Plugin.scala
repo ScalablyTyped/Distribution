@@ -10,34 +10,41 @@ import typings.broccoliPlugin.interfacesMod.MapSeriesIterator
 import typings.fsMerger.mod.FS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Plugin extends NodeCommon[TransformNodeInfo] {
-  var _annotation: js.Any = js.native
-  var _baseConstructorCalled: js.Any = js.native
-  var _checkOverrides: js.Any = js.native
-  var _initializeReadCompat: js.Any = js.native
-  var _inputNodes: js.Any = js.native
-  var _instantiationStack: js.Any = js.native
-  var _name: js.Any = js.native
-  var _needsCache: js.Any = js.native
-  var _persistentOutput: js.Any = js.native
-  var _readCompat: js.Any = js.native
-  var _readCompatError: js.Any = js.native
-  var _setup: js.Any = js.native
-  var _trackInputChanges: js.Any = js.native
-  var _volatile: js.Any = js.native
-  var builderFeatures: FeatureSet = js.native
-  /**
-    * The path on disk to an auxiliary cache directory.
-    * Use this to store files that you want preserved between builds.
-    * This directory will only be deleted when Broccoli exits. If a cache directory
-    * is not needed, set needsCache to false when calling broccoli-plugin constructor.
-    */
-  var cachePath: js.UndefOr[String] = js.native
-  var rebuild: js.Any = js.native
+  
   def __broccoliGetInfo__(): TransformNodeInfo = js.native
+  
+  var _annotation: js.Any = js.native
+  
+  var _baseConstructorCalled: js.Any = js.native
+  
+  var _checkOverrides: js.Any = js.native
+  
+  var _initializeReadCompat: js.Any = js.native
+  
+  var _inputNodes: js.Any = js.native
+  
+  var _instantiationStack: js.Any = js.native
+  
+  var _name: js.Any = js.native
+  
+  var _needsCache: js.Any = js.native
+  
+  var _persistentOutput: js.Any = js.native
+  
+  var _readCompat: js.Any = js.native
+  
+  var _readCompatError: js.Any = js.native
+  
+  var _setup: js.Any = js.native
+  
+  var _trackInputChanges: js.Any = js.native
+  
+  var _volatile: js.Any = js.native
+  
   /**
     * Override this method in your subclass. It will be called on each (re-)build.
     *
@@ -57,7 +64,19 @@ trait Plugin extends NodeCommon[TransformNodeInfo] {
     *  column: Column in which the error occurred (zero-indexed)
     */
   def build(): js.Promise[Unit] | Unit = js.native
+  
+  var builderFeatures: FeatureSet = js.native
+  
+  /**
+    * The path on disk to an auxiliary cache directory.
+    * Use this to store files that you want preserved between builds.
+    * This directory will only be deleted when Broccoli exits. If a cache directory
+    * is not needed, set needsCache to false when calling broccoli-plugin constructor.
+    */
+  var cachePath: js.UndefOr[String] = js.native
+  
   def cleanup(): Unit = js.native
+  
   /**
     * Return the object on which Broccoli will call obj.build(). Called once after instantiation.
     * By default, returns this. Plugins do not usually need to override this, but it can be useful
@@ -66,18 +85,24 @@ trait Plugin extends NodeCommon[TransformNodeInfo] {
     * @returns [[CallbackObject]]
     */
   def getCallbackObject(): CallbackObject = js.native
+  
   def input: FS = js.native
+  
   /**
     * An array of paths on disk corresponding to each node in inputNodes.
     * Your plugin will read files from these paths.
     */
   def inputPaths: js.Array[String] = js.native
+  
   def output: FSOutput = js.native
+  
   /**
     * The path on disk corresponding to this plugin instance (this node).
     * Your plugin will write files to this path. This directory is emptied by Broccoli before each build, unless the persistentOutput options is true.
     */
   def outputPath: String = js.native
+  
   def read(readTree: MapSeriesIterator[InputNode]): js.UndefOr[js.Promise[String]] = js.native
+  
+  var rebuild: js.Any = js.native
 }
-

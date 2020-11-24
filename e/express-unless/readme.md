@@ -10,9 +10,9 @@ Conditionally add a middleware to express with some common patterns.
 | ------------------ | :-------------: |
 | Full name          | express-unless |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 68 |
-| # downloads        | 8075984 |
+| # releases         | 0 |
+| # dependents       | 69 |
+| # downloads        | 10592951 |
 | # stars            | 8 |
 
 ## Links

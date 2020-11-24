@@ -10,9 +10,9 @@ Tag/word cloud component for react
 | ------------------ | :-------------: |
 | Full name          | react-tagcloud |
 | Keywords           | react-tagcloud, react, tag-cloud, word-cloud, tagcloud, wordcloud |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 120010 |
+| # releases         | 5 |
+| # dependents       | 2 |
+| # downloads        | 140221 |
 | # stars            | 0 |
 
 ## Links

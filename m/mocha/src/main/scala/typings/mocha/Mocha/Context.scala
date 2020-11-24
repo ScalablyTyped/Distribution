@@ -3,7 +3,7 @@ package typings.mocha.Mocha
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion Runnable untyped events
 /**
@@ -14,9 +14,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Context
   extends /* key */ StringDictionary[js.Any] {
+  
   var _runnable: js.Any = js.native
+  
   var currentTest: js.UndefOr[Test] = js.native
-  var test: js.UndefOr[Runnable] = js.native
+  
   /**
     * Get the number of allowed retries on failed tests.
     */
@@ -25,6 +27,7 @@ trait Context
     * Set the number of allowed retries on failed tests.
     */
   def retries(n: Double): this.type = js.native
+  
   /**
     * Get the context `Runnable`.
     */
@@ -33,10 +36,12 @@ trait Context
     * Set the context `Runnable`.
     */
   def runnable(runnable: Runnable): this.type = js.native
+  
   /**
     * Mark a test as skipped.
     */
   def skip(): scala.Nothing = js.native
+  
   /**
     * Get test slowness threshold.
     */
@@ -46,6 +51,9 @@ trait Context
     */
   def slow(ms: String): this.type = js.native
   def slow(ms: Double): this.type = js.native
+  
+  var test: js.UndefOr[Runnable] = js.native
+  
   /**
     * Get test timeout.
     */
@@ -56,4 +64,3 @@ trait Context
   def timeout(ms: String): this.type = js.native
   def timeout(ms: Double): this.type = js.native
 }
-

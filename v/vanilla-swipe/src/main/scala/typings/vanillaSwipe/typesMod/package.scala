@@ -2,16 +2,15 @@ package typings.vanillaSwipe
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object typesMod {
-  type EventHandler = js.Function6[
+  
+  type EventHandler = js.Function2[
     /* e */ typings.std.Event, 
-    /* deltaX */ scala.Double, 
-    /* deltaY */ scala.Double, 
-    /* absX */ scala.Double, 
-    /* absY */ scala.Double, 
-    /* duration */ scala.Double, 
+    /* data */ typings.vanillaSwipe.typesMod.EventData, 
     scala.Unit
   ]
+  
+  type Trace = js.Array[scala.Double]
 }

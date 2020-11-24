@@ -1,7 +1,7 @@
 
 # Scala.js typings for webix
 
-Typings are for version 7.4.0
+Typings are for version 8.0.1
 
 ## Library description:
 Webix UI
@@ -12,7 +12,7 @@ Webix UI
 | Keywords           | webix, ui, tree, datatable, list, chart, form, grid |
 | # releases         | 20 |
 | # dependents       | 2 |
-| # downloads        | 14182 |
+| # downloads        | 14054 |
 | # stars            | 1 |
 
 ## Links

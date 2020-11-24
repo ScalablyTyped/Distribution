@@ -362,6 +362,7 @@ import typings.fhirKitClient.anon.Bundletypesearchset
 import typings.fhirKitClient.anon.Bundletypetransactionresp
 import typings.fhirKitClient.anon.CompartmentHeaders
 import typings.fhirKitClient.anon.Context
+import typings.fhirKitClient.anon.Headers
 import typings.fhirKitClient.anon.HeadersId
 import typings.fhirKitClient.anon.HeadersIdJSONPatch
 import typings.fhirKitClient.anon.HeadersIdJSONPatchOptions
@@ -725,16 +726,15 @@ import typings.fhirKitClient.anon.`97`
 import typings.fhirKitClient.anon.`98`
 import typings.fhirKitClient.anon.`99`
 import typings.fhirKitClient.anon.`9`
-import typings.request.mod.Headers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Client extends js.Object {
+  
   var baseUrl: String = js.native
-  var bearerToken: js.UndefOr[String] = js.native
-  var customHeaders: Headers = js.native
+  
   /**
     * Submit a set of actions to perform independently as a batch.
     *
@@ -796,6 +796,9 @@ trait Client extends js.Object {
     * @return {Promise<Object>} FHIR resources in a FHIR fhir.Bundle structure.
     */
   def batch(params: BodyBundletypebatch): js.Promise[OperationOutcome | Bundletypebatchresponse] = js.native
+  
+  var bearerToken: js.UndefOr[String] = js.native
+  
   /**
     * Get the default capability statement.
     *
@@ -820,7 +823,8 @@ trait Client extends js.Object {
     * @return {Promise<Object>} capability statement FHIR resource.
     */
   def capabilityStatement(): js.Promise[OperationOutcome | CapabilityStatement] = js.native
-  def capabilityStatement(params: typings.fhirKitClient.anon.Headers): js.Promise[OperationOutcome | CapabilityStatement] = js.native
+  def capabilityStatement(params: Headers): js.Promise[OperationOutcome | CapabilityStatement] = js.native
+  
   /**
     * Search for FHIR resources within a compartment.
     * The resourceType and id must be specified.
@@ -856,6 +860,7 @@ trait Client extends js.Object {
     * @return {Promise<Object>} FHIR resources in a FHIR fhir.Bundle structure.
     */
   def compartmentSearch(params: CompartmentHeaders): js.Promise[OperationOutcome | Bundletypesearchset] = js.native
+  
   /**
     * Create a resource.
     *
@@ -1011,6 +1016,9 @@ trait Client extends js.Object {
   def create(params: HeadersOptions): js.Promise[OperationOutcome | AdverseEvent] = js.native
   def create(params: HeadersOptionsResourceType): js.Promise[OperationOutcome | Appointment] = js.native
   def create[T /* <: CustomResource */](params: BodyT[T]): js.Promise[OperationOutcome | T] = js.native
+  
+  var customHeaders: typings.request.mod.Headers = js.native
+  
   /**
     * Delete a resource by FHIR id.
     *
@@ -1038,6 +1046,7 @@ trait Client extends js.Object {
     * @return {Promise<Object>} Operation Outcome FHIR resource
     */
   def delete(params: ResourceTypeResourceType): js.Promise[OperationOutcome] = js.native
+  
   /**
     * Retrieve the change history for a FHIR resource id, a resource type or the
     * entire system
@@ -1066,6 +1075,7 @@ trait Client extends js.Object {
     */
   def history(): js.Promise[OperationOutcome | Bundletypehistory] = js.native
   def history(params: `311`): js.Promise[OperationOutcome | Bundletypehistory] = js.native
+  
   /**
     * Return the next page of results.
     *
@@ -1081,7 +1091,8 @@ trait Client extends js.Object {
     * @return {Promise<Object>} FHIR resources in a FHIR fhir.Bundle structure.
     */
   def nextPage[T /* <: String */](params: typings.fhirKitClient.anon.Bundle[T]): js.Promise[OperationOutcome | (Bundle with Type[T])] = js.native
-  def nextPage[T /* <: String */](params: typings.fhirKitClient.anon.Bundle[T], headers: Headers): js.Promise[OperationOutcome | (Bundle with Type[T])] = js.native
+  def nextPage[T /* <: String */](params: typings.fhirKitClient.anon.Bundle[T], headers: typings.request.mod.Headers): js.Promise[OperationOutcome | (Bundle with Type[T])] = js.native
+  
   def patch(params: HeadersIdJSONPatch): js.Promise[OperationOutcome | AllergyIntolerance] = js.native
   def patch(params: HeadersIdJSONPatchOptions): js.Promise[OperationOutcome | AuditEvent] = js.native
   def patch(params: HeadersIdJSONPatchOptionsResourceType): js.Promise[OperationOutcome | Binary] = js.native
@@ -1242,6 +1253,7 @@ trait Client extends js.Object {
   def patch(params: `308`): js.Promise[OperationOutcome | TestScript] = js.native
   def patch(params: `309`): js.Promise[OperationOutcome | ValueSet] = js.native
   def patch(params: `310`): js.Promise[OperationOutcome | VisionPrescription] = js.native
+  
   /**
     * Return the previous page of results.
     *
@@ -1257,7 +1269,8 @@ trait Client extends js.Object {
     * @return {Promise<Object>} FHIR resources in a FHIR fhir.Bundle structure.
     */
   def prevPage[T /* <: String */](params: typings.fhirKitClient.anon.Bundle[T]): js.Promise[OperationOutcome | (Bundle with Type[T])] = js.native
-  def prevPage[T /* <: String */](params: typings.fhirKitClient.anon.Bundle[T], headers: Headers): js.Promise[OperationOutcome | (Bundle with Type[T])] = js.native
+  def prevPage[T /* <: String */](params: typings.fhirKitClient.anon.Bundle[T], headers: typings.request.mod.Headers): js.Promise[OperationOutcome | (Bundle with Type[T])] = js.native
+  
   def read(params: HeadersId): js.Promise[OperationOutcome | AllergyIntolerance] = js.native
   def read(params: HeadersIdOptions): js.Promise[OperationOutcome | AuditEvent] = js.native
   def read(params: HeadersIdOptionsResourceType): js.Promise[OperationOutcome | Binary] = js.native
@@ -1407,6 +1420,7 @@ trait Client extends js.Object {
   def read(params: `98`): js.Promise[OperationOutcome | Task] = js.native
   def read(params: `99`): js.Promise[OperationOutcome | TestReport] = js.native
   def read(params: `9`): js.Promise[OperationOutcome | Condition] = js.native
+  
   /**
     * Resolve a reference and return FHIR resource
     *
@@ -1452,6 +1466,7 @@ trait Client extends js.Object {
     * @return {Promise<Object>} FHIR resource
     */
   def resolve(params: Context): js.Promise[FhirResource] = js.native
+  
   /**
     * Retrieve the change history for a particular resource FHIR id.
     *
@@ -1478,6 +1493,7 @@ trait Client extends js.Object {
     * @return {Promise<Object>} FHIR resources in a FHIR fhir.Bundle structure.
     */
   def resourceHistory(params: ResourceTypeResourceType): js.Promise[OperationOutcome | Bundletypehistory] = js.native
+  
   /**
     * Search for a FHIR resource.
     *
@@ -1509,6 +1525,7 @@ trait Client extends js.Object {
     * @return {Promise<Object>} FHIR resources in a FHIR fhir.Bundle structure.
     */
   def resourceSearch(params: typings.fhirKitClient.anon.SearchParams): js.Promise[OperationOutcome | Bundletypesearchset] = js.native
+  
   /**
     * Search for a FHIR resource, with or without compartments, or the entire
     * system
@@ -1546,6 +1563,7 @@ trait Client extends js.Object {
     * @throws {Error} if neither searchParams nor resourceType are supplied
     */
   def search(params: typings.fhirKitClient.anon.Compartment): js.Promise[OperationOutcome | Bundletypesearchset] = js.native
+  
   /**
     * Obtain the SMART OAuth URLs from the Capability Statement
     * http://docs.smarthealthit.org/authorization/conformance-statement/
@@ -1572,7 +1590,8 @@ trait Client extends js.Object {
     *   tokenUrl, registerUrl, manageUrl
     */
   def smartAuthMetadata(): js.Promise[SmartAuthMetadata] = js.native
-  def smartAuthMetadata(params: typings.fhirKitClient.anon.Headers): js.Promise[SmartAuthMetadata] = js.native
+  def smartAuthMetadata(params: Headers): js.Promise[SmartAuthMetadata] = js.native
+  
   /**
     * Retrieve the change history for all resources.
     *
@@ -1596,7 +1615,8 @@ trait Client extends js.Object {
     * @return {Promise<Object>} FHIR resources in a FHIR fhir.Bundle structure.
     */
   def systemHistory(): js.Promise[OperationOutcome | Bundletypehistory] = js.native
-  def systemHistory(params: typings.fhirKitClient.anon.Headers): js.Promise[OperationOutcome | Bundletypehistory] = js.native
+  def systemHistory(params: Headers): js.Promise[OperationOutcome | Bundletypehistory] = js.native
+  
   /**
     * Search across all FHIR resource types in the system.
     * Only the parameters defined for all resources can be used.
@@ -1623,6 +1643,7 @@ trait Client extends js.Object {
     * @return {Promise<Object>} FHIR resources in a FHIR fhir.Bundle structure.
     */
   def systemSearch(params: OptionsSearchParams): js.Promise[OperationOutcome | Bundletypesearchset] = js.native
+  
   /**
     * Submit a set of actions to perform independently as a transaction.
     *
@@ -1689,6 +1710,7 @@ trait Client extends js.Object {
     * @return {Promise<Object>} FHIR resources in a FHIR fhir.Bundle structure.
     */
   def transaction(params: BodyBundletypetransaction): js.Promise[OperationOutcome | Bundletypetransactionresp] = js.native
+  
   /**
     * Retrieve the change history for a particular resource type.
     *
@@ -1714,6 +1736,7 @@ trait Client extends js.Object {
     * @return {Promise<Object>} FHIR resources in a FHIR fhir.Bundle structure.
     */
   def typeHistory(params: OptionsResourceTypeResourceType): js.Promise[OperationOutcome | Bundletypehistory] = js.native
+  
   def update(params: BodyAllergyIntolerance): js.Promise[OperationOutcome | AllergyIntolerance] = js.native
   def update(params: BodyAppointment): js.Promise[OperationOutcome | Appointment] = js.native
   def update(params: BodyAppointmentResponse): js.Promise[OperationOutcome | AppointmentResponse] = js.native
@@ -1871,6 +1894,7 @@ trait Client extends js.Object {
   def update(params: BodyValueSetHeaders): js.Promise[OperationOutcome | ValueSet] = js.native
   def update(params: BodyVisionPrescriptionHeaders): js.Promise[OperationOutcome | VisionPrescription] = js.native
   def update[T /* <: CustomResource */](params: BodyTHeaders[T]): js.Promise[OperationOutcome | T] = js.native
+  
   def vread(params: HeadersIdOptionsResourceTypeVersion): js.Promise[OperationOutcome | Appointment] = js.native
   def vread(params: HeadersIdStringOptionsResourceTypeVersionString): js.Promise[OperationOutcome | BodySite] = js.native
   def vread(params: IdOptionsResourceTypeVersion): js.Promise[OperationOutcome | AllergyIntolerance] = js.native
@@ -2024,4 +2048,3 @@ trait Client extends js.Object {
   def vread(params: `209`): js.Promise[OperationOutcome | ValueSet] = js.native
   def vread(params: `210`): js.Promise[OperationOutcome | VisionPrescription] = js.native
 }
-

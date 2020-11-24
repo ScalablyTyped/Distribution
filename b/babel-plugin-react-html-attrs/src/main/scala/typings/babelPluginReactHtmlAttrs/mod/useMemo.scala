@@ -2,11 +2,12 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babel-plugin-react-html-attrs", "useMemo")
 @js.native
 object useMemo extends js.Object {
+  
   /**
     * `useMemo` will only recompute the memoized value when one of the `deps` has changed.
     *
@@ -29,4 +30,3 @@ object useMemo extends js.Object {
   def apply[T](factory: js.Function0[T]): T = js.native
   def apply[T](factory: js.Function0[T], deps: DependencyList): T = js.native
 }
-

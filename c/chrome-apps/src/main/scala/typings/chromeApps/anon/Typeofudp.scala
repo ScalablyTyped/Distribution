@@ -11,25 +11,11 @@ import typings.chromeApps.chrome.sockets.SocketProperties
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Typeofudp extends js.Object {
-  /**
-    * Event raised when a UDP packet has been received for the given socket.
-    *
-    * @see https://developer.chrome.com/apps/sockets_udp#event-onReceive
-    */
-  val onReceive: Event[js.Function1[/* args */ ReceiveEventArgs, Unit]] = js.native
-  /**
-    * Event raised when a network error occured while the runtime was waiting
-    * for data on the socket address and port. Once this event is raised, the
-    * socket is paused and no more onReceive events will be raised for this
-    * socket until the socket is resumed.
-    *
-    * @see https://developer.chrome.com/apps/sockets_udp#event-onReceiveError
-    */
-  val onReceiveError: Event[js.Function1[/* args */ ReceiveErrorEventArgs, Unit]] = js.native
+  
   /**
     * Binds the local address and port for the socket. For a client socket, it
     * is recommended to use port 0 to let the platform pick a free port.
@@ -53,6 +39,7 @@ trait Typeofudp extends js.Object {
     port: integer,
     callback: js.Function1[/* result */ integer, Unit]
   ): Unit = js.native
+  
   /**
     * Closes the socket and releases the address/port the socket is bound to.
     * Each socket created should be closed after use. The socket id is no
@@ -65,6 +52,7 @@ trait Typeofudp extends js.Object {
     */
   def close(socketId: integer): Unit = js.native
   def close(socketId: integer, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Creates a UDP socket with default properties.
     *
@@ -80,6 +68,7 @@ trait Typeofudp extends js.Object {
     * @param createInfo.socketId The ID of the newly created socket.
     */
   def create(properties: SocketProperties, callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = js.native
+  
   /**
     * Retrieves the state of the given socket.
     *
@@ -88,6 +77,7 @@ trait Typeofudp extends js.Object {
     * @param callback Called when the socket state is available.
     */
   def getInfo(socketId: integer, callback: js.Function1[/* socketInfo */ SocketInfo, Unit]): Unit = js.native
+  
   /**
     * Gets the multicast group addresses the socket is currently joined to.
     *
@@ -96,6 +86,7 @@ trait Typeofudp extends js.Object {
     * @param callback Called with an array of strings of the result.
     */
   def getJoinedGroups(socketId: integer, callback: js.Function1[/* groups */ js.Array[String], Unit]): Unit = js.native
+  
   /**
     * Retrieves the list of currently opened sockets owned by the application.
     *
@@ -103,6 +94,7 @@ trait Typeofudp extends js.Object {
     * @param callback Called when the list of sockets is available.
     */
   def getSockets(callback: js.Function1[/* socketInfos */ js.Array[SocketInfo], Unit]): Unit = js.native
+  
   /**
     * Joins the multicast group and starts to receive packets from that group.
     * The socket must be bound to a local port before calling this method.
@@ -113,6 +105,7 @@ trait Typeofudp extends js.Object {
     * @param callback Called when the joinGroup operation completes.
     */
   def joinGroup(socketId: integer, address: String, callback: js.Function1[/* result */ integer, Unit]): Unit = js.native
+  
   /**
     * Leaves the multicast group previously joined using joinGroup. This is
     * only necessary to call if you plan to keep using the socket afterwards,
@@ -129,6 +122,24 @@ trait Typeofudp extends js.Object {
     * @param callback Called when the leaveGroup operation completes.
     */
   def leaveGroup(socketId: integer, address: String, callback: js.Function1[/* result */ integer, Unit]): Unit = js.native
+  
+  /**
+    * Event raised when a UDP packet has been received for the given socket.
+    *
+    * @see https://developer.chrome.com/apps/sockets_udp#event-onReceive
+    */
+  val onReceive: Event[js.Function1[/* args */ ReceiveEventArgs, Unit]] = js.native
+  
+  /**
+    * Event raised when a network error occured while the runtime was waiting
+    * for data on the socket address and port. Once this event is raised, the
+    * socket is paused and no more onReceive events will be raised for this
+    * socket until the socket is resumed.
+    *
+    * @see https://developer.chrome.com/apps/sockets_udp#event-onReceiveError
+    */
+  val onReceiveError: Event[js.Function1[/* args */ ReceiveErrorEventArgs, Unit]] = js.native
+  
   /**
     * Sends data on the given socket to the given address and port. The socket
     * must be bound to a local port before calling this method.
@@ -147,6 +158,7 @@ trait Typeofudp extends js.Object {
     port: integer,
     callback: js.Function1[/* sendInfo */ SendInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Enables or disables broadcast packets on this socket.
     *
@@ -158,6 +170,7 @@ trait Typeofudp extends js.Object {
     */
   def setBroadcast(socketId: integer, enabled: Boolean): Unit = js.native
   def setBroadcast(socketId: integer, enabled: Boolean, callback: js.Function1[/* result */ integer, Unit]): Unit = js.native
+  
   /**
     * Sets whether multicast packets sent from the host to the multicast group
     * will be looped back to the host.
@@ -180,6 +193,7 @@ trait Typeofudp extends js.Object {
     * @param callback Called when the configuration operation completes.
     */
   def setMulticastLoopbackMode(socketId: integer, enabled: Boolean, callback: js.Function1[/* result */ integer, Unit]): Unit = js.native
+  
   /**
     * Sets the time-to-live of multicast packets sent to the multicast group.
     *
@@ -191,6 +205,7 @@ trait Typeofudp extends js.Object {
     * @param callback Called when the configuration operation completes.
     */
   def setMulticastTimeToLive(socketId: integer, ttl: integer, callback: js.Function1[/* result */ integer, Unit]): Unit = js.native
+  
   /**
     * Pauses or unpauses a socket. A paused socket is blocked from firing
     * onReceive events.
@@ -203,6 +218,7 @@ trait Typeofudp extends js.Object {
     */
   def setPaused(socketId: integer, paused: Boolean): Unit = js.native
   def setPaused(socketId: integer, paused: Boolean, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Updates the socket properties.
     *
@@ -214,4 +230,3 @@ trait Typeofudp extends js.Object {
   def update(socketId: integer, properties: SocketProperties): Unit = js.native
   def update(socketId: integer, properties: SocketProperties, callback: js.Function0[Unit]): Unit = js.native
 }
-

@@ -5,10 +5,11 @@ import typings.passport.anon.PauseStream
 import typings.passport.anon.UserProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthorizeOptions] extends js.Object {
+  
   def authenticate(strategy: String): AuthenticateRet = js.native
   def authenticate(strategy: String, callback: js.Function1[/* repeated */ js.Any, _]): AuthenticateRet = js.native
   def authenticate(strategy: String, options: AuthenticateOptions): AuthenticateRet = js.native
@@ -25,6 +26,7 @@ trait Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthorizeOptio
   def authenticate(strategy: Strategy, callback: js.Function1[/* repeated */ js.Any, _]): AuthenticateRet = js.native
   def authenticate(strategy: Strategy, options: AuthenticateOptions): AuthenticateRet = js.native
   def authenticate(strategy: Strategy, options: AuthenticateOptions, callback: js.Function1[/* repeated */ js.Any, _]): AuthenticateRet = js.native
+  
   def authorize(strategy: String): AuthorizeRet = js.native
   def authorize(strategy: String, callback: js.Function1[/* repeated */ js.Any, _]): AuthorizeRet = js.native
   def authorize(strategy: String, options: AuthorizeOptions): AuthorizeRet = js.native
@@ -37,6 +39,7 @@ trait Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthorizeOptio
     options: AuthorizeOptions,
     callback: js.Function1[/* repeated */ js.Any, _]
   ): AuthorizeRet = js.native
+  
   def deserializeUser[TUser, TID](
     fn: js.Function2[
       /* id */ TID, 
@@ -52,9 +55,12 @@ trait Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthorizeOptio
       Unit
     ]
   ): Unit = js.native
+  
   def framework[X, Y, Z](fw: Framework[X, Y, Z]): Authenticator[X, Y, Z, AuthenticateOptions] = js.native
+  
   def initialize(): InitializeRet = js.native
   def initialize(options: UserProperty): InitializeRet = js.native
+  
   def serializeUser[TUser, TID](
     fn: js.Function2[
       /* user */ TUser, 
@@ -70,8 +76,10 @@ trait Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthorizeOptio
       Unit
     ]
   ): Unit = js.native
+  
   def session(): AuthenticateRet = js.native
   def session(options: PauseStream): AuthenticateRet = js.native
+  
   def transformAuthInfo(
     fn: js.Function2[
       /* info */ js.Any, 
@@ -79,8 +87,9 @@ trait Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthorizeOptio
       Unit
     ]
   ): Unit = js.native
+  
   def unuse(name: String): this.type = js.native
+  
   def use(name: String, strategy: Strategy): this.type = js.native
   def use(strategy: Strategy): this.type = js.native
 }
-

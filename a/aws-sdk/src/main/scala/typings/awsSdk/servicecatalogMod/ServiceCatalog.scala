@@ -1,17 +1,16 @@
 package typings.awsSdk.servicecatalogMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServiceCatalog extends Service {
-  @JSName("config")
-  var config_ServiceCatalog: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Accepts an offer to share the specified portfolio.
     */
@@ -25,6 +24,7 @@ trait ServiceCatalog extends Service {
     params: AcceptPortfolioShareInput,
     callback: js.Function2[/* err */ AWSError, /* data */ AcceptPortfolioShareOutput, Unit]
   ): Request[AcceptPortfolioShareOutput, AWSError] = js.native
+  
   /**
     * Associates the specified budget with the specified resource.
     */
@@ -38,6 +38,7 @@ trait ServiceCatalog extends Service {
     params: AssociateBudgetWithResourceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateBudgetWithResourceOutput, Unit]
   ): Request[AssociateBudgetWithResourceOutput, AWSError] = js.native
+  
   /**
     * Associates the specified principal ARN with the specified portfolio.
     */
@@ -51,6 +52,7 @@ trait ServiceCatalog extends Service {
     params: AssociatePrincipalWithPortfolioInput,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociatePrincipalWithPortfolioOutput, Unit]
   ): Request[AssociatePrincipalWithPortfolioOutput, AWSError] = js.native
+  
   /**
     * Associates the specified product with the specified portfolio. A delegated admin is authorized to invoke this command.
     */
@@ -64,6 +66,7 @@ trait ServiceCatalog extends Service {
     params: AssociateProductWithPortfolioInput,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateProductWithPortfolioOutput, Unit]
   ): Request[AssociateProductWithPortfolioOutput, AWSError] = js.native
+  
   /**
     * Associates a self-service action with a provisioning artifact.
     */
@@ -87,6 +90,7 @@ trait ServiceCatalog extends Service {
       Unit
     ]
   ): Request[AssociateServiceActionWithProvisioningArtifactOutput, AWSError] = js.native
+  
   /**
     * Associate the specified TagOption with the specified portfolio or product.
     */
@@ -100,6 +104,7 @@ trait ServiceCatalog extends Service {
     params: AssociateTagOptionWithResourceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateTagOptionWithResourceOutput, Unit]
   ): Request[AssociateTagOptionWithResourceOutput, AWSError] = js.native
+  
   /**
     * Associates multiple self-service actions with provisioning artifacts.
     */
@@ -123,6 +128,7 @@ trait ServiceCatalog extends Service {
       Unit
     ]
   ): Request[BatchAssociateServiceActionWithProvisioningArtifactOutput, AWSError] = js.native
+  
   /**
     * Disassociates a batch of self-service actions from the specified provisioning artifact.
     */
@@ -146,6 +152,10 @@ trait ServiceCatalog extends Service {
       Unit
     ]
   ): Request[BatchDisassociateServiceActionFromProvisioningArtifactOutput, AWSError] = js.native
+  
+  @JSName("config")
+  var config_ServiceCatalog: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Copies the specified source product to the specified target product or a new product. You can copy a product to the same account or another account. You can copy a product to the same region or another region. This operation is performed asynchronously. To track the progress of the operation, use DescribeCopyProductStatus.
     */
@@ -159,6 +169,7 @@ trait ServiceCatalog extends Service {
     params: CopyProductInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CopyProductOutput, Unit]
   ): Request[CopyProductOutput, AWSError] = js.native
+  
   /**
     * Creates a constraint. A delegated admin is authorized to invoke this command.
     */
@@ -172,6 +183,7 @@ trait ServiceCatalog extends Service {
     params: CreateConstraintInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateConstraintOutput, Unit]
   ): Request[CreateConstraintOutput, AWSError] = js.native
+  
   /**
     * Creates a portfolio. A delegated admin is authorized to invoke this command.
     */
@@ -185,19 +197,21 @@ trait ServiceCatalog extends Service {
     params: CreatePortfolioInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePortfolioOutput, Unit]
   ): Request[CreatePortfolioOutput, AWSError] = js.native
+  
   /**
-    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node. You can't share a shared resource. This includes portfolios that contain a shared product.
+    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the management account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node. You can't share a shared resource. This includes portfolios that contain a shared product.
     */
   def createPortfolioShare(): Request[CreatePortfolioShareOutput, AWSError] = js.native
   def createPortfolioShare(callback: js.Function2[/* err */ AWSError, /* data */ CreatePortfolioShareOutput, Unit]): Request[CreatePortfolioShareOutput, AWSError] = js.native
   /**
-    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node. You can't share a shared resource. This includes portfolios that contain a shared product.
+    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the management account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node. You can't share a shared resource. This includes portfolios that contain a shared product.
     */
   def createPortfolioShare(params: CreatePortfolioShareInput): Request[CreatePortfolioShareOutput, AWSError] = js.native
   def createPortfolioShare(
     params: CreatePortfolioShareInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePortfolioShareOutput, Unit]
   ): Request[CreatePortfolioShareOutput, AWSError] = js.native
+  
   /**
     * Creates a product. A delegated admin is authorized to invoke this command.
     */
@@ -211,6 +225,7 @@ trait ServiceCatalog extends Service {
     params: CreateProductInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProductOutput, Unit]
   ): Request[CreateProductOutput, AWSError] = js.native
+  
   /**
     * Creates a plan. A plan includes the list of resources to be created (when provisioning a new product) or modified (when updating a provisioned product) when the plan is executed. You can create one plan per provisioned product. To create a plan for an existing provisioned product, the product status must be AVAILBLE or TAINTED. To view the resource changes in the change set, use DescribeProvisionedProductPlan. To create or modify the provisioned product, use ExecuteProvisionedProductPlan.
     */
@@ -224,6 +239,7 @@ trait ServiceCatalog extends Service {
     params: CreateProvisionedProductPlanInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProvisionedProductPlanOutput, Unit]
   ): Request[CreateProvisionedProductPlanOutput, AWSError] = js.native
+  
   /**
     * Creates a provisioning artifact (also known as a version) for the specified product. You cannot create a provisioning artifact for a product that was shared with you.
     */
@@ -237,6 +253,7 @@ trait ServiceCatalog extends Service {
     params: CreateProvisioningArtifactInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProvisioningArtifactOutput, Unit]
   ): Request[CreateProvisioningArtifactOutput, AWSError] = js.native
+  
   /**
     * Creates a self-service action.
     */
@@ -250,6 +267,7 @@ trait ServiceCatalog extends Service {
     params: CreateServiceActionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateServiceActionOutput, Unit]
   ): Request[CreateServiceActionOutput, AWSError] = js.native
+  
   /**
     * Creates a TagOption.
     */
@@ -263,6 +281,7 @@ trait ServiceCatalog extends Service {
     params: CreateTagOptionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateTagOptionOutput, Unit]
   ): Request[CreateTagOptionOutput, AWSError] = js.native
+  
   /**
     * Deletes the specified constraint. A delegated admin is authorized to invoke this command.
     */
@@ -276,6 +295,7 @@ trait ServiceCatalog extends Service {
     params: DeleteConstraintInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteConstraintOutput, Unit]
   ): Request[DeleteConstraintOutput, AWSError] = js.native
+  
   /**
     * Deletes the specified portfolio. You cannot delete a portfolio if it was shared with you or if it has associated products, users, constraints, or shared accounts. A delegated admin is authorized to invoke this command.
     */
@@ -289,19 +309,21 @@ trait ServiceCatalog extends Service {
     params: DeletePortfolioInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePortfolioOutput, Unit]
   ): Request[DeletePortfolioOutput, AWSError] = js.native
+  
   /**
-    * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an organization or by a delegated administrator. Note that if a delegated admin is de-registered, portfolio shares created from that account are removed.
+    * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the management account of an organization or by a delegated administrator. Note that if a delegated admin is de-registered, portfolio shares created from that account are removed.
     */
   def deletePortfolioShare(): Request[DeletePortfolioShareOutput, AWSError] = js.native
   def deletePortfolioShare(callback: js.Function2[/* err */ AWSError, /* data */ DeletePortfolioShareOutput, Unit]): Request[DeletePortfolioShareOutput, AWSError] = js.native
   /**
-    * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an organization or by a delegated administrator. Note that if a delegated admin is de-registered, portfolio shares created from that account are removed.
+    * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the management account of an organization or by a delegated administrator. Note that if a delegated admin is de-registered, portfolio shares created from that account are removed.
     */
   def deletePortfolioShare(params: DeletePortfolioShareInput): Request[DeletePortfolioShareOutput, AWSError] = js.native
   def deletePortfolioShare(
     params: DeletePortfolioShareInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePortfolioShareOutput, Unit]
   ): Request[DeletePortfolioShareOutput, AWSError] = js.native
+  
   /**
     * Deletes the specified product. You cannot delete a product if it was shared with you or is associated with a portfolio. A delegated admin is authorized to invoke this command.
     */
@@ -315,6 +337,7 @@ trait ServiceCatalog extends Service {
     params: DeleteProductInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteProductOutput, Unit]
   ): Request[DeleteProductOutput, AWSError] = js.native
+  
   /**
     * Deletes the specified plan.
     */
@@ -328,6 +351,7 @@ trait ServiceCatalog extends Service {
     params: DeleteProvisionedProductPlanInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteProvisionedProductPlanOutput, Unit]
   ): Request[DeleteProvisionedProductPlanOutput, AWSError] = js.native
+  
   /**
     * Deletes the specified provisioning artifact (also known as a version) for the specified product. You cannot delete a provisioning artifact associated with a product that was shared with you. You cannot delete the last provisioning artifact for a product, because a product must have at least one provisioning artifact.
     */
@@ -341,6 +365,7 @@ trait ServiceCatalog extends Service {
     params: DeleteProvisioningArtifactInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteProvisioningArtifactOutput, Unit]
   ): Request[DeleteProvisioningArtifactOutput, AWSError] = js.native
+  
   /**
     * Deletes a self-service action.
     */
@@ -354,6 +379,7 @@ trait ServiceCatalog extends Service {
     params: DeleteServiceActionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteServiceActionOutput, Unit]
   ): Request[DeleteServiceActionOutput, AWSError] = js.native
+  
   /**
     * Deletes the specified TagOption. You cannot delete a TagOption if it is associated with a product or portfolio.
     */
@@ -367,6 +393,7 @@ trait ServiceCatalog extends Service {
     params: DeleteTagOptionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteTagOptionOutput, Unit]
   ): Request[DeleteTagOptionOutput, AWSError] = js.native
+  
   /**
     * Gets information about the specified constraint.
     */
@@ -380,6 +407,7 @@ trait ServiceCatalog extends Service {
     params: DescribeConstraintInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeConstraintOutput, Unit]
   ): Request[DescribeConstraintOutput, AWSError] = js.native
+  
   /**
     * Gets the status of the specified copy product operation.
     */
@@ -393,6 +421,7 @@ trait ServiceCatalog extends Service {
     params: DescribeCopyProductStatusInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCopyProductStatusOutput, Unit]
   ): Request[DescribeCopyProductStatusOutput, AWSError] = js.native
+  
   /**
     * Gets information about the specified portfolio. A delegated admin is authorized to invoke this command.
     */
@@ -406,19 +435,21 @@ trait ServiceCatalog extends Service {
     params: DescribePortfolioInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePortfolioOutput, Unit]
   ): Request[DescribePortfolioOutput, AWSError] = js.native
+  
   /**
-    * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization or by a delegated admin.
+    * Gets the status of the specified portfolio share operation. This API can only be called by the management account in the organization or by a delegated admin.
     */
   def describePortfolioShareStatus(): Request[DescribePortfolioShareStatusOutput, AWSError] = js.native
   def describePortfolioShareStatus(callback: js.Function2[/* err */ AWSError, /* data */ DescribePortfolioShareStatusOutput, Unit]): Request[DescribePortfolioShareStatusOutput, AWSError] = js.native
   /**
-    * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization or by a delegated admin.
+    * Gets the status of the specified portfolio share operation. This API can only be called by the management account in the organization or by a delegated admin.
     */
   def describePortfolioShareStatus(params: DescribePortfolioShareStatusInput): Request[DescribePortfolioShareStatusOutput, AWSError] = js.native
   def describePortfolioShareStatus(
     params: DescribePortfolioShareStatusInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePortfolioShareStatusOutput, Unit]
   ): Request[DescribePortfolioShareStatusOutput, AWSError] = js.native
+  
   /**
     * Gets information about the specified product.
     */
@@ -432,6 +463,7 @@ trait ServiceCatalog extends Service {
     params: DescribeProductInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProductOutput, Unit]
   ): Request[DescribeProductOutput, AWSError] = js.native
+  
   /**
     * Gets information about the specified product. This operation is run with administrator access.
     */
@@ -445,6 +477,7 @@ trait ServiceCatalog extends Service {
     params: DescribeProductAsAdminInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProductAsAdminOutput, Unit]
   ): Request[DescribeProductAsAdminOutput, AWSError] = js.native
+  
   /**
     * Gets information about the specified product.
     */
@@ -458,6 +491,7 @@ trait ServiceCatalog extends Service {
     params: DescribeProductViewInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProductViewOutput, Unit]
   ): Request[DescribeProductViewOutput, AWSError] = js.native
+  
   /**
     * Gets information about the specified provisioned product.
     */
@@ -471,6 +505,7 @@ trait ServiceCatalog extends Service {
     params: DescribeProvisionedProductInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProvisionedProductOutput, Unit]
   ): Request[DescribeProvisionedProductOutput, AWSError] = js.native
+  
   /**
     * Gets information about the resource changes for the specified plan.
     */
@@ -484,6 +519,7 @@ trait ServiceCatalog extends Service {
     params: DescribeProvisionedProductPlanInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProvisionedProductPlanOutput, Unit]
   ): Request[DescribeProvisionedProductPlanOutput, AWSError] = js.native
+  
   /**
     * Gets information about the specified provisioning artifact (also known as a version) for the specified product.
     */
@@ -497,6 +533,7 @@ trait ServiceCatalog extends Service {
     params: DescribeProvisioningArtifactInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProvisioningArtifactOutput, Unit]
   ): Request[DescribeProvisioningArtifactOutput, AWSError] = js.native
+  
   /**
     * Gets information about the configuration required to provision the specified product using the specified provisioning artifact. If the output contains a TagOption key with an empty list of values, there is a TagOption conflict for that key. The end user cannot take action to fix the conflict, and launch is not blocked. In subsequent calls to ProvisionProduct, do not include conflicted TagOption keys as tags, or this causes the error "Parameter validation failed: Missing required parameter in Tags[N]:Value". Tag the provisioned product with the value sc-tagoption-conflict-portfolioId-productId.
     */
@@ -510,6 +547,7 @@ trait ServiceCatalog extends Service {
     params: DescribeProvisioningParametersInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProvisioningParametersOutput, Unit]
   ): Request[DescribeProvisioningParametersOutput, AWSError] = js.native
+  
   /**
     * Gets information about the specified request operation. Use this operation after calling a request operation (for example, ProvisionProduct, TerminateProvisionedProduct, or UpdateProvisionedProduct).   If a provisioned product was transferred to a new owner using UpdateProvisionedProductProperties, the new owner will be able to describe all past records for that product. The previous owner will no longer be able to describe the records, but will be able to use ListRecordHistory to see the product's history from when he was the owner. 
     */
@@ -523,6 +561,7 @@ trait ServiceCatalog extends Service {
     params: DescribeRecordInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRecordOutput, Unit]
   ): Request[DescribeRecordOutput, AWSError] = js.native
+  
   /**
     * Describes a self-service action.
     */
@@ -536,6 +575,7 @@ trait ServiceCatalog extends Service {
     params: DescribeServiceActionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeServiceActionOutput, Unit]
   ): Request[DescribeServiceActionOutput, AWSError] = js.native
+  
   /**
     * Finds the default parameters for a specific self-service action on a specific provisioned product and returns a map of the results to the user.
     */
@@ -551,6 +591,7 @@ trait ServiceCatalog extends Service {
     params: DescribeServiceActionExecutionParametersInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeServiceActionExecutionParametersOutput, Unit]
   ): Request[DescribeServiceActionExecutionParametersOutput, AWSError] = js.native
+  
   /**
     * Gets information about the specified TagOption.
     */
@@ -564,19 +605,21 @@ trait ServiceCatalog extends Service {
     params: DescribeTagOptionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTagOptionOutput, Unit]
   ): Request[DescribeTagOptionOutput, AWSError] = js.native
+  
   /**
-    * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization. This API can't be invoked if there are active delegated administrators in the organization. Note that a delegated administrator is not authorized to invoke DisableAWSOrganizationsAccess.
+    * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the management account in the organization. This API can't be invoked if there are active delegated administrators in the organization. Note that a delegated administrator is not authorized to invoke DisableAWSOrganizationsAccess.
     */
   def disableAWSOrganizationsAccess(): Request[DisableAWSOrganizationsAccessOutput, AWSError] = js.native
   def disableAWSOrganizationsAccess(callback: js.Function2[/* err */ AWSError, /* data */ DisableAWSOrganizationsAccessOutput, Unit]): Request[DisableAWSOrganizationsAccessOutput, AWSError] = js.native
   /**
-    * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization. This API can't be invoked if there are active delegated administrators in the organization. Note that a delegated administrator is not authorized to invoke DisableAWSOrganizationsAccess.
+    * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the management account in the organization. This API can't be invoked if there are active delegated administrators in the organization. Note that a delegated administrator is not authorized to invoke DisableAWSOrganizationsAccess.
     */
   def disableAWSOrganizationsAccess(params: DisableAWSOrganizationsAccessInput): Request[DisableAWSOrganizationsAccessOutput, AWSError] = js.native
   def disableAWSOrganizationsAccess(
     params: DisableAWSOrganizationsAccessInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DisableAWSOrganizationsAccessOutput, Unit]
   ): Request[DisableAWSOrganizationsAccessOutput, AWSError] = js.native
+  
   /**
     * Disassociates the specified budget from the specified resource.
     */
@@ -590,6 +633,7 @@ trait ServiceCatalog extends Service {
     params: DisassociateBudgetFromResourceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateBudgetFromResourceOutput, Unit]
   ): Request[DisassociateBudgetFromResourceOutput, AWSError] = js.native
+  
   /**
     * Disassociates a previously associated principal ARN from a specified portfolio.
     */
@@ -605,6 +649,7 @@ trait ServiceCatalog extends Service {
     params: DisassociatePrincipalFromPortfolioInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociatePrincipalFromPortfolioOutput, Unit]
   ): Request[DisassociatePrincipalFromPortfolioOutput, AWSError] = js.native
+  
   /**
     * Disassociates the specified product from the specified portfolio.  A delegated admin is authorized to invoke this command.
     */
@@ -620,6 +665,7 @@ trait ServiceCatalog extends Service {
     params: DisassociateProductFromPortfolioInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateProductFromPortfolioOutput, Unit]
   ): Request[DisassociateProductFromPortfolioOutput, AWSError] = js.native
+  
   /**
     * Disassociates the specified self-service action association from the specified provisioning artifact.
     */
@@ -643,6 +689,7 @@ trait ServiceCatalog extends Service {
       Unit
     ]
   ): Request[DisassociateServiceActionFromProvisioningArtifactOutput, AWSError] = js.native
+  
   /**
     * Disassociates the specified TagOption from the specified resource.
     */
@@ -658,19 +705,21 @@ trait ServiceCatalog extends Service {
     params: DisassociateTagOptionFromResourceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateTagOptionFromResourceOutput, Unit]
   ): Request[DisassociateTagOptionFromResourceOutput, AWSError] = js.native
+  
   /**
-    * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure. Note that a delegated administrator is not authorized to invoke EnableAWSOrganizationsAccess.
+    * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the management account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure. Note that a delegated administrator is not authorized to invoke EnableAWSOrganizationsAccess.
     */
   def enableAWSOrganizationsAccess(): Request[EnableAWSOrganizationsAccessOutput, AWSError] = js.native
   def enableAWSOrganizationsAccess(callback: js.Function2[/* err */ AWSError, /* data */ EnableAWSOrganizationsAccessOutput, Unit]): Request[EnableAWSOrganizationsAccessOutput, AWSError] = js.native
   /**
-    * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure. Note that a delegated administrator is not authorized to invoke EnableAWSOrganizationsAccess.
+    * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the management account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure. Note that a delegated administrator is not authorized to invoke EnableAWSOrganizationsAccess.
     */
   def enableAWSOrganizationsAccess(params: EnableAWSOrganizationsAccessInput): Request[EnableAWSOrganizationsAccessOutput, AWSError] = js.native
   def enableAWSOrganizationsAccess(
     params: EnableAWSOrganizationsAccessInput,
     callback: js.Function2[/* err */ AWSError, /* data */ EnableAWSOrganizationsAccessOutput, Unit]
   ): Request[EnableAWSOrganizationsAccessOutput, AWSError] = js.native
+  
   /**
     * Provisions or modifies a product based on the resource changes for the specified plan.
     */
@@ -684,6 +733,7 @@ trait ServiceCatalog extends Service {
     params: ExecuteProvisionedProductPlanInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ExecuteProvisionedProductPlanOutput, Unit]
   ): Request[ExecuteProvisionedProductPlanOutput, AWSError] = js.native
+  
   /**
     * Executes a self-service action against a provisioned product.
     */
@@ -699,19 +749,49 @@ trait ServiceCatalog extends Service {
     params: ExecuteProvisionedProductServiceActionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ExecuteProvisionedProductServiceActionOutput, Unit]
   ): Request[ExecuteProvisionedProductServiceActionOutput, AWSError] = js.native
+  
   /**
-    * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization or by a delegated admin.
+    * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the management account in the organization or by a delegated admin.
     */
   def getAWSOrganizationsAccessStatus(): Request[GetAWSOrganizationsAccessStatusOutput, AWSError] = js.native
   def getAWSOrganizationsAccessStatus(callback: js.Function2[/* err */ AWSError, /* data */ GetAWSOrganizationsAccessStatusOutput, Unit]): Request[GetAWSOrganizationsAccessStatusOutput, AWSError] = js.native
   /**
-    * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization or by a delegated admin.
+    * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the management account in the organization or by a delegated admin.
     */
   def getAWSOrganizationsAccessStatus(params: GetAWSOrganizationsAccessStatusInput): Request[GetAWSOrganizationsAccessStatusOutput, AWSError] = js.native
   def getAWSOrganizationsAccessStatus(
     params: GetAWSOrganizationsAccessStatusInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAWSOrganizationsAccessStatusOutput, Unit]
   ): Request[GetAWSOrganizationsAccessStatusOutput, AWSError] = js.native
+  
+  /**
+    * This API takes either a ProvisonedProductId or a ProvisionedProductName, along with a list of one or more output keys, and responds with the key/value pairs of those outputs.
+    */
+  def getProvisionedProductOutputs(): Request[GetProvisionedProductOutputsOutput, AWSError] = js.native
+  def getProvisionedProductOutputs(callback: js.Function2[/* err */ AWSError, /* data */ GetProvisionedProductOutputsOutput, Unit]): Request[GetProvisionedProductOutputsOutput, AWSError] = js.native
+  /**
+    * This API takes either a ProvisonedProductId or a ProvisionedProductName, along with a list of one or more output keys, and responds with the key/value pairs of those outputs.
+    */
+  def getProvisionedProductOutputs(params: GetProvisionedProductOutputsInput): Request[GetProvisionedProductOutputsOutput, AWSError] = js.native
+  def getProvisionedProductOutputs(
+    params: GetProvisionedProductOutputsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetProvisionedProductOutputsOutput, Unit]
+  ): Request[GetProvisionedProductOutputsOutput, AWSError] = js.native
+  
+  /**
+    * Requests the import of a resource as a Service Catalog provisioned product that is associated to a Service Catalog product and provisioning artifact. Once imported all supported Service Catalog governance actions are supported on the provisioned product. Resource import only supports CloudFormation stack ARNs. CloudFormation StackSets and non-root nested stacks are not supported. The CloudFormation stack must have one of the following statuses to be imported: CREATE_COMPLETE, UPDATE_COMPLETE, UPDATE_ROLLBACK_COMPLETE, IMPORT_COMPLETE, IMPORT_ROLLBACK_COMPLETE. Import of the resource requires that the CloudFormation stack template matches the associated Service Catalog product provisioning artifact. 
+    */
+  def importAsProvisionedProduct(): Request[ImportAsProvisionedProductOutput, AWSError] = js.native
+  def importAsProvisionedProduct(callback: js.Function2[/* err */ AWSError, /* data */ ImportAsProvisionedProductOutput, Unit]): Request[ImportAsProvisionedProductOutput, AWSError] = js.native
+  /**
+    * Requests the import of a resource as a Service Catalog provisioned product that is associated to a Service Catalog product and provisioning artifact. Once imported all supported Service Catalog governance actions are supported on the provisioned product. Resource import only supports CloudFormation stack ARNs. CloudFormation StackSets and non-root nested stacks are not supported. The CloudFormation stack must have one of the following statuses to be imported: CREATE_COMPLETE, UPDATE_COMPLETE, UPDATE_ROLLBACK_COMPLETE, IMPORT_COMPLETE, IMPORT_ROLLBACK_COMPLETE. Import of the resource requires that the CloudFormation stack template matches the associated Service Catalog product provisioning artifact. 
+    */
+  def importAsProvisionedProduct(params: ImportAsProvisionedProductInput): Request[ImportAsProvisionedProductOutput, AWSError] = js.native
+  def importAsProvisionedProduct(
+    params: ImportAsProvisionedProductInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ImportAsProvisionedProductOutput, Unit]
+  ): Request[ImportAsProvisionedProductOutput, AWSError] = js.native
+  
   /**
     * Lists all portfolios for which sharing was accepted by this account.
     */
@@ -725,6 +805,7 @@ trait ServiceCatalog extends Service {
     params: ListAcceptedPortfolioSharesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAcceptedPortfolioSharesOutput, Unit]
   ): Request[ListAcceptedPortfolioSharesOutput, AWSError] = js.native
+  
   /**
     * Lists all the budgets associated to the specified resource.
     */
@@ -738,6 +819,7 @@ trait ServiceCatalog extends Service {
     params: ListBudgetsForResourceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBudgetsForResourceOutput, Unit]
   ): Request[ListBudgetsForResourceOutput, AWSError] = js.native
+  
   /**
     * Lists the constraints for the specified portfolio and product.
     */
@@ -751,6 +833,7 @@ trait ServiceCatalog extends Service {
     params: ListConstraintsForPortfolioInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListConstraintsForPortfolioOutput, Unit]
   ): Request[ListConstraintsForPortfolioOutput, AWSError] = js.native
+  
   /**
     * Lists the paths to the specified product. A path is how the user has access to a specified product, and is necessary when provisioning a product. A path also determines the constraints put on the product.
     */
@@ -764,19 +847,21 @@ trait ServiceCatalog extends Service {
     params: ListLaunchPathsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListLaunchPathsOutput, Unit]
   ): Request[ListLaunchPathsOutput, AWSError] = js.native
+  
   /**
-    * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization or by a delegated admin. If a delegated admin is de-registered, they can no longer perform this operation.
+    * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the management account in the organization or by a delegated admin. If a delegated admin is de-registered, they can no longer perform this operation.
     */
   def listOrganizationPortfolioAccess(): Request[ListOrganizationPortfolioAccessOutput, AWSError] = js.native
   def listOrganizationPortfolioAccess(callback: js.Function2[/* err */ AWSError, /* data */ ListOrganizationPortfolioAccessOutput, Unit]): Request[ListOrganizationPortfolioAccessOutput, AWSError] = js.native
   /**
-    * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization or by a delegated admin. If a delegated admin is de-registered, they can no longer perform this operation.
+    * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the management account in the organization or by a delegated admin. If a delegated admin is de-registered, they can no longer perform this operation.
     */
   def listOrganizationPortfolioAccess(params: ListOrganizationPortfolioAccessInput): Request[ListOrganizationPortfolioAccessOutput, AWSError] = js.native
   def listOrganizationPortfolioAccess(
     params: ListOrganizationPortfolioAccessInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListOrganizationPortfolioAccessOutput, Unit]
   ): Request[ListOrganizationPortfolioAccessOutput, AWSError] = js.native
+  
   /**
     * Lists the account IDs that have access to the specified portfolio. A delegated admin can list the accounts that have access to the shared portfolio. Note that if a delegated admin is de-registered, they can no longer perform this operation.
     */
@@ -790,6 +875,7 @@ trait ServiceCatalog extends Service {
     params: ListPortfolioAccessInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPortfolioAccessOutput, Unit]
   ): Request[ListPortfolioAccessOutput, AWSError] = js.native
+  
   /**
     * Lists all portfolios in the catalog.
     */
@@ -803,6 +889,7 @@ trait ServiceCatalog extends Service {
     params: ListPortfoliosInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPortfoliosOutput, Unit]
   ): Request[ListPortfoliosOutput, AWSError] = js.native
+  
   /**
     * Lists all portfolios that the specified product is associated with.
     */
@@ -816,6 +903,7 @@ trait ServiceCatalog extends Service {
     params: ListPortfoliosForProductInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPortfoliosForProductOutput, Unit]
   ): Request[ListPortfoliosForProductOutput, AWSError] = js.native
+  
   /**
     * Lists all principal ARNs associated with the specified portfolio.
     */
@@ -829,6 +917,7 @@ trait ServiceCatalog extends Service {
     params: ListPrincipalsForPortfolioInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPrincipalsForPortfolioOutput, Unit]
   ): Request[ListPrincipalsForPortfolioOutput, AWSError] = js.native
+  
   /**
     * Lists the plans for the specified provisioned product or all plans to which the user has access.
     */
@@ -842,6 +931,7 @@ trait ServiceCatalog extends Service {
     params: ListProvisionedProductPlansInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListProvisionedProductPlansOutput, Unit]
   ): Request[ListProvisionedProductPlansOutput, AWSError] = js.native
+  
   /**
     * Lists all provisioning artifacts (also known as versions) for the specified product.
     */
@@ -855,6 +945,7 @@ trait ServiceCatalog extends Service {
     params: ListProvisioningArtifactsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListProvisioningArtifactsOutput, Unit]
   ): Request[ListProvisioningArtifactsOutput, AWSError] = js.native
+  
   /**
     * Lists all provisioning artifacts (also known as versions) for the specified self-service action.
     */
@@ -870,6 +961,7 @@ trait ServiceCatalog extends Service {
     params: ListProvisioningArtifactsForServiceActionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListProvisioningArtifactsForServiceActionOutput, Unit]
   ): Request[ListProvisioningArtifactsForServiceActionOutput, AWSError] = js.native
+  
   /**
     * Lists the specified requests or all performed requests.
     */
@@ -883,6 +975,7 @@ trait ServiceCatalog extends Service {
     params: ListRecordHistoryInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRecordHistoryOutput, Unit]
   ): Request[ListRecordHistoryOutput, AWSError] = js.native
+  
   /**
     * Lists the resources associated with the specified TagOption.
     */
@@ -896,6 +989,7 @@ trait ServiceCatalog extends Service {
     params: ListResourcesForTagOptionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListResourcesForTagOptionOutput, Unit]
   ): Request[ListResourcesForTagOptionOutput, AWSError] = js.native
+  
   /**
     * Lists all self-service actions.
     */
@@ -909,6 +1003,7 @@ trait ServiceCatalog extends Service {
     params: ListServiceActionsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListServiceActionsOutput, Unit]
   ): Request[ListServiceActionsOutput, AWSError] = js.native
+  
   /**
     * Returns a paginated list of self-service actions associated with the specified Product ID and Provisioning Artifact ID.
     */
@@ -924,6 +1019,7 @@ trait ServiceCatalog extends Service {
     params: ListServiceActionsForProvisioningArtifactInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListServiceActionsForProvisioningArtifactOutput, Unit]
   ): Request[ListServiceActionsForProvisioningArtifactOutput, AWSError] = js.native
+  
   /**
     * Returns summary information about stack instances that are associated with the specified CFN_STACKSET type provisioned product. You can filter for stack instances that are associated with a specific AWS account name or region. 
     */
@@ -939,6 +1035,7 @@ trait ServiceCatalog extends Service {
     params: ListStackInstancesForProvisionedProductInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListStackInstancesForProvisionedProductOutput, Unit]
   ): Request[ListStackInstancesForProvisionedProductOutput, AWSError] = js.native
+  
   /**
     * Lists the specified TagOptions or all TagOptions.
     */
@@ -952,6 +1049,7 @@ trait ServiceCatalog extends Service {
     params: ListTagOptionsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagOptionsOutput, Unit]
   ): Request[ListTagOptionsOutput, AWSError] = js.native
+  
   /**
     * Provisions the specified product. A provisioned product is a resourced instance of a product. For example, provisioning a product based on a CloudFormation template launches a CloudFormation stack and its underlying resources. You can check the status of this request using DescribeRecord. If the request contains a tag key with an empty list of values, there is a tag conflict for that key. Do not include conflicted keys as tags, or this causes the error "Parameter validation failed: Missing required parameter in Tags[N]:Value".
     */
@@ -965,6 +1063,7 @@ trait ServiceCatalog extends Service {
     params: ProvisionProductInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ProvisionProductOutput, Unit]
   ): Request[ProvisionProductOutput, AWSError] = js.native
+  
   /**
     * Rejects an offer to share the specified portfolio.
     */
@@ -978,6 +1077,7 @@ trait ServiceCatalog extends Service {
     params: RejectPortfolioShareInput,
     callback: js.Function2[/* err */ AWSError, /* data */ RejectPortfolioShareOutput, Unit]
   ): Request[RejectPortfolioShareOutput, AWSError] = js.native
+  
   /**
     * Lists the provisioned products that are available (not terminated). To use additional filtering, see SearchProvisionedProducts.
     */
@@ -991,6 +1091,7 @@ trait ServiceCatalog extends Service {
     params: ScanProvisionedProductsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ScanProvisionedProductsOutput, Unit]
   ): Request[ScanProvisionedProductsOutput, AWSError] = js.native
+  
   /**
     * Gets information about the products to which the caller has access.
     */
@@ -1004,6 +1105,7 @@ trait ServiceCatalog extends Service {
     params: SearchProductsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchProductsOutput, Unit]
   ): Request[SearchProductsOutput, AWSError] = js.native
+  
   /**
     * Gets information about the products for the specified portfolio or all products.
     */
@@ -1017,6 +1119,7 @@ trait ServiceCatalog extends Service {
     params: SearchProductsAsAdminInput,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchProductsAsAdminOutput, Unit]
   ): Request[SearchProductsAsAdminOutput, AWSError] = js.native
+  
   /**
     * Gets information about the provisioned products that meet the specified criteria.
     */
@@ -1030,6 +1133,7 @@ trait ServiceCatalog extends Service {
     params: SearchProvisionedProductsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchProvisionedProductsOutput, Unit]
   ): Request[SearchProvisionedProductsOutput, AWSError] = js.native
+  
   /**
     * Terminates the specified provisioned product. This operation does not delete any records associated with the provisioned product. You can check the status of this request using DescribeRecord.
     */
@@ -1043,6 +1147,7 @@ trait ServiceCatalog extends Service {
     params: TerminateProvisionedProductInput,
     callback: js.Function2[/* err */ AWSError, /* data */ TerminateProvisionedProductOutput, Unit]
   ): Request[TerminateProvisionedProductOutput, AWSError] = js.native
+  
   /**
     * Updates the specified constraint.
     */
@@ -1056,6 +1161,7 @@ trait ServiceCatalog extends Service {
     params: UpdateConstraintInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateConstraintOutput, Unit]
   ): Request[UpdateConstraintOutput, AWSError] = js.native
+  
   /**
     * Updates the specified portfolio. You cannot update a product that was shared with you.
     */
@@ -1069,6 +1175,7 @@ trait ServiceCatalog extends Service {
     params: UpdatePortfolioInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePortfolioOutput, Unit]
   ): Request[UpdatePortfolioOutput, AWSError] = js.native
+  
   /**
     * Updates the specified product.
     */
@@ -1082,6 +1189,7 @@ trait ServiceCatalog extends Service {
     params: UpdateProductInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateProductOutput, Unit]
   ): Request[UpdateProductOutput, AWSError] = js.native
+  
   /**
     * Requests updates to the configuration of the specified provisioned product. If there are tags associated with the object, they cannot be updated or added. Depending on the specific updates requested, this operation can update with no interruption, with some interruption, or replace the provisioned product entirely. You can check the status of this request using DescribeRecord.
     */
@@ -1095,6 +1203,7 @@ trait ServiceCatalog extends Service {
     params: UpdateProvisionedProductInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateProvisionedProductOutput, Unit]
   ): Request[UpdateProvisionedProductOutput, AWSError] = js.native
+  
   /**
     * Requests updates to the properties of the specified provisioned product.
     */
@@ -1110,6 +1219,7 @@ trait ServiceCatalog extends Service {
     params: UpdateProvisionedProductPropertiesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateProvisionedProductPropertiesOutput, Unit]
   ): Request[UpdateProvisionedProductPropertiesOutput, AWSError] = js.native
+  
   /**
     * Updates the specified provisioning artifact (also known as a version) for the specified product. You cannot update a provisioning artifact for a product that was shared with you.
     */
@@ -1123,6 +1233,7 @@ trait ServiceCatalog extends Service {
     params: UpdateProvisioningArtifactInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateProvisioningArtifactOutput, Unit]
   ): Request[UpdateProvisioningArtifactOutput, AWSError] = js.native
+  
   /**
     * Updates a self-service action.
     */
@@ -1136,6 +1247,7 @@ trait ServiceCatalog extends Service {
     params: UpdateServiceActionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateServiceActionOutput, Unit]
   ): Request[UpdateServiceActionOutput, AWSError] = js.native
+  
   /**
     * Updates the specified TagOption.
     */
@@ -1150,4 +1262,3 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateTagOptionOutput, Unit]
   ): Request[UpdateTagOptionOutput, AWSError] = js.native
 }
-

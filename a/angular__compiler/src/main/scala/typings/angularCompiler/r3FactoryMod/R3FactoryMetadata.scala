@@ -8,7 +8,7 @@ import typings.angularCompiler.r3FactoryMod.R3FactoryDelegateType.Function
 import typings.angularCompiler.render3UtilMod.R3Reference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.angularCompiler.r3FactoryMod.R3ConstructorFactoryMetadata
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
   - typings.angularCompiler.r3FactoryMod.R3ExpressionFactoryMetadata
 */
 trait R3FactoryMetadata extends js.Object
-
 object R3FactoryMetadata {
+  
   @scala.inline
   def R3ConstructorFactoryMetadata(
     injectFn: ExternalReference,
@@ -32,6 +32,7 @@ object R3FactoryMetadata {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3FactoryMetadata]
   }
+  
   @scala.inline
   def R3DelegatedFactoryMetadata(
     delegate: Expression,
@@ -47,6 +48,7 @@ object R3FactoryMetadata {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3FactoryMetadata]
   }
+  
   @scala.inline
   def R3DelegatedFnOrClassMetadata(
     delegate: Expression,
@@ -63,6 +65,7 @@ object R3FactoryMetadata {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3FactoryMetadata]
   }
+  
   @scala.inline
   def R3ExpressionFactoryMetadata(
     expression: Expression,
@@ -78,4 +81,3 @@ object R3FactoryMetadata {
     __obj.asInstanceOf[R3FactoryMetadata]
   }
 }
-

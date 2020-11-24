@@ -8,13 +8,14 @@ import typings.ejWebAll.ej.Tooltip.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofTooltip
   extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Tooltip]
      with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Tooltip] {
+  
   var Locale: js.Any = js.native
+  
   var fn: Tooltip = js.native
 }
-

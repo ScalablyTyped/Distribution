@@ -2,10 +2,11 @@ package typings.speakeasy.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Totp_ extends js.Object {
+  
   /**
     * Generate a time-based one-time token. Specify the key, and receive the
     * one-time password for that time as a string. By default, it uses the current
@@ -20,6 +21,7 @@ trait Totp_ extends js.Object {
     * @return The one-time passcode.
     */
   def apply(options: TotpOptions): String = js.native
+  
   /**
     * Verify a time-based one-time token against the secret and return true if it
     * verifies. Helper function for verifyDelta() that returns a boolean instead of
@@ -29,6 +31,7 @@ trait Totp_ extends js.Object {
     *   window, false otherwise.
     */
   def verify(options: TotpVerifyOptions): Boolean = js.native
+  
   /**
     * Verify a time-based one-time token against the secret and return the delta.
     * By default, it verifies the token at the current time window, with no leeway
@@ -54,4 +57,3 @@ trait Totp_ extends js.Object {
     */
   def verifyDelta(options: TotpVerifyOptions): js.UndefOr[Delta] = js.native
 }
-

@@ -7,10 +7,9 @@ import typings.foundationSites.FoundationSites.OffCanvas
 import typings.foundationSites.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableOffCanvas
   extends Instantiable1[/* element */ JQuery, OffCanvas]
      with Instantiable2[/* element */ JQuery, /* options */ IOffCanvasOptions, OffCanvas]
-

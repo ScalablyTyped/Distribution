@@ -7,15 +7,15 @@ import typings.uifabricFoundation.libIslotsMod.ValidProps
 import typings.uifabricMergeStyles.istylesetMod.IStyleSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uifabric/foundation/lib/createComponent", JSImport.Namespace)
 @js.native
 object createComponentMod extends js.Object {
+  
   def createComponent[TComponentProps /* <: ValidProps */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps /* <: TComponentProps */, TStatics](view: IViewComponent[TViewProps]): FunctionComponent[TComponentProps] with TStatics = js.native
   def createComponent[TComponentProps /* <: ValidProps */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps /* <: TComponentProps */, TStatics](
     view: IViewComponent[TViewProps],
     options: IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics]
   ): FunctionComponent[TComponentProps] with TStatics = js.native
 }
-

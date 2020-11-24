@@ -2,7 +2,7 @@ package typings.k6.wsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This module provides a WebSocket client implementing the WebSocket protocol.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSImport("k6/ws", "ws")
 @js.native
 object ws extends js.Object
-

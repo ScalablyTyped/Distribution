@@ -5,23 +5,27 @@ import typings.rxCore.Rx.IScheduler
 import typings.rxCore.Rx.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Rx")
 @js.native
 object Rx extends js.Object {
+  
   @js.native
   trait ObservableStatic extends js.Object {
+    
     def start[T](func: js.Function0[T]): Observable[T] = js.native
     def start[T](func: js.Function0[T], context: js.UndefOr[scala.Nothing], scheduler: IScheduler): Observable[T] = js.native
     def start[T](func: js.Function0[T], context: js.Any): Observable[T] = js.native
     def start[T](func: js.Function0[T], context: js.Any, scheduler: IScheduler): Observable[T] = js.native
+    
     /**
       * Invokes the asynchronous function, surfacing the result through an observable sequence.
       * @param functionAsync Asynchronous function which returns a Promise to run.
       * @returns An observable sequence exposing the function's result value, or an exception.
       */
     def startAsync[T](functionAsync: js.Function0[IPromise[T]]): Observable[T] = js.native
+    
     def toAsync[TResult](func: js.Function0[TResult]): js.Function0[Observable[TResult]] = js.native
     def toAsync[TResult](func: js.Function0[TResult], context: js.UndefOr[scala.Nothing], scheduler: IScheduler): js.Function0[Observable[TResult]] = js.native
     def toAsync[TResult](func: js.Function0[TResult], context: js.Any): js.Function0[Observable[TResult]] = js.native
@@ -128,6 +132,4 @@ object Rx extends js.Object {
       scheduler: IScheduler
     ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
   }
-  
 }
-

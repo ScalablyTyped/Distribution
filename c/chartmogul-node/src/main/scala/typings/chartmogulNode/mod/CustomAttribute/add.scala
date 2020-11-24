@@ -7,12 +7,12 @@ import typings.chartmogulNode.mod.Config
 import typings.chartmogulNode.mod.Customer.Customer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("chartmogul-node", "CustomAttribute.add")
 @js.native
 object add extends js.Object {
+  
   def apply(config: Config, uuid: String, data: Custom): js.Promise[Entries[Customer]] = js.native
   def apply(config: Config, uuid: String, data: CustomArray): js.Promise[CustomAttributes] = js.native
 }
-

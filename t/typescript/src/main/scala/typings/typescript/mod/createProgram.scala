@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createProgram")
 @js.native
 object createProgram extends js.Object {
+  
   def apply(createProgramOptions: CreateProgramOptions): Program = js.native
   def apply(rootNames: js.Array[java.lang.String], options: CompilerOptions): Program = js.native
   def apply(
@@ -51,4 +52,3 @@ object createProgram extends js.Object {
     configFileParsingDiagnostics: js.Array[Diagnostic]
   ): Program = js.native
 }
-

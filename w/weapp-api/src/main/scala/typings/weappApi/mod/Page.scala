@@ -3,11 +3,12 @@ package typings.weappApi.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //  end of wx namespace
 @js.native
 trait Page extends js.Object {
+  
   /**
     * setData 函数用于将数据从逻辑层发送到视图层，
     * 同时改变对应的 this.data 的值。
@@ -17,8 +18,6 @@ trait Page extends js.Object {
     */
   def setData(data: js.Any): Unit = js.native
 }
-
 @JSImport("weapp-api", "Page")
 @js.native
 object Page extends TopLevel[PageConstructor]
-

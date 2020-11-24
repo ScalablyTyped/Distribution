@@ -7,47 +7,43 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-auth-library/build/src/auth/jwtaccess", JSImport.Namespace)
 @js.native
 object jwtaccessMod extends js.Object {
+  
   @js.native
-  /**
-    * JWTAccess service account credentials.
-    *
-    * Create a new access token by using the credential to create a new JWT token
-    * that's recognized as the access token.
-    *
-    * @param email the service account email address.
-    * @param key the private key that will be used to sign the token.
-    * @param keyId the ID of the private key used to sign the token.
-    */
-  class JWTAccess () extends js.Object {
-    def this(email: String) = this()
-    def this(email: js.UndefOr[scala.Nothing], key: String) = this()
-    def this(email: String, key: String) = this()
-    def this(email: Null, key: String) = this()
-    def this(email: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], keyId: String) = this()
-    def this(email: js.UndefOr[scala.Nothing], key: String, keyId: String) = this()
-    def this(email: js.UndefOr[scala.Nothing], key: Null, keyId: String) = this()
-    def this(email: String, key: js.UndefOr[scala.Nothing], keyId: String) = this()
-    def this(email: String, key: String, keyId: String) = this()
-    def this(email: String, key: Null, keyId: String) = this()
-    def this(email: Null, key: js.UndefOr[scala.Nothing], keyId: String) = this()
-    def this(email: Null, key: String, keyId: String) = this()
-    def this(email: Null, key: Null, keyId: String) = this()
+  class JWTAccess protected () extends js.Object {
+    /**
+      * JWTAccess service account credentials.
+      *
+      * Create a new access token by using the credential to create a new JWT token
+      * that's recognized as the access token.
+      *
+      * @param email the service account email address.
+      * @param key the private key that will be used to sign the token.
+      * @param keyId the ID of the private key used to sign the token.
+      */
+    def this(
+      email: js.UndefOr[String | Null],
+      key: js.UndefOr[String | Null],
+      keyId: js.UndefOr[String | Null],
+      eagerRefreshThresholdMillis: js.UndefOr[Double]
+    ) = this()
+    
     var cache: js.Any = js.native
+    
+    var eagerRefreshThresholdMillis: Double = js.native
+    
     var email: js.UndefOr[String | Null] = js.native
-    var fromStreamAsync: js.Any = js.native
-    var key: js.UndefOr[String | Null] = js.native
-    var keyId: js.UndefOr[String | Null] = js.native
-    var projectId: js.UndefOr[String] = js.native
+    
     /**
       * Create a JWTAccess credentials instance using the given input options.
       * @param json The input object.
       */
     def fromJSON(json: JWTInput): Unit = js.native
+    
     /**
       * Create a JWTAccess credentials instance using the given input stream.
       * @param inputStream The input stream.
@@ -55,6 +51,9 @@ object jwtaccessMod extends js.Object {
       */
     def fromStream(inputStream: Readable): js.Promise[Unit] = js.native
     def fromStream(inputStream: Readable, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    
+    var fromStreamAsync: js.Any = js.native
+    
     /**
       * Get a non-expired access token, after refreshing if necessary.
       *
@@ -65,8 +64,25 @@ object jwtaccessMod extends js.Object {
       */
     def getRequestHeaders(url: String): Headers = js.native
     def getRequestHeaders(url: String, additionalClaims: Claims): Headers = js.native
+    
+    var key: js.UndefOr[String | Null] = js.native
+    
+    var keyId: js.UndefOr[String | Null] = js.native
+    
+    var projectId: js.UndefOr[String] = js.native
+  }
+  /* static members */
+  @js.native
+  object JWTAccess extends js.Object {
+    
+    /**
+      * Returns an expiration time for the JWT token.
+      *
+      * @param iat The issued at time for the JWT.
+      * @returns An expiration time for the JWT.
+      */
+    var getExpirationTime: js.Any = js.native
   }
   
   type Claims = StringDictionary[String]
 }
-

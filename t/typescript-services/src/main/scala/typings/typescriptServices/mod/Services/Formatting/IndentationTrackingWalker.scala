@@ -6,7 +6,7 @@ import typings.typescriptServices.TypeScript.SourceUnitSyntax
 import typings.typescriptServices.TypeScript.TextSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "Services.Formatting.IndentationTrackingWalker")
 @js.native
@@ -20,4 +20,3 @@ class IndentationTrackingWalker protected ()
     options: FormattingOptions
   ) = this()
 }
-

@@ -2,11 +2,12 @@ package typings.phaser.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("extend")
 @js.native
 object extend extends js.Object {
+  
   /**
     * Extends the given `myClass` object's prototype with the properties of `definition`.
     * @param ctor The constructor object to mix into.
@@ -17,4 +18,3 @@ object extend extends js.Object {
   def apply(ctor: js.Object, definition: js.Object, isClassDescriptor: Boolean): Unit = js.native
   def apply(ctor: js.Object, definition: js.Object, isClassDescriptor: Boolean, extend: js.Object): Unit = js.native
 }
-

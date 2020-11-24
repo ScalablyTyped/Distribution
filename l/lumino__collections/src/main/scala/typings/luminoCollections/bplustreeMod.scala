@@ -6,11 +6,12 @@ import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import typings.luminoAlgorithm.retroMod.IRetroable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/collections/types/bplustree", JSImport.Namespace)
 @js.native
 object bplustreeMod extends js.Object {
+  
   @js.native
   class BPlusTree[T] protected ()
     extends IIterable[T]
@@ -21,39 +22,9 @@ object bplustreeMod extends js.Object {
       * @param cmp - The item comparison function for the tree.
       */
     def this(cmp: js.Function2[/* a */ T, /* b */ T, Double]) = this()
+    
     var _root: js.Any = js.native
-    /**
-      * The first item in the tree.
-      *
-      * This is `undefined` if the tree is empty.
-      *
-      * #### Complexity
-      * `O(log32 n)`
-      */
-    val first: js.UndefOr[T] = js.native
-    /**
-      * Whether the tree is empty.
-      *
-      * #### Complexity
-      * `O(1)`
-      */
-    val isEmpty: Boolean = js.native
-    /**
-      * The last item in the tree.
-      *
-      * This is `undefined` if the tree is empty.
-      *
-      * #### Complexity
-      * `O(log32 n)`
-      */
-    val last: js.UndefOr[T] = js.native
-    /**
-      * The size of the tree.
-      *
-      * #### Complexity
-      * `O(1)`
-      */
-    val size: Double = js.native
+    
     /**
       * Assign new items to the tree, replacing all current items.
       *
@@ -63,6 +34,7 @@ object bplustreeMod extends js.Object {
       * `O(n log32 n)`
       */
     def assign(items: IterableOrArrayLike[T]): Unit = js.native
+    
     /**
       * Get the item at a particular index.
       *
@@ -76,6 +48,7 @@ object bplustreeMod extends js.Object {
       * `O(log32 n)`
       */
     def at(index: Double): js.UndefOr[T] = js.native
+    
     /**
       * Clear the contents of the tree.
       *
@@ -83,6 +56,7 @@ object bplustreeMod extends js.Object {
       * `O(n)`
       */
     def clear(): Unit = js.native
+    
     /**
       * The item comparison function for the tree.
       *
@@ -90,6 +64,7 @@ object bplustreeMod extends js.Object {
       * `O(1)`
       */
     def cmp(a: T, b: T): Double = js.native
+    
     /**
       * Delete an item which matches a particular key.
       *
@@ -104,6 +79,17 @@ object bplustreeMod extends js.Object {
       * `O(log32 n)`
       */
     def delete[U](key: U, cmp: js.Function2[/* item */ T, /* key */ U, Double]): js.UndefOr[T] = js.native
+    
+    /**
+      * The first item in the tree.
+      *
+      * This is `undefined` if the tree is empty.
+      *
+      * #### Complexity
+      * `O(log32 n)`
+      */
+    val first: js.UndefOr[T] = js.native
+    
     /**
       * Get the item which matches a key.
       *
@@ -118,6 +104,7 @@ object bplustreeMod extends js.Object {
       * `O(log32 n)`
       */
     def get[U](key: U, cmp: js.Function2[/* item */ T, /* key */ U, Double]): js.UndefOr[T] = js.native
+    
     /**
       * Test whether the tree has an item which matches a key.
       *
@@ -132,6 +119,7 @@ object bplustreeMod extends js.Object {
       * `O(log32 n)`
       */
     def has[U](key: U, cmp: js.Function2[/* item */ T, /* key */ U, Double]): Boolean = js.native
+    
     /**
       * Get the index of an item which matches a key.
       *
@@ -147,6 +135,7 @@ object bplustreeMod extends js.Object {
       * `O(log32 n)`
       */
     def indexOf[U](key: U, cmp: js.Function2[/* item */ T, /* key */ U, Double]): Double = js.native
+    
     /**
       * Insert an item into the tree.
       *
@@ -160,6 +149,25 @@ object bplustreeMod extends js.Object {
       * `O(log32 n)`
       */
     def insert(item: T): js.UndefOr[T] = js.native
+    
+    /**
+      * Whether the tree is empty.
+      *
+      * #### Complexity
+      * `O(1)`
+      */
+    val isEmpty: Boolean = js.native
+    
+    /**
+      * The last item in the tree.
+      *
+      * This is `undefined` if the tree is empty.
+      *
+      * #### Complexity
+      * `O(log32 n)`
+      */
+    val last: js.UndefOr[T] = js.native
+    
     /**
       * Remove an item at a particular index.
       *
@@ -173,6 +181,7 @@ object bplustreeMod extends js.Object {
       * `O(log32 n)`
       */
     def remove(index: Double): js.UndefOr[T] = js.native
+    
     /**
       * Create a reverse iterator for a slice of items in the tree.
       *
@@ -193,6 +202,15 @@ object bplustreeMod extends js.Object {
     def retroSlice(start: js.UndefOr[scala.Nothing], stop: Double): IIterator[T] = js.native
     def retroSlice(start: Double): IIterator[T] = js.native
     def retroSlice(start: Double, stop: Double): IIterator[T] = js.native
+    
+    /**
+      * The size of the tree.
+      *
+      * #### Complexity
+      * `O(1)`
+      */
+    val size: Double = js.native
+    
     /**
       * Create an iterator for a slice of items in the tree.
       *
@@ -213,6 +231,7 @@ object bplustreeMod extends js.Object {
     def slice(start: js.UndefOr[scala.Nothing], stop: Double): IIterator[T] = js.native
     def slice(start: Double): IIterator[T] = js.native
     def slice(start: Double, stop: Double): IIterator[T] = js.native
+    
     /**
       * Update the tree with multiple items.
       *
@@ -223,9 +242,9 @@ object bplustreeMod extends js.Object {
       */
     def update(items: IterableOrArrayLike[T]): Unit = js.native
   }
-  
   @js.native
   object BPlusTree extends js.Object {
+    
     /**
       * Create a new B+ tree populated with the given items.
       *
@@ -240,6 +259,4 @@ object bplustreeMod extends js.Object {
       */
     def from[T](items: IterableOrArrayLike[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): BPlusTree[T] = js.native
   }
-  
 }
-

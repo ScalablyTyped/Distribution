@@ -2,10 +2,11 @@ package typings.miniprogramWxs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JSON extends js.Object {
+  
   /**
     * Converts a JavaScript Object Notation (JSON) string into an object.
     * @param text A valid JSON string.
@@ -17,6 +18,7 @@ trait JSON extends js.Object {
     text: java.lang.String,
     reviver: js.ThisFunction2[/* this */ js.Any, /* key */ java.lang.String, /* value */ js.Any, _]
   ): js.Any = js.native
+  
   /**
     * Converts a JavaScript value to a JavaScript Object Notation (JSON) string.
     * @param value A JavaScript value, usually an object or array, to be converted.
@@ -46,4 +48,3 @@ trait JSON extends js.Object {
   def stringify(value: js.Any, replacer: Array[Double | java.lang.String], space: java.lang.String): java.lang.String = js.native
   def stringify(value: js.Any, replacer: Array[Double | java.lang.String], space: Double): java.lang.String = js.native
 }
-

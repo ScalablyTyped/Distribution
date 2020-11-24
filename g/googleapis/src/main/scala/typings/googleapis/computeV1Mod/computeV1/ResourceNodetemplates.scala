@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Nodetemplates")
 @js.native
 class ResourceNodetemplates protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.nodeTemplates.aggregatedList
     * @desc Retrieves an aggregated list of node templates.
@@ -48,6 +48,9 @@ class ResourceNodetemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNodeTemplateAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.nodeTemplates.delete
     * @desc Deletes the specified NodeTemplate resource.
@@ -79,6 +82,7 @@ class ResourceNodetemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.nodeTemplates.get
     * @desc Returns the specified node template. Gets a list of available node
@@ -110,6 +114,7 @@ class ResourceNodetemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNodeTemplate]
   ): Unit = js.native
+  
   /**
     * compute.nodeTemplates.getIamPolicy
     * @desc Gets the access control policy for a resource. May be empty if no
@@ -141,6 +146,7 @@ class ResourceNodetemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.nodeTemplates.insert
     * @desc Creates a NodeTemplate resource in the specified project using the
@@ -173,6 +179,7 @@ class ResourceNodetemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.nodeTemplates.list
     * @desc Retrieves a list of node templates available to the specified
@@ -207,6 +214,7 @@ class ResourceNodetemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNodeTemplateList]
   ): Unit = js.native
+  
   /**
     * compute.nodeTemplates.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -239,6 +247,7 @@ class ResourceNodetemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.nodeTemplates.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -274,4 +283,3 @@ class ResourceNodetemplates protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

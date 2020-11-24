@@ -7,7 +7,7 @@ import typings.heremaps.H.service.metaInfo.Service.Info
 import typings.heremaps.H.util.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class encapsulates a Metainfo Tile end point of the HERE Map Tile API.
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
 trait Service_
   extends EventTarget
      with IConfigurable {
+  
   /**
     * This method creates a tile layer. This layer can be used as a layer on a map's data model.
     * @param tileSize {number} - The tile size
@@ -132,6 +133,7 @@ trait Service_
     opt_tileType: String,
     opt_scheme: String
   ): TileLayer = js.native
+  
   /**
     * This method creates a tile provider which uses the meta info tile backend. This provider can be used as a data source for an TileLayer.
     * @param tileSize {number} - The tile size
@@ -248,15 +250,16 @@ trait Service_
     opt_tileType: String,
     opt_scheme: String
   ): typings.heremaps.H.map.provider.TileProvider = js.native
+  
   /**
     * This method returns the meta info tile service's meta information. The method will return an object once the map tile service's data has been fetched.
     * @returns {(H.service.metaInfo.Service.Info | undefined)} - meta information for this meta info tile service
     */
   def getInfo(): Info | Unit = js.native
+  
   /**
     * This method returns the meta info tile service's newest version hash.
     * @returns {string} - meta information for this map tile service
     */
   def getVersion(): String = js.native
 }
-

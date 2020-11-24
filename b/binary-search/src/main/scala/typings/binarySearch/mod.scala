@@ -3,11 +3,12 @@ package typings.binarySearch
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("binary-search", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply[A, B](
     haystack: ArrayLike[A],
     needle: B,
@@ -88,4 +89,3 @@ object mod extends js.Object {
     high: Double
   ): Double = js.native
 }
-

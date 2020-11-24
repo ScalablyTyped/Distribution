@@ -3,15 +3,17 @@ package typings.jscodeshift.jsxelementMod
 import typings.jscodeshift.collectionMod.Collection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GlobalMethods extends js.Object {
+  
   /**
     * Finds all JSXElements optionally filtered by name
     */
   def findJSXElements(): Collection[JSXElement] = js.native
   def findJSXElements(name: String): Collection[JSXElement] = js.native
+  
   /**
     * Finds all JSXElements by module name. Given
     *
@@ -23,4 +25,3 @@ trait GlobalMethods extends js.Object {
     */
   def findJSXElementsByModuleName(moduleName: String): Collection[JSXElement] = js.native
 }
-

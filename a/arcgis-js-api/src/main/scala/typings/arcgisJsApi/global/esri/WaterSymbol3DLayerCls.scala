@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.WaterSymbol3DLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.WaterSymbol3DLayer")
 @js.native
@@ -16,4 +16,3 @@ class WaterSymbol3DLayerCls ()
   extends typings.arcgisJsApi.esri.WaterSymbol3DLayer {
   def this(properties: WaterSymbol3DLayerProperties) = this()
 }
-

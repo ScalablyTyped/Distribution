@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "murmurhash-js"
-version := "v1.0.0-dt-20200515Z-446d7c"
+version := "v1.0.0-dt-20201002Z-f2c8b9"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

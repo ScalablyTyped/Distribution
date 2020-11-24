@@ -2,14 +2,14 @@ package typings.officeJsPreview.Visio
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ErrorCodes extends js.Object
-
 @JSGlobal("Visio.ErrorCodes")
 @js.native
 object ErrorCodes extends js.Object {
+  
   @js.native
   sealed trait accessDenied extends ErrorCodes
   
@@ -27,6 +27,4 @@ object ErrorCodes extends js.Object {
   
   @js.native
   sealed trait unsupportedOperation extends ErrorCodes
-  
 }
-

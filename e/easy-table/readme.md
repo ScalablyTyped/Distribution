@@ -9,9 +9,9 @@ Nice text table for the CLI
 | ------------------ | :-------------: |
 | Full name          | easy-table |
 | Keywords           | table, text, cli |
-| # releases         | 2 |
-| # dependents       | 257 |
-| # downloads        | 3758291 |
+| # releases         | 0 |
+| # dependents       | 278 |
+| # downloads        | 8643262 |
 | # stars            | 18 |
 
 ## Links

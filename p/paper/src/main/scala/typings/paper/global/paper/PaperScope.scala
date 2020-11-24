@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The `PaperScope` class represents the scope associated with a Paper
@@ -31,14 +31,13 @@ import scala.scalajs.js.annotation._
   */
 class PaperScope ()
   extends typings.paper.paper.PaperScope
-
 /* static members */
 @JSGlobal("paper.PaperScope")
 @js.native
 object PaperScope extends js.Object {
+  
   /** 
     * Retrieves a PaperScope object with the given scope id.
     */
   def get(id: js.Any): typings.paper.paper.PaperScope = js.native
 }
-

@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/directconnect/hostedPublicVirtualInterfaceAccepter", "HostedPublicVirtualInterfaceAccepter")
 @js.native
@@ -22,24 +22,27 @@ class HostedPublicVirtualInterfaceAccepter protected () extends CustomResource {
     */
   def this(name: String, args: HostedPublicVirtualInterfaceAccepterArgs) = this()
   def this(name: String, args: HostedPublicVirtualInterfaceAccepterArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of the virtual interface.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * A map of tags to assign to the resource.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  
   /**
     * The ID of the Direct Connect virtual interface to accept.
     */
   val virtualInterfaceId: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/directconnect/hostedPublicVirtualInterfaceAccepter", "HostedPublicVirtualInterfaceAccepter")
 @js.native
 object HostedPublicVirtualInterfaceAccepter extends js.Object {
+  
   /**
     * Get an existing HostedPublicVirtualInterfaceAccepter resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -58,10 +61,10 @@ object HostedPublicVirtualInterfaceAccepter extends js.Object {
     state: HostedPublicVirtualInterfaceAccepterState,
     opts: CustomResourceOptions
   ): HostedPublicVirtualInterfaceAccepter = js.native
+  
   /**
     * Returns true if the given object is an instance of HostedPublicVirtualInterfaceAccepter.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterfaceAccepter.HostedPublicVirtualInterfaceAccepter */ Boolean = js.native
 }
-

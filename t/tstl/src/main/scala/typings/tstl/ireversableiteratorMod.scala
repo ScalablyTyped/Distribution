@@ -4,13 +4,15 @@ import typings.tstl.ibidirectionaliteratorMod.IBidirectionalIterator
 import typings.tstl.ireverseiteratorMod.IReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/iterator/IReversableIterator", JSImport.Namespace)
 @js.native
 object ireversableiteratorMod extends js.Object {
+  
   @js.native
   trait IReversableIterator[T, IteratorT /* <: IReversableIterator[T, IteratorT, ReverseT] */, ReverseT /* <: IReverseIterator[T, IteratorT, ReverseT] */] extends IBidirectionalIterator[T, IteratorT] {
+    
     /**
       * Construct reverse iterator.
       *
@@ -18,6 +20,4 @@ object ireversableiteratorMod extends js.Object {
       */
     def reverse(): ReverseT = js.native
   }
-  
 }
-

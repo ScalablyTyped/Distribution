@@ -12,10 +12,11 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.selectedIndexChanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BootstrapListBox extends BootstrapClientEdit {
+  
   def addItem(text: String): Double = js.native
    // tslint:disable-line:unified-signatures
   def addItem(text: String, value: js.Any): Double = js.native
@@ -26,23 +27,40 @@ trait BootstrapListBox extends BootstrapClientEdit {
   def addItem(texts: js.Array[String], value: js.Any): Double = js.native
    // tslint:disable-line:unified-signatures unified-signatures
   def addItem(texts: js.Array[String], value: js.Any, iconCssClass: String): Double = js.native
+  
    // tslint:disable-line:unified-signatures unified-signatures
   def addItemCssClass(index: Double, className: String): Unit = js.native
+  
   def addItemTextCellCssClass(itemIndex: Double, textCellIndex: Double, className: String): Unit = js.native
+  
   def beginUpdate(): Unit = js.native
+  
   def clearItems(): Unit = js.native
+  
   def endUpdate(): Unit = js.native
+  
   def findItemByText(text: String): BootstrapListBoxItem | Null = js.native
+  
   def findItemByValue(value: js.Any): BootstrapListBoxItem | Null = js.native
+  
   def getItem(index: Double): BootstrapListBoxItem | Null = js.native
+  
   def getItemBadgeIconCssClass(index: Double): String = js.native
+  
   def getItemBadgeText(index: Double): String = js.native
+  
   def getItemCount(): Double = js.native
+  
   def getSelectedIndex(): Double = js.native
+  
   def getSelectedIndices(): js.Array[Double] = js.native
+  
   def getSelectedItem(): BootstrapListBoxItem | Null = js.native
+  
   def getSelectedItems(): js.Array[BootstrapListBoxItem] = js.native
+  
   def getSelectedValues(): js.Array[_] = js.native
+  
   def insertItem(index: Double, text: String): Unit = js.native
    // tslint:disable-line:unified-signatures
   def insertItem(index: Double, text: String, value: js.Any): Unit = js.native
@@ -53,8 +71,10 @@ trait BootstrapListBox extends BootstrapClientEdit {
   def insertItem(index: Double, texts: js.Array[String], value: js.Any): Unit = js.native
    // tslint:disable-line:unified-signatures unified-signatures
   def insertItem(index: Double, texts: js.Array[String], value: js.Any, iconCssClass: String): Unit = js.native
+  
    // tslint:disable-line:unified-signatures unified-signatures
   def makeItemVisible(index: Double): Unit = js.native
+  
   @JSName("off")
   def off_beginCallback(eventName: beginCallback): this.type = js.native
   @JSName("off")
@@ -129,6 +149,7 @@ trait BootstrapListBox extends BootstrapClientEdit {
     eventName: selectedIndexChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[ProcessingModeEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_beginCallback(
     eventName: beginCallback,
@@ -183,6 +204,7 @@ trait BootstrapListBox extends BootstrapClientEdit {
     eventName: selectedIndexChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[ProcessingModeEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_beginCallback(
     eventName: beginCallback,
@@ -237,26 +259,45 @@ trait BootstrapListBox extends BootstrapClientEdit {
     eventName: selectedIndexChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[ProcessingModeEventArgs], Unit]
   ): this.type = js.native
+  
   def performCallback(data: js.Any): js.Promise[Unit] = js.native
   def performCallback(data: js.Any, onSuccess: js.Function0[Unit]): Unit = js.native
+  
   def removeItem(index: Double): Unit = js.native
+  
   def removeItemCssClass(index: Double, className: String): Unit = js.native
+  
   def removeItemTextCellCssClass(itemIndex: Double, textCellIndex: Double, className: String): Unit = js.native
+  
   def selectAll(): Unit = js.native
+  
   def selectIndices(indices: js.Array[Double]): Unit = js.native
+  
   def selectItems(items: js.Array[BootstrapListBoxItem]): Unit = js.native
+  
   def selectValues(values: js.Array[_]): Unit = js.native
+  
   def setItemBadgeIconCssClass(index: Double, cssClass: String): Unit = js.native
+  
   def setItemBadgeText(index: Double, text: String): Unit = js.native
+  
   def setItemHtml(index: Double, html: String): Unit = js.native
+  
   def setItemTextCellHtml(itemIndex: Double, textCellIndex: Double, html: String): Unit = js.native
+  
   def setItemTextCellTooltip(itemIndex: Double, textCellIndex: Double, tooltip: String): Unit = js.native
+  
   def setItemTooltip(index: Double, tooltip: String): Unit = js.native
+  
   def setSelectedIndex(index: Double): Unit = js.native
+  
   def setSelectedItem(item: BootstrapListBoxItem): Unit = js.native
+  
   def unselectAll(): Unit = js.native
+  
   def unselectIndices(indices: js.Array[Double]): Unit = js.native
+  
   def unselectItems(items: js.Array[BootstrapListBoxItem]): Unit = js.native
+  
   def unselectValues(values: js.Array[_]): Unit = js.native
 }
-

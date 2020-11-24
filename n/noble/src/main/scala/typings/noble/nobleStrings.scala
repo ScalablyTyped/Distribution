@@ -2,9 +2,73 @@ package typings.noble
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nobleStrings {
+  
+  @scala.inline
+  def broadcast: broadcast = "broadcast".asInstanceOf[broadcast]
+  
+  @scala.inline
+  def characteristicsDiscover: characteristicsDiscover = "characteristicsDiscover".asInstanceOf[characteristicsDiscover]
+  
+  @scala.inline
+  def connect: connect = "connect".asInstanceOf[connect]
+  
+  @scala.inline
+  def connected: connected = "connected".asInstanceOf[connected]
+  
+  @scala.inline
+  def connecting: connecting = "connecting".asInstanceOf[connecting]
+  
+  @scala.inline
+  def descriptorsDiscover: descriptorsDiscover = "descriptorsDiscover".asInstanceOf[descriptorsDiscover]
+  
+  @scala.inline
+  def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
+  
+  @scala.inline
+  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  
+  @scala.inline
+  def disconnecting: disconnecting = "disconnecting".asInstanceOf[disconnecting]
+  
+  @scala.inline
+  def discover: discover = "discover".asInstanceOf[discover]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def includedServicesDiscover: includedServicesDiscover = "includedServicesDiscover".asInstanceOf[includedServicesDiscover]
+  
+  @scala.inline
+  def read: read = "read".asInstanceOf[read]
+  
+  @scala.inline
+  def rssiUpdate: rssiUpdate = "rssiUpdate".asInstanceOf[rssiUpdate]
+  
+  @scala.inline
+  def scanStart: scanStart = "scanStart".asInstanceOf[scanStart]
+  
+  @scala.inline
+  def scanStop: scanStop = "scanStop".asInstanceOf[scanStop]
+  
+  @scala.inline
+  def servicesDiscover: servicesDiscover = "servicesDiscover".asInstanceOf[servicesDiscover]
+  
+  @scala.inline
+  def stateChange: stateChange = "stateChange".asInstanceOf[stateChange]
+  
+  @scala.inline
+  def valueRead: valueRead = "valueRead".asInstanceOf[valueRead]
+  
+  @scala.inline
+  def valueWrite: valueWrite = "valueWrite".asInstanceOf[valueWrite]
+  
+  @scala.inline
+  def write: write = "write".asInstanceOf[write]
+  
   @js.native
   sealed trait broadcast extends js.Object
   
@@ -70,48 +134,4 @@ object nobleStrings {
   
   @js.native
   sealed trait write extends js.Object
-  
-  @scala.inline
-  def broadcast: broadcast = "broadcast".asInstanceOf[broadcast]
-  @scala.inline
-  def characteristicsDiscover: characteristicsDiscover = "characteristicsDiscover".asInstanceOf[characteristicsDiscover]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def connected: connected = "connected".asInstanceOf[connected]
-  @scala.inline
-  def connecting: connecting = "connecting".asInstanceOf[connecting]
-  @scala.inline
-  def descriptorsDiscover: descriptorsDiscover = "descriptorsDiscover".asInstanceOf[descriptorsDiscover]
-  @scala.inline
-  def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
-  @scala.inline
-  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
-  @scala.inline
-  def disconnecting: disconnecting = "disconnecting".asInstanceOf[disconnecting]
-  @scala.inline
-  def discover: discover = "discover".asInstanceOf[discover]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def includedServicesDiscover: includedServicesDiscover = "includedServicesDiscover".asInstanceOf[includedServicesDiscover]
-  @scala.inline
-  def read: read = "read".asInstanceOf[read]
-  @scala.inline
-  def rssiUpdate: rssiUpdate = "rssiUpdate".asInstanceOf[rssiUpdate]
-  @scala.inline
-  def scanStart: scanStart = "scanStart".asInstanceOf[scanStart]
-  @scala.inline
-  def scanStop: scanStop = "scanStop".asInstanceOf[scanStop]
-  @scala.inline
-  def servicesDiscover: servicesDiscover = "servicesDiscover".asInstanceOf[servicesDiscover]
-  @scala.inline
-  def stateChange: stateChange = "stateChange".asInstanceOf[stateChange]
-  @scala.inline
-  def valueRead: valueRead = "valueRead".asInstanceOf[valueRead]
-  @scala.inline
-  def valueWrite: valueWrite = "valueWrite".asInstanceOf[valueWrite]
-  @scala.inline
-  def write: write = "write".asInstanceOf[write]
 }
-

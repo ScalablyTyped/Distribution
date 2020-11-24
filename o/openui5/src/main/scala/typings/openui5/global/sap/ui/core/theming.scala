@@ -2,13 +2,15 @@ package typings.openui5.global.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.theming")
 @js.native
 object theming extends js.Object {
+  
   @js.native
   object Parameters extends js.Object {
+    
     /**
       * Returns the current value for one or more theming parameters, depending on the given
       * arguments.<ul><li>If no parameter is given a key-value map containing all parameters is
@@ -26,6 +28,7 @@ object theming extends js.Object {
     def get(vName: String, oElement: typings.openui5.sap.ui.core.Element): String | js.Any = js.native
     def get(vName: js.Array[String]): String | js.Any = js.native
     def get(vName: js.Array[String], oElement: typings.openui5.sap.ui.core.Element): String | js.Any = js.native
+    
     /**
       * Returns the active scope(s) for a given control by looking up the hierarchy.The lookup navigates the
       * DOM hierarchy if it's available. Otherwise if controls aren't rendered yet,it navigates the control
@@ -35,6 +38,7 @@ object theming extends js.Object {
       * @returns Two dimensional array with scopes in bottom up order
       */
     def getActiveScopesFor(oElement: js.Any): js.Array[js.Array[String]] = js.native
+    
     /**
       * Returns the scopes from current theming parameters.
       * @param bAvoidLoading Whether loading of parameters should be avoided
@@ -42,12 +46,11 @@ object theming extends js.Object {
       */
     @JSName("_getScopes")
     def getScopes(bAvoidLoading: Boolean): js.Array[_] = js.native
+    
     /**
       * Resets the CSS parameters which finally will reload the parametersthe next time they are queried via
       * the method <code>get</code>.
       */
     def reset(): Unit = js.native
   }
-  
 }
-

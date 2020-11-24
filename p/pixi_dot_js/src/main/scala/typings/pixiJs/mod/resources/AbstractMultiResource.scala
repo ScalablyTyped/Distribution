@@ -3,7 +3,7 @@ package typings.pixiJs.mod.resources
 import typings.pixiJs.anon.Width
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource that can manage several resource (items) inside.
@@ -23,4 +23,3 @@ class AbstractMultiResource ()
   extends typings.pixiJs.PIXI.resources.AbstractMultiResource {
   def this(options: Width) = this()
 }
-

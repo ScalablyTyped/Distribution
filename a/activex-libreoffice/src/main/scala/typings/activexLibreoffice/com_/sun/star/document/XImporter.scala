@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to connect a document with an {@link ImportFilter}
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XImporter extends XInterface {
+  
   /**
     * sets the target document for the importer
     * @param Document the target document
@@ -25,8 +26,8 @@ trait XImporter extends XInterface {
     */
   def setTargetDocument(Document: XComponent): Unit = js.native
 }
-
 object XImporter {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -37,20 +38,23 @@ object XImporter {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setTargetDocument = js.Any.fromFunction1(setTargetDocument))
     __obj.asInstanceOf[XImporter]
   }
+  
   @scala.inline
   implicit class XImporterOps[Self <: XImporter] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSetTargetDocument(value: XComponent => Unit): Self = this.set("setTargetDocument", js.Any.fromFunction1(value))
   }
-  
 }
-

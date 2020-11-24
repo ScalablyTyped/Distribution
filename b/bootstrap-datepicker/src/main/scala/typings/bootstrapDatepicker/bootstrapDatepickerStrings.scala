@@ -2,9 +2,94 @@ package typings.bootstrapDatepicker
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bootstrapDatepickerStrings {
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def `auto left`: `auto left` = ("auto left").asInstanceOf[`auto left`]
+  
+  @scala.inline
+  def `auto right`: `auto right` = ("auto right").asInstanceOf[`auto right`]
+  
+  @scala.inline
+  def `bottom auto`: `bottom auto` = ("bottom auto").asInstanceOf[`bottom auto`]
+  
+  @scala.inline
+  def `bottom left`: `bottom left` = ("bottom left").asInstanceOf[`bottom left`]
+  
+  @scala.inline
+  def `bottom right`: `bottom right` = ("bottom right").asInstanceOf[`bottom right`]
+  
+  @scala.inline
+  def centuries: centuries = "centuries".asInstanceOf[centuries]
+  
+  @scala.inline
+  def changeCentury: changeCentury = "changeCentury".asInstanceOf[changeCentury]
+  
+  @scala.inline
+  def changeDate: changeDate = "changeDate".asInstanceOf[changeDate]
+  
+  @scala.inline
+  def changeDecade: changeDecade = "changeDecade".asInstanceOf[changeDecade]
+  
+  @scala.inline
+  def changeMonth: changeMonth = "changeMonth".asInstanceOf[changeMonth]
+  
+  @scala.inline
+  def changeYear: changeYear = "changeYear".asInstanceOf[changeYear]
+  
+  @scala.inline
+  def clearDate: clearDate = "clearDate".asInstanceOf[clearDate]
+  
+  @scala.inline
+  def days: days = "days".asInstanceOf[days]
+  
+  @scala.inline
+  def decades: decades = "decades".asInstanceOf[decades]
+  
+  @scala.inline
+  def hide: hide = "hide".asInstanceOf[hide]
+  
+  @scala.inline
+  def `left bottom`: `left bottom` = ("left bottom").asInstanceOf[`left bottom`]
+  
+  @scala.inline
+  def `left top`: `left top` = ("left top").asInstanceOf[`left top`]
+  
+  @scala.inline
+  def linked: linked = "linked".asInstanceOf[linked]
+  
+  @scala.inline
+  def millenium: millenium = "millenium".asInstanceOf[millenium]
+  
+  @scala.inline
+  def months: months = "months".asInstanceOf[months]
+  
+  @scala.inline
+  def `right bottom`: `right bottom` = ("right bottom").asInstanceOf[`right bottom`]
+  
+  @scala.inline
+  def `right top`: `right top` = ("right top").asInstanceOf[`right top`]
+  
+  @scala.inline
+  def show: show = "show".asInstanceOf[show]
+  
+  @scala.inline
+  def `top auto`: `top auto` = ("top auto").asInstanceOf[`top auto`]
+  
+  @scala.inline
+  def `top left`: `top left` = ("top left").asInstanceOf[`top left`]
+  
+  @scala.inline
+  def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
+  
+  @scala.inline
+  def years: years = "years".asInstanceOf[years]
+  
   @js.native
   sealed trait auto extends DatepickerOrientations
   
@@ -88,62 +173,4 @@ object bootstrapDatepickerStrings {
   
   @js.native
   sealed trait years extends DatepickerViewModes
-  
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def `auto left`: `auto left` = ("auto left").asInstanceOf[`auto left`]
-  @scala.inline
-  def `auto right`: `auto right` = ("auto right").asInstanceOf[`auto right`]
-  @scala.inline
-  def `bottom auto`: `bottom auto` = ("bottom auto").asInstanceOf[`bottom auto`]
-  @scala.inline
-  def `bottom left`: `bottom left` = ("bottom left").asInstanceOf[`bottom left`]
-  @scala.inline
-  def `bottom right`: `bottom right` = ("bottom right").asInstanceOf[`bottom right`]
-  @scala.inline
-  def centuries: centuries = "centuries".asInstanceOf[centuries]
-  @scala.inline
-  def changeCentury: changeCentury = "changeCentury".asInstanceOf[changeCentury]
-  @scala.inline
-  def changeDate: changeDate = "changeDate".asInstanceOf[changeDate]
-  @scala.inline
-  def changeDecade: changeDecade = "changeDecade".asInstanceOf[changeDecade]
-  @scala.inline
-  def changeMonth: changeMonth = "changeMonth".asInstanceOf[changeMonth]
-  @scala.inline
-  def changeYear: changeYear = "changeYear".asInstanceOf[changeYear]
-  @scala.inline
-  def clearDate: clearDate = "clearDate".asInstanceOf[clearDate]
-  @scala.inline
-  def days: days = "days".asInstanceOf[days]
-  @scala.inline
-  def decades: decades = "decades".asInstanceOf[decades]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def `left bottom`: `left bottom` = ("left bottom").asInstanceOf[`left bottom`]
-  @scala.inline
-  def `left top`: `left top` = ("left top").asInstanceOf[`left top`]
-  @scala.inline
-  def linked: linked = "linked".asInstanceOf[linked]
-  @scala.inline
-  def millenium: millenium = "millenium".asInstanceOf[millenium]
-  @scala.inline
-  def months: months = "months".asInstanceOf[months]
-  @scala.inline
-  def `right bottom`: `right bottom` = ("right bottom").asInstanceOf[`right bottom`]
-  @scala.inline
-  def `right top`: `right top` = ("right top").asInstanceOf[`right top`]
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
-  @scala.inline
-  def `top auto`: `top auto` = ("top auto").asInstanceOf[`top auto`]
-  @scala.inline
-  def `top left`: `top left` = ("top left").asInstanceOf[`top left`]
-  @scala.inline
-  def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
-  @scala.inline
-  def years: years = "years".asInstanceOf[years]
 }
-

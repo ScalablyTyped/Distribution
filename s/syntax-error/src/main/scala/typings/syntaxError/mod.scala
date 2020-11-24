@@ -4,11 +4,12 @@ import typings.acorn.mod.Options
 import typings.syntaxError.anon.SyntaxErrorlinenumbercolu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("syntax-error", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * Check the source code string 'src' for syntax errors. Optionally you can specify a filename
     * file that will show up in the output.
@@ -22,4 +23,3 @@ object mod extends js.Object {
   def apply(src: js.Any, file: String): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
   def apply(src: js.Any, file: String, opts: Options): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
 }
-

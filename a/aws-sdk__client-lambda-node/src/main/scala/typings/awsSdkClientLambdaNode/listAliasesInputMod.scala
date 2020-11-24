@@ -1,13 +1,12 @@
 package typings.awsSdkClientLambdaNode
 
-import typings.awsSdkTypes.protocolMod.Structure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-lambda-node/model/ListAliasesInput", JSImport.Namespace)
 @js.native
 object listAliasesInputMod extends js.Object {
-  val ListAliasesInput: Structure = js.native
+  
+  val ListAliasesInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }
-

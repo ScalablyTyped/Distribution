@@ -10,9 +10,9 @@ Reliable way to get the height and width of terminal/console, since it's not cal
 | ------------------ | :-------------: |
 | Full name          | window-size |
 | Keywords           | columns, console, darwin, height, lines, redirected, resize, rows, size, term, term-size, terminal, tty, unix, width, win, window, windows |
-| # releases         | 2 |
-| # dependents       | 171 |
-| # downloads        | 292242282 |
+| # releases         | 0 |
+| # dependents       | 190 |
+| # downloads        | 281953704 |
 | # stars            | 9 |
 
 ## Links

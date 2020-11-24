@@ -38,18 +38,18 @@ import typings.pouchdbCore.PouchDB.Core.RevisionId
 import typings.pouchdbCore.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Database[Content /* <: js.Object */] extends EventEmitter {
-  /** The name passed to the PouchDB constructor and unique identifier of the database. */
-  var name: String = js.native
+  
   /** Fetch all documents matching the given options. */
   def allDocs[Model](): js.Promise[AllDocsResponse[Content with Model]] = js.native
   def allDocs[Model](options: AllDocsOptions): js.Promise[AllDocsResponse[Content with Model]] = js.native
   def allDocs[Model](options: AllDocsWithKeyOptions): js.Promise[AllDocsResponse[Content with Model]] = js.native
   def allDocs[Model](options: AllDocsWithKeysOptions): js.Promise[AllDocsResponse[Content with Model]] = js.native
   def allDocs[Model](options: AllDocsWithinRangeOptions): js.Promise[AllDocsResponse[Content with Model]] = js.native
+  
   /**
     * Create, update or delete multiple documents. The docs argument is an array of documents.
     * If you omit an _id parameter on a given document, the database will create a new document and assign the ID for you.
@@ -76,10 +76,12 @@ trait Database[Content /* <: js.Object */] extends EventEmitter {
     options: BulkDocsOptions,
     callback: Callback[js.Array[Response | Error]]
   ): Unit = js.native
+  
   /** Given a set of document/revision IDs, returns the document bodies (and, optionally, attachment data) for each ID/revision pair specified. */
   def bulkGet[Model](options: BulkGetOptions): js.Promise[BulkGetResponse[Content with Model]] = js.native
   /** Given a set of document/revision IDs, returns the document bodies (and, optionally, attachment data) for each ID/revision pair specified. */
   def bulkGet[Model](options: BulkGetOptions, callback: Callback[BulkGetResponse[Content with Model]]): Unit = js.native
+  
   /**
     * A list of changes made to documents in the database, in the order they were made.
     * It returns an object with the method cancel(), which you call if you don’t want to listen to new changes anymore.
@@ -100,21 +102,25 @@ trait Database[Content /* <: js.Object */] extends EventEmitter {
     * Calling cancel() will unsubscribe all event listeners automatically.
     */
   def changes[Model](options: ChangesOptions, callback: Callback[Changes[Content with Model]]): Unit = js.native
+  
   /** Close the database */
   def close(): js.Promise[Unit] = js.native
   /** Close the database */
   def close(callback: Callback[_]): Unit = js.native
+  
   /** Compact the database */
   def compact(): js.Promise[Response] = js.native
   def compact(options: CompactOptions): js.Promise[Response] = js.native
   /** Compact the database */
   def compact(options: CompactOptions, callback: Callback[Response]): Unit = js.native
+  
   /** Destroy the database */
   def destroy(): js.Promise[Unit] = js.native
   def destroy(options: Null, callback: Callback[_]): Unit = js.native
   def destroy(options: Options): js.Promise[Unit] = js.native
   /** Destroy the database */
   def destroy(options: Options, callback: Callback[_]): Unit = js.native
+  
   /** Fetch a document */
   def get[Model](docId: DocumentId): js.Promise[(Document[Content with Model]) with GetMeta] = js.native
   def get[Model](docId: DocumentId, options: Null, callback: Callback[(Document[Content with Model]) with GetMeta]): Unit = js.native
@@ -133,6 +139,7 @@ trait Database[Content /* <: js.Object */] extends EventEmitter {
     options: GetOptions,
     callback: Callback[(Document[Content with Model]) with GetMeta]
   ): Unit = js.native
+  
   /** Get attachment data */
   def getAttachment(docId: DocumentId, attachmentId: AttachmentId): js.Promise[Blob | Buffer] = js.native
   /** Get attachment data */
@@ -140,10 +147,15 @@ trait Database[Content /* <: js.Object */] extends EventEmitter {
   def getAttachment(docId: DocumentId, attachmentId: AttachmentId, options: `0`): js.Promise[Blob | Buffer] = js.native
   /** Get attachment data */
   def getAttachment(docId: DocumentId, attachmentId: AttachmentId, options: `0`, callback: Callback[Blob | Buffer]): Unit = js.native
+  
   /** Get database information */
   def info(): js.Promise[DatabaseInfo] = js.native
   /** Get database information */
   def info(callback: Callback[DatabaseInfo]): Unit = js.native
+  
+  /** The name passed to the PouchDB constructor and unique identifier of the database. */
+  var name: String = js.native
+  
   /**
     * Create a new document without providing an id.
     *
@@ -166,6 +178,7 @@ trait Database[Content /* <: js.Object */] extends EventEmitter {
     * @see {@link https://pouchdb.com/2014/06/17/12-pro-tips-for-better-code-with-pouchdb.html|PouchDB Pro Tips}
     */
   def post[Model](doc: PostDocument[Content with Model], options: Options, callback: Callback[Response]): Unit = js.native
+  
   /**
     * Create a new document or update an existing document.
     *
@@ -188,6 +201,7 @@ trait Database[Content /* <: js.Object */] extends EventEmitter {
     * see inconsistent results.
     */
   def put[Model](doc: PutDocument[Content with Model], options: PutOptions, callback: Callback[Response]): Unit = js.native
+  
   /**
     * Attaches a binary object to a document.
     * This method will update an existing document to add the attachment, so it requires a rev if the document already exists.
@@ -231,6 +245,7 @@ trait Database[Content /* <: js.Object */] extends EventEmitter {
     `type`: String,
     callback: Callback[Response]
   ): Unit = js.native
+  
   /** Remove a doc from the database */
   def remove(docId: DocumentId, revision: RevisionId): js.Promise[Response] = js.native
   def remove(docId: DocumentId, revision: RevisionId, options: Options): js.Promise[Response] = js.native
@@ -241,6 +256,7 @@ trait Database[Content /* <: js.Object */] extends EventEmitter {
   def remove(doc: RemoveDocument, options: Options): js.Promise[Response] = js.native
   /** Remove a doc from the database */
   def remove(doc: RemoveDocument, options: Options, callback: Callback[Response]): Unit = js.native
+  
   /** Delete an attachment from a doc. You must supply the rev of the existing doc. */
   def removeAttachment(docId: DocumentId, attachmentId: AttachmentId, rev: RevisionId): js.Promise[RemoveAttachmentResponse] = js.native
   /** Delete an attachment from a doc. You must supply the rev of the existing doc. */
@@ -250,9 +266,9 @@ trait Database[Content /* <: js.Object */] extends EventEmitter {
     rev: RevisionId,
     callback: Callback[RemoveAttachmentResponse]
   ): Unit = js.native
+  
   /** Given a set of document/revision IDs, returns the subset of those that do not correspond to revisions stored in the database */
   def revsDiff(diff: RevisionDiffOptions): js.Promise[RevisionDiffResponse] = js.native
   /** Given a set of document/revision IDs, returns the subset of those that do not correspond to revisions stored in the database */
   def revsDiff(diff: RevisionDiffOptions, callback: Callback[RevisionDiffResponse]): Unit = js.native
 }
-

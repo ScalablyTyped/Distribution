@@ -6,7 +6,7 @@ import typings.echarts.echartsStrings.bottom
 import typings.echarts.echartsStrings.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The x axis in cartesian(rectangular) coordinate.
@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XAxis extends CartesianAxis {
+  
   /**
     * The first x axis in grid defaults to be on the bottom of the grid,
     * and the second x axis is on the other side against the first x axis.
@@ -26,6 +27,7 @@ trait XAxis extends CartesianAxis {
     * @default ''
     */
   var position: js.UndefOr[top | bottom] = js.native
+  
   /**
     * Options:
     * + 'value' - Numerical axis, suitable for continuous data.
@@ -43,33 +45,39 @@ trait XAxis extends CartesianAxis {
     */
   var `type`: js.UndefOr[Type] = js.native
 }
-
 object XAxis {
+  
   @scala.inline
   def apply(): XAxis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XAxis]
   }
+  
   @scala.inline
   implicit class XAxisOps[Self <: XAxis] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setPosition(value: top | bottom): Self = this.set("position", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePosition: Self = this.set("position", js.undefined)
+    
     @scala.inline
     def setType(value: Type): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }
-  
 }
-

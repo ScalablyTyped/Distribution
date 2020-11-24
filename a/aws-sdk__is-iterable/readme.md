@@ -12,7 +12,7 @@ Provides a function for detecting if input is iterable
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 4 |
-| # downloads        | 31618 |
+| # downloads        | 173445 |
 | # stars            | 0 |
 
 ## Links

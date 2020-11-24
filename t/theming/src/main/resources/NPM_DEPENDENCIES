@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "theming" : "3.2.1"
+      "theming" : "3.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "theming" : "3.2.1"
+      "theming" : "3.3.0"
     }
   ],
   "compile-devDependencies" : [

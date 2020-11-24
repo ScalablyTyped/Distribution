@@ -10,9 +10,9 @@ Frecency sorting for search results.
 | ------------------ | :-------------: |
 | Full name          | frecency |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 2721 |
+| # downloads        | 5965 |
 | # stars            | 0 |
 
 ## Links

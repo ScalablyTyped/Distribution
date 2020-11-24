@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Livechatmessages")
 @js.native
 class ResourceLivechatmessages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.liveChatMessages.delete
     * @desc Deletes a chat message.
@@ -41,6 +43,7 @@ class ResourceLivechatmessages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * youtube.liveChatMessages.insert
     * @desc Adds a message to a live chat.
@@ -73,6 +76,7 @@ class ResourceLivechatmessages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiveChatMessage]
   ): Unit = js.native
+  
   /**
     * youtube.liveChatMessages.list
     * @desc Lists live chat messages for a specific chat.
@@ -110,4 +114,3 @@ class ResourceLivechatmessages protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLiveChatMessageListResponse]
   ): Unit = js.native
 }
-

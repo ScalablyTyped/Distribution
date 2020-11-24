@@ -29,24 +29,31 @@ import typings.typedGithubApi.typedGithubApiStrings.subscribed
 import typings.typedGithubApi.typedGithubApiStrings.updated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typed-github-api/dist/github-api", "GitHubApi")
 @js.native
 class GitHubApi protected () extends GitHubRef {
   def this(options: OptionsOrRef) = this()
+  
   /* private */ def getAllSearchPagesAsync[TApiData](uri: js.Any): js.Any = js.native
+  
   /* private */ def getIssue(issue: js.Any): js.Any = js.native
+  
   /**
     * @deprecated Use getOwner instead
     */
   def getOrganization(login: String): OwnerRefClass = js.native
+  
   def getOwner(login: String): OwnerRef = js.native
+  
   /* private */ def getRepository(repository: js.Any): js.Any = js.native
+  
   /**
     * @deprecated Use getOwner instead
     */
   def getUser(login: String): OwnerRefClass = js.native
+  
   def loadIssuesAsync(
     filter: js.UndefOr[assigned | created | mentioned | subscribed | all],
     state: js.UndefOr[open | closed | all],
@@ -55,14 +62,18 @@ class GitHubApi protected () extends GitHubRef {
     ascending: js.UndefOr[Boolean],
     updatedSince: js.UndefOr[Moment]
   ): js.Promise[js.Array[Issue]] = js.native
+  
   def loadMyOrganizationsAsync(): js.Promise[js.Array[OrganizationSummaryClass]] = js.native
+  
   def loadMyRepositoriesAsync(
     visibility: all | public | `private`,
     affiliation: js.UndefOr[js.Array[owner | collaborator | organization_member]],
     sort: js.UndefOr[created | updated | pushed | full_name],
     ascending: js.UndefOr[Boolean]
   ): js.Promise[js.Array[Repository]] = js.native
+  
   /* private */ def searchAsync[TData, TApiData](uri: js.Any, query: js.Any, sort: js.Any, ascending: js.Any, perPage: js.Any, mapping: js.Any): js.Any = js.native
+  
   /**
     * Loads issues matching search query.
     * @param query     The query used for the search
@@ -112,6 +123,7 @@ class GitHubApi protected () extends GitHubRef {
   def searchIssuesAsync_updated(query: String, sort: updated, ascending: Boolean): js.Promise[js.Array[Issue]] = js.native
   @JSName("searchIssuesAsync")
   def searchIssuesAsync_updated(query: String, sort: updated, ascending: Boolean, perPage: Double): js.Promise[js.Array[Issue]] = js.native
+  
   /**
     * Loads issues matching search query with a score as to how well they matched.
     * @param query     The query used for the search
@@ -161,6 +173,7 @@ class GitHubApi protected () extends GitHubRef {
   def searchIssuesWithScoreAsync_updated(query: String, sort: updated, ascending: Boolean): js.Promise[js.Array[SearchResult[Issue]]] = js.native
   @JSName("searchIssuesWithScoreAsync")
   def searchIssuesWithScoreAsync_updated(query: String, sort: updated, ascending: Boolean, perPage: Double): js.Promise[js.Array[SearchResult[Issue]]] = js.native
+  
   /**
     * Loads repositories matching search query.
     * @param query     The query used for the search
@@ -210,6 +223,7 @@ class GitHubApi protected () extends GitHubRef {
   def searchRepositoriesAsync_updated(query: String, sort: updated, ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
   @JSName("searchRepositoriesAsync")
   def searchRepositoriesAsync_updated(query: String, sort: updated, ascending: Boolean, perPage: Double): js.Promise[js.Array[Repository]] = js.native
+  
   /**
     * Loads repositories matching search query with a score as to how well they matched.
     * @param query     The query used for the search
@@ -260,4 +274,3 @@ class GitHubApi protected () extends GitHubRef {
   @JSName("searchRepositoriesWithScoreAsync")
   def searchRepositoriesWithScoreAsync_updated(query: String, sort: updated, ascending: Boolean, perPage: Double): js.Promise[js.Array[SearchResult[Repository]]] = js.native
 }
-

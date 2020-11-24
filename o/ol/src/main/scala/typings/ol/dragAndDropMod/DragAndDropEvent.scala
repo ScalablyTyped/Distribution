@@ -4,32 +4,24 @@ import typings.ol.olFeatureMod.FeatureLike
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/interaction/DragAndDrop", "DragAndDropEvent")
 @js.native
-class DragAndDropEvent protected ()
+trait DragAndDropEvent
   extends typings.ol.eventMod.default {
-  def this(`type`: DragAndDropEventType, file: File) = this()
-  def this(
-    `type`: DragAndDropEventType,
-    file: File,
-    opt_features: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]
-  ) = this()
-  def this(
-    `type`: DragAndDropEventType,
-    file: File,
-    opt_features: js.UndefOr[scala.Nothing],
-    opt_projection: typings.ol.projectionMod.default
-  ) = this()
-  def this(
-    `type`: DragAndDropEventType,
-    file: File,
-    opt_features: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]],
-    opt_projection: typings.ol.projectionMod.default
-  ) = this()
+  
+  /**
+    * The features parsed from dropped data.
+    */
   var features: js.Array[FeatureLike] = js.native
+  
+  /**
+    * The dropped file.
+    */
   var file: File = js.native
+  
+  /**
+    * The feature projection.
+    */
   var projection: typings.ol.projectionMod.default = js.native
 }
-

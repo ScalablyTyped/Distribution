@@ -5,19 +5,32 @@ import typings.devextreme.mod.global.JQueryPromise
 import typings.devextreme.mod.global.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait dxDropDownButton extends Widget {
-  /** @name dxDropDownButton.close() */
+  
+  /**
+    * [descr:dxDropDownButton.close()]
+    */
   def close(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** @name DataHelperMixin.getDataSource() */
+  
+  /**
+    * [descr:DataHelperMixin.getDataSource()]
+    */
   def getDataSource(): DataSource = js.native
-  /** @name dxDropDownButton.open() */
+  
+  /**
+    * [descr:dxDropDownButton.open()]
+    */
   def open(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** @name dxDropDownButton.toggle() */
+  
+  /**
+    * [descr:dxDropDownButton.toggle()]
+    */
   def toggle(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** @name dxDropDownButton.toggle(visibility) */
+  /**
+    * [descr:dxDropDownButton.toggle(visibility)]
+    */
   def toggle(visibility: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.camo.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("camo", "Document")
 @js.native
@@ -12,6 +12,7 @@ class Document[Schema /* <: DocumentSchema */] ()
   * Index signature
   */
 /* property */ StringDictionary[SchemaTypeExtended | String | Document[_] | js.Function] {
+  
   /**
     * Removes documents from the database.
     * Should only be used on an instantiated document with a valid id.
@@ -19,6 +20,7 @@ class Document[Schema /* <: DocumentSchema */] ()
     * @returns {Promise<number>} Number of deleted documents.
     */
   def delete(): js.Promise[Double] = js.native
+  
   /**
     * post-delete hook.
     *
@@ -26,6 +28,7 @@ class Document[Schema /* <: DocumentSchema */] ()
     * @returns {Promise<any>}
     */
   /* protected */ def postDelete(): js.Promise[_] = js.native
+  
   /**
     * post-save hook.
     *
@@ -33,6 +36,7 @@ class Document[Schema /* <: DocumentSchema */] ()
     * @returns {Promise<any>}
     */
   /* protected */ def postSave(): js.Promise[_] = js.native
+  
   /**
     * post-validate hook.
     *
@@ -40,6 +44,7 @@ class Document[Schema /* <: DocumentSchema */] ()
     * @returns {Promise<any>}
     */
   /* protected */ def postValidate(): js.Promise[_] = js.native
+  
   /**
     * pre-delete hook.
     *
@@ -47,6 +52,7 @@ class Document[Schema /* <: DocumentSchema */] ()
     * @returns {Promise<any>}
     */
   /* protected */ def preDelete(): js.Promise[_] = js.native
+  
   /**
     * pre-save hook.
     *
@@ -54,6 +60,7 @@ class Document[Schema /* <: DocumentSchema */] ()
     * @returns {Promise<any>}
     */
   /* protected */ def preSave(): js.Promise[_] = js.native
+  
   /**
     * pre-validate hook.
     *
@@ -61,12 +68,14 @@ class Document[Schema /* <: DocumentSchema */] ()
     * @returns {Promise<any>}
     */
   /* protected */ def preValidate(): js.Promise[_] = js.native
+  
   /**
     * Saves the document instance to the database.
     *
     * @returns {Promise<Schema>}
     */
   def save(): js.Promise[Schema] = js.native
+  
   /**
     * Sets the schema (to be used on the constructor).
     *
@@ -75,6 +84,7 @@ class Document[Schema /* <: DocumentSchema */] ()
     * @param {Schema} schema
     */
   /* protected */ def schema[Schema](schema: Schema): Unit = js.native
+  
   /**
     * Serialized document to just the data, which includes nested and referenced data.
     *
@@ -82,11 +92,11 @@ class Document[Schema /* <: DocumentSchema */] ()
     */
   def toJSON(): js.Any = js.native
 }
-
 /* static members */
 @JSImport("camo", "Document")
 @js.native
 object Document extends js.Object {
+  
   /**
     * Static method to define the collection name.
     *
@@ -95,6 +105,7 @@ object Document extends js.Object {
     * @returns {string} The collection name.
     */
   /* protected */ def collectionName(): String = js.native
+  
   /**
     * Number of matching documents without retrieving all the data.
     *
@@ -103,6 +114,7 @@ object Document extends js.Object {
     * @returns {Promise<number>}
     */
   def count(query: js.Any): js.Promise[Double] = js.native
+  
   /**
     * Creates a camo document instance.
     *
@@ -112,6 +124,7 @@ object Document extends js.Object {
     * @returns {DocumentInstance<StaticSchema>} A camo document instance.
     */
   def create[StaticSchema /* <: DocumentSchema */](schema: StaticSchema): Document[StaticSchema] = js.native
+  
   /**
     * Removes all documents matching the query.
     *
@@ -120,6 +133,7 @@ object Document extends js.Object {
     * @returns {Promise<number>} Number of deleted documents.
     */
   def deleteMany(query: js.Any): js.Promise[Double] = js.native
+  
   /**
     * Removes the first document found, even if multiple documents match the query.
     *
@@ -128,6 +142,7 @@ object Document extends js.Object {
     * @returns {Promise<number>} Number of deleted documents.
     */
   def deleteOne(query: js.Any): js.Promise[Double] = js.native
+  
   /**
     * Return all documents matching the query.
     *
@@ -139,6 +154,7 @@ object Document extends js.Object {
     */
   def find[StaticSchema /* <: DocumentSchema */](query: js.Any): js.Promise[js.Array[StaticSchema]] = js.native
   def find[StaticSchema /* <: DocumentSchema */](query: js.Any, options: FindOptions): js.Promise[js.Array[StaticSchema]] = js.native
+  
   /**
     * Return the first document found, even if multiple documents match the query.
     *
@@ -150,6 +166,7 @@ object Document extends js.Object {
     */
   def findOne[StaticSchema /* <: DocumentSchema */](query: js.Any): js.Promise[StaticSchema] = js.native
   def findOne[StaticSchema /* <: DocumentSchema */](query: js.Any, options: FindOneOptions): js.Promise[StaticSchema] = js.native
+  
   /**
     * Find the first document and delete it.
     *
@@ -160,6 +177,7 @@ object Document extends js.Object {
     */
   def findOneAndDelete(query: js.Any): js.Promise[Double] = js.native
   def findOneAndDelete(query: js.Any, options: js.Any): js.Promise[Double] = js.native
+  
   /**
     * Find and update (or insert) a document in one atomic operation (atomic for MongoDB only).
     *
@@ -173,4 +191,3 @@ object Document extends js.Object {
   def findOneAndUpdate[StaticSchema /* <: DocumentSchema */](query: js.Any, values: StaticSchema): js.Promise[StaticSchema] = js.native
   def findOneAndUpdate[StaticSchema /* <: DocumentSchema */](query: js.Any, values: StaticSchema, options: FindOneAndUpdateOptions): js.Promise[StaticSchema] = js.native
 }
-

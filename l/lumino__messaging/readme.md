@@ -10,9 +10,9 @@ Lumino Message Passing
 | ------------------ | :-------------: |
 | Full name          | @lumino/messaging |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 78 |
-| # downloads        | 320284 |
+| # releases         | 11 |
+| # dependents       | 102 |
+| # downloads        | 650078 |
 | # stars            | 0 |
 
 ## Links

@@ -3,11 +3,13 @@ package typings.mobileMessagingCordova.MobileMessagingCordova
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Api extends js.Object {
+  
   def defaultMessageStorage(): js.UndefOr[DefaultMessageStorage] = js.native
+  
   /**
     * Performs depersonalization of the current installation on the platform.
     *
@@ -18,6 +20,7 @@ trait Api extends js.Object {
     callback: js.Function1[/* personalizeContext */ PersonalizeContext, Unit],
     errorCallback: js.Function1[/* error */ MobileMessagingError, Unit]
   ): Unit = js.native
+  
   /**
     * Performs depersonalization of the installation referenced by pushRegistrationId.
     *
@@ -30,6 +33,7 @@ trait Api extends js.Object {
     callback: js.Function1[/* installation */ Installation, Unit],
     errorCallback: js.Function1[/* error */ MobileMessagingError, Unit]
   ): Unit = js.native
+  
   /**
     * Fetches installation from the server.
     *
@@ -40,6 +44,7 @@ trait Api extends js.Object {
     callback: js.Function1[/* installation */ Installation, Unit],
     errorCallback: js.Function1[/* error */ MobileMessagingError, Unit]
   ): Unit = js.native
+  
   /**
     * Fetch user data from the server.
     *
@@ -50,6 +55,7 @@ trait Api extends js.Object {
     callback: js.Function1[/* userData */ UserData, Unit],
     errorCallback: js.Function1[/* error */ MobileMessagingError, Unit]
   ): Unit = js.native
+  
   /**
     * Gets locally cached installation.
     *
@@ -60,6 +66,7 @@ trait Api extends js.Object {
     callback: js.Function1[/* installation */ Installation, Unit],
     errorCallback: js.Function1[/* error */ MobileMessagingError, Unit]
   ): Unit = js.native
+  
   /**
     * Gets user data from the locally stored cache.
     *
@@ -70,6 +77,7 @@ trait Api extends js.Object {
     callback: js.Function1[/* userData */ UserData, Unit],
     errorCallback: js.Function1[/* error */ MobileMessagingError, Unit]
   ): Unit = js.native
+  
   /**
     * Starts a new Mobile Messaging session.
     *
@@ -78,6 +86,7 @@ trait Api extends js.Object {
     */
   def init(config: Configuration): Unit = js.native
   def init(config: Configuration, onInitError: js.Function1[/* error */ MobileMessagingError, Unit]): Unit = js.native
+  
   /**
     * Mark messages as seen
     *
@@ -90,8 +99,11 @@ trait Api extends js.Object {
     callback: js.Function1[/* messages */ js.Array[Message], Unit],
     errorCallback: js.Function1[/* error */ MobileMessagingError, Unit]
   ): Unit = js.native
+  
   def off(event: Event, handler: js.Function1[/* message */ Message, Unit]): Unit = js.native
+  
   def on(event: Event, handler: js.Function1[/* message */ Message, Unit]): Unit = js.native
+  
   /**
     * Performs personalization of the current installation on the platform.
     *
@@ -104,6 +116,7 @@ trait Api extends js.Object {
     callback: js.Function1[/* personalizeContext */ PersonalizeContext, Unit],
     errorCallback: js.Function1[/* error */ MobileMessagingError, Unit]
   ): Unit = js.native
+  
   /**
     * Register to event coming from MobileMessaging library.
     * The following events are supported:
@@ -112,6 +125,7 @@ trait Api extends js.Object {
     * @param handler will be called when event occurs
     */
   def register(event: Event, handler: js.Function1[/* message */ Message, Unit]): Unit = js.native
+  
   /**
     * Saves installation to the server.
     *
@@ -124,6 +138,7 @@ trait Api extends js.Object {
     callback: js.Function1[/* data */ Installation, Unit],
     errorCallback: js.Function1[/* error */ MobileMessagingError, Unit]
   ): Unit = js.native
+  
   /**
     * Saves user data to the server.
     *
@@ -136,6 +151,7 @@ trait Api extends js.Object {
     callback: js.Function1[/* userData */ UserData, Unit],
     errorCallback: js.Function1[/* error */ MobileMessagingError, Unit]
   ): Unit = js.native
+  
   /**
     * Sets any installation as primary for this user.
     *
@@ -150,6 +166,7 @@ trait Api extends js.Object {
     callback: js.Function1[/* installation */ Installation, Unit],
     errorCallback: js.Function1[/* error */ MobileMessagingError, Unit]
   ): Unit = js.native
+  
   /**
     * Displays built-in error dialog so that user can resolve errors during sdk initialization.
     *
@@ -162,6 +179,7 @@ trait Api extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* error */ MobileMessagingError, Unit]
   ): Unit = js.native
+  
   /**
     * Sends an event to the server eventually, handles possible errors and do retries for you.
     *
@@ -177,6 +195,7 @@ trait Api extends js.Object {
     * }
     */
   def submitEvent(eventData: CustomEvent[_]): Unit = js.native
+  
   /**
     * Sends an event to the server immediately.
     * You have to handle possible connection or server errors, do retries yourself.
@@ -195,6 +214,7 @@ trait Api extends js.Object {
     * @param errorCallback will be called on error, you have to handle error and do retries yourself
     */
   def submitEventImmediately(eventData: CustomEvent[_], callback: js.Function0[Unit], errorCallback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Un register from MobileMessaging library event.
     *
@@ -203,4 +223,3 @@ trait Api extends js.Object {
     */
   def unregister(event: Event, handler: js.Function1[/* message */ Message, Unit]): Unit = js.native
 }
-

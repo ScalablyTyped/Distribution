@@ -1,7 +1,7 @@
 
 # Scala.js typings for unfetch
 
-Typings are for version 4.1.0
+Typings are for version 4.2.0
 
 ## Library description:
 Bare minimum fetch polyfill in 500 bytes
@@ -10,9 +10,9 @@ Bare minimum fetch polyfill in 500 bytes
 | ------------------ | :-------------: |
 | Full name          | unfetch |
 | Keywords           | fetch, polyfill, xhr, ajax |
-| # releases         | 7 |
-| # dependents       | 196 |
-| # downloads        | 34212873 |
+| # releases         | 5 |
+| # dependents       | 247 |
+| # downloads        | 86323908 |
 | # stars            | 12 |
 
 ## Links

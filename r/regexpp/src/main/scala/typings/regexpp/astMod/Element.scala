@@ -11,7 +11,7 @@ import typings.regexpp.regexppStrings.start
 import typings.regexpp.regexppStrings.word
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.regexpp.astMod.Assertion
@@ -19,8 +19,8 @@ import scala.scalajs.js.annotation._
   - typings.regexpp.astMod.QuantifiableElement
 */
 trait Element extends js.Object
-
 object Element {
+  
   @scala.inline
   def AnyCharacterSet(
     end: Double,
@@ -34,6 +34,7 @@ object Element {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
+  
   @scala.inline
   def WordBoundaryAssertion(
     end: Double,
@@ -48,6 +49,7 @@ object Element {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
+  
   @scala.inline
   def Quantifier(
     element: QuantifiableElement,
@@ -64,6 +66,7 @@ object Element {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
+  
   @scala.inline
   def Backreference(
     end: Double,
@@ -78,6 +81,7 @@ object Element {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
+  
   @scala.inline
   def LookaheadAssertion(
     alternatives: js.Array[Alternative],
@@ -93,6 +97,7 @@ object Element {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
+  
   @scala.inline
   def CapturingGroup(
     alternatives: js.Array[Alternative],
@@ -107,6 +112,7 @@ object Element {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
+  
   @scala.inline
   def EscapeCharacterSet(
     end: Double,
@@ -121,6 +127,7 @@ object Element {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
+  
   @scala.inline
   def UnicodePropertyCharacterSet(
     end: Double,
@@ -136,6 +143,7 @@ object Element {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
+  
   @scala.inline
   def LookbehindAssertion(
     alternatives: js.Array[Alternative],
@@ -151,6 +159,7 @@ object Element {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
+  
   @scala.inline
   def Character(
     end: Double,
@@ -164,6 +173,7 @@ object Element {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
+  
   @scala.inline
   def CharacterClass(
     elements: js.Array[CharacterClassElement],
@@ -178,6 +188,7 @@ object Element {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
+  
   @scala.inline
   def Group(
     alternatives: js.Array[Alternative],
@@ -191,6 +202,7 @@ object Element {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
+  
   @scala.inline
   def EdgeAssertion(
     end: Double,
@@ -205,4 +217,3 @@ object Element {
     __obj.asInstanceOf[Element]
   }
 }
-

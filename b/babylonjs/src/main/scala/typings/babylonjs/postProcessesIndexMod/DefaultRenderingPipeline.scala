@@ -4,7 +4,7 @@ import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/index", "DefaultRenderingPipeline")
 @js.native
@@ -19,16 +19,152 @@ import scala.scalajs.js.annotation._
 class DefaultRenderingPipeline ()
   extends typings.babylonjs.renderPipelineIndexMod.DefaultRenderingPipeline {
   def this(name: String) = this()
+  def this(name: js.UndefOr[scala.Nothing], hdr: Boolean) = this()
   def this(name: String, hdr: Boolean) = this()
+  def this(name: js.UndefOr[scala.Nothing], hdr: js.UndefOr[scala.Nothing], scene: Scene) = this()
+  def this(name: js.UndefOr[scala.Nothing], hdr: Boolean, scene: Scene) = this()
+  def this(name: String, hdr: js.UndefOr[scala.Nothing], scene: Scene) = this()
   def this(name: String, hdr: Boolean, scene: Scene) = this()
+  def this(
+    name: js.UndefOr[scala.Nothing],
+    hdr: js.UndefOr[scala.Nothing],
+    scene: js.UndefOr[scala.Nothing],
+    cameras: js.Array[Camera]
+  ) = this()
+  def this(
+    name: js.UndefOr[scala.Nothing],
+    hdr: js.UndefOr[scala.Nothing],
+    scene: Scene,
+    cameras: js.Array[Camera]
+  ) = this()
+  def this(
+    name: js.UndefOr[scala.Nothing],
+    hdr: Boolean,
+    scene: js.UndefOr[scala.Nothing],
+    cameras: js.Array[Camera]
+  ) = this()
+  def this(name: js.UndefOr[scala.Nothing], hdr: Boolean, scene: Scene, cameras: js.Array[Camera]) = this()
+  def this(
+    name: String,
+    hdr: js.UndefOr[scala.Nothing],
+    scene: js.UndefOr[scala.Nothing],
+    cameras: js.Array[Camera]
+  ) = this()
+  def this(name: String, hdr: js.UndefOr[scala.Nothing], scene: Scene, cameras: js.Array[Camera]) = this()
+  def this(name: String, hdr: Boolean, scene: js.UndefOr[scala.Nothing], cameras: js.Array[Camera]) = this()
   def this(name: String, hdr: Boolean, scene: Scene, cameras: js.Array[Camera]) = this()
+  def this(
+    name: js.UndefOr[scala.Nothing],
+    hdr: js.UndefOr[scala.Nothing],
+    scene: js.UndefOr[scala.Nothing],
+    cameras: js.UndefOr[scala.Nothing],
+    automaticBuild: Boolean
+  ) = this()
+  def this(
+    name: js.UndefOr[scala.Nothing],
+    hdr: js.UndefOr[scala.Nothing],
+    scene: js.UndefOr[scala.Nothing],
+    cameras: js.Array[Camera],
+    automaticBuild: Boolean
+  ) = this()
+  def this(
+    name: js.UndefOr[scala.Nothing],
+    hdr: js.UndefOr[scala.Nothing],
+    scene: Scene,
+    cameras: js.UndefOr[scala.Nothing],
+    automaticBuild: Boolean
+  ) = this()
+  def this(
+    name: js.UndefOr[scala.Nothing],
+    hdr: js.UndefOr[scala.Nothing],
+    scene: Scene,
+    cameras: js.Array[Camera],
+    automaticBuild: Boolean
+  ) = this()
+  def this(
+    name: js.UndefOr[scala.Nothing],
+    hdr: Boolean,
+    scene: js.UndefOr[scala.Nothing],
+    cameras: js.UndefOr[scala.Nothing],
+    automaticBuild: Boolean
+  ) = this()
+  def this(
+    name: js.UndefOr[scala.Nothing],
+    hdr: Boolean,
+    scene: js.UndefOr[scala.Nothing],
+    cameras: js.Array[Camera],
+    automaticBuild: Boolean
+  ) = this()
+  def this(
+    name: js.UndefOr[scala.Nothing],
+    hdr: Boolean,
+    scene: Scene,
+    cameras: js.UndefOr[scala.Nothing],
+    automaticBuild: Boolean
+  ) = this()
+  def this(
+    name: js.UndefOr[scala.Nothing],
+    hdr: Boolean,
+    scene: Scene,
+    cameras: js.Array[Camera],
+    automaticBuild: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hdr: js.UndefOr[scala.Nothing],
+    scene: js.UndefOr[scala.Nothing],
+    cameras: js.UndefOr[scala.Nothing],
+    automaticBuild: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hdr: js.UndefOr[scala.Nothing],
+    scene: js.UndefOr[scala.Nothing],
+    cameras: js.Array[Camera],
+    automaticBuild: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hdr: js.UndefOr[scala.Nothing],
+    scene: Scene,
+    cameras: js.UndefOr[scala.Nothing],
+    automaticBuild: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hdr: js.UndefOr[scala.Nothing],
+    scene: Scene,
+    cameras: js.Array[Camera],
+    automaticBuild: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hdr: Boolean,
+    scene: js.UndefOr[scala.Nothing],
+    cameras: js.UndefOr[scala.Nothing],
+    automaticBuild: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hdr: Boolean,
+    scene: js.UndefOr[scala.Nothing],
+    cameras: js.Array[Camera],
+    automaticBuild: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hdr: Boolean,
+    scene: Scene,
+    cameras: js.UndefOr[scala.Nothing],
+    automaticBuild: Boolean
+  ) = this()
   def this(name: String, hdr: Boolean, scene: Scene, cameras: js.Array[Camera], automaticBuild: Boolean) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/PostProcesses/index", "DefaultRenderingPipeline")
 @js.native
 object DefaultRenderingPipeline extends js.Object {
+  
   /**
     * Parse the serialized pipeline
     * @param source Source pipeline.
@@ -38,4 +174,3 @@ object DefaultRenderingPipeline extends js.Object {
     */
   def Parse(source: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.defaultRenderingPipelineMod.DefaultRenderingPipeline = js.native
 }
-

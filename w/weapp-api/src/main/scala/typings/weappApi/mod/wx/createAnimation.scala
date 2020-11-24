@@ -2,11 +2,12 @@ package typings.weappApi.mod.wx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("weapp-api", "wx.createAnimation")
 @js.native
 object createAnimation extends js.Object {
+  
   /**
     * 创建一个动画实例animation。调用实例的方法来描述动画。
     * 最后通过动画实例的export方法导出动画数据传递给组件的animation属性。
@@ -16,4 +17,3 @@ object createAnimation extends js.Object {
   def apply(): Animation = js.native
   def apply(options: CreateAnimationOptions): Animation = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.asmcryptoJs.mod
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asmcrypto.js", "AES_CCM")
 @js.native
@@ -32,11 +32,11 @@ class AES_CCM protected ()
   ) = this()
   def this(key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagSize: Double, dataLength: Double) = this()
 }
-
 /* static members */
 @JSImport("asmcrypto.js", "AES_CCM")
 @js.native
 object AES_CCM extends js.Object {
+  
   def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = js.native
   def decrypt(
     cipher: Uint8Array,
@@ -47,6 +47,7 @@ object AES_CCM extends js.Object {
   ): Uint8Array = js.native
   def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = js.native
   def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = js.native
+  
   def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = js.native
   def encrypt(
     clear: Uint8Array,
@@ -58,4 +59,3 @@ object AES_CCM extends js.Object {
   def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = js.native
   def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = js.native
 }
-

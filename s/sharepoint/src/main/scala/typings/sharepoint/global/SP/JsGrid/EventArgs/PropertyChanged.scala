@@ -6,7 +6,7 @@ import typings.sharepoint.SP.JsGrid.Internal.PropertyUpdate
 import typings.sharepoint.SP.JsGrid.ValidationState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.JsGrid.EventArgs.PropertyChanged")
 @js.native
@@ -22,4 +22,3 @@ class PropertyChanged protected ()
     validationState: ValidationState
   ) = this()
 }
-

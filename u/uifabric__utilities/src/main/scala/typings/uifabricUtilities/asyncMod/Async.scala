@@ -5,7 +5,7 @@ import typings.uifabricUtilities.anon.Leading
 import typings.uifabricUtilities.anon.MaxWait
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uifabric/utilities/lib/Async", "Async")
 @js.native
@@ -13,17 +13,28 @@ class Async () extends js.Object {
   def this(parent: js.Object) = this()
   def this(parent: js.UndefOr[scala.Nothing], onError: js.Function1[/* e */ js.Any, Unit]) = this()
   def this(parent: js.Object, onError: js.Function1[/* e */ js.Any, Unit]) = this()
+  
   var _animationFrameIds: js.Any = js.native
+  
   var _immediateIds: js.Any = js.native
+  
   var _intervalIds: js.Any = js.native
+  
   var _isDisposed: js.Any = js.native
-  var _noop: js.Any = js.native
-  var _onErrorHandler: js.Any = js.native
-  var _parent: js.Any = js.native
-  var _timeoutIds: js.Any = js.native
+  
   /* protected */ def _logError(e: js.Any): Unit = js.native
+  
+  var _noop: js.Any = js.native
+  
+  var _onErrorHandler: js.Any = js.native
+  
+  var _parent: js.Any = js.native
+  
+  var _timeoutIds: js.Any = js.native
+  
   def cancelAnimationFrame(id: Double): Unit = js.native
   def cancelAnimationFrame(id: Double, targetElement: Element): Unit = js.native
+  
   /**
     * Clears the immediate.
     * @param id - Id to cancel.
@@ -31,16 +42,19 @@ class Async () extends js.Object {
     */
   def clearImmediate(id: Double): Unit = js.native
   def clearImmediate(id: Double, targetElement: Element): Unit = js.native
+  
   /**
     * Clears the interval.
     * @param id - Id to cancel.
     */
   def clearInterval(id: Double): Unit = js.native
+  
   /**
     * Clears the timeout.
     * @param id - Id to cancel.
     */
   def clearTimeout(id: Double): Unit = js.native
+  
   /**
     * Creates a function that will delay the execution of func until after wait milliseconds have
     * elapsed since the last time it was invoked. Provide an options object to indicate that func
@@ -56,16 +70,19 @@ class Async () extends js.Object {
     * @param options - The options object.
     * @returns The new debounced function.
     */
-  def debounce[T /* <: js.Function */](func: T): ICancelable[T] with js.Function0[Unit] = js.native
-  def debounce[T /* <: js.Function */](func: T, wait: js.UndefOr[scala.Nothing], options: MaxWait): ICancelable[T] with js.Function0[Unit] = js.native
-  def debounce[T /* <: js.Function */](func: T, wait: Double): ICancelable[T] with js.Function0[Unit] = js.native
-  def debounce[T /* <: js.Function */](func: T, wait: Double, options: MaxWait): ICancelable[T] with js.Function0[Unit] = js.native
+  def debounce[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T): ICancelable[T] with T = js.native
+  def debounce[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: js.UndefOr[scala.Nothing], options: MaxWait): ICancelable[T] with T = js.native
+  def debounce[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: Double): ICancelable[T] with T = js.native
+  def debounce[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: Double, options: MaxWait): ICancelable[T] with T = js.native
+  
   /**
     * Dispose function, clears all async operations.
     */
   def dispose(): Unit = js.native
+  
   def requestAnimationFrame(callback: js.Function0[Unit]): Double = js.native
   def requestAnimationFrame(callback: js.Function0[Unit], targetElement: Element): Double = js.native
+  
   /**
     * SetImmediate override, which will auto cancel the immediate during dispose.
     * @param callback - Callback to execute.
@@ -74,6 +91,7 @@ class Async () extends js.Object {
     */
   def setImmediate(callback: js.Function0[Unit]): Double = js.native
   def setImmediate(callback: js.Function0[Unit], targetElement: Element): Double = js.native
+  
   /**
     * SetInterval override, which will auto cancel the timeout during dispose.
     * @param callback - Callback to execute.
@@ -81,6 +99,7 @@ class Async () extends js.Object {
     * @returns The setTimeout id.
     */
   def setInterval(callback: js.Function0[Unit], duration: Double): Double = js.native
+  
   /**
     * SetTimeout override, which will auto cancel the timeout during dispose.
     * @param callback - Callback to execute.
@@ -88,6 +107,7 @@ class Async () extends js.Object {
     * @returns The setTimeout id.
     */
   def setTimeout(callback: js.Function0[Unit], duration: Double): Double = js.native
+  
   /**
     * Creates a function that, when executed, will only call the func function at most once per
     * every wait milliseconds. Provide an options object to indicate that func should be invoked
@@ -102,9 +122,8 @@ class Async () extends js.Object {
     * @param options - The options object.
     * @returns The new throttled function.
     */
-  def throttle[T /* <: js.Function */](func: T): T | js.Function0[Unit] = js.native
-  def throttle[T /* <: js.Function */](func: T, wait: js.UndefOr[scala.Nothing], options: Leading): T | js.Function0[Unit] = js.native
-  def throttle[T /* <: js.Function */](func: T, wait: Double): T | js.Function0[Unit] = js.native
-  def throttle[T /* <: js.Function */](func: T, wait: Double, options: Leading): T | js.Function0[Unit] = js.native
+  def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T): T = js.native
+  def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: js.UndefOr[scala.Nothing], options: Leading): T = js.native
+  def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: Double): T = js.native
+  def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: Double, options: Leading): T = js.native
 }
-

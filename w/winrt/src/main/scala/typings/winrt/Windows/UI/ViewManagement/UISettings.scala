@@ -4,12 +4,12 @@ import typings.winrt.Windows.Foundation.Size
 import typings.winrt.Windows.UI.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UISettings extends IUISettings
-
 object UISettings {
+  
   @scala.inline
   def apply(
     animationsEnabled: Boolean,
@@ -30,4 +30,3 @@ object UISettings {
     __obj.asInstanceOf[UISettings]
   }
 }
-

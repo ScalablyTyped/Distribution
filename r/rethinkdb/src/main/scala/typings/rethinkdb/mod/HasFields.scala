@@ -2,10 +2,11 @@ package typings.rethinkdb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HasFields[T] extends js.Object {
+  
   /**
     * Test if an object has one or more fields. An object has a field if it has that key and the key has a non-null value. For instance, the object `{'a': 1,'b': 2,'c': null}` has the fields `a` and `b`.
     *
@@ -23,4 +24,3 @@ trait HasFields[T] extends js.Object {
     */
   def hasFields(selector: BooleanMap): T = js.native
 }
-

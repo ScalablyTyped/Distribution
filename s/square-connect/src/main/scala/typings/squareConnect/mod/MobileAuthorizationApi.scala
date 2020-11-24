@@ -2,7 +2,7 @@ package typings.squareConnect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "MobileAuthorizationApi")
 @js.native
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 class MobileAuthorizationApi () extends js.Object {
   def this(apiClient: ApiClient) = this()
+  
   /**
     * Generates code to authorize a mobile application to connect to a Square card reader Authorization codes are
     * one-time-use and expire __60 minutes__ after being issued.
@@ -21,4 +22,3 @@ class MobileAuthorizationApi () extends js.Object {
     */
   def createMobileAuthorizationCode(body: CreateMobileAuthorizationCodeRequest): js.Promise[CreateMobileAuthorizationCodeResponse] = js.native
 }
-

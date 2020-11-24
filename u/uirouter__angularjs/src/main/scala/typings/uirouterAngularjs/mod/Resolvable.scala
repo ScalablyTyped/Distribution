@@ -4,7 +4,7 @@ import typings.uirouterCore.resolveInterfaceMod.ResolvableLiteral
 import typings.uirouterCore.resolveInterfaceMod.ResolvePolicy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "Resolvable")
 @js.native
@@ -60,11 +60,10 @@ class Resolvable protected ()
   ) = this()
   def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_], policy: ResolvePolicy, data: js.Any) = this()
 }
-
 /* static members */
 @JSImport("@uirouter/angularjs", "Resolvable")
 @js.native
 object Resolvable extends js.Object {
+  
   def fromData(token: js.Any, data: js.Any): typings.uirouterCore.resolvableMod.Resolvable = js.native
 }
-

@@ -21,7 +21,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexLibreoffice.activexLibreofficeNumbers.`15`
@@ -45,45 +45,62 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`9`
 */
 trait Constants extends js.Object
-
 object Constants {
+  
   @scala.inline
   def AutoFilter: `15` = 15.asInstanceOf[`15`]
+  
   @scala.inline
   def DeleteRecord: `10` = 10.asInstanceOf[`10`]
+  
   @scala.inline
   def InteractiveFilter: `16` = 16.asInstanceOf[`16`]
+  
   @scala.inline
   def InteractiveSort: `14` = 14.asInstanceOf[`14`]
+  
   @scala.inline
   def MoveAbsolute: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def MoveToFirst: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def MoveToInsertRow: `7` = 7.asInstanceOf[`7`]
+  
   @scala.inline
   def MoveToLast: `6` = 6.asInstanceOf[`6`]
+  
   @scala.inline
   def MoveToNext: `5` = 5.asInstanceOf[`5`]
+  
   @scala.inline
   def MoveToPrevious: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def RefreshCurrentControl: `19` = 19.asInstanceOf[`19`]
+  
   @scala.inline
   def ReloadForm: `11` = 11.asInstanceOf[`11`]
+  
   @scala.inline
   def RemoveFilterAndSort: `18` = 18.asInstanceOf[`18`]
+  
   @scala.inline
   def SaveRecordChanges: `8` = 8.asInstanceOf[`8`]
+  
   @scala.inline
   def SortAscending: `12` = 12.asInstanceOf[`12`]
+  
   @scala.inline
   def SortDescending: `13` = 13.asInstanceOf[`13`]
+  
   @scala.inline
   def ToggleApplyFilter: `17` = 17.asInstanceOf[`17`]
+  
   @scala.inline
   def TotalRecords: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def UndoRecordChanges: `9` = 9.asInstanceOf[`9`]
 }
-

@@ -2,7 +2,7 @@ package typings.mdast.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.mdast.mdastStrings.shortcut
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.mdast.mdastStrings.full
 */
 trait ReferenceType extends js.Object
-
 object ReferenceType {
+  
   @scala.inline
   def collapsed: typings.mdast.mdastStrings.collapsed = "collapsed".asInstanceOf[typings.mdast.mdastStrings.collapsed]
+  
   @scala.inline
   def full: typings.mdast.mdastStrings.full = "full".asInstanceOf[typings.mdast.mdastStrings.full]
+  
   @scala.inline
   def shortcut: typings.mdast.mdastStrings.shortcut = "shortcut".asInstanceOf[typings.mdast.mdastStrings.shortcut]
 }
-

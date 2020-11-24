@@ -3,11 +3,12 @@ package typings.luminoAlgorithm.arrayMod.ArrayExt
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/array", "ArrayExt.shallowEqual")
 @js.native
 object shallowEqual extends js.Object {
+  
   /**
     * Test whether two arrays are shallowly equal.
     *
@@ -41,4 +42,3 @@ object shallowEqual extends js.Object {
   def apply[T](a: ArrayLike[T], b: ArrayLike[T]): Boolean = js.native
   def apply[T](a: ArrayLike[T], b: ArrayLike[T], fn: js.Function2[/* a */ T, /* b */ T, Boolean]): Boolean = js.native
 }
-

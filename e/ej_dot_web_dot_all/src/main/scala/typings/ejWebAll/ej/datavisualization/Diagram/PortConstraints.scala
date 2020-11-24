@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PortConstraints extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.PortConstraints")
 @js.native
 object PortConstraints extends js.Object {
+  
   //Enables connections with connector
   @js.native
   sealed trait Connect extends PortConstraints
@@ -21,6 +21,4 @@ object PortConstraints extends js.Object {
   //Disable all constraints
   @js.native
   sealed trait None extends PortConstraints
-  
 }
-

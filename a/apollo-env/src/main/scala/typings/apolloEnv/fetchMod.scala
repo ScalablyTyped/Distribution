@@ -11,11 +11,12 @@ import typings.nodeFetch.mod.ResponseInit
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("apollo-env/lib/fetch", JSImport.Namespace)
 @js.native
 object fetchMod extends js.Object {
+  
   @js.native
   class Body ()
     extends typings.apolloEnv.fetchFetchMod.Body {
@@ -43,6 +44,14 @@ object fetchMod extends js.Object {
     def this(body: BodyInit) = this()
     def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
   }
+  /* static members */
+  @js.native
+  object Response extends js.Object {
+    
+    def error(): typings.nodeFetch.mod.Response = js.native
+    
+    def redirect(url: String, status: Double): typings.nodeFetch.mod.Response = js.native
+  }
   
   @js.native
   class URL protected ()
@@ -62,19 +71,12 @@ object fetchMod extends js.Object {
     def this(init: Iterable[js.Tuple2[String, String]]) = this()
   }
   
-  /* static members */
-  @js.native
-  object Response extends js.Object {
-    def error(): typings.nodeFetch.mod.Response = js.native
-    def redirect(url: String, status: Double): typings.nodeFetch.mod.Response = js.native
-  }
-  
   @js.native
   object fetch extends js.Object {
+    
     def apply(url: RequestInfo): js.Promise[typings.nodeFetch.mod.Response] = js.native
     def apply(url: RequestInfo, init: RequestInit): js.Promise[typings.nodeFetch.mod.Response] = js.native
+    
     def isRedirect(code: Double): Boolean = js.native
   }
-  
 }
-

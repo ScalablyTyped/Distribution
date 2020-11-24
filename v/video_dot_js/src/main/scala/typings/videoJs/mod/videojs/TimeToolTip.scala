@@ -3,13 +3,14 @@ package typings.videoJs.mod.videojs
 import typings.std.ClientRect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Time tooltips display a time above the progress bar.
   */
 @js.native
 trait TimeToolTip extends Component {
+  
   /**
     * Updates the position of the time tooltip relative to the `SeekBar`.
     *
@@ -24,4 +25,3 @@ trait TimeToolTip extends Component {
     */
   def update(seekBarRect: ClientRect, seekBarPoint: Double, content: String): Unit = js.native
 }
-

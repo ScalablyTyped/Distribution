@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FlowShapes extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.FlowShapes")
 @js.native
 object FlowShapes extends js.Object {
+  
   //Used to specify node Shape as Annotation1
   @js.native
   sealed trait Annotation1 extends FlowShapes
@@ -101,6 +101,4 @@ object FlowShapes extends js.Object {
   //Used to specify node Shape as Terminator
   @js.native
   sealed trait Terminator extends FlowShapes
-  
 }
-

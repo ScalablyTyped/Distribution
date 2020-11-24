@@ -11,8 +11,8 @@ Look up environment settings specific to different operating systems
 | Full name          | osenv |
 | Keywords           | environment, variable, home, tmpdir, path, prompt, ps1 |
 | # releases         | 1 |
-| # dependents       | 448 |
-| # downloads        | 344934655 |
+| # dependents       | 486 |
+| # downloads        | 453970435 |
 | # stars            | 6 |
 
 ## Links

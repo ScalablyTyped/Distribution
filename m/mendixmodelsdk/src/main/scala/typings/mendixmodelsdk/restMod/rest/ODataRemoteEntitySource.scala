@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.restMod.rest
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.Entity
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.QueryBasedRemoteEntitySource
@@ -7,9 +8,10 @@ import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.restMod.StructureVersionInfo
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * In version 8.10.0: introduced
@@ -30,54 +32,64 @@ class ODataRemoteEntitySource protected () extends QueryBasedRemoteEntitySource 
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  /**
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 8.11.0: introduced
-    */
-  @JSName("key")
-  val key_FODataRemoteEntitySource: IODataKey | Null = js.native
-  @JSName("model")
-  var model_FODataRemoteEntitySource: IModel = js.native
+  
   @JSName("containerAsEntity")
   def containerAsEntity_MODataRemoteEntitySource: Entity = js.native
+  
   /**
     * In version 8.11.0: introduced
     */
   def entitySet: String = js.native
   def entitySet_=(newValue: String): Unit = js.native
+  
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+    *
+    * @ignore
     *
     * In version 8.11.0: introduced
     */
   def key: ODataKey | Null = js.native
   def key_=(newValue: ODataKey | Null): Unit = js.native
-  def remoteName: String = js.native
-  def remoteName_=(newValue: String): Unit = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+    *
+    * @ignore
+    *
+    * In version 8.11.0: introduced
+    */
+  @JSName("key")
+  val key_FODataRemoteEntitySource: IODataKey | Null = js.native
+  
+  def remoteName: String = js.native
+  def remoteName_=(newValue: String): Unit = js.native
+  
+  /**
+    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+    *
+    * @ignore
     */
   def sourceDocument: IConsumedODataService | Null = js.native
+  
   def sourceDocumentQualifiedName: String | Null = js.native
+  
   def sourceDocument_=(newValue: IConsumedODataService | Null): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataRemoteEntitySource")
 @js.native
 object ODataRemoteEntitySource extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new ODataRemoteEntitySource instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): ODataRemoteEntitySource = js.native
+  
   /**
     * Creates and returns a new ODataRemoteEntitySource instance in the SDK and on the server.
     * The new ODataRemoteEntitySource will be automatically stored in the 'source' property
@@ -87,5 +99,8 @@ object ODataRemoteEntitySource extends js.Object {
     *  8.10.0 and higher
     */
   def createIn(container: Entity): ODataRemoteEntitySource = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

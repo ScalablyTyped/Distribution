@@ -14,9 +14,130 @@ import typings.luminoDatagrid.textrendererMod.TextRenderer.HorizontalAlignment
 import typings.luminoDatagrid.textrendererMod.TextRenderer.VerticalAlignment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object luminoDatagridStrings {
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def body: body = "body".asInstanceOf[body]
+  
+  @scala.inline
+  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def cell: cell = "cell".asInstanceOf[cell]
+  
+  @scala.inline
+  def `cells-changed`: `cells-changed` = "cells-changed".asInstanceOf[`cells-changed`]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def column: column = "column".asInstanceOf[column]
+  
+  @scala.inline
+  def `column-header`: `column-header` = "column-header".asInstanceOf[`column-header`]
+  
+  @scala.inline
+  def `columns-inserted`: `columns-inserted` = "columns-inserted".asInstanceOf[`columns-inserted`]
+  
+  @scala.inline
+  def `columns-moved`: `columns-moved` = "columns-moved".asInstanceOf[`columns-moved`]
+  
+  @scala.inline
+  def `columns-removed`: `columns-removed` = "columns-removed".asInstanceOf[`columns-removed`]
+  
+  @scala.inline
+  def `corner-header`: `corner-header` = "corner-header".asInstanceOf[`corner-header`]
+  
+  @scala.inline
+  def current: current = "current".asInstanceOf[current]
+  
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  
+  @scala.inline
+  def `dateColondynamic-option`: `dateColondynamic-option` = "date:dynamic-option".asInstanceOf[`dateColondynamic-option`]
+  
+  @scala.inline
+  def dateColonoption: dateColonoption = "date:option".asInstanceOf[dateColonoption]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def down: down = "down".asInstanceOf[down]
+  
+  @scala.inline
+  def integer: integer = "integer".asInstanceOf[integer]
+  
+  @scala.inline
+  def `integerColondynamic-option`: `integerColondynamic-option` = "integer:dynamic-option".asInstanceOf[`integerColondynamic-option`]
+  
+  @scala.inline
+  def integerColonoption: integerColonoption = "integer:option".asInstanceOf[integerColonoption]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def `model-reset`: `model-reset` = "model-reset".asInstanceOf[`model-reset`]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  
+  @scala.inline
+  def `numberColondynamic-option`: `numberColondynamic-option` = "number:dynamic-option".asInstanceOf[`numberColondynamic-option`]
+  
+  @scala.inline
+  def numberColonoption: numberColonoption = "number:option".asInstanceOf[numberColonoption]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def row: row = "row".asInstanceOf[row]
+  
+  @scala.inline
+  def `row-header`: `row-header` = "row-header".asInstanceOf[`row-header`]
+  
+  @scala.inline
+  def `rows-inserted`: `rows-inserted` = "rows-inserted".asInstanceOf[`rows-inserted`]
+  
+  @scala.inline
+  def `rows-moved`: `rows-moved` = "rows-moved".asInstanceOf[`rows-moved`]
+  
+  @scala.inline
+  def `rows-removed`: `rows-removed` = "rows-removed".asInstanceOf[`rows-removed`]
+  
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  
+  @scala.inline
+  def `stringColondynamic-option`: `stringColondynamic-option` = "string:dynamic-option".asInstanceOf[`stringColondynamic-option`]
+  
+  @scala.inline
+  def stringColonoption: stringColonoption = "string:option".asInstanceOf[stringColonoption]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def up: up = "up".asInstanceOf[up]
+  
+  @scala.inline
+  def void: void = "void".asInstanceOf[void]
+  
   @js.native
   sealed trait all
     extends ClearMode
@@ -164,86 +285,4 @@ object luminoDatagridStrings {
   
   @js.native
   sealed trait void extends js.Object
-  
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def cell: cell = "cell".asInstanceOf[cell]
-  @scala.inline
-  def `cells-changed`: `cells-changed` = "cells-changed".asInstanceOf[`cells-changed`]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def column: column = "column".asInstanceOf[column]
-  @scala.inline
-  def `column-header`: `column-header` = "column-header".asInstanceOf[`column-header`]
-  @scala.inline
-  def `columns-inserted`: `columns-inserted` = "columns-inserted".asInstanceOf[`columns-inserted`]
-  @scala.inline
-  def `columns-moved`: `columns-moved` = "columns-moved".asInstanceOf[`columns-moved`]
-  @scala.inline
-  def `columns-removed`: `columns-removed` = "columns-removed".asInstanceOf[`columns-removed`]
-  @scala.inline
-  def `corner-header`: `corner-header` = "corner-header".asInstanceOf[`corner-header`]
-  @scala.inline
-  def current: current = "current".asInstanceOf[current]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def `dateColondynamic-option`: `dateColondynamic-option` = "date:dynamic-option".asInstanceOf[`dateColondynamic-option`]
-  @scala.inline
-  def dateColonoption: dateColonoption = "date:option".asInstanceOf[dateColonoption]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
-  @scala.inline
-  def `integerColondynamic-option`: `integerColondynamic-option` = "integer:dynamic-option".asInstanceOf[`integerColondynamic-option`]
-  @scala.inline
-  def integerColonoption: integerColonoption = "integer:option".asInstanceOf[integerColonoption]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def `model-reset`: `model-reset` = "model-reset".asInstanceOf[`model-reset`]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def `numberColondynamic-option`: `numberColondynamic-option` = "number:dynamic-option".asInstanceOf[`numberColondynamic-option`]
-  @scala.inline
-  def numberColonoption: numberColonoption = "number:option".asInstanceOf[numberColonoption]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def row: row = "row".asInstanceOf[row]
-  @scala.inline
-  def `row-header`: `row-header` = "row-header".asInstanceOf[`row-header`]
-  @scala.inline
-  def `rows-inserted`: `rows-inserted` = "rows-inserted".asInstanceOf[`rows-inserted`]
-  @scala.inline
-  def `rows-moved`: `rows-moved` = "rows-moved".asInstanceOf[`rows-moved`]
-  @scala.inline
-  def `rows-removed`: `rows-removed` = "rows-removed".asInstanceOf[`rows-removed`]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def `stringColondynamic-option`: `stringColondynamic-option` = "string:dynamic-option".asInstanceOf[`stringColondynamic-option`]
-  @scala.inline
-  def stringColonoption: stringColonoption = "string:option".asInstanceOf[stringColonoption]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
-  @scala.inline
-  def void: void = "void".asInstanceOf[void]
 }
-

@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "SSAO2RenderingPipeline")
 @js.native
@@ -14,6 +14,7 @@ class SSAO2RenderingPipeline protected ()
     * @param scene The scene linked to this pipeline
     * @param ratio The size of the postprocesses. Can be a number shared between passes or an object for more precision: { ssaoRatio: 0.5, blurRatio: 1.0 }
     * @param cameras The array of cameras that the rendering pipeline will be attached to
+    * @param forceGeometryBuffer Set to true if you want to use the legacy geometry buffer renderer
     */
   def this(name: String, scene: typings.babylonjs.sceneMod.Scene, ratio: js.Any) = this()
   def this(
@@ -22,16 +23,31 @@ class SSAO2RenderingPipeline protected ()
     ratio: js.Any,
     cameras: js.Array[typings.babylonjs.cameraMod.Camera]
   ) = this()
+  def this(
+    name: String,
+    scene: typings.babylonjs.sceneMod.Scene,
+    ratio: js.Any,
+    cameras: js.UndefOr[scala.Nothing],
+    forceGeometryBuffer: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: typings.babylonjs.sceneMod.Scene,
+    ratio: js.Any,
+    cameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    forceGeometryBuffer: Boolean
+  ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "SSAO2RenderingPipeline")
 @js.native
 object SSAO2RenderingPipeline extends js.Object {
+  
   /**
     *  Support test.
     */
   def IsSupported: Boolean = js.native
+  
   /**
     * Parse the serialized pipeline
     * @param source Source pipeline.
@@ -41,4 +57,3 @@ object SSAO2RenderingPipeline extends js.Object {
     */
   def Parse(source: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.ssao2RenderingPipelineMod.SSAO2RenderingPipeline = js.native
 }
-

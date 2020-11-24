@@ -12,7 +12,7 @@ close react component on press escape
 | Keywords           | react, escape, close, higher-order-component, hoc |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 67118 |
+| # downloads        | 73646 |
 | # stars            | 0 |
 
 ## Links

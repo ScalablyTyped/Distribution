@@ -3,7 +3,7 @@ package typings.jupyterlabNotebook.mod
 import typings.jupyterlabNotebook.widgetfactoryMod.NotebookWidgetFactory.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/notebook", "NotebookWidgetFactory")
 @js.native
@@ -16,4 +16,3 @@ class NotebookWidgetFactory protected ()
     */
   def this(options: IOptions[typings.jupyterlabNotebook.panelMod.NotebookPanel]) = this()
 }
-

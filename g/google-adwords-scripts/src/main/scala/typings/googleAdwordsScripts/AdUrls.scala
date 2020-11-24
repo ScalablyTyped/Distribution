@@ -2,14 +2,14 @@ package typings.googleAdwordsScripts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AdUrls
   extends AdWordsUrls
      with hasGetFinalUrl
-
 object AdUrls {
+  
   @scala.inline
   def apply(
     getCustomParameters: () => js.Object,
@@ -21,4 +21,3 @@ object AdUrls {
     __obj.asInstanceOf[AdUrls]
   }
 }
-

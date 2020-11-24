@@ -10,9 +10,9 @@ Rational approximation with bounded denominator
 | ------------------ | :-------------: |
 | Full name          | frac |
 | Keywords           | math, fraction, rational, approximation |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 17237403 |
+| # downloads        | 27484160 |
 | # stars            | 0 |
 
 ## Links

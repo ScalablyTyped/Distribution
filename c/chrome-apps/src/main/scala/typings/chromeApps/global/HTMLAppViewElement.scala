@@ -2,7 +2,7 @@ package typings.chromeApps.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////
 // AppView Tag //
@@ -22,4 +22,3 @@ import scala.scalajs.js.annotation._
 /** Create a new AppView tag */
 class HTMLAppViewElement ()
   extends typings.chromeApps.HTMLAppViewElement
-

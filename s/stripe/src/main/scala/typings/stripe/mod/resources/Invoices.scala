@@ -19,11 +19,12 @@ import typings.stripe.mod.invoices.IInvoiceUpcomingOptions
 import typings.stripe.mod.invoices.IInvoiceUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Invoices")
 @js.native
 class Invoices () extends StripeResource {
+  
   def create(data: IInvoiceCreationOptions): js.Promise[IInvoice] = js.native
   /**
     * If you need to invoice your customer outside the regular billing cycle, you can create an invoice that
@@ -39,6 +40,7 @@ class Invoices () extends StripeResource {
   def create(data: IInvoiceCreationOptions, options: HeaderOptions): js.Promise[IInvoice] = js.native
   def create(data: IInvoiceCreationOptions, options: HeaderOptions, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
   def create(data: IInvoiceCreationOptions, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
+  
   def finalizeInvoice(id: String): js.Promise[IInvoice] = js.native
   def finalizeInvoice(id: String, data: IInvoiceFinalizeOptions): js.Promise[IInvoice] = js.native
   /**
@@ -56,6 +58,7 @@ class Invoices () extends StripeResource {
   def finalizeInvoice(id: String, options: HeaderOptions): js.Promise[IInvoice] = js.native
   def finalizeInvoice(id: String, options: HeaderOptions, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
   def finalizeInvoice(id: String, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
+  
   def list(): IListPromise[IInvoice] = js.native
   def list(data: IInvoiceListOptions): IListPromise[IInvoice] = js.native
   /**
@@ -71,6 +74,7 @@ class Invoices () extends StripeResource {
   def list(data: IInvoiceListOptions, options: HeaderOptions, response: IResponseFn[IList[IInvoice]]): IListPromise[IInvoice] = js.native
   def list(data: IInvoiceListOptions, response: IResponseFn[IList[IInvoice]]): IListPromise[IInvoice] = js.native
   def list(response: IResponseFn[IList[IInvoice]]): IListPromise[IInvoice] = js.native
+  
   def listLineItems(id: String): IListPromise[IInvoiceLineItem] = js.native
   def listLineItems(id: String, data: IInvoiceListLineItemsOptions): IListPromise[IInvoiceLineItem] = js.native
   /**
@@ -93,6 +97,7 @@ class Invoices () extends StripeResource {
   def listLineItems(id: String, options: HeaderOptions): IListPromise[IInvoiceLineItem] = js.native
   def listLineItems(id: String, options: HeaderOptions, response: IResponseFn[IList[IInvoiceLineItem]]): IListPromise[IInvoiceLineItem] = js.native
   def listLineItems(id: String, response: IResponseFn[IList[IInvoiceLineItem]]): IListPromise[IInvoiceLineItem] = js.native
+  
   def listUpcomingLineItems(): IListPromise[IInvoiceLineItem] = js.native
   def listUpcomingLineItems(data: IInvoiceListUpcomingLineItemsOptions): IListPromise[IInvoiceLineItem] = js.native
   /**
@@ -115,6 +120,7 @@ class Invoices () extends StripeResource {
   def listUpcomingLineItems(options: HeaderOptions): IListPromise[IInvoiceLineItem] = js.native
   def listUpcomingLineItems(options: HeaderOptions, response: IResponseFn[IList[IInvoiceLineItem]]): IListPromise[IInvoiceLineItem] = js.native
   def listUpcomingLineItems(response: IResponseFn[IList[IInvoiceLineItem]]): IListPromise[IInvoiceLineItem] = js.native
+  
   def pay(id: String): js.Promise[IInvoice] = js.native
   def pay(id: String, data: IInvoicePayOptions): js.Promise[IInvoice] = js.native
   /**
@@ -132,6 +138,7 @@ class Invoices () extends StripeResource {
   def pay(id: String, options: HeaderOptions): js.Promise[IInvoice] = js.native
   def pay(id: String, options: HeaderOptions, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
   def pay(id: String, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
+  
   def retrieve(id: String): js.Promise[IInvoice] = js.native
   def retrieve(id: String, data: IDataOptions): js.Promise[IInvoice] = js.native
   /**
@@ -158,6 +165,7 @@ class Invoices () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions): js.Promise[IInvoice] = js.native
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
   def retrieve(id: String, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
+  
   def retrieveLines(id: String): IListPromise[IInvoiceLineItem] = js.native
   def retrieveLines(id: String, data: IInvoiceLineItemRetrievalOptions): IListPromise[IInvoiceLineItem] = js.native
   /**
@@ -180,6 +188,7 @@ class Invoices () extends StripeResource {
   def retrieveLines(id: String, options: HeaderOptions): IListPromise[IInvoiceLineItem] = js.native
   def retrieveLines(id: String, options: HeaderOptions, response: IResponseFn[IList[IInvoiceLineItem]]): IListPromise[IInvoiceLineItem] = js.native
   def retrieveLines(id: String, response: IResponseFn[IList[IInvoiceLineItem]]): IListPromise[IInvoiceLineItem] = js.native
+  
   def retrieveUpcoming(data: IInvoiceUpcomingOptions): js.Promise[IInvoice] = js.native
   /**
     * At any time, you can preview the upcoming invoice for a customer. This will show you all the charges that are pending,
@@ -205,6 +214,7 @@ class Invoices () extends StripeResource {
   def retrieveUpcoming(id: String, options: HeaderOptions): js.Promise[IInvoice] = js.native
   def retrieveUpcoming(id: String, options: HeaderOptions, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
   def retrieveUpcoming(id: String, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
+  
   def sendInvoice(id: String): js.Promise[IInvoice] = js.native
   /**
     * Stripe will automatically send invoices to customers according to your subscriptions settings.
@@ -220,6 +230,7 @@ class Invoices () extends StripeResource {
   def sendInvoice(id: String, options: HeaderOptions): js.Promise[IInvoice] = js.native
   def sendInvoice(id: String, options: HeaderOptions, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
   def sendInvoice(id: String, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
+  
   def update(id: String, data: IInvoiceUpdateOptions): js.Promise[IInvoice] = js.native
   /**
     * Until an invoice is paid, it is marked as open (closed=false). If you'd like to stop Stripe from automatically attempting
@@ -235,4 +246,3 @@ class Invoices () extends StripeResource {
   def update(id: String, data: IInvoiceUpdateOptions, options: HeaderOptions, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
   def update(id: String, data: IInvoiceUpdateOptions, response: IResponseFn[IInvoice]): js.Promise[IInvoice] = js.native
 }
-

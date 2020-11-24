@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to a set of Contents. */
 @js.native
@@ -11,8 +11,8 @@ trait ContentProvider
   extends XContentProvider
      with XContentIdentifierFactory
      with XParameterizedContentProvider
-
 object ContentProvider {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -28,4 +28,3 @@ object ContentProvider {
     __obj.asInstanceOf[ContentProvider]
   }
 }
-

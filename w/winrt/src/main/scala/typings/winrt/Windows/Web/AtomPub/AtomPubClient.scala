@@ -11,12 +11,12 @@ import typings.winrt.Windows.Web.Syndication.SyndicationItem
 import typings.winrt.Windows.Web.Syndication.TransferProgress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AtomPubClient extends IAtomPubClient
-
 object AtomPubClient {
+  
   @scala.inline
   def apply(
     bypassCacheOnRetrieve: Boolean,
@@ -42,4 +42,3 @@ object AtomPubClient {
     __obj.asInstanceOf[AtomPubClient]
   }
 }
-

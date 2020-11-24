@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "ember-testing-helpers"
-version := "0.0-unknown-dt-20200515Z-dcc874"
-scalaVersion := "2.13.2"
+version := "0.0-unknown-dt-20201028Z-0e80fb"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20200621Z-33c88a",
-  "org.scalablytyped" %%% "rsvp" % "4.0-dt-20200515Z-82f757",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20200515Z-775559",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20201028Z-7fbb2b",
+  "org.scalablytyped" %%% "rsvp" % "4.0-dt-20201028Z-95d403",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20201002Z-12b933",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

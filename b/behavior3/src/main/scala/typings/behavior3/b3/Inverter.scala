@@ -2,7 +2,7 @@ package typings.behavior3.b3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Inverter decorator inverts the result of the child, returning `SUCCESS`
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Inverter extends BaseNode
-
 object Inverter {
+  
   @scala.inline
   def apply(
     _close: Tick => Unit,
@@ -31,4 +31,3 @@ object Inverter {
     __obj.asInstanceOf[Inverter]
   }
 }
-

@@ -16,10 +16,11 @@ import typings.webglExt.webglExtStrings.WEBKIT_WEBGL_depth_texture
 import typings.webglExt.webglExtStrings.WEBKIT_WEBGL_lose_context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebGL1Extensions extends js.Object {
+  
   @JSName("getExtension")
   def getExtension_EXTcolorbufferhalffloat(name: EXT_color_buffer_half_float): EXTColorBufferHalfFloat = js.native
   @JSName("getExtension")
@@ -47,4 +48,3 @@ trait WebGL1Extensions extends js.Object {
   @JSName("getExtension")
   def getExtension_WEBKITWEBGLlosecontext(name: WEBKIT_WEBGL_lose_context): WEBGLLoseContext = js.native
 }
-

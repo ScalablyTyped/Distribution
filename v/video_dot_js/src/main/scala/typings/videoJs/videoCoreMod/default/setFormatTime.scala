@@ -2,11 +2,12 @@ package typings.videoJs.videoCoreMod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core", "setFormatTime")
 @js.native
 object setFormatTime extends js.Object {
+  
   /**
     * Replaces the default formatTime implementation with a custom implementation.
     *
@@ -16,4 +17,3 @@ object setFormatTime extends js.Object {
     */
   def apply(customImplementation: js.Function2[/* seconds */ Double, /* guide */ Double, String]): Unit = js.native
 }
-

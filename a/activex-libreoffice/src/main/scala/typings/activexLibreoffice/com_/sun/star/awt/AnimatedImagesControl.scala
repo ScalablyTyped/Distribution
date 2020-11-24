@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is the default control used for an {@link AnimatedImagesControlModel} , displayed a series of images.
@@ -20,8 +20,8 @@ trait AnimatedImagesControl
      with XView
      with XAccessible
      with XAnimation
-
 object AnimatedImagesControl {
+  
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
@@ -79,4 +79,3 @@ object AnimatedImagesControl {
     __obj.asInstanceOf[AnimatedImagesControl]
   }
 }
-

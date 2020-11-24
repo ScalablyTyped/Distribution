@@ -2,10 +2,12 @@ package typings.svgIntersections
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type PolylineProps = typings.svgIntersections.mod.PolygonProps
+  
   /* Rewritten from type alias, can be one of: 
     - typings.svgIntersections.mod.PathProps
     - typings.svgIntersections.mod.PolylineProps

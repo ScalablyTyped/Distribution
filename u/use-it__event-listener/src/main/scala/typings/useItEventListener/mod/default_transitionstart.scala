@@ -7,11 +7,12 @@ import typings.std.Window
 import typings.useItEventListener.useItEventListenerStrings.transitionstart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@use-it/event-listener", JSImport.Default)
 @js.native
 object default_transitionstart extends js.Object {
+  
   def apply(eventName: transitionstart, handler: TransitionEvent): Unit = js.native
   def apply(
     eventName: transitionstart,
@@ -44,4 +45,3 @@ object default_transitionstart extends js.Object {
   def apply(eventName: transitionstart, handler: TransitionEvent, element: Window): Unit = js.native
   def apply(eventName: transitionstart, handler: TransitionEvent, element: Window, options: Options): Unit = js.native
 }
-

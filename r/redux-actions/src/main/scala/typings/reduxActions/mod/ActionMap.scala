@@ -3,7 +3,7 @@ package typings.reduxActions.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ActionMap[Payload, Meta]
@@ -12,12 +12,11 @@ trait ActionMap[Payload, Meta]
         (ActionMap[Payload, Meta]) | ActionFunctionAny[Payload] | (js.Tuple2[ActionFunctionAny[Payload], ActionFunctionAny[Meta]])
       ]
     ]
-
 object ActionMap {
+  
   @scala.inline
   def apply[Payload, Meta](): ActionMap[Payload, Meta] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActionMap[Payload, Meta]]
   }
 }
-

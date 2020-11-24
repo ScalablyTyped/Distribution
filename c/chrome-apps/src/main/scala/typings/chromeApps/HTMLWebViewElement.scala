@@ -161,7 +161,7 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Type definitions for Chrome packaged application development
 // Project: http://developer.chrome.com/apps/
@@ -178,159 +178,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait HTMLWebViewElement extends HTMLElement {
-  /**
-    * Allow scaling?
-    * @default false
-    */
-  var allowscaling: js.UndefOr[Boolean] = js.native
-  /**
-    * If present, portions of the embedder could be visible through the webview,
-    * where the contents are transparent. Without allowtransparency enabled,
-    * no part of the embedder will be shown through the webview,
-    * even if elements exist that are specified as transparent.
-    * This does not affect transparency within the contents of the webview itself.
-    */
-  var allowtransparency: js.UndefOr[Boolean] = js.native
-  /**
-    * If 'on', the webview container will automatically resize within the bounds specified by the attributes minwidth, minheight, maxwidth, and maxheight.
-    * These constraints do not impact the webview UNLESS autosize is enabled.
-    * When autosize is enabled, the webview container size cannot be less than the minimum values or greater than the maximum.
-    */
-  var autosize: js.UndefOr[on | Boolean] = js.native
-  /**
-    * Object reference which can be used to post messages into the guest page.
-    */
-  var contentWindow: ContentWindow = js.native
-  /** Similar to chrome's ContextMenus API, but applies to webview instead of browser.
-    * Use the webview.contextMenus API to add items to webview's context menu.
-    * You can choose what types of objects your context menu additions apply to, such as images, hyperlinks, and pages. */
-  var contextMenus: ContextMenus = js.native
-  ///
-  /// STYLE
-  ///
-  /** Maximum height */
-  var maxheight: Double = js.native
-  /** Maximum width */
-  var maxwidth: Double = js.native
-  /** Minimum height */
-  var minheight: Double = js.native
-  /** Minimum width */
-  var minwidth: Double = js.native
-  /** This sets the guest content's window.name object.**/
-  var name: String = js.native
-  ///
-  /// DOM Events
-  ///
-  /** Fired when the guest window logs a console message. */
-  var onconsolemessage: (js.ThisFunction1[/* this */ this.type, /* ev */ ConsoleMessageEvent, _]) | Null = js.native
-  /**
-    * Fired when the guest window fires a load event, i.e.,
-    * when a new document is loaded. This does not include
-    * page navigation within the current document or
-    * asynchronous resource loads.
-    */
-  var oncontentload: (js.ThisFunction1[/* this */ this.type, /* ev */ ContentLoadEvent, _]) | Null = js.native
-  /**
-    * Fired when the guest window attempts to open a modal dialog via
-    * window.alert, window.confirm, or window.prompt.
-    * Handling this event will block the guest process until each event listener
-    * returns or the dialog object becomes unreachable
-    * (if preventDefault() was called.)
-    */
-  var ondialog: (js.ThisFunction1[/* this */ this.type, /* ev */ DialogEvent, _]) | Null = js.native
-  /**
-    * Fired when the process rendering the guest web content has exited.
-    */
-  var onexit: (js.ThisFunction1[/* this */ this.type, /* ev */ ExitEvent, _]) | Null = js.native
-  /**
-    * Fired when new find results are available for an active find request.
-    * This might happen multiple times for a single find request as matches are found.
-    */
-  var onfindupdate: (js.ThisFunction1[/* this */ this.type, /* ev */ FindUpdateEvent, _]) | Null = js.native
-  /**
-    * Fired when a top-level load has aborted without committing.
-    * An error message will be printed to the console unless the
-    * event is default-prevented.
-    *
-    * Note: When a resource load is aborted, a loadabort event will
-    * eventually be followed by a loadstop event, even if all
-    * committed loads since the last loadstop event (if any) were aborted.
-    *
-    * Note: When the load of either an about URL or a JavaScript URL is aborted,
-    * loadabort will be fired and then the webview will be navigated to 'about:blank'.
-    */
-  var onloadabort: (js.ThisFunction1[/* this */ this.type, /* ev */ LoadAbortEvent, _]) | Null = js.native
-  /**
-    * Fired when a load has committed. This includes navigation within the current document
-    * as well as subframe document-level loads, but does not include asynchronous resource loads.
-    */
-  var onloadcommit: (js.ThisFunction1[/* this */ this.type, /* ev */ LoadCommitEvent, _]) | Null = js.native
-  /**
-    * Fired when a top-level load request has redirected to a different URL.
-    */
-  var onloadredirect: (js.ThisFunction1[/* this */ this.type, /* ev */ LoadRedirectEvent, _]) | Null = js.native
-  /**
-    * Fired when all frame-level loads in a guest page (including all its subframes)
-    * have completed. This includes navigation within the current document as well
-    * as subframe document-level loads, but does not include asynchronous resource
-    * loads. This event fires every time the number of document-level loads
-    * transitions from one (or more) to zero. For example, if a page that has
-    * already finished loading (i.e., loadstop already fired once) creates a new
-    * iframe which loads a page, then a second loadstop will fire when the iframe
-    * page load completes. This pattern is commonly observed on pages that load ads.
-    *
-    * Note: When a committed load is aborted, a loadstop event will eventually
-    * follow a loadabort event, even if all committed loads since the last loadstop
-    * event (if any) were aborted.
-    */
-  var onloadstop: (js.ThisFunction1[/* this */ this.type, /* ev */ LoadStopEvent, _]) | Null = js.native
-  /**
-    * Fired when the guest page attempts to open a new browser window.
-    */
-  var onnewwwindow: (js.ThisFunction1[/* this */ this.type, /* ev */ NewWindowEvent, _]) | Null = js.native
-  /**
-    * Fired when the guest page needs to request special permission from the embedder.
-    */
-  var onpermissionrequest: (js.ThisFunction1[/* this */ this.type, /* ev */ PermissionRequestEvent, _]) | Null = js.native
-  /**
-    * Fired when the process rendering the guest web content has become responsive again after being unresponsive.
-    */
-  var onresponsive: (js.ThisFunction1[/* this */ this.type, /* ev */ ResponsiveEvent, _]) | Null = js.native
-  /**
-    * @requires autosize: enabled
-    * Fired when the embedded web content has been resized via autosize.
-    * Only fires if autosize is enabled.
-    */
-  var onsizechanged: (js.ThisFunction1[/* this */ this.type, /* ev */ SizeChangedEvent, _]) | Null = js.native
-  /**
-    * Fired when the process rendering the guest web content has become unresponsive.
-    * This event will be generated once with a matching responsive event if the guest
-    * begins to respond again.
-    */
-  var onunresponsive: (js.ThisFunction1[/* this */ this.type, /* ev */ UnresponsiveEvent, _]) | Null = js.native
-  /**
-    * Fired when the page's zoom changes.
-    */
-  var onzoomchange: (js.ThisFunction1[/* this */ this.type, /* ev */ ZoomChangeEvent, _]) | Null = js.native
-  /**
-    * Storage partition ID used by the webview tag.
-    * If the storage partition ID starts with persist: (partition='persist:googlepluswidgets'),
-    * the webview will use a persistent storage partition available to all guests in the app with the same storage partition ID.
-    * If the ID is unset or if there is no 'persist': prefix, the webview will use an in-memory storage partition.
-    * This value can only be modified before the first navigation, since the storage partition of an active renderer process cannot change.
-    * Subsequent attempts to modify the value will fail with a DOM exception.
-    * By assigning the same partition ID, multiple webviews can share the same storage partition.
-    */
-  var partition: js.UndefOr[String] = js.native
-  /** Interface which provides access to webRequest events on the guest page. */
-  var request: WebRequestEventInterface = js.native
-  /**
-    * Returns the visible URL. Mirrors the logic in the browser's omnibox: either returning a pending new navigation if initiated by the embedder page, or the last committed navigation. Writing to this attribute initiates top-level navigation.
-    * Assigning src its own value will reload the current page.
-    * The src attribute cannot be cleared or removed once it has been set, unless the webview is removed from the DOM.
-    * The src attribute can also accept data URLs, such as 'data:text/plain,Hello, world!'.
-    */
-  var src: String = js.native
+  
   /**
     * Adds content script injection rules to the webview.
     * When the webview navigates to a page matching one or more rules, the associated scripts will be injected.
@@ -386,6 +234,7 @@ trait HTMLWebViewElement extends HTMLElement {
     * @since Chrome 44.
     */
   def addContentScripts(contentScriptList: js.Array[ContentScriptDetails]): Unit = js.native
+  
   @JSName("addEventListener")
   def addEventListener_abort(`type`: abort_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("addEventListener")
@@ -1953,6 +1802,29 @@ trait HTMLWebViewElement extends HTMLElement {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ZoomChangeEvent, _],
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  /**
+    * Allow scaling?
+    * @default false
+    */
+  var allowscaling: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * If present, portions of the embedder could be visible through the webview,
+    * where the contents are transparent. Without allowtransparency enabled,
+    * no part of the embedder will be shown through the webview,
+    * even if elements exist that are specified as transparent.
+    * This does not affect transparency within the contents of the webview itself.
+    */
+  var allowtransparency: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * If 'on', the webview container will automatically resize within the bounds specified by the attributes minwidth, minheight, maxwidth, and maxheight.
+    * These constraints do not impact the webview UNLESS autosize is enabled.
+    * When autosize is enabled, the webview container size cannot be less than the minimum values or greater than the maximum.
+    */
+  var autosize: js.UndefOr[on | Boolean] = js.native
+  
   /**
     * Navigates backward one history entry if possible.
     * Equivalent to go(-1).
@@ -1960,18 +1832,21 @@ trait HTMLWebViewElement extends HTMLElement {
     */
   def back(): Unit = js.native
   def back(callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+  
   /**
     * Indicates whether or not it is possible to navigate backward through history.
     * The state of this function is cached, and updated before each loadcommit,
     * so the best place to call it is on loadcommit.
     */
   def canGoBack(): Unit = js.native
+  
   /**
     * Indicates whether or not it is possible to navigate forward through history.
     * The state of this function is cached, and updated before each loadcommit,
     * so the best place to call it is on loadcommit.
     */
   def canGoForward(): Unit = js.native
+  
   /**
     * Captures the visible region of the webview.
     * @param callback Provides a data URL which encodes an image of the visible area of the captured webview.
@@ -1987,6 +1862,7 @@ trait HTMLWebViewElement extends HTMLElement {
     * @since Chrome 50.
     */
   def captureVisibleRegion(options: ImageDetails, callback: js.Function1[/* dataUrl */ String, Unit]): Unit = js.native
+  
   /**
     * Clears browsing data for the webview partition.
     * @param options Options determining which data to clear.
@@ -1996,6 +1872,17 @@ trait HTMLWebViewElement extends HTMLElement {
     */
   def clearData(options: ClearDataOptions, types: ClearDataTypeSet): Unit = js.native
   def clearData(options: ClearDataOptions, types: ClearDataTypeSet, callback: js.Function0[Unit]): Unit = js.native
+  
+  /**
+    * Object reference which can be used to post messages into the guest page.
+    */
+  var contentWindow: ContentWindow = js.native
+  
+  /** Similar to chrome's ContextMenus API, but applies to webview instead of browser.
+    * Use the webview.contextMenus API to add items to webview's context menu.
+    * You can choose what types of objects your context menu additions apply to, such as images, hyperlinks, and pages. */
+  var contextMenus: ContextMenus = js.native
+  
   /**
     * Injects JavaScript code into the guest page.
     * The following sample code uses script injection
@@ -2007,6 +1894,7 @@ trait HTMLWebViewElement extends HTMLElement {
     */
   def executeScript(details: InjectDetails): Unit = js.native
   def executeScript(details: InjectDetails, callback: js.Function1[/* result */ js.UndefOr[js.Array[_]], Unit]): Unit = js.native
+  
   /**
     * Initiates a find-in-page request.
     * @param searchText The string to find in the page.
@@ -2029,6 +1917,7 @@ trait HTMLWebViewElement extends HTMLElement {
     options: FindOptions,
     callback: js.Function1[/* results */ js.UndefOr[FindCallbackResults], Unit]
   ): Unit = js.native
+  
   /**
     * Navigates forward one history entry if possible. Equivalent to go(1).
     * @param [callback] Called after the navigation has either failed or completed successfully.
@@ -2036,11 +1925,13 @@ trait HTMLWebViewElement extends HTMLElement {
     */
   def forward(): Unit = js.native
   def forward(callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+  
   /**
     * Queries audio state.
     * @since Chrome 62.
     **/
   def getAudioState(callback: js.Function1[/* audible */ Boolean, Unit]): Unit = js.native
+  
   /**
     * Returns Chrome's internal process ID for the guest web page's current process,
     * allowing embedders to know how many guests would be affected by terminating
@@ -2050,23 +1941,27 @@ trait HTMLWebViewElement extends HTMLElement {
     * the same as the operating system's process ID.
     */
   def getProcessId(): integer = js.native
+  
   /**
     * Returns the user agent string used by the webview for guest page requests.
     * @since Chrome 33.
     */
   def getUserAgent(): String = js.native
+  
   /**
     * Gets the current zoom factor.
     * @param callback Called after the current zoom factor is retrieved. Provides the current zoom factor.
     * @since Chrome 36.
     */
   def getZoom(callback: js.Function1[/* zoomFactor */ double, Unit]): Unit = js.native
+  
   /**
     * Gets the current zoom mode.
     * @param callback Called with the webview's current zoom mode.
     * @since Chrome 43.
     */
   def getZoomMode(callback: js.Function1[/* ZoomMode */ ZoomMode, Unit]): Unit = js.native
+  
   /**
     * Navigates to a history entry using a history index relative to the current navigation.
     * If the requested navigation is impossible, this method has no effect.
@@ -2078,6 +1973,7 @@ trait HTMLWebViewElement extends HTMLElement {
     */
   def go(relativeIndex: integer): Unit = js.native
   def go(relativeIndex: integer, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+  
   /**
     * Injects CSS into the guest page.
     * @param details Details of the CSS to insert.
@@ -2085,22 +1981,26 @@ trait HTMLWebViewElement extends HTMLElement {
     */
   def insertCSS(details: InjectDetails): Unit = js.native
   def insertCSS(details: InjectDetails, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Queries whether audio is muted.
     * @since Chrome 62.
     */
   def isAudioMuted(callback: js.Function1[/* muted */ Boolean, Unit]): Unit = js.native
+  
   /**
     * @since Chrome 71
     * @description Queries whether spatial navigation is enabled for the webview.
     * @param callback Callback that will provide the value of the spatial navigation state.
     */
   def isSpatialNavigationEnabled(callback: js.Function1[/* enabled */ Boolean, Unit]): Unit = js.native
+  
   /**
     * Indicates whether or not the webview's user agent string has been overridden by *setUserAgentOverride*.
     * @since Chrome 33.
     */
   def isUserAgentOverridden(): Unit = js.native
+  
   /**
     * Loads a data URL with a specified base URL used for relative links.
     * Optionally, a virtual URL can be provided to be shown to the user instead of the data URL.
@@ -2111,14 +2011,155 @@ trait HTMLWebViewElement extends HTMLElement {
     */
   def loadDataWithBaseUrl(dataUrl: String, baseUrl: String): Unit = js.native
   def loadDataWithBaseUrl(dataUrl: String, baseUrl: String, virtualUrl: String): Unit = js.native
+  
+  ///
+  /// STYLE
+  ///
+  /** Maximum height */
+  var maxheight: Double = js.native
+  
+  /** Maximum width */
+  var maxwidth: Double = js.native
+  
+  /** Minimum height */
+  var minheight: Double = js.native
+  
+  /** Minimum width */
+  var minwidth: Double = js.native
+  
+  /** This sets the guest content's window.name object.**/
+  var name: String = js.native
+  
+  ///
+  /// DOM Events
+  ///
+  /** Fired when the guest window logs a console message. */
+  var onconsolemessage: (js.ThisFunction1[/* this */ this.type, /* ev */ ConsoleMessageEvent, _]) | Null = js.native
+  
+  /**
+    * Fired when the guest window fires a load event, i.e.,
+    * when a new document is loaded. This does not include
+    * page navigation within the current document or
+    * asynchronous resource loads.
+    */
+  var oncontentload: (js.ThisFunction1[/* this */ this.type, /* ev */ ContentLoadEvent, _]) | Null = js.native
+  
+  /**
+    * Fired when the guest window attempts to open a modal dialog via
+    * window.alert, window.confirm, or window.prompt.
+    * Handling this event will block the guest process until each event listener
+    * returns or the dialog object becomes unreachable
+    * (if preventDefault() was called.)
+    */
+  var ondialog: (js.ThisFunction1[/* this */ this.type, /* ev */ DialogEvent, _]) | Null = js.native
+  
+  /**
+    * Fired when the process rendering the guest web content has exited.
+    */
+  var onexit: (js.ThisFunction1[/* this */ this.type, /* ev */ ExitEvent, _]) | Null = js.native
+  
+  /**
+    * Fired when new find results are available for an active find request.
+    * This might happen multiple times for a single find request as matches are found.
+    */
+  var onfindupdate: (js.ThisFunction1[/* this */ this.type, /* ev */ FindUpdateEvent, _]) | Null = js.native
+  
+  /**
+    * Fired when a top-level load has aborted without committing.
+    * An error message will be printed to the console unless the
+    * event is default-prevented.
+    *
+    * Note: When a resource load is aborted, a loadabort event will
+    * eventually be followed by a loadstop event, even if all
+    * committed loads since the last loadstop event (if any) were aborted.
+    *
+    * Note: When the load of either an about URL or a JavaScript URL is aborted,
+    * loadabort will be fired and then the webview will be navigated to 'about:blank'.
+    */
+  var onloadabort: (js.ThisFunction1[/* this */ this.type, /* ev */ LoadAbortEvent, _]) | Null = js.native
+  
+  /**
+    * Fired when a load has committed. This includes navigation within the current document
+    * as well as subframe document-level loads, but does not include asynchronous resource loads.
+    */
+  var onloadcommit: (js.ThisFunction1[/* this */ this.type, /* ev */ LoadCommitEvent, _]) | Null = js.native
+  
+  /**
+    * Fired when a top-level load request has redirected to a different URL.
+    */
+  var onloadredirect: (js.ThisFunction1[/* this */ this.type, /* ev */ LoadRedirectEvent, _]) | Null = js.native
+  
+  /**
+    * Fired when all frame-level loads in a guest page (including all its subframes)
+    * have completed. This includes navigation within the current document as well
+    * as subframe document-level loads, but does not include asynchronous resource
+    * loads. This event fires every time the number of document-level loads
+    * transitions from one (or more) to zero. For example, if a page that has
+    * already finished loading (i.e., loadstop already fired once) creates a new
+    * iframe which loads a page, then a second loadstop will fire when the iframe
+    * page load completes. This pattern is commonly observed on pages that load ads.
+    *
+    * Note: When a committed load is aborted, a loadstop event will eventually
+    * follow a loadabort event, even if all committed loads since the last loadstop
+    * event (if any) were aborted.
+    */
+  var onloadstop: (js.ThisFunction1[/* this */ this.type, /* ev */ LoadStopEvent, _]) | Null = js.native
+  
+  /**
+    * Fired when the guest page attempts to open a new browser window.
+    */
+  var onnewwwindow: (js.ThisFunction1[/* this */ this.type, /* ev */ NewWindowEvent, _]) | Null = js.native
+  
+  /**
+    * Fired when the guest page needs to request special permission from the embedder.
+    */
+  var onpermissionrequest: (js.ThisFunction1[/* this */ this.type, /* ev */ PermissionRequestEvent, _]) | Null = js.native
+  
+  /**
+    * Fired when the process rendering the guest web content has become responsive again after being unresponsive.
+    */
+  var onresponsive: (js.ThisFunction1[/* this */ this.type, /* ev */ ResponsiveEvent, _]) | Null = js.native
+  
+  /**
+    * @requires autosize: enabled
+    * Fired when the embedded web content has been resized via autosize.
+    * Only fires if autosize is enabled.
+    */
+  var onsizechanged: (js.ThisFunction1[/* this */ this.type, /* ev */ SizeChangedEvent, _]) | Null = js.native
+  
+  /**
+    * Fired when the process rendering the guest web content has become unresponsive.
+    * This event will be generated once with a matching responsive event if the guest
+    * begins to respond again.
+    */
+  var onunresponsive: (js.ThisFunction1[/* this */ this.type, /* ev */ UnresponsiveEvent, _]) | Null = js.native
+  
+  /**
+    * Fired when the page's zoom changes.
+    */
+  var onzoomchange: (js.ThisFunction1[/* this */ this.type, /* ev */ ZoomChangeEvent, _]) | Null = js.native
+  
+  /**
+    * Storage partition ID used by the webview tag.
+    * If the storage partition ID starts with persist: (partition='persist:googlepluswidgets'),
+    * the webview will use a persistent storage partition available to all guests in the app with the same storage partition ID.
+    * If the ID is unset or if there is no 'persist': prefix, the webview will use an in-memory storage partition.
+    * This value can only be modified before the first navigation, since the storage partition of an active renderer process cannot change.
+    * Subsequent attempts to modify the value will fail with a DOM exception.
+    * By assigning the same partition ID, multiple webviews can share the same storage partition.
+    */
+  var partition: js.UndefOr[String] = js.native
+  
   /**
     * Prints the contents of the webview.
     * This is equivalent to calling scripted print function from the webview itself.
     * @since Chrome 38.
     */
   def print(): Unit = js.native
+  
   /** Reloads the current top-level page. */
   def reload(): Unit = js.native
+  
   /**
     * Removes content scripts from a webview.
     * The following example removes 'myRule' which was added before.
@@ -2131,6 +2172,7 @@ trait HTMLWebViewElement extends HTMLElement {
     */
   def removeContentScripts(): Unit = js.native
   def removeContentScripts(scriptNameList: js.Array[String]): Unit = js.native
+  
   @JSName("removeEventListener")
   def removeEventListener_abort(`type`: abort_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("removeEventListener")
@@ -3698,28 +3740,36 @@ trait HTMLWebViewElement extends HTMLElement {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ZoomChangeEvent, _],
     options: EventListenerOptions
   ): Unit = js.native
+  
+  /** Interface which provides access to webRequest events on the guest page. */
+  var request: WebRequestEventInterface = js.native
+  
   /** Set an attribute */
   def setAttribute(attributeName: String, value: String): Unit = js.native
   def setAttribute(attributeName: String, value: Boolean): Unit = js.native
   def setAttribute(attributeName: String, value: Double): Unit = js.native
+  
   /**
     * Sets audio mute state of the webview.
     * @param mute Mute audio value
     * @since Chrome 62.
     */
   def setAudioMuted(mute: Boolean): Unit = js.native
+  
   /**
     * @since Chrome 71
     * @description Sets spatial navigation state of the webview.
     * @param enabled Spatial navigation state value.
     */
   def setSpatialNavigationEnabled(enabled: Boolean): Unit = js.native
+  
   /**
     * Override the user agent string used by the webview for guest page requests.
     * @param userAgent The user agent string to use.
     * @since Chrome 33.
     */
   def setUserAgentOverride(userAgent: String): Unit = js.native
+  
   /**
     * Changes the zoom factor of the page.
     * The scope and persistence of this change
@@ -3730,6 +3780,7 @@ trait HTMLWebViewElement extends HTMLElement {
     */
   def setZoom(zoomFactor: double): Unit = js.native
   def setZoom(zoomFactor: double, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Sets the zoom mode of the webview.
     * @param ZoomMode Defines how zooming is handled in the webview.
@@ -3738,8 +3789,18 @@ trait HTMLWebViewElement extends HTMLElement {
     */
   def setZoomMode(ZoomMode: ZoomMode): Unit = js.native
   def setZoomMode(ZoomMode: ZoomMode, callback: js.Function0[Unit]): Unit = js.native
+  
+  /**
+    * Returns the visible URL. Mirrors the logic in the browser's omnibox: either returning a pending new navigation if initiated by the embedder page, or the last committed navigation. Writing to this attribute initiates top-level navigation.
+    * Assigning src its own value will reload the current page.
+    * The src attribute cannot be cleared or removed once it has been set, unless the webview is removed from the DOM.
+    * The src attribute can also accept data URLs, such as 'data:text/plain,Hello, world!'.
+    */
+  var src: String = js.native
+  
   /** Stops loading the current webview navigation if in progress. */
   def stop(): Unit = js.native
+  
   /**
     * Ends the current find session (clearing all highlighting)
     * and cancels all find requests in progress.
@@ -3757,6 +3818,7 @@ trait HTMLWebViewElement extends HTMLElement {
   def stopFinding_clear(action: clear): Unit = js.native
   @JSName("stopFinding")
   def stopFinding_keep(action: keep): Unit = js.native
+  
   /**
     * Forcibly kills the guest web page's renderer process.
     * This may affect multiple webview tags in the current app if they share the same process,
@@ -3764,4 +3826,3 @@ trait HTMLWebViewElement extends HTMLElement {
     */
   def terminate(): Unit = js.native
 }
-

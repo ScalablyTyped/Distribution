@@ -10,9 +10,9 @@ A React hook that allows you to use a ResizeObserver to measure an element's siz
 | ------------------ | :-------------: |
 | Full name          | use-resize-observer |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 5 |
-| # downloads        | 84150 |
+| # releases         | 14 |
+| # dependents       | 32 |
+| # downloads        | 1673941 |
 | # stars            | 0 |
 
 ## Links

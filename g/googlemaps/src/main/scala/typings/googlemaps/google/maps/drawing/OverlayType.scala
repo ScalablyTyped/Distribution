@@ -2,11 +2,10 @@ package typings.googlemaps.google.maps.drawing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait OverlayType extends js.Object
-
 /**
   * The types of overlay that may be created by the DrawingManager. Specify
   * these by value, or by using the constant's name. For example, 'polygon'
@@ -15,6 +14,7 @@ sealed trait OverlayType extends js.Object
 @JSGlobal("google.maps.drawing.OverlayType")
 @js.native
 object OverlayType extends js.Object {
+  
   /**
     * Specifies that the DrawingManager creates circles, and that the overlay
     * given in the overlaycomplete event is a circle.
@@ -49,6 +49,4 @@ object OverlayType extends js.Object {
     */
   @js.native
   sealed trait RECTANGLE extends OverlayType
-  
 }
-

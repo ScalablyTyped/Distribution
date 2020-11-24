@@ -2,13 +2,12 @@ package typings.onetime.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("onetime", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: Remove this for the next major release
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof oneTime */ js.Any = js.native
+  
   /**
   	Ensure a function is only called once. When called multiple times it will return the return value from the first call.
   	@param fn - Function that should only be called once.
@@ -26,6 +25,7 @@ object ^ extends js.Object {
   	*/
   def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType]): js.Function1[/* arguments */ ArgumentsType, ReturnType] = js.native
   def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: Options): js.Function1[/* arguments */ ArgumentsType, ReturnType] = js.native
+  
   /**
   	Get the number of times `fn` has been called.
   	@param fn - Function to get call count from.
@@ -42,5 +42,7 @@ object ^ extends js.Object {
   	```
   	*/
   def callCount(fn: js.Function1[/* repeated */ js.Any, _]): Double = js.native
+  
+  // TODO: Remove this for the next major release
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof onetime */ js.Any = js.native
 }
-

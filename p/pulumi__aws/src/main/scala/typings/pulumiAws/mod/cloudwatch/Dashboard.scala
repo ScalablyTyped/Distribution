@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "cloudwatch.Dashboard")
 @js.native
@@ -23,11 +23,11 @@ class Dashboard protected ()
   def this(name: String, args: DashboardArgs) = this()
   def this(name: String, args: DashboardArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "cloudwatch.Dashboard")
 @js.native
 object Dashboard extends js.Object {
+  
   /**
     * Get an existing Dashboard resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object Dashboard extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.dashboardMod.Dashboard = js.native
   def get(name: String, id: Input[ID], state: DashboardState): typings.pulumiAws.dashboardMod.Dashboard = js.native
   def get(name: String, id: Input[ID], state: DashboardState, opts: CustomResourceOptions): typings.pulumiAws.dashboardMod.Dashboard = js.native
+  
   /**
     * Returns true if the given object is an instance of Dashboard.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/dashboard.Dashboard */ Boolean = js.native
 }
-

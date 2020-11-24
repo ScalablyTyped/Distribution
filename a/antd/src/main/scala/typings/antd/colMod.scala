@@ -6,11 +6,11 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/col", JSImport.Namespace)
 @js.native
 object colMod extends js.Object {
+  
   val default: ForwardRefExoticComponent[ColProps with RefAttributes[HTMLDivElement]] = js.native
 }
-

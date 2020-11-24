@@ -9,9 +9,9 @@ Gzip plugin for gulp.
 | ------------------ | :-------------: |
 | Full name          | gulp-gzip |
 | Keywords           | compress, gulpplugin, gzip |
-| # releases         | 2 |
-| # dependents       | 92 |
-| # downloads        | 1279713 |
+| # releases         | 0 |
+| # dependents       | 96 |
+| # downloads        | 1524864 |
 | # stars            | 51 |
 
 ## Links

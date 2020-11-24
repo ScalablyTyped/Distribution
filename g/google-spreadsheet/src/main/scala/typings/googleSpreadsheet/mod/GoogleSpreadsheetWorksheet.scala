@@ -5,95 +5,19 @@ import typings.googleSpreadsheet.anon.Data
 import typings.googleSpreadsheet.anon.Insert
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-spreadsheet", "GoogleSpreadsheetWorksheet")
 @js.native
 class GoogleSpreadsheetWorksheet protected () extends WorksheetBasicProperties {
   def this(parentSpreadsheet: GoogleSpreadsheetWorksheet, hasPropertiesData: Data) = this()
+  
   /**
     * @description
     * alias for the worksheet title
     */
   var a1SheetName: String = js.native
-  /**
-    * @description
-    * stats about the cells in the worksheet
-    */
-  var cellStats: CellStats = js.native
-  /**
-    * @description
-    * number of columns in the worksheet
-    */
-  var columnCount: Double = js.native
-  /**
-    * @description
-    * additional properties of the worksheet if this sheet is a grid
-    */
-  @JSName("gridProperties")
-  var gridProperties_GoogleSpreadsheetWorksheet: WorksheetGridProperties = js.native
-  // #region BASIC PROPERTIES
-  // These properties should reflect the ones in the WorksheetBasicProperties interface
-  /**
-    * @description
-    * first row values
-    * - used in row-based interactions
-    * - defines the dynamic properties of the Worksheet's GoogleSpreadsheetRows
-    */
-  @JSName("headerValues")
-  var headerValues_GoogleSpreadsheetWorksheet: js.Array[String] = js.native
-  /**
-    * @description
-    * true if the worksheet is hidden in the UI, false if it's visible
-    */
-  @JSName("hidden")
-  var hidden_GoogleSpreadsheetWorksheet: Boolean = js.native
-  /**
-    * @description
-    * tab index in the worksheet doc (based on rightToLeft property)
-    */
-  @JSName("index")
-  var index_GoogleSpreadsheetWorksheet: Double = js.native
-  /**
-    * @description
-    * A1 column letter of the last column in the worksheet
-    */
-  var lastColumnLetter: String = js.native
-  /**
-    * @description
-    * true if the worksheet is an RTL sheet instead of an LTR sheet
-    */
-  @JSName("rightToLeft")
-  var rightToLeft_GoogleSpreadsheetWorksheet: Boolean = js.native
-  /**
-    * @description
-    * number of rows in the worksheet
-    */
-  var rowCount: Double = js.native
-  // #endregion
-  // #region NON-BASIC PROPERTIES
-  /**
-    * @description
-    * set during creation, not editable
-    */
-  val sheetId: String = js.native
-  /**
-    * @description
-    * set during creation, not editable
-    */
-  val sheetType: WorksheetType = js.native
-  /**
-    * @description
-    * the color of the worksheet tab
-    */
-  @JSName("tabColor")
-  var tabColor_GoogleSpreadsheetWorksheet: Color = js.native
-  /**
-    * @description
-    * name of the worksheet tab
-    */
-  @JSName("title")
-  var title_GoogleSpreadsheetWorksheet: String = js.native
+  
   def addRow(values: js.Array[String | Double | Boolean]): js.Promise[GoogleSpreadsheetRow] = js.native
   def addRow(values: js.Array[String | Double | Boolean], options: Insert): js.Promise[GoogleSpreadsheetRow] = js.native
   /**
@@ -109,6 +33,7 @@ class GoogleSpreadsheetWorksheet protected () extends WorksheetBasicProperties {
     */
   def addRow(values: StringDictionary[String | Double | Boolean]): js.Promise[GoogleSpreadsheetRow] = js.native
   def addRow(values: StringDictionary[String | Double | Boolean], options: Insert): js.Promise[GoogleSpreadsheetRow] = js.native
+  
   /**
     * @description
     * append rows to the end of the worksheet
@@ -133,11 +58,25 @@ class GoogleSpreadsheetWorksheet protected () extends WorksheetBasicProperties {
     ],
     options: Insert
   ): js.Promise[js.Array[GoogleSpreadsheetRow]] = js.native
+  
+  /**
+    * @description
+    * stats about the cells in the worksheet
+    */
+  var cellStats: CellStats = js.native
+  
   /**
     * @description
     * clear all data/cells in the worksheet
     */
   def clear(): js.Promise[Unit] = js.native
+  
+  /**
+    * @description
+    * number of columns in the worksheet
+    */
+  var columnCount: Double = js.native
+  
   /**
     * @description
     * copy this sheet to another document
@@ -145,11 +84,13 @@ class GoogleSpreadsheetWorksheet protected () extends WorksheetBasicProperties {
     * @param destinationSpreadsheetId destination spreadsheet doc ID
     */
   def copyToSpreadSheet(destinationSpreadsheetId: String): js.Promise[Unit] = js.native
+  
   /**
     * @description
     * delete the worksheet
     */
   def delete(): js.Promise[Unit] = js.native
+  
   // #endregion
   // #region SYNCHRONOUS METHODS
   /**
@@ -158,11 +99,13 @@ class GoogleSpreadsheetWorksheet protected () extends WorksheetBasicProperties {
     * - zero-based index
     */
   def getCell(rowIndex: Double, columnIndex: Double): GoogleSpreadsheetCell = js.native
+  
   /**
     * @description
     * retrieve a cell from the cache based on A1 address
     */
   def getCellByA1(a1Address: String): GoogleSpreadsheetCell = js.native
+  
   /**
     * @description
     * fetch all rows in the worksheet
@@ -171,6 +114,45 @@ class GoogleSpreadsheetWorksheet protected () extends WorksheetBasicProperties {
     */
   def getRows(): js.Promise[js.Array[GoogleSpreadsheetRow]] = js.native
   def getRows(options: PaginationOptions): js.Promise[js.Array[GoogleSpreadsheetRow]] = js.native
+  
+  /**
+    * @description
+    * additional properties of the worksheet if this sheet is a grid
+    */
+  @JSName("gridProperties")
+  var gridProperties_GoogleSpreadsheetWorksheet: WorksheetGridProperties = js.native
+  
+  // #region BASIC PROPERTIES
+  // These properties should reflect the ones in the WorksheetBasicProperties interface
+  /**
+    * @description
+    * first row values
+    * - used in row-based interactions
+    * - defines the dynamic properties of the Worksheet's GoogleSpreadsheetRows
+    */
+  @JSName("headerValues")
+  var headerValues_GoogleSpreadsheetWorksheet: js.Array[String] = js.native
+  
+  /**
+    * @description
+    * true if the worksheet is hidden in the UI, false if it's visible
+    */
+  @JSName("hidden")
+  var hidden_GoogleSpreadsheetWorksheet: Boolean = js.native
+  
+  /**
+    * @description
+    * tab index in the worksheet doc (based on rightToLeft property)
+    */
+  @JSName("index")
+  var index_GoogleSpreadsheetWorksheet: Double = js.native
+  
+  /**
+    * @description
+    * A1 column letter of the last column in the worksheet
+    */
+  var lastColumnLetter: String = js.native
+  
   // #endregion
   // #region ASYNCHRONOUS METHODS
   /**
@@ -184,12 +166,14 @@ class GoogleSpreadsheetWorksheet protected () extends WorksheetBasicProperties {
   def loadCells(filters: String): js.Promise[Unit] = js.native
   def loadCells(filters: js.Array[String | WorksheetGridRange]): js.Promise[Unit] = js.native
   def loadCells(filters: WorksheetGridRange): js.Promise[Unit] = js.native
+  
   /**
     * @description
     * loads the header row (first row) of the sheet
     * - usually do not need to call this directly
     */
   def loadHeaderRow(): js.Promise[Unit] = js.native
+  
   /**
     * @description
     * reset local cache of properties and cell data
@@ -198,12 +182,27 @@ class GoogleSpreadsheetWorksheet protected () extends WorksheetBasicProperties {
     * @param dataOnly if true, only affects data, not properties
     */
   def resetLocalCache(dataOnly: Boolean): Unit = js.native
+  
   /**
     * @description
     * update worksheet grid properties / dimensions
     * - alias for setGridProperties
     */
   def resize(gridProperties: WorksheetGridProperties): js.Promise[Unit] = js.native
+  
+  /**
+    * @description
+    * true if the worksheet is an RTL sheet instead of an LTR sheet
+    */
+  @JSName("rightToLeft")
+  var rightToLeft_GoogleSpreadsheetWorksheet: Boolean = js.native
+  
+  /**
+    * @description
+    * number of rows in the worksheet
+    */
+  var rowCount: Double = js.native
+  
   /**
     * @description
     * saves all cells that have unsaved changes
@@ -211,11 +210,13 @@ class GoogleSpreadsheetWorksheet protected () extends WorksheetBasicProperties {
     * @param cells array of cells to save
     */
   def saveCells(cells: js.Array[GoogleSpreadsheetCell]): js.Promise[Unit] = js.native
+  
   /**
     * @description
     * saves all cells in the worksheet that have unsaved changes
     */
   def saveUpdatedCells(): js.Promise[Unit] = js.native
+  
   /**
     * @description
     * set the grid properties of the worksheet
@@ -223,6 +224,7 @@ class GoogleSpreadsheetWorksheet protected () extends WorksheetBasicProperties {
     * @param gridProperties
     */
   def setGridProperties(gridProperties: WorksheetGridProperties): js.Promise[Unit] = js.native
+  
   /**
     * @description
     * set the header (first) row in the worksheet
@@ -230,6 +232,35 @@ class GoogleSpreadsheetWorksheet protected () extends WorksheetBasicProperties {
     * @param headers
     */
   def setHeaderRow(headers: js.Array[String]): js.Promise[Unit] = js.native
+  
+  // #endregion
+  // #region NON-BASIC PROPERTIES
+  /**
+    * @description
+    * set during creation, not editable
+    */
+  val sheetId: String = js.native
+  
+  /**
+    * @description
+    * set during creation, not editable
+    */
+  val sheetType: WorksheetType = js.native
+  
+  /**
+    * @description
+    * the color of the worksheet tab
+    */
+  @JSName("tabColor")
+  var tabColor_GoogleSpreadsheetWorksheet: Color = js.native
+  
+  /**
+    * @description
+    * name of the worksheet tab
+    */
+  @JSName("title")
+  var title_GoogleSpreadsheetWorksheet: String = js.native
+  
   /**
     * @description
     * update the worksheet "dimension properties"
@@ -245,6 +276,7 @@ class GoogleSpreadsheetWorksheet protected () extends WorksheetBasicProperties {
     properties: WorksheetDimensionProperties,
     bounds: WorksheetDimensionBounds
   ): js.Promise[Unit] = js.native
+  
   /**
     * @description
     * update basic worksheet properties
@@ -253,4 +285,3 @@ class GoogleSpreadsheetWorksheet protected () extends WorksheetBasicProperties {
     */
   def updateProperties(properties: WorksheetBasicProperties): js.Promise[Unit] = js.native
 }
-

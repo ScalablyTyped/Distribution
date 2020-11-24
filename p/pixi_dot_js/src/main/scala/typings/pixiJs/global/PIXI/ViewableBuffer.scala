@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Flexible wrapper around `ArrayBuffer` that also provides
@@ -17,4 +17,3 @@ class ViewableBuffer protected ()
   extends typings.pixiJs.PIXI.ViewableBuffer {
   def this(size: Double) = this()
 }
-

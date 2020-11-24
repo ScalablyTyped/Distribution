@@ -17,11 +17,14 @@ import typings.ngTable.publicInterfacesMod.IFilterConfigValues
 import typings.ngTable.publicInterfacesMod.ITableInputAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ng-table/src/browser", JSImport.Namespace)
 @js.native
 object browserMod extends js.Object {
+  
+  val ngTableBrowserModule: IModule = js.native
+  
   @js.native
   class NgTableController[TParams, TCol /* <: IColumnDef | IDynamicTableColDef */] protected ()
     extends typings.ngTable.ngTableControllerMod.NgTableController[TParams, TCol] {
@@ -37,6 +40,13 @@ object browserMod extends js.Object {
       ngTableEventsChannel: NgTableEventsChannel
     ) = this()
   }
+  /* static members */
+  @js.native
+  object NgTableController extends js.Object {
+    
+    @JSName("$inject")
+    var $inject: js.Array[String] = js.native
+  }
   
   @js.native
   class NgTableFilterConfig protected ()
@@ -46,34 +56,24 @@ object browserMod extends js.Object {
       */
     config: IFilterConfigValues) = this()
   }
+  /* static members */
+  @js.native
+  object NgTableFilterConfig extends js.Object {
+    
+    @JSName("$inject")
+    var $inject: js.Array[String] = js.native
+  }
   
   @js.native
   class NgTableFilterConfigProvider protected ()
     extends typings.ngTable.ngTableFilterConfigMod.NgTableFilterConfigProvider {
     def this($injector: IInjectorService) = this()
   }
-  
-  val ngTableBrowserModule: IModule = js.native
-  /* static members */
-  @js.native
-  object NgTableController extends js.Object {
-    @JSName("$inject")
-    var $inject: js.Array[String] = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object NgTableFilterConfig extends js.Object {
-    @JSName("$inject")
-    var $inject: js.Array[String] = js.native
-  }
-  
   /* static members */
   @js.native
   object NgTableFilterConfigProvider extends js.Object {
+    
     @JSName("$inject")
     var $inject: js.Array[String] = js.native
   }
-  
 }
-

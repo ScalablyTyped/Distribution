@@ -10,10 +10,11 @@ import typings.react.mod.SFCElement
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Renderer extends js.Object {
+  
   def apply(element: js.Array[CElement[_, Component[_, ComponentState, _]]]): Component[_, ComponentState, _] = js.native
   def apply(
     element: js.Array[CElement[_, Component[_, ComponentState, _]]],
@@ -57,4 +58,3 @@ trait Renderer extends js.Object {
   def apply[P, T /* <: Component[P, ComponentState, _] */](element: CElement[P, T], container: Element): T = js.native
   def apply[P, T /* <: Component[P, ComponentState, _] */](element: CElement[P, T], container: Element, callback: js.Function0[Unit]): T = js.native
 }
-

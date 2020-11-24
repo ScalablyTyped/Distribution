@@ -2,14 +2,14 @@ package typings.googleAppsScriptOauth2.GoogleAppsScriptOAuth2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TokenFormat extends js.Object
-
 @JSGlobal("GoogleAppsScriptOAuth2.TokenFormat")
 @js.native
 object TokenFormat extends js.Object {
+  
   /**
     * Form URL-encoded, for example `access_token=...`.
     */
@@ -21,6 +21,4 @@ object TokenFormat extends js.Object {
     */
   @js.native
   sealed trait JSON extends TokenFormat
-  
 }
-

@@ -2,16 +2,20 @@ package typings.tabulatorTables
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object Tabulator {
+  
   type CellEditEventCallback = js.Function1[/* cell */ typings.tabulatorTables.Tabulator.CellComponent, scala.Unit]
+  
   type CellEventCallback = js.Function2[
     /* e */ typings.std.UIEvent, 
     /* cell */ typings.tabulatorTables.Tabulator.CellComponent, 
     scala.Unit
   ]
+  
   type Color = java.lang.String | js.Array[js.Any] | typings.tabulatorTables.Tabulator.ValueStringCallback
+  
   /* Rewritten from type alias, can be one of: 
     - typings.tabulatorTables.tabulatorTablesStrings.avg
     - typings.tabulatorTables.tabulatorTablesStrings.max
@@ -31,12 +35,15 @@ package object Tabulator {
     /* calcParams */ js.Object, 
     js.Any
   ])
+  
   type ColumnCalcParams = js.Function2[/* values */ js.Any, /* data */ js.Any, js.Any]
+  
   type ColumnEventCallback = js.Function2[
     /* e */ typings.std.UIEvent, 
     /* column */ typings.tabulatorTables.Tabulator.ColumnComponent, 
     scala.Unit
   ]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.tabulatorTables.Tabulator.ColumnComponent
     - typings.tabulatorTables.Tabulator.ColumnDefinition
@@ -44,26 +51,32 @@ package object Tabulator {
     - java.lang.String
   */
   type ColumnLookup = typings.tabulatorTables.Tabulator._ColumnLookup | typings.std.HTMLElement | java.lang.String
+  
   type ColumnSorterParamLookupFunction = js.Function2[
     /* column */ typings.tabulatorTables.Tabulator.ColumnComponent, 
     /* dir */ typings.tabulatorTables.Tabulator.SortDirection, 
     js.Object
   ]
-  type CustomAccessor = js.Function5[
+  
+  type CustomAccessor = js.Function6[
     /* value */ js.Any, 
     /* data */ js.Any, 
     /* type */ typings.tabulatorTables.tabulatorTablesStrings.data | typings.tabulatorTables.tabulatorTablesStrings.download | typings.tabulatorTables.tabulatorTablesStrings.clipboard, 
     /* AccessorParams */ js.Any, 
     /* column */ js.UndefOr[typings.tabulatorTables.Tabulator.ColumnComponent], 
+    /* row */ js.UndefOr[typings.tabulatorTables.Tabulator.RowComponent], 
     js.Any
   ]
-  type CustomAccessorParams = js.Object | (js.Function4[
+  
+  type CustomAccessorParams = js.Object | (js.Function5[
     /* value */ js.Any, 
     /* data */ js.Any, 
     /* type */ typings.tabulatorTables.tabulatorTablesStrings.data | typings.tabulatorTables.tabulatorTablesStrings.download | typings.tabulatorTables.tabulatorTablesStrings.clipboard, 
     /* column */ js.UndefOr[typings.tabulatorTables.Tabulator.ColumnComponent], 
+    /* row */ js.UndefOr[typings.tabulatorTables.Tabulator.RowComponent], 
     js.Any
   ])
+  
   type CustomMutator = js.Function5[
     /* value */ js.Any, 
     /* data */ js.Any, 
@@ -72,6 +85,7 @@ package object Tabulator {
     /* cell */ js.UndefOr[typings.tabulatorTables.Tabulator.CellComponent], 
     js.Any
   ]
+  
   type CustomMutatorParams = js.Object | (js.Function4[
     /* value */ js.Any, 
     /* data */ js.Any, 
@@ -79,6 +93,7 @@ package object Tabulator {
     /* cell */ js.UndefOr[typings.tabulatorTables.Tabulator.CellComponent], 
     js.Any
   ])
+  
   /* Rewritten from type alias, can be one of: 
     - typings.tabulatorTables.tabulatorTablesBooleans.`true`
     - typings.tabulatorTables.tabulatorTablesStrings.input
@@ -105,6 +120,7 @@ package object Tabulator {
     /* editorParams */ js.Object, 
     typings.std.HTMLElement | typings.tabulatorTables.tabulatorTablesBooleans.`false`
   ])
+  
   /* Rewritten from type alias, can be one of: 
     - typings.tabulatorTables.Tabulator.NumberParams
     - typings.tabulatorTables.Tabulator.CheckboxParams
@@ -115,7 +131,9 @@ package object Tabulator {
     - js.Function1[/ * cell * / typings.tabulatorTables.Tabulator.CellComponent, js.Object]
   */
   type EditorParams = typings.tabulatorTables.Tabulator._EditorParams | (js.Function1[/* cell */ typings.tabulatorTables.Tabulator.CellComponent, js.Object])
+  
   type EmptyCallback = js.Function1[/* callback */ js.Function0[scala.Unit], scala.Unit]
+  
   type FilterFunction = js.Function4[
     /* field */ java.lang.String, 
     /* type */ typings.tabulatorTables.Tabulator.FilterType, 
@@ -123,6 +141,7 @@ package object Tabulator {
     /* filterParams */ js.UndefOr[typings.tabulatorTables.Tabulator.FilterParams], 
     scala.Unit
   ]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.tabulatorTables.tabulatorTablesStrings.plaintext
     - typings.tabulatorTables.tabulatorTablesStrings.textarea
@@ -156,6 +175,7 @@ package object Tabulator {
     /* onRendered */ typings.tabulatorTables.Tabulator.EmptyCallback, 
     java.lang.String | typings.std.HTMLElement
   ])
+  
   /* Rewritten from type alias, can be one of: 
     - typings.tabulatorTables.Tabulator.MoneyParams
     - typings.tabulatorTables.Tabulator.ImageParams
@@ -165,26 +185,55 @@ package object Tabulator {
     - typings.tabulatorTables.Tabulator.TickCrossParams
     - typings.tabulatorTables.Tabulator.TrafficParams
     - typings.tabulatorTables.Tabulator.StarRatingParams
+    - typings.tabulatorTables.Tabulator.RowSelectionParams
     - typings.tabulatorTables.Tabulator.JSONRecord
     - js.Function1[/ * cell * / typings.tabulatorTables.Tabulator.CellComponent, js.Object]
   */
   type FormatterParams = typings.tabulatorTables.Tabulator._FormatterParams | (js.Function1[/* cell */ typings.tabulatorTables.Tabulator.CellComponent, js.Object]) | typings.tabulatorTables.Tabulator.JSONRecord
+  
   type GlobalTooltipOption = scala.Boolean | (js.Function1[/* cell */ typings.tabulatorTables.Tabulator.CellComponent, java.lang.String])
+  
+  type GroupContextMenuSignature = (js.Array[
+    typings.tabulatorTables.Tabulator.MenuObject[typings.tabulatorTables.Tabulator.GroupComponent] | typings.tabulatorTables.Tabulator.MenuSeparator
+  ]) | (js.Function2[
+    /* component */ typings.tabulatorTables.Tabulator.GroupComponent, 
+    /* e */ typings.std.MouseEvent, 
+    typings.tabulatorTables.Tabulator.MenuObject[typings.tabulatorTables.Tabulator.GroupComponent] | typings.tabulatorTables.tabulatorTablesBooleans.`false` | js.Array[js.Any]
+  ])
+  
   type GroupEventCallback = js.Function2[
     /* e */ typings.std.UIEvent, 
     /* group */ typings.tabulatorTables.Tabulator.GroupComponent, 
     scala.Unit
   ]
+  
+  type GroupValuesArg = js.Array[js.Array[js.Any]]
+  
   type JSONRecord = typings.std.Record[java.lang.String, java.lang.String | scala.Double | scala.Boolean]
+  
   type RowChangedCallback = js.Function1[/* row */ typings.tabulatorTables.Tabulator.RowComponent, scala.Unit]
+  
+  type RowContextMenuSignature = (js.Array[
+    typings.tabulatorTables.Tabulator.MenuObject[typings.tabulatorTables.Tabulator.RowComponent] | typings.tabulatorTables.Tabulator.MenuSeparator
+  ]) | (js.Function2[
+    /* component */ typings.tabulatorTables.Tabulator.RowComponent, 
+    /* e */ typings.std.MouseEvent, 
+    typings.tabulatorTables.Tabulator.MenuObject[typings.tabulatorTables.Tabulator.RowComponent] | typings.tabulatorTables.tabulatorTablesBooleans.`false` | js.Array[js.Any]
+  ])
+  
   type RowEventCallback = js.Function2[
     /* e */ typings.std.UIEvent, 
     /* row */ typings.tabulatorTables.Tabulator.RowComponent, 
     scala.Unit
   ]
+  
   type RowLookup = typings.tabulatorTables.Tabulator.RowComponent | typings.std.HTMLElement | java.lang.String | scala.Double | (js.Array[scala.Double | java.lang.String])
+  
   type StandardStringParam = java.lang.String | typings.std.HTMLElement | (js.Function0[java.lang.String | typings.std.HTMLElement])
+  
   type ValueBooleanCallback = js.Function1[/* value */ js.Any, scala.Boolean]
+  
   type ValueStringCallback = js.Function1[/* value */ js.Any, java.lang.String]
+  
   type ValueVoidCallback = js.Function1[/* value */ js.Any, scala.Unit]
 }

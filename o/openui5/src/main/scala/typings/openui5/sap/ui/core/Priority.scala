@@ -2,17 +2,17 @@ package typings.openui5.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Priority extends js.Object
-
 /**
   * Priorities for general use.
   */
 @JSGlobal("sap.ui.core.Priority")
 @js.native
 object Priority extends js.Object {
+  
   @js.native
   sealed trait High extends Priority
   
@@ -24,6 +24,4 @@ object Priority extends js.Object {
   
   @js.native
   sealed trait None extends Priority
-  
 }
-

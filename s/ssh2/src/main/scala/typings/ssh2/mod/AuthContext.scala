@@ -2,7 +2,7 @@ package typings.ssh2.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.ssh2.mod.KeyboardAuthContext
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   - typings.ssh2.mod.NoneAuthContext
 */
 trait AuthContext extends js.Object
-

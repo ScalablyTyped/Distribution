@@ -2,7 +2,7 @@ package typings.roads.responseMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roads/types/core/response", JSImport.Default)
 @js.native
@@ -19,4 +19,3 @@ class default protected () extends Response {
   def this(body: String, status: js.UndefOr[scala.Nothing], headers: js.Object) = this()
   def this(body: String, status: Double, headers: js.Object) = this()
 }
-

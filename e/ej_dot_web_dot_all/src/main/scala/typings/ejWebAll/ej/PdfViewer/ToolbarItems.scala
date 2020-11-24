@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.PdfViewer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ToolbarItems extends js.Object
-
 @JSGlobal("ej.PdfViewer.ToolbarItems")
 @js.native
 object ToolbarItems extends js.Object {
+  
   ///Shows all the toolbar items.
   @js.native
   sealed trait All extends ToolbarItems
@@ -45,6 +45,4 @@ object ToolbarItems extends js.Object {
   ///Shows only text search tool in the toolbar.
   @js.native
   sealed trait TextSearchTool extends ToolbarItems
-  
 }
-

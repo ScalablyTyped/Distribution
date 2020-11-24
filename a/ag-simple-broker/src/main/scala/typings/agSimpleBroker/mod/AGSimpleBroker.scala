@@ -10,12 +10,12 @@ import typings.agSimpleBroker.anon.Id
 import typings.asyncStreamEmitter.mod.AsyncStreamEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AGSimpleBroker
   extends AsyncStreamEmitter[js.Any] {
-  var isReady: Boolean = js.native
+  
   @JSName("emit")
   def emit_error(eventName: error, data: Error): Unit = js.native
   @JSName("emit")
@@ -26,10 +26,16 @@ trait AGSimpleBroker
   def emit_subscribe(eventName: subscribe, data: SubscribeData): Unit = js.native
   @JSName("emit")
   def emit_unsubscribe(eventName: unsubscribe, data: UnsubscribeData): Unit = js.native
+  
   def exchange(): SimpleExchange = js.native
+  
   def invokePublish(channelName: String, data: js.Any): js.Promise[Unit] = js.native
   def invokePublish(channelName: String, data: js.Any, suppressEvent: Boolean): js.Promise[Unit] = js.native
+  
+  var isReady: Boolean = js.native
+  
   def isSubscribed(channelName: String): Boolean = js.native
+  
   @JSName("listener")
   def listener_error(eventName: error): typings.consumableStream.mod.^[Error] = js.native
   @JSName("listener")
@@ -40,15 +46,21 @@ trait AGSimpleBroker
   def listener_subscribe(eventName: subscribe): typings.consumableStream.mod.^[SubscribeData] = js.native
   @JSName("listener")
   def listener_unsubscribe(eventName: unsubscribe): typings.consumableStream.mod.^[UnsubscribeData] = js.native
+  
   def setCodecEngine(
     codec: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AGServer.CodecEngine */ js.Any
   ): Unit = js.native
+  
   def subscribeClient(client: Id, channelName: String): js.Promise[Unit] = js.native
+  
   def subscribeSocket(client: Id, channelName: String): js.Promise[Unit] = js.native
+  
   def subscriptions(): js.Array[String] = js.native
+  
   def transmitPublish(channelName: String, data: js.Any): js.Promise[Unit] = js.native
   def transmitPublish(channelName: String, data: js.Any, suppressEvent: Boolean): js.Promise[Unit] = js.native
+  
   def unsubscribeClient(client: Id, channelName: String): js.Promise[Unit] = js.native
+  
   def unsubscribeSocket(client: Id, channelName: String): js.Promise[Unit] = js.native
 }
-

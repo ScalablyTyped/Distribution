@@ -10,9 +10,9 @@ PouchDB adapter using IndexedDB as its data store.
 | ------------------ | :-------------: |
 | Full name          | pouchdb-adapter-idb |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 14 |
-| # downloads        | 171311 |
+| # releases         | 5 |
+| # dependents       | 22 |
+| # downloads        | 346618 |
 | # stars            | 1 |
 
 ## Links

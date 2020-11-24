@@ -2,15 +2,15 @@ package typings.amazonConnectStreams.connect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AgentStateType extends js.Object
-
 /** This enumeration lists the different types of agent states. */
 @JSGlobal("connect.AgentStateType")
 @js.native
 object AgentStateType extends js.Object {
+  
   /** The agent state hasn't been initialized yet. */
   @js.native
   sealed trait INIT extends AgentStateType
@@ -26,6 +26,4 @@ object AgentStateType extends js.Object {
   /** The agent is in a state where they can be routed contacts. */
   @js.native
   sealed trait ROUTABLE extends AgentStateType
-  
 }
-

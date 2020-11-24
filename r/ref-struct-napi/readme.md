@@ -11,8 +11,8 @@ Create ABI-compliant "struct" instances on top of Buffers. Supports Node 6, 7, 8
 | Full name          | ref-struct-napi |
 | Keywords           | struct, ref, abi, c, c++, ffi |
 | # releases         | 4 |
-| # dependents       | 17 |
-| # downloads        | 41979 |
+| # dependents       | 19 |
+| # downloads        | 48403 |
 | # stars            | 0 |
 
 ## Links

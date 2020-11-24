@@ -10,9 +10,9 @@ Returns an object with the (non-glob) base path and the actual pattern.
 | ------------------ | :-------------: |
 | Full name          | glob-base |
 | Keywords           | base, directory, dirname, expression, glob, parent, path, pattern, regex, regular, root |
-| # releases         | 1 |
-| # dependents       | 73 |
-| # downloads        | 235089013 |
+| # releases         | 0 |
+| # dependents       | 84 |
+| # downloads        | 201727360 |
 | # stars            | 2 |
 
 ## Links

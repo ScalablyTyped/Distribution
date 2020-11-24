@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PointOptions extends js.Object
-
 @JSGlobal("Windows.UI.Text.PointOptions")
 @js.native
 object PointOptions extends js.Object {
+  
   @js.native
   sealed trait allowOffClient extends PointOptions
   
@@ -33,6 +33,4 @@ object PointOptions extends js.Object {
   
   @js.native
   sealed trait transform extends PointOptions
-  
 }
-

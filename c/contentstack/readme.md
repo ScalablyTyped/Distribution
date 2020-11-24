@@ -10,15 +10,15 @@ Contentstack Javascript SDK
 | ------------------ | :-------------: |
 | Full name          | contentstack |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 12 |
 | # dependents       | 2 |
-| # downloads        | 211813 |
+| # downloads        | 284521 |
 | # stars            | 1 |
 
 ## Links
 - [Homepage](https://www.contentstack.com/)
-- [Bugs](https://github.com/builtio-contentstack/contentstack-javascript/issues)
-- [Repository](https://github.com/builtio-contentstack/contentstack-javascript)
+- [Bugs](https://github.com/contentstack/contentstack-javascript/issues)
+- [Repository](https://github.com/contentstack/contentstack-javascript)
 - [Npm](https://www.npmjs.com/package/contentstack)
     
 

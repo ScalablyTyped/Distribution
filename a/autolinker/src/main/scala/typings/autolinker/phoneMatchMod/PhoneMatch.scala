@@ -3,7 +3,7 @@ package typings.autolinker.phoneMatchMod
 import typings.autolinker.matchMatchMod.Match
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("autolinker/dist/commonjs/match/phone-match", "PhoneMatch")
 @js.native
@@ -14,6 +14,27 @@ class PhoneMatch protected () extends Match {
     *   instance, specified in an Object (map).
     */
   def this(cfg: PhoneMatchConfig) = this()
+  
+  /**
+    * Alias of {@link #getPhoneNumber}, returns the phone number that was
+    * matched as a string, without any delimiter characters.
+    *
+    * Note: This is a string to allow for prefixed 0's.
+    *
+    * @return {String}
+    */
+  def getNumber(): String = js.native
+  
+  /**
+    * Returns the phone number that was matched as a string, without any
+    * delimiter characters.
+    *
+    * Note: This is a string to allow for prefixed 0's.
+    *
+    * @return {String}
+    */
+  def getPhoneNumber(): String = js.native
+  
   /**
     * @protected
     * @property {String} number (required)
@@ -23,6 +44,7 @@ class PhoneMatch protected () extends Match {
     * Note: This is a string to allow for prefixed 0's.
     */
   val number: js.Any = js.native
+  
   /**
     * @protected
     * @property  {Boolean} plusSign (required)
@@ -33,23 +55,4 @@ class PhoneMatch protected () extends Match {
     * Ex: '+1 (123) 456 7879'
     */
   val plusSign: js.Any = js.native
-  /**
-    * Alias of {@link #getPhoneNumber}, returns the phone number that was
-    * matched as a string, without any delimiter characters.
-    *
-    * Note: This is a string to allow for prefixed 0's.
-    *
-    * @return {String}
-    */
-  def getNumber(): String = js.native
-  /**
-    * Returns the phone number that was matched as a string, without any
-    * delimiter characters.
-    *
-    * Note: This is a string to allow for prefixed 0's.
-    *
-    * @return {String}
-    */
-  def getPhoneNumber(): String = js.native
 }
-

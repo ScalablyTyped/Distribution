@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** end of `module bson` */
 /** module Or Internal Object */
@@ -13,7 +13,8 @@ import scala.scalajs.js.annotation._
 @JSImport("bson", JSImport.Namespace)
 @js.native
 object bsonMod extends js.Object {
+  
   def decode(data: ClassBuffer): js.Object = js.native
+  
   def encode(data: js.Object): ClassBuffer = js.native
 }
-

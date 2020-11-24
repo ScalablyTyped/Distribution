@@ -7,17 +7,15 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "InfiniteScroll")
+@JSImport("grommet", "InfiniteScroll")
 @js.native
 class InfiniteScroll protected ()
   extends Component[InfiniteScrollProps, ComponentState, js.Any] {
   def this(props: InfiniteScrollProps) = this()
   def this(props: InfiniteScrollProps, context: js.Any) = this()
 }
-
-@JSImport("grommet/es6", "InfiniteScroll")
+@JSImport("grommet", "InfiniteScroll")
 @js.native
 object InfiniteScroll extends TopLevel[ComponentClass[InfiniteScrollProps, ComponentState]]
-

@@ -4,7 +4,7 @@ import typings.grammarkdown.tokensMod.SyntaxKind.OfKeyword
 import typings.grammarkdown.tokensMod.SyntaxKind.OneKeyword
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "OneOfList")
 @js.native
@@ -33,4 +33,3 @@ class OneOfList protected ()
     terminals: js.Array[typings.grammarkdown.nodesMod.Terminal]
   ) = this()
 }
-

@@ -7,14 +7,14 @@ import typings.activexLibreoffice.com_.sun.star.util.XFlushListener
 import typings.activexLibreoffice.com_.sun.star.util.XFlushable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ConfigurationRegistry
   extends XSimpleRegistry
      with XFlushable
-
 object ConfigurationRegistry {
+  
   @scala.inline
   def apply(
     RootKey: XRegistryKey,
@@ -38,4 +38,3 @@ object ConfigurationRegistry {
     __obj.asInstanceOf[ConfigurationRegistry]
   }
 }
-

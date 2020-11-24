@@ -1,7 +1,7 @@
 
 # Scala.js typings for scanf
 
-Typings are for version 1.1.1
+Typings are for version 1.1.2
 
 ## Library description:
 C like scanf/sscanf module for node.js.
@@ -10,9 +10,9 @@ C like scanf/sscanf module for node.js.
 | ------------------ | :-------------: |
 | Full name          | scanf |
 | Keywords           | scanf, sscanf, readSync from stdin, shell input |
-| # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 13788 |
+| # releases         | 2 |
+| # dependents       | 11 |
+| # downloads        | 16565 |
 | # stars            | 1 |
 
 ## Links

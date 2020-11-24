@@ -4,15 +4,15 @@
 Typings are for version 0.2
 
 ## Library description:
-Test utils to simplify testing of containers in redux.
+Test utils to simplify mocking for redux.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | redux-test-utils |
-| Keywords           | redux, store, test |
-| # releases         | 2 |
+| Keywords           | dispatch, redux, store, test |
+| # releases         | 3 |
 | # dependents       | 6 |
-| # downloads        | 1221219 |
+| # downloads        | 1146949 |
 | # stars            | 1 |
 
 ## Links

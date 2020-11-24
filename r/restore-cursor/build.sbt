@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "restore-cursor"
-version := "3.1.0-3963fb"
+version := "3.1.0-a5bb04"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

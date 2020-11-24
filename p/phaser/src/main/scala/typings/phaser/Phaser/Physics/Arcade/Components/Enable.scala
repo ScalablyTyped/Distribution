@@ -2,13 +2,14 @@ package typings.phaser.Phaser.Physics.Arcade.Components
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods used for setting the enable properties of an Arcade Physics Body.
   */
 @js.native
 trait Enable extends js.Object {
+  
   /**
     * Stops and disables this Game Object's Body.
     * @param disableGameObject Also deactivate this Game Object. Default false.
@@ -18,6 +19,7 @@ trait Enable extends js.Object {
   def disableBody(disableGameObject: js.UndefOr[scala.Nothing], hideGameObject: Boolean): this.type = js.native
   def disableBody(disableGameObject: Boolean): this.type = js.native
   def disableBody(disableGameObject: Boolean, hideGameObject: Boolean): this.type = js.native
+  
   /**
     * Enables this Game Object's Body.
     * @param reset Also reset the Body and place it at (x, y).
@@ -27,6 +29,7 @@ trait Enable extends js.Object {
     * @param showGameObject Also show this Game Object.
     */
   def enableBody(reset: Boolean, x: Double, y: Double, enableGameObject: Boolean, showGameObject: Boolean): this.type = js.native
+  
   /**
     * Syncs the Body's position and size with its parent Game Object.
     * You don't need to call this for Dynamic Bodies, as it happens automatically.
@@ -35,4 +38,3 @@ trait Enable extends js.Object {
     */
   def refreshBody(): this.type = js.native
 }
-

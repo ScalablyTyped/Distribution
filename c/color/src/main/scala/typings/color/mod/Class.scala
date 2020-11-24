@@ -17,7 +17,7 @@ import typings.color.colorStrings.rgb
 import typings.color.colorStrings.xyz
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("color", JSImport.Namespace)
 @js.native
@@ -32,4 +32,3 @@ class Class[T /* <: ColorParam */] () extends Color[T] {
     model: /* keyof color.anon.Typeofconvert */ rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
   ) = this()
 }
-

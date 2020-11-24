@@ -17,7 +17,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XChangesListener
 import typings.activexLibreoffice.com_.sun.star.util.XChangesNotifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides information about the root element of a hierarchy and about the hierarchy as a whole.
@@ -47,8 +47,8 @@ trait AccessRootElement
      with XComponent
      with XChangesNotifier
      with XLocalizable
-
 object AccessRootElement {
+  
   @scala.inline
   def apply(
     AsProperty: Property,
@@ -83,4 +83,3 @@ object AccessRootElement {
     __obj.asInstanceOf[AccessRootElement]
   }
 }
-

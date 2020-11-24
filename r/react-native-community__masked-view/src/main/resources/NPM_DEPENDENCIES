@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@react-native-community/masked-view" : "0.1.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@react-native-community/masked-view" : "0.1.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

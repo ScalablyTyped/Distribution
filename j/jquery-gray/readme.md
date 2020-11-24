@@ -12,7 +12,7 @@ Make an image grayscale in all browsers.
 | Keywords           | gray, grey, grayscale, images, image, jquery, jquery-plugin, ecosystem:jquery |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 27834 |
+| # downloads        | 38388 |
 | # stars            | 0 |
 
 ## Links

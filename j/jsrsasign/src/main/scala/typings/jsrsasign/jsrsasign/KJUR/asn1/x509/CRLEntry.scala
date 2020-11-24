@@ -5,7 +5,7 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ASN.1 CRLEntry structure class for CRL
@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CRLEntry extends ASN1Object {
+  
   /**
     * set DERInteger parameter for serial number of revoked certificate
     * @param intParam DERInteger parameter for certificate serial number
@@ -28,6 +29,7 @@ trait CRLEntry extends ASN1Object {
     * entry.setCertSerial({'int': 3});
     */
   def setCertSerial(intParam: IntegerParam): Unit = js.native
+  
   /**
     * set Time parameter for revocation date
     * @param timeParam Time parameter for revocation date
@@ -36,8 +38,8 @@ trait CRLEntry extends ASN1Object {
     */
   def setRevocationDate(timeParam: StringParam): Unit = js.native
 }
-
 object CRLEntry {
+  
   @scala.inline
   def apply(
     getEncodedHex: () => String,
@@ -55,22 +57,26 @@ object CRLEntry {
     val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setCertSerial = js.Any.fromFunction1(setCertSerial), setRevocationDate = js.Any.fromFunction1(setRevocationDate))
     __obj.asInstanceOf[CRLEntry]
   }
+  
   @scala.inline
   implicit class CRLEntryOps[Self <: CRLEntry] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSetCertSerial(value: IntegerParam => Unit): Self = this.set("setCertSerial", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetRevocationDate(value: StringParam => Unit): Self = this.set("setRevocationDate", js.Any.fromFunction1(value))
   }
-  
 }
-

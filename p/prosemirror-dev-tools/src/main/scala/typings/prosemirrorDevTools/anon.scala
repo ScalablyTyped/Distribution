@@ -8,18 +8,21 @@ import typings.prosemirrorState.mod.EditorState
 import typings.prosemirrorState.mod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait TypeofEditorState
     extends Instantiable0[EditorState[Schema[js.Any, js.Any]]] {
+    
     /**
       * Create a new state.
       */
     def create[S /* <: Schema[_, _] */](config: Doc[S]): EditorState[S] = js.native
+    
     /**
       * Deserialize a JSON representation of a state. `config` should
       * have at least a `schema` field, and should contain array of
@@ -34,6 +37,4 @@ object anon extends js.Object {
       pluginFields: StringDictionary[Plugin[_, S]]
     ): EditorState[S] = js.native
   }
-  
 }
-

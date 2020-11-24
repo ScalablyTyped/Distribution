@@ -2,11 +2,12 @@ package typings.matterJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Constraint")
 @js.native
 class Constraint () extends js.Object {
+  
   /**
     * The first possible `Body` that this constraint is attached to.
     *
@@ -15,6 +16,7 @@ class Constraint () extends js.Object {
     * @default null
     */
   var bodyA: Body = js.native
+  
   /**
     * The second possible `Body` that this constraint is attached to.
     *
@@ -23,6 +25,7 @@ class Constraint () extends js.Object {
     * @default null
     */
   var bodyB: Body = js.native
+  
   /**
     * A `Number` that specifies the damping of the constraint,
     * i.e. the amount of resistance applied to each body based on their velocities to limit the amount of oscillation.
@@ -35,6 +38,7 @@ class Constraint () extends js.Object {
     * @default 0
     */
   var damping: Double = js.native
+  
   /**
     * An integer `Number` uniquely identifying number generated in `Composite.create` by `Common.nextId`.
     *
@@ -42,6 +46,7 @@ class Constraint () extends js.Object {
     * @type number
     */
   var id: Double = js.native
+  
   /**
     * An arbitrary `String` name to help the user identify and manage bodies.
     *
@@ -50,6 +55,7 @@ class Constraint () extends js.Object {
     * @default "Constraint"
     */
   var label: String = js.native
+  
   /**
     * A `Number` that specifies the target resting length of the constraint.
     * It is calculated automatically in `Constraint.create` from initial positions of the `constraint.bodyA` and `constraint.bodyB`.
@@ -58,6 +64,7 @@ class Constraint () extends js.Object {
     * @type number
     */
   var length: Double = js.native
+  
   /**
     * A `Vector` that specifies the offset of the constraint from center of the `constraint.bodyA` if defined, otherwise a world-space position.
     *
@@ -66,6 +73,7 @@ class Constraint () extends js.Object {
     * @default { x: 0, y: 0 }
     */
   var pointA: Vector = js.native
+  
   /**
     * A `Vector` that specifies the offset of the constraint from center of the `constraint.bodyA` if defined, otherwise a world-space position.
     *
@@ -74,6 +82,7 @@ class Constraint () extends js.Object {
     * @default { x: 0, y: 0 }
     */
   var pointB: Vector = js.native
+  
   /**
     * An `Object` that defines the rendering properties to be consumed by the module `Matter.Render`.
     *
@@ -81,6 +90,7 @@ class Constraint () extends js.Object {
     * @type object
     */
   var render: IConstraintRenderDefinition = js.native
+  
   /**
     * A `Number` that specifies the stiffness of the constraint, i.e. the rate at which it returns to its resting `constraint.length`.
     * A value of `1` means the constraint should be very stiff.
@@ -91,6 +101,7 @@ class Constraint () extends js.Object {
     * @default 1
     */
   var stiffness: Double = js.native
+  
   /**
     * A `String` denoting the type of object.
     *
@@ -100,11 +111,11 @@ class Constraint () extends js.Object {
     */
   var `type`: String = js.native
 }
-
 /* static members */
 @JSImport("matter-js", "Constraint")
 @js.native
 object Constraint extends js.Object {
+  
   /**
     * Creates a new constraint.
     * All properties have default values, and many are pre-calculated automatically based on other properties.
@@ -115,4 +126,3 @@ object Constraint extends js.Object {
     */
   def create(options: IConstraintDefinition): Constraint = js.native
 }
-

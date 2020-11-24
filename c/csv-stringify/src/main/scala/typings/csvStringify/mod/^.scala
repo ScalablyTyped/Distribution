@@ -2,11 +2,12 @@ package typings.csvStringify.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("csv-stringify", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(): Stringifier = js.native
   def apply(callback: Callback): Stringifier = js.native
   def apply(input: Input): Stringifier = js.native
@@ -17,4 +18,3 @@ object ^ extends js.Object {
   def apply(options: Options): Stringifier = js.native
   def apply(options: Options, callback: Callback): Stringifier = js.native
 }
-

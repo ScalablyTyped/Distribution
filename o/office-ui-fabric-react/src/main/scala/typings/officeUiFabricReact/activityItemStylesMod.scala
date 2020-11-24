@@ -1,14 +1,15 @@
 package typings.officeUiFabricReact
 
+import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.officeUiFabricReact.activityItemTypesMod.IActivityItemStyles
-import typings.uifabricStyling.ithemeMod.ITheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/ActivityItem/ActivityItem.styles", JSImport.Namespace)
 @js.native
 object activityItemStylesMod extends js.Object {
+  
   def getStyles(
     theme: js.UndefOr[ITheme],
     customStyles: js.UndefOr[IActivityItemStyles],
@@ -18,4 +19,3 @@ object activityItemStylesMod extends js.Object {
     isCompact: js.UndefOr[Boolean]
   ): IActivityItemStyles = js.native
 }
-

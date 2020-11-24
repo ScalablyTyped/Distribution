@@ -7,7 +7,7 @@ import typings.react.mod.ComponentState
 import typings.semanticUiReact.embedEmbedMod.EmbedProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Embed")
 @js.native
@@ -16,8 +16,6 @@ class Embed protected ()
   def this(props: EmbedProps) = this()
   def this(props: EmbedProps, context: js.Any) = this()
 }
-
 @JSImport("semantic-ui-react", "Embed")
 @js.native
 object Embed extends TopLevel[ComponentClass[EmbedProps, ComponentState]]
-

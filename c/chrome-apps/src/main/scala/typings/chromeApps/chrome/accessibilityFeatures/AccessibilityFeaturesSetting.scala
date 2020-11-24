@@ -2,10 +2,11 @@ package typings.chromeApps.chrome.accessibilityFeatures
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AccessibilityFeaturesSetting extends js.Object {
+  
   /**
     * Clears the setting, restoring any default value.
     * @param details Which setting to clear.
@@ -15,6 +16,7 @@ trait AccessibilityFeaturesSetting extends js.Object {
     */
   def clear(details: AccessibilityFeaturesClearArg): Unit = js.native
   def clear(details: AccessibilityFeaturesClearArg, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Gets the value of a setting.
     * @param details Which setting to consider.
@@ -25,6 +27,7 @@ trait AccessibilityFeaturesSetting extends js.Object {
     details: AccessibilityFeaturesGetArg,
     callback: js.Function1[/* details */ AccessibilityFeaturesCallbackArg, Unit]
   ): Unit = js.native
+  
   /**
     * Sets the value of a setting.
     * @param details Which setting to change.
@@ -35,4 +38,3 @@ trait AccessibilityFeaturesSetting extends js.Object {
   def set(details: AccessibilityFeaturesSetArg): Unit = js.native
   def set(details: AccessibilityFeaturesSetArg, callback: js.Function0[Unit]): Unit = js.native
 }
-

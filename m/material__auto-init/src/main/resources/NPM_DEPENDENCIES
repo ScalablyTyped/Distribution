@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/auto-init" : "7.0.0"
+      "@material/auto-init" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/auto-init" : "7.0.0"
+      "@material/auto-init" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -4,11 +4,12 @@ import typings.node.BufferEncoding
 import typings.node.NodeJS.ArrayBufferView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("original-fs", "writeSync")
 @js.native
 object writeSync extends js.Object {
+  
   def apply(fd: Double, buffer: ArrayBufferView): Double = js.native
   def apply(
     fd: Double,
@@ -59,4 +60,3 @@ object writeSync extends js.Object {
   def apply(fd: Double, string: String, position: Double, encoding: BufferEncoding): Double = js.native
   def apply(fd: Double, string: String, position: Null, encoding: BufferEncoding): Double = js.native
 }
-

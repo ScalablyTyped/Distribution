@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/sfn/activity", "Activity")
 @js.native
@@ -24,24 +24,27 @@ class Activity protected () extends CustomResource {
   def this(name: String, args: ActivityArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ActivityArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The date the activity was created.
     */
   val creationDate: Output_[String] = js.native
+  
   /**
     * The name of the activity to create.
     */
   val name: Output_[String] = js.native
+  
   /**
     * Key-value map of resource tags
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/sfn/activity", "Activity")
 @js.native
 object Activity extends js.Object {
+  
   /**
     * Get an existing Activity resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -55,10 +58,10 @@ object Activity extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Activity = js.native
   def get(name: String, id: Input[ID], state: ActivityState): Activity = js.native
   def get(name: String, id: Input[ID], state: ActivityState, opts: CustomResourceOptions): Activity = js.native
+  
   /**
     * Returns true if the given object is an instance of Activity.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sfn/activity.Activity */ Boolean = js.native
 }
-

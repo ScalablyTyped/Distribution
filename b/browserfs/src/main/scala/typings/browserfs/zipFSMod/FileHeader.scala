@@ -4,18 +4,25 @@ import typings.node.Buffer
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("browserfs/dist/node/backend/ZipFS", "FileHeader")
 @js.native
 class FileHeader protected () extends js.Object {
   def this(data: Buffer) = this()
-  var data: js.Any = js.native
+  
   def compressionMethod(): CompressionMethod = js.native
+  
   def crc32(): Double = js.native
+  
+  var data: js.Any = js.native
+  
   def extraField(): Buffer = js.native
+  
   def extraFieldLength(): Double = js.native
+  
   def fileName(): String = js.native
+  
   /**
     * These two values are COMPLETELY USELESS.
     *
@@ -28,11 +35,16 @@ class FileHeader protected () extends js.Object {
     * So we'll just use the central directory's values.
     */
   def fileNameLength(): Double = js.native
+  
   def flags(): Double = js.native
+  
   def lastModFileTime(): Date = js.native
+  
   def rawLastModFileTime(): Double = js.native
+  
   def totalSize(): Double = js.native
+  
   def useUTF8(): Boolean = js.native
+  
   def versionNeeded(): Double = js.native
 }
-

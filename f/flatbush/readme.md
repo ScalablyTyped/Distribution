@@ -1,7 +1,7 @@
 
 # Scala.js typings for flatbush
 
-Typings are for version 3.1
+Typings are for version 3.3
 
 ## Library description:
 Fast static spatial index for rectangles
@@ -10,9 +10,9 @@ Fast static spatial index for rectangles
 | ------------------ | :-------------: |
 | Full name          | flatbush |
 | Keywords           | geometry, spatial, tree, index, rectangle, search |
-| # releases         | 18 |
-| # dependents       | 15 |
-| # downloads        | 95792 |
+| # releases         | 6 |
+| # dependents       | 25 |
+| # downloads        | 241589 |
 | # stars            | 0 |
 
 ## Links

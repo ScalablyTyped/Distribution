@@ -3,11 +3,12 @@ package typings.easystarjs.mod
 import typings.easystarjs.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("easystarjs", "js")
 @js.native
 class js_ () extends js.Object {
+  
   /**
     * Avoid a particular point on the grid,
     * regardless of whether or not it is an acceptable tile.
@@ -16,6 +17,7 @@ class js_ () extends js.Object {
     * @param {Number} y The y value of the point to avoid.
     */
   def avoidAdditionalPoint(x: Double, y: Double): Unit = js.native
+  
   /**
     * This method steps through the A* Algorithm in an attempt to
     * find your path(s). It will search 4-8 tiles (depending on diagonals) for every calculation.
@@ -23,6 +25,7 @@ class js_ () extends js.Object {
     * easystar.setIteratonsPerCalculation().
     */
   def calculate(): Unit = js.native
+  
   /**
     * Cancel a path calculation.
     *
@@ -31,31 +34,38 @@ class js_ () extends js.Object {
     *
     **/
   def cancelPath(instanceId: Double): Boolean = js.native
+  
   /**
     * Disables corner cutting in diagonal movement.
     */
   def disableCornerCutting(): Unit = js.native
+  
   /**
     * Disable diagonal pathfinding.
     */
   def disableDiagonals(): Unit = js.native
+  
   /**
     * Disables sync mode for this EasyStar instance.
     */
   def disableSync(): Unit = js.native
+  
   /**
     * Enables corner cutting in diagonal movement.
     */
   def enableCornerCutting(): Unit = js.native
+  
   /**
     * Enable diagonal pathfinding.
     */
   def enableDiagonals(): Unit = js.native
+  
   /**
     * Enables sync mode for this EasyStar instance..
     * if you're into that sort of thing.
     */
   def enableSync(): Unit = js.native
+  
   /**
     * Find a path.
     *
@@ -75,6 +85,7 @@ class js_ () extends js.Object {
     endY: Double,
     callback: js.Function1[/* path */ js.Array[X], Unit]
   ): Double = js.native
+  
   /**
     * Remove the additional cost for a particular point.
     *
@@ -82,14 +93,17 @@ class js_ () extends js.Object {
     * @param {Number} y The y value of the point to stop costing.
     */
   def removeAdditionalPointCost(x: Double, y: Double): Unit = js.native
+  
   /**
     * Remove all additional point costs.
     */
   def removeAllAdditionalPointCosts(): Unit = js.native
+  
   /**
     * Remove all directional conditions
     */
   def removeAllDirectionalConditions(): Unit = js.native
+  
   /**
     * Sets the collision grid that EasyStar uses.
     *
@@ -99,6 +113,7 @@ class js_ () extends js.Object {
     */
   def setAcceptableTiles(tiles: js.Array[Double]): Unit = js.native
   def setAcceptableTiles(tiles: Double): Unit = js.native
+  
   /**
     * Sets the an additional cost for a particular point.
     * Overrides the cost from setTileCost.
@@ -108,6 +123,7 @@ class js_ () extends js.Object {
     * @param {Number} The multiplicative cost associated with the given point.
     */
   def setAdditionalPointCost(x: Double, y: Double, cost: Double): Unit = js.native
+  
   /**
     * Sets a directional condition on a tile
     *
@@ -118,6 +134,7 @@ class js_ () extends js.Object {
     * eg. easystar.setDirectionalCondition(1, 1, ['TOP']): You can only access the tile by walking down onto it,
     */
   def setDirectionalCondition(x: Double, y: Double, allowedDirections: js.Array[Direction]): Unit = js.native
+  
   /**
     * Sets the collision grid that EasyStar uses.
     *
@@ -125,6 +142,7 @@ class js_ () extends js.Object {
     * This should be a 2D Array of Numbers.
     */
   def setGrid(grid: js.Array[js.Array[Double]]): Unit = js.native
+  
   /**
     * Sets the number of search iterations per calculation.
     * A lower number provides a slower result, but more practical if you
@@ -134,6 +152,7 @@ class js_ () extends js.Object {
     * @param {Number} iterations The number of searches to prefrom per calculate() call.
     */
   def setIterationsPerCalculation(iterations: Double): Unit = js.native
+  
   /**
     * Sets the tile cost for a particular tile type.
     *
@@ -141,6 +160,7 @@ class js_ () extends js.Object {
     * @param {Number} The multiplicative cost associated with the given tile.
     */
   def setTileCost(tileType: Double, cost: Double): Unit = js.native
+  
   /**
     * Stop avoiding a particular point on the grid.
     *
@@ -148,9 +168,9 @@ class js_ () extends js.Object {
     * @param {Number} y The y value of the point to stop avoiding.
     */
   def stopAvoidingAdditionalPoint(x: Double, y: Double): Unit = js.native
+  
   /**
     * Stop avoiding all additional points on the grid.
     */
   def stopAvoidingAllAdditionalPoints(): Unit = js.native
 }
-

@@ -19,31 +19,41 @@ import typings.node.urlMod.URL_
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("inversify-express-utils/dts/base_http_controller", JSImport.Namespace)
 @js.native
 object baseHttpControllerMod extends js.Object {
+  
   @js.native
   class BaseHttpController () extends js.Object {
-    val httpContext: HttpContext = js.native
+    
     /* protected */ def badRequest(): BadRequestResult = js.native
     /* protected */ def badRequest(message: String): BadRequestErrorMessageResult = js.native
+    
     /* protected */ def conflict(): ConflictResult = js.native
+    
     /* protected */ def created[T](location: String, content: T): CreatedNegotiatedContentResult[T] = js.native
     /* protected */ def created[T](location: URL_, content: T): CreatedNegotiatedContentResult[T] = js.native
+    
+    val httpContext: HttpContext = js.native
+    
     /* protected */ def internalServerError(): InternalServerErrorResult = js.native
     /* protected */ def internalServerError(error: Error): ExceptionResult = js.native
+    
     /* protected */ def json(content: js.Any): JsonResult = js.native
     /* protected */ def json(content: js.Any, statusCode: Double): JsonResult = js.native
+    
     /* protected */ def notFound(): NotFoundResult = js.native
+    
     /* protected */ def ok(): OkResult = js.native
     /* protected */ def ok[T](content: T): OkNegotiatedContentResult[T] = js.native
+    
     /* protected */ def redirect(uri: String): RedirectResult = js.native
     /* protected */ def redirect(uri: URL_): RedirectResult = js.native
+    
     /* protected */ def responseMessage(message: HttpResponseMessage): ResponseMessageResult = js.native
+    
     /* protected */ def statusCode(statusCode: Double): StatusCodeResult = js.native
   }
-  
 }
-

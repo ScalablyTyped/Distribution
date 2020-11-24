@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ParagraphStyle extends js.Object
-
 @JSGlobal("Windows.UI.Text.ParagraphStyle")
 @js.native
 object ParagraphStyle extends js.Object {
+  
   @js.native
   sealed trait heading1 extends ParagraphStyle
   
@@ -45,6 +45,4 @@ object ParagraphStyle extends js.Object {
   
   @js.native
   sealed trait undefined extends ParagraphStyle
-  
 }
-

@@ -10,8 +10,8 @@ Use to create an immutable, lazily initialized pipeline from a series of streams
 | Full name          | lazypipe |
 | Keywords           | gulpfriendly, stream, streams, combine, lazy, pipeline, gulp |
 | # releases         | 2 |
-| # dependents       | 143 |
-| # downloads        | 2869410 |
+| # dependents       | 144 |
+| # downloads        | 2000200 |
 | # stars            | 48 |
 
 ## Links

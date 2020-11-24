@@ -3,10 +3,11 @@ package typings.openui5.sap.ui.core.routing
 import typings.openui5.sap.ui.base.EventProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Views extends EventProvider {
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'created' event of this
     * <code>sap.ui.core.routing.Views</code>.<br/>
@@ -18,6 +19,7 @@ trait Views extends EventProvider {
     */
   def attachCreated(oData: js.Any, fnFunction: js.Any): Views = js.native
   def attachCreated(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Views = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'created' event of this
     * <code>sap.ui.core.routing.Views</code>.<br/>The passed function and listener object must match the
@@ -27,6 +29,7 @@ trait Views extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def detachCreated(fnFunction: js.Any, oListener: js.Any): Views = js.native
+  
   /**
     * Fire event created to attached listeners.
     * @param mArguments the arguments to pass along with the event.
@@ -34,4 +37,3 @@ trait Views extends EventProvider {
     */
   def fireCreated(mArguments: js.Any): Views = js.native
 }
-

@@ -10,9 +10,9 @@ Minifies PostgreSQL scripts.
 | ------------------ | :-------------: |
 | Full name          | pg-minify |
 | Keywords           | sql, postgresql, comments, minify, uglify, compress, strip, remove |
-| # releases         | 17 |
+| # releases         | 19 |
 | # dependents       | 18 |
-| # downloads        | 4302749 |
+| # downloads        | 6623321 |
 | # stars            | 1 |
 
 ## Links

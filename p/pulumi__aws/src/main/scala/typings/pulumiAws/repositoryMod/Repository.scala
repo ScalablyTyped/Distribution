@@ -1,6 +1,8 @@
 package typings.pulumiAws.repositoryMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.pulumiAws.outputMod.codeartifact.RepositoryExternalConnections
+import typings.pulumiAws.outputMod.codeartifact.RepositoryUpstream
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -8,9 +10,9 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/codecommit/repository", "Repository")
+@JSImport("@pulumi/aws/codeartifact/repository", "Repository")
 @js.native
 class Repository protected () extends CustomResource {
   /**
@@ -22,44 +24,57 @@ class Repository protected () extends CustomResource {
     */
   def this(name: String, args: RepositoryArgs) = this()
   def this(name: String, args: RepositoryArgs, opts: CustomResourceOptions) = this()
+  
   /**
-    * The ARN of the repository
+    * The account number of the AWS account that manages the repository.
+    */
+  val administratorAccount: Output_[String] = js.native
+  
+  /**
+    * The ARN of the repository.
     */
   val arn: Output_[String] = js.native
+  
   /**
-    * The URL to use for cloning the repository over HTTPS.
-    */
-  val cloneUrlHttp: Output_[String] = js.native
-  /**
-    * The URL to use for cloning the repository over SSH.
-    */
-  val cloneUrlSsh: Output_[String] = js.native
-  /**
-    * The default branch of the repository. The branch specified here needs to exist.
-    */
-  val defaultBranch: Output_[js.UndefOr[String]] = js.native
-  /**
-    * The description of the repository. This needs to be less than 1000 characters
+    * The description of the repository.
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  
   /**
-    * The ID of the repository
+    * The domain that contains the created repository.
     */
-  val repositoryId: Output_[String] = js.native
+  val domain: Output_[String] = js.native
+  
   /**
-    * The name for the repository. This needs to be less than 100 characters.
+    * The account number of the AWS account that owns the domain.
     */
-  val repositoryName: Output_[String] = js.native
+  val domainOwner: Output_[String] = js.native
+  
   /**
-    * Key-value map of resource tags
+    * An array of external connections associated with the repository. Only one external connection can be set per repository. see External Connections.
+    */
+  val externalConnections: Output_[js.UndefOr[RepositoryExternalConnections]] = js.native
+  
+  /**
+    * The name of the repository to create.
+    */
+  val repository: Output_[String] = js.native
+  
+  /**
+    * Key-value map of resource tags.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  
+  /**
+    * A list of upstream repositories to associate with the repository. The order of the upstream repositories in the list determines their priority order when AWS CodeArtifact looks for a requested package version. see Upstream
+    */
+  val upstreams: Output_[js.UndefOr[js.Array[RepositoryUpstream]]] = js.native
 }
-
 /* static members */
-@JSImport("@pulumi/aws/codecommit/repository", "Repository")
+@JSImport("@pulumi/aws/codeartifact/repository", "Repository")
 @js.native
 object Repository extends js.Object {
+  
   /**
     * Get an existing Repository resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -73,10 +88,10 @@ object Repository extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Repository = js.native
   def get(name: String, id: Input[ID], state: RepositoryState): Repository = js.native
   def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): Repository = js.native
+  
   /**
     * Returns true if the given object is an instance of Repository.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/repository.Repository */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/repository.Repository */ Boolean = js.native
 }
-

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.IntersectionObserverEntryInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("IntersectionObserverEntry")
 @js.native
@@ -12,7 +12,6 @@ class IntersectionObserverEntry protected ()
   extends typings.std.IntersectionObserverEntry {
   def this(intersectionObserverEntryInit: IntersectionObserverEntryInit) = this()
 }
-
 @JSGlobal("IntersectionObserverEntry")
 @js.native
 object IntersectionObserverEntry
@@ -20,4 +19,3 @@ object IntersectionObserverEntry
       /* intersectionObserverEntryInit */ IntersectionObserverEntryInit, 
       typings.std.IntersectionObserverEntry
     ]
-

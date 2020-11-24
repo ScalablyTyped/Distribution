@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EmailMailboxSmimeSigningAlgorithm extends js.Object
-
 /** Defines the algorithm used to sign an email. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxSmimeSigningAlgorithm")
 @js.native
 object EmailMailboxSmimeSigningAlgorithm extends js.Object {
+  
   /** No specific algorithm is required. */
   @js.native
   sealed trait any extends EmailMailboxSmimeSigningAlgorithm
@@ -22,6 +22,4 @@ object EmailMailboxSmimeSigningAlgorithm extends js.Object {
   /** Use Secure Hash Algorithm 1 (160-bit). */
   @js.native
   sealed trait sha1 extends EmailMailboxSmimeSigningAlgorithm
-  
 }
-

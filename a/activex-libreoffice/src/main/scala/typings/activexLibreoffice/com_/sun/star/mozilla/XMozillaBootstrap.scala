@@ -4,7 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see com.sun.star.mozilla.XProfileDiscover
@@ -17,8 +17,8 @@ trait XMozillaBootstrap
   extends XProfileDiscover
      with XProfileManager
      with XProxyRunner
-
 object XMozillaBootstrap {
+  
   @scala.inline
   def apply(
     CurrentProduct: MozillaProductType,
@@ -44,4 +44,3 @@ object XMozillaBootstrap {
     __obj.asInstanceOf[XMozillaBootstrap]
   }
 }
-

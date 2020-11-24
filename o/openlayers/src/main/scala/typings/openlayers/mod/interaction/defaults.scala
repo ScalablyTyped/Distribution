@@ -4,11 +4,12 @@ import typings.openlayers.mod.Collection
 import typings.openlayers.mod.olx.interaction.DefaultsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "interaction.defaults")
 @js.native
 object defaults extends js.Object {
+  
   /**
     * Set of interactions included in maps by default. Specific interactions can be
     * excluded by setting the appropriate option to false in the constructor
@@ -35,4 +36,3 @@ object defaults extends js.Object {
   def apply(): Collection[Interaction] = js.native
   def apply(opt_options: DefaultsOptions): Collection[Interaction] = js.native
 }
-

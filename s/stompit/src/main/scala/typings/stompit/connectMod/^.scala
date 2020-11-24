@@ -2,11 +2,12 @@ package typings.stompit.connectMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stompit/lib/connect", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(optionsOrPathOrPort: String): typings.stompit.clientMod.^ = js.native
   def apply(optionsOrPathOrPort: String, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
   def apply(optionsOrPathOrPort: Double): typings.stompit.clientMod.^ = js.native
@@ -17,4 +18,3 @@ object ^ extends js.Object {
   def apply(port: Double, host: String): typings.stompit.clientMod.^ = js.native
   def apply(port: Double, host: String, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
 }
-

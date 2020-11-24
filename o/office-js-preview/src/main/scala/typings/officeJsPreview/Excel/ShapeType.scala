@@ -2,11 +2,10 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ShapeType extends js.Object
-
 /**
   *
   * Specifies the type of a shape.
@@ -16,6 +15,7 @@ sealed trait ShapeType extends js.Object
 @JSGlobal("Excel.ShapeType")
 @js.native
 object ShapeType extends js.Object {
+  
   @js.native
   sealed trait geometricShape extends ShapeType
   
@@ -30,6 +30,4 @@ object ShapeType extends js.Object {
   
   @js.native
   sealed trait unsupported extends ShapeType
-  
 }
-

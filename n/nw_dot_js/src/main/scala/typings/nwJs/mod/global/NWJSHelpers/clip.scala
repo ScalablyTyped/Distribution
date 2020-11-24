@@ -2,17 +2,19 @@ package typings.nwJs.mod.global.NWJSHelpers
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The clipboard object.
   */
 @js.native
 trait clip extends js.Object {
+  
   /**
     * Clear the clipboard.
     */
   def clear(): Unit = js.native
+  
   /**
     * Get the data of `type` from clipboard.
     *
@@ -24,6 +26,7 @@ trait clip extends js.Object {
   def get(`type`: js.UndefOr[scala.Nothing], raw: Boolean): String = js.native
   def get(`type`: String): String = js.native
   def get(`type`: String, raw: Boolean): String = js.native
+  
   /**
     * Get an array contains list of available types of data in clipboard currenly.
     * You can use the returned list as a suggestion to get the right data from clipboard.
@@ -31,6 +34,7 @@ trait clip extends js.Object {
     * @returns {string[]} List of available types of data in clipboard currenly.
     */
   def readAvailableTypes(): js.Array[String] = js.native
+  
   /**
     * Write `data` of `type` to the clipboard.
     *
@@ -43,4 +47,3 @@ trait clip extends js.Object {
   def set(data: String, `type`: String): Unit = js.native
   def set(data: String, `type`: String, raw: Boolean): Unit = js.native
 }
-

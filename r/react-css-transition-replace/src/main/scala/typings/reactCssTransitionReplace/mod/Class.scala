@@ -4,7 +4,7 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-css-transition-replace", JSImport.Namespace)
 @js.native
@@ -13,4 +13,3 @@ class Class protected ()
   def this(props: Props) = this()
   def this(props: Props, context: js.Any) = this()
 }
-

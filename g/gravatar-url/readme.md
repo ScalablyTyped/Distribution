@@ -11,8 +11,8 @@ Get the URL to a Gravatar image from an identifier, such as an email
 | Full name          | gravatar-url |
 | Keywords           | gravatar, avatar, profile, image, picture, photo, hash, email, identifier |
 | # releases         | 4 |
-| # dependents       | 13 |
-| # downloads        | 81693 |
+| # dependents       | 15 |
+| # downloads        | 147221 |
 | # stars            | 2 |
 
 ## Links

@@ -6,14 +6,17 @@ import typings.tapable.mod.Tapable.Handler
 import typings.tapable.mod.Tapable.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tapable", "Tapable")
 @js.native
 abstract class Tapable_ () extends js.Object {
+  
   /** @deprecated Private internals. Do not use directly */
   var _pluginCompat: Hook[_, _, _, _, _] = js.native
+  
   var _plugins: StringDictionary[js.Array[Handler]] = js.native
+  
   /**
     * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
     * invoke all plugins with this attached.
@@ -22,6 +25,7 @@ abstract class Tapable_ () extends js.Object {
     */
   @JSName("apply")
   def apply(plugins: ((js.ThisFunction0[/* this */ this.type, _]) | Plugin)*): Unit = js.native
+  
   /**
     * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
     * synchronously applies all registered handlers for target name(event id).
@@ -32,9 +36,13 @@ abstract class Tapable_ () extends js.Object {
     * @param args
     */
   def applyPlugins(name: String, args: js.Any*): Unit = js.native
+  
   def applyPlugins0(name: String): Unit = js.native
+  
   def applyPlugins1(name: String, param: js.Any): Unit = js.native
+  
   def applyPlugins2(name: String, param1: js.Any, param2: js.Any): Unit = js.native
+  
   /**
     * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
     * asynchronously applies all registered handlers for target name(event id).
@@ -48,6 +56,7 @@ abstract class Tapable_ () extends js.Object {
     * and the real callback is call with that error.
     */
   def applyPluginsAsync(name: String, args: js.Any*): Unit = js.native
+  
   /**
     * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
     * same as `applyPluginsAsync`
@@ -57,7 +66,9 @@ abstract class Tapable_ () extends js.Object {
     * @param args
     */
   def applyPluginsAsyncSeries(name: String, args: js.Any*): Unit = js.native
+  
   def applyPluginsAsyncSeries1(name: String, param: js.Any, callback: CallbackFunction): Unit = js.native
+  
   /**
     * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
     * asynchronously applies all registered handlers for target name(event id).
@@ -73,6 +84,7 @@ abstract class Tapable_ () extends js.Object {
     * If a handler returns something !== undefined, that value is returned and no more handlers will be applied.
     */
   def applyPluginsAsyncSeriesBailResult(name: String, args: js.Any*): Unit = js.native
+  
   /**
     * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
     * asynchronously applies all registered handlers for target name(event id).
@@ -85,6 +97,7 @@ abstract class Tapable_ () extends js.Object {
     *       and a callback for plugins
     */
   def applyPluginsAsyncSeriesBailResult1(name: String, param: js.Any, callback: CallbackFunction): Unit = js.native
+  
   /**
     * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
     * Asynchronously applies all registered handlers for target name(event id).
@@ -101,6 +114,7 @@ abstract class Tapable_ () extends js.Object {
     * and the real callback is call with that error.
     */
   def applyPluginsAsyncWaterfall(name: String, init: js.Any, callback: CallbackFunction): Unit = js.native
+  
   /**
     * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
     * synchronously applies all registered handlers for target name(event id).
@@ -110,6 +124,7 @@ abstract class Tapable_ () extends js.Object {
     * If a handler returns something !== undefined, that value is returned and no more handlers will be applied.
     */
   def applyPluginsBailResult(name: String, args: js.Any*): js.Any = js.native
+  
   /**
     * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
     * synchronously applies all registered handlers for target name(event id).
@@ -123,6 +138,7 @@ abstract class Tapable_ () extends js.Object {
     *       while `{@link applyPluginsBailResult1}` passes the arguments as single param(any type) for plugins
     */
   def applyPluginsBailResult1(name: String, param: js.Any): js.Any = js.native
+  
   /**
     * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
     * applies all registered handlers for target name(event id) in parallel.
@@ -136,6 +152,7 @@ abstract class Tapable_ () extends js.Object {
     * skipped.
     */
   def applyPluginsParallel(name: String, args: js.Any*): Unit = js.native
+  
   /**
     * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
     * applies all registered handlers for target name(event id) in parallel.
@@ -150,6 +167,7 @@ abstract class Tapable_ () extends js.Object {
     * The order is defined by registration not by speed of the handler function.
     */
   def applyPluginsParallelBailResult(name: String, args: js.Any*): Unit = js.native
+  
   /**
     * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
     * applies all registered handlers for target name(event id) in parallel.
@@ -162,6 +180,7 @@ abstract class Tapable_ () extends js.Object {
     *       and a callback for plugins
     */
   def applyPluginsParallelBailResult1(name: String, param: js.Any, callback: CallbackFunction): Unit = js.native
+  
   /**
     * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
     * synchronously applies all registered handlers for target name(event id).
@@ -173,6 +192,7 @@ abstract class Tapable_ () extends js.Object {
     * return the returned value of the last handler
     */
   def applyPluginsWaterfall(name: String, init: js.Any, args: js.Any*): js.Any = js.native
+  
   /**
     * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
     * synchronously applies all registered handlers for target name(event id).
@@ -184,6 +204,7 @@ abstract class Tapable_ () extends js.Object {
     * return the returned value of the last handler
     */
   def applyPluginsWaterfall0(name: String, init: js.Any): js.Any = js.native
+  
   /**
     * @deprecated Tapable.plugin is deprecated. Use new API on `.hooks` instead
     * Register plugin(s)
@@ -200,4 +221,3 @@ abstract class Tapable_ () extends js.Object {
     handler: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]
   ): Unit = js.native
 }
-

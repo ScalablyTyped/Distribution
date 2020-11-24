@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.ui
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a user interface item that is part of a user interface element.
@@ -14,42 +14,51 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ItemDescriptor extends js.Object {
+  
   /** contains the command URL which specifies which action should be accomplished. */
   var CommandURL: String = js.native
+  
   /** contains the a URL that points to a help text. */
   var HelpURL: String = js.native
+  
   /**
     * specifies if this item is visible or not.
     *
     * This property is only valid if the item describes a toolbar or statusbar item.
     */
   var IsVisible: Boolean = js.native
+  
   /**
     * specifies an optional sub container.
     *
     * This property is valid for menus only. It can be used to define sub menus.
     */
   var ItemDescriptorContainer: XIndexAccess = js.native
+  
   /** the text of the user interface item. */
   var Label: String = js.native
+  
   /**
     * specifies the pixel distance by which the text of the item is shifted on the x-axis.
     *
     * This property is only valid if the item describes a statusbar item.
     */
   var Offset: Double = js.native
+  
   /**
     * different styles which influence the appearance of the item and its behavior.
     *
     * This property is only valid if the item describes a toolbar or statusbar item. See {@link ItemStyle} for more information about possible styles.
     */
   var Style: Double = js.native
+  
   /**
     * specifies which type this item descriptor belongs to.
     *
     * See constant definition {@link ItemType} .
     */
   var Type: Double = js.native
+  
   /**
     * specifies a pixel width for this item inside the user interface element.
     *
@@ -57,8 +66,8 @@ trait ItemDescriptor extends js.Object {
     */
   var Width: Double = js.native
 }
-
 object ItemDescriptor {
+  
   @scala.inline
   def apply(
     CommandURL: String,
@@ -74,36 +83,47 @@ object ItemDescriptor {
     val __obj = js.Dynamic.literal(CommandURL = CommandURL.asInstanceOf[js.Any], HelpURL = HelpURL.asInstanceOf[js.Any], IsVisible = IsVisible.asInstanceOf[js.Any], ItemDescriptorContainer = ItemDescriptorContainer.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], Offset = Offset.asInstanceOf[js.Any], Style = Style.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemDescriptor]
   }
+  
   @scala.inline
   implicit class ItemDescriptorOps[Self <: ItemDescriptor] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCommandURL(value: String): Self = this.set("CommandURL", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHelpURL(value: String): Self = this.set("HelpURL", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsVisible(value: Boolean): Self = this.set("IsVisible", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setItemDescriptorContainer(value: XIndexAccess): Self = this.set("ItemDescriptorContainer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLabel(value: String): Self = this.set("Label", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOffset(value: Double): Self = this.set("Offset", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStyle(value: Double): Self = this.set("Style", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: Double): Self = this.set("Type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
   }
-  
 }
-

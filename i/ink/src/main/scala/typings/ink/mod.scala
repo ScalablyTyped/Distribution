@@ -13,28 +13,33 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ink", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * `<Box>` is an essential Ink component to build your layout. It's like `<div style="display: flex">` in the browser.
     */
   val Box: ForwardRefExoticComponent[readonlymarginnumberundef] = js.native
+  
   /**
     * Adds one or more newline (\n) characters. Must be used within <Text> components.
     */
   val Newline: FC[Props] = js.native
+  
   /**
     * A flexible space that expands along the major axis of its containing layout.
     * It's useful as a shortcut for filling all the available spaces between elements.
     */
   val Spacer: FC[js.Object] = js.native
+  
   /**
     * This component can display text, and change its style to make it colorful, bold, underline, italic or strikethrough.
     */
   val Text: FC[typings.ink.textMod.Props] = js.native
+  
   /**
     * Transform a string representation of React components before they are written to output.
     * For example, you might want to apply a gradient to text, add a clickable link or create some text effects.
@@ -42,12 +47,16 @@ object mod extends js.Object {
     * That's what <Transform> component does, it gives you an output string of its child components and lets you transform it in any way.
     */
   val Transform: FC[typings.ink.transformMod.Props] = js.native
+  
+  def measureElement(node: DOMElement): Output = js.native
+  
   /**
     * Mount a component and render the output.
     */
   val render: RenderFunction = js.native
-  def measureElement(node: DOMElement): Output = js.native
+  
   def useApp(): typings.ink.appContextMod.Props = js.native
+  
   /**
     * Component that uses `useFocus` hook becomes "focusable" to Ink,
     * so when user presses <kbd>Tab</kbd>, Ink will switch focus to this component.
@@ -58,11 +67,13 @@ object mod extends js.Object {
     */
   def useFocus(): typings.ink.useFocusMod.Output = js.native
   def useFocus(hasIsActiveAutoFocus: Input): typings.ink.useFocusMod.Output = js.native
+  
   /**
     * This hook exposes methods to enable or disable focus management for all
     * components or manually switch focus to next or previous components.
     */
   def useFocusManager(): typings.ink.useFocusManagerMod.Output = js.native
+  
   /**
     * This hook is used for handling user input.
     * It's a more convienient alternative to using `StdinContext` and listening to `data` events.
@@ -89,9 +100,13 @@ object mod extends js.Object {
     */
   def useInput(inputHandler: Handler): Unit = js.native
   def useInput(inputHandler: Handler, options: Options): Unit = js.native
+  
   def useStderr(): typings.ink.stderrContextMod.Props = js.native
+  
   def useStdin(): typings.ink.stdinContextMod.Props = js.native
+  
   def useStdout(): typings.ink.stdoutContextMod.Props = js.native
+  
   /**
     * `<Static>` component permanently renders its output above everything else.
     * It's useful for displaying activity like completed tasks or logs - things that
@@ -106,9 +121,9 @@ object mod extends js.Object {
     */
   @js.native
   object Static extends js.Object {
-    var displayName: String = js.native
+    
     def apply[T](props: typings.ink.staticMod.Props[T]): Element = js.native
+    
+    var displayName: String = js.native
   }
-  
 }
-

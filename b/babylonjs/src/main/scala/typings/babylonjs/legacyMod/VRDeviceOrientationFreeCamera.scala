@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "VRDeviceOrientationFreeCamera")
 @js.native
@@ -31,8 +31,14 @@ class VRDeviceOrientationFreeCamera protected ()
     name: String,
     position: typings.babylonjs.mathVectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene,
+    compensateDistortion: js.UndefOr[scala.Nothing],
+    vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+  ) = this()
+  def this(
+    name: String,
+    position: typings.babylonjs.mathVectorMod.Vector3,
+    scene: typings.babylonjs.sceneMod.Scene,
     compensateDistortion: Boolean,
     vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
   ) = this()
 }
-

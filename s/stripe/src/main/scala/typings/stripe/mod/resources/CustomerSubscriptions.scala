@@ -6,11 +6,12 @@ import typings.stripe.mod.subscriptions.ISubscription
 import typings.stripe.mod.subscriptions.ISubscriptionCustCreationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.CustomerSubscriptions")
 @js.native
 class CustomerSubscriptions () extends SubscriptionsBase {
+  
   def create(data: ISubscriptionCustCreationOptions): js.Promise[ISubscription] = js.native
   /**
     * Creates a new subscription on an existing customer.
@@ -29,4 +30,3 @@ class CustomerSubscriptions () extends SubscriptionsBase {
   ): js.Promise[ISubscription] = js.native
   def create(data: ISubscriptionCustCreationOptions, response: IResponseFn[ISubscription]): js.Promise[ISubscription] = js.native
 }
-

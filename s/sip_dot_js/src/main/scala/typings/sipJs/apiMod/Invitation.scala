@@ -3,7 +3,7 @@ package typings.sipJs.apiMod
 import typings.sipJs.inviteMod.IncomingInviteRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/api", "Invitation")
 @js.native
@@ -12,4 +12,3 @@ class Invitation protected ()
   /** @internal */
   def this(userAgent: typings.sipJs.userAgentMod.UserAgent, incomingInviteRequest: IncomingInviteRequest) = this()
 }
-

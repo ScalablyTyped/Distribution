@@ -1,19 +1,12 @@
 package typings.screeps.global
 
 import org.scalablytyped.runtime.TopLevel
+import typings.screeps.InterShardResourceConstant
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("INTERSHARD_RESOURCES")
 @js.native
 object INTERSHARD_RESOURCES
-  extends TopLevel[
-      js.Tuple4[
-        typings.screeps.SUBSCRIPTION_TOKEN, 
-        typings.screeps.CPU_UNLOCK, 
-        typings.screeps.PIXEL, 
-        typings.screeps.ACCESS_KEY
-      ]
-    ]
-
+  extends TopLevel[js.Array[InterShardResourceConstant]]

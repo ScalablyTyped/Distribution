@@ -2,10 +2,11 @@ package typings.openui5.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ScrollBar extends Control {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>scroll</code> event of this
     * <code>sap.ui.core.ScrollBar</code>.When called, the context of the event handler (its
@@ -20,11 +21,13 @@ trait ScrollBar extends Control {
     */
   def attachScroll(oData: js.Any, fnFunction: js.Any): ScrollBar = js.native
   def attachScroll(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ScrollBar = js.native
+  
   /**
     * Binds the mouse wheel scroll event of the control that has the scrollbar to the scrollbar itself.
     * @param oOwnerDomRef Dom ref of the control that uses the scrollbar
     */
   def bind(oOwnerDomRef: String): Unit = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>scroll</code> event of this
     * <code>sap.ui.core.ScrollBar</code>.The passed function and listener object must match the ones used
@@ -34,6 +37,7 @@ trait ScrollBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachScroll(fnFunction: js.Any, oListener: js.Any): ScrollBar = js.native
+  
   /**
     * Fires event <code>scroll</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>action</code> of type <code>sap.ui.core.ScrollBarAction</code>Actions are:
@@ -46,41 +50,49 @@ trait ScrollBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireScroll(mArguments: js.Any): ScrollBar = js.native
+  
   /**
     * Gets current value of property <code>contentSize</code>.Size of the scrollable content (in pixels).
     * @returns Value of property <code>contentSize</code>
     */
   def getContentSize(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>scrollPosition</code>.Scroll position in steps or pixels.
     * @returns Value of property <code>scrollPosition</code>
     */
   def getScrollPosition(): Double = js.native
+  
   /**
     * Gets current value of property <code>size</code>.Size of the Scrollbar (in pixels).
     * @returns Value of property <code>size</code>
     */
   def getSize(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>steps</code>.Number of steps to scroll. Used if the size of the
     * content is not known as the data is loaded dynamically.
     * @returns Value of property <code>steps</code>
     */
   def getSteps(): Double = js.native
+  
   /**
     * Gets current value of property <code>vertical</code>.Orientation. Defines if the Scrollbar is
     * vertical or horizontal.Default value is <code>true</code>.
     * @returns Value of property <code>vertical</code>
     */
   def getVertical(): Boolean = js.native
+  
   /**
     * Page Down is used to scroll one page forward.
     */
   def pageDown(): Unit = js.native
+  
   /**
     * Page Up is used to scroll one page back.
     */
   def pageUp(): Unit = js.native
+  
   /**
     * Sets a new value for property <code>contentSize</code>.Size of the scrollable content (in
     * pixels).When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -89,6 +101,7 @@ trait ScrollBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setContentSize(sContentSize: js.Any): ScrollBar = js.native
+  
   /**
     * Sets a new value for property <code>scrollPosition</code>.Scroll position in steps or pixels.When
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -97,6 +110,7 @@ trait ScrollBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setScrollPosition(iScrollPosition: Double): ScrollBar = js.native
+  
   /**
     * Sets a new value for property <code>size</code>.Size of the Scrollbar (in pixels).When called with a
     * value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -105,6 +119,7 @@ trait ScrollBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSize(sSize: js.Any): ScrollBar = js.native
+  
   /**
     * Sets a new value for property <code>steps</code>.Number of steps to scroll. Used if the size of the
     * content is not known as the data is loaded dynamically.When called with a value of <code>null</code>
@@ -113,6 +128,7 @@ trait ScrollBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSteps(iSteps: Double): ScrollBar = js.native
+  
   /**
     * Sets a new value for property <code>vertical</code>.Orientation. Defines if the Scrollbar is
     * vertical or horizontal.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -121,10 +137,10 @@ trait ScrollBar extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setVertical(bVertical: Boolean): ScrollBar = js.native
+  
   /**
     * Unbinds the mouse wheel scroll event of the control that has the scrollbar
     * @param oOwnerDomRef Dom ref of the Control that uses the scrollbar
     */
   def unbind(oOwnerDomRef: String): Unit = js.native
 }
-

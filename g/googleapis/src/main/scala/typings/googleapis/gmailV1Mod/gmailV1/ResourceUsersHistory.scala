@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$History")
 @js.native
 class ResourceUsersHistory protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gmail.users.history.list
     * @desc Lists the history of all changes to the given mailbox. History
@@ -48,4 +50,3 @@ class ResourceUsersHistory protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListHistoryResponse]
   ): Unit = js.native
 }
-

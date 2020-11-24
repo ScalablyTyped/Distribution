@@ -2,13 +2,15 @@ package typings.isGeneratorFn
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
+    
     /**
     	Check if something is a generator function.
     	@example
@@ -22,6 +24,4 @@ object anon extends js.Object {
     	*/
     def apply(value: js.Any): /* is std.GeneratorFunction */ Boolean = js.native
   }
-  
 }
-

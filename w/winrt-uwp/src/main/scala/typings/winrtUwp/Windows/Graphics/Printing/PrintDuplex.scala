@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Graphics.Printing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrintDuplex extends js.Object
-
 /** Specifies the duplex option. */
 @JSGlobal("Windows.Graphics.Printing.PrintDuplex")
 @js.native
 object PrintDuplex extends js.Object {
+  
   /** The default duplex option. */
   @js.native
   sealed trait default extends PrintDuplex
@@ -34,6 +34,4 @@ object PrintDuplex extends js.Object {
   /** The option to print on both sides of the sheet, flipped along the short edge. */
   @js.native
   sealed trait twoSidedShortEdge extends PrintDuplex
-  
 }
-

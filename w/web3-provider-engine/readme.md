@@ -4,15 +4,15 @@
 Typings are for version 14.0
 
 ## Library description:
-Web3 ProviderEngine is a tool for composing your own [web3 providers](https://github.com/ethereum/wiki/wiki/JavaScript-API#web3).
+A JavaScript library for composing Ethereum provider objects using middleware modules
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | web3-provider-engine |
 | Keywords           | - |
-| # releases         | 32 |
-| # dependents       | 189 |
-| # downloads        | 1980397 |
+| # releases         | 18 |
+| # dependents       | 221 |
+| # downloads        | 2182361 |
 | # stars            | 1 |
 
 ## Links

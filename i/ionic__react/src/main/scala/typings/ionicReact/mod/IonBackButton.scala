@@ -9,7 +9,7 @@ import typings.ionicReact.navContextMod.NavContextState
 import typings.react.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/react", "IonBackButton")
 @js.native
@@ -18,13 +18,13 @@ class IonBackButton protected () extends ClickButton {
   def this(props: Props) = this()
   def this(props: Props, context: js.Any) = this()
 }
-
 @JSImport("@ionic/react", "IonBackButton")
 @js.native
 object IonBackButton
   extends Instantiable1[(/* props */ Props) | (/* props */ ReadonlyProps), ClickButton]
      with Instantiable2[/* props */ Props, /* context */ js.Any, ClickButton] {
+  
   val contextType: Context[NavContextState] = js.native
+  
   val displayName: String = js.native
 }
-

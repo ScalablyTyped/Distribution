@@ -12,7 +12,7 @@ import typings.figma.figmaStrings.SOLID
 import typings.figma.figmaStrings.TILE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.figma.mod.global.SolidPaint
@@ -20,14 +20,15 @@ import scala.scalajs.js.annotation._
   - typings.figma.mod.global.ImagePaint
 */
 trait Paint extends js.Object
-
 object Paint {
+  
   @scala.inline
   def SolidPaint(color: RGB, `type`: SOLID): Paint = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Paint]
   }
+  
   @scala.inline
   def GradientPaint(
     gradientStops: js.Array[ColorStop],
@@ -38,6 +39,7 @@ object Paint {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Paint]
   }
+  
   @scala.inline
   def ImagePaint(scaleMode: FILL | FIT | CROP | TILE, `type`: IMAGE): Paint = {
     val __obj = js.Dynamic.literal(scaleMode = scaleMode.asInstanceOf[js.Any])
@@ -45,4 +47,3 @@ object Paint {
     __obj.asInstanceOf[Paint]
   }
 }
-

@@ -2,22 +2,33 @@ package typings.instagramPrivateApi.directInboxFeedResponseMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait DirectInboxFeedResponseInviter extends js.Object {
-  var allowed_commenter_type: js.UndefOr[String] = js.undefined
-  var full_name: String
-  var has_anonymous_profile_picture: Boolean
-  var is_private: Boolean
-  var is_verified: Boolean
-  var pk: Double
-  var profile_pic_id: js.UndefOr[String] = js.undefined
-  var profile_pic_url: String
-  var reel_auto_archive: js.UndefOr[String] = js.undefined
-  var username: String
+  
+  var allowed_commenter_type: js.UndefOr[String] = js.native
+  
+  var full_name: String = js.native
+  
+  var has_anonymous_profile_picture: Boolean = js.native
+  
+  var is_private: Boolean = js.native
+  
+  var is_verified: Boolean = js.native
+  
+  var pk: Double = js.native
+  
+  var profile_pic_id: js.UndefOr[String] = js.native
+  
+  var profile_pic_url: String = js.native
+  
+  var reel_auto_archive: js.UndefOr[String] = js.native
+  
+  var username: String = js.native
 }
-
 object DirectInboxFeedResponseInviter {
+  
   @scala.inline
   def apply(
     full_name: String,
@@ -26,16 +37,64 @@ object DirectInboxFeedResponseInviter {
     is_verified: Boolean,
     pk: Double,
     profile_pic_url: String,
-    username: String,
-    allowed_commenter_type: String = null,
-    profile_pic_id: String = null,
-    reel_auto_archive: String = null
+    username: String
   ): DirectInboxFeedResponseInviter = {
     val __obj = js.Dynamic.literal(full_name = full_name.asInstanceOf[js.Any], has_anonymous_profile_picture = has_anonymous_profile_picture.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], is_verified = is_verified.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-    if (allowed_commenter_type != null) __obj.updateDynamic("allowed_commenter_type")(allowed_commenter_type.asInstanceOf[js.Any])
-    if (profile_pic_id != null) __obj.updateDynamic("profile_pic_id")(profile_pic_id.asInstanceOf[js.Any])
-    if (reel_auto_archive != null) __obj.updateDynamic("reel_auto_archive")(reel_auto_archive.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectInboxFeedResponseInviter]
   }
+  
+  @scala.inline
+  implicit class DirectInboxFeedResponseInviterOps[Self <: DirectInboxFeedResponseInviter] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setFull_name(value: String): Self = this.set("full_name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHas_anonymous_profile_picture(value: Boolean): Self = this.set("has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIs_private(value: Boolean): Self = this.set("is_private", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIs_verified(value: Boolean): Self = this.set("is_verified", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPk(value: Double): Self = this.set("pk", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setProfile_pic_url(value: String): Self = this.set("profile_pic_url", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAllowed_commenter_type(value: String): Self = this.set("allowed_commenter_type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAllowed_commenter_type: Self = this.set("allowed_commenter_type", js.undefined)
+    
+    @scala.inline
+    def setProfile_pic_id(value: String): Self = this.set("profile_pic_id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteProfile_pic_id: Self = this.set("profile_pic_id", js.undefined)
+    
+    @scala.inline
+    def setReel_auto_archive(value: String): Self = this.set("reel_auto_archive", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteReel_auto_archive: Self = this.set("reel_auto_archive", js.undefined)
+  }
 }
-

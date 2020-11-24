@@ -1,19 +1,20 @@
 package typings.tensorflowTfjsCore.opsMod
 
+import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
+import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.tensorMod.Tensor3D
-import typings.tensorflowTfjsCore.tensorMod.Tensor4D
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NCHW
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NHWC
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core/dist/ops/ops", "depthwiseConv2d")
 @js.native
 object depthwiseConv2d extends js.Object {
+  
   def apply[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
     filter: Tensor4D | TensorLike,
@@ -26,4 +27,3 @@ object depthwiseConv2d extends js.Object {
     ]
   ): T = js.native
 }
-

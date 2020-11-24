@@ -2,13 +2,15 @@ package typings.typescriptCompare
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type Any[Type] = typings.typescriptLogic.mod.And[
     typings.typescriptCompare.mod.prv.Extends[Type, typings.typescriptCompare.typescriptCompareNumbers.`0`], 
     typings.typescriptCompare.mod.prv.Extends[Type, typings.typescriptCompare.typescriptCompareNumbers.`1`]
   ]
+  
   type Compare[A, B, Options /* <: typings.typescriptCompare.mod.Compare.Options */] = typings.typescriptLogic.mod.If[
     typings.typescriptCompare.mod.Extends[A, B], 
     typings.typescriptLogic.mod.If[
@@ -22,6 +24,7 @@ package object mod {
       /* import warning: importer.ImportType#apply Failed type conversion: Options['mismatch'] */ js.Any
     ]
   ]
+  
   type Equal[A, B] = typings.typescriptLogic.mod.Or[
     typings.typescriptLogic.mod.And[typings.typescriptCompare.mod.Any[A], typings.typescriptCompare.mod.Any[B]], 
     typings.typescriptLogic.mod.And[
@@ -43,6 +46,7 @@ package object mod {
       ]
     ]
   ]
+  
   type Extends[A, B] = typings.typescriptLogic.mod.Or[
     typings.typescriptCompare.mod.Any[B], 
     typings.typescriptLogic.mod.If[
@@ -51,6 +55,8 @@ package object mod {
       typings.typescriptCompare.mod.prv.Extends[A, B]
     ]
   ]
+  
   type NotAny[Type, True, False] = typings.typescriptLogic.mod.Not[typings.typescriptCompare.mod.Any[Type]]
+  
   type NotEqual[A, B] = typings.typescriptLogic.mod.Not[typings.typescriptCompare.mod.Equal[A, B]]
 }

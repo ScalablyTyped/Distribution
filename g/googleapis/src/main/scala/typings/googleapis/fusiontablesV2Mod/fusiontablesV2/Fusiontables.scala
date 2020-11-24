@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fusion Tables API
@@ -27,12 +27,18 @@ import scala.scalajs.js.annotation._
 class Fusiontables protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var column: ResourceColumn = js.native
+  
   var context: APIRequestContext = js.native
+  
   var query: ResourceQuery = js.native
+  
   var style: ResourceStyle = js.native
+  
   var table: ResourceTable = js.native
+  
   var task: ResourceTask = js.native
+  
   var template: ResourceTemplate = js.native
 }
-

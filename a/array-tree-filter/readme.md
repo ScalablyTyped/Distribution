@@ -10,9 +10,9 @@ filter in array tree
 | ------------------ | :-------------: |
 | Full name          | array-tree-filter |
 | Keywords           | array, tree, filter |
-| # releases         | 2 |
-| # dependents       | 293 |
-| # downloads        | 11713586 |
+| # releases         | 0 |
+| # dependents       | 359 |
+| # downloads        | 17527682 |
 | # stars            | 2 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.asana.mod.resources
 import typings.asana.mod.Dispatcher
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asana", "resources.Resource")
 @js.native
@@ -13,4 +13,3 @@ class ResourceCls protected () extends Resource {
     */
   def this(dispatcher: Dispatcher) = this()
 }
-

@@ -10,9 +10,9 @@ A inter-process and inter-machine lockfile utility that works on a local or netw
 | ------------------ | :-------------: |
 | Full name          | proper-lockfile |
 | Keywords           | lock, locking, file, lockfile, fs, cross-process |
-| # releases         | 9 |
-| # dependents       | 89 |
-| # downloads        | 9375435 |
+| # releases         | 6 |
+| # dependents       | 109 |
+| # downloads        | 20817213 |
 | # stars            | 3 |
 
 ## Links

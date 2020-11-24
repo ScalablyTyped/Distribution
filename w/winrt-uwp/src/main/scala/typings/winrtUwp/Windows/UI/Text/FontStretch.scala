@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FontStretch extends js.Object
-
 /** Describes the degree to which a font has been stretched, compared to the normal aspect ratio of that font. */
 @JSGlobal("Windows.UI.Text.FontStretch")
 @js.native
 object FontStretch extends js.Object {
+  
   /** A condensed font stretch (75% of normal). */
   @js.native
   sealed trait condensed extends FontStretch
@@ -50,6 +50,4 @@ object FontStretch extends js.Object {
   /** No defined font stretch. */
   @js.native
   sealed trait undefined extends FontStretch
-  
 }
-

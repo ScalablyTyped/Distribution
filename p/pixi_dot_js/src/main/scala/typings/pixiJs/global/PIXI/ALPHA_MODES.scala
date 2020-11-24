@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * How to treat textures with premultiplied alpha
@@ -24,13 +24,19 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.ALPHA_MODES")
 @js.native
 object ALPHA_MODES extends js.Object {
-  /* 0 */ val NO_PREMULTIPLIED_ALPHA: typings.pixiJs.PIXI.ALPHA_MODES.NO_PREMULTIPLIED_ALPHA with Double = js.native
-  /* 3 */ val NPM: typings.pixiJs.PIXI.ALPHA_MODES.NPM with Double = js.native
-  /* 5 */ val PMA: typings.pixiJs.PIXI.ALPHA_MODES.PMA with Double = js.native
-  /* 2 */ val PREMULTIPLIED_ALPHA: typings.pixiJs.PIXI.ALPHA_MODES.PREMULTIPLIED_ALPHA with Double = js.native
-  /* 1 */ val PREMULTIPLY_ON_UPLOAD: typings.pixiJs.PIXI.ALPHA_MODES.PREMULTIPLY_ON_UPLOAD with Double = js.native
-  /* 4 */ val UNPACK: typings.pixiJs.PIXI.ALPHA_MODES.UNPACK with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.ALPHA_MODES with Double] = js.native
+  
+  /* 0 */ val NO_PREMULTIPLIED_ALPHA: typings.pixiJs.PIXI.ALPHA_MODES.NO_PREMULTIPLIED_ALPHA with Double = js.native
+  
+  /* 3 */ val NPM: typings.pixiJs.PIXI.ALPHA_MODES.NPM with Double = js.native
+  
+  /* 5 */ val PMA: typings.pixiJs.PIXI.ALPHA_MODES.PMA with Double = js.native
+  
+  /* 2 */ val PREMULTIPLIED_ALPHA: typings.pixiJs.PIXI.ALPHA_MODES.PREMULTIPLIED_ALPHA with Double = js.native
+  
+  /* 1 */ val PREMULTIPLY_ON_UPLOAD: typings.pixiJs.PIXI.ALPHA_MODES.PREMULTIPLY_ON_UPLOAD with Double = js.native
+  
+  /* 4 */ val UNPACK: typings.pixiJs.PIXI.ALPHA_MODES.UNPACK with Double = js.native
 }
-

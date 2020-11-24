@@ -6,11 +6,12 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Cameras/VR/vrDeviceOrientationFreeCamera", JSImport.Namespace)
 @js.native
 object vrDeviceOrientationFreeCameraMod extends js.Object {
+  
   @js.native
   class VRDeviceOrientationFreeCamera protected () extends DeviceOrientationCamera {
     /**
@@ -27,10 +28,15 @@ object vrDeviceOrientationFreeCameraMod extends js.Object {
       name: String,
       position: Vector3,
       scene: Scene,
+      compensateDistortion: js.UndefOr[scala.Nothing],
+      vrCameraMetrics: VRCameraMetrics
+    ) = this()
+    def this(
+      name: String,
+      position: Vector3,
+      scene: Scene,
       compensateDistortion: Boolean,
       vrCameraMetrics: VRCameraMetrics
     ) = this()
   }
-  
 }
-

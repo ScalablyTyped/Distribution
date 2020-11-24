@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__keccak256
 
-Typings are for version 5.0.2
+Typings are for version 5.0.5
 
 ## Library description:
 The keccak256 hash function for ethers.
@@ -10,9 +10,9 @@ The keccak256 hash function for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/keccak256 |
 | Keywords           | Ethereum, ethers |
-| # releases         | 16 |
-| # dependents       | 12 |
-| # downloads        | 196291 |
+| # releases         | 22 |
+| # dependents       | 30 |
+| # downloads        | 1777911 |
 | # stars            | 0 |
 
 ## Links

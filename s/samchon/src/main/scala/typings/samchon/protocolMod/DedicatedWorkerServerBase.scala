@@ -3,7 +3,7 @@ package typings.samchon.protocolMod
 import typings.samchon.iserverMod.IServer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/protocol", "DedicatedWorkerServerBase")
 @js.native
@@ -16,4 +16,3 @@ class DedicatedWorkerServerBase protected ()
     */
   def this(hooker: IServer) = this()
 }
-

@@ -2,11 +2,12 @@ package typings.wordpressIsShallowEqual
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/is-shallow-equal/build-types/arrays", JSImport.Namespace)
 @js.native
 object arraysMod extends js.Object {
+  
   /**
     * Returns true if the two arrays are shallow equal, or false otherwise.
     *
@@ -17,4 +18,3 @@ object arraysMod extends js.Object {
     */
   def apply(a: js.Array[_], b: js.Array[_]): Boolean = js.native
 }
-

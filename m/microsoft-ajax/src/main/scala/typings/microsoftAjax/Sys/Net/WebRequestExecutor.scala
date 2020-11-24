@@ -3,7 +3,7 @@ package typings.microsoftAjax.Sys.Net
 import typings.std.XMLDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides the abstract base class from which network executors derive.
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait WebRequestExecutor extends js.Object {
+  
   //#endregion
   //#region Methods
   /**
@@ -20,6 +21,7 @@ trait WebRequestExecutor extends js.Object {
     * The executor properties do not contain consistent data after abort has been called.
     */
   def abort(): Unit = js.native
+  
   /**
     * Instructs the executor to execute a Web request.
     * When this method is called, the executor packages the content of the Web request instance and initiates processing.
@@ -27,6 +29,7 @@ trait WebRequestExecutor extends js.Object {
     * @see {@link http://msdn.microsoft.com/en-us/library/bb383834(v=vs.100).aspx}
     */
   def executeRequest(): Unit = js.native
+  
   /**
     * Gets all the response headers for the current request.
     * If a request finished successfully and with valid response data, this method returns all the response headers.
@@ -34,17 +37,20 @@ trait WebRequestExecutor extends js.Object {
     * @see {@link http://msdn.microsoft.com/en-us/library/bb310805(v=vs.100).aspx}
     */
   def getAllResponseHeaders(): String = js.native
+  
   /**
     * Gets the value of the specified response header.
     * @return The specified response header.
     */
   def getResponseHeader(key: String): String = js.native
+  
   /**
     * Gets a value indicating whether the request associated with the executor was aborted.
     * When the current instance of the Sys.Net.WebRequestExecutor class is aborted, it must set its state to aborted and it must raise the completed event of the associated request object.
     * @return true if the request associated with the executor was aborted; otherwise, false.
     */
   def get_aborted(): Boolean = js.native
+  
   /**
     * Gets a value indicating whether the request completed successfully.
     * Successful completion usually means a well-formed response was received by the executor.
@@ -53,45 +59,53 @@ trait WebRequestExecutor extends js.Object {
     * @return true if the request completed successfully; otherwise, false.
     */
   def get_responseAvailable(): Boolean = js.native
+  
   /**
     * Gets the text representation of the response body. When a request has completed successfully with valid response data, this property returns the text that is contained in the response body.
     * @return The text representation of the response body.
     */
   def get_responseData(): String = js.native
+  
   /**
     * Returns a value indicating whether the executor has started processing the request.
     * The executor returns true if substantial processing of the request has started. For executors that make network calls, substantial processing means that a network call has been started.
     * @return true if the executor has started processing the request; otherwise, false.
     */
   def get_started(): Boolean = js.native
+  
   /**
     * Gets a success status code.
     * The statusCode property returns an integer that specifies that a request completed successfully and with valid response data.
     * @return An integer that represents a status code.
     */
   def get_statusCode(): Double = js.native
+  
   /**
     * Gets status information about a request that completed successfully.
     * The statusText property returns status information if a request completed successfully and with valid response data.
     * @return the status text
     */
   def get_statusText(): String = js.native
+  
   /**
     * Gets a value indicating whether the request timed out.
     * Executors use the time-out information associated with the request to raise the completed event on the associated WebRequest object.
     * @return true if the request timed out; otherwise, false.
     */
   def get_timedOut(): Boolean = js.native
+  
   /**
     * Gets the WebRequest object associated with the executor.
     * @return The WebRequest object associated with the current executor instance.
     */
   def get_webRequest(): WebRequest = js.native
+  
   /**
     * Attempts to get the response to the current request as an XMLDOM object.
     * If a request finished successfully with valid response data, this method tries to get the response as an XMLDOM object.
     */
   def get_xml(): XMLDocument = js.native
+  
   //#endregion
   //#region Properties
   /**
@@ -100,8 +114,8 @@ trait WebRequestExecutor extends js.Object {
     */
   def `object`(): js.Any = js.native
 }
-
 object WebRequestExecutor {
+  
   @scala.inline
   def apply(
     abort: () => Unit,
@@ -123,46 +137,62 @@ object WebRequestExecutor {
     __obj.updateDynamic("object")(js.Any.fromFunction0(`object`))
     __obj.asInstanceOf[WebRequestExecutor]
   }
+  
   @scala.inline
   implicit class WebRequestExecutorOps[Self <: WebRequestExecutor] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAbort(value: () => Unit): Self = this.set("abort", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setExecuteRequest(value: () => Unit): Self = this.set("executeRequest", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetAllResponseHeaders(value: () => String): Self = this.set("getAllResponseHeaders", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetResponseHeader(value: String => String): Self = this.set("getResponseHeader", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGet_aborted(value: () => Boolean): Self = this.set("get_aborted", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGet_responseAvailable(value: () => Boolean): Self = this.set("get_responseAvailable", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGet_responseData(value: () => String): Self = this.set("get_responseData", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGet_started(value: () => Boolean): Self = this.set("get_started", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGet_statusCode(value: () => Double): Self = this.set("get_statusCode", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGet_statusText(value: () => String): Self = this.set("get_statusText", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGet_timedOut(value: () => Boolean): Self = this.set("get_timedOut", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGet_webRequest(value: () => WebRequest): Self = this.set("get_webRequest", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGet_xml(value: () => XMLDocument): Self = this.set("get_xml", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setObject(value: () => js.Any): Self = this.set("object", js.Any.fromFunction0(value))
   }
-  
 }
-

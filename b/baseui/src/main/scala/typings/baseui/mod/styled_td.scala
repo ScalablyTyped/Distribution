@@ -10,11 +10,12 @@ import typings.styletronReact.mod.StyletronComponent
 import typings.styletronStandard.mod.StyleObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("baseui", "styled")
 @js.native
 object styled_td extends js.Object {
+  
   def apply[P /* <: js.Object */, T](component: td_, styledFn: js.Function1[/* props */ Theme[T] with P, StyleObject]): StyletronComponent[
     (Pick[
       ComponentProps[td_], 
@@ -28,4 +29,3 @@ object styled_td extends js.Object {
     ]) with P
   ] = js.native
 }
-

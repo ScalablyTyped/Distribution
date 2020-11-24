@@ -6,7 +6,7 @@ import typings.activexMshtml.activexMshtmlNumbers.`2147483647`
 import typings.activexMshtml.activexMshtmlNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexMshtml.activexMshtmlNumbers.`2147483647`
@@ -15,15 +15,17 @@ import scala.scalajs.js.annotation._
   - typings.activexMshtml.activexMshtmlNumbers.`2`
 */
 trait styleMsScrollTranslation extends js.Object
-
 object styleMsScrollTranslation {
+  
   @scala.inline
   def styleMsScrollTranslationNone: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def styleMsScrollTranslationNotSet: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def styleMsScrollTranslationVtoH: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def styleMsScrollTranslation_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
-

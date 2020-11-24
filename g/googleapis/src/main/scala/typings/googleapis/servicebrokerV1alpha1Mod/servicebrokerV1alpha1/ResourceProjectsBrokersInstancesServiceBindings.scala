@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicebroker/v1alpha1", "servicebroker_v1alpha1.Resource$Projects$Brokers$Instances$Service_bindings")
 @js.native
 class ResourceProjectsBrokersInstancesServiceBindings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * servicebroker.projects.brokers.instances.service_bindings.list
     * @desc Lists all the bindings in the instance
@@ -47,4 +49,3 @@ class ResourceProjectsBrokersInstancesServiceBindings protected () extends js.Ob
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1ListBindingsResponse]
   ): Unit = js.native
 }
-

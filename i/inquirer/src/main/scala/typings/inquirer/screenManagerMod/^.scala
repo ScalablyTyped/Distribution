@@ -3,7 +3,7 @@ package typings.inquirer.screenManagerMod
 import typings.node.readlineMod.Interface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides the functionality to manage the content of a console-screen.
@@ -19,4 +19,3 @@ class ^ protected () extends ScreenManager {
     */
   def this(readLine: Interface) = this()
 }
-

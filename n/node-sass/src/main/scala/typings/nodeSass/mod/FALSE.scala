@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.nodeSass.mod.types.Boolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-sass", "FALSE")
 @js.native
 object FALSE extends TopLevel[Boolean]
-

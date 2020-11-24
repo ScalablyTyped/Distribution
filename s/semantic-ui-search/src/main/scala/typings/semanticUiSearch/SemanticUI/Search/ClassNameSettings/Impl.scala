@@ -2,60 +2,72 @@ package typings.semanticUiSearch.SemanticUI.Search.ClassNameSettings
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Impl extends js.Object {
+  
   /**
     * @default 'active'
     */
   var active: String = js.native
+  
   /**
     * @default 'empty'
     */
   var empty: String = js.native
+  
   /**
     * @default 'focus'
     */
   var focus: String = js.native
+  
   /**
     * @default 'loading'
     */
   var loading: String = js.native
+  
   /**
     * @default 'down'
     */
   var pressed: String = js.native
 }
-
 object Impl {
+  
   @scala.inline
   def apply(active: String, empty: String, focus: String, loading: String, pressed: String): Impl = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], empty = empty.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], pressed = pressed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Impl]
   }
+  
   @scala.inline
   implicit class ImplOps[Self <: Impl] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setActive(value: String): Self = this.set("active", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEmpty(value: String): Self = this.set("empty", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFocus(value: String): Self = this.set("focus", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLoading(value: String): Self = this.set("loading", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPressed(value: String): Self = this.set("pressed", value.asInstanceOf[js.Any])
   }
-  
 }
-

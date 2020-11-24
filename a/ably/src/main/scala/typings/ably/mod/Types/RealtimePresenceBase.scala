@@ -2,11 +2,13 @@ package typings.ably.mod.Types
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RealtimePresenceBase extends js.Object {
+  
   var syncComplete: Boolean = js.native
+  
   def unsubscribe(): Unit = js.native
   def unsubscribe(presenceOrListener: js.UndefOr[PresenceAction], listener: messageCallback[PresenceMessage]): Unit = js.native
   def unsubscribe(presenceOrListener: js.Array[PresenceAction]): Unit = js.native
@@ -15,4 +17,3 @@ trait RealtimePresenceBase extends js.Object {
   def unsubscribe(presenceOrListener: messageCallback[PresenceMessage]): Unit = js.native
   def unsubscribe(presenceOrListener: messageCallback[PresenceMessage], listener: messageCallback[PresenceMessage]): Unit = js.native
 }
-

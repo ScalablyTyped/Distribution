@@ -12,7 +12,7 @@ Supercharge supertest with a promise interface
 | Keywords           | supertest, superagent, request, tdd, bdd, http, test, testing, promise, promised |
 | # releases         | 0 |
 | # dependents       | 21 |
-| # downloads        | 982935 |
+| # downloads        | 1059530 |
 | # stars            | 32 |
 
 ## Links

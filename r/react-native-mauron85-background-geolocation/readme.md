@@ -10,9 +10,9 @@ optimized background location tracking
 | ------------------ | :-------------: |
 | Full name          | react-native-mauron85-background-geolocation |
 | Keywords           | gps, geolocation, position, location, tracking, background, react, react-native, react-component, android, ios |
-| # releases         | 55 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 23814 |
+| # downloads        | 5513 |
 | # stars            | 2 |
 
 ## Links

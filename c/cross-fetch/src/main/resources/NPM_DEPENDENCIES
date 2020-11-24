@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cross-fetch" : "2.2.2"
+      "cross-fetch" : "3.0.6"
     }
   ],
   "test-dependencies" : [
     {
-      "cross-fetch" : "2.2.2"
+      "cross-fetch" : "3.0.6"
     }
   ],
   "compile-devDependencies" : [

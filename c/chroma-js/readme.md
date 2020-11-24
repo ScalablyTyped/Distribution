@@ -1,7 +1,7 @@
 
 # Scala.js typings for chroma-js
 
-Typings are for version 2.0
+Typings are for version 2.1
 
 ## Library description:
 JavaScript library for color conversions
@@ -10,10 +10,10 @@ JavaScript library for color conversions
 | ------------------ | :-------------: |
 | Full name          | chroma-js |
 | Keywords           | color |
-| # releases         | 13 |
-| # dependents       | 311 |
-| # downloads        | 5239820 |
-| # stars            | 13 |
+| # releases         | 11 |
+| # dependents       | 411 |
+| # downloads        | 8532155 |
+| # stars            | 14 |
 
 ## Links
 - [Homepage](https://github.com/gka/chroma.js)

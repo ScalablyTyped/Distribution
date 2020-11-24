@@ -18,7 +18,7 @@ import typings.ngTable.resultsMod.DataResult
 import typings.ngTable.sortingMod.ISortingValues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ng-table/src/core/ngTableParams", "NgTableParams")
 @js.native
@@ -28,18 +28,11 @@ class NgTableParams[T] () extends js.Object {
   def this(baseParameters: js.UndefOr[scala.Nothing], baseSettings: ISettings[T]) = this()
   def this(baseParameters: Boolean, baseSettings: ISettings[T]) = this()
   def this(baseParameters: IParamValues[T], baseSettings: ISettings[T]) = this()
+  
   var _params: js.Any = js.native
+  
   var _settings: js.Any = js.native
-  /**
-    * The page of data rows currently being displayed in the table
-    */
-  var data: js.Array[T] = js.native
-  var defaultSettings: js.Any = js.native
-  var errParamsMemento: js.Any = js.native
-  var initialEvents: js.Any = js.native
-  var isCommittedDataset: js.Any = js.native
-  var isNullInstance: Boolean = js.native
-  var prevParamsMemento: js.Any = js.native
+  
   /**
     * Returns the number of data rows per page
     */
@@ -49,7 +42,18 @@ class NgTableParams[T] () extends js.Object {
     * Changes to count will cause `isDataReloadRequired` to return true
     */
   def count(count: Double): this.type = js.native
+  
   /* private */ def createComparableParams(): js.Any = js.native
+  
+  /**
+    * The page of data rows currently being displayed in the table
+    */
+  var data: js.Array[T] = js.native
+  
+  var defaultSettings: js.Any = js.native
+  
+  var errParamsMemento: js.Any = js.native
+  
   /**
     * Returns the current filter values used to restrict the set of data rows.
     * @param trim supply true to return the current filter minus any insignificant values
@@ -62,6 +66,7 @@ class NgTableParams[T] () extends js.Object {
     */
   def filter(filter: IFilterValues): this.type = js.native
   def filter(trim: Boolean): IFilterValues = js.native
+  
   /**
     * Generate array of pages.
     * When no arguments supplied, the current parameter state of this `NgTableParams` instance will be used
@@ -107,6 +112,7 @@ class NgTableParams[T] () extends js.Object {
   def generatePagesArray(currentPage: Double, totalItems: Double, pageSize: js.UndefOr[scala.Nothing], maxBlocks: Double): js.Array[IPageButton] = js.native
   def generatePagesArray(currentPage: Double, totalItems: Double, pageSize: Double): js.Array[IPageButton] = js.native
   def generatePagesArray(currentPage: Double, totalItems: Double, pageSize: Double, maxBlocks: Double): js.Array[IPageButton] = js.native
+  
   /**
     * Returns the current grouping used to group the data rows
     */
@@ -129,23 +135,28 @@ class NgTableParams[T] () extends js.Object {
     */
   def group(group: IGroupingFunc[T]): this.type = js.native
   def group(group: IGroupingFunc[T], sortDirection: GroupSort): this.type = js.native
+  
   /**
     * Returns true when an attempt to `reload` the current `parameter` values have resulted in a failure.
     * This method will continue to return true until the `reload` is successfully called or when the
     * `parameter` values have changed
     */
   def hasErrorState(): Boolean = js.native
+  
   /**
     * Returns true if `filter` has significant filter value(s) (any value except null, undefined, or empty string),
     * otherwise false
     */
   def hasFilter(): Boolean = js.native
+  
   /**
     * Return true when a change to `filters` require the `reload` method
     * to be run so as to ensure the data presented to the user reflects these filters
     */
   def hasFilterChanges(): Boolean = js.native
+  
   /* private */ def hasGlobalSearchFieldChanges(): js.Any = js.native
+  
   /**
     * Returns true when at least one group has been set
     */
@@ -157,6 +168,11 @@ class NgTableParams[T] () extends js.Object {
   def hasGroup(group: String, sortDirection: String): Boolean = js.native
   def hasGroup(group: IGroupingFunc[T]): Boolean = js.native
   def hasGroup(group: IGroupingFunc[T], sortDirection: String): Boolean = js.native
+  
+  var initialEvents: js.Any = js.native
+  
+  var isCommittedDataset: js.Any = js.native
+  
   /**
     * Return true when a change to this instance should require the `reload` method
     * to be run so as to ensure the data rows presented to the user reflects the current state.
@@ -168,19 +184,25 @@ class NgTableParams[T] () extends js.Object {
     * the `reload` method to load its data rows
     */
   def isDataReloadRequired(): Boolean = js.native
+  
+  var isNullInstance: Boolean = js.native
+  
   /**
     * Returns true if sorting by the field supplied. Where direction supplied
     * the field must also be sorted by that direction to return true
     */
   def isSortBy(field: String): Boolean = js.native
   def isSortBy(field: String, direction: String): Boolean = js.native
+  
   /* private */ def log(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type <none> is not an array type */ args: js.Any
   ): js.Any = js.native
+  
   /**
     * Returns sorting values in a format that can be consumed by the angular `$orderBy` filter service
     */
   def orderBy(): js.Array[String] = js.native
+  
   /**
     * Returns the index of the current "slice" of data rows
     */
@@ -190,6 +212,7 @@ class NgTableParams[T] () extends js.Object {
     * Changing the page number will cause `isDataReloadRequired` to return true
     */
   def page(page: Double): this.type = js.native
+  
   /**
     * Set new parameters
     */
@@ -201,13 +224,20 @@ class NgTableParams[T] () extends js.Object {
   def parameters(newParameters: IParamValues[T], parseParamsFromUrl: Boolean): this.type = js.native
   @JSName("parameters")
   def parameters_IParamValues(): IParamValues[T] = js.native
+  
   /* private */ def parseGroup(group: js.Any): js.Any = js.native
+  
+  var prevParamsMemento: js.Any = js.native
+  
   /**
     * Trigger a reload of the data rows
     */
   def reload[TResult /* <: DataResult[T] */](): IPromise[js.Array[TResult]] = js.native
+  
   def reloadPages(): Unit = js.native
+  
   /* private */ def runInterceptorPipeline(fetchedData: js.Any): js.Any = js.native
+  
   /**
     * Returns the settings for the table.
     */
@@ -218,6 +248,7 @@ class NgTableParams[T] () extends js.Object {
     * to fire its `datasetChanged` event
     */
   def settings(newSettings: ISettings[T]): this.type = js.native
+  
   /**
     * Returns the current sorting used to order the data rows.
     * Changes to sorting will cause `isDataReloadRequired` to return true
@@ -232,6 +263,7 @@ class NgTableParams[T] () extends js.Object {
     * Changes to sorting will cause `isDataReloadRequired` to return true
     */
   def sorting(sorting: ISortingValues): this.type = js.native
+  
   /**
     * Returns the count of the data rows that match the current `filter`
     */
@@ -251,6 +283,7 @@ class NgTableParams[T] () extends js.Object {
     * ```
     */
   def total(total: Double): this.type = js.native
+  
   /**
     * Returns the current parameter values uri-encoded. Set `asString` to
     * true for the parameters to be returned as an array of strings of the form 'paramName=value'
@@ -259,18 +292,17 @@ class NgTableParams[T] () extends js.Object {
   def url(): StringDictionary[String] = js.native
   def url(asString: Boolean): StringDictionary[String] = js.native
 }
-
 /* static members */
 @JSImport("ng-table/src/core/ngTableParams", "NgTableParams")
 @js.native
 object NgTableParams extends js.Object {
+  
   @JSName("$log")
   var $log: js.Any = js.native
+  
   @JSName("$q")
   var $q: js.Any = js.native
-  var ngTableDefaults: js.Any = js.native
-  var ngTableEventsChannel: js.Any = js.native
-  var ngTableSettings: js.Any = js.native
+  
   def init(
     $q: IQService,
     $log: ILogService,
@@ -278,5 +310,10 @@ object NgTableParams extends js.Object {
     ngTableEventsChannel: NgTableEventsChannel,
     ngTableSettings: NgTableSettings
   ): Unit = js.native
+  
+  var ngTableDefaults: js.Any = js.native
+  
+  var ngTableEventsChannel: js.Any = js.native
+  
+  var ngTableSettings: js.Any = js.native
 }
-

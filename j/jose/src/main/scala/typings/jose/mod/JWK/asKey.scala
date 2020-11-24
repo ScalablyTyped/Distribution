@@ -10,11 +10,12 @@ import typings.jose.mod.KeyParameters
 import typings.node.cryptoMod.KeyObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jose", "JWK.asKey")
 @js.native
 object asKey extends js.Object {
+  
   def apply(jwk: JWKECKey): ECKey = js.native
   def apply(jwk: JWKOKPKey): OKPKey = js.native
   def apply(jwk: JWKOctKey): OctKey = js.native
@@ -25,4 +26,3 @@ object asKey extends js.Object {
   def apply(key: KeyObject): RSAKey | ECKey | OKPKey | OctKey = js.native
   def apply(key: KeyObject, parameters: KeyParameters): RSAKey | ECKey | OKPKey | OctKey = js.native
 }
-

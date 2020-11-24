@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.lexmodelbuildingserviceMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "LexModelBuildingService")
 @js.native
@@ -14,4 +14,3 @@ class LexModelBuildingService ()
   extends typings.awsSdk.allMod.LexModelBuildingService {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.microsoftGraph.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.deviceDefault
@@ -12,17 +12,20 @@ import scala.scalajs.js.annotation._
   - typings.microsoftGraph.microsoftGraphStrings.queueBoth
 */
 trait FirewallPacketQueueingMethodType extends js.Object
-
 object FirewallPacketQueueingMethodType {
+  
   @scala.inline
   def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
+  
   @scala.inline
   def disabled: typings.microsoftGraph.microsoftGraphStrings.disabled = "disabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disabled]
+  
   @scala.inline
   def queueBoth: typings.microsoftGraph.microsoftGraphStrings.queueBoth = "queueBoth".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.queueBoth]
+  
   @scala.inline
   def queueInbound: typings.microsoftGraph.microsoftGraphStrings.queueInbound = "queueInbound".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.queueInbound]
+  
   @scala.inline
   def queueOutbound: typings.microsoftGraph.microsoftGraphStrings.queueOutbound = "queueOutbound".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.queueOutbound]
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storagetransfer/v1", "storagetransfer_v1.Resource$Transferjobs")
 @js.native
 class ResourceTransferjobs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * storagetransfer.transferJobs.create
     * @desc Creates a transfer job that runs periodically.
@@ -95,6 +97,7 @@ class ResourceTransferjobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTransferJob]
   ): Unit = js.native
+  
   /**
     * storagetransfer.transferJobs.get
     * @desc Gets a transfer job.
@@ -179,6 +182,7 @@ class ResourceTransferjobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTransferJob]
   ): Unit = js.native
+  
   /**
     * storagetransfer.transferJobs.list
     * @desc Lists transfer jobs.
@@ -276,6 +280,7 @@ class ResourceTransferjobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListTransferJobsResponse]
   ): Unit = js.native
+  
   /**
     * storagetransfer.transferJobs.patch
     * @desc Updates a transfer job. Updating a job's transfer spec does not
@@ -369,4 +374,3 @@ class ResourceTransferjobs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTransferJob]
   ): Unit = js.native
 }
-

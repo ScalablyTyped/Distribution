@@ -8,10 +8,11 @@ import typings.std.Error
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObservableStatic extends js.Object {
+  
   /**
     * Propagates the observable sequence or Promise that reacts first.
     * @returns {Observable} An observable sequence that surfaces any of the given sequences, whichever reacted first.
@@ -22,6 +23,7 @@ trait ObservableStatic extends js.Object {
     * @returns {Observable} An observable sequence that surfaces any of the given sequences, whichever reacted first.
     */
   def amb[T](observables: js.Array[ObservableOrPromise[T]]): Observable[T] = js.native
+  
   /**
     *  Uses selector to determine which source in sources to use.
     * @param {Function} selector The function which extracts the value for to test in a case statement.
@@ -60,6 +62,7 @@ trait ObservableStatic extends js.Object {
     sources: StringDictionary[ObservableOrPromise[T]],
     schedulerOrElseSource: ObservableOrPromise[T]
   ): Observable[T] = js.native
+  
   /**
     * Continues an observable sequence that is terminated by an exception with the next observable sequence.
     * @param {Array | Arguments} args Arguments or an array to use as the next sequence if an error occurs.
@@ -72,6 +75,7 @@ trait ObservableStatic extends js.Object {
     * @returns {Observable} An observable sequence containing elements from consecutive source sequences until a source sequence terminates successfully.
     */
   def `catch`[T](sources: js.Array[ObservableOrPromise[T]]): Observable[T] = js.native
+  
   /**
     * Merges the specified observable sequences into one observable sequence by using the selector function whenever any of the observable sequences or Promises produces an element.
     *
@@ -246,6 +250,7 @@ trait ObservableStatic extends js.Object {
       TResult
     ]
   ): Observable[TResult] = js.native
+  
   /**
     * Concatenates all the observable sequences.
     * @param {Array | Arguments} args Arguments or an array to concat to the observable sequence.
@@ -258,6 +263,7 @@ trait ObservableStatic extends js.Object {
     * @returns {Observable} An observable sequence that contains the elements of each given sequence, in sequential order.
     */
   def concat[T](sources: js.Array[ObservableOrPromise[T]]): Observable[T] = js.native
+  
   /**
     *  Creates an observable sequence from a specified subscribe method implementation.
     * @example
@@ -268,6 +274,7 @@ trait ObservableStatic extends js.Object {
     * @returns {Observable} The observable sequence with the specified implementation for the Subscribe method.
     */
   def create[T](subscribe: js.Function1[/* observer */ Observer[T], IDisposable | js.Function | Unit]): Observable[T] = js.native
+  
   /**
     *  Returns an observable sequence that invokes the specified factory function whenever a new observer subscribes.
     *
@@ -277,6 +284,7 @@ trait ObservableStatic extends js.Object {
     * @returns {Observable} An observable sequence whose observers trigger an invocation of the given observable factory function.
     */
   def defer[T](observableFactory: js.Function0[ObservableOrPromise[T]]): Observable[T] = js.native
+  
   /**
     *  Returns an empty observable sequence, using the specified scheduler to send out the single OnCompleted message.
     *
@@ -288,6 +296,7 @@ trait ObservableStatic extends js.Object {
     */
   def empty[T](): Observable[T] = js.native
   def empty[T](scheduler: IScheduler): Observable[T] = js.native
+  
   /**
     *  Concatenates the observable sequences obtained by running the specified result selector for each element in source.
     * There is an alias for this method called 'forIn' for browsers <IE9
@@ -297,6 +306,7 @@ trait ObservableStatic extends js.Object {
     */
   def `for`[T, TResult](sources: js.Array[T], resultSelector: Selector[T, TResult]): Observable[TResult] = js.native
   def `for`[T, TResult](sources: js.Array[T], resultSelector: Selector[T, TResult], thisArg: js.Any): Observable[TResult] = js.native
+  
   /**
     *  Concatenates the observable sequences obtained by running the specified result selector for each element in source.
     * There is an alias for this method called 'forIn' for browsers <IE9
@@ -306,6 +316,7 @@ trait ObservableStatic extends js.Object {
     */
   def forIn[T, TResult](sources: js.Array[T], resultSelector: Selector[T, TResult]): Observable[TResult] = js.native
   def forIn[T, TResult](sources: js.Array[T], resultSelector: Selector[T, TResult], thisArg: js.Any): Observable[TResult] = js.native
+  
   /**
     *  Runs all observable sequences in parallel and collect their last elements.
     *
@@ -324,6 +335,7 @@ trait ObservableStatic extends js.Object {
     * @returns {Observable} An observable sequence with an array collecting the last elements of all the input sequences.
     */
   def forkJoin[T](sources: js.Array[ObservableOrPromise[T]]): Observable[js.Array[T]] = js.native
+  
   /**
     * This method creates a new Observable sequence from an array-like or iterable object.
     * @param {Any} arrayLike An array-like or iterable object to convert to an Observable sequence.
@@ -357,6 +369,7 @@ trait ObservableStatic extends js.Object {
     thisArg: js.Any,
     scheduler: IScheduler
   ): Observable[TResult] = js.native
+  
   /**
     *  Converts an array to an observable sequence, using an optional scheduler to enumerate the array.
     * @deprecated use Observable.from or Observable.of
@@ -365,6 +378,7 @@ trait ObservableStatic extends js.Object {
     */
   def fromArray[T](array: ArrayLike[T]): Observable[T] = js.native
   def fromArray[T](array: ArrayLike[T], scheduler: IScheduler): Observable[T] = js.native
+  
   /**
     * Converts a callback function to an observable sequence.
     *
@@ -1029,6 +1043,7 @@ trait ObservableStatic extends js.Object {
     /* arg9 */ T9, 
     Observable[TResult]
   ] = js.native
+  
   /**
     * Creates an observable sequence by adding an event listener to the matching DOMElement or each item in the NodeList.
     * @param {Object} element The DOMElement or NodeList to attach a listener.
@@ -1047,6 +1062,7 @@ trait ObservableStatic extends js.Object {
     */
   def fromEvent[T](element: EventTarget, eventName: String): Observable[T] = js.native
   def fromEvent[T](element: EventTarget, eventName: String, selector: js.Function1[/* arguments */ js.Array[_], T]): Observable[T] = js.native
+  
   /**
     * Creates an observable sequence from an event emitter via an addHandler/removeHandler pair.
     * @param {Function} addHandler The function to add a handler to the emitter.
@@ -1063,6 +1079,7 @@ trait ObservableStatic extends js.Object {
     removeHandler: js.Function1[/* handler */ js.Function, Unit],
     selector: js.Function1[/* arguments */ js.Array[_], T]
   ): Observable[T] = js.native
+  
   /**
     * Converts a Node.js callback style function to an observable sequence.  This must be in function (err, ...) format.
     * @param {Function} func The function to call
@@ -1758,12 +1775,14 @@ trait ObservableStatic extends js.Object {
     /* arg9 */ T9, 
     Observable[TResult]
   ] = js.native
+  
   /**
     * Converts a Promise to an Observable sequence
     * @param {Promise} An ES6 Compliant promise.
     * @returns {Observable} An Observable sequence which wraps the existing promise success and failure.
     */
   def fromPromise[T](promise: Promise[T]): Observable[T] = js.native
+  
   /**
     *  Generates an observable sequence by running a state-driven loop producing the sequence's elements, using the specified scheduler to send out observer messages.
     *
@@ -1790,6 +1809,7 @@ trait ObservableStatic extends js.Object {
     resultSelector: js.Function1[/* state */ TState, TResult],
     scheduler: IScheduler
   ): Observable[TResult] = js.native
+  
   /**
     *  Generates an observable sequence by iterating a state from an initial state until the condition fails.
     *
@@ -1824,6 +1844,7 @@ trait ObservableStatic extends js.Object {
     timeSelector: js.Function1[/* state */ TState, Date],
     scheduler: IScheduler
   ): Observable[TResult] = js.native
+  
   /**
     *  Generates an observable sequence by iterating a state from an initial state until the condition fails.
     *
@@ -1858,6 +1879,7 @@ trait ObservableStatic extends js.Object {
     timeSelector: js.Function1[/* state */ TState, Double],
     scheduler: IScheduler
   ): Observable[TResult] = js.native
+  
   /**
     *  Determines whether an observable collection contains values.
     *
@@ -1881,6 +1903,7 @@ trait ObservableStatic extends js.Object {
     thenSource: ObservableOrPromise[T],
     elseSourceOrScheduler: ObservableOrPromise[T]
   ): Observable[T] = js.native
+  
   /**
     *  Returns an observable sequence that produces a value after each period.
     *
@@ -1894,12 +1917,14 @@ trait ObservableStatic extends js.Object {
     */
   def interval(period: Double): Observable[Double] = js.native
   def interval(period: Double, scheduler: IScheduler): Observable[Double] = js.native
+  
   /**
     * Determines whether the given object is an Observable
     * @param {Any} An object to determine whether it is an Observable
     * @returns {Boolean} true if an Observable, else false.
     */
   def isObservable(o: js.Any): Boolean = js.native
+  
   /**
     *  Returns an observable sequence that contains a single element, using the specified scheduler to send out observer messages.
     *  There is an alias called 'just' or browsers <IE9.
@@ -1909,6 +1934,7 @@ trait ObservableStatic extends js.Object {
     */
   def just[T](value: T): Observable[T] = js.native
   def just[T](value: T, scheduler: IScheduler): Observable[T] = js.native
+  
   /**
     * Merges all the observable sequences into a single observable sequence.
     * The scheduler is optional and if not specified, the immediate scheduler is used.
@@ -1933,6 +1959,7 @@ trait ObservableStatic extends js.Object {
     * @returns {Observable} The observable sequence that merges the elements of the observable sequences.
     */
   def merge[T](sources: js.Array[ObservableOrPromise[T]]): Observable[T] = js.native
+  
   /**
     * Flattens an Observable that emits Observables into one Observable, in a way that allows an Observer to
     * receive all successfully emitted items from all of the source Observables without being interrupted by
@@ -1957,28 +1984,33 @@ trait ObservableStatic extends js.Object {
     * @returns {Observable} an Observable that emits all of the items emitted by the Observables emitted by the Observable
     */
   def mergeDelayError[T](sources: js.Array[ObservableOrPromise[T]]): Observable[T] = js.native
+  
   /**
     * Returns a non-terminating observable sequence, which can be used to denote an infinite duration (e.g. when using reactive joins).
     * @returns {Observable} An observable sequence whose observers will never get called.
     */
   def never[T](): Observable[T] = js.native
+  
   /**
     *  This method creates a new Observable instance with a variable number of arguments, regardless of number or type of the arguments.
     * @returns {Observable} The observable sequence whose elements are pulled from the given arguments.
     */
   def of[T](values: T*): Observable[T] = js.native
+  
   /**
     * Creates an Observable sequence from changes to an array using Array.observe.
     * @param {Array} array An array to observe changes.
     * @returns {Observable} An observable sequence containing changes to an array from Array.observe.
     */
   def ofArrayChanges[T](obj: js.Array[T]): Observable[ArrayObserveChange[T]] = js.native
+  
   /**
     * Creates an Observable sequence from changes to an object using Object.observe.
     * @param {Object} obj An object to observe changes.
     * @returns {Observable} An observable sequence containing changes to an object from Object.observe.
     */
   def ofObjectChanges[T](obj: T): Observable[ObjectObserveChange[T]] = js.native
+  
   def ofWithScheduler[T](scheduler: js.UndefOr[scala.Nothing], values: T*): Observable[T] = js.native
   /**
     *  This method creates a new Observable instance with a variable number of arguments, regardless of number or type of the arguments.
@@ -1986,6 +2018,7 @@ trait ObservableStatic extends js.Object {
     * @returns {Observable} The observable sequence whose elements are pulled from the given arguments.
     */
   def ofWithScheduler[T](scheduler: IScheduler, values: T*): Observable[T] = js.native
+  
   /**
     * Continues an observable sequence that is terminated normally or by an exception with the next observable sequence.
     *
@@ -2004,6 +2037,7 @@ trait ObservableStatic extends js.Object {
     * @returns {Observable} An observable sequence that concatenates the source sequences, even if a sequence terminates exceptionally.
     */
   def onErrorResumeNext[T](sources: js.Array[ObservableOrPromise[T]]): Observable[T] = js.native
+  
   /**
     * Convert an object into an observable sequence of [key, value] pairs.
     * @param {Object} obj The object to inspect.
@@ -2020,6 +2054,7 @@ trait ObservableStatic extends js.Object {
     */
   def pairs[T](obj: StringDictionary[T]): Observable[js.Tuple2[String, T]] = js.native
   def pairs[T](obj: StringDictionary[T], scheduler: IScheduler): Observable[js.Tuple2[String, T]] = js.native
+  
   /**
     *  Generates an observable sequence of integral numbers within a specified range, using the specified scheduler to send out observer messages.
     *
@@ -2033,6 +2068,7 @@ trait ObservableStatic extends js.Object {
     */
   def range(start: Double, count: Double): Observable[Double] = js.native
   def range(start: Double, count: Double, scheduler: IScheduler): Observable[Double] = js.native
+  
   /**
     *  Generates an observable sequence that repeats the given element the specified number of times, using the specified scheduler to send out observer messages.
     *
@@ -2052,6 +2088,7 @@ trait ObservableStatic extends js.Object {
   def repeat[T](value: T, repeatCount: Double, scheduler: IScheduler): Observable[T] = js.native
   def repeat[T](value: T, repeatCount: Unit): Observable[T] = js.native
   def repeat[T](value: T, repeatCount: Unit, scheduler: IScheduler): Observable[T] = js.native
+  
   /**
     *  Returns an observable sequence that contains a single element, using the specified scheduler to send out observer messages.
     *  There is an alias called 'just' or browsers <IE9.
@@ -2061,7 +2098,9 @@ trait ObservableStatic extends js.Object {
     */
   def `return`[T](value: T): Observable[T] = js.native
   def `return`[T](value: T, scheduler: IScheduler): Observable[T] = js.native
+  
   def spawn[T](fn: js.Function): Observable[T] = js.native
+  
   /**
     * Invokes the specified function asynchronously on the specified scheduler, surfacing the result through an observable sequence.
     *
@@ -2083,12 +2122,14 @@ trait ObservableStatic extends js.Object {
   def start[T](func: js.Function0[T], scheduler: js.UndefOr[scala.Nothing], context: js.Any): Observable[T] = js.native
   def start[T](func: js.Function0[T], scheduler: IScheduler): Observable[T] = js.native
   def start[T](func: js.Function0[T], scheduler: IScheduler, context: js.Any): Observable[T] = js.native
+  
   /**
     * Invokes the asynchronous function, surfacing the result through an observable sequence.
     * @param {Function} functionAsync Asynchronous function which returns a Promise to run.
     * @returns {Observable} An observable sequence exposing the function's result value, or an exception.
     */
   def startAsync[T](functionAsync: js.Function0[IPromise[T]]): Observable[T] = js.native
+  
   /**
     *  Returns an observable sequence that terminates with an exception, using the specified scheduler to send out the single onError message.
     * @param {Mixed} error An object used for the sequence's termination.
@@ -2105,6 +2146,7 @@ trait ObservableStatic extends js.Object {
     */
   def `throw`[T](exception: Error): Observable[T] = js.native
   def `throw`[T](exception: Error, scheduler: IScheduler): Observable[T] = js.native
+  
   /**
     *  Returns an observable sequence that produces a value after dueTime has elapsed and then after each period.
     * @param {Number} dueTime Absolute (specified as a Date object) or relative time (specified as an integer denoting milliseconds) at which to produce the first value.
@@ -2123,6 +2165,7 @@ trait ObservableStatic extends js.Object {
   def timer(dueTime: Double, period: Double): Observable[Double] = js.native
   def timer(dueTime: Double, period: Double, scheduler: IScheduler): Observable[Double] = js.native
   def timer(dueTime: Double, scheduler: IScheduler): Observable[Double] = js.native
+  
   /**
     * Converts the function into an asynchronous function. Each invocation of the resulting asynchronous function causes an invocation of the original synchronous function on the specified scheduler.
     * @param {Function} function Function to convert to an asynchronous function.
@@ -2205,6 +2248,7 @@ trait ObservableStatic extends js.Object {
     context: js.Any,
     scheduler: IScheduler
   ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
+  
   /**
     * Constructs an observable sequence that depends on a resource object, whose lifetime is tied to the resulting observable sequence's lifetime.
     * @param {Function} resourceFactory Factory function to obtain a resource object.
@@ -2215,6 +2259,7 @@ trait ObservableStatic extends js.Object {
     resourceFactory: js.Function0[TResource],
     observableFactory: js.Function1[/* resource */ TResource, Observable[TSource]]
   ): Observable[TSource] = js.native
+  
   /**
     *  Joins together the results from several patterns.
     *
@@ -2222,6 +2267,7 @@ trait ObservableStatic extends js.Object {
     *  @returns {Observable} Observable sequence with the results form matching several patterns.
     */
   def when[TR](plan: Plan[TR]): Observable[TR] = js.native
+  
   /**
     *  Repeats source as long as condition holds emulating a while loop.
     * There is an alias for this method called 'whileDo' for browsers <IE9
@@ -2231,6 +2277,7 @@ trait ObservableStatic extends js.Object {
     * @returns {Observable} An observable sequence which is repeated as long as the condition holds.
     */
   def `while`[T](condition: js.Function0[Boolean], source: ObservableOrPromise[T]): Observable[T] = js.native
+  
   /**
     *  Repeats source as long as condition holds emulating a while loop.
     * There is an alias for this method called 'whileDo' for browsers <IE9
@@ -2240,7 +2287,9 @@ trait ObservableStatic extends js.Object {
     * @returns {Observable} An observable sequence which is repeated as long as the condition holds.
     */
   def whileDo[T](condition: js.Function0[Boolean], source: ObservableOrPromise[T]): Observable[T] = js.native
+  
   def wrap[T](fn: js.Function): Observable[T] = js.native
+  
   /**
     * Merges the specified observable sequences into one observable sequence by using the selector function whenever all of the observable sequences have produced an element at a corresponding index.
     * @param arguments Observable sources.
@@ -2463,6 +2512,7 @@ trait ObservableStatic extends js.Object {
       TResult
     ]
   ): Observable[TResult] = js.native
+  
   /**
     * Merges the specified observable sequences into one observable sequence by emitting a list with the elements of the observable sequences at corresponding indexes.
     * @param arguments Observable sources.
@@ -2476,4 +2526,3 @@ trait ObservableStatic extends js.Object {
     */
   def zipIterable[T](sources: js.Array[Observable[T]]): Observable[js.Array[T]] = js.native
 }
-

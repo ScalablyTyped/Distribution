@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storagetransfer/v1", "storagetransfer_v1.Resource$Transferoperations")
 @js.native
 class ResourceTransferoperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * storagetransfer.transferOperations.cancel
     * @desc Cancels a transfer. Use the get method to check whether the
@@ -94,6 +94,9 @@ class ResourceTransferoperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * storagetransfer.transferOperations.delete
     * @desc This method is not supported and the server returns
@@ -174,6 +177,7 @@ class ResourceTransferoperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * storagetransfer.transferOperations.get
     * @desc Gets the latest state of a long-running operation.  Clients can use
@@ -256,6 +260,7 @@ class ResourceTransferoperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * storagetransfer.transferOperations.list
     * @desc Lists operations that match the specified filter in the request. If
@@ -365,6 +370,7 @@ class ResourceTransferoperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListOperationsResponse]
   ): Unit = js.native
+  
   /**
     * storagetransfer.transferOperations.pause
     * @desc Pauses a transfer operation.
@@ -450,6 +456,7 @@ class ResourceTransferoperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * storagetransfer.transferOperations.resume
     * @desc Resumes a transfer operation that is paused.
@@ -536,4 +543,3 @@ class ResourceTransferoperations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
 }
-

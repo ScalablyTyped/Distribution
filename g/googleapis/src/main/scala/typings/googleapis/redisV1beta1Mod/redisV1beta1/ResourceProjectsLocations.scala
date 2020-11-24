@@ -6,15 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/redis/v1beta1", "redis_v1beta1.Resource$Projects$Locations")
 @js.native
 class ResourceProjectsLocations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var instances: ResourceProjectsLocationsInstances = js.native
-  var operations: ResourceProjectsLocationsOperations = js.native
+  
   /**
     * redis.projects.locations.get
     * @desc Gets information about a location.
@@ -43,6 +43,9 @@ class ResourceProjectsLocations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLocation]
   ): Unit = js.native
+  
+  var instances: ResourceProjectsLocationsInstances = js.native
+  
   /**
     * redis.projects.locations.list
     * @desc Lists information about the supported locations for this service.
@@ -77,5 +80,6 @@ class ResourceProjectsLocations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListLocationsResponse]
   ): Unit = js.native
+  
+  var operations: ResourceProjectsLocationsOperations = js.native
 }
-

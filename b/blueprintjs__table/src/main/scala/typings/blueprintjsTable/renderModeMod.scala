@@ -3,16 +3,20 @@ package typings.blueprintjsTable
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/table/lib/esm/common/renderMode", JSImport.Namespace)
 @js.native
 object renderModeMod extends js.Object {
-  @js.native
-  sealed trait RenderMode extends js.Object
   
   @js.native
+  sealed trait RenderMode extends js.Object
+  @js.native
   object RenderMode extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[RenderMode with String] = js.native
+    
     /**
       * Renders cells in batches across multiple animation frames. This improves
       * performance by spreading out work to keep a high FPS and avoid blocking
@@ -21,6 +25,8 @@ object renderModeMod extends js.Object {
       */
     @js.native
     sealed trait BATCH extends RenderMode
+    /* "batch" */ @js.native
+    object BATCH extends TopLevel[BATCH with String]
     
     /**
       * Renders all cells synchronously on initial mount, then renders cells in
@@ -30,6 +36,8 @@ object renderModeMod extends js.Object {
       */
     @js.native
     sealed trait BATCH_ON_UPDATE extends RenderMode
+    /* "batch-on-update" */ @js.native
+    object BATCH_ON_UPDATE extends TopLevel[BATCH_ON_UPDATE with String]
     
     /**
       * Disables the batch-rendering behavior, rendering all cells synchronously
@@ -38,19 +46,7 @@ object renderModeMod extends js.Object {
       */
     @js.native
     sealed trait NONE extends RenderMode
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[RenderMode with String] = js.native
-    /* "batch" */ @js.native
-    object BATCH extends TopLevel[BATCH with String]
-    
-    /* "batch-on-update" */ @js.native
-    object BATCH_ON_UPDATE extends TopLevel[BATCH_ON_UPDATE with String]
-    
     /* "none" */ @js.native
     object NONE extends TopLevel[NONE with String]
-    
   }
-  
 }
-

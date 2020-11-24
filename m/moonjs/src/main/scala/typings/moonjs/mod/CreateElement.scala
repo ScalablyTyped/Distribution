@@ -4,10 +4,11 @@ import typings.moonjs.moonjsStrings.Numbersigntext
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CreateElement extends js.Object {
+  
   def apply(tag: String, attrs: Record[String, _]): VDomElement = js.native
   def apply(tag: String, attrs: Record[String, _], metadata: js.UndefOr[scala.Nothing], children: String): VDomElement = js.native
   def apply(
@@ -50,4 +51,3 @@ trait CreateElement extends js.Object {
   def apply(tag: Numbersigntext, attrs: Record[String, _], metadata: js.Any): VDomElement = js.native
   def apply(tag: Numbersigntext, attrs: Record[String, _], metadata: js.Any, children: String): VDomElement = js.native
 }
-

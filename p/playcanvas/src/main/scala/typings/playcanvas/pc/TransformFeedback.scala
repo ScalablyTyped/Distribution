@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This object allows you to configure and use the transform feedback feature (WebGL2
@@ -76,14 +76,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TransformFeedback extends js.Object {
-  /**
-    * The current input buffer.
-    */
-  val inputBuffer: VertexBuffer = js.native
-  /**
-    * The current output buffer.
-    */
-  val outputBuffer: VertexBuffer = js.native
+  
   /**
     * Creates a transform feedback ready vertex shader from code.
     * @param graphicsDevice - The graphics device used by the renderer.
@@ -92,10 +85,22 @@ trait TransformFeedback extends js.Object {
     * @returns A shader to use in the process() function.
     */
   def createShader(graphicsDevice: GraphicsDevice, vsCode: String, name: String): Shader = js.native
+  
   /**
     * Destroys the transform feedback helper object.
     */
   def destroy(): Unit = js.native
+  
+  /**
+    * The current input buffer.
+    */
+  val inputBuffer: VertexBuffer = js.native
+  
+  /**
+    * The current output buffer.
+    */
+  val outputBuffer: VertexBuffer = js.native
+  
   /**
     * Runs the specified shader on the input buffer, writes results into the new buffer, then optionally swaps input/output.
     * @param shader - A vertex shader to run. Should be created with pc.TransformFeedback.createShader.
@@ -104,4 +109,3 @@ trait TransformFeedback extends js.Object {
   def process(shader: Shader): Unit = js.native
   def process(shader: Shader, swap: Boolean): Unit = js.native
 }
-

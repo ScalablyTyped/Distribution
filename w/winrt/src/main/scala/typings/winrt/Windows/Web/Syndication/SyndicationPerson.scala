@@ -5,12 +5,12 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SyndicationPerson extends ISyndicationPerson
-
 object SyndicationPerson {
+  
   @scala.inline
   def apply(
     attributeExtensions: IVector[SyndicationAttribute],
@@ -29,4 +29,3 @@ object SyndicationPerson {
     __obj.asInstanceOf[SyndicationPerson]
   }
 }
-

@@ -6,10 +6,11 @@ import typings.paper.paper.PaperScript
 import typings.std.HTMLScriptElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofPaperScript extends Instantiable0[PaperScript] {
+  
   /** 
     * Compiles PaperScript code into JavaScript code.
     * 
@@ -26,6 +27,7 @@ trait TypeofPaperScript extends Instantiable0[PaperScript] {
     */
   def compile(code: String): js.Object = js.native
   def compile(code: String, options: js.Object): js.Object = js.native
+  
   /** 
     * Compiles the PaperScript code into a compiled function and executes it.
     * The compiled function receives all properties of the passed {@link
@@ -46,6 +48,7 @@ trait TypeofPaperScript extends Instantiable0[PaperScript] {
     */
   def execute(code: String, scope: PaperScope): js.Object = js.native
   def execute(code: String, scope: PaperScope, options: js.Object): js.Object = js.native
+  
   /** 
     * Loads, compiles and executes PaperScript code in the HTML document. Note
     * that this method is executed automatically for all scripts in the
@@ -65,4 +68,3 @@ trait TypeofPaperScript extends Instantiable0[PaperScript] {
   def load(): PaperScope = js.native
   def load(script: HTMLScriptElement): PaperScope = js.native
 }
-

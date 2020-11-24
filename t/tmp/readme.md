@@ -10,9 +10,9 @@ Temporary file and directory creator
 | ------------------ | :-------------: |
 | Full name          | tmp |
 | Keywords           | temporary, tmp, temp, tempdir, tempfile, tmpdir, tmpfile |
-| # releases         | 2 |
-| # dependents       | 2205 |
-| # downloads        | 532748463 |
+| # releases         | 4 |
+| # dependents       | 2597 |
+| # downloads        | 798411576 |
 | # stars            | 48 |
 
 ## Links

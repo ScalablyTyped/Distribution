@@ -2,7 +2,7 @@ package typings.paper.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The Tool object refers to a script that the user can interact with by
@@ -17,66 +17,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Tool extends js.Object {
-  var fixedDistance: Double = js.native
-  /** 
-    * The maximum distance the mouse has to drag before firing the onMouseDrag
-    * event, since the last onMouseDrag event.
-    */
-  var maxDistance: Double = js.native
-  /** 
-    * The minimum distance the mouse has to drag before firing the onMouseDrag
-    * event, since the last onMouseDrag event.
-    */
-  var minDistance: Double = js.native
-  /** 
-    * The function to be called when the user presses a key on the keyboard.
-    * The function receives a {@link KeyEvent} object which contains
-    * information about the keyboard event.
-    * 
-    * If the function returns `false`, the keyboard event will be prevented
-    * from bubbling up. This can be used for example to stop the window from
-    * scrolling, when you need the user to interact with arrow keys.
-    */
-  var onKeyDown: js.Function | Null = js.native
-  /** 
-    * The function to be called when the user releases a key on the keyboard.
-    * The function receives a {@link KeyEvent} object which contains
-    * information about the keyboard event.
-    * 
-    * If the function returns `false`, the keyboard event will be prevented
-    * from bubbling up. This can be used for example to stop the window from
-    * scrolling, when you need the user to interact with arrow keys.
-    */
-  var onKeyUp: js.Function | Null = js.native
-  /** 
-    * The function to be called when the mouse button is pushed down. The
-    * function receives a {@link ToolEvent} object which contains information
-    * about the tool event.
-    */
-  var onMouseDown: js.Function | Null = js.native
-  /** 
-    * The function to be called when the mouse position changes while the mouse
-    * is being dragged. The function receives a {@link ToolEvent} object which
-    * contains information about the tool event.
-    */
-  var onMouseDrag: js.Function | Null = js.native
-  /** 
-    * The function to be called the mouse moves within the project view. The
-    * function receives a {@link ToolEvent} object which contains information
-    * about the tool event.
-    */
-  var onMouseMove: js.Function | Null = js.native
-  /** 
-    * The function to be called when the mouse button is released. The function
-    * receives a {@link ToolEvent} object which contains information about the
-    * tool event.
-    */
-  var onMouseUp: js.Function | Null = js.native
+  
   /** 
     * Activates this tool, meaning {@link PaperScope#tool} will
     * point to it and it will be the one that receives tool events.
     */
   def activate(): Unit = js.native
+  
   /** 
     * Emit an event on the tool.
     * 
@@ -88,6 +35,21 @@ trait Tool extends js.Object {
     * @return true if the event had listeners
     */
   def emit(`type`: String, event: js.Object): Boolean = js.native
+  
+  var fixedDistance: Double = js.native
+  
+  /** 
+    * The maximum distance the mouse has to drag before firing the onMouseDrag
+    * event, since the last onMouseDrag event.
+    */
+  var maxDistance: Double = js.native
+  
+  /** 
+    * The minimum distance the mouse has to drag before firing the onMouseDrag
+    * event, since the last onMouseDrag event.
+    */
+  var minDistance: Double = js.native
+  
   /** 
     * Detach one or more event handlers from the tool.
     * 
@@ -108,6 +70,7 @@ trait Tool extends js.Object {
     * @return this tool itself, so calls can be chained
     */
   def off(`type`: String, callback: js.Function): Tool = js.native
+  
   /** 
     * Attach one or more event handlers to the tool.
     * 
@@ -129,10 +92,62 @@ trait Tool extends js.Object {
     * @return this tool itself, so calls can be chained
     */
   def on(`type`: String, callback: js.Function): Tool = js.native
+  
+  /** 
+    * The function to be called when the user presses a key on the keyboard.
+    * The function receives a {@link KeyEvent} object which contains
+    * information about the keyboard event.
+    * 
+    * If the function returns `false`, the keyboard event will be prevented
+    * from bubbling up. This can be used for example to stop the window from
+    * scrolling, when you need the user to interact with arrow keys.
+    */
+  var onKeyDown: js.Function | Null = js.native
+  
+  /** 
+    * The function to be called when the user releases a key on the keyboard.
+    * The function receives a {@link KeyEvent} object which contains
+    * information about the keyboard event.
+    * 
+    * If the function returns `false`, the keyboard event will be prevented
+    * from bubbling up. This can be used for example to stop the window from
+    * scrolling, when you need the user to interact with arrow keys.
+    */
+  var onKeyUp: js.Function | Null = js.native
+  
+  /** 
+    * The function to be called when the mouse button is pushed down. The
+    * function receives a {@link ToolEvent} object which contains information
+    * about the tool event.
+    */
+  var onMouseDown: js.Function | Null = js.native
+  
+  /** 
+    * The function to be called when the mouse position changes while the mouse
+    * is being dragged. The function receives a {@link ToolEvent} object which
+    * contains information about the tool event.
+    */
+  var onMouseDrag: js.Function | Null = js.native
+  
+  /** 
+    * The function to be called the mouse moves within the project view. The
+    * function receives a {@link ToolEvent} object which contains information
+    * about the tool event.
+    */
+  var onMouseMove: js.Function | Null = js.native
+  
+  /** 
+    * The function to be called when the mouse button is released. The function
+    * receives a {@link ToolEvent} object which contains information about the
+    * tool event.
+    */
+  var onMouseUp: js.Function | Null = js.native
+  
   /** 
     * Removes this tool from the {@link PaperScope#tools} list.
     */
   def remove(): Unit = js.native
+  
   /** 
     * Check if the tool has one or more event handlers of the specified type.
     * 
@@ -144,4 +159,3 @@ trait Tool extends js.Object {
     */
   def responds(`type`: String): Boolean = js.native
 }
-

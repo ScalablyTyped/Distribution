@@ -10,7 +10,7 @@ import typings.luminoDatagrid.luminoDatagridStrings.`rows-moved`
 import typings.luminoDatagrid.luminoDatagridStrings.`rows-removed`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A type alias for the args objects of the `changed` signal.
@@ -24,14 +24,15 @@ import scala.scalajs.js.annotation._
   - typings.luminoDatagrid.datamodelMod.DataModel.ModelResetArgs
 */
 trait ChangedArgs extends js.Object
-
 object ChangedArgs {
+  
   @scala.inline
   def RowsMovedArgs(destination: Double, index: Double, region: RowRegion, span: Double, `type`: `rows-moved`): ChangedArgs = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangedArgs]
   }
+  
   @scala.inline
   def CellsChangedArgs(
     column: Double,
@@ -45,24 +46,28 @@ object ChangedArgs {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangedArgs]
   }
+  
   @scala.inline
   def ModelResetArgs(`type`: `model-reset`): ChangedArgs = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangedArgs]
   }
+  
   @scala.inline
   def RowsChangedArgs(index: Double, region: RowRegion, span: Double, `type`: `rows-inserted` | `rows-removed`): ChangedArgs = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangedArgs]
   }
+  
   @scala.inline
   def ColumnsChangedArgs(index: Double, region: ColumnRegion, span: Double, `type`: `columns-inserted` | `columns-removed`): ChangedArgs = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangedArgs]
   }
+  
   @scala.inline
   def ColumnsMovedArgs(destination: Double, index: Double, region: ColumnRegion, span: Double, `type`: `columns-moved`): ChangedArgs = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
@@ -70,4 +75,3 @@ object ChangedArgs {
     __obj.asInstanceOf[ChangedArgs]
   }
 }
-

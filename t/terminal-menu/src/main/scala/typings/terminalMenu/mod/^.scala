@@ -2,11 +2,12 @@ package typings.terminalMenu.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("terminal-menu", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Creates a TerminalMenu with default settings.
     */
@@ -17,4 +18,3 @@ object ^ extends js.Object {
     */
   def apply(options: TerminalMenuOptions): TerminalMenu = js.native
 }
-

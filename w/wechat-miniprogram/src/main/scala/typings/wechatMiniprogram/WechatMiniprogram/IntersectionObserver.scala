@@ -2,14 +2,16 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IntersectionObserver extends js.Object {
+  
   /** [IntersectionObserver.disconnect()](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/IntersectionObserver.disconnect.html)
     *
     * 停止监听。回调函数将不再触发 */
   def disconnect(): Unit = js.native
+  
   /** [IntersectionObserver.observe(string targetSelector, function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/IntersectionObserver.observe.html)
     *
     * 指定目标节点并开始监听相交状态变化情况 */
@@ -19,6 +21,7 @@ trait IntersectionObserver extends js.Object {
     /** 监听相交状态变化的回调函数 */
   callback: IntersectionObserverObserveCallback
   ): Unit = js.native
+  
   /** [[IntersectionObserver](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/IntersectionObserver.html) IntersectionObserver.relativeTo(string selector, Object margins)](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/IntersectionObserver.relativeTo.html)
     *
     * 使用选择器指定一个节点，作为参照区域之一。 */
@@ -27,6 +30,7 @@ trait IntersectionObserver extends js.Object {
   def relativeTo(/** 选择器 */
   selector: String, /** 用来扩展（或收缩）参照节点布局区域的边界 */
   margins: Margins): IntersectionObserver = js.native
+  
   /** [[IntersectionObserver](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/IntersectionObserver.html) IntersectionObserver.relativeToViewport(Object margins)](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/IntersectionObserver.relativeToViewport.html)
   *
   * 指定页面显示区域作为参照区域之一
@@ -53,4 +57,3 @@ trait IntersectionObserver extends js.Object {
   def relativeToViewport(/** 用来扩展（或收缩）参照节点布局区域的边界 */
   margins: Margins): IntersectionObserver = js.native
 }
-

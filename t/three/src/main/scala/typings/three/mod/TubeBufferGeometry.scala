@@ -2,12 +2,19 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "TubeBufferGeometry")
 @js.native
 class TubeBufferGeometry protected ()
   extends typings.three.geometriesMod.TubeBufferGeometry {
+  /**
+  	 * @param path
+  	 * @param [tubularSegments=64]
+  	 * @param [radius=1]
+  	 * @param [radiusSegments=8]
+  	 * @param [closed=false]
+  	 */
   def this(path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3]) = this()
   def this(path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3], tubularSegments: Double) = this()
   def this(
@@ -101,4 +108,3 @@ class TubeBufferGeometry protected ()
     closed: Boolean
   ) = this()
 }
-

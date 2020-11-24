@@ -11,8 +11,8 @@ Check if IP address is private.
 | Full name          | private-ip |
 | Keywords           | ip, address, private |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 114296 |
+| # dependents       | 7 |
+| # downloads        | 275014 |
 | # stars            | 1 |
 
 ## Links

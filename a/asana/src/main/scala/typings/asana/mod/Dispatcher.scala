@@ -4,25 +4,17 @@ import org.scalablytyped.runtime.TopLevel
 import typings.asana.mod.auth.Authenticator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Dispatcher extends js.Object {
+  
   /**
     * The base URL for Asana
     * @type {String}
     */
   var asanaBaseUrl: String = js.native
-  /**
-    * The amount of time in milliseconds to wait for a request to finish.
-    * @type {Number}
-    */
-  var requestTimeout: Double = js.native
-  /**
-    * Whether requests should be automatically retried if rate limited.
-    * @type {Boolean}
-    */
-  var retryOnRateLimit: Boolean = js.native
+  
   /**
     * Ensure the dispatcher is authorized to make requests. Call this before
     * making any API requests.
@@ -32,6 +24,7 @@ trait Dispatcher extends js.Object {
     * @return
     */
   def authorize(): typings.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Dispatches a DELETE request to the Asana API.
     * @param  {String} path The path of the API
@@ -44,6 +37,7 @@ trait Dispatcher extends js.Object {
     */
   def delete(path: String): typings.bluebird.mod.^[_] = js.native
   def delete(path: String, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  
   /**
     * Dispatches a request to the Asana API. The request parameters are passed to
     * the request module.
@@ -56,6 +50,7 @@ trait Dispatcher extends js.Object {
     */
   def dispatch(params: js.Any): typings.bluebird.mod.^[_] = js.native
   def dispatch(params: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  
   /**
     * Dispatches a GET request to the Asana API.
     * @param  {String}  path    The path of the API
@@ -69,8 +64,10 @@ trait Dispatcher extends js.Object {
     * @return
     */
   def get(path: String): typings.bluebird.mod.^[_] = js.native
+  def get(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
   def get(path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
   def get(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  
   /**
     * Handler for unauthorized requests which may seek reauthorization.
     * Default behavior is available if configured with an Oauth authenticator
@@ -78,6 +75,7 @@ trait Dispatcher extends js.Object {
     * @type {Function}
     */
   def handleUnauthorized(): Boolean | typings.bluebird.mod.^[Boolean] = js.native
+  
   /**
     * Dispatches a POST request to the Asana API.
     * @param  {String} path The path of the API
@@ -92,6 +90,7 @@ trait Dispatcher extends js.Object {
     */
   def post(path: String, data: js.Any): typings.bluebird.mod.^[_] = js.native
   def post(path: String, data: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  
   /**
     * Dispatches a PUT request to the Asana API.
     * @param  {String} path The path of the API
@@ -106,6 +105,19 @@ trait Dispatcher extends js.Object {
     */
   def put(path: String, data: js.Any): typings.bluebird.mod.^[_] = js.native
   def put(path: String, data: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  
+  /**
+    * The amount of time in milliseconds to wait for a request to finish.
+    * @type {Number}
+    */
+  var requestTimeout: Double = js.native
+  
+  /**
+    * Whether requests should be automatically retried if rate limited.
+    * @type {Boolean}
+    */
+  var retryOnRateLimit: Boolean = js.native
+  
   /**
     * Configure the authentication mechanism to use.
     * @returns {Dispatcher} this
@@ -113,6 +125,7 @@ trait Dispatcher extends js.Object {
     * @return
     */
   def setAuthenticator(authenticator: Authenticator): this.type = js.native
+  
   /**
     * Creates an Asana API Url by concatenating the ROOT_URL with path provided.
     * @param  {String} path The path
@@ -122,8 +135,6 @@ trait Dispatcher extends js.Object {
     */
   def url(path: String): String = js.native
 }
-
 @JSImport("asana", "Dispatcher")
 @js.native
 object Dispatcher extends TopLevel[DispatcherStatic]
-

@@ -2,7 +2,7 @@ package typings.symbolTree.treeIteratorMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The iteration function to use.
@@ -21,17 +21,20 @@ import scala.scalajs.js.annotation._
   - typings.symbolTree.symbolTreeNumbers.`5`
 */
 trait IterateFunction extends js.Object
-
 object IterateFunction {
+  
   @scala.inline
   def `1`: typings.symbolTree.symbolTreeNumbers.`1` = 1.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`1`]
+  
   @scala.inline
   def `2`: typings.symbolTree.symbolTreeNumbers.`2` = 2.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`2`]
+  
   @scala.inline
   def `3`: typings.symbolTree.symbolTreeNumbers.`3` = 3.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`3`]
+  
   @scala.inline
   def `4`: typings.symbolTree.symbolTreeNumbers.`4` = 4.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`4`]
+  
   @scala.inline
   def `5`: typings.symbolTree.symbolTreeNumbers.`5` = 5.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`5`]
 }
-

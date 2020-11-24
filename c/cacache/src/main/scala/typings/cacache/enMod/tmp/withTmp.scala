@@ -2,11 +2,12 @@ package typings.cacache.enMod.tmp
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cacache/en", "tmp.withTmp")
 @js.native
 object withTmp extends js.Object {
+  
   def apply(cachePath: String, cb: Callback): Unit = js.native
   /**
     * Creates a temporary directory with `tmp.mkdir()` and calls `cb` with it.
@@ -18,4 +19,3 @@ object withTmp extends js.Object {
     */
   def apply(cachePath: String, opts: Options, cb: Callback): Unit = js.native
 }
-

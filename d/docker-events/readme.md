@@ -12,7 +12,7 @@ Create an event emitter from dockerode's events response
 | Keywords           | docker, events, event, emitter |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 14668 |
+| # downloads        | 24843 |
 | # stars            | 4 |
 
 ## Links

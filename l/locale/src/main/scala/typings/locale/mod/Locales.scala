@@ -3,7 +3,7 @@ package typings.locale.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("locale", "Locales")
 @js.native
@@ -25,6 +25,7 @@ class Locales () extends js.Object {
   def this(str: js.Array[String | Locale], `def`: String) = this()
   def this(str: Locale, `def`: String) = this()
   def this(str: Locales, `def`: String) = this()
+  
   /**
     * This method takes the target locale and compares it against the
     * optionally provided list of supported locales, and returns the most
@@ -42,10 +43,13 @@ class Locales () extends js.Object {
     */
   def best(): Locale = js.native
   def best(locales: Locales): Locale = js.native
+  
   def index(): StringDictionary[Double] = js.native
+  
   def push(items: String*): Double = js.native
+  
   def sort(): this.type = js.native
   def sort(compareFn: js.Function2[/* a */ String, /* b */ String, Double]): this.type = js.native
+  
   def toJSON(): js.Array[Locale] = js.native
 }
-

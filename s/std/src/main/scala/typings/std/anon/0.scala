@@ -2,10 +2,11 @@ package typings.std.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait `0` extends js.Object {
+  
   @JSName(js.Symbol.replace)
   var replace: js.Function2[
     /* string */ String, 
@@ -13,4 +14,3 @@ trait `0` extends js.Object {
     String
   ] = js.native
 }
-

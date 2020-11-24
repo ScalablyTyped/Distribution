@@ -5,17 +5,16 @@ import typings.seleniumWebdriver.mod.WebDriver
 import typings.webdriverJsExtender.anon.DefineCommand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webdriver-js-extender/built/lib/extender", JSImport.Namespace)
 @js.native
 object extenderMod extends js.Object {
+  
   @js.native
   class Extender protected () extends js.Object {
     def this(driver: WebDriver) = this()
-    var driver_ : WebDriver = js.native
-    var executor_ : DefineCommand = js.native
-    var params_ : StringDictionary[js.Array[String]] = js.native
+    
     /**
       * Defines a new command. When a command is sent, the {@code path} will be
       * preprocessed using the command's parameters; any path segments prefixed
@@ -31,6 +30,9 @@ object extenderMod extends js.Object {
       *     "/path/:variable/segment".
       */
     def defineCommand(name: String, params: js.Array[String], method: String, path: String): Unit = js.native
+    
+    var driver_ : WebDriver = js.native
+    
     /**
       * Executes a command which was defined by defineCommand()
       *
@@ -40,7 +42,9 @@ object extenderMod extends js.Object {
       *     the command result
       */
     def execCommand[T](name: String, method: String, params: js.Array[_]): js.Promise[T] = js.native
+    
+    var executor_ : DefineCommand = js.native
+    
+    var params_ : StringDictionary[js.Array[String]] = js.native
   }
-  
 }
-

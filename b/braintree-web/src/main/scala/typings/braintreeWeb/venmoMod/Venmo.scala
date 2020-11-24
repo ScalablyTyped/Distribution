@@ -6,13 +6,15 @@ import typings.braintreeWeb.coreMod.BraintreeError
 import typings.braintreeWeb.coreMod.callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Venmo extends js.Object {
+  
   var VERSION: String = js.native
+  
   def create(options: AllowNewBrowserTab): Unit = js.native
-  def create(options: AllowNewBrowserTab, callback: callback): Unit = js.native
+  def create(options: AllowNewBrowserTab, callback: callback[_]): Unit = js.native
   /**
     * braintree.venmo.create({
     *   client: clientInstance
@@ -24,6 +26,7 @@ trait Venmo extends js.Object {
     */
   @JSName("create")
   def create_Promise(options: AllowNewBrowserTab): js.Promise[Venmo] = js.native
+  
   /**
     * Returns a boolean indicating whether a Venmo tokenization result is ready to be processed immediately.
     *
@@ -31,6 +34,7 @@ trait Venmo extends js.Object {
     * If it returns true, call {@link Venmo#tokenize|tokenize} immediately to process the results.
     */
   def hasTokenizationResult(): Boolean = js.native
+  
   /**
     * Returns a boolean indicating whether the current browser supports Venmo as a payment method.
     *
@@ -39,6 +43,7 @@ trait Venmo extends js.Object {
     * Currently, this is limited to iOS Safari and Android Chrome.
     */
   def isBrowserSupported(): Boolean = js.native
+  
   /**
     * Cleanly tear down anything set up by {@link module:braintree-web/venmo.create|create}.         * @example
     * venmoInstance.teardown();
@@ -51,6 +56,7 @@ trait Venmo extends js.Object {
   def teardown(callback: js.Function0[Unit]): Unit = js.native
   @JSName("teardown")
   def teardown_Promise(): js.Promise[Unit] = js.native
+  
   def tokenize(): Unit = js.native
   def tokenize(
     options: js.UndefOr[scala.Nothing],
@@ -109,4 +115,3 @@ trait Venmo extends js.Object {
   @JSName("tokenize")
   def tokenize_Promise(options: ProcessResultsDelay): js.Promise[VenmoTokenizePayload] = js.native
 }
-

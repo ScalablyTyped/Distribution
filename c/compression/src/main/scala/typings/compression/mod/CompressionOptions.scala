@@ -7,7 +7,7 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * compression() accepts these properties in the options object.
@@ -19,12 +19,14 @@ trait CompressionOptions
   * In addition , `zlib` options may be passed in to the options object.
   */
 /* property */ StringDictionary[js.Any] {
+  
   /**
     * @default zlib.constants.Z_DEFAULT_CHUNK or 16384
     * @see {@link http://nodejs.org/api/zlib.html#zlib_memory_usage_tuning| Node.js documentation}
     * @see {@link https://github.com/expressjs/compression#chunksize|chunkSize documentation}
     */
   var chunkSize: js.UndefOr[Double] = js.native
+  
   /**
     * A function to decide if the response should be considered for compression. This function is called as
     * `filter(req, res)` and is expected to return `true` to consider the response for compression, or `false` to
@@ -37,6 +39,7 @@ trait CompressionOptions
     * @see {@link https://www.npmjs.com/package/compressible|compressible module}
     */
   var filter: js.UndefOr[CompressionFilter] = js.native
+  
   /**
     * The level of zlib compression to apply to responses. A higher level will result in better compression, but
     * will take longer to complete. A lower level will result in less compression, but will be much faster.
@@ -63,6 +66,7 @@ trait CompressionOptions
     * @see {@link https://github.com/expressjs/compression#level|`level` documentation}
     */
   var level: js.UndefOr[Double] = js.native
+  
   /**
     * This specifies how much memory should be allocated for the internal compression state and is an integer in
     * the range of `1` (minimum level) and `9` (maximum level).
@@ -72,6 +76,7 @@ trait CompressionOptions
     * @see {@link https://github.com/expressjs/compression#memlevel|`memLevel` documentation}
     */
   var memLevel: js.UndefOr[Double] = js.native
+  
   /**
     * This is used to tune the compression algorithm. This value only affects the compression ratio, not the
     * correctness of the compressed output, even if it is not set appropriately.
@@ -89,6 +94,7 @@ trait CompressionOptions
     * **Note** in the list above, `zlib` is from `zlib = require('zlib')`.
     */
   var strategy: js.UndefOr[Double] = js.native
+  
   /**
     * The byte threshold for the response body size before compression is considered for the response, defaults to
     * 1kb. This is a number of bytes or any string accepted by the bytes module.
@@ -101,61 +107,78 @@ trait CompressionOptions
     * @see {@link https://github.com/expressjs/compression#threshold|`threshold` documentation}
     */
   var threshold: js.UndefOr[Double | String] = js.native
+  
   /**
     * @default zlib.constants.Z_DEFAULT_WINDOWBITS or 15.
     * @see {@link http://nodejs.org/api/zlib.html#zlib_memory_usage_tuning|Node.js documentation}
     */
   var windowBits: js.UndefOr[Double] = js.native
 }
-
 object CompressionOptions {
+  
   @scala.inline
   def apply(): CompressionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompressionOptions]
   }
+  
   @scala.inline
   implicit class CompressionOptionsOps[Self <: CompressionOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setChunkSize(value: Double): Self = this.set("chunkSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteChunkSize: Self = this.set("chunkSize", js.undefined)
+    
     @scala.inline
     def setFilter(
       value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
     ): Self = this.set("filter", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteFilter: Self = this.set("filter", js.undefined)
+    
     @scala.inline
     def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLevel: Self = this.set("level", js.undefined)
+    
     @scala.inline
     def setMemLevel(value: Double): Self = this.set("memLevel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMemLevel: Self = this.set("memLevel", js.undefined)
+    
     @scala.inline
     def setStrategy(value: Double): Self = this.set("strategy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStrategy: Self = this.set("strategy", js.undefined)
+    
     @scala.inline
     def setThreshold(value: Double | String): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteThreshold: Self = this.set("threshold", js.undefined)
+    
     @scala.inline
     def setWindowBits(value: Double): Self = this.set("windowBits", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWindowBits: Self = this.set("windowBits", js.undefined)
   }
-  
 }
-

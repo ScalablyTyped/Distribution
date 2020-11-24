@@ -5,11 +5,12 @@ import typings.electron.electronStrings.selection
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Clipboard extends js.Object {
-  // Docs: http://electronjs.org/docs/api/clipboard
+  
+  // Docs: https://electronjs.org/docs/api/clipboard
   /**
     * An array of supported formats for the clipboard `type`.
     */
@@ -18,6 +19,7 @@ trait Clipboard extends js.Object {
   def availableFormats_clipboard(`type`: clipboard): js.Array[String] = js.native
   @JSName("availableFormats")
   def availableFormats_selection(`type`: selection): js.Array[String] = js.native
+  
   /**
     * Clears the clipboard content.
     */
@@ -26,6 +28,7 @@ trait Clipboard extends js.Object {
   def clear_clipboard(`type`: clipboard): Unit = js.native
   @JSName("clear")
   def clear_selection(`type`: selection): Unit = js.native
+  
   /**
     * Whether the clipboard supports the specified `format`.
     *
@@ -36,12 +39,14 @@ trait Clipboard extends js.Object {
   def has_clipboard(format: String, `type`: clipboard): Boolean = js.native
   @JSName("has")
   def has_selection(format: String, `type`: selection): Boolean = js.native
+  
   /**
     * Reads `format` type from the clipboard.
     *
     * @experimental
     */
   def read(format: String): String = js.native
+  
   /**
     * * `title` String
     * * `url` String
@@ -53,12 +58,14 @@ trait Clipboard extends js.Object {
     * @platform darwin,win32
     */
   def readBookmark(): ReadBookmark = js.native
+  
   /**
     * Reads `format` type from the clipboard.
     *
     * @experimental
     */
   def readBuffer(format: String): Buffer = js.native
+  
   /**
     * The text on the find pasteboard, which is the pasteboard that holds information
     * about the current state of the active application’s find panel.
@@ -70,6 +77,7 @@ trait Clipboard extends js.Object {
     * @platform darwin
     */
   def readFindText(): String = js.native
+  
   /**
     * The content in the clipboard as markup.
     */
@@ -78,6 +86,7 @@ trait Clipboard extends js.Object {
   def readHTML_clipboard(`type`: clipboard): String = js.native
   @JSName("readHTML")
   def readHTML_selection(`type`: selection): String = js.native
+  
   /**
     * The image content in the clipboard.
     */
@@ -86,6 +95,7 @@ trait Clipboard extends js.Object {
   def readImage_clipboard(`type`: clipboard): NativeImage_ = js.native
   @JSName("readImage")
   def readImage_selection(`type`: selection): NativeImage_ = js.native
+  
   /**
     * The content in the clipboard as RTF.
     */
@@ -94,6 +104,7 @@ trait Clipboard extends js.Object {
   def readRTF_clipboard(`type`: clipboard): String = js.native
   @JSName("readRTF")
   def readRTF_selection(`type`: selection): String = js.native
+  
   /**
     * The content in the clipboard as plain text.
     */
@@ -102,10 +113,12 @@ trait Clipboard extends js.Object {
   def readText_clipboard(`type`: clipboard): String = js.native
   @JSName("readText")
   def readText_selection(`type`: selection): String = js.native
+  
   /**
     * Writes `data` to the clipboard.
     */
   def write(data: Data): Unit = js.native
+  
   /**
     * Writes the `title` and `url` into the clipboard as a bookmark.
     *
@@ -120,6 +133,7 @@ trait Clipboard extends js.Object {
   def writeBookmark_clipboard(title: String, url: String, `type`: clipboard): Unit = js.native
   @JSName("writeBookmark")
   def writeBookmark_selection(title: String, url: String, `type`: selection): Unit = js.native
+  
   /**
     * Writes the `buffer` into the clipboard as `format`.
     *
@@ -130,6 +144,7 @@ trait Clipboard extends js.Object {
   def writeBuffer_clipboard(format: String, buffer: Buffer, `type`: clipboard): Unit = js.native
   @JSName("writeBuffer")
   def writeBuffer_selection(format: String, buffer: Buffer, `type`: selection): Unit = js.native
+  
   /**
     * Writes the `text` into the find pasteboard (the pasteboard that holds
     * information about the current state of the active application’s find panel) as
@@ -139,6 +154,7 @@ trait Clipboard extends js.Object {
     * @platform darwin
     */
   def writeFindText(text: String): Unit = js.native
+  
   /**
     * Writes `markup` to the clipboard.
     */
@@ -147,6 +163,7 @@ trait Clipboard extends js.Object {
   def writeHTML_clipboard(markup: String, `type`: clipboard): Unit = js.native
   @JSName("writeHTML")
   def writeHTML_selection(markup: String, `type`: selection): Unit = js.native
+  
   /**
     * Writes `image` to the clipboard.
     */
@@ -155,6 +172,7 @@ trait Clipboard extends js.Object {
   def writeImage_clipboard(image: NativeImage_, `type`: clipboard): Unit = js.native
   @JSName("writeImage")
   def writeImage_selection(image: NativeImage_, `type`: selection): Unit = js.native
+  
   /**
     * Writes the `text` into the clipboard in RTF.
     */
@@ -163,6 +181,7 @@ trait Clipboard extends js.Object {
   def writeRTF_clipboard(text: String, `type`: clipboard): Unit = js.native
   @JSName("writeRTF")
   def writeRTF_selection(text: String, `type`: selection): Unit = js.native
+  
   /**
     * Writes the `text` into the clipboard as plain text.
     */
@@ -171,9 +190,9 @@ trait Clipboard extends js.Object {
   def writeText_clipboard(text: String, `type`: clipboard): Unit = js.native
   @JSName("writeText")
   def writeText_selection(text: String, `type`: selection): Unit = js.native
+  
   @JSName("write")
   def write_clipboard(data: Data, `type`: clipboard): Unit = js.native
   @JSName("write")
   def write_selection(data: Data, `type`: selection): Unit = js.native
 }
-

@@ -6,14 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicenetworking/v1", "servicenetworking_v1.Resource$Services")
 @js.native
 class ResourceServices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var connections: ResourceServicesConnections = js.native
-  var context: APIRequestContext = js.native
+  
   /**
     * servicenetworking.services.addSubnetwork
     * @desc For service producers, provisions a new subnet in a peered
@@ -52,6 +51,11 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var connections: ResourceServicesConnections = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * servicenetworking.services.searchRange
     * @desc Service producers can use this method to find a currently unused
@@ -87,4 +91,3 @@ class ResourceServices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

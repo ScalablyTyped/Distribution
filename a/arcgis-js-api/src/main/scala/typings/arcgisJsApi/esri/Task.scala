@@ -2,16 +2,18 @@ package typings.arcgisJsApi.esri
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Task extends Accessor {
+  
   /**
-    * The [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for data requests. These options can also be controlled through the `requestOptions` method parameter.
+    * The [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for data requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Task.html#requestOptions)
     */
   var requestOptions: js.Any = js.native
+  
   /**
     * The ArcGIS Server REST service URL (usually of a Feature Service Layer or Map Service Layer) for use in a task.
     *
@@ -19,4 +21,3 @@ trait Task extends Accessor {
     */
   var url: String = js.native
 }
-

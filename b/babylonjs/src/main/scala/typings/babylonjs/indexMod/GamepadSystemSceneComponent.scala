@@ -2,7 +2,7 @@ package typings.babylonjs.indexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "GamepadSystemSceneComponent")
 @js.native
@@ -14,4 +14,3 @@ class GamepadSystemSceneComponent protected ()
     */
   def this(scene: typings.babylonjs.sceneMod.Scene) = this()
 }
-

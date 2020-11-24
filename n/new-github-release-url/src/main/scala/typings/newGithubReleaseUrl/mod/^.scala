@@ -2,11 +2,12 @@ package typings.newGithubReleaseUrl.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("new-github-release-url", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Generate a URL for opening a new GitHub release with prefilled tag, body, and other fields.
   @returns A URL string.
@@ -26,4 +27,3 @@ object ^ extends js.Object {
   */
   def apply(options: Options): String = js.native
 }
-

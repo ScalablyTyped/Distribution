@@ -11,8 +11,8 @@ Constructs a Voronoi diagram for a collection of points
 | Full name          | voronoi-diagram |
 | Keywords           | voronoi, diagram, point, delaunay, incremental |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 413 |
+| # dependents       | 3 |
+| # downloads        | 806 |
 | # stars            | 2 |
 
 ## Links

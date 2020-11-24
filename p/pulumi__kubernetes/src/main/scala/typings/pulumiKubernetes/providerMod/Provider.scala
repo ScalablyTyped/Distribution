@@ -4,7 +4,7 @@ import typings.pulumiPulumi.mod.ProviderResource
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/provider", "Provider")
 @js.native
@@ -21,15 +21,14 @@ class Provider protected () extends ProviderResource {
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: ResourceOptions) = this()
   def this(name: String, args: ProviderArgs, opts: ResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/provider", "Provider")
 @js.native
 object Provider extends js.Object {
+  
   /**
     * Returns true if the given object is an instance of Provider.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/provider.Provider */ Boolean = js.native
 }
-

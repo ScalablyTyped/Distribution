@@ -10,9 +10,9 @@ A simple, light-weight NodeJS utility for measuring code execution in high-resol
 | ------------------ | :-------------: |
 | Full name          | perfy |
 | Keywords           | perfy, perf, performance, measure, execution, time, benchmark, profile, elapsed |
-| # releases         | 2 |
-| # dependents       | 20 |
-| # downloads        | 615105 |
+| # releases         | 0 |
+| # dependents       | 19 |
+| # downloads        | 790212 |
 | # stars            | 1 |
 
 ## Links

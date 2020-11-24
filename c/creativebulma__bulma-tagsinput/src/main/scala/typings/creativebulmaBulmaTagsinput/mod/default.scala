@@ -3,7 +3,7 @@ package typings.creativebulmaBulmaTagsinput.mod
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@creativebulma/bulma-tagsinput", JSImport.Default)
 @js.native
@@ -16,11 +16,11 @@ class default protected () extends BulmaTagsInput {
   def this(selector: String, options: BulmaTagsInputOptions) = this()
   def this(selector: HTMLInputElement, options: BulmaTagsInputOptions) = this()
 }
-
 /* static members */
 @JSImport("@creativebulma/bulma-tagsinput", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * DOM modifications will be observed to detect any new element responding to the given selector
     * to automatically instantiate BulmaTagsInput on them with the given option.
@@ -33,4 +33,3 @@ object default extends js.Object {
   def attach(selector: HTMLInputElement): BulmaTagsInput = js.native
   def attach(selector: HTMLInputElement, options: BulmaTagsInputOptions): BulmaTagsInput = js.native
 }
-

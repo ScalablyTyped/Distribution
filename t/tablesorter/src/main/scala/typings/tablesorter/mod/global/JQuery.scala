@@ -37,10 +37,11 @@ import typings.tablesorter.tablesorterStrings.updateRows
 import typings.tablesorter.triggerCallbackHandlerMod.TriggerCallbackHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery[TElement] extends js.Object {
+  
   def bind(name: ConfigEventMap, callback: ConfigEventHandler[TElement]): this.type = js.native
   def bind(name: EventMap, callback: TablesorterEventHandler[TElement]): this.type = js.native
   def bind(name: PagerEventMap, callback: PagerEventHandler[TElement]): this.type = js.native
@@ -48,6 +49,7 @@ trait JQuery[TElement] extends js.Object {
   def bind_filterStart(name: filterStart, callback: FilterEventHandler[TElement]): this.type = js.native
   @JSName("bind")
   def bind_stickyHeadersInit(name: stickyHeadersInit, callback: CommonEventHandler[TElement]): this.type = js.native
+  
   /**
     * Initializes a new `tablesorter`.
     *
@@ -56,11 +58,13 @@ trait JQuery[TElement] extends js.Object {
     */
   def tablesorter(): this.type = js.native
   def tablesorter(options: TablesorterConfiguration[TElement]): this.type = js.native
+  
   /**
     * Initializes a pager for a tablesorter.
     */
   def tablesorterPager(): this.type = js.native
   def tablesorterPager(options: PagerConfiguration[TElement]): this.type = js.native
+  
   def trigger(name: ParameterlessTriggerNameMap): this.type = js.native
   @JSName("trigger")
   def trigger_addRows(
@@ -138,4 +142,3 @@ trait JQuery[TElement] extends js.Object {
     extraParameters: js.Tuple2[Boolean | js.Array[SortDefinition], js.UndefOr[TriggerCallbackHandler[TElement]]]
   ): this.type = js.native
 }
-

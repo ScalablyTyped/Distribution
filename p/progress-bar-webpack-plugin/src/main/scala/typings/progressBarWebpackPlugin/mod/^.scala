@@ -3,7 +3,7 @@ package typings.progressBarWebpackPlugin.mod
 import typings.std.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A progress bar plugin for Webpack.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends Plugin {
   def this(options: Options) = this()
 }
-

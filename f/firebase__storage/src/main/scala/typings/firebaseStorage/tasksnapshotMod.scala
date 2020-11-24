@@ -1,41 +1,43 @@
 package typings.firebaseStorage
 
-import typings.firebaseStorage.referenceMod.Reference
+import typings.firebaseStorage.referenceMod.ReferenceCompat
 import typings.firebaseStorage.srcMetadataMod.Metadata
-import typings.firebaseStorage.taskMod.UploadTask
-import typings.firebaseStorage.taskenumsMod.TaskState
+import typings.firebaseStorage.taskMod.UploadTaskCompat
+import typings.firebaseStorageTypes.mod.UploadTaskSnapshot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/storage/dist/src/tasksnapshot", JSImport.Namespace)
+@JSImport("@firebase/storage/dist/compat/tasksnapshot", JSImport.Namespace)
 @js.native
 object tasksnapshotMod extends js.Object {
-  @js.native
-  class UploadTaskSnapshot protected () extends js.Object {
-    def this(
-      bytesTransferred: Double,
-      totalBytes: Double,
-      state: TaskState,
-      metadata: Null,
-      task: UploadTask,
-      ref: Reference
-    ) = this()
-    def this(
-      bytesTransferred: Double,
-      totalBytes: Double,
-      state: TaskState,
-      metadata: Metadata,
-      task: UploadTask,
-      ref: Reference
-    ) = this()
-    val bytesTransferred: Double = js.native
-    val metadata: Metadata | Null = js.native
-    val ref: Reference = js.native
-    val state: TaskState = js.native
-    val task: UploadTask = js.native
-    val totalBytes: Double = js.native
-  }
   
+  @js.native
+  class UploadTaskSnapshotCompat protected () extends UploadTaskSnapshot {
+    def this(
+      _delegate: typings.firebaseStorage.srcTasksnapshotMod.UploadTaskSnapshot,
+      task: UploadTaskCompat,
+      ref: ReferenceCompat
+    ) = this()
+    
+    val _delegate: typings.firebaseStorage.srcTasksnapshotMod.UploadTaskSnapshot = js.native
+    
+    @JSName("bytesTransferred")
+    def bytesTransferred_MUploadTaskSnapshotCompat: Double = js.native
+    
+    @JSName("metadata")
+    def metadata_MUploadTaskSnapshotCompat: Metadata = js.native
+    
+    @JSName("ref")
+    val ref_UploadTaskSnapshotCompat: ReferenceCompat = js.native
+    
+    @JSName("state")
+    def state_MUploadTaskSnapshotCompat: String = js.native
+    
+    @JSName("task")
+    val task_UploadTaskSnapshotCompat: UploadTaskCompat = js.native
+    
+    @JSName("totalBytes")
+    def totalBytes_MUploadTaskSnapshotCompat: Double = js.native
+  }
 }
-

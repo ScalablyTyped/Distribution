@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides access to input sources for WebXR.
@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XrInput extends EventHandler {
+  
   /**
     * List of active {@link pc.XrInputSource}.
     */
   var inputSources: js.Array[XrInputSource] = js.native
 }
-

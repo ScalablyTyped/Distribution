@@ -2,13 +2,14 @@ package typings.npmWhich.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a basic interface for `npm-which`.
   */
 @js.native
 trait WhichBase[TOptions] extends js.Object {
+  
   /**
     * Creates a searcher for the specified command.
     *
@@ -47,4 +48,3 @@ trait WhichBase[TOptions] extends js.Object {
     */
   def apply(cmd: String, options: TOptions, callback: NpmWhichCallback): Unit = js.native
 }
-

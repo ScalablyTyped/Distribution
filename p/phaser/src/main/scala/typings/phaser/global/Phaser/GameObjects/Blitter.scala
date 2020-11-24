@@ -4,7 +4,7 @@ import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Blitter Game Object.
@@ -106,4 +106,3 @@ class Blitter protected ()
   def this(scene: Scene, x: Double, y: Double, texture: String, frame: String) = this()
   def this(scene: Scene, x: Double, y: Double, texture: String, frame: integer) = this()
 }
-

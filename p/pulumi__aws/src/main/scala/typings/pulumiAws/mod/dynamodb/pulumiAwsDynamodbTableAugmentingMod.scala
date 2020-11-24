@@ -5,14 +5,16 @@ import typings.pulumiAws.dynamodbMixinsMod.TableEventSubscriptionArgs
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("@pulumi/aws/dynamodb/table", JSImport.Namespace)
 @js.native
 object pulumiAwsDynamodbTableAugmentingMod extends js.Object {
+  
   @js.native
   trait Table extends js.Object {
+    
     /**
       * Creates a new subscription to events fired from this Table to the handler provided,
       * along with options to control the behavior of the subscription.
@@ -28,6 +30,4 @@ object pulumiAwsDynamodbTableAugmentingMod extends js.Object {
       opts: ComponentResourceOptions
     ): typings.pulumiAws.dynamodbMixinsMod.TableEventSubscription = js.native
   }
-  
 }
-

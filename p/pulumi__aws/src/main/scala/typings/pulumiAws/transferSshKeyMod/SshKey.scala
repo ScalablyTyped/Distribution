@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/transfer/sshKey", "SshKey")
 @js.native
@@ -21,24 +21,27 @@ class SshKey protected () extends CustomResource {
     */
   def this(name: String, args: SshKeyArgs) = this()
   def this(name: String, args: SshKeyArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The public key portion of an SSH key pair.
     */
   val body: Output_[String] = js.native
+  
   /**
     * The Server ID of the Transfer Server (e.g. `s-12345678`)
     */
   val serverId: Output_[String] = js.native
+  
   /**
     * The name of the user account that is assigned to one or more servers.
     */
   val userName: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/transfer/sshKey", "SshKey")
 @js.native
 object SshKey extends js.Object {
+  
   /**
     * Get an existing SshKey resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -52,10 +55,10 @@ object SshKey extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SshKey = js.native
   def get(name: String, id: Input[ID], state: SshKeyState): SshKey = js.native
   def get(name: String, id: Input[ID], state: SshKeyState, opts: CustomResourceOptions): SshKey = js.native
+  
   /**
     * Returns true if the given object is an instance of SshKey.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/sshKey.SshKey */ Boolean = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.srcset.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("srcset", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Parse the HTML `<img>` [srcset](http://mobile.smashingmagazine.com/2013/08/21/webkit-implements-srcset-and-why-its-a-good-thing/) attribute.
   	@param srcset - A srcset string.
@@ -27,6 +28,7 @@ object ^ extends js.Object {
   	```
   	*/
   def parse(srcset: String): js.Array[SrcSetDefinition] = js.native
+  
   /**
   	Stringify `SrcSetDefinition`s.
   	@returns A srcset string.
@@ -54,4 +56,3 @@ object ^ extends js.Object {
   	*/
   def stringify(srcSetDefinitions: js.Array[SrcSetDefinition]): String = js.native
 }
-

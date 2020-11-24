@@ -5,12 +5,11 @@ import typings.nodePgMigrate.tablesTypesMod.ConstraintOptions
 import typings.nodePgMigrate.tablesTypesMod.CreateConstraintFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ReverseCreateConstraintFn extends js.Object {
-  @JSName("reverse")
-  var reverse_Original: CreateConstraintFn = js.native
+  
   def reverse(
     tableName: typings.nodePgMigrate.generalTypesMod.Name,
     constraintName: String,
@@ -21,5 +20,6 @@ trait ReverseCreateConstraintFn extends js.Object {
     constraintName: Null,
     expression: (String | ConstraintOptions) with DropOptions
   ): String | js.Array[String] = js.native
+  @JSName("reverse")
+  var reverse_Original: CreateConstraintFn = js.native
 }
-

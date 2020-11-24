@@ -2,11 +2,12 @@ package typings.weappApi.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("weapp-api", "setTimeout")
 @js.native
 object setTimeout extends js.Object {
+  
   // 定时器
   /**
     * 设定一个定时器。在定时到期以后执行注册的回调函数
@@ -17,4 +18,3 @@ object setTimeout extends js.Object {
   def apply(callback: js.Any, delay: Double): Double = js.native
   def apply(callback: js.Any, delay: Double, rest: js.Any): Double = js.native
 }
-

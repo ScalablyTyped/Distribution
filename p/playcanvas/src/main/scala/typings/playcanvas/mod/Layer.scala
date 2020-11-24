@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new layer.
@@ -64,7 +64,7 @@ import scala.scalajs.js.annotation._
   * Useful, for example, if you want to modify camera projection while still using the same camera and make frustum culling work correctly with it
   * (see {@link pc.CameraComponent#calculateTransform} and {@link pc.CameraComponent#calculateProjection}).
   * This function will receive camera index as the only argument. You can get the actual camera being used by looking up {@link pc.LayerComposition#cameras} with this index.
-  * @property onPostCull - Custom function that is called after visibiliy culling is performed for this layer.
+  * @property onPostCull - Custom function that is called after visibility culling is performed for this layer.
   * Useful for reverting changes done in {@link pc.Layer#onPreCull} and determining final mesh instance visibility (see {@link pc.MeshInstance#visibleThisFrame}).
   * This function will receive camera index as the only argument. You can get the actual camera being used by looking up {@link pc.LayerComposition#cameras} with this index.
   * @property onPreRender - Custom function that is called before this layer is rendered.
@@ -96,4 +96,3 @@ class Layer protected ()
   extends typings.playcanvas.pc.Layer {
   def this(options: js.Any) = this()
 }
-

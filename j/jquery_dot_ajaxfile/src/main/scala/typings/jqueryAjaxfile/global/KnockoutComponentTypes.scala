@@ -2,7 +2,7 @@ package typings.jqueryAjaxfile.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 // refactored types into a namespace to reduce global pollution 
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("KnockoutComponentTypes")
 @js.native
 object KnockoutComponentTypes extends js.Object
-

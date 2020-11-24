@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,16 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassDbConnection extends ClassObject {
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询当前连接数据库类型
-    * 
-    * @readonly
-    * @type String
-    */
-  var `type`: String = js.native
+  
   /**
     * 
     * @brief 在当前数据库连接上启动一个事务
@@ -28,6 +19,7 @@ trait ClassDbConnection extends ClassObject {
     * @async
     */
   def begin(): Unit = js.native
+  
   /**
     * 
     * @brief 关闭当前数据库连接
@@ -35,6 +27,7 @@ trait ClassDbConnection extends ClassObject {
     * @async
     */
   def close(): Unit = js.native
+  
   /**
     * 
     * @brief 提交当前数据库连接上的事务
@@ -42,6 +35,7 @@ trait ClassDbConnection extends ClassObject {
     * @async
     */
   def commit(): Unit = js.native
+  
   /**
     * 
     * @brief 执行一个 sql 命令，并返回执行结果，可根据参数格式化字符串
@@ -54,6 +48,7 @@ trait ClassDbConnection extends ClassObject {
     * @async
     */
   def execute(sql: String, args: js.Any*): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 格式化一个 sql 命令，并返回格式化结果
@@ -66,6 +61,7 @@ trait ClassDbConnection extends ClassObject {
     * 
     */
   def format(sql: String, args: js.Any*): String = js.native
+  
   /**
     * 
     * @brief 回滚当前数据库连接上的事务
@@ -73,6 +69,7 @@ trait ClassDbConnection extends ClassObject {
     * @async
     */
   def rollback(): Unit = js.native
+  
   /**
     * 
     * @brief 进入事务执行一个函数，并根据函数执行情况提交或者回滚
@@ -88,5 +85,15 @@ trait ClassDbConnection extends ClassObject {
     * 
     */
   def trans(func: js.Function): Boolean = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询当前连接数据库类型
+    * 
+    * @readonly
+    * @type String
+    */
+  var `type`: String = js.native
 }
-

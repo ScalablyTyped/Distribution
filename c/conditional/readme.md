@@ -11,8 +11,8 @@ A preconditions package based on Google's Preconditions library
 | Full name          | conditional |
 | Keywords           | coffee-script, grunt, preconditions, conditional, coverage, browser, bower |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 38776 |
+| # dependents       | 3 |
+| # downloads        | 22966 |
 | # stars            | 0 |
 
 ## Links

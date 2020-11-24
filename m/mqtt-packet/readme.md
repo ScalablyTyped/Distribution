@@ -1,7 +1,7 @@
 
 # Scala.js typings for mqtt-packet
 
-Typings are for version 6.3.2
+Typings are for version 6.6.0
 
 ## Library description:
 Parse and generate MQTT packets like a breeze
@@ -10,9 +10,9 @@ Parse and generate MQTT packets like a breeze
 | ------------------ | :-------------: |
 | Full name          | mqtt-packet |
 | Keywords           | MQTT, packet, parse, publish, subscribe, pubsub |
-| # releases         | 14 |
-| # dependents       | 26 |
-| # downloads        | 6075055 |
+| # releases         | 13 |
+| # dependents       | 29 |
+| # downloads        | 8822608 |
 | # stars            | 1 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.pixiJs.PIXI
 import typings.pixiJs.PIXI.utils.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A texture stores the information that represents an image or part of an image.
@@ -37,6 +37,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Texture extends EventEmitter {
+  
   /**
     * This is the area of the BaseTexture image to actually copy to the Canvas / WebGL when rendering,
     * irrespective of the actual frame size or placement (which can be influenced by trimmed texture atlases)
@@ -44,6 +45,7 @@ trait Texture extends EventEmitter {
     * @member {PIXI.Rectangle} PIXI.Texture#_frame
     */
   var _frame: Rectangle = js.native
+  
   /**
     * Update ID is observed by sprites and TextureMatrix instances.
     * Call updateUvs() to increment it.
@@ -52,6 +54,7 @@ trait Texture extends EventEmitter {
     * @protected
     */
   var _updateID: Double = js.native
+  
   /**
     * The WebGL UV data cache. Can be used as quad UV
     *
@@ -59,12 +62,19 @@ trait Texture extends EventEmitter {
     * @protected
     */
   var _uvs: TextureUvs = js.native
+  
   /**
     * The base texture that this texture uses.
     *
     * @member {PIXI.BaseTexture} PIXI.Texture#baseTexture
     */
   var baseTexture: BaseTexture = js.native
+  
+  /**
+    * Utility function for BaseTexture|Texture cast
+    */
+  def castToBaseTexture(): Unit = js.native
+  
   /**
     * Anchor point that is used as default if sprite is created with this texture.
     * Changing the `defaultAnchor` at a later point of time will not update Sprite's anchor point.
@@ -72,6 +82,15 @@ trait Texture extends EventEmitter {
     * @default {0,0}
     */
   var defaultAnchor: Point = js.native
+  
+  /**
+    * Destroys this texture
+    *
+    * @param {boolean} [destroyBase=false] - Whether to destroy the base texture as well
+    */
+  def destroy(): Unit = js.native
+  def destroy(destroyBase: Boolean): Unit = js.native
+  
   /**
     * The frame specifies the region of the base texture that this texture uses.
     * Please call `updateUvs()` after you change coordinates of `frame` manually.
@@ -79,12 +98,14 @@ trait Texture extends EventEmitter {
     * @member {PIXI.Rectangle}
     */
   var frame: Rectangle = js.native
+  
   /**
     * The height of the Texture in pixels.
     *
     * @member {number}
     */
   var height: Double = js.native
+  
   /**
     * Does this Texture have any frame data assigned to it?
     *
@@ -104,12 +125,22 @@ trait Texture extends EventEmitter {
     * @member {boolean} PIXI.Texture#noFrame
     */
   var noFrame: Boolean = js.native
+  
+  /**
+    * Called when the base texture is updated
+    *
+    * @protected
+    * @param {PIXI.BaseTexture} baseTexture - The base texture.
+    */
+  /* protected */ def onBaseTextureUpdated(baseTexture: BaseTexture): Unit = js.native
+  
   /**
     * This is the area of original texture, before it was put in atlas
     *
     * @member {PIXI.Rectangle} PIXI.Texture#orig
     */
   var orig: Rectangle = js.native
+  
   /**
     * Returns resolution of baseTexture
     *
@@ -117,6 +148,7 @@ trait Texture extends EventEmitter {
     * @readonly
     */
   val resolution: Double = js.native
+  
   /**
     * Indicates whether the texture is rotated inside the atlas
     * set to 2 to compensate for texture packer rotation
@@ -127,6 +159,7 @@ trait Texture extends EventEmitter {
     * @member {number}
     */
   var rotate: Double = js.native
+  
   /**
     * The ids under which this Texture has been added to the texture cache. This is
     * automatically set as long as Texture.addToCache is used, but may not be set if a
@@ -135,6 +168,7 @@ trait Texture extends EventEmitter {
     * @member {string[]} PIXI.Texture#textureCacheIds
     */
   var textureCacheIds: js.Array[String] = js.native
+  
   /**
     * This is the trimmed area of original texture, before it was put in atlas
     * Please call `updateUvs()` after you change coordinates of `trim` manually.
@@ -142,43 +176,7 @@ trait Texture extends EventEmitter {
     * @member {PIXI.Rectangle} PIXI.Texture#trim
     */
   var trim: Rectangle = js.native
-  /**
-    * Default TextureMatrix instance for this texture
-    * By default that object is not created because its heavy
-    *
-    * @member {PIXI.TextureMatrix} PIXI.Texture#uvMatrix
-    */
-  var uvMatrix: TextureMatrix = js.native
-  /**
-    * This will let the renderer know if the texture is valid. If it's not then it cannot be rendered.
-    *
-    * @member {boolean} PIXI.Texture#valid
-    */
-  var valid: Boolean = js.native
-  /**
-    * The width of the Texture in pixels.
-    *
-    * @member {number}
-    */
-  var width: Double = js.native
-  /**
-    * Utility function for BaseTexture|Texture cast
-    */
-  def castToBaseTexture(): Unit = js.native
-  /**
-    * Destroys this texture
-    *
-    * @param {boolean} [destroyBase=false] - Whether to destroy the base texture as well
-    */
-  def destroy(): Unit = js.native
-  def destroy(destroyBase: Boolean): Unit = js.native
-  /**
-    * Called when the base texture is updated
-    *
-    * @protected
-    * @param {PIXI.BaseTexture} baseTexture - The base texture.
-    */
-  /* protected */ def onBaseTextureUpdated(baseTexture: BaseTexture): Unit = js.native
+  
   /**
     * Updates this texture on the gpu.
     *
@@ -188,10 +186,32 @@ trait Texture extends EventEmitter {
     *
     */
   def update(): Unit = js.native
+  
   /**
     * Updates the internal WebGL UV cache. Use it after you change `frame` or `trim` of the texture.
     * Call it after changing the frame
     */
   def updateUvs(): Unit = js.native
+  
+  /**
+    * Default TextureMatrix instance for this texture
+    * By default that object is not created because its heavy
+    *
+    * @member {PIXI.TextureMatrix} PIXI.Texture#uvMatrix
+    */
+  var uvMatrix: TextureMatrix = js.native
+  
+  /**
+    * This will let the renderer know if the texture is valid. If it's not then it cannot be rendered.
+    *
+    * @member {boolean} PIXI.Texture#valid
+    */
+  var valid: Boolean = js.native
+  
+  /**
+    * The width of the Texture in pixels.
+    *
+    * @member {number}
+    */
+  var width: Double = js.native
 }
-

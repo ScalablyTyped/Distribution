@@ -5,7 +5,7 @@ import typings.jsrsasign.anon.Ext
 import typings.jsrsasign.jsrsasign.KJUR.asn1.csr.PEMInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * kjur's ASN.1 class for CSR/PKCS#10 name space
@@ -31,56 +31,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jsrsasign", "KJUR.asn1.csr")
 @js.native
 object csr extends js.Object {
-  /**
-    * ASN.1 CertificationRequest structure class
-    * @param params associative array of parameters (ex. {})
-    * @example
-    * csri = new KJUR.asn1.csr.CertificationRequestInfo();
-    * csri.setSubjectByParam({'str': '/C=US/O=Test/CN=example.com'});
-    * csri.setSubjectPublicKeyByGetKey(pubKeyObj);
-    * csr = new KJUR.asn1.csr.CertificationRequest({'csrinfo': csri});
-    * csr.sign("SHA256withRSA", prvKeyObj);
-    * pem = csr.getPEMString();
-    *
-    * // -- DEFINITION OF ASN.1 SYNTAX --
-    * // CertificationRequest ::= SEQUENCE {
-    * //   certificationRequestInfo CertificationRequestInfo,
-    * //   signatureAlgorithm       AlgorithmIdentifier{{ SignatureAlgorithms }},
-    * //   signature                BIT STRING }
-    * //
-    * // CertificationRequestInfo ::= SEQUENCE {
-    * //   version       INTEGER { v1(0) } (v1,...),
-    * //   subject       Name,
-    * //   subjectPKInfo SubjectPublicKeyInfo{{ PKInfoAlgorithms }},
-    * //   attributes    [0] Attributes{{ CRIAttributes }} }
-    */
-  @js.native
-  class CertificationRequest ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequest {
-    def this(params: Csrinfo) = this()
-  }
-  
-  /**
-    * ASN.1 CertificationRequestInfo structure class
-    * @param params associative array of parameters (ex. {})
-    * @description
-    * ```
-    * // -- DEFINITION OF ASN.1 SYNTAX --
-    * // CertificationRequestInfo ::= SEQUENCE {
-    * //   version       INTEGER { v1(0) } (v1,...),
-    * //   subject       Name,
-    * //   subjectPKInfo SubjectPublicKeyInfo{{ PKInfoAlgorithms }},
-    * //   attributes    [0] Attributes{{ CRIAttributes }} }
-    * ```
-    *
-    * @example
-    * csri = new KJUR.asn1.csr.CertificationRequestInfo();
-    * csri.setSubjectByParam({'str': '/C=US/O=Test/CN=example.com'});
-    * csri.setSubjectPublicKeyByGetKey(pubKeyObj);
-    */
-  @js.native
-  class CertificationRequestInfo ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequestInfo
   
   /**
     * Certification Request (CSR/PKCS#10) utilities class
@@ -93,6 +43,7 @@ object csr extends js.Object {
     */
   @js.native
   object CSRUtil extends js.Object {
+    
     /**
       * get field values from CSR/PKCS#10 PEM string
       * @param sPEM PEM string of CSR/PKCS#10
@@ -113,6 +64,7 @@ object csr extends js.Object {
       * console.log(o.subject.name) → "/C=US/O=Test"
       */
     def getInfo(sPEM: String): PEMInfo = js.native
+    
     /**
       * generate a PEM format of CSR/PKCS#10 certificate signing request
       * @param param parameter to generate CSR
@@ -167,5 +119,54 @@ object csr extends js.Object {
     def newCSRPEM(param: Ext): String = js.native
   }
   
+  /**
+    * ASN.1 CertificationRequest structure class
+    * @param params associative array of parameters (ex. {})
+    * @example
+    * csri = new KJUR.asn1.csr.CertificationRequestInfo();
+    * csri.setSubjectByParam({'str': '/C=US/O=Test/CN=example.com'});
+    * csri.setSubjectPublicKeyByGetKey(pubKeyObj);
+    * csr = new KJUR.asn1.csr.CertificationRequest({'csrinfo': csri});
+    * csr.sign("SHA256withRSA", prvKeyObj);
+    * pem = csr.getPEMString();
+    *
+    * // -- DEFINITION OF ASN.1 SYNTAX --
+    * // CertificationRequest ::= SEQUENCE {
+    * //   certificationRequestInfo CertificationRequestInfo,
+    * //   signatureAlgorithm       AlgorithmIdentifier{{ SignatureAlgorithms }},
+    * //   signature                BIT STRING }
+    * //
+    * // CertificationRequestInfo ::= SEQUENCE {
+    * //   version       INTEGER { v1(0) } (v1,...),
+    * //   subject       Name,
+    * //   subjectPKInfo SubjectPublicKeyInfo{{ PKInfoAlgorithms }},
+    * //   attributes    [0] Attributes{{ CRIAttributes }} }
+    */
+  @js.native
+  class CertificationRequest ()
+    extends typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequest {
+    def this(params: Csrinfo) = this()
+  }
+  
+  /**
+    * ASN.1 CertificationRequestInfo structure class
+    * @param params associative array of parameters (ex. {})
+    * @description
+    * ```
+    * // -- DEFINITION OF ASN.1 SYNTAX --
+    * // CertificationRequestInfo ::= SEQUENCE {
+    * //   version       INTEGER { v1(0) } (v1,...),
+    * //   subject       Name,
+    * //   subjectPKInfo SubjectPublicKeyInfo{{ PKInfoAlgorithms }},
+    * //   attributes    [0] Attributes{{ CRIAttributes }} }
+    * ```
+    *
+    * @example
+    * csri = new KJUR.asn1.csr.CertificationRequestInfo();
+    * csri.setSubjectByParam({'str': '/C=US/O=Test/CN=example.com'});
+    * csri.setSubjectPublicKeyByGetKey(pubKeyObj);
+    */
+  @js.native
+  class CertificationRequestInfo ()
+    extends typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequestInfo
 }
-

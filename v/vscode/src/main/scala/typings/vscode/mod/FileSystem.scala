@@ -6,10 +6,11 @@ import typings.vscode.anon.UseTrash
 import typings.vscode.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FileSystem extends js.Object {
+  
   /**
     * Copy files or folders.
     *
@@ -19,6 +20,7 @@ trait FileSystem extends js.Object {
     */
   def copy(source: Uri, target: Uri): Thenable[Unit] = js.native
   def copy(source: Uri, target: Uri, options: `0`): Thenable[Unit] = js.native
+  
   /**
     * Create a new directory (Note, that new files are created via `write`-calls).
     *
@@ -28,6 +30,7 @@ trait FileSystem extends js.Object {
     * @param uri The uri of the new folder.
     */
   def createDirectory(uri: Uri): Thenable[Unit] = js.native
+  
   /**
     * Delete a file.
     *
@@ -36,6 +39,7 @@ trait FileSystem extends js.Object {
     */
   def delete(uri: Uri): Thenable[Unit] = js.native
   def delete(uri: Uri, options: UseTrash): Thenable[Unit] = js.native
+  
   /**
     * Retrieve all entries of a [directory](#FileType.Directory).
     *
@@ -43,6 +47,7 @@ trait FileSystem extends js.Object {
     * @return An array of name/type-tuples or a thenable that resolves to such.
     */
   def readDirectory(uri: Uri): Thenable[js.Array[js.Tuple2[String, FileType]]] = js.native
+  
   /**
     * Read the entire contents of a file.
     *
@@ -50,6 +55,7 @@ trait FileSystem extends js.Object {
     * @return An array of bytes or a thenable that resolves to such.
     */
   def readFile(uri: Uri): Thenable[Uint8Array] = js.native
+  
   /**
     * Rename a file or folder.
     *
@@ -59,6 +65,7 @@ trait FileSystem extends js.Object {
     */
   def rename(source: Uri, target: Uri): Thenable[Unit] = js.native
   def rename(source: Uri, target: Uri, options: `0`): Thenable[Unit] = js.native
+  
   /**
     * Retrieve metadata about a file.
     *
@@ -66,6 +73,7 @@ trait FileSystem extends js.Object {
     * @return The file metadata about the file.
     */
   def stat(uri: Uri): Thenable[FileStat] = js.native
+  
   /**
     * Write data to a file, replacing its entire contents.
     *
@@ -74,4 +82,3 @@ trait FileSystem extends js.Object {
     */
   def writeFile(uri: Uri, content: Uint8Array): Thenable[Unit] = js.native
 }
-

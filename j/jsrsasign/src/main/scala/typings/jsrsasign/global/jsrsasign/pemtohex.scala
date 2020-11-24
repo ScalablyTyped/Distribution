@@ -2,11 +2,12 @@ package typings.jsrsasign.global.jsrsasign
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsrsasign.pemtohex")
 @js.native
 object pemtohex extends js.Object {
+  
   /**
     * get hexadecimal string from PEM format data
     * @param s PEM formatted string
@@ -29,4 +30,3 @@ object pemtohex extends js.Object {
   def apply(s: String): String = js.native
   def apply(s: String, sHead: String): String = js.native
 }
-

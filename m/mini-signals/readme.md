@@ -12,7 +12,7 @@ signals, in JavaScript, fast
 | Keywords           | events, signals, fast |
 | # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 913727 |
+| # downloads        | 1325256 |
 | # stars            | 1 |
 
 ## Links

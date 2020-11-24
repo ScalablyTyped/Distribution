@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@material/tooltip" : "8.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@material/tooltip" : "8.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

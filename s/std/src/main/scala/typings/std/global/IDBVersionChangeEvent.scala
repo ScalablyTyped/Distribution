@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.IDBVersionChangeEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("IDBVersionChangeEvent")
 @js.native
@@ -14,7 +14,6 @@ class IDBVersionChangeEvent protected ()
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, eventInitDict: IDBVersionChangeEventInit) = this()
 }
-
 @JSGlobal("IDBVersionChangeEvent")
 @js.native
 object IDBVersionChangeEvent
@@ -24,4 +23,3 @@ object IDBVersionChangeEvent
       /* eventInitDict */ IDBVersionChangeEventInit, 
       typings.std.IDBVersionChangeEvent
     ]
-

@@ -12,7 +12,7 @@ Gets all focusable descendant elements for the first element in the set of match
 | Keywords           | jquery-plugin, ecosystem:jquery, ebay, accessibility, a11y |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 10380 |
+| # downloads        | 6693 |
 | # stars            | 0 |
 
 ## Links

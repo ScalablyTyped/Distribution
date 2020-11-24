@@ -10,14 +10,14 @@ A base component used to build inline-editable components that match the Atlassi
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/inline-edit |
 | Keywords           | atlaskit, react, ui |
-| # releases         | 83 |
+| # releases         | 55 |
 | # dependents       | 1 |
-| # downloads        | 161320 |
+| # downloads        | 275735 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://bitbucket.org/atlassian/atlaskit-mk-2#readme)
-- [Repository](https://bitbucket.org/atlassian/atlaskit-mk-2)
+- [Homepage](https://bitbucket.org/atlassian/atlassian-frontend#readme)
+- [Repository](https://bitbucket.org/atlassian/atlassian-frontend)
 - [Npm](https://www.npmjs.com/package/%40atlaskit%2Finline-edit)
     
 

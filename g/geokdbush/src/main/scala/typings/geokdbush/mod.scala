@@ -3,11 +3,12 @@ package typings.geokdbush
 import typings.kdbush.mod.KDBush
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("geokdbush", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def around[T](index: KDBush[T], longitude: Double, latitude: Double): js.Array[T] = js.native
   def around[T](
     index: KDBush[T],
@@ -50,6 +51,6 @@ object mod extends js.Object {
     maxDistance: Double,
     filterFn: js.Any
   ): js.Array[T] = js.native
+  
   def distance(longitude1: Double, latitude1: Double, longitude2: Double, latitude2: Double): Double = js.native
 }
-

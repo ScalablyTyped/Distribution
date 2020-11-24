@@ -2,11 +2,12 @@ package typings.agGrid.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ag-grid", "defaultGroupComparator")
 @js.native
 object defaultGroupComparator extends js.Object {
+  
   def apply(
     valueA: js.Any,
     valueB: js.Any,
@@ -21,4 +22,3 @@ object defaultGroupComparator extends js.Object {
     accentedCompare: Boolean
   ): Double = js.native
 }
-

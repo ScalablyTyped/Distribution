@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/iam/accessKey", "AccessKey")
 @js.native
@@ -21,22 +21,22 @@ class AccessKey protected () extends CustomResource {
     */
   def this(name: String, args: AccessKeyArgs) = this()
   def this(name: String, args: AccessKeyArgs, opts: CustomResourceOptions) = this()
-  /**
-    * The encrypted secret, base64 encoded, if `pgpKey` was specified.
-    * > **NOTE:** The encrypted secret may be decrypted using the command line,
-    */
+  
   val encryptedSecret: Output_[String] = js.native
+  
   /**
     * The fingerprint of the PGP key used to encrypt
     * the secret
     */
   val keyFingerprint: Output_[String] = js.native
+  
   /**
     * Either a base-64 encoded PGP public key, or a
     * keybase username in the form `keybase:some_person_that_exists`, for use
     * in the `encryptedSecret` output attribute.
     */
   val pgpKey: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The secret access key. Note that this will be written
     * to the state file. If you use this, please protect your backend state file
@@ -45,14 +45,7 @@ class AccessKey protected () extends CustomResource {
     * the use of the secret key in automation.
     */
   val secret: Output_[String] = js.native
-  /**
-    * **DEPRECATED** The secret access key converted into an SES SMTP
-    * password by applying [AWS's documented conversion
-    *
-    * @deprecated AWS SigV2 for SES SMTP passwords isy deprecated.
-  Use 'ses_smtp_password_v4' for region-specific AWS SigV4 signed SES SMTP password instead.
-    */
-  val sesSmtpPassword: Output_[String] = js.native
+  
   /**
     * The secret access key converted into an SES SMTP
     * password by applying [AWS's documented Sigv4 conversion
@@ -60,21 +53,23 @@ class AccessKey protected () extends CustomResource {
     * As SigV4 is region specific, valid Provider regions are `ap-south-1`, `ap-southeast-2`, `eu-central-1`, `eu-west-1`, `us-east-1` and `us-west-2`. See current [AWS SES regions](https://docs.aws.amazon.com/general/latest/gr/rande.html#ses_region)
     */
   val sesSmtpPasswordV4: Output_[String] = js.native
+  
   /**
     * The access key status to apply. Defaults to `Active`.
     * Valid values are `Active` and `Inactive`.
     */
   val status: Output_[String] = js.native
+  
   /**
     * The IAM user to associate with this access key.
     */
   val user: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/iam/accessKey", "AccessKey")
 @js.native
 object AccessKey extends js.Object {
+  
   /**
     * Get an existing AccessKey resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -88,10 +83,10 @@ object AccessKey extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AccessKey = js.native
   def get(name: String, id: Input[ID], state: AccessKeyState): AccessKey = js.native
   def get(name: String, id: Input[ID], state: AccessKeyState, opts: CustomResourceOptions): AccessKey = js.native
+  
   /**
     * Returns true if the given object is an instance of AccessKey.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accessKey.AccessKey */ Boolean = js.native
 }
-

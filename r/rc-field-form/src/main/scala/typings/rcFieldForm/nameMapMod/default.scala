@@ -2,7 +2,7 @@ package typings.rcFieldForm.nameMapMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NameMap like a `Map` but accepts `string[]` as key.
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 @JSImport("rc-field-form/es/utils/NameMap", JSImport.Default)
 @js.native
 class default[T] () extends NameMap[T]
-

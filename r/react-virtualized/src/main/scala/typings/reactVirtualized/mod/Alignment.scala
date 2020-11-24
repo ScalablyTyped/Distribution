@@ -2,7 +2,7 @@ package typings.reactVirtualized.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactVirtualized.reactVirtualizedStrings.auto
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.reactVirtualized.reactVirtualizedStrings.center
 */
 trait Alignment extends js.Object
-
 object Alignment {
+  
   @scala.inline
   def auto: typings.reactVirtualized.reactVirtualizedStrings.auto = "auto".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.auto]
+  
   @scala.inline
   def center: typings.reactVirtualized.reactVirtualizedStrings.center = "center".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.center]
+  
   @scala.inline
   def end: typings.reactVirtualized.reactVirtualizedStrings.end = "end".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.end]
+  
   @scala.inline
   def start: typings.reactVirtualized.reactVirtualizedStrings.start = "start".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.start]
 }
-

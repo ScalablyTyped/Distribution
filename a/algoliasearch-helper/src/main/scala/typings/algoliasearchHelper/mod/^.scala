@@ -2,11 +2,12 @@ package typings.algoliasearchHelper.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("algoliasearch-helper", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * The algoliasearchHelper module is the function that will let its
     * contains everything needed to use the Algoliasearch
@@ -19,4 +20,3 @@ object ^ extends js.Object {
   def apply(client: SearchClient, index: String): AlgoliaSearchHelper = js.native
   def apply(client: SearchClient, index: String, opts: PlainSearchParameters): AlgoliaSearchHelper = js.native
 }
-

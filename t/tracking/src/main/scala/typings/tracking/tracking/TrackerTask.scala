@@ -2,7 +2,7 @@ package typings.tracking.tracking
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TrackerTask utility.
@@ -11,19 +11,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TrackerTask extends EventEmitter {
+  
   /**
     * Gets the tracker instance managed by this task.
     */
   def getTracker(): Tracker = js.native
+  
   /**
     * Emits a `run` event on the tracker task for the implementers to run any
     * child action, e.g. `requestAnimationFrame`.
     */
   def run(): this.type = js.native
+  
   /**
     * Emits a `stop` event on the tracker task for the implementers to stop any
     * child action being done, e.g. `requestAnimationFrame`.
     */
   def stop(): this.type = js.native
 }
-

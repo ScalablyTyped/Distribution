@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Metadata$Dimensions")
 @js.native
 class ResourceMetadataDimensions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adsense.metadata.dimensions.list
     * @desc List the metadata for the dimensions available to this AdSense
@@ -42,4 +44,3 @@ class ResourceMetadataDimensions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaMetadata]
   ): Unit = js.native
 }
-

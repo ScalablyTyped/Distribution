@@ -5,13 +5,13 @@ import typings.ckeditor.CKEDITOR.dom.range
 import typings.ckeditor.CKEDITOR.dom.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait editable extends element {
-  var hasFocus: Boolean = js.native
-  val status: String = js.native
+  
   def attachClass(className: String): Unit = js.native
+  
   def attachListener(obj: editable, eventName: String, listenerFunction: js.Function1[/* ei */ eventInfo, Unit]): listenerRegistration = js.native
   def attachListener(
     obj: editable,
@@ -118,16 +118,26 @@ trait editable extends element {
     listenerData: js.Any,
     priority: Double
   ): listenerRegistration = js.native
+  
   def changeAttr(attr: String, `val`: String): Unit = js.native
+  
   def detach(): Unit = js.native
+  
+  var hasFocus: Boolean = js.native
+  
   def insertElement(element: element): Unit = js.native
   def insertElement(element: element, range: range): Unit = js.native
+  
   def insertHtml(data: String): Unit = js.native
   def insertHtml(data: String, mode: js.UndefOr[scala.Nothing], range: range): Unit = js.native
   def insertHtml(data: String, mode: String): Unit = js.native
   def insertHtml(data: String, mode: String, range: range): Unit = js.native
+  
   def insertText(text: text): Unit = js.native
+  
   def isInline(): Boolean = js.native
+  
   def setReadOnly(isReadOnly: Boolean): Unit = js.native
+  
+  val status: String = js.native
 }
-

@@ -10,9 +10,9 @@ Run async tasks with dependencies
 | ------------------ | :-------------: |
 | Full name          | task-graph-runner |
 | Keywords           | graph, adjacency, list, tasks, priority, priorities, sort, dependencies, topological, topo, sequencer, task, runner |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 186690 |
+| # downloads        | 386649 |
 | # stars            | 0 |
 
 ## Links

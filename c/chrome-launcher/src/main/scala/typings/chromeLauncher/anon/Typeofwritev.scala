@@ -2,13 +2,13 @@ package typings.chromeLauncher.anon
 
 import typings.node.NodeJS.ArrayBufferView
 import typings.node.NodeJS.ErrnoException
-import typings.node.fsMod.WriteVResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Typeofwritev extends js.Object {
+  
   def apply(
     fd: Double,
     buffers: js.Array[ArrayBufferView],
@@ -30,7 +30,4 @@ trait Typeofwritev extends js.Object {
       Unit
     ]
   ): Unit = js.native
-  def __promisify__(fd: Double, buffers: js.Array[ArrayBufferView]): js.Promise[WriteVResult] = js.native
-  def __promisify__(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): js.Promise[WriteVResult] = js.native
 }
-

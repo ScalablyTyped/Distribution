@@ -2,7 +2,7 @@ package typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Cardinality condition for the Waiter resource. A cardinality condition is
@@ -18,43 +18,51 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaCardinality extends js.Object {
+  
   /**
     * The number variables under the `path` that must exist to meet this
     * condition. Defaults to 1 if not specified.
     */
   var number: js.UndefOr[Double] = js.native
+  
   /**
     * The root of the variable subtree to monitor. For example, `/foo`.
     */
   var path: js.UndefOr[String] = js.native
 }
-
 object SchemaCardinality {
+  
   @scala.inline
   def apply(): SchemaCardinality = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCardinality]
   }
+  
   @scala.inline
   implicit class SchemaCardinalityOps[Self <: SchemaCardinality] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNumber: Self = this.set("number", js.undefined)
+    
     @scala.inline
     def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePath: Self = this.set("path", js.undefined)
   }
-  
 }
-

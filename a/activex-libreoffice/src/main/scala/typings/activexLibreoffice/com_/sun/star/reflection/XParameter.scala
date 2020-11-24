@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Reflects a parameter of an interface method or a service constructor.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XParameter extends XMethodParameter {
+  
   /**
     * Returns whether this is a rest parameter.
     *
@@ -23,8 +24,8 @@ trait XParameter extends XMethodParameter {
     */
   def isRestParameter(): Boolean = js.native
 }
-
 object XParameter {
+  
   @scala.inline
   def apply(
     Name: String,
@@ -43,20 +44,23 @@ object XParameter {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getName = js.Any.fromFunction0(getName), getPosition = js.Any.fromFunction0(getPosition), getType = js.Any.fromFunction0(getType), isIn = js.Any.fromFunction0(isIn), isOut = js.Any.fromFunction0(isOut), isRestParameter = js.Any.fromFunction0(isRestParameter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XParameter]
   }
+  
   @scala.inline
   implicit class XParameterOps[Self <: XParameter] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setIsRestParameter(value: () => Boolean): Self = this.set("isRestParameter", js.Any.fromFunction0(value))
   }
-  
 }
-

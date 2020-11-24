@@ -5,12 +5,14 @@ import typings.vscodeLanguageserver.callHierarchyProposedMod.CallHierarchy
 import typings.vscodeLanguageserver.sematicTokensProposedMod.SemanticTokens
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver", "ProposedFeatures")
 @js.native
 object ProposedFeatures extends js.Object {
+  
   val SemanticTokensBuilder: Instantiable0[typings.vscodeLanguageserver.sematicTokensProposedMod.SemanticTokensBuilder] = js.native
+  
   val all: Features[
     _underscore, 
     _underscore, 
@@ -20,6 +22,6 @@ object ProposedFeatures extends js.Object {
     _underscore, 
     CallHierarchy with SemanticTokens
   ] = js.native
+  
   type SemanticTokensBuilder = typings.vscodeLanguageserver.sematicTokensProposedMod.SemanticTokensBuilder
 }
-

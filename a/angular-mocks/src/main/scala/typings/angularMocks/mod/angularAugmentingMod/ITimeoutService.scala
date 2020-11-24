@@ -2,7 +2,7 @@ package typings.angularMocks.mod.angularAugmentingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
 // TimeoutService
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 ///////////////////////////////////////////////////////////////////////////
 @js.native
 trait ITimeoutService extends js.Object {
+  
   /**
     * **Deprecated** since version 1.7.3. (Use `$flushPendingTasks` instead.)
     *
@@ -26,6 +27,7 @@ trait ITimeoutService extends js.Object {
     */
   def flush(): Unit = js.native
   def flush(delay: Double): Unit = js.native
+  
   /**
     * **Deprecated** since version 1.7.3. (Use `$verifyNoPendingTasks` instead.)
     *
@@ -45,4 +47,3 @@ trait ITimeoutService extends js.Object {
     */
   def verifyNoPendingTasks(): Unit = js.native
 }
-

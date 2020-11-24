@@ -2,7 +2,7 @@ package typings.ydnDb.global.ydn.db
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ydn.db.ValueIterator")
 @js.native
@@ -13,11 +13,11 @@ class ValueIterator protected ()
   def this(store_name: String, key_range: js.UndefOr[scala.Nothing], reverse: Boolean) = this()
   def this(store_name: String, key_range: js.Any, reverse: Boolean) = this()
 }
-
 /* static members */
 @JSGlobal("ydn.db.ValueIterator")
 @js.native
 object ValueIterator extends js.Object {
+  
   def where(
     store_name: String,
     op: typings.ydnDb.ydn.db.Op,
@@ -26,4 +26,3 @@ object ValueIterator extends js.Object {
     value2: js.Any
   ): js.Any = js.native
 }
-

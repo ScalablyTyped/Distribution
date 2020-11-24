@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudresourcemanager/v1beta1", "cloudresourcemanager_v1beta1.Resource$Projects")
 @js.native
 class ResourceProjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudresourcemanager.projects.create
     * @desc Creates a Project resource.  Initially, the Project resource is
@@ -105,6 +107,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProject]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.projects.delete
     * @desc Marks the Project identified by the specified `project_id` (for
@@ -194,6 +197,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.projects.get
     * @desc Retrieves the Project identified by the specified `project_id` (for
@@ -278,6 +282,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProject]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.projects.getAncestry
     * @desc Gets a list of ancestors in the resource hierarchy for the Project
@@ -368,6 +373,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetAncestryResponse]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.projects.getIamPolicy
     * @desc Returns the IAM access control policy for the specified Project.
@@ -456,6 +462,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.projects.list
     * @desc Lists Projects that are visible to the user and satisfy the
@@ -554,6 +561,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListProjectsResponse]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.projects.setIamPolicy
     * @desc Sets the IAM access control policy for the specified Project.
@@ -663,6 +671,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.projects.testIamPermissions
     * @desc Returns permissions that a caller has on the specified Project.
@@ -752,6 +761,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.projects.undelete
     * @desc Restores the Project identified by the specified `project_id` (for
@@ -840,6 +850,7 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * cloudresourcemanager.projects.update
     * @desc Updates the attributes of the Project identified by the specified
@@ -932,4 +943,3 @@ class ResourceProjects protected () extends js.Object {
     callback: BodyResponseCallback[SchemaProject]
   ): Unit = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.openlayers.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "coordinate")
 @js.native
 object coordinate extends js.Object {
+  
   /**
     * Add `delta` to `coordinate`. `coordinate` is modified in place and returned
     * by the function.
@@ -23,6 +24,7 @@ object coordinate extends js.Object {
     * @api stable
     */
   def add(coordinate: Coordinate_, delta: Coordinate_): Coordinate_ = js.native
+  
   /**
     * Returns a {@link ol.CoordinateFormatType} function that can be used to format
     * a {ol.Coordinate} to a string.
@@ -48,6 +50,7 @@ object coordinate extends js.Object {
     */
   def createStringXY(): CoordinateFormatType = js.native
   def createStringXY(opt_fractionDigits: Double): CoordinateFormatType = js.native
+  
   /**
     * Transforms the given {@link ol.Coordinate} to a string using the given string
     * template. The strings `{x}` and `{y}` in the template will be replaced with
@@ -77,6 +80,7 @@ object coordinate extends js.Object {
     */
   def format(coordinate: Coordinate_, template: String): String = js.native
   def format(coordinate: Coordinate_, template: String, opt_fractionDigits: Double): String = js.native
+  
   /**
     * Rotate `coordinate` by `angle`. `coordinate` is modified in place and
     * returned by the function.
@@ -94,6 +98,7 @@ object coordinate extends js.Object {
     * @api stable
     */
   def rotate(coordinate: Coordinate_, angle: Double): Coordinate_ = js.native
+  
   /**
     * Format a geographic coordinate with the hemisphere, degrees, minutes, and
     * seconds.
@@ -120,6 +125,7 @@ object coordinate extends js.Object {
   def toStringHDMS(coordinate: js.UndefOr[scala.Nothing], opt_fractionDigits: Double): String = js.native
   def toStringHDMS(coordinate: Coordinate_): String = js.native
   def toStringHDMS(coordinate: Coordinate_, opt_fractionDigits: Double): String = js.native
+  
   /**
     * Format a coordinate as a comma delimited string.
     *
@@ -146,4 +152,3 @@ object coordinate extends js.Object {
   def toStringXY(coordinate: Coordinate_): String = js.native
   def toStringXY(coordinate: Coordinate_, opt_fractionDigits: Double): String = js.native
 }
-

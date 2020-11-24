@@ -10,9 +10,9 @@ Enforces module path case sensitivity in Webpack
 | ------------------ | :-------------: |
 | Full name          | case-sensitive-paths-webpack-plugin |
 | Keywords           | webpack, plugin, case sensitive, import, require |
-| # releases         | 2 |
-| # dependents       | 3482 |
-| # downloads        | 139513695 |
+| # releases         | 3 |
+| # dependents       | 3910 |
+| # downloads        | 177707861 |
 | # stars            | 6 |
 
 ## Links

@@ -6,14 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/blogger/v2", "blogger_v2.Resource$Users")
 @js.native
 class ResourceUsers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var blogs: ResourceUsersBlogs = js.native
+  
   var context: APIRequestContext = js.native
+  
   /**
     * blogger.users.get
     * @desc Gets one user by id.
@@ -39,4 +42,3 @@ class ResourceUsers protected () extends js.Object {
   def get(params: ParamsResourceUsersGet, options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
   def get(params: ParamsResourceUsersGet, options: MethodOptions, callback: BodyResponseCallback[SchemaUser]): Unit = js.native
 }
-

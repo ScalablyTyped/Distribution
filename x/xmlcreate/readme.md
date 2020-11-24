@@ -10,9 +10,9 @@ Simple XML builder for Node.js
 | ------------------ | :-------------: |
 | Full name          | xmlcreate |
 | Keywords           | build, builder, create, creator, xml |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 21540840 |
+| # releases         | 5 |
+| # dependents       | 4 |
+| # downloads        | 31443579 |
 | # stars            | 1 |
 
 ## Links

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Regioninstancegroups")
 @js.native
 class ResourceRegioninstancegroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.regionInstanceGroups.get
     * @desc Returns the specified instance group resource.
@@ -43,6 +45,7 @@ class ResourceRegioninstancegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceGroup]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroups.list
     * @desc Retrieves the list of instance group resources contained within the
@@ -80,6 +83,7 @@ class ResourceRegioninstancegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRegionInstanceGroupList]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroups.listInstances
     * @desc Lists the instances in the specified instance group and displays
@@ -121,6 +125,7 @@ class ResourceRegioninstancegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRegionInstanceGroupsListInstances]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroups.setNamedPorts
     * @desc Sets the named ports for the specified regional instance group.
@@ -156,6 +161,7 @@ class ResourceRegioninstancegroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionInstanceGroups.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -191,4 +197,3 @@ class ResourceRegioninstancegroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

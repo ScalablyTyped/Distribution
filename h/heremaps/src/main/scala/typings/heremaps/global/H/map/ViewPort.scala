@@ -4,7 +4,7 @@ import typings.heremaps.H.map.ViewPort.Options
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ViewPort object holds information about the HTML element where the map is rendered. It contains information regarding the element (view port) size and triggers events when the element size
@@ -28,4 +28,3 @@ class ViewPort protected ()
   def this(element: Element) = this()
   def this(element: Element, opt_options: Options) = this()
 }
-

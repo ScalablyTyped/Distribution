@@ -2,10 +2,11 @@ package typings.cordovaSqliteStorage.SQLitePlugin
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Transaction extends js.Object {
+  
   def executeSql(statement: String): Unit = js.native
   def executeSql(
     statement: String,
@@ -35,4 +36,3 @@ trait Transaction extends js.Object {
     error: TransactionStatementErrorCallback
   ): Unit = js.native
 }
-

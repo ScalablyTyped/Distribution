@@ -3,7 +3,7 @@ package typings.rx.rxAggregatesMod
 import typings.rx.Rx.Comparer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.aggregates", "Recorded")
 @js.native
@@ -20,4 +20,3 @@ class RecordedCls protected ()
   def this(time: Double, value: js.Any) = this()
   def this(time: Double, value: js.Any, equalityComparer: Comparer[_, Boolean]) = this()
 }
-

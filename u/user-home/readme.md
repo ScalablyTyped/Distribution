@@ -11,8 +11,8 @@ Get the path to the user home directory
 | Full name          | user-home |
 | Keywords           | user, home, homedir, os-homedir, dir, directory, folder, path, env, vars, environment, variables, userprofile |
 | # releases         | 0 |
-| # dependents       | 786 |
-| # downloads        | 126706319 |
+| # dependents       | 850 |
+| # downloads        | 115563819 |
 | # stars            | 17 |
 
 ## Links

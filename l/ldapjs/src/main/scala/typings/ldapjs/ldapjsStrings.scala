@@ -2,9 +2,40 @@ package typings.ldapjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ldapjsStrings {
+  
+  @scala.inline
+  def LDAPResult: LDAPResult = "LDAPResult".asInstanceOf[LDAPResult]
+  
+  @scala.inline
+  def SearchEntry: SearchEntry = "SearchEntry".asInstanceOf[SearchEntry]
+  
+  @scala.inline
+  def base: base = "base".asInstanceOf[base]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def one: one = "one".asInstanceOf[one]
+  
+  @scala.inline
+  def page: page = "page".asInstanceOf[page]
+  
+  @scala.inline
+  def searchEntry_ : searchEntry_ = "searchEntry".asInstanceOf[searchEntry_]
+  
+  @scala.inline
+  def searchReference: searchReference = "searchReference".asInstanceOf[searchReference]
+  
+  @scala.inline
+  def sub: sub = "sub".asInstanceOf[sub]
+  
   @js.native
   sealed trait LDAPResult extends js.Object
   
@@ -34,26 +65,4 @@ object ldapjsStrings {
   
   @js.native
   sealed trait sub extends js.Object
-  
-  @scala.inline
-  def LDAPResult: LDAPResult = "LDAPResult".asInstanceOf[LDAPResult]
-  @scala.inline
-  def SearchEntry: SearchEntry = "SearchEntry".asInstanceOf[SearchEntry]
-  @scala.inline
-  def base: base = "base".asInstanceOf[base]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def one: one = "one".asInstanceOf[one]
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
-  @scala.inline
-  def searchEntry_ : searchEntry_ = "searchEntry".asInstanceOf[searchEntry_]
-  @scala.inline
-  def searchReference: searchReference = "searchReference".asInstanceOf[searchReference]
-  @scala.inline
-  def sub: sub = "sub".asInstanceOf[sub]
 }
-

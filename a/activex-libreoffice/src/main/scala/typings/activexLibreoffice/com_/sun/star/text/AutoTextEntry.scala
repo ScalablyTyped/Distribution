@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to a text block in a group of an {@link AutoTextContainer} .
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 trait AutoTextEntry
   extends XText
      with XAutoTextEntry
-
 object AutoTextEntry {
+  
   @scala.inline
   def apply(
     End: XTextRange,
@@ -41,4 +41,3 @@ object AutoTextEntry {
     __obj.asInstanceOf[AutoTextEntry]
   }
 }
-

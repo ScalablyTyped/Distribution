@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Sprite object is the base for all textured objects that are rendered to the screen
@@ -32,6 +32,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Sprite extends Container {
+  
   /**
     * Cached tint value so we can tell when the tint is changed.
     * Value is used for 2d CanvasRenderer.
@@ -41,6 +42,7 @@ trait Sprite extends Container {
     * @default 0xFFFFFF
     */
   var _cachedTint: Double = js.native
+  
   /**
     * The height of the sprite (this is initially set by the texture)
     *
@@ -48,6 +50,14 @@ trait Sprite extends Container {
     * @member {number} PIXI.Sprite#_height
     */
   var _height: Double = js.native
+  
+  /**
+    * When the texture is updated, this event will fire to update the scale and frame
+    *
+    * @protected
+    */
+  /* protected */ def _onTextureUpdate(): Unit = js.native
+  
   /**
     * The width of the sprite (this is initially set by the texture)
     *
@@ -55,15 +65,16 @@ trait Sprite extends Container {
     * @member {number} PIXI.Sprite#_width
     */
   var _width: Double = js.native
+  
   /**
-    * The anchor sets the origin point of the text. The default value is taken from the {@link PIXI.Texture|Texture}
+    * The anchor sets the origin point of the sprite. The default value is taken from the {@link PIXI.Texture|Texture}
     * and passed to the constructor.
     *
-    * The default is `(0,0)`, this means the text's origin is the top left.
+    * The default is `(0,0)`, this means the sprite's origin is the top left.
     *
-    * Setting the anchor to `(0.5,0.5)` means the text's origin is centered.
+    * Setting the anchor to `(0.5,0.5)` means the sprite's origin is centered.
     *
-    * Setting the anchor to `(1,1)` would mean the text's origin point will be the bottom right corner.
+    * Setting the anchor to `(1,1)` would mean the sprite's origin point will be the bottom right corner.
     *
     * If you pass only single parameter, it will set both x and y to the same value as shown in the example below.
     *
@@ -74,6 +85,7 @@ trait Sprite extends Container {
     * @member {PIXI.ObservablePoint}
     */
   var anchor: ObservablePoint = js.native
+  
   /**
     * The blend mode to be applied to the sprite. Apply a value of `PIXI.BLEND_MODES.NORMAL` to reset the blend mode.
     *
@@ -82,6 +94,26 @@ trait Sprite extends Container {
     * @see PIXI.BLEND_MODES
     */
   var blendMode: Double = js.native
+  
+  /**
+    * calculates worldTransform * vertices for a non texture with a trim. store it in vertexTrimmedData
+    * This is used to ensure that the true width and height of a trimmed texture is respected
+    */
+  def calculateTrimmedVertices(): Unit = js.native
+  
+  /**
+    * calculates worldTransform * vertices, store it in vertexData
+    */
+  def calculateVertices(): Unit = js.native
+  
+  /**
+    * Tests if a point is inside this sprite
+    *
+    * @param {PIXI.IPointData} point - the point to test
+    * @return {boolean} the result of the test
+    */
+  def containsPoint(point: IPointData): Boolean = js.native
+  
   /**
     * Plugin that is responsible for rendering this element.
     * Allows to customize the rendering process without overriding '_render' & '_renderCanvas' methods.
@@ -90,6 +122,7 @@ trait Sprite extends Container {
     * @default 'batch'
     */
   var pluginName: String = js.native
+  
   /**
     * If true PixiJS will Math.floor() x/y values when rendering, stopping pixel interpolation.
     * Advantages can include sharper image quality (like text) and faster rendering on canvas.
@@ -100,12 +133,14 @@ trait Sprite extends Container {
     * @default false
     */
   var roundPixels: Boolean = js.native
+  
   /**
     * The texture that the sprite is using
     *
     * @member {PIXI.Texture}
     */
   var texture: Texture = js.native
+  
   /**
     * The tint applied to the sprite. This is a hex value.
     * A value of 0xFFFFFF will remove any tint effect.
@@ -114,27 +149,4 @@ trait Sprite extends Container {
     * @default 0xFFFFFF
     */
   var tint: Double = js.native
-  /**
-    * When the texture is updated, this event will fire to update the scale and frame
-    *
-    * @protected
-    */
-  /* protected */ def _onTextureUpdate(): Unit = js.native
-  /**
-    * calculates worldTransform * vertices for a non texture with a trim. store it in vertexTrimmedData
-    * This is used to ensure that the true width and height of a trimmed texture is respected
-    */
-  def calculateTrimmedVertices(): Unit = js.native
-  /**
-    * calculates worldTransform * vertices, store it in vertexData
-    */
-  def calculateVertices(): Unit = js.native
-  /**
-    * Tests if a point is inside this sprite
-    *
-    * @param {PIXI.IPointData} point - the point to test
-    * @return {boolean} the result of the test
-    */
-  def containsPoint(point: IPointData): Boolean = js.native
 }
-

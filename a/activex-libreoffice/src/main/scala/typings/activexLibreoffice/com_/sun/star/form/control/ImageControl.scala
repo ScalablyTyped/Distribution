@@ -24,7 +24,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a control used for displaying images stored in a database.
@@ -44,8 +44,8 @@ trait ImageControl
      with XAccessible
      with XLayoutConstrains
      with XBoundControl
-
 object ImageControl {
+  
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
@@ -108,4 +108,3 @@ object ImageControl {
     __obj.asInstanceOf[ImageControl]
   }
 }
-

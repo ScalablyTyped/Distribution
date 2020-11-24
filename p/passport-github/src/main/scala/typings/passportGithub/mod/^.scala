@@ -7,7 +7,7 @@ import typings.passportOauth2.mod.OAuth2Strategy
 import typings.passportOauth2.mod.VerifyCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("passport-github", JSImport.Namespace)
 @js.native
@@ -50,4 +50,3 @@ class ^ protected () extends OAuth2Strategy {
       ]
   ) = this()
 }
-

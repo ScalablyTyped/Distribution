@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Regions")
 @js.native
 class ResourceRegions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.regions.get
     * @desc Returns the specified Region resource. Gets a list of available
@@ -99,6 +101,7 @@ class ResourceRegions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRegion]
   ): Unit = js.native
+  
   /**
     * compute.regions.list
     * @desc Retrieves the list of region resources available to the specified
@@ -199,4 +202,3 @@ class ResourceRegions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRegionList]
   ): Unit = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for app-builder-bin
 
-Typings are for version 3.5.9
+Typings are for version 3.5.10
 
 ## Library description:
 app-builder precompiled binaries
@@ -10,9 +10,9 @@ app-builder precompiled binaries
 | ------------------ | :-------------: |
 | Full name          | app-builder-bin |
 | Keywords           | snap, appimage, icns |
-| # releases         | 135 |
-| # dependents       | 11 |
-| # downloads        | 4466724 |
+| # releases         | 70 |
+| # dependents       | 12 |
+| # downloads        | 6281205 |
 | # stars            | 0 |
 
 ## Links

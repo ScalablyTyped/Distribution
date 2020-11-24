@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "egg-core" : "4.17.4"
+      "egg-core" : "4.20.0"
     }
   ],
   "test-dependencies" : [
     {
-      "egg-core" : "4.17.4"
+      "egg-core" : "4.20.0"
     }
   ],
   "compile-devDependencies" : [

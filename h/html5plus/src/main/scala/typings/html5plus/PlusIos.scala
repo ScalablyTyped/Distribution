@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Native.js for iOS封装一条通过JS语法直接调用Native Objective-C接口通道，通过plus.ios可调用几乎所有的系统API。
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusIos extends js.Object {
+  
   /**
     * Objective-C类对象
     * Objective-C类对象，可通过其属性获取类的常量，可通过方法来操作类的静态方法，也通过new方法来创建类的实例对象。
@@ -19,6 +20,7 @@ trait PlusIos extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/ios.html](http://www.html5plus.org/doc/zh_cn/ios.html)
     */
   var ClassObject: js.UndefOr[PlusIosClassObject] = js.native
+  
   /**
     * Objective-C实例对象
     * Objective-C实例对象，可通过其方法来操作示例的变量和方法。
@@ -27,6 +29,7 @@ trait PlusIos extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/ios.html](http://www.html5plus.org/doc/zh_cn/ios.html)
     */
   var InstanceObject: js.UndefOr[PlusIosInstanceObject] = js.native
+  
   /**
     * 获取当前Webview窗口对象的native层UIWebview实例对象
     * UIWebview对象的API请参考Apple开发文档
@@ -34,6 +37,7 @@ trait PlusIos extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/ios.html](http://www.html5plus.org/doc/zh_cn/ios.html)
     */
   def currentWebview(): PlusIosInstanceObject = js.native
+  
   /**
     * 销毁实例对象
     * 
@@ -41,6 +45,7 @@ trait PlusIos extends js.Object {
     */
   def deleteObject(): Unit = js.native
   def deleteObject(obj: js.Any): Unit = js.native
+  
   /**
     * 实现代理的方法
     * 
@@ -50,6 +55,7 @@ trait PlusIos extends js.Object {
   def implements(name: js.UndefOr[scala.Nothing], obj: js.Any): PlusIosInstanceObject = js.native
   def implements(name: String): PlusIosInstanceObject = js.native
   def implements(name: String, obj: js.Any): PlusIosInstanceObject = js.native
+  
   /**
     * 导入Objective-C类对象
     * 导入类对象后，就可以通过.操作符直接调用对象（类对象/实例对象）的方法。
@@ -60,6 +66,7 @@ trait PlusIos extends js.Object {
     */
   def importClass(): PlusIosClassObject = js.native
   def importClass(classname: String): PlusIosClassObject = js.native
+  
   /**
     * 调用对象（类对象/示例对象）的方法
     * 
@@ -73,6 +80,7 @@ trait PlusIos extends js.Object {
   def invoke(obj: PlusIosInstanceObject, name: js.UndefOr[scala.Nothing], args: js.Any): js.Any = js.native
   def invoke(obj: PlusIosInstanceObject, name: String): js.Any = js.native
   def invoke(obj: PlusIosInstanceObject, name: String, args: js.Any): js.Any = js.native
+  
   /**
     * 创建实例对象
     * 
@@ -83,4 +91,3 @@ trait PlusIos extends js.Object {
   def newObject(classname: String): PlusIosInstanceObject = js.native
   def newObject(classname: String, args: js.Any): PlusIosInstanceObject = js.native
 }
-

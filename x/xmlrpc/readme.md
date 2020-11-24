@@ -11,8 +11,8 @@ A pure JavaScript XML-RPC client and server.
 | Full name          | xmlrpc |
 | Keywords           | xml-rpc, xmlrpc, xml, rpc |
 | # releases         | 0 |
-| # dependents       | 139 |
-| # downloads        | 417698 |
+| # dependents       | 144 |
+| # downloads        | 675651 |
 | # stars            | 4 |
 
 ## Links

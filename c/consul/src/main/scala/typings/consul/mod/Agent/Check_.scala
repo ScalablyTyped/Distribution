@@ -11,11 +11,13 @@ import typings.consul.mod.Consul
 import typings.consul.mod.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Check_ extends js.Object {
+  
   var consul: Consul = js.native
+  
   /**
     * Deregister a local check
     */
@@ -32,6 +34,7 @@ trait Check_ extends js.Object {
     * Deregister a local check
     */
   def deregister[TData](opts: DeregisterOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Mark a local test as critical
     */
@@ -48,6 +51,7 @@ trait Check_ extends js.Object {
     * Mark a local test as critical
     */
   def fail[TData](opts: FailOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Returns the checks the local agent is managing
     */
@@ -61,6 +65,7 @@ trait Check_ extends js.Object {
     * Returns the checks the local agent is managing
     */
   def list[TData](opts: ListOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Mark a local test as passing
     */
@@ -77,6 +82,7 @@ trait Check_ extends js.Object {
     * Mark a local test as passing
     */
   def pass[TData](opts: PassOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Registers a new local check
     */
@@ -85,6 +91,7 @@ trait Check_ extends js.Object {
     * Registers a new local check
     */
   def register[TData](opts: RegisterOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Mark a local test as warning
     */
@@ -102,4 +109,3 @@ trait Check_ extends js.Object {
     */
   def warn[TData](opts: WarnOptions, callback: Callback[TData]): Unit = js.native
 }
-

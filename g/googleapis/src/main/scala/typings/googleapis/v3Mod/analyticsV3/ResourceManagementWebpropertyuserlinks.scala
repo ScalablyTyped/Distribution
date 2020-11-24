@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Webpropertyuserlinks")
 @js.native
 class ResourceManagementWebpropertyuserlinks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.management.webpropertyUserLinks.delete
     * @desc Removes a user from the given web property.
@@ -43,6 +45,7 @@ class ResourceManagementWebpropertyuserlinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * analytics.management.webpropertyUserLinks.insert
     * @desc Adds a new user to the given web property.
@@ -76,6 +79,7 @@ class ResourceManagementWebpropertyuserlinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEntityUserLink]
   ): Unit = js.native
+  
   /**
     * analytics.management.webpropertyUserLinks.list
     * @desc Lists webProperty-user links for a given web property.
@@ -110,6 +114,7 @@ class ResourceManagementWebpropertyuserlinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEntityUserLinks]
   ): Unit = js.native
+  
   /**
     * analytics.management.webpropertyUserLinks.update
     * @desc Updates permissions for an existing user on the given web property.
@@ -145,4 +150,3 @@ class ResourceManagementWebpropertyuserlinks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEntityUserLink]
   ): Unit = js.native
 }
-

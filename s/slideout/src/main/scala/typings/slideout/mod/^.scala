@@ -2,7 +2,7 @@ package typings.slideout.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A touch slideout navigation menu for your mobile web apps.
@@ -16,4 +16,3 @@ class ^ protected () extends Slideout {
     */
   def this(options: Options) = this()
 }
-

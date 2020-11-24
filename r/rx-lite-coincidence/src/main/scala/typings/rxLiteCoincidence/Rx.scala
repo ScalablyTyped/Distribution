@@ -2,31 +2,36 @@ package typings.rxLiteCoincidence
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Rx")
 @js.native
 object Rx extends js.Object {
+  
   @js.native
   trait Observable[T] extends js.Object {
+    
     def buffer[TBufferClosing](bufferClosingSelector: js.Function0[Observable[TBufferClosing]]): Observable[js.Array[T]] = js.native
     def buffer[TBufferOpening](bufferOpenings: Observable[TBufferOpening]): Observable[js.Array[T]] = js.native
     def buffer[TBufferOpening, TBufferClosing](
       bufferOpenings: Observable[TBufferOpening],
       bufferClosingSelector: js.Function0[Observable[TBufferClosing]]
     ): Observable[js.Array[T]] = js.native
+    
     def groupJoin[TRight, TDurationLeft, TDurationRight, TResult](
       right: Observable[TRight],
       leftDurationSelector: js.Function1[/* leftItem */ T, Observable[TDurationLeft]],
       rightDurationSelector: js.Function1[/* rightItem */ TRight, Observable[TDurationRight]],
       resultSelector: js.Function2[/* leftItem */ T, /* rightItem */ Observable[TRight], TResult]
     ): Observable[TResult] = js.native
+    
     def join[TRight, TDurationLeft, TDurationRight, TResult](
       right: Observable[TRight],
       leftDurationSelector: js.Function1[/* leftItem */ T, Observable[TDurationLeft]],
       rightDurationSelector: js.Function1[/* rightItem */ TRight, Observable[TDurationRight]],
       resultSelector: js.Function2[/* leftItem */ T, /* rightItem */ TRight, TResult]
     ): Observable[TResult] = js.native
+    
     /**
       * Returns a new observable that triggers on the second and subsequent triggerings of the input observable.
       * The Nth triggering of the input observable passes the arguments from the N-1th and Nth triggering as a pair.
@@ -34,6 +39,7 @@ object Rx extends js.Object {
       * @returns An observable that triggers on successive pairs of observations from the input observable as an array.
       */
     def pairwise(): Observable[js.Array[T]] = js.native
+    
     /**
       * Returns two observables which partition the observations of the source by the given function.
       * The first will trigger observations for those values for which the predicate returns true.
@@ -52,6 +58,7 @@ object Rx extends js.Object {
       predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
       thisArg: js.Any
     ): js.Array[Observable[T]] = js.native
+    
     def window[TWindowClosing](windowClosingSelector: js.Function0[Observable[TWindowClosing]]): Observable[Observable[T]] = js.native
     def window[TWindowOpening](windowOpenings: Observable[TWindowOpening]): Observable[Observable[T]] = js.native
     def window[TWindowOpening, TWindowClosing](
@@ -59,6 +66,4 @@ object Rx extends js.Object {
       windowClosingSelector: js.Function0[Observable[TWindowClosing]]
     ): Observable[Observable[T]] = js.native
   }
-  
 }
-

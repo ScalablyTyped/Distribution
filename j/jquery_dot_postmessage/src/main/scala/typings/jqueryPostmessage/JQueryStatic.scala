@@ -5,10 +5,11 @@ import typings.std.MessageEvent
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQueryStatic extends js.Object {
+  
   /**
     * This method will call window.postMessage if available, setting the targetOrigin parameter to the base of the targetUrl parameter for maximum security in browsers that support it. If window.postMessage is not available, the target window’s location.hash will be used to pass the message. If an object is passed as the message param, it will be serialized into a string using the jQuery.param method.
     *
@@ -27,6 +28,7 @@ trait JQueryStatic extends js.Object {
     */
   def postMessage(message: StringDictionary[js.Any], targetUrl: String): Unit = js.native
   def postMessage(message: StringDictionary[js.Any], targetUrl: String, target: Window): Unit = js.native
+  
   /**
     * Register a single callback for either a window.postMessage call, if supported, or if unsupported, for any change in the current window location.hash. If window.postMessage is supported and sourceOrigin is specified, the source window will be checked against this for maximum security. If window.postMessage is unsupported, a polling loop will be started to watch for changes to the location.hash.
     *
@@ -34,22 +36,21 @@ trait JQueryStatic extends js.Object {
     * @param sourceOrigin If window.postMessage is available and this value is not equal to the event.origin property, the callback will not be called.
     * @param delay An optional zero-or-greater delay in milliseconds at which the polling loop will execute (for browser that don’t support window.postMessage). If omitted, defaults to 100.
     */
-  def receiveMessage(callback: js.Function1[/* event */ MessageEvent, _]): Unit = js.native
+  def receiveMessage(callback: js.Function1[/* event */ MessageEvent[_], _]): Unit = js.native
   def receiveMessage(
-    callback: js.Function1[/* event */ MessageEvent, _],
+    callback: js.Function1[/* event */ MessageEvent[_], _],
     sourceOrigin: js.UndefOr[scala.Nothing],
     delay: Double
   ): Unit = js.native
-  def receiveMessage(callback: js.Function1[/* event */ MessageEvent, _], sourceOrigin: String): Unit = js.native
-  def receiveMessage(callback: js.Function1[/* event */ MessageEvent, _], sourceOrigin: String, delay: Double): Unit = js.native
+  def receiveMessage(callback: js.Function1[/* event */ MessageEvent[_], _], sourceOrigin: String): Unit = js.native
+  def receiveMessage(callback: js.Function1[/* event */ MessageEvent[_], _], sourceOrigin: String, delay: Double): Unit = js.native
   def receiveMessage(
-    callback: js.Function1[/* event */ MessageEvent, _],
+    callback: js.Function1[/* event */ MessageEvent[_], _],
     sourceOrigin: js.Function1[/* origin */ String, Boolean]
   ): Unit = js.native
   def receiveMessage(
-    callback: js.Function1[/* event */ MessageEvent, _],
+    callback: js.Function1[/* event */ MessageEvent[_], _],
     sourceOrigin: js.Function1[/* origin */ String, Boolean],
     delay: Double
   ): Unit = js.native
 }
-

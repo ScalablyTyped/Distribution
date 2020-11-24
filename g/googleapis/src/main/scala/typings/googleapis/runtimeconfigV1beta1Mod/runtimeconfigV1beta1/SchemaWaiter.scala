@@ -2,7 +2,7 @@ package typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Waiter resource waits for some end condition within a RuntimeConfig
@@ -19,12 +19,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaWaiter extends js.Object {
+  
   /**
     * Output only. The instant at which this Waiter resource was created.
     * Adding the value of `timeout` to this instant yields the timeout deadline
     * for the waiter.
     */
   var createTime: js.UndefOr[String] = js.native
+  
   /**
     * Output only. If the value is `false`, it means the waiter is still
     * waiting for one of its conditions to be met.  If true, the waiter has
@@ -32,11 +34,13 @@ trait SchemaWaiter extends js.Object {
     * will be set.
     */
   var done: js.UndefOr[Boolean] = js.native
+  
   /**
     * Output only. If the waiter ended due to a failure or timeout, this value
     * will be set.
     */
   var error: js.UndefOr[SchemaStatus] = js.native
+  
   /**
     * [Optional] The failure condition of this waiter. If this condition is
     * met, `done` will be set to `true` and the `error` code will be set to
@@ -46,6 +50,7 @@ trait SchemaWaiter extends js.Object {
     * scenario will be a timeout.
     */
   var failure: js.UndefOr[SchemaEndCondition] = js.native
+  
   /**
     * The name of the Waiter resource, in the format:
     * projects/[PROJECT_ID]/configs/[CONFIG_NAME]/waiters/[WAITER_NAME]  The
@@ -56,6 +61,7 @@ trait SchemaWaiter extends js.Object {
     * resource, you cannot change the resource name.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * [Required] The success condition. If this condition is met, `done` will
     * be set to `true` and the `error` value will remain unset. The failure
@@ -63,6 +69,7 @@ trait SchemaWaiter extends js.Object {
     * are met, a failure will be indicated.
     */
   var success: js.UndefOr[SchemaEndCondition] = js.native
+  
   /**
     * [Required] Specifies the timeout of the waiter in seconds, beginning from
     * the instant that `waiters().create` method is called. If this time
@@ -71,53 +78,69 @@ trait SchemaWaiter extends js.Object {
     */
   var timeout: js.UndefOr[String] = js.native
 }
-
 object SchemaWaiter {
+  
   @scala.inline
   def apply(): SchemaWaiter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWaiter]
   }
+  
   @scala.inline
   implicit class SchemaWaiterOps[Self <: SchemaWaiter] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    
     @scala.inline
     def setDone(value: Boolean): Self = this.set("done", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDone: Self = this.set("done", js.undefined)
+    
     @scala.inline
     def setError(value: SchemaStatus): Self = this.set("error", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteError: Self = this.set("error", js.undefined)
+    
     @scala.inline
     def setFailure(value: SchemaEndCondition): Self = this.set("failure", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFailure: Self = this.set("failure", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setSuccess(value: SchemaEndCondition): Self = this.set("success", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSuccess: Self = this.set("success", js.undefined)
+    
     @scala.inline
     def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTimeout: Self = this.set("timeout", js.undefined)
   }
-  
 }
-

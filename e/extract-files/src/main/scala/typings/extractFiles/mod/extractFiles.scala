@@ -3,11 +3,12 @@ package typings.extractFiles.mod
 import typings.extractFiles.anon.Clone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("extract-files", "extractFiles")
 @js.native
 object extractFiles extends js.Object {
+  
   def apply[TFile](value: js.Any): Clone[TFile] = js.native
   def apply[TFile](
     value: js.Any,
@@ -21,4 +22,3 @@ object extractFiles extends js.Object {
     isExtractableFile: js.Function1[/* value */ js.Any, /* is TFile */ Boolean]
   ): Clone[TFile] = js.native
 }
-

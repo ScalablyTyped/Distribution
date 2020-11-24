@@ -2,11 +2,12 @@ package typings.multer.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("multer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Returns a Multer instance that provides several methods for generating
     * middleware that process files uploaded in `multipart/form-data` format.
@@ -24,4 +25,3 @@ object ^ extends js.Object {
   def apply(): Multer = js.native
   def apply(options: Options): Multer = js.native
 }
-

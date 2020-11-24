@@ -4,12 +4,12 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.UI.ViewManagement.ViewSizePreference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LauncherOptions extends ILauncherOptions
-
 object LauncherOptions {
+  
   @scala.inline
   def apply(
     contentType: String,
@@ -25,4 +25,3 @@ object LauncherOptions {
     __obj.asInstanceOf[LauncherOptions]
   }
 }
-

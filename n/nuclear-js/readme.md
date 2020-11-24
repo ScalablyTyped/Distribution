@@ -12,7 +12,7 @@ Immutable, reactive Flux architecture. UI Agnostic.
 | Keywords           | flux, nuclear, immutable, react, vue, vuejs, functional, stateless |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 170220 |
+| # downloads        | 166725 |
 | # stars            | 3 |
 
 ## Links

@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Unified service interface for {@link FrameLoaderFactory} and {@link ContentHandlerFactory} .
@@ -16,4 +16,3 @@ trait XLoaderFactory
   extends XNameAccess
      with XMultiServiceFactory
      with XContainerQuery
-

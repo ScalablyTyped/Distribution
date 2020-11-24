@@ -6,15 +6,15 @@ import typings.amapJsApiDriving.anon.PoiisWaypointboolean
 import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.PoiExt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.amapJsApiDriving.AMap.Driving.SearchResultBase
   - typings.amapJsApiDriving.AMap.Driving.SearchResultExt
 */
 trait SearchResult extends js.Object
-
 object SearchResult {
+  
   @scala.inline
   def SearchResultBase(
     destination: LngLat,
@@ -28,6 +28,7 @@ object SearchResult {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], waypoints = waypoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResult]
   }
+  
   @scala.inline
   def SearchResultExt(
     destination: LngLat,
@@ -44,4 +45,3 @@ object SearchResult {
     __obj.asInstanceOf[SearchResult]
   }
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BluetoothLEAdvertisementPublisherStatus extends js.Object
-
 /** Represents the possible states of the BluetoothLEAdvertisementPublisher . */
 @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus")
 @js.native
 object BluetoothLEAdvertisementPublisherStatus extends js.Object {
+  
   /** The publisher is aborted due to an error. */
   @js.native
   sealed trait aborted extends BluetoothLEAdvertisementPublisherStatus
@@ -34,6 +34,4 @@ object BluetoothLEAdvertisementPublisherStatus extends js.Object {
   /** The publisher is waiting to get service time. */
   @js.native
   sealed trait waiting extends BluetoothLEAdvertisementPublisherStatus
-  
 }
-

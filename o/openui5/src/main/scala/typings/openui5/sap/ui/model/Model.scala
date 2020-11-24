@@ -4,10 +4,11 @@ import typings.openui5.anon.TypeofBindingMode
 import typings.openui5.sap.ui.core.message.MessageProcessor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Model extends MessageProcessor {
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'parseError' event of this
     * <code>sap.ui.model.Model</code>.<br/>
@@ -20,6 +21,7 @@ trait Model extends MessageProcessor {
     */
   def attachParseError(oData: js.Any, fnFunction: js.Any): Model = js.native
   def attachParseError(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Model = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'propertyChange' event of this
     * <code>sap.ui.model.Model</code>.
@@ -32,6 +34,7 @@ trait Model extends MessageProcessor {
     */
   def attachPropertyChange(oData: js.Any, fnFunction: js.Any): Model = js.native
   def attachPropertyChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Model = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'requestCompleted' event of this
     * <code>sap.ui.model.Model</code>.
@@ -44,6 +47,7 @@ trait Model extends MessageProcessor {
     */
   def attachRequestCompleted(oData: js.Any, fnFunction: js.Any): Model = js.native
   def attachRequestCompleted(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Model = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'requestFailed' event of this
     * <code>sap.ui.model.Model</code>.<br/>
@@ -55,6 +59,7 @@ trait Model extends MessageProcessor {
     */
   def attachRequestFailed(oData: js.Any, fnFunction: js.Any): Model = js.native
   def attachRequestFailed(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Model = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'requestSent' event of this
     * <code>sap.ui.model.Model</code>.
@@ -67,6 +72,7 @@ trait Model extends MessageProcessor {
     */
   def attachRequestSent(oData: js.Any, fnFunction: js.Any): Model = js.native
   def attachRequestSent(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Model = js.native
+  
   /**
     * Create ContextBinding
     * @param sPath the path pointing to the property that should be bound or an object        which
@@ -101,6 +107,7 @@ trait Model extends MessageProcessor {
   def bindContext(sPath: js.Any, oContext: js.Any, mParameters: js.UndefOr[scala.Nothing], oEvents: js.Any): ContextBinding = js.native
   def bindContext(sPath: js.Any, oContext: js.Any, mParameters: js.Any): ContextBinding = js.native
   def bindContext(sPath: js.Any, oContext: js.Any, mParameters: js.Any, oEvents: js.Any): ContextBinding = js.native
+  
   /**
     * Implement in inheriting classes
     * @param sPath the path pointing to the list / array that should be bound
@@ -183,6 +190,7 @@ trait Model extends MessageProcessor {
     aFilters: js.Array[Filter],
     mParameters: js.Any
   ): ListBinding = js.native
+  
   /**
     * Implement in inheriting classes
     * @param sPath the path pointing to the property that should be bound
@@ -193,6 +201,7 @@ trait Model extends MessageProcessor {
   def bindProperty(sPath: String, oContext: js.UndefOr[scala.Nothing], mParameters: js.Any): PropertyBinding = js.native
   def bindProperty(sPath: String, oContext: js.Any): PropertyBinding = js.native
   def bindProperty(sPath: String, oContext: js.Any, mParameters: js.Any): PropertyBinding = js.native
+  
   /**
     * Implement in inheriting classes
     * @param sPath the path pointing to the tree / array that should be bound
@@ -264,6 +273,7 @@ trait Model extends MessageProcessor {
   ): TreeBinding = js.native
   def bindTree(sPath: String, oContext: js.Any, aFilters: js.Array[_], mParameters: js.Any): TreeBinding = js.native
   def bindTree(sPath: String, oContext: js.Any, aFilters: js.Array[_], mParameters: js.Any, aSorters: js.Array[_]): TreeBinding = js.native
+  
   /**
     * Implement in inheriting classes
     * @param sPath the path to create the new context from
@@ -337,11 +347,13 @@ trait Model extends MessageProcessor {
   ): Context = js.native
   def createBindingContext(sPath: String, oContext: js.Any, mParameters: js.Any, fnCallBack: js.Any): Context = js.native
   def createBindingContext(sPath: String, oContext: js.Any, mParameters: js.Any, fnCallBack: js.Any, bReload: Boolean): Context = js.native
+  
   /**
     * Implement in inheriting classes
     * @param oContext to destroy
     */
   def destroyBindingContext(oContext: js.Any): Unit = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'parseError' event of this
     * <code>sap.ui.model.Model</code>.<br/>The passed function and listener object must match the ones
@@ -351,6 +363,7 @@ trait Model extends MessageProcessor {
     * @returns <code>this</code> to allow method chaining
     */
   def detachParseError(fnFunction: js.Any, oListener: js.Any): Model = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'propertyChange' event of this
     * <code>sap.ui.model.Model</code>.The passed function and listener object must match the ones
@@ -360,6 +373,7 @@ trait Model extends MessageProcessor {
     * @returns <code>this</code> to allow method chaining
     */
   def detachPropertyChange(fnFunction: js.Any, oListener: js.Any): Model = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'requestCompleted' event of this
     * <code>sap.ui.model.Model</code>.The passed function and listener object must match the ones
@@ -369,6 +383,7 @@ trait Model extends MessageProcessor {
     * @returns <code>this</code> to allow method chaining
     */
   def detachRequestCompleted(fnFunction: js.Any, oListener: js.Any): Model = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'requestFailed' event of this
     * <code>sap.ui.model.Model</code>.<br/>The passed function and listener object must match the ones
@@ -378,6 +393,7 @@ trait Model extends MessageProcessor {
     * @returns <code>this</code> to allow method chaining
     */
   def detachRequestFailed(fnFunction: js.Any, oListener: js.Any): Model = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'requestSent' event of this
     * <code>sap.ui.model.Model</code>.The passed function and listener object must match the ones
@@ -387,51 +403,60 @@ trait Model extends MessageProcessor {
     * @returns <code>this</code> to allow method chaining
     */
   def detachRequestSent(fnFunction: js.Any, oListener: js.Any): Model = js.native
+  
   /**
     * Fire event parseError to attached listeners.
     * @param mArguments the arguments to pass along with the event.
     * @returns <code>this</code> to allow method chaining
     */
   def fireParseError(mArguments: js.Any): Model = js.native
+  
   /**
     * Fire event propertyChange to attached listeners.
     * @param mArguments the arguments to pass along with the event.
     * @returns <code>this</code> to allow method chaining
     */
   def firePropertyChange(mArguments: js.Any): Model = js.native
+  
   /**
     * Fire event requestCompleted to attached listeners.
     * @param mArguments the arguments to pass along with the event.
     * @returns <code>this</code> to allow method chaining
     */
   def fireRequestCompleted(mArguments: js.Any): Model = js.native
+  
   /**
     * Fire event requestFailed to attached listeners.
     * @param mArguments the arguments to pass along with the event.
     * @returns <code>this</code> to allow method chaining
     */
   def fireRequestFailed(mArguments: js.Any): Model = js.native
+  
   /**
     * Fire event requestSent to attached listeners.
     * @param mArguments the arguments to pass along with the event.
     * @returns <code>this</code> to allow method chaining
     */
   def fireRequestSent(mArguments: js.Any): Model = js.native
+  
   /**
     * Get the default binding mode for the model
     * @returns default binding mode of the model
     */
   def getDefaultBindingMode(): TypeofBindingMode = js.native
+  
   /**
     * Get messages for path
     * @param sPath The binding path
     */
   def getMessagesByPath(sPath: String): Unit = js.native
+  
   /**
     * Returns the meta model associated with this model if it is available for the concretemodel type.
     * @returns The meta model or undefined if no meta model exists.
     */
   def getMetaModel(): MetaModel = js.native
+  
   /**
     * Implement in inheriting classes
     * @param sPath the path to where to read the object
@@ -442,6 +467,7 @@ trait Model extends MessageProcessor {
   def getObject(sPath: String, oContext: js.UndefOr[scala.Nothing], mParameters: js.Any): Unit = js.native
   def getObject(sPath: String, oContext: js.Any): Unit = js.native
   def getObject(sPath: String, oContext: js.Any, mParameters: js.Any): Unit = js.native
+  
   /**
     * Returns the original value for the property with the given path and context.The original value is
     * the value that was last responded by a server if using a server model implementation.
@@ -451,6 +477,7 @@ trait Model extends MessageProcessor {
     */
   def getOriginalProperty(sPath: String): js.Any = js.native
   def getOriginalProperty(sPath: String, oContext: js.Any): js.Any = js.native
+  
   /**
     * Implement in inheriting classes
     * @param sPath the path to where to read the attribute value
@@ -458,15 +485,18 @@ trait Model extends MessageProcessor {
     */
   def getProperty(sPath: String): Unit = js.native
   def getProperty(sPath: String, oContext: js.Any): Unit = js.native
+  
   /**
     * Check if the specified binding mode is supported by the model.
     * @param sMode the binding mode to check
     */
   def isBindingModeSupported(sMode: TypeofBindingMode): Unit = js.native
+  
   /**
     * Returns whether legacy path syntax is used
     */
   def isLegacySyntax(): Boolean = js.native
+  
   /**
     * Refresh the model.This will check all bindings for updated data and update the controls if data has
     * been changed.
@@ -474,6 +504,7 @@ trait Model extends MessageProcessor {
     */
   def refresh(sGroupIdOrForceUpdate: String): Unit = js.native
   def refresh(sGroupIdOrForceUpdate: Boolean): Unit = js.native
+  
   /**
     * Set the default binding mode for the model. If the default binding mode should be changed,this
     * method should be called directly after model instance creation and before any binding
@@ -483,6 +514,7 @@ trait Model extends MessageProcessor {
     * @returns this pointer for chaining
     */
   def setDefaultBindingMode(sMode: TypeofBindingMode): Model = js.native
+  
   /**
     * Enables legacy path syntax handlingThis defines, whether relative bindings, which do not have a
     * definedbinding context, should be compatible to earlier releases which meansthey are resolved
@@ -490,10 +522,10 @@ trait Model extends MessageProcessor {
     * @param bLegacySyntax the path syntax to use
     */
   def setLegacySyntax(bLegacySyntax: Boolean): Unit = js.native
+  
   /**
     * Set the maximum number of entries which are used for list bindings.
     * @param iSizeLimit collection size limit
     */
   def setSizeLimit(iSizeLimit: Double): Unit = js.native
 }
-

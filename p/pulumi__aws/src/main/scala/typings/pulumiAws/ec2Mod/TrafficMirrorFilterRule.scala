@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2", "TrafficMirrorFilterRule")
 @js.native
@@ -23,11 +23,11 @@ class TrafficMirrorFilterRule protected ()
   def this(name: String, args: TrafficMirrorFilterRuleArgs) = this()
   def this(name: String, args: TrafficMirrorFilterRuleArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ec2", "TrafficMirrorFilterRule")
 @js.native
 object TrafficMirrorFilterRule extends js.Object {
+  
   /**
     * Get an existing TrafficMirrorFilterRule resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object TrafficMirrorFilterRule extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.trafficMirrorFilterRuleMod.TrafficMirrorFilterRule = js.native
   def get(name: String, id: Input[ID], state: TrafficMirrorFilterRuleState): typings.pulumiAws.trafficMirrorFilterRuleMod.TrafficMirrorFilterRule = js.native
   def get(name: String, id: Input[ID], state: TrafficMirrorFilterRuleState, opts: CustomResourceOptions): typings.pulumiAws.trafficMirrorFilterRuleMod.TrafficMirrorFilterRule = js.native
+  
   /**
     * Returns true if the given object is an instance of TrafficMirrorFilterRule.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/trafficMirrorFilterRule.TrafficMirrorFilterRule */ Boolean = js.native
 }
-

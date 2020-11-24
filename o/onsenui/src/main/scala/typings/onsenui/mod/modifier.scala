@@ -3,7 +3,7 @@ package typings.onsenui.mod
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @description Utility methods for modifier attributes
@@ -11,12 +11,14 @@ import scala.scalajs.js.annotation._
 @JSImport("onsenui", "modifier")
 @js.native
 object modifier extends js.Object {
+  
   /**
     * @description Add the specified modifiers to the element if they are not already included.
     * @param {HTMLElemenet} element Target element.
     * @param {String} modifier Name of the modifier.
     */
   def add(element: HTMLElement, modifier: String*): Unit = js.native
+  
   /**
     * @description Check whether the specified modifier is included in the element.
     * @param {HTMLElemenet} element Target element.
@@ -24,12 +26,14 @@ object modifier extends js.Object {
     * @return {Boolean} 'true' when the specified modifier is found in the element's 'modifier' attribute. 'false' otherwise.
     */
   def contains(element: HTMLElement, modifier: String): Boolean = js.native
+  
   /**
     * @description Remove the specified modifiers from the element if they are included.
     * @param {HTMLElemenet} element Target element.
     * @param {String} modifier Name of the modifier.
     */
   def remove(element: HTMLElement, modifier: String*): Unit = js.native
+  
   /**
     * @description Toggle the specified modifier.
     * @param {HTMLElemenet} element Target element.
@@ -39,4 +43,3 @@ object modifier extends js.Object {
   def toggle(element: HTMLElement, modifier: String): Unit = js.native
   def toggle(element: HTMLElement, modifier: String, force: Boolean): Unit = js.native
 }
-

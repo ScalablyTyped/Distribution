@@ -3,7 +3,7 @@ package typings.phaser.global.Phaser.Input
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Pointer object encapsulates both mouse and touch input within Phaser.
@@ -30,4 +30,3 @@ class Pointer protected ()
     */
   def this(manager: typings.phaser.Phaser.Input.InputManager, id: integer) = this()
 }
-

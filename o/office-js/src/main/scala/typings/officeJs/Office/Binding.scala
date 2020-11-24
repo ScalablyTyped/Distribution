@@ -2,7 +2,7 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Objects
 /**
@@ -30,18 +30,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Binding extends js.Object {
-  /**
-    * Get the Document object associated with the binding.
-    */
-  var document: Document = js.native
-  /**
-    * A string that uniquely identifies this binding among the bindings in the same {@link Office.Document} object.
-    */
-  var id: String = js.native
-  /**
-    * Gets the type of the binding.
-    */
-  var `type`: BindingType = js.native
+  
   /**
     * Adds an event handler to the object for the specified {@link Office.EventType}. Supported EventTypes are 
     * `Office.EventType.BindingDataChanged` and `Office.EventType.BindingSelectionChanged`.
@@ -76,6 +65,12 @@ trait Binding extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
+  /**
+    * Get the Document object associated with the binding.
+    */
+  var document: Document = js.native
+  
   /**
     * Returns the data contained within the binding.
     *
@@ -112,6 +107,12 @@ trait Binding extends js.Object {
   def getDataAsync[T](options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[T], Unit]): Unit = js.native
   def getDataAsync[T](options: GetBindingDataOptions): Unit = js.native
   def getDataAsync[T](options: GetBindingDataOptions, callback: js.Function1[/* result */ AsyncResult[T], Unit]): Unit = js.native
+  
+  /**
+    * A string that uniquely identifies this binding among the bindings in the same {@link Office.Document} object.
+    */
+  var id: String = js.native
+  
   /**
     * Removes the specified handler from the binding for the specified event type.
     *
@@ -136,6 +137,7 @@ trait Binding extends js.Object {
     options: RemoveHandlerOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   def setDataAsync(data: js.Any): Unit = js.native
   def setDataAsync(data: js.Any, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def setDataAsync(
@@ -308,5 +310,9 @@ trait Binding extends js.Object {
     options: SetBindingDataOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
+  /**
+    * Gets the type of the binding.
+    */
+  var `type`: BindingType = js.native
 }
-

@@ -4,11 +4,12 @@ import typings.guacamoleClient.tunnelMod.Tunnel
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client/lib/StaticHTTPTunnel", JSImport.Namespace)
 @js.native
 object staticHTTPTunnelMod extends js.Object {
+  
   @js.native
   class StaticHTTPTunnel protected () extends Tunnel {
     /**
@@ -23,6 +24,4 @@ object staticHTTPTunnelMod extends js.Object {
     def this(url: String, crossDomain: js.UndefOr[scala.Nothing], extraTunnelHeaders: Record[String, String]) = this()
     def this(url: String, crossDomain: Boolean, extraTunnelHeaders: Record[String, String]) = this()
   }
-  
 }
-

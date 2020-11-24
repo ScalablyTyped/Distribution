@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__overlay
 
-Typings are for version 2.1.2
+Typings are for version 2.4.2
 
 ## Library description:
 A very simple package for dynamically creating overlays.
@@ -10,9 +10,9 @@ A very simple package for dynamically creating overlays.
 | ------------------ | :-------------: |
 | Full name          | @react-md/overlay |
 | Keywords           | react-md, material design, react, overlay, component, components |
-| # releases         | 23 |
+| # releases         | 31 |
 | # dependents       | 3 |
-| # downloads        | 3756 |
+| # downloads        | 6895 |
 | # stars            | 0 |
 
 ## Links

@@ -4,7 +4,7 @@ import typings.develarSchemaUtils.anon.ErrorObjectchildrenArrayE
 import typings.jsonSchema.mod.JSONSchema4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@develar/schema-utils/declarations/ValidationError", JSImport.Default)
 @js.native
@@ -33,4 +33,3 @@ class default protected () extends ValidationError {
     configuration: typings.develarSchemaUtils.validateMod.ValidationErrorConfiguration
   ) = this()
 }
-

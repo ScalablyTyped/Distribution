@@ -2,11 +2,12 @@ package typings.openui5.global.sap.ui.test
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.test.gherkin")
 @js.native
 object gherkin extends js.Object {
+  
   @js.native
   /**
     * A Gherkin feature file is human-readable, and the computer does not know how to execute its steps.
@@ -20,6 +21,7 @@ object gherkin extends js.Object {
   
   @js.native
   object dataTableUtils extends js.Object {
+    
     /**
       * Takes the inputed 2D list 'aData' and returns an equivalent object. Each row of data is expected
       * tobe a property-value pair. To create nested objects, add extra columns to the data. E.g.<pre> [  
@@ -38,6 +40,7 @@ object gherkin extends js.Object {
     def toObject(aData: js.Array[js.Array[String]]): js.Any = js.native
     def toObject(aData: js.Array[js.Array[String]], oNorm: String): js.Any = js.native
     def toObject(aData: js.Array[js.Array[String]], oNorm: js.Any): js.Any = js.native
+    
     /**
       * Takes the inputed 2D list 'aData' and returns an equivalent list of objects. The data is expected
       * tohave a header row, with each subsequent row being an entity, and each column being a property of
@@ -55,14 +58,17 @@ object gherkin extends js.Object {
     def toTable(aData: js.Array[js.Array[String]]): js.Array[_] = js.native
     def toTable(aData: js.Array[js.Array[String]], oNorm: String): js.Array[_] = js.native
     def toTable(aData: js.Array[js.Array[String]], oNorm: js.Any): js.Array[_] = js.native
+    
     @js.native
     object normalization extends js.Object {
+      
       /**
         * e.g. "First Name" -> "firstName"
         * @param sString the string to normalize
         * @returns the input string with all words after the first capitalized and all spaces removed
         */
       def camelCase(sString: String): String = js.native
+      
       /**
         * e.g. "First Name" -> "first-name"
         * @param sString the string to normalize
@@ -70,18 +76,21 @@ object gherkin extends js.Object {
         *   replaced by a hyphen ('-')
         */
       def hyphenated(sString: String): String = js.native
+      
       /**
         * e.g. "First Name" -> "First Name"
         * @param sString the string to normalize
         * @returns the original unchanged input string
         */
       def none(sString: String): String = js.native
+      
       /**
         * e.g. "first name" -> "FirstName"
         * @param sString the string to normalize
         * @returns the input string with all words capitalized and all spaces removed
         */
       def pascalCase(sString: String): String = js.native
+      
       /**
         * e.g. "first name" -> "First Name"
         * @param sString the string to normalize
@@ -89,11 +98,11 @@ object gherkin extends js.Object {
         */
       def titleCase(sString: String): String = js.native
     }
-    
   }
   
   @js.native
   object opa5TestHarness extends js.Object {
+    
     /**
       * Dynamically generates Opa5 testsIf a test step is missing and args.generateMissingSteps is true then
       * the  Gherkin step will be converted into OpaPage Object code and executed. The text will be
@@ -109,12 +118,11 @@ object gherkin extends js.Object {
   
   @js.native
   object qUnitTestHarness extends js.Object {
+    
     /**
       * Dynamically generates and executes QUnit tests
       * @param args the arguments to the function
       */
     def test(args: js.Any): Unit = js.native
   }
-  
 }
-

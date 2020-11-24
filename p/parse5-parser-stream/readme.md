@@ -10,9 +10,9 @@ Streaming HTML parser with scripting support.
 | ------------------ | :-------------: |
 | Full name          | parse5-parser-stream |
 | Keywords           | parse5, parser, stream, streaming |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 3 |
-| # downloads        | 2822 |
+| # downloads        | 1869 |
 | # stars            | 0 |
 
 ## Links

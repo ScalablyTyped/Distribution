@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Notifications
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait NotificationSetting extends js.Object
-
 /** Specifies the limitations on tile or toast notification display. */
 @JSGlobal("Windows.UI.Notifications.NotificationSetting")
 @js.native
 object NotificationSetting extends js.Object {
+  
   /** An administrator has disabled all notifications on this computer through group policy. The group policy setting overrides the user's setting. */
   @js.native
   sealed trait disabledByGroupPolicy extends NotificationSetting
@@ -30,6 +30,4 @@ object NotificationSetting extends js.Object {
   /** All notifications raised by this app can be displayed. */
   @js.native
   sealed trait enabled extends NotificationSetting
-  
 }
-

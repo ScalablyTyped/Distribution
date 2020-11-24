@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Scanners
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ImageScannerFormat extends js.Object
-
 /** The type of files to scan to. */
 @JSGlobal("Windows.Devices.Scanners.ImageScannerFormat")
 @js.native
 object ImageScannerFormat extends js.Object {
+  
   /** Windows Device Independent Bitmap (DIB) */
   @js.native
   sealed trait deviceIndependentBitmap extends ImageScannerFormat
@@ -38,6 +38,4 @@ object ImageScannerFormat extends js.Object {
   /** Microsoft XML Paper Specification (XPS) document file format */
   @js.native
   sealed trait xps extends ImageScannerFormat
-  
 }
-

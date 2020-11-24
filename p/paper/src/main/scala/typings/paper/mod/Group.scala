@@ -2,7 +2,7 @@ package typings.paper.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paper", "Group")
 @js.native
@@ -16,4 +16,3 @@ class Group ()
   extends typings.paper.paper.Group {
   def this(children: js.Array[typings.paper.paper.Item]) = this()
 }
-

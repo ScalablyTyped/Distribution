@@ -3,11 +3,12 @@ package typings.phaser.global.Phaser.Math
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Math.Between")
 @js.native
 object Between extends js.Object {
+  
   /**
     * Compute a random integer between the `min` and `max` values, inclusive.
     * @param min The minimum value.
@@ -15,4 +16,3 @@ object Between extends js.Object {
     */
   def apply(min: integer, max: integer): integer = js.native
 }
-

@@ -3,13 +3,12 @@ package typings.pWaterfall
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-waterfall", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  // TODO: Remove this for the next major release
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pWaterfall */ js.Any = js.native
+  
   def apply(tasks: Iterable[Task[_, _]]): js.Promise[_] = js.native
   def apply(tasks: Iterable[Task[_, _]], initialValue: js.Any): js.Promise[_] = js.native
   /**
@@ -153,7 +152,11 @@ object mod extends js.Object {
     ],
     initialValue: ValueType1
   ): js.Promise[ReturnType] = js.native
+  
+  // TODO: Remove this for the next major release
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pWaterfall */ js.Any = js.native
+  
   type InitialTask[ReturnType] = js.Function0[ReturnType | js.Thenable[ReturnType]]
+  
   type Task[ValueType, ReturnType] = js.Function1[/* previousValue */ ValueType, ReturnType | js.Thenable[ReturnType]]
 }
-

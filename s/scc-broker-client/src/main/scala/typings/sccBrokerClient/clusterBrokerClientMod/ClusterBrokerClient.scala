@@ -22,20 +22,18 @@ import typings.sccBrokerClient.sccBrokerClientStrings.updateBrokers
 import typings.sccBrokerClient.sccBrokerClientStrings.updateWorkers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClusterBrokerClient
   extends AsyncStreamEmitter[js.Any] {
+  
   var authKey: js.UndefOr[Secret] = js.native
+  
   var broker: Broker = js.native
+  
   var clientPoolSize: Double = js.native
-  var errors: NoMatchingPublishTargetError = js.native
-  var isReady: Boolean = js.native
-  var mapper: MappingEngine = js.native
-  var mappingEngine: skeletonRendezvous | simple | MappingEngine = js.native
-  var sccBrokerClientPools: js.Array[typings.sccBrokerClient.clientPoolMod.^] = js.native
-  var sccBrokerURIList: js.Array[String] = js.native
+  
   @JSName("emit")
   def emit_error(eventName: error, data: Error): Unit = js.native
   @JSName("emit")
@@ -52,8 +50,15 @@ trait ClusterBrokerClient
   def emit_updateBrokers(eventName: updateBrokers, data: UpdateBrokersData): Unit = js.native
   @JSName("emit")
   def emit_updateWorkers(eventName: updateWorkers, data: UpdateWorkersData): Unit = js.native
+  
+  var errors: NoMatchingPublishTargetError = js.native
+  
   def getAllSubscriptions(): js.Array[String] = js.native
+  
   def invokePublish(channelName: String, data: js.Any): Unit = js.native
+  
+  var isReady: Boolean = js.native
+  
   @JSName("listener")
   def listener_error(eventName: error): typings.consumableStream.mod.^[Error] = js.native
   @JSName("listener")
@@ -70,9 +75,20 @@ trait ClusterBrokerClient
   def listener_updateBrokers(eventName: updateBrokers): typings.consumableStream.mod.^[UpdateBrokersData] = js.native
   @JSName("listener")
   def listener_updateWorkers(eventName: updateWorkers): typings.consumableStream.mod.^[UpdateWorkersData] = js.native
+  
   def mapChannelNameToBrokerURI(channelName: String): String = js.native
+  
+  var mapper: MappingEngine = js.native
+  
+  var mappingEngine: skeletonRendezvous | simple | MappingEngine = js.native
+  
+  var sccBrokerClientPools: js.Array[typings.sccBrokerClient.clientPoolMod.^] = js.native
+  
+  var sccBrokerURIList: js.Array[String] = js.native
+  
   def setBrokers(sccBrokerURIList: js.Array[String]): Unit = js.native
+  
   def subscribe(channelName: String): Unit = js.native
+  
   def unsubscribe(channelName: String): Unit = js.native
 }
-

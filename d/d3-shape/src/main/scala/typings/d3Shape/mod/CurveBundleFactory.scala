@@ -2,10 +2,11 @@ package typings.d3Shape.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CurveBundleFactory extends CurveFactoryLineOnly {
+  
   /**
     * Returns a bundle curve factory with the specified beta in the range [0, 1], representing the bundle strength.
     * If beta equals zero, a straight line between the first and last point is produced; if beta equals one,
@@ -15,4 +16,3 @@ trait CurveBundleFactory extends CurveFactoryLineOnly {
     */
   def beta(beta: Double): this.type = js.native
 }
-

@@ -8,12 +8,14 @@ import typings.semanticUiReact.menuItemMod.MenuItemProps
 import typings.semanticUiReact.menuMenuMenuMod.MenuMenuProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MenuComponent extends ComponentClass[MenuProps, ComponentState] {
+  
   var Header: ComponentClass[MenuHeaderProps, ComponentState] = js.native
+  
   var Item: ComponentClass[MenuItemProps, ComponentState] = js.native
+  
   var Menu: StatelessComponent[MenuMenuProps] = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.mfiles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultServerDataPushOperationsAsync extends js.Object {
+  
   def CloneVaultForServerDataPush(ServerDataPushSink: IServerDataPushSink): Unit = js.native
   def CloneVaultForServerDataPush(
     ServerDataPushSink: IServerDataPushSink,
@@ -42,6 +43,7 @@ trait IVaultServerDataPushOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def SendCancel(RequestID: Double): Unit = js.native
   def SendCancel(
     RequestID: Double,
@@ -78,6 +80,7 @@ trait IVaultServerDataPushOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def SendError(RequestID: Double, Error: String): Unit = js.native
   def SendError(
     RequestID: Double,
@@ -120,6 +123,7 @@ trait IVaultServerDataPushOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def SendHeartbeat(RequestID: Double): Unit = js.native
   def SendHeartbeat(
     RequestID: Double,
@@ -156,6 +160,7 @@ trait IVaultServerDataPushOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def SendResponse(RequestID: Double, JsonResponseContent: String): Unit = js.native
   def SendResponse(
     RequestID: Double,
@@ -198,6 +203,7 @@ trait IVaultServerDataPushOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def SetServerDataPushSink(ServerDataPushSink: IServerDataPushSink): Unit = js.native
   def SetServerDataPushSink(
     ServerDataPushSink: IServerDataPushSink,
@@ -235,4 +241,3 @@ trait IVaultServerDataPushOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

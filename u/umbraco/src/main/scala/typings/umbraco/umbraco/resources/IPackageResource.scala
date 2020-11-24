@@ -2,7 +2,7 @@ package typings.umbraco.umbraco.resources
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -11,7 +11,9 @@ import scala.scalajs.js.annotation._
   **/
 @js.native
 trait IPackageResource extends js.Object {
+  
   def cleanUp(_package: String): Unit = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.packageInstallResource#fetchPackage
@@ -33,6 +35,7 @@ trait IPackageResource extends js.Object {
     *
     */
   def fetch(id: String): String = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.packageInstallResource#createmanifest
@@ -57,11 +60,13 @@ trait IPackageResource extends js.Object {
     *
     */
   def `import`(_package: String): Double = js.native
+  
   def installData(_package: String): Unit = js.native
+  
   def installFiles(_package: String): Unit = js.native
 }
-
 object IPackageResource {
+  
   @scala.inline
   def apply(
     cleanUp: String => Unit,
@@ -74,28 +79,35 @@ object IPackageResource {
     __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))
     __obj.asInstanceOf[IPackageResource]
   }
+  
   @scala.inline
   implicit class IPackageResourceOps[Self <: IPackageResource] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCleanUp(value: String => Unit): Self = this.set("cleanUp", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setFetch(value: String => String): Self = this.set("fetch", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setImport(value: String => Double): Self = this.set("import", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setInstallData(value: String => Unit): Self = this.set("installData", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setInstallFiles(value: String => Unit): Self = this.set("installFiles", js.Any.fromFunction1(value))
   }
-  
 }
-

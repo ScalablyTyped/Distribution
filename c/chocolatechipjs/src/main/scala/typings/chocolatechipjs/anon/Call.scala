@@ -3,20 +3,11 @@ package typings.chocolatechipjs.anon
 import typings.chocolatechipjs.ChocolateChipElementArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Call extends js.Object {
-  /**
-    * An object that holds the reference to the controller for a repeater.
-    * This is used to cache the data that a repeater uses. After the repeater is rendered, the reference is deleted from this object.
-    * Example: $.template.data["myRepeater"] = [{name: "Joe"}, {name: "Sue"}];
-    */
-  var data: js.Any = js.native
-  /**
-    * Use this value to output an index value in a template repeater.
-    */
-  var index: Double = js.native
+  
   /**
     * This method parses a string and an optoinal variable name and returns a parsed template in the form of a function. You can then pass this function data to get rendered nodes.
     *
@@ -25,6 +16,19 @@ trait Call extends js.Object {
     */
   def apply(template: String): js.Function = js.native
   def apply(template: String, variable: String): js.Function = js.native
+  
+  /**
+    * An object that holds the reference to the controller for a repeater.
+    * This is used to cache the data that a repeater uses. After the repeater is rendered, the reference is deleted from this object.
+    * Example: $.template.data["myRepeater"] = [{name: "Joe"}, {name: "Sue"}];
+    */
+  var data: js.Any = js.native
+  
+  /**
+    * Use this value to output an index value in a template repeater.
+    */
+  var index: Double = js.native
+  
   /**
     * The repeater method used to rendering iterable template data.
     */
@@ -34,4 +38,3 @@ trait Call extends js.Object {
     */
   def repeater(element: ChocolateChipElementArray, template: String, data: js.Any): Unit = js.native
 }
-

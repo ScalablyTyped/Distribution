@@ -4,11 +4,12 @@ import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.typesMod.ObservableInput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs", "onErrorResumeNext")
 @js.native
 object onErrorResumeNext extends js.Object {
+  
   def apply[R](array: js.Array[ObservableInput[_]]): Observable[R] = js.native
   def apply[R](observables: (ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]))*): Observable[R] = js.native
   def apply[R](v: ObservableInput[R]): Observable[R] = js.native
@@ -23,4 +24,3 @@ object onErrorResumeNext extends js.Object {
     v6: ObservableInput[T6]
   ): Observable[R] = js.native
 }
-

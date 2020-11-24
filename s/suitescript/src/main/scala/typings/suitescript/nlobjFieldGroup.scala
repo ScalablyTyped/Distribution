@@ -3,7 +3,7 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjFieldGroup (currently only supported on nlobjAssistant pages)
@@ -21,6 +21,7 @@ trait nlobjFieldGroup
   * @return
   */
 Instantiable0[js.Any] {
+  
   /**
     * set collapsibility property for this field group.
     *
@@ -38,6 +39,7 @@ Instantiable0[js.Any] {
     */
   def setCollapsible(collapsible: Boolean): js.Function0[Unit] = js.native
   def setCollapsible(collapsible: Boolean, defaultcollapsed: Boolean): js.Function0[Unit] = js.native
+  
   /**
     * set the label for this field group.
     * @param {string} label display label for field group
@@ -51,6 +53,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def setLabel(label: String): js.Function0[Unit] = js.native
+  
   /**
     * set showBorder property for this field group.
     *
@@ -65,6 +68,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def setShowBorder(showBorder: Boolean): js.Function0[Unit] = js.native
+  
   /**
     * set singleColumn property for this field group.
     *
@@ -80,4 +84,3 @@ Instantiable0[js.Any] {
     */
   def setSingleColumn(singleColumn: Boolean): js.Function0[Unit] = js.native
 }
-

@@ -10,9 +10,9 @@ Consistent naming for cloud-provided server config strings
 | ------------------ | :-------------: |
 | Full name          | cloud-env |
 | Keywords           | config, paas, openshift, modulus, heroku, env, configuration |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 19244 |
+| # downloads        | 29175 |
 | # stars            | 3 |
 
 ## Links

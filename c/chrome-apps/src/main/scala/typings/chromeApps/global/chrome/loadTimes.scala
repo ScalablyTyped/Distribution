@@ -3,11 +3,12 @@ package typings.chromeApps.global.chrome
 import typings.chromeApps.chrome.deprecatedButUsable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.loadTimes")
 @js.native
 object loadTimes extends js.Object {
+  
   /**
     * @deprecated Deprecated in Chrome 64.
     * chrome.loadTimes() is a non-standard API that exposes loading metrics
@@ -18,4 +19,3 @@ object loadTimes extends js.Object {
     */
   def apply(): deprecatedButUsable = js.native
 }
-

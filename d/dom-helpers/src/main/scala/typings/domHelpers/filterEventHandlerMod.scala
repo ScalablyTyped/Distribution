@@ -95,11 +95,12 @@ import typings.domHelpers.domHelpersStrings.waiting
 import typings.domHelpers.domHelpersStrings.wheel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dom-helpers/cjs/filterEventHandler", JSImport.Namespace)
 @js.native
 object filterEventHandlerMod extends js.Object {
+  
   @JSName("default")
   def default_abort(selector: String, handler: EventHandler[abort]): EventHandler[abort] = js.native
   @JSName("default")
@@ -285,4 +286,3 @@ object filterEventHandlerMod extends js.Object {
   @JSName("default")
   def default_wheel(selector: String, handler: EventHandler[wheel]): EventHandler[wheel] = js.native
 }
-

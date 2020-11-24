@@ -27,10 +27,17 @@ import typings.d3Format.d3FormatStrings.s
 import typings.d3Format.d3FormatStrings.x_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("d3-format", "FormatSpecifier")
 @js.native
-trait FormatSpecifier_ extends js.Object {
+class FormatSpecifier_ protected () extends js.Object {
+  /**
+    * Given the specified specifier object, returning an object with exposed fields that correspond to the format specification mini-language and a toString method that reconstructs the specifier.
+    * @param specifier A specifier object.
+    */
+  def this(specifier: FormatSpecifierObject) = this()
+  
   /**
     * Alignment used for format, as set by choosing one of the following:
     *
@@ -40,14 +47,17 @@ trait FormatSpecifier_ extends js.Object {
     * '=' - Like '>', but with any sign and symbol to the left of any padding.
     */
   var align: Greaterthansign | Lessthansign | ^  | Equalssign = js.native
+  
   /**
     * The comma (,) option enables the use of a group separator, such as a comma for thousands.
     */
   var comma: Boolean = js.native
+  
   /**
     * fill can be any character. The presence of a fill character is signaled by the align character following it.
     */
   var fill: String = js.native
+  
   /**
     * Depending on the type, the precision either indicates the number of digits that follow the decimal point (types 'f' and '%'),
     * or the number of significant digits (types '' (none), 'e', 'g', 'r', 's' and 'p'). If the precision is not specified,
@@ -57,6 +67,7 @@ trait FormatSpecifier_ extends js.Object {
     * See precisionFixed and precisionRound for help picking an appropriate precision.
     */
   var precision: js.UndefOr[Double] = js.native
+  
   /**
     * The sign can be:
     *
@@ -67,6 +78,7 @@ trait FormatSpecifier_ extends js.Object {
     *
     */
   var sign: `-_` | Plussign | Leftparenthesis | Space = js.native
+  
   /**
     * The symbol can be:
     *
@@ -75,11 +87,13 @@ trait FormatSpecifier_ extends js.Object {
     * '' (none) - no symbol. (Default behavior.)
     */
   var symbol: $ | Numbersign | _empty = js.native
+  
   /**
     * The '~' option trims insignificant trailing zeros across all format types.
     * This is most commonly used in conjunction with types 'r', 'e', 's' and '%'.
     */
   var trim: Boolean = js.native
+  
   /**
     * The available type values are:
     *
@@ -102,69 +116,15 @@ trait FormatSpecifier_ extends js.Object {
     * decimal notation is used if the resulting string would have precision or fewer digits; otherwise, exponent notation is used.
     */
   var `type`: e | f | g | r | s | Percentsign | p | b | o | d | x_ | X | c | _empty | n = js.native
+  
   /**
     * The width defines the minimum field width;
     * if not specified, then the width will be determined by the content.
     */
   var width: js.UndefOr[Double] = js.native
+  
   /**
     * The zero (0) option enables zero-padding; this implicitly sets fill to 0 and align to =.
     */
   var zero: Boolean = js.native
 }
-
-object FormatSpecifier_ {
-  @scala.inline
-  def apply(
-    align: Greaterthansign | Lessthansign | ^  | Equalssign,
-    comma: Boolean,
-    fill: String,
-    sign: `-_` | Plussign | Leftparenthesis | Space,
-    symbol: $ | Numbersign | _empty,
-    trim: Boolean,
-    `type`: e | f | g | r | s | Percentsign | p | b | o | d | x_ | X | c | _empty | n,
-    zero: Boolean
-  ): FormatSpecifier_ = {
-    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], comma = comma.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], sign = sign.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], trim = trim.asInstanceOf[js.Any], zero = zero.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FormatSpecifier_]
-  }
-  @scala.inline
-  implicit class FormatSpecifier_Ops[Self <: FormatSpecifier_] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setAlign(value: Greaterthansign | Lessthansign | ^  | Equalssign): Self = this.set("align", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setComma(value: Boolean): Self = this.set("comma", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setSign(value: `-_` | Plussign | Leftparenthesis | Space): Self = this.set("sign", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setSymbol(value: $ | Numbersign | _empty): Self = this.set("symbol", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setTrim(value: Boolean): Self = this.set("trim", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setType(value: e | f | g | r | s | Percentsign | p | b | o | d | x_ | X | c | _empty | n): Self = this.set("type", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setZero(value: Boolean): Self = this.set("zero", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-  }
-  
-}
-

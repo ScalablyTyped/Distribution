@@ -4,11 +4,12 @@ import typings.samchon.iprotocolMod.IProtocol
 import typings.samchon.webCommunicatorMod.WebCommunicator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/protocol/communicator/server_connector/WebServerConnector", JSImport.Namespace)
 @js.native
 object webServerConnectorMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.samchon.iprotocolMod.IProtocol because Already inherited
   - typings.samchon.icommunicatorMod.ICommunicator because Already inherited
@@ -21,30 +22,27 @@ object webServerConnectorMod extends js.Object {
       *				   {@link IProtocol.replyData replyData()} as an {@link Invoke} object.
       */
     def this(listener: IProtocol) = this()
+    
     /**
       * @hidden
       */
     var _Handle_browser_connect: js.Any = js.native
+    
     /**
       * @hidden
       */
     var _Handle_browser_message: js.Any = js.native
+    
     /**
       * @hidden
       */
     var _Handle_node_connect: js.Any = js.native
+    
     /**
       * @hidden
       */
     var browser_socket_ : js.Any = js.native
-    /**
-      * @hidden
-      */
-    var node_client_ : js.Any = js.native
-    /**
-      * @inheritdoc
-      */
-    var onConnect: js.Function = js.native
+    
     /**
       * Connect to a web server.
       *
@@ -86,7 +84,15 @@ object webServerConnectorMod extends js.Object {
       */
     def connect(ip: String, port: Double): Unit = js.native
     def connect(ip: String, port: Double, path: String): Unit = js.native
+    
+    /**
+      * @hidden
+      */
+    var node_client_ : js.Any = js.native
+    
+    /**
+      * @inheritdoc
+      */
+    var onConnect: js.Function = js.native
   }
-  
 }
-

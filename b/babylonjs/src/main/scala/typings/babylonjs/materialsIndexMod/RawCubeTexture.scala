@@ -6,7 +6,7 @@ import typings.babylonjs.typesMod.Nullable
 import typings.std.ArrayBufferView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/index", "RawCubeTexture")
 @js.native
@@ -36,11 +36,11 @@ class RawCubeTexture protected ()
     compression: js.UndefOr[Nullable[String]]
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Materials/index", "RawCubeTexture")
 @js.native
 object RawCubeTexture extends js.Object {
+  
   /** @hidden */
   def _UpdateRGBDAsync(
     internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
@@ -50,4 +50,3 @@ object RawCubeTexture extends js.Object {
     lodOffset: Double
   ): js.Promise[Unit] = js.native
 }
-

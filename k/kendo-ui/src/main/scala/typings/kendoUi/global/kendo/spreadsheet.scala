@@ -2,11 +2,12 @@ package typings.kendoUi.global.kendo
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.spreadsheet")
 @js.native
 object spreadsheet extends js.Object {
+  
   @js.native
   class CustomFilter ()
     extends typings.kendoUi.kendo.spreadsheet.CustomFilter
@@ -30,6 +31,4 @@ object spreadsheet extends js.Object {
   @js.native
   class ValueFilter ()
     extends typings.kendoUi.kendo.spreadsheet.ValueFilter
-  
 }
-

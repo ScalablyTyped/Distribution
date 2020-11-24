@@ -127,16 +127,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojAvatar extends JetElement[ojAvatarSettableProperties] {
-  var initials: String = js.native
-  var onInitialsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[xxs | xs | sm | md | lg | xl | xxl], _]) | Null = js.native
-  var onSrcChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var size: xxs | xs | sm | md | lg | xl | xxl = js.native
-  var src: String = js.native
+  
   def addEventListener(
     `type`: sizeChanged,
     listener: js.ThisFunction1[
@@ -951,6 +946,7 @@ trait ojAvatar extends JetElement[ojAvatarSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_initials(property: initials): String = js.native
@@ -958,7 +954,17 @@ trait ojAvatar extends JetElement[ojAvatarSettableProperties] {
   def getProperty_size(property: size): xxs | xs | sm | md | lg | xl | xxl = js.native
   @JSName("getProperty")
   def getProperty_src(property: src): String = js.native
+  
+  var initials: String = js.native
+  
+  var onInitialsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[xxs | xs | sm | md | lg | xl | xxl], _]) | Null = js.native
+  
+  var onSrcChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
   def setProperties(properties: ojAvatarSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: size, value: lg): Unit = js.native
   def setProperty(property: size, value: md): Unit = js.native
   def setProperty(property: size, value: sm): Unit = js.native
@@ -971,5 +977,8 @@ trait ojAvatar extends JetElement[ojAvatarSettableProperties] {
   def setProperty_initials(property: initials, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_src(property: src, value: String): Unit = js.native
+  
+  var size: xxs | xs | sm | md | lg | xl | xxl = js.native
+  
+  var src: String = js.native
 }
-

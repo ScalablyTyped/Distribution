@@ -4,7 +4,7 @@ import typings.rxCore.Rx.IDisposable
 import typings.rxLite.Rx.IScheduler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx-lite", "Scheduler")
 @js.native
@@ -30,4 +30,3 @@ class SchedulerCls protected () extends IScheduler {
       ]
   ) = this()
 }
-

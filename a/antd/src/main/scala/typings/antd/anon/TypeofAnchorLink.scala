@@ -6,11 +6,12 @@ import typings.antd.anchorLinkMod.default
 import typings.react.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofAnchorLink extends Instantiable0[default] {
+  
   var contextType: Context[AntAnchor] = js.native
+  
   var defaultProps: HrefString = js.native
 }
-

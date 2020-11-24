@@ -1,20 +1,15 @@
 package typings.a11yDialog.mod
 
+import typings.a11yDialog.mod.A11yDialog.Targets
 import typings.std.Element
-import typings.std.NodeList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("a11y-dialog", JSImport.Namespace)
 @js.native
-class ^ () extends A11yDialog {
-  def this(el: Element) = this()
-  def this(el: Null, containers: String) = this()
-  def this(el: Null, containers: Element) = this()
-  def this(el: Null, containers: NodeList) = this()
-  def this(el: Element, containers: String) = this()
-  def this(el: Element, containers: Element) = this()
-  def this(el: Element, containers: NodeList) = this()
+class ^ protected ()
+  extends typings.a11yDialog.mod.A11yDialog.A11yDialog {
+  def this(node: Element) = this()
+  def this(node: Element, targets: Targets) = this()
 }
-

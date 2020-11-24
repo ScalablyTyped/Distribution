@@ -10,12 +10,12 @@ import typings.winrt.Windows.Storage.Streams.IInputStream
 import typings.winrt.Windows.Storage.Streams.IOutputStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InkStrokeContainer extends IInkStrokeContainer
-
 object InkStrokeContainer {
+  
   @scala.inline
   def apply(
     addStroke: InkStroke => Unit,
@@ -37,4 +37,3 @@ object InkStrokeContainer {
     __obj.asInstanceOf[InkStrokeContainer]
   }
 }
-

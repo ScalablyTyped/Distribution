@@ -10,9 +10,9 @@ JavaScript library for mobile-friendly interactive maps
 | ------------------ | :-------------: |
 | Full name          | leaflet |
 | Keywords           | gis, map |
-| # releases         | 10 |
-| # dependents       | 774 |
-| # downloads        | 10127914 |
+| # releases         | 4 |
+| # dependents       | 941 |
+| # downloads        | 14037671 |
 | # stars            | 31 |
 
 ## Links

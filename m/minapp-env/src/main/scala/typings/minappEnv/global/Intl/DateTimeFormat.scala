@@ -7,7 +7,7 @@ import typings.minappEnv.Array
 import typings.minappEnv.Intl.DateTimeFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Intl.DateTimeFormat")
 @js.native
@@ -22,15 +22,16 @@ object DateTimeFormat
       /* options */ DateTimeFormatOptions, 
       typings.minappEnv.Intl.DateTimeFormat
     ] {
+  
   def apply(): typings.minappEnv.Intl.DateTimeFormat = js.native
   def apply(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): typings.minappEnv.Intl.DateTimeFormat = js.native
   def apply(locales: String): typings.minappEnv.Intl.DateTimeFormat = js.native
   def apply(locales: String, options: DateTimeFormatOptions): typings.minappEnv.Intl.DateTimeFormat = js.native
   def apply(locales: Array[String]): typings.minappEnv.Intl.DateTimeFormat = js.native
   def apply(locales: Array[String], options: DateTimeFormatOptions): typings.minappEnv.Intl.DateTimeFormat = js.native
+  
   def supportedLocalesOf(locales: String): Array[String] = js.native
   def supportedLocalesOf(locales: String, options: DateTimeFormatOptions): Array[String] = js.native
   def supportedLocalesOf(locales: Array[String]): Array[String] = js.native
   def supportedLocalesOf(locales: Array[String], options: DateTimeFormatOptions): Array[String] = js.native
 }
-

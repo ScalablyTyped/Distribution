@@ -2,7 +2,7 @@ package typings.xrm.Xrm
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Themes for {@link GlobalContext.getCurrentTheme globalContext.getCurrentTheme()}.
@@ -15,13 +15,14 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.Office14Silver
 */
 trait Theme extends js.Object
-
 object Theme {
+  
   @scala.inline
   def Office12Blue: typings.xrm.xrmStrings.Office12Blue = "Office12Blue".asInstanceOf[typings.xrm.xrmStrings.Office12Blue]
+  
   @scala.inline
   def Office14Silver: typings.xrm.xrmStrings.Office14Silver = "Office14Silver".asInstanceOf[typings.xrm.xrmStrings.Office14Silver]
+  
   @scala.inline
   def default: typings.xrm.xrmStrings.default = "default".asInstanceOf[typings.xrm.xrmStrings.default]
 }
-

@@ -3,7 +3,7 @@ package typings.aureliaTemplating.mod
 import typings.aureliaDependencyInjection.mod.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ResourceDescription")
 @js.native
@@ -16,11 +16,13 @@ class ResourceDescription protected () extends js.Object {
     */
   def this(key: String, exportedValue: js.Any) = this()
   def this(key: String, exportedValue: js.Any, resourceTypeMeta: js.Object) = this()
+  
   /**
     * Initializes the resource.
     * @param container The dependency injection container usable during resource initialization.
     */
   def initialize(container: Container): Unit = js.native
+  
   /**
     * Loads any dependencies of the resource.
     * @param container The DI container to use during dependency resolution.
@@ -29,6 +31,7 @@ class ResourceDescription protected () extends js.Object {
     */
   def load(container: Container): js.Promise[Unit] | Unit = js.native
   def load(container: Container, loadContext: ResourceLoadContext): js.Promise[Unit] | Unit = js.native
+  
   /**
     * Registrers the resource with the view resources.
     * @param registry The registry of view resources to regiser within.
@@ -37,4 +40,3 @@ class ResourceDescription protected () extends js.Object {
   def register(registry: ViewResources_): Unit = js.native
   def register(registry: ViewResources_, name: String): Unit = js.native
 }
-

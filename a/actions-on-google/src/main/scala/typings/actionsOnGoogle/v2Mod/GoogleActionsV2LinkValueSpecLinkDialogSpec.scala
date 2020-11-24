@@ -2,10 +2,11 @@ package typings.actionsOnGoogle.v2Mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GoogleActionsV2LinkValueSpecLinkDialogSpec extends js.Object {
+  
   /**
     * The name of the app or site this request wishes to linking to.
     * The TTS will be created with the title \"Open <destination_name>\". Also
@@ -15,6 +16,7 @@ trait GoogleActionsV2LinkValueSpecLinkDialogSpec extends js.Object {
     * Max 20 chars.
     */
   var destinationName: js.UndefOr[String] = js.native
+  
   /**
     * A string that is added to the end of the confirmation prompt to explain
     * why we need to link out. Example: \"navigate to pick up your coffee?\" This
@@ -23,33 +25,39 @@ trait GoogleActionsV2LinkValueSpecLinkDialogSpec extends js.Object {
     */
   var requestLinkReason: js.UndefOr[String] = js.native
 }
-
 object GoogleActionsV2LinkValueSpecLinkDialogSpec {
+  
   @scala.inline
   def apply(): GoogleActionsV2LinkValueSpecLinkDialogSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2LinkValueSpecLinkDialogSpec]
   }
+  
   @scala.inline
   implicit class GoogleActionsV2LinkValueSpecLinkDialogSpecOps[Self <: GoogleActionsV2LinkValueSpecLinkDialogSpec] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDestinationName(value: String): Self = this.set("destinationName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDestinationName: Self = this.set("destinationName", js.undefined)
+    
     @scala.inline
     def setRequestLinkReason(value: String): Self = this.set("requestLinkReason", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRequestLinkReason: Self = this.set("requestLinkReason", js.undefined)
   }
-  
 }
-

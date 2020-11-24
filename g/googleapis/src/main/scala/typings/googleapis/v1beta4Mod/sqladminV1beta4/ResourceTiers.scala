@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sqladmin/v1beta4", "sqladmin_v1beta4.Resource$Tiers")
 @js.native
 class ResourceTiers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * sql.tiers.list
     * @desc Lists all available machine types (tiers) for Cloud SQL, for
@@ -43,4 +45,3 @@ class ResourceTiers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTiersListResponse]
   ): Unit = js.native
 }
-

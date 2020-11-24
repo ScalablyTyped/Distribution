@@ -3,7 +3,7 @@ package typings.mozillaReadability.mod
 import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A standalone version of the readability library used for Firefox Reader View.
@@ -51,4 +51,3 @@ class ^ protected () extends Readability {
   def this(doc: Document) = this()
   def this(doc: Document, options: Options) = this()
 }
-

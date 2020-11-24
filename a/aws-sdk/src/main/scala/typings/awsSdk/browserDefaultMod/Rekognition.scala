@@ -4,7 +4,7 @@ import typings.awsSdk.rekognitionMod.ClientConfiguration
 import typings.awsSdk.rekognitionMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/browser_default", "Rekognition")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class Rekognition () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

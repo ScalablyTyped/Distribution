@@ -5,11 +5,10 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ViewStatic
   extends Instantiable0[View]
      with Instantiable1[/* name */ String, View]
      with Instantiable2[js.UndefOr[/* name */ String], /* renderFunction */ js.Function, View]
-

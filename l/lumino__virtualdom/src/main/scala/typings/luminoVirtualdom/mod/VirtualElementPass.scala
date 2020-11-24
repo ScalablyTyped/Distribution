@@ -3,7 +3,7 @@ package typings.luminoVirtualdom.mod
 import typings.luminoVirtualdom.mod.VirtualElementPass.IRenderer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/virtualdom", "VirtualElementPass")
 @js.native
@@ -28,10 +28,10 @@ class VirtualElementPass protected () extends VirtualElement {
   def this(tag: String, attrs: ElementAttrs) = this()
   def this(tag: String, attrs: ElementAttrs, renderer: IRenderer) = this()
 }
-
 @JSImport("@lumino/virtualdom", "VirtualElementPass")
 @js.native
 object VirtualElementPass extends js.Object {
+  
   /**
     * DEPRECATED - use VirtualElement.IRenderer instead
     *
@@ -39,4 +39,3 @@ object VirtualElementPass extends js.Object {
     */
   type IRenderer = typings.luminoVirtualdom.mod.VirtualElement.IRenderer
 }
-

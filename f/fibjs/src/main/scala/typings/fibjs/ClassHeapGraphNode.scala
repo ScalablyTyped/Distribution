@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassHeapGraphNode extends ClassObject {
+  
   /**
     * class prop 
     *
@@ -21,6 +22,7 @@ trait ClassHeapGraphNode extends ClassObject {
     * @type NArray
     */
   var childs: js.Array[_] = js.native
+  
   /**
     * class prop 
     *
@@ -31,6 +33,7 @@ trait ClassHeapGraphNode extends ClassObject {
     * @type String
     */
   var description: String = js.native
+  
   /**
     * class prop 
     *
@@ -41,6 +44,7 @@ trait ClassHeapGraphNode extends ClassObject {
     * @type Integer
     */
   var id: Double = js.native
+  
   /**
     * class prop 
     *
@@ -51,6 +55,7 @@ trait ClassHeapGraphNode extends ClassObject {
     * @type String
     */
   var name: String = js.native
+  
   /**
     * class prop 
     *
@@ -61,6 +66,7 @@ trait ClassHeapGraphNode extends ClassObject {
     * @type Integer
     */
   var shallowSize: Double = js.native
+  
   /**
     * class prop 
     *
@@ -87,4 +93,3 @@ trait ClassHeapGraphNode extends ClassObject {
     */
   var `type`: Double = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$Containers$Workspaces$Zones")
 @js.native
 class ResourceAccountsContainersWorkspacesZones protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.zones.create
     * @desc Creates a GTM Zone.
@@ -45,6 +47,7 @@ class ResourceAccountsContainersWorkspacesZones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaZone]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.zones.delete
     * @desc Deletes a GTM Zone.
@@ -76,6 +79,7 @@ class ResourceAccountsContainersWorkspacesZones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.zones.get
     * @desc Gets a GTM Zone.
@@ -107,6 +111,7 @@ class ResourceAccountsContainersWorkspacesZones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaZone]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.zones.list
     * @desc Lists all GTM Zones of a GTM container workspace.
@@ -139,6 +144,7 @@ class ResourceAccountsContainersWorkspacesZones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListZonesResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.zones.revert
     * @desc Reverts changes to a GTM Zone in a GTM Workspace.
@@ -171,6 +177,7 @@ class ResourceAccountsContainersWorkspacesZones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRevertZoneResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.zones.update
     * @desc Updates a GTM Zone.
@@ -205,4 +212,3 @@ class ResourceAccountsContainersWorkspacesZones protected () extends js.Object {
     callback: BodyResponseCallback[SchemaZone]
   ): Unit = js.native
 }
-

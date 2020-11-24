@@ -6,11 +6,12 @@ import typings.angularCompiler.compileReflectorMod.CompileReflector
 import typings.angularCompiler.srcUtilMod.OutputContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/render3/view/compiler", "compileDirectiveFromRender2")
 @js.native
 object compileDirectiveFromRender2 extends js.Object {
+  
   def apply(
     outputCtx: OutputContext,
     directive: CompileDirectiveMetadata,
@@ -18,4 +19,3 @@ object compileDirectiveFromRender2 extends js.Object {
     bindingParser: BindingParser
   ): Unit = js.native
 }
-

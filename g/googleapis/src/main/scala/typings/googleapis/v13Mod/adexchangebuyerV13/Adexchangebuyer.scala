@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Ad Exchange Buyer API
@@ -29,13 +29,20 @@ import scala.scalajs.js.annotation._
 class Adexchangebuyer protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var accounts: ResourceAccounts = js.native
+  
   var billingInfo: ResourceBillinginfo = js.native
+  
   var budget: ResourceBudget = js.native
+  
   var context: APIRequestContext = js.native
+  
   var creatives: ResourceCreatives = js.native
+  
   var directDeals: ResourceDirectdeals = js.native
+  
   var performanceReport: ResourcePerformancereport = js.native
+  
   var pretargetingConfig: ResourcePretargetingconfig = js.native
 }
-

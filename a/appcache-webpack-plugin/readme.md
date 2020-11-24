@@ -10,9 +10,9 @@ Generate an HTML5 Application Cache for a Webpack build
 | ------------------ | :-------------: |
 | Full name          | appcache-webpack-plugin |
 | Keywords           | webpack, appcache, application, cache, plugin |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 63308 |
+| # downloads        | 68153 |
 | # stars            | 2 |
 
 ## Links

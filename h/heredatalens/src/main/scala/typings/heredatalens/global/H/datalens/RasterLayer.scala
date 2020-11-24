@@ -4,7 +4,7 @@ import typings.heredatalens.H.datalens.RasterLayer.TilePoint
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides pixel-wise rendering of data.
@@ -19,16 +19,17 @@ import scala.scalajs.js.annotation._
   */
 class RasterLayer ()
   extends typings.heredatalens.H.datalens.RasterLayer
-
 /* static members */
 @JSGlobal("H.datalens.RasterLayer")
 @js.native
 object RasterLayer extends js.Object {
+  
   /**
     * Default value for dataToRows callback option.
     * It represents each row as an object where property names correspond to data column names.
     */
   var defaultDataToRows: js.Any = js.native
+  
   /**
     * This is a default implementation of renderTile callback. This method represents each point as a black 1x1 pixel square.
     * @param points - Input data points within a tile
@@ -36,4 +37,3 @@ object RasterLayer extends js.Object {
     */
   def defaultRenderTile(points: js.Array[TilePoint], canvas: HTMLCanvasElement): Unit = js.native
 }
-

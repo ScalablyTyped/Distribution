@@ -3,11 +3,12 @@ package typings.when.global.When
 import typings.when.When.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("When.join")
 @js.native
 object join extends js.Object {
+  
   /**
     * Joins multiple promises into a single returned promise.
     * @return a promise that will fulfill when *all* the input promises
@@ -15,4 +16,3 @@ object join extends js.Object {
     */
   def apply[T](promises: (js.Any | Promise[T])*): Promise[js.Array[T]] = js.native
 }
-

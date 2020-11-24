@@ -4,11 +4,12 @@ import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sodium-native", "crypto_pwhash_async")
 @js.native
 object cryptoPwhashAsync extends js.Object {
+  
   def apply(
     output: Buffer,
     password: Buffer,
@@ -19,4 +20,3 @@ object cryptoPwhashAsync extends js.Object {
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
 }
-

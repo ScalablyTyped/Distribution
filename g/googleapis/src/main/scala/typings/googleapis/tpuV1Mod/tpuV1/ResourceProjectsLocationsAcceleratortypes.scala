@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tpu/v1", "tpu_v1.Resource$Projects$Locations$Acceleratortypes")
 @js.native
 class ResourceProjectsLocationsAcceleratortypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tpu.projects.locations.acceleratorTypes.get
     * @desc Gets AcceleratorType.
@@ -44,6 +46,7 @@ class ResourceProjectsLocationsAcceleratortypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAcceleratorType]
   ): Unit = js.native
+  
   /**
     * tpu.projects.locations.acceleratorTypes.list
     * @desc Lists accelerator types supported by this API.
@@ -80,4 +83,3 @@ class ResourceProjectsLocationsAcceleratortypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListAcceleratorTypesResponse]
   ): Unit = js.native
 }
-

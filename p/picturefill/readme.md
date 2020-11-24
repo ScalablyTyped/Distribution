@@ -11,8 +11,8 @@ A responsive image polyfill.
 | Full name          | picturefill |
 | Keywords           | picturefill, srcset, picture, responsive, responsive images |
 | # releases         | 2 |
-| # dependents       | 35 |
-| # downloads        | 3638538 |
+| # dependents       | 37 |
+| # downloads        | 4769819 |
 | # stars            | 14 |
 
 ## Links

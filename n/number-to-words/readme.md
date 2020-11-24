@@ -10,9 +10,9 @@ Contains some util methods for converting numbers into words, ordinal words and 
 | ------------------ | :-------------: |
 | Full name          | number-to-words |
 | Keywords           | converter, number, ordinal, string, tool, word |
-| # releases         | 2 |
-| # dependents       | 48 |
-| # downloads        | 1596032 |
+| # releases         | 0 |
+| # dependents       | 54 |
+| # downloads        | 2891124 |
 | # stars            | 2 |
 
 ## Links

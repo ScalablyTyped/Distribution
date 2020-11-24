@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used by the batcher to build texture batches.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class BatchTextureArray ()
   extends typings.pixiJs.PIXI.BatchTextureArray
-

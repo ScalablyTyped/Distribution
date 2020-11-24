@@ -6,9 +6,85 @@ import typings.tslint.ruleMod.RuleSeverity
 import typings.tslint.ruleMod.RuleType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tslintStrings {
+  
+  @scala.inline
+  def NoInfer: NoInfer = "NoInfer".asInstanceOf[NoInfer]
+  
+  @scala.inline
+  def `Shorthand method assignments have been disallowedDot`: `Shorthand method assignments have been disallowedDot` = ("Shorthand method assignments have been disallowed.").asInstanceOf[`Shorthand method assignments have been disallowedDot`]
+  
+  @scala.inline
+  def `Shorthand property and method assignments have been disallowedDot`: `Shorthand property and method assignments have been disallowedDot` = ("Shorthand property and method assignments have been disallowed.").asInstanceOf[`Shorthand property and method assignments have been disallowedDot`]
+  
+  @scala.inline
+  def `Shorthand property assignments have been disallowedDot`: `Shorthand property assignments have been disallowedDot` = ("Shorthand property assignments have been disallowed.").asInstanceOf[`Shorthand property assignments have been disallowedDot`]
+  
+  @scala.inline
+  def after: after = "after".asInstanceOf[after]
+  
+  @scala.inline
+  def before: before = "before".asInstanceOf[before]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def formatting: formatting = "formatting".asInstanceOf[formatting]
+  
+  @scala.inline
+  def functionality: functionality = "functionality".asInstanceOf[functionality]
+  
+  @scala.inline
+  def human: human = "human".asInstanceOf[human]
+  
+  @scala.inline
+  def machine: machine = "machine".asInstanceOf[machine]
+  
+  @scala.inline
+  def maintainability: maintainability = "maintainability".asInstanceOf[maintainability]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def `null`: `null` = "null".asInstanceOf[`null`]
+  
+  @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  
+  @scala.inline
+  def style: style = "style".asInstanceOf[style]
+  
+  @scala.inline
+  def typescript: typescript = "typescript".asInstanceOf[typescript]
+  
+  @scala.inline
+  def undefined: undefined = "undefined".asInstanceOf[undefined]
+  
+  @scala.inline
+  def utf16be: utf16be = "utf16be".asInstanceOf[utf16be]
+  
+  @scala.inline
+  def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
+  
+  @scala.inline
+  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  
+  @scala.inline
+  def `utf8-bom`: `utf8-bom` = "utf8-bom".asInstanceOf[`utf8-bom`]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
+  
   @js.native
   sealed trait NoInfer extends js.Object
   
@@ -83,56 +159,4 @@ object tslintStrings {
   
   @js.native
   sealed trait warning extends RuleSeverity
-  
-  @scala.inline
-  def NoInfer: NoInfer = "NoInfer".asInstanceOf[NoInfer]
-  @scala.inline
-  def `Shorthand method assignments have been disallowedDot`: `Shorthand method assignments have been disallowedDot` = ("Shorthand method assignments have been disallowed.").asInstanceOf[`Shorthand method assignments have been disallowedDot`]
-  @scala.inline
-  def `Shorthand property and method assignments have been disallowedDot`: `Shorthand property and method assignments have been disallowedDot` = ("Shorthand property and method assignments have been disallowed.").asInstanceOf[`Shorthand property and method assignments have been disallowedDot`]
-  @scala.inline
-  def `Shorthand property assignments have been disallowedDot`: `Shorthand property assignments have been disallowedDot` = ("Shorthand property assignments have been disallowed.").asInstanceOf[`Shorthand property assignments have been disallowedDot`]
-  @scala.inline
-  def after: after = "after".asInstanceOf[after]
-  @scala.inline
-  def before: before = "before".asInstanceOf[before]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def formatting: formatting = "formatting".asInstanceOf[formatting]
-  @scala.inline
-  def functionality: functionality = "functionality".asInstanceOf[functionality]
-  @scala.inline
-  def human: human = "human".asInstanceOf[human]
-  @scala.inline
-  def machine: machine = "machine".asInstanceOf[machine]
-  @scala.inline
-  def maintainability: maintainability = "maintainability".asInstanceOf[maintainability]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def `null`: `null` = "null".asInstanceOf[`null`]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def style: style = "style".asInstanceOf[style]
-  @scala.inline
-  def typescript: typescript = "typescript".asInstanceOf[typescript]
-  @scala.inline
-  def undefined: undefined = "undefined".asInstanceOf[undefined]
-  @scala.inline
-  def utf16be: utf16be = "utf16be".asInstanceOf[utf16be]
-  @scala.inline
-  def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
-  @scala.inline
-  def `utf8-bom`: `utf8-bom` = "utf8-bom".asInstanceOf[`utf8-bom`]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
 }
-

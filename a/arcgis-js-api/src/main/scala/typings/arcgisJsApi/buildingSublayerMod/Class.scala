@@ -4,11 +4,10 @@ import typings.arcgisJsApi.esri.BuildingSublayer
 import typings.arcgisJsApi.esri.BuildingSublayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/layers/buildingSublayers/BuildingSublayer", JSImport.Namespace)
 @js.native
 class Class () extends BuildingSublayer {
   def this(properties: BuildingSublayerProperties) = this()
 }
-

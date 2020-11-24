@@ -7,11 +7,12 @@ import typings.reduxOrm.sessionMod.OrmSession
 import typings.std.Extract
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-orm/redux", JSImport.Namespace)
 @js.native
 object reduxMod extends js.Object {
+  
   def createReducer[I /* <: IndexedModelClasses[
     js.Object, 
     Extract[
@@ -26,6 +27,7 @@ object reduxMod extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: {}[keyof {}]['modelName'] */ js.Any
     ]
   ] */, TAction /* <: js.Any */](orm: ORM[I, /* keyof I */ String], updater: defaultUpdater[I, TAction]): ORMReducer[I, TAction] = js.native
+  
   def createSelector[I, R](orm: ORM[I, /* keyof I */ String], ormSelector: ORMSelector[I, js.Array[js.Any], R]): Selector[OrmState[I], R] = js.native
   def createSelector[S, I, R](
     orm: ORM[I, /* keyof I */ String],
@@ -83,6 +85,7 @@ object reduxMod extends js.Object {
     selector6: Selector[S, R6],
     ormSelector: ORMSelector[I, js.Tuple6[R1, R2, R3, R4, R5, R6], R]
   ): Selector[S, R] = js.native
+  
   type ORMReducer[I /* <: IndexedModelClasses[
     js.Object, 
     Extract[
@@ -90,6 +93,7 @@ object reduxMod extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: {}[keyof {}]['modelName'] */ js.Any
     ]
   ] */, TAction /* <: js.Any */] = js.Function2[/* state */ js.UndefOr[OrmState[I]], /* action */ TAction, OrmState[I]]
+  
   type ORMSelector[I /* <: IndexedModelClasses[
     js.Object, 
     Extract[
@@ -97,7 +101,9 @@ object reduxMod extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: {}[keyof {}]['modelName'] */ js.Any
     ]
   ] */, Args /* <: js.Array[_] */, R] = js.Function2[/* session */ OrmSession[I], /* args */ Args, R]
+  
   type Selector[S, R] = js.Function1[/* state */ S, R]
+  
   type defaultUpdater[I /* <: IndexedModelClasses[
     js.Object, 
     Extract[
@@ -106,4 +112,3 @@ object reduxMod extends js.Object {
     ]
   ] */, TAction /* <: js.Any */] = js.Function2[/* session */ OrmSession[I], /* action */ TAction, Unit]
 }
-

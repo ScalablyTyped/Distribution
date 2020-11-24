@@ -3,7 +3,7 @@ package typings.titanium.global.Titanium.UI.iOS
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies that the data for the URL load should be loaded from the originating source.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Titanium.UI.iOS.CACHE_POLICY_RELOAD_IGNORING_LOCAL_CACHE_DATA")
 @js.native
 object CACHE_POLICY_RELOAD_IGNORING_LOCAL_CACHE_DATA extends TopLevel[Double]
-

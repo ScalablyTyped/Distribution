@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A BaseRenderTexture is a special texture that allows any PixiJS display object to be rendered to it.
@@ -46,18 +46,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BaseRenderTexture extends BaseTexture {
+  
   /**
     * The data structure for the filters.
     *
     * @member {Object[]} PIXI.BaseRenderTexture#filterStack
     */
   var filterStack: js.Array[_] = js.native
+  
   /**
     * The data structure for the stencil masks.
     *
     * @member {PIXI.MaskData[]} PIXI.BaseRenderTexture#maskStack
     */
   var maskStack: js.Array[MaskData] = js.native
+  
   /**
     * Resizes the BaseRenderTexture.
     *
@@ -66,4 +69,3 @@ trait BaseRenderTexture extends BaseTexture {
     */
   def resize(width: Double, height: Double): Unit = js.native
 }
-

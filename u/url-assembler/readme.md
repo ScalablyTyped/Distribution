@@ -10,9 +10,9 @@ Assemble urls from route-like templates (/path/:param)
 | ------------------ | :-------------: |
 | Full name          | url-assembler |
 | Keywords           | url, builder, urlBuilder, url-builder, template, assemble, assembler, route, routing, parameters, query-builder, query |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 17 |
-| # downloads        | 95387 |
+| # downloads        | 140149 |
 | # stars            | 2 |
 
 ## Links

@@ -12,15 +12,25 @@ import typings.node.urlMod.URL_
 import typings.podium.mod.Podium
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Request extends Podium {
+  
+  /**
+    * Returns `true` when the request is active and processing should continue and `false` when the
+    *  request terminated early or completed its lifecycle. Useful when request processing is a
+    * resource-intensive operation and should be terminated early if the request is no longer active
+    * (e.g. client disconnected or aborted early).
+    */
+  def active(): Boolean = js.native
+  
   /**
     * Application-specific state. Provides a safe place to store application data without potential conflicts with the framework. Should not be used by plugins which should use plugins[name].
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestapp)
     */
   var app: ApplicationState = js.native
+  
   /**
     * Authentication information:
     * * artifacts - an artifact object received from the authentication strategy and used in authentication-related actions.
@@ -34,6 +44,7 @@ trait Request extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestauth)
     */
   val auth: RequestAuth = js.native
+  
   /**
     * Access: read only and the public podium interface.
     * The request.events supports the following events:
@@ -43,11 +54,28 @@ trait Request extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestevents)
     */
   var events: RequestEvents = js.native
+  
+  /**
+    * Returns a response which you can pass into the reply interface where:
+    * @param source - the value to set as the source of the reply interface, optional.
+    * @param options - options for the method, optional.
+    * @return ResponseObject
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestgenerateresponsesource-options)
+    */
+  /* tslint:disable-next-line:max-line-length */
+  def generateResponse(): ResponseObject = js.native
+  def generateResponse(source: String): ResponseObject = js.native
+  def generateResponse(source: String, options: Close): ResponseObject = js.native
+  def generateResponse(source: js.Object): ResponseObject = js.native
+  def generateResponse(source: js.Object, options: Close): ResponseObject = js.native
+  def generateResponse(source: Null, options: Close): ResponseObject = js.native
+  
   /**
     * The raw request headers (references request.raw.req.headers).
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestheaders)
     */
   val headers: Dictionary[String] = js.native
+  
   /**
     * Request information:
     * * acceptEncoding - the request preferred encoding.
@@ -66,110 +94,7 @@ trait Request extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestinfo)
     */
   val info: RequestInfo = js.native
-  /**
-    * An array containing the logged request events.
-    * Note that this array will be empty if route log.collect is set to false.
-    */
-  val logs: js.Array[RequestLog] = js.native
-  /**
-    * The request method in lower case (e.g. 'get', 'post').
-    */
-  val method: HTTP_METHODS_PARTIAL_LOWERCASE = js.native
-  /**
-    * The parsed content-type header. Only available when payload parsing enabled and no payload error occurred.
-    */
-  val mime: String = js.native
-  /**
-    * An object containing the values of params, query, and payload before any validation modifications made. Only set when input validation is performed.
-    */
-  val orig: RequestOrig = js.native
-  /**
-    * An object where each key is a path parameter name with matching value as described in [Path parameters](https://github.com/hapijs/hapi/blob/master/API.md#path-parameters).
-    */
-  val params: Dictionary[String] = js.native
-  /**
-    * An array containing all the path params values in the order they appeared in the path.
-    */
-  val paramsArray: js.Array[String] = js.native
-  /**
-    * The request URI's pathname component.
-    */
-  val path: String = js.native
-  /**
-    * The request payload based on the route payload.output and payload.parse settings.
-    * TODO check this typing and add references / links.
-    */
-  val payload: Readable | Buffer | String | js.Object = js.native
-  /**
-    * Plugin-specific state. Provides a place to store and pass request-level plugin data. The plugins is an object where each key is a plugin name and the value is the state.
-    */
-  var plugins: PluginsStates = js.native
-  /**
-    * An object where each key is the name assigned by a route pre-handler methods function. The values are the raw values provided to the continuation function as argument. For the wrapped response
-    * object, use responses.
-    */
-  val pre: Dictionary[_] = js.native
-  /**
-    * Same as pre but represented as the response object created by the pre method.
-    */
-  val preResponses: Dictionary[_] = js.native
-  /**
-    * By default the object outputted from node's URL parse() method.
-    */
-  val query: RequestQuery = js.native
-  /**
-    * An object containing the Node HTTP server objects. Direct interaction with these raw objects is not recommended.
-    * * req - the node request object.
-    * * res - the node response object.
-    */
-  val raw: Req = js.native
-  /**
-    * Access: read / write (see limitations below).
-    * The response object when set. The object can be modified but must not be assigned another object. To replace the response with another from within an extension point, use reply(response) to
-    * override with a different response.
-    * In case of an aborted request the status code will be set to `disconnectStatusCode`.
-    */
-  var response: ResponseObject | ^[_] = js.native
-  /**
-    * The request route information object and method
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestroute)
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestrouteauthaccessrequest)
-    */
-  val route: RequestRoute = js.native
-  /**
-    * Access: read only and the public server interface.
-    * The server object.
-    */
-  var server: Server = js.native
-  /**
-    * An object containing parsed HTTP state information (cookies) where each key is the cookie name and value is the matching cookie content after processing using any registered cookie definition.
-    */
-  val state: Dictionary[_] = js.native
-  /**
-    * The parsed request URI.
-    */
-  val url: URL_ = js.native
-  /**
-    * Returns `true` when the request is active and processing should continue and `false` when the
-    *  request terminated early or completed its lifecycle. Useful when request processing is a
-    * resource-intensive operation and should be terminated early if the request is no longer active
-    * (e.g. client disconnected or aborted early).
-    */
-  def active(): Boolean = js.native
-  /**
-    * Returns a response which you can pass into the reply interface where:
-    * @param source - the value to set as the source of the reply interface, optional.
-    * @param options - options for the method, optional.
-    * @return ResponseObject
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestgenerateresponsesource-options)
-    */
-  /* tslint:disable-next-line:max-line-length */
-  def generateResponse(): ResponseObject = js.native
-  def generateResponse(source: String): ResponseObject = js.native
-  def generateResponse(source: String, options: Close): ResponseObject = js.native
-  def generateResponse(source: js.Object): ResponseObject = js.native
-  def generateResponse(source: js.Object, options: Close): ResponseObject = js.native
-  def generateResponse(source: Null, options: Close): ResponseObject = js.native
+  
   /**
     * Logs request-specific events. When called, the server emits a 'request' event which can be used by other listeners or plugins. The arguments are:
     * @param tags - a string or an array of strings (e.g. ['error', 'database', 'read']) used to identify the event. Tags are used instead of log levels and provide a much more expressive mechanism
@@ -188,6 +113,98 @@ trait Request extends Podium {
   def log(tags: js.Array[String], data: String): Unit = js.native
   def log(tags: js.Array[String], data: js.Function0[String | js.Object]): Unit = js.native
   def log(tags: js.Array[String], data: js.Object): Unit = js.native
+  
+  /**
+    * An array containing the logged request events.
+    * Note that this array will be empty if route log.collect is set to false.
+    */
+  val logs: js.Array[RequestLog] = js.native
+  
+  /**
+    * The request method in lower case (e.g. 'get', 'post').
+    */
+  val method: HTTP_METHODS_PARTIAL_LOWERCASE = js.native
+  
+  /**
+    * The parsed content-type header. Only available when payload parsing enabled and no payload error occurred.
+    */
+  val mime: String = js.native
+  
+  /**
+    * An object containing the values of params, query, and payload before any validation modifications made. Only set when input validation is performed.
+    */
+  val orig: RequestOrig = js.native
+  
+  /**
+    * An object where each key is a path parameter name with matching value as described in [Path parameters](https://github.com/hapijs/hapi/blob/master/API.md#path-parameters).
+    */
+  val params: Dictionary[String] = js.native
+  
+  /**
+    * An array containing all the path params values in the order they appeared in the path.
+    */
+  val paramsArray: js.Array[String] = js.native
+  
+  /**
+    * The request URI's pathname component.
+    */
+  val path: String = js.native
+  
+  /**
+    * The request payload based on the route payload.output and payload.parse settings.
+    * TODO check this typing and add references / links.
+    */
+  val payload: Readable | Buffer | String | js.Object = js.native
+  
+  /**
+    * Plugin-specific state. Provides a place to store and pass request-level plugin data. The plugins is an object where each key is a plugin name and the value is the state.
+    */
+  var plugins: PluginsStates = js.native
+  
+  /**
+    * An object where each key is the name assigned by a route pre-handler methods function. The values are the raw values provided to the continuation function as argument. For the wrapped response
+    * object, use responses.
+    */
+  val pre: Dictionary[_] = js.native
+  
+  /**
+    * Same as pre but represented as the response object created by the pre method.
+    */
+  val preResponses: Dictionary[_] = js.native
+  
+  /**
+    * By default the object outputted from node's URL parse() method.
+    */
+  val query: RequestQuery = js.native
+  
+  /**
+    * An object containing the Node HTTP server objects. Direct interaction with these raw objects is not recommended.
+    * * req - the node request object.
+    * * res - the node response object.
+    */
+  val raw: Req = js.native
+  
+  /**
+    * Access: read / write (see limitations below).
+    * The response object when set. The object can be modified but must not be assigned another object. To replace the response with another from within an extension point, use reply(response) to
+    * override with a different response.
+    * In case of an aborted request the status code will be set to `disconnectStatusCode`.
+    */
+  var response: ResponseObject | ^[_] = js.native
+  
+  /**
+    * The request route information object and method
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestroute)
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestrouteauthaccessrequest)
+    */
+  val route: RequestRoute = js.native
+  
+  /**
+    * Access: read only and the public server interface.
+    * The server object.
+    */
+  var server: Server = js.native
+  
   /**
     * Changes the request method before the router begins processing the request where:
     * @param method - is the request HTTP method (e.g. 'GET').
@@ -196,6 +213,7 @@ trait Request extends Podium {
     * [See docs](https://hapijs.com/api/17.0.1#-requestsetmethodmethod)
     */
   def setMethod(method: HTTP_METHODS_PARTIAL): Unit = js.native
+  
   /**
     * Changes the request URI before the router begins processing the request where:
     * Can only be called from an 'onRequest' extension method.
@@ -209,5 +227,14 @@ trait Request extends Podium {
   def setUrl(url: String, stripTrailingSlash: Boolean): Unit = js.native
   def setUrl(url: URL_): Unit = js.native
   def setUrl(url: URL_, stripTrailingSlash: Boolean): Unit = js.native
+  
+  /**
+    * An object containing parsed HTTP state information (cookies) where each key is the cookie name and value is the matching cookie content after processing using any registered cookie definition.
+    */
+  val state: Dictionary[_] = js.native
+  
+  /**
+    * The parsed request URI.
+    */
+  val url: URL_ = js.native
 }
-

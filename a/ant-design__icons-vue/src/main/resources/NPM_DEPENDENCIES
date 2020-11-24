@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ant-design/icons-vue" : "5.0.0"
+      "@ant-design/icons-vue" : "5.1.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@ant-design/icons-vue" : "5.0.0"
+      "@ant-design/icons-vue" : "5.1.6"
     }
   ],
   "compile-devDependencies" : [

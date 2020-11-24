@@ -9,7 +9,7 @@ import typings.amapJsApi.amapJsApiStrings.Point
 import typings.amapJsApi.amapJsApiStrings.Polygon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.amapJsApi.anon.Coordinates
@@ -18,26 +18,29 @@ import scala.scalajs.js.annotation._
   - typings.amapJsApi.anon.Geometries
 */
 trait Geometry extends js.Object
-
 object Geometry {
+  
   @scala.inline
   def Coordinates(coordinates: js.Tuple2[Double, Double], `type`: Point): Geometry = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geometry]
   }
+  
   @scala.inline
   def CoordinatesType(coordinates: js.Array[js.Tuple2[Double, Double]], `type`: MultiPoint | LineString | Polygon): Geometry = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geometry]
   }
+  
   @scala.inline
   def CoordinatesArray(coordinates: js.Array[js.Array[js.Tuple2[Double, Double]]], `type`: MultiLineString | MultiPolygon): Geometry = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geometry]
   }
+  
   @scala.inline
   def Geometries(
     geometries: js.Array[
@@ -50,4 +53,3 @@ object Geometry {
     __obj.asInstanceOf[Geometry]
   }
 }
-

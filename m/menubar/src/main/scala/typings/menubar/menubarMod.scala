@@ -39,24 +39,41 @@ import typings.menubar.menubarStrings.windowPosition
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("menubar/lib/Menubar", JSImport.Namespace)
 @js.native
 object menubarMod extends js.Object {
+  
   @js.native
   class Menubar protected () extends EventEmitter {
     def this(app: App) = this()
     def this(app: App, options: PartialOptions) = this()
+    
     var _app: js.Any = js.native
+    
     var _blurTimeout: js.Any = js.native
+    
     var _browserWindow: js.Any = js.native
+    
     var _cachedBounds: js.Any = js.native
+    
     var _isVisible: js.Any = js.native
+    
     var _options: js.Any = js.native
+    
     var _positioner: js.Any = js.native
+    
     var _tray: js.Any = js.native
+    
+    /**
+      * The Electron [App](https://electronjs.org/docs/api/app)
+      * instance.
+      */
+    def app: App = js.native
+    
     var appReady: js.Any = js.native
+    
     /**
       * Callback on tray icon click or double-click.
       *
@@ -64,13 +81,9 @@ object menubarMod extends js.Object {
       * @param bounds
       */
     var clicked: js.Any = js.native
+    
     var createWindow: js.Any = js.native
-    var windowClear: js.Any = js.native
-    /**
-      * The Electron [App](https://electronjs.org/docs/api/app)
-      * instance.
-      */
-    def app: App = js.native
+    
     /**
       * Retrieve a menubar option.
       *
@@ -102,15 +115,18 @@ object menubarMod extends js.Object {
     def getOption_windowPosition(key: windowPosition): js.UndefOr[
         trayLeft | trayBottomLeft | trayRight | trayBottomRight | trayCenter | trayBottomCenter | topLeft | topRight | bottomLeft | bottomRight | topCenter | bottomCenter | leftCenter | rightCenter | center
       ] = js.native
+    
     /**
       * Hide the menubar window.
       */
     def hideWindow(): Unit = js.native
+    
     /**
       * The [electron-positioner](https://github.com/jenslind/electron-positioner)
       * instance.
       */
     def positioner: js.Any = js.native
+    
     def setOption(key: index, value: `false`): Unit = js.native
     def setOption(key: windowPosition, value: bottomCenter): Unit = js.native
     def setOption(key: windowPosition, value: bottomLeft): Unit = js.native
@@ -173,6 +189,7 @@ object menubarMod extends js.Object {
     def setOption_tray(key: tray, value: Tray): Unit = js.native
     @JSName("setOption")
     def setOption_windowPosition(key: windowPosition): Unit = js.native
+    
     /**
       * Show the menubar window.
       *
@@ -180,16 +197,18 @@ object menubarMod extends js.Object {
       */
     def showWindow(): js.Promise[Unit] = js.native
     def showWindow(trayPos: Rectangle): js.Promise[Unit] = js.native
+    
     /**
       * The Electron [Tray](https://electronjs.org/docs/api/tray) instance.
       */
     def tray: Tray = js.native
+    
     /**
       * The Electron [BrowserWindow](https://electronjs.org/docs/api/browser-window)
       * instance, if it's present.
       */
     def window: js.UndefOr[BrowserWindow] = js.native
+    
+    var windowClear: js.Any = js.native
   }
-  
 }
-

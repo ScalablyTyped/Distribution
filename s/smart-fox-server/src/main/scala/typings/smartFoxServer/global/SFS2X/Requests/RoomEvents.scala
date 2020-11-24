@@ -2,7 +2,7 @@ package typings.smartFoxServer.global.SFS2X.Requests
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.RoomEvents")
 @js.native
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   */
 class RoomEvents ()
   extends typings.smartFoxServer.SFS2X.Requests.RoomEvents
-

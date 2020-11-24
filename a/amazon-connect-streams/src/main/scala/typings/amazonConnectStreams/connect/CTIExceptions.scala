@@ -2,14 +2,14 @@ package typings.amazonConnectStreams.connect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CTIExceptions extends js.Object
-
 @JSGlobal("connect.CTIExceptions")
 @js.native
 object CTIExceptions extends js.Object {
+  
   @js.native
   sealed trait ACCESS_DENIED_EXCEPTION extends CTIExceptions
   
@@ -39,6 +39,4 @@ object CTIExceptions extends js.Object {
   
   @js.native
   sealed trait UNAUTHORIZED_EXCEPTION extends CTIExceptions
-  
 }
-

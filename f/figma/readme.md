@@ -11,7 +11,7 @@ Typings are for version 1.0
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 181 |
+| # downloads        | 182 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.gapi.global.gapi.client
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HttpRequest supports promises.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class HttpRequestPromise[T] ()
   extends typings.gapi.gapi.client.HttpRequestPromise[T]
-

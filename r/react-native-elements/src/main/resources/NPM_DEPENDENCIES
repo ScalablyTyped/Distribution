@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-elements" : "2.1.0"
+      "react-native-elements" : "3.0.0-alpha.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-elements" : "2.1.0"
+      "react-native-elements" : "3.0.0-alpha.1"
     }
   ],
   "compile-devDependencies" : [

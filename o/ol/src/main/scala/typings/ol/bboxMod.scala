@@ -3,11 +3,12 @@ package typings.ol
 import typings.ol.extentMod.Extent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/format/filter/Bbox", JSImport.Namespace)
 @js.native
 object bboxMod extends js.Object {
+  
   @js.native
   class default protected ()
     extends typings.ol.filterFilterMod.default {
@@ -17,4 +18,3 @@ object bboxMod extends js.Object {
   
   type Bbox = typings.ol.filterFilterMod.default
 }
-

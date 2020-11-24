@@ -1,34 +1,53 @@
 package typings.materialComponentsWeb.mod
 
 import typings.materialFloatingLabel.adapterMod.MDCFloatingLabelAdapter
+import typings.materialFloatingLabel.anon.LABELFLOATABOVE
+import typings.materialFloatingLabel.anon.PartialMDCFloatingLabelAd
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("material-components-web", "floatingLabel")
 @js.native
 object floatingLabel extends js.Object {
+  
   @js.native
   class MDCFloatingLabel ()
     extends typings.materialFloatingLabel.mod.MDCFloatingLabel
-  
-  @js.native
-  class MDCFloatingLabelFoundation ()
-    extends typings.materialFloatingLabel.mod.MDCFloatingLabelFoundation
-  
   /* static members */
   @js.native
   object MDCFloatingLabel extends js.Object {
-    def attachTo(root: Element): typings.materialFloatingLabel.mod.MDCFloatingLabel = js.native
+    
+    def attachTo(root: Element): typings.materialFloatingLabel.componentMod.MDCFloatingLabel = js.native
   }
   
+  @js.native
+  class MDCFloatingLabelFoundation ()
+    extends typings.materialFloatingLabel.mod.MDCFloatingLabelFoundation {
+    def this(adapter: PartialMDCFloatingLabelAd) = this()
+  }
   /* static members */
   @js.native
   object MDCFloatingLabelFoundation extends js.Object {
-    val cssClasses: typings.materialFloatingLabel.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCFloatingLabelAdapter = js.native
+    
+    def cssClasses: LABELFLOATABOVE = js.native
+    
+    /**
+      * See {@link MDCFloatingLabelAdapter} for typing information on parameters and return types.
+      */
+    def defaultAdapter: MDCFloatingLabelAdapter = js.native
   }
   
+  @js.native
+  object cssClasses extends js.Object {
+    
+    var LABEL_FLOAT_ABOVE: String = js.native
+    
+    var LABEL_REQUIRED: String = js.native
+    
+    var LABEL_SHAKE: String = js.native
+    
+    var ROOT: String = js.native
+  }
 }
-

@@ -12,7 +12,7 @@ Compiles a function to compute the plural forms index for a given value
 | Keywords           | - |
 | # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 390850 |
+| # downloads        | 663281 |
 | # stars            | 0 |
 
 ## Links

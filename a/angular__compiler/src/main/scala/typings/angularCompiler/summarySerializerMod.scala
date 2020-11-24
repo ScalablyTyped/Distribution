@@ -11,18 +11,21 @@ import typings.angularCompiler.staticSymbolResolverMod.ResolvedStaticSymbol
 import typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/aot/summary_serializer", JSImport.Namespace)
 @js.native
 object summarySerializerMod extends js.Object {
+  
   def createForJitStub(outputCtx: OutputContext, reference: StaticSymbol): Unit = js.native
+  
   def deserializeSummaries(
     symbolCache: StaticSymbolCache,
     summaryResolver: SummaryResolver[StaticSymbol],
     libraryFileName: String,
     json: String
   ): ModuleName = js.native
+  
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: Null,
@@ -58,4 +61,3 @@ object summarySerializerMod extends js.Object {
     createExternalSymbolReexports: Boolean
   ): Json = js.native
 }
-

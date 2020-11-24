@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@maxim_mazurok/gapi.client.oauth2" : "2.0.20200213"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@maxim_mazurok/gapi.client.oauth2" : "2.0.20200213"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -2,7 +2,7 @@ package typings.roslib.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roslib", "Service")
 @js.native
@@ -17,10 +17,7 @@ class Service protected () extends js.Object {
     *   * serviceType - the service type, like 'rospy_tutorials/AddTwoInts'
     */
   def this(data: typings.roslib.anon.Ros) = this()
-  // getter
-  var name: String = js.native
-  // getter
-  var serviceType: String = js.native
+  
   /**
     * Advertise this service and call the callback each time a client calls it.
     *
@@ -29,6 +26,7 @@ class Service protected () extends js.Object {
     *   * response - the data which should be sent back to the caller
     */
   def advertise(callback: js.Function2[/* request */ js.Any, /* response */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Calls the service. Returns the service response in the callback.
     *
@@ -44,9 +42,15 @@ class Service protected () extends js.Object {
     callback: js.Function1[/* response */ js.Any, Unit],
     failedCallback: js.Function1[/* error */ js.Any, Unit]
   ): Unit = js.native
+  
+  // getter
+  var name: String = js.native
+  
+  // getter
+  var serviceType: String = js.native
+  
   /**
     * Unadvertise a previously advertised service
     */
   def unadvertise(): Unit = js.native
 }
-

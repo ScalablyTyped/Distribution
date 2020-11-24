@@ -5,7 +5,7 @@ import typings.jupyterlabApputils.sessioncontextMod.ISessionContext.IDialogs
 import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/apputils", "Toolbar")
 @js.native
@@ -14,14 +14,15 @@ import scala.scalajs.js.annotation._
   */
 class Toolbar[T /* <: Widget */] ()
   extends typings.jupyterlabApputils.toolbarMod.Toolbar[T]
-
 @JSImport("@jupyterlab/apputils", "Toolbar")
 @js.native
 object Toolbar extends js.Object {
+  
   /**
     * Create an interrupt toolbar item.
     */
   def createInterruptButton(sessionContext: ISessionContext): Widget = js.native
+  
   /**
     * Create a kernel name indicator item.
     *
@@ -31,6 +32,7 @@ object Toolbar extends js.Object {
     */
   def createKernelNameItem(sessionContext: ISessionContext): Widget = js.native
   def createKernelNameItem(sessionContext: ISessionContext, dialogs: IDialogs): Widget = js.native
+  
   /**
     * Create a kernel status indicator item.
     *
@@ -40,11 +42,13 @@ object Toolbar extends js.Object {
     * It can handle a change to the context or the kernel.
     */
   def createKernelStatusItem(sessionContext: ISessionContext): Widget = js.native
+  
   /**
     * Create a restart toolbar item.
     */
   def createRestartButton(sessionContext: ISessionContext): Widget = js.native
   def createRestartButton(sessionContext: ISessionContext, dialogs: IDialogs): Widget = js.native
+  
   /**
     * Create a toolbar spacer item.
     *
@@ -54,4 +58,3 @@ object Toolbar extends js.Object {
     */
   def createSpacerItem(): Widget = js.native
 }
-

@@ -1,13 +1,13 @@
 package typings.reactMdDialog.nestedDialogContextMod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.react.mod.FC
+import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@react-md/dialog/types/NestedDialogContext", "NestedDialogContextProvider")
 @js.native
-object NestedDialogContextProvider
-  extends TopLevel[FC[js.Object]]
-
+object NestedDialogContextProvider extends js.Object {
+  
+  def apply(hasChildren: NestedDialogContextProviderProps): ReactElement = js.native
+}

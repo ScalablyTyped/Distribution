@@ -3,25 +3,11 @@ package typings.babelCore.mod
 import typings.std.NonNullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ConfigAPI extends js.Object {
-  /**
-    * @see https://babeljs.io/docs/en/next/config-files#apicache
-    */
-  var cache: SimpleCacheConfigurator = js.native
-  /**
-    * @see https://babeljs.io/docs/en/next/config-files#apienv
-    */
-  @JSName("env")
-  var env_Original: EnvFunction = js.native
-  /**
-    * The version string for the Babel version that is loading the config file.
-    *
-    * @see https://babeljs.io/docs/en/next/config-files#apiversion
-    */
-  var version: String = js.native
+  
   def assertVersion(versionRange: String): Boolean = js.native
   /**
     * While `api.version` can be useful in general, it's sometimes nice to just declare your version.
@@ -34,6 +20,12 @@ trait ConfigAPI extends js.Object {
     * @see https://babeljs.io/docs/en/next/config-files#apiassertversionrange
     */
   def assertVersion(versionRange: Double): Boolean = js.native
+  
+  /**
+    * @see https://babeljs.io/docs/en/next/config-files#apicache
+    */
+  var cache: SimpleCacheConfigurator = js.native
+  
   // undocumented; currently hardcoded to return 'false'
   // async(): boolean
   /**
@@ -54,6 +46,7 @@ trait ConfigAPI extends js.Object {
     * @see https://babeljs.io/docs/en/next/config-files#apicallercb
     */
   def caller[T /* <: SimpleCacheKey */](callerCallback: js.Function1[/* caller */ js.UndefOr[TransformCaller], T]): T = js.native
+  
   /**
     * @returns the current `envName` string
     */
@@ -76,5 +69,16 @@ trait ConfigAPI extends js.Object {
     * @see https://babeljs.io/docs/en/next/config-files#apienv
     */
   def env[T /* <: SimpleCacheKey */](envCallback: js.Function1[/* envName */ NonNullable[js.UndefOr[String]], T]): T = js.native
+  /**
+    * @see https://babeljs.io/docs/en/next/config-files#apienv
+    */
+  @JSName("env")
+  var env_Original: EnvFunction = js.native
+  
+  /**
+    * The version string for the Babel version that is loading the config file.
+    *
+    * @see https://babeljs.io/docs/en/next/config-files#apiversion
+    */
+  var version: String = js.native
 }
-

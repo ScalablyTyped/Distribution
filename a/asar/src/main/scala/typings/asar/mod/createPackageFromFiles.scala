@@ -2,11 +2,12 @@ package typings.asar.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asar", "createPackageFromFiles")
 @js.native
 object createPackageFromFiles extends js.Object {
+  
   def apply(src: String, dest: String, filenames: js.Array[String]): js.Promise[Unit] = js.native
   def apply(
     src: String,
@@ -24,4 +25,3 @@ object createPackageFromFiles extends js.Object {
     options: CreateOptions
   ): js.Promise[Unit] = js.native
 }
-

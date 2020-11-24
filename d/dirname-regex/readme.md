@@ -12,7 +12,7 @@ Regular expression for matching the directory part of a file path.
 | Keywords           | dir, directory, dirname, expression, filepath, match, path, regex, regexp, regular |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 326 |
+| # downloads        | 505 |
 | # stars            | 0 |
 
 ## Links

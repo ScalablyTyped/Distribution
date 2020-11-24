@@ -2,7 +2,7 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new Quat object.
@@ -44,18 +44,18 @@ class Quat ()
   def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
 }
-
 /* static members */
 @JSGlobal("pc.Quat")
 @js.native
 object Quat extends js.Object {
+  
   /**
     * A constant quaternion set to [0, 0, 0, 1] (the identity).
     */
   val IDENTITY: typings.playcanvas.pc.Quat = js.native
+  
   /**
     * A constant quaternion set to [0, 0, 0, 0].
     */
   val ZERO: typings.playcanvas.pc.Quat = js.native
 }
-

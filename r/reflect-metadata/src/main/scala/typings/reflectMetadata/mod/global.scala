@@ -7,13 +7,15 @@ import typings.std.PropertyDecorator
 import typings.std.PropertyDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object Reflect extends js.Object {
+    
     /**
       * Applies a set of decorators to a target object.
       * @param decorators An array of decorators.
@@ -82,6 +84,7 @@ object global extends js.Object {
       propertyKey: js.Symbol,
       attributes: PropertyDescriptor
     ): PropertyDescriptor = js.native
+    
     /**
       * Define a unique metadata entry on the target.
       * @param metadataKey A key used to store and retrieve metadata.
@@ -139,6 +142,7 @@ object global extends js.Object {
       */
     def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: js.Object, propertyKey: String): Unit = js.native
     def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: js.Object, propertyKey: js.Symbol): Unit = js.native
+    
     /**
       * Deletes the metadata entry from the target object with the provided key.
       * @param metadataKey A key used to store and retrieve metadata.
@@ -186,6 +190,7 @@ object global extends js.Object {
       */
     def deleteMetadata(metadataKey: js.Any, target: js.Object, propertyKey: String): Boolean = js.native
     def deleteMetadata(metadataKey: js.Any, target: js.Object, propertyKey: js.Symbol): Boolean = js.native
+    
     /**
       * Gets the metadata value for the provided metadata key on the target object or its prototype chain.
       * @param metadataKey A key used to store and retrieve metadata.
@@ -233,6 +238,7 @@ object global extends js.Object {
       */
     def getMetadata(metadataKey: js.Any, target: js.Object, propertyKey: String): js.Any = js.native
     def getMetadata(metadataKey: js.Any, target: js.Object, propertyKey: js.Symbol): js.Any = js.native
+    
     /**
       * Gets the metadata keys defined on the target object or its prototype chain.
       * @param target The target object on which the metadata is defined.
@@ -278,6 +284,7 @@ object global extends js.Object {
       */
     def getMetadataKeys(target: js.Object, propertyKey: String): js.Array[_] = js.native
     def getMetadataKeys(target: js.Object, propertyKey: js.Symbol): js.Array[_] = js.native
+    
     /**
       * Gets the metadata value for the provided metadata key on the target object.
       * @param metadataKey A key used to store and retrieve metadata.
@@ -325,6 +332,7 @@ object global extends js.Object {
       */
     def getOwnMetadata(metadataKey: js.Any, target: js.Object, propertyKey: String): js.Any = js.native
     def getOwnMetadata(metadataKey: js.Any, target: js.Object, propertyKey: js.Symbol): js.Any = js.native
+    
     /**
       * Gets the unique metadata keys defined on the target object.
       * @param target The target object on which the metadata is defined.
@@ -370,6 +378,7 @@ object global extends js.Object {
       */
     def getOwnMetadataKeys(target: js.Object, propertyKey: String): js.Array[_] = js.native
     def getOwnMetadataKeys(target: js.Object, propertyKey: js.Symbol): js.Array[_] = js.native
+    
     /**
       * Gets a value indicating whether the target object or its prototype chain has the provided metadata key defined.
       * @param metadataKey A key used to store and retrieve metadata.
@@ -417,6 +426,7 @@ object global extends js.Object {
       */
     def hasMetadata(metadataKey: js.Any, target: js.Object, propertyKey: String): Boolean = js.native
     def hasMetadata(metadataKey: js.Any, target: js.Object, propertyKey: js.Symbol): Boolean = js.native
+    
     /**
       * Gets a value indicating whether the target object has the provided metadata key defined.
       * @param metadataKey A key used to store and retrieve metadata.
@@ -464,6 +474,7 @@ object global extends js.Object {
       */
     def hasOwnMetadata(metadataKey: js.Any, target: js.Object, propertyKey: String): Boolean = js.native
     def hasOwnMetadata(metadataKey: js.Any, target: js.Object, propertyKey: js.Symbol): Boolean = js.native
+    
     /**
       * A default metadata decorator factory that can be used on a class, class member, or parameter.
       * @param metadataKey The key for the metadata entry.
@@ -506,6 +517,4 @@ object global extends js.Object {
       */
     def metadata(metadataKey: js.Any, metadataValue: js.Any): FnCall = js.native
   }
-  
 }
-

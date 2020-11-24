@@ -2,11 +2,12 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babel-plugin-react-html-attrs", "useLayoutEffect")
 @js.native
 object useLayoutEffect extends js.Object {
+  
   /**
     * The signature is identical to `useEffect`, but it fires synchronously after all DOM mutations.
     * Use this to read layout from the DOM and synchronously re-render. Updates scheduled inside
@@ -23,4 +24,3 @@ object useLayoutEffect extends js.Object {
   def apply(effect: EffectCallback): Unit = js.native
   def apply(effect: EffectCallback, deps: DependencyList): Unit = js.native
 }
-

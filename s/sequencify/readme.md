@@ -11,8 +11,8 @@ A module for sequencing tasks and dependencies
 | Full name          | sequencify |
 | Keywords           | task, sequence, sequencer, compose |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 32278476 |
+| # dependents       | 17 |
+| # downloads        | 25355545 |
 | # stars            | 7 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.gsap.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gsap", "Animation")
 @js.native
@@ -16,4 +16,3 @@ class Animation ()
   def this(duration: js.UndefOr[scala.Nothing], vars: js.Any) = this()
   def this(duration: Double, vars: js.Any) = this()
 }
-

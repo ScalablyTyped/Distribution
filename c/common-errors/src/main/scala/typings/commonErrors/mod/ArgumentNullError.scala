@@ -2,7 +2,7 @@ package typings.commonErrors.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("common-errors", "ArgumentNullError")
 @js.native
@@ -15,4 +15,3 @@ class ArgumentNullError protected () extends ArgumentError {
   def this(argumentName: String) = this()
   def this(argumentName: String, inner_error: Error) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.bson.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bson", "DBRef")
 @js.native
@@ -14,8 +14,10 @@ class DBRef protected () extends js.Object {
     */
   def this(namespace: String, oid: ObjectId) = this()
   def this(namespace: String, oid: ObjectId, db: String) = this()
+  
   var db: js.UndefOr[String] = js.native
+  
   var namespace: String = js.native
+  
   var oid: ObjectId = js.native
 }
-

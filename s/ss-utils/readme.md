@@ -1,7 +1,7 @@
 
 # Scala.js typings for ss-utils
 
-Typings are for version 0.2.5
+Typings are for version 0.2.6
 
 ## Library description:
 ServiceStack's JavaScript library providing a number of convenience utilities in developing javascript web apps. Integrates with ServiceStack's Server features including Error Handling, Validation and Server Events
@@ -12,7 +12,7 @@ ServiceStack's JavaScript library providing a number of convenience utilities in
 | Keywords           | servicestack, utils, validation, form-binding, bootstrap-forms, ajax, serverevents, declarative, events, error-handling, data-binding |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 4061 |
+| # downloads        | 1892 |
 | # stars            | 0 |
 
 ## Links

@@ -1,17 +1,15 @@
 package typings.reactDates.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.moment.mod.MomentFormatSpecification
 import typings.moment.mod.MomentInput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// utils/toISODateString.js
 @JSImport("react-dates", "toISODateString")
 @js.native
-object toISODateString
-  extends TopLevel[
-      js.Function2[/* date */ MomentInput, /* currentFormat */ MomentFormatSpecification, String | Null]
-    ]
-
+object toISODateString extends js.Object {
+  
+  def apply(date: MomentInput): String | Null = js.native
+  def apply(date: MomentInput, currentFormat: MomentFormatSpecification): String | Null = js.native
+}

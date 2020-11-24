@@ -1,25 +1,25 @@
 organization := "org.scalablytyped"
 name := "actions-on-google"
-version := "2.12.0-fd34b0"
+version := "2.13.0-3d1ad7"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20200710Z-0d87db",
-  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20200210Z-3a735c",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20200515Z-3cac79",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20200226Z-1db63e",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20200706Z-53ce1b",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200722Z-ebd859",
-  "org.scalablytyped" %%% "gaxios" % "3.1.0-8e0280",
-  "org.scalablytyped" %%% "google-auth-library" % "6.0.6-a83bed",
-  "org.scalablytyped" %%% "gtoken" % "5.0.3-6543a6",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20200722Z-298525",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20200519Z-556671",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-3a906b",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20200519Z-4f6d32",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20201013Z-d0abc5",
+  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20200210Z-7b4fa7",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20201002Z-931cf5",
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20200226Z-423206",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20201111Z-c593b9",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200921Z-c653a3",
+  "org.scalablytyped" %%% "gaxios" % "4.0.1-63b11d",
+  "org.scalablytyped" %%% "google-auth-library" % "6.1.3-e2e694",
+  "org.scalablytyped" %%% "gtoken" % "5.1.0-218662",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20200722Z-5d04c6",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-ad1aba",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20201002Z-dccf4c",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20201002Z-1cff6e",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20201117Z-237e1c",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

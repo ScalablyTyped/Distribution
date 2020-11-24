@@ -2,7 +2,7 @@ package typings.officeUiFabricReact.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "Rectangle")
 @js.native
@@ -29,4 +29,3 @@ class Rectangle ()
   def this(left: Double, right: Double, top: js.UndefOr[scala.Nothing], bottom: Double) = this()
   def this(left: Double, right: Double, top: Double, bottom: Double) = this()
 }
-

@@ -10,9 +10,9 @@ Add custom message to Jest expects
 | ------------------ | :-------------: |
 | Full name          | jest-expect-message |
 | Keywords           | jest, expect, message, matchers, assertions, test |
-| # releases         | 5 |
+| # releases         | 3 |
 | # dependents       | 9 |
-| # downloads        | 706375 |
+| # downloads        | 1372237 |
 | # stars            | 0 |
 
 ## Links

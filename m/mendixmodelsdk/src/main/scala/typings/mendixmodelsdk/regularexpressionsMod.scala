@@ -1,6 +1,5 @@
 package typings.mendixmodelsdk
 
-import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.projectsMod.projects.Document
 import typings.mendixmodelsdk.projectsMod.projects.FolderBase
@@ -10,11 +9,12 @@ import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/regularexpressions", JSImport.Namespace)
 @js.native
 object regularexpressionsMod extends js.Object {
+  
   @js.native
   class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
@@ -23,17 +23,18 @@ object regularexpressionsMod extends js.Object {
   
   @js.native
   object regularexpressions extends js.Object {
+    
     /**
       * Interfaces and instance classes for types from the Mendix sub meta model `RegularExpressions`.
       */
     /**
-      * See: {@link https://docs.mendix.com/refguide7/regular-expressions relevant section in reference guide}
+      * See: {@link https://docs.mendix.com/refguide/regular-expressions relevant section in reference guide}
       */
     @js.native
     trait IRegularExpression extends IDocument
     
     /**
-      * See: {@link https://docs.mendix.com/refguide7/regular-expressions relevant section in reference guide}
+      * See: {@link https://docs.mendix.com/refguide/regular-expressions relevant section in reference guide}
       */
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
@@ -53,27 +54,26 @@ object regularexpressionsMod extends js.Object {
         isPartial: Boolean,
         container: IFolderBase
       ) = this()
-      @JSName("model")
-      var model_FRegularExpression: IModel = js.native
+      
       @JSName("containerAsFolderBase")
       def containerAsFolderBase_MRegularExpression: FolderBase = js.native
+      
       def regEx: String = js.native
       def regEx_=(newValue: String): Unit = js.native
     }
-    
     /* static members */
     @js.native
     object RegularExpression extends js.Object {
-      var structureTypeName: String = js.native
-      var versionInfo: StructureVersionInfo = js.native
+      
       /**
         * Creates a new RegularExpression unit in the SDK and on the server.
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       def createIn(container: IFolderBase): RegularExpression = js.native
+      
+      var structureTypeName: String = js.native
+      
+      var versionInfo: StructureVersionInfo = js.native
     }
-    
   }
-  
 }
-

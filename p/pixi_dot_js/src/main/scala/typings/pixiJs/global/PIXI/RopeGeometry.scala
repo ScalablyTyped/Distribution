@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * RopeGeometry allows you to draw a geometry across several points and then manipulate these points.
@@ -35,4 +35,3 @@ class RopeGeometry ()
   def this(width: Double, points: js.UndefOr[scala.Nothing], textureScale: Double) = this()
   def this(width: Double, points: js.Array[typings.pixiJs.PIXI.Point], textureScale: Double) = this()
 }
-

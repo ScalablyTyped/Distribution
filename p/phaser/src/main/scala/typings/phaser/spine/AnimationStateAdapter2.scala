@@ -2,12 +2,12 @@ package typings.phaser.spine
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AnimationStateAdapter2 extends AnimationStateListener2
-
 object AnimationStateAdapter2 {
+  
   @scala.inline
   def apply(
     complete: TrackEntry => Unit,
@@ -21,4 +21,3 @@ object AnimationStateAdapter2 {
     __obj.asInstanceOf[AnimationStateAdapter2]
   }
 }
-

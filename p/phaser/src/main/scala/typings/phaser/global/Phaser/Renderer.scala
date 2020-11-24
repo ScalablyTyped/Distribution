@@ -9,25 +9,14 @@ import typings.std.HTMLCanvasElement
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Renderer")
 @js.native
 object Renderer extends js.Object {
+  
   @js.native
   object Canvas extends js.Object {
-    /**
-      * The Canvas Renderer is responsible for managing 2D canvas rendering contexts, including the one used by the Game's canvas. It tracks the internal state of a given context and can renderer textured Game Objects to it, taking into account alpha, blending, and scaling.
-      */
-    @js.native
-    class CanvasRenderer protected ()
-      extends typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer {
-      /**
-        * 
-        * @param game The Phaser Game instance that owns this renderer.
-        */
-      def this(game: typings.phaser.Phaser.Game) = this()
-    }
     
     /**
       * Returns an array which maps the default blend modes to supported Canvas blend modes.
@@ -35,6 +24,7 @@ object Renderer extends js.Object {
       * If the browser doesn't support a blend mode, it will default to the normal `source-over` blend mode.
       */
     def GetBlendModes(): js.Array[_] = js.native
+    
     /**
       * Takes a reference to the Canvas Renderer, a Canvas Rendering Context, a Game Object, a Camera and a parent matrix
       * and then performs the following steps:
@@ -67,10 +57,24 @@ object Renderer extends js.Object {
       camera: Camera,
       parentMatrix: TransformMatrix
     ): Boolean = js.native
+    
+    /**
+      * The Canvas Renderer is responsible for managing 2D canvas rendering contexts, including the one used by the Game's canvas. It tracks the internal state of a given context and can renderer textured Game Objects to it, taking into account alpha, blending, and scaling.
+      */
+    @js.native
+    class CanvasRenderer protected ()
+      extends typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer {
+      /**
+        * 
+        * @param game The Phaser Game instance that owns this renderer.
+        */
+      def this(game: typings.phaser.Phaser.Game) = this()
+    }
   }
   
   @js.native
   object Snapshot extends js.Object {
+    
     /**
       * Takes a snapshot of an area from the current frame displayed by a canvas.
       * 
@@ -80,6 +84,7 @@ object Renderer extends js.Object {
       * @param config The snapshot configuration object.
       */
     def Canvas(sourceCanvas: HTMLCanvasElement, config: SnapshotState): Unit = js.native
+    
     /**
       * Takes a snapshot of an area from the current frame displayed by a WebGL canvas.
       * 
@@ -93,68 +98,10 @@ object Renderer extends js.Object {
   
   @js.native
   object WebGL extends js.Object {
-    /**
-      * WebGLPipeline is a class that describes the way elements will be renderered
-      * in WebGL, specially focused on batching vertices (batching is not provided).
-      * Pipelines are mostly used for describing 2D rendering passes but it's
-      * flexible enough to be used for any type of rendering including 3D.
-      * Internally WebGLPipeline will handle things like compiling shaders,
-      * creating vertex buffers, assigning primitive topology and binding
-      * vertex attributes.
-      * 
-      * The config properties are:
-      * - game: Current game instance.
-      * - renderer: Current WebGL renderer.
-      * - gl: Current WebGL context.
-      * - topology: This indicates how the primitives are rendered. The default value is GL_TRIANGLES.
-      *              Here is the full list of rendering primitives (https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants).
-      * - vertShader: Source for vertex shader as a string.
-      * - fragShader: Source for fragment shader as a string.
-      * - vertexCapacity: The amount of vertices that shall be allocated
-      * - vertexSize: The size of a single vertex in bytes.
-      * - vertices: An optional buffer of vertices
-      * - attributes: An array describing the vertex attributes
-      * 
-      * The vertex attributes properties are:
-      * - name : String - Name of the attribute in the vertex shader
-      * - size : integer - How many components describe the attribute. For ex: vec3 = size of 3, float = size of 1
-      * - type : GLenum - WebGL type (gl.BYTE, gl.SHORT, gl.UNSIGNED_BYTE, gl.UNSIGNED_SHORT, gl.FLOAT)
-      * - normalized : boolean - Is the attribute normalized
-      * - offset : integer - The offset in bytes to the current attribute in the vertex. Equivalent to offsetof(vertex, attrib) in C
-      * Here you can find more information of how to describe an attribute:
-      * - https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer
-      */
-    @js.native
-    class WebGLPipeline protected ()
-      extends typings.phaser.Phaser.Renderer.WebGL.WebGLPipeline {
-      /**
-        * 
-        * @param config The configuration object for this WebGL Pipeline, as described above.
-        */
-      def this(config: js.Object) = this()
-    }
-    
-    /**
-      * WebGLRenderer is a class that contains the needed functionality to keep the
-      * WebGLRenderingContext state clean. The main idea of the WebGLRenderer is to keep track of
-      * any context change that happens for WebGL rendering inside of Phaser. This means
-      * if raw webgl functions are called outside the WebGLRenderer of the Phaser WebGL
-      * rendering ecosystem they might pollute the current WebGLRenderingContext state producing
-      * unexpected behavior. It's recommended that WebGL interaction is done through
-      * WebGLRenderer and/or WebGLPipeline.
-      */
-    @js.native
-    class WebGLRenderer protected ()
-      extends typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer {
-      /**
-        * 
-        * @param game The Game instance which owns this WebGL Renderer.
-        */
-      def this(game: typings.phaser.Phaser.Game) = this()
-    }
     
     @js.native
     object Pipelines extends js.Object {
+      
       /**
         * BitmapMaskPipeline handles all bitmap masking rendering in WebGL. It works by using 
         * sampling two texture on the fragment shader and using the fragment's alpha to clip the region.
@@ -236,22 +183,24 @@ object Renderer extends js.Object {
           */
         def this(config: js.Object) = this()
       }
-      
     }
     
     @js.native
     object Utils extends js.Object {
+      
       /**
         * Counts how many attributes of 32 bits a vertex has
         * @param attributes Array of attributes
         * @param glContext WebGLContext used for check types
         */
       def getComponentCount(attributes: js.Array[_], glContext: WebGLRenderingContext): Double = js.native
+      
       /**
         * Unpacks a Uint24 RGB into an array of floats of ranges of 0.0 and 1.0
         * @param rgb RGB packed as a Uint24
         */
       def getFloatsFromUintRGB(rgb: Double): js.Array[_] = js.native
+      
       /**
         * Packs a Uint24, representing RGB components, with a Float32, representing
         * the alpha component, with a range between 0.0 and 1.0 and return a Uint32
@@ -259,6 +208,7 @@ object Renderer extends js.Object {
         * @param a Float32 representing Alpha component
         */
       def getTintAppendFloatAlpha(rgb: Double, a: Double): Double = js.native
+      
       /**
         * Packs a Uint24, representing RGB components, with a Float32, representing
         * the alpha component, with a range between 0.0 and 1.0 and return a 
@@ -267,6 +217,7 @@ object Renderer extends js.Object {
         * @param a Float32 representing Alpha component
         */
       def getTintAppendFloatAlphaAndSwap(rgb: Double, a: Double): Double = js.native
+      
       /**
         * Packs four floats on a range from 0.0 to 1.0 into a single Uint32
         * @param r Red component in a range from 0.0 to 1.0
@@ -277,7 +228,64 @@ object Renderer extends js.Object {
       def getTintFromFloats(r: Double, g: Double, b: Double, a: Double): Double = js.native
     }
     
+    /**
+      * WebGLPipeline is a class that describes the way elements will be renderered
+      * in WebGL, specially focused on batching vertices (batching is not provided).
+      * Pipelines are mostly used for describing 2D rendering passes but it's
+      * flexible enough to be used for any type of rendering including 3D.
+      * Internally WebGLPipeline will handle things like compiling shaders,
+      * creating vertex buffers, assigning primitive topology and binding
+      * vertex attributes.
+      * 
+      * The config properties are:
+      * - game: Current game instance.
+      * - renderer: Current WebGL renderer.
+      * - gl: Current WebGL context.
+      * - topology: This indicates how the primitives are rendered. The default value is GL_TRIANGLES.
+      *              Here is the full list of rendering primitives (https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants).
+      * - vertShader: Source for vertex shader as a string.
+      * - fragShader: Source for fragment shader as a string.
+      * - vertexCapacity: The amount of vertices that shall be allocated
+      * - vertexSize: The size of a single vertex in bytes.
+      * - vertices: An optional buffer of vertices
+      * - attributes: An array describing the vertex attributes
+      * 
+      * The vertex attributes properties are:
+      * - name : String - Name of the attribute in the vertex shader
+      * - size : integer - How many components describe the attribute. For ex: vec3 = size of 3, float = size of 1
+      * - type : GLenum - WebGL type (gl.BYTE, gl.SHORT, gl.UNSIGNED_BYTE, gl.UNSIGNED_SHORT, gl.FLOAT)
+      * - normalized : boolean - Is the attribute normalized
+      * - offset : integer - The offset in bytes to the current attribute in the vertex. Equivalent to offsetof(vertex, attrib) in C
+      * Here you can find more information of how to describe an attribute:
+      * - https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer
+      */
+    @js.native
+    class WebGLPipeline protected ()
+      extends typings.phaser.Phaser.Renderer.WebGL.WebGLPipeline {
+      /**
+        * 
+        * @param config The configuration object for this WebGL Pipeline, as described above.
+        */
+      def this(config: js.Object) = this()
+    }
+    
+    /**
+      * WebGLRenderer is a class that contains the needed functionality to keep the
+      * WebGLRenderingContext state clean. The main idea of the WebGLRenderer is to keep track of
+      * any context change that happens for WebGL rendering inside of Phaser. This means
+      * if raw webgl functions are called outside the WebGLRenderer of the Phaser WebGL
+      * rendering ecosystem they might pollute the current WebGLRenderingContext state producing
+      * unexpected behavior. It's recommended that WebGL interaction is done through
+      * WebGLRenderer and/or WebGLPipeline.
+      */
+    @js.native
+    class WebGLRenderer protected ()
+      extends typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer {
+      /**
+        * 
+        * @param game The Game instance which owns this WebGL Renderer.
+        */
+      def this(game: typings.phaser.Phaser.Game) = this()
+    }
   }
-  
 }
-

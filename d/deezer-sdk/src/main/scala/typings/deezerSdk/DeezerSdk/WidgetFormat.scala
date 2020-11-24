@@ -2,7 +2,7 @@ package typings.deezerSdk.DeezerSdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://developers.deezer.com/sdk/javascript/player#options | Player options}
@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
   - typings.deezerSdk.deezerSdkStrings.classic
 */
 trait WidgetFormat extends js.Object
-
 object WidgetFormat {
+  
   @scala.inline
   def classic: typings.deezerSdk.deezerSdkStrings.classic = "classic".asInstanceOf[typings.deezerSdk.deezerSdkStrings.classic]
+  
   @scala.inline
   def square: typings.deezerSdk.deezerSdkStrings.square = "square".asInstanceOf[typings.deezerSdk.deezerSdkStrings.square]
 }
-

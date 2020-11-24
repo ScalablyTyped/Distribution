@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.luminoMessaging.mod.ConflatableMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A singleton conflatable `'activenotebookpanel-changed'` message.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/notebook/lib/notebooktools", "NotebookTools.ActiveNotebookPanelMessage")
 @js.native
 object ActiveNotebookPanelMessage extends TopLevel[ConflatableMessage]
-

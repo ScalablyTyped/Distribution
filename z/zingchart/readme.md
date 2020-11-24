@@ -4,19 +4,19 @@
 Typings are for version 2.8
 
 ## Library description:
-A npm package for easy downloading of ZingChart.
+Our JavaScript charting library is a commercial product. But the full branded version is free to try, forever.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | zingchart |
-| Keywords           | zingchart, chart, charting, javascript, charts, html5, charts |
-| # releases         | 13 |
-| # dependents       | 4 |
-| # downloads        | 62937 |
+| Keywords           | zingchart, chart, charts, charting, javascript, javascript charts, html5, interactive maps |
+| # releases         | 10 |
+| # dependents       | 5 |
+| # downloads        | 94904 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/zingchart/ZingChart)
+- [Homepage](https://www.zingchart.com)
 - [Bugs](https://github.com/zingchart/ZingChart/issues)
 - [Repository](https://github.com/zingchart/ZingChart)
 - [Npm](https://www.npmjs.com/package/zingchart)

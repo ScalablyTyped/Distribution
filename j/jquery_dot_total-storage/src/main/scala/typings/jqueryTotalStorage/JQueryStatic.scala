@@ -2,12 +2,11 @@ package typings.jqueryTotalStorage
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQueryStatic extends js.Object {
-  @JSName("totalStorage")
-  var totalStorage_Original: JQueryTotalStorage = js.native
+  
   /**
     * @desc Set or get a key's value
     * @param key Key to set.
@@ -18,5 +17,6 @@ trait JQueryStatic extends js.Object {
   def totalStorage(key: String, value: js.UndefOr[scala.Nothing], options: JQueryTotalStorageOptions): js.Any = js.native
   def totalStorage(key: String, value: js.Any): js.Any = js.native
   def totalStorage(key: String, value: js.Any, options: JQueryTotalStorageOptions): js.Any = js.native
+  @JSName("totalStorage")
+  var totalStorage_Original: JQueryTotalStorage = js.native
 }
-

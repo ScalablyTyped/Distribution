@@ -2,7 +2,7 @@ package typings.rx.rxExperimentalMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.experimental", "Subject")
 @js.native
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   */
 class SubjectCls[T] ()
   extends typings.rx.Rx.Subject[T]
-

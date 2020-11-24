@@ -3,7 +3,7 @@ package typings.googlemaps.global.google.maps
 import typings.googlemaps.google.maps.ReadonlyMarkerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker Maps JavaScript API}
@@ -20,11 +20,11 @@ class Marker ()
   extends typings.googlemaps.google.maps.Marker {
   def this(opts: ReadonlyMarkerOptions) = this()
 }
-
 /* static members */
 @JSGlobal("google.maps.Marker")
 @js.native
 object Marker extends js.Object {
+  
   /**
     * The maximum default `z-index` that the API will assign to a marker. You
     * may set a higher `z-index` to bring a marker to the front.
@@ -32,4 +32,3 @@ object Marker extends js.Object {
     */
   val MAX_ZINDEX: Double = js.native
 }
-

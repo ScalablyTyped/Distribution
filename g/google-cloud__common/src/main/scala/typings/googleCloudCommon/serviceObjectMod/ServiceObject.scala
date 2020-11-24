@@ -7,7 +7,7 @@ import typings.teenyRequest.mod.Request
 import typings.teenyRequest.mod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ServiceObject is a base class, meant to be inherited from by a "service
@@ -24,24 +24,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ServiceObject[T] protected () extends EventEmitter {
   def this(config: ServiceObjectConfig) = this()
+  
   var baseUrl: js.UndefOr[String] = js.native
-  var createMethod: js.Any = js.native
-  var id: js.UndefOr[String] = js.native
-  var interceptors: js.Array[Interceptor] = js.native
-  var metadata: Metadata = js.native
-  var methods: Methods = js.native
-  var parent: ServiceObjectParent = js.native
-  var pollIntervalMs: js.UndefOr[Double] = js.native
-  /**
-    * Make an authenticated API request.
-    *
-    * @private
-    *
-    * @param {object} reqOpts - Request options that are passed to `request`.
-    * @param {string} reqOpts.uri - A URI relative to the baseUrl.
-    * @param {function} callback - The callback function passed to `request`.
-    */
-  var request_ : js.Any = js.native
+  
   /**
     * Create the object.
     *
@@ -55,6 +40,9 @@ class ServiceObject[T] protected () extends EventEmitter {
   def create(callback: CreateCallback[T]): Unit = js.native
   def create(options: CreateOptions): js.Promise[CreateResponse[T]] = js.native
   def create(options: CreateOptions, callback: CreateCallback[T]): Unit = js.native
+  
+  var createMethod: js.Any = js.native
+  
   /**
     * Delete the object.
     *
@@ -66,6 +54,7 @@ class ServiceObject[T] protected () extends EventEmitter {
   def delete(callback: DeleteCallback): Unit = js.native
   def delete(options: DeleteOptions): js.Promise[js.Array[Response[_]]] = js.native
   def delete(options: DeleteOptions, callback: DeleteCallback): Unit = js.native
+  
   /**
     * Check if the object exists.
     *
@@ -77,6 +66,7 @@ class ServiceObject[T] protected () extends EventEmitter {
   def exists(callback: ExistsCallback): Unit = js.native
   def exists(options: ExistsOptions): js.Promise[js.Array[Boolean]] = js.native
   def exists(options: ExistsOptions, callback: ExistsCallback): Unit = js.native
+  
   /**
     * Get the object if it exists. Optionally have the object created if an
     * options object is provided with `autoCreate: true`.
@@ -93,6 +83,7 @@ class ServiceObject[T] protected () extends EventEmitter {
   def get(callback: InstanceResponseCallback[T]): Unit = js.native
   def get(options: GetOrCreateOptions): js.Promise[GetResponse[T]] = js.native
   def get(options: GetOrCreateOptions, callback: InstanceResponseCallback[T]): Unit = js.native
+  
   /**
     * Get the metadata of this object.
     *
@@ -105,10 +96,24 @@ class ServiceObject[T] protected () extends EventEmitter {
   def getMetadata(callback: MetadataCallback): Unit = js.native
   def getMetadata(options: GetMetadataOptions): js.Promise[MetadataResponse] = js.native
   def getMetadata(options: GetMetadataOptions, callback: MetadataCallback): Unit = js.native
+  
   /**
     * Return the user's custom request interceptors.
     */
   def getRequestInterceptors(): js.Array[js.Function] = js.native
+  
+  var id: js.UndefOr[String] = js.native
+  
+  var interceptors: js.Array[Interceptor] = js.native
+  
+  var metadata: Metadata = js.native
+  
+  var methods: Methods = js.native
+  
+  var parent: ServiceObjectParent = js.native
+  
+  var pollIntervalMs: js.UndefOr[Double] = js.native
+  
   /**
     * Make an authenticated API request.
     *
@@ -118,6 +123,7 @@ class ServiceObject[T] protected () extends EventEmitter {
     */
   def request(reqOpts: DecorateRequestOptions): js.Promise[RequestResponse] = js.native
   def request(reqOpts: DecorateRequestOptions, callback: BodyResponseCallback): Unit = js.native
+  
   /**
     * Make an authenticated API request.
     *
@@ -125,6 +131,18 @@ class ServiceObject[T] protected () extends EventEmitter {
     * @param {string} reqOpts.uri - A URI relative to the baseUrl.
     */
   def requestStream(reqOpts: DecorateRequestOptions): Request = js.native
+  
+  /**
+    * Make an authenticated API request.
+    *
+    * @private
+    *
+    * @param {object} reqOpts - Request options that are passed to `request`.
+    * @param {string} reqOpts.uri - A URI relative to the baseUrl.
+    * @param {function} callback - The callback function passed to `request`.
+    */
+  var request_ : js.Any = js.native
+  
   /**
     * Set the metadata for this object.
     *
@@ -139,4 +157,3 @@ class ServiceObject[T] protected () extends EventEmitter {
   def setMetadata(metadata: Metadata, options: SetMetadataOptions): js.Promise[SetMetadataResponse] = js.native
   def setMetadata(metadata: Metadata, options: SetMetadataOptions, callback: MetadataCallback): Unit = js.native
 }
-

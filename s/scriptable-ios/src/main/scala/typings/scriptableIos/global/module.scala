@@ -2,7 +2,7 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _The current module._
@@ -11,10 +11,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("module")
 @js.native
 object module extends js.Object {
+  
   /**
     * _Exported functions and modules._
     *
-    * Values assigned to the `exports` are returned by the global `importModule` function when the module is imported.
+    * Values assigned to `exports` are returned by the global `importModule` function when the module is imported.
     *
     * `exports` can be of any type but by default it is an empty object. Consider the following example which exports the `area` and `circumference` functions.
     *
@@ -36,6 +37,7 @@ object module extends js.Object {
     * @see https://docs.scriptable.app/module/#exports
     */
   var exports: js.Any = js.native
+  
   /**
     * _Path to file containing the module._
     *
@@ -44,4 +46,3 @@ object module extends js.Object {
     */
   var filename: String = js.native
 }
-

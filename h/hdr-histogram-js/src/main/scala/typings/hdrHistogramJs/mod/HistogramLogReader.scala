@@ -4,7 +4,7 @@ import typings.hdrHistogramJs.anon.HistogramConstr
 import typings.hdrHistogramJs.histogramLogReaderMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A histogram log reader.
@@ -53,4 +53,3 @@ class HistogramLogReader protected () extends default {
   def this(logContent: String) = this()
   def this(logContent: String, options: HistogramConstr) = this()
 }
-

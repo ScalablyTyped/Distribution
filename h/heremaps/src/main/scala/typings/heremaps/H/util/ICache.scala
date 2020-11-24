@@ -2,7 +2,7 @@ package typings.heremaps.H.util
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interface definition for the generic cache. Any data elements can be stored in the cache. They are always associated with an identifier to retrieve them at a later stage and their
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ICache extends js.Object {
+  
   /**
     * This method adds an element to the cache.
     * @param id {*} - The identifier of this data element, the value is converted to a string.
@@ -18,11 +19,13 @@ trait ICache extends js.Object {
     * @returns {boolean} - a boolean value indicating whether the data was added
     */
   def add(id: js.Any, data: js.Any, size: Double): Boolean = js.native
+  
   /**
     * This method explicitly drops an element from the cache.
     * @param id {*} - the id of the item to drop
     */
   def drop(id: js.Any): Unit = js.native
+  
   /**
     * This method will execute the provided callback function on each of the cache's entries. If the optional match predicate is passed to this method the callback will only be executed on
     * those entries for which the predicated returns true.
@@ -42,6 +45,7 @@ trait ICache extends js.Object {
     opt_ctx: js.Object,
     opt_matcher: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Boolean]
   ): Unit = js.native
+  
   /**
     * This method retrieves an element from the cache.
     * @param id {string} - the ID of the data element to be retrieved.
@@ -50,11 +54,13 @@ trait ICache extends js.Object {
     */
   def get(id: String): js.Any = js.native
   def get(id: String, opt_noUpdate: Boolean): js.Any = js.native
+  
   /**
     * This method registers a callback that should be called each time an entry is dropped from the cache.
     * @param callback {(function(string, ?, number))} - the callback to be invoked for each entry
     */
   def registerOnDrop(callback: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Unit]): Unit = js.native
+  
   /**
     * This method removes all data elements from the cache. If the optional match predicate is passed to this method only those data elements will be removed for which the predicate
     * return true.
@@ -64,4 +70,3 @@ trait ICache extends js.Object {
   def removeAll(): Unit = js.native
   def removeAll(opt_matcher: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Boolean]): Unit = js.native
 }
-

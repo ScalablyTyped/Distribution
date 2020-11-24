@@ -10,9 +10,9 @@ React-based network visualization component, using Cytoscape
 | ------------------ | :-------------: |
 | Full name          | react-cytoscapejs |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 3 |
-| # downloads        | 150672 |
+| # downloads        | 150843 |
 | # stars            | 0 |
 
 ## Links

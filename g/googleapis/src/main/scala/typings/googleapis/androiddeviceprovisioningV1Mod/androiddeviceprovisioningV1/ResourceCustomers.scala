@@ -6,16 +6,21 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androiddeviceprovisioning/v1", "androiddeviceprovisioning_v1.Resource$Customers")
 @js.native
 class ResourceCustomers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var configurations: ResourceCustomersConfigurations = js.native
+  
   var context: APIRequestContext = js.native
+  
   var devices: ResourceCustomersDevices = js.native
+  
   var dpcs: ResourceCustomersDpcs = js.native
+  
   /**
     * androiddeviceprovisioning.customers.list
     * @desc Lists the user's customer accounts.
@@ -49,4 +54,3 @@ class ResourceCustomers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCustomerListCustomersResponse]
   ): Unit = js.native
 }
-

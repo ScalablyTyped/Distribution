@@ -39,10 +39,11 @@ import typings.std.Record
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
+  
   /**
     * Points to the bottom element on the paper. `null` when there is no element.
     */
@@ -50,10 +51,29 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     TTechnology, 
     /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
   ]) | Null = js.native
+  
   /**
     * The SVG element used by this paper.
     */
   var canvas: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any = js.native
+  
+  /**
+    * Draws a circle.
+    * @param x x coordinate of the center.
+    * @param y y coordinate of the center.
+    * @param radius Radius of the circle.
+    * @return The newly created element representing the circle.
+    */
+  def circle(x: Double, y: Double, radius: Double): RaphaelElement[
+    TTechnology, 
+    /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGCircleElement, raphael.raphael.VMLCircleElement>[TTechnology] */ js.Any
+  ] = js.native
+  
+  /**
+    * Clears the paper, i.e. removes all the elements.
+    */
+  def clear(): Unit = js.native
+  
   /**
     * If you have a set of attributes that you would like to represent as a function of some number you can do it
     * easily with custom attributes:
@@ -98,41 +118,7 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     `arrow-end` | `clip-rect` | cursor | cx | cy | fill | `fill-opacity` | font | `font-family` | `font-size` | `font-weight` | height | href | opacity | path | r_ | rx | ry | src | stroke | `stroke-dasharray` | `stroke-linecap` | `stroke-linejoin` | `stroke-miterlimit` | `stroke-opacity` | `stroke-width` | target | text | `text-anchor` | title | transform | width | x | y, 
     RaphaelCustomAttribute[TTechnology, _]
   ] = js.native
-  /**
-    * The height of this pager.
-    */
-  var height: Double = js.native
-  /**
-    * Points to the {@link RaphaelStatic|Raphael} object/function.
-    */
-  @JSName("raphael")
-  var raphael_Original: RaphaelStatic[TTechnology] = js.native
-  /**
-    * Points to the topmost element on the paper. `null` when there is no element.
-    */
-  var top: (RaphaelElement[
-    TTechnology, 
-    /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-  ]) | Null = js.native
-  /**
-    * The width of this paper.
-    */
-  var width: Double = js.native
-  /**
-    * Draws a circle.
-    * @param x x coordinate of the center.
-    * @param y y coordinate of the center.
-    * @param radius Radius of the circle.
-    * @return The newly created element representing the circle.
-    */
-  def circle(x: Double, y: Double, radius: Double): RaphaelElement[
-    TTechnology, 
-    /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGCircleElement, raphael.raphael.VMLCircleElement>[TTechnology] */ js.Any
-  ] = js.native
-  /**
-    * Clears the paper, i.e. removes all the elements.
-    */
-  def clear(): Unit = js.native
+  
   /**
     * Draws an ellipse.
     * @param x x coordinate of the center.
@@ -145,6 +131,7 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     TTechnology, 
     /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGEllipseElement, raphael.raphael.VMLEllipseElement>[TTechnology] */ js.Any
   ] = js.native
+  
   /**
     * Executes given function for each element on the paper
     *
@@ -175,6 +162,7 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     ],
     thisContext: T
   ): this.type = js.native
+  
   /**
     * Returns an element by its internal ID.
     * @param id ID of an element to fetch.
@@ -184,6 +172,7 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     TTechnology, 
     /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
   ]) | Null = js.native
+  
   /**
     * Return the topmost element at given point.
     *
@@ -199,6 +188,7 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     TTechnology, 
     /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
   ]) | Null = js.native
+  
   /**
     * Finds font object in the registered fonts by given parameters. You could specify only one word from the font
     * name, like `Myriad` for `Myriad Pr`.
@@ -230,6 +220,12 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
   def getFont(family: String, weight: Double, style: js.UndefOr[scala.Nothing], stretch: String): js.UndefOr[RaphaelFont] = js.native
   def getFont(family: String, weight: Double, style: String): js.UndefOr[RaphaelFont] = js.native
   def getFont(family: String, weight: Double, style: String, stretch: String): js.UndefOr[RaphaelFont] = js.native
+  
+  /**
+    * The height of this pager.
+    */
+  var height: Double = js.native
+  
   /**
     * Embeds an image into this paper.
     *
@@ -248,6 +244,7 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     TTechnology, 
     /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGImageElement, raphael.raphael.VMLImageElement>[TTechnology] */ js.Any
   ] = js.native
+  
   /**
     * Creates a path element by given path data string.
     *
@@ -272,6 +269,7 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
   def path(pathString: String): RaphaelPath[TTechnology] = js.native
   def path(pathString: js.Array[RaphaelPathSegment]): RaphaelPath[TTechnology] = js.native
   def path(pathString: RaphaelPathSegment): RaphaelPath[TTechnology] = js.native
+  
   /**
     * Creates set of shapes to represent given font at given position with given size. Result of the method is set
     * object (see {@link set}) which contains each letter as separate path object.
@@ -338,6 +336,7 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     origin: RaphaelFontOrigin,
     letterSpacing: Double
   ): RaphaelSet[TTechnology] = js.native
+  
   /**
     * @param onReadyCallback Function that is going to be called on DOM ready event. You can also subscribe to this
     * event via Eve's `DOMLoad` event. In this case the method returns `undefined`.
@@ -415,6 +414,12 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     callback: js.ThisFunction0[/* this */ RaphaelPaper[TTechnology], Unit]
   ): RaphaelPaper[TTechnology] = js.native
   /**
+    * Points to the {@link RaphaelStatic|Raphael} object/function.
+    */
+  @JSName("raphael")
+  var raphael_Original: RaphaelStatic[TTechnology] = js.native
+  
+  /**
     * Draws a rectangle.
     * @param x x coordinate of the top left corner.
     * @param y y coordinate of the top left corner
@@ -431,21 +436,25 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     TTechnology, 
     /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGRectElement, raphael.raphael.VMLRectElement>[TTechnology] */ js.Any
   ] = js.native
+  
   /**
     * Removes this paper from the DOM.
     */
   def remove(): Unit = js.native
+  
   /**
     * Fixes the issue of Firefox and IE9 regarding subpixel rendering. If paper is dependant on other elements
     * after reflow it could shift half pixel which cause for lines to lost their crispness. This method fixes the
     * issue.
     */
   def renderfix(): Unit = js.native
+  
   /**
     * There is an inconvenient rendering bug in Safari (WebKit): sometimes the rendering should be forced. This
     * method should help with dealing with this bug.
     */
   def safari(): Unit = js.native
+  
   /**
     * Creates array-like object to keep and operate several elements at once. Warning: it doesn't create any
     * elements for itself in the page, it just groups existing elements. Sets act as pseudo elements - all methods
@@ -484,11 +493,13 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
       ]
     ]
   ): RaphaelSet[TTechnology] = js.native
+  
   /**
     * See {@link setStart}. This method finishes catching elements and returns the resulting set.
     * @return A set with all the elements added to this paper since {@link setStart} was called.
     */
   def setFinish(): RaphaelSet[TTechnology] = js.native
+  
   /**
     * If you need to change dimensions of the canvas, call this method.
     * @param width New width of the canvas.
@@ -496,6 +507,7 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     * @return this paper for chaining.
     */
   def setSize(width: Double, height: Double): this.type = js.native
+  
   /**
     * Creates a {@link set}. All elements that will be created after calling this method and before calling
     * {@link setFinish} will be added to the set.
@@ -509,6 +521,7 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     * ```
     */
   def setStart(): Unit = js.native
+  
   /**
     * Sets the view box of the paper. Practically it gives you ability to zoom and pan whole paper surface by
     * specifying new boundaries.
@@ -521,6 +534,7 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     */
   def setViewBox(x: Double, y: Double, w: Double, h: Double): this.type = js.native
   def setViewBox(x: Double, y: Double, w: Double, h: Double, fit: Boolean): this.type = js.native
+  
   /**
     * Draws a text string. If you need line breaks, put `\n` in the string.
     * @param x x coordinate position.
@@ -532,5 +546,17 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     TTechnology, 
     /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGTextElement, raphael.raphael.VMLTextElement>[TTechnology] */ js.Any
   ] = js.native
+  
+  /**
+    * Points to the topmost element on the paper. `null` when there is no element.
+    */
+  var top: (RaphaelElement[
+    TTechnology, 
+    /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
+  ]) | Null = js.native
+  
+  /**
+    * The width of this paper.
+    */
+  var width: Double = js.native
 }
-

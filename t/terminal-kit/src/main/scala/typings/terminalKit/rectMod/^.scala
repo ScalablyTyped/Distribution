@@ -4,7 +4,7 @@ import typings.terminalKit.anon.DstRect
 import typings.terminalKit.terminalMod.Terminal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("terminal-kit/Rect", JSImport.Namespace)
 @js.native
@@ -17,10 +17,9 @@ class ^ protected () extends Rect {
   def this(options: typings.terminalKit.textBufferMod.^) = this()
   def this(xmin: Double, xmax: Double, ymin: Double, ymax: Double) = this()
 }
-
 @JSImport("terminal-kit/Rect", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def wrappingRect(params: DstRect): Unit = js.native
 }
-

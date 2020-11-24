@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/opsworks/rdsDbInstance", "RdsDbInstance")
 @js.native
@@ -21,28 +21,32 @@ class RdsDbInstance protected () extends CustomResource {
     */
   def this(name: String, args: RdsDbInstanceArgs) = this()
   def this(name: String, args: RdsDbInstanceArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * A db password
     */
   val dbPassword: Output_[String] = js.native
+  
   /**
     * A db username
     */
   val dbUser: Output_[String] = js.native
+  
   /**
     * The db instance to register for this stack. Changing this will force a new resource.
     */
   val rdsDbInstanceArn: Output_[String] = js.native
+  
   /**
     * The stack to register a db instance for. Changing this will force a new resource.
     */
   val stackId: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/opsworks/rdsDbInstance", "RdsDbInstance")
 @js.native
 object RdsDbInstance extends js.Object {
+  
   /**
     * Get an existing RdsDbInstance resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -56,10 +60,10 @@ object RdsDbInstance extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RdsDbInstance = js.native
   def get(name: String, id: Input[ID], state: RdsDbInstanceState): RdsDbInstance = js.native
   def get(name: String, id: Input[ID], state: RdsDbInstanceState, opts: CustomResourceOptions): RdsDbInstance = js.native
+  
   /**
     * Returns true if the given object is an instance of RdsDbInstance.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/rdsDbInstance.RdsDbInstance */ Boolean = js.native
 }
-

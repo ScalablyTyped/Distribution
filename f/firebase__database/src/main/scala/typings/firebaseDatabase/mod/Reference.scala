@@ -4,7 +4,7 @@ import typings.firebaseDatabase.pathMod.Path
 import typings.firebaseDatabase.repoMod.Repo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/database", "Reference")
 @js.native
@@ -23,4 +23,3 @@ class Reference protected ()
     */
   def this(repo: Repo, path: Path) = this()
 }
-

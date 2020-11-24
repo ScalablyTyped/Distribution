@@ -2,11 +2,12 @@ package typings.phonegapFacebookPlugin.PhonegapFacebookPlugin
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region API Methods
 @js.native
 trait FacebookConnectPluginStatic extends js.Object {
+  
   /**
     * Allows access to the Facebook Graph API. This API allows for additional permission because, unlike login, the Graph API can
     * accept multiple permissions. In order to make calls to the Graph API on behalf of a user, the user has to be logged into your
@@ -35,6 +36,7 @@ trait FacebookConnectPluginStatic extends js.Object {
     successCallback: js.Function1[/* result */ js.Any, Unit],
     failureCallback: js.Function1[/* error */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Used to retreive the access token for the current user.
     *
@@ -51,6 +53,7 @@ trait FacebookConnectPluginStatic extends js.Object {
     successCallback: js.Function1[/* token */ String, Unit],
     failureCallback: js.Function1[/* error */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Used to get the login status for the current user.
     *
@@ -67,6 +70,7 @@ trait FacebookConnectPluginStatic extends js.Object {
     successCallback: js.Function1[/* status */ LoginResult, Unit],
     failureCallback: js.Function1[/* error */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Used to log an event.
     *
@@ -157,6 +161,7 @@ trait FacebookConnectPluginStatic extends js.Object {
     successCallback: js.Function0[Unit],
     failureCallback: js.Function1[/* error */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Used to log a purchase.
     *
@@ -179,6 +184,7 @@ trait FacebookConnectPluginStatic extends js.Object {
     successCallback: js.Function0[Unit],
     failureCallback: js.Function1[/* error */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Used to log the user in via Facebook. Calling this will result in a Facebook login dialog (or external
     * webpage) launching. Once the user completes the flow, one of the two callbacks will be executed.
@@ -199,6 +205,7 @@ trait FacebookConnectPluginStatic extends js.Object {
     successCallback: js.Function1[/* result */ LoginResult, Unit],
     failureCallback: js.Function1[/* error */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Used to log the user out of Facebook. This will invalidate their access token.
     *
@@ -212,6 +219,7 @@ trait FacebookConnectPluginStatic extends js.Object {
   ): Unit = js.native
   def logout(successCallback: js.Function0[Unit]): Unit = js.native
   def logout(successCallback: js.Function0[Unit], failureCallback: js.Function1[/* error */ String, Unit]): Unit = js.native
+  
   /**
     * Used to open a Facebook dialog.
     *
@@ -232,4 +240,3 @@ trait FacebookConnectPluginStatic extends js.Object {
     failureCallback: js.Function1[/* error */ String, Unit]
   ): Unit = js.native
 }
-

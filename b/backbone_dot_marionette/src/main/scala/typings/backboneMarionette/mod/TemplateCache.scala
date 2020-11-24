@@ -4,11 +4,12 @@ import typings.std.DocumentFragment
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone.marionette", "TemplateCache")
 @js.native
 class TemplateCache () extends DomMixin {
+  
   /**
     * Takes the DOM node el and appends the rendered children to the end of
     * the element's contents.
@@ -17,6 +18,7 @@ class TemplateCache () extends DomMixin {
     */
   @JSName("appendChildren")
   def appendChildren_MTemplateCache(el: js.Any, children: js.Any): Unit = js.native
+  
   /**
     * Add sibling to the DOM immediately before the DOM node el. The
     * sibling will be at the same level as el.
@@ -25,6 +27,7 @@ class TemplateCache () extends DomMixin {
     */
   @JSName("beforeEl")
   def beforeEl_MTemplateCache(el: js.Any, sibling: js.Any): Unit = js.native
+  
   /**
     * The default template compilation passes the results from loadTemplate to
     * the compileTemplate function, which returns an underscore.js compiled
@@ -34,12 +37,14 @@ class TemplateCache () extends DomMixin {
     */
   def compileTemplate(rawTemplate: js.Any): js.Any = js.native
   def compileTemplate(rawTemplate: js.Any, options: js.Any): js.Any = js.native
+  
   /**
     * Returns a new HTML DOM node instance. The resulting node can be
     * passed into the other DOM functions.
     */
   @JSName("createBuffer")
   def createBuffer_MTemplateCache(): DocumentFragment = js.native
+  
   /**
     * Remove the inner contents of el from the DOM while leaving el itself
     * in the DOM.
@@ -47,12 +52,14 @@ class TemplateCache () extends DomMixin {
     */
   @JSName("detachContents")
   def detachContents_MTemplateCache(el: js.Any): Unit = js.native
+  
   /**
     * Detach el from the DOM.
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
     */
   @JSName("detachEl")
   def detachEl_MTemplateCache(el: js.Any): Unit = js.native
+  
   /**
     * Lookup the selector string within the DOM node for context. The
     * optional context argument will come in as a DOM Node reference to run
@@ -63,11 +70,13 @@ class TemplateCache () extends DomMixin {
     */
   @JSName("findEls")
   def findEls_MTemplateCache(selector: js.Any, context: js.Any): Unit = js.native
+  
   /**
     * Initial method to load the template. (undocumented)
     */
   def load(): js.Any = js.native
   def load(options: js.Any): js.Any = js.native
+  
   /**
     * The default template retrieval is to select the template contents from the
     * DOM using jQuery. If you wish to change the way this works, you can
@@ -76,17 +85,20 @@ class TemplateCache () extends DomMixin {
     */
   def loadTemplate(templateId: String): js.Any = js.native
   def loadTemplate(templateId: String, options: js.Any): js.Any = js.native
+  
   /**
     * Remove el from the DOM.
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
     */
   @JSName("removeEl")
   def removeEl_MTemplateCache(el: js.Any): Unit = js.native
+  
   /**
     * Remove oldEl from the DOM and put newEl in its place.
     */
   @JSName("replaceEl")
   def replaceEl_MTemplateCache(newEl: HTMLElement, oldEL: HTMLElement): Unit = js.native
+  
   /**
     * Replace the contents of el with the HTML string of html. Unlike other
     * DOM functions, this takes a literal string for its second argument.
@@ -96,11 +108,11 @@ class TemplateCache () extends DomMixin {
   @JSName("setInnerContent")
   def setInnerContent_MTemplateCache(el: js.Any, html: String): Unit = js.native
 }
-
 /* static members */
 @JSImport("backbone.marionette", "TemplateCache")
 @js.native
 object TemplateCache extends js.Object {
+  
   /**
     * You can clear one or more, or all items from the cache using the clear
     * method. Clearing a template from the cache will force it to re-load
@@ -108,6 +120,7 @@ object TemplateCache extends js.Object {
     * @param  the templateId used for loading / caching of the templates to clear. If none specified, all templates will be cleared from the cache.
     */
   def clear(templateId: String*): Unit = js.native
+  
   /**
     * To use the TemplateCache, call the get method on TemplateCache
     * directly. Internally, instances of the TemplateCache class will be
@@ -117,4 +130,3 @@ object TemplateCache extends js.Object {
   def get(templateId: String): js.Any = js.native
   def get(templateId: String, options: js.Any): js.Any = js.native
 }
-

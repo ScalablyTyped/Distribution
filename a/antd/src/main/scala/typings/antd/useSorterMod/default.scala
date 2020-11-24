@@ -5,11 +5,12 @@ import typings.antd.tableInterfaceMod.SorterResult
 import typings.antd.tableInterfaceMod.TransformColumns
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/table/hooks/useSorter", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def apply[RecordType](
     hasPrefixClsMergedColumnsOnSorterChangeSortDirectionsTableLocaleShowSorterTooltip: SorterConfig[RecordType]
   ): js.Tuple4[
@@ -19,4 +20,3 @@ object default extends js.Object {
     js.Function0[SorterResult[RecordType] | js.Array[SorterResult[RecordType]]]
   ] = js.native
 }
-

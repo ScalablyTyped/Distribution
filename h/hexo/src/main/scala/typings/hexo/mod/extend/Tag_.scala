@@ -3,10 +3,11 @@ package typings.hexo.mod.extend
 import typings.hexo.mod.extend.Tag.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Tag_ extends js.Object {
+  
   def register(
     name: String,
     fn: js.Function2[/* args */ js.Array[String], /* content */ js.UndefOr[String], String]
@@ -17,4 +18,3 @@ trait Tag_ extends js.Object {
     options: Options
   ): Unit = js.native
 }
-

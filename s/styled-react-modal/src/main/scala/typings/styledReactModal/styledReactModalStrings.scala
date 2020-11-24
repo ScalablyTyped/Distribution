@@ -2,13 +2,12 @@ package typings.styledReactModal
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styledReactModalStrings {
-  @js.native
-  sealed trait div extends js.Object
   
   @scala.inline
   def div: div = "div".asInstanceOf[div]
+  @js.native
+  sealed trait div extends js.Object
 }
-

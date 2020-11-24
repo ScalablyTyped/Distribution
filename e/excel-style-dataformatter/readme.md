@@ -12,7 +12,7 @@ Excel-Style Javascript Data Formatter
 | Keywords           | excel-like, excel-style, excel, format, dataformatter |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 810 |
+| # downloads        | 720 |
 | # stars            | 0 |
 
 ## Links

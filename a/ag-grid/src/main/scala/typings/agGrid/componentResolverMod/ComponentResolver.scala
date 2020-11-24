@@ -5,18 +5,20 @@ import typings.agGrid.iComponentMod.IComponent
 import typings.agGrid.utilsMod.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ag-grid/dist/lib/components/framework/componentResolver", "ComponentResolver")
 @js.native
 class ComponentResolver () extends js.Object {
+  
   var agComponentUtils: js.Any = js.native
+  
   var componentMetadataProvider: js.Any = js.native
+  
   var componentProvider: js.Any = js.native
+  
   var context: js.Any = js.native
-  var frameworkComponentWrapper: js.Any = js.native
-  var gridOptions: js.Any = js.native
-  var gridOptionsWrapper: js.Any = js.native
+  
   /**
     * This method creates a component given everything needed to guess what sort of component needs to be instantiated
     * It takes
@@ -100,6 +102,7 @@ class ComponentResolver () extends js.Object {
     mandatory: Boolean,
     customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, _]
   ): Promise[A] = js.native
+  
   /**
     * This method creates a component given everything needed to guess what sort of component needs to be instantiated
     * It takes
@@ -115,6 +118,9 @@ class ComponentResolver () extends js.Object {
     agGridParams: js.Any,
     customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, _]
   ): A = js.native
+  
+  var frameworkComponentWrapper: js.Any = js.native
+  
   /**
     * This method returns the underlying representation of the component to be created. ie for Javascript the
     * underlying function where we should be calling new into. In case of the frameworks, the framework class
@@ -139,7 +145,13 @@ class ComponentResolver () extends js.Object {
     dynamicComponentParams: DynamicComponentParams,
     defaultComponentName: String
   ): ResolvedComponent[A, B] = js.native
+  
+  var gridOptions: js.Any = js.native
+  
+  var gridOptionsWrapper: js.Any = js.native
+  
   /* private */ def initialiseComponent[A](component: js.Any, agGridParams: js.Any, customInitParamsCb: js.Any): js.Any = js.native
+  
   /**
     * Useful to check what would be the resultant params for a given object
     *  @param holder: This is the context for which this component needs to be created, it can be gridOptions
@@ -158,6 +170,7 @@ class ComponentResolver () extends js.Object {
     dynamicCustomParams: js.Any,
     dynamicParams: js.Any
   ): js.Any = js.native
+  
   /* private */ def newAgGridComponent[A, B](
     holder: js.Any,
     propertyName: js.Any,
@@ -165,6 +178,6 @@ class ComponentResolver () extends js.Object {
     defaultComponentName: js.Any,
     mandatory: js.Any
   ): js.Any = js.native
+  
   /* private */ def resolveByName[A, B](propertyName: js.Any, componentNameOpt: js.Any): js.Any = js.native
 }
-

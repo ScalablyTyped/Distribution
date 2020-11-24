@@ -2,18 +2,20 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createExportDeclaration")
 @js.native
 object createExportDeclaration extends js.Object {
+  
+  /** @deprecated Use `factory.createExportDeclaration` or the factory supplied by your transformation context instead. */
   def apply(): ExportDeclaration = js.native
   def apply(
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: js.UndefOr[scala.Nothing],
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
   def apply(
     decorators: js.UndefOr[scala.Nothing],
@@ -26,7 +28,7 @@ object createExportDeclaration extends js.Object {
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression,
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
   def apply(
     decorators: js.UndefOr[scala.Nothing],
@@ -38,7 +40,7 @@ object createExportDeclaration extends js.Object {
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: NamedExportBindings,
     moduleSpecifier: js.UndefOr[scala.Nothing],
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
   def apply(
     decorators: js.UndefOr[scala.Nothing],
@@ -51,7 +53,7 @@ object createExportDeclaration extends js.Object {
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: NamedExportBindings,
     moduleSpecifier: Expression,
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
   def apply(decorators: js.UndefOr[scala.Nothing], modifiers: js.Array[Modifier]): ExportDeclaration = js.native
   def apply(
@@ -59,7 +61,7 @@ object createExportDeclaration extends js.Object {
     modifiers: js.Array[Modifier],
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: js.UndefOr[scala.Nothing],
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
   def apply(
     decorators: js.UndefOr[scala.Nothing],
@@ -72,7 +74,7 @@ object createExportDeclaration extends js.Object {
     modifiers: js.Array[Modifier],
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression,
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
   def apply(
     decorators: js.UndefOr[scala.Nothing],
@@ -84,7 +86,7 @@ object createExportDeclaration extends js.Object {
     modifiers: js.Array[Modifier],
     exportClause: NamedExportBindings,
     moduleSpecifier: js.UndefOr[scala.Nothing],
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
   def apply(
     decorators: js.UndefOr[scala.Nothing],
@@ -97,7 +99,7 @@ object createExportDeclaration extends js.Object {
     modifiers: js.Array[Modifier],
     exportClause: NamedExportBindings,
     moduleSpecifier: Expression,
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
   def apply(decorators: js.Array[Decorator]): ExportDeclaration = js.native
   def apply(
@@ -105,7 +107,7 @@ object createExportDeclaration extends js.Object {
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: js.UndefOr[scala.Nothing],
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
   def apply(
     decorators: js.Array[Decorator],
@@ -118,7 +120,7 @@ object createExportDeclaration extends js.Object {
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression,
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
   def apply(
     decorators: js.Array[Decorator],
@@ -130,7 +132,7 @@ object createExportDeclaration extends js.Object {
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: NamedExportBindings,
     moduleSpecifier: js.UndefOr[scala.Nothing],
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
   def apply(
     decorators: js.Array[Decorator],
@@ -143,7 +145,7 @@ object createExportDeclaration extends js.Object {
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: NamedExportBindings,
     moduleSpecifier: Expression,
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
   def apply(decorators: js.Array[Decorator], modifiers: js.Array[Modifier]): ExportDeclaration = js.native
   def apply(
@@ -151,7 +153,7 @@ object createExportDeclaration extends js.Object {
     modifiers: js.Array[Modifier],
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: js.UndefOr[scala.Nothing],
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
   def apply(
     decorators: js.Array[Decorator],
@@ -164,7 +166,7 @@ object createExportDeclaration extends js.Object {
     modifiers: js.Array[Modifier],
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression,
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
   def apply(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], exportClause: NamedExportBindings): ExportDeclaration = js.native
   def apply(
@@ -172,7 +174,7 @@ object createExportDeclaration extends js.Object {
     modifiers: js.Array[Modifier],
     exportClause: NamedExportBindings,
     moduleSpecifier: js.UndefOr[scala.Nothing],
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
   def apply(
     decorators: js.Array[Decorator],
@@ -185,7 +187,6 @@ object createExportDeclaration extends js.Object {
     modifiers: js.Array[Modifier],
     exportClause: NamedExportBindings,
     moduleSpecifier: Expression,
-    isTypeOnly: Boolean
+    isTypeOnly: js.Any
   ): ExportDeclaration = js.native
 }
-

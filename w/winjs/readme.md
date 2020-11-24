@@ -12,7 +12,7 @@ WinJS is a set of JavaScript toolkits that allow developers to build application
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 43627 |
+| # downloads        | 50644 |
 | # stars            | 2 |
 
 ## Links

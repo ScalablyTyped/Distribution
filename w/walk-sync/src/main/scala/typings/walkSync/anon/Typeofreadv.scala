@@ -2,13 +2,13 @@ package typings.walkSync.anon
 
 import typings.node.NodeJS.ArrayBufferView
 import typings.node.NodeJS.ErrnoException
-import typings.node.fsMod.ReadVResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Typeofreadv extends js.Object {
+  
   def apply(
     fd: Double,
     buffers: js.Array[ArrayBufferView],
@@ -30,7 +30,4 @@ trait Typeofreadv extends js.Object {
       Unit
     ]
   ): Unit = js.native
-  def __promisify__(fd: Double, buffers: js.Array[ArrayBufferView]): js.Promise[ReadVResult] = js.native
-  def __promisify__(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): js.Promise[ReadVResult] = js.native
 }
-

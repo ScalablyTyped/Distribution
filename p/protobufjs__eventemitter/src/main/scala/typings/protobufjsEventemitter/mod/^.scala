@@ -2,7 +2,7 @@ package typings.protobufjsEventemitter.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constructs a new event emitter instance.
@@ -19,4 +19,3 @@ import scala.scalajs.js.annotation._
   * @constructor
   */
 class ^ () extends EventEmitter
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.AllJoyn
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AllJoynAuthenticationMechanism extends js.Object
-
 /** Defines values used to indicate the mechanism used in authentication operations. */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism")
 @js.native
 object AllJoynAuthenticationMechanism extends js.Object {
+  
   /** ECDHE_ECDSA key exchange. */
   @js.native
   sealed trait ecdheEcdsa extends AllJoynAuthenticationMechanism
@@ -34,6 +34,4 @@ object AllJoynAuthenticationMechanism extends js.Object {
   /** Secure Remote Password (SRP) logon (e.g. username and password). */
   @js.native
   sealed trait srpLogon extends AllJoynAuthenticationMechanism
-  
 }
-

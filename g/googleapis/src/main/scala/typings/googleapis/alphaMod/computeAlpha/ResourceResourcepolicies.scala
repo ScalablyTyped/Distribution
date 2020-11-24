@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Resourcepolicies")
 @js.native
 class ResourceResourcepolicies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.resourcePolicies.aggregatedList
     * @desc Retrieves an aggregated list of resource policies.
@@ -48,6 +48,9 @@ class ResourceResourcepolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaResourcePolicyAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.resourcePolicies.delete
     * @desc Deletes the specified resource policy.
@@ -79,6 +82,7 @@ class ResourceResourcepolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.resourcePolicies.get
     * @desc Retrieves all information of the specified resource policy.
@@ -109,6 +113,7 @@ class ResourceResourcepolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaResourcePolicy]
   ): Unit = js.native
+  
   /**
     * compute.resourcePolicies.getIamPolicy
     * @desc Gets the access control policy for a resource. May be empty if no
@@ -140,6 +145,7 @@ class ResourceResourcepolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.resourcePolicies.insert
     * @desc Creates a new resource policy.
@@ -171,6 +177,7 @@ class ResourceResourcepolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.resourcePolicies.list
     * @desc A list all the resource policies that have been configured for the
@@ -208,6 +215,7 @@ class ResourceResourcepolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaResourcePolicyList]
   ): Unit = js.native
+  
   /**
     * compute.resourcePolicies.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -240,6 +248,7 @@ class ResourceResourcepolicies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.resourcePolicies.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -275,4 +284,3 @@ class ResourceResourcepolicies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

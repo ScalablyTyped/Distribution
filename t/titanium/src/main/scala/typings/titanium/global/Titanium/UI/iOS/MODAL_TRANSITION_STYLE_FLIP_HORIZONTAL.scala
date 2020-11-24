@@ -3,7 +3,7 @@ package typings.titanium.global.Titanium.UI.iOS
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * When the window is presented, the current view initiates a horizontal 3D flip from
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Titanium.UI.iOS.MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL")
 @js.native
 object MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL extends TopLevel[Double]
-

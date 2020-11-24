@@ -2,7 +2,7 @@ package typings.emberData.mod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `DS.InvalidError` is used by an adapter to signal the external API
@@ -19,4 +19,3 @@ class InvalidError protected ()
   extends typings.emberData.mod.DS.InvalidError {
   def this(errors: js.Array[_]) = this()
 }
-

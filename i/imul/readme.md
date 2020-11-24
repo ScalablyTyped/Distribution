@@ -11,8 +11,8 @@ ES2015 Math.imul() ponyfill
 | Full name          | imul |
 | Keywords           | es2015, ponyfill, polyfill, shim, number, math, imul, multiplication |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 649252 |
+| # dependents       | 7 |
+| # downloads        | 693437 |
 | # stars            | 0 |
 
 ## Links

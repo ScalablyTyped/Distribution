@@ -10,20 +10,27 @@ import typings.openfin.webcontentsMod.WindowResourceResponseReceivedEvent
 import typings.openfin.windowMod.WindowNavigationRejectedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ViewEventMapping[Topic, Type] extends WebContentsEventMapping[String, String] {
+  
   var attached: WindowEvent[Topic, Type] = js.native
+  
   var created: WindowEvent[Topic, Type] = js.native
+  
   var destroyed: WindowEvent[Topic, Type] = js.native
+  
   var hidden: WindowEvent[Topic, Type] = js.native
+  
   var hotkey: InputEvent with (WindowEvent[Topic, Type]) = js.native
+  
   var shown: WindowEvent[Topic, Type] = js.native
+  
   var `target-changed`: TargetChangedEvent[Topic, Type] = js.native
 }
-
 object ViewEventMapping {
+  
   @scala.inline
   def apply[Topic, Type](
     attached: WindowEvent[Topic, Type],
@@ -59,32 +66,41 @@ object ViewEventMapping {
     __obj.updateDynamic("target-changed")(`target-changed`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewEventMapping[Topic, Type]]
   }
+  
   @scala.inline
   implicit class ViewEventMappingOps[Self <: ViewEventMapping[_, _], Topic, Type] (val x: Self with (ViewEventMapping[Topic, Type])) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAttached(value: WindowEvent[Topic, Type]): Self = this.set("attached", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCreated(value: WindowEvent[Topic, Type]): Self = this.set("created", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDestroyed(value: WindowEvent[Topic, Type]): Self = this.set("destroyed", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHidden(value: WindowEvent[Topic, Type]): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHotkey(value: InputEvent with (WindowEvent[Topic, Type])): Self = this.set("hotkey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setShown(value: WindowEvent[Topic, Type]): Self = this.set("shown", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setTarget-changed`(value: TargetChangedEvent[Topic, Type]): Self = this.set("target-changed", value.asInstanceOf[js.Any])
   }
-  
 }
-

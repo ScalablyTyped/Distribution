@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "gherkin" : "9.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "gherkin" : "9.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

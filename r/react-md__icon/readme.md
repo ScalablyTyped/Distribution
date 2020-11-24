@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__icon
 
-Typings are for version 2.1.2
+Typings are for version 2.4.2
 
 ## Library description:
 This package is for including icons within react-md. There is included support for both font icons and SVG icons.  There is also a helper component for applying spacing between icons and text.
@@ -10,9 +10,9 @@ This package is for including icons within react-md. There is included support f
 | ------------------ | :-------------: |
 | Full name          | @react-md/icon |
 | Keywords           | react-md, material design, react, icon, font icon, svg icon, component, components |
-| # releases         | 22 |
+| # releases         | 30 |
 | # dependents       | 15 |
-| # downloads        | 11153 |
+| # downloads        | 15190 |
 | # stars            | 0 |
 
 ## Links

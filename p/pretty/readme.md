@@ -10,9 +10,9 @@ Some tweaks for beautifying HTML with js-beautify according to my preferences.
 | ------------------ | :-------------: |
 | Full name          | pretty |
 | Keywords           | beautify, format, formatter, html, js, js-beautify, prettify, pretty |
-| # releases         | 1 |
-| # dependents       | 231 |
-| # downloads        | 12743815 |
+| # releases         | 0 |
+| # dependents       | 291 |
+| # downloads        | 25712261 |
 | # stars            | 6 |
 
 ## Links

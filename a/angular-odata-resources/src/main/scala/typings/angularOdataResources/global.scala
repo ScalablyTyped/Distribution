@@ -4,13 +4,15 @@ import typings.angularOdataResources.OData.IExecutable
 import typings.angularOdataResources.OData.ProviderCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object OData extends js.Object {
+    
     @js.native
     class BinaryOperation protected ()
       extends typings.angularOdataResources.OData.BinaryOperation {
@@ -32,6 +34,13 @@ object global extends js.Object {
         ODataPredicate: js.Any,
         ODataOrderByStatement: js.Any
       ) = this()
+    }
+    /* static members */
+    @js.native
+    object Global extends js.Object {
+      
+      @JSName("$inject")
+      var $inject: js.Array[String] = js.native
     }
     
     @js.native
@@ -59,6 +68,19 @@ object global extends js.Object {
       def this(propertyOrValueOrPredicate: js.Any, valueOrOperator: js.UndefOr[scala.Nothing], value: js.Any) = this()
       def this(propertyOrValueOrPredicate: js.Any, valueOrOperator: js.Any, value: js.Any) = this()
     }
+    /* static members */
+    @js.native
+    object Predicate extends js.Object {
+      
+      def and(andStatements: js.Any): IExecutable = js.native
+      
+      def create(propertyOrPredicate: js.Any): IExecutable = js.native
+      def create(propertyOrPredicate: js.Any, operatorOrValue: js.UndefOr[scala.Nothing], value: js.Any): IExecutable = js.native
+      def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any): IExecutable = js.native
+      def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any, value: js.Any): IExecutable = js.native
+      
+      def or(orStatements: js.Array[_]): IExecutable = js.native
+    }
     
     @js.native
     class Property protected ()
@@ -82,40 +104,27 @@ object global extends js.Object {
     @js.native
     class ValueTypes ()
       extends typings.angularOdataResources.OData.ValueTypes
-    
-    /* static members */
-    @js.native
-    object Global extends js.Object {
-      @JSName("$inject")
-      var $inject: js.Array[String] = js.native
-    }
-    
-    /* static members */
-    @js.native
-    object Predicate extends js.Object {
-      def and(andStatements: js.Any): IExecutable = js.native
-      def create(propertyOrPredicate: js.Any): IExecutable = js.native
-      def create(propertyOrPredicate: js.Any, operatorOrValue: js.UndefOr[scala.Nothing], value: js.Any): IExecutable = js.native
-      def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any): IExecutable = js.native
-      def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any, value: js.Any): IExecutable = js.native
-      def or(orStatements: js.Array[_]): IExecutable = js.native
-    }
-    
     /* static members */
     @js.native
     object ValueTypes extends js.Object {
+      
       var Boolean: String = js.native
+      
       var Byte: String = js.native
+      
       var DateTime: String = js.native
+      
       var Decimal: String = js.native
+      
       var Double: String = js.native
+      
       var Guid: String = js.native
+      
       var Int32: String = js.native
+      
       var Single: String = js.native
+      
       var String: java.lang.String = js.native
     }
-    
   }
-  
 }
-

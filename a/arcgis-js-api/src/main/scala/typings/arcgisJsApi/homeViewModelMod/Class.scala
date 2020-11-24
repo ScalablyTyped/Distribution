@@ -4,11 +4,10 @@ import typings.arcgisJsApi.esri.HomeViewModel
 import typings.arcgisJsApi.esri.HomeViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/widgets/Home/HomeViewModel", JSImport.Namespace)
 @js.native
 class Class () extends HomeViewModel {
   def this(properties: HomeViewModelProperties) = this()
 }
-

@@ -3,7 +3,7 @@ package typings.postmark.modelsMod
 import typings.postmark.supportingTypesMod.Hash
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark/dist/client/models", "Message")
 @js.native
@@ -26,4 +26,3 @@ class Message protected ()
     Metadata: js.UndefOr[Hash[String]]
   ) = this()
 }
-

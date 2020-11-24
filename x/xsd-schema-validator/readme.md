@@ -10,9 +10,9 @@ A (XSD) schema validator for nodejs
 | ------------------ | :-------------: |
 | Full name          | xsd-schema-validator |
 | Keywords           | xsd, xml, schema, validator, validation |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 50455 |
+| # downloads        | 126711 |
 | # stars            | 0 |
 
 ## Links

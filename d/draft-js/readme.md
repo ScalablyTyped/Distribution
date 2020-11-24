@@ -10,9 +10,9 @@ A React framework for building text editors.
 | ------------------ | :-------------: |
 | Full name          | draft-js |
 | Keywords           | draftjs, editor, react, richtext |
-| # releases         | 8 |
-| # dependents       | 585 |
-| # downloads        | 18903865 |
+| # releases         | 12 |
+| # dependents       | 713 |
+| # downloads        | 27732059 |
 | # stars            | 20 |
 
 ## Links

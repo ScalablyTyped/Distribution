@@ -2,60 +2,80 @@ package typings.googleapis.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Alg extends js.Object {
+  
   var alg: js.UndefOr[String] = js.native
+  
   var e: js.UndefOr[String] = js.native
+  
   var kid: js.UndefOr[String] = js.native
+  
   var kty: js.UndefOr[String] = js.native
+  
   var n: js.UndefOr[String] = js.native
+  
   var use: js.UndefOr[String] = js.native
 }
-
 object Alg {
+  
   @scala.inline
   def apply(): Alg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Alg]
   }
+  
   @scala.inline
   implicit class AlgOps[Self <: Alg] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAlg(value: String): Self = this.set("alg", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAlg: Self = this.set("alg", js.undefined)
+    
     @scala.inline
     def setE(value: String): Self = this.set("e", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteE: Self = this.set("e", js.undefined)
+    
     @scala.inline
     def setKid(value: String): Self = this.set("kid", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKid: Self = this.set("kid", js.undefined)
+    
     @scala.inline
     def setKty(value: String): Self = this.set("kty", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKty: Self = this.set("kty", js.undefined)
+    
     @scala.inline
     def setN(value: String): Self = this.set("n", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteN: Self = this.set("n", js.undefined)
+    
     @scala.inline
     def setUse(value: String): Self = this.set("use", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUse: Self = this.set("use", js.undefined)
   }
-  
 }
-

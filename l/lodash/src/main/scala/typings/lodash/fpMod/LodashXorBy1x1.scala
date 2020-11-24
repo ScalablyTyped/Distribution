@@ -4,10 +4,11 @@ import typings.lodash.mod.List
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashXorBy1x1[T] extends js.Object {
+  
   def apply(): LodashXorBy1x3[T] = js.native
   def apply(arrays: js.UndefOr[scala.Nothing], arrays2: List[T]): js.Array[T] = js.native
   def apply(arrays: Null, arrays2: List[T]): js.Array[T] = js.native
@@ -16,4 +17,3 @@ trait LodashXorBy1x1[T] extends js.Object {
   def apply(arrays: __): LodashXorBy1x5[T] = js.native
   def apply(arrays: __, arrays2: List[T]): LodashXorBy1x5[T] = js.native
 }
-

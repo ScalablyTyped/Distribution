@@ -15,7 +15,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The accessible page preview of a text document.
@@ -26,8 +26,8 @@ trait AccessibleTextDocumentPageView
   extends XAccessibleContext
      with XAccessibleComponent
      with XAccessibleEventBroadcaster
-
 object AccessibleTextDocumentPageView {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -74,4 +74,3 @@ object AccessibleTextDocumentPageView {
     __obj.asInstanceOf[AccessibleTextDocumentPageView]
   }
 }
-

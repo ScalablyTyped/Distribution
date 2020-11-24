@@ -6,7 +6,7 @@ import typings.std.stdStrings.webgl
 import typings.std.stdStrings.webgl2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides properties and methods for manipulating the layout and presentation of <canvas> elements. The HTMLCanvasElement interface also inherits the properties and methods of the HTMLElement interface. */
 @js.native
@@ -14,14 +14,7 @@ trait HTMLCanvasElement
   extends HTMLElement
      with CanvasImageSource
      with TexImageSource {
-  /**
-    * Gets or sets the height of a canvas element on a document.
-    */
-  var height: Double = js.native
-  /**
-    * Gets or sets the width of a canvas element on a document.
-    */
-  var width: Double = js.native
+  
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -32,6 +25,7 @@ trait HTMLCanvasElement
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  
   def getContext(contextId: java.lang.String): RenderingContext | Null = js.native
   def getContext(contextId: java.lang.String, options: js.Any): RenderingContext | Null = js.native
   /**
@@ -54,6 +48,12 @@ trait HTMLCanvasElement
   def getContext_webgl2(contextId: webgl2): WebGL2RenderingContext | Null = js.native
   @JSName("getContext")
   def getContext_webgl2(contextId: webgl2, options: WebGLContextAttributes): WebGL2RenderingContext | Null = js.native
+  
+  /**
+    * Gets or sets the height of a canvas element on a document.
+    */
+  var height: Double = js.native
+  
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -64,10 +64,12 @@ trait HTMLCanvasElement
     callback: EventListenerOrEventListenerObject,
     options: EventListenerOptions
   ): Unit = js.native
+  
   def toBlob(callback: BlobCallback): Unit = js.native
   def toBlob(callback: BlobCallback, `type`: js.UndefOr[scala.Nothing], quality: js.Any): Unit = js.native
   def toBlob(callback: BlobCallback, `type`: java.lang.String): Unit = js.native
   def toBlob(callback: BlobCallback, `type`: java.lang.String, quality: js.Any): Unit = js.native
+  
   /**
     * Returns the content of the current canvas as an image that you can use as a source for another canvas or an HTML element.
     * @param type The standard MIME type for the image format to return. If you do not specify this parameter, the default value is a PNG format image.
@@ -76,6 +78,11 @@ trait HTMLCanvasElement
   def toDataURL(`type`: js.UndefOr[scala.Nothing], quality: js.Any): java.lang.String = js.native
   def toDataURL(`type`: java.lang.String): java.lang.String = js.native
   def toDataURL(`type`: java.lang.String, quality: js.Any): java.lang.String = js.native
+  
   def transferControlToOffscreen(): OffscreenCanvas = js.native
+  
+  /**
+    * Gets or sets the width of a canvas element on a document.
+    */
+  var width: Double = js.native
 }
-

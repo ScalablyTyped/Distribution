@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-util
 
-Typings are for version 5.0.6
+Typings are for version 5.5.0
 
 ## Library description:
 Common Utils For React Component
@@ -10,9 +10,9 @@ Common Utils For React Component
 | ------------------ | :-------------: |
 | Full name          | rc-util |
 | Keywords           | react, util |
-| # releases         | 41 |
-| # dependents       | 496 |
-| # downloads        | 28236311 |
+| # releases         | 64 |
+| # dependents       | 645 |
+| # downloads        | 50861572 |
 | # stars            | 6 |
 
 ## Links

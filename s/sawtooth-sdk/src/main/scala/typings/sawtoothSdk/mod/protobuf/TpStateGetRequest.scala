@@ -8,7 +8,7 @@ import typings.sawtoothSdk.protobufMod.ITpStateGetRequest
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.TpStateGetRequest")
 @js.native
@@ -20,11 +20,11 @@ class TpStateGetRequest ()
   extends typings.sawtoothSdk.protobufMod.TpStateGetRequest {
   def this(properties: ITpStateGetRequest) = this()
 }
-
 /* static members */
 @JSImport("sawtooth-sdk", "protobuf.TpStateGetRequest")
 @js.native
 object TpStateGetRequest extends js.Object {
+  
   /**
     * Creates a new TpStateGetRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -32,6 +32,7 @@ object TpStateGetRequest extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.TpStateGetRequest = js.native
   def create(properties: ITpStateGetRequest): typings.sawtoothSdk.protobufMod.TpStateGetRequest = js.native
+  
   /**
     * Decodes a TpStateGetRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,6 +45,7 @@ object TpStateGetRequest extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.TpStateGetRequest = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.TpStateGetRequest = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.TpStateGetRequest = js.native
+  
   /**
     * Decodes a TpStateGetRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -53,6 +55,7 @@ object TpStateGetRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.TpStateGetRequest = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.TpStateGetRequest = js.native
+  
   /**
     * Encodes the specified TpStateGetRequest message. Does not implicitly {@link TpStateGetRequest.verify|verify} messages.
     * @param message TpStateGetRequest message or plain object to encode
@@ -61,6 +64,7 @@ object TpStateGetRequest extends js.Object {
     */
   def encode(message: ITpStateGetRequest): Writer = js.native
   def encode(message: ITpStateGetRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified TpStateGetRequest message, length delimited. Does not implicitly {@link TpStateGetRequest.verify|verify} messages.
     * @param message TpStateGetRequest message or plain object to encode
@@ -69,12 +73,14 @@ object TpStateGetRequest extends js.Object {
     */
   def encodeDelimited(message: ITpStateGetRequest): Writer = js.native
   def encodeDelimited(message: ITpStateGetRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a TpStateGetRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns TpStateGetRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.TpStateGetRequest = js.native
+  
   /**
     * Creates a plain object from a TpStateGetRequest message. Also converts values to other types if specified.
     * @param message TpStateGetRequest
@@ -83,6 +89,7 @@ object TpStateGetRequest extends js.Object {
     */
   def toObject(message: typings.sawtoothSdk.protobufMod.TpStateGetRequest): StringDictionary[js.Any] = js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.TpStateGetRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a TpStateGetRequest message.
     * @param message Plain object to verify
@@ -90,4 +97,3 @@ object TpStateGetRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

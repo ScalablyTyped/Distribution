@@ -4,15 +4,15 @@
 Typings are for version 3.1
 
 ## Library description:
-Get available v8 flags.
+Get available v8 and Node.js flags.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | v8flags |
 | Keywords           | v8 flags, harmony flags |
-| # releases         | 6 |
-| # dependents       | 172 |
-| # downloads        | 150319569 |
+| # releases         | 4 |
+| # dependents       | 181 |
+| # downloads        | 166519550 |
 | # stars            | 6 |
 
 ## Links

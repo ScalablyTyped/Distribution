@@ -11,9 +11,9 @@ Cron jobs for your node
 | Full name          | cron |
 | Keywords           | cron, node cron, node-cron, schedule, scheduler, cronjob, cron job |
 | # releases         | 10 |
-| # dependents       | 779 |
-| # downloads        | 24971264 |
-| # stars            | 200 |
+| # dependents       | 894 |
+| # downloads        | 33996969 |
+| # stars            | 201 |
 
 ## Links
 - [Homepage](https://github.com/kelektiv/node-cron#readme)

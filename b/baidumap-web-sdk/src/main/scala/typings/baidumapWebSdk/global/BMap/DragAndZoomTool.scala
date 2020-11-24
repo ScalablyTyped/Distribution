@@ -3,7 +3,7 @@ package typings.baidumapWebSdk.global.BMap
 import typings.baidumapWebSdk.BMap.DragAndZoomToolOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BMap.DragAndZoomTool")
 @js.native
@@ -12,4 +12,3 @@ class DragAndZoomTool protected ()
   def this(map: typings.baidumapWebSdk.BMap.Map) = this()
   def this(map: typings.baidumapWebSdk.BMap.Map, opts: DragAndZoomToolOptions) = this()
 }
-

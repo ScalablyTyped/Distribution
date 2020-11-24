@@ -1,156 +1,195 @@
 package typings.reactNativeScreens.mod
 
-import typings.reactNative.mod.AccessibilityActionEvent
-import typings.reactNative.mod.AccessibilityActionInfo
-import typings.reactNative.mod.AccessibilityRole
-import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityStates
-import typings.reactNative.mod.AccessibilityTrait
+import typings.react.mod.ReactNode
 import typings.reactNative.mod.Animated.AnimatedInterpolation
-import typings.reactNative.mod.GestureResponderEvent
-import typings.reactNative.mod.Insets
-import typings.reactNative.mod.LayoutChangeEvent
-import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.TVParallaxProperties
+import typings.reactNative.mod.NativeSyntheticEvent
+import typings.reactNative.mod.NativeTouchEvent
 import typings.reactNative.mod.ViewProps
-import typings.reactNative.mod.ViewStyle
-import typings.reactNative.reactNativeStrings.`box-none`
-import typings.reactNative.reactNativeStrings.`box-only`
-import typings.reactNative.reactNativeStrings.`no-hide-descendants`
-import typings.reactNative.reactNativeStrings.assertive
-import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.button
-import typings.reactNative.reactNativeStrings.no
-import typings.reactNative.reactNativeStrings.none
-import typings.reactNative.reactNativeStrings.polite
-import typings.reactNative.reactNativeStrings.radiobutton_checked
-import typings.reactNative.reactNativeStrings.radiobutton_unchecked
-import typings.reactNative.reactNativeStrings.yes
 import typings.reactNativeScreens.reactNativeScreensNumbers.`0`
 import typings.reactNativeScreens.reactNativeScreensNumbers.`1`
+import typings.reactNativeScreens.reactNativeScreensNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ScreenProps extends ViewProps {
-  var active: js.UndefOr[`0` | `1` | AnimatedInterpolation] = js.undefined
-  var onComponentRef: js.UndefOr[js.Function1[/* view */ js.Any, Unit]] = js.undefined
+  
+  var active: js.UndefOr[`0` | `1` | AnimatedInterpolation] = js.native
+  
+  var activityState: js.UndefOr[`0` | `1` | `2` | AnimatedInterpolation] = js.native
+  
+  var children: js.UndefOr[ReactNode] = js.native
+  
+  /**
+    * @description All children screens should have the same value of their "enabled" prop as their container.
+    */
+  var enabled: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * @description When set to false the back swipe gesture will be disabled when the parent Screen is on top of the stack. The default value is true.
+    */
+  var gestureEnabled: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * @description A callback that gets called when the current screen appears.
+    */
+  var onAppear: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.native
+  
+  var onComponentRef: js.UndefOr[js.Function1[/* view */ js.Any, Unit]] = js.native
+  
+  /**
+    * @description A callback that gets called when the current screen disappears.
+    */
+  var onDisappear: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.native
+  
+  /**
+    * @description A callback that gets called when the current screen is dismissed by hardware back (on Android) or dismiss gesture (swipe back or down). The callback takes no arguments.
+    */
+  var onDismissed: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.native
+  
+  /**
+    * @description A callback that gets called when the current screen will appear. This is called as soon as the transition begins.
+    */
+  var onWillAppear: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.native
+  
+  /**
+    * @description A callback that gets called when the current screen will disappear. This is called as soon as the transition begins.
+    */
+  var onWillDisappear: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.native
+  
+  /**
+    * @description Allows for the customization of the type of animation to use when this screen replaces another screen at the top of the stack. The following values are currently supported:
+    *  @type "push" – performs push animation
+    *  @type "pop" – performs pop animation (default)
+    */
+  var replaceAnimation: js.UndefOr[ScreenReplaceTypes] = js.native
+  
+  /**
+    * @description Allows for the customization of how the given screen should appear/dissapear when pushed or popped at the top of the stack. The following values are currently supported:
+    *  @type "default" – uses a platform default animation
+    *  @type "fade" – fades screen in or out
+    *  @type "flip" – flips the screen, requires stackPresentation: "modal" (iOS only)
+    *  @type "none" – the screen appears/dissapears without an animation
+    */
+  var stackAnimation: js.UndefOr[StackAnimationTypes] = js.native
+  
+  /**
+    * @type "push" – the new screen will be pushed onto a stack which on iOS means that the default animation will be slide from the side, the animation on Android may vary depending on the OS version and theme.
+    * @type "modal" – the new screen will be presented modally. In addition this allow for a nested stack to be rendered inside such screens.
+    * @type "transparentModal" – the new screen will be presented modally but in addition the second to last screen will remain attached to the stack container such that if the top screen is non opaque the content below can still be seen. If "modal" is used instead the below screen will get unmounted as soon as the transition ends.
+    * @type "containedModal" – will use "UIModalPresentationCurrentContext" modal style on iOS and will fallback to "modal" on Android.
+    * @type "containedTransparentModal" – will use "UIModalPresentationOverCurrentContext" modal style on iOS and will fallback to "transparentModal" on Android.
+    * @type "fullScreenModal" – will use "UIModalPresentationFullScreen" modal style on iOS and will fallback to "modal" on Android.
+    * @type "formSheet" – will use "UIModalPresentationFormSheet" modal style on iOS and will fallback to "modal" on Android.
+    */
+  var stackPresentation: js.UndefOr[StackPresentationTypes] = js.native
 }
-
 object ScreenProps {
+  
   @scala.inline
-  def apply(
-    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
-    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
-    accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
-    accessibilityHint: String = null,
-    accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
-    accessibilityLabel: String = null,
-    accessibilityLiveRegion: none | polite | assertive = null,
-    accessibilityRole: AccessibilityRole = null,
-    accessibilityState: AccessibilityState = null,
-    accessibilityStates: js.Array[AccessibilityStates] = null,
-    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
-    accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
-    accessible: js.UndefOr[Boolean] = js.undefined,
-    active: `0` | `1` | AnimatedInterpolation = null,
-    collapsable: js.UndefOr[Boolean] = js.undefined,
-    hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
-    hitSlop: Insets = null,
-    importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
-    isTVSelectable: js.UndefOr[Boolean] = js.undefined,
-    nativeID: String = null,
-    needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
-    onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
-    onAccessibilityTap: () => Unit = null,
-    onComponentRef: /* view */ js.Any => Unit = null,
-    onLayout: /* event */ LayoutChangeEvent => Unit = null,
-    onMagicTap: () => Unit = null,
-    onMoveShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
-    onMoveShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
-    onResponderEnd: /* event */ GestureResponderEvent => Unit = null,
-    onResponderGrant: /* event */ GestureResponderEvent => Unit = null,
-    onResponderMove: /* event */ GestureResponderEvent => Unit = null,
-    onResponderReject: /* event */ GestureResponderEvent => Unit = null,
-    onResponderRelease: /* event */ GestureResponderEvent => Unit = null,
-    onResponderStart: /* event */ GestureResponderEvent => Unit = null,
-    onResponderTerminate: /* event */ GestureResponderEvent => Unit = null,
-    onResponderTerminationRequest: /* event */ GestureResponderEvent => Boolean = null,
-    onStartShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
-    onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
-    onTouchCancel: /* event */ GestureResponderEvent => Unit = null,
-    onTouchEnd: /* event */ GestureResponderEvent => Unit = null,
-    onTouchEndCapture: /* event */ GestureResponderEvent => Unit = null,
-    onTouchMove: /* event */ GestureResponderEvent => Unit = null,
-    onTouchStart: /* event */ GestureResponderEvent => Unit = null,
-    pointerEvents: `box-none` | none | `box-only` | auto = null,
-    removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
-    renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined,
-    shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
-    testID: String = null,
-    tvParallaxMagnification: Int | Double = null,
-    tvParallaxProperties: TVParallaxProperties = null,
-    tvParallaxShiftDistanceX: Int | Double = null,
-    tvParallaxShiftDistanceY: Int | Double = null,
-    tvParallaxTiltAngle: Int | Double = null
-  ): ScreenProps = {
+  def apply(): ScreenProps = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
-    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.asInstanceOf[js.Any])
-    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.asInstanceOf[js.Any])
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
-    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
-    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
-    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
-    if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
-    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable.asInstanceOf[js.Any])
-    if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
-    if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
-    if (onComponentRef != null) __obj.updateDynamic("onComponentRef")(js.Any.fromFunction1(onComponentRef))
-    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
-    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
-    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1(onMoveShouldSetResponderCapture))
-    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(js.Any.fromFunction1(onResponderEnd))
-    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(js.Any.fromFunction1(onResponderGrant))
-    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(js.Any.fromFunction1(onResponderMove))
-    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(js.Any.fromFunction1(onResponderReject))
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction1(onResponderRelease))
-    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1(onResponderStart))
-    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1(onResponderTerminate))
-    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1(onResponderTerminationRequest))
-    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
-    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1(onTouchEndCapture))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (tvParallaxMagnification != null) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.asInstanceOf[js.Any])
-    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties.asInstanceOf[js.Any])
-    if (tvParallaxShiftDistanceX != null) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.asInstanceOf[js.Any])
-    if (tvParallaxShiftDistanceY != null) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.asInstanceOf[js.Any])
-    if (tvParallaxTiltAngle != null) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreenProps]
   }
+  
+  @scala.inline
+  implicit class ScreenPropsOps[Self <: ScreenProps] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setActive(value: `0` | `1` | AnimatedInterpolation): Self = this.set("active", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    
+    @scala.inline
+    def setActivityState(value: `0` | `1` | `2` | AnimatedInterpolation): Self = this.set("activityState", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteActivityState: Self = this.set("activityState", js.undefined)
+    
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    
+    @scala.inline
+    def setGestureEnabled(value: Boolean): Self = this.set("gestureEnabled", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteGestureEnabled: Self = this.set("gestureEnabled", js.undefined)
+    
+    @scala.inline
+    def setOnAppear(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = this.set("onAppear", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteOnAppear: Self = this.set("onAppear", js.undefined)
+    
+    @scala.inline
+    def setOnComponentRef(value: /* view */ js.Any => Unit): Self = this.set("onComponentRef", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteOnComponentRef: Self = this.set("onComponentRef", js.undefined)
+    
+    @scala.inline
+    def setOnDisappear(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = this.set("onDisappear", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteOnDisappear: Self = this.set("onDisappear", js.undefined)
+    
+    @scala.inline
+    def setOnDismissed(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = this.set("onDismissed", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteOnDismissed: Self = this.set("onDismissed", js.undefined)
+    
+    @scala.inline
+    def setOnWillAppear(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = this.set("onWillAppear", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteOnWillAppear: Self = this.set("onWillAppear", js.undefined)
+    
+    @scala.inline
+    def setOnWillDisappear(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = this.set("onWillDisappear", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteOnWillDisappear: Self = this.set("onWillDisappear", js.undefined)
+    
+    @scala.inline
+    def setReplaceAnimation(value: ScreenReplaceTypes): Self = this.set("replaceAnimation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteReplaceAnimation: Self = this.set("replaceAnimation", js.undefined)
+    
+    @scala.inline
+    def setStackAnimation(value: StackAnimationTypes): Self = this.set("stackAnimation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStackAnimation: Self = this.set("stackAnimation", js.undefined)
+    
+    @scala.inline
+    def setStackPresentation(value: StackPresentationTypes): Self = this.set("stackPresentation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStackPresentation: Self = this.set("stackPresentation", js.undefined)
+  }
 }
-

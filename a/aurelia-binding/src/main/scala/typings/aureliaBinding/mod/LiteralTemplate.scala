@@ -3,7 +3,7 @@ package typings.aureliaBinding.mod
 import typings.aureliaBinding.anon.ArraystringrawArraystring
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-binding", "LiteralTemplate")
 @js.native
@@ -84,6 +84,7 @@ class LiteralTemplate protected () extends Expression {
     raw: js.Array[String],
     func: AccessScope
   ) = this()
+  
   /**
     * The cooked (escaped) string parts of the template.
     * The first item is the TemplateHead. If there is only one item,
@@ -91,10 +92,12 @@ class LiteralTemplate protected () extends Expression {
     * to a LiteralString, unless it's tagged.
     */
   var cooked: ArraystringrawArraystring = js.native
+  
   /**
     * The expressions within the template (the parts between `${` and `}`)
     */
   var expressions: js.Array[Expression] = js.native
+  
   /**
     * The tag (function) to be invoked with the LiteralTemplate arguments.
     * The first argument is LiteralTemplate.cooked.
@@ -102,4 +105,3 @@ class LiteralTemplate protected () extends Expression {
     */
   var func: js.UndefOr[AccessScope | AccessMember | AccessKeyed] = js.native
 }
-

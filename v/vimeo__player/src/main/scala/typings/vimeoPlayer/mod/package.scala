@@ -2,11 +2,14 @@ package typings.vimeoPlayer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type CallbackFunction = js.Function1[/* repeated */ js.Any, js.Any]
+  
   type EventCallback = js.Function1[/* data */ js.Any, js.Any]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.vimeoPlayer.vimeoPlayerStrings.play
     - typings.vimeoPlayer.vimeoPlayerStrings.pause
@@ -27,6 +30,8 @@ package object mod {
     - java.lang.String
   */
   type EventName = typings.vimeoPlayer.mod._EventName | java.lang.String
+  
   type VimeoCuePointData = org.scalablytyped.runtime.StringDictionary[js.Any]
+  
   type VimeoTimeRange = js.Tuple2[scala.Double, scala.Double]
 }

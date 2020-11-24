@@ -4,12 +4,12 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Storage.IStorageItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FileActivatedEventArgs extends IFileActivatedEventArgs
-
 object FileActivatedEventArgs {
+  
   @scala.inline
   def apply(
     files: IVectorView[IStorageItem],
@@ -22,4 +22,3 @@ object FileActivatedEventArgs {
     __obj.asInstanceOf[FileActivatedEventArgs]
   }
 }
-

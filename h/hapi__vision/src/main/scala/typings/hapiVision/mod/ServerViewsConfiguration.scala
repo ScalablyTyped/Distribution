@@ -3,12 +3,13 @@ package typings.hapiVision.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServerViewsConfiguration
   extends ViewHandlerOrReplyOptions
      with EnginesConfiguration {
+  
   /**
     * The directory path, or array of directory paths, where helpers are located.
     * Helpers are functions used within templates to perform transformations and other data manipulations using the template context or other inputs.
@@ -18,8 +19,10 @@ trait ServerViewsConfiguration
     * Note that jade does not support loading helpers this way.
     */
   var helpersPath: js.UndefOr[String | js.Array[String]] = js.native
+  
   /** if set to false, templates will not be cached (thus will be read from file on every use). Defaults to true. */
   var isCached: js.UndefOr[Boolean] = js.native
+  
   /**
     * The root file path, or array of file paths, where partials are located.
     * Partials are small segments of template code that can be nested and reused throughout other templates.
@@ -27,41 +30,51 @@ trait ServerViewsConfiguration
     */
   var partialsPath: js.UndefOr[String | js.Array[String]] = js.native
 }
-
 object ServerViewsConfiguration {
+  
   @scala.inline
   def apply(engines: StringDictionary[NpmModule] | ServerViewsEnginesOptions): ServerViewsConfiguration = {
     val __obj = js.Dynamic.literal(engines = engines.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerViewsConfiguration]
   }
+  
   @scala.inline
   implicit class ServerViewsConfigurationOps[Self <: ServerViewsConfiguration] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setHelpersPathVarargs(value: String*): Self = this.set("helpersPath", js.Array(value :_*))
+    
     @scala.inline
     def setHelpersPath(value: String | js.Array[String]): Self = this.set("helpersPath", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHelpersPath: Self = this.set("helpersPath", js.undefined)
+    
     @scala.inline
     def setIsCached(value: Boolean): Self = this.set("isCached", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIsCached: Self = this.set("isCached", js.undefined)
+    
     @scala.inline
     def setPartialsPathVarargs(value: String*): Self = this.set("partialsPath", js.Array(value :_*))
+    
     @scala.inline
     def setPartialsPath(value: String | js.Array[String]): Self = this.set("partialsPath", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePartialsPath: Self = this.set("partialsPath", js.undefined)
   }
-  
 }
-

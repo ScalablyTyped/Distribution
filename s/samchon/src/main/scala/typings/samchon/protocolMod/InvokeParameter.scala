@@ -4,7 +4,7 @@ import typings.std.Uint8Array
 import typings.sxml.mod.XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/protocol", "InvokeParameter")
 @js.native
@@ -30,4 +30,3 @@ class InvokeParameter ()
   def this(name: String, `val`: Uint8Array) = this()
   def this(name: String, `val`: XML) = this()
 }
-

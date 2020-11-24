@@ -11,7 +11,7 @@ Native Node.js C++ extension for displaying desktop notifications using GNOME's 
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 900 |
+| # downloads        | 1136 |
 | # stars            | 3 |
 
 ## Links

@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes the type of a personal dictionary.
@@ -21,16 +21,17 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
 trait DictionaryType extends js.Object
-
 object DictionaryType {
+  
   /** @deprecated Deprecated */
   @scala.inline
   def MIXED: `2` = 2.asInstanceOf[`2`]
+  
   /** all entries in the dictionary are negative. */
   @scala.inline
   def NEGATIVE: `1` = 1.asInstanceOf[`1`]
+  
   /** all entries in the dictionary are positive. */
   @scala.inline
   def POSITIVE: `0` = 0.asInstanceOf[`0`]
 }
-

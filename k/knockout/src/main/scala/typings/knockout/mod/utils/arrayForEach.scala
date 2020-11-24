@@ -2,11 +2,12 @@ package typings.knockout.mod.utils
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("knockout", "utils.arrayForEach")
 @js.native
 object arrayForEach extends js.Object {
+  
   def apply[T](array: js.Array[T], action: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = js.native
   def apply[T](
     array: js.Array[T],
@@ -14,4 +15,3 @@ object arrayForEach extends js.Object {
     actionOwner: js.Any
   ): Unit = js.native
 }
-

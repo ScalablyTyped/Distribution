@@ -9,7 +9,7 @@ import typings.activexWord.activexWordNumbers.`9999998`
 import typings.activexWord.activexWordNumbers.`9999999`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexWord.activexWordNumbers.`0`
@@ -21,21 +21,26 @@ import scala.scalajs.js.annotation._
   - typings.activexWord.activexWordNumbers.`9999999`
 */
 trait WdConstants extends js.Object
-
 object WdConstants {
+  
   @scala.inline
   def wdAutoPosition: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def wdBackward: `-1073741823` = -1073741823.asInstanceOf[`-1073741823`]
+  
   @scala.inline
   def wdCreatorCode: `1297307460` = 1297307460.asInstanceOf[`1297307460`]
+  
   @scala.inline
   def wdFirst: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def wdForward: `1073741823` = 1073741823.asInstanceOf[`1073741823`]
+  
   @scala.inline
   def wdToggle: `9999998` = 9999998.asInstanceOf[`9999998`]
+  
   @scala.inline
   def wdUndefined: `9999999` = 9999999.asInstanceOf[`9999999`]
 }
-

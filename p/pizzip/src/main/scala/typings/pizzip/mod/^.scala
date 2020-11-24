@@ -3,7 +3,7 @@ package typings.pizzip.mod
 import typings.pizzip.anon.Arraybuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pizzip", JSImport.Namespace)
 @js.native
@@ -18,14 +18,13 @@ class ^ () extends PizZip {
   def this(data: LoadData) = this()
   def this(data: LoadData, options: LoadOptions) = this()
 }
-
 @JSImport("pizzip", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * If the browser supports them, PizZip can take advantage of some "new" features : ArrayBuffer, Blob, Uint8Array.
     * To know if PizZip can use them, you can check the PizZip.support object.
     */
   var support: Arraybuffer = js.native
 }
-

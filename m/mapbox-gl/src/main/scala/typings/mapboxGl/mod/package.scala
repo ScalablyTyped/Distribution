@@ -2,9 +2,10 @@ package typings.mapboxGl
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.mapboxGl.mod.BackgroundLayout
     - typings.mapboxGl.mod.FillLayout
@@ -16,26 +17,47 @@ package object mod {
     - typings.mapboxGl.mod.HeatmapLayout
     - typings.mapboxGl.mod.HillshadeLayout
   */
-  type AnyLayout = typings.mapboxGl.mod._AnyLayout | typings.mapboxGl.mod.BackgroundLayout | typings.mapboxGl.mod.FillExtrusionLayout | typings.mapboxGl.mod.RasterLayout | typings.mapboxGl.mod.CircleLayout | typings.mapboxGl.mod.HeatmapLayout | typings.mapboxGl.mod.HillshadeLayout
+  type AnyLayout = typings.mapboxGl.mod._AnyLayout | typings.mapboxGl.mod.BackgroundLayout | typings.mapboxGl.mod.FillExtrusionLayout | typings.mapboxGl.mod.RasterLayout | typings.mapboxGl.mod.HeatmapLayout | typings.mapboxGl.mod.HillshadeLayout
+  
   type BackgroundLayout = typings.mapboxGl.mod.Layout
-  type CircleLayout = typings.mapboxGl.mod.Layout
+  
   type EventData = org.scalablytyped.runtime.StringDictionary[js.Any]
+  
   type Expression = Array[typings.mapboxGl.mod.ExpressionName | js.Any]
+  
   type FillExtrusionLayout = typings.mapboxGl.mod.Layout
+  
   type HeatmapLayout = typings.mapboxGl.mod.Layout
+  
   type HillshadeLayout = typings.mapboxGl.mod.Layout
-  type LngLatBoundsLike = typings.mapboxGl.mod.LngLatBounds | (js.Tuple2[typings.mapboxGl.mod.LngLatLike, typings.mapboxGl.mod.LngLatLike]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])
+  
   /* Rewritten from type alias, can be one of: 
+    - typings.mapboxGl.mod.LngLatBounds
+    - js.Tuple2[typings.mapboxGl.mod.LngLatLike, typings.mapboxGl.mod.LngLatLike]
+    - js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]
+    - typings.mapboxGl.mod.LngLatLike
+  */
+  type LngLatBoundsLike = typings.mapboxGl.mod._LngLatBoundsLike | (js.Tuple2[
+    scala.Double | typings.mapboxGl.mod.LngLatLike, 
+    scala.Double | typings.mapboxGl.mod.LngLatLike
+  ]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])
+  
+  /* Rewritten from type alias, can be one of: 
+    - js.Tuple2[scala.Double, scala.Double]
     - typings.mapboxGl.mod.LngLat
     - typings.mapboxGl.anon.Lat
     - typings.mapboxGl.anon.Lon
-    - js.Tuple2[scala.Double, scala.Double]
   */
   type LngLatLike = typings.mapboxGl.mod._LngLatLike | (js.Tuple2[scala.Double, scala.Double])
+  
   type PointLike = typings.mapboxGl.mod.Point | (js.Tuple2[scala.Double, scala.Double])
+  
   type PromoteIdSpecification = org.scalablytyped.runtime.StringDictionary[java.lang.String] | java.lang.String
+  
   type RasterLayout = typings.mapboxGl.mod.Layout
+  
   type Sources = org.scalablytyped.runtime.StringDictionary[typings.mapboxGl.mod.AnySourceData]
+  
   type TransformRequestFunction = js.Function2[
     /* url */ java.lang.String, 
     /* resourceType */ typings.mapboxGl.mod.ResourceType, 

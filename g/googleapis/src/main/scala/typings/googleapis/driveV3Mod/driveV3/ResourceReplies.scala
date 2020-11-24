@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v3", "drive_v3.Resource$Replies")
 @js.native
 class ResourceReplies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * drive.replies.create
     * @desc Creates a new reply to a comment.
@@ -43,6 +45,7 @@ class ResourceReplies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReply]
   ): Unit = js.native
+  
   /**
     * drive.replies.delete
     * @desc Deletes a reply.
@@ -69,6 +72,7 @@ class ResourceReplies protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceRepliesDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceRepliesDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * drive.replies.get
     * @desc Gets a reply by ID.
@@ -100,6 +104,7 @@ class ResourceReplies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReply]
   ): Unit = js.native
+  
   /**
     * drive.replies.list
     * @desc Lists a comment's replies.
@@ -132,6 +137,7 @@ class ResourceReplies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReplyList]
   ): Unit = js.native
+  
   /**
     * drive.replies.update
     * @desc Updates a reply with patch semantics.
@@ -164,4 +170,3 @@ class ResourceReplies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaReply]
   ): Unit = js.native
 }
-

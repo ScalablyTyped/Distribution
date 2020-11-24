@@ -1,0 +1,23 @@
+package typings.webxr.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.webxr.webxrStrings.gaze
+  - typings.webxr.webxrStrings.`tracked-pointer`
+  - typings.webxr.webxrStrings.screen
+*/
+trait XRTargetRayMode extends js.Object
+object XRTargetRayMode {
+  
+  @scala.inline
+  def gaze: typings.webxr.webxrStrings.gaze = "gaze".asInstanceOf[typings.webxr.webxrStrings.gaze]
+  
+  @scala.inline
+  def screen: typings.webxr.webxrStrings.screen = "screen".asInstanceOf[typings.webxr.webxrStrings.screen]
+  
+  @scala.inline
+  def `tracked-pointer`: typings.webxr.webxrStrings.`tracked-pointer` = "tracked-pointer".asInstanceOf[typings.webxr.webxrStrings.`tracked-pointer`]
+}

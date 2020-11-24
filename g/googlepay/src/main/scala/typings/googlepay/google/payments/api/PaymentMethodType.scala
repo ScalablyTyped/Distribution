@@ -2,7 +2,7 @@ package typings.googlepay.google.payments.api
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Payment method type enum string.
@@ -30,11 +30,11 @@ import scala.scalajs.js.annotation._
   - typings.googlepay.googlepayStrings.PAYPAL
 */
 trait PaymentMethodType extends js.Object
-
 object PaymentMethodType {
+  
   @scala.inline
   def CARD: typings.googlepay.googlepayStrings.CARD = "CARD".asInstanceOf[typings.googlepay.googlepayStrings.CARD]
+  
   @scala.inline
   def PAYPAL: typings.googlepay.googlepayStrings.PAYPAL = "PAYPAL".asInstanceOf[typings.googlepay.googlepayStrings.PAYPAL]
 }
-

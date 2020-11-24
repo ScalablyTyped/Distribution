@@ -10,12 +10,13 @@ import typings.uirouterCore.transitionInterfaceMod.TransitionStateHookFn
 import typings.uirouterCore.transitionTransitionMod.Transition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StateDeclaration
   extends _StateDeclaration
      with _StateOrName {
+  
   /**
     * Gets the internal State object API
     *
@@ -26,6 +27,7 @@ trait StateDeclaration
     */
   @JSName("$$state")
   var DollarDollarstate: js.UndefOr[js.Function0[StateObject]] = js.native
+  
   /**
     * Abstract state indicator
     *
@@ -33,6 +35,7 @@ trait StateDeclaration
     * Use an abstract state to provide inherited properties (url, resolve, data, etc) to children states.
     */
   var `abstract`: js.UndefOr[Boolean] = js.native
+  
   /**
     * An inherited property to store state data
     *
@@ -46,6 +49,7 @@ trait StateDeclaration
     * Properties from parent objects will return false for `hasOwnProperty`.
     */
   var data: js.UndefOr[js.Any] = js.native
+  
   /**
     * Marks all the state's parameters as `dynamic`.
     *
@@ -55,6 +59,7 @@ trait StateDeclaration
     * Note: this value overrides the `dynamic` value on a custom parameter type ([[ParamTypeDefinition.dynamic]]).
     */
   var dynamic: js.UndefOr[Boolean] = js.native
+  
   /**
     * A function used to lazy load code
     *
@@ -180,6 +185,7 @@ trait StateDeclaration
   var lazyLoad: js.UndefOr[
     js.Function2[/* transition */ Transition, /* state */ this.type, js.Promise[LazyLoadResult]]
   ] = js.native
+  
   /**
     * The state name (required)
     *
@@ -190,6 +196,7 @@ trait StateDeclaration
     * The name is used like an id.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * A Transition Hook called with the state is being entered.  See: [[IHookRegistry.onEnter]]
     *
@@ -212,6 +219,7 @@ trait StateDeclaration
     * ```
     */
   var onEnter: js.UndefOr[TransitionStateHookFn] = js.native
+  
   /**
     * A Transition Hook called with the state is being exited. See: [[IHookRegistry.onExit]]
     *
@@ -234,6 +242,7 @@ trait StateDeclaration
     * ```
     */
   var onExit: js.UndefOr[TransitionStateHookFn] = js.native
+  
   /**
     * A [[TransitionStateHookFn]] called with the state is being retained/kept. See: [[IHookRegistry.onRetain]]
     *
@@ -256,6 +265,7 @@ trait StateDeclaration
     * ```
     */
   var onRetain: js.UndefOr[TransitionStateHookFn] = js.native
+  
   /**
     * Params configuration
     *
@@ -277,6 +287,7 @@ trait StateDeclaration
     * ```
     */
   var params: js.UndefOr[StringDictionary[ParamDeclaration | js.Any]] = js.native
+  
   /**
     * The parent state
     *
@@ -302,6 +313,7 @@ trait StateDeclaration
     * ```
     */
   var parent: js.UndefOr[String | StateDeclaration] = js.native
+  
   /**
     * Synchronously or asynchronously redirects Transitions to a different state/params
     *
@@ -370,12 +382,14 @@ trait StateDeclaration
   var redirectTo: js.UndefOr[
     RedirectToResult | (js.Function1[/* transition */ Transition, js.Promise[RedirectToResult] | RedirectToResult])
   ] = js.native
+  
   /**
     * Marks all query parameters as [[ParamDeclaration.dynamic]]
     *
     * @deprecated use either [[dynamic]] or [[ParamDeclaration.dynamic]]
     */
   var reloadOnSearch: js.UndefOr[Boolean] = js.native
+  
   /**
     * Resolve - a mechanism to asynchronously fetch data, participating in the Transition lifecycle
     *
@@ -497,6 +511,7 @@ trait StateDeclaration
     * ```
     */
   var resolve: js.UndefOr[js.Array[ResolveTypes] | StringDictionary[IInjectable]] = js.native
+  
   /**
     * Sets the resolve policy defaults for all resolves on this state
     *
@@ -510,6 +525,7 @@ trait StateDeclaration
     * See [[ResolvePolicy]] for more details.
     */
   var resolvePolicy: js.UndefOr[ResolvePolicy] = js.native
+  
   /**
     * The url fragment for the state
     *
@@ -539,6 +555,7 @@ trait StateDeclaration
     * ```
     */
   var url: js.UndefOr[String] = js.native
+  
   /**
     * Named views
     *
@@ -586,99 +603,137 @@ trait StateDeclaration
     */
   var views: js.UndefOr[StringDictionary[ViewDeclaration]] = js.native
 }
-
 object StateDeclaration {
+  
   @scala.inline
   def apply(): StateDeclaration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StateDeclaration]
   }
+  
   @scala.inline
   implicit class StateDeclarationOps[Self <: StateDeclaration] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDollarDollarstate(value: () => StateObject): Self = this.set("$$state", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteDollarDollarstate: Self = this.set("$$state", js.undefined)
+    
     @scala.inline
     def setAbstract(value: Boolean): Self = this.set("abstract", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAbstract: Self = this.set("abstract", js.undefined)
+    
     @scala.inline
     def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteData: Self = this.set("data", js.undefined)
+    
     @scala.inline
     def setDynamic(value: Boolean): Self = this.set("dynamic", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDynamic: Self = this.set("dynamic", js.undefined)
+    
     @scala.inline
     def setLazyLoad(value: (/* transition */ Transition, StateDeclaration) => js.Promise[LazyLoadResult]): Self = this.set("lazyLoad", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteLazyLoad: Self = this.set("lazyLoad", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setOnEnter(value: (/* transition */ Transition, /* state */ StateDeclaration) => HookResult): Self = this.set("onEnter", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteOnEnter: Self = this.set("onEnter", js.undefined)
+    
     @scala.inline
     def setOnExit(value: (/* transition */ Transition, /* state */ StateDeclaration) => HookResult): Self = this.set("onExit", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteOnExit: Self = this.set("onExit", js.undefined)
+    
     @scala.inline
     def setOnRetain(value: (/* transition */ Transition, /* state */ StateDeclaration) => HookResult): Self = this.set("onRetain", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteOnRetain: Self = this.set("onRetain", js.undefined)
+    
     @scala.inline
     def setParams(value: StringDictionary[ParamDeclaration | js.Any]): Self = this.set("params", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteParams: Self = this.set("params", js.undefined)
+    
     @scala.inline
     def setParent(value: String | StateDeclaration): Self = this.set("parent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteParent: Self = this.set("parent", js.undefined)
+    
     @scala.inline
     def setRedirectToFunction1(value: /* transition */ Transition => js.Promise[RedirectToResult] | RedirectToResult): Self = this.set("redirectTo", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRedirectTo(
       value: RedirectToResult | (js.Function1[/* transition */ Transition, js.Promise[RedirectToResult] | RedirectToResult])
     ): Self = this.set("redirectTo", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRedirectTo: Self = this.set("redirectTo", js.undefined)
+    
     @scala.inline
     def setReloadOnSearch(value: Boolean): Self = this.set("reloadOnSearch", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReloadOnSearch: Self = this.set("reloadOnSearch", js.undefined)
+    
     @scala.inline
     def setResolveVarargs(value: ResolveTypes*): Self = this.set("resolve", js.Array(value :_*))
+    
     @scala.inline
     def setResolve(value: js.Array[ResolveTypes] | StringDictionary[IInjectable]): Self = this.set("resolve", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResolve: Self = this.set("resolve", js.undefined)
+    
     @scala.inline
     def setResolvePolicy(value: ResolvePolicy): Self = this.set("resolvePolicy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResolvePolicy: Self = this.set("resolvePolicy", js.undefined)
+    
     @scala.inline
     def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUrl: Self = this.set("url", js.undefined)
+    
     @scala.inline
     def setViews(value: StringDictionary[ViewDeclaration]): Self = this.set("views", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteViews: Self = this.set("views", js.undefined)
   }
-  
 }
-

@@ -10,9 +10,9 @@ A well-tested CSS minifier
 | ------------------ | :-------------: |
 | Full name          | clean-css |
 | Keywords           | css, minifier |
-| # releases         | 5 |
-| # dependents       | 1189 |
-| # downloads        | 278192770 |
+| # releases         | 3 |
+| # dependents       | 1258 |
+| # downloads        | 353260244 |
 | # stars            | 90 |
 
 ## Links

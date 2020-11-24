@@ -1,12 +1,11 @@
 package typings.gestalt.mod
 
-import typings.react.mod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gestalt", "TextArea")
 @js.native
-class TextArea ()
-  extends Component[TextAreaProps, js.Any, js.Any]
-
+object TextArea extends TopLevel[ReactForwardRef[HTMLTextAreaElement, TextAreaProps]]

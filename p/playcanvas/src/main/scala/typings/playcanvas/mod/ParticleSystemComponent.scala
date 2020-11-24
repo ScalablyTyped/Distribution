@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new ParticleSystemComponent.
@@ -51,7 +51,7 @@ import scala.scalajs.js.annotation._
   * * {@link pc.EMITTERSHAPE_SPHERE}: Sphere shape parameterized by emitterRadius. Initial velocity is directed outwards from the center.
   * @property sort - Sorting mode. Forces CPU simulation, so be careful.
   *
-  * * {@link pc.PARTICLESORT_NONE}: No sorting, particles are drawn in arbitary order. Can be simulated on GPU.
+  * * {@link pc.PARTICLESORT_NONE}: No sorting, particles are drawn in arbitrary order. Can be simulated on GPU.
   * * {@link pc.PARTICLESORT_DISTANCE}: Sorting based on distance to the camera. CPU only.
   * * {@link pc.PARTICLESORT_NEWER_FIRST}: Newer particles are drawn first. CPU only.
   * * {@link pc.PARTICLESORT_OLDER_FIRST}: Older particles are drawn first. CPU only.
@@ -96,4 +96,3 @@ class ParticleSystemComponent protected ()
   extends typings.playcanvas.pc.ParticleSystemComponent {
   def this(system: typings.playcanvas.pc.ParticleSystemComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }
-

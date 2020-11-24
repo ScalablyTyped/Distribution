@@ -5,9 +5,8 @@ import typings.react.mod.ComponentType
 import typings.wordpressEditor.postPendingStatusCheckMod.PostPendingStatusCheck.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/editor/components", "PostPendingStatusCheck")
 @js.native
 object PostPendingStatusCheck extends TopLevel[ComponentType[Props]]
-

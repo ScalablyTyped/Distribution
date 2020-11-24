@@ -15,10 +15,11 @@ import typings.bootstrapMultiselect.bootstrapMultiselectStrings.setOptions
 import typings.bootstrapMultiselect.bootstrapMultiselectStrings.updateButtonText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   def multiselect(): JQuery = js.native
   def multiselect(options: MultiSelectOptions): JQuery = js.native
   @JSName("multiselect")
@@ -72,4 +73,3 @@ trait JQuery extends js.Object {
   @JSName("multiselect")
   def multiselect_updateButtonText(method: updateButtonText): JQuery = js.native
 }
-

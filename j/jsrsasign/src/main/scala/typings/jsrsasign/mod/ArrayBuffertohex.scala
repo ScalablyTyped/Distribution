@@ -3,11 +3,12 @@ package typings.jsrsasign.mod
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsrsasign", "ArrayBuffertohex")
 @js.native
 object ArrayBuffertohex extends js.Object {
+  
   /**
     * convert an ArrayBuffer to a hexadecimal string
     * @param buffer ArrayBuffer
@@ -24,4 +25,3 @@ object ArrayBuffertohex extends js.Object {
     */
   def apply(buffer: ArrayBuffer): String = js.native
 }
-

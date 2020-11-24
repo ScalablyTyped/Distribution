@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * A PointText item represents a piece of typography in your Paper.js
@@ -28,4 +28,3 @@ class PointText protected ()
     */
   def this(point: typings.paper.paper.Point) = this()
 }
-

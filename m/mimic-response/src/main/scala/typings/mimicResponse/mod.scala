@@ -4,11 +4,12 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.httpMod.IncomingMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mimic-response", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
   Mimic a [Node.js HTTP response stream](https://nodejs.org/api/http.html#http_class_http_incomingmessage)
   Makes `toStream` include the properties from `fromStream`.
@@ -22,4 +23,3 @@ object mod extends js.Object {
     toStream: T
   ): T with IncomingMessage = js.native
 }
-

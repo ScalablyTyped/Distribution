@@ -43,11 +43,11 @@ import typings.semanticUiShape.semanticUiShapeStrings.verbose
 import typings.semanticUiShape.semanticUiShapeStrings.width
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Shape_ extends js.Object {
-  var settings: ShapeSettings = js.native
+  
   def apply(): JQuery = js.native
   /**
     * Flips the shape over counter-clockwise
@@ -154,5 +154,6 @@ trait Shape_ extends js.Object {
   def apply(behavior: setting, name: width, value: next): JQuery = js.native
   def apply(behavior: setting, value: ShapeSettings): JQuery = js.native
   def apply(settings: ShapeSettings): JQuery = js.native
+  
+  var settings: ShapeSettings = js.native
 }
-

@@ -4,22 +4,16 @@ import typings.ariClient.anon.FormatLang
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Sound extends Resource {
+  
   /**
     * The formats and languages in which this sound is available.
     */
   var formats: FormatLangPair | js.Array[FormatLangPair] = js.native
-  /**
-    * Sounds identifier.
-    */
-  var id: String = js.native
-  /**
-    * Text description of the sound, usually the words spoken.
-    */
-  var text: js.UndefOr[String] = js.native
+  
   /**
     * Get a sounds details.
     */
@@ -28,6 +22,12 @@ trait Sound extends Resource {
     * Get a sounds details.
     */
   def get(callback: js.Function2[/* err */ Error, /* sound */ this.type, Unit]): Unit = js.native
+  
+  /**
+    * Sounds identifier.
+    */
+  var id: String = js.native
+  
   /**
     * List all sounds.
     *
@@ -50,5 +50,9 @@ trait Sound extends Resource {
     params: FormatLang,
     callback: js.Function2[/* err */ Error, /* sounds */ js.Array[this.type], Unit]
   ): Unit = js.native
+  
+  /**
+    * Text description of the sound, usually the words spoken.
+    */
+  var text: js.UndefOr[String] = js.native
 }
-

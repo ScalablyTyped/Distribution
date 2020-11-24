@@ -13,7 +13,7 @@ import typings.phaser.Phaser.GameObjects.Components.Transform
 import typings.phaser.Phaser.GameObjects.Components.Visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Extern Game Object is a special type of Game Object that allows you to pass
@@ -46,4 +46,3 @@ trait Extern
      with Tint
      with Transform
      with Visible
-

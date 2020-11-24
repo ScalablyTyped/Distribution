@@ -3,11 +3,12 @@ package typings.pkijs.mod
 import typings.pkijs.algorithmIdentifierMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pkijs/src/common", "getHashAlgorithm")
 @js.native
 object getHashAlgorithm extends js.Object {
+  
   /**
     * Getting hash algorithm by signature algorithm
     *
@@ -16,4 +17,3 @@ object getHashAlgorithm extends js.Object {
     */
   def apply(signatureAlgorithm: default): String = js.native
 }
-

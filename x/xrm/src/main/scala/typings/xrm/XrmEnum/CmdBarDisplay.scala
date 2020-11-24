@@ -4,7 +4,7 @@ import typings.xrm.xrmStrings.`false`
 import typings.xrm.xrmStrings.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Command Bar Display options for Xrm.Url.FormOpenParameters.cmdbar, Xrm.Url.ViewOpenParameters.cmdbar, and Xrm.Utility.FormOpenParameters.cmdbar.
@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.`false`
 */
 trait CmdBarDisplay extends js.Object
-
 object CmdBarDisplay {
+  
   @scala.inline
   def False: `false` = "false".asInstanceOf[`false`]
+  
   @scala.inline
   def True: `true` = "true".asInstanceOf[`true`]
 }
-

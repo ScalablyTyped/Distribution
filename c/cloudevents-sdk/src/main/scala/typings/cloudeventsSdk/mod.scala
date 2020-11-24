@@ -7,11 +7,16 @@ import typings.cloudeventsSdk.anon.TypeofHTTPEmitter
 import typings.cloudeventsSdk.cloudeventMod.CE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cloudevents-sdk", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  var Constants: js.Any = js.native
+  
+  var HTTPEmitter: TypeofHTTPEmitter = js.native
+  
   @js.native
   class CloudEvent protected ()
     extends typings.cloudeventsSdk.cloudeventMod.CloudEvent {
@@ -32,6 +37,9 @@ object mod extends js.Object {
       */
     def this(event: CE) = this()
   }
+  @js.native
+  object CloudEvent
+    extends TopLevel[Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]]
   
   @js.native
   /**
@@ -39,16 +47,7 @@ object mod extends js.Object {
     */
   class HTTPReceiver ()
     extends typings.cloudeventsSdk.httpReceiverMod.HTTPReceiver
-  
-  var Constants: js.Any = js.native
-  var HTTPEmitter: TypeofHTTPEmitter = js.native
-  @js.native
-  object CloudEvent
-    extends TopLevel[Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]]
-  
   @js.native
   object HTTPReceiver
     extends TopLevel[Instantiable0[typings.cloudeventsSdk.httpReceiverMod.HTTPReceiver]]
-  
 }
-

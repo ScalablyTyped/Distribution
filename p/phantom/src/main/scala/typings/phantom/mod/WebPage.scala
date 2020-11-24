@@ -77,14 +77,19 @@ import typings.phantom.phantomStrings.windowName
 import typings.phantom.phantomStrings.zoomFactor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebPage extends js.Object {
+  
   def addCookie(cookie: ICookie): js.Promise[Boolean] = js.native
+  
   def clearCookies(): js.Promise[Unit] = js.native
+  
   def close(): js.Promise[Unit] = js.native
+  
   def deleteCookie(cookieName: String): js.Promise[Boolean] = js.native
+  
   def evaluate[R](callback: js.Function0[R]): js.Promise[R] = js.native
   def evaluate[R](callback: js.Function1[/* repeated */ js.Any, R], args: js.Any*): js.Promise[R] = js.native
   def evaluate[T, R](callback: js.Function1[/* arg */ T, R], arg: T): js.Promise[R] = js.native
@@ -95,8 +100,11 @@ trait WebPage extends js.Object {
     arg2: T2,
     arg3: T3
   ): js.Promise[R] = js.native
+  
   def includeJs(url: String): js.Promise[Unit] = js.native
+  
   def injectJs(filename: String): js.Promise[Boolean] = js.native
+  
   @JSName("off")
   def off_onAlert(event: onAlert): js.Promise[PageId] = js.native
   @JSName("off")
@@ -133,6 +141,7 @@ trait WebPage extends js.Object {
   def off_onResourceTimeout(event: onResourceTimeout): js.Promise[PageId] = js.native
   @JSName("off")
   def off_onUrlChanged(event: onUrlChanged): js.Promise[PageId] = js.native
+  
   def on(event: onAlert, runOnPhantom: `false`, listener: js.Function1[/* msg */ String, Unit]): js.Promise[PageId] = js.native
   def on(event: onCallback, runOnPhantom: `false`, listener: js.Function1[/* data */ js.Any, Unit]): js.Promise[PageId] = js.native
   def on(event: onClosing, runOnPhantom: `false`, listener: js.Function1[/* closingPage */ js.Any, Unit]): js.Promise[PageId] = js.native
@@ -242,8 +251,10 @@ trait WebPage extends js.Object {
   def on_onResourceTimeout(event: onResourceTimeout, listener: js.Function1[/* request */ IRequestDataerrorCodenumb, Unit]): js.Promise[PageId] = js.native
   @JSName("on")
   def on_onUrlChanged(event: onUrlChanged, listener: js.Function1[/* targetUrl */ String, Unit]): js.Promise[PageId] = js.native
+  
   def open(url: String): js.Promise[String] = js.native
   def open(url: String, settings: IOpenWebPageSettings): js.Promise[String] = js.native
+  
   def property[T](key: String): js.Promise[T] = js.native
   def property[T](key: String, value: T): js.Promise[Unit] = js.native
   @JSName("property")
@@ -302,9 +313,12 @@ trait WebPage extends js.Object {
   def property_windowName(key: windowName): js.Promise[String] = js.native
   @JSName("property")
   def property_zoomFactor(key: zoomFactor): js.Promise[Double] = js.native
+  
   def render(filename: String): js.Promise[Unit] = js.native
   def render(filename: String, options: Format): js.Promise[Unit] = js.native
+  
   def renderBase64(`type`: String): js.Promise[String] = js.native
+  
   def sendEvent(keyboardEventType: String, key: String): js.Promise[Unit] = js.native
   def sendEvent(
     keyboardEventType: String,
@@ -344,7 +358,9 @@ trait WebPage extends js.Object {
   def sendEvent(mouseEventType: String, mouseX: Double, mouseY: js.UndefOr[scala.Nothing], button: String): js.Promise[Unit] = js.native
   def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double): js.Promise[Unit] = js.native
   def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double, button: String): js.Promise[Unit] = js.native
+  
   def setContent(html: String, url: String): js.Promise[String] = js.native
+  
   def setting[T](key: String): js.Promise[T] = js.native
   def setting[T](key: String, value: T): js.Promise[T] = js.native
   @JSName("setting")
@@ -366,4 +382,3 @@ trait WebPage extends js.Object {
   @JSName("setting")
   def setting_webSecurityEnabled(key: webSecurityEnabled): js.Promise[Boolean] = js.native
 }
-

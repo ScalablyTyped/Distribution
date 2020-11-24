@@ -10,9 +10,9 @@ Testing with karma following open-wc recommendations
 | ------------------ | :-------------: |
 | Full name          | @open-wc/testing-karma |
 | Keywords           | testing, karma, mocha, compatibility |
-| # releases         | 167 |
+| # releases         | 203 |
 | # dependents       | 3 |
-| # downloads        | 123335 |
+| # downloads        | 250292 |
 | # stars            | 0 |
 
 ## Links

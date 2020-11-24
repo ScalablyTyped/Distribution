@@ -5,14 +5,16 @@ import typings.geojson.mod.MultiLineString
 import typings.geojson.mod.Polygon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GeoGraticuleGenerator extends js.Object {
+  
   /**
     * Returns a GeoJSON MultiLineString geometry object representing all meridians and parallels for this graticule.
     */
   def apply(): MultiLineString = js.native
+  
   /**
     * Returns the current minor extent, which defaults to ⟨⟨-180°, -80° - ε⟩, ⟨180°, 80° + ε⟩⟩.
     */
@@ -23,6 +25,7 @@ trait GeoGraticuleGenerator extends js.Object {
     * @param extent Extent to use for major and minor extent of graticule.
     */
   def extent(extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): this.type = js.native
+  
   /**
     * Returns the current major extent, which defaults to ⟨⟨-180°, -90° + ε⟩, ⟨180°, 90° - ε⟩⟩.
     */
@@ -33,6 +36,7 @@ trait GeoGraticuleGenerator extends js.Object {
     * @param extent Major extent of graticule.
     */
   def extentMajor(extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): this.type = js.native
+  
   /**
     * Returns the current minor extent, which defaults to  ⟨⟨-180°, -80° - ε⟩, ⟨180°, 80° + ε⟩⟩.
     */
@@ -43,14 +47,17 @@ trait GeoGraticuleGenerator extends js.Object {
     * @param extent Minor extent of graticule.
     */
   def extentMinor(extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): this.type = js.native
+  
   /**
     * Returns an array of GeoJSON LineString geometry objects, one for each meridian or parallel for this graticule.
     */
   def lines(): js.Array[LineString] = js.native
+  
   /**
     * Returns a GeoJSON Polygon geometry object representing the outline of this graticule, i.e. along the meridians and parallels defining its extent.
     */
   def outline(): Polygon = js.native
+  
   /**
     * Returns the current precision, which defaults to 2.5°.
     */
@@ -61,6 +68,7 @@ trait GeoGraticuleGenerator extends js.Object {
     * @param angle Precision in degrees.
     */
   def precision(angle: Double): this.type = js.native
+  
   /**
     * Returns the current minor step, which defaults to ⟨10°, 10°⟩.
     */
@@ -71,6 +79,7 @@ trait GeoGraticuleGenerator extends js.Object {
     * @param step Major and minor step to use for this graticule.
     */
   def step(step: js.Tuple2[Double, Double]): this.type = js.native
+  
   /**
     * Returns the current major step, which defaults to ⟨90°, 360°⟩.
     */
@@ -81,6 +90,7 @@ trait GeoGraticuleGenerator extends js.Object {
     * @param step Major step.
     */
   def stepMajor(step: js.Tuple2[Double, Double]): this.type = js.native
+  
   /**
     * Returns the current major step, which defaults to ⟨10°, 10°⟩.
     */
@@ -92,4 +102,3 @@ trait GeoGraticuleGenerator extends js.Object {
     */
   def stepMinor(step: js.Tuple2[Double, Double]): this.type = js.native
 }
-

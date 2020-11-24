@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BPMNGateways extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.BPMNGateways")
 @js.native
 object BPMNGateways extends js.Object {
+  
   //Used to set BPMN Gateway as Complex
   @js.native
   sealed trait Complex extends BPMNGateways
@@ -41,6 +41,4 @@ object BPMNGateways extends js.Object {
   //Used to set BPMN Gateway as ParallelEventBased
   @js.native
   sealed trait ParallelEventBased extends BPMNGateways
-  
 }
-

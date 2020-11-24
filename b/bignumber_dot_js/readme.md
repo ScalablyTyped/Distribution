@@ -1,7 +1,7 @@
 
 # Scala.js typings for bignumber_dot_js
 
-Typings are for version 9.0.0
+Typings are for version 9.0.1
 
 ## Library description:
 A library for arbitrary-precision decimal and non-decimal arithmetic
@@ -10,9 +10,9 @@ A library for arbitrary-precision decimal and non-decimal arithmetic
 | ------------------ | :-------------: |
 | Full name          | bignumber.js |
 | Keywords           | arbitrary, precision, arithmetic, big, number, decimal, float, biginteger, bigdecimal, bignumber, bigint, bignum |
-| # releases         | 14 |
-| # dependents       | 1743 |
-| # downloads        | 102050874 |
+| # releases         | 6 |
+| # dependents       | 2207 |
+| # downloads        | 179450420 |
 | # stars            | 36 |
 
 ## Links

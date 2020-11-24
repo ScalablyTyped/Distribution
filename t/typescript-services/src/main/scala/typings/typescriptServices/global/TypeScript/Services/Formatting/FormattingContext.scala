@@ -3,7 +3,7 @@ package typings.typescriptServices.global.TypeScript.Services.Formatting
 import typings.typescriptServices.TypeScript.Services.Formatting.ITextSnapshot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.Services.Formatting.FormattingContext")
 @js.native
@@ -14,4 +14,3 @@ class FormattingContext protected ()
     formattingRequestKind: typings.typescriptServices.TypeScript.Services.Formatting.FormattingRequestKind
   ) = this()
 }
-

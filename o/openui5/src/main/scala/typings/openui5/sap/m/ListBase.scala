@@ -4,10 +4,11 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.delegate.ItemNavigation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ListBase extends Control {
+  
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @since 1.28.0
@@ -16,12 +17,14 @@ trait ListBase extends Control {
     */
   def addAriaLabelledBy(vAriaLabelledBy: js.Any): ListBase = js.native
   def addAriaLabelledBy(vAriaLabelledBy: Control): ListBase = js.native
+  
   /**
     * Adds some item to the aggregation <code>items</code>.
     * @param oItem the item to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addItem(oItem: ListItemBase): ListBase = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>delete</code> event of this
     * <code>sap.m.ListBase</code>.When called, the context of the event handler (its <code>this</code>)
@@ -36,6 +39,7 @@ trait ListBase extends Control {
     */
   def attachDelete(oData: js.Any, fnFunction: js.Any): ListBase = js.native
   def attachDelete(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>growingFinished</code> event of this
     * <code>sap.m.ListBase</code>.When called, the context of the event handler (its <code>this</code>)
@@ -52,6 +56,7 @@ trait ListBase extends Control {
     */
   def attachGrowingFinished(oData: js.Any, fnFunction: js.Any): ListBase = js.native
   def attachGrowingFinished(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>growingStarted</code> event of this
     * <code>sap.m.ListBase</code>.When called, the context of the event handler (its <code>this</code>)
@@ -67,6 +72,7 @@ trait ListBase extends Control {
     */
   def attachGrowingStarted(oData: js.Any, fnFunction: js.Any): ListBase = js.native
   def attachGrowingStarted(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>itemPress</code> event of this
     * <code>sap.m.ListBase</code>.When called, the context of the event handler (its <code>this</code>)
@@ -83,6 +89,7 @@ trait ListBase extends Control {
     */
   def attachItemPress(oData: js.Any, fnFunction: js.Any): ListBase = js.native
   def attachItemPress(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>select</code> event of this
     * <code>sap.m.ListBase</code>.When called, the context of the event handler (its <code>this</code>)
@@ -98,6 +105,7 @@ trait ListBase extends Control {
     */
   def attachSelect(oData: js.Any, fnFunction: js.Any): ListBase = js.native
   def attachSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>selectionChange</code> event of this
     * <code>sap.m.ListBase</code>.When called, the context of the event handler (its <code>this</code>)
@@ -114,6 +122,7 @@ trait ListBase extends Control {
     */
   def attachSelectionChange(oData: js.Any, fnFunction: js.Any): ListBase = js.native
   def attachSelectionChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>swipe</code> event of this
     * <code>sap.m.ListBase</code>.When called, the context of the event handler (its <code>this</code>)
@@ -131,6 +140,7 @@ trait ListBase extends Control {
     */
   def attachSwipe(oData: js.Any, fnFunction: js.Any): ListBase = js.native
   def attachSwipe(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>updateFinished</code> event of this
     * <code>sap.m.ListBase</code>.When called, the context of the event handler (its <code>this</code>)
@@ -147,6 +157,7 @@ trait ListBase extends Control {
     */
   def attachUpdateFinished(oData: js.Any, fnFunction: js.Any): ListBase = js.native
   def attachUpdateFinished(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>updateStarted</code> event of this
     * <code>sap.m.ListBase</code>.When called, the context of the event handler (its <code>this</code>)
@@ -163,6 +174,7 @@ trait ListBase extends Control {
     */
   def attachUpdateStarted(oData: js.Any, fnFunction: js.Any): ListBase = js.native
   def attachUpdateStarted(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Binds aggregation <code>items</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -171,28 +183,33 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindItems(oBindingInfo: js.Any): ListBase = js.native
+  
   /**
     * Destroys the headerToolbar in the aggregation <code>headerToolbar</code>.
     * @since 1.16
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyHeaderToolbar(): ListBase = js.native
+  
   /**
     * Destroys the infoToolbar in the aggregation <code>infoToolbar</code>.
     * @since 1.16
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyInfoToolbar(): ListBase = js.native
+  
   /**
     * Destroys all the items in the aggregation <code>items</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyItems(): ListBase = js.native
+  
   /**
     * Destroys the swipeContent in the aggregation <code>swipeContent</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroySwipeContent(): ListBase = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>delete</code> event of this
     * <code>sap.m.ListBase</code>.The passed function and listener object must match the ones used for
@@ -202,6 +219,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachDelete(fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>growingFinished</code> event of this
     * <code>sap.m.ListBase</code>.The passed function and listener object must match the ones used for
@@ -212,6 +230,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachGrowingFinished(fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>growingStarted</code> event of this
     * <code>sap.m.ListBase</code>.The passed function and listener object must match the ones used for
@@ -222,6 +241,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachGrowingStarted(fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>itemPress</code> event of this
     * <code>sap.m.ListBase</code>.The passed function and listener object must match the ones used for
@@ -232,6 +252,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachItemPress(fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>select</code> event of this
     * <code>sap.m.ListBase</code>.The passed function and listener object must match the ones used for
@@ -241,6 +262,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSelect(fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>selectionChange</code> event of this
     * <code>sap.m.ListBase</code>.The passed function and listener object must match the ones used for
@@ -251,6 +273,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSelectionChange(fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>swipe</code> event of this
     * <code>sap.m.ListBase</code>.The passed function and listener object must match the ones used for
@@ -260,6 +283,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSwipe(fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>updateFinished</code> event of this
     * <code>sap.m.ListBase</code>.The passed function and listener object must match the ones used for
@@ -270,6 +294,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachUpdateFinished(fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>updateStarted</code> event of this
     * <code>sap.m.ListBase</code>.The passed function and listener object must match the ones used for
@@ -280,6 +305,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachUpdateStarted(fnFunction: js.Any, oListener: js.Any): ListBase = js.native
+  
   /**
     * Fires event <code>delete</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>listItem</code> of type <code>sap.m.ListItemBase</code>The item which fired
@@ -288,6 +314,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireDelete(mArguments: js.Any): ListBase = js.native
+  
   /**
     * Fires event <code>growingFinished</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>actual</code> of type <code>int</code>Actual number of
@@ -297,6 +324,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireGrowingFinished(mArguments: js.Any): ListBase = js.native
+  
   /**
     * Fires event <code>growingStarted</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>actual</code> of type <code>int</code>Actual number of
@@ -306,6 +334,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireGrowingStarted(mArguments: js.Any): ListBase = js.native
+  
   /**
     * Fires event <code>itemPress</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>listItem</code> of type <code>sap.m.ListItemBase</code>The item which fired
@@ -316,6 +345,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireItemPress(mArguments: js.Any): ListBase = js.native
+  
   /**
     * Fires event <code>select</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>listItem</code> of type <code>sap.m.ListItemBase</code>The item which fired
@@ -324,6 +354,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSelect(mArguments: js.Any): ListBase = js.native
+  
   /**
     * Fires event <code>selectionChange</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>listItem</code> of type <code>sap.m.ListItemBase</code>The item whose
@@ -338,6 +369,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSelectionChange(mArguments: js.Any): ListBase = js.native
+  
   /**
     * Fires event <code>swipe</code> to attached listeners.Listeners may prevent the default action of
     * this event by using the <code>preventDefault</code>-method on the event object.Expects the following
@@ -351,6 +383,7 @@ trait ListBase extends Control {
     * @returns Whether or not to prevent the default action
     */
   def fireSwipe(mArguments: js.Any): Boolean = js.native
+  
   /**
     * Fires event <code>updateFinished</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>reason</code> of type <code>string</code>The reason of the update, e.g.
@@ -363,6 +396,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireUpdateFinished(mArguments: js.Any): ListBase = js.native
+  
   /**
     * Fires event <code>updateStarted</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>reason</code> of type <code>string</code>The reason of the update, e.g.
@@ -375,12 +409,14 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireUpdateStarted(mArguments: js.Any): ListBase = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     * @since 1.28.0
     */
   def getAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Gets current value of property <code>enableBusyIndicator</code>.When this property is set to
     * <code>true</code>, the control will automatically display a busy indicator when it detects that data
@@ -392,12 +428,14 @@ trait ListBase extends Control {
     * @returns Value of property <code>enableBusyIndicator</code>
     */
   def getEnableBusyIndicator(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>footerText</code>.Defines the footer text that appears in the
     * control.
     * @returns Value of property <code>footerText</code>
     */
   def getFooterText(): String = js.native
+  
   /**
     * Gets current value of property <code>growing</code>.If set to <code>true</code>, enables the growing
     * feature of the control to load more items by requesting from the model.<b>Note:</b>: This feature
@@ -407,6 +445,7 @@ trait ListBase extends Control {
     * @returns Value of property <code>growing</code>
     */
   def getGrowing(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>growingDirection</code>.Defines the direction of the growing
     * feature.If set to <code>Downwards</code> the user has to scroll down to load more items or the
@@ -417,12 +456,14 @@ trait ListBase extends Control {
     * @returns Value of property <code>growingDirection</code>
     */
   def getGrowingDirection(): ListGrowingDirection = js.native
+  
   /**
     * Returns growing information as object with "actual" and "total" keys.Note: This function returns
     * "null" if "growing" feature is disabled.
     * @since 1.16
     */
   def getGrowingInfo(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>growingScrollToLoad</code>.If set to true, the user can scroll
     * down/up to load more items. Otherwise a growing button is displayed at the bottom/top of the
@@ -434,6 +475,7 @@ trait ListBase extends Control {
     * @returns Value of property <code>growingScrollToLoad</code>
     */
   def getGrowingScrollToLoad(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>growingThreshold</code>.Defines the number of items to be
     * requested from the model for each grow.This property can only be used if the <code>growing</code>
@@ -442,6 +484,7 @@ trait ListBase extends Control {
     * @returns Value of property <code>growingThreshold</code>
     */
   def getGrowingThreshold(): Double = js.native
+  
   /**
     * Gets current value of property <code>growingTriggerText</code>.Defines the text displayed on the
     * growing button. The default is a translated text ("More") coming from the message bundle.This
@@ -450,6 +493,7 @@ trait ListBase extends Control {
     * @returns Value of property <code>growingTriggerText</code>
     */
   def getGrowingTriggerText(): String = js.native
+  
   /**
     * Gets current value of property <code>headerDesign</code>.Defines the header style of the control.
     * Possible values are <code>Standard</code> and <code>Plain</code>.Default value is
@@ -458,6 +502,7 @@ trait ListBase extends Control {
     * @returns Value of property <code>headerDesign</code>
     */
   def getHeaderDesign(): ListHeaderDesign = js.native
+  
   /**
     * Gets current value of property <code>headerText</code>.Defines the header text that appears in the
     * control.<b>Note:</b> If <code>headerToolbar</code> aggregation is set, then this property is
@@ -465,6 +510,7 @@ trait ListBase extends Control {
     * @returns Value of property <code>headerText</code>
     */
   def getHeaderText(): String = js.native
+  
   /**
     * Gets content of aggregation <code>headerToolbar</code>.The header area can be used as a toolbar to
     * add extra controls for user interactions.<b>Note:</b> When set, this overwrites the
@@ -472,6 +518,7 @@ trait ListBase extends Control {
     * @since 1.16
     */
   def getHeaderToolbar(): Toolbar = js.native
+  
   /**
     * Gets current value of property <code>includeItemInSelection</code>.Defines whether the items are
     * selectable by clicking on the item itself (<code>true</code>) rather than having to set the
@@ -480,27 +527,32 @@ trait ListBase extends Control {
     * @returns Value of property <code>includeItemInSelection</code>
     */
   def getIncludeItemInSelection(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>infoToolbar</code>.A toolbar that is placed below the header to
     * show extra information to the user.
     * @since 1.16
     */
   def getInfoToolbar(): Toolbar = js.native
+  
   /**
     * Gets current value of property <code>inset</code>.Defines the indentation of the container. Setting
     * it to <code>true</code> indents the list.Default value is <code>false</code>.
     * @returns Value of property <code>inset</code>
     */
   def getInset(): Boolean = js.native
+  
   /**
     * Returns ItemNavigation for controls uses List
     * @since 1.16.5
     */
   def getItemNavigation(): ItemNavigation | js.Any = js.native
+  
   /**
     * Gets content of aggregation <code>items</code>.Defines the items contained within this control.
     */
   def getItems(): js.Array[ListItemBase] = js.native
+  
   /**
     * Gets current value of property <code>keyboardMode</code>.Defines keyboard handling behavior of the
     * control.Default value is <code>Navigation</code>.
@@ -508,11 +560,13 @@ trait ListBase extends Control {
     * @returns Value of property <code>keyboardMode</code>
     */
   def getKeyboardMode(): ListKeyboardMode = js.native
+  
   /**
     * Returns the last list mode, the mode that is renderedThis can be used to detect mode changes during
     * rendering
     */
   def getLastMode(): Unit = js.native
+  
   /**
     * Gets current value of property <code>mode</code>.Defines the mode of the control (e.g.
     * <code>None</code>, <code>SingleSelect</code>, <code>MultiSelect</code>, <code>Delete</code>).Default
@@ -520,18 +574,21 @@ trait ListBase extends Control {
     * @returns Value of property <code>mode</code>
     */
   def getMode(): ListMode = js.native
+  
   /**
     * Gets current value of property <code>modeAnimationOn</code>.Defines if animations will be shown
     * while switching between modes.Default value is <code>true</code>.
     * @returns Value of property <code>modeAnimationOn</code>
     */
   def getModeAnimationOn(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>noDataText</code>.This text is displayed when the control
     * contains no items.
     * @returns Value of property <code>noDataText</code>
     */
   def getNoDataText(): String = js.native
+  
   /**
     * Gets current value of property <code>rememberSelections</code>.If set to true, this control
     * remembers and retains the selection of the items after a binding update has been performed (e.g.
@@ -543,6 +600,7 @@ trait ListBase extends Control {
     * @returns Value of property <code>rememberSelections</code>
     */
   def getRememberSelections(): Boolean = js.native
+  
   /**
     * Returns the binding contexts of the selected items.Note: This method returns an empty array if no
     * databinding is used.
@@ -552,39 +610,46 @@ trait ListBase extends Control {
     * returned in array.
     */
   def getSelectedContexts(bAll: Boolean): js.Array[_] = js.native
+  
   /**
     * Returns selected list item. When no item is selected, "null" is returned. When "multi-selection" is
     * enabled and multiple items are selected, only the up-most selected item is returned.
     */
   def getSelectedItem(): ListItemBase = js.native
+  
   /**
     * Returns an array containing the selected list items. If no items are selected, an empty array is
     * returned.
     */
   def getSelectedItems(): js.Array[ListItemBase] = js.native
+  
   /**
     * Gets current value of property <code>showNoData</code>.Defines whether or not the text specified in
     * the <code>noDataText</code> property is displayed.Default value is <code>true</code>.
     * @returns Value of property <code>showNoData</code>
     */
   def getShowNoData(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showSeparators</code>.Defines which item separator style will
     * be used.Default value is <code>All</code>.
     * @returns Value of property <code>showSeparators</code>
     */
   def getShowSeparators(): ListSeparators = js.native
+  
   /**
     * Gets current value of property <code>showUnread</code>.Activates the unread indicator for all items,
     * if set to <code>true</code>.Default value is <code>false</code>.
     * @returns Value of property <code>showUnread</code>
     */
   def getShowUnread(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>swipeContent</code>.User can swipe to bring in this control on the
     * right hand side of an item.<b>Note:</b> For non-touch devices, this functionality is ignored.
     */
   def getSwipeContent(): Control = js.native
+  
   /**
     * Gets current value of property <code>swipeDirection</code>.Defines the direction of the swipe
     * movement (e.g LeftToRight, RightToLeft, Both) to display the control defined in the
@@ -592,16 +657,19 @@ trait ListBase extends Control {
     * @returns Value of property <code>swipeDirection</code>
     */
   def getSwipeDirection(): SwipeDirection = js.native
+  
   /**
     * Returns swiped list item. When no item is swiped, "null" is returned.
     */
   def getSwipedItem(): ListItemBase = js.native
+  
   /**
     * Gets current value of property <code>width</code>.Sets the width of the control.Default value is
     * <code>100%</code>.
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Checks for the provided <code>sap.m.ListItemBase</code> in the aggregation <code>items</code>.and
     * returns its index if found or -1 otherwise.
@@ -609,6 +677,7 @@ trait ListBase extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfItem(oItem: ListItemBase): Double = js.native
+  
   /**
     * Inserts a item into the aggregation <code>items</code>.
     * @param oItem the item to insert; if empty, nothing is inserted
@@ -619,18 +688,21 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertItem(oItem: ListItemBase, iIndex: Double): ListBase = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @since 1.28.0
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>items</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllItems(): js.Array[ListItemBase] = js.native
+  
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaLabelledBy from the association named <code>ariaLabelledBy</code>.
@@ -640,6 +712,7 @@ trait ListBase extends Control {
     */
   def removeAriaLabelledBy(vAriaLabelledBy: Double): js.Any = js.native
   def removeAriaLabelledBy(vAriaLabelledBy: Control): js.Any = js.native
+  
   def removeItem(vItem: String): ListItemBase = js.native
   /**
     * Removes a item from the aggregation <code>items</code>.
@@ -648,17 +721,20 @@ trait ListBase extends Control {
     */
   def removeItem(vItem: Double): ListItemBase = js.native
   def removeItem(vItem: ListItemBase): ListItemBase = js.native
+  
   /**
     * Removes visible selections of the current selection mode.
     * @param bAll Since version 1.16.3. This control keeps old selections after filter or sorting. Set
     * this parameter "true" to remove all selections.
     */
   def removeSelections(bAll: Boolean): ListBase = js.native
+  
   /**
     * Select all items in "MultiSelection" mode.
     * @since 1.16
     */
   def selectAll(): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>enableBusyIndicator</code>.When this property is set to
     * <code>true</code>, the control will automatically display a busy indicator when it detects that data
@@ -672,6 +748,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnableBusyIndicator(bEnableBusyIndicator: Boolean): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>footerText</code>.Defines the footer text that appears in the
     * control.When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -680,6 +757,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setFooterText(sFooterText: String): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>growing</code>.If set to <code>true</code>, enables the growing
     * feature of the control to load more items by requesting from the model.<b>Note:</b>: This feature
@@ -691,6 +769,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setGrowing(bGrowing: Boolean): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>growingDirection</code>.Defines the direction of the growing
     * feature.If set to <code>Downwards</code> the user has to scroll down to load more items or the
@@ -703,6 +782,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setGrowingDirection(sGrowingDirection: ListGrowingDirection): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>growingScrollToLoad</code>.If set to true, the user can scroll
     * down/up to load more items. Otherwise a growing button is displayed at the bottom/top of the
@@ -716,6 +796,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setGrowingScrollToLoad(bGrowingScrollToLoad: Boolean): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>growingThreshold</code>.Defines the number of items to be
     * requested from the model for each grow.This property can only be used if the <code>growing</code>
@@ -727,6 +808,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setGrowingThreshold(iGrowingThreshold: Double): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>growingTriggerText</code>.Defines the text displayed on the
     * growing button. The default is a translated text ("More") coming from the message bundle.This
@@ -738,6 +820,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setGrowingTriggerText(sGrowingTriggerText: String): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>headerDesign</code>.Defines the header style of the control.
     * Possible values are <code>Standard</code> and <code>Plain</code>.When called with a value of
@@ -748,6 +831,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHeaderDesign(sHeaderDesign: ListHeaderDesign): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>headerText</code>.Defines the header text that appears in the
     * control.<b>Note:</b> If <code>headerToolbar</code> aggregation is set, then this property is
@@ -757,6 +841,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHeaderText(sHeaderText: String): ListBase = js.native
+  
   /**
     * Sets the aggregated <code>headerToolbar</code>.
     * @since 1.16
@@ -764,6 +849,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHeaderToolbar(oHeaderToolbar: Toolbar): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>includeItemInSelection</code>.Defines whether the items are
     * selectable by clicking on the item itself (<code>true</code>) rather than having to set the
@@ -774,6 +860,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIncludeItemInSelection(bIncludeItemInSelection: Boolean): ListBase = js.native
+  
   /**
     * Sets the aggregated <code>infoToolbar</code>.
     * @since 1.16
@@ -781,6 +868,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setInfoToolbar(oInfoToolbar: Toolbar): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>inset</code>.Defines the indentation of the container. Setting
     * it to <code>true</code> indents the list.When called with a value of <code>null</code> or
@@ -790,6 +878,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setInset(bInset: Boolean): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>keyboardMode</code>.Defines keyboard handling behavior of the
     * control.When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -799,6 +888,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setKeyboardMode(sKeyboardMode: ListKeyboardMode): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>mode</code>.Defines the mode of the control (e.g.
     * <code>None</code>, <code>SingleSelect</code>, <code>MultiSelect</code>, <code>Delete</code>).When
@@ -808,6 +898,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMode(sMode: ListMode): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>modeAnimationOn</code>.Defines if animations will be shown while
     * switching between modes.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -816,6 +907,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setModeAnimationOn(bModeAnimationOn: Boolean): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>noDataText</code>.This text is displayed when the control
     * contains no items.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -824,6 +916,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNoDataText(sNoDataText: String): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>rememberSelections</code>.If set to true, this control remembers
     * and retains the selection of the items after a binding update has been performed (e.g. sorting,
@@ -838,18 +931,21 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setRememberSelections(bRememberSelections: Boolean): ListBase = js.native
+  
   /**
     * Selects or deselects the given list item.
     * @param oListItem The list item whose selection to be changed. This parameter is mandatory.
     * @param bSelect Sets selected status of the list item. Default value is true.
     */
   def setSelectedItem(oListItem: ListItemBase, bSelect: Boolean): ListBase = js.native
+  
   /**
     * Sets a list item to be selected by id. In single mode the method removes the previous selection.
     * @param sId The id of the list item whose selection to be changed.
     * @param bSelect Sets selected status of the list item. Default value is true.
     */
   def setSelectedItemById(sId: String, bSelect: Boolean): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>showNoData</code>.Defines whether or not the text specified in
     * the <code>noDataText</code> property is displayed.When called with a value of <code>null</code> or
@@ -859,6 +955,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowNoData(bShowNoData: Boolean): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>showSeparators</code>.Defines which item separator style will be
     * used.When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -867,6 +964,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowSeparators(sShowSeparators: ListSeparators): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>showUnread</code>.Activates the unread indicator for all items,
     * if set to <code>true</code>.When called with a value of <code>null</code> or <code>undefined</code>,
@@ -875,12 +973,14 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowUnread(bShowUnread: Boolean): ListBase = js.native
+  
   /**
     * Sets the aggregated <code>swipeContent</code>.
     * @param oSwipeContent The swipeContent to set
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSwipeContent(oSwipeContent: Control): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>swipeDirection</code>.Defines the direction of the swipe
     * movement (e.g LeftToRight, RightToLeft, Both) to display the control defined in the
@@ -891,6 +991,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSwipeDirection(sSwipeDirection: SwipeDirection): ListBase = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.Sets the width of the control.When called with a
     * value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -899,6 +1000,7 @@ trait ListBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setWidth(sWidth: js.Any): ListBase = js.native
+  
   /**
     * After swipeContent is shown, user can interact with this control(e.g Tap). After interaction is
     * done, you can/should use this method to hide swipeContent from screen.Note: If users try to tap
@@ -907,10 +1009,10 @@ trait ListBase extends Control {
     * swipedContent) after swipe-out animation is finished.
     */
   def swipeOut(oCallback: js.Any): ListBase = js.native
+  
   /**
     * Unbinds aggregation <code>items</code> from model data.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindItems(): ListBase = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.std.HTMLElement
 import typings.winjs.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides functionality for data and template binding.
@@ -12,40 +12,6 @@ import scala.scalajs.js.annotation._
 @JSImport("winjs", "Binding")
 @js.native
 object Binding extends js.Object {
-  /**
-    * Represents a list of objects that can be accessed by index or by a string key. Provides methods to search, sort, filter, and manipulate the data.
-    **/
-  @js.native
-  //#region Constructors
-  /**
-    * Creates a List object.
-    * @constructor
-    * @param list The array containing the elements to initalize the list.
-    * @param options You can set two Boolean options: binding and proxy. If options.binding is true, the list contains the result of calling as on the element values. If options.proxy is true, the list specified as the first parameter is used as the storage for the List. This option should be used with care, because uncoordinated edits to the data storage may result in errors.
-    **/
-  class List[T] ()
-    extends typings.winjs.WinJS.Binding.List[T] {
-    def this(list: js.Array[T]) = this()
-    def this(list: js.UndefOr[scala.Nothing], options: js.Any) = this()
-    def this(list: js.Array[T], options: js.Any) = this()
-  }
-  
-  /**
-    * Provides a reusable declarative binding element.
-    **/
-  @js.native
-  class Template protected ()
-    extends typings.winjs.WinJS.Binding.Template {
-    //#region Constructors
-    /**
-      * Creates a template that provides a reusable declarative binding element.
-      * @constructor
-      * @param element The DOM element to convert to a template.
-      * @param options If this parameter is supplied, the template is loaded from the URI and the content of the element parameter is ignored. You can add the following options: href.
-      **/
-    def this(element: HTMLElement) = this()
-    def this(element: HTMLElement, options: js.Any) = this()
-  }
   
   //#endregion Objects
   //#region Functions
@@ -56,12 +22,14 @@ object Binding extends js.Object {
     * @param dest The destination object.
     **/
   def addClassOneTime(source: js.Any, sourceProperties: js.Array[_], dest: HTMLElement): Unit = js.native
+  
   /**
     * Returns an observable object. This may be an observable proxy for the specified object, an existing proxy, or the specified object itself if it directly supports observation.
     * @param data The object to observe.
     * @returns The observable object.
     **/
   def as[U](data: U): U = js.native
+  
   /**
     * Binds to one or more properties on the observable object or or on child values of that object.
     * @param observable The object to bind to.
@@ -69,12 +37,14 @@ object Binding extends js.Object {
     * @returns An object that contains at least a "cancel" field, which is a function that removes all bindings associated with this bind request.
     **/
   def bind(observable: js.Any, bindingDescriptor: js.Any): js.Any = js.native
+  
   /**
     * Creates a default binding initializer for binding between a source property and a destination property with the specified converter function that is executed on the value of the source property.
     * @param convert The conversion function that takes the source property and produces a value that is set to the destination property. This function must be accessible from the global namespace.
     * @returns The binding initializer.
     **/
   def converter(convert: js.Function): js.Function = js.native
+  
   /**
     * Creates a one-way binding between the source object and the destination object. Warning Do not attempt to bind data to the ID of an HTML element.
     * @param source The source object.
@@ -84,29 +54,34 @@ object Binding extends js.Object {
     * @returns An object with a cancel method that is used to coalesce bindings.
     **/
   def defaultBind(source: js.Any, sourceProperties: js.Any, dest: js.Any, destProperties: js.Any): js.Any = js.native
+  
   /**
     * Creates a new constructor function that supports observability with the specified set of properties.
     * @param data The object to use as the pattern for defining the set of properties.
     * @returns A constructor function with 1 optional argument that is the initial state of the properties.
     **/
   def define(data: js.Any): js.Function = js.native
+  
   /**
     * Wraps the specified object so that all its properties are instrumented for binding. This is meant to be used in conjunction with the binding mixin.
     * @param shape The specification for the bindable object.
     * @returns An object with a set of properties all of which are wired for binding.
     **/
   def expandProperties(shape: js.Any): js.Any = js.native
+  
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
   def getValue(obj: js.Any): js.Any = js.native
   def getValue(obj: js.Any, path: js.Any): js.Any = js.native
+  
   /**
     * Marks a custom initializer function as being compatible with declarative data binding.
     * @param customInitializer The custom initializer to be marked as compatible with declarative data binding.
     * @returns The input customInitializer.
     **/
   def initializer(customInitializer: js.Function): js.Function = js.native
+  
   /**
     * Sets the destination property to the value of the source property.
     * @param source The source object.
@@ -116,6 +91,7 @@ object Binding extends js.Object {
     * @returns An object with a cancel method that is used to coalesce bindings.
     **/
   def oneTime(source: js.Any, sourceProperties: js.Any, dest: js.Any, destProperties: js.Any): js.Any = js.native
+  
   /**
     * Binds the values of an object to the values of a DOM element that has the data-win-bind attribute. If multiple DOM elements are to be bound, you must set the attribute on all of them. See the example below for details.
     * @param rootElement Optional. The element at which to start traversing to find elements to bind to. If this parameter is omitted, the entire document is searched.
@@ -288,6 +264,7 @@ object Binding extends js.Object {
     bindingCache: js.Any,
     defaultInitializer: js.Function
   ): typings.winjs.WinJS.Promise[Unit] = js.native
+  
   /**
     * Creates a one-way binding between the source object and an attribute on the destination element.
     * @param source The source object.
@@ -297,6 +274,7 @@ object Binding extends js.Object {
     * @returns An object with a cancel() method that is used to coalesce bindings.
     **/
   def setAttribute(source: js.Any, sourceProperties: js.Array[_], dest: Element, destProperties: js.Array[_]): js.Any = js.native
+  
   /**
     * Sets an attribute on the destination element to the value of the source property.
     * @param source The source object.
@@ -305,32 +283,66 @@ object Binding extends js.Object {
     * @param destProperties The path on the destination object to the destination property. This must be a single name.
     **/
   def setAttributeOneTime(source: js.Any, sourceProperties: js.Array[_], dest: Element, destProperties: js.Array[_]): Unit = js.native
+  
   /**
     * Returns the original (non-observable) object is returned if the specified object is an observable proxy,
     * @param data The object for which to retrieve the original value.
     * @returns If the specified object is an observable proxy, the original object is returned, otherwise the same object is returned.
     **/
   def unwrap(data: js.Any): js.Any = js.native
+  
+  /**
+    * Represents a list of objects that can be accessed by index or by a string key. Provides methods to search, sort, filter, and manipulate the data.
+    **/
+  @js.native
+  //#region Constructors
+  /**
+    * Creates a List object.
+    * @constructor
+    * @param list The array containing the elements to initalize the list.
+    * @param options You can set two Boolean options: binding and proxy. If options.binding is true, the list contains the result of calling as on the element values. If options.proxy is true, the list specified as the first parameter is used as the storage for the List. This option should be used with care, because uncoordinated edits to the data storage may result in errors.
+    **/
+  class List[T] ()
+    extends typings.winjs.WinJS.Binding.List[T] {
+    def this(list: js.Array[T]) = this()
+    def this(list: js.UndefOr[scala.Nothing], options: js.Any) = this()
+    def this(list: js.Array[T], options: js.Any) = this()
+  }
   /* static members */
   @js.native
   object List extends js.Object {
+    
     /**
       * Indicates that the object is compatibile with declarative processing.
       **/
     var supportedForProcessing: Boolean = js.native
   }
   
+  /**
+    * Provides a reusable declarative binding element.
+    **/
+  @js.native
+  class Template protected ()
+    extends typings.winjs.WinJS.Binding.Template {
+    //#region Constructors
+    /**
+      * Creates a template that provides a reusable declarative binding element.
+      * @constructor
+      * @param element The DOM element to convert to a template.
+      * @param options If this parameter is supplied, the template is loaded from the URI and the content of the element parameter is ignored. You can add the following options: href.
+      **/
+    def this(element: HTMLElement) = this()
+    def this(element: HTMLElement, options: js.Any) = this()
+  }
   /* static members */
   @js.native
   object Template extends js.Object {
+    
     /**
       * Determines whether the Template contains declarative controls that must be processed separately. This property is always true. The controls that belong to a Template object's children are instantiated when a Template instance is rendered.
       **/
     var isDeclarativeControlContainer: Boolean = js.native
-    /**
-      * Indicates that the object is compatibile with declarative processing.
-      **/
-    var supportedForProcessing: Boolean = js.native
+    
     /**
       * Renders a template based on the specified URI (static method).
       * @param href The URI from which to load the template.
@@ -340,6 +352,11 @@ object Binding extends js.Object {
       **/
     def render(href: String, dataContext: js.Any): typings.winjs.WinJS.Promise[HTMLElement] = js.native
     def render(href: String, dataContext: js.Any, container: HTMLElement): typings.winjs.WinJS.Promise[HTMLElement] = js.native
+    
+    /**
+      * Indicates that the object is compatibile with declarative processing.
+      **/
+    var supportedForProcessing: Boolean = js.native
   }
   
   //#region Properties
@@ -350,6 +367,7 @@ object Binding extends js.Object {
     **/
   @js.native
   object dynamicObservableMixin extends js.Object {
+    
     //#region Methods
     /**
       * Adds a property with change notification to this object, including a ECMAScript5 property definition.
@@ -357,6 +375,7 @@ object Binding extends js.Object {
       * @param value This object is returned.
       **/
     def addProperty(name: String, value: js.Any): Unit = js.native
+    
     /**
       * Links the specified action to the property specified in the name parameter. This function is invoked when the value of the property may have changed. It is not guaranteed that the action will be called only when a value has actually changed, nor is it guaranteed that the action will be called for every value change. The implementation of this function coalesces change notifications, such that multiple updates to a property value may result in only a single call to the specified action.
       * @param name The name of the property to which to bind the action.
@@ -364,12 +383,14 @@ object Binding extends js.Object {
       * @returns This object is returned.
       **/
     def bind(name: String, action: js.Any): js.Function = js.native
+    
     /**
       * Gets a property value by name.
       * @param name The name of the property to get.
       * @returns The value of the property as an observable object.
       **/
     def getProperty(name: String): js.Any = js.native
+    
     /**
       * Notifies listeners that a property value was updated.
       * @param name The name of the property that is being updated.
@@ -378,12 +399,14 @@ object Binding extends js.Object {
       * @returns A promise that is completed when the notifications are complete.
       **/
     def notify(name: String, newValue: String, oldValue: String): typings.winjs.WinJS.Promise[_] = js.native
+    
     /**
       * Removes a property value.
       * @param name The name of the property to remove.
       * @returns This object is returned.
       **/
     def removeProperty(name: String): js.Any = js.native
+    
     /**
       * Updates a property value and notifies any listeners.
       * @param name The name of the property to update.
@@ -391,6 +414,7 @@ object Binding extends js.Object {
       * @returns This object is returned.
       **/
     def setProperty(name: String, value: js.Any): js.Any = js.native
+    
     /**
       * Removes one or more listeners from the notification list for a given property.
       * @param name The name of the property to unbind. If this parameter is omitted, all listeners for all events are removed.
@@ -398,6 +422,7 @@ object Binding extends js.Object {
       * @returns This object is returned.
       **/
     def unbind(name: String, action: js.Function): js.Any = js.native
+    
     /**
       * Updates a property value and notifies any listeners.
       * @param name The name of the property to update.
@@ -412,6 +437,7 @@ object Binding extends js.Object {
     **/
   @js.native
   object mixin extends js.Object {
+    
     //#region Methods
     /**
       * Adds a property to the object. The property includes change notification and an ECMAScript 5 property definition .
@@ -420,6 +446,7 @@ object Binding extends js.Object {
       * @returns This object is returned.
       **/
     def addProperty(name: String, value: js.Any): js.Any = js.native
+    
     /**
       * Links the specified action to the property specified in the name parameter. This function is invoked when the value of the property may have changed. It is not guaranteed that the action will be called only when a value has actually changed, nor is it guaranteed that the action will be called for every value change. The implementation of this function coalesces change notifications, such that multiple updates to a property value may result in only a single call to the specified action.
       * @param name The name of the property to which to bind the action.
@@ -427,12 +454,14 @@ object Binding extends js.Object {
       * @returns This object is returned.
       **/
     def bind(name: String, action: js.Any): js.Function = js.native
+    
     /**
       * Gets a property value by name.
       * @param name The name of the property to get.
       * @returns The value of the property as an observable object.
       **/
     def getProperty(name: String): js.Any = js.native
+    
     /**
       * Notifies listeners that a property value was updated.
       * @param name The name of the property that is being updated.
@@ -441,12 +470,14 @@ object Binding extends js.Object {
       * @returns A promise that is completed when the notifications are complete.
       **/
     def notify(name: String, newValue: String, oldValue: String): typings.winjs.WinJS.Promise[_] = js.native
+    
     /**
       * Removes a property value.
       * @param name The name of the property to remove.
       * @returns This object is returned.
       **/
     def removeProperty(name: String): js.Any = js.native
+    
     /**
       * Updates a property value and notifies any listeners.
       * @param name The name of the property to update.
@@ -454,6 +485,7 @@ object Binding extends js.Object {
       * @returns This object is returned.
       **/
     def setProperty(name: String, value: js.Any): js.Any = js.native
+    
     /**
       * Removes one or more listeners from the notification list for a given property.
       * @param name The name of the property to unbind. If this parameter is omitted, all listeners for all events are removed.
@@ -461,6 +493,7 @@ object Binding extends js.Object {
       * @returns This object is returned.
       **/
     def unbind(name: String, action: js.Function): js.Any = js.native
+    
     /**
       * Updates a property value and notifies any listeners.
       * @param name The name of the property to update.
@@ -475,6 +508,7 @@ object Binding extends js.Object {
     **/
   @js.native
   object observableMixin extends js.Object {
+    
     //#region Methods
     /**
       * Links the specified action to the property specified in the name parameter. This function is invoked when the value of the property may have changed. It is not guaranteed that the action will be called only when a value has actually changed, nor is it guaranteed that the action will be called for every value change. The implementation of this function coalesces change notifications, such that multiple updates to a property value may result in only a single call to the specified action.
@@ -483,6 +517,7 @@ object Binding extends js.Object {
       * @returns A reference to this observableMixin object.
       **/
     def bind(name: String, action: js.Function): js.Any = js.native
+    
     /**
       * Notifies listeners that a property value was updated.
       * @param name The name of the property that is being updated.
@@ -491,6 +526,7 @@ object Binding extends js.Object {
       * @returns A promise that is completed when the notifications are complete.
       **/
     def notify(name: String, newValue: js.Any, oldValue: js.Any): typings.winjs.WinJS.Promise[_] = js.native
+    
     /**
       * Removes one or more listeners from the notification list for a given property.
       * @param name The name of the property to unbind. If this parameter is omitted, all listeners for all events are removed.
@@ -499,6 +535,4 @@ object Binding extends js.Object {
       **/
     def unbind(name: String, action: js.Function): js.Any = js.native
   }
-  
 }
-

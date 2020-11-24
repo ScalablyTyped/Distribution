@@ -3,7 +3,7 @@ package typings.mocha.global.Mocha_.reporters
 import typings.mocha.Mocha.reporters.Nyan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Initialize a new `NyanCat` test reporter.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Mocha.reporters.Nyan")
 @js.native
 class Nyan_ () extends Nyan
-

@@ -1,22 +1,22 @@
 
 # Scala.js typings for downshift
 
-Typings are for version 6.0.2
+Typings are for version 6.0.6
 
 ## Library description:
-A set of primitives to build simple, flexible, WAI-ARIA compliant React autocomplete components
+🏎 A set of primitives to build simple, flexible, WAI-ARIA compliant React autocomplete, combobox or select dropdown components.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | downshift |
 | Keywords           | enhanced input, react, autocomplete, autosuggest, typeahead, dropdown, select, combobox, omnibox, accessibility, WAI-ARIA, multiselect, multiple selection |
-| # releases         | 128 |
-| # dependents       | 283 |
-| # downloads        | 10759328 |
+| # releases         | 111 |
+| # dependents       | 376 |
+| # downloads        | 18344621 |
 | # stars            | 12 |
 
 ## Links
-- [Homepage](https://github.com/downshift-js/downshift#readme)
+- [Homepage](https://downshift-js.com)
 - [Bugs](https://github.com/downshift-js/downshift/issues)
 - [Repository](https://github.com/downshift-js/downshift)
 - [Npm](https://www.npmjs.com/package/downshift)

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*----------------------
   ObserverTransform
@@ -33,4 +33,3 @@ Instantiable2[
       /* valueFn */ js.Function1[/* values */ js.Array[js.Any], js.Any], 
       ObserverTransformInstance
     ]
-

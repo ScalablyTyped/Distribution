@@ -2,14 +2,14 @@ package typings.bingmaps.Microsoft.Maps.Search
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MatchConfidence extends js.Object
-
 @JSGlobal("Microsoft.Maps.Search.MatchConfidence")
 @js.native
 object MatchConfidence extends js.Object {
+  
   /** The confidence of the match is high. */
   @js.native
   sealed trait high extends MatchConfidence
@@ -25,6 +25,4 @@ object MatchConfidence extends js.Object {
   /** The confidence of the match is unknown. */
   @js.native
   sealed trait unknown extends MatchConfidence
-  
 }
-

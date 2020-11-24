@@ -2,9 +2,25 @@ package typings.lowlight
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lowlightStrings {
+  
+  @scala.inline
+  def comment: comment = "comment".asInstanceOf[comment]
+  
+  @scala.inline
+  def doctype: doctype = "doctype".asInstanceOf[doctype]
+  
+  @scala.inline
+  def element: element = "element".asInstanceOf[element]
+  
+  @scala.inline
+  def root: root = "root".asInstanceOf[root]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
   @js.native
   sealed trait comment extends js.Object
   
@@ -19,16 +35,4 @@ object lowlightStrings {
   
   @js.native
   sealed trait text extends js.Object
-  
-  @scala.inline
-  def comment: comment = "comment".asInstanceOf[comment]
-  @scala.inline
-  def doctype: doctype = "doctype".asInstanceOf[doctype]
-  @scala.inline
-  def element: element = "element".asInstanceOf[element]
-  @scala.inline
-  def root: root = "root".asInstanceOf[root]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
 }
-

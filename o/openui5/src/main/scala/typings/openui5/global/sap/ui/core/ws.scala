@@ -2,11 +2,36 @@ package typings.openui5.global.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.ws")
 @js.native
 object ws extends js.Object {
+  
+  @js.native
+  object ReadyState extends js.Object {
+    
+    /**
+      * The connection has been closed or could not be opened.
+      */
+    var CLOSED: js.Any = js.native
+    
+    /**
+      * The connection is going through the closing handshake.
+      */
+    var CLOSING: js.Any = js.native
+    
+    /**
+      * The connection has not yet been established.
+      */
+    var CONNECTING: js.Any = js.native
+    
+    /**
+      * The WebSocket connection is established and communication is possible.
+      */
+    var OPEN: js.Any = js.native
+  }
+  
   @js.native
   class SapPcpWebSocket protected ()
     extends typings.openui5.sap.ui.core.ws.SapPcpWebSocket {
@@ -18,6 +43,18 @@ object ws extends js.Object {
       */
     def this(sUrl: String) = this()
     def this(sUrl: String, aProtocols: js.Array[_]) = this()
+  }
+  @js.native
+  object SapPcpWebSocket extends js.Object {
+    
+    @js.native
+    object SUPPORTED_PROTOCOLS extends js.Object {
+      
+      /**
+        * Protocol v10.pcp.sap.com
+        */
+      var v10: js.Any = js.native
+    }
   }
   
   @js.native
@@ -31,38 +68,4 @@ object ws extends js.Object {
     def this(sUrl: String) = this()
     def this(sUrl: String, aProtocols: js.Array[_]) = this()
   }
-  
-  @js.native
-  object ReadyState extends js.Object {
-    /**
-      * The connection has been closed or could not be opened.
-      */
-    var CLOSED: js.Any = js.native
-    /**
-      * The connection is going through the closing handshake.
-      */
-    var CLOSING: js.Any = js.native
-    /**
-      * The connection has not yet been established.
-      */
-    var CONNECTING: js.Any = js.native
-    /**
-      * The WebSocket connection is established and communication is possible.
-      */
-    var OPEN: js.Any = js.native
-  }
-  
-  @js.native
-  object SapPcpWebSocket extends js.Object {
-    @js.native
-    object SUPPORTED_PROTOCOLS extends js.Object {
-      /**
-        * Protocol v10.pcp.sap.com
-        */
-      var v10: js.Any = js.native
-    }
-    
-  }
-  
 }
-

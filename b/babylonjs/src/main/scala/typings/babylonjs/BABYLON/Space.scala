@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Space extends js.Object
-
 @JSGlobal("BABYLON.Space")
 @js.native
 object Space extends js.Object {
+  
   /** Bone space */
   @js.native
   sealed trait BONE extends Space
@@ -21,6 +21,4 @@ object Space extends js.Object {
   /** World space */
   @js.native
   sealed trait WORLD extends Space
-  
 }
-

@@ -5,18 +5,14 @@ import typings.activexAdodb.ADODB.Property
 import typings.activexAdox.activexAdoxNumbers.`-1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Group extends js.Object {
+  
   @JSName("ADOX.Group_typekey")
   var ADOXDotGroup_typekey: Group = js.native
-  var Name: String = js.native
-  var ParentCatalog: Catalog = js.native
-  @JSName("Properties")
-  val Properties_Original: Properties = js.native
-  @JSName("Users")
-  val Users_Original: Users = js.native
+  
   def GetPermissions(Name: String, ObjectType: ObjectTypeEnum): RightsEnum = js.native
   def GetPermissions(Name: Null, ObjectType: ObjectTypeEnum): RightsEnum = js.native
   /**
@@ -27,8 +23,16 @@ trait Group extends js.Object {
   def GetPermissions_1(Name: String, ObjectType: `-1`, ObjectTypeId: js.Any): RightsEnum = js.native
   @JSName("GetPermissions")
   def GetPermissions_1(Name: Null, ObjectType: `-1`, ObjectTypeId: js.Any): RightsEnum = js.native
+  
+  var Name: String = js.native
+  
+  var ParentCatalog: Catalog = js.native
+  
   def Properties(Index: String): Property = js.native
   def Properties(Index: Double): Property = js.native
+  @JSName("Properties")
+  val Properties_Original: Properties = js.native
+  
   def SetPermissions(Name: String, ObjectType: ObjectTypeEnum, Action: ActionEnum, Rights: RightsEnum): Unit = js.native
   def SetPermissions(
     Name: String,
@@ -51,7 +55,9 @@ trait Group extends js.Object {
     Inherit: InheritTypeEnum,
     ObjectTypeId: js.Any
   ): Unit = js.native
+  
   def Users(Item: String): User = js.native
   def Users(Item: Double): User = js.native
+  @JSName("Users")
+  val Users_Original: Users = js.native
 }
-

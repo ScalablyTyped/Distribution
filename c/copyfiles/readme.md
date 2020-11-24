@@ -1,7 +1,7 @@
 
 # Scala.js typings for copyfiles
 
-Typings are for version 2.2
+Typings are for version 2.4
 
 ## Library description:
 copy some files
@@ -11,8 +11,8 @@ copy some files
 | Full name          | copyfiles |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 198 |
-| # downloads        | 14331847 |
+| # dependents       | 275 |
+| # downloads        | 26321104 |
 | # stars            | 10 |
 
 ## Links

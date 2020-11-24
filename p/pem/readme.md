@@ -10,9 +10,9 @@ Create private keys and certificates with node.js and io.js
 | ------------------ | :-------------: |
 | Full name          | pem |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 225 |
-| # downloads        | 5157373 |
+| # releases         | 12 |
+| # dependents       | 237 |
+| # downloads        | 6763808 |
 | # stars            | 19 |
 
 ## Links

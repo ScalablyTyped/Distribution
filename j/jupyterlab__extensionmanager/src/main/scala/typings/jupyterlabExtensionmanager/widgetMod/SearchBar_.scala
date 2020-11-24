@@ -7,16 +7,16 @@ import typings.react.mod.FormEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/extensionmanager/lib/widget", "SearchBar")
 @js.native
 class SearchBar_ protected ()
   extends Component[IProperties, IState, js.Any] {
   def this(props: IProperties) = this()
+  
   /**
     * Handler for search input changes.
     */
   def handleChange(e: FormEvent[HTMLElement]): Unit = js.native
 }
-

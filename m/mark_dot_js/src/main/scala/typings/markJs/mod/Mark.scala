@@ -3,10 +3,11 @@ package typings.markJs.mod
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Mark extends js.Object {
+  
   /**
     * highlight custom search terms.
     * @param keyword The keyword to be marked. Can also be an array with multiple keywords.
@@ -18,6 +19,7 @@ trait Mark extends js.Object {
   def mark(keyword: String, options: MarkOptions): Unit = js.native
   def mark(keyword: js.Array[String]): Unit = js.native
   def mark(keyword: js.Array[String], options: MarkOptions): Unit = js.native
+  
   /**
     * A method to mark ranges with a start position and length. They will be applied
     * to text nodes in the specified context.
@@ -27,6 +29,7 @@ trait Mark extends js.Object {
     */
   def markRanges(ranges: js.Array[Range]): Unit = js.native
   def markRanges(ranges: js.Array[Range], options: MarkRangesOptions): Unit = js.native
+  
   /**
     * highlight custom regular expressions.
     * @param regexp The regular expression to be marked. Example: /Lor[^]?m/gmi.
@@ -35,6 +38,7 @@ trait Mark extends js.Object {
     */
   def markRegExp(regexp: RegExp): Unit = js.native
   def markRegExp(regexp: RegExp, options: MarkRegExpOptions): Unit = js.native
+  
   /**
     * A method to remove highlights created by mark.js.
     * @param options Optional options
@@ -42,4 +46,3 @@ trait Mark extends js.Object {
   def unmark(): Unit = js.native
   def unmark(options: MarkOptions): Unit = js.native
 }
-

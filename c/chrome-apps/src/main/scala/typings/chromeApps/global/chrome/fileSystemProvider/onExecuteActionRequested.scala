@@ -24,7 +24,7 @@ import typings.chromeApps.chromeAppsStrings.TOO_MANY_OPENED
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Raised when executing an action for a set of files or directories is requested.
@@ -56,4 +56,3 @@ object onExecuteActionRequested
         ]
       ]
     ]
-

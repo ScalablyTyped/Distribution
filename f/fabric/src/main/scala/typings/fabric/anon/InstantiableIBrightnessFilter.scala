@@ -5,16 +5,16 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.fabric.fabricImplMod.IBrightnessFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableIBrightnessFilter
   extends Instantiable0[IBrightnessFilter]
      with Instantiable1[/* options */ Brightness, IBrightnessFilter] {
+  
   /**
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
   def fromObject(`object`: js.Any): IBrightnessFilter = js.native
 }
-

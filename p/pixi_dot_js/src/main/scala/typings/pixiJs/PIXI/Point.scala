@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Point object represents a location in a two-dimensional coordinate system, where x represents
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Point extends IPoint
-

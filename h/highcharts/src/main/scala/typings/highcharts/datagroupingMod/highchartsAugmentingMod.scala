@@ -3,14 +3,16 @@ package typings.highcharts.datagroupingMod
 import typings.highcharts.mod.DataGroupingOptionsObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("highcharts", JSImport.Namespace)
 @js.native
 object highchartsAugmentingMod extends js.Object {
+  
   @js.native
   trait Axis extends js.Object {
+    
     /**
       * (Highstock) Highstock only. Force data grouping on all the axis'
       * series.
@@ -30,6 +32,4 @@ object highchartsAugmentingMod extends js.Object {
     def setDataGrouping(dataGrouping: DataGroupingOptionsObject): Unit = js.native
     def setDataGrouping(dataGrouping: DataGroupingOptionsObject, redraw: Boolean): Unit = js.native
   }
-  
 }
-

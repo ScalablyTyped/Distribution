@@ -10,9 +10,9 @@ Single component release of site
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-site |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 3521 |
+| # downloads        | 2265 |
 | # stars            | 0 |
 
 ## Links

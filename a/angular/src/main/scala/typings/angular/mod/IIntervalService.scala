@@ -3,7 +3,7 @@ package typings.angular.mod
 import typings.angular.mod.global.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
 // IntervalService
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 ///////////////////////////////////////////////////////////////////////////
 @js.native
 trait IIntervalService extends js.Object {
+  
   def apply(
     func: Function,
     delay: Double,
@@ -33,6 +34,6 @@ trait IIntervalService extends js.Object {
     args: js.Any*
   ): IPromise[_] = js.native
   def apply(func: Function, delay: Double, count: Double, invokeApply: Boolean, args: js.Any*): IPromise[_] = js.native
+  
   def cancel(promise: IPromise[_]): Boolean = js.native
 }
-

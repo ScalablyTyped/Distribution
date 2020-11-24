@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides access to the controls of a {@link FilePicker} .
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XFilePickerControlAccess extends XFilePicker {
+  
   /**
     * Enables or disables a control.
     * @param ControlId Identifies the control.
@@ -23,6 +24,7 @@ trait XFilePickerControlAccess extends XFilePicker {
     * @see com.sun.star.ui.dialogs.ExtendedFilePickerElementIds
     */
   def enableControl(ControlId: Double, bEnable: Boolean): Unit = js.native
+  
   /**
     * Returns the label of the specified element.
     * @param aControlId Identifies the element for which the label should be returned.
@@ -31,6 +33,7 @@ trait XFilePickerControlAccess extends XFilePicker {
     * @see com.sun.star.ui.dialogs.ExtendedFilePickerElementIds
     */
   def getLabel(aControlId: Double): String = js.native
+  
   /**
     * Get the value of an additional element within a {@link FilePicker}
     * @param aControlId Identifies the element for which value is requested.
@@ -41,6 +44,7 @@ trait XFilePickerControlAccess extends XFilePicker {
     * @see com.sun.star.ui.dialogs.ControlActions
     */
   def getValue(aControlId: Double, aControlAction: Double): js.Any = js.native
+  
   /**
     * Set the label of the specified element. If the specified element doesn't support setting a label, this method has no effect.
     * @param aControlId Identifies the element for which the label should be set.
@@ -49,6 +53,7 @@ trait XFilePickerControlAccess extends XFilePicker {
     * @see com.sun.star.ui.dialogs.ExtendedFilePickerElementIds
     */
   def setLabel(aControlId: Double, aLabel: String): Unit = js.native
+  
   /**
     * Set the value of an additional element within a {@link FilePicker} .
     * @param ControlId Identifies the element which value is to be set.
@@ -60,8 +65,8 @@ trait XFilePickerControlAccess extends XFilePicker {
     */
   def setValue(ControlId: Double, aControlAction: Double, aValue: js.Any): Unit = js.native
 }
-
 object XFilePickerControlAccess {
+  
   @scala.inline
   def apply(
     DisplayDirectory: String,
@@ -85,28 +90,35 @@ object XFilePickerControlAccess {
     val __obj = js.Dynamic.literal(DisplayDirectory = DisplayDirectory.asInstanceOf[js.Any], Files = Files.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), enableControl = js.Any.fromFunction2(enableControl), execute = js.Any.fromFunction0(execute), getDisplayDirectory = js.Any.fromFunction0(getDisplayDirectory), getFiles = js.Any.fromFunction0(getFiles), getLabel = js.Any.fromFunction1(getLabel), getValue = js.Any.fromFunction2(getValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDefaultName = js.Any.fromFunction1(setDefaultName), setDisplayDirectory = js.Any.fromFunction1(setDisplayDirectory), setLabel = js.Any.fromFunction2(setLabel), setMultiSelectionMode = js.Any.fromFunction1(setMultiSelectionMode), setTitle = js.Any.fromFunction1(setTitle), setValue = js.Any.fromFunction3(setValue))
     __obj.asInstanceOf[XFilePickerControlAccess]
   }
+  
   @scala.inline
   implicit class XFilePickerControlAccessOps[Self <: XFilePickerControlAccess] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setEnableControl(value: (Double, Boolean) => Unit): Self = this.set("enableControl", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetLabel(value: Double => String): Self = this.set("getLabel", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetValue(value: (Double, Double) => js.Any): Self = this.set("getValue", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSetLabel(value: (Double, String) => Unit): Self = this.set("setLabel", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSetValue(value: (Double, Double, js.Any) => Unit): Self = this.set("setValue", js.Any.fromFunction3(value))
   }
-  
 }
-

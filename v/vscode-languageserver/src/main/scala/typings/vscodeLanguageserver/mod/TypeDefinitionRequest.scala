@@ -6,18 +6,21 @@ import typings.vscodeLanguageserverProtocol.protocolTypeDefinitionMod.TypeDefini
 import typings.vscodeLanguageserverProtocol.protocolTypeDefinitionMod.TypeDefinitionRegistrationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver", "TypeDefinitionRequest")
 @js.native
 object TypeDefinitionRequest extends js.Object {
+  
   val method: textDocumentSlashtypeDefinition = js.native
+  
   /** @deprecated Use TypeDefinitionRequest.type */
   val resultType: typings.vscodeJsonrpc.mod.ProgressType[
     js.Array[
       typings.vscodeLanguageserverTypes.mod.Location | typings.vscodeLanguageserverTypes.mod.LocationLink
     ]
   ] = js.native
+  
   val `type`: ProtocolRequestType[
     TypeDefinitionParams, 
     typings.vscodeLanguageserverTypes.mod.Location | (js.Array[
@@ -30,4 +33,3 @@ object TypeDefinitionRequest extends js.Object {
     TypeDefinitionRegistrationOptions
   ] = js.native
 }
-

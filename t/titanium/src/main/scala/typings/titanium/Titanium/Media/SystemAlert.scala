@@ -3,7 +3,7 @@ package typings.titanium.Titanium.Media
 import typings.titanium.Titanium.Proxy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object for playing system sounds.
@@ -11,23 +11,26 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SystemAlert extends Proxy {
-  /**
-    * URL identifying the audio resource.
-    */
-  var url: String = js.native
+  
   /**
     * Gets the value of the <Titanium.Media.SystemAlert.url> property.
     * @deprecated Access <Titanium.Media.SystemAlert.url> instead.
     */
   def getUrl(): String = js.native
+  
   /**
     * Start playing the system alert.
     */
   def play(): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.Media.SystemAlert.url> property.
     * @deprecated Set the value using <Titanium.Media.SystemAlert.url> instead.
     */
   def setUrl(url: String): Unit = js.native
+  
+  /**
+    * URL identifying the audio resource.
+    */
+  var url: String = js.native
 }
-

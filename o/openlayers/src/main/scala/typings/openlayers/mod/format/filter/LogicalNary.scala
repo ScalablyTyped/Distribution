@@ -2,7 +2,7 @@ package typings.openlayers.mod.format.filter
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSImport("openlayers", "format.filter.LogicalNary")
 @js.native
 class LogicalNary () extends Filter
-

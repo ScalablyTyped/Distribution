@@ -8,7 +8,7 @@ import typings.std.HTMLVideoElement
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A texture stores the information that represents an image or part of an image.
@@ -265,11 +265,11 @@ class Texture protected ()
     anchor: IPointData
   ) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.Texture")
 @js.native
 object Texture extends js.Object {
+  
   /**
     * An empty texture, used often to not have to create multiple empty textures.
     * Can not be destroyed.
@@ -279,6 +279,7 @@ object Texture extends js.Object {
     * @member {PIXI.Texture}
     */
   var EMPTY: typings.pixiJs.PIXI.Texture = js.native
+  
   /**
     * A white texture of 16x16 size, used for graphics and other things
     * Can not be destroyed.
@@ -288,6 +289,7 @@ object Texture extends js.Object {
     * @member {PIXI.Texture}
     */
   var WHITE: typings.pixiJs.PIXI.Texture = js.native
+  
   /**
     * Adds a Texture to the global TextureCache. This cache is shared across the whole PIXI object.
     *
@@ -296,6 +298,7 @@ object Texture extends js.Object {
     * @param {string} id - The id that the Texture will be stored against.
     */
   def addToCache(texture: typings.pixiJs.PIXI.Texture, id: String): Unit = js.native
+  
   /**
     * Helper function that creates a new Texture based on the source you provide.
     * The source can be - frame id, image url, video url, canvas element, video element, base texture
@@ -327,6 +330,7 @@ object Texture extends js.Object {
   def from(source: HTMLVideoElement, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
   def from(source: HTMLVideoElement, options: js.Any): typings.pixiJs.PIXI.Texture = js.native
   def from(source: HTMLVideoElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
+  
   /**
     * Create a new Texture with a BufferResource from a Float32Array.
     * RGBA values are floats from 0 to 1.
@@ -342,6 +346,7 @@ object Texture extends js.Object {
   def fromBuffer(buffer: Float32Array, width: Double, height: Double, options: js.Any): typings.pixiJs.PIXI.Texture = js.native
   def fromBuffer(buffer: Uint8Array, width: Double, height: Double): typings.pixiJs.PIXI.Texture = js.native
   def fromBuffer(buffer: Uint8Array, width: Double, height: Double, options: js.Any): typings.pixiJs.PIXI.Texture = js.native
+  
   def fromLoader(source: HTMLCanvasElement, imageUrl: String): typings.pixiJs.PIXI.Texture = js.native
   def fromLoader(source: HTMLCanvasElement, imageUrl: String, name: String): typings.pixiJs.PIXI.Texture = js.native
   /**
@@ -356,6 +361,7 @@ object Texture extends js.Object {
     */
   def fromLoader(source: HTMLImageElement, imageUrl: String): typings.pixiJs.PIXI.Texture = js.native
   def fromLoader(source: HTMLImageElement, imageUrl: String, name: String): typings.pixiJs.PIXI.Texture = js.native
+  
   /**
     * Useful for loading textures via URLs. Use instead of `Texture.from` because
     * it does a better job of handling failed URLs more effectively. This also ignores
@@ -366,6 +372,7 @@ object Texture extends js.Object {
     */
   def fromURL(url: String): js.Promise[typings.pixiJs.PIXI.Texture] = js.native
   def fromURL(url: String, options: js.Any): js.Promise[typings.pixiJs.PIXI.Texture] = js.native
+  
   /**
     * Remove a Texture from the global TextureCache.
     *
@@ -376,4 +383,3 @@ object Texture extends js.Object {
   def removeFromCache(texture: String): typings.pixiJs.PIXI.Texture | Null = js.native
   def removeFromCache(texture: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.Texture | Null = js.native
 }
-

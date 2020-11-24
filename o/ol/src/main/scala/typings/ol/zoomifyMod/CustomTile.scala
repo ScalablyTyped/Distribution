@@ -6,7 +6,7 @@ import typings.ol.tileStateMod.TileState
 import typings.ol.tilecoordMod.TileCoord
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/source/Zoomify", "CustomTile")
 @js.native
@@ -30,4 +30,3 @@ class CustomTile protected ()
     opt_options: typings.ol.olTileMod.Options
   ) = this()
 }
-

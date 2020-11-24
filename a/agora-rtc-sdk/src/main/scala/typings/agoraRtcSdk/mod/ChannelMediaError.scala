@@ -2,7 +2,7 @@ package typings.agoraRtcSdk.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Error information of the media stream relay.
@@ -31,17 +31,19 @@ import scala.scalajs.js.annotation._
 @JSImport("agora-rtc-sdk", "ChannelMediaError")
 @js.native
 class ChannelMediaError () extends js.Object {
+  
   /**
     * The error code.
     */
   var code: Double = js.native
+  
   /**
     * Additional information.
     */
   var data: js.UndefOr[js.Any] = js.native
+  
   /**
     * The error message.
     */
   var message: String = js.native
 }
-

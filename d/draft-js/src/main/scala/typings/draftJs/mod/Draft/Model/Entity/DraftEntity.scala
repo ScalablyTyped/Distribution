@@ -2,7 +2,7 @@ package typings.draftJs.mod.Draft.Model.Entity
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A "document entity" is an object containing metadata associated with a
@@ -19,4 +19,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DraftEntity extends js.Object
-

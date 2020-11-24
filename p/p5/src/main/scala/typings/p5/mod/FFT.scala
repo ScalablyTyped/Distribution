@@ -2,10 +2,11 @@ package typings.p5.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FFT extends js.Object {
+  
   /**
     *   Returns an array of amplitude values (between 0
     *   and 255) across the frequency spectrum. Length is
@@ -29,6 +30,7 @@ trait FFT extends js.Object {
   def analyze(bins: js.UndefOr[scala.Nothing], scale: Double): js.Array[_] = js.native
   def analyze(bins: Double): js.Array[_] = js.native
   def analyze(bins: Double, scale: Double): js.Array[_] = js.native
+  
   /**
     *   Returns the  spectral centroid of the input
     *   signal. NOTE: analyze() must be called prior to
@@ -39,6 +41,7 @@ trait FFT extends js.Object {
     *   the spectral centroid in Hz.
     */
   def getCentroid(): Double = js.native
+  
   def getEnergy(frequency1: String): Double = js.native
   def getEnergy(frequency1: String, frequency2: Double): Double = js.native
   /**
@@ -67,6 +70,7 @@ trait FFT extends js.Object {
     */
   def getEnergy(frequency1: Double): Double = js.native
   def getEnergy(frequency1: Double, frequency2: Double): Double = js.native
+  
   /**
     *   Calculates and Returns the 1/N Octave Bands N
     *   defaults to 3 and minimum central frequency to
@@ -82,6 +86,7 @@ trait FFT extends js.Object {
     *   with their bounds
     */
   def getOctaveBands(N: Double, fCtr0: Double): js.Array[_] = js.native
+  
   /**
     *   Returns an array of average amplitude values for a
     *   given number of frequency bands split equally. N
@@ -95,6 +100,7 @@ trait FFT extends js.Object {
     *   values for each group
     */
   def linAverages(N: Double): js.Array[_] = js.native
+  
   /**
     *   Returns an array of average amplitude values of
     *   the spectrum, for a given set of  Octave Bands
@@ -108,6 +114,7 @@ trait FFT extends js.Object {
     *   values for each group
     */
   def logAverages(octaveBands: js.Array[_]): js.Array[_] = js.native
+  
   /**
     *   Set the input source for the FFT analysis. If no
     *   source is provided, FFT will analyze all sound in
@@ -117,6 +124,7 @@ trait FFT extends js.Object {
     */
   def setInput(): Unit = js.native
   def setInput(source: js.Object): Unit = js.native
+  
   /**
     *   Smooth FFT analysis by averaging with the last
     *   analysis frame.
@@ -124,6 +132,7 @@ trait FFT extends js.Object {
     *   to 0.8.
     */
   def smooth(smoothing: Double): Unit = js.native
+  
   /**
     *   Returns an array of amplitude values (between -1.0
     *   and +1.0) that represent a snapshot of amplitude
@@ -143,4 +152,3 @@ trait FFT extends js.Object {
   def waveform(bins: Double): js.Array[_] = js.native
   def waveform(bins: Double, precision: String): js.Array[_] = js.native
 }
-

@@ -10,9 +10,9 @@ Installer for Elm: just downloads the binary into node_modules
 | ------------------ | :-------------: |
 | Full name          | elm |
 | Keywords           | bin, binary, binaries, elm, install, installer |
-| # releases         | 18 |
-| # dependents       | 23 |
-| # downloads        | 1822095 |
+| # releases         | 10 |
+| # dependents       | 25 |
+| # downloads        | 1340460 |
 | # stars            | 42 |
 
 ## Links

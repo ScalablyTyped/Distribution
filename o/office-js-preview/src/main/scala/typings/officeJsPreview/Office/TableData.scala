@@ -2,13 +2,14 @@ package typings.officeJsPreview.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the data in a table or an {@link Office.TableBinding}.
   */
 @js.native
 trait TableData extends js.Object {
+  
   /**
     * Gets or sets the headers of the table.
     *
@@ -25,6 +26,7 @@ trait TableData extends js.Object {
     * - If you overwrite or update an existing table, the existing headers are not altered.
     */
   var headers: js.Array[_] = js.native
+  
   /**
     * Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table.
     * Returns an empty array if there are no rows.
@@ -43,33 +45,39 @@ trait TableData extends js.Object {
     */
   var rows: js.Array[js.Array[_]] = js.native
 }
-
 object TableData {
+  
   @scala.inline
   def apply(headers: js.Array[_], rows: js.Array[js.Array[_]]): TableData = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableData]
   }
+  
   @scala.inline
   implicit class TableDataOps[Self <: TableData] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setHeadersVarargs(value: js.Any*): Self = this.set("headers", js.Array(value :_*))
+    
     @scala.inline
     def setHeaders(value: js.Array[_]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRowsVarargs(value: js.Array[js.Any]*): Self = this.set("rows", js.Array(value :_*))
+    
     @scala.inline
     def setRows(value: js.Array[js.Array[_]]): Self = this.set("rows", value.asInstanceOf[js.Any])
   }
-  
 }
-

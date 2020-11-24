@@ -5,12 +5,12 @@ import typings.winrt.Windows.ApplicationModel.Contacts.ContactSelectionMode
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ContactPickerUI extends IContactPickerUI
-
 object ContactPickerUI {
+  
   @scala.inline
   def apply(
     addContact: (String, Contact) => AddContactResult,
@@ -24,4 +24,3 @@ object ContactPickerUI {
     __obj.asInstanceOf[ContactPickerUI]
   }
 }
-

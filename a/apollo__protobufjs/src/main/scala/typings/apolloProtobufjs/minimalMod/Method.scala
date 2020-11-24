@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.apolloProtobufjs.mod.IMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs/minimal", "Method")
 @js.native
@@ -26,17 +26,17 @@ class Method protected ()
     `type`: js.UndefOr[String],
     requestType: String,
     responseType: String,
-    requestStream: js.UndefOr[Boolean | StringDictionary[js.Any]],
-    responseStream: js.UndefOr[Boolean | StringDictionary[js.Any]],
-    options: js.UndefOr[StringDictionary[js.Any]],
+    requestStream: js.UndefOr[Boolean | StringDictionary[js.UndefOr[js.Any]]],
+    responseStream: js.UndefOr[Boolean | StringDictionary[js.UndefOr[js.Any]]],
+    options: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]],
     comment: js.UndefOr[String]
   ) = this()
 }
-
 /* static members */
 @JSImport("@apollo/protobufjs/minimal", "Method")
 @js.native
 object Method extends js.Object {
+  
   /**
     * Constructs a method from a method descriptor.
     * @param name Method name
@@ -46,4 +46,3 @@ object Method extends js.Object {
     */
   def fromJSON(name: String, json: IMethod): typings.apolloProtobufjs.mod.Method = js.native
 }
-

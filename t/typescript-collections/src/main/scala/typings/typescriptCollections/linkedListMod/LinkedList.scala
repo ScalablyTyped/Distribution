@@ -4,28 +4,11 @@ import typings.typescriptCollections.utilMod.IEqualsFunction
 import typings.typescriptCollections.utilMod.ILoopFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LinkedList[T] extends js.Object {
-  /**
-    * First node in the list
-    * @type {Object}
-    * @private
-    */
-  var firstNode: ILinkedListNode[T] | Null = js.native
-  /**
-    * Last node in the list
-    * @type {Object}
-    * @private
-    */
-  var lastNode: js.Any = js.native
-  /**
-    * Number of elements in the list
-    * @type {number}
-    * @private
-    */
-  var nElements: js.Any = js.native
+  
   /**
     * Adds an element to this list.
     * @param {Object} item element to be added.
@@ -36,10 +19,12 @@ trait LinkedList[T] extends js.Object {
     */
   def add(item: T): Boolean = js.native
   def add(item: T, index: Double): Boolean = js.native
+  
   /**
     * Removes all of the elements from this list.
     */
   def clear(): Unit = js.native
+  
   /**
     * Returns true if this list contains the specified element.
     * <p>If the elements inside the list are
@@ -60,10 +45,12 @@ trait LinkedList[T] extends js.Object {
     */
   def contains(item: T): Boolean = js.native
   def contains(item: T, equalsFunction: IEqualsFunction[T]): Boolean = js.native
+  
   /**
     * @private
     */
   /* private */ def createNode(item: js.Any): js.Any = js.native
+  
   /**
     * Returns the element at the specified position in this list.
     * @param {number} index desired index.
@@ -71,6 +58,7 @@ trait LinkedList[T] extends js.Object {
     * out of bounds.
     */
   def elementAtIndex(index: Double): js.UndefOr[T] = js.native
+  
   /**
     * Returns true if this list is equal to the given list.
     * Two lists are equal if they have the same elements in the same order.
@@ -83,16 +71,26 @@ trait LinkedList[T] extends js.Object {
     */
   def equals(other: js.Any): Boolean = js.native
   def equals(other: js.Any, equalsFunction: IEqualsFunction[T]): Boolean = js.native
+  
   /**
     * @private
     */
   /* private */ def equalsAux(n1: js.Any, n2: js.Any, eqF: js.Any): js.Any = js.native
+  
   /**
     * Returns the first element in this list.
     * @return {*} the first element of the list or undefined if the list is
     * empty.
     */
   def first(): js.UndefOr[T] = js.native
+  
+  /**
+    * First node in the list
+    * @type {Object}
+    * @private
+    */
+  var firstNode: ILinkedListNode[T] | Null = js.native
+  
   /**
     * Executes the provided function once for each element present in this list in order.
     * @param {function(Object):*} callback function to execute, it is
@@ -100,6 +98,7 @@ trait LinkedList[T] extends js.Object {
     * optionally return false.
     */
   def forEach(callback: ILoopFunction[T]): Unit = js.native
+  
   /**
     * Returns the index in this list of the first occurrence of the
     * specified element, or -1 if the List does not contain this element.
@@ -122,21 +121,39 @@ trait LinkedList[T] extends js.Object {
     */
   def indexOf(item: T): Double = js.native
   def indexOf(item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
+  
   /**
     * Returns true if this list contains no elements.
     * @return {boolean} true if this list contains no elements.
     */
   def isEmpty(): Boolean = js.native
+  
   /**
     * Returns the last element in this list.
     * @return {*} the last element in the list or undefined if the list is
     * empty.
     */
   def last(): js.UndefOr[T] = js.native
+  
+  /**
+    * Last node in the list
+    * @type {Object}
+    * @private
+    */
+  var lastNode: js.Any = js.native
+  
+  /**
+    * Number of elements in the list
+    * @type {number}
+    * @private
+    */
+  var nElements: js.Any = js.native
+  
   /**
     * @private
     */
   /* private */ def nodeAtIndex(index: js.Any): js.Any = js.native
+  
   /**
     * Removes the first occurrence of the specified element in this list.
     * <p>If the elements inside the list are
@@ -154,22 +171,26 @@ trait LinkedList[T] extends js.Object {
     */
   def remove(item: T): Boolean = js.native
   def remove(item: T, equalsFunction: IEqualsFunction[T]): Boolean = js.native
+  
   /**
     * Removes the element at the specified position in this list.
     * @param {number} index given index.
     * @return {*} removed element or undefined if the index is out of bounds.
     */
   def removeElementAtIndex(index: Double): js.UndefOr[T] = js.native
+  
   /**
     * Reverses the order of the elements in this linked list (makes the last
     * element first, and the first element last).
     */
   def reverse(): Unit = js.native
+  
   /**
     * Returns the number of elements in this list.
     * @return {number} the number of elements in this list.
     */
   def size(): Double = js.native
+  
   /**
     * Returns an array containing all of the elements in this list in proper
     * sequence.
@@ -178,4 +199,3 @@ trait LinkedList[T] extends js.Object {
     */
   def toArray(): js.Array[T] = js.native
 }
-

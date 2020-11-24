@@ -10,9 +10,9 @@ An express middleware to have simple NTLM-authentication.
 | ------------------ | :-------------: |
 | Full name          | express-ntlm |
 | Keywords           | express, ntlm, ldap, authentication |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 66844 |
+| # releases         | 5 |
+| # dependents       | 4 |
+| # downloads        | 54019 |
 | # stars            | 4 |
 
 ## Links

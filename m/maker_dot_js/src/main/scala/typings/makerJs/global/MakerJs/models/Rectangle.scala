@@ -4,7 +4,7 @@ import typings.makerJs.MakerJs.IMeasure
 import typings.makerJs.MakerJs.IModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.models.Rectangle")
 @js.native
@@ -62,4 +62,3 @@ class Rectangle protected ()
     */
   def this(width: Double, height: Double) = this()
 }
-

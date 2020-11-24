@@ -178,10 +178,11 @@ import typings.emotionStyledBase.emotionStyledBaseStrings.webview
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CreateStyled[Theme /* <: js.Object */] extends js.Object {
+  
   def apply[ExtraProps](tag: `object`): CreateStyledComponentIntrinsic[`object`, ExtraProps, Theme] = js.native
   def apply[ExtraProps](tag: `object`, options: StyledOptions): CreateStyledComponentIntrinsic[`object`, ExtraProps, Theme] = js.native
   def apply[ExtraProps](tag: `var`): CreateStyledComponentIntrinsic[`var`, ExtraProps, Theme] = js.native
@@ -535,4 +536,3 @@ trait CreateStyled[Theme /* <: js.Object */] extends js.Object {
   def apply[Tag /* <: ComponentType[_] */, ExtraProps](tag: Tag): CreateStyledComponentExtrinsic[Tag, ExtraProps, Theme] = js.native
   def apply[Tag /* <: ComponentType[_] */, ExtraProps](tag: Tag, options: StyledOptions): CreateStyledComponentExtrinsic[Tag, ExtraProps, Theme] = js.native
 }
-

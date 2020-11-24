@@ -4,7 +4,7 @@ import typings.phaser.MatterJS.ConstraintType
 import typings.phaser.MatterJS.IConstraintDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Matter.Constraint` module contains methods for creating and manipulating constraints.
@@ -19,11 +19,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Constraint ()
   extends typings.phaser.MatterJS.Constraint
-
 /* static members */
 @JSGlobal("MatterJS.Constraint")
 @js.native
 object Constraint extends js.Object {
+  
   /**
     * Creates a new constraint.
     * All properties have default values, and many are pre-calculated automatically based on other properties.
@@ -34,4 +34,3 @@ object Constraint extends js.Object {
     */
   def create(options: IConstraintDefinition): ConstraintType = js.native
 }
-

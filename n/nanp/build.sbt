@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nanp"
-version := "v0.3.0-dt-20200515Z-90789d"
+version := "v0.3.0-dt-20201002Z-0b0003"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

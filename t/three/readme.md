@@ -1,7 +1,7 @@
 
 # Scala.js typings for three
 
-Typings are for version 0.119.1
+Typings are for version 0.122.0
 
 ## Library description:
 JavaScript 3D library
@@ -9,11 +9,11 @@ JavaScript 3D library
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | three |
-| Keywords           | three, three.js, 3d, canvas, svg, webgl |
-| # releases         | 31 |
-| # dependents       | 855 |
-| # downloads        | 7321343 |
-| # stars            | 72 |
+| Keywords           | three, three.js, javascript, 3d, virtual-reality, augmented-reality, webgl, webgl2, webaudio, webxr, canvas, svg, html5 |
+| # releases         | 41 |
+| # dependents       | 1128 |
+| # downloads        | 13572326 |
+| # stars            | 73 |
 
 ## Links
 - [Homepage](https://threejs.org/)

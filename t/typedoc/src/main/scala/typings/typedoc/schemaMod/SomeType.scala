@@ -1,8 +1,11 @@
 package typings.typedoc.schemaMod
 
+import typings.typedoc.typedocStrings.keyof
+import typings.typedoc.typedocStrings.readonly
+import typings.typedoc.typedocStrings.unique
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.typedoc.schemaMod.ArrayType
@@ -23,14 +26,15 @@ import scala.scalajs.js.annotation._
 */
 trait SomeType
   extends __ModelToObject[js.Any]
-
 object SomeType {
+  
   @scala.inline
   def InferredType(name: ModelToObject[String] | String, `type`: ModelToObject[String] | String): SomeType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
+  
   @scala.inline
   def ArrayType(
     elementType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type,
@@ -40,12 +44,14 @@ object SomeType {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
+  
   @scala.inline
   def TupleType(`type`: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String)): SomeType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
+  
   @scala.inline
   def IntersectionType(
     `type`: ModelToObject[String] | String,
@@ -55,6 +61,7 @@ object SomeType {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
+  
   @scala.inline
   def ReferenceType(
     name: ModelToObject[String] | String,
@@ -64,6 +71,7 @@ object SomeType {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
+  
   @scala.inline
   def UnionType(
     `type`: ModelToObject[String] | String,
@@ -73,9 +81,10 @@ object SomeType {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
+  
   @scala.inline
   def TypeOperatorType(
-    operator: (ModelToObject[/* "keyof" */ String]) | (/* "keyof" */ String),
+    operator: (ModelToObject[keyof | unique | readonly]) | keyof | unique | readonly,
     target: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type,
     `type`: (ModelToObject[/* "typeOperator" */ String]) | (/* "typeOperator" */ String)
   ): SomeType = {
@@ -83,6 +92,7 @@ object SomeType {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
+  
   @scala.inline
   def StringLiteralType(
     `type`: (ModelToObject[/* "stringLiteral" */ String]) | (/* "stringLiteral" */ String),
@@ -92,6 +102,7 @@ object SomeType {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
+  
   @scala.inline
   def IntrinsicType(
     name: ModelToObject[String] | String,
@@ -101,6 +112,7 @@ object SomeType {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
+  
   @scala.inline
   def ConditionalType(
     checkType: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type,
@@ -113,12 +125,14 @@ object SomeType {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
+  
   @scala.inline
   def ReflectionType(`type`: (ModelToObject[/* "reflection" */ String]) | (/* "reflection" */ String)): SomeType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
+  
   @scala.inline
   def IndexedAccessType(
     indexType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type,
@@ -129,12 +143,14 @@ object SomeType {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
+  
   @scala.inline
   def TypeParameterType(name: ModelToObject[String] | String, `type`: ModelToObject[String] | String): SomeType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
+  
   @scala.inline
   def UnknownType(
     name: ModelToObject[String] | String,
@@ -144,6 +160,7 @@ object SomeType {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
+  
   @scala.inline
   def PredicateType(
     asserts: ModelToObject[Boolean] | Boolean,
@@ -155,4 +172,3 @@ object SomeType {
     __obj.asInstanceOf[SomeType]
   }
 }
-

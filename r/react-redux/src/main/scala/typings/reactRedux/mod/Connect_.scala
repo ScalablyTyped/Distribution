@@ -3,10 +3,11 @@ package typings.reactRedux.mod
 import typings.redux.mod.AnyAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Connect_ extends js.Object {
+trait Connect_[DefaultState] extends js.Object {
+  
   // tslint:disable:no-unnecessary-generics
   def apply(): InferableComponentEnhancer[DispatchProp[AnyAction]] = js.native
   def apply[no_state, TDispatchProps, TOwnProps](
@@ -43,23 +44,23 @@ trait Connect_ extends js.Object {
   ): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
   def apply[no_state, no_dispatch, TOwnProps, TMergedProps](
     mapStateToProps: js.UndefOr[scala.Nothing],
-    mapDispatchToProps: js.UndefOr[scala.Nothing],
+    mapDispatchToProps: Null,
     mergeProps: MergeProps[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing], TOwnProps, TMergedProps]
   ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
-  def apply[no_state, no_dispatch, TOwnProps, TMergedProps](
+  def apply[no_state, TDispatchProps, TOwnProps, TMergedProps](
     mapStateToProps: js.UndefOr[scala.Nothing],
-    mapDispatchToProps: Null,
-    mergeProps: MergeProps[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing], TOwnProps, TMergedProps]
-  ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
-  def apply[no_state, no_dispatch, TOwnProps, TMergedProps](
-    mapStateToProps: Null,
-    mapDispatchToProps: js.UndefOr[scala.Nothing],
-    mergeProps: MergeProps[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing], TOwnProps, TMergedProps]
+    mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
+    mergeProps: MergeProps[js.UndefOr[scala.Nothing], TDispatchProps, TOwnProps, TMergedProps]
   ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
   def apply[no_state, no_dispatch, TOwnProps, TMergedProps](
     mapStateToProps: Null,
     mapDispatchToProps: Null,
     mergeProps: MergeProps[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing], TOwnProps, TMergedProps]
+  ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
+  def apply[no_state, TDispatchProps, TOwnProps, TMergedProps](
+    mapStateToProps: Null,
+    mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
+    mergeProps: MergeProps[js.UndefOr[scala.Nothing], TDispatchProps, TOwnProps, TMergedProps]
   ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
   def apply[TStateProps, no_dispatch, TOwnProps, State](mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State]): InferableComponentEnhancerWithProps[TStateProps with DispatchProp[AnyAction], TOwnProps] = js.native
   def apply[TStateProps, no_dispatch, TOwnProps, State](
@@ -81,4 +82,3 @@ trait Connect_ extends js.Object {
     options: Options[State, TStateProps, TOwnProps, TMergedProps]
   ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
 }
-

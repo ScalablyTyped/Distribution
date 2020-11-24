@@ -4,11 +4,12 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("raven", "requestHandler")
 @js.native
 object requestHandler extends js.Object {
+  
   def apply(): js.Function3[
     /* req */ IncomingMessage, 
     /* res */ ServerResponse, 
@@ -16,4 +17,3 @@ object requestHandler extends js.Object {
     Unit
   ] = js.native
 }
-

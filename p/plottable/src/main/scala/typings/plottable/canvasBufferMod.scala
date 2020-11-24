@@ -5,30 +5,29 @@ import typings.std.HTMLCanvasElement
 import typings.std.ImageData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/drawers/canvasBuffer", JSImport.Namespace)
 @js.native
 object canvasBufferMod extends js.Object {
+  
   @js.native
   class CanvasBuffer protected () extends js.Object {
     def this(screenWidth: Double, screenHeight: Double) = this()
     def this(screenWidth: Double, screenHeight: Double, devicePixelRatio: Double) = this()
-    var canvas: HTMLCanvasElement = js.native
-    var ctx: CanvasRenderingContext2D = js.native
-    var devicePixelRatio: Double = js.native
-    var pixelHeight: Double = js.native
-    var pixelWidth: Double = js.native
-    var screenHeight: Double = js.native
-    var screenWidth: Double = js.native
+    
     def blit(ctx: CanvasRenderingContext2D): Unit = js.native
     def blit(ctx: CanvasRenderingContext2D, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
     def blit(ctx: CanvasRenderingContext2D, x: Double): Unit = js.native
     def blit(ctx: CanvasRenderingContext2D, x: Double, y: Double): Unit = js.native
+    
     def blitCenter(ctx: CanvasRenderingContext2D): Unit = js.native
     def blitCenter(ctx: CanvasRenderingContext2D, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
     def blitCenter(ctx: CanvasRenderingContext2D, x: Double): Unit = js.native
     def blitCenter(ctx: CanvasRenderingContext2D, x: Double, y: Double): Unit = js.native
+    
+    var canvas: HTMLCanvasElement = js.native
+    
     /**
       * Temporarily resets the current context transformation and fills the
       * entire canvas with the provided color. If no color is provided, the
@@ -36,7 +35,17 @@ object canvasBufferMod extends js.Object {
       */
     def clear(): this.type = js.native
     def clear(color: String): this.type = js.native
+    
+    var ctx: CanvasRenderingContext2D = js.native
+    
+    var devicePixelRatio: Double = js.native
+    
     def getImageData(): ImageData = js.native
+    
+    var pixelHeight: Double = js.native
+    
+    var pixelWidth: Double = js.native
+    
     /**
       * Changes the size of the underlying canvas in screen space, respecting the
       * current devicePixelRatio.
@@ -46,16 +55,18 @@ object canvasBufferMod extends js.Object {
       */
     def resize(screenWidth: Double, screenHeight: Double): this.type = js.native
     def resize(screenWidth: Double, screenHeight: Double, center: Boolean): this.type = js.native
+    
+    var screenHeight: Double = js.native
+    
+    var screenWidth: Double = js.native
   }
-  
   /* static members */
   @js.native
   object CanvasBuffer extends js.Object {
+    
     /**
       * Resizes the canvas' internal pixel buffer to match the devicePixelRatio
       */
     def sizePixels(ctx: CanvasRenderingContext2D, screenWidth: Double, screenHeight: Double, devicePixelRatio: Double): Unit = js.native
   }
-  
 }
-

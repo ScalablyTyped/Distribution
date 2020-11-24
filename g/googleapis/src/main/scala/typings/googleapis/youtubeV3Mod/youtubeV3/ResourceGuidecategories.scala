@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Guidecategories")
 @js.native
 class ResourceGuidecategories protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.guideCategories.list
     * @desc Returns a list of categories that can be associated with YouTube
@@ -49,4 +51,3 @@ class ResourceGuidecategories protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGuideCategoryListResponse]
   ): Unit = js.native
 }
-

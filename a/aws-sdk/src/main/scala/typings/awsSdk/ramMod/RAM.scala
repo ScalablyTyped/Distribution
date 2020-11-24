@@ -1,17 +1,16 @@
 package typings.awsSdk.ramMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RAM extends Service {
-  @JSName("config")
-  var config_RAM: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Accepts an invitation to a resource share from another AWS account.
     */
@@ -25,6 +24,7 @@ trait RAM extends Service {
     params: AcceptResourceShareInvitationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AcceptResourceShareInvitationResponse, Unit]
   ): Request[AcceptResourceShareInvitationResponse, AWSError] = js.native
+  
   /**
     * Associates the specified resource share with the specified principals and resources.
     */
@@ -38,6 +38,7 @@ trait RAM extends Service {
     params: AssociateResourceShareRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateResourceShareResponse, Unit]
   ): Request[AssociateResourceShareResponse, AWSError] = js.native
+  
   /**
     * Associates a permission with a resource share.
     */
@@ -53,6 +54,10 @@ trait RAM extends Service {
     params: AssociateResourceSharePermissionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateResourceSharePermissionResponse, Unit]
   ): Request[AssociateResourceSharePermissionResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_RAM: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a resource share.
     */
@@ -66,6 +71,7 @@ trait RAM extends Service {
     params: CreateResourceShareRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateResourceShareResponse, Unit]
   ): Request[CreateResourceShareResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified resource share.
     */
@@ -79,6 +85,7 @@ trait RAM extends Service {
     params: DeleteResourceShareRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourceShareResponse, Unit]
   ): Request[DeleteResourceShareResponse, AWSError] = js.native
+  
   /**
     * Disassociates the specified principals or resources from the specified resource share.
     */
@@ -92,6 +99,7 @@ trait RAM extends Service {
     params: DisassociateResourceShareRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateResourceShareResponse, Unit]
   ): Request[DisassociateResourceShareResponse, AWSError] = js.native
+  
   /**
     * Disassociates an AWS RAM permission from a resource share.
     */
@@ -107,6 +115,7 @@ trait RAM extends Service {
     params: DisassociateResourceSharePermissionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateResourceSharePermissionResponse, Unit]
   ): Request[DisassociateResourceSharePermissionResponse, AWSError] = js.native
+  
   /**
     * Enables resource sharing within your AWS Organization. The caller must be the master account for the AWS Organization.
     */
@@ -122,6 +131,7 @@ trait RAM extends Service {
     params: EnableSharingWithAwsOrganizationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ EnableSharingWithAwsOrganizationResponse, Unit]
   ): Request[EnableSharingWithAwsOrganizationResponse, AWSError] = js.native
+  
   /**
     * Gets the contents of an AWS RAM permission in JSON format.
     */
@@ -135,6 +145,7 @@ trait RAM extends Service {
     params: GetPermissionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPermissionResponse, Unit]
   ): Request[GetPermissionResponse, AWSError] = js.native
+  
   /**
     * Gets the policies for the specified resources that you own and have shared.
     */
@@ -148,6 +159,7 @@ trait RAM extends Service {
     params: GetResourcePoliciesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePoliciesResponse, Unit]
   ): Request[GetResourcePoliciesResponse, AWSError] = js.native
+  
   /**
     * Gets the resources or principals for the resource shares that you own.
     */
@@ -161,6 +173,7 @@ trait RAM extends Service {
     params: GetResourceShareAssociationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetResourceShareAssociationsResponse, Unit]
   ): Request[GetResourceShareAssociationsResponse, AWSError] = js.native
+  
   /**
     * Gets the invitations for resource sharing that you've received.
     */
@@ -174,6 +187,7 @@ trait RAM extends Service {
     params: GetResourceShareInvitationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetResourceShareInvitationsResponse, Unit]
   ): Request[GetResourceShareInvitationsResponse, AWSError] = js.native
+  
   /**
     * Gets the resource shares that you own or the resource shares that are shared with you.
     */
@@ -187,6 +201,7 @@ trait RAM extends Service {
     params: GetResourceSharesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetResourceSharesResponse, Unit]
   ): Request[GetResourceSharesResponse, AWSError] = js.native
+  
   /**
     * Lists the resources in a resource share that is shared with you but that the invitation is still pending for.
     */
@@ -202,6 +217,7 @@ trait RAM extends Service {
     params: ListPendingInvitationResourcesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPendingInvitationResourcesResponse, Unit]
   ): Request[ListPendingInvitationResourcesResponse, AWSError] = js.native
+  
   /**
     * Lists the AWS RAM permissions.
     */
@@ -215,6 +231,7 @@ trait RAM extends Service {
     params: ListPermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPermissionsResponse, Unit]
   ): Request[ListPermissionsResponse, AWSError] = js.native
+  
   /**
     * Lists the principals that you have shared resources with or that have shared resources with you.
     */
@@ -228,6 +245,7 @@ trait RAM extends Service {
     params: ListPrincipalsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPrincipalsResponse, Unit]
   ): Request[ListPrincipalsResponse, AWSError] = js.native
+  
   /**
     * Lists the AWS RAM permissions that are associated with a resource share.
     */
@@ -241,6 +259,7 @@ trait RAM extends Service {
     params: ListResourceSharePermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListResourceSharePermissionsResponse, Unit]
   ): Request[ListResourceSharePermissionsResponse, AWSError] = js.native
+  
   /**
     * Lists the shareable resource types supported by AWS RAM.
     */
@@ -254,6 +273,7 @@ trait RAM extends Service {
     params: ListResourceTypesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListResourceTypesResponse, Unit]
   ): Request[ListResourceTypesResponse, AWSError] = js.native
+  
   /**
     * Lists the resources that you added to a resource shares or the resources that are shared with you.
     */
@@ -267,6 +287,7 @@ trait RAM extends Service {
     params: ListResourcesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListResourcesResponse, Unit]
   ): Request[ListResourcesResponse, AWSError] = js.native
+  
   /**
     * Resource shares that were created by attaching a policy to a resource are visible only to the resource share owner, and the resource share cannot be modified in AWS RAM. Use this API action to promote the resource share. When you promote the resource share, it becomes:   Visible to all principals that it is shared with.   Modifiable in AWS RAM.  
     */
@@ -282,6 +303,7 @@ trait RAM extends Service {
     params: PromoteResourceShareCreatedFromPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PromoteResourceShareCreatedFromPolicyResponse, Unit]
   ): Request[PromoteResourceShareCreatedFromPolicyResponse, AWSError] = js.native
+  
   /**
     * Rejects an invitation to a resource share from another AWS account.
     */
@@ -295,6 +317,7 @@ trait RAM extends Service {
     params: RejectResourceShareInvitationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RejectResourceShareInvitationResponse, Unit]
   ): Request[RejectResourceShareInvitationResponse, AWSError] = js.native
+  
   /**
     * Adds the specified tags to the specified resource share that you own.
     */
@@ -308,6 +331,7 @@ trait RAM extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Removes the specified tags from the specified resource share that you own.
     */
@@ -321,6 +345,7 @@ trait RAM extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates the specified resource share that you own.
     */
@@ -335,4 +360,3 @@ trait RAM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourceShareResponse, Unit]
   ): Request[UpdateResourceShareResponse, AWSError] = js.native
 }
-

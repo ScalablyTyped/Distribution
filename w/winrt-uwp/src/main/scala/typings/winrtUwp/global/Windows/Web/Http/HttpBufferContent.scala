@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Web.Http
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides HTTP content that uses a buffer. */
 @JSGlobal("Windows.Web.Http.HttpBufferContent")
@@ -23,4 +23,3 @@ class HttpBufferContent protected ()
     */
   def this(content: IBuffer, offset: Double, count: Double) = this()
 }
-

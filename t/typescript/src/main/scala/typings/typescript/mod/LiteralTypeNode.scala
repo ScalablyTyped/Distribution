@@ -2,12 +2,13 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LiteralTypeNode extends TypeNode {
+  
   @JSName("kind")
-  var kind_LiteralTypeNode: typings.typescript.mod.SyntaxKind.LiteralType = js.native
-  var literal: BooleanLiteral | LiteralExpression | PrefixUnaryExpression = js.native
+  val kind_LiteralTypeNode: typings.typescript.mod.SyntaxKind.LiteralType = js.native
+  
+  val literal: NullLiteral | BooleanLiteral | LiteralExpression | PrefixUnaryExpression = js.native
 }
-

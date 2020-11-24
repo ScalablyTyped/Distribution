@@ -5,11 +5,12 @@ import typings.stellarSdk.callBuilderMod.CallBuilder
 import typings.stellarSdk.serverApiMod.ServerApi.OrderbookRecord
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stellar-sdk/lib/orderbook_call_builder", JSImport.Namespace)
 @js.native
 object orderbookCallBuilderMod extends js.Object {
+  
   @js.native
   class OrderbookCallBuilder protected () extends CallBuilder[OrderbookRecord] {
     def this(
@@ -18,6 +19,4 @@ object orderbookCallBuilderMod extends js.Object {
       buying: Asset
     ) = this()
   }
-  
 }
-

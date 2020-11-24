@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/iam/v1", "iam_v1.Resource$Projects$Serviceaccounts$Keys")
 @js.native
 class ResourceProjectsServiceaccountsKeys protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * iam.projects.serviceAccounts.keys.create
     * @desc Creates a ServiceAccountKey and returns it.
@@ -45,6 +47,7 @@ class ResourceProjectsServiceaccountsKeys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaServiceAccountKey]
   ): Unit = js.native
+  
   /**
     * iam.projects.serviceAccounts.keys.delete
     * @desc Deletes a ServiceAccountKey.
@@ -76,6 +79,7 @@ class ResourceProjectsServiceaccountsKeys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * iam.projects.serviceAccounts.keys.get
     * @desc Gets the ServiceAccountKey by key id.
@@ -108,6 +112,7 @@ class ResourceProjectsServiceaccountsKeys protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaServiceAccountKey]
   ): Unit = js.native
+  
   /**
     * iam.projects.serviceAccounts.keys.list
     * @desc Lists ServiceAccountKeys.
@@ -141,4 +146,3 @@ class ResourceProjectsServiceaccountsKeys protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListServiceAccountKeysResponse]
   ): Unit = js.native
 }
-

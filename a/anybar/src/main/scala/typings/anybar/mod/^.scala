@@ -2,11 +2,12 @@ package typings.anybar.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("anybar", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Control the [AnyBar app](https://github.com/tonsky/AnyBar).
   @param status - [Name](https://github.com/tonsky/AnyBar#usage) of the color dot you want AnyBar.app to display.
@@ -21,4 +22,3 @@ object ^ extends js.Object {
   def apply(status: AnybarStatus): js.Promise[Unit] = js.native
   def apply(status: AnybarStatus, options: Options): js.Promise[Unit] = js.native
 }
-

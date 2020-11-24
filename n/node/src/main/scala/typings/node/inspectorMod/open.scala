@@ -2,11 +2,12 @@ package typings.node.inspectorMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("inspector", "open")
 @js.native
 object open extends js.Object {
+  
   // Top Level API
   /**
     * Activate inspector on host and port. Equivalent to node --inspect=[[host:]port], but can be done programatically after node has started.
@@ -24,4 +25,3 @@ object open extends js.Object {
   def apply(port: Double, host: String): Unit = js.native
   def apply(port: Double, host: String, wait: Boolean): Unit = js.native
 }
-

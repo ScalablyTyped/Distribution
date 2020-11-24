@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The lightmapper is used to bake scene lights into textures.
@@ -24,4 +24,3 @@ class Lightmapper protected ()
     assets: typings.playcanvas.pc.AssetRegistry
   ) = this()
 }
-

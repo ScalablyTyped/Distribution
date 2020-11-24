@@ -3,14 +3,16 @@ package typings.highcharts.stockMod
 import typings.highcharts.mod.DataGroupingOptionsObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("highcharts", JSImport.Namespace)
 @js.native
 object highchartsAugmentingMod extends js.Object {
+  
   @js.native
   trait Axis extends js.Object {
+    
     /**
       * Highstock only. Set the compare mode on all series belonging to an Y
       * axis after render time.
@@ -27,6 +29,7 @@ object highchartsAugmentingMod extends js.Object {
     def setCompare(compare: js.UndefOr[scala.Nothing], redraw: Boolean): Unit = js.native
     def setCompare(compare: String): Unit = js.native
     def setCompare(compare: String, redraw: Boolean): Unit = js.native
+    
     /**
       * (Highstock) Highstock only. Force data grouping on all the axis'
       * series.
@@ -49,6 +52,7 @@ object highchartsAugmentingMod extends js.Object {
   
   @js.native
   trait Series extends js.Object {
+    
     /**
       * Highstock only. Set the compare mode of the series after render time.
       * In most cases it is more useful running Axis#setCompare on the X axis
@@ -60,6 +64,4 @@ object highchartsAugmentingMod extends js.Object {
     def setCompare(): Unit = js.native
     def setCompare(compare: String): Unit = js.native
   }
-  
 }
-

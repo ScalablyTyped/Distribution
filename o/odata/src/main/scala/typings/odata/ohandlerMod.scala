@@ -11,22 +11,16 @@ import typings.std.URL
 import typings.std.URLSearchParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("odata/dist/types/OHandler", JSImport.Namespace)
 @js.native
 object ohandlerMod extends js.Object {
+  
   @js.native
   class OHandler protected () extends js.Object {
     def this(config: OdataConfig) = this()
-    var config: OdataConfig = js.native
-    var getBody: js.Any = js.native
-    var getFetch: js.Any = js.native
-    /**
-      * Determines how many request are outstanding.
-      */
-    val pending: Double = js.native
-    var requests: js.Any = js.native
+    
     /**
       * Does a batch http-batch request. All request in that sequent are send via one
       * physically request and afterwards parsed to separate data chunks.
@@ -36,6 +30,9 @@ object ohandlerMod extends js.Object {
       */
     def batch(): js.Promise[_] = js.native
     def batch(query: OdataQuery): js.Promise[_] = js.native
+    
+    var config: OdataConfig = js.native
+    
     /**
       * Deletes a resource from the endpoint.
       *
@@ -43,6 +40,7 @@ object ohandlerMod extends js.Object {
       */
     def delete(): this.type = js.native
     def delete(resource: String): this.type = js.native
+    
     /**
       * Request all requests in sequent. Does simply return a Response or Response[]
       * without any data parsing applied.
@@ -52,6 +50,7 @@ object ohandlerMod extends js.Object {
       */
     def fetch(): js.Promise[Response | js.Array[Response]] = js.native
     def fetch(query: OdataQuery): js.Promise[Response | js.Array[Response]] = js.native
+    
     /**
       * Gets the data from the endpoint + resource url.
       *
@@ -59,11 +58,17 @@ object ohandlerMod extends js.Object {
       */
     def get(): this.type = js.native
     def get(resource: String): this.type = js.native
+    
+    var getBody: js.Any = js.native
+    
+    var getFetch: js.Any = js.native
+    
     /**
       * Returns a URL based on the rootURL + the given resource
       * @param resource The resource to join.
       */
     def getUrl(resource: String): URL = js.native
+    
     /**
       * Patch data to an endpoint + resource.
       *
@@ -71,6 +76,12 @@ object ohandlerMod extends js.Object {
       * @param body The data to patch.
       */
     def patch(resource: String, body: BodyType): this.type = js.native
+    
+    /**
+      * Determines how many request are outstanding.
+      */
+    def pending: Double = js.native
+    
     /**
       * Post data to an endpoint + resource.
       *
@@ -78,6 +89,7 @@ object ohandlerMod extends js.Object {
       * @param body The data to post.
       */
     def post(resource: String, body: BodyType): this.type = js.native
+    
     /**
       * Put data to an endpoint + resource.
       *
@@ -85,6 +97,7 @@ object ohandlerMod extends js.Object {
       * @param body The data to put.
       */
     def put(resource: String, body: BodyType): this.type = js.native
+    
     /**
       * Does a fetch request to the given endpoint and request
       * all resources in sequent. Tries to parse the result logical
@@ -122,6 +135,7 @@ object ohandlerMod extends js.Object {
       */
     def query(): js.Promise[_] = js.native
     def query(query: OdataQuery): js.Promise[_] = js.native
+    
     /**
       * Use that method to add any kind of request (e.g. a head request) to
       * the execution list.
@@ -135,8 +149,9 @@ object ohandlerMod extends js.Object {
       * @param req The request to add.
       */
     def request(req: ORequest): Unit = js.native
+    
+    var requests: js.Any = js.native
   }
   
   type BodyType = Blob | BufferSource | FormData | URLSearchParams | String | js.Object
 }
-

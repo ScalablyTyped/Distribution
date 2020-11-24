@@ -23,56 +23,91 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.selectionChanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BootstrapCardView extends BootstrapGridBase {
-  val batchEditApi: BootstrapCardViewBatchEditApi | Null = js.native
+  
   def addNewCard(): Unit = js.native
+  
   def applyFilter(filterExpression: String): Unit = js.native
+  
   def applySearchPanelFilter(value: String): Unit = js.native
+  
+  val batchEditApi: BootstrapCardViewBatchEditApi | Null = js.native
+  
   def cancelEdit(): Unit = js.native
+  
   def clearFilter(): Unit = js.native
+  
   def closeFilterControl(): Unit = js.native
+  
   def deleteCard(visibleIndex: Double): Unit = js.native
+  
   def deleteCardByKey(key: js.Any): Unit = js.native
+  
   def focus(): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def focusEditor(columnFieldNameOrId: String): Unit = js.native
   def focusEditor(columnIndex: Double): Unit = js.native
   def focusEditor(column: BootstrapCardViewColumn): Unit = js.native
+  
    // tslint:disable-line:unified-signatures unified-signatures
   def getCardKey(visibleIndex: Double): String = js.native
+  
   def getColumn(columnIndex: Double): BootstrapCardViewColumn | Null = js.native
+  
   def getColumnByField(columnFieldName: String): BootstrapCardViewColumn | Null = js.native
+  
   def getColumnById(columnId: String): BootstrapCardViewColumn | Null = js.native
+  
   def getColumnCount(): Double = js.native
+  
    // tslint:disable-line:unified-signatures
   def getEditValue(columnFieldNameOrId: String): String = js.native
   def getEditValue(columnIndex: Double): String = js.native
   def getEditValue(column: BootstrapCardViewColumn): String = js.native
+  
    // tslint:disable-line:unified-signatures
   def getEditor(columnFieldNameOrId: String): BootstrapClientEdit = js.native
   def getEditor(columnIndex: Double): BootstrapClientEdit = js.native
    // tslint:disable-line:unified-signatures unified-signatures
   def getEditor(column: BootstrapCardViewColumn): BootstrapClientEdit = js.native
+  
    // tslint:disable-line:unified-signatures unified-signatures
   def getFocusedCardIndex(): Double = js.native
+  
   def getFocusedCell(): BootstrapCardViewCellInfo | Null = js.native
+  
   def getPageCount(): Double = js.native
+  
   def getPageIndex(): Double = js.native
+  
   def getPopupEditForm(): BootstrapPopupControl | Null = js.native
+  
   def getSelectedCardCount(): Double = js.native
+  
   def getSelectedKeysOnPage(): js.Array[_] = js.native
+  
   def getTopVisibleIndex(): Double = js.native
+  
   def getVerticalScrollPosition(): Double = js.native
+  
   def getVisibleCardsOnPage(): Double = js.native
+  
   def gotoPage(pageIndex: Double): Unit = js.native
+  
   def hideCustomizationWindow(): Unit = js.native
+  
   def isCardSelectedOnPage(visibleIndex: Double): Boolean = js.native
+  
   def isCustomizationWindowVisible(): Boolean = js.native
+  
   def isEditing(): Boolean = js.native
+  
   def isNewCardEditing(): Boolean = js.native
+  
    // tslint:disable-line:unified-signatures
   def moveColumn(columnFieldNameOrId: String): Unit = js.native
    // tslint:disable-line:unified-signatures unified-signatures
@@ -89,8 +124,10 @@ trait BootstrapCardView extends BootstrapGridBase {
   def moveColumn(column: BootstrapCardViewColumn, moveToColumnVisibleIndex: Double): Unit = js.native
    // tslint:disable-line:unified-signatures unified-signatures unified-signatures
   def moveColumn(column: BootstrapCardViewColumn, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
+  
    // tslint:disable-line:unified-signatures unified-signatures unified-signatures
   def nextPage(): Unit = js.native
+  
   @JSName("off")
   def off_batchEditCardDeleting(eventName: batchEditCardDeleting): this.type = js.native
   @JSName("off")
@@ -278,6 +315,7 @@ trait BootstrapCardView extends BootstrapGridBase {
     eventName: selectionChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[CardViewSelectionEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_batchEditCardDeleting(
     eventName: batchEditCardDeleting,
@@ -423,6 +461,7 @@ trait BootstrapCardView extends BootstrapGridBase {
     eventName: selectionChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[CardViewSelectionEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_batchEditCardDeleting(
     eventName: batchEditCardDeleting,
@@ -568,34 +607,50 @@ trait BootstrapCardView extends BootstrapGridBase {
     eventName: selectionChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[CardViewSelectionEventArgs], Unit]
   ): this.type = js.native
+  
   def performCallback(data: js.Any): js.Promise[Unit] = js.native
   def performCallback(data: js.Any, onSuccess: js.Function0[Unit]): Unit = js.native
+  
   def prevPage(): Unit = js.native
+  
   def refresh(): Unit = js.native
+  
   def selectAllCardsOnPage(): Unit = js.native
+  
   def selectCardOnPage(visibleIndex: Double): Unit = js.native
   def selectCardOnPage(visibleIndex: Double, selected: Boolean): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def selectCards(): Unit = js.native
+  
   def selectCardsByKey(key: js.Any): Unit = js.native
    // tslint:disable-line:unified-signatures
   def selectCardsByKey(key: js.Any, selected: Boolean): Unit = js.native
   def selectCardsByKey(keys: js.Array[_]): Unit = js.native
    // tslint:disable-line:unified-signatures
   def selectCardsByKey(keys: js.Array[_], selected: Boolean): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def setEditValue(columnFieldNameOrId: String, value: String): Unit = js.native
   def setEditValue(columnIndex: Double, value: String): Unit = js.native
    // tslint:disable-line:unified-signatures unified-signatures
   def setEditValue(column: BootstrapCardViewColumn, value: String): Unit = js.native
+  
    // tslint:disable-line:unified-signatures unified-signatures
   def setFilterEnabled(isFilterEnabled: Boolean): Unit = js.native
+  
   def setFocusedCardIndex(visibleIndex: Double): Unit = js.native
+  
   def setFocusedCell(cardVisibleIndex: Double, columnIndex: Double): Unit = js.native
+  
   def setSearchPanelCustomEditor(editor: BootstrapClientEdit): Unit = js.native
+  
   def setVerticalScrollPosition(position: Double): Unit = js.native
+  
   def showCustomizationWindow(): Unit = js.native
+  
   def showFilterControl(): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def sortBy(columnFieldNameOrId: String): Unit = js.native
    // tslint:disable-line:unified-signatures unified-signatures
@@ -618,16 +673,23 @@ trait BootstrapCardView extends BootstrapGridBase {
   def sortBy(column: BootstrapCardViewColumn, sortOrder: String, reset: Boolean): Unit = js.native
    // tslint:disable-line:unified-signatures unified-signatures unified-signatures
   def sortBy(column: BootstrapCardViewColumn, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
+  
    // tslint:disable-line:unified-signatures unified-signatures unified-signatures
   def startEditCard(visibleIndex: Double): Unit = js.native
+  
   def startEditCardByKey(key: js.Any): Unit = js.native
+  
   def unselectAllCardsOnPage(): Unit = js.native
+  
   def unselectCardOnPage(visibleIndex: Double): Unit = js.native
+  
   def unselectCards(): Unit = js.native
+  
   def unselectCardsByKey(key: js.Any): Unit = js.native
   def unselectCardsByKey(keys: js.Array[_]): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def unselectFilteredCards(): Unit = js.native
+  
   def updateEdit(): Unit = js.native
 }
-

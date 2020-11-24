@@ -14,7 +14,7 @@ import typings.xrm.xrmStrings.timercontrol
 import typings.xrm.xrmStrings.webresource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Control types for {@link Controls.Control.getControlType Controls.Control.getControlType()}.
@@ -35,31 +35,41 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.quickform
 */
 trait StandardControlType extends js.Object
-
 object StandardControlType {
+  
   @scala.inline
   def IFrame: iframe = "iframe".asInstanceOf[iframe]
+  
   @scala.inline
   def KBSearch: kbsearch = "kbsearch".asInstanceOf[kbsearch]
+  
   @scala.inline
   def Lookup: lookup = "lookup".asInstanceOf[lookup]
+  
   @scala.inline
   def MultiSelectOptionSet: multiselectoptionset = "multiselectoptionset".asInstanceOf[multiselectoptionset]
+  
   @scala.inline
   def Notes: notes = "notes".asInstanceOf[notes]
+  
   @scala.inline
   def OptionSet: optionset = "optionset".asInstanceOf[optionset]
+  
   @scala.inline
   def QuickForm: quickform = "quickform".asInstanceOf[quickform]
+  
   @scala.inline
   def Standard: standard = "standard".asInstanceOf[standard]
+  
   @scala.inline
   def SubGrid: subgrid = "subgrid".asInstanceOf[subgrid]
+  
   @scala.inline
   def TimeLineWall: timelinewall = "timelinewall".asInstanceOf[timelinewall]
+  
   @scala.inline
   def TimerControl: timercontrol = "timercontrol".asInstanceOf[timercontrol]
+  
   @scala.inline
   def WebResource: webresource = "webresource".asInstanceOf[webresource]
 }
-

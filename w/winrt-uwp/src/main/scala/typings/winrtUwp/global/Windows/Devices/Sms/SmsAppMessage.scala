@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Devices.Sms
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The interface for manipulating an SMS Application message. Application messages are those which cannot be characterized as any other message type. */
 @JSGlobal("Windows.Devices.Sms.SmsAppMessage")
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 /** Constructor. Used to create an SmsAppMessage prior to sending it. */
 class SmsAppMessage ()
   extends typings.winrtUwp.Windows.Devices.Sms.SmsAppMessage
-

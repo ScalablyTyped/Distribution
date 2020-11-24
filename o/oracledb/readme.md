@@ -10,9 +10,9 @@ A Node.js module for Oracle Database access
 | ------------------ | :-------------: |
 | Full name          | oracledb |
 | Keywords           | Oracle, Database, official, DB, SQL, JSON, PL/SQL, OCI, API, client, library, driver, add-on, extension, binding, interface, adapter, module |
-| # releases         | 14 |
-| # dependents       | 130 |
-| # downloads        | 1027825 |
+| # releases         | 11 |
+| # dependents       | 161 |
+| # downloads        | 1376827 |
 | # stars            | 35 |
 
 ## Links

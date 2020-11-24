@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/translate/v2", "translate_v2.Resource$Translations")
 @js.native
 class ResourceTranslations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * language.translations.list
     * @desc Translates input text, returning translated text.
@@ -49,6 +51,7 @@ class ResourceTranslations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTranslationsListResponse]
   ): Unit = js.native
+  
   /**
     * language.translations.translate
     * @desc Translates input text, returning translated text.
@@ -81,4 +84,3 @@ class ResourceTranslations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTranslationsListResponse]
   ): Unit = js.native
 }
-

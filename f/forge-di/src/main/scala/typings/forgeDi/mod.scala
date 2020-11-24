@@ -6,11 +6,14 @@ import typings.forgeDi.configMod.Config
 import typings.forgeDi.constructorMod.Constructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-di", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def inject[T](hints: StringDictionary[String | Partialdefault]): js.Function1[/* target */ T, T] = js.native
+  
   @js.native
   class Binding protected ()
     extends typings.forgeDi.bindingMod.default {
@@ -54,6 +57,19 @@ object mod extends js.Object {
   }
   
   @js.native
+  object Mode extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.forgeDi.modeMod.Mode with String] = js.native
+    
+    /* "All" */ val All: typings.forgeDi.modeMod.Mode.All with String = js.native
+    
+    /* "AtLeastOne" */ val AtLeastOne: typings.forgeDi.modeMod.Mode.AtLeastOne with String = js.native
+    
+    /* "AtMostOne" */ val AtMostOne: typings.forgeDi.modeMod.Mode.AtMostOne with String = js.native
+  }
+  
+  @js.native
   class RegexInspector ()
     extends typings.forgeDi.regexInspectorMod.RegexInspector
   
@@ -92,16 +108,4 @@ object mod extends js.Object {
     extends typings.forgeDi.forgeMod.default {
     def this(config: Config) = this()
   }
-  
-  def inject[T](hints: StringDictionary[String | Partialdefault]): js.Function1[/* target */ T, T] = js.native
-  @js.native
-  object Mode extends js.Object {
-    /* "All" */ val All: typings.forgeDi.modeMod.Mode.All with String = js.native
-    /* "AtLeastOne" */ val AtLeastOne: typings.forgeDi.modeMod.Mode.AtLeastOne with String = js.native
-    /* "AtMostOne" */ val AtMostOne: typings.forgeDi.modeMod.Mode.AtMostOne with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.forgeDi.modeMod.Mode with String] = js.native
-  }
-  
 }
-

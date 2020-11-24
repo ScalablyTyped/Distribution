@@ -12,7 +12,7 @@ Get all but the last element or last n elements of an array.
 | Keywords           | array, fast, first, initial, javascript, js, last, rest, util, utility, utils |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 29320340 |
+| # downloads        | 37796814 |
 | # stars            | 0 |
 
 ## Links

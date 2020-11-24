@@ -3,7 +3,7 @@ package typings.twilioChat.userdescriptorMod
 import typings.twilioChat.userMod.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc Extended user information.
@@ -30,18 +30,26 @@ class UserDescriptor protected () extends js.Object {
     * @private
     */
   def this(services: UserDescriptorServices, descriptor: js.Any) = this()
-  val attributes: js.Any = js.native
-  var descriptor: js.Any = js.native
-  val friendlyName: String = js.native
-  val identity: String = js.native
-  val notifiable: Boolean = js.native
-  val online: Boolean = js.native
-  var services: js.Any = js.native
+  
   def _getDescriptor(): js.Any = js.native
+  
+  val attributes: js.Any = js.native
+  
+  var descriptor: js.Any = js.native
+  
+  val friendlyName: String = js.native
+  
+  val identity: String = js.native
+  
+  val notifiable: Boolean = js.native
+  
+  val online: Boolean = js.native
+  
+  var services: js.Any = js.native
+  
   /**
     * Gets User object from descriptor and subscribes to it.
     * @returns {Promise<User>}
     */
   def subscribe(): js.Promise[User] = js.native
 }
-

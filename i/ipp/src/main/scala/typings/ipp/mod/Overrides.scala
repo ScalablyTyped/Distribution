@@ -2,7 +2,7 @@ package typings.ipp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.ipp.ippStrings.`chamber-humidity`
@@ -96,4 +96,3 @@ import scala.scalajs.js.annotation._
   - typings.ipp.ippStrings.pages
 */
 trait Overrides extends js.Object
-

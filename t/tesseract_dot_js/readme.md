@@ -9,9 +9,9 @@ Pure Javascript Multilingual OCR
 | ------------------ | :-------------: |
 | Full name          | tesseract.js |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 30 |
-| # downloads        | 193384 |
+| # releases         | 33 |
+| # dependents       | 46 |
+| # downloads        | 518055 |
 | # stars            | 9 |
 
 ## Links

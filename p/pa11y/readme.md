@@ -10,9 +10,9 @@ Pa11y is your automated accessibility testing pal
 | ------------------ | :-------------: |
 | Full name          | pa11y |
 | Keywords           | accessibility, analysis, cli, report |
-| # releases         | 12 |
-| # dependents       | 29 |
-| # downloads        | 1046697 |
+| # releases         | 6 |
+| # dependents       | 36 |
+| # downloads        | 1472075 |
 | # stars            | 7 |
 
 ## Links

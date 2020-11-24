@@ -7,11 +7,12 @@ import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.PartialResultParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver-protocol/lib/protocol.configuration", "ConfigurationRequest")
 @js.native
 object ConfigurationRequest extends js.Object {
+  
   val `type`: ProtocolRequestType[
     ConfigurationParams with PartialResultParams, 
     js.Array[js.Any], 
@@ -19,7 +20,9 @@ object ConfigurationRequest extends js.Object {
     Unit, 
     Unit
   ] = js.native
+  
   type HandlerSignature = RequestHandler[ConfigurationParams, js.Array[js.Any], Unit]
+  
   type MiddlewareSignature = js.Function3[
     /* params */ ConfigurationParams, 
     /* token */ CancellationToken, 
@@ -27,4 +30,3 @@ object ConfigurationRequest extends js.Object {
     HandlerResult[js.Array[js.Any], Unit]
   ]
 }
-

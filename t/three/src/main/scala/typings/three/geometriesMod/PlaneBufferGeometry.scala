@@ -2,12 +2,18 @@ package typings.three.geometriesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/geometries/Geometries", "PlaneBufferGeometry")
 @js.native
+/**
+	 * @param [width=1] — Width of the sides on the X axis.
+	 * @param [height=1] — Height of the sides on the Y axis.
+	 * @param [widthSegments=1] — Number of segmented faces along the width of the sides.
+	 * @param [heightSegments=1] — Number of segmented faces along the height of the sides.
+	 */
 class PlaneBufferGeometry ()
-  extends typings.three.planeGeometryMod.PlaneBufferGeometry {
+  extends typings.three.planeBufferGeometryMod.PlaneBufferGeometry {
   def this(width: Double) = this()
   def this(width: js.UndefOr[scala.Nothing], height: Double) = this()
   def this(width: Double, height: Double) = this()
@@ -44,4 +50,3 @@ class PlaneBufferGeometry ()
   def this(width: Double, height: Double, widthSegments: js.UndefOr[scala.Nothing], heightSegments: Double) = this()
   def this(width: Double, height: Double, widthSegments: Double, heightSegments: Double) = this()
 }
-

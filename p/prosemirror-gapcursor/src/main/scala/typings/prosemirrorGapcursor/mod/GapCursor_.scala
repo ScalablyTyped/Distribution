@@ -3,10 +3,9 @@ package typings.prosemirrorGapcursor.mod
 import typings.prosemirrorState.mod.Selection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-gapcursor", "GapCursor")
 @js.native
 class GapCursor_ ()
   extends Selection[js.Any]
-

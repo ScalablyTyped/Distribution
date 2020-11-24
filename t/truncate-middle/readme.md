@@ -12,7 +12,7 @@ Truncates in the middle.
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 42097 |
+| # downloads        | 96538 |
 | # stars            | 4 |
 
 ## Links

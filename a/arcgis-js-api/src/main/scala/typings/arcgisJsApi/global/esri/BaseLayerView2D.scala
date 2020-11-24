@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.esri.BaseLayerView2DConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.BaseLayerView2D")
 @js.native
 object BaseLayerView2D extends TopLevel[BaseLayerView2DConstructor]
-

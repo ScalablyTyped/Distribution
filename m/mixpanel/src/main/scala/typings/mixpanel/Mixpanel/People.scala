@@ -3,10 +3,11 @@ package typings.mixpanel.Mixpanel
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait People extends js.Object {
+  
   def append(keys: StringDictionary[js.Any]): Unit = js.native
   def append(keys: StringDictionary[js.Any], callback: js.Function0[Unit]): Unit = js.native
   /**
@@ -30,6 +31,7 @@ trait People extends js.Object {
     */
   def append(prop: String, value: js.Any): Unit = js.native
   def append(prop: String, value: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Permanently clear all revenue report transactions from the
     * current user's people analytics profile.
@@ -42,6 +44,7 @@ trait People extends js.Object {
     */
   def clear_charges(): Unit = js.native
   def clear_charges(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Permanently deletes the current people analytics profile from
     * Mixpanel (using the current `distinct_id`).
@@ -53,6 +56,7 @@ trait People extends js.Object {
     *
     */
   def delete_user(): Unit = js.native
+  
   def increment(keys: StringDictionary[Double]): Unit = js.native
   def increment(keys: StringDictionary[Double], callback: js.Function0[Unit]): Unit = js.native
   /**
@@ -84,6 +88,7 @@ trait People extends js.Object {
   def increment(prop: String, value: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def increment(prop: String, value: Double): Unit = js.native
   def increment(prop: String, value: Double, callback: js.Function0[Unit]): Unit = js.native
+  
   def set(keys: StringDictionary[js.Any]): Unit = js.native
   def set(keys: StringDictionary[js.Any], callback: js.Function0[Unit]): Unit = js.native
   /**
@@ -107,6 +112,7 @@ trait People extends js.Object {
     */
   def set(prop: String, value: js.Any): Unit = js.native
   def set(prop: String, value: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  
   def set_once(keys: StringDictionary[js.Any]): Unit = js.native
   def set_once(keys: StringDictionary[js.Any], callback: js.Function0[Unit]): Unit = js.native
   /**
@@ -132,6 +138,7 @@ trait People extends js.Object {
     */
   def set_once(prop: String, value: js.Any): Unit = js.native
   def set_once(prop: String, value: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Record that you have charged the current user a certain amount
     * of money. Charges recorded with `track_charge()` will appear in the
@@ -155,6 +162,7 @@ trait People extends js.Object {
   def track_charge(amount: Double, properties: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def track_charge(amount: Double, properties: StringDictionary[js.Any]): Unit = js.native
   def track_charge(amount: Double, properties: StringDictionary[js.Any], callback: js.Function0[Unit]): Unit = js.native
+  
   def union(keys: StringDictionary[js.Any]): Unit = js.native
   def union(keys: StringDictionary[js.Any], callback: js.Function0[Unit]): Unit = js.native
   /**
@@ -185,6 +193,7 @@ trait People extends js.Object {
     */
   def union(prop: String, values: js.Any): Unit = js.native
   def union(prop: String, values: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Unset properties on a user record (permanently removes the properties and their values from a profile).
     *
@@ -203,4 +212,3 @@ trait People extends js.Object {
   def unset(prop: js.Array[String]): Unit = js.native
   def unset(prop: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
 }
-

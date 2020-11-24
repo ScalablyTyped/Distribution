@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.officeJs.Office.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Gets the Context object that represents the runtime environment of the add-in and provides access to the top-level objects of the API.
@@ -32,4 +32,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Office.context")
 @js.native
 object context extends TopLevel[Context]
-

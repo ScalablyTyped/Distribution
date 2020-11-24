@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ts-map" : "1.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ts-map" : "1.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

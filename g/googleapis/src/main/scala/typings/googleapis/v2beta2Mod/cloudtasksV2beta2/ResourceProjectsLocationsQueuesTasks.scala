@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudtasks/v2beta2", "cloudtasks_v2beta2.Resource$Projects$Locations$Queues$Tasks")
 @js.native
 class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.tasks.acknowledge
     * @desc Acknowledges a pull task.  The worker, that is, the entity that
@@ -107,6 +107,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.tasks.cancelLease
     * @desc Cancel a pull task's lease.  The worker can use this method to
@@ -201,6 +202,9 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTask]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.tasks.create
     * @desc Creates a task and adds it to a queue.  Tasks cannot be updated
@@ -295,6 +299,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTask]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.tasks.delete
     * @desc Deletes a task.  A task can be deleted if it is scheduled or
@@ -381,6 +386,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.tasks.get
     * @desc Gets a task.
@@ -466,6 +472,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTask]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.tasks.lease
     * @desc Leases tasks from a pull queue for lease_duration.  This method is
@@ -506,6 +513,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLeaseTasksResponse]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.tasks.list
     * @desc Lists the tasks in a queue.  By default, only the BASIC view is
@@ -613,6 +621,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListTasksResponse]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.tasks.renewLease
     * @desc Renew the current lease of a pull task.  The worker can use this
@@ -707,6 +716,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTask]
   ): Unit = js.native
+  
   /**
     * cloudtasks.projects.locations.queues.tasks.run
     * @desc Forces a task to run now.  When this method is called, Cloud Tasks
@@ -809,4 +819,3 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTask]
   ): Unit = js.native
 }
-

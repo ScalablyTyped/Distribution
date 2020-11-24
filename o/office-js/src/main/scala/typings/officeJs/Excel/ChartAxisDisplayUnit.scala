@@ -2,17 +2,17 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartAxisDisplayUnit extends js.Object
-
 /**
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartAxisDisplayUnit")
 @js.native
 object ChartAxisDisplayUnit extends js.Object {
+  
   /**
     * This will set the axis in units of billions.
     *
@@ -89,6 +89,4 @@ object ChartAxisDisplayUnit extends js.Object {
     */
   @js.native
   sealed trait trillions extends ChartAxisDisplayUnit
-  
 }
-

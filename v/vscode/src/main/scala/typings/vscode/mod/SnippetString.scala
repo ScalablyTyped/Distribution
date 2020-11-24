@@ -2,16 +2,13 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "SnippetString")
 @js.native
 class SnippetString () extends js.Object {
   def this(value: String) = this()
-  /**
-    * The snippet string.
-    */
-  var value: String = js.native
+  
   /**
     * Builder-function that appends a choice (`${1|a,b,c}`) to
     * the [`value`](#SnippetString.value) of this snippet string.
@@ -23,6 +20,7 @@ class SnippetString () extends js.Object {
     */
   def appendChoice(values: js.Array[String]): SnippetString = js.native
   def appendChoice(values: js.Array[String], number: Double): SnippetString = js.native
+  
   /**
     * Builder-function that appends a placeholder (`${1:value}`) to
     * the [`value`](#SnippetString.value) of this snippet string.
@@ -37,6 +35,7 @@ class SnippetString () extends js.Object {
   def appendPlaceholder(value: String, number: Double): SnippetString = js.native
   def appendPlaceholder(value: js.Function1[/* snippet */ this.type, _]): SnippetString = js.native
   def appendPlaceholder(value: js.Function1[/* snippet */ this.type, _], number: Double): SnippetString = js.native
+  
   /**
     * Builder-function that appends a tabstop (`$1`, `$2` etc) to
     * the [`value`](#SnippetString.value) of this snippet string.
@@ -47,6 +46,7 @@ class SnippetString () extends js.Object {
     */
   def appendTabstop(): SnippetString = js.native
   def appendTabstop(number: Double): SnippetString = js.native
+  
   /**
     * Builder-function that appends the given string to
     * the [`value`](#SnippetString.value) of this snippet string.
@@ -55,6 +55,7 @@ class SnippetString () extends js.Object {
     * @return This snippet string.
     */
   def appendText(string: String): SnippetString = js.native
+  
   /**
     * Builder-function that appends a variable (`${VAR}`) to
     * the [`value`](#SnippetString.value) of this snippet string.
@@ -66,5 +67,9 @@ class SnippetString () extends js.Object {
     */
   def appendVariable(name: String, defaultValue: String): SnippetString = js.native
   def appendVariable(name: String, defaultValue: js.Function1[/* snippet */ this.type, _]): SnippetString = js.native
+  
+  /**
+    * The snippet string.
+    */
+  var value: String = js.native
 }
-

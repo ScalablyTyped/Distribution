@@ -2,13 +2,14 @@ package typings.inversify.interfacesMod.interfaces
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ConstraintFunction
   extends js.Function {
-  var metaData: js.UndefOr[Metadata] = js.native
+  
   def apply(): Boolean = js.native
   def apply(request: Request): Boolean = js.native
+  
+  var metaData: js.UndefOr[Metadata] = js.native
 }
-

@@ -3,10 +3,11 @@ package typings.heremaps.H.util
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ICapturable extends js.Object {
+  
   /**
     * This method is used to capture the element view
     * @param canvas {HTMLCanvasElement} - HTML Canvas element to draw the view of the capturable element
@@ -26,4 +27,3 @@ trait ICapturable extends js.Object {
     opt_errback: js.Function1[/* error */ String, Unit]
   ): Unit = js.native
 }
-

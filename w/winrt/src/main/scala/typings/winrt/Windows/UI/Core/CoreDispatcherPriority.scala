@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.Core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CoreDispatcherPriority extends js.Object
-
 @JSGlobal("Windows.UI.Core.CoreDispatcherPriority")
 @js.native
 object CoreDispatcherPriority extends js.Object {
+  
   @js.native
   sealed trait high extends CoreDispatcherPriority
   
@@ -18,6 +18,4 @@ object CoreDispatcherPriority extends js.Object {
   
   @js.native
   sealed trait normal extends CoreDispatcherPriority
-  
 }
-

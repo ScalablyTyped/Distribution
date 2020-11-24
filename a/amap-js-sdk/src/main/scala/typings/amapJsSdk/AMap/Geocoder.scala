@@ -2,10 +2,11 @@ package typings.amapJsSdk.AMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Geocoder extends js.Object {
+  
   def getAddress(
     location: js.Array[LngLat],
     callback: js.Function2[
@@ -22,6 +23,7 @@ trait Geocoder extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def getLocation(address: String): Unit = js.native
   def getLocation(
     address: String,
@@ -31,6 +33,6 @@ trait Geocoder extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def setCity(city: String): Unit = js.native
 }
-

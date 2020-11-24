@@ -5,11 +5,12 @@ import typings.domHelpers.domHelpersStrings.transitionend
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dom-helpers/cjs/animate", JSImport.Default)
 @js.native
 object default_transitionend extends js.Object {
+  
   def apply(
     node: HTMLElement,
     properties: AnimateProperties,
@@ -24,4 +25,3 @@ object default_transitionend extends js.Object {
     callback: EventHandler[transitionend]
   ): Cancel = js.native
 }
-

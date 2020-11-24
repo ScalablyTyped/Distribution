@@ -5,22 +5,26 @@ import typings.std.ClientRect
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FlipMoveProps extends js.Object {
+  
   /**
     * Control the appear animation that runs when the component mounts. Works identically to enterAnimation below, but
     * only fires on the initial children.
     */
   var appearAnimation: js.UndefOr[AnimationProp] = js.native
+  
   var className: js.UndefOr[String] = js.native
+  
   /**
     * The length, in milliseconds, to wait before the animation begins.
     *
     * @default 0
     */
   var delay: js.UndefOr[Double | String] = js.native
+  
   /**
     * Sometimes, you may wish to temporarily disable the animations and have the normal behaviour resumed. Setting this
     * flag to true skips all animations.
@@ -28,18 +32,21 @@ trait FlipMoveProps extends js.Object {
     * @default false
     */
   var disableAllAnimations: js.UndefOr[Boolean] = js.native
+  
   /**
     * The length, in milliseconds, that the transition ought to take.
     *
     * @default 350
     */
   var duration: js.UndefOr[Double | String] = js.native
+  
   /**
     * Any valid CSS3 timing function (eg. "linear", "ease-in", "cubic-bezier(1, 0, 0, 1)").
     *
     * @default "ease-in-out"
     */
   var easing: js.UndefOr[String] = js.native
+  
   /**
     * Control the onEnter animation that runs when new items are added to the DOM.
     *
@@ -75,6 +82,7 @@ trait FlipMoveProps extends js.Object {
     * @default "elevator"
     */
   var enterAnimation: js.UndefOr[AnimationProp] = js.native
+  
   /**
     * This function is called with a DOM node as the only argument. It should return an object as specified by the
     * getBoundingClientRect() spec.
@@ -83,6 +91,7 @@ trait FlipMoveProps extends js.Object {
     * that is scaled using CSS. You can correct the values from getBoundingClientRect by using this prop.
     */
   var getPosition: js.UndefOr[js.Function1[/* node */ HTMLElement, ClientRect]] = js.native
+  
   /**
     * Control the onLeave animation that runs when new items are removed from the DOM.
     *
@@ -91,6 +100,7 @@ trait FlipMoveProps extends js.Object {
     * @default "elevator"
     */
   var leaveAnimation: js.UndefOr[AnimationProp] = js.native
+  
   /**
     * Do not collapse container height until after leaving animations complete.
     *
@@ -100,6 +110,7 @@ trait FlipMoveProps extends js.Object {
     * @default false
     */
   var maintainContainerHeight: js.UndefOr[Boolean] = js.native
+  
   /**
     * A callback to be invoked **once per child element** at the end of the animation.
     *
@@ -110,6 +121,7 @@ trait FlipMoveProps extends js.Object {
     * @param domNode       A reference to the unadulterated DOM node being animated.
     */
   var onFinish: js.UndefOr[js.Function2[/* childElement */ ReactElement, /* domNode */ HTMLElement, Unit]] = js.native
+  
   /**
     * A callback to be invoked **once per group** at the end of the animation.
     *
@@ -130,6 +142,7 @@ trait FlipMoveProps extends js.Object {
       Unit
     ]
   ] = js.native
+  
   /**
     * A callback to be invoked **once per child element** at the start of the animation.
     *
@@ -140,6 +153,7 @@ trait FlipMoveProps extends js.Object {
     * @param domNode       A reference to the unadulterated DOM node being animated.
     */
   var onStart: js.UndefOr[js.Function2[/* childElement */ ReactElement, /* domNode */ HTMLElement, Unit]] = js.native
+  
   /**
     * A callback to be invoked **once per group** at the start of the animation.
     *
@@ -161,6 +175,7 @@ trait FlipMoveProps extends js.Object {
       Unit
     ]
   ] = js.native
+  
   /**
     * The length, in milliseconds, to be added to the delay of each subsequent element.
     *
@@ -179,6 +194,7 @@ trait FlipMoveProps extends js.Object {
     * @default 0
     */
   var staggerDelayBy: js.UndefOr[Double | String] = js.native
+  
   /**
     * The length, in milliseconds, to be added to the duration of each subsequent element.
     *
@@ -194,7 +210,9 @@ trait FlipMoveProps extends js.Object {
     * @default 0
     */
   var staggerDurationBy: js.UndefOr[Double | String] = js.native
+  
   var style: js.UndefOr[Styles] = js.native
+  
   /**
     * Flip Move wraps your children in a container element. By default, this element is a div, but you may wish to
     * provide a custom HTML element (for example, if your children are list items, you may wish to set this to ul).
@@ -204,108 +222,150 @@ trait FlipMoveProps extends js.Object {
     * @default "div"
     */
   var typeName: js.UndefOr[String | Null] = js.native
+  
   /**
     * @default "top"
     */
   var verticalAlignment: js.UndefOr[String] = js.native
 }
-
 object FlipMoveProps {
+  
   @scala.inline
   def apply(): FlipMoveProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlipMoveProps]
   }
+  
   @scala.inline
   implicit class FlipMovePropsOps[Self <: FlipMoveProps] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAppearAnimation(value: AnimationProp): Self = this.set("appearAnimation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAppearAnimation: Self = this.set("appearAnimation", js.undefined)
+    
     @scala.inline
     def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteClassName: Self = this.set("className", js.undefined)
+    
     @scala.inline
     def setDelay(value: Double | String): Self = this.set("delay", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDelay: Self = this.set("delay", js.undefined)
+    
     @scala.inline
     def setDisableAllAnimations(value: Boolean): Self = this.set("disableAllAnimations", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDisableAllAnimations: Self = this.set("disableAllAnimations", js.undefined)
+    
     @scala.inline
     def setDuration(value: Double | String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDuration: Self = this.set("duration", js.undefined)
+    
     @scala.inline
     def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEasing: Self = this.set("easing", js.undefined)
+    
     @scala.inline
     def setEnterAnimation(value: AnimationProp): Self = this.set("enterAnimation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEnterAnimation: Self = this.set("enterAnimation", js.undefined)
+    
     @scala.inline
     def setGetPosition(value: /* node */ HTMLElement => ClientRect): Self = this.set("getPosition", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteGetPosition: Self = this.set("getPosition", js.undefined)
+    
     @scala.inline
     def setLeaveAnimation(value: AnimationProp): Self = this.set("leaveAnimation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLeaveAnimation: Self = this.set("leaveAnimation", js.undefined)
+    
     @scala.inline
     def setMaintainContainerHeight(value: Boolean): Self = this.set("maintainContainerHeight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaintainContainerHeight: Self = this.set("maintainContainerHeight", js.undefined)
+    
     @scala.inline
     def setOnFinish(value: (/* childElement */ ReactElement, /* domNode */ HTMLElement) => Unit): Self = this.set("onFinish", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteOnFinish: Self = this.set("onFinish", js.undefined)
+    
     @scala.inline
     def setOnFinishAll(value: (/* childElements */ js.Array[ReactElement], /* domNodes */ js.Array[HTMLElement]) => Unit): Self = this.set("onFinishAll", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteOnFinishAll: Self = this.set("onFinishAll", js.undefined)
+    
     @scala.inline
     def setOnStart(value: (/* childElement */ ReactElement, /* domNode */ HTMLElement) => Unit): Self = this.set("onStart", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteOnStart: Self = this.set("onStart", js.undefined)
+    
     @scala.inline
     def setOnStartAll(value: (/* childElements */ js.Array[ReactElement], /* domNodes */ js.Array[HTMLElement]) => Unit): Self = this.set("onStartAll", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteOnStartAll: Self = this.set("onStartAll", js.undefined)
+    
     @scala.inline
     def setStaggerDelayBy(value: Double | String): Self = this.set("staggerDelayBy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStaggerDelayBy: Self = this.set("staggerDelayBy", js.undefined)
+    
     @scala.inline
     def setStaggerDurationBy(value: Double | String): Self = this.set("staggerDurationBy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStaggerDurationBy: Self = this.set("staggerDurationBy", js.undefined)
+    
     @scala.inline
     def setStyle(value: Styles): Self = this.set("style", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStyle: Self = this.set("style", js.undefined)
+    
     @scala.inline
     def setTypeName(value: String): Self = this.set("typeName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTypeName: Self = this.set("typeName", js.undefined)
+    
     @scala.inline
     def setTypeNameNull: Self = this.set("typeName", null)
+    
     @scala.inline
     def setVerticalAlignment(value: String): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
   }
-  
 }
-

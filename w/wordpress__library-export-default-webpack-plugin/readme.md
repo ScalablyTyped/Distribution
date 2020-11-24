@@ -9,10 +9,10 @@ Webpack plugin for exporting default property for selected libraries.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/library-export-default-webpack-plugin |
-| Keywords           | wordpress, webpack, webpack-plugin |
-| # releases         | 17 |
+| Keywords           | wordpress, gutenberg, webpack, plugin, webpack-plugin, export |
+| # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 16755 |
+| # downloads        | 25640 |
 | # stars            | 0 |
 
 ## Links

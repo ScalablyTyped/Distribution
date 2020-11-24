@@ -5,11 +5,12 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cropperjs", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class default protected () extends Cropper {
     def this(element: HTMLCanvasElement) = this()
@@ -17,13 +18,12 @@ object mod extends js.Object {
     def this(element: HTMLCanvasElement, options: Options) = this()
     def this(element: HTMLImageElement, options: Options) = this()
   }
-  
   /* static members */
   @js.native
   object default extends js.Object {
+    
     def noConflict(): Cropper = js.native
+    
     def setDefaults(options: Options): Unit = js.native
   }
-  
 }
-

@@ -8,7 +8,7 @@ import typings.sawtoothSdk.protobufMod.IBatch
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.Batch")
 @js.native
@@ -20,11 +20,11 @@ class Batch ()
   extends typings.sawtoothSdk.protobufMod.Batch {
   def this(properties: IBatch) = this()
 }
-
 /* static members */
 @JSImport("sawtooth-sdk", "protobuf.Batch")
 @js.native
 object Batch extends js.Object {
+  
   /**
     * Creates a new Batch instance using the specified properties.
     * @param [properties] Properties to set
@@ -32,6 +32,7 @@ object Batch extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.Batch = js.native
   def create(properties: IBatch): typings.sawtoothSdk.protobufMod.Batch = js.native
+  
   /**
     * Decodes a Batch message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,6 +45,7 @@ object Batch extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.Batch = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Batch = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.Batch = js.native
+  
   /**
     * Decodes a Batch message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -53,6 +55,7 @@ object Batch extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.Batch = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Batch = js.native
+  
   /**
     * Encodes the specified Batch message. Does not implicitly {@link Batch.verify|verify} messages.
     * @param message Batch message or plain object to encode
@@ -61,6 +64,7 @@ object Batch extends js.Object {
     */
   def encode(message: IBatch): Writer = js.native
   def encode(message: IBatch, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified Batch message, length delimited. Does not implicitly {@link Batch.verify|verify} messages.
     * @param message Batch message or plain object to encode
@@ -69,12 +73,14 @@ object Batch extends js.Object {
     */
   def encodeDelimited(message: IBatch): Writer = js.native
   def encodeDelimited(message: IBatch, writer: Writer): Writer = js.native
+  
   /**
     * Creates a Batch message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns Batch
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.Batch = js.native
+  
   /**
     * Creates a plain object from a Batch message. Also converts values to other types if specified.
     * @param message Batch
@@ -83,6 +89,7 @@ object Batch extends js.Object {
     */
   def toObject(message: typings.sawtoothSdk.protobufMod.Batch): StringDictionary[js.Any] = js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.Batch, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a Batch message.
     * @param message Plain object to verify
@@ -90,4 +97,3 @@ object Batch extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

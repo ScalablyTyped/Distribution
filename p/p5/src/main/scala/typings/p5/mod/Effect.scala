@@ -2,10 +2,11 @@ package typings.p5.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Effect extends js.Object {
+  
   /**
     *   Set the output volume of the filter.
     *   @param [vol] amplitude between 0 and 1.0
@@ -22,6 +23,7 @@ trait Effect extends js.Object {
   def amp(vol: Double, rampTime: js.UndefOr[scala.Nothing], tFromNow: Double): Unit = js.native
   def amp(vol: Double, rampTime: Double): Unit = js.native
   def amp(vol: Double, rampTime: Double, tFromNow: Double): Unit = js.native
+  
   /**
     *   Link effects together in a chainExample usage:
     *   filter.chain(reverb, delay, panner); May be used
@@ -31,15 +33,18 @@ trait Effect extends js.Object {
     */
   def chain(): Unit = js.native
   def chain(arguments: js.Object): Unit = js.native
+  
   /**
     *   Send output to a p5.js-sound, Web Audio Node, or
     *   use signal to control an AudioParam
     */
   def connect(unit: js.Object): Unit = js.native
+  
   /**
     *   Disconnect all output.
     */
   def disconnect(): Unit = js.native
+  
   /**
     *   Adjust the dry/wet value.
     *   @param [fade] The desired drywet value (0 - 1.0)
@@ -47,4 +52,3 @@ trait Effect extends js.Object {
   def drywet(): Unit = js.native
   def drywet(fade: Double): Unit = js.native
 }
-

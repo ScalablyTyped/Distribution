@@ -2,7 +2,7 @@ package typings.androiduix.global.android.view.animation
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("android.view.animation.TranslateAnimation")
 @js.native
@@ -20,4 +20,3 @@ class TranslateAnimation protected ()
     toYValue: Double
   ) = this()
 }
-

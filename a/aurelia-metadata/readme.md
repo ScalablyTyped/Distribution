@@ -1,7 +1,7 @@
 
 # Scala.js typings for aurelia-metadata
 
-Typings are for version 1.0.6
+Typings are for version 1.0.7
 
 ## Library description:
 Utilities for reading and writing the metadata of JavaScript functions.
@@ -10,9 +10,9 @@ Utilities for reading and writing the metadata of JavaScript functions.
 | ------------------ | :-------------: |
 | Full name          | aurelia-metadata |
 | Keywords           | aurelia, metadata, annotations |
-| # releases         | 4 |
-| # dependents       | 55 |
-| # downloads        | 540412 |
+| # releases         | 3 |
+| # dependents       | 56 |
+| # downloads        | 544570 |
 | # stars            | 0 |
 
 ## Links

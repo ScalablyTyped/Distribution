@@ -2,7 +2,7 @@ package typings.babylonjs.materialsIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/index", "InputBlock")
 @js.native
@@ -18,8 +18,12 @@ class InputBlock protected ()
   def this(name: String, target: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets) = this()
   def this(
     name: String,
+    target: js.UndefOr[scala.Nothing],
+    `type`: typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes
+  ) = this()
+  def this(
+    name: String,
     target: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
     `type`: typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes
   ) = this()
 }
-

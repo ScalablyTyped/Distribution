@@ -3,7 +3,7 @@ package typings.babylonjs.babylonjsIndexMod
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/index", "MeshLODLevel")
 @js.native
@@ -21,4 +21,3 @@ class MeshLODLevel protected ()
   mesh: Nullable[typings.babylonjs.meshMod.Mesh]
   ) = this()
 }
-

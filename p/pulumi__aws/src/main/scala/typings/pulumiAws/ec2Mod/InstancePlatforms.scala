@@ -1,20 +1,34 @@
 package typings.pulumiAws.ec2Mod
 
-import typings.pulumiAws.instancePlatformMod.InstancePlatform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2", "InstancePlatforms")
 @js.native
 object InstancePlatforms extends js.Object {
-  val LinuxUnixPlatform: InstancePlatform = js.native
-  val RedHatEnterpriseLinuxPlatform: InstancePlatform = js.native
-  val SuseLinuxPlatform: InstancePlatform = js.native
-  val WindowsPlatform: InstancePlatform = js.native
-  val WindowsWithSqlServerEnterprisePlatform: InstancePlatform = js.native
-  val WindowsWithSqlServerPlatform: InstancePlatform = js.native
-  val WindowsWithSqlServerStandardPlatform: InstancePlatform = js.native
-  val WindowsWithSqlServerWebPlatform: InstancePlatform = js.native
+  
+  /** Use InstancePlatform.LinuxUnix instead. */
+  val LinuxUnixPlatform: typings.pulumiAws.enumsEc2Mod.InstancePlatform = js.native
+  
+  /** Use InstancePlatform.RedHatEnterpriseLinux instead. */
+  val RedHatEnterpriseLinuxPlatform: typings.pulumiAws.enumsEc2Mod.InstancePlatform = js.native
+  
+  /** Use InstancePlatform.SuseLinux instead. */
+  val SuseLinuxPlatform: typings.pulumiAws.enumsEc2Mod.InstancePlatform = js.native
+  
+  /** Use InstancePlatform.Windows instead. */
+  val WindowsPlatform: typings.pulumiAws.enumsEc2Mod.InstancePlatform = js.native
+  
+  /** Use InstancePlatform.WindowsWithSqlServerEnterprise instead. */
+  val WindowsWithSqlServerEnterprisePlatform: typings.pulumiAws.enumsEc2Mod.InstancePlatform = js.native
+  
+  /** Use InstancePlatform.WindowsWithSqlServer instead. */
+  val WindowsWithSqlServerPlatform: typings.pulumiAws.enumsEc2Mod.InstancePlatform = js.native
+  
+  /** Use InstancePlatform.WindowsWithSqlServerStandard instead. */
+  val WindowsWithSqlServerStandardPlatform: typings.pulumiAws.enumsEc2Mod.InstancePlatform = js.native
+  
+  /** Use InstancePlatform.WindowsWithSqlServerWeb instead. */
+  val WindowsWithSqlServerWebPlatform: typings.pulumiAws.enumsEc2Mod.InstancePlatform = js.native
 }
-

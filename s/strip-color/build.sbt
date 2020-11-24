@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "strip-color"
-version := "0.1-dt-20181231Z-b619ce"
+version := "0.1-dt-20181231Z-cb44cc"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

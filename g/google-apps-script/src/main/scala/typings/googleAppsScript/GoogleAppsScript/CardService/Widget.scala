@@ -2,7 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base class for all widgets that can be added to a Card.
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line: no-empty-interface
 @js.native
 trait Widget extends js.Object
-

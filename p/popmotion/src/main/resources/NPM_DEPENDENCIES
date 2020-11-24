@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "popmotion" : "8.7.3"
+      "popmotion" : "9.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "popmotion" : "8.7.3"
+      "popmotion" : "9.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -2,10 +2,12 @@ package typings.meteorUniverseI18n
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type Translator = js.Function1[/* repeated */ js.Any, java.lang.String]
+  
   type i18nLocaleEntry = js.Tuple7[
     java.lang.String, 
     java.lang.String, 

@@ -3,11 +3,13 @@ package typings.semanticUiTab.anon
 import typings.semanticUiTab.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-tab.SemanticUI.TabSettings._Impl, 'onFirstLoad'> */
 @js.native
 trait PickImplonFirstLoad extends js.Object {
+  
+  def onFirstLoad(tabPath: String, parameterArray: js.Array[_], historyEvent: js.Any): Unit = js.native
   @JSName("onFirstLoad")
   var onFirstLoad_Original: js.ThisFunction3[
     /* this */ JQuery, 
@@ -16,6 +18,4 @@ trait PickImplonFirstLoad extends js.Object {
     /* historyEvent */ js.Any, 
     Unit
   ] = js.native
-  def onFirstLoad(tabPath: String, parameterArray: js.Array[_], historyEvent: js.Any): Unit = js.native
 }
-

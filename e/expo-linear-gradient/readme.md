@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-linear-gradient
 
-Typings are for version 8.2.1
+Typings are for version 8.3.1
 
 ## Library description:
 Provides a React component that renders a gradient view.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for fastify-cors
 
-Typings are for version 2.1.3
+Typings are for version 4.1.0
 
 ## Library description:
 Fastify CORS
@@ -10,9 +10,9 @@ Fastify CORS
 | ------------------ | :-------------: |
 | Full name          | fastify-cors |
 | Keywords           | fastify, cors, headers, access, control |
-| # releases         | 12 |
-| # dependents       | 6 |
-| # downloads        | 65471 |
+| # releases         | 17 |
+| # dependents       | 61 |
+| # downloads        | 2938998 |
 | # stars            | 0 |
 
 ## Links
@@ -31,11 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Definitions by: Jannik Keye <https://github.com/jannikkeye>
-
-```
 

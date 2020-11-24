@@ -12,7 +12,7 @@ Angular $q decorator
 | Keywords           | angular, $q, promise, allSettled |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 61808 |
+| # downloads        | 28157 |
 | # stars            | 0 |
 
 ## Links

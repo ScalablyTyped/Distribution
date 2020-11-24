@@ -2,7 +2,7 @@ package typings.behavior3.b3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This action node returns `ERROR` always.
@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Error extends BaseNode
-
 object Error {
+  
   @scala.inline
   def apply(
     _close: Tick => Unit,
@@ -30,4 +30,3 @@ object Error {
     __obj.asInstanceOf[Error]
   }
 }
-

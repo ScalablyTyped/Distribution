@@ -2,7 +2,7 @@ package typings.pixiSpine.global.PIXI.spine.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PIXI.spine.core.Color")
 @js.native
@@ -29,17 +29,22 @@ class Color ()
   def this(r: Double, g: Double, b: js.UndefOr[scala.Nothing], a: Double) = this()
   def this(r: Double, g: Double, b: Double, a: Double) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.spine.core.Color")
 @js.native
 object Color extends js.Object {
+  
   var BLUE: typings.pixiSpine.PIXI.spine.core.Color = js.native
+  
   var GREEN: typings.pixiSpine.PIXI.spine.core.Color = js.native
+  
   var MAGENTA: typings.pixiSpine.PIXI.spine.core.Color = js.native
+  
   var RED: typings.pixiSpine.PIXI.spine.core.Color = js.native
+  
   var WHITE: typings.pixiSpine.PIXI.spine.core.Color = js.native
+  
   def rgb888ToColor(color: typings.pixiSpine.PIXI.spine.core.Color, value: Double): Unit = js.native
+  
   def rgba8888ToColor(color: typings.pixiSpine.PIXI.spine.core.Color, value: Double): Unit = js.native
 }
-

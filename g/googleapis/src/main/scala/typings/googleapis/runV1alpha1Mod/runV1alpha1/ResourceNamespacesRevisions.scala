@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/run/v1alpha1", "run_v1alpha1.Resource$Namespaces$Revisions")
 @js.native
 class ResourceNamespacesRevisions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * run.namespaces.revisions.delete
     * @desc Rpc to delete a revision.
@@ -45,6 +47,7 @@ class ResourceNamespacesRevisions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * run.namespaces.revisions.get
     * @desc Rpc to get information about a revision.
@@ -73,6 +76,7 @@ class ResourceNamespacesRevisions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRevision]
   ): Unit = js.native
+  
   /**
     * run.namespaces.revisions.list
     * @desc Rpc to list revisions.
@@ -112,4 +116,3 @@ class ResourceNamespacesRevisions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListRevisionsResponse]
   ): Unit = js.native
 }
-

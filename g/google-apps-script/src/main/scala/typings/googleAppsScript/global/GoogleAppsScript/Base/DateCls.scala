@@ -2,7 +2,7 @@ package typings.googleAppsScript.global.GoogleAppsScript.Base
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("GoogleAppsScript.Base.Date")
 @js.native
@@ -226,4 +226,3 @@ class DateCls ()
     ms: Double
   ) = this()
 }
-

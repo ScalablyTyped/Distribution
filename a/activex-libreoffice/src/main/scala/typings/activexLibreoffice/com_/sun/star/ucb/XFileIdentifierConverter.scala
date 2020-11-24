@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies methods to convert between (file) URLs and file paths in system dependent notation.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XFileIdentifierConverter extends XInterface {
+  
   /**
     * Get information about the "locality" of a file content provider.
     *
@@ -21,6 +22,7 @@ trait XFileIdentifierConverter extends XInterface {
     * @returns an appropriate value representing the "locality" of the specified file content provider. Generally, higher (non-negative) numbers denote file con
     */
   def getFileProviderLocality(BaseURL: String): Double = js.native
+  
   /**
     * converts a file path in system dependent notation to a (file) URL.
     * @param BaseURL the base (file) URL relative to which the file path shall be interpreted.
@@ -28,6 +30,7 @@ trait XFileIdentifierConverter extends XInterface {
     * @returns the URL corresponding to the file path, or an empty string if the file path cannot be converted into a URL.
     */
   def getFileURLFromSystemPath(BaseURL: String, SystemPath: String): String = js.native
+  
   /**
     * converts a (file) URL to a file path in system dependent notation.
     * @param URL a (file) URL.
@@ -35,8 +38,8 @@ trait XFileIdentifierConverter extends XInterface {
     */
   def getSystemPathFromFileURL(URL: String): String = js.native
 }
-
 object XFileIdentifierConverter {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -49,24 +52,29 @@ object XFileIdentifierConverter {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getFileProviderLocality = js.Any.fromFunction1(getFileProviderLocality), getFileURLFromSystemPath = js.Any.fromFunction2(getFileURLFromSystemPath), getSystemPathFromFileURL = js.Any.fromFunction1(getSystemPathFromFileURL), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XFileIdentifierConverter]
   }
+  
   @scala.inline
   implicit class XFileIdentifierConverterOps[Self <: XFileIdentifierConverter] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetFileProviderLocality(value: String => Double): Self = this.set("getFileProviderLocality", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetFileURLFromSystemPath(value: (String, String) => String): Self = this.set("getFileURLFromSystemPath", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetSystemPathFromFileURL(value: String => String): Self = this.set("getSystemPathFromFileURL", js.Any.fromFunction1(value))
   }
-  
 }
-

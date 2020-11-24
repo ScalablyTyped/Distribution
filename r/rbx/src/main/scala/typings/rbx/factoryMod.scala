@@ -13,12 +13,14 @@ import typings.std.Pick
 import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbx/base/helpers/factory", JSImport.Namespace)
 @js.native
 object factoryMod extends js.Object {
+  
   val makePropTypesFactory: MakePropTypesFactoryFunction = js.native
+  
   def makeRootValidatingTransformFactory[T /* <: js.Array[MakeValidatingTransformFunction[_, _]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param mvtfs because its type T is not an array type */ mvtfs: T
   ): js.Function1[
@@ -48,17 +50,23 @@ object factoryMod extends js.Object {
       ])
     ]
   ] = js.native
+  
   def makeValidatingTransformFactory[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */](
     makePropTypesFunc: MakePropTypesFunction,
     transformFunc: TransformFunction[TTransformProps, TNewProps]
   ): MakeValidatingTransformFunction[TTransformProps, TNewProps] = js.native
+  
   type ExtractTNewProps[T /* <: MakeValidatingTransformFunction[_, _] */] = js.Any
+  
   type ExtractTTransformProps[T /* <: MakeValidatingTransformFunction[_, _] */] = js.Any
+  
   type MakePropTypesFactoryFunction = js.Function1[
     /* makePropTypes */ js.Function1[/* variables */ VariablesDefinitions, ValidationMap[js.Any]], 
     MakePropTypesFunction
   ]
+  
   type MakePropTypesFunction = js.Function1[/* variables */ js.UndefOr[PartialVariablesDefinitio], ValidationMap[js.Any]]
+  
   type MakeValidatingTransformFunction[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] = js.Function1[
     /* variables */ js.UndefOr[VariablesDefinitions], 
     js.Function3[
@@ -68,6 +76,7 @@ object factoryMod extends js.Object {
       ReturnType[TransformFunction[TTransformProps, TNewProps]]
     ]
   ]
+  
   type TransformFunction[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] = js.Function1[
     /* props */ ClassName with Partial[TTransformProps], 
     (Omit[
@@ -75,6 +84,7 @@ object factoryMod extends js.Object {
       (/* keyof TTransformProps */ String) | className
     ]) with ClassName with TNewProps
   ]
+  
   type ValidatingTransformFunction[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] = js.Function3[
     /* props */ ClassName with Partial[TTransformProps], 
     /* componentName */ String, 
@@ -82,4 +92,3 @@ object factoryMod extends js.Object {
     ReturnType[TransformFunction[TTransformProps, TNewProps]]
   ]
 }
-

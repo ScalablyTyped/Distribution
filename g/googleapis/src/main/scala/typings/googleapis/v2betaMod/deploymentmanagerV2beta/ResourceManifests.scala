@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/deploymentmanager/v2beta", "deploymentmanager_v2beta.Resource$Manifests")
 @js.native
 class ResourceManifests protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * deploymentmanager.manifests.get
     * @desc Gets information about a specific manifest.
@@ -43,6 +45,7 @@ class ResourceManifests protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaManifest]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.manifests.list
     * @desc Lists all manifests for a given deployment.
@@ -77,4 +80,3 @@ class ResourceManifests protected () extends js.Object {
     callback: BodyResponseCallback[SchemaManifestsListResponse]
   ): Unit = js.native
 }
-

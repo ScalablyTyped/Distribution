@@ -15,11 +15,12 @@ import typings.node.childProcessMod.StdioNull
 import typings.node.childProcessMod.StdioPipe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cross-spawn", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply(command: String): ChildProcess = js.native
   def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnOptions): ChildProcess = js.native
   def apply(command: String, args: js.Array[String]): ChildProcess = js.native
@@ -29,12 +30,14 @@ object mod extends js.Object {
     * command line arguments in `args`. If omitted, `args` defaults to an empty array.
     */
   def apply(command: String, options: SpawnOptions): ChildProcess = js.native
+  
   /**
     * The `spawn()` method spawns a new process using the given `command`, with
     * command line arguments in `args`. If omitted, `args` defaults to an empty array.
     */
   @js.native
   object spawn extends js.Object {
+    
     def apply(command: String): ChildProcessWithoutNullStreams = js.native
     def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
     def apply(command: String, args: js.Array[String]): ChildProcessWithoutNullStreams = js.native
@@ -59,6 +62,7 @@ object mod extends js.Object {
     */
   @js.native
   object sync extends js.Object {
+    
     def apply(command: String): SpawnSyncReturns[Buffer] = js.native
     def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = js.native
     def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native
@@ -71,6 +75,4 @@ object mod extends js.Object {
     def apply(command: String, options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native
     def apply(command: String, options: SpawnSyncOptionsWithStringEncoding): SpawnSyncReturns[String] = js.native
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constants for mask implementations.
@@ -20,11 +20,15 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "MASK_TYPES")
 @js.native
 object MASK_TYPES extends js.Object {
-  /* 0 */ val NONE: typings.pixiJs.PIXI.MASK_TYPES.NONE with Double = js.native
-  /* 1 */ val SCISSOR: typings.pixiJs.PIXI.MASK_TYPES.SCISSOR with Double = js.native
-  /* 3 */ val SPRITE: typings.pixiJs.PIXI.MASK_TYPES.SPRITE with Double = js.native
-  /* 2 */ val STENCIL: typings.pixiJs.PIXI.MASK_TYPES.STENCIL with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.MASK_TYPES with Double] = js.native
+  
+  /* 0 */ val NONE: typings.pixiJs.PIXI.MASK_TYPES.NONE with Double = js.native
+  
+  /* 1 */ val SCISSOR: typings.pixiJs.PIXI.MASK_TYPES.SCISSOR with Double = js.native
+  
+  /* 3 */ val SPRITE: typings.pixiJs.PIXI.MASK_TYPES.SPRITE with Double = js.native
+  
+  /* 2 */ val STENCIL: typings.pixiJs.PIXI.MASK_TYPES.STENCIL with Double = js.native
 }
-

@@ -12,7 +12,7 @@ React Router v4 helper components
 | Keywords           | react-router, context, component |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 20776 |
+| # downloads        | 15815 |
 | # stars            | 0 |
 
 ## Links

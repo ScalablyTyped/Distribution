@@ -2,38 +2,63 @@ package typings.reactMdElevation.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait `0` extends js.Object {
+  
   var `0`: String = js.native
+  
   var `1`: String = js.native
+  
   var `10`: String = js.native
+  
   var `11`: String = js.native
+  
   var `12`: String = js.native
+  
   var `13`: String = js.native
+  
   var `14`: String = js.native
+  
   var `15`: String = js.native
+  
   var `16`: String = js.native
+  
   var `17`: String = js.native
+  
   var `18`: String = js.native
+  
   var `19`: String = js.native
+  
   var `2`: String = js.native
+  
   var `20`: String = js.native
+  
   var `21`: String = js.native
+  
   var `22`: String = js.native
+  
   var `23`: String = js.native
+  
   var `24`: String = js.native
+  
   var `3`: String = js.native
+  
   var `4`: String = js.native
+  
   var `5`: String = js.native
+  
   var `6`: String = js.native
+  
   var `7`: String = js.native
+  
   var `8`: String = js.native
+  
   var `9`: String = js.native
 }
-
 object `0` {
+  
   @scala.inline
   def apply(
     `0`: String,
@@ -90,68 +115,95 @@ object `0` {
     __obj.updateDynamic("9")(`9`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`]
   }
+  
   @scala.inline
   implicit class `0Ops`[Self <: `0`] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def set0(value: String): Self = this.set("0", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set1(value: String): Self = this.set("1", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set10(value: String): Self = this.set("10", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set11(value: String): Self = this.set("11", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set12(value: String): Self = this.set("12", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set13(value: String): Self = this.set("13", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set14(value: String): Self = this.set("14", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set15(value: String): Self = this.set("15", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set16(value: String): Self = this.set("16", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set17(value: String): Self = this.set("17", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set18(value: String): Self = this.set("18", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set19(value: String): Self = this.set("19", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set2(value: String): Self = this.set("2", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set20(value: String): Self = this.set("20", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set21(value: String): Self = this.set("21", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set22(value: String): Self = this.set("22", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set23(value: String): Self = this.set("23", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set24(value: String): Self = this.set("24", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set3(value: String): Self = this.set("3", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set4(value: String): Self = this.set("4", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set5(value: String): Self = this.set("5", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set6(value: String): Self = this.set("6", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set7(value: String): Self = this.set("7", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set8(value: String): Self = this.set("8", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def set9(value: String): Self = this.set("9", value.asInstanceOf[js.Any])
   }
-  
 }
-

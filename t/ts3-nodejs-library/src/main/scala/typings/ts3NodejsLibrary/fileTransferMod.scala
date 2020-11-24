@@ -3,11 +3,12 @@ package typings.ts3NodejsLibrary
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ts3-nodejs-library/lib/transport/FileTransfer", JSImport.Namespace)
 @js.native
 object fileTransferMod extends js.Object {
+  
   @js.native
   class FileTransfer protected () extends js.Object {
     /**
@@ -20,23 +21,31 @@ object fileTransferMod extends js.Object {
     def this(host: String, port: Double) = this()
     def this(host: String, port: js.UndefOr[scala.Nothing], timeout: Double) = this()
     def this(host: String, port: Double, timeout: Double) = this()
+    
     var buffer: js.Any = js.native
+    
     var bytesreceived: js.Any = js.native
-    var host: js.Any = js.native
-    /**
-      * connects to the File Transfer Server
-      * @param ftkey the Filetransfer Key
-      * @returns returns a Promise Object with the socket
-      */
-    var init: js.Any = js.native
-    var port: js.Any = js.native
-    var timeout: js.Any = js.native
+    
     /**
       * Starts the download of a File
       * @param ftkey the Filetransfer Key
       * @param size the Data Length
       */
     def download(ftkey: String, size: Double): js.Promise[Buffer] = js.native
+    
+    var host: js.Any = js.native
+    
+    /**
+      * connects to the File Transfer Server
+      * @param ftkey the Filetransfer Key
+      * @returns returns a Promise Object with the socket
+      */
+    var init: js.Any = js.native
+    
+    var port: js.Any = js.native
+    
+    var timeout: js.Any = js.native
+    
     /**
       * starts the upload of a File
       * @param ftkey the Filetransfer Key
@@ -45,6 +54,4 @@ object fileTransferMod extends js.Object {
     def upload(ftkey: String, data: String): js.Promise[Unit] = js.native
     def upload(ftkey: String, data: Buffer): js.Promise[Unit] = js.native
   }
-  
 }
-

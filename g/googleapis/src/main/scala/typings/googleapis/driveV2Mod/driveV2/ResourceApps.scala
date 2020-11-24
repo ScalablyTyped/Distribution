@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Apps")
 @js.native
 class ResourceApps protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * drive.apps.get
     * @desc Gets a specific app.
@@ -37,6 +39,7 @@ class ResourceApps protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceAppsGet, options: MethodOptions): GaxiosPromise[SchemaApp] = js.native
   def get(params: ParamsResourceAppsGet, options: MethodOptions, callback: BodyResponseCallback[SchemaApp]): Unit = js.native
+  
   /**
     * drive.apps.list
     * @desc Lists a user's installed apps.
@@ -68,4 +71,3 @@ class ResourceApps protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAppList]
   ): Unit = js.native
 }
-

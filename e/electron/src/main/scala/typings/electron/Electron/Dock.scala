@@ -4,11 +4,12 @@ import typings.electron.electronStrings.critical
 import typings.electron.electronStrings.informational
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Dock extends js.Object {
-  // Docs: http://electronjs.org/docs/api/dock
+  
+  // Docs: https://electronjs.org/docs/api/dock
   /**
     * an ID representing the request.
     *
@@ -29,48 +30,56 @@ trait Dock extends js.Object {
   def bounce_critical(`type`: critical): Double = js.native
   @JSName("bounce")
   def bounce_informational(`type`: informational): Double = js.native
+  
   /**
     * Cancel the bounce of `id`.
     *
     * @platform darwin
     */
   def cancelBounce(id: Double): Unit = js.native
+  
   /**
     * Bounces the Downloads stack if the filePath is inside the Downloads folder.
     *
     * @platform darwin
     */
   def downloadFinished(filePath: String): Unit = js.native
+  
   /**
     * The badge string of the dock.
     *
     * @platform darwin
     */
   def getBadge(): String = js.native
+  
   /**
     * The application's [dock menu][dock-menu].
     *
     * @platform darwin
     */
   def getMenu(): Menu | Null = js.native
+  
   /**
     * Hides the dock icon.
     *
     * @platform darwin
     */
   def hide(): Unit = js.native
+  
   /**
     * Whether the dock icon is visible.
     *
     * @platform darwin
     */
   def isVisible(): Boolean = js.native
+  
   /**
     * Sets the string to be displayed in the dock’s badging area.
     *
     * @platform darwin
     */
   def setBadge(text: String): Unit = js.native
+  
   def setIcon(image: String): Unit = js.native
   /**
     * Sets the `image` associated with this dock icon.
@@ -78,12 +87,14 @@ trait Dock extends js.Object {
     * @platform darwin
     */
   def setIcon(image: NativeImage_): Unit = js.native
+  
   /**
     * Sets the application's [dock menu][dock-menu].
     *
     * @platform darwin
     */
   def setMenu(menu: Menu): Unit = js.native
+  
   /**
     * Resolves when the dock icon is shown.
     *
@@ -91,4 +102,3 @@ trait Dock extends js.Object {
     */
   def show(): js.Promise[Unit] = js.native
 }
-

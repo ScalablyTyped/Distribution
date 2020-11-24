@@ -3,11 +3,12 @@ package typings.winrt.global.Windows.ApplicationModel.Resources
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.ApplicationModel.Resources.Core")
 @js.native
 object Core extends js.Object {
+  
   @js.native
   class NamedResource ()
     extends typings.winrt.Windows.ApplicationModel.Resources.Core.NamedResource
@@ -23,6 +24,12 @@ object Core extends js.Object {
   @js.native
   class ResourceContext ()
     extends typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceContext
+  /* static members */
+  @js.native
+  object ResourceContext extends js.Object {
+    
+    def createMatchingContext(result: IIterable[typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceQualifier]): typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceContext = js.native
+  }
   
   @js.native
   class ResourceContextLanguagesVectorView ()
@@ -31,6 +38,14 @@ object Core extends js.Object {
   @js.native
   class ResourceManager ()
     extends typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceManager
+  /* static members */
+  @js.native
+  object ResourceManager extends js.Object {
+    
+    var current: typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceManager = js.native
+    
+    def isResourceReference(resourceReference: String): Boolean = js.native
+  }
   
   @js.native
   class ResourceMap ()
@@ -63,19 +78,4 @@ object Core extends js.Object {
   @js.native
   class ResourceQualifierVectorView ()
     extends typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceQualifierVectorView
-  
-  /* static members */
-  @js.native
-  object ResourceContext extends js.Object {
-    def createMatchingContext(result: IIterable[typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceQualifier]): typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceContext = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object ResourceManager extends js.Object {
-    var current: typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceManager = js.native
-    def isResourceReference(resourceReference: String): Boolean = js.native
-  }
-  
 }
-

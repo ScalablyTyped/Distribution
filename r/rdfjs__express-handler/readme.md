@@ -10,9 +10,9 @@ Handle incoming and outgoing RDF data in Express
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/express-handler |
 | Keywords           | rdf, rdfjs, express, parser, serializer |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 226 |
+| # releases         | 7 |
+| # dependents       | 1 |
+| # downloads        | 1014 |
 | # stars            | 0 |
 
 ## Links

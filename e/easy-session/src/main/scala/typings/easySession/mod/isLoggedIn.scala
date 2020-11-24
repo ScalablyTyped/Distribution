@@ -5,12 +5,12 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("easy-session", "isLoggedIn")
 @js.native
 object isLoggedIn extends js.Object {
+  
   def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  def apply(errorCallback: js.Function): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def apply(errorCallback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
-

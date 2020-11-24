@@ -3,7 +3,7 @@ package typings.ddTrace.mod.plugins
 import typings.ddTrace.mod.Analyzable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This plugin automatically instruments the
@@ -13,12 +13,11 @@ import scala.scalajs.js.annotation._
 trait mongodbCore
   extends Integration
      with Analyzable
-
 object mongodbCore {
+  
   @scala.inline
   def apply(): mongodbCore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[mongodbCore]
   }
 }
-

@@ -10,9 +10,9 @@ Normalize slashes in a file path to be posix/unix-like forward slashes. Also con
 | ------------------ | :-------------: |
 | Full name          | normalize-path |
 | Keywords           | absolute, backslash, delimiter, file, file-path, filepath, fix, forward, fp, fs, normalize, path, relative, separator, slash, slashes, trailing, unix, urix |
-| # releases         | 2 |
-| # dependents       | 281 |
-| # downloads        | 718511838 |
+| # releases         | 0 |
+| # dependents       | 372 |
+| # downloads        | 1081877601 |
 | # stars            | 4 |
 
 ## Links

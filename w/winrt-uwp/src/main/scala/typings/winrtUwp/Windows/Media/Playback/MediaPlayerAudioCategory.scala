@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Playback
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MediaPlayerAudioCategory extends js.Object
-
 /** Specifies the types of audio that can be played by a media player. */
 @JSGlobal("Windows.Media.Playback.MediaPlayerAudioCategory")
 @js.native
 object MediaPlayerAudioCategory extends js.Object {
+  
   /** The audio is used for alerts. */
   @js.native
   sealed trait alerts extends MediaPlayerAudioCategory
@@ -50,6 +50,4 @@ object MediaPlayerAudioCategory extends js.Object {
   /** The audio is used for speech. */
   @js.native
   sealed trait speech extends MediaPlayerAudioCategory
-  
 }
-

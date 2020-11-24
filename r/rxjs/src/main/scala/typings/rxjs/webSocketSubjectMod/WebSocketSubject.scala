@@ -6,7 +6,7 @@ import typings.rxjs.subjectMod.Subject
 import typings.rxjs.typesMod.Observer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/observable/dom/WebSocketSubject", "WebSocketSubject")
 @js.native
@@ -17,12 +17,18 @@ class WebSocketSubject[T] protected () extends AnonymousSubject[T] {
   def this(urlConfigOrSource: String, destination: Observer[T]) = this()
   def this(urlConfigOrSource: Observable[T], destination: Observer[T]) = this()
   def this(urlConfigOrSource: WebSocketSubjectConfig[T], destination: Observer[T]) = this()
+  
   var _config: js.Any = js.native
+  
   var _connectSocket: js.Any = js.native
+  
   /** @deprecated This is an internal implementation detail, do not use. */
   var _output: Subject[T] = js.native
+  
   var _resetState: js.Any = js.native
+  
   var _socket: js.Any = js.native
+  
   /**
     * Creates an {@link Observable}, that when subscribed to, sends a message,
     * defined by the `subMsg` function, to the server over the socket to begin a
@@ -47,4 +53,3 @@ class WebSocketSubject[T] protected () extends AnonymousSubject[T] {
     messageFilter: js.Function1[/* value */ T, Boolean]
   ): Observable[_] = js.native
 }
-

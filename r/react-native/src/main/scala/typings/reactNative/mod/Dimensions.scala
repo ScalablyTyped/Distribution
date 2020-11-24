@@ -8,10 +8,11 @@ import typings.reactNative.reactNativeStrings.screen
 import typings.reactNative.reactNativeStrings.window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Dimensions extends js.Object {
+  
   /**
     * Add an event listener for dimension changes
     *
@@ -20,6 +21,7 @@ trait Dimensions extends js.Object {
     */
   @JSName("addEventListener")
   def addEventListener_change(`type`: change, handler: js.Function1[/* hasWindowScreen */ Screen, Unit]): Unit = js.native
+  
   @JSName("get")
   def get_screen(dim: screen): ScaledSize = js.native
   /**
@@ -38,6 +40,7 @@ trait Dimensions extends js.Object {
     */
   @JSName("get")
   def get_window(dim: window): ScaledSize = js.native
+  
   /**
     * Remove an event listener
     *
@@ -46,14 +49,13 @@ trait Dimensions extends js.Object {
     */
   @JSName("removeEventListener")
   def removeEventListener_change(`type`: change, handler: js.Function1[/* hasWindowScreen */ Screen, Unit]): Unit = js.native
+  
   /**
     * This should only be called from native code by sending the didUpdateDimensions event.
     * @param dims Simple string-keyed object of dimensions to set
     */
   def set(dims: StringDictionary[js.Any]): Unit = js.native
 }
-
 @JSImport("react-native", "Dimensions")
 @js.native
 object Dimensions extends TopLevel[Dimensions]
-

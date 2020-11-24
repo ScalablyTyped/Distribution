@@ -10,9 +10,9 @@ API Telemetry and APM. Trace API calls and Monitor API performance, health and u
 | ------------------ | :-------------: |
 | Full name          | swagger-stats |
 | Keywords           | api, observability, telemetry, node, express, koa, hapi, fastify, rest, statistics, monitoring, alerting, swagger, openapi, schema, prometheus, metrics, elasticsearch, kibana, grafana |
-| # releases         | 8 |
-| # dependents       | 6 |
-| # downloads        | 248853 |
+| # releases         | 9 |
+| # dependents       | 8 |
+| # downloads        | 453413 |
 | # stars            | 2 |
 
 ## Links

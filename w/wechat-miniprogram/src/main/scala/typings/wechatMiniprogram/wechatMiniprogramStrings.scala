@@ -4,9 +4,646 @@ import typings.wechatMiniprogram.DB.DataType
 import typings.wechatMiniprogram.DB.QueueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wechatMiniprogramStrings {
+  
+  @scala.inline
+  def `2g`: `2g` = "2g".asInstanceOf[`2g`]
+  
+  @scala.inline
+  def `3g`: `3g` = "3g".asInstanceOf[`3g`]
+  
+  @scala.inline
+  def `4g`: `4g` = "4g".asInstanceOf[`4g`]
+  
+  @scala.inline
+  def `5g`: `5g` = "5g".asInstanceOf[`5g`]
+  
+  @scala.inline
+  def AZTEC: AZTEC = "AZTEC".asInstanceOf[AZTEC]
+  
+  @scala.inline
+  def CODABAR: CODABAR = "CODABAR".asInstanceOf[CODABAR]
+  
+  @scala.inline
+  def CODE_128: CODE_128 = "CODE_128".asInstanceOf[CODE_128]
+  
+  @scala.inline
+  def CODE_25: CODE_25 = "CODE_25".asInstanceOf[CODE_25]
+  
+  @scala.inline
+  def CODE_39: CODE_39 = "CODE_39".asInstanceOf[CODE_39]
+  
+  @scala.inline
+  def CODE_93: CODE_93 = "CODE_93".asInstanceOf[CODE_93]
+  
+  @scala.inline
+  def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
+  
+  @scala.inline
+  def DATA_MATRIX: DATA_MATRIX = "DATA_MATRIX".asInstanceOf[DATA_MATRIX]
+  
+  @scala.inline
+  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  
+  @scala.inline
+  def EAN_13: EAN_13 = "EAN_13".asInstanceOf[EAN_13]
+  
+  @scala.inline
+  def EAN_8: EAN_8 = "EAN_8".asInstanceOf[EAN_8]
+  
+  @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
+  
+  @scala.inline
+  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  
+  @scala.inline
+  def `HMAC-SHA256`: `HMAC-SHA256` = "HMAC-SHA256".asInstanceOf[`HMAC-SHA256`]
+  
+  @scala.inline
+  def ITF: ITF = "ITF".asInstanceOf[ITF]
+  
+  @scala.inline
+  def LineString: LineString = "LineString".asInstanceOf[LineString]
+  
+  @scala.inline
+  def MAXICODE: MAXICODE = "MAXICODE".asInstanceOf[MAXICODE]
+  
+  @scala.inline
+  def MD5: MD5 = "MD5".asInstanceOf[MD5]
+  
+  @scala.inline
+  def MultiLineString: MultiLineString = "MultiLineString".asInstanceOf[MultiLineString]
+  
+  @scala.inline
+  def MultiPoint: MultiPoint = "MultiPoint".asInstanceOf[MultiPoint]
+  
+  @scala.inline
+  def MultiPolygon: MultiPolygon = "MultiPolygon".asInstanceOf[MultiPolygon]
+  
+  @scala.inline
+  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  
+  @scala.inline
+  def Optional: Optional = "Optional".asInstanceOf[Optional]
+  
+  @scala.inline
+  def OptionalInterface: OptionalInterface = "OptionalInterface".asInstanceOf[OptionalInterface]
+  
+  @scala.inline
+  def PCM: PCM = "PCM".asInstanceOf[PCM]
+  
+  @scala.inline
+  def PDF_417: PDF_417 = "PDF_417".asInstanceOf[PDF_417]
+  
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
+  
+  @scala.inline
+  def PUT: PUT = "PUT".asInstanceOf[PUT]
+  
+  @scala.inline
+  def Point: Point = "Point".asInstanceOf[Point]
+  
+  @scala.inline
+  def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
+  
+  @scala.inline
+  def PropertyOptionToData: PropertyOptionToData = "PropertyOptionToData".asInstanceOf[PropertyOptionToData]
+  
+  @scala.inline
+  def QR_CODE: QR_CODE = "QR_CODE".asInstanceOf[QR_CODE]
+  
+  @scala.inline
+  def RSA: RSA = "RSA".asInstanceOf[RSA]
+  
+  @scala.inline
+  def RSS_14: RSS_14 = "RSS_14".asInstanceOf[RSS_14]
+  
+  @scala.inline
+  def RSS_EXPANDED: RSS_EXPANDED = "RSS_EXPANDED".asInstanceOf[RSS_EXPANDED]
+  
+  @scala.inline
+  def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
+  
+  @scala.inline
+  def UPC_A: UPC_A = "UPC_A".asInstanceOf[UPC_A]
+  
+  @scala.inline
+  def UPC_E: UPC_E = "UPC_E".asInstanceOf[UPC_E]
+  
+  @scala.inline
+  def UPC_EAN_EXTENSION: UPC_EAN_EXTENSION = "UPC_EAN_EXTENSION".asInstanceOf[UPC_EAN_EXTENSION]
+  
+  @scala.inline
+  def WX_CODE: WX_CODE = "WX_CODE".asInstanceOf[WX_CODE]
+  
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @scala.inline
+  def aac: aac = "aac".asInstanceOf[aac]
+  
+  @scala.inline
+  def accumulate: accumulate = "accumulate".asInstanceOf[accumulate]
+  
+  @scala.inline
+  def add: add = "add".asInstanceOf[add]
+  
+  @scala.inline
+  def album: album = "album".asInstanceOf[album]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def ancestor: ancestor = "ancestor".asInstanceOf[ancestor]
+  
+  @scala.inline
+  def `apply-shared`: `apply-shared` = "apply-shared".asInstanceOf[`apply-shared`]
+  
+  @scala.inline
+  def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
+  
+  @scala.inline
+  def ascii: ascii = "ascii".asInstanceOf[ascii]
+  
+  @scala.inline
+  def audio: audio = "audio".asInstanceOf[audio]
+  
+  @scala.inline
+  def audioBitrate: audioBitrate = "audioBitrate".asInstanceOf[audioBitrate]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def autoplay: autoplay = "autoplay".asInstanceOf[autoplay]
+  
+  @scala.inline
+  def back: back = "back".asInstanceOf[back]
+  
+  @scala.inline
+  def barCode: barCode = "barCode".asInstanceOf[barCode]
+  
+  @scala.inline
+  def base64: base64 = "base64".asInstanceOf[base64]
+  
+  @scala.inline
+  def begin: begin = "begin".asInstanceOf[begin]
+  
+  @scala.inline
+  def bevel: bevel = "bevel".asInstanceOf[bevel]
+  
+  @scala.inline
+  def binary: binary = "binary".asInstanceOf[binary]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def bufferchange: bufferchange = "bufferchange".asInstanceOf[bufferchange]
+  
+  @scala.inline
+  def buildInMic: buildInMic = "buildInMic".asInstanceOf[buildInMic]
+  
+  @scala.inline
+  def bullet: bullet = "bullet".asInstanceOf[bullet]
+  
+  @scala.inline
+  def butt: butt = "butt".asInstanceOf[butt]
+  
+  @scala.inline
+  def button: button = "button".asInstanceOf[button]
+  
+  @scala.inline
+  def camcorder: camcorder = "camcorder".asInstanceOf[camcorder]
+  
+  @scala.inline
+  def camera: camera = "camera".asInstanceOf[camera]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def central: central = "central".asInstanceOf[central]
+  
+  @scala.inline
+  def checked: checked = "checked".asInstanceOf[checked]
+  
+  @scala.inline
+  def child: child = "child".asInstanceOf[child]
+  
+  @scala.inline
+  def complete: complete = "complete".asInstanceOf[complete]
+  
+  @scala.inline
+  def compressed: compressed = "compressed".asInstanceOf[compressed]
+  
+  @scala.inline
+  def dark: dark = "dark".asInstanceOf[dark]
+  
+  @scala.inline
+  def datamatrix: datamatrix = "datamatrix".asInstanceOf[datamatrix]
+  
+  @scala.inline
+  def del: del = "del".asInstanceOf[del]
+  
+  @scala.inline
+  def dequeue: dequeue = "dequeue".asInstanceOf[dequeue]
+  
+  @scala.inline
+  def descendant: descendant = "descendant".asInstanceOf[descendant]
+  
+  @scala.inline
+  def develop: develop = "develop".asInstanceOf[develop]
+  
+  @scala.inline
+  def doc: doc = "doc".asInstanceOf[doc]
+  
+  @scala.inline
+  def docx: docx = "docx".asInstanceOf[docx]
+  
+  @scala.inline
+  def down: down = "down".asInstanceOf[down]
+  
+  @scala.inline
+  def `down-mirrored`: `down-mirrored` = "down-mirrored".asInstanceOf[`down-mirrored`]
+  
+  @scala.inline
+  def drag: drag = "drag".asInstanceOf[drag]
+  
+  @scala.inline
+  def ease: ease = "ease".asInstanceOf[ease]
+  
+  @scala.inline
+  def `ease-in`: `ease-in` = "ease-in".asInstanceOf[`ease-in`]
+  
+  @scala.inline
+  def `ease-in-out`: `ease-in-out` = "ease-in-out".asInstanceOf[`ease-in-out`]
+  
+  @scala.inline
+  def `ease-out`: `ease-out` = "ease-out".asInstanceOf[`ease-out`]
+  
+  @scala.inline
+  def easeIn: easeIn = "easeIn".asInstanceOf[easeIn]
+  
+  @scala.inline
+  def easeInOut: easeInOut = "easeInOut".asInstanceOf[easeInOut]
+  
+  @scala.inline
+  def easeOut: easeOut = "easeOut".asInstanceOf[easeOut]
+  
+  @scala.inline
+  def em: em = "em".asInstanceOf[em]
+  
+  @scala.inline
+  def en: en = "en".asInstanceOf[en]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def ended: ended = "ended".asInstanceOf[ended]
+  
+  @scala.inline
+  def enqueue: enqueue = "enqueue".asInstanceOf[enqueue]
+  
+  @scala.inline
+  def facial: facial = "facial".asInstanceOf[facial]
+  
+  @scala.inline
+  def fail: fail = "fail".asInstanceOf[fail]
+  
+  @scala.inline
+  def file: file = "file".asInstanceOf[file]
+  
+  @scala.inline
+  def filePath: filePath = "filePath".asInstanceOf[filePath]
+  
+  @scala.inline
+  def fingerPrint: fingerPrint = "fingerPrint".asInstanceOf[fingerPrint]
+  
+  @scala.inline
+  def friction: friction = "friction".asInstanceOf[friction]
+  
+  @scala.inline
+  def front: front = "front".asInstanceOf[front]
+  
+  @scala.inline
+  def game: game = "game".asInstanceOf[game]
+  
+  @scala.inline
+  def gesture: gesture = "gesture".asInstanceOf[gesture]
+  
+  @scala.inline
+  def headsetMic: headsetMic = "headsetMic".asInstanceOf[headsetMic]
+  
+  @scala.inline
+  def hex: hex = "hex".asInstanceOf[hex]
+  
+  @scala.inline
+  def high: high = "high".asInstanceOf[high]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def image: image = "image".asInstanceOf[image]
+  
+  @scala.inline
+  def init: init = "init".asInstanceOf[init]
+  
+  @scala.inline
+  def isolated: isolated = "isolated".asInstanceOf[isolated]
+  
+  @scala.inline
+  def jpg: jpg = "jpg".asInstanceOf[jpg]
+  
+  @scala.inline
+  def json: json = "json".asInstanceOf[json]
+  
+  @scala.inline
+  def justify: justify = "justify".asInstanceOf[justify]
+  
+  @scala.inline
+  def latin1: latin1 = "latin1".asInstanceOf[latin1]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def `left-mirrored`: `left-mirrored` = "left-mirrored".asInstanceOf[`left-mirrored`]
+  
+  @scala.inline
+  def light: light = "light".asInstanceOf[light]
+  
+  @scala.inline
+  def limit: limit = "limit".asInstanceOf[limit]
+  
+  @scala.inline
+  def linear: linear = "linear".asInstanceOf[linear]
+  
+  @scala.inline
+  def loading: loading = "loading".asInstanceOf[loading]
+  
+  @scala.inline
+  def low: low = "low".asInstanceOf[low]
+  
+  @scala.inline
+  def md5_ : md5_ = "md5".asInstanceOf[md5_]
+  
+  @scala.inline
+  def medium: medium = "medium".asInstanceOf[medium]
+  
+  @scala.inline
+  def menu: menu = "menu".asInstanceOf[menu]
+  
+  @scala.inline
+  def mic: mic = "mic".asInstanceOf[mic]
+  
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  
+  @scala.inline
+  def miter: miter = "miter".asInstanceOf[miter]
+  
+  @scala.inline
+  def mp3: mp3 = "mp3".asInstanceOf[mp3]
+  
+  @scala.inline
+  def netJitter: netJitter = "netJitter".asInstanceOf[netJitter]
+  
+  @scala.inline
+  def netSpeed: netSpeed = "netSpeed".asInstanceOf[netSpeed]
+  
+  @scala.inline
+  def `no-repeat`: `no-repeat` = "no-repeat".asInstanceOf[`no-repeat`]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def normal: normal = "normal".asInstanceOf[normal]
+  
+  @scala.inline
+  def ordered: ordered = "ordered".asInstanceOf[ordered]
+  
+  @scala.inline
+  def original: original = "original".asInstanceOf[original]
+  
+  @scala.inline
+  def `out-of-bounds`: `out-of-bounds` = "out-of-bounds".asInstanceOf[`out-of-bounds`]
+  
+  @scala.inline
+  def `page-apply-shared`: `page-apply-shared` = "page-apply-shared".asInstanceOf[`page-apply-shared`]
+  
+  @scala.inline
+  def `page-isolated`: `page-isolated` = "page-isolated".asInstanceOf[`page-isolated`]
+  
+  @scala.inline
+  def `page-shared`: `page-shared` = "page-shared".asInstanceOf[`page-shared`]
+  
+  @scala.inline
+  def parent: parent = "parent".asInstanceOf[parent]
+  
+  @scala.inline
+  def pdf: pdf = "pdf".asInstanceOf[pdf]
+  
+  @scala.inline
+  def pdf417: pdf417 = "pdf417".asInstanceOf[pdf417]
+  
+  @scala.inline
+  def peripheral: peripheral = "peripheral".asInstanceOf[peripheral]
+  
+  @scala.inline
+  def png: png = "png".asInstanceOf[png]
+  
+  @scala.inline
+  def ppt: ppt = "ppt".asInstanceOf[ppt]
+  
+  @scala.inline
+  def pptx: pptx = "pptx".asInstanceOf[pptx]
+  
+  @scala.inline
+  def qrCode: qrCode = "qrCode".asInstanceOf[qrCode]
+  
+  @scala.inline
+  def release: release = "release".asInstanceOf[release]
+  
+  @scala.inline
+  def remove: remove = "remove".asInstanceOf[remove]
+  
+  @scala.inline
+  def repeat: repeat = "repeat".asInstanceOf[repeat]
+  
+  @scala.inline
+  def `repeat-x`: `repeat-x` = "repeat-x".asInstanceOf[`repeat-x`]
+  
+  @scala.inline
+  def `repeat-y`: `repeat-y` = "repeat-y".asInstanceOf[`repeat-y`]
+  
+  @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def `right-mirrored`: `right-mirrored` = "right-mirrored".asInstanceOf[`right-mirrored`]
+  
+  @scala.inline
+  def round: round = "round".asInstanceOf[round]
+  
+  @scala.inline
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  
+  @scala.inline
+  def scale: scale = "scale".asInstanceOf[scale]
+  
+  @scala.inline
+  def seek: seek = "seek".asInstanceOf[seek]
+  
+  @scala.inline
+  def sha1: sha1 = "sha1".asInstanceOf[sha1]
+  
+  @scala.inline
+  def shared: shared = "shared".asInstanceOf[shared]
+  
+  @scala.inline
+  def speech: speech = "speech".asInstanceOf[speech]
+  
+  @scala.inline
+  def square: square = "square".asInstanceOf[square]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
+  @scala.inline
+  def `step-end`: `step-end` = "step-end".asInstanceOf[`step-end`]
+  
+  @scala.inline
+  def `step-start`: `step-start` = "step-start".asInstanceOf[`step-start`]
+  
+  @scala.inline
+  def stop: stop = "stop".asInstanceOf[stop]
+  
+  @scala.inline
+  def strong: strong = "strong".asInstanceOf[strong]
+  
+  @scala.inline
+  def sub: sub = "sub".asInstanceOf[sub]
+  
+  @scala.inline
+  def success: success = "success".asInstanceOf[success]
+  
+  @scala.inline
+  def `super`: `super` = "super".asInstanceOf[`super`]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def touch: touch = "touch".asInstanceOf[touch]
+  
+  @scala.inline
+  def `touch-out-of-bounds`: `touch-out-of-bounds` = "touch-out-of-bounds".asInstanceOf[`touch-out-of-bounds`]
+  
+  @scala.inline
+  def trial: trial = "trial".asInstanceOf[trial]
+  
+  @scala.inline
+  def `ucs-2`: `ucs-2` = "ucs-2".asInstanceOf[`ucs-2`]
+  
+  @scala.inline
+  def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
+  
+  @scala.inline
+  def ui: ui = "ui".asInstanceOf[ui]
+  
+  @scala.inline
+  def unchecked: unchecked = "unchecked".asInstanceOf[unchecked]
+  
+  @scala.inline
+  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  
+  @scala.inline
+  def up: up = "up".asInstanceOf[up]
+  
+  @scala.inline
+  def `up-mirrored`: `up-mirrored` = "up-mirrored".asInstanceOf[`up-mirrored`]
+  
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  
+  @scala.inline
+  def `utf-16le`: `utf-16le` = "utf-16le".asInstanceOf[`utf-16le`]
+  
+  @scala.inline
+  def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
+  
+  @scala.inline
+  def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
+  
+  @scala.inline
+  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @scala.inline
+  def video: video = "video".asInstanceOf[video]
+  
+  @scala.inline
+  def videoBitrate: videoBitrate = "videoBitrate".asInstanceOf[videoBitrate]
+  
+  @scala.inline
+  def videoFPS: videoFPS = "videoFPS".asInstanceOf[videoFPS]
+  
+  @scala.inline
+  def videoGOP: videoGOP = "videoGOP".asInstanceOf[videoGOP]
+  
+  @scala.inline
+  def videoHeight: videoHeight = "videoHeight".asInstanceOf[videoHeight]
+  
+  @scala.inline
+  def videoWidth: videoWidth = "videoWidth".asInstanceOf[videoWidth]
+  
+  @scala.inline
+  def voice: voice = "voice".asInstanceOf[voice]
+  
+  @scala.inline
+  def voice_communication: voice_communication = "voice_communication".asInstanceOf[voice_communication]
+  
+  @scala.inline
+  def voice_recognition: voice_recognition = "voice_recognition".asInstanceOf[voice_recognition]
+  
+  @scala.inline
+  def wav: wav = "wav".asInstanceOf[wav]
+  
+  @scala.inline
+  def wifi: wifi = "wifi".asInstanceOf[wifi]
+  
+  @scala.inline
+  def xls: xls = "xls".asInstanceOf[xls]
+  
+  @scala.inline
+  def xlsx: xlsx = "xlsx".asInstanceOf[xlsx]
+  
+  @scala.inline
+  def zh_CN: zh_CN = "zh_CN".asInstanceOf[zh_CN]
+  
+  @scala.inline
+  def zh_TW: zh_TW = "zh_TW".asInstanceOf[zh_TW]
+  
+  @scala.inline
+  def 其他: 其他 = "\u5176\u4ED6".asInstanceOf[其他]
+  
   @js.native
   sealed trait `2g` extends js.Object
   
@@ -116,6 +753,9 @@ object wechatMiniprogramStrings {
   sealed trait QR_CODE extends js.Object
   
   @js.native
+  sealed trait RSA extends js.Object
+  
+  @js.native
   sealed trait RSS_14 extends js.Object
   
   @js.native
@@ -135,6 +775,9 @@ object wechatMiniprogramStrings {
   
   @js.native
   sealed trait WX_CODE extends js.Object
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait aac extends js.Object
@@ -167,7 +810,13 @@ object wechatMiniprogramStrings {
   sealed trait audio extends js.Object
   
   @js.native
+  sealed trait audioBitrate extends js.Object
+  
+  @js.native
   sealed trait auto extends js.Object
+  
+  @js.native
+  sealed trait autoplay extends js.Object
   
   @js.native
   sealed trait back extends js.Object
@@ -177,6 +826,9 @@ object wechatMiniprogramStrings {
   
   @js.native
   sealed trait base64 extends js.Object
+  
+  @js.native
+  sealed trait begin extends js.Object
   
   @js.native
   sealed trait bevel extends js.Object
@@ -192,6 +844,9 @@ object wechatMiniprogramStrings {
   
   @js.native
   sealed trait buildInMic extends js.Object
+  
+  @js.native
+  sealed trait bullet extends js.Object
   
   @js.native
   sealed trait butt extends js.Object
@@ -212,6 +867,9 @@ object wechatMiniprogramStrings {
   sealed trait central extends js.Object
   
   @js.native
+  sealed trait checked extends js.Object
+  
+  @js.native
   sealed trait child extends js.Object
   
   @js.native
@@ -225,6 +883,9 @@ object wechatMiniprogramStrings {
   
   @js.native
   sealed trait datamatrix extends js.Object
+  
+  @js.native
+  sealed trait del extends js.Object
   
   @js.native
   sealed trait dequeue extends QueueType
@@ -248,6 +909,9 @@ object wechatMiniprogramStrings {
   sealed trait `down-mirrored` extends js.Object
   
   @js.native
+  sealed trait drag extends js.Object
+  
+  @js.native
   sealed trait ease extends js.Object
   
   @js.native
@@ -269,7 +933,13 @@ object wechatMiniprogramStrings {
   sealed trait easeOut extends js.Object
   
   @js.native
+  sealed trait em extends js.Object
+  
+  @js.native
   sealed trait en extends js.Object
+  
+  @js.native
+  sealed trait end extends js.Object
   
   @js.native
   sealed trait ended extends js.Object
@@ -293,10 +963,16 @@ object wechatMiniprogramStrings {
   sealed trait fingerPrint extends js.Object
   
   @js.native
+  sealed trait friction extends js.Object
+  
+  @js.native
   sealed trait front extends js.Object
   
   @js.native
   sealed trait game extends js.Object
+  
+  @js.native
+  sealed trait gesture extends js.Object
   
   @js.native
   sealed trait headsetMic extends js.Object
@@ -308,15 +984,15 @@ object wechatMiniprogramStrings {
   sealed trait high extends js.Object
   
   @js.native
+  sealed trait horizontal extends js.Object
+  
+  @js.native
   sealed trait image extends js.Object
   
   @js.native
   sealed trait init
     extends DataType
        with QueueType
-  
-  @js.native
-  sealed trait input extends js.Object
   
   @js.native
   sealed trait isolated extends js.Object
@@ -326,6 +1002,9 @@ object wechatMiniprogramStrings {
   
   @js.native
   sealed trait json extends js.Object
+  
+  @js.native
+  sealed trait justify extends js.Object
   
   @js.native
   sealed trait latin1 extends js.Object
@@ -373,6 +1052,12 @@ object wechatMiniprogramStrings {
   sealed trait mp3 extends js.Object
   
   @js.native
+  sealed trait netJitter extends js.Object
+  
+  @js.native
+  sealed trait netSpeed extends js.Object
+  
+  @js.native
   sealed trait `no-repeat` extends js.Object
   
   @js.native
@@ -382,7 +1067,13 @@ object wechatMiniprogramStrings {
   sealed trait normal extends js.Object
   
   @js.native
+  sealed trait ordered extends js.Object
+  
+  @js.native
   sealed trait original extends js.Object
+  
+  @js.native
+  sealed trait `out-of-bounds` extends js.Object
   
   @js.native
   sealed trait `page-apply-shared` extends js.Object
@@ -445,6 +1136,12 @@ object wechatMiniprogramStrings {
   sealed trait round extends js.Object
   
   @js.native
+  sealed trait rtl extends js.Object
+  
+  @js.native
+  sealed trait scale extends js.Object
+  
+  @js.native
   sealed trait seek extends js.Object
   
   @js.native
@@ -472,16 +1169,28 @@ object wechatMiniprogramStrings {
   sealed trait stop extends js.Object
   
   @js.native
+  sealed trait strong extends js.Object
+  
+  @js.native
+  sealed trait sub extends js.Object
+  
+  @js.native
   sealed trait success extends js.Object
   
   @js.native
-  sealed trait tap extends js.Object
+  sealed trait `super` extends js.Object
   
   @js.native
   sealed trait text extends js.Object
   
   @js.native
   sealed trait top extends js.Object
+  
+  @js.native
+  sealed trait touch extends js.Object
+  
+  @js.native
+  sealed trait `touch-out-of-bounds` extends js.Object
   
   @js.native
   sealed trait trial extends js.Object
@@ -494,6 +1203,9 @@ object wechatMiniprogramStrings {
   
   @js.native
   sealed trait ui extends js.Object
+  
+  @js.native
+  sealed trait unchecked extends js.Object
   
   @js.native
   sealed trait unknown extends js.Object
@@ -522,7 +1234,28 @@ object wechatMiniprogramStrings {
   sealed trait utf8 extends js.Object
   
   @js.native
+  sealed trait vertical extends js.Object
+  
+  @js.native
   sealed trait video extends js.Object
+  
+  @js.native
+  sealed trait videoBitrate extends js.Object
+  
+  @js.native
+  sealed trait videoFPS extends js.Object
+  
+  @js.native
+  sealed trait videoGOP extends js.Object
+  
+  @js.native
+  sealed trait videoHeight extends js.Object
+  
+  @js.native
+  sealed trait videoWidth extends js.Object
+  
+  @js.native
+  sealed trait voice extends js.Object
   
   @js.native
   sealed trait voice_communication extends js.Object
@@ -550,366 +1283,4 @@ object wechatMiniprogramStrings {
   
   @js.native
   sealed trait 其他 extends js.Object
-  
-  @scala.inline
-  def `2g`: `2g` = "2g".asInstanceOf[`2g`]
-  @scala.inline
-  def `3g`: `3g` = "3g".asInstanceOf[`3g`]
-  @scala.inline
-  def `4g`: `4g` = "4g".asInstanceOf[`4g`]
-  @scala.inline
-  def `5g`: `5g` = "5g".asInstanceOf[`5g`]
-  @scala.inline
-  def AZTEC: AZTEC = "AZTEC".asInstanceOf[AZTEC]
-  @scala.inline
-  def CODABAR: CODABAR = "CODABAR".asInstanceOf[CODABAR]
-  @scala.inline
-  def CODE_128: CODE_128 = "CODE_128".asInstanceOf[CODE_128]
-  @scala.inline
-  def CODE_25: CODE_25 = "CODE_25".asInstanceOf[CODE_25]
-  @scala.inline
-  def CODE_39: CODE_39 = "CODE_39".asInstanceOf[CODE_39]
-  @scala.inline
-  def CODE_93: CODE_93 = "CODE_93".asInstanceOf[CODE_93]
-  @scala.inline
-  def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
-  @scala.inline
-  def DATA_MATRIX: DATA_MATRIX = "DATA_MATRIX".asInstanceOf[DATA_MATRIX]
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def EAN_13: EAN_13 = "EAN_13".asInstanceOf[EAN_13]
-  @scala.inline
-  def EAN_8: EAN_8 = "EAN_8".asInstanceOf[EAN_8]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
-  @scala.inline
-  def `HMAC-SHA256`: `HMAC-SHA256` = "HMAC-SHA256".asInstanceOf[`HMAC-SHA256`]
-  @scala.inline
-  def ITF: ITF = "ITF".asInstanceOf[ITF]
-  @scala.inline
-  def LineString: LineString = "LineString".asInstanceOf[LineString]
-  @scala.inline
-  def MAXICODE: MAXICODE = "MAXICODE".asInstanceOf[MAXICODE]
-  @scala.inline
-  def MD5: MD5 = "MD5".asInstanceOf[MD5]
-  @scala.inline
-  def MultiLineString: MultiLineString = "MultiLineString".asInstanceOf[MultiLineString]
-  @scala.inline
-  def MultiPoint: MultiPoint = "MultiPoint".asInstanceOf[MultiPoint]
-  @scala.inline
-  def MultiPolygon: MultiPolygon = "MultiPolygon".asInstanceOf[MultiPolygon]
-  @scala.inline
-  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
-  @scala.inline
-  def Optional: Optional = "Optional".asInstanceOf[Optional]
-  @scala.inline
-  def OptionalInterface: OptionalInterface = "OptionalInterface".asInstanceOf[OptionalInterface]
-  @scala.inline
-  def PCM: PCM = "PCM".asInstanceOf[PCM]
-  @scala.inline
-  def PDF_417: PDF_417 = "PDF_417".asInstanceOf[PDF_417]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def Point: Point = "Point".asInstanceOf[Point]
-  @scala.inline
-  def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
-  @scala.inline
-  def PropertyOptionToData: PropertyOptionToData = "PropertyOptionToData".asInstanceOf[PropertyOptionToData]
-  @scala.inline
-  def QR_CODE: QR_CODE = "QR_CODE".asInstanceOf[QR_CODE]
-  @scala.inline
-  def RSS_14: RSS_14 = "RSS_14".asInstanceOf[RSS_14]
-  @scala.inline
-  def RSS_EXPANDED: RSS_EXPANDED = "RSS_EXPANDED".asInstanceOf[RSS_EXPANDED]
-  @scala.inline
-  def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
-  @scala.inline
-  def UPC_A: UPC_A = "UPC_A".asInstanceOf[UPC_A]
-  @scala.inline
-  def UPC_E: UPC_E = "UPC_E".asInstanceOf[UPC_E]
-  @scala.inline
-  def UPC_EAN_EXTENSION: UPC_EAN_EXTENSION = "UPC_EAN_EXTENSION".asInstanceOf[UPC_EAN_EXTENSION]
-  @scala.inline
-  def WX_CODE: WX_CODE = "WX_CODE".asInstanceOf[WX_CODE]
-  @scala.inline
-  def aac: aac = "aac".asInstanceOf[aac]
-  @scala.inline
-  def accumulate: accumulate = "accumulate".asInstanceOf[accumulate]
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def album: album = "album".asInstanceOf[album]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def ancestor: ancestor = "ancestor".asInstanceOf[ancestor]
-  @scala.inline
-  def `apply-shared`: `apply-shared` = "apply-shared".asInstanceOf[`apply-shared`]
-  @scala.inline
-  def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
-  @scala.inline
-  def ascii: ascii = "ascii".asInstanceOf[ascii]
-  @scala.inline
-  def audio: audio = "audio".asInstanceOf[audio]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def back: back = "back".asInstanceOf[back]
-  @scala.inline
-  def barCode: barCode = "barCode".asInstanceOf[barCode]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def bevel: bevel = "bevel".asInstanceOf[bevel]
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def bufferchange: bufferchange = "bufferchange".asInstanceOf[bufferchange]
-  @scala.inline
-  def buildInMic: buildInMic = "buildInMic".asInstanceOf[buildInMic]
-  @scala.inline
-  def butt: butt = "butt".asInstanceOf[butt]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def camcorder: camcorder = "camcorder".asInstanceOf[camcorder]
-  @scala.inline
-  def camera: camera = "camera".asInstanceOf[camera]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def central: central = "central".asInstanceOf[central]
-  @scala.inline
-  def child: child = "child".asInstanceOf[child]
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
-  @scala.inline
-  def compressed: compressed = "compressed".asInstanceOf[compressed]
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
-  @scala.inline
-  def datamatrix: datamatrix = "datamatrix".asInstanceOf[datamatrix]
-  @scala.inline
-  def dequeue: dequeue = "dequeue".asInstanceOf[dequeue]
-  @scala.inline
-  def descendant: descendant = "descendant".asInstanceOf[descendant]
-  @scala.inline
-  def develop: develop = "develop".asInstanceOf[develop]
-  @scala.inline
-  def doc: doc = "doc".asInstanceOf[doc]
-  @scala.inline
-  def docx: docx = "docx".asInstanceOf[docx]
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
-  @scala.inline
-  def `down-mirrored`: `down-mirrored` = "down-mirrored".asInstanceOf[`down-mirrored`]
-  @scala.inline
-  def ease: ease = "ease".asInstanceOf[ease]
-  @scala.inline
-  def `ease-in`: `ease-in` = "ease-in".asInstanceOf[`ease-in`]
-  @scala.inline
-  def `ease-in-out`: `ease-in-out` = "ease-in-out".asInstanceOf[`ease-in-out`]
-  @scala.inline
-  def `ease-out`: `ease-out` = "ease-out".asInstanceOf[`ease-out`]
-  @scala.inline
-  def easeIn: easeIn = "easeIn".asInstanceOf[easeIn]
-  @scala.inline
-  def easeInOut: easeInOut = "easeInOut".asInstanceOf[easeInOut]
-  @scala.inline
-  def easeOut: easeOut = "easeOut".asInstanceOf[easeOut]
-  @scala.inline
-  def en: en = "en".asInstanceOf[en]
-  @scala.inline
-  def ended: ended = "ended".asInstanceOf[ended]
-  @scala.inline
-  def enqueue: enqueue = "enqueue".asInstanceOf[enqueue]
-  @scala.inline
-  def facial: facial = "facial".asInstanceOf[facial]
-  @scala.inline
-  def fail: fail = "fail".asInstanceOf[fail]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def filePath: filePath = "filePath".asInstanceOf[filePath]
-  @scala.inline
-  def fingerPrint: fingerPrint = "fingerPrint".asInstanceOf[fingerPrint]
-  @scala.inline
-  def front: front = "front".asInstanceOf[front]
-  @scala.inline
-  def game: game = "game".asInstanceOf[game]
-  @scala.inline
-  def headsetMic: headsetMic = "headsetMic".asInstanceOf[headsetMic]
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
-  @scala.inline
-  def high: high = "high".asInstanceOf[high]
-  @scala.inline
-  def image: image = "image".asInstanceOf[image]
-  @scala.inline
-  def init: init = "init".asInstanceOf[init]
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
-  @scala.inline
-  def isolated: isolated = "isolated".asInstanceOf[isolated]
-  @scala.inline
-  def jpg: jpg = "jpg".asInstanceOf[jpg]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def latin1: latin1 = "latin1".asInstanceOf[latin1]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def `left-mirrored`: `left-mirrored` = "left-mirrored".asInstanceOf[`left-mirrored`]
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
-  @scala.inline
-  def limit: limit = "limit".asInstanceOf[limit]
-  @scala.inline
-  def linear: linear = "linear".asInstanceOf[linear]
-  @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
-  @scala.inline
-  def low: low = "low".asInstanceOf[low]
-  @scala.inline
-  def md5_ : md5_ = "md5".asInstanceOf[md5_]
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
-  @scala.inline
-  def menu: menu = "menu".asInstanceOf[menu]
-  @scala.inline
-  def mic: mic = "mic".asInstanceOf[mic]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def miter: miter = "miter".asInstanceOf[miter]
-  @scala.inline
-  def mp3: mp3 = "mp3".asInstanceOf[mp3]
-  @scala.inline
-  def `no-repeat`: `no-repeat` = "no-repeat".asInstanceOf[`no-repeat`]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def original: original = "original".asInstanceOf[original]
-  @scala.inline
-  def `page-apply-shared`: `page-apply-shared` = "page-apply-shared".asInstanceOf[`page-apply-shared`]
-  @scala.inline
-  def `page-isolated`: `page-isolated` = "page-isolated".asInstanceOf[`page-isolated`]
-  @scala.inline
-  def `page-shared`: `page-shared` = "page-shared".asInstanceOf[`page-shared`]
-  @scala.inline
-  def parent: parent = "parent".asInstanceOf[parent]
-  @scala.inline
-  def pdf: pdf = "pdf".asInstanceOf[pdf]
-  @scala.inline
-  def pdf417: pdf417 = "pdf417".asInstanceOf[pdf417]
-  @scala.inline
-  def peripheral: peripheral = "peripheral".asInstanceOf[peripheral]
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
-  @scala.inline
-  def ppt: ppt = "ppt".asInstanceOf[ppt]
-  @scala.inline
-  def pptx: pptx = "pptx".asInstanceOf[pptx]
-  @scala.inline
-  def qrCode: qrCode = "qrCode".asInstanceOf[qrCode]
-  @scala.inline
-  def release: release = "release".asInstanceOf[release]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def repeat: repeat = "repeat".asInstanceOf[repeat]
-  @scala.inline
-  def `repeat-x`: `repeat-x` = "repeat-x".asInstanceOf[`repeat-x`]
-  @scala.inline
-  def `repeat-y`: `repeat-y` = "repeat-y".asInstanceOf[`repeat-y`]
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def `right-mirrored`: `right-mirrored` = "right-mirrored".asInstanceOf[`right-mirrored`]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def seek: seek = "seek".asInstanceOf[seek]
-  @scala.inline
-  def sha1: sha1 = "sha1".asInstanceOf[sha1]
-  @scala.inline
-  def shared: shared = "shared".asInstanceOf[shared]
-  @scala.inline
-  def speech: speech = "speech".asInstanceOf[speech]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def `step-end`: `step-end` = "step-end".asInstanceOf[`step-end`]
-  @scala.inline
-  def `step-start`: `step-start` = "step-start".asInstanceOf[`step-start`]
-  @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
-  def tap: tap = "tap".asInstanceOf[tap]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def trial: trial = "trial".asInstanceOf[trial]
-  @scala.inline
-  def `ucs-2`: `ucs-2` = "ucs-2".asInstanceOf[`ucs-2`]
-  @scala.inline
-  def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
-  @scala.inline
-  def ui: ui = "ui".asInstanceOf[ui]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
-  @scala.inline
-  def `up-mirrored`: `up-mirrored` = "up-mirrored".asInstanceOf[`up-mirrored`]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
-  @scala.inline
-  def `utf-16le`: `utf-16le` = "utf-16le".asInstanceOf[`utf-16le`]
-  @scala.inline
-  def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
-  @scala.inline
-  def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
-  @scala.inline
-  def video: video = "video".asInstanceOf[video]
-  @scala.inline
-  def voice_communication: voice_communication = "voice_communication".asInstanceOf[voice_communication]
-  @scala.inline
-  def voice_recognition: voice_recognition = "voice_recognition".asInstanceOf[voice_recognition]
-  @scala.inline
-  def wav: wav = "wav".asInstanceOf[wav]
-  @scala.inline
-  def wifi: wifi = "wifi".asInstanceOf[wifi]
-  @scala.inline
-  def xls: xls = "xls".asInstanceOf[xls]
-  @scala.inline
-  def xlsx: xlsx = "xlsx".asInstanceOf[xlsx]
-  @scala.inline
-  def zh_CN: zh_CN = "zh_CN".asInstanceOf[zh_CN]
-  @scala.inline
-  def zh_TW: zh_TW = "zh_TW".asInstanceOf[zh_TW]
-  @scala.inline
-  def 其他: 其他 = "\u5176\u4ED6".asInstanceOf[其他]
 }
-

@@ -4,7 +4,7 @@ import typings.seleniumWebdriver.capabilitiesMod.Capabilities
 import typings.seleniumWebdriver.mod.Session
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor", "protractor.Session")
 @js.native
@@ -18,4 +18,3 @@ class SessionCls protected () extends Session {
     */
   def this(id: String, capabilities: Capabilities) = this()
 }
-

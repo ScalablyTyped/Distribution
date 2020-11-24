@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.dataviz.ui.DiagramOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofDiagram
   extends Instantiable1[/* element */ Element, Diagram]
      with Instantiable2[/* element */ Element, /* options */ DiagramOptions, Diagram] {
-  var fn: Diagram = js.native
+  
   def extend(proto: js.Object): Diagram = js.native
+  
+  var fn: Diagram = js.native
 }
-

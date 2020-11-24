@@ -22,11 +22,12 @@ import typings.luminoWidgets.widgetMod.Widget.ResizeMessage
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/mainmenu/lib/mainmenu", JSImport.Namespace)
 @js.native
 object mainmenuMod extends js.Object {
+  
   @js.native
   class MainMenu protected ()
     extends MenuBar
@@ -35,51 +36,14 @@ object mainmenuMod extends js.Object {
       * Construct the main menu bar.
       */
     def this(commands: CommandRegistry) = this()
+    
     var _items: js.Any = js.native
+    
     /**
       * Handle the disposal of a menu.
       */
     var _onMenuDisposed: js.Any = js.native
-    /**
-      * The application "Edit" menu.
-      */
-    @JSName("editMenu")
-    val editMenu_MainMenu: EditMenu = js.native
-    /**
-      * The application "File" menu.
-      */
-    @JSName("fileMenu")
-    val fileMenu_MainMenu: FileMenu = js.native
-    /**
-      * The application "Help" menu.
-      */
-    @JSName("helpMenu")
-    val helpMenu_MainMenu: HelpMenu = js.native
-    /**
-      * The application "Kernel" menu.
-      */
-    @JSName("kernelMenu")
-    val kernelMenu_MainMenu: KernelMenu = js.native
-    /**
-      * The application "Run" menu.
-      */
-    @JSName("runMenu")
-    val runMenu_MainMenu: RunMenu = js.native
-    /**
-      * The application "Settings" menu.
-      */
-    @JSName("settingsMenu")
-    val settingsMenu_MainMenu: SettingsMenu = js.native
-    /**
-      * The application "Tabs" menu.
-      */
-    @JSName("tabsMenu")
-    val tabsMenu_MainMenu: TabsMenu = js.native
-    /**
-      * The application "View" menu.
-      */
-    @JSName("viewMenu")
-    val viewMenu_MainMenu: ViewMenu = js.native
+    
     /**
       * Post an `'activate-request'` message to the widget.
       *
@@ -88,6 +52,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def activate(): Unit = js.native
+    
     /**
       * Add a class name to the widget's DOM node.
       *
@@ -100,6 +65,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def addClass(name: String): Unit = js.native
+    
     /**
       * Add a menu to the end of the menu bar.
       *
@@ -117,6 +83,7 @@ object mainmenuMod extends js.Object {
     override def addMenu(menu: typings.luminoWidgets.mod.Menu): Unit = js.native
     /* InferMemberOverrides */
     override def addMenu(menu: typings.luminoWidgets.mod.Menu, options: IAddOptions): Unit = js.native
+    
     /**
       * Create an iterator over the widget's children.
       *
@@ -129,6 +96,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def children(): IIterator[Widget] = js.native
+    
     /**
       * Clear the given widget flag.
       *
@@ -137,11 +105,13 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def clearFlag(flag: Flag): Unit = js.native
+    
     /**
       * Remove all menus from the menu bar.
       */
     /* InferMemberOverrides */
     override def clearMenus(): Unit = js.native
+    
     /**
       * Send a `'close-request'` message to the widget.
       *
@@ -150,6 +120,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def close(): Unit = js.native
+    
     /**
       * Test whether a widget is a descendant of this widget.
       *
@@ -159,20 +130,19 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def contains(widget: Widget): Boolean = js.native
+    
     /**
-      * Dispose of the resources held by the object.
-      *
-      * #### Notes
-      * If the object's `dispose` method is called more than once, all
-      * calls made after the first will be a no-op.
-      *
-      * #### Undefined Behavior
-      * It is undefined behavior to use any functionality of the object
-      * after it has been disposed unless otherwise explicitly noted.
+      * The application "Edit" menu.
       */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def dispose(): Unit = js.native
+    @JSName("editMenu")
+    val editMenu_MainMenu: EditMenu = js.native
+    
+    /**
+      * The application "File" menu.
+      */
+    @JSName("fileMenu")
+    val fileMenu_MainMenu: FileMenu = js.native
+    
     /**
       * Post a `'fit-request'` message to the widget.
       *
@@ -181,6 +151,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def fit(): Unit = js.native
+    
     /**
       * Handle the DOM events for the menu bar.
       *
@@ -193,6 +164,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def handleEvent(event: Event): Unit = js.native
+    
     /**
       * Test whether the widget's DOM node has the given class name.
       *
@@ -202,6 +174,13 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def hasClass(name: String): Boolean = js.native
+    
+    /**
+      * The application "Help" menu.
+      */
+    @JSName("helpMenu")
+    val helpMenu_MainMenu: HelpMenu = js.native
+    
     /**
       * Hide the widget and make it hidden to its parent widget.
       *
@@ -212,6 +191,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def hide(): Unit = js.native
+    
     /**
       * Insert a menu into the menu bar at the specified index.
       *
@@ -226,6 +206,13 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def insertMenu(index: Double, menu: Menu): Unit = js.native
+    
+    /**
+      * The application "Kernel" menu.
+      */
+    @JSName("kernelMenu")
+    val kernelMenu_MainMenu: KernelMenu = js.native
+    
     /**
       * Invoke the message processing routine of the widget's layout.
       *
@@ -238,6 +225,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def notifyLayout(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on an `'activate-request'` message.
       *
@@ -246,6 +234,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onActivateRequest(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on an `'after-attach'` message.
       *
@@ -254,6 +243,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onAfterAttach(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on an `'after-detach'` message.
       *
@@ -262,6 +252,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onAfterDetach(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on an `'after-hide'` message.
       *
@@ -270,6 +261,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onAfterHide(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on an `'after-show'` message.
       *
@@ -278,6 +270,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onAfterShow(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on a `'before-attach'` message.
       *
@@ -286,6 +279,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onBeforeAttach(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on a `'before-detach'` message.
       *
@@ -294,6 +288,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onBeforeDetach(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on a `'before-hide'` message.
       *
@@ -302,6 +297,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onBeforeHide(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on a `'before-show'` message.
       *
@@ -310,6 +306,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onBeforeShow(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on a `'child-added'` message.
       *
@@ -318,6 +315,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onChildAdded(msg: ChildMessage): Unit = js.native
+    
     /**
       * A message handler invoked on a `'child-removed'` message.
       *
@@ -326,6 +324,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onChildRemoved(msg: ChildMessage): Unit = js.native
+    
     /**
       * A message handler invoked on a `'close-request'` message.
       *
@@ -334,6 +333,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onCloseRequest(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on a `'fit-request'` message.
       *
@@ -342,6 +342,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onFitRequest(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on a `'resize'` message.
       *
@@ -350,6 +351,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onResize(msg: ResizeMessage): Unit = js.native
+    
     /**
       * A message handler invoked on an `'update-request'` message.
       *
@@ -358,6 +360,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onUpdateRequest(msg: Message): Unit = js.native
+    
     /**
       * Open the active menu and activate its first menu item.
       *
@@ -366,14 +369,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def openActiveMenu(): Unit = js.native
-    /**
-      * Process a message sent to the handler.
-      *
-      * @param msg - The message to be processed.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def processMessage(msg: Message): Unit = js.native
+    
     /**
       * Remove a class name from the widget's DOM node.
       *
@@ -386,6 +382,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def removeClass(name: String): Unit = js.native
+    
     /**
       * Remove a menu from the menu bar.
       *
@@ -396,6 +393,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def removeMenu(menu: Menu): Unit = js.native
+    
     /**
       * Remove the menu at a given index from the menu bar.
       *
@@ -406,6 +404,13 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def removeMenuAt(index: Double): Unit = js.native
+    
+    /**
+      * The application "Run" menu.
+      */
+    @JSName("runMenu")
+    val runMenu_MainMenu: RunMenu = js.native
+    
     /**
       * Set the given widget flag.
       *
@@ -414,6 +419,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def setFlag(flag: Flag): Unit = js.native
+    
     /**
       * Show or hide the widget according to a boolean value.
       *
@@ -424,6 +430,13 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def setHidden(hidden: Boolean): Unit = js.native
+    
+    /**
+      * The application "Settings" menu.
+      */
+    @JSName("settingsMenu")
+    val settingsMenu_MainMenu: SettingsMenu = js.native
+    
     /**
       * Show the widget and make it visible to its parent widget.
       *
@@ -434,6 +447,13 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def show(): Unit = js.native
+    
+    /**
+      * The application "Tabs" menu.
+      */
+    @JSName("tabsMenu")
+    val tabsMenu_MainMenu: TabsMenu = js.native
+    
     /**
       * Test whether the given widget flag is set.
       *
@@ -442,6 +462,7 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def testFlag(flag: Flag): Boolean = js.native
+    
     /**
       * Toggle a class name on the widget's DOM node.
       *
@@ -460,6 +481,7 @@ object mainmenuMod extends js.Object {
     override def toggleClass(name: String): Boolean = js.native
     /* InferMemberOverrides */
     override def toggleClass(name: String, force: Boolean): Boolean = js.native
+    
     /**
       * Post an `'update-request'` message to the widget.
       *
@@ -468,7 +490,11 @@ object mainmenuMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def update(): Unit = js.native
+    
+    /**
+      * The application "View" menu.
+      */
+    @JSName("viewMenu")
+    val viewMenu_MainMenu: ViewMenu = js.native
   }
-  
 }
-

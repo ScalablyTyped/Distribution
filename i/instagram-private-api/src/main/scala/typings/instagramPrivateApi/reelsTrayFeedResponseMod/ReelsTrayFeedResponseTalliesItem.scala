@@ -2,20 +2,50 @@ package typings.instagramPrivateApi.reelsTrayFeedResponseMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ReelsTrayFeedResponseTalliesItem extends js.Object {
-  var count: Double
-  var font_size: js.UndefOr[Double] = js.undefined
-  var text: String
+  
+  var count: Double = js.native
+  
+  var font_size: js.UndefOr[Double] = js.native
+  
+  var text: String = js.native
 }
-
 object ReelsTrayFeedResponseTalliesItem {
+  
   @scala.inline
-  def apply(count: Double, text: String, font_size: js.UndefOr[Double] = js.undefined): ReelsTrayFeedResponseTalliesItem = {
+  def apply(count: Double, text: String): ReelsTrayFeedResponseTalliesItem = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (!js.isUndefined(font_size)) __obj.updateDynamic("font_size")(font_size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReelsTrayFeedResponseTalliesItem]
   }
+  
+  @scala.inline
+  implicit class ReelsTrayFeedResponseTalliesItemOps[Self <: ReelsTrayFeedResponseTalliesItem] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFont_size(value: Double): Self = this.set("font_size", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteFont_size: Self = this.set("font_size", js.undefined)
+  }
 }
-

@@ -2,11 +2,12 @@ package typings.yandexMaps.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "ready")
 @js.native
 object ready extends js.Object {
+  
   def apply(): js.Promise[Unit] = js.native
   def apply(
     successCallback: js.UndefOr[scala.Nothing],
@@ -28,4 +29,3 @@ object ready extends js.Object {
     context: js.Object
   ): js.Promise[Unit] = js.native
 }
-

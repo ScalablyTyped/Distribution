@@ -11,8 +11,8 @@ The lodash method `_.assign` exported as a module.
 | Full name          | lodash.assign |
 | Keywords           | lodash-modularized, assign |
 | # releases         | 0 |
-| # dependents       | 846 |
-| # downloads        | 190055886 |
+| # dependents       | 876 |
+| # downloads        | 152515972 |
 | # stars            | 4 |
 
 ## Links

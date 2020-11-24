@@ -10,9 +10,9 @@ Official minimal [Highcharts](https://www.highcharts.com/) wrapper for React.
 | ------------------ | :-------------: |
 | Full name          | highcharts-react-official |
 | Keywords           | highcharts, highstock, highmaps, react |
-| # releases         | 19 |
-| # dependents       | 17 |
-| # downloads        | 2184234 |
+| # releases         | 12 |
+| # dependents       | 30 |
+| # downloads        | 4604507 |
 | # stars            | 0 |
 
 ## Links

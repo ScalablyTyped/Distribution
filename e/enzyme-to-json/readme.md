@@ -10,9 +10,9 @@ convert enzyme wrapper to a format compatible with Jest snapshot
 | ------------------ | :-------------: |
 | Full name          | enzyme-to-json |
 | Keywords           | enzyme, jest, snapshot, wrapper, pretty-format, cheerio, convert, testing, unit, test |
-| # releases         | 10 |
-| # dependents       | 204 |
-| # downloads        | 42275909 |
+| # releases         | 8 |
+| # dependents       | 247 |
+| # downloads        | 58593580 |
 | # stars            | 11 |
 
 ## Links

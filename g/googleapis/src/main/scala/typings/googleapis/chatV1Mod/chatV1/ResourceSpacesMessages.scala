@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/chat/v1", "chat_v1.Resource$Spaces$Messages")
 @js.native
 class ResourceSpacesMessages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * chat.spaces.messages.create
     * @desc Creates a message.
@@ -43,6 +45,7 @@ class ResourceSpacesMessages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMessage]
   ): Unit = js.native
+  
   /**
     * chat.spaces.messages.delete
     * @desc Deletes a message.
@@ -71,6 +74,7 @@ class ResourceSpacesMessages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * chat.spaces.messages.get
     * @desc Returns a message.
@@ -99,6 +103,7 @@ class ResourceSpacesMessages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMessage]
   ): Unit = js.native
+  
   /**
     * chat.spaces.messages.update
     * @desc Updates a message.
@@ -130,4 +135,3 @@ class ResourceSpacesMessages protected () extends js.Object {
     callback: BodyResponseCallback[SchemaMessage]
   ): Unit = js.native
 }
-

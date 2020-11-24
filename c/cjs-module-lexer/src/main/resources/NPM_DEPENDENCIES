@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cjs-module-lexer" : "0.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cjs-module-lexer" : "0.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

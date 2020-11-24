@@ -2,41 +2,81 @@ package typings.awsSdkTypes
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object middlewareMod {
-  type BuildHandler[Input /* <: js.Object */, Output /* <: js.Object */, Stream] = typings.awsSdkTypes.middlewareMod.FinalizeHandler[Input, Output, Stream]
-  type BuildHandlerArguments[Input /* <: js.Object */, Stream] = typings.awsSdkTypes.middlewareMod.FinalizeHandlerArguments[Input, Stream]
-  type BuildMiddleware[Input /* <: js.Object */, Output /* <: js.Object */, Stream] = typings.awsSdkTypes.middlewareMod.FinalizeMiddleware[Input, Output, Stream]
-  type FinalizeHandler[Input /* <: js.Object */, Output /* <: js.Object */, Stream] = js.Function1[
-    /* args */ typings.awsSdkTypes.middlewareMod.FinalizeHandlerArguments[Input, Stream], 
-    js.Promise[Output]
+  
+  type BuildHandler[Input /* <: js.Object */, Output /* <: js.Object */] = js.Function1[
+    /* args */ typings.awsSdkTypes.middlewareMod.BuildHandlerArguments[Input], 
+    js.Promise[typings.awsSdkTypes.middlewareMod.BuildHandlerOutput[Output]]
   ]
-  type FinalizeMiddleware[Input /* <: js.Object */, Output /* <: js.Object */, Stream] = js.Function2[
-    /* next */ typings.awsSdkTypes.middlewareMod.FinalizeHandler[Input, Output, Stream], 
+  
+  type BuildHandlerArguments[Input /* <: js.Object */] = typings.awsSdkTypes.middlewareMod.FinalizeHandlerArguments[Input]
+  
+  type BuildHandlerOutput[Output /* <: js.Object */] = typings.awsSdkTypes.middlewareMod.InitializeHandlerOutput[Output]
+  
+  type BuildMiddleware[Input /* <: js.Object */, Output /* <: js.Object */] = js.Function2[
+    /* next */ typings.awsSdkTypes.middlewareMod.BuildHandler[Input, Output], 
     /* context */ typings.awsSdkTypes.middlewareMod.HandlerExecutionContext, 
-    typings.awsSdkTypes.middlewareMod.FinalizeHandler[Input, Output, Stream]
+    typings.awsSdkTypes.middlewareMod.BuildHandler[Input, Output]
   ]
-  type Handler[Input /* <: js.Object */, Output /* <: js.Object */] = js.Function1[
-    /* args */ typings.awsSdkTypes.middlewareMod.HandlerArguments[Input], 
-    js.Promise[Output]
+  
+  type DeserializeHandler[Input /* <: js.Object */, Output /* <: js.Object */] = js.Function1[
+    /* args */ typings.awsSdkTypes.middlewareMod.DeserializeHandlerArguments[Input], 
+    js.Promise[typings.awsSdkTypes.middlewareMod.DeserializeHandlerOutput[Output]]
   ]
-  type Middleware[Input /* <: js.Object */, Output /* <: js.Object */] = js.Function2[
-    /* next */ typings.awsSdkTypes.middlewareMod.Handler[Input, Output], 
+  
+  type DeserializeHandlerArguments[Input /* <: js.Object */] = typings.awsSdkTypes.middlewareMod.FinalizeHandlerArguments[Input]
+  
+  type DeserializeMiddleware[Input /* <: js.Object */, Output /* <: js.Object */] = js.Function2[
+    /* next */ typings.awsSdkTypes.middlewareMod.DeserializeHandler[Input, Output], 
     /* context */ typings.awsSdkTypes.middlewareMod.HandlerExecutionContext, 
-    typings.awsSdkTypes.middlewareMod.Handler[Input, Output]
+    typings.awsSdkTypes.middlewareMod.DeserializeHandler[Input, Output]
   ]
-  type SerializeHandler[Input /* <: js.Object */, Output /* <: js.Object */, Stream] = js.Function1[
-    /* args */ typings.awsSdkTypes.middlewareMod.SerializeHandlerArguments[Input, Stream], 
-    js.Promise[Output]
+  
+  type FinalizeHandler[Input /* <: js.Object */, Output /* <: js.Object */] = js.Function1[
+    /* args */ typings.awsSdkTypes.middlewareMod.FinalizeHandlerArguments[Input], 
+    js.Promise[typings.awsSdkTypes.middlewareMod.FinalizeHandlerOutput[Output]]
   ]
-  type SerializeMiddleware[Input /* <: js.Object */, Output /* <: js.Object */, Stream] = js.Function2[
-    /* next */ typings.awsSdkTypes.middlewareMod.SerializeHandler[Input, Output, Stream], 
+  
+  type FinalizeHandlerOutput[Output /* <: js.Object */] = typings.awsSdkTypes.middlewareMod.InitializeHandlerOutput[Output]
+  
+  type FinalizeRequestMiddleware[Input /* <: js.Object */, Output /* <: js.Object */] = js.Function2[
+    /* next */ typings.awsSdkTypes.middlewareMod.FinalizeHandler[Input, Output], 
     /* context */ typings.awsSdkTypes.middlewareMod.HandlerExecutionContext, 
-    typings.awsSdkTypes.middlewareMod.SerializeHandler[Input, Output, Stream]
+    typings.awsSdkTypes.middlewareMod.FinalizeHandler[Input, Output]
   ]
-  type Terminalware[OutputConstraint /* <: js.Object */, Stream] = js.Function1[
+  
+  type Handler[Input /* <: js.Object */, Output /* <: js.Object */] = typings.awsSdkTypes.middlewareMod.InitializeHandler[Input, Output]
+  
+  type InitializeHandler[Input /* <: js.Object */, Output /* <: js.Object */] = js.Function1[
+    /* args */ typings.awsSdkTypes.middlewareMod.InitializeHandlerArguments[Input], 
+    js.Promise[typings.awsSdkTypes.middlewareMod.InitializeHandlerOutput[Output]]
+  ]
+  
+  type InitializeMiddleware[Input /* <: js.Object */, Output /* <: js.Object */] = js.Function2[
+    /* next */ typings.awsSdkTypes.middlewareMod.InitializeHandler[Input, Output], 
     /* context */ typings.awsSdkTypes.middlewareMod.HandlerExecutionContext, 
-    typings.awsSdkTypes.middlewareMod.FinalizeHandler[js.Object, OutputConstraint, Stream]
+    typings.awsSdkTypes.middlewareMod.InitializeHandler[Input, Output]
+  ]
+  
+  type MiddlewareType[Input /* <: js.Object */, Output /* <: js.Object */] = (typings.awsSdkTypes.middlewareMod.InitializeMiddleware[Input, Output]) | (typings.awsSdkTypes.middlewareMod.SerializeMiddleware[Input, Output]) | (typings.awsSdkTypes.middlewareMod.BuildMiddleware[Input, Output]) | (typings.awsSdkTypes.middlewareMod.FinalizeRequestMiddleware[Input, Output]) | (typings.awsSdkTypes.middlewareMod.DeserializeMiddleware[Input, Output])
+  
+  type SerializeHandler[Input /* <: js.Object */, Output /* <: js.Object */] = js.Function1[
+    /* args */ typings.awsSdkTypes.middlewareMod.SerializeHandlerArguments[Input], 
+    js.Promise[typings.awsSdkTypes.middlewareMod.SerializeHandlerOutput[Output]]
+  ]
+  
+  type SerializeHandlerOutput[Output /* <: js.Object */] = typings.awsSdkTypes.middlewareMod.InitializeHandlerOutput[Output]
+  
+  type SerializeMiddleware[Input /* <: js.Object */, Output /* <: js.Object */] = js.Function2[
+    /* next */ typings.awsSdkTypes.middlewareMod.SerializeHandler[Input, Output], 
+    /* context */ typings.awsSdkTypes.middlewareMod.HandlerExecutionContext, 
+    typings.awsSdkTypes.middlewareMod.SerializeHandler[Input, Output]
+  ]
+  
+  type Terminalware = js.Function1[
+    /* context */ typings.awsSdkTypes.middlewareMod.HandlerExecutionContext, 
+    typings.awsSdkTypes.middlewareMod.DeserializeHandler[js.Object, js.Object]
   ]
 }

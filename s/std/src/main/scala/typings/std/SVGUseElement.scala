@@ -2,19 +2,14 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Corresponds to the <use> element. */
 @js.native
 trait SVGUseElement
   extends SVGGraphicsElement
      with SVGURIReference {
-  val animatedInstanceRoot: SVGElementInstance | Null = js.native
-  val height: SVGAnimatedLength = js.native
-  val instanceRoot: SVGElementInstance | Null = js.native
-  val width: SVGAnimatedLength = js.native
-  val x: SVGAnimatedLength = js.native
-  val y: SVGAnimatedLength = js.native
+  
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -25,6 +20,13 @@ trait SVGUseElement
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  val animatedInstanceRoot: SVGElementInstance | Null = js.native
+  
+  val height: SVGAnimatedLength = js.native
+  
+  val instanceRoot: SVGElementInstance | Null = js.native
+  
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -35,5 +37,10 @@ trait SVGUseElement
     callback: EventListenerOrEventListenerObject,
     options: EventListenerOptions
   ): Unit = js.native
+  
+  val width: SVGAnimatedLength = js.native
+  
+  val x: SVGAnimatedLength = js.native
+  
+  val y: SVGAnimatedLength = js.native
 }
-

@@ -2,6 +2,7 @@ package typings.wordpressBlocks
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
+import typings.wordpressBlocks.anon.Icon
 import typings.wordpressBlocks.mod.Block
 import typings.wordpressBlocks.mod.BlockConfiguration
 import typings.wordpressBlocks.mod.BlockInstance
@@ -17,11 +18,12 @@ import typings.wordpressBlocks.wordpressBlocksStrings.multiple
 import typings.wordpressBlocks.wordpressBlocksStrings.reusable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/blocks/api/registration", JSImport.Namespace)
 @js.native
 object registrationMod extends js.Object {
+  
   @JSName("getBlockSupport")
   def getBlockSupport_align(nameOrType: String, feature: align): js.UndefOr[js.Any] = js.native
   @JSName("getBlockSupport")
@@ -94,14 +96,22 @@ object registrationMod extends js.Object {
   def getBlockSupport_reusable[T](nameOrType: String, feature: reusable, defaultSupports: T): T | Boolean | Double | String = js.native
   @JSName("getBlockSupport")
   def getBlockSupport_reusable[T](nameOrType: Block[_], feature: reusable, defaultSupports: T): T | Boolean | Double | String = js.native
+  
   def getBlockType[T](): js.UndefOr[Block[T]] = js.native
   def getBlockType[T](name: String): js.UndefOr[Block[T]] = js.native
+  
   def getBlockTypes(): js.Array[Block[_]] = js.native
+  
   def getChildBlockNames(blockName: String): js.Array[String] = js.native
+  
   def getDefaultBlockName(): js.UndefOr[String] = js.native
+  
   def getFreeformContentHandlerName(): js.UndefOr[String] = js.native
+  
   def getGroupingBlockName(): js.UndefOr[String] = js.native
+  
   def getUnregisteredTypeHandlerName(): js.UndefOr[String] = js.native
+  
   @JSName("hasBlockSupport")
   def hasBlockSupport_align(nameOrType: String, feature: align): Boolean = js.native
   @JSName("hasBlockSupport")
@@ -174,17 +184,29 @@ object registrationMod extends js.Object {
   def hasBlockSupport_reusable(nameOrType: Block[_], feature: reusable): Boolean = js.native
   @JSName("hasBlockSupport")
   def hasBlockSupport_reusable(nameOrType: Block[_], feature: reusable, defaultSupports: Boolean): Boolean = js.native
+  
   def hasChildBlocks(blockName: String): Boolean = js.native
+  
   def hasChildBlocksWithInserterSupport(blockName: String): Boolean = js.native
+  
   def isReusableBlock(blockOrType: Block[_]): Boolean = js.native
   def isReusableBlock(blockOrType: BlockInstance[StringDictionary[_]]): Boolean = js.native
+  
+  def registerBlockCollection(namespace: String, settings: Icon): Unit = js.native
+  
   def registerBlockStyle(blockName: String, styleVariation: BlockStyle): Unit = js.native
+  
   def registerBlockType[T /* <: Record[String, _] */](name: String, settings: BlockConfiguration[T]): js.UndefOr[Block[T]] = js.native
+  
   def setDefaultBlockName(name: String): Unit = js.native
+  
   def setFreeformContentHandlerName(blockName: String): Unit = js.native
+  
   def setGroupingBlockName(name: String): Unit = js.native
+  
   def setUnregisteredTypeHandlerName(blockName: String): Unit = js.native
+  
   def unregisterBlockStyle(blockName: String, styleVariationName: String): Unit = js.native
+  
   def unregisterBlockType(name: String): js.UndefOr[Block[_]] = js.native
 }
-

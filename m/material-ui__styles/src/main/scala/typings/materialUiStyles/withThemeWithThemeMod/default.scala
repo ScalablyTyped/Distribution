@@ -13,11 +13,12 @@ import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/styles/withTheme/withTheme", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def apply[Theme](component: ComponentClass[ConsistentWith[ComponentProps[_], WithTheme[Theme]], ComponentState]): ComponentType[
     (Omit[
       LibraryManagedAttributes[
@@ -39,4 +40,3 @@ object default extends js.Object {
     ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
   ] = js.native
 }
-

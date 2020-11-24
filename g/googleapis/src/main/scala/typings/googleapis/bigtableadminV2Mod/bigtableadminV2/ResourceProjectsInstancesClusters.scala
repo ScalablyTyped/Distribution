@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigtableadmin/v2", "bigtableadmin_v2.Resource$Projects$Instances$Clusters")
 @js.native
 class ResourceProjectsInstancesClusters protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * bigtableadmin.projects.instances.clusters.create
     * @desc Creates a cluster within an instance.
@@ -46,6 +48,7 @@ class ResourceProjectsInstancesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.clusters.delete
     * @desc Deletes a cluster from an instance.
@@ -74,6 +77,7 @@ class ResourceProjectsInstancesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.clusters.get
     * @desc Gets information about a cluster.
@@ -102,6 +106,7 @@ class ResourceProjectsInstancesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCluster]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.clusters.list
     * @desc Lists information about clusters in an instance.
@@ -134,6 +139,7 @@ class ResourceProjectsInstancesClusters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListClustersResponse]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.clusters.update
     * @desc Updates a cluster within an instance.
@@ -167,4 +173,3 @@ class ResourceProjectsInstancesClusters protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

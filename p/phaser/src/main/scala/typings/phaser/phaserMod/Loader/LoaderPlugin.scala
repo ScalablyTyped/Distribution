@@ -3,7 +3,7 @@ package typings.phaser.phaserMod.Loader
 import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Loader handles loading all external content such as Images, Sounds, Texture Atlases and data files.
@@ -40,4 +40,3 @@ class LoaderPlugin protected ()
     */
   def this(scene: Scene) = this()
 }
-

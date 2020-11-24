@@ -2,16 +2,18 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RangeSlider extends Slider {
+  
   /**
     * Gets current value of property <code>inputsAsTooltips</code>.Indicates whether an Input fields
     * should be used as tooltips for the handles.Default value is <code>false</code>.
     * @returns Value of property <code>inputsAsTooltips</code>
     */
   def getInputsAsTooltips(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>range</code>.Determines the range in which the user can select
     * values.If the value is lower/higher than the allowed minimum/maximum,a warning message will be
@@ -19,6 +21,7 @@ trait RangeSlider extends Slider {
     * @returns Value of property <code>range</code>
     */
   def getRange(): js.Any = js.native
+  
   /**
     * Sets a new value for property <code>inputsAsTooltips</code>.Indicates whether an Input fields should
     * be used as tooltips for the handles.When called with a value of <code>null</code> or
@@ -28,6 +31,7 @@ trait RangeSlider extends Slider {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setInputsAsTooltips(bInputsAsTooltips: Boolean): RangeSlider = js.native
+  
   /**
     * Sets a new value for property <code>range</code>.Determines the range in which the user can select
     * values.If the value is lower/higher than the allowed minimum/maximum,a warning message will be
@@ -38,4 +42,3 @@ trait RangeSlider extends Slider {
     */
   def setRange(oRange: js.Any): RangeSlider = js.native
 }
-

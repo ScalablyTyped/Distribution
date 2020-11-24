@@ -4,7 +4,7 @@ import typings.awsSdk.stsMod.ClientConfiguration
 import typings.awsSdk.stsMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/browser_default", "STS")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class STS () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -2,14 +2,20 @@ package typings.awsSdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object codedeployMod {
+  
   type AdditionalDeploymentStatusInfo = java.lang.String
+  
   type AlarmList = js.Array[typings.awsSdk.codedeployMod.Alarm]
+  
   type AlarmName = java.lang.String
+  
   type ApplicationId = java.lang.String
+  
   type ApplicationName = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.registerTime
     - typings.awsSdk.awsSdkStrings.firstUsedTime
@@ -17,9 +23,13 @@ package object codedeployMod {
     - java.lang.String
   */
   type ApplicationRevisionSortBy = typings.awsSdk.codedeployMod._ApplicationRevisionSortBy | java.lang.String
+  
   type ApplicationsInfoList = js.Array[typings.awsSdk.codedeployMod.ApplicationInfo]
+  
   type ApplicationsList = js.Array[typings.awsSdk.codedeployMod.ApplicationName]
+  
   type Arn = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.DEPLOYMENT_FAILURE
     - typings.awsSdk.awsSdkStrings.DEPLOYMENT_STOP_ON_ALARM
@@ -27,12 +37,19 @@ package object codedeployMod {
     - java.lang.String
   */
   type AutoRollbackEvent = typings.awsSdk.codedeployMod._AutoRollbackEvent | java.lang.String
+  
   type AutoRollbackEventsList = js.Array[typings.awsSdk.codedeployMod.AutoRollbackEvent]
+  
   type AutoScalingGroupHook = java.lang.String
+  
   type AutoScalingGroupList = js.Array[typings.awsSdk.codedeployMod.AutoScalingGroup]
+  
   type AutoScalingGroupName = java.lang.String
+  
   type AutoScalingGroupNameList = js.Array[typings.awsSdk.codedeployMod.AutoScalingGroupName]
+  
   type Boolean = scala.Boolean
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.tar
     - typings.awsSdk.awsSdkStrings.tgz
@@ -42,9 +59,13 @@ package object codedeployMod {
     - java.lang.String
   */
   type BundleType = typings.awsSdk.codedeployMod._BundleType | java.lang.String
+  
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.codedeployMod.ClientApiVersions
+  
   type CloudFormationResourceType = java.lang.String
+  
   type CommitId = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Server_
     - typings.awsSdk.awsSdkStrings.Lambda_
@@ -52,12 +73,16 @@ package object codedeployMod {
     - java.lang.String
   */
   type ComputePlatform = typings.awsSdk.codedeployMod._ComputePlatform | java.lang.String
+  
   type DeploymentConfigId = java.lang.String
+  
   type DeploymentConfigName = java.lang.String
+  
   type DeploymentConfigsList = js.Array[typings.awsSdk.codedeployMod.DeploymentConfigName]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.user__
-    - typings.awsSdk.awsSdkStrings.autoscaling
+    - typings.awsSdk.awsSdkStrings.autoscaling_
     - typings.awsSdk.awsSdkStrings.codeDeployRollback
     - typings.awsSdk.awsSdkStrings.CodeDeploy
     - typings.awsSdk.awsSdkStrings.CloudFormation_
@@ -65,23 +90,31 @@ package object codedeployMod {
     - java.lang.String
   */
   type DeploymentCreator = typings.awsSdk.codedeployMod._DeploymentCreator | java.lang.String
+  
   type DeploymentGroupId = java.lang.String
+  
   type DeploymentGroupInfoList = js.Array[typings.awsSdk.codedeployMod.DeploymentGroupInfo]
+  
   type DeploymentGroupName = java.lang.String
+  
   type DeploymentGroupsList = js.Array[typings.awsSdk.codedeployMod.DeploymentGroupName]
+  
   type DeploymentId = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.WITH_TRAFFIC_CONTROL
     - typings.awsSdk.awsSdkStrings.WITHOUT_TRAFFIC_CONTROL
     - java.lang.String
   */
   type DeploymentOption = typings.awsSdk.codedeployMod._DeploymentOption | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.CONTINUE_DEPLOYMENT
     - typings.awsSdk.awsSdkStrings.STOP_DEPLOYMENT
     - java.lang.String
   */
   type DeploymentReadyAction = typings.awsSdk.codedeployMod._DeploymentReadyAction | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Created_
     - typings.awsSdk.awsSdkStrings.Queued_
@@ -94,9 +127,13 @@ package object codedeployMod {
     - java.lang.String
   */
   type DeploymentStatus = typings.awsSdk.codedeployMod._DeploymentStatus | java.lang.String
+  
   type DeploymentStatusList = js.Array[typings.awsSdk.codedeployMod.DeploymentStatus]
+  
   type DeploymentStatusMessageList = js.Array[typings.awsSdk.codedeployMod.ErrorMessage]
+  
   type DeploymentTargetList = js.Array[typings.awsSdk.codedeployMod.DeploymentTarget]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.InstanceTarget
     - typings.awsSdk.awsSdkStrings.LambdaTarget
@@ -105,23 +142,31 @@ package object codedeployMod {
     - java.lang.String
   */
   type DeploymentTargetType = typings.awsSdk.codedeployMod._DeploymentTargetType | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.IN_PLACE
     - typings.awsSdk.awsSdkStrings.BLUE_GREEN
     - java.lang.String
   */
   type DeploymentType = typings.awsSdk.codedeployMod._DeploymentType | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.READY_WAIT
     - typings.awsSdk.awsSdkStrings.TERMINATION_WAIT
     - java.lang.String
   */
   type DeploymentWaitType = typings.awsSdk.codedeployMod._DeploymentWaitType | java.lang.String
+  
   type DeploymentsInfoList = js.Array[typings.awsSdk.codedeployMod.DeploymentInfo]
+  
   type DeploymentsList = js.Array[typings.awsSdk.codedeployMod.DeploymentId]
+  
   type Description = java.lang.String
+  
   type Duration = scala.Double
+  
   type EC2TagFilterList = js.Array[typings.awsSdk.codedeployMod.EC2TagFilter]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.KEY_ONLY
     - typings.awsSdk.awsSdkStrings.VALUE_ONLY
@@ -129,17 +174,29 @@ package object codedeployMod {
     - java.lang.String
   */
   type EC2TagFilterType = typings.awsSdk.codedeployMod._EC2TagFilterType | java.lang.String
+  
   type EC2TagSetList = js.Array[typings.awsSdk.codedeployMod.EC2TagFilterList]
+  
   type ECSClusterName = java.lang.String
+  
   type ECSServiceList = js.Array[typings.awsSdk.codedeployMod.ECSService]
+  
   type ECSServiceName = java.lang.String
+  
   type ECSTaskSetCount = scala.Double
+  
   type ECSTaskSetIdentifier = java.lang.String
+  
   type ECSTaskSetList = js.Array[typings.awsSdk.codedeployMod.ECSTaskSet]
+  
   type ECSTaskSetStatus = java.lang.String
+  
   type ELBInfoList = js.Array[typings.awsSdk.codedeployMod.ELBInfo]
+  
   type ELBName = java.lang.String
+  
   type ETag = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AGENT_ISSUE
     - typings.awsSdk.awsSdkStrings.ALARM_ACTIVE
@@ -178,8 +235,11 @@ package object codedeployMod {
     - java.lang.String
   */
   type ErrorCode = typings.awsSdk.codedeployMod._ErrorCode | java.lang.String
+  
   type ErrorMessage = java.lang.String
+  
   type ExternalId = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.DISALLOW
     - typings.awsSdk.awsSdkStrings.OVERWRITE
@@ -187,30 +247,45 @@ package object codedeployMod {
     - java.lang.String
   */
   type FileExistsBehavior = typings.awsSdk.codedeployMod._FileExistsBehavior | java.lang.String
+  
   type FilterValue = java.lang.String
+  
   type FilterValueList = js.Array[typings.awsSdk.codedeployMod.FilterValue]
+  
   type GitHubAccountTokenName = java.lang.String
+  
   type GitHubAccountTokenNameList = js.Array[typings.awsSdk.codedeployMod.GitHubAccountTokenName]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.DISCOVER_EXISTING
     - typings.awsSdk.awsSdkStrings.COPY_AUTO_SCALING_GROUP
     - java.lang.String
   */
   type GreenFleetProvisioningAction = typings.awsSdk.codedeployMod._GreenFleetProvisioningAction | java.lang.String
+  
   type IamSessionArn = java.lang.String
+  
   type IamUserArn = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.TERMINATE
     - typings.awsSdk.awsSdkStrings.KEEP_ALIVE
     - java.lang.String
   */
   type InstanceAction = typings.awsSdk.codedeployMod._InstanceAction | java.lang.String
+  
   type InstanceArn = java.lang.String
+  
   type InstanceCount = scala.Double
+  
   type InstanceId = java.lang.String
+  
   type InstanceInfoList = js.Array[typings.awsSdk.codedeployMod.InstanceInfo]
+  
   type InstanceName = java.lang.String
+  
   type InstanceNameList = js.Array[typings.awsSdk.codedeployMod.InstanceName]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Pending_
     - typings.awsSdk.awsSdkStrings.InProgress_
@@ -222,19 +297,28 @@ package object codedeployMod {
     - java.lang.String
   */
   type InstanceStatus = typings.awsSdk.codedeployMod._InstanceStatus | java.lang.String
+  
   type InstanceStatusList = js.Array[typings.awsSdk.codedeployMod.InstanceStatus]
+  
   type InstanceSummaryList = js.Array[typings.awsSdk.codedeployMod.InstanceSummary]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Blue_
     - typings.awsSdk.awsSdkStrings.Green_
     - java.lang.String
   */
   type InstanceType = typings.awsSdk.codedeployMod._InstanceType | java.lang.String
+  
   type InstanceTypeList = js.Array[typings.awsSdk.codedeployMod.InstanceType]
+  
   type InstancesList = js.Array[typings.awsSdk.codedeployMod.InstanceId]
+  
   type Key = java.lang.String
+  
   type LambdaFunctionAlias = java.lang.String
+  
   type LambdaFunctionName = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Success_
     - typings.awsSdk.awsSdkStrings.ScriptMissing
@@ -245,9 +329,13 @@ package object codedeployMod {
     - java.lang.String
   */
   type LifecycleErrorCode = typings.awsSdk.codedeployMod._LifecycleErrorCode | java.lang.String
+  
   type LifecycleEventHookExecutionId = java.lang.String
+  
   type LifecycleEventList = js.Array[typings.awsSdk.codedeployMod.LifecycleEvent]
+  
   type LifecycleEventName = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Pending_
     - typings.awsSdk.awsSdkStrings.InProgress_
@@ -258,7 +346,9 @@ package object codedeployMod {
     - java.lang.String
   */
   type LifecycleEventStatus = typings.awsSdk.codedeployMod._LifecycleEventStatus | java.lang.String
+  
   type LifecycleMessage = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.include_
     - typings.awsSdk.awsSdkStrings.exclude_
@@ -266,32 +356,49 @@ package object codedeployMod {
     - java.lang.String
   */
   type ListStateFilterAction = typings.awsSdk.codedeployMod._ListStateFilterAction | java.lang.String
+  
   type ListenerArn = java.lang.String
+  
   type ListenerArnList = js.Array[typings.awsSdk.codedeployMod.ListenerArn]
+  
   type LogTail = java.lang.String
+  
   type Message = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.HOST_COUNT
     - typings.awsSdk.awsSdkStrings.FLEET_PERCENT
     - java.lang.String
   */
   type MinimumHealthyHostsType = typings.awsSdk.codedeployMod._MinimumHealthyHostsType | java.lang.String
+  
   type MinimumHealthyHostsValue = scala.Double
+  
   type NextToken = java.lang.String
+  
   type NullableBoolean = scala.Boolean
+  
   type OnPremisesTagSetList = js.Array[typings.awsSdk.codedeployMod.TagFilterList]
+  
   type Percentage = scala.Double
+  
   type RawStringContent = java.lang.String
+  
   type RawStringSha256 = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Registered_
     - typings.awsSdk.awsSdkStrings.Deregistered_
     - java.lang.String
   */
   type RegistrationStatus = typings.awsSdk.codedeployMod._RegistrationStatus | java.lang.String
+  
   type Repository = java.lang.String
+  
   type RevisionInfoList = js.Array[typings.awsSdk.codedeployMod.RevisionInfo]
+  
   type RevisionLocationList = js.Array[typings.awsSdk.codedeployMod.RevisionLocation]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.S3
     - typings.awsSdk.awsSdkStrings.GitHub_
@@ -300,23 +407,31 @@ package object codedeployMod {
     - java.lang.String
   */
   type RevisionLocationType = typings.awsSdk.codedeployMod._RevisionLocationType | java.lang.String
+  
   type Role = java.lang.String
+  
   type S3Bucket = java.lang.String
+  
   type S3Key = java.lang.String
+  
   type ScriptName = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ascending__
     - typings.awsSdk.awsSdkStrings.descending__
     - java.lang.String
   */
   type SortOrder = typings.awsSdk.codedeployMod._SortOrder | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Pending_
     - typings.awsSdk.awsSdkStrings.Succeeded_
     - java.lang.String
   */
   type StopStatus = typings.awsSdk.codedeployMod._StopStatus | java.lang.String
+  
   type TagFilterList = js.Array[typings.awsSdk.codedeployMod.TagFilter]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.KEY_ONLY
     - typings.awsSdk.awsSdkStrings.VALUE_ONLY
@@ -324,27 +439,39 @@ package object codedeployMod {
     - java.lang.String
   */
   type TagFilterType = typings.awsSdk.codedeployMod._TagFilterType | java.lang.String
+  
   type TagKeyList = js.Array[typings.awsSdk.codedeployMod.Key]
+  
   type TagList = js.Array[typings.awsSdk.codedeployMod.Tag]
+  
   type TargetArn = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.TargetStatus
     - typings.awsSdk.awsSdkStrings.ServerInstanceLabel
     - java.lang.String
   */
   type TargetFilterName = typings.awsSdk.codedeployMod._TargetFilterName | java.lang.String
+  
   type TargetFilters = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codedeployMod.FilterValueList]
+  
   type TargetGroupInfoList = js.Array[typings.awsSdk.codedeployMod.TargetGroupInfo]
+  
   type TargetGroupName = java.lang.String
+  
   type TargetGroupPairInfoList = js.Array[typings.awsSdk.codedeployMod.TargetGroupPairInfo]
+  
   type TargetId = java.lang.String
+  
   type TargetIdList = js.Array[typings.awsSdk.codedeployMod.TargetId]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Blue_
     - typings.awsSdk.awsSdkStrings.Green_
     - java.lang.String
   */
   type TargetLabel = typings.awsSdk.codedeployMod._TargetLabel | java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Pending_
     - typings.awsSdk.awsSdkStrings.InProgress_
@@ -356,8 +483,11 @@ package object codedeployMod {
     - java.lang.String
   */
   type TargetStatus = typings.awsSdk.codedeployMod._TargetStatus | java.lang.String
+  
   type Time = typings.std.Date
+  
   type Timestamp = typings.std.Date
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.TimeBasedCanary
     - typings.awsSdk.awsSdkStrings.TimeBasedLinear
@@ -365,8 +495,11 @@ package object codedeployMod {
     - java.lang.String
   */
   type TrafficRoutingType = typings.awsSdk.codedeployMod._TrafficRoutingType | java.lang.String
+  
   type TrafficWeight = scala.Double
+  
   type TriggerConfigList = js.Array[typings.awsSdk.codedeployMod.TriggerConfig]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.DeploymentStart
     - typings.awsSdk.awsSdkStrings.DeploymentSuccess
@@ -381,13 +514,21 @@ package object codedeployMod {
     - java.lang.String
   */
   type TriggerEventType = typings.awsSdk.codedeployMod._TriggerEventType | java.lang.String
+  
   type TriggerEventTypeList = js.Array[typings.awsSdk.codedeployMod.TriggerEventType]
+  
   type TriggerName = java.lang.String
+  
   type TriggerTargetArn = java.lang.String
+  
   type Value = java.lang.String
+  
   type Version = java.lang.String
+  
   type VersionId = java.lang.String
+  
   type WaitTimeInMins = scala.Double
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2014-10-06`
     - typings.awsSdk.awsSdkStrings.latest_

@@ -1,7 +1,7 @@
 
 # Scala.js typings for twilio-notifications
 
-Typings are for version 0.5.9
+Typings are for version 0.5.11
 
 ## Library description:
 Client library for Twilio Notifications service
@@ -11,8 +11,8 @@ Client library for Twilio Notifications service
 | Full name          | twilio-notifications |
 | Keywords           | - |
 | # releases         | 17 |
-| # dependents       | 3 |
-| # downloads        | 699345 |
+| # dependents       | 4 |
+| # downloads        | 2379284 |
 | # stars            | 0 |
 
 ## Links

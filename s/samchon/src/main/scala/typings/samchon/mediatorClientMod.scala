@@ -8,11 +8,12 @@ import typings.samchon.parallelSystemArrayMediatorMod.ParallelSystemArrayMediato
 import typings.samchon.parallelSystemMod.ParallelSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/parallel/derived/MediatorClient", JSImport.Namespace)
 @js.native
 object mediatorClientMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.samchon.iprotocolMod.IProtocol because Already inherited
   - typings.samchon.slaveSystemMod.SlaveSystem because Already inherited
@@ -34,19 +35,13 @@ object mediatorClientMod extends js.Object {
       * @param port Port number to connect.
       */
     def this(systemArray: ParallelSystemArrayMediator[ParallelSystem], ip: String, port: Double) = this()
-    /**
-      * @hidden
-      */
-    var ip: js.Any = js.native
-    /**
-      * @hidden
-      */
-    var port: js.Any = js.native
+    
     /**
       * @inheritdoc
       */
     def connect(): Unit = js.native
     def connect(ip: String, port: Double): Unit = js.native
+    
     /**
       * Factory method creating {@link IServerConnector} object.
       *
@@ -61,6 +56,16 @@ object mediatorClientMod extends js.Object {
       * @return A newly created {@link IServerConnector} object.
       */
     /* protected */ def createServerConnector(): IServerConnector = js.native
+    
+    /**
+      * @hidden
+      */
+    var ip: js.Any = js.native
+    
+    /**
+      * @hidden
+      */
+    var port: js.Any = js.native
   }
   
   @js.native
@@ -68,6 +73,4 @@ object mediatorClientMod extends js.Object {
   
   @js.native
   class MediatorWebClient () extends MediatorClient
-  
 }
-

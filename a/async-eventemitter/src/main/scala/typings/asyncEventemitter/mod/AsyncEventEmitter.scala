@@ -4,7 +4,7 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Parameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An EventEmitter that supports serial execution of asynchronous event listeners.
@@ -13,11 +13,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AsyncEventEmitter[T /* <: EventMap */] extends EventEmitter {
+  
   // https://github.com/andywer/typed-emitter/blob/master/index.d.ts
   def addListener[E /* <: /* keyof T */ String */](
     event: E with String,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
+  
   /**
     * Adds a listener after the target listener in the listeners array for the specified event.
     * @param event EventMap key (event name)
@@ -30,6 +32,7 @@ trait AsyncEventEmitter[T /* <: EventMap */] extends EventEmitter {
     target: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
+  
   /**
     * Adds a listener at the specified index in the listeners array for the specified event.
     * @param event EventMap key (event name)
@@ -42,6 +45,7 @@ trait AsyncEventEmitter[T /* <: EventMap */] extends EventEmitter {
     index: Double,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
+  
   /**
     * Adds a listener before the target listener in the listeners array for the specified event.
     * @param event EventMap key (event name)
@@ -54,6 +58,7 @@ trait AsyncEventEmitter[T /* <: EventMap */] extends EventEmitter {
     target: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
+  
   /**
     * Executes all listeners for the event in order with the supplied data argument.
     * The optional callback is called when all of the listeners are done.
@@ -67,6 +72,7 @@ trait AsyncEventEmitter[T /* <: EventMap */] extends EventEmitter {
       /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
     ]
   ): Boolean = js.native
+  
   /**
     * Adds a listener to the beginning of the listeners array for the specified event.
     * @param event EventMap key (event name)
@@ -77,25 +83,29 @@ trait AsyncEventEmitter[T /* <: EventMap */] extends EventEmitter {
     event: E with String,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
+  
   def on[E /* <: /* keyof T */ String */](
     event: E with String,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
+  
   def once[E /* <: /* keyof T */ String */](
     event: E with String,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
+  
   def prependListener[E /* <: /* keyof T */ String */](
     event: E with String,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
+  
   def prependOnceListener[E /* <: /* keyof T */ String */](
     event: E with String,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
+  
   def removeListener[E /* <: /* keyof T */ String */](
     event: E with String,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
 }
-

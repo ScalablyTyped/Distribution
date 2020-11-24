@@ -6,22 +6,25 @@ import typings.openui5.sap.ui.core.mvc.View
 import typings.openui5.sap.ui.core.routing.Targets
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UIComponent extends Component {
+  
   /**
     * Returns an element by its ID in the context of the component.
     * @param sId Component local ID of the element
     * @returns element by its ID or <code>undefined</code>
     */
   def byId(sId: String): Element = js.native
+  
   /**
     * The method to create the content (UI Control Tree) of the Component.This method has to be
     * overwritten in the implementation of the componentif the root view is not declared in the component
     * metadata.
     */
   def createContent(): Unit = js.native
+  
   /**
     * Convert the given component local element ID to a globally unique IDby prefixing it with the
     * component ID.
@@ -29,6 +32,7 @@ trait UIComponent extends Component {
     * @returns prefixed id
     */
   def createId(sId: String): String = js.native
+  
   /**
     * A method to be implemented by UIComponents, returning the flag whether to prefixthe IDs of controls
     * automatically or not if the controls are created insidethe {@link
@@ -40,6 +44,7 @@ trait UIComponent extends Component {
     * @returns true, if the Controls IDs should be prefixed automatically
     */
   def getAutoPrefixId(): Boolean = js.native
+  
   /**
     * Returns the local ID of an element by removing the component ID prefix or<code>null</code> if the ID
     * does not contain a prefix.
@@ -48,6 +53,7 @@ trait UIComponent extends Component {
     * @returns ID without prefix or <code>null</code>
     */
   def getLocalId(sId: String): String = js.native
+  
   /**
     * Returns the reference to the router instance which has been created bythe UIComponent once the
     * routes in the routing metadata has been defined.
@@ -55,6 +61,7 @@ trait UIComponent extends Component {
     * @returns the router instance
     */
   def getRouter(): Router = js.native
+  
   def getRouterFor(oControllerOrView: Controller): Router = js.native
   /**
     * Returns the reference to the router instance. The passed controller or viewhas to be created in the
@@ -67,6 +74,7 @@ trait UIComponent extends Component {
     * @returns the router instance
     */
   def getRouterFor(oControllerOrView: View): Router = js.native
+  
   /**
     * Returns the reference to the Targets instance which has been created bythe UIComponent once the
     * targets in the routing metadata has been defined.If routes have been defined, it will be the Targets
@@ -75,28 +83,33 @@ trait UIComponent extends Component {
     * @returns the targets instance
     */
   def getTargets(): Targets = js.native
+  
   /**
     * Returns the reference to the UIArea of the container.
     * @returns reference to the UIArea of the container
     */
   def getUIArea(): UIArea = js.native
+  
   /**
     * Function is called when the rendering of the ComponentContainer is completed.Applications must not
     * call this hook method directly, it is called from ComponentContainer.Subclasses of UIComponent
     * override this hook to implement any necessary actions after the rendering.
     */
   def onAfterRendering(): Unit = js.native
+  
   /**
     * Function is called when the rendering of the ComponentContainer is started.Applications must not
     * call this hook method directly, it is called from ComponentContainer.Subclasses of UIComponent
     * override this hook to implement any necessary actions before the rendering.
     */
   def onBeforeRendering(): Unit = js.native
+  
   /**
     * Renders the the root control of the UIComponent.
     * @param oRenderManager a RenderManager instance
     */
   def render(oRenderManager: RenderManager): Unit = js.native
+  
   /**
     * Sets the reference to the ComponentContainer - later required for thedetermination of the UIArea for
     * the UIComponent.
@@ -105,4 +118,3 @@ trait UIComponent extends Component {
     */
   def setContainer(oContainer: ComponentContainer): UIComponent = js.native
 }
-

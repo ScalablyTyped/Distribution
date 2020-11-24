@@ -11,8 +11,8 @@ PouchDB upsert and putIfNotExists functions
 | Full name          | pouchdb-upsert |
 | Keywords           | pouch, pouchdb, upsert, putIfNotExists, couch, couchdb |
 | # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 135016 |
+| # dependents       | 46 |
+| # downloads        | 150644 |
 | # stars            | 0 |
 
 ## Links

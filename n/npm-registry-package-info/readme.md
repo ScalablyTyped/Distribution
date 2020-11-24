@@ -12,7 +12,7 @@ Get package info for one or more packages.
 | Keywords           | npm, list, info, details, show, view, url, cli, utility, utilities, utils, util, package, registry, meta, pkg, get |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 17152 |
+| # downloads        | 13576 |
 | # stars            | 0 |
 
 ## Links

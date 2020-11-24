@@ -9,10 +9,11 @@ import typings.googleapis.v1p2beta1Mod.videointelligenceV1p2beta1.Options
 import typings.googleapis.v1p2beta1Mod.videointelligenceV1p2beta1.Videointelligence
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Fn143 extends js.Object {
+  
   def apply(options: Options): Videointelligence = js.native
   def apply(options: typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1.Options): typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1.Videointelligence = js.native
   def apply(options: typings.googleapis.videointelligenceV1Mod.videointelligenceV1.Options): typings.googleapis.videointelligenceV1Mod.videointelligenceV1.Videointelligence = js.native
@@ -24,4 +25,3 @@ trait Fn143 extends js.Object {
   def apply(version: v1p2beta1): Videointelligence = js.native
   def apply(version: v1p3beta1): typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1.Videointelligence = js.native
 }
-

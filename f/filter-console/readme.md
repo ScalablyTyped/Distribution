@@ -12,7 +12,7 @@ Filter out unwanted `console.log()` output
 | Keywords           | filter, console, console-log, log, logging, exclude, exclusion, devtools, pattern, patterns, test, testing, mock, electron, react, proptypes |
 | # releases         | 4 |
 | # dependents       | 3 |
-| # downloads        | 11047 |
+| # downloads        | 29049 |
 | # stars            | 0 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.ndnJs.mod
 import typings.ndnJs.faceMod.FaceCtorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ndn-js", "Face")
 @js.native
@@ -15,11 +15,10 @@ class Face ()
     connectionInfo: typings.ndnJs.transportMod.TransportConnectionInfo
   ) = this()
 }
-
 /* static members */
 @JSImport("ndn-js", "Face")
 @js.native
 object Face extends js.Object {
+  
   def getMaxNdnPacketSize(): Double = js.native
 }
-

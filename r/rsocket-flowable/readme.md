@@ -10,9 +10,9 @@ ReactiveStreams for JavaScript
 | ------------------ | :-------------: |
 | Full name          | rsocket-flowable |
 | Keywords           | - |
-| # releases         | 14 |
+| # releases         | 6 |
 | # dependents       | 17 |
-| # downloads        | 137179 |
+| # downloads        | 492726 |
 | # stars            | 0 |
 
 ## Links

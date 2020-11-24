@@ -6,7 +6,7 @@ import typings.relayRuntime.relayObservableMod.Source
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("relay-runtime", "Observable")
 @js.native
@@ -14,17 +14,19 @@ class Observable[T] protected () extends RelayObservable[T] {
   // Use RelayObservable.create(source);
   protected def this(source: scala.Nothing) = this()
 }
-
 /* static members */
 @JSImport("relay-runtime", "Observable")
 @js.native
 object Observable extends js.Object {
+  
   def create[V](source: Source[V]): RelayObservable[V] = js.native
+  
   /**
     * Accepts various kinds of data sources, and always returns a RelayObservable
     * useful for accepting the result of a user-provided FetchFunction.
     */
   def from[V](obj: ObservableFromValue[V]): RelayObservable[V] = js.native
+  
   /**
     * When an emitted error event is not handled by an Observer, it is reported
     * to the host environment (what the ESObservable spec refers to as
@@ -52,4 +54,3 @@ object Observable extends js.Object {
     */
   def onUnhandledError(callback: js.Function2[/* error */ Error, /* isUncaughtThrownError */ Boolean, Unit]): Unit = js.native
 }
-

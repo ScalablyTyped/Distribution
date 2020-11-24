@@ -11,8 +11,8 @@ Keep writing to the same line in the terminal. Very useful when you write progre
 | Full name          | single-line-log |
 | Keywords           | single, line, log, output, overwrite, collapse, stdout, terminal, tty, cli, shell |
 | # releases         | 1 |
-| # dependents       | 234 |
-| # downloads        | 10736081 |
+| # dependents       | 289 |
+| # downloads        | 11708870 |
 | # stars            | 13 |
 
 ## Links

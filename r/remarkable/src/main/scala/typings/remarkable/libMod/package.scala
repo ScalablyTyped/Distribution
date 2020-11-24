@@ -2,13 +2,15 @@ package typings.remarkable
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object libMod {
+  
   // ---------------
   // Specific Core Tokens
   // ---------------
   type AbbrToken = typings.remarkable.libMod.TagToken
+  
   /**
     * Return `true` if the parsing function has recognized the current position
     * in the input as one if its tokens.
@@ -20,26 +22,37 @@ package object libMod {
     /* silent */ scala.Boolean, 
     scala.Boolean
   ]
+  
   // ---------------
   // Specific Block Tokens
   // ---------------
   type BlockquoteToken = typings.remarkable.libMod.TagToken
+  
   type BulletListToken = typings.remarkable.libMod.TagToken
+  
   /**
     * Return `true` if the parsing function has recognized the current position
     * in the input as one if its tokens.
     */
   type CoreParsingRule = js.Function1[/* state */ typings.remarkable.libMod.StateInline, scala.Boolean]
+  
   type DelToken = typings.remarkable.libMod.TagToken
+  
   type EmToken = typings.remarkable.libMod.TagToken
+  
   type Env = org.scalablytyped.runtime.StringDictionary[js.Any]
+  
   type FootnoteBlockToken = typings.remarkable.libMod.TagToken
+  
   type FootnoteReferenceToken = typings.remarkable.libMod.FootnoteGenericToken
+  
   type FootnoteToken = typings.remarkable.libMod.FootnoteGenericToken
+  
   type GetBreak = typings.remarkable.libMod.Rule[
     typings.remarkable.libMod.ContentToken, 
     typings.remarkable.remarkableStrings._empty | typings.remarkable.remarkableStrings.Linefeed
   ]
+  
   /**
     * Return `true` if the parsing function has recognized the current position
     * in the input as one if its tokens.
@@ -49,21 +62,30 @@ package object libMod {
     /* silent */ scala.Boolean, 
     scala.Boolean
   ]
+  
   type InsToken = typings.remarkable.libMod.TagToken
+  
   type LHeadingCloseToken = typings.remarkable.libMod.HeadingCloseToken
+  
   type LHeadingOpenToken = typings.remarkable.libMod.HeadingOpenToken
+  
   // ---------------
   // Specific Block Tokens
   // ---------------
   type LinkToken = typings.remarkable.libMod.TagToken
+  
   type ListItemToken = typings.remarkable.libMod.TagToken
+  
   type MarkToken = typings.remarkable.libMod.TagToken
+  
   type OrderedListToken = typings.remarkable.libMod.TagToken
+  
   type Plugin = js.Function2[
     /* md */ typings.remarkable.libMod.Remarkable, 
     /* options */ js.UndefOr[js.Any], 
     scala.Unit
   ]
+  
   type Rule[T /* <: typings.remarkable.libMod.TagToken */, R /* <: java.lang.String */] = js.Function5[
     /* tokens */ js.Array[T], 
     /* idx */ scala.Double, 
@@ -72,13 +94,21 @@ package object libMod {
     /* instance */ js.UndefOr[typings.remarkable.libMod.Remarkable], 
     R
   ]
+  
   type StrongToken = typings.remarkable.libMod.TagToken
+  
   type TBodyToken = typings.remarkable.libMod.TagToken
+  
   type TDToken = typings.remarkable.libMod.TagToken
+  
   type THToken = typings.remarkable.libMod.TagToken
+  
   type THeadToken = typings.remarkable.libMod.TagToken
+  
   type TRToken = typings.remarkable.libMod.TagToken
+  
   type TableToken = typings.remarkable.libMod.TagToken
+  
   /* Rewritten from type alias, can be one of: 
     - typings.remarkable.libMod.BlockContentToken
     - typings.remarkable.libMod.ContentToken

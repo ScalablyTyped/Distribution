@@ -2,10 +2,11 @@ package typings.awsKcl.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Checkpointer extends js.Object {
+  
   /**
     * Checkpoints at the checkpoint will be at the end of the most
     * recently-delivered list of records.
@@ -20,4 +21,3 @@ trait Checkpointer extends js.Object {
     */
   def checkpoint(sequenceNumber: String, callback: CheckpointCallback): Unit = js.native
 }
-

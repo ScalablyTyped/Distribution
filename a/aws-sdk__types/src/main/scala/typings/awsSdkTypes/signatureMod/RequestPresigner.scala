@@ -3,10 +3,11 @@ package typings.awsSdkTypes.signatureMod
 import typings.awsSdkTypes.httpMod.HttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RequestPresigner extends js.Object {
+  
   /**
     * Signs a request for future use.
     *
@@ -14,11 +15,8 @@ trait RequestPresigner extends js.Object {
     * passed or the underlying credentials have expired.
     *
     * @param requestToSign The request that should be signed.
-    * @param expiration    The time at which the signed request should no
-    *                      longer be honored.
     * @param options       Additional signing options.
     */
-  def presignRequest[StreamType](requestToSign: HttpRequest[StreamType], expiration: DateInput): js.Promise[HttpRequest[StreamType]] = js.native
-  def presignRequest[StreamType](requestToSign: HttpRequest[StreamType], expiration: DateInput, options: RequestSigningArguments): js.Promise[HttpRequest[StreamType]] = js.native
+  def presign(requestToSign: HttpRequest): js.Promise[HttpRequest] = js.native
+  def presign(requestToSign: HttpRequest, options: RequestPresigningArguments): js.Promise[HttpRequest] = js.native
 }
-

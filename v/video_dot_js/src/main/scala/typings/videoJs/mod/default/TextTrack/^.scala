@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.videoJs.mod.videojs.TextTrackOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js", "TextTrack")
 @js.native
@@ -47,7 +47,6 @@ class ^ protected ()
     */
   def this(options: TextTrackOptions) = this()
 }
-
 @JSImport("video.js", "TextTrack")
 @js.native
 object ^
@@ -88,4 +87,3 @@ object ^
   */
 Instantiable1[/* options */ TextTrackOptions, typings.videoJs.mod.videojs.TextTrack]
     ]
-

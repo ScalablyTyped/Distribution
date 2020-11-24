@@ -11,19 +11,29 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.validationErrorOccurred
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BootstrapUploadControl extends Control {
+  
   def addFileInput(): Unit = js.native
+  
   def cancel(): Unit = js.native
+  
   def clearText(): Unit = js.native
+  
   def getAddButtonText(): String = js.native
+  
   def getEnabled(): Boolean = js.native
+  
   def getFileInputCount(): Double = js.native
+  
   def getSelectedFiles(inputIndex: Double): js.Array[BootstrapUploadControlFile] = js.native
+  
   def getText(index: Double): String = js.native
+  
   def getUploadButtonText(): String = js.native
+  
   def off(
     eventName: js.UndefOr[scala.Nothing],
     callback: js.ThisFunction1[
@@ -125,6 +135,7 @@ trait BootstrapUploadControl extends Control {
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("on")
   def on_dropZoneEnter(
     eventName: dropZoneEnter,
@@ -198,6 +209,7 @@ trait BootstrapUploadControl extends Control {
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("once")
   def once_dropZoneEnter(
     eventName: dropZoneEnter,
@@ -271,15 +283,22 @@ trait BootstrapUploadControl extends Control {
       Unit
     ]
   ): this.type = js.native
+  
   def removeFileFromSelection(fileIndex: Double): Unit = js.native
   def removeFileFromSelection(file: BootstrapUploadControlFile): Unit = js.native
+  
    // tslint:disable-line:unified-signatures
   def removeFileInput(index: Double): Unit = js.native
+  
   def setAddButtonText(text: String): Unit = js.native
+  
   def setDialogTriggerID(ids: String): Unit = js.native
+  
   def setEnabled(enabled: Boolean): Unit = js.native
+  
   def setFileInputCount(count: Double): Unit = js.native
+  
   def setUploadButtonText(text: String): Unit = js.native
+  
   def upload(): Unit = js.native
 }
-

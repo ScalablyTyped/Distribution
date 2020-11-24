@@ -10,10 +10,10 @@ Terminal task list
 | ------------------ | :-------------: |
 | Full name          | listr |
 | Keywords           | cli, task, list, tasklist, terminal, term, console, ascii, unicode, loading, indicator, progress, busy, wait, idle |
-| # releases         | 5 |
-| # dependents       | 828 |
-| # downloads        | 104977151 |
-| # stars            | 28 |
+| # releases         | 1 |
+| # dependents       | 1162 |
+| # downloads        | 158586478 |
+| # stars            | 29 |
 
 ## Links
 - [Homepage](https://github.com/SamVerschueren/listr#readme)

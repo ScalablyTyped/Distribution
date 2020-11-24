@@ -4,7 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.Property
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A structure for information about contents.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ContentInfo extends js.Object {
+  
   /**
     * Additional attributes.
     *
@@ -24,6 +25,7 @@ trait ContentInfo extends js.Object {
     * The value can be one of the {@link ContentInfoAttribute} constants.
     */
   var Attributes: Double = js.native
+  
   /**
     * This field contains a list with the properties which must be set at a content that was just created using {@link XContentCreator.createNewContent()}
     * before it can be committed (by executing the command "insert" at the new content).
@@ -39,6 +41,7 @@ trait ContentInfo extends js.Object {
     * booleancharbytestringshortlonghyperfloatdouble
     */
   var Properties: SafeArray[Property] = js.native
+  
   /**
     * A type identifier string for a content.
     *
@@ -47,31 +50,36 @@ trait ContentInfo extends js.Object {
     */
   var Type: String = js.native
 }
-
 object ContentInfo {
+  
   @scala.inline
   def apply(Attributes: Double, Properties: SafeArray[Property], Type: String): ContentInfo = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentInfo]
   }
+  
   @scala.inline
   implicit class ContentInfoOps[Self <: ContentInfo] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAttributes(value: Double): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setProperties(value: SafeArray[Property]): Self = this.set("Properties", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -5,11 +5,12 @@ import typings.jsonSchema.mod.JSONSchema6
 import typings.jsonSchema.mod.JSONSchema6Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-jsonschema-form/lib/utils", "computeDefaults")
 @js.native
 object computeDefaults extends js.Object {
+  
   def apply[T](
     schema: JSONSchema6,
     parentDefaults: js.Array[js.UndefOr[JSONSchema6Type]],
@@ -36,4 +37,3 @@ object computeDefaults extends js.Object {
     includeUndefinedValues: Boolean
   ): js.Array[js.UndefOr[JSONSchema6Type]] = js.native
 }
-

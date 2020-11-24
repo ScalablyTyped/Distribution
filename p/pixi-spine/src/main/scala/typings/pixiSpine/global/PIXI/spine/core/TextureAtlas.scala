@@ -2,7 +2,7 @@ package typings.pixiSpine.global.PIXI.spine.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PIXI.spine.core.TextureAtlas")
 @js.native
@@ -66,4 +66,3 @@ class TextureAtlas ()
     callback: js.Function1[/* obj */ typings.pixiSpine.PIXI.spine.core.TextureAtlas, _]
   ) = this()
 }
-

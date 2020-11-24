@@ -11,8 +11,8 @@ A small ajax lib
 | Full name          | nanoajax |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 103714 |
+| # dependents       | 18 |
+| # downloads        | 94038 |
 | # stars            | 0 |
 
 ## Links

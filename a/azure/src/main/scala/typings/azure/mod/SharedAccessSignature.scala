@@ -2,20 +2,18 @@ package typings.azure.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "SharedAccessSignature")
 @js.native
 class SharedAccessSignature protected () extends js.Object {
   def this(storageAccount: String, storageAccessKey: String, permissionSet: js.Array[String]) = this()
-  var permissionSet: js.Array[String] = js.native
-  var signer: HmacSha256Sign = js.native
-  var storageAccessKey: String = js.native
-  var storageAccount: String = js.native
+  
   /**
     * Generates the shared access signature for a resource.
     */
   def _generateSignature(path: String, resourceType: String, sharedAccessPolicy: SharedAccessPolicy): String = js.native
+  
   /**
     * Generates the query string for a shared access signature signing.
     */
@@ -25,6 +23,7 @@ class SharedAccessSignature protected () extends js.Object {
     resourceType: String,
     requiredPermissions: js.Array[String]
   ): String = js.native
+  
   /**
     * Generates the query string for a shared access signature signing.
     */
@@ -34,9 +33,17 @@ class SharedAccessSignature protected () extends js.Object {
     resourceType: String,
     sharedAccessPolicy: SharedAccessPolicy
   ): Dictionary[String] = js.native
+  
+  var permissionSet: js.Array[String] = js.native
+  
   /**
     * Signs a request with the signature header.
     */
   def signRequest(webResource: WebResource, callback: ErrorCallback): Unit = js.native
+  
+  var signer: HmacSha256Sign = js.native
+  
+  var storageAccessKey: String = js.native
+  
+  var storageAccount: String = js.native
 }
-

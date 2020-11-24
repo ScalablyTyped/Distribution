@@ -4,11 +4,12 @@ import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.typesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs", "bindNodeCallback")
 @js.native
 object bindNodeCallback extends js.Object {
+  
   def apply(callbackFunc: js.Function): js.Function1[/* repeated */ js.Any, Observable[js.Array[_]]] = js.native
   def apply(callbackFunc: js.Function1[/* callback */ js.Function1[/* err */ js.Any, _], _]): js.Function0[Observable[Unit]] = js.native
   def apply(
@@ -108,4 +109,3 @@ object bindNodeCallback extends js.Object {
     Observable[Unit]
   ] = js.native
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Services.Store
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait StorePackageUpdateState extends js.Object
-
 /** Defines values that represent the state of a package download or installation request. */
 @JSGlobal("Windows.Services.Store.StorePackageUpdateState")
 @js.native
 object StorePackageUpdateState extends js.Object {
+  
   /** The download or installation of the package updates was canceled. */
   @js.native
   sealed trait canceled extends StorePackageUpdateState
@@ -46,6 +46,4 @@ object StorePackageUpdateState extends js.Object {
   /** The download of the package updates has not started. */
   @js.native
   sealed trait pending extends StorePackageUpdateState
-  
 }
-

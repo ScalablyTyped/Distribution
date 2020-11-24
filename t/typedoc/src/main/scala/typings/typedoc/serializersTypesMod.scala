@@ -2,11 +2,12 @@ package typings.typedoc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc/dist/lib/serialization/serializers/types", JSImport.Namespace)
 @js.native
 object serializersTypesMod extends js.Object {
+  
   @js.native
   class ArrayTypeSerializer ()
     extends typings.typedoc.serializersTypesArrayMod.ArrayTypeSerializer
@@ -30,6 +31,10 @@ object serializersTypesMod extends js.Object {
   @js.native
   class IntrinsicTypeSerializer ()
     extends typings.typedoc.serializersTypesIntrinsicMod.IntrinsicTypeSerializer
+  
+  @js.native
+  class NamedTupleMemberTypeSerializer ()
+    extends typings.typedoc.serializersTypesTupleMod.NamedTupleMemberTypeSerializer
   
   @js.native
   class PredicateTypeSerializer ()
@@ -66,6 +71,12 @@ object serializersTypesMod extends js.Object {
   @js.native
   class TypeSerializer ()
     extends typings.typedoc.serializersTypesAbstractMod.TypeSerializer
+  /* static members */
+  @js.native
+  object TypeSerializer extends js.Object {
+    
+    var PRIORITY: Double = js.native
+  }
   
   @js.native
   class UnionTypeSerializer ()
@@ -74,12 +85,4 @@ object serializersTypesMod extends js.Object {
   @js.native
   class UnknownTypeSerializer ()
     extends typings.typedoc.serializersTypesUnknownMod.UnknownTypeSerializer
-  
-  /* static members */
-  @js.native
-  object TypeSerializer extends js.Object {
-    var PRIORITY: Double = js.native
-  }
-  
 }
-

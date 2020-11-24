@@ -3,7 +3,7 @@ package typings.luminoCollections.linkedlistMod.LinkedList
 import typings.luminoAlgorithm.iterMod.IIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A forward iterator for nodes in a linked list.
@@ -17,6 +17,6 @@ import scala.scalajs.js.annotation._
   */
 class ForwardNodeIterator[T] () extends IIterator[INode[T]] {
   def this(node: INode[T]) = this()
+  
   var _node: js.Any = js.native
 }
-

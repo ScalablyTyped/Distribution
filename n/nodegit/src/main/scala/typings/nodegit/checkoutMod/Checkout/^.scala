@@ -9,22 +9,26 @@ import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.treeMod.Tree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodegit/checkout", "Checkout")
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Patch head checkout to automatically coerce objects.
     */
   def head(repo: Repository): js.Promise[Unit] = js.native
   def head(repo: Repository, options: CheckoutOptions): js.Promise[Unit] = js.native
+  
   /**
     * Patch index checkout to automatically coerce objects.
     */
   def index(repo: Repository, The: Index): js.Promise[Unit] = js.native
   def index(repo: Repository, The: Index, options: CheckoutOptions): js.Promise[Unit] = js.native
+  
   def initOptions(opts: CheckoutOptions, version: Double): Double = js.native
+  
   def tree(repo: Repository, treeish: Commit): js.Promise[Unit] = js.native
   def tree(repo: Repository, treeish: Commit, options: CheckoutOptions): js.Promise[Unit] = js.native
   /**
@@ -37,4 +41,3 @@ object ^ extends js.Object {
   def tree(repo: Repository, treeish: Tree): js.Promise[Unit] = js.native
   def tree(repo: Repository, treeish: Tree, options: CheckoutOptions): js.Promise[Unit] = js.native
 }
-

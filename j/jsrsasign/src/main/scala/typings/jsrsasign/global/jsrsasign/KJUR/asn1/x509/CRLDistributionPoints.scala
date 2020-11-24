@@ -3,7 +3,7 @@ package typings.jsrsasign.global.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.anon.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CRLDistributionPoints ASN.1 structure class
@@ -41,4 +41,3 @@ class CRLDistributionPoints ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.CRLDistributionPoints {
   def this(params: Uri) = this()
 }
-

@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/customsearch/v1", "customsearch_v1.Resource$Cse")
 @js.native
 class ResourceCse protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var siterestrict: ResourceCseSiterestrict = js.native
+  
   /**
     * search.cse.list
     * @desc Returns metadata about the search performed, metadata about the
@@ -73,5 +74,6 @@ class ResourceCse protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSearch]
   ): Unit = js.native
+  
+  var siterestrict: ResourceCseSiterestrict = js.native
 }
-

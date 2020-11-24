@@ -12,7 +12,7 @@ JSFL task runner for node.js
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 788 |
+| # downloads        | 742 |
 | # stars            | 0 |
 
 ## Links

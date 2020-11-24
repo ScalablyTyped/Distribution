@@ -11,7 +11,7 @@ A complete and fast template engine fully compatible with twig and similar to ji
 | Keywords           | template, engine, inheritance, twig, jinja, django, swig, consolidate, express |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 7730 |
+| # downloads        | 6068 |
 | # stars            | 2 |
 
 ## Links

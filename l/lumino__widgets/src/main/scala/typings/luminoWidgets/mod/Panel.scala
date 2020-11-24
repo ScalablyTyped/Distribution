@@ -3,7 +3,7 @@ package typings.luminoWidgets.mod
 import typings.luminoWidgets.panelMod.Panel.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets", "Panel")
 @js.native
@@ -16,4 +16,3 @@ class Panel ()
   extends typings.luminoWidgets.panelMod.Panel {
   def this(options: IOptions) = this()
 }
-

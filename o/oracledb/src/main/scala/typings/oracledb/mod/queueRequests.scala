@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This property was removed in node-oracledb 3.0 and queuing was always enabled.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "queueRequests")
 @js.native
 object queueRequests extends TopLevel[Double]
-

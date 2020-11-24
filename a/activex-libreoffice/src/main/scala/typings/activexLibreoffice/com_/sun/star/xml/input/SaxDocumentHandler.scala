@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XLocator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service helps parsing files by providing a SAX document handler interface for a SAX parsers. You have to instantiate this service passing an
@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
 trait SaxDocumentHandler
   extends XDocumentHandler
      with XInitialization
-
 object SaxDocumentHandler {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -39,4 +39,3 @@ object SaxDocumentHandler {
     __obj.asInstanceOf[SaxDocumentHandler]
   }
 }
-

@@ -10,9 +10,9 @@ Websocket Client & Server Library implementing the WebSocket protocol as specifi
 | ------------------ | :-------------: |
 | Full name          | websocket |
 | Keywords           | websocket, websockets, socket, networking, comet, push, RFC-6455, realtime, server, client |
-| # releases         | 7 |
-| # dependents       | 863 |
-| # downloads        | 9244477 |
+| # releases         | 5 |
+| # dependents       | 945 |
+| # downloads        | 16178957 |
 | # stars            | 73 |
 
 ## Links

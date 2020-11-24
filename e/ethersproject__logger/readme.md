@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__logger
 
-Typings are for version 5.0.4
+Typings are for version 5.0.7
 
 ## Library description:
 Logger utility functions for ethers.
@@ -10,9 +10,9 @@ Logger utility functions for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/logger |
 | Keywords           | Ethereum, ethers |
-| # releases         | 13 |
-| # dependents       | 24 |
-| # downloads        | 168377 |
+| # releases         | 19 |
+| # dependents       | 44 |
+| # downloads        | 1795897 |
 | # stars            | 0 |
 
 ## Links

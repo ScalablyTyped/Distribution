@@ -3,7 +3,7 @@ package typings.titanium.global.Titanium.UI.iOS
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Use with <Attribute.value> to write text left to right.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object ATTRIBUTE_WRITING_DIRECTION_LEFT_TO_RIGHT
   extends TopLevel[scala.Nothing]
-

@@ -12,7 +12,7 @@ Stringify an authors object to `name <email> (url)`.
 | Keywords           | author, authors, name, package, parse, person, pkg, stringify, toString, url |
 | # releases         | 0 |
 | # dependents       | 23 |
-| # downloads        | 1219373 |
+| # downloads        | 1228966 |
 | # stars            | 0 |
 
 ## Links

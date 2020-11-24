@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XLocator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes an import filter for XML-based file formats.
@@ -28,8 +28,8 @@ trait XMLImportFilter
      with XInitialization
      with XNamed
      with XDocumentHandler
-
 object XMLImportFilter {
+  
   @scala.inline
   def apply(
     Name: String,
@@ -55,4 +55,3 @@ object XMLImportFilter {
     __obj.asInstanceOf[XMLImportFilter]
   }
 }
-

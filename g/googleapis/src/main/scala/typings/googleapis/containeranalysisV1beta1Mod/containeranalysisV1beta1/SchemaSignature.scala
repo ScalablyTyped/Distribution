@@ -2,7 +2,7 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Verifiers (e.g. Kritis implementations) MUST verify signatures with respect
@@ -27,6 +27,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaSignature extends js.Object {
+  
   /**
     * The identifier for the public key that verifies this signature.   * The
     * `public_key_id` is required.   * The `public_key_id` MUST be an RFC3986
@@ -41,6 +42,7 @@ trait SchemaSignature extends js.Object {
     * &quot;nih:///sha-256;703f68f42aba2c6de30f488a5ea122fef76324679c9bf89791ba95a1271589a5&quot;
     */
   var publicKeyId: js.UndefOr[String] = js.native
+  
   /**
     * The content of the signature, an opaque bytestring. The payload that this
     * signature verifies MUST be unambiguously provided with the Signature
@@ -50,33 +52,39 @@ trait SchemaSignature extends js.Object {
     */
   var signature: js.UndefOr[String] = js.native
 }
-
 object SchemaSignature {
+  
   @scala.inline
   def apply(): SchemaSignature = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSignature]
   }
+  
   @scala.inline
   implicit class SchemaSignatureOps[Self <: SchemaSignature] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setPublicKeyId(value: String): Self = this.set("publicKeyId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePublicKeyId: Self = this.set("publicKeyId", js.undefined)
+    
     @scala.inline
     def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSignature: Self = this.set("signature", js.undefined)
   }
-  
 }
-

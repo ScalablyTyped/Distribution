@@ -15,7 +15,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The {@link AccessibleSlideViewObject} service is implemented by the slides of the slide view of Impress documents.
@@ -29,8 +29,8 @@ trait AccessibleSlideViewObject
      with XAccessibleContext
      with XAccessibleEventBroadcaster
      with XAccessibleComponent
-
 object AccessibleSlideViewObject {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -79,4 +79,3 @@ object AccessibleSlideViewObject {
     __obj.asInstanceOf[AccessibleSlideViewObject]
   }
 }
-

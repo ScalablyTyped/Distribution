@@ -6,16 +6,19 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigtableadmin/v2", "bigtableadmin_v2.Resource$Projects$Instances")
 @js.native
 class ResourceProjectsInstances protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var appProfiles: ResourceProjectsInstancesAppprofiles = js.native
+  
   var clusters: ResourceProjectsInstancesClusters = js.native
+  
   var context: APIRequestContext = js.native
-  var tables: ResourceProjectsInstancesTables = js.native
+  
   /**
     * bigtableadmin.projects.instances.create
     * @desc Create an instance within a project.
@@ -45,6 +48,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.delete
     * @desc Delete an instance from a project.
@@ -73,6 +77,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.get
     * @desc Gets information about an instance.
@@ -101,6 +106,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstance]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.getIamPolicy
     * @desc Gets the access control policy for an instance resource. Returns an
@@ -131,6 +137,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.list
     * @desc Lists information about instances in a project.
@@ -163,6 +170,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListInstancesResponse]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.partialUpdateInstance
     * @desc Partially updates an instance within a project. This method can
@@ -198,6 +206,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.setIamPolicy
     * @desc Sets the access control policy on an instance resource. Replaces
@@ -228,6 +237,9 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
+  var tables: ResourceProjectsInstancesTables = js.native
+  
   /**
     * bigtableadmin.projects.instances.testIamPermissions
     * @desc Returns permissions that the caller has on the specified instance
@@ -261,6 +273,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * bigtableadmin.projects.instances.update
     * @desc Updates an instance within a project. This method updates only the
@@ -293,4 +306,3 @@ class ResourceProjectsInstances protected () extends js.Object {
     callback: BodyResponseCallback[SchemaInstance]
   ): Unit = js.native
 }
-

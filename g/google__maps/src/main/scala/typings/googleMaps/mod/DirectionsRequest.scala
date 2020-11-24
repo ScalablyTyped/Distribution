@@ -4,23 +4,27 @@ import typings.googleMaps.googleMapsStrings.now
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DirectionsRequest extends js.Object {
+  
   /**
     * If set to `true`, specifies that the Directions service may provide more than one route alternative in the response.
     * Note that providing route alternatives may increase the response time from the server.
     */
   var alternatives: js.UndefOr[Boolean] = js.native
+  
   /**
     * Specifies the desired time of arrival for transit directions, in seconds since midnight, January 1, 1970 UTC.
     * You can specify either `departure_time` or `arrival_time`, but not both.
     * Note that `arrival_time` must be specified as an integer.
     */
   var arrival_time: js.UndefOr[Date | Double] = js.native
+  
   /** Indicates that the calculated route(s) should avoid the indicated features. */
   var avoid: js.UndefOr[js.Array[TravelRestriction]] = js.native
+  
   /**
     * Specifies the desired time of departure. You can specify the time as an integer in seconds since midnight, January 1, 1970 UTC.
     * Alternatively, you can specify a value of `now`, which sets the departure time to the current time (correct to the nearest second).
@@ -34,11 +38,13 @@ trait DirectionsRequest extends js.Object {
     *    and signature. The `departure_time` must be set to the current time or some time in the future. It cannot be in the past.
     */
   var departure_time: js.UndefOr[Date | Double | now] = js.native
+  
   /**
     * The address, textual latitude/longitude value, or place ID to which you wish to calculate directions.
     * The options for the `destination` parameter are the same as for the `origin` parameter, described above
     */
   var destination: LatLng = js.native
+  
   /**
     * The language in which to return results.
     *
@@ -55,14 +61,17 @@ trait DirectionsRequest extends js.Object {
     *    For example, utca and tér are synonyms for street in Hungarian.
     */
   var language: js.UndefOr[Language] = js.native
+  
   /**
     * Specifies the mode of transport to use when calculating directions
     *
     * @default TravelMode.driving
     */
   var mode: js.UndefOr[TravelMode] = js.native
+  
   /** Wherever to optimize the provided route by rearranging the waypoints in a more efficient order. */
   var optimize: js.UndefOr[Boolean] = js.native
+  
   /**
     * The address, textual latitude/longitude value, or place ID from which you wish to calculate directions.
     *  - If you pass an address, the Directions service geocodes the string and converts it to a latitude/longitude coordinate
@@ -84,8 +93,10 @@ trait DirectionsRequest extends js.Object {
     *    `origin=place_id:ChIJ3S-JXmauEmsRUcIaWtf4MzE`
     */
   var origin: LatLng = js.native
+  
   /** Specifies the region code, specified as a ccTLD ("top-level domain") two-character value. */
   var region: js.UndefOr[String] = js.native
+  
   /**
     * Specifies the assumptions to use when calculating time in traffic.
     * This setting affects the value returned in the `duration_in_traffic` field in the response, which contains the predicted time
@@ -99,12 +110,14 @@ trait DirectionsRequest extends js.Object {
     * @default TrafficModel.best_guess
     */
   var traffic_model: js.UndefOr[TrafficModel] = js.native
+  
   /**
     * Specifies one or more preferred modes of transit.
     * This parameter may only be specified for transit directions, and only if the request includes an API key or
     * a Google Maps APIs Premium Plan client ID.
     */
   var transit_mode: js.UndefOr[js.Array[TransitMode]] = js.native
+  
   /**
     * Specifies preferences for transit routes.
     * Using this parameter, you can bias the options returned, rather than accepting the default best route chosen by the API.
@@ -112,8 +125,10 @@ trait DirectionsRequest extends js.Object {
     * a Google Maps APIs Premium Plan client ID.
     */
   var transit_routing_preference: js.UndefOr[TransitRoutingPreference] = js.native
+  
   /** Specifies the unit system to use when displaying results. */
   var units: js.UndefOr[UnitSystem] = js.native
+  
   /**
     * Specifies an array of waypoints.
     * Waypoints alter a route by routing it through the specified location(s).
@@ -124,87 +139,120 @@ trait DirectionsRequest extends js.Object {
     */
   var waypoints: js.UndefOr[js.Array[LatLng]] = js.native
 }
-
 object DirectionsRequest {
+  
   @scala.inline
   def apply(destination: LatLng, origin: LatLng): DirectionsRequest = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsRequest]
   }
+  
   @scala.inline
   implicit class DirectionsRequestOps[Self <: DirectionsRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDestination(value: LatLng): Self = this.set("destination", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOrigin(value: LatLng): Self = this.set("origin", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAlternatives(value: Boolean): Self = this.set("alternatives", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAlternatives: Self = this.set("alternatives", js.undefined)
+    
     @scala.inline
     def setArrival_time(value: Date | Double): Self = this.set("arrival_time", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteArrival_time: Self = this.set("arrival_time", js.undefined)
+    
     @scala.inline
     def setAvoidVarargs(value: TravelRestriction*): Self = this.set("avoid", js.Array(value :_*))
+    
     @scala.inline
     def setAvoid(value: js.Array[TravelRestriction]): Self = this.set("avoid", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAvoid: Self = this.set("avoid", js.undefined)
+    
     @scala.inline
     def setDeparture_time(value: Date | Double | now): Self = this.set("departure_time", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDeparture_time: Self = this.set("departure_time", js.undefined)
+    
     @scala.inline
     def setLanguage(value: Language): Self = this.set("language", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLanguage: Self = this.set("language", js.undefined)
+    
     @scala.inline
     def setMode(value: TravelMode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMode: Self = this.set("mode", js.undefined)
+    
     @scala.inline
     def setOptimize(value: Boolean): Self = this.set("optimize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOptimize: Self = this.set("optimize", js.undefined)
+    
     @scala.inline
     def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRegion: Self = this.set("region", js.undefined)
+    
     @scala.inline
     def setTraffic_model(value: TrafficModel): Self = this.set("traffic_model", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTraffic_model: Self = this.set("traffic_model", js.undefined)
+    
     @scala.inline
     def setTransit_modeVarargs(value: TransitMode*): Self = this.set("transit_mode", js.Array(value :_*))
+    
     @scala.inline
     def setTransit_mode(value: js.Array[TransitMode]): Self = this.set("transit_mode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTransit_mode: Self = this.set("transit_mode", js.undefined)
+    
     @scala.inline
     def setTransit_routing_preference(value: TransitRoutingPreference): Self = this.set("transit_routing_preference", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTransit_routing_preference: Self = this.set("transit_routing_preference", js.undefined)
+    
     @scala.inline
     def setUnits(value: UnitSystem): Self = this.set("units", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUnits: Self = this.set("units", js.undefined)
+    
     @scala.inline
     def setWaypointsVarargs(value: LatLng*): Self = this.set("waypoints", js.Array(value :_*))
+    
     @scala.inline
     def setWaypoints(value: js.Array[LatLng]): Self = this.set("waypoints", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWaypoints: Self = this.set("waypoints", js.undefined)
   }
-  
 }
-

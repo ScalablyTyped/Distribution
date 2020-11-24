@@ -5,12 +5,12 @@ import typings.chartJs.mod.ChartFontOptions
 import typings.chartJs.mod.ChartOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-chartjs-2", "defaults")
 @js.native
 object defaults
   extends /* key */ StringDictionary[js.Any] {
+  
   var global: ChartOptions with ChartFontOptions = js.native
 }
-

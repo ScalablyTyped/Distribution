@@ -2,11 +2,12 @@ package typings.xregexp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xregexp", "addUnicodeData")
 @js.native
 object addUnicodeData extends js.Object {
+  
   /**
     * Adds to the list of Unicode tokens that XRegExp regexes can match via `\p` or `\P`.
     *
@@ -36,4 +37,3 @@ object addUnicodeData extends js.Object {
     */
   def apply(data: js.Array[UnicodeCharacterRange]): Unit = js.native
 }
-

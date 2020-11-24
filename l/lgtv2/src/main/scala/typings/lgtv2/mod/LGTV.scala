@@ -9,17 +9,22 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LGTV extends EventEmitter {
+  
   var clientKey: String = js.native
+  
   def connect(host: String): Unit = js.native
+  
   def disconnect(): Unit = js.native
+  
   def getSocket(
     url: String,
     callback: js.Function2[/* error */ Error | Null, /* socket */ SpecializedSocket, Unit]
   ): Unit = js.native
+  
   @JSName("on")
   def on_close(event: close, listener: js.Function1[/* hadError */ Boolean, Unit]): this.type = js.native
   @JSName("on")
@@ -30,7 +35,9 @@ trait LGTV extends EventEmitter {
   def on_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   @JSName("on")
   def on_prompt(event: prompt, listener: js.Function0[Unit]): this.type = js.native
+  
   /* private */ def register(): Unit = js.native
+  
   def request(uri: String): Unit = js.native
   def request(uri: String, callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]): Unit = js.native
   def request(
@@ -44,6 +51,7 @@ trait LGTV extends EventEmitter {
     payload: js.Any,
     callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
   ): Unit = js.native
+  
   /* private */ def send(`type`: String, uri: String): Unit = js.native
   /* private */ def send(
     `type`: String,
@@ -63,6 +71,7 @@ trait LGTV extends EventEmitter {
     payload: js.Any,
     callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
   ): Unit = js.native
+  
   def subscribe(uri: String): Unit = js.native
   def subscribe(uri: String, callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]): Unit = js.native
   def subscribe(
@@ -77,4 +86,3 @@ trait LGTV extends EventEmitter {
     callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
   ): Unit = js.native
 }
-

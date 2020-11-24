@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 🌃 Powerful and easy to use beautiful layout
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSImport("@ant-design/pro-layout/lib/BasicLayout", JSImport.Default)
 @js.native
 object default extends TopLevel[FC[BasicLayoutProps]]
-

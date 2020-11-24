@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ShapeLineStyle extends js.Object
-
 /**
   *
   * The style for a line.
@@ -16,6 +15,7 @@ sealed trait ShapeLineStyle extends js.Object
 @JSGlobal("Excel.ShapeLineStyle")
 @js.native
 object ShapeLineStyle extends js.Object {
+  
   /**
     * Single line.
     *
@@ -50,6 +50,4 @@ object ShapeLineStyle extends js.Object {
     */
   @js.native
   sealed trait thinThin extends ShapeLineStyle
-  
 }
-

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Forwardingrules")
 @js.native
 class ResourceForwardingrules protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.forwardingRules.aggregatedList
     * @desc Retrieves an aggregated list of forwarding rules.
@@ -115,6 +115,9 @@ class ResourceForwardingrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaForwardingRuleAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.forwardingRules.delete
     * @desc Deletes the specified ForwardingRule resource.
@@ -206,6 +209,7 @@ class ResourceForwardingrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.forwardingRules.get
     * @desc Returns the specified ForwardingRule resource.
@@ -296,6 +300,7 @@ class ResourceForwardingrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaForwardingRule]
   ): Unit = js.native
+  
   /**
     * compute.forwardingRules.insert
     * @desc Creates a ForwardingRule resource in the specified project and
@@ -388,6 +393,7 @@ class ResourceForwardingrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.forwardingRules.list
     * @desc Retrieves a list of ForwardingRule resources available to the
@@ -494,6 +500,7 @@ class ResourceForwardingrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaForwardingRuleList]
   ): Unit = js.native
+  
   /**
     * compute.forwardingRules.patch
     * @desc Updates the specified forwarding rule with the data included in the
@@ -529,6 +536,7 @@ class ResourceForwardingrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.forwardingRules.setLabels
     * @desc Sets the labels on the specified resource. To learn more about
@@ -625,6 +633,7 @@ class ResourceForwardingrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.forwardingRules.setTarget
     * @desc Changes target URL for forwarding rule. The new target should be of
@@ -722,6 +731,7 @@ class ResourceForwardingrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.forwardingRules.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -818,4 +828,3 @@ class ResourceForwardingrules protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

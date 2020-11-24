@@ -2,14 +2,14 @@ package typings.winrt.Windows.Media.Protection
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RenewalStatus extends js.Object
-
 @JSGlobal("Windows.Media.Protection.RenewalStatus")
 @js.native
 object RenewalStatus extends js.Object {
+  
   @js.native
   sealed trait appComponentsMayNeedUpdating extends RenewalStatus
   
@@ -24,6 +24,4 @@ object RenewalStatus extends js.Object {
   
   @js.native
   sealed trait userCancelled extends RenewalStatus
-  
 }
-

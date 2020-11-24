@@ -2,12 +2,16 @@ package typings.strophejsPluginRoster
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type IqCallback = js.Function1[/* stanza */ typings.std.Element, js.Any]
+  
   type IqID = java.lang.String
+  
   type PresenceRequestCallback = js.Function1[/* from */ java.lang.String, js.Any]
+  
   type RosterUpdateCallback = js.Function3[
     /* items */ js.Array[typings.strophejsPluginRoster.mod.RosterItem], 
     /* item */ typings.strophejsPluginRoster.mod.RosterItem, 

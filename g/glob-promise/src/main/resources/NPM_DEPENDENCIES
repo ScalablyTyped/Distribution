@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "glob-promise" : "3.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "glob-promise" : "3.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

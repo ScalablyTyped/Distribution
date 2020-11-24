@@ -2,7 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The {@link XResourceFactoryManager} is part of the configuration controller and manages the set of registered resource factories.
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XResourceFactoryManager extends js.Object {
+  
   /**
     * Register a new resource factory for the given URL.
     *
@@ -20,6 +21,7 @@ trait XResourceFactoryManager extends js.Object {
     * @param xResourceFactory The resource factory object.
     */
   def addResourceFactory(sResourceURL: String, xResourceFactory: XResourceFactory): Unit = js.native
+  
   /**
     * Return the resource factory that was previously registered for the given resource type. This method is typically called by one of the resource
     * controllers.
@@ -27,12 +29,14 @@ trait XResourceFactoryManager extends js.Object {
     * @returns When no resource factory was registered for the given resource type then an empty reference is returned.
     */
   def getResourceFactory(sResourceURL: String): XResourceFactory = js.native
+  
   /**
     * Remove a resource factory for all resource types it has been registered for. Use {@link removeResourceFactoryForURL()} to remove a factory just for
     * one resource type and to leave it registered for others.
     * @param xResourceFactory The resource factory object to remove.
     */
   def removeResourceFactoryForReference(xResourceFactory: XResourceFactory): Unit = js.native
+  
   /**
     * Remove a resource factory for one type of resource. When the factory has been registered for other URLs as well then it remains registered for them.
     * Use the {@link removeResourceFactoryForReference()} to remove a factory completely.
@@ -40,8 +44,8 @@ trait XResourceFactoryManager extends js.Object {
     */
   def removeResourceFactoryForURL(sResourceURL: String): Unit = js.native
 }
-
 object XResourceFactoryManager {
+  
   @scala.inline
   def apply(
     addResourceFactory: (String, XResourceFactory) => Unit,
@@ -52,26 +56,32 @@ object XResourceFactoryManager {
     val __obj = js.Dynamic.literal(addResourceFactory = js.Any.fromFunction2(addResourceFactory), getResourceFactory = js.Any.fromFunction1(getResourceFactory), removeResourceFactoryForReference = js.Any.fromFunction1(removeResourceFactoryForReference), removeResourceFactoryForURL = js.Any.fromFunction1(removeResourceFactoryForURL))
     __obj.asInstanceOf[XResourceFactoryManager]
   }
+  
   @scala.inline
   implicit class XResourceFactoryManagerOps[Self <: XResourceFactoryManager] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddResourceFactory(value: (String, XResourceFactory) => Unit): Self = this.set("addResourceFactory", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetResourceFactory(value: String => XResourceFactory): Self = this.set("getResourceFactory", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRemoveResourceFactoryForReference(value: XResourceFactory => Unit): Self = this.set("removeResourceFactoryForReference", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRemoveResourceFactoryForURL(value: String => Unit): Self = this.set("removeResourceFactoryForURL", js.Any.fromFunction1(value))
   }
-  
 }
-

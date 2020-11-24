@@ -5,15 +5,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows content providers running in remote processes to be registered at the local content provider broker. */
 @js.native
 trait RemoteContentProviderAcceptor
   extends XRemoteContentProviderAcceptor
      with XRemoteContentProviderActivator
-
 object RemoteContentProviderAcceptor {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -27,4 +27,3 @@ object RemoteContentProviderAcceptor {
     __obj.asInstanceOf[RemoteContentProviderAcceptor]
   }
 }
-

@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A {@link RemoteAccessContentProvider} is a {@link ContentProvider} that provides access to contents available at other (remote) UCBs. */
 @js.native
@@ -11,8 +11,8 @@ trait RemoteAccessContentProvider
   extends XContentProvider
      with XContentIdentifierFactory
      with XParameterizedContentProvider
-
 object RemoteAccessContentProvider {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -28,4 +28,3 @@ object RemoteAccessContentProvider {
     __obj.asInstanceOf[RemoteAccessContentProvider]
   }
 }
-

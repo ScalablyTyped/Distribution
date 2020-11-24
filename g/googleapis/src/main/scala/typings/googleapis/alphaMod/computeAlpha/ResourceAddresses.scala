@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Addresses")
 @js.native
 class ResourceAddresses protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.addresses.aggregatedList
     * @desc Retrieves an aggregated list of addresses.
@@ -48,6 +48,9 @@ class ResourceAddresses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAddressAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.addresses.delete
     * @desc Deletes the specified address resource.
@@ -79,6 +82,7 @@ class ResourceAddresses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.addresses.get
     * @desc Returns the specified address resource.
@@ -109,6 +113,7 @@ class ResourceAddresses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAddress]
   ): Unit = js.native
+  
   /**
     * compute.addresses.insert
     * @desc Creates an address resource in the specified project using the data
@@ -141,6 +146,7 @@ class ResourceAddresses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.addresses.list
     * @desc Retrieves a list of addresses contained within the specified
@@ -175,6 +181,7 @@ class ResourceAddresses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAddressList]
   ): Unit = js.native
+  
   /**
     * compute.addresses.setLabels
     * @desc Sets the labels on an Address. To learn more about labels, read the
@@ -208,6 +215,7 @@ class ResourceAddresses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.addresses.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -243,4 +251,3 @@ class ResourceAddresses protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

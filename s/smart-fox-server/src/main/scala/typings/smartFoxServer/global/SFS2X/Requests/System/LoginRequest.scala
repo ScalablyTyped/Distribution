@@ -2,7 +2,7 @@ package typings.smartFoxServer.global.SFS2X.Requests.System
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.System.LoginRequest")
 @js.native
@@ -29,4 +29,3 @@ class LoginRequest protected ()
   def this(userName: String, password: String, params: js.UndefOr[scala.Nothing], zoneName: String) = this()
   def this(userName: String, password: String, params: js.Object, zoneName: String) = this()
 }
-

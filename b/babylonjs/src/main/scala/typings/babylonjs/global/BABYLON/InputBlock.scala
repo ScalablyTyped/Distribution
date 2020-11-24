@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.InputBlock")
 @js.native
@@ -18,8 +18,12 @@ class InputBlock protected ()
   def this(name: String, target: typings.babylonjs.BABYLON.NodeMaterialBlockTargets) = this()
   def this(
     name: String,
+    target: js.UndefOr[scala.Nothing],
+    `type`: typings.babylonjs.BABYLON.NodeMaterialBlockConnectionPointTypes
+  ) = this()
+  def this(
+    name: String,
     target: typings.babylonjs.BABYLON.NodeMaterialBlockTargets,
     `type`: typings.babylonjs.BABYLON.NodeMaterialBlockConnectionPointTypes
   ) = this()
 }
-

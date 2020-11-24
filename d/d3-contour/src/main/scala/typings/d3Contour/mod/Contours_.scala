@@ -4,10 +4,11 @@ import typings.d3Array.mod.ThresholdCountGenerator
 import typings.d3Array.mod.ThresholdNumberArrayGenerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Contours_ extends js.Object {
+  
   /**
     * Computes the contours for the given array of values, returning an array of GeoJSON MultiPolygon geometry objects.
     * Each geometry object represents the area where the input values are greater than or equal to the corresponding threshold value;
@@ -20,6 +21,7 @@ trait Contours_ extends js.Object {
     * furthermore, each values[i + jn] must represent the value at the position ⟨i, j⟩.
     */
   def apply(values: js.Array[Double]): js.Array[ContourMultiPolygon] = js.native
+  
   /**
     * Computes a single contour, returning a GeoJSON MultiPolygon geometry object.
     * This geometry object represents the area where the input values are greater than or equal to the given threshold value;
@@ -30,6 +32,7 @@ trait Contours_ extends js.Object {
     * @param threshold Threshold value.
     */
   def contour(values: js.Array[Double], threshold: Double): ContourMultiPolygon = js.native
+  
   /**
     * Return the expected size of the input values grid, which defaults to [1,1].
     */
@@ -41,6 +44,7 @@ trait Contours_ extends js.Object {
     * where n is the number of columns in the grid and m is the number of rows; n and m must be positive integers.
     */
   def size(size: js.Tuple2[Double, Double]): this.type = js.native
+  
   /**
     * Returns the current smoothing flag, which defaults to true.
     */
@@ -51,6 +55,7 @@ trait Contours_ extends js.Object {
     * @param smooth Flag to enable linear interpolation. The default is "true".
     */
   def smooth(smooth: Boolean): this.type = js.native
+  
   /**
     * Returns the current threshold generator, which by default implements Sturges’ formula.
     */
@@ -88,4 +93,3 @@ trait Contours_ extends js.Object {
     */
   def thresholds(thresholds: js.Array[Double]): this.type = js.native
 }
-

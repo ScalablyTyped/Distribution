@@ -2,11 +2,12 @@ package typings.viewportList.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("viewport-list", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Returns a list of devices and their veiwports
     *
@@ -16,4 +17,3 @@ object ^ extends js.Object {
   def apply(): js.Array[Device] = js.native
   def apply(items: js.Array[String]): js.Array[Device] = js.native
 }
-

@@ -9,13 +9,14 @@ import typings.activexLibreoffice.com_.sun.star.i18n.XForbiddenCharacters
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes properties that apply to the whole text document. */
 @js.native
 trait DocumentSettings
   extends Settings
      with PrintSettings {
+  
   /**
     * specifies if paragraph and table spacing is added at the bottom of table cells
     *
@@ -26,6 +27,7 @@ trait DocumentSettings
     * @since OOo 2.0
     */
   var AddParaSpacingToTableCells: Boolean = js.native
+  
   /**
     * specifies if spacing between paragraphs and tables is to be added.
     *
@@ -33,6 +35,7 @@ trait DocumentSettings
     * of the two spaces is used. If the spacing between the objects are to be added this property has to be `TRUE` .
     */
   var AddParaTableSpacing: Boolean = js.native
+  
   /**
     * specifies if top paragraph spacing is applied to paragraphs on the first page of text documents.
     *
@@ -40,6 +43,7 @@ trait DocumentSettings
     * positioned on the first page of the document. The same applies for a page break.
     */
   var AddParaTableSpacingAtStart: Boolean = js.native
+  
   /**
     * specifies the alignment of tab stops in text documents.
     *
@@ -47,12 +51,14 @@ trait DocumentSettings
     * text to the right of the last tab, for example, is aligned to the right, while the text to the left remains where it is.
     */
   var AlignTabStopPosition: Boolean = js.native
+  
   /**
     * specifies if charts in text documents are updated automatically.
     *
     * This has no effect if "FieldAutoUpdate" is `FALSE` .
     */
   var ChartAutoUpdate: Boolean = js.native
+  
   /**
     * specifies if the text wrap of floating screen objects are considered in a specified way in the positioning algorithm.
     *
@@ -63,6 +69,7 @@ trait DocumentSettings
     * @since OOo 2.0
     */
   var ConsiderTextWrapOnObjPos: Boolean = js.native
+  
   /**
     * specifies if the document has been created as a label document.
     *
@@ -70,6 +77,7 @@ trait DocumentSettings
     * internally linked text sections.
     */
   var IsLabelDocument: Boolean = js.native
+  
   /**
     * specifies if Math objects should automatically vertically aligned to match the baseline of the surrounding text.
     *
@@ -77,6 +85,7 @@ trait DocumentSettings
     * @since OOo 3.4
     */
   var MathBaselineAlignment: Boolean = js.native
+  
   /**
     * specifies if the contents of links in the global document are saved or not.
     *
@@ -85,6 +94,7 @@ trait DocumentSettings
     * **Note** : This name is a bit misleading, it should be something like `SaveLinkedDocumentContent` .
     */
   var SaveGlobalDocumentLinks: Boolean = js.native
+  
   /**
     * specifies if the former (till OpenOffice.org 1.1) or the new line spacing formatting is applied.
     *
@@ -96,6 +106,7 @@ trait DocumentSettings
     * @since OOo 2.0
     */
   var UseFormerLineSpacing: Boolean = js.native
+  
   /**
     * specifies if the former (till OpenOffice.org 1.1) or the new object positioning is applied.
     *
@@ -107,8 +118,8 @@ trait DocumentSettings
     */
   var UseFormerObjectPositioning: Boolean = js.native
 }
-
 object DocumentSettings {
+  
   @scala.inline
   def apply(
     AddExternalLeading: Boolean,
@@ -180,40 +191,53 @@ object DocumentSettings {
     val __obj = js.Dynamic.literal(AddExternalLeading = AddExternalLeading.asInstanceOf[js.Any], AddParaSpacingToTableCells = AddParaSpacingToTableCells.asInstanceOf[js.Any], AddParaTableSpacing = AddParaTableSpacing.asInstanceOf[js.Any], AddParaTableSpacingAtStart = AddParaTableSpacingAtStart.asInstanceOf[js.Any], AlignTabStopPosition = AlignTabStopPosition.asInstanceOf[js.Any], ApplyUserData = ApplyUserData.asInstanceOf[js.Any], AutoCalculate = AutoCalculate.asInstanceOf[js.Any], BitmapTableURL = BitmapTableURL.asInstanceOf[js.Any], CharacterCompressionType = CharacterCompressionType.asInstanceOf[js.Any], ChartAutoUpdate = ChartAutoUpdate.asInstanceOf[js.Any], ColorTableURL = ColorTableURL.asInstanceOf[js.Any], ConsiderTextWrapOnObjPos = ConsiderTextWrapOnObjPos.asInstanceOf[js.Any], CurrentDatabaseCommand = CurrentDatabaseCommand.asInstanceOf[js.Any], CurrentDatabaseCommandType = CurrentDatabaseCommandType.asInstanceOf[js.Any], CurrentDatabaseDataSource = CurrentDatabaseDataSource.asInstanceOf[js.Any], DashTableURL = DashTableURL.asInstanceOf[js.Any], DefaultTabStop = DefaultTabStop.asInstanceOf[js.Any], EmbedFonts = EmbedFonts.asInstanceOf[js.Any], EmbedSystemFonts = EmbedSystemFonts.asInstanceOf[js.Any], FieldAutoUpdate = FieldAutoUpdate.asInstanceOf[js.Any], ForbiddenCharacters = ForbiddenCharacters.asInstanceOf[js.Any], GradientTableURL = GradientTableURL.asInstanceOf[js.Any], HatchTableURL = HatchTableURL.asInstanceOf[js.Any], IsKernAsianPunctuation = IsKernAsianPunctuation.asInstanceOf[js.Any], IsLabelDocument = IsLabelDocument.asInstanceOf[js.Any], IsPrintBooklet = IsPrintBooklet.asInstanceOf[js.Any], IsPrintBookletBack = IsPrintBookletBack.asInstanceOf[js.Any], IsPrintBookletFront = IsPrintBookletFront.asInstanceOf[js.Any], LineEndTableURL = LineEndTableURL.asInstanceOf[js.Any], LinkUpdateMode = LinkUpdateMode.asInstanceOf[js.Any], MathBaselineAlignment = MathBaselineAlignment.asInstanceOf[js.Any], PrintAnnotationMode = PrintAnnotationMode.asInstanceOf[js.Any], PrintBlackFonts = PrintBlackFonts.asInstanceOf[js.Any], PrintControls = PrintControls.asInstanceOf[js.Any], PrintDrawings = PrintDrawings.asInstanceOf[js.Any], PrintEmptyPages = PrintEmptyPages.asInstanceOf[js.Any], PrintFaxName = PrintFaxName.asInstanceOf[js.Any], PrintGraphics = PrintGraphics.asInstanceOf[js.Any], PrintLeftPages = PrintLeftPages.asInstanceOf[js.Any], PrintPageBackground = PrintPageBackground.asInstanceOf[js.Any], PrintPaperFromSetup = PrintPaperFromSetup.asInstanceOf[js.Any], PrintProspect = PrintProspect.asInstanceOf[js.Any], PrintQuality = PrintQuality.asInstanceOf[js.Any], PrintReversed = PrintReversed.asInstanceOf[js.Any], PrintRightPages = PrintRightPages.asInstanceOf[js.Any], PrintTables = PrintTables.asInstanceOf[js.Any], PrinterIndependentLayout = PrinterIndependentLayout.asInstanceOf[js.Any], PrinterName = PrinterName.asInstanceOf[js.Any], PrinterSetup = PrinterSetup.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], SaveGlobalDocumentLinks = SaveGlobalDocumentLinks.asInstanceOf[js.Any], SaveVersionOnClose = SaveVersionOnClose.asInstanceOf[js.Any], UpdateFromTemplate = UpdateFromTemplate.asInstanceOf[js.Any], UseFormerLineSpacing = UseFormerLineSpacing.asInstanceOf[js.Any], UseFormerObjectPositioning = UseFormerObjectPositioning.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[DocumentSettings]
   }
+  
   @scala.inline
   implicit class DocumentSettingsOps[Self <: DocumentSettings] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddParaSpacingToTableCells(value: Boolean): Self = this.set("AddParaSpacingToTableCells", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAddParaTableSpacing(value: Boolean): Self = this.set("AddParaTableSpacing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAddParaTableSpacingAtStart(value: Boolean): Self = this.set("AddParaTableSpacingAtStart", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAlignTabStopPosition(value: Boolean): Self = this.set("AlignTabStopPosition", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setChartAutoUpdate(value: Boolean): Self = this.set("ChartAutoUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setConsiderTextWrapOnObjPos(value: Boolean): Self = this.set("ConsiderTextWrapOnObjPos", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsLabelDocument(value: Boolean): Self = this.set("IsLabelDocument", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMathBaselineAlignment(value: Boolean): Self = this.set("MathBaselineAlignment", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSaveGlobalDocumentLinks(value: Boolean): Self = this.set("SaveGlobalDocumentLinks", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUseFormerLineSpacing(value: Boolean): Self = this.set("UseFormerLineSpacing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUseFormerObjectPositioning(value: Boolean): Self = this.set("UseFormerObjectPositioning", value.asInstanceOf[js.Any])
   }
-  
 }
-

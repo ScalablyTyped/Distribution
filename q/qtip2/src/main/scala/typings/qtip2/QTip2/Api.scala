@@ -56,22 +56,28 @@ import typings.qtip2.qtip2Strings.suppress
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * API
   */
 @js.native
 trait Api extends js.Object {
+  
   def blur(): Api = js.native
   def blur(event: Event): Api = js.native
+  
   def destroy(): Api = js.native
   def destroy(immediate: Boolean): Api = js.native
+  
   def disable(): Api = js.native
   def disable(state: Boolean): Api = js.native
+  
   def enable(): Api = js.native
+  
   def focus(): Api = js.native
   def focus(event: Event): Api = js.native
+  
   def get(propertyName: String): js.Any = js.native
   @JSName("get")
   def get_content(propertyName: content): Content = js.native
@@ -173,12 +179,15 @@ trait Api extends js.Object {
   def get_stylewidth(propertyName: styleDotwidth): String | Double | Boolean = js.native
   @JSName("get")
   def get_suppress(propertyName: suppress): Boolean = js.native
+  
   def hide(): Api = js.native
   def hide(event: Event): Api = js.native
+  
   def reposition(): Api = js.native
   def reposition(event: js.UndefOr[scala.Nothing], effect: Boolean): Api = js.native
   def reposition(event: Event): Api = js.native
   def reposition(event: Event, effect: Boolean): Api = js.native
+  
   def set(properties: QTipOptions): Api = js.native
   def set(propertyName: String, value: js.Any): Api = js.native
   @JSName("set")
@@ -346,11 +355,12 @@ trait Api extends js.Object {
   def set_stylewidth(propertyName: styleDotwidth, value: Double): Api = js.native
   @JSName("set")
   def set_suppress(propertyName: suppress, value: Boolean): Api = js.native
+  
   def show(): Api = js.native
   def show(event: Event): Api = js.native
+  
   def toggle(): Api = js.native
   def toggle(state: js.UndefOr[scala.Nothing], event: Event): Api = js.native
   def toggle(state: Boolean): Api = js.native
   def toggle(state: Boolean, event: Event): Api = js.native
 }
-

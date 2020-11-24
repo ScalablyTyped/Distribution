@@ -6,11 +6,12 @@ import typings.reactMove.animateMod.IAnimateProps
 import typings.reactMove.nodeGroupMod.INodeGroupProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-move", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class Animate ()
     extends Component[IAnimateProps, js.Object, js.Any]
@@ -26,6 +27,6 @@ object mod extends js.Object {
     /* namespace */ js.UndefOr[String], 
     js.Function1[/* t */ Double, js.Any]
   ]
+  
   type HashMap = StringDictionary[js.Any]
 }
-

@@ -2,17 +2,19 @@ package typings.loremIpsum
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("lorem-ipsum/types/src/bin/constants/commands", JSImport.Namespace)
 @js.native
 object commandsMod extends js.Object {
+  
   @js.native
   object COPY extends js.Object {
+    
     var DARWIN: String = js.native
+    
     var LINUX: String = js.native
+    
     var WIN32: String = js.native
   }
-  
 }
-

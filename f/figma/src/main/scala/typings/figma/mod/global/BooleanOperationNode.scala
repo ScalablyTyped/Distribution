@@ -7,7 +7,7 @@ import typings.figma.figmaStrings.SUBTRACT
 import typings.figma.figmaStrings.UNION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BooleanOperationNode
@@ -21,8 +21,10 @@ trait BooleanOperationNode
      with ExportMixin
      with ChildrenMixin
      with CornerMixin {
+  
   var booleanOperation: UNION | INTERSECT | SUBTRACT | EXCLUDE = js.native
+  
   var expanded: Boolean = js.native
+  
   val `type`: BOOLEAN_OPERATION = js.native
 }
-

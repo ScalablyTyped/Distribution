@@ -2,7 +2,7 @@ package typings.jsGraphAlgorithms.global.JsGraphs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("JsGraphs.IndexMinPQ")
 @js.native
@@ -11,4 +11,3 @@ class IndexMinPQ[T] protected ()
   def this(N: Double) = this()
   def this(N: Double, compare: js.Function2[/* a1 */ js.Any, /* a2 */ js.Any, Double]) = this()
 }
-

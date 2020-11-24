@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/identitytoolkit/v3", "identitytoolkit_v3.Resource$Relyingparty")
 @js.native
 class ResourceRelyingparty protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * identitytoolkit.relyingparty.createAuthUri
     * @desc Creates the URI used by the IdP to authenticate the user.
@@ -44,6 +46,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreateAuthUriResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.deleteAccount
     * @desc Delete user account.
@@ -75,6 +78,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeleteAccountResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.downloadAccount
     * @desc Batch download user accounts.
@@ -106,6 +110,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDownloadAccountResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.emailLinkSignin
     * @desc Reset password for a user.
@@ -137,6 +142,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmailLinkSigninResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.getAccountInfo
     * @desc Returns the account info.
@@ -168,6 +174,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetAccountInfoResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.getOobConfirmationCode
     * @desc Get a code for user action confirmation.
@@ -199,6 +206,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetOobConfirmationCodeResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.getProjectConfig
     * @desc Get project configuration.
@@ -231,6 +239,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaIdentitytoolkitRelyingpartyGetProjectConfigResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.getPublicKeys
     * @desc Get token signing public key.
@@ -261,6 +270,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaIdentitytoolkitRelyingpartyGetPublicKeysResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.getRecaptchaParam
     * @desc Get recaptcha secure param.
@@ -291,6 +301,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetRecaptchaParamResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.resetPassword
     * @desc Reset password for a user.
@@ -322,6 +333,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaResetPasswordResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.sendVerificationCode
     * @desc Send SMS verification code.
@@ -353,6 +365,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.setAccountInfo
     * @desc Set account info for a user.
@@ -384,6 +397,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSetAccountInfoResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.setProjectConfig
     * @desc Set project configuration.
@@ -415,6 +429,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.signOutUser
     * @desc Sign out user.
@@ -446,6 +461,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaIdentitytoolkitRelyingpartySignOutUserResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.signupNewUser
     * @desc Signup new user.
@@ -477,6 +493,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSignupNewUserResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.uploadAccount
     * @desc Batch upload existing user accounts.
@@ -508,6 +525,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUploadAccountResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.verifyAssertion
     * @desc Verifies the assertion returned by the IdP.
@@ -539,6 +557,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVerifyAssertionResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.verifyCustomToken
     * @desc Verifies the developer asserted ID token.
@@ -570,6 +589,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVerifyCustomTokenResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.verifyPassword
     * @desc Verifies the user entered password.
@@ -601,6 +621,7 @@ class ResourceRelyingparty protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVerifyPasswordResponse]
   ): Unit = js.native
+  
   /**
     * identitytoolkit.relyingparty.verifyPhoneNumber
     * @desc Verifies ownership of a phone number and creates/updates the user
@@ -634,4 +655,3 @@ class ResourceRelyingparty protected () extends js.Object {
     callback: BodyResponseCallback[SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse]
   ): Unit = js.native
 }
-

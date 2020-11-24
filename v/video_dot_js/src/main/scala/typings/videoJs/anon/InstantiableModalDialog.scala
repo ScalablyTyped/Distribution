@@ -7,7 +7,7 @@ import typings.videoJs.mod.videojs.ModalDialogOptions
 import typings.videoJs.mod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableModalDialog
@@ -22,4 +22,3 @@ trait InstantiableModalDialog
   */
 Instantiable1[/* player */ Player, ModalDialog]
      with Instantiable2[/* player */ Player, /* options */ ModalDialogOptions, ModalDialog]
-

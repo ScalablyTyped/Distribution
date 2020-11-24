@@ -12,7 +12,7 @@ A cross browser macrotask library
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 295 |
+| # downloads        | 544 |
 | # stars            | 0 |
 
 ## Links

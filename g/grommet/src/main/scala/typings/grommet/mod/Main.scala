@@ -5,9 +5,8 @@ import typings.grommet.boxMod.BoxProps
 import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "Main")
+@JSImport("grommet", "Main")
 @js.native
 object Main extends TopLevel[FC[BoxProps]]
-

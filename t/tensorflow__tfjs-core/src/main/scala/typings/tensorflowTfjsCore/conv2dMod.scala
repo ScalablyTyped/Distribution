@@ -1,9 +1,9 @@
 package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.convUtilMod.ExplicitPadding
+import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
+import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.tensorMod.Tensor3D
-import typings.tensorflowTfjsCore.tensorMod.Tensor4D
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NCHW
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NHWC
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ceil
@@ -13,13 +13,15 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core/dist/ops/conv2d", JSImport.Namespace)
 @js.native
 object conv2dMod extends js.Object {
+  
   @js.native
   object conv2d extends js.Object {
+    
     def apply[T /* <: Tensor3D | Tensor4D */](
       x: T | TensorLike,
       filter: Tensor4D | TensorLike,
@@ -30,6 +32,4 @@ object conv2dMod extends js.Object {
       dimRoundingMode: js.UndefOr[floor | round | ceil]
     ): T = js.native
   }
-  
 }
-

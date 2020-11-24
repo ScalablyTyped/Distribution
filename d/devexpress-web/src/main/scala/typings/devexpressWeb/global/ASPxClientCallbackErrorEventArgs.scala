@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for client events related to server-side errors that occured during callback processing.
@@ -17,4 +17,3 @@ class ASPxClientCallbackErrorEventArgs protected ()
     */
   def this(message: String) = this()
 }
-

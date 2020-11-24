@@ -10,9 +10,9 @@ A library to parse/stringify SCSS
 | ------------------ | :-------------: |
 | Full name          | scss-parser |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 15 |
-| # downloads        | 145267 |
+| # releases         | 4 |
+| # dependents       | 18 |
+| # downloads        | 180267 |
 | # stars            | 0 |
 
 ## Links

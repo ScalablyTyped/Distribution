@@ -10,14 +10,15 @@ Extremely fast and simple JavaScript test runner
 | ------------------ | :-------------: |
 | Full name          | baretest |
 | Keywords           | jest, mocha, tap, tape, tdd, bdd, node, test, test-runner, test-framework, testing-tool |
-| # releases         | 0 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 0 |
+| # downloads        | 27211 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://volument.com/baretest)
-- [Repository](https://bitbucket.org/volument/baretest)
+- [Bugs](https://github.com/volument/baretest/issues)
+- [Repository](https://github.com/volument/baretest)
 - [Npm](https://www.npmjs.com/package/baretest)
     
 

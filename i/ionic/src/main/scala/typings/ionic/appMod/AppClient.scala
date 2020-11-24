@@ -13,7 +13,7 @@ import typings.ionic.definitionsMod.Response
 import typings.ionic.httpMod.ResourceClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ionic/lib/app", "AppClient")
 @js.native
@@ -23,13 +23,18 @@ class AppClient protected ()
      with ResourceClientCreate[App, AppCreateDetails]
      with ResourceClientPaginate[App] {
   def this(token: String, e: AppClientDeps) = this()
-  val e: AppClientDeps = js.native
-  val token: String = js.native
+  
   def createAssociation(id: String, association: Branches): js.Promise[AppAssociation] = js.native
+  
   def deleteAssociation(id: String): js.Promise[Unit] = js.native
+  
+  val e: AppClientDeps = js.native
+  
   def load(id: String): js.Promise[App] = js.native
+  
   def paginate(args: js.UndefOr[scala.Nothing], orgId: String): IPaginator[Response[js.Array[App]], PaginatorState] = js.native
   def paginate(args: PartialPaginateArgsRespon): IPaginator[Response[js.Array[App]], PaginatorState] = js.native
   def paginate(args: PartialPaginateArgsRespon, orgId: String): IPaginator[Response[js.Array[App]], PaginatorState] = js.native
+  
+  val token: String = js.native
 }
-

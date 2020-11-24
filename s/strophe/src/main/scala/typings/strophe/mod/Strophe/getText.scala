@@ -3,11 +3,12 @@ package typings.strophe.mod.Strophe
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strophe", "Strophe.getText")
 @js.native
 object getText extends js.Object {
+  
   /** Function: getText
     *  Get the concatenation of all text children of an element.
     *
@@ -19,4 +20,3 @@ object getText extends js.Object {
     */
   def apply(elem: Element): String = js.native
 }
-

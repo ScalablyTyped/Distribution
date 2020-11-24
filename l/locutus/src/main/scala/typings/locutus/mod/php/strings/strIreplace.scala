@@ -2,11 +2,12 @@ package typings.locutus.mod.php.strings
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("locutus", "php.strings.str_ireplace")
 @js.native
 object strIreplace extends js.Object {
+  
   def apply(): js.Any = js.native
   def apply(
     search: js.UndefOr[scala.Nothing],
@@ -44,4 +45,3 @@ object strIreplace extends js.Object {
   def apply(search: js.Any, replace: js.Any, subject: js.Any): js.Any = js.native
   def apply(search: js.Any, replace: js.Any, subject: js.Any, countObj: js.Any): js.Any = js.native
 }
-

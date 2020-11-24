@@ -4,7 +4,7 @@ import typings.std.Element
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Class: Strophe.Builder
   *  XML DOM builder.
@@ -51,6 +51,7 @@ class Builder protected () extends js.Object {
     */
   def this(name: String) = this()
   def this(name: String, attrs: js.Any) = this()
+  
   /** Function: attrs
     *  Add or modify attributes of the current element.
     *
@@ -64,6 +65,7 @@ class Builder protected () extends js.Object {
     *    The Strophe.Builder object.
     */
   def attrs(moreattrs: js.Any): Builder = js.native
+  
   /** Function: c
     *  Add a child to the current element and make it the new current
     *  element.
@@ -84,6 +86,7 @@ class Builder protected () extends js.Object {
   def c(name: String, attrs: js.UndefOr[scala.Nothing], text: String): Builder = js.native
   def c(name: String, attrs: js.Any): Builder = js.native
   def c(name: String, attrs: js.Any, text: String): Builder = js.native
+  
   /** Function: cnode
     *  Add a child to the current element and make it the new current
     *  element.
@@ -99,6 +102,7 @@ class Builder protected () extends js.Object {
     *    The Strophe.Builder object.
     */
   def cnode(elem: Node): Builder = js.native
+  
   /** Function: h
     *  Replace current element contents with the HTML passed in.
     *
@@ -111,6 +115,7 @@ class Builder protected () extends js.Object {
     *    The Strophe.Builder object.
     */
   def h(html: String): Builder = js.native
+  
   /** Function: t
     *  Add a child text element.
     *
@@ -124,6 +129,7 @@ class Builder protected () extends js.Object {
     *    The Strophe.Builder object.
     */
   def t(text: String): Builder = js.native
+  
   /** Function: tree
     *  Return the DOM tree.
     *
@@ -134,6 +140,7 @@ class Builder protected () extends js.Object {
     *    The DOM tree as a element object.
     */
   def tree(): Element = js.native
+  
   /** Function: up
     *  Make the current parent element the new current element.
     *
@@ -146,4 +153,3 @@ class Builder protected () extends js.Object {
     */
   def up(): Builder = js.native
 }
-

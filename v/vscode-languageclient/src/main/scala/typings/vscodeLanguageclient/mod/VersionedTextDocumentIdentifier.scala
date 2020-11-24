@@ -3,11 +3,12 @@ package typings.vscodeLanguageclient.mod
 import typings.vscodeLanguageserverTypes.mod.DocumentUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient", "VersionedTextDocumentIdentifier")
 @js.native
 object VersionedTextDocumentIdentifier extends js.Object {
+  
   /**
     * Creates a new VersionedTextDocumentIdentifier literal.
     * @param uri The document's uri.
@@ -15,9 +16,9 @@ object VersionedTextDocumentIdentifier extends js.Object {
     */
   def create(uri: DocumentUri): typings.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier = js.native
   def create(uri: DocumentUri, version: Double): typings.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier = js.native
+  
   /**
     * Checks whether the given literal conforms to the [VersionedTextDocumentIdentifier](#VersionedTextDocumentIdentifier) interface.
     */
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean = js.native
 }
-

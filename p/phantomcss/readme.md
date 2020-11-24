@@ -10,9 +10,9 @@ A CasperJS module for automating visual regression testing of Web apps, live sty
 | ------------------ | :-------------: |
 | Full name          | phantomcss |
 | Keywords           | css, phantomjs, casperjs, testing, visual regression, responsive |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 17 |
-| # downloads        | 67188 |
+| # downloads        | 18829 |
 | # stars            | 8 |
 
 ## Links

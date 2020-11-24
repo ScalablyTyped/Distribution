@@ -2,7 +2,7 @@ package typings.babylonjs.mathMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Maths/math", "Path2")
 @js.native
@@ -15,11 +15,11 @@ class Path2 protected ()
     */
   def this(x: Double, y: Double) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Maths/math", "Path2")
 @js.native
 object Path2 extends js.Object {
+  
   /**
     * Creates a new path starting from an x and y position
     * @param x starting x value
@@ -28,4 +28,3 @@ object Path2 extends js.Object {
     */
   def StartingAt(x: Double, y: Double): typings.babylonjs.mathPathMod.Path2 = js.native
 }
-

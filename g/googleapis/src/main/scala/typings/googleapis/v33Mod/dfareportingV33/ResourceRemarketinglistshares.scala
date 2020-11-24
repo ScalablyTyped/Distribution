@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Remarketinglistshares")
 @js.native
 class ResourceRemarketinglistshares protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.remarketingListShares.get
     * @desc Gets one remarketing list share by remarketing list ID.
@@ -45,6 +47,7 @@ class ResourceRemarketinglistshares protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRemarketingListShare]
   ): Unit = js.native
+  
   /**
     * dfareporting.remarketingListShares.patch
     * @desc Updates an existing remarketing list share. This method supports
@@ -79,6 +82,7 @@ class ResourceRemarketinglistshares protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRemarketingListShare]
   ): Unit = js.native
+  
   /**
     * dfareporting.remarketingListShares.update
     * @desc Updates an existing remarketing list share.
@@ -112,4 +116,3 @@ class ResourceRemarketinglistshares protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRemarketingListShare]
   ): Unit = js.native
 }
-

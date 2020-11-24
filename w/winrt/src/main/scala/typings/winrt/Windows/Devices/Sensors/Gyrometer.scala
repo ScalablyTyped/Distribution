@@ -2,12 +2,12 @@ package typings.winrt.Windows.Devices.Sensors
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Gyrometer extends IGyrometer
-
 object Gyrometer {
+  
   @scala.inline
   def apply(
     getCurrentReading: () => GyrometerReading,
@@ -19,4 +19,3 @@ object Gyrometer {
     __obj.asInstanceOf[Gyrometer]
   }
 }
-

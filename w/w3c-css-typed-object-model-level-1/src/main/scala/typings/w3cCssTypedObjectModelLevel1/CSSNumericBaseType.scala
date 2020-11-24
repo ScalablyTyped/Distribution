@@ -2,14 +2,14 @@ package typings.w3cCssTypedObjectModelLevel1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CSSNumericBaseType extends js.Object
-
 @JSGlobal("CSSNumericBaseType")
 @js.native
 object CSSNumericBaseType extends js.Object {
+  
   @js.native
   sealed trait angle extends CSSNumericBaseType
   
@@ -30,6 +30,4 @@ object CSSNumericBaseType extends js.Object {
   
   @js.native
   sealed trait time extends CSSNumericBaseType
-  
 }
-

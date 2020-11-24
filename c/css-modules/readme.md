@@ -9,9 +9,9 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | css-modules |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 26556 |
+| # releases         | 0 |
+| # dependents       | 2 |
+| # downloads        | 26290 |
 | # stars            | 0 |
 
 ## Links

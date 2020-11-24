@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.esri.Edges3DConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.Edges3D")
 @js.native
 object Edges3D extends TopLevel[Edges3DConstructor]
-

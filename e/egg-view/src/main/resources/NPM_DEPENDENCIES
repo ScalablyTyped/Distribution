@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "egg-view" : "2.1.2"
+      "egg-view" : "2.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "egg-view" : "2.1.2"
+      "egg-view" : "2.1.3"
     }
   ],
   "compile-devDependencies" : [

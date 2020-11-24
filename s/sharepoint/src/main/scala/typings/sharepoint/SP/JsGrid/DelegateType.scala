@@ -2,14 +2,14 @@ package typings.sharepoint.SP.JsGrid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DelegateType extends js.Object
-
 @JSGlobal("SP.JsGrid.DelegateType")
 @js.native
 object DelegateType extends js.Object {
+  
   @js.native
   sealed trait AddColumnMenuItems extends DelegateType
   
@@ -105,6 +105,4 @@ object DelegateType extends js.Object {
   
   @js.native
   sealed trait WillAddColumnMenuItems extends DelegateType
-  
 }
-

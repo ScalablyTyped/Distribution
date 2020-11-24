@@ -1,9 +1,10 @@
 package typings.playcanvas.pc
 
+import typings.playcanvas.anon.Callback
 import typings.playcanvas.pc.callbacks.XrError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Manage and update XR session and its states.
@@ -16,40 +17,22 @@ import scala.scalajs.js.annotation._
   * @property camera - Active camera for which XR session is running or null.
   * @property input - provides access to Input Sources.
   * @property hitTest - provides ability to hit test representation of real world geometry of underlying AR system.
+  * @property session - provides access to [XRSession](https://developer.mozilla.org/en-US/docs/Web/API/XRSession) of WebXR
   * @param app - The main application.
   */
 @js.native
 trait XrManager extends EventHandler {
+  
   /**
     * True if XR session is running.
     */
   var active: Boolean = js.native
+  
   /**
     * Active camera for which XR session is running or null.
     */
   var camera: Entity | Null = js.native
-  /**
-    * provides ability to hit test representation of real world geometry of underlying AR system.
-    */
-  var hitTest: XrHitTest = js.native
-  /**
-    * provides access to Input Sources.
-    */
-  var input: XrInput = js.native
-  /**
-    * Returns reference space type of currently running XR session or null if no session
-    is running. Can be any of pc.XRSPACE_*.
-    */
-  var spaceType: String | Null = js.native
-  /**
-    * True if XR is supported.
-    */
-  var supported: Boolean = js.native
-  /**
-    * Returns type of currently running XR session or null if no session is running. Can be
-    any of pc.XRTYPE_*.
-    */
-  var `type`: String | Null = js.native
+  
   /**
     * Attempts to end XR session and optionally fires callback when session is ended or failed to end.
     * @example
@@ -62,6 +45,17 @@ trait XrManager extends EventHandler {
     */
   def end(): Unit = js.native
   def end(callback: XrError): Unit = js.native
+  
+  /**
+    * provides ability to hit test representation of real world geometry of underlying AR system.
+    */
+  var hitTest: XrHitTest = js.native
+  
+  /**
+    * provides access to Input Sources.
+    */
+  var input: XrInput = js.native
+  
   /**
     * Check if specific type of session is available
     * @example
@@ -76,6 +70,18 @@ trait XrManager extends EventHandler {
     * @returns True if specified session type is available.
     */
   def isAvailable(`type`: String): Boolean = js.native
+  
+  /**
+    * provides access to [XRSession](https://developer.mozilla.org/en-US/docs/Web/API/XRSession) of WebXR
+    */
+  var session: js.Any | Null = js.native
+  
+  /**
+    * Returns reference space type of currently running XR session or null if no session
+    is running. Can be any of pc.XRSPACE_*.
+    */
+  var spaceType: String | Null = js.native
+  
   /**
     * Attempts to start XR session for provided {@link pc.CameraComponent} and optionally fires callback when session is created or failed to create.
     * @example
@@ -95,9 +101,21 @@ trait XrManager extends EventHandler {
     * * {@link pc.XRSPACE_LOCALFLOOR}: Local Floor - represents a tracking space with a native origin at the floor in a safe position for the user to stand. The y axis equals 0 at floor level. Floor level value might be estimated by the underlying platform. It is meant for seated or basic local XR sessions.
     * * {@link pc.XRSPACE_BOUNDEDFLOOR}: Bounded Floor - represents a tracking space with its native origin at the floor, where the user is expected to move within a pre-established boundary.
     * * {@link pc.XRSPACE_UNBOUNDED}: Unbounded - represents a tracking space where the user is expected to move freely around their environment, potentially long distances from their starting point.
-    * @param [callback] - Optional callback function called once session is started. The callback has one argument Error - it is null if successfully started XR session.
+    * @param [options] - object with additional options for XR session initialization.
+    * @param [options.optionalFeatures] - Optional features for XRSession start. It is used for getting access to additional WebXR spec extensions.
+    * @param [options.callback] - Optional callback function called once session is started. The callback has one argument Error - it is null if successfully started XR session.
     */
   def start(camera: CameraComponent, `type`: String, spaceType: String): Unit = js.native
-  def start(camera: CameraComponent, `type`: String, spaceType: String, callback: XrError): Unit = js.native
+  def start(camera: CameraComponent, `type`: String, spaceType: String, options: Callback): Unit = js.native
+  
+  /**
+    * True if XR is supported.
+    */
+  var supported: Boolean = js.native
+  
+  /**
+    * Returns type of currently running XR session or null if no session is running. Can be
+    any of pc.XRTYPE_*.
+    */
+  var `type`: String | Null = js.native
 }
-

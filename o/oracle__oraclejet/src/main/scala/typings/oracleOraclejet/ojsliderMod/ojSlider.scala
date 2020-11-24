@@ -29,28 +29,11 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojSlider extends editableValue[Double | Null, ojSliderSettableProperties, Double | Null, Double | Null] {
-  var max: Double | Null = js.native
-  var min: Double | Null = js.native
-  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  @JSName("onOjAnimateEnd")
-  var onOjAnimateEnd_ojSlider: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
-  @JSName("onOjAnimateStart")
-  var onOjAnimateStart_ojSlider: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
-  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], _]) | Null = js.native
-  var onStepChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[fromMin | fromMax | single], _]) | Null = js.native
-  var orientation: horizontal | vertical = js.native
-  var step: Double | Null = js.native
-  val transientValue: Double = js.native
-  @JSName("translations")
-  var translations_ojSlider: InvalidStep = js.native
-  var `type`: fromMin | fromMax | single = js.native
+  
   def addEventListener(
     `type`: orientationChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[horizontal | vertical], _]
@@ -121,6 +104,7 @@ trait ojSlider extends editableValue[Double | Null, ojSliderSettableProperties, 
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], _],
     useCapture: Boolean
   ): Unit = js.native
+  
   @JSName("getProperty")
   def getProperty_max(property: max): Double | Null = js.native
   @JSName("getProperty")
@@ -133,7 +117,33 @@ trait ojSlider extends editableValue[Double | Null, ojSliderSettableProperties, 
   def getProperty_transientValue(property: typings.oracleOraclejet.oracleOraclejetStrings.transientValue): Double = js.native
   @JSName("getProperty")
   def getProperty_type(property: `type`): fromMin | fromMax | single = js.native
+  
+  var max: Double | Null = js.native
+  
+  var min: Double | Null = js.native
+  
+  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  @JSName("onOjAnimateEnd")
+  var onOjAnimateEnd_ojSlider: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
+  
+  @JSName("onOjAnimateStart")
+  var onOjAnimateStart_ojSlider: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
+  
+  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], _]) | Null = js.native
+  
+  var onStepChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[fromMin | fromMax | single], _]) | Null = js.native
+  
+  var orientation: horizontal | vertical = js.native
+  
   def setProperties(properties: ojSliderSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: `type`, value: fromMax): Unit = js.native
   def setProperty(property: `type`, value: fromMin): Unit = js.native
   def setProperty(property: `type`, value: single): Unit = js.native
@@ -159,12 +169,21 @@ trait ojSlider extends editableValue[Double | Null, ojSliderSettableProperties, 
   def setProperty_value(property: value): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value, value: Double): Unit = js.native
+  
+  var step: Double | Null = js.native
+  
+  val transientValue: Double = js.native
+  
+  @JSName("translations")
+  var translations_ojSlider: InvalidStep = js.native
+  
+  var `type`: fromMin | fromMax | single = js.native
 }
-
 @JSImport("@oracle/oraclejet/ojslider", "ojSlider")
 @js.native
 object ojSlider extends js.Object {
+  
   type ojAnimateEnd = CustomEvent[Action]
+  
   type ojAnimateStart = CustomEvent[Element]
 }
-

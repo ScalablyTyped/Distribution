@@ -3,7 +3,7 @@ package typings.reactAsync.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Universal global scope object. In the browser this is `self`, in Node.js and React Native it's `global`.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSImport("react-async", "globalScope")
 @js.native
 object globalScope extends TopLevel[GlobalScope_]
-

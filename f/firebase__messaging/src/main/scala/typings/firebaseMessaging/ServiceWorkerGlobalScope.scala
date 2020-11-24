@@ -7,13 +7,11 @@ import typings.std.AddEventListenerOptions
 import typings.std.ServiceWorkerRegistration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServiceWorkerGlobalScope extends js.Object {
-  val clients: Clients = js.native
-  val location: WorkerLocation = js.native
-  val registration: ServiceWorkerRegistration = js.native
+  
   @JSName("addEventListener")
   def addEventListener_notificationclick(
     `type`: notificationclick,
@@ -62,5 +60,10 @@ trait ServiceWorkerGlobalScope extends js.Object {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ PushSubscriptionChangeEvent, _],
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  val clients: Clients = js.native
+  
+  val location: WorkerLocation = js.native
+  
+  val registration: ServiceWorkerRegistration = js.native
 }
-

@@ -9,38 +9,37 @@ import typings.reactstrap.popoverMod.UncontrolledPopoverProps
 import typings.reactstrap.tooltipMod.UncontrolledTooltipProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap/lib/Uncontrolled", JSImport.Namespace)
 @js.native
 object uncontrolledMod extends js.Object {
+  
   @js.native
-  class UncontrolledAlert[T] ()
+  class UncontrolledAlert ()
     extends Component[UncontrolledAlertProps, js.Object, js.Any]
   
   @js.native
-  class UncontrolledButtonDropdown[T] ()
+  class UncontrolledButtonDropdown ()
     extends Component[UncontrolledDropdownProps, js.Object, js.Any]
   
   @js.native
-  class UncontrolledCarousel[T] ()
+  class UncontrolledCarousel ()
     extends Component[UncontrolledCarouselProps, js.Object, js.Any]
   
   @js.native
-  class UncontrolledCollapse[T] ()
+  class UncontrolledCollapse ()
     extends Component[UncontrolledCollapseProps, js.Object, js.Any]
   
   @js.native
-  class UncontrolledDropdown[T] ()
+  class UncontrolledDropdown ()
     extends Component[UncontrolledDropdownProps, js.Object, js.Any]
   
   @js.native
-  class UncontrolledPopover[T] ()
+  class UncontrolledPopover ()
     extends Component[UncontrolledPopoverProps, js.Object, js.Any]
   
   @js.native
-  class UncontrolledTooltip[T] ()
+  class UncontrolledTooltip ()
     extends Component[UncontrolledTooltipProps, js.Object, js.Any]
-  
 }
-

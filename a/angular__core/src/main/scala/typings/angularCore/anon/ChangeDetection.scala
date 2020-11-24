@@ -11,7 +11,7 @@ import typings.angularCore.mod.HostBindingsFunction
 import typings.angularCore.mod.PipeTypesOrFactory
 import typings.angularCore.mod.SchemaMetadata
 import typings.angularCore.mod.TAttributes
-import typings.angularCore.mod.TConstants
+import typings.angularCore.mod.TConstantsOrFactory
 import typings.angularCore.mod.Type
 import typings.angularCore.mod.ViewEncapsulation
 import typings.angularCore.mod.ViewQueriesFunction
@@ -19,24 +19,28 @@ import typings.angularCore.mod.ɵCssSelectorList
 import typings.angularCore.mod.ɵRenderFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChangeDetection[T] extends js.Object {
+  
   /**
     * The strategy that the default change detector uses to detect changes.
     * When set, takes effect the next time change detection is triggered.
     */
   var changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.native
+  
   /**
     * Constants for the nodes in the component's view.
     * Includes attribute arrays, local definition arrays etc.
     */
-  var consts: js.UndefOr[TConstants] = js.native
+  var consts: js.UndefOr[TConstantsOrFactory] = js.native
+  
   /**
     * Function to create instances of content queries associated with a given directive.
     */
   var contentQueries: js.UndefOr[ContentQueriesFunction[T]] = js.native
+  
   /**
     * Defines arbitrary developer-defined data to be stored on a renderer instance.
     * This is useful for renderers that delegate to other renderers.
@@ -44,6 +48,7 @@ trait ChangeDetection[T] extends js.Object {
     * see: animation
     */
   var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+  
   /**
     * The number of nodes, local refs, and pipes in this component template.
     *
@@ -51,6 +56,7 @@ trait ChangeDetection[T] extends js.Object {
     * can pre-fill the array and set the binding start index.
     */
   var decls: Double = js.native
+  
   /**
     * Registry of directives and components that may be found in this component's view.
     *
@@ -58,22 +64,26 @@ trait ChangeDetection[T] extends js.Object {
     * `DirectiveDef`s. The function is necessary to be able to support forward declarations.
     */
   var directives: js.UndefOr[DirectiveTypesOrFactory | Null] = js.native
+  
   /**
     * Defines template and style encapsulation options available for Component's {@link Component}.
     */
   var encapsulation: js.UndefOr[ViewEncapsulation] = js.native
+  
   /**
     * Defines the name that can be used in the template to assign this directive to a variable.
     *
     * See: {@link Directive.exportAs}
     */
   var exportAs: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * A list of optional features to apply.
     *
     * See: {@link NgOnChangesFeature}, {@link ProvidersFeature}
     */
   var features: js.UndefOr[js.Array[ComponentDefFeature]] = js.native
+  
   /**
     * Assign static attribute values to a host element.
     *
@@ -105,10 +115,12 @@ trait ChangeDetection[T] extends js.Object {
     * [AttributeMarker] enum.
     */
   var hostAttrs: js.UndefOr[TAttributes] = js.native
+  
   /**
     * Function executed by the parent template to allow child directive to apply host bindings.
     */
   var hostBindings: js.UndefOr[HostBindingsFunction[T]] = js.native
+  
   /**
     * The number of bindings in this directive `hostBindings` (including pure fn bindings).
     *
@@ -116,6 +128,7 @@ trait ChangeDetection[T] extends js.Object {
     * can pre-fill the array and set the host binding start index.
     */
   var hostVars: js.UndefOr[Double] = js.native
+  
   /**
     * A map of input names.
     *
@@ -164,10 +177,12 @@ trait ChangeDetection[T] extends js.Object {
   {[ P in keyof T ]:? string | [string, string]}
     */ typings.angularCore.angularCoreStrings.ChangeDetection with TopLevel[js.Any]
   ] = js.native
+  
   /**
     * An array of `ngContent[selector]` values that were found in the template.
     */
   var ngContentSelectors: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * A map of output names.
     *
@@ -183,6 +198,7 @@ trait ChangeDetection[T] extends js.Object {
   {[ P in keyof T ]:? string}
     */ typings.angularCore.angularCoreStrings.ChangeDetection with TopLevel[js.Any]
   ] = js.native
+  
   /**
     * Registry of pipes that may be found in this component's view.
     *
@@ -190,16 +206,50 @@ trait ChangeDetection[T] extends js.Object {
     * `PipeDefs`s. The function is necessary to be able to support forward declarations.
     */
   var pipes: js.UndefOr[PipeTypesOrFactory | Null] = js.native
+  
   /**
     * The set of schemas that declare elements to be allowed in the component's template.
     */
   var schemas: js.UndefOr[js.Array[SchemaMetadata] | Null] = js.native
+  
   /** The selectors that will be used to match nodes to this component. */
   var selectors: js.UndefOr[ɵCssSelectorList] = js.native
+  
   /**
     * A set of styles that the component needs to be present for component to render correctly.
     */
   var styles: js.UndefOr[js.Array[String]] = js.native
+  
+  /**
+    * Template function use for rendering DOM.
+    *
+    * This function has following structure.
+    *
+    * ```
+    * function Template<T>(ctx:T, creationMode: boolean) {
+    *   if (creationMode) {
+    *     // Contains creation mode instructions.
+    *   }
+    *   // Contains binding update instructions
+    * }
+    * ```
+    *
+    * Common instructions are:
+    * Creation mode instructions:
+    *  - `elementStart`, `elementEnd`
+    *  - `text`
+    *  - `container`
+    *  - `listener`
+    *
+    * Binding update instructions:
+    * - `bind`
+    * - `elementAttribute`
+    * - `elementProperty`
+    * - `elementClass`
+    * - `elementStyle`
+    *
+    */
+  def template[U /* <: T */](rf: ɵRenderFlags, ctx: T | U): Unit = js.native
   /**
     * Template function use for rendering DOM.
     *
@@ -231,10 +281,12 @@ trait ChangeDetection[T] extends js.Object {
     */
   @JSName("template")
   var template_Original: ComponentTemplate[T] = js.native
+  
   /**
     * Directive type, needed to configure the injector.
     */
   var `type`: Type[T] = js.native
+  
   /**
     * The number of bindings in this component template (including pure fn bindings).
     *
@@ -242,6 +294,7 @@ trait ChangeDetection[T] extends js.Object {
     * can pre-fill the array and set the host binding start index.
     */
   var vars: Double = js.native
+  
   /**
     * Additional set of instructions specific to view query processing. This could be seen as a
     * set of instruction to be inserted into the template function.
@@ -251,35 +304,4 @@ trait ChangeDetection[T] extends js.Object {
     * before view hooks).
     */
   var viewQuery: js.UndefOr[ViewQueriesFunction[T] | Null] = js.native
-  /**
-    * Template function use for rendering DOM.
-    *
-    * This function has following structure.
-    *
-    * ```
-    * function Template<T>(ctx:T, creationMode: boolean) {
-    *   if (creationMode) {
-    *     // Contains creation mode instructions.
-    *   }
-    *   // Contains binding update instructions
-    * }
-    * ```
-    *
-    * Common instructions are:
-    * Creation mode instructions:
-    *  - `elementStart`, `elementEnd`
-    *  - `text`
-    *  - `container`
-    *  - `listener`
-    *
-    * Binding update instructions:
-    * - `bind`
-    * - `elementAttribute`
-    * - `elementProperty`
-    * - `elementClass`
-    * - `elementStyle`
-    *
-    */
-  def template[U /* <: T */](rf: ɵRenderFlags, ctx: T | U): Unit = js.native
 }
-

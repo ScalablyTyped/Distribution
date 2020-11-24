@@ -5,7 +5,7 @@ import typings.seleniumWebdriver.mod.WebElement
 import typings.seleniumWebdriver.mod.WebElementPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor", "protractor.WebElementPromise")
 @js.native
@@ -18,4 +18,3 @@ class WebElementPromiseCls protected () extends WebElementPromise {
     */
   def this(driver: WebDriver, el: js.Promise[WebElement]) = this()
 }
-

@@ -9,9 +9,9 @@ A mobile and touch friendly input spinner component for Bootstrap 3 & 4.
 | ------------------ | :-------------: |
 | Full name          | bootstrap-touchspin |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 15 |
-| # downloads        | 604485 |
+| # releases         | 2 |
+| # dependents       | 19 |
+| # downloads        | 785873 |
 | # stars            | 0 |
 
 ## Links

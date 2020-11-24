@@ -2,14 +2,14 @@ package typings.web3Utils.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("web3-utils", "leftPad")
 @js.native
 object leftPad extends js.Object {
+  
   def apply(string: String, characterAmount: Double): String = js.native
   def apply(string: String, characterAmount: Double, sign: String): String = js.native
   def apply(string: Double, characterAmount: Double): String = js.native
   def apply(string: Double, characterAmount: Double, sign: String): String = js.native
 }
-

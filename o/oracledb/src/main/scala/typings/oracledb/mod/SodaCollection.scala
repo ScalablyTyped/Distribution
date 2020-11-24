@@ -3,26 +3,14 @@ package typings.oracledb.mod
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SODA can be used with Oracle Client 18.5 and Oracle Client 19.3, or later.
   */
 @js.native
 trait SodaCollection extends js.Object {
-  /**
-    * Metadata of the current collection.
-    *
-    * @since 3.0
-    * @see https://oracle.github.io/node-oracledb/doc/api.html#sodaclientkeys
-    */
-  val metaData: SodaMetadata = js.native
-  /**
-    * Name of the current collection.
-    *
-    * @since 3.0
-    */
-  val name: String = js.native
+  
   /**
     * Creates an index on a SODA collection, to improve the performance of SODA query-by-examples (QBE) or
     * enable text searches. An index is defined by a specification, which is a JSON object that specifies
@@ -41,6 +29,7 @@ trait SodaCollection extends js.Object {
   def createIndex(indexSpec: SearchIndex, callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
   def createIndex(indexSpec: SpatialIndex): js.Promise[Unit] = js.native
   def createIndex(indexSpec: SpatialIndex, callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  
   /**
     * Drops the current collection.
     *
@@ -66,6 +55,7 @@ trait SodaCollection extends js.Object {
     */
   def drop(): js.Promise[DropCollectionResult] = js.native
   def drop(callback: js.Function2[/* error */ DBError, /* result */ DropCollectionResult, Unit]): Unit = js.native
+  
   /**
     * Drops the specified index.
     *
@@ -84,6 +74,7 @@ trait SodaCollection extends js.Object {
     options: DropIndexOptions,
     callback: js.Function2[/* error */ DBError, /* result */ DropCollectionResult, Unit]
   ): Unit = js.native
+  
   /**
     * The synchronous find() method is used to locate and order a set of SODA documents for retrieval,
     * replacement, or removal. It creates and returns a SodaOperation object which is used via method
@@ -93,6 +84,7 @@ trait SodaCollection extends js.Object {
     * @since 3.0
     */
   def find(): SodaOperation = js.native
+  
   /**
     * Infers the schema of a collection of JSON documents at the current time. A JSON data guide shows details
     * like the JSON property names, data types and lengths. It is useful for exploring the schema of a collection.
@@ -111,6 +103,7 @@ trait SodaCollection extends js.Object {
     */
   def getDataGuide(): js.Promise[SodaDocument] = js.native
   def getDataGuide(callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]): Unit = js.native
+  
   /**
     * This is similar to insertOne() however it accepts an array of the Objects or SodaDocuments that insertOne() accepts.
     * When inserting multiple documents, using insertMany() is recommended in preference to insertOne().
@@ -130,6 +123,7 @@ trait SodaCollection extends js.Object {
     documents: js.Array[SodaDocument | (Record[String, _])],
     callback: js.Function1[/* error */ DBError, Unit]
   ): Unit = js.native
+  
   /**
     * Similar to sodaCollection.insertMany() but also returns an array of the inserted documents so system managed properties,
     * such as the keys (in default collections), can be found. Content itself is not returned for performance reasons.
@@ -148,6 +142,7 @@ trait SodaCollection extends js.Object {
     documents: js.Array[SodaDocument | (Record[String, _])],
     callback: js.Function2[/* error */ DBError, /* documents */ js.Array[SodaDocument], Unit]
   ): Unit = js.native
+  
   /**
     * Inserts a given document to the collection. The input document can be either a JavaScript object representing
     * the data content, or it can be an existing SodaDocument.
@@ -168,6 +163,7 @@ trait SodaCollection extends js.Object {
   def insertOne(newDocument: SodaDocument, callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
   def insertOne(newDocument: Record[String, _]): js.Promise[Unit] = js.native
   def insertOne(newDocument: Record[String, _], callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  
   /**
     * Similar to sodaCollection.insertOne() but also returns the inserted document so system managed properties,
     * such as the key (in default collections), can be found.
@@ -197,6 +193,22 @@ trait SodaCollection extends js.Object {
     newDocument: Record[String, _],
     callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]
   ): Unit = js.native
+  
+  /**
+    * Metadata of the current collection.
+    *
+    * @since 3.0
+    * @see https://oracle.github.io/node-oracledb/doc/api.html#sodaclientkeys
+    */
+  val metaData: SodaMetadata = js.native
+  
+  /**
+    * Name of the current collection.
+    *
+    * @since 3.0
+    */
+  val name: String = js.native
+  
   /**
     * This method behaves like sodaCollection.insertOne() with the exception that if a document with the same key already exists, then it is updated instead.
     * 
@@ -207,6 +219,7 @@ trait SodaCollection extends js.Object {
     */
   def save(document: SodaDocument): js.Promise[SodaDocument] = js.native
   def save(document: SodaDocument, cb: js.Function2[/* err */ DBError, /* doc */ SodaDocument, Unit]): Unit = js.native
+  
   /**
     * This method behaves like sodaCollection.insertOneAndGet() with the exception that if a document with the same key already exists, then it is updated instead.
     * 
@@ -217,6 +230,7 @@ trait SodaCollection extends js.Object {
     */
   def saveAndGet(document: SodaDocument): js.Promise[SodaDocument] = js.native
   def saveAndGet(document: SodaDocument, cb: js.Function2[/* err */ DBError, /* doc */ SodaDocument, Unit]): Unit = js.native
+  
   /**
     * This method truncates a collection, removing all documents. The collection will not be deleted.
     * 
@@ -225,4 +239,3 @@ trait SodaCollection extends js.Object {
   def truncate(): js.Promise[Unit] = js.native
   def truncate(cb: js.Function1[/* err */ DBError, Unit]): Unit = js.native
 }
-

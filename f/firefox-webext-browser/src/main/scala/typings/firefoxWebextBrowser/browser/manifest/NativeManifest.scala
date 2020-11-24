@@ -6,16 +6,16 @@ import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stdio
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.storage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a native manifest file */
 /* Rewritten from type alias, can be one of: 
   - typings.firefoxWebextBrowser.anon.Allowedextensions
-  - typings.firefoxWebextBrowser.anon.DataDescription
+  - typings.firefoxWebextBrowser.anon.Data
 */
 trait NativeManifest extends js.Object
-
 object NativeManifest {
+  
   @scala.inline
   def Allowedextensions(
     allowed_extensions: js.Array[ExtensionID],
@@ -28,11 +28,11 @@ object NativeManifest {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeManifest]
   }
+  
   @scala.inline
-  def DataDescription(data: StringDictionary[js.Any], description: String, name: ExtensionID, `type`: storage): NativeManifest = {
+  def Data(data: StringDictionary[js.Any], description: String, name: ExtensionID, `type`: storage): NativeManifest = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeManifest]
   }
 }
-

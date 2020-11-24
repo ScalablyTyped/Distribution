@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@fluentui/react-component-event-listener" : "0.51.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@fluentui/react-component-event-listener" : "0.51.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

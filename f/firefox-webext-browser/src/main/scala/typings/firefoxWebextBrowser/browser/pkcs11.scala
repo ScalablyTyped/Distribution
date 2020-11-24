@@ -2,7 +2,7 @@ package typings.firefoxWebextBrowser.browser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PKCS#11 module management API
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.pkcs11")
 @js.native
 object pkcs11 extends js.Object
-

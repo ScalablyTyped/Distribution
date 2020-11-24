@@ -10,9 +10,9 @@ A barebones routing solution for Redux applications.
 | ------------------ | :-------------: |
 | Full name          | redux-little-router |
 | Keywords           | redux, router, middleware |
-| # releases         | 6 |
+| # releases         | 1 |
 | # dependents       | 6 |
-| # downloads        | 225355 |
+| # downloads        | 211094 |
 | # stars            | 2 |
 
 ## Links

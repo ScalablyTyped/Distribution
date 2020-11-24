@@ -1,17 +1,16 @@
 package typings.awsSdk.codecommitMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CodeCommit extends Service {
-  @JSName("config")
-  var config_CodeCommit: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates an association between an approval rule template and a specified repository. Then, the next time a pull request is created in the repository where the destination reference (if specified) matches the destination reference (branch) for the pull request, an approval rule that matches the template conditions is automatically created for that pull request. If no destination references are specified in the template, an approval rule that matches the template contents is created for all pull requests in that repository.
     */
@@ -25,6 +24,7 @@ trait CodeCommit extends Service {
     params: AssociateApprovalRuleTemplateWithRepositoryInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Creates an association between an approval rule template and one or more specified repositories. 
     */
@@ -48,6 +48,7 @@ trait CodeCommit extends Service {
       Unit
     ]
   ): Request[BatchAssociateApprovalRuleTemplateWithRepositoriesOutput, AWSError] = js.native
+  
   /**
     * Returns information about one or more merge conflicts in the attempted merge of two commit specifiers using the squash or three-way merge strategy.
     */
@@ -61,6 +62,7 @@ trait CodeCommit extends Service {
     params: BatchDescribeMergeConflictsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDescribeMergeConflictsOutput, Unit]
   ): Request[BatchDescribeMergeConflictsOutput, AWSError] = js.native
+  
   /**
     * Removes the association between an approval rule template and one or more specified repositories. 
     */
@@ -84,6 +86,7 @@ trait CodeCommit extends Service {
       Unit
     ]
   ): Request[BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput, AWSError] = js.native
+  
   /**
     * Returns information about the contents of one or more commits in a repository.
     */
@@ -97,6 +100,7 @@ trait CodeCommit extends Service {
     params: BatchGetCommitsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetCommitsOutput, Unit]
   ): Request[BatchGetCommitsOutput, AWSError] = js.native
+  
   /**
     * Returns information about one or more repositories.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a webpage can expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a webpage. 
     */
@@ -110,6 +114,10 @@ trait CodeCommit extends Service {
     params: BatchGetRepositoriesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetRepositoriesOutput, Unit]
   ): Request[BatchGetRepositoriesOutput, AWSError] = js.native
+  
+  @JSName("config")
+  var config_CodeCommit: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a template for approval rules that can then be associated with one or more repositories in your AWS account. When you associate a template with a repository, AWS CodeCommit creates an approval rule that matches the conditions of the template for all pull requests that meet the conditions of the template. For more information, see AssociateApprovalRuleTemplateWithRepository.
     */
@@ -123,6 +131,7 @@ trait CodeCommit extends Service {
     params: CreateApprovalRuleTemplateInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateApprovalRuleTemplateOutput, Unit]
   ): Request[CreateApprovalRuleTemplateOutput, AWSError] = js.native
+  
   /**
     * Creates a branch in a repository and points the branch to a commit.  Calling the create branch operation does not set a repository's default branch. To do this, call the update default branch operation. 
     */
@@ -133,6 +142,7 @@ trait CodeCommit extends Service {
     */
   def createBranch(params: CreateBranchInput): Request[js.Object, AWSError] = js.native
   def createBranch(params: CreateBranchInput, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Creates a commit for a repository on the tip of a specified branch.
     */
@@ -146,6 +156,7 @@ trait CodeCommit extends Service {
     params: CreateCommitInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCommitOutput, Unit]
   ): Request[CreateCommitOutput, AWSError] = js.native
+  
   /**
     * Creates a pull request in the specified repository.
     */
@@ -159,6 +170,7 @@ trait CodeCommit extends Service {
     params: CreatePullRequestInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePullRequestOutput, Unit]
   ): Request[CreatePullRequestOutput, AWSError] = js.native
+  
   /**
     * Creates an approval rule for a pull request.
     */
@@ -172,6 +184,7 @@ trait CodeCommit extends Service {
     params: CreatePullRequestApprovalRuleInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePullRequestApprovalRuleOutput, Unit]
   ): Request[CreatePullRequestApprovalRuleOutput, AWSError] = js.native
+  
   /**
     * Creates a new, empty repository.
     */
@@ -185,6 +198,7 @@ trait CodeCommit extends Service {
     params: CreateRepositoryInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRepositoryOutput, Unit]
   ): Request[CreateRepositoryOutput, AWSError] = js.native
+  
   /**
     * Creates an unreferenced commit that represents the result of merging two branches using a specified merge strategy. This can help you determine the outcome of a potential merge. This API cannot be used with the fast-forward merge strategy because that strategy does not create a merge commit.  This unreferenced merge commit can only be accessed using the GetCommit API or through git commands such as git fetch. To retrieve this commit, you must specify its commit ID or otherwise reference it. 
     */
@@ -198,6 +212,7 @@ trait CodeCommit extends Service {
     params: CreateUnreferencedMergeCommitInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUnreferencedMergeCommitOutput, Unit]
   ): Request[CreateUnreferencedMergeCommitOutput, AWSError] = js.native
+  
   /**
     * Deletes a specified approval rule template. Deleting a template does not remove approval rules on pull requests already created with the template.
     */
@@ -211,6 +226,7 @@ trait CodeCommit extends Service {
     params: DeleteApprovalRuleTemplateInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteApprovalRuleTemplateOutput, Unit]
   ): Request[DeleteApprovalRuleTemplateOutput, AWSError] = js.native
+  
   /**
     * Deletes a branch from a repository, unless that branch is the default branch for the repository. 
     */
@@ -224,6 +240,7 @@ trait CodeCommit extends Service {
     params: DeleteBranchInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteBranchOutput, Unit]
   ): Request[DeleteBranchOutput, AWSError] = js.native
+  
   /**
     * Deletes the content of a comment made on a change, file, or commit in a repository.
     */
@@ -237,6 +254,7 @@ trait CodeCommit extends Service {
     params: DeleteCommentContentInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteCommentContentOutput, Unit]
   ): Request[DeleteCommentContentOutput, AWSError] = js.native
+  
   /**
     * Deletes a specified file from a specified branch. A commit is created on the branch that contains the revision. The file still exists in the commits earlier to the commit that contains the deletion.
     */
@@ -250,6 +268,7 @@ trait CodeCommit extends Service {
     params: DeleteFileInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteFileOutput, Unit]
   ): Request[DeleteFileOutput, AWSError] = js.native
+  
   /**
     * Deletes an approval rule from a specified pull request. Approval rules can be deleted from a pull request only if the pull request is open, and if the approval rule was created specifically for a pull request and not generated from an approval rule template associated with the repository where the pull request was created. You cannot delete an approval rule from a merged or closed pull request.
     */
@@ -263,6 +282,7 @@ trait CodeCommit extends Service {
     params: DeletePullRequestApprovalRuleInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePullRequestApprovalRuleOutput, Unit]
   ): Request[DeletePullRequestApprovalRuleOutput, AWSError] = js.native
+  
   /**
     * Deletes a repository. If a specified repository was already deleted, a null repository ID is returned.  Deleting a repository also deletes all associated objects and metadata. After a repository is deleted, all future push calls to the deleted repository fail. 
     */
@@ -276,6 +296,7 @@ trait CodeCommit extends Service {
     params: DeleteRepositoryInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRepositoryOutput, Unit]
   ): Request[DeleteRepositoryOutput, AWSError] = js.native
+  
   /**
     * Returns information about one or more merge conflicts in the attempted merge of two commit specifiers using the squash or three-way merge strategy. If the merge option for the attempted merge is specified as FAST_FORWARD_MERGE, an exception is thrown.
     */
@@ -289,6 +310,7 @@ trait CodeCommit extends Service {
     params: DescribeMergeConflictsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeMergeConflictsOutput, Unit]
   ): Request[DescribeMergeConflictsOutput, AWSError] = js.native
+  
   /**
     * Returns information about one or more pull request events.
     */
@@ -302,6 +324,7 @@ trait CodeCommit extends Service {
     params: DescribePullRequestEventsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePullRequestEventsOutput, Unit]
   ): Request[DescribePullRequestEventsOutput, AWSError] = js.native
+  
   /**
     * Removes the association between a template and a repository so that approval rules based on the template are not automatically created when pull requests are created in the specified repository. This does not delete any approval rules previously created for pull requests through the template association.
     */
@@ -315,6 +338,7 @@ trait CodeCommit extends Service {
     params: DisassociateApprovalRuleTemplateFromRepositoryInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Evaluates whether a pull request has met all the conditions specified in its associated approval rules.
     */
@@ -330,6 +354,7 @@ trait CodeCommit extends Service {
     params: EvaluatePullRequestApprovalRulesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ EvaluatePullRequestApprovalRulesOutput, Unit]
   ): Request[EvaluatePullRequestApprovalRulesOutput, AWSError] = js.native
+  
   /**
     * Returns information about a specified approval rule template.
     */
@@ -343,6 +368,7 @@ trait CodeCommit extends Service {
     params: GetApprovalRuleTemplateInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetApprovalRuleTemplateOutput, Unit]
   ): Request[GetApprovalRuleTemplateOutput, AWSError] = js.native
+  
   /**
     * Returns the base-64 encoded content of an individual blob in a repository.
     */
@@ -353,6 +379,7 @@ trait CodeCommit extends Service {
     */
   def getBlob(params: GetBlobInput): Request[GetBlobOutput, AWSError] = js.native
   def getBlob(params: GetBlobInput, callback: js.Function2[/* err */ AWSError, /* data */ GetBlobOutput, Unit]): Request[GetBlobOutput, AWSError] = js.native
+  
   /**
     * Returns information about a repository branch, including its name and the last commit ID.
     */
@@ -366,6 +393,7 @@ trait CodeCommit extends Service {
     params: GetBranchInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetBranchOutput, Unit]
   ): Request[GetBranchOutput, AWSError] = js.native
+  
   /**
     * Returns the content of a comment made on a change, file, or commit in a repository.   Reaction counts might include numbers from user identities who were deleted after the reaction was made. For a count of reactions from active identities, use GetCommentReactions. 
     */
@@ -379,6 +407,7 @@ trait CodeCommit extends Service {
     params: GetCommentInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCommentOutput, Unit]
   ): Request[GetCommentOutput, AWSError] = js.native
+  
   /**
     * Returns information about reactions to a specified comment ID. Reactions from users who have been deleted will not be included in the count.
     */
@@ -392,6 +421,7 @@ trait CodeCommit extends Service {
     params: GetCommentReactionsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCommentReactionsOutput, Unit]
   ): Request[GetCommentReactionsOutput, AWSError] = js.native
+  
   /**
     * Returns information about comments made on the comparison between two commits.  Reaction counts might include numbers from user identities who were deleted after the reaction was made. For a count of reactions from active identities, use GetCommentReactions. 
     */
@@ -405,6 +435,7 @@ trait CodeCommit extends Service {
     params: GetCommentsForComparedCommitInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCommentsForComparedCommitOutput, Unit]
   ): Request[GetCommentsForComparedCommitOutput, AWSError] = js.native
+  
   /**
     * Returns comments made on a pull request.  Reaction counts might include numbers from user identities who were deleted after the reaction was made. For a count of reactions from active identities, use GetCommentReactions. 
     */
@@ -418,6 +449,7 @@ trait CodeCommit extends Service {
     params: GetCommentsForPullRequestInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCommentsForPullRequestOutput, Unit]
   ): Request[GetCommentsForPullRequestOutput, AWSError] = js.native
+  
   /**
     * Returns information about a commit, including commit message and committer information.
     */
@@ -431,6 +463,7 @@ trait CodeCommit extends Service {
     params: GetCommitInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCommitOutput, Unit]
   ): Request[GetCommitOutput, AWSError] = js.native
+  
   /**
     * Returns information about the differences in a valid commit specifier (such as a branch, tag, HEAD, commit ID, or other fully qualified reference). Results can be limited to a specified path.
     */
@@ -444,6 +477,7 @@ trait CodeCommit extends Service {
     params: GetDifferencesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDifferencesOutput, Unit]
   ): Request[GetDifferencesOutput, AWSError] = js.native
+  
   /**
     * Returns the base-64 encoded contents of a specified file and its metadata.
     */
@@ -454,6 +488,7 @@ trait CodeCommit extends Service {
     */
   def getFile(params: GetFileInput): Request[GetFileOutput, AWSError] = js.native
   def getFile(params: GetFileInput, callback: js.Function2[/* err */ AWSError, /* data */ GetFileOutput, Unit]): Request[GetFileOutput, AWSError] = js.native
+  
   /**
     * Returns the contents of a specified folder in a repository.
     */
@@ -467,6 +502,7 @@ trait CodeCommit extends Service {
     params: GetFolderInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetFolderOutput, Unit]
   ): Request[GetFolderOutput, AWSError] = js.native
+  
   /**
     * Returns information about a specified merge commit.
     */
@@ -480,6 +516,7 @@ trait CodeCommit extends Service {
     params: GetMergeCommitInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMergeCommitOutput, Unit]
   ): Request[GetMergeCommitOutput, AWSError] = js.native
+  
   /**
     * Returns information about merge conflicts between the before and after commit IDs for a pull request in a repository.
     */
@@ -493,6 +530,7 @@ trait CodeCommit extends Service {
     params: GetMergeConflictsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMergeConflictsOutput, Unit]
   ): Request[GetMergeConflictsOutput, AWSError] = js.native
+  
   /**
     * Returns information about the merge options available for merging two specified branches. For details about why a merge option is not available, use GetMergeConflicts or DescribeMergeConflicts.
     */
@@ -506,6 +544,7 @@ trait CodeCommit extends Service {
     params: GetMergeOptionsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMergeOptionsOutput, Unit]
   ): Request[GetMergeOptionsOutput, AWSError] = js.native
+  
   /**
     * Gets information about a pull request in a specified repository.
     */
@@ -519,6 +558,7 @@ trait CodeCommit extends Service {
     params: GetPullRequestInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPullRequestOutput, Unit]
   ): Request[GetPullRequestOutput, AWSError] = js.native
+  
   /**
     * Gets information about the approval states for a specified pull request. Approval states only apply to pull requests that have one or more approval rules applied to them.
     */
@@ -532,6 +572,7 @@ trait CodeCommit extends Service {
     params: GetPullRequestApprovalStatesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPullRequestApprovalStatesOutput, Unit]
   ): Request[GetPullRequestApprovalStatesOutput, AWSError] = js.native
+  
   /**
     * Returns information about whether approval rules have been set aside (overridden) for a pull request, and if so, the Amazon Resource Name (ARN) of the user or identity that overrode the rules and their requirements for the pull request.
     */
@@ -545,6 +586,7 @@ trait CodeCommit extends Service {
     params: GetPullRequestOverrideStateInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPullRequestOverrideStateOutput, Unit]
   ): Request[GetPullRequestOverrideStateOutput, AWSError] = js.native
+  
   /**
     * Returns information about a repository.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a webpage can expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a webpage. 
     */
@@ -558,6 +600,7 @@ trait CodeCommit extends Service {
     params: GetRepositoryInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRepositoryOutput, Unit]
   ): Request[GetRepositoryOutput, AWSError] = js.native
+  
   /**
     * Gets information about triggers configured for a repository.
     */
@@ -571,6 +614,7 @@ trait CodeCommit extends Service {
     params: GetRepositoryTriggersInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRepositoryTriggersOutput, Unit]
   ): Request[GetRepositoryTriggersOutput, AWSError] = js.native
+  
   /**
     * Lists all approval rule templates in the specified AWS Region in your AWS account. If an AWS Region is not specified, the AWS Region where you are signed in is used.
     */
@@ -584,6 +628,7 @@ trait CodeCommit extends Service {
     params: ListApprovalRuleTemplatesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListApprovalRuleTemplatesOutput, Unit]
   ): Request[ListApprovalRuleTemplatesOutput, AWSError] = js.native
+  
   /**
     * Lists all approval rule templates that are associated with a specified repository.
     */
@@ -607,6 +652,7 @@ trait CodeCommit extends Service {
       Unit
     ]
   ): Request[ListAssociatedApprovalRuleTemplatesForRepositoryOutput, AWSError] = js.native
+  
   /**
     * Gets information about one or more branches in a repository.
     */
@@ -620,6 +666,7 @@ trait CodeCommit extends Service {
     params: ListBranchesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBranchesOutput, Unit]
   ): Request[ListBranchesOutput, AWSError] = js.native
+  
   /**
     * Returns a list of pull requests for a specified repository. The return list can be refined by pull request status or pull request author ARN.
     */
@@ -633,6 +680,7 @@ trait CodeCommit extends Service {
     params: ListPullRequestsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPullRequestsOutput, Unit]
   ): Request[ListPullRequestsOutput, AWSError] = js.native
+  
   /**
     * Gets information about one or more repositories.
     */
@@ -646,6 +694,7 @@ trait CodeCommit extends Service {
     params: ListRepositoriesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRepositoriesOutput, Unit]
   ): Request[ListRepositoriesOutput, AWSError] = js.native
+  
   /**
     * Lists all repositories associated with the specified approval rule template.
     */
@@ -661,6 +710,7 @@ trait CodeCommit extends Service {
     params: ListRepositoriesForApprovalRuleTemplateInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRepositoriesForApprovalRuleTemplateOutput, Unit]
   ): Request[ListRepositoriesForApprovalRuleTemplateOutput, AWSError] = js.native
+  
   /**
     * Gets information about AWS tags for a specified Amazon Resource Name (ARN) in AWS CodeCommit. For a list of valid resources in AWS CodeCommit, see CodeCommit Resources and Operations in the AWS CodeCommit User Guide.
     */
@@ -674,6 +724,7 @@ trait CodeCommit extends Service {
     params: ListTagsForResourceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceOutput, Unit]
   ): Request[ListTagsForResourceOutput, AWSError] = js.native
+  
   /**
     * Merges two branches using the fast-forward merge strategy.
     */
@@ -687,6 +738,7 @@ trait CodeCommit extends Service {
     params: MergeBranchesByFastForwardInput,
     callback: js.Function2[/* err */ AWSError, /* data */ MergeBranchesByFastForwardOutput, Unit]
   ): Request[MergeBranchesByFastForwardOutput, AWSError] = js.native
+  
   /**
     * Merges two branches using the squash merge strategy.
     */
@@ -700,6 +752,7 @@ trait CodeCommit extends Service {
     params: MergeBranchesBySquashInput,
     callback: js.Function2[/* err */ AWSError, /* data */ MergeBranchesBySquashOutput, Unit]
   ): Request[MergeBranchesBySquashOutput, AWSError] = js.native
+  
   /**
     * Merges two specified branches using the three-way merge strategy.
     */
@@ -713,6 +766,7 @@ trait CodeCommit extends Service {
     params: MergeBranchesByThreeWayInput,
     callback: js.Function2[/* err */ AWSError, /* data */ MergeBranchesByThreeWayOutput, Unit]
   ): Request[MergeBranchesByThreeWayOutput, AWSError] = js.native
+  
   /**
     * Attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the fast-forward merge strategy. If the merge is successful, it closes the pull request.
     */
@@ -726,6 +780,7 @@ trait CodeCommit extends Service {
     params: MergePullRequestByFastForwardInput,
     callback: js.Function2[/* err */ AWSError, /* data */ MergePullRequestByFastForwardOutput, Unit]
   ): Request[MergePullRequestByFastForwardOutput, AWSError] = js.native
+  
   /**
     * Attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the squash merge strategy. If the merge is successful, it closes the pull request.
     */
@@ -739,6 +794,7 @@ trait CodeCommit extends Service {
     params: MergePullRequestBySquashInput,
     callback: js.Function2[/* err */ AWSError, /* data */ MergePullRequestBySquashOutput, Unit]
   ): Request[MergePullRequestBySquashOutput, AWSError] = js.native
+  
   /**
     * Attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the three-way merge strategy. If the merge is successful, it closes the pull request.
     */
@@ -752,6 +808,7 @@ trait CodeCommit extends Service {
     params: MergePullRequestByThreeWayInput,
     callback: js.Function2[/* err */ AWSError, /* data */ MergePullRequestByThreeWayOutput, Unit]
   ): Request[MergePullRequestByThreeWayOutput, AWSError] = js.native
+  
   /**
     * Sets aside (overrides) all approval rule requirements for a specified pull request.
     */
@@ -765,6 +822,7 @@ trait CodeCommit extends Service {
     params: OverridePullRequestApprovalRulesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Posts a comment on the comparison between two commits.
     */
@@ -778,6 +836,7 @@ trait CodeCommit extends Service {
     params: PostCommentForComparedCommitInput,
     callback: js.Function2[/* err */ AWSError, /* data */ PostCommentForComparedCommitOutput, Unit]
   ): Request[PostCommentForComparedCommitOutput, AWSError] = js.native
+  
   /**
     * Posts a comment on a pull request.
     */
@@ -791,6 +850,7 @@ trait CodeCommit extends Service {
     params: PostCommentForPullRequestInput,
     callback: js.Function2[/* err */ AWSError, /* data */ PostCommentForPullRequestOutput, Unit]
   ): Request[PostCommentForPullRequestOutput, AWSError] = js.native
+  
   /**
     * Posts a comment in reply to an existing comment on a comparison between commits or a pull request.
     */
@@ -804,6 +864,7 @@ trait CodeCommit extends Service {
     params: PostCommentReplyInput,
     callback: js.Function2[/* err */ AWSError, /* data */ PostCommentReplyOutput, Unit]
   ): Request[PostCommentReplyOutput, AWSError] = js.native
+  
   /**
     * Adds or updates a reaction to a specified comment for the user whose identity is used to make the request. You can only add or update a reaction for yourself. You cannot add, modify, or delete a reaction for another user.
     */
@@ -817,6 +878,7 @@ trait CodeCommit extends Service {
     params: PutCommentReactionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Adds or updates a file in a branch in an AWS CodeCommit repository, and generates a commit for the addition in the specified branch.
     */
@@ -827,6 +889,7 @@ trait CodeCommit extends Service {
     */
   def putFile(params: PutFileInput): Request[PutFileOutput, AWSError] = js.native
   def putFile(params: PutFileInput, callback: js.Function2[/* err */ AWSError, /* data */ PutFileOutput, Unit]): Request[PutFileOutput, AWSError] = js.native
+  
   /**
     * Replaces all triggers for a repository. Used to create or delete triggers.
     */
@@ -840,6 +903,7 @@ trait CodeCommit extends Service {
     params: PutRepositoryTriggersInput,
     callback: js.Function2[/* err */ AWSError, /* data */ PutRepositoryTriggersOutput, Unit]
   ): Request[PutRepositoryTriggersOutput, AWSError] = js.native
+  
   /**
     * Adds or updates tags for a resource in AWS CodeCommit. For a list of valid resources in AWS CodeCommit, see CodeCommit Resources and Operations in the AWS CodeCommit User Guide.
     */
@@ -850,6 +914,7 @@ trait CodeCommit extends Service {
     */
   def tagResource(params: TagResourceInput): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceInput, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Tests the functionality of repository triggers by sending information to the trigger target. If real data is available in the repository, the test sends data from the last commit. If no data is available, sample data is generated.
     */
@@ -863,6 +928,7 @@ trait CodeCommit extends Service {
     params: TestRepositoryTriggersInput,
     callback: js.Function2[/* err */ AWSError, /* data */ TestRepositoryTriggersOutput, Unit]
   ): Request[TestRepositoryTriggersOutput, AWSError] = js.native
+  
   /**
     * Removes tags for a resource in AWS CodeCommit. For a list of valid resources in AWS CodeCommit, see CodeCommit Resources and Operations in the AWS CodeCommit User Guide.
     */
@@ -873,6 +939,7 @@ trait CodeCommit extends Service {
     */
   def untagResource(params: UntagResourceInput): Request[js.Object, AWSError] = js.native
   def untagResource(params: UntagResourceInput, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates the content of an approval rule template. You can change the number of required approvals, the membership of the approval rule, and whether an approval pool is defined.
     */
@@ -888,6 +955,7 @@ trait CodeCommit extends Service {
     params: UpdateApprovalRuleTemplateContentInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateApprovalRuleTemplateContentOutput, Unit]
   ): Request[UpdateApprovalRuleTemplateContentOutput, AWSError] = js.native
+  
   /**
     * Updates the description for a specified approval rule template.
     */
@@ -903,6 +971,7 @@ trait CodeCommit extends Service {
     params: UpdateApprovalRuleTemplateDescriptionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateApprovalRuleTemplateDescriptionOutput, Unit]
   ): Request[UpdateApprovalRuleTemplateDescriptionOutput, AWSError] = js.native
+  
   /**
     * Updates the name of a specified approval rule template.
     */
@@ -916,6 +985,7 @@ trait CodeCommit extends Service {
     params: UpdateApprovalRuleTemplateNameInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateApprovalRuleTemplateNameOutput, Unit]
   ): Request[UpdateApprovalRuleTemplateNameOutput, AWSError] = js.native
+  
   /**
     * Replaces the contents of a comment.
     */
@@ -929,6 +999,7 @@ trait CodeCommit extends Service {
     params: UpdateCommentInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateCommentOutput, Unit]
   ): Request[UpdateCommentOutput, AWSError] = js.native
+  
   /**
     * Sets or changes the default branch name for the specified repository.  If you use this operation to change the default branch name to the current default branch name, a success message is returned even though the default branch did not change. 
     */
@@ -942,6 +1013,7 @@ trait CodeCommit extends Service {
     params: UpdateDefaultBranchInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates the structure of an approval rule created specifically for a pull request. For example, you can change the number of required approvers and the approval pool for approvers. 
     */
@@ -957,6 +1029,7 @@ trait CodeCommit extends Service {
     params: UpdatePullRequestApprovalRuleContentInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePullRequestApprovalRuleContentOutput, Unit]
   ): Request[UpdatePullRequestApprovalRuleContentOutput, AWSError] = js.native
+  
   /**
     * Updates the state of a user's approval on a pull request. The user is derived from the signed-in account when the request is made.
     */
@@ -970,6 +1043,7 @@ trait CodeCommit extends Service {
     params: UpdatePullRequestApprovalStateInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Replaces the contents of the description of a pull request.
     */
@@ -983,6 +1057,7 @@ trait CodeCommit extends Service {
     params: UpdatePullRequestDescriptionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePullRequestDescriptionOutput, Unit]
   ): Request[UpdatePullRequestDescriptionOutput, AWSError] = js.native
+  
   /**
     * Updates the status of a pull request. 
     */
@@ -996,6 +1071,7 @@ trait CodeCommit extends Service {
     params: UpdatePullRequestStatusInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePullRequestStatusOutput, Unit]
   ): Request[UpdatePullRequestStatusOutput, AWSError] = js.native
+  
   /**
     * Replaces the title of a pull request.
     */
@@ -1009,6 +1085,7 @@ trait CodeCommit extends Service {
     params: UpdatePullRequestTitleInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePullRequestTitleOutput, Unit]
   ): Request[UpdatePullRequestTitleOutput, AWSError] = js.native
+  
   /**
     * Sets or changes the comment or description for a repository.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a webpage can expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a webpage. 
     */
@@ -1022,6 +1099,7 @@ trait CodeCommit extends Service {
     params: UpdateRepositoryDescriptionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Renames a repository. The repository name must be unique across the calling AWS account. Repository names are limited to 100 alphanumeric, dash, and underscore characters, and cannot include certain characters. The suffix .git is prohibited. For more information about the limits on repository names, see Limits in the AWS CodeCommit User Guide.
     */
@@ -1036,4 +1114,3 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
 }
-

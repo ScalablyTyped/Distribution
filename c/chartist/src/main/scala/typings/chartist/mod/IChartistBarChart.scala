@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IChartistBarChart
@@ -24,4 +24,3 @@ trait IChartistBarChart
       /* responsiveOptions */ js.Array[IResponsiveOptionTuple[IBarChartOptions]], 
       IChartistBarChart
     ]
-

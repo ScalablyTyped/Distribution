@@ -3,7 +3,7 @@ package typings.jake.mod.global.jake
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jake.Task")
 @js.native
@@ -37,27 +37,41 @@ class Task protected () extends EventEmitter {
     action: js.ThisFunction0[/* this */ Task, Unit],
     opts: TaskOptions
   ) = this()
+  
   var action: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
-  var async: js.UndefOr[Boolean] = js.native
-  var description: js.UndefOr[String] = js.native
-  var fullName: String = js.native
-  var name: js.UndefOr[String] = js.native
-  var prereqs: js.UndefOr[js.Array[String]] = js.native
-  var taskStatus: js.UndefOr[String] = js.native
-  var value: js.Any = js.native
+  
   def addListener(event: String, listener: js.Function): this.type = js.native
+  
+  var async: js.UndefOr[Boolean] = js.native
+  
   def complete(): Unit = js.native
   def complete(value: js.Any): Unit = js.native
+  
+  var description: js.UndefOr[String] = js.native
+  
+  var fullName: String = js.native
+  
   /**
     * Runs prerequisites, then this task. If the task has already been run, will not run the task again.
     */
   def invoke(): Unit = js.native
+  
+  var name: js.UndefOr[String] = js.native
+  
   def on(event: String, listener: js.Function): this.type = js.native
+  
   def once(event: String, listener: js.Function): this.type = js.native
+  
+  var prereqs: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Runs this task, without running any prerequisites. If the task has already been run, it will still run it again.
     */
   def reenable(): Unit = js.native
+  
   def removeListener(event: String, listener: js.Function): this.type = js.native
+  
+  var taskStatus: js.UndefOr[String] = js.native
+  
+  var value: js.Any = js.native
 }
-

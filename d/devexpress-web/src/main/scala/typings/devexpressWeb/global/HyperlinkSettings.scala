@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings to define a hyperlink.
@@ -39,4 +39,3 @@ class HyperlinkSettings ()
   def this(url: String, bookmark: String, tooltip: js.UndefOr[scala.Nothing], text: String) = this()
   def this(url: String, bookmark: String, tooltip: String, text: String) = this()
 }
-

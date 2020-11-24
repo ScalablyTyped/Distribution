@@ -19,28 +19,45 @@ import typings.antdMobileRn.anon.PaddingTopNumber
 import typings.antdMobileRn.anon.ZIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn/lib/modal/style/index.native", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   var body: PaddingBottomPaddingHorizontal = js.native
+  
   var buttonGroupH: FlexDirectionFlexGrow = js.native
+  
   var buttonGroupV: FlexDirectionFlexGrow = js.native
+  
   var buttonText: BackgroundColorColorFontSize = js.native
+  
   var buttonTextOperation: ColorPaddingHorizontal = js.native
+  
   var buttonWrapH: BorderColorBorderRightWidth = js.native
+  
   var buttonWrapV: BorderColorBorderTopWidth = js.native
+  
   var close: LineHeight = js.native
+  
   var closeWrap: LeftPosition = js.native
+  
   var container: ZIndex = js.native
+  
   var footer: BorderBottomLeftRadius = js.native
+  
   var header: FontSizePaddingHorizontal = js.native
+  
   var innerContainer: OverflowPaddingTop = js.native
+  
   var maskClosable: BackgroundColorBottom = js.native
+  
   var operationBody: PaddingBottomNumber = js.native
+  
   var operationContainer: PaddingTopNumber = js.native
+  
   var popupSlideUp: Left = js.native
+  
   var wrap: AlignItemsJustifyContent = js.native
 }
-

@@ -6,9 +6,240 @@ import typings.polished.sideKeywordMod.SideKeyword
 import typings.polished.timingFunctionMod.TimingFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object polishedStrings {
+  
+  @js.native
+  sealed trait ^ extends js.Object
+  @scala.inline
+  def ^ : ^ = "^".asInstanceOf[^]
+  
+  @scala.inline
+  def `-_`: `-_` = "-".asInstanceOf[`-_`]
+  
+  @scala.inline
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  
+  @scala.inline
+  def BackslashAsterisk: BackslashAsterisk = "\\*".asInstanceOf[BackslashAsterisk]
+  
+  @scala.inline
+  def BackslashLeftparenthesis: BackslashLeftparenthesis = "\\(".asInstanceOf[BackslashLeftparenthesis]
+  
+  @scala.inline
+  def BackslashPlussign: BackslashPlussign = "\\+".asInstanceOf[BackslashPlussign]
+  
+  @scala.inline
+  def BackslashRightparenthesis: BackslashRightparenthesis = "\\)".asInstanceOf[BackslashRightparenthesis]
+  
+  @scala.inline
+  def `Backslash^`: `Backslash^` = "\\^".asInstanceOf[`Backslash^`]
+  
+  @scala.inline
+  def Comma: Comma = ",".asInstanceOf[Comma]
+  
+  @scala.inline
+  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
+  
+  @scala.inline
+  def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
+  
+  @scala.inline
+  def Plussign: Plussign = "+".asInstanceOf[Plussign]
+  
+  @scala.inline
+  def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
+  
+  @scala.inline
+  def Slash: Slash = "/".asInstanceOf[Slash]
+  
+  @scala.inline
+  def active: active = "active".asInstanceOf[active]
+  
+  @scala.inline
+  def augFourth: augFourth = "augFourth".asInstanceOf[augFourth]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
+  
+  @scala.inline
+  def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
+  
+  @scala.inline
+  def doubleOctave: doubleOctave = "doubleOctave".asInstanceOf[doubleOctave]
+  
+  @scala.inline
+  def easeInBack: easeInBack = "easeInBack".asInstanceOf[easeInBack]
+  
+  @scala.inline
+  def easeInCirc: easeInCirc = "easeInCirc".asInstanceOf[easeInCirc]
+  
+  @scala.inline
+  def easeInCubic: easeInCubic = "easeInCubic".asInstanceOf[easeInCubic]
+  
+  @scala.inline
+  def easeInExpo: easeInExpo = "easeInExpo".asInstanceOf[easeInExpo]
+  
+  @scala.inline
+  def easeInOutBack: easeInOutBack = "easeInOutBack".asInstanceOf[easeInOutBack]
+  
+  @scala.inline
+  def easeInOutCirc: easeInOutCirc = "easeInOutCirc".asInstanceOf[easeInOutCirc]
+  
+  @scala.inline
+  def easeInOutCubic: easeInOutCubic = "easeInOutCubic".asInstanceOf[easeInOutCubic]
+  
+  @scala.inline
+  def easeInOutExpo: easeInOutExpo = "easeInOutExpo".asInstanceOf[easeInOutExpo]
+  
+  @scala.inline
+  def easeInOutQuad: easeInOutQuad = "easeInOutQuad".asInstanceOf[easeInOutQuad]
+  
+  @scala.inline
+  def easeInOutQuart: easeInOutQuart = "easeInOutQuart".asInstanceOf[easeInOutQuart]
+  
+  @scala.inline
+  def easeInOutQuint: easeInOutQuint = "easeInOutQuint".asInstanceOf[easeInOutQuint]
+  
+  @scala.inline
+  def easeInOutSine: easeInOutSine = "easeInOutSine".asInstanceOf[easeInOutSine]
+  
+  @scala.inline
+  def easeInQuad: easeInQuad = "easeInQuad".asInstanceOf[easeInQuad]
+  
+  @scala.inline
+  def easeInQuart: easeInQuart = "easeInQuart".asInstanceOf[easeInQuart]
+  
+  @scala.inline
+  def easeInQuint: easeInQuint = "easeInQuint".asInstanceOf[easeInQuint]
+  
+  @scala.inline
+  def easeInSine: easeInSine = "easeInSine".asInstanceOf[easeInSine]
+  
+  @scala.inline
+  def easeOutBack: easeOutBack = "easeOutBack".asInstanceOf[easeOutBack]
+  
+  @scala.inline
+  def easeOutCirc: easeOutCirc = "easeOutCirc".asInstanceOf[easeOutCirc]
+  
+  @scala.inline
+  def easeOutCubic: easeOutCubic = "easeOutCubic".asInstanceOf[easeOutCubic]
+  
+  @scala.inline
+  def easeOutExpo: easeOutExpo = "easeOutExpo".asInstanceOf[easeOutExpo]
+  
+  @scala.inline
+  def easeOutQuad: easeOutQuad = "easeOutQuad".asInstanceOf[easeOutQuad]
+  
+  @scala.inline
+  def easeOutQuart: easeOutQuart = "easeOutQuart".asInstanceOf[easeOutQuart]
+  
+  @scala.inline
+  def easeOutQuint: easeOutQuint = "easeOutQuint".asInstanceOf[easeOutQuint]
+  
+  @scala.inline
+  def easeOutSine: easeOutSine = "easeOutSine".asInstanceOf[easeOutSine]
+  
+  @scala.inline
+  def focus: focus = "focus".asInstanceOf[focus]
+  
+  @scala.inline
+  def func: func = "func".asInstanceOf[func]
+  
+  @scala.inline
+  def goldenSection: goldenSection = "goldenSection".asInstanceOf[goldenSection]
+  
+  @scala.inline
+  def hover: hover = "hover".asInstanceOf[hover]
+  
+  @scala.inline
+  def infix: infix = "infix".asInstanceOf[infix]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def majorEleventh: majorEleventh = "majorEleventh".asInstanceOf[majorEleventh]
+  
+  @scala.inline
+  def majorSecond: majorSecond = "majorSecond".asInstanceOf[majorSecond]
+  
+  @scala.inline
+  def majorSeventh: majorSeventh = "majorSeventh".asInstanceOf[majorSeventh]
+  
+  @scala.inline
+  def majorSixth: majorSixth = "majorSixth".asInstanceOf[majorSixth]
+  
+  @scala.inline
+  def majorTenth: majorTenth = "majorTenth".asInstanceOf[majorTenth]
+  
+  @scala.inline
+  def majorThird: majorThird = "majorThird".asInstanceOf[majorThird]
+  
+  @scala.inline
+  def majorTwelfth: majorTwelfth = "majorTwelfth".asInstanceOf[majorTwelfth]
+  
+  @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  
+  @scala.inline
+  def maxBackslashb: maxBackslashb = "max\\b".asInstanceOf[maxBackslashb]
+  
+  @scala.inline
+  def min: min = "min".asInstanceOf[min]
+  
+  @scala.inline
+  def minBackslashb: minBackslashb = "min\\b".asInstanceOf[minBackslashb]
+  
+  @scala.inline
+  def minorSecond: minorSecond = "minorSecond".asInstanceOf[minorSecond]
+  
+  @scala.inline
+  def minorSeventh: minorSeventh = "minorSeventh".asInstanceOf[minorSeventh]
+  
+  @scala.inline
+  def minorSixth: minorSixth = "minorSixth".asInstanceOf[minorSixth]
+  
+  @scala.inline
+  def minorThird: minorThird = "minorThird".asInstanceOf[minorThird]
+  
+  @scala.inline
+  def octave: octave = "octave".asInstanceOf[octave]
+  
+  @scala.inline
+  def perfectFifth: perfectFifth = "perfectFifth".asInstanceOf[perfectFifth]
+  
+  @scala.inline
+  def perfectFourth: perfectFourth = "perfectFourth".asInstanceOf[perfectFourth]
+  
+  @scala.inline
+  def postfix: postfix = "postfix".asInstanceOf[postfix]
+  
+  @scala.inline
+  def prefix: prefix = "prefix".asInstanceOf[prefix]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def sqrt: sqrt = "sqrt".asInstanceOf[sqrt]
+  
+  @scala.inline
+  def sqrtBackslashb: sqrtBackslashb = "sqrt\\b".asInstanceOf[sqrtBackslashb]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
+  
+  @scala.inline
+  def topRight: topRight = "topRight".asInstanceOf[topRight]
+  
   @js.native
   sealed trait `-_` extends js.Object
   
@@ -47,9 +278,6 @@ object polishedStrings {
   
   @js.native
   sealed trait Slash extends js.Object
-  
-  @js.native
-  sealed trait ^ extends js.Object
   
   @js.native
   sealed trait active extends _InteractionState
@@ -236,158 +464,4 @@ object polishedStrings {
   
   @js.native
   sealed trait topRight extends SideKeyword
-  
-  @scala.inline
-  def `-_`: `-_` = "-".asInstanceOf[`-_`]
-  @scala.inline
-  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
-  @scala.inline
-  def BackslashAsterisk: BackslashAsterisk = "\\*".asInstanceOf[BackslashAsterisk]
-  @scala.inline
-  def BackslashLeftparenthesis: BackslashLeftparenthesis = "\\(".asInstanceOf[BackslashLeftparenthesis]
-  @scala.inline
-  def BackslashPlussign: BackslashPlussign = "\\+".asInstanceOf[BackslashPlussign]
-  @scala.inline
-  def BackslashRightparenthesis: BackslashRightparenthesis = "\\)".asInstanceOf[BackslashRightparenthesis]
-  @scala.inline
-  def `Backslash^`: `Backslash^` = "\\^".asInstanceOf[`Backslash^`]
-  @scala.inline
-  def Comma: Comma = ",".asInstanceOf[Comma]
-  @scala.inline
-  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
-  @scala.inline
-  def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
-  @scala.inline
-  def Plussign: Plussign = "+".asInstanceOf[Plussign]
-  @scala.inline
-  def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
-  @scala.inline
-  def Slash: Slash = "/".asInstanceOf[Slash]
-  @scala.inline
-  def ^ : ^ = "^".asInstanceOf[^]
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
-  @scala.inline
-  def augFourth: augFourth = "augFourth".asInstanceOf[augFourth]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
-  @scala.inline
-  def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
-  @scala.inline
-  def doubleOctave: doubleOctave = "doubleOctave".asInstanceOf[doubleOctave]
-  @scala.inline
-  def easeInBack: easeInBack = "easeInBack".asInstanceOf[easeInBack]
-  @scala.inline
-  def easeInCirc: easeInCirc = "easeInCirc".asInstanceOf[easeInCirc]
-  @scala.inline
-  def easeInCubic: easeInCubic = "easeInCubic".asInstanceOf[easeInCubic]
-  @scala.inline
-  def easeInExpo: easeInExpo = "easeInExpo".asInstanceOf[easeInExpo]
-  @scala.inline
-  def easeInOutBack: easeInOutBack = "easeInOutBack".asInstanceOf[easeInOutBack]
-  @scala.inline
-  def easeInOutCirc: easeInOutCirc = "easeInOutCirc".asInstanceOf[easeInOutCirc]
-  @scala.inline
-  def easeInOutCubic: easeInOutCubic = "easeInOutCubic".asInstanceOf[easeInOutCubic]
-  @scala.inline
-  def easeInOutExpo: easeInOutExpo = "easeInOutExpo".asInstanceOf[easeInOutExpo]
-  @scala.inline
-  def easeInOutQuad: easeInOutQuad = "easeInOutQuad".asInstanceOf[easeInOutQuad]
-  @scala.inline
-  def easeInOutQuart: easeInOutQuart = "easeInOutQuart".asInstanceOf[easeInOutQuart]
-  @scala.inline
-  def easeInOutQuint: easeInOutQuint = "easeInOutQuint".asInstanceOf[easeInOutQuint]
-  @scala.inline
-  def easeInOutSine: easeInOutSine = "easeInOutSine".asInstanceOf[easeInOutSine]
-  @scala.inline
-  def easeInQuad: easeInQuad = "easeInQuad".asInstanceOf[easeInQuad]
-  @scala.inline
-  def easeInQuart: easeInQuart = "easeInQuart".asInstanceOf[easeInQuart]
-  @scala.inline
-  def easeInQuint: easeInQuint = "easeInQuint".asInstanceOf[easeInQuint]
-  @scala.inline
-  def easeInSine: easeInSine = "easeInSine".asInstanceOf[easeInSine]
-  @scala.inline
-  def easeOutBack: easeOutBack = "easeOutBack".asInstanceOf[easeOutBack]
-  @scala.inline
-  def easeOutCirc: easeOutCirc = "easeOutCirc".asInstanceOf[easeOutCirc]
-  @scala.inline
-  def easeOutCubic: easeOutCubic = "easeOutCubic".asInstanceOf[easeOutCubic]
-  @scala.inline
-  def easeOutExpo: easeOutExpo = "easeOutExpo".asInstanceOf[easeOutExpo]
-  @scala.inline
-  def easeOutQuad: easeOutQuad = "easeOutQuad".asInstanceOf[easeOutQuad]
-  @scala.inline
-  def easeOutQuart: easeOutQuart = "easeOutQuart".asInstanceOf[easeOutQuart]
-  @scala.inline
-  def easeOutQuint: easeOutQuint = "easeOutQuint".asInstanceOf[easeOutQuint]
-  @scala.inline
-  def easeOutSine: easeOutSine = "easeOutSine".asInstanceOf[easeOutSine]
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
-  @scala.inline
-  def func: func = "func".asInstanceOf[func]
-  @scala.inline
-  def goldenSection: goldenSection = "goldenSection".asInstanceOf[goldenSection]
-  @scala.inline
-  def hover: hover = "hover".asInstanceOf[hover]
-  @scala.inline
-  def infix: infix = "infix".asInstanceOf[infix]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def majorEleventh: majorEleventh = "majorEleventh".asInstanceOf[majorEleventh]
-  @scala.inline
-  def majorSecond: majorSecond = "majorSecond".asInstanceOf[majorSecond]
-  @scala.inline
-  def majorSeventh: majorSeventh = "majorSeventh".asInstanceOf[majorSeventh]
-  @scala.inline
-  def majorSixth: majorSixth = "majorSixth".asInstanceOf[majorSixth]
-  @scala.inline
-  def majorTenth: majorTenth = "majorTenth".asInstanceOf[majorTenth]
-  @scala.inline
-  def majorThird: majorThird = "majorThird".asInstanceOf[majorThird]
-  @scala.inline
-  def majorTwelfth: majorTwelfth = "majorTwelfth".asInstanceOf[majorTwelfth]
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
-  def maxBackslashb: maxBackslashb = "max\\b".asInstanceOf[maxBackslashb]
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
-  @scala.inline
-  def minBackslashb: minBackslashb = "min\\b".asInstanceOf[minBackslashb]
-  @scala.inline
-  def minorSecond: minorSecond = "minorSecond".asInstanceOf[minorSecond]
-  @scala.inline
-  def minorSeventh: minorSeventh = "minorSeventh".asInstanceOf[minorSeventh]
-  @scala.inline
-  def minorSixth: minorSixth = "minorSixth".asInstanceOf[minorSixth]
-  @scala.inline
-  def minorThird: minorThird = "minorThird".asInstanceOf[minorThird]
-  @scala.inline
-  def octave: octave = "octave".asInstanceOf[octave]
-  @scala.inline
-  def perfectFifth: perfectFifth = "perfectFifth".asInstanceOf[perfectFifth]
-  @scala.inline
-  def perfectFourth: perfectFourth = "perfectFourth".asInstanceOf[perfectFourth]
-  @scala.inline
-  def postfix: postfix = "postfix".asInstanceOf[postfix]
-  @scala.inline
-  def prefix: prefix = "prefix".asInstanceOf[prefix]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def sqrt: sqrt = "sqrt".asInstanceOf[sqrt]
-  @scala.inline
-  def sqrtBackslashb: sqrtBackslashb = "sqrt\\b".asInstanceOf[sqrtBackslashb]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
-  @scala.inline
-  def topRight: topRight = "topRight".asInstanceOf[topRight]
 }
-

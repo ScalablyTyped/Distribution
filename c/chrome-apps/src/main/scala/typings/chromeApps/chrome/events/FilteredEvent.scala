@@ -2,7 +2,7 @@ package typings.chromeApps.chrome.events
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object which allows the addition and removal of listeners for a Chrome event.
@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait FilteredEvent[T /* <: js.Function */, F] extends Event[T] {
+  
   def addListener(callback: T, filter: F): Unit = js.native
 }
-

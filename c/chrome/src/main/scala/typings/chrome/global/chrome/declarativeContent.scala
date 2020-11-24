@@ -4,7 +4,7 @@ import typings.chrome.anon.ImageData
 import typings.chrome.chrome.declarativeContent.PageChangedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Declarative Content
@@ -17,6 +17,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.declarativeContent")
 @js.native
 object declarativeContent extends js.Object {
+  
+  var onPageChanged: PageChangedEvent = js.native
+  
   @js.native
   class PageStateMatcher protected ()
     extends typings.chrome.chrome.declarativeContent.PageStateMatcher {
@@ -36,7 +39,4 @@ object declarativeContent extends js.Object {
   @js.native
   class ShowPageAction ()
     extends typings.chrome.chrome.declarativeContent.ShowPageAction
-  
-  var onPageChanged: PageChangedEvent = js.native
 }
-

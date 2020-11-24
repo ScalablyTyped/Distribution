@@ -7,16 +7,16 @@ import typings.uirouterCore.stateBuilderMod.BuilderFunction
 import typings.uirouterCore.stateServiceMod.OnInvalidCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs/lib/stateProvider", JSImport.Namespace)
 @js.native
 object stateProviderMod extends js.Object {
+  
   @js.native
   class StateProvider protected () extends js.Object {
     def this(stateRegistry: StateRegistry, stateService: StateService) = this()
-    var stateRegistry: js.Any = js.native
-    var stateService: js.Any = js.native
+    
     /**
       * Decorates states when they are registered
       *
@@ -107,12 +107,14 @@ object stateProviderMod extends js.Object {
       * @return {object} $stateProvider - $stateProvider instance
       */
     def decorator(name: String, func: BuilderFunction): js.Function | this.type = js.native
+    
     /**
       * Registers an invalid state handler
       *
       * This is a passthrough to [[StateService.onInvalid]] for ng1.
       */
     def onInvalid(callback: OnInvalidCallback): js.Function = js.native
+    
     def state(definition: Ng1StateDeclaration): StateProvider = js.native
     /**
       * Registers a state
@@ -247,7 +249,9 @@ object stateProviderMod extends js.Object {
       * @param {object} definition State configuration object.
       */
     def state(name: String, definition: Ng1StateDeclaration): StateProvider = js.native
+    
+    var stateRegistry: js.Any = js.native
+    
+    var stateService: js.Any = js.native
   }
-  
 }
-

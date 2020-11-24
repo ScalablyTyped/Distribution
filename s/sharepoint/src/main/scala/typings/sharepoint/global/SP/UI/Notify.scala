@@ -4,11 +4,18 @@ import typings.sharepoint.SPNotifications.ContainerID
 import typings.sharepoint.SPStatusNotificationData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.UI.Notify")
 @js.native
 object Notify extends js.Object {
+  
+  def addNotification(strHtml: String, bSticky: Boolean): String = js.native
+  
+  def removeNotification(nid: String): Unit = js.native
+  
+  def showLoadingNotification(bSticky: Boolean): String = js.native
+  
   @js.native
   class Notification protected ()
     extends typings.sharepoint.SP.UI.Notify.Notification {
@@ -116,9 +123,4 @@ object Notify extends js.Object {
     def this(id: Double, element: js.Any, layer: Double) = this()
     def this(id: Double, element: js.Any, layer: Double, notificationLimit: Double) = this()
   }
-  
-  def addNotification(strHtml: String, bSticky: Boolean): String = js.native
-  def removeNotification(nid: String): Unit = js.native
-  def showLoadingNotification(bSticky: Boolean): String = js.native
 }
-

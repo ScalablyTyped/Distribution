@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.LineSymbolProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.LineSymbol")
 @js.native
@@ -16,4 +16,3 @@ class LineSymbolCls ()
   extends typings.arcgisJsApi.esri.LineSymbol {
   def this(properties: LineSymbolProperties) = this()
 }
-

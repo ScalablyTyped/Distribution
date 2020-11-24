@@ -2,7 +2,7 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Speaks a text._
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Speech")
 @js.native
 object Speech extends js.Object {
+  
   /**
     * Speaks a text.
     * @param text - Text to speak.
@@ -18,4 +19,3 @@ object Speech extends js.Object {
     */
   def speak(text: String): Unit = js.native
 }
-

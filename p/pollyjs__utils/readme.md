@@ -10,9 +10,9 @@ Shared utilities and constants between @pollyjs packages
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/utils |
 | Keywords           | polly, pollyjs, utils |
-| # releases         | 17 |
+| # releases         | 16 |
 | # dependents       | 10 |
-| # downloads        | 490752 |
+| # downloads        | 1149974 |
 | # stars            | 0 |
 
 ## Links

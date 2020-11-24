@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ses/template", "Template")
 @js.native
@@ -23,28 +23,32 @@ class Template protected () extends CustomResource {
   def this(name: String, args: TemplateArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: TemplateArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The HTML body of the email. Must be less than 500KB in size, including both the text and HTML parts.
     */
   val html: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The name of the template. Cannot exceed 64 characters. You will refer to this name when you send email.
     */
   val name: Output_[String] = js.native
+  
   /**
     * The subject line of the email.
     */
   val subject: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The email body that will be visible to recipients whose email clients do not display HTML. Must be less than 500KB in size, including both the text and HTML parts.
     */
   val text: Output_[js.UndefOr[String]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ses/template", "Template")
 @js.native
 object Template extends js.Object {
+  
   /**
     * Get an existing Template resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -58,10 +62,10 @@ object Template extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Template = js.native
   def get(name: String, id: Input[ID], state: TemplateState): Template = js.native
   def get(name: String, id: Input[ID], state: TemplateState, opts: CustomResourceOptions): Template = js.native
+  
   /**
     * Returns true if the given object is an instance of Template.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/template.Template */ Boolean = js.native
 }
-

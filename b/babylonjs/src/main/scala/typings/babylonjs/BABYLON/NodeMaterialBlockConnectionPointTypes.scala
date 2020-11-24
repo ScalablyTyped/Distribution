@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait NodeMaterialBlockConnectionPointTypes extends js.Object
-
 @JSGlobal("BABYLON.NodeMaterialBlockConnectionPointTypes")
 @js.native
 object NodeMaterialBlockConnectionPointTypes extends js.Object {
+  
   /** Detect type based on connection */
   @js.native
   sealed trait AutoDetect extends NodeMaterialBlockConnectionPointTypes
@@ -38,6 +38,10 @@ object NodeMaterialBlockConnectionPointTypes extends js.Object {
   @js.native
   sealed trait Matrix extends NodeMaterialBlockConnectionPointTypes
   
+  /** Custom object */
+  @js.native
+  sealed trait Object extends NodeMaterialBlockConnectionPointTypes
+  
   /** Vector2 */
   @js.native
   sealed trait Vector2 extends NodeMaterialBlockConnectionPointTypes
@@ -49,6 +53,4 @@ object NodeMaterialBlockConnectionPointTypes extends js.Object {
   /** Vector4 */
   @js.native
   sealed trait Vector4 extends NodeMaterialBlockConnectionPointTypes
-  
 }
-

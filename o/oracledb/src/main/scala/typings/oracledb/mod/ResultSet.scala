@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ResultSets allow query results to fetched from the database one at a time, or in groups of rows.
@@ -20,19 +20,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ResultSet[T] extends js.Object {
-  /**
-    * Contains an array of objects with metadata about the query or REF CURSOR columns.
-    *
-    * Each column’s name is always given. If the oracledb.extendedMetaData or execute() option
-    * extendedMetaData are true then additional information is included.
-    */
-  val metaData: js.Array[Metadata[T]] = js.native
+  
   /**
     * Closes a ResultSet. Applications should always call this at the end of fetch or when no more rows are needed.
     * It should also be called if no rows are ever going to be fetched from the ResultSet.
     */
   def close(): js.Promise[Unit] = js.native
   def close(callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  
   /**
     * This call fetches one row of the ResultSet as an object or an array of column values,
     * depending on the value of outFormat.
@@ -44,6 +39,7 @@ trait ResultSet[T] extends js.Object {
     */
   def getRow(): js.Promise[T] = js.native
   def getRow(callback: js.Function2[/* error */ DBError, /* row */ T, Unit]): Unit = js.native
+  
   /**
     * This call fetches numRows rows of the ResultSet as an object or an array of column values,
     * depending on the value of outFormat.
@@ -57,6 +53,15 @@ trait ResultSet[T] extends js.Object {
     */
   def getRows(numRows: Double): js.Promise[js.Array[T]] = js.native
   def getRows(numRows: Double, callback: js.Function2[/* error */ DBError, /* rows */ js.Array[T], Unit]): Unit = js.native
+  
+  /**
+    * Contains an array of objects with metadata about the query or REF CURSOR columns.
+    *
+    * Each column’s name is always given. If the oracledb.extendedMetaData or execute() option
+    * extendedMetaData are true then additional information is included.
+    */
+  val metaData: js.Array[Metadata[T]] = js.native
+  
   /**
     * This synchronous method converts a ResultSet into a stream.
     *
@@ -72,4 +77,3 @@ trait ResultSet[T] extends js.Object {
     */
   def toQueryStream(): Readable = js.native
 }
-

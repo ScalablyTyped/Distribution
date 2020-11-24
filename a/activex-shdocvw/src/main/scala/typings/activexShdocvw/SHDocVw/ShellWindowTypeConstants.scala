@@ -7,7 +7,7 @@ import typings.activexShdocvw.activexShdocvwNumbers.`4`
 import typings.activexShdocvw.activexShdocvwNumbers.`8`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for ShellWindows registration */
 // tslint:disable-next-line no-const-enum
@@ -19,17 +19,20 @@ import scala.scalajs.js.annotation._
   - typings.activexShdocvw.activexShdocvwNumbers.`0`
 */
 trait ShellWindowTypeConstants extends js.Object
-
 object ShellWindowTypeConstants {
+  
   @scala.inline
   def SWC_3RDPARTY: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def SWC_BROWSER: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def SWC_CALLBACK: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def SWC_DESKTOP: `8` = 8.asInstanceOf[`8`]
+  
   @scala.inline
   def SWC_EXPLORER: `0` = 0.asInstanceOf[`0`]
 }
-

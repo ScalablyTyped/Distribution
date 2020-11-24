@@ -8,9 +8,91 @@ import typings.nukaCarousel.mod.CarouselSlideActions
 import typings.nukaCarousel.mod.CarouselTransitionModeProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nukaCarouselStrings {
+  
+  @scala.inline
+  def BottomCenter: BottomCenter = "BottomCenter".asInstanceOf[BottomCenter]
+  
+  @scala.inline
+  def BottomLeft: BottomLeft = "BottomLeft".asInstanceOf[BottomLeft]
+  
+  @scala.inline
+  def BottomRight: BottomRight = "BottomRight".asInstanceOf[BottomRight]
+  
+  @scala.inline
+  def CenterCenter: CenterCenter = "CenterCenter".asInstanceOf[CenterCenter]
+  
+  @scala.inline
+  def CenterLeft: CenterLeft = "CenterLeft".asInstanceOf[CenterLeft]
+  
+  @scala.inline
+  def CenterRight: CenterRight = "CenterRight".asInstanceOf[CenterRight]
+  
+  @scala.inline
+  def TopCenter: TopCenter = "TopCenter".asInstanceOf[TopCenter]
+  
+  @scala.inline
+  def TopLeft: TopLeft = "TopLeft".asInstanceOf[TopLeft]
+  
+  @scala.inline
+  def TopRight: TopRight = "TopRight".asInstanceOf[TopRight]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def current: current = "current".asInstanceOf[current]
+  
+  @scala.inline
+  def fade: fade = "fade".asInstanceOf[fade]
+  
+  @scala.inline
+  def first: first = "first".asInstanceOf[first]
+  
+  @scala.inline
+  def firstSlide: firstSlide = "firstSlide".asInstanceOf[firstSlide]
+  
+  @scala.inline
+  def lastSlide: lastSlide = "lastSlide".asInstanceOf[lastSlide]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  
+  @scala.inline
+  def nextSlide: nextSlide = "nextSlide".asInstanceOf[nextSlide]
+  
+  @scala.inline
+  def page: page = "page".asInstanceOf[page]
+  
+  @scala.inline
+  def pause: pause = "pause".asInstanceOf[pause]
+  
+  @scala.inline
+  def previousSlide: previousSlide = "previousSlide".asInstanceOf[previousSlide]
+  
+  @scala.inline
+  def remainder: remainder = "remainder".asInstanceOf[remainder]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  
+  @scala.inline
+  def scroll3d: scroll3d = "scroll3d".asInstanceOf[scroll3d]
+  
+  @scala.inline
+  def zoom: zoom = "zoom".asInstanceOf[zoom]
+  
   @js.native
   sealed trait BottomCenter extends CarouselControlContainerProp
   
@@ -91,60 +173,4 @@ object nukaCarouselStrings {
   
   @js.native
   sealed trait zoom extends js.Object
-  
-  @scala.inline
-  def BottomCenter: BottomCenter = "BottomCenter".asInstanceOf[BottomCenter]
-  @scala.inline
-  def BottomLeft: BottomLeft = "BottomLeft".asInstanceOf[BottomLeft]
-  @scala.inline
-  def BottomRight: BottomRight = "BottomRight".asInstanceOf[BottomRight]
-  @scala.inline
-  def CenterCenter: CenterCenter = "CenterCenter".asInstanceOf[CenterCenter]
-  @scala.inline
-  def CenterLeft: CenterLeft = "CenterLeft".asInstanceOf[CenterLeft]
-  @scala.inline
-  def CenterRight: CenterRight = "CenterRight".asInstanceOf[CenterRight]
-  @scala.inline
-  def TopCenter: TopCenter = "TopCenter".asInstanceOf[TopCenter]
-  @scala.inline
-  def TopLeft: TopLeft = "TopLeft".asInstanceOf[TopLeft]
-  @scala.inline
-  def TopRight: TopRight = "TopRight".asInstanceOf[TopRight]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def current: current = "current".asInstanceOf[current]
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
-  @scala.inline
-  def firstSlide: firstSlide = "firstSlide".asInstanceOf[firstSlide]
-  @scala.inline
-  def lastSlide: lastSlide = "lastSlide".asInstanceOf[lastSlide]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
-  def nextSlide: nextSlide = "nextSlide".asInstanceOf[nextSlide]
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
-  @scala.inline
-  def previousSlide: previousSlide = "previousSlide".asInstanceOf[previousSlide]
-  @scala.inline
-  def remainder: remainder = "remainder".asInstanceOf[remainder]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def scroll3d: scroll3d = "scroll3d".asInstanceOf[scroll3d]
-  @scala.inline
-  def zoom: zoom = "zoom".asInstanceOf[zoom]
 }
-

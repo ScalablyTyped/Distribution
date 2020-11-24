@@ -2,7 +2,7 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Adds messages to the log._
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("console")
 @js.native
 object console extends js.Object {
+  
   /**
     * _Logs an error message to the console._
     *
@@ -21,6 +22,7 @@ object console extends js.Object {
     * @see https://docs.scriptable.app/console/#error
     */
   def error(message: js.Any): Unit = js.native
+  
   /**
     * _Logs a message to the console._
     *
@@ -31,6 +33,7 @@ object console extends js.Object {
     * @see https://docs.scriptable.app/console/#log
     */
   def log(message: js.Any): Unit = js.native
+  
   /**
     * _Logs a warning message to the console._
     *
@@ -42,4 +45,3 @@ object console extends js.Object {
     */
   def warn(message: js.Any): Unit = js.native
 }
-

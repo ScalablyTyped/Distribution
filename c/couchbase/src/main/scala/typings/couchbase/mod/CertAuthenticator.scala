@@ -2,7 +2,7 @@ package typings.couchbase.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Authenticator for performing certificate-based authentication.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
   * Create a new instance of the CertAuthenticator class.
   */
 class CertAuthenticator () extends Authenticator
-

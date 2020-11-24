@@ -2,7 +2,7 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.std.stdStrings.end
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.std.stdStrings.start
 */
 trait SelectionMode extends js.Object
-
 object SelectionMode {
+  
   @scala.inline
   def end: typings.std.stdStrings.end = "end".asInstanceOf[typings.std.stdStrings.end]
+  
   @scala.inline
   def preserve: typings.std.stdStrings.preserve = "preserve".asInstanceOf[typings.std.stdStrings.preserve]
+  
   @scala.inline
   def select: typings.std.stdStrings.select = "select".asInstanceOf[typings.std.stdStrings.select]
+  
   @scala.inline
   def start: typings.std.stdStrings.start = "start".asInstanceOf[typings.std.stdStrings.start]
 }
-

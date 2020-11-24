@@ -6,12 +6,12 @@ import typings.phaser.spine.TextureWrap
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CanvasTexture extends Texture
-
 object CanvasTexture {
+  
   @scala.inline
   def apply(
     _image: HTMLImageElement,
@@ -24,4 +24,3 @@ object CanvasTexture {
     __obj.asInstanceOf[CanvasTexture]
   }
 }
-

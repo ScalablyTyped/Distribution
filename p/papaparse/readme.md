@@ -1,7 +1,7 @@
 
 # Scala.js typings for papaparse
 
-Typings are for version v5.0
+Typings are for version 5.2
 
 ## Library description:
 Fast and powerful CSV parser for the browser that supports web workers and streaming large files. Converts CSV to JSON and JSON to CSV.
@@ -10,9 +10,9 @@ Fast and powerful CSV parser for the browser that supports web workers and strea
 | ------------------ | :-------------: |
 | Full name          | papaparse |
 | Keywords           | csv, parser, parse, parsing, delimited, text, data, auto-detect, comma, tab, pipe, file, filereader, stream, worker, workers, thread, threading, multi-threaded, jquery-plugin |
-| # releases         | 15 |
-| # dependents       | 321 |
-| # downloads        | 11245074 |
+| # releases         | 10 |
+| # dependents       | 434 |
+| # downloads        | 20040289 |
 | # stars            | 24 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.openlayers.mod
 import typings.openlayers.mod.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "ObjectEvent")
 @js.native
@@ -17,11 +17,13 @@ class ObjectEvent protected () extends Event {
     * @param oldValue The old value for `key`.
     */
   def this(`type`: String, key: String, oldValue: js.Any) = this()
+  
   /**
     * The name of the property whose value is changing.
     * @api stable
     */
   var key: String = js.native
+  
   /**
     * The old value. To get the new value use `e.target.get(e.key)` where
     * `e` is the event object.
@@ -29,4 +31,3 @@ class ObjectEvent protected () extends Event {
     */
   var oldValue: js.Any = js.native
 }
-

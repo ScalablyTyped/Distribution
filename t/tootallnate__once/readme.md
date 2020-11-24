@@ -12,7 +12,7 @@ Creates a Promise that waits for a single event
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 5 |
-| # downloads        | 23740975 |
+| # downloads        | 43415861 |
 | # stars            | 0 |
 
 ## Links

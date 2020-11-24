@@ -4,10 +4,11 @@ import typings.tizenCommonWeb.tizenMod.ErrorCallback
 import typings.tizenCommonWeb.tizenMod.SuccessCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ApplicationManager extends js.Object {
+  
   /**
     * Adds a listener for receiving any notification for changes in the list of installed applications
     * on a device.
@@ -37,6 +38,7 @@ trait ApplicationManager extends js.Object {
     *
     */
   def addAppInfoEventListener(eventCallback: ApplicationInformationEventCallback): Double = js.native
+  
   /**
     * Adds a listener for receiving any notification for status changes of the installed applications on a device.
     *
@@ -52,6 +54,7 @@ trait ApplicationManager extends js.Object {
     */
   def addAppStatusChangeListener(eventCallback: StatusEventCallback): Double = js.native
   def addAppStatusChangeListener(eventCallback: StatusEventCallback, appId: ApplicationId): Double = js.native
+  
   /**
     * Finds which applications can be launched with the given application control.
     *
@@ -76,6 +79,7 @@ trait ApplicationManager extends js.Object {
     successCallback: FindAppControlSuccessCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
+  
   /**
     * Gets application certificates for a specified application ID.
     *
@@ -105,6 +109,7 @@ trait ApplicationManager extends js.Object {
     */
   def getAppCerts(): js.Array[ApplicationCertificate] = js.native
   def getAppCerts(id: ApplicationId): js.Array[ApplicationCertificate] = js.native
+  
   /**
     * Gets the application context for the specified application context ID.
     * If the ID is set to ***null*** or is not set at all, the method returns the application context of the current application.
@@ -121,6 +126,7 @@ trait ApplicationManager extends js.Object {
     */
   def getAppContext(): ApplicationContext = js.native
   def getAppContext(contextId: ApplicationContextId): ApplicationContext = js.native
+  
   /**
     * Gets application information for a specified application ID.
     *
@@ -138,6 +144,7 @@ trait ApplicationManager extends js.Object {
     */
   def getAppInfo(): ApplicationInformation = js.native
   def getAppInfo(id: ApplicationId): ApplicationInformation = js.native
+  
   /**
     * Gets the application meta data array for a specified application ID.
     *
@@ -158,6 +165,7 @@ trait ApplicationManager extends js.Object {
     */
   def getAppMetaData(): js.Array[ApplicationMetaData] = js.native
   def getAppMetaData(id: ApplicationId): js.Array[ApplicationMetaData] = js.native
+  
   /**
     * Gets the URI of the read-only shared directory of an application for a specified application ID.
     *
@@ -180,6 +188,7 @@ trait ApplicationManager extends js.Object {
     */
   def getAppSharedURI(): String = js.native
   def getAppSharedURI(id: ApplicationId): String = js.native
+  
   /**
     * Gets a list of application contexts for applications that are currently running on a device.
     * The information contained for each application corresponds to the application state at the time when the list had been generated.
@@ -196,6 +205,7 @@ trait ApplicationManager extends js.Object {
     */
   def getAppsContext(successCallback: ApplicationContextArraySuccessCallback): Unit = js.native
   def getAppsContext(successCallback: ApplicationContextArraySuccessCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Gets the list of installed applications' information on a device.
     * The information contained on each application corresponds to the application state at the time when the list had been generated.
@@ -212,6 +222,7 @@ trait ApplicationManager extends js.Object {
     */
   def getAppsInfo(successCallback: ApplicationInformationArraySuccessCallback): Unit = js.native
   def getAppsInfo(successCallback: ApplicationInformationArraySuccessCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Gets the `Application` object defining the current application.
     *
@@ -224,6 +235,7 @@ trait ApplicationManager extends js.Object {
     *
     */
   def getCurrentApplication(): Application = js.native
+  
   /**
     * Kills an application with the specified application context ID.
     *
@@ -253,6 +265,7 @@ trait ApplicationManager extends js.Object {
   ): Unit = js.native
   def kill(contextId: ApplicationContextId, successCallback: SuccessCallback): Unit = js.native
   def kill(contextId: ApplicationContextId, successCallback: SuccessCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Launches an application with the given application ID.
     *
@@ -279,6 +292,7 @@ trait ApplicationManager extends js.Object {
   def launch(id: ApplicationId, successCallback: js.UndefOr[scala.Nothing], errorCallback: ErrorCallback): Unit = js.native
   def launch(id: ApplicationId, successCallback: SuccessCallback): Unit = js.native
   def launch(id: ApplicationId, successCallback: SuccessCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Launches an application with the specified application control.
     *
@@ -405,6 +419,7 @@ trait ApplicationManager extends js.Object {
     errorCallback: ErrorCallback,
     replyCallback: ApplicationControlDataArrayReplyCallback
   ): Unit = js.native
+  
   /**
     * Removes the listener to stop receiving notifications for changes on the list of installed applications on a device.
     *
@@ -417,6 +432,7 @@ trait ApplicationManager extends js.Object {
     *
     */
   def removeAppInfoEventListener(watchId: Double): Unit = js.native
+  
   /**
     * Removes the listener to stop receiving notifications for status changes of the installed applications on a device.
     *
@@ -431,4 +447,3 @@ trait ApplicationManager extends js.Object {
     */
   def removeAppStatusChangeListener(watchId: Double): Unit = js.native
 }
-

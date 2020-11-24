@@ -3,7 +3,7 @@ package typings.es6Shim
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PromiseConstructor
@@ -21,6 +21,7 @@ Instantiable1[
       ], 
       Promise[js.Object]
     ] {
+  
   /**
     * Creates a Promise that is resolved with an array of results when all of the provided Promises
     * resolve, or rejected when any Promise is rejected.
@@ -28,6 +29,7 @@ Instantiable1[
     * @returns A new Promise.
     */
   def all[T](values: IterableShim[T | PromiseLike[T]]): Promise[Array[T]] = js.native
+  
   /**
     * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
     * or rejected.
@@ -35,6 +37,7 @@ Instantiable1[
     * @returns A new Promise.
     */
   def race[T](values: IterableShim[T | PromiseLike[T]]): Promise[T] = js.native
+  
   /**
     * Creates a new rejected promise for the provided reason.
     * @param reason The reason the promise was rejected.
@@ -48,6 +51,7 @@ Instantiable1[
     */
   @JSName("reject")
   def reject_T[T](reason: js.Any): Promise[T] = js.native
+  
   /**
     * Creates a new resolved promise .
     * @returns A resolved promise.
@@ -61,4 +65,3 @@ Instantiable1[
   def resolve[T](value: T): Promise[T] = js.native
   def resolve[T](value: PromiseLike[T]): Promise[T] = js.native
 }
-

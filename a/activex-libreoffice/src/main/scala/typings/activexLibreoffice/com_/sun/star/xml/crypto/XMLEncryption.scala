@@ -5,15 +5,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Service of {@link XMLEncryption} */
 @js.native
 trait XMLEncryption
   extends XXMLEncryption
      with XInitialization
-
 object XMLEncryption {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -27,4 +27,3 @@ object XMLEncryption {
     __obj.asInstanceOf[XMLEncryption]
   }
 }
-

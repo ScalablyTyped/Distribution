@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/redshift/subnetGroup", "SubnetGroup")
 @js.native
@@ -22,32 +22,37 @@ class SubnetGroup protected () extends CustomResource {
     */
   def this(name: String, args: SubnetGroupArgs) = this()
   def this(name: String, args: SubnetGroupArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * Amazon Resource Name (ARN) of the Redshift Subnet group name
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The description of the Redshift Subnet group. Defaults to "Managed by Pulumi".
     */
   val description: Output_[String] = js.native
+  
   /**
     * The name of the Redshift Subnet group.
     */
   val name: Output_[String] = js.native
+  
   /**
     * An array of VPC subnet IDs.
     */
   val subnetIds: Output_[js.Array[String]] = js.native
+  
   /**
     * A map of tags to assign to the resource.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/redshift/subnetGroup", "SubnetGroup")
 @js.native
 object SubnetGroup extends js.Object {
+  
   /**
     * Get an existing SubnetGroup resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -61,10 +66,10 @@ object SubnetGroup extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SubnetGroup = js.native
   def get(name: String, id: Input[ID], state: SubnetGroupState): SubnetGroup = js.native
   def get(name: String, id: Input[ID], state: SubnetGroupState, opts: CustomResourceOptions): SubnetGroup = js.native
+  
   /**
     * Returns true if the given object is an instance of SubnetGroup.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/subnetGroup.SubnetGroup */ Boolean = js.native
 }
-

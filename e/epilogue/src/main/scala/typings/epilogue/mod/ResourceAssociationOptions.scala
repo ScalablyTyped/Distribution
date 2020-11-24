@@ -1,40 +1,39 @@
 package typings.epilogue.mod
 
-import typings.sequelize.anon.Plural
-import typings.sequelize.mod.AssociationForeignKeyOptions
 import typings.sequelize.mod.AssociationOptions
-import typings.sequelize.mod.AssociationScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ResourceAssociationOptions extends AssociationOptions {
-  var removeForeignKeys: Boolean
+  
+  var removeForeignKeys: Boolean = js.native
 }
-
 object ResourceAssociationOptions {
+  
   @scala.inline
-  def apply(
-    removeForeignKeys: Boolean,
-    as: String | Plural = null,
-    constraints: js.UndefOr[Boolean] = js.undefined,
-    foreignKey: String | AssociationForeignKeyOptions = null,
-    foreignKeyConstraint: js.UndefOr[Boolean] = js.undefined,
-    hooks: js.UndefOr[Boolean] = js.undefined,
-    onDelete: String = null,
-    onUpdate: String = null,
-    scope: AssociationScope = null
-  ): ResourceAssociationOptions = {
+  def apply(removeForeignKeys: Boolean): ResourceAssociationOptions = {
     val __obj = js.Dynamic.literal(removeForeignKeys = removeForeignKeys.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(constraints)) __obj.updateDynamic("constraints")(constraints.get.asInstanceOf[js.Any])
-    if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(foreignKeyConstraint)) __obj.updateDynamic("foreignKeyConstraint")(foreignKeyConstraint.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks.get.asInstanceOf[js.Any])
-    if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete.asInstanceOf[js.Any])
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceAssociationOptions]
   }
+  
+  @scala.inline
+  implicit class ResourceAssociationOptionsOps[Self <: ResourceAssociationOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setRemoveForeignKeys(value: Boolean): Self = this.set("removeForeignKeys", value.asInstanceOf[js.Any])
+  }
 }
-

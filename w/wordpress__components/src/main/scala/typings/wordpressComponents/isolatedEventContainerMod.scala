@@ -7,18 +7,18 @@ import typings.std.HTMLDivElement
 import typings.wordpressComponents.isolatedEventContainerMod.IsolatedEventContainer.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/components/isolated-event-container", JSImport.Namespace)
 @js.native
 object isolatedEventContainerMod extends js.Object {
+  
   @js.native
   object IsolatedEventContainer extends js.Object {
+    
     type Props = HTMLProps[HTMLDivElement]
   }
   
   @js.native
   object default extends TopLevel[ComponentType[Props]]
-  
 }
-

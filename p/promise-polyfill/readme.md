@@ -10,10 +10,10 @@ Lightweight promise polyfill. A+ compliant
 | ------------------ | :-------------: |
 | Full name          | promise-polyfill |
 | Keywords           | promise, promise-polyfill, ES6, promises-aplus |
-| # releases         | 11 |
-| # dependents       | 511 |
-| # downloads        | 68547412 |
-| # stars            | 12 |
+| # releases         | 4 |
+| # dependents       | 601 |
+| # downloads        | 97752883 |
+| # stars            | 13 |
 
 ## Links
 - [Homepage](https://github.com/taylorhakes/promise-polyfill)

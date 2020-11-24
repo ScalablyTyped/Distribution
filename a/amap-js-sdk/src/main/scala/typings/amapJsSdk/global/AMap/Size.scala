@@ -2,7 +2,7 @@ package typings.amapJsSdk.global.AMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 地物对象的像素尺寸
@@ -18,4 +18,3 @@ class Size protected ()
     */
   def this(width: Double, height: Double) = this()
 }
-

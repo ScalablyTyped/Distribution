@@ -3,11 +3,12 @@ package typings.checksum.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("checksum", "file")
 @js.native
 object file extends js.Object {
+  
   /**
     * Generate the checksum for a file on disk
     * @param filename    The file name
@@ -26,4 +27,3 @@ object file extends js.Object {
     callback: js.Function2[/* error */ Error, /* hash */ String, Unit]
   ): Unit = js.native
 }
-

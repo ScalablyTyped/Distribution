@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SignatureValidationResult extends js.Object
-
 /** Describes the result of a signature verification operation. */
 @JSGlobal("Windows.Security.Cryptography.Certificates.SignatureValidationResult")
 @js.native
 object SignatureValidationResult extends js.Object {
+  
   /** A severe error occurred such as missing key provider information or an incorrect algorithm id. */
   @js.native
   sealed trait badMessage extends SignatureValidationResult
@@ -30,6 +30,4 @@ object SignatureValidationResult extends js.Object {
   /** The signature was verified. */
   @js.native
   sealed trait success extends SignatureValidationResult
-  
 }
-

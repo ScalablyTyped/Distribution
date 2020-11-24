@@ -1,16 +1,16 @@
 package typings.awsSdk.iotsecuretunnelingMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.std.String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IoTSecureTunneling extends String {
-  var config: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Closes a tunnel identified by the unique tunnel id. When a CloseTunnel request is received, we close the WebSocket connections between the client and proxy server so no data can be transmitted.
     */
@@ -24,6 +24,9 @@ trait IoTSecureTunneling extends String {
     params: CloseTunnelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CloseTunnelResponse, Unit]
   ): Request[CloseTunnelResponse, AWSError] = js.native
+  
+  var config: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Gets information about a tunnel identified by the unique tunnel id.
     */
@@ -37,6 +40,7 @@ trait IoTSecureTunneling extends String {
     params: DescribeTunnelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTunnelResponse, Unit]
   ): Request[DescribeTunnelResponse, AWSError] = js.native
+  
   /**
     * Lists the tags for the specified resource.
     */
@@ -50,6 +54,7 @@ trait IoTSecureTunneling extends String {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * List all tunnels for an AWS account. Tunnels are listed by creation time in descending order, newer tunnels will be listed before older tunnels.
     */
@@ -63,19 +68,21 @@ trait IoTSecureTunneling extends String {
     params: ListTunnelsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTunnelsResponse, Unit]
   ): Request[ListTunnelsResponse, AWSError] = js.native
+  
   /**
-    * Creates a new tunnel, and returns two client access tokens for clients to use to connect to the AWS IoT Secure Tunneling proxy server. .
+    * Creates a new tunnel, and returns two client access tokens for clients to use to connect to the AWS IoT Secure Tunneling proxy server.
     */
   def openTunnel(): Request[OpenTunnelResponse, AWSError] = js.native
   def openTunnel(callback: js.Function2[/* err */ AWSError, /* data */ OpenTunnelResponse, Unit]): Request[OpenTunnelResponse, AWSError] = js.native
   /**
-    * Creates a new tunnel, and returns two client access tokens for clients to use to connect to the AWS IoT Secure Tunneling proxy server. .
+    * Creates a new tunnel, and returns two client access tokens for clients to use to connect to the AWS IoT Secure Tunneling proxy server.
     */
   def openTunnel(params: OpenTunnelRequest): Request[OpenTunnelResponse, AWSError] = js.native
   def openTunnel(
     params: OpenTunnelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ OpenTunnelResponse, Unit]
   ): Request[OpenTunnelResponse, AWSError] = js.native
+  
   /**
     * A resource tag.
     */
@@ -89,6 +96,7 @@ trait IoTSecureTunneling extends String {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Removes a tag from a resource.
     */
@@ -103,4 +111,3 @@ trait IoTSecureTunneling extends String {
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
 }
-

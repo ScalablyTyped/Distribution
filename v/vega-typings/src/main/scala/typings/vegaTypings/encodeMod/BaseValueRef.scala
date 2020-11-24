@@ -2,7 +2,7 @@ package typings.vegaTypings.encodeMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.vegaTypings.signalMod.SignalRef
@@ -10,22 +10,23 @@ import scala.scalajs.js.annotation._
   - typings.vegaTypings.anon.Field
 */
 trait BaseValueRef[T] extends ScaledValueRef[T]
-
 object BaseValueRef {
+  
   @scala.inline
   def SignalRef[T](signal: String): BaseValueRef[T] = {
     val __obj = js.Dynamic.literal(signal = signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseValueRef[T]]
   }
+  
   @scala.inline
   def Value[T](): BaseValueRef[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseValueRef[T]]
   }
+  
   @scala.inline
   def Field[T](field: typings.vegaTypings.encodeMod.Field): BaseValueRef[T] = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseValueRef[T]]
   }
 }
-

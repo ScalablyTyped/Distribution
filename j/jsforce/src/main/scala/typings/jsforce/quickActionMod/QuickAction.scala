@@ -4,11 +4,12 @@ import typings.jsforce.connectionMod.Callback
 import typings.jsforce.recordMod.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsforce/quick-action", "QuickAction")
 @js.native
 class QuickAction () extends js.Object {
+  
   /** Retrieve default field values in the action */
   def defaultValues(): js.Promise[Record[_]] = js.native
   def defaultValues(callback: Callback[Record[_]]): js.Promise[Record[_]] = js.native
@@ -19,12 +20,14 @@ class QuickAction () extends js.Object {
     */
   def defaultValues(contextId: String): js.Promise[Record[_]] = js.native
   def defaultValues(contextId: String, callback: Callback[Record[_]]): js.Promise[Record[_]] = js.native
+  
   /**
     * Describe the action's information (including layout, etc.)
     * @param callback Callback function
     */
   def describe(): js.Promise[QuickActionDescribeInfo] = js.native
   def describe(callback: Callback[QuickActionDescribeInfo]): js.Promise[QuickActionDescribeInfo] = js.native
+  
   /**
     * Execute the action for given context id and record information
     * @param contextId Context record ID of the action
@@ -34,4 +37,3 @@ class QuickAction () extends js.Object {
   def execute[T](contextId: String, record: Record[T]): js.Promise[QuickActionResult] = js.native
   def execute[T](contextId: String, record: Record[T], callback: Callback[QuickActionResult]): js.Promise[QuickActionResult] = js.native
 }
-

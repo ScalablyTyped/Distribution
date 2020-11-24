@@ -12,7 +12,7 @@ Super-efficient module to parse and check if an IP address is in a CIDR block. I
 | Keywords           | ip, ipv6, ipv4, cidr |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 63123 |
+| # downloads        | 94063 |
 | # stars            | 0 |
 
 ## Links

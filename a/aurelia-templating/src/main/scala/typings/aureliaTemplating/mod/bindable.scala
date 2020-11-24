@@ -2,11 +2,12 @@ package typings.aureliaTemplating.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "bindable")
 @js.native
 object bindable extends js.Object {
+  
   def apply(): js.Any = js.native
   def apply(
     nameOrConfigOrTarget: js.UndefOr[scala.Nothing],
@@ -24,4 +25,3 @@ object bindable extends js.Object {
   def apply(nameOrConfigOrTarget: js.Object, key: js.Any): js.Any = js.native
   def apply(nameOrConfigOrTarget: js.Object, key: js.Any, descriptor: js.Any): js.Any = js.native
 }
-

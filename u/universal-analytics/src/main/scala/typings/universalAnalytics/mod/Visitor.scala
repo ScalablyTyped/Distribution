@@ -3,7 +3,7 @@ package typings.universalAnalytics.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("universal-analytics", "Visitor")
 @js.native
@@ -38,8 +38,10 @@ class Visitor protected () extends js.Object {
     context: StringDictionary[js.Any],
     persistentParams: StringDictionary[js.Any]
   ) = this()
+  
   def debug(): Visitor = js.native
   def debug(debug: Boolean): Visitor = js.native
+  
   def e(category: String, action: String): Visitor = js.native
   def e(category: String, action: String, callback: Callback): Visitor = js.native
   def e(category: String, action: String, label: String): Visitor = js.native
@@ -68,6 +70,7 @@ class Visitor protected () extends js.Object {
   ): Visitor = js.native
   def e(params: EventParams): Visitor = js.native
   def e(params: EventParams, callback: Callback): Visitor = js.native
+  
   def event(category: String, action: String): Visitor = js.native
   def event(category: String, action: String, callback: Callback): Visitor = js.native
   def event(category: String, action: String, label: String): Visitor = js.native
@@ -96,6 +99,7 @@ class Visitor protected () extends js.Object {
   ): Visitor = js.native
   def event(params: EventParams): Visitor = js.native
   def event(params: EventParams, callback: Callback): Visitor = js.native
+  
   def exception(description: String): Visitor = js.native
   def exception(description: String, callback: Callback): Visitor = js.native
   def exception(description: String, fatal: Boolean): Visitor = js.native
@@ -104,6 +108,7 @@ class Visitor protected () extends js.Object {
   def exception(description: String, fatal: Boolean, params: ExceptionParams, callback: Callback): Visitor = js.native
   def exception(description: ExceptionParams): Visitor = js.native
   def exception(description: ExceptionParams, callback: Callback): Visitor = js.native
+  
   def i(price: String): Visitor = js.native
   def i(price: String, callback: Callback): Visitor = js.native
   def i(price: String, quantity: String): Visitor = js.native
@@ -182,6 +187,7 @@ class Visitor protected () extends js.Object {
   ): Visitor = js.native
   def i(price: ItemParams): Visitor = js.native
   def i(price: ItemParams, callback: Callback): Visitor = js.native
+  
   def item(price: String): Visitor = js.native
   def item(price: String, callback: Callback): Visitor = js.native
   def item(price: String, quantity: String): Visitor = js.native
@@ -260,6 +266,7 @@ class Visitor protected () extends js.Object {
   ): Visitor = js.native
   def item(price: ItemParams): Visitor = js.native
   def item(price: ItemParams, callback: Callback): Visitor = js.native
+  
   def pageview(path: String): Visitor = js.native
   def pageview(path: String, callback: Callback): Visitor = js.native
   def pageview(path: String, hostname: String): Visitor = js.native
@@ -270,6 +277,7 @@ class Visitor protected () extends js.Object {
   def pageview(path: String, hostname: String, title: String, params: PageviewParams, callback: Callback): Visitor = js.native
   def pageview(path: PageviewParams): Visitor = js.native
   def pageview(path: PageviewParams, callback: Callback): Visitor = js.native
+  
   def pv(path: String): Visitor = js.native
   def pv(path: String, callback: Callback): Visitor = js.native
   def pv(path: String, hostname: String): Visitor = js.native
@@ -280,7 +288,9 @@ class Visitor protected () extends js.Object {
   def pv(path: String, hostname: String, title: String, params: PageviewParams, callback: Callback): Visitor = js.native
   def pv(path: PageviewParams): Visitor = js.native
   def pv(path: PageviewParams, callback: Callback): Visitor = js.native
+  
   def reset(): Visitor = js.native
+  
   def screenview(params: ScreenviewParams): Visitor = js.native
   def screenview(params: ScreenviewParams, callback: Callback): Visitor = js.native
   def screenview(screenName: String, appName: String): Visitor = js.native
@@ -315,10 +325,13 @@ class Visitor protected () extends js.Object {
   def screenview(screenName: String, appName: String, appVersion: String, appId: String, callback: Callback): Visitor = js.native
   def screenview(screenName: String, appName: String, appVersion: String, callback: Callback): Visitor = js.native
   def screenview(screenName: String, appName: String, callback: Callback): Visitor = js.native
+  
   def send(): Unit = js.native
   def send(fn: js.Function3[/* error */ js.Any, /* response */ js.Any, /* body */ js.Any, Unit]): Unit = js.native
+  
   def set(key: String, value: js.Any): Unit = js.native
   def set(key: Double, value: js.Any): Unit = js.native
+  
   def t(id: String): Visitor = js.native
   def t(id: String, callback: Callback): Visitor = js.native
   def t(id: String, revenue: String): Visitor = js.native
@@ -559,6 +572,7 @@ class Visitor protected () extends js.Object {
   def t(id: String, revenue: Double, shipping: Double, tax: Double, callback: Callback): Visitor = js.native
   def t(id: TransactionParams): Visitor = js.native
   def t(id: TransactionParams, callback: Callback): Visitor = js.native
+  
   def timing(category: String): Visitor = js.native
   def timing(category: String, callback: Callback): Visitor = js.native
   def timing(category: String, variable: String): Visitor = js.native
@@ -591,6 +605,7 @@ class Visitor protected () extends js.Object {
   ): Visitor = js.native
   def timing(category: TimingParams): Visitor = js.native
   def timing(category: TimingParams, callback: Callback): Visitor = js.native
+  
   def transaction(id: String): Visitor = js.native
   def transaction(id: String, callback: Callback): Visitor = js.native
   def transaction(id: String, revenue: String): Visitor = js.native
@@ -832,4 +847,3 @@ class Visitor protected () extends js.Object {
   def transaction(id: TransactionParams): Visitor = js.native
   def transaction(id: TransactionParams, callback: Callback): Visitor = js.native
 }
-

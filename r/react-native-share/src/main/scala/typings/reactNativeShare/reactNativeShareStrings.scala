@@ -3,9 +3,67 @@ package typings.reactNativeShare
 import typings.reactNativeShare.mod.ActivityType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeShareStrings {
+  
+  @scala.inline
+  def ActivityItemSource: ActivityItemSource = "ActivityItemSource".asInstanceOf[ActivityItemSource]
+  
+  @scala.inline
+  def addToReadingList: addToReadingList = "addToReadingList".asInstanceOf[addToReadingList]
+  
+  @scala.inline
+  def airDrop: airDrop = "airDrop".asInstanceOf[airDrop]
+  
+  @scala.inline
+  def assignToContact: assignToContact = "assignToContact".asInstanceOf[assignToContact]
+  
+  @scala.inline
+  def copyToPasteBoard: copyToPasteBoard = "copyToPasteBoard".asInstanceOf[copyToPasteBoard]
+  
+  @scala.inline
+  def mail: mail = "mail".asInstanceOf[mail]
+  
+  @scala.inline
+  def markupAsPDF: markupAsPDF = "markupAsPDF".asInstanceOf[markupAsPDF]
+  
+  @scala.inline
+  def message: message = "message".asInstanceOf[message]
+  
+  @scala.inline
+  def openInIBooks: openInIBooks = "openInIBooks".asInstanceOf[openInIBooks]
+  
+  @scala.inline
+  def postToFacebook: postToFacebook = "postToFacebook".asInstanceOf[postToFacebook]
+  
+  @scala.inline
+  def postToFlickr: postToFlickr = "postToFlickr".asInstanceOf[postToFlickr]
+  
+  @scala.inline
+  def postToTencentWeibo: postToTencentWeibo = "postToTencentWeibo".asInstanceOf[postToTencentWeibo]
+  
+  @scala.inline
+  def postToTwitter: postToTwitter = "postToTwitter".asInstanceOf[postToTwitter]
+  
+  @scala.inline
+  def postToVimeo: postToVimeo = "postToVimeo".asInstanceOf[postToVimeo]
+  
+  @scala.inline
+  def postToWeibo: postToWeibo = "postToWeibo".asInstanceOf[postToWeibo]
+  
+  @scala.inline
+  def print: print = "print".asInstanceOf[print]
+  
+  @scala.inline
+  def saveToCameraRoll: saveToCameraRoll = "saveToCameraRoll".asInstanceOf[saveToCameraRoll]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
+  
   @js.native
   sealed trait ActivityItemSource extends js.Object
   
@@ -62,44 +120,4 @@ object reactNativeShareStrings {
   
   @js.native
   sealed trait url extends js.Object
-  
-  @scala.inline
-  def ActivityItemSource: ActivityItemSource = "ActivityItemSource".asInstanceOf[ActivityItemSource]
-  @scala.inline
-  def addToReadingList: addToReadingList = "addToReadingList".asInstanceOf[addToReadingList]
-  @scala.inline
-  def airDrop: airDrop = "airDrop".asInstanceOf[airDrop]
-  @scala.inline
-  def assignToContact: assignToContact = "assignToContact".asInstanceOf[assignToContact]
-  @scala.inline
-  def copyToPasteBoard: copyToPasteBoard = "copyToPasteBoard".asInstanceOf[copyToPasteBoard]
-  @scala.inline
-  def mail: mail = "mail".asInstanceOf[mail]
-  @scala.inline
-  def markupAsPDF: markupAsPDF = "markupAsPDF".asInstanceOf[markupAsPDF]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def openInIBooks: openInIBooks = "openInIBooks".asInstanceOf[openInIBooks]
-  @scala.inline
-  def postToFacebook: postToFacebook = "postToFacebook".asInstanceOf[postToFacebook]
-  @scala.inline
-  def postToFlickr: postToFlickr = "postToFlickr".asInstanceOf[postToFlickr]
-  @scala.inline
-  def postToTencentWeibo: postToTencentWeibo = "postToTencentWeibo".asInstanceOf[postToTencentWeibo]
-  @scala.inline
-  def postToTwitter: postToTwitter = "postToTwitter".asInstanceOf[postToTwitter]
-  @scala.inline
-  def postToVimeo: postToVimeo = "postToVimeo".asInstanceOf[postToVimeo]
-  @scala.inline
-  def postToWeibo: postToWeibo = "postToWeibo".asInstanceOf[postToWeibo]
-  @scala.inline
-  def print: print = "print".asInstanceOf[print]
-  @scala.inline
-  def saveToCameraRoll: saveToCameraRoll = "saveToCameraRoll".asInstanceOf[saveToCameraRoll]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
 }
-

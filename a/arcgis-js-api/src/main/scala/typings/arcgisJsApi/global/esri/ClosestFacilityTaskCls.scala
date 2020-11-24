@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.ClosestFacilityTaskProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.ClosestFacilityTask")
 @js.native
@@ -16,4 +16,3 @@ class ClosestFacilityTaskCls ()
   extends typings.arcgisJsApi.esri.ClosestFacilityTask {
   def this(properties: ClosestFacilityTaskProperties) = this()
 }
-

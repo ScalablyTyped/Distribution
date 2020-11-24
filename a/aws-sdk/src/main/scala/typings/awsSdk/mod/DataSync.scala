@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.datasyncMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "DataSync")
 @js.native
@@ -14,4 +14,3 @@ class DataSync ()
   extends typings.awsSdk.allMod.DataSync {
   def this(options: ClientConfiguration) = this()
 }
-

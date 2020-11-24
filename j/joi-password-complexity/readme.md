@@ -10,9 +10,9 @@ Joi validation for password complexity requirements.
 | ------------------ | :-------------: |
 | Full name          | joi-password-complexity |
 | Keywords           | Joi, validation, password, complexity |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 39857 |
+| # releases         | 10 |
+| # dependents       | 1 |
+| # downloads        | 85062 |
 | # stars            | 1 |
 
 ## Links

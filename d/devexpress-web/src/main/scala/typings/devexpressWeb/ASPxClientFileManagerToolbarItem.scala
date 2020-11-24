@@ -2,15 +2,15 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the file manager's FileManagerToolbarItemBase object.
   */
 @js.native
 trait ASPxClientFileManagerToolbarItem extends ASPxClientMenuItem
-
 object ASPxClientFileManagerToolbarItem {
+  
   @scala.inline
   def apply(
     GetChecked: () => Boolean,
@@ -38,4 +38,3 @@ object ASPxClientFileManagerToolbarItem {
     __obj.asInstanceOf[ASPxClientFileManagerToolbarItem]
   }
 }
-

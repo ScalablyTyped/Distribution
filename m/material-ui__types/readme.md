@@ -10,9 +10,9 @@ Material-UI Types - Utility types for Material-UI.
 | ------------------ | :-------------: |
 | Full name          | @material-ui/types |
 | Keywords           | react, react-component, material design, material-ui, types |
-| # releases         | 10 |
-| # dependents       | 15 |
-| # downloads        | 13501226 |
+| # releases         | 12 |
+| # dependents       | 23 |
+| # downloads        | 47022178 |
 | # stars            | 0 |
 
 ## Links

@@ -1,17 +1,16 @@
 package typings.awsSdk.esMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ES extends Service {
-  @JSName("config")
-  var config_ES: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Allows the destination domain owner to accept an inbound cross-cluster search connection request.
     */
@@ -35,6 +34,7 @@ trait ES extends Service {
       Unit
     ]
   ): Request[AcceptInboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  
   /**
     * Attaches tags to an existing Elasticsearch domain. Tags are a set of case-sensitive key value pairs. An Elasticsearch domain may have up to 10 tags. See  Tagging Amazon Elasticsearch Service Domains for more information.
     */
@@ -45,6 +45,7 @@ trait ES extends Service {
     */
   def addTags(params: AddTagsRequest): Request[js.Object, AWSError] = js.native
   def addTags(params: AddTagsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Associates a package with an Amazon ES domain.
     */
@@ -58,6 +59,7 @@ trait ES extends Service {
     params: AssociatePackageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociatePackageResponse, Unit]
   ): Request[AssociatePackageResponse, AWSError] = js.native
+  
   /**
     * Cancels a scheduled service software update for an Amazon ES domain. You can only perform this operation before the AutomatedUpdateDate and when the UpdateStatus is in the PENDING_UPDATE state.
     */
@@ -81,6 +83,10 @@ trait ES extends Service {
       Unit
     ]
   ): Request[CancelElasticsearchServiceSoftwareUpdateResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_ES: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a new Elasticsearch domain. For more information, see Creating Elasticsearch Domains in the Amazon Elasticsearch Service Developer Guide.
     */
@@ -94,6 +100,7 @@ trait ES extends Service {
     params: CreateElasticsearchDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateElasticsearchDomainResponse, Unit]
   ): Request[CreateElasticsearchDomainResponse, AWSError] = js.native
+  
   /**
     * Creates a new cross-cluster search connection from a source domain to a destination domain.
     */
@@ -117,6 +124,7 @@ trait ES extends Service {
       Unit
     ]
   ): Request[CreateOutboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  
   /**
     * Create a package for use with Amazon ES domains.
     */
@@ -130,6 +138,7 @@ trait ES extends Service {
     params: CreatePackageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePackageResponse, Unit]
   ): Request[CreatePackageResponse, AWSError] = js.native
+  
   /**
     * Permanently deletes the specified Elasticsearch domain and all of its data. Once a domain is deleted, it cannot be recovered.
     */
@@ -143,11 +152,13 @@ trait ES extends Service {
     params: DeleteElasticsearchDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteElasticsearchDomainResponse, Unit]
   ): Request[DeleteElasticsearchDomainResponse, AWSError] = js.native
+  
   /**
     * Deletes the service-linked role that Elasticsearch Service uses to manage and maintain VPC domains. Role deletion will fail if any existing VPC domains use the role. You must delete any such Elasticsearch domains before deleting the role. See Deleting Elasticsearch Service Role in VPC Endpoints for Amazon Elasticsearch Service Domains.
     */
   def deleteElasticsearchServiceRole(): Request[js.Object, AWSError] = js.native
   def deleteElasticsearchServiceRole(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Allows the destination domain owner to delete an existing inbound cross-cluster search connection.
     */
@@ -171,6 +182,7 @@ trait ES extends Service {
       Unit
     ]
   ): Request[DeleteInboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  
   /**
     * Allows the source domain owner to delete an existing outbound cross-cluster search connection.
     */
@@ -194,6 +206,7 @@ trait ES extends Service {
       Unit
     ]
   ): Request[DeleteOutboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  
   /**
     * Delete the package.
     */
@@ -207,6 +220,7 @@ trait ES extends Service {
     params: DeletePackageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePackageResponse, Unit]
   ): Request[DeletePackageResponse, AWSError] = js.native
+  
   /**
     * Returns domain configuration information about the specified Elasticsearch domain, including the domain ID, domain endpoint, and domain ARN.
     */
@@ -220,6 +234,7 @@ trait ES extends Service {
     params: DescribeElasticsearchDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeElasticsearchDomainResponse, Unit]
   ): Request[DescribeElasticsearchDomainResponse, AWSError] = js.native
+  
   /**
     * Provides cluster configuration information about the specified Elasticsearch domain, such as the state, creation date, update version, and update date for cluster options.
     */
@@ -235,6 +250,7 @@ trait ES extends Service {
     params: DescribeElasticsearchDomainConfigRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeElasticsearchDomainConfigResponse, Unit]
   ): Request[DescribeElasticsearchDomainConfigResponse, AWSError] = js.native
+  
   /**
     * Returns domain configuration information about the specified Elasticsearch domains, including the domain ID, domain endpoint, and domain ARN.
     */
@@ -248,6 +264,7 @@ trait ES extends Service {
     params: DescribeElasticsearchDomainsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeElasticsearchDomainsResponse, Unit]
   ): Request[DescribeElasticsearchDomainsResponse, AWSError] = js.native
+  
   /**
     *  Describe Elasticsearch Limits for a given InstanceType and ElasticsearchVersion. When modifying existing Domain, specify the  DomainName  to know what Limits are supported for modifying. 
     */
@@ -263,6 +280,7 @@ trait ES extends Service {
     params: DescribeElasticsearchInstanceTypeLimitsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeElasticsearchInstanceTypeLimitsResponse, Unit]
   ): Request[DescribeElasticsearchInstanceTypeLimitsResponse, AWSError] = js.native
+  
   /**
     * Lists all the inbound cross-cluster search connections for a destination domain.
     */
@@ -286,6 +304,7 @@ trait ES extends Service {
       Unit
     ]
   ): Request[DescribeInboundCrossClusterSearchConnectionsResponse, AWSError] = js.native
+  
   /**
     * Lists all the outbound cross-cluster search connections for a source domain.
     */
@@ -309,6 +328,7 @@ trait ES extends Service {
       Unit
     ]
   ): Request[DescribeOutboundCrossClusterSearchConnectionsResponse, AWSError] = js.native
+  
   /**
     * Describes all packages available to Amazon ES. Includes options for filtering, limiting the number of results, and pagination.
     */
@@ -322,6 +342,7 @@ trait ES extends Service {
     params: DescribePackagesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePackagesResponse, Unit]
   ): Request[DescribePackagesResponse, AWSError] = js.native
+  
   /**
     * Lists available reserved Elasticsearch instance offerings.
     */
@@ -345,6 +366,7 @@ trait ES extends Service {
       Unit
     ]
   ): Request[DescribeReservedElasticsearchInstanceOfferingsResponse, AWSError] = js.native
+  
   /**
     * Returns information about reserved Elasticsearch instances for this account.
     */
@@ -360,6 +382,7 @@ trait ES extends Service {
     params: DescribeReservedElasticsearchInstancesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedElasticsearchInstancesResponse, Unit]
   ): Request[DescribeReservedElasticsearchInstancesResponse, AWSError] = js.native
+  
   /**
     * Dissociates a package from the Amazon ES domain.
     */
@@ -373,6 +396,7 @@ trait ES extends Service {
     params: DissociatePackageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DissociatePackageResponse, Unit]
   ): Request[DissociatePackageResponse, AWSError] = js.native
+  
   /**
     *  Returns a list of upgrade compatible Elastisearch versions. You can optionally pass a  DomainName  to get all upgrade compatible Elasticsearch versions for that specific domain. 
     */
@@ -388,6 +412,21 @@ trait ES extends Service {
     params: GetCompatibleElasticsearchVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCompatibleElasticsearchVersionsResponse, Unit]
   ): Request[GetCompatibleElasticsearchVersionsResponse, AWSError] = js.native
+  
+  /**
+    * Returns a list of versions of the package, along with their creation time and commit message.
+    */
+  def getPackageVersionHistory(): Request[GetPackageVersionHistoryResponse, AWSError] = js.native
+  def getPackageVersionHistory(callback: js.Function2[/* err */ AWSError, /* data */ GetPackageVersionHistoryResponse, Unit]): Request[GetPackageVersionHistoryResponse, AWSError] = js.native
+  /**
+    * Returns a list of versions of the package, along with their creation time and commit message.
+    */
+  def getPackageVersionHistory(params: GetPackageVersionHistoryRequest): Request[GetPackageVersionHistoryResponse, AWSError] = js.native
+  def getPackageVersionHistory(
+    params: GetPackageVersionHistoryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPackageVersionHistoryResponse, Unit]
+  ): Request[GetPackageVersionHistoryResponse, AWSError] = js.native
+  
   /**
     * Retrieves the complete history of the last 10 upgrades that were performed on the domain.
     */
@@ -401,6 +440,7 @@ trait ES extends Service {
     params: GetUpgradeHistoryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetUpgradeHistoryResponse, Unit]
   ): Request[GetUpgradeHistoryResponse, AWSError] = js.native
+  
   /**
     * Retrieves the latest status of the last upgrade or upgrade eligibility check that was performed on the domain.
     */
@@ -414,11 +454,13 @@ trait ES extends Service {
     params: GetUpgradeStatusRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetUpgradeStatusResponse, Unit]
   ): Request[GetUpgradeStatusResponse, AWSError] = js.native
+  
   /**
     * Returns the name of all Elasticsearch domains owned by the current user's account. 
     */
   def listDomainNames(): Request[ListDomainNamesResponse, AWSError] = js.native
   def listDomainNames(callback: js.Function2[/* err */ AWSError, /* data */ ListDomainNamesResponse, Unit]): Request[ListDomainNamesResponse, AWSError] = js.native
+  
   /**
     * Lists all Amazon ES domains associated with the package.
     */
@@ -432,6 +474,7 @@ trait ES extends Service {
     params: ListDomainsForPackageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDomainsForPackageResponse, Unit]
   ): Request[ListDomainsForPackageResponse, AWSError] = js.native
+  
   /**
     * List all Elasticsearch instance types that are supported for given ElasticsearchVersion
     */
@@ -447,6 +490,7 @@ trait ES extends Service {
     params: ListElasticsearchInstanceTypesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListElasticsearchInstanceTypesResponse, Unit]
   ): Request[ListElasticsearchInstanceTypesResponse, AWSError] = js.native
+  
   /**
     * List all supported Elasticsearch versions
     */
@@ -460,6 +504,7 @@ trait ES extends Service {
     params: ListElasticsearchVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListElasticsearchVersionsResponse, Unit]
   ): Request[ListElasticsearchVersionsResponse, AWSError] = js.native
+  
   /**
     * Lists all packages associated with the Amazon ES domain.
     */
@@ -473,6 +518,7 @@ trait ES extends Service {
     params: ListPackagesForDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPackagesForDomainResponse, Unit]
   ): Request[ListPackagesForDomainResponse, AWSError] = js.native
+  
   /**
     * Returns all tags for the given Elasticsearch domain.
     */
@@ -486,6 +532,7 @@ trait ES extends Service {
     params: ListTagsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsResponse, Unit]
   ): Request[ListTagsResponse, AWSError] = js.native
+  
   /**
     * Allows you to purchase reserved Elasticsearch instances.
     */
@@ -509,6 +556,7 @@ trait ES extends Service {
       Unit
     ]
   ): Request[PurchaseReservedElasticsearchInstanceOfferingResponse, AWSError] = js.native
+  
   /**
     * Allows the destination domain owner to reject an inbound cross-cluster search connection request.
     */
@@ -532,6 +580,7 @@ trait ES extends Service {
       Unit
     ]
   ): Request[RejectInboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  
   /**
     * Removes the specified set of tags from the specified Elasticsearch domain.
     */
@@ -542,6 +591,7 @@ trait ES extends Service {
     */
   def removeTags(params: RemoveTagsRequest): Request[js.Object, AWSError] = js.native
   def removeTags(params: RemoveTagsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Schedules a service software update for an Amazon ES domain.
     */
@@ -557,6 +607,7 @@ trait ES extends Service {
     params: StartElasticsearchServiceSoftwareUpdateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartElasticsearchServiceSoftwareUpdateResponse, Unit]
   ): Request[StartElasticsearchServiceSoftwareUpdateResponse, AWSError] = js.native
+  
   /**
     * Modifies the cluster configuration of the specified Elasticsearch domain, setting as setting the instance type and the number of instances. 
     */
@@ -572,6 +623,21 @@ trait ES extends Service {
     params: UpdateElasticsearchDomainConfigRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateElasticsearchDomainConfigResponse, Unit]
   ): Request[UpdateElasticsearchDomainConfigResponse, AWSError] = js.native
+  
+  /**
+    * Updates a package for use with Amazon ES domains.
+    */
+  def updatePackage(): Request[UpdatePackageResponse, AWSError] = js.native
+  def updatePackage(callback: js.Function2[/* err */ AWSError, /* data */ UpdatePackageResponse, Unit]): Request[UpdatePackageResponse, AWSError] = js.native
+  /**
+    * Updates a package for use with Amazon ES domains.
+    */
+  def updatePackage(params: UpdatePackageRequest): Request[UpdatePackageResponse, AWSError] = js.native
+  def updatePackage(
+    params: UpdatePackageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdatePackageResponse, Unit]
+  ): Request[UpdatePackageResponse, AWSError] = js.native
+  
   /**
     * Allows you to either upgrade your domain or perform an Upgrade eligibility check to a compatible Elasticsearch version.
     */
@@ -586,4 +652,3 @@ trait ES extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpgradeElasticsearchDomainResponse, Unit]
   ): Request[UpgradeElasticsearchDomainResponse, AWSError] = js.native
 }
-

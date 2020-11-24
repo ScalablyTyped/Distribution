@@ -1,15 +1,16 @@
 package typings.tensorflowTfjsCore
 
+import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
+import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.tensorMod.Tensor1D
-import typings.tensorflowTfjsCore.tensorMod.Tensor2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/non_max_suppression", JSImport.Namespace)
+@JSImport("@tensorflow/tfjs-core/dist/ops/image/non_max_suppression", JSImport.Namespace)
 @js.native
 object nonMaxSuppressionMod extends js.Object {
+  
   val nonMaxSuppression: js.Function5[
     /* boxes */ Tensor2D | TensorLike, 
     /* scores */ Tensor1D | TensorLike, 
@@ -19,4 +20,3 @@ object nonMaxSuppressionMod extends js.Object {
     Tensor1D
   ] = js.native
 }
-

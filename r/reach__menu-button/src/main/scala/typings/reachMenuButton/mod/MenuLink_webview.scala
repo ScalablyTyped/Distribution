@@ -4,11 +4,11 @@ import typings.reachMenuButton.reachMenuButtonStrings.webview
 import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@reach/menu-button", "MenuLink")
 @js.native
 object MenuLink_webview extends js.Object {
+  
   def apply(props: MenuLinkProps[webview]): ReactElement = js.native
 }
-

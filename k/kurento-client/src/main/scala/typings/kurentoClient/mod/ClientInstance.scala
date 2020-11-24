@@ -1,18 +1,25 @@
 package typings.kurentoClient.mod
 
-import typings.kurentoClient.kurentoClientStrings.OnIceCandidate
-import typings.kurentoClient.kurentoClientStrings.Paused
-import typings.kurentoClient.kurentoClientStrings.Recording
-import typings.kurentoClient.kurentoClientStrings.Stopped
+import typings.kurentoClient.anon.NetworkCache
+import typings.kurentoClient.anon.UseDataChannels
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClientInstance extends js.Object {
+  
   def close(): Unit = js.native
+  
+  def create(`type`: String): js.Promise[MediaElement] = js.native
+  def create(`type`: String, options: Record[String, _]): js.Promise[MediaElement] = js.native
   @JSName("create")
   def create_MediaPipeline(`type`: typings.kurentoClient.kurentoClientStrings.MediaPipeline): js.Promise[MediaPipeline] = js.native
+  @JSName("create")
+  def create_PlayerEndpoint(`type`: typings.kurentoClient.kurentoClientStrings.PlayerEndpoint): js.Promise[PlayerEndpoint] = js.native
+  @JSName("create")
+  def create_PlayerEndpoint(`type`: typings.kurentoClient.kurentoClientStrings.PlayerEndpoint, options: NetworkCache): js.Promise[PlayerEndpoint] = js.native
   @JSName("create")
   def create_RecorderEndpoint(
     `type`: typings.kurentoClient.kurentoClientStrings.RecorderEndpoint,
@@ -20,21 +27,11 @@ trait ClientInstance extends js.Object {
   ): js.Promise[RecorderEndpoint] = js.native
   @JSName("create")
   def create_WebRtcEndpoint(`type`: typings.kurentoClient.kurentoClientStrings.WebRtcEndpoint): js.Promise[WebRtcEndpoint] = js.native
+  @JSName("create")
+  def create_WebRtcEndpoint(`type`: typings.kurentoClient.kurentoClientStrings.WebRtcEndpoint, options: UseDataChannels): js.Promise[WebRtcEndpoint] = js.native
+  
   def getMediaobjectById(objectId: String): js.Promise[MediaPipeline | WebRtcEndpoint | RecorderEndpoint] = js.native
-  def getServerManager(): js.Promise[MediaServer] = js.native
-  def getServerManager(callback: Callback[MediaServer]): js.Promise[MediaServer] = js.native
-  @JSName("on")
-  def on_Error(
-    event: typings.kurentoClient.kurentoClientStrings.Error,
-    callback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_OnIceCandidate(event: OnIceCandidate, callback: js.Function1[/* event */ IceCandidate, Unit]): Unit = js.native
-  @JSName("on")
-  def on_Paused(event: Paused, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("on")
-  def on_Recording(event: Recording, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("on")
-  def on_Stopped(event: Stopped, callback: js.Function0[Unit]): Unit = js.native
+  
+  def getServerManager(): js.Promise[ServerManager] = js.native
+  def getServerManager(callback: Callback[ServerManager]): js.Promise[ServerManager] = js.native
 }
-

@@ -1,17 +1,19 @@
 package typings.awsSdk.devicefarmMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DeviceFarm extends Service {
+  
   @JSName("config")
   var config_DeviceFarm: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a device pool.
     */
@@ -25,6 +27,7 @@ trait DeviceFarm extends Service {
     params: CreateDevicePoolRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDevicePoolResult, Unit]
   ): Request[CreateDevicePoolResult, AWSError] = js.native
+  
   /**
     * Creates a profile that can be applied to one or more private fleet device instances.
     */
@@ -38,6 +41,7 @@ trait DeviceFarm extends Service {
     params: CreateInstanceProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateInstanceProfileResult, Unit]
   ): Request[CreateInstanceProfileResult, AWSError] = js.native
+  
   /**
     * Creates a network profile.
     */
@@ -51,6 +55,7 @@ trait DeviceFarm extends Service {
     params: CreateNetworkProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateNetworkProfileResult, Unit]
   ): Request[CreateNetworkProfileResult, AWSError] = js.native
+  
   /**
     * Creates a project.
     */
@@ -64,6 +69,7 @@ trait DeviceFarm extends Service {
     params: CreateProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProjectResult, Unit]
   ): Request[CreateProjectResult, AWSError] = js.native
+  
   /**
     * Specifies and starts a remote access session.
     */
@@ -77,6 +83,7 @@ trait DeviceFarm extends Service {
     params: CreateRemoteAccessSessionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRemoteAccessSessionResult, Unit]
   ): Request[CreateRemoteAccessSessionResult, AWSError] = js.native
+  
   /**
     * Creates a Selenium testing project. Projects are used to track TestGridSession instances.
     */
@@ -90,6 +97,7 @@ trait DeviceFarm extends Service {
     params: CreateTestGridProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateTestGridProjectResult, Unit]
   ): Request[CreateTestGridProjectResult, AWSError] = js.native
+  
   /**
     * Creates a signed, short-term URL that can be passed to a Selenium RemoteWebDriver constructor.
     */
@@ -103,6 +111,7 @@ trait DeviceFarm extends Service {
     params: CreateTestGridUrlRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateTestGridUrlResult, Unit]
   ): Request[CreateTestGridUrlResult, AWSError] = js.native
+  
   /**
     * Uploads an app or test scripts.
     */
@@ -116,6 +125,7 @@ trait DeviceFarm extends Service {
     params: CreateUploadRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUploadResult, Unit]
   ): Request[CreateUploadResult, AWSError] = js.native
+  
   /**
     * Creates a configuration record in Device Farm for your Amazon Virtual Private Cloud (VPC) endpoint.
     */
@@ -129,6 +139,7 @@ trait DeviceFarm extends Service {
     params: CreateVPCEConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateVPCEConfigurationResult, Unit]
   ): Request[CreateVPCEConfigurationResult, AWSError] = js.native
+  
   /**
     * Deletes a device pool given the pool ARN. Does not allow deletion of curated pools owned by the system.
     */
@@ -142,6 +153,7 @@ trait DeviceFarm extends Service {
     params: DeleteDevicePoolRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDevicePoolResult, Unit]
   ): Request[DeleteDevicePoolResult, AWSError] = js.native
+  
   /**
     * Deletes a profile that can be applied to one or more private device instances.
     */
@@ -155,6 +167,7 @@ trait DeviceFarm extends Service {
     params: DeleteInstanceProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteInstanceProfileResult, Unit]
   ): Request[DeleteInstanceProfileResult, AWSError] = js.native
+  
   /**
     * Deletes a network profile.
     */
@@ -168,6 +181,7 @@ trait DeviceFarm extends Service {
     params: DeleteNetworkProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteNetworkProfileResult, Unit]
   ): Request[DeleteNetworkProfileResult, AWSError] = js.native
+  
   /**
     * Deletes an AWS Device Farm project, given the project ARN.  Deleting this resource does not stop an in-progress run.
     */
@@ -181,6 +195,7 @@ trait DeviceFarm extends Service {
     params: DeleteProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteProjectResult, Unit]
   ): Request[DeleteProjectResult, AWSError] = js.native
+  
   /**
     * Deletes a completed remote access session and its results.
     */
@@ -194,6 +209,7 @@ trait DeviceFarm extends Service {
     params: DeleteRemoteAccessSessionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRemoteAccessSessionResult, Unit]
   ): Request[DeleteRemoteAccessSessionResult, AWSError] = js.native
+  
   /**
     * Deletes the run, given the run ARN.  Deleting this resource does not stop an in-progress run.
     */
@@ -207,6 +223,7 @@ trait DeviceFarm extends Service {
     params: DeleteRunRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRunResult, Unit]
   ): Request[DeleteRunResult, AWSError] = js.native
+  
   /**
     *  Deletes a Selenium testing project and all content generated under it.   You cannot undo this operation.   You cannot delete a project if it has active sessions. 
     */
@@ -220,6 +237,7 @@ trait DeviceFarm extends Service {
     params: DeleteTestGridProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteTestGridProjectResult, Unit]
   ): Request[DeleteTestGridProjectResult, AWSError] = js.native
+  
   /**
     * Deletes an upload given the upload ARN.
     */
@@ -233,6 +251,7 @@ trait DeviceFarm extends Service {
     params: DeleteUploadRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteUploadResult, Unit]
   ): Request[DeleteUploadResult, AWSError] = js.native
+  
   /**
     * Deletes a configuration for your Amazon Virtual Private Cloud (VPC) endpoint.
     */
@@ -246,6 +265,7 @@ trait DeviceFarm extends Service {
     params: DeleteVPCEConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteVPCEConfigurationResult, Unit]
   ): Request[DeleteVPCEConfigurationResult, AWSError] = js.native
+  
   /**
     * Returns the number of unmetered iOS or unmetered Android devices that have been purchased by the account.
     */
@@ -259,6 +279,7 @@ trait DeviceFarm extends Service {
     params: GetAccountSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAccountSettingsResult, Unit]
   ): Request[GetAccountSettingsResult, AWSError] = js.native
+  
   /**
     * Gets information about a unique device type.
     */
@@ -272,6 +293,7 @@ trait DeviceFarm extends Service {
     params: GetDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeviceResult, Unit]
   ): Request[GetDeviceResult, AWSError] = js.native
+  
   /**
     * Returns information about a device instance that belongs to a private device fleet.
     */
@@ -285,6 +307,7 @@ trait DeviceFarm extends Service {
     params: GetDeviceInstanceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeviceInstanceResult, Unit]
   ): Request[GetDeviceInstanceResult, AWSError] = js.native
+  
   /**
     * Gets information about a device pool.
     */
@@ -298,6 +321,7 @@ trait DeviceFarm extends Service {
     params: GetDevicePoolRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDevicePoolResult, Unit]
   ): Request[GetDevicePoolResult, AWSError] = js.native
+  
   /**
     * Gets information about compatibility with a device pool.
     */
@@ -311,6 +335,7 @@ trait DeviceFarm extends Service {
     params: GetDevicePoolCompatibilityRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDevicePoolCompatibilityResult, Unit]
   ): Request[GetDevicePoolCompatibilityResult, AWSError] = js.native
+  
   /**
     * Returns information about the specified instance profile.
     */
@@ -324,6 +349,7 @@ trait DeviceFarm extends Service {
     params: GetInstanceProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInstanceProfileResult, Unit]
   ): Request[GetInstanceProfileResult, AWSError] = js.native
+  
   /**
     * Gets information about a job.
     */
@@ -334,6 +360,7 @@ trait DeviceFarm extends Service {
     */
   def getJob(params: GetJobRequest): Request[GetJobResult, AWSError] = js.native
   def getJob(params: GetJobRequest, callback: js.Function2[/* err */ AWSError, /* data */ GetJobResult, Unit]): Request[GetJobResult, AWSError] = js.native
+  
   /**
     * Returns information about a network profile.
     */
@@ -347,6 +374,7 @@ trait DeviceFarm extends Service {
     params: GetNetworkProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetNetworkProfileResult, Unit]
   ): Request[GetNetworkProfileResult, AWSError] = js.native
+  
   /**
     * Gets the current status and future status of all offerings purchased by an AWS account. The response indicates how many offerings are currently available and the offerings that will be available in the next period. The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
     */
@@ -360,6 +388,7 @@ trait DeviceFarm extends Service {
     params: GetOfferingStatusRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetOfferingStatusResult, Unit]
   ): Request[GetOfferingStatusResult, AWSError] = js.native
+  
   /**
     * Gets information about a project.
     */
@@ -373,6 +402,7 @@ trait DeviceFarm extends Service {
     params: GetProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetProjectResult, Unit]
   ): Request[GetProjectResult, AWSError] = js.native
+  
   /**
     * Returns a link to a currently running remote access session.
     */
@@ -386,6 +416,7 @@ trait DeviceFarm extends Service {
     params: GetRemoteAccessSessionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRemoteAccessSessionResult, Unit]
   ): Request[GetRemoteAccessSessionResult, AWSError] = js.native
+  
   /**
     * Gets information about a run.
     */
@@ -396,6 +427,7 @@ trait DeviceFarm extends Service {
     */
   def getRun(params: GetRunRequest): Request[GetRunResult, AWSError] = js.native
   def getRun(params: GetRunRequest, callback: js.Function2[/* err */ AWSError, /* data */ GetRunResult, Unit]): Request[GetRunResult, AWSError] = js.native
+  
   /**
     * Gets information about a suite.
     */
@@ -409,6 +441,7 @@ trait DeviceFarm extends Service {
     params: GetSuiteRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSuiteResult, Unit]
   ): Request[GetSuiteResult, AWSError] = js.native
+  
   /**
     * Gets information about a test.
     */
@@ -419,6 +452,7 @@ trait DeviceFarm extends Service {
     */
   def getTest(params: GetTestRequest): Request[GetTestResult, AWSError] = js.native
   def getTest(params: GetTestRequest, callback: js.Function2[/* err */ AWSError, /* data */ GetTestResult, Unit]): Request[GetTestResult, AWSError] = js.native
+  
   /**
     * Retrieves information about a Selenium testing project.
     */
@@ -432,6 +466,7 @@ trait DeviceFarm extends Service {
     params: GetTestGridProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetTestGridProjectResult, Unit]
   ): Request[GetTestGridProjectResult, AWSError] = js.native
+  
   /**
     * A session is an instance of a browser created through a RemoteWebDriver with the URL from CreateTestGridUrlResult$url. You can use the following to look up sessions:   The session ARN (GetTestGridSessionRequest$sessionArn).   The project ARN and a session ID (GetTestGridSessionRequest$projectArn and GetTestGridSessionRequest$sessionId).   
     */
@@ -445,6 +480,7 @@ trait DeviceFarm extends Service {
     params: GetTestGridSessionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetTestGridSessionResult, Unit]
   ): Request[GetTestGridSessionResult, AWSError] = js.native
+  
   /**
     * Gets information about an upload.
     */
@@ -458,6 +494,7 @@ trait DeviceFarm extends Service {
     params: GetUploadRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetUploadResult, Unit]
   ): Request[GetUploadResult, AWSError] = js.native
+  
   /**
     * Returns information about the configuration settings for your Amazon Virtual Private Cloud (VPC) endpoint.
     */
@@ -471,6 +508,7 @@ trait DeviceFarm extends Service {
     params: GetVPCEConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVPCEConfigurationResult, Unit]
   ): Request[GetVPCEConfigurationResult, AWSError] = js.native
+  
   /**
     * Installs an application to the device in a remote access session. For Android applications, the file must be in .apk format. For iOS applications, the file must be in .ipa format.
     */
@@ -484,6 +522,7 @@ trait DeviceFarm extends Service {
     params: InstallToRemoteAccessSessionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ InstallToRemoteAccessSessionResult, Unit]
   ): Request[InstallToRemoteAccessSessionResult, AWSError] = js.native
+  
   /**
     * Gets information about artifacts.
     */
@@ -497,6 +536,7 @@ trait DeviceFarm extends Service {
     params: ListArtifactsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListArtifactsResult, Unit]
   ): Request[ListArtifactsResult, AWSError] = js.native
+  
   /**
     * Returns information about the private device instances associated with one or more AWS accounts.
     */
@@ -510,6 +550,7 @@ trait DeviceFarm extends Service {
     params: ListDeviceInstancesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDeviceInstancesResult, Unit]
   ): Request[ListDeviceInstancesResult, AWSError] = js.native
+  
   /**
     * Gets information about device pools.
     */
@@ -523,6 +564,7 @@ trait DeviceFarm extends Service {
     params: ListDevicePoolsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDevicePoolsResult, Unit]
   ): Request[ListDevicePoolsResult, AWSError] = js.native
+  
   /**
     * Gets information about unique device types.
     */
@@ -536,6 +578,7 @@ trait DeviceFarm extends Service {
     params: ListDevicesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDevicesResult, Unit]
   ): Request[ListDevicesResult, AWSError] = js.native
+  
   /**
     * Returns information about all the instance profiles in an AWS account.
     */
@@ -549,6 +592,7 @@ trait DeviceFarm extends Service {
     params: ListInstanceProfilesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListInstanceProfilesResult, Unit]
   ): Request[ListInstanceProfilesResult, AWSError] = js.native
+  
   /**
     * Gets information about jobs for a given test run.
     */
@@ -562,6 +606,7 @@ trait DeviceFarm extends Service {
     params: ListJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListJobsResult, Unit]
   ): Request[ListJobsResult, AWSError] = js.native
+  
   /**
     * Returns the list of available network profiles.
     */
@@ -575,6 +620,7 @@ trait DeviceFarm extends Service {
     params: ListNetworkProfilesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListNetworkProfilesResult, Unit]
   ): Request[ListNetworkProfilesResult, AWSError] = js.native
+  
   /**
     * Returns a list of offering promotions. Each offering promotion record contains the ID and description of the promotion. The API returns a NotEligible error if the caller is not permitted to invoke the operation. Contact aws-devicefarm-support@amazon.com if you must be able to invoke this operation.
     */
@@ -588,6 +634,7 @@ trait DeviceFarm extends Service {
     params: ListOfferingPromotionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListOfferingPromotionsResult, Unit]
   ): Request[ListOfferingPromotionsResult, AWSError] = js.native
+  
   /**
     * Returns a list of all historical purchases, renewals, and system renewal transactions for an AWS account. The list is paginated and ordered by a descending timestamp (most recent transactions are first). The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
     */
@@ -601,6 +648,7 @@ trait DeviceFarm extends Service {
     params: ListOfferingTransactionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListOfferingTransactionsResult, Unit]
   ): Request[ListOfferingTransactionsResult, AWSError] = js.native
+  
   /**
     * Returns a list of products or offerings that the user can manage through the API. Each offering record indicates the recurring price per unit and the frequency for that offering. The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
     */
@@ -614,6 +662,7 @@ trait DeviceFarm extends Service {
     params: ListOfferingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListOfferingsResult, Unit]
   ): Request[ListOfferingsResult, AWSError] = js.native
+  
   /**
     * Gets information about projects.
     */
@@ -627,6 +676,7 @@ trait DeviceFarm extends Service {
     params: ListProjectsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListProjectsResult, Unit]
   ): Request[ListProjectsResult, AWSError] = js.native
+  
   /**
     * Returns a list of all currently running remote access sessions.
     */
@@ -640,6 +690,7 @@ trait DeviceFarm extends Service {
     params: ListRemoteAccessSessionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRemoteAccessSessionsResult, Unit]
   ): Request[ListRemoteAccessSessionsResult, AWSError] = js.native
+  
   /**
     * Gets information about runs, given an AWS Device Farm project ARN.
     */
@@ -653,6 +704,7 @@ trait DeviceFarm extends Service {
     params: ListRunsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRunsResult, Unit]
   ): Request[ListRunsResult, AWSError] = js.native
+  
   /**
     * Gets information about samples, given an AWS Device Farm job ARN.
     */
@@ -666,6 +718,7 @@ trait DeviceFarm extends Service {
     params: ListSamplesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSamplesResult, Unit]
   ): Request[ListSamplesResult, AWSError] = js.native
+  
   /**
     * Gets information about test suites for a given job.
     */
@@ -679,6 +732,7 @@ trait DeviceFarm extends Service {
     params: ListSuitesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSuitesResult, Unit]
   ): Request[ListSuitesResult, AWSError] = js.native
+  
   /**
     * List the tags for an AWS Device Farm resource.
     */
@@ -692,6 +746,7 @@ trait DeviceFarm extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Gets a list of all Selenium testing projects in your account.
     */
@@ -705,6 +760,7 @@ trait DeviceFarm extends Service {
     params: ListTestGridProjectsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTestGridProjectsResult, Unit]
   ): Request[ListTestGridProjectsResult, AWSError] = js.native
+  
   /**
     * Returns a list of the actions taken in a TestGridSession.
     */
@@ -718,6 +774,7 @@ trait DeviceFarm extends Service {
     params: ListTestGridSessionActionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTestGridSessionActionsResult, Unit]
   ): Request[ListTestGridSessionActionsResult, AWSError] = js.native
+  
   /**
     * Retrieves a list of artifacts created during the session.
     */
@@ -731,6 +788,7 @@ trait DeviceFarm extends Service {
     params: ListTestGridSessionArtifactsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTestGridSessionArtifactsResult, Unit]
   ): Request[ListTestGridSessionArtifactsResult, AWSError] = js.native
+  
   /**
     * Retrieves a list of sessions for a TestGridProject.
     */
@@ -744,6 +802,7 @@ trait DeviceFarm extends Service {
     params: ListTestGridSessionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTestGridSessionsResult, Unit]
   ): Request[ListTestGridSessionsResult, AWSError] = js.native
+  
   /**
     * Gets information about tests in a given test suite.
     */
@@ -757,6 +816,7 @@ trait DeviceFarm extends Service {
     params: ListTestsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTestsResult, Unit]
   ): Request[ListTestsResult, AWSError] = js.native
+  
   /**
     * Gets information about unique problems, such as exceptions or crashes. Unique problems are defined as a single instance of an error across a run, job, or suite. For example, if a call in your application consistently raises an exception (OutOfBoundsException in MyActivity.java:386), ListUniqueProblems returns a single entry instead of many individual entries for that exception.
     */
@@ -770,6 +830,7 @@ trait DeviceFarm extends Service {
     params: ListUniqueProblemsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListUniqueProblemsResult, Unit]
   ): Request[ListUniqueProblemsResult, AWSError] = js.native
+  
   /**
     * Gets information about uploads, given an AWS Device Farm project ARN.
     */
@@ -783,6 +844,7 @@ trait DeviceFarm extends Service {
     params: ListUploadsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListUploadsResult, Unit]
   ): Request[ListUploadsResult, AWSError] = js.native
+  
   /**
     * Returns information about all Amazon Virtual Private Cloud (VPC) endpoint configurations in the AWS account.
     */
@@ -796,6 +858,7 @@ trait DeviceFarm extends Service {
     params: ListVPCEConfigurationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListVPCEConfigurationsResult, Unit]
   ): Request[ListVPCEConfigurationsResult, AWSError] = js.native
+  
   /**
     * Immediately purchases offerings for an AWS account. Offerings renew with the latest total purchased quantity for an offering, unless the renewal was overridden. The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
     */
@@ -809,6 +872,7 @@ trait DeviceFarm extends Service {
     params: PurchaseOfferingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PurchaseOfferingResult, Unit]
   ): Request[PurchaseOfferingResult, AWSError] = js.native
+  
   /**
     * Explicitly sets the quantity of devices to renew for an offering, starting from the effectiveDate of the next period. The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
     */
@@ -822,6 +886,7 @@ trait DeviceFarm extends Service {
     params: RenewOfferingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RenewOfferingResult, Unit]
   ): Request[RenewOfferingResult, AWSError] = js.native
+  
   /**
     * Schedules a run.
     */
@@ -835,6 +900,7 @@ trait DeviceFarm extends Service {
     params: ScheduleRunRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ScheduleRunResult, Unit]
   ): Request[ScheduleRunResult, AWSError] = js.native
+  
   /**
     * Initiates a stop request for the current job. AWS Device Farm immediately stops the job on the device where tests have not started. You are not billed for this device. On the device where tests have started, setup suite and teardown suite tests run to completion on the device. You are billed for setup, teardown, and any tests that were in progress or already completed.
     */
@@ -845,6 +911,7 @@ trait DeviceFarm extends Service {
     */
   def stopJob(params: StopJobRequest): Request[StopJobResult, AWSError] = js.native
   def stopJob(params: StopJobRequest, callback: js.Function2[/* err */ AWSError, /* data */ StopJobResult, Unit]): Request[StopJobResult, AWSError] = js.native
+  
   /**
     * Ends a specified remote access session.
     */
@@ -858,6 +925,7 @@ trait DeviceFarm extends Service {
     params: StopRemoteAccessSessionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopRemoteAccessSessionResult, Unit]
   ): Request[StopRemoteAccessSessionResult, AWSError] = js.native
+  
   /**
     * Initiates a stop request for the current test run. AWS Device Farm immediately stops the run on devices where tests have not started. You are not billed for these devices. On devices where tests have started executing, setup suite and teardown suite tests run to completion on those devices. You are billed for setup, teardown, and any tests that were in progress or already completed.
     */
@@ -868,6 +936,7 @@ trait DeviceFarm extends Service {
     */
   def stopRun(params: StopRunRequest): Request[StopRunResult, AWSError] = js.native
   def stopRun(params: StopRunRequest, callback: js.Function2[/* err */ AWSError, /* data */ StopRunResult, Unit]): Request[StopRunResult, AWSError] = js.native
+  
   /**
     * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are also deleted.
     */
@@ -881,6 +950,7 @@ trait DeviceFarm extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified tags from a resource.
     */
@@ -894,6 +964,7 @@ trait DeviceFarm extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates information about a private device instance.
     */
@@ -907,6 +978,7 @@ trait DeviceFarm extends Service {
     params: UpdateDeviceInstanceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDeviceInstanceResult, Unit]
   ): Request[UpdateDeviceInstanceResult, AWSError] = js.native
+  
   /**
     * Modifies the name, description, and rules in a device pool given the attributes and the pool ARN. Rule updates are all-or-nothing, meaning they can only be updated as a whole (or not at all).
     */
@@ -920,6 +992,7 @@ trait DeviceFarm extends Service {
     params: UpdateDevicePoolRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDevicePoolResult, Unit]
   ): Request[UpdateDevicePoolResult, AWSError] = js.native
+  
   /**
     * Updates information about an existing private device instance profile.
     */
@@ -933,6 +1006,7 @@ trait DeviceFarm extends Service {
     params: UpdateInstanceProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateInstanceProfileResult, Unit]
   ): Request[UpdateInstanceProfileResult, AWSError] = js.native
+  
   /**
     * Updates the network profile.
     */
@@ -946,6 +1020,7 @@ trait DeviceFarm extends Service {
     params: UpdateNetworkProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateNetworkProfileResult, Unit]
   ): Request[UpdateNetworkProfileResult, AWSError] = js.native
+  
   /**
     * Modifies the specified project name, given the project ARN and a new name.
     */
@@ -959,6 +1034,7 @@ trait DeviceFarm extends Service {
     params: UpdateProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateProjectResult, Unit]
   ): Request[UpdateProjectResult, AWSError] = js.native
+  
   /**
     * Change details of a project.
     */
@@ -972,6 +1048,7 @@ trait DeviceFarm extends Service {
     params: UpdateTestGridProjectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateTestGridProjectResult, Unit]
   ): Request[UpdateTestGridProjectResult, AWSError] = js.native
+  
   /**
     * Updates an uploaded test spec.
     */
@@ -985,6 +1062,7 @@ trait DeviceFarm extends Service {
     params: UpdateUploadRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateUploadResult, Unit]
   ): Request[UpdateUploadResult, AWSError] = js.native
+  
   /**
     * Updates information about an Amazon Virtual Private Cloud (VPC) endpoint configuration.
     */
@@ -999,4 +1077,3 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateVPCEConfigurationResult, Unit]
   ): Request[UpdateVPCEConfigurationResult, AWSError] = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.jupyterlabApputils.mainareawidgetMod.MainAreaWidget.IOptions
 import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/apputils", "MainAreaWidget")
 @js.native
@@ -17,4 +17,3 @@ class MainAreaWidget[T /* <: Widget */] protected ()
     */
   def this(options: IOptions[T]) = this()
 }
-

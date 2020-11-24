@@ -3,11 +3,12 @@ package typings.gitRawCommits.mod
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git-raw-commits", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Returns a readable stream. Stream is split to break on each commit.
     *
@@ -17,4 +18,3 @@ object ^ extends js.Object {
   def apply(gitOptions: GitOptions): Readable = js.native
   def apply(gitOptions: GitOptions, execOptions: ExecOptions): Readable = js.native
 }
-

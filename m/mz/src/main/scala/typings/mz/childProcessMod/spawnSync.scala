@@ -7,11 +7,12 @@ import typings.node.childProcessMod.SpawnSyncOptionsWithStringEncoding
 import typings.node.childProcessMod.SpawnSyncReturns
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mz/child_process", "spawnSync")
 @js.native
 object spawnSync extends js.Object {
+  
   def apply(command: String): SpawnSyncReturns[Buffer] = js.native
   def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = js.native
   def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native
@@ -24,4 +25,3 @@ object spawnSync extends js.Object {
   def apply(command: String, options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native
   def apply(command: String, options: SpawnSyncOptionsWithStringEncoding): SpawnSyncReturns[String] = js.native
 }
-

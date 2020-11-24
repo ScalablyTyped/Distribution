@@ -10,9 +10,9 @@ generate the minimum number of tiles to cover a geojson geometry
 | ------------------ | :-------------: |
 | Full name          | @mapbox/tile-cover |
 | Keywords           | tile, cover, geojson, index |
-| # releases         | 1 |
-| # dependents       | 13 |
-| # downloads        | 37881 |
+| # releases         | 0 |
+| # dependents       | 17 |
+| # downloads        | 55070 |
 | # stars            | 1 |
 
 ## Links

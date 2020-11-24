@@ -2,11 +2,12 @@ package typings.stripComments.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strip-comments", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Strip all code comments from the given `input`, including protected
     * comments that start with `!`, unless disabled by setting `options.keepProtected`
@@ -23,4 +24,3 @@ object ^ extends js.Object {
   def apply(input: String): String = js.native
   def apply(input: String, options: Options): String = js.native
 }
-

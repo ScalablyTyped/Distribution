@@ -6,14 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Adunits")
 @js.native
 class ResourceAdunits protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   var customchannels: ResourceAdunitsCustomchannels = js.native
+  
   /**
     * adsense.adunits.get
     * @desc Gets the specified ad unit in the specified ad client.
@@ -43,6 +46,7 @@ class ResourceAdunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdUnit]
   ): Unit = js.native
+  
   /**
     * adsense.adunits.getAdCode
     * @desc Get ad code for the specified ad unit.
@@ -72,6 +76,7 @@ class ResourceAdunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdCode]
   ): Unit = js.native
+  
   /**
     * adsense.adunits.list
     * @desc List all ad units in the specified ad client for this AdSense
@@ -105,4 +110,3 @@ class ResourceAdunits protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAdUnits]
   ): Unit = js.native
 }
-

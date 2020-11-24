@@ -3,7 +3,7 @@ package typings.protobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs", "Service")
 @js.native
@@ -16,10 +16,7 @@ class Service protected () extends NamespaceBase {
     */
   def this(name: String) = this()
   def this(name: String, options: StringDictionary[js.Any]) = this()
-  /** Service methods. */
-  var methods: StringDictionary[Method] = js.native
-  /** Methods of this service as an array for iteration. */
-  val methodsArray: js.Array[Method] = js.native
+  
   /**
     * Creates a runtime service using the specified rpc implementation.
     * @param rpcImpl RPC implementation
@@ -31,12 +28,18 @@ class Service protected () extends NamespaceBase {
   def create(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean): typings.protobufjs.mod.rpc.Service = js.native
   def create(rpcImpl: RPCImpl, requestDelimited: Boolean): typings.protobufjs.mod.rpc.Service = js.native
   def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): typings.protobufjs.mod.rpc.Service = js.native
+  
+  /** Service methods. */
+  var methods: StringDictionary[Method] = js.native
+  
+  /** Methods of this service as an array for iteration. */
+  val methodsArray: js.Array[Method] = js.native
 }
-
 /* static members */
 @JSImport("protobufjs", "Service")
 @js.native
 object Service extends js.Object {
+  
   /**
     * Constructs a service from a service descriptor.
     * @param name Service name
@@ -46,4 +49,3 @@ object Service extends js.Object {
     */
   def fromJSON(name: String, json: IService): Service = js.native
 }
-

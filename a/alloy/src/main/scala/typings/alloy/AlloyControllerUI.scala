@@ -2,13 +2,14 @@ package typings.alloy
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides convenience methods for working with Titanium Views in Alloy
   */
 @js.native
 trait AlloyControllerUI extends js.Object {
+  
   /**
     * Creates a Titanium UI element with the specified options.
     *
@@ -28,4 +29,3 @@ trait AlloyControllerUI extends js.Object {
   def create(apiName: String): js.Any = js.native
   def create(apiName: String, opts: AlloyStyleDict): js.Any = js.native
 }
-

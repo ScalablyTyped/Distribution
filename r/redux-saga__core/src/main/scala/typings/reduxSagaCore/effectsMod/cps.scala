@@ -6,11 +6,12 @@ import typings.reduxSagaCore.anon.Fn
 import typings.reduxSagaCore.reduxSagaCoreStrings.cps_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@redux-saga/core/types/effects", "cps")
 @js.native
 object cps extends js.Object {
+  
   def apply[Fn /* <: js.Function1[/* cb */ CpsCallback[_], _] */](fn: Fn): CpsEffect = js.native
   def apply[Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
     fn: Fn,
@@ -33,4 +34,3 @@ object cps extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type CpsFunctionParameters<Fn> is not an array type */ args: CpsFunctionParameters[Fn]
   ): CpsEffect = js.native
 }
-

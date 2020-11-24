@@ -4,11 +4,12 @@ import typings.esfxCancelable.distMod.Cancelable
 import typings.prex.cancellationMod.CancellationToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prex/out/lib/barrier", JSImport.Namespace)
 @js.native
 object barrierMod extends js.Object {
+  
   @js.native
   class Barrier protected () extends js.Object {
     /**
@@ -22,16 +23,27 @@ object barrierMod extends js.Object {
       participantCount: Double,
       postPhaseAction: js.Function1[/* barrier */ Barrier, Unit | js.Thenable[Unit]]
     ) = this()
+    
     var _finishPhase: js.Any = js.native
+    
     var _isExecutingPostPhaseAction: js.Any = js.native
+    
     var _nextPhase: js.Any = js.native
+    
     var _participantCount: js.Any = js.native
+    
     var _phaseNumber: js.Any = js.native
+    
     var _postPhaseAction: js.Any = js.native
+    
     var _rejectNextPhase: js.Any = js.native
+    
     var _remainingParticipants: js.Any = js.native
+    
     var _resolveNextPhase: js.Any = js.native
+    
     var _waiters: js.Any = js.native
+    
     /**
       * Notifies the Barrier there will be additional participants.
       *
@@ -39,18 +51,22 @@ object barrierMod extends js.Object {
       */
     def add(): Unit = js.native
     def add(participantCount: Double): Unit = js.native
+    
     /**
       * Gets the number of the Barrier's current phase.
       */
     def currentPhaseNumber: Double = js.native
+    
     /**
       * Gets the total number of participants in the barrier.
       */
     def participantCount: Double = js.native
+    
     /**
       * Gets the number of participants in the barrier that haven't yet signaled in the current phase.
       */
     def remainingParticipants: Double = js.native
+    
     /**
       * Notifies the Barrier there will be fewer participants.
       *
@@ -58,6 +74,7 @@ object barrierMod extends js.Object {
       */
     def remove(): Unit = js.native
     def remove(participantCount: Double): Unit = js.native
+    
     /**
       * Signals that a participant has reached the barrier and waits for all other participants
       * to reach the barrier.
@@ -68,6 +85,4 @@ object barrierMod extends js.Object {
     def signalAndWait(token: Cancelable): js.Promise[Unit] = js.native
     def signalAndWait(token: CancellationToken): js.Promise[Unit] = js.native
   }
-  
 }
-

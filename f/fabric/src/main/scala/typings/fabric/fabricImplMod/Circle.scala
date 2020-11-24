@@ -3,7 +3,7 @@ package typings.fabric.fabricImplMod
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fabric.fabricImplMod.IObjectOptions because Already inherited
@@ -11,56 +11,64 @@ import scala.scalajs.js.annotation._
 @js.native
 class Circle () extends Object {
   def this(options: ICircleOptions) = this()
-  /**
-    * End angle of the circle
-    */
-  var endAngle: js.UndefOr[Double] = js.native
-  /**
-    * Radius of this circle
-    */
-  var radius: js.UndefOr[Double] = js.native
-  /**
-    * Start angle of the circle, moving clockwise
-    */
-  var startAngle: js.UndefOr[Double] = js.native
+  
   /**
     * Returns svg representation of an instance
     * @return {Array} an array of strings with the specific svg representation
     * of the instance
     */
   def _toSVG(): String = js.native
+  
+  /**
+    * End angle of the circle
+    */
+  var endAngle: js.UndefOr[Double] = js.native
+  
   /**
     * Returns horizontal radius of an object (according to how an object is scaled)
     */
   def getRadiusX(): Double = js.native
+  
   /**
     * Returns vertical radius of an object (according to how an object is scaled)
     */
   def getRadiusY(): Double = js.native
+  
+  /**
+    * Radius of this circle
+    */
+  var radius: js.UndefOr[Double] = js.native
+  
   /**
     * Sets radius of an object (and updates width accordingly)
     */
   def setRadius(value: Double): Double = js.native
+  
+  /**
+    * Start angle of the circle, moving clockwise
+    */
+  var startAngle: js.UndefOr[Double] = js.native
 }
-
 /* static members */
 @JSImport("fabric/fabric-impl", "Circle")
 @js.native
 object Circle extends js.Object {
+  
   /**
     * List of attribute names to account for when parsing SVG element (used by {@link fabric.Circle.fromElement})
     */
   var ATTRIBUTE_NAMES: js.Array[String] = js.native
+  
   /**
     * Returns Circle instance from an SVG element
     * @param element Element to parse
     * @param [options] Options object
     */
   def fromElement(element: SVGElement, options: ICircleOptions): Circle = js.native
+  
   /**
     * Returns Circle instance from an object representation
     * @param object Object to create an instance from
     */
   def fromObject(`object`: js.Any): Circle = js.native
 }
-

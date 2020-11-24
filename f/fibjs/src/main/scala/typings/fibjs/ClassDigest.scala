@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,16 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassDigest extends ClassObject {
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询当前信息摘要算法的摘要字节数
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var size: Double = js.native
+  
   /**
     * 
     * @brief 计算并返回摘要
@@ -32,6 +23,18 @@ trait ClassDigest extends ClassObject {
     */
   def digest(): js.Any = js.native
   def digest(codec: String): js.Any = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询当前信息摘要算法的摘要字节数
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var size: Double = js.native
+  
   /**
     * 
     * @brief 更新二进制摘要信息
@@ -43,4 +46,3 @@ trait ClassDigest extends ClassObject {
     */
   def update(data: ClassBuffer): ClassDigest = js.native
 }
-

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MediaStream")
 @js.native
@@ -13,7 +13,6 @@ class MediaStream ()
   def this(stream: typings.std.MediaStream) = this()
   def this(tracks: js.Array[typings.std.MediaStreamTrack]) = this()
 }
-
 @JSGlobal("MediaStream")
 @js.native
 object MediaStream
@@ -22,4 +21,3 @@ object MediaStream
       (/* tracks */ js.Array[typings.std.MediaStreamTrack]) | (/* stream */ typings.std.MediaStream), 
       typings.std.MediaStream
     ]
-

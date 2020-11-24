@@ -4,11 +4,12 @@ import typings.officeUiFabricReact.activityItemTypesMod.IActivityItemStyles
 import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/ActivityItem/ActivityItem.classNames", "getClassNames")
 @js.native
 object getClassNames extends js.Object {
+  
   def apply(
     styles: IActivityItemStyles,
     className: String,
@@ -16,4 +17,3 @@ object getClassNames extends js.Object {
     isCompact: Boolean
   ): IActivityItemClassNames = js.native
 }
-

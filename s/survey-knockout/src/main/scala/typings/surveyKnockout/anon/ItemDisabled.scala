@@ -2,27 +2,45 @@ package typings.surveyKnockout.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ItemDisabled extends js.Object {
+  
   var column: String = js.native
+  
   var controlLabel: String = js.native
+  
   var item: String = js.native
+  
   var itemChecked: String = js.native
+  
   var itemControl: String = js.native
+  
   var itemDecorator: String = js.native
+  
   var itemDisabled: String = js.native
+  
   var itemHover: String = js.native
+  
   var itemInline: String = js.native
+  
+  var itemNone: String = js.native
+  
+  var itemSelectAll: String = js.native
+  
   var label: String = js.native
+  
   var labelChecked: String = js.native
+  
   var materialDecorator: String = js.native
+  
   var other: String = js.native
+  
   var root: String = js.native
 }
-
 object ItemDisabled {
+  
   @scala.inline
   def apply(
     column: String,
@@ -34,55 +52,79 @@ object ItemDisabled {
     itemDisabled: String,
     itemHover: String,
     itemInline: String,
+    itemNone: String,
+    itemSelectAll: String,
     label: String,
     labelChecked: String,
     materialDecorator: String,
     other: String,
     root: String
   ): ItemDisabled = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], controlLabel = controlLabel.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemDisabled = itemDisabled.asInstanceOf[js.Any], itemHover = itemHover.asInstanceOf[js.Any], itemInline = itemInline.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelChecked = labelChecked.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], controlLabel = controlLabel.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemDisabled = itemDisabled.asInstanceOf[js.Any], itemHover = itemHover.asInstanceOf[js.Any], itemInline = itemInline.asInstanceOf[js.Any], itemNone = itemNone.asInstanceOf[js.Any], itemSelectAll = itemSelectAll.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelChecked = labelChecked.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemDisabled]
   }
+  
   @scala.inline
   implicit class ItemDisabledOps[Self <: ItemDisabled] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setColumn(value: String): Self = this.set("column", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setControlLabel(value: String): Self = this.set("controlLabel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setItem(value: String): Self = this.set("item", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setItemChecked(value: String): Self = this.set("itemChecked", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setItemControl(value: String): Self = this.set("itemControl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setItemDecorator(value: String): Self = this.set("itemDecorator", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setItemDisabled(value: String): Self = this.set("itemDisabled", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setItemHover(value: String): Self = this.set("itemHover", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setItemInline(value: String): Self = this.set("itemInline", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setItemNone(value: String): Self = this.set("itemNone", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setItemSelectAll(value: String): Self = this.set("itemSelectAll", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLabelChecked(value: String): Self = this.set("labelChecked", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMaterialDecorator(value: String): Self = this.set("materialDecorator", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOther(value: String): Self = this.set("other", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -10,9 +10,9 @@ express.js middleware for flatiron/winston
 | ------------------ | :-------------: |
 | Full name          | express-winston |
 | Keywords           | winston, flatiron, logging, express, log, error, handler, middleware, colors |
-| # releases         | 14 |
-| # dependents       | 175 |
-| # downloads        | 5357364 |
+| # releases         | 13 |
+| # dependents       | 193 |
+| # downloads        | 7792107 |
 | # stars            | 20 |
 
 ## Links

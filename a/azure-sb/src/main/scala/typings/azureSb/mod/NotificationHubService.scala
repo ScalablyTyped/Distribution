@@ -3,7 +3,7 @@ package typings.azureSb.mod
 import typings.azureSb.notificationhubserviceMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-sb", "NotificationHubService")
 @js.native
@@ -15,4 +15,3 @@ class NotificationHubService protected () extends ^ {
     sharedAccessKeyValue: String
   ) = this()
 }
-

@@ -3,11 +3,12 @@ package typings.samchon
 import typings.samchon.icasegeneratorMod.ICaseGenerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/library/case_generators/RepeatedPermutation", JSImport.Namespace)
 @js.native
 object repeatedPermutationMod extends js.Object {
+  
   @js.native
   class RepeatedPermutation protected () extends ICaseGenerator {
     /**
@@ -17,46 +18,35 @@ object repeatedPermutationMod extends js.Object {
       * @param r Size of elements of each case.
       */
     def this(n: Double, r: Double) = this()
+    
     /**
       * @hidden
       */
     var divider_array: js.Any = js.native
-    /**
-      * @hidden
-      */
-    var n_ : js.Any = js.native
-    /**
-      * @hidden
-      */
-    var r_ : js.Any = js.native
-    /**
-      * @hidden
-      */
-    var size_ : js.Any = js.native
-    /**
-      * Get index'th case.
-      *
-      * @param index Index number
-      * @return The row of the index'th in combined permuation case
-      */
-    /* CompleteClass */
-    override def at(index: Double): js.Array[Double] = js.native
+    
     /**
       * Get N, number of candidates.
       */
     def n(): Double = js.native
+    
+    /**
+      * @hidden
+      */
+    var n_ : js.Any = js.native
+    
     /**
       * Get R, number of elements for each case.
       */
     def r(): Double = js.native
+    
     /**
-      * Get size of all cases.
-      *
-      * @return Get a number of the all cases.
+      * @hidden
       */
-    /* CompleteClass */
-    override def size(): Double = js.native
+    var r_ : js.Any = js.native
+    
+    /**
+      * @hidden
+      */
+    var size_ : js.Any = js.native
   }
-  
 }
-

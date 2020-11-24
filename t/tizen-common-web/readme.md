@@ -12,7 +12,7 @@ This package is for supporting Tizen Web Device API as commonjs style.
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 122 |
+| # downloads        | 162 |
 | # stars            | 0 |
 
 ## Links

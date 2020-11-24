@@ -4,13 +4,15 @@ import typings.qunitDom.assertionsMod.default
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   trait Assert extends js.Object {
+    
     def dom(): default = js.native
     def dom(target: js.UndefOr[scala.Nothing], rootElement: Element): default = js.native
     def dom(target: String): default = js.native
@@ -19,6 +21,4 @@ object global extends js.Object {
     def dom(target: Element): default = js.native
     def dom(target: Element, rootElement: Element): default = js.native
   }
-  
 }
-

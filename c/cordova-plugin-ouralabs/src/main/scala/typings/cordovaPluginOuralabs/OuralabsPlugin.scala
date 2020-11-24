@@ -3,18 +3,21 @@ package typings.cordovaPluginOuralabs
 import typings.cordovaPluginOuralabs.anon.DEBUG
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("OuralabsPlugin")
 @js.native
 object OuralabsPlugin extends js.Object {
+  
   @js.native
   trait OuralabsStatic extends js.Object {
+    
     /**
       * Log levels designate the severity of the log; used with the log() function.
       * Log levels are ordered from least severe to most severe.
       */
     var LogLevel: DEBUG = js.native
+    
     /**
       * Initialize the Ourlabs plugin with the given channel ID string value.
       * You can obtain your channel ID from the Ouralabs dashboard.
@@ -35,6 +38,7 @@ object OuralabsPlugin extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
+    
     /**
       * Logs a message with the given information.
       *
@@ -93,6 +97,7 @@ object OuralabsPlugin extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
+    
     /**
       * Logs a log message of level DEBUG with the given information.
       *
@@ -139,6 +144,7 @@ object OuralabsPlugin extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
+    
     /**
       * Logs a log message of level ERROR with the given information.
       *
@@ -185,6 +191,7 @@ object OuralabsPlugin extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
+    
     /**
       * Logs a log message of level FATAL with the given information.
       *
@@ -231,6 +238,7 @@ object OuralabsPlugin extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
+    
     /**
       * Logs a log message of level INFO with the given information.
       *
@@ -277,6 +285,7 @@ object OuralabsPlugin extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
+    
     /**
       * Logs a log message of level TRACE with the given information.
       *
@@ -323,6 +332,7 @@ object OuralabsPlugin extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
+    
     /**
       * Logs a log message of level WARN with the given information.
       *
@@ -369,6 +379,7 @@ object OuralabsPlugin extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
+    
     /**
       * Allows setting of the three arbitrary attribute values that are stored with the device information.
       *
@@ -541,6 +552,7 @@ object OuralabsPlugin extends js.Object {
       successCallback: js.Function0[Unit],
       errorCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
+    
     /**
       * Used to enable hooking of the browser's console logging functions (eg console.log,
       * console.error, etc) to ensure that these logs get logged via Ouralabs.
@@ -548,6 +560,7 @@ object OuralabsPlugin extends js.Object {
       * @param enable True to enable hooking of the console log functions, false to disable.
       */
     def setHookBrowserConsole(enable: Boolean): Unit = js.native
+    
     /**
       * Used to ensure values logged via the plugin are also displayed in the browser's console.
       *
@@ -555,6 +568,4 @@ object OuralabsPlugin extends js.Object {
       */
     def setLogToBrowserConsole(enable: Boolean): Unit = js.native
   }
-  
 }
-

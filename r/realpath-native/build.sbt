@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "realpath-native"
-version := "1.1.0-e741aa"
+version := "1.1.0-16b66a"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

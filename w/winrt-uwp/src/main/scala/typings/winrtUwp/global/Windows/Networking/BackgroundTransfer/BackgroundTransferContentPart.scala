@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Networking.BackgroundTransfer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a content part of a multi-part transfer request. Each BackgroundTransferContentPart object can represent either a single string of text content or a single file payload, but not both. */
 @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferContentPart")
@@ -22,4 +22,3 @@ class BackgroundTransferContentPart ()
     */
   def this(name: String, fileName: String) = this()
 }
-

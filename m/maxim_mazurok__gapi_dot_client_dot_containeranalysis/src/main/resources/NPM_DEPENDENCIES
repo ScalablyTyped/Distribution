@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@maxim_mazurok/gapi.client.containeranalysis" : "1.0.20201112"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@maxim_mazurok/gapi.client.containeranalysis" : "1.0.20201112"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

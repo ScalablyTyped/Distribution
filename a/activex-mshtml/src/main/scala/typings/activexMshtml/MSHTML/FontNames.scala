@@ -2,12 +2,14 @@ package typings.activexMshtml.MSHTML
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FontNames extends js.Object {
-  val Count: Double = js.native
+  
   def apply(pvarIndex: js.Any): String = js.native
+  
+  val Count: Double = js.native
+  
   def item(pvarIndex: js.Any): String = js.native
 }
-

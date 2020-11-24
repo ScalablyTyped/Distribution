@@ -7,7 +7,7 @@ import typings.bignumberJs.mod.BigNumber.RoundingMode
 import typings.bignumberJs.mod.BigNumber.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bignumber.js", "BigNumber")
 @js.native
@@ -110,8 +110,10 @@ class BigNumber_ protected () extends Instance {
     */
   def this(n: Value) = this()
   def this(n: Value, base: Double) = this()
+  
   /** Used internally to identify a BigNumber instance. */
   val _isBigNumber: `true` = js.native
+  
   /**
     * Returns a BigNumber whose value is the absolute value, i.e. the magnitude, of the value of this
     * BigNumber.
@@ -124,6 +126,7 @@ class BigNumber_ protected () extends Instance {
     * ```
     */
   def abs(): BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the absolute value, i.e. the magnitude, of the value of this
     * BigNumber.
@@ -136,6 +139,7 @@ class BigNumber_ protected () extends Instance {
     * ```
     */
   def absoluteValue(): BigNumber = js.native
+  
   /**
     *  Returns |                                                               |
     * :-------:|:--------------------------------------------------------------|
@@ -158,6 +162,7 @@ class BigNumber_ protected () extends Instance {
     */
   def comparedTo(n: Value): Double = js.native
   def comparedTo(n: Value, base: Double): Double = js.native
+  
   /**
     * Returns a BigNumber whose value is the value of this BigNumber rounded by rounding mode
     * `roundingMode` to a maximum of `decimalPlaces` decimal places.
@@ -191,6 +196,7 @@ class BigNumber_ protected () extends Instance {
   def decimalPlaces(): Double = js.native
   def decimalPlaces(decimalPlaces: Double): BigNumber = js.native
   def decimalPlaces(decimalPlaces: Double, roundingMode: RoundingMode): BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the value of this BigNumber divided by `n`, rounded
     * according to the current `DECIMAL_PLACES` and `ROUNDING_MODE` settings.
@@ -208,6 +214,7 @@ class BigNumber_ protected () extends Instance {
     */
   def div(n: Value): BigNumber = js.native
   def div(n: Value, base: Double): BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the value of this BigNumber divided by `n`, rounded
     * according to the current `DECIMAL_PLACES` and `ROUNDING_MODE` settings.
@@ -225,6 +232,7 @@ class BigNumber_ protected () extends Instance {
     */
   def dividedBy(n: Value): BigNumber = js.native
   def dividedBy(n: Value, base: Double): BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the integer part of dividing the value of this BigNumber by
     * `n`.
@@ -242,6 +250,7 @@ class BigNumber_ protected () extends Instance {
     */
   def dividedToIntegerBy(n: Value): BigNumber = js.native
   def dividedToIntegerBy(n: Value, base: Double): BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the value of this BigNumber rounded by rounding mode
     * `roundingMode` to a maximum of `decimalPlaces` decimal places.
@@ -275,6 +284,7 @@ class BigNumber_ protected () extends Instance {
   def dp(): Double = js.native
   def dp(decimalPlaces: Double): BigNumber = js.native
   def dp(decimalPlaces: Double, roundingMode: RoundingMode): BigNumber = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is equal to the value of `n`, otherwise returns
     * `false`.
@@ -297,6 +307,7 @@ class BigNumber_ protected () extends Instance {
     */
   def eq(n: Value): Boolean = js.native
   def eq(n: Value, base: Double): Boolean = js.native
+  
   def exponentiatedBy(n: Double): BigNumber = js.native
   def exponentiatedBy(n: Double, m: Value): BigNumber = js.native
   /**
@@ -332,6 +343,7 @@ class BigNumber_ protected () extends Instance {
     */
   def exponentiatedBy(n: Value): BigNumber = js.native
   def exponentiatedBy(n: Value, m: Value): BigNumber = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is greater than the value of `n`, otherwise
     * returns `false`.
@@ -349,6 +361,7 @@ class BigNumber_ protected () extends Instance {
     */
   def gt(n: Value): Boolean = js.native
   def gt(n: Value, base: Double): Boolean = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is greater than or equal to the value of `n`,
     * otherwise returns `false`.
@@ -366,6 +379,7 @@ class BigNumber_ protected () extends Instance {
     */
   def gte(n: Value): Boolean = js.native
   def gte(n: Value, base: Double): Boolean = js.native
+  
   /**
     * Returns a BigNumber whose value is the integer part of dividing the value of this BigNumber by
     * `n`.
@@ -383,6 +397,7 @@ class BigNumber_ protected () extends Instance {
     */
   def idiv(n: Value): BigNumber = js.native
   def idiv(n: Value, base: Double): BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the value of this BigNumber rounded to an integer using
     * rounding mode `rm`.
@@ -404,6 +419,7 @@ class BigNumber_ protected () extends Instance {
     */
   def integerValue(): BigNumber = js.native
   def integerValue(rm: RoundingMode): BigNumber = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is equal to the value of `n`, otherwise returns
     * `false`.
@@ -426,6 +442,7 @@ class BigNumber_ protected () extends Instance {
     */
   def isEqualTo(n: Value): Boolean = js.native
   def isEqualTo(n: Value, base: Double): Boolean = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is a finite number, otherwise returns `false`.
     *
@@ -439,6 +456,7 @@ class BigNumber_ protected () extends Instance {
     * ```
     */
   def isFinite(): Boolean = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is greater than the value of `n`, otherwise
     * returns `false`.
@@ -456,6 +474,7 @@ class BigNumber_ protected () extends Instance {
     */
   def isGreaterThan(n: Value): Boolean = js.native
   def isGreaterThan(n: Value, base: Double): Boolean = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is greater than or equal to the value of `n`,
     * otherwise returns `false`.
@@ -473,6 +492,7 @@ class BigNumber_ protected () extends Instance {
     */
   def isGreaterThanOrEqualTo(n: Value): Boolean = js.native
   def isGreaterThanOrEqualTo(n: Value, base: Double): Boolean = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is an integer, otherwise returns `false`.
     *
@@ -484,6 +504,7 @@ class BigNumber_ protected () extends Instance {
     * ```
     */
   def isInteger(): Boolean = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is less than the value of `n`, otherwise returns
     * `false`.
@@ -501,6 +522,7 @@ class BigNumber_ protected () extends Instance {
     */
   def isLessThan(n: Value): Boolean = js.native
   def isLessThan(n: Value, base: Double): Boolean = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is less than or equal to the value of `n`,
     * otherwise returns `false`.
@@ -518,6 +540,7 @@ class BigNumber_ protected () extends Instance {
     */
   def isLessThanOrEqualTo(n: Value): Boolean = js.native
   def isLessThanOrEqualTo(n: Value, base: Double): Boolean = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is `NaN`, otherwise returns `false`.
     *
@@ -529,6 +552,7 @@ class BigNumber_ protected () extends Instance {
     * ```
     */
   def isNaN(): Boolean = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is negative, otherwise returns `false`.
     *
@@ -540,6 +564,7 @@ class BigNumber_ protected () extends Instance {
     * ```
     */
   def isNegative(): Boolean = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is positive, otherwise returns `false`.
     *
@@ -551,6 +576,7 @@ class BigNumber_ protected () extends Instance {
     * ```
     */
   def isPositive(): Boolean = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is zero or minus zero, otherwise returns `false`.
     *
@@ -560,6 +586,7 @@ class BigNumber_ protected () extends Instance {
     * ```
     */
   def isZero(): Boolean = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is less than the value of `n`, otherwise returns
     * `false`.
@@ -577,6 +604,7 @@ class BigNumber_ protected () extends Instance {
     */
   def lt(n: Value): Boolean = js.native
   def lt(n: Value, base: Double): Boolean = js.native
+  
   /**
     * Returns `true` if the value of this BigNumber is less than or equal to the value of `n`,
     * otherwise returns `false`.
@@ -594,6 +622,7 @@ class BigNumber_ protected () extends Instance {
     */
   def lte(n: Value): Boolean = js.native
   def lte(n: Value, base: Double): Boolean = js.native
+  
   /**
     * Returns a BigNumber whose value is the value of this BigNumber minus `n`.
     *
@@ -611,6 +640,7 @@ class BigNumber_ protected () extends Instance {
     */
   def minus(n: Value): BigNumber = js.native
   def minus(n: Value, base: Double): BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the value of this BigNumber modulo `n`, i.e. the integer
     * remainder of dividing this BigNumber by `n`.
@@ -637,6 +667,7 @@ class BigNumber_ protected () extends Instance {
     */
   def mod(n: Value): BigNumber = js.native
   def mod(n: Value, base: Double): BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the value of this BigNumber modulo `n`, i.e. the integer
     * remainder of dividing this BigNumber by `n`.
@@ -663,6 +694,7 @@ class BigNumber_ protected () extends Instance {
     */
   def modulo(n: Value): BigNumber = js.native
   def modulo(n: Value, base: Double): BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the value of this BigNumber multiplied by `n`.
     *
@@ -681,6 +713,7 @@ class BigNumber_ protected () extends Instance {
     */
   def multipliedBy(n: Value): BigNumber = js.native
   def multipliedBy(n: Value, base: Double): BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the value of this BigNumber negated, i.e. multiplied by -1.
     *
@@ -692,6 +725,7 @@ class BigNumber_ protected () extends Instance {
     * ```
     */
   def negated(): BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the value of this BigNumber plus `n`.
     *
@@ -701,7 +735,7 @@ class BigNumber_ protected () extends Instance {
     * 0.1 + 0.2                       // 0.30000000000000004
     * x = new BigNumber(0.1)
     * y = x.plus(0.2)                 // '0.3'
-    * BigNumber(0.7).plus(x).plus(y)  // '1'
+    * BigNumber(0.7).plus(x).plus(y)  // '1.1'
     * x.plus('0.1', 8)                // '0.225'
     * ```
     *
@@ -710,6 +744,7 @@ class BigNumber_ protected () extends Instance {
     */
   def plus(n: Value): BigNumber = js.native
   def plus(n: Value, base: Double): BigNumber = js.native
+  
   def pow(n: Double): BigNumber = js.native
   def pow(n: Double, m: Value): BigNumber = js.native
   /**
@@ -745,6 +780,7 @@ class BigNumber_ protected () extends Instance {
     */
   def pow(n: Value): BigNumber = js.native
   def pow(n: Value, m: Value): BigNumber = js.native
+  
   /**
     * Returns the number of significant digits of the value of this BigNumber, or `null` if the value
     * of this BigNumber is ±`Infinity` or `NaN`.
@@ -788,6 +824,7 @@ class BigNumber_ protected () extends Instance {
     */
   def precision(significantDigits: Double): BigNumber = js.native
   def precision(significantDigits: Double, roundingMode: RoundingMode): BigNumber = js.native
+  
   /**
     * Returns the number of significant digits of the value of this BigNumber,
     * or `null` if the value of this BigNumber is ±`Infinity` or `NaN`.
@@ -832,6 +869,7 @@ class BigNumber_ protected () extends Instance {
     */
   def sd(significantDigits: Double): BigNumber = js.native
   def sd(significantDigits: Double, roundingMode: RoundingMode): BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the value of this BigNumber shifted by `n` places.
     *
@@ -851,6 +889,7 @@ class BigNumber_ protected () extends Instance {
     * @param n The shift value, integer, -9007199254740991 to 9007199254740991.
     */
   def shiftedBy(n: Double): BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the square root of the value of this BigNumber, rounded
     * according to the current `DECIMAL_PLACES` and `ROUNDING_MODE` settings.
@@ -866,6 +905,7 @@ class BigNumber_ protected () extends Instance {
     * ```
     */
   def sqrt(): BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the square root of the value of this BigNumber, rounded
     * according to the current `DECIMAL_PLACES` and `ROUNDING_MODE` settings.
@@ -881,6 +921,7 @@ class BigNumber_ protected () extends Instance {
     * ```
     */
   def squareRoot(): BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the value of this BigNumber multiplied by `n`.
     *
@@ -899,6 +940,7 @@ class BigNumber_ protected () extends Instance {
     */
   def times(n: Value): BigNumber = js.native
   def times(n: Value, base: Double): BigNumber = js.native
+  
   def toExponential(): String = js.native
   /**
     * Returns a string representing the value of this BigNumber in exponential notation rounded using
@@ -935,6 +977,7 @@ class BigNumber_ protected () extends Instance {
     */
   def toExponential(decimalPlaces: Double): String = js.native
   def toExponential(decimalPlaces: Double, roundingMode: RoundingMode): String = js.native
+  
   def toFixed(): String = js.native
   /**
     * Returns a string representing the value of this BigNumber in normal (fixed-point) notation
@@ -973,6 +1016,7 @@ class BigNumber_ protected () extends Instance {
     */
   def toFixed(decimalPlaces: Double): String = js.native
   def toFixed(decimalPlaces: Double, roundingMode: RoundingMode): String = js.native
+  
   def toFormat(): String = js.native
   def toFormat(decimalPlaces: Double): String = js.native
   def toFormat(decimalPlaces: Double, format: Format): String = js.native
@@ -1037,6 +1081,7 @@ class BigNumber_ protected () extends Instance {
   def toFormat(decimalPlaces: Double, roundingMode: RoundingMode): String = js.native
   def toFormat(decimalPlaces: Double, roundingMode: RoundingMode, format: Format): String = js.native
   def toFormat(format: Format): String = js.native
+  
   /**
     * Returns an array of two BigNumbers representing the value of this BigNumber as a simple
     * fraction with an integer numerator and an integer denominator.
@@ -1063,8 +1108,10 @@ class BigNumber_ protected () extends Instance {
     */
   def toFraction(): js.Tuple2[BigNumber, BigNumber] = js.native
   def toFraction(max_denominator: Value): js.Tuple2[BigNumber, BigNumber] = js.native
+  
   /** As `valueOf`. */
   def toJSON(): String = js.native
+  
   /**
     * Returns the value of this BigNumber as a JavaScript primitive number.
     *
@@ -1084,6 +1131,7 @@ class BigNumber_ protected () extends Instance {
     * ```
     */
   def toNumber(): Double = js.native
+  
   def toPrecision(): String = js.native
   /**
     * Returns a string representing the value of this BigNumber rounded to `significantDigits`
@@ -1117,6 +1165,6 @@ class BigNumber_ protected () extends Instance {
     */
   def toPrecision(significantDigits: Double): String = js.native
   def toPrecision(significantDigits: Double, roundingMode: RoundingMode): String = js.native
+  
   def toString(base: Double): String = js.native
 }
-

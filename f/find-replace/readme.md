@@ -11,8 +11,8 @@ Replace or remove multiple items in an array.
 | Full name          | find-replace |
 | Keywords           | find, replace, array, remove, splice |
 | # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 18881201 |
+| # dependents       | 6 |
+| # downloads        | 21206014 |
 | # stars            | 1 |
 
 ## Links

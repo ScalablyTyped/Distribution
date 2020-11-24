@@ -12,7 +12,7 @@ JUI grid can handle millions of data, and can display the data in a hierarchical
 | Keywords           | HTML5, CSS, JS, JavaScript, SVG, Grid, Framework, bootstrap, Web Development, free, MIT |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 281 |
+| # downloads        | 521 |
 | # stars            | 0 |
 
 ## Links

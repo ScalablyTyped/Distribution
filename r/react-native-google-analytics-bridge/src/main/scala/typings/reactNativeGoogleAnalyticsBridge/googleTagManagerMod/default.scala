@@ -3,7 +3,7 @@ package typings.reactNativeGoogleAnalyticsBridge.googleTagManagerMod
 import typings.reactNativeGoogleAnalyticsBridge.dataLayerEventMod.DataLayerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Can only be used with one container. All functions returns a Promise.
@@ -18,11 +18,11 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-google-analytics-bridge/dist/GoogleTagManager", JSImport.Default)
 @js.native
 class default () extends GoogleTagManager
-
 /* static members */
 @JSImport("react-native-google-analytics-bridge/dist/GoogleTagManager", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * Retrieves a boolean value with the given key from the opened container.
     * @example GoogleTagManager.boolForKey("key").then(val => console.log(val));
@@ -30,6 +30,7 @@ object default extends js.Object {
     * @returns {Promise<boolean>}
     */
   def boolForKey(key: String): js.Promise[Boolean] = js.native
+  
   /**
     * Retrieves a number with the given key from the opened container.
     * @example GoogleTagManager.doubleForKey("key").then(val => console.log(val));
@@ -37,6 +38,7 @@ object default extends js.Object {
     * @returns {Promise<number>}
     */
   def doubleForKey(key: js.Any): js.Promise[Double] = js.native
+  
   /**
     * Call once to open the container for all subsequent static calls.
     * @example
@@ -45,6 +47,7 @@ object default extends js.Object {
     * @returns {Promise<boolean>}
     */
   def openContainerWithId(containerId: String): js.Promise[Boolean] = js.native
+  
   /**
     * Push a datalayer event for Google Analytics through Google Tag Manager. The event must have at least one key "event" with event name.
     * @example
@@ -56,6 +59,7 @@ object default extends js.Object {
     * @returns {Promise<boolean>}
     */
   def pushDataLayerEvent(event: DataLayerEvent): js.Promise[Boolean] = js.native
+  
   /**
     * Refreshes the GTM container.
     * According to Tag Manager documentations for Android can be called once every 15 minutes.
@@ -65,17 +69,20 @@ object default extends js.Object {
     * @returns {Promise<boolean>}
     */
   def refreshContainer(): js.Promise[Boolean] = js.native
+  
   /**
     * Register Function Call tag handler
     * @param {String} functionName
     * @param {Function} handler
     */
   def registerFunctionCallTagHandler(functionName: js.Any, handler: js.Any): js.Promise[Boolean] = js.native
+  
   /**
     * Sets logger to verbose, default is warning
     * @param {boolean} enabled
     */
   def setVerboseLoggingEnabled(enabled: Boolean): js.Promise[Boolean] = js.native
+  
   /**
     * Retrieves a string with the given key from the opened container.
     * @example GoogleTagManager.stringForKey("key").then(val => console.log(val));
@@ -84,4 +91,3 @@ object default extends js.Object {
     */
   def stringForKey(key: String): js.Promise[String] = js.native
 }
-

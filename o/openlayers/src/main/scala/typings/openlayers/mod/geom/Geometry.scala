@@ -6,7 +6,7 @@ import typings.openlayers.mod.Object
 import typings.openlayers.mod.ProjectionLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -33,6 +33,7 @@ import scala.scalajs.js.annotation._
   * @api stable
   */
 class Geometry () extends Object {
+  
   /**
     * Return the closest point of the geometry to the passed point as
     * {@link ol.Coordinate coordinate}.
@@ -43,6 +44,7 @@ class Geometry () extends Object {
     */
   def getClosestPoint(point: Coordinate_): Coordinate_ = js.native
   def getClosestPoint(point: Coordinate_, opt_closestPoint: Coordinate_): Coordinate_ = js.native
+  
   /**
     * Get the extent of the geometry.
     * @param opt_extent Extent.
@@ -51,11 +53,13 @@ class Geometry () extends Object {
     */
   def getExtent(): Extent_ = js.native
   def getExtent(opt_extent: Extent_): Extent_ = js.native
+  
   /**
     * Get the type of this geometry.
     * @return Geometry type.
     */
   def getType(): GeometryType = js.native
+  
   /**
     * Returns true if this geometry includes the specified coordinate. If the
     * coordinate is on the boundary of the geometry, returns false.
@@ -64,6 +68,7 @@ class Geometry () extends Object {
     * @api
     */
   def intersectsCoordinate(coordinate: Coordinate_): Boolean = js.native
+  
   /**
     * Rotate the geometry around a given coordinate. This modifies the geometry
     * coordinates in place.
@@ -72,6 +77,7 @@ class Geometry () extends Object {
     * @api
     */
   def rotate(angle: Double, anchor: Coordinate_): Unit = js.native
+  
   /**
     * Scale the geometry (with an optional origin).  This modifies the geometry
     * coordinates in place.
@@ -86,6 +92,7 @@ class Geometry () extends Object {
   def scale(sx: Double, opt_sy: js.UndefOr[scala.Nothing], opt_anchor: Coordinate_): Unit = js.native
   def scale(sx: Double, opt_sy: Double): Unit = js.native
   def scale(sx: Double, opt_sy: Double, opt_anchor: Coordinate_): Unit = js.native
+  
   /**
     * Create a simplified version of this geometry.  For linestrings, this uses
     * the the {@link
@@ -98,6 +105,7 @@ class Geometry () extends Object {
     * @api
     */
   def simplify(tolerance: Double): Geometry = js.native
+  
   /**
     * Transform each coordinate of the geometry from one coordinate reference
     * system to another. The geometry is modified in place.
@@ -115,4 +123,3 @@ class Geometry () extends Object {
     */
   def transform(source: ProjectionLike, destination: ProjectionLike): Geometry = js.native
 }
-

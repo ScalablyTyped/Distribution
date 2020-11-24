@@ -2,7 +2,7 @@ package typings.fineUploader.azureMod.azure
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fine-uploader/lib/azure", "azure.FineUploaderBasic")
 @js.native
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 class FineUploaderBasic ()
   extends typings.fineUploader.coreMod.FineUploaderBasic {
   def this(fineuploaderOptions: AzureCoreOptions) = this()
+  
   /**
     * Retrieve the blob name with the associated ID
     *
@@ -19,6 +20,7 @@ class FineUploaderBasic ()
     * @returns string : The blob name associated with the file ID
     */
   def getBlobName(fileId: Double): String = js.native
+  
   /**
     * Modify the endpoint that Fine Uploader should POST to when a file has been successfully uploaded to Azure Blob Storage.
     *
@@ -27,6 +29,7 @@ class FineUploaderBasic ()
     */
   def setUploadSuccessEndpoint(endpoint: String): Unit = js.native
   def setUploadSuccessEndpoint(endpoint: String, id: Double): Unit = js.native
+  
   /**
     * Set additional parameters for the upload success request.
     * ###Note:
@@ -38,4 +41,3 @@ class FineUploaderBasic ()
   def setUploadSuccessParams(newParams: js.Any): Unit = js.native
   def setUploadSuccessParams(newParams: js.Any, id: Double): Unit = js.native
 }
-

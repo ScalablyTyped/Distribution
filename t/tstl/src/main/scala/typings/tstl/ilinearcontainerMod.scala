@@ -7,15 +7,17 @@ import typings.tstl.ilinearcontainerMod.ILinearContainer.ReverseIterator
 import typings.tstl.ilinearcontainerbaseMod.ILinearContainerBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/base/container/ILinearContainer", JSImport.Namespace)
 @js.native
 object ilinearcontainerMod extends js.Object {
+  
   @js.native
   trait ILinearContainer[T /* <: PElem */, SourceT /* <: ILinearContainer[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */, PElem]
     extends ILinearContainerBase[T, SourceT, IteratorT, ReverseT, PElem]
        with IFront[T] {
+    
     /**
       * Range Assigner.
       *
@@ -24,6 +26,7 @@ object ilinearcontainerMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def assign[InputIterator /* <: IForwardIterator[PElem, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
+    
     /**
       * Get the last element.
       *
@@ -36,11 +39,13 @@ object ilinearcontainerMod extends js.Object {
       * @param val The value to change.
       */
     def back(`val`: T): Unit = js.native
+    
     /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def clear(): Unit = js.native
+    
     /**
       * Erase elements in range.
       *
@@ -58,6 +63,7 @@ object ilinearcontainerMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def erase(pos: IteratorT): IteratorT = js.native
+    
     /**
       * Swap elements.
       *
@@ -65,6 +71,7 @@ object ilinearcontainerMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def swap(obj: SourceT): Unit = js.native
+    
     /**
       * Native function for `JSON.stringify()`.
       *
@@ -73,15 +80,16 @@ object ilinearcontainerMod extends js.Object {
     /* InferMemberOverrides */
     override def toJSON(): js.Array[T] = js.native
   }
-  
   @js.native
   object ILinearContainer extends js.Object {
+    
     /**
       * Iterator of {@link ILinearContainer}
       *
       * @author Jenogho Nam <http://samchon.org>
       */
     type Iterator[T /* <: ElemT */, SourceT /* <: ILinearContainer[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias tstl.tstl/base/container/ILinearContainer.ILinearContainer.Iterator<T, SourceT, IteratorT, ReverseT, T> */ js.Object */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */, ElemT] = typings.tstl.icontainerMod.IContainer.Iterator[T, SourceT, IteratorT, ReverseT, ElemT]
+    
     /**
       * Reverse iterator of {@link ILinearContainer}
       *
@@ -89,6 +97,4 @@ object ilinearcontainerMod extends js.Object {
       */
     type ReverseIterator[T /* <: ElemT */, SourceT /* <: ILinearContainer[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias tstl.tstl/base/container/ILinearContainer.ILinearContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT, T> */ js.Object */, ElemT] = typings.tstl.icontainerMod.IContainer.ReverseIterator[T, SourceT, IteratorT, ReverseT, ElemT]
   }
-  
 }
-

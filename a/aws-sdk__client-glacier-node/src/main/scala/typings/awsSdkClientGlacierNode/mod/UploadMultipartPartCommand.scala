@@ -4,7 +4,7 @@ import typings.awsSdkClientGlacierNode.typesUploadMultipartPartInputMod.UploadMu
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-glacier-node", "UploadMultipartPartCommand")
 @js.native
@@ -12,4 +12,3 @@ class UploadMultipartPartCommand protected ()
   extends typings.awsSdkClientGlacierNode.uploadMultipartPartCommandMod.UploadMultipartPartCommand {
   def this(input: UploadMultipartPartInput[Readable]) = this()
 }
-

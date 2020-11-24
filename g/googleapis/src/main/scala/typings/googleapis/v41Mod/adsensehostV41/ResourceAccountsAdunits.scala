@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsensehost/v4.1", "adsensehost_v4_1.Resource$Accounts$Adunits")
 @js.native
 class ResourceAccountsAdunits protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adsensehost.accounts.adunits.delete
     * @desc Delete the specified ad unit from the specified publisher AdSense
@@ -44,6 +46,7 @@ class ResourceAccountsAdunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdUnit]
   ): Unit = js.native
+  
   /**
     * adsensehost.accounts.adunits.get
     * @desc Get the specified host ad unit in this AdSense account.
@@ -74,6 +77,7 @@ class ResourceAccountsAdunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdUnit]
   ): Unit = js.native
+  
   /**
     * adsensehost.accounts.adunits.getAdCode
     * @desc Get ad code for the specified ad unit, attaching the specified host
@@ -106,6 +110,7 @@ class ResourceAccountsAdunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdCode]
   ): Unit = js.native
+  
   /**
     * adsensehost.accounts.adunits.insert
     * @desc Insert the supplied ad unit into the specified publisher AdSense
@@ -137,6 +142,7 @@ class ResourceAccountsAdunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdUnit]
   ): Unit = js.native
+  
   /**
     * adsensehost.accounts.adunits.list
     * @desc List all ad units in the specified publisher's AdSense account.
@@ -169,6 +175,7 @@ class ResourceAccountsAdunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdUnits]
   ): Unit = js.native
+  
   /**
     * adsensehost.accounts.adunits.patch
     * @desc Update the supplied ad unit in the specified publisher AdSense
@@ -201,6 +208,7 @@ class ResourceAccountsAdunits protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdUnit]
   ): Unit = js.native
+  
   /**
     * adsensehost.accounts.adunits.update
     * @desc Update the supplied ad unit in the specified publisher AdSense
@@ -233,4 +241,3 @@ class ResourceAccountsAdunits protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAdUnit]
   ): Unit = js.native
 }
-

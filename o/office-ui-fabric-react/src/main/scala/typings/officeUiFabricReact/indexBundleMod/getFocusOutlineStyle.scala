@@ -1,14 +1,15 @@
 package typings.officeUiFabricReact.indexBundleMod
 
-import typings.uifabricMergeStyles.istyleMod.IRawStyle
-import typings.uifabricStyling.ithemeMod.ITheme
+import typings.fluentuiTheme.ithemeMod.ITheme
+import typings.uifabricMergeStyles.irawstyleMod.IRawStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "getFocusOutlineStyle")
 @js.native
 object getFocusOutlineStyle extends js.Object {
+  
   def apply(theme: ITheme): IRawStyle = js.native
   def apply(theme: ITheme, inset: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], color: String): IRawStyle = js.native
   def apply(theme: ITheme, inset: js.UndefOr[scala.Nothing], width: Double): IRawStyle = js.native
@@ -18,4 +19,3 @@ object getFocusOutlineStyle extends js.Object {
   def apply(theme: ITheme, inset: Double, width: Double): IRawStyle = js.native
   def apply(theme: ITheme, inset: Double, width: Double, color: String): IRawStyle = js.native
 }
-

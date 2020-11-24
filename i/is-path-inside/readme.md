@@ -10,9 +10,9 @@ Check if a path is inside another path
 | ------------------ | :-------------: |
 | Full name          | is-path-inside |
 | Keywords           | path, inside, folder, directory, dir, file, resolve |
-| # releases         | 6 |
-| # dependents       | 60 |
-| # downloads        | 398786004 |
+| # releases         | 5 |
+| # dependents       | 83 |
+| # downloads        | 651871462 |
 | # stars            | 2 |
 
 ## Links

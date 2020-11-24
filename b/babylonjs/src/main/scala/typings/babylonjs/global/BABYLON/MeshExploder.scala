@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.MeshExploder")
 @js.native
@@ -16,4 +16,3 @@ class MeshExploder protected ()
   def this(meshes: js.Array[typings.babylonjs.BABYLON.Mesh]) = this()
   def this(meshes: js.Array[typings.babylonjs.BABYLON.Mesh], centerMesh: typings.babylonjs.BABYLON.Mesh) = this()
 }
-

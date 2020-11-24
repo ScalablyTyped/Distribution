@@ -11,8 +11,8 @@ Pretty prints and minifies XML/JSON/SQL/CSS
 | Full name          | vkbeautify |
 | Keywords           | minify, beautify, pretty, print, pretty-print, json, xml, sql, css |
 | # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 284141 |
+| # dependents       | 23 |
+| # downloads        | 593155 |
 | # stars            | 0 |
 
 ## Links

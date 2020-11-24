@@ -4,7 +4,7 @@ import typings.phaser.Phaser.Types.GameObjects.BitmapText.DisplayCallback
 import typings.phaser.Phaser.Types.GameObjects.BitmapText.DisplayCallbackConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * BitmapText objects work by taking a texture file and an XML or JSON file that describes the font structure.
@@ -35,6 +35,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DynamicBitmapText extends BitmapText {
+  
   /**
     * The data object that is populated during rendering, then passed to the displayCallback.
     * You should modify this object then return it back from the callback. It's updated values
@@ -44,31 +45,37 @@ trait DynamicBitmapText extends BitmapText {
     * should shallow copy it, as it's updated and re-used for every glyph in the text.
     */
   var callbackData: DisplayCallbackConfig = js.native
+  
   /**
     * The crop height of the Bitmap Text.
     */
   var cropHeight: Double = js.native
+  
   /**
     * The crop width of the Bitmap Text.
     */
   var cropWidth: Double = js.native
+  
+  /**
+    * A callback that alters how each character of the Bitmap Text is rendered.
+    */
+  def displayCallback(display: DisplayCallbackConfig): Unit = js.native
   /**
     * A callback that alters how each character of the Bitmap Text is rendered.
     */
   @JSName("displayCallback")
   var displayCallback_Original: DisplayCallback = js.native
+  
   /**
     * The horizontal scroll position of the Bitmap Text.
     */
   var scrollX: Double = js.native
+  
   /**
     * The vertical scroll position of the Bitmap Text.
     */
   var scrollY: Double = js.native
-  /**
-    * A callback that alters how each character of the Bitmap Text is rendered.
-    */
-  def displayCallback(display: DisplayCallbackConfig): Unit = js.native
+  
   /**
     * Set a callback that alters how each character of the Bitmap Text is rendered.
     * 
@@ -80,16 +87,19 @@ trait DynamicBitmapText extends BitmapText {
     * @param callback The display callback to set.
     */
   def setDisplayCallback(callback: DisplayCallback): this.type = js.native
+  
   /**
     * Set the horizontal scroll position of this Bitmap Text.
     * @param value The horizontal scroll position to set.
     */
   def setScrollX(value: Double): this.type = js.native
+  
   /**
     * Set the vertical scroll position of this Bitmap Text.
     * @param value The vertical scroll position to set.
     */
   def setScrollY(value: Double): this.type = js.native
+  
   /**
     * Set the crop size of this Bitmap Text.
     * @param width The width of the crop.
@@ -97,4 +107,3 @@ trait DynamicBitmapText extends BitmapText {
     */
   def setSize(width: Double, height: Double): this.type = js.native
 }
-

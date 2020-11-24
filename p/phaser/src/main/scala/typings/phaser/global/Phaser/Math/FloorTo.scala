@@ -3,11 +3,12 @@ package typings.phaser.global.Phaser.Math
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Math.FloorTo")
 @js.native
 object FloorTo extends js.Object {
+  
   /**
     * Floors to some place comparative to a `base`, default is 10 for decimal place.
     * 
@@ -21,4 +22,3 @@ object FloorTo extends js.Object {
   def apply(value: Double, place: integer): Double = js.native
   def apply(value: Double, place: integer, base: integer): Double = js.native
 }
-

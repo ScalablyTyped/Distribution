@@ -3,7 +3,7 @@ package typings.googleDriveRealtimeApi.gapi.drive.realtime
 import org.scalablytyped.runtime.Instantiable11
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ValuesRemovedEvent[V]
@@ -22,11 +22,13 @@ trait ValuesRemovedEvent[V]
       /* movedToIndex */ Double, 
       ValuesRemovedEvent[V]
     ] {
+  
   // The index of the first removed value.
   var index: Double = js.native
+  
   // The index in the collaborative list that the values were moved to, or null if this delete is not the result of a move operation.
   var movedToIndex: Double = js.native
+  
   // The collaborative list that the values were moved to, or null if this delete is not the result of a move operation.
   var movedToList: CollaborativeList[V] = js.native
 }
-

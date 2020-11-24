@@ -3,11 +3,12 @@ package typings.stropheJs.mod.Strophe
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strophe.js", "Strophe.copyElement")
 @js.native
 object copyElement extends js.Object {
+  
   /** Function: copyElement
     *  Copy an XML DOM element.
     *
@@ -22,4 +23,3 @@ object copyElement extends js.Object {
     */
   def apply(elem: Element): Element = js.native
 }
-

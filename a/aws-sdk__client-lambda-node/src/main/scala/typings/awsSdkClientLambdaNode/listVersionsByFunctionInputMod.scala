@@ -1,13 +1,12 @@
 package typings.awsSdkClientLambdaNode
 
-import typings.awsSdkTypes.protocolMod.Structure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-lambda-node/model/ListVersionsByFunctionInput", JSImport.Namespace)
 @js.native
 object listVersionsByFunctionInputMod extends js.Object {
-  val ListVersionsByFunctionInput: Structure = js.native
+  
+  val ListVersionsByFunctionInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }
-

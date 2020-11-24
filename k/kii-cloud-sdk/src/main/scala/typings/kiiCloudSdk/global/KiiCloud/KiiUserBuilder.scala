@@ -2,7 +2,7 @@ package typings.kiiCloudSdk.global.KiiCloud
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a KiiUser builder
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class KiiUserBuilder ()
   extends typings.kiiCloudSdk.KiiCloud.KiiUserBuilder
-
 /* static members */
 @JSGlobal("KiiCloud.KiiUserBuilder")
 @js.native
 object KiiUserBuilder extends js.Object {
+  
   /**
     * Create KiiUser builder with email address
     *
@@ -32,6 +32,7 @@ object KiiUserBuilder extends js.Object {
     *     proper format
     */
   def builderWithEmailAddress(emailAddress: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = js.native
+  
   /**
     * Create KiiUser builder with global phone number
     *
@@ -44,6 +45,7 @@ object KiiUserBuilder extends js.Object {
     * @throws If the phone number is not in the proper format
     */
   def builderWithGlobalPhoneNumber(phoneNumber: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = js.native
+  
   /**
     * Create a KiiUser builder with identifier.
     *
@@ -71,6 +73,7 @@ object KiiUserBuilder extends js.Object {
     *     proper format
     */
   def builderWithIdentifier(identifier: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = js.native
+  
   /**
     * Create KiiUser builder with local phone number
     *
@@ -89,6 +92,7 @@ object KiiUserBuilder extends js.Object {
     *     proper format
     */
   def builderWithLocalPhoneNumber(phoneNumber: String, country: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = js.native
+  
   /**
     * Create KiiUser builder with user name
     *
@@ -106,4 +110,3 @@ object KiiUserBuilder extends js.Object {
     */
   def builderWithUsername(username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = js.native
 }
-

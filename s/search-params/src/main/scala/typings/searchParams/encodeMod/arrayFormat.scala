@@ -2,7 +2,7 @@ package typings.searchParams.encodeMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.searchParams.searchParamsStrings.none
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.searchParams.searchParamsStrings.index
 */
 trait arrayFormat extends js.Object
-
 object arrayFormat {
+  
   @scala.inline
   def brackets: typings.searchParams.searchParamsStrings.brackets = "brackets".asInstanceOf[typings.searchParams.searchParamsStrings.brackets]
+  
   @scala.inline
   def index: typings.searchParams.searchParamsStrings.index = "index".asInstanceOf[typings.searchParams.searchParamsStrings.index]
+  
   @scala.inline
   def none: typings.searchParams.searchParamsStrings.none = "none".asInstanceOf[typings.searchParams.searchParamsStrings.none]
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Leaderboards")
 @js.native
 class ResourceLeaderboards protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * games.leaderboards.get
     * @desc Retrieves the metadata of the leaderboard with the given ID.
@@ -42,6 +44,7 @@ class ResourceLeaderboards protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLeaderboard]
   ): Unit = js.native
+  
   /**
     * games.leaderboards.list
     * @desc Lists all the leaderboard metadata for your application.
@@ -76,4 +79,3 @@ class ResourceLeaderboards protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLeaderboardListResponse]
   ): Unit = js.native
 }
-

@@ -10,7 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface provides access to a graphic device, such as a printer, or a screen device. Every canvas (
@@ -18,23 +18,27 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XGraphicDevice extends XInterface {
+  
   /**
     * Query the controller for multi buffering functionality on this graphic device.
     *
     * If there is no such functionality available, the NULL reference is returned.
     */
   val BufferController: XBufferController = js.native
+  
   /**
     * Query the color space interface for this graphic device.
     *
     * This is to be used when interpreting or setting device color values.
     */
   val DeviceColorSpace: XColorSpace = js.native
+  
   /**
     * Get a reference to this device's parametric polygon factory.
     * @returns a reference to this device's parametric polygon factory. Although it is possible to use parametric polygons on all canvases, regardless of the as
     */
   val ParametricPolyPolygonFactory: XMultiServiceFactory = js.native
+  
   /**
     * Query the physical resolution of the device in pixel per millimeter.
     *
@@ -42,6 +46,7 @@ trait XGraphicDevice extends XInterface {
     * the corresponding direction.
     */
   val PhysicalResolution: RealSize2D = js.native
+  
   /**
     * Query the physical dimensions of the device in millimeter.
     *
@@ -50,26 +55,31 @@ trait XGraphicDevice extends XInterface {
     * @see XBitmap.getSize()
     */
   val PhysicalSize: RealSize2D = js.native
+  
   /**
     * Create a bitmap with alpha channel whose memory layout and sample model is compatible to the graphic device.
     * @param size Size of the requested bitmap in pixel. Both components of the size must be greater than 0
     */
   def createCompatibleAlphaBitmap(size: IntegerSize2D): XBitmap = js.native
+  
   /**
     * Create a Bezier poly-polygon which can internally use device-optimized representations already.
     * @param points The points of the poly-polygon, in a separate array for every polygon.
     */
   def createCompatibleBezierPolyPolygon(points: SeqEquiv[SeqEquiv[RealBezierSegment2D]]): XBezierPolyPolygon2D = js.native
+  
   /**
     * Create a bitmap whose memory layout and sample model is compatible to the graphic device.
     * @param size Size of the requested bitmap in pixel. Both components of the size must be greater than 0
     */
   def createCompatibleBitmap(size: IntegerSize2D): XBitmap = js.native
+  
   /**
     * Create a line poly-polygon which can internally use device-optimized representations already.
     * @param points The points of the poly-polygon, in a separate array for every polygon.
     */
   def createCompatibleLinePolyPolygon(points: SeqEquiv[SeqEquiv[RealPoint2D]]): XLinePolyPolygon2D = js.native
+  
   /**
     * Create a volatile bitmap with alpha channel that is usable with this graphic device.
     *
@@ -79,6 +89,7 @@ trait XGraphicDevice extends XInterface {
     * @param size Size of the requested bitmap in pixel. Both components of the size must be greater than 0
     */
   def createVolatileAlphaBitmap(size: IntegerSize2D): XVolatileBitmap = js.native
+  
   /**
     * Create a volatile bitmap that is usable with this graphic device.
     *
@@ -88,25 +99,30 @@ trait XGraphicDevice extends XInterface {
     * @param size Size of the requested bitmap in pixel. Both components of the size must be greater than 0
     */
   def createVolatileBitmap(size: IntegerSize2D): XVolatileBitmap = js.native
+  
   /** Enter or leave the fullscreen mode, if possible. The return value denotes the success of the operation. */
   def enterFullScreenMode(bEnter: Boolean): Boolean = js.native
+  
   /**
     * Query the controller for multi buffering functionality on this graphic device.
     *
     * If there is no such functionality available, the NULL reference is returned.
     */
   def getBufferController(): XBufferController = js.native
+  
   /**
     * Query the color space interface for this graphic device.
     *
     * This is to be used when interpreting or setting device color values.
     */
   def getDeviceColorSpace(): XColorSpace = js.native
+  
   /**
     * Get a reference to this device's parametric polygon factory.
     * @returns a reference to this device's parametric polygon factory. Although it is possible to use parametric polygons on all canvases, regardless of the as
     */
   def getParametricPolyPolygonFactory(): XMultiServiceFactory = js.native
+  
   /**
     * Query the physical resolution of the device in pixel per millimeter.
     *
@@ -114,6 +130,7 @@ trait XGraphicDevice extends XInterface {
     * the corresponding direction.
     */
   def getPhysicalResolution(): RealSize2D = js.native
+  
   /**
     * Query the physical dimensions of the device in millimeter.
     *
@@ -122,11 +139,12 @@ trait XGraphicDevice extends XInterface {
     * @see XBitmap.getSize()
     */
   def getPhysicalSize(): RealSize2D = js.native
+  
   /** Tells whether this graphic device has a full screen mode, i.e. whether a window can cover the whole screen exclusively. */
   def hasFullScreenMode(): Boolean = js.native
 }
-
 object XGraphicDevice {
+  
   @scala.inline
   def apply(
     BufferController: XBufferController,
@@ -154,54 +172,74 @@ object XGraphicDevice {
     val __obj = js.Dynamic.literal(BufferController = BufferController.asInstanceOf[js.Any], DeviceColorSpace = DeviceColorSpace.asInstanceOf[js.Any], ParametricPolyPolygonFactory = ParametricPolyPolygonFactory.asInstanceOf[js.Any], PhysicalResolution = PhysicalResolution.asInstanceOf[js.Any], PhysicalSize = PhysicalSize.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), createCompatibleAlphaBitmap = js.Any.fromFunction1(createCompatibleAlphaBitmap), createCompatibleBezierPolyPolygon = js.Any.fromFunction1(createCompatibleBezierPolyPolygon), createCompatibleBitmap = js.Any.fromFunction1(createCompatibleBitmap), createCompatibleLinePolyPolygon = js.Any.fromFunction1(createCompatibleLinePolyPolygon), createVolatileAlphaBitmap = js.Any.fromFunction1(createVolatileAlphaBitmap), createVolatileBitmap = js.Any.fromFunction1(createVolatileBitmap), enterFullScreenMode = js.Any.fromFunction1(enterFullScreenMode), getBufferController = js.Any.fromFunction0(getBufferController), getDeviceColorSpace = js.Any.fromFunction0(getDeviceColorSpace), getParametricPolyPolygonFactory = js.Any.fromFunction0(getParametricPolyPolygonFactory), getPhysicalResolution = js.Any.fromFunction0(getPhysicalResolution), getPhysicalSize = js.Any.fromFunction0(getPhysicalSize), hasFullScreenMode = js.Any.fromFunction0(hasFullScreenMode), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XGraphicDevice]
   }
+  
   @scala.inline
   implicit class XGraphicDeviceOps[Self <: XGraphicDevice] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBufferController(value: XBufferController): Self = this.set("BufferController", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDeviceColorSpace(value: XColorSpace): Self = this.set("DeviceColorSpace", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParametricPolyPolygonFactory(value: XMultiServiceFactory): Self = this.set("ParametricPolyPolygonFactory", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPhysicalResolution(value: RealSize2D): Self = this.set("PhysicalResolution", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPhysicalSize(value: RealSize2D): Self = this.set("PhysicalSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCreateCompatibleAlphaBitmap(value: IntegerSize2D => XBitmap): Self = this.set("createCompatibleAlphaBitmap", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateCompatibleBezierPolyPolygon(value: SeqEquiv[SeqEquiv[RealBezierSegment2D]] => XBezierPolyPolygon2D): Self = this.set("createCompatibleBezierPolyPolygon", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateCompatibleBitmap(value: IntegerSize2D => XBitmap): Self = this.set("createCompatibleBitmap", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateCompatibleLinePolyPolygon(value: SeqEquiv[SeqEquiv[RealPoint2D]] => XLinePolyPolygon2D): Self = this.set("createCompatibleLinePolyPolygon", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateVolatileAlphaBitmap(value: IntegerSize2D => XVolatileBitmap): Self = this.set("createVolatileAlphaBitmap", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateVolatileBitmap(value: IntegerSize2D => XVolatileBitmap): Self = this.set("createVolatileBitmap", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setEnterFullScreenMode(value: Boolean => Boolean): Self = this.set("enterFullScreenMode", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetBufferController(value: () => XBufferController): Self = this.set("getBufferController", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetDeviceColorSpace(value: () => XColorSpace): Self = this.set("getDeviceColorSpace", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetParametricPolyPolygonFactory(value: () => XMultiServiceFactory): Self = this.set("getParametricPolyPolygonFactory", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetPhysicalResolution(value: () => RealSize2D): Self = this.set("getPhysicalResolution", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetPhysicalSize(value: () => RealSize2D): Self = this.set("getPhysicalSize", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setHasFullScreenMode(value: () => Boolean): Self = this.set("hasFullScreenMode", js.Any.fromFunction0(value))
   }
-  
 }
-

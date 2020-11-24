@@ -3,13 +3,14 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.EventTarget.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The button component for toggling and selecting descriptions
   */
 @js.native
 trait DescriptionsButton extends TextTrackButton {
+  
   /**
     * Handle text track change
     *
@@ -20,4 +21,3 @@ trait DescriptionsButton extends TextTrackButton {
     */
   def handleTracksChange(event: Event): Unit = js.native
 }
-

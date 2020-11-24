@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js", "VolumePanel")
 @js.native
@@ -27,4 +27,3 @@ Instantiable1[
       /* options */ typings.videoJs.mod.videojs.VolumePanel, 
       typings.videoJs.mod.videojs.VolumePanel
     ]
-

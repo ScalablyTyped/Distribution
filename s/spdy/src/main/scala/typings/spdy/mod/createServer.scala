@@ -2,11 +2,12 @@ package typings.spdy.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("spdy", "createServer")
 @js.native
 object createServer extends js.Object {
+  
   def apply(
     base: js.Any,
     options: ServerOptions,
@@ -32,4 +33,3 @@ object createServer extends js.Object {
     ]
   ): Server_ = js.native
 }
-

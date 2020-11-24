@@ -32,12 +32,11 @@ import typings.semanticUiSticky.semanticUiStickyStrings.silent
 import typings.semanticUiSticky.semanticUiStickyStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  @JSName("sticky")
-  var sticky_Original: Sticky = js.native
+  
   def sticky(): JQuery = js.native
   def sticky(behavior: setting, name: bottomOffset, value: js.UndefOr[scala.Nothing]): Double = js.native
   def sticky(behavior: setting, name: bottomOffset, value: Double): JQuery = js.native
@@ -90,6 +89,8 @@ trait JQuery extends js.Object {
   @JSName("sticky")
   def sticky_ErrorSettings(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
   @JSName("sticky")
+  var sticky_Original: Sticky = js.native
+  @JSName("sticky")
   def sticky_destroy(behavior: destroy): JQuery = js.native
   /**
     * recalculates offsets
@@ -99,4 +100,3 @@ trait JQuery extends js.Object {
   @JSName("sticky")
   def sticky_setting(behavior: setting, value: StickySettings): JQuery = js.native
 }
-

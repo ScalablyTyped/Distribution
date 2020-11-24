@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/doubleclicksearch/v2", "doubleclicksearch_v2.Resource$Reports")
 @js.native
 class ResourceReports protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * doubleclicksearch.reports.generate
     * @desc Generates and returns a report immediately.
@@ -41,6 +43,7 @@ class ResourceReports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReport]
   ): Unit = js.native
+  
   /**
     * doubleclicksearch.reports.get
     * @desc Polls for the status of a report request.
@@ -69,6 +72,7 @@ class ResourceReports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReport]
   ): Unit = js.native
+  
   /**
     * doubleclicksearch.reports.getFile
     * @desc Downloads a report file encoded in UTF-8.
@@ -94,6 +98,7 @@ class ResourceReports protected () extends js.Object {
   ): Unit = js.native
   def getFile(params: ParamsResourceReportsGetfile, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def getFile(params: ParamsResourceReportsGetfile, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * doubleclicksearch.reports.request
     * @desc Inserts a report request into the reporting system.
@@ -123,4 +128,3 @@ class ResourceReports protected () extends js.Object {
     callback: BodyResponseCallback[SchemaReport]
   ): Unit = js.native
 }
-

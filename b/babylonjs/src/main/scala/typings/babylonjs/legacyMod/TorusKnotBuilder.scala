@@ -3,17 +3,17 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.anon.Q
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "TorusKnotBuilder")
 @js.native
 class TorusKnotBuilder ()
   extends typings.babylonjs.indexMod.TorusKnotBuilder
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "TorusKnotBuilder")
 @js.native
 object TorusKnotBuilder extends js.Object {
+  
   /**
     * Creates a torus knot mesh
     * * The parameter `radius` sets the global radius size (float) of the torus knot (default 2)
@@ -31,4 +31,3 @@ object TorusKnotBuilder extends js.Object {
     */
   def CreateTorusKnot(name: String, options: Q, scene: js.Any): typings.babylonjs.meshMod.Mesh = js.native
 }
-

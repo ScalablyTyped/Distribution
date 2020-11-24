@@ -2,9 +2,10 @@ package typings.videoJs.mod.videojs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object Dom {
+  
   /**
     * The callback definition for toggleElClass.
     *

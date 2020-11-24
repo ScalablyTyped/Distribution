@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.rdf
 import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents an RDF named graph that is stored in an RDF {@link Repository} .
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XNamedGraph extends XURI {
+  
   /**
     * returns the name of the graph.
     *
@@ -25,6 +26,7 @@ trait XNamedGraph extends XURI {
     * @returns the name of the graph
     */
   val Name: XURI = js.native
+  
   /**
     * adds a RDF statement to the graph.
     *
@@ -38,12 +40,14 @@ trait XNamedGraph extends XURI {
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
   def addStatement(Subject: XResource, Predicate: XURI, Object: XNode): Unit = js.native
+  
   /**
     * removes all statements from the graph.
     * @throws com::sun::star::container::NoSuchElementException if this graph does not exist in the repository any more
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
   def clear(): Unit = js.native
+  
   /**
     * returns the name of the graph.
     *
@@ -51,6 +55,7 @@ trait XNamedGraph extends XURI {
     * @returns the name of the graph
     */
   def getName(): XURI = js.native
+  
   /**
     * gets matching RDF statements from a graph.
     *
@@ -67,6 +72,7 @@ trait XNamedGraph extends XURI {
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
   def getStatements(Subject: XResource, Predicate: XURI, Object: XNode): XEnumeration = js.native
+  
   /**
     * removes matching RDF statements from the graph.
     *
@@ -82,8 +88,8 @@ trait XNamedGraph extends XURI {
     */
   def removeStatements(Subject: XResource, Predicate: XURI, Object: XNode): Unit = js.native
 }
-
 object XNamedGraph {
+  
   @scala.inline
   def apply(
     LocalName: String,
@@ -99,30 +105,38 @@ object XNamedGraph {
     val __obj = js.Dynamic.literal(LocalName = LocalName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], StringValue = StringValue.asInstanceOf[js.Any], addStatement = js.Any.fromFunction3(addStatement), clear = js.Any.fromFunction0(clear), getName = js.Any.fromFunction0(getName), getStatements = js.Any.fromFunction3(getStatements), removeStatements = js.Any.fromFunction3(removeStatements))
     __obj.asInstanceOf[XNamedGraph]
   }
+  
   @scala.inline
   implicit class XNamedGraphOps[Self <: XNamedGraph] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setName(value: XURI): Self = this.set("Name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAddStatement(value: (XResource, XURI, XNode) => Unit): Self = this.set("addStatement", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetName(value: () => XURI): Self = this.set("getName", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetStatements(value: (XResource, XURI, XNode) => XEnumeration): Self = this.set("getStatements", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setRemoveStatements(value: (XResource, XURI, XNode) => Unit): Self = this.set("removeStatements", js.Any.fromFunction3(value))
   }
-  
 }
-

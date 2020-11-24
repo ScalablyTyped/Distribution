@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Channelbanners")
 @js.native
 class ResourceChannelbanners protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.channelBanners.insert
     * @desc Uploads a channel banner image to YouTube. This method represents
@@ -58,4 +60,3 @@ class ResourceChannelbanners protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChannelBannerResource]
   ): Unit = js.native
 }
-

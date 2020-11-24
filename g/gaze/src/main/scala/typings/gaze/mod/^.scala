@@ -3,11 +3,12 @@ package typings.gaze.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gaze", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(patterns: String): Unit = js.native
   def apply(
     patterns: String,
@@ -43,4 +44,3 @@ object ^ extends js.Object {
     callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
   ): Unit = js.native
 }
-

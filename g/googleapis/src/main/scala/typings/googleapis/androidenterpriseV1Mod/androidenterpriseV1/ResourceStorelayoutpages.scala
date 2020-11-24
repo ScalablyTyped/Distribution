@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Storelayoutpages")
 @js.native
 class ResourceStorelayoutpages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.storelayoutpages.delete
     * @desc Deletes a store page.
@@ -42,6 +44,7 @@ class ResourceStorelayoutpages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * androidenterprise.storelayoutpages.get
     * @desc Retrieves details of a store page.
@@ -71,6 +74,7 @@ class ResourceStorelayoutpages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStorePage]
   ): Unit = js.native
+  
   /**
     * androidenterprise.storelayoutpages.insert
     * @desc Inserts a new store page.
@@ -100,6 +104,7 @@ class ResourceStorelayoutpages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStorePage]
   ): Unit = js.native
+  
   /**
     * androidenterprise.storelayoutpages.list
     * @desc Retrieves the details of all pages in the store.
@@ -131,6 +136,7 @@ class ResourceStorelayoutpages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStoreLayoutPagesListResponse]
   ): Unit = js.native
+  
   /**
     * androidenterprise.storelayoutpages.patch
     * @desc Updates the content of a store page. This method supports patch
@@ -162,6 +168,7 @@ class ResourceStorelayoutpages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStorePage]
   ): Unit = js.native
+  
   /**
     * androidenterprise.storelayoutpages.update
     * @desc Updates the content of a store page.
@@ -193,4 +200,3 @@ class ResourceStorelayoutpages protected () extends js.Object {
     callback: BodyResponseCallback[SchemaStorePage]
   ): Unit = js.native
 }
-

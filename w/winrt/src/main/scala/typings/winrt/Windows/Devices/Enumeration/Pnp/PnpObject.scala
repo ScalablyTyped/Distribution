@@ -3,12 +3,12 @@ package typings.winrt.Windows.Devices.Enumeration.Pnp
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PnpObject extends IPnpObject
-
 object PnpObject {
+  
   @scala.inline
   def apply(
     id: String,
@@ -21,4 +21,3 @@ object PnpObject {
     __obj.asInstanceOf[PnpObject]
   }
 }
-

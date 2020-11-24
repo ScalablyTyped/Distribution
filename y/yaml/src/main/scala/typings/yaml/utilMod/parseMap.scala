@@ -6,12 +6,12 @@ import typings.yaml.parseCstMod.CST.Map
 import typings.yaml.typesMod.AST.BlockMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yaml/util", "parseMap")
 @js.native
 object parseMap extends js.Object {
+  
   def apply(doc: Document, cst: FlowMap): typings.yaml.typesMod.AST.FlowMap = js.native
   def apply(doc: Document, cst: Map): BlockMap = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.nodeSass.mod.types
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-sass", "types.Number")
 @js.native
@@ -13,4 +13,3 @@ class NumberCls protected () extends Number {
   def this(value: Double) = this()
   def this(value: Double, unit: java.lang.String) = this()
 }
-

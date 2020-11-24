@@ -3,11 +3,10 @@ package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EnumDWTCapType extends js.Object
-
 /**
   * Capabilities exist in many varieties but all have a Default Value, Current Value, and may have other values available that can be supported if selected.
   * To help categorize the supported values into clear structures, TWAIN defines four types of containers for capabilities =
@@ -16,6 +15,10 @@ sealed trait EnumDWTCapType extends js.Object
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumDWT_CapType")
 @js.native
 object EnumDWTCapType extends js.Object {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[EnumDWTCapType with Double] = js.native
+  
   /**
     * A rectangular array of values that describe a logical item. It is similar to the TW_ONEVALUE because the current and default values are the same and
     * there are no other values to select from. For example, a list of the names, such as the supported capabilities list returned by the CAP_SUPPORTEDCAPS
@@ -23,6 +26,8 @@ object EnumDWTCapType extends js.Object {
     */
   @js.native
   sealed trait TWON_ARRAY extends EnumDWTCapType
+  /* 3 */ @js.native
+  object TWON_ARRAY extends TopLevel[TWON_ARRAY with Double]
   
   /**
     * This is the most general type because it defines a list of values from which the Current Value can be chosen.
@@ -31,10 +36,14 @@ object EnumDWTCapType extends js.Object {
     */
   @js.native
   sealed trait TWON_ENUMERATION extends EnumDWTCapType
+  /* 4 */ @js.native
+  object TWON_ENUMERATION extends TopLevel[TWON_ENUMERATION with Double]
   
   /** Nothing. */
   @js.native
   sealed trait TWON_NONE extends EnumDWTCapType
+  /* 0 */ @js.native
+  object TWON_NONE extends TopLevel[TWON_NONE with Double]
   
   /**
     * A single value whose current and default values are coincident. The range of available values for this type of capability is simply this single value.
@@ -42,6 +51,8 @@ object EnumDWTCapType extends js.Object {
     */
   @js.native
   sealed trait TWON_ONEVALUE extends EnumDWTCapType
+  /* 5 */ @js.native
+  object TWON_ONEVALUE extends TopLevel[TWON_ONEVALUE with Double]
   
   /**
     * Many capabilities allow users to select their current value from a range of regularly spaced values.
@@ -50,23 +61,6 @@ object EnumDWTCapType extends js.Object {
     */
   @js.native
   sealed trait TWON_RANGE extends EnumDWTCapType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTCapType with Double] = js.native
-  /* 3 */ @js.native
-  object TWON_ARRAY extends TopLevel[TWON_ARRAY with Double]
-  
-  /* 4 */ @js.native
-  object TWON_ENUMERATION extends TopLevel[TWON_ENUMERATION with Double]
-  
-  /* 0 */ @js.native
-  object TWON_NONE extends TopLevel[TWON_NONE with Double]
-  
-  /* 5 */ @js.native
-  object TWON_ONEVALUE extends TopLevel[TWON_ONEVALUE with Double]
-  
   /* 6 */ @js.native
   object TWON_RANGE extends TopLevel[TWON_RANGE with Double]
-  
 }
-

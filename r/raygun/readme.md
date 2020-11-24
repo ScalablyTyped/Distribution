@@ -1,18 +1,18 @@
 
 # Scala.js typings for raygun
 
-Typings are for version 0.12.1
+Typings are for version 0.12.2
 
 ## Library description:
-Raygun.io plugin for Node
+Raygun.io package for Node, written in TypeScript
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | raygun |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 8 |
 | # dependents       | 18 |
-| # downloads        | 888350 |
+| # downloads        | 1144938 |
 | # stars            | 0 |
 
 ## Links

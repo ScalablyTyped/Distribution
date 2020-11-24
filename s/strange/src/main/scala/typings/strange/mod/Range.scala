@@ -4,14 +4,16 @@ import typings.strange.strangeNumbers.`-1`
 import typings.strange.strangeNumbers.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Range[T /* <: Endpoint */] extends js.Object {
+  
   /**
     * Range's beginning, or left endpoint.
     */
   var begin: js.UndefOr[T | Null] = js.native
+  
   /**
     * Range's bounds.
     *
@@ -30,10 +32,7 @@ trait Range[T /* <: Endpoint */] extends js.Object {
     * new Range(1, 5, "[)").bounds // => "[)"
     */
   var bounds: Bounds = js.native
-  /**
-    * Range's end, or right endpoint.
-    */
-  var end: js.UndefOr[T | Null] = js.native
+  
   /**
     * Compares this range's beginning with the given value.
     * Returns `-1` if this range begins before the given value, `0` if they're
@@ -50,6 +49,7 @@ trait Range[T /* <: Endpoint */] extends js.Object {
     */
   def compareBegin(): `-1` | `0` = js.native
   def compareBegin(begin: T): `-1` | `0` = js.native
+  
   /**
     * Compares this range's end with the given value.
     * Returns `-1` if this range ends before the given value, `0` if they're
@@ -66,6 +66,7 @@ trait Range[T /* <: Endpoint */] extends js.Object {
     */
   def compareEnd(): `-1` | `0` = js.native
   def compareEnd(end: T): `-1` | `0` = js.native
+  
   /**
     * Check if a given value is contained within this range.
     * Returns `true` or `false`.
@@ -77,10 +78,17 @@ trait Range[T /* <: Endpoint */] extends js.Object {
     */
   def contains(): Boolean = js.native
   def contains(value: T): Boolean = js.native
+  
+  /**
+    * Range's end, or right endpoint.
+    */
+  var end: js.UndefOr[T | Null] = js.native
+  
   /**
     * @alias toJSON
     */
   def inspect(): String = js.native
+  
   /**
     * Check if this range intersects with another.
     * Returns `true` or `false`.
@@ -96,6 +104,7 @@ trait Range[T /* <: Endpoint */] extends js.Object {
     * new Range(0, 10).intersects(new Range(20, 30)) // => false
     */
   def intersects(value: Range[T]): Boolean = js.native
+  
   /**
     * Check whether the range is bounded.
     * A bounded range is one where neither endpoint is `null` or `Infinity`. An
@@ -109,6 +118,7 @@ trait Range[T /* <: Endpoint */] extends js.Object {
     * new Range(-Infinity, Infinity).isBounded() // => false
     */
   def isBounded(): Boolean = js.native
+  
   /**
     * Check whether the range is empty.
     * An empty range is one where either of the endpoints is `undefined`
@@ -125,14 +135,17 @@ trait Range[T /* <: Endpoint */] extends js.Object {
     * new Range(1, 10).isEmpty() // => false
     */
   def isEmpty(): Boolean = js.native
+  
   /**
     * @alias isBounded
     */
   def isFinite(): Boolean = js.native
+  
   /**
     * @alias isUnbounded
     */
   def isInfinite(): Boolean = js.native
+  
   /**
     * Check whether the range is unbounded.
     * An unbounded range is one where either endpoint is `null` or `Infinity`. An
@@ -146,6 +159,7 @@ trait Range[T /* <: Endpoint */] extends js.Object {
     * new Range(-Infinity, Infinity).isUnbounded() // => true
     */
   def isUnbounded(): Boolean = js.native
+  
   /**
     * Stringifies the range when passing it to `JSON.stringify`.
     * This way you don't need to manually call `toString` when stringifying.
@@ -157,4 +171,3 @@ trait Range[T /* <: Endpoint */] extends js.Object {
     */
   def toJSON(): String = js.native
 }
-

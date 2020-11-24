@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zopflipng-bin"
-version := "4.1-dt-20180420Z-cb2d7e"
+version := "4.1-dt-20180420Z-ea0d7f"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -7,15 +7,17 @@ import typings.forgeApis.anon.XAdsForce
 import typings.forgeApis.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "DerivativesApi")
 @js.native
 class DerivativesApi () extends js.Object {
+  
   /**
     * Deletes the manifest and all its translated output files (derivatives). However, it does not delete the design source file.
     */
   def deleteManifest(urn: String, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  
   /**
     * Downloads a selected derivative. To download the file, you need to specify the file’s URN, which you retrieve by calling the GET {urn}/manifest endpoint.
     * Note that the Model Derivative API uses 2 types of URNs. The design URN is generated when you upload the source design file to Forge, and is used when
@@ -23,12 +25,14 @@ class DerivativesApi () extends js.Object {
     * design files. You can set the range of bytes that are returned when downloading the derivative, using the range header.
     */
   def getDerivativeManifest(urn: String, derivativeUrn: String, opts: Range, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  
   /**
     * Returns an up-to-date list of Forge-supported translations, that you can use to identify which types of derivatives are supported for each source file type.
     * You can set this endpoint to only return the list of supported translations if they have been updated since a specified date. See the Supported Translation
     * Formats table for more details about supported translations. Note that we are constantly adding new file formats to the list of Forge translations.
     */
   def getFormats(opts: AcceptEncoding, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  
   /**
     * Returns information about derivatives that correspond to a specific source file, including derviative URNs and statuses.
     * The URNs of the derivatives are used to download the generated derivatives when calling the GET {urn}/manifest/{derivativeurn}
@@ -38,6 +42,7 @@ class DerivativesApi () extends js.Object {
     * (only new translations) to the manifest.
     */
   def getManifest(urn: String, opts: `0`, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  
   /**
     * Returns a list of model view (metadata) IDs for a design model. The metadata ID enables end users to select an object tree
     * and properties for a specific model view. Although most design apps (e.g., Fusion and Inventor) only allow a single model
@@ -46,6 +51,7 @@ class DerivativesApi () extends js.Object {
     * translated into an SVF file.
     */
   def getMetadata(urn: String, opts: `0`, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  
   /**
     * Returns an object tree, i.e., a hierarchical list of objects for a model view. To call this endpoint you first need to
     * call the GET {urn}/metadata endpoint, to determine which model view (object tree and set of properties) to use. Although
@@ -54,6 +60,7 @@ class DerivativesApi () extends js.Object {
     * input file that has been translated into an SVF file.
     */
   def getModelviewMetadata(urn: String, guid: String, opts: `0`, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  
   /**
     * Returns a list of properties for each object in an object tree. Properties are returned according to object ID and do not
     * follow a hierarchical structure. The following image displays a typical list of properties for a Revit object: To call
@@ -62,10 +69,12 @@ class DerivativesApi () extends js.Object {
     * you can only get properties from a design input file that was previously translated into an SVF file.
     */
   def getModelviewProperties(urn: String, guid: String, opts: `0`, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  
   /**
     * Returns the thumbnail for the source file.
     */
   def getThumbnail(urn: String, opts: Height, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  
   /**
     * Translate a source file from one format to another. Derivatives are stored in a manifest that is updated each time this endpoint
     * is used on a source file. Note that this endpoint is asynchronous and initiates a process that runs in the background, rather
@@ -73,4 +82,3 @@ class DerivativesApi () extends js.Object {
     */
   def translate(job: JobPayload, opts: XAdsForce, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
 }
-

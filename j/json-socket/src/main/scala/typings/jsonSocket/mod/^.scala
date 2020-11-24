@@ -4,17 +4,17 @@ import typings.node.netMod.Socket
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("json-socket", JSImport.Namespace)
 @js.native
 class ^ protected () extends JsonSocket {
   def this(socket: Socket) = this()
 }
-
 @JSImport("json-socket", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * sends a single message and closes the connection instantly. Use this if you need to send a server a message,
     * but you don't need any response.
@@ -24,6 +24,7 @@ object ^ extends js.Object {
     * @param callback will be called after the message has been sent
     */
   def sendSingleMessage(port: Double, host: String, message: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * sends a single message, waits for a single response message from the server and closes the connection right after.
     * Use this if you need to send a server a message, and get a response, but you don't need the connection to stay
@@ -40,4 +41,3 @@ object ^ extends js.Object {
     callback: js.Function2[/* err */ Error, /* message */ js.Any, Unit]
   ): Unit = js.native
 }
-

@@ -6,7 +6,7 @@ import typings.jupyterlabCompleter.kernelconnectorMod.KernelConnector.IOptions
 import typings.jupyterlabStatedb.dataconnectorMod.DataConnector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/completer/lib/kernelconnector", "KernelConnector")
 @js.native
@@ -17,6 +17,6 @@ class KernelConnector_ protected () extends DataConnector[IReply, Unit, IRequest
     * @param options - The instantiation options for the kernel connector.
     */
   def this(options: IOptions) = this()
+  
   var _session: js.Any = js.native
 }
-

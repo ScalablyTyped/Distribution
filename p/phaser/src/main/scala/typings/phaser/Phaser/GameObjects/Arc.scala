@@ -3,7 +3,7 @@ package typings.phaser.Phaser.GameObjects
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Arc Shape is a Game Object that can be added to a Scene, Group or Container. You can
@@ -24,34 +24,36 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Arc extends Shape {
+  
   /**
     * The winding order of the start and end angles.
     */
   var anticlockwise: Boolean = js.native
+  
   /**
     * The end angle of the arc, in degrees.
     */
   var endAngle: integer = js.native
+  
   /**
     * The number of iterations used when drawing the arc.
     * Increase this value for smoother arcs, at the cost of more polygons being rendered.
     * Modify this value by small amounts, such as 0.01.
     */
   var iterations: Double = js.native
+  
   /**
     * The radius of the arc.
     */
   var radius: Double = js.native
-  /**
-    * The start angle of the arc, in degrees.
-    */
-  var startAngle: integer = js.native
+  
   /**
     * Sets the ending angle of the arc, in degrees.
     * This call can be chained.
     * @param value The value to set the ending angle to.
     */
   def setEndAngle(value: integer): this.type = js.native
+  
   /**
     * Sets the number of iterations used when drawing the arc.
     * Increase this value for smoother arcs, at the cost of more polygons being rendered.
@@ -60,17 +62,23 @@ trait Arc extends Shape {
     * @param value The value to set the iterations to.
     */
   def setIterations(value: Double): this.type = js.native
+  
   /**
     * Sets the radius of the arc.
     * This call can be chained.
     * @param value The value to set the radius to.
     */
   def setRadius(value: Double): this.type = js.native
+  
   /**
     * Sets the starting angle of the arc, in degrees.
     * This call can be chained.
     * @param value The value to set the starting angle to.
     */
   def setStartAngle(value: integer): this.type = js.native
+  
+  /**
+    * The start angle of the arc, in degrees.
+    */
+  var startAngle: integer = js.native
 }
-

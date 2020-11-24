@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__progress
 
-Typings are for version 2.1.2
+Typings are for version 2.4.2
 
 ## Library description:
 Create horizontal, vertical, and circular progress indicators
@@ -10,9 +10,9 @@ Create horizontal, vertical, and circular progress indicators
 | ------------------ | :-------------: |
 | Full name          | @react-md/progress |
 | Keywords           | react-md, material design, react, progress, component, components |
-| # releases         | 22 |
+| # releases         | 31 |
 | # dependents       | 2 |
-| # downloads        | 3638 |
+| # downloads        | 7314 |
 | # stars            | 0 |
 
 ## Links

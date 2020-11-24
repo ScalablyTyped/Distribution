@@ -9,11 +9,12 @@ import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/coreutils", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class ActivityMonitor[Sender, Args] protected ()
     extends typings.jupyterlabCoreutils.activitymonitorMod.ActivityMonitor[Sender, Args] {
@@ -25,13 +26,9 @@ object mod extends js.Object {
   
   @js.native
   object MarkdownCodeBlocks extends js.Object {
-    @js.native
-    class MarkdownCodeBlock protected ()
-      extends typings.jupyterlabCoreutils.markdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock {
-      def this(startLine: Double) = this()
-    }
     
     val CODE_BLOCK_MARKER: /* "```" */ String = js.native
+    
     /**
       * Construct all code snippets from current text
       * (this could be potentially optimized if we can cache and detect differences)
@@ -42,6 +39,7 @@ object mod extends js.Object {
     def findMarkdownCodeBlocks(text: String): js.Array[
         typings.jupyterlabCoreutils.markdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock
       ] = js.native
+    
     /**
       * Check whether the given file extension is a markdown extension
       * @param extension - A file extension
@@ -49,23 +47,33 @@ object mod extends js.Object {
       * @returns true/false depending on whether this is a supported markdown extension
       */
     def isMarkdown(extension: String): Boolean = js.native
+    
+    @js.native
+    class MarkdownCodeBlock protected ()
+      extends typings.jupyterlabCoreutils.markdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock {
+      def this(startLine: Double) = this()
+    }
   }
   
   @js.native
   object PageConfig extends js.Object {
+    
     /**
       * Get the base url for a Jupyter application, or the base url of the page.
       */
     def getBaseUrl(): String = js.native
+    
     /**
       * Returns the URL converting this notebook to a certain
       * format with nbconvert.
       */
     def getNBConvertURL(hasPathFormatDownload: Download): String = js.native
+    
     /**
       * Get the Notebook version info [major, minor, patch].
       */
     def getNotebookVersion(): js.Tuple3[Double, Double, Double] = js.native
+    
     /**
       * Get global configuration data for the Jupyter application.
       *
@@ -85,29 +93,35 @@ object mod extends js.Object {
       * file.
       */
     def getOption(name: String): String = js.native
+    
     /**
       * Get the base url for sharing links (usually baseUrl)
       */
     def getShareUrl(): String = js.native
+    
     /**
       * Get the authorization token for a Jupyter application.
       */
     def getToken(): String = js.native
+    
     /**
       * Get the tree url for shareable links.
       * Usually the same as treeUrl,
       * but overrideable e.g. when sharing with JupyterHub.
       */
     def getTreeShareUrl(): String = js.native
+    
     /**
       * Get the tree url for a JupyterLab application.
       */
     def getTreeUrl(): String = js.native
+    
     /**
       * Get the base websocket url for a Jupyter application, or an empty string.
       */
     def getWsUrl(): String = js.native
     def getWsUrl(baseUrl: String): String = js.native
+    
     /**
       * Set global configuration data for the Jupyter application.
       *
@@ -117,25 +131,30 @@ object mod extends js.Object {
       * @returns The last config value or an empty string if it doesn't exist.
       */
     def setOption(name: String, value: String): String = js.native
+    
     /**
       * The namespace for page config `Extension` functions.
       */
     @js.native
     object Extension extends js.Object {
+      
       /**
         * The collection of deferred extensions in page config.
         */
       val deferred: js.Array[Raw] = js.native
+      
       /**
         * The collection of disabled extensions in page config.
         */
       val disabled: js.Array[Raw] = js.native
+      
       /**
         * Returns whether a plugin is deferred.
         *
         * @param id - The plugin ID.
         */
       def isDeferred(id: String): Boolean = js.native
+      
       /**
         * Returns whether a plugin is disabled.
         *
@@ -143,11 +162,11 @@ object mod extends js.Object {
         */
       def isDisabled(id: String): Boolean = js.native
     }
-    
   }
   
   @js.native
   object PathExt extends js.Object {
+    
     /**
       * Return the last portion of a path. Similar to the Unix basename command.
       * Often used to extract the file name from a fully qualified path.
@@ -158,6 +177,7 @@ object mod extends js.Object {
       */
     def basename(path: String): String = js.native
     def basename(path: String, ext: String): String = js.native
+    
     /**
       * Get the directory name of a path, similar to the Unix dirname command.
       * When an empty path is given, returns the root path.
@@ -165,6 +185,7 @@ object mod extends js.Object {
       * @param path - The file path.
       */
     def dirname(path: String): String = js.native
+    
     /**
       * Get the extension of the path.
       *
@@ -180,6 +201,7 @@ object mod extends js.Object {
       * empty string is returned.
       */
     def extname(path: String): String = js.native
+    
     /**
       * Join all arguments together and normalize the resulting path.
       * Arguments must be strings. In v0.8, non-string arguments were silently ignored. In v0.10 and up, an exception is thrown.
@@ -187,6 +209,7 @@ object mod extends js.Object {
       * @param paths - The string paths to join.
       */
     def join(paths: String*): String = js.native
+    
     /**
       * Normalize a string path, reducing '..' and '.' parts.
       * When multiple slashes are found, they're replaced by a single one; when the path contains a trailing slash, it is preserved. On Windows backslashes are used.
@@ -195,6 +218,7 @@ object mod extends js.Object {
       * @param path - The string path to normalize.
       */
     def normalize(path: String): String = js.native
+    
     /**
       * Normalize a file extension to be of the type `'.foo'`.
       *
@@ -204,6 +228,7 @@ object mod extends js.Object {
       * Adds a leading dot if not present and converts to lower case.
       */
     def normalizeExtension(extension: String): String = js.native
+    
     /**
       * Solve the relative path from {from} to {to}.
       *
@@ -218,12 +243,14 @@ object mod extends js.Object {
       * will be used instead of the zero-length strings.
       */
     def relative(from: String, to: String): String = js.native
+    
     /**
       * Remove the leading slash from a path.
       *
       * @param path: the path from which to remove a leading slash.
       */
     def removeSlash(path: String): String = js.native
+    
     /**
       * Resolve a sequence of paths or path segments into an absolute path.
       * The root path in the application has no leading slash, so it is removed.
@@ -242,6 +269,7 @@ object mod extends js.Object {
   
   @js.native
   object Text extends js.Object {
+    
     /**
       * Given a 'snake-case', 'snake_case', 'snake:case', or
       * 'snake case' string, will return the camel case version: 'snakeCase'.
@@ -255,6 +283,7 @@ object mod extends js.Object {
       */
     def camelCase(str: String): String = js.native
     def camelCase(str: String, upper: Boolean): String = js.native
+    
     /**
       * Convert a unicode character offset to a javascript string index.
       *
@@ -265,6 +294,7 @@ object mod extends js.Object {
       * @returns The js-native index
       */
     def charIndexToJsIndex(charIdx: Double, text: String): Double = js.native
+    
     /**
       * Convert a javascript string index into a unicode character offset
       *
@@ -275,6 +305,7 @@ object mod extends js.Object {
       * @returns The unicode character offset
       */
     def jsIndexToCharIndex(jsIdx: Double, text: String): Double = js.native
+    
     /**
       * Given a string, title case the words in the string.
       *
@@ -287,6 +318,7 @@ object mod extends js.Object {
   
   @js.native
   object Time extends js.Object {
+    
     /**
       * Convert a timestring to a date format.
       *
@@ -300,6 +332,7 @@ object mod extends js.Object {
     def format(value: String, timeFormat: String): String = js.native
     def format(value: Date): String = js.native
     def format(value: Date, timeFormat: String): String = js.native
+    
     /**
       * Convert a timestring to a human readable string (e.g. 'two minutes ago').
       *
@@ -313,6 +346,7 @@ object mod extends js.Object {
   
   @js.native
   object URLExt extends js.Object {
+    
     /**
       * Encode the components of a multi-segment url.
       *
@@ -325,6 +359,7 @@ object mod extends js.Object {
       * Should not include the base url, since all parts are escaped.
       */
     def encodeParts(url: String): String = js.native
+    
     /**
       * Test whether the url is a local url.
       *
@@ -333,6 +368,7 @@ object mod extends js.Object {
       * `data:`, `file:`, and `//` protocol URLs.
       */
     def isLocal(url: String): Boolean = js.native
+    
     /**
       * Join a sequence of url components and normalizes as in node `path.join`.
       *
@@ -341,6 +377,7 @@ object mod extends js.Object {
       * @returns the joined url.
       */
     def join(parts: String*): String = js.native
+    
     def normalize(): js.UndefOr[String] = js.native
     def normalize(url: js.UndefOr[scala.Nothing]): js.UndefOr[scala.Nothing] = js.native
     /**
@@ -349,6 +386,7 @@ object mod extends js.Object {
     def normalize(url: String): String = js.native
     @JSName("normalize")
     def normalize_Union(url: String): js.UndefOr[String] = js.native
+    
     /**
       * Return a serialized object string suitable for a query.
       *
@@ -360,6 +398,7 @@ object mod extends js.Object {
       * Modified version of [stackoverflow](http://stackoverflow.com/a/30707423).
       */
     def objectToQueryString(value: PartialJSONObject): String = js.native
+    
     /**
       * Parse a url into a URL object.
       *
@@ -368,11 +407,10 @@ object mod extends js.Object {
       * @returns A URL object.
       */
     def parse(url: String): IUrl = js.native
+    
     /**
       * Return a parsed object that represents the values in a query string.
       */
     def queryStringToObject(value: String): StringDictionary[js.UndefOr[String]] = js.native
   }
-  
 }
-

@@ -11,7 +11,7 @@ Determine a file's type from its magic number.
 | Keywords           | magicnumber, magic, number, file, detection, type |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 19983 |
+| # downloads        | 57991 |
 | # stars            | 0 |
 
 ## Links

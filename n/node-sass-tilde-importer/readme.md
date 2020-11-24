@@ -11,8 +11,8 @@ A node-sass custom importer which turns ~ into absolute paths to the nearest par
 | Full name          | node-sass-tilde-importer |
 | Keywords           | node-sass, scss, sass, tilde, webpack, sass-loader, node_modules |
 | # releases         | 2 |
-| # dependents       | 52 |
-| # downloads        | 12718496 |
+| # dependents       | 54 |
+| # downloads        | 13570276 |
 | # stars            | 1 |
 
 ## Links

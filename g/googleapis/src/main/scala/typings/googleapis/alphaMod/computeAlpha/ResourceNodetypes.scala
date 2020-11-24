@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Nodetypes")
 @js.native
 class ResourceNodetypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.nodeTypes.aggregatedList
     * @desc Retrieves an aggregated list of node types.
@@ -48,6 +48,9 @@ class ResourceNodetypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNodeTypeAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.nodeTypes.get
     * @desc Returns the specified node type. Gets a list of available node
@@ -79,6 +82,7 @@ class ResourceNodetypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNodeType]
   ): Unit = js.native
+  
   /**
     * compute.nodeTypes.list
     * @desc Retrieves a list of node types available to the specified project.
@@ -113,4 +117,3 @@ class ResourceNodetypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaNodeTypeList]
   ): Unit = js.native
 }
-

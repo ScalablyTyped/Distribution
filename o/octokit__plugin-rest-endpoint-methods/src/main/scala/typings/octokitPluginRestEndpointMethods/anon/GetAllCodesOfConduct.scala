@@ -7,19 +7,11 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GetAllCodesOfConduct extends js.Object {
-  @JSName("getAllCodesOfConduct")
-  var getAllCodesOfConduct_Original: `117` = js.native
-  @JSName("getConductCode")
-  var getConductCode_Original: `118` = js.native
-  /**
-    * This method returns the contents of the repository's code of conduct file, if one is detected.
-    */
-  @JSName("getForRepo")
-  var getForRepo_Original: `119` = js.native
+  
   def getAllCodesOfConduct(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /codes_of_conduct']['response'] */ js.Any
   ] = js.native
@@ -31,6 +23,9 @@ trait GetAllCodesOfConduct extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /codes_of_conduct']['response'] */ js.Any
   ] = js.native
+  @JSName("getAllCodesOfConduct")
+  var getAllCodesOfConduct_Original: `120` = js.native
+  
   def getConductCode(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /codes_of_conduct/:key']['response'] */ js.Any
   ] = js.native
@@ -42,6 +37,9 @@ trait GetAllCodesOfConduct extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /codes_of_conduct/:key']['response'] */ js.Any
   ] = js.native
+  @JSName("getConductCode")
+  var getConductCode_Original: `121` = js.native
+  
   /**
     * This method returns the contents of the repository's code of conduct file, if one is detected.
     */
@@ -56,5 +54,9 @@ trait GetAllCodesOfConduct extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/community/code_of_conduct']['response'] */ js.Any
   ] = js.native
+  /**
+    * This method returns the contents of the repository's code of conduct file, if one is detected.
+    */
+  @JSName("getForRepo")
+  var getForRepo_Original: `122` = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.awsSdk.clouddirectoryMod.ClientConfiguration
 import typings.awsSdk.clouddirectoryMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "CloudDirectory")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class CloudDirectory () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

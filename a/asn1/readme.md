@@ -10,9 +10,9 @@ Contains parsers and serializers for ASN.1 (currently BER only)
 | ------------------ | :-------------: |
 | Full name          | asn1 |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 116 |
-| # downloads        | 568108686 |
+| # releases         | 0 |
+| # dependents       | 151 |
+| # downloads        | 720815147 |
 | # stars            | 2 |
 
 ## Links

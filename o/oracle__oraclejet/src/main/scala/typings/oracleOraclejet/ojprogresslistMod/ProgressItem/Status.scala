@@ -2,7 +2,7 @@ package typings.oracleOraclejet.ojprogresslistMod.ProgressItem
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.oracleOraclejet.oracleOraclejetStrings.queued
@@ -13,19 +13,23 @@ import scala.scalajs.js.annotation._
   - typings.oracleOraclejet.oracleOraclejetStrings.loaded
 */
 trait Status extends js.Object
-
 object Status {
+  
   @scala.inline
   def aborted: typings.oracleOraclejet.oracleOraclejetStrings.aborted = "aborted".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.aborted]
+  
   @scala.inline
   def errored: typings.oracleOraclejet.oracleOraclejetStrings.errored = "errored".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.errored]
+  
   @scala.inline
   def loaded: typings.oracleOraclejet.oracleOraclejetStrings.loaded = "loaded".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.loaded]
+  
   @scala.inline
   def loadstarted: typings.oracleOraclejet.oracleOraclejetStrings.loadstarted = "loadstarted".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.loadstarted]
+  
   @scala.inline
   def queued: typings.oracleOraclejet.oracleOraclejetStrings.queued = "queued".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.queued]
+  
   @scala.inline
   def timedout: typings.oracleOraclejet.oracleOraclejetStrings.timedout = "timedout".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.timedout]
 }
-

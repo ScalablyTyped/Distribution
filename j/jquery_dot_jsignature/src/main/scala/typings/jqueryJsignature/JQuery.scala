@@ -2,10 +2,11 @@ package typings.jqueryJsignature
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * inits the jSignature widget
     */
@@ -40,4 +41,3 @@ trait JQuery extends js.Object {
     */
   def jSignature(command: String, arg: String*): js.Any = js.native
 }
-

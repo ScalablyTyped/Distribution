@@ -2,17 +2,17 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ListMode extends js.Object
-
 /**
   * Defines the mode of the list.
   */
 @JSGlobal("sap.m.ListMode")
 @js.native
 object ListMode extends js.Object {
+  
   @js.native
   sealed trait Delete extends ListMode
   
@@ -30,6 +30,4 @@ object ListMode extends js.Object {
   
   @js.native
   sealed trait SingleSelectMaster extends ListMode
-  
 }
-

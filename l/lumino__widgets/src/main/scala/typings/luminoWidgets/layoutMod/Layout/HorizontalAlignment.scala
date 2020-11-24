@@ -2,7 +2,7 @@ package typings.luminoWidgets.layoutMod.Layout
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A type alias for the horizontal alignment of a widget.
@@ -13,13 +13,14 @@ import scala.scalajs.js.annotation._
   - typings.luminoWidgets.luminoWidgetsStrings.right
 */
 trait HorizontalAlignment extends js.Object
-
 object HorizontalAlignment {
+  
   @scala.inline
   def center: typings.luminoWidgets.luminoWidgetsStrings.center = "center".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.center]
+  
   @scala.inline
   def left: typings.luminoWidgets.luminoWidgetsStrings.left = "left".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.left]
+  
   @scala.inline
   def right: typings.luminoWidgets.luminoWidgetsStrings.right = "right".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.right]
 }
-

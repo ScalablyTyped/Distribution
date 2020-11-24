@@ -2,9 +2,31 @@ package typings.discordRpc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object discordRpcStrings {
+  
+  @scala.inline
+  def audioinput: audioinput = "audioinput".asInstanceOf[audioinput]
+  
+  @scala.inline
+  def audiooutput: audiooutput = "audiooutput".asInstanceOf[audiooutput]
+  
+  @scala.inline
+  def connected: connected = "connected".asInstanceOf[connected]
+  
+  @scala.inline
+  def ipc: ipc = "ipc".asInstanceOf[ipc]
+  
+  @scala.inline
+  def ready: ready = "ready".asInstanceOf[ready]
+  
+  @scala.inline
+  def videoinput: videoinput = "videoinput".asInstanceOf[videoinput]
+  
+  @scala.inline
+  def websocket: websocket = "websocket".asInstanceOf[websocket]
+  
   @js.native
   sealed trait audioinput extends js.Object
   
@@ -25,20 +47,4 @@ object discordRpcStrings {
   
   @js.native
   sealed trait websocket extends js.Object
-  
-  @scala.inline
-  def audioinput: audioinput = "audioinput".asInstanceOf[audioinput]
-  @scala.inline
-  def audiooutput: audiooutput = "audiooutput".asInstanceOf[audiooutput]
-  @scala.inline
-  def connected: connected = "connected".asInstanceOf[connected]
-  @scala.inline
-  def ipc: ipc = "ipc".asInstanceOf[ipc]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def videoinput: videoinput = "videoinput".asInstanceOf[videoinput]
-  @scala.inline
-  def websocket: websocket = "websocket".asInstanceOf[websocket]
 }
-

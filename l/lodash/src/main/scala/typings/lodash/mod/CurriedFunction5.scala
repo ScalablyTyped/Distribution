@@ -2,10 +2,11 @@ package typings.lodash.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CurriedFunction5[T1, T2, T3, T4, T5, R] extends js.Object {
+  
   def apply(): CurriedFunction5[T1, T2, T3, T4, T5, R] = js.native
   def apply(t1: T1): CurriedFunction4[T2, T3, T4, T5, R] = js.native
   def apply(t1: T1, t2: T2): CurriedFunction3[T3, T4, T5, R] = js.native
@@ -39,4 +40,3 @@ trait CurriedFunction5[T1, T2, T3, T4, T5, R] extends js.Object {
   def apply(t1: __, t2: __, t3: __, t4: T4, t5: T5): CurriedFunction3[T1, T2, T3, R] = js.native
   def apply(t1: __, t2: __, t3: __, t4: __, t5: T5): CurriedFunction4[T1, T2, T3, T4, R] = js.native
 }
-

@@ -2,17 +2,17 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RibbonTab extends js.Object
-
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.RibbonTab")
 @js.native
 object RibbonTab extends js.Object {
+  
   @js.native
   sealed trait addIns extends RibbonTab
   
@@ -48,6 +48,4 @@ object RibbonTab extends js.Object {
   
   @js.native
   sealed trait view extends RibbonTab
-  
 }
-

@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Media.SpeechRecognition
 import typings.winrtUwp.Windows.Storage.StorageFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A constraint for a SpeechRecognizer object based on a Speech Recognition Grammar Specification (SRGS) file. */
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionGrammarFileConstraint")
@@ -22,4 +22,3 @@ class SpeechRecognitionGrammarFileConstraint protected ()
     */
   def this(file: StorageFile, tag: String) = this()
 }
-

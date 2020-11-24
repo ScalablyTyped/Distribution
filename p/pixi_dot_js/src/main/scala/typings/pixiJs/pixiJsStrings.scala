@@ -7,9 +7,91 @@ import typings.pixiJs.PIXI.InteractionPointerEvents
 import typings.pixiJs.PIXI.InteractionTouchEvents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pixiJsStrings {
+  
+  @scala.inline
+  def added: added = "added".asInstanceOf[added]
+  
+  @scala.inline
+  def click: click = "click".asInstanceOf[click]
+  
+  @scala.inline
+  def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
+  
+  @scala.inline
+  def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
+  
+  @scala.inline
+  def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
+  
+  @scala.inline
+  def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
+  
+  @scala.inline
+  def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
+  
+  @scala.inline
+  def mouseupoutside: mouseupoutside = "mouseupoutside".asInstanceOf[mouseupoutside]
+  
+  @scala.inline
+  def pointercancel: pointercancel = "pointercancel".asInstanceOf[pointercancel]
+  
+  @scala.inline
+  def pointerdown: pointerdown = "pointerdown".asInstanceOf[pointerdown]
+  
+  @scala.inline
+  def pointermove: pointermove = "pointermove".asInstanceOf[pointermove]
+  
+  @scala.inline
+  def pointerout: pointerout = "pointerout".asInstanceOf[pointerout]
+  
+  @scala.inline
+  def pointerover: pointerover = "pointerover".asInstanceOf[pointerover]
+  
+  @scala.inline
+  def pointertap: pointertap = "pointertap".asInstanceOf[pointertap]
+  
+  @scala.inline
+  def pointerup: pointerup = "pointerup".asInstanceOf[pointerup]
+  
+  @scala.inline
+  def pointerupoutside: pointerupoutside = "pointerupoutside".asInstanceOf[pointerupoutside]
+  
+  @scala.inline
+  def removed: removed = "removed".asInstanceOf[removed]
+  
+  @scala.inline
+  def rightclick: rightclick = "rightclick".asInstanceOf[rightclick]
+  
+  @scala.inline
+  def rightdown: rightdown = "rightdown".asInstanceOf[rightdown]
+  
+  @scala.inline
+  def rightup: rightup = "rightup".asInstanceOf[rightup]
+  
+  @scala.inline
+  def rightupoutside: rightupoutside = "rightupoutside".asInstanceOf[rightupoutside]
+  
+  @scala.inline
+  def tap: tap = "tap".asInstanceOf[tap]
+  
+  @scala.inline
+  def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
+  
+  @scala.inline
+  def touchend: touchend = "touchend".asInstanceOf[touchend]
+  
+  @scala.inline
+  def touchendoutside: touchendoutside = "touchendoutside".asInstanceOf[touchendoutside]
+  
+  @scala.inline
+  def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
+  
+  @scala.inline
+  def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
+  
   @js.native
   sealed trait added
     extends InteractionEventTypes
@@ -144,60 +226,4 @@ object pixiJsStrings {
   sealed trait touchstart
     extends InteractionEventTypes
        with InteractionTouchEvents
-  
-  @scala.inline
-  def added: added = "added".asInstanceOf[added]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
-  @scala.inline
-  def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
-  @scala.inline
-  def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
-  @scala.inline
-  def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
-  @scala.inline
-  def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
-  @scala.inline
-  def mouseupoutside: mouseupoutside = "mouseupoutside".asInstanceOf[mouseupoutside]
-  @scala.inline
-  def pointercancel: pointercancel = "pointercancel".asInstanceOf[pointercancel]
-  @scala.inline
-  def pointerdown: pointerdown = "pointerdown".asInstanceOf[pointerdown]
-  @scala.inline
-  def pointermove: pointermove = "pointermove".asInstanceOf[pointermove]
-  @scala.inline
-  def pointerout: pointerout = "pointerout".asInstanceOf[pointerout]
-  @scala.inline
-  def pointerover: pointerover = "pointerover".asInstanceOf[pointerover]
-  @scala.inline
-  def pointertap: pointertap = "pointertap".asInstanceOf[pointertap]
-  @scala.inline
-  def pointerup: pointerup = "pointerup".asInstanceOf[pointerup]
-  @scala.inline
-  def pointerupoutside: pointerupoutside = "pointerupoutside".asInstanceOf[pointerupoutside]
-  @scala.inline
-  def removed: removed = "removed".asInstanceOf[removed]
-  @scala.inline
-  def rightclick: rightclick = "rightclick".asInstanceOf[rightclick]
-  @scala.inline
-  def rightdown: rightdown = "rightdown".asInstanceOf[rightdown]
-  @scala.inline
-  def rightup: rightup = "rightup".asInstanceOf[rightup]
-  @scala.inline
-  def rightupoutside: rightupoutside = "rightupoutside".asInstanceOf[rightupoutside]
-  @scala.inline
-  def tap: tap = "tap".asInstanceOf[tap]
-  @scala.inline
-  def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
-  @scala.inline
-  def touchend: touchend = "touchend".asInstanceOf[touchend]
-  @scala.inline
-  def touchendoutside: touchendoutside = "touchendoutside".asInstanceOf[touchendoutside]
-  @scala.inline
-  def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
-  @scala.inline
-  def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
 }
-

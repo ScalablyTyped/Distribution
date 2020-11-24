@@ -6,11 +6,12 @@ import typings.react.mod.ComponentType
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fluent-react", "withLocalization")
 @js.native
 object withLocalization extends js.Object {
+  
   def apply(component: ComponentClass[Matching[InjectedProps, GetProps[_]], ComponentState]): ComponentType[
     Omit[
       GetProps[ComponentClass[Matching[InjectedProps, GetProps[_]], ComponentState]], 
@@ -24,4 +25,3 @@ object withLocalization extends js.Object {
     ]
   ] = js.native
 }
-

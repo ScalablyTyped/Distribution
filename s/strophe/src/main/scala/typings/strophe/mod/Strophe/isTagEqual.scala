@@ -3,11 +3,12 @@ package typings.strophe.mod.Strophe
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strophe", "Strophe.isTagEqual")
 @js.native
 object isTagEqual extends js.Object {
+  
   /** Function: isTagEqual
     *  Compare an element's tag name with a string.
     *
@@ -23,4 +24,3 @@ object isTagEqual extends js.Object {
     */
   def apply(el: Element, name: String): Boolean = js.native
 }
-

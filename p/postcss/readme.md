@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss
 
-Typings are for version 7.0.32
+Typings are for version 7.0.35
 
 ## Library description:
 Tool for transforming styles with JS plugins
@@ -10,9 +10,9 @@ Tool for transforming styles with JS plugins
 | ------------------ | :-------------: |
 | Full name          | postcss |
 | Keywords           | css, postcss, rework, preprocessor, parser, source map, transform, manipulation, transpiler |
-| # releases         | 37 |
-| # dependents       | 4149 |
-| # downloads        | 998477140 |
+| # releases         | 47 |
+| # dependents       | 4867 |
+| # downloads        | 1256888325 |
 | # stars            | 137 |
 
 ## Links

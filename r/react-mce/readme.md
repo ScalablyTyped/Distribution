@@ -12,7 +12,7 @@ React TinyMCE component
 | Keywords           | tinymce, react-component |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 64257 |
+| # downloads        | 28933 |
 | # stars            | 0 |
 
 ## Links

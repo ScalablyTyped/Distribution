@@ -3,21 +3,22 @@ package typings.grpc.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grpc", "ServerCredentials")
 @js.native
 class ServerCredentials () extends js.Object
-
 /* static members */
 @JSImport("grpc", "ServerCredentials")
 @js.native
 object ServerCredentials extends js.Object {
+  
   /**
     * Create insecure server credentials
     * @return The ServerCredentials
     */
   def createInsecure(): ServerCredentials = js.native
+  
   def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair]): ServerCredentials = js.native
   def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): ServerCredentials = js.native
   /**
@@ -33,4 +34,3 @@ object ServerCredentials extends js.Object {
   def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair]): ServerCredentials = js.native
   def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): ServerCredentials = js.native
 }
-

@@ -10,13 +10,15 @@ import typings.firebaseComponent.typesMod.InstanceFactory
 import typings.firebaseComponent.typesMod.InstantiationMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/component/dist/test/util", JSImport.Namespace)
 @js.native
 object utilMod extends js.Object {
+  
   def getFakeApp(): js.Any = js.native
   def getFakeApp(appName: String): js.Any = js.native
+  
   @JSName("getFakeComponent")
   def getFakeComponent_badtest(name: badtest, factory: InstanceFactory[badtest]): Component[badtest] = js.native
   @JSName("getFakeComponent")
@@ -108,4 +110,3 @@ object utilMod extends js.Object {
     instantiationMode: InstantiationMode
   ): Component[test] = js.native
 }
-

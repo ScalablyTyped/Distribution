@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-rate-limit
 
-Typings are for version 5.0
+Typings are for version 5.1
 
 ## Library description:
 Basic IP rate-limiting middleware for Express. Use to limit repeated requests to public APIs and/or endpoints such as password reset.
@@ -10,9 +10,9 @@ Basic IP rate-limiting middleware for Express. Use to limit repeated requests to
 | ------------------ | :-------------: |
 | Full name          | express-rate-limit |
 | Keywords           | express-rate-limit, express, rate, limit, ratelimit, rate-limit, middleware, ip, auth, authorization, security, brute, force, bruteforce, brute-force, attack |
-| # releases         | 36 |
-| # dependents       | 165 |
-| # downloads        | 3731677 |
+| # releases         | 21 |
+| # dependents       | 225 |
+| # downloads        | 7042292 |
 | # stars            | 45 |
 
 ## Links

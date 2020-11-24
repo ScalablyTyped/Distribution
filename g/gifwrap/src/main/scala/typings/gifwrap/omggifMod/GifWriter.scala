@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GifWriter
@@ -16,6 +16,7 @@ trait GifWriter
       /* gopts */ GlobalOptions, 
       GifWriter
     ] {
+  
   def addFrame(x: Double, y: Double, width: Double, height: Double, indexedPixels: js.Array[Double]): Double = js.native
   def addFrame(
     x: Double,
@@ -25,11 +26,15 @@ trait GifWriter
     indexedPixels: js.Array[Double],
     opts: FrameOptions
   ): Double = js.native
+  
   def end(): Double = js.native
+  
    // returns size of buffer at end of frame
   def getOutputBuffer(): ByteArray = js.native
+  
   def getOutputBufferPosition(): Double = js.native
+  
   def setOutputBuffer(buffer: ByteArray): Unit = js.native
+  
   def setOutputBufferPosition(position: Double): Unit = js.native
 }
-

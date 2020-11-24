@@ -2,7 +2,7 @@ package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftSdkSoap.microsoftSdkSoapStrings.DoNotDisplay
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.microsoftSdkSoap.microsoftSdkSoapStrings.UseLabel
 */
 trait AssociatedMenuBehavior extends js.Object
-
 object AssociatedMenuBehavior {
+  
   @scala.inline
   def DoNotDisplay: typings.microsoftSdkSoap.microsoftSdkSoapStrings.DoNotDisplay = "DoNotDisplay".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.DoNotDisplay]
+  
   @scala.inline
   def UseCollectionName: typings.microsoftSdkSoap.microsoftSdkSoapStrings.UseCollectionName = "UseCollectionName".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.UseCollectionName]
+  
   @scala.inline
   def UseLabel: typings.microsoftSdkSoap.microsoftSdkSoapStrings.UseLabel = "UseLabel".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.UseLabel]
 }
-

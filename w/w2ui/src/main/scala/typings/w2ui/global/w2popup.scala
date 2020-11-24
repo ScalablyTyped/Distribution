@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.w2ui.W2UI.W2Popup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("w2popup")
 @js.native
 object w2popup extends TopLevel[W2Popup]
-

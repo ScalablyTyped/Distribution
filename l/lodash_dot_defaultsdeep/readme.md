@@ -11,8 +11,8 @@ The Lodash method `_.defaultsDeep` exported as a module.
 | Full name          | lodash.defaultsdeep |
 | Keywords           | lodash-modularized, defaultsdeep |
 | # releases         | 2 |
-| # dependents       | 326 |
-| # downloads        | 30645381 |
+| # dependents       | 393 |
+| # downloads        | 47494545 |
 | # stars            | 1 |
 
 ## Links

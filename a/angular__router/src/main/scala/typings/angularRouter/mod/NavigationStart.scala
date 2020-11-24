@@ -6,7 +6,7 @@ import typings.angularRouter.angularRouterStrings.popstate
 import typings.angularRouter.anon.Dictk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "NavigationStart")
 @js.native
@@ -78,6 +78,7 @@ class NavigationStart protected () extends RouterEvent {
     /** @docsNotRequired */
   restoredState: Dictk
   ) = this()
+  
   /**
     * Identifies the call or event that triggered the navigation.
     * An `imperative` trigger is a call to `router.navigateByUrl()` or `router.navigate()`.
@@ -87,6 +88,7 @@ class NavigationStart protected () extends RouterEvent {
     * @see `NavigationError`
     */
   var navigationTrigger: js.UndefOr[imperative | popstate | hashchange] = js.native
+  
   /**
     * The navigation state that was previously supplied to the `pushState` call,
     * when the navigation is triggered by a `popstate` event. Otherwise null.
@@ -106,4 +108,3 @@ class NavigationStart protected () extends RouterEvent {
     */
   var restoredState: js.UndefOr[Dictk | Null] = js.native
 }
-

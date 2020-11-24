@@ -10,9 +10,9 @@ React HOC that passes browser window size to wrapped component
 | ------------------ | :-------------: |
 | Full name          | react-window-size |
 | Keywords           | react-component, react, hoc, browser, window, size, reactive |
-| # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 209868 |
+| # releases         | 0 |
+| # dependents       | 11 |
+| # downloads        | 274889 |
 | # stars            | 0 |
 
 ## Links

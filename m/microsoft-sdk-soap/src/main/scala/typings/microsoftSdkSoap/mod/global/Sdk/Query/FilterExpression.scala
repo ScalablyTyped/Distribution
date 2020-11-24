@@ -3,7 +3,7 @@ package typings.microsoftSdkSoap.mod.global.Sdk.Query
 import typings.microsoftSdkSoap.mod.global.Sdk.Collection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies complex condition and logical filter expressions used for filtering the results of the query.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FilterExpression protected () extends js.Object {
   def this(logicalOperator: LogicalOperator) = this()
+  
   /**
     * Adds a condition to the filter expression setting the attribute name, condition operator, and values.
     * @param entityName The entityName of the new ConditionExpression that will be instantiated using the other parameters.
@@ -40,6 +41,7 @@ class FilterExpression protected () extends js.Object {
     * @param conditionExpression The expression that will set the condition.
     */
   def addCondition(firstParam: ConditionExpression): Unit = js.native
+  
   /**
     * Adds a child filter to the filter expression.
     * @param filterExpression The filter to add.
@@ -50,31 +52,36 @@ class FilterExpression protected () extends js.Object {
     * @param logicalOperator Creates new FilterExpression with the specified logical operator and adds it.
     */
   def addFilter(logicalOperator: LogicalOperator): Unit = js.native
+  
   /**
     * Returns a collection of Sdk.Query.ConditionExpression values.
     */
   def getConditions(): Collection[ConditionExpression] = js.native
+  
   /**
     * Gets the logical AND/OR filter operator.
     */
   def getFilterOperator(): LogicalOperator = js.native
+  
   /**
     * Returns an Sdk.Collection of Sdk.Query.FilterExpression.
     */
   def getFilters(): Collection[FilterExpression] = js.native
+  
   /**
     * Gets whether the expression is part of a quick find query.
     */
   def getIsQuickFindFilter(): Boolean = js.native
+  
   /**
     * Sets the filter operator.
     * @param filterOperator The filter operator.
     */
   def setFilterOperator(filterOperator: LogicalOperator): Unit = js.native
+  
   /**
     * Sets whether the expression is part of a quick find query.
     * @param isQuickFind True if the filter is part of a quick find query; otherwise, false.
     */
   def setIsQuickFindFilter(isQuickFind: Boolean): Unit = js.native
 }
-

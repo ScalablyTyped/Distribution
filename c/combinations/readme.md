@@ -12,7 +12,7 @@ find all combinations from array
 | Keywords           | combination, combo, array |
 | # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 23248 |
+| # downloads        | 26710 |
 | # stars            | 0 |
 
 ## Links

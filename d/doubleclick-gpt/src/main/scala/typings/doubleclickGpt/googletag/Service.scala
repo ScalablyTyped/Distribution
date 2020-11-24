@@ -11,10 +11,11 @@ import typings.doubleclickGpt.googletag.events.SlotResponseReceived
 import typings.doubleclickGpt.googletag.events.SlotVisibilityChangedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Service extends js.Object {
+  
   def addEventListener(eventType: String, listener: js.Function1[/* event */ Event, Unit]): Service = js.native
   @JSName("addEventListener")
   def addEventListener_slotRenderEnded(eventType: slotRenderEnded, listener: js.Function1[/* event */ SlotRenderEndedEvent, Unit]): Service = js.native
@@ -27,6 +28,6 @@ trait Service extends js.Object {
     eventType: slotVisibilityChanged,
     listener: js.Function1[/* event */ SlotVisibilityChangedEvent, Unit]
   ): Service = js.native
+  
   def getSlots(): js.Array[Slot] = js.native
 }
-

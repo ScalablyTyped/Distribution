@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Custommetrics")
 @js.native
 class ResourceManagementCustommetrics protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.management.customMetrics.get
     * @desc Get a custom metric to which the user has access.
@@ -46,6 +48,7 @@ class ResourceManagementCustommetrics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomMetric]
   ): Unit = js.native
+  
   /**
     * analytics.management.customMetrics.insert
     * @desc Create a new custom metric.
@@ -79,6 +82,7 @@ class ResourceManagementCustommetrics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomMetric]
   ): Unit = js.native
+  
   /**
     * analytics.management.customMetrics.list
     * @desc Lists custom metrics to which the user has access.
@@ -113,6 +117,7 @@ class ResourceManagementCustommetrics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomMetrics]
   ): Unit = js.native
+  
   /**
     * analytics.management.customMetrics.patch
     * @desc Updates an existing custom metric. This method supports patch
@@ -149,6 +154,7 @@ class ResourceManagementCustommetrics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomMetric]
   ): Unit = js.native
+  
   /**
     * analytics.management.customMetrics.update
     * @desc Updates an existing custom metric.
@@ -185,4 +191,3 @@ class ResourceManagementCustommetrics protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCustomMetric]
   ): Unit = js.native
 }
-

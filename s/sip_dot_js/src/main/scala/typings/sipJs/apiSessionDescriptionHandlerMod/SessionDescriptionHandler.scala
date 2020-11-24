@@ -2,18 +2,16 @@ package typings.sipJs.apiSessionDescriptionHandlerMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SessionDescriptionHandler extends js.Object {
-  /**
-    * Rolls back the current local/remote offer to the prior stable state.
-    */
-  var rollbackDescription: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
+  
   /**
     * Destructor.
     */
   def close(): Unit = js.native
+  
   /**
     * Gets the local description from the underlying media implementation.
     * @param options - Options object to be used by getDescription.
@@ -26,12 +24,19 @@ trait SessionDescriptionHandler extends js.Object {
   def getDescription(options: js.UndefOr[scala.Nothing], modifiers: js.Array[SessionDescriptionHandlerModifier]): js.Promise[BodyAndContentType] = js.native
   def getDescription(options: SessionDescriptionHandlerOptions): js.Promise[BodyAndContentType] = js.native
   def getDescription(options: SessionDescriptionHandlerOptions, modifiers: js.Array[SessionDescriptionHandlerModifier]): js.Promise[BodyAndContentType] = js.native
+  
   /**
     * Returns true if the Session Description Handler can handle the Content-Type described by a SIP message.
     * @param contentType - The content type that is in the SIP Message.
     * @returns True if the content type is  handled by this session description handler. False otherwise.
     */
   def hasDescription(contentType: String): Boolean = js.native
+  
+  /**
+    * Rolls back the current local/remote offer to the prior stable state.
+    */
+  var rollbackDescription: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
+  
   /**
     * Send DTMF via RTP (RFC 4733).
     * Returns true if DTMF send is successful, false otherwise.
@@ -41,6 +46,7 @@ trait SessionDescriptionHandler extends js.Object {
     */
   def sendDtmf(tones: String): Boolean = js.native
   def sendDtmf(tones: String, options: js.Any): Boolean = js.native
+  
   /**
     * Sets the remote description to the underlying media implementation.
     * @param  sessionDescription - The description provided by a SIP message to be set on the media implementation.
@@ -63,4 +69,3 @@ trait SessionDescriptionHandler extends js.Object {
     modifiers: js.Array[SessionDescriptionHandlerModifier]
   ): js.Promise[Unit] = js.native
 }
-

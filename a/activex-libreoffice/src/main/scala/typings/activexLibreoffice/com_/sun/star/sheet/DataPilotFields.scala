@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a collection of fields in a data pilot table.
@@ -22,8 +22,8 @@ trait DataPilotFields
   extends XIndexAccess
      with XEnumerationAccess
      with XNameAccess
-
 object DataPilotFields {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -45,4 +45,3 @@ object DataPilotFields {
     __obj.asInstanceOf[DataPilotFields]
   }
 }
-

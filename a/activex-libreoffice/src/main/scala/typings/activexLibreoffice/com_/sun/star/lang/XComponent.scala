@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows to exclicitly free resources and break cyclic references.
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XComponent extends XInterface {
+  
   /**
     * adds an event listener to the object.
     *
@@ -30,6 +31,7 @@ trait XComponent extends XInterface {
     * @see XComponent.removeEventListener
     */
   def addEventListener(xListener: XEventListener): Unit = js.native
+  
   /**
     * The owner of an object calls this method to explicitly free all resources kept by this object and thus break cyclic references.
     *
@@ -47,6 +49,7 @@ trait XComponent extends XInterface {
     * cope with multiple {@link dispose()} -calls (which are inevitable in a multithreaded environment).
     */
   def dispose(): Unit = js.native
+  
   /**
     * removes an event listener from the listener list.
     *
@@ -60,8 +63,8 @@ trait XComponent extends XInterface {
     */
   def removeEventListener(aListener: XEventListener): Unit = js.native
 }
-
 object XComponent {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -74,24 +77,29 @@ object XComponent {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), dispose = js.Any.fromFunction0(dispose), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener))
     __obj.asInstanceOf[XComponent]
   }
+  
   @scala.inline
   implicit class XComponentOps[Self <: XComponent] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddEventListener(value: XEventListener => Unit): Self = this.set("addEventListener", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRemoveEventListener(value: XEventListener => Unit): Self = this.set("removeEventListener", js.Any.fromFunction1(value))
   }
-  
 }
-

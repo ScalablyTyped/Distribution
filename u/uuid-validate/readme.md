@@ -10,9 +10,9 @@ Javascript validator for UUID versions 1 through 5
 | ------------------ | :-------------: |
 | Full name          | uuid-validate |
 | Keywords           | uuid, validate, validator |
-| # releases         | 2 |
-| # dependents       | 62 |
-| # downloads        | 1727502 |
+| # releases         | 0 |
+| # dependents       | 76 |
+| # downloads        | 2780394 |
 | # stars            | 2 |
 
 ## Links

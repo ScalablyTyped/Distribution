@@ -2,30 +2,26 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait DataBuffer extends js.Object {
+  
   /** Gets or sets the size of the underlying buffer */
-  var capacity: Double
+  var capacity: Double = js.native
+  
   /**
     * Gets or sets a boolean indicating if the buffer contains 32bits indices
     */
-  var is32Bits: Boolean
+  var is32Bits: Boolean = js.native
+  
   /**
     * Gets or sets the number of objects referencing this buffer
     */
-  var references: Double
+  var references: Double = js.native
+  
   /**
     * Gets the underlying buffer
     */
-  def underlyingResource: js.Any
+  def underlyingResource: js.Any = js.native
 }
-
-object DataBuffer {
-  @scala.inline
-  def apply(capacity: Double, is32Bits: Boolean, references: Double, underlyingResource: () => js.Any): DataBuffer = {
-    val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any], is32Bits = is32Bits.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], underlyingResource = js.Any.fromFunction0(underlyingResource))
-    __obj.asInstanceOf[DataBuffer]
-  }
-}
-

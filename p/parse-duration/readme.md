@@ -4,15 +4,15 @@
 Typings are for version 0.4.4
 
 ## Library description:
-convert a human readable duration string to ms
+convert a human readable duration string to a duration format
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | parse-duration |
 | Keywords           | parse, duration, time |
-| # releases         | 2 |
-| # dependents       | 108 |
-| # downloads        | 2942308 |
+| # releases         | 14 |
+| # dependents       | 121 |
+| # downloads        | 3693484 |
 | # stars            | 7 |
 
 ## Links

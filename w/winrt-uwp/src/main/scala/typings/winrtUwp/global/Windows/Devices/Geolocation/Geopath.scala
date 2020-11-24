@@ -4,7 +4,7 @@ import typings.winrtUwp.Windows.Devices.Geolocation.BasicGeoposition
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an ordered series of geographic points. */
 @JSGlobal("Windows.Devices.Geolocation.Geopath")
@@ -37,4 +37,3 @@ class Geopath protected ()
     spatialReferenceId: Double
   ) = this()
 }
-

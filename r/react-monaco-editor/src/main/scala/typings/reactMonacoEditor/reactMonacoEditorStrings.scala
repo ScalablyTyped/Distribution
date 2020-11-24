@@ -2,9 +2,127 @@ package typings.reactMonacoEditor
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMonacoEditorStrings {
+  
+  @scala.inline
+  def advanced: advanced = "advanced".asInstanceOf[advanced]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def altKey: altKey = "altKey".asInstanceOf[altKey]
+  
+  @scala.inline
+  def always: always = "always".asInstanceOf[always]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def boundary: boundary = "boundary".asInstanceOf[boundary]
+  
+  @scala.inline
+  def bounded: bounded = "bounded".asInstanceOf[bounded]
+  
+  @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
+  
+  @scala.inline
+  def ctrlKey: ctrlKey = "ctrlKey".asInstanceOf[ctrlKey]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def editable: editable = "editable".asInstanceOf[editable]
+  
+  @scala.inline
+  def editor: editor = "editor".asInstanceOf[editor]
+  
+  @scala.inline
+  def first: first = "first".asInstanceOf[first]
+  
+  @scala.inline
+  def full: full = "full".asInstanceOf[full]
+  
+  @scala.inline
+  def gutter: gutter = "gutter".asInstanceOf[gutter]
+  
+  @scala.inline
+  def indentation: indentation = "indentation".asInstanceOf[indentation]
+  
+  @scala.inline
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @scala.inline
+  def line: line = "line".asInstanceOf[line]
+  
+  @scala.inline
+  def metaKey: metaKey = "metaKey".asInstanceOf[metaKey]
+  
+  @scala.inline
+  def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
+  
+  @scala.inline
+  def near: near = "near".asInstanceOf[near]
+  
+  @scala.inline
+  def never: never = "never".asInstanceOf[never]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  
+  @scala.inline
+  def on: on = "on".asInstanceOf[on]
+  
+  @scala.inline
+  def onlySnippets: onlySnippets = "onlySnippets".asInstanceOf[onlySnippets]
+  
+  @scala.inline
+  def prompt: prompt = "prompt".asInstanceOf[prompt]
+  
+  @scala.inline
+  def recentlyUsed: recentlyUsed = "recentlyUsed".asInstanceOf[recentlyUsed]
+  
+  @scala.inline
+  def recentlyUsedByPrefix: recentlyUsedByPrefix = "recentlyUsedByPrefix".asInstanceOf[recentlyUsedByPrefix]
+  
+  @scala.inline
+  def selection: selection = "selection".asInstanceOf[selection]
+  
+  @scala.inline
+  def simple: simple = "simple".asInstanceOf[simple]
+  
+  @scala.inline
+  def smart: smart = "smart".asInstanceOf[smart]
+  
+  @scala.inline
+  def spread: spread = "spread".asInstanceOf[spread]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def trailing: trailing = "trailing".asInstanceOf[trailing]
+  
+  @scala.inline
+  def tree: tree = "tree".asInstanceOf[tree]
+  
+  @scala.inline
+  def wordWrapColumn: wordWrapColumn = "wordWrapColumn".asInstanceOf[wordWrapColumn]
+  
   @js.native
   sealed trait advanced extends js.Object
   
@@ -87,6 +205,9 @@ object reactMonacoEditorStrings {
   sealed trait onlySnippets extends js.Object
   
   @js.native
+  sealed trait prompt extends js.Object
+  
+  @js.native
   sealed trait recentlyUsed extends js.Object
   
   @js.native
@@ -111,84 +232,11 @@ object reactMonacoEditorStrings {
   sealed trait top extends js.Object
   
   @js.native
+  sealed trait trailing extends js.Object
+  
+  @js.native
   sealed trait tree extends js.Object
   
   @js.native
   sealed trait wordWrapColumn extends js.Object
-  
-  @scala.inline
-  def advanced: advanced = "advanced".asInstanceOf[advanced]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def altKey: altKey = "altKey".asInstanceOf[altKey]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def boundary: boundary = "boundary".asInstanceOf[boundary]
-  @scala.inline
-  def bounded: bounded = "bounded".asInstanceOf[bounded]
-  @scala.inline
-  def copy: copy = "copy".asInstanceOf[copy]
-  @scala.inline
-  def ctrlKey: ctrlKey = "ctrlKey".asInstanceOf[ctrlKey]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def editable: editable = "editable".asInstanceOf[editable]
-  @scala.inline
-  def editor: editor = "editor".asInstanceOf[editor]
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
-  @scala.inline
-  def gutter: gutter = "gutter".asInstanceOf[gutter]
-  @scala.inline
-  def indentation: indentation = "indentation".asInstanceOf[indentation]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
-  @scala.inline
-  def metaKey: metaKey = "metaKey".asInstanceOf[metaKey]
-  @scala.inline
-  def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
-  @scala.inline
-  def near: near = "near".asInstanceOf[near]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def on: on = "on".asInstanceOf[on]
-  @scala.inline
-  def onlySnippets: onlySnippets = "onlySnippets".asInstanceOf[onlySnippets]
-  @scala.inline
-  def recentlyUsed: recentlyUsed = "recentlyUsed".asInstanceOf[recentlyUsed]
-  @scala.inline
-  def recentlyUsedByPrefix: recentlyUsedByPrefix = "recentlyUsedByPrefix".asInstanceOf[recentlyUsedByPrefix]
-  @scala.inline
-  def selection: selection = "selection".asInstanceOf[selection]
-  @scala.inline
-  def simple: simple = "simple".asInstanceOf[simple]
-  @scala.inline
-  def smart: smart = "smart".asInstanceOf[smart]
-  @scala.inline
-  def spread: spread = "spread".asInstanceOf[spread]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def tree: tree = "tree".asInstanceOf[tree]
-  @scala.inline
-  def wordWrapColumn: wordWrapColumn = "wordWrapColumn".asInstanceOf[wordWrapColumn]
 }
-

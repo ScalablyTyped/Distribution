@@ -11,7 +11,7 @@ knockout-postbox ================ *knockout-postbox* is a [Knockout.js](http://k
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 41881 |
+| # downloads        | 58834 |
 | # stars            | 0 |
 
 ## Links

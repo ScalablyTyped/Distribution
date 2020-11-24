@@ -5,11 +5,12 @@ import typings.node.tlsMod.TLSSocket
 import typings.node.urlMod.URL_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("http2", "connect")
 @js.native
 object connect extends js.Object {
+  
   def apply(authority: String): ClientHttp2Session = js.native
   def apply(
     authority: String,
@@ -55,4 +56,3 @@ object connect extends js.Object {
     listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
   ): ClientHttp2Session = js.native
 }
-

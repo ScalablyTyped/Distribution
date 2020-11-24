@@ -4,13 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor/built/locators", "ProtractorBy")
 @js.native
 class ProtractorBy ()
   extends WebdriverBy
      with /* key */ StringDictionary[js.Any] {
+  
   def addLocator(name: String, script: String): Unit = js.native
   /**
     * Add a locator to this instance of ProtractorBy. This locator can then be
@@ -47,6 +48,7 @@ class ProtractorBy ()
     *     element. It should return an array of elements.
     */
   def addLocator(name: String, script: js.Function): Unit = js.native
+  
   /**
     * Find an element by text binding. Does a partial match, so any elements
     * bound to variables containing the input string will be returned.
@@ -78,6 +80,7 @@ class ProtractorBy ()
     * @returns {ProtractorLocator} location strategy
     */
   def binding(bindingDescriptor: String): ProtractorLocator = js.native
+  
   /**
     * Find a button by text.
     *
@@ -91,7 +94,9 @@ class ProtractorBy ()
     * @returns {ProtractorLocator} location strategy
     */
   def buttonText(searchText: String): ProtractorLocator = js.native
+  
   /* private */ def byRepeaterInner(exact: js.Any, repeatDescriptor: js.Any): js.Any = js.native
+  
   /**
     * Find elements by CSS which contain a certain string.
     *
@@ -111,6 +116,7 @@ class ProtractorBy ()
     */
   def cssContainingText(cssSelector: String, searchText: String): ProtractorLocator = js.native
   def cssContainingText(cssSelector: String, searchText: RegExp): ProtractorLocator = js.native
+  
   /**
     * Find an element by css selector within the Shadow DOM.
     *
@@ -133,6 +139,7 @@ class ProtractorBy ()
     * @returns {Locator} location strategy
     */
   def deepCss(selector: String): Locator = js.native
+  
   /**
     * Find an element by exact binding.
     *
@@ -153,6 +160,7 @@ class ProtractorBy ()
     * @returns {ProtractorLocator} location strategy
     */
   def exactBinding(bindingDescriptor: String): ProtractorLocator = js.native
+  
   /**
     * Find an element by exact repeater.
     *
@@ -172,6 +180,7 @@ class ProtractorBy ()
     * @returns {ProtractorLocator} location strategy
     */
   def exactRepeater(repeatDescriptor: String): ProtractorLocator = js.native
+  
   /**
     * Find an element by ng-model expression.
     *
@@ -188,6 +197,7 @@ class ProtractorBy ()
     * @returns {ProtractorLocator} location strategy
     */
   def model(model: String): ProtractorLocator = js.native
+  
   /**
     * Find an element by ng-options expression.
     *
@@ -208,6 +218,7 @@ class ProtractorBy ()
     * @returns {ProtractorLocator} location strategy
     */
   def options(optionsDescriptor: String): ProtractorLocator = js.native
+  
   /**
     * Find a button by partial text.
     *
@@ -221,6 +232,7 @@ class ProtractorBy ()
     * @returns {ProtractorLocator} location strategy
     */
   def partialButtonText(searchText: String): ProtractorLocator = js.native
+  
   /**
     * Find elements inside an ng-repeat.
     *
@@ -277,4 +289,3 @@ class ProtractorBy ()
     */
   def repeater(repeatDescriptor: String): ProtractorLocator = js.native
 }
-

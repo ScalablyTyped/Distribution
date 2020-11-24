@@ -2,17 +2,19 @@ package typings.node.tlsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tls", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * The default curve name to use for ECDH key agreement in a tls server.
     * The default value is 'auto'. See tls.createSecureContext() for further
     * information.
     */
   var DEFAULT_ECDH_CURVE: String = js.native
+  
   /**
     * The default value of the maxVersion option of
     * tls.createSecureContext(). It can be assigned any of the supported TLS
@@ -23,6 +25,7 @@ object ^ extends js.Object {
     * is used.
     */
   var DEFAULT_MAX_VERSION: SecureVersion = js.native
+  
   /**
     * The default value of the minVersion option of tls.createSecureContext().
     * It can be assigned any of the supported TLS protocol versions,
@@ -34,4 +37,3 @@ object ^ extends js.Object {
     */
   var DEFAULT_MIN_VERSION: SecureVersion = js.native
 }
-

@@ -11,11 +11,12 @@ import typings.activexLibreoffice.com_.sun.star.geometry.XMapping2D
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specialization of a {@link XCanvas} , where moving, animated objects (called sprites) are supported. */
 @js.native
 trait XSpriteCanvas extends XCanvas {
+  
   /**
     * Create a cloned version of an already existing sprite object.
     *
@@ -25,6 +26,7 @@ trait XSpriteCanvas extends XCanvas {
     * @returns an interface to a sprite object.
     */
   def createClonedSprite(original: XSprite): XSprite = js.native
+  
   /**
     * Create a custom, user-handles-it-all sprite object.
     *
@@ -33,8 +35,10 @@ trait XSpriteCanvas extends XCanvas {
     * @returns an interface to a custom sprite object.
     */
   def createCustomSprite(spriteSize: RealSize2D): XCustomSprite = js.native
+  
   /** Create a sprite object from the specified animation sequence. A sprite is a back-buffered object with its own, independent animation. */
   def createSpriteFromAnimation(animation: XAnimation): XAnimatedSprite = js.native
+  
   /**
     * Create a sprite object from the specified animation sequence.
     *
@@ -44,6 +48,7 @@ trait XSpriteCanvas extends XCanvas {
     * @throws VolatileContentDestroyedException if at least one of the bitmap is volatile, and its content has been destroyed by the system.
     */
   def createSpriteFromBitmaps(animationBitmaps: SeqEquiv[XBitmap], interpolationMode: Double): XAnimatedSprite = js.native
+  
   /**
     * Tells the sprite canvas to now update the screen representation.
     *
@@ -57,8 +62,8 @@ trait XSpriteCanvas extends XCanvas {
     */
   def updateScreen(bUpdateAll: Boolean): Boolean = js.native
 }
-
 object XSpriteCanvas {
+  
   @scala.inline
   def apply(
     Device: XGraphicDevice,
@@ -93,28 +98,35 @@ object XSpriteCanvas {
     val __obj = js.Dynamic.literal(Device = Device.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), clear = js.Any.fromFunction0(clear), createClonedSprite = js.Any.fromFunction1(createClonedSprite), createCustomSprite = js.Any.fromFunction1(createCustomSprite), createFont = js.Any.fromFunction3(createFont), createSpriteFromAnimation = js.Any.fromFunction1(createSpriteFromAnimation), createSpriteFromBitmaps = js.Any.fromFunction2(createSpriteFromBitmaps), drawBezier = js.Any.fromFunction4(drawBezier), drawBitmap = js.Any.fromFunction3(drawBitmap), drawBitmapModulated = js.Any.fromFunction3(drawBitmapModulated), drawLine = js.Any.fromFunction4(drawLine), drawPoint = js.Any.fromFunction3(drawPoint), drawPolyPolygon = js.Any.fromFunction3(drawPolyPolygon), drawText = js.Any.fromFunction5(drawText), drawTextLayout = js.Any.fromFunction3(drawTextLayout), fillPolyPolygon = js.Any.fromFunction3(fillPolyPolygon), fillTextureMappedPolyPolygon = js.Any.fromFunction5(fillTextureMappedPolyPolygon), fillTexturedPolyPolygon = js.Any.fromFunction4(fillTexturedPolyPolygon), getDevice = js.Any.fromFunction0(getDevice), queryAvailableFonts = js.Any.fromFunction2(queryAvailableFonts), queryInterface = js.Any.fromFunction1(queryInterface), queryStrokeShapes = js.Any.fromFunction4(queryStrokeShapes), release = js.Any.fromFunction0(release), strokePolyPolygon = js.Any.fromFunction4(strokePolyPolygon), strokeTextureMappedPolyPolygon = js.Any.fromFunction6(strokeTextureMappedPolyPolygon), strokeTexturedPolyPolygon = js.Any.fromFunction5(strokeTexturedPolyPolygon), updateScreen = js.Any.fromFunction1(updateScreen))
     __obj.asInstanceOf[XSpriteCanvas]
   }
+  
   @scala.inline
   implicit class XSpriteCanvasOps[Self <: XSpriteCanvas] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreateClonedSprite(value: XSprite => XSprite): Self = this.set("createClonedSprite", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateCustomSprite(value: RealSize2D => XCustomSprite): Self = this.set("createCustomSprite", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateSpriteFromAnimation(value: XAnimation => XAnimatedSprite): Self = this.set("createSpriteFromAnimation", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateSpriteFromBitmaps(value: (SeqEquiv[XBitmap], Double) => XAnimatedSprite): Self = this.set("createSpriteFromBitmaps", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setUpdateScreen(value: Boolean => Boolean): Self = this.set("updateScreen", js.Any.fromFunction1(value))
   }
-  
 }
-

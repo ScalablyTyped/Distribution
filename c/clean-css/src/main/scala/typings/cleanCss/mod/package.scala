@@ -2,9 +2,10 @@ package typings.cleanCss
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /**
     * Callback type when fetch is used
     */
@@ -13,6 +14,7 @@ package object mod {
     /* body */ java.lang.String, 
     scala.Unit
   ]
+  
   /**
     * Hash of input source(s).  Passing an array of hashes allows you to explicitly specify the order in which the input files
     *  are concatenated. Whereas when you use a single hash the order is determined by the traversal order of object properties
@@ -21,6 +23,7 @@ package object mod {
     * Path to file
     */
   org.scalablytyped.runtime.StringDictionary[typings.cleanCss.anon.SourceMap]
+  
   /**
     * Union of all types acceptable as input for the minify function
     */

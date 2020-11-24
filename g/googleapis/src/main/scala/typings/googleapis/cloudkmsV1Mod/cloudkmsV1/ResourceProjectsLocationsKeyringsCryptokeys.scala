@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudkms/v1", "cloudkms_v1.Resource$Projects$Locations$Keyrings$Cryptokeys")
 @js.native
 class ResourceProjectsLocationsKeyringsCryptokeys protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var cryptoKeyVersions: ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.create
     * @desc Create a new CryptoKey within a KeyRing.  CryptoKey.purpose and
@@ -48,6 +49,9 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCryptoKey]
   ): Unit = js.native
+  
+  var cryptoKeyVersions: ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.decrypt
     * @desc Decrypts data that was protected by Encrypt. The CryptoKey.purpose
@@ -81,6 +85,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDecryptResponse]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.encrypt
     * @desc Encrypts data, so that it can only be recovered by a call to
@@ -114,6 +119,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEncryptResponse]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.get
     * @desc Returns metadata for a given CryptoKey, as well as its primary
@@ -146,6 +152,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCryptoKey]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -178,6 +185,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.list
     * @desc Lists CryptoKeys.
@@ -212,6 +220,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListCryptoKeysResponse]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.patch
     * @desc Update a CryptoKey.
@@ -245,6 +254,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCryptoKey]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -278,6 +288,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -317,6 +328,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.cryptoKeys.updatePrimaryVersion
     * @desc Update the version of a CryptoKey that will be used in Encrypt.
@@ -355,4 +367,3 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends js.Object
     callback: BodyResponseCallback[SchemaCryptoKey]
   ): Unit = js.native
 }
-

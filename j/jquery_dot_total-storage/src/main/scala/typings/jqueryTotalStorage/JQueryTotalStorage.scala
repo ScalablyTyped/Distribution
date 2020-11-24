@@ -2,7 +2,7 @@ package typings.jqueryTotalStorage
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 * @desc Set the value of a key to a string
@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
 */
 @js.native
 trait JQueryTotalStorage extends js.Object {
+  
   /**
     * @desc Set or get a key's value
     * @param key Key to set.
@@ -30,20 +31,24 @@ trait JQueryTotalStorage extends js.Object {
   def apply(key: String, value: js.UndefOr[scala.Nothing], options: JQueryTotalStorageOptions): js.Any = js.native
   def apply(key: String, value: js.Any): js.Any = js.native
   def apply(key: String, value: js.Any, options: JQueryTotalStorageOptions): js.Any = js.native
+  
   /**
     * @desc Delete item by key
     * @param key Key of item to delete
     */
   def deleteItem(key: String): Boolean = js.native
+  
   /**
     * @desc Get all set values
     */
   def getAll(): js.Array[_] = js.native
+  
   /**
     * @desc Get a key's value
     * @param key Key to get.
     */
   def getItem(key: String): js.Any = js.native
+  
   /**
     * @desc Set a key's value
     * @param key Key to set.
@@ -51,4 +56,3 @@ trait JQueryTotalStorage extends js.Object {
     */
   def setItem(key: String, value: js.Any): js.Any = js.native
 }
-

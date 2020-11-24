@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TextAlignment extends js.Object
-
 /**
   * An enumeration of the type of text alignments.
   *
@@ -17,6 +16,7 @@ sealed trait TextAlignment extends js.Object
 @JSGlobal("GoogleAppsScript.Document.TextAlignment")
 @js.native
 object TextAlignment extends js.Object {
+  
   @js.native
   sealed trait NORMAL extends TextAlignment
   
@@ -25,6 +25,4 @@ object TextAlignment extends js.Object {
   
   @js.native
   sealed trait SUPERSCRIPT extends TextAlignment
-  
 }
-

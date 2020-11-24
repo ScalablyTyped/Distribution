@@ -9,7 +9,7 @@ import typings.angularCompiler.angularCompilerNumbers.`5`
 import typings.angularCompiler.angularCompilerNumbers.`6`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.angularCompiler.angularCompilerNumbers.`0`
@@ -21,8 +21,8 @@ import scala.scalajs.js.annotation._
   - typings.angularCompiler.angularCompilerNumbers.`6`
 */
 trait AttributeMarker extends js.Object
-
 object AttributeMarker {
+  
   /**
     * Signals that the following attribute names were extracted from input or output bindings.
     *
@@ -40,6 +40,7 @@ object AttributeMarker {
     */
   @scala.inline
   def Bindings: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * Signals class declaration.
     *
@@ -58,6 +59,7 @@ object AttributeMarker {
     */
   @scala.inline
   def Classes: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * Signals that the following attribute will be translated by runtime i18n
     *
@@ -74,6 +76,7 @@ object AttributeMarker {
     */
   @scala.inline
   def I18n: `6` = 6.asInstanceOf[`6`]
+  
   /**
     * Marker indicates that the following 3 values in the attributes array are:
     * namespaceUri, attributeName, attributeValue
@@ -81,6 +84,7 @@ object AttributeMarker {
     */
   @scala.inline
   def NamespaceURI: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * Signals that the following attribute is `ngProjectAs` and its value is a parsed `CssSelector`.
     *
@@ -98,6 +102,7 @@ object AttributeMarker {
     */
   @scala.inline
   def ProjectAs: `5` = 5.asInstanceOf[`5`]
+  
   /**
     * Signals style declaration.
     *
@@ -117,6 +122,7 @@ object AttributeMarker {
     */
   @scala.inline
   def Styles: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * Signals that the following attribute names were hoisted from an inline-template declaration.
     *
@@ -143,4 +149,3 @@ object AttributeMarker {
   @scala.inline
   def Template: `4` = 4.asInstanceOf[`4`]
 }
-

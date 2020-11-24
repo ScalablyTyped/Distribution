@@ -2,12 +2,11 @@ package typings.naverWhale.whale.devtools.inspectedWindow
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Resource extends js.Object {
-  /** The URL of the resource. */
-  var url: String = js.native
+  
   /**
     * Gets the content of the resource.
     * @param callback A function that receives resource content when the request completes.
@@ -17,6 +16,7 @@ trait Resource extends js.Object {
     * Parameter encoding: Empty if content is not encoded, encoding name otherwise. Currently, only base64 is supported.
     */
   def getContent(callback: js.Function2[/* content */ String, /* encoding */ String, Unit]): Unit = js.native
+  
   /**
     * Sets the content of the resource.
     * @param content New content of the resource. Only resources with the text type are currently supported.
@@ -28,5 +28,7 @@ trait Resource extends js.Object {
     */
   def setContent(content: String, commit: Boolean): Unit = js.native
   def setContent(content: String, commit: Boolean, callback: js.Function1[/* error */ js.Object, Unit]): Unit = js.native
+  
+  /** The URL of the resource. */
+  var url: String = js.native
 }
-

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/jobs/v2", "jobs_v2.Resource$V2")
 @js.native
 class ResourceV2 protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * jobs.complete
     * @desc Completes the specified prefix with job keyword suggestions.
@@ -47,5 +47,6 @@ class ResourceV2 protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCompleteQueryResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
 }
-

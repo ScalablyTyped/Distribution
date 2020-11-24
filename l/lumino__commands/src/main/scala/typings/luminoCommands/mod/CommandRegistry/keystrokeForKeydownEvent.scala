@@ -3,11 +3,12 @@ package typings.luminoCommands.mod.CommandRegistry
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/commands", "CommandRegistry.keystrokeForKeydownEvent")
 @js.native
 object keystrokeForKeydownEvent extends js.Object {
+  
   /**
     * Create a normalized keystroke for a `'keydown'` event.
     *
@@ -18,4 +19,3 @@ object keystrokeForKeydownEvent extends js.Object {
     */
   def apply(event: KeyboardEvent): String = js.native
 }
-

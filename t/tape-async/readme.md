@@ -11,8 +11,8 @@ A lite wrapper around tape to simplify async testing.
 | Full name          | tape-async |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 41213 |
+| # dependents       | 5 |
+| # downloads        | 27832 |
 | # stars            | 1 |
 
 ## Links

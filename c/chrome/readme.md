@@ -11,7 +11,7 @@ Open chrome in shell
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 27845 |
+| # downloads        | 39364 |
 | # stars            | 0 |
 
 ## Links

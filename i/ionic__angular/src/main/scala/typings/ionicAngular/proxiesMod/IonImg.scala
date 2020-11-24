@@ -8,17 +8,21 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular/directives/proxies", "IonImg")
 @js.native
 class IonImg protected ()
   extends typings.ionicCore.componentsMod.Components.IonImg {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
+  
   var el: HTMLElement = js.native
+  
   var ionError: EventEmitter[CustomEvent[_]] = js.native
+  
   var ionImgDidLoad: EventEmitter[CustomEvent[_]] = js.native
+  
   var ionImgWillLoad: EventEmitter[CustomEvent[_]] = js.native
+  
   var z: NgZone = js.native
 }
-

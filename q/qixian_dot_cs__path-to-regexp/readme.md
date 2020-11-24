@@ -10,9 +10,9 @@ Express style path to RegExp utility
 | ------------------ | :-------------: |
 | Full name          | @qixian.cs/path-to-regexp |
 | Keywords           | express, regexp, route, routing |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 0 |
+| # releases         | 3 |
+| # dependents       | 1 |
+| # downloads        | 77572 |
 | # stars            | 0 |
 
 ## Links

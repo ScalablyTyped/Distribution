@@ -10,9 +10,9 @@ TypeSafe CSS
 | ------------------ | :-------------: |
 | Full name          | typestyle |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 107 |
-| # downloads        | 1411017 |
+| # releases         | 5 |
+| # dependents       | 123 |
+| # downloads        | 2629585 |
 | # stars            | 8 |
 
 ## Links

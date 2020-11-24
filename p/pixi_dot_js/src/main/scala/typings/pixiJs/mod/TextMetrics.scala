@@ -4,7 +4,7 @@ import typings.pixiJs.PIXI.IFontMetrics
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The TextMetrics object represents the measurement of a block of text with a specified style.
@@ -33,11 +33,11 @@ class TextMetrics protected ()
     fontProperties: js.Any
   ) = this()
 }
-
 /* static members */
 @JSImport("pixi.js", "TextMetrics")
 @js.native
 object TextMetrics extends js.Object {
+  
   /**
     * Baseline multiplier for calculate font metrics.
     *
@@ -48,6 +48,7 @@ object TextMetrics extends js.Object {
     * @default 1.4
     */
   var BASELINE_MULTIPLIER: Double = js.native
+  
   /**
     * Baseline symbol for calculate font metrics.
     *
@@ -58,6 +59,7 @@ object TextMetrics extends js.Object {
     * @default M
     */
   var BASELINE_SYMBOL: String = js.native
+  
   /**
     * String used for calculate font metrics.
     * These characters are all tall to help calculate the height required for text.
@@ -69,6 +71,7 @@ object TextMetrics extends js.Object {
     * @default |ÉqÅ
     */
   var METRICS_STRING: String = js.native
+  
   /**
     * Overridable helper method used internally by TextMetrics, exposed to allow customizing the class's behavior.
     *
@@ -85,6 +88,7 @@ object TextMetrics extends js.Object {
     * @return {boolean} whether to break word or not
     */
   def canBreakChars(char: String, nextChar: String, token: String, index: Double, breakWords: Boolean): Boolean = js.native
+  
   /**
     * Overridable helper method used internally by TextMetrics, exposed to allow customizing the class's behavior.
     *
@@ -97,6 +101,7 @@ object TextMetrics extends js.Object {
     * @return {boolean} whether to break word or not
     */
   def canBreakWords(token: String, breakWords: Boolean): Boolean = js.native
+  
   /**
     * Clear font metrics in metrics cache.
     *
@@ -105,6 +110,7 @@ object TextMetrics extends js.Object {
     */
   def clearMetrics(): Unit = js.native
   def clearMetrics(font: String): Unit = js.native
+  
   /**
     * Calculates the ascent, descent and fontSize of a given font-style
     *
@@ -113,6 +119,7 @@ object TextMetrics extends js.Object {
     * @return {PIXI.IFontMetrics} Font properties object
     */
   def measureFont(font: String): IFontMetrics = js.native
+  
   /**
     * Measures the supplied string of text and returns a Rectangle.
     *
@@ -131,6 +138,7 @@ object TextMetrics extends js.Object {
   ): typings.pixiJs.PIXI.TextMetrics = js.native
   def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle, wordWrap: Boolean): typings.pixiJs.PIXI.TextMetrics = js.native
   def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle, wordWrap: Boolean, canvas: HTMLCanvasElement): typings.pixiJs.PIXI.TextMetrics = js.native
+  
   /**
     * Overridable helper method used internally by TextMetrics, exposed to allow customizing the class's behavior.
     *
@@ -147,4 +155,3 @@ object TextMetrics extends js.Object {
     */
   def wordWrapSplit(token: String): js.Array[String] = js.native
 }
-

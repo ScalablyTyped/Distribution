@@ -5,11 +5,12 @@ import typings.std.Partial
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/blocks", "cloneBlock")
 @js.native
 object cloneBlock extends js.Object {
+  
   def apply[T /* <: Record[String, _] */](block: BlockInstance[T]): BlockInstance[T] = js.native
   def apply[T /* <: Record[String, _] */](
     block: BlockInstance[T],
@@ -23,4 +24,3 @@ object cloneBlock extends js.Object {
     newInnerBlocks: js.Array[BlockInstance[StringDictionary[_]]]
   ): BlockInstance[T] = js.native
 }
-

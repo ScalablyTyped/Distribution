@@ -5,11 +5,12 @@ import typings.heremaps.H.service.ServiceParameters
 import typings.heremaps.H.service.metaInfo.Service.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("H.service.metaInfo")
 @js.native
 object metaInfo extends js.Object {
+  
   /**
     * This class encapsulates a Metainfo Tile end point of the HERE Map Tile API.
     */
@@ -59,6 +60,4 @@ object metaInfo extends js.Object {
       opt_options: typings.heremaps.H.service.metaInfo.TileProvider.Options
     ) = this()
   }
-  
 }
-

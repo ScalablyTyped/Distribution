@@ -12,11 +12,12 @@ import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.Windows.Foundation.Size
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a sequence of event fields and provides methods for adding fields to the sequence. */
 @js.native
 trait LoggingFields extends js.Object {
+  
   /**
     * Adds a boolean field with the specified field name.
     * @param name Name of the event field.
@@ -38,6 +39,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addBoolean(name: String, value: Boolean, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a boolean array field with the specified field name.
     * @param name The name of the event field.
@@ -59,6 +61,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addBooleanArray(name: String, value: js.Array[Boolean], format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a 16-bit character field with the specified field name.
     * @param name The name of the event field.
@@ -80,6 +83,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addChar16(name: String, value: String, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a 16-bit character array field with the specified field name.
     * @param name The name of the event field.
@@ -101,6 +105,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addChar16Array(name: String, value: js.Array[String], format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a DateTime field with the specified field name.
     * @param name The name of the event field.
@@ -122,6 +127,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addDateTime(name: String, value: Date, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a DateTime array field with the specified field name.
     * @param name The name of the event field.
@@ -143,6 +149,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addDateTimeArray(name: String, value: js.Array[Date], format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a Double field with the specified field name.
     * @param name Name of the event field.
@@ -164,6 +171,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addDouble(name: String, value: Double, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a Double array field with the specified field name.
     * @param name Name of the event field.
@@ -185,6 +193,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addDoubleArray(name: String, value: Float64Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds an empty field.
     * @param name Name of the event field.
@@ -203,6 +212,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addEmpty(name: String, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a GUID field with the specified field name.
     * @param name Name of the event field.
@@ -224,6 +234,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addGuid(name: String, value: String, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a GUID array field with the specified field name.
     * @param name Name of the event field.
@@ -245,6 +256,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addGuidArray(name: String, value: js.Array[String], format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a 16-bit integer field with the specified field name.
     * @param name Name of the event field.
@@ -266,6 +278,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addInt16(name: String, value: Double, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a 16-bit integer array field with the specified field name.
     * @param name Name of the event field.
@@ -287,6 +300,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addInt16Array(name: String, value: Int16Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a 32-bit integer array field with the specified field name.
     * @param name Name of the event field.
@@ -308,6 +322,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addInt32(name: String, value: Double, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a 32-bit integer array field with the specified field name.
     * @param name Name of the event field.
@@ -329,6 +344,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addInt32Array(name: String, value: Int32Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a 64-bit integer array field with the specified field name.
     * @param name Name of the event field.
@@ -350,6 +366,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addInt64(name: String, value: Double, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a 64-bit integer array field with the specified field name.
     * @param name Name of the event field.
@@ -371,6 +388,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addInt64Array(name: String, value: js.Array[Double], format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a Point field with the specified name.
     * @param name Name of the event field.
@@ -392,6 +410,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addPoint(name: String, value: Point, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a Point array field with the specified field name.
     * @param name Name of the event field.
@@ -413,6 +432,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addPointArray(name: String, value: Point, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a Rect field with the specified field name.
     * @param name Name of the event field.
@@ -434,6 +454,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addRect(name: String, value: Rect, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a Rect array field with the specified field name.
     * @param name Name of the event field.
@@ -455,6 +476,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addRectArray(name: String, value: Rect, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a Single field with the specified field name.
     * @param name Name of the event field.
@@ -476,6 +498,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addSingle(name: String, value: Double, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a Single array field with the specified field name.
     * @param name Name of the event field.
@@ -497,6 +520,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addSingleArray(name: String, value: Float32Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a Size field with the specified field name.
     * @param name Name of the event field.
@@ -518,6 +542,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addSize(name: String, value: Size, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a Size array field with the specified field name.
     * @param name The name of the field.
@@ -539,6 +564,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addSizeArray(name: String, value: Size, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a String field with the specified field name.
     * @param name Name of the event field.
@@ -560,6 +586,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addString(name: String, value: String, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a String array field with the specified field name.
     * @param name Name of the event field.
@@ -581,6 +608,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addStringArray(name: String, value: js.Array[String], format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a time span field with the specified field name.
     * @param name Name of the event field.
@@ -602,6 +630,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addTimeSpan(name: String, value: Double, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a time span array field with the specified field name.
     * @param name Name of the event field.
@@ -623,6 +652,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addTimeSpanArray(name: String, value: js.Array[Double], format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a 16-bit unsigned integer field with the specified field name.
     * @param name Name of the event field.
@@ -644,6 +674,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addUInt16(name: String, value: Double, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a16-bit unsigned integer field with the specified field name.
     * @param name Name of the event field.
@@ -665,6 +696,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addUInt16Array(name: String, value: Uint16Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a 32-bit unsigned integer field with the specified field name.
     * @param name Name of the event field.
@@ -686,6 +718,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addUInt32(name: String, value: Double, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a 32-bit unsigned integer array field with the specified field name.
     * @param name Name of the event field.
@@ -707,6 +740,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addUInt32Array(name: String, value: Uint32Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a 64-bit unsigned integer field with the specified field name.
     * @param name Name of the event field.
@@ -728,6 +762,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addUInt64(name: String, value: Double, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds a 64-bit unsigned integer array field with the specified field name.
     * @param name Name of the event field.
@@ -749,6 +784,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addUInt64Array(name: String, value: js.Array[Double], format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds an 8-bit unsigned integer field with the specified field name.
     * @param name Name of the event field.
@@ -770,6 +806,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addUInt8(name: String, value: Double, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Adds an 8-bit unsigned integer array field with the specified field name.
     * @param name Name of the event field.
@@ -791,6 +828,7 @@ trait LoggingFields extends js.Object {
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
   def addUInt8Array(name: String, value: js.Array[Double], format: LoggingFieldFormat, tags: Double): Unit = js.native
+  
   /**
     * Begins a new structured field with the specified field name.
     * @param name Name of the structured field.
@@ -802,9 +840,10 @@ trait LoggingFields extends js.Object {
     * @param tags Specifies up to twenty-eight bits of user-defined field metadata. The top four bits are reserved and must be set to zero (0).
     */
   def beginStruct(name: String, tags: Double): Unit = js.native
+  
   /** Removes all fields stored in the object and resets the object to its newly-constructed state. */
   def clear(): Unit = js.native
+  
   /** Ends a structured field. */
   def endStruct(): Unit = js.native
 }
-

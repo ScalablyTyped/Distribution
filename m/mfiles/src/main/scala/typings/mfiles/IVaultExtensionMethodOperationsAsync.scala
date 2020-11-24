@@ -2,10 +2,11 @@ package typings.mfiles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultExtensionMethodOperationsAsync extends js.Object {
+  
   def DoesActiveVaultExtensionMethodExist(MethodIdentifier: String): Unit = js.native
   def DoesActiveVaultExtensionMethodExist(
     MethodIdentifier: String,
@@ -42,6 +43,7 @@ trait IVaultExtensionMethodOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ExecuteVaultExtensionMethod(MethodIdentifier: String, Input: String): Unit = js.native
   def ExecuteVaultExtensionMethod(
     MethodIdentifier: String,
@@ -85,4 +87,3 @@ trait IVaultExtensionMethodOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ A higher order component for loading components with promises
 | ------------------ | :-------------: |
 | Full name          | react-loadable |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 414 |
-| # downloads        | 16187096 |
+| # releases         | 1 |
+| # dependents       | 514 |
+| # downloads        | 20692341 |
 | # stars            | 20 |
 
 ## Links

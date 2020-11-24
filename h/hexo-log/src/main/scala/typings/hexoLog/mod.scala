@@ -5,13 +5,18 @@ import typings.hexoLog.anon.Debug
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hexo-log", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def apply(): HexoLogger = js.native
+  def apply(options: Debug): HexoLogger = js.native
+  
   @js.native
   trait HexoLogger extends ^ {
+    
     /**
       * Returns a boolean: is the `debug` level enabled?
       *
@@ -37,6 +42,7 @@ object mod extends js.Object {
       * field name for the Error instance.
       */
     def d(obj: js.Object, params: js.Any*): Unit = js.native
+    
     /**
       * Returns a boolean: is the `error` level enabled?
       *
@@ -62,6 +68,7 @@ object mod extends js.Object {
       * field name for the Error instance.
       */
     def e(obj: js.Object, params: js.Any*): Unit = js.native
+    
     /**
       * Returns a boolean: is the `info` level enabled?
       *
@@ -87,6 +94,7 @@ object mod extends js.Object {
       * field name for the Error instance.
       */
     def i(obj: js.Object, params: js.Any*): Unit = js.native
+    
     /**
       * Returns a boolean: is the `info` level enabled?
       *
@@ -112,6 +120,7 @@ object mod extends js.Object {
       * field name for the Error instance.
       */
     def log(obj: js.Object, params: js.Any*): Unit = js.native
+    
     /**
       * Returns a boolean: is the `warn` level enabled?
       *
@@ -138,8 +147,4 @@ object mod extends js.Object {
       */
     def w(obj: js.Object, params: js.Any*): Unit = js.native
   }
-  
-  def apply(): HexoLogger = js.native
-  def apply(options: Debug): HexoLogger = js.native
 }
-

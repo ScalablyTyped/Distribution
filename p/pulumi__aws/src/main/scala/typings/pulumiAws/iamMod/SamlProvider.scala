@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/iam", "SamlProvider")
 @js.native
@@ -23,11 +23,11 @@ class SamlProvider protected ()
   def this(name: String, args: SamlProviderArgs) = this()
   def this(name: String, args: SamlProviderArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/iam", "SamlProvider")
 @js.native
 object SamlProvider extends js.Object {
+  
   /**
     * Get an existing SamlProvider resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object SamlProvider extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.samlProviderMod.SamlProvider = js.native
   def get(name: String, id: Input[ID], state: SamlProviderState): typings.pulumiAws.samlProviderMod.SamlProvider = js.native
   def get(name: String, id: Input[ID], state: SamlProviderState, opts: CustomResourceOptions): typings.pulumiAws.samlProviderMod.SamlProvider = js.native
+  
   /**
     * Returns true if the given object is an instance of SamlProvider.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/samlProvider.SamlProvider */ Boolean = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.randoma.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("randoma", JSImport.Namespace)
 @js.native
@@ -26,13 +26,12 @@ class ^ protected () extends Randoma {
   	*/
   def this(options: Options) = this()
 }
-
 @JSImport("randoma", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	@returns A random seed you could use in the `seed` option if you for some reason don't want deterministic randomness.
   	*/
   def seed(): Double = js.native
 }
-

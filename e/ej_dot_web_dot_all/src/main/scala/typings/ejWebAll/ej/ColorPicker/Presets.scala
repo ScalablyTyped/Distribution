@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.ColorPicker
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Presets extends js.Object
-
 @JSGlobal("ej.ColorPicker.Presets")
 @js.native
 object Presets extends js.Object {
+  
   ///used to show the basic presets
   @js.native
   sealed trait Basic extends Presets
@@ -53,6 +53,4 @@ object Presets extends js.Object {
   ///used to show the WebColors presets
   @js.native
   sealed trait WebColors extends Presets
-  
 }
-

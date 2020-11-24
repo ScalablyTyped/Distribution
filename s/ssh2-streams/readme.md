@@ -11,8 +11,8 @@ SSH2 and SFTP(v3) client/server protocol streams for node.js
 | Full name          | ssh2-streams |
 | Keywords           | ssh, ssh2, sftp, secure, protocol, streams, client, server |
 | # releases         | 16 |
-| # dependents       | 22 |
-| # downloads        | 10413885 |
+| # dependents       | 25 |
+| # downloads        | 16510635 |
 | # stars            | 6 |
 
 ## Links

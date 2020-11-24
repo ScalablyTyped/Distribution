@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.NodeMaterialConnectionPoint")
 @js.native
@@ -20,4 +20,16 @@ class NodeMaterialConnectionPoint protected ()
     direction: typings.babylonjs.BABYLON.NodeMaterialConnectionPointDirection
   ) = this()
 }
-
+/* static members */
+@JSGlobal("BABYLON.NodeMaterialConnectionPoint")
+@js.native
+object NodeMaterialConnectionPoint extends js.Object {
+  
+  /**
+    * Checks if two types are equivalent
+    * @param type1 type 1 to check
+    * @param type2 type 2 to check
+    * @returns true if both types are equivalent, else false
+    */
+  def AreEquivalentTypes(type1: Double, type2: Double): Boolean = js.native
+}

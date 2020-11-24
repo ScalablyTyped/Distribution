@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/tab" : "7.0.0"
+      "@material/tab" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/tab" : "7.0.0"
+      "@material/tab" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

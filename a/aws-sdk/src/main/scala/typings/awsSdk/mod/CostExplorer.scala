@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.costexplorerMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "CostExplorer")
 @js.native
@@ -14,4 +14,3 @@ class CostExplorer ()
   extends typings.awsSdk.allMod.CostExplorer {
   def this(options: ClientConfiguration) = this()
 }
-

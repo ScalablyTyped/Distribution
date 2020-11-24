@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Globalorganizationoperations")
 @js.native
 class ResourceGlobalorganizationoperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.globalOrganizationOperations.delete
     * @desc Deletes the specified Operations resource.
@@ -42,6 +44,7 @@ class ResourceGlobalorganizationoperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * compute.globalOrganizationOperations.get
     * @desc Retrieves the specified Operations resource. Gets a list of
@@ -75,6 +78,7 @@ class ResourceGlobalorganizationoperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.globalOrganizationOperations.list
     * @desc Retrieves a list of Operation resources contained within the
@@ -111,6 +115,7 @@ class ResourceGlobalorganizationoperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperationList]
   ): Unit = js.native
+  
   def wait(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def wait(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def wait(params: ParamsResourceGlobalorganizationoperationsWait): GaxiosPromise[SchemaOperation] = js.native
@@ -130,4 +135,3 @@ class ResourceGlobalorganizationoperations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

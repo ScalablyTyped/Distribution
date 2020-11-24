@@ -2,7 +2,7 @@ package typings.titanium.Titanium.UI.iOS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of constants for the position value that can be used for the `position` property of
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Titanium.UI.iOS.TableViewScrollPosition")
 @js.native
 object TableViewScrollPosition extends js.Object
-

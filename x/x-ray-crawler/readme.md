@@ -10,9 +10,9 @@ x-ray's crawler
 | ------------------ | :-------------: |
 | Full name          | x-ray-crawler |
 | Keywords           | x-ray, crawler, request, scrape, scraper |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 187474 |
+| # releases         | 1 |
+| # dependents       | 11 |
+| # downloads        | 283511 |
 | # stars            | 3 |
 
 ## Links

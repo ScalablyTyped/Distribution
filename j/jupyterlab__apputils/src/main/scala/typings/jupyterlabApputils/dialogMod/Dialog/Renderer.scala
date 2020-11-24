@@ -4,7 +4,7 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The default implementation of a dialog renderer.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/apputils/lib/dialog", "Dialog.Renderer")
 @js.native
 class Renderer () extends js.Object {
+  
   /**
     * Create the body of the dialog.
     *
@@ -20,6 +21,7 @@ class Renderer () extends js.Object {
     * @returns A widget for the body.
     */
   def createBody(value: Body[_]): Widget = js.native
+  
   /**
     * Create a button node for the dialog.
     *
@@ -28,6 +30,7 @@ class Renderer () extends js.Object {
     * @returns A node for the button.
     */
   def createButtonNode(button: IButton): HTMLElement = js.native
+  
   /**
     * Create the footer of the dialog.
     *
@@ -36,6 +39,7 @@ class Renderer () extends js.Object {
     * @returns A widget for the footer.
     */
   def createFooter(buttons: js.Array[HTMLElement]): Widget = js.native
+  
   /**
     * Create the header of the dialog.
     *
@@ -44,6 +48,7 @@ class Renderer () extends js.Object {
     * @returns A widget for the dialog header.
     */
   def createHeader(title: Header): Widget = js.native
+  
   /**
     * Create the class name for the button icon.
     *
@@ -52,6 +57,7 @@ class Renderer () extends js.Object {
     * @returns The full class name for the item icon.
     */
   def createIconClass(data: IButton): String = js.native
+  
   /**
     * Create the class name for the button.
     *
@@ -60,6 +66,7 @@ class Renderer () extends js.Object {
     * @returns The full class name for the button.
     */
   def createItemClass(data: IButton): String = js.native
+  
   /**
     * Render an icon element for a dialog item.
     *
@@ -68,6 +75,7 @@ class Renderer () extends js.Object {
     * @returns An HTML element representing the icon.
     */
   def renderIcon(data: IButton): HTMLElement = js.native
+  
   /**
     * Render the label element for a button.
     *
@@ -77,4 +85,3 @@ class Renderer () extends js.Object {
     */
   def renderLabel(data: IButton): HTMLElement = js.native
 }
-

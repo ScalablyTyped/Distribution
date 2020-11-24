@@ -10,9 +10,9 @@ Regular expressions with named capture groups and named back-references
 | ------------------ | :-------------: |
 | Full name          | named-regexp-groups |
 | Keywords           | backreference, capture, expression, group, named, regex, regexp, regular |
-| # releases         | 6 |
-| # dependents       | 11 |
-| # downloads        | 42215 |
+| # releases         | 3 |
+| # dependents       | 9 |
+| # downloads        | 58669 |
 | # stars            | 0 |
 
 ## Links

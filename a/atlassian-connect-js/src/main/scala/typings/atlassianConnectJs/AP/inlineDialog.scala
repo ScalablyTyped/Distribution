@@ -2,7 +2,7 @@ package typings.atlassianConnectJs.AP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The inline dialog is a wrapper for secondary content/controls to be displayed on user request.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("AP.inlineDialog")
 @js.native
 object inlineDialog extends js.Object
-

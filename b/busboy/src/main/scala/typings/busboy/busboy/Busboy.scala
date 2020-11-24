@@ -10,10 +10,11 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Busboy extends WritableStream {
+  
   def on(event: String, listener: js.Function): this.type = js.native
   @JSName("on")
   def on_field(
@@ -49,4 +50,3 @@ trait Busboy extends WritableStream {
   @JSName("on")
   def on_partsLimit(event: partsLimit, callback: js.Function0[Unit]): this.type = js.native
 }
-

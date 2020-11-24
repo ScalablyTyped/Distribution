@@ -2,7 +2,7 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "LightProbe")
 @js.native
@@ -12,4 +12,3 @@ class LightProbe ()
   def this(sh: js.UndefOr[scala.Nothing], intensity: Double) = this()
   def this(sh: typings.three.sphericalHarmonics3Mod.SphericalHarmonics3, intensity: Double) = this()
 }
-

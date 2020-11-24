@@ -2,10 +2,11 @@ package typings.progressjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ProgressJs extends js.Object {
+  
   /**
     * Set an auto-increase timer for the progress-bar.
     *
@@ -13,10 +14,12 @@ trait ProgressJs extends js.Object {
     * @param millisecond Timer in milliseconds.
     */
   def autoIncrease(size: Double, millisecond: Double): ProgressJs = js.native
+  
   /**
     * End the progress-bar and remove the elements from page.
     */
   def end(): ProgressJs = js.native
+  
   /**
     * Increase the progress-bar bar specified size. Default size is 1.
     *
@@ -24,30 +27,35 @@ trait ProgressJs extends js.Object {
     */
   def increase(): ProgressJs = js.native
   def increase(size: Double): ProgressJs = js.native
+  
   /**
     * Set a callback function for before end of the progress-bar.
     *
     * @param providedCallback Callback function.
     */
   def onbeforeend(providedCallback: js.Function0[_]): ProgressJs = js.native
+  
   /**
     * Set a callback function to call before start the progress-bar.
     *
     * @param providedCallback Callback function.
     */
   def onbeforestart(providedCallback: js.Function0[_]): ProgressJs = js.native
+  
   /**
     * Set callback function to call for each change of progress-bar.
     *
     * @param providedCallback Callback function.
     */
   def onprogress(providedCallback: js.Function2[/* targetElement */ String, /* percent */ Double, _]): ProgressJs = js.native
+  
   /**
     * Set specific percentage to progress-bar.
     *
     * @param percent Set to specific percentage.
     */
   def set(percent: Double): ProgressJs = js.native
+  
   /**
     * Set a single option to progressJs object.
     *
@@ -56,15 +64,16 @@ trait ProgressJs extends js.Object {
     */
   def setOption(option: String, value: String): ProgressJs = js.native
   def setOption(option: String, value: Boolean): ProgressJs = js.native
+  
   /**
     * Set a group of options to the progressJs object.
     *
     * @param options Object that contains option keys with values.
     */
   def setOptions(options: ProgressJsOptions): ProgressJs = js.native
+  
   /**
     * Start the progress-bar for defined element(s).
     */
   def start(): ProgressJs = js.native
 }
-

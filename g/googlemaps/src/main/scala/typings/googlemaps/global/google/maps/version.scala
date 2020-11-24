@@ -3,7 +3,7 @@ package typings.googlemaps.global.google.maps
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Version of the Google Maps JavaScript API that the browser has loaded.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("google.maps.version")
 @js.native
 object version extends TopLevel[String]
-

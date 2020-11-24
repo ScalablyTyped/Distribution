@@ -1,10 +1,7 @@
 package typings.node.fsMod
 
 import typings.node.BufferEncoding
-import typings.node.NodeJS.ArrayBufferView
 import typings.node.NodeJS.ErrnoException
-import typings.node.anon.BufferBytesWritten
-import typings.node.anon.BufferTBuffer
 import typings.std.DataView
 import typings.std.Float32Array
 import typings.std.Float64Array
@@ -17,11 +14,12 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs", "write")
 @js.native
 object write extends js.Object {
+  
   def apply(
     fd: Double,
     buffer: DataView,
@@ -3328,85 +3326,4 @@ object write extends js.Object {
     encoding: BufferEncoding,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
-  /**
-    * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    * @param string A string to write.
-    * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
-    * @param encoding The expected string encoding.
-    */
-  @JSName("__promisify__")
-  def promisify(fd: Double, string: String): js.Promise[BufferBytesWritten] = js.native
-  @JSName("__promisify__")
-  def promisify(fd: Double, string: String, position: js.UndefOr[scala.Nothing], encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
-  @JSName("__promisify__")
-  def promisify(fd: Double, string: String, position: Double): js.Promise[BufferBytesWritten] = js.native
-  @JSName("__promisify__")
-  def promisify(fd: Double, string: String, position: Double, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
-  @JSName("__promisify__")
-  def promisify(fd: Double, string: String, position: Null, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
-  /**
-    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
-    * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
-    * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
-    */
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](fd: Double): js.Promise[BufferTBuffer[TBuffer]] = js.native
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer): js.Promise[BufferTBuffer[TBuffer]] = js.native
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](
-    fd: Double,
-    buffer: TBuffer,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BufferTBuffer[TBuffer]] = js.native
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[BufferTBuffer[TBuffer]] = js.native
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: js.UndefOr[scala.Nothing], length: Double, position: Double): js.Promise[BufferTBuffer[TBuffer]] = js.native
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double): js.Promise[BufferTBuffer[TBuffer]] = js.native
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: js.UndefOr[scala.Nothing], position: Double): js.Promise[BufferTBuffer[TBuffer]] = js.native
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: Double): js.Promise[BufferTBuffer[TBuffer]] = js.native
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[BufferTBuffer[TBuffer]] = js.native
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](
-    fd: Double,
-    buffer: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BufferTBuffer[TBuffer]] = js.native
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: js.UndefOr[scala.Nothing], offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[BufferTBuffer[TBuffer]] = js.native
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](
-    fd: Double,
-    buffer: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    position: Double
-  ): js.Promise[BufferTBuffer[TBuffer]] = js.native
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: js.UndefOr[scala.Nothing], offset: Double): js.Promise[BufferTBuffer[TBuffer]] = js.native
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](
-    fd: Double,
-    buffer: js.UndefOr[scala.Nothing],
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BufferTBuffer[TBuffer]] = js.native
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: js.UndefOr[scala.Nothing], offset: Double, length: Double): js.Promise[BufferTBuffer[TBuffer]] = js.native
-  @JSName("__promisify__")
-  def promisify[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: js.UndefOr[scala.Nothing], offset: Double, length: Double, position: Double): js.Promise[BufferTBuffer[TBuffer]] = js.native
 }
-

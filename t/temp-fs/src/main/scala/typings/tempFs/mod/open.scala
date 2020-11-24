@@ -2,11 +2,12 @@ package typings.tempFs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("temp-fs", "open")
 @js.native
 object open extends js.Object {
+  
   /**
     * Try to open a unique tempfile asynchronously.
     *
@@ -21,4 +22,3 @@ object open extends js.Object {
   def apply(options: options): js.Any = js.native
   def apply(options: options, callback: js.Function2[/* err */ js.Any, /* file */ file, _]): js.Any = js.native
 }
-

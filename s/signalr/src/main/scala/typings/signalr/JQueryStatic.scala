@@ -5,16 +5,11 @@ import typings.signalr.SignalR.Hub.HubCreator
 import typings.signalr.SignalR.Hub.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQueryStatic extends js.Object {
-  @JSName("connection")
-  var connection_Original: SignalR = js.native
-  @JSName("hubConnection")
-  var hubConnection_Original: HubCreator = js.native
-  @JSName("signalR")
-  var signalR_Original: SignalR = js.native
+  
   /**
     * Creates a new SignalR connection for the given url
     *
@@ -28,10 +23,16 @@ trait JQueryStatic extends js.Object {
   def connection(url: String, queryString: String, logging: Boolean): Connection = js.native
   def connection(url: String, queryString: js.Object): Connection = js.native
   def connection(url: String, queryString: js.Object, logging: Boolean): Connection = js.native
+  @JSName("connection")
+  var connection_Original: SignalR = js.native
+  
   def hubConnection(): typings.signalr.SignalR.Hub.Connection = js.native
   def hubConnection(url: js.UndefOr[scala.Nothing], options: Options): typings.signalr.SignalR.Hub.Connection = js.native
   def hubConnection(url: String): typings.signalr.SignalR.Hub.Connection = js.native
   def hubConnection(url: String, options: Options): typings.signalr.SignalR.Hub.Connection = js.native
+  @JSName("hubConnection")
+  var hubConnection_Original: HubCreator = js.native
+  
   /**
     * Creates a new SignalR connection for the given url
     *
@@ -45,5 +46,6 @@ trait JQueryStatic extends js.Object {
   def signalR(url: String, queryString: String, logging: Boolean): Connection = js.native
   def signalR(url: String, queryString: js.Object): Connection = js.native
   def signalR(url: String, queryString: js.Object, logging: Boolean): Connection = js.native
+  @JSName("signalR")
+  var signalR_Original: SignalR = js.native
 }
-

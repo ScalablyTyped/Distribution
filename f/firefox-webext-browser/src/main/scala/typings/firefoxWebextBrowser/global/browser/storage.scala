@@ -7,7 +7,7 @@ import typings.firefoxWebextBrowser.browser.storage.StorageAreaSync
 import typings.firefoxWebextBrowser.browser.storage.StorageChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Use the `browser.storage` API to store, retrieve, and track changes to user data.
@@ -17,13 +17,15 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.storage")
 @js.native
 object storage extends js.Object {
+  
   /** Items in the `local` storage area are local to each machine. */
   val local: StorageArea = js.native
+  
   /**
-    * Items in the `managed` storage area are set by administrators or native applications, and are read-only for the
-    * extension; trying to modify this namespace results in an error.
+    * Items in the `managed` storage area are set by administrators or native applications, and are read-only for the extension; trying to modify this namespace results in an error.
     */
   val managed: StorageArea = js.native
+  
   /* storage events */
   /**
     * Fired when one or more items change.
@@ -33,8 +35,8 @@ object storage extends js.Object {
   val onChanged: WebExtEvent[
     js.Function2[/* changes */ StringDictionary[StorageChange], /* areaName */ String, Unit]
   ] = js.native
+  
   /* storage properties */
   /** Items in the `sync` storage area are synced by the browser. */
   val sync: StorageAreaSync = js.native
 }
-

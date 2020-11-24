@@ -1,7 +1,7 @@
 
 # Scala.js typings for puppeteer
 
-Typings are for version 3.0
+Typings are for version 5.4
 
 ## Library description:
 A high-level API to control headless Chrome over the DevTools Protocol
@@ -10,15 +10,15 @@ A high-level API to control headless Chrome over the DevTools Protocol
 | ------------------ | :-------------: |
 | Full name          | puppeteer |
 | Keywords           | - |
-| # releases         | 669 |
-| # dependents       | 2054 |
-| # downloads        | 49584955 |
+| # releases         | 260 |
+| # dependents       | 2865 |
+| # downloads        | 74986304 |
 | # stars            | 81 |
 
 ## Links
-- [Homepage](https://github.com/GoogleChrome/puppeteer#readme)
-- [Bugs](https://github.com/GoogleChrome/puppeteer/issues)
-- [Repository](https://github.com/GoogleChrome/puppeteer)
+- [Homepage](https://github.com/puppeteer/puppeteer#readme)
+- [Bugs](https://github.com/puppeteer/puppeteer/issues)
+- [Repository](https://github.com/puppeteer/puppeteer)
 - [Npm](https://www.npmjs.com/package/puppeteer)
     
 

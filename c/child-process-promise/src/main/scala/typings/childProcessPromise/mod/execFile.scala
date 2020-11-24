@@ -5,11 +5,12 @@ import typings.childProcessPromise.anon.ReadonlyOptionsExecFileOpCapture
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("child-process-promise", "execFile")
 @js.native
 object execFile extends js.Object {
+  
   def apply(file: String): ChildProcessPromise[PromiseResult[String]] = js.native
   def apply(file: String, args: js.UndefOr[scala.Nothing], options: ReadonlyOptionsExecFileOpCapture): ChildProcessPromise[PromiseResult[String]] = js.native
   def apply(file: String, args: js.Array[String]): ChildProcessPromise[PromiseResult[String]] = js.native
@@ -20,4 +21,3 @@ object execFile extends js.Object {
   def apply(file: String, options: ReadonlyOptionsExecFileOp): ChildProcessPromise[PromiseResult[Buffer]] = js.native
   def apply(file: String, options: ReadonlyOptionsExecFileOpCapture): ChildProcessPromise[PromiseResult[String]] = js.native
 }
-

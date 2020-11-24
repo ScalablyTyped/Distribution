@@ -7,11 +7,12 @@ import typings.tsconfigPaths.filesystemMod.ReadJsonAsync
 import typings.tsconfigPaths.mappingEntryMod.MappingEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tsconfig-paths/lib/match-path-async", JSImport.Namespace)
 @js.native
 object matchPathAsyncMod extends js.Object {
+  
   def createMatchPathAsync(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]]): MatchPathAsync = js.native
   def createMatchPathAsync(
     absoluteBaseUrl: String,
@@ -26,6 +27,7 @@ object matchPathAsyncMod extends js.Object {
     mainFields: js.Array[String],
     addMatchAll: Boolean
   ): MatchPathAsync = js.native
+  
   def matchFromAbsolutePathsAsync(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
@@ -162,6 +164,7 @@ object matchPathAsyncMod extends js.Object {
     callback: MatchPathAsyncCallback,
     mainFields: js.Array[String]
   ): Unit = js.native
+  
   type MatchPathAsync = js.Function5[
     /* requestedModule */ String, 
     /* readJson */ js.UndefOr[ReadJsonAsync], 
@@ -170,6 +173,6 @@ object matchPathAsyncMod extends js.Object {
     /* callback */ MatchPathAsyncCallback, 
     Unit
   ]
+  
   type MatchPathAsyncCallback = js.Function2[/* err */ js.UndefOr[Error], /* path */ js.UndefOr[String], Unit]
 }
-

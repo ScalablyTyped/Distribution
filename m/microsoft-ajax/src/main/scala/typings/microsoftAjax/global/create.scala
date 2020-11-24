@@ -4,11 +4,12 @@ import typings.microsoftAjax.Sys.Component
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("$create")
 @js.native
 object create extends js.Object {
+  
   //#endregion
   //#region Shortcuts to commonly used APIs
   /**
@@ -107,4 +108,3 @@ object create extends js.Object {
     element: HTMLElement
   ): Component = js.native
 }
-

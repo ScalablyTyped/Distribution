@@ -3,7 +3,7 @@ package typings.verror.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * Represents a collection of errors for the purpose of consumers that generally
@@ -15,6 +15,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class MultiError protected () extends VError {
   def this(errors: js.Array[Error]) = this()
+  
   def errors(): js.Array[Error] = js.native
 }
-

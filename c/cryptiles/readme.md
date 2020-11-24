@@ -10,9 +10,9 @@ General purpose crypto utilities
 | ------------------ | :-------------: |
 | Full name          | cryptiles |
 | Keywords           | cryptography, security, utilites |
-| # releases         | 5 |
-| # dependents       | 166 |
-| # downloads        | 168009638 |
+| # releases         | 4 |
+| # dependents       | 174 |
+| # downloads        | 131968152 |
 | # stars            | 24 |
 
 ## Links

@@ -57,11 +57,11 @@ import typings.semanticUiTab.semanticUiTabStrings.templates
 import typings.semanticUiTab.semanticUiTabStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Tab_ extends js.Object {
-  var settings: TabSettings = js.native
+  
   def apply(): JQuery = js.native
   /**
     * Sets cached HTML for path
@@ -202,5 +202,6 @@ trait Tab_ extends js.Object {
   def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def apply(behavior: setting, value: TabSettings): JQuery = js.native
   def apply(settings: TabSettings): JQuery = js.native
+  
+  var settings: TabSettings = js.native
 }
-

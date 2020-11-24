@@ -13,11 +13,12 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firestore", JSImport.Namespace)
 @js.native
 object firestoreMod extends js.Object {
+  
   def firestore(options: Options): Firestore = js.native
   def firestore(options: typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1.Options): typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1.Firestore = js.native
   def firestore(options: typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2.Options): typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2.Firestore = js.native
@@ -27,13 +28,20 @@ object firestoreMod extends js.Object {
   def firestore_v1beta1(version: v1beta1): typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1.Firestore = js.native
   @JSName("firestore")
   def firestore_v1beta2(version: v1beta2): typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2.Firestore = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Firestore {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v1
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Firestore]
+            ]
     
     @js.native
     class v1beta1 protected ()
@@ -41,20 +49,6 @@ object firestoreMod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    class v1beta2 protected ()
-      extends typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2.Firestore {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
-    @js.native
-    object v1
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Firestore]
-            ]
-    
     @js.native
     object v1beta1
       extends TopLevel[
@@ -66,6 +60,12 @@ object firestoreMod extends js.Object {
             ]
     
     @js.native
+    class v1beta2 protected ()
+      extends typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2.Firestore {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    @js.native
     object v1beta2
       extends TopLevel[
               Instantiable2[
@@ -74,11 +74,11 @@ object firestoreMod extends js.Object {
                 typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2.Firestore
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -106,8 +106,5 @@ object firestoreMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

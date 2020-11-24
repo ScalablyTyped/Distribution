@@ -10,9 +10,9 @@ Write files in an atomic fashion w/configurable ownership
 | ------------------ | :-------------: |
 | Full name          | write-file-atomic |
 | Keywords           | writeFile, atomic |
-| # releases         | 6 |
-| # dependents       | 251 |
-| # downloads        | 465362967 |
+| # releases         | 8 |
+| # dependents       | 312 |
+| # downloads        | 777944943 |
 | # stars            | 6 |
 
 ## Links

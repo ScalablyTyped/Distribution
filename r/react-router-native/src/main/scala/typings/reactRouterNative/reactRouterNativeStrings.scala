@@ -2,9 +2,31 @@ package typings.reactRouterNative
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactRouterNativeStrings {
+  
+  @scala.inline
+  def history: history = "history".asInstanceOf[history]
+  
+  @scala.inline
+  def location: location = "location".asInstanceOf[location]
+  
+  @scala.inline
+  def `match`: `match` = "match".asInstanceOf[`match`]
+  
+  @scala.inline
+  def matchPath: matchPath = "matchPath".asInstanceOf[matchPath]
+  
+  @scala.inline
+  def staticContext: staticContext = "staticContext".asInstanceOf[staticContext]
+  
+  @scala.inline
+  def useParams: useParams = "useParams".asInstanceOf[useParams]
+  
+  @scala.inline
+  def useRouteMatch: useRouteMatch = "useRouteMatch".asInstanceOf[useRouteMatch]
+  
   @js.native
   sealed trait history extends js.Object
   
@@ -25,20 +47,4 @@ object reactRouterNativeStrings {
   
   @js.native
   sealed trait useRouteMatch extends js.Object
-  
-  @scala.inline
-  def history: history = "history".asInstanceOf[history]
-  @scala.inline
-  def location: location = "location".asInstanceOf[location]
-  @scala.inline
-  def `match`: `match` = "match".asInstanceOf[`match`]
-  @scala.inline
-  def matchPath: matchPath = "matchPath".asInstanceOf[matchPath]
-  @scala.inline
-  def staticContext: staticContext = "staticContext".asInstanceOf[staticContext]
-  @scala.inline
-  def useParams: useParams = "useParams".asInstanceOf[useParams]
-  @scala.inline
-  def useRouteMatch: useRouteMatch = "useRouteMatch".asInstanceOf[useRouteMatch]
 }
-

@@ -12,7 +12,7 @@ A flexible hash map which supports deep keys.
 | Keywords           | fleximap, flexible, hashmap, deep, keys, multidimensional |
 | # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 834036 |
+| # downloads        | 1041765 |
 | # stars            | 0 |
 
 ## Links

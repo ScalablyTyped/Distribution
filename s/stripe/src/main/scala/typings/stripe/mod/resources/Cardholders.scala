@@ -10,11 +10,12 @@ import typings.stripe.mod.issuing.cardholders.ICardholderListOptions
 import typings.stripe.mod.issuing.cardholders.ICardholderUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Cardholders")
 @js.native
 class Cardholders () extends StripeResource {
+  
   def create(data: ICardholderCreateOptions): js.Promise[ICardholder] = js.native
   /**
     * Creates a new Issuing Cardholder object that can be issued cards.
@@ -22,6 +23,7 @@ class Cardholders () extends StripeResource {
   def create(data: ICardholderCreateOptions, options: HeaderOptions): js.Promise[ICardholder] = js.native
   def create(data: ICardholderCreateOptions, options: HeaderOptions, response: IResponseFn[ICardholder]): js.Promise[ICardholder] = js.native
   def create(data: ICardholderCreateOptions, response: IResponseFn[ICardholder]): js.Promise[ICardholder] = js.native
+  
   def list(): js.Promise[IList[ICardholder]] = js.native
   def list(data: ICardholderListOptions): js.Promise[IList[ICardholder]] = js.native
   /**
@@ -33,6 +35,7 @@ class Cardholders () extends StripeResource {
   def list(options: HeaderOptions): js.Promise[IList[ICardholder]] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[ICardholder]]): js.Promise[IList[ICardholder]] = js.native
   def list(response: IResponseFn[IList[ICardholder]]): js.Promise[IList[ICardholder]] = js.native
+  
   def retrieve(id: String): js.Promise[ICardholder] = js.native
   /**
     * Retrieves an Issuing Cardholder object.
@@ -40,6 +43,7 @@ class Cardholders () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions): js.Promise[ICardholder] = js.native
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[ICardholder]): js.Promise[ICardholder] = js.native
   def retrieve(id: String, response: IResponseFn[ICardholder]): js.Promise[ICardholder] = js.native
+  
   def update(id: String, data: ICardholderUpdateOptions): js.Promise[ICardholder] = js.native
   /**
     * Updates the specified Issuing Cardholder object by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
@@ -53,4 +57,3 @@ class Cardholders () extends StripeResource {
   ): js.Promise[ICardholder] = js.native
   def update(id: String, data: ICardholderUpdateOptions, response: IResponseFn[ICardholder]): js.Promise[ICardholder] = js.native
 }
-

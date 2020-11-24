@@ -3,9 +3,25 @@ package typings.restify
 import typings.restify.mod.plugins._TMetricsCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object restifyStrings {
+  
+  @scala.inline
+  def aborted: aborted = "aborted".asInstanceOf[aborted]
+  
+  @scala.inline
+  def after: after = "after".asInstanceOf[after]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def pre: pre = "pre".asInstanceOf[pre]
+  
+  @scala.inline
+  def routed: routed = "routed".asInstanceOf[routed]
+  
   @js.native
   sealed trait aborted extends _TMetricsCallback
   
@@ -20,16 +36,4 @@ object restifyStrings {
   
   @js.native
   sealed trait routed extends js.Object
-  
-  @scala.inline
-  def aborted: aborted = "aborted".asInstanceOf[aborted]
-  @scala.inline
-  def after: after = "after".asInstanceOf[after]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def pre: pre = "pre".asInstanceOf[pre]
-  @scala.inline
-  def routed: routed = "routed".asInstanceOf[routed]
 }
-

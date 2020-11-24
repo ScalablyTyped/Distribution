@@ -9,7 +9,7 @@ import typings.hapiHapi.hapiHapiStrings.post_
 import typings.hapiHapi.hapiHapiStrings.put_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.hapiHapi.hapiHapiStrings.HEAD
@@ -28,35 +28,47 @@ import scala.scalajs.js.annotation._
   - typings.hapiHapi.hapiHapiStrings.options_
 */
 trait HTTP_METHODS extends js.Object
-
 object HTTP_METHODS {
+  
   @scala.inline
   def DELETE: typings.hapiHapi.hapiHapiStrings.DELETE = "DELETE".asInstanceOf[typings.hapiHapi.hapiHapiStrings.DELETE]
+  
   @scala.inline
   def GET: typings.hapiHapi.hapiHapiStrings.GET = "GET".asInstanceOf[typings.hapiHapi.hapiHapiStrings.GET]
+  
   @scala.inline
   def HEAD: typings.hapiHapi.hapiHapiStrings.HEAD = "HEAD".asInstanceOf[typings.hapiHapi.hapiHapiStrings.HEAD]
+  
   @scala.inline
   def OPTIONS: typings.hapiHapi.hapiHapiStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.hapiHapi.hapiHapiStrings.OPTIONS]
+  
   @scala.inline
   def PATCH: typings.hapiHapi.hapiHapiStrings.PATCH = "PATCH".asInstanceOf[typings.hapiHapi.hapiHapiStrings.PATCH]
+  
   @scala.inline
   def POST: typings.hapiHapi.hapiHapiStrings.POST = "POST".asInstanceOf[typings.hapiHapi.hapiHapiStrings.POST]
+  
   @scala.inline
   def PUT: typings.hapiHapi.hapiHapiStrings.PUT = "PUT".asInstanceOf[typings.hapiHapi.hapiHapiStrings.PUT]
+  
   @scala.inline
   def delete: delete_ = "delete".asInstanceOf[delete_]
+  
   @scala.inline
   def get: get_ = "get".asInstanceOf[get_]
+  
   @scala.inline
   def head: head_ = "head".asInstanceOf[head_]
+  
   @scala.inline
   def options: options_ = "options".asInstanceOf[options_]
+  
   @scala.inline
   def patch: patch_ = "patch".asInstanceOf[patch_]
+  
   @scala.inline
   def post: post_ = "post".asInstanceOf[post_]
+  
   @scala.inline
   def put: put_ = "put".asInstanceOf[put_]
 }
-

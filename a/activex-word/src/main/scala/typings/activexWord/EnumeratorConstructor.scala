@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.Enumerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EnumeratorConstructor
@@ -14,4 +14,3 @@ trait EnumeratorConstructor
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101 */ js.Any
       ]
     ]
-

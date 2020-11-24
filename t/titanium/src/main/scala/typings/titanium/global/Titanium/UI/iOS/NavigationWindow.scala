@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium.UI.iOS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `NavigationWindow` implements a specialized view that manages the navigation of hierarchical
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class NavigationWindow ()
   extends typings.titanium.Titanium.UI.iOS.NavigationWindow
-

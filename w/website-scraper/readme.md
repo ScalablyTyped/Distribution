@@ -10,9 +10,9 @@ Download website to a local directory (including all css, images, js, etc.)
 | ------------------ | :-------------: |
 | Full name          | website-scraper |
 | Keywords           | scrape, scraper, download, web, url, page, site, html, css, image, js |
-| # releases         | 11 |
-| # dependents       | 20 |
-| # downloads        | 148199 |
+| # releases         | 7 |
+| # dependents       | 24 |
+| # downloads        | 217862 |
 | # stars            | 23 |
 
 ## Links

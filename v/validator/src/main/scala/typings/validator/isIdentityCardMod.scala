@@ -3,11 +3,12 @@ package typings.validator
 import typings.validator.validatorStrings.any
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("validator/lib/isIdentityCard", JSImport.Namespace)
 @js.native
 object isIdentityCardMod extends js.Object {
+  
   /**
     * Check if the string is a valid identity card code.
     *
@@ -17,6 +18,6 @@ object isIdentityCardMod extends js.Object {
   def default(str: String, locale: typings.validator.mod.validator.IdentityCardLocale): Boolean = js.native
   @JSName("default")
   def default_any(str: String, locale: any): Boolean = js.native
+  
   type IdentityCardLocale = typings.validator.mod.validator.IdentityCardLocale
 }
-

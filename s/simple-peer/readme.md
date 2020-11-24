@@ -10,9 +10,9 @@ Simple one-to-one WebRTC video/voice and data channels
 | ------------------ | :-------------: |
 | Full name          | simple-peer |
 | Keywords           | data, data channel, data channel stream, data channels, p2p, peer, peer, peer-to-peer, stream, video, voice, webrtc, webrtc stream |
-| # releases         | 17 |
-| # dependents       | 125 |
-| # downloads        | 521426 |
+| # releases         | 13 |
+| # dependents       | 156 |
+| # downloads        | 799839 |
 | # stars            | 31 |
 
 ## Links

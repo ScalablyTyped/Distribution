@@ -3,7 +3,7 @@ package typings.typescriptServices.mod
 import typings.typescriptServices.TypeScript.IASTSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "Block")
 @js.native
@@ -15,4 +15,3 @@ class Block protected ()
     closeBraceToken: IASTSpan
   ) = this()
 }
-

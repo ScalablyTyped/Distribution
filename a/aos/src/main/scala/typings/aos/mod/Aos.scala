@@ -2,10 +2,11 @@ package typings.aos.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Aos extends js.Object {
+  
   /**
     * Initializing AOS
     * - Create options merging defaults with user defined options
@@ -18,14 +19,15 @@ trait Aos extends js.Object {
     */
   def init(): Unit = js.native
   def init(options: AosOptions): Unit = js.native
+  
   /**
     * Refresh AOS
     */
   def refresh(): Unit = js.native
+  
   /**
     * Hard refresh
     * create array with new elements and trigger refresh
     */
   def refreshHard(): Unit = js.native
 }
-

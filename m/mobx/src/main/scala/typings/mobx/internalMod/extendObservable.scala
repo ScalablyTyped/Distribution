@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.TopLevel
 import typings.mobx.observableMod.CreateObservableOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx/lib/internal", "extendObservable")
 @js.native
 object extendObservable extends js.Object {
+  
   def apply[A /* <: js.Object */, B /* <: js.Object */](target: A): A with B = js.native
   def apply[A /* <: js.Object */, B /* <: js.Object */](target: A, properties: B): A with B = js.native
   def apply[A /* <: js.Object */, B /* <: js.Object */](
@@ -49,4 +50,3 @@ object extendObservable extends js.Object {
     options: CreateObservableOptions
   ): A with B = js.native
 }
-

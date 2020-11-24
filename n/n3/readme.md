@@ -10,9 +10,9 @@ Lightning fast, asynchronous, streaming Turtle / N3 / RDF library.
 | ------------------ | :-------------: |
 | Full name          | n3 |
 | Keywords           | turtle, rdf, n3, streaming, asynchronous |
-| # releases         | 21 |
-| # dependents       | 141 |
-| # downloads        | 288728 |
+| # releases         | 23 |
+| # dependents       | 167 |
+| # downloads        | 367313 |
 | # stars            | 5 |
 
 ## Links

@@ -9,9 +9,9 @@ Tell Yeoman what to say
 | ------------------ | :-------------: |
 | Full name          | yosay |
 | Keywords           | cli-app, cli, yeoman, yo, cowsay, say, box, message, ansi |
-| # releases         | 2 |
-| # dependents       | 5566 |
-| # downloads        | 3552465 |
+| # releases         | 1 |
+| # dependents       | 5874 |
+| # downloads        | 5150603 |
 | # stars            | 18 |
 
 ## Links

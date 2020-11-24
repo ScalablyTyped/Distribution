@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cacheable-lookup" : "2.0.1"
+      "cacheable-lookup" : "5.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "cacheable-lookup" : "2.0.1"
+      "cacheable-lookup" : "5.0.3"
     }
   ],
   "compile-devDependencies" : [

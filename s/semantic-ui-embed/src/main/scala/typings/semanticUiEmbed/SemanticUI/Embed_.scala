@@ -47,11 +47,11 @@ import typings.semanticUiEmbed.semanticUiEmbedStrings.url
 import typings.semanticUiEmbed.semanticUiEmbedStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Embed_ extends js.Object {
-  var settings: EmbedSettings = js.native
+  
   def apply(): JQuery = js.native
   /**
     * Returns current content id
@@ -156,5 +156,6 @@ trait Embed_ extends js.Object {
     */
   def apply(behavior: show): JQuery = js.native
   def apply(settings: EmbedSettings): JQuery = js.native
+  
+  var settings: EmbedSettings = js.native
 }
-

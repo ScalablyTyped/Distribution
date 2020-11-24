@@ -3,7 +3,7 @@ package typings.dragselect.mod
 import typings.dragselect.anon.PartialareaHTMLElementSVG
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dragselect", JSImport.Namespace)
 @js.native
@@ -34,4 +34,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends DragSelect {
   def this(options: PartialareaHTMLElementSVG) = this()
 }
-

@@ -3,7 +3,7 @@ package typings.typescriptServices.mod
 import typings.typescriptServices.TypeScript.ISyntaxNodeOrToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "PositionedNodeOrToken")
 @js.native
@@ -15,4 +15,3 @@ class PositionedNodeOrToken protected ()
     fullStart: Double
   ) = this()
 }
-

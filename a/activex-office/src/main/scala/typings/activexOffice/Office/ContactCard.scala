@@ -2,15 +2,20 @@ package typings.activexOffice.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ContactCard extends js.Object {
+  
   val Application: js.Any = js.native
+  
+  def Close(): Unit = js.native
+  
   val Creator: Double = js.native
+  
   @JSName("Office.ContactCard_typekey")
   var OfficeDotContactCard_typekey: ContactCard = js.native
-  def Close(): Unit = js.native
+  
   /** @param boolean [ShowWithDelay=false] */
   def Show(
     CardStyle: MsoContactCardStyle,
@@ -30,4 +35,3 @@ trait ContactCard extends js.Object {
     ShowWithDelay: Boolean
   ): Unit = js.native
 }
-

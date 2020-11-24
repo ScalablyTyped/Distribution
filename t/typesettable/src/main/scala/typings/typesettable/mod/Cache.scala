@@ -2,7 +2,7 @@ package typings.typesettable.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typesettable", "Cache")
 @js.native
@@ -15,4 +15,3 @@ class Cache[T] protected ()
     */
   def this(compute: js.Function1[/* k */ String, T]) = this()
 }
-

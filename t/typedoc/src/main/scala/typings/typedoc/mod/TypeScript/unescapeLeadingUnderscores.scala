@@ -3,11 +3,12 @@ package typings.typedoc.mod.TypeScript
 import typings.typescript.mod.String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.unescapeLeadingUnderscores")
 @js.native
 object unescapeLeadingUnderscores extends js.Object {
+  
   /**
     * Remove extra underscore from escaped identifier text content.
     *
@@ -16,4 +17,3 @@ object unescapeLeadingUnderscores extends js.Object {
     */
   def apply(identifier: String): java.lang.String = js.native
 }
-

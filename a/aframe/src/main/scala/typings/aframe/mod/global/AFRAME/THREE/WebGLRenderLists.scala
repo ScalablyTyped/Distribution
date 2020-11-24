@@ -2,7 +2,7 @@ package typings.aframe.mod.global.AFRAME.THREE
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AFRAME.THREE.WebGLRenderLists")
 @js.native
@@ -10,4 +10,3 @@ class WebGLRenderLists protected ()
   extends typings.three.mod.WebGLRenderLists {
   def this(properties: typings.three.webGLPropertiesMod.WebGLProperties) = this()
 }
-

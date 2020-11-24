@@ -2,11 +2,12 @@ package typings.node.inspectorMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("inspector", "waitForDebugger")
 @js.native
 object waitForDebugger extends js.Object {
+  
   /**
     * Blocks until a client (existing or connected later) has sent
     * `Runtime.runIfWaitingForDebugger` command.
@@ -14,4 +15,3 @@ object waitForDebugger extends js.Object {
     */
   def apply(): Unit = js.native
 }
-

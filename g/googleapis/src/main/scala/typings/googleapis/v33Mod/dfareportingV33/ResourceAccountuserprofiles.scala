@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Accountuserprofiles")
 @js.native
 class ResourceAccountuserprofiles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.accountUserProfiles.get
     * @desc Gets one account user profile by ID.
@@ -45,6 +47,7 @@ class ResourceAccountuserprofiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountUserProfile]
   ): Unit = js.native
+  
   /**
     * dfareporting.accountUserProfiles.insert
     * @desc Inserts a new account user profile.
@@ -77,6 +80,7 @@ class ResourceAccountuserprofiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountUserProfile]
   ): Unit = js.native
+  
   /**
     * dfareporting.accountUserProfiles.list
     * @desc Retrieves a list of account user profiles, possibly filtered. This
@@ -118,6 +122,7 @@ class ResourceAccountuserprofiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountUserProfilesListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.accountUserProfiles.patch
     * @desc Updates an existing account user profile. This method supports
@@ -152,6 +157,7 @@ class ResourceAccountuserprofiles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountUserProfile]
   ): Unit = js.native
+  
   /**
     * dfareporting.accountUserProfiles.update
     * @desc Updates an existing account user profile.
@@ -185,4 +191,3 @@ class ResourceAccountuserprofiles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAccountUserProfile]
   ): Unit = js.native
 }
-

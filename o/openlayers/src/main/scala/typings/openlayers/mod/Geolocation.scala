@@ -6,7 +6,7 @@ import typings.openlayers.mod.proj.Projection
 import typings.std.PositionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Geolocation")
 @js.native
@@ -36,6 +36,7 @@ import scala.scalajs.js.annotation._
   */
 class Geolocation () extends Object {
   def this(opt_options: GeolocationOptions) = this()
+  
   /**
     * Get the accuracy of the position in meters.
     * @return The accuracy of the position measurement in
@@ -44,6 +45,7 @@ class Geolocation () extends Object {
     * @api stable
     */
   def getAccuracy(): Double = js.native
+  
   /**
     * Get a geometry of the position accuracy.
     * @return A geometry of the position accuracy.
@@ -51,6 +53,7 @@ class Geolocation () extends Object {
     * @api stable
     */
   def getAccuracyGeometry(): Geometry = js.native
+  
   /**
     * Get the altitude associated with the position.
     * @return The altitude of the position in meters above mean
@@ -59,6 +62,7 @@ class Geolocation () extends Object {
     * @api stable
     */
   def getAltitude(): Double = js.native
+  
   /**
     * Get the altitude accuracy of the position.
     * @return The accuracy of the altitude measurement in
@@ -67,6 +71,7 @@ class Geolocation () extends Object {
     * @api stable
     */
   def getAltitudeAccuracy(): Double = js.native
+  
   /**
     * Get the heading as radians clockwise from North.
     * @return The heading of the device in radians from north.
@@ -74,6 +79,7 @@ class Geolocation () extends Object {
     * @api stable
     */
   def getHeading(): Double = js.native
+  
   /**
     * Get the position of the device.
     * @return The current position of the device reported
@@ -82,6 +88,7 @@ class Geolocation () extends Object {
     * @api stable
     */
   def getPosition(): Coordinate_ = js.native
+  
   /**
     * Get the projection associated with the position.
     * @return The projection the position is
@@ -90,6 +97,7 @@ class Geolocation () extends Object {
     * @api stable
     */
   def getProjection(): Projection = js.native
+  
   /**
     * Get the speed in meters per second.
     * @return The instantaneous speed of the device in meters
@@ -98,6 +106,7 @@ class Geolocation () extends Object {
     * @api stable
     */
   def getSpeed(): Double = js.native
+  
   /**
     * Determine if the device location is being tracked.
     * @return The device location is being tracked.
@@ -105,6 +114,7 @@ class Geolocation () extends Object {
     * @api stable
     */
   def getTracking(): Boolean = js.native
+  
   /**
     * Get the tracking options.
     * @see http://www.w3.org/TR/geolocation-API/#position-options
@@ -115,6 +125,7 @@ class Geolocation () extends Object {
     * @api stable
     */
   def getTrackingOptions(): PositionOptions = js.native
+  
   /**
     * Set the projection to use for transforming the coordinates.
     * @param projection The projection the position is
@@ -123,6 +134,7 @@ class Geolocation () extends Object {
     * @api stable
     */
   def setProjection(projection: Projection): Unit = js.native
+  
   /**
     * Enable or disable tracking.
     * @param tracking Enable tracking.
@@ -130,6 +142,7 @@ class Geolocation () extends Object {
     * @api stable
     */
   def setTracking(tracking: Boolean): Unit = js.native
+  
   /**
     * Set the tracking options.
     * @see http://www.w3.org/TR/geolocation-API/#position-options
@@ -141,4 +154,3 @@ class Geolocation () extends Object {
     */
   def setTrackingOptions(options: PositionOptions): Unit = js.native
 }
-

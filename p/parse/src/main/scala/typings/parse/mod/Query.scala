@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.parse.mod.global.Parse.Attributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new parse Parse.Query for the given Parse.Object subclass.
@@ -71,14 +71,16 @@ class Query[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */] protec
         T | typings.parse.mod.global.Parse.Object[Attributes]
       ]) = this()
 }
-
 /* static members */
 @JSImport("parse", "Query")
 @js.native
 object Query extends js.Object {
+  
   def and[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = js.native
+  
   def fromJSON[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](className: String, json: js.Any): typings.parse.mod.global.Parse.Query[U] = js.native
+  
   def nor[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = js.native
+  
   def or[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](var_args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = js.native
 }
-

@@ -2,21 +2,23 @@ package typings.eggView
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ViewBase extends js.Object {
+  
   /**
-    * Render a file by view engine
+    * Render a file by view engine, then set to body
     * @param {String} name - the file path based on root
     * @param {Object} [locals] - data used by template
     * @param {Object} [options] - view options, you can use `options.viewEngine` to specify view engine
     * @return {Promise<String>} result - return a promise with a render result
     */
-  def render(name: String): js.Promise[String] = js.native
-  def render(name: String, locals: js.UndefOr[scala.Nothing], options: RenderOptions): js.Promise[String] = js.native
-  def render(name: String, locals: js.Any): js.Promise[String] = js.native
-  def render(name: String, locals: js.Any, options: RenderOptions): js.Promise[String] = js.native
+  def render(name: String): js.Promise[Null] = js.native
+  def render(name: String, locals: js.UndefOr[scala.Nothing], options: RenderOptions): js.Promise[Null] = js.native
+  def render(name: String, locals: js.Any): js.Promise[Null] = js.native
+  def render(name: String, locals: js.Any, options: RenderOptions): js.Promise[Null] = js.native
+  
   /**
     * Render a template string by view engine
     * @param {String} tpl - template string
@@ -28,5 +30,16 @@ trait ViewBase extends js.Object {
   def renderString(name: String, locals: js.UndefOr[scala.Nothing], options: RenderOptions): js.Promise[String] = js.native
   def renderString(name: String, locals: js.Any): js.Promise[String] = js.native
   def renderString(name: String, locals: js.Any, options: RenderOptions): js.Promise[String] = js.native
+  
+  /**
+    * Render a file by view engine and return it
+    * @param {String} name - the file path based on root
+    * @param {Object} [locals] - data used by template
+    * @param {Object} [options] - view options, you can use `options.viewEngine` to specify view engine
+    * @return {Promise<String>} result - return a promise with a render result
+    */
+  def renderView(name: String): js.Promise[String] = js.native
+  def renderView(name: String, locals: js.UndefOr[scala.Nothing], options: RenderOptions): js.Promise[String] = js.native
+  def renderView(name: String, locals: js.Any): js.Promise[String] = js.native
+  def renderView(name: String, locals: js.Any, options: RenderOptions): js.Promise[String] = js.native
 }
-

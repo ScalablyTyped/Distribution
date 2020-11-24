@@ -2,11 +2,12 @@ package typings.eventToPromise.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("event-to-promise", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Wait for one event. The first parameter of the emitted event is used to resolve/reject the promise.
     * 
@@ -18,4 +19,3 @@ object ^ extends js.Object {
   def apply(emitter: EventSource, event: String): js.Promise[_] = js.native
   def apply(emitter: EventSource, event: String, options: EventToPromiseOptions): js.Promise[_] = js.native
 }
-

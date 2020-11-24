@@ -10,9 +10,9 @@ Cordova Contacts Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-contacts |
 | Keywords           | cordova, contacts, ecosystem:cordova, cordova-android, cordova-amazon-fireos, cordova-ubuntu, cordova-ios, cordova-blackberry10, cordova-wp7, cordova-wp8, cordova-firefoxos, cordova-windows8, cordova-windows |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 366177 |
+| # releases         | 1 |
+| # dependents       | 7 |
+| # downloads        | 391261 |
 | # stars            | 11 |
 
 ## Links

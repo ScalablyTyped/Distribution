@@ -12,7 +12,7 @@ A karma reporter that reports results with OSX Notification Center, Growl or not
 | Keywords           | karma-plugin, karma-reporter, osx, notification center, growl, notify-send |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 540966 |
+| # downloads        | 546984 |
 | # stars            | 2 |
 
 ## Links

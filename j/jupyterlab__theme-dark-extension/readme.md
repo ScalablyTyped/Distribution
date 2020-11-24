@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__theme-dark-extension
 
-Typings are for version 2.1.2
+Typings are for version 2.2.6
 
 ## Library description:
 JupyterLab - Default Dark Theme
@@ -10,9 +10,9 @@ JupyterLab - Default Dark Theme
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/theme-dark-extension |
 | Keywords           | - |
-| # releases         | 68 |
+| # releases         | 114 |
 | # dependents       | 1 |
-| # downloads        | 737913 |
+| # downloads        | 1348893 |
 | # stars            | 0 |
 
 ## Links

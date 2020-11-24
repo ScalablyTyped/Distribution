@@ -14,7 +14,7 @@ import typings.vexdb.vexdbNumbers.`5`
 import typings.vexdb.vexdbNumbers.`6`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.vexdb.responseObjectsMod.TeamsResponseObject
@@ -26,8 +26,8 @@ import scala.scalajs.js.annotation._
   - typings.vexdb.responseObjectsMod.SkillsResponseObject
 */
 trait ResponseObject extends js.Object
-
 object ResponseObject {
+  
   @scala.inline
   def TeamsResponseObject(
     city: String,
@@ -44,11 +44,13 @@ object ResponseObject {
     val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], grade = grade.asInstanceOf[js.Any], is_registered = is_registered.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], organisation = organisation.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], robot_name = robot_name.asInstanceOf[js.Any], team_name = team_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseObject]
   }
+  
   @scala.inline
   def SeasonRankingsResponseObject(program: Programs, season: Seasons, team: String, vrating: Double, vrating_rank: Double): ResponseObject = {
     val __obj = js.Dynamic.literal(program = program.asInstanceOf[js.Any], season = season.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], vrating = vrating.asInstanceOf[js.Any], vrating_rank = vrating_rank.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseObject]
   }
+  
   @scala.inline
   def EventsResponseObject(
     divisions: js.Array[String],
@@ -70,6 +72,7 @@ object ResponseObject {
     val __obj = js.Dynamic.literal(divisions = divisions.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc_address1 = loc_address1.asInstanceOf[js.Any], loc_address2 = loc_address2.asInstanceOf[js.Any], loc_city = loc_city.asInstanceOf[js.Any], loc_country = loc_country.asInstanceOf[js.Any], loc_postcode = loc_postcode.asInstanceOf[js.Any], loc_region = loc_region.asInstanceOf[js.Any], loc_venue = loc_venue.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], season = season.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseObject]
   }
+  
   @scala.inline
   def RankingsResponseObject(
     ap: Double,
@@ -91,6 +94,7 @@ object ResponseObject {
     val __obj = js.Dynamic.literal(ap = ap.asInstanceOf[js.Any], ccwm = ccwm.asInstanceOf[js.Any], division = division.asInstanceOf[js.Any], dpr = dpr.asInstanceOf[js.Any], losses = losses.asInstanceOf[js.Any], max_score = max_score.asInstanceOf[js.Any], opr = opr.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], sp = sp.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], ties = ties.asInstanceOf[js.Any], trsp = trsp.asInstanceOf[js.Any], wins = wins.asInstanceOf[js.Any], wp = wp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseObject]
   }
+  
   @scala.inline
   def SkillsResponseObject(
     attempts: Double,
@@ -105,11 +109,13 @@ object ResponseObject {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseObject]
   }
+  
   @scala.inline
   def AwardsResponseObject(name: String, order: Double, qualifies: js.Array[String], sku: String, team: String): ResponseObject = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], qualifies = qualifies.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseObject]
   }
+  
   @scala.inline
   def MatchesResponseObject(
     blue1: String,
@@ -135,4 +141,3 @@ object ResponseObject {
     __obj.asInstanceOf[ResponseObject]
   }
 }
-

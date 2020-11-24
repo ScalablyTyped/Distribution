@@ -2,7 +2,7 @@ package typings.kiiCloudSdk.global.KiiCloud
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a KiiObject object
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class KiiObject ()
   extends typings.kiiCloudSdk.KiiCloud.KiiObject
-
 /* static members */
 @JSGlobal("KiiCloud.KiiObject")
 @js.native
 object KiiObject extends js.Object {
+  
   /**
     * Check if given ID is valid for object ID.
     *  Valid pattern: ^[a-zA-Z0-9-_\\.]{2,100}$
@@ -25,6 +25,7 @@ object KiiObject extends js.Object {
     * @return true if given ID is valid, false otherwise.
     */
   def isValidObjectID(objectID: String): Boolean = js.native
+  
   /**
     * Generate a new KiiObject based on a given URI
     *
@@ -39,4 +40,3 @@ object KiiObject extends js.Object {
     */
   def objectWithURI(uri: String): typings.kiiCloudSdk.KiiCloud.KiiObject = js.native
 }
-

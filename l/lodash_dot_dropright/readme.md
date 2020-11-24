@@ -12,7 +12,7 @@ The lodash method `_.dropRight` exported as a module.
 | Keywords           | lodash-modularized, dropright |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 41700 |
+| # downloads        | 59426 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ React component for truncating multi-line spans and adding an ellipsis
 | ------------------ | :-------------: |
 | Full name          | react-truncate |
 | Keywords           | react, truncate, ellipsis, multiline |
-| # releases         | 2 |
-| # dependents       | 33 |
-| # downloads        | 3375530 |
+| # releases         | 0 |
+| # dependents       | 42 |
+| # downloads        | 4988410 |
 | # stars            | 7 |
 
 ## Links

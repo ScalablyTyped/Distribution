@@ -11,8 +11,8 @@ Turn any collection of objects into its own efficient tree or linked list using 
 | Full name          | symbol-tree |
 | Keywords           | list, queue, stack, linked-list, tree, es6, dom, symbol |
 | # releases         | 3 |
-| # dependents       | 55 |
-| # downloads        | 232630268 |
+| # dependents       | 71 |
+| # downloads        | 332364836 |
 | # stars            | 2 |
 
 ## Links

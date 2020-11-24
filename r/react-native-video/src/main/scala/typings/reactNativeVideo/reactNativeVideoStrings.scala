@@ -2,9 +2,70 @@ package typings.reactNativeVideo
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeVideoStrings {
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def applicationSlashttmlPlussignxml: applicationSlashttmlPlussignxml = "application/ttml+xml".asInstanceOf[applicationSlashttmlPlussignxml]
+  
+  @scala.inline
+  def `applicationSlashx-subrip`: `applicationSlashx-subrip` = "application/x-subrip".asInstanceOf[`applicationSlashx-subrip`]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def contain: contain = "contain".asInstanceOf[contain]
+  
+  @scala.inline
+  def cover: cover = "cover".asInstanceOf[cover]
+  
+  @scala.inline
+  def disabled: disabled = "disabled".asInstanceOf[disabled]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def ignore: ignore = "ignore".asInstanceOf[ignore]
+  
+  @scala.inline
+  def index: index = "index".asInstanceOf[index]
+  
+  @scala.inline
+  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  
+  @scala.inline
+  def language: language = "language".asInstanceOf[language]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def obey: obey = "obey".asInstanceOf[obey]
+  
+  @scala.inline
+  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
+  @scala.inline
+  def resolution: resolution = "resolution".asInstanceOf[resolution]
+  
+  @scala.inline
+  def stretch: stretch = "stretch".asInstanceOf[stretch]
+  
+  @scala.inline
+  def system: system = "system".asInstanceOf[system]
+  
+  @scala.inline
+  def textSlashvtt: textSlashvtt = "text/vtt".asInstanceOf[textSlashvtt]
+  
+  @scala.inline
+  def title: title = "title".asInstanceOf[title]
+  
   @js.native
   sealed trait all extends js.Object
   
@@ -64,46 +125,4 @@ object reactNativeVideoStrings {
   
   @js.native
   sealed trait title extends js.Object
-  
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def applicationSlashttmlPlussignxml: applicationSlashttmlPlussignxml = "application/ttml+xml".asInstanceOf[applicationSlashttmlPlussignxml]
-  @scala.inline
-  def `applicationSlashx-subrip`: `applicationSlashx-subrip` = "application/x-subrip".asInstanceOf[`applicationSlashx-subrip`]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def contain: contain = "contain".asInstanceOf[contain]
-  @scala.inline
-  def cover: cover = "cover".asInstanceOf[cover]
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
-  @scala.inline
-  def index: index = "index".asInstanceOf[index]
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
-  @scala.inline
-  def language: language = "language".asInstanceOf[language]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def obey: obey = "obey".asInstanceOf[obey]
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
-  @scala.inline
-  def resolution: resolution = "resolution".asInstanceOf[resolution]
-  @scala.inline
-  def stretch: stretch = "stretch".asInstanceOf[stretch]
-  @scala.inline
-  def system: system = "system".asInstanceOf[system]
-  @scala.inline
-  def textSlashvtt: textSlashvtt = "text/vtt".asInstanceOf[textSlashvtt]
-  @scala.inline
-  def title: title = "title".asInstanceOf[title]
 }
-

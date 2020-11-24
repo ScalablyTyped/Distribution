@@ -12,7 +12,7 @@ Map for RDFJS Sinks including shortcut methods
 | Keywords           | map, rdf, rdfjs, sink |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 3471 |
+| # downloads        | 13447 |
 | # stars            | 0 |
 
 ## Links

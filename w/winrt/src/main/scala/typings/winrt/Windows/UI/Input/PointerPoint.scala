@@ -4,12 +4,12 @@ import typings.winrt.Windows.Devices.Input.PointerDevice
 import typings.winrt.Windows.Foundation.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PointerPoint extends IPointerPoint
-
 object PointerPoint {
+  
   @scala.inline
   def apply(
     frameId: Double,
@@ -25,4 +25,3 @@ object PointerPoint {
     __obj.asInstanceOf[PointerPoint]
   }
 }
-

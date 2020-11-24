@@ -2,7 +2,7 @@ package typings.oniguruma.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("oniguruma", "OnigString")
 @js.native
@@ -12,10 +12,13 @@ class OnigString protected () extends js.Object {
     * @param string The string primitive to be wrapped
     */
   def this(string: String) = this()
+  
   /** The string primitive wrapped by the object */
   val content: String = js.native
+  
   /** The character length of the string primitive wrapped by the object */
   val length: Double = js.native
+  
   /**
     * Returns a substring of the string primitive wrapped by the object
     * @param start The index of the first character to include
@@ -24,4 +27,3 @@ class OnigString protected () extends js.Object {
     */
   def substring(start: Double, end: Double): String = js.native
 }
-

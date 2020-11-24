@@ -8,11 +8,12 @@ import typings.reduxOrm.sessionMod.OrmSession
 import typings.std.Extract
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-orm/ORM", JSImport.Namespace)
 @js.native
 object ormMod extends js.Object {
+  
   @js.native
   /**
     * Creates a new ORM instance.
@@ -25,6 +26,7 @@ object ormMod extends js.Object {
     ]
   ] */, ModelNames /* <: /* keyof I */ String */] () extends js.Object {
     def this(opts: ORMOpts) = this()
+    
     /**
       * Gets a {@link Model} class by its name from the registry.
       *
@@ -35,6 +37,7 @@ object ormMod extends js.Object {
       * @return the {@link Model} class, if found
       */
     def get[K /* <: ModelNames */](modelName: K): /* import warning: importer.ImportType#apply Failed type conversion: I[K] */ js.Any = js.native
+    
     /**
       * Acquire database reference.
       *
@@ -48,6 +51,7 @@ object ormMod extends js.Object {
     {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
       */ typings.reduxOrm.reduxOrmStrings.ORM with TopLevel[I]
       ] = js.native
+    
     /**
       * Returns the empty database state.
       *
@@ -56,6 +60,7 @@ object ormMod extends js.Object {
       * @return empty state
       */
     def getEmptyState(): OrmState[I] = js.native
+    
     /**
       * Begins an mutable database session.
       *
@@ -67,6 +72,7 @@ object ormMod extends js.Object {
       * @return a new {@link Session} instance
       */
     def mutableSession(state: OrmState[I]): OrmSession[I] = js.native
+    
     /**
       * Registers a {@link Model} class to the ORM.
       *
@@ -79,6 +85,7 @@ object ormMod extends js.Object {
     def register(
       model: (/* import warning: importer.ImportType#apply Failed type conversion: I[ModelNames] */ js.Any)*
     ): Unit = js.native
+    
     /**
       * Begins an immutable database session.
       *
@@ -95,8 +102,7 @@ object ormMod extends js.Object {
   
   @js.native
   trait ORMOpts extends js.Object {
-    @JSName("createDatabase")
-    var createDatabase_Original: DatabaseCreator = js.native
+    
     def createDatabase[I /* <: IndexedModelClasses[
         _, 
         Extract[
@@ -109,6 +115,8 @@ object ormMod extends js.Object {
     {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
       */ typings.reduxOrm.reduxOrmStrings.ORMOpts with TopLevel[I]
       ] = js.native
+    @JSName("createDatabase")
+    var createDatabase_Original: DatabaseCreator = js.native
   }
   
   @js.native
@@ -130,6 +138,7 @@ object ormMod extends js.Object {
     */ typings.reduxOrm.reduxOrmStrings.IndexedModelClasses with TopLevel[js.Any] */, K /* <: /* keyof T */ String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in K ]: T[K]}
     */ typings.reduxOrm.reduxOrmStrings.IndexedModelClasses with TopLevel[T]
+  
   type OrmState[MClassMap /* <: IndexedModelClasses[
     _, 
     Extract[
@@ -140,4 +149,3 @@ object ormMod extends js.Object {
   {[ K in keyof MClassMap ]: redux-orm.redux-orm/db/Table.TableState<MClassMap[K]>}
     */ typings.reduxOrm.reduxOrmStrings.OrmState with TopLevel[MClassMap]
 }
-

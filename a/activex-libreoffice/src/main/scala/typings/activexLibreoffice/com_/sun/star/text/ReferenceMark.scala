@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used for cross references in text documents. */
 @js.native
 trait ReferenceMark
   extends XTextContent
      with XNamed
-
 object ReferenceMark {
+  
   @scala.inline
   def apply(
     Anchor: XTextRange,
@@ -33,4 +33,3 @@ object ReferenceMark {
     __obj.asInstanceOf[ReferenceMark]
   }
 }
-

@@ -2,14 +2,14 @@ package typings.bingmaps.Microsoft.Maps.DrawingTools
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ShapeType extends js.Object
-
 @JSGlobal("Microsoft.Maps.DrawingTools.ShapeType")
 @js.native
 object ShapeType extends js.Object {
+  
   /** A polygon shape type. */
   @js.native
   sealed trait polygon extends ShapeType
@@ -17,6 +17,4 @@ object ShapeType extends js.Object {
   /** A polyline shape type. */
   @js.native
   sealed trait polyline extends ShapeType
-  
 }
-

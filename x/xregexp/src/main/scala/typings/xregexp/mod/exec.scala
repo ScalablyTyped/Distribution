@@ -3,11 +3,12 @@ package typings.xregexp.mod
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xregexp", "exec")
 @js.native
 object exec extends js.Object {
+  
   /**
     * Executes a regex search in a specified string. Returns a match array or `null`. If the provided
     * regex uses named capture, named capture groups properties are included on the match array.
@@ -41,4 +42,3 @@ object exec extends js.Object {
   def apply(str: String, regex: RegExp, pos: Double): ExecArray | Null = js.native
   def apply(str: String, regex: RegExp, pos: Double, sticky: Boolean): ExecArray | Null = js.native
 }
-

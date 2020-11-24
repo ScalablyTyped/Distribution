@@ -8,16 +8,14 @@ import typings.activexExcel.activexExcelNumbers.`6`
 import typings.activexExcel.activexExcelNumbers.`7`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PublishObjects extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val Count: Double = js.native
-  val Creator: XlCreator = js.native
-  val Parent: js.Any = js.native
+  
   def apply(Index: String): PublishObject = js.native
   def apply(Index: Double): PublishObject = js.native
+  
   def Add(
     SourceType: XlSourceType,
     Filename: String,
@@ -27,10 +25,21 @@ trait PublishObjects extends js.Object {
     DivID: js.UndefOr[String],
     Title: js.UndefOr[String]
   ): PublishObject = js.native
+  
+  val Application: typings.activexExcel.Excel.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: XlCreator = js.native
+  
   def Delete(): Unit = js.native
+  
   def Item(Index: String): PublishObject = js.native
   def Item(Index: Double): PublishObject = js.native
+  
+  val Parent: js.Any = js.native
+  
   def Publish(): Unit = js.native
+  
   def _Default(Index: js.Any): PublishObject = js.native
 }
-

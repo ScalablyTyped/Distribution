@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "http-response-object" : "3.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "http-response-object" : "3.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

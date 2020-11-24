@@ -2,11 +2,12 @@ package typings.parsimmon.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("parsimmon", "seqMap")
 @js.native
 object seqMap extends js.Object {
+  
   /**
     * Matches all parsers sequentially, and passes their results as the arguments to a function.
     * Similar to calling Parsimmon.seq and then .map, but the values are not put in an array.
@@ -123,4 +124,3 @@ object seqMap extends js.Object {
     ]
   ): Parser[D] = js.native
 }
-

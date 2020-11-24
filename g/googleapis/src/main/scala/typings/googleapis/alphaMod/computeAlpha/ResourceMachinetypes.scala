@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Machinetypes")
 @js.native
 class ResourceMachinetypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.machineTypes.aggregatedList
     * @desc Retrieves an aggregated list of machine types.
@@ -48,6 +48,9 @@ class ResourceMachinetypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMachineTypeAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.machineTypes.get
     * @desc Returns the specified machine type. Gets a list of available
@@ -79,6 +82,7 @@ class ResourceMachinetypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMachineType]
   ): Unit = js.native
+  
   /**
     * compute.machineTypes.list
     * @desc Retrieves a list of machine types available to the specified
@@ -114,4 +118,3 @@ class ResourceMachinetypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaMachineTypeList]
   ): Unit = js.native
 }
-

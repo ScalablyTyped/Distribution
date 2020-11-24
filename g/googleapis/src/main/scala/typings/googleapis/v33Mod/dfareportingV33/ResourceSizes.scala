@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Sizes")
 @js.native
 class ResourceSizes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.sizes.get
     * @desc Gets one size by ID.
@@ -38,6 +40,7 @@ class ResourceSizes protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceSizesGet, options: MethodOptions): GaxiosPromise[SchemaSize] = js.native
   def get(params: ParamsResourceSizesGet, options: MethodOptions, callback: BodyResponseCallback[SchemaSize]): Unit = js.native
+  
   /**
     * dfareporting.sizes.insert
     * @desc Inserts a new size.
@@ -67,6 +70,7 @@ class ResourceSizes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSize]
   ): Unit = js.native
+  
   /**
     * dfareporting.sizes.list
     * @desc Retrieves a list of sizes, possibly filtered. Retrieved sizes are
@@ -103,4 +107,3 @@ class ResourceSizes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSizesListResponse]
   ): Unit = js.native
 }
-

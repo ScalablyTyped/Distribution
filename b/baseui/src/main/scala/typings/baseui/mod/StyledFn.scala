@@ -184,11 +184,12 @@ import typings.styletronReact.mod.StyletronComponent
 import typings.styletronStandard.mod.StyleObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StyledFn[T]
   extends typings.styletronReact.mod.StyledFn {
+  
   def apply[P /* <: js.Object */](component: `object`, style: js.Function1[/* props */ ThemeT[T] with P, StyleObject]): StyletronComponent[
     (Pick[
       ComponentProps[`object`], 
@@ -1240,4 +1241,3 @@ trait StyledFn[T]
     ]) with P
   ] = js.native
 }
-

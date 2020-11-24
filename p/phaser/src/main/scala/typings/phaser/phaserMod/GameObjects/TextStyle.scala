@@ -2,7 +2,7 @@ package typings.phaser.phaserMod.GameObjects
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A TextStyle class manages all of the style settings for a Text object.
@@ -25,4 +25,3 @@ class TextStyle protected ()
     style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle
   ) = this()
 }
-

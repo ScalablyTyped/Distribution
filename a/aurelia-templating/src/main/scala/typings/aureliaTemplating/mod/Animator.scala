@@ -3,11 +3,12 @@ package typings.aureliaTemplating.mod
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "Animator")
 @js.native
 class Animator () extends js.Object {
+  
   /**
     * Add a class to an element to trigger an animation.
     * @param element Element to animate
@@ -15,6 +16,7 @@ class Animator () extends js.Object {
     * @returns Resolved when the animation is done
     */
   def addClass(element: HTMLElement, className: String): js.Promise[Boolean] = js.native
+  
   def animate(element: js.Array[HTMLElement], className: String): js.Promise[Boolean] = js.native
   /**
     * Execute a single animation.
@@ -24,24 +26,28 @@ class Animator () extends js.Object {
     * @returns Resolved when the animation is done
     */
   def animate(element: HTMLElement, className: String): js.Promise[Boolean] = js.native
+  
   /**
     * Execute an 'enter' animation on an element
     * @param element Element to animate
     * @returns Resolved when the animation is done
     */
   def enter(element: HTMLElement): js.Promise[Boolean] = js.native
+  
   /**
     * Execute a 'leave' animation on an element
     * @param element Element to animate
     * @returns Resolved when the animation is done
     */
   def leave(element: HTMLElement): js.Promise[Boolean] = js.native
+  
   /**
     * Register an effect (for JS based animators)
     * @param effectName identifier of the effect
     * @param properties Object with properties for the effect
     */
   def registerEffect(effectName: String, properties: js.Object): Unit = js.native
+  
   /**
     * Add a class to an element to trigger an animation.
     * @param element Element to animate
@@ -49,6 +55,7 @@ class Animator () extends js.Object {
     * @returns Resolved when the animation is done
     */
   def removeClass(element: HTMLElement, className: String): js.Promise[Boolean] = js.native
+  
   /**
     * Run a sequence of animations one after the other.
     * for example: animator.runSequence("fadeIn","callout")
@@ -56,10 +63,10 @@ class Animator () extends js.Object {
     * @returns Resolved when all animations are done
     */
   def runSequence(animations: js.Array[_]): js.Promise[Boolean] = js.native
+  
   /**
     * Unregister an effect (for JS based animators)
     * @param effectName identifier of the effect
     */
   def unregisterEffect(effectName: String): Unit = js.native
 }
-

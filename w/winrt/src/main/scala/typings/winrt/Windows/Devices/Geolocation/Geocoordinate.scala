@@ -3,12 +3,12 @@ package typings.winrt.Windows.Devices.Geolocation
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Geocoordinate extends IGeocoordinate
-
 object Geocoordinate {
+  
   @scala.inline
   def apply(
     accuracy: Double,
@@ -24,4 +24,3 @@ object Geocoordinate {
     __obj.asInstanceOf[Geocoordinate]
   }
 }
-

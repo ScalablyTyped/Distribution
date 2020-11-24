@@ -5,7 +5,7 @@ import typings.actionsOnGoogle.helperHelperMod.Helper
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2DateTimeValueSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/datetime", "DateTime")
 @js.native
@@ -16,4 +16,3 @@ class DateTime protected () extends Helper[actionsDotintentDotDATETIME, GoogleAc
     */
   def this(options: DateTimeOptions) = this()
 }
-

@@ -4,11 +4,11 @@ import typings.relayRuntime.readerNodeMod.ReaderFragment
 import typings.relayRuntime.relayStoreTypesMod.PluralReaderSelector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("relay-runtime", "getPluralSelector")
 @js.native
 object getPluralSelector extends js.Object {
+  
   def apply(fragment: ReaderFragment, items: js.Array[_]): PluralReaderSelector = js.native
 }
-

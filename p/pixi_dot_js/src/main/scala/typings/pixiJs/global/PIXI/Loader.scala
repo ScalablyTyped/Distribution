@@ -3,7 +3,7 @@ package typings.pixiJs.global.PIXI
 import typings.pixiJs.PIXI.ILoaderPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The new loader, extends Resource Loader by Chad Engler: https://github.com/englercj/resource-loader
@@ -64,19 +64,11 @@ class Loader ()
   def this(baseUrl: js.UndefOr[scala.Nothing], concurrency: Double) = this()
   def this(baseUrl: String, concurrency: Double) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.Loader")
 @js.native
 object Loader extends js.Object {
-  /**
-    * A premade instance of the loader that can be used to load resources.
-    * @name shared
-    * @type {PIXI.Loader}
-    * @static
-    * @memberof PIXI.Loader
-    */
-  var shared: typings.pixiJs.PIXI.Loader = js.native
+  
   /**
     * Adds a Loader plugin for the global shared loader and all
     * new Loader instances created.
@@ -88,5 +80,13 @@ object Loader extends js.Object {
     * @return {PIXI.Loader} Reference to PIXI.Loader for chaining
     */
   def registerPlugin(plugin: ILoaderPlugin): typings.pixiJs.PIXI.Loader = js.native
+  
+  /**
+    * A premade instance of the loader that can be used to load resources.
+    * @name shared
+    * @type {PIXI.Loader}
+    * @static
+    * @memberof PIXI.Loader
+    */
+  var shared: typings.pixiJs.PIXI.Loader = js.native
 }
-

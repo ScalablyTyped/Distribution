@@ -5,15 +5,20 @@ import typings.xstream.mod.Operator
 import typings.xstream.mod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xstream/extra/sampleCombine", JSImport.Namespace)
 @js.native
 object sampleCombineMod extends js.Object {
+  
+  var default: SampleCombineSignature = js.native
+  
   @js.native
   class SampleCombineListener[T] protected () extends InternalListener[T] {
     def this(i: Double, p: SampleCombineOperator[_]) = this()
+    
     var i: js.Any = js.native
+    
     var p: js.Any = js.native
   }
   
@@ -21,18 +26,26 @@ object sampleCombineMod extends js.Object {
   class SampleCombineOperator[T] protected ()
     extends Operator[T, js.Array[js.Any]] {
     def this(ins: Stream[T], streams: js.Array[Stream[_]]) = this()
+    
     var Nn: Double = js.native
+    
+    def down(i: Double, l: SampleCombineListener[_]): Unit = js.native
+    
     var ils: js.Array[SampleCombineListener[_]] = js.native
+    
     var others: js.Array[Stream[_]] = js.native
+    
     @JSName("out")
     var out_SampleCombineOperator: Stream[js.Array[_]] = js.native
-    var vals: js.Array[_] = js.native
-    def down(i: Double, l: SampleCombineListener[_]): Unit = js.native
+    
     def up(t: js.Any, i: Double): Unit = js.native
+    
+    var vals: js.Array[_] = js.native
   }
   
   @js.native
   trait SampleCombineSignature extends js.Object {
+    
     def apply(): js.Function1[/* s */ Stream[_], Stream[js.Array[_]]] = js.native
     def apply(streams: Stream[_]*): js.Function1[/* s */ Stream[_], Stream[js.Array[_]]] = js.native
     def apply[T1](s1: Stream[T1]): js.Function1[/* s */ Stream[_], Stream[js.Tuple2[_, T1]]] = js.native
@@ -61,7 +74,4 @@ object sampleCombineMod extends js.Object {
       s8: Stream[T8]
     ): js.Function1[/* s */ Stream[_], Stream[js.Tuple9[_, T1, T2, T3, T4, T5, T6, T7, T8]]] = js.native
   }
-  
-  var default: SampleCombineSignature = js.native
 }
-

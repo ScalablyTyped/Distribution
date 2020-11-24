@@ -4,11 +4,12 @@ import typings.std.ArrayLike
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3-array", "bisect")
 @js.native
 object bisect extends js.Object {
+  
   def apply(array: ArrayLike[String], x: String): Double = js.native
   def apply(array: ArrayLike[String], x: String, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
   def apply(array: ArrayLike[String], x: String, lo: Double): Double = js.native
@@ -22,4 +23,3 @@ object bisect extends js.Object {
   def apply(array: ArrayLike[Date], x: Date, lo: Double): Double = js.native
   def apply(array: ArrayLike[Date], x: Date, lo: Double, hi: Double): Double = js.native
 }
-

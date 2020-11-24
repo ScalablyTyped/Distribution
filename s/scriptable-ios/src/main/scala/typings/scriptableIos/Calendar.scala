@@ -6,7 +6,7 @@ import typings.scriptableIos.scriptableIosStrings.tentative
 import typings.scriptableIos.scriptableIosStrings.unavailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Holds reminders and events._
@@ -14,31 +14,31 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Calendar extends js.Object {
+  
   /**
     * _Indicates whether items can be added, edited, and deleted in the calendar._
     * @see https://docs.scriptable.app/calendar/#allowscontentmodifications
     */
   var allowsContentModifications: Boolean = js.native
+  
   /**
     * _Color of calendar._
     * @see https://docs.scriptable.app/calendar/#color
     */
   var color: Color = js.native
+  
   /**
     * _Calendar identifier._
     * @see https://docs.scriptable.app/calendar/#identifier
     */
   var identifier: String = js.native
+  
   /**
     * _Whether the calendar is a subscribed calendar._
     * @see https://docs.scriptable.app/calendar/#issubscribed
     */
   var isSubscribed: Boolean = js.native
-  /**
-    * _Title of calendar._
-    * @see https://docs.scriptable.app/calendar/#title
-    */
-  var title: String = js.native
+  
   /**
     * _Removes calendar._
     *
@@ -46,6 +46,7 @@ trait Calendar extends js.Object {
     * @see https://docs.scriptable.app/calendar/#-remove
     */
   def remove(): Unit = js.native
+  
   /**
     * _Saves calendar._
     *
@@ -53,6 +54,7 @@ trait Calendar extends js.Object {
     * @see https://docs.scriptable.app/calendar/#-save
     */
   def save(): Unit = js.native
+  
   /**
     * _Checks if the calendar supports availability._
     *
@@ -76,5 +78,10 @@ trait Calendar extends js.Object {
   def supportsAvailability_tentative(availability: tentative): Boolean = js.native
   @JSName("supportsAvailability")
   def supportsAvailability_unavailable(availability: unavailable): Boolean = js.native
+  
+  /**
+    * _Title of calendar._
+    * @see https://docs.scriptable.app/calendar/#title
+    */
+  var title: String = js.native
 }
-

@@ -2,23 +2,25 @@ package typings.vscodeLanguageserverTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Range extends js.Object {
+  
   /**
     * The range's end position.
     */
   var end: Position = js.native
+  
   /**
     * The range's start position
     */
   var start: Position = js.native
 }
-
 @JSImport("vscode-languageserver-types", "Range")
 @js.native
 object Range extends js.Object {
+  
   /**
     * Create a new Range liternal.
     * @param startLine The start line number.
@@ -33,9 +35,9 @@ object Range extends js.Object {
     * @param end The range's end position.
     */
   def create(start: Position, end: Position): Range = js.native
+  
   /**
     * Checks whether the given literal conforms to the [Range](#Range) interface.
     */
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean = js.native
 }
-

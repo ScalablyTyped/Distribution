@@ -2,7 +2,7 @@ package typings.jupyterlabCells.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/cells", "CellFooter")
 @js.native
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   */
 class CellFooter ()
   extends typings.jupyterlabCells.headerfooterMod.CellFooter
-

@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "ParameterInformation")
 @js.native
@@ -19,11 +19,13 @@ class ParameterInformation protected () extends js.Object {
   def this(label: String, documentation: MarkdownString) = this()
   def this(label: js.Tuple2[Double, Double], documentation: String) = this()
   def this(label: js.Tuple2[Double, Double], documentation: MarkdownString) = this()
+  
   /**
     * The human-readable doc-comment of this signature. Will be shown
     * in the UI but can be omitted.
     */
   var documentation: js.UndefOr[String | MarkdownString] = js.native
+  
   /**
     * The label of this signature.
     *
@@ -33,4 +35,3 @@ class ParameterInformation protected () extends js.Object {
     */
   var label: String | (js.Tuple2[Double, Double]) = js.native
 }
-

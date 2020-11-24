@@ -2,7 +2,7 @@ package typings.immer.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Includes 1 when `void` or `undefined` exists in type `T` */
 /* Rewritten from type alias, can be one of: 
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
   - typings.immer.immerNumbers.`1`
 */
 trait HasVoidLike[T] extends js.Object
-

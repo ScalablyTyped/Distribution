@@ -4,10 +4,11 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ViewSettingsDialog extends Control {
+  
   /**
     * Overwrites the aggregation setter in order to have ID validation logic as some stringsare reserved
     * for the predefined tabs.
@@ -15,6 +16,7 @@ trait ViewSettingsDialog extends Control {
     * @returns this pointer for chaining
     */
   def addCustomTab(oCustomTab: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Adds some filterItem to the aggregation <code>filterItems</code>.
     * @since 1.16
@@ -22,24 +24,28 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addFilterItem(oFilterItem: ViewSettingsItem): ViewSettingsDialog = js.native
+  
   /**
     * Adds a group item and sets the association to reflect the selected state.
     * @param oItem The item to be added to the group items
     * @returns this pointer for chaining
     */
   def addGroupItem(oItem: ViewSettingsItem): ViewSettingsDialog = js.native
+  
   /**
     * Adds a preset filter item and sets the association to reflect the selected state.
     * @param oItem The selected item or a string with the key
     * @returns this pointer for chaining
     */
   def addPresetFilterItem(oItem: ViewSettingsItem): ViewSettingsDialog = js.native
+  
   /**
     * Adds a sort item and sets the association to reflect the selected state.
     * @param oItem The item to be added to the aggregation
     * @returns this pointer for chaining
     */
   def addSortItem(oItem: ViewSettingsItem): ViewSettingsDialog = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>cancel</code> event of this
     * <code>sap.m.ViewSettingsDialog</code>.When called, the context of the event handler (its
@@ -55,6 +61,7 @@ trait ViewSettingsDialog extends Control {
     */
   def attachCancel(oData: js.Any, fnFunction: js.Any): ViewSettingsDialog = js.native
   def attachCancel(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>confirm</code> event of this
     * <code>sap.m.ViewSettingsDialog</code>.When called, the context of the event handler (its
@@ -72,6 +79,7 @@ trait ViewSettingsDialog extends Control {
     */
   def attachConfirm(oData: js.Any, fnFunction: js.Any): ViewSettingsDialog = js.native
   def attachConfirm(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>filterDetailPageOpened</code> event of
     * this <code>sap.m.ViewSettingsDialog</code>.When called, the context of the event handler (its
@@ -86,6 +94,7 @@ trait ViewSettingsDialog extends Control {
     */
   def attachFilterDetailPageOpened(oData: js.Any, fnFunction: js.Any): ViewSettingsDialog = js.native
   def attachFilterDetailPageOpened(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>resetFilters</code> event of this
     * <code>sap.m.ViewSettingsDialog</code>.When called, the context of the event handler (its
@@ -101,6 +110,7 @@ trait ViewSettingsDialog extends Control {
     */
   def attachResetFilters(oData: js.Any, fnFunction: js.Any): ViewSettingsDialog = js.native
   def attachResetFilters(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Binds aggregation <code>customTabs</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -110,6 +120,7 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindCustomTabs(oBindingInfo: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Binds aggregation <code>filterItems</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -119,6 +130,7 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindFilterItems(oBindingInfo: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Binds aggregation <code>groupItems</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -128,6 +140,7 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindGroupItems(oBindingInfo: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Binds aggregation <code>presetFilterItems</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -137,6 +150,7 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindPresetFilterItems(oBindingInfo: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Binds aggregation <code>sortItems</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -146,36 +160,42 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindSortItems(oBindingInfo: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Destroys all the customTabs in the aggregation <code>customTabs</code>.
     * @since 1.30
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyCustomTabs(): ViewSettingsDialog = js.native
+  
   /**
     * Destroys all the filterItems in the aggregation <code>filterItems</code>.
     * @since 1.16
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyFilterItems(): ViewSettingsDialog = js.native
+  
   /**
     * Destroys all the groupItems in the aggregation <code>groupItems</code>.
     * @since 1.16
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyGroupItems(): ViewSettingsDialog = js.native
+  
   /**
     * Destroys all the presetFilterItems in the aggregation <code>presetFilterItems</code>.
     * @since 1.16
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyPresetFilterItems(): ViewSettingsDialog = js.native
+  
   /**
     * Destroys all the sortItems in the aggregation <code>sortItems</code>.
     * @since 1.16
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroySortItems(): ViewSettingsDialog = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>cancel</code> event of this
     * <code>sap.m.ViewSettingsDialog</code>.The passed function and listener object must match the ones
@@ -185,6 +205,7 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachCancel(fnFunction: js.Any, oListener: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>confirm</code> event of this
     * <code>sap.m.ViewSettingsDialog</code>.The passed function and listener object must match the ones
@@ -194,6 +215,7 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachConfirm(fnFunction: js.Any, oListener: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>filterDetailPageOpened</code> event of
     * this <code>sap.m.ViewSettingsDialog</code>.The passed function and listener object must match the
@@ -203,6 +225,7 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachFilterDetailPageOpened(fnFunction: js.Any, oListener: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>resetFilters</code> event of this
     * <code>sap.m.ViewSettingsDialog</code>.The passed function and listener object must match the ones
@@ -212,12 +235,14 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachResetFilters(fnFunction: js.Any, oListener: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Fires event <code>cancel</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireCancel(mArguments: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Fires event <code>confirm</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>sortItem</code> of type <code>sap.m.ViewSettingsItem</code>The selected
@@ -238,6 +263,7 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireConfirm(mArguments: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Fires event <code>filterDetailPageOpened</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>parentFilterItem</code> of type
@@ -246,22 +272,26 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireFilterDetailPageOpened(mArguments: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Fires event <code>resetFilters</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireResetFilters(mArguments: js.Any): ViewSettingsDialog = js.native
+  
   /**
     * Gets content of aggregation <code>customTabs</code>.The list of all the custom tabs.
     * @since 1.30
     */
   def getCustomTabs(): js.Array[ViewSettingsCustomTab] = js.native
+  
   /**
     * Forward method to the inner dialog method: getDomRef.
     * @returns The Element's DOM Element sub DOM Element or null
     */
   def getDomRef(): Element = js.native
+  
   /**
     * Gets content of aggregation <code>filterItems</code>.The list of items with key and value that can
     * be filtered on (for example, a list of columns for a table). A filterItem is associated with one or
@@ -269,18 +299,21 @@ trait ViewSettingsDialog extends Control {
     * @since 1.16
     */
   def getFilterItems(): js.Array[ViewSettingsItem] = js.native
+  
   /**
     * Gets current value of property <code>groupDescending</code>.Determines whether the group order is
     * descending or ascending (default).Default value is <code>false</code>.
     * @returns Value of property <code>groupDescending</code>
     */
   def getGroupDescending(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>groupItems</code>.The list of items with key and value that can be
     * grouped on (for example, a list of columns for a table).
     * @since 1.16
     */
   def getGroupItems(): js.Array[ViewSettingsItem] = js.native
+  
   /**
     * Gets content of aggregation <code>presetFilterItems</code>.The list of preset filter items that
     * allows the selection of more complex or custom filters. These entries are displayed at the top of
@@ -288,51 +321,60 @@ trait ViewSettingsDialog extends Control {
     * @since 1.16
     */
   def getPresetFilterItems(): js.Array[ViewSettingsItem] = js.native
+  
   /**
     * Returns the selected filters as an array of ViewSettingsItems.It can be used to create matching
     * sorters and filters to apply the selected settings to the data.
     * @returns An array of selected filter items
     */
   def getSelectedFilterItems(): js.Array[ViewSettingsItem] = js.native
+  
   /**
     * Gets the selected filter object in format {key: boolean}.It can be used to create matching sorters
     * and filters to apply the selected settings to the data.
     * @returns An object with item and subitem keys
     */
   def getSelectedFilterKeys(): js.Any = js.native
+  
   /**
     * Gets the filter string in format: "filter name (subfilter1 name, subfilter2name, ...), ...".For
     * custom and preset filters it will only add the filter name to the resulting string.
     * @returns The selected filter string
     */
   def getSelectedFilterString(): String = js.native
+  
   /**
     * ID of the element which is the current target of the association <code>selectedGroupItem</code>, or
     * <code>null</code>.
     */
   def getSelectedGroupItem(): js.Any = js.native
+  
   /**
     * ID of the element which is the current target of the association
     * <code>selectedPresetFilterItem</code>, or <code>null</code>.
     */
   def getSelectedPresetFilterItem(): js.Any = js.native
+  
   /**
     * ID of the element which is the current target of the association <code>selectedSortItem</code>, or
     * <code>null</code>.
     */
   def getSelectedSortItem(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>sortDescending</code>.Determines whether the sort order is
     * descending or ascending (default).Default value is <code>false</code>.
     * @returns Value of property <code>sortDescending</code>
     */
   def getSortDescending(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>sortItems</code>.The list of items with key and value that can be
     * sorted over (for example, a list of columns for a table).
     * @since 1.16
     */
   def getSortItems(): js.Array[ViewSettingsItem] = js.native
+  
   /**
     * Gets current value of property <code>title</code>.Defines the title of the dialog. If not set and
     * there is only one active tab, the dialog uses the default "View" or "Sort", "Group", "Filter"
@@ -340,11 +382,13 @@ trait ViewSettingsDialog extends Control {
     * @returns Value of property <code>title</code>
     */
   def getTitle(): String = js.native
+  
   /**
     * Forward method to the inner dialog method: hasStyleClass.
     * @returns true if the class is set, false otherwise
     */
   def hasStyleClass(): Boolean = js.native
+  
   /**
     * Checks for the provided <code>sap.m.ViewSettingsCustomTab</code> in the aggregation
     * <code>customTabs</code>.and returns its index if found or -1 otherwise.
@@ -353,6 +397,7 @@ trait ViewSettingsDialog extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfCustomTab(oCustomTab: ViewSettingsCustomTab): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.m.ViewSettingsItem</code> in the aggregation
     * <code>filterItems</code>.and returns its index if found or -1 otherwise.
@@ -361,6 +406,7 @@ trait ViewSettingsDialog extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfFilterItem(oFilterItem: ViewSettingsItem): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.m.ViewSettingsItem</code> in the aggregation
     * <code>groupItems</code>.and returns its index if found or -1 otherwise.
@@ -369,6 +415,7 @@ trait ViewSettingsDialog extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfGroupItem(oGroupItem: ViewSettingsItem): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.m.ViewSettingsItem</code> in the aggregation
     * <code>presetFilterItems</code>.and returns its index if found or -1 otherwise.
@@ -377,6 +424,7 @@ trait ViewSettingsDialog extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfPresetFilterItem(oPresetFilterItem: ViewSettingsItem): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.m.ViewSettingsItem</code> in the aggregation
     * <code>sortItems</code>.and returns its index if found or -1 otherwise.
@@ -385,6 +433,7 @@ trait ViewSettingsDialog extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfSortItem(oSortItem: ViewSettingsItem): Double = js.native
+  
   /**
     * Inserts a customTab into the aggregation <code>customTabs</code>.
     * @since 1.30
@@ -396,6 +445,7 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertCustomTab(oCustomTab: ViewSettingsCustomTab, iIndex: Double): ViewSettingsDialog = js.native
+  
   /**
     * Inserts a filterItem into the aggregation <code>filterItems</code>.
     * @since 1.16
@@ -407,6 +457,7 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertFilterItem(oFilterItem: ViewSettingsItem, iIndex: Double): ViewSettingsDialog = js.native
+  
   /**
     * Inserts a groupItem into the aggregation <code>groupItems</code>.
     * @since 1.16
@@ -418,6 +469,7 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertGroupItem(oGroupItem: ViewSettingsItem, iIndex: Double): ViewSettingsDialog = js.native
+  
   /**
     * Inserts a presetFilterItem into the aggregation <code>presetFilterItems</code>.
     * @since 1.16
@@ -429,6 +481,7 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertPresetFilterItem(oPresetFilterItem: ViewSettingsItem, iIndex: Double): ViewSettingsDialog = js.native
+  
   /**
     * Inserts a sortItem into the aggregation <code>sortItems</code>.
     * @since 1.16
@@ -440,6 +493,7 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertSortItem(oSortItem: ViewSettingsItem, iIndex: Double): ViewSettingsDialog = js.native
+  
   /**
     * Opens the ViewSettingsDialog relative to the parent control.
     * @param sPageId The ID of the initial page to be opened in the dialog.    The available values are
@@ -447,6 +501,7 @@ trait ViewSettingsDialog extends Control {
     * @returns this pointer for chaining
     */
   def open(sPageId: String): ViewSettingsDialog = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>customTabs</code>.Additionally, it unregisters
     * them from the hosting UIArea.
@@ -454,12 +509,14 @@ trait ViewSettingsDialog extends Control {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllCustomTabs(): js.Array[ViewSettingsCustomTab] = js.native
+  
   /**
     * Removes all filter Items and resets the remembered page if it was a filter detail page and all of
     * its filter items are being removed.
     * @returns this pointer for chaining
     */
   def removeAllFilterItems(): ViewSettingsDialog = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>groupItems</code>.Additionally, it unregisters
     * them from the hosting UIArea.
@@ -467,6 +524,7 @@ trait ViewSettingsDialog extends Control {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllGroupItems(): js.Array[ViewSettingsItem] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>presetFilterItems</code>.Additionally, it
     * unregisters them from the hosting UIArea.
@@ -474,6 +532,7 @@ trait ViewSettingsDialog extends Control {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllPresetFilterItems(): js.Array[ViewSettingsItem] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>sortItems</code>.Additionally, it unregisters
     * them from the hosting UIArea.
@@ -481,6 +540,7 @@ trait ViewSettingsDialog extends Control {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllSortItems(): js.Array[ViewSettingsItem] = js.native
+  
   def removeCustomTab(vCustomTab: String): ViewSettingsCustomTab = js.native
   /**
     * Removes a customTab from the aggregation <code>customTabs</code>.
@@ -490,6 +550,7 @@ trait ViewSettingsDialog extends Control {
     */
   def removeCustomTab(vCustomTab: Double): ViewSettingsCustomTab = js.native
   def removeCustomTab(vCustomTab: ViewSettingsCustomTab): ViewSettingsCustomTab = js.native
+  
   def removeFilterItem(vFilterItem: String): ViewSettingsDialog = js.native
   /**
     * Removes a filter Item and resets the remembered page if it was the filter detail page of the removed
@@ -499,6 +560,7 @@ trait ViewSettingsDialog extends Control {
     */
   def removeFilterItem(vFilterItem: Double): ViewSettingsDialog = js.native
   def removeFilterItem(vFilterItem: ViewSettingsFilterItem): ViewSettingsDialog = js.native
+  
   def removeGroupItem(vGroupItem: String): ViewSettingsItem = js.native
   /**
     * Removes a groupItem from the aggregation <code>groupItems</code>.
@@ -508,6 +570,7 @@ trait ViewSettingsDialog extends Control {
     */
   def removeGroupItem(vGroupItem: Double): ViewSettingsItem = js.native
   def removeGroupItem(vGroupItem: ViewSettingsItem): ViewSettingsItem = js.native
+  
   def removePresetFilterItem(vPresetFilterItem: String): ViewSettingsItem = js.native
   /**
     * Removes a presetFilterItem from the aggregation <code>presetFilterItems</code>.
@@ -517,6 +580,7 @@ trait ViewSettingsDialog extends Control {
     */
   def removePresetFilterItem(vPresetFilterItem: Double): ViewSettingsItem = js.native
   def removePresetFilterItem(vPresetFilterItem: ViewSettingsItem): ViewSettingsItem = js.native
+  
   def removeSortItem(vSortItem: String): ViewSettingsItem = js.native
   /**
     * Removes a sortItem from the aggregation <code>sortItems</code>.
@@ -526,11 +590,13 @@ trait ViewSettingsDialog extends Control {
     */
   def removeSortItem(vSortItem: Double): ViewSettingsItem = js.native
   def removeSortItem(vSortItem: ViewSettingsItem): ViewSettingsItem = js.native
+  
   /**
     * Forward method to the inner dialog method: removeStyleClass.
     * @returns this pointer for chaining
     */
   def removeStyleClass(): ViewSettingsDialog = js.native
+  
   /**
     * Sets a new value for property <code>groupDescending</code>.Determines whether the group order is
     * descending or ascending (default).When called with a value of <code>null</code> or
@@ -540,6 +606,7 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setGroupDescending(bGroupDescending: Boolean): ViewSettingsDialog = js.native
+  
   /**
     * Sets the selected filter object in format {key: boolean}.
     * @param oSelectedFilterKeys A configuration object with filter item and sub item keys in the format:
@@ -548,6 +615,7 @@ trait ViewSettingsDialog extends Control {
     * @returns this pointer for chaining
     */
   def setSelectedFilterKeys(oSelectedFilterKeys: js.Any): ViewSettingsDialog = js.native
+  
   def setSelectedGroupItem(vItemOrKey: String): ViewSettingsDialog = js.native
   /**
     * Sets the selected group item (either by key or by item).
@@ -555,6 +623,7 @@ trait ViewSettingsDialog extends Control {
     * @returns this pointer for chaining
     */
   def setSelectedGroupItem(vItemOrKey: ViewSettingsItem): ViewSettingsDialog = js.native
+  
   def setSelectedPresetFilterItem(vItemOrKey: String): ViewSettingsDialog = js.native
   /**
     * Sets the selected preset filter item.
@@ -562,6 +631,7 @@ trait ViewSettingsDialog extends Control {
     * @returns this pointer for chaining
     */
   def setSelectedPresetFilterItem(vItemOrKey: ViewSettingsItem): ViewSettingsDialog = js.native
+  
   def setSelectedSortItem(vItemOrKey: String): ViewSettingsDialog = js.native
   /**
     * Sets the selected sort item (either by key or by item).
@@ -569,6 +639,7 @@ trait ViewSettingsDialog extends Control {
     * @returns this pointer for chaining
     */
   def setSelectedSortItem(vItemOrKey: ViewSettingsItem): ViewSettingsDialog = js.native
+  
   /**
     * Sets a new value for property <code>sortDescending</code>.Determines whether the sort order is
     * descending or ascending (default).When called with a value of <code>null</code> or
@@ -578,41 +649,48 @@ trait ViewSettingsDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSortDescending(bSortDescending: Boolean): ViewSettingsDialog = js.native
+  
   /**
     * Sets the title of the internal dialog.
     * @param sTitle The title text for the dialog
     * @returns this pointer for chaining
     */
   def setTitle(sTitle: String): ViewSettingsDialog = js.native
+  
   /**
     * Forward method to the inner dialog method: toggleStyleClass.
     * @returns this pointer for chaining
     */
   def toggleStyleClass(): ViewSettingsDialog = js.native
+  
   /**
     * Unbinds aggregation <code>customTabs</code> from model data.
     * @since 1.30
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindCustomTabs(): ViewSettingsDialog = js.native
+  
   /**
     * Unbinds aggregation <code>filterItems</code> from model data.
     * @since 1.16
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindFilterItems(): ViewSettingsDialog = js.native
+  
   /**
     * Unbinds aggregation <code>groupItems</code> from model data.
     * @since 1.16
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindGroupItems(): ViewSettingsDialog = js.native
+  
   /**
     * Unbinds aggregation <code>presetFilterItems</code> from model data.
     * @since 1.16
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindPresetFilterItems(): ViewSettingsDialog = js.native
+  
   /**
     * Unbinds aggregation <code>sortItems</code> from model data.
     * @since 1.16
@@ -620,4 +698,3 @@ trait ViewSettingsDialog extends Control {
     */
   def unbindSortItems(): ViewSettingsDialog = js.native
 }
-

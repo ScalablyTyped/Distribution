@@ -10,9 +10,9 @@ Vinyl adapter for the file system.
 | ------------------ | :-------------: |
 | Full name          | vinyl-fs |
 | Keywords           | gulp, vinyl-adapter, vinyl, file, file system, fs, streams |
-| # releases         | 3 |
-| # dependents       | 1043 |
-| # downloads        | 97988041 |
+| # releases         | 0 |
+| # dependents       | 1102 |
+| # downloads        | 97769252 |
 | # stars            | 36 |
 
 ## Links

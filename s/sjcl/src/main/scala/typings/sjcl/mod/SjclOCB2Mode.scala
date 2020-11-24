@@ -2,10 +2,11 @@ package typings.sjcl.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SjclOCB2Mode extends js.Object {
+  
   def decrypt(prf: SjclCipher, ciphertext: BitArray_, iv: BitArray_): BitArray_ = js.native
   def decrypt(
     prf: SjclCipher,
@@ -48,6 +49,7 @@ trait SjclOCB2Mode extends js.Object {
     tlen: Double,
     premac: Boolean
   ): BitArray_ = js.native
+  
   def encrypt(prf: SjclCipher, plaintext: BitArray_, iv: BitArray_): BitArray_ = js.native
   def encrypt(
     prf: SjclCipher,
@@ -90,6 +92,6 @@ trait SjclOCB2Mode extends js.Object {
     tlen: Double,
     premac: Boolean
   ): BitArray_ = js.native
+  
   def pmac(prf: SjclCipher, adata: BitArray_): js.Array[Double] = js.native
 }
-

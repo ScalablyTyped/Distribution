@@ -2,14 +2,18 @@ package typings.opentracing.tracerMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("opentracing/lib/tracer", "Tracer")
 @js.native
 class Tracer () extends js.Object {
+  
   /* protected */ def _extract(format: String, carrier: js.Any): typings.opentracing.spanContextMod.default | Null = js.native
+  
   /* protected */ def _inject(spanContext: typings.opentracing.spanContextMod.default, format: String, carrier: js.Any): Unit = js.native
+  
   /* protected */ def _startSpan(name: String, fields: SpanOptions): typings.opentracing.spanMod.default = js.native
+  
   /**
     * Returns a SpanContext instance extracted from `carrier` in the given
     * `format`.
@@ -33,6 +37,7 @@ class Tracer () extends js.Object {
     *         be found in `carrier`
     */
   def extract(format: String, carrier: js.Any): typings.opentracing.spanContextMod.default | Null = js.native
+  
   /**
     * Injects the given SpanContext instance for cross-process propagation
     * within `carrier`. The expected type of `carrier` depends on the value of
@@ -64,6 +69,7 @@ class Tracer () extends js.Object {
     */
   def inject(spanContext: typings.opentracing.spanContextMod.default, format: String, carrier: js.Any): Unit = js.native
   def inject(spanContext: typings.opentracing.spanMod.default, format: String, carrier: js.Any): Unit = js.native
+  
   /**
     * Starts and returns a new Span representing a logical unit of work.
     *
@@ -91,4 +97,3 @@ class Tracer () extends js.Object {
   def startSpan(name: String): typings.opentracing.spanMod.default = js.native
   def startSpan(name: String, options: SpanOptions): typings.opentracing.spanMod.default = js.native
 }
-

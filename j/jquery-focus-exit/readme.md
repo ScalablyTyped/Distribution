@@ -12,7 +12,7 @@ Triggers 'focusexit' event when keyboard focus has completely left the element. 
 | Keywords           | jquery-plugin, ecosystem:jquery, ebay, accessibility, a11y |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 9865 |
+| # downloads        | 4411 |
 | # stars            | 0 |
 
 ## Links

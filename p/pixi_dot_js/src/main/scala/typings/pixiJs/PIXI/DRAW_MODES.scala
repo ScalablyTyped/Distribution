@@ -2,11 +2,10 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DRAW_MODES extends js.Object
-
 /**
   * Various webgl draw modes. These can be used to specify which GL drawMode to use
   * under certain situations and renderers.
@@ -26,6 +25,7 @@ sealed trait DRAW_MODES extends js.Object
 @JSGlobal("PIXI.DRAW_MODES")
 @js.native
 object DRAW_MODES extends js.Object {
+  
   @js.native
   sealed trait LINES extends DRAW_MODES
   
@@ -46,6 +46,4 @@ object DRAW_MODES extends js.Object {
   
   @js.native
   sealed trait TRIANGLE_STRIP extends DRAW_MODES
-  
 }
-

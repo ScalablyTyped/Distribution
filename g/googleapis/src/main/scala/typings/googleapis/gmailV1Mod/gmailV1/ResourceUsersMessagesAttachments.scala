@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Messages$Attachments")
 @js.native
 class ResourceUsersMessagesAttachments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gmail.users.messages.attachments.get
     * @desc Gets the specified message attachment.
@@ -47,4 +49,3 @@ class ResourceUsersMessagesAttachments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaMessagePartBody]
   ): Unit = js.native
 }
-

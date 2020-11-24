@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Grid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ToolBarItems extends js.Object
-
 @JSGlobal("ej.Grid.ToolBarItems")
 @js.native
 object ToolBarItems extends js.Object {
+  
   ///Toolbar item is add.
   @js.native
   sealed trait Add extends ToolBarItems
@@ -45,6 +45,4 @@ object ToolBarItems extends js.Object {
   ///Toolbar item is wordExport.
   @js.native
   sealed trait WordExport extends ToolBarItems
-  
 }
-

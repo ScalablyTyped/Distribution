@@ -11,8 +11,8 @@ A command line utility that allows read/write (i.e copy/paste) access to the sys
 | Full name          | copy-paste |
 | Keywords           | copy, paste, copy and paste, clipboard |
 | # releases         | 0 |
-| # dependents       | 334 |
-| # downloads        | 681569 |
+| # dependents       | 336 |
+| # downloads        | 635614 |
 | # stars            | 11 |
 
 ## Links

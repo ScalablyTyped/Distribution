@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@maxim_mazurok/gapi.client.file" : "1.0.20201103"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@maxim_mazurok/gapi.client.file" : "1.0.20201103"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

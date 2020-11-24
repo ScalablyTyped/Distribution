@@ -10,12 +10,15 @@ New Relic log encricher for the `winston` package. Allows `winston` logs to be c
 | ------------------ | :-------------: |
 | Full name          | @newrelic/winston-enricher |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 431 |
+| # releases         | 4 |
+| # dependents       | 1 |
+| # downloads        | 101486 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/newrelic/newrelic-winston-logenricher-node)
+- [Bugs](https://github.com/newrelic/newrelic-winston-logenricher-node/issues)
+- [Repository](https://github.com/newrelic/newrelic-winston-logenricher-node)
 - [Npm](https://www.npmjs.com/package/%40newrelic%2Fwinston-enricher)
     
 

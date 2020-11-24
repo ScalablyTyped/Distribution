@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Userrolepermissions")
 @js.native
 class ResourceUserrolepermissions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.userRolePermissions.get
     * @desc Gets one user role permission by ID.
@@ -45,6 +47,7 @@ class ResourceUserrolepermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUserRolePermission]
   ): Unit = js.native
+  
   /**
     * dfareporting.userRolePermissions.list
     * @desc Gets a list of user role permissions, possibly filtered.
@@ -78,4 +81,3 @@ class ResourceUserrolepermissions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUserRolePermissionsListResponse]
   ): Unit = js.native
 }
-

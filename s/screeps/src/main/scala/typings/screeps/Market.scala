@@ -4,31 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.screeps.anon.Price
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// No static is available
 /**
   * A global object representing the in-game market. You can use this object to track resource transactions to/from your
   * terminals, and your buy/sell orders. The object is accessible via the singleton Game.market property.
   */
 @js.native
 trait Market extends js.Object {
-  /**
-    * Your current credits balance.
-    */
-  var credits: Double = js.native
-  /**
-    * An array of the last 100 incoming transactions to your terminals
-    */
-  var incomingTransactions: js.Array[Transaction] = js.native
-  /**
-    * An object with your active and inactive buy/sell orders on the market.
-    */
-  var orders: StringDictionary[Order] = js.native
-  /**
-    * An array of the last 100 outgoing transactions from your terminals
-    */
-  var outgoingTransactions: js.Array[Transaction] = js.native
+  
   /**
     * Estimate the energy transaction cost of StructureTerminal.send and Market.deal methods. The formula:
     *
@@ -42,12 +26,14 @@ trait Market extends js.Object {
     * @returns The amount of energy required to perform the transaction.
     */
   def calcTransactionCost(amount: Double, roomName1: String, roomName2: String): Double = js.native
+  
   /**
     * Cancel a previously created order. The 5% fee is not returned.
     * @param orderId The order ID as provided in Game.market.orders
     * @returns Result Code: OK, ERR_INVALID_ARGS
     */
   def cancelOrder(orderId: String): ScreepsReturnCode = js.native
+  
   /**
     * Change the price of an existing order. If `newPrice` is greater than old price, you will be charged `(newPrice-oldPrice)*remainingAmount*0.05` credits.
     * @param orderId The order ID as provided in Game.market.orders
@@ -55,6 +41,7 @@ trait Market extends js.Object {
     * @returns Result Code: OK, ERR_NOT_OWNER, ERR_NOT_ENOUGH_RESOURCES, ERR_INVALID_ARGS
     */
   def changeOrderPrice(orderId: String, newPrice: Double): ScreepsReturnCode = js.native
+  
   /**
     * Create a market order in your terminal. You will be charged `price*amount*0.05` credits when the order is placed.
     *
@@ -64,6 +51,12 @@ trait Market extends js.Object {
     * An order expires in 30 days after its creation, and the remaining market fee is returned.
     */
   def createOrder(params: Price): ScreepsReturnCode = js.native
+  
+  /**
+    * Your current credits balance.
+    */
+  var credits: Double = js.native
+  
   /**
     * Execute a trade deal from your Terminal to another player's Terminal using the specified buy/sell order.
     *
@@ -74,6 +67,7 @@ trait Market extends js.Object {
     */
   def deal(orderId: String, amount: Double): ScreepsReturnCode = js.native
   def deal(orderId: String, amount: Double, targetRoomName: String): ScreepsReturnCode = js.native
+  
   /**
     * Add more capacity to an existing order. It will affect `remainingAmount` and `totalAmount` properties. You will be charged `price*addAmount*0.05` credits.
     * Extending the order doesn't update its expiration time.
@@ -82,6 +76,7 @@ trait Market extends js.Object {
     * @returns One of the following codes: `OK`, `ERR_NOT_ENOUGH_RESOURCES`, `ERR_INVALID_ARGS`
     */
   def extendOrder(orderId: String, addAmount: Double): ScreepsReturnCode = js.native
+  
   /**
     * Get other players' orders currently active on the market.
     * @param filter (optional) An object or function that will filter the resulting list using the lodash.filter method.
@@ -90,6 +85,7 @@ trait Market extends js.Object {
   def getAllOrders(): js.Array[Order] = js.native
   def getAllOrders(filter: js.Function1[/* o */ Order, Boolean]): js.Array[Order] = js.native
   def getAllOrders(filter: OrderFilter): js.Array[Order] = js.native
+  
   /**
     * Get daily price history of the specified resource on the market for the last 14 days.
     * @param resource One of the RESOURCE_* constants. If undefined, returns history data for all resources. Optional
@@ -97,11 +93,26 @@ trait Market extends js.Object {
     */
   def getHistory(): js.Array[PriceHistory] = js.native
   def getHistory(resource: ResourceConstant): js.Array[PriceHistory] = js.native
+  
   /**
     * Retrieve info for specific market order.
     * @param orderId The order ID.
     * @returns An object with the order info. See `getAllOrders` for properties explanation.
     */
   def getOrderById(id: String): Order | Null = js.native
+  
+  /**
+    * An array of the last 100 incoming transactions to your terminals
+    */
+  var incomingTransactions: js.Array[Transaction] = js.native
+  
+  /**
+    * An object with your active and inactive buy/sell orders on the market.
+    */
+  var orders: StringDictionary[Order] = js.native
+  
+  /**
+    * An array of the last 100 outgoing transactions from your terminals
+    */
+  var outgoingTransactions: js.Array[Transaction] = js.native
 }
-

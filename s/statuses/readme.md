@@ -11,8 +11,8 @@ HTTP status utility
 | Full name          | statuses |
 | Keywords           | http, status, code |
 | # releases         | 2 |
-| # dependents       | 351 |
-| # downloads        | 736855189 |
+| # dependents       | 392 |
+| # downloads        | 799004478 |
 | # stars            | 27 |
 
 ## Links

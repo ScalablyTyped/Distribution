@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__router
 
-Typings are for version 10.0.7
+Typings are for version 11.0.2
 
 ## Library description:
 Angular - the routing library
@@ -10,9 +10,9 @@ Angular - the routing library
 | ------------------ | :-------------: |
 | Full name          | @angular/router |
 | Keywords           | angular, router |
-| # releases         | 182 |
-| # dependents       | 5706 |
-| # downloads        | 51683199 |
+| # releases         | 209 |
+| # dependents       | 6691 |
+| # downloads        | 71434972 |
 | # stars            | 17 |
 
 ## Links

@@ -22,10 +22,11 @@ import typings.filesystem.FileEntry
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FileStatusChangedDetail extends js.Object {
+  
   /**
     * Sync action taken to fire onFileStatusChanged event.
     * Only applies if status is 'synced'.
@@ -41,6 +42,7 @@ trait FileStatusChangedDetail extends js.Object {
       ]
     ]
   ] = js.native
+  
   /**
     * Sync direction for the onFileStatusChanged event.
     * Only applies if status is 'synced'.
@@ -56,6 +58,7 @@ trait FileStatusChangedDetail extends js.Object {
       ]
     ]
   ] = js.native
+  
   /**
     * fileEntry for the target file whose status has changed.
     * Contains name and path information of synchronized file.
@@ -63,6 +66,7 @@ trait FileStatusChangedDetail extends js.Object {
     * available but file will no longer exist.
     */
   var fileEntry: FileEntry = js.native
+  
   /**
     * Resulting file status after onFileStatusChanged event.
     * @see FileStatus
@@ -76,8 +80,8 @@ trait FileStatusChangedDetail extends js.Object {
     ]
   ] = js.native
 }
-
 object FileStatusChangedDetail {
+  
   @scala.inline
   def apply(
     fileEntry: FileEntry,
@@ -93,19 +97,25 @@ object FileStatusChangedDetail {
     val __obj = js.Dynamic.literal(fileEntry = fileEntry.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileStatusChangedDetail]
   }
+  
   @scala.inline
   implicit class FileStatusChangedDetailOps[Self <: FileStatusChangedDetail] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFileEntry(value: FileEntry): Self = this.set("fileEntry", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStatus(
       value: ToStringLiteral[
@@ -117,6 +127,7 @@ object FileStatusChangedDetail {
           ]
         ]
     ): Self = this.set("status", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAction(
       value: ToStringLiteral[
@@ -128,8 +139,10 @@ object FileStatusChangedDetail {
           ]
         ]
     ): Self = this.set("action", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAction: Self = this.set("action", js.undefined)
+    
     @scala.inline
     def setDirection(
       value: ToStringLiteral[
@@ -141,9 +154,8 @@ object FileStatusChangedDetail {
           ]
         ]
     ): Self = this.set("direction", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDirection: Self = this.set("direction", js.undefined)
   }
-  
 }
-

@@ -4,21 +4,22 @@ import typings.materializeCss.anon.PartialTabsOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("M.Tabs")
 @js.native
 class Tabs ()
   extends typings.materializeCss.M.Tabs
-
 /* static members */
 @JSGlobal("M.Tabs")
 @js.native
 object Tabs extends js.Object {
+  
   /**
     * Get Instance
     */
   def getInstance(elem: Element): typings.materializeCss.M.Tabs = js.native
+  
   /**
     * Init Tabses
     */
@@ -35,4 +36,3 @@ object Tabs extends js.Object {
   def init(els: Element): typings.materializeCss.M.Tabs = js.native
   def init(els: Element, options: PartialTabsOptions): typings.materializeCss.M.Tabs = js.native
 }
-

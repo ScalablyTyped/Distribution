@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RenderingManager")
 @js.native
@@ -14,22 +14,23 @@ class RenderingManager protected ()
     */
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
 }
-
 /* static members */
 @JSGlobal("BABYLON.RenderingManager")
 @js.native
 object RenderingManager extends js.Object {
+  
   /**
     * Used to globally prevent autoclearing scenes.
     */
   var AUTOCLEAR: Boolean = js.native
+  
   /**
     * The max id used for rendering groups (not included)
     */
   var MAX_RENDERINGGROUPS: Double = js.native
+  
   /**
     * The min id used for rendering groups (included)
     */
   var MIN_RENDERINGGROUPS: Double = js.native
 }
-

@@ -7,14 +7,16 @@ import typings.watchify.watchifyStrings.time
 import typings.watchify.watchifyStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("browserify", JSImport.Namespace)
 @js.native
 object browserifyAugmentingMod extends js.Object {
+  
   @js.native
   trait BrowserifyObject extends EventEmitter {
+    
     /**
       * When a bundle is generated, this event fires with the number of bytes
       */
@@ -40,6 +42,4 @@ object browserifyAugmentingMod extends js.Object {
     @JSName("on")
     def on_update(event: update, listener: js.Function1[/* ids */ js.Array[String], _]): this.type = js.native
   }
-  
 }
-

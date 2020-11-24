@@ -2,15 +2,18 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object task {
+  
   type InteractionRequestStringResolver = typings.activexLibreoffice.com_.sun.star.task.XInteractionRequestStringResolver
+  
   /**
     * A legacy (single-instance) service-variant of {@link theJobExecutor} singleton.
     * @deprecated DeprecatedUse theJobExecutor singleton instead.
     */
   type JobExecutor = typings.activexLibreoffice.com_.sun.star.task.XJobExecutor
+  
   /**
     * this request specifies the mode in which the password should be asked
     *
@@ -19,11 +22,13 @@ package object task {
     * @since OOo 1.1.2
     */
   type MasterPasswordRequest = typings.activexLibreoffice.com_.sun.star.task.PasswordRequest
+  
   /**
     * This singleton is intended to allow to restart the office asynchronously.
     * @since OOo 3.3
     */
   type OfficeRestartManager = typings.activexLibreoffice.com_.sun.star.task.XRestartManager
+  
   /**
     * this service is kind of storage that allows to store passwords and to retrieve already stored.
     *
@@ -36,6 +41,7 @@ package object task {
     * way explicitly.
     */
   type PasswordContainer = typings.activexLibreoffice.com_.sun.star.task.XPasswordContainer2
+  
   /**
     * An interaction request handler that uses the {@link com.sun.star.task.PasswordContainer} service to handle {@link
     * com.sun.star.ucb.AuthenticationRequest} .
@@ -47,16 +53,22 @@ package object task {
     * @since OOo 3.3
     */
   type PasswordContainerInteractionHandler = typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
+  
   /** An interaction continuation specifing to abort executing the process that issued the request. */
   type XInteractionAbort = typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
+  
   /** An interaction continuation specifying "approval". */
   type XInteractionApprove = typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
+  
   /** specifies a continuation where the user does not actually decide the question they were confronted with, but postpones the decision to a later time. */
   type XInteractionAskLater = typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
+  
   /** An interaction continuation specifying "disapproval". */
   type XInteractionDisapprove = typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
+  
   /** An interaction continuation specifing to try to re-execute the process that issued the request. */
   type XInteractionRetry = typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
+  
   /**
     * Generic job execution singleton
     *

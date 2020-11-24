@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FileFormats extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.FileFormats")
 @js.native
 object FileFormats extends js.Object {
+  
   //Used to export the diagram into BMP format.
   @js.native
   sealed trait BMP extends FileFormats
@@ -25,6 +25,4 @@ object FileFormats extends js.Object {
   //Used to export the diagram into SVG format.
   @js.native
   sealed trait SVG extends FileFormats
-  
 }
-

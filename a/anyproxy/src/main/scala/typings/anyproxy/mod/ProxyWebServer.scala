@@ -3,7 +3,7 @@ package typings.anyproxy.mod
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("anyproxy", "ProxyWebServer")
 @js.native
@@ -16,11 +16,13 @@ class ProxyWebServer protected () extends EventEmitter {
     * @param recorder
     */
   def this(config: WebInterfaceOptions, recorder: ProxyRecorder) = this()
+  
   def close(): Unit = js.native
+  
   /**
     * get the express server
     */
   def getServer(): js.Any = js.native
+  
   def start(): js.Promise[Unit] = js.native
 }
-

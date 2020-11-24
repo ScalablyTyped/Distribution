@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes in which way the navigation of the records of a database form is performed. */
 /* Rewritten from type alias, can be one of: 
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait NavigationBarMode extends js.Object
-
 object NavigationBarMode {
+  
   /**
     * a navigation bar is provided and navigation will be performed on the current/active form.
     *
@@ -25,6 +25,7 @@ object NavigationBarMode {
     */
   @scala.inline
   def CURRENT: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * no navigation bar is provided and navigation on the current form is only possible with the keyboard (TAB/SHIFT TAB).
     *
@@ -33,6 +34,7 @@ object NavigationBarMode {
     */
   @scala.inline
   def NONE: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * a navigation bar is provided and navigation will be performed on the parent of the current/active form.
     *
@@ -42,4 +44,3 @@ object NavigationBarMode {
   @scala.inline
   def PARENT: `2` = 2.asInstanceOf[`2`]
 }
-

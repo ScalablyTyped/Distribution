@@ -8,20 +8,11 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.w
 import typings.tizenCommonWeb.tizenMod.ErrorCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FilesystemManager extends js.Object {
-  /**
-    * The maximum file or directory name length for the current platform.
-    * @returns The maximum name length is 255
-    */
-  val maxNameLength: Double = js.native
-  /**
-    * The maximum path length limit for the current platform.
-    * @returns The maximum path length is 4096
-    */
-  val maxPathLength: Double = js.native
+  
   /**
     * Adds a listener to subscribe to notifications when a change in storage state occurs.
     * The most common usage for this method is to watch for any additions and removals of external storages.
@@ -37,6 +28,7 @@ trait FilesystemManager extends js.Object {
     */
   def addStorageStateChangeListener(onsuccess: FileSystemStorageSuccessCallback): Double = js.native
   def addStorageStateChangeListener(onsuccess: FileSystemStorageSuccessCallback, onerror: ErrorCallback): Double = js.native
+  
   /**
     * Recursively copies directory pointed by `sourcePath` to `destinationPath`.
     * The method merges content of the directory pointed by `sourcePath` with content of the directory pointed by `destinationPath`, if exists.
@@ -97,6 +89,7 @@ trait FilesystemManager extends js.Object {
     successCallback: PathSuccessCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
+  
   /**
     * Copies file from location pointed by `sourcePath` to `destinationPath`.
     * Successful file copying invokes `successCallback` function, if specified. In case of failure `errorCallback` function is invoked, if specified.
@@ -155,6 +148,7 @@ trait FilesystemManager extends js.Object {
     successCallback: PathSuccessCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
+  
   /**
     * Creates directory pointed by `path`.
     * Successful directory creation invokes `successCallback` function, if specified. In case of failure `errorCallback` function is invoked, if specified.
@@ -204,6 +198,7 @@ trait FilesystemManager extends js.Object {
     successCallback: PathSuccessCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
+  
   /**
     * Deletes directory or directory tree under the current directory pointed by `path`.
     * Successful directory deletion invokes `successCallback` function, if specified. In case of failure `errorCallback` function is invoked, if specified.
@@ -246,6 +241,7 @@ trait FilesystemManager extends js.Object {
   ): Unit = js.native
   def deleteDirectory(path: Path, recursive: Boolean, successCallback: PathSuccessCallback): Unit = js.native
   def deleteDirectory(path: Path, recursive: Boolean, successCallback: PathSuccessCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Deletes file pointed by `path`.
     * Successful file deletion invokes `successCallback` function, if specified. In case of failure `errorCallback` function is invoked, if specified.
@@ -266,6 +262,7 @@ trait FilesystemManager extends js.Object {
   def deleteFile(path: Path, successCallback: js.UndefOr[scala.Nothing], errorCallback: ErrorCallback): Unit = js.native
   def deleteFile(path: Path, successCallback: PathSuccessCallback): Unit = js.native
   def deleteFile(path: Path, successCallback: PathSuccessCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Returns path to directory for given `path`.
     * Strips trailing '/', then breaks `path` into two components by last `path` separator, returns first component.
@@ -275,6 +272,7 @@ trait FilesystemManager extends js.Object {
     * @returns Path to directory for given path.
     */
   def getDirName(path: Path): String = js.native
+  
   /**
     * Gets information about a storage based on its label.
     * For example: "MyThumbDrive", "InternalFlash".
@@ -294,6 +292,7 @@ trait FilesystemManager extends js.Object {
     */
   def getStorage(label: String, onsuccess: FileSystemStorageSuccessCallback): Unit = js.native
   def getStorage(label: String, onsuccess: FileSystemStorageSuccessCallback, onerror: ErrorCallback): Unit = js.native
+  
   /**
     * Checks if given `path` points to a directory.
     * @since 5.0
@@ -304,6 +303,7 @@ trait FilesystemManager extends js.Object {
     * @throw WebAPIException InvalidValuesError, IOError, NotFoundError, SecurityError
     */
   def isDirectory(path: Path): Boolean = js.native
+  
   /**
     * Checks if given `path` points to a file.
     * @since 5.0
@@ -314,6 +314,7 @@ trait FilesystemManager extends js.Object {
     * @throw WebAPIException InvalidValuesError, IOError, NotFoundError, SecurityError
     */
   def isFile(path: Path): Boolean = js.native
+  
   /**
     * Lists directory content located in `path`.
     * Successful listing of directory content invokes `successCallback` function, if specified. In case of failure `errorCallback` function is invoked, if specified.
@@ -348,6 +349,7 @@ trait FilesystemManager extends js.Object {
     errorCallback: ErrorCallback,
     filter: FileFilter
   ): Unit = js.native
+  
   /**
     * Lists the available storages (both internal and external) on a device.
     * The onsuccess method receives a list of the data structures as input argument containing additional information about each drive found.
@@ -371,6 +373,19 @@ trait FilesystemManager extends js.Object {
     */
   def listStorages(onsuccess: FileSystemStorageArraySuccessCallback): Unit = js.native
   def listStorages(onsuccess: FileSystemStorageArraySuccessCallback, onerror: ErrorCallback): Unit = js.native
+  
+  /**
+    * The maximum file or directory name length for the current platform.
+    * @returns The maximum name length is 255
+    */
+  val maxNameLength: Double = js.native
+  
+  /**
+    * The maximum path length limit for the current platform.
+    * @returns The maximum path length is 4096
+    */
+  val maxPathLength: Double = js.native
+  
   /**
     * Recursively moves directory pointed by `sourcePath` to `destinationPath`.
     * The method merges content of the directory pointed by `sourcePath` with content of the directory with the same name in `destinationPath`, if exists.
@@ -430,6 +445,7 @@ trait FilesystemManager extends js.Object {
     successCallback: PathSuccessCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
+  
   /**
     * Moves file pointed by `sourcePath` to `destinationPath`.
     * Successful file moving invokes `successCallback` function, if specified. In case of failure `errorCallback` function is invoked, if specified.
@@ -488,6 +504,7 @@ trait FilesystemManager extends js.Object {
     successCallback: PathSuccessCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
+  
   /**
     * Opens a file or creates a file pointed by `path`.
     * If the operation succeeds, a file handle to the newly created or opened file is returned, otherwise an exception is thrown.
@@ -534,6 +551,7 @@ trait FilesystemManager extends js.Object {
   def openFile_w(path: Path, openMode: w): FileHandle = js.native
   @JSName("openFile")
   def openFile_w(path: Path, openMode: w, makeParents: Boolean): FileHandle = js.native
+  
   /**
     * Checks if given `path` exists.
     * @since 5.0
@@ -544,6 +562,7 @@ trait FilesystemManager extends js.Object {
     * @throw WebAPIException InvalidValuesError, IOError, SecurityError
     */
   def pathExists(path: Path): Boolean = js.native
+  
   /**
     * Removes a listener to unsubscribe from a storage watch operation.
     * If the `watchId` argument is valid and corresponds to a subscription already in place, the watch process will be stopped and no further callbacks will be invoked.
@@ -554,6 +573,7 @@ trait FilesystemManager extends js.Object {
     * @throw WebAPIException SecurityError, UnknownError
     */
   def removeStorageStateChangeListener(watchId: Double): Unit = js.native
+  
   /**
     * Renames file or directory located in `path` to name `newName`.
     * Successful renaming invokes `successCallback` function, if specified. In case of failure `errorCallback` function is invoked, if specified.
@@ -580,6 +600,7 @@ trait FilesystemManager extends js.Object {
   ): Unit = js.native
   def rename(path: Path, newName: String, successCallback: PathSuccessCallback): Unit = js.native
   def rename(path: Path, newName: String, successCallback: PathSuccessCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Resolves a location to a file handle after validating it.
     *
@@ -650,6 +671,7 @@ trait FilesystemManager extends js.Object {
   def resolve_w(location: String, onsuccess: FileSuccessCallback, onerror: js.UndefOr[scala.Nothing], mode: w): Unit = js.native
   @JSName("resolve")
   def resolve_w(location: String, onsuccess: FileSuccessCallback, onerror: ErrorCallback, mode: w): Unit = js.native
+  
   /**
     * Converts `path` to file URI.
     * @since 5.0
@@ -660,4 +682,3 @@ trait FilesystemManager extends js.Object {
     */
   def toURI(path: Path): String = js.native
 }
-

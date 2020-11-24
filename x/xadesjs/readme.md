@@ -1,7 +1,7 @@
 
 # Scala.js typings for xadesjs
 
-Typings are for version 2.0.18
+Typings are for version 2.1.1
 
 ## Library description:
 A pure Typescript/Javascript implementation of XAdES based on XMLDSIGjs.
@@ -10,9 +10,9 @@ A pure Typescript/Javascript implementation of XAdES based on XMLDSIGjs.
 | ------------------ | :-------------: |
 | Full name          | xadesjs |
 | Keywords           | xml, xmldsig, xades, webcrypto, signature, rsa, ec |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 4097 |
+| # releases         | 8 |
+| # dependents       | 5 |
+| # downloads        | 8294 |
 | # stars            | 0 |
 
 ## Links

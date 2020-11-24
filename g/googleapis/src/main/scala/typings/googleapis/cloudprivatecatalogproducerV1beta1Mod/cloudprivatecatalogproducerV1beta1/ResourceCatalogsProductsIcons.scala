@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudprivatecatalogproducer/v1beta1", "cloudprivatecatalogproducer_v1beta1.Resource$Catalogs$Products$Icons")
 @js.native
 class ResourceCatalogsProductsIcons protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.products.icons.upload
     * @desc Creates an Icon instance under a given Product. If Product only has
@@ -50,4 +52,3 @@ class ResourceCatalogsProductsIcons protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
 }
-

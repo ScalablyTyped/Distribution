@@ -2,22 +2,24 @@ package typings.vscodeLanguageserverProtocol.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver-protocol", "FileChangeType")
 @js.native
 object FileChangeType extends js.Object {
+  
   /**
     * The file got changed.
     */
   val Changed: /* 2 */ Double = js.native
+  
   /**
     * The file got created.
     */
   val Created: /* 1 */ Double = js.native
+  
   /**
     * The file got deleted.
     */
   val Deleted: /* 3 */ Double = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.stropheJs.mod.Strophe
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strophe.js", "Strophe.log")
 @js.native
 object log extends js.Object {
+  
   /** Function: log
     *  User overrideable logging function.
     *
@@ -38,4 +39,3 @@ object log extends js.Object {
     */
   def apply(level: LogLevel, msg: String): Unit = js.native
 }
-

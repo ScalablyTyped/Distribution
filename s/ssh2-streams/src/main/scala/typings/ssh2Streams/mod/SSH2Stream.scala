@@ -38,7 +38,7 @@ import typings.ssh2Streams.ssh2StreamsStrings.header
 import typings.ssh2Streams.ssh2StreamsStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ssh2-streams", "SSH2Stream")
 @js.native
@@ -47,14 +47,7 @@ import scala.scalajs.js.annotation._
   */
 class SSH2Stream () extends Transform {
   def this(config: SSH2StreamConfig) = this()
-  /**
-    * The number of bytes received since the last keying. This metric can be useful in determining when to call rekey().
-    */
-  var bytesReceived: Double = js.native
-  /**
-    * The number of bytes sent since the last keying. This metric can be useful in determining when to call rekey().
-    */
-  var bytesSent: Double = js.native
+  
   /**
     * (Server-only)
     * Writes a userauth failure packet. `authMethods` is an _array_ of authentication methods
@@ -66,6 +59,7 @@ class SSH2Stream () extends Transform {
   def authFailure(authMethods: js.UndefOr[scala.Nothing], partialSuccess: Boolean): Boolean = js.native
   def authFailure(authMethods: js.Array[String]): Boolean = js.native
   def authFailure(authMethods: js.Array[String], partialSuccess: Boolean): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a hostbased userauth request packet. `pubKey` is the object returned from using
@@ -83,6 +77,7 @@ class SSH2Stream () extends Transform {
     localUsername: String,
     cbSign: js.Function2[/* blob */ Buffer, /* callback */ js.Function1[/* signedBlob */ Buffer, Unit], Unit]
   ): Boolean = js.native
+  
   /**
     * (Server-only)
     * Writes a userauth info request packet. `prompts` is an array of `Prompt` objects.
@@ -90,6 +85,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def authInfoReq(name: String, instructions: String, prompts: js.Array[Prompt]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a userauth info response packet. `responses` is an _array_ of zero or more strings
@@ -99,6 +95,7 @@ class SSH2Stream () extends Transform {
     */
   def authInfoRes(): Boolean = js.native
   def authInfoRes(responses: js.Array[String]): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a keyboard-interactive userauth request packet.
@@ -106,6 +103,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def authKeyboard(username: String): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a "none" userauth request packet.
@@ -113,6 +111,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def authNone(username: String): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a publickey userauth request packet. `pubKey` is the object returned from using
@@ -129,6 +128,7 @@ class SSH2Stream () extends Transform {
     pubKey: ParsedKey,
     cbSign: js.Function2[/* blob */ Buffer, /* callback */ js.Function1[/* signedBlob */ Buffer, Unit], Unit]
   ): Boolean = js.native
+  
   /**
     * (Server-only)
     * Writes a userauth PK OK packet.
@@ -136,6 +136,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def authPKOK(keyAlgorithm: String, keyData: Buffer): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a password userauth request packet.
@@ -143,6 +144,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def authPassword(username: String, password: String): Boolean = js.native
+  
   /**
     * (Server-only)
     * Writes a userauth success packet.
@@ -150,6 +152,17 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def authSuccess(): Boolean = js.native
+  
+  /**
+    * The number of bytes received since the last keying. This metric can be useful in determining when to call rekey().
+    */
+  var bytesReceived: Double = js.native
+  
+  /**
+    * The number of bytes sent since the last keying. This metric can be useful in determining when to call rekey().
+    */
+  var bytesSent: Double = js.native
+  
   /**
     * (Client-only)
     * Writes a cancel tcpip forward global request packet. `wantReply` defaults to `true`.
@@ -158,6 +171,7 @@ class SSH2Stream () extends Transform {
     */
   def cancelTcpipForward(bindAddr: String, bindPort: Double): Boolean = js.native
   def cancelTcpipForward(bindAddr: String, bindPort: Double, wantReply: Boolean): Boolean = js.native
+  
   /**
     * (Client/Server)
     * Writes a channel close packet for the given `channel`.
@@ -165,6 +179,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def channelClose(channel: Double): Boolean = js.native
+  
   /**
     * (Client/Server)
     * Writes a channel data packet for the given `channel` where `data` is a _Buffer_ or _string_.
@@ -173,6 +188,7 @@ class SSH2Stream () extends Transform {
     */
   def channelData(channel: Double, data: String): Boolean = js.native
   def channelData(channel: Double, data: Buffer): Boolean = js.native
+  
   /**
     * (Client/Server)
     * Writes a channel EOF packet for the given `channel`.
@@ -180,6 +196,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def channelEOF(channel: Double): Boolean = js.native
+  
   /**
     * (Client/Server)
     * Writes a channel extended data packet for the given `channel` where `data is a _Buffer_
@@ -189,6 +206,7 @@ class SSH2Stream () extends Transform {
     */
   def channelExtData(channel: Double, data: String, `type`: Double): Boolean = js.native
   def channelExtData(channel: Double, data: Buffer, `type`: Double): Boolean = js.native
+  
   /**
     * (Client/Server)
     * Writes a channel failure packet.
@@ -196,6 +214,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def channelFailure(channel: Double): Boolean = js.native
+  
   /**
     * (Client/Server)
     * Writes a channel open confirmation packet.
@@ -203,6 +222,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def channelOpenConfirm(remoteChannel: Double, localChannel: Double, initWindow: Double, maxPacket: Double): Boolean = js.native
+  
   /**
     * (Client/Server)
     * Writes a channel open failure packet.
@@ -213,6 +233,7 @@ class SSH2Stream () extends Transform {
   def channelOpenFail(remoteChannel: Double, reasonCode: Double, description: js.UndefOr[scala.Nothing], lang: String): Boolean = js.native
   def channelOpenFail(remoteChannel: Double, reasonCode: Double, description: String): Boolean = js.native
   def channelOpenFail(remoteChannel: Double, reasonCode: Double, description: String, lang: String): Boolean = js.native
+  
   /**
     * (Client/Server)
     * Writes a channel success packet.
@@ -220,6 +241,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def channelSuccess(channel: Double): Boolean = js.native
+  
   /**
     * (Client/Server)
     * Writes a channel window adjust packet for the given `channel` where `amount` is the
@@ -228,6 +250,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def channelWindowAdjust(channel: Double, amount: Double): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a direct tcpip channel open packet. `config` must contain `srcIP`, `srcPort`,
@@ -236,6 +259,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def directTcpip(channel: Double, initWindow: Double, maxPacket: Double, config: TcpipForwardingConfig): Boolean = js.native
+  
   /**
     * (Client/Server)
     * Writes a disconnect packet and closes the stream.
@@ -244,6 +268,7 @@ class SSH2Stream () extends Transform {
     */
   def disconnect(): Boolean = js.native
   def disconnect(reasonCode: Double): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes an env channel request packet. `value` can be a _string_ or _Buffer_. `wantReply`
@@ -255,6 +280,7 @@ class SSH2Stream () extends Transform {
   def env(channel: Double, key: String, value: String, wantReply: Boolean): Boolean = js.native
   def env(channel: Double, key: String, value: Buffer): Boolean = js.native
   def env(channel: Double, key: String, value: Buffer, wantReply: Boolean): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes an exec channel request packet. `wantReply` defaults to `true`.
@@ -263,6 +289,7 @@ class SSH2Stream () extends Transform {
     */
   def exec(channel: Double, command: String): Boolean = js.native
   def exec(channel: Double, command: String, wantReply: Boolean): Boolean = js.native
+  
   /**
     * (Server-only)
     * Writes an exit signal channel request packet.
@@ -270,6 +297,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def exitSignal(channel: Double, signalName: String, coreDumped: Boolean, errorMessage: String): Boolean = js.native
+  
   /**
     * (Server-only)
     * Writes an exit status channel request packet.
@@ -277,6 +305,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def exitStatus(channel: Double, exitCode: Double): Boolean = js.native
+  
   /**
     * (Server-only)
     * Writes a forwarded tcpip channel open packet. `info` must contain `boundAddr`,
@@ -285,6 +314,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def forwardedTcpip(channel: Double, initWindow: Double, maxPacket: Double, info: ForwardedTcpip): Boolean = js.native
+  
   def on(event: String, listener: js.Function): this.type = js.native
   def on(event: js.Symbol, listener: js.Function): this.type = js.native
   /**
@@ -506,6 +536,7 @@ class SSH2Stream () extends Transform {
     */
   @JSName("on")
   def on_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
+  
   /**
     * (Client-only)
     * Writes an `auth-agent-req@openssh.com` channel request packet. `wantReply` defaults to
@@ -515,6 +546,7 @@ class SSH2Stream () extends Transform {
     */
   def openssh_agentForward(channel: Double): Boolean = js.native
   def openssh_agentForward(channel: Double, wantReply: Boolean): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a cancel-streamlocal-forward@openssh.com request packet. `wantReply` defaults to
@@ -524,6 +556,7 @@ class SSH2Stream () extends Transform {
     */
   def openssh_cancelStreamLocalForward(socketPath: String): Boolean = js.native
   def openssh_cancelStreamLocalForward(socketPath: String, wantReply: Boolean): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a direct-streamlocal@openssh.com channel open packet. `config` must contain
@@ -532,6 +565,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def openssh_directStreamLocal(channel: Double, initWindow: Double, maxPacket: Double, config: SocketForwardingConfig): Boolean = js.native
+  
   /**
     * (Server-only)
     * Writes an forwarded-streamlocal@openssh.com channel open packet. `info` must contain
@@ -540,6 +574,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def openssh_forwardedStreamLocal(channel: Double, initWindow: Double, maxPacket: Double, info: ForwardedSocket): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a no-more-sessions@openssh.com request packet. `wantReply` defaults to `true`.
@@ -548,6 +583,7 @@ class SSH2Stream () extends Transform {
     */
   def openssh_noMoreSessions(): Boolean = js.native
   def openssh_noMoreSessions(wantReply: Boolean): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a streamlocal-forward@openssh.com request packet. `wantReply` defaults to `true`.
@@ -556,6 +592,7 @@ class SSH2Stream () extends Transform {
     */
   def openssh_streamLocalForward(socketPath: String): Boolean = js.native
   def openssh_streamLocalForward(socketPath: String, wantReply: Boolean): Boolean = js.native
+  
   /**
     * (Client/Server)
     * Writes a dummy GLOBAL_REQUEST packet (specifically "keepalive@openssh.com") that requests a reply.
@@ -563,6 +600,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def ping(): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a pty channel request packet. If `terminalType` is falsey, `vt100` is used.
@@ -630,6 +668,7 @@ class SSH2Stream () extends Transform {
     terminalModes: js.Any,
     wantReply: Boolean
   ): Boolean = js.native
+  
   /**
     * (Client/Server)
     * Starts the re-keying process. Incoming/Outgoing packets are buffered until the re-keying
@@ -637,6 +676,7 @@ class SSH2Stream () extends Transform {
     * until the `NEWKEYS` event is seen.
     */
   def rekey(): Boolean = js.native
+  
   /**
     * (Client/Server)
     * Writes a request failure packet.
@@ -644,6 +684,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def requestFailure(): Boolean = js.native
+  
   /**
     * (Client/Server)
     * Writes a request success packet.
@@ -652,6 +693,7 @@ class SSH2Stream () extends Transform {
     */
   def requestSuccess(): Boolean = js.native
   def requestSuccess(data: Buffer): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a service request packet for `serviceName`.
@@ -659,6 +701,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def service(serviceName: String): Boolean = js.native
+  
   /**
     * (Server-only)
     * Writes a service accept packet.
@@ -666,6 +709,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def serviceAccept(serviceName: String): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a session channel open packet.
@@ -673,6 +717,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def session(channel: Double, initWindow: Double, maxPacket: Double): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a shell channel request packet. `wantReply` defaults to `true`.
@@ -681,6 +726,7 @@ class SSH2Stream () extends Transform {
     */
   def shell(channel: Double): Boolean = js.native
   def shell(channel: Double, wantReply: Boolean): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a signal channel request packet.
@@ -688,6 +734,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def signal(channel: Double, signalName: String): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a subsystem channel request packet. `name` is the name of the subsystem (e.g.
@@ -697,6 +744,7 @@ class SSH2Stream () extends Transform {
     */
   def subsystem(channel: Double, name: String): Boolean = js.native
   def subsystem(channel: Double, name: String, wantReply: Boolean): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a tcpip forward global request packet. `wantReply` defaults to `true`.
@@ -705,6 +753,7 @@ class SSH2Stream () extends Transform {
     */
   def tcpipForward(bindAddr: String, bindPort: Double): Boolean = js.native
   def tcpipForward(bindAddr: String, bindPort: Double, wantReply: Boolean): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes a window change channel request packet.
@@ -712,6 +761,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def windowChange(channel: Double, rows: Double, cols: Double, height: Double, width: Double): Boolean = js.native
+  
   /**
     * (Server-only)
     * Writes an X11 channel open packet. `info` must contain `originAddr` and `originPort`.
@@ -719,6 +769,7 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def x11(channel: Double, initWindow: Double, maxPacket: Double, info: ForwardedX11): Boolean = js.native
+  
   /**
     * (Client-only)
     * Writes an X11 forward channel request packet. `wantReply` defaults to `true`.
@@ -728,4 +779,3 @@ class SSH2Stream () extends Transform {
   def x11Forward(channel: Double, config: X11ForwardingConfig): Boolean = js.native
   def x11Forward(channel: Double, config: X11ForwardingConfig, wantReply: Boolean): Boolean = js.native
 }
-

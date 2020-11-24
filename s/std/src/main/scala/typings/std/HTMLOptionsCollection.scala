@@ -2,25 +2,12 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** HTMLOptionsCollection is an interface representing a collection of HTML option elements (in document order) and offers methods and properties for traversing the list as well as optionally altering its items. This type is returned solely by the "options" property of select. */
 @js.native
 trait HTMLOptionsCollection extends HTMLCollectionOf[HTMLOptionElement] {
-  /**
-    * Returns the number of elements in the collection.
-    * 
-    * When set to a smaller number, truncates the number of option elements in the corresponding container.
-    * 
-    * When set to a greater number, adds new blank option elements to that container.
-    */
-  var length: Double = js.native
-  /**
-    * Returns the index of the first selected item, if any, or −1 if there is no selected item.
-    * 
-    * Can be set, to change the selection.
-    */
-  var selectedIndex: Double = js.native
+  
   def add(element: HTMLOptGroupElement): Unit = js.native
   def add(element: HTMLOptGroupElement, before: Double): Unit = js.native
   def add(element: HTMLOptGroupElement, before: HTMLElement): Unit = js.native
@@ -36,9 +23,25 @@ trait HTMLOptionsCollection extends HTMLCollectionOf[HTMLOptionElement] {
   def add(element: HTMLOptionElement): Unit = js.native
   def add(element: HTMLOptionElement, before: Double): Unit = js.native
   def add(element: HTMLOptionElement, before: HTMLElement): Unit = js.native
+  
+  /**
+    * Returns the number of elements in the collection.
+    * 
+    * When set to a smaller number, truncates the number of option elements in the corresponding container.
+    * 
+    * When set to a greater number, adds new blank option elements to that container.
+    */
+  var length: Double = js.native
+  
   /**
     * Removes the item with index index from the collection.
     */
   def remove(index: Double): Unit = js.native
+  
+  /**
+    * Returns the index of the first selected item, if any, or −1 if there is no selected item.
+    * 
+    * Can be set, to change the selection.
+    */
+  var selectedIndex: Double = js.native
 }
-

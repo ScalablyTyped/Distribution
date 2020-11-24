@@ -12,7 +12,7 @@ A javascript generator pattern for directlry listing
 | Keywords           | utils, fs, filesystem, directory, generator |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 516 |
+| # downloads        | 569 |
 | # stars            | 0 |
 
 ## Links

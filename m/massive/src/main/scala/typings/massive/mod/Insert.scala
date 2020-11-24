@@ -2,7 +2,7 @@ package typings.massive.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a INSERT query. */
 @JSImport("massive", "Insert")
@@ -21,7 +21,7 @@ class Insert protected () extends js.Object {
     record: AnyObject[_],
     options: ResultProcessingOptions with PersistenceInsertOptions
   ) = this()
+  
   /** Format this object into a SQL SELECT. */
   def format(): String = js.native
 }
-

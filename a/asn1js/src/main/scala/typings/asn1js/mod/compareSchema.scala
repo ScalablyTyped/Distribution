@@ -3,11 +3,12 @@ package typings.asn1js.mod
 import typings.asn1js.anon.Result
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asn1js", "compareSchema")
 @js.native
 object compareSchema extends js.Object {
+  
   /**
     * Compare of two ASN.1 object trees
     * 
@@ -18,4 +19,3 @@ object compareSchema extends js.Object {
     */
   def apply(root: js.Any, inputData: js.Any, inputSchema: js.Any): Result = js.native
 }
-

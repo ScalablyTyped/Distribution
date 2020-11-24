@@ -2,7 +2,7 @@ package typings.twilioSync.syncdocumentMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
@@ -23,11 +23,10 @@ import scala.scalajs.js.annotation._
 class default protected () extends SyncDocument {
   def this(syncDocumentImpl: SyncDocumentImpl) = this()
 }
-
 /* static members */
 @JSImport("twilio-sync/lib/syncdocument", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def `type`: String = js.native
 }
-

@@ -4,14 +4,16 @@ import typings.amplify.mod.RequestSettings
 import typings.jquery.JQueryPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("amplify", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   trait Request extends js.Object {
+    
     /***
       * Request a resource.
       * resourceId: Identifier string for the resource.
@@ -32,6 +34,4 @@ object mod extends js.Object {
       */
     def apply(settings: RequestSettings): JQueryPromise[_] = js.native
   }
-  
 }
-

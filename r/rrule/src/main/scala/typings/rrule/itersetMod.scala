@@ -6,11 +6,12 @@ import typings.rrule.typesMod.QueryMethodTypes
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rrule/dist/esm/src/iterset", JSImport.Namespace)
 @js.native
 object itersetMod extends js.Object {
+  
   def iterSet[M /* <: QueryMethodTypes */](
     iterResult: default[M],
     _rrule: js.Array[typings.rrule.rruleMod.default],
@@ -27,4 +28,3 @@ object itersetMod extends js.Object {
     tzid: String
   ): IterResultType[M] = js.native
 }
-

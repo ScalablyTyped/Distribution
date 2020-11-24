@@ -2,14 +2,14 @@ package typings.winrt.Windows.Security.Credentials.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AuthenticationProtocol extends js.Object
-
 @JSGlobal("Windows.Security.Credentials.UI.AuthenticationProtocol")
 @js.native
 object AuthenticationProtocol extends js.Object {
+  
   @js.native
   sealed trait basic extends AuthenticationProtocol
   
@@ -30,6 +30,4 @@ object AuthenticationProtocol extends js.Object {
   
   @js.native
   sealed trait ntlm extends AuthenticationProtocol
-  
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__client-logger
 
-Typings are for version 5.3.19
+Typings are for version 6.1.2
 
 ## Library description:
 Any client-side logging that is done through storybook should be done through this package.
@@ -10,9 +10,9 @@ Any client-side logging that is done through storybook should be done through th
 | ------------------ | :-------------: |
 | Full name          | @storybook/client-logger |
 | Keywords           | storybook |
-| # releases         | 430 |
-| # dependents       | 37 |
-| # downloads        | 52311801 |
+| # releases         | 575 |
+| # dependents       | 49 |
+| # downloads        | 110818444 |
 | # stars            | 0 |
 
 ## Links

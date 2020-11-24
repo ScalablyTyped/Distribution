@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.datatransfer.XTransferable
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface is implemented by a view or window that supports drag operations and will be received as part of a {@link DragGestureEvent} through a
@@ -16,17 +16,20 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XDragSource extends XInterface {
+  
   /**
     * To get the default cursor for a specified drag action.
     * @param dragAction A drag action as specified in {@link DNDConstants} .
     * @returns The default drag cursor for the specified drag action. The returned value may be used as parameter for the method {@link com.sun.star.datatransfe
     */
   def getDefaultCursor(dragAction: Double): Double = js.native
+  
   /**
     * In order to query if drag image support is available.
     * @returns A boolean indicating whether or not drag image support is available on the underlying platform.
     */
   def isDragImageSupported(): Boolean = js.native
+  
   /**
     * Starts the drag operation.
     *
@@ -51,8 +54,8 @@ trait XDragSource extends XInterface {
     listener: XDragSourceListener
   ): Unit = js.native
 }
-
 object XDragSource {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -65,24 +68,29 @@ object XDragSource {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDefaultCursor = js.Any.fromFunction1(getDefaultCursor), isDragImageSupported = js.Any.fromFunction0(isDragImageSupported), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), startDrag = js.Any.fromFunction6(startDrag))
     __obj.asInstanceOf[XDragSource]
   }
+  
   @scala.inline
   implicit class XDragSourceOps[Self <: XDragSource] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetDefaultCursor(value: Double => Double): Self = this.set("getDefaultCursor", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsDragImageSupported(value: () => Boolean): Self = this.set("isDragImageSupported", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setStartDrag(value: (DragGestureEvent, Double, Double, Double, XTransferable, XDragSourceListener) => Unit): Self = this.set("startDrag", js.Any.fromFunction6(value))
   }
-  
 }
-

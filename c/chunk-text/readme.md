@@ -9,10 +9,10 @@ Typings are for version 1.0
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | chunk-text |
-| Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 51711 |
+| Keywords           | chunk-text, split, chunk, algolia, text, string, array, length, index, size, splice, slice, text-processing, text processing, multi-byte, multibyte, multi, byte, runes, rune, glyphs, glyph, encoding, emoji, MIT |
+| # releases         | 2 |
+| # dependents       | 5 |
+| # downloads        | 20421 |
 | # stars            | 0 |
 
 ## Links

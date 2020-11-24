@@ -4,7 +4,7 @@ import typings.std.DOMMatrixReadOnly
 import typings.w3cCssTypedObjectModelLevel1.CSSMatrixComponentOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CSSMatrixComponent")
 @js.native
@@ -13,4 +13,3 @@ class CSSMatrixComponent protected ()
   def this(matrix: DOMMatrixReadOnly) = this()
   def this(matrix: DOMMatrixReadOnly, options: CSSMatrixComponentOptions) = this()
 }
-

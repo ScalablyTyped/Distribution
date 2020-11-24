@@ -2,7 +2,7 @@ package typings.xregexp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Unicode character range.
@@ -15,22 +15,23 @@ import scala.scalajs.js.annotation._
   - typings.xregexp.anon.PickRequiredUnicodeCharacAstral
 */
 trait UnicodeCharacterRange extends js.Object
-
 object UnicodeCharacterRange {
+  
   @scala.inline
   def PickRequiredUnicodeCharac(astral: js.UndefOr[String] with String, name: String): UnicodeCharacterRange = {
     val __obj = js.Dynamic.literal(astral = astral.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnicodeCharacterRange]
   }
+  
   @scala.inline
   def PickRequiredUnicodeCharacAlias(bmp: js.UndefOr[String] with String, name: String): UnicodeCharacterRange = {
     val __obj = js.Dynamic.literal(bmp = bmp.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnicodeCharacterRange]
   }
+  
   @scala.inline
   def PickRequiredUnicodeCharacAstral(inverseOf: js.UndefOr[String] with String, name: String): UnicodeCharacterRange = {
     val __obj = js.Dynamic.literal(inverseOf = inverseOf.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnicodeCharacterRange]
   }
 }
-

@@ -10,9 +10,9 @@ Single-sign-on helper package for Discourse
 | ------------------ | :-------------: |
 | Full name          | discourse-sso |
 | Keywords           | discourse, sso, login, helper package |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 195955 |
+| # downloads        | 206062 |
 | # stars            | 2 |
 
 ## Links

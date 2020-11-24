@@ -2,14 +2,14 @@ package typings.dockSpawn.dockspawn
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TabStripDirection extends js.Object
-
 @JSGlobal("dockspawn.TabStripDirection")
 @js.native
 object TabStripDirection extends js.Object {
+  
   @js.native
   sealed trait DIRECTION_BOTTOM extends TabStripDirection
   
@@ -21,6 +21,4 @@ object TabStripDirection extends js.Object {
   
   @js.native
   sealed trait DIRECTION_TOP extends TabStripDirection
-  
 }
-

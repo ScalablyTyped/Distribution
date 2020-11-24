@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 文件系统中的写文件对象，用于写入文件内容
@@ -14,87 +14,28 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusIoFileWriter extends js.Object {
+  
   /**
     * 值为2，写文件操作完成状态
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   var DONE: js.UndefOr[Double] = js.native
+  
   /**
     * 值为0，写文件初始化状态
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   var INIT: js.UndefOr[Double] = js.native
+  
   /**
     * 值为1，正在写入文件状态
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   var WRITING: js.UndefOr[Double] = js.native
-  /**
-    * 文件写入操作错误代码
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var error: js.UndefOr[Double] = js.native
-  /**
-    * 文件当前的长度，单位为字节
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var length: js.UndefOr[Double] = js.native
-  /**
-    * 取消写入文件时的回调函数
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var onabort: js.UndefOr[js.Function1[/* result */ PlusIoFileEvent, Unit]] = js.native
-  /**
-    * 文件写入操作失败时调用的回调函数
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var onerror: js.UndefOr[js.Function1[/* result */ PlusIoFileEvent, Unit]] = js.native
-  /**
-    * 写入文件过程中的回调函数
-    * 用于获取文件读取进度。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var onprogress: js.UndefOr[js.Function1[/* result */ PlusIoFileEvent, Unit]] = js.native
-  /**
-    * 写入文件成功完成的回调函数
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var onwrite: js.UndefOr[js.Function1[/* result */ PlusIoFileEvent, Unit]] = js.native
-  /**
-    * 文件写入操作完成时的回调函数
-    * 不管成功或失败都会触发。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var onwriteend: js.UndefOr[js.Function1[/* result */ PlusIoFileEvent, Unit]] = js.native
-  /**
-    * 写入文件开始时的回调函数
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var onwritestart: js.UndefOr[js.Function1[/* result */ PlusIoFileEvent, Unit]] = js.native
-  /**
-    * 文件当前操作的指针位置
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var position: js.UndefOr[Double] = js.native
-  /**
-    * 当前写入文件所处的状态
-    * 可取上面定义的常量值，INIT(0)、WRITING（1）、DONE（2）。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var readyState: js.UndefOr[Double] = js.native
+  
   /**
     * 终止文件写入操作
     * 写入文件数据操作开始后，可通过此方法取消写入文件数据操作。
@@ -103,6 +44,80 @@ trait PlusIoFileWriter extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def abort(): Unit = js.native
+  
+  /**
+    * 文件写入操作错误代码
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var error: js.UndefOr[Double] = js.native
+  
+  /**
+    * 文件当前的长度，单位为字节
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var length: js.UndefOr[Double] = js.native
+  
+  /**
+    * 取消写入文件时的回调函数
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var onabort: js.UndefOr[js.Function1[/* result */ PlusIoFileEvent, Unit]] = js.native
+  
+  /**
+    * 文件写入操作失败时调用的回调函数
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var onerror: js.UndefOr[js.Function1[/* result */ PlusIoFileEvent, Unit]] = js.native
+  
+  /**
+    * 写入文件过程中的回调函数
+    * 用于获取文件读取进度。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var onprogress: js.UndefOr[js.Function1[/* result */ PlusIoFileEvent, Unit]] = js.native
+  
+  /**
+    * 写入文件成功完成的回调函数
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var onwrite: js.UndefOr[js.Function1[/* result */ PlusIoFileEvent, Unit]] = js.native
+  
+  /**
+    * 文件写入操作完成时的回调函数
+    * 不管成功或失败都会触发。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var onwriteend: js.UndefOr[js.Function1[/* result */ PlusIoFileEvent, Unit]] = js.native
+  
+  /**
+    * 写入文件开始时的回调函数
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var onwritestart: js.UndefOr[js.Function1[/* result */ PlusIoFileEvent, Unit]] = js.native
+  
+  /**
+    * 文件当前操作的指针位置
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var position: js.UndefOr[Double] = js.native
+  
+  /**
+    * 当前写入文件所处的状态
+    * 可取上面定义的常量值，INIT(0)、WRITING（1）、DONE（2）。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var readyState: js.UndefOr[Double] = js.native
+  
   /**
     * 定位文件操作位置
     * 定位文件的操作位置，有效值为0到文件的总长度减1。
@@ -112,6 +127,7 @@ trait PlusIoFileWriter extends js.Object {
     */
   def seek(): Unit = js.native
   def seek(position: Double): Unit = js.native
+  
   /**
     * 按照指定长度截断文件
     * 从文件当前定位的位置开始，按照指定长度截断文件。
@@ -120,6 +136,7 @@ trait PlusIoFileWriter extends js.Object {
     */
   def truncate(): Unit = js.native
   def truncate(length: Double): Unit = js.native
+  
   /**
     * 向文件中写入数据
     * 从文件当前定位的位置开始，写入数据到文件中。
@@ -130,4 +147,3 @@ trait PlusIoFileWriter extends js.Object {
   def write(): Unit = js.native
   def write(data: String): Unit = js.native
 }
-

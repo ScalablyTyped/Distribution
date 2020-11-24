@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dom-helpers" : "5.1.4"
+      "dom-helpers" : "5.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "dom-helpers" : "5.1.4"
+      "dom-helpers" : "5.2.0"
     }
   ],
   "compile-devDependencies" : [

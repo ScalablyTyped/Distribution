@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This key handler is similar to {@link com.sun.star.awt.XKeyListener} but allows the consumption of key events. If a key event is consumed by one
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XKeyHandler extends XEventListener {
+  
   /**
     * This function is called by the broadcaster, an {@link com.sun.star.awt.XExtendedToolkit} for instance, after a key has been pressed but before it is
     * released. The return value decides about whether other handlers will be called and a handling by the broadcaster will take place.
@@ -27,6 +28,7 @@ trait XKeyHandler extends XEventListener {
     * @returns When `FALSE` is returned the other handlers are called and a following handling of the event by the broadcaster takes place. Otherwise, when `TRU
     */
   def keyPressed(aEvent: KeyEvent): Boolean = js.native
+  
   /**
     * This function is called by the broadcaster, an {@link com.sun.star.awt.XExtendedToolkit} for instance, after a key has been pressed and released. The
     * return value decides about whether other handlers will be called and a handling by the broadcaster will take place.
@@ -38,8 +40,8 @@ trait XKeyHandler extends XEventListener {
     */
   def keyReleased(aEvent: KeyEvent): Boolean = js.native
 }
-
 object XKeyHandler {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -52,22 +54,26 @@ object XKeyHandler {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), keyPressed = js.Any.fromFunction1(keyPressed), keyReleased = js.Any.fromFunction1(keyReleased), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XKeyHandler]
   }
+  
   @scala.inline
   implicit class XKeyHandlerOps[Self <: XKeyHandler] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setKeyPressed(value: KeyEvent => Boolean): Self = this.set("keyPressed", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setKeyReleased(value: KeyEvent => Boolean): Self = this.set("keyReleased", js.Any.fromFunction1(value))
   }
-  
 }
-

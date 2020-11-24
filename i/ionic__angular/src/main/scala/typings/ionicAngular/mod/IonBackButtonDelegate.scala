@@ -2,7 +2,7 @@ package typings.ionicAngular.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular", "IonBackButtonDelegate")
 @js.native
@@ -14,4 +14,3 @@ class IonBackButtonDelegate protected ()
     config: typings.ionicAngular.configMod.Config
   ) = this()
 }
-

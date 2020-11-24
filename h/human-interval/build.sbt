@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "human-interval"
-version := "1.0-dt-20200515Z-52d364"
+version := "1.0-dt-20200910Z-d7fc6c"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

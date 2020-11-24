@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SimmerConstructor
@@ -35,6 +35,7 @@ Instantiable0[Simmer]
       /* query */ QueryEngine, 
       Simmer
     ] {
+  
   /**
     * @param scope The context in which Simmer should query for elements.
     * Generally speaking this would be the window, which is the default value,
@@ -60,4 +61,3 @@ Instantiable0[Simmer]
   def apply(scope: Scope, options: Options): Simmer = js.native
   def apply(scope: Scope, options: Options, query: QueryEngine): Simmer = js.native
 }
-

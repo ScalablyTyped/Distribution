@@ -20,32 +20,17 @@ import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined @grpc/grpc-js.@grpc/grpc-js/build/src/server-call.ServerSurfaceCall & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectWritable<ResponseType> & {  request :RequestType | null} */
+/* Inlined @grpc/grpc-js.@grpc/grpc-js/build/src/server-call.ServerSurfaceCall & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectWritable<ResponseType> & {  request :RequestType | null, end (metadata : @grpc/grpc-js.@grpc/grpc-js/build/src/metadata.Metadata | undefined): void} */
 @js.native
 trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
-  var _writev: js.UndefOr[
-    js.Function2[
-      /* chunks */ js.Array[Chunk], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
-      Unit
-    ]
-  ] = js.native
-  var cancelled: Boolean = js.native
-  var destroyed: Boolean = js.native
-  val metadata: Metadata = js.native
-  var request: RequestType | Null = js.native
-  val writable: Boolean = js.native
-  val writableCorked: Double = js.native
-  val writableEnded: Boolean = js.native
-  val writableFinished: Boolean = js.native
-  val writableHighWaterMark: Double = js.native
-  val writableLength: Double = js.native
-  val writableObjectMode: Boolean = js.native
+  
   def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
   def _destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  
   def _final(callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  
   def _write(chunk: ResponseType, encoding: String, callback: js.Function): Unit = js.native
   def _write(chunk: js.Any with ResponseType, encoding: String, callback: js.Function): Unit = js.native
   def _write(
@@ -53,6 +38,15 @@ trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
     encoding: BufferEncoding,
     callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
   ): Unit = js.native
+  
+  var _writev: js.UndefOr[
+    js.Function2[
+      /* chunks */ js.Array[Chunk], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+      Unit
+    ]
+  ] = js.native
+  
   def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /**
@@ -77,9 +71,16 @@ trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
   def addListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
+  var cancelled: Boolean = js.native
+  
   def cork(): Unit = js.native
+  
   def destroy(): Unit = js.native
   def destroy(error: Error): Unit = js.native
+  
+  var destroyed: Boolean = js.native
+  
   def emit(event: String, args: js.Any*): Boolean = js.native
   def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
   @JSName("emit")
@@ -94,6 +95,7 @@ trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
   def emit_pipe(event: pipe, src: Readable): Boolean = js.native
   @JSName("emit")
   def emit_unpipe(event: unpipe, src: Readable): Boolean = js.native
+  
   def end(): Unit = js.native
   def end(cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: ResponseType): Unit = js.native
@@ -113,18 +115,28 @@ trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
   def end(data: String, cb: js.Function0[Unit]): Unit = js.native
   def end(data: Uint8Array): Unit = js.native
   def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
+  def end(metadata: Metadata): Unit = js.native
   def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(str: String, encoding: BufferEncoding): Unit = js.native
   def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
+  
   def eventNames(): js.Array[String | js.Symbol] = js.native
+  
   def getMaxListeners(): Double = js.native
+  
   def getPeer(): String = js.native
-  def listenerCount(`type`: String): Double = js.native
-  def listenerCount(`type`: js.Symbol): Double = js.native
+  
+  def listenerCount(event: String): Double = js.native
+  def listenerCount(event: js.Symbol): Double = js.native
+  
   def listeners(event: String): js.Array[js.Function] = js.native
   def listeners(event: js.Symbol): js.Array[js.Function] = js.native
+  
+  val metadata: Metadata = js.native
+  
   def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
@@ -139,6 +151,7 @@ trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
   def on_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("on")
   def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("once")
@@ -153,8 +166,10 @@ trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
   def once_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("once")
   def once_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   def pipe[T /* <: WritableStream */](destination: T): T = js.native
   def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
+  
   // Added in Node 6...
   def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
@@ -170,6 +185,7 @@ trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
   def prependListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -184,11 +200,14 @@ trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
   def prependOnceListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
   def rawListeners(event: String): js.Array[js.Function] = js.native
   def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
+  
   def removeAllListeners(): this.type = js.native
   def removeAllListeners(event: String): this.type = js.native
   def removeAllListeners(event: js.Symbol): this.type = js.native
+  
   def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("removeListener")
@@ -203,11 +222,32 @@ trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
   def removeListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  
+  var request: RequestType | Null = js.native
+  
   def sendMetadata(responseMetadata: Metadata): Unit = js.native
+  
   def setDefaultEncoding(encoding: String): this.type = js.native
   def setDefaultEncoding(encoding: BufferEncoding): this.type = js.native
+  
   def setMaxListeners(n: Double): this.type = js.native
+  
   def uncork(): Unit = js.native
+  
+  val writable: Boolean = js.native
+  
+  val writableCorked: Double = js.native
+  
+  val writableEnded: Boolean = js.native
+  
+  val writableFinished: Boolean = js.native
+  
+  val writableHighWaterMark: Double = js.native
+  
+  val writableLength: Double = js.native
+  
+  val writableObjectMode: Boolean = js.native
+  
   def write(buffer: String): Boolean = js.native
   def write(buffer: String, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   def write(buffer: Uint8Array): Boolean = js.native
@@ -239,4 +279,3 @@ trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
   def write(str: String, encoding: BufferEncoding): Boolean = js.native
   def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AppointmentStoreChangeType extends js.Object
-
 /** Specifies the type of change represented by an AppointmentStoreChange object. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentStoreChangeType")
 @js.native
 object AppointmentStoreChangeType extends js.Object {
+  
   /** An appointment was created. */
   @js.native
   sealed trait appointmentCreated extends AppointmentStoreChangeType
@@ -38,6 +38,4 @@ object AppointmentStoreChangeType extends js.Object {
   /** The change tracking information associated with the appointment was lost. */
   @js.native
   sealed trait changeTrackingLost extends AppointmentStoreChangeType
-  
 }
-

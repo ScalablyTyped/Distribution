@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pkcs11js" : "1.0.21"
+      "pkcs11js" : "1.0.22"
     }
   ],
   "test-dependencies" : [
     {
-      "pkcs11js" : "1.0.21"
+      "pkcs11js" : "1.0.22"
     }
   ],
   "compile-devDependencies" : [

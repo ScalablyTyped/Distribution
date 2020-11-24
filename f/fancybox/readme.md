@@ -10,9 +10,9 @@ fancyBox is a tool that offers a nice and elegant way to add zooming functionali
 | ------------------ | :-------------: |
 | Full name          | fancybox |
 | Keywords           | fancybox, fancy, box, lightbox |
-| # releases         | 2 |
-| # dependents       | 12 |
-| # downloads        | 339569 |
+| # releases         | 0 |
+| # dependents       | 15 |
+| # downloads        | 358601 |
 | # stars            | 4 |
 
 ## Links

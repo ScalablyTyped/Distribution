@@ -4,17 +4,15 @@ import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTInterpolationMethod
 import typings.dwt.webTwainBufferMod.WebTwainBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dwt/WebTwain.Edit", JSImport.Namespace)
 @js.native
 object webTwainEditMod extends js.Object {
+  
   @js.native
   trait WebTwainEdit extends WebTwainBuffer {
-    /**
-      * Return or set the fill colour for the empty area on an image that has been cut/cropped/erased.
-      */
-    var BackgroundFillColor: Double = js.native
+    
     /**
       * [Deprecation] Add text on an image.
       * [Alternative] Annotation feature to be added in a later version.
@@ -37,6 +35,12 @@ object webTwainEditMod extends js.Object {
       backgroundRoundRadius: Double,
       backgroundOpacity: Double
     ): Boolean = js.native
+    
+    /**
+      * Return or set the fill colour for the empty area on an image that has been cut/cropped/erased.
+      */
+    var BackgroundFillColor: Double = js.native
+    
     /**
       * Change the bit depth of the specified image.
       * @param index Specify the image.
@@ -44,6 +48,7 @@ object webTwainEditMod extends js.Object {
       * @param highQuality Whether to keep high quality.
       */
     def ChangeBitDepth(index: Double, bitDepth: Double, highQuality: Boolean): Boolean = js.native
+    
     def ChangeImageSize(index: Double, width: Double, height: Double, method: Double): Unit | Boolean = js.native
     def ChangeImageSize(
       index: Double,
@@ -97,6 +102,7 @@ object webTwainEditMod extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
     /**
       * Convert the specified image to black & white.
       * @param index Specify the image.
@@ -117,6 +123,7 @@ object webTwainEditMod extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
     /**
       * Convert the specified image to grayscale.
       * @param index Specify the image.
@@ -137,11 +144,13 @@ object webTwainEditMod extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
     /**
       * Copy the specified image to the clipboard of the operating system.
       * @param index Specify the image.
       */
     def CopyToClipboard(index: Double): Boolean = js.native
+    
     /**
       * [Deprecation] Create the font for adding text using the method AddText.
       * [Alternative] Annotation feature to be added in a later version.
@@ -197,6 +206,7 @@ object webTwainEditMod extends js.Object {
       pitchAndFamily: Double,
       faceName: String
     ): Boolean = js.native
+    
     /**
       * Crop the specified image using the specified coordinates.
       * @param index Specify the image.
@@ -236,6 +246,7 @@ object webTwainEditMod extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
     /**
       * Crop a rectangular area from the specified image to the clipboard of the operating system.
       * @param index Specify the image.
@@ -245,6 +256,7 @@ object webTwainEditMod extends js.Object {
       * @param bottom Specify the rectangle (bottommost coordinate).
       */
     def CropToClipboard(index: Double, left: Double, top: Double, right: Double, bottom: Double): Boolean = js.native
+    
     /**
       * Cut a rectangular area from the specified image to the clipboard of the operating system.
       * @param index Specify the image.
@@ -254,11 +266,13 @@ object webTwainEditMod extends js.Object {
       * @param bottom Specify the rectangle (bottommost coordinate).
       */
     def CutFrameToClipboard(index: Double, left: Double, top: Double, right: Double, bottom: Double): Boolean = js.native
+    
     /**
       * Cut the specified image to the clipboard of the operating system.
       * @param index Specify the image.
       */
     def CutToClipboard(index: Double): Boolean = js.native
+    
     /**
       * Erase a rectangular area from the specified image.
       * @param index Specify the image.
@@ -298,6 +312,7 @@ object webTwainEditMod extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
     /**
       * Flip the specified image.
       * @param index Specify the image.
@@ -318,6 +333,7 @@ object webTwainEditMod extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
     /**
       * Invert the colour of the pixels on the specified image.
       * @param index Specify the image.
@@ -338,6 +354,7 @@ object webTwainEditMod extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
     /**
       * Mirror the specified image.
       * @param index Specify the image.
@@ -358,6 +375,7 @@ object webTwainEditMod extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
     /**
       * [Deprecation] Decorates image of a specified index in buffer with rectangles of transparent color.
       * [Alternative] Annotation feature to be added in a later version.
@@ -378,6 +396,7 @@ object webTwainEditMod extends js.Object {
       color: Double,
       fOpacity: Double
     ): Boolean = js.native
+    
     /**
       * Rotate the specified image by the specified angle.
       * @param index Specify the image.
@@ -404,6 +423,7 @@ object webTwainEditMod extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
     def RotateEx(index: Double, angle: Double, keepSize: Boolean, method: Double): Unit | Boolean = js.native
     def RotateEx(
       index: Double,
@@ -463,6 +483,7 @@ object webTwainEditMod extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
     /**
       * Rotate the specified image 90 degrees counterclockwise.
       * @param index Specify the image.
@@ -483,6 +504,7 @@ object webTwainEditMod extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
     /**
       * Rotate the specified image 90 degrees clockwise.
       * @param index Specify the image.
@@ -503,6 +525,7 @@ object webTwainEditMod extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
     def SetDPI(index: Double, xResolution: Double, yResolution: Double, resample: Boolean, method: Double): Unit | Boolean = js.native
     def SetDPI(
       index: Double,
@@ -575,6 +598,7 @@ object webTwainEditMod extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
     /**
       * Change the width of the specified image by adding a margin or removing part of the image.
       * @param index Specify the image.
@@ -598,6 +622,7 @@ object webTwainEditMod extends js.Object {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
     /**
       * Show the built-in image editor. If called without any arguments while the editor is open, it'll close the editor.
       * @param divId Specify a div element to hold the editor.
@@ -613,6 +638,4 @@ object webTwainEditMod extends js.Object {
     def ShowImageEditor(divId: String, width: Double): Boolean = js.native
     def ShowImageEditor(divId: String, width: Double, height: Double): Boolean = js.native
   }
-  
 }
-

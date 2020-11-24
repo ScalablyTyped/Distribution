@@ -7,11 +7,12 @@ import typings.std.HTMLElement
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   /**
     * @param onReadyCallback Function that is going to be called on DOM ready event. You can also subscribe to this
@@ -64,7 +65,6 @@ object global extends js.Object {
       callback: js.ThisFunction0[/* this */ RaphaelPaper[SVG | VML], Unit]
     ) = this()
   }
-  
   /**
     * The global entry point for all features offered by the Raphaël library.
     *
@@ -92,6 +92,4 @@ object global extends js.Object {
     */
   @js.native
   object Raphael extends TopLevel[RaphaelStatic[SVG | VML]]
-  
 }
-

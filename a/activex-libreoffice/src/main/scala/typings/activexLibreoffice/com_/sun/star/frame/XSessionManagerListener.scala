@@ -5,10 +5,11 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait XSessionManagerListener extends XEventListener {
+  
   /**
     * approveInteraction is called when an outstanding interaction request was processed by the session manager
     * @param bInteractionGranted If `FALSE` the listener must not interact with the user. If `TRUE` the listener can interact with the user now. After interac
@@ -16,8 +17,10 @@ trait XSessionManagerListener extends XEventListener {
     * @see XSessionManagerClient.interactionDone()
     */
   def approveInteraction(bInteractionGranted: Boolean): Unit = js.native
+  
   /** returns true, if a session was restored */
   def doRestore(): Boolean = js.native
+  
   /**
     * doSave gets called when a save event was issued by the session manager the listener should do what is necessary to restore the current state of the
     * application
@@ -32,14 +35,15 @@ trait XSessionManagerListener extends XEventListener {
     * @see XSessionManagerClient.saveDone()
     */
   def doSave(bShutdown: Boolean, bCancelable: Boolean): Unit = js.native
+  
   /**
     * shutdownCanceled is called when a shutdown was canceled by the user The listener can cancel its saving operations. No further interaction is necessary
     * and further calls on the session manager client service object will be ignored.
     */
   def shutdownCanceled(): Unit = js.native
 }
-
 object XSessionManagerListener {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -54,26 +58,32 @@ object XSessionManagerListener {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), approveInteraction = js.Any.fromFunction1(approveInteraction), disposing = js.Any.fromFunction1(disposing), doRestore = js.Any.fromFunction0(doRestore), doSave = js.Any.fromFunction2(doSave), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), shutdownCanceled = js.Any.fromFunction0(shutdownCanceled))
     __obj.asInstanceOf[XSessionManagerListener]
   }
+  
   @scala.inline
   implicit class XSessionManagerListenerOps[Self <: XSessionManagerListener] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setApproveInteraction(value: Boolean => Unit): Self = this.set("approveInteraction", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setDoRestore(value: () => Boolean): Self = this.set("doRestore", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setDoSave(value: (Boolean, Boolean) => Unit): Self = this.set("doSave", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setShutdownCanceled(value: () => Unit): Self = this.set("shutdownCanceled", js.Any.fromFunction0(value))
   }
-  
 }
-

@@ -5,7 +5,7 @@ import typings.heremaps.H.geo.MultiPoint
 import typings.heremaps.H.map.DomMarker.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A marker with a visual representation in the form of a full styleable and scripteable DOM element. DomMarker are predestinated if small amounts of markers with dynamic styled and/or
@@ -25,4 +25,3 @@ class DomMarker protected ()
   def this(position: IPoint, opt_options: Options) = this()
   def this(position: MultiPoint, opt_options: Options) = this()
 }
-

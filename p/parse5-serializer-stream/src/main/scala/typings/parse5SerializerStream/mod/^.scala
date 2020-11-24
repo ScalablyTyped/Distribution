@@ -5,7 +5,7 @@ import typings.parse5.mod.Node
 import typings.parse5.mod.SerializerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Streaming AST node to an HTML serializer.
@@ -40,4 +40,3 @@ class ^ protected () extends Readable {
   def this(node: Node) = this()
   def this(node: Node, options: SerializerOptions) = this()
 }
-

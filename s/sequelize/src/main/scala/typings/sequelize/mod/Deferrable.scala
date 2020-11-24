@@ -2,7 +2,7 @@ package typings.sequelize.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection of properties related to deferrable constraints. It can be used to
@@ -37,29 +37,29 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Deferrable extends js.Object {
-  @JSName("INITIALLY_DEFERRED")
-  var INITIALLY_DEFERRED_Original: DeferrableInitiallyDeferred = js.native
-  @JSName("INITIALLY_IMMEDIATE")
-  var INITIALLY_IMMEDIATE_Original: DeferrableInitiallyImmediate = js.native
-  @JSName("NOT")
-  var NOT_Original: DeferrableNot = js.native
-  @JSName("SET_DEFERRED")
-  var SET_DEFERRED_Original: DeferrableSetDeferred = js.native
-  @JSName("SET_IMMEDIATE")
-  var SET_IMMEDIATE_Original: DeferrableSetImmediate = js.native
+  
   /**
     * A property that will defer constraints checks to the end of transactions.
     */
   def INITIALLY_DEFERRED(): DeferrableInitiallyDeferred = js.native
+  @JSName("INITIALLY_DEFERRED")
+  var INITIALLY_DEFERRED_Original: DeferrableInitiallyDeferred = js.native
+  
   /**
     * A property that will trigger the constraint checks immediately
     */
   def INITIALLY_IMMEDIATE(): DeferrableInitiallyImmediate = js.native
+  @JSName("INITIALLY_IMMEDIATE")
+  var INITIALLY_IMMEDIATE_Original: DeferrableInitiallyImmediate = js.native
+  
   /**
     * A property that will set the constraints to not deferred. This is the default in PostgreSQL and it make
     * it impossible to dynamically defer the constraints within a transaction.
     */
   def NOT(): DeferrableNot = js.native
+  @JSName("NOT")
+  var NOT_Original: DeferrableNot = js.native
+  
   /**
     * A property that will trigger an additional query at the beginning of a
     * transaction which sets the constraints to deferred.
@@ -67,6 +67,9 @@ trait Deferrable extends js.Object {
     * @param constraints An array of constraint names. Will defer all constraints by default.
     */
   def SET_DEFERRED(constraints: js.Array[String]): DeferrableSetDeferred = js.native
+  @JSName("SET_DEFERRED")
+  var SET_DEFERRED_Original: DeferrableSetDeferred = js.native
+  
   /**
     * A property that will trigger an additional query at the beginning of a
     * transaction which sets the constraints to immediately.
@@ -74,5 +77,6 @@ trait Deferrable extends js.Object {
     * @param constraints An array of constraint names. Will defer all constraints by default.
     */
   def SET_IMMEDIATE(constraints: js.Array[String]): DeferrableSetImmediate = js.native
+  @JSName("SET_IMMEDIATE")
+  var SET_IMMEDIATE_Original: DeferrableSetImmediate = js.native
 }
-

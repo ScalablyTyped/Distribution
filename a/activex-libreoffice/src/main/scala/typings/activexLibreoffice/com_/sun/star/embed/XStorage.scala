@@ -8,13 +8,14 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface represents main storage functionality. */
 @js.native
 trait XStorage
   extends XNameAccess
      with XComponent {
+  
   /**
     * allows to get readonly copy of a child encrypted stream with password.
     *
@@ -33,6 +34,7 @@ trait XStorage
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
   def cloneEncryptedStreamElement(sStreamName: String, sPassword: String): XStream = js.native
+  
   /**
     * allows to get readonly copy of a child stream of the storage.
     *
@@ -45,6 +47,7 @@ trait XStorage
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
   def cloneStreamElement(sStreamName: String): XStream = js.native
+  
   /**
     * allows to copy an entry from one storage to another.
     *
@@ -59,6 +62,7 @@ trait XStorage
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
   def copyElementTo(sElementName: String, xDest: XStorage, sNewName: String): Unit = js.native
+  
   /**
     * allows to get copy of this storage at the state of its last commit.
     *
@@ -70,6 +74,7 @@ trait XStorage
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
   def copyLastCommitTo(xTargetStorage: XStorage): Unit = js.native
+  
   /**
     * allows to get copy of a child storage at the state of its last commit.
     *
@@ -82,6 +87,7 @@ trait XStorage
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
   def copyStorageElementLastCommitTo(sStorName: String, xTargetStorage: XStorage): Unit = js.native
+  
   /**
     * allows to copy current storage to another one
     *
@@ -94,6 +100,7 @@ trait XStorage
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exception acquired during copying
     */
   def copyToStorage(xDest: XStorage): Unit = js.native
+  
   /**
     * allows to check if an element is a child storage with specified name.
     *
@@ -105,6 +112,7 @@ trait XStorage
     * @throws com::sun::star::embed::InvalidStorageException this storage is in invalid state for any reason
     */
   def isStorageElement(sElementName: String): Boolean = js.native
+  
   /**
     * allows to check if an element is a child stream with specified name.
     *
@@ -116,6 +124,7 @@ trait XStorage
     * @throws com::sun::star::embed::InvalidStorageException this storage is in invalid state for any reason
     */
   def isStreamElement(sElementName: String): Boolean = js.native
+  
   /**
     * allows to move an entry from one storage to another.
     *
@@ -130,6 +139,7 @@ trait XStorage
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
   def moveElementTo(sElementName: String, xDest: XStorage, sNewName: String): Unit = js.native
+  
   /**
     * allows to get access to a child encrypted stream with password.
     *
@@ -147,6 +157,7 @@ trait XStorage
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
   def openEncryptedStreamElement(sStreamName: String, nOpenMode: Double, sPassword: String): XStream = js.native
+  
   /**
     * allows to get access to a child storage.
     *
@@ -160,6 +171,7 @@ trait XStorage
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
   def openStorageElement(sStorName: String, nOpenMode: Double): XStorage = js.native
+  
   /**
     * allows to get access to a child stream of the storage.
     *
@@ -173,6 +185,7 @@ trait XStorage
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
   def openStreamElement(sStreamName: String, nOpenMode: Double): XStream = js.native
+  
   /**
     * removes an element from a storage.
     * @param sElementName the name of the element to remove
@@ -183,6 +196,7 @@ trait XStorage
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
   def removeElement(sElementName: String): Unit = js.native
+  
   /**
     * renames an element in a storage.
     * @param sElementName the old name of the element to rename
@@ -196,8 +210,8 @@ trait XStorage
     */
   def renameElement(sElementName: String, sNewName: String): Unit = js.native
 }
-
 object XStorage {
+  
   @scala.inline
   def apply(
     ElementNames: SafeArray[String],
@@ -231,46 +245,62 @@ object XStorage {
     val __obj = js.Dynamic.literal(ElementNames = ElementNames.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), cloneEncryptedStreamElement = js.Any.fromFunction2(cloneEncryptedStreamElement), cloneStreamElement = js.Any.fromFunction1(cloneStreamElement), copyElementTo = js.Any.fromFunction3(copyElementTo), copyLastCommitTo = js.Any.fromFunction1(copyLastCommitTo), copyStorageElementLastCommitTo = js.Any.fromFunction2(copyStorageElementLastCommitTo), copyToStorage = js.Any.fromFunction1(copyToStorage), dispose = js.Any.fromFunction0(dispose), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), isStorageElement = js.Any.fromFunction1(isStorageElement), isStreamElement = js.Any.fromFunction1(isStreamElement), moveElementTo = js.Any.fromFunction3(moveElementTo), openEncryptedStreamElement = js.Any.fromFunction3(openEncryptedStreamElement), openStorageElement = js.Any.fromFunction2(openStorageElement), openStreamElement = js.Any.fromFunction2(openStreamElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeElement = js.Any.fromFunction1(removeElement), removeEventListener = js.Any.fromFunction1(removeEventListener), renameElement = js.Any.fromFunction2(renameElement))
     __obj.asInstanceOf[XStorage]
   }
+  
   @scala.inline
   implicit class XStorageOps[Self <: XStorage] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCloneEncryptedStreamElement(value: (String, String) => XStream): Self = this.set("cloneEncryptedStreamElement", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setCloneStreamElement(value: String => XStream): Self = this.set("cloneStreamElement", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCopyElementTo(value: (String, XStorage, String) => Unit): Self = this.set("copyElementTo", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setCopyLastCommitTo(value: XStorage => Unit): Self = this.set("copyLastCommitTo", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCopyStorageElementLastCommitTo(value: (String, XStorage) => Unit): Self = this.set("copyStorageElementLastCommitTo", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setCopyToStorage(value: XStorage => Unit): Self = this.set("copyToStorage", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsStorageElement(value: String => Boolean): Self = this.set("isStorageElement", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsStreamElement(value: String => Boolean): Self = this.set("isStreamElement", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setMoveElementTo(value: (String, XStorage, String) => Unit): Self = this.set("moveElementTo", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setOpenEncryptedStreamElement(value: (String, Double, String) => XStream): Self = this.set("openEncryptedStreamElement", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setOpenStorageElement(value: (String, Double) => XStorage): Self = this.set("openStorageElement", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setOpenStreamElement(value: (String, Double) => XStream): Self = this.set("openStreamElement", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRemoveElement(value: String => Unit): Self = this.set("removeElement", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRenameElement(value: (String, String) => Unit): Self = this.set("renameElement", js.Any.fromFunction2(value))
   }
-  
 }
-

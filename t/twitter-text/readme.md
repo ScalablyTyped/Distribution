@@ -11,8 +11,8 @@ official twitter text linkification
 | Full name          | twitter-text |
 | Keywords           | - |
 | # releases         | 11 |
-| # dependents       | 57 |
-| # downloads        | 952335 |
+| # dependents       | 62 |
+| # downloads        | 1096275 |
 | # stars            | 4 |
 
 ## Links

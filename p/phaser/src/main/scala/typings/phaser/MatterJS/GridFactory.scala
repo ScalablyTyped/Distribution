@@ -2,16 +2,18 @@ package typings.phaser.MatterJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GridFactory extends js.Object {
+  
   /**
     * Clears the grid.
     * @method clear
     * @param {grid} grid
     */
   def clear(grid: Grid): Unit = js.native
+  
   /**
     * Creates a new grid.
     * @method create
@@ -20,6 +22,7 @@ trait GridFactory extends js.Object {
     */
   def create(): Grid = js.native
   def create(options: IGridDefinition): Grid = js.native
+  
   /**
     * Updates the grid.
     * @method update
@@ -30,4 +33,3 @@ trait GridFactory extends js.Object {
     */
   def update(grid: Grid, bodies: js.Array[BodyType], engine: Engine, forceUpdate: Boolean): Unit = js.native
 }
-

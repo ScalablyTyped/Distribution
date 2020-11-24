@@ -2,11 +2,12 @@ package typings.keycloakJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("keycloak-js", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Creates a new Keycloak client instance.
     * @param config A configuration object or path to a JSON config file.
@@ -15,4 +16,3 @@ object ^ extends js.Object {
   def apply(config: String): KeycloakInstance = js.native
   def apply(config: KeycloakConfig): KeycloakInstance = js.native
 }
-

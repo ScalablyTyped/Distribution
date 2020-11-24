@@ -3,11 +3,12 @@ package typings.openlayers.mod.proj
 import typings.openlayers.mod.ProjectionLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "proj.get")
 @js.native
 object get extends js.Object {
+  
   /**
     * Fetches a Projection object for the code specified.
     *
@@ -19,4 +20,3 @@ object get extends js.Object {
     */
   def apply(projectionLike: ProjectionLike): Projection = js.native
 }
-

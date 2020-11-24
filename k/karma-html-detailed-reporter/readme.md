@@ -12,7 +12,7 @@ A Karma plugin. Report results in a detailed HTML page.
 | Keywords           | karma, karma-plugin, karma-reporter, html |
 | # releases         | 12 |
 | # dependents       | 1 |
-| # downloads        | 65211 |
+| # downloads        | 70977 |
 | # stars            | 0 |
 
 ## Links

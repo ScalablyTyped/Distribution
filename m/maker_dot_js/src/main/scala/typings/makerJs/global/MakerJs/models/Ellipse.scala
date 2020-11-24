@@ -3,7 +3,7 @@ package typings.makerJs.global.MakerJs.models
 import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.models.Ellipse")
 @js.native
@@ -40,4 +40,3 @@ class Ellipse protected ()
   def this(origin: IPoint, radiusX: Double, radiusY: Double, accuracy: Double) = this()
   def this(cx: Double, cy: Double, rx: Double, ry: Double, accuracy: Double) = this()
 }
-

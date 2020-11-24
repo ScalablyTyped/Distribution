@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudprivatecatalogproducer/v1beta1", "cloudprivatecatalogproducer_v1beta1.Resource$Catalogs$Products$Versions")
 @js.native
 class ResourceCatalogsProductsVersions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.products.versions.create
     * @desc Creates a Version instance under a given Product.
@@ -45,6 +47,7 @@ class ResourceCatalogsProductsVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.products.versions.delete
     * @desc Hard deletes a Version.
@@ -76,6 +79,7 @@ class ResourceCatalogsProductsVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.products.versions.get
     * @desc Returns the requested Version resource.
@@ -107,6 +111,7 @@ class ResourceCatalogsProductsVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Version]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.products.versions.list
     * @desc Lists Version resources that the producer has access to, within the
@@ -141,6 +146,7 @@ class ResourceCatalogsProductsVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListVersionsResponse]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.products.versions.patch
     * @desc Updates a specific Version resource.
@@ -175,4 +181,3 @@ class ResourceCatalogsProductsVersions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Version]
   ): Unit = js.native
 }
-

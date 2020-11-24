@@ -2,21 +2,28 @@ package typings.yadda.frenchMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Vocabulary
   extends typings.yadda.englishMod.Vocabulary {
+  
   var alors: String = js.native
+  
   var etantdonnalors: String = js.native
+  
   var etantdonnalorss: String = js.native
+  
   var etantdonne: String = js.native
+  
   var lorsque: String = js.native
+  
   var quand: String = js.native
+  
   var soit: String = js.native
 }
-
 object Vocabulary {
+  
   @scala.inline
   def apply(
     _steps: js.Array[String],
@@ -41,32 +48,41 @@ object Vocabulary {
     __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vocabulary]
   }
+  
   @scala.inline
   implicit class VocabularyOps[Self <: Vocabulary] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAlors(value: String): Self = this.set("alors", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEtantdonnalors(value: String): Self = this.set("etantdonnalors", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEtantdonnalorss(value: String): Self = this.set("etantdonnalorss", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEtantdonne(value: String): Self = this.set("etantdonne", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLorsque(value: String): Self = this.set("lorsque", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQuand(value: String): Self = this.set("quand", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSoit(value: String): Self = this.set("soit", value.asInstanceOf[js.Any])
   }
-  
 }
-

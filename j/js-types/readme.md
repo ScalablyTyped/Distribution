@@ -12,7 +12,7 @@ List of JavaScript types
 | Keywords           | js, javascript, ecmascript, builtin, types, type, data, list, array, json |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 1103925 |
+| # downloads        | 1379543 |
 | # stars            | 0 |
 
 ## Links

@@ -2,10 +2,11 @@ package typings.s3Uploader.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Upload extends js.Object {
+  
   def upload(src: String): Unit = js.native
   def upload(
     src: String,
@@ -19,4 +20,3 @@ trait Upload extends js.Object {
     cb: js.Function3[/* err */ String, /* images */ js.Array[image], /* meta */ Meta, Unit]
   ): Unit = js.native
 }
-

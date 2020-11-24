@@ -9,7 +9,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/datasync/nfsLocation", "NfsLocation")
 @js.native
@@ -23,33 +23,39 @@ class NfsLocation protected () extends CustomResource {
     */
   def this(name: String, args: NfsLocationArgs) = this()
   def this(name: String, args: NfsLocationArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * Amazon Resource Name (ARN) of the DataSync Location.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * Configuration block containing information for connecting to the NFS File System.
     */
   val onPremConfig: Output_[NfsLocationOnPremConfig] = js.native
+  
   /**
     * Specifies the IP address or DNS name of the NFS server. The DataSync Agent(s) use this to mount the NFS server.
     */
   val serverHostname: Output_[String] = js.native
+  
   /**
     * Subdirectory to perform actions as source or destination. Should be exported by the NFS server.
     */
   val subdirectory: Output_[String] = js.native
+  
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  
   val uri: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/datasync/nfsLocation", "NfsLocation")
 @js.native
 object NfsLocation extends js.Object {
+  
   /**
     * Get an existing NfsLocation resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -63,10 +69,10 @@ object NfsLocation extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NfsLocation = js.native
   def get(name: String, id: Input[ID], state: NfsLocationState): NfsLocation = js.native
   def get(name: String, id: Input[ID], state: NfsLocationState, opts: CustomResourceOptions): NfsLocation = js.native
+  
   /**
     * Returns true if the given object is an instance of NfsLocation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/nfsLocation.NfsLocation */ Boolean = js.native
 }
-

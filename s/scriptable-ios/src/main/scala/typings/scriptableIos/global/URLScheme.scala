@@ -2,7 +2,7 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Manages URL schemes for Scriptable._
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("URLScheme")
 @js.native
 object URLScheme extends js.Object {
+  
   /**
     * _URL for opening the script._
     *
@@ -18,6 +19,7 @@ object URLScheme extends js.Object {
     * @see https://docs.scriptable.app/urlscheme/#foropeningscript
     */
   def forOpeningScript(): String = js.native
+  
   /**
     * _URL for opening script settings._
     *
@@ -26,14 +28,14 @@ object URLScheme extends js.Object {
     * @see https://docs.scriptable.app/urlscheme/#foropeningscriptsettings
     */
   def forOpeningScriptSettings(): String = js.native
+  
   /**
     * _URL for running script._
     *
     * Gets the URL for running the current script. When making a request to the returned URL from another app, e.g. Safari, the current script will run.
     *
-    * Any query parameter in the URL will be available using the URLScheme bridge. Get the query paramters using the `allParameters()` and `parameter(name)` functions.
+    * Get the query parameters using `args.queryParameters`.
     * @see https://docs.scriptable.app/urlscheme/#forrunningscript
     */
   def forRunningScript(): String = js.native
 }
-

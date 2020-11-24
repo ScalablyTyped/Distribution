@@ -1,7 +1,7 @@
 
 # Scala.js typings for pkcs11js
 
-Typings are for version 1.0.21
+Typings are for version 1.0.22
 
 ## Library description:
 A Node.js implementation of the PKCS#11 2.3 interface
@@ -10,9 +10,9 @@ A Node.js implementation of the PKCS#11 2.3 interface
 | ------------------ | :-------------: |
 | Full name          | pkcs11js |
 | Keywords           | pkcs11, rsa, ecdsa, aes, crypto, smartcard, token, nss, softhsm2 |
-| # releases         | 8 |
-| # dependents       | 16 |
-| # downloads        | 540312 |
+| # releases         | 5 |
+| # dependents       | 20 |
+| # downloads        | 669964 |
 | # stars            | 2 |
 
 ## Links

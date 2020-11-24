@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Products")
 @js.native
 class ResourceProducts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.products.approve
     * @desc Approves the specified product and the relevant app permissions, if
@@ -47,6 +47,9 @@ class ResourceProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.products.generateApprovalUrl
     * @desc Generates a URL that can be rendered in an iframe to display the
@@ -87,6 +90,7 @@ class ResourceProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProductsGenerateApprovalUrlResponse]
   ): Unit = js.native
+  
   /**
     * androidenterprise.products.get
     * @desc Retrieves details of a product for display to an enterprise admin.
@@ -117,6 +121,7 @@ class ResourceProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProduct]
   ): Unit = js.native
+  
   /**
     * androidenterprise.products.getAppRestrictionsSchema
     * @desc Retrieves the schema that defines the configurable properties for
@@ -155,6 +160,7 @@ class ResourceProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAppRestrictionsSchema]
   ): Unit = js.native
+  
   /**
     * androidenterprise.products.getPermissions
     * @desc Retrieves the Android app permissions required by this app.
@@ -187,6 +193,7 @@ class ResourceProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProductPermissions]
   ): Unit = js.native
+  
   /**
     * androidenterprise.products.list
     * @desc Finds approved products that match a query, or all approved
@@ -221,6 +228,7 @@ class ResourceProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProductsListResponse]
   ): Unit = js.native
+  
   /**
     * androidenterprise.products.unapprove
     * @desc Unapproves the specified product (and the relevant app permissions,
@@ -252,4 +260,3 @@ class ResourceProducts protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

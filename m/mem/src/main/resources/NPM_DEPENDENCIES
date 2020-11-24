@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mem" : "6.1.0"
+      "mem" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "mem" : "6.1.0"
+      "mem" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

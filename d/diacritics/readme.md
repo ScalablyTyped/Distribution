@@ -11,8 +11,8 @@ remove diacritics from strings
 | Full name          | diacritics |
 | Keywords           | diacritics, remove, removal, search, string |
 | # releases         | 0 |
-| # dependents       | 136 |
-| # downloads        | 4714055 |
+| # dependents       | 164 |
+| # downloads        | 9236432 |
 | # stars            | 12 |
 
 ## Links

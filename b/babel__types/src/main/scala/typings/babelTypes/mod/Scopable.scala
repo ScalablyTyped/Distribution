@@ -15,6 +15,7 @@ import typings.babelTypes.babelTypesStrings.FunctionDeclaration
 import typings.babelTypes.babelTypesStrings.FunctionExpression
 import typings.babelTypes.babelTypesStrings.ObjectMethod
 import typings.babelTypes.babelTypesStrings.Program
+import typings.babelTypes.babelTypesStrings.StaticBlock
 import typings.babelTypes.babelTypesStrings.SwitchStatement
 import typings.babelTypes.babelTypesStrings.TSModuleBlock
 import typings.babelTypes.babelTypesStrings.WhileStatement
@@ -26,7 +27,7 @@ import typings.babelTypes.babelTypesStrings.script
 import typings.babelTypes.babelTypesStrings.set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.babelTypes.mod.BlockStatement_
@@ -46,17 +47,19 @@ import scala.scalajs.js.annotation._
   - typings.babelTypes.mod.ForOfStatement_
   - typings.babelTypes.mod.ClassMethod_
   - typings.babelTypes.mod.ClassPrivateMethod_
+  - typings.babelTypes.mod.StaticBlock_
   - typings.babelTypes.mod.TSModuleBlock_
 */
 trait Scopable extends _Node
-
 object Scopable {
+  
   @scala.inline
   def ForInStatement_(body: Statement, left: VariableDeclaration_ | LVal, right: Expression, `type`: ForInStatement): Scopable = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def ArrowFunctionExpression_(
     async: Boolean,
@@ -70,18 +73,21 @@ object Scopable {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def SwitchStatement_(cases: js.Array[SwitchCase_], discriminant: Expression, `type`: SwitchStatement): Scopable = {
     val __obj = js.Dynamic.literal(cases = cases.asInstanceOf[js.Any], discriminant = discriminant.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def BlockStatement_(body: js.Array[Statement], directives: js.Array[Directive_], `type`: BlockStatement): Scopable = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def ObjectMethod_(
     async: Boolean,
@@ -97,6 +103,7 @@ object Scopable {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def ClassPrivateMethod_(
     async: Boolean,
@@ -113,24 +120,35 @@ object Scopable {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def CatchClause_(body: BlockStatement_, `type`: CatchClause): Scopable = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
+  @scala.inline
+  def StaticBlock_(body: js.Array[Statement], `type`: StaticBlock): Scopable = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Scopable]
+  }
+  
   @scala.inline
   def ClassExpression_(body: ClassBody_, `type`: ClassExpression): Scopable = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def ForStatement_(body: Statement, `type`: ForStatement): Scopable = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def FunctionExpression_(
     async: Boolean,
@@ -143,6 +161,7 @@ object Scopable {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def FunctionDeclaration_(
     async: Boolean,
@@ -155,12 +174,14 @@ object Scopable {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def WhileStatement_(body: Statement, test: Expression, `type`: WhileStatement): Scopable = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def ClassMethod_(
     async: Boolean,
@@ -177,6 +198,7 @@ object Scopable {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def Program_(
     body: js.Array[Statement],
@@ -189,12 +211,14 @@ object Scopable {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def TSModuleBlock_(body: js.Array[Statement], `type`: TSModuleBlock): Scopable = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def ForOfStatement_(
     await: Boolean,
@@ -207,12 +231,14 @@ object Scopable {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def DoWhileStatement_(body: Statement, test: Expression, `type`: DoWhileStatement): Scopable = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
+  
   @scala.inline
   def ClassDeclaration_(body: ClassBody_, id: Identifier_, `type`: ClassDeclaration): Scopable = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
@@ -220,4 +246,3 @@ object Scopable {
     __obj.asInstanceOf[Scopable]
   }
 }
-

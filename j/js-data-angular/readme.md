@@ -10,9 +10,9 @@ Angular wrapper for js-data.
 | ------------------ | :-------------: |
 | Full name          | js-data-angular |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 73364 |
+| # downloads        | 91094 |
 | # stars            | 0 |
 
 ## Links

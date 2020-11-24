@@ -1,8 +1,9 @@
 package typings.officeJsPreview.global.Excel
 
+import typings.officeJsPreview.Excel.Session
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the request context is required to get access to the Excel object model from the add-in.
@@ -12,6 +13,5 @@ import scala.scalajs.js.annotation._
 class RequestContext ()
   extends typings.officeJsPreview.Excel.RequestContext {
   def this(url: String) = this()
-  def this(url: typings.officeJsPreview.Excel.Session) = this()
+  def this(url: Session) = this()
 }
-

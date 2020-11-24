@@ -3,7 +3,7 @@ package typings.tstl.tstlMod
 import typings.tstl.iforwarditeratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/container", "List")
 @js.native
@@ -42,10 +42,10 @@ class List[T] ()
     */
   def this(size: Double, `val`: T) = this()
 }
-
 @JSImport("tstl/container", "List")
 @js.native
 object List extends js.Object {
+  
   /**
     * Iterator of {@link List}
     *
@@ -63,6 +63,4 @@ object List extends js.Object {
   @js.native
   class ReverseIterator[T] ()
     extends typings.tstl.listMod.List.ReverseIterator[T]
-  
 }
-

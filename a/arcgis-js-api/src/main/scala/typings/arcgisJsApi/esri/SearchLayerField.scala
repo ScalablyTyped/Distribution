@@ -15,22 +15,25 @@ import typings.arcgisJsApi.arcgisJsApiStrings.string
 import typings.arcgisJsApi.arcgisJsApiStrings.xml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SearchLayerField extends Accessor {
+  
   /**
     * Whether or not the field is an exact match.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayerField.html#exactMatch)
     */
   var exactMatch: Boolean = js.native
+  
   /**
     * The name of the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayerField.html#name)
     */
   var name: String = js.native
+  
   /**
     * The data type of the field.
     *
@@ -38,4 +41,3 @@ trait SearchLayerField extends Accessor {
     */
   var `type`: `small-integer` | integer | single | double | long | string | date | oid | typings.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml = js.native
 }
-

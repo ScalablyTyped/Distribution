@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Helper class to create a shader program.
@@ -12,18 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Program extends js.Object {
-  /**
-    * The fragment shader.
-    *
-    * @member {string} PIXI.Program#fragmentSrc
-    */
-  var fragmentSrc: String = js.native
-  /**
-    * The vertex shader.
-    *
-    * @member {string} PIXI.Program#vertexSrc
-    */
-  var vertexSrc: String = js.native
+  
   /**
     * Extracts the data for a buy creating a small test program
     * or reading the src directly.
@@ -36,5 +25,18 @@ trait Program extends js.Object {
   /* protected */ def extractData(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: String): Unit = js.native
   /* protected */ def extractData(vertexSrc: String): Unit = js.native
   /* protected */ def extractData(vertexSrc: String, fragmentSrc: String): Unit = js.native
+  
+  /**
+    * The fragment shader.
+    *
+    * @member {string} PIXI.Program#fragmentSrc
+    */
+  var fragmentSrc: String = js.native
+  
+  /**
+    * The vertex shader.
+    *
+    * @member {string} PIXI.Program#vertexSrc
+    */
+  var vertexSrc: String = js.native
 }
-

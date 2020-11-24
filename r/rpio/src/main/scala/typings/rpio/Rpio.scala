@@ -5,40 +5,66 @@ import typings.rpio.RPIO_.CallbackFunction
 import typings.rpio.RPIO_.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Rpio extends js.Object {
+  
   // Constants:
   var HIGH: Double = js.native
+  
   var INPUT: Double = js.native
+  
   var LOW: Double = js.native
+  
   var OUTPUT: Double = js.native
+  
   var PAD_DRIVE_10mA: Double = js.native
+  
   var PAD_DRIVE_12mA: Double = js.native
+  
   var PAD_DRIVE_14mA: Double = js.native
+  
   var PAD_DRIVE_16mA: Double = js.native
+  
   var PAD_DRIVE_2mA: Double = js.native
+  
   var PAD_DRIVE_4mA: Double = js.native
+  
   var PAD_DRIVE_6mA: Double = js.native
+  
   var PAD_DRIVE_8mA: Double = js.native
+  
   var PAD_GROUP_0_27: Double = js.native
+  
   var PAD_GROUP_28_45: Double = js.native
+  
   var PAD_GROUP_46_53: Double = js.native
+  
   var PAD_HYSTERESIS: Double = js.native
+  
   var PAD_SLEW_UNLIMITED: Double = js.native
+  
   var POLL_BOTH: Double = js.native
+  
   var POLL_HIGH: Double = js.native
+  
   var POLL_LOW: Double = js.native
+  
   var PULL_DOWN: Double = js.native
+  
   var PULL_OFF: Double = js.native
+  
   var PULL_UP: Double = js.native
+  
   var PWM: Double = js.native
+  
   /**
     * Reset pin to INPUT and clear any pullup/pulldown resistors and poll events.
     * @param pin
     */
   def close(pin: Double): Unit = js.native
+  
   // I²C
   /**
     * Assign pins 3 and 5 to i²c use. Until .i2cEnd() is called they won't be available for GPIO use.
@@ -48,10 +74,12 @@ trait Rpio extends js.Object {
     * Pin 5: SCL (Serial Clock)
     */
   def i2cBegin(): Unit = js.native
+  
   /**
     * Turn off the i²c interface and return the pins to GPIO.
     */
   def i2cEnd(): Unit = js.native
+  
   /**
     * Read from the i²c slave.
     * Function takes a buffer and optional length argument, defaulting to the length of the buffer if not specified.
@@ -60,22 +88,26 @@ trait Rpio extends js.Object {
     */
   def i2cRead(buffer: Buffer): Unit = js.native
   def i2cRead(buffer: Buffer, length: Double): Unit = js.native
+  
   /**
     * Set the baud rate - directly set the speed in hertz.
     * @param baudRate
     */
   def i2cSetBaudRate(baudRate: Double): Unit = js.native
+  
   /**
     * Set the baud rate - based on a divisor of the base 250MHz rate.
     * @param clockDivider
     */
   def i2cSetClockDivider(clockDivider: Double): Unit = js.native
+  
   /**
     * Configure the slave address. This is between 0 - 0x7f, and it can be helpful to
     * run the i2cdetect program to figure out where your devices are if you are unsure.
     * @param address
     */
   def i2cSetSlaveAddress(address: Double): Unit = js.native
+  
   /**
     * Write to the i²c slave.
     * Function takes a buffer and optional length argument, defaulting to the length of the buffer if not specified.
@@ -84,11 +116,13 @@ trait Rpio extends js.Object {
     */
   def i2cWrite(biffer: Buffer): Unit = js.native
   def i2cWrite(biffer: Buffer, length: Double): Unit = js.native
+  
   /**
     * Initialise the bcm2835 library. This will be called automatically by .open() using the default option values if not called explicitly.
     * @param options
     */
   def init(options: Options): Unit = js.native
+  
   /**
     * Switch a pin that has already been opened in one mode to a different mode.
     * This is provided primarily for performance reasons, as it avoids some of the setup work done by .open().
@@ -96,11 +130,13 @@ trait Rpio extends js.Object {
     * @param mode
     */
   def mode(pin: Double, mode: Double): Unit = js.native
+  
   /**
     * Sleep for n milliseconds.
     * @param n: number of milliseconds to sleep
     */
   def msleep(n: Double): Unit = js.native
+  
   /**
     * Open a pin for input or output. Valid modes are:
     * INPUT: pin is input (read-only).
@@ -116,6 +152,7 @@ trait Rpio extends js.Object {
     */
   def open(pin: Double, mode: Double): Unit = js.native
   def open(pin: Double, mode: Double, options: Double): Unit = js.native
+  
   /**
     * Watch pin for changes and execute the callback cb() on events. cb() takes a single argument, the pin which triggered the callback.
     *
@@ -135,6 +172,7 @@ trait Rpio extends js.Object {
   def poll(pin: Double, cb: Null, direction: Double): Unit = js.native
   def poll(pin: Double, cb: CallbackFunction): Unit = js.native
   def poll(pin: Double, cb: CallbackFunction, direction: Double): Unit = js.native
+  
   /**
     * Configure the pin's internal pullup or pulldown resistors, using the following isMotionDetected constants:
     * PULL_OFF: disable configured resistors.
@@ -145,29 +183,34 @@ trait Rpio extends js.Object {
     * @param state
     */
   def pud(pin: Double, state: Double): Unit = js.native
+  
   // PWM
   /**
     * Set the PWM refresh rate.
     * @param clockDivider: power-of-two divisor of the base 19.2MHz rate, with a maximum value of 4096 (4.6875kHz).
     */
   def pwmSetClockDivider(clockDivider: Double): Unit = js.native
+  
   /**
     * Set the PWM width for a pin.
     * @param pin
     * @param data
     */
   def pwmSetData(pin: Double, data: Double): Unit = js.native
+  
   /**
     * Set the PWM range for a pin. This determines the maximum pulse width.
     * @param pin
     * @param range
     */
   def pwmSetRange(pin: Double, range: Double): Unit = js.native
+  
   /**
     * Read the current value of pin, returning either 1 (high) or 0 (low).
     * @param pin
     */
   def read(pin: Double): Double = js.native
+  
   /**
     * Read length bits from pin into buffer as fast as possible. If length isn't specified it defaults to buffer.length.
     * @param pin
@@ -176,6 +219,7 @@ trait Rpio extends js.Object {
     */
   def readbuf(pin: Double, buffer: Buffer): Unit = js.native
   def readbuf(pin: Double, buffer: Buffer, length: Double): Unit = js.native
+  
   /**
     * Read the current isMotionDetected of the GPIO pad control for the specified GPIO group. On current models of Raspberry Pi there are three groups with corresponding defines:
     * PAD_GROUP_0_27: GPIO0 - GPIO27. Use this for the main GPIO header.
@@ -200,12 +244,14 @@ trait Rpio extends js.Object {
     * @param group
     */
   def readpad(group: Double): Double = js.native
+  
   // Misc
   /**
     * Sleep for n seconds.
     * @param n: number of seconds to sleep
     */
   def sleep(n: Double): Unit = js.native
+  
   // SPI
   /**
     * Switch pins 119, 21, 23, 24 and 25 (GPIO7-GPIO11) to SPI mode
@@ -219,6 +265,7 @@ trait Rpio extends js.Object {
     *   25 |   CE1
     */
   def spiBegin(): Unit = js.native
+  
   /**
     * Choose which of the chip select / chip enable pins to control.
     *
@@ -231,10 +278,12 @@ trait Rpio extends js.Object {
     * @param chip
     */
   def spiChipSelect(cePin: Double): Unit = js.native
+  
   /**
     * Release the pins back to general purpose use.
     */
   def spiEnd(): Unit = js.native
+  
   /**
     * Commonly chip enable (CE) pins are active low, and this is the default.
     * If your device's CE pin is active high, use spiSetCSPolarity() to change the polarity.
@@ -242,11 +291,13 @@ trait Rpio extends js.Object {
     * @param polarity
     */
   def spiSetCSPolarity(cePin: Double, polarity: Double): Unit = js.native
+  
   /**
     * Set the SPI clock speed with.
     * @param clockDivider: an even divisor of the base 250MHz rate ranging between 0 and 65536.
     */
   def spiSetClockDivider(clockDivider: Double): Unit = js.native
+  
   /**
     * Transfer data. Data is sent and received in 8-bit chunks via buffers which should be the same size.
     * @param txBuffer
@@ -254,23 +305,27 @@ trait Rpio extends js.Object {
     * @param txLength
     */
   def spiTransfer(txBuffer: Buffer, rxBuffer: Buffer, txLength: Double): Unit = js.native
+  
   /**
     * Send data and do not care about the data coming back.
     * @param txBuffer
     * @param txLength
     */
   def spiWrite(txBuffer: Buffer, txLength: Double): Unit = js.native
+  
   /**
     * Sleep for n microseconds.
     * @param n: number of microseconds to sleep
     */
   def usleep(n: Double): Unit = js.native
+  
   /**
     * Set the specified pin either high or low, using either the HIGH/LOW constants, or simply 1 or 0.
     * @param pin
     * @param value
     */
   def write(pin: Double, value: Double): Unit = js.native
+  
   /**
     * Write length bits to pin from buffer as fast as possible. If length isn't specified it defaults to buffer.length.
     * @param pin
@@ -279,6 +334,7 @@ trait Rpio extends js.Object {
     */
   def writebuf(pin: Double, buffer: Buffer): Unit = js.native
   def writebuf(pin: Double, buffer: Buffer, length: Double): Unit = js.native
+  
   /**
     * Write control settings to the pad control for group. Uses the same defines as above for .readpad().
     * @param group
@@ -286,4 +342,3 @@ trait Rpio extends js.Object {
     */
   def writepad(group: Double, control: Double): Unit = js.native
 }
-

@@ -5,11 +5,12 @@ import typings.mobx.anon.Enumerable
 import typings.mobx.decoratorsMod.BabelDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx/lib/internal", "namedActionDecorator")
 @js.native
 object namedActionDecorator extends js.Object {
+  
   def apply(name: String): js.Function3[
     /* target */ js.Any, 
     /* prop */ js.Any, 
@@ -17,4 +18,3 @@ object namedActionDecorator extends js.Object {
     Unit | Configurable | Enumerable
   ] = js.native
 }
-

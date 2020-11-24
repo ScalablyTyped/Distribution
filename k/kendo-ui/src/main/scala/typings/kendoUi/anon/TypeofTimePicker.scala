@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.ui.TimePickerOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofTimePicker
   extends Instantiable1[/* element */ Element, TimePicker]
      with Instantiable2[/* element */ Element, /* options */ TimePickerOptions, TimePicker] {
-  var fn: TimePicker = js.native
+  
   def extend(proto: js.Object): TimePicker = js.native
+  
+  var fn: TimePicker = js.native
 }
-

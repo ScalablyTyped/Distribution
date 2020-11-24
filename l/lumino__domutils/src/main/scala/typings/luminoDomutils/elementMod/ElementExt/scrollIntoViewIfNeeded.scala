@@ -3,11 +3,12 @@ package typings.luminoDomutils.elementMod.ElementExt
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/domutils/types/element", "ElementExt.scrollIntoViewIfNeeded")
 @js.native
 object scrollIntoViewIfNeeded extends js.Object {
+  
   /**
     * Vertically scroll an element into view if needed.
     *
@@ -26,4 +27,3 @@ object scrollIntoViewIfNeeded extends js.Object {
     */
   def apply(area: Element, element: Element): Unit = js.native
 }
-

@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.tooltipMod.TooltipProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "Tooltip")
+@JSImport("reactstrap/lib", "Tooltip")
 @js.native
-class Tooltip[T] ()
+class Tooltip ()
   extends Component[TooltipProps, js.Object, js.Any]
-

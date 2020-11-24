@@ -9,11 +9,12 @@ import typings.twilioSync.synclistMod.SyncListImpl
 import typings.twilioSync.syncmapMod.SyncMapImpl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio-sync", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * @class Client
     * @classdesc
@@ -38,6 +39,18 @@ object mod extends js.Object {
     def this(fpaToken: String) = this()
     def this(fpaToken: String, options: js.Any) = this()
   }
+  /* static members */
+  @js.native
+  object SyncClient extends js.Object {
+    
+    /**
+      * Current version of Sync client.
+      * @name Client#version
+      * @type String
+      * @readonly
+      */
+    def version: js.Any = js.native
+  }
   
   /**
     * @class
@@ -58,6 +71,12 @@ object mod extends js.Object {
     extends typings.twilioSync.syncdocumentMod.SyncDocument {
     def this(syncDocumentImpl: SyncDocumentImpl) = this()
   }
+  /* static members */
+  @js.native
+  object SyncDocument extends js.Object {
+    
+    def `type`: String = js.native
+  }
   
   /**
     * @class
@@ -77,6 +96,12 @@ object mod extends js.Object {
   class SyncList protected ()
     extends typings.twilioSync.synclistMod.SyncList {
     def this(syncListImpl: SyncListImpl) = this()
+  }
+  /* static members */
+  @js.native
+  object SyncList extends js.Object {
+    
+    def `type`: String = js.native
   }
   
   /**
@@ -121,6 +146,12 @@ object mod extends js.Object {
     extends typings.twilioSync.syncmapMod.SyncMap {
     def this(syncMapImpl: SyncMapImpl) = this()
   }
+  /* static members */
+  @js.native
+  object SyncMap extends js.Object {
+    
+    def `type`: String = js.native
+  }
   
   /**
     * @class
@@ -163,40 +194,10 @@ object mod extends js.Object {
     def this(fpaToken: String) = this()
     def this(fpaToken: String, options: js.Any) = this()
   }
-  
-  /* static members */
-  @js.native
-  object SyncClient extends js.Object {
-    /**
-      * Current version of Sync client.
-      * @name Client#version
-      * @type String
-      * @readonly
-      */
-    def version: js.Any = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object SyncDocument extends js.Object {
-    def `type`: String = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object SyncList extends js.Object {
-    def `type`: String = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object SyncMap extends js.Object {
-    def `type`: String = js.native
-  }
-  
   /* static members */
   @js.native
   object default extends js.Object {
+    
     /**
       * Current version of Sync client.
       * @name Client#version
@@ -205,6 +206,4 @@ object mod extends js.Object {
       */
     def version: js.Any = js.native
   }
-  
 }
-

@@ -3,7 +3,7 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjSelectOption.
@@ -21,6 +21,7 @@ trait nlobjSelectOption
   * @return
   */
 Instantiable0[js.Any] {
+  
   /**
     * return internal ID for select option
     * @return {string}
@@ -32,6 +33,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getId(): String = js.native
+  
   /**
     * return display value for select option.
     * @return {string}
@@ -44,4 +46,3 @@ Instantiable0[js.Any] {
     */
   def getText(): String = js.native
 }
-

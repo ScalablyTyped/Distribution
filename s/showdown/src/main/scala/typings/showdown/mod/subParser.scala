@@ -2,11 +2,12 @@ package typings.showdown.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("showdown", "subParser")
 @js.native
 object subParser extends js.Object {
+  
   /**
     * Get a registered subParser.
     *
@@ -25,4 +26,3 @@ object subParser extends js.Object {
     */
   def apply(name: String, func: SubParser_): Unit = js.native
 }
-

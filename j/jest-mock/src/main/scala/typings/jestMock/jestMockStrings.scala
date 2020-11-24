@@ -4,9 +4,49 @@ import typings.jestMock.mod.MockFunctionMetadataType
 import typings.jestMock.mod.MockFunctionResultType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jestMockStrings {
+  
+  @scala.inline
+  def array: array = "array".asInstanceOf[array]
+  
+  @scala.inline
+  def collection: collection = "collection".asInstanceOf[collection]
+  
+  @scala.inline
+  def constant: constant = "constant".asInstanceOf[constant]
+  
+  @scala.inline
+  def function: function = "function".asInstanceOf[function]
+  
+  @scala.inline
+  def get: get = "get".asInstanceOf[get]
+  
+  @scala.inline
+  def incomplete: incomplete = "incomplete".asInstanceOf[incomplete]
+  
+  @scala.inline
+  def `null`: `null` = "null".asInstanceOf[`null`]
+  
+  @scala.inline
+  def `object`: `object` = "object".asInstanceOf[`object`]
+  
+  @scala.inline
+  def regexp: regexp = "regexp".asInstanceOf[regexp]
+  
+  @scala.inline
+  def `return`: `return` = "return".asInstanceOf[`return`]
+  
+  @scala.inline
+  def set: set = "set".asInstanceOf[set]
+  
+  @scala.inline
+  def `throw`: `throw` = "throw".asInstanceOf[`throw`]
+  
+  @scala.inline
+  def undefined: undefined = "undefined".asInstanceOf[undefined]
+  
   @js.native
   sealed trait array extends MockFunctionMetadataType
   
@@ -45,32 +85,4 @@ object jestMockStrings {
   
   @js.native
   sealed trait undefined extends MockFunctionMetadataType
-  
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def collection: collection = "collection".asInstanceOf[collection]
-  @scala.inline
-  def constant: constant = "constant".asInstanceOf[constant]
-  @scala.inline
-  def function: function = "function".asInstanceOf[function]
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
-  @scala.inline
-  def incomplete: incomplete = "incomplete".asInstanceOf[incomplete]
-  @scala.inline
-  def `null`: `null` = "null".asInstanceOf[`null`]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
-  @scala.inline
-  def regexp: regexp = "regexp".asInstanceOf[regexp]
-  @scala.inline
-  def `return`: `return` = "return".asInstanceOf[`return`]
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
-  @scala.inline
-  def `throw`: `throw` = "throw".asInstanceOf[`throw`]
-  @scala.inline
-  def undefined: undefined = "undefined".asInstanceOf[undefined]
 }
-

@@ -10,15 +10,15 @@ Router middleware for koa. Provides RESTful resource routing.
 | ------------------ | :-------------: |
 | Full name          | @koa/router |
 | Keywords           | koa, middleware, route, router |
-| # releases         | 8 |
-| # dependents       | 28 |
-| # downloads        | 196977 |
+| # releases         | 18 |
+| # dependents       | 133 |
+| # downloads        | 1810219 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/router)
 - [Bugs](https://github.com/koajs/router/issues)
-- [Repository](https://github.com/koajs/koa-router)
+- [Repository](https://github.com/koajs/router)
 - [Npm](https://www.npmjs.com/package/%40koa%2Frouter)
     
 

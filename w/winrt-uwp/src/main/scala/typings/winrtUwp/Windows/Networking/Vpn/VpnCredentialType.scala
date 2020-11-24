@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.Vpn
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait VpnCredentialType extends js.Object
-
 /** Specifies the types of credentials that can be requested by the VPN platform. */
 @JSGlobal("Windows.Networking.Vpn.VpnCredentialType")
 @js.native
 object VpnCredentialType extends js.Object {
+  
   /** Represents a credential type of a protected certificate. */
   @js.native
   sealed trait protectedCertificate extends VpnCredentialType
@@ -38,6 +38,4 @@ object VpnCredentialType extends js.Object {
   /** Represents a password change. The current password, new password, and a confirmation of the new password will be collected. */
   @js.native
   sealed trait usernamePasswordChange extends VpnCredentialType
-  
 }
-

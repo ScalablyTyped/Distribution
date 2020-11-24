@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** These are the possible values for {@link GlobalTransferCommandArgument.Operation} . */
 /* Rewritten from type alias, can be one of: 
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait TransferCommandOperation extends js.Object
-
 object TransferCommandOperation {
+  
   /**
     * Copy the source to the target folder.
     *
@@ -24,9 +24,11 @@ object TransferCommandOperation {
     */
   @scala.inline
   def COPY: `0` = 0.asInstanceOf[`0`]
+  
   /** Create a link in the target folder. The link's target is the source object. */
   @scala.inline
   def LINK: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * Move the source to the target folder.
     *
@@ -36,4 +38,3 @@ object TransferCommandOperation {
   @scala.inline
   def MOVE: `1` = 1.asInstanceOf[`1`]
 }
-

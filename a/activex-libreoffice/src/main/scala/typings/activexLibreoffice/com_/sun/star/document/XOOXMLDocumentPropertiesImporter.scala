@@ -5,11 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.embed.XStorage
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to import the document properties from OOXML format */
 @js.native
 trait XOOXMLDocumentPropertiesImporter extends XInterface {
+  
   /**
     * allows to import the document properties from OOXML format
     *
@@ -26,8 +27,8 @@ trait XOOXMLDocumentPropertiesImporter extends XInterface {
     */
   def importProperties(xSource: XStorage, xDocumentProperties: XDocumentProperties): Unit = js.native
 }
-
 object XOOXMLDocumentPropertiesImporter {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -38,20 +39,23 @@ object XOOXMLDocumentPropertiesImporter {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), importProperties = js.Any.fromFunction2(importProperties), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XOOXMLDocumentPropertiesImporter]
   }
+  
   @scala.inline
   implicit class XOOXMLDocumentPropertiesImporterOps[Self <: XOOXMLDocumentPropertiesImporter] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setImportProperties(value: (XStorage, XDocumentProperties) => Unit): Self = this.set("importProperties", js.Any.fromFunction2(value))
   }
-  
 }
-

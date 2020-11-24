@@ -5,9 +5,8 @@ import typings.materialUiCore.tablePaginationTablePaginationMod.TablePaginationP
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/core", "TablePagination")
 @js.native
 object TablePagination extends TopLevel[ComponentType[TablePaginationProps]]
-

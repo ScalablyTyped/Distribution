@@ -2,10 +2,11 @@ package typings.videoJs.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Call extends js.Object {
+  
   /**
     * Returns an array containing everything that has been logged to the history.
     *
@@ -16,18 +17,20 @@ trait Call extends js.Object {
     * @return
     */
   def apply(): js.Array[_] = js.native
+  
   /**
     * Clears the internal history tracking, but does not prevent further history
     * tracking.
     */
   def clear(): Unit = js.native
+  
   /**
     * Disable history tracking if it is currently enabled.
     */
   def disable(): Unit = js.native
+  
   /**
     * Enable history tracking if it is currently disabled.
     */
   def enable(): Unit = js.native
 }
-

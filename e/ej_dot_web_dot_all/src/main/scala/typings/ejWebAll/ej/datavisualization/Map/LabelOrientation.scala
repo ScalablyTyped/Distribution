@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Map
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LabelOrientation extends js.Object
-
 @JSGlobal("ej.datavisualization.Map.LabelOrientation")
 @js.native
 object LabelOrientation extends js.Object {
+  
   //specifies the horizontal position
   @js.native
   sealed trait Horizontal extends LabelOrientation
@@ -17,6 +17,4 @@ object LabelOrientation extends js.Object {
   //specifies the vertical position
   @js.native
   sealed trait Vertical extends LabelOrientation
-  
 }
-

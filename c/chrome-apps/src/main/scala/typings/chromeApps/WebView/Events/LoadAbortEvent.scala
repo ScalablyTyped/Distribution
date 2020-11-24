@@ -4,7 +4,7 @@ import typings.chromeApps.chrome.integer
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fired when a top-level load has aborted without committing.
@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait LoadAbortEvent extends Event {
+  
   /**
     * Unique chrome.integer ID for the type of abort.
     * Note that this ID is `not` guaranteed to
@@ -27,8 +28,10 @@ trait LoadAbortEvent extends Event {
     * You must not act based upon this specific chrome.integer.
     */
   var code: integer = js.native
+  
   /** Whether the load was top-level or in a subframe. */
   var isTopLevel: Boolean = js.native
+  
   /**
     * String indicating what type of abort occurred.
     * This string is `not` guaranteed to remain
@@ -38,7 +41,7 @@ trait LoadAbortEvent extends Event {
     * an error not listed here could be reported.
     */
   var reason: LoadAbortReason = js.native
+  
   /** Requested URL. */
   var url: String = js.native
 }
-

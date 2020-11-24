@@ -4,11 +4,12 @@ import typings.angularCompiler.aotCompilerMod.NgAnalyzeModulesHost
 import typings.angularCompiler.aotCompilerMod.NgAnalyzedFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compiler", "analyzeFile")
 @js.native
 object analyzeFile extends js.Object {
+  
   def apply(
     host: NgAnalyzeModulesHost,
     staticSymbolResolver: typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver,
@@ -16,4 +17,3 @@ object analyzeFile extends js.Object {
     fileName: String
   ): NgAnalyzedFile = js.native
 }
-

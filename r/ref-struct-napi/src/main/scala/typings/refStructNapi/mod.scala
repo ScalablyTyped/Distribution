@@ -8,11 +8,18 @@ import typings.node.Buffer
 import typings.refNapi.mod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ref-struct-napi", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def apply(): StructType = js.native
+  def apply(fields: js.UndefOr[scala.Nothing], opt: js.Object): StructType = js.native
+  def apply(fields: js.Array[_]): StructType = js.native
+  def apply(fields: js.Object): StructType = js.native
+  def apply(fields: js.Object, opt: js.Object): StructType = js.native
+  
   /**
     * This is the `constructor` of the Struct type that gets returned.
     *
@@ -30,12 +37,13 @@ object mod extends js.Object {
   Instantiable1[(/* arg */ Buffer) | (/* data */ js.Object), js.Any]
        with Instantiable0[js.Any]
        with Instantiable2[/* arg */ Buffer, /* data */ js.Object, js.Any] {
-    var fields: StringDictionary[typings.refStructNapi.anon.Type] = js.native
+    
     def apply(): js.Any = js.native
     /** Pass it an existing Buffer instance to use that as the backing buffer. */
     def apply(arg: Buffer): js.Any = js.native
     def apply(arg: Buffer, data: js.Object): js.Any = js.native
     def apply(data: js.Object): js.Any = js.native
+    
     /**
       * Adds a new field to the struct instance with the given name and type.
       * Note that this function will throw an Error if any instances of the struct
@@ -50,12 +58,7 @@ object mod extends js.Object {
       * beginning, before any instances are created.
       */
     def defineProperty(name: String, `type`: Type): Unit = js.native
+    
+    var fields: StringDictionary[typings.refStructNapi.anon.Type] = js.native
   }
-  
-  def apply(): StructType = js.native
-  def apply(fields: js.UndefOr[scala.Nothing], opt: js.Object): StructType = js.native
-  def apply(fields: js.Array[_]): StructType = js.native
-  def apply(fields: js.Object): StructType = js.native
-  def apply(fields: js.Object, opt: js.Object): StructType = js.native
 }
-

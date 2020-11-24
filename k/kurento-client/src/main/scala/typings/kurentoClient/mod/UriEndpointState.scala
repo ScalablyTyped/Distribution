@@ -1,0 +1,23 @@
+package typings.kurentoClient.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.kurentoClient.kurentoClientStrings.STOP
+  - typings.kurentoClient.kurentoClientStrings.START
+  - typings.kurentoClient.kurentoClientStrings.PAUSE
+*/
+trait UriEndpointState extends js.Object
+object UriEndpointState {
+  
+  @scala.inline
+  def PAUSE: typings.kurentoClient.kurentoClientStrings.PAUSE = "PAUSE".asInstanceOf[typings.kurentoClient.kurentoClientStrings.PAUSE]
+  
+  @scala.inline
+  def START: typings.kurentoClient.kurentoClientStrings.START = "START".asInstanceOf[typings.kurentoClient.kurentoClientStrings.START]
+  
+  @scala.inline
+  def STOP: typings.kurentoClient.kurentoClientStrings.STOP = "STOP".asInstanceOf[typings.kurentoClient.kurentoClientStrings.STOP]
+}

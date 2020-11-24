@@ -2,9 +2,46 @@ package typings.reactRecaptcha
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactRecaptchaStrings {
+  
+  @scala.inline
+  def audio: audio = "audio".asInstanceOf[audio]
+  
+  @scala.inline
+  def bottomleft: bottomleft = "bottomleft".asInstanceOf[bottomleft]
+  
+  @scala.inline
+  def bottomright: bottomright = "bottomright".asInstanceOf[bottomright]
+  
+  @scala.inline
+  def compact: compact = "compact".asInstanceOf[compact]
+  
+  @scala.inline
+  def dark: dark = "dark".asInstanceOf[dark]
+  
+  @scala.inline
+  def explicit: explicit = "explicit".asInstanceOf[explicit]
+  
+  @scala.inline
+  def image: image = "image".asInstanceOf[image]
+  
+  @scala.inline
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @scala.inline
+  def invisible: invisible = "invisible".asInstanceOf[invisible]
+  
+  @scala.inline
+  def light: light = "light".asInstanceOf[light]
+  
+  @scala.inline
+  def normal: normal = "normal".asInstanceOf[normal]
+  
+  @scala.inline
+  def onload: onload = "onload".asInstanceOf[onload]
+  
   @js.native
   sealed trait audio extends js.Object
   
@@ -40,30 +77,4 @@ object reactRecaptchaStrings {
   
   @js.native
   sealed trait onload extends js.Object
-  
-  @scala.inline
-  def audio: audio = "audio".asInstanceOf[audio]
-  @scala.inline
-  def bottomleft: bottomleft = "bottomleft".asInstanceOf[bottomleft]
-  @scala.inline
-  def bottomright: bottomright = "bottomright".asInstanceOf[bottomright]
-  @scala.inline
-  def compact: compact = "compact".asInstanceOf[compact]
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
-  @scala.inline
-  def explicit: explicit = "explicit".asInstanceOf[explicit]
-  @scala.inline
-  def image: image = "image".asInstanceOf[image]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def invisible: invisible = "invisible".asInstanceOf[invisible]
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def onload: onload = "onload".asInstanceOf[onload]
 }
-

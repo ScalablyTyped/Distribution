@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XServiceDisplayName
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** offers spell checking functionality. */
 @js.native
@@ -21,8 +21,8 @@ trait SpellChecker
      with XInitialization
      with XComponent
      with XServiceDisplayName
-
 object SpellChecker {
+  
   @scala.inline
   def apply(
     Locales: SafeArray[Locale],
@@ -45,4 +45,3 @@ object SpellChecker {
     __obj.asInstanceOf[SpellChecker]
   }
 }
-

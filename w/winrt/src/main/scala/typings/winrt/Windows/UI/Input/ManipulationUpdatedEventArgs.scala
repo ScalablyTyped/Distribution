@@ -4,12 +4,12 @@ import typings.winrt.Windows.Devices.Input.PointerDeviceType
 import typings.winrt.Windows.Foundation.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ManipulationUpdatedEventArgs extends IManipulationUpdatedEventArgs
-
 object ManipulationUpdatedEventArgs {
+  
   @scala.inline
   def apply(
     cumulative: ManipulationDelta,
@@ -22,4 +22,3 @@ object ManipulationUpdatedEventArgs {
     __obj.asInstanceOf[ManipulationUpdatedEventArgs]
   }
 }
-

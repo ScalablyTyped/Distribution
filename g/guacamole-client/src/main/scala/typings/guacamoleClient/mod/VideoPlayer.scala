@@ -4,17 +4,17 @@ import typings.guacamoleClient.guacCommonMod.Mimetype
 import typings.std.MimeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "VideoPlayer")
 @js.native
 class VideoPlayer ()
   extends typings.guacamoleClient.videoPlayerMod.VideoPlayer
-
 /* static members */
 @JSImport("guacamole-client", "VideoPlayer")
 @js.native
 object VideoPlayer extends js.Object {
+  
   /**
     * Returns an instance of Guacamole.VideoPlayer providing support for the given
     * video format. If support for the given video format is not available, null
@@ -34,6 +34,7 @@ object VideoPlayer extends js.Object {
     layer: typings.guacamoleClient.visibleLayerMod.VisibleLayer,
     mimetype: MimeType
   ): typings.guacamoleClient.videoPlayerMod.VideoPlayer | Null = js.native
+  
   /**
     * Returns a list of all mimetypes supported by any built-in
     * Guacamole.VideoPlayer, in rough order of priority. Beware that only the core
@@ -44,6 +45,7 @@ object VideoPlayer extends js.Object {
     * excluding any parameters.
     */
   def getSupportedTypes(): js.Array[Mimetype] = js.native
+  
   /**
     * Determines whether the given mimetype is supported by any built-in
     * implementation of Guacamole.VideoPlayer, and thus will be properly handled
@@ -53,4 +55,3 @@ object VideoPlayer extends js.Object {
     */
   def isSupportedType(mimetype: MimeType): Boolean = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.cognitoidentityserviceproviderMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "CognitoIdentityServiceProvider")
 @js.native
@@ -14,4 +14,3 @@ class CognitoIdentityServiceProvider ()
   extends typings.awsSdk.allMod.CognitoIdentityServiceProvider {
   def this(options: ClientConfiguration) = this()
 }
-

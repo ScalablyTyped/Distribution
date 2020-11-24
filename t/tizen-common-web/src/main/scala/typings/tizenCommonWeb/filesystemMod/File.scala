@@ -10,114 +10,11 @@ import typings.tizenCommonWeb.tizenMod.ErrorCallback
 import typings.tizenCommonWeb.tizenMod.SuccessCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait File extends js.Object {
-  /**
-    * The timestamp when a file is first created in the filesystem.
-    * This timestamp is equivalent to the timestamp when a call to createFile() succeeds.
-    * If the platform does not support this attribute, it will
-    * be ***null***.
-    * It is unspecified and platform-dependent if the creation
-    * timestamp changes when a file is moved.
-    * @note `deprecated` 5.0
-    */
-  val created: js.UndefOr[Date] = js.native
-  /**
-    * The size of this file, in bytes.
-    * If an attempt to read this attribute for a directory is made, ***undefined*** is returned. To retrieve the number of files and directories contained in the directory, use the `length` attribute.
-    * @note `deprecated` 5.0
-    */
-  val fileSize: Double = js.native
-  /**
-    * The full path of a file.
-    * It begins with the name of the root containing the file,
-    * and including the name of the file or directory itself.
-    * For instance, if the RockawayBeach.mp3 file is located at music/ramones/volume1/, then the `fullPath` is music/ramones/volume1/RockawayBeach.mp3.
-    * For a directory, if the volume1 directory is located at music/ramones/, then the `fullPath` is music/ramones/volume1.
-    * For the special case of the root itself, if the root is music, then the `fullPath` is music.
-    * The `fullPath` is always equal to path + name.
-    * @note `deprecated` 5.0
-    */
-  val fullPath: String = js.native
-  /**
-    * The flag indicating whether it is a directory.
-    * This attribute can have the following values:
-    *
-    *   - ***true*** if this handle is a directory
-    *   - ***false*** if this handle is a file
-    *
-    * @note `deprecated` 5.0
-    */
-  val isDirectory: Boolean = js.native
-  /**
-    * The flag indicating whether it is a file.
-    * This attribute can have the following values:
-    *
-    *   - ***true*** if this handle is a file
-    *   - ***false*** if this handle is a directory
-    *
-    * @note `deprecated` 5.0
-    */
-  val isFile: Boolean = js.native
-  /**
-    * The number of files and directories contained in a file handle.
-    * If an attempt to read this attribute for a file is made, ***undefined*** is returned. To retrieve the size of a file, use the `fileSize` attribute.
-    * @note `deprecated` 5.0
-    */
-  val length: Double = js.native
-  /**
-    * The timestamp when the most recent modification is made to a file, usually when the last write operation succeeds.
-    * Opening a file for reading does not change the modification timestamp.
-    * If the platform does not support this attribute, it will be ***null***.
-    * It is unspecified and platform-dependent if the modified
-    * timestamp changes when a file is moved.
-    * @note `deprecated` 5.0
-    */
-  val modified: js.UndefOr[Date] = js.native
-  /**
-    * The file name after excluding the root name and any path components.
-    * This is the name of this file, excluding the root name and any other path components.
-    * For example, if a file is located at
-    * music/ramones/volume1/RockawayBeach.mp3, the `name`  is "RockawayBeach.mp3".
-    * For example, if a directory is located at music/ramones/volume1, the
-    * `name`  is be "volume1".
-    * For the special case of the root itself, the `name`  is an empty string.
-    * @note `deprecated` 5.0
-    */
-  val name: String = js.native
-  /**
-    * The parent directory handle.
-    * This attribute is set to ***null*** if there is no parent directory. This also implies that this directory represents a root location.
-    * @note `deprecated` 5.0
-    */
-  val parent: js.UndefOr[File] = js.native
-  /**
-    * The path of a file after excluding its file name.
-    * It begins with the name of the root containing the file, followed by the path, including the directory containing the file, but excluding the file name.
-    * Except in some special cases of the File representing the root itself, the last
-    * character is always "/".
-    * For example, if a file is located at music/ramones/volume1/RockawayBeach.mp3,
-    * the path is music/ramones/volume1/.
-    * For example, if a directory is located at music/ramones/volume1, the path is
-    * music/ramones/.
-    * For the virtual roots, the path is same as the name of the virtual root.
-    * For example, if the root is music, then the path is music. If the root is documents, then the path is documents.
-    * @note `deprecated` 5.0
-    */
-  val path: String = js.native
-  /**
-    * The file/directory access state in the filesystem.
-    * This attribute is set to:
-    *
-    *   - ***true*** - if object has read-only access at its location.
-    *   - ***false*** - if object has write access at its location.
-    *
-    * This attribute represents the actual state of a file or directory in the filesystem. Its value is not affected by the mode used in FileSystemManager.resolve() that was used to create the `File` object from which this `File` object was obtained.
-    * @note `deprecated` 5.0
-    */
-  val readOnly: Boolean = js.native
+  
   /**
     * Copies (and overwrites if possible and specified) a file or a
     *        directory from a specified location to another specified location.
@@ -163,6 +60,7 @@ trait File extends js.Object {
     onsuccess: SuccessCallback,
     onerror: ErrorCallback
   ): Unit = js.native
+  
   /**
     * Creates a new directory.
     * A new directory will be created relative to the current
@@ -181,6 +79,7 @@ trait File extends js.Object {
     * @throw WebAPIException with error type IOError, InvalidValuesError, TypeMismatchError, SecurityError, UnknownError
     */
   def createDirectory(dirPath: String): File = js.native
+  
   /**
     * Creates a empty new file in a specified location that is relative to the directory indicated by current `File` object's `path` attribute.
     * The use of "." or ".." in path components is not supported. This operation can only be performed on file handlers that represent a directory (that is, `isDirectory` == ***true***).
@@ -196,6 +95,18 @@ trait File extends js.Object {
     * @throw WebAPIException with error type IOError, InvalidValuesError, TypeMismatchError, SecurityError, UnknownError
     */
   def createFile(relativeFilePath: String): File = js.native
+  
+  /**
+    * The timestamp when a file is first created in the filesystem.
+    * This timestamp is equivalent to the timestamp when a call to createFile() succeeds.
+    * If the platform does not support this attribute, it will
+    * be ***null***.
+    * It is unspecified and platform-dependent if the creation
+    * timestamp changes when a file is moved.
+    * @note `deprecated` 5.0
+    */
+  val created: js.UndefOr[Date] = js.native
+  
   /**
     * Deletes a specified directory and directory tree if specified.
     * This method attempts to asynchronously delete a directory or directory tree under the current directory.
@@ -230,6 +141,7 @@ trait File extends js.Object {
   ): Unit = js.native
   def deleteDirectory(directoryPath: String, recursive: Boolean, onsuccess: SuccessCallback): Unit = js.native
   def deleteDirectory(directoryPath: String, recursive: Boolean, onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
+  
   /**
     * Deletes a specified file.
     * This function attempts to asynchronously delete a file under the current directory.
@@ -253,6 +165,55 @@ trait File extends js.Object {
   def deleteFile(filePath: String, onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
   def deleteFile(filePath: String, onsuccess: SuccessCallback): Unit = js.native
   def deleteFile(filePath: String, onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
+  
+  /**
+    * The size of this file, in bytes.
+    * If an attempt to read this attribute for a directory is made, ***undefined*** is returned. To retrieve the number of files and directories contained in the directory, use the `length` attribute.
+    * @note `deprecated` 5.0
+    */
+  val fileSize: Double = js.native
+  
+  /**
+    * The full path of a file.
+    * It begins with the name of the root containing the file,
+    * and including the name of the file or directory itself.
+    * For instance, if the RockawayBeach.mp3 file is located at music/ramones/volume1/, then the `fullPath` is music/ramones/volume1/RockawayBeach.mp3.
+    * For a directory, if the volume1 directory is located at music/ramones/, then the `fullPath` is music/ramones/volume1.
+    * For the special case of the root itself, if the root is music, then the `fullPath` is music.
+    * The `fullPath` is always equal to path + name.
+    * @note `deprecated` 5.0
+    */
+  val fullPath: String = js.native
+  
+  /**
+    * The flag indicating whether it is a directory.
+    * This attribute can have the following values:
+    *
+    *   - ***true*** if this handle is a directory
+    *   - ***false*** if this handle is a file
+    *
+    * @note `deprecated` 5.0
+    */
+  val isDirectory: Boolean = js.native
+  
+  /**
+    * The flag indicating whether it is a file.
+    * This attribute can have the following values:
+    *
+    *   - ***true*** if this handle is a file
+    *   - ***false*** if this handle is a directory
+    *
+    * @note `deprecated` 5.0
+    */
+  val isFile: Boolean = js.native
+  
+  /**
+    * The number of files and directories contained in a file handle.
+    * If an attempt to read this attribute for a file is made, ***undefined*** is returned. To retrieve the size of a file, use the `fileSize` attribute.
+    * @note `deprecated` 5.0
+    */
+  val length: Double = js.native
+  
   /**
     * Lists all files in a directory.
     * The list of files is passed as a File[] in onsuccess() and contains directories and files. However, the directories "." and ".." must not be returned. Each `File` object that is part of the array must inherit all the access rights (that is, one of the values in FileMode) from the `File` object in which this method is invoked.
@@ -276,6 +237,17 @@ trait File extends js.Object {
   def listFiles(onsuccess: FileArraySuccessCallback, onerror: js.UndefOr[scala.Nothing], filter: FileFilter): Unit = js.native
   def listFiles(onsuccess: FileArraySuccessCallback, onerror: ErrorCallback): Unit = js.native
   def listFiles(onsuccess: FileArraySuccessCallback, onerror: ErrorCallback, filter: FileFilter): Unit = js.native
+  
+  /**
+    * The timestamp when the most recent modification is made to a file, usually when the last write operation succeeds.
+    * Opening a file for reading does not change the modification timestamp.
+    * If the platform does not support this attribute, it will be ***null***.
+    * It is unspecified and platform-dependent if the modified
+    * timestamp changes when a file is moved.
+    * @note `deprecated` 5.0
+    */
+  val modified: js.UndefOr[Date] = js.native
+  
   /**
     * Moves (and overwrites if possible and specified) a file or a directory from a specified location to another.
     *  This operation is different from instantiating copyTo() and then deleting the original file, as on certain platforms, this operation does not require extra disk space.
@@ -321,6 +293,19 @@ trait File extends js.Object {
     onsuccess: SuccessCallback,
     onerror: ErrorCallback
   ): Unit = js.native
+  
+  /**
+    * The file name after excluding the root name and any path components.
+    * This is the name of this file, excluding the root name and any other path components.
+    * For example, if a file is located at
+    * music/ramones/volume1/RockawayBeach.mp3, the `name`  is "RockawayBeach.mp3".
+    * For example, if a directory is located at music/ramones/volume1, the
+    * `name`  is be "volume1".
+    * For the special case of the root itself, the `name`  is an empty string.
+    * @note `deprecated` 5.0
+    */
+  val name: String = js.native
+  
   /**
     * Opens the file in the given mode supporting a specified encoding.
     * This operation is performed asynchronously. If the file is opened successfully, the onsuccess() method is invoked with a `FileStream` that can be used for reading and writing the file, depending on the mode. The returned `FileStream` instance includes a file pointer, which represents the current position in the file. The file pointer, by default, is at the start of the file, except in the case of opening a file in append ("a") mode, in which case the file pointer points to the end of the file.
@@ -420,6 +405,29 @@ trait File extends js.Object {
   def openStream_w(mode: w, onsuccess: FileStreamSuccessCallback, onerror: ErrorCallback): Unit = js.native
   @JSName("openStream")
   def openStream_w(mode: w, onsuccess: FileStreamSuccessCallback, onerror: ErrorCallback, encoding: String): Unit = js.native
+  
+  /**
+    * The parent directory handle.
+    * This attribute is set to ***null*** if there is no parent directory. This also implies that this directory represents a root location.
+    * @note `deprecated` 5.0
+    */
+  val parent: js.UndefOr[File] = js.native
+  
+  /**
+    * The path of a file after excluding its file name.
+    * It begins with the name of the root containing the file, followed by the path, including the directory containing the file, but excluding the file name.
+    * Except in some special cases of the File representing the root itself, the last
+    * character is always "/".
+    * For example, if a file is located at music/ramones/volume1/RockawayBeach.mp3,
+    * the path is music/ramones/volume1/.
+    * For example, if a directory is located at music/ramones/volume1, the path is
+    * music/ramones/.
+    * For the virtual roots, the path is same as the name of the virtual root.
+    * For example, if the root is music, then the path is music. If the root is documents, then the path is documents.
+    * @note `deprecated` 5.0
+    */
+  val path: String = js.native
+  
   /**
     * Reads the content of a file as a DOMString.
     * If the operation is successfully executed, the onsuccess() method is invoked and a DOMString is passed as input parameter that represents the file content in the format determined by the `encoding` parameter.
@@ -444,6 +452,19 @@ trait File extends js.Object {
   def readAsText(onsuccess: FileStringSuccessCallback, onerror: js.UndefOr[scala.Nothing], encoding: String): Unit = js.native
   def readAsText(onsuccess: FileStringSuccessCallback, onerror: ErrorCallback): Unit = js.native
   def readAsText(onsuccess: FileStringSuccessCallback, onerror: ErrorCallback, encoding: String): Unit = js.native
+  
+  /**
+    * The file/directory access state in the filesystem.
+    * This attribute is set to:
+    *
+    *   - ***true*** - if object has read-only access at its location.
+    *   - ***false*** - if object has write access at its location.
+    *
+    * This attribute represents the actual state of a file or directory in the filesystem. Its value is not affected by the mode used in FileSystemManager.resolve() that was used to create the `File` object from which this `File` object was obtained.
+    * @note `deprecated` 5.0
+    */
+  val readOnly: Boolean = js.native
+  
   /**
     * Resolves an existing file or directory relative to the current directory this operation is performed on and returns a file handle for it.
     * The `filePath` is not allowed to contain the "." or ".." directory entries inside its value.
@@ -457,6 +478,7 @@ trait File extends js.Object {
     * @throw WebAPIException with error type TypeMismatchError, InvalidValuesError, IOError, NotFoundError, SecurityError, UnknownError
     */
   def resolve(filePath: String): File = js.native
+  
   /**
     * Returns a URI for a file to identify an entry (such as using it as the src attribute on an HTML img element).
     *        The URI has no specific expiration, it should be valid at least as long as the file exists.
@@ -475,4 +497,3 @@ trait File extends js.Object {
     */
   def toURI(): String = js.native
 }
-

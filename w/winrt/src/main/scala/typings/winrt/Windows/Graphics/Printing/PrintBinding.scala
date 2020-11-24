@@ -2,14 +2,14 @@ package typings.winrt.Windows.Graphics.Printing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrintBinding extends js.Object
-
 @JSGlobal("Windows.Graphics.Printing.PrintBinding")
 @js.native
 object PrintBinding extends js.Object {
+  
   @js.native
   sealed trait bale extends PrintBinding
   
@@ -60,6 +60,4 @@ object PrintBinding extends js.Object {
   
   @js.native
   sealed trait trim extends PrintBinding
-  
 }
-

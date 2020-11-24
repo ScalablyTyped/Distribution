@@ -2,7 +2,7 @@ package typings.twilioSync.servicesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @alias Twilsock
@@ -26,4 +26,3 @@ class Twilsock protected ()
   def this(token: String, productId: String) = this()
   def this(token: String, productId: String, options: js.Any) = this()
 }
-

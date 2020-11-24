@@ -12,7 +12,7 @@ fluent API library for set operations
 | Keywords           | venn, set, intersect, union |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 3556 |
+| # downloads        | 5007 |
 | # stars            | 0 |
 
 ## Links

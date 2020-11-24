@@ -5,17 +5,17 @@ import typings.officeUiFabricReact.ithemerulesMod.IThemeRules
 import typings.officeUiFabricReact.ithemeslotruleMod.IThemeSlotRule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator")
 @js.native
 class ThemeGenerator ()
   extends typings.officeUiFabricReact.mod.ThemeGenerator
-
 /* static members */
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator")
 @js.native
 object ThemeGenerator extends js.Object {
+  
   /**
     * Makes the rest of the code that's used for the load theme blob in the exported codepens of
     * both the older sharepoint-specific theme designer and the new theme designer. Takes in
@@ -32,6 +32,7 @@ object ThemeGenerator extends js.Object {
     * The first line is loadTheme instead of createTheme for the old sharepoint theme designer.
     */
   var _makeRemainingCode: js.Any = js.native
+  
   /**
     * Sets the given slot's color to the appropriate color, shading it if necessary.
     * Then, iterates through all other rules (that are this rule's dependents) to update them accordingly.
@@ -39,18 +40,21 @@ object ThemeGenerator extends js.Object {
     * If false, the rule it's inheriting from changed, so updated using asShade.
     */
   var _setSlot: js.Any = js.native
+  
   /**
     * Gets code-formatted load theme blob that can be copy and pasted.
     * Only used for the old theme designer, where loadTheme usage is acceptable,
     * unlike in the new theme designer.
     */
   def getThemeAsCode(slotRules: IThemeRules): js.Any = js.native
+  
   /**
     * Gets code-formatted load theme blob, specifically for the new theme designer,
     * aka.ms/themedesigner. Shouldn't use loadTheme like the old theme designer since it's deprecated.
     * We want to use the theme object from createTheme and use the Customizations.applySettings API instead.
     */
   def getThemeAsCodeWithCreateTheme(slotRules: IThemeRules): js.Any = js.native
+  
   /**
     * Gets the JSON-formatted blob that describes the theme, usable with the REST request endpoints:
     * ```
@@ -61,6 +65,7 @@ object ThemeGenerator extends js.Object {
     * ```
     */
   def getThemeAsJson(slotRules: IThemeRules): js.Any = js.native
+  
   /**
     * Gets the theme as a list of SASS variables that can be used in code
     * ```
@@ -70,6 +75,7 @@ object ThemeGenerator extends js.Object {
     * ```
     */
   def getThemeAsSass(slotRules: IThemeRules): js.Any = js.native
+  
   /**
     * Gets the theme formatted for PowerShell scripts
     * ```
@@ -81,6 +87,7 @@ object ThemeGenerator extends js.Object {
     * ```
     */
   def getThemeForPowerShell(slotRules: IThemeRules): js.Any = js.native
+  
   /**
     * Sets the color of each slot based on its rule. Slots that don't inherit must have a color already.
     * If this completes without error, then the theme is ready to use. (All slots will have a color.)
@@ -88,6 +95,7 @@ object ThemeGenerator extends js.Object {
     * Does not override colors of rules where isCustomized is true (i.e. doesn't override existing customizations).
     */
   def insureSlots(slotRules: IThemeRules, isInverted: Boolean): Unit = js.native
+  
   /**
     * Sets an IThemeSlotRule to the given color and cascades it to the rest of the theme, updating other IThemeSlotRules
     * in the theme that inherit from that color.
@@ -173,4 +181,3 @@ object ThemeGenerator extends js.Object {
     overwriteCustomColor: Boolean
   ): Unit = js.native
 }
-

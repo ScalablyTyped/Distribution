@@ -4,11 +4,16 @@ import typings.std.ReadonlySet
 import typings.typedoc.optionsOptionsMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc/dist/lib/utils/options/sources/typescript", JSImport.Namespace)
 @js.native
 object typescriptMod extends js.Object {
+  
+  val IGNORED: ReadonlySet[String] = js.native
+  
+  def addTSOptions(container: Options): Unit = js.native
+  
   /* Rewritten from type alias, can be one of: 
     - typings.typedoc.typedocStrings.out
     - typings.typedoc.typedocStrings.version
@@ -26,8 +31,4 @@ object typescriptMod extends js.Object {
     - typings.typedoc.typedocStrings.tsBuildInfoFile
   */
   trait IgnoredTsOptionKeys extends js.Object
-  
-  val IGNORED: ReadonlySet[String] = js.native
-  def addTSOptions(container: Options): Unit = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.agGrid.beansMod.Beans
 import typings.agGrid.rowContainerComponentMod.RowContainerComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ag-grid", "RowComp")
 @js.native
@@ -22,18 +22,24 @@ class RowComp protected ()
     useAnimationFrameForCreate: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("ag-grid", "RowComp")
 @js.native
 object RowComp extends js.Object {
+  
   var DETAIL_CELL_RENDERER: js.Any = js.native
+  
   var DETAIL_CELL_RENDERER_COMP_NAME: js.Any = js.native
+  
   var DOM_DATA_KEY_RENDERED_ROW: String = js.native
+  
   var FULL_WIDTH_CELL_RENDERER: js.Any = js.native
+  
   var GROUP_ROW_RENDERER: js.Any = js.native
+  
   var GROUP_ROW_RENDERER_COMP_NAME: js.Any = js.native
+  
   var LOADING_CELL_RENDERER: js.Any = js.native
+  
   var LOADING_CELL_RENDERER_COMP_NAME: js.Any = js.native
 }
-

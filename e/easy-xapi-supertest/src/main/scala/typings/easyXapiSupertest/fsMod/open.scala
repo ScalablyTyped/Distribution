@@ -3,11 +3,12 @@ package typings.easyXapiSupertest.fsMod
 import typings.easyXapiSupertest.NodeJS.ErrnoException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs", "open")
 @js.native
 object open extends js.Object {
+  
   def apply(path: String, flags: String): Unit = js.native
   def apply(path: String, flags: String, callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, _]): Unit = js.native
   def apply(path: String, flags: String, mode: String): Unit = js.native
@@ -25,4 +26,3 @@ object open extends js.Object {
     callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, _]
   ): Unit = js.native
 }
-

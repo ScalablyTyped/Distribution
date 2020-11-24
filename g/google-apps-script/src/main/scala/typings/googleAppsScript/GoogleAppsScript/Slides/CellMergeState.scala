@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Slides
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CellMergeState extends js.Object
-
 /**
   * The table cell merge states.
   */
 @JSGlobal("GoogleAppsScript.Slides.CellMergeState")
 @js.native
 object CellMergeState extends js.Object {
+  
   @js.native
   sealed trait HEAD extends CellMergeState
   
@@ -21,6 +21,4 @@ object CellMergeState extends js.Object {
   
   @js.native
   sealed trait NORMAL extends CellMergeState
-  
 }
-

@@ -9,9 +9,9 @@ Inline css into an html file.
 | ------------------ | :-------------: |
 | Full name          | inline-css |
 | Keywords           | inline, css, html, email |
-| # releases         | 10 |
-| # dependents       | 44 |
-| # downloads        | 1368517 |
+| # releases         | 9 |
+| # dependents       | 57 |
+| # downloads        | 1803788 |
 | # stars            | 13 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.titanium.global.Titanium.UI
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FILL behavior for UI layout.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Titanium.UI.FILL")
 @js.native
 object FILL extends TopLevel[String]
-

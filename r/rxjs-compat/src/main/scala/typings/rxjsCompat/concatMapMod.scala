@@ -2,11 +2,12 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/operators/concatMap", JSImport.Namespace)
 @js.native
 object concatMapMod extends js.Object {
+  
   def concatMap[T, R](
     project: js.Function2[
       /* value */ T, 
@@ -15,4 +16,3 @@ object concatMapMod extends js.Object {
     ]
   ): js.Any = js.native
 }
-

@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.AudioBufferSourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AudioBufferSourceNode")
 @js.native
@@ -14,7 +14,6 @@ class AudioBufferSourceNode protected ()
   def this(context: typings.std.BaseAudioContext) = this()
   def this(context: typings.std.BaseAudioContext, options: AudioBufferSourceOptions) = this()
 }
-
 @JSGlobal("AudioBufferSourceNode")
 @js.native
 object AudioBufferSourceNode
@@ -24,4 +23,3 @@ object AudioBufferSourceNode
       /* options */ AudioBufferSourceOptions, 
       typings.std.AudioBufferSourceNode
     ]
-

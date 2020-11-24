@@ -2,17 +2,17 @@ package typings.phaser.Phaser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BlendModes extends js.Object
-
 /**
   * Phaser Blend Modes.
   */
 @JSGlobal("Phaser.BlendModes")
 @js.native
 object BlendModes extends js.Object {
+  
   /**
     * Add blend mode. For Canvas and WebGL.
     * Where both shapes overlap the color is determined by adding color values.
@@ -213,6 +213,4 @@ object BlendModes extends js.Object {
     */
   @js.native
   sealed trait XOR extends BlendModes
-  
 }
-

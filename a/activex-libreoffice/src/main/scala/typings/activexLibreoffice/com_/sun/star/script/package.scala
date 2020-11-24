@@ -2,11 +2,13 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object script {
+  
   /** makes it possible to generate the adapters from specific interfaces to the interface {@link XAllListener} . */
   type AllListenerAdapter = typings.activexLibreoffice.com_.sun.star.script.XAllListenerAdapterService
+  
   /**
     * is thrown by an attacher if an adapter service cannot create the appropriate adapter.
     * @see com.sun.star.script.XAllListenerAdapterService
@@ -14,6 +16,7 @@ package object script {
     * @see com.sun.star.script.XEventAttacherManager
     */
   type CannotCreateAdapterException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * This service provides a widening converter converting from one type to another, if possible.
     *
@@ -37,6 +40,7 @@ package object script {
     * each element of the source sequence can be converted to an element of the destination sequence.
     */
   type Converter = typings.activexLibreoffice.com_.sun.star.script.XTypeConverter
+  
   /**
     * service that any scripting engine must implement.
     *
@@ -45,6 +49,7 @@ package object script {
     * @deprecated Deprecated
     */
   type Engine = typings.activexLibreoffice.com_.sun.star.script.XEngine
+  
   /**
     * factory service that allows construction of {@link Invocation} objects.
     *
@@ -54,6 +59,7 @@ package object script {
     * The adapter has to support {@link com.sun.star.script.XInvocation} . The adapter may also support {@link com.sun.star.script.XInvocation2} .
     */
   type Invocation = typings.activexLibreoffice.com_.sun.star.lang.XSingleServiceFactory
+  
   /**
     * Provides functionality to create an adapter that supports (a) special interface type(s) and maps calls to the interface's methods to an invocation
     * interface.
@@ -65,6 +71,7 @@ package object script {
     * com.sun.star.script.XInvocationAdapterFactory2} .
     */
   type InvocationAdapterFactory = typings.activexLibreoffice.com_.sun.star.script.XInvocationAdapterFactory2
+  
   /**
     * service is implementation of a {@link JavaScript} interpreter.
     *
@@ -72,11 +79,13 @@ package object script {
     * @deprecated Deprecated
     */
   type JavaScript = typings.activexLibreoffice.com_.sun.star.script.Engine
+  
   /**
     * is thrown when an operation on a unloaded library is attempted which requires the library being loaded.
     * @since OOo 3.0
     */
   type LibraryNotLoadedException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+  
   /**
     * Provides documentation for UNO services
     * @since LibreOffice 5.1

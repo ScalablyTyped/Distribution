@@ -4,17 +4,21 @@ import typings.vexflow.anon.Bpm
 import typings.vexflow.anon.GetContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StaveTempo extends StaveModifier {
+  
   def draw(stave: Stave, shift_x: Double): StaveTempo = js.native
+  
   def setShiftX(x: Double): StaveTempo = js.native
+  
   def setShiftY(y: Double): StaveTempo = js.native
+  
   def setTempo(tempo: Bpm): StaveTempo = js.native
 }
-
 object StaveTempo {
+  
   @scala.inline
   def apply(
     addEndModifier: () => Unit,
@@ -36,26 +40,32 @@ object StaveTempo {
     val __obj = js.Dynamic.literal(addEndModifier = js.Any.fromFunction0(addEndModifier), addModifier = js.Any.fromFunction0(addModifier), addToStave = js.Any.fromFunction2(addToStave), addToStaveEnd = js.Any.fromFunction2(addToStaveEnd), draw = js.Any.fromFunction2(draw), getCategory = js.Any.fromFunction0(getCategory), getPadding = js.Any.fromFunction1(getPadding), getPosition = js.Any.fromFunction0(getPosition), getWidth = js.Any.fromFunction0(getWidth), makeSpacer = js.Any.fromFunction1(makeSpacer), placeGlyphOnLine = js.Any.fromFunction3(placeGlyphOnLine), setPadding = js.Any.fromFunction1(setPadding), setShiftX = js.Any.fromFunction1(setShiftX), setShiftY = js.Any.fromFunction1(setShiftY), setTempo = js.Any.fromFunction1(setTempo))
     __obj.asInstanceOf[StaveTempo]
   }
+  
   @scala.inline
   implicit class StaveTempoOps[Self <: StaveTempo] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDraw(value: (Stave, Double) => StaveTempo): Self = this.set("draw", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSetShiftX(value: Double => StaveTempo): Self = this.set("setShiftX", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetShiftY(value: Double => StaveTempo): Self = this.set("setShiftY", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetTempo(value: Bpm => StaveTempo): Self = this.set("setTempo", js.Any.fromFunction1(value))
   }
-  
 }
-

@@ -9,15 +9,16 @@ Date module for WordPress.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/date |
-| Keywords           | wordpress, date |
-| # releases         | 25 |
-| # dependents       | 6 |
-| # downloads        | 129208 |
+| Keywords           | wordpress, gutenberg, date |
+| # releases         | 20 |
+| # dependents       | 8 |
+| # downloads        | 398955 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/date/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
+- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fdate)
     
 

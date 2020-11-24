@@ -11,8 +11,8 @@ Cordova plugin to return the version number of the current app
 | Full name          | cordova-plugin-app-version |
 | Keywords           | cordova, ecosystem:cordova, app, version, appversion, plugin |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 768466 |
+| # dependents       | 6 |
+| # downloads        | 947039 |
 | # stars            | 5 |
 
 ## Links

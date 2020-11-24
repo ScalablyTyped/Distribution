@@ -5,11 +5,12 @@ import typings.soap.wssecurityMod.IWSSecurityOptions
 import typings.soap.wssecuritycertMod.IWSSecurityCertOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("soap/lib/security", JSImport.Namespace)
 @js.native
 object securityMod extends js.Object {
+  
   @js.native
   class BasicAuthSecurity protected ()
     extends typings.soap.basicAuthSecurityMod.BasicAuthSecurity {
@@ -31,10 +32,42 @@ object securityMod extends js.Object {
     def this(key: String, cert: Buffer) = this()
     def this(key: Buffer, cert: String) = this()
     def this(key: Buffer, cert: Buffer) = this()
-    def this(key: String, cert: String, defaults: js.Any) = this()
-    def this(key: String, cert: Buffer, defaults: js.Any) = this()
-    def this(key: Buffer, cert: String, defaults: js.Any) = this()
-    def this(key: Buffer, cert: Buffer, defaults: js.Any) = this()
+    def this(key: String, cert: String, ca: String) = this()
+    def this(key: String, cert: String, ca: js.Any) = this()
+    def this(key: String, cert: String, ca: js.Array[_]) = this()
+    def this(key: String, cert: String, ca: Buffer) = this()
+    def this(key: String, cert: Buffer, ca: String) = this()
+    def this(key: String, cert: Buffer, ca: js.Any) = this()
+    def this(key: String, cert: Buffer, ca: js.Array[_]) = this()
+    def this(key: String, cert: Buffer, ca: Buffer) = this()
+    def this(key: Buffer, cert: String, ca: String) = this()
+    def this(key: Buffer, cert: String, ca: js.Any) = this()
+    def this(key: Buffer, cert: String, ca: js.Array[_]) = this()
+    def this(key: Buffer, cert: String, ca: Buffer) = this()
+    def this(key: Buffer, cert: Buffer, ca: String) = this()
+    def this(key: Buffer, cert: Buffer, ca: js.Any) = this()
+    def this(key: Buffer, cert: Buffer, ca: js.Array[_]) = this()
+    def this(key: Buffer, cert: Buffer, ca: Buffer) = this()
+    def this(key: String, cert: String, ca: js.UndefOr[scala.Nothing], defaults: js.Any) = this()
+    def this(key: String, cert: String, ca: String, defaults: js.Any) = this()
+    def this(key: String, cert: String, ca: js.Any, defaults: js.Any) = this()
+    def this(key: String, cert: String, ca: js.Array[_], defaults: js.Any) = this()
+    def this(key: String, cert: String, ca: Buffer, defaults: js.Any) = this()
+    def this(key: String, cert: Buffer, ca: js.UndefOr[scala.Nothing], defaults: js.Any) = this()
+    def this(key: String, cert: Buffer, ca: String, defaults: js.Any) = this()
+    def this(key: String, cert: Buffer, ca: js.Any, defaults: js.Any) = this()
+    def this(key: String, cert: Buffer, ca: js.Array[_], defaults: js.Any) = this()
+    def this(key: String, cert: Buffer, ca: Buffer, defaults: js.Any) = this()
+    def this(key: Buffer, cert: String, ca: js.UndefOr[scala.Nothing], defaults: js.Any) = this()
+    def this(key: Buffer, cert: String, ca: String, defaults: js.Any) = this()
+    def this(key: Buffer, cert: String, ca: js.Any, defaults: js.Any) = this()
+    def this(key: Buffer, cert: String, ca: js.Array[_], defaults: js.Any) = this()
+    def this(key: Buffer, cert: String, ca: Buffer, defaults: js.Any) = this()
+    def this(key: Buffer, cert: Buffer, ca: js.UndefOr[scala.Nothing], defaults: js.Any) = this()
+    def this(key: Buffer, cert: Buffer, ca: String, defaults: js.Any) = this()
+    def this(key: Buffer, cert: Buffer, ca: js.Any, defaults: js.Any) = this()
+    def this(key: Buffer, cert: Buffer, ca: js.Array[_], defaults: js.Any) = this()
+    def this(key: Buffer, cert: Buffer, ca: Buffer, defaults: js.Any) = this()
   }
   
   @js.native
@@ -66,6 +99,4 @@ object securityMod extends js.Object {
     def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any) = this()
     def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any, options: IWSSecurityCertOptions) = this()
   }
-  
 }
-

@@ -2,9 +2,10 @@ package typings.ltijs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object providerMod {
+  
   type OnConnectCallback = js.Function4[
     /* connection */ typings.ltijs.idTokenMod.IdToken, 
     /* request */ typings.express.mod.Request_[
@@ -17,5 +18,6 @@ package object providerMod {
     /* next */ typings.express.mod.NextFunction, 
     typings.express.mod.Response_[js.Any] | scala.Unit
   ]
+  
   type ServerAddonFunction = js.Function1[/* app */ typings.express.mod.Express, scala.Unit]
 }

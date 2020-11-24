@@ -2,17 +2,17 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ProtectionSelectionMode extends js.Object
-
 /**
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ProtectionSelectionMode")
 @js.native
 object ProtectionSelectionMode extends js.Object {
+  
   /**
     * Selection is not allowed for all cells.
     *
@@ -33,6 +33,4 @@ object ProtectionSelectionMode extends js.Object {
     */
   @js.native
   sealed trait unlocked extends ProtectionSelectionMode
-  
 }
-

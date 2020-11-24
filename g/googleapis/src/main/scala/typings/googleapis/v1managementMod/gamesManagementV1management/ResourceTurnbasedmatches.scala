@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesManagement/v1management", "gamesManagement_v1management.Resource$Turnbasedmatches")
 @js.native
 class ResourceTurnbasedmatches protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gamesManagement.turnBasedMatches.reset
     * @desc Reset all turn-based match data for a user. This method is only
@@ -41,6 +43,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gamesManagement.turnBasedMatches.resetForAllPlayers
     * @desc Deletes turn-based matches where the only match participants are
@@ -71,4 +74,3 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

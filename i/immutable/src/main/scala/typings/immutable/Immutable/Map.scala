@@ -5,14 +5,11 @@ import typings.immutable.Immutable.Collection.Keyed
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Map[K, V] extends Keyed[K, V] {
-  /**
-    * The number of entries in this Map.
-    */
-  val size: Double = js.native
+  
   /**
     * The yin to `asMutable`'s yang. Because it applies to mutable collections,
     * this operation is *mutable* and may return itself (though may not
@@ -26,6 +23,7 @@ trait Map[K, V] extends Keyed[K, V] {
     * @see `Map#asMutable`
     */
   def asImmutable(): this.type = js.native
+  
   /**
     * Another way to avoid creation of intermediate Immutable maps is to create
     * a mutable copy of this collection. Mutable copies *always* return `this`,
@@ -45,6 +43,7 @@ trait Map[K, V] extends Keyed[K, V] {
     * @see `Map#asImmutable`
     */
   def asMutable(): this.type = js.native
+  
   /**
     * Returns a new Map containing no keys or values.
     *
@@ -58,6 +57,7 @@ trait Map[K, V] extends Keyed[K, V] {
     * Note: `clear` can be used in `withMutations`.
     */
   def clear(): this.type = js.native
+  
   /**
     * Returns a new Map which excludes this `key`.
     *
@@ -81,6 +81,7 @@ trait Map[K, V] extends Keyed[K, V] {
     * @alias remove
     */
   def delete(key: K): this.type = js.native
+  
   /**
     * Returns a new Map which excludes the provided `keys`.
     *
@@ -97,6 +98,7 @@ trait Map[K, V] extends Keyed[K, V] {
     * @alias removeAll
     */
   def deleteAll(keys: Iterable[K]): this.type = js.native
+  
   /**
     * Returns a new Map having removed the value at this `keyPath`. If any keys
     * in `keyPath` do not exist, no change will occur.
@@ -106,6 +108,7 @@ trait Map[K, V] extends Keyed[K, V] {
     * @alias removeIn
     */
   def deleteIn(keyPath: Iterable[_]): this.type = js.native
+  
   /**
     * Returns a new Map with only the entries for which the `predicate`
     * function returns true.
@@ -120,7 +123,9 @@ trait Map[K, V] extends Keyed[K, V] {
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean],
     context: js.Any
   ): Map[K, F] = js.native
+  
   def merge[C](collections: StringDictionary[C]*): Map[K | String, V | C] = js.native
+  
   /**
     * Like `merge()`, but when two Collections conflict, it merges them as well,
     * recursing deeply through the nested data.
@@ -145,6 +150,7 @@ trait Map[K, V] extends Keyed[K, V] {
     * Note: `mergeDeep` can be used in `withMutations`.
     */
   def mergeDeep(collections: ((Iterable[js.Tuple2[K, V]]) | StringDictionary[V])*): this.type = js.native
+  
   /**
     * A combination of `updateIn` and `mergeDeep`, returning a new Map, but
     * performing the deep merge at a point arrived at by following the keyPath.
@@ -158,6 +164,7 @@ trait Map[K, V] extends Keyed[K, V] {
     * Note: `mergeDeepIn` can be used in `withMutations`.
     */
   def mergeDeepIn(keyPath: Iterable[_], collections: js.Any*): this.type = js.native
+  
   /**
     * Like `mergeDeep()`, but when two non-Collections conflict, it uses the
     * `merger` function to determine the resulting value.
@@ -180,6 +187,7 @@ trait Map[K, V] extends Keyed[K, V] {
     merger: js.Function3[/* oldVal */ js.Any, /* newVal */ js.Any, /* key */ js.Any, _],
     collections: ((Iterable[js.Tuple2[K, V]]) | StringDictionary[V])*
   ): this.type = js.native
+  
   /**
     * A combination of `updateIn` and `merge`, returning a new Map, but
     * performing the merge at a point arrived at by following the keyPath.
@@ -193,6 +201,7 @@ trait Map[K, V] extends Keyed[K, V] {
     * Note: `mergeIn` can be used in `withMutations`.
     */
   def mergeIn(keyPath: Iterable[_], collections: js.Any*): this.type = js.native
+  
   /**
     * Like `merge()`, `mergeWith()` returns a new Map resulting from merging
     * the provided Collections (or JS objects) into this Map, but uses the
@@ -215,6 +224,7 @@ trait Map[K, V] extends Keyed[K, V] {
     merger: js.Function3[/* oldVal */ V, /* newVal */ V, /* key */ K, V],
     collections: ((Iterable[js.Tuple2[K, V]]) | StringDictionary[V])*
   ): this.type = js.native
+  
   /**
     * Returns a new Map resulting from merging the provided Collections
     * (or JS objects) into this Map. In other words, this takes each entry of
@@ -238,9 +248,13 @@ trait Map[K, V] extends Keyed[K, V] {
     */
   @JSName("merge")
   def merge_KCVC[KC, VC](collections: (Iterable[js.Tuple2[KC, VC]])*): Map[K | KC, V | VC] = js.native
+  
   def remove(key: K): this.type = js.native
+  
   def removeAll(keys: Iterable[K]): this.type = js.native
+  
   def removeIn(keyPath: Iterable[_]): this.type = js.native
+  
   // Persistent changes
   /**
     * Returns a new Map also containing the new key, value pair. If an equivalent
@@ -264,6 +278,7 @@ trait Map[K, V] extends Keyed[K, V] {
     * Note: `set` can be used in `withMutations`.
     */
   def set(key: K, value: V): this.type = js.native
+  
   // Deep persistent changes
   /**
     * Returns a new Map having set `value` at this `keyPath`. If any keys in
@@ -332,6 +347,12 @@ trait Map[K, V] extends Keyed[K, V] {
     * Note: `setIn` can be used in `withMutations`.
     */
   def setIn(keyPath: Iterable[_], value: js.Any): this.type = js.native
+  
+  /**
+    * The number of entries in this Map.
+    */
+  val size: Double = js.native
+  
   /**
     * Returns a new Map having updated the value at this `key` with the return
     * value of calling `updater` with the existing value.
@@ -436,6 +457,7 @@ trait Map[K, V] extends Keyed[K, V] {
     */
   def update(key: K, notSetValue: V, updater: js.Function1[/* value */ V, V]): this.type = js.native
   def update(key: K, updater: js.Function1[/* value */ V, V]): this.type = js.native
+  
   /**
     * Returns a new Map having applied the `updater` to the entry found at the
     * keyPath.
@@ -514,6 +536,7 @@ trait Map[K, V] extends Keyed[K, V] {
     */
   def updateIn(keyPath: Iterable[_], notSetValue: js.Any, updater: js.Function1[/* value */ js.Any, _]): this.type = js.native
   def updateIn(keyPath: Iterable[_], updater: js.Function1[/* value */ js.Any, _]): this.type = js.native
+  
   /**
     * Returns true if this is a mutable copy (see `asMutable()`) and mutative
     * alterations have been applied.
@@ -521,6 +544,7 @@ trait Map[K, V] extends Keyed[K, V] {
     * @see `Map#asMutable`
     */
   def wasAltered(): Boolean = js.native
+  
   // Transient changes
   /**
     * Every time you call one of the above functions, a new immutable Map is
@@ -552,4 +576,3 @@ trait Map[K, V] extends Keyed[K, V] {
     */
   def withMutations(mutator: js.Function1[/* mutable */ this.type, _]): this.type = js.native
 }
-

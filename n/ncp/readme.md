@@ -11,8 +11,8 @@ Asynchronous recursive file copy utility.
 | Full name          | ncp |
 | Keywords           | cli, copy |
 | # releases         | 1 |
-| # dependents       | 2097 |
-| # downloads        | 97761675 |
+| # dependents       | 2550 |
+| # downloads        | 120505269 |
 | # stars            | 73 |
 
 ## Links

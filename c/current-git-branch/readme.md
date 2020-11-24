@@ -11,8 +11,8 @@ A tool to check if files are added in a git repository
 | Full name          | current-git-branch |
 | Keywords           | is, git, added, HEAD, repo, is-git, exists |
 | # releases         | 2 |
-| # dependents       | 28 |
-| # downloads        | 339853 |
+| # dependents       | 42 |
+| # downloads        | 753995 |
 | # stars            | 0 |
 
 ## Links

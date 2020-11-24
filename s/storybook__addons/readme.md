@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addons
 
-Typings are for version 5.3.19
+Typings are for version 6.1.2
 
 ## Library description:
 Storybook addons store
@@ -10,9 +10,9 @@ Storybook addons store
 | ------------------ | :-------------: |
 | Full name          | @storybook/addons |
 | Keywords           | storybook |
-| # releases         | 425 |
-| # dependents       | 245 |
-| # downloads        | 53356330 |
+| # releases         | 569 |
+| # dependents       | 369 |
+| # downloads        | 108102446 |
 | # stars            | 0 |
 
 ## Links

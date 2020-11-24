@@ -10,9 +10,9 @@ Generates Cucumber HTML reports in three different themes
 | ------------------ | :-------------: |
 | Full name          | cucumber-html-reporter |
 | Keywords           | cucumber, html, cucumber-html-reporter, html report, json to html |
-| # releases         | 11 |
-| # dependents       | 39 |
-| # downloads        | 4156471 |
+| # releases         | 7 |
+| # dependents       | 50 |
+| # downloads        | 5362397 |
 | # stars            | 5 |
 
 ## Links

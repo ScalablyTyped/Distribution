@@ -3,12 +3,12 @@ package typings.winrt.Windows.Networking.NetworkOperators
 import typings.winrt.Windows.Devices.Sms.ISmsMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NetworkOperatorNotificationEventDetails extends INetworkOperatorNotificationEventDetails
-
 object NetworkOperatorNotificationEventDetails {
+  
   @scala.inline
   def apply(
     encodingType: Double,
@@ -22,4 +22,3 @@ object NetworkOperatorNotificationEventDetails {
     __obj.asInstanceOf[NetworkOperatorNotificationEventDetails]
   }
 }
-

@@ -5,11 +5,12 @@ import typings.esfxEquatable.distMod.EqualityComparison
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@esfx/collections-linkedlist", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class LinkedList[T] ()
     extends typings.esfxCollectionsLinkedlist.distMod.LinkedList[T] {
@@ -27,6 +28,4 @@ object mod extends js.Object {
     extends typings.esfxCollectionsLinkedlist.distMod.LinkedListNode[T] {
     def this(value: T) = this()
   }
-  
 }
-

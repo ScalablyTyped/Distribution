@@ -2,17 +2,17 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ContentType extends js.Object
-
 /**
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.ContentType")
 @js.native
 object ContentType extends js.Object {
+  
   /**
     * Comment content containing mentions.
     *
@@ -26,6 +26,4 @@ object ContentType extends js.Object {
     */
   @js.native
   sealed trait plain extends ContentType
-  
 }
-

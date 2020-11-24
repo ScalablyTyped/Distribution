@@ -3,46 +3,19 @@ package typings.vscode.mod
 import typings.vscode.anon.Dark
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A panel that contains a webview.
   */
 @js.native
 trait WebviewPanel extends js.Object {
+  
   /**
     * Whether the panel is active (focused by the user).
     */
   val active: Boolean = js.native
-  /**
-    * Icon for the panel shown in UI.
-    */
-  var iconPath: js.UndefOr[Uri | Dark] = js.native
-  /**
-    * Content settings for the webview panel.
-    */
-  val options: WebviewPanelOptions = js.native
-  /**
-    * Title of the panel shown in UI.
-    */
-  var title: String = js.native
-  /**
-    * Editor position of the panel. This property is only set if the webview is in
-    * one of the editor view columns.
-    */
-  val viewColumn: js.UndefOr[ViewColumn] = js.native
-  /**
-    * Identifies the type of the webview panel, such as `'markdown.preview'`.
-    */
-  val viewType: String = js.native
-  /**
-    * Whether the panel is visible.
-    */
-  val visible: Boolean = js.native
-  /**
-    * [`Webview`](#Webview) belonging to the panel.
-    */
-  val webview: Webview = js.native
+  
   /**
     * Dispose of the webview panel.
     *
@@ -51,6 +24,12 @@ trait WebviewPanel extends js.Object {
     * fire the `onDispose` event.
     */
   def dispose(): js.Any = js.native
+  
+  /**
+    * Icon for the panel shown in UI.
+    */
+  var iconPath: js.UndefOr[Uri | Dark] = js.native
+  
   /**
     * Fired when the panel's view state changes.
     */
@@ -66,6 +45,7 @@ trait WebviewPanel extends js.Object {
     thisArgs: js.Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
+  
   /**
     * Fired when the panel is disposed.
     *
@@ -82,6 +62,12 @@ trait WebviewPanel extends js.Object {
   ): Disposable = js.native
   def onDidDispose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): Disposable = js.native
   def onDidDispose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  
+  /**
+    * Content settings for the webview panel.
+    */
+  val options: WebviewPanelOptions = js.native
+  
   /**
     * Show the webview panel in a given column.
     *
@@ -95,5 +81,30 @@ trait WebviewPanel extends js.Object {
   def reveal(viewColumn: js.UndefOr[scala.Nothing], preserveFocus: Boolean): Unit = js.native
   def reveal(viewColumn: ViewColumn): Unit = js.native
   def reveal(viewColumn: ViewColumn, preserveFocus: Boolean): Unit = js.native
+  
+  /**
+    * Title of the panel shown in UI.
+    */
+  var title: String = js.native
+  
+  /**
+    * Editor position of the panel. This property is only set if the webview is in
+    * one of the editor view columns.
+    */
+  val viewColumn: js.UndefOr[ViewColumn] = js.native
+  
+  /**
+    * Identifies the type of the webview panel, such as `'markdown.preview'`.
+    */
+  val viewType: String = js.native
+  
+  /**
+    * Whether the panel is visible.
+    */
+  val visible: Boolean = js.native
+  
+  /**
+    * [`Webview`](#Webview) belonging to the panel.
+    */
+  val webview: Webview = js.native
 }
-

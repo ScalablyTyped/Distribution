@@ -10,9 +10,9 @@ Default registry in gulp 4.
 | ------------------ | :-------------: |
 | Full name          | undertaker-registry |
 | Keywords           | registry, tasks, undertaker, gulp |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 34 |
-| # downloads        | 27986462 |
+| # downloads        | 38176110 |
 | # stars            | 0 |
 
 ## Links

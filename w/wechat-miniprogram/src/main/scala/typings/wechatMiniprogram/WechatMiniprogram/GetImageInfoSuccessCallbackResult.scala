@@ -10,13 +10,16 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.right
 import typings.wechatMiniprogram.wechatMiniprogramStrings.up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GetImageInfoSuccessCallbackResult extends js.Object {
+  
   var errMsg: String = js.native
+  
   /** 图片原始高度，单位px。不考虑旋转。 */
   var height: Double = js.native
+  
   /** [拍照时设备方向](http://sylvana.net/jpegcrop/exif_orientation.html)
     *
     * 可选值：
@@ -31,17 +34,20 @@ trait GetImageInfoSuccessCallbackResult extends js.Object {
     *
     * 最低基础库： `1.9.90` */
   var orientation: up | `up-mirrored` | down | `down-mirrored` | `left-mirrored` | right | `right-mirrored` | left = js.native
+  
   /** 图片的本地路径 */
   var path: String = js.native
+  
   /** 图片格式
     *
     * 最低基础库： `1.9.90` */
   var `type`: String = js.native
+  
   /** 图片原始宽度，单位px。不考虑旋转。 */
   var width: Double = js.native
 }
-
 object GetImageInfoSuccessCallbackResult {
+  
   @scala.inline
   def apply(
     errMsg: String,
@@ -55,32 +61,40 @@ object GetImageInfoSuccessCallbackResult {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetImageInfoSuccessCallbackResult]
   }
+  
   @scala.inline
   implicit class GetImageInfoSuccessCallbackResultOps[Self <: GetImageInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOrientation(
       value: up | `up-mirrored` | down | `down-mirrored` | `left-mirrored` | right | `right-mirrored` | left
     ): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
   }
-  
 }
-

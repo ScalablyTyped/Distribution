@@ -2,12 +2,13 @@ package typings.seleniumWebdriver.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "FileDetector")
 @js.native
 /** @constructor */
 class FileDetector () extends js.Object {
+  
   /**
     * Handles the file specified by the given path, preparing it for use with
     * the current browser. If the path does not refer to a valid file, it will
@@ -25,4 +26,3 @@ class FileDetector () extends js.Object {
     */
   def handleFile(driver: WebDriver, path: String): js.Promise[String] = js.native
 }
-

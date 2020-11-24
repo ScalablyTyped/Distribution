@@ -13,16 +13,20 @@ import typings.mapboxGl.mapboxGlStrings.mouseup
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapbox-gl", "MapMouseEvent")
 @js.native
 class MapMouseEvent () extends MapboxEvent[MouseEvent] {
+  
   var defaultPrevented: Boolean = js.native
+  
   var lngLat: LngLat = js.native
+  
   var point: Point = js.native
+  
+  def preventDefault(): Unit = js.native
+  
   @JSName("type")
   var type_MapMouseEvent: mousedown | mouseup | click | dblclick | mousemove | mouseover | mouseenter | mouseleave | mouseout | contextmenu = js.native
-  def preventDefault(): Unit = js.native
 }
-

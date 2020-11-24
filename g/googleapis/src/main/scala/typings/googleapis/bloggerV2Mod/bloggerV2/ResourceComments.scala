@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/blogger/v2", "blogger_v2.Resource$Comments")
 @js.native
 class ResourceComments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * blogger.comments.get
     * @desc Gets one comment by id.
@@ -43,6 +45,7 @@ class ResourceComments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaComment]
   ): Unit = js.native
+  
   /**
     * blogger.comments.list
     * @desc Retrieves the comments for a blog, possibly filtered.
@@ -77,4 +80,3 @@ class ResourceComments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCommentList]
   ): Unit = js.native
 }
-

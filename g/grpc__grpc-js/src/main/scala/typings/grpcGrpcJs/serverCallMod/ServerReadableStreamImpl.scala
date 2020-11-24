@@ -6,7 +6,7 @@ import typings.node.Buffer
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.grpcGrpcJs.serverCallMod.ServerReadableStream because var conflicts: destroyed, readable. Inlined cancelled, metadata, getPeer, sendMetadata */ @JSImport("@grpc/grpc-js/build/src/server-call", "ServerReadableStreamImpl")
@@ -17,13 +17,18 @@ class ServerReadableStreamImpl[RequestType, ResponseType] protected () extends R
     metadata: Metadata,
     deserialize: Deserialize[RequestType]
   ) = this()
+  
   var call: js.Any = js.native
+  
   var cancelled: Boolean = js.native
+  
+  def deserialize(bytes: Buffer): RequestType = js.native
   @JSName("deserialize")
   var deserialize_Original: Deserialize[RequestType] = js.native
-  var metadata: Metadata = js.native
-  def deserialize(bytes: Buffer): RequestType = js.native
+  
   def getPeer(): String = js.native
+  
+  var metadata: Metadata = js.native
+  
   def sendMetadata(responseMetadata: Metadata): Unit = js.native
 }
-

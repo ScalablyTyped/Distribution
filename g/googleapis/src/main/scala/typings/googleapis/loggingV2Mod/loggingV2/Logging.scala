@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Stackdriver Logging API
@@ -27,15 +27,24 @@ import scala.scalajs.js.annotation._
 class Logging protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var billingAccounts: ResourceBillingaccounts = js.native
+  
   var context: APIRequestContext = js.native
+  
   var entries: ResourceEntries = js.native
+  
   var exclusions: ResourceExclusions = js.native
+  
   var folders: ResourceFolders = js.native
+  
   var logs: ResourceLogs = js.native
+  
   var monitoredResourceDescriptors: ResourceMonitoredresourcedescriptors = js.native
+  
   var organizations: ResourceOrganizations = js.native
+  
   var projects: ResourceProjects = js.native
+  
   var sinks: ResourceSinks = js.native
 }
-

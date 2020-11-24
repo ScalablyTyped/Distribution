@@ -3,11 +3,11 @@ package typings.roads.simpleRouterMod
 import typings.roads.roadMod.ResponseMiddleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SimpleRouter extends js.Object {
-  var _routes: js.Array[RouteDetails] = js.native
+  
   /**
     * Slightly non-standar roads middleware to execute the functions in this router when requests are received by the road
     * The first method is the routes to ensure that we can properly use this router once we loose the "this" value
@@ -23,6 +23,9 @@ trait SimpleRouter extends js.Object {
     request_headers: js.Object,
     next: ResponseMiddleware
   ): js.Promise[typings.roads.responseMod.default] = js.native
+  
+  var _routes: js.Array[RouteDetails] = js.native
+  
   /**
     * Adds a route to this router. The route is a function that will match the standard roads request signature.
     * It will be associated with one HTTP method, and one or many HTTP paths
@@ -33,6 +36,7 @@ trait SimpleRouter extends js.Object {
     */
   def addRoute(method: String, paths: String, fn: Route): Unit = js.native
   def addRoute(method: String, paths: js.Array[String], fn: Route): Unit = js.native
+  
   /**
     * Add an entire file worth of routes.
     *
@@ -45,6 +49,7 @@ trait SimpleRouter extends js.Object {
     */
   def addRouteFile(file_path: String): js.Promise[Unit] = js.native
   def addRouteFile(file_path: String, prefix: String): js.Promise[Unit] = js.native
+  
   /**
     * Assigns the middleware to the provided road
     *
@@ -52,4 +57,3 @@ trait SimpleRouter extends js.Object {
     */
   def applyMiddleware(road: typings.roads.roadMod.default): Unit = js.native
 }
-

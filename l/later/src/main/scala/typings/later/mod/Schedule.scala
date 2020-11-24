@@ -3,10 +3,11 @@ package typings.later.mod
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Schedule extends js.Object {
+  
   /**
     * Finds the next valid instance or instances of the current schedule,
     * optionally between a specified start and end date. Start date is
@@ -21,6 +22,7 @@ trait Schedule extends js.Object {
   def next(numberOfInst: Double, dateFrom: js.UndefOr[scala.Nothing], dateTo: Date): js.Array[Date] | Date = js.native
   def next(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
   def next(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
+  
   /**
     * Finds the next valid range or ranges of the current schedule,
     * optionally between a specified start and end date. Start date is
@@ -35,6 +37,7 @@ trait Schedule extends js.Object {
   def nextRange(numberOfInst: Double, dateFrom: js.UndefOr[scala.Nothing], dateTo: Date): js.Array[Date] | Date = js.native
   def nextRange(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
   def nextRange(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
+  
   /**
     * Finds the previous valid instance or instances of the current schedule,
     * optionally between a specified start and end date. Start date is
@@ -49,6 +52,7 @@ trait Schedule extends js.Object {
   def prev(numberOfInst: Double, dateFrom: js.UndefOr[scala.Nothing], dateTo: Date): js.Array[Date] | Date = js.native
   def prev(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
   def prev(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
+  
   /**
     * Finds the previous valid range or ranges of the current schedule,
     * optionally between a specified start and end date. Start date is
@@ -64,4 +68,3 @@ trait Schedule extends js.Object {
   def prevRange(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
   def prevRange(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
 }
-

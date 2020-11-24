@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Admin Reports API
@@ -28,11 +28,16 @@ import scala.scalajs.js.annotation._
 class Admin protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var activities: ResourceActivities = js.native
+  
   var channels: ResourceChannels = js.native
+  
   var context: APIRequestContext = js.native
+  
   var customerUsageReports: ResourceCustomerusagereports = js.native
+  
   var entityUsageReports: ResourceEntityusagereports = js.native
+  
   var userUsageReport: ResourceUserusagereport = js.native
 }
-

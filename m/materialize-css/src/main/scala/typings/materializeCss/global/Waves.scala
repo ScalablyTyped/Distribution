@@ -3,11 +3,12 @@ package typings.materializeCss.global
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Waves")
 @js.native
 object Waves extends js.Object {
+  
   /**
     * Attach Waves to an input element (or any element which doesn't
     * bubble mouseup/mousedown events).
@@ -16,4 +17,3 @@ object Waves extends js.Object {
     */
   def attach(element: Element): Unit = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for optimism
 
-Typings are for version 0.12.1
+Typings are for version 0.13.1
 
 ## Library description:
 Composable reactive caching with efficient invalidation.
@@ -10,9 +10,9 @@ Composable reactive caching with efficient invalidation.
 | ------------------ | :-------------: |
 | Full name          | optimism |
 | Keywords           | caching, cache, invalidation, reactive, reactivity, dependency, tracking, tracker, memoization |
-| # releases         | 31 |
-| # dependents       | 8 |
-| # downloads        | 52755208 |
+| # releases         | 28 |
+| # dependents       | 13 |
+| # downloads        | 69005281 |
 | # stars            | 0 |
 
 ## Links

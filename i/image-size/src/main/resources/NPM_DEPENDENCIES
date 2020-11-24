@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "image-size" : "0.8.3"
+      "image-size" : "0.9.3"
     }
   ],
   "test-dependencies" : [
     {
-      "image-size" : "0.8.3"
+      "image-size" : "0.9.3"
     }
   ],
   "compile-devDependencies" : [

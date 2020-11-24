@@ -3,11 +3,12 @@ package typings.xregexp.mod
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xregexp", "match")
 @js.native
 object `match` extends js.Object {
+  
   def apply(str: String, regex: RegExp): String | js.Array[String] | Null = js.native
   def apply(str: String, regex: RegExp, scope: MatchScope): String | js.Array[String] | Null = js.native
   def apply(str: String, regex: RegExp, scope: MatchScopeAll): js.Array[String] = js.native
@@ -39,4 +40,3 @@ object `match` extends js.Object {
     */
   def apply(str: String, regex: RegExp, scope: MatchScopeOne): String | Null = js.native
 }
-

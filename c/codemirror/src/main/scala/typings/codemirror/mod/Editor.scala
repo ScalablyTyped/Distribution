@@ -39,6 +39,7 @@ import typings.codemirror.codemirrorStrings.fixedGutter
 import typings.codemirror.codemirrorStrings.flattenSpans
 import typings.codemirror.codemirrorStrings.focus
 import typings.codemirror.codemirrorStrings.foldGutter
+import typings.codemirror.codemirrorStrings.fullScreen
 import typings.codemirror.codemirrorStrings.gutterClick
 import typings.codemirror.codemirrorStrings.gutterContextMenu
 import typings.codemirror.codemirrorStrings.gutters
@@ -104,12 +105,13 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Methods prefixed with doc. can, unless otherwise specified, be called both on CodeMirror (editor) instances and
   CodeMirror.Doc instances. Thus, the Editor interface extends Doc. **/
 @js.native
 trait Editor extends Doc {
+  
   /** Attach an additional keymap to the editor.
     This is mostly useful for add - ons that need to register some key handlers without trampling on the extraKeys option.
     Maps added in this way have a higher precedence than the extraKeys and keyMap options, and between them,
@@ -119,12 +121,14 @@ trait Editor extends Doc {
   def addKeyMap(map: String, bottom: Boolean): Unit = js.native
   def addKeyMap(map: KeyMap): Unit = js.native
   def addKeyMap(map: KeyMap, bottom: Boolean): Unit = js.native
+  
   /** Set a CSS class name for the given line.line can be a number or a line handle.
     where determines to which element this class should be applied, can can be one of "text" (the text element, which lies in front of the selection),
     "background"(a background element that will be behind the selection),
     or "wrap" (the wrapper node that wraps all of the line's elements, including gutter elements).
     class should be the name of the class to apply. */
   def addLineClass(line: js.Any, where: String, _class_ : String): LineHandle = js.native
+  
   /** Enable a highlighting overlay.This is a stateless mini - mode that can be used to add extra highlighting.
     For example, the search add - on uses it to highlight the term that's currently being searched.
     mode can be a mode spec or a mode object (an object with a token method). The options parameter is optional. If given, it should be an object.
@@ -132,6 +136,7 @@ trait Editor extends Doc {
     to override the styling of the base mode entirely, instead of the two being applied together. */
   def addOverlay(mode: js.Any): Unit = js.native
   def addOverlay(mode: js.Any, options: js.Any): Unit = js.native
+  
   /**
     * Places a DOM node above or below an editor and shrinks the editor to make room for the node.
     * When using the `after`, `before` or `replace` options, if the panel doesn't exists or has been removed, the value of the `position` option will be used as a fallback.
@@ -140,13 +145,16 @@ trait Editor extends Doc {
     */
   def addPanel(node: HTMLElement): Panel = js.native
   def addPanel(node: HTMLElement, options: ShowPanelOptions): Panel = js.native
+  
   /** Puts node, which should be an absolutely positioned DOM node, into the editor, positioned right below the given { line , ch } position.
     When scrollIntoView is true, the editor will ensure that the entire node is visible (if possible).
     To remove the widget again, simply use DOM methods (move it somewhere else, or call removeChild on its parent). */
   def addWidget(pos: Position, node: HTMLElement, scrollIntoView: Boolean): Unit = js.native
+  
   /** Wrap the code in the given range in a block comment. Will fall back to `lineComment` when no block comment style is defined for the mode. */
   def blockComment(from: Position, to: Position): Unit = js.native
   def blockComment(from: Position, to: Position, options: CommentOptions): Unit = js.native
+  
   /** Returns the position and dimensions of an arbitrary character. pos should be a { line , ch } object.
     If mode is "local", they will be relative to the top-left corner of the editable document.
     If it is "page" or not given, they are relative to the top-left corner of the page.
@@ -154,13 +162,16 @@ trait Editor extends Doc {
     rather than just the position that the cursor would have when it would sit at that position. */
   def charCoords(pos: Position): Right = js.native
   def charCoords(pos: Position, mode: CoordsMode): Right = js.native
+  
   /** Remove all gutter markers in the gutter with the given ID. */
   def clearGutter(gutterID: String): Unit = js.native
+  
   /** Given an { left , top } object , returns the { line , ch } position that corresponds to it.
     The optional mode parameter determines relative to what the coordinates are interpreted.
     It may be "window", "page" (the default), or "local". */
   def coordsChar(`object`: Top): Position = js.native
   def coordsChar(`object`: Top, mode: CoordsMode): Position = js.native
+  
   /** Returns an { left , top , bottom } object containing the coordinates of the cursor position.
     If mode is "local", they will be relative to the top-left corner of the editable document.
     If it is "page" or not given, they are relative to the top-left corner of the page.
@@ -172,38 +183,52 @@ trait Editor extends Doc {
   def cursorCoords(where: Null, mode: CoordsMode): Left = js.native
   def cursorCoords(where: Position): Left = js.native
   def cursorCoords(where: Position, mode: CoordsMode): Left = js.native
+  
   /** Returns the pixel width of an 'x' in the default font for the editor.
     (Note that for non - monospace fonts , this is mostly useless, and even for monospace fonts, non - ascii characters might have a different width). */
   def defaultCharWidth(): Double = js.native
+  
   /** Returns the line height of the default font for the editor. */
   def defaultTextHeight(): Double = js.native
+  
   def endOperation(): Unit = js.native
+  
   /** Runs the command with the given name on the editor. */
   def execCommand(name: String): Unit = js.native
+  
   /** Used to find the target position for horizontal cursor motion.start is a { line , ch } object,
     amount an integer(may be negative), and unit one of the string "char", "column", or "word".
     Will return a position that is produced by moving amount times the distance specified by unit.
     When visually is true , motion in right - to - left text will be visual rather than logical.
     When the motion was clipped by hitting the end or start of the document, the returned value will have a hitSide property set to true. */
   def findPosH(start: Position, amount: Double, unit: String, visually: Boolean): Ch = js.native
+  
   /** Similar to findPosH , but used for vertical motion.unit may be "line" or "page".
     The other arguments and the returned value have the same interpretation as they have in findPosH. */
   def findPosV(start: Position, amount: Double, unit: String): Ch = js.native
+  
   /** Returns the start and end of the 'word' (the stretch of letters, whitespace, or punctuation) at the given position. */
   def findWordAt(pos: Position): Range = js.native
+  
   /** Give the editor focus. */
   def focus(): Unit = js.native
+  
   /** Retrieve the currently active document from an editor. */
   def getDoc(): Doc = js.native
+  
   /** Fetches the DOM node that contains the editor gutters. */
   def getGutterElement(): HTMLElement = js.native
+  
   /** Returns the hidden textarea used to read input. */
   def getInputField(): HTMLTextAreaElement = js.native
+  
   /** This is similar to getTokenAt, but collects all tokens for a given line into an array. */
   def getLineTokens(line: Double): js.Array[Token] = js.native
   def getLineTokens(line: Double, precise: Boolean): js.Array[Token] = js.native
+  
   /** Gets the inner mode at a given position. This will return the same as getMode for simple modes, but will return an inner mode for nesting modes (such as htmlmixed). */
   def getModeAt(pos: Position): js.Any = js.native
+  
   @JSName("getOption")
   def getOption_addModeClass(option: addModeClass): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
@@ -242,6 +267,8 @@ trait Editor extends Doc {
   def getOption_flattenSpans(option: flattenSpans): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
   def getOption_foldGutter(option: foldGutter): js.UndefOr[Boolean] = js.native
+  @JSName("getOption")
+  def getOption_fullScreen(option: fullScreen): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
   def getOption_gutters(option: gutters): js.UndefOr[js.Array[String]] = js.native
   @JSName("getOption")
@@ -327,31 +354,40 @@ trait Editor extends Doc {
   def getOption_workDelay(option: workDelay): js.UndefOr[Double] = js.native
   @JSName("getOption")
   def getOption_workTime(option: workTime): js.UndefOr[Double] = js.native
+  
   /** Get an { left , top , width , height , clientWidth , clientHeight } object that represents the current scroll position, the size of the scrollable area,
     and the size of the visible area(minus scrollbars). */
   def getScrollInfo(): ScrollInfo = js.native
+  
   /** Returns the DOM node that is responsible for the scrolling of the editor. */
   def getScrollerElement(): HTMLElement = js.native
+  
   /** Returns the mode's parser state, if any, at the end of the given line number.
     If no line number is given, the state at the end of the document is returned.
     This can be useful for storing parsing errors in the state, or getting other kinds of contextual information for a line. */
   def getStateAfter(): js.Any = js.native
   def getStateAfter(line: Double): js.Any = js.native
+  
   /** Retrieves information about the token the current mode found before the given position (a {line, ch} object). */
   def getTokenAt(pos: Position): Token = js.native
   def getTokenAt(pos: Position, precise: Boolean): Token = js.native
+  
   /** This is a (much) cheaper version of getTokenAt useful for when you just need the type of the token at a given position,
     and no other information. Will return null for unstyled tokens, and a string, potentially containing multiple
     space-separated style names, otherwise. */
   def getTokenTypeAt(pos: Position): String = js.native
+  
   /** Returns a { from , to } object indicating the start (inclusive) and end (exclusive) of the currently rendered part of the document.
     In big documents, when most content is scrolled out of view, CodeMirror will only render the visible part, and a margin around it.
     See also the viewportChange event. */
   def getViewport(): To = js.native
+  
   /** Returns the DOM node that represents the editor, and controls its size. Remove this from your tree to delete an editor instance. */
   def getWrapperElement(): HTMLElement = js.native
+  
   /** Tells you whether the editor currently has focus. */
   def hasFocus(): Boolean = js.native
+  
   /** Computes the height of the top of a line, in the coordinate system specified by mode, it may be "window",
     "page" (the default), or "local". When a line below the bottom of the document is specified, the returned value
     is the bottom of the last line in the document. By default, the position of the actual text is returned.
@@ -360,6 +396,7 @@ trait Editor extends Doc {
   def heightAtLine(line: js.Any, mode: js.UndefOr[scala.Nothing], includeWidgets: Boolean): Double = js.native
   def heightAtLine(line: js.Any, mode: CoordsMode): Double = js.native
   def heightAtLine(line: js.Any, mode: CoordsMode, includeWidgets: Boolean): Double = js.native
+  
   /** Adjust the indentation of the given line.
     The second argument (which defaults to "smart") may be one of:
     "prev" Base indentation on the indentation of the previous line.
@@ -368,35 +405,41 @@ trait Editor extends Doc {
     "subtract" Reduce the indentation of the line. */
   def indentLine(line: Double): Unit = js.native
   def indentLine(line: Double, dir: String): Unit = js.native
+  
   /** Indent a selection */
   def indentSelection(how: String): Unit = js.native
+  
   /** Tells you whether the editor's content can be edited by the user. */
   def isReadOnly(): Boolean = js.native
+  
   /** Compute the line at the given pixel height. mode is the relative element
     to use to compute this line, it may be "window", "page" (the default), or "local" */
   def lineAtHeight(height: Double): Double = js.native
   def lineAtHeight(height: Double, mode: CoordsMode): Double = js.native
+  
   /** Set the lines in the given range to be line comments. Will fall back to `blockComment` when no line comment style is defined for the mode. */
   def lineComment(from: Position, to: Position): Unit = js.native
   def lineComment(from: Position, to: Position, options: CommentOptions): Unit = js.native
+  
   /** Returns the line number, text content, and marker status of the given line, which can be either a number or a line handle. */
   def lineInfo(line: js.Any): BgClass = js.native
+  
   def off(eventName: String, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
   def off(eventName: String, handler: js.Function2[/* doc */ Doc, /* event */ js.Any, Unit]): Unit = js.native
-  def off[K /* <: DOMEvent with (copy | cut | paste) */](
-    eventName: K,
-    handler: js.Function2[
-      /* instance */ this.type, 
-      /* import warning: importer.ImportType#apply Failed type conversion: std.DocumentAndElementEventHandlersEventMap[K] */ /* event */ js.Any, 
-      Unit
-    ]
-  ): Unit = js.native
-  @JSName("off")
-  def off_K_IntersectionDOMEventAny[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any) */](
+  def off[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any) */](
     eventName: K,
     handler: js.Function2[
       /* instance */ this.type, 
       /* import warning: importer.ImportType#apply Failed type conversion: std.GlobalEventHandlersEventMap[K] */ /* event */ js.Any, 
+      Unit
+    ]
+  ): Unit = js.native
+  @JSName("off")
+  def off_K_IntersectionDOMEventUnioncopycutpaste[K /* <: DOMEvent with (copy | cut | paste) */](
+    eventName: K,
+    handler: js.Function2[
+      /* instance */ this.type, 
+      /* import warning: importer.ImportType#apply Failed type conversion: std.DocumentAndElementEventHandlersEventMap[K] */ /* event */ js.Any, 
       Unit
     ]
   ): Unit = js.native
@@ -488,28 +531,29 @@ trait Editor extends Doc {
     eventName: viewportChange,
     handler: js.Function3[/* instance */ this.type, /* from */ Double, /* to */ Double, Unit]
   ): Unit = js.native
+  
   /** Events are registered with the on method (and removed with the off method).
     These are the events that fire on the instance object. The name of the event is followed by the arguments that will be passed to the handler.
     The instance argument always refers to the editor instance. */
   def on(eventName: String, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
   /** An extension of the existing CodeMirror typings for the Editor.on("keyup", func) syntax */
   def on(eventName: String, handler: js.Function2[/* doc */ Doc, /* event */ js.Any, Unit]): Unit = js.native
-  /** Fires when one of the clipboard DOM events fires. */
-  def on[K /* <: DOMEvent with (copy | cut | paste) */](
-    eventName: K,
-    handler: js.Function2[
-      /* instance */ this.type, 
-      /* import warning: importer.ImportType#apply Failed type conversion: std.DocumentAndElementEventHandlersEventMap[K] */ /* event */ js.Any, 
-      Unit
-    ]
-  ): Unit = js.native
   /** Fires when one of the global DOM events fires. */
-  @JSName("on")
-  def on_K_IntersectionDOMEventAny[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any) */](
+  def on[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any) */](
     eventName: K,
     handler: js.Function2[
       /* instance */ this.type, 
       /* import warning: importer.ImportType#apply Failed type conversion: std.GlobalEventHandlersEventMap[K] */ /* event */ js.Any, 
+      Unit
+    ]
+  ): Unit = js.native
+  /** Fires when one of the clipboard DOM events fires. */
+  @JSName("on")
+  def on_K_IntersectionDOMEventUnioncopycutpaste[K /* <: DOMEvent with (copy | cut | paste) */](
+    eventName: K,
+    handler: js.Function2[
+      /* instance */ this.type, 
+      /* import warning: importer.ImportType#apply Failed type conversion: std.DocumentAndElementEventHandlersEventMap[K] */ /* event */ js.Any, 
       Unit
     ]
   ): Unit = js.native
@@ -642,25 +686,31 @@ trait Editor extends Doc {
     eventName: viewportChange,
     handler: js.Function3[/* instance */ this.type, /* from */ Double, /* to */ Double, Unit]
   ): Unit = js.native
+  
   /** CodeMirror internally buffers changes and only updates its DOM structure after it has finished performing some operation.
     If you need to perform a lot of operations on a CodeMirror instance, you can call this method with a function argument.
     It will call the function, buffering up all changes, and only doing the expensive update after the function returns.
     This can be a lot faster. The return value from this method will be the return value of your function. */
   def operation[T](fn: js.Function0[T]): T = js.native
+  
   /** If your code does something to change the size of the editor element (window resizes are already listened for), or unhides it,
     you should probably follow up by calling this method to ensure CodeMirror is still looking as intended. */
   def refresh(): Unit = js.native
+  
   /** Disable a keymap added with addKeyMap.Either pass in the keymap object itself , or a string,
     which will be compared against the name property of the active keymaps. */
   def removeKeyMap(map: String): Unit = js.native
   def removeKeyMap(map: KeyMap): Unit = js.native
+  
   /** Remove a CSS class from a line.line can be a line handle or number.
     where should be one of "text", "background", or "wrap"(see addLineClass).
     class can be left off to remove all classes for the specified node, or be a string to remove only a specific class. */
   def removeLineClass(line: js.Any, where: String): LineHandle = js.native
   def removeLineClass(line: js.Any, where: String, class_ : String): LineHandle = js.native
+  
   /** Pass this the exact argument passed for the mode parameter to addOverlay to remove an overlay again. */
   def removeOverlay(mode: js.Any): Unit = js.native
+  
   /** Scrolls the given element into view. pos is a { line , ch } position, referring to a given character, null, to refer to the cursor.
     The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
   def scrollIntoView(): Unit = js.native
@@ -679,16 +729,19 @@ trait Editor extends Doc {
   def scrollIntoView(pos: Line, margin: Double): Unit = js.native
   def scrollIntoView(pos: Position): Unit = js.native
   def scrollIntoView(pos: Position, margin: Double): Unit = js.native
+  
   /** Scroll the editor to a given(pixel) position.Both arguments may be left as null or undefined to have no effect. */
   def scrollTo(): Unit = js.native
   def scrollTo(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def scrollTo(x: Double): Unit = js.native
   def scrollTo(x: Double, y: Double): Unit = js.native
   def scrollTo(x: Null, y: Double): Unit = js.native
+  
   /** Sets the gutter marker for the given gutter (identified by its CSS class, see the gutters option) to the given value.
     Value can be either null, to clear the marker, or a DOM element, to set it. The DOM element will be shown in the specified gutter next to the specified line. */
   def setGutterMarker(line: js.Any, gutterID: String): LineHandle = js.native
   def setGutterMarker(line: js.Any, gutterID: String, value: HTMLElement): LineHandle = js.native
+  
   @JSName("setOption")
   def setOption_addModeClass(option: addModeClass): Unit = js.native
   @JSName("setOption")
@@ -775,6 +828,10 @@ trait Editor extends Doc {
   def setOption_foldGutter(option: foldGutter): Unit = js.native
   @JSName("setOption")
   def setOption_foldGutter(option: foldGutter, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_fullScreen(option: fullScreen): Unit = js.native
+  @JSName("setOption")
+  def setOption_fullScreen(option: fullScreen, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_gutters(option: gutters): Unit = js.native
   @JSName("setOption")
@@ -961,26 +1018,32 @@ trait Editor extends Doc {
   def setOption_workTime(option: workTime): Unit = js.native
   @JSName("setOption")
   def setOption_workTime(option: workTime, value: Double): Unit = js.native
+  
   /** Programatically set the size of the editor (overriding the applicable CSS rules).
     width and height height can be either numbers(interpreted as pixels) or CSS units ("100%", for example).
     You can pass null for either of them to indicate that that dimension should not be changed. */
   def setSize(width: js.Any, height: js.Any): Unit = js.native
+  
   def showHint(options: ShowHintOptions): Unit = js.native
+  
   /** In normal circumstances, use the above operation method. But if you want to buffer operations happening asynchronously, or that can't all be wrapped in a callback
     function, you can call startOperation to tell CodeMirror to start buffering changes, and endOperation to actually render all the updates. Be careful: if you use this
     API and forget to call endOperation, the editor will just never update. */
   def startOperation(): Unit = js.native
+  
   /** Attach a new document to the editor. Returns the old document, which is now no longer associated with an editor. */
   def swapDoc(doc: Doc): Doc = js.native
+  
   /** Tries to uncomment the current selection, and if that fails, line-comments it. */
   def toggleComment(): Unit = js.native
   def toggleComment(options: CommentOptions): Unit = js.native
+  
   /** Switches between overwrite and normal insert mode (when not given an argument),
     or sets the overwrite mode to a specific state (when given an argument). */
   def toggleOverwrite(): Unit = js.native
   def toggleOverwrite(value: Boolean): Unit = js.native
+  
   /** Try to uncomment the given range. Returns `true` if a comment range was found and removed, `false` otherwise. */
   def uncomment(from: Position, to: Position): Boolean = js.native
   def uncomment(from: Position, to: Position, options: CommentOptions): Boolean = js.native
 }
-

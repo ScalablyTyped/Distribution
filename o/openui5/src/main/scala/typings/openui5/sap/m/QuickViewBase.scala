@@ -3,16 +3,18 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait QuickViewBase extends Control {
+  
   /**
     * Adds some page to the aggregation <code>pages</code>.
     * @param oPage the page to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addPage(oPage: QuickViewPage): QuickViewBase = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterNavigate</code> event of this
     * <code>sap.m.QuickViewBase</code>.When called, the context of the event handler (its
@@ -29,6 +31,7 @@ trait QuickViewBase extends Control {
     */
   def attachAfterNavigate(oData: js.Any, fnFunction: js.Any): QuickViewBase = js.native
   def attachAfterNavigate(oData: js.Any, fnFunction: js.Any, oListener: js.Any): QuickViewBase = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>navigate</code> event of this
     * <code>sap.m.QuickViewBase</code>.When called, the context of the event handler (its
@@ -45,6 +48,7 @@ trait QuickViewBase extends Control {
     */
   def attachNavigate(oData: js.Any, fnFunction: js.Any): QuickViewBase = js.native
   def attachNavigate(oData: js.Any, fnFunction: js.Any, oListener: js.Any): QuickViewBase = js.native
+  
   /**
     * Binds aggregation <code>pages</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -53,11 +57,13 @@ trait QuickViewBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindPages(oBindingInfo: js.Any): QuickViewBase = js.native
+  
   /**
     * Destroys all the pages in the aggregation <code>pages</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyPages(): QuickViewBase = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>afterNavigate</code> event of this
     * <code>sap.m.QuickViewBase</code>.The passed function and listener object must match the ones used
@@ -67,6 +73,7 @@ trait QuickViewBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAfterNavigate(fnFunction: js.Any, oListener: js.Any): QuickViewBase = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>navigate</code> event of this
     * <code>sap.m.QuickViewBase</code>.The passed function and listener object must match the ones used
@@ -76,6 +83,7 @@ trait QuickViewBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachNavigate(fnFunction: js.Any, oListener: js.Any): QuickViewBase = js.native
+  
   /**
     * Fires event <code>afterNavigate</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>from</code> of type <code>sap.ui.core.Control</code>Determines the page,
@@ -99,6 +107,7 @@ trait QuickViewBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAfterNavigate(mArguments: js.Any): QuickViewBase = js.native
+  
   /**
     * Fires event <code>navigate</code> to attached listeners.Listeners may prevent the default action of
     * this event by using the <code>preventDefault</code>-method on the event object.Expects the following
@@ -121,11 +130,13 @@ trait QuickViewBase extends Control {
     * @returns Whether or not to prevent the default action
     */
   def fireNavigate(mArguments: js.Any): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>pages</code>.Displays a page header, object icon or image, object
     * name with short description,and object information divided in groups
     */
   def getPages(): js.Array[QuickViewPage] = js.native
+  
   /**
     * Checks for the provided <code>sap.m.QuickViewPage</code> in the aggregation <code>pages</code>.and
     * returns its index if found or -1 otherwise.
@@ -133,6 +144,7 @@ trait QuickViewBase extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfPage(oPage: QuickViewPage): Double = js.native
+  
   /**
     * Inserts a page into the aggregation <code>pages</code>.
     * @param oPage the page to insert; if empty, nothing is inserted
@@ -143,16 +155,19 @@ trait QuickViewBase extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertPage(oPage: QuickViewPage, iIndex: Double): QuickViewBase = js.native
+  
   /**
     * Navigates to the previous page if there is such.
     */
   def navigateBack(): Unit = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>pages</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllPages(): js.Array[QuickViewPage] = js.native
+  
   def removePage(vPage: String): QuickViewPage = js.native
   /**
     * Removes a page from the aggregation <code>pages</code>.
@@ -161,10 +176,10 @@ trait QuickViewBase extends Control {
     */
   def removePage(vPage: Double): QuickViewPage = js.native
   def removePage(vPage: QuickViewPage): QuickViewPage = js.native
+  
   /**
     * Unbinds aggregation <code>pages</code> from model data.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindPages(): QuickViewBase = js.native
 }
-

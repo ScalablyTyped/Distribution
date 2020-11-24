@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.resourcegroupsMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.ResourceGroups")
 @js.native
@@ -14,4 +14,3 @@ class ResourceGroups ()
   extends typings.awsSdk.mod.ResourceGroups {
   def this(options: ClientConfiguration) = this()
 }
-

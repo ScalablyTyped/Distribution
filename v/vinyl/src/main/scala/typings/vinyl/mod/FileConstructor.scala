@@ -7,7 +7,7 @@ import typings.vinyl.anon.ConstructorOptionscontentBase
 import typings.vinyl.anon.ConstructorOptionscontentDictcustomOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FileConstructor
@@ -16,13 +16,14 @@ trait FileConstructor
       (/* options */ ConstructorOptions) | (/* options */ ConstructorOptionscontent) | (/* options */ ConstructorOptionscontentBase) | (/* options */ ConstructorOptionscontentDictcustomOption), 
       BufferFile | typings.std.File | NullFile | StreamFile
     ] {
+  
   /**
     * Checks if a property is not managed internally.
     */
   def isCustomProp(name: String): Boolean = js.native
+  
   /**
     * Checks if a given object is a vinyl file.
     */
   def isVinyl(obj: js.Any): /* is std.File */ Boolean = js.native
 }
-

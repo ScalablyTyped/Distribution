@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouderrorreporting/v1beta1", "clouderrorreporting_v1beta1.Resource$Projects$Events")
 @js.native
 class ResourceProjectsEvents protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * clouderrorreporting.projects.events.list
     * @desc Lists the specified events.
@@ -48,6 +50,7 @@ class ResourceProjectsEvents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListEventsResponse]
   ): Unit = js.native
+  
   /**
     * clouderrorreporting.projects.events.report
     * @desc Report an individual error event.  This endpoint accepts **either**
@@ -86,4 +89,3 @@ class ResourceProjectsEvents protected () extends js.Object {
     callback: BodyResponseCallback[SchemaReportErrorEventResponse]
   ): Unit = js.native
 }
-

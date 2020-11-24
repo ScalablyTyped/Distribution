@@ -4,27 +4,40 @@ import typings.std.Element
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Endpoint extends UIComponent {
+  
   var anchor: Anchor = js.native
+  
   var connections: js.UndefOr[js.Array[Connection]] = js.native
+  
+  def connectorSelector(): Connection = js.native
+  
+  def getElement(): Element = js.native
+  
   //= 1?
   var id: String = js.native
-  var maxConnections: Double = js.native
-  var scope: String = js.native
-  var `type`: EndpointId = js.native
-  def connectorSelector(): Connection = js.native
-  def getElement(): Element = js.native
+  
   def isEnabled(): Boolean = js.native
+  
+  var maxConnections: Double = js.native
+  
+  var scope: String = js.native
+  
   def setElement(el: Element): Unit = js.native
+  
   def setEnabled(enabled: Boolean): Unit = js.native
+  
   def setEndpoint(spec: EndpointSpec): Unit = js.native
+  
   def setHover(hover: Boolean): Unit = js.native
+  
+  var `type`: EndpointId = js.native
 }
-
 object Endpoint {
+  
   @scala.inline
   def apply(
     anchor: Anchor,
@@ -48,48 +61,65 @@ object Endpoint {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Endpoint]
   }
+  
   @scala.inline
   implicit class EndpointOps[Self <: Endpoint] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAnchor(value: Anchor): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setConnectorSelector(value: () => Connection): Self = this.set("connectorSelector", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetElement(value: () => Element): Self = this.set("getElement", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsEnabled(value: () => Boolean): Self = this.set("isEnabled", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setMaxConnections(value: Double): Self = this.set("maxConnections", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSetElement(value: Element => Unit): Self = this.set("setElement", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetEnabled(value: Boolean => Unit): Self = this.set("setEnabled", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetEndpoint(value: EndpointSpec => Unit): Self = this.set("setEndpoint", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetHover(value: Boolean => Unit): Self = this.set("setHover", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setType(value: EndpointId): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setConnectionsVarargs(value: Connection*): Self = this.set("connections", js.Array(value :_*))
+    
     @scala.inline
     def setConnections(value: js.Array[Connection]): Self = this.set("connections", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteConnections: Self = this.set("connections", js.undefined)
   }
-  
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fusiontables/v2", "fusiontables_v2.Resource$Query")
 @js.native
 class ResourceQuery protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * fusiontables.query.sql
     * @desc Executes a Fusion Tables SQL statement, which can be any of  -
@@ -44,6 +46,7 @@ class ResourceQuery protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSqlresponse]
   ): Unit = js.native
+  
   /**
     * fusiontables.query.sqlGet
     * @desc Executes a SQL statement which can be any of  - SELECT - SHOW -
@@ -76,4 +79,3 @@ class ResourceQuery protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSqlresponse]
   ): Unit = js.native
 }
-

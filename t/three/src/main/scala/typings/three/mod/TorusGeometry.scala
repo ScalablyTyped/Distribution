@@ -2,10 +2,17 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "TorusGeometry")
 @js.native
+/**
+	 * @param [radius=1]
+	 * @param [tube=0.4]
+	 * @param [radialSegments=8]
+	 * @param [tubularSegments=6]
+	 * @param [arc=Math.PI * 2]
+	 */
 class TorusGeometry ()
   extends typings.three.geometriesMod.TorusGeometry {
   def this(radius: Double) = this()
@@ -150,4 +157,3 @@ class TorusGeometry ()
   ) = this()
   def this(radius: Double, tube: Double, radialSegments: Double, tubularSegments: Double, arc: Double) = this()
 }
-

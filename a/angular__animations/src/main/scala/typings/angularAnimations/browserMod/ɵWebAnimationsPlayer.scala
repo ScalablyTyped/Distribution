@@ -3,7 +3,7 @@ package typings.angularAnimations.browserMod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/animations/browser", "\u0275WebAnimationsPlayer")
 @js.native
@@ -21,4 +21,3 @@ class ɵWebAnimationsPlayer protected ()
     _specialStyles: typings.angularAnimations.browserBrowserMod.ɵangularPackagesAnimationsBrowserBrowserA
   ) = this()
 }
-

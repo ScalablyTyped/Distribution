@@ -11,8 +11,8 @@ A Twilio helper library
 | Full name          | twilio |
 | Keywords           | twilio, sms, rest, api |
 | # releases         | 59 |
-| # dependents       | 300 |
-| # downloads        | 10803080 |
+| # dependents       | 362 |
+| # downloads        | 17599081 |
 | # stars            | 26 |
 
 ## Links

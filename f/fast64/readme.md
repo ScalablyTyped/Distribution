@@ -12,7 +12,7 @@ The fastest in-browser base64 library
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 334 |
+| # downloads        | 2593 |
 | # stars            | 0 |
 
 ## Links

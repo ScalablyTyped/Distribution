@@ -2,9 +2,31 @@ package typings.reactMessengerCheckbox
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMessengerCheckboxStrings {
+  
+  @scala.inline
+  def dark: dark = "dark".asInstanceOf[dark]
+  
+  @scala.inline
+  def large: large = "large".asInstanceOf[large]
+  
+  @scala.inline
+  def light: light = "light".asInstanceOf[light]
+  
+  @scala.inline
+  def medium: medium = "medium".asInstanceOf[medium]
+  
+  @scala.inline
+  def small: small = "small".asInstanceOf[small]
+  
+  @scala.inline
+  def standard: standard = "standard".asInstanceOf[standard]
+  
+  @scala.inline
+  def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
+  
   @js.native
   sealed trait dark extends js.Object
   
@@ -25,20 +47,4 @@ object reactMessengerCheckboxStrings {
   
   @js.native
   sealed trait xlarge extends js.Object
-  
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
-  @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
-  @scala.inline
-  def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
 }
-

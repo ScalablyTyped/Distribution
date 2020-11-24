@@ -8,11 +8,12 @@ import typings.rxjs.typesMod.ObservedValuesFromArray
 import typings.rxjs.typesMod.SubscribableOrPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/observable/forkJoin", JSImport.Namespace)
 @js.native
 object forkJoinMod extends js.Object {
+  
   def forkJoin(args: (ObservableInput[_] | js.Function)*): Observable[_] = js.native
   def forkJoin(sourcesObject: js.Object): Observable[scala.Nothing] = js.native
   def forkJoin[A /* <: js.Array[ObservableInput[_]] */](sources: A): Observable[js.Array[ObservedValuesFromArray[A]]] = js.native
@@ -67,4 +68,3 @@ object forkJoinMod extends js.Object {
     */ forkJoin with TopLevel[T]
   ] = js.native
 }
-

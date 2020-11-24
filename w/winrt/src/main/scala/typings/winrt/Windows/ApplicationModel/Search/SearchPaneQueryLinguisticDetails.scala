@@ -3,12 +3,12 @@ package typings.winrt.Windows.ApplicationModel.Search
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SearchPaneQueryLinguisticDetails extends ISearchPaneQueryLinguisticDetails
-
 object SearchPaneQueryLinguisticDetails {
+  
   @scala.inline
   def apply(
     queryTextAlternatives: IVectorView[String],
@@ -19,4 +19,3 @@ object SearchPaneQueryLinguisticDetails {
     __obj.asInstanceOf[SearchPaneQueryLinguisticDetails]
   }
 }
-

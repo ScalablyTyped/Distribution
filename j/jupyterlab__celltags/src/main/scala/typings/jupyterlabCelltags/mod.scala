@@ -5,11 +5,12 @@ import typings.jupyterlabApplication.mod.JupyterFrontEnd
 import typings.jupyterlabNotebook.tokensMod.INotebookTracker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/celltags", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   /**
     * Construct a new tag widget.
@@ -36,6 +37,4 @@ object mod extends js.Object {
       */
     def this(name: String) = this()
   }
-  
 }
-

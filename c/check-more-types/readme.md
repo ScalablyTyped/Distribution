@@ -11,8 +11,8 @@ Large collection of predicates.
 | Full name          | check-more-types |
 | Keywords           | check-types, checks, duck-typing, type-checking, types |
 | # releases         | 0 |
-| # dependents       | 148 |
-| # downloads        | 26040726 |
+| # dependents       | 149 |
+| # downloads        | 50054792 |
 | # stars            | 2 |
 
 ## Links

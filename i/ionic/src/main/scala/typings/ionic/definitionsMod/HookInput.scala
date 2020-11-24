@@ -6,7 +6,7 @@ import typings.ionic.ionicStrings.serveColonafter
 import typings.ionic.ionicStrings.serveColonbefore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.ionic.definitionsMod.BuildHookInput
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
   - typings.ionic.definitionsMod.ServeAfterHookInput
 */
 trait HookInput extends js.Object
-
 object HookInput {
+  
   @scala.inline
   def BuildHookInput(
     build: AngularBuildOptions | IonicAngularBuildOptions | Ionic1BuildOptions,
@@ -24,11 +24,13 @@ object HookInput {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[HookInput]
   }
+  
   @scala.inline
   def ServeBeforeHookInput(name: serveColonbefore, serve: AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions): HookInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], serve = serve.asInstanceOf[js.Any])
     __obj.asInstanceOf[HookInput]
   }
+  
   @scala.inline
   def ServeAfterHookInput(
     name: serveColonafter,
@@ -38,4 +40,3 @@ object HookInput {
     __obj.asInstanceOf[HookInput]
   }
 }
-

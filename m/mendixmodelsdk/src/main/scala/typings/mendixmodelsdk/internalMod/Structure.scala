@@ -1,14 +1,15 @@
 package typings.mendixmodelsdk.internalMod
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.structuresMod.aliases.IContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/sdk/internal", "Structure")
 @js.native
-abstract class Structure protected ()
-  extends typings.mendixmodelsdk.structuresMod.Structure {
+abstract class Structure[TModel /* <: IAbstractModel */, TContainer /* <: IContainer | Null */] protected ()
+  extends typings.mendixmodelsdk.structuresMod.Structure[TModel, TContainer] {
   def this(
     _model: typings.mendixmodelsdk.abstractModelMod.AbstractModel,
     structureTypeName: String,
@@ -35,4 +36,3 @@ abstract class Structure protected ()
     container: IContainer
   ) = this()
 }
-

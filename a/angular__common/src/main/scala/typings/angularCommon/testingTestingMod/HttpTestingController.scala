@@ -4,11 +4,12 @@ import typings.angularCommon.anon.IgnoreCancelled
 import typings.angularCommon.httpMod.HttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http/testing/testing", "HttpTestingController")
 @js.native
 abstract class HttpTestingController () extends js.Object {
+  
   /**
     * Expect that no requests have been made which match the given predicate function.
     *
@@ -39,6 +40,7 @@ abstract class HttpTestingController () extends js.Object {
     */
   def expectNone(url: String): Unit = js.native
   def expectNone(url: String, description: String): Unit = js.native
+  
   /**
     * Expect that a single request has been made which matches the given predicate function, and
     * return its mock.
@@ -73,12 +75,14 @@ abstract class HttpTestingController () extends js.Object {
     */
   def expectOne(url: String): TestRequest = js.native
   def expectOne(url: String, description: String): TestRequest = js.native
+  
   /**
     * Search for requests that match the given parameter, without any expectations.
     */
   def `match`(`match`: String): js.Array[TestRequest] = js.native
   def `match`(`match`: js.Function1[/* req */ HttpRequest[_], Boolean]): js.Array[TestRequest] = js.native
   def `match`(`match`: RequestMatch): js.Array[TestRequest] = js.native
+  
   /**
     * Verify that no unmatched requests are outstanding.
     *
@@ -91,4 +95,3 @@ abstract class HttpTestingController () extends js.Object {
   def verify(): Unit = js.native
   def verify(opts: IgnoreCancelled): Unit = js.native
 }
-

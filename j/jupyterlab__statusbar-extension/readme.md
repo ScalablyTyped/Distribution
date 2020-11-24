@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__statusbar-extension
 
-Typings are for version 2.1.2
+Typings are for version 2.2.7
 
 ## Library description:
 JupyterLab - Statusbar Extension
@@ -10,9 +10,9 @@ JupyterLab - Statusbar Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/statusbar-extension |
 | Keywords           | - |
-| # releases         | 46 |
+| # releases         | 117 |
 | # dependents       | 1 |
-| # downloads        | 356435 |
+| # downloads        | 1294656 |
 | # stars            | 0 |
 
 ## Links

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2beta1", "dialogflow_v2beta1.Resource$Projects$Agent$Entitytypes$Entities")
 @js.native
 class ResourceProjectsAgentEntitytypesEntities protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * dialogflow.projects.agent.entityTypes.entities.batchCreate
     * @desc Creates multiple new entities in the specified entity type.
@@ -46,6 +46,7 @@ class ResourceProjectsAgentEntitytypesEntities protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.entityTypes.entities.batchDelete
     * @desc Deletes entities in the specified entity type.  Operation
@@ -79,6 +80,7 @@ class ResourceProjectsAgentEntitytypesEntities protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.entityTypes.entities.batchUpdate
     * @desc Updates or creates multiple entities in the specified entity type.
@@ -114,5 +116,6 @@ class ResourceProjectsAgentEntitytypesEntities protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
 }
-

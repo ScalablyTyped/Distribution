@@ -2,9 +2,10 @@ package typings.behavior3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object b3 {
+  
   /**
     * Action is the base class for all action nodes. Thus, if you want to create
     * new custom action nodes, you need to inherit from this class. For example,
@@ -21,6 +22,7 @@ package object b3 {
     *
     */
   type Action = typings.behavior3.b3.BaseNode
+  
   /**
     * Composite is the base class for all composite nodes. Thus, if you want to
     * create new custom composite nodes, you need to inherit from this class.
@@ -58,12 +60,14 @@ package object b3 {
     *
     */
   type Composite = typings.behavior3.b3.BaseNode
+  
   /**
     * Condition is the base class for all condition nodes. Thus, if you want to
     * create new custom condition nodes, you need to inherit from this class.
     *
     */
   type Condition = typings.behavior3.b3.BaseNode
+  
   /**
     * Decorator is the base class for all decorator nodes. Thus, if you want to
     * create new custom decorator nodes, you need to inherit from this class.

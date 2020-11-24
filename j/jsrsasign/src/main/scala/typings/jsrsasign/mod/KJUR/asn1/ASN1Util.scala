@@ -2,18 +2,18 @@ package typings.jsrsasign.mod.KJUR.asn1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ASN1 utilities class */
 @JSImport("jsrsasign", "KJUR.asn1.ASN1Util")
 @js.native
 class ASN1Util ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Util
-
 /* static members */
 @JSImport("jsrsasign", "KJUR.asn1.ASN1Util")
 @js.native
 object ASN1Util extends js.Object {
+  
   /**
     * get PEM string from hexadecimal data and header string
     * @param dataHex hexadecimal string of PEM body
@@ -30,6 +30,7 @@ object ASN1Util extends js.Object {
     * -----END PRIVATE KEY-----
     */
   def getPEMStringFromHex(dataHex: String, pemHeader: String): String = js.native
+  
   /**
     * get dot noted oid number string from hexadecimal value of OID
     *
@@ -43,4 +44,3 @@ object ASN1Util extends js.Object {
     */
   def oidHexToInt(hex: String): String = js.native
 }
-

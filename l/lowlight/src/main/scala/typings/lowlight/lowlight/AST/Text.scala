@@ -3,14 +3,14 @@ package typings.lowlight.lowlight.AST
 import typings.lowlight.lowlight.HastNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Text
   extends typings.lowlight.lowlight.AST.Unist.Text
      with HastNode
-
 object Text {
+  
   @scala.inline
   def apply(`type`: String, value: String): Text = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
@@ -18,4 +18,3 @@ object Text {
     __obj.asInstanceOf[Text]
   }
 }
-

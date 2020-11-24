@@ -3,11 +3,12 @@ package typings.jpegAutorotate.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jpeg-autorotate", "rotate")
 @js.native
 object rotate extends js.Object {
+  
   def apply(path_or_buffer: String, options: RotateOptions): Unit = js.native
   def apply(
     path_or_buffer: String,
@@ -35,4 +36,3 @@ object rotate extends js.Object {
     ]
   ): Unit = js.native
 }
-

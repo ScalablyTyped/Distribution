@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__mathjax2
 
-Typings are for version 2.2.0
+Typings are for version 2.2.1
 
 ## Library description:
 A MathJax 2 Typesetting provider for JupyterLab
@@ -10,9 +10,9 @@ A MathJax 2 Typesetting provider for JupyterLab
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/mathjax2 |
 | Keywords           | - |
-| # releases         | 40 |
+| # releases         | 89 |
 | # dependents       | 4 |
-| # downloads        | 712618 |
+| # downloads        | 1302232 |
 | # stars            | 0 |
 
 ## Links

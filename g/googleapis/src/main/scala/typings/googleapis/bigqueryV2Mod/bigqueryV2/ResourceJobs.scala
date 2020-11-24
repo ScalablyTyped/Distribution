@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquery/v2", "bigquery_v2.Resource$Jobs")
 @js.native
 class ResourceJobs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * bigquery.jobs.cancel
     * @desc Requests that a job be cancelled. This call will return
@@ -102,6 +102,9 @@ class ResourceJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJobCancelResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * bigquery.jobs.get
     * @desc Returns information about a specific job. Job information is
@@ -186,6 +189,7 @@ class ResourceJobs protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceJobsGet, options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def get(params: ParamsResourceJobsGet, options: MethodOptions, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
+  
   /**
     * bigquery.jobs.getQueryResults
     * @desc Retrieves the results of a query job.
@@ -292,6 +296,7 @@ class ResourceJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetQueryResultsResponse]
   ): Unit = js.native
+  
   /**
     * bigquery.jobs.insert
     * @desc Starts a new asynchronous job. Requires the Can View project role.
@@ -388,6 +393,7 @@ class ResourceJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * bigquery.jobs.list
     * @desc Lists all jobs that you started in the specified project. Job
@@ -493,6 +499,7 @@ class ResourceJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJobList]
   ): Unit = js.native
+  
   /**
     * bigquery.jobs.query
     * @desc Runs a BigQuery SQL query synchronously and returns query results
@@ -581,4 +588,3 @@ class ResourceJobs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaQueryResponse]
   ): Unit = js.native
 }
-

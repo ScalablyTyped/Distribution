@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__core
 
-Typings are for version 26.2.2
+Typings are for version 26.6.3
 
 ## Library description:
 Delightful JavaScript Testing.
@@ -10,9 +10,9 @@ Delightful JavaScript Testing.
 | ------------------ | :-------------: |
 | Full name          | @jest/core |
 | Keywords           | ava, babel, coverage, easy, expect, facebook, immersive, instant, jasmine, jest, jsdom, mocha, mocking, painless, qunit, runner, sandboxed, snapshot, tap, tape, test, testing, typescript, watch |
-| # releases         | 12 |
-| # dependents       | 7 |
-| # downloads        | 105280802 |
+| # releases         | 43 |
+| # dependents       | 17 |
+| # downloads        | 255951346 |
 | # stars            | 0 |
 
 ## Links

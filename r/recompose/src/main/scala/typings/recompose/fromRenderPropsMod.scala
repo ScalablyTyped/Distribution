@@ -4,12 +4,13 @@ import typings.react.mod.ComponentType
 import typings.recompose.mod.ComponentEnhancer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/acdlite/recompose/blob/master/docs/API.md#fromrenderprops
 @JSImport("recompose/fromRenderProps", JSImport.Namespace)
 @js.native
 object fromRenderPropsMod extends js.Object {
+  
   def default[TInner, TOutter, TRenderProps](
     RenderPropsComponent: ComponentType[_],
     propsMapper: js.Function1[/* props */ TRenderProps, TInner]
@@ -20,4 +21,3 @@ object fromRenderPropsMod extends js.Object {
     renderPropName: String
   ): ComponentEnhancer[TInner with TOutter, TOutter] = js.native
 }
-

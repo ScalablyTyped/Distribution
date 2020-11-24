@@ -1,0 +1,125 @@
+package typings.docusignEsign.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait RecipientSignatureProviderOptions extends js.Object {
+  
+  /**
+    * Reserved for DocuSign.
+    */
+  var cpfNumber: js.UndefOr[String] = js.native
+  
+  /**
+    * Reserved for DocuSign.
+    */
+  var cpfNumberMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  
+  /**
+    * A pre-shared secret that the signer must enter to complete the signing process. Eg last six digits of the signer's government ID or Social Security number.
+    * Or a newly created pre-shared secret for the transaction. Note: some signature providers may require an exact (case-sensitive) match if alphabetic characters
+    * are included in the field.
+    */
+  var oneTimePassword: js.UndefOr[String] = js.native
+  
+  /**
+    * Metadata that indicates whether the `oneTimePassword` property is editable.
+    */
+  var oneTimePasswordMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  
+  /**
+    * The role or capacity of the signing recipient. Examples: Manager, Approver, etc.
+    */
+  var signerRole: js.UndefOr[String] = js.native
+  
+  /**
+    * Metadata that indicates whether the `signerRole` property is editable.
+    */
+  var signerRoleMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  
+  /**
+    * The mobile phone number used to send the recipient an access code for the signing ceremony. Format: a string starting with +, then the country code
+    * followed by the full mobile phone number without any spaces or special characters. Omit leading zeroes before a city code.
+    * Examples: +14155551234, +97235551234, +33505551234.
+    */
+  var sms: js.UndefOr[String] = js.native
+  
+  /**
+    * Metadata that indicates whether the `sms` property is editable.
+    */
+  var smsMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+}
+object RecipientSignatureProviderOptions {
+  
+  @scala.inline
+  def apply(): RecipientSignatureProviderOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[RecipientSignatureProviderOptions]
+  }
+  
+  @scala.inline
+  implicit class RecipientSignatureProviderOptionsOps[Self <: RecipientSignatureProviderOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setCpfNumber(value: String): Self = this.set("cpfNumber", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCpfNumber: Self = this.set("cpfNumber", js.undefined)
+    
+    @scala.inline
+    def setCpfNumberMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("cpfNumberMetadata", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCpfNumberMetadata: Self = this.set("cpfNumberMetadata", js.undefined)
+    
+    @scala.inline
+    def setOneTimePassword(value: String): Self = this.set("oneTimePassword", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteOneTimePassword: Self = this.set("oneTimePassword", js.undefined)
+    
+    @scala.inline
+    def setOneTimePasswordMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("oneTimePasswordMetadata", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteOneTimePasswordMetadata: Self = this.set("oneTimePasswordMetadata", js.undefined)
+    
+    @scala.inline
+    def setSignerRole(value: String): Self = this.set("signerRole", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSignerRole: Self = this.set("signerRole", js.undefined)
+    
+    @scala.inline
+    def setSignerRoleMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("signerRoleMetadata", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSignerRoleMetadata: Self = this.set("signerRoleMetadata", js.undefined)
+    
+    @scala.inline
+    def setSms(value: String): Self = this.set("sms", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSms: Self = this.set("sms", js.undefined)
+    
+    @scala.inline
+    def setSmsMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("smsMetadata", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSmsMetadata: Self = this.set("smsMetadata", js.undefined)
+  }
+}

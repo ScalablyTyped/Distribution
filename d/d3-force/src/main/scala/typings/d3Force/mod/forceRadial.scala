@@ -2,11 +2,12 @@ package typings.d3Force.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3-force", "forceRadial")
 @js.native
 object forceRadial extends js.Object {
+  
   def apply[NodeDatum /* <: SimulationNodeDatum */](radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceRadial_[NodeDatum] = js.native
   def apply[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
@@ -75,4 +76,3 @@ object forceRadial extends js.Object {
   ): ForceRadial_[NodeDatum] = js.native
   def apply[NodeDatum /* <: SimulationNodeDatum */](radius: Double, x: Double, y: Double): ForceRadial_[NodeDatum] = js.native
 }
-

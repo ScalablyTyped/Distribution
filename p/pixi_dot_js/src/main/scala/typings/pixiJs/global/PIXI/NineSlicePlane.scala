@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The NineSlicePlane allows you to stretch a texture using 9-slice scaling. The corners will remain unscaled (useful
@@ -119,4 +119,3 @@ class NineSlicePlane protected ()
     bottomHeight: Double
   ) = this()
 }
-

@@ -3,7 +3,7 @@ package typings.roslib.mod
 import typings.roslib.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roslib", "Param")
 @js.native
@@ -17,10 +17,12 @@ class Param protected () extends js.Object {
     *   * name - the param name, like max_vel_x
     */
   def this(options: Name) = this()
+  
   /**
     * Delete this parameter on the ROS server.
     */
   def delete(callback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Fetches the value of the param.
     *
@@ -28,6 +30,7 @@ class Param protected () extends js.Object {
     *  * value - the value of the param from ROS.
     */
   def get(callback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Sets the value of the param in ROS.
     *
@@ -38,4 +41,3 @@ class Param protected () extends js.Object {
   def set(value: js.Any): Unit = js.native
   def set(value: js.Any, callback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
 }
-

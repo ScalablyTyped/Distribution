@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mutexify"
-version := "1.2-dt-20181012Z-0c3fc4"
+version := "1.2-dt-20181012Z-740c9a"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

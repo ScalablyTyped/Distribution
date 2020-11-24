@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2", "RouteTableAssociation")
 @js.native
@@ -23,11 +23,11 @@ class RouteTableAssociation protected ()
   def this(name: String, args: RouteTableAssociationArgs) = this()
   def this(name: String, args: RouteTableAssociationArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ec2", "RouteTableAssociation")
 @js.native
 object RouteTableAssociation extends js.Object {
+  
   /**
     * Get an existing RouteTableAssociation resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object RouteTableAssociation extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ec2RouteTableAssociationMod.RouteTableAssociation = js.native
   def get(name: String, id: Input[ID], state: RouteTableAssociationState): typings.pulumiAws.ec2RouteTableAssociationMod.RouteTableAssociation = js.native
   def get(name: String, id: Input[ID], state: RouteTableAssociationState, opts: CustomResourceOptions): typings.pulumiAws.ec2RouteTableAssociationMod.RouteTableAssociation = js.native
+  
   /**
     * Returns true if the given object is an instance of RouteTableAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/routeTableAssociation.RouteTableAssociation */ Boolean = js.native
 }
-

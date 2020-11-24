@@ -11,8 +11,8 @@ A component that is resizable with handles.
 | Full name          | react-resizable |
 | Keywords           | react, resize, resizable |
 | # releases         | 5 |
-| # dependents       | 178 |
-| # downloads        | 4470298 |
+| # dependents       | 243 |
+| # downloads        | 6733102 |
 | # stars            | 4 |
 
 ## Links

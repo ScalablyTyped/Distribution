@@ -5,12 +5,12 @@ import typings.backboneLocalstorage.mod.backboneAugmentingMod.LocalStorage
 import typings.backboneLocalstorage.mod.backboneAugmentingMod.Serializer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   val Store: Instantiable2[/* name */ String, /* serializer */ js.UndefOr[Serializer], LocalStorage] = js.native
   type Store = LocalStorage
 }
-

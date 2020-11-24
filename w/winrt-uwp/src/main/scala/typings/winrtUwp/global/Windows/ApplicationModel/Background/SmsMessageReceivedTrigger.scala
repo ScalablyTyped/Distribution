@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Background
 import typings.winrtUwp.Windows.Devices.Sms.SmsFilterRules
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that is raised when an SMS message has arrived. */
 @JSGlobal("Windows.ApplicationModel.Background.SmsMessageReceivedTrigger")
@@ -16,4 +16,3 @@ class SmsMessageReceivedTrigger protected ()
     */
   def this(filterRules: SmsFilterRules) = this()
 }
-

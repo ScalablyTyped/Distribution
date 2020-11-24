@@ -2,7 +2,7 @@ package typings.aframe.mod.global.AFRAME.THREE
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AFRAME.THREE.EventDispatcher")
 @js.native
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 	 */
 class EventDispatcher ()
   extends typings.three.mod.EventDispatcher
-

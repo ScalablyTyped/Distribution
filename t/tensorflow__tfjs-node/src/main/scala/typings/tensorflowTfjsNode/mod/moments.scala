@@ -2,11 +2,11 @@ package typings.tensorflowTfjsNode.mod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.tensorflowTfjsCore.anon.Mean
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-node", "moments")
 @js.native
@@ -19,4 +19,3 @@ object moments
         Mean
       ]
     ]
-

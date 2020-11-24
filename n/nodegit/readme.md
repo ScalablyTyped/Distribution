@@ -10,9 +10,9 @@ Node.js libgit2 asynchronous native bindings
 | ------------------ | :-------------: |
 | Full name          | nodegit |
 | Keywords           | libgit2, git2, git, native |
-| # releases         | 37 |
-| # dependents       | 504 |
-| # downloads        | 1048954 |
+| # releases         | 36 |
+| # dependents       | 561 |
+| # downloads        | 1567068 |
 | # stars            | 30 |
 
 ## Links

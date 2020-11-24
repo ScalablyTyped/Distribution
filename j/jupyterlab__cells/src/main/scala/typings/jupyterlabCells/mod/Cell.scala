@@ -3,7 +3,7 @@ package typings.jupyterlabCells.mod
 import typings.jupyterlabCells.widgetMod.Cell.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/cells", "Cell")
 @js.native
@@ -14,10 +14,15 @@ class Cell protected ()
     */
   def this(options: IOptions) = this()
 }
-
 @JSImport("@jupyterlab/cells", "Cell")
 @js.native
 object Cell extends js.Object {
+  
+  /**
+    * The default content factory for cells.
+    */
+  val defaultContentFactory: typings.jupyterlabCells.widgetMod.Cell.ContentFactory = js.native
+  
   /**
     * The default implementation of an `IContentFactory`.
     *
@@ -31,16 +36,9 @@ object Cell extends js.Object {
     extends typings.jupyterlabCells.widgetMod.Cell.ContentFactory {
     def this(options: typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions) = this()
   }
-  
-  /**
-    * The default content factory for cells.
-    */
-  val defaultContentFactory: typings.jupyterlabCells.widgetMod.Cell.ContentFactory = js.native
   /**
     * A namespace for cell content factory.
     */
   @js.native
   object ContentFactory extends js.Object
-  
 }
-

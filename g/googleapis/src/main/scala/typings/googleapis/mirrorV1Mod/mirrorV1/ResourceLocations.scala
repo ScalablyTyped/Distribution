@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/mirror/v1", "mirror_v1.Resource$Locations")
 @js.native
 class ResourceLocations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * mirror.locations.get
     * @desc Gets a single location by ID.
@@ -41,6 +43,7 @@ class ResourceLocations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLocation]
   ): Unit = js.native
+  
   /**
     * mirror.locations.list
     * @desc Retrieves a list of locations for the user.
@@ -69,4 +72,3 @@ class ResourceLocations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLocationsListResponse]
   ): Unit = js.native
 }
-

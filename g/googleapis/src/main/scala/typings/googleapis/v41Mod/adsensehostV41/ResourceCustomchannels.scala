@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsensehost/v4.1", "adsensehost_v4_1.Resource$Customchannels")
 @js.native
 class ResourceCustomchannels protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adsensehost.customchannels.delete
     * @desc Delete a specific custom channel from the host AdSense account.
@@ -42,6 +44,7 @@ class ResourceCustomchannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomChannel]
   ): Unit = js.native
+  
   /**
     * adsensehost.customchannels.get
     * @desc Get a specific custom channel from the host AdSense account.
@@ -71,6 +74,7 @@ class ResourceCustomchannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomChannel]
   ): Unit = js.native
+  
   /**
     * adsensehost.customchannels.insert
     * @desc Add a new custom channel to the host AdSense account.
@@ -100,6 +104,7 @@ class ResourceCustomchannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomChannel]
   ): Unit = js.native
+  
   /**
     * adsensehost.customchannels.list
     * @desc List all host custom channels in this AdSense account.
@@ -130,6 +135,7 @@ class ResourceCustomchannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomChannels]
   ): Unit = js.native
+  
   /**
     * adsensehost.customchannels.patch
     * @desc Update a custom channel in the host AdSense account. This method
@@ -161,6 +167,7 @@ class ResourceCustomchannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomChannel]
   ): Unit = js.native
+  
   /**
     * adsensehost.customchannels.update
     * @desc Update a custom channel in the host AdSense account.
@@ -191,4 +198,3 @@ class ResourceCustomchannels protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCustomChannel]
   ): Unit = js.native
 }
-

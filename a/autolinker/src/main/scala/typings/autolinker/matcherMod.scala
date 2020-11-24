@@ -6,11 +6,12 @@ import typings.autolinker.mentionMatcherMod.MentionMatcherConfig
 import typings.autolinker.urlMatcherMod.UrlMatcherConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("autolinker/dist/commonjs/matcher", JSImport.Namespace)
 @js.native
 object matcherMod extends js.Object {
+  
   @js.native
   class EmailMatcher ()
     extends typings.autolinker.emailMatcherMod.EmailMatcher
@@ -62,6 +63,4 @@ object matcherMod extends js.Object {
       */
     def this(cfg: UrlMatcherConfig) = this()
   }
-  
 }
-

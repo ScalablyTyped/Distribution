@@ -1,6 +1,6 @@
 package typings.astTypes.buildersMod
 
-import typings.astTypes.AnonAbstractAccessAccessibility
+import typings.astTypes.anon.AccessAccessibility
 import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.NoopKind
@@ -11,10 +11,11 @@ import typings.astTypes.kindsMod.TSTypeAnnotationKind
 import typings.astTypes.namedTypesMod.namedTypes.TSDeclareMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TSDeclareMethodBuilder extends js.Object {
+  
   def apply(key: ExpressionKind, params: js.Array[PatternKind]): TSDeclareMethod = js.native
   def apply(key: ExpressionKind, params: js.Array[PatternKind], returnType: NoopKind): TSDeclareMethod = js.native
   def apply(key: ExpressionKind, params: js.Array[PatternKind], returnType: TSTypeAnnotationKind): TSDeclareMethod = js.native
@@ -27,6 +28,6 @@ trait TSDeclareMethodBuilder extends js.Object {
   def apply(key: StringLiteralKind, params: js.Array[PatternKind]): TSDeclareMethod = js.native
   def apply(key: StringLiteralKind, params: js.Array[PatternKind], returnType: NoopKind): TSDeclareMethod = js.native
   def apply(key: StringLiteralKind, params: js.Array[PatternKind], returnType: TSTypeAnnotationKind): TSDeclareMethod = js.native
-  def from(params: AnonAbstractAccessAccessibility): TSDeclareMethod = js.native
+  
+  def from(params: AccessAccessibility): TSDeclareMethod = js.native
 }
-

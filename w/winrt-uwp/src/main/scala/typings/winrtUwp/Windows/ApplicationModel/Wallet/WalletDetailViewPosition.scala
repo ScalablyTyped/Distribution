@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Wallet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait WalletDetailViewPosition extends js.Object
-
 /** Describes the position in the detail view of a wallet item that a WalletItemCustomProperty record should be displayed at. */
 @JSGlobal("Windows.ApplicationModel.Wallet.WalletDetailViewPosition")
 @js.native
 object WalletDetailViewPosition extends js.Object {
+  
   /** If the value of the property at this position contains a URL ( http:// or https://), the data is displayed as a button that can navigate to that URL. */
   @js.native
   sealed trait centerField1 extends WalletDetailViewPosition
@@ -70,6 +70,4 @@ object WalletDetailViewPosition extends js.Object {
   /** The fifth content slot in UI under Header2. */
   @js.native
   sealed trait secondaryField5 extends WalletDetailViewPosition
-  
 }
-

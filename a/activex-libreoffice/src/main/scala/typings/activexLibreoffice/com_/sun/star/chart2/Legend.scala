@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.drawing.FillProperties
 import typings.activexLibreoffice.com_.sun.star.drawing.LineProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes a legend for a {@link Diagram} . */
 @js.native
@@ -16,8 +16,10 @@ trait Legend
   extends PropertySet
      with FillProperties
      with LineProperties {
+  
   /** Provides an automated position */
   var AnchorPosition: LegendPosition = js.native
+  
   /**
     * Determines how the aspect ratio of the legend should roughly be.
     *
@@ -25,12 +27,14 @@ trait Legend
     * com.sun.star.chart.WIDE} for a legend that is positioned on top or the bottom.
     */
   var Expansion: ChartLegendExpansion = js.native
+  
   /**
     * contains the size of the page at the time when properties were set (e.g. the CharHeight).
     *
     * This way it is possible to resize objects (like text) in the view without modifying the model.
     */
   var ReferencePageSize: Size = js.native
+  
   /**
     * The position is as a relative position on the page.
     *
@@ -39,8 +43,10 @@ trait Legend
     * If `VOID` , the legend position is solely determined by the {@link AnchorPosition} .
     */
   var RelativePosition: typings.activexLibreoffice.com_.sun.star.chart2.RelativePosition = js.native
+  
   /** Determines, whether the legend should be rendered by the view. */
   var Show: Boolean = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -48,4 +54,3 @@ trait Legend
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-

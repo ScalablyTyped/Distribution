@@ -6,7 +6,7 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-screens", "NativeScreen")
 @js.native
@@ -15,8 +15,6 @@ class NativeScreen protected ()
   def this(props: ScreenProps) = this()
   def this(props: ScreenProps, context: js.Any) = this()
 }
-
 @JSImport("react-native-screens", "NativeScreen")
 @js.native
 object NativeScreen extends TopLevel[ComponentClass[ScreenProps, ComponentState]]
-

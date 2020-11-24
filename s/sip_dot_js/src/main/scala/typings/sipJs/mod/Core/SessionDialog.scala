@@ -4,7 +4,7 @@ import typings.sipJs.dialogStateMod.DialogState
 import typings.sipJs.sessionSessionDelegateMod.SessionDelegate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.SessionDialog")
 @js.native
@@ -33,4 +33,3 @@ class SessionDialog protected ()
     delegate: SessionDelegate
   ) = this()
 }
-

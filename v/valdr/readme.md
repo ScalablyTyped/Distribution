@@ -12,7 +12,7 @@ A model centric approach to AngularJS form validation
 | Keywords           | angularjs, validation, valdr |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 9772 |
+| # downloads        | 17486 |
 | # stars            | 1 |
 
 ## Links

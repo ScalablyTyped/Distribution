@@ -5,10 +5,11 @@ import typings.playcanvas.pc.ScriptAttributes
 import typings.playcanvas.pc.ScriptType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofScriptType extends Instantiable1[/* args */ App, ScriptType] {
+  
   /**
     * The interface to define attributes for Script Types. Refer to {@link pc.ScriptAttributes}.
     * @example
@@ -22,10 +23,7 @@ trait TypeofScriptType extends Instantiable1[/* args */ App, ScriptType] {
     * });
     */
   val attributes: ScriptAttributes = js.native
-  /**
-    * Name of a Script Type
-    */
-  val scriptName: String | Null = js.native
+  
   /**
     * Shorthand function to extend Script Type prototype with list of methods.
     * @example
@@ -42,5 +40,9 @@ trait TypeofScriptType extends Instantiable1[/* args */ App, ScriptType] {
     * @param methods - Object with methods, where key - is name of method, and value - is function.
     */
   def extend(methods: js.Any): Unit = js.native
+  
+  /**
+    * Name of a Script Type
+    */
+  val scriptName: String | Null = js.native
 }
-

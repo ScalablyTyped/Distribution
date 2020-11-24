@@ -7,7 +7,7 @@ import typings.std.Document
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -26,6 +26,7 @@ import scala.scalajs.js.annotation._
   * @api stable
   */
 class OSMXML () extends XMLFeature {
+  
   def readFeatures(source: String): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: String, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: GlobalObject): js.Array[typings.openlayers.mod.Feature] = js.native
@@ -42,6 +43,7 @@ class OSMXML () extends XMLFeature {
   def readFeatures(source: Document, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
+  
   def readProjection(source: String): Projection = js.native
   def readProjection(source: GlobalObject): Projection = js.native
   /**
@@ -54,4 +56,3 @@ class OSMXML () extends XMLFeature {
   def readProjection(source: Document): Projection = js.native
   def readProjection(source: Node): Projection = js.native
 }
-

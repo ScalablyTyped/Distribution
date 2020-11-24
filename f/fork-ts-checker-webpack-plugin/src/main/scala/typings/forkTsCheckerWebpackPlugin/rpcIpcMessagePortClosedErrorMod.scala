@@ -3,11 +3,12 @@ package typings.forkTsCheckerWebpackPlugin
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/rpc-ipc/error/RpcIpcMessagePortClosedError", JSImport.Namespace)
 @js.native
 object rpcIpcMessagePortClosedErrorMod extends js.Object {
+  
   @js.native
   class RpcIpcMessagePortClosedError protected () extends Error {
     def this(message: String) = this()
@@ -17,9 +18,9 @@ object rpcIpcMessagePortClosedErrorMod extends js.Object {
     def this(message: String, code: String, signal: String) = this()
     def this(message: String, code: Double, signal: String) = this()
     def this(message: String, code: Null, signal: String) = this()
+    
     val code: js.UndefOr[String | Double | Null] = js.native
+    
     val signal: js.UndefOr[String | Null] = js.native
   }
-  
 }
-

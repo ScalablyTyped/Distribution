@@ -3,7 +3,7 @@ package typings.googleapis.alphaMod.computeAlpha
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * External VPN gateway is the on-premises VPN gateway(s) or another cloud
@@ -15,29 +15,35 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaExternalVpnGateway extends js.Object {
+  
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
   var creationTimestamp: js.UndefOr[String] = js.native
+  
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * List of interfaces for this external VPN gateway.
     */
   var interfaces: js.UndefOr[js.Array[SchemaExternalVpnGatewayInterface]] = js.native
+  
   /**
     * [Output Only] Type of the resource. Always compute#externalVpnGateway for
     * externalVpnGateways.
     */
   var kind: js.UndefOr[String] = js.native
+  
   /**
     * A fingerprint for the labels being applied to this ExternalVpnGateway,
     * which is essentially a hash of the labels set used for optimistic
@@ -49,12 +55,14 @@ trait SchemaExternalVpnGateway extends js.Object {
     * ExternalVpnGateway.
     */
   var labelFingerprint: js.UndefOr[String] = js.native
+  
   /**
     * Labels to apply to this ExternalVpnGateway resource. These can be later
     * modified by the setLabels method. Each label key/value must comply with
     * RFC1035. Label values may be empty.
     */
   var labels: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * Name of the resource. Provided by the client when the resource is
     * created. The name must be 1-63 characters long, and comply with RFC1035.
@@ -65,76 +73,101 @@ trait SchemaExternalVpnGateway extends js.Object {
     * dash.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Indicates the user-supplied redundancy type of this external VPN gateway.
     */
   var redundancyType: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Server-defined URL for the resource.
     */
   var selfLink: js.UndefOr[String] = js.native
 }
-
 object SchemaExternalVpnGateway {
+  
   @scala.inline
   def apply(): SchemaExternalVpnGateway = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExternalVpnGateway]
   }
+  
   @scala.inline
   implicit class SchemaExternalVpnGatewayOps[Self <: SchemaExternalVpnGateway] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setInterfacesVarargs(value: SchemaExternalVpnGatewayInterface*): Self = this.set("interfaces", js.Array(value :_*))
+    
     @scala.inline
     def setInterfaces(value: js.Array[SchemaExternalVpnGatewayInterface]): Self = this.set("interfaces", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInterfaces: Self = this.set("interfaces", js.undefined)
+    
     @scala.inline
     def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKind: Self = this.set("kind", js.undefined)
+    
     @scala.inline
     def setLabelFingerprint(value: String): Self = this.set("labelFingerprint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabelFingerprint: Self = this.set("labelFingerprint", js.undefined)
+    
     @scala.inline
     def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabels: Self = this.set("labels", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setRedundancyType(value: String): Self = this.set("redundancyType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRedundancyType: Self = this.set("redundancyType", js.undefined)
+    
     @scala.inline
     def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSelfLink: Self = this.set("selfLink", js.undefined)
   }
-  
 }
-

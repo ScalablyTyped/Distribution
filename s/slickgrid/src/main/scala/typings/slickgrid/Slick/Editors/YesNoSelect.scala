@@ -4,14 +4,14 @@ import typings.slickgrid.Slick.SlickData
 import typings.slickgrid.Slick.ValidateResults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait YesNoSelect[T /* <: SlickData */] extends Editor[T]
-
 object YesNoSelect {
+  
   @scala.inline
-  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](
+  def apply[T /* <: SlickData */](
     applyValue: (T, String) => Unit,
     destroy: () => Unit,
     focus: () => Unit,
@@ -25,4 +25,3 @@ object YesNoSelect {
     __obj.asInstanceOf[YesNoSelect[T]]
   }
 }
-

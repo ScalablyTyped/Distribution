@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Search
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about query text that the user enters through an Input Method Editor (IME). */
 @JSGlobal("Windows.ApplicationModel.Search.SearchQueryLinguisticDetails")
@@ -22,4 +22,3 @@ class SearchQueryLinguisticDetails protected ()
     queryTextCompositionLength: Double
   ) = this()
 }
-

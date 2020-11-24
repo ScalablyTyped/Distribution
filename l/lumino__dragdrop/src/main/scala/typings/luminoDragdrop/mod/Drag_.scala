@@ -7,7 +7,7 @@ import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/dragdrop", "Drag")
 @js.native
@@ -18,86 +18,92 @@ class Drag_ protected () extends IDisposable {
     * @param options - The options for initializing the drag.
     */
   def this(options: IOptions) = this()
+  
   /**
     * Add the document event listeners for the drag object.
     */
   var _addListeners: js.Any = js.native
+  
   /**
     * Attach the drag image element at the specified location.
     *
     * This is a no-op if there is no drag image element.
     */
   var _attachDragImage: js.Any = js.native
+  
   var _currentElement: js.Any = js.native
+  
   var _currentTarget: js.Any = js.native
+  
   /**
     * Detach the drag image element from the DOM.
     *
     * This is a no-op if there is no drag image element.
     */
   var _detachDragImage: js.Any = js.native
+  
   var _disposed: js.Any = js.native
+  
   var _dropAction: js.Any = js.native
+  
   /**
     * Handle the `'keydown'` event for the drag object.
     */
   var _evtKeyDown: js.Any = js.native
+  
   /**
     * Handle the `'mousemove'` event for the drag object.
     */
   var _evtMouseMove: js.Any = js.native
+  
   /**
     * Handle the `'mouseup'` event for the drag object.
     */
   var _evtMouseUp: js.Any = js.native
+  
   /**
     * Finalize the drag operation and resolve the drag promise.
     */
   var _finalize: js.Any = js.native
+  
   /**
     * The scroll loop handler function.
     */
   var _onScrollFrame: js.Any = js.native
+  
   var _override: js.Any = js.native
+  
   var _promise: js.Any = js.native
+  
   /**
     * Remove the document event listeners for the drag object.
     */
   var _removeListeners: js.Any = js.native
+  
   var _resolve: js.Any = js.native
+  
   var _scrollTarget: js.Any = js.native
+  
   /**
     * Set the internal drop action state and update the drag cursor.
     */
   var _setDropAction: js.Any = js.native
+  
   /**
     * Update the current target node using the given mouse event.
     */
   var _updateCurrentTarget: js.Any = js.native
+  
   /**
     * Update the drag scroll element under the mouse.
     */
   var _updateDragScroll: js.Any = js.native
+  
   /**
     * The drag image element for the drag object.
     */
   val dragImage: HTMLElement | Null = js.native
-  /**
-    * The mime data for the drag object.
-    */
-  val mimeData: MimeData = js.native
-  /**
-    * The proposed drop action for the drag object.
-    */
-  val proposedAction: DropAction = js.native
-  /**
-    * Get the drag source for the drag object.
-    */
-  val source: js.Any = js.native
-  /**
-    * The supported drop actions for the drag object.
-    */
-  val supportedActions: SupportedActions = js.native
+  
   /**
     * Handle the DOM events for the drag operation.
     *
@@ -109,12 +115,29 @@ class Drag_ protected () extends IDisposable {
     * called directly by user code.
     */
   def handleEvent(event: Event): Unit = js.native
+  
+  /**
+    * The mime data for the drag object.
+    */
+  val mimeData: MimeData = js.native
+  
   /**
     * Move the drag image element to the specified location.
     *
     * This is a no-op if there is no drag image element.
     */
   /* protected */ def moveDragImage(clientX: Double, clientY: Double): Unit = js.native
+  
+  /**
+    * The proposed drop action for the drag object.
+    */
+  val proposedAction: DropAction = js.native
+  
+  /**
+    * Get the drag source for the drag object.
+    */
+  val source: js.Any = js.native
+  
   /**
     * Start the drag operation at the specified client position.
     *
@@ -137,5 +160,9 @@ class Drag_ protected () extends IDisposable {
     * This method assumes the left mouse button is already held down.
     */
   def start(clientX: Double, clientY: Double): js.Promise[DropAction] = js.native
+  
+  /**
+    * The supported drop actions for the drag object.
+    */
+  val supportedActions: SupportedActions = js.native
 }
-

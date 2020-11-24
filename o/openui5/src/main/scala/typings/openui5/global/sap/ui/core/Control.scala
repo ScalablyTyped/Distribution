@@ -2,7 +2,7 @@ package typings.openui5.global.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.Control")
 @js.native
@@ -25,4 +25,3 @@ abstract class Control protected ()
   def this(sId: String) = this()
   def this(sId: String, mSettings: js.Any) = this()
 }
-

@@ -10,9 +10,9 @@ Polyfill to make it easy to listen for element resize events
 | ------------------ | :-------------: |
 | Full name          | element-resize-event |
 | Keywords           | event, resize, element-query, element queries |
-| # releases         | 4 |
-| # dependents       | 91 |
-| # downloads        | 1495325 |
+| # releases         | 3 |
+| # dependents       | 103 |
+| # downloads        | 1880173 |
 | # stars            | 8 |
 
 ## Links

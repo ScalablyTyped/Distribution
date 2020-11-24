@@ -8,7 +8,7 @@ import typings.angularCore.mod.TrackByFunction
 import typings.angularCore.mod.ViewContainerRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "NgForOf")
 @js.native
@@ -18,25 +18,37 @@ class NgForOf[T, U /* <: NgIterable[T] */] protected () extends DoCheck {
     _template: TemplateRef[NgForOfContext[T, U]],
     _differs: IterableDiffers
   ) = this()
+  
   var _applyChanges: js.Any = js.native
+  
   var _differ: js.Any = js.native
+  
   var _differs: js.Any = js.native
+  
   var _ngForOf: js.Any = js.native
+  
   var _ngForOfDirty: js.Any = js.native
+  
   var _perViewChange: js.Any = js.native
+  
   var _template: js.Any = js.native
+  
   var _trackByFn: js.Any = js.native
+  
   var _viewContainer: js.Any = js.native
+  
   /**
     * The value of the iterable expression, which can be used as a
     * [template input variable](guide/structural-directives#template-input-variable).
     */
   def ngForOf_=(ngForOf: js.UndefOr[(U with NgIterable[T]) | Null]): Unit = js.native
+  
   /**
     * A reference to the template that is stamped out for each item in the iterable.
     * @see [template reference variable](guide/template-reference-variables)
     */
   def ngForTemplate_=(value: TemplateRef[NgForOfContext[T, U]]): Unit = js.native
+  
   def ngForTrackBy: TrackByFunction[T] = js.native
   /**
     * A function that defines how to track changes for items in the iterable.
@@ -53,15 +65,15 @@ class NgForOf[T, U /* <: NgIterable[T] */] protected () extends DoCheck {
     * rather than the identity of the object itself.
     *
     * The function receives two inputs,
-    * the iteration index and the node object ID.
+    * the iteration index and the associated node data.
     */
   def ngForTrackBy_=(fn: TrackByFunction[T]): Unit = js.native
 }
-
 /* static members */
 @JSImport("@angular/common", "NgForOf")
 @js.native
 object NgForOf extends js.Object {
+  
   /**
     * Asserts the correct type of the context for the template that `NgForOf` will render.
     *
@@ -70,4 +82,3 @@ object NgForOf extends js.Object {
     */
   def ngTemplateContextGuard[T, U /* <: NgIterable[T] */](dir: NgForOf[T, U], ctx: js.Any): /* is @angular/common.@angular/common.NgForOfContext<T, U> */ Boolean = js.native
 }
-

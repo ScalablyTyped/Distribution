@@ -2,15 +2,12 @@ package typings.callsites.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("callsites", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function callsites(): callsites.CallSite[];
-  // export = callsites;
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof callsites */ js.Any = js.native
+  
   /**
   	Get callsites from the V8 stack trace API.
   	@returns An array of `CallSite` objects.
@@ -25,5 +22,9 @@ object ^ extends js.Object {
   	```
   	*/
   def apply(): js.Array[CallSite] = js.native
+  
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function callsites(): callsites.CallSite[];
+  // export = callsites;
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof callsites */ js.Any = js.native
 }
-

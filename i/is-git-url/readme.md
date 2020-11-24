@@ -11,8 +11,8 @@ Regex to validate that a URL is a git url.
 | Full name          | is-git-url |
 | Keywords           | git, github, is, regex, regexp, test, url |
 | # releases         | 1 |
-| # dependents       | 44 |
-| # downloads        | 7747235 |
+| # dependents       | 45 |
+| # downloads        | 7728784 |
 | # stars            | 3 |
 
 ## Links

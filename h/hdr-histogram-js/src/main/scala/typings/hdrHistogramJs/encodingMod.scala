@@ -4,11 +4,12 @@ import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
 import typings.hdrHistogramJs.abstractHistogramMod.HistogramConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hdr-histogram-js/encoding", JSImport.Namespace)
 @js.native
 object encodingMod extends js.Object {
+  
   def decodeFromCompressedBase64(base64String: String): AbstractHistogram = js.native
   def decodeFromCompressedBase64(
     base64String: String,
@@ -21,7 +22,7 @@ object encodingMod extends js.Object {
     histogramConstr: HistogramConstructor,
     minBarForHighestTrackableValue: Double
   ): AbstractHistogram = js.native
+  
   def encodeIntoBase64String(histogram: AbstractHistogram): String = js.native
   def encodeIntoBase64String(histogram: AbstractHistogram, compressionLevel: Double): String = js.native
 }
-

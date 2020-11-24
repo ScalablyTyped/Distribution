@@ -3,11 +3,12 @@ package typings.openui5.global.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.ImageHelper")
 @js.native
 object ImageHelper extends js.Object {
+  
   /**
     * Creates or updates an image control.
     * @param sImgId id of the image to be dealt with.
@@ -28,4 +29,3 @@ object ImageHelper extends js.Object {
     aCssClassesToRemove: js.Array[_]
   ): Unit = js.native
 }
-

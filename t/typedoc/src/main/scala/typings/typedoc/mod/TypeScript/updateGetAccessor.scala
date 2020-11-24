@@ -9,11 +9,12 @@ import typings.typescript.mod.PropertyName
 import typings.typescript.mod.TypeNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.updateGetAccessor")
 @js.native
 object updateGetAccessor extends js.Object {
+  
   def apply(
     node: GetAccessorDeclaration,
     decorators: js.UndefOr[scala.Nothing],
@@ -113,6 +114,7 @@ object updateGetAccessor extends js.Object {
     `type`: TypeNode,
     body: Block
   ): GetAccessorDeclaration = js.native
+  /** @deprecated Use `factory.updateGetAccessorDeclaration` or the factory supplied by your transformation context instead. */
   def apply(
     node: GetAccessorDeclaration,
     decorators: js.Array[Decorator],
@@ -147,4 +149,3 @@ object updateGetAccessor extends js.Object {
     body: Block
   ): GetAccessorDeclaration = js.native
 }
-

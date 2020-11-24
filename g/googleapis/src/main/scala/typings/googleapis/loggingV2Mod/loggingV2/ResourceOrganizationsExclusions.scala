@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/logging/v2", "logging_v2.Resource$Organizations$Exclusions")
 @js.native
 class ResourceOrganizationsExclusions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * logging.organizations.exclusions.create
     * @desc Creates a new exclusion in a specified parent resource. Only log
@@ -47,6 +49,7 @@ class ResourceOrganizationsExclusions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLogExclusion]
   ): Unit = js.native
+  
   /**
     * logging.organizations.exclusions.delete
     * @desc Deletes an exclusion.
@@ -75,6 +78,7 @@ class ResourceOrganizationsExclusions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * logging.organizations.exclusions.get
     * @desc Gets the description of an exclusion.
@@ -106,6 +110,7 @@ class ResourceOrganizationsExclusions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLogExclusion]
   ): Unit = js.native
+  
   /**
     * logging.organizations.exclusions.list
     * @desc Lists all the exclusions in a parent resource.
@@ -139,6 +144,7 @@ class ResourceOrganizationsExclusions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListExclusionsResponse]
   ): Unit = js.native
+  
   /**
     * logging.organizations.exclusions.patch
     * @desc Changes one or more properties of an existing exclusion.
@@ -173,4 +179,3 @@ class ResourceOrganizationsExclusions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLogExclusion]
   ): Unit = js.native
 }
-

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ontouchstart")
 @js.native
@@ -14,4 +14,3 @@ object ontouchstart
         (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, js.Any]) | Null
       ]
     ]
-

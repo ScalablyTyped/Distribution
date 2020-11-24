@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ActivityType extends js.Object
-
 /** Specifies activity types of a sensor. */
 @JSGlobal("Windows.Devices.Sensors.ActivityType")
 @js.native
 object ActivityType extends js.Object {
+  
   /** The sensor indicates the user is riding a bicycle on the ground. */
   @js.native
   sealed trait biking extends ActivityType
@@ -42,6 +42,4 @@ object ActivityType extends js.Object {
   /** The sensor indicates the user is walking. The user travels at a moderate pace with one foot on the ground at all times. */
   @js.native
   sealed trait walking extends ActivityType
-  
 }
-

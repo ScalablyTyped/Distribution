@@ -2,10 +2,11 @@ package typings.negotiator.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Negotiator extends js.Object {
+  
   /**
     * Returns the most preferred charset from the client.
     *
@@ -14,6 +15,7 @@ trait Negotiator extends js.Object {
     */
   def charset(): js.UndefOr[String] = js.native
   def charset(availableCharsets: js.Array[String]): js.UndefOr[String] = js.native
+  
   /**
     * Returns an array of preferred charsets ordered by the client preference.
     *
@@ -22,6 +24,7 @@ trait Negotiator extends js.Object {
     */
   def charsets(): js.Array[String] = js.native
   def charsets(availableCharsets: js.Array[String]): js.Array[String] = js.native
+  
   /**
     * Returns the most preferred encoding from the client.
     *
@@ -30,6 +33,7 @@ trait Negotiator extends js.Object {
     */
   def encoding(): js.UndefOr[String] = js.native
   def encoding(availableEncodings: js.Array[String]): js.UndefOr[String] = js.native
+  
   /**
     * Returns an array of preferred encodings ordered by the client preference.
     *
@@ -38,6 +42,7 @@ trait Negotiator extends js.Object {
     */
   def encodings(): js.Array[String] = js.native
   def encodings(availableEncodings: js.Array[String]): js.Array[String] = js.native
+  
   /**
     * Returns the most preferred language from the client.
     *
@@ -46,6 +51,7 @@ trait Negotiator extends js.Object {
     */
   def language(): js.UndefOr[String] = js.native
   def language(availableLanguages: js.Array[String]): js.UndefOr[String] = js.native
+  
   /**
     * Returns an array of preferred languages ordered by the client preference.
     *
@@ -54,6 +60,7 @@ trait Negotiator extends js.Object {
     */
   def languages(): js.Array[String] = js.native
   def languages(availableLanguages: js.Array[String]): js.Array[String] = js.native
+  
   /**
     * Returns the most preferred media type from the client.
     *
@@ -62,6 +69,7 @@ trait Negotiator extends js.Object {
     */
   def mediaType(): js.UndefOr[String] = js.native
   def mediaType(availableMediaTypes: js.Array[String]): js.UndefOr[String] = js.native
+  
   /**
     * Returns an array of preferred media types ordered by the client preference
     *
@@ -71,4 +79,3 @@ trait Negotiator extends js.Object {
   def mediaTypes(): js.Array[String] = js.native
   def mediaTypes(availableMediaTypes: js.Array[String]): js.Array[String] = js.native
 }
-

@@ -4,11 +4,13 @@ import typings.consul.mod.Status.LeaderOptions
 import typings.consul.mod.Status.PeersOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Status extends js.Object {
+  
   var consul: Consul = js.native
+  
   /**
     * Returns the current Raft leader.
     */
@@ -22,6 +24,7 @@ trait Status extends js.Object {
     * Returns the current Raft leader.
     */
   def leader[TData](opts: LeaderOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Returns the current Raft peer set
     */
@@ -36,11 +39,11 @@ trait Status extends js.Object {
     */
   def peers[TData](opts: PeersOptions, callback: Callback[TData]): Unit = js.native
 }
-
 @JSImport("consul", "Status")
 @js.native
 object Status extends js.Object {
+  
   type LeaderOptions = CommonOptions
+  
   type PeersOptions = CommonOptions
 }
-

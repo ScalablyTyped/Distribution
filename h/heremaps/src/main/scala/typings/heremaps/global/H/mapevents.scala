@@ -6,12 +6,13 @@ import typings.heremaps.H.mapevents.Pointer.Button
 import typings.heremaps.H.math.BitMask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** mapevents *****/
 @JSGlobal("H.mapevents")
 @js.native
 object mapevents extends js.Object {
+  
   /**
     * Behavior class uses map events and adds behavior functionality to the map. This allows map panning and zooming via using mouse wheel
     * @property DRAGGING {number} - Map responds to user dragging via mouse or touch
@@ -28,6 +29,16 @@ object mapevents extends js.Object {
       */
     def this(mapEvents: typings.heremaps.H.mapevents.MapEvents) = this()
     def this(mapEvents: typings.heremaps.H.mapevents.MapEvents, options: Options) = this()
+  }
+  /* static members */
+  @js.native
+  object Behavior extends js.Object {
+    
+    var DBLTAPZOOM: Double = js.native
+    
+    var DRAGGING: Double = js.native
+    
+    var WHEELZOOM: Double = js.native
   }
   
   /**
@@ -165,6 +176,27 @@ object mapevents extends js.Object {
       opt_buttons: BitMask
     ) = this()
   }
+  @js.native
+  object Pointer extends js.Object {
+    
+    /**
+      * Types of a button
+      */
+    @js.native
+    object Button extends js.Object {
+      
+      @JSBracketAccess
+      def apply(value: Double): js.UndefOr[typings.heremaps.H.mapevents.Pointer.Button with Double] = js.native
+      
+      /* 1 */ val LEFT: typings.heremaps.H.mapevents.Pointer.Button.LEFT with Double = js.native
+      
+      /* 2 */ val MIDDLE: typings.heremaps.H.mapevents.Pointer.Button.MIDDLE with Double = js.native
+      
+      /* 0 */ val NONE: typings.heremaps.H.mapevents.Pointer.Button.NONE with Double = js.native
+      
+      /* 3 */ val RIGHT: typings.heremaps.H.mapevents.Pointer.Button.RIGHT with Double = js.native
+    }
+  }
   
   /**
     * WheelEvent is fired when the mouse wheel is used over the map. It contains information about cursor position and the map object which resides directly under the cursor.
@@ -203,31 +235,4 @@ object mapevents extends js.Object {
       originalEvent: typings.heremaps.H.mapevents.Event
     ) = this()
   }
-  
-  /* static members */
-  @js.native
-  object Behavior extends js.Object {
-    var DBLTAPZOOM: Double = js.native
-    var DRAGGING: Double = js.native
-    var WHEELZOOM: Double = js.native
-  }
-  
-  @js.native
-  object Pointer extends js.Object {
-    /**
-      * Types of a button
-      */
-    @js.native
-    object Button extends js.Object {
-      /* 1 */ val LEFT: typings.heremaps.H.mapevents.Pointer.Button.LEFT with Double = js.native
-      /* 2 */ val MIDDLE: typings.heremaps.H.mapevents.Pointer.Button.MIDDLE with Double = js.native
-      /* 0 */ val NONE: typings.heremaps.H.mapevents.Pointer.Button.NONE with Double = js.native
-      /* 3 */ val RIGHT: typings.heremaps.H.mapevents.Pointer.Button.RIGHT with Double = js.native
-      @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.heremaps.H.mapevents.Pointer.Button with Double] = js.native
-    }
-    
-  }
-  
 }
-

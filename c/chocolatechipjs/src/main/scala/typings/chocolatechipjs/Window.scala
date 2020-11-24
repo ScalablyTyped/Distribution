@@ -4,15 +4,11 @@ import typings.std.Document
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Window extends js.Object {
-  @JSName("$")
-  var $_Original: ChocolateChipStatic = js.native
-  @JSName("chocolatechipjs")
-  var chocolatechipjs_Original: ChocolateChipStatic = js.native
-  var jsonp: js.Any = js.native
+  
   /**
     * If no argument is provided, return the document as a ChocolateChipElementArray.
     */
@@ -68,6 +64,9 @@ trait Window extends js.Object {
     */
   @JSName("$")
   def $_Array(document: Document): js.Array[Document] = js.native
+  @JSName("$")
+  var $_Original: ChocolateChipStatic = js.native
+  
   /**
     * If no argument is provided, return the document as a ChocolateChipElementArray.
     */
@@ -111,5 +110,8 @@ trait Window extends js.Object {
     */
   @JSName("chocolatechipjs")
   def chocolatechipjs_Array(document: Document): js.Array[Document] = js.native
+  @JSName("chocolatechipjs")
+  var chocolatechipjs_Original: ChocolateChipStatic = js.native
+  
+  var jsonp: js.Any = js.native
 }
-

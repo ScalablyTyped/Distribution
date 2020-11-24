@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Storage.Search
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CommonFolderQuery extends js.Object
-
 /** Specifies how to group files into folders in the query results and determines whether the query is shallow or deep. Query results for deep queries include all files in all of the subfolders of the current folder, grouped into folders according to the specified option. */
 @JSGlobal("Windows.Storage.Search.CommonFolderQuery")
 @js.native
 object CommonFolderQuery extends js.Object {
+  
   /** A shallow list of the folders in the current folder, similar to the view that File Explorer provides. */
   @js.native
   sealed trait defaultQuery extends CommonFolderQuery
@@ -62,6 +62,4 @@ object CommonFolderQuery extends js.Object {
   /** Group files into virtual folders by year based on the System.ItemDate property of each file. Each folder will contain all (and only) files that have values for System.ItemDate within the same year. */
   @js.native
   sealed trait groupByYear extends CommonFolderQuery
-  
 }
-

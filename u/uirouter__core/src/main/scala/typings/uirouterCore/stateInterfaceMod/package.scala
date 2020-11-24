@@ -2,9 +2,10 @@ package typings.uirouterCore
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object stateInterfaceMod {
+  
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.uirouterCore.targetStateMod.TargetState
@@ -12,6 +13,7 @@ package object stateInterfaceMod {
     - scala.Unit
   */
   type RedirectToResult = typings.uirouterCore.stateInterfaceMod._RedirectToResult | java.lang.String | scala.Unit
+  
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.uirouterCore.stateInterfaceMod.StateDeclaration

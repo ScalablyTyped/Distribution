@@ -3,7 +3,7 @@ package typings.phonegap.global
 import org.scalablytyped.runtime.Instantiable3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Media")
 @js.native
@@ -15,7 +15,6 @@ class Media protected ()
     onError: js.Function1[/* error */ js.Any, _]
   ) = this()
 }
-
 @JSGlobal("Media")
 @js.native
 object Media
@@ -25,4 +24,3 @@ object Media
       /* onError */ js.Function1[/* error */ js.Any, js.Any], 
       typings.phonegap.Media
     ]
-

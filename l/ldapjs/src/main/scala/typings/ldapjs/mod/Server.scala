@@ -3,27 +3,28 @@ package typings.ldapjs.mod
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Server extends EventEmitter {
-  /**
-    * Set this property to reject connections when the server's connection count gets high.
-    */
-  var maxConnections: Double = js.native
-  /**
-    * Returns the fully qualified URL this server is listening on. For example: ldaps://10.1.2.3:1636. If you haven't yet called listen, it will always return ldap://localhost:389.
-    */
-  var url: String = js.native
+  
   def add(mount: String, cbHandlers: js.Any*): Unit = js.native
+  
   def bind(mount: String, cbHandlers: js.Any*): Unit = js.native
+  
+  def close(callback: js.Function0[Unit]): this.type = js.native
+  
   def compare(ditHook: String, cbHandlers: js.Any*): Unit = js.native
+  
   /**
     * The number of concurrent connections on the server. (getter only)
     */
   def connections(): Double = js.native
+  
   def del(ditHook: String, cbHandlers: js.Any*): Unit = js.native
+  
   def exop(arbitraryHook: String, cbHandlers: js.Any*): Unit = js.native
+  
   /**
     * Unix Domain Socket
     * Start a UNIX socket server listening for connections on the given path.
@@ -40,15 +41,29 @@ trait Server extends EventEmitter {
   def listen(port: Double, callback: js.Any): Unit = js.native
   def listen(port: Double, host: String): Unit = js.native
   def listen(port: Double, host: String, callback: js.Any): Unit = js.native
+  
   /**
     * File descriptor
     * Start a server listening for connections on the given file descriptor.
     * This file descriptor must have already had the bind(2) and listen(2) system calls invoked on it. Additionally, it must be set non-blocking; try fcntl(fd, F_SETFL, O_NONBLOCK).
     */
   def listenFD(fileDescriptor: js.Any): Unit = js.native
+  
+  /**
+    * Set this property to reject connections when the server's connection count gets high.
+    */
+  var maxConnections: Double = js.native
+  
   def modify(ditHook: String, cbHandlers: js.Any*): Unit = js.native
+  
   def modifyDN(ditHook: String, cbHandlers: js.Any*): Unit = js.native
+  
   def search(ditHook: String, cbHandlers: js.Any*): Unit = js.native
+  
   def unbind(cbHandlers: js.Any*): Unit = js.native
+  
+  /**
+    * Returns the fully qualified URL this server is listening on. For example: ldaps://10.1.2.3:1636. If you haven't yet called listen, it will always return ldap://localhost:389.
+    */
+  var url: String = js.native
 }
-

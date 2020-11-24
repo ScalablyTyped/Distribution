@@ -10,9 +10,9 @@ A JavaScript library for rendering music notation and guitar tablature
 | ------------------ | :-------------: |
 | Full name          | vexflow |
 | Keywords           | music, notation, guitar, tablature |
-| # releases         | 5 |
-| # dependents       | 12 |
-| # downloads        | 22301 |
+| # releases         | 16 |
+| # dependents       | 15 |
+| # downloads        | 58190 |
 | # stars            | 0 |
 
 ## Links

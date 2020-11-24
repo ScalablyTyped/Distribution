@@ -3,7 +3,7 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjSubList used for scriptable sublist (sublist).
@@ -20,6 +20,7 @@ trait nlobjSubList
   * @return
   */
 Instantiable0[js.Any] {
+  
   /**
     * add a button to this sublist.
     *
@@ -38,6 +39,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def addButton(name: String, label: String, script: String): js.Function0[Unit] = js.native
+  
   /**
     * add a field (column) to this sublist.
     *
@@ -58,6 +60,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def addField(name: String, `type`: String, label: String, source: js.Any): js.Function0[Unit] = js.native
+  
   /**
     * add "Mark All" and "Unmark All" buttons to this sublist of type "list".
     *
@@ -67,6 +70,7 @@ Instantiable0[js.Any] {
     * @since 2008.2
     */
   def addMarkAllButtons(): Unit = js.native
+  
   /**
     * add "Refresh" button to sublists of type "staticlist" to support manual refreshing of the sublist (without entire page reloads) if it's contents are very volatile
     * @return {nlobjButton}
@@ -78,6 +82,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def addRefreshButton(): js.Function0[Unit] = js.native
+  
   /**
     * Return the number of lines in a sublist.
     *
@@ -89,6 +94,7 @@ Instantiable0[js.Any] {
     * @param group
     */
   def getLineItemCount(group: String): String | Double = js.native
+  
   /**
     * set the displaytype for this sublist: hidden|normal.
     * This method is only supported on scripted or staticlist sublists via the UI Object API
@@ -98,6 +104,7 @@ Instantiable0[js.Any] {
     * @param type
     */
   def setDisplayType(`type`: String): Unit = js.native
+  
   /**
     * set helper text for this sublist.
     * This method is only supported on sublists via the UI Object API
@@ -107,6 +114,7 @@ Instantiable0[js.Any] {
     * @param help
     */
   def setHelpText(help: String): Unit = js.native
+  
   /**
     * set the label for this sublist.
     * This method is only supported on sublists via the UI Object API
@@ -116,6 +124,7 @@ Instantiable0[js.Any] {
     * @param label
     */
   def setLabel(label: String): Unit = js.native
+  
   /**
     * set the value of a matrix cell in this sublist.
     * @param {string}    field    matrix field name
@@ -135,6 +144,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def setLineItemMatrixValue(field: String, line: js.Any, column: js.Any, value: String): js.Any = js.native
+  
   /**
     * set the value of a cell in this sublist.
     *
@@ -151,6 +161,7 @@ Instantiable0[js.Any] {
     * @param value
     */
   def setLineItemValue(field: String, line: js.Any, value: String): Unit = js.native
+  
   /**
     * set values for multiple lines (Array of nlobjSearchResults or name-value pair Arrays) in this sublist.
     * Note that this method is only supported on scripted sublists via the UI Object API
@@ -160,6 +171,7 @@ Instantiable0[js.Any] {
     * @param values
     */
   def setLineItemValues(values: js.Any): Unit = js.native
+  
   /**
     * designate a field on sublist that must be unique across all lines (only supported on sublists of type inlineeditor, editor).
     * @param {string} fldnam the name of a field on this sublist whose value must be unique across all lines
@@ -174,4 +186,3 @@ Instantiable0[js.Any] {
     */
   def setUniqueField(fldnam: String): js.Function0[Unit] = js.native
 }
-

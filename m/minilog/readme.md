@@ -11,8 +11,8 @@ Lightweight client & server-side logging with Stream-API backends and counting, 
 | Full name          | minilog |
 | Keywords           | logging, sysadmin, tools |
 | # releases         | 0 |
-| # dependents       | 97 |
-| # downloads        | 499487 |
+| # dependents       | 108 |
+| # downloads        | 486519 |
 | # stars            | 3 |
 
 ## Links

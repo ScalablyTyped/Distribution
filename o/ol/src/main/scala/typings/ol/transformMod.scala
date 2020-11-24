@@ -3,11 +3,12 @@ package typings.ol
 import typings.ol.olMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/geom/flat/transform", JSImport.Namespace)
 @js.native
 object transformMod extends js.Object {
+  
   def rotate(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -25,6 +26,7 @@ object transformMod extends js.Object {
     anchor: js.Array[Double],
     opt_dest: js.Array[Double]
   ): js.Array[Double] = js.native
+  
   def scale(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -44,6 +46,7 @@ object transformMod extends js.Object {
     anchor: js.Array[Double],
     opt_dest: js.Array[Double]
   ): js.Array[Double] = js.native
+  
   def transform2D(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -59,6 +62,7 @@ object transformMod extends js.Object {
     transform: Transform,
     opt_dest: js.Array[Double]
   ): js.Array[Double] = js.native
+  
   def translate(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -77,4 +81,3 @@ object transformMod extends js.Object {
     opt_dest: js.Array[Double]
   ): js.Array[Double] = js.native
 }
-

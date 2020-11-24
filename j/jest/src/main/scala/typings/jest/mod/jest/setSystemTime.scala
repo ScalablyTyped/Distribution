@@ -3,11 +3,12 @@ package typings.jest.mod.jest
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jest", "jest.setSystemTime")
 @js.native
 object setSystemTime extends js.Object {
+  
   /**
     * Set the current system time used by fake timers. Simulates a user
     * changing the system clock while your program is running. It affects the
@@ -22,4 +23,3 @@ object setSystemTime extends js.Object {
   def apply(now: Double): Unit = js.native
   def apply(now: Date): Unit = js.native
 }
-

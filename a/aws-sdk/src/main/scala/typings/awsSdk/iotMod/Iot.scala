@@ -1,17 +1,16 @@
 package typings.awsSdk.iotMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Iot extends Service {
-  @JSName("config")
-  var config_Iot: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Accepts a pending certificate transfer. The default state of the certificate is INACTIVE. To check for pending certificate transfers, call ListCertificates to enumerate your certificates.
     */
@@ -25,6 +24,7 @@ trait Iot extends Service {
     params: AcceptCertificateTransferRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Adds a thing to a billing group.
     */
@@ -38,6 +38,7 @@ trait Iot extends Service {
     params: AddThingToBillingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AddThingToBillingGroupResponse, Unit]
   ): Request[AddThingToBillingGroupResponse, AWSError] = js.native
+  
   /**
     * Adds a thing to a thing group.
     */
@@ -51,6 +52,7 @@ trait Iot extends Service {
     params: AddThingToThingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AddThingToThingGroupResponse, Unit]
   ): Request[AddThingToThingGroupResponse, AWSError] = js.native
+  
   /**
     * Associates a group with a continuous job. The following criteria must be met:    The job must have been created with the targetSelection field set to "CONTINUOUS".   The job status must currently be "IN_PROGRESS".   The total number of targets associated with a job must not exceed 100.  
     */
@@ -64,6 +66,7 @@ trait Iot extends Service {
     params: AssociateTargetsWithJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateTargetsWithJobResponse, Unit]
   ): Request[AssociateTargetsWithJobResponse, AWSError] = js.native
+  
   /**
     * Attaches a policy to the specified target.
     */
@@ -77,6 +80,7 @@ trait Iot extends Service {
     params: AttachPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Attaches the specified policy to the specified principal (certificate or other credential).  Note: This API is deprecated. Please use AttachPolicy instead.
     */
@@ -90,6 +94,7 @@ trait Iot extends Service {
     params: AttachPrincipalPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Associates a Device Defender security profile with a thing group or this account. Each thing group or account can have up to five security profiles associated with it.
     */
@@ -103,6 +108,7 @@ trait Iot extends Service {
     params: AttachSecurityProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AttachSecurityProfileResponse, Unit]
   ): Request[AttachSecurityProfileResponse, AWSError] = js.native
+  
   /**
     * Attaches the specified principal to the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
     */
@@ -116,6 +122,7 @@ trait Iot extends Service {
     params: AttachThingPrincipalRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AttachThingPrincipalResponse, Unit]
   ): Request[AttachThingPrincipalResponse, AWSError] = js.native
+  
   /**
     * Cancels a mitigation action task that is in progress. If the task is not in progress, an InvalidRequestException occurs.
     */
@@ -131,6 +138,7 @@ trait Iot extends Service {
     params: CancelAuditMitigationActionsTaskRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CancelAuditMitigationActionsTaskResponse, Unit]
   ): Request[CancelAuditMitigationActionsTaskResponse, AWSError] = js.native
+  
   /**
     * Cancels an audit that is in progress. The audit can be either scheduled or on-demand. If the audit is not in progress, an "InvalidRequestException" occurs.
     */
@@ -144,6 +152,7 @@ trait Iot extends Service {
     params: CancelAuditTaskRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CancelAuditTaskResponse, Unit]
   ): Request[CancelAuditTaskResponse, AWSError] = js.native
+  
   /**
     * Cancels a pending transfer for the specified certificate.  Note Only the transfer source account can use this operation to cancel a transfer. (Transfer destinations can use RejectCertificateTransfer instead.) After transfer, AWS IoT returns the certificate to the source account in the INACTIVE state. After the destination account has accepted the transfer, the transfer cannot be cancelled. After a certificate transfer is cancelled, the status of the certificate changes from PENDING_TRANSFER to INACTIVE.
     */
@@ -157,6 +166,7 @@ trait Iot extends Service {
     params: CancelCertificateTransferRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Cancels a job.
     */
@@ -170,6 +180,7 @@ trait Iot extends Service {
     params: CancelJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CancelJobResponse, Unit]
   ): Request[CancelJobResponse, AWSError] = js.native
+  
   /**
     * Cancels the execution of a job for a given thing.
     */
@@ -183,6 +194,7 @@ trait Iot extends Service {
     params: CancelJobExecutionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Clears the default authorizer.
     */
@@ -196,6 +208,10 @@ trait Iot extends Service {
     params: ClearDefaultAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ClearDefaultAuthorizerResponse, Unit]
   ): Request[ClearDefaultAuthorizerResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_Iot: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Confirms a topic rule destination. When you create a rule requiring a destination, AWS IoT sends a confirmation message to the endpoint or base address you specify. The message includes a token which you pass back when calling ConfirmTopicRuleDestination to confirm that you own or have access to the endpoint.
     */
@@ -209,6 +225,21 @@ trait Iot extends Service {
     params: ConfirmTopicRuleDestinationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ConfirmTopicRuleDestinationResponse, Unit]
   ): Request[ConfirmTopicRuleDestinationResponse, AWSError] = js.native
+  
+  /**
+    *  Creates a Device Defender audit suppression. 
+    */
+  def createAuditSuppression(): Request[CreateAuditSuppressionResponse, AWSError] = js.native
+  def createAuditSuppression(callback: js.Function2[/* err */ AWSError, /* data */ CreateAuditSuppressionResponse, Unit]): Request[CreateAuditSuppressionResponse, AWSError] = js.native
+  /**
+    *  Creates a Device Defender audit suppression. 
+    */
+  def createAuditSuppression(params: CreateAuditSuppressionRequest): Request[CreateAuditSuppressionResponse, AWSError] = js.native
+  def createAuditSuppression(
+    params: CreateAuditSuppressionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateAuditSuppressionResponse, Unit]
+  ): Request[CreateAuditSuppressionResponse, AWSError] = js.native
+  
   /**
     * Creates an authorizer.
     */
@@ -222,6 +253,7 @@ trait Iot extends Service {
     params: CreateAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateAuthorizerResponse, Unit]
   ): Request[CreateAuthorizerResponse, AWSError] = js.native
+  
   /**
     * Creates a billing group.
     */
@@ -235,6 +267,7 @@ trait Iot extends Service {
     params: CreateBillingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateBillingGroupResponse, Unit]
   ): Request[CreateBillingGroupResponse, AWSError] = js.native
+  
   /**
     * Creates an X.509 certificate using the specified certificate signing request.  Note: The CSR must include a public key that is either an RSA key with a length of at least 2048 bits or an ECC key from NIST P-256 or NIST P-384 curves.   Note: Reusing the same certificate signing request (CSR) results in a distinct certificate. You can create multiple certificates in a batch by creating a directory, copying multiple .csr files into that directory, and then specifying that directory on the command line. The following commands show how to create a batch of certificates given a batch of CSRs. Assuming a set of CSRs are located inside of the directory my-csr-directory: On Linux and OS X, the command is: $ ls my-csr-directory/ | xargs -I {} aws iot create-certificate-from-csr --certificate-signing-request file://my-csr-directory/{} This command lists all of the CSRs in my-csr-directory and pipes each CSR file name to the aws iot create-certificate-from-csr AWS CLI command to create a certificate for the corresponding CSR. The aws iot create-certificate-from-csr part of the command can also be run in parallel to speed up the certificate creation process: $ ls my-csr-directory/ | xargs -P 10 -I {} aws iot create-certificate-from-csr --certificate-signing-request file://my-csr-directory/{} On Windows PowerShell, the command to create certificates for all CSRs in my-csr-directory is: &gt; ls -Name my-csr-directory | %{aws iot create-certificate-from-csr --certificate-signing-request file://my-csr-directory/$_} On a Windows command prompt, the command to create certificates for all CSRs in my-csr-directory is: &gt; forfiles /p my-csr-directory /c "cmd /c aws iot create-certificate-from-csr --certificate-signing-request file://@path"
     */
@@ -248,6 +281,7 @@ trait Iot extends Service {
     params: CreateCertificateFromCsrRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCertificateFromCsrResponse, Unit]
   ): Request[CreateCertificateFromCsrResponse, AWSError] = js.native
+  
   /**
     * Create a dimension that you can use to limit the scope of a metric used in a security profile for AWS IoT Device Defender. For example, using a TOPIC_FILTER dimension, you can narrow down the scope of the metric only to MQTT topics whose name match the pattern specified in the dimension.
     */
@@ -261,6 +295,7 @@ trait Iot extends Service {
     params: CreateDimensionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDimensionResponse, Unit]
   ): Request[CreateDimensionResponse, AWSError] = js.native
+  
   /**
     * Creates a domain configuration.  The domain configuration feature is in public preview and is subject to change. 
     */
@@ -274,6 +309,7 @@ trait Iot extends Service {
     params: CreateDomainConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainConfigurationResponse, Unit]
   ): Request[CreateDomainConfigurationResponse, AWSError] = js.native
+  
   /**
     * Creates a dynamic thing group.
     */
@@ -287,6 +323,7 @@ trait Iot extends Service {
     params: CreateDynamicThingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDynamicThingGroupResponse, Unit]
   ): Request[CreateDynamicThingGroupResponse, AWSError] = js.native
+  
   /**
     * Creates a job.
     */
@@ -300,6 +337,7 @@ trait Iot extends Service {
     params: CreateJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateJobResponse, Unit]
   ): Request[CreateJobResponse, AWSError] = js.native
+  
   /**
     * Creates a 2048-bit RSA key pair and issues an X.509 certificate using the issued public key. You can also call CreateKeysAndCertificate over MQTT from a device, for more information, see Provisioning MQTT API.  Note This is the only time AWS IoT issues the private key for this certificate, so it is important to keep it in a secure location.
     */
@@ -313,19 +351,21 @@ trait Iot extends Service {
     params: CreateKeysAndCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateKeysAndCertificateResponse, Unit]
   ): Request[CreateKeysAndCertificateResponse, AWSError] = js.native
+  
   /**
-    * Defines an action that can be applied to audit findings by using StartAuditMitigationActionsTask. Each mitigation action can apply only one type of change.
+    * Defines an action that can be applied to audit findings by using StartAuditMitigationActionsTask. Only certain types of mitigation actions can be applied to specific check names. For more information, see Mitigation actions. Each mitigation action can apply only one type of change.
     */
   def createMitigationAction(): Request[CreateMitigationActionResponse, AWSError] = js.native
   def createMitigationAction(callback: js.Function2[/* err */ AWSError, /* data */ CreateMitigationActionResponse, Unit]): Request[CreateMitigationActionResponse, AWSError] = js.native
   /**
-    * Defines an action that can be applied to audit findings by using StartAuditMitigationActionsTask. Each mitigation action can apply only one type of change.
+    * Defines an action that can be applied to audit findings by using StartAuditMitigationActionsTask. Only certain types of mitigation actions can be applied to specific check names. For more information, see Mitigation actions. Each mitigation action can apply only one type of change.
     */
   def createMitigationAction(params: CreateMitigationActionRequest): Request[CreateMitigationActionResponse, AWSError] = js.native
   def createMitigationAction(
     params: CreateMitigationActionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateMitigationActionResponse, Unit]
   ): Request[CreateMitigationActionResponse, AWSError] = js.native
+  
   /**
     * Creates an AWS IoT OTAUpdate on a target group of things or groups.
     */
@@ -339,6 +379,7 @@ trait Iot extends Service {
     params: CreateOTAUpdateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateOTAUpdateResponse, Unit]
   ): Request[CreateOTAUpdateResponse, AWSError] = js.native
+  
   /**
     * Creates an AWS IoT policy. The created policy is the default version for the policy. This operation creates a policy version with a version identifier of 1 and sets 1 as the policy's default version.
     */
@@ -352,6 +393,7 @@ trait Iot extends Service {
     params: CreatePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePolicyResponse, Unit]
   ): Request[CreatePolicyResponse, AWSError] = js.native
+  
   /**
     * Creates a new version of the specified AWS IoT policy. To update a policy, create a new policy version. A managed policy can have up to five versions. If the policy has five versions, you must use DeletePolicyVersion to delete an existing version before you create a new one. Optionally, you can set the new version as the policy's default version. The default version is the operative version (that is, the version that is in effect for the certificates to which the policy is attached).
     */
@@ -365,6 +407,7 @@ trait Iot extends Service {
     params: CreatePolicyVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePolicyVersionResponse, Unit]
   ): Request[CreatePolicyVersionResponse, AWSError] = js.native
+  
   /**
     * Creates a provisioning claim.
     */
@@ -378,6 +421,7 @@ trait Iot extends Service {
     params: CreateProvisioningClaimRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProvisioningClaimResponse, Unit]
   ): Request[CreateProvisioningClaimResponse, AWSError] = js.native
+  
   /**
     * Creates a fleet provisioning template.
     */
@@ -391,6 +435,7 @@ trait Iot extends Service {
     params: CreateProvisioningTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProvisioningTemplateResponse, Unit]
   ): Request[CreateProvisioningTemplateResponse, AWSError] = js.native
+  
   /**
     * Creates a new version of a fleet provisioning template.
     */
@@ -406,6 +451,7 @@ trait Iot extends Service {
     params: CreateProvisioningTemplateVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProvisioningTemplateVersionResponse, Unit]
   ): Request[CreateProvisioningTemplateVersionResponse, AWSError] = js.native
+  
   /**
     * Creates a role alias.
     */
@@ -419,6 +465,7 @@ trait Iot extends Service {
     params: CreateRoleAliasRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRoleAliasResponse, Unit]
   ): Request[CreateRoleAliasResponse, AWSError] = js.native
+  
   /**
     * Creates a scheduled audit that is run at a specified time interval.
     */
@@ -432,6 +479,7 @@ trait Iot extends Service {
     params: CreateScheduledAuditRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateScheduledAuditResponse, Unit]
   ): Request[CreateScheduledAuditResponse, AWSError] = js.native
+  
   /**
     * Creates a Device Defender security profile.
     */
@@ -445,6 +493,7 @@ trait Iot extends Service {
     params: CreateSecurityProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSecurityProfileResponse, Unit]
   ): Request[CreateSecurityProfileResponse, AWSError] = js.native
+  
   /**
     * Creates a stream for delivering one or more large files in chunks over MQTT. A stream transports data bytes in chunks or blocks packaged as MQTT messages from a source like S3. You can have one or more files associated with a stream.
     */
@@ -458,6 +507,7 @@ trait Iot extends Service {
     params: CreateStreamRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateStreamResponse, Unit]
   ): Request[CreateStreamResponse, AWSError] = js.native
+  
   /**
     * Creates a thing record in the registry. If this call is made multiple times using the same thing name and configuration, the call will succeed. If this call is made with the same thing name but different configuration a ResourceAlreadyExistsException is thrown.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
     */
@@ -471,6 +521,7 @@ trait Iot extends Service {
     params: CreateThingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateThingResponse, Unit]
   ): Request[CreateThingResponse, AWSError] = js.native
+  
   /**
     * Create a thing group.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
     */
@@ -484,6 +535,7 @@ trait Iot extends Service {
     params: CreateThingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateThingGroupResponse, Unit]
   ): Request[CreateThingGroupResponse, AWSError] = js.native
+  
   /**
     * Creates a new thing type.
     */
@@ -497,6 +549,7 @@ trait Iot extends Service {
     params: CreateThingTypeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateThingTypeResponse, Unit]
   ): Request[CreateThingTypeResponse, AWSError] = js.native
+  
   /**
     * Creates a rule. Creating rules is an administrator-level action. Any user who has permission to create rules will be able to access data processed by the rule.
     */
@@ -510,6 +563,7 @@ trait Iot extends Service {
     params: CreateTopicRuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Creates a topic rule destination. The destination must be confirmed prior to use.
     */
@@ -523,6 +577,7 @@ trait Iot extends Service {
     params: CreateTopicRuleDestinationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateTopicRuleDestinationResponse, Unit]
   ): Request[CreateTopicRuleDestinationResponse, AWSError] = js.native
+  
   /**
     * Restores the default settings for Device Defender audits for this account. Any configuration data you entered is deleted and all audit checks are reset to disabled. 
     */
@@ -538,6 +593,21 @@ trait Iot extends Service {
     params: DeleteAccountAuditConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccountAuditConfigurationResponse, Unit]
   ): Request[DeleteAccountAuditConfigurationResponse, AWSError] = js.native
+  
+  /**
+    *  Deletes a Device Defender audit suppression. 
+    */
+  def deleteAuditSuppression(): Request[DeleteAuditSuppressionResponse, AWSError] = js.native
+  def deleteAuditSuppression(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAuditSuppressionResponse, Unit]): Request[DeleteAuditSuppressionResponse, AWSError] = js.native
+  /**
+    *  Deletes a Device Defender audit suppression. 
+    */
+  def deleteAuditSuppression(params: DeleteAuditSuppressionRequest): Request[DeleteAuditSuppressionResponse, AWSError] = js.native
+  def deleteAuditSuppression(
+    params: DeleteAuditSuppressionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteAuditSuppressionResponse, Unit]
+  ): Request[DeleteAuditSuppressionResponse, AWSError] = js.native
+  
   /**
     * Deletes an authorizer.
     */
@@ -551,6 +621,7 @@ trait Iot extends Service {
     params: DeleteAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAuthorizerResponse, Unit]
   ): Request[DeleteAuthorizerResponse, AWSError] = js.native
+  
   /**
     * Deletes the billing group.
     */
@@ -564,6 +635,7 @@ trait Iot extends Service {
     params: DeleteBillingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteBillingGroupResponse, Unit]
   ): Request[DeleteBillingGroupResponse, AWSError] = js.native
+  
   /**
     * Deletes a registered CA certificate.
     */
@@ -577,6 +649,7 @@ trait Iot extends Service {
     params: DeleteCACertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteCACertificateResponse, Unit]
   ): Request[DeleteCACertificateResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified certificate. A certificate cannot be deleted if it has a policy or IoT thing attached to it or if its status is set to ACTIVE. To delete a certificate, first use the DetachPrincipalPolicy API to detach all policies. Next, use the UpdateCertificate API to set the certificate to the INACTIVE status.
     */
@@ -590,6 +663,7 @@ trait Iot extends Service {
     params: DeleteCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Removes the specified dimension from your AWS account.
     */
@@ -603,6 +677,7 @@ trait Iot extends Service {
     params: DeleteDimensionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDimensionResponse, Unit]
   ): Request[DeleteDimensionResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified domain configuration.  The domain configuration feature is in public preview and is subject to change. 
     */
@@ -616,6 +691,7 @@ trait Iot extends Service {
     params: DeleteDomainConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainConfigurationResponse, Unit]
   ): Request[DeleteDomainConfigurationResponse, AWSError] = js.native
+  
   /**
     * Deletes a dynamic thing group.
     */
@@ -629,6 +705,7 @@ trait Iot extends Service {
     params: DeleteDynamicThingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDynamicThingGroupResponse, Unit]
   ): Request[DeleteDynamicThingGroupResponse, AWSError] = js.native
+  
   /**
     * Deletes a job and its related job executions. Deleting a job may take time, depending on the number of job executions created for the job and various other factors. While the job is being deleted, the status of the job will be shown as "DELETION_IN_PROGRESS". Attempting to delete or cancel a job whose status is already "DELETION_IN_PROGRESS" will result in an error. Only 10 jobs may have status "DELETION_IN_PROGRESS" at the same time, or a LimitExceededException will occur.
     */
@@ -639,6 +716,7 @@ trait Iot extends Service {
     */
   def deleteJob(params: DeleteJobRequest): Request[js.Object, AWSError] = js.native
   def deleteJob(params: DeleteJobRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a job execution.
     */
@@ -652,6 +730,7 @@ trait Iot extends Service {
     params: DeleteJobExecutionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a defined mitigation action from your AWS account.
     */
@@ -665,6 +744,7 @@ trait Iot extends Service {
     params: DeleteMitigationActionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteMitigationActionResponse, Unit]
   ): Request[DeleteMitigationActionResponse, AWSError] = js.native
+  
   /**
     * Delete an OTA update.
     */
@@ -678,6 +758,7 @@ trait Iot extends Service {
     params: DeleteOTAUpdateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteOTAUpdateResponse, Unit]
   ): Request[DeleteOTAUpdateResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified policy. A policy cannot be deleted if it has non-default versions or it is attached to any certificate. To delete a policy, use the DeletePolicyVersion API to delete all non-default versions of the policy; use the DetachPrincipalPolicy API to detach the policy from any certificate; and then use the DeletePolicy API to delete the policy. When a policy is deleted using DeletePolicy, its default version is deleted with it.
     */
@@ -691,6 +772,7 @@ trait Iot extends Service {
     params: DeletePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the specified version of the specified policy. You cannot delete the default version of a policy using this API. To delete the default version of a policy, use DeletePolicy. To find out which version of a policy is marked as the default version, use ListPolicyVersions.
     */
@@ -704,6 +786,7 @@ trait Iot extends Service {
     params: DeletePolicyVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a fleet provisioning template.
     */
@@ -717,6 +800,7 @@ trait Iot extends Service {
     params: DeleteProvisioningTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteProvisioningTemplateResponse, Unit]
   ): Request[DeleteProvisioningTemplateResponse, AWSError] = js.native
+  
   /**
     * Deletes a fleet provisioning template version.
     */
@@ -732,6 +816,7 @@ trait Iot extends Service {
     params: DeleteProvisioningTemplateVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteProvisioningTemplateVersionResponse, Unit]
   ): Request[DeleteProvisioningTemplateVersionResponse, AWSError] = js.native
+  
   /**
     * Deletes a CA certificate registration code.
     */
@@ -745,6 +830,7 @@ trait Iot extends Service {
     params: DeleteRegistrationCodeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRegistrationCodeResponse, Unit]
   ): Request[DeleteRegistrationCodeResponse, AWSError] = js.native
+  
   /**
     * Deletes a role alias
     */
@@ -758,6 +844,7 @@ trait Iot extends Service {
     params: DeleteRoleAliasRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRoleAliasResponse, Unit]
   ): Request[DeleteRoleAliasResponse, AWSError] = js.native
+  
   /**
     * Deletes a scheduled audit.
     */
@@ -771,6 +858,7 @@ trait Iot extends Service {
     params: DeleteScheduledAuditRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteScheduledAuditResponse, Unit]
   ): Request[DeleteScheduledAuditResponse, AWSError] = js.native
+  
   /**
     * Deletes a Device Defender security profile.
     */
@@ -784,6 +872,7 @@ trait Iot extends Service {
     params: DeleteSecurityProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteSecurityProfileResponse, Unit]
   ): Request[DeleteSecurityProfileResponse, AWSError] = js.native
+  
   /**
     * Deletes a stream.
     */
@@ -797,6 +886,7 @@ trait Iot extends Service {
     params: DeleteStreamRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteStreamResponse, Unit]
   ): Request[DeleteStreamResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified thing. Returns successfully with no error if the deletion is successful or you specify a thing that doesn't exist.
     */
@@ -810,6 +900,7 @@ trait Iot extends Service {
     params: DeleteThingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteThingResponse, Unit]
   ): Request[DeleteThingResponse, AWSError] = js.native
+  
   /**
     * Deletes a thing group.
     */
@@ -823,6 +914,7 @@ trait Iot extends Service {
     params: DeleteThingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteThingGroupResponse, Unit]
   ): Request[DeleteThingGroupResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified thing type. You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
     */
@@ -836,6 +928,7 @@ trait Iot extends Service {
     params: DeleteThingTypeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteThingTypeResponse, Unit]
   ): Request[DeleteThingTypeResponse, AWSError] = js.native
+  
   /**
     * Deletes the rule.
     */
@@ -849,6 +942,7 @@ trait Iot extends Service {
     params: DeleteTopicRuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a topic rule destination.
     */
@@ -862,6 +956,7 @@ trait Iot extends Service {
     params: DeleteTopicRuleDestinationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteTopicRuleDestinationResponse, Unit]
   ): Request[DeleteTopicRuleDestinationResponse, AWSError] = js.native
+  
   /**
     * Deletes a logging level.
     */
@@ -875,6 +970,7 @@ trait Iot extends Service {
     params: DeleteV2LoggingLevelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deprecates a thing type. You can not associate new things with deprecated thing type.
     */
@@ -888,6 +984,7 @@ trait Iot extends Service {
     params: DeprecateThingTypeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeprecateThingTypeResponse, Unit]
   ): Request[DeprecateThingTypeResponse, AWSError] = js.native
+  
   /**
     * Gets information about the Device Defender audit settings for this account. Settings include how audit notifications are sent and which audit checks are enabled or disabled.
     */
@@ -903,6 +1000,7 @@ trait Iot extends Service {
     params: DescribeAccountAuditConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountAuditConfigurationResponse, Unit]
   ): Request[DescribeAccountAuditConfigurationResponse, AWSError] = js.native
+  
   /**
     * Gets information about a single audit finding. Properties include the reason for noncompliance, the severity of the issue, and when the audit that returned the finding was started.
     */
@@ -916,6 +1014,7 @@ trait Iot extends Service {
     params: DescribeAuditFindingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAuditFindingResponse, Unit]
   ): Request[DescribeAuditFindingResponse, AWSError] = js.native
+  
   /**
     * Gets information about an audit mitigation task that is used to apply mitigation actions to a set of audit findings. Properties include the actions being applied, the audit checks to which they're being applied, the task status, and aggregated task statistics.
     */
@@ -931,6 +1030,21 @@ trait Iot extends Service {
     params: DescribeAuditMitigationActionsTaskRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAuditMitigationActionsTaskResponse, Unit]
   ): Request[DescribeAuditMitigationActionsTaskResponse, AWSError] = js.native
+  
+  /**
+    *  Gets information about a Device Defender audit suppression. 
+    */
+  def describeAuditSuppression(): Request[DescribeAuditSuppressionResponse, AWSError] = js.native
+  def describeAuditSuppression(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAuditSuppressionResponse, Unit]): Request[DescribeAuditSuppressionResponse, AWSError] = js.native
+  /**
+    *  Gets information about a Device Defender audit suppression. 
+    */
+  def describeAuditSuppression(params: DescribeAuditSuppressionRequest): Request[DescribeAuditSuppressionResponse, AWSError] = js.native
+  def describeAuditSuppression(
+    params: DescribeAuditSuppressionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAuditSuppressionResponse, Unit]
+  ): Request[DescribeAuditSuppressionResponse, AWSError] = js.native
+  
   /**
     * Gets information about a Device Defender audit.
     */
@@ -944,6 +1058,7 @@ trait Iot extends Service {
     params: DescribeAuditTaskRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAuditTaskResponse, Unit]
   ): Request[DescribeAuditTaskResponse, AWSError] = js.native
+  
   /**
     * Describes an authorizer.
     */
@@ -957,6 +1072,7 @@ trait Iot extends Service {
     params: DescribeAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAuthorizerResponse, Unit]
   ): Request[DescribeAuthorizerResponse, AWSError] = js.native
+  
   /**
     * Returns information about a billing group.
     */
@@ -970,6 +1086,7 @@ trait Iot extends Service {
     params: DescribeBillingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeBillingGroupResponse, Unit]
   ): Request[DescribeBillingGroupResponse, AWSError] = js.native
+  
   /**
     * Describes a registered CA certificate.
     */
@@ -983,6 +1100,7 @@ trait Iot extends Service {
     params: DescribeCACertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCACertificateResponse, Unit]
   ): Request[DescribeCACertificateResponse, AWSError] = js.native
+  
   /**
     * Gets information about the specified certificate.
     */
@@ -996,6 +1114,7 @@ trait Iot extends Service {
     params: DescribeCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCertificateResponse, Unit]
   ): Request[DescribeCertificateResponse, AWSError] = js.native
+  
   /**
     * Describes the default authorizer.
     */
@@ -1009,6 +1128,7 @@ trait Iot extends Service {
     params: DescribeDefaultAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDefaultAuthorizerResponse, Unit]
   ): Request[DescribeDefaultAuthorizerResponse, AWSError] = js.native
+  
   /**
     * Provides details about a dimension that is defined in your AWS account.
     */
@@ -1022,6 +1142,7 @@ trait Iot extends Service {
     params: DescribeDimensionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDimensionResponse, Unit]
   ): Request[DescribeDimensionResponse, AWSError] = js.native
+  
   /**
     * Gets summary information about a domain configuration.  The domain configuration feature is in public preview and is subject to change. 
     */
@@ -1035,6 +1156,7 @@ trait Iot extends Service {
     params: DescribeDomainConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainConfigurationResponse, Unit]
   ): Request[DescribeDomainConfigurationResponse, AWSError] = js.native
+  
   /**
     * Returns a unique endpoint specific to the AWS account making the call.
     */
@@ -1048,6 +1170,7 @@ trait Iot extends Service {
     params: DescribeEndpointRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointResponse, Unit]
   ): Request[DescribeEndpointResponse, AWSError] = js.native
+  
   /**
     * Describes event configurations.
     */
@@ -1061,6 +1184,7 @@ trait Iot extends Service {
     params: DescribeEventConfigurationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEventConfigurationsResponse, Unit]
   ): Request[DescribeEventConfigurationsResponse, AWSError] = js.native
+  
   /**
     * Describes a search index.
     */
@@ -1074,6 +1198,7 @@ trait Iot extends Service {
     params: DescribeIndexRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeIndexResponse, Unit]
   ): Request[DescribeIndexResponse, AWSError] = js.native
+  
   /**
     * Describes a job.
     */
@@ -1087,6 +1212,7 @@ trait Iot extends Service {
     params: DescribeJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeJobResponse, Unit]
   ): Request[DescribeJobResponse, AWSError] = js.native
+  
   /**
     * Describes a job execution.
     */
@@ -1100,6 +1226,7 @@ trait Iot extends Service {
     params: DescribeJobExecutionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeJobExecutionResponse, Unit]
   ): Request[DescribeJobExecutionResponse, AWSError] = js.native
+  
   /**
     * Gets information about a mitigation action.
     */
@@ -1113,6 +1240,7 @@ trait Iot extends Service {
     params: DescribeMitigationActionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeMitigationActionResponse, Unit]
   ): Request[DescribeMitigationActionResponse, AWSError] = js.native
+  
   /**
     * Returns information about a fleet provisioning template.
     */
@@ -1126,6 +1254,7 @@ trait Iot extends Service {
     params: DescribeProvisioningTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProvisioningTemplateResponse, Unit]
   ): Request[DescribeProvisioningTemplateResponse, AWSError] = js.native
+  
   /**
     * Returns information about a fleet provisioning template version.
     */
@@ -1141,6 +1270,7 @@ trait Iot extends Service {
     params: DescribeProvisioningTemplateVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProvisioningTemplateVersionResponse, Unit]
   ): Request[DescribeProvisioningTemplateVersionResponse, AWSError] = js.native
+  
   /**
     * Describes a role alias.
     */
@@ -1154,6 +1284,7 @@ trait Iot extends Service {
     params: DescribeRoleAliasRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRoleAliasResponse, Unit]
   ): Request[DescribeRoleAliasResponse, AWSError] = js.native
+  
   /**
     * Gets information about a scheduled audit.
     */
@@ -1167,6 +1298,7 @@ trait Iot extends Service {
     params: DescribeScheduledAuditRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeScheduledAuditResponse, Unit]
   ): Request[DescribeScheduledAuditResponse, AWSError] = js.native
+  
   /**
     * Gets information about a Device Defender security profile.
     */
@@ -1180,6 +1312,7 @@ trait Iot extends Service {
     params: DescribeSecurityProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSecurityProfileResponse, Unit]
   ): Request[DescribeSecurityProfileResponse, AWSError] = js.native
+  
   /**
     * Gets information about a stream.
     */
@@ -1193,6 +1326,7 @@ trait Iot extends Service {
     params: DescribeStreamRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStreamResponse, Unit]
   ): Request[DescribeStreamResponse, AWSError] = js.native
+  
   /**
     * Gets information about the specified thing.
     */
@@ -1206,6 +1340,7 @@ trait Iot extends Service {
     params: DescribeThingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeThingResponse, Unit]
   ): Request[DescribeThingResponse, AWSError] = js.native
+  
   /**
     * Describe a thing group.
     */
@@ -1219,6 +1354,7 @@ trait Iot extends Service {
     params: DescribeThingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeThingGroupResponse, Unit]
   ): Request[DescribeThingGroupResponse, AWSError] = js.native
+  
   /**
     * Describes a bulk thing provisioning task.
     */
@@ -1232,6 +1368,7 @@ trait Iot extends Service {
     params: DescribeThingRegistrationTaskRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeThingRegistrationTaskResponse, Unit]
   ): Request[DescribeThingRegistrationTaskResponse, AWSError] = js.native
+  
   /**
     * Gets information about the specified thing type.
     */
@@ -1245,6 +1382,7 @@ trait Iot extends Service {
     params: DescribeThingTypeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeThingTypeResponse, Unit]
   ): Request[DescribeThingTypeResponse, AWSError] = js.native
+  
   /**
     * Detaches a policy from the specified target.
     */
@@ -1258,6 +1396,7 @@ trait Iot extends Service {
     params: DetachPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Removes the specified policy from the specified certificate.  Note: This API is deprecated. Please use DetachPolicy instead.
     */
@@ -1271,6 +1410,7 @@ trait Iot extends Service {
     params: DetachPrincipalPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Disassociates a Device Defender security profile from a thing group or from this account.
     */
@@ -1284,6 +1424,7 @@ trait Iot extends Service {
     params: DetachSecurityProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DetachSecurityProfileResponse, Unit]
   ): Request[DetachSecurityProfileResponse, AWSError] = js.native
+  
   /**
     * Detaches the specified principal from the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
     */
@@ -1297,6 +1438,7 @@ trait Iot extends Service {
     params: DetachThingPrincipalRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DetachThingPrincipalResponse, Unit]
   ): Request[DetachThingPrincipalResponse, AWSError] = js.native
+  
   /**
     * Disables the rule.
     */
@@ -1310,6 +1452,7 @@ trait Iot extends Service {
     params: DisableTopicRuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Enables the rule.
     */
@@ -1323,6 +1466,7 @@ trait Iot extends Service {
     params: EnableTopicRuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Returns the approximate count of unique values that match the query.
     */
@@ -1336,6 +1480,7 @@ trait Iot extends Service {
     params: GetCardinalityRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCardinalityResponse, Unit]
   ): Request[GetCardinalityResponse, AWSError] = js.native
+  
   /**
     * Gets a list of the policies that have an effect on the authorization behavior of the specified device when it connects to the AWS IoT device gateway.
     */
@@ -1349,6 +1494,7 @@ trait Iot extends Service {
     params: GetEffectivePoliciesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetEffectivePoliciesResponse, Unit]
   ): Request[GetEffectivePoliciesResponse, AWSError] = js.native
+  
   /**
     * Gets the indexing configuration.
     */
@@ -1362,6 +1508,7 @@ trait Iot extends Service {
     params: GetIndexingConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetIndexingConfigurationResponse, Unit]
   ): Request[GetIndexingConfigurationResponse, AWSError] = js.native
+  
   /**
     * Gets a job document.
     */
@@ -1375,6 +1522,7 @@ trait Iot extends Service {
     params: GetJobDocumentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetJobDocumentResponse, Unit]
   ): Request[GetJobDocumentResponse, AWSError] = js.native
+  
   /**
     * Gets the logging options. NOTE: use of this command is not recommended. Use GetV2LoggingOptions instead.
     */
@@ -1388,6 +1536,7 @@ trait Iot extends Service {
     params: GetLoggingOptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLoggingOptionsResponse, Unit]
   ): Request[GetLoggingOptionsResponse, AWSError] = js.native
+  
   /**
     * Gets an OTA update.
     */
@@ -1401,6 +1550,7 @@ trait Iot extends Service {
     params: GetOTAUpdateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetOTAUpdateResponse, Unit]
   ): Request[GetOTAUpdateResponse, AWSError] = js.native
+  
   /**
     * Groups the aggregated values that match the query into percentile groupings. The default percentile groupings are: 1,5,25,50,75,95,99, although you can specify your own when you call GetPercentiles. This function returns a value for each percentile group specified (or the default percentile groupings). The percentile group "1" contains the aggregated field value that occurs in approximately one percent of the values that match the query. The percentile group "5" contains the aggregated field value that occurs in approximately five percent of the values that match the query, and so on. The result is an approximation, the more values that match the query, the more accurate the percentile values.
     */
@@ -1414,6 +1564,7 @@ trait Iot extends Service {
     params: GetPercentilesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPercentilesResponse, Unit]
   ): Request[GetPercentilesResponse, AWSError] = js.native
+  
   /**
     * Gets information about the specified policy with the policy document of the default version.
     */
@@ -1427,6 +1578,7 @@ trait Iot extends Service {
     params: GetPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPolicyResponse, Unit]
   ): Request[GetPolicyResponse, AWSError] = js.native
+  
   /**
     * Gets information about the specified policy version.
     */
@@ -1440,6 +1592,7 @@ trait Iot extends Service {
     params: GetPolicyVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPolicyVersionResponse, Unit]
   ): Request[GetPolicyVersionResponse, AWSError] = js.native
+  
   /**
     * Gets a registration code used to register a CA certificate with AWS IoT.
     */
@@ -1453,6 +1606,7 @@ trait Iot extends Service {
     params: GetRegistrationCodeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRegistrationCodeResponse, Unit]
   ): Request[GetRegistrationCodeResponse, AWSError] = js.native
+  
   /**
     * Returns the count, average, sum, minimum, maximum, sum of squares, variance, and standard deviation for the specified aggregated field. If the aggregation field is of type String, only the count statistic is returned.
     */
@@ -1466,6 +1620,7 @@ trait Iot extends Service {
     params: GetStatisticsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetStatisticsResponse, Unit]
   ): Request[GetStatisticsResponse, AWSError] = js.native
+  
   /**
     * Gets information about the rule.
     */
@@ -1479,6 +1634,7 @@ trait Iot extends Service {
     params: GetTopicRuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetTopicRuleResponse, Unit]
   ): Request[GetTopicRuleResponse, AWSError] = js.native
+  
   /**
     * Gets information about a topic rule destination.
     */
@@ -1492,6 +1648,7 @@ trait Iot extends Service {
     params: GetTopicRuleDestinationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetTopicRuleDestinationResponse, Unit]
   ): Request[GetTopicRuleDestinationResponse, AWSError] = js.native
+  
   /**
     * Gets the fine grained logging options.
     */
@@ -1505,6 +1662,7 @@ trait Iot extends Service {
     params: GetV2LoggingOptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetV2LoggingOptionsResponse, Unit]
   ): Request[GetV2LoggingOptionsResponse, AWSError] = js.native
+  
   /**
     * Lists the active violations for a given Device Defender security profile.
     */
@@ -1518,6 +1676,7 @@ trait Iot extends Service {
     params: ListActiveViolationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListActiveViolationsResponse, Unit]
   ): Request[ListActiveViolationsResponse, AWSError] = js.native
+  
   /**
     * Lists the policies attached to the specified thing group.
     */
@@ -1531,19 +1690,21 @@ trait Iot extends Service {
     params: ListAttachedPoliciesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAttachedPoliciesResponse, Unit]
   ): Request[ListAttachedPoliciesResponse, AWSError] = js.native
+  
   /**
-    * Lists the findings (results) of a Device Defender audit or of the audits performed during a specified time period. (Findings are retained for 180 days.)
+    * Lists the findings (results) of a Device Defender audit or of the audits performed during a specified time period. (Findings are retained for 90 days.)
     */
   def listAuditFindings(): Request[ListAuditFindingsResponse, AWSError] = js.native
   def listAuditFindings(callback: js.Function2[/* err */ AWSError, /* data */ ListAuditFindingsResponse, Unit]): Request[ListAuditFindingsResponse, AWSError] = js.native
   /**
-    * Lists the findings (results) of a Device Defender audit or of the audits performed during a specified time period. (Findings are retained for 180 days.)
+    * Lists the findings (results) of a Device Defender audit or of the audits performed during a specified time period. (Findings are retained for 90 days.)
     */
   def listAuditFindings(params: ListAuditFindingsRequest): Request[ListAuditFindingsResponse, AWSError] = js.native
   def listAuditFindings(
     params: ListAuditFindingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAuditFindingsResponse, Unit]
   ): Request[ListAuditFindingsResponse, AWSError] = js.native
+  
   /**
     * Gets the status of audit mitigation action tasks that were executed.
     */
@@ -1559,6 +1720,7 @@ trait Iot extends Service {
     params: ListAuditMitigationActionsExecutionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAuditMitigationActionsExecutionsResponse, Unit]
   ): Request[ListAuditMitigationActionsExecutionsResponse, AWSError] = js.native
+  
   /**
     * Gets a list of audit mitigation action tasks that match the specified filters.
     */
@@ -1574,6 +1736,21 @@ trait Iot extends Service {
     params: ListAuditMitigationActionsTasksRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAuditMitigationActionsTasksResponse, Unit]
   ): Request[ListAuditMitigationActionsTasksResponse, AWSError] = js.native
+  
+  /**
+    *  Lists your Device Defender audit listings. 
+    */
+  def listAuditSuppressions(): Request[ListAuditSuppressionsResponse, AWSError] = js.native
+  def listAuditSuppressions(callback: js.Function2[/* err */ AWSError, /* data */ ListAuditSuppressionsResponse, Unit]): Request[ListAuditSuppressionsResponse, AWSError] = js.native
+  /**
+    *  Lists your Device Defender audit listings. 
+    */
+  def listAuditSuppressions(params: ListAuditSuppressionsRequest): Request[ListAuditSuppressionsResponse, AWSError] = js.native
+  def listAuditSuppressions(
+    params: ListAuditSuppressionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAuditSuppressionsResponse, Unit]
+  ): Request[ListAuditSuppressionsResponse, AWSError] = js.native
+  
   /**
     * Lists the Device Defender audits that have been performed during a given time period.
     */
@@ -1587,6 +1764,7 @@ trait Iot extends Service {
     params: ListAuditTasksRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAuditTasksResponse, Unit]
   ): Request[ListAuditTasksResponse, AWSError] = js.native
+  
   /**
     * Lists the authorizers registered in your account.
     */
@@ -1600,6 +1778,7 @@ trait Iot extends Service {
     params: ListAuthorizersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAuthorizersResponse, Unit]
   ): Request[ListAuthorizersResponse, AWSError] = js.native
+  
   /**
     * Lists the billing groups you have created.
     */
@@ -1613,6 +1792,7 @@ trait Iot extends Service {
     params: ListBillingGroupsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBillingGroupsResponse, Unit]
   ): Request[ListBillingGroupsResponse, AWSError] = js.native
+  
   /**
     * Lists the CA certificates registered for your AWS account. The results are paginated with a default page size of 25. You can use the returned marker to retrieve additional results.
     */
@@ -1626,6 +1806,7 @@ trait Iot extends Service {
     params: ListCACertificatesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListCACertificatesResponse, Unit]
   ): Request[ListCACertificatesResponse, AWSError] = js.native
+  
   /**
     * Lists the certificates registered in your AWS account. The results are paginated with a default page size of 25. You can use the returned marker to retrieve additional results.
     */
@@ -1639,6 +1820,7 @@ trait Iot extends Service {
     params: ListCertificatesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListCertificatesResponse, Unit]
   ): Request[ListCertificatesResponse, AWSError] = js.native
+  
   /**
     * List the device certificates signed by the specified CA certificate.
     */
@@ -1652,6 +1834,7 @@ trait Iot extends Service {
     params: ListCertificatesByCARequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListCertificatesByCAResponse, Unit]
   ): Request[ListCertificatesByCAResponse, AWSError] = js.native
+  
   /**
     * List the set of dimensions that are defined for your AWS account.
     */
@@ -1665,6 +1848,7 @@ trait Iot extends Service {
     params: ListDimensionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDimensionsResponse, Unit]
   ): Request[ListDimensionsResponse, AWSError] = js.native
+  
   /**
     * Gets a list of domain configurations for the user. This list is sorted alphabetically by domain configuration name.  The domain configuration feature is in public preview and is subject to change. 
     */
@@ -1678,6 +1862,7 @@ trait Iot extends Service {
     params: ListDomainConfigurationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDomainConfigurationsResponse, Unit]
   ): Request[ListDomainConfigurationsResponse, AWSError] = js.native
+  
   /**
     * Lists the search indices.
     */
@@ -1691,6 +1876,7 @@ trait Iot extends Service {
     params: ListIndicesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListIndicesResponse, Unit]
   ): Request[ListIndicesResponse, AWSError] = js.native
+  
   /**
     * Lists the job executions for a job.
     */
@@ -1704,6 +1890,7 @@ trait Iot extends Service {
     params: ListJobExecutionsForJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListJobExecutionsForJobResponse, Unit]
   ): Request[ListJobExecutionsForJobResponse, AWSError] = js.native
+  
   /**
     * Lists the job executions for the specified thing.
     */
@@ -1717,6 +1904,7 @@ trait Iot extends Service {
     params: ListJobExecutionsForThingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListJobExecutionsForThingResponse, Unit]
   ): Request[ListJobExecutionsForThingResponse, AWSError] = js.native
+  
   /**
     * Lists jobs.
     */
@@ -1730,6 +1918,7 @@ trait Iot extends Service {
     params: ListJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListJobsResponse, Unit]
   ): Request[ListJobsResponse, AWSError] = js.native
+  
   /**
     * Gets a list of all mitigation actions that match the specified filter criteria.
     */
@@ -1743,6 +1932,7 @@ trait Iot extends Service {
     params: ListMitigationActionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListMitigationActionsResponse, Unit]
   ): Request[ListMitigationActionsResponse, AWSError] = js.native
+  
   /**
     * Lists OTA updates.
     */
@@ -1756,6 +1946,7 @@ trait Iot extends Service {
     params: ListOTAUpdatesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListOTAUpdatesResponse, Unit]
   ): Request[ListOTAUpdatesResponse, AWSError] = js.native
+  
   /**
     * Lists certificates that are being transferred but not yet accepted.
     */
@@ -1769,6 +1960,7 @@ trait Iot extends Service {
     params: ListOutgoingCertificatesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListOutgoingCertificatesResponse, Unit]
   ): Request[ListOutgoingCertificatesResponse, AWSError] = js.native
+  
   /**
     * Lists your policies.
     */
@@ -1782,6 +1974,7 @@ trait Iot extends Service {
     params: ListPoliciesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPoliciesResponse, Unit]
   ): Request[ListPoliciesResponse, AWSError] = js.native
+  
   /**
     * Lists the principals associated with the specified policy.  Note: This API is deprecated. Please use ListTargetsForPolicy instead.
     */
@@ -1795,6 +1988,7 @@ trait Iot extends Service {
     params: ListPolicyPrincipalsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPolicyPrincipalsResponse, Unit]
   ): Request[ListPolicyPrincipalsResponse, AWSError] = js.native
+  
   /**
     * Lists the versions of the specified policy and identifies the default version.
     */
@@ -1808,6 +2002,7 @@ trait Iot extends Service {
     params: ListPolicyVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPolicyVersionsResponse, Unit]
   ): Request[ListPolicyVersionsResponse, AWSError] = js.native
+  
   /**
     * Lists the policies attached to the specified principal. If you use an Cognito identity, the ID must be in AmazonCognito Identity format.  Note: This API is deprecated. Please use ListAttachedPolicies instead.
     */
@@ -1821,6 +2016,7 @@ trait Iot extends Service {
     params: ListPrincipalPoliciesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPrincipalPoliciesResponse, Unit]
   ): Request[ListPrincipalPoliciesResponse, AWSError] = js.native
+  
   /**
     * Lists the things associated with the specified principal. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities. 
     */
@@ -1834,6 +2030,7 @@ trait Iot extends Service {
     params: ListPrincipalThingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPrincipalThingsResponse, Unit]
   ): Request[ListPrincipalThingsResponse, AWSError] = js.native
+  
   /**
     * A list of fleet provisioning template versions.
     */
@@ -1849,6 +2046,7 @@ trait Iot extends Service {
     params: ListProvisioningTemplateVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListProvisioningTemplateVersionsResponse, Unit]
   ): Request[ListProvisioningTemplateVersionsResponse, AWSError] = js.native
+  
   /**
     * Lists the fleet provisioning templates in your AWS account.
     */
@@ -1862,6 +2060,7 @@ trait Iot extends Service {
     params: ListProvisioningTemplatesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListProvisioningTemplatesResponse, Unit]
   ): Request[ListProvisioningTemplatesResponse, AWSError] = js.native
+  
   /**
     * Lists the role aliases registered in your account.
     */
@@ -1875,6 +2074,7 @@ trait Iot extends Service {
     params: ListRoleAliasesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRoleAliasesResponse, Unit]
   ): Request[ListRoleAliasesResponse, AWSError] = js.native
+  
   /**
     * Lists all of your scheduled audits.
     */
@@ -1888,6 +2088,7 @@ trait Iot extends Service {
     params: ListScheduledAuditsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListScheduledAuditsResponse, Unit]
   ): Request[ListScheduledAuditsResponse, AWSError] = js.native
+  
   /**
     * Lists the Device Defender security profiles you have created. You can use filters to list only those security profiles associated with a thing group or only those associated with your account.
     */
@@ -1901,6 +2102,7 @@ trait Iot extends Service {
     params: ListSecurityProfilesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSecurityProfilesResponse, Unit]
   ): Request[ListSecurityProfilesResponse, AWSError] = js.native
+  
   /**
     * Lists the Device Defender security profiles attached to a target (thing group).
     */
@@ -1914,6 +2116,7 @@ trait Iot extends Service {
     params: ListSecurityProfilesForTargetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSecurityProfilesForTargetResponse, Unit]
   ): Request[ListSecurityProfilesForTargetResponse, AWSError] = js.native
+  
   /**
     * Lists all of the streams in your AWS account.
     */
@@ -1927,6 +2130,7 @@ trait Iot extends Service {
     params: ListStreamsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListStreamsResponse, Unit]
   ): Request[ListStreamsResponse, AWSError] = js.native
+  
   /**
     * Lists the tags (metadata) you have assigned to the resource.
     */
@@ -1940,6 +2144,7 @@ trait Iot extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * List targets for the specified policy.
     */
@@ -1953,6 +2158,7 @@ trait Iot extends Service {
     params: ListTargetsForPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTargetsForPolicyResponse, Unit]
   ): Request[ListTargetsForPolicyResponse, AWSError] = js.native
+  
   /**
     * Lists the targets (thing groups) associated with a given Device Defender security profile.
     */
@@ -1966,6 +2172,7 @@ trait Iot extends Service {
     params: ListTargetsForSecurityProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTargetsForSecurityProfileResponse, Unit]
   ): Request[ListTargetsForSecurityProfileResponse, AWSError] = js.native
+  
   /**
     * List the thing groups in your account.
     */
@@ -1979,6 +2186,7 @@ trait Iot extends Service {
     params: ListThingGroupsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListThingGroupsResponse, Unit]
   ): Request[ListThingGroupsResponse, AWSError] = js.native
+  
   /**
     * List the thing groups to which the specified thing belongs.
     */
@@ -1992,6 +2200,7 @@ trait Iot extends Service {
     params: ListThingGroupsForThingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListThingGroupsForThingResponse, Unit]
   ): Request[ListThingGroupsForThingResponse, AWSError] = js.native
+  
   /**
     * Lists the principals associated with the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
     */
@@ -2005,6 +2214,7 @@ trait Iot extends Service {
     params: ListThingPrincipalsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListThingPrincipalsResponse, Unit]
   ): Request[ListThingPrincipalsResponse, AWSError] = js.native
+  
   /**
     * Information about the thing registration tasks.
     */
@@ -2020,6 +2230,7 @@ trait Iot extends Service {
     params: ListThingRegistrationTaskReportsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListThingRegistrationTaskReportsResponse, Unit]
   ): Request[ListThingRegistrationTaskReportsResponse, AWSError] = js.native
+  
   /**
     * List bulk thing provisioning tasks.
     */
@@ -2033,6 +2244,7 @@ trait Iot extends Service {
     params: ListThingRegistrationTasksRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListThingRegistrationTasksResponse, Unit]
   ): Request[ListThingRegistrationTasksResponse, AWSError] = js.native
+  
   /**
     * Lists the existing thing types.
     */
@@ -2046,19 +2258,21 @@ trait Iot extends Service {
     params: ListThingTypesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListThingTypesResponse, Unit]
   ): Request[ListThingTypesResponse, AWSError] = js.native
+  
   /**
-    * Lists your things. Use the attributeName and attributeValue parameters to filter your things. For example, calling ListThings with attributeName=Color and attributeValue=Red retrieves all things in the registry that contain an attribute Color with the value Red. 
+    * Lists your things. Use the attributeName and attributeValue parameters to filter your things. For example, calling ListThings with attributeName=Color and attributeValue=Red retrieves all things in the registry that contain an attribute Color with the value Red.   You will not be charged for calling this API if an Access denied error is returned. You will also not be charged if no attributes or pagination token was provided in request and no pagination token and no results were returned. 
     */
   def listThings(): Request[ListThingsResponse, AWSError] = js.native
   def listThings(callback: js.Function2[/* err */ AWSError, /* data */ ListThingsResponse, Unit]): Request[ListThingsResponse, AWSError] = js.native
   /**
-    * Lists your things. Use the attributeName and attributeValue parameters to filter your things. For example, calling ListThings with attributeName=Color and attributeValue=Red retrieves all things in the registry that contain an attribute Color with the value Red. 
+    * Lists your things. Use the attributeName and attributeValue parameters to filter your things. For example, calling ListThings with attributeName=Color and attributeValue=Red retrieves all things in the registry that contain an attribute Color with the value Red.   You will not be charged for calling this API if an Access denied error is returned. You will also not be charged if no attributes or pagination token was provided in request and no pagination token and no results were returned. 
     */
   def listThings(params: ListThingsRequest): Request[ListThingsResponse, AWSError] = js.native
   def listThings(
     params: ListThingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListThingsResponse, Unit]
   ): Request[ListThingsResponse, AWSError] = js.native
+  
   /**
     * Lists the things you have added to the given billing group.
     */
@@ -2072,6 +2286,7 @@ trait Iot extends Service {
     params: ListThingsInBillingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListThingsInBillingGroupResponse, Unit]
   ): Request[ListThingsInBillingGroupResponse, AWSError] = js.native
+  
   /**
     * Lists the things in the specified group.
     */
@@ -2085,6 +2300,7 @@ trait Iot extends Service {
     params: ListThingsInThingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListThingsInThingGroupResponse, Unit]
   ): Request[ListThingsInThingGroupResponse, AWSError] = js.native
+  
   /**
     * Lists all the topic rule destinations in your AWS account.
     */
@@ -2098,6 +2314,7 @@ trait Iot extends Service {
     params: ListTopicRuleDestinationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTopicRuleDestinationsResponse, Unit]
   ): Request[ListTopicRuleDestinationsResponse, AWSError] = js.native
+  
   /**
     * Lists the rules for the specific topic.
     */
@@ -2111,6 +2328,7 @@ trait Iot extends Service {
     params: ListTopicRulesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTopicRulesResponse, Unit]
   ): Request[ListTopicRulesResponse, AWSError] = js.native
+  
   /**
     * Lists logging levels.
     */
@@ -2124,6 +2342,7 @@ trait Iot extends Service {
     params: ListV2LoggingLevelsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListV2LoggingLevelsResponse, Unit]
   ): Request[ListV2LoggingLevelsResponse, AWSError] = js.native
+  
   /**
     * Lists the Device Defender security profile violations discovered during the given time period. You can use filters to limit the results to those alerts issued for a particular security profile, behavior, or thing (device).
     */
@@ -2137,6 +2356,7 @@ trait Iot extends Service {
     params: ListViolationEventsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListViolationEventsResponse, Unit]
   ): Request[ListViolationEventsResponse, AWSError] = js.native
+  
   /**
     * Registers a CA certificate with AWS IoT. This CA certificate can then be used to sign device certificates, which can be then registered with AWS IoT. You can register up to 10 CA certificates per AWS account that have the same subject field. This enables you to have up to 10 certificate authorities sign your device certificates. If you have more than one CA certificate registered, make sure you pass the CA certificate when you register your device certificates with the RegisterCertificate API.
     */
@@ -2150,6 +2370,7 @@ trait Iot extends Service {
     params: RegisterCACertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RegisterCACertificateResponse, Unit]
   ): Request[RegisterCACertificateResponse, AWSError] = js.native
+  
   /**
     * Registers a device certificate with AWS IoT. If you have more than one CA certificate that has the same subject field, you must specify the CA certificate that was used to sign the device certificate being registered.
     */
@@ -2163,6 +2384,7 @@ trait Iot extends Service {
     params: RegisterCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RegisterCertificateResponse, Unit]
   ): Request[RegisterCertificateResponse, AWSError] = js.native
+  
   /**
     * Register a certificate that does not have a certificate authority (CA).
     */
@@ -2176,6 +2398,7 @@ trait Iot extends Service {
     params: RegisterCertificateWithoutCARequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RegisterCertificateWithoutCAResponse, Unit]
   ): Request[RegisterCertificateWithoutCAResponse, AWSError] = js.native
+  
   /**
     * Provisions a thing in the device registry. RegisterThing calls other AWS IoT control plane APIs. These calls might exceed your account level  AWS IoT Throttling Limits and cause throttle errors. Please contact AWS Customer Support to raise your throttling limits if necessary.
     */
@@ -2189,6 +2412,7 @@ trait Iot extends Service {
     params: RegisterThingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RegisterThingResponse, Unit]
   ): Request[RegisterThingResponse, AWSError] = js.native
+  
   /**
     * Rejects a pending certificate transfer. After AWS IoT rejects a certificate transfer, the certificate status changes from PENDING_TRANSFER to INACTIVE. To check for pending certificate transfers, call ListCertificates to enumerate your certificates. This operation can only be called by the transfer destination. After it is called, the certificate will be returned to the source's account in the INACTIVE state.
     */
@@ -2202,6 +2426,7 @@ trait Iot extends Service {
     params: RejectCertificateTransferRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Removes the given thing from the billing group.
     */
@@ -2215,6 +2440,7 @@ trait Iot extends Service {
     params: RemoveThingFromBillingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RemoveThingFromBillingGroupResponse, Unit]
   ): Request[RemoveThingFromBillingGroupResponse, AWSError] = js.native
+  
   /**
     * Remove the specified thing from the specified group. You must specify either a thingGroupArn or a thingGroupName to identify the thing group and either a thingArn or a thingName to identify the thing to remove from the thing group. 
     */
@@ -2228,6 +2454,7 @@ trait Iot extends Service {
     params: RemoveThingFromThingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RemoveThingFromThingGroupResponse, Unit]
   ): Request[RemoveThingFromThingGroupResponse, AWSError] = js.native
+  
   /**
     * Replaces the rule. You must specify all parameters for the new rule. Creating rules is an administrator-level action. Any user who has permission to create rules will be able to access data processed by the rule.
     */
@@ -2241,6 +2468,7 @@ trait Iot extends Service {
     params: ReplaceTopicRuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * The query search index.
     */
@@ -2254,6 +2482,7 @@ trait Iot extends Service {
     params: SearchIndexRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchIndexResponse, Unit]
   ): Request[SearchIndexResponse, AWSError] = js.native
+  
   /**
     * Sets the default authorizer. This will be used if a websocket connection is made without specifying an authorizer.
     */
@@ -2267,6 +2496,7 @@ trait Iot extends Service {
     params: SetDefaultAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SetDefaultAuthorizerResponse, Unit]
   ): Request[SetDefaultAuthorizerResponse, AWSError] = js.native
+  
   /**
     * Sets the specified version of the specified policy as the policy's default (operative) version. This action affects all certificates to which the policy is attached. To list the principals the policy is attached to, use the ListPrincipalPolicy API.
     */
@@ -2280,6 +2510,7 @@ trait Iot extends Service {
     params: SetDefaultPolicyVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Sets the logging options. NOTE: use of this command is not recommended. Use SetV2LoggingOptions instead.
     */
@@ -2293,6 +2524,7 @@ trait Iot extends Service {
     params: SetLoggingOptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Sets the logging level.
     */
@@ -2306,6 +2538,7 @@ trait Iot extends Service {
     params: SetV2LoggingLevelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Sets the logging options for the V2 logging service.
     */
@@ -2319,6 +2552,7 @@ trait Iot extends Service {
     params: SetV2LoggingOptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Starts a task that applies a set of mitigation actions to the specified target.
     */
@@ -2334,6 +2568,7 @@ trait Iot extends Service {
     params: StartAuditMitigationActionsTaskRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartAuditMitigationActionsTaskResponse, Unit]
   ): Request[StartAuditMitigationActionsTaskResponse, AWSError] = js.native
+  
   /**
     * Starts an on-demand Device Defender audit.
     */
@@ -2347,6 +2582,7 @@ trait Iot extends Service {
     params: StartOnDemandAuditTaskRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartOnDemandAuditTaskResponse, Unit]
   ): Request[StartOnDemandAuditTaskResponse, AWSError] = js.native
+  
   /**
     * Creates a bulk thing provisioning task.
     */
@@ -2360,6 +2596,7 @@ trait Iot extends Service {
     params: StartThingRegistrationTaskRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartThingRegistrationTaskResponse, Unit]
   ): Request[StartThingRegistrationTaskResponse, AWSError] = js.native
+  
   /**
     * Cancels a bulk thing provisioning task.
     */
@@ -2373,6 +2610,7 @@ trait Iot extends Service {
     params: StopThingRegistrationTaskRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopThingRegistrationTaskResponse, Unit]
   ): Request[StopThingRegistrationTaskResponse, AWSError] = js.native
+  
   /**
     * Adds to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.
     */
@@ -2386,6 +2624,7 @@ trait Iot extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Tests if a specified principal is authorized to perform an AWS IoT action on a specified resource. Use this to test and debug the authorization behavior of devices that connect to the AWS IoT device gateway.
     */
@@ -2399,6 +2638,7 @@ trait Iot extends Service {
     params: TestAuthorizationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TestAuthorizationResponse, Unit]
   ): Request[TestAuthorizationResponse, AWSError] = js.native
+  
   /**
     * Tests a custom authorization behavior by invoking a specified custom authorizer. Use this to test and debug the custom authorization behavior of devices that connect to the AWS IoT device gateway.
     */
@@ -2412,6 +2652,7 @@ trait Iot extends Service {
     params: TestInvokeAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TestInvokeAuthorizerResponse, Unit]
   ): Request[TestInvokeAuthorizerResponse, AWSError] = js.native
+  
   /**
     * Transfers the specified certificate to the specified AWS account. You can cancel the transfer until it is acknowledged by the recipient. No notification is sent to the transfer destination's account. It is up to the caller to notify the transfer target. The certificate being transferred must not be in the ACTIVE state. You can use the UpdateCertificate API to deactivate it. The certificate must not have any policies attached to it. You can use the DetachPrincipalPolicy API to detach them.
     */
@@ -2425,6 +2666,7 @@ trait Iot extends Service {
     params: TransferCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TransferCertificateResponse, Unit]
   ): Request[TransferCertificateResponse, AWSError] = js.native
+  
   /**
     * Removes the given tags (metadata) from the resource.
     */
@@ -2438,6 +2680,7 @@ trait Iot extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Configures or reconfigures the Device Defender audit settings for this account. Settings include how audit notifications are sent and which audit checks are enabled or disabled.
     */
@@ -2453,6 +2696,21 @@ trait Iot extends Service {
     params: UpdateAccountAuditConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAccountAuditConfigurationResponse, Unit]
   ): Request[UpdateAccountAuditConfigurationResponse, AWSError] = js.native
+  
+  /**
+    *  Updates a Device Defender audit suppression. 
+    */
+  def updateAuditSuppression(): Request[UpdateAuditSuppressionResponse, AWSError] = js.native
+  def updateAuditSuppression(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAuditSuppressionResponse, Unit]): Request[UpdateAuditSuppressionResponse, AWSError] = js.native
+  /**
+    *  Updates a Device Defender audit suppression. 
+    */
+  def updateAuditSuppression(params: UpdateAuditSuppressionRequest): Request[UpdateAuditSuppressionResponse, AWSError] = js.native
+  def updateAuditSuppression(
+    params: UpdateAuditSuppressionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateAuditSuppressionResponse, Unit]
+  ): Request[UpdateAuditSuppressionResponse, AWSError] = js.native
+  
   /**
     * Updates an authorizer.
     */
@@ -2466,6 +2724,7 @@ trait Iot extends Service {
     params: UpdateAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAuthorizerResponse, Unit]
   ): Request[UpdateAuthorizerResponse, AWSError] = js.native
+  
   /**
     * Updates information about the billing group.
     */
@@ -2479,6 +2738,7 @@ trait Iot extends Service {
     params: UpdateBillingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateBillingGroupResponse, Unit]
   ): Request[UpdateBillingGroupResponse, AWSError] = js.native
+  
   /**
     * Updates a registered CA certificate.
     */
@@ -2492,19 +2752,21 @@ trait Iot extends Service {
     params: UpdateCACertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
-    * Updates the status of the specified certificate. This operation is idempotent. Moving a certificate from the ACTIVE state (including REVOKED) will not disconnect currently connected devices, but these devices will be unable to reconnect. The ACTIVE state is required to authenticate devices connecting to AWS IoT using a certificate.
+    * Updates the status of the specified certificate. This operation is idempotent. Certificates must be in the ACTIVE state to authenticate devices that use a certificate to connect to AWS IoT. Within a few minutes of updating a certificate from the ACTIVE state to any other state, AWS IoT disconnects all devices that used that certificate to connect. Devices cannot use a certificate that is not in the ACTIVE state to reconnect.
     */
   def updateCertificate(): Request[js.Object, AWSError] = js.native
   def updateCertificate(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Updates the status of the specified certificate. This operation is idempotent. Moving a certificate from the ACTIVE state (including REVOKED) will not disconnect currently connected devices, but these devices will be unable to reconnect. The ACTIVE state is required to authenticate devices connecting to AWS IoT using a certificate.
+    * Updates the status of the specified certificate. This operation is idempotent. Certificates must be in the ACTIVE state to authenticate devices that use a certificate to connect to AWS IoT. Within a few minutes of updating a certificate from the ACTIVE state to any other state, AWS IoT disconnects all devices that used that certificate to connect. Devices cannot use a certificate that is not in the ACTIVE state to reconnect.
     */
   def updateCertificate(params: UpdateCertificateRequest): Request[js.Object, AWSError] = js.native
   def updateCertificate(
     params: UpdateCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates the definition for a dimension. You cannot change the type of a dimension after it is created (you can delete it and re-create it).
     */
@@ -2518,6 +2780,7 @@ trait Iot extends Service {
     params: UpdateDimensionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDimensionResponse, Unit]
   ): Request[UpdateDimensionResponse, AWSError] = js.native
+  
   /**
     * Updates values stored in the domain configuration. Domain configurations for default endpoints can't be updated.  The domain configuration feature is in public preview and is subject to change. 
     */
@@ -2531,6 +2794,7 @@ trait Iot extends Service {
     params: UpdateDomainConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainConfigurationResponse, Unit]
   ): Request[UpdateDomainConfigurationResponse, AWSError] = js.native
+  
   /**
     * Updates a dynamic thing group.
     */
@@ -2544,6 +2808,7 @@ trait Iot extends Service {
     params: UpdateDynamicThingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDynamicThingGroupResponse, Unit]
   ): Request[UpdateDynamicThingGroupResponse, AWSError] = js.native
+  
   /**
     * Updates the event configurations.
     */
@@ -2557,6 +2822,7 @@ trait Iot extends Service {
     params: UpdateEventConfigurationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEventConfigurationsResponse, Unit]
   ): Request[UpdateEventConfigurationsResponse, AWSError] = js.native
+  
   /**
     * Updates the search configuration.
     */
@@ -2570,6 +2836,7 @@ trait Iot extends Service {
     params: UpdateIndexingConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateIndexingConfigurationResponse, Unit]
   ): Request[UpdateIndexingConfigurationResponse, AWSError] = js.native
+  
   /**
     * Updates supported fields of the specified job.
     */
@@ -2580,6 +2847,7 @@ trait Iot extends Service {
     */
   def updateJob(params: UpdateJobRequest): Request[js.Object, AWSError] = js.native
   def updateJob(params: UpdateJobRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates the definition for the specified mitigation action.
     */
@@ -2593,6 +2861,7 @@ trait Iot extends Service {
     params: UpdateMitigationActionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateMitigationActionResponse, Unit]
   ): Request[UpdateMitigationActionResponse, AWSError] = js.native
+  
   /**
     * Updates a fleet provisioning template.
     */
@@ -2606,6 +2875,7 @@ trait Iot extends Service {
     params: UpdateProvisioningTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateProvisioningTemplateResponse, Unit]
   ): Request[UpdateProvisioningTemplateResponse, AWSError] = js.native
+  
   /**
     * Updates a role alias.
     */
@@ -2619,6 +2889,7 @@ trait Iot extends Service {
     params: UpdateRoleAliasRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRoleAliasResponse, Unit]
   ): Request[UpdateRoleAliasResponse, AWSError] = js.native
+  
   /**
     * Updates a scheduled audit, including which checks are performed and how often the audit takes place.
     */
@@ -2632,6 +2903,7 @@ trait Iot extends Service {
     params: UpdateScheduledAuditRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateScheduledAuditResponse, Unit]
   ): Request[UpdateScheduledAuditResponse, AWSError] = js.native
+  
   /**
     * Updates a Device Defender security profile.
     */
@@ -2645,6 +2917,7 @@ trait Iot extends Service {
     params: UpdateSecurityProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateSecurityProfileResponse, Unit]
   ): Request[UpdateSecurityProfileResponse, AWSError] = js.native
+  
   /**
     * Updates an existing stream. The stream version will be incremented by one.
     */
@@ -2658,6 +2931,7 @@ trait Iot extends Service {
     params: UpdateStreamRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateStreamResponse, Unit]
   ): Request[UpdateStreamResponse, AWSError] = js.native
+  
   /**
     * Updates the data for a thing.
     */
@@ -2671,6 +2945,7 @@ trait Iot extends Service {
     params: UpdateThingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateThingResponse, Unit]
   ): Request[UpdateThingResponse, AWSError] = js.native
+  
   /**
     * Update a thing group.
     */
@@ -2684,6 +2959,7 @@ trait Iot extends Service {
     params: UpdateThingGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateThingGroupResponse, Unit]
   ): Request[UpdateThingGroupResponse, AWSError] = js.native
+  
   /**
     * Updates the groups to which the thing belongs.
     */
@@ -2697,6 +2973,7 @@ trait Iot extends Service {
     params: UpdateThingGroupsForThingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateThingGroupsForThingResponse, Unit]
   ): Request[UpdateThingGroupsForThingResponse, AWSError] = js.native
+  
   /**
     * Updates a topic rule destination. You use this to change the status, endpoint URL, or confirmation URL of the destination.
     */
@@ -2710,6 +2987,7 @@ trait Iot extends Service {
     params: UpdateTopicRuleDestinationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateTopicRuleDestinationResponse, Unit]
   ): Request[UpdateTopicRuleDestinationResponse, AWSError] = js.native
+  
   /**
     * Validates a Device Defender security profile behaviors specification.
     */
@@ -2726,4 +3004,3 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ValidateSecurityProfileBehaviorsResponse, Unit]
   ): Request[ValidateSecurityProfileBehaviorsResponse, AWSError] = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.ace.global.AceAjax
 import typings.ace.AceAjax.IEditSession
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AceAjax.TokenIterator")
 @js.native
@@ -17,4 +17,3 @@ class TokenIteratorCls protected ()
     **/
   def this(session: IEditSession, initialRow: Double, initialColumn: Double) = this()
 }
-

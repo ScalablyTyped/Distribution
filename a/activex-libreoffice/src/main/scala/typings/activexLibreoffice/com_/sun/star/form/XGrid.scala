@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides the possibility of setting and retrieving the position of the current cell in a grid control.
@@ -19,15 +19,18 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XGrid extends XInterface {
+  
   /** retrieves the current column position. */
   var CurrentColumnPosition: Double = js.native
+  
   /** retrieves the current column position. */
   def getCurrentColumnPosition(): Double = js.native
+  
   /** sets the current column position. */
   def setCurrentColumnPosition(nPos: Double): Unit = js.native
 }
-
 object XGrid {
+  
   @scala.inline
   def apply(
     CurrentColumnPosition: Double,
@@ -40,24 +43,29 @@ object XGrid {
     val __obj = js.Dynamic.literal(CurrentColumnPosition = CurrentColumnPosition.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getCurrentColumnPosition = js.Any.fromFunction0(getCurrentColumnPosition), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCurrentColumnPosition = js.Any.fromFunction1(setCurrentColumnPosition))
     __obj.asInstanceOf[XGrid]
   }
+  
   @scala.inline
   implicit class XGridOps[Self <: XGrid] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCurrentColumnPosition(value: Double): Self = this.set("CurrentColumnPosition", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetCurrentColumnPosition(value: () => Double): Self = this.set("getCurrentColumnPosition", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setSetCurrentColumnPosition(value: Double => Unit): Self = this.set("setCurrentColumnPosition", js.Any.fromFunction1(value))
   }
-  
 }
-

@@ -10,9 +10,9 @@ Control Spotify on Mac OSX with NodeJS and AppleScript.
 | ------------------ | :-------------: |
 | Full name          | spotify-node-applescript |
 | Keywords           | spotify, node, applescript, mac, osx |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 23509 |
+| # downloads        | 18849 |
 | # stars            | 4 |
 
 ## Links

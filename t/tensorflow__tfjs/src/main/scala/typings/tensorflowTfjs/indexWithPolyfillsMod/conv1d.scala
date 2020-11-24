@@ -5,16 +5,17 @@ import typings.tensorflowTfjs.tensorflowTfjsStrings.NWC
 import typings.tensorflowTfjs.tensorflowTfjsStrings.same
 import typings.tensorflowTfjs.tensorflowTfjsStrings.valid
 import typings.tensorflowTfjsCore.convUtilMod.ExplicitPadding
+import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
+import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.tensorMod.Tensor2D
-import typings.tensorflowTfjsCore.tensorMod.Tensor3D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "conv1d")
 @js.native
 object conv1d extends js.Object {
+  
   def apply[T /* <: Tensor2D | Tensor3D */](
     x: T | TensorLike,
     filter: Tensor3D | TensorLike,
@@ -27,4 +28,3 @@ object conv1d extends js.Object {
     ]
   ): T = js.native
 }
-

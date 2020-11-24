@@ -2,10 +2,12 @@ package typings.reduxOrm
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object sessionMod {
+  
   type BatchToken = js.Any
+  
   type OrmSession[I /* <: typings.reduxOrm.ormMod.IndexedModelClasses[
     _, 
     typings.std.Extract[

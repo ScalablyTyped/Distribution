@@ -11,8 +11,8 @@ All the cryptographic primitives used in Ethereum
 | Full name          | ethereum-cryptography |
 | Keywords           | ethereum, cryptography, digital signature, hash, encryption, prng, keccak, scrypt, pbkdf2, sha-256, ripemd-160, blake2b, aes, advanced encryption standar, secp256k1, ecdsa, bip32, hierarchical deterministic keys, hdwallet, hdkeys |
 | # releases         | 12 |
-| # dependents       | 3 |
-| # downloads        | 19209 |
+| # dependents       | 12 |
+| # downloads        | 597575 |
 | # stars            | 0 |
 
 ## Links

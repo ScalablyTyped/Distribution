@@ -12,7 +12,7 @@ The lodash method `_.curryRight` exported as a module.
 | Keywords           | lodash-modularized, curryright |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 14600 |
+| # downloads        | 23970 |
 | # stars            | 0 |
 
 ## Links

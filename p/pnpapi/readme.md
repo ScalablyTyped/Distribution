@@ -10,8 +10,8 @@ Typings are for version 0.0
 | Full name          | pnpapi |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 2238 |
+| # dependents       | 3 |
+| # downloads        | 12668 |
 | # stars            | 0 |
 
 ## Links

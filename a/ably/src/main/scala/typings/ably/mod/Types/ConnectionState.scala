@@ -10,18 +10,25 @@ import typings.ably.ablyStrings.initialized
 import typings.ably.ablyStrings.suspended
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ably", "Types.ConnectionState")
 @js.native
 object ConnectionState extends js.Object {
+  
   type CLOSED = closed
+  
   type CLOSING = closing
+  
   type CONNECTED = connected
+  
   type CONNECTING = connecting
+  
   type DISCONNECTED = disconnected
+  
   type FAILED = failed_
+  
   type INITIALIZED = initialized
+  
   type SUSPENDED = suspended
 }
-

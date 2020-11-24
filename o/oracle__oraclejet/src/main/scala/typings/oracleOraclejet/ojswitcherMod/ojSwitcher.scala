@@ -116,12 +116,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojSwitcher extends JetElement[ojSwitcherSettableProperties] {
-  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var value: String = js.native
+  
   @JSName("addEventListener")
   def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("addEventListener")
@@ -908,13 +907,20 @@ trait ojSwitcher extends JetElement[ojSwitcherSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_value(property: value): String = js.native
+  
+  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
   def refresh(): Unit = js.native
+  
   def setProperties(properties: ojSwitcherSettablePropertiesLenient): Unit = js.native
+  
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojSwitcherSettableProperties]): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value, value: String): Unit = js.native
+  
+  var value: String = js.native
 }
-

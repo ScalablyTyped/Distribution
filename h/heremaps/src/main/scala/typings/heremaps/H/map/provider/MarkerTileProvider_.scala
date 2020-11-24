@@ -4,7 +4,7 @@ import typings.heremaps.H.map.AbstractMarker
 import typings.heremaps.H.math.BitMask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A MarkerTileProvider uses network service to provide markers on tile basis.
@@ -18,16 +18,17 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MarkerTileProvider_ extends RemoteTileProvider {
+  
   /**
     * To signal to this provider that a map object has been changed. The method marks tile, that contains that object as invalid and triggers dispatchUpdate()
     * @param marker {!H.map.AbstractMarker} - The map object to be invalidated
     * @param flags {H.math.BitMask} - The flags indicating the types of occurred changes
     */
   def invalidateObject(marker: AbstractMarker, flags: BitMask): Unit = js.native
+  
   /**
     * Checks whether this provider is currently providing H.map.DomMarker map objects.
     * @returns {boolean}
     */
   def providesDomMarkers(): Boolean = js.native
 }
-

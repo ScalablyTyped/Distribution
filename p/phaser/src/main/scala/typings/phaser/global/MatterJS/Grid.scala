@@ -4,7 +4,7 @@ import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.IGridDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Matter.Grid` module contains methods for creating and manipulating collision broadphase grid structures.
@@ -15,17 +15,18 @@ import scala.scalajs.js.annotation._
 @js.native
 class Grid ()
   extends typings.phaser.MatterJS.Grid
-
 /* static members */
 @JSGlobal("MatterJS.Grid")
 @js.native
 object Grid extends js.Object {
+  
   /**
     * Clears the grid.
     * @method clear
     * @param {grid} grid
     */
   def clear(grid: typings.phaser.MatterJS.Grid): Unit = js.native
+  
   /**
     * Creates a new grid.
     * @method create
@@ -34,6 +35,7 @@ object Grid extends js.Object {
     */
   def create(): typings.phaser.MatterJS.Grid = js.native
   def create(options: IGridDefinition): typings.phaser.MatterJS.Grid = js.native
+  
   /**
     * Updates the grid.
     * @method update
@@ -49,4 +51,3 @@ object Grid extends js.Object {
     forceUpdate: Boolean
   ): Unit = js.native
 }
-

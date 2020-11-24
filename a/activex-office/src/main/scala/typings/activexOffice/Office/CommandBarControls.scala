@@ -7,16 +7,14 @@ import typings.activexOffice.activexOfficeNumbers.`3`
 import typings.activexOffice.activexOfficeNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CommandBarControls extends js.Object {
-  val Application: js.Any = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: CommandBar = js.native
+  
   def apply(Index: String): CommandBarControl = js.native
   def apply(Index: Double): CommandBarControl = js.native
+  
   def Add(
     Type: js.UndefOr[`1` | `2` | `3` | `4` | `10`],
     Id: js.UndefOr[Double],
@@ -24,7 +22,15 @@ trait CommandBarControls extends js.Object {
     Before: js.UndefOr[Double],
     Temporary: js.UndefOr[Boolean]
   ): CommandBarControl = js.native
+  
+  val Application: js.Any = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
   def Item(Index: String): CommandBarControl = js.native
   def Item(Index: Double): CommandBarControl = js.native
+  
+  val Parent: CommandBar = js.native
 }
-

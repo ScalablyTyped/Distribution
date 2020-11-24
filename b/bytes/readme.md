@@ -11,8 +11,8 @@ Utility to parse a string bytes to bytes and vice-versa
 | Full name          | bytes |
 | Keywords           | byte, bytes, utility, parse, parser, convert, converter |
 | # releases         | 2 |
-| # dependents       | 635 |
-| # downloads        | 636838542 |
+| # dependents       | 734 |
+| # downloads        | 952937413 |
 | # stars            | 25 |
 
 ## Links

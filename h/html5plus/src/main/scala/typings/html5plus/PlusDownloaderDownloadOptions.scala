@@ -7,7 +7,7 @@ import typings.html5plus.html5plusStrings._documentsSlash
 import typings.html5plus.html5plusStrings._downloadsSlash
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 下载任务参数
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusDownloaderDownloadOptions extends js.Object {
+  
   /**
     * POST请求时提交的数据
     * 仅在网络请求类型method设置为"POST"时有效，"GET"请求时忽略此数据。
@@ -24,6 +25,7 @@ trait PlusDownloaderDownloadOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
   var data: js.UndefOr[String] = js.native
+  
   /**
     * 下载文件保存的路径
     * 保存文件路径仅支持以"_downloads/"、"_doc/"、"_documents/"开头的字符串。
@@ -37,6 +39,7 @@ trait PlusDownloaderDownloadOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
   var filename: js.UndefOr[_docSlash | _documentsSlash | _downloadsSlash] = js.native
+  
   /**
     * 网络请求类型
     * 支持http协议的“GET”、“POST”，默认为“GET”请求。
@@ -46,6 +49,7 @@ trait PlusDownloaderDownloadOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
   var method: js.UndefOr[GET | POST] = js.native
+  
   /**
     * 下载任务的优先级
     * 数值类型，数值越大优先级越高，默认优先级值为0。
@@ -53,6 +57,7 @@ trait PlusDownloaderDownloadOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
   var priority: js.UndefOr[Double] = js.native
+  
   /**
     * 下载任务重试次数
     * 数值类型，默认为重试3次。
@@ -60,6 +65,7 @@ trait PlusDownloaderDownloadOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
   var retry: js.UndefOr[Double] = js.native
+  
   /**
     * 下载任务重试间隔时间
     * 数值类型，单位为s(秒)，默认值为30s。
@@ -67,6 +73,7 @@ trait PlusDownloaderDownloadOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
   var retryInterval: js.UndefOr[Double] = js.native
+  
   /**
     * 下载任务超时时间
     * 数值类型，单位为s(秒)，默认值为120s。
@@ -76,53 +83,69 @@ trait PlusDownloaderDownloadOptions extends js.Object {
     */
   var timeout: js.UndefOr[Double] = js.native
 }
-
 object PlusDownloaderDownloadOptions {
+  
   @scala.inline
   def apply(): PlusDownloaderDownloadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusDownloaderDownloadOptions]
   }
+  
   @scala.inline
   implicit class PlusDownloaderDownloadOptionsOps[Self <: PlusDownloaderDownloadOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteData: Self = this.set("data", js.undefined)
+    
     @scala.inline
     def setFilename(value: _docSlash | _documentsSlash | _downloadsSlash): Self = this.set("filename", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFilename: Self = this.set("filename", js.undefined)
+    
     @scala.inline
     def setMethod(value: GET | POST): Self = this.set("method", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMethod: Self = this.set("method", js.undefined)
+    
     @scala.inline
     def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePriority: Self = this.set("priority", js.undefined)
+    
     @scala.inline
     def setRetry(value: Double): Self = this.set("retry", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRetry: Self = this.set("retry", js.undefined)
+    
     @scala.inline
     def setRetryInterval(value: Double): Self = this.set("retryInterval", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRetryInterval: Self = this.set("retryInterval", js.undefined)
+    
     @scala.inline
     def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTimeout: Self = this.set("timeout", js.undefined)
   }
-  
 }
-

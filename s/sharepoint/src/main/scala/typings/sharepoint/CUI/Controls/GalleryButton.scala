@@ -5,14 +5,14 @@ import typings.sharepoint.CUI.ISelectableControl
 import typings.sharepoint.CUI.Root
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GalleryButton
   extends Control
      with ISelectableControl
-
 object GalleryButton {
+  
   @scala.inline
   def apply(
     createComponentForDisplayMode: String => js.Any,
@@ -26,4 +26,3 @@ object GalleryButton {
     __obj.asInstanceOf[GalleryButton]
   }
 }
-

@@ -4,7 +4,7 @@ import typings.seleniumWebdriver.anon.Height
 import typings.seleniumWebdriver.mod.Capabilities
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver/chrome", "Options")
 @js.native
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * @constructor
   */
 class Options () extends Capabilities {
+  
   /**
     * Add additional command line arguments to use when launching the Chrome
     * browser.  Each argument may be specified with or without the '--' prefix
@@ -21,6 +22,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def addArguments(var_args: String*): Options = js.native
+  
   /**
     * Add additional extensions to install when launching Chrome. Each extension
     * should be specified as the path to the packed CRX file, or a Buffer for an
@@ -30,6 +32,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def addExtensions(var_args: js.Any*): Options = js.native
+  
   /**
     * Sets the name of the activity hosting a Chrome-based Android WebView. This
     * option must be set to connect to an [Android WebView](
@@ -39,6 +42,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def androidActivity(name: String): Options = js.native
+  
   /**
     * Configures the ChromeDriver to launch Chrome on Android via adb. This
     * function is shorthand for
@@ -46,6 +50,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def androidChrome(): Options = js.native
+  
   /**
     * Sets the device serial number to connect to via ADB. If not specified, the
     * ChromeDriver will select an unused device at random. An error will be
@@ -55,6 +60,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def androidDeviceSerial(serial: String): Options = js.native
+  
   /**
     * Sets the package name of the Chrome or WebView app.
     *
@@ -63,6 +69,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def androidPackage(pkg: String): Options = js.native
+  
   /**
     * Sets the process name of the Activity hosting the WebView (as given by
     * `ps`). If not specified, the process name is assumed to be the same as
@@ -72,6 +79,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def androidProcess(processName: String): Options = js.native
+  
   /**
     * Sets whether to connect to an already-running instead of the specified
     * {@linkplain #androidProcess app} instead of launching the app with a clean
@@ -81,6 +89,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def androidUseRunningApp(useRunning: Boolean): Options = js.native
+  
   /**
     * Sets whether to leave the started Chrome browser running if the controlling
     * ChromeDriver service is killed before {@link webdriver.WebDriver#quit()} is
@@ -90,6 +99,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def detachDriver(detach: Boolean): Options = js.native
+  
   /**
     * List of Chrome command line switches to exclude that ChromeDriver by
     * default passes when starting Chrome.  Do not prefix switches with '--'.
@@ -98,6 +108,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def excludeSwitches(var_args: String*): Options = js.native
+  
   /**
     * Configures the chromedriver to start Chrome in headless mode.
     *
@@ -108,6 +119,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def headless(): Options = js.native
+  
   /**
     * Sets the path to the Chrome binary to use. On Mac OS X, this path should
     * reference the actual Chrome executable, not just the application binary
@@ -120,6 +132,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def setChromeBinaryPath(path: String): Options = js.native
+  
   /**
     * Sets the path to Chrome's log file. This path should exist on the machine
     * that will launch Chrome.
@@ -127,6 +140,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def setChromeLogFile(path: String): Options = js.native
+  
   /**
     * Sets the directory to store Chrome minidumps in. This option is only
     * supported when ChromeDriver is running on Linux.
@@ -134,6 +148,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def setChromeMinidumpPath(path: String): Options = js.native
+  
   /**
     * Sets preferences for the 'Local State' file in Chrome's user data
     * directory.
@@ -141,6 +156,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def setLocalState(state: js.Any): Options = js.native
+  
   /**
     * Configures Chrome to emulate a mobile device. For more information, refer
     * to the ChromeDriver project page on [mobile emulation][em]. Configuration
@@ -178,6 +194,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def setMobileEmulation(config: js.Any): Options = js.native
+  
   /**
     * Sets the performance logging preferences. Options include:
     *
@@ -203,6 +220,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def setPerfLoggingPrefs(prefs: IPerfLoggingPrefs): Options = js.native
+  
   /**
     * Sets the user preferences for Chrome's user profile. See the 'Preferences'
     * file in Chrome's user data directory for examples.
@@ -210,6 +228,7 @@ class Options () extends Capabilities {
     * @return {!Options} A self reference.
     */
   def setUserPreferences(prefs: js.Any): Options = js.native
+  
   /**
     * Sets the initial window size.
     *
@@ -220,11 +239,11 @@ class Options () extends Capabilities {
     */
   def windowSize(size: Height): Options = js.native
 }
-
 /* static members */
 @JSImport("selenium-webdriver/chrome", "Options")
 @js.native
 object Options extends js.Object {
+  
   /**
     * Extracts the ChromeDriver specific options from the given capabilities
     * object.
@@ -233,4 +252,3 @@ object Options extends js.Object {
     */
   def fromCapabilities(capabilities: Capabilities): Options = js.native
 }
-

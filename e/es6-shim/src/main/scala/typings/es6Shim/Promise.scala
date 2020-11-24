@@ -2,13 +2,14 @@ package typings.es6Shim
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the completion of an asynchronous operation
   */
 @js.native
 trait Promise[T] extends js.Object {
+  
   /**
     * Attaches a callback for only the rejection of the Promise.
     * @param onrejected The callback to execute when the Promise is rejected.
@@ -16,6 +17,7 @@ trait Promise[T] extends js.Object {
     */
   def `catch`(): Promise[T] = js.native
   def `catch`(onrejected: js.Function1[/* reason */ js.Any, PromiseLike[T] | T | Unit]): Promise[T] = js.native
+  
   /**
     * Attaches callbacks for the resolution and/or rejection of the Promise.
     * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -33,4 +35,3 @@ trait Promise[T] extends js.Object {
     onrejected: js.Function1[/* reason */ js.Any, PromiseLike[TResult] | TResult | Unit]
   ): Promise[TResult] = js.native
 }
-

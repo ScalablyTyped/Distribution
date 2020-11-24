@@ -5,11 +5,12 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("compression", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Returns the compression middleware using the given `options`. The middleware will attempt to compress response bodies
     * for all request that traverse through the middleware, based on the given `options`.
@@ -22,4 +23,3 @@ object ^ extends js.Object {
   def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(options: CompressionOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
-

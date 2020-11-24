@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a collection of all rows of a table or spreadsheet.
@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation._
 trait TableRows
   extends XTableRows
      with XEnumerationAccess
-
 object TableRows {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -36,4 +36,3 @@ object TableRows {
     __obj.asInstanceOf[TableRows]
   }
 }
-

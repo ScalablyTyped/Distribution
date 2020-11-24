@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.rxjs.actionMod.Action
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal-compatibility", "Scheduler")
 @js.native
@@ -32,11 +32,11 @@ class Scheduler protected ()
     now: js.Function0[Double]
   ) = this()
 }
-
 /* static members */
 @JSImport("rxjs/internal-compatibility", "Scheduler")
 @js.native
 object Scheduler extends js.Object {
+  
   /**
     * Note: the extra arrow function wrapper is to make testing by overriding
     * Date.now easier.
@@ -44,4 +44,3 @@ object Scheduler extends js.Object {
     */
   def now(): Double = js.native
 }
-

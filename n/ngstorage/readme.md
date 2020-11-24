@@ -11,8 +11,8 @@ ngStorage =========
 | Full name          | ngstorage |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 66 |
-| # downloads        | 840807 |
+| # dependents       | 64 |
+| # downloads        | 1127659 |
 | # stars            | 3 |
 
 ## Links

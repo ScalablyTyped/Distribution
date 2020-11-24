@@ -191,10 +191,11 @@ import typings.activexAccess.anon.FieldListKeyAscii
 import typings.activexAccess.anon.PDisp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ActiveXObject extends js.Object {
+  
   def on(
     obj: FieldList,
     event: DragDrop,
@@ -3003,6 +3004,7 @@ trait ActiveXObject extends js.Object {
     event: Timer,
     handler: js.ThisFunction1[/* this */ Report, /* parameter */ js.Object, Unit]
   ): Unit = js.native
+  
   def set(
     obj: CheckBoxInOption | ChildLabel | CustomControlInReport | OptionButtonInOption | ToggleButtonInOption | Attachment | BoundObjectFrame | CheckBox | ComboBox | CommandButton | CustomControl | EmptyCell | Form | Label | ListBox | NavigationButton | NavigationControl | ObjectFrame | OptionButton | OptionGroup | typings.activexAccess.Access.Page | SubForm | TabControl | TextBox | ToggleButton | WebBrowserControl,
     propertyName: accName | accValue,
@@ -3027,4 +3029,3 @@ trait ActiveXObject extends js.Object {
   @JSName("set")
   def set_Selected(obj: ListBox, propertyName: Selected, parameterTypes: js.Array[Double], newValue: Double): Unit = js.native
 }
-

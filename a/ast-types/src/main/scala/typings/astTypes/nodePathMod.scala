@@ -9,26 +9,40 @@ import typings.astTypes.scopeMod.Scope
 import typings.astTypes.typesMod.ASTNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ast-types/lib/node-path", JSImport.Namespace)
 @js.native
 object nodePathMod extends js.Object {
+  
+  def default(fork: Fork): NodePathConstructor = js.native
+  
   @js.native
   trait NodePath[N, V] extends Path[V] {
-    var node: N = js.native
-    var parent: js.Any = js.native
-    @JSName("replace")
-    var replace_Original: js.Function2[/* replacement */ js.UndefOr[ASTNode], /* repeated */ ASTNode, _] = js.native
-    var scope: js.Any = js.native
+    
     def _computeNode(): js.Any = js.native
+    
     def _computeParent(): js.Any = js.native
+    
     def _computeScope(): Scope | Null = js.native
+    
     def canBeFirstInStatement(): Boolean = js.native
+    
     def firstInStatement(): Boolean = js.native
+    
     def needsParens(): Boolean = js.native
     def needsParens(assumeExpressionContext: Boolean): Boolean = js.native
+    
+    var node: N = js.native
+    
+    var parent: js.Any = js.native
+    
     def prune(args: js.Any*): js.Any = js.native
+    
+    @JSName("replace")
+    var replace_Original: js.Function2[/* replacement */ js.UndefOr[ASTNode], /* repeated */ ASTNode, _] = js.native
+    
+    var scope: js.Any = js.native
   }
   
   @js.native
@@ -37,11 +51,8 @@ object nodePathMod extends js.Object {
        with Instantiable2[/* value */ js.Any, /* parentPath */ js.Any, NodePath[ASTNode, js.Object]]
        with Instantiable3[
           /* value */ js.Any, 
-          /* parentPath */ js.Any, 
+          js.UndefOr[/* parentPath */ js.Any], 
           /* name */ js.Any, 
           NodePath[ASTNode, js.Object]
         ]
-  
-  def default(fork: Fork): NodePathConstructor = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.inlineCritical.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("inline-critical", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * @param html The HTML to use to inline critical styles.
     * @param styles The styles to inline.
@@ -22,4 +23,3 @@ object ^ extends js.Object {
   def apply(html: String, styles: String): String = js.native
   def apply(html: String, styles: String, options: Options): String = js.native
 }
-

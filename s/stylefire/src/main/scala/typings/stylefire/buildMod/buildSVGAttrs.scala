@@ -6,11 +6,12 @@ import typings.stylefire.typesMod.ResolvedState
 import typings.stylefire.typesMod.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stylefire/lib/svg/build", "buildSVGAttrs")
 @js.native
 object buildSVGAttrs extends js.Object {
+  
   def apply(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState): SVGAttrs = js.native
   def apply(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
@@ -235,4 +236,3 @@ object buildSVGAttrs extends js.Object {
     isDashCase: Boolean
   ): SVGAttrs = js.native
 }
-

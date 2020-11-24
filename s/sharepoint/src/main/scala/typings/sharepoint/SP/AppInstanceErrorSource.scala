@@ -2,14 +2,14 @@ package typings.sharepoint.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AppInstanceErrorSource extends js.Object
-
 @JSGlobal("SP.AppInstanceErrorSource")
 @js.native
 object AppInstanceErrorSource extends js.Object {
+  
   @js.native
   sealed trait appWeb extends AppInstanceErrorSource
   
@@ -33,6 +33,4 @@ object AppInstanceErrorSource extends js.Object {
   
   @js.native
   sealed trait remoteWebSite extends AppInstanceErrorSource
-  
 }
-

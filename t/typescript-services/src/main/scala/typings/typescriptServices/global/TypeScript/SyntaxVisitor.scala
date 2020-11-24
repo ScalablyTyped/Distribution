@@ -2,10 +2,9 @@ package typings.typescriptServices.global.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.SyntaxVisitor")
 @js.native
 class SyntaxVisitor ()
   extends typings.typescriptServices.TypeScript.SyntaxVisitor
-

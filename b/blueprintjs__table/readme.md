@@ -1,7 +1,7 @@
 
 # Scala.js typings for blueprintjs__table
 
-Typings are for version 3.8.12
+Typings are for version 3.8.18
 
 ## Library description:
 Scalable interactive table component
@@ -10,9 +10,9 @@ Scalable interactive table component
 | ------------------ | :-------------: |
 | Full name          | @blueprintjs/table |
 | Keywords           | palantir, blueprint, table, cell, spreadsheet |
-| # releases         | 30 |
-| # dependents       | 26 |
-| # downloads        | 561728 |
+| # releases         | 26 |
+| # dependents       | 31 |
+| # downloads        | 733479 |
 | # stars            | 0 |
 
 ## Links

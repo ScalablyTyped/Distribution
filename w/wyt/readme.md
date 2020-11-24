@@ -9,10 +9,10 @@ A time-based rate limiter using promises
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | wyt |
-| Keywords           | throttle, throttling, time, interval, rate limit, rate-limit, ratelimit, rate, limit, limiter, promise, concurrency, async, await, bottleneck |
-| # releases         | 0 |
+| Keywords           | throttle, throttling, time, interval, rate limit, rate-limit, ratelimit, rate, limit, limiter, promise, concurrency, async, await, bottleneck, typescript |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 6698 |
+| # downloads        | 14885 |
 | # stars            | 0 |
 
 ## Links

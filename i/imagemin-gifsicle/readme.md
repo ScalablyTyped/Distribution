@@ -1,7 +1,7 @@
 
 # Scala.js typings for imagemin-gifsicle
 
-Typings are for version 5.2
+Typings are for version 7.0
 
 ## Library description:
 Imagemin plugin for Gifsicle
@@ -10,9 +10,9 @@ Imagemin plugin for Gifsicle
 | ------------------ | :-------------: |
 | Full name          | imagemin-gifsicle |
 | Keywords           | compress, gif, gifsicle, gulpplugin, image, imageminplugin, img, minify, optimize |
-| # releases         | 3 |
-| # dependents       | 189 |
-| # downloads        | 21898321 |
+| # releases         | 4 |
+| # dependents       | 215 |
+| # downloads        | 24685963 |
 | # stars            | 8 |
 
 ## Links

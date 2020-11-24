@@ -11,11 +11,12 @@ import typings.stripe.mod.issuing.authorizations.IAuthorizationListOptions
 import typings.stripe.mod.issuing.authorizations.IAuthorizationUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Authorizations")
 @js.native
 class Authorizations () extends StripeResource {
+  
   def approve(id: String): js.Promise[IAuthorization] = js.native
   def approve(id: String, data: IAuthorizationApproveOptions): js.Promise[IAuthorization] = js.native
   /**
@@ -32,6 +33,7 @@ class Authorizations () extends StripeResource {
   def approve(id: String, options: HeaderOptions): js.Promise[IAuthorization] = js.native
   def approve(id: String, options: HeaderOptions, response: IResponseFn[IAuthorization]): js.Promise[IAuthorization] = js.native
   def approve(id: String, response: IResponseFn[IAuthorization]): js.Promise[IAuthorization] = js.native
+  
   def decline(id: String): js.Promise[IAuthorization] = js.native
   def decline(id: String, data: IAuthorizationDeclineOptions): js.Promise[IAuthorization] = js.native
   /**
@@ -48,6 +50,7 @@ class Authorizations () extends StripeResource {
   def decline(id: String, options: HeaderOptions): js.Promise[IAuthorization] = js.native
   def decline(id: String, options: HeaderOptions, response: IResponseFn[IAuthorization]): js.Promise[IAuthorization] = js.native
   def decline(id: String, response: IResponseFn[IAuthorization]): js.Promise[IAuthorization] = js.native
+  
   def list(): js.Promise[IList[IAuthorization]] = js.native
   def list(data: IAuthorizationListOptions): js.Promise[IList[IAuthorization]] = js.native
   /**
@@ -64,6 +67,7 @@ class Authorizations () extends StripeResource {
   def list(options: HeaderOptions): js.Promise[IList[IAuthorization]] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IAuthorization]]): js.Promise[IList[IAuthorization]] = js.native
   def list(response: IResponseFn[IList[IAuthorization]]): js.Promise[IList[IAuthorization]] = js.native
+  
   def retrieve(id: String): js.Promise[IAuthorization] = js.native
   /**
     * Retrieves an Issuing Authorization object.
@@ -71,6 +75,7 @@ class Authorizations () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions): js.Promise[IAuthorization] = js.native
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[IAuthorization]): js.Promise[IAuthorization] = js.native
   def retrieve(id: String, response: IResponseFn[IAuthorization]): js.Promise[IAuthorization] = js.native
+  
   def update(id: String, data: IAuthorizationUpdateOptions): js.Promise[IAuthorization] = js.native
   /**
     * Updates the specified Issuing Authorization object by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
@@ -84,4 +89,3 @@ class Authorizations () extends StripeResource {
   ): js.Promise[IAuthorization] = js.native
   def update(id: String, data: IAuthorizationUpdateOptions, response: IResponseFn[IAuthorization]): js.Promise[IAuthorization] = js.native
 }
-

@@ -2,9 +2,10 @@ package typings.passportFacebookToken
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type VerifyFunction = js.Function4[
     /* accessToken */ java.lang.String, 
     /* refreshToken */ java.lang.String, 
@@ -17,6 +18,7 @@ package object mod {
     ], 
     scala.Unit
   ]
+  
   type VerifyFunctionWithRequest = js.Function5[
     /* req */ typings.express.mod.Request_[
       typings.expressServeStaticCore.mod.ParamsDictionary, 

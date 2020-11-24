@@ -5,7 +5,7 @@ import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Manage client applications and organize their users
@@ -51,29 +51,43 @@ import scala.scalajs.js.annotation._
 @JSImport("loopback", "Application")
 @js.native
 class Application () extends PersistedModel {
+  
   var anonymousAllowed: Boolean = js.native
+  
   var authenticationEnabled: Boolean = js.native
+  
   var authenticationSchemes: js.Array[String] = js.native
+  
   /** The OAuth 2.0 code/token callback URL. */
   var callBackUrl: js.Array[String] = js.native
+  
   /** Date Application object was created.  Default: current date. */
   var created: Date = js.native
+  
   /** Text description */
   var description: String = js.native
+  
   /** E-mail address */
   var email: String = js.native
+  
   /** Whether the e-mail is verified. */
   var emailVerified: String = js.native
+  
   /** string Icon image URL. */
   var icon: String = js.native
+  
   /** Generated ID. */
   var id: String = js.native
+  
   /** modified Date Application object was modified.  Default: current date. */
   var modified: Date = js.native
+  
   /** Name; required. */
   var name: String = js.native
+  
   /** User ID of the developer who registers the application. */
   var owner: String = js.native
+  
   /**
     * pushSettings.apns APNS configuration, see the options
     *   below and also
@@ -92,10 +106,7 @@ class Application () extends PersistedModel {
     *  pushSettings.gcm.serverApiKey: Google Cloud Messaging API key.
     */
   var pushSetings: Apns = js.native
-  /** Status of the application; Either `production`, `sandbox` (default), or `disabled`. */
-  var status: String = js.native
-  /** OAuth 2.0  application URL. */
-  var url: String = js.native
+  
   /**
     * Reset keys for a given application by the appId
     * @param {Any} appId
@@ -103,12 +114,18 @@ class Application () extends PersistedModel {
     * @param {Error} err
     */
   def resetKeys(appId: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
+  /** Status of the application; Either `production`, `sandbox` (default), or `disabled`. */
+  var status: String = js.native
+  
+  /** OAuth 2.0  application URL. */
+  var url: String = js.native
 }
-
 /* static members */
 @JSImport("loopback", "Application")
 @js.native
 object Application extends js.Object {
+  
   /**
     * Authenticate the application id and key
     * @param {Any} appId
@@ -123,6 +140,7 @@ object Application extends js.Object {
     * - masterKe
     */
   def authenticate(appId: js.Any, key: String, callback: js.Function2[/* err */ Error, /* matched */ String, Unit]): Unit = js.native
+  
   /**
     * Register a new application
     * @param {string} owner Owner's user ID.
@@ -131,6 +149,7 @@ object Application extends js.Object {
     * @param {() => void} callback  Callback function
     */
   def register(owner: String, name: String, options: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Reset keys for the application instance
     * @callback {() => void} callback
@@ -138,4 +157,3 @@ object Application extends js.Object {
     */
   def resetKeys(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }
-

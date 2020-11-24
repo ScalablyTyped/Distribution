@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.UI.Notifications
 import typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines the content, associated metadata and events, and expiration time of a toast notification. */
 @JSGlobal("Windows.UI.Notifications.ToastNotification")
@@ -16,4 +16,3 @@ class ToastNotification protected ()
     */
   def this(content: XmlDocument) = this()
 }
-

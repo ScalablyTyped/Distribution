@@ -11,8 +11,8 @@ A geographic extension for [kdbush](https://github.com/mourner/kdbush), the fast
 | Full name          | geokdbush |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 64866 |
+| # dependents       | 17 |
+| # downloads        | 81600 |
 | # stars            | 0 |
 
 ## Links

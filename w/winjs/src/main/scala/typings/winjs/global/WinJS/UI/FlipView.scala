@@ -3,7 +3,7 @@ package typings.winjs.global.WinJS.UI
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Displays a collection, such as a set of photos, one item at a time.
@@ -23,30 +23,33 @@ class FlipView[T] ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-
 /* static members */
 @JSGlobal("WinJS.UI.FlipView")
 @js.native
 object FlipView extends js.Object {
+  
   /**
     * Event Name
     **/
   var datasourceCountChangedEvent: String = js.native
+  
   /**
     * Event Name
     **/
   var pageCompletedEvent: String = js.native
+  
   /**
     * Event Name
     **/
   var pageSelectedEvent: String = js.native
+  
   /**
     * Event Name
     **/
   var pageVisibilityChangedEvent: String = js.native
+  
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
   var supportedForProcessing: Boolean = js.native
 }
-

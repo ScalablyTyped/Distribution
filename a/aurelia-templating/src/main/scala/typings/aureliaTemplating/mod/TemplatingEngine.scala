@@ -4,7 +4,7 @@ import typings.aureliaDependencyInjection.mod.Container
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "TemplatingEngine")
 @js.native
@@ -22,6 +22,7 @@ class TemplatingEngine protected () extends js.Object {
     viewCompiler: ViewCompiler,
     compositionEngine: CompositionEngine
   ) = this()
+  
   /**
     * Dynamically composes components and views.
     * @param context The composition context to use.
@@ -29,11 +30,13 @@ class TemplatingEngine protected () extends js.Object {
     * are responsible for enforcing the Controller/View lifecycle.
     */
   def compose(context: CompositionContext): js.Promise[View_ | Controller] = js.native
+  
   /**
     * Configures the default animator.
     * @param animator The animator instance.
     */
   def configureAnimator(animator: Animator): Unit = js.native
+  
   def enhance(instruction: EnhanceInstruction): View_ = js.native
   /**
     * Enhances existing DOM with behaviors and bindings.
@@ -43,4 +46,3 @@ class TemplatingEngine protected () extends js.Object {
     */
   def enhance(instruction: Element): View_ = js.native
 }
-

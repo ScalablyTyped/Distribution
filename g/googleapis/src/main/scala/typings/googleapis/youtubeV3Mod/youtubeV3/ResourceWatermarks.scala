@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Watermarks")
 @js.native
 class ResourceWatermarks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.watermarks.set
     * @desc Uploads a watermark image to YouTube and sets it for a channel.
@@ -42,6 +44,7 @@ class ResourceWatermarks protected () extends js.Object {
   ): Unit = js.native
   def set(params: ParamsResourceWatermarksSet, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def set(params: ParamsResourceWatermarksSet, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * youtube.watermarks.unset
     * @desc Deletes a channel's watermark image.
@@ -72,4 +75,3 @@ class ResourceWatermarks protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

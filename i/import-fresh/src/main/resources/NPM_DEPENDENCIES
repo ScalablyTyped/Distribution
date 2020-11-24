@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "import-fresh" : "3.2.1"
+      "import-fresh" : "3.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "import-fresh" : "3.2.1"
+      "import-fresh" : "3.2.2"
     }
   ],
   "compile-devDependencies" : [

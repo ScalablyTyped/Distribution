@@ -9,7 +9,7 @@ import typings.std.Uint16Array
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new texture.
@@ -96,6 +96,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Texture extends js.Object {
+  
   /**
     * The addressing mode to be applied to the texture horizontally. Can be:
     * * {@link pc.ADDRESS_REPEAT}
@@ -103,6 +104,7 @@ trait Texture extends js.Object {
     * * {@link pc.ADDRESS_MIRRORED_REPEAT}
     */
   var addressU: Double = js.native
+  
   /**
     * The addressing mode to be applied to the texture vertically. Can be:
     * * {@link pc.ADDRESS_REPEAT}
@@ -110,6 +112,7 @@ trait Texture extends js.Object {
     * * {@link pc.ADDRESS_MIRRORED_REPEAT}
     */
   var addressV: Double = js.native
+  
   /**
     * The addressing mode to be applied to the 3D texture depth (WebGL2 only). Can be:
     * * {@link pc.ADDRESS_REPEAT}
@@ -117,11 +120,13 @@ trait Texture extends js.Object {
     * * {@link pc.ADDRESS_MIRRORED_REPEAT}
     */
   var addressW: Double = js.native
+  
   /**
     * Integer value specifying the level of anisotropic to apply to the texture
     * ranging from 1 (no anisotropic filtering) to the {@link pc.GraphicsDevice} property maxAnisotropy.
     */
   var anisotropy: Double = js.native
+  
   /**
     * Comparison function when compareOnRead is enabled (WebGL2 only).
     * Possible values:
@@ -133,25 +138,35 @@ trait Texture extends js.Object {
     * * {@link pc.FUNC_NOTEQUAL}
     */
   var compareFunc: Double = js.native
+  
   /**
     * When enabled, and if texture format is pc.PIXELFORMAT_DEPTH or pc.PIXELFORMAT_DEPTHSTENCIL,
     * hardware PCF is enabled for this texture, and you can get filtered results of comparison using texture() in your shader (WebGL2 only).
     */
   var compareOnRead: Boolean = js.native
+  
   /**
     * Returns true if this texture is a cube map and false otherwise.
     */
   val cubemap: Boolean = js.native
+  
   /**
     * The number of depth slices in a 3D texture (WebGL2 only).
     */
   val depth: Double = js.native
+  
+  /**
+    * Forcibly free up the underlying WebGL resource owned by the texture.
+    */
+  def destroy(): Unit = js.native
+  
   /**
     * Specifies whether the texture should be flipped in the Y-direction. Only affects textures
     * with a source that is an image, canvas or video element. Does not affect cubemaps, compressed textures
     * or textures set from raw pixel data. Defaults to true.
     */
   var flipY: Boolean = js.native
+  
   /**
     * The pixel format of the texture. Can be:
     * * {@link pc.PIXELFORMAT_A8}
@@ -180,16 +195,39 @@ trait Texture extends js.Object {
     * * {@link pc.PIXELFORMAT_ATC_RGBA}
     */
   val format: Double = js.native
+  
+  /**
+    * Get the pixel data of the texture. If this is a cubemap then an array of 6 images will be returned otherwise
+    * a single image.
+    * @param [mipLevel] - A non-negative integer specifying the image level of detail. Defaults to 0, which represents the base image source.
+    * A level value of N, that is greater than 0, represents the image source for the Nth mipmap reduction level.
+    * @returns The source image of this texture. Can be null if source not assigned for specific image level.
+    */
+  def getSource(): HTMLImageElement = js.native
+  def getSource(mipLevel: Double): HTMLImageElement = js.native
+  
   /**
     * The height of the texture in pixels.
     */
   val height: Double = js.native
+  
+  /**
+    * Locks a miplevel of the texture, returning a typed array to be filled with pixel data.
+    * @param [options] - Optional options object. Valid properties are as follows:
+    * @param [options.level] - The mip level to lock with 0 being the top level. Defaults to 0.
+    * @param [options.face] - If the texture is a cubemap, this is the index of the face to lock.
+    * @returns A typed array containing the pixel data of the locked mip level.
+    */
+  def lock(): Uint8Array | Uint16Array | Float32Array = js.native
+  def lock(options: Face): Uint8Array | Uint16Array | Float32Array = js.native
+  
   /**
     * The magnification filter to be applied to the texture. Can be:
     * * {@link pc.FILTER_NEAREST}
     * * {@link pc.FILTER_LINEAR}
     */
   var magFilter: Double = js.native
+  
   /**
     * The minification filter to be applied to the texture. Can be:
     * * {@link pc.FILTER_NEAREST}
@@ -200,48 +238,22 @@ trait Texture extends js.Object {
     * * {@link pc.FILTER_LINEAR_MIPMAP_LINEAR}
     */
   var minFilter: Double = js.native
+  
   /**
     * Defines if texture should generate/upload mipmaps if possible.
     */
   var mipmaps: Boolean = js.native
+  
   /**
     * The name of the texture. Defaults to null.
     */
   var name: String = js.native
+  
   /**
     * Returns true if all dimensions of the texture are power of two, and false otherwise.
     */
   val pot: Boolean = js.native
-  /**
-    * Returns true if this texture is a 3D volume and false otherwise.
-    */
-  val volume: Boolean = js.native
-  /**
-    * The width of the texture in pixels.
-    */
-  val width: Double = js.native
-  /**
-    * Forcibly free up the underlying WebGL resource owned by the texture.
-    */
-  def destroy(): Unit = js.native
-  /**
-    * Get the pixel data of the texture. If this is a cubemap then an array of 6 images will be returned otherwise
-    * a single image.
-    * @param [mipLevel] - A non-negative integer specifying the image level of detail. Defaults to 0, which represents the base image source.
-    * A level value of N, that is greater than 0, represents the image source for the Nth mipmap reduction level.
-    * @returns The source image of this texture. Can be null if source not assigned for specific image level.
-    */
-  def getSource(): HTMLImageElement = js.native
-  def getSource(mipLevel: Double): HTMLImageElement = js.native
-  /**
-    * Locks a miplevel of the texture, returning a typed array to be filled with pixel data.
-    * @param [options] - Optional options object. Valid properties are as follows:
-    * @param [options.level] - The mip level to lock with 0 being the top level. Defaults to 0.
-    * @param [options.face] - If the texture is a cubemap, this is the index of the face to lock.
-    * @returns A typed array containing the pixel data of the locked mip level.
-    */
-  def lock(): Uint8Array | Uint16Array | Float32Array = js.native
-  def lock(options: Face): Uint8Array | Uint16Array | Float32Array = js.native
+  
   def setSource(source: js.Array[HTMLCanvasElement | HTMLImageElement | HTMLVideoElement]): Unit = js.native
   def setSource(source: js.Array[HTMLCanvasElement | HTMLImageElement | HTMLVideoElement], mipLevel: Double): Unit = js.native
   /**
@@ -258,10 +270,12 @@ trait Texture extends js.Object {
   def setSource(source: HTMLImageElement, mipLevel: Double): Unit = js.native
   def setSource(source: HTMLVideoElement): Unit = js.native
   def setSource(source: HTMLVideoElement, mipLevel: Double): Unit = js.native
+  
   /**
     * Unlocks the currently locked mip level and uploads it to VRAM.
     */
   def unlock(): Unit = js.native
+  
   /**
     * Forces a reupload of the textures pixel data to graphics memory. Ordinarily, this function
     * is called by internally by {@link pc.Texture#setSource} and {@link pc.Texture#unlock}. However, it still needs to
@@ -269,5 +283,14 @@ trait Texture extends js.Object {
     * this is done once every frame before video textured geometry is rendered.
     */
   def upload(): Unit = js.native
+  
+  /**
+    * Returns true if this texture is a 3D volume and false otherwise.
+    */
+  val volume: Boolean = js.native
+  
+  /**
+    * The width of the texture in pixels.
+    */
+  val width: Double = js.native
 }
-

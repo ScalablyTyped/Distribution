@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.breadcrumbMod.BreadcrumbProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "Breadcrumb")
+@JSImport("reactstrap/lib", "Breadcrumb")
 @js.native
-class Breadcrumb[T] ()
+class Breadcrumb ()
   extends Component[BreadcrumbProps, js.Object, js.Any]
-

@@ -6,11 +6,12 @@ import typings.react.mod.StatelessComponent
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-adal", "withAdalLogin")
 @js.native
 object withAdalLogin extends js.Object {
+  
   def apply(authContext: AuthenticationContext, resource: String): js.Function3[
     /* wrappedComponent */ (ComponentClass[js.Object, ComponentState]) | StatelessComponent[js.Object], 
     /* renderLoading */ js.Function0[Element | Null], 
@@ -18,4 +19,3 @@ object withAdalLogin extends js.Object {
     ComponentClass[js.Object, ComponentState]
   ] = js.native
 }
-

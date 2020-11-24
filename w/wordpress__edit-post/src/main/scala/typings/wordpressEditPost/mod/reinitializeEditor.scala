@@ -4,11 +4,12 @@ import typings.std.Element
 import typings.wordpressEditPost.anon.PartialEditorSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/edit-post", "reinitializeEditor")
 @js.native
 object reinitializeEditor extends js.Object {
+  
   def apply(postType: String, postId: String, target: Element): Unit = js.native
   def apply(
     postType: String,
@@ -46,4 +47,3 @@ object reinitializeEditor extends js.Object {
   initialEdits: js.Object
   ): Unit = js.native
 }
-

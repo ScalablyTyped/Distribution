@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/escape-html" : "1.9.0"
+      "@wordpress/escape-html" : "1.10.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/escape-html" : "1.9.0"
+      "@wordpress/escape-html" : "1.10.0"
     }
   ],
   "compile-devDependencies" : [

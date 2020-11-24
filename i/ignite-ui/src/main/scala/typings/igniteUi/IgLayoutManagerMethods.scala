@@ -2,10 +2,11 @@ package typings.igniteUi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IgLayoutManagerMethods extends js.Object {
+  
   /**
     * Destroy is part of the jQuery UI widget API and does the following:
     *                     1. Remove custom CSS classes that were added.
@@ -13,6 +14,7 @@ trait IgLayoutManagerMethods extends js.Object {
     *                     3. Unbind all events that were bound.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Triggers recalculation of the layout dimensions. Layouts may not need to be reflowed manually, if their sizes are in percentages (i.e. they are responsive by default)
     *                     this can be particularly useful with a grid layout, when the container has percentage sizes, but items are calculated in pixels and positioned absolutely in the container.
@@ -34,4 +36,3 @@ trait IgLayoutManagerMethods extends js.Object {
   def reflow(forceReflow: Boolean, animationDuration: Double): Unit = js.native
   def reflow(forceReflow: Boolean, animationDuration: Double, event: js.Object): Unit = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.pixiJs.mod
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Text Object will create a line or multiple lines of text.
@@ -41,4 +41,3 @@ class Text protected ()
   def this(text: String, style: js.Any, canvas: HTMLCanvasElement) = this()
   def this(text: String, style: typings.pixiJs.PIXI.TextStyle, canvas: HTMLCanvasElement) = this()
 }
-

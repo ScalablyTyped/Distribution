@@ -2,7 +2,7 @@ package typings.firstMate.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("first-mate", "ScopeSelector")
 @js.native
@@ -13,6 +13,7 @@ class ScopeSelector protected () extends js.Object {
     *  @return A newly constructed ScopeSelector.
     */
   def this(source: String) = this()
+  
   /**
     *  Gets the prefix of this scope selector.
     *  @param scopes The scopes to match a prefix against.
@@ -20,6 +21,7 @@ class ScopeSelector protected () extends js.Object {
     */
   def getPrefix(scopes: String): js.UndefOr[String] = js.native
   def getPrefix(scopes: js.Array[String]): js.UndefOr[String] = js.native
+  
   /**
     *  Check if this scope selector matches the scopes.
     *  @param scopes A single scope or an array of them to be compared against.
@@ -27,11 +29,13 @@ class ScopeSelector protected () extends js.Object {
     */
   def matches(scopes: String): Boolean = js.native
   def matches(scopes: js.Array[String]): Boolean = js.native
+  
   /**
     *  Convert this TextMate scope selector to a CSS selector.
     *  @return A string with the CSSSelector representation of this ScopeSelector.
     */
   def toCssSelector(): String = js.native
+  
   /**
     *  Convert this TextMate scope selector to a CSS selector, prefixing scopes
     *  with `syntax--`.
@@ -40,4 +44,3 @@ class ScopeSelector protected () extends js.Object {
     */
   def toCssSyntaxSelector(): String = js.native
 }
-

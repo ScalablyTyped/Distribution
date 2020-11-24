@@ -6,12 +6,13 @@ import typings.grammarkdown.tokensMod.SyntaxKind.LookaheadKeyword
 import typings.grammarkdown.tokensMod.SyntaxKind.OpenBracketToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/nodes", "LookaheadAssertion")
 @js.native
 class LookaheadAssertion protected ()
-  extends AssertionBase[typings.grammarkdown.tokensMod.SyntaxKind.LookaheadAssertion, OpenBracketToken] {
+  extends AssertionBase[typings.grammarkdown.tokensMod.SyntaxKind.LookaheadAssertion, OpenBracketToken]
+     with Assertion {
   def this(openBracketToken: Token[OpenBracketToken], lookaheadKeyword: Token[LookaheadKeyword]) = this()
   def this(
     openBracketToken: Token[OpenBracketToken],
@@ -84,11 +85,14 @@ class LookaheadAssertion protected ()
     lookahead: SymbolSpan,
     closeBracketToken: Token[CloseBracketToken]
   ) = this()
+  
   val lookahead: js.UndefOr[SymbolSpan | SymbolSet] = js.native
+  
   val lookaheadKeyword: Token[LookaheadKeyword] = js.native
+  
   val operatorToken: js.UndefOr[Token[LookaheadOperatorKind]] = js.native
+  
   def update(): LookaheadAssertion = js.native
   def update(lookahead: SymbolSet): LookaheadAssertion = js.native
   def update(lookahead: SymbolSpan): LookaheadAssertion = js.native
 }
-

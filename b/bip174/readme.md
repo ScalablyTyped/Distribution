@@ -1,7 +1,7 @@
 
 # Scala.js typings for bip174
 
-Typings are for version 1.0.1
+Typings are for version 2.0.1
 
 ## Library description:
 [![Build Status](https://travis-ci.org/bitcoinjs/bip174.png?branch=master)](https://travis-ci.org/bitcoinjs/bip174) [![NPM](https://img.shields.io/npm/v/bip174.svg)](https://www.npmjs.org/package/bip174)
@@ -11,8 +11,8 @@ Typings are for version 1.0.1
 | Full name          | bip174 |
 | Keywords           | - |
 | # releases         | 17 |
-| # dependents       | 2 |
-| # downloads        | 163008 |
+| # dependents       | 10 |
+| # downloads        | 607061 |
 | # stars            | 0 |
 
 ## Links

@@ -2,11 +2,10 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BLEND_MODES extends js.Object
-
 /**
   * Various blend modes supported by PIXI.
   *
@@ -52,6 +51,7 @@ sealed trait BLEND_MODES extends js.Object
 @JSGlobal("PIXI.BLEND_MODES")
 @js.native
 object BLEND_MODES extends js.Object {
+  
   @js.native
   sealed trait ADD extends BLEND_MODES
   
@@ -147,6 +147,4 @@ object BLEND_MODES extends js.Object {
   
   @js.native
   sealed trait XOR extends BLEND_MODES
-  
 }
-

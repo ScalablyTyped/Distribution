@@ -4,11 +4,12 @@ import typings.rxjs.subscriptionMod.Subscription
 import typings.rxjs.typesMod.PartialObserver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/Subscriber", JSImport.Namespace)
 @js.native
 object subscriberMod extends js.Object {
+  
   @js.native
   class SafeSubscriber[T] protected () extends Subscriber[T] {
     def this(_parentSubscriber: Subscriber[T]) = this()
@@ -65,10 +66,15 @@ object subscriberMod extends js.Object {
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
+    
     var __tryOrSetError: js.Any = js.native
+    
     var __tryOrUnsub: js.Any = js.native
+    
     var _context: js.Any = js.native
+    
     var _parentSubscriber: js.Any = js.native
+    
     /** @internal This is an internal implementation detail, do not use. */
     def _unsubscribe(): Unit = js.native
   }
@@ -125,16 +131,16 @@ object subscriberMod extends js.Object {
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
-    var destination: PartialObserver[_] | Subscriber[_] = js.native
-    var isStopped: Boolean = js.native
-    /** @internal */ var syncErrorThrowable: Boolean = js.native
-    /** @internal */ var syncErrorThrown: Boolean = js.native
-    /** @internal */ var syncErrorValue: js.Any = js.native
+    
     /* protected */ def _complete(): Unit = js.native
+    
     /* protected */ def _error(err: js.Any): Unit = js.native
+    
     /* protected */ def _next(value: T): Unit = js.native
+    
     /** @deprecated This is an internal implementation detail, do not use. */
     def _unsubscribeAndRecycle(): Subscriber[T] = js.native
+    
     /**
       * The {@link Observer} callback to receive a valueless notification of type
       * `complete` from the Observable. Notifies the Observer that the Observable
@@ -142,6 +148,9 @@ object subscriberMod extends js.Object {
       * @return {void}
       */
     def complete(): Unit = js.native
+    
+    var destination: PartialObserver[_] | Subscriber[_] = js.native
+    
     /**
       * The {@link Observer} callback to receive notifications of type `error` from
       * the Observable, with an attached `Error`. Notifies the Observer that
@@ -151,6 +160,9 @@ object subscriberMod extends js.Object {
       */
     def error(): Unit = js.native
     def error(err: js.Any): Unit = js.native
+    
+    var isStopped: Boolean = js.native
+    
     /**
       * The {@link Observer} callback to receive notifications of type `next` from
       * the Observable, with a value. The Observable may call this method 0 or more
@@ -160,11 +172,17 @@ object subscriberMod extends js.Object {
       */
     def next(): Unit = js.native
     def next(value: T): Unit = js.native
+    
+    /** @internal */ var syncErrorThrowable: Boolean = js.native
+    
+    /** @internal */ var syncErrorThrown: Boolean = js.native
+    
+    /** @internal */ var syncErrorValue: js.Any = js.native
   }
-  
   /* static members */
   @js.native
   object Subscriber extends js.Object {
+    
     /**
       * A static factory for a Subscriber, given a (potentially partial) definition
       * of an Observer.
@@ -201,6 +219,4 @@ object subscriberMod extends js.Object {
       complete: js.Function0[Unit]
     ): Subscriber[T] = js.native
   }
-  
 }
-

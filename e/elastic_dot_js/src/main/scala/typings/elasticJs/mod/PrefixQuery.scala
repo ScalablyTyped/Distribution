@@ -2,7 +2,7 @@ package typings.elasticJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "PrefixQuery")
 @js.native
@@ -11,18 +11,22 @@ class PrefixQuery protected () extends Query {
     Matches documents containing the specified un-analyzed prefix.
     */
   def this(field: String, value: String) = this()
+  
   /*
     The type of ejs object.  For internal use only.
     */
   def _type(): String = js.native
+  
   /*
     Sets the boost value of the Query.
     */
   def boost(boost: Double): PrefixQuery = js.native
+  
   /*
     The field to run the query against.
     */
   def field(f: String): PrefixQuery = js.native
+  
   /*
     Sets rewrite method.  Valid values are:
     constant_score_auto - tries to pick the best constant-score rewrite
@@ -43,14 +47,15 @@ class PrefixQuery protected () extends Query {
     This is an advanced option, use with care.
     */
   def rewrite(m: String): PrefixQuery = js.native
+  
   /*
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
   def toJSON(): js.Any = js.native
+  
   /*
     The prefix value.
     */
   def value(p: String): PrefixQuery = js.native
 }
-

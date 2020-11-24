@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "recase"
-version := "1.0-dt-20200515Z-45758f"
+version := "1.0-dt-20200515Z-f5bf27"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

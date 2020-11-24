@@ -4,11 +4,12 @@ import typings.samchon.distributedSystemArrayMod.DistributedSystemArray
 import typings.samchon.idistributedserverMod.IDistributedServer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/distributed/derived/DistributedServerArray", JSImport.Namespace)
 @js.native
 object distributedServerArrayMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
@@ -32,6 +33,7 @@ object distributedServerArrayMod extends js.Object {
     * Default Constructor.
     */
   abstract class DistributedServerArray[System /* <: IDistributedServer */] () extends DistributedSystemArray[System] {
+    
     /**
       * @inheritdoc
       */
@@ -42,6 +44,4 @@ object distributedServerArrayMod extends js.Object {
       */
     def connect(): Unit = js.native
   }
-  
 }
-

@@ -3,11 +3,12 @@ package typings.webgme.global
 import typings.webgme.Core.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Gme")
 @js.native
 object Gme extends js.Object {
+  
   /**
     * https://github.com/webgme/webgme/wiki/GME-Client-API
     * 
@@ -19,8 +20,7 @@ object Gme extends js.Object {
   
   @js.native
   object Concepts extends js.Object {
+    
     def isConnection(node: Node): Boolean = js.native
   }
-  
 }
-

@@ -2,10 +2,15 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "HemisphereLight")
 @js.native
+/**
+	 * @param skyColor
+	 * @param groundColor
+	 * @param [intensity=1]
+	 */
 class HemisphereLight ()
   extends typings.three.hemisphereLightMod.HemisphereLight {
   def this(skyColor: String) = this()
@@ -44,4 +49,3 @@ class HemisphereLight ()
     intensity: Double
   ) = this()
 }
-

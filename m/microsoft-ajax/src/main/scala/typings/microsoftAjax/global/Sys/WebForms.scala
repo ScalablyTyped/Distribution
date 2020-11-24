@@ -5,7 +5,7 @@ import typings.microsoftAjax.Sys.Net.WebRequestExecutor
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region Sys.WebForms Namespace
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Sys.WebForms")
 @js.native
 object WebForms extends js.Object {
+  
   /**
     * Used by the beginRequest event of the PageRequestManager class to pass argument information to event handlers.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb384003(v=vs.100).aspx}
@@ -112,6 +113,18 @@ object WebForms extends js.Object {
     */
   class PageRequestManager ()
     extends typings.microsoftAjax.Sys.WebForms.PageRequestManager
+  /* static members */
+  @js.native
+  object PageRequestManager extends js.Object {
+    
+    //#endregion
+    //#region Methods
+    /**
+      * Returns the instance of the PageRequestManager class for the page.
+      * @return The current instance of the PageRequestManager class. You do not create a new instance of the PageRequestManager class directly. Instead, an instance is available when partial-page rendering is enabled.
+      */
+    def getInstance(): typings.microsoftAjax.Sys.WebForms.PageRequestManager = js.native
+  }
   
   //#region Exceptions: Defines exceptions that can occur during partial-page updates.
   /**
@@ -145,18 +158,4 @@ object WebForms extends js.Object {
   @js.native
   class PageRequestManagerTimeoutException ()
     extends typings.microsoftAjax.Sys.WebForms.PageRequestManagerTimeoutException
-  
-  /* static members */
-  @js.native
-  object PageRequestManager extends js.Object {
-    //#endregion
-    //#region Methods
-    /**
-      * Returns the instance of the PageRequestManager class for the page.
-      * @return The current instance of the PageRequestManager class. You do not create a new instance of the PageRequestManager class directly. Instead, an instance is available when partial-page rendering is enabled.
-      */
-    def getInstance(): typings.microsoftAjax.Sys.WebForms.PageRequestManager = js.native
-  }
-  
 }
-

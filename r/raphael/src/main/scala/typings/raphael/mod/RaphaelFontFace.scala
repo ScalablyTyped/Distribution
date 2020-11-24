@@ -2,42 +2,50 @@ package typings.raphael.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RaphaelFontFace extends js.Object {
+  
   /**
     * The ascent property of this font, such as `270`.
     *
     * The ascent is the recommended distance above the baseline for singled spaced text.
     */
   var ascent: Double | String = js.native
+  
   /**
     * The axis aligned bounding box of all glyphs, such as `-11 -274 322 94` (top left corner and width and height).
     */
   var bbox: String = js.native
+  
   /**
     * The descent property of this font, such as `-90`.
     *
     * The ascent is the recommended distance below the baseline for singled spaced text
     */
   var descent: Double | String = js.native
+  
   /**
     * The font family property of this font.
     */
   var `font-family`: String = js.native
+  
   /**
     * The font stretch property of this font, such as `normal`.
     */
   var `font-stretch`: String = js.native
+  
   /**
     * The font style property of this font.
     */
   var `font-style`: String = js.native
+  
   /**
     * The weight of this font, such as `200`.
     */
   var `font-weight`: Double | String = js.native
+  
   /**
     * The panose-1 classification of this font.
     *
@@ -47,18 +55,22 @@ trait RaphaelFontFace extends js.Object {
     * Cartesian distance.
     */
   var `panose-1`: String = js.native
+  
   /**
     * When an underline is drawn below a glyph, the vertical offset of that underline. Usually negative, such as `36`.
     */
   var `underline-position`: Double | String = js.native
+  
   /**
     * The thickness of the underline, when a glyph is underlined, such as `18`.
     */
   var `underline-thickness`: Double | String = js.native
+  
   /**
     * The range of characters this font contains, such as `U+0020-U+00F3`.
     */
   var `unicode-range`: String = js.native
+  
   /**
     * The units-per-em property of this font.
     *
@@ -66,6 +78,7 @@ trait RaphaelFontFace extends js.Object {
     * height is the intended distance between lines of type in the same type size.
     */
   var `units-per-em`: Double | String = js.native
+  
   /**
     * The x-height property of this font.
     *
@@ -73,8 +86,8 @@ trait RaphaelFontFace extends js.Object {
     */
   var `x-height`: Double | String = js.native
 }
-
 object RaphaelFontFace {
+  
   @scala.inline
   def apply(
     ascent: Double | String,
@@ -104,44 +117,59 @@ object RaphaelFontFace {
     __obj.updateDynamic("x-height")(`x-height`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaphaelFontFace]
   }
+  
   @scala.inline
   implicit class RaphaelFontFaceOps[Self <: RaphaelFontFace] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAscent(value: Double | String): Self = this.set("ascent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBbox(value: String): Self = this.set("bbox", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDescent(value: Double | String): Self = this.set("descent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setFont-family`(value: String): Self = this.set("font-family", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setFont-stretch`(value: String): Self = this.set("font-stretch", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setFont-style`(value: String): Self = this.set("font-style", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setFont-weight`(value: Double | String): Self = this.set("font-weight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setPanose-1`(value: String): Self = this.set("panose-1", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setUnderline-position`(value: Double | String): Self = this.set("underline-position", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setUnderline-thickness`(value: Double | String): Self = this.set("underline-thickness", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setUnicode-range`(value: String): Self = this.set("unicode-range", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setUnits-per-em`(value: Double | String): Self = this.set("units-per-em", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def `setX-height`(value: Double | String): Self = this.set("x-height", value.asInstanceOf[js.Any])
   }
-  
 }
-

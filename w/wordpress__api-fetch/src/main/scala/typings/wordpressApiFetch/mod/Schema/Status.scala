@@ -4,7 +4,7 @@ import typings.std.Record
 import typings.wordpressApiFetch.anon.Dictk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // prettier-ignore
 /* Rewritten from type alias, can be one of: 
@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation._
   - typings.wordpressApiFetch.anon.PickBaseStatusStatus
 */
 trait Status[T /* <: Context */] extends js.Object
-
 object Status {
+  
   @scala.inline
-  def BaseStatus[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
+  def BaseStatus[T /* <: Context */](
     _links: Record[String, js.Array[Dictk]],
     name: String,
     `private`: Boolean,
@@ -31,8 +31,9 @@ object Status {
     __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Status[T]]
   }
+  
   @scala.inline
-  def PickBaseStatusStatusEmbedded[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
+  def PickBaseStatusStatusEmbedded[T /* <: Context */](
     _links: Record[String, js.Array[Dictk]],
     name: String,
     public: Boolean,
@@ -42,10 +43,10 @@ object Status {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], queryable = queryable.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[Status[T]]
   }
+  
   @scala.inline
-  def PickBaseStatusStatus[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](_links: Record[String, js.Array[Dictk]], name: String, slug: String): Status[T] = {
+  def PickBaseStatusStatus[T /* <: Context */](_links: Record[String, js.Array[Dictk]], name: String, slug: String): Status[T] = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[Status[T]]
   }
 }
-

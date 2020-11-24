@@ -6,34 +6,18 @@ import typings.std.IterableIterator
 import typings.std.anon.CopyWithin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Array<string> & {  raw :std.Array<string> | undefined} */
 @js.native
 trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
-  /** Iterator */
-  @JSName(js.Symbol.iterator)
-  var iterator: js.Function0[IterableIterator[String]] = js.native
-  /**
-    * Gets or sets the length of the array. This is a number one higher than the highest element defined in an array.
-    */
-  var length: Double = js.native
-  /**
-    * The raw (unescaped) string parts of the template.
-    * These are only retrieved and stored for tagged templates.
-    */
-  var raw: js.UndefOr[js.Array[String]] = js.native
-  /**
-    * Returns an object whose properties have the value 'true'
-    * when they will be absent when used in a 'with' statement.
-    */
-  @JSName(js.Symbol.unscopables)
-  var unscopables: js.Function0[CopyWithin] = js.native
+  
   /**
     * Combines two or more arrays.
     * @param items Additional items to add to the end of array1.
     */
   def concat(items: (js.Array[String] | String)*): js.Array[String] = js.native
+  
   /**
     * Returns the this object after copying a section of the array identified by start and end
     * to the same array starting at position target
@@ -45,23 +29,53 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     */
   def copyWithin(target: Double, start: Double): this.type = js.native
   def copyWithin(target: Double, start: Double, end: Double): this.type = js.native
+  
   /**
     * Returns an iterable of key, value pairs for every entry in the array
     */
   def entries(): IterableIterator[js.Tuple2[Double, String]] = js.native
+  
   /**
     * Determines whether all the members of an array satisfy the specified test.
-    * @param callbackfn A function that accepts up to three arguments. The every method calls
-    * the callbackfn function for each element in the array until the callbackfn returns a value
+    * @param predicate A function that accepts up to three arguments. The every method calls
+    * the predicate function for each element in the array until the predicate returns a value
     * which is coercible to the Boolean value false, or until the end of the array.
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function.
+    * @param thisArg An object to which the this keyword can refer in the predicate function.
     * If thisArg is omitted, undefined is used as the this value.
     */
-  def every(callbackfn: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _]): Boolean = js.native
+  def every(predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _]): Boolean = js.native
   def every(
-    callbackfn: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _],
+    predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _],
     thisArg: js.Any
   ): Boolean = js.native
+  /**
+    * Determines whether all the members of an array satisfy the specified test.
+    * @param predicate A function that accepts up to three arguments. The every method calls
+    * the predicate function for each element in the array until the predicate returns a value
+    * which is coercible to the Boolean value false, or until the end of the array.
+    * @param thisArg An object to which the this keyword can refer in the predicate function.
+    * If thisArg is omitted, undefined is used as the this value.
+    */
+  @JSName("every")
+  def every_S_String[S /* <: String */](
+    predicate: js.Function3[
+      /* value */ String, 
+      /* index */ Double, 
+      /* array */ js.Array[String], 
+      /* is S */ Boolean
+    ]
+  ): /* is std.Array<S> */ Boolean = js.native
+  @JSName("every")
+  def every_S_String[S /* <: String */](
+    predicate: js.Function3[
+      /* value */ String, 
+      /* index */ Double, 
+      /* array */ js.Array[String], 
+      /* is S */ Boolean
+    ],
+    thisArg: js.Any
+  ): /* is std.Array<S> */ Boolean = js.native
+  
   /**
     * Returns the this object after filling the section identified by start and end with value
     * @param value value to fill array section with
@@ -74,24 +88,25 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
   def fill(value: String, start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def fill(value: String, start: Double): this.type = js.native
   def fill(value: String, start: Double, end: Double): this.type = js.native
+  
   /**
     * Returns the elements of an array that meet the condition specified in a callback function.
-    * @param callbackfn A function that accepts up to three arguments. The filter method calls the callbackfn function one time for each element in the array.
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+    * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
+    * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
     */
-  def filter(callbackfn: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _]): js.Array[String] = js.native
+  def filter(predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _]): js.Array[String] = js.native
   def filter(
-    callbackfn: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _],
+    predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _],
     thisArg: js.Any
   ): js.Array[String] = js.native
   /**
     * Returns the elements of an array that meet the condition specified in a callback function.
-    * @param callbackfn A function that accepts up to three arguments. The filter method calls the callbackfn function one time for each element in the array.
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+    * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
+    * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
     */
   @JSName("filter")
   def filter_S_String[S /* <: String */](
-    callbackfn: js.Function3[
+    predicate: js.Function3[
       /* value */ String, 
       /* index */ Double, 
       /* array */ js.Array[String], 
@@ -100,7 +115,7 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
   ): js.Array[S] = js.native
   @JSName("filter")
   def filter_S_String[S /* <: String */](
-    callbackfn: js.Function3[
+    predicate: js.Function3[
       /* value */ String, 
       /* index */ Double, 
       /* array */ js.Array[String], 
@@ -108,6 +123,7 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     ],
     thisArg: js.Any
   ): js.Array[S] = js.native
+  
   def find(predicate: js.Function3[/* value */ String, /* index */ Double, /* obj */ js.Array[String], _]): js.UndefOr[String] = js.native
   def find(
     predicate: js.Function3[/* value */ String, /* index */ Double, /* obj */ js.Array[String], _],
@@ -141,6 +157,7 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     ],
     thisArg: js.Any
   ): js.UndefOr[S] = js.native
+  
   /**
     * Returns the index of the first element in the array where predicate is true, and -1
     * otherwise.
@@ -155,6 +172,7 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     predicate: js.Function3[/* value */ String, /* index */ Double, /* obj */ js.Array[String], _],
     thisArg: js.Any
   ): Double = js.native
+  
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
@@ -163,6 +181,7 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     */
   def flat[A, D /* <: Double */](): js.Array[FlatArray[A, D]] = js.native
   def flat[A, D /* <: Double */](depth: D): js.Array[FlatArray[A, D]] = js.native
+  
   /**
     * Calls a defined callback function on each element of an array. Then, flattens the result into
     * a new array.
@@ -192,6 +211,7 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     ],
     thisArg: This
   ): js.Array[U] = js.native
+  
   /**
     * Performs the specified action for each element in an array.
     * @param callbackfn  A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
@@ -204,6 +224,7 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     callbackfn: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], Unit],
     thisArg: js.Any
   ): Unit = js.native
+  
   /**
     * Determines whether an array includes a certain element, returning true or false as appropriate.
     * @param searchElement The element to search for.
@@ -211,6 +232,7 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     */
   def includes(searchElement: String): Boolean = js.native
   def includes(searchElement: String, fromIndex: Double): Boolean = js.native
+  
   /**
     * Returns the index of the first occurrence of a value in an array.
     * @param searchElement The value to locate in the array.
@@ -218,16 +240,23 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     */
   def indexOf(searchElement: String): Double = js.native
   def indexOf(searchElement: String, fromIndex: Double): Double = js.native
+  
+  /** Iterator */
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[IterableIterator[String]] = js.native
+  
   /**
     * Adds all the elements of an array separated by the specified separator string.
     * @param separator A string used to separate one element of an array from the next in the resulting String. If omitted, the array elements are separated with a comma.
     */
   def join(): String = js.native
   def join(separator: String): String = js.native
+  
   /**
     * Returns an iterable of keys in the array
     */
   def keys(): IterableIterator[Double] = js.native
+  
   /**
     * Returns the index of the last occurrence of a specified value in an array.
     * @param searchElement The value to locate in the array.
@@ -235,6 +264,12 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     */
   def lastIndexOf(searchElement: String): Double = js.native
   def lastIndexOf(searchElement: String, fromIndex: Double): Double = js.native
+  
+  /**
+    * Gets or sets the length of the array. This is a number one higher than the highest element defined in an array.
+    */
+  var length: Double = js.native
+  
   /**
     * Calls a defined callback function on each element of an array, and returns an array that contains the results.
     * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
@@ -245,15 +280,24 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     callbackfn: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], U],
     thisArg: js.Any
   ): js.Array[U] = js.native
+  
   /**
     * Removes the last element from an array and returns it.
     */
   def pop(): js.UndefOr[String] = js.native
+  
   /**
     * Appends new elements to an array, and returns the new length of the array.
     * @param items New elements of the Array.
     */
   def push(items: String*): Double = js.native
+  
+  /**
+    * The raw (unescaped) string parts of the template.
+    * These are only retrieved and stored for tagged templates.
+    */
+  var raw: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
     * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
@@ -293,6 +337,7 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     ],
     initialValue: U
   ): U = js.native
+  
   /**
     * Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
     * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
@@ -332,14 +377,17 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     ],
     initialValue: U
   ): U = js.native
+  
   /**
     * Reverses the elements in an Array.
     */
   def reverse(): js.Array[String] = js.native
+  
   /**
     * Removes the first element from an array and returns it.
     */
   def shift(): js.UndefOr[String] = js.native
+  
   /**
     * Returns a section of an array.
     * @param start The beginning of the specified portion of the array.
@@ -349,19 +397,21 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
   def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[String] = js.native
   def slice(start: Double): js.Array[String] = js.native
   def slice(start: Double, end: Double): js.Array[String] = js.native
+  
   /**
     * Determines whether the specified callback function returns true for any element of an array.
-    * @param callbackfn A function that accepts up to three arguments. The some method calls
-    * the callbackfn function for each element in the array until the callbackfn returns a value
+    * @param predicate A function that accepts up to three arguments. The some method calls
+    * the predicate function for each element in the array until the predicate returns a value
     * which is coercible to the Boolean value true, or until the end of the array.
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function.
+    * @param thisArg An object to which the this keyword can refer in the predicate function.
     * If thisArg is omitted, undefined is used as the this value.
     */
-  def some(callbackfn: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _]): Boolean = js.native
+  def some(predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _]): Boolean = js.native
   def some(
-    callbackfn: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _],
+    predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _],
     thisArg: js.Any
   ): Boolean = js.native
+  
   /**
     * Sorts an array.
     * @param compareFn Function used to determine the order of the elements. It is expected to return
@@ -373,6 +423,7 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     */
   def sort(): this.type = js.native
   def sort(compareFn: js.Function2[/* a */ String, /* b */ String, Double]): this.type = js.native
+  
   /**
     * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
     * @param start The zero-based location in the array from which to start removing elements.
@@ -387,14 +438,22 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     * @param items Elements to insert into the array in place of the deleted elements.
     */
   def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = js.native
+  
+  /**
+    * Returns an object whose properties have the value 'true'
+    * when they will be absent when used in a 'with' statement.
+    */
+  @JSName(js.Symbol.unscopables)
+  var unscopables: js.Function0[CopyWithin] = js.native
+  
   /**
     * Inserts new elements at the start of an array.
     * @param items  Elements to insert at the start of the Array.
     */
   def unshift(items: String*): Double = js.native
+  
   /**
     * Returns an iterable of values in the array
     */
   def values(): IterableIterator[String] = js.native
 }
-

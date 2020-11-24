@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.mobile.ui.PaneOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofPane
   extends Instantiable1[/* element */ Element, Pane]
      with Instantiable2[/* element */ Element, /* options */ PaneOptions, Pane] {
-  var fn: Pane = js.native
+  
   def extend(proto: js.Object): Pane = js.native
+  
+  var fn: Pane = js.native
 }
-

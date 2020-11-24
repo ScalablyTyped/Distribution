@@ -1,11 +1,13 @@
 package typings.d3Shape.mod
 
+import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Stack_[This, Datum, Key] extends js.Object {
+  
   /**
     * Generates a stack for the given array of data, returning an array representing each series.
     * The resulting array has one element per series. Each series in then typically passed to an area generator to render an area chart,
@@ -15,20 +17,12 @@ trait Stack_[This, Datum, Key] extends js.Object {
     *
     * @param data Array of data elements.
     */
-  def apply(data: js.Array[Datum], args: js.Any*): js.Array[Series[Datum, Key]] = js.native
+  def apply(data: Iterable[Datum], args: js.Any*): js.Array[Series[Datum, Key]] = js.native
+  
   /**
     * Returns the current keys accessor, which defaults to the empty array.
     */
   def keys(): js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ js.Any, js.Array[Key]] = js.native
-  /**
-    * Sets the keys accessor to the specified function or array and returns this stack generator.
-    *
-    * A series (layer) is generated for each key. Keys are typically strings, but they may be arbitrary values.
-    * The series’ key is passed to the value accessor, along with each data point, to compute the point’s value.
-    *
-    * @param keys An array of keys.
-    */
-  def keys(keys: js.Array[Key]): this.type = js.native
   /**
     * Sets the keys accessor to the specified function or array and returns this stack generator.
     *
@@ -42,14 +36,24 @@ trait Stack_[This, Datum, Key] extends js.Object {
     keys: js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ js.Any, js.Array[Key]]
   ): this.type = js.native
   /**
+    * Sets the keys accessor to the specified function or array and returns this stack generator.
+    *
+    * A series (layer) is generated for each key. Keys are typically strings, but they may be arbitrary values.
+    * The series’ key is passed to the value accessor, along with each data point, to compute the point’s value.
+    *
+    * @param keys An array of keys.
+    */
+  def keys(keys: Iterable[Key]): this.type = js.native
+  
+  /**
     * Returns the current offset accessor, which defaults to stackOffsetNone; this uses a zero baseline.
     */
   def offset(): js.Function2[/* series */ Series[Datum, Key], /* order */ js.Array[Double], Unit] = js.native
   /**
     * Sets the offset accessor to the specified function and returns this stack generator.
     *
-    * @param offset A function which is passed the generated series array and the order index array.
-    *               The offset function is then responsible for updating the lower and upper values in the series array to layout the stack.
+    * @param offset A function which is passed the generated series array and the order index array;
+    *               it is then responsible for updating the lower and upper values in the series array.
     */
   def offset(offset: js.Function2[/* series */ Series[Datum, Key], /* order */ js.Array[Double], Unit]): this.type = js.native
   /**
@@ -58,19 +62,11 @@ trait Stack_[This, Datum, Key] extends js.Object {
     * @param offset null to set to the default stackOffsetNone.
     */
   def offset(offset: Null): this.type = js.native
+  
   /**
     * Returns the current order accessor, which defaults to stackOrderNone; this uses the order given by the key accessor.
     */
-  def order(): js.Function1[/* series */ Series[Datum, Key], js.Array[Double]] = js.native
-  /**
-    * Sets the order accessor to the specified array and returns this stack generator.
-    *
-    * The stack order is computed prior to the offset; thus, the lower value for all points is zero at the time the order is computed.
-    * The index attribute for each series is also not set until after the order is computed.
-    *
-    * @param order An array of numeric indexes representing the stack order.
-    */
-  def order(order: js.Array[Double]): this.type = js.native
+  def order(): js.Function1[/* series */ Series[Datum, Key], Iterable[Double]] = js.native
   /**
     * Sets the order accessor to the specified function and returns this stack generator.
     *
@@ -81,13 +77,23 @@ trait Stack_[This, Datum, Key] extends js.Object {
     *
     * @param order A function returning a sort order array. It is passed the generated series array and must return an array of numeric indexes representing the stack order.
     */
-  def order(order: js.Function1[/* series */ Series[Datum, Key], js.Array[Double]]): this.type = js.native
+  def order(order: js.Function1[/* series */ Series[Datum, Key], Iterable[Double]]): this.type = js.native
   /**
     * Reset the order to use stackOrderNone; this uses the order given by the key accessor.
     *
     * @param order null to set to the default stackOrderNone.
     */
   def order(order: Null): this.type = js.native
+  /**
+    * Sets the order accessor to the specified array and returns this stack generator.
+    *
+    * The stack order is computed prior to the offset; thus, the lower value for all points is zero at the time the order is computed.
+    * The index attribute for each series is also not set until after the order is computed.
+    *
+    * @param order An array of numeric indexes representing the stack order.
+    */
+  def order(order: Iterable[Double]): this.type = js.native
+  
   /**
     * Returns the current value accessor, which defaults to a function return the property corresponding to the relevant key from the data element.
     *
@@ -110,4 +116,3 @@ trait Stack_[This, Datum, Key] extends js.Object {
     */
   def value(value: Double): this.type = js.native
 }
-

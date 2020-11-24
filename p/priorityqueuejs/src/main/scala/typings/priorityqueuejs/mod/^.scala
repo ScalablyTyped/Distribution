@@ -2,7 +2,7 @@ package typings.priorityqueuejs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("priorityqueuejs", JSImport.Namespace)
 @js.native
@@ -16,15 +16,10 @@ class ^[T] () extends PriorityQueue[T] {
     */
   def this(comparator: Comparator[T]) = this()
 }
-
 @JSImport("priorityqueuejs", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  /**
-    * Compares two Number or String objects.
-    */
-  @JSName("DEFAULT_COMPARATOR")
-  var DEFAULT_COMPARATOR_Original: Comparator[Double | String] = js.native
+  
   def DEFAULT_COMPARATOR(a: String, b: String): Double = js.native
   def DEFAULT_COMPARATOR(a: String, b: Double): Double = js.native
   def DEFAULT_COMPARATOR(a: Double, b: String): Double = js.native
@@ -32,5 +27,9 @@ object ^ extends js.Object {
     * Compares two Number or String objects.
     */
   def DEFAULT_COMPARATOR(a: Double, b: Double): Double = js.native
+  /**
+    * Compares two Number or String objects.
+    */
+  @JSName("DEFAULT_COMPARATOR")
+  var DEFAULT_COMPARATOR_Original: Comparator[Double | String] = js.native
 }
-

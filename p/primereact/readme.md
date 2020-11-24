@@ -1,18 +1,18 @@
 
 # Scala.js typings for primereact
 
-Typings are for version 4.2.2
+Typings are for version 5.0.1
 
 ## Library description:
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/primereact.svg)](https://badge.fury.io/js/primereact) [![Join the chat at https://gitter.im/primefaces/pri
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/primereact.svg)](https://badge.fury.io/js/primereact)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | primereact |
 | Keywords           | - |
-| # releases         | 44 |
-| # dependents       | 15 |
-| # downloads        | 534530 |
+| # releases         | 36 |
+| # dependents       | 23 |
+| # downloads        | 771618 |
 | # stars            | 1 |
 
 ## Links

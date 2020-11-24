@@ -51,47 +51,37 @@ import typings.vscodeLanguageserverTypes.mod.DefinitionLink
 import typings.vscodeLanguageserverTypes.mod.SignatureHelp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] extends js.Object {
+  
   /**
     * A property to provide access to client specific features like registering
     * for requests or notifications.
     */
   var client: RemoteClient with PClient = js.native
+  
   /**
     * A property to provide access to console specific features.
     */
   var console: RemoteConsole with PConsole = js.native
-  /**
-    * A property to provide access to language specific features.
-    */
-  var languages: Languages with PLanguages = js.native
-  /**
-    * A property to provide access to telemetry specific features.
-    */
-  var telemetry: Telemetry with PTelemetry = js.native
-  /**
-    * A property to provide access to tracer specific features.
-    */
-  var tracer: Tracer with PTracer = js.native
-  /**
-    * A property to provide access to windows specific features.
-    */
-  var window: RemoteWindow with PWindow = js.native
-  /**
-    * A property to provide access to workspace specific features.
-    */
-  var workspace: RemoteWorkspace with PWorkspace = js.native
+  
   /**
     * Disposes the connection
     */
   def dispose(): Unit = js.native
+  
+  /**
+    * A property to provide access to language specific features.
+    */
+  var languages: Languages with PLanguages = js.native
+  
   /**
     * Start listening on the input stream for messages to process.
     */
   def listen(): Unit = js.native
+  
   /**
     * Installs a handler for the `CodeAction` request.
     *
@@ -111,6 +101,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Compute a list of [lenses](#CodeLens). This call should return as fast as possible and if
     * computing the commands is expensive implementers should only return code lens objects with the
@@ -126,6 +117,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * This function will be called for each visible code lens, usually when scrolling and after
     * the onCodeLens has been called.
@@ -139,6 +131,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the document color request.
     *
@@ -152,6 +145,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the `Completion` request.
     *
@@ -167,6 +161,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the `CompletionResolve` request.
     *
@@ -179,6 +174,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the `Declaration` request.
     *
@@ -192,6 +188,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the `Definition` request.
     *
@@ -205,42 +202,49 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the `DidChangeConfiguration` notification.
     *
     * @param handler The corresponding handler.
     */
   def onDidChangeConfiguration(handler: NotificationHandler[DidChangeConfigurationParams]): Unit = js.native
+  
   /**
     * Installs a handler for the `DidChangeTextDocument` notification.
     *
     * @param handler The corresponding handler.
     */
   def onDidChangeTextDocument(handler: NotificationHandler[DidChangeTextDocumentParams]): Unit = js.native
+  
   /**
     * Installs a handler for the `DidChangeWatchedFiles` notification.
     *
     * @param handler The corresponding handler.
     */
   def onDidChangeWatchedFiles(handler: NotificationHandler[DidChangeWatchedFilesParams]): Unit = js.native
+  
   /**
     * Installs a handler for the `DidCloseTextDocument` notification.
     *
     * @param handler The corresponding handler.
     */
   def onDidCloseTextDocument(handler: NotificationHandler[DidCloseTextDocumentParams]): Unit = js.native
+  
   /**
     * Installs a handler for the `DidOpenTextDocument` notification.
     *
     * @param handler The corresponding handler.
     */
   def onDidOpenTextDocument(handler: NotificationHandler[DidOpenTextDocumentParams]): Unit = js.native
+  
   /**
     * Installs a handler for the `DidSaveTextDocument` notification.
     *
     * @param handler The corresponding handler.
     */
   def onDidSaveTextDocument(handler: NotificationHandler[DidSaveTextDocumentParams]): Unit = js.native
+  
   /**
     * Installs a handler for the document color request.
     *
@@ -254,6 +258,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the document formatting request.
     *
@@ -267,6 +272,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the `DocumentHighlight` request.
     *
@@ -280,6 +286,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the document links resolve request.
     *
@@ -292,6 +299,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the document links request.
     *
@@ -305,6 +313,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the document on type formatting request.
     *
@@ -317,6 +326,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the document range formatting request.
     *
@@ -330,6 +340,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the `DocumentSymbol` request.
     *
@@ -349,18 +360,21 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the execute command request.
     *
     * @param handler The corresponding handler.
     */
   def onExecuteCommand(handler: ServerRequestHandler[ExecuteCommandParams, js.UndefOr[_ | Null], scala.Nothing, Unit]): Unit = js.native
+  
   /**
     * Installs a handler for the exit notification.
     *
     * @param handler The exit handler.
     */
   def onExit(handler: NotificationHandler0): Unit = js.native
+  
   /**
     * Installs a handler for the folding ranges request.
     *
@@ -374,6 +388,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the `Hover` request.
     *
@@ -387,6 +402,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the `Implementation` request.
     *
@@ -400,6 +416,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the initialize request.
     *
@@ -413,12 +430,14 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       typings.vscodeLanguageserverProtocol.protocolMod.InitializeError
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the initialized notification.
     *
     * @param handler The initialized handler.
     */
   def onInitialized(handler: NotificationHandler[InitializedParams]): Unit = js.native
+  
   /**
     * Installs a notification handler that is invoked if no specific notification handler can be found.
     *
@@ -446,6 +465,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
     `type`: typings.vscodeLanguageserverProtocol.mod.NotificationType[P, RO],
     handler: NotificationHandler[P]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the prepare rename request.
     *
@@ -458,6 +478,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a progress handler for a given token.
     * @param type the progress type
@@ -474,6 +495,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
     token: Double,
     handler: NotificationHandler[P]
   ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  
   /**
     * Installs a handler for the `References` request.
     *
@@ -487,6 +509,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the rename request.
     *
@@ -500,6 +523,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a request handler that is invoked if no specific request handler can be found.
     *
@@ -527,6 +551,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
     `type`: typings.vscodeLanguageserverProtocol.mod.RequestType[P, R, E, RO],
     handler: RequestHandler[P, R, E]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the selection ranges request.
     *
@@ -540,12 +565,14 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the shutdown request.
     *
     * @param handler The initialize handler.
     */
   def onShutdown(handler: RequestHandler0[Unit, Unit]): Unit = js.native
+  
   /**
     * Installs a handler for the `SignatureHelp` request.
     *
@@ -554,6 +581,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
   def onSignatureHelp(
     handler: ServerRequestHandler[SignatureHelpParams, js.UndefOr[SignatureHelp | Null], scala.Nothing, Unit]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the `Type Definition` request.
     *
@@ -567,6 +595,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the `WillSaveTextDocument` notification.
     *
@@ -577,6 +606,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
     * @param handler The corresponding handler.
     */
   def onWillSaveTextDocument(handler: NotificationHandler[WillSaveTextDocumentParams]): Unit = js.native
+  
   /**
     * Installs a handler for the `WillSaveTextDocumentWaitUntil` request.
     *
@@ -594,6 +624,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Installs a handler for the `WorkspaceSymbol` request.
     *
@@ -607,6 +638,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Sends diagnostics computed for a given document to VSCode to render them in the
     * user interface.
@@ -614,6 +646,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
     * @param params The diagnostic parameters.
     */
   def sendDiagnostics(params: PublishDiagnosticsParams): Unit = js.native
+  
   /**
     * Send a notification to the client.
     *
@@ -630,6 +663,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
     */
   def sendNotification[RO](`type`: typings.vscodeLanguageserverProtocol.mod.NotificationType0[RO]): Unit = js.native
   def sendNotification[P, RO](`type`: typings.vscodeLanguageserverProtocol.mod.NotificationType[P, RO], params: P): Unit = js.native
+  
   /**
     * Sends progress.
     * @param type the progress type
@@ -638,6 +672,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
     */
   def sendProgress[P](`type`: typings.vscodeLanguageserverProtocol.mod.ProgressType[P], token: String, value: P): Unit = js.native
   def sendProgress[P](`type`: typings.vscodeLanguageserverProtocol.mod.ProgressType[P], token: Double, value: P): Unit = js.native
+  
   /**
     * Send a request to the client.
     *
@@ -665,5 +700,24 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
     params: P,
     token: typings.vscodeJsonrpc.cancellationMod.CancellationToken
   ): js.Promise[R] = js.native
+  
+  /**
+    * A property to provide access to telemetry specific features.
+    */
+  var telemetry: Telemetry with PTelemetry = js.native
+  
+  /**
+    * A property to provide access to tracer specific features.
+    */
+  var tracer: Tracer with PTracer = js.native
+  
+  /**
+    * A property to provide access to windows specific features.
+    */
+  var window: RemoteWindow with PWindow = js.native
+  
+  /**
+    * A property to provide access to workspace specific features.
+    */
+  var workspace: RemoteWorkspace with PWorkspace = js.native
 }
-

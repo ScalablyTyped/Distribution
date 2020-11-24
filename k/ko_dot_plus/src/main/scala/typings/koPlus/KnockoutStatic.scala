@@ -8,7 +8,7 @@ import typings.koPlus.KoPlus.EditableArrayStatic
 import typings.koPlus.KoPlus.EditableStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -34,16 +34,19 @@ import scala.scalajs.js.annotation._
 //
 @js.native
 trait KnockoutStatic extends js.Object {
-  @JSName("editableArray")
-  var editableArray_Original: EditableArrayStatic = js.native
-  @JSName("editable")
-  var editable_Original: EditableStatic = js.native
+  
   // create a command - two overloads
   def command(param: js.Function): Command = js.native
   def command(param: CommandOptions): Command = js.native
+  
   def editable[T](): Editable[T] = js.native
   def editable[T](value: T): Editable[T] = js.native
+  
   def editableArray[T](): EditableArray[T] = js.native
   def editableArray[T](value: js.Array[T]): EditableArray[T] = js.native
+  @JSName("editableArray")
+  var editableArray_Original: EditableArrayStatic = js.native
+  
+  @JSName("editable")
+  var editable_Original: EditableStatic = js.native
 }
-

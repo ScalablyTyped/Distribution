@@ -11,8 +11,8 @@ A versatile infinite scroll [React] component.
 | Full name          | react-list |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 53 |
-| # downloads        | 1624338 |
+| # dependents       | 62 |
+| # downloads        | 2270259 |
 | # stars            | 7 |
 
 ## Links

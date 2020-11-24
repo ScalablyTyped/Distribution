@@ -2,17 +2,17 @@ package typings.winjs.WinJS.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SwipeBehavior extends js.Object
-
 /**
   * Specifies whether elements are selected when the user performs a swipe interaction.
   **/
 @JSGlobal("WinJS.UI.SwipeBehavior")
 @js.native
 object SwipeBehavior extends js.Object {
+  
   /**
     * The swipe interaction does not change which elements are selected.
     **/
@@ -24,6 +24,4 @@ object SwipeBehavior extends js.Object {
     **/
   @js.native
   sealed trait select extends SwipeBehavior
-  
 }
-

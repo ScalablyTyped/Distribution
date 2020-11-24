@@ -2,7 +2,7 @@ package typings.kiiCloudSdk.global.KiiCloud
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represent an anonymous user for setting the ACL of an object. This will include anyone using the application but have not signed up or authenticated as registered user.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class KiiAnonymousUser ()
   extends typings.kiiCloudSdk.KiiCloud.KiiAnonymousUser
-

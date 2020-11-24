@@ -3,7 +3,7 @@ package typings.webpackEnv.global
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Equals the config options output.publicPath.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("__webpack_public_path__")
 @js.native
 object webpackPublicPath extends TopLevel[String]
-

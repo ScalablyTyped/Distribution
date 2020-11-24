@@ -10,9 +10,9 @@ A Karma plugin. Adapter for Mocha testing framework.
 | ------------------ | :-------------: |
 | Full name          | karma-mocha |
 | Keywords           | karma-plugin, karma-adapter, mocha |
-| # releases         | 0 |
-| # dependents       | 366 |
-| # downloads        | 11649222 |
+| # releases         | 3 |
+| # dependents       | 380 |
+| # downloads        | 12095344 |
 | # stars            | 31 |
 
 ## Links

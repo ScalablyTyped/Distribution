@@ -2,11 +2,12 @@ package typings.boom.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("boom", "methodNotAllowed")
 @js.native
 object methodNotAllowed extends js.Object {
+  
   /**
     * Returns a 405 Method Not Allowed error
     * @param message optional message.
@@ -27,4 +28,3 @@ object methodNotAllowed extends js.Object {
   def apply[Data](message: String, data: js.UndefOr[scala.Nothing], allow: String): Boom[Data] = js.native
   def apply[Data](message: String, data: js.UndefOr[scala.Nothing], allow: js.Array[String]): Boom[Data] = js.native
 }
-

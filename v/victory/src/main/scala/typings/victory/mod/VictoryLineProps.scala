@@ -5,13 +5,14 @@ import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.parent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VictoryLineProps
   extends VictorySingleLabableProps
      with VictoryCommonProps
      with VictoryDatableProps {
+  
   /**
     * The event prop take an array of event objects. Event objects are composed of
     * a target, an eventKey, and eventHandlers. Targets may be any valid style namespace
@@ -50,27 +51,32 @@ trait VictoryLineProps
     * ]}
     */
   var events: js.UndefOr[js.Array[EventPropTypeInterface[data | labels | parent, Double | String]]] = js.native
+  
   /**
     * The interpolation prop determines how data points should be connected
     * when plotting a line
     */
   var interpolation: js.UndefOr[InterpolationPropType] = js.native
+  
   /**
     * The labels prop defines the labels that will appear above each point.
     * This prop should be given as an array or as a function of data.
     */
   var labels: js.UndefOr[(js.Array[Double | String]) | js.Function] = js.native
+  
   /**
     * The samples prop specifies how many individual points to plot when plotting
     * y as a function of x. Samples is ignored if x props are provided instead.
     */
   var samples: js.UndefOr[Double] = js.native
+  
   /**
     * Use the sortKey prop to indicate how data should be sorted. This prop
     * is given directly to the lodash sortBy function to be executed on the
     * final dataset.
     */
   var sortKey: js.UndefOr[String | js.Array[String] | js.Function] = js.native
+  
   /**
     * The style prop specifies styles for your VictoryLine. Any valid inline style properties
     * will be applied. Height, width, and padding should be specified via the height,
@@ -82,55 +88,72 @@ trait VictoryLineProps
     */
   var style: js.UndefOr[VictoryStyleInterface] = js.native
 }
-
 object VictoryLineProps {
+  
   @scala.inline
   def apply(): VictoryLineProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryLineProps]
   }
+  
   @scala.inline
   implicit class VictoryLinePropsOps[Self <: VictoryLineProps] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setEventsVarargs(value: (EventPropTypeInterface[data | labels | parent, Double | String])*): Self = this.set("events", js.Array(value :_*))
+    
     @scala.inline
     def setEvents(value: js.Array[EventPropTypeInterface[data | labels | parent, Double | String]]): Self = this.set("events", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEvents: Self = this.set("events", js.undefined)
+    
     @scala.inline
     def setInterpolation(value: InterpolationPropType): Self = this.set("interpolation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInterpolation: Self = this.set("interpolation", js.undefined)
+    
     @scala.inline
     def setLabelsVarargs(value: (Double | String)*): Self = this.set("labels", js.Array(value :_*))
+    
     @scala.inline
     def setLabels(value: (js.Array[Double | String]) | js.Function): Self = this.set("labels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabels: Self = this.set("labels", js.undefined)
+    
     @scala.inline
     def setSamples(value: Double): Self = this.set("samples", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSamples: Self = this.set("samples", js.undefined)
+    
     @scala.inline
     def setSortKeyVarargs(value: String*): Self = this.set("sortKey", js.Array(value :_*))
+    
     @scala.inline
     def setSortKey(value: String | js.Array[String] | js.Function): Self = this.set("sortKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSortKey: Self = this.set("sortKey", js.undefined)
+    
     @scala.inline
     def setStyle(value: VictoryStyleInterface): Self = this.set("style", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStyle: Self = this.set("style", js.undefined)
   }
-  
 }
-

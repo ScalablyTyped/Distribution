@@ -4,7 +4,7 @@ import typings.devextreme.mod.DevExpress.data.CustomStoreOptions
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("devextreme", "data.DataSource")
 @js.native
@@ -16,4 +16,3 @@ class DataSource protected ()
   def this(store: typings.devextreme.mod.DevExpress.data.Store) = this()
   def this(url: String) = this()
 }
-

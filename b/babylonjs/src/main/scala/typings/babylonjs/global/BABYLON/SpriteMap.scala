@@ -4,7 +4,7 @@ import typings.babylonjs.BABYLON.ISpriteJSONAtlas
 import typings.babylonjs.BABYLON.ISpriteMapOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SpriteMap")
 @js.native
@@ -25,30 +25,4 @@ class SpriteMap protected ()
     options: ISpriteMapOptions,
     scene: typings.babylonjs.BABYLON.Scene
   ) = this()
-  /**
-    * The JSON Array file from a https://www.codeandweb.com/texturepacker export.  Or similar structure.
-    */
-  /* CompleteClass */
-  override var atlasJSON: ISpriteJSONAtlas = js.native
-  /**
-    * String name of the SpriteMap.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
-  /**
-    * The parameters to initialize the SpriteMap with.
-    */
-  /* CompleteClass */
-  override var options: ISpriteMapOptions = js.native
-  /**
-    * Texture of the SpriteMap.
-    */
-  /* CompleteClass */
-  override var spriteSheet: typings.babylonjs.BABYLON.Texture = js.native
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.scroller
 import typings.scroller.Scroller.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   class EasyScroller protected ()
     extends typings.scroller.EasyScroller {
@@ -23,6 +24,4 @@ object global extends js.Object {
       options: Options
     ) = this()
   }
-  
 }
-

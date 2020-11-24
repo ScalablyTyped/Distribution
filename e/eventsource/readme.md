@@ -11,8 +11,8 @@ W3C compliant EventSource client for Node.js and browser (polyfill)
 | Full name          | eventsource |
 | Keywords           | eventsource, http, streaming, sse, polyfill |
 | # releases         | 3 |
-| # dependents       | 254 |
-| # downloads        | 262721904 |
+| # dependents       | 306 |
+| # downloads        | 328082263 |
 | # stars            | 15 |
 
 ## Links

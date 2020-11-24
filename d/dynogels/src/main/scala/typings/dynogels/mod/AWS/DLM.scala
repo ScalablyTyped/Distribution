@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.dlmMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.DLM")
 @js.native
@@ -14,4 +14,3 @@ class DLM ()
   extends typings.awsSdk.mod.DLM {
   def this(options: ClientConfiguration) = this()
 }
-

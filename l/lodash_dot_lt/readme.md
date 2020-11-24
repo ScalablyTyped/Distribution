@@ -11,8 +11,8 @@ The lodash method `_.lt` exported as a module.
 | Full name          | lodash.lt |
 | Keywords           | lodash-modularized, lt |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 73295 |
+| # dependents       | 3 |
+| # downloads        | 69625 |
 | # stars            | 0 |
 
 ## Links

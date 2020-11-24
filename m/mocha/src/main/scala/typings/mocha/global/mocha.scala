@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.mocha.BrowserMocha
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion Reporter augmentations
 // #region Browser augmentations
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("mocha")
 @js.native
 object mocha extends TopLevel[BrowserMocha]
-

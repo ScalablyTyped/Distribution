@@ -8,10 +8,10 @@ import typings.mendixmodelsdk.projectsMod.StructureVersionInfo
 import typings.mendixmodelsdk.unitsMod.IStructuralUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/project relevant section in reference guide}
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.unitsMod.IStructuralUnit because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IProject because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined projectDocuments, modules, projectConversion, isSystemProject */ @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Project")
 @js.native
-class Project protected () extends StructuralUnit {
+class Project protected () extends StructuralUnit[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -28,32 +28,34 @@ class Project protected () extends StructuralUnit {
     isPartial: Boolean,
     container: IStructuralUnit
   ) = this()
+  
+  def isSystemProject: Boolean = js.native
+  def isSystemProject_=(newValue: Boolean): Unit = js.native
   @JSName("isSystemProject")
   var isSystemProject_FProject: Boolean = js.native
-  @JSName("model")
-  var model_FProject: IModel = js.native
+  
+  def modules: IList[IModule] = js.native
   @JSName("modules")
   var modules_FProject: IList[IModule] = js.native
+  
+  def projectConversion: IProjectConversion = js.native
+  def projectConversion_=(newValue: IProjectConversion): Unit = js.native
   /**
     * This property is required and cannot be set to null.
     */
   @JSName("projectConversion")
   var projectConversion_FProject: IProjectConversion = js.native
+  
+  def projectDocuments: IList[IProjectDocument] = js.native
   @JSName("projectDocuments")
   var projectDocuments_FProject: IList[IProjectDocument] = js.native
-  def isSystemProject: Boolean = js.native
-  def isSystemProject_=(newValue: Boolean): Unit = js.native
-  def modules: IList[IModule] = js.native
-  def projectConversion: IProjectConversion = js.native
-  def projectConversion_=(newValue: IProjectConversion): Unit = js.native
-  def projectDocuments: IList[IProjectDocument] = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Project")
 @js.native
 object Project extends js.Object {
+  
   var structureTypeName: String = js.native
+  
   var versionInfo: StructureVersionInfo = js.native
 }
-

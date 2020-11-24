@@ -2,14 +2,14 @@ package typings.navermaps.naver.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Position extends js.Object
-
 @JSGlobal("naver.maps.Position")
 @js.native
 object Position extends js.Object {
+  
   @js.native
   sealed trait BOTTOM_CENTER extends Position
   
@@ -48,6 +48,4 @@ object Position extends js.Object {
   
   @js.native
   sealed trait TOP_RIGHT extends Position
-  
 }
-

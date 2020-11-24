@@ -3,7 +3,7 @@ package typings.cytoscape.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The principle events from the graph model.
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CoreEvents extends js.Object {
+  
   def addListener(eventsMap: StringDictionary[EventHandler]): this.type = js.native
   def addListener(eventsMap: StringDictionary[EventHandler], selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
   def addListener(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
@@ -18,6 +19,7 @@ trait CoreEvents extends js.Object {
   def addListener(events: EventNames, handler: EventHandler): this.type = js.native
   def addListener(events: EventNames, selector: Selector, data: js.Any, handler: EventHandler): this.type = js.native
   def addListener(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
+  
   def bind(eventsMap: StringDictionary[EventHandler]): this.type = js.native
   def bind(eventsMap: StringDictionary[EventHandler], selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
   def bind(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
@@ -25,8 +27,10 @@ trait CoreEvents extends js.Object {
   def bind(events: EventNames, handler: EventHandler): this.type = js.native
   def bind(events: EventNames, selector: Selector, data: js.Any, handler: EventHandler): this.type = js.native
   def bind(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
+  
   def emit(events: EventNames): this.type = js.native
   def emit(events: EventNames, extraParams: js.Array[_]): this.type = js.native
+  
   def listen(eventsMap: StringDictionary[EventHandler]): this.type = js.native
   def listen(eventsMap: StringDictionary[EventHandler], selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
   def listen(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
@@ -34,6 +38,7 @@ trait CoreEvents extends js.Object {
   def listen(events: EventNames, handler: EventHandler): this.type = js.native
   def listen(events: EventNames, selector: Selector, data: js.Any, handler: EventHandler): this.type = js.native
   def listen(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
+  
   def off(eventsMap: StringDictionary[EventHandler]): this.type = js.native
   def off(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
   /**
@@ -49,6 +54,7 @@ trait CoreEvents extends js.Object {
   def off(events: EventNames, selector: js.UndefOr[scala.Nothing], handler: EventHandler): this.type = js.native
   def off(events: EventNames, selector: Selector): this.type = js.native
   def off(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
+  
   def on(eventsMap: StringDictionary[EventHandler]): this.type = js.native
   def on(eventsMap: StringDictionary[EventHandler], selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
   def on(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
@@ -65,6 +71,7 @@ trait CoreEvents extends js.Object {
   def on(events: EventNames, handler: EventHandler): this.type = js.native
   def on(events: EventNames, selector: Selector, data: js.Any, handler: EventHandler): this.type = js.native
   def on(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
+  
   /**
     * Bind to events that occur in the graph, and trigger the handler only once.
     *
@@ -100,8 +107,10 @@ trait CoreEvents extends js.Object {
     * @param selector A selector to specify elements for which the handler is triggered.
     */
   def one(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
+  
   def pon(events: EventNames): js.Promise[EventHandler] = js.native
   def pon(events: EventNames, selector: Selector): js.Promise[EventHandler] = js.native
+  
   /**
     * Get a promise that is resolved with the first
     * of any of the specified events triggered on the graph.
@@ -110,17 +119,20 @@ trait CoreEvents extends js.Object {
     */
   def promiseOn(events: EventNames): js.Promise[EventHandler] = js.native
   def promiseOn(events: EventNames, selector: Selector): js.Promise[EventHandler] = js.native
+  
   /**
     * Run a callback as soon as the graph becomes ready. If the graph is already ready, then the callback is called immediately.
     * @param fn The callback run as soon as the graph is ready, inside which this refers to the core (cy).
     */
   def ready(fn: EventHandler): this.type = js.native
+  
   def removeListener(eventsMap: StringDictionary[EventHandler]): this.type = js.native
   def removeListener(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
   def removeListener(events: EventNames): this.type = js.native
   def removeListener(events: EventNames, selector: js.UndefOr[scala.Nothing], handler: EventHandler): this.type = js.native
   def removeListener(events: EventNames, selector: Selector): this.type = js.native
   def removeListener(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
+  
   /**
     * Trigger one or more events.
     *
@@ -129,12 +141,14 @@ trait CoreEvents extends js.Object {
     */
   def trigger(events: EventNames): this.type = js.native
   def trigger(events: EventNames, extraParams: js.Array[_]): this.type = js.native
+  
   def unbind(eventsMap: StringDictionary[EventHandler]): this.type = js.native
   def unbind(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
   def unbind(events: EventNames): this.type = js.native
   def unbind(events: EventNames, selector: js.UndefOr[scala.Nothing], handler: EventHandler): this.type = js.native
   def unbind(events: EventNames, selector: Selector): this.type = js.native
   def unbind(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
+  
   def unlisten(eventsMap: StringDictionary[EventHandler]): this.type = js.native
   def unlisten(eventsMap: StringDictionary[EventHandler], selector: Selector): this.type = js.native
   def unlisten(events: EventNames): this.type = js.native
@@ -142,4 +156,3 @@ trait CoreEvents extends js.Object {
   def unlisten(events: EventNames, selector: Selector): this.type = js.native
   def unlisten(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
 }
-

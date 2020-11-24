@@ -2,11 +2,10 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SearchDirection extends js.Object
-
 /**
   *
   * Specifies the search direction.
@@ -16,6 +15,7 @@ sealed trait SearchDirection extends js.Object
 @JSGlobal("Excel.SearchDirection")
 @js.native
 object SearchDirection extends js.Object {
+  
   /**
     * Search in reverse order.
     *
@@ -29,6 +29,4 @@ object SearchDirection extends js.Object {
     */
   @js.native
   sealed trait forward extends SearchDirection
-  
 }
-

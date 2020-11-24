@@ -3,9 +3,43 @@ package typings.shevyjs
 import typings.shevyjs.typesMod.Heading
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shevyjsStrings {
+  
+  @scala.inline
+  def augmentedFourth: augmentedFourth = "augmentedFourth".asInstanceOf[augmentedFourth]
+  
+  @scala.inline
+  def h1: h1 = "h1".asInstanceOf[h1]
+  
+  @scala.inline
+  def h2: h2 = "h2".asInstanceOf[h2]
+  
+  @scala.inline
+  def h3: h3 = "h3".asInstanceOf[h3]
+  
+  @scala.inline
+  def h4: h4 = "h4".asInstanceOf[h4]
+  
+  @scala.inline
+  def h5: h5 = "h5".asInstanceOf[h5]
+  
+  @scala.inline
+  def h6: h6 = "h6".asInstanceOf[h6]
+  
+  @scala.inline
+  def majorSecond: majorSecond = "majorSecond".asInstanceOf[majorSecond]
+  
+  @scala.inline
+  def majorThird: majorThird = "majorThird".asInstanceOf[majorThird]
+  
+  @scala.inline
+  def minorThird: minorThird = "minorThird".asInstanceOf[minorThird]
+  
+  @scala.inline
+  def perfectFourth: perfectFourth = "perfectFourth".asInstanceOf[perfectFourth]
+  
   @js.native
   sealed trait augmentedFourth extends js.Object
   
@@ -38,28 +72,4 @@ object shevyjsStrings {
   
   @js.native
   sealed trait perfectFourth extends js.Object
-  
-  @scala.inline
-  def augmentedFourth: augmentedFourth = "augmentedFourth".asInstanceOf[augmentedFourth]
-  @scala.inline
-  def h1: h1 = "h1".asInstanceOf[h1]
-  @scala.inline
-  def h2: h2 = "h2".asInstanceOf[h2]
-  @scala.inline
-  def h3: h3 = "h3".asInstanceOf[h3]
-  @scala.inline
-  def h4: h4 = "h4".asInstanceOf[h4]
-  @scala.inline
-  def h5: h5 = "h5".asInstanceOf[h5]
-  @scala.inline
-  def h6: h6 = "h6".asInstanceOf[h6]
-  @scala.inline
-  def majorSecond: majorSecond = "majorSecond".asInstanceOf[majorSecond]
-  @scala.inline
-  def majorThird: majorThird = "majorThird".asInstanceOf[majorThird]
-  @scala.inline
-  def minorThird: minorThird = "minorThird".asInstanceOf[minorThird]
-  @scala.inline
-  def perfectFourth: perfectFourth = "perfectFourth".asInstanceOf[perfectFourth]
 }
-

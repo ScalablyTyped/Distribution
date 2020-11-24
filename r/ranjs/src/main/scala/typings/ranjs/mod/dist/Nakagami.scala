@@ -2,7 +2,7 @@ package typings.ranjs.mod.dist
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.Nakagami")
 @js.native
@@ -12,4 +12,3 @@ class Nakagami ()
   def this(m: js.UndefOr[scala.Nothing], omega: Double) = this()
   def this(m: Double, omega: Double) = this()
 }
-

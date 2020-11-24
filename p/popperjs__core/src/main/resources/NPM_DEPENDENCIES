@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@popperjs/core" : "2.5.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@popperjs/core" : "2.5.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

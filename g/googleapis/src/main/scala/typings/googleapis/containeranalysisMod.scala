@@ -12,32 +12,27 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/containeranalysis", JSImport.Namespace)
 @js.native
 object containeranalysisMod extends js.Object {
+  
   def containeranalysis(options: Options): Containeranalysis = js.native
   def containeranalysis(options: typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Options): typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Containeranalysis = js.native
   @JSName("containeranalysis")
   def containeranalysis_v1alpha1(version: v1alpha1): Containeranalysis = js.native
   @JSName("containeranalysis")
   def containeranalysis_v1beta1(version: v1beta1): typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Containeranalysis = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1alpha1 protected () extends Containeranalysis {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    class v1beta1 protected ()
-      extends typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Containeranalysis {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
     @js.native
     object v1alpha1
       extends TopLevel[
@@ -49,6 +44,12 @@ object containeranalysisMod extends js.Object {
             ]
     
     @js.native
+    class v1beta1 protected ()
+      extends typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Containeranalysis {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    @js.native
     object v1beta1
       extends TopLevel[
               Instantiable2[
@@ -57,11 +58,11 @@ object containeranalysisMod extends js.Object {
                 typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Containeranalysis
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -89,8 +90,5 @@ object containeranalysisMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

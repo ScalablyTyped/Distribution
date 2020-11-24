@@ -8,23 +8,26 @@ import typings.actionsOnGoogle.conversationConversationMod.ExceptionHandler
 import typings.actionsOnGoogle.dialogflowConvMod.DialogflowConversation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DialogflowApp[TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */] extends ConversationApp[TConvData, TUserStorage] {
+  
   /** @hidden */
   var _handlers: DialogflowHandlers[TConvData, TUserStorage, TContexts, TConversation] = js.native
+  
   /** @hidden */
   var _middlewares: js.Array[DialogflowMiddleware[DialogflowConversation[js.Object, js.Object, Contexts]]] = js.native
-  /** @public */
-  var verification: js.UndefOr[DialogflowVerification | DialogflowVerificationHeaders] = js.native
+  
   /** @public */
   def `catch`(catcher: ExceptionHandler[TUserStorage, TConversation]): this.type = js.native
+  
   def fallback(handler: String): this.type = js.native
   /** @public */
   def fallback(
     handler: DialogflowIntentHandler[TConvData, TUserStorage, TContexts, TConversation, Parameters, Argument]
   ): this.type = js.native
+  
   def intent[TArgument /* <: Argument */](intent: String, handler: String): this.type = js.native
   /**
     * Sets the IntentHandler to be execute when the fulfillment is called
@@ -148,7 +151,10 @@ trait DialogflowApp[TConvData, TUserStorage, TContexts /* <: Contexts */, TConve
     intent: DefaultDialogflowIntent,
     handler: DialogflowIntentHandler[TConvData, TUserStorage, TContexts, TConversation, TParameters, TArgument]
   ): this.type = js.native
+  
   /** @public */
   def middleware[TConversationPlugin /* <: DialogflowConversation[js.Object, js.Object, Contexts] */](middleware: DialogflowMiddleware[TConversationPlugin]): this.type = js.native
+  
+  /** @public */
+  var verification: js.UndefOr[DialogflowVerification | DialogflowVerificationHeaders] = js.native
 }
-

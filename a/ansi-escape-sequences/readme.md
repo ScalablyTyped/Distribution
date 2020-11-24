@@ -11,8 +11,8 @@ A simple library containing all known terminal ansi escape codes and sequences.
 | Full name          | ansi-escape-sequences |
 | Keywords           | ansi, terminal, colour, color, command line, cursor |
 | # releases         | 7 |
-| # dependents       | 54 |
-| # downloads        | 6373569 |
+| # dependents       | 57 |
+| # downloads        | 6485553 |
 | # stars            | 2 |
 
 ## Links

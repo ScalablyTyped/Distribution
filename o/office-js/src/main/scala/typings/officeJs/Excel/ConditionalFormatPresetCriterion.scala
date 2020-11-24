@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ConditionalFormatPresetCriterion extends js.Object
-
 /**
   *
   * Represents the criteria for the Preset Criteria conditional format type.
@@ -16,6 +15,7 @@ sealed trait ConditionalFormatPresetCriterion extends js.Object
 @JSGlobal("Excel.ConditionalFormatPresetCriterion")
 @js.native
 object ConditionalFormatPresetCriterion extends js.Object {
+  
   @js.native
   sealed trait aboveAverage extends ConditionalFormatPresetCriterion
   
@@ -96,6 +96,4 @@ object ConditionalFormatPresetCriterion extends js.Object {
   
   @js.native
   sealed trait yesterday extends ConditionalFormatPresetCriterion
-  
 }
-

@@ -2,11 +2,12 @@ package typings.leafletRoutingMachine.mod.Routing_
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line interface-name
 @js.native
 trait IRouter extends js.Object {
+  
   def route(
     waypoints: js.Array[Waypoint_],
     callback: js.Function2[/* error */ js.UndefOr[IError], /* routes */ js.UndefOr[js.Array[IRoute]], _]
@@ -29,4 +30,3 @@ trait IRouter extends js.Object {
     options: RoutingOptions
   ): Unit = js.native
 }
-

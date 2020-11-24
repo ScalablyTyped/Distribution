@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ViewType extends js.Object
-
 /**
   * Lists values specifying the Rich Edit's document view type.
   */
 @JSGlobal("ViewType")
 @js.native
 object ViewType extends js.Object {
+  
   /**
     * The print layout is enabled.
     */
@@ -24,6 +24,4 @@ object ViewType extends js.Object {
     */
   @js.native
   sealed trait Simple extends ViewType
-  
 }
-

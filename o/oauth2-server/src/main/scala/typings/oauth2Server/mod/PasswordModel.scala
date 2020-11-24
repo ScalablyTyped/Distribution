@@ -2,12 +2,13 @@ package typings.oauth2Server.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PasswordModel
   extends BaseModel
      with RequestAuthenticationModel {
+  
   /**
     * Invoked to generate a new refresh token.
     *
@@ -21,6 +22,14 @@ trait PasswordModel
       js.Promise[String]
     ]
   ] = js.native
+  
+  /**
+    * Invoked to retrieve a user using a username/password combination.
+    *
+    */
+  def getUser(username: String, password: String): js.Promise[User | Falsey] = js.native
+  def getUser(username: String, password: String, callback: Callback[User | Falsey]): js.Promise[User | Falsey] = js.native
+  
   /**
     * Invoked to check if the requested scope is valid for a particular client/user combination.
     *
@@ -34,11 +43,4 @@ trait PasswordModel
       js.Promise[String | js.Array[String] | Falsey]
     ]
   ] = js.native
-  /**
-    * Invoked to retrieve a user using a username/password combination.
-    *
-    */
-  def getUser(username: String, password: String): js.Promise[User | Falsey] = js.native
-  def getUser(username: String, password: String, callback: Callback[User | Falsey]): js.Promise[User | Falsey] = js.native
 }
-

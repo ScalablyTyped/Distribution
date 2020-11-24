@@ -14,11 +14,12 @@ import typings.typesettable.writerMod.IPenFactory
 import typings.typesettable.writerMod.ITransform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typesettable/build/src/contexts", JSImport.Namespace)
 @js.native
 object contextsMod extends js.Object {
+  
   @js.native
   class CanvasContext protected ()
     extends typings.typesettable.canvasMod.CanvasContext {
@@ -46,20 +47,49 @@ object contextsMod extends js.Object {
   @js.native
   class HtmlUtils ()
     extends typings.typesettable.htmlMod.HtmlUtils
+  /* static members */
+  @js.native
+  object HtmlUtils extends js.Object {
+    
+    /**
+      * Adds the variadic classnames to the Element
+      */
+    def addClasses(element: Element, classNames: String*): Unit = js.native
+    
+    /**
+      * Appends an HTML element with the specified tag name to the provided element.
+      * The variadic classnames are added to the new element.
+      *
+      * Returns the new element.
+      */
+    def append(element: Element, tagName: String, classNames: String*): HTMLElement = js.native
+    
+    /**
+      * Creates and returns a new HTMLElement with the attached classnames.
+      */
+    def create(tagName: String, classNames: String*): HTMLElement = js.native
+    
+    /**
+      * Returns the width/height of HTMLElement's bounding box
+      */
+    def getDimensions(element: HTMLElement): IDimensions = js.native
+  }
   
   @js.native
   trait IPenFactoryContext[T] extends js.Object {
-    @JSName("createPen")
-    var createPen_Original: IPenFactory[T] = js.native
+    
     def createPen(text: String, transform: ITransform): IPen = js.native
     def createPen(text: String, transform: ITransform, container: T): IPen = js.native
+    @JSName("createPen")
+    var createPen_Original: IPenFactory[T] = js.native
   }
   
   @js.native
   trait IRulerFactoryContext extends js.Object {
+    
+    def createRuler(): IRuler = js.native
     @JSName("createRuler")
     var createRuler_Original: IRulerFactory = js.native
-    def createRuler(): IRuler = js.native
   }
   
   @js.native
@@ -75,45 +105,22 @@ object contextsMod extends js.Object {
     def this(element: SVGElement, className: js.UndefOr[scala.Nothing], addTitleElement: Boolean) = this()
     def this(element: SVGElement, className: String, addTitleElement: Boolean) = this()
   }
+  /* static members */
+  @js.native
+  object SvgContext extends js.Object {
+    
+    var AnchorMap: js.Any = js.native
+  }
   
   @js.native
   class SvgUtils ()
     extends typings.typesettable.svgMod.SvgUtils
-  
-  /* static members */
-  @js.native
-  object HtmlUtils extends js.Object {
-    /**
-      * Adds the variadic classnames to the Element
-      */
-    def addClasses(element: Element, classNames: String*): Unit = js.native
-    /**
-      * Appends an HTML element with the specified tag name to the provided element.
-      * The variadic classnames are added to the new element.
-      *
-      * Returns the new element.
-      */
-    def append(element: Element, tagName: String, classNames: String*): HTMLElement = js.native
-    /**
-      * Creates and returns a new HTMLElement with the attached classnames.
-      */
-    def create(tagName: String, classNames: String*): HTMLElement = js.native
-    /**
-      * Returns the width/height of HTMLElement's bounding box
-      */
-    def getDimensions(element: HTMLElement): IDimensions = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object SvgContext extends js.Object {
-    var AnchorMap: js.Any = js.native
-  }
-  
   /* static members */
   @js.native
   object SvgUtils extends js.Object {
+    
     var SVG_NS: String = js.native
+    
     /**
       * Appends an SVG element with the specified tag name to the provided element.
       * The variadic classnames are added to the new element.
@@ -121,15 +128,15 @@ object contextsMod extends js.Object {
       * Returns the new element.
       */
     def append(element: Element, tagName: String, classNames: String*): SVGElement = js.native
+    
     /**
       * Creates and returns a new SVGElement with the attached classnames.
       */
     def create(tagName: String, classNames: String*): SVGElement = js.native
+    
     /**
       * Returns the width/height of svg element's bounding box
       */
     def getDimensions(element: SVGGraphicsElement): IDimensions = js.native
   }
-  
 }
-

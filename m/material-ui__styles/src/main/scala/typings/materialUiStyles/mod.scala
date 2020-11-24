@@ -43,24 +43,27 @@ import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/styles", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  class ServerStyleSheets () extends default {
-    def this(options: js.Object) = this()
-  }
   
   val StylesContext: Context[StylesOptions] = js.native
+  
   val StylesProvider: ComponentType[StylesProviderProps] = js.native
+  
   def ThemeProvider[T](props: ThemeProviderProps[T]): ReactElement = js.native
+  
   def createGenerateClassName(): GenerateId = js.native
   def createGenerateClassName(options: GenerateClassNameOptions): GenerateId = js.native
+  
   def createStyles[ClassKey /* <: String */, Props /* <: js.Object */](styles: StyleRules[Props, ClassKey]): StyleRules[Props, ClassKey] = js.native
+  
   def getThemeProps[Theme /* <: ThemeWithProps[_] */, Props, Name /* <: /* keyof any */ String */](params: NameProps[Props, Name, Theme]): Props with (ThemedProps[Theme, Name]) = js.native
+  
   def jssPreset(): JssOptions = js.native
+  
   def makeStyles[Theme, ClassKey /* <: String */](style: Styles[Theme, js.Object, ClassKey]): js.Function1[/* props */ js.UndefOr[js.Any], ClassNameMap[ClassKey]] = js.native
   @JSName("makeStyles")
   def makeStyles_ThemeProps_ObjectClassKey_String[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey]): js.Function1[/* props */ Props, ClassNameMap[ClassKey]] = js.native
@@ -68,10 +71,14 @@ object mod extends js.Object {
   def makeStyles_withTheme[Theme, ClassKey /* <: String */](style: Styles[Theme, js.Object, ClassKey], options: Omit[WithStylesOptions[Theme], withTheme]): js.Function1[/* props */ js.UndefOr[js.Any], ClassNameMap[ClassKey]] = js.native
   @JSName("makeStyles")
   def makeStyles_withTheme_ThemeProps_ObjectClassKey_String[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey], options: Omit[WithStylesOptions[Theme], withTheme]): js.Function1[/* props */ Props, ClassNameMap[ClassKey]] = js.native
+  
   def mergeClasses(): Classes = js.native
   def mergeClasses(options: MergeClassesOption): Classes = js.native
+  
   def styled[Component /* <: ElementType[_] */](Component: Component): ComponentCreator[Component] = js.native
+  
   def useTheme[T](): T = js.native
+  
   def withStyles[StylesType /* <: Styles[_, _, String] */, Options /* <: WithStylesOptions[ThemeOfStyles[StylesType]] */](style: StylesType): PropInjector[
     WithStyles[
       StylesType, 
@@ -86,6 +93,7 @@ object mod extends js.Object {
     ], 
     StyledComponentProps[ClassKeyOfStyles[StylesType]] with PropsOfStyles[StylesType]
   ] = js.native
+  
   def withTheme[Theme](component: ComponentClass[ConsistentWith[ComponentProps[_], WithTheme[Theme]], ComponentState]): ComponentType[
     (Omit[
       LibraryManagedAttributes[
@@ -106,7 +114,12 @@ object mod extends js.Object {
       /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
     ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
   ] = js.native
+  
   def withThemeCreator[Theme](): PropInjector[WithTheme[Theme], ThemedComponentProps] = js.native
   def withThemeCreator[Theme](option: WithThemeCreatorOption[Theme]): PropInjector[WithTheme[Theme], ThemedComponentProps] = js.native
+  
+  @js.native
+  class ServerStyleSheets () extends default {
+    def this(options: js.Object) = this()
+  }
 }
-

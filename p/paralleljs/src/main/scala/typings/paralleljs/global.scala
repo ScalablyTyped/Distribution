@@ -2,11 +2,12 @@ package typings.paralleljs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   class Parallel[T] protected ()
     extends typings.paralleljs.Parallel[T] {
@@ -19,6 +20,4 @@ object global extends js.Object {
     def this(data: T) = this()
     def this(data: T, opts: ParallelOptions) = this()
   }
-  
 }
-

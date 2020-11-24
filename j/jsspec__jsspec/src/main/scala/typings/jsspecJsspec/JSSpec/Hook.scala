@@ -2,10 +2,11 @@ package typings.jsspecJsspec.JSSpec
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Hook extends js.Object {
+  
   /**
     * Provide a hook, executing `fn`.
     *
@@ -27,4 +28,3 @@ trait Hook extends js.Object {
     */
   def apply(name: String, options: ExampleOptions, fn: AsyncFunc | Func): Unit = js.native
 }
-

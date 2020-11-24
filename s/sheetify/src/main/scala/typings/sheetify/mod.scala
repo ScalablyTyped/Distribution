@@ -5,11 +5,12 @@ import typings.std.Error
 import typings.std.TemplateStringsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sheetify", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply(src: String): String = js.native
   def apply(
     src: String,
@@ -68,6 +69,6 @@ object mod extends js.Object {
     done: js.Function3[/* err */ Error, /* css */ String, /* prefix */ String, Unit]
   ): String = js.native
   def apply(src: TemplateStringsArray, options: StringDictionary[js.Any]): Unit = js.native
+  
   def getPrefix(css: String): String = js.native
 }
-

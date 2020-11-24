@@ -3,7 +3,7 @@ package typings.esriLeaflet.mod
 import typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: VirtualGrid extends support
 /**
@@ -34,4 +34,3 @@ class FeatureLayer_ protected ()
   extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayer_ {
   def this(options: FeatureLayerOptions) = this()
 }
-

@@ -4,11 +4,11 @@ import typings.reduxPersist.typesMod.PersistConfig
 import typings.reduxPersist.typesMod.Persistoid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-persist/lib/createPersistoid", JSImport.Namespace)
 @js.native
 object libCreatePersistoidMod extends js.Object {
+  
   def default(config: PersistConfig[_, _, _, _]): Persistoid = js.native
 }
-

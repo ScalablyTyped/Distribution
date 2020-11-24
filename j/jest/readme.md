@@ -10,10 +10,10 @@ Delightful JavaScript Testing.
 | ------------------ | :-------------: |
 | Full name          | jest |
 | Keywords           | ava, babel, coverage, easy, expect, facebook, immersive, instant, jasmine, jest, jsdom, mocha, mocking, painless, qunit, runner, sandboxed, snapshot, tap, tape, test, testing, typescript, watch |
-| # releases         | 74 |
-| # dependents       | 4970 |
-| # downloads        | 226198090 |
-| # stars            | 91 |
+| # releases         | 62 |
+| # dependents       | 5977 |
+| # downloads        | 337484756 |
+| # stars            | 92 |
 
 ## Links
 - [Homepage](https://jestjs.io/)

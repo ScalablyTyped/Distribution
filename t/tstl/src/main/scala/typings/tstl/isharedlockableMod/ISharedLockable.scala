@@ -3,9 +3,11 @@ package typings.tstl.isharedlockableMod
 import typings.tstl.ilockableMod.ILockable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ISharedLockable extends ILockable {
+  
   /**
     * Read locks the mutex.
     *
@@ -18,7 +20,8 @@ trait ISharedLockable extends ILockable {
     * sleep. Therefore, never forget to calling the {@link unlock_shared} or utilize the
     * {@link SharedLock.lock} function instead to ensure the safety.
     */
-  def lock_shared(): js.Promise[Unit]
+  def lock_shared(): js.Promise[Unit] = js.native
+  
   /**
     * Tries to read lock the mutex.
     *
@@ -34,7 +37,8 @@ trait ISharedLockable extends ILockable {
     *
     * @return Whether succeeded to share the mutex or not.
     */
-  def try_lock_shared(): js.Promise[Boolean]
+  def try_lock_shared(): js.Promise[Boolean] = js.native
+  
   /**
     * Read unlocks the mutex.
     *
@@ -54,10 +58,10 @@ trait ISharedLockable extends ILockable {
     * > parameter of methods of the {@link SharedLock}, then this {@link unlock_shared} method
     * > would be automatically called by the {@link SharedLock} after the business.
     */
-  def unlock_shared(): js.Promise[Unit]
+  def unlock_shared(): js.Promise[Unit] = js.native
 }
-
 object ISharedLockable {
+  
   @scala.inline
   def apply(
     lock: () => js.Promise[Unit],
@@ -70,5 +74,29 @@ object ISharedLockable {
     val __obj = js.Dynamic.literal(lock = js.Any.fromFunction0(lock), lock_shared = js.Any.fromFunction0(lock_shared), try_lock = js.Any.fromFunction0(try_lock), try_lock_shared = js.Any.fromFunction0(try_lock_shared), unlock = js.Any.fromFunction0(unlock), unlock_shared = js.Any.fromFunction0(unlock_shared))
     __obj.asInstanceOf[ISharedLockable]
   }
+  
+  @scala.inline
+  implicit class ISharedLockableOps[Self <: ISharedLockable] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setLock_shared(value: () => js.Promise[Unit]): Self = this.set("lock_shared", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setTry_lock_shared(value: () => js.Promise[Boolean]): Self = this.set("try_lock_shared", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setUnlock_shared(value: () => js.Promise[Unit]): Self = this.set("unlock_shared", js.Any.fromFunction0(value))
+  }
 }
-

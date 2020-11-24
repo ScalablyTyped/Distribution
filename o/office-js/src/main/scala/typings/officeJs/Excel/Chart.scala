@@ -19,7 +19,7 @@ import typings.officeJs.officeJsStrings.Rows
 import typings.officeJs.officeJsStrings.Zero
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -30,6 +30,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Chart extends ClientObject {
+  
+  /**
+    * Activates the chart in the Excel UI.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  def activate(): Unit = js.native
+  
   /**
     *
     * Represents chart axes.
@@ -37,6 +45,7 @@ trait Chart extends ClientObject {
     * [Api set: ExcelApi 1.1]
     */
   val axes: ChartAxes = js.native
+  
   /**
     *
     * Specifies a ChartCategoryLabelLevel enumeration constant referring to
@@ -45,6 +54,7 @@ trait Chart extends ClientObject {
     * [Api set: ExcelApi 1.8]
     */
   var categoryLabelLevel: Double = js.native
+  
   /**
     *
     * Specifies the type of the chart. See Excel.ChartType for details.
@@ -52,9 +62,11 @@ trait Chart extends ClientObject {
     * [Api set: ExcelApi 1.7]
     */
   var chartType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 83 */ js.Any = js.native
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Chart: RequestContext = js.native
+  
   /**
     *
     * Represents the datalabels on the chart.
@@ -62,6 +74,14 @@ trait Chart extends ClientObject {
     * [Api set: ExcelApi 1.1]
     */
   val dataLabels: ChartDataLabels = js.native
+  
+  /**
+    * Deletes the chart object.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
+  def delete(): Unit = js.native
+  
   /**
     *
     * Specifies the way that blank cells are plotted on a chart.
@@ -69,6 +89,7 @@ trait Chart extends ClientObject {
     * [Api set: ExcelApi 1.8]
     */
   var displayBlanksAs: ChartDisplayBlanksAs | NotPlotted | Zero | Interplotted = js.native
+  
   /**
     *
     * Encapsulates the format properties for the chart area.
@@ -76,165 +97,7 @@ trait Chart extends ClientObject {
     * [Api set: ExcelApi 1.1]
     */
   val format: ChartAreaFormat = js.native
-  /**
-    *
-    * Specifies the height, in points, of the chart object.
-    *
-    * [Api set: ExcelApi 1.1]
-    */
-  var height: Double = js.native
-  /**
-    *
-    * The unique id of chart.
-    *
-    * [Api set: ExcelApi 1.7]
-    */
-  val id: String = js.native
-  /**
-    *
-    * The distance, in points, from the left side of the chart to the worksheet origin.
-    *
-    * [Api set: ExcelApi 1.1]
-    */
-  var left: Double = js.native
-  /**
-    *
-    * Represents the legend for the chart.
-    *
-    * [Api set: ExcelApi 1.1]
-    */
-  val legend: ChartLegend = js.native
-  /**
-    *
-    * Specifies the name of a chart object.
-    *
-    * [Api set: ExcelApi 1.1]
-    */
-  var name: String = js.native
-  /**
-    *
-    * Occurs when the chart is activated.
-    *
-    * [Api set: ExcelApi 1.8]
-    *
-    * @eventproperty
-    */
-  val onActivated: EventHandlers[ChartActivatedEventArgs] = js.native
-  /**
-    *
-    * Occurs when the chart is deactivated.
-    *
-    * [Api set: ExcelApi 1.8]
-    *
-    * @eventproperty
-    */
-  val onDeactivated: EventHandlers[ChartDeactivatedEventArgs] = js.native
-  /**
-    *
-    * Encapsulates the options for a pivot chart.
-    *
-    * [Api set: ExcelApi 1.9]
-    */
-  val pivotOptions: ChartPivotOptions = js.native
-  /**
-    *
-    * Represents the plotArea for the chart.
-    *
-    * [Api set: ExcelApi 1.8]
-    */
-  val plotArea: ChartPlotArea = js.native
-  /**
-    *
-    * Specifies the way columns or rows are used as data series on the chart.
-    *
-    * [Api set: ExcelApi 1.8]
-    */
-  var plotBy: ChartPlotBy | Rows | Columns = js.native
-  /**
-    *
-    * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
-    *
-    * [Api set: ExcelApi 1.8]
-    */
-  var plotVisibleOnly: Boolean = js.native
-  /**
-    *
-    * Represents either a single series or collection of series in the chart.
-    *
-    * [Api set: ExcelApi 1.1]
-    */
-  val series: ChartSeriesCollection = js.native
-  /**
-    *
-    * Specifies a ChartSeriesNameLevel enumeration constant referring to
-    the level of where the series names are being sourced from.
-    *
-    * [Api set: ExcelApi 1.8]
-    */
-  var seriesNameLevel: Double = js.native
-  /**
-    *
-    * Specifies whether to display all field buttons on a PivotChart.
-    *
-    * [Api set: ExcelApi 1.7]
-    */
-  var showAllFieldButtons: Boolean = js.native
-  /**
-    *
-    * Specifies whether to show the data labels when the value is greater than the maximum value on the value axis.
-    If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
-    This property applies to 2-D charts only.
-    *
-    * [Api set: ExcelApi 1.8]
-    */
-  var showDataLabelsOverMaximum: Boolean = js.native
-  /**
-    *
-    * Specifies the chart style for the chart.
-    *
-    * [Api set: ExcelApi 1.8]
-    */
-  var style: Double = js.native
-  /**
-    *
-    * Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
-    *
-    * [Api set: ExcelApi 1.1]
-    */
-  val title: ChartTitle = js.native
-  /**
-    *
-    * Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
-    *
-    * [Api set: ExcelApi 1.1]
-    */
-  var top: Double = js.native
-  /**
-    *
-    * Specifies the width, in points, of the chart object.
-    *
-    * [Api set: ExcelApi 1.1]
-    */
-  var width: Double = js.native
-  /**
-    *
-    * The worksheet containing the current chart.
-    *
-    * [Api set: ExcelApi 1.2]
-    */
-  val worksheet: Worksheet = js.native
-  /**
-    * Activates the chart in the Excel UI.
-    *
-    * [Api set: ExcelApi 1.9]
-    */
-  def activate(): Unit = js.native
-  /**
-    * Deletes the chart object.
-    *
-    * [Api set: ExcelApi 1.1]
-    */
-  def delete(): Unit = js.native
+  
   /**
     * Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
     The aspect ratio is preserved as part of the resizing.
@@ -277,6 +140,39 @@ trait Chart extends ClientObject {
   def getImage_FitAndCenter(width: Double, height: js.UndefOr[scala.Nothing], fittingMode: FitAndCenter): ClientResult[String] = js.native
   @JSName("getImage")
   def getImage_FitAndCenter(width: Double, height: Double, fittingMode: FitAndCenter): ClientResult[String] = js.native
+  
+  /**
+    *
+    * Specifies the height, in points, of the chart object.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
+  var height: Double = js.native
+  
+  /**
+    *
+    * The unique id of chart.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
+  val id: String = js.native
+  
+  /**
+    *
+    * The distance, in points, from the left side of the chart to the worksheet origin.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
+  var left: Double = js.native
+  
+  /**
+    *
+    * Represents the legend for the chart.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
+  val legend: ChartLegend = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -287,6 +183,84 @@ trait Chart extends ClientObject {
   def load(propertyNamesAndPaths: Expand): Chart = js.native
   def load(propertyNames: String): Chart = js.native
   def load(propertyNames: js.Array[String]): Chart = js.native
+  
+  /**
+    *
+    * Specifies the name of a chart object.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
+  var name: String = js.native
+  
+  /**
+    *
+    * Occurs when the chart is activated.
+    *
+    * [Api set: ExcelApi 1.8]
+    *
+    * @eventproperty
+    */
+  val onActivated: EventHandlers[ChartActivatedEventArgs] = js.native
+  
+  /**
+    *
+    * Occurs when the chart is deactivated.
+    *
+    * [Api set: ExcelApi 1.8]
+    *
+    * @eventproperty
+    */
+  val onDeactivated: EventHandlers[ChartDeactivatedEventArgs] = js.native
+  
+  /**
+    *
+    * Encapsulates the options for a pivot chart.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  val pivotOptions: ChartPivotOptions = js.native
+  
+  /**
+    *
+    * Represents the plotArea for the chart.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
+  val plotArea: ChartPlotArea = js.native
+  
+  /**
+    *
+    * Specifies the way columns or rows are used as data series on the chart.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
+  var plotBy: ChartPlotBy | Rows | Columns = js.native
+  
+  /**
+    *
+    * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
+  var plotVisibleOnly: Boolean = js.native
+  
+  /**
+    *
+    * Represents either a single series or collection of series in the chart.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
+  val series: ChartSeriesCollection = js.native
+  
+  /**
+    *
+    * Specifies a ChartSeriesNameLevel enumeration constant referring to
+    the level of where the series names are being sourced from.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
+  var seriesNameLevel: Double = js.native
+  
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Chart): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -302,6 +276,7 @@ trait Chart extends ClientObject {
     */
   def set(properties: ChartUpdateData): Unit = js.native
   def set(properties: ChartUpdateData, options: UpdateOptions): Unit = js.native
+  
   /**
     * Resets the source data for the chart.
     *
@@ -318,6 +293,7 @@ trait Chart extends ClientObject {
   def setData_Columns(sourceData: Range, seriesBy: Columns): Unit = js.native
   @JSName("setData")
   def setData_Rows(sourceData: Range, seriesBy: Rows): Unit = js.native
+  
   def setPosition(startCell: String): Unit = js.native
   def setPosition(startCell: String, endCell: String): Unit = js.native
   def setPosition(startCell: String, endCell: Range): Unit = js.native
@@ -332,10 +308,68 @@ trait Chart extends ClientObject {
   def setPosition(startCell: Range): Unit = js.native
   def setPosition(startCell: Range, endCell: String): Unit = js.native
   def setPosition(startCell: Range, endCell: Range): Unit = js.native
+  
+  /**
+    *
+    * Specifies whether to display all field buttons on a PivotChart.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
+  var showAllFieldButtons: Boolean = js.native
+  
+  /**
+    *
+    * Specifies whether to show the data labels when the value is greater than the maximum value on the value axis.
+    If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
+    This property applies to 2-D charts only.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
+  var showDataLabelsOverMaximum: Boolean = js.native
+  
+  /**
+    *
+    * Specifies the chart style for the chart.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
+  var style: Double = js.native
+  
+  /**
+    *
+    * Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
+  val title: ChartTitle = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.Chart object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): ChartData = js.native
+  
+  /**
+    *
+    * Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
+    *
+    * [Api set: ExcelApi 1.1]
+    */
+  var top: Double = js.native
+  
+  /**
+    *
+    * Specifies the width, in points, of the chart object.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
+  var width: Double = js.native
+  
+  /**
+    *
+    * The worksheet containing the current chart.
+    *
+    * [Api set: ExcelApi 1.2]
+    */
+  val worksheet: Worksheet = js.native
 }
-

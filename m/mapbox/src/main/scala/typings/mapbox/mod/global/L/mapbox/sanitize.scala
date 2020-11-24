@@ -2,11 +2,12 @@ package typings.mapbox.mod.global.L.mapbox
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("L.mapbox.sanitize")
 @js.native
 object sanitize extends js.Object {
+  
   //////////////////////////////////////////////////////////////////////
   /////////////////////////////// UTILITY //////////////////////////////
   //////////////////////////////////////////////////////////////////////
@@ -15,4 +16,3 @@ object sanitize extends js.Object {
     */
   def apply(text: String): String = js.native
 }
-

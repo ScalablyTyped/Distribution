@@ -37,11 +37,12 @@ import typings.chromeApps.chromeAppsStrings.unknown__
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.system")
 @js.native
 object system extends js.Object {
+  
   // #endregion
   // #region chrome.system.*
   ////////////////
@@ -54,6 +55,7 @@ object system extends js.Object {
     */
   @js.native
   object cpu extends js.Object {
+    
     /** Queries basic CPU information of the system. */
     def getInfo(callback: js.Function1[/* info */ CpuInfo, Unit]): Unit = js.native
   }
@@ -68,16 +70,14 @@ object system extends js.Object {
     */
   @js.native
   object display extends js.Object {
-    /**
-      * Fired when anything changes to the display configuration.
-      */
-    val onDisplayChanged: typings.chromeApps.chrome.events.Event[js.Function0[Unit]] = js.native
+    
     /**
       * Resets the touch calibration for the display and brings it back to its default state by clearing any touch calibration data associated with the display.
       * @since Chrome 57
       * @param id The display's unique identifier.
       */
     def clearTouchCalibration(id: String): Unit = js.native
+    
     /**
       * Sets the touch calibration pairs for a display.
       * These **pairs** would be used to calibrate the touch screen for display with **id** called in startCustomTouchCalibration().
@@ -89,6 +89,7 @@ object system extends js.Object {
       * @throws Error
       */
     def completeCustomTouchCalibration(pairs: TouchCalibrationPairs, bounds: Bounds): Unit = js.native
+    
     /**
       * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
       * @description
@@ -99,6 +100,7 @@ object system extends js.Object {
       * @param {boolean} enabled True if unified desktop should be enabled.
       */
     def enableUnifiedDesktop(enabled: Boolean): Unit = js.native
+    
     /**
       * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
       * @description Requests the layout info for all displays.
@@ -107,6 +109,7 @@ object system extends js.Object {
       * @param callback The callback to invoke with the results.
       */
     def getDisplayLayout(callback: js.Function1[/* layouts */ js.Array[DisplayLayout], Unit]): Unit = js.native
+    
     /**
       * Requests the information for all attached display devices.
       * @param callback The callback to invoke with the results.
@@ -119,6 +122,12 @@ object system extends js.Object {
       * @param callback The callback to invoke with the results.
       */
     def getInfo(flags: DisplayInfoFlags, callback: js.Function1[/* info */ js.Array[DisplayInfo], Unit]): Unit = js.native
+    
+    /**
+      * Fired when anything changes to the display configuration.
+      */
+    val onDisplayChanged: typings.chromeApps.chrome.events.Event[js.Function0[Unit]] = js.native
+    
     /**
       * Adjusts the current overscan insets for a display.
       * Typically this should etiher move the display along an axis (e.g. left+right have the same value)
@@ -129,18 +138,21 @@ object system extends js.Object {
       * @param delta The amount to change the overscan insets.
       */
     def overscanCalibrationAdjust(id: String, delta: Insets): Unit = js.native
+    
     /**
       * Complete overscan adjustments for a display by saving the current values and hiding the overlay.
       * @since Chrome 53
       * @param id The display's unique identifier.
       */
     def overscanCalibrationComplete(id: String): Unit = js.native
+    
     /**
       * Resets the overscan insets for a display to the last saved value (i.e before Start was called).
       * @since Chrome 53
       * @param id The display's unique identifier.
       */
     def overscanCalibrationReset(id: String): Unit = js.native
+    
     /**
       * Starts overscan calibration for a display.
       * This will show an overlay on the screen indicating the current overscan insets.
@@ -149,6 +161,7 @@ object system extends js.Object {
       * @param id The display's unique identifier.
       */
     def overscanCalibrationStart(id: String): Unit = js.native
+    
     /**
       * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
       * @description
@@ -162,6 +175,7 @@ object system extends js.Object {
       */
     def setDisplayLayout(layouts: js.Array[DisplayLayout]): Unit = js.native
     def setDisplayLayout(layouts: js.Array[DisplayLayout], callback: js.Function0[Unit]): Unit = js.native
+    
     /**
       * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
       * @description
@@ -174,6 +188,7 @@ object system extends js.Object {
       */
     def setDisplayProperties(id: String, info: DisplayPropertiesInfo): Unit = js.native
     def setDisplayProperties(id: String, info: DisplayPropertiesInfo, callback: js.Function0[Unit]): Unit = js.native
+    
     def setMirrorMode(info: MirrorModeInfoMixed, callback: js.Function0[Unit]): Unit = js.native
     /**
       * @requires(CrOS Kiosk app) Chrome OS Kiosk apps only
@@ -185,6 +200,7 @@ object system extends js.Object {
       * mirroring destination displays.
       */
     def setMirrorMode(info: MirrorModeInfo, callback: js.Function0[Unit]): Unit = js.native
+    
     /**
       * Displays the native touch calibration UX for the display with **id** as display id.
       * This will show an overlay on the screen with required instructions on how to proceed.
@@ -195,6 +211,7 @@ object system extends js.Object {
       * @param callback Optional callback to inform the caller that the touch calibration has ended. The argument of the callback informs if the calibration was a success or not.
       */
     def showNativeTouchCalibration(id: String, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+    
     /**
       * Starts custom touch calibration for a display.
       * This should be called when using a custom UX for collecting calibration data.
@@ -203,21 +220,28 @@ object system extends js.Object {
       * @param id The display's unique identifier.
       */
     def startCustomTouchCalibration(id: String): Unit = js.native
+    
     @js.native
     object DisplayPosition extends js.Object {
+      
       var BOTTOM: bottom_ = js.native
+      
       var LEFT: left_ = js.native
+      
       var RIGHT: right_ = js.native
+      
       var TOP: top_ = js.native
     }
     
     @js.native
     object MirrorMode extends js.Object {
+      
       var MIXED: mixed = js.native
+      
       var NORMAL: normal_ = js.native
+      
       var OFF: off = js.native
     }
-    
   }
   
   ///////////////////
@@ -230,6 +254,7 @@ object system extends js.Object {
     */
   @js.native
   object memory extends js.Object {
+    
     /** Get physical memory information. */
     def getInfo(callback: js.Function1[/* info */ MemoryInfo, Unit]): Unit = js.native
   }
@@ -243,6 +268,7 @@ object system extends js.Object {
     */
   @js.native
   object network extends js.Object {
+    
     /** Retrieves information about local adapters on this system. */
     def getNetworkInterfaces(callback: js.Function1[/* networkInterfaces */ js.Array[NetworkInterface], Unit]): Unit = js.native
   }
@@ -258,29 +284,36 @@ object system extends js.Object {
     */
   @js.native
   object powerSource extends js.Object {
-    /**
-      * Event for changes in the set of connected power sources.
-      */
-    val onPowerChanged: typings.chromeApps.chrome.events.Event[js.Function1[/* powerSourceInfo */ js.Array[PowerSourceInfo], Unit]] = js.native
+    
     /**
       * Requests information on attached power sources.
       * @param callback The callback to invoke with the results or undefined if the power source information is not known.
       */
     def getPowerSourceInfo(callback: js.Function1[/* powerSourceInfo */ js.UndefOr[js.Array[PowerSourceInfo]], Unit]): Unit = js.native
+    
+    /**
+      * Event for changes in the set of connected power sources.
+      */
+    val onPowerChanged: typings.chromeApps.chrome.events.Event[js.Function1[/* powerSourceInfo */ js.Array[PowerSourceInfo], Unit]] = js.native
+    
     /**
       * Requests a power source status update.
       * Resulting power source status updates are observable using *onPowerChanged*.
       */
     def requestStatusUpdate(): Unit = js.native
+    
     @js.native
     object PowerSourceType extends js.Object {
-      /* "mains" */ val mains: typings.chromeApps.chrome.system.powerSource.PowerSourceType.mains with String = js.native
-      /* "unknown" */ val unknown: typings.chromeApps.chrome.system.powerSource.PowerSourceType.unknown with String = js.native
-      /* "usb" */ val usb: typings.chromeApps.chrome.system.powerSource.PowerSourceType.usb with String = js.native
+      
       @JSBracketAccess
       def apply(value: String): js.UndefOr[typings.chromeApps.chrome.system.powerSource.PowerSourceType with String] = js.native
+      
+      /* "mains" */ val mains: typings.chromeApps.chrome.system.powerSource.PowerSourceType.mains with String = js.native
+      
+      /* "unknown" */ val unknown: typings.chromeApps.chrome.system.powerSource.PowerSourceType.unknown with String = js.native
+      
+      /* "usb" */ val usb: typings.chromeApps.chrome.system.powerSource.PowerSourceType.usb with String = js.native
     }
-    
   }
   
   ////////////////////
@@ -293,10 +326,7 @@ object system extends js.Object {
     */
   @js.native
   object storage extends js.Object {
-    /** Fired when a new removable storage is attached to the system. */
-    val onAttached: typings.chromeApps.chrome.events.Event[js.Function1[/* info */ StorageUnitInfo, Unit]] = js.native
-    /** Fired when a removable storage is detached from the system. */
-    val onDetached: typings.chromeApps.chrome.events.Event[js.Function1[/* id */ String, Unit]] = js.native
+    
     /**
       * Ejects a removable storage device.
       * @param callback
@@ -325,29 +355,42 @@ object system extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    
     /**
       * Get the available capacity of a specified |id| storage device. The |id| is the transient device ID from StorageUnitInfo.
       * @since Dev channel only.
       */
     def getAvailableCapacity(id: String, callback: js.Function1[/* info */ StorageCapacityInfo, Unit]): Unit = js.native
+    
     /** Get the storage information from the system. The argument passed to the callback is an array of StorageUnitInfo objects. */
     def getInfo(callback: js.Function1[/* info */ js.Array[StorageUnitInfo], Unit]): Unit = js.native
+    
+    /** Fired when a new removable storage is attached to the system. */
+    val onAttached: typings.chromeApps.chrome.events.Event[js.Function1[/* info */ StorageUnitInfo, Unit]] = js.native
+    
+    /** Fired when a removable storage is detached from the system. */
+    val onDetached: typings.chromeApps.chrome.events.Event[js.Function1[/* id */ String, Unit]] = js.native
+    
     @js.native
     object EjectDeviceResultCode extends js.Object {
+      
       var FAILURE: failure_ = js.native
+      
       var IN_USE: in_use_ = js.native
+      
       var NO_SUCH_DEVICE: no_such_device_ = js.native
+      
       var SUCCESS: success_ = js.native
     }
     
     @js.native
     object StorageUnitType extends js.Object {
+      
       var FIXED: fixed_ = js.native
+      
       var REMOVABLE: removable_ = js.native
+      
       var UNKNOWN: unknown__ = js.native
     }
-    
   }
-  
 }
-

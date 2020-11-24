@@ -12,7 +12,7 @@ serialize form fields into an object or JSON
 | Keywords           | form, serialize, json, object, jquery-plugin |
 | # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 209983 |
+| # downloads        | 175731 |
 | # stars            | 2 |
 
 ## Links

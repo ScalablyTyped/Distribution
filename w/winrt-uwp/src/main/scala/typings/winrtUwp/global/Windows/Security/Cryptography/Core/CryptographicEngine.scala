@@ -4,18 +4,18 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Encrypts, decrypts, and signs content, and verifies digital signatures. */
 @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine")
 @js.native
 abstract class CryptographicEngine ()
   extends typings.winrtUwp.Windows.Security.Cryptography.Core.CryptographicEngine
-
 /* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine")
 @js.native
 object CryptographicEngine extends js.Object {
+  
   /**
     * Decrypts content that was previously encrypted by using a symmetric or asymmetric algorithm.
     * @param key Cryptographic key to use for decryption. This can be an asymmetric or a symmetric key. For more information, see AsymmetricKeyAlgorithmProvider and SymmetricKeyAlgorithmProvider .
@@ -28,6 +28,7 @@ object CryptographicEngine extends js.Object {
     data: IBuffer,
     iv: IBuffer
   ): IBuffer = js.native
+  
   /**
     * Decrypts and authenticates data. For more information and a complete code sample, see EncryptedAndAuthenticatedData .
     * @param key Symmetric key to use.
@@ -44,6 +45,7 @@ object CryptographicEngine extends js.Object {
     authenticationTag: IBuffer,
     authenticatedData: IBuffer
   ): IBuffer = js.native
+  
   /**
     * Decrypts the encrypted input data using the supplied key.
     * @param key The key to use to decrypt the encrypted input data.
@@ -56,6 +58,7 @@ object CryptographicEngine extends js.Object {
     data: IBuffer,
     iv: IBuffer
   ): IPromiseWithIAsyncOperation[IBuffer] = js.native
+  
   /**
     * Derives a key from another key by using a key derivation function. For more information, see the KeyDerivationAlgorithmProvider and KeyDerivationParameters classes.
     * @param key The symmetric or secret key used for derivation.
@@ -68,6 +71,7 @@ object CryptographicEngine extends js.Object {
     parameters: typings.winrtUwp.Windows.Security.Cryptography.Core.KeyDerivationParameters,
     desiredKeySize: Double
   ): IBuffer = js.native
+  
   /**
     * Encrypts data by using a symmetric or asymmetric algorithm.
     * @param key Cryptographic key to use for encryption. This can be an asymmetric or a symmetric key. For more information, see AsymmetricKeyAlgorithmProvider and SymmetricKeyAlgorithmProvider .
@@ -80,6 +84,7 @@ object CryptographicEngine extends js.Object {
     data: IBuffer,
     iv: IBuffer
   ): IBuffer = js.native
+  
   /**
     * Performs authenticated encryption.
     * @param key Symmetric key to use for encryption.
@@ -94,6 +99,7 @@ object CryptographicEngine extends js.Object {
     nonce: IBuffer,
     authenticatedData: IBuffer
   ): typings.winrtUwp.Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData = js.native
+  
   /**
     * Signs digital content. For more information, see MACs, hashes, and signatures.
     * @param key Key used for signing.
@@ -101,6 +107,7 @@ object CryptographicEngine extends js.Object {
     * @return The data's signature.
     */
   def sign(key: typings.winrtUwp.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer): IBuffer = js.native
+  
   /**
     * Computes a hash for the supplied input data, and then signs the computed hash using the specified key.
     * @param key The key to use to compute and sign the hash.
@@ -108,6 +115,7 @@ object CryptographicEngine extends js.Object {
     * @return An asynchronous operation to retrieve the hashed and signed data.
     */
   def signAsync(key: typings.winrtUwp.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer): IPromiseWithIAsyncOperation[IBuffer] = js.native
+  
   /**
     * Signs the hashed input data using the specified key.
     * @param key The key to use to sign the hash. This key must be an asymmetric key obtained from a PersistedKeyProvider or AsymmetricKeyAlgorithmProvider .
@@ -115,6 +123,7 @@ object CryptographicEngine extends js.Object {
     * @return The signed data.
     */
   def signHashedData(key: typings.winrtUwp.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer): IBuffer = js.native
+  
   /**
     * Signs the hashed input data using the specified key.
     * @param key The key to use to sign the hash. This key must be an asymmetric key obtained from a PersistedKeyProvider or AsymmetricKeyAlgorithmProvider .
@@ -122,6 +131,7 @@ object CryptographicEngine extends js.Object {
     * @return An asynchronous operation to retrieve the signed data.
     */
   def signHashedDataAsync(key: typings.winrtUwp.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer): IPromiseWithIAsyncOperation[IBuffer] = js.native
+  
   /**
     * Verifies a message signature.
     * @param key Key used for verification. This must be the same key previously used to sign the message.
@@ -134,6 +144,7 @@ object CryptographicEngine extends js.Object {
     data: IBuffer,
     signature: IBuffer
   ): Boolean = js.native
+  
   /**
     * Verifies the signature of the specified input data against a known signature.
     * @param key The key to use to retrieve the signature from the input data. This key must be an asymmetric key obtained from a PersistedKeyProvider or AsymmetricKeyAlgorithmProvider .
@@ -147,4 +158,3 @@ object CryptographicEngine extends js.Object {
     signature: IBuffer
   ): Boolean = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.smartFoxServer.global.SFS2X.Entities
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Entities.MMOItem")
 @js.native
@@ -14,4 +14,3 @@ class MMOItem protected ()
     */
   def this(id: Double) = this()
 }
-

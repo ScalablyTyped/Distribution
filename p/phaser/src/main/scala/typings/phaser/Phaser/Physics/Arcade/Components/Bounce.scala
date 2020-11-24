@@ -2,13 +2,14 @@ package typings.phaser.Phaser.Physics.Arcade.Components
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods used for setting the bounce properties of an Arcade Physics Body.
   */
 @js.native
 trait Bounce extends js.Object {
+  
   /**
     * Sets the bounce values of this body.
     * 
@@ -19,16 +20,19 @@ trait Bounce extends js.Object {
     */
   def setBounce(x: Double): this.type = js.native
   def setBounce(x: Double, y: Double): this.type = js.native
+  
   /**
     * Sets the horizontal bounce value for this body.
     * @param value The amount of horizontal bounce to apply on collision. A float, typically between 0 and 1.
     */
   def setBounceX(value: Double): this.type = js.native
+  
   /**
     * Sets the vertical bounce value for this body.
     * @param value The amount of vertical bounce to apply on collision. A float, typically between 0 and 1.
     */
   def setBounceY(value: Double): this.type = js.native
+  
   /**
     * Sets whether this Body collides with the world boundary.
     * 
@@ -46,4 +50,3 @@ trait Bounce extends js.Object {
   def setCollideWorldBounds(value: Boolean, bounceX: Double): this.type = js.native
   def setCollideWorldBounds(value: Boolean, bounceX: Double, bounceY: Double): this.type = js.native
 }
-

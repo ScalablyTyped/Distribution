@@ -11,22 +11,24 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch", JSImport.Namespace)
 @js.native
 object cloudsearchMod extends js.Object {
+  
   def cloudsearch(options: Options): Cloudsearch = js.native
   @JSName("cloudsearch")
   def cloudsearch_v1(version: v1): Cloudsearch = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Cloudsearch {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
     @js.native
     object v1
       extends TopLevel[
@@ -36,11 +38,11 @@ object cloudsearchMod extends js.Object {
                 Cloudsearch
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -68,8 +70,5 @@ object cloudsearchMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

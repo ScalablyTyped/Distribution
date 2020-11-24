@@ -3,7 +3,7 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.EventTarget.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base functionality for a slider. Can be vertical or horizontal.
@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Slider extends Component {
-  @JSName("options_")
-  var options__Slider: SliderOptions = js.native
+  
   /**
     * Calculate distance for slider
     *
@@ -24,26 +23,31 @@ trait Slider extends Component {
     *         - position.y for horizontal `Slider`s
     */
   def calculateDistance(event: Event): Double = js.native
+  
   /**
     * Disable controls for this slider if they are enabled
     */
   def disable(): Unit = js.native
+  
   /**
     * Enable controls for this slider if they are disabled
     */
   def enable(): Unit = js.native
+  
   /**
     * Are controls are currently enabled for this slider or not.
     *
     * @return true if controls are enabled, false otherwise
     */
   def enabled(): Boolean = js.native
+  
   /**
     * Handle a `blur` event on this `Slider`.
     *
     * @listens blur
     */
   def handleBlur(): Unit = js.native
+  
   /**
     * Listener for click events on slider, used to prevent clicks
     *   from bubbling up to parent elements like button menus.
@@ -52,12 +56,14 @@ trait Slider extends Component {
     *        Event that caused this object to run
     */
   def handleClick(event: Event): Unit = js.native
+  
   /**
     * Handle a `focus` event on this `Slider`.
     *
     * @listens focus
     */
   def handleFocus(): Unit = js.native
+  
   /**
     * Handle `mousedown` or `touchstart` events on the `Slider`.
     *
@@ -69,6 +75,7 @@ trait Slider extends Component {
     * @fires Slider#slideractive
     */
   def handleMouseDown(event: Event): Unit = js.native
+  
   /**
     * Handle the `mousemove`, `touchmove`, and `mousedown` events on this `Slider`.
     * The `mousemove` and `touchmove` events will only only trigger this function during
@@ -83,6 +90,7 @@ trait Slider extends Component {
     * @listens touchmove
     */
   def handleMouseMove(event: Event): Unit = js.native
+  
   /**
     * Handle `mouseup` or `touchend` events on the `Slider`.
     *
@@ -94,6 +102,10 @@ trait Slider extends Component {
     * @fires Slider#sliderinactive
     */
   def handleMouseUp(event: Event): Unit = js.native
+  
+  @JSName("options_")
+  var options__Slider: SliderOptions = js.native
+  
   /**
     * Update the progress bar of the `Slider`.
     *
@@ -101,6 +113,7 @@ trait Slider extends Component {
     *          number from 0 to 1.
     */
   def update(): Double = js.native
+  
   def vertical(): Boolean = js.native
   /**
     * Get/set if slider is horizontal for vertical
@@ -114,4 +127,3 @@ trait Slider extends Component {
     */
   def vertical(bool: Boolean): Unit = js.native
 }
-

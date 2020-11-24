@@ -5,10 +5,11 @@ import typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.teams
 import typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.workers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Container extends js.Object {
+  
   @JSName("get")
   def get_organizations(id: String, group: organizations): js.Promise[OnfleetContainer] = js.native
   @JSName("get")
@@ -16,4 +17,3 @@ trait Container extends js.Object {
   @JSName("get")
   def get_workers(id: String, group: workers): js.Promise[OnfleetContainer] = js.native
 }
-

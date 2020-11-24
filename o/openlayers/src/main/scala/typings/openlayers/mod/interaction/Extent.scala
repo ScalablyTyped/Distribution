@@ -5,7 +5,7 @@ import typings.openlayers.mod.Map
 import typings.openlayers.mod.olx.interaction.ExtentOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -26,6 +26,7 @@ class Extent protected () extends Pointer {
     * @api stable
     */
   def this(options: ExtentOptions) = this()
+  
   /**
     * Returns the current drawn extent in the view projection
     *
@@ -33,6 +34,7 @@ class Extent protected () extends Pointer {
     * @api
     */
   def getExtent(): Extent_ = js.native
+  
   /**
     * Manually sets the drawn extent, using the view projection.
     *
@@ -40,15 +42,16 @@ class Extent protected () extends Pointer {
     * @api
     */
   def setExtent(extent: Extent_): Unit = js.native
+  
   /**
     * @inheritDoc
     */
   def setMap(map: Map): Unit = js.native
 }
-
 @JSImport("openlayers", "interaction.Extent")
 @js.native
 object Extent extends js.Object {
+  
   /**
     * @classdesc
     * Events emitted by {@link ol.interaction.Extent} instances are instances of
@@ -68,12 +71,11 @@ object Extent extends js.Object {
       * @param feature The feature drawn.
       */
     def this(`type`: ExtentEventType, extent: Extent_) = this()
+    
     /**
       * The current extent.
       * @api stable
       */
     var extent: Extent_ = js.native
   }
-  
 }
-

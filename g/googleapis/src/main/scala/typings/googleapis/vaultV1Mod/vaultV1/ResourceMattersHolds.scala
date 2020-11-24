@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vault/v1", "vault_v1.Resource$Matters$Holds")
 @js.native
 class ResourceMattersHolds protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var accounts: ResourceMattersHoldsAccounts = js.native
-  var context: APIRequestContext = js.native
+  
   /**
     * vault.matters.holds.addHeldAccounts
     * @desc Adds HeldAccounts to a hold. Returns a list of accounts that have
@@ -49,6 +50,9 @@ class ResourceMattersHolds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAddHeldAccountsResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * vault.matters.holds.create
     * @desc Creates a hold in the given matter.
@@ -78,6 +82,7 @@ class ResourceMattersHolds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHold]
   ): Unit = js.native
+  
   /**
     * vault.matters.holds.delete
     * @desc Removes a hold by ID. This will release any HeldAccounts on this
@@ -108,6 +113,7 @@ class ResourceMattersHolds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * vault.matters.holds.get
     * @desc Gets a hold by ID.
@@ -138,6 +144,7 @@ class ResourceMattersHolds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHold]
   ): Unit = js.native
+  
   /**
     * vault.matters.holds.list
     * @desc Lists holds within a matter. An empty page token in
@@ -170,6 +177,7 @@ class ResourceMattersHolds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListHoldsResponse]
   ): Unit = js.native
+  
   /**
     * vault.matters.holds.removeHeldAccounts
     * @desc Removes HeldAccounts from a hold. Returns a list of statuses in the
@@ -205,6 +213,7 @@ class ResourceMattersHolds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRemoveHeldAccountsResponse]
   ): Unit = js.native
+  
   /**
     * vault.matters.holds.update
     * @desc Updates the OU and/or query parameters of a hold. You cannot add
@@ -238,4 +247,3 @@ class ResourceMattersHolds protected () extends js.Object {
     callback: BodyResponseCallback[SchemaHold]
   ): Unit = js.native
 }
-

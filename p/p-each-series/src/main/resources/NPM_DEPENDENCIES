@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-each-series" : "2.1.0"
+      "p-each-series" : "2.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "p-each-series" : "2.1.0"
+      "p-each-series" : "2.2.0"
     }
   ],
   "compile-devDependencies" : [

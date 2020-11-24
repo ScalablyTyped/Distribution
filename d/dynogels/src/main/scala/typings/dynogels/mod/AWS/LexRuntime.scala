@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.lexruntimeMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.LexRuntime")
 @js.native
@@ -14,4 +14,3 @@ class LexRuntime ()
   extends typings.awsSdk.mod.LexRuntime {
   def this(options: ClientConfiguration) = this()
 }
-

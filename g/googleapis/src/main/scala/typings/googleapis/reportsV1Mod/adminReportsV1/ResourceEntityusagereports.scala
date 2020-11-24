@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/reports_v1", "admin_reports_v1.Resource$Entityusagereports")
 @js.native
 class ResourceEntityusagereports protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * reports.entityUsageReports.get
     * @desc Retrieves a report which is a collection of properties / statistics
@@ -50,4 +52,3 @@ class ResourceEntityusagereports protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUsageReports]
   ): Unit = js.native
 }
-

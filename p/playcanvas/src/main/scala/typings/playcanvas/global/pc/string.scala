@@ -2,7 +2,7 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Extended String API.
@@ -10,18 +10,22 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.string")
 @js.native
 object string extends js.Object {
+  
   /**
     * All ASCII letters.
     */
   val ASCII_LETTERS: String = js.native
+  
   /**
     * All lowercase letters.
     */
   val ASCII_LOWERCASE: String = js.native
+  
   /**
     * All uppercase letters.
     */
   val ASCII_UPPERCASE: String = js.native
+  
   /**
     * Return a string with {n} replaced with the n-th argument.
     * @example
@@ -33,6 +37,7 @@ object string extends js.Object {
     */
   def format(s: String): String = js.native
   def format(s: String, arguments: js.Any): String = js.native
+  
   /**
     * Get the string for a given code point or set of code points. Polyfill for
     * [`fromCodePoint`]{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint}.
@@ -40,6 +45,7 @@ object string extends js.Object {
     * @returns The converted string.
     */
   def fromCodePoint(args: Double*): String = js.native
+  
   /**
     * Get the code point number for a character in a string. Polyfill for
     * [`codePointAt`]{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt}.
@@ -49,12 +55,14 @@ object string extends js.Object {
     */
   def getCodePoint(string: String): Double = js.native
   def getCodePoint(string: String, i: Double): Double = js.native
+  
   /**
     * Gets an array of all code points in a string.
     * @param string - The string to get code points from.
     * @returns The code points in the string.
     */
   def getCodePoints(string: String): js.Array[Double] = js.native
+  
   /**
     * Gets an array of all grapheme clusters (visible symbols) in a string. This is needed because
     * some symbols (such as emoji or accented characters) are actually made up of multiple character codes.
@@ -62,6 +70,7 @@ object string extends js.Object {
     * @returns The symbols in the string.
     */
   def getSymbols(string: String): js.Array[String] = js.native
+  
   /**
     * Convert a string value to a boolean. In non-strict mode (the default), 'true' is converted to true, all other values
     * are converted to false. In strict mode, 'true' is converted to true, 'false' is converted to false, all other values will throw
@@ -73,4 +82,3 @@ object string extends js.Object {
   def toBool(s: String): Boolean = js.native
   def toBool(s: String, strict: Boolean): Boolean = js.native
 }
-

@@ -28,7 +28,7 @@ import typings.phaser.Phaser.Types.Physics.Matter.MatterWorldConfig
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Phaser Matter plugin provides the ability to use the Matter JS Physics Engine within your Phaser games.
@@ -81,6 +81,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MatterPhysics extends js.Object {
+  
   /**
     * An instance of the Matter Factory. This class provides lots of functions for creating a
     * wide variety of physics objects and adds them automatically to the Matter World.
@@ -90,153 +91,7 @@ trait MatterPhysics extends js.Object {
     * perfectly possible to create and add components to the Matter world without using it.
     */
   var add: Factory = js.native
-  /**
-    * A reference to the `Matter.Axes` module.
-    * 
-    * The `Matter.Axes` module contains methods for creating and manipulating sets of axes.
-    */
-  var axes: AxesFactory = js.native
-  /**
-    * A reference to the `Matter.Bodies` module.
-    * 
-    * The `Matter.Bodies` module contains factory methods for creating rigid bodies
-    * with commonly used body configurations (such as rectangles, circles and other polygons).
-    */
-  var bodies: BodiesFactory = js.native
-  /**
-    * A reference to the `Matter.Body` module.
-    * 
-    * The `Matter.Body` module contains methods for creating and manipulating body models.
-    * A `Matter.Body` is a rigid body that can be simulated by a `Matter.Engine`.
-    * Factories for commonly used body configurations (such as rectangles, circles and other polygons) can be found in the `Bodies` module.
-    */
-  var body: BodyFactory = js.native
-  /**
-    * An instance of the Body Bounds class. This class contains functions used for getting the
-    * world position from various points around the bounds of a physics body.
-    */
-  var bodyBounds: BodyBounds = js.native
-  /**
-    * A reference to the `Matter.Bounds` module.
-    * 
-    * The `Matter.Bounds` module contains methods for creating and manipulating axis-aligned bounding boxes (AABB).
-    */
-  var bounds: BoundsFactory = js.native
-  /**
-    * A reference to the `Matter.Composite` module.
-    * 
-    * The `Matter.Composite` module contains methods for creating and manipulating composite bodies.
-    * A composite body is a collection of `Matter.Body`, `Matter.Constraint` and other `Matter.Composite`, therefore composites form a tree structure.
-    * It is important to use the functions in this module to modify composites, rather than directly modifying their properties.
-    * Note that the `Matter.World` object is also a type of `Matter.Composite` and as such all composite methods here can also operate on a `Matter.World`.
-    */
-  var composite: CompositeFactory = js.native
-  /**
-    * A reference to the `Matter.Composites` module.
-    * 
-    * The `Matter.Composites` module contains factory methods for creating composite bodies
-    * with commonly used configurations (such as stacks and chains).
-    */
-  var composites: CompositesFactory = js.native
-  /**
-    * The parsed Matter Configuration object.
-    */
-  var config: MatterWorldConfig = js.native
-  /**
-    * A reference to the `Matter.Constraint` module.
-    * 
-    * The `Matter.Constraint` module contains methods for creating and manipulating constraints.
-    * Constraints are used for specifying that a fixed distance must be maintained between two bodies (or a body and a fixed world-space position).
-    * The stiffness of constraints can be modified to create springs or elastic.
-    */
-  var constraint: ConstraintFactory = js.native
-  /**
-    * A reference to the `Matter.Detector` module.
-    * 
-    * The `Matter.Detector` module contains methods for detecting collisions given a set of pairs.
-    */
-  var detector: DetectorFactory = js.native
-  /**
-    * A reference to the `Matter.Grid` module.
-    * 
-    * The `Matter.Grid` module contains methods for creating and manipulating collision broadphase grid structures.
-    */
-  var grid: GridFactory = js.native
-  /**
-    * A reference to the `Matter.Pair` module.
-    * 
-    * The `Matter.Pair` module contains methods for creating and manipulating collision pairs.
-    */
-  var pair: PairFactory = js.native
-  /**
-    * A reference to the `Matter.Pairs` module.
-    * 
-    * The `Matter.Pairs` module contains methods for creating and manipulating collision pair sets.
-    */
-  var pairs: PairsFactory = js.native
-  /**
-    * A reference to the `Matter.Query` module.
-    * 
-    * The `Matter.Query` module contains methods for performing collision queries.
-    */
-  var query: QueryFactory = js.native
-  /**
-    * A reference to the `Matter.Resolver` module.
-    * 
-    * The `Matter.Resolver` module contains methods for resolving collision pairs.
-    */
-  var resolver: ResolverFactory = js.native
-  /**
-    * A reference to the `Matter.SAT` module.
-    * 
-    * The `Matter.SAT` module contains methods for detecting collisions using the Separating Axis Theorem.
-    */
-  var sat: SATFactory = js.native
-  /**
-    * The Phaser Scene that owns this Matter Physics instance
-    */
-  var scene: Scene = js.native
-  /**
-    * A reference to the `Matter.Svg` module.
-    * 
-    * The `Matter.Svg` module contains methods for converting SVG images into an array of vector points.
-    * 
-    * To use this module you also need the SVGPathSeg polyfill: https://github.com/progers/pathseg
-    */
-  var svg: SvgFactory = js.native
-  /**
-    * A reference to the Scene Systems that belong to the Scene owning this Matter Physics instance.
-    */
-  var systems: Systems = js.native
-  /**
-    * A reference to the `Matter.Vector` module.
-    * 
-    * The `Matter.Vector` module contains methods for creating and manipulating vectors.
-    * Vectors are the basis of all the geometry related operations in the engine.
-    * A `Matter.Vector` object is of the form `{ x: 0, y: 0 }`.
-    */
-  var vector: VectorFactory = js.native
-  /**
-    * A reference to the `Matter.Vertices` module.
-    * 
-    * The `Matter.Vertices` module contains methods for creating and manipulating sets of vertices.
-    * A set of vertices is an array of `Matter.Vector` with additional indexing properties inserted by `Vertices.create`.
-    * A `Matter.Body` maintains a set of vertices to represent the shape of the object (its convex hull).
-    */
-  var vertices: VerticesFactory = js.native
-  /**
-    * A reference to the `Matter.Vertices` module.
-    * 
-    * The `Matter.Vertices` module contains methods for creating and manipulating sets of vertices.
-    * A set of vertices is an array of `Matter.Vector` with additional indexing properties inserted by `Vertices.create`.
-    * A `Matter.Body` maintains a set of vertices to represent the shape of the object (its convex hull).
-    */
-  var verts: VerticesFactory = js.native
-  /**
-    * An instance of the Matter World class. This class is responsible for the updating of the
-    * Matter Physics world, as well as handling debug drawing functions.
-    */
-  var world: World = js.native
+  
   /**
     * Aligns a Body, or Matter Game Object, against the given coordinates.
     * 
@@ -263,6 +118,7 @@ trait MatterPhysics extends js.Object {
     * @param align One of the `Phaser.Display.Align` constants, such as `Phaser.Display.Align.TOP_LEFT`.
     */
   def alignBody(body: MatterBody, x: Double, y: Double, align: integer): this.type = js.native
+  
   def applyForce(bodies: js.Array[MatterBody], force: Vector2Like): this.type = js.native
   /**
     * Applies a force to a body, at the bodies current position, including resulting torque.
@@ -270,6 +126,7 @@ trait MatterPhysics extends js.Object {
     * @param force A Vector that specifies the force to apply.
     */
   def applyForce(bodies: MatterBody, force: Vector2Like): this.type = js.native
+  
   def applyForceFromAngle(bodies: js.Array[MatterBody], speed: Double): this.type = js.native
   def applyForceFromAngle(bodies: js.Array[MatterBody], speed: Double, angle: Double): this.type = js.native
   /**
@@ -283,6 +140,7 @@ trait MatterPhysics extends js.Object {
     */
   def applyForceFromAngle(bodies: MatterBody, speed: Double): this.type = js.native
   def applyForceFromAngle(bodies: MatterBody, speed: Double, angle: Double): this.type = js.native
+  
   def applyForceFromPosition(bodies: js.Array[MatterBody], position: Vector2Like, speed: Double): this.type = js.native
   def applyForceFromPosition(bodies: js.Array[MatterBody], position: Vector2Like, speed: Double, angle: Double): this.type = js.native
   /**
@@ -297,6 +155,76 @@ trait MatterPhysics extends js.Object {
     */
   def applyForceFromPosition(bodies: MatterBody, position: Vector2Like, speed: Double): this.type = js.native
   def applyForceFromPosition(bodies: MatterBody, position: Vector2Like, speed: Double, angle: Double): this.type = js.native
+  
+  /**
+    * A reference to the `Matter.Axes` module.
+    * 
+    * The `Matter.Axes` module contains methods for creating and manipulating sets of axes.
+    */
+  var axes: AxesFactory = js.native
+  
+  /**
+    * A reference to the `Matter.Bodies` module.
+    * 
+    * The `Matter.Bodies` module contains factory methods for creating rigid bodies
+    * with commonly used body configurations (such as rectangles, circles and other polygons).
+    */
+  var bodies: BodiesFactory = js.native
+  
+  /**
+    * A reference to the `Matter.Body` module.
+    * 
+    * The `Matter.Body` module contains methods for creating and manipulating body models.
+    * A `Matter.Body` is a rigid body that can be simulated by a `Matter.Engine`.
+    * Factories for commonly used body configurations (such as rectangles, circles and other polygons) can be found in the `Bodies` module.
+    */
+  var body: BodyFactory = js.native
+  
+  /**
+    * An instance of the Body Bounds class. This class contains functions used for getting the
+    * world position from various points around the bounds of a physics body.
+    */
+  var bodyBounds: BodyBounds = js.native
+  
+  /**
+    * A reference to the `Matter.Bounds` module.
+    * 
+    * The `Matter.Bounds` module contains methods for creating and manipulating axis-aligned bounding boxes (AABB).
+    */
+  var bounds: BoundsFactory = js.native
+  
+  /**
+    * A reference to the `Matter.Composite` module.
+    * 
+    * The `Matter.Composite` module contains methods for creating and manipulating composite bodies.
+    * A composite body is a collection of `Matter.Body`, `Matter.Constraint` and other `Matter.Composite`, therefore composites form a tree structure.
+    * It is important to use the functions in this module to modify composites, rather than directly modifying their properties.
+    * Note that the `Matter.World` object is also a type of `Matter.Composite` and as such all composite methods here can also operate on a `Matter.World`.
+    */
+  var composite: CompositeFactory = js.native
+  
+  /**
+    * A reference to the `Matter.Composites` module.
+    * 
+    * The `Matter.Composites` module contains factory methods for creating composite bodies
+    * with commonly used configurations (such as stacks and chains).
+    */
+  var composites: CompositesFactory = js.native
+  
+  /**
+    * The parsed Matter Configuration object.
+    */
+  var config: MatterWorldConfig = js.native
+  
+  /**
+    * A reference to the `Matter.Constraint` module.
+    * 
+    * The `Matter.Constraint` module contains methods for creating and manipulating constraints.
+    * Constraints are used for specifying that a fixed distance must be maintained between two bodies (or a body and a fixed world-space position).
+    * The stiffness of constraints can be modified to create springs or elastic.
+    */
+  var constraint: ConstraintFactory = js.native
+  
   def containsPoint(body: js.Array[MatterBody], x: Double, y: Double): Boolean = js.native
   /**
     * Checks if the vertices of the given body, or an array of bodies, contains the given point, or not.
@@ -313,6 +241,14 @@ trait MatterPhysics extends js.Object {
     * @param y The vertical coordinate of the point.
     */
   def containsPoint(body: MatterBody, x: Double, y: Double): Boolean = js.native
+  
+  /**
+    * A reference to the `Matter.Detector` module.
+    * 
+    * The `Matter.Detector` module contains methods for detecting collisions given a set of pairs.
+    */
+  var detector: DetectorFactory = js.native
+  
   /**
     * Enables the Matter Attractors Plugin.
     * 
@@ -325,6 +261,7 @@ trait MatterPhysics extends js.Object {
     * However, you can also call it directly from within your game.
     */
   def enableAttractorPlugin(): this.type = js.native
+  
   /**
     * Enables the Matter Collision Events Plugin.
     * 
@@ -352,6 +289,7 @@ trait MatterPhysics extends js.Object {
     * https://github.com/dxu/matter-collision-events
     */
   def enableCollisionEventsPlugin(): this.type = js.native
+  
   /**
     * Enables the Matter Wrap Plugin.
     * 
@@ -365,15 +303,18 @@ trait MatterPhysics extends js.Object {
     * However, you can also call it directly from within your game.
     */
   def enableWrapPlugin(): this.type = js.native
+  
   /**
     * This internal method is called when this class starts and retrieves the final Matter World Config.
     */
   def getConfig(): MatterWorldConfig = js.native
+  
   /**
     * Returns the length of the given constraint, which is the distance between the two points.
     * @param constraint The constraint to get the length from.
     */
   def getConstraintLength(constraint: ConstraintType): Double = js.native
+  
   /**
     * Takes an array and returns a new array made from all of the Matter Bodies found in the original array.
     * 
@@ -385,6 +326,14 @@ trait MatterPhysics extends js.Object {
     */
   def getMatterBodies(): js.Array[BodyType] = js.native
   def getMatterBodies(bodies: js.Array[_]): js.Array[BodyType] = js.native
+  
+  /**
+    * A reference to the `Matter.Grid` module.
+    * 
+    * The `Matter.Grid` module contains methods for creating and manipulating collision broadphase grid structures.
+    */
+  var grid: GridFactory = js.native
+  
   /**
     * Checks the given Matter Body to see if it intersects with any of the given bodies.
     * 
@@ -394,6 +343,7 @@ trait MatterPhysics extends js.Object {
     */
   def intersectBody(body: MatterBody): js.Array[MatterBody] = js.native
   def intersectBody(body: MatterBody, bodies: js.Array[MatterBody]): js.Array[MatterBody] = js.native
+  
   /**
     * Checks the given coordinates to see if any vertices of the given bodies contain it.
     * 
@@ -408,6 +358,7 @@ trait MatterPhysics extends js.Object {
     */
   def intersectPoint(x: Double, y: Double): js.Array[MatterBody] = js.native
   def intersectPoint(x: Double, y: Double, bodies: js.Array[MatterBody]): js.Array[MatterBody] = js.native
+  
   /**
     * Checks the given ray segment to see if any vertices of the given bodies intersect with it.
     * 
@@ -432,6 +383,7 @@ trait MatterPhysics extends js.Object {
   ): js.Array[MatterBody] = js.native
   def intersectRay(x1: Double, y1: Double, x2: Double, y2: Double, rayWidth: Double): js.Array[MatterBody] = js.native
   def intersectRay(x1: Double, y1: Double, x2: Double, y2: Double, rayWidth: Double, bodies: js.Array[MatterBody]): js.Array[MatterBody] = js.native
+  
   /**
     * Checks the given rectangular area to see if any vertices of the given bodies intersect with it.
     * Or, if the `outside` parameter is set to `true`, it checks to see which bodies do not
@@ -463,6 +415,7 @@ trait MatterPhysics extends js.Object {
     outside: Boolean,
     bodies: js.Array[MatterBody]
   ): js.Array[MatterBody] = js.native
+  
   def overlap(target: js.Array[MatterBody]): Boolean = js.native
   def overlap(
     target: js.Array[MatterBody],
@@ -658,26 +611,71 @@ trait MatterPhysics extends js.Object {
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
   ): Boolean = js.native
+  
+  /**
+    * A reference to the `Matter.Pair` module.
+    * 
+    * The `Matter.Pair` module contains methods for creating and manipulating collision pairs.
+    */
+  var pair: PairFactory = js.native
+  
+  /**
+    * A reference to the `Matter.Pairs` module.
+    * 
+    * The `Matter.Pairs` module contains methods for creating and manipulating collision pair sets.
+    */
+  var pairs: PairsFactory = js.native
+  
   /**
     * Pauses the Matter World instance and sets `enabled` to `false`.
     * 
     * A paused world will not run any simulations for the duration it is paused.
     */
   def pause(): World = js.native
+  
+  /**
+    * A reference to the `Matter.Query` module.
+    * 
+    * The `Matter.Query` module contains methods for performing collision queries.
+    */
+  var query: QueryFactory = js.native
+  
+  /**
+    * A reference to the `Matter.Resolver` module.
+    * 
+    * The `Matter.Resolver` module contains methods for resolving collision pairs.
+    */
+  var resolver: ResolverFactory = js.native
+  
   /**
     * Resumes this Matter World instance from a paused state and sets `enabled` to `true`.
     */
   def resume(): World = js.native
+  
+  /**
+    * A reference to the `Matter.SAT` module.
+    * 
+    * The `Matter.SAT` module contains methods for detecting collisions using the Separating Axis Theorem.
+    */
+  var sat: SATFactory = js.native
+  
+  /**
+    * The Phaser Scene that owns this Matter Physics instance
+    */
+  var scene: Scene = js.native
+  
   /**
     * Sets the Matter Engine to run at fixed timestep of 30Hz and enables `autoUpdate`.
     * If you have set a custom `getDelta` function then this will override it.
     */
   def set30Hz(): this.type = js.native
+  
   /**
     * Sets the Matter Engine to run at fixed timestep of 60Hz and enables `autoUpdate`.
     * If you have set a custom `getDelta` function then this will override it.
     */
   def set60Hz(): this.type = js.native
+  
   def setAngularVelocity(bodies: js.Array[MatterBody], value: Double): this.type = js.native
   /**
     * Sets the angular velocity of the bodies instantly.
@@ -686,6 +684,7 @@ trait MatterPhysics extends js.Object {
     * @param value The angular velocity.
     */
   def setAngularVelocity(bodies: MatterBody, value: Double): this.type = js.native
+  
   def setCollidesWith(bodies: js.Array[MatterBody], categories: js.Array[Double]): this.type = js.native
   /**
     * Sets the collision filter mask of all given Matter Bodies to the given value.
@@ -697,6 +696,7 @@ trait MatterPhysics extends js.Object {
     * @param categories A unique category bitfield, or an array of them.
     */
   def setCollidesWith(bodies: js.Array[MatterBody], categories: Double): this.type = js.native
+  
   /**
     * Sets the collision filter category of all given Matter Bodies to the given value.
     * 
@@ -708,6 +708,7 @@ trait MatterPhysics extends js.Object {
     * @param value Unique category bitfield.
     */
   def setCollisionCategory(bodies: js.Array[MatterBody], value: Double): this.type = js.native
+  
   /**
     * Sets the collision filter group of all given Matter Bodies to the given value.
     * 
@@ -720,6 +721,7 @@ trait MatterPhysics extends js.Object {
     * @param value Unique group index.
     */
   def setCollisionGroup(bodies: js.Array[MatterBody], value: Double): this.type = js.native
+  
   def setVelocity(bodies: js.Array[MatterBody], x: Double, y: Double): this.type = js.native
   /**
     * Sets both the horizontal and vertical linear velocity of the physics bodies.
@@ -728,6 +730,7 @@ trait MatterPhysics extends js.Object {
     * @param y The vertical linear velocity value.
     */
   def setVelocity(bodies: MatterBody, x: Double, y: Double): this.type = js.native
+  
   def setVelocityX(bodies: js.Array[MatterBody], x: Double): this.type = js.native
   /**
     * Sets just the horizontal linear velocity of the physics bodies.
@@ -736,6 +739,7 @@ trait MatterPhysics extends js.Object {
     * @param x The horizontal linear velocity value.
     */
   def setVelocityX(bodies: MatterBody, x: Double): this.type = js.native
+  
   def setVelocityY(bodies: js.Array[MatterBody], y: Double): this.type = js.native
   /**
     * Sets just the vertical linear velocity of the physics bodies.
@@ -744,6 +748,7 @@ trait MatterPhysics extends js.Object {
     * @param y The vertical linear velocity value.
     */
   def setVelocityY(bodies: MatterBody, y: Double): this.type = js.native
+  
   /**
     * Manually advances the physics simulation by one iteration.
     * 
@@ -771,5 +776,51 @@ trait MatterPhysics extends js.Object {
   def step(delta: js.UndefOr[scala.Nothing], correction: Double): Unit = js.native
   def step(delta: Double): Unit = js.native
   def step(delta: Double, correction: Double): Unit = js.native
+  
+  /**
+    * A reference to the `Matter.Svg` module.
+    * 
+    * The `Matter.Svg` module contains methods for converting SVG images into an array of vector points.
+    * 
+    * To use this module you also need the SVGPathSeg polyfill: https://github.com/progers/pathseg
+    */
+  var svg: SvgFactory = js.native
+  
+  /**
+    * A reference to the Scene Systems that belong to the Scene owning this Matter Physics instance.
+    */
+  var systems: Systems = js.native
+  
+  /**
+    * A reference to the `Matter.Vector` module.
+    * 
+    * The `Matter.Vector` module contains methods for creating and manipulating vectors.
+    * Vectors are the basis of all the geometry related operations in the engine.
+    * A `Matter.Vector` object is of the form `{ x: 0, y: 0 }`.
+    */
+  var vector: VectorFactory = js.native
+  
+  /**
+    * A reference to the `Matter.Vertices` module.
+    * 
+    * The `Matter.Vertices` module contains methods for creating and manipulating sets of vertices.
+    * A set of vertices is an array of `Matter.Vector` with additional indexing properties inserted by `Vertices.create`.
+    * A `Matter.Body` maintains a set of vertices to represent the shape of the object (its convex hull).
+    */
+  var vertices: VerticesFactory = js.native
+  
+  /**
+    * A reference to the `Matter.Vertices` module.
+    * 
+    * The `Matter.Vertices` module contains methods for creating and manipulating sets of vertices.
+    * A set of vertices is an array of `Matter.Vector` with additional indexing properties inserted by `Vertices.create`.
+    * A `Matter.Body` maintains a set of vertices to represent the shape of the object (its convex hull).
+    */
+  var verts: VerticesFactory = js.native
+  
+  /**
+    * An instance of the Matter World class. This class is responsible for the updating of the
+    * Matter Physics world, as well as handling debug drawing functions.
+    */
+  var world: World = js.native
 }
-

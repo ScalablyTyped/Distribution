@@ -6,9 +6,8 @@ import typings.themeUiComponents.mod.ForwardRef
 import typings.themeUiComponents.mod.MessageProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("theme-ui", "Message")
 @js.native
 object Message extends TopLevel[ForwardRef[HTMLDivElement, MessageProps]]
-

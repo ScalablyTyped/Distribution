@@ -4,9 +4,70 @@ import typings.pkgcloud.mod.Providers
 import typings.pkgcloud.mod.RackspaceRegions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pkgcloudStrings {
+  
+  @scala.inline
+  def DFW: DFW = "DFW".asInstanceOf[DFW]
+  
+  @scala.inline
+  def HKG: HKG = "HKG".asInstanceOf[HKG]
+  
+  @scala.inline
+  def IAD: IAD = "IAD".asInstanceOf[IAD]
+  
+  @scala.inline
+  def LON: LON = "LON".asInstanceOf[LON]
+  
+  @scala.inline
+  def ORD: ORD = "ORD".asInstanceOf[ORD]
+  
+  @scala.inline
+  def SYD: SYD = "SYD".asInstanceOf[SYD]
+  
+  @scala.inline
+  def amazon: amazon = "amazon".asInstanceOf[amazon]
+  
+  @scala.inline
+  def azure: azure = "azure".asInstanceOf[azure]
+  
+  @scala.inline
+  def digitalocean: digitalocean = "digitalocean".asInstanceOf[digitalocean]
+  
+  @scala.inline
+  def google: google = "google".asInstanceOf[google]
+  
+  @scala.inline
+  def hp: hp = "hp".asInstanceOf[hp]
+  
+  @scala.inline
+  def iriscouch: iriscouch = "iriscouch".asInstanceOf[iriscouch]
+  
+  @scala.inline
+  def joyent: joyent = "joyent".asInstanceOf[joyent]
+  
+  @scala.inline
+  def mongohq: mongohq = "mongohq".asInstanceOf[mongohq]
+  
+  @scala.inline
+  def mongolab: mongolab = "mongolab".asInstanceOf[mongolab]
+  
+  @scala.inline
+  def oneandone: oneandone = "oneandone".asInstanceOf[oneandone]
+  
+  @scala.inline
+  def openstack: openstack = "openstack".asInstanceOf[openstack]
+  
+  @scala.inline
+  def rackspace: rackspace = "rackspace".asInstanceOf[rackspace]
+  
+  @scala.inline
+  def redistogo: redistogo = "redistogo".asInstanceOf[redistogo]
+  
+  @scala.inline
+  def telefonic: telefonic = "telefonic".asInstanceOf[telefonic]
+  
   @js.native
   sealed trait DFW extends RackspaceRegions
   
@@ -66,46 +127,4 @@ object pkgcloudStrings {
   
   @js.native
   sealed trait telefonic extends Providers
-  
-  @scala.inline
-  def DFW: DFW = "DFW".asInstanceOf[DFW]
-  @scala.inline
-  def HKG: HKG = "HKG".asInstanceOf[HKG]
-  @scala.inline
-  def IAD: IAD = "IAD".asInstanceOf[IAD]
-  @scala.inline
-  def LON: LON = "LON".asInstanceOf[LON]
-  @scala.inline
-  def ORD: ORD = "ORD".asInstanceOf[ORD]
-  @scala.inline
-  def SYD: SYD = "SYD".asInstanceOf[SYD]
-  @scala.inline
-  def amazon: amazon = "amazon".asInstanceOf[amazon]
-  @scala.inline
-  def azure: azure = "azure".asInstanceOf[azure]
-  @scala.inline
-  def digitalocean: digitalocean = "digitalocean".asInstanceOf[digitalocean]
-  @scala.inline
-  def google: google = "google".asInstanceOf[google]
-  @scala.inline
-  def hp: hp = "hp".asInstanceOf[hp]
-  @scala.inline
-  def iriscouch: iriscouch = "iriscouch".asInstanceOf[iriscouch]
-  @scala.inline
-  def joyent: joyent = "joyent".asInstanceOf[joyent]
-  @scala.inline
-  def mongohq: mongohq = "mongohq".asInstanceOf[mongohq]
-  @scala.inline
-  def mongolab: mongolab = "mongolab".asInstanceOf[mongolab]
-  @scala.inline
-  def oneandone: oneandone = "oneandone".asInstanceOf[oneandone]
-  @scala.inline
-  def openstack: openstack = "openstack".asInstanceOf[openstack]
-  @scala.inline
-  def rackspace: rackspace = "rackspace".asInstanceOf[rackspace]
-  @scala.inline
-  def redistogo: redistogo = "redistogo".asInstanceOf[redistogo]
-  @scala.inline
-  def telefonic: telefonic = "telefonic".asInstanceOf[telefonic]
 }
-

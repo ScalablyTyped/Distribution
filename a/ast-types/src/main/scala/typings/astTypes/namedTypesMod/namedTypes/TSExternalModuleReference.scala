@@ -1,28 +1,35 @@
 package typings.astTypes.namedTypesMod.namedTypes
 
 import org.scalablytyped.runtime.TopLevel
+import typings.astTypes.kindsMod.CommentKind
 import typings.astTypes.kindsMod.DeclarationKind
 import typings.astTypes.kindsMod.NodeKind
 import typings.astTypes.kindsMod.PrintableKind
+import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.StatementKind
 import typings.astTypes.kindsMod.StringLiteralKind
 import typings.astTypes.typesMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/namedTypes.namedTypes.Declaration, 'type'> ]: ast-types.ast-types/gen/namedTypes.namedTypes.Declaration[P]} */ trait TSExternalModuleReference
+/* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Declaration, 'type'> */
+@js.native
+trait TSExternalModuleReference
   extends ASTNode
      with DeclarationKind
      with NodeKind
      with PrintableKind
      with StatementKind {
-  var expression: StringLiteralKind
-  var `type`: typings.astTypes.astTypesStrings.TSExternalModuleReference
+  
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  
+  var expression: StringLiteralKind = js.native
+  
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  
+  var `type`: typings.astTypes.astTypesStrings.TSExternalModuleReference = js.native
 }
-
 @JSImport("ast-types/gen/namedTypes", "namedTypes.TSExternalModuleReference")
 @js.native
 object TSExternalModuleReference extends TopLevel[Type[TSExternalModuleReference]]
-

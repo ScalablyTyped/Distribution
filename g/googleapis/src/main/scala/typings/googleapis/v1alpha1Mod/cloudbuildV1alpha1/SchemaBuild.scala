@@ -3,7 +3,7 @@ package typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A build resource in the Cloud Build API.  At a high level, a `Build`
@@ -20,30 +20,36 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaBuild extends js.Object {
+  
   /**
     * Artifacts produced by the build that should be uploaded upon successful
     * completion of all build steps.
     */
   var artifacts: js.UndefOr[SchemaArtifacts] = js.native
+  
   /**
     * Output only. The ID of the `BuildTrigger` that triggered this build, if
     * it was triggered automatically.
     */
   var buildTriggerId: js.UndefOr[String] = js.native
+  
   /**
     * Output only. Time at which the request to create the build was received.
     */
   var createTime: js.UndefOr[String] = js.native
+  
   /**
     * Output only. Time at which execution of the build was finished.  The
     * difference between finish_time and start_time is the duration of the
     * build&#39;s execution.
     */
   var finishTime: js.UndefOr[String] = js.native
+  
   /**
     * Output only. Unique identifier of the build.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * A list of images to be pushed upon the successful completion of all build
     * steps.  The images are pushed using the builder service account&#39;s
@@ -52,10 +58,12 @@ trait SchemaBuild extends js.Object {
     * pushed, the build status is marked `FAILURE`.
     */
   var images: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Output only. URL to logs for this build in Google Cloud Console.
     */
   var logUrl: js.UndefOr[String] = js.native
+  
   /**
     * Google Cloud Storage bucket where logs should be written (see [Bucket
     * Name
@@ -64,60 +72,74 @@ trait SchemaBuild extends js.Object {
     * `${logs_bucket}/log-${build_id}.txt`.
     */
   var logsBucket: js.UndefOr[String] = js.native
+  
   /**
     * Special options for this build.
     */
   var options: js.UndefOr[SchemaBuildOptions] = js.native
+  
   /**
     * Output only. ID of the project.
     */
   var projectId: js.UndefOr[String] = js.native
+  
   /**
     * Output only. Results of the build.
     */
   var results: js.UndefOr[SchemaResults] = js.native
+  
   /**
     * Secrets to decrypt using Cloud Key Management Service.
     */
   var secrets: js.UndefOr[js.Array[SchemaSecret]] = js.native
+  
   /**
     * The location of the source files to build.
     */
   var source: js.UndefOr[SchemaSource] = js.native
+  
   /**
     * Output only. A permanent fixed identifier for source.
     */
   var sourceProvenance: js.UndefOr[SchemaSourceProvenance] = js.native
+  
   /**
     * Output only. Time at which execution of the build was started.
     */
   var startTime: js.UndefOr[String] = js.native
+  
   /**
     * Output only. Status of the build.
     */
   var status: js.UndefOr[String] = js.native
+  
   /**
     * Output only. Customer-readable message about the current status.
     */
   var statusDetail: js.UndefOr[String] = js.native
+  
   /**
     * Required. The operations to be performed on the workspace.
     */
   var steps: js.UndefOr[js.Array[SchemaBuildStep]] = js.native
+  
   /**
     * Substitutions data for `Build` resource.
     */
   var substitutions: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * Tags for annotation of a `Build`. These are not docker tags.
     */
   var tags: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Amount of time that this build should be allowed to run, to second
     * granularity. If this amount of time elapses, work on the build will cease
     * and the build status will be `TIMEOUT`.  Default time is ten minutes.
     */
   var timeout: js.UndefOr[String] = js.native
+  
   /**
     * Output only. Stores timing information for phases of the build. Valid
     * keys are:  * BUILD: time to execute all build steps * PUSH: time to push
@@ -126,121 +148,171 @@ trait SchemaBuild extends js.Object {
     */
   var timing: js.UndefOr[StringDictionary[SchemaTimeSpan]] = js.native
 }
-
 object SchemaBuild {
+  
   @scala.inline
   def apply(): SchemaBuild = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuild]
   }
+  
   @scala.inline
   implicit class SchemaBuildOps[Self <: SchemaBuild] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setArtifacts(value: SchemaArtifacts): Self = this.set("artifacts", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteArtifacts: Self = this.set("artifacts", js.undefined)
+    
     @scala.inline
     def setBuildTriggerId(value: String): Self = this.set("buildTriggerId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBuildTriggerId: Self = this.set("buildTriggerId", js.undefined)
+    
     @scala.inline
     def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    
     @scala.inline
     def setFinishTime(value: String): Self = this.set("finishTime", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFinishTime: Self = this.set("finishTime", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setImagesVarargs(value: String*): Self = this.set("images", js.Array(value :_*))
+    
     @scala.inline
     def setImages(value: js.Array[String]): Self = this.set("images", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteImages: Self = this.set("images", js.undefined)
+    
     @scala.inline
     def setLogUrl(value: String): Self = this.set("logUrl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLogUrl: Self = this.set("logUrl", js.undefined)
+    
     @scala.inline
     def setLogsBucket(value: String): Self = this.set("logsBucket", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLogsBucket: Self = this.set("logsBucket", js.undefined)
+    
     @scala.inline
     def setOptions(value: SchemaBuildOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOptions: Self = this.set("options", js.undefined)
+    
     @scala.inline
     def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProjectId: Self = this.set("projectId", js.undefined)
+    
     @scala.inline
     def setResults(value: SchemaResults): Self = this.set("results", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResults: Self = this.set("results", js.undefined)
+    
     @scala.inline
     def setSecretsVarargs(value: SchemaSecret*): Self = this.set("secrets", js.Array(value :_*))
+    
     @scala.inline
     def setSecrets(value: js.Array[SchemaSecret]): Self = this.set("secrets", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSecrets: Self = this.set("secrets", js.undefined)
+    
     @scala.inline
     def setSource(value: SchemaSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSource: Self = this.set("source", js.undefined)
+    
     @scala.inline
     def setSourceProvenance(value: SchemaSourceProvenance): Self = this.set("sourceProvenance", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSourceProvenance: Self = this.set("sourceProvenance", js.undefined)
+    
     @scala.inline
     def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStartTime: Self = this.set("startTime", js.undefined)
+    
     @scala.inline
     def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStatus: Self = this.set("status", js.undefined)
+    
     @scala.inline
     def setStatusDetail(value: String): Self = this.set("statusDetail", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStatusDetail: Self = this.set("statusDetail", js.undefined)
+    
     @scala.inline
     def setStepsVarargs(value: SchemaBuildStep*): Self = this.set("steps", js.Array(value :_*))
+    
     @scala.inline
     def setSteps(value: js.Array[SchemaBuildStep]): Self = this.set("steps", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSteps: Self = this.set("steps", js.undefined)
+    
     @scala.inline
     def setSubstitutions(value: StringDictionary[String]): Self = this.set("substitutions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSubstitutions: Self = this.set("substitutions", js.undefined)
+    
     @scala.inline
     def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    
     @scala.inline
     def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTags: Self = this.set("tags", js.undefined)
+    
     @scala.inline
     def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTimeout: Self = this.set("timeout", js.undefined)
+    
     @scala.inline
     def setTiming(value: StringDictionary[SchemaTimeSpan]): Self = this.set("timing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTiming: Self = this.set("timing", js.undefined)
   }
-  
 }
-

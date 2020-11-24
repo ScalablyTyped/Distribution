@@ -4,7 +4,7 @@ import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Scenes.Systems
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Scene plugin that provides a {@link Phaser.GameObjects.LightsManager} for the Light2D pipeline.
@@ -29,17 +29,19 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait LightsPlugin extends LightsManager {
-  /**
-    * A reference to the Scene that this Lights Plugin belongs to.
-    */
-  var scene: Scene = js.native
-  /**
-    * A reference to the Scene's systems.
-    */
-  var systems: Systems = js.native
+  
   /**
     * Boot the Lights Plugin.
     */
   def boot(): Unit = js.native
+  
+  /**
+    * A reference to the Scene that this Lights Plugin belongs to.
+    */
+  var scene: Scene = js.native
+  
+  /**
+    * A reference to the Scene's systems.
+    */
+  var systems: Systems = js.native
 }
-

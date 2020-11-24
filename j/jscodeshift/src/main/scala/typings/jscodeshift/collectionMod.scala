@@ -6,13 +6,29 @@ import typings.jscodeshift.nodeMod.MutationMethods
 import typings.jscodeshift.nodeMod.TraversalMethods
 import typings.jscodeshift.variableDeclaratorMod.GlobalMethods
 import typings.jscodeshift.variableDeclaratorMod.TransformMethods
+import typings.recast.optionsMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jscodeshift/src/Collection", JSImport.Namespace)
 @js.native
 object collectionMod extends js.Object {
+  
+  def fromNodes(args: js.Any*): js.Any = js.native
+  
+  def fromPaths(args: js.Any*): js.Any = js.native
+  
+  def hasConflictingRegistration(args: js.Any*): js.Any = js.native
+  
+  def registerMethods(methods: js.Object): Unit = js.native
+  def registerMethods(
+    methods: js.Object,
+    `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
+  ): Unit = js.native
+  
+  def setDefaultCollectionType(args: js.Any*): js.Any = js.native
+  
   @js.native
   trait Collection[N]
     extends TraversalMethods
@@ -36,8 +52,7 @@ object collectionMod extends js.Object {
           ], 
           Collection[N]
         ] {
-    /** Returns the number of elements in this collection. */
-    var length: Double = js.native
+    
     /**
       * Returns a new collection containing only the element at position index.
       * In case of a negative index, the element is taken from the end:
@@ -45,12 +60,14 @@ object collectionMod extends js.Object {
       *   .at(-1) - last element
       */
     def at(index: Double): Collection[N] = js.native
+    
     /**
       * Tests whether all paths pass the test implemented by the provided callback.
       */
     def every(
       callback: js.Function3[/* path */ ASTPath[N], /* i */ Double, /* paths */ js.Array[ASTPath[N]], Boolean]
     ): Boolean = js.native
+    
     def filter(
       callback: js.Function3[/* path */ ASTPath[N], /* i */ Double, /* paths */ js.Array[ASTPath[N]], Boolean]
     ): Collection[N] = js.native
@@ -66,26 +83,35 @@ object collectionMod extends js.Object {
           /* is jscodeshift.jscodeshift/src/Collection.ASTPath<S> */ Boolean
         ]
     ): Collection[S] = js.native
+    
     /**
       * Executes callback for each node/path in the collection.
       */
     def forEach(
       callback: js.Function3[/* path */ ASTPath[N], /* i */ Double, /* paths */ js.Array[ASTPath[N]], Unit]
     ): this.type = js.native
+    
     /** Calls "get" on the first path (same as "collection.paths(0).get(...)"). */
     def get(fields: (String | Double)*): js.Any = js.native
+    
     def getAST(): js.Array[ASTPath[_]] = js.native
+    
     /**
       * Returns the type(s) of the collection. This is only used for unit tests,
       * don't think other consumers would need it.
       */
     def getTypes(): js.Array[String] = js.native
+    
     /**
       * Returns true if this collection has the type 'type'.
       */
     def isOfType(
       `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
     ): Boolean = js.native
+    
+    /** Returns the number of elements in this collection. */
+    var length: Double = js.native
+    
     /**
       * Executes the callback for every path in the collection and returns a new
       * collection from the return values (which must be paths).
@@ -116,37 +142,30 @@ object collectionMod extends js.Object {
         ],
       `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
     ): Collection[T] = js.native
+    
     /** Returns an array of AST nodes in this collection. */
     def nodes(): js.Array[N] = js.native
+    
     /** Returns an array of ASTPaths in this this collection. */
     def paths(): js.Array[ASTPath[N]] = js.native
+    
     /** Returns the number of elements in this collection. */
     def size(): Double = js.native
+    
     /**
       * Tests whether at-least one path passes the test implemented by the provided callback.
       */
     def some(
       callback: js.Function3[/* path */ ASTPath[N], /* i */ Double, /* paths */ js.Array[ASTPath[N]], Boolean]
     ): Boolean = js.native
+    
     /**
       * Converts the AST back to a string, using recast.
       * @param options directly passed to recast's printer
       */
     def toSource(): String = js.native
-    def toSource(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Options */ js.Any
-    ): String = js.native
+    def toSource(options: Options): String = js.native
   }
   
-  def fromNodes(args: js.Any*): js.Any = js.native
-  def fromPaths(args: js.Any*): js.Any = js.native
-  def hasConflictingRegistration(args: js.Any*): js.Any = js.native
-  def registerMethods(methods: js.Object): Unit = js.native
-  def registerMethods(
-    methods: js.Object,
-    `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
-  ): Unit = js.native
-  def setDefaultCollectionType(args: js.Any*): js.Any = js.native
   type ASTPath[N] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
 }
-

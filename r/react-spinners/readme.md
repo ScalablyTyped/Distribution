@@ -10,9 +10,9 @@ A collection of react loading spinners
 | ------------------ | :-------------: |
 | Full name          | react-spinners |
 | Keywords           | react-spinners, react-spinner, react, reactjs, loader, loaders, loading, spinner, spinners, halogen, progress, activity |
-| # releases         | 50 |
-| # dependents       | 119 |
-| # downloads        | 2735851 |
+| # releases         | 45 |
+| # dependents       | 162 |
+| # downloads        | 4518274 |
 | # stars            | 4 |
 
 ## Links

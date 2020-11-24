@@ -3,11 +3,12 @@ package typings.copy.mod
 import typings.vinyl.mod.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("copy", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(patterns: String, dir: String, callback: Callback): Unit = js.native
   /**
     * Copy a filepath, vinyl file, array of files, or glob of files to the
@@ -31,4 +32,3 @@ object ^ extends js.Object {
   def apply(patterns: File, dir: String, callback: Callback): Unit = js.native
   def apply(patterns: File, dir: String, options: Options, callback: Callback): Unit = js.native
 }
-

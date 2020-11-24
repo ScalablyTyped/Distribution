@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/containeranalysis/v1beta1", "containeranalysis_v1beta1.Resource$Projects$Occurrences")
 @js.native
 class ResourceProjectsOccurrences protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * containeranalysis.projects.occurrences.batchCreate
     * @desc Creates new occurrences in batch.
@@ -45,6 +45,9 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchCreateOccurrencesResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * containeranalysis.projects.occurrences.create
     * @desc Creates a new occurrence.
@@ -74,6 +77,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOccurrence]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.delete
     * @desc Deletes the specified occurrence. For example, use this method to
@@ -104,6 +108,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.get
     * @desc Gets the specified occurrence.
@@ -132,6 +137,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOccurrence]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.getIamPolicy
     * @desc Gets the access control policy for a note or an occurrence
@@ -169,6 +175,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.getNotes
     * @desc Gets the note attached to the specified occurrence. Consumer
@@ -199,6 +206,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNote]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.getVulnerabilitySummary
     * @desc Gets a summary of the number and severity of occurrences.
@@ -231,6 +239,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVulnerabilityOccurrencesSummary]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.list
     * @desc Lists occurrences for the specified project.
@@ -265,6 +274,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListOccurrencesResponse]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.patch
     * @desc Updates the specified occurrence.
@@ -295,6 +305,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOccurrence]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.setIamPolicy
     * @desc Sets the access control policy on the specified note or occurrence.
@@ -332,6 +343,7 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * containeranalysis.projects.occurrences.testIamPermissions
     * @desc Returns the permissions that a caller has on the specified note or
@@ -369,4 +381,3 @@ class ResourceProjectsOccurrences protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

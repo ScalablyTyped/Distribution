@@ -5,20 +5,24 @@ import typings.elasticElasticsearch.anon.Url
 import typings.elasticElasticsearch.connectionMod.AgentOptions
 import typings.elasticElasticsearch.connectionMod.default
 import typings.node.tlsMod.SecureContextOptions
+import typings.node.urlMod.URL_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@elastic/elasticsearch/lib/pool", "BaseConnectionPool")
 @js.native
 class BaseConnectionPool () extends js.Object {
   def this(opts: BaseConnectionPoolOptions) = this()
+  
   var Connection: Instantiable = js.native
+  
   var _agent: AgentOptions | Null = js.native
+  
+  var _proxy: String | URL_ = js.native
+  
   var _ssl: SecureContextOptions | Null = js.native
-  var auth: BasicAuth | ApiKeyAuth = js.native
-  var connections: js.Array[default] = js.native
-  var size: Double = js.native
+  
   /**
     * Adds a new connection to the pool.
     *
@@ -26,14 +30,21 @@ class BaseConnectionPool () extends js.Object {
     * @returns {ConnectionPool}
     */
   def addConnection(opts: js.Any): default = js.native
+  
+  var auth: BasicAuth | ApiKeyAuth = js.native
+  
+  var connections: js.Array[default] = js.native
+  
   def emit(event: String, args: js.Any*): Boolean = js.native
   def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
+  
   /**
     * Empties the connection pool.
     *
     * @returns {ConnectionPool}
     */
   def empty(): this.type = js.native
+  
   /**
     * Returns an alive connection if present,
     * otherwise returns a dead connection.
@@ -46,6 +57,7 @@ class BaseConnectionPool () extends js.Object {
     */
   def getConnection(): default | Null = js.native
   def getConnection(opts: getConnectionOptions): default | Null = js.native
+  
   /**
     * Marks a connection as 'alive'.
     * If needed removes the connection from the dead list
@@ -54,6 +66,7 @@ class BaseConnectionPool () extends js.Object {
     * @param {object} connection
     */
   def markAlive(connection: default): this.type = js.native
+  
   /**
     * Marks a connection as 'dead'.
     * If needed adds the connection to the dead list
@@ -62,6 +75,7 @@ class BaseConnectionPool () extends js.Object {
     * @param {object} connection
     */
   def markDead(connection: default): this.type = js.native
+  
   /**
     * Transforms the nodes objects to a host object.
     *
@@ -69,6 +83,7 @@ class BaseConnectionPool () extends js.Object {
     * @returns {array} hosts
     */
   def nodesToHost(nodes: js.Any, protocol: String): js.Array[_] = js.native
+  
   /**
     * Removes a new connection to the pool.
     *
@@ -76,6 +91,9 @@ class BaseConnectionPool () extends js.Object {
     * @returns {ConnectionPool}
     */
   def removeConnection(connection: default): this.type = js.native
+  
+  var size: Double = js.native
+  
   /**
     * Update the ConnectionPool with new connections.
     *
@@ -83,6 +101,7 @@ class BaseConnectionPool () extends js.Object {
     * @returns {ConnectionPool}
     */
   def update(connections: js.Array[_]): this.type = js.native
+  
   /**
     * Transforms an url string to a host object
     *
@@ -91,4 +110,3 @@ class BaseConnectionPool () extends js.Object {
     */
   def urlToHost(url: String): Url = js.native
 }
-

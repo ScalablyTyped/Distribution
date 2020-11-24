@@ -3,7 +3,7 @@ package typings.jupyterlabStatusbar.mod
 import typings.jupyterlabStatusbar.hoverMod.Popup.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/statusbar", "Popup")
 @js.native
@@ -14,4 +14,3 @@ class Popup protected ()
     */
   def this(options: IOptions) = this()
 }
-

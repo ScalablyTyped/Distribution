@@ -2,14 +2,14 @@ package typings.clearbladejsServer.CbServer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MessagingQOS extends js.Object
-
 @JSGlobal("CbServer.MessagingQOS")
 @js.native
 object MessagingQOS extends js.Object {
+  
   @js.native
   sealed trait MESSAGING_QOS_AT_LEAST_ONCE extends MessagingQOS
   
@@ -18,6 +18,4 @@ object MessagingQOS extends js.Object {
   
   @js.native
   sealed trait MESSAGING_QOS_EXACTLY_ONCE extends MessagingQOS
-  
 }
-

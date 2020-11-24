@@ -4,10 +4,11 @@ import typings.openui5.sap.ui.base.Object
 import typings.openui5.sap.ui.core.Configuration.FormatSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Configuration extends Object {
+  
   /**
     * Applies multiple changes to the configuration at once.If the changed settings contain localization
     * related settings like <code>language</code>or <ode>calendarType</code>, then only a single
@@ -23,94 +24,111 @@ trait Configuration extends Object {
     * @returns Returns <code>this</code> to allow method chaining
     */
   def applySettings(mSettings: js.Any): Configuration = js.native
+  
   /**
     * Returns whether the accessibility mode is used or not
     * @returns whether the accessibility mode is used or not
     */
   def getAccessibility(): Boolean = js.native
+  
   /**
     * Returns whether the animations are globally used
     * @returns whether the animations are globally used
     */
   def getAnimation(): Boolean = js.native
+  
   /**
     * Base URLs to AppCacheBuster Etag-Index files
     * @returns array of base URLs
     */
   def getAppCacheBuster(): js.Array[String] = js.native
+  
   /**
     * Object defining the callback hooks for the AppCacheBuster like e.g.<code>handleURL</code>,
     * <code>onIndexLoad</code> or <code>onIndexLoaded</code>.
     * @returns object containing the callback functions for the AppCacheBuster
     */
   def getAppCacheBusterHooks(): js.Any = js.native
+  
   /**
     * The loading mode (sync|async|batch) of the AppCacheBuster (sync is default)
     * @returns sync | async
     */
   def getAppCacheBusterMode(): String = js.native
+  
   /**
     * The name of the application to start or empty
     * @returns name of the application
     */
   def getApplication(): String = js.native
+  
   /**
     * Returns whether the framework automatically adds automaticallythe ARIA role 'application' to the
     * html body or not.
     * @since 1.27.0
     */
   def getAutoAriaBodyRole(): Boolean = js.native
+  
   /**
     * Returns the used compatibility version for the given feature.
     * @param sFeature the key of desired feature
     * @returns the used compatibility version
     */
   def getCompatibilityVersion(sFeature: String): js.Any = js.native
+  
   /**
     * Return whether the controller code is deactivated. During design mode the
     * @since 1.26.4
     * @returns whether the activation of the controller code is suppressed or not
     */
   def getControllerCodeDeactivated(): Boolean = js.native
+  
   /**
     * Returns whether the page runs in debug mode
     * @returns whether the page runs in debug mode
     */
   def getDebug(): Boolean = js.native
+  
   /**
     * Return whether the design mode is active or not.
     * @since 1.13.2
     * @returns whether the design mode is active or not.
     */
   def getDesignMode(): Boolean = js.native
+  
   /**
     * Returns whether the Fiori2Adaptation is on
     * @returns false - no adaptation, true - full adaptation, comma-separated list - partial
     * adaptationPossible values: style, collapse, title, back, hierarchy
     */
   def getFiori2Adaptation(): Boolean | String = js.native
+  
   /**
     * Returns the format locale string with language and region code. Falls back tolanguage configuration,
     * in case it has not been explicitly defined.
     * @returns the format locale string with language and country code
     */
   def getFormatLocale(): String = js.native
+  
   /**
     * Returns a configuration object that bundles the format settings of UI5.
     * @returns A FormatSettings object.
     */
   def getFormatSettings(): FormatSettings = js.native
+  
   /**
     * frameOptions mode (allow/deny/trusted).
     * @returns frameOptions mode
     */
   def getFrameOptions(): String = js.native
+  
   /**
     * Returns whether the UI5 control inspector is displayedHas only an effect when the sap-ui-debug
     * module has been loaded
     * @returns whether the UI5 control inspector is displayed
     */
   def getInspect(): Boolean = js.native
+  
   /**
     * Returns a string that identifies the current language.The value returned by this methods in most
     * cases corresponds to the exact value that has beenconfigured by the user or application or that has
@@ -130,6 +148,7 @@ trait Configuration extends Object {
     * @returns The language string as configured
     */
   def getLanguage(): String = js.native
+  
   /**
     * Returns a BCP47-compliant language tag for the current language.If the current {@link #getLanguage
     * language} can't be interpreted as aBCP47-compliant language, then the value <code>undefined</code>
@@ -137,39 +156,46 @@ trait Configuration extends Object {
     * @returns The language tag for the current language, conforming to BCP47
     */
   def getLanguageTag(): String = js.native
+  
   /**
     * Returns a Locale object for the current language.The Locale is derived from the {@link #getLanguage
     * language} property.
     * @returns The locale
     */
   def getLocale(): Locale = js.native
+  
   /**
     * Flag whether a Component should load the manifest first
     * @since 1.33.0
     * @returns true if a Component should load the manifest first
     */
   def getManifestFirst(): Boolean = js.native
+  
   /**
     * Returns whether there should be an exception on any duplicate element IDs
     * @returns whether there should be an exception on any duplicate element IDs
     */
   def getNoDuplicateIds(): Boolean = js.native
+  
   /**
     * Returns whether the text origin information is collected
     * @returns whether the text info is collected
     */
   def getOriginInfo(): Boolean = js.native
+  
   /**
     * Returns whether the page uses the RTL text direction.If no mode has been explicitly set (neither
     * true nor false),the mode is derived from the current language setting.
     * @returns whether the page uses the RTL text direction
     */
   def getRTL(): Boolean = js.native
+  
   /**
     * The name of the root component to start or empty
     * @returns name of the root component
     */
   def getRootComponent(): String = js.native
+  
   /**
     * Returns a SAP logon language for the current language.If the current {@link #getLanguage language}
     * can't be interpreted as aBCP47-compliant language, or if the BCP47 language can't be converted toa
@@ -177,32 +203,38 @@ trait Configuration extends Object {
     * @returns The SAP logon language code for the current language
     */
   def getSAPLogonLanguage(): String = js.native
+  
   /**
     * Return whether the activation of the controller code is suppressed
     * @since 1.13.2
     * @returns whether the activation of the controller code is suppressed or not
     */
   def getSuppressDeactivationOfControllerCode(): Boolean = js.native
+  
   /**
     * Returns the theme name
     * @returns the theme name
     */
   def getTheme(): String = js.native
+  
   /**
     * Prefix to be used for automatically generated control IDs.Default is a double underscore "__".
     * @returns the prefix to be used
     */
   def getUIDPrefix(): String = js.native
+  
   /**
     * Returns the version of the framework.Similar to <code>sap.ui.version</code>.
     * @returns the version
     */
   def getVersion(): js.Any = js.native
+  
   /**
     * URL of the whitelist service.
     * @returns whitelist service URL
     */
   def getWhitelistService(): String = js.native
+  
   def setCalendarType(sCalendarType: js.Any): Configuration = js.native
   /**
     * Sets the new calendar type to be used from now on in locale dependent functionalities (for
@@ -213,6 +245,7 @@ trait Configuration extends Object {
     * @returns <code>this</code> to allow method chaining
     */
   def setCalendarType(sCalendarType: CalendarType): Configuration = js.native
+  
   /**
     * Sets a new formatLocale to be used from now on for retrieving localespecific formatters. Modifying
     * this setting does not have an impact onthe retrieval of translated texts!Can either be set to a
@@ -227,6 +260,7 @@ trait Configuration extends Object {
     */
   def setFormatLocale(sFormatLocale: String): Configuration = js.native
   def setFormatLocale(sFormatLocale: js.Any): Configuration = js.native
+  
   /**
     * Sets a new language to be used from now on for language/region dependentfunctionality (e.g.
     * formatting, data types, translated texts, ...).When the language has changed, the Core will fire
@@ -253,6 +287,7 @@ trait Configuration extends Object {
     * @returns <code>this</code> to allow method chaining
     */
   def setLanguage(sLanguage: String): Configuration = js.native
+  
   def setRTL(bRTL: js.Any): Configuration = js.native
   /**
     * Sets the character orientation mode to be used from now on.Can either be set to a concrete value
@@ -265,16 +300,18 @@ trait Configuration extends Object {
     */
   def setRTL(bRTL: Boolean): Configuration = js.native
 }
-
 @JSGlobal("sap.ui.core.Configuration")
 @js.native
 object Configuration extends js.Object {
+  
   @js.native
   trait FormatSettings extends Object {
+    
     /**
       * Returns the currently set date pattern or undefined if no pattern has been defined.
       */
     def getDatePattern(): Unit = js.native
+    
     /**
       * Returns the locale to be used for formatting.If no such locale has been defined, this method falls
       * back to the language,see {@link sap.ui.core.Configuration#getLanguage
@@ -284,6 +321,7 @@ object Configuration extends js.Object {
       * @returns the format locale
       */
     def getFormatLocale(): Locale = js.native
+    
     /**
       * Returns the currently set customizing data for Islamic calendar support
       * @returns Returns an array contains the customizing data. Each element in the array has properties:
@@ -291,27 +329,33 @@ object Configuration extends js.Object {
       * #setLegacyDateCalendarCustomizing}
       */
     def getLegacyDateCalendarCustomizing(): js.Array[_] = js.native
+    
     /**
       * Returns the currently set legacy ABAP date format (its id) or undefined if none has been set.
       */
     def getLegacyDateFormat(): Unit = js.native
+    
     /**
       * Returns the currently set legacy ABAP number format (its id) or undefined if none has been set.
       */
     def getLegacyNumberFormat(): Unit = js.native
+    
     /**
       * Returns the currently set legacy ABAP time format (its id) or undefined if none has been set.
       */
     def getLegacyTimeFormat(): Unit = js.native
+    
     /**
       * Returns the currently set number symbol of the given type or undefined if no symbol has been
       * defined.
       */
     def getNumberSymbol(): Unit = js.native
+    
     /**
       * Returns the currently set time pattern or undefined if no pattern has been defined.
       */
     def getTimePattern(): Unit = js.native
+    
     /**
       * Defines the preferred format pattern for the given date format style.Calling this method with a null
       * or undefined pattern removes a previously set pattern.If a pattern is defined, it will be preferred
@@ -324,6 +368,7 @@ object Configuration extends js.Object {
       * @returns Returns <code>this</code> to allow method chaining
       */
     def setDatePattern(sStyle: String, sPattern: String): FormatSettings = js.native
+    
     /**
       * Defines the day used as the first day of the week.The day is set as an integer value between 0
       * (Sunday) and 6 (Saturday).Calling this method with a null or undefined symbol removes a previously
@@ -337,12 +382,14 @@ object Configuration extends js.Object {
       * @returns Returns <code>this</code> to allow method chaining
       */
     def setFirstDayOfWeek(iValue: Double): FormatSettings = js.native
+    
     /**
       * Allows to specify the customizing data for Islamic calendar support
       * @param aMappings contains the customizing data for the support of Islamic calendar.
       * @returns Returns <code>this</code> to allow method chaining
       */
     def setLegacyDateCalendarCustomizing(aMappings: js.Array[_]): FormatSettings = js.native
+    
     /**
       * Allows to specify one of the legacy ABAP date formats.This method modifies the date patterns for
       * 'short' and 'medium' style with the corresponding ABAPformat. When called with a null or undefined
@@ -356,6 +403,7 @@ object Configuration extends js.Object {
       * @returns Returns <code>this</code> to allow method chaining
       */
     def setLegacyDateFormat(sFormatId: String): FormatSettings = js.native
+    
     /**
       * Allows to specify one of the legacy ABAP number format.This method will modify the 'group' and
       * 'decimal' symbols. When called with a nullor undefined format id, any previously applied format will
@@ -366,6 +414,7 @@ object Configuration extends js.Object {
       * @returns Returns <code>this</code> to allow method chaining
       */
     def setLegacyNumberFormat(sFormatId: String): FormatSettings = js.native
+    
     /**
       * Allows to specify one of the legacy ABAP time formats.This method sets the time patterns for 'short'
       * and 'medium' style to the corresponding ABAPformats and sets the day period texts to "AM"/"PM" or
@@ -377,6 +426,7 @@ object Configuration extends js.Object {
       * @returns Returns <code>this</code> to allow method chaining
       */
     def setLegacyTimeFormat(sFormatId: String): FormatSettings = js.native
+    
     /**
       * Defines the string to be used for the given number symbol.Calling this method with a null or
       * undefined symbol removes a previously set symbol string.Note that an empty string is explicitly
@@ -389,6 +439,7 @@ object Configuration extends js.Object {
       * @returns Returns <code>this</code> to allow method chaining
       */
     def setNumberSymbol(sStyle: String, sSymbol: String): FormatSettings = js.native
+    
     /**
       * Defines the preferred format pattern for the given time format style.Calling this method with a null
       * or undefined pattern removes a previously set pattern.If a pattern is defined, it will be preferred
@@ -402,6 +453,4 @@ object Configuration extends js.Object {
       */
     def setTimePattern(sStyle: String, sPattern: String): FormatSettings = js.native
   }
-  
 }
-

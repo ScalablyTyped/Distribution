@@ -2,10 +2,11 @@ package typings.mfiles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultWorkflowOperationsAsync extends js.Object {
+  
   def AddWorkflowAdmin(Workflow: IWorkflowAdmin): Unit = js.native
   def AddWorkflowAdmin(
     Workflow: IWorkflowAdmin,
@@ -42,6 +43,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetStateTransitionSignatureSettings(FromState: Double, ToState: Double): Unit = js.native
   def GetStateTransitionSignatureSettings(
     FromState: Double,
@@ -88,6 +90,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetStateTransitionSignatureSettingsByID(StateTransitionID: Double): Unit = js.native
   def GetStateTransitionSignatureSettingsByID(
     StateTransitionID: Double,
@@ -124,6 +127,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowAdmin(WorkflowID: Double): Unit = js.native
   def GetWorkflowAdmin(
     WorkflowID: Double,
@@ -160,6 +164,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowForClient(WorkflowID: Double, UpdateFromServer: Boolean): Unit = js.native
   def GetWorkflowForClient(
     WorkflowID: Double,
@@ -206,6 +211,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowIDByAlias(Alias: String): Unit = js.native
   def GetWorkflowIDByAlias(
     Alias: String,
@@ -242,6 +248,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowIDByGUID(WorkflowGUID: String): Unit = js.native
   def GetWorkflowIDByGUID(
     WorkflowGUID: String,
@@ -278,6 +285,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowStateIDByAlias(Alias: String): Unit = js.native
   def GetWorkflowStateIDByAlias(
     Alias: String,
@@ -314,6 +322,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowStateIDByGUID(StateGUID: String): Unit = js.native
   def GetWorkflowStateIDByGUID(
     StateGUID: String,
@@ -350,6 +359,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowStateTransitionIDByAlias(Alias: String): Unit = js.native
   def GetWorkflowStateTransitionIDByAlias(
     Alias: String,
@@ -386,6 +396,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowStateTransitionIDByGUID(StateTransitionGUID: String): Unit = js.native
   def GetWorkflowStateTransitionIDByGUID(
     StateTransitionGUID: String,
@@ -422,6 +433,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowStateTransitions(Workflow: Double, CurrentState: ITypedValue): Unit = js.native
   def GetWorkflowStateTransitions(
     Workflow: Double,
@@ -468,6 +480,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowStateTransitionsAsJSON(Workflow: Double, CurrentState: ITypedValue, ObjVer: IObjVer): Unit = js.native
   def GetWorkflowStateTransitionsAsJSON(
     Workflow: Double,
@@ -521,6 +534,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowStateTransitionsEx(Workflow: Double, CurrentState: ITypedValue, ObjVer: IObjVer): Unit = js.native
   def GetWorkflowStateTransitionsEx(
     Workflow: Double,
@@ -574,6 +588,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowStates(Workflow: Double, CurrentState: ITypedValue): Unit = js.native
   def GetWorkflowStates(
     Workflow: Double,
@@ -620,6 +635,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowStatesEx(Workflow: Double, CurrentState: ITypedValue, ObjVer: IObjVer): Unit = js.native
   def GetWorkflowStatesEx(
     Workflow: Double,
@@ -673,6 +689,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowsAdmin(): Unit = js.native
   def GetWorkflowsAdmin(
     successCallback: js.UndefOr[scala.Nothing],
@@ -703,6 +720,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowsAsValueListItems(UpdateFromServer: Boolean): Unit = js.native
   def GetWorkflowsAsValueListItems(
     UpdateFromServer: Boolean,
@@ -739,6 +757,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetWorkflowsForClient(UpdateFromServer: Boolean): Unit = js.native
   def GetWorkflowsForClient(
     UpdateFromServer: Boolean,
@@ -775,6 +794,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RemoveWorkflowAdmin(WorkflowID: Double): Unit = js.native
   def RemoveWorkflowAdmin(
     WorkflowID: Double,
@@ -811,6 +831,7 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateWorkflowAdmin(Workflow: IWorkflowAdmin): Unit = js.native
   def UpdateWorkflowAdmin(
     Workflow: IWorkflowAdmin,
@@ -848,4 +869,3 @@ trait IVaultWorkflowOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

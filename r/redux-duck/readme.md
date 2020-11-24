@@ -12,7 +12,7 @@ Helper function to create Redux modules using the ducks-modular-redux proposal.
 | Keywords           | redux, duck, module, helper |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 43310 |
+| # downloads        | 59949 |
 | # stars            | 2 |
 
 ## Links

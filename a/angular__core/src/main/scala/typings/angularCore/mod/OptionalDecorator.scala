@@ -3,10 +3,11 @@ package typings.angularCore.mod
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OptionalDecorator extends Instantiable0[Optional] {
+  
   /**
     * Parameter decorator to be used on constructor parameters,
     * which marks the parameter as being an optional dependency.
@@ -26,4 +27,3 @@ trait OptionalDecorator extends Instantiable0[Optional] {
     */
   def apply(): js.Any = js.native
 }
-

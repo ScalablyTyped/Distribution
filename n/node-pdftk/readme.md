@@ -10,9 +10,9 @@ A wrapper for pdftk with streams and promises.
 | ------------------ | :-------------: |
 | Full name          | node-pdftk |
 | Keywords           | pdftk, pdf, fill, form, stream, promise |
-| # releases         | 11 |
-| # dependents       | 6 |
-| # downloads        | 222329 |
+| # releases         | 8 |
+| # dependents       | 9 |
+| # downloads        | 391786 |
 | # stars            | 0 |
 
 ## Links

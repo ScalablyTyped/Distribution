@@ -6,7 +6,7 @@ import typings.sipJs.messagesMod.IncomingRequestMessage
 import typings.sipJs.userAgentCoreMod.UserAgentCore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/core/user-agents", "NotifyUserAgentServer")
 @js.native
@@ -22,4 +22,3 @@ class NotifyUserAgentServer protected ()
   def this(dialogOrCore: Dialog, message: IncomingRequestMessage, delegate: IncomingRequestDelegate) = this()
   def this(dialogOrCore: UserAgentCore, message: IncomingRequestMessage, delegate: IncomingRequestDelegate) = this()
 }
-

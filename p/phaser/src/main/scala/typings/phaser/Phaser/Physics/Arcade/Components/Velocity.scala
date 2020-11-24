@@ -2,7 +2,7 @@ package typings.phaser.Phaser.Physics.Arcade.Components
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods for modifying the velocity of an Arcade Physics body.
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Velocity extends js.Object {
+  
   /**
     * Sets the maximum velocity of the body.
     * @param x The new maximum horizontal velocity.
@@ -18,6 +19,7 @@ trait Velocity extends js.Object {
     */
   def setMaxVelocity(x: Double): this.type = js.native
   def setMaxVelocity(x: Double, y: Double): this.type = js.native
+  
   /**
     * Sets the velocity of the Body.
     * @param x The horizontal velocity of the body. Positive values move the body to the right, while negative values move it to the left.
@@ -25,6 +27,7 @@ trait Velocity extends js.Object {
     */
   def setVelocity(x: Double): this.type = js.native
   def setVelocity(x: Double, y: Double): this.type = js.native
+  
   /**
     * Sets the horizontal component of the body's velocity.
     * 
@@ -32,6 +35,7 @@ trait Velocity extends js.Object {
     * @param x The new horizontal velocity.
     */
   def setVelocityX(x: Double): this.type = js.native
+  
   /**
     * Sets the vertical component of the body's velocity.
     * 
@@ -40,4 +44,3 @@ trait Velocity extends js.Object {
     */
   def setVelocityY(y: Double): this.type = js.native
 }
-

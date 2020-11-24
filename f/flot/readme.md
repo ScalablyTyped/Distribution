@@ -9,9 +9,9 @@
 | ------------------ | :-------------: |
 | Full name          | flot |
 | Keywords           | - |
-| # releases         | 34 |
-| # dependents       | 20 |
-| # downloads        | 1110384 |
+| # releases         | 36 |
+| # dependents       | 24 |
+| # downloads        | 1525436 |
 | # stars            | 2 |
 
 ## Links

@@ -5,11 +5,12 @@ import typings.node.BufferEncoding
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("write-file-atomic", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(filename: String, data: String): js.Promise[Unit] = js.native
   def apply(filename: String, data: String, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
   def apply(filename: String, data: String, options: BufferEncoding): js.Promise[Unit] = js.native
@@ -43,4 +44,3 @@ object ^ extends js.Object {
     callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
   ): Unit = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.ace.global.AceAjax
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AceAjax.VirtualRenderer")
 @js.native
@@ -17,4 +17,3 @@ class VirtualRendererCls protected ()
   def this(container: HTMLElement) = this()
   def this(container: HTMLElement, theme: String) = this()
 }
-

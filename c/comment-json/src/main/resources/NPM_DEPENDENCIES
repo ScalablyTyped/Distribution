@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "comment-json" : "4.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "comment-json" : "4.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

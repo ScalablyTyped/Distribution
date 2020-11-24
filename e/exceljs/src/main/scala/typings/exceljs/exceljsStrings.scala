@@ -12,9 +12,718 @@ import typings.exceljs.mod.TimePeriodTypes
 import typings.exceljs.mod.WorksheetState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exceljsStrings {
+  
+  @scala.inline
+  def `3Arrows`: `3Arrows` = "3Arrows".asInstanceOf[`3Arrows`]
+  
+  @scala.inline
+  def `3ArrowsGray`: `3ArrowsGray` = "3ArrowsGray".asInstanceOf[`3ArrowsGray`]
+  
+  @scala.inline
+  def `3Flags`: `3Flags` = "3Flags".asInstanceOf[`3Flags`]
+  
+  @scala.inline
+  def `3Signs`: `3Signs` = "3Signs".asInstanceOf[`3Signs`]
+  
+  @scala.inline
+  def `3Stars`: `3Stars` = "3Stars".asInstanceOf[`3Stars`]
+  
+  @scala.inline
+  def `3Symbols`: `3Symbols` = "3Symbols".asInstanceOf[`3Symbols`]
+  
+  @scala.inline
+  def `3Symbols2`: `3Symbols2` = "3Symbols2".asInstanceOf[`3Symbols2`]
+  
+  @scala.inline
+  def `3TrafficLights1`: `3TrafficLights1` = "3TrafficLights1".asInstanceOf[`3TrafficLights1`]
+  
+  @scala.inline
+  def `3TrafficLights2`: `3TrafficLights2` = "3TrafficLights2".asInstanceOf[`3TrafficLights2`]
+  
+  @scala.inline
+  def `3Triangles`: `3Triangles` = "3Triangles".asInstanceOf[`3Triangles`]
+  
+  @scala.inline
+  def `4Arrows`: `4Arrows` = "4Arrows".asInstanceOf[`4Arrows`]
+  
+  @scala.inline
+  def `4ArrowsGray`: `4ArrowsGray` = "4ArrowsGray".asInstanceOf[`4ArrowsGray`]
+  
+  @scala.inline
+  def `4Rating`: `4Rating` = "4Rating".asInstanceOf[`4Rating`]
+  
+  @scala.inline
+  def `4RedToBlack`: `4RedToBlack` = "4RedToBlack".asInstanceOf[`4RedToBlack`]
+  
+  @scala.inline
+  def `4TrafficLights`: `4TrafficLights` = "4TrafficLights".asInstanceOf[`4TrafficLights`]
+  
+  @scala.inline
+  def `5Arrows`: `5Arrows` = "5Arrows".asInstanceOf[`5Arrows`]
+  
+  @scala.inline
+  def `5ArrowsGray`: `5ArrowsGray` = "5ArrowsGray".asInstanceOf[`5ArrowsGray`]
+  
+  @scala.inline
+  def `5Boxes`: `5Boxes` = "5Boxes".asInstanceOf[`5Boxes`]
+  
+  @scala.inline
+  def `5Quarters`: `5Quarters` = "5Quarters".asInstanceOf[`5Quarters`]
+  
+  @scala.inline
+  def `5Rating`: `5Rating` = "5Rating".asInstanceOf[`5Rating`]
+  
+  @scala.inline
+  def DEFLATE: DEFLATE = "DEFLATE".asInstanceOf[DEFLATE]
+  
+  @scala.inline
+  def False: False = "False".asInstanceOf[False]
+  
+  @scala.inline
+  def NA: NA = "NA".asInstanceOf[NA]
+  
+  @scala.inline
+  def NoIcons: NoIcons = "NoIcons".asInstanceOf[NoIcons]
+  
+  @scala.inline
+  def None: None = "None".asInstanceOf[None]
+  
+  @scala.inline
+  def NumbersignDIVSlash0Exclamationmark: NumbersignDIVSlash0Exclamationmark = "#DIV/0!".asInstanceOf[NumbersignDIVSlash0Exclamationmark]
+  
+  @scala.inline
+  def NumbersignNAMEQuestionmark: NumbersignNAMEQuestionmark = "#NAME?".asInstanceOf[NumbersignNAMEQuestionmark]
+  
+  @scala.inline
+  def NumbersignNSlashA: NumbersignNSlashA = "#N/A".asInstanceOf[NumbersignNSlashA]
+  
+  @scala.inline
+  def NumbersignNULLExclamationmark: NumbersignNULLExclamationmark = "#NULL!".asInstanceOf[NumbersignNULLExclamationmark]
+  
+  @scala.inline
+  def NumbersignNUMExclamationmark: NumbersignNUMExclamationmark = "#NUM!".asInstanceOf[NumbersignNUMExclamationmark]
+  
+  @scala.inline
+  def NumbersignREFExclamationmark: NumbersignREFExclamationmark = "#REF!".asInstanceOf[NumbersignREFExclamationmark]
+  
+  @scala.inline
+  def NumbersignVALUEExclamationmark: NumbersignVALUEExclamationmark = "#VALUE!".asInstanceOf[NumbersignVALUEExclamationmark]
+  
+  @scala.inline
+  def STORE: STORE = "STORE".asInstanceOf[STORE]
+  
+  @scala.inline
+  def TableStyleDark1: TableStyleDark1 = "TableStyleDark1".asInstanceOf[TableStyleDark1]
+  
+  @scala.inline
+  def TableStyleDark10: TableStyleDark10 = "TableStyleDark10".asInstanceOf[TableStyleDark10]
+  
+  @scala.inline
+  def TableStyleDark11: TableStyleDark11 = "TableStyleDark11".asInstanceOf[TableStyleDark11]
+  
+  @scala.inline
+  def TableStyleDark2: TableStyleDark2 = "TableStyleDark2".asInstanceOf[TableStyleDark2]
+  
+  @scala.inline
+  def TableStyleDark3: TableStyleDark3 = "TableStyleDark3".asInstanceOf[TableStyleDark3]
+  
+  @scala.inline
+  def TableStyleDark4: TableStyleDark4 = "TableStyleDark4".asInstanceOf[TableStyleDark4]
+  
+  @scala.inline
+  def TableStyleDark5: TableStyleDark5 = "TableStyleDark5".asInstanceOf[TableStyleDark5]
+  
+  @scala.inline
+  def TableStyleDark6: TableStyleDark6 = "TableStyleDark6".asInstanceOf[TableStyleDark6]
+  
+  @scala.inline
+  def TableStyleDark7: TableStyleDark7 = "TableStyleDark7".asInstanceOf[TableStyleDark7]
+  
+  @scala.inline
+  def TableStyleDark8: TableStyleDark8 = "TableStyleDark8".asInstanceOf[TableStyleDark8]
+  
+  @scala.inline
+  def TableStyleDark9: TableStyleDark9 = "TableStyleDark9".asInstanceOf[TableStyleDark9]
+  
+  @scala.inline
+  def TableStyleLight1: TableStyleLight1 = "TableStyleLight1".asInstanceOf[TableStyleLight1]
+  
+  @scala.inline
+  def TableStyleLight10: TableStyleLight10 = "TableStyleLight10".asInstanceOf[TableStyleLight10]
+  
+  @scala.inline
+  def TableStyleLight11: TableStyleLight11 = "TableStyleLight11".asInstanceOf[TableStyleLight11]
+  
+  @scala.inline
+  def TableStyleLight12: TableStyleLight12 = "TableStyleLight12".asInstanceOf[TableStyleLight12]
+  
+  @scala.inline
+  def TableStyleLight13: TableStyleLight13 = "TableStyleLight13".asInstanceOf[TableStyleLight13]
+  
+  @scala.inline
+  def TableStyleLight14: TableStyleLight14 = "TableStyleLight14".asInstanceOf[TableStyleLight14]
+  
+  @scala.inline
+  def TableStyleLight15: TableStyleLight15 = "TableStyleLight15".asInstanceOf[TableStyleLight15]
+  
+  @scala.inline
+  def TableStyleLight16: TableStyleLight16 = "TableStyleLight16".asInstanceOf[TableStyleLight16]
+  
+  @scala.inline
+  def TableStyleLight17: TableStyleLight17 = "TableStyleLight17".asInstanceOf[TableStyleLight17]
+  
+  @scala.inline
+  def TableStyleLight18: TableStyleLight18 = "TableStyleLight18".asInstanceOf[TableStyleLight18]
+  
+  @scala.inline
+  def TableStyleLight19: TableStyleLight19 = "TableStyleLight19".asInstanceOf[TableStyleLight19]
+  
+  @scala.inline
+  def TableStyleLight2: TableStyleLight2 = "TableStyleLight2".asInstanceOf[TableStyleLight2]
+  
+  @scala.inline
+  def TableStyleLight20: TableStyleLight20 = "TableStyleLight20".asInstanceOf[TableStyleLight20]
+  
+  @scala.inline
+  def TableStyleLight21: TableStyleLight21 = "TableStyleLight21".asInstanceOf[TableStyleLight21]
+  
+  @scala.inline
+  def TableStyleLight3: TableStyleLight3 = "TableStyleLight3".asInstanceOf[TableStyleLight3]
+  
+  @scala.inline
+  def TableStyleLight4: TableStyleLight4 = "TableStyleLight4".asInstanceOf[TableStyleLight4]
+  
+  @scala.inline
+  def TableStyleLight5: TableStyleLight5 = "TableStyleLight5".asInstanceOf[TableStyleLight5]
+  
+  @scala.inline
+  def TableStyleLight6: TableStyleLight6 = "TableStyleLight6".asInstanceOf[TableStyleLight6]
+  
+  @scala.inline
+  def TableStyleLight7: TableStyleLight7 = "TableStyleLight7".asInstanceOf[TableStyleLight7]
+  
+  @scala.inline
+  def TableStyleLight8: TableStyleLight8 = "TableStyleLight8".asInstanceOf[TableStyleLight8]
+  
+  @scala.inline
+  def TableStyleLight9: TableStyleLight9 = "TableStyleLight9".asInstanceOf[TableStyleLight9]
+  
+  @scala.inline
+  def TableStyleMedium1: TableStyleMedium1 = "TableStyleMedium1".asInstanceOf[TableStyleMedium1]
+  
+  @scala.inline
+  def TableStyleMedium10: TableStyleMedium10 = "TableStyleMedium10".asInstanceOf[TableStyleMedium10]
+  
+  @scala.inline
+  def TableStyleMedium11: TableStyleMedium11 = "TableStyleMedium11".asInstanceOf[TableStyleMedium11]
+  
+  @scala.inline
+  def TableStyleMedium12: TableStyleMedium12 = "TableStyleMedium12".asInstanceOf[TableStyleMedium12]
+  
+  @scala.inline
+  def TableStyleMedium13: TableStyleMedium13 = "TableStyleMedium13".asInstanceOf[TableStyleMedium13]
+  
+  @scala.inline
+  def TableStyleMedium14: TableStyleMedium14 = "TableStyleMedium14".asInstanceOf[TableStyleMedium14]
+  
+  @scala.inline
+  def TableStyleMedium15: TableStyleMedium15 = "TableStyleMedium15".asInstanceOf[TableStyleMedium15]
+  
+  @scala.inline
+  def TableStyleMedium16: TableStyleMedium16 = "TableStyleMedium16".asInstanceOf[TableStyleMedium16]
+  
+  @scala.inline
+  def TableStyleMedium17: TableStyleMedium17 = "TableStyleMedium17".asInstanceOf[TableStyleMedium17]
+  
+  @scala.inline
+  def TableStyleMedium18: TableStyleMedium18 = "TableStyleMedium18".asInstanceOf[TableStyleMedium18]
+  
+  @scala.inline
+  def TableStyleMedium19: TableStyleMedium19 = "TableStyleMedium19".asInstanceOf[TableStyleMedium19]
+  
+  @scala.inline
+  def TableStyleMedium2: TableStyleMedium2 = "TableStyleMedium2".asInstanceOf[TableStyleMedium2]
+  
+  @scala.inline
+  def TableStyleMedium20: TableStyleMedium20 = "TableStyleMedium20".asInstanceOf[TableStyleMedium20]
+  
+  @scala.inline
+  def TableStyleMedium21: TableStyleMedium21 = "TableStyleMedium21".asInstanceOf[TableStyleMedium21]
+  
+  @scala.inline
+  def TableStyleMedium22: TableStyleMedium22 = "TableStyleMedium22".asInstanceOf[TableStyleMedium22]
+  
+  @scala.inline
+  def TableStyleMedium23: TableStyleMedium23 = "TableStyleMedium23".asInstanceOf[TableStyleMedium23]
+  
+  @scala.inline
+  def TableStyleMedium24: TableStyleMedium24 = "TableStyleMedium24".asInstanceOf[TableStyleMedium24]
+  
+  @scala.inline
+  def TableStyleMedium25: TableStyleMedium25 = "TableStyleMedium25".asInstanceOf[TableStyleMedium25]
+  
+  @scala.inline
+  def TableStyleMedium26: TableStyleMedium26 = "TableStyleMedium26".asInstanceOf[TableStyleMedium26]
+  
+  @scala.inline
+  def TableStyleMedium27: TableStyleMedium27 = "TableStyleMedium27".asInstanceOf[TableStyleMedium27]
+  
+  @scala.inline
+  def TableStyleMedium28: TableStyleMedium28 = "TableStyleMedium28".asInstanceOf[TableStyleMedium28]
+  
+  @scala.inline
+  def TableStyleMedium3: TableStyleMedium3 = "TableStyleMedium3".asInstanceOf[TableStyleMedium3]
+  
+  @scala.inline
+  def TableStyleMedium4: TableStyleMedium4 = "TableStyleMedium4".asInstanceOf[TableStyleMedium4]
+  
+  @scala.inline
+  def TableStyleMedium5: TableStyleMedium5 = "TableStyleMedium5".asInstanceOf[TableStyleMedium5]
+  
+  @scala.inline
+  def TableStyleMedium6: TableStyleMedium6 = "TableStyleMedium6".asInstanceOf[TableStyleMedium6]
+  
+  @scala.inline
+  def TableStyleMedium7: TableStyleMedium7 = "TableStyleMedium7".asInstanceOf[TableStyleMedium7]
+  
+  @scala.inline
+  def TableStyleMedium8: TableStyleMedium8 = "TableStyleMedium8".asInstanceOf[TableStyleMedium8]
+  
+  @scala.inline
+  def TableStyleMedium9: TableStyleMedium9 = "TableStyleMedium9".asInstanceOf[TableStyleMedium9]
+  
+  @scala.inline
+  def True: True = "True".asInstanceOf[True]
+  
+  @scala.inline
+  def aboveAverage: aboveAverage = "aboveAverage".asInstanceOf[aboveAverage]
+  
+  @scala.inline
+  def absolute: absolute = "absolute".asInstanceOf[absolute]
+  
+  @scala.inline
+  def angle: angle = "angle".asInstanceOf[angle]
+  
+  @scala.inline
+  def asDisplayed: asDisplayed = "asDisplayed".asInstanceOf[asDisplayed]
+  
+  @scala.inline
+  def atEnd: atEnd = "atEnd".asInstanceOf[atEnd]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def autoMax: autoMax = "autoMax".asInstanceOf[autoMax]
+  
+  @scala.inline
+  def autoMin: autoMin = "autoMin".asInstanceOf[autoMin]
+  
+  @scala.inline
+  def average: average = "average".asInstanceOf[average]
+  
+  @scala.inline
+  def between: between = "between".asInstanceOf[between]
+  
+  @scala.inline
+  def blank: blank = "blank".asInstanceOf[blank]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
+  
+  @scala.inline
+  def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
+  
+  @scala.inline
+  def cache: cache = "cache".asInstanceOf[cache]
+  
+  @scala.inline
+  def cellIs: cellIs = "cellIs".asInstanceOf[cellIs]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def centerContinuous: centerContinuous = "centerContinuous".asInstanceOf[centerContinuous]
+  
+  @scala.inline
+  def colorScale: colorScale = "colorScale".asInstanceOf[colorScale]
+  
+  @scala.inline
+  def containsBlanks: containsBlanks = "containsBlanks".asInstanceOf[containsBlanks]
+  
+  @scala.inline
+  def containsErrors: containsErrors = "containsErrors".asInstanceOf[containsErrors]
+  
+  @scala.inline
+  def containsText: containsText = "containsText".asInstanceOf[containsText]
+  
+  @scala.inline
+  def context: context = "context".asInstanceOf[context]
+  
+  @scala.inline
+  def count: count = "count".asInstanceOf[count]
+  
+  @scala.inline
+  def countNums: countNums = "countNums".asInstanceOf[countNums]
+  
+  @scala.inline
+  def custom: custom = "custom".asInstanceOf[custom]
+  
+  @scala.inline
+  def darkDown: darkDown = "darkDown".asInstanceOf[darkDown]
+  
+  @scala.inline
+  def darkGray: darkGray = "darkGray".asInstanceOf[darkGray]
+  
+  @scala.inline
+  def darkGrid: darkGrid = "darkGrid".asInstanceOf[darkGrid]
+  
+  @scala.inline
+  def darkHorizontal: darkHorizontal = "darkHorizontal".asInstanceOf[darkHorizontal]
+  
+  @scala.inline
+  def darkTrellis: darkTrellis = "darkTrellis".asInstanceOf[darkTrellis]
+  
+  @scala.inline
+  def darkUp: darkUp = "darkUp".asInstanceOf[darkUp]
+  
+  @scala.inline
+  def darkVertical: darkVertical = "darkVertical".asInstanceOf[darkVertical]
+  
+  @scala.inline
+  def dash: dash = "dash".asInstanceOf[dash]
+  
+  @scala.inline
+  def dashDot: dashDot = "dashDot".asInstanceOf[dashDot]
+  
+  @scala.inline
+  def dashDotDot: dashDotDot = "dashDotDot".asInstanceOf[dashDotDot]
+  
+  @scala.inline
+  def dataBar: dataBar = "dataBar".asInstanceOf[dataBar]
+  
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  
+  @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  
+  @scala.inline
+  def displayed: displayed = "displayed".asInstanceOf[displayed]
+  
+  @scala.inline
+  def distributed: distributed = "distributed".asInstanceOf[distributed]
+  
+  @scala.inline
+  def dotted: dotted = "dotted".asInstanceOf[dotted]
+  
+  @scala.inline
+  def double: double = "double".asInstanceOf[double]
+  
+  @scala.inline
+  def doubleAccounting: doubleAccounting = "doubleAccounting".asInstanceOf[doubleAccounting]
+  
+  @scala.inline
+  def downThenOver: downThenOver = "downThenOver".asInstanceOf[downThenOver]
+  
+  @scala.inline
+  def emit: emit = "emit".asInstanceOf[emit]
+  
+  @scala.inline
+  def equal: equal = "equal".asInstanceOf[equal]
+  
+  @scala.inline
+  def expression: expression = "expression".asInstanceOf[expression]
+  
+  @scala.inline
+  def fill: fill = "fill".asInstanceOf[fill]
+  
+  @scala.inline
+  def formula: formula = "formula".asInstanceOf[formula]
+  
+  @scala.inline
+  def frozen: frozen = "frozen".asInstanceOf[frozen]
+  
+  @scala.inline
+  def gif: gif = "gif".asInstanceOf[gif]
+  
+  @scala.inline
+  def gradient: gradient = "gradient".asInstanceOf[gradient]
+  
+  @scala.inline
+  def gray0625: gray0625 = "gray0625".asInstanceOf[gray0625]
+  
+  @scala.inline
+  def gray125: gray125 = "gray125".asInstanceOf[gray125]
+  
+  @scala.inline
+  def greaterThan: greaterThan = "greaterThan".asInstanceOf[greaterThan]
+  
+  @scala.inline
+  def greaterThanOrEqual: greaterThanOrEqual = "greaterThanOrEqual".asInstanceOf[greaterThanOrEqual]
+  
+  @scala.inline
+  def hair: hair = "hair".asInstanceOf[hair]
+  
+  @scala.inline
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @scala.inline
+  def iconSet: iconSet = "iconSet".asInstanceOf[iconSet]
+  
+  @scala.inline
+  def ignore: ignore = "ignore".asInstanceOf[ignore]
+  
+  @scala.inline
+  def image: image = "image".asInstanceOf[image]
+  
+  @scala.inline
+  def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+  
+  @scala.inline
+  def justify: justify = "justify".asInstanceOf[justify]
+  
+  @scala.inline
+  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  
+  @scala.inline
+  def last7Days: last7Days = "last7Days".asInstanceOf[last7Days]
+  
+  @scala.inline
+  def lastMonth: lastMonth = "lastMonth".asInstanceOf[lastMonth]
+  
+  @scala.inline
+  def lastWeek: lastWeek = "lastWeek".asInstanceOf[lastWeek]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def leftToRight: leftToRight = "leftToRight".asInstanceOf[leftToRight]
+  
+  @scala.inline
+  def lessThan: lessThan = "lessThan".asInstanceOf[lessThan]
+  
+  @scala.inline
+  def lessThanOrEqual: lessThanOrEqual = "lessThanOrEqual".asInstanceOf[lessThanOrEqual]
+  
+  @scala.inline
+  def lightDown: lightDown = "lightDown".asInstanceOf[lightDown]
+  
+  @scala.inline
+  def lightGray: lightGray = "lightGray".asInstanceOf[lightGray]
+  
+  @scala.inline
+  def lightGrid: lightGrid = "lightGrid".asInstanceOf[lightGrid]
+  
+  @scala.inline
+  def lightHorizontal: lightHorizontal = "lightHorizontal".asInstanceOf[lightHorizontal]
+  
+  @scala.inline
+  def lightTrellis: lightTrellis = "lightTrellis".asInstanceOf[lightTrellis]
+  
+  @scala.inline
+  def lightUp: lightUp = "lightUp".asInstanceOf[lightUp]
+  
+  @scala.inline
+  def lightVertical: lightVertical = "lightVertical".asInstanceOf[lightVertical]
+  
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
+  
+  @scala.inline
+  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  
+  @scala.inline
+  def major: major = "major".asInstanceOf[major]
+  
+  @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  
+  @scala.inline
+  def medium: medium = "medium".asInstanceOf[medium]
+  
+  @scala.inline
+  def mediumDashDot: mediumDashDot = "mediumDashDot".asInstanceOf[mediumDashDot]
+  
+  @scala.inline
+  def mediumDashDotDot: mediumDashDotDot = "mediumDashDotDot".asInstanceOf[mediumDashDotDot]
+  
+  @scala.inline
+  def mediumDashed: mediumDashed = "mediumDashed".asInstanceOf[mediumDashed]
+  
+  @scala.inline
+  def mediumGray: mediumGray = "mediumGray".asInstanceOf[mediumGray]
+  
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  
+  @scala.inline
+  def min: min = "min".asInstanceOf[min]
+  
+  @scala.inline
+  def minor: minor = "minor".asInstanceOf[minor]
+  
+  @scala.inline
+  def nextMonth: nextMonth = "nextMonth".asInstanceOf[nextMonth]
+  
+  @scala.inline
+  def nextWeek: nextWeek = "nextWeek".asInstanceOf[nextWeek]
+  
+  @scala.inline
+  def none_ : none_ = "none".asInstanceOf[none_]
+  
+  @scala.inline
+  def normal: normal = "normal".asInstanceOf[normal]
+  
+  @scala.inline
+  def notBetween: notBetween = "notBetween".asInstanceOf[notBetween]
+  
+  @scala.inline
+  def notContainsBlanks: notContainsBlanks = "notContainsBlanks".asInstanceOf[notContainsBlanks]
+  
+  @scala.inline
+  def notContainsErrors: notContainsErrors = "notContainsErrors".asInstanceOf[notContainsErrors]
+  
+  @scala.inline
+  def notEqual: notEqual = "notEqual".asInstanceOf[notEqual]
+  
+  @scala.inline
+  def num: num = "num".asInstanceOf[num]
+  
+  @scala.inline
+  def oneCells: oneCells = "oneCells".asInstanceOf[oneCells]
+  
+  @scala.inline
+  def overThenDown: overThenDown = "overThenDown".asInstanceOf[overThenDown]
+  
+  @scala.inline
+  def pageBreakPreview: pageBreakPreview = "pageBreakPreview".asInstanceOf[pageBreakPreview]
+  
+  @scala.inline
+  def pageLayout: pageLayout = "pageLayout".asInstanceOf[pageLayout]
+  
+  @scala.inline
+  def path: path = "path".asInstanceOf[path]
+  
+  @scala.inline
+  def pattern: pattern = "pattern".asInstanceOf[pattern]
+  
+  @scala.inline
+  def percent: percent = "percent".asInstanceOf[percent]
+  
+  @scala.inline
+  def percentile: percentile = "percentile".asInstanceOf[percentile]
+  
+  @scala.inline
+  def png: png = "png".asInstanceOf[png]
+  
+  @scala.inline
+  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
+  @scala.inline
+  def promise: promise = "promise".asInstanceOf[promise]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def rightToLeft: rightToLeft = "rightToLeft".asInstanceOf[rightToLeft]
+  
+  @scala.inline
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  
+  @scala.inline
+  def single: single = "single".asInstanceOf[single]
+  
+  @scala.inline
+  def singleAccounting: singleAccounting = "singleAccounting".asInstanceOf[singleAccounting]
+  
+  @scala.inline
+  def slantDashDot: slantDashDot = "slantDashDot".asInstanceOf[slantDashDot]
+  
+  @scala.inline
+  def solid: solid = "solid".asInstanceOf[solid]
+  
+  @scala.inline
+  def split: split = "split".asInstanceOf[split]
+  
+  @scala.inline
+  def stdDev: stdDev = "stdDev".asInstanceOf[stdDev]
+  
+  @scala.inline
+  def subscript: subscript = "subscript".asInstanceOf[subscript]
+  
+  @scala.inline
+  def sum: sum = "sum".asInstanceOf[sum]
+  
+  @scala.inline
+  def superscript: superscript = "superscript".asInstanceOf[superscript]
+  
+  @scala.inline
+  def textLength: textLength = "textLength".asInstanceOf[textLength]
+  
+  @scala.inline
+  def thick: thick = "thick".asInstanceOf[thick]
+  
+  @scala.inline
+  def thin: thin = "thin".asInstanceOf[thin]
+  
+  @scala.inline
+  def thisMonth: thisMonth = "thisMonth".asInstanceOf[thisMonth]
+  
+  @scala.inline
+  def thisWeek: thisWeek = "thisWeek".asInstanceOf[thisWeek]
+  
+  @scala.inline
+  def timePeriod: timePeriod = "timePeriod".asInstanceOf[timePeriod]
+  
+  @scala.inline
+  def today: today = "today".asInstanceOf[today]
+  
+  @scala.inline
+  def tomorrow: tomorrow = "tomorrow".asInstanceOf[tomorrow]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def top10: top10 = "top10".asInstanceOf[top10]
+  
+  @scala.inline
+  def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
+  
+  @scala.inline
+  def topRight: topRight = "topRight".asInstanceOf[topRight]
+  
+  @scala.inline
+  def twoCells: twoCells = "twoCells".asInstanceOf[twoCells]
+  
+  @scala.inline
+  def `var`: `var` = "var".asInstanceOf[`var`]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @scala.inline
+  def veryHidden: veryHidden = "veryHidden".asInstanceOf[veryHidden]
+  
+  @scala.inline
+  def visible: visible = "visible".asInstanceOf[visible]
+  
+  @scala.inline
+  def whole: whole = "whole".asInstanceOf[whole]
+  
+  @scala.inline
+  def yesterday: yesterday = "yesterday".asInstanceOf[yesterday]
+  
   @js.native
   sealed trait `3Arrows` extends IconSetTypes
   
@@ -730,478 +1439,4 @@ object exceljsStrings {
   
   @js.native
   sealed trait yesterday extends TimePeriodTypes
-  
-  @scala.inline
-  def `3Arrows`: `3Arrows` = "3Arrows".asInstanceOf[`3Arrows`]
-  @scala.inline
-  def `3ArrowsGray`: `3ArrowsGray` = "3ArrowsGray".asInstanceOf[`3ArrowsGray`]
-  @scala.inline
-  def `3Flags`: `3Flags` = "3Flags".asInstanceOf[`3Flags`]
-  @scala.inline
-  def `3Signs`: `3Signs` = "3Signs".asInstanceOf[`3Signs`]
-  @scala.inline
-  def `3Stars`: `3Stars` = "3Stars".asInstanceOf[`3Stars`]
-  @scala.inline
-  def `3Symbols`: `3Symbols` = "3Symbols".asInstanceOf[`3Symbols`]
-  @scala.inline
-  def `3Symbols2`: `3Symbols2` = "3Symbols2".asInstanceOf[`3Symbols2`]
-  @scala.inline
-  def `3TrafficLights1`: `3TrafficLights1` = "3TrafficLights1".asInstanceOf[`3TrafficLights1`]
-  @scala.inline
-  def `3TrafficLights2`: `3TrafficLights2` = "3TrafficLights2".asInstanceOf[`3TrafficLights2`]
-  @scala.inline
-  def `3Triangles`: `3Triangles` = "3Triangles".asInstanceOf[`3Triangles`]
-  @scala.inline
-  def `4Arrows`: `4Arrows` = "4Arrows".asInstanceOf[`4Arrows`]
-  @scala.inline
-  def `4ArrowsGray`: `4ArrowsGray` = "4ArrowsGray".asInstanceOf[`4ArrowsGray`]
-  @scala.inline
-  def `4Rating`: `4Rating` = "4Rating".asInstanceOf[`4Rating`]
-  @scala.inline
-  def `4RedToBlack`: `4RedToBlack` = "4RedToBlack".asInstanceOf[`4RedToBlack`]
-  @scala.inline
-  def `4TrafficLights`: `4TrafficLights` = "4TrafficLights".asInstanceOf[`4TrafficLights`]
-  @scala.inline
-  def `5Arrows`: `5Arrows` = "5Arrows".asInstanceOf[`5Arrows`]
-  @scala.inline
-  def `5ArrowsGray`: `5ArrowsGray` = "5ArrowsGray".asInstanceOf[`5ArrowsGray`]
-  @scala.inline
-  def `5Boxes`: `5Boxes` = "5Boxes".asInstanceOf[`5Boxes`]
-  @scala.inline
-  def `5Quarters`: `5Quarters` = "5Quarters".asInstanceOf[`5Quarters`]
-  @scala.inline
-  def `5Rating`: `5Rating` = "5Rating".asInstanceOf[`5Rating`]
-  @scala.inline
-  def DEFLATE: DEFLATE = "DEFLATE".asInstanceOf[DEFLATE]
-  @scala.inline
-  def False: False = "False".asInstanceOf[False]
-  @scala.inline
-  def NA: NA = "NA".asInstanceOf[NA]
-  @scala.inline
-  def NoIcons: NoIcons = "NoIcons".asInstanceOf[NoIcons]
-  @scala.inline
-  def None: None = "None".asInstanceOf[None]
-  @scala.inline
-  def NumbersignDIVSlash0Exclamationmark: NumbersignDIVSlash0Exclamationmark = "#DIV/0!".asInstanceOf[NumbersignDIVSlash0Exclamationmark]
-  @scala.inline
-  def NumbersignNAMEQuestionmark: NumbersignNAMEQuestionmark = "#NAME?".asInstanceOf[NumbersignNAMEQuestionmark]
-  @scala.inline
-  def NumbersignNSlashA: NumbersignNSlashA = "#N/A".asInstanceOf[NumbersignNSlashA]
-  @scala.inline
-  def NumbersignNULLExclamationmark: NumbersignNULLExclamationmark = "#NULL!".asInstanceOf[NumbersignNULLExclamationmark]
-  @scala.inline
-  def NumbersignNUMExclamationmark: NumbersignNUMExclamationmark = "#NUM!".asInstanceOf[NumbersignNUMExclamationmark]
-  @scala.inline
-  def NumbersignREFExclamationmark: NumbersignREFExclamationmark = "#REF!".asInstanceOf[NumbersignREFExclamationmark]
-  @scala.inline
-  def NumbersignVALUEExclamationmark: NumbersignVALUEExclamationmark = "#VALUE!".asInstanceOf[NumbersignVALUEExclamationmark]
-  @scala.inline
-  def STORE: STORE = "STORE".asInstanceOf[STORE]
-  @scala.inline
-  def TableStyleDark1: TableStyleDark1 = "TableStyleDark1".asInstanceOf[TableStyleDark1]
-  @scala.inline
-  def TableStyleDark10: TableStyleDark10 = "TableStyleDark10".asInstanceOf[TableStyleDark10]
-  @scala.inline
-  def TableStyleDark11: TableStyleDark11 = "TableStyleDark11".asInstanceOf[TableStyleDark11]
-  @scala.inline
-  def TableStyleDark2: TableStyleDark2 = "TableStyleDark2".asInstanceOf[TableStyleDark2]
-  @scala.inline
-  def TableStyleDark3: TableStyleDark3 = "TableStyleDark3".asInstanceOf[TableStyleDark3]
-  @scala.inline
-  def TableStyleDark4: TableStyleDark4 = "TableStyleDark4".asInstanceOf[TableStyleDark4]
-  @scala.inline
-  def TableStyleDark5: TableStyleDark5 = "TableStyleDark5".asInstanceOf[TableStyleDark5]
-  @scala.inline
-  def TableStyleDark6: TableStyleDark6 = "TableStyleDark6".asInstanceOf[TableStyleDark6]
-  @scala.inline
-  def TableStyleDark7: TableStyleDark7 = "TableStyleDark7".asInstanceOf[TableStyleDark7]
-  @scala.inline
-  def TableStyleDark8: TableStyleDark8 = "TableStyleDark8".asInstanceOf[TableStyleDark8]
-  @scala.inline
-  def TableStyleDark9: TableStyleDark9 = "TableStyleDark9".asInstanceOf[TableStyleDark9]
-  @scala.inline
-  def TableStyleLight1: TableStyleLight1 = "TableStyleLight1".asInstanceOf[TableStyleLight1]
-  @scala.inline
-  def TableStyleLight10: TableStyleLight10 = "TableStyleLight10".asInstanceOf[TableStyleLight10]
-  @scala.inline
-  def TableStyleLight11: TableStyleLight11 = "TableStyleLight11".asInstanceOf[TableStyleLight11]
-  @scala.inline
-  def TableStyleLight12: TableStyleLight12 = "TableStyleLight12".asInstanceOf[TableStyleLight12]
-  @scala.inline
-  def TableStyleLight13: TableStyleLight13 = "TableStyleLight13".asInstanceOf[TableStyleLight13]
-  @scala.inline
-  def TableStyleLight14: TableStyleLight14 = "TableStyleLight14".asInstanceOf[TableStyleLight14]
-  @scala.inline
-  def TableStyleLight15: TableStyleLight15 = "TableStyleLight15".asInstanceOf[TableStyleLight15]
-  @scala.inline
-  def TableStyleLight16: TableStyleLight16 = "TableStyleLight16".asInstanceOf[TableStyleLight16]
-  @scala.inline
-  def TableStyleLight17: TableStyleLight17 = "TableStyleLight17".asInstanceOf[TableStyleLight17]
-  @scala.inline
-  def TableStyleLight18: TableStyleLight18 = "TableStyleLight18".asInstanceOf[TableStyleLight18]
-  @scala.inline
-  def TableStyleLight19: TableStyleLight19 = "TableStyleLight19".asInstanceOf[TableStyleLight19]
-  @scala.inline
-  def TableStyleLight2: TableStyleLight2 = "TableStyleLight2".asInstanceOf[TableStyleLight2]
-  @scala.inline
-  def TableStyleLight20: TableStyleLight20 = "TableStyleLight20".asInstanceOf[TableStyleLight20]
-  @scala.inline
-  def TableStyleLight21: TableStyleLight21 = "TableStyleLight21".asInstanceOf[TableStyleLight21]
-  @scala.inline
-  def TableStyleLight3: TableStyleLight3 = "TableStyleLight3".asInstanceOf[TableStyleLight3]
-  @scala.inline
-  def TableStyleLight4: TableStyleLight4 = "TableStyleLight4".asInstanceOf[TableStyleLight4]
-  @scala.inline
-  def TableStyleLight5: TableStyleLight5 = "TableStyleLight5".asInstanceOf[TableStyleLight5]
-  @scala.inline
-  def TableStyleLight6: TableStyleLight6 = "TableStyleLight6".asInstanceOf[TableStyleLight6]
-  @scala.inline
-  def TableStyleLight7: TableStyleLight7 = "TableStyleLight7".asInstanceOf[TableStyleLight7]
-  @scala.inline
-  def TableStyleLight8: TableStyleLight8 = "TableStyleLight8".asInstanceOf[TableStyleLight8]
-  @scala.inline
-  def TableStyleLight9: TableStyleLight9 = "TableStyleLight9".asInstanceOf[TableStyleLight9]
-  @scala.inline
-  def TableStyleMedium1: TableStyleMedium1 = "TableStyleMedium1".asInstanceOf[TableStyleMedium1]
-  @scala.inline
-  def TableStyleMedium10: TableStyleMedium10 = "TableStyleMedium10".asInstanceOf[TableStyleMedium10]
-  @scala.inline
-  def TableStyleMedium11: TableStyleMedium11 = "TableStyleMedium11".asInstanceOf[TableStyleMedium11]
-  @scala.inline
-  def TableStyleMedium12: TableStyleMedium12 = "TableStyleMedium12".asInstanceOf[TableStyleMedium12]
-  @scala.inline
-  def TableStyleMedium13: TableStyleMedium13 = "TableStyleMedium13".asInstanceOf[TableStyleMedium13]
-  @scala.inline
-  def TableStyleMedium14: TableStyleMedium14 = "TableStyleMedium14".asInstanceOf[TableStyleMedium14]
-  @scala.inline
-  def TableStyleMedium15: TableStyleMedium15 = "TableStyleMedium15".asInstanceOf[TableStyleMedium15]
-  @scala.inline
-  def TableStyleMedium16: TableStyleMedium16 = "TableStyleMedium16".asInstanceOf[TableStyleMedium16]
-  @scala.inline
-  def TableStyleMedium17: TableStyleMedium17 = "TableStyleMedium17".asInstanceOf[TableStyleMedium17]
-  @scala.inline
-  def TableStyleMedium18: TableStyleMedium18 = "TableStyleMedium18".asInstanceOf[TableStyleMedium18]
-  @scala.inline
-  def TableStyleMedium19: TableStyleMedium19 = "TableStyleMedium19".asInstanceOf[TableStyleMedium19]
-  @scala.inline
-  def TableStyleMedium2: TableStyleMedium2 = "TableStyleMedium2".asInstanceOf[TableStyleMedium2]
-  @scala.inline
-  def TableStyleMedium20: TableStyleMedium20 = "TableStyleMedium20".asInstanceOf[TableStyleMedium20]
-  @scala.inline
-  def TableStyleMedium21: TableStyleMedium21 = "TableStyleMedium21".asInstanceOf[TableStyleMedium21]
-  @scala.inline
-  def TableStyleMedium22: TableStyleMedium22 = "TableStyleMedium22".asInstanceOf[TableStyleMedium22]
-  @scala.inline
-  def TableStyleMedium23: TableStyleMedium23 = "TableStyleMedium23".asInstanceOf[TableStyleMedium23]
-  @scala.inline
-  def TableStyleMedium24: TableStyleMedium24 = "TableStyleMedium24".asInstanceOf[TableStyleMedium24]
-  @scala.inline
-  def TableStyleMedium25: TableStyleMedium25 = "TableStyleMedium25".asInstanceOf[TableStyleMedium25]
-  @scala.inline
-  def TableStyleMedium26: TableStyleMedium26 = "TableStyleMedium26".asInstanceOf[TableStyleMedium26]
-  @scala.inline
-  def TableStyleMedium27: TableStyleMedium27 = "TableStyleMedium27".asInstanceOf[TableStyleMedium27]
-  @scala.inline
-  def TableStyleMedium28: TableStyleMedium28 = "TableStyleMedium28".asInstanceOf[TableStyleMedium28]
-  @scala.inline
-  def TableStyleMedium3: TableStyleMedium3 = "TableStyleMedium3".asInstanceOf[TableStyleMedium3]
-  @scala.inline
-  def TableStyleMedium4: TableStyleMedium4 = "TableStyleMedium4".asInstanceOf[TableStyleMedium4]
-  @scala.inline
-  def TableStyleMedium5: TableStyleMedium5 = "TableStyleMedium5".asInstanceOf[TableStyleMedium5]
-  @scala.inline
-  def TableStyleMedium6: TableStyleMedium6 = "TableStyleMedium6".asInstanceOf[TableStyleMedium6]
-  @scala.inline
-  def TableStyleMedium7: TableStyleMedium7 = "TableStyleMedium7".asInstanceOf[TableStyleMedium7]
-  @scala.inline
-  def TableStyleMedium8: TableStyleMedium8 = "TableStyleMedium8".asInstanceOf[TableStyleMedium8]
-  @scala.inline
-  def TableStyleMedium9: TableStyleMedium9 = "TableStyleMedium9".asInstanceOf[TableStyleMedium9]
-  @scala.inline
-  def True: True = "True".asInstanceOf[True]
-  @scala.inline
-  def aboveAverage: aboveAverage = "aboveAverage".asInstanceOf[aboveAverage]
-  @scala.inline
-  def absolute: absolute = "absolute".asInstanceOf[absolute]
-  @scala.inline
-  def angle: angle = "angle".asInstanceOf[angle]
-  @scala.inline
-  def asDisplayed: asDisplayed = "asDisplayed".asInstanceOf[asDisplayed]
-  @scala.inline
-  def atEnd: atEnd = "atEnd".asInstanceOf[atEnd]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def autoMax: autoMax = "autoMax".asInstanceOf[autoMax]
-  @scala.inline
-  def autoMin: autoMin = "autoMin".asInstanceOf[autoMin]
-  @scala.inline
-  def average: average = "average".asInstanceOf[average]
-  @scala.inline
-  def between: between = "between".asInstanceOf[between]
-  @scala.inline
-  def blank: blank = "blank".asInstanceOf[blank]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
-  @scala.inline
-  def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
-  @scala.inline
-  def cache: cache = "cache".asInstanceOf[cache]
-  @scala.inline
-  def cellIs: cellIs = "cellIs".asInstanceOf[cellIs]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def centerContinuous: centerContinuous = "centerContinuous".asInstanceOf[centerContinuous]
-  @scala.inline
-  def colorScale: colorScale = "colorScale".asInstanceOf[colorScale]
-  @scala.inline
-  def containsBlanks: containsBlanks = "containsBlanks".asInstanceOf[containsBlanks]
-  @scala.inline
-  def containsErrors: containsErrors = "containsErrors".asInstanceOf[containsErrors]
-  @scala.inline
-  def containsText: containsText = "containsText".asInstanceOf[containsText]
-  @scala.inline
-  def context: context = "context".asInstanceOf[context]
-  @scala.inline
-  def count: count = "count".asInstanceOf[count]
-  @scala.inline
-  def countNums: countNums = "countNums".asInstanceOf[countNums]
-  @scala.inline
-  def custom: custom = "custom".asInstanceOf[custom]
-  @scala.inline
-  def darkDown: darkDown = "darkDown".asInstanceOf[darkDown]
-  @scala.inline
-  def darkGray: darkGray = "darkGray".asInstanceOf[darkGray]
-  @scala.inline
-  def darkGrid: darkGrid = "darkGrid".asInstanceOf[darkGrid]
-  @scala.inline
-  def darkHorizontal: darkHorizontal = "darkHorizontal".asInstanceOf[darkHorizontal]
-  @scala.inline
-  def darkTrellis: darkTrellis = "darkTrellis".asInstanceOf[darkTrellis]
-  @scala.inline
-  def darkUp: darkUp = "darkUp".asInstanceOf[darkUp]
-  @scala.inline
-  def darkVertical: darkVertical = "darkVertical".asInstanceOf[darkVertical]
-  @scala.inline
-  def dash: dash = "dash".asInstanceOf[dash]
-  @scala.inline
-  def dashDot: dashDot = "dashDot".asInstanceOf[dashDot]
-  @scala.inline
-  def dashDotDot: dashDotDot = "dashDotDot".asInstanceOf[dashDotDot]
-  @scala.inline
-  def dataBar: dataBar = "dataBar".asInstanceOf[dataBar]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def decimal: decimal = "decimal".asInstanceOf[decimal]
-  @scala.inline
-  def displayed: displayed = "displayed".asInstanceOf[displayed]
-  @scala.inline
-  def distributed: distributed = "distributed".asInstanceOf[distributed]
-  @scala.inline
-  def dotted: dotted = "dotted".asInstanceOf[dotted]
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
-  @scala.inline
-  def doubleAccounting: doubleAccounting = "doubleAccounting".asInstanceOf[doubleAccounting]
-  @scala.inline
-  def downThenOver: downThenOver = "downThenOver".asInstanceOf[downThenOver]
-  @scala.inline
-  def emit: emit = "emit".asInstanceOf[emit]
-  @scala.inline
-  def equal: equal = "equal".asInstanceOf[equal]
-  @scala.inline
-  def expression: expression = "expression".asInstanceOf[expression]
-  @scala.inline
-  def fill: fill = "fill".asInstanceOf[fill]
-  @scala.inline
-  def formula: formula = "formula".asInstanceOf[formula]
-  @scala.inline
-  def frozen: frozen = "frozen".asInstanceOf[frozen]
-  @scala.inline
-  def gif: gif = "gif".asInstanceOf[gif]
-  @scala.inline
-  def gradient: gradient = "gradient".asInstanceOf[gradient]
-  @scala.inline
-  def gray0625: gray0625 = "gray0625".asInstanceOf[gray0625]
-  @scala.inline
-  def gray125: gray125 = "gray125".asInstanceOf[gray125]
-  @scala.inline
-  def greaterThan: greaterThan = "greaterThan".asInstanceOf[greaterThan]
-  @scala.inline
-  def greaterThanOrEqual: greaterThanOrEqual = "greaterThanOrEqual".asInstanceOf[greaterThanOrEqual]
-  @scala.inline
-  def hair: hair = "hair".asInstanceOf[hair]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def iconSet: iconSet = "iconSet".asInstanceOf[iconSet]
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
-  @scala.inline
-  def image: image = "image".asInstanceOf[image]
-  @scala.inline
-  def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
-  @scala.inline
-  def justify: justify = "justify".asInstanceOf[justify]
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
-  @scala.inline
-  def last7Days: last7Days = "last7Days".asInstanceOf[last7Days]
-  @scala.inline
-  def lastMonth: lastMonth = "lastMonth".asInstanceOf[lastMonth]
-  @scala.inline
-  def lastWeek: lastWeek = "lastWeek".asInstanceOf[lastWeek]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def leftToRight: leftToRight = "leftToRight".asInstanceOf[leftToRight]
-  @scala.inline
-  def lessThan: lessThan = "lessThan".asInstanceOf[lessThan]
-  @scala.inline
-  def lessThanOrEqual: lessThanOrEqual = "lessThanOrEqual".asInstanceOf[lessThanOrEqual]
-  @scala.inline
-  def lightDown: lightDown = "lightDown".asInstanceOf[lightDown]
-  @scala.inline
-  def lightGray: lightGray = "lightGray".asInstanceOf[lightGray]
-  @scala.inline
-  def lightGrid: lightGrid = "lightGrid".asInstanceOf[lightGrid]
-  @scala.inline
-  def lightHorizontal: lightHorizontal = "lightHorizontal".asInstanceOf[lightHorizontal]
-  @scala.inline
-  def lightTrellis: lightTrellis = "lightTrellis".asInstanceOf[lightTrellis]
-  @scala.inline
-  def lightUp: lightUp = "lightUp".asInstanceOf[lightUp]
-  @scala.inline
-  def lightVertical: lightVertical = "lightVertical".asInstanceOf[lightVertical]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
-  @scala.inline
-  def major: major = "major".asInstanceOf[major]
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
-  @scala.inline
-  def mediumDashDot: mediumDashDot = "mediumDashDot".asInstanceOf[mediumDashDot]
-  @scala.inline
-  def mediumDashDotDot: mediumDashDotDot = "mediumDashDotDot".asInstanceOf[mediumDashDotDot]
-  @scala.inline
-  def mediumDashed: mediumDashed = "mediumDashed".asInstanceOf[mediumDashed]
-  @scala.inline
-  def mediumGray: mediumGray = "mediumGray".asInstanceOf[mediumGray]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
-  @scala.inline
-  def minor: minor = "minor".asInstanceOf[minor]
-  @scala.inline
-  def nextMonth: nextMonth = "nextMonth".asInstanceOf[nextMonth]
-  @scala.inline
-  def nextWeek: nextWeek = "nextWeek".asInstanceOf[nextWeek]
-  @scala.inline
-  def none_ : none_ = "none".asInstanceOf[none_]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def notBetween: notBetween = "notBetween".asInstanceOf[notBetween]
-  @scala.inline
-  def notContainsBlanks: notContainsBlanks = "notContainsBlanks".asInstanceOf[notContainsBlanks]
-  @scala.inline
-  def notContainsErrors: notContainsErrors = "notContainsErrors".asInstanceOf[notContainsErrors]
-  @scala.inline
-  def notEqual: notEqual = "notEqual".asInstanceOf[notEqual]
-  @scala.inline
-  def num: num = "num".asInstanceOf[num]
-  @scala.inline
-  def oneCells: oneCells = "oneCells".asInstanceOf[oneCells]
-  @scala.inline
-  def overThenDown: overThenDown = "overThenDown".asInstanceOf[overThenDown]
-  @scala.inline
-  def pageBreakPreview: pageBreakPreview = "pageBreakPreview".asInstanceOf[pageBreakPreview]
-  @scala.inline
-  def pageLayout: pageLayout = "pageLayout".asInstanceOf[pageLayout]
-  @scala.inline
-  def path: path = "path".asInstanceOf[path]
-  @scala.inline
-  def pattern: pattern = "pattern".asInstanceOf[pattern]
-  @scala.inline
-  def percent: percent = "percent".asInstanceOf[percent]
-  @scala.inline
-  def percentile: percentile = "percentile".asInstanceOf[percentile]
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
-  @scala.inline
-  def promise: promise = "promise".asInstanceOf[promise]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def rightToLeft: rightToLeft = "rightToLeft".asInstanceOf[rightToLeft]
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
-  @scala.inline
-  def singleAccounting: singleAccounting = "singleAccounting".asInstanceOf[singleAccounting]
-  @scala.inline
-  def slantDashDot: slantDashDot = "slantDashDot".asInstanceOf[slantDashDot]
-  @scala.inline
-  def solid: solid = "solid".asInstanceOf[solid]
-  @scala.inline
-  def split: split = "split".asInstanceOf[split]
-  @scala.inline
-  def stdDev: stdDev = "stdDev".asInstanceOf[stdDev]
-  @scala.inline
-  def subscript: subscript = "subscript".asInstanceOf[subscript]
-  @scala.inline
-  def sum: sum = "sum".asInstanceOf[sum]
-  @scala.inline
-  def superscript: superscript = "superscript".asInstanceOf[superscript]
-  @scala.inline
-  def textLength: textLength = "textLength".asInstanceOf[textLength]
-  @scala.inline
-  def thick: thick = "thick".asInstanceOf[thick]
-  @scala.inline
-  def thin: thin = "thin".asInstanceOf[thin]
-  @scala.inline
-  def thisMonth: thisMonth = "thisMonth".asInstanceOf[thisMonth]
-  @scala.inline
-  def thisWeek: thisWeek = "thisWeek".asInstanceOf[thisWeek]
-  @scala.inline
-  def timePeriod: timePeriod = "timePeriod".asInstanceOf[timePeriod]
-  @scala.inline
-  def today: today = "today".asInstanceOf[today]
-  @scala.inline
-  def tomorrow: tomorrow = "tomorrow".asInstanceOf[tomorrow]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def top10: top10 = "top10".asInstanceOf[top10]
-  @scala.inline
-  def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
-  @scala.inline
-  def topRight: topRight = "topRight".asInstanceOf[topRight]
-  @scala.inline
-  def twoCells: twoCells = "twoCells".asInstanceOf[twoCells]
-  @scala.inline
-  def `var`: `var` = "var".asInstanceOf[`var`]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def veryHidden: veryHidden = "veryHidden".asInstanceOf[veryHidden]
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
-  @scala.inline
-  def whole: whole = "whole".asInstanceOf[whole]
-  @scala.inline
-  def yesterday: yesterday = "yesterday".asInstanceOf[yesterday]
 }
-

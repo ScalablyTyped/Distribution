@@ -2,7 +2,7 @@ package typings.chrome.global.chrome.cast.media
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.cast.media.SeekRequest")
 @js.native
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   */
 class SeekRequest ()
   extends typings.chrome.chrome.cast.media.SeekRequest
-

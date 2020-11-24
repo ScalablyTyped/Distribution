@@ -10,7 +10,7 @@ import typings.tstl.iforwarditeratorMod.IForwardIterator
 import typings.tstl.ipushMod.IPush
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IContainer_[T /* <: PElem */, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseT, PElem] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, PElem] */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, PElem] */, PElem]
@@ -18,11 +18,7 @@ trait IContainer_[T /* <: PElem */, SourceT /* <: IContainer[T, SourceT, Iterato
      with Iterable[T]
      with IEmpty
      with IPush[PElem] {
-  /**
-    * @inheritDoc
-    */
-  @JSName(js.Symbol.iterator)
-  var iterator_IContainer_ : js.Function0[IterableIterator[T]] = js.native
+  
   /**
     * Range Assigner.
     *
@@ -30,10 +26,12 @@ trait IContainer_[T /* <: PElem */, SourceT /* <: IContainer[T, SourceT, Iterato
     * @param last Input iterator of the last position.
     */
   def assign[InputIterator /* <: IForwardIterator[PElem, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
+  
   /**
     * @inheritDoc
     */
   def clear(): Unit = js.native
+  
   /**
     * Erase elements in range.
     *
@@ -49,12 +47,20 @@ trait IContainer_[T /* <: PElem */, SourceT /* <: IContainer[T, SourceT, Iterato
     * @return Iterator following the *pos*, strained by the erasing.
     */
   def erase(pos: IteratorT): IteratorT = js.native
+  
+  /**
+    * @inheritDoc
+    */
+  @JSName(js.Symbol.iterator)
+  var iterator_IContainer_ : js.Function0[IterableIterator[T]] = js.native
+  
   /**
     * Swap elements.
     *
     * @param obj Target container to swap.
     */
   def swap(obj: SourceT): Unit = js.native
+  
   /**
     * Native function for `JSON.stringify()`.
     *
@@ -62,4 +68,3 @@ trait IContainer_[T /* <: PElem */, SourceT /* <: IContainer[T, SourceT, Iterato
     */
   def toJSON(): js.Array[T] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.babylonjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "XRWindowsMotionController")
 @js.native
@@ -15,4 +15,3 @@ class XRWindowsMotionController protected ()
     */
   def this(gamepadInfo: js.Any) = this()
 }
-

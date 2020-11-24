@@ -2,9 +2,46 @@ package typings.htmlPdf
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object htmlPdfStrings {
+  
+  @scala.inline
+  def A3: A3 = "A3".asInstanceOf[A3]
+  
+  @scala.inline
+  def A4: A4 = "A4".asInstanceOf[A4]
+  
+  @scala.inline
+  def A5: A5 = "A5".asInstanceOf[A5]
+  
+  @scala.inline
+  def Legal: Legal = "Legal".asInstanceOf[Legal]
+  
+  @scala.inline
+  def Letter: Letter = "Letter".asInstanceOf[Letter]
+  
+  @scala.inline
+  def Tabloid: Tabloid = "Tabloid".asInstanceOf[Tabloid]
+  
+  @scala.inline
+  def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+  
+  @scala.inline
+  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  
+  @scala.inline
+  def manual: manual = "manual".asInstanceOf[manual]
+  
+  @scala.inline
+  def pdf: pdf = "pdf".asInstanceOf[pdf]
+  
+  @scala.inline
+  def png: png = "png".asInstanceOf[png]
+  
+  @scala.inline
+  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
   @js.native
   sealed trait A3 extends js.Object
   
@@ -40,30 +77,4 @@ object htmlPdfStrings {
   
   @js.native
   sealed trait portrait extends js.Object
-  
-  @scala.inline
-  def A3: A3 = "A3".asInstanceOf[A3]
-  @scala.inline
-  def A4: A4 = "A4".asInstanceOf[A4]
-  @scala.inline
-  def A5: A5 = "A5".asInstanceOf[A5]
-  @scala.inline
-  def Legal: Legal = "Legal".asInstanceOf[Legal]
-  @scala.inline
-  def Letter: Letter = "Letter".asInstanceOf[Letter]
-  @scala.inline
-  def Tabloid: Tabloid = "Tabloid".asInstanceOf[Tabloid]
-  @scala.inline
-  def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
-  @scala.inline
-  def pdf: pdf = "pdf".asInstanceOf[pdf]
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
 }
-

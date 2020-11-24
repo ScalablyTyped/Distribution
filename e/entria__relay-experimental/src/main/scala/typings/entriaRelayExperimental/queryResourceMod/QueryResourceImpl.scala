@@ -8,12 +8,14 @@ import typings.relayRuntime.relayStoreTypesMod.OperationDescriptor
 import typings.relayRuntime.relayStoreTypesMod.Snapshot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait QueryResourceImpl extends js.Object {
+  
   def getCacheEntry(operation: OperationDescriptor, fetchPolicy: FetchPolicy): QueryResourceCacheEntry | Null = js.native
   def getCacheEntry(operation: OperationDescriptor, fetchPolicy: FetchPolicy, maybeRenderPolicy: RenderPolicy): QueryResourceCacheEntry | Null = js.native
+  
   /**
     * This function should be called during a Component's render function,
     * to either read an existing cached value for the query, or fetch the query
@@ -193,6 +195,7 @@ trait QueryResourceImpl extends js.Object {
     observer: Observer[Snapshot],
     cacheKeyBuster: Double
   ): QueryResult = js.native
+  
   /**
     * This function should be called during a Component's commit phase
     * (e.g. inside useEffect), in order to retain the operation in the Relay store
@@ -200,4 +203,3 @@ trait QueryResourceImpl extends js.Object {
     */
   def retain(queryResult: QueryResult): Disposable = js.native
 }
-

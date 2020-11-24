@@ -8,7 +8,7 @@ import typings.std.Document
 import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new Http instance. By default, a PlayCanvas application creates an instance of this
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Http extends js.Object {
+  
   /**
     * Perform an HTTP DELETE request to the given url.
     * @param url - The URL to make the request to.
@@ -47,6 +48,7 @@ trait Http extends js.Object {
     * @returns The request object.
     */
   def del(url: js.Any, options: Async, callback: HttpResponse): XMLHttpRequest = js.native
+  
   /**
     * Perform an HTTP GET request to the given url.
     * @example
@@ -82,6 +84,7 @@ trait Http extends js.Object {
     * @returns The request object.
     */
   def get(url: String, options: Async, callback: HttpResponse): XMLHttpRequest = js.native
+  
   /**
     * Perform an HTTP POST request to the given url.
     * @param url - The URL to make the request to.
@@ -117,6 +120,7 @@ trait Http extends js.Object {
     * @returns The request object.
     */
   def post(url: String, data: js.Any, options: Cache, callback: HttpResponse): XMLHttpRequest = js.native
+  
   def put(url: String, data: js.Any, callback: HttpResponse): XMLHttpRequest = js.native
   def put(url: String, data: js.Any, options: Cache, callback: HttpResponse): XMLHttpRequest = js.native
   /**
@@ -154,6 +158,7 @@ trait Http extends js.Object {
     * @returns The request object.
     */
   def put(url: String, data: Document, options: Cache, callback: HttpResponse): XMLHttpRequest = js.native
+  
   /**
     * Make a general purpose HTTP request.
     * @param method - The HTTP method "GET", "POST", "PUT", "DELETE".
@@ -188,4 +193,3 @@ trait Http extends js.Object {
     */
   def request(method: String, url: String, options: Headers, callback: HttpResponse): XMLHttpRequest = js.native
 }
-

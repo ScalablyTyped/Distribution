@@ -13,41 +13,17 @@ import typings.std.HTMLSelectElement
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ember/component/-private/view-mixin", JSImport.Namespace)
 @js.native
 object viewMixinMod extends js.Object {
+  
+  val default: typings.emberObject.mixinMod.default[ViewMixin, typings.emberObject.mod.default] = js.native
+  
   @js.native
   trait ViewMixin extends js.Object {
-    /**
-      * Returns a jQuery object for this view's element. If you pass in a selector
-      * string, this method will return a jQuery object, using the current element
-      * as its buffer.
-      */
-    @JSName("$")
-    var $_Original: JQueryStatic = js.native
-    /**
-      * A list of properties of the view to apply as attributes. If the property
-      * is a string value, the value of that string will be applied as the value
-      * for an attribute of the property's name.
-      */
-    var attributeBindings: js.Array[String] = js.native
-    /**
-      * Returns the current DOM element for the view.
-      */
-    var element: Element = js.native
-    /**
-      * The HTML `id` of the view's element in the DOM. You can provide this
-      * value yourself but it must be unique (just as in HTML):
-      */
-    var elementId: String = js.native
-    /**
-      * Tag name for the view's outer element. The tag name is only used when an
-      * element is first created. If you change the `tagName` for an element, you
-      * must destroy and recreate the view element.
-      */
-    var tagName: String = js.native
+    
     /**
       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
       * @param element A DOM element to wrap in a jQuery object.
@@ -231,6 +207,13 @@ object viewMixinMod extends js.Object {
     @JSName("$")
     def $[TElement /* <: Element */](selector: Selector, context: Element): JQuery[TElement] = js.native
     /**
+      * Returns a jQuery object for this view's element. If you pass in a selector
+      * string, this method will return a jQuery object, using the current element
+      * as its buffer.
+      */
+    @JSName("$")
+    var $_Original: JQueryStatic = js.native
+    /**
       * Accepts a string containing a CSS selector which is then used to match a set of elements.
       * @param selector A string containing a selector expression
       * @param context A DOM Element, Document, Selector or jQuery to use as context
@@ -295,12 +278,32 @@ object viewMixinMod extends js.Object {
       */
     @JSName("$")
     def $_T_PlainObjectWildcard[T /* <: PlainObject[_] */](`object`: T): JQuery[T] = js.native
+    
+    /**
+      * A list of properties of the view to apply as attributes. If the property
+      * is a string value, the value of that string will be applied as the value
+      * for an attribute of the property's name.
+      */
+    var attributeBindings: js.Array[String] = js.native
+    
     /**
       * Called when the element of the view has been inserted into the DOM.
       * Override this function to do any set up that requires an element
       * in the document body.
       */
     def didInsertElement(): Unit = js.native
+    
+    /**
+      * Returns the current DOM element for the view.
+      */
+    var element: Element = js.native
+    
+    /**
+      * The HTML `id` of the view's element in the DOM. You can provide this
+      * value yourself but it must be unique (just as in HTML):
+      */
+    var elementId: String = js.native
+    
     /**
       * Renders the view again. This will work regardless of whether the
       * view is already in the DOM or not. If the view is in the DOM, the
@@ -308,24 +311,31 @@ object viewMixinMod extends js.Object {
       * to synchronize.
       */
     def rerender(): Unit = js.native
+    
+    /**
+      * Tag name for the view's outer element. The tag name is only used when an
+      * element is first created. If you change the `tagName` for an element, you
+      * must destroy and recreate the view element.
+      */
+    var tagName: String = js.native
+    
     /**
       * Called when the view is about to rerender, but before anything has
       * been torn down. This is a good opportunity to tear down any manual
       * observers you have installed based on the DOM state
       */
     def willClearRender(): Unit = js.native
+    
     /**
       * Called when the element of the view is going to be destroyed. Override
       * this function to do any teardown that requires an element, like removing
       * event listeners.
       */
     def willDestroyElement(): Unit = js.native
+    
     /**
       * Called when a view is going to insert an element into the DOM.
       */
     def willInsertElement(): Unit = js.native
   }
-  
-  val default: typings.emberObject.mixinMod.default[ViewMixin, typings.emberObject.mod.default] = js.native
 }
-

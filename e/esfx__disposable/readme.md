@@ -11,8 +11,8 @@ A low-level API for defining explicit resource management.
 | Full name          | @esfx/disposable |
 | Keywords           | - |
 | # releases         | 14 |
-| # dependents       | 13 |
-| # downloads        | 58088 |
+| # dependents       | 14 |
+| # downloads        | 176825 |
 | # stars            | 0 |
 
 ## Links

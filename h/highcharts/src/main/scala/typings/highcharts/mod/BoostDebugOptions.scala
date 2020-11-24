@@ -2,10 +2,11 @@ package typings.highcharts.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BoostDebugOptions extends js.Object {
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Show the number of points
     * skipped through culling.
@@ -15,6 +16,7 @@ trait BoostDebugOptions extends js.Object {
     * other.
     */
   var showSkipSummary: js.UndefOr[Boolean] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Time the WebGL to SVG buffer
     * copy
@@ -26,6 +28,7 @@ trait BoostDebugOptions extends js.Object {
     * complete is outputted.
     */
   var timeBufferCopy: js.UndefOr[Boolean] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Time the building of the k-d
     * tree.
@@ -36,6 +39,7 @@ trait BoostDebugOptions extends js.Object {
     * Following, it does not affect the performance of the rendering itself.
     */
   var timeKDTree: js.UndefOr[Boolean] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Time the series rendering.
     *
@@ -43,6 +47,7 @@ trait BoostDebugOptions extends js.Object {
     * to true.
     */
   var timeRendering: js.UndefOr[Boolean] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Time the series processing.
     *
@@ -50,6 +55,7 @@ trait BoostDebugOptions extends js.Object {
     * buffers when set to true.
     */
   var timeSeriesProcessing: js.UndefOr[Boolean] = js.native
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Time the the WebGL setup.
     *
@@ -58,49 +64,63 @@ trait BoostDebugOptions extends js.Object {
     */
   var timeSetup: js.UndefOr[Boolean] = js.native
 }
-
 object BoostDebugOptions {
+  
   @scala.inline
   def apply(): BoostDebugOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BoostDebugOptions]
   }
+  
   @scala.inline
   implicit class BoostDebugOptionsOps[Self <: BoostDebugOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setShowSkipSummary(value: Boolean): Self = this.set("showSkipSummary", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteShowSkipSummary: Self = this.set("showSkipSummary", js.undefined)
+    
     @scala.inline
     def setTimeBufferCopy(value: Boolean): Self = this.set("timeBufferCopy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTimeBufferCopy: Self = this.set("timeBufferCopy", js.undefined)
+    
     @scala.inline
     def setTimeKDTree(value: Boolean): Self = this.set("timeKDTree", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTimeKDTree: Self = this.set("timeKDTree", js.undefined)
+    
     @scala.inline
     def setTimeRendering(value: Boolean): Self = this.set("timeRendering", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTimeRendering: Self = this.set("timeRendering", js.undefined)
+    
     @scala.inline
     def setTimeSeriesProcessing(value: Boolean): Self = this.set("timeSeriesProcessing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTimeSeriesProcessing: Self = this.set("timeSeriesProcessing", js.undefined)
+    
     @scala.inline
     def setTimeSetup(value: Boolean): Self = this.set("timeSetup", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTimeSetup: Self = this.set("timeSetup", js.undefined)
   }
-  
 }
-

@@ -6,11 +6,12 @@ import typings.reduxActions.mod.ActionMeta
 import typings.reduxForm.reduxFormMod.FormSubmitHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-saga-routines", "bindRoutineToReduxForm")
 @js.native
 object bindRoutineToReduxForm extends js.Object {
+  
   def apply[TFormData, TProps](
     routine: Routine[
       ActionFunction1[
@@ -37,4 +38,3 @@ object bindRoutineToReduxForm extends js.Object {
     noSuccessPayload: Boolean
   ): FormSubmitHandler[TFormData, TProps, String] = js.native
 }
-

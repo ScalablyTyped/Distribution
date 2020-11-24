@@ -4,7 +4,7 @@ import typings.kendoUi.kendo.dataviz.map.LayerOptions
 import typings.kendoUi.kendo.dataviz.ui.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.dataviz.map.Layer")
 @js.native
@@ -13,4 +13,3 @@ class Layer_ protected ()
   def this(map: Map) = this()
   def this(map: Map, options: LayerOptions) = this()
 }
-

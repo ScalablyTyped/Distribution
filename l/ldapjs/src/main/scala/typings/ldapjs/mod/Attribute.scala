@@ -3,14 +3,18 @@ package typings.ldapjs.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ldapjs", "Attribute")
 @js.native
 class Attribute () extends js.Object {
+  
   val buffers: js.Array[Buffer] = js.native
+  
   val json: AttributeJson = js.native
+  
   var `type`: String = js.native
+  
   /**
     *  Array of string values, binaries are represented in base64.
     *  get: When reading it always returns an array of strings.
@@ -19,12 +23,12 @@ class Attribute () extends js.Object {
     */
   var vals: String | js.Array[String] = js.native
 }
-
 /* static members */
 @JSImport("ldapjs", "Attribute")
 @js.native
 object Attribute extends js.Object {
+  
   def compare(a: Attribute, b: Attribute): Double = js.native
+  
   def isAttribute(`object`: js.Any): /* is ldapjs.ldapjs.Attribute */ Boolean = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.seleniumWebdriver.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "TouchSequence")
 @js.native
@@ -12,6 +12,7 @@ class TouchSequence protected () extends js.Object {
     * @constructor
     */
   def this(driver: WebDriver) = this()
+  
   /**
     * Double taps an element.
     *
@@ -19,6 +20,7 @@ class TouchSequence protected () extends js.Object {
     * @return {!TouchSequence} A self reference.
     */
   def doubleTap(elem: WebElement): TouchSequence = js.native
+  
   /**
     * Flick, starting anywhere on the screen, at speed xspeed and yspeed.
     *
@@ -27,6 +29,7 @@ class TouchSequence protected () extends js.Object {
     * @return {!TouchSequence} A self reference.
     */
   def flick(speed: ISpeed): TouchSequence = js.native
+  
   /**
     * Flick starting at elem and moving by x and y at specified speed.
     *
@@ -36,6 +39,7 @@ class TouchSequence protected () extends js.Object {
     * @return {!TouchSequence} A self reference.
     */
   def flickElement(elem: WebElement, offset: IOffset, speed: Double): TouchSequence = js.native
+  
   /**
     * Long press on an element.
     *
@@ -43,6 +47,7 @@ class TouchSequence protected () extends js.Object {
     * @return {!TouchSequence} A self reference.
     */
   def longPress(elem: WebElement): TouchSequence = js.native
+  
   /**
     * Move a held {@linkplain #tapAndHold touch} to the specified location.
     *
@@ -50,12 +55,14 @@ class TouchSequence protected () extends js.Object {
     * @return {!TouchSequence} A self reference.
     */
   def move(location: ILocation): TouchSequence = js.native
+  
   /**
     * Executes this action sequence.
     * @return {!Promise} A promise that will be resolved once
     *     this sequence has completed.
     */
   def perform(): js.Promise[Unit] = js.native
+  
   /**
     * Release a held {@linkplain #tapAndHold touch} at the specified location.
     *
@@ -63,6 +70,7 @@ class TouchSequence protected () extends js.Object {
     * @return {!TouchSequence} A self reference.
     */
   def release(location: ILocation): TouchSequence = js.native
+  
   /**
     * Scrolls the touch screen by the given offset.
     *
@@ -70,6 +78,7 @@ class TouchSequence protected () extends js.Object {
     * @return {!TouchSequence} A self reference.
     */
   def scroll(offset: IOffset): TouchSequence = js.native
+  
   /**
     * Scrolls the touch screen, starting on `elem` and moving by the specified
     * offset.
@@ -79,6 +88,7 @@ class TouchSequence protected () extends js.Object {
     * @return {!TouchSequence} A self reference.
     */
   def scrollFromElement(elem: WebElement, offset: IOffset): TouchSequence = js.native
+  
   /**
     * Taps an element.
     *
@@ -86,6 +96,7 @@ class TouchSequence protected () extends js.Object {
     * @return {!TouchSequence} A self reference.
     */
   def tap(elem: WebElement): TouchSequence = js.native
+  
   /**
     * Touch down at the given location.
     *
@@ -94,4 +105,3 @@ class TouchSequence protected () extends js.Object {
     */
   def tapAndHold(location: ILocation): TouchSequence = js.native
 }
-

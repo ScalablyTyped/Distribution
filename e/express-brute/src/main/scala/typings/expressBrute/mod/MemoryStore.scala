@@ -2,7 +2,7 @@ package typings.expressBrute.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("express-brute", "MemoryStore")
 @js.native
@@ -13,18 +13,21 @@ import scala.scalajs.js.annotation._
   */
 class MemoryStore () extends js.Object {
   def this(options: MemoryStoreOptions) = this()
+  
   /**
     * @summary Gets key value.
     * @param {string}      key     The key name.
     * @param {Function}    callbck The callback.
     */
   def get(key: String, callback: js.Function2[/* error */ js.Any, /* data */ js.Object, Unit]): Unit = js.native
+  
   /**
     * @summary Deletes the key.
     * @param {string}      key      The name.
     * @param {Function}    callback The callback.
     */
   def reset(key: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+  
   /**
     * @summary Sets the key value.
     * @param {string}      key      The name.
@@ -34,4 +37,3 @@ class MemoryStore () extends js.Object {
     */
   def set(key: String, value: js.Any, lifetime: Double, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
 }
-

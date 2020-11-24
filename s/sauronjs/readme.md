@@ -12,7 +12,7 @@ frontend library for advanced interactivity based on observables
 | Keywords           | observables, reactive, functional, broadcast, events |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 37556 |
+| # downloads        | 7229 |
 | # stars            | 1 |
 
 ## Links

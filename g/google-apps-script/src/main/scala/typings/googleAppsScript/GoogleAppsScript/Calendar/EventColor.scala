@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Calendar
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EventColor extends js.Object
-
 /**
   * An enum representing the named event colors available in the Calendar service.
   */
 @JSGlobal("GoogleAppsScript.Calendar.EventColor")
 @js.native
 object EventColor extends js.Object {
+  
   @js.native
   sealed trait BLUE extends EventColor
   
@@ -45,6 +45,4 @@ object EventColor extends js.Object {
   
   @js.native
   sealed trait YELLOW extends EventColor
-  
 }
-

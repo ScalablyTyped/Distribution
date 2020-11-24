@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Acceleratortypes")
 @js.native
 class ResourceAcceleratortypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.acceleratorTypes.aggregatedList
     * @desc Retrieves an aggregated list of accelerator types.
@@ -48,6 +48,9 @@ class ResourceAcceleratortypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAcceleratorTypeAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.acceleratorTypes.get
     * @desc Returns the specified accelerator type.
@@ -78,6 +81,7 @@ class ResourceAcceleratortypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAcceleratorType]
   ): Unit = js.native
+  
   /**
     * compute.acceleratorTypes.list
     * @desc Retrieves a list of accelerator types available to the specified
@@ -116,4 +120,3 @@ class ResourceAcceleratortypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAcceleratorTypeList]
   ): Unit = js.native
 }
-

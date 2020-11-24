@@ -2,13 +2,14 @@ package typings.fineUploader.s3Mod.s3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fine-uploader/lib/s3", "s3.FineUploaderBasic")
 @js.native
 class FineUploaderBasic ()
   extends typings.fineUploader.coreMod.FineUploaderBasic {
   def this(fineuploaderOptions: S3CoreOptions) = this()
+  
   /**
     * Retrieve the S3 bucket name associated with the passed file (id). Note that the bucket name is not available before the file has started uploading
     *
@@ -16,6 +17,7 @@ class FineUploaderBasic ()
     * @returns string : The S3 bucket name associated with the passed file (id)
     */
   def getBucket(fileId: Double): String = js.native
+  
   /**
     * Retrieve the S3 object key associated with the passed file (id). Note that the key is not available before the file has started uploading.
     *
@@ -23,6 +25,7 @@ class FineUploaderBasic ()
     * @returns string : The S3 object key associated with the passed file (id)
     */
   def getKey(fileId: Double): String = js.native
+  
   /**
     * Set/update the ACL to be used for one or all file uploads. If the ID is omitted, the new ACL targets all future files that have not yet been uploaded
     *
@@ -31,12 +34,14 @@ class FineUploaderBasic ()
     */
   def setAcl(newAcl: js.Any): Unit = js.native
   def setAcl(newAcl: js.Any, id: Double): Unit = js.native
+  
   /**
     * Pass new or initial credentials. This is used to support the no-server workflow
     *
     * @param any newCredentials : The new or initial credentials to set for server-less uploads
     */
   def setCredentials(newCredentials: js.Any): Unit = js.native
+  
   /**
     * Modify the endpoint that Fine Uploader should POST to when a file has been successfully uploaded to S3
     *
@@ -45,6 +50,7 @@ class FineUploaderBasic ()
     */
   def setUploadSuccessEndpoint(endpoint: String): Unit = js.native
   def setUploadSuccessEndpoint(endpoint: String, id: Double): Unit = js.native
+  
   /**
     * Set additional parameters for the upload success request.
     *
@@ -57,4 +63,3 @@ class FineUploaderBasic ()
   def setUploadSuccessParams(newParams: js.Any): Unit = js.native
   def setUploadSuccessParams(newParams: js.Any, id: Double): Unit = js.native
 }
-

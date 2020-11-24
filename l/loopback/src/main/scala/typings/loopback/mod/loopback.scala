@@ -4,7 +4,7 @@ import typings.loopback.anon.Connector
 import typings.loopback.anon.Relations
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // interface CookieOptions extends core.CookieOptions { }
 // interface Errback extends core.Errback { }
@@ -45,26 +45,32 @@ import scala.scalajs.js.annotation._
 @JSImport("loopback", "loopback")
 @js.native
 class loopback () extends js.Object {
+  
   /** Path to a default favicon shipped with LoopBack.
     * Use as follows: `app.use(require('serve-favicon')(loopback.faviconFile));`
     */
   var faviconFile: String = js.native
+  
   /** True if running in a browser environment; false otherwise.  Static read-only property. */
   var isBrowser: Boolean = js.native
+  
   /** True if running in a server environment; false otherwise.  Static read-only property. */
   var isServer: Boolean = js.native
+  
   /** Mime */
   var mime: String = js.native
+  
   /** The global `Registry` object. */
   var registry: Registry = js.native
+  
   /** Version of LoopBack framework.  Static read-only property. */
   var version: String = js.native
 }
-
 /* static members */
 @JSImport("loopback", "loopback")
 @js.native
 object loopback extends js.Object {
+  
   /**
     * Alter an existing Model class.
     * @param {Model} ModelCtor The model constructor to alter.
@@ -74,6 +80,7 @@ object loopback extends js.Object {
     * @header loopback.configureModel(ModelCtor, config
     */
   def configureModel(ModelCtor: Model, config: Relations): Unit = js.native
+  
   /**
     * Create a data source with passing the provided options to the connector
     * @param {string} name Optional name.
@@ -83,6 +90,7 @@ object loopback extends js.Object {
     * See the relevant connector documentation
     */
   def createDataSource(name: String, options: Connector): Unit = js.native
+  
   /**
     * Create a named vanilla JavaScript class constructor with an attached
     * set of properties and options
@@ -138,6 +146,7 @@ object loopback extends js.Object {
     * @header loopback.createMode
     */
   def createModel(name: String, properties: js.Any, options: js.Any): Unit = js.native
+  
   /**
     * Look up a model class by name from all models created by
     * `loopback.createModel()`
@@ -146,6 +155,7 @@ object loopback extends js.Object {
     * @header loopback.findModel(modelName
     */
   def findModel(modelName: String): Model = js.native
+  
   /**
     * Look up a model class by name from all models created by
     * `loopback.createModel()`. Throw an error when no such model exists
@@ -154,6 +164,7 @@ object loopback extends js.Object {
     * @header loopback.getModel(modelName
     */
   def getModel(modelName: String): Model = js.native
+  
   /**
     * Look up a model class by the base model class.
     * The method can be used by LoopBack
@@ -163,6 +174,7 @@ object loopback extends js.Object {
     * @header loopback.getModelByType(modelType
     */
   def getModelByType(modelType: Model): Model = js.native
+  
   /**
     * Get an in-memory data source. Use one if it already exists
     * @param {string} [name] The name of the data source.
@@ -170,12 +182,14 @@ object loopback extends js.Object {
     */
   def memory(): Unit = js.native
   def memory(name: String): Unit = js.native
+  
   /**
     * Add a remote method to a model.
     * @param {() => void} fn
     * @param {any} options (optional
     */
   def remoteMethod(fn: js.Function0[Unit], options: js.Any): Unit = js.native
+  
   /**
     * Create a template helper
     *     var render = loopback.template('foo.ejs');
@@ -185,4 +199,3 @@ object loopback extends js.Object {
     */
   def template(path: String): Unit = js.native
 }
-

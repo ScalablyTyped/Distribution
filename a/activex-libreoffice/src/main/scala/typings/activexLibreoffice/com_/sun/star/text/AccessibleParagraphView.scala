@@ -22,7 +22,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The accessible view of a paragraph fragment.
@@ -36,8 +36,8 @@ trait AccessibleParagraphView
      with XAccessibleSelection
      with XAccessibleEventBroadcaster
      with XAccessibleTextAttributes
-
 object AccessibleParagraphView {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -124,4 +124,3 @@ object AccessibleParagraphView {
     __obj.asInstanceOf[AccessibleParagraphView]
   }
 }
-

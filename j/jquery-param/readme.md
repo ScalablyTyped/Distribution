@@ -10,9 +10,9 @@ equivalent function to jQuery.param
 | ------------------ | :-------------: |
 | Full name          | jquery-param |
 | Keywords           | jquery, param, equivalent, jquery.param, serialize, post |
-| # releases         | 4 |
-| # dependents       | 43 |
-| # downloads        | 796437 |
+| # releases         | 8 |
+| # dependents       | 50 |
+| # downloads        | 953203 |
 | # stars            | 1 |
 
 ## Links

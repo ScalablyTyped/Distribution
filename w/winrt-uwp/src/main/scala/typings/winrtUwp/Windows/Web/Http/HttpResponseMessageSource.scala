@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Web.Http
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait HttpResponseMessageSource extends js.Object
-
 /** Indicates the source of the data received in the HttpResponseMessage . */
 @JSGlobal("Windows.Web.Http.HttpResponseMessageSource")
 @js.native
 object HttpResponseMessageSource extends js.Object {
+  
   /** The data was from the local cache. */
   @js.native
   sealed trait cache extends HttpResponseMessageSource
@@ -22,6 +22,4 @@ object HttpResponseMessageSource extends js.Object {
   /** A default value that should not be returned under normal circumstances. */
   @js.native
   sealed trait none extends HttpResponseMessageSource
-  
 }
-

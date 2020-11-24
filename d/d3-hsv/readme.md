@@ -11,8 +11,8 @@ The HSV (Hue, Saturation, Value) color space.
 | Full name          | d3-hsv |
 | Keywords           | d3, d3-module, color, hsv |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 22886 |
+| # dependents       | 4 |
+| # downloads        | 90047 |
 | # stars            | 0 |
 
 ## Links

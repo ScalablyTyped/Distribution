@@ -3,7 +3,7 @@ package typings.rx.rxBackpressureMod
 import typings.rx.Rx.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.backpressure", "CompositeDisposable")
 @js.native
@@ -20,4 +20,3 @@ class CompositeDisposableCls protected ()
     */
   def this(disposables: js.Array[IDisposable]) = this()
 }
-

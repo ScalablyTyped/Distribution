@@ -10,15 +10,15 @@ Simple in-memory vinyl file store
 | ------------------ | :-------------: |
 | Full name          | mem-fs |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 205 |
-| # downloads        | 12571627 |
+| # releases         | 2 |
+| # dependents       | 274 |
+| # downloads        | 13519213 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/sboudrias/mem-fs#readme)
-- [Bugs](https://github.com/sboudrias/mem-fs/issues)
-- [Repository](https://github.com/sboudrias/mem-fs)
+- [Homepage](https://github.com/SBoudrias/mem-fs#readme)
+- [Bugs](https://github.com/SBoudrias/mem-fs/issues)
+- [Repository](https://github.com/SBoudrias/mem-fs)
 - [Npm](https://www.npmjs.com/package/mem-fs)
     
 

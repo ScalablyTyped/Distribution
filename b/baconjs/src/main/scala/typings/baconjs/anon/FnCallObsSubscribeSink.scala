@@ -5,10 +5,10 @@ import typings.baconjs.updatebarrierMod.EventSink
 import typings.baconjs.updatebarrierMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallObsSubscribeSink extends js.Object {
+  
   def apply[V](obs: Observable, subscribe: Subscribe[V], sink: EventSink[V]): js.Function0[Unit] = js.native
 }
-

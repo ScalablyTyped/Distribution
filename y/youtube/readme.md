@@ -11,7 +11,7 @@ YouTube upload API
 | Keywords           | youtube, upload, video |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 6168 |
+| # downloads        | 10021 |
 | # stars            | 5 |
 
 ## Links

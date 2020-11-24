@@ -10,9 +10,9 @@ Lumino Polling
 | ------------------ | :-------------: |
 | Full name          | @lumino/polling |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 13 |
-| # downloads        | 293303 |
+| # releases         | 16 |
+| # dependents       | 17 |
+| # downloads        | 613239 |
 | # stars            | 0 |
 
 ## Links

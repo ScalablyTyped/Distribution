@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/poly/v1", "poly_v1.Resource$Users$Assets")
 @js.native
 class ResourceUsersAssets protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * poly.users.assets.list
     * @desc Lists assets authored by the given user. Only the value 'me',
@@ -53,4 +55,3 @@ class ResourceUsersAssets protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListUserAssetsResponse]
   ): Unit = js.native
 }
-

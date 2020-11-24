@@ -10,9 +10,9 @@ Render LaTeX in React apps
 | ------------------ | :-------------: |
 | Full name          | react-latex-next |
 | Keywords           | react, katex, latex, math |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 10080 |
+| # downloads        | 10425 |
 | # stars            | 0 |
 
 ## Links

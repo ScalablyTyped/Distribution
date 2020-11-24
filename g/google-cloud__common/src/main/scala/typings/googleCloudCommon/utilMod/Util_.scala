@@ -6,13 +6,16 @@ import typings.std.Error
 import typings.teenyRequest.mod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/common/build/src/util", "Util")
 @js.native
 class Util_ () extends js.Object {
+  
   var ApiError: TypeofApiError = js.native
+  
   var PartialFailureError: Instantiable1[/* b */ GoogleErrorBody, typings.googleCloudCommon.utilMod.PartialFailureError] = js.native
+  
   /**
     * Decorate the options about to be made in a request.
     *
@@ -21,6 +24,7 @@ class Util_ () extends js.Object {
     * @return {object} reqOpts - The decorated reqOpts.
     */
   def decorateRequest(reqOpts: DecorateRequestOptions, projectId: String): DecorateRequestOptions = js.native
+  
   /**
     * Create a properly-formatted User-Agent string from a package.json file.
     *
@@ -28,6 +32,7 @@ class Util_ () extends js.Object {
     * @return {string} userAgent - The formatted User-Agent string.
     */
   def getUserAgentFromPackageJson(packageJson: PackageJson): String = js.native
+  
   /**
     * Uniformly process an API response.
     *
@@ -68,7 +73,9 @@ class Util_ () extends js.Object {
   def handleResp(err: Error, resp: Response[_], body: js.UndefOr[scala.Nothing], callback: BodyResponseCallback): Unit = js.native
   def handleResp(err: Error, resp: Response[_], body: ResponseBody): Unit = js.native
   def handleResp(err: Error, resp: Response[_], body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
+  
   def isCustomType(unknown: js.Any, module: String): Boolean = js.native
+  
   /**
     * Get a function for making authenticated requests.
     *
@@ -85,6 +92,7 @@ class Util_ () extends js.Object {
     * @param {array} config.scopes - Array of scopes required for the API.
     */
   def makeAuthenticatedRequestFactory(config: MakeAuthenticatedRequestFactoryConfig): MakeAuthenticatedRequest = js.native
+  
   /**
     * Make a request through the `retryRequest` module with built-in error
     * handling and exponential back off.
@@ -101,6 +109,7 @@ class Util_ () extends js.Object {
     * @param {function} callback - The callback function.
     */
   def makeRequest(reqOpts: DecorateRequestOptions, config: MakeRequestConfig, callback: BodyResponseCallback): Unit | Abortable = js.native
+  
   /**
     * Take a Duplexify stream, fetch an authenticated connection header, and
     * create an outgoing writable stream.
@@ -117,6 +126,7 @@ class Util_ () extends js.Object {
     */
   def makeWritableStream(dup: Duplexify, options: MakeWritableStreamOptions): Unit = js.native
   def makeWritableStream(dup: Duplexify, options: MakeWritableStreamOptions, onComplete: js.Function): Unit = js.native
+  
   /**
     * Given two parameters, figure out if this is either:
     *  - Just a callback function
@@ -127,6 +137,7 @@ class Util_ () extends js.Object {
   def maybeOptionsOrCallback[T, C](): js.Tuple2[T, C] = js.native
   def maybeOptionsOrCallback[T, C](optionsOrCallback: C | T): js.Tuple2[T, C] = js.native
   def maybeOptionsOrCallback[T, C](optionsOrCallback: js.UndefOr[C | T], cb: C): js.Tuple2[T, C] = js.native
+  
   /**
     * No op.
     *
@@ -136,6 +147,7 @@ class Util_ () extends js.Object {
     * }
     */
   def noop(): Unit = js.native
+  
   /**
     * Parse the response body from an HTTP request.
     *
@@ -147,6 +159,7 @@ class Util_ () extends js.Object {
     * be returned here, otherwise the original value and an error will be returned.
     */
   def parseHttpRespBody(body: ResponseBody): ParsedHttpResponseBody = js.native
+  
   /**
     * Sniff an incoming HTTP response message for errors.
     *
@@ -156,6 +169,7 @@ class Util_ () extends js.Object {
     * @param {object} parsedHttpRespMessage.resp - The original response object.
     */
   def parseHttpRespMessage(httpRespMessage: Response[_]): ParsedHttpRespMessage = js.native
+  
   /**
     * Returns true if the API request should be retried, given the error that was
     * given the first time the request was attempted. This is used for rate limit
@@ -167,4 +181,3 @@ class Util_ () extends js.Object {
   def shouldRetryRequest(): Boolean = js.native
   def shouldRetryRequest(err: ApiError): Boolean = js.native
 }
-

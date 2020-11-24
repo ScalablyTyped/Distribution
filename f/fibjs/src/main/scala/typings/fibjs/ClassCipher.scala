@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassCipher extends ClassObject {
+  
   /**
     * class prop 
     *
@@ -21,36 +22,7 @@ trait ClassCipher extends ClassObject {
     * @type Integer
     */
   var blockSize: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 返回当前算法初始向量长度，以字节为单位
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var ivSize: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 返回当前算法密码长度，以位为单位
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var keySize: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 返回当前算法名称
-    * 
-    * @readonly
-    * @type String
-    */
-  var name: String = js.native
+  
   /**
     * 
     * @brief 使用当前算法密码解密数据
@@ -61,6 +33,7 @@ trait ClassCipher extends ClassObject {
     * @async
     */
   def decrypt(data: ClassBuffer): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 使用当前算法密码加密数据
@@ -71,6 +44,40 @@ trait ClassCipher extends ClassObject {
     * @async
     */
   def encrypt(data: ClassBuffer): ClassBuffer = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 返回当前算法初始向量长度，以字节为单位
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var ivSize: Double = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 返回当前算法密码长度，以位为单位
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var keySize: Double = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 返回当前算法名称
+    * 
+    * @readonly
+    * @type String
+    */
+  var name: String = js.native
+  
   /**
     * 
     * @brief 使用填充模式
@@ -81,4 +88,3 @@ trait ClassCipher extends ClassObject {
     */
   def paddingMode(mode: Double): Unit = js.native
 }
-

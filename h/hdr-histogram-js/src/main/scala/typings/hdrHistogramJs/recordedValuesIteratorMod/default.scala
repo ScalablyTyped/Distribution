@@ -3,7 +3,7 @@ package typings.hdrHistogramJs.recordedValuesIteratorMod
 import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used for iterating through all recorded histogram values using the finest granularity steps supported by the
@@ -18,4 +18,3 @@ class default protected () extends RecordedValuesIterator {
     */
   def this(histogram: AbstractHistogram) = this()
 }
-

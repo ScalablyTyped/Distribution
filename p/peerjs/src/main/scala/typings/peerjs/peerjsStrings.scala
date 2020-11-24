@@ -2,9 +2,34 @@ package typings.peerjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object peerjsStrings {
+  
+  @scala.inline
+  def call: call = "call".asInstanceOf[call]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def connection: connection = "connection".asInstanceOf[connection]
+  
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  
+  @scala.inline
+  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def open: open = "open".asInstanceOf[open]
+  
+  @scala.inline
+  def stream: stream = "stream".asInstanceOf[stream]
+  
   @js.native
   sealed trait call extends js.Object
   
@@ -28,22 +53,4 @@ object peerjsStrings {
   
   @js.native
   sealed trait stream extends js.Object
-  
-  @scala.inline
-  def call: call = "call".asInstanceOf[call]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def connection: connection = "connection".asInstanceOf[connection]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def stream: stream = "stream".asInstanceOf[stream]
 }
-

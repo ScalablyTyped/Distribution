@@ -4,10 +4,11 @@ import typings.lodash.mod.ValueIterateeCustom
 import typings.lodash.mod.ValueIteratorTypeGuard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashFindFrom3x6[T] extends js.Object {
+  
   def apply(
     predicate: ValueIterateeCustom[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
@@ -23,4 +24,3 @@ trait LodashFindFrom3x6[T] extends js.Object {
     ]
   ): js.UndefOr[S] = js.native
 }
-

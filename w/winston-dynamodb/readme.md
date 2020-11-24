@@ -11,7 +11,7 @@ A Winston transport for Amazon DynamoDB
 | Keywords           | logging, sysadmin, tools, winston, amazon, dynamodb, aws |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2977 |
+| # downloads        | 2813 |
 | # stars            | 0 |
 
 ## Links

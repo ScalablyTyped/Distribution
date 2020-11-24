@@ -2,10 +2,11 @@ package typings.hystrixjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CommandFactory_ extends js.Object {
+  
   def getOrCreate(commandKey: String): CommandBuilder = js.native
   def getOrCreate(commandKey: String, commandGroup: String): CommandBuilder = js.native
   @JSName("getOrCreate")
@@ -40,6 +41,6 @@ trait CommandFactory_ extends js.Object {
   def getOrCreate_R_CommandBuilderA0[R](commandKey: String): CommandBuilderA0[R] = js.native
   @JSName("getOrCreate")
   def getOrCreate_R_CommandBuilderA0[R](commandKey: String, commandGroup: String): CommandBuilderA0[R] = js.native
+  
   def resetCache(): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.aureliaTemplating.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "RelativeViewStrategy")
 @js.native
@@ -12,6 +12,7 @@ class RelativeViewStrategy protected () extends js.Object {
     * @param path The relative path to the view.
     */
   def this(path: String) = this()
+  
   /**
     * Loads a view factory.
     * @param viewEngine The view engine to use during the load process.
@@ -38,10 +39,10 @@ class RelativeViewStrategy protected () extends js.Object {
     loadContext: ResourceLoadContext,
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
+  
   /**
     * Makes the view loaded by this strategy relative to the provided file path.
     * @param file The path to load the view relative to.
     */
   def makeRelativeTo(file: String): Unit = js.native
 }
-

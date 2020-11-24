@@ -2,17 +2,17 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ConditionalFormatType extends js.Object
-
 /**
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalFormatType")
 @js.native
 object ConditionalFormatType extends js.Object {
+  
   @js.native
   sealed trait cellValue extends ConditionalFormatType
   
@@ -36,6 +36,4 @@ object ConditionalFormatType extends js.Object {
   
   @js.native
   sealed trait topBottom extends ConditionalFormatType
-  
 }
-

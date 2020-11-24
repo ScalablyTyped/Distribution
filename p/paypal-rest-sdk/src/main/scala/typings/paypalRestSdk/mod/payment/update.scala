@@ -6,11 +6,12 @@ import typings.paypalRestSdk.mod.PaymentResponse
 import typings.paypalRestSdk.mod.UpdateRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paypal-rest-sdk", "payment.update")
 @js.native
 object update extends js.Object {
+  
   def apply(id: String, data: js.Array[UpdateRequest]): Unit = js.native
   def apply(
     id: String,
@@ -33,4 +34,3 @@ object update extends js.Object {
     cb: CallbackFunction[PaymentResponse]
   ): Unit = js.native
 }
-

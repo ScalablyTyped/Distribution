@@ -12,7 +12,7 @@ Parse MRZ (Machine Readable Zone) from identity documents
 | Keywords           | mrz, machine, readable, zone, identity, documents, card, passport |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 23661 |
+| # downloads        | 25540 |
 | # stars            | 0 |
 
 ## Links

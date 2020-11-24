@@ -11,13 +11,15 @@ import typings.reactDnd.interfacesMod.DropTargetSpec
 import typings.reactDnd.optionsMod.DndOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-dnd/lib/decorators", JSImport.Namespace)
 @js.native
 object decoratorsMod extends js.Object {
+  
   def DragLayer[RequiredProps, CollectedProps](collect: DragLayerCollector[RequiredProps, CollectedProps]): DndComponentEnhancer[CollectedProps] = js.native
   def DragLayer[RequiredProps, CollectedProps](collect: DragLayerCollector[RequiredProps, CollectedProps], options: DndOptions[RequiredProps]): DndComponentEnhancer[CollectedProps] = js.native
+  
   def DragSource[RequiredProps, CollectedProps, DragObject](
     `type`: js.Function1[/* props */ RequiredProps, SourceType],
     spec: DragSourceSpec[RequiredProps, DragObject],
@@ -40,6 +42,7 @@ object decoratorsMod extends js.Object {
     collect: DragSourceCollector[CollectedProps, RequiredProps],
     options: DndOptions[RequiredProps]
   ): DndComponentEnhancer[CollectedProps] = js.native
+  
   def DropTarget[RequiredProps, CollectedProps](
     `type`: js.Function1[/* props */ RequiredProps, TargetType],
     spec: DropTargetSpec[RequiredProps],
@@ -63,4 +66,3 @@ object decoratorsMod extends js.Object {
     options: DndOptions[RequiredProps]
   ): DndComponentEnhancer[CollectedProps] = js.native
 }
-

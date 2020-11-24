@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,27 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassSandBox extends ClassObject {
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询沙箱的 global 对象
-    * 
-    * @readonly
-    * @type Object
-    */
-  var global: js.Object = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询沙箱中现存的所有模块的字典对象
-    * 
-    * 
-    * @readonly
-    * @type Object
-    */
-  var modules: js.Object = js.native
+  
   /**
     * 
     * @brief 向沙箱中添加一个基础模块
@@ -51,6 +31,7 @@ trait ClassSandBox extends ClassObject {
     * 
     */
   def add(mods: js.Object): Unit = js.native
+  
   /**
     * 
     * @brief 向沙箱中添加一个脚本模块
@@ -62,6 +43,7 @@ trait ClassSandBox extends ClassObject {
     * 
     */
   def addScript(srcname: String, script: ClassBuffer): js.Any = js.native
+  
   /**
     * 
     * @brief 冻结当前沙箱，冻结后的沙箱，对 global 所做的修改将被忽略
@@ -69,6 +51,18 @@ trait ClassSandBox extends ClassObject {
     * 
     */
   def freeze(): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询沙箱的 global 对象
+    * 
+    * @readonly
+    * @type Object
+    */
+  var global: js.Object = js.native
+  
   /**
     * 
     * @brief 从沙箱中检测基础模块是否存在
@@ -79,6 +73,19 @@ trait ClassSandBox extends ClassObject {
     * 
     */
   def has(id: String): Boolean = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询沙箱中现存的所有模块的字典对象
+    * 
+    * 
+    * @readonly
+    * @type Object
+    */
+  var modules: js.Object = js.native
+  
   /**
     * 
     * @brief 重新加载沙箱内的模块，此操作只会重新初始化模块，复位模块内的变量，不更新模块代码
@@ -86,6 +93,7 @@ trait ClassSandBox extends ClassObject {
     * 
     */
   def refresh(): Unit = js.native
+  
   /**
     * 
     * @brief 从沙箱中删除指定的基础模块
@@ -95,6 +103,7 @@ trait ClassSandBox extends ClassObject {
     * 
     */
   def remove(id: String): Unit = js.native
+  
   /**
     * 
     * @brief 加载一个模块并返回模块对象
@@ -106,6 +115,7 @@ trait ClassSandBox extends ClassObject {
     * 
     */
   def require(id: String, base: String): js.Any = js.native
+  
   /**
     * 
     * @brief 查询一个模块并返回模块完整文件名
@@ -117,6 +127,7 @@ trait ClassSandBox extends ClassObject {
     * 
     */
   def resolve(id: String, base: String): String = js.native
+  
   /**
     * 
     * @brief 运行一个脚本
@@ -128,6 +139,7 @@ trait ClassSandBox extends ClassObject {
     */
   def run(fname: String): Unit = js.native
   def run(fname: String, argv: js.Array[_]): Unit = js.native
+  
   /**
     * 
     * @brief 对指定的 extname 添加 compiler, extname 不可为系统内置扩展名 (包括 {'.js', '.json', '.jsc', '.wasm'}), compiler 需返回有效的 javascript 脚本.
@@ -166,4 +178,3 @@ trait ClassSandBox extends ClassObject {
     */
   def setModuleCompiler(extname: String, compiler: js.Function): Unit = js.native
 }
-

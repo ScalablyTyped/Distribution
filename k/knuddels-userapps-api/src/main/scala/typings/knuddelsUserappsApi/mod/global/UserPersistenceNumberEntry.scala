@@ -2,7 +2,7 @@ package typings.knuddelsUserappsApi.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 	 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumberEntry.html
@@ -10,21 +10,24 @@ import scala.scalajs.js.annotation._
 @JSGlobal("UserPersistenceNumberEntry")
 @js.native
 class UserPersistenceNumberEntry () extends js.Object {
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumberEntry.html#method_getPosition
   		 */
   def getPosition(): Double = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumberEntry.html#method_getRank
   		 */
   def getRank(): Double = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumberEntry.html#method_getUser
   		 */
   def getUser(): User = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumberEntry.html#method_getValue
   		 */
   def getValue(): Double = js.native
 }
-

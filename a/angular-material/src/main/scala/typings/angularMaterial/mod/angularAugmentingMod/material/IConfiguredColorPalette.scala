@@ -3,14 +3,14 @@ package typings.angularMaterial.mod.angularAugmentingMod.material
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IConfiguredColorPalette
   extends IColorPalette
      with /* name */ StringDictionary[IPalette]
-
 object IConfiguredColorPalette {
+  
   @scala.inline
   def apply(
     amber: IPalette,
@@ -41,4 +41,3 @@ object IConfiguredColorPalette {
     __obj.asInstanceOf[IConfiguredColorPalette]
   }
 }
-

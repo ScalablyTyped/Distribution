@@ -2,9 +2,43 @@ package typings.jestDevServer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jestDevServerStrings {
+  
+  @scala.inline
+  def ERROR_NO_COMMAND: ERROR_NO_COMMAND = "ERROR_NO_COMMAND".asInstanceOf[ERROR_NO_COMMAND]
+  
+  @scala.inline
+  def ERROR_PORT_USED: ERROR_PORT_USED = "ERROR_PORT_USED".asInstanceOf[ERROR_PORT_USED]
+  
+  @scala.inline
+  def ERROR_TIMEOUT: ERROR_TIMEOUT = "ERROR_TIMEOUT".asInstanceOf[ERROR_TIMEOUT]
+  
+  @scala.inline
+  def ask: ask = "ask".asInstanceOf[ask]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def http: http = "http".asInstanceOf[http]
+  
+  @scala.inline
+  def https: https = "https".asInstanceOf[https]
+  
+  @scala.inline
+  def ignore: ignore = "ignore".asInstanceOf[ignore]
+  
+  @scala.inline
+  def kill: kill = "kill".asInstanceOf[kill]
+  
+  @scala.inline
+  def socket: socket = "socket".asInstanceOf[socket]
+  
+  @scala.inline
+  def tcp: tcp = "tcp".asInstanceOf[tcp]
+  
   @js.native
   sealed trait ERROR_NO_COMMAND extends js.Object
   
@@ -37,28 +71,4 @@ object jestDevServerStrings {
   
   @js.native
   sealed trait tcp extends js.Object
-  
-  @scala.inline
-  def ERROR_NO_COMMAND: ERROR_NO_COMMAND = "ERROR_NO_COMMAND".asInstanceOf[ERROR_NO_COMMAND]
-  @scala.inline
-  def ERROR_PORT_USED: ERROR_PORT_USED = "ERROR_PORT_USED".asInstanceOf[ERROR_PORT_USED]
-  @scala.inline
-  def ERROR_TIMEOUT: ERROR_TIMEOUT = "ERROR_TIMEOUT".asInstanceOf[ERROR_TIMEOUT]
-  @scala.inline
-  def ask: ask = "ask".asInstanceOf[ask]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def http: http = "http".asInstanceOf[http]
-  @scala.inline
-  def https: https = "https".asInstanceOf[https]
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
-  @scala.inline
-  def kill: kill = "kill".asInstanceOf[kill]
-  @scala.inline
-  def socket: socket = "socket".asInstanceOf[socket]
-  @scala.inline
-  def tcp: tcp = "tcp".asInstanceOf[tcp]
 }
-

@@ -196,17 +196,19 @@ import typings.std.HTMLUListElement
 import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.DomUtil")
 @js.native
 object DomUtil extends js.Object {
+  
   /**
     * 给DOM元素添加一个className
     * @param dom DOM元素
     * @param className 类名
     */
   def addClass(dom: HTMLElement, className: String): Unit = js.native
+  
   /**
     * 在parentNode内部创建一个className类名的tagName元素
     * @param tagName 标签名称
@@ -1165,38 +1167,45 @@ object DomUtil extends js.Object {
   def create_wbr(tagName: wbr, parent: HTMLElement): HTMLElement = js.native
   @JSName("create")
   def create_wbr(tagName: wbr, parent: HTMLElement, className: String): HTMLElement = js.native
+  
   /**
     * 清空DOM元素
     * @param dom DOM元素
     */
   def empty(dom: HTMLElement): Unit = js.native
+  
   /**
     * 获取DOM元素的大小
     * @param dom DOM元素
     */
   def getViewport(dom: HTMLElement): typings.amapJsApi.AMap.Size = js.native
+  
   /**
     * 获取DOM元素距离窗口左上角的距离
     * @param dom DOM元素
     */
   def getViewportOffset(dom: HTMLElement): typings.amapJsApi.AMap.Pixel = js.native
+  
   /**
     * DOM元素是否包含className
     * @param dom DOM元素
     * @param className 类名
     */
   def hasClass(dom: HTMLElement, className: String): Boolean = js.native
+  
   /**
     * 将DOM元素从父节点删除
     * @param dom DOM元素
     */
   def remove(dom: HTMLElement): Unit = js.native
+  
   /**
     * 给DOM元素删除一个className
     * @param dom DOM元素
     * @param className 类名
     */
   def removeClass(dom: HTMLElement, className: String): Unit = js.native
+  
   /**
     * 给DOM元素旋转一个角度，以center为中心，center以元素左上角为坐标原点
     * @param dom DOM元素
@@ -1205,6 +1214,7 @@ object DomUtil extends js.Object {
     */
   def rotate(dom: HTMLElement, deg: Double): Unit = js.native
   def rotate(dom: HTMLElement, deg: Double, origin: X): Unit = js.native
+  
   /**
     * 给DOM元素设置为className样式
     * @param dom DOM元素
@@ -1212,6 +1222,7 @@ object DomUtil extends js.Object {
     */
   def setClass(dom: HTMLElement): Unit = js.native
   def setClass(dom: HTMLElement, className: String): Unit = js.native
+  
   def setCss(dom: js.Array[HTMLElement], style: PartialCSSStyleDeclaratio): TypeofDomUtil = js.native
   /**
     * 给DOM元素删除一组样式，Object同样式表
@@ -1219,6 +1230,7 @@ object DomUtil extends js.Object {
     * @param style 样式
     */
   def setCss(dom: HTMLElement, style: PartialCSSStyleDeclaratio): TypeofDomUtil = js.native
+  
   /**
     * 给DOM元素设定一个透明度
     * @param dom DOM元素
@@ -1226,4 +1238,3 @@ object DomUtil extends js.Object {
     */
   def setOpacity(dom: HTMLElement, opacity: Double): Unit = js.native
 }
-

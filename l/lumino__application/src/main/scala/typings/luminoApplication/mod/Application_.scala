@@ -11,7 +11,7 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/application", "Application")
 @js.native
@@ -22,35 +22,15 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     * @param options - The options for creating the application.
     */
   def this(options: IOptions[T]) = this()
+  
   var _delegate: js.Any = js.native
+  
   var _pluginMap: js.Any = js.native
+  
   var _serviceMap: js.Any = js.native
+  
   var _started: js.Any = js.native
-  /**
-    * The application command registry.
-    */
-  val commands: CommandRegistry = js.native
-  /**
-    * The application context menu.
-    */
-  val contextMenu: ContextMenu = js.native
-  /**
-    * The application shell widget.
-    *
-    * #### Notes
-    * The shell widget is the root "container" widget for the entire
-    * application. It will typically expose an API which allows the
-    * application plugins to insert content in a variety of places.
-    */
-  val shell: T = js.native
-  /**
-    * A promise which resolves after the application has started.
-    *
-    * #### Notes
-    * This promise will resolve after the `start()` method is called,
-    * when all the bootstrapping and shell mounting work is complete.
-    */
-  val started: js.Promise[Unit] = js.native
+  
   /**
     * Activate the plugin with the given id.
     *
@@ -60,6 +40,7 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     *   or rejects with an error if it cannot be activated.
     */
   def activatePlugin(id: String): js.Promise[Unit] = js.native
+  
   /**
     * Add the application event listeners.
     *
@@ -70,6 +51,7 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     * A subclass may reimplement this method as needed.
     */
   /* protected */ def addEventListeners(): Unit = js.native
+  
   /**
     * Attach the application shell to the DOM.
     *
@@ -81,6 +63,17 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     * A subclass may reimplement this method as needed.
     */
   /* protected */ def attachShell(id: String): Unit = js.native
+  
+  /**
+    * The application command registry.
+    */
+  val commands: CommandRegistry = js.native
+  
+  /**
+    * The application context menu.
+    */
+  val contextMenu: ContextMenu = js.native
+  
   /**
     * A method invoked on a document `'contextmenu'` event.
     *
@@ -95,6 +88,7 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     * A subclass may reimplement this method as needed.
     */
   /* protected */ def evtContextMenu(event: MouseEvent): Unit = js.native
+  
   /**
     * A method invoked on a document `'keydown'` event.
     *
@@ -105,6 +99,7 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     * A subclass may reimplement this method as needed.
     */
   /* protected */ def evtKeydown(event: KeyboardEvent): Unit = js.native
+  
   /**
     * A method invoked on a window `'resize'` event.
     *
@@ -114,6 +109,7 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     * A subclass may reimplement this method as needed.
     */
   /* protected */ def evtResize(event: Event): Unit = js.native
+  
   /**
     * Handle the DOM events for the application.
     *
@@ -125,6 +121,7 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     * should not be called directly by user code.
     */
   def handleEvent(event: Event): Unit = js.native
+  
   /**
     * Test whether a plugin is registered with the application.
     *
@@ -133,12 +130,14 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     * @returns `true` if the plugin is registered, `false` otherwise.
     */
   def hasPlugin(id: String): Boolean = js.native
+  
   /**
     * List the IDs of the plugins registered with the application.
     *
     * @returns A new array of the registered plugin IDs.
     */
   def listPlugins(): js.Array[String] = js.native
+  
   /**
     * Register a plugin with the application.
     *
@@ -152,6 +151,7 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     * by another plugin, the new service will override the old service.
     */
   def registerPlugin(plugin: IPlugin[this.type, _]): Unit = js.native
+  
   /**
     * Register multiple plugins with the application.
     *
@@ -161,6 +161,7 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     * This calls `registerPlugin()` for each of the given plugins.
     */
   def registerPlugins(plugins: js.Array[IPlugin[this.type, _]]): Unit = js.native
+  
   /**
     * Resolve an optional service of a given type.
     *
@@ -181,6 +182,7 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     * automatically when the plugin is activated.
     */
   def resolveOptionalService[U](token: Token[U]): js.Promise[U | Null] = js.native
+  
   /**
     * Resolve a required service of a given type.
     *
@@ -201,6 +203,17 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     * automatically when the plugin is activated.
     */
   def resolveRequiredService[U](token: Token[U]): js.Promise[U] = js.native
+  
+  /**
+    * The application shell widget.
+    *
+    * #### Notes
+    * The shell widget is the root "container" widget for the entire
+    * application. It will typically expose an API which allows the
+    * application plugins to insert content in a variety of places.
+    */
+  val shell: T = js.native
+  
   /**
     * Start the application.
     *
@@ -224,5 +237,13 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     */
   def start(): js.Promise[Unit] = js.native
   def start(options: IStartOptions): js.Promise[Unit] = js.native
+  
+  /**
+    * A promise which resolves after the application has started.
+    *
+    * #### Notes
+    * This promise will resolve after the `start()` method is called,
+    * when all the bootstrapping and shell mounting work is complete.
+    */
+  val started: js.Promise[Unit] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.babylonjs.animationsIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Animations/index", "BounceEase")
 @js.native
@@ -18,9 +18,14 @@ class BounceEase ()
   bounces: Double) = this()
   def this(
     /** Defines the number of bounces */
+  bounces: js.UndefOr[scala.Nothing],
+    /** Defines the amplitude of the bounce */
+  bounciness: Double
+  ) = this()
+  def this(
+    /** Defines the number of bounces */
   bounces: Double,
     /** Defines the amplitude of the bounce */
   bounciness: Double
   ) = this()
 }
-

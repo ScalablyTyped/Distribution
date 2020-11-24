@@ -1,7 +1,7 @@
 
 # Scala.js typings for badgin
 
-Typings are for version 1.1.8
+Typings are for version 1.2.2
 
 ## Library description:
 Badgin makes it easy to subtly notify the user that there is some new activity that might require their attention, or it can be used to indicate a small amount of information, such as an unread count.
@@ -12,7 +12,7 @@ Badgin makes it easy to subtly notify the user that there is some new activity t
 | Keywords           | - |
 | # releases         | 13 |
 | # dependents       | 3 |
-| # downloads        | 791305 |
+| # downloads        | 1141545 |
 | # stars            | 0 |
 
 ## Links

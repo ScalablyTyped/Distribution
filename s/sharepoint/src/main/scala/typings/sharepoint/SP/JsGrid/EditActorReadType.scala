@@ -2,14 +2,14 @@ package typings.sharepoint.SP.JsGrid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EditActorReadType extends js.Object
-
 @JSGlobal("SP.JsGrid.EditActorReadType")
 @js.native
 object EditActorReadType extends js.Object {
+  
    // 1,
   @js.native
   sealed trait Both extends EditActorReadType
@@ -20,6 +20,4 @@ object EditActorReadType extends js.Object {
    // 2,
   @js.native
   sealed trait LocalizedOnly extends EditActorReadType
-  
 }
-

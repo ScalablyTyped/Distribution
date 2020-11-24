@@ -9,11 +9,13 @@ import typings.filesystem.FileSystem
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofsyncFileSystem extends js.Object {
+  
   val ConflictResolutionPolicy: LASTWRITEWIN = js.native
+  
   /**
     * @enum
     * 'synced'
@@ -24,6 +26,7 @@ trait TypeofsyncFileSystem extends js.Object {
     *  - File conflicts with remote version and must be resolved manually.
     */
   val FileStatus: CONFLICTING = js.native
+  
   /**
     * @enum
     * 'initializing'
@@ -38,16 +41,11 @@ trait TypeofsyncFileSystem extends js.Object {
     *  - The sync service is disabled and the content will never sync. (E.g. this could happen when the user has no account on the remote service or the sync service has had an unrecoverable error.)
     */
   val ServiceStatus: AUTHENTICATIONREQUIRED = js.native
+  
   val SyncAction: ADDED = js.native
+  
   val SyncDirection: LOCALTOREMOTE = js.native
-  /** Fired when a file has been updated by the background sync service. */
-  val onFileStatusChanged: Event[js.Function1[/* detail */ FileStatusChangedDetail, Unit]] = js.native
-  /**
-    * Fired when an error or other status change has happened in the sync backend
-    * (for example, when the sync is temporarily disabled due to network or authentication error).
-    * @see ServiceStatus
-    */
-  val onServiceStatusChanged: Event[js.Function1[/* detail */ Description, Unit]] = js.native
+  
   /**
     * Gets the current conflict resolution policy.
     * @see ConflictResolutionPolicy
@@ -65,6 +63,7 @@ trait TypeofsyncFileSystem extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Returns the FileStatus for the given fileEntry.
     * Note that 'conflicting' state only happens when
@@ -85,11 +84,13 @@ trait TypeofsyncFileSystem extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /** Returns each FileStatus for the given fileEntry array. Typically called with the result from dirReader.readEntries(). */
   def getFileStatuses(
     fileEntries: js.Array[FileEntry],
     callback: js.Function1[/* status */ js.Array[FileStatusInfo], Unit]
   ): Unit = js.native
+  
   /**
     * Returns the current sync backend status.
     * @since Chrome 31.
@@ -109,12 +110,24 @@ trait TypeofsyncFileSystem extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Returns the current usage and quota in bytes for the 'syncable' file storage for the app.
     * @param fileSystem
     * @param callback
     */
   def getUsageAndQuota(fileSystem: FileSystem, callback: js.Function1[/* info */ QuotaBytes, Unit]): Unit = js.native
+  
+  /** Fired when a file has been updated by the background sync service. */
+  val onFileStatusChanged: Event[js.Function1[/* detail */ FileStatusChangedDetail, Unit]] = js.native
+  
+  /**
+    * Fired when an error or other status change has happened in the sync backend
+    * (for example, when the sync is temporarily disabled due to network or authentication error).
+    * @see ServiceStatus
+    */
+  val onServiceStatusChanged: Event[js.Function1[/* detail */ Description, Unit]] = js.native
+  
   /**
     * Returns a syncable filesystem backed by Google Drive.
     * The returned DOMFileSystem instance can be operated on
@@ -130,6 +143,7 @@ trait TypeofsyncFileSystem extends js.Object {
     * @param callback A callback type for requestFileSystem.
     */
   def requestFileSystem(callback: js.Function1[/* fileSystem */ FileSystem, Unit]): Unit = js.native
+  
   /**
     * Sets the default conflict resolution policy for the 'syncable' file storage
     * for the app. By default it is set to 'last_write_win'. When conflict resolution
@@ -162,4 +176,3 @@ trait TypeofsyncFileSystem extends js.Object {
     callback: js.Function0[Unit]
   ): Unit = js.native
 }
-

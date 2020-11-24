@@ -2,13 +2,12 @@ package typings.fancybox
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fancyboxBooleans {
-  @js.native
-  sealed trait `false` extends FancyBoxInteractionTypes
   
   @scala.inline
   def `false`: `false` = false.asInstanceOf[`false`]
+  @js.native
+  sealed trait `false` extends FancyBoxInteractionTypes
 }
-

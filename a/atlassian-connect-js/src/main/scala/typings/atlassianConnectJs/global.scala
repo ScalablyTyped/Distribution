@@ -22,29 +22,36 @@ import typings.atlassianConnectJs.atlassianConnectJsStrings.cancel
 import typings.atlassianConnectJs.atlassianConnectJsStrings.submit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object AP extends js.Object {
+    
     /**
       * allows for dynamic rejection of ajax requests before they can be invoked. eg: by checking against a whitelist
       */
     def addRequestMarshal(): Unit = js.native
+    
     def defineGlobal(module: js.Object): Unit = js.native
+    
     def defineModule(name: String, module: js.Object): Unit = js.native
+    
     /**
       * Get the location of the current page of the host product.
       * @param callback
       */
     def getLocation(callback: js.Function1[/* location */ String, Unit]): Unit = js.native
+    
     /**
       * Hide footer..
       * @param hideFooter true if the footer is supposed to be hidden
       */
     def hideFooter(hideFooter: Boolean): Unit = js.native
+    
     def request(options: urlstringPartialRequestOp): js.Promise[Body] = js.native
     /**
       * Execute an XMLHttpRequest as a Promise, or via callbacks, in the context of the host application. The format of the response (dataType) will always be set to "text" - even if specified.
@@ -53,6 +60,7 @@ object global extends js.Object {
       */
     def request(url: String): js.Promise[Body] = js.native
     def request(url: String, options: PartialRequestOptions): js.Promise[Body] = js.native
+    
     /**
       * Resize the iframe to a specified width and height.
       *
@@ -64,6 +72,7 @@ object global extends js.Object {
       * @param height the desired height
       */
     def resize(width: String, height: String): Unit = js.native
+    
     /**
       * Resize the iframe, so that it takes the entire page. Add-on may define to hide the footer using data-options.
       *
@@ -71,16 +80,19 @@ object global extends js.Object {
       * @param hideFooter true if the footer is supposed to be hidden
       */
     def sizeToParent(hideFooter: Boolean): Unit = js.native
+    
     /**
       * A JavaScript module which provides functions for the current product context.
       */
     @js.native
     object context extends js.Object {
+      
       /**
         * Retrieves the current user context containing details such as space key, issue id, etc.
         * @param callback the callback that handles the response
         */
       def getContext(callback: js.Function1[/* context */ js.Any, Unit]): Unit = js.native
+      
       /**
         * Retrieves the current user context as a JWT token containing details such as space key, issue id, etc. Throws an error if add-on does not support JWT authentication
         * @param callback the callback that handles the response
@@ -93,17 +105,20 @@ object global extends js.Object {
       */
     @js.native
     object cookie extends js.Object {
+      
       /**
         * Remove the given cookie.
         * @param name the name of the cookie to remove
         */
       def erase(name: String): Unit = js.native
+      
       /**
         * Get the value of a cookie.
         * @param name name of cookie to read
         * @param callback callback to pass cookie data
         */
       def read(name: String, callback: js.Function1[/* value */ String, Unit]): Unit = js.native
+      
       /**
         * Save a cookie.
         * @param name name of cookie
@@ -121,6 +136,7 @@ object global extends js.Object {
       */
     @js.native
     object dialog extends js.Object {
+      
       /**
         * Closes the currently open dialog. Optionally pass data to listeners of the `dialog.close` event. This will only close a dialog that has been opened by your add-on.
         * You can register for close events using the `dialog.close` event and the events module.
@@ -128,19 +144,23 @@ object global extends js.Object {
         */
       def close(): Unit = js.native
       def close(data: js.Object): Unit = js.native
+      
       /**
         * Creates a dialog for a common dialog, page or web-item module key.
         * @param options configuration object of dialog options.
         */
       def create(options: DialogOptions): Dialog = js.native
+      
       /**
         * Creates a dialog button that can be controlled with javascript
         */
       def createButton(): DialogButton = js.native
+      
       /**
         * Stop the dialog from closing when the submit button is clicked
         */
       def disableCloseOnSubmit(): Unit = js.native
+      
       /**
         * Returns the button that was requested (either cancel or submit). If the requested button does not exist, an empty Object will be returned instead.
         */
@@ -148,11 +168,13 @@ object global extends js.Object {
       def getButton_cancel(button: cancel): DialogButton | js.Object = js.native
       @JSName("getButton")
       def getButton_submit(button: submit): DialogButton | js.Object = js.native
+      
       /**
         * Passes the custom data Object to the specified callback function.
         * @param customData Callback method to be executed with the custom data.
         */
       def getCustomData(callback: js.Function1[/* customData */ js.Object, Unit]): Unit = js.native
+      
       /**
         * Queries the value of the 'closeOnEscape' property.
         *
@@ -170,6 +192,7 @@ object global extends js.Object {
       */
     @js.native
     object events extends js.Object {
+      
       /**
         * Emits an event on this bus, firing listeners by name as well as all 'any' listeners.
         *
@@ -178,6 +201,7 @@ object global extends js.Object {
         * @param args 0 or more additional data arguments to deliver with the event
         */
       def emit(name: String, args: js.Array[String]): Unit = js.native
+      
       /**
         * Emits a public event on this bus, firing listeners by name as well as all 'anyPublic' listeners.
         *
@@ -188,38 +212,45 @@ object global extends js.Object {
         * @param args 0 or more additional data arguments to deliver with the event
         */
       def emitPublic(name: String, args: js.Array[String]): Unit = js.native
+      
       /**
         * Removes a particular listener for an event.
         * @param name The event name to unsubscribe the listener from
         * @param listener The listener callback to unsubscribe from the event name
         */
       def off(name: String, listener: js.Function1[/* data */ js.Object, Unit]): Unit = js.native
+      
       /**
         * Removes all listeners from an event name, or unsubscribes all event-name-specific listeners if no name if given.
         * @param name  The event name to unsubscribe all listeners from
         */
       def offAll(name: String): Unit = js.native
+      
       /**
         * Removes all listeners from a public event name, or unsubscribes all event-name-specific listeners for public events if no name if given.
         * @param name The event name to unsubscribe all listeners from
         */
       def offAllPublic(name: String): Unit = js.native
+      
       /**
         * Removes an `any` event listener.
         * @param listener A listener callback to unsubscribe from any event name
         */
       def offAny(listener: js.Function1[/* data */ js.Object, Unit]): Unit = js.native
+      
       /**
         * Removes an `anyPublic` event listener.
         * @param listener A listener callback to unsubscribe from any event name
         */
       def offAnyPublic(listener: js.Function1[/* data */ js.Object, Unit]): Unit = js.native
+      
       /**
         * Removes a particular listener for a public event.
         * @param name The event name to unsubscribe the listener from
         * @param listener The listener callback to unsubscribe from the event name
         */
       def offPublic(name: String, listener: js.Function1[/* data */ js.Object, Unit]): Unit = js.native
+      
       /**
         * Adds a listener for all occurrences of an event of a particular name.
         *
@@ -228,6 +259,7 @@ object global extends js.Object {
         * @param listener A listener callback to subscribe to the event name
         */
       def on(name: String, listener: js.Function1[/* data */ js.Object, Unit]): Unit = js.native
+      
       /**
         * Adds a listener for all occurrences of any event, regardless of name.
         *
@@ -235,6 +267,7 @@ object global extends js.Object {
         * @param listener A listener callback to subscribe for any event name
         */
       def onAny(listener: js.Function1[/* data */ js.Object, Unit]): Unit = js.native
+      
       /**
         * Adds a listener for all occurrences of any event, regardless of name.
         *
@@ -248,6 +281,7 @@ object global extends js.Object {
         listener: js.Function1[/* data */ js.Object, Unit],
         filter: js.Function1[/* toCompare */ js.Any, Boolean]
       ): Unit = js.native
+      
       /**
         * Adds a listener for all occurrences of a public event of a particular name.
         *
@@ -263,6 +297,7 @@ object global extends js.Object {
         listener: js.Function1[/* data */ js.Object, Unit],
         filter: js.Function1[/* toCompare */ js.Any, Boolean]
       ): Unit = js.native
+      
       /**
         * Adds a listener for one occurrence of an event of a particular name.
         *
@@ -271,6 +306,7 @@ object global extends js.Object {
         * @param listener A listener callback to subscribe to the event name
         */
       def once(name: String, listener: js.Function1[/* data */ js.Object, Unit]): Unit = js.native
+      
       /**
         * Adds a listener for one occurrence of a public event of a particular name.
         *
@@ -294,6 +330,7 @@ object global extends js.Object {
       */
     @js.native
     object flag extends js.Object {
+      
       def create(options: Partialtitlestringbodystr): Flag = js.native
     }
     
@@ -304,25 +341,30 @@ object global extends js.Object {
       */
     @js.native
     object history extends js.Object {
+      
       /**
         * Goes back one step in the joint session history. Will invoke the popState callback.
         */
       def back(): Unit = js.native
+      
       /**
         * Goes back one step in the joint session history. Will invoke the popState callback.
         */
       def forward(): Unit = js.native
+      
       /**
         * Retrieves the current state of the history stack and returns the value. The returned value is the same as what was set with the pushState method.
         * @returns The current url anchor
         */
       def getState(): String = js.native
+      
       /**
         * Moves the page history back or forward the specified number of steps.
         * A zero delta will reload the current page. If the delta is out of range, does nothing. This call invoke the popState callback.
         * @param delta Number of places to move in the history
         */
       def go(delta: Double): Unit = js.native
+      
       /**
         * Updates the location's anchor with the specified value and pushes the given data onto the session history. Does not invoke popState callback.
         * @param newState
@@ -330,6 +372,7 @@ object global extends js.Object {
         * @param url URL to add to history
         */
       def pushState(newState: js.Object, title: String, url: String): Unit = js.native
+      
       /**
         * Updates the current entry in the session history. Updates the location's anchor with the specified value but does not change the session history. Does not invoke popState callback.
         * @param url URL to update current history value with
@@ -342,6 +385,7 @@ object global extends js.Object {
       */
     @js.native
     object host extends js.Object {
+      
       /**
         * Gets the selected text on the page.
         * @param callback method to be executed with the selected text.
@@ -358,6 +402,7 @@ object global extends js.Object {
       */
     @js.native
     object inlineDialog extends js.Object {
+      
       /**
         * Hide the inline dialog that contains the iframe where this method is called from.
         */
@@ -369,43 +414,52 @@ object global extends js.Object {
       */
     @js.native
     object jira extends js.Object {
+      
       def getWorkflowConfiguration(callback: js.Function1[/* workflowConfiguration */ WorkflowConfiguration, Unit]): Unit = js.native
+      
       /**
         * Prepares the JQL Editor dialog in preparation for fast rendering. This method should be called on iframe load if it contains a JQL editor trigger.
         */
       def initJQLEditor(): Unit = js.native
+      
       /**
         * Returns whether the current user is permitted to edit the dashboard item
         * @param callback the callback that handles the response
         */
       def isDashboardItemEditable(callback: js.Function1[/* editable */ Boolean, Unit]): Unit = js.native
+      
       /**
         * Returns whether the addon is being shown within a native app on iOS, Android or Mac.
         * @param callback the callback that handles the response
         */
       def isNativeApp(callback: js.Function1[/* isNative */ Boolean, Unit]): Unit = js.native
+      
       /**
         * Open the quick create issue dialog. The dialog fields may be pre-filled with supplied data. A callback will be invoked when the dialog is closed and will include an array of issues created.
         * @param callback invoked when dialog is closed, takes a single parameter - array of issues created
         * @param params contains data to pre-fill the dialog with
         */
       def openCreateIssueDialog(callback: js.Function1[/* issues */ js.Array[js.Object], Unit], params: Fields): Unit = js.native
+      
       /**
         * Shows a date picker component. A callback will be invoked when the date (and time) is selected by the user.
         * @param options Configuration of the date picker.
         */
       def openDatePicker(options: PartialDatePickerOptions): Unit = js.native
+      
       /**
         * Refresh an issue page without reloading the browser.
         *
         * This is helpful when your add-on updates information about an issue in the background.
         */
       def refreshIssuePage(): Unit = js.native
+      
       /**
         * Set the title of a dashboard item to the given text.
         * @param title the title of the dashboard item. Any HTML is escaped.
         */
       def setDashboardItemTitle(title: String): Unit = js.native
+      
       /**
         * Launches a JQL Editor dialog. A callback will be invoked when the JQL is submitted by the user.
         * @param callback invoked when dialog is submitted, includes an object containing the jql
@@ -419,6 +473,7 @@ object global extends js.Object {
       */
     @js.native
     object navigator extends js.Object {
+      
       /**
         * Returns the context of the current page within the host application.
         *
@@ -434,6 +489,7 @@ object global extends js.Object {
         * @param callback
         */
       def getLocation(callback: js.Function1[/* location */ String, Unit]): Unit = js.native
+      
       def go(target: NavigatorTargetConfluence, context: PartialNavigatorContext): Unit = js.native
       /**
         * Navigates the user from the current page to the specified page. This call navigates the host product, not the iframe content.
@@ -443,38 +499,57 @@ object global extends js.Object {
         * @param context
         */
       def go(target: NavigatorTargetJira, context: PartialNavigatorContext): Unit = js.native
+      
       /**
         * Triggers a reload of the parent page.
         */
       def reload(): Unit = js.native
+      
       @js.native
       object NavigatorTargetConfluence extends js.Object {
-        /* "addonModule" */ val addonModule: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.addonModule with String = js.native
-        /* "contentedit" */ val contentedit: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.contentedit with String = js.native
-        /* "contentlist" */ val contentlist: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.contentlist with String = js.native
-        /* "contentview" */ val contentview: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.contentview with String = js.native
-        /* "dashboard" */ val dashboard: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.dashboard with String = js.native
-        /* "site" */ val site: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.site with String = js.native
-        /* "spacetools" */ val spacetools: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.spacetools with String = js.native
-        /* "spaceview" */ val spaceview: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.spaceview with String = js.native
-        /* "userProfile" */ val userProfile: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.userProfile with String = js.native
+        
         @JSBracketAccess
         def apply(value: String): js.UndefOr[typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence with String] = js.native
+        
+        /* "addonModule" */ val addonModule: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.addonModule with String = js.native
+        
+        /* "contentedit" */ val contentedit: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.contentedit with String = js.native
+        
+        /* "contentlist" */ val contentlist: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.contentlist with String = js.native
+        
+        /* "contentview" */ val contentview: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.contentview with String = js.native
+        
+        /* "dashboard" */ val dashboard: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.dashboard with String = js.native
+        
+        /* "site" */ val site: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.site with String = js.native
+        
+        /* "spacetools" */ val spacetools: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.spacetools with String = js.native
+        
+        /* "spaceview" */ val spaceview: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.spaceview with String = js.native
+        
+        /* "userProfile" */ val userProfile: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.userProfile with String = js.native
       }
       
       @js.native
       object NavigatorTargetJira extends js.Object {
-        /* "addonModule" */ val addonModule: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.addonModule with String = js.native
-        /* "dashboard" */ val dashboard: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.dashboard with String = js.native
-        /* "issue" */ val issue: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.issue with String = js.native
-        /* "projectAdminSummary" */ val projectAdminSummary: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.projectAdminSummary with String = js.native
-        /* "projectAdminTabPanel" */ val projectAdminTabPanel: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.projectAdminTabPanel with String = js.native
-        /* "site" */ val site: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.site with String = js.native
-        /* "userProfile" */ val userProfile: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.userProfile with String = js.native
+        
         @JSBracketAccess
         def apply(value: String): js.UndefOr[typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira with String] = js.native
+        
+        /* "addonModule" */ val addonModule: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.addonModule with String = js.native
+        
+        /* "dashboard" */ val dashboard: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.dashboard with String = js.native
+        
+        /* "issue" */ val issue: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.issue with String = js.native
+        
+        /* "projectAdminSummary" */ val projectAdminSummary: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.projectAdminSummary with String = js.native
+        
+        /* "projectAdminTabPanel" */ val projectAdminTabPanel: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.projectAdminTabPanel with String = js.native
+        
+        /* "site" */ val site: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.site with String = js.native
+        
+        /* "userProfile" */ val userProfile: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.userProfile with String = js.native
       }
-      
     }
     
     /**
@@ -482,11 +557,13 @@ object global extends js.Object {
       */
     @js.native
     object user extends js.Object {
+      
       /**
         * This method retrieves the current user object containing the user's Atlassian Account ID.
         * @param callback the callback that handles the response. A single parameter is passed to the callback. This parameter is an object comprising an attribute "atlassianAccountId".
         */
       def getCurrentUser(callback: js.Function1[/* user */ AtlassianAccountId, Unit]): Unit = js.native
+      
       /**
         * Retrieve the user's locale used by the product.
         *
@@ -496,6 +573,7 @@ object global extends js.Object {
         * @param callback the callback that handles the response
         */
       def getLocale(callback: js.Function1[/* locale */ String, Unit]): Unit = js.native
+      
       /**
         * Retrieve the current user's timezone. If there is no logged in user, the server timezone is returned.
         *
@@ -505,6 +583,7 @@ object global extends js.Object {
         * @param callback the callback that handles the response
         */
       def getTimeZone(callback: js.Function1[/* timezone */ String, Unit]): Unit = js.native
+      
       /**
         * Retrieves the current user object containing the user's id and full name
         * @deprecated Please use a new method AP.user.getCurrentUser() which will simply return the Atlassian Account ID.
@@ -512,8 +591,5 @@ object global extends js.Object {
         */
       def getUser(callback: js.Function1[/* user */ FullName, Unit]): Unit = js.native
     }
-    
   }
-  
 }
-

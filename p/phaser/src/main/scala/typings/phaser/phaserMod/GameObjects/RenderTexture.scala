@@ -4,7 +4,7 @@ import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Render Texture.
@@ -71,4 +71,3 @@ class RenderTexture protected ()
   def this(scene: Scene, x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: integer) = this()
   def this(scene: Scene, x: Double, y: Double, width: integer, height: integer) = this()
 }
-

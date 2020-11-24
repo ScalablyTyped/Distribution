@@ -4,7 +4,7 @@ import typings.awsSdk.machinelearningMod.ClientConfiguration
 import typings.awsSdk.machinelearningMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/browser_default", "MachineLearning")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class MachineLearning () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

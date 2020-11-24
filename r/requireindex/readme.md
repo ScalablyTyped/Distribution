@@ -10,9 +10,9 @@ Write minimal node index.js files that require and export siblings by file basen
 | ------------------ | :-------------: |
 | Full name          | requireindex |
 | Keywords           | require, index, index.js |
-| # releases         | 2 |
-| # dependents       | 629 |
-| # downloads        | 35333754 |
+| # releases         | 0 |
+| # dependents       | 764 |
+| # downloads        | 41865417 |
 | # stars            | 2 |
 
 ## Links

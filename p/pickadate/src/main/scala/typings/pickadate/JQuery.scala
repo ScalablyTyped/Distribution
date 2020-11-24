@@ -12,14 +12,11 @@ import typings.pickadate.pickadateStrings.picker
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  @JSName("pickadate")
-  var pickadate_Original: typings.pickadate.Pickadate.Pickadate = js.native
-  @JSName("pickatime")
-  var pickatime_Original: Pickatime = js.native
+  
   /**
     * Initialize a date picker.
     */
@@ -29,6 +26,8 @@ trait JQuery extends js.Object {
     */
   def pickadate(methodName: String, arguments: js.Any*): js.Any = js.native
   def pickadate(options: DateOptions): JQuery = js.native
+  @JSName("pickadate")
+  var pickadate_Original: typings.pickadate.Pickadate.Pickadate = js.native
   @JSName("pickadate")
   def pickadate_hidden(objectName: _hidden): HTMLInputElement = js.native
   @JSName("pickadate")
@@ -40,6 +39,7 @@ trait JQuery extends js.Object {
   def pickadate_picker(keyword: picker): DatePicker = js.native
   @JSName("pickadate")
   def pickadate_root(objectName: $root): JQuery = js.native
+  
   /**
     * Initialize a time picker.
     */
@@ -49,6 +49,8 @@ trait JQuery extends js.Object {
     */
   def pickatime(methodName: String, arguments: js.Any*): js.Any = js.native
   def pickatime(options: TimeOptions): JQuery = js.native
+  @JSName("pickatime")
+  var pickatime_Original: Pickatime = js.native
   @JSName("pickatime")
   def pickatime_hidden(objectName: _hidden): HTMLInputElement = js.native
   @JSName("pickatime")
@@ -61,4 +63,3 @@ trait JQuery extends js.Object {
   @JSName("pickatime")
   def pickatime_root(objectName: $root): JQuery = js.native
 }
-

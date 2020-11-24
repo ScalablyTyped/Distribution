@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@maxim_mazurok/gapi.client.webmasters" : "3.0.20190428"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@maxim_mazurok/gapi.client.webmasters" : "3.0.20190428"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

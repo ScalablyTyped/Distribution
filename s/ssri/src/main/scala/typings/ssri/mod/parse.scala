@@ -5,11 +5,12 @@ import typings.ssri.anon.SingleStrict
 import typings.ssri.anon.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ssri", "parse")
 @js.native
 object parse extends js.Object {
+  
   def apply(sri: String): IntegrityMap = js.native
   def apply(sri: String, opts: Single): IntegrityMap | Hash = js.native
   def apply(sri: String, opts: SingleStrict): IntegrityMap = js.native
@@ -23,4 +24,3 @@ object parse extends js.Object {
   def apply(sri: IntegrityLike, opts: SingleStrict): IntegrityMap = js.native
   def apply(sri: IntegrityLike, opts: `1`): Hash = js.native
 }
-

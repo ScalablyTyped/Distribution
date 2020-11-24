@@ -9,7 +9,7 @@ import typings.std.Document
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -31,6 +31,7 @@ import scala.scalajs.js.annotation._
   */
 class WKT () extends TextFeature {
   def this(opt_options: WKTOptions) = this()
+  
   def readFeature(source: String): typings.openlayers.mod.Feature = js.native
   def readFeature(source: String, opt_options: ReadOptions): typings.openlayers.mod.Feature = js.native
   def readFeature(source: GlobalObject): typings.openlayers.mod.Feature = js.native
@@ -47,6 +48,7 @@ class WKT () extends TextFeature {
   def readFeature(source: Document, opt_options: ReadOptions): typings.openlayers.mod.Feature = js.native
   def readFeature(source: Node): typings.openlayers.mod.Feature = js.native
   def readFeature(source: Node, opt_options: ReadOptions): typings.openlayers.mod.Feature = js.native
+  
   def readFeatures(source: String): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: String, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: GlobalObject): js.Array[typings.openlayers.mod.Feature] = js.native
@@ -63,6 +65,7 @@ class WKT () extends TextFeature {
   def readFeatures(source: Document, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
+  
   def readGeometry(source: String): Geometry = js.native
   def readGeometry(source: String, opt_options: ReadOptions): Geometry = js.native
   def readGeometry(source: GlobalObject): Geometry = js.native
@@ -79,6 +82,7 @@ class WKT () extends TextFeature {
   def readGeometry(source: Document, opt_options: ReadOptions): Geometry = js.native
   def readGeometry(source: Node): Geometry = js.native
   def readGeometry(source: Node, opt_options: ReadOptions): Geometry = js.native
+  
   /**
     * Encode a feature as a WKT string.
     *
@@ -89,6 +93,7 @@ class WKT () extends TextFeature {
     */
   def writeFeature(feature: typings.openlayers.mod.Feature): String = js.native
   def writeFeature(feature: typings.openlayers.mod.Feature, opt_options: WriteOptions): String = js.native
+  
   /**
     * Encode an array of features as a WKT string.
     *
@@ -99,6 +104,7 @@ class WKT () extends TextFeature {
     */
   def writeFeatures(features: js.Array[typings.openlayers.mod.Feature]): String = js.native
   def writeFeatures(features: js.Array[typings.openlayers.mod.Feature], opt_options: WriteOptions): String = js.native
+  
   /**
     * Write a single geometry as a WKT string.
     *
@@ -108,4 +114,3 @@ class WKT () extends TextFeature {
     */
   def writeGeometry(geometry: Geometry): String = js.native
 }
-

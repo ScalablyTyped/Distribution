@@ -3,12 +3,12 @@ package typings.tensorflowTfjsCore.mod
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core", "TensorBuffer")
 @js.native
 class TensorBuffer[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */, D /* <: DataType */] protected ()
-  extends typings.tensorflowTfjsCore.tensorMod.TensorBuffer[R, D] {
+  extends typings.tensorflowTfjsCore.baseMod.TensorBuffer[R, D] {
   def this(
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: D
@@ -19,4 +19,3 @@ class TensorBuffer[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */, D /*
     values: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataTypeMap[D] */ js.Any
   ) = this()
 }
-

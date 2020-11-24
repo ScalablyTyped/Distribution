@@ -2,9 +2,10 @@ package typings.chrome.chrome
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object printerProvider {
+  
   type CapabilityRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
       /* printerId */ java.lang.String, 
@@ -15,6 +16,7 @@ package object printerProvider {
       scala.Unit
     ]
   ]
+  
   type PrintRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
       /* printJob */ typings.chrome.chrome.printerProvider.PrintJob, 
@@ -22,6 +24,7 @@ package object printerProvider {
       scala.Unit
     ]
   ]
+  
   type PrinterInfoRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
       /* device */ js.Any, 
@@ -32,6 +35,7 @@ package object printerProvider {
       scala.Unit
     ]
   ]
+  
   type PrinterRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function1[
       /* resultCallback */ js.Function1[

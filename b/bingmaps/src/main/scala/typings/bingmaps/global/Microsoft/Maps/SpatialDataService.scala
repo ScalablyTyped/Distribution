@@ -12,7 +12,7 @@ import typings.bingmaps.Microsoft.Maps.SpatialDataService.IGetBoundaryRequestOpt
 import typings.bingmaps.Microsoft.Maps.SpatialDataService.IQueryAPIOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This module wraps the Query and GeoData REST API’s in the Bing Spatial Dara Services and expose them as an easy to use JavaScript library.
@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Microsoft.Maps.SpatialDataService")
 @js.native
 object SpatialDataService extends js.Object {
+  
   @js.native
   class Filter protected ()
     extends typings.bingmaps.Microsoft.Maps.SpatialDataService.Filter {
@@ -33,6 +34,38 @@ object SpatialDataService extends js.Object {
       */
     def this(propertyName: String, operator: String, value: js.Any) = this()
     def this(propertyName: String, operator: FilterCompareOperator, value: js.Any) = this()
+  }
+  
+  @js.native
+  object FilterCompareOperator extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[
+        typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator with Double
+      ] = js.native
+    
+    /* 0 */ val endsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.endsWith with Double = js.native
+    
+    /* 1 */ @JSName("equals")
+    val equals_ : equals with Double = js.native
+    
+    /* 2 */ val greaterThan: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.greaterThan with Double = js.native
+    
+    /* 3 */ val greaterThanOrEqual: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.greaterThanOrEqual with Double = js.native
+    
+    /* 4 */ val isIn: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.isIn with Double = js.native
+    
+    /* 5 */ val lessThan: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.lessThan with Double = js.native
+    
+    /* 6 */ val lessThanOrEqual: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.lessThanOrEqual with Double = js.native
+    
+    /* 7 */ val notEndsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.notEndsWith with Double = js.native
+    
+    /* 8 */ val notEquals: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.notEquals with Double = js.native
+    
+    /* 9 */ val notStartsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.notStartsWith with Double = js.native
+    
+    /* 10 */ val startsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.startsWith with Double = js.native
   }
   
   @js.native
@@ -50,37 +83,21 @@ object SpatialDataService extends js.Object {
   }
   
   @js.native
-  object FilterCompareOperator extends js.Object {
-    /* 0 */ val endsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.endsWith with Double = js.native
-    /* 1 */ @JSName("equals")
-    val equals_ : equals with Double = js.native
-    /* 2 */ val greaterThan: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.greaterThan with Double = js.native
-    /* 3 */ val greaterThanOrEqual: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.greaterThanOrEqual with Double = js.native
-    /* 4 */ val isIn: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.isIn with Double = js.native
-    /* 5 */ val lessThan: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.lessThan with Double = js.native
-    /* 6 */ val lessThanOrEqual: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.lessThanOrEqual with Double = js.native
-    /* 7 */ val notEndsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.notEndsWith with Double = js.native
-    /* 8 */ val notEquals: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.notEquals with Double = js.native
-    /* 9 */ val notStartsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.notStartsWith with Double = js.native
-    /* 10 */ val startsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.startsWith with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator with Double
-      ] = js.native
-  }
-  
-  @js.native
   object FilterLogicalOperator extends js.Object {
-    /* 0 */ val and: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterLogicalOperator.and with Double = js.native
-    /* 1 */ val or: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterLogicalOperator.or with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
         typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterLogicalOperator with Double
       ] = js.native
+    
+    /* 0 */ val and: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterLogicalOperator.and with Double = js.native
+    
+    /* 1 */ val or: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterLogicalOperator.or with Double = js.native
   }
   
   @js.native
   object GeoDataAPIManager extends js.Object {
+    
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
@@ -307,6 +324,7 @@ object SpatialDataService extends js.Object {
   
   @js.native
   object QueryAPIManager extends js.Object {
+    
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: String,
@@ -358,6 +376,4 @@ object SpatialDataService extends js.Object {
       errorCallback: js.Function2[/* networkStatus */ js.UndefOr[String], /* statusMessage */ js.UndefOr[String], Unit]
     ): Unit = js.native
   }
-  
 }
-

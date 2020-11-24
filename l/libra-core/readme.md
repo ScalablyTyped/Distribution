@@ -12,7 +12,7 @@ Typescript Library for Libra
 | Keywords           | libra, library, crypto, facebook |
 | # releases         | 11 |
 | # dependents       | 0 |
-| # downloads        | 1784 |
+| # downloads        | 1622 |
 | # stars            | 0 |
 
 ## Links

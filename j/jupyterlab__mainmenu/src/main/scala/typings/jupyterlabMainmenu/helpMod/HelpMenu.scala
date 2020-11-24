@@ -7,7 +7,7 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.luminoDisposable.mod.IDisposable because Already inherited
@@ -19,6 +19,7 @@ class HelpMenu protected () extends JupyterLabMenu {
     * Construct the help menu.
     */
   def this(options: IOptions) = this()
+  
   /**
     * A set of kernel users for the help menu.
     * This is used to populate additional help
@@ -26,4 +27,3 @@ class HelpMenu protected () extends JupyterLabMenu {
     */
   val kernelUsers: Set[IKernelUser[Widget]] = js.native
 }
-

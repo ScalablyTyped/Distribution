@@ -2,15 +2,17 @@ package typings.squareConnect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogMeasurementUnit")
 @js.native
 class CatalogMeasurementUnit () extends js.Object {
+  
   /**
     * Indicates the unit used to measure the quantity of a catalog item variation.
     */
   var measurement_unit: js.UndefOr[MeasurementUnit] = js.native
+  
   /**
     * An integer between 0 and 5 that represents the maximum number of positions allowed after the decimal in quantities
     * measured with this unit. For example:
@@ -21,4 +23,3 @@ class CatalogMeasurementUnit () extends js.Object {
     */
   var precision: js.UndefOr[Double] = js.native
 }
-

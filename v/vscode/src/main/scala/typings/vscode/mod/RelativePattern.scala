@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "RelativePattern")
 @js.native
@@ -17,10 +17,12 @@ class RelativePattern protected () extends js.Object {
     * relative to the base path.
     */
   def this(base: WorkspaceFolder, pattern: String) = this()
+  
   /**
     * A base file path to which this pattern will be matched against relatively.
     */
   var base: String = js.native
+  
   /**
     * A file glob pattern like `*.{ts,js}` that will be matched on file paths
     * relative to the base path.
@@ -30,4 +32,3 @@ class RelativePattern protected () extends js.Object {
     */
   var pattern: String = js.native
 }
-

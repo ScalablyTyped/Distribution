@@ -4,7 +4,7 @@ import typings.pixiJs.PIXI.ALPHA_MODES
 import typings.std.ImageBitmap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource type for HTMLImageElement.
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ImageResource extends BaseImageResource {
+  
   /**
     * Controls texture alphaMode field
     * Copies from options
@@ -23,30 +24,30 @@ trait ImageResource extends BaseImageResource {
     * @readonly
     */
   val alphaMode: ALPHA_MODES | Null = js.native
+  
   /**
     * The ImageBitmap element created for HTMLImageElement
     * @member {ImageBitmap} PIXI.resources.ImageResource#bitmap
     * @default null
     */
   var bitmap: ImageBitmap = js.native
+  
   /**
     * If capable, convert the image using createImageBitmap API
     * @member {boolean} PIXI.resources.ImageResource#createBitmap
     * @default PIXI.settings.CREATE_IMAGE_BITMAP
     */
   var createBitmap: Boolean = js.native
+  
+  def load(createBitmap: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * If the image should be disposed after upload
     * @member {boolean} PIXI.resources.ImageResource#preserveBitmap
     * @default false
     */
   var preserveBitmap: Boolean = js.native
-  /**
-    * URL of the image source
-    * @member {string} PIXI.resources.ImageResource#url
-    */
-  var url: String = js.native
-  def load(createBitmap: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Called when we need to convert image into BitmapImage.
     * Can be called multiple times, real promise is cached inside.
@@ -54,5 +55,10 @@ trait ImageResource extends BaseImageResource {
     * @returns {Promise<void>} cached promise to fill that bitmap
     */
   def process(): js.Promise[Unit] = js.native
+  
+  /**
+    * URL of the image source
+    * @member {string} PIXI.resources.ImageResource#url
+    */
+  var url: String = js.native
 }
-

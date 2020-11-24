@@ -2,11 +2,12 @@ package typings.azureSb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-sb", "createNotificationHubService")
 @js.native
 object createNotificationHubService extends js.Object {
+  
   def apply(hubName: String): NotificationHubService = js.native
   def apply(
     hubName: String,
@@ -40,4 +41,3 @@ object createNotificationHubService extends js.Object {
     sharedAccessKeyValue: String
   ): NotificationHubService = js.native
 }
-

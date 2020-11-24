@@ -7,11 +7,12 @@ import typings.ionicCore.virtualScrollInterfaceMod.HeaderHeightFn
 import typings.ionicCore.virtualScrollInterfaceMod.ItemHeightFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
 @js.native
 object calcCells extends js.Object {
+  
   def apply(
     items: js.Array[_],
     itemHeight: js.UndefOr[scala.Nothing],
@@ -461,4 +462,3 @@ object calcCells extends js.Object {
     len: Double
   ): js.Array[Cell] = js.native
 }
-

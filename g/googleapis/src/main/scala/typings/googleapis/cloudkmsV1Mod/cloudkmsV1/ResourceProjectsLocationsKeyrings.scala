@@ -6,15 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudkms/v1", "cloudkms_v1.Resource$Projects$Locations$Keyrings")
 @js.native
 class ResourceProjectsLocationsKeyrings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var cryptoKeys: ResourceProjectsLocationsKeyringsCryptokeys = js.native
-  var importJobs: ResourceProjectsLocationsKeyringsImportjobs = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.create
     * @desc Create a new KeyRing in a given Project and Location.
@@ -48,6 +48,9 @@ class ResourceProjectsLocationsKeyrings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaKeyRing]
   ): Unit = js.native
+  
+  var cryptoKeys: ResourceProjectsLocationsKeyringsCryptokeys = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.get
     * @desc Returns metadata for a given KeyRing.
@@ -76,6 +79,7 @@ class ResourceProjectsLocationsKeyrings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaKeyRing]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -108,6 +112,9 @@ class ResourceProjectsLocationsKeyrings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
+  var importJobs: ResourceProjectsLocationsKeyringsImportjobs = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.list
     * @desc Lists KeyRings.
@@ -141,6 +148,7 @@ class ResourceProjectsLocationsKeyrings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListKeyRingsResponse]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -174,6 +182,7 @@ class ResourceProjectsLocationsKeyrings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * cloudkms.projects.locations.keyRings.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -211,4 +220,3 @@ class ResourceProjectsLocationsKeyrings protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

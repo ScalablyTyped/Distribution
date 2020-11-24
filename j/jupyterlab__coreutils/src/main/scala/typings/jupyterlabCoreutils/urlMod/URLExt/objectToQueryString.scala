@@ -3,11 +3,12 @@ package typings.jupyterlabCoreutils.urlMod.URLExt
 import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.objectToQueryString")
 @js.native
 object objectToQueryString extends js.Object {
+  
   /**
     * Return a serialized object string suitable for a query.
     *
@@ -20,4 +21,3 @@ object objectToQueryString extends js.Object {
     */
   def apply(value: PartialJSONObject): String = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.termSize.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("term-size", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Reliably get the terminal window size.
   @example
@@ -18,4 +19,3 @@ object ^ extends js.Object {
   */
   def apply(): Size = js.native
 }
-

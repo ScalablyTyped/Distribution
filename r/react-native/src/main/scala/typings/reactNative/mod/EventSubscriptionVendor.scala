@@ -2,7 +2,7 @@ package typings.reactNative.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * EventSubscriptionVendor stores a set of EventSubscriptions that are
@@ -10,11 +10,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait EventSubscriptionVendor extends js.Object {
+  
   /**
     * Adds a subscription keyed by an event type.
     *
     */
   def addSubscription(eventType: String, subscription: EventSubscription): EventSubscription = js.native
+  
   /**
     * Returns the array of subscriptions that are currently registered for the
     * given event type.
@@ -24,6 +26,7 @@ trait EventSubscriptionVendor extends js.Object {
     *
     */
   def getSubscriptionsForType(eventType: String): js.Array[EventSubscription] = js.native
+  
   /**
     * Removes a bulk set of the subscriptions.
     *
@@ -32,6 +35,7 @@ trait EventSubscriptionVendor extends js.Object {
     */
   def removeAllSubscriptions(): Unit = js.native
   def removeAllSubscriptions(eventType: String): Unit = js.native
+  
   /**
     * Removes a specific subscription. Instead of calling this function, call
     * `subscription.remove()` directly.
@@ -39,4 +43,3 @@ trait EventSubscriptionVendor extends js.Object {
     */
   def removeSubscription(subscription: js.Any): Unit = js.native
 }
-

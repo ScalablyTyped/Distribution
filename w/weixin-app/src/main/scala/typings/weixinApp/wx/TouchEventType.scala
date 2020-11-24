@@ -2,7 +2,7 @@ package typings.weixinApp.wx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.weixinApp.weixinAppStrings.tap
@@ -13,19 +13,23 @@ import scala.scalajs.js.annotation._
   - typings.weixinApp.weixinAppStrings.touchforcechange
 */
 trait TouchEventType extends js.Object
-
 object TouchEventType {
+  
   @scala.inline
   def tap: typings.weixinApp.weixinAppStrings.tap = "tap".asInstanceOf[typings.weixinApp.weixinAppStrings.tap]
+  
   @scala.inline
   def touchcancel: typings.weixinApp.weixinAppStrings.touchcancel = "touchcancel".asInstanceOf[typings.weixinApp.weixinAppStrings.touchcancel]
+  
   @scala.inline
   def touchend: typings.weixinApp.weixinAppStrings.touchend = "touchend".asInstanceOf[typings.weixinApp.weixinAppStrings.touchend]
+  
   @scala.inline
   def touchforcechange: typings.weixinApp.weixinAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typings.weixinApp.weixinAppStrings.touchforcechange]
+  
   @scala.inline
   def touchmove: typings.weixinApp.weixinAppStrings.touchmove = "touchmove".asInstanceOf[typings.weixinApp.weixinAppStrings.touchmove]
+  
   @scala.inline
   def touchstart: typings.weixinApp.weixinAppStrings.touchstart = "touchstart".asInstanceOf[typings.weixinApp.weixinAppStrings.touchstart]
 }
-

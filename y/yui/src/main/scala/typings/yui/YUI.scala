@@ -5,12 +5,15 @@ import typings.yui.YUITest.IAssert
 import typings.yui.YUITest.YUITestStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait YUI extends js.Object {
+  
   var Assert: IAssert = js.native
+  
   var Test: YUITestStatic = js.native
+  
   def add(name: String, fn: js.Function2[/* Y */ this.type, /* name */ String, _], version: String): YUI = js.native
   def add(
     name: String,
@@ -18,6 +21,7 @@ trait YUI extends js.Object {
     version: String,
     details: IConfig
   ): YUI = js.native
+  
   def mix(receiver: js.Function, supplier: js.Function): js.Any = js.native
   def mix(
     receiver: js.Function,
@@ -426,4 +430,3 @@ trait YUI extends js.Object {
     merge: Boolean
   ): js.Any = js.native
 }
-

@@ -3,12 +3,12 @@ package typings.antDesignIcons.iconFontMod
 import typings.react.mod.SFC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons/es/components/IconFont", JSImport.Default)
+@JSImport("@ant-design/icons/dist/components/IconFont", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def apply(): SFC[IconFontProps] = js.native
   def apply(options: CustomIconOptions): SFC[IconFontProps] = js.native
 }
-

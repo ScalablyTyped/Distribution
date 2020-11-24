@@ -5,7 +5,7 @@ import typings.uirouterCore.transitionHookMod.GetResultHandler
 import typings.uirouterCore.transitionInterfaceMod.PathType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "TransitionEventType")
 @js.native
@@ -157,4 +157,3 @@ class TransitionEventType protected ()
     synchronous: Boolean
   ) = this()
 }
-

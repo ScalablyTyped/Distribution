@@ -10,9 +10,9 @@ Rate limiter middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-ratelimit |
 | Keywords           | koa, middleware, ratelimiter, ratelimit, rate |
-| # releases         | 7 |
+| # releases         | 4 |
 | # dependents       | 19 |
-| # downloads        | 130503 |
+| # downloads        | 181157 |
 | # stars            | 6 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,16 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassEventEmitter extends ClassObject {
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 默认全局最大监听器数
-    * @static
-    * 
-    * @type Integer
-    */
-  var defaultMaxListeners: Double = js.native
+  
   /**
     * 
     * @brief 绑定一个事件处理函数到对象
@@ -42,6 +33,18 @@ trait ClassEventEmitter extends ClassObject {
     * 
     */
   def addListener(map: js.Object): js.Object = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 默认全局最大监听器数
+    * @static
+    * 
+    * @type Integer
+    */
+  var defaultMaxListeners: Double = js.native
+  
   /**
     * 
     * @brief 主动触发一个事件
@@ -53,6 +56,7 @@ trait ClassEventEmitter extends ClassObject {
     * 
     */
   def emit(ev: String, args: js.Any*): Boolean = js.native
+  
   /**
     * 
     * @brief 查询监听器事件名称
@@ -62,6 +66,7 @@ trait ClassEventEmitter extends ClassObject {
     * 
     */
   def eventNames(): js.Array[_] = js.native
+  
   /**
     * 
     * 获取监听器的默认限制的数量，仅用于兼容
@@ -71,6 +76,7 @@ trait ClassEventEmitter extends ClassObject {
     * 
     */
   def getMaxListeners(): Double = js.native
+  
   /**
     * 
     * @brief 查询对象指定事件的监听器数量
@@ -81,6 +87,7 @@ trait ClassEventEmitter extends ClassObject {
     * 
     */
   def listenerCount(ev: String): Double = js.native
+  
   /**
     * 
     * @brief 查询对象指定事件的监听器数组
@@ -91,6 +98,7 @@ trait ClassEventEmitter extends ClassObject {
     * 
     */
   def listeners(ev: String): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 取消对象处理队列中的全部函数
@@ -122,6 +130,7 @@ trait ClassEventEmitter extends ClassObject {
     * 
     */
   def off(map: js.Object): js.Object = js.native
+  
   /**
     * 
     * @brief 绑定一个事件处理函数到对象
@@ -143,6 +152,7 @@ trait ClassEventEmitter extends ClassObject {
     * 
     */
   def on(map: js.Object): js.Object = js.native
+  
   /**
     * 
     * @brief 绑定一个一次性事件处理函数到对象，一次性处理函数只会触发一次
@@ -164,6 +174,7 @@ trait ClassEventEmitter extends ClassObject {
     * 
     */
   def once(map: js.Object): js.Object = js.native
+  
   /**
     * 
     * @brief 绑定一个事件处理函数到对象起始
@@ -185,6 +196,7 @@ trait ClassEventEmitter extends ClassObject {
     * 
     */
   def prependListener(map: js.Object): js.Object = js.native
+  
   /**
     * 
     * @brief 绑定一个事件处理函数到对象起始
@@ -206,6 +218,7 @@ trait ClassEventEmitter extends ClassObject {
     * 
     */
   def prependOnceListener(map: js.Object): js.Object = js.native
+  
   /**
     * 
     * @brief 从对象处理队列中取消所有事件的所有监听器， 如果指定事件，则移除指定事件的所有监听器。
@@ -217,6 +230,7 @@ trait ClassEventEmitter extends ClassObject {
     */
   def removeAllListeners(): js.Object = js.native
   def removeAllListeners(evs: js.Array[_]): js.Object = js.native
+  
   /**
     * 
     * @brief 取消对象处理队列中的全部函数
@@ -248,6 +262,7 @@ trait ClassEventEmitter extends ClassObject {
     * 
     */
   def removeListener(map: js.Object): js.Object = js.native
+  
   /**
     * 
     * 监听器的默认限制的数量，仅用于兼容
@@ -258,4 +273,3 @@ trait ClassEventEmitter extends ClassObject {
     */
   def setMaxListeners(n: Double): Unit = js.native
 }
-

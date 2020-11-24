@@ -11,8 +11,8 @@ A JSON editor packed as a React.js component and the simplest way of creating we
 | Full name          | react-json |
 | Keywords           | react, forms, json |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1788 |
+| # dependents       | 2 |
+| # downloads        | 1529 |
 | # stars            | 0 |
 
 ## Links

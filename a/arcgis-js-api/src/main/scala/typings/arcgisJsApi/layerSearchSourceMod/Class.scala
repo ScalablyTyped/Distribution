@@ -4,7 +4,7 @@ import typings.arcgisJsApi.esri.LayerSearchSource
 import typings.arcgisJsApi.esri.LayerSearchSourceProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/widgets/Search/LayerSearchSource", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 class Class () extends LayerSearchSource {
   def this(properties: LayerSearchSourceProperties) = this()
 }
-

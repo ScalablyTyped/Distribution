@@ -2,11 +2,12 @@ package typings.ink.useFocusMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ink/build/hooks/use-focus", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * Component that uses `useFocus` hook becomes "focusable" to Ink,
     * so when user presses <kbd>Tab</kbd>, Ink will switch focus to this component.
@@ -18,4 +19,3 @@ object default extends js.Object {
   def apply(): Output = js.native
   def apply(hasIsActiveAutoFocus: Input): Output = js.native
 }
-

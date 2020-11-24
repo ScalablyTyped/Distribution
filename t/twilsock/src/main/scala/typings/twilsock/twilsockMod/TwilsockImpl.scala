@@ -5,7 +5,7 @@ import typings.twilsock.packetinterfaceMod.PacketInterface
 import typings.twilsock.websocketchannelMod.WebSocketChannel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Twilsock channel level protocol implementation
@@ -15,7 +15,6 @@ import scala.scalajs.js.annotation._
 class TwilsockImpl protected () extends TwilsockChannel {
   def this(websocket: WebSocketChannel, transport: PacketInterface, config: Configuration) = this()
 }
-
 /**
   * Enum for connection state values.
   * @readonly
@@ -24,4 +23,3 @@ class TwilsockImpl protected () extends TwilsockChannel {
 @JSImport("twilsock/lib/twilsock", "TwilsockImpl")
 @js.native
 object TwilsockImpl extends js.Object
-

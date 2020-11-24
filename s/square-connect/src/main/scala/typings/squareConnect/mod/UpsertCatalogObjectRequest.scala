@@ -2,11 +2,12 @@ package typings.squareConnect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "UpsertCatalogObjectRequest")
 @js.native
 class UpsertCatalogObjectRequest () extends js.Object {
+  
   /**
     * A value you specify that uniquely identifies this request among all your requests.
     * A common way to create a valid idempotency key is to use a Universally unique identifier (UUID).
@@ -15,6 +16,7 @@ class UpsertCatalogObjectRequest () extends js.Object {
     * See [Idempotency](https://developer.squareup.com/docs/basics/api101/idempotency) for more information.
     */
   var idempotency_key: String = js.native
+  
   /**
     * A CatalogObject to be created or updated.
     *  - For updates, the object must be active (the `is_deleted` field is not `true`).
@@ -23,4 +25,3 @@ class UpsertCatalogObjectRequest () extends js.Object {
     */
   var `object`: CatalogObject = js.native
 }
-

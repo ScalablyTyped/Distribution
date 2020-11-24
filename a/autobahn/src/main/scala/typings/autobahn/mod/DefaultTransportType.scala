@@ -2,7 +2,7 @@ package typings.autobahn.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.autobahn.autobahnStrings.websocket
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.autobahn.autobahnStrings.rawsocket
 */
 trait DefaultTransportType extends js.Object
-
 object DefaultTransportType {
+  
   @scala.inline
   def longpoll: typings.autobahn.autobahnStrings.longpoll = "longpoll".asInstanceOf[typings.autobahn.autobahnStrings.longpoll]
+  
   @scala.inline
   def rawsocket: typings.autobahn.autobahnStrings.rawsocket = "rawsocket".asInstanceOf[typings.autobahn.autobahnStrings.rawsocket]
+  
   @scala.inline
   def websocket: typings.autobahn.autobahnStrings.websocket = "websocket".asInstanceOf[typings.autobahn.autobahnStrings.websocket]
 }
-

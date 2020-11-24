@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx/lib/internal", "decorate")
 @js.native
 object decorate extends js.Object {
+  
   def apply[T](
     clazz: Instantiable1[/* args (repeated) */ js.Any, T],
     decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -22,4 +23,3 @@ object decorate extends js.Object {
     */ typings.mobx.mobxStrings.decorate with TopLevel[js.Any]
   ): T = js.native
 }
-

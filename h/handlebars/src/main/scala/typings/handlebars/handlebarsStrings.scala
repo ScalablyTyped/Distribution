@@ -2,9 +2,82 @@ package typings.handlebars
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handlebarsStrings {
+  
+  @scala.inline
+  def BlockStatement: BlockStatement = "BlockStatement".asInstanceOf[BlockStatement]
+  
+  @scala.inline
+  def BooleanLiteral: BooleanLiteral = "BooleanLiteral".asInstanceOf[BooleanLiteral]
+  
+  @scala.inline
+  def CommentStatement: CommentStatement = "CommentStatement".asInstanceOf[CommentStatement]
+  
+  @scala.inline
+  def ContentStatement: ContentStatement = "ContentStatement".asInstanceOf[ContentStatement]
+  
+  @scala.inline
+  def Hash: Hash = "Hash".asInstanceOf[Hash]
+  
+  @scala.inline
+  def HashPair: HashPair = "HashPair".asInstanceOf[HashPair]
+  
+  @scala.inline
+  def KnownHelpers: KnownHelpers = "KnownHelpers".asInstanceOf[KnownHelpers]
+  
+  @scala.inline
+  def MustacheStatement: MustacheStatement = "MustacheStatement".asInstanceOf[MustacheStatement]
+  
+  @scala.inline
+  def NullLiteral: NullLiteral = "NullLiteral".asInstanceOf[NullLiteral]
+  
+  @scala.inline
+  def NumberLiteral: NumberLiteral = "NumberLiteral".asInstanceOf[NumberLiteral]
+  
+  @scala.inline
+  def PartialBlockStatement: PartialBlockStatement = "PartialBlockStatement".asInstanceOf[PartialBlockStatement]
+  
+  @scala.inline
+  def PartialStatement: PartialStatement = "PartialStatement".asInstanceOf[PartialStatement]
+  
+  @scala.inline
+  def PathExpression: PathExpression = "PathExpression".asInstanceOf[PathExpression]
+  
+  @scala.inline
+  def StringLiteral: StringLiteral = "StringLiteral".asInstanceOf[StringLiteral]
+  
+  @scala.inline
+  def SubExpression: SubExpression = "SubExpression".asInstanceOf[SubExpression]
+  
+  @scala.inline
+  def UndefinedLiteral: UndefinedLiteral = "UndefinedLiteral".asInstanceOf[UndefinedLiteral]
+  
+  @scala.inline
+  def blockHelperMissing: blockHelperMissing = "blockHelperMissing".asInstanceOf[blockHelperMissing]
+  
+  @scala.inline
+  def each: each = "each".asInstanceOf[each]
+  
+  @scala.inline
+  def helperMissing: helperMissing = "helperMissing".asInstanceOf[helperMissing]
+  
+  @scala.inline
+  def `if`: `if` = "if".asInstanceOf[`if`]
+  
+  @scala.inline
+  def log: log = "log".asInstanceOf[log]
+  
+  @scala.inline
+  def lookup: lookup = "lookup".asInstanceOf[lookup]
+  
+  @scala.inline
+  def unless: unless = "unless".asInstanceOf[unless]
+  
+  @scala.inline
+  def `with`: `with` = "with".asInstanceOf[`with`]
+  
   @js.native
   sealed trait BlockStatement extends js.Object
   
@@ -76,54 +149,4 @@ object handlebarsStrings {
   
   @js.native
   sealed trait `with` extends BuiltinHelperName
-  
-  @scala.inline
-  def BlockStatement: BlockStatement = "BlockStatement".asInstanceOf[BlockStatement]
-  @scala.inline
-  def BooleanLiteral: BooleanLiteral = "BooleanLiteral".asInstanceOf[BooleanLiteral]
-  @scala.inline
-  def CommentStatement: CommentStatement = "CommentStatement".asInstanceOf[CommentStatement]
-  @scala.inline
-  def ContentStatement: ContentStatement = "ContentStatement".asInstanceOf[ContentStatement]
-  @scala.inline
-  def Hash: Hash = "Hash".asInstanceOf[Hash]
-  @scala.inline
-  def HashPair: HashPair = "HashPair".asInstanceOf[HashPair]
-  @scala.inline
-  def KnownHelpers: KnownHelpers = "KnownHelpers".asInstanceOf[KnownHelpers]
-  @scala.inline
-  def MustacheStatement: MustacheStatement = "MustacheStatement".asInstanceOf[MustacheStatement]
-  @scala.inline
-  def NullLiteral: NullLiteral = "NullLiteral".asInstanceOf[NullLiteral]
-  @scala.inline
-  def NumberLiteral: NumberLiteral = "NumberLiteral".asInstanceOf[NumberLiteral]
-  @scala.inline
-  def PartialBlockStatement: PartialBlockStatement = "PartialBlockStatement".asInstanceOf[PartialBlockStatement]
-  @scala.inline
-  def PartialStatement: PartialStatement = "PartialStatement".asInstanceOf[PartialStatement]
-  @scala.inline
-  def PathExpression: PathExpression = "PathExpression".asInstanceOf[PathExpression]
-  @scala.inline
-  def StringLiteral: StringLiteral = "StringLiteral".asInstanceOf[StringLiteral]
-  @scala.inline
-  def SubExpression: SubExpression = "SubExpression".asInstanceOf[SubExpression]
-  @scala.inline
-  def UndefinedLiteral: UndefinedLiteral = "UndefinedLiteral".asInstanceOf[UndefinedLiteral]
-  @scala.inline
-  def blockHelperMissing: blockHelperMissing = "blockHelperMissing".asInstanceOf[blockHelperMissing]
-  @scala.inline
-  def each: each = "each".asInstanceOf[each]
-  @scala.inline
-  def helperMissing: helperMissing = "helperMissing".asInstanceOf[helperMissing]
-  @scala.inline
-  def `if`: `if` = "if".asInstanceOf[`if`]
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
-  @scala.inline
-  def unless: unless = "unless".asInstanceOf[unless]
-  @scala.inline
-  def `with`: `with` = "with".asInstanceOf[`with`]
 }
-

@@ -3,11 +3,12 @@ package typings.durandal.binderMod
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("durandal/binder", "bindContext")
 @js.native
 object bindContext extends js.Object {
+  
   def apply(
     bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any,
     view: HTMLElement
@@ -30,4 +31,3 @@ object bindContext extends js.Object {
     dataAlias: String
   ): BindingInstruction = js.native
 }
-

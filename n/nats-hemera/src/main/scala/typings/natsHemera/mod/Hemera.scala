@@ -14,53 +14,17 @@ import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Hemera[Request, Response] extends js.Object {
-  @JSName("auth$")
-  var auth$: js.Any = js.native
-  var config: Config = js.native
-  @JSName("context$")
-  var context$: js.Any = js.native
-  @JSName("delegate$")
-  var delegate$: js.Any = js.native
-  var errors: StringDictionary[Error] = js.native
-  /**
-    * Returns the load propert from heavy instance
-    * https://github.com/hapijs/heavy
-    *
-    * @type {*}
-    * @memberof Hemera
-    */
-  var load: js.Any = js.native
-  var log: typings.pino.mod.Logger | Logger = js.native
-  var matchedAction: AddDefinition = js.native
-  @JSName("meta$")
-  var meta$: js.Any = js.native
-  var notFoundPattern: ServerPattern = js.native
-  var request: Request = js.native
-  @JSName("request$")
-  var request$: Request$ = js.native
-  var response: Response = js.native
-  /**
-    * Returns the Bloomrun instance
-    * https://github.com/mcollina/bloomrun
-    *
-    * @type {*}
-    * @memberof Hemera
-    */
-  var router: js.Any = js.native
-  var sid: Double = js.native
-  var topics: StringDictionary[Double] = js.native
-  @JSName("trace$")
-  var trace$: Trace = js.native
-  var transport: NatsTransport = js.native
+  
   // act
   def act(pattern: String, handler: ActHandler): Unit = js.native
   def act(pattern: ClientPattern, handler: ActHandler): Unit = js.native
   def act[T](pattern: String): js.Promise[ActPromiseResult[T]] = js.native
   def act[T](pattern: ClientPattern): js.Promise[ActPromiseResult[T]] = js.native
+  
   def add(pattern: String): AddDefinition = js.native
   def add(
     pattern: String,
@@ -98,14 +62,33 @@ trait Hemera[Request, Response] extends js.Object {
       Unit
     ]
   ): AddDefinition = js.native
+  
+  @JSName("auth$")
+  var auth$: js.Any = js.native
+  
   def checkPluginDependencies(plugin: Plugin): Unit = js.native
+  
   def close(): js.Promise[Unit] = js.native
   def close(closeListener: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+  
+  var config: Config = js.native
+  
+  @JSName("context$")
+  var context$: js.Any = js.native
+  
   def createError(name: String): js.Any = js.native
+  
   def decorate(name: String, decoration: js.Any): Hemera[NoContext, NoContext] = js.native
   def decorate(name: String, decoration: js.Any, dependencies: js.Array[String]): Hemera[NoContext, NoContext] = js.native
+  
+  @JSName("delegate$")
+  var delegate$: js.Any = js.native
+  
+  var errors: StringDictionary[Error] = js.native
+  
   def expose(name: String, exposition: js.Any): Hemera[NoContext, NoContext] = js.native
   def expose(name: String, exposition: js.Any, dependencies: js.Array[String]): Hemera[NoContext, NoContext] = js.native
+  
   @JSName("ext")
   def ext_onAct(
     name: onAct,
@@ -231,26 +214,85 @@ trait Hemera[Request, Response] extends js.Object {
       Unit
     ]
   ): Hemera[ServerRequest, ServerResponse] = js.native
+  
   def fatal(): Unit = js.native
+  
   def hasDecorator(name: String): Boolean = js.native
+  
   def list(Pattern: js.Any, options: js.Any): js.Array[AddDefinition] = js.native
+  
+  /**
+    * Returns the load propert from heavy instance
+    * https://github.com/hapijs/heavy
+    *
+    * @type {*}
+    * @memberof Hemera
+    */
+  var load: js.Any = js.native
+  
+  var log: typings.pino.mod.Logger | Logger = js.native
+  
+  var matchedAction: AddDefinition = js.native
+  
+  @JSName("meta$")
+  var meta$: js.Any = js.native
+  
+  var notFoundPattern: ServerPattern = js.native
+  
   def ready(): js.Promise[Unit] = js.native
   def ready(readyListener: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   def remove(topic: String, maxMessages: Double): Boolean = js.native
   def remove(topic: Double, maxMessages: Double): Boolean = js.native
+  
   def removeAll(): Unit = js.native
+  
+  var request: Request = js.native
+  
+  @JSName("request$")
+  var request$: Request$ = js.native
+  
+  var response: Response = js.native
+  
+  /**
+    * Returns the Bloomrun instance
+    * https://github.com/mcollina/bloomrun
+    *
+    * @type {*}
+    * @memberof Hemera
+    */
+  var router: js.Any = js.native
+  
   def setClientDecoder(encoder: js.Function1[/* message */ String | Buffer, DecoderResult]): Hemera[NoContext, NoContext] = js.native
+  
   // serialization
   def setClientEncoder(encoder: js.Function1[/* message */ js.Object | Buffer, EncoderResult]): Hemera[NoContext, NoContext] = js.native
+  
   def setErrorHandler(handler: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   def setIdGenerator(generatorFunction: js.Function0[String]): Hemera[NoContext, NoContext] = js.native
+  
   def setNotFoundPattern(): Unit = js.native
   def setNotFoundPattern(pattern: String): Unit = js.native
   def setNotFoundPattern(pattern: ServerPattern): Unit = js.native
+  
   def setResponseSchemaCompiler(compilerFunction: js.Function1[/* schema */ js.Object, js.Function | js.Promise[_]]): Hemera[NoContext, NoContext] = js.native
+  
   def setSchemaCompiler(compilerFunction: js.Function1[/* schema */ js.Object, js.Function | js.Promise[_]]): Hemera[NoContext, NoContext] = js.native
+  
   def setServerDecoder(encoder: js.Function1[/* message */ String | Buffer, DecoderResult]): Hemera[NoContext, NoContext] = js.native
+  
   def setServerEncoder(encoder: js.Function1[/* message */ js.Object | Buffer, EncoderResult]): Hemera[NoContext, NoContext] = js.native
+  
+  var sid: Double = js.native
+  
+  var topics: StringDictionary[Double] = js.native
+  
+  @JSName("trace$")
+  var trace$: Trace = js.native
+  
+  var transport: NatsTransport = js.native
+  
   def use(
     plugin: js.Function2[/* instance */ Hemera[NoContext, NoContext], /* opts */ js.Object, js.Promise[Unit]]
   ): Unit = js.native
@@ -277,4 +319,3 @@ trait Hemera[Request, Response] extends js.Object {
     options: js.Object
   ): Unit = js.native
 }
-

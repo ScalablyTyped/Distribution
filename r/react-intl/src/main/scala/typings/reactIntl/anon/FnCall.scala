@@ -1,13 +1,14 @@
 package typings.reactIntl.anon
 
-import typings.reactIntl.typesMod.FormatListOptions
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCall extends js.Object {
-  def apply(values: js.Array[String]): String = js.native
-  def apply(values: js.Array[String], opts: FormatListOptions): String = js.native
+  
+  def apply(): String = js.native
+  def apply(date: Double): String = js.native
+  def apply(date: Date): String = js.native
 }
-

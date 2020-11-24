@@ -2,7 +2,7 @@ package typings.gregorianCalendar.gregorianCalendarFormatMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gregorian-calendar-format", JSImport.Namespace)
 @js.native
@@ -17,4 +17,3 @@ class ^ protected () extends DateTimeFormat {
   def this(pattern: String) = this()
   def this(pattern: String, locale: js.Object) = this()
 }
-

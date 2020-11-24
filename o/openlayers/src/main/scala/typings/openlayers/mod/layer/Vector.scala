@@ -5,7 +5,7 @@ import typings.openlayers.mod.olx.layer.VectorOptions
 import typings.openlayers.mod.style.Style
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -33,6 +33,7 @@ import scala.scalajs.js.annotation._
   */
 class Vector () extends Layer {
   def this(opt_options: VectorOptions) = this()
+  
   /**
     * Get the style for features.  This returns whatever was passed to the `style`
     * option at construction or to the `setStyle` method.
@@ -40,12 +41,14 @@ class Vector () extends Layer {
     * @api stable
     */
   def getStyle(): Style | js.Array[Style] | StyleFunction = js.native
+  
   /**
     * Get the style function.
     * @return Layer style function.
     * @api stable
     */
   def getStyleFunction(): js.UndefOr[StyleFunction] = js.native
+  
   /**
     * Set the style for features.  This can be a single style object, an array
     * of styles, or a function that takes a feature and resolution and returns
@@ -61,4 +64,3 @@ class Vector () extends Layer {
   def setStyle(style: StyleFunction): Unit = js.native
   def setStyle(style: Style): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ KeyTable for DataTables
 | ------------------ | :-------------: |
 | Full name          | datatables.net-keytable |
 | Keywords           | spreadsheet, excel, keyboard, DataTables, jQuery, table, DataTables |
-| # releases         | 5 |
-| # dependents       | 6 |
-| # downloads        | 308615 |
+| # releases         | 3 |
+| # dependents       | 8 |
+| # downloads        | 1047532 |
 | # stars            | 0 |
 
 ## Links

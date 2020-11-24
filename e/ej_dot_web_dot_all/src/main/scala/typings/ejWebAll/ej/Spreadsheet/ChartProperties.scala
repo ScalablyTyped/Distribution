@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Spreadsheet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartProperties extends js.Object
-
 @JSGlobal("ej.Spreadsheet.ChartProperties")
 @js.native
 object ChartProperties extends js.Object {
+  
   ///Specifies to make the data label center of the chart.
   @js.native
   sealed trait DataLabelCenter extends ChartProperties
@@ -97,6 +97,4 @@ object ChartProperties extends js.Object {
   ///Specifies to make the title to none of the chart.
   @js.native
   sealed trait TitleNone extends ChartProperties
-  
 }
-

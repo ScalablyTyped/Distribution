@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sqladmin/v1beta4", "sqladmin_v1beta4.Resource$Users")
 @js.native
 class ResourceUsers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * sql.users.delete
     * @desc Deletes a user from a Cloud SQL instance.
@@ -44,6 +46,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.users.insert
     * @desc Creates a new user in a Cloud SQL instance.
@@ -74,6 +77,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.users.list
     * @desc Lists users in the specified Cloud SQL instance.
@@ -103,6 +107,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUsersListResponse]
   ): Unit = js.native
+  
   /**
     * sql.users.update
     * @desc Updates an existing user in a Cloud SQL instance.
@@ -136,4 +141,3 @@ class ResourceUsers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

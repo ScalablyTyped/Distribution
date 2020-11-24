@@ -3,7 +3,7 @@ package typings.playcanvas.pc
 import typings.std.AudioNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new SoundSlot.
@@ -35,80 +35,89 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SoundSlot extends EventHandler {
+  
   /**
     * The asset id.
     */
   var asset: Double | Null = js.native
+  
   /**
     * If true the slot will begin playing as soon as it is loaded.
     */
   var autoPlay: Boolean = js.native
-  /**
-    * The duration of the sound that the slot will play starting from startTime.
-    */
-  var duration: Double = js.native
-  /**
-    * An array that contains all the {@link pc.SoundInstance}s currently being played by the slot.
-    */
-  var instances: js.Array[SoundInstance] = js.native
-  /**
-    * Returns true if the asset of the slot is loaded.
-    */
-  var isLoaded: Boolean = js.native
-  /**
-    * Returns true if the slot is currently paused.
-    */
-  var isPaused: Boolean = js.native
-  /**
-    * Returns true if the slot is currently playing.
-    */
-  var isPlaying: Boolean = js.native
-  /**
-    * Returns true if the slot is currently stopped.
-    */
-  var isStopped: Boolean = js.native
-  /**
-    * If true the slot will restart when it finishes playing.
-    */
-  var loop: Boolean = js.native
-  /**
-    * The name of the slot.
-    */
-  var name: String = js.native
-  /**
-    * If true then sounds played from slot will be played independently of each other. Otherwise the slot will first stop the current sound before starting the new one.
-    */
-  var overlap: Boolean = js.native
-  /**
-    * The pitch modifier to play the sound with. Must be larger than 0.01.
-    */
-  var pitch: Double = js.native
-  /**
-    * The start time from which the sound will start playing.
-    */
-  var startTime: Double = js.native
-  /**
-    * The volume modifier to play the sound with. In range 0-1.
-    */
-  var volume: Double = js.native
+  
   /**
     * Clears any external nodes set by {@link pc.SoundSlot#setExternalNodes}.
     */
   def clearExternalNodes(): Unit = js.native
+  
+  /**
+    * The duration of the sound that the slot will play starting from startTime.
+    */
+  var duration: Double = js.native
+  
   /**
     * Gets an array that contains the two external nodes set by {@link pc.SoundSlot#setExternalNodes}.
     * @returns An array of 2 elements that contains the first and last nodes set by {@link pc.SoundSlot#setExternalNodes}.
     */
   def getExternalNodes(): js.Array[AudioNode] = js.native
+  
+  /**
+    * An array that contains all the {@link pc.SoundInstance}s currently being played by the slot.
+    */
+  var instances: js.Array[SoundInstance] = js.native
+  
+  /**
+    * Returns true if the asset of the slot is loaded.
+    */
+  var isLoaded: Boolean = js.native
+  
+  /**
+    * Returns true if the slot is currently paused.
+    */
+  var isPaused: Boolean = js.native
+  
+  /**
+    * Returns true if the slot is currently playing.
+    */
+  var isPlaying: Boolean = js.native
+  
+  /**
+    * Returns true if the slot is currently stopped.
+    */
+  var isStopped: Boolean = js.native
+  
   /**
     * Loads the asset assigned to this slot.
     */
   def load(): Unit = js.native
+  
+  /**
+    * If true the slot will restart when it finishes playing.
+    */
+  var loop: Boolean = js.native
+  
+  /**
+    * The name of the slot.
+    */
+  var name: String = js.native
+  
+  /**
+    * If true then sounds played from slot will be played independently of each other. Otherwise the slot will first stop the current sound before starting the new one.
+    */
+  var overlap: Boolean = js.native
+  
   /**
     * Pauses all sound instances. To continue playback call {@link pc.SoundSlot#resume}.
     * @returns True if the sound instances paused successfully, false otherwise.
     */
   def pause(): Boolean = js.native
+  
+  /**
+    * The pitch modifier to play the sound with. Must be larger than 0.01.
+    */
+  var pitch: Double = js.native
+  
   /**
     * Plays a sound. If {@link pc.SoundSlot#overlap} is true the new sound
     * instance will be played independently of any other instances already playing.
@@ -116,11 +125,13 @@ trait SoundSlot extends EventHandler {
     * @returns The new sound instance.
     */
   def play(): SoundInstance = js.native
+  
   /**
     * Resumes playback of all paused sound instances.
     * @returns True if any instances were resumed.
     */
   def resume(): Boolean = js.native
+  
   /**
     * Connect external Web Audio API nodes. Any sound played by this slot will
     * automatically attach the specified nodes to the source that plays the sound. You need to pass
@@ -140,10 +151,20 @@ trait SoundSlot extends EventHandler {
     */
   def setExternalNodes(firstNode: AudioNode): Unit = js.native
   def setExternalNodes(firstNode: AudioNode, lastNode: AudioNode): Unit = js.native
+  
+  /**
+    * The start time from which the sound will start playing.
+    */
+  var startTime: Double = js.native
+  
   /**
     * Stops playback of all sound instances.
     * @returns True if any instances were stopped.
     */
   def stop(): Boolean = js.native
+  
+  /**
+    * The volume modifier to play the sound with. In range 0-1.
+    */
+  var volume: Double = js.native
 }
-

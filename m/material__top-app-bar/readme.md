@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__top-app-bar
 
-Typings are for version 7.0.0
+Typings are for version 8.0.0
 
 ## Library description:
 The Material Components for the web top app bar component
@@ -10,9 +10,9 @@ The Material Components for the web top app bar component
 | ------------------ | :-------------: |
 | Full name          | @material/top-app-bar |
 | Keywords           | material components, material design, top app bar, top-app-bar, topappbar |
-| # releases         | 169 |
-| # dependents       | 41 |
-| # downloads        | 1045547 |
+| # releases         | 618 |
+| # dependents       | 46 |
+| # downloads        | 1657144 |
 | # stars            | 0 |
 
 ## Links

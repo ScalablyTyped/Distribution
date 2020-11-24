@@ -2,7 +2,7 @@ package typings.parse5HtmlRewritingStream.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Streaming SAX-style HTML rewriter. A transform stream (which means you can
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSImport("parse5-html-rewriting-stream", JSImport.Namespace)
 @js.native
 class ^ () extends RewritingStream
-

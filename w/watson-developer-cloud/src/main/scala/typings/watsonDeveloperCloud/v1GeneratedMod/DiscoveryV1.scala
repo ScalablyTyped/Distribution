@@ -3,13 +3,14 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 import typings.ibmCloudSdkCore.mod.BaseService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The IBM Watson&trade; Discovery Service is a cognitive search and content analytics engine that you can add to applications to identify patterns, trends and actionable insights to drive better decision-making. Securely unify structured and unstructured data with pre-enriched content, and use a simplified query language to eliminate the need for manual filtering of results.
   */
 @js.native
 trait DiscoveryV1 extends BaseService {
+  
   /*************************
     * documents
     ************************/
@@ -60,6 +61,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def addDocument(params: AddDocumentParams): js.Promise[_] | Unit = js.native
   def addDocument(params: AddDocumentParams, callback: Callback[DocumentAccepted]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * trainingData
     ************************/
@@ -81,6 +83,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def addTrainingData(params: AddTrainingDataParams): js.Promise[_] | Unit = js.native
   def addTrainingData(params: AddTrainingDataParams, callback: Callback[TrainingQuery]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * collections
     ************************/
@@ -100,6 +103,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def createCollection(params: CreateCollectionParams): js.Promise[_] | Unit = js.native
   def createCollection(params: CreateCollectionParams, callback: Callback[Collection]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * configurations
     ************************/
@@ -131,6 +135,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def createConfiguration(params: CreateConfigurationParams): js.Promise[_] | Unit = js.native
   def createConfiguration(params: CreateConfigurationParams, callback: Callback[Configuration]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * credentials
     ************************/
@@ -159,6 +164,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def createCredentials(params: CreateCredentialsParams): js.Promise[_] | Unit = js.native
   def createCredentials(params: CreateCredentialsParams, callback: Callback[Credentials]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * environments
     ************************/
@@ -181,6 +187,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def createEnvironment(params: CreateEnvironmentParams): js.Promise[_] | Unit = js.native
   def createEnvironment(params: CreateEnvironmentParams, callback: Callback[Environment]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * eventsAndFeedback
     ************************/
@@ -199,6 +206,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def createEvent(params: CreateEventParams): js.Promise[_] | Unit = js.native
   def createEvent(params: CreateEventParams, callback: Callback[CreateEventResponse]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * queryModifications
     ************************/
@@ -231,6 +239,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def createExpansions(params: CreateExpansionsParams): js.Promise[_] | Unit = js.native
   def createExpansions(params: CreateExpansionsParams, callback: Callback[Expansions]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * gatewayConfiguration
     ************************/
@@ -248,6 +257,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def createGateway(params: CreateGatewayParams): js.Promise[_] | Unit = js.native
   def createGateway(params: CreateGatewayParams, callback: Callback[Gateway]): js.Promise[_] | Unit = js.native
+  
   /**
     * Create stopword list.
     *
@@ -264,6 +274,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def createStopwordList(params: CreateStopwordListParams): js.Promise[_] | Unit = js.native
   def createStopwordList(params: CreateStopwordListParams, callback: Callback[TokenDictStatusResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Create tokenization dictionary.
     *
@@ -281,6 +292,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def createTokenizationDictionary(params: CreateTokenizationDictionaryParams): js.Promise[_] | Unit = js.native
   def createTokenizationDictionary(params: CreateTokenizationDictionaryParams, callback: Callback[TokenDictStatusResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Add example to training data query.
     *
@@ -299,6 +311,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def createTrainingExample(params: CreateTrainingExampleParams): js.Promise[_] | Unit = js.native
   def createTrainingExample(params: CreateTrainingExampleParams, callback: Callback[TrainingExample]): js.Promise[_] | Unit = js.native
+  
   /**
     * Delete all training data.
     *
@@ -313,6 +326,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def deleteAllTrainingData(params: DeleteAllTrainingDataParams): js.Promise[_] | Unit = js.native
   def deleteAllTrainingData(params: DeleteAllTrainingDataParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  
   /**
     * Delete a collection.
     *
@@ -325,6 +339,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def deleteCollection(params: DeleteCollectionParams): js.Promise[_] | Unit = js.native
   def deleteCollection(params: DeleteCollectionParams, callback: Callback[DeleteCollectionResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Delete a configuration.
     *
@@ -342,6 +357,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def deleteConfiguration(params: DeleteConfigurationParams): js.Promise[_] | Unit = js.native
   def deleteConfiguration(params: DeleteConfigurationParams, callback: Callback[DeleteConfigurationResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Delete credentials.
     *
@@ -356,6 +372,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def deleteCredentials(params: DeleteCredentialsParams): js.Promise[_] | Unit = js.native
   def deleteCredentials(params: DeleteCredentialsParams, callback: Callback[DeleteCredentials]): js.Promise[_] | Unit = js.native
+  
   /**
     * Delete a document.
     *
@@ -372,6 +389,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def deleteDocument(params: DeleteDocumentParams): js.Promise[_] | Unit = js.native
   def deleteDocument(params: DeleteDocumentParams, callback: Callback[DeleteDocumentResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Delete environment.
     *
@@ -383,6 +401,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def deleteEnvironment(params: DeleteEnvironmentParams): js.Promise[_] | Unit = js.native
   def deleteEnvironment(params: DeleteEnvironmentParams, callback: Callback[DeleteEnvironmentResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Delete the expansion list.
     *
@@ -398,6 +417,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def deleteExpansions(params: DeleteExpansionsParams): js.Promise[_] | Unit = js.native
   def deleteExpansions(params: DeleteExpansionsParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  
   /**
     * Delete Gateway.
     *
@@ -412,6 +432,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def deleteGateway(params: DeleteGatewayParams): js.Promise[_] | Unit = js.native
   def deleteGateway(params: DeleteGatewayParams, callback: Callback[GatewayDelete]): js.Promise[_] | Unit = js.native
+  
   /**
     * Delete a custom stopword list.
     *
@@ -427,6 +448,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def deleteStopwordList(params: DeleteStopwordListParams): js.Promise[_] | Unit = js.native
   def deleteStopwordList(params: DeleteStopwordListParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  
   /**
     * Delete tokenization dictionary.
     *
@@ -441,6 +463,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def deleteTokenizationDictionary(params: DeleteTokenizationDictionaryParams): js.Promise[_] | Unit = js.native
   def deleteTokenizationDictionary(params: DeleteTokenizationDictionaryParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  
   /**
     * Delete a training data query.
     *
@@ -456,6 +479,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def deleteTrainingData(params: DeleteTrainingDataParams): js.Promise[_] | Unit = js.native
   def deleteTrainingData(params: DeleteTrainingDataParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  
   /**
     * Delete example for training data query.
     *
@@ -472,6 +496,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def deleteTrainingExample(params: DeleteTrainingExampleParams): js.Promise[_] | Unit = js.native
   def deleteTrainingExample(params: DeleteTrainingExampleParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * userData
     ************************/
@@ -493,6 +518,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def deleteUserData(params: DeleteUserDataParams): js.Promise[_] | Unit = js.native
   def deleteUserData(params: DeleteUserDataParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * queries
     ************************/
@@ -561,6 +587,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def federatedQuery(params: FederatedQueryParams): js.Promise[_] | Unit = js.native
   def federatedQuery(params: FederatedQueryParams, callback: Callback[QueryResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Query multiple collection system notices.
     *
@@ -613,6 +640,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def federatedQueryNotices(params: FederatedQueryNoticesParams): js.Promise[_] | Unit = js.native
   def federatedQueryNotices(params: FederatedQueryNoticesParams, callback: Callback[QueryNoticesResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Get collection details.
     *
@@ -625,6 +653,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def getCollection(params: GetCollectionParams): js.Promise[_] | Unit = js.native
   def getCollection(params: GetCollectionParams, callback: Callback[Collection]): js.Promise[_] | Unit = js.native
+  
   /**
     * Get configuration details.
     *
@@ -637,6 +666,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def getConfiguration(params: GetConfigurationParams): js.Promise[_] | Unit = js.native
   def getConfiguration(params: GetConfigurationParams, callback: Callback[Configuration]): js.Promise[_] | Unit = js.native
+  
   /**
     * View Credentials.
     *
@@ -654,6 +684,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def getCredentials(params: GetCredentialsParams): js.Promise[_] | Unit = js.native
   def getCredentials(params: GetCredentialsParams, callback: Callback[Credentials]): js.Promise[_] | Unit = js.native
+  
   /**
     * Get document details.
     *
@@ -671,6 +702,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def getDocumentStatus(params: GetDocumentStatusParams): js.Promise[_] | Unit = js.native
   def getDocumentStatus(params: GetDocumentStatusParams, callback: Callback[DocumentStatus]): js.Promise[_] | Unit = js.native
+  
   /**
     * Get environment info.
     *
@@ -682,6 +714,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def getEnvironment(params: GetEnvironmentParams): js.Promise[_] | Unit = js.native
   def getEnvironment(params: GetEnvironmentParams, callback: Callback[Environment]): js.Promise[_] | Unit = js.native
+  
   /**
     * List Gateway Details.
     *
@@ -696,6 +729,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def getGateway(params: GetGatewayParams): js.Promise[_] | Unit = js.native
   def getGateway(params: GetGatewayParams, callback: Callback[Gateway]): js.Promise[_] | Unit = js.native
+  
   /**
     * Percentage of queries with an associated event.
     *
@@ -717,6 +751,7 @@ trait DiscoveryV1 extends BaseService {
   def getMetricsEventRate(params: js.UndefOr[scala.Nothing], callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
   def getMetricsEventRate(params: GetMetricsEventRateParams): js.Promise[_] | Unit = js.native
   def getMetricsEventRate(params: GetMetricsEventRateParams, callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Number of queries over time.
     *
@@ -736,6 +771,7 @@ trait DiscoveryV1 extends BaseService {
   def getMetricsQuery(params: js.UndefOr[scala.Nothing], callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
   def getMetricsQuery(params: GetMetricsQueryParams): js.Promise[_] | Unit = js.native
   def getMetricsQuery(params: GetMetricsQueryParams, callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Number of queries with an event over time.
     *
@@ -757,6 +793,7 @@ trait DiscoveryV1 extends BaseService {
   def getMetricsQueryEvent(params: js.UndefOr[scala.Nothing], callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
   def getMetricsQueryEvent(params: GetMetricsQueryEventParams): js.Promise[_] | Unit = js.native
   def getMetricsQueryEvent(params: GetMetricsQueryEventParams, callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Number of queries with no search results over time.
     *
@@ -777,6 +814,7 @@ trait DiscoveryV1 extends BaseService {
   def getMetricsQueryNoResults(params: js.UndefOr[scala.Nothing], callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
   def getMetricsQueryNoResults(params: GetMetricsQueryNoResultsParams): js.Promise[_] | Unit = js.native
   def getMetricsQueryNoResults(params: GetMetricsQueryNoResultsParams, callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Most frequent query tokens with an event.
     *
@@ -795,6 +833,7 @@ trait DiscoveryV1 extends BaseService {
   def getMetricsQueryTokenEvent(params: js.UndefOr[scala.Nothing], callback: Callback[MetricTokenResponse]): js.Promise[_] | Unit = js.native
   def getMetricsQueryTokenEvent(params: GetMetricsQueryTokenEventParams): js.Promise[_] | Unit = js.native
   def getMetricsQueryTokenEvent(params: GetMetricsQueryTokenEventParams, callback: Callback[MetricTokenResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Get stopword list status.
     *
@@ -809,6 +848,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def getStopwordListStatus(params: GetStopwordListStatusParams): js.Promise[_] | Unit = js.native
   def getStopwordListStatus(params: GetStopwordListStatusParams, callback: Callback[TokenDictStatusResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Get tokenization dictionary status.
     *
@@ -823,6 +863,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def getTokenizationDictionaryStatus(params: GetTokenizationDictionaryStatusParams): js.Promise[_] | Unit = js.native
   def getTokenizationDictionaryStatus(params: GetTokenizationDictionaryStatusParams, callback: Callback[TokenDictStatusResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Get details about a query.
     *
@@ -838,6 +879,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def getTrainingData(params: GetTrainingDataParams): js.Promise[_] | Unit = js.native
   def getTrainingData(params: GetTrainingDataParams, callback: Callback[TrainingQuery]): js.Promise[_] | Unit = js.native
+  
   /**
     * Get details for training data example.
     *
@@ -854,6 +896,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def getTrainingExample(params: GetTrainingExampleParams): js.Promise[_] | Unit = js.native
   def getTrainingExample(params: GetTrainingExampleParams, callback: Callback[TrainingExample]): js.Promise[_] | Unit = js.native
+  
   /**
     * List collection fields.
     *
@@ -868,6 +911,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def listCollectionFields(params: ListCollectionFieldsParams): js.Promise[_] | Unit = js.native
   def listCollectionFields(params: ListCollectionFieldsParams, callback: Callback[ListCollectionFieldsResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * List collections.
     *
@@ -882,6 +926,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def listCollections(params: ListCollectionsParams): js.Promise[_] | Unit = js.native
   def listCollections(params: ListCollectionsParams, callback: Callback[ListCollectionsResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * List configurations.
     *
@@ -896,6 +941,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def listConfigurations(params: ListConfigurationsParams): js.Promise[_] | Unit = js.native
   def listConfigurations(params: ListConfigurationsParams, callback: Callback[ListConfigurationsResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * List credentials.
     *
@@ -911,6 +957,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def listCredentials(params: ListCredentialsParams): js.Promise[_] | Unit = js.native
   def listCredentials(params: ListCredentialsParams, callback: Callback[CredentialsList]): js.Promise[_] | Unit = js.native
+  
   /**
     * List environments.
     *
@@ -926,6 +973,7 @@ trait DiscoveryV1 extends BaseService {
   def listEnvironments(params: js.UndefOr[scala.Nothing], callback: Callback[ListEnvironmentsResponse]): js.Promise[_] | Unit = js.native
   def listEnvironments(params: ListEnvironmentsParams): js.Promise[_] | Unit = js.native
   def listEnvironments(params: ListEnvironmentsParams, callback: Callback[ListEnvironmentsResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Get the expansion list.
     *
@@ -941,6 +989,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def listExpansions(params: ListExpansionsParams): js.Promise[_] | Unit = js.native
   def listExpansions(params: ListExpansionsParams, callback: Callback[Expansions]): js.Promise[_] | Unit = js.native
+  
   /**
     * List fields across collections.
     *
@@ -955,6 +1004,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def listFields(params: ListFieldsParams): js.Promise[_] | Unit = js.native
   def listFields(params: ListFieldsParams, callback: Callback[ListCollectionFieldsResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * List Gateways.
     *
@@ -968,6 +1018,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def listGateways(params: ListGatewaysParams): js.Promise[_] | Unit = js.native
   def listGateways(params: ListGatewaysParams, callback: Callback[GatewayList]): js.Promise[_] | Unit = js.native
+  
   /**
     * List training data.
     *
@@ -982,6 +1033,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def listTrainingData(params: ListTrainingDataParams): js.Promise[_] | Unit = js.native
   def listTrainingData(params: ListTrainingDataParams, callback: Callback[TrainingDataSet]): js.Promise[_] | Unit = js.native
+  
   /**
     * List examples for a training data query.
     *
@@ -997,6 +1049,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def listTrainingExamples(params: ListTrainingExamplesParams): js.Promise[_] | Unit = js.native
   def listTrainingExamples(params: ListTrainingExamplesParams, callback: Callback[TrainingExampleList]): js.Promise[_] | Unit = js.native
+  
   /**
     * Long collection queries.
     *
@@ -1063,6 +1116,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def query(params: QueryParams): js.Promise[_] | Unit = js.native
   def query(params: QueryParams, callback: Callback[QueryResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Knowledge Graph entity query.
     *
@@ -1087,6 +1141,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def queryEntities(params: QueryEntitiesParams): js.Promise[_] | Unit = js.native
   def queryEntities(params: QueryEntitiesParams, callback: Callback[QueryEntitiesResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Search the query and event log.
     *
@@ -1115,6 +1170,7 @@ trait DiscoveryV1 extends BaseService {
   def queryLog(params: js.UndefOr[scala.Nothing], callback: Callback[LogQueryResponse]): js.Promise[_] | Unit = js.native
   def queryLog(params: QueryLogParams): js.Promise[_] | Unit = js.native
   def queryLog(params: QueryLogParams, callback: Callback[LogQueryResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Query system notices.
     *
@@ -1173,6 +1229,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def queryNotices(params: QueryNoticesParams): js.Promise[_] | Unit = js.native
   def queryNotices(params: QueryNoticesParams, callback: Callback[QueryNoticesResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Knowledge Graph relationship query.
     *
@@ -1199,6 +1256,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def queryRelations(params: QueryRelationsParams): js.Promise[_] | Unit = js.native
   def queryRelations(params: QueryRelationsParams, callback: Callback[QueryRelationsResponse]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * testYourConfigurationOnADocument
     ************************/
@@ -1238,6 +1296,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def testConfigurationInEnvironment(params: TestConfigurationInEnvironmentParams): js.Promise[_] | Unit = js.native
   def testConfigurationInEnvironment(params: TestConfigurationInEnvironmentParams, callback: Callback[TestDocument]): js.Promise[_] | Unit = js.native
+  
   /**
     * Update a collection.
     *
@@ -1253,6 +1312,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def updateCollection(params: UpdateCollectionParams): js.Promise[_] | Unit = js.native
   def updateCollection(params: UpdateCollectionParams, callback: Callback[Collection]): js.Promise[_] | Unit = js.native
+  
   /**
     * Update a configuration.
     *
@@ -1280,6 +1340,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def updateConfiguration(params: UpdateConfigurationParams): js.Promise[_] | Unit = js.native
   def updateConfiguration(params: UpdateConfigurationParams, callback: Callback[Configuration]): js.Promise[_] | Unit = js.native
+  
   /**
     * Update credentials.
     *
@@ -1305,6 +1366,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def updateCredentials(params: UpdateCredentialsParams): js.Promise[_] | Unit = js.native
   def updateCredentials(params: UpdateCredentialsParams, callback: Callback[Credentials]): js.Promise[_] | Unit = js.native
+  
   /**
     * Update a document.
     *
@@ -1336,6 +1398,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def updateDocument(params: UpdateDocumentParams): js.Promise[_] | Unit = js.native
   def updateDocument(params: UpdateDocumentParams, callback: Callback[DocumentAccepted]): js.Promise[_] | Unit = js.native
+  
   /**
     * Update an environment.
     *
@@ -1354,6 +1417,7 @@ trait DiscoveryV1 extends BaseService {
     */
   def updateEnvironment(params: UpdateEnvironmentParams): js.Promise[_] | Unit = js.native
   def updateEnvironment(params: UpdateEnvironmentParams, callback: Callback[Environment]): js.Promise[_] | Unit = js.native
+  
   /**
     * Change label or cross reference for example.
     *
@@ -1373,4 +1437,3 @@ trait DiscoveryV1 extends BaseService {
   def updateTrainingExample(params: UpdateTrainingExampleParams): js.Promise[_] | Unit = js.native
   def updateTrainingExample(params: UpdateTrainingExampleParams, callback: Callback[TrainingExample]): js.Promise[_] | Unit = js.native
 }
-

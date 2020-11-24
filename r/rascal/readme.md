@@ -4,15 +4,15 @@
 Typings are for version 10.0
 
 ## Library description:
-A config driven wrapper for amqplib supporting multi-host connections, automatic error recovery, redelivery flood protection, transparent encryption / decription and channel pooling
+A config driven wrapper for amqplib supporting multi-host connections, automatic error recovery, redelivery flood protection, transparent encryption / decryption,  channel pooling and publication timeouts
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rascal |
 | Keywords           | amqplib, amqp, rabbitmq, callback, promise, await, async |
-| # releases         | 33 |
-| # dependents       | 7 |
-| # downloads        | 73584 |
+| # releases         | 46 |
+| # dependents       | 8 |
+| # downloads        | 242075 |
 | # stars            | 1 |
 
 ## Links

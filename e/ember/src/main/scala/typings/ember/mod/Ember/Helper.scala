@@ -3,9 +3,8 @@ package typings.ember.mod.Ember
 import typings.emberComponent.helperMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ember", "Ember.Helper")
 @js.native
 class Helper () extends default
-

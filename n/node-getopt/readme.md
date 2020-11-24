@@ -10,9 +10,9 @@ featured command line args parser
 | ------------------ | :-------------: |
 | Full name          | node-getopt |
 | Keywords           | getopt, arg, parser |
-| # releases         | 5 |
-| # dependents       | 203 |
-| # downloads        | 407741 |
+| # releases         | 0 |
+| # dependents       | 217 |
+| # downloads        | 720973 |
 | # stars            | 7 |
 
 ## Links

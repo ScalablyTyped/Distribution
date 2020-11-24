@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.BackgroundTransfer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BackgroundTransferStatus extends js.Object
-
 /** Defines transfer operation status values. */
 @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferStatus")
 @js.native
 object BackgroundTransferStatus extends js.Object {
+  
   /** The transfer operation has been cancelled. */
   @js.native
   sealed trait canceled extends BackgroundTransferStatus
@@ -46,6 +46,4 @@ object BackgroundTransferStatus extends js.Object {
   /** The transfer is currently in progress. */
   @js.native
   sealed trait running extends BackgroundTransferStatus
-  
 }
-

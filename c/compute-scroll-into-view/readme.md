@@ -1,7 +1,7 @@
 
 # Scala.js typings for compute-scroll-into-view
 
-Typings are for version 1.0.14
+Typings are for version 1.0.16
 
 ## Library description:
 The engine that powers scroll-into-view-if-needed
@@ -10,9 +10,9 @@ The engine that powers scroll-into-view-if-needed
 | ------------------ | :-------------: |
 | Full name          | compute-scroll-into-view |
 | Keywords           | if-needed, scroll, scroll-into-view, scroll-into-view-if-needed, scrollIntoView, scrollIntoViewIfNeeded, scrollMode, typescript |
-| # releases         | 14 |
-| # dependents       | 19 |
-| # downloads        | 10090687 |
+| # releases         | 6 |
+| # dependents       | 32 |
+| # downloads        | 23633071 |
 | # stars            | 0 |
 
 ## Links

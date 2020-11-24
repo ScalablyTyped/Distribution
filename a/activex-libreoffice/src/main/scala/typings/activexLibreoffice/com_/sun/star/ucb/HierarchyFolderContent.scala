@@ -14,7 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A HCP Folder is a container for other HCP Folders and HCP Links.
@@ -33,8 +33,8 @@ trait HierarchyFolderContent
      with XCommandInfoChangeNotifier
      with XChild
      with XContentCreator
-
 object HierarchyFolderContent {
+  
   @scala.inline
   def apply(
     ContentType: String,
@@ -71,4 +71,3 @@ object HierarchyFolderContent {
     __obj.asInstanceOf[HierarchyFolderContent]
   }
 }
-

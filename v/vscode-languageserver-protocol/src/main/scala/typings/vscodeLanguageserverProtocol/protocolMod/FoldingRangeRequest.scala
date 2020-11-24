@@ -8,14 +8,17 @@ import typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRange
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashfoldingRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver-protocol/lib/protocol", "FoldingRangeRequest")
 @js.native
 object FoldingRangeRequest extends js.Object {
+  
   val method: textDocumentSlashfoldingRange = js.native
+  
   /** @deprecated Use FoldingRangeRequest.type */
   val resultType: ProgressType[js.Array[FoldingRange]] = js.native
+  
   val `type`: ProtocolRequestType[
     FoldingRangeParams, 
     js.Array[FoldingRange] | Null, 
@@ -24,4 +27,3 @@ object FoldingRangeRequest extends js.Object {
     FoldingRangeRegistrationOptions
   ] = js.native
 }
-

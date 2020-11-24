@@ -5,15 +5,19 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-blessed", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def createBlessedRenderer(bls: js.Any): renderer = js.native
+  
   def render(c: Element, s: Screen): (Component[_, _, _]) | Null = js.native
   def render(c: Element, s: Screen, callback: Callback): (Component[_, _, _]) | Null = js.native
+  
   type Callback = js.Function0[js.UndefOr[Unit | Null]]
+  
   type renderer = js.Function3[
     /* c */ Element, 
     /* s */ Screen, 
@@ -21,4 +25,3 @@ object mod extends js.Object {
     (Component[js.Any, js.Any, js.Any]) | Null
   ]
 }
-

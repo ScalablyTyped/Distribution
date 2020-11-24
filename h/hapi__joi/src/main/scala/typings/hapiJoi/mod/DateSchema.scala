@@ -6,11 +6,12 @@ import typings.hapiJoi.hapiJoiStrings.unix
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.hapiJoi.mod._Schema because Already inherited */ @js.native
 trait DateSchema extends AnySchema {
+  
   def greater(date: String): this.type = js.native
   def greater(date: Double): this.type = js.native
   def greater(date: Reference): this.type = js.native
@@ -23,10 +24,12 @@ trait DateSchema extends AnySchema {
     */
   @JSName("greater")
   def greater_now(date: now): this.type = js.native
+  
   /**
     * Requires the string value to be in valid ISO 8601 date format.
     */
   def iso(): this.type = js.native
+  
   def less(date: String): this.type = js.native
   def less(date: Double): this.type = js.native
   def less(date: Reference): this.type = js.native
@@ -39,6 +42,7 @@ trait DateSchema extends AnySchema {
     */
   @JSName("less")
   def less_now(date: now): this.type = js.native
+  
   def max(date: String): this.type = js.native
   def max(date: Double): this.type = js.native
   def max(date: Reference): this.type = js.native
@@ -51,6 +55,7 @@ trait DateSchema extends AnySchema {
     */
   @JSName("max")
   def max_now(date: now): this.type = js.native
+  
   def min(date: String): this.type = js.native
   def min(date: Double): this.type = js.native
   def min(date: Reference): this.type = js.native
@@ -63,6 +68,7 @@ trait DateSchema extends AnySchema {
     */
   @JSName("min")
   def min_now(date: now): this.type = js.native
+  
   /**
     * Requires the value to be a timestamp interval from Unix Time.
     * @param type - the type of timestamp (allowed values are unix or javascript [default])
@@ -73,4 +79,3 @@ trait DateSchema extends AnySchema {
   @JSName("timestamp")
   def timestamp_unix(`type`: unix): this.type = js.native
 }
-

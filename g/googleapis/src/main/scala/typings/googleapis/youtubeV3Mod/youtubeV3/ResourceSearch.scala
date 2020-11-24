@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Search")
 @js.native
 class ResourceSearch protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.search.list
     * @desc Returns a collection of search results that match the query
@@ -75,4 +77,3 @@ class ResourceSearch protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSearchListResponse]
   ): Unit = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.squareConnect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "BatchUpsertCatalogObjectsRequest")
 @js.native
 class BatchUpsertCatalogObjectsRequest () extends js.Object {
+  
   /**
     * A batch of CatalogObjects to be inserted/updated atomically. The objects within a batch will be inserted in an
     * all-or-nothing fashion, i.e., if an error occurs attempting to insert or update an object within a batch, the entire
@@ -23,6 +24,7 @@ class BatchUpsertCatalogObjectsRequest () extends js.Object {
     * will be inserted or updated.
     */
   var batches: js.Array[CatalogObjectBatch] = js.native
+  
   /**
     * A value you specify that uniquely identifies this request among all your requests. A common way to create a valid
     * idempotency key is to use a Universally unique identifier (UUID). If you're unsure whether a particular request was
@@ -31,4 +33,3 @@ class BatchUpsertCatalogObjectsRequest () extends js.Object {
     */
   var idempotency_key: String = js.native
 }
-

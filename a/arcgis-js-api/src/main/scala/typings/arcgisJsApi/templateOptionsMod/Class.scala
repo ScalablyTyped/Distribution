@@ -4,11 +4,10 @@ import typings.arcgisJsApi.esri.TemplateOptions
 import typings.arcgisJsApi.esri.TemplateOptionsProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/widgets/Print/TemplateOptions", JSImport.Namespace)
 @js.native
 class Class () extends TemplateOptions {
   def this(properties: TemplateOptionsProperties) = this()
 }
-

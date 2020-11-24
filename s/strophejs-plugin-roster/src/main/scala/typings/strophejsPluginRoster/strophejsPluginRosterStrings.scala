@@ -4,9 +4,37 @@ import typings.strophejsPluginRoster.mod.PresenceSubscriptionType
 import typings.strophejsPluginRoster.mod.RosterSubscriptionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object strophejsPluginRosterStrings {
+  
+  @scala.inline
+  def both: both = "both".asInstanceOf[both]
+  
+  @scala.inline
+  def from: from = "from".asInstanceOf[from]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def remove: remove = "remove".asInstanceOf[remove]
+  
+  @scala.inline
+  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
+  
+  @scala.inline
+  def subscribed: subscribed = "subscribed".asInstanceOf[subscribed]
+  
+  @scala.inline
+  def to: to = "to".asInstanceOf[to]
+  
+  @scala.inline
+  def unsubscribe: unsubscribe = "unsubscribe".asInstanceOf[unsubscribe]
+  
+  @scala.inline
+  def unsubscribed: unsubscribed = "unsubscribed".asInstanceOf[unsubscribed]
+  
   @js.native
   sealed trait both extends RosterSubscriptionState
   
@@ -33,24 +61,4 @@ object strophejsPluginRosterStrings {
   
   @js.native
   sealed trait unsubscribed extends PresenceSubscriptionType
-  
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
-  @scala.inline
-  def from: from = "from".asInstanceOf[from]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
-  @scala.inline
-  def subscribed: subscribed = "subscribed".asInstanceOf[subscribed]
-  @scala.inline
-  def to: to = "to".asInstanceOf[to]
-  @scala.inline
-  def unsubscribe: unsubscribe = "unsubscribe".asInstanceOf[unsubscribe]
-  @scala.inline
-  def unsubscribed: unsubscribed = "unsubscribed".asInstanceOf[unsubscribed]
 }
-

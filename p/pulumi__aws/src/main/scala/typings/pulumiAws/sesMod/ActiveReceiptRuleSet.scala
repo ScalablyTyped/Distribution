@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ses", "ActiveReceiptRuleSet")
 @js.native
@@ -23,11 +23,11 @@ class ActiveReceiptRuleSet protected ()
   def this(name: String, args: ActiveReceiptRuleSetArgs) = this()
   def this(name: String, args: ActiveReceiptRuleSetArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ses", "ActiveReceiptRuleSet")
 @js.native
 object ActiveReceiptRuleSet extends js.Object {
+  
   /**
     * Get an existing ActiveReceiptRuleSet resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object ActiveReceiptRuleSet extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.activeReceiptRuleSetMod.ActiveReceiptRuleSet = js.native
   def get(name: String, id: Input[ID], state: ActiveReceiptRuleSetState): typings.pulumiAws.activeReceiptRuleSetMod.ActiveReceiptRuleSet = js.native
   def get(name: String, id: Input[ID], state: ActiveReceiptRuleSetState, opts: CustomResourceOptions): typings.pulumiAws.activeReceiptRuleSetMod.ActiveReceiptRuleSet = js.native
+  
   /**
     * Returns true if the given object is an instance of ActiveReceiptRuleSet.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/activeReceiptRuleSet.ActiveReceiptRuleSet */ Boolean = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.chromeApps.global.chrome.networking.onc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.networking.onc.startConnect")
 @js.native
 object startConnect extends js.Object {
+  
   /**
     * @description Starts a connection to the network with networkGuid.
     * @param networkGuid The GUID of the network to connect to.
@@ -17,4 +18,3 @@ object startConnect extends js.Object {
   def apply(networkGuid: String): Unit = js.native
   def apply(networkGuid: String, callback: js.Function0[Unit]): Unit = js.native
 }
-

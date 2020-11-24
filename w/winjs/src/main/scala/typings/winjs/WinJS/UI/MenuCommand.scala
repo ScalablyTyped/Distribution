@@ -3,55 +3,14 @@ package typings.winjs.WinJS.UI
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a command to be displayed in a Menu object.
   **/
 @js.native
 trait MenuCommand extends js.Object {
-  //#endregion Methods
-  //#region Properties
-  /**
-    * Gets or sets a value that indicates whether the MenuCommand is disabled.
-    **/
-  var disabled: Boolean = js.native
-  /**
-    * Gets the DOM element that hosts the MenuCommand.
-    **/
-  var element: HTMLElement = js.native
-  /**
-    * Adds an extra CSS class during construction.
-    **/
-  var extraClass: String = js.native
-  /**
-    * Gets or sets the Flyout object displayed by this command. The specified flyout is shown when the MenuCommand's button is invoked.
-    **/
-  var flyout: Flyout = js.native
-  /**
-    * Gets a value that indicates whether the MenuCommand is hidden or in the process of becoming hidden.
-    **/
-  var hidden: Boolean = js.native
-  /**
-    * Gets the element identifier (ID) of the command.
-    **/
-  var id: String = js.native
-  /**
-    * Gets or sets the label of the command.
-    **/
-  var label: String = js.native
-  /**
-    * Gets or sets the function to be invoked when the command is clicked.
-    **/
-  var onclick: js.Function = js.native
-  /**
-    * Gets or sets the selected state of a toggle button.
-    **/
-  var selected: Boolean = js.native
-  /**
-    * Gets the type of the command.
-    **/
-  var `type`: String = js.native
+  
   //#endregion Constructors
   //#region Methods
   /**
@@ -62,10 +21,54 @@ trait MenuCommand extends js.Object {
     **/
   def addEventListener(`type`: String, listener: js.Function): Unit = js.native
   def addEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = js.native
+  
+  //#endregion Methods
+  //#region Properties
+  /**
+    * Gets or sets a value that indicates whether the MenuCommand is disabled.
+    **/
+  var disabled: Boolean = js.native
+  
   /**
     * Disposes this control.
     **/
   def dispose(): Unit = js.native
+  
+  /**
+    * Gets the DOM element that hosts the MenuCommand.
+    **/
+  var element: HTMLElement = js.native
+  
+  /**
+    * Adds an extra CSS class during construction.
+    **/
+  var extraClass: String = js.native
+  
+  /**
+    * Gets or sets the Flyout object displayed by this command. The specified flyout is shown when the MenuCommand's button is invoked.
+    **/
+  var flyout: Flyout = js.native
+  
+  /**
+    * Gets a value that indicates whether the MenuCommand is hidden or in the process of becoming hidden.
+    **/
+  var hidden: Boolean = js.native
+  
+  /**
+    * Gets the element identifier (ID) of the command.
+    **/
+  var id: String = js.native
+  
+  /**
+    * Gets or sets the label of the command.
+    **/
+  var label: String = js.native
+  
+  /**
+    * Gets or sets the function to be invoked when the command is clicked.
+    **/
+  var onclick: js.Function = js.native
+  
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param type The event type to unregister.
@@ -74,5 +77,14 @@ trait MenuCommand extends js.Object {
     **/
   def removeEventListener(`type`: String, listener: js.Function): Unit = js.native
   def removeEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = js.native
+  
+  /**
+    * Gets or sets the selected state of a toggle button.
+    **/
+  var selected: Boolean = js.native
+  
+  /**
+    * Gets the type of the command.
+    **/
+  var `type`: String = js.native
 }
-

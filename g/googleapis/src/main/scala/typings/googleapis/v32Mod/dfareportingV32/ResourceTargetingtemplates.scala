@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Targetingtemplates")
 @js.native
 class ResourceTargetingtemplates protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.targetingTemplates.get
     * @desc Gets one targeting template by ID.
@@ -45,6 +47,7 @@ class ResourceTargetingtemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetingTemplate]
   ): Unit = js.native
+  
   /**
     * dfareporting.targetingTemplates.insert
     * @desc Inserts a new targeting template.
@@ -77,6 +80,7 @@ class ResourceTargetingtemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetingTemplate]
   ): Unit = js.native
+  
   /**
     * dfareporting.targetingTemplates.list
     * @desc Retrieves a list of targeting templates, optionally filtered. This
@@ -116,6 +120,7 @@ class ResourceTargetingtemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetingTemplatesListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.targetingTemplates.patch
     * @desc Updates an existing targeting template. This method supports patch
@@ -150,6 +155,7 @@ class ResourceTargetingtemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetingTemplate]
   ): Unit = js.native
+  
   /**
     * dfareporting.targetingTemplates.update
     * @desc Updates an existing targeting template.
@@ -183,4 +189,3 @@ class ResourceTargetingtemplates protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTargetingTemplate]
   ): Unit = js.native
 }
-

@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Macro expander expanding using rtl bootstrap notation.
@@ -25,8 +25,8 @@ trait BootstrapMacroExpander
   extends XMacroExpander
      with XComponent
      with XInitialization
-
 object BootstrapMacroExpander {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -42,4 +42,3 @@ object BootstrapMacroExpander {
     __obj.asInstanceOf[BootstrapMacroExpander]
   }
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "webix" : "7.4.0"
+      "webix" : "8.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "webix" : "7.4.0"
+      "webix" : "8.0.1"
     }
   ],
   "compile-devDependencies" : [

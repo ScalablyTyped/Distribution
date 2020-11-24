@@ -9,13 +9,17 @@ import typings.algoliasearchHelper.anon.ResultsState
 import typings.events.mod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DerivedHelper extends EventEmitter {
-  var lastResults: SearchResults[_] | Null = js.native
+  
   def detach(): Unit = js.native
+  
   def getModifiedState(): SearchParameters = js.native
+  
+  var lastResults: SearchResults[_] | Null = js.native
+  
   @JSName("on")
   def on_error(event: error, cb: js.Function1[/* res */ Error, Unit]): this.type = js.native
   @JSName("on")
@@ -23,4 +27,3 @@ trait DerivedHelper extends EventEmitter {
   @JSName("on")
   def on_search(event: search, cb: js.Function1[/* res */ Results, Unit]): this.type = js.native
 }
-

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-closure-compiler", "compiler")
 @js.native
@@ -14,7 +14,6 @@ class compiler protected () extends Compiler_ {
   def this(opts: js.Array[String], extraCommandArgs: js.Array[String]) = this()
   def this(opts: CompileOptions, extraCommandArgs: js.Array[String]) = this()
 }
-
 @JSImport("google-closure-compiler", "compiler")
 @js.native
 object compiler
@@ -24,8 +23,10 @@ object compiler
       /* extraCommandArgs */ js.Array[String], 
       Compiler_
     ] {
+  
   var COMPILER_PATH: String = js.native
+  
   var CONTRIB_PATH: String = js.native
+  
   var JAR_PATH: String = js.native
 }
-

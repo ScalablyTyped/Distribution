@@ -2,11 +2,12 @@ package typings.bootstrapSlider
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   /**
     * This class is actually not used when using the jQuery version of bootstrap-slider
     * The method documentation is still here thouh.
@@ -17,6 +18,4 @@ object global extends js.Object {
     extends typings.bootstrapSlider.Slider {
     def this(selector: String, opts: SliderOptions) = this()
   }
-  
 }
-

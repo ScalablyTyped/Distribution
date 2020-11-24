@@ -2,40 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassLruCache extends ClassEventEmitter {
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和绑定数据超时事件，相当于 on("expire", func);
-    * 
-    * 
-    * @type Function
-    */
-  var onexpire: js.Function = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询容器内数值个数
-    * 
-    * @readonly
-    * @type Integer
-    */
-  var size: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设置容器内元素失效时间，单位是 ms，小于等于 0 不失效
-    * 
-    * 
-    * @type Integer
-    */
-  var timeout: Double = js.native
+  
   /**
     * 
     * @brief 清除容器数据
@@ -43,6 +14,7 @@ trait ClassLruCache extends ClassEventEmitter {
     * 
     */
   def clear(): Unit = js.native
+  
   /**
     * 
     * @brief 查询指定键值的值
@@ -64,6 +36,7 @@ trait ClassLruCache extends ClassEventEmitter {
     * 
     */
   def get(name: String, updater: js.Function): js.Any = js.native
+  
   /**
     * 
     * @brief 检查容器内是否存在指定键值的数据
@@ -74,6 +47,7 @@ trait ClassLruCache extends ClassEventEmitter {
     * 
     */
   def has(name: String): Boolean = js.native
+  
   /**
     * 
     * @brief 检查容器是否为空
@@ -83,6 +57,18 @@ trait ClassLruCache extends ClassEventEmitter {
     * 
     */
   def isEmpty(): Boolean = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和绑定数据超时事件，相当于 on("expire", func);
+    * 
+    * 
+    * @type Function
+    */
+  var onexpire: js.Function = js.native
+  
   /**
     * 
     * @brief 删除指定键值的全部值
@@ -92,6 +78,7 @@ trait ClassLruCache extends ClassEventEmitter {
     * 
     */
   def remove(name: String): Unit = js.native
+  
   /**
     * 
     * @brief 设定一个键值数据，键值不存在则插入新数据
@@ -111,5 +98,26 @@ trait ClassLruCache extends ClassEventEmitter {
     * 
     */
   def set(name: String, value: js.Any): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询容器内数值个数
+    * 
+    * @readonly
+    * @type Integer
+    */
+  var size: Double = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设置容器内元素失效时间，单位是 ms，小于等于 0 不失效
+    * 
+    * 
+    * @type Integer
+    */
+  var timeout: Double = js.native
 }
-

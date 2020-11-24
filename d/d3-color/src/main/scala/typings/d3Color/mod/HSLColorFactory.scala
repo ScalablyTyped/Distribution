@@ -2,11 +2,12 @@ package typings.d3Color.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HSLColorFactory
   extends js.Function {
+  
   def apply(color: ColorCommonInstance): HSLColor = js.native
   /**
     * Converts the provided color instance and returns an HSL color.
@@ -34,4 +35,3 @@ trait HSLColorFactory
   def apply(h: Double, s: Double, l: Double): HSLColor = js.native
   def apply(h: Double, s: Double, l: Double, opacity: Double): HSLColor = js.native
 }
-

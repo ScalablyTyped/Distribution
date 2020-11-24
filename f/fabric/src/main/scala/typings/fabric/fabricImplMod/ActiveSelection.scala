@@ -2,7 +2,7 @@ package typings.fabric.fabricImplMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "ActiveSelection")
 @js.native
@@ -15,6 +15,7 @@ class ActiveSelection () extends Group {
   def this(objects: js.Array[Object]) = this()
   def this(objects: js.UndefOr[scala.Nothing], options: IObjectOptions) = this()
   def this(objects: js.Array[Object], options: IObjectOptions) = this()
+  
   /**
     * Constructor
     * @param {Object} objects ActiveSelection objects
@@ -23,6 +24,7 @@ class ActiveSelection () extends Group {
     */
   def initialize(objects: ActiveSelection): Object = js.native
   def initialize(objects: ActiveSelection, options: IObjectOptions): Object = js.native
+  
   /**
     * Change te activeSelection to a normal group,
     * High level function that automatically adds it to canvas as
@@ -30,11 +32,11 @@ class ActiveSelection () extends Group {
     */
   def toGroup(): Group = js.native
 }
-
 /* static members */
 @JSImport("fabric/fabric-impl", "ActiveSelection")
 @js.native
 object ActiveSelection extends js.Object {
+  
   /**
     * Returns {@link fabric.ActiveSelection} instance from an object representation
     * @memberOf fabric.ActiveSelection
@@ -43,4 +45,3 @@ object ActiveSelection extends js.Object {
     */
   def fromObject(`object`: js.Any, callback: js.Function): Unit = js.native
 }
-

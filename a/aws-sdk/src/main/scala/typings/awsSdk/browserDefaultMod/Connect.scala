@@ -4,7 +4,7 @@ import typings.awsSdk.connectMod.ClientConfiguration
 import typings.awsSdk.connectMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/browser_default", "Connect")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class Connect () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

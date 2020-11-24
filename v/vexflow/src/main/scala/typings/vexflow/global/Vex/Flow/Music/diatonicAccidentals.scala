@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vexflow.anon.Note
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Vex.Flow.Music.diatonic_accidentals")
 @js.native
 object diatonicAccidentals extends /* diatonic_interval */ StringDictionary[Note]
-

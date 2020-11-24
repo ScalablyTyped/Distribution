@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mqtt" : "4.1.0"
+      "mqtt" : "4.2.5"
     }
   ],
   "test-dependencies" : [
     {
-      "mqtt" : "4.1.0"
+      "mqtt" : "4.2.5"
     }
   ],
   "compile-devDependencies" : [

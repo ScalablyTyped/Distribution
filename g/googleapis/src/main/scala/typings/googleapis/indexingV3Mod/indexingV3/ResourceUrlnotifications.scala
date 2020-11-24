@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/indexing/v3", "indexing_v3.Resource$Urlnotifications")
 @js.native
 class ResourceUrlnotifications protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * indexing.urlNotifications.getMetadata
     * @desc Gets metadata about a Web Document. This method can _only_ be used
@@ -47,6 +49,7 @@ class ResourceUrlnotifications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUrlNotificationMetadata]
   ): Unit = js.native
+  
   /**
     * indexing.urlNotifications.publish
     * @desc Notifies that a URL has been updated or deleted.
@@ -79,4 +82,3 @@ class ResourceUrlnotifications protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPublishUrlNotificationResponse]
   ): Unit = js.native
 }
-

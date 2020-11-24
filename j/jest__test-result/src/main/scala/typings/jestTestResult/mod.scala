@@ -8,13 +8,16 @@ import typings.jestTestResult.typesMod.SerializableError
 import typings.jestTestResult.typesMod.TestResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jest/test-result", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def addResult(aggregatedResults: AggregatedResult, testResult: TestResult): Unit = js.native
+  
   def buildFailureTestResult(testPath: String, err: SerializableError): TestResult = js.native
+  
   def formatTestResults(results: AggregatedResult): FormattedTestResults = js.native
   def formatTestResults(
     results: AggregatedResult,
@@ -27,6 +30,6 @@ object mod extends js.Object {
     codeCoverageFormatter: CodeCoverageFormatter,
     reporter: CodeCoverageReporter
   ): FormattedTestResults = js.native
+  
   def makeEmptyAggregatedTestResult(): AggregatedResult = js.native
 }
-

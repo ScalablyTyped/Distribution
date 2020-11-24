@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@restart/hooks" : "0.3.25"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@restart/hooks" : "0.3.25"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

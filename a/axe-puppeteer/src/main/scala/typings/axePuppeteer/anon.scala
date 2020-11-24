@@ -10,32 +10,32 @@ import typings.axeCore.mod.Spec
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait TypeofAxe extends js.Object {
+    
     /**
     	 * Object for axe Results
     	 */
     var AxeResults: typings.axeCore.mod.AxeResults = js.native
-    var plugins: js.Any = js.native
-    /**
-    	 * Source string to use as an injected script in Selenium
-    	 */
-    var source: String = js.native
+    
     /**
     	 * Function to clean up plugin configuration in document and its subframes
     	 */
     def cleanup(): Unit = js.native
+    
     /**
     	 * Method for configuring the data format used by axe. Helpful for adding new
     	 * rules, which must be registered with the library to execute.
     	 * @param  {Spec}       Spec Object with valid `branding`, `reporter`, `checks` and `rules` data
     	 */
     def configure(spec: Spec): Unit = js.native
+    
     /**
     	 * Searches and returns rules that contain a tag in the list of tags.
     	 * @param  {Array}  tags  Optional array of tags
@@ -43,15 +43,20 @@ object anon extends js.Object {
     	 */
     def getRules(): js.Array[RuleMetadata] = js.native
     def getRules(tags: js.Array[String]): js.Array[RuleMetadata] = js.native
+    
+    var plugins: js.Any = js.native
+    
     /**
     	 * Function to register a plugin configuration in document and its subframes
     	 * @param  {Object}    plugin    A plugin configuration object
     	 */
     def registerPlugin(plugin: AxePlugin): Unit = js.native
+    
     /**
     	 * Restores the default axe configuration
     	 */
     def reset(): Unit = js.native
+    
     /**
     	 * Runs a number of rules against the provided HTML page and returns the resulting issue list
     	 *
@@ -68,7 +73,12 @@ object anon extends js.Object {
     def run(context: ElementContext, options: RunOptions, callback: RunCallback): Unit = js.native
     def run(options: RunOptions): js.Promise[AxeResults] = js.native
     def run(options: RunOptions, callback: RunCallback): Unit = js.native
+    
+    /**
+    	 * Source string to use as an injected script in Selenium
+    	 */
+    var source: String = js.native
+    
+    var version: String = js.native
   }
-  
 }
-

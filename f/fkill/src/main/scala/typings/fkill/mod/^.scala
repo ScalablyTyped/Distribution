@@ -2,11 +2,12 @@ package typings.fkill.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fkill", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(input: String): js.Promise[Unit] = js.native
   def apply(input: String, options: Options): js.Promise[Unit] = js.native
   def apply(input: js.Array[String | Double]): js.Promise[Unit] = js.native
@@ -29,4 +30,3 @@ object ^ extends js.Object {
   def apply(input: Double): js.Promise[Unit] = js.native
   def apply(input: Double, options: Options): js.Promise[Unit] = js.native
 }
-

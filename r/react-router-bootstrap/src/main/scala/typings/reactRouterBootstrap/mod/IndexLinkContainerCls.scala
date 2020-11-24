@@ -6,7 +6,7 @@ import typings.react.mod.ComponentState
 import typings.reactRouterDom.mod.NavLinkProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-router-bootstrap", "IndexLinkContainer")
 @js.native
@@ -15,4 +15,3 @@ class IndexLinkContainerCls protected ()
   def this(props: NavLinkProps[LocationState]) = this()
   def this(props: NavLinkProps[LocationState], context: js.Any) = this()
 }
-

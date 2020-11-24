@@ -2,12 +2,20 @@ package typings.aframe.mod.global.AFRAME.THREE
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AFRAME.THREE.TorusKnotGeometry")
 @js.native
 class TorusKnotGeometry protected ()
   extends typings.three.mod.TorusKnotGeometry {
+  /**
+  	 * @param [radius=1]
+  	 * @param [tube=0.4]
+  	 * @param [radialSegments=64]
+  	 * @param [tubularSegments=8]
+  	 * @param [p=2]
+  	 * @param [q=3]
+  	 */
   def this(
     radius: js.UndefOr[Double],
     tube: js.UndefOr[Double],
@@ -17,4 +25,3 @@ class TorusKnotGeometry protected ()
     q: js.UndefOr[Double]
   ) = this()
 }
-

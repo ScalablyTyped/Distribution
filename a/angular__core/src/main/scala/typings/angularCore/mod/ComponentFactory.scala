@@ -3,7 +3,7 @@ package typings.angularCore.mod
 import typings.angularCore.anon.PropName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base class for a factory that can create a component dynamically.
@@ -17,10 +17,12 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core", "ComponentFactory")
 @js.native
 abstract class ComponentFactory[C] () extends js.Object {
+  
   /**
     * The type of component the factory will create.
     */
   def componentType: Type[_] = js.native
+  
   /**
     * Creates a new component.
     */
@@ -66,21 +68,24 @@ abstract class ComponentFactory[C] () extends js.Object {
     rootSelectorOrNode: js.Any,
     ngModule: NgModuleRef[_]
   ): ComponentRef[C] = js.native
+  
   /**
     * The inputs of the component.
     */
   def inputs: js.Array[PropName] = js.native
+  
   /**
     * Selector for all <ng-content> elements in the component.
     */
   def ngContentSelectors: js.Array[String] = js.native
+  
   /**
     * The outputs of the component.
     */
   def outputs: js.Array[PropName] = js.native
+  
   /**
     * The component's HTML selector.
     */
   def selector: String = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-cascader
 
-Typings are for version 1.3.0
+Typings are for version 1.4.0
 
 ## Library description:
 cascade select ui component for react
@@ -10,9 +10,9 @@ cascade select ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-cascader |
 | Keywords           | react, react-component, react-cascader, react-select, select, cascade, cascader |
-| # releases         | 15 |
-| # dependents       | 179 |
-| # downloads        | 10976380 |
+| # releases         | 14 |
+| # dependents       | 203 |
+| # downloads        | 16551711 |
 | # stars            | 0 |
 
 ## Links

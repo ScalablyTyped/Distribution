@@ -11,8 +11,8 @@ Check if it's the first time the process is run
 | Full name          | first-run |
 | Keywords           | first, init, initial, run, time, process, start |
 | # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 20570 |
+| # dependents       | 24 |
+| # downloads        | 49071 |
 | # stars            | 1 |
 
 ## Links

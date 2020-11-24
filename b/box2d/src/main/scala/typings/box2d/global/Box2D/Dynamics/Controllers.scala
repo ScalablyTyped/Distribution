@@ -2,11 +2,12 @@ package typings.box2d.global.Box2D.Dynamics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Box2D.Dynamics.Controllers")
 @js.native
 object Controllers extends js.Object {
+  
   @js.native
   class b2BuoyancyController ()
     extends typings.box2d.Box2D.Dynamics.Controllers.b2BuoyancyController
@@ -34,6 +35,4 @@ object Controllers extends js.Object {
   @js.native
   class b2TensorDampingController ()
     extends typings.box2d.Box2D.Dynamics.Controllers.b2TensorDampingController
-  
 }
-

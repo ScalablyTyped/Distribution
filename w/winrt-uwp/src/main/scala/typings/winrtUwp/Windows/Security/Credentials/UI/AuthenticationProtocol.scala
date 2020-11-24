@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Security.Credentials.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AuthenticationProtocol extends js.Object
-
 /** Identifies which authentication protocol to use. */
 @JSGlobal("Windows.Security.Credentials.UI.AuthenticationProtocol")
 @js.native
 object AuthenticationProtocol extends js.Object {
+  
   /** The authentication protocol is basic. Credentials are returned to the caller as plaintext. */
   @js.native
   sealed trait basic extends AuthenticationProtocol
@@ -38,6 +38,4 @@ object AuthenticationProtocol extends js.Object {
   /** The authentication protocol is NTLM. Credentials are transformed before being returned to the caller. */
   @js.native
   sealed trait ntlm extends AuthenticationProtocol
-  
 }
-

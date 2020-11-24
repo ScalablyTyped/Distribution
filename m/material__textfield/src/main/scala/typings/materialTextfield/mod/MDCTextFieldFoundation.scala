@@ -8,7 +8,7 @@ import typings.materialTextfield.anon.PartialMDCTextFieldAdapte
 import typings.materialTextfield.anon.PartialMDCTextFieldFounda
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/textfield", "MDCTextFieldFoundation")
 @js.native
@@ -22,17 +22,20 @@ class MDCTextFieldFoundation ()
   def this(adapter: js.UndefOr[scala.Nothing], foundationMap: PartialMDCTextFieldFounda) = this()
   def this(adapter: PartialMDCTextFieldAdapte, foundationMap: PartialMDCTextFieldFounda) = this()
 }
-
 /* static members */
 @JSImport("@material/textfield", "MDCTextFieldFoundation")
 @js.native
 object MDCTextFieldFoundation extends js.Object {
+  
   def cssClasses: DISABLED = js.native
+  
   /**
-    * See {@link MDCTextFieldAdapter} for typing information on parameters and return types.
+    * See {@link MDCTextFieldAdapter} for typing information on parameters and
+    * return types.
     */
   def defaultAdapter: MDCTextFieldAdapter = js.native
+  
   def numbers: LABELSCALE = js.native
+  
   def strings: ARIACONTROLS = js.native
 }
-

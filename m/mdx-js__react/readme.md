@@ -10,9 +10,9 @@ React implementation for MDX
 | ------------------ | :-------------: |
 | Full name          | @mdx-js/react |
 | Keywords           | mdx, markdown, react, jsx, remark, mdxast |
-| # releases         | 53 |
-| # dependents       | 494 |
-| # downloads        | 4221355 |
+| # releases         | 90 |
+| # dependents       | 691 |
+| # downloads        | 24328146 |
 | # stars            | 0 |
 
 ## Links

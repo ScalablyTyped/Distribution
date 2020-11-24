@@ -2,11 +2,12 @@ package typings.typedoc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc/dist/lib/utils/options/readers", JSImport.Namespace)
 @js.native
 object readersMod extends js.Object {
+  
   @js.native
   class ArgumentsReader protected ()
     extends typings.typedoc.argumentsMod.ArgumentsReader {
@@ -21,6 +22,4 @@ object readersMod extends js.Object {
   @js.native
   class TypeDocReader ()
     extends typings.typedoc.typedocMod.TypeDocReader
-  
 }
-

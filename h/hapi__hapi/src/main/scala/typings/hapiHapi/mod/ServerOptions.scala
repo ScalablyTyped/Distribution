@@ -11,10 +11,11 @@ import typings.hapiMimos.mod.MimosOptions
 import typings.node.httpMod.Server
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServerOptions extends js.Object {
+  
   /**
     * @default '0.0.0.0' (all available network interfaces).
     * Sets the hostname or IP address the server will listen on. If not configured, defaults to host if present, otherwise to all available network interfaces. Set to '127.0.0.1' or 'localhost' to
@@ -22,6 +23,7 @@ trait ServerOptions extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptionsaddress)
     */
   var address: js.UndefOr[String] = js.native
+  
   /**
     * @default {}.
     * Provides application-specific configuration which can later be accessed via server.settings.app. The framework does not interact with this object. It is simply a reference made available
@@ -30,6 +32,7 @@ trait ServerOptions extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptionsapp)
     */
   var app: js.UndefOr[ServerOptionsApp] = js.native
+  
   /**
     * @default true.
     * Used to disable the automatic initialization of the listener. When false, indicates that the listener will be started manually outside the framework.
@@ -37,6 +40,7 @@ trait ServerOptions extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptionsautolisten)
     */
   var autoListen: js.UndefOr[Boolean] = js.native
+  
   /**
     * @default { engine: require('@hapi/catbox-memory' }.
     * Sets up server-side caching providers. Every server includes a default cache for storing application state. By default, a simple memory-based cache is created which has limited capacity and
@@ -55,11 +59,13 @@ trait ServerOptions extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptionscache)
     */
   var cache: js.UndefOr[CacheProvider[ClientOptions] | ServerOptionsCache | js.Array[ServerOptionsCache]] = js.native
+  
   /**
     * @default { minBytes: 1024 }.
     * Defines server handling of content encoding requests. If false, response content encoding is disabled and no compression is performed by the server.
     */
   var compression: js.UndefOr[Boolean | ServerOptionsCompression] = js.native
+  
   /**
     * @default { request: ['implementation'] }.
     * Determines which logged events are sent to the console. This should only be used for development and does not affect which events are actually logged internally and recorded. Set to false to
@@ -72,11 +78,13 @@ trait ServerOptions extends js.Object {
     * false.
     */
   var debug: js.UndefOr[`false` | Log] = js.native
+  
   /**
     * @default the operating system hostname and if not available, to 'localhost'.
     * The public hostname or IP address. Used to set server.info.host and server.info.uri and as address is none provided.
     */
   var host: js.UndefOr[String] = js.native
+  
   /**
     * @default none.
     * An optional node HTTP (or HTTPS) http.Server object (or an object with a compatible interface).
@@ -84,6 +92,7 @@ trait ServerOptions extends js.Object {
     * If the listener uses TLS, set tls to true.
     */
   var listener: js.UndefOr[Server] = js.native
+  
   /**
     * @default { sampleInterval: 0 }.
     * Server excessive load handling limits where:
@@ -93,6 +102,7 @@ trait ServerOptions extends js.Object {
     * * maxEventLoopDelay - maximum event loop delay duration in milliseconds over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit).
     */
   var load: js.UndefOr[MaxEventLoopDelay] = js.native
+  
   /**
     * @default none.
     * Options passed to the mimos module when generating the mime database used by the server (and accessed via server.mime):
@@ -104,22 +114,26 @@ trait ServerOptions extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptionsmime)
     */
   var mime: js.UndefOr[MimosOptions] = js.native
+  
   /**
     * @default {}.
     * Plugin-specific configuration which can later be accessed via server.settings.plugins. plugins is an object where each key is a plugin name and the value is the configuration. Note the
     * difference between server.settings.plugins which is used to store static configuration values and server.plugins which is meant for storing run-time state.
     */
   var plugins: js.UndefOr[PluginSpecificConfiguration] = js.native
+  
   /**
     * @default 0 (an ephemeral port).
     * The TCP port the server will listen to. Defaults the next available port when the server is started (and assigned to server.info.port).
     * If port is a string containing a '/' character, it is used as a UNIX domain socket path. If it starts with '\.\pipe', it is used as a Windows named pipe.
     */
   var port: js.UndefOr[Double | String] = js.native
+  
   /**
     * Query parameter configuration.
     */
   var query: js.UndefOr[Parser] = js.native
+  
   /**
     * @default { isCaseSensitive: true, stripTrailingSlash: false }.
     * Controls how incoming request URIs are matched against the routing table:
@@ -127,11 +141,13 @@ trait ServerOptions extends js.Object {
     * * stripTrailingSlash - removes trailing slashes on incoming paths. Defaults to false.
     */
   var router: js.UndefOr[IsCaseSensitive] = js.native
+  
   /**
     * @default none.
     * A route options object used as the default configuration for every route.
     */
   var routes: js.UndefOr[RouteOptions] = js.native
+  
   /**
     * Default value:
     * {
@@ -147,110 +163,151 @@ trait ServerOptions extends js.Object {
   // TODO I am not sure if I need to use all the server.state() definition (like the default value) OR only the options below. The v16 use "any" here.
   // state?: ServerStateCookieOptions;
   var state: js.UndefOr[Encoding] = js.native
+  
   /**
     * @default none.
     * Used to create an HTTPS connection. The tls object is passed unchanged to the node HTTPS server as described in the node HTTPS documentation.
     */
   var tls: js.UndefOr[Boolean | typings.node.httpsMod.ServerOptions] = js.native
+  
   /**
     * @default constructed from runtime server information.
     * The full public URI without the path (e.g. 'http://example.com:8080'). If present, used as the server server.info.uri, otherwise constructed from the server settings.
     */
   var uri: js.UndefOr[String] = js.native
 }
-
 object ServerOptions {
+  
   @scala.inline
   def apply(): ServerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerOptions]
   }
+  
   @scala.inline
   implicit class ServerOptionsOps[Self <: ServerOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAddress: Self = this.set("address", js.undefined)
+    
     @scala.inline
     def setApp(value: ServerOptionsApp): Self = this.set("app", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteApp: Self = this.set("app", js.undefined)
+    
     @scala.inline
     def setAutoListen(value: Boolean): Self = this.set("autoListen", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAutoListen: Self = this.set("autoListen", js.undefined)
+    
     @scala.inline
     def setCacheVarargs(value: ServerOptionsCache*): Self = this.set("cache", js.Array(value :_*))
+    
     @scala.inline
     def setCache(value: CacheProvider[ClientOptions] | ServerOptionsCache | js.Array[ServerOptionsCache]): Self = this.set("cache", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCache: Self = this.set("cache", js.undefined)
+    
     @scala.inline
     def setCompression(value: Boolean | ServerOptionsCompression): Self = this.set("compression", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCompression: Self = this.set("compression", js.undefined)
+    
     @scala.inline
     def setDebug(value: `false` | Log): Self = this.set("debug", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDebug: Self = this.set("debug", js.undefined)
+    
     @scala.inline
     def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHost: Self = this.set("host", js.undefined)
+    
     @scala.inline
     def setListener(value: Server): Self = this.set("listener", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteListener: Self = this.set("listener", js.undefined)
+    
     @scala.inline
     def setLoad(value: MaxEventLoopDelay): Self = this.set("load", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLoad: Self = this.set("load", js.undefined)
+    
     @scala.inline
     def setMime(value: MimosOptions): Self = this.set("mime", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMime: Self = this.set("mime", js.undefined)
+    
     @scala.inline
     def setPlugins(value: PluginSpecificConfiguration): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePlugins: Self = this.set("plugins", js.undefined)
+    
     @scala.inline
     def setPort(value: Double | String): Self = this.set("port", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePort: Self = this.set("port", js.undefined)
+    
     @scala.inline
     def setQuery(value: Parser): Self = this.set("query", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteQuery: Self = this.set("query", js.undefined)
+    
     @scala.inline
     def setRouter(value: IsCaseSensitive): Self = this.set("router", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRouter: Self = this.set("router", js.undefined)
+    
     @scala.inline
     def setRoutes(value: RouteOptions): Self = this.set("routes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRoutes: Self = this.set("routes", js.undefined)
+    
     @scala.inline
     def setState(value: Encoding): Self = this.set("state", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteState: Self = this.set("state", js.undefined)
+    
     @scala.inline
     def setTls(value: Boolean | typings.node.httpsMod.ServerOptions): Self = this.set("tls", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTls: Self = this.set("tls", js.undefined)
+    
     @scala.inline
     def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUri: Self = this.set("uri", js.undefined)
   }
-  
 }
-

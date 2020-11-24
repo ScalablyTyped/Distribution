@@ -2,11 +2,12 @@ package typings.cloudeventsSdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cloudevents-sdk/lib/cloudevent", JSImport.Namespace)
 @js.native
 object cloudeventMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.cloudeventsSdk.v1Mod.CloudEventV1
     - typings.cloudeventsSdk.v1Mod.CloudEventV1Attributes
@@ -33,8 +34,7 @@ object cloudeventMod extends js.Object {
       * @param {*} [event.data] The event payload
       */
     def this(event: CE) = this()
-    var formatter: js.Any = js.native
-    var spec: js.Any = js.native
+    
     /**
       * Adds an extension attribute to this CloudEvent
       * @see https://github.com/cloudevents/spec/blob/master/spec.md#extension-context-attributes
@@ -43,12 +43,14 @@ object cloudeventMod extends js.Object {
       * @returns {void}
       */
     def addExtension(key: String, value: js.Any): Unit = js.native
+    
     /**
       * Gets or sets the data for this event
       * @see https://github.com/cloudevents/spec/blob/master/spec.md#event-data
       * @type {*}
       */
     def data: js.Any = js.native
+    
     /**
       * Gets or sets the event's data content encoding
       * @type {string}
@@ -56,6 +58,7 @@ object cloudeventMod extends js.Object {
       */
     def dataContentEncoding: js.Any = js.native
     def dataContentEncoding_=(dataContentEncoding: js.Any): Unit = js.native
+    
     /**
       * Gets or sets the content type of the data value for this event
       * @type {string}
@@ -63,6 +66,7 @@ object cloudeventMod extends js.Object {
       */
     def dataContentType: js.Any = js.native
     def dataContentType_=(contenttype: js.Any): Unit = js.native
+    
     /**
       * Gets or sets the event's data schema
       * @type {string}
@@ -70,7 +74,9 @@ object cloudeventMod extends js.Object {
       */
     def dataSchema: js.Any = js.native
     def dataSchema_=(dataschema: js.Any): Unit = js.native
+    
     def data_=(data: js.Any): Unit = js.native
+    
     /**
       * Formats the CloudEvent as JSON. Validates the event according
       * to the CloudEvent specification and throws an exception if
@@ -79,12 +85,16 @@ object cloudeventMod extends js.Object {
       * @throws {ValidationError} if this event cannot be validated against the specification
       */
     def format(): js.Any = js.native
+    
+    var formatter: js.Any = js.native
+    
     /**
       * Gets the extension attributes, if any, associated with this event
       * @see https://github.com/cloudevents/spec/blob/master/spec.md#extension-context-attributes
       * @returns {Object} the extensions attributes - if none exist will will be {}
       */
     def getExtensions(): js.Object = js.native
+    
     /**
       * Gets or sets the event id. Source + id must be unique for each distinct event.
       * @see https://github.com/cloudevents/spec/blob/master/spec.md#id
@@ -92,6 +102,7 @@ object cloudeventMod extends js.Object {
       */
     def id: js.Any = js.native
     def id_=(id: js.Any): Unit = js.native
+    
     /**
       * DEPRECATED: Gets or sets the schema URL for this event. Throws {TypeError}
       * if this is a version 1.0 event.
@@ -100,6 +111,7 @@ object cloudeventMod extends js.Object {
       */
     def schemaURL: js.Any = js.native
     def schemaURL_=(schemaurl: js.Any): Unit = js.native
+    
     /**
       * Gets or sets the origination source of this event as a URI.
       * @type {string}
@@ -107,12 +119,16 @@ object cloudeventMod extends js.Object {
       */
     def source: js.Any = js.native
     def source_=(source: js.Any): Unit = js.native
+    
+    var spec: js.Any = js.native
+    
     /**
       * Gets the CloudEvent specification version
       * @type {string}
       * @see https://github.com/cloudevents/spec/blob/master/spec.md#specversion
       */
     def specversion: js.Any = js.native
+    
     /**
       * Gets or sets the event subject
       * @type {string}
@@ -120,6 +136,7 @@ object cloudeventMod extends js.Object {
       */
     def subject: js.Any = js.native
     def subject_=(subject: js.Any): Unit = js.native
+    
     /**
       * Gets or sets the timestamp for this event as an ISO formatted date string
       * @type {string}
@@ -127,6 +144,7 @@ object cloudeventMod extends js.Object {
       */
     def time: js.Any = js.native
     def time_=(time: js.Any): Unit = js.native
+    
     /**
       * Gets or sets the event type
       * @type {string}
@@ -135,6 +153,4 @@ object cloudeventMod extends js.Object {
     def `type`: js.Any = js.native
     def type_=(`type`: js.Any): Unit = js.native
   }
-  
 }
-

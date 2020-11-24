@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "libp2p-crypto" : "0.18.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "libp2p-crypto" : "0.18.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

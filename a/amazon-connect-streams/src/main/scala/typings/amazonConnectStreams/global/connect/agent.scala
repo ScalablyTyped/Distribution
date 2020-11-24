@@ -3,11 +3,12 @@ package typings.amazonConnectStreams.global.connect
 import typings.amazonConnectStreams.connect.AgentCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("connect.agent")
 @js.native
 object agent extends js.Object {
+  
   /**
     * Subscribe a method to be called when the agent is initialized.
     * If the agent has already been initalized, the call is synchronous and the callback is invoked immediately.
@@ -18,4 +19,3 @@ object agent extends js.Object {
     */
   def apply(callback: AgentCallback): Unit = js.native
 }
-

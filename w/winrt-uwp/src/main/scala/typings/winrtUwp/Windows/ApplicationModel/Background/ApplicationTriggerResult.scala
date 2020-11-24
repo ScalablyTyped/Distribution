@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ApplicationTriggerResult extends js.Object
-
 /** The result of the request to trigger a background task. The RequestAsync method returns a value of this enumeration type. */
 @JSGlobal("Windows.ApplicationModel.Background.ApplicationTriggerResult")
 @js.native
 object ApplicationTriggerResult extends js.Object {
+  
   /** The trigger has been set. The task will run, unless an exception is thrown in the background infrastructure. */
   @js.native
   sealed trait allowed extends ApplicationTriggerResult
@@ -26,6 +26,4 @@ object ApplicationTriggerResult extends js.Object {
   /** The background task cannot be triggered because of an unknown issue. */
   @js.native
   sealed trait unknownError extends ApplicationTriggerResult
-  
 }
-

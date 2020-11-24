@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2", "VpcEndpointRouteTableAssociation")
 @js.native
@@ -23,11 +23,11 @@ class VpcEndpointRouteTableAssociation protected ()
   def this(name: String, args: VpcEndpointRouteTableAssociationArgs) = this()
   def this(name: String, args: VpcEndpointRouteTableAssociationArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ec2", "VpcEndpointRouteTableAssociation")
 @js.native
 object VpcEndpointRouteTableAssociation extends js.Object {
+  
   /**
     * Get an existing VpcEndpointRouteTableAssociation resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -46,10 +46,10 @@ object VpcEndpointRouteTableAssociation extends js.Object {
     state: VpcEndpointRouteTableAssociationState,
     opts: CustomResourceOptions
   ): typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation = js.native
+  
   /**
     * Returns true if the given object is an instance of VpcEndpointRouteTableAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation */ Boolean = js.native
 }
-

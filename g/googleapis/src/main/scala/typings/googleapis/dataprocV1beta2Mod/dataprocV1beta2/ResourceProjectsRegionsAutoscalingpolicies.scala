@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataproc/v1beta2", "dataproc_v1beta2.Resource$Projects$Regions$Autoscalingpolicies")
 @js.native
 class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dataproc.projects.regions.autoscalingPolicies.create
     * @desc Creates new autoscaling policy.
@@ -45,6 +47,7 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAutoscalingPolicy]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.autoscalingPolicies.delete
     * @desc Deletes an autoscaling policy. It is an error to delete an
@@ -77,6 +80,7 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.autoscalingPolicies.get
     * @desc Retrieves autoscaling policy.
@@ -108,6 +112,7 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAutoscalingPolicy]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.autoscalingPolicies.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -141,6 +146,7 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.autoscalingPolicies.list
     * @desc Lists autoscaling policies in the project.
@@ -174,6 +180,7 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListAutoscalingPoliciesResponse]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.autoscalingPolicies.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -207,6 +214,7 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.autoscalingPolicies.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -243,6 +251,7 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.autoscalingPolicies.update
     * @desc Updates (replaces) autoscaling policy.Disabled check for
@@ -277,4 +286,3 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     callback: BodyResponseCallback[SchemaAutoscalingPolicy]
   ): Unit = js.native
 }
-

@@ -4,12 +4,11 @@ import typings.std.Uint8Array
 import typings.webmidi.webmidiStrings.output
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MIDIOutput extends MIDIPort {
-  @JSName("type")
-  var type_MIDIOutput: output = js.native
+  
   /**
     * Clears any pending send data that has not yet been sent from the MIDIOutput 's
     * queue. The implementation will need to ensure the MIDI stream is left in a good
@@ -17,6 +16,7 @@ trait MIDIOutput extends MIDIPort {
     * termination byte (0xf7) should be sent.
     */
   def clear(): Unit = js.native
+  
   /**
     * Enqueues the message to be sent to the corresponding MIDI port.
     * @param data The data to be enqueued, with each sequence entry representing a single byte of data.
@@ -28,5 +28,7 @@ trait MIDIOutput extends MIDIPort {
   def send(data: js.Array[Double], timestamp: Double): Unit = js.native
   def send(data: Uint8Array): Unit = js.native
   def send(data: Uint8Array, timestamp: Double): Unit = js.native
+  
+  @JSName("type")
+  var type_MIDIOutput: output = js.native
 }
-

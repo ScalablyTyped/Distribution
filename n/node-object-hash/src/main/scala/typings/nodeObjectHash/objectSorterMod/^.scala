@@ -2,11 +2,12 @@ package typings.nodeObjectHash.objectSorterMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-object-hash/dist/objectSorter", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Object sorter consturctor
     * @param options object transformation options
@@ -15,4 +16,3 @@ object ^ extends js.Object {
   def apply(): js.Function1[/* obj */ js.Any, String] = js.native
   def apply(options: SorterOptions): js.Function1[/* obj */ js.Any, String] = js.native
 }
-

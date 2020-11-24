@@ -2,29 +2,44 @@ package typings.activexPowerpoint.PowerPoint
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Walls extends js.Object {
+  
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  
   val Border: ChartBorder = js.native
+  
+  def ClearFormats(): js.Any = js.native
+  
   val Creator: Double = js.native
+  
   val Fill: ChartFillFormat = js.native
+  
   val Format: ChartFormat = js.native
+  
   val Interior: typings.activexPowerpoint.PowerPoint.Interior = js.native
+  
   val Name: String = js.native
+  
   val Parent: js.Any = js.native
+  
+  def Paste(): Unit = js.native
+  
   var PictureType: js.Any = js.native
+  
   var PictureUnit: js.Any = js.native
+  
   @JSName("PowerPoint.Walls_typekey")
   var PowerPointDotWalls_typekey: Walls = js.native
-  var Thickness: Double = js.native
-  def ClearFormats(): js.Any = js.native
-  def Paste(): Unit = js.native
+  
   def Select(): js.Any = js.native
+  
+  var Thickness: Double = js.native
 }
-
 object Walls {
+  
   @scala.inline
   def apply(
     Application: Application,
@@ -47,48 +62,65 @@ object Walls {
     __obj.updateDynamic("PowerPoint.Walls_typekey")(PowerPointDotWalls_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Walls]
   }
+  
   @scala.inline
   implicit class WallsOps[Self <: Walls] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBorder(value: ChartBorder): Self = this.set("Border", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClearFormats(value: () => js.Any): Self = this.set("ClearFormats", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFill(value: ChartFillFormat): Self = this.set("Fill", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFormat(value: ChartFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setInterior(value: Interior): Self = this.set("Interior", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPaste(value: () => Unit): Self = this.set("Paste", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setPictureType(value: js.Any): Self = this.set("PictureType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPictureUnit(value: js.Any): Self = this.set("PictureUnit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPowerPointDotWalls_typekey(value: Walls): Self = this.set("PowerPoint.Walls_typekey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSelect(value: () => js.Any): Self = this.set("Select", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setThickness(value: Double): Self = this.set("Thickness", value.asInstanceOf[js.Any])
   }
-  
 }
-

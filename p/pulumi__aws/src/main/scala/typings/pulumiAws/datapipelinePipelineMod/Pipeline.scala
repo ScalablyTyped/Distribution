@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/datapipeline/pipeline", "Pipeline")
 @js.native
@@ -24,24 +24,27 @@ class Pipeline protected () extends CustomResource {
   def this(name: String, args: PipelineArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: PipelineArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The description of Pipeline.
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The name of Pipeline.
     */
   val name: Output_[String] = js.native
+  
   /**
     * A map of tags to assign to the resource.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/datapipeline/pipeline", "Pipeline")
 @js.native
 object Pipeline extends js.Object {
+  
   /**
     * Get an existing Pipeline resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -55,10 +58,10 @@ object Pipeline extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Pipeline = js.native
   def get(name: String, id: Input[ID], state: PipelineState): Pipeline = js.native
   def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): Pipeline = js.native
+  
   /**
     * Returns true if the given object is an instance of Pipeline.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datapipeline/pipeline.Pipeline */ Boolean = js.native
 }
-

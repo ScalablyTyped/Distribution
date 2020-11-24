@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Metadata$Columns")
 @js.native
 class ResourceMetadataColumns protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.metadata.columns.list
     * @desc Lists all columns for a report type
@@ -42,4 +44,3 @@ class ResourceMetadataColumns protected () extends js.Object {
     callback: BodyResponseCallback[SchemaColumns]
   ): Unit = js.native
 }
-

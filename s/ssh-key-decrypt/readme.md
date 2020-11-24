@@ -12,7 +12,7 @@ Decrypt encrypted ssh private keys
 | Keywords           | ssh, key, decrypt, pem, openssl, aes, aes129, aes256, aes128, des3, 3des, des, des-ede3-cbc, passphrase |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 9655 |
+| # downloads        | 8686 |
 | # stars            | 0 |
 
 ## Links

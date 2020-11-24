@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Geolocation.Geofencing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait GeofenceMonitorStatus extends js.Object
-
 /** Indicates the current state of a GeofenceMonitor . */
 @JSGlobal("Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus")
 @js.native
 object GeofenceMonitorStatus extends js.Object {
+  
   /** Access to location is denied. */
   @js.native
   sealed trait disabled extends GeofenceMonitorStatus
@@ -34,6 +34,4 @@ object GeofenceMonitorStatus extends js.Object {
   /** The monitor is ready and active. */
   @js.native
   sealed trait ready extends GeofenceMonitorStatus
-  
 }
-

@@ -10,9 +10,9 @@ Schema definitions for GeoJSON types for use with Mongoose JS
 | ------------------ | :-------------: |
 | Full name          | mongoose-geojson-schema |
 | Keywords           | mongo, mongoose, mongoosejs, schema, geojson, point, geometry, feature, polygon, linestring |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 140260 |
+| # releases         | 2 |
+| # dependents       | 8 |
+| # downloads        | 101833 |
 | # stars            | 2 |
 
 ## Links

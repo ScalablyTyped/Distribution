@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ses/domainIdentityVerification", "DomainIdentityVerification")
 @js.native
@@ -21,20 +21,22 @@ class DomainIdentityVerification protected () extends CustomResource {
     */
   def this(name: String, args: DomainIdentityVerificationArgs) = this()
   def this(name: String, args: DomainIdentityVerificationArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of the domain identity.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The domain name of the SES domain identity to verify.
     */
   val domain: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ses/domainIdentityVerification", "DomainIdentityVerification")
 @js.native
 object DomainIdentityVerification extends js.Object {
+  
   /**
     * Get an existing DomainIdentityVerification resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -48,10 +50,10 @@ object DomainIdentityVerification extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DomainIdentityVerification = js.native
   def get(name: String, id: Input[ID], state: DomainIdentityVerificationState): DomainIdentityVerification = js.native
   def get(name: String, id: Input[ID], state: DomainIdentityVerificationState, opts: CustomResourceOptions): DomainIdentityVerification = js.native
+  
   /**
     * Returns true if the given object is an instance of DomainIdentityVerification.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/domainIdentityVerification.DomainIdentityVerification */ Boolean = js.native
 }
-

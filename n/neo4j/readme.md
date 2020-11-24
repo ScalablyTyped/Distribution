@@ -10,9 +10,9 @@ Neo4j driver (REST API client) for Node.js
 | ------------------ | :-------------: |
 | Full name          | neo4j |
 | Keywords           | neo4j, graph, database, driver, client, cypher |
-| # releases         | 1 |
-| # dependents       | 37 |
-| # downloads        | 44838 |
+| # releases         | 0 |
+| # dependents       | 36 |
+| # downloads        | 54490 |
 | # stars            | 16 |
 
 ## Links

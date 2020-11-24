@@ -10,9 +10,9 @@ An extremely simple, pluggable static site generator.
 | ------------------ | :-------------: |
 | Full name          | metalsmith |
 | Keywords           | static, file, site, website, blog, generator, markdown, jekyll, wintersmith, blacksmith |
-| # releases         | 1 |
-| # dependents       | 842 |
-| # downloads        | 1874441 |
+| # releases         | 0 |
+| # dependents       | 1044 |
+| # downloads        | 2024968 |
 | # stars            | 36 |
 
 ## Links

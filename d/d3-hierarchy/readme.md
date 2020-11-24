@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-hierarchy
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 ## Library description:
 Layout algorithms for visualizing hierarchical data.
@@ -10,10 +10,10 @@ Layout algorithms for visualizing hierarchical data.
 | ------------------ | :-------------: |
 | Full name          | d3-hierarchy |
 | Keywords           | d3, d3-module, layout, tree, treemap, hierarchy, infovis |
-| # releases         | 8 |
-| # dependents       | 152 |
-| # downloads        | 29616056 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 183 |
+| # downloads        | 46431414 |
+| # stars            | 1 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-hierarchy/)

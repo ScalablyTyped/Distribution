@@ -10,9 +10,9 @@ Assert a Map has a given key and return the value for it.
 | ------------------ | :-------------: |
 | Full name          | get-certain |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 226 |
+| # downloads        | 470 |
 | # stars            | 0 |
 
 ## Links

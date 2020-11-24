@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__transporter
 
-Typings are for version 4.3.1
+Typings are for version 4.8.0
 
 ## Library description:
 Promise-based transporter layer with embedded retry strategy.
@@ -10,9 +10,9 @@ Promise-based transporter layer with embedded retry strategy.
 | ------------------ | :-------------: |
 | Full name          | @algolia/transporter |
 | Keywords           | - |
-| # releases         | 27 |
-| # dependents       | 8 |
-| # downloads        | 1742225 |
+| # releases         | 31 |
+| # dependents       | 9 |
+| # downloads        | 4094432 |
 | # stars            | 0 |
 
 ## Links

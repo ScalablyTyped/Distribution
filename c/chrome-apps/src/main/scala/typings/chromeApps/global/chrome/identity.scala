@@ -7,7 +7,7 @@ import typings.chromeApps.chrome.identity.UserInfo
 import typings.chromeApps.chrome.identity.WebAuthFlowOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.identity
@@ -23,11 +23,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.identity")
 @js.native
 object identity extends js.Object {
-  /**
-    * Fired when signin state changes for an account on the user's profile.
-    * @since Chrome 33.
-    */
-  val onSignInChanged: typings.chromeApps.chrome.events.Event[js.Function2[/* account */ AccountInfo, /* signedIn */ Boolean, Unit]] = js.native
+  
   /**
     * @requires(dev) **Dev channel only.**
     * @description
@@ -35,6 +31,7 @@ object identity extends js.Object {
     * getAccounts is only supported on dev channel.
     */
   def getAccounts(callback: js.Function1[/* accounts */ js.Array[AccountInfo], Unit]): Unit = js.native
+  
   /**
     * Gets an OAuth2 access token using the client ID and
     * scopes specified in the oauth2 section of manifest.json.
@@ -55,6 +52,7 @@ object identity extends js.Object {
     */
   def getAuthToken(details: TokenDetails): Unit = js.native
   def getAuthToken(details: TokenDetails, callback: js.Function1[/* token */ String, Unit]): Unit = js.native
+  
   /**
     * Retrieves email address and obfuscated gaia id of the user signed into a profile.
     * This API is different from identity.getAccounts in two ways.
@@ -62,6 +60,7 @@ object identity extends js.Object {
     * @since Chrome 37.
     */
   def getProfileUserInfo(callback: js.Function1[/* userInfo */ UserInfo, Unit]): Unit = js.native
+  
   /**
     * Generates a redirect URL to be used in launchWebAuthFlow.
     * The generated URLs match the pattern https://<app-id>.chromiumapp.org/ *.
@@ -70,6 +69,7 @@ object identity extends js.Object {
     */
   def getRedirectURL(): String = js.native
   def getRedirectURL(path: String): String = js.native
+  
   /**
     * Starts an auth flow at the specified URL.
     * This method enables auth flows with non-Google identity providers by launching
@@ -86,6 +86,13 @@ object identity extends js.Object {
     * function(string responseUrl) {...};
     */
   def launchWebAuthFlow(details: WebAuthFlowOptions, callback: js.Function1[/* responseUrl */ js.UndefOr[String], Unit]): Unit = js.native
+  
+  /**
+    * Fired when signin state changes for an account on the user's profile.
+    * @since Chrome 33.
+    */
+  val onSignInChanged: typings.chromeApps.chrome.events.Event[js.Function2[/* account */ AccountInfo, /* signedIn */ Boolean, Unit]] = js.native
+  
   /**
     * Removes an OAuth2 access token from the Identity API's token cache.
     * If an access token is discovered to be invalid,
@@ -97,4 +104,3 @@ object identity extends js.Object {
   def removeCachedAuthToken(details: TokenInformation): Unit = js.native
   def removeCachedAuthToken(details: TokenInformation, callback: js.Function0[Unit]): Unit = js.native
 }
-

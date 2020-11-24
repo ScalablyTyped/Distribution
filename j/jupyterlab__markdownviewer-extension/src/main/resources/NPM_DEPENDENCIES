@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/markdownviewer-extension" : "2.1.2"
+      "@jupyterlab/markdownviewer-extension" : "2.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/markdownviewer-extension" : "2.1.2"
+      "@jupyterlab/markdownviewer-extension" : "2.2.6"
     }
   ],
   "compile-devDependencies" : [

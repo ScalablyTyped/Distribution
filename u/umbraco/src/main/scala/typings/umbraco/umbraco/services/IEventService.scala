@@ -2,7 +2,7 @@ package typings.umbraco.umbraco.services
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to broadcast and listen for global events and allow the ability to add async listeners to the callbacks */
 /**
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IEventService extends js.Object
-

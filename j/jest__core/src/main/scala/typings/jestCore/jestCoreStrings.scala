@@ -2,9 +2,31 @@ package typings.jestCore
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jestCoreStrings {
+  
+  @scala.inline
+  def globalSetup: globalSetup = "globalSetup".asInstanceOf[globalSetup]
+  
+  @scala.inline
+  def globalTeardown: globalTeardown = "globalTeardown".asInstanceOf[globalTeardown]
+  
+  @scala.inline
+  def roots: roots = "roots".asInstanceOf[roots]
+  
+  @scala.inline
+  def testMatch: testMatch = "testMatch".asInstanceOf[testMatch]
+  
+  @scala.inline
+  def testPathIgnorePatterns: testPathIgnorePatterns = "testPathIgnorePatterns".asInstanceOf[testPathIgnorePatterns]
+  
+  @scala.inline
+  def testPathPattern: testPathPattern = "testPathPattern".asInstanceOf[testPathPattern]
+  
+  @scala.inline
+  def testRegex: testRegex = "testRegex".asInstanceOf[testRegex]
+  
   @js.native
   sealed trait globalSetup extends js.Object
   
@@ -25,20 +47,4 @@ object jestCoreStrings {
   
   @js.native
   sealed trait testRegex extends js.Object
-  
-  @scala.inline
-  def globalSetup: globalSetup = "globalSetup".asInstanceOf[globalSetup]
-  @scala.inline
-  def globalTeardown: globalTeardown = "globalTeardown".asInstanceOf[globalTeardown]
-  @scala.inline
-  def roots: roots = "roots".asInstanceOf[roots]
-  @scala.inline
-  def testMatch: testMatch = "testMatch".asInstanceOf[testMatch]
-  @scala.inline
-  def testPathIgnorePatterns: testPathIgnorePatterns = "testPathIgnorePatterns".asInstanceOf[testPathIgnorePatterns]
-  @scala.inline
-  def testPathPattern: testPathPattern = "testPathPattern".asInstanceOf[testPathPattern]
-  @scala.inline
-  def testRegex: testRegex = "testRegex".asInstanceOf[testRegex]
 }
-

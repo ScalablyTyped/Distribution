@@ -6,11 +6,12 @@ import typings.tstl.iforwarditeratorMod.IForwardIterator
 import typings.tstl.vectorMod.Vector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/container/PriorityQueue", JSImport.Namespace)
 @js.native
 object priorityQueueMod extends js.Object {
+  
   @js.native
   /**
     * Default Constructor.
@@ -41,16 +42,17 @@ object priorityQueueMod extends js.Object {
       last: IForwardIterator[T, IForwardIterator[T, _]],
       comp: Comparator[T, T]
     ) = this()
+    
     var comp_ : js.Any = js.native
+    
     /**
       * Get top element.
       */
     def top(): T = js.native
+    
     /**
       * Get value comparison function.
       */
     def value_comp(): Comparator[T, T] = js.native
   }
-  
 }
-

@@ -8,20 +8,26 @@ import typings.jestWatcher.typesMod.UpdateConfigCallback
 import typings.jestWatcher.typesMod.UsageData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jest/core/build/plugins/test_path_pattern", JSImport.Namespace)
+@JSImport("@jest/core/build/plugins/TestPathPattern", JSImport.Namespace)
 @js.native
 object testPathPatternMod extends js.Object {
+  
   @js.native
   trait TestPathPatternPlugin extends BaseWatchPlugin {
+    
     var _prompt: js.Any = js.native
-    @JSName("isInternal")
-    var isInternal_TestPathPatternPlugin: `true` = js.native
+    
     @JSName("getUsageInfo")
     def getUsageInfo_MTestPathPatternPlugin(): UsageData = js.native
+    
+    @JSName("isInternal")
+    var isInternal_TestPathPatternPlugin: `true` = js.native
+    
     @JSName("onKey")
     def onKey_MTestPathPatternPlugin(key: String): Unit = js.native
+    
     @JSName("run")
     def run_MTestPathPatternPlugin(globalConfig: GlobalConfig, updateConfigAndRun: UpdateConfigCallback): js.Promise[Unit] = js.native
   }
@@ -30,6 +36,4 @@ object testPathPatternMod extends js.Object {
   class default protected () extends TestPathPatternPlugin {
     def this(options: Stdin) = this()
   }
-  
 }
-

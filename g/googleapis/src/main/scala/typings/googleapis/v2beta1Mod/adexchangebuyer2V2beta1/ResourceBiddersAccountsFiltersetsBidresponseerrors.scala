@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Bidders$Accounts$Filtersets$Bidresponseerrors")
 @js.native
 class ResourceBiddersAccountsFiltersetsBidresponseerrors protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer2.bidders.accounts.filterSets.bidResponseErrors.list
     * @desc List all errors that occurred in bid responses, with the number of
@@ -49,4 +51,3 @@ class ResourceBiddersAccountsFiltersetsBidresponseerrors protected () extends js
     callback: BodyResponseCallback[SchemaListBidResponseErrorsResponse]
   ): Unit = js.native
 }
-

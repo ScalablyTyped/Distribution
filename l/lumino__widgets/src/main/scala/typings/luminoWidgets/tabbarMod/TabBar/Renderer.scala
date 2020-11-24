@@ -5,7 +5,7 @@ import typings.luminoVirtualdom.mod.ElementInlineStyle
 import typings.luminoVirtualdom.mod.VirtualElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The default implementation of `IRenderer`.
@@ -20,8 +20,11 @@ import scala.scalajs.js.annotation._
   */
 class Renderer ()
   extends IRenderer[js.Any] {
+  
   var _tabID: js.Any = js.native
+  
   var _tabKeys: js.Any = js.native
+  
   /**
     * Create the class name for the tab icon.
     *
@@ -30,6 +33,7 @@ class Renderer ()
     * @returns The full class name for the tab icon.
     */
   def createIconClass(data: IRenderData[_]): String = js.native
+  
   /**
     * Create the class name for the tab.
     *
@@ -38,6 +42,7 @@ class Renderer ()
     * @returns The full class name for the tab.
     */
   def createTabClass(data: IRenderData[_]): String = js.native
+  
   /**
     * Create the dataset for a tab.
     *
@@ -46,6 +51,7 @@ class Renderer ()
     * @returns The dataset for the tab.
     */
   def createTabDataset(data: IRenderData[_]): ElementDataset = js.native
+  
   /**
     * Create a unique render key for the tab.
     *
@@ -59,6 +65,7 @@ class Renderer ()
     * tabs and avoids subtle hover style artifacts.
     */
   def createTabKey(data: IRenderData[_]): String = js.native
+  
   /**
     * Create the inline style object for a tab.
     *
@@ -67,6 +74,7 @@ class Renderer ()
     * @returns The inline style data for the tab.
     */
   def createTabStyle(data: IRenderData[_]): ElementInlineStyle = js.native
+  
   /**
     * Render the close icon element for a tab.
     *
@@ -75,6 +83,7 @@ class Renderer ()
     * @returns A virtual element representing the tab close icon.
     */
   def renderCloseIcon(data: IRenderData[_]): VirtualElement = js.native
+  
   /**
     * Render the icon element for a tab.
     *
@@ -83,6 +92,7 @@ class Renderer ()
     * @returns A virtual element representing the tab icon.
     */
   def renderIcon(data: IRenderData[_]): VirtualElement = js.native
+  
   /**
     * Render the label element for a tab.
     *
@@ -92,4 +102,3 @@ class Renderer ()
     */
   def renderLabel(data: IRenderData[_]): VirtualElement = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.babylonjs.postProcessesIndexMod
 import typings.babylonjs.cameraMod.Camera
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/index", "VRMultiviewToSingleviewPostProcess")
 @js.native
@@ -17,4 +17,3 @@ class VRMultiviewToSingleviewPostProcess protected ()
     */
   def this(name: String, camera: Camera, scaleFactor: Double) = this()
 }
-

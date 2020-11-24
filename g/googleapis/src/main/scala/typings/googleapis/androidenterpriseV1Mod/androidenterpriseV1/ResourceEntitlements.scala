@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Entitlements")
 @js.native
 class ResourceEntitlements protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.entitlements.delete
     * @desc Removes an entitlement to an app for a user.
@@ -43,6 +45,7 @@ class ResourceEntitlements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * androidenterprise.entitlements.get
     * @desc Retrieves details of an entitlement.
@@ -73,6 +76,7 @@ class ResourceEntitlements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEntitlement]
   ): Unit = js.native
+  
   /**
     * androidenterprise.entitlements.list
     * @desc Lists all entitlements for the specified user. Only the ID is set.
@@ -105,6 +109,7 @@ class ResourceEntitlements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEntitlementsListResponse]
   ): Unit = js.native
+  
   /**
     * androidenterprise.entitlements.patch
     * @desc Adds or updates an entitlement to an app for a user. This method
@@ -138,6 +143,7 @@ class ResourceEntitlements protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEntitlement]
   ): Unit = js.native
+  
   /**
     * androidenterprise.entitlements.update
     * @desc Adds or updates an entitlement to an app for a user.
@@ -171,4 +177,3 @@ class ResourceEntitlements protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEntitlement]
   ): Unit = js.native
 }
-

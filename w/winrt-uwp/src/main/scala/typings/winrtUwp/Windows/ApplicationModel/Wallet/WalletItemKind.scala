@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Wallet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait WalletItemKind extends js.Object
-
 /** Represents the kinds (classifications) of wallet items supported. */
 @JSGlobal("Windows.ApplicationModel.Wallet.WalletItemKind")
 @js.native
 object WalletItemKind extends js.Object {
+  
   /** A boarding pass. */
   @js.native
   sealed trait boardingPass extends WalletItemKind
@@ -38,6 +38,4 @@ object WalletItemKind extends js.Object {
   /** A ticket. */
   @js.native
   sealed trait ticket extends WalletItemKind
-  
 }
-

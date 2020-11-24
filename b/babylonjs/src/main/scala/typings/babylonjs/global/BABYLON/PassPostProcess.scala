@@ -4,12 +4,12 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PassPostProcess")
 @js.native
 class PassPostProcess protected ()
-  extends typings.babylonjs.BABYLON.PostProcess {
+  extends typings.babylonjs.BABYLON.PassPostProcess {
   /**
     * Creates the PassPostProcess
     * @param name The name of the effect.
@@ -23,17 +23,7 @@ class PassPostProcess protected ()
     */
   def this(
     name: String,
-    options: Double,
-    camera: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Camera]],
-    samplingMode: js.UndefOr[Double],
-    engine: js.UndefOr[typings.babylonjs.BABYLON.Engine],
-    reusable: js.UndefOr[Boolean],
-    textureType: js.UndefOr[Double],
-    blockCompilation: js.UndefOr[Boolean]
-  ) = this()
-  def this(
-    name: String,
-    options: PostProcessOptions,
+    options: Double | PostProcessOptions,
     camera: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Camera]],
     samplingMode: js.UndefOr[Double],
     engine: js.UndefOr[typings.babylonjs.BABYLON.Engine],
@@ -42,4 +32,16 @@ class PassPostProcess protected ()
     blockCompilation: js.UndefOr[Boolean]
   ) = this()
 }
-
+/* static members */
+@JSGlobal("BABYLON.PassPostProcess")
+@js.native
+object PassPostProcess extends js.Object {
+  
+  /** @hidden */
+  def _Parse(
+    parsedPostProcess: js.Any,
+    targetCamera: typings.babylonjs.BABYLON.Camera,
+    scene: typings.babylonjs.BABYLON.Scene,
+    rootUrl: String
+  ): typings.babylonjs.BABYLON.PassPostProcess = js.native
+}

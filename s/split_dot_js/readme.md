@@ -10,9 +10,9 @@ Typings are for version 1.6.2
 | ------------------ | :-------------: |
 | Full name          | split.js |
 | Keywords           | css, split, flexbox, tiny, split-layout |
-| # releases         | 14 |
-| # dependents       | 62 |
-| # downloads        | 659475 |
+| # releases         | 17 |
+| # dependents       | 76 |
+| # downloads        | 1996239 |
 | # stars            | 5 |
 
 ## Links

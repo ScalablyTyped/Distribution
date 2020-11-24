@@ -14,7 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The {@link PackageFolder} service represents a single folder or directory within a {@link Package} . Instances of this service can only be constructed
@@ -27,8 +27,8 @@ trait PackageFolder
      with XChild
      with XEnumerationAccess
      with XPropertySet
-
 object PackageFolder {
+  
   @scala.inline
   def apply(
     ElementNames: SafeArray[String],
@@ -64,4 +64,3 @@ object PackageFolder {
     __obj.asInstanceOf[PackageFolder]
   }
 }
-

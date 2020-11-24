@@ -2,7 +2,7 @@ package typings.mangopay2NodejsSdk.mod.user
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Should be only one of these values:
@@ -22,19 +22,23 @@ import scala.scalajs.js.annotation._
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`6`
 */
 trait IncomeRange extends js.Object
-
 object IncomeRange {
+  
   @scala.inline
   def `1`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`1` = 1.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`1`]
+  
   @scala.inline
   def `2`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`2` = 2.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`2`]
+  
   @scala.inline
   def `3`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`3` = 3.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`3`]
+  
   @scala.inline
   def `4`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`4` = 4.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`4`]
+  
   @scala.inline
   def `5`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`5` = 5.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`5`]
+  
   @scala.inline
   def `6`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`6` = 6.asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkNumbers.`6`]
 }
-

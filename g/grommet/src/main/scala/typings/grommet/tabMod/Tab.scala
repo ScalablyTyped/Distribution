@@ -11,9 +11,9 @@ import typings.react.mod.DetailedHTMLProps
 import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6/components/Tab", "Tab")
+@JSImport("grommet/components/Tab", "Tab")
 @js.native
 class Tab protected ()
   extends Component[
@@ -36,8 +36,7 @@ class Tab protected ()
     context: js.Any
   ) = this()
 }
-
-@JSImport("grommet/es6/components/Tab", "Tab")
+@JSImport("grommet/components/Tab", "Tab")
 @js.native
 object Tab extends TopLevel[
       ComponentClass[
@@ -48,4 +47,3 @@ object Tab extends TopLevel[
         ComponentState
       ]
     ]
-

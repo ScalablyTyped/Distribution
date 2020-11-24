@@ -10,9 +10,9 @@ Layout support for ejs in express.
 | ------------------ | :-------------: |
 | Full name          | express-ejs-layouts |
 | Keywords           | express, layout, ejs |
-| # releases         | 3 |
-| # dependents       | 73 |
-| # downloads        | 335271 |
+| # releases         | 0 |
+| # dependents       | 72 |
+| # downloads        | 394067 |
 | # stars            | 13 |
 
 ## Links

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "multireducer"
-version := "3.1-dt-20200128Z-cf6567"
+version := "3.1-dt-20200128Z-63f912"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

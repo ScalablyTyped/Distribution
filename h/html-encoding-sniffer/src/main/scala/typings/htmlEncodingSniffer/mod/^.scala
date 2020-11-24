@@ -3,11 +3,12 @@ package typings.htmlEncodingSniffer.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("html-encoding-sniffer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * @param buffer The NodeJS buffer containing the (X)HTML source text.
     *
@@ -17,4 +18,3 @@ object ^ extends js.Object {
   def apply(buffer: Buffer): String = js.native
   def apply(buffer: Buffer, options: Options): String = js.native
 }
-

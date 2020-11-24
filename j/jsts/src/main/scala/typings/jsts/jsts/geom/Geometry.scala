@@ -2,14 +2,11 @@ package typings.jsts.jsts.geom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Geometry extends js.Object {
-  /**
-    * The bounding box of this <code>Geometry</code>.
-    */
-  var envelope: Envelope = js.native
+  
   /**
     * Performs an operation with or on this <code>Geometry</code> and its
     * subelement <code>Geometry</code>s (if any). Only GeometryCollections and
@@ -21,6 +18,7 @@ trait Geometry extends js.Object {
     */
   @JSName("apply")
   def apply(filter: js.Any): Unit = js.native
+  
   /**
     * Computes a buffer area around this geometry having the given width and with a
     * specified accuracy of approximation for circular arcs, and using a specified
@@ -63,6 +61,7 @@ trait Geometry extends js.Object {
     * @see BufferOp
     */
   def buffer(distance: Double, quadrantSegments: Double, endCapStyle: Double): Geometry = js.native
+  
   /**
     * Throws an exception if <code>g</code>'s class is
     * <code>GeometryCollection</code> . (Its subclasses do not trigger an
@@ -75,6 +74,7 @@ trait Geometry extends js.Object {
     *           one of its subclasses
     */
   def checkNotGeometryCollection(g: Geometry): Unit = js.native
+  
   /**
     * Returns the first non-zero result of <code>compareTo</code> encountered as
     * the two <code>Collection</code>s are iterated over. If, by the time one of
@@ -91,6 +91,7 @@ trait Geometry extends js.Object {
     *         otherwise, zero.
     */
   def compare(a: js.Array[_], b: js.Array[_]): Double = js.native
+  
   /**
     * Returns whether this <code>Geometry</code> is greater than, equal to, or
     * less than another <code>Geometry</code>.
@@ -121,6 +122,7 @@ trait Geometry extends js.Object {
     *         JTS Technical Specifications.
     */
   def compareTo(o: Geometry): Double = js.native
+  
   /**
     * Returns whether this <code>Geometry</code> is greater than, equal to, or
     * less than another <code>Geometry</code> having the same class.
@@ -134,6 +136,7 @@ trait Geometry extends js.Object {
     *         Specifications.
     */
   def compareToSameClass(o: Geometry): Double = js.native
+  
   /**
     * Returns the minimum and maximum x and y values in this <code>Geometry</code>,
     * or a null <code>Envelope</code> if this <code>Geometry</code> is empty.
@@ -146,6 +149,7 @@ trait Geometry extends js.Object {
     *         return <code>true.</code>
     */
   def computeEnvelopeInternal(): Envelope = js.native
+  
   /**
     * Tests whether this geometry contains the specified geometry.
     * <p>
@@ -172,6 +176,7 @@ trait Geometry extends js.Object {
     * @see Geometry#within
     */
   def contains(g: Geometry): Boolean = js.native
+  
   /**
     * Computes the smallest convex <code>Polygon</code> that contains all the
     * points in the <code>Geometry</code>. This obviously applies only to
@@ -204,6 +209,7 @@ trait Geometry extends js.Object {
     *         <code>Geometry</code>' s points.
     */
   def convexHull(): Geometry = js.native
+  
   /**
     * Tests whether this geometry is covered by the specified geometry.
     * <p>
@@ -232,6 +238,7 @@ trait Geometry extends js.Object {
     * @see Geometry#covers
     */
   def coveredBy(g: Geometry): Boolean = js.native
+  
   /**
     * Tests whether this geometry covers the specified geometry.
     * <p>
@@ -264,6 +271,7 @@ trait Geometry extends js.Object {
     * @see Geometry#coveredBy
     */
   def covers(g: Geometry): Boolean = js.native
+  
   /**
     * Tests whether this geometry crosses the specified geometry.
     * <p>
@@ -292,6 +300,7 @@ trait Geometry extends js.Object {
     *         cross.
     */
   def crosses(g: Geometry): Boolean = js.native
+  
   /**
     * Computes a <code>Geometry</code> representing the points making up this
     * <code>Geometry</code> that do not make up <code>other</code>. This
@@ -308,6 +317,7 @@ trait Geometry extends js.Object {
     *           if either input is a non-empty GeometryCollection
     */
   def difference(other: Geometry): Geometry = js.native
+  
   /**
     * Tests whether this geometry is disjoint from the specified geometry.
     * <p>
@@ -330,6 +340,7 @@ trait Geometry extends js.Object {
     * @see Geometry#intersects
     */
   def disjoint(g: Geometry): Boolean = js.native
+  
   /**
     * Returns the minimum distance between this <code>Geometry</code> and the
     * <code>Geometry</code> g
@@ -342,6 +353,12 @@ trait Geometry extends js.Object {
     *           if g is null
     */
   def distance(g: Geometry): Double = js.native
+  
+  /**
+    * The bounding box of this <code>Geometry</code>.
+    */
+  var envelope: Envelope = js.native
+  
   /**
     * @param {jsts.geom.Coordinate}
     *          a first Coordinate to compare.
@@ -352,6 +369,7 @@ trait Geometry extends js.Object {
     * @return {boolean} true if equal.
     */
   def equal(a: Coordinate, b: Coordinate, tolerance: Double): Boolean = js.native
+  
   /**
     * Tests whether this geometry is structurally and numerically equal to a given
     * <tt>Object</tt>. If the argument <tt>Object</tt> is not a
@@ -377,6 +395,7 @@ trait Geometry extends js.Object {
     * @see #normalize()
     */
   def equals(o: js.Object): Boolean = js.native
+  
   /**
     * Returns true if the two <code>Geometry</code>s are exactly equal, up to a
     * specified distance tolerance. Two Geometries are exactly equal within a
@@ -398,6 +417,7 @@ trait Geometry extends js.Object {
     * @return {boolean}
     */
   def equalsExact(other: Geometry, tolerance: Double): Boolean = js.native
+  
   /**
     * Tests whether two geometries are exactly equal in their normalized forms.
     * This is a convenience method which creates normalized versions of both
@@ -412,6 +432,7 @@ trait Geometry extends js.Object {
     *         normalized form.
     */
   def equalsNorm(g: Geometry): Boolean = js.native
+  
   /**
     * Tests whether this geometry is topologically equal to the argument geometry
     * as defined by the SFS <tt>equals</tt> predicate.
@@ -442,6 +463,7 @@ trait Geometry extends js.Object {
     * @see #equalsExact(Geometry)
     */
   def equalsTopo(g: Geometry): Boolean = js.native
+  
   /**
     * Returns the area of this <code>Geometry</code>. Areal Geometries have a
     * non-zero area. They override this function to compute the area. Others return
@@ -450,6 +472,7 @@ trait Geometry extends js.Object {
     * @return the area of the Geometry.
     */
   def getArea(): Double = js.native
+  
   /**
     * Returns the boundary, or an empty geometry of appropriate dimension if this
     * <code>Geometry</code> is empty. (In the case of zero-dimensional
@@ -462,6 +485,7 @@ trait Geometry extends js.Object {
     *         <code>Geometry.</code>
     */
   def getBoundary(): Geometry = js.native
+  
   /**
     * Returns the dimension of this <code>Geometry</code>s inherent boundary.
     *
@@ -470,6 +494,7 @@ trait Geometry extends js.Object {
     *         <code>Dimension.FALSE</code> if the boundary is the empty geometry.
     */
   def getBoundaryDimension(): Double = js.native
+  
   /**
     * Computes the centroid of this <code>Geometry</code>. The centroid is equal
     * to the centroid of the set of component Geometries of highest dimension
@@ -479,6 +504,7 @@ trait Geometry extends js.Object {
     * @return a {@link Point} which is the centroid of this Geometry.
     */
   def getCentroid(): Point = js.native
+  
   /**
     * Returns a vertex of this <code>Geometry</code> (usually, but not
     * necessarily, the first one). The returned coordinate should not be assumed to
@@ -488,6 +514,7 @@ trait Geometry extends js.Object {
     *         <code>Geometry</code>. null if this Geometry is empty.
     */
   def getCoordinate(): Coordinate = js.native
+  
   /**
     * Returns an array containing the values of all the vertices for this geometry.
     * If the geometry is a composite, the array will contain all the vertices for
@@ -504,6 +531,7 @@ trait Geometry extends js.Object {
     * @see CoordinateSequence#setOrdinate
     */
   def getCoordinates(): js.Array[Coordinate] = js.native
+  
   /**
     * Returns the dimension of this geometry. The dimension of a geometry is is the
     * topological dimension of its embedding in the 2-D Euclidean plane. In the JTS
@@ -517,6 +545,7 @@ trait Geometry extends js.Object {
     * @return {number} the topological dimension of this geometry.
     */
   def getDimension(): Double = js.native
+  
   /**
     * Returns this <code>Geometry</code>s bounding box. If this
     * <code>Geometry</code> is the empty geometry, returns an empty
@@ -531,6 +560,7 @@ trait Geometry extends js.Object {
     *         cases).
     */
   def getEnvelope(): Geometry = js.native
+  
   /**
     * Returns the minimum and maximum x and y values in this <code>Geometry</code>,
     * or a null <code>Envelope</code> if this <code>Geometry</code> is empty.
@@ -540,12 +570,14 @@ trait Geometry extends js.Object {
     *         return <code>true.</code>
     */
   def getEnvelopeInternal(): Envelope = js.native
+  
   /**
     * Gets the factory which contains the context in which this geometry was created.
     *
     * @return {jsts.geom.GeometryFactory} the factory for this geometry.
     */
   def getFactory(): js.Any = js.native
+  
   /**
     * Returns an element {@link Geometry} from a {@link GeometryCollection} (or
     * <code>this</code>, if the geometry is not a collection).
@@ -555,12 +587,14 @@ trait Geometry extends js.Object {
     * @return {Geometry} the n'th geometry contained in this geometry.
     */
   def getGeometryN(n: Double): Geometry = js.native
+  
   /**
     * Returns the name of this object's <code>com.vivid.jts.geom</code> interface.
     *
     * @return {string} The name of this <code>Geometry</code>s most specific <code>jsts.geom</code> interface.
     */
   def getGeometryType(): String = js.native
+  
   /**
     * Computes an interior point of this <code>Geometry</code>. An interior
     * point is guaranteed to lie in the interior of the Geometry, if it possible to
@@ -570,6 +604,7 @@ trait Geometry extends js.Object {
     * @return {Point} a {@link Point} which is in the interior of this Geometry.
     */
   def getInteriorPoint(): Point = js.native
+  
   /**
     * Returns the length of this <code>Geometry</code>. Linear geometries return
     * their length. Areal geometries return their perimeter. They override this
@@ -578,6 +613,7 @@ trait Geometry extends js.Object {
     * @return the length of the Geometry.
     */
   def getLength(): Double = js.native
+  
   /**
     *Returns the number of {@link Geometry}s in a {@link GeometryCollection}
     * (or 1, if the geometry is not a collection).
@@ -585,6 +621,7 @@ trait Geometry extends js.Object {
     * @return {number} the number of geometries contained in this geometry.
     */
   def getNumGeometries(): Double = js.native
+  
   /**
     * Returns the count of this <code>Geometry</code>s vertices. The
     * <code>Geometry</code> s contained by composite <code>Geometry</code>s
@@ -593,6 +630,7 @@ trait Geometry extends js.Object {
     * @return {number} the number of vertices in this <code>Geometry.</code>
     */
   def getNumPoints(): Double = js.native
+  
   /**
     * Returns the <code>PrecisionModel</code> used by the <code>Geometry</code>.
     *
@@ -600,6 +638,7 @@ trait Geometry extends js.Object {
     * <code>Geometry</code> and all other <code>Geometry</code>s.
     */
   def getPrecisionModel(): PrecisionModel = js.native
+  
   /**
     * Computes a <code>Geometry</code> representing the points shared by this
     * <code>Geometry</code> and <code>other</code>. {@link GeometryCollection}s
@@ -617,6 +656,7 @@ trait Geometry extends js.Object {
     *           if the argument is a non-empty GeometryCollection
     */
   def intersection(other: Geometry): Geometry = js.native
+  
   /**
     * Tests whether this geometry intersects the specified geometry.
     * <p>
@@ -640,6 +680,7 @@ trait Geometry extends js.Object {
     * @see Geometry#disjoint
     */
   def intersects(g: Geometry): Boolean = js.native
+  
   /**
     * Returns whether or not the set of points in this <code>Geometry</code> is
     * empty.
@@ -648,6 +689,7 @@ trait Geometry extends js.Object {
     *         the empty geometry.
     */
   def isEmpty(): Boolean = js.native
+  
   /**
     * Returns whether the two <code>Geometry</code>s are equal, from the point
     * of view of the <code>equalsExact</code> method. Called by
@@ -664,17 +706,21 @@ trait Geometry extends js.Object {
     *         <code>equalsExact</code> method.
     */
   def isEquivalentClass(other: Geometry): Boolean = js.native
+  
   /**
     *
     * @return {boolean} true if this is a GeometryCollection.
     */
   def isGeometryCollection(): Boolean = js.native
+  
   /**
     *
     * @return {boolean} true if this is a GeometryCollection but not subclass.
     */
   def isGeometryCollectionBase(): Boolean = js.native
+  
   def isRectangle(): Boolean = js.native
+  
   /**
     * Tests whether this {@link Geometry} is simple. In general, the SFS
     * specification of simplicity follows the rule:
@@ -698,6 +744,7 @@ trait Geometry extends js.Object {
     * @see #isValid
     */
   def isSimple(): Boolean = js.native
+  
   /**
     * Tests the validity of this <code>Geometry</code>. Subclasses provide their
     * own definition of "valid".
@@ -708,6 +755,7 @@ trait Geometry extends js.Object {
     * @see IsValidOp
     */
   def isValid(): Boolean = js.native
+  
   /**
     * Tests whether the distance from this <code>Geometry</code> to another is
     * less than or equal to a specified value.
@@ -720,6 +768,7 @@ trait Geometry extends js.Object {
     *         <code>distance</code> apart.
     */
   def isWithinDistance(geom: Geometry, distance: Double): Boolean = js.native
+  
   /**
     * Creates a new Geometry which is a normalized copy of this Geometry.
     *
@@ -727,6 +776,7 @@ trait Geometry extends js.Object {
     * @see #normalize()
     */
   def norm(): Geometry = js.native
+  
   /**
     * Converts this <code>Geometry</code> to <b>normal form</b> (or <b>
     * canonical form</b> ). Normal form is a unique representation for
@@ -739,6 +789,7 @@ trait Geometry extends js.Object {
     * this ordering to sequences of coordinates.
     */
   def normalize(): Unit = js.native
+  
   /**
     * Tests whether this geometry overlaps the specified geometry.
     * <p>
@@ -763,6 +814,7 @@ trait Geometry extends js.Object {
     *         overlap.
     */
   def overlaps(g: Geometry): Boolean = js.native
+  
   /**
     * Tests whether the elements in the DE-9IM {@link IntersectionMatrix} for the
     * two <code>Geometry</code>s match the elements in
@@ -791,6 +843,7 @@ trait Geometry extends js.Object {
     * @see IntersectionMatrix
     */
   def relate(g: Geometry, intersectionPattern: String): Boolean = js.native
+  
   /**
     * Returns the DE-9IM {@link IntersectionMatrix} for the two
     * <code>Geometry</code>s.
@@ -803,6 +856,7 @@ trait Geometry extends js.Object {
     *         <code>Geometry</code>s.
     */
   def relate2(g: Geometry): js.Any = js.native
+  
   /**
     * Returns a set combining the points in this <code>Geometry</code> not in
     * <code>other</code>, and the points in <code>other</code> not in this
@@ -820,6 +874,7 @@ trait Geometry extends js.Object {
     *           if either input is a non-empty GeometryCollection
     */
   def symDifference(other: Geometry): Geometry = js.native
+  
   /**
     * Tests whether this geometry touches the specified geometry.
     * <p>
@@ -843,6 +898,7 @@ trait Geometry extends js.Object {
     *         are points.
     */
   def touches(g: Geometry): Boolean = js.native
+  
   /**
     * Computes a <code>Geometry</code> representing all the points in this
     * <code>Geometry</code> and <code>other</code>.
@@ -871,6 +927,7 @@ trait Geometry extends js.Object {
     *           if either input is a non-empty GeometryCollection
     */
   def union(other: Geometry): Geometry = js.native
+  
   /**
     * Tests whether this geometry is within the specified geometry.
     * <p>
@@ -897,8 +954,8 @@ trait Geometry extends js.Object {
     */
   def within(g: Geometry): Boolean = js.native
 }
-
 object Geometry {
+  
   @scala.inline
   def apply(
     apply: js.Any => Unit,
@@ -962,132 +1019,191 @@ object Geometry {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), buffer = js.Any.fromFunction3(buffer), checkNotGeometryCollection = js.Any.fromFunction1(checkNotGeometryCollection), compare = js.Any.fromFunction2(compare), compareTo = js.Any.fromFunction1(compareTo), compareToSameClass = js.Any.fromFunction1(compareToSameClass), computeEnvelopeInternal = js.Any.fromFunction0(computeEnvelopeInternal), contains = js.Any.fromFunction1(contains), convexHull = js.Any.fromFunction0(convexHull), coveredBy = js.Any.fromFunction1(coveredBy), covers = js.Any.fromFunction1(covers), crosses = js.Any.fromFunction1(crosses), difference = js.Any.fromFunction1(difference), disjoint = js.Any.fromFunction1(disjoint), distance = js.Any.fromFunction1(distance), envelope = envelope.asInstanceOf[js.Any], equal = js.Any.fromFunction3(equal), equals = js.Any.fromFunction1(equals), equalsExact = js.Any.fromFunction2(equalsExact), equalsNorm = js.Any.fromFunction1(equalsNorm), equalsTopo = js.Any.fromFunction1(equalsTopo), getArea = js.Any.fromFunction0(getArea), getBoundary = js.Any.fromFunction0(getBoundary), getBoundaryDimension = js.Any.fromFunction0(getBoundaryDimension), getCentroid = js.Any.fromFunction0(getCentroid), getCoordinate = js.Any.fromFunction0(getCoordinate), getCoordinates = js.Any.fromFunction0(getCoordinates), getDimension = js.Any.fromFunction0(getDimension), getEnvelope = js.Any.fromFunction0(getEnvelope), getEnvelopeInternal = js.Any.fromFunction0(getEnvelopeInternal), getFactory = js.Any.fromFunction0(getFactory), getGeometryN = js.Any.fromFunction1(getGeometryN), getGeometryType = js.Any.fromFunction0(getGeometryType), getInteriorPoint = js.Any.fromFunction0(getInteriorPoint), getLength = js.Any.fromFunction0(getLength), getNumGeometries = js.Any.fromFunction0(getNumGeometries), getNumPoints = js.Any.fromFunction0(getNumPoints), getPrecisionModel = js.Any.fromFunction0(getPrecisionModel), intersection = js.Any.fromFunction1(intersection), intersects = js.Any.fromFunction1(intersects), isEmpty = js.Any.fromFunction0(isEmpty), isEquivalentClass = js.Any.fromFunction1(isEquivalentClass), isGeometryCollection = js.Any.fromFunction0(isGeometryCollection), isGeometryCollectionBase = js.Any.fromFunction0(isGeometryCollectionBase), isRectangle = js.Any.fromFunction0(isRectangle), isSimple = js.Any.fromFunction0(isSimple), isValid = js.Any.fromFunction0(isValid), isWithinDistance = js.Any.fromFunction2(isWithinDistance), norm = js.Any.fromFunction0(norm), normalize = js.Any.fromFunction0(normalize), overlaps = js.Any.fromFunction1(overlaps), relate = js.Any.fromFunction2(relate), relate2 = js.Any.fromFunction1(relate2), symDifference = js.Any.fromFunction1(symDifference), touches = js.Any.fromFunction1(touches), union = js.Any.fromFunction1(union), within = js.Any.fromFunction1(within))
     __obj.asInstanceOf[Geometry]
   }
+  
   @scala.inline
   implicit class GeometryOps[Self <: Geometry] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setApply(value: js.Any => Unit): Self = this.set("apply", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setBuffer(value: (Double, Double, Double) => Geometry): Self = this.set("buffer", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setCheckNotGeometryCollection(value: Geometry => Unit): Self = this.set("checkNotGeometryCollection", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCompare(value: (js.Array[_], js.Array[_]) => Double): Self = this.set("compare", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setCompareTo(value: Geometry => Double): Self = this.set("compareTo", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCompareToSameClass(value: Geometry => Double): Self = this.set("compareToSameClass", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setComputeEnvelopeInternal(value: () => Envelope): Self = this.set("computeEnvelopeInternal", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setContains(value: Geometry => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setConvexHull(value: () => Geometry): Self = this.set("convexHull", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setCoveredBy(value: Geometry => Boolean): Self = this.set("coveredBy", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCovers(value: Geometry => Boolean): Self = this.set("covers", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCrosses(value: Geometry => Boolean): Self = this.set("crosses", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setDifference(value: Geometry => Geometry): Self = this.set("difference", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setDisjoint(value: Geometry => Boolean): Self = this.set("disjoint", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setDistance(value: Geometry => Double): Self = this.set("distance", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setEnvelope(value: Envelope): Self = this.set("envelope", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEqual(value: (Coordinate, Coordinate, Double) => Boolean): Self = this.set("equal", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setEquals(value: js.Object => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setEqualsExact(value: (Geometry, Double) => Boolean): Self = this.set("equalsExact", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setEqualsNorm(value: Geometry => Boolean): Self = this.set("equalsNorm", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setEqualsTopo(value: Geometry => Boolean): Self = this.set("equalsTopo", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetArea(value: () => Double): Self = this.set("getArea", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetBoundary(value: () => Geometry): Self = this.set("getBoundary", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetBoundaryDimension(value: () => Double): Self = this.set("getBoundaryDimension", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetCentroid(value: () => Point): Self = this.set("getCentroid", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetCoordinate(value: () => Coordinate): Self = this.set("getCoordinate", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetCoordinates(value: () => js.Array[Coordinate]): Self = this.set("getCoordinates", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetDimension(value: () => Double): Self = this.set("getDimension", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetEnvelope(value: () => Geometry): Self = this.set("getEnvelope", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetEnvelopeInternal(value: () => Envelope): Self = this.set("getEnvelopeInternal", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetFactory(value: () => js.Any): Self = this.set("getFactory", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetGeometryN(value: Double => Geometry): Self = this.set("getGeometryN", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetGeometryType(value: () => String): Self = this.set("getGeometryType", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetInteriorPoint(value: () => Point): Self = this.set("getInteriorPoint", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetLength(value: () => Double): Self = this.set("getLength", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetNumGeometries(value: () => Double): Self = this.set("getNumGeometries", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetNumPoints(value: () => Double): Self = this.set("getNumPoints", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetPrecisionModel(value: () => PrecisionModel): Self = this.set("getPrecisionModel", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIntersection(value: Geometry => Geometry): Self = this.set("intersection", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIntersects(value: Geometry => Boolean): Self = this.set("intersects", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsEmpty(value: () => Boolean): Self = this.set("isEmpty", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsEquivalentClass(value: Geometry => Boolean): Self = this.set("isEquivalentClass", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsGeometryCollection(value: () => Boolean): Self = this.set("isGeometryCollection", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsGeometryCollectionBase(value: () => Boolean): Self = this.set("isGeometryCollectionBase", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsRectangle(value: () => Boolean): Self = this.set("isRectangle", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsSimple(value: () => Boolean): Self = this.set("isSimple", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsValid(value: () => Boolean): Self = this.set("isValid", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsWithinDistance(value: (Geometry, Double) => Boolean): Self = this.set("isWithinDistance", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setNorm(value: () => Geometry): Self = this.set("norm", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setNormalize(value: () => Unit): Self = this.set("normalize", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setOverlaps(value: Geometry => Boolean): Self = this.set("overlaps", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRelate(value: (Geometry, String) => Boolean): Self = this.set("relate", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRelate2(value: Geometry => js.Any): Self = this.set("relate2", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSymDifference(value: Geometry => Geometry): Self = this.set("symDifference", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setTouches(value: Geometry => Boolean): Self = this.set("touches", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setUnion(value: Geometry => Geometry): Self = this.set("union", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setWithin(value: Geometry => Boolean): Self = this.set("within", js.Any.fromFunction1(value))
   }
-  
 }
-

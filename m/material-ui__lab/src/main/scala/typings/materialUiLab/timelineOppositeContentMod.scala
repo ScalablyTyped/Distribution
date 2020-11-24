@@ -4,11 +4,11 @@ import typings.materialUiLab.timelineOppositeContentTimelineOppositeContentMod.T
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/lab/TimelineOppositeContent", JSImport.Namespace)
 @js.native
 object timelineOppositeContentMod extends js.Object {
+  
   def default(props: TimelineOppositeContentProps): Element = js.native
 }
-

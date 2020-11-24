@@ -2,7 +2,7 @@ package typings.microsoftAjax
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region ASP.NET Types
@@ -13,12 +13,14 @@ import scala.scalajs.js.annotation._
 */
 @js.native
 trait Type extends js.Object {
+  
   /**
     * Invokes a base method with specified arguments.
     * @returns A value of the class that the base method returns. If the base method does not return a value, no value is returned.
     */
   def callBaseMethod(instance: js.Any, name: java.lang.String): js.Any = js.native
   def callBaseMethod(instance: js.Any, name: java.lang.String, baseArguments: js.Array[_]): js.Any = js.native
+  
   /**
     * Returns the base implementation of a method from the base class of the specified instance.
     * @param instance
@@ -27,11 +29,13 @@ trait Type extends js.Object {
     *          The name of the method to retrieve as a reference.
     */
   def getBaseMethod(instance: js.Object, name: java.lang.String): js.Any = js.native
+  
   /**
     * Returns the base class of the instance.
     * Use the getBaseType method to retrieve the base class of the instance.
     */
   def getBaseType(): Type = js.native
+  
   /**
     * Returns an Array object that contains the list of interfaces that the type implements.
     * Use the getInterfaces function to return a list of objects that define the interfaces on a type object.
@@ -40,12 +44,14 @@ trait Type extends js.Object {
     * @return An Array object that contains the list of interfaces that the type implements.
     */
   def getInterfaces(): js.Array[_] = js.native
+  
   /**
     * Returns the name of the type of the instance.
     * @return A string representing the fully qualified name of the type of the instance.
     * @example Object.getType(c[i]).getName()
     */
   def getName(): java.lang.String = js.native
+  
   /**
     * Determines whether a class implements a specified interface type.
     * @param interfaceType
@@ -53,6 +59,7 @@ trait Type extends js.Object {
     * @return true if the class implements interfaceType; otherwise, false.
     */
   def implementsInterface(interfaceType: Type): Boolean = js.native
+  
   /**
     * Determines whether an instance inherits from a specified class.
     * @param parentType
@@ -60,6 +67,7 @@ trait Type extends js.Object {
     * @return true if the instance inherits from parentType; otherwise, false.
     */
   def inheritsFrom(parentType: java.lang.String): Boolean = js.native
+  
   /**
     * Initializes the base class and its members in the context of a given instance, which provides the model for inheritance and for initializing base members.
     * @param instance
@@ -69,6 +77,7 @@ trait Type extends js.Object {
     */
   def initializeBase(instance: js.Any): js.Any = js.native
   def initializeBase(instance: js.Any, baseArguments: js.Array[_]): js.Any = js.native
+  
   /**
     * Determines whether an instance implements an interface.
     * @param typeInstanceVar
@@ -76,6 +85,7 @@ trait Type extends js.Object {
     * @return
     */
   def isImplementedBy(typeInstanceVar: js.Any): Boolean = js.native
+  
   /**
     * Returns a value that indicates whether an object is an instance of a specified class or of one of its derived classes.
     * @param instance
@@ -83,6 +93,7 @@ trait Type extends js.Object {
     * @return true if instance is an instance of the class; false if instance does not implement the interface, or if it is undefined or null.
     */
   def isInstanceOfType(instance: js.Any): Boolean = js.native
+  
   /**
     * Registers a class as defined by a constructor with an optional base type and interface type.
     * @param typeName
@@ -97,6 +108,7 @@ trait Type extends js.Object {
   def registerClass(typeName: java.lang.String, baseType: js.UndefOr[scala.Nothing], interfaceTypes: js.Array[_]): js.Any = js.native
   def registerClass(typeName: java.lang.String, baseType: js.Any): js.Any = js.native
   def registerClass(typeName: java.lang.String, baseType: js.Any, interfaceTypes: js.Array[_]): js.Any = js.native
+  
   /**
     * Registers an enumeration.
     * @param name
@@ -106,6 +118,7 @@ trait Type extends js.Object {
     */
   def registerEnum(name: java.lang.String): Unit = js.native
   def registerEnum(name: java.lang.String, flags: Boolean): Unit = js.native
+  
   /**
     * Registers an interface defined by a constructor.
     * @param typeName
@@ -113,6 +126,7 @@ trait Type extends js.Object {
     * @return The registered interface.
     */
   def registerInterface(typeName: java.lang.String): js.Any = js.native
+  
   /**
     * Copies members from the base class to the prototype associated with the derived class, and continues this process up the inheritance chain. This enables you to reflect on the inherited members of a derived type.
     * Use the resolveInheritance method to reflect on the inherited members of a derived type.
@@ -123,4 +137,3 @@ trait Type extends js.Object {
     */
   def resolveInheritance(): Unit = js.native
 }
-

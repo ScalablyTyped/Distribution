@@ -5,11 +5,12 @@ import typings.firebaseComponent.typesMod.InstanceFactory
 import typings.firebaseComponent.typesMod.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/component", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class Component[T /* <: Name */] protected ()
     extends typings.firebaseComponent.componentMod.Component[T] {
@@ -33,6 +34,4 @@ object mod extends js.Object {
     extends typings.firebaseComponent.providerMod.Provider[T] {
     def this(name: T, container: typings.firebaseComponent.componentContainerMod.ComponentContainer) = this()
   }
-  
 }
-

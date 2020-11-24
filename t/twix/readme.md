@@ -12,7 +12,7 @@ Twix.js allows you to work with date ranges
 | Keywords           | twix, date, date range |
 | # releases         | 2 |
 | # dependents       | 32 |
-| # downloads        | 562231 |
+| # downloads        | 509543 |
 | # stars            | 1 |
 
 ## Links

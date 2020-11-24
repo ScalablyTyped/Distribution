@@ -14,20 +14,23 @@ import typings.pickadate.pickadateStrings.view
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Picker[TPickerObject, TItemObject /* <: Item */, TOptions /* <: SetObject */] extends js.Object {
+  
   /**
     * The picker's relative input element wrapped as a jQuery object.
     */
   @JSName("$node")
   var $node: JQuery = js.native
+  
   /**
     * The picker's relative root holder element wrapped as a jQuery object.
     */
   @JSName("$root")
   var $root: JQuery = js.native
+  
   /**
     * This is the picker’s relative hidden element, which is undefined if
     * there’s no formatSubmit option. There should be no reason to use this
@@ -35,12 +38,15 @@ trait Picker[TPickerObject, TItemObject /* <: Item */, TOptions /* <: SetObject 
     * this, please mention it in the issues.
     */
   var _hidden: HTMLInputElement = js.native
+  
   /**
     * Clear the value in the picker's input element.
     */
   def clear(): TPickerObject = js.native
+  
   def close(): TPickerObject = js.native
   def close(withFocus: Boolean): TPickerObject = js.native
+  
   /**
     * Short for picker.get('value')
     */
@@ -105,10 +111,12 @@ trait Picker[TPickerObject, TItemObject /* <: Item */, TOptions /* <: SetObject 
     */
   @JSName("get")
   def get_view(thing: view): TItemObject = js.native
+  
   /**
     * Unbind callbacks that are bound using the on method.
     */
   def off(methodName: String*): TPickerObject = js.native
+  
   /**
     * Bind multiple callbacks at once to get fired off when the relative
     * picker method is called.
@@ -118,8 +126,10 @@ trait Picker[TPickerObject, TItemObject /* <: Item */, TOptions /* <: SetObject 
     * Bind callbacks to get fired off when the relative picker method is called.
     */
   def on(methodName: String, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): TPickerObject = js.native
+  
   def open(): TPickerObject = js.native
   def open(withoutFocus: Boolean): TPickerObject = js.native
+  
   /**
     * Refresh the picker box after adding something to the holder.
     * By default, only the "face" of the picker (i.e. the box element)
@@ -128,6 +138,7 @@ trait Picker[TPickerObject, TItemObject /* <: Item */, TOptions /* <: SetObject 
     */
   def render(): TPickerObject = js.native
   def render(entirePicker: Boolean): TPickerObject = js.native
+  
   /**
     * Set the properties, objects, and states to change the state of the picker.
     */
@@ -137,18 +148,20 @@ trait Picker[TPickerObject, TItemObject /* <: Item */, TOptions /* <: SetObject 
   def set(thing: String, value: js.Any, options: SetOptions): TPickerObject = js.native
   def set(things: TOptions): TPickerObject = js.native
   def set(things: TOptions, options: SetOptions): TPickerObject = js.native
+  
   /**
     * Rebuild the picker.
     */
   def start(): TPickerObject = js.native
+  
   /**
     * Destroy the picker.
     */
   def stop(): TPickerObject = js.native
+  
   /**
     * Trigger callbacks that have been queued up using the the on method.
     */
   def trigger(event: String): TPickerObject = js.native
   def trigger(event: String, data: js.Any): TPickerObject = js.native
 }
-

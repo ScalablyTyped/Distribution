@@ -11,8 +11,8 @@ This is lightweight memory stream module for node.js.
 | Full name          | memorystream |
 | Keywords           | memory, test, stream, tools, streams, buffer |
 | # releases         | 0 |
-| # dependents       | 100 |
-| # downloads        | 34922178 |
+| # dependents       | 111 |
+| # downloads        | 56592590 |
 | # stars            | 5 |
 
 ## Links

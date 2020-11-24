@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassZipFile extends ClassObject {
+  
   /**
     * 
     * @brief 关闭打开的zip文件
@@ -18,6 +19,7 @@ trait ClassZipFile extends ClassObject {
     * @async
     */
   def close(): Unit = js.native
+  
   /**
     * 
     * @brief 解压指定文件
@@ -42,6 +44,7 @@ trait ClassZipFile extends ClassObject {
     */
   def extract(member: String, strm: ClassSeekableStream): Unit = js.native
   def extract(member: String, strm: ClassSeekableStream, password: String): Unit = js.native
+  
   /**
     * 
     * @brief 解压所有文件到指定路径
@@ -53,6 +56,7 @@ trait ClassZipFile extends ClassObject {
     */
   def extractAll(path: String): Unit = js.native
   def extractAll(path: String, password: String): Unit = js.native
+  
   /**
     * 
     * @brief 获取文件信息
@@ -64,6 +68,7 @@ trait ClassZipFile extends ClassObject {
     * @async
     */
   def getinfo(member: String): js.Any = js.native
+  
   /**
     * 
     * @brief 获取文件信息列表
@@ -74,6 +79,7 @@ trait ClassZipFile extends ClassObject {
     * @async
     */
   def infolist(): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 获取文件名列表
@@ -83,6 +89,7 @@ trait ClassZipFile extends ClassObject {
     * @async
     */
   def namelist(): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 返回从压缩文件读取的数据
@@ -95,6 +102,7 @@ trait ClassZipFile extends ClassObject {
     */
   def read(member: String): ClassBuffer = js.native
   def read(member: String, password: String): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 解压所有文件
@@ -106,6 +114,7 @@ trait ClassZipFile extends ClassObject {
     */
   def readAll(): js.Array[_] = js.native
   def readAll(password: String): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 写入指定文件到压缩文件
@@ -143,4 +152,3 @@ trait ClassZipFile extends ClassObject {
   def write(strm: ClassSeekableStream, inZipName: String): Unit = js.native
   def write(strm: ClassSeekableStream, inZipName: String, password: String): Unit = js.native
 }
-

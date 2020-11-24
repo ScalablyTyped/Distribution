@@ -11,8 +11,8 @@ Small JSON database for Node, Electron and the browser. Powered by Lodash.
 | Full name          | lowdb |
 | Keywords           | flat, file, local, database, storage, JSON, lodash, localStorage, electron, embed, embeddable |
 | # releases         | 1 |
-| # dependents       | 540 |
-| # downloads        | 10255522 |
+| # dependents       | 673 |
+| # downloads        | 11583045 |
 | # stars            | 80 |
 
 ## Links

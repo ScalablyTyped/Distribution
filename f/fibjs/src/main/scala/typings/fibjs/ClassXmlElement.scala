@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassXmlElement extends ClassXmlNode {
+  
   /**
     * class prop 
     *
@@ -17,6 +18,7 @@ trait ClassXmlElement extends ClassXmlNode {
     * @type XmlNamedNodeMap
     */
   var attributes: ClassXmlNamedNodeMap = js.native
+  
   /**
     * class prop 
     *
@@ -28,83 +30,7 @@ trait ClassXmlElement extends ClassXmlNode {
     * @type String
     */
   var className: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * ! 查询和设置元素的 id 属性
-    * 
-    * 
-    * 
-    * @type String
-    */
-  var id: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * ! 查询和设置选定元素的 HTML 文本，仅在 html 模式有效。查询时，返回元素节点内所有子节点的 HTML 编码；设置时，删除所有子节点，并用指定的 HTML 解码后替换它们。
-    * 
-    * 
-    * 
-    * @type String
-    */
-  var innerHTML: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询元素的本地名称。如果选定的节点无命名空间，则该属性等同于 nodeName
-    * 
-    * 
-    * @readonly
-    * @type String
-    */
-  var localName: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询元素的命名空间的 URI。如果选定的节点无命名空间，则该属性返回 NULL
-    * 
-    * 
-    * @readonly
-    * @type String
-    */
-  var namespaceURI: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设置元素的命名空间前缀。如果选定的节点无命名空间，则该属性返回 NULL
-    * 
-    * 
-    * 
-    * @type String
-    */
-  var prefix: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 返回元素的标签名
-    * 
-    * 
-    * @readonly
-    * @type String
-    */
-  var tagName: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * ! 查询和设置选定元素的文本。查询时，返回元素节点内所有文本节点的值；设置时，删除所有子节点，并用单个文本节点来替换它们。
-    * 
-    * 
-    * 
-    * @type String
-    */
-  var textContent: String = js.native
+  
   /**
     * 
     * @brief 通过名称查询属性的值
@@ -115,6 +41,7 @@ trait ClassXmlElement extends ClassXmlNode {
     * 
     */
   def getAttribute(name: String): String = js.native
+  
   /**
     * 
     * @brief 通过命名空间 URI 和名称来获取属性值
@@ -126,6 +53,7 @@ trait ClassXmlElement extends ClassXmlNode {
     * 
     */
   def getAttributeNS(namespaceURI: String, localName: String): String = js.native
+  
   /**
     * 
     * @brief 返回拥有指定 id 属性的元素
@@ -140,6 +68,7 @@ trait ClassXmlElement extends ClassXmlNode {
     * 
     */
   def getElementById(id: String): ClassXmlElement = js.native
+  
   /**
     * 
     * @brief 返回带有指定 class 名称的所有元素的一个节点列表
@@ -152,6 +81,7 @@ trait ClassXmlElement extends ClassXmlNode {
     * 
     */
   def getElementsByClassName(className: String): ClassXmlNodeList = js.native
+  
   /**
     * 
     * @brief 返回拥有指定名称的所有元素的 XmlNodeList
@@ -166,6 +96,7 @@ trait ClassXmlElement extends ClassXmlNode {
     * 
     */
   def getElementsByTagName(tagName: String): ClassXmlNodeList = js.native
+  
   /**
     * 
     * @brief 返回拥有指定命名空间和名称的所有元素的 XmlNodeList
@@ -179,6 +110,7 @@ trait ClassXmlElement extends ClassXmlNode {
     * 
     */
   def getElementsByTagNameNS(namespaceURI: String, localName: String): ClassXmlNodeList = js.native
+  
   /**
     * 
     * @brief 查询当前节点是否拥有指定名称的属性
@@ -189,6 +121,7 @@ trait ClassXmlElement extends ClassXmlNode {
     * 
     */
   def hasAttribute(name: String): Boolean = js.native
+  
   /**
     * 
     * @brief 查询当前节点是否拥有指定命名空间和名称的属性
@@ -200,6 +133,67 @@ trait ClassXmlElement extends ClassXmlNode {
     * 
     */
   def hasAttributeNS(namespaceURI: String, localName: String): Boolean = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * ! 查询和设置元素的 id 属性
+    * 
+    * 
+    * 
+    * @type String
+    */
+  var id: String = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * ! 查询和设置选定元素的 HTML 文本，仅在 html 模式有效。查询时，返回元素节点内所有子节点的 HTML 编码；设置时，删除所有子节点，并用指定的 HTML 解码后替换它们。
+    * 
+    * 
+    * 
+    * @type String
+    */
+  var innerHTML: String = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询元素的本地名称。如果选定的节点无命名空间，则该属性等同于 nodeName
+    * 
+    * 
+    * @readonly
+    * @type String
+    */
+  var localName: String = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询元素的命名空间的 URI。如果选定的节点无命名空间，则该属性返回 NULL
+    * 
+    * 
+    * @readonly
+    * @type String
+    */
+  var namespaceURI: String = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设置元素的命名空间前缀。如果选定的节点无命名空间，则该属性返回 NULL
+    * 
+    * 
+    * 
+    * @type String
+    */
+  var prefix: String = js.native
+  
   /**
     * 
     * @brief 通过名称删除指定的属性
@@ -209,6 +203,7 @@ trait ClassXmlElement extends ClassXmlNode {
     * 
     */
   def removeAttribute(name: String): Unit = js.native
+  
   /**
     * 
     * @brief 通过命名空间和名称删除指定的属性
@@ -219,6 +214,7 @@ trait ClassXmlElement extends ClassXmlNode {
     * 
     */
   def removeAttributeNS(namespaceURI: String, localName: String): Unit = js.native
+  
   /**
     * 
     * @brief 创建或改变某个新属性
@@ -231,6 +227,7 @@ trait ClassXmlElement extends ClassXmlNode {
     * 
     */
   def setAttribute(name: String, value: String): Unit = js.native
+  
   /**
     * 
     * @brief 创建或改变具有命名空间的属性
@@ -244,5 +241,28 @@ trait ClassXmlElement extends ClassXmlNode {
     * 
     */
   def setAttributeNS(namespaceURI: String, qualifiedName: String, value: String): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 返回元素的标签名
+    * 
+    * 
+    * @readonly
+    * @type String
+    */
+  var tagName: String = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * ! 查询和设置选定元素的文本。查询时，返回元素节点内所有文本节点的值；设置时，删除所有子节点，并用单个文本节点来替换它们。
+    * 
+    * 
+    * 
+    * @type String
+    */
+  var textContent: String = js.native
 }
-

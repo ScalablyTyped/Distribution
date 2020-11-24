@@ -10,9 +10,9 @@ Stream transformer that prefixes lines with timestamps and other things.
 | ------------------ | :-------------: |
 | Full name          | strong-log-transformer |
 | Keywords           | logging, streams |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 25 |
-| # downloads        | 23038440 |
+| # downloads        | 37938929 |
 | # stars            | 0 |
 
 ## Links

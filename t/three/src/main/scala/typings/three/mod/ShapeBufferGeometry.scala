@@ -2,7 +2,7 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "ShapeBufferGeometry")
 @js.native
@@ -13,4 +13,3 @@ class ShapeBufferGeometry protected ()
   def this(shapes: js.Array[typings.three.shapeMod.Shape], curveSegments: Double) = this()
   def this(shapes: typings.three.shapeMod.Shape, curveSegments: Double) = this()
 }
-

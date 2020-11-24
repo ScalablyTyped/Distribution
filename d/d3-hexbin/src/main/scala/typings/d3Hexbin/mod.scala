@@ -3,17 +3,22 @@ package typings.d3Hexbin
 import typings.std.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3-hexbin", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def hexbin[T](): Hexbin_[T] = js.native
+  
   @js.native
   trait HexbinBin[T] extends Array[T] {
+    
     /**
       * The x-coordinate of the center of the associated bin’s hexagon.
       */
     var x: Double = js.native
+    
     /**
       * The y-coordinate of the center of the associated bin’s hexagon.
       */
@@ -22,6 +27,7 @@ object mod extends js.Object {
   
   @js.native
   trait Hexbin_[T] extends js.Object {
+    
     /**
       * Bins the specified array of points, returning an array of hexagonal bins.
       * For each point in the specified points array, the x- and y-accessors are
@@ -31,11 +37,13 @@ object mod extends js.Object {
       * not be in any of the returned bins.
       */
     def apply(points: js.Array[T]): js.Array[HexbinBin[T]] = js.native
+    
     /**
       * Returns an array of [x, y] points representing the centers of every
       * hexagon in the extent.
       */
     def centers(): js.Array[js.Tuple2[Double, Double]] = js.native
+    
     /**
       * Returns the generator’s current extent `[[x0, y0], [x1, y1]]`,
       * where `x0` and `y0` are the lower bounds and `x1` and `y1` are the upper bounds.
@@ -48,6 +56,7 @@ object mod extends js.Object {
       * `[[x0, y0], [x1, y1]]` and returns the hexbin generator.
       */
     def extent(extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): this.type = js.native
+    
     /**
       * Returns the SVG path string for the hexagon centered at the origin ⟨0,0⟩.
       * The path string is defined with relative coordinates such that you can
@@ -60,12 +69,14 @@ object mod extends js.Object {
       */
     def hexagon(): String = js.native
     def hexagon(radius: Double): String = js.native
+    
     /**
       * Returns an SVG path string representing the hexagonal mesh that covers
       * the extent; the returned path is intended to be stroked.
       * The mesh may extend slightly beyond the extent and may need to be clipped.
       */
     def mesh(): String = js.native
+    
     /**
       * Returns the current radius, which defaults to 1.
       *
@@ -82,6 +93,7 @@ object mod extends js.Object {
       * and the height of each hexagon radius × 3 / 2.
       */
     def radius(radius: Double): this.type = js.native
+    
     /**
       * Returns the generator’s current size `[x1 - x0, y1 - y0]`,
       * where `x0` and `y0` are the lower bounds and `x1` and `y1` are the upper bounds.
@@ -95,6 +107,7 @@ object mod extends js.Object {
       * This is a convenience method for setting the extent.
       */
     def size(size: js.Tuple2[Double, Double]): this.type = js.native
+    
     /**
       * Returns the current x-coordinate accessor, which defaults to: `x(d) => d[0]`.
       *
@@ -111,6 +124,7 @@ object mod extends js.Object {
       * a two-element array of numbers [x, y].
       */
     def x(x: js.Function1[/* d */ T, Double]): this.type = js.native
+    
     /**
       * Returns the current y-coordinate accessor, which defaults to: `y(d) => d[1]`.
       *
@@ -128,7 +142,4 @@ object mod extends js.Object {
       */
     def y(y: js.Function1[/* d */ T, Double]): this.type = js.native
   }
-  
-  def hexbin[T](): Hexbin_[T] = js.native
 }
-

@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a collection of data pilot tables. */
 @js.native
@@ -16,8 +16,8 @@ trait DataPilotTables
   extends XDataPilotTables
      with XEnumerationAccess
      with XIndexAccess
-
 object DataPilotTables {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -42,4 +42,3 @@ object DataPilotTables {
     __obj.asInstanceOf[DataPilotTables]
   }
 }
-

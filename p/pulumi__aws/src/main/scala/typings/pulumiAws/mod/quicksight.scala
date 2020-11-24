@@ -9,11 +9,12 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "quicksight")
 @js.native
 object quicksight extends js.Object {
+  
   @js.native
   class Group protected ()
     extends typings.pulumiAws.quicksightMod.Group {
@@ -26,6 +27,30 @@ object quicksight extends js.Object {
       */
     def this(name: String, args: GroupArgs) = this()
     def this(name: String, args: GroupArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object Group extends js.Object {
+    
+    /**
+      * Get an existing Group resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.quicksightGroupMod.Group = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.quicksightGroupMod.Group = js.native
+    def get(name: String, id: Input[ID], state: GroupState): typings.pulumiAws.quicksightGroupMod.Group = js.native
+    def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): typings.pulumiAws.quicksightGroupMod.Group = js.native
+    
+    /**
+      * Returns true if the given object is an instance of Group.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/quicksight/group.Group */ Boolean = js.native
   }
   
   @js.native
@@ -41,33 +66,10 @@ object quicksight extends js.Object {
     def this(name: String, args: UserArgs) = this()
     def this(name: String, args: UserArgs, opts: CustomResourceOptions) = this()
   }
-  
-  /* static members */
-  @js.native
-  object Group extends js.Object {
-    /**
-      * Get an existing Group resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.quicksightGroupMod.Group = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.quicksightGroupMod.Group = js.native
-    def get(name: String, id: Input[ID], state: GroupState): typings.pulumiAws.quicksightGroupMod.Group = js.native
-    def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): typings.pulumiAws.quicksightGroupMod.Group = js.native
-    /**
-      * Returns true if the given object is an instance of Group.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/quicksight/group.Group */ Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object User extends js.Object {
+    
     /**
       * Get an existing User resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -81,12 +83,11 @@ object quicksight extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.quicksightUserMod.User = js.native
     def get(name: String, id: Input[ID], state: UserState): typings.pulumiAws.quicksightUserMod.User = js.native
     def get(name: String, id: Input[ID], state: UserState, opts: CustomResourceOptions): typings.pulumiAws.quicksightUserMod.User = js.native
+    
     /**
       * Returns true if the given object is an instance of User.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/quicksight/user.User */ Boolean = js.native
   }
-  
 }
-

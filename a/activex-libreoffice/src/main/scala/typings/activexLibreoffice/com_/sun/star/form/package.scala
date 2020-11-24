@@ -2,14 +2,16 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object form {
+  
   /**
     * is not used anymore, and superseded by {@link com.sun.star.form.runtime.FormController} and {@link com.sun.star.form.runtime.FormOperations} .
     * @deprecated Deprecated
     */
   type FormControllerDispatcher = typings.activexLibreoffice.com_.sun.star.frame.XDispatchProvider
+  
   /**
     * specifies the capabilities of a collection of forms.
     *
@@ -18,6 +20,7 @@ package object form {
     * @see com.sun.star.form.component.Form
     */
   type Forms = typings.activexLibreoffice.com_.sun.star.form.XForms
+  
   /**
     * identifies a {@link FormComponent} as being a (sub-) form.
     *
@@ -25,6 +28,7 @@ package object form {
     * @see XFormComponent
     */
   type XForm = typings.activexLibreoffice.com_.sun.star.form.XFormComponent
+  
   /**
     * describes a component which may be part of a form.
     *

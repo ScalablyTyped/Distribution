@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface representing a free camera inputs manager
@@ -17,4 +17,3 @@ class FreeCameraInputsManager protected ()
     */
   def this(camera: typings.babylonjs.freeCameraMod.FreeCamera) = this()
 }
-

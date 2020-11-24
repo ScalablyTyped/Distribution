@@ -1,96 +1,127 @@
 package typings.materialSlider
 
 import typings.materialSlider.adapterMod.MDCSliderAdapter
-import typings.materialSlider.anon.ACTIVE
-import typings.materialSlider.anon.ARIADISABLED
-import typings.materialSlider.anon.PAGEFACTOR
 import typings.materialSlider.anon.PartialMDCSliderAdapter
+import typings.materialSlider.anon.SkipInitialUIUpdate
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/slider", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class MDCSlider ()
     extends typings.materialSlider.componentMod.MDCSlider
+  /* static members */
+  @js.native
+  object MDCSlider extends js.Object {
+    
+    def attachTo(root: Element): typings.materialSlider.componentMod.MDCSlider = js.native
+    def attachTo(root: Element, options: SkipInitialUIUpdate): typings.materialSlider.componentMod.MDCSlider = js.native
+  }
   
   @js.native
   class MDCSliderFoundation ()
     extends typings.materialSlider.foundationMod.MDCSliderFoundation {
     def this(adapter: PartialMDCSliderAdapter) = this()
   }
-  
-  /* static members */
-  @js.native
-  object MDCSlider extends js.Object {
-    def attachTo(root: Element): typings.materialSlider.componentMod.MDCSlider = js.native
-  }
-  
   /* static members */
   @js.native
   object MDCSliderFoundation extends js.Object {
-    def cssClasses: ACTIVE = js.native
+    
+    var SUPPORTS_POINTER_EVENTS: Boolean = js.native
+    
     def defaultAdapter: MDCSliderAdapter = js.native
-    def numbers: PAGEFACTOR = js.native
-    def strings: ARIADISABLED = js.native
   }
   
-  /**
-    * @license
-    * Copyright 2017 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
+  @js.native
+  object Thumb extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.materialSlider.typesMod.Thumb with Double] = js.native
+    
+    /* 2 */ val END: typings.materialSlider.typesMod.Thumb.END with Double = js.native
+    
+    /* 1 */ val START: typings.materialSlider.typesMod.Thumb.START with Double = js.native
+  }
+  
+  @js.native
+  object TickMark extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.materialSlider.typesMod.TickMark with Double] = js.native
+    
+    /* 0 */ val ACTIVE: typings.materialSlider.typesMod.TickMark.ACTIVE with Double = js.native
+    
+    /* 1 */ val INACTIVE: typings.materialSlider.typesMod.TickMark.INACTIVE with Double = js.native
+  }
+  
+  @js.native
+  object attributes extends js.Object {
+    
+    var ARIA_DISABLED: String = js.native
+    
+    var ARIA_VALUEMAX: String = js.native
+    
+    var ARIA_VALUEMIN: String = js.native
+    
+    var ARIA_VALUENOW: String = js.native
+    
+    var ARIA_VALUETEXT: String = js.native
+    
+    var DATA_ATTR_BIG_STEP: String = js.native
+    
+    var DATA_ATTR_STEP: String = js.native
+  }
+  
   @js.native
   object cssClasses extends js.Object {
-    var ACTIVE: String = js.native
+    
     var DISABLED: String = js.native
-    var DISABLE_TOUCH_ACTION: String = js.native
+    
     var DISCRETE: String = js.native
-    var FOCUS: String = js.native
-    var HAS_TRACK_MARKER: String = js.native
-    var IN_TRANSIT: String = js.native
-    var IS_DISCRETE: String = js.native
+    
+    var RANGE: String = js.native
+    
+    var THUMB: String = js.native
+    
+    var THUMB_KNOB: String = js.native
+    
+    var THUMB_TOP: String = js.native
+    
+    var THUMB_WITH_INDICATOR: String = js.native
+    
+    var TICK_MARKS: String = js.native
+    
+    var TICK_MARKS_CONTAINER: String = js.native
+    
+    var TICK_MARK_ACTIVE: String = js.native
+    
+    var TICK_MARK_INACTIVE: String = js.native
+    
+    var TRACK: String = js.native
+    
+    var TRACK_ACTIVE: String = js.native
+    
+    var VALUE_INDICATOR_TEXT: String = js.native
+  }
+  
+  @js.native
+  object events extends js.Object {
+    
+    var CHANGE: String = js.native
+    
+    var INPUT: String = js.native
   }
   
   @js.native
   object numbers extends js.Object {
-    var PAGE_FACTOR: Double = js.native
+    
+    var BIG_STEP_FACTOR: Double = js.native
+    
+    var THUMB_UPDATE_MIN_PX: Double = js.native
   }
-  
-  @js.native
-  object strings extends js.Object {
-    var ARIA_DISABLED: String = js.native
-    var ARIA_VALUEMAX: String = js.native
-    var ARIA_VALUEMIN: String = js.native
-    var ARIA_VALUENOW: String = js.native
-    var CHANGE_EVENT: String = js.native
-    var INPUT_EVENT: String = js.native
-    var PIN_VALUE_MARKER_SELECTOR: String = js.native
-    var STEP_DATA_ATTR: String = js.native
-    var THUMB_CONTAINER_SELECTOR: String = js.native
-    var TRACK_MARKER_CONTAINER_SELECTOR: String = js.native
-    var TRACK_SELECTOR: String = js.native
-  }
-  
 }
-

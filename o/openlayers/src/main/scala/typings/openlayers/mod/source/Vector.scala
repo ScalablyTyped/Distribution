@@ -8,7 +8,7 @@ import typings.openlayers.mod.FeatureUrlFunction
 import typings.openlayers.mod.olx.source.VectorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -34,6 +34,7 @@ import scala.scalajs.js.annotation._
   */
 class Vector () extends Source {
   def this(opt_options: VectorOptions) = this()
+  
   /**
     * Add a single feature to the source.  If you want to add a batch of features
     * at once, call {@link ol.source.Vector#addFeatures source.addFeatures()}
@@ -42,12 +43,14 @@ class Vector () extends Source {
     * @api stable
     */
   def addFeature(feature: Feature): Unit = js.native
+  
   /**
     * Add a batch of features to the source.
     * @param features Features to add.
     * @api stable
     */
   def addFeatures(features: js.Array[Feature]): Unit = js.native
+  
   /**
     * Remove all features from the source.
     * @param events.
@@ -55,6 +58,7 @@ class Vector () extends Source {
     */
   def clear(): Unit = js.native
   def clear(opt_fast: Boolean): Unit = js.native
+  
   /**
     * Iterate through all features on the source, calling the provided callback
     * with each one.  If the callback returns any "truthy" value, iteration will
@@ -69,6 +73,7 @@ class Vector () extends Source {
     */
   def forEachFeature[S](callback: js.Function1[/* feature */ Feature, S]): S = js.native
   def forEachFeature[S](callback: js.Function1[/* feature */ Feature, S], opt_this: js.Any): S = js.native
+  
   /**
     * Iterate through all features whose bounding box intersects the provided
     * extent (note that the feature's geometry may not intersect the extent),
@@ -92,6 +97,7 @@ class Vector () extends Source {
     */
   def forEachFeatureInExtent[S](extent: Extent_, callback: js.Function1[/* feature */ Feature, S]): S = js.native
   def forEachFeatureInExtent[S](extent: Extent_, callback: js.Function1[/* feature */ Feature, S], opt_this: js.Any): S = js.native
+  
   /**
     * Iterate through all features whose geometry intersects the provided extent,
     * calling the callback with each feature.  If the callback returns a "truthy"
@@ -111,6 +117,7 @@ class Vector () extends Source {
     */
   def forEachFeatureIntersectingExtent[S](extent: Extent_, callback: js.Function1[/* feature */ Feature, S]): S = js.native
   def forEachFeatureIntersectingExtent[S](extent: Extent_, callback: js.Function1[/* feature */ Feature, S], opt_this: js.Any): S = js.native
+  
   /**
     * Get the closest feature to the provided coordinate.
     *
@@ -125,6 +132,7 @@ class Vector () extends Source {
     */
   def getClosestFeatureToCoordinate(coordinate: Coordinate_): Feature = js.native
   def getClosestFeatureToCoordinate(coordinate: Coordinate_, opt_filter: js.Function1[/* feature */ Feature, Boolean]): Feature = js.native
+  
   /**
     * Get the extent of the features currently in the source.
     *
@@ -134,6 +142,7 @@ class Vector () extends Source {
     * @api stable
     */
   def getExtent(): Extent_ = js.native
+  
   /**
     * Get a feature by its identifier (the value returned by feature.getId()).
     * Note that the index treats string and numeric identifiers as the same.  So
@@ -145,12 +154,14 @@ class Vector () extends Source {
     */
   def getFeatureById(id: String): Feature = js.native
   def getFeatureById(id: Double): Feature = js.native
+  
   /**
     * Get all features on the source.
     * @return Features.
     * @api stable
     */
   def getFeatures(): js.Array[Feature] = js.native
+  
   /**
     * Get all features whose geometry intersects the provided coordinate.
     * @param coordinate Coordinate.
@@ -158,6 +169,7 @@ class Vector () extends Source {
     * @api stable
     */
   def getFeaturesAtCoordinate(coordinate: Coordinate_): js.Array[Feature] = js.native
+  
   /**
     * Get the features collection associated with this source. Will be `null`
     * unless the source was configured with `useSpatialIndex` set to `false`, or
@@ -166,6 +178,7 @@ class Vector () extends Source {
     * @api
     */
   def getFeaturesCollection(): Collection[Feature] = js.native
+  
   /**
     * Get all features in the provided extent.  Note that this returns all features
     * whose bounding boxes intersect the given extent (so it may include features
@@ -178,6 +191,7 @@ class Vector () extends Source {
     * @api
     */
   def getFeaturesInExtent(extent: Extent_): js.Array[Feature] = js.native
+  
   /**
     * Get the format associated with this source.
     *
@@ -185,6 +199,7 @@ class Vector () extends Source {
     * @api
     */
   def getFormat(): typings.openlayers.mod.format.Feature = js.native
+  
   /**
     * Get the url associated with this source.
     *
@@ -192,6 +207,7 @@ class Vector () extends Source {
     * @api
     */
   def getUrl(): String | FeatureUrlFunction = js.native
+  
   /**
     * Remove a single feature from the source.  If you want to remove all features
     * at once, use the {@link ol.source.Vector#clear source.clear()} method
@@ -201,4 +217,3 @@ class Vector () extends Source {
     */
   def removeFeature(feature: Feature): Unit = js.native
 }
-

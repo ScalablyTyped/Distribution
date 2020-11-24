@@ -5,7 +5,7 @@ import typings.cytoscape.cytoscapeStrings.completed
 import typings.cytoscape.cytoscapeStrings.frame
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An animation represents a visible change in state over
@@ -20,43 +20,52 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AnimationManipulation extends js.Object {
+  
   /**
     * Apply the animation at its current progress.
     * http://js.cytoscape.org/#ani.apply
     */
   @JSName("apply")
   def apply(): AnimationManipulation = js.native
+  
   /**
     * Get whether the animation is currently applying.
     * http://js.cytoscape.org/#ani.applying
     */
   def applying(): AnimationManipulation = js.native
+  
   def complete(): AnimationManipulation = js.native
+  
   /**
     * Get whether the animation has progressed to the end.
     * http://js.cytoscape.org/#ani.completed
     */
   def completed(): AnimationManipulation = js.native
+  
   /**
     * Fastforward the animation to the end.
     */
   def fastforward(): AnimationManipulation = js.native
+  
   /**
     * Pause the animation, maintaining the current progress.
     * http://js.cytoscape.org/#ani.pause
     */
   def pause(): AnimationManipulation = js.native
+  
   /**
     * Requests that the animation be played, starting on the next frame.
     * If the animation is complete, it restarts from the beginning.
     * http://js.cytoscape.org/#ani.play
     */
   def play(): this.type = js.native
+  
   /**
     * Get whether the animation is currently playing.
     * http://js.cytoscape.org/#ani.playing
     */
   def playing(): Boolean = js.native
+  
   /**
     * Get or set how far along the animation has progressed.
     * http://js.cytoscape.org/#ani.progress
@@ -70,6 +79,7 @@ trait AnimationManipulation extends js.Object {
     * @param progress The progress in percent (i.e. between 0 and 1 inclusive) to set to the animation.
     */
   def progress(progress: Double): AnimationManipulation = js.native
+  
   /**
     * Get a promise that is fulfilled with the specified animation event.
     * @param animationEvent A string for the event name; completed or complete for
@@ -83,22 +93,26 @@ trait AnimationManipulation extends js.Object {
   def promise_completed(animationEvent: completed): js.Promise[EventObject] = js.native
   @JSName("promise")
   def promise_frame(animationEvent: frame): js.Promise[EventObject] = js.native
+  
   /**
     * Reverse the animation such that its starting
     * conditions and ending conditions are reversed.
     * http://js.cytoscape.org/#ani.reverse
     */
   def reverse(): AnimationManipulation = js.native
+  
   /**
     * Rewind the animation to the beginning.
     */
   def rewind(): AnimationManipulation = js.native
+  
   /**
     * Stop the animation, maintaining the current progress
     * and removing the animation from any associated queues.
     * http://js.cytoscape.org/#ani.stop
     */
   def stop(): AnimationManipulation = js.native
+  
   /**
     * Get the progress of the animation in milliseconds.
     */
@@ -110,4 +124,3 @@ trait AnimationManipulation extends js.Object {
     */
   def time(time: Double): AnimationManipulation = js.native
 }
-

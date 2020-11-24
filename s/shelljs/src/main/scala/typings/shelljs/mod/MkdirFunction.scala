@@ -2,10 +2,11 @@ package typings.shelljs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MkdirFunction extends js.Object {
+  
   def apply(dir: String*): ShellString = js.native
   /**
     * Creates directories.
@@ -25,4 +26,3 @@ trait MkdirFunction extends js.Object {
     */
   def apply(options: String, dir: js.Array[String]): ShellString = js.native
 }
-

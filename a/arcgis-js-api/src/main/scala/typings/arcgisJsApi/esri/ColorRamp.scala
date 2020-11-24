@@ -4,12 +4,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.algorithmic
 import typings.arcgisJsApi.arcgisJsApiStrings.multipart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ColorRamp
   extends Accessor
      with JSONSupport {
+  
   /**
     * A string value representing the color ramp type.
     *
@@ -17,4 +18,3 @@ trait ColorRamp
     */
   val `type`: algorithmic | multipart = js.native
 }
-

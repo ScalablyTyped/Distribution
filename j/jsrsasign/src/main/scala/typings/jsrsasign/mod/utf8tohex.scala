@@ -2,11 +2,12 @@ package typings.jsrsasign.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsrsasign", "utf8tohex")
 @js.native
 object utf8tohex extends js.Object {
+  
   /**
     * convert a UTF-8 encoded string including CJK or Latin to a hexadecimal encoded string.
     * @param s UTF-8 encoded string
@@ -14,4 +15,3 @@ object utf8tohex extends js.Object {
     */
   def apply(s: String): String = js.native
 }
-

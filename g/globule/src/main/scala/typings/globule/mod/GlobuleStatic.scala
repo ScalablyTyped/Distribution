@@ -3,10 +3,11 @@ package typings.globule.mod
 import typings.minimatch.mod.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GlobuleStatic extends js.Object {
+  
   /**
     * Returns a unique array of all file or directory paths that match the given globbing pattern(s)
     */
@@ -36,6 +37,7 @@ trait GlobuleStatic extends js.Object {
   def find(pattern: js.Array[String], pattern2: String, options: FindOptions): js.Array[String] = js.native
   def find(pattern: js.Array[String], pattern2: js.Array[String]): js.Array[String] = js.native
   def find(pattern: js.Array[String], pattern2: js.Array[String], options: FindOptions): js.Array[String] = js.native
+  
   /**
     * Tests pattern(s) against against one or more file paths and returns true if any files were matched, otherwise false.
     */
@@ -47,6 +49,7 @@ trait GlobuleStatic extends js.Object {
   def isMatch(patterns: js.Array[String], filepaths: String, options: IOptions): Boolean = js.native
   def isMatch(patterns: js.Array[String], filepaths: js.Array[String]): Boolean = js.native
   def isMatch(patterns: js.Array[String], filepaths: js.Array[String], options: IOptions): Boolean = js.native
+  
   /**
     * Given a set of source file paths, returns an array of src-dest file mapping objects
     */
@@ -71,6 +74,7 @@ trait GlobuleStatic extends js.Object {
     * Given a set of source file paths, returns an array of src-dest file mapping objects
     */
   def mapping(options: MappingOptions): js.Array[OneMapping] = js.native
+  
   /**
     * Match one or more globbing patterns against one or more file paths.
     * Returns a uniqued array of all file paths that match any of the specified globbing patterns.
@@ -84,4 +88,3 @@ trait GlobuleStatic extends js.Object {
   def `match`(patterns: js.Array[String], filepaths: js.Array[String]): js.Array[String] = js.native
   def `match`(patterns: js.Array[String], filepaths: js.Array[String], options: IOptions): js.Array[String] = js.native
 }
-

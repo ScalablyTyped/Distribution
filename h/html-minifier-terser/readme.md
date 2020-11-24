@@ -10,13 +10,13 @@ Highly configurable, well-tested, JavaScript-based HTML minifier.
 | ------------------ | :-------------: |
 | Full name          | html-minifier-terser |
 | Keywords           | cli, compress, compressor, css, html, htmlmin, javascript, min, minification, minifier, minify, optimize, optimizer, pack, packer, parse, parser, terser, uglifier, uglify |
-| # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 6727444 |
+| # releases         | 10 |
+| # dependents       | 27 |
+| # downloads        | 75356991 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://danielruf.github.io/html-minifier-terser/)
+- [Homepage](https://github.com/DanielRuf/html-minifier-terser#readme)
 - [Bugs](https://github.com/DanielRuf/html-minifier-terser/issues)
 - [Repository](https://github.com/DanielRuf/html-minifier-terser)
 - [Npm](https://www.npmjs.com/package/html-minifier-terser)

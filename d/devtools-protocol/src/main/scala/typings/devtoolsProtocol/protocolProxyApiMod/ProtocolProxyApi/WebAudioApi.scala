@@ -30,22 +30,26 @@ import typings.devtoolsProtocol.mod.Protocol.WebAudio.NodesConnectedEvent
 import typings.devtoolsProtocol.mod.Protocol.WebAudio.NodesDisconnectedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebAudioApi extends js.Object {
+  
   /**
     * Disables the WebAudio domain.
     */
   def disable(): js.Promise[Unit] = js.native
+  
   /**
     * Enables the WebAudio domain and starts sending context lifetime events.
     */
   def enable(): js.Promise[Unit] = js.native
+  
   /**
     * Fetch the realtime data from the registered contexts.
     */
   def getRealtimeData(params: GetRealtimeDataRequest): js.Promise[GetRealtimeDataResponse] = js.native
+  
   /**
     * Notifies that the construction of an AudioListener has finished.
     */
@@ -127,4 +131,3 @@ trait WebAudioApi extends js.Object {
   @JSName("on")
   def on_nodesDisconnected(event: nodesDisconnected, listener: js.Function1[/* params */ NodesDisconnectedEvent, Unit]): Unit = js.native
 }
-

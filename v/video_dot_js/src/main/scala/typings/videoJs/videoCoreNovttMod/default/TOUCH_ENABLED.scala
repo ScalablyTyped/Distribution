@@ -3,7 +3,7 @@ package typings.videoJs.videoCoreNovttMod.default
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Whether or not the browser supports touch events. Included for backward
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @JSImport("video.js/dist/alt/video.core.novtt", "TOUCH_ENABLED")
 @js.native
 object TOUCH_ENABLED extends TopLevel[Boolean]
-

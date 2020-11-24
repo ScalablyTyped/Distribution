@@ -9,16 +9,15 @@ import typings.googleAuthLibrary.transportersMod.DefaultTransporter
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-auth-library/build/src/auth/authclient", JSImport.Namespace)
 @js.native
 object authclientMod extends js.Object {
+  
   @js.native
   abstract class AuthClient () extends EventEmitter {
-    var credentials: Credentials = js.native
-    var quotaProjectId: js.UndefOr[String] = js.native
-    var transporter: DefaultTransporter = js.native
+    
     /**
       * Append additional headers, e.g., x-goog-user-project, shared across the
       * classes inheriting AuthClient. This method should be used by any method
@@ -28,17 +27,24 @@ object authclientMod extends js.Object {
       * @param headers objedcdt to append additional headers to.
       */
     /* protected */ def addSharedMetadataHeaders(headers: Headers): Headers = js.native
+    
+    var credentials: Credentials = js.native
+    
     @JSName("on")
     def on_tokens(event: tokens, listener: js.Function1[/* tokens */ Credentials, Unit]): this.type = js.native
+    
+    var quotaProjectId: js.UndefOr[String] = js.native
+    
     /**
       * Provides an alternative Gaxios request implementation with auth credentials
       */
     def request[T](opts: GaxiosOptions): GaxiosPromise[T] = js.native
+    
     /**
       * Sets the auth credentials.
       */
     def setCredentials(credentials: Credentials): Unit = js.native
+    
+    var transporter: DefaultTransporter = js.native
   }
-  
 }
-

@@ -3,10 +3,20 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TreeDataProvider[T] extends js.Object {
+  
+  /**
+    * Get the children of `element` or root if no element is passed.
+    *
+    * @param element The element from which the provider gets children. Can be `undefined`.
+    * @return Children of `element` or root if no element is passed.
+    */
+  def getChildren(): ProviderResult[js.Array[T]] = js.native
+  def getChildren(element: T): ProviderResult[js.Array[T]] = js.native
+  
   /**
     * Optional method to return the parent of `element`.
     * Return `null` or `undefined` if `element` is a child of root.
@@ -17,20 +27,7 @@ trait TreeDataProvider[T] extends js.Object {
     * @return Parent of `element`.
     */
   var getParent: js.UndefOr[js.Function1[/* element */ T, ProviderResult[T]]] = js.native
-  /**
-    * An optional event to signal that an element or root has changed.
-    * This will trigger the view to update the changed element/root and its children recursively (if shown).
-    * To signal that root has changed, do not pass any argument or pass `undefined` or `null`.
-    */
-  var onDidChangeTreeData: js.UndefOr[Event[js.UndefOr[T | Null | Unit]]] = js.native
-  /**
-    * Get the children of `element` or root if no element is passed.
-    *
-    * @param element The element from which the provider gets children. Can be `undefined`.
-    * @return Children of `element` or root if no element is passed.
-    */
-  def getChildren(): ProviderResult[js.Array[T]] = js.native
-  def getChildren(element: T): ProviderResult[js.Array[T]] = js.native
+  
   /**
     * Get [TreeItem](#TreeItem) representation of the `element`
     *
@@ -38,5 +35,11 @@ trait TreeDataProvider[T] extends js.Object {
     * @return [TreeItem](#TreeItem) representation of the element
     */
   def getTreeItem(element: T): TreeItem | Thenable[TreeItem] = js.native
+  
+  /**
+    * An optional event to signal that an element or root has changed.
+    * This will trigger the view to update the changed element/root and its children recursively (if shown).
+    * To signal that root has changed, do not pass any argument or pass `undefined` or `null`.
+    */
+  var onDidChangeTreeData: js.UndefOr[Event[js.UndefOr[T | Null | Unit]]] = js.native
 }
-

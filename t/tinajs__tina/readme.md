@@ -10,9 +10,9 @@ A light and progressive Wechat-Mini Program Framework
 | ------------------ | :-------------: |
 | Full name          | @tinajs/tina |
 | Keywords           | - |
-| # releases         | 22 |
+| # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 1303 |
+| # downloads        | 1535 |
 | # stars            | 0 |
 
 ## Links

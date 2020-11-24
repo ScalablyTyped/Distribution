@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/apigatewayv2/apiMapping", "ApiMapping")
 @js.native
@@ -21,28 +21,32 @@ class ApiMapping protected () extends CustomResource {
     */
   def this(name: String, args: ApiMappingArgs) = this()
   def this(name: String, args: ApiMappingArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The API identifier.
     */
   val apiId: Output_[String] = js.native
+  
   /**
     * The [API mapping key](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-mapping-template-reference.html).
     */
   val apiMappingKey: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The domain name. Use the `aws.apigatewayv2.DomainName` resource to configure a domain name.
     */
   val domainName: Output_[String] = js.native
+  
   /**
     * The API stage. Use the `aws.apigatewayv2.Stage` resource to configure an API stage.
     */
   val stage: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/apigatewayv2/apiMapping", "ApiMapping")
 @js.native
 object ApiMapping extends js.Object {
+  
   /**
     * Get an existing ApiMapping resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -56,10 +60,10 @@ object ApiMapping extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ApiMapping = js.native
   def get(name: String, id: Input[ID], state: ApiMappingState): ApiMapping = js.native
   def get(name: String, id: Input[ID], state: ApiMappingState, opts: CustomResourceOptions): ApiMapping = js.native
+  
   /**
     * Returns true if the given object is an instance of ApiMapping.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/apiMapping.ApiMapping */ Boolean = js.native
 }
-

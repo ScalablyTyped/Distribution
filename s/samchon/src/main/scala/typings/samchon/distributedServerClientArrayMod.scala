@@ -5,11 +5,12 @@ import typings.samchon.distributedSystemMod.DistributedSystem
 import typings.sxml.mod.XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/distributed/derived/DistributedServerClientArray", JSImport.Namespace)
 @js.native
 object distributedServerClientArrayMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
@@ -34,6 +35,7 @@ object distributedServerClientArrayMod extends js.Object {
     * Default Constructor.
     */
   abstract class DistributedServerClientArray[System /* <: DistributedSystem */] () extends DistributedClientArray[System] {
+    
     /**
       * @inheritdoc
       */
@@ -43,6 +45,7 @@ object distributedServerClientArrayMod extends js.Object {
       * This method calls children elements' method {@link IExternalServer.connect} gradually.
       */
     def connect(): Unit = js.native
+    
     /**
       * Factory method creating an {@link IDistributedServer} object.
       *
@@ -51,6 +54,4 @@ object distributedServerClientArrayMod extends js.Object {
       */
     /* protected */ def createExternalServer(xml: XML): System = js.native
   }
-  
 }
-

@@ -12,11 +12,12 @@ import typings.stripe.mod.applicationFees.IApplicationFeeRefund
 import typings.stripe.mod.applicationFees.IApplicationFeeRefundCreationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.ApplicationFeeRefunds")
 @js.native
 class ApplicationFeeRefunds () extends StripeResource {
+  
   def create(): js.Promise[IApplicationFeeRefund] = js.native
   def create(data: IApplicationFeeRefundCreationOptions): js.Promise[IApplicationFeeRefund] = js.native
   /**
@@ -38,6 +39,7 @@ class ApplicationFeeRefunds () extends StripeResource {
   def create(options: HeaderOptions): js.Promise[IApplicationFeeRefund] = js.native
   def create(options: HeaderOptions, response: IResponseFn[IApplicationFeeRefund]): js.Promise[IApplicationFeeRefund] = js.native
   def create(response: IResponseFn[IApplicationFeeRefund]): js.Promise[IApplicationFeeRefund] = js.native
+  
   def list(): IListPromise[IApplicationFeeRefund] = js.native
   def list(data: IListOptions): IListPromise[IApplicationFeeRefund] = js.native
   /**
@@ -51,6 +53,7 @@ class ApplicationFeeRefunds () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[IApplicationFeeRefund] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IApplicationFeeRefund]]): IListPromise[IApplicationFeeRefund] = js.native
   def list(response: IResponseFn[IList[IApplicationFeeRefund]]): IListPromise[IApplicationFeeRefund] = js.native
+  
   def retrieve(refundId: String): js.Promise[IApplicationFeeRefund] = js.native
   /**
     * By default, you can see the 10 most recent refunds stored directly on the application fee object, but you can also retrieve details
@@ -68,6 +71,7 @@ class ApplicationFeeRefunds () extends StripeResource {
   def retrieve(refundId: String, options: IDataOptions): js.Promise[IApplicationFeeRefund] = js.native
   def retrieve(refundId: String, options: IDataOptions, response: IResponseFn[IApplicationFeeRefund]): js.Promise[IApplicationFeeRefund] = js.native
   def retrieve(refundId: String, response: IResponseFn[IApplicationFeeRefund]): js.Promise[IApplicationFeeRefund] = js.native
+  
   def update(refundId: String, data: Metadata): js.Promise[IApplicationFeeRefund] = js.native
   /**
     * Updates the specified application fee refund by setting the values of the parameters passed. Any parameters not provided will be left
@@ -84,4 +88,3 @@ class ApplicationFeeRefunds () extends StripeResource {
   ): js.Promise[IApplicationFeeRefund] = js.native
   def update(refundId: String, data: Metadata, response: IResponseFn[IApplicationFeeRefund]): js.Promise[IApplicationFeeRefund] = js.native
 }
-

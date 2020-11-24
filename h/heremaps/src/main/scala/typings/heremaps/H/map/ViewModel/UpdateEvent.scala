@@ -3,7 +3,7 @@ package typings.heremaps.H.map.ViewModel
 import typings.heremaps.H.util.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Update event is fired whenever view model data is changed. It contains property which hold currently requested data
@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait UpdateEvent extends Event
-
 object UpdateEvent {
+  
   @scala.inline
   def apply(
     currentTarget: js.Any,
@@ -31,4 +31,3 @@ object UpdateEvent {
     __obj.asInstanceOf[UpdateEvent]
   }
 }
-

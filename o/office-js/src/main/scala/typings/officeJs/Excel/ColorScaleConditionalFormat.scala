@@ -8,7 +8,7 @@ import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -18,9 +18,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ColorScaleConditionalFormat extends ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ColorScaleConditionalFormat: RequestContext = js.native
+  
   /**
     *
     * The criteria of the color scale. Midpoint is optional when using a two point color scale.
@@ -28,13 +30,7 @@ trait ColorScaleConditionalFormat extends ClientObject {
     * [Api set: ExcelApi 1.6]
     */
   var criteria: ConditionalColorScaleCriteria = js.native
-  /**
-    *
-    * If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum, maximum).
-    *
-    * [Api set: ExcelApi 1.6]
-    */
-  val threeColorScale: Boolean = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -45,6 +41,7 @@ trait ColorScaleConditionalFormat extends ClientObject {
   def load(propertyNamesAndPaths: Expand): ColorScaleConditionalFormat = js.native
   def load(propertyNames: String): ColorScaleConditionalFormat = js.native
   def load(propertyNames: js.Array[String]): ColorScaleConditionalFormat = js.native
+  
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ColorScaleConditionalFormat): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -60,10 +57,18 @@ trait ColorScaleConditionalFormat extends ClientObject {
     */
   def set(properties: ColorScaleConditionalFormatUpdateData): Unit = js.native
   def set(properties: ColorScaleConditionalFormatUpdateData, options: UpdateOptions): Unit = js.native
+  
+  /**
+    *
+    * If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum, maximum).
+    *
+    * [Api set: ExcelApi 1.6]
+    */
+  val threeColorScale: Boolean = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.ColorScaleConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ColorScaleConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): ColorScaleConditionalFormatData = js.native
 }
-

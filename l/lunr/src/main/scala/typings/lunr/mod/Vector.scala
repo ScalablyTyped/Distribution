@@ -2,7 +2,7 @@ package typings.lunr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A vector is used to construct the vector space of documents and queries. These
@@ -24,12 +24,14 @@ class Vector protected () extends js.Object {
     * @param [elements] - The flat list of element index and element value pairs.
     */
   def this(elements: js.Array[Double]) = this()
+  
   /**
     * Calculates the dot product of this vector and another vector.
     *
     * @param otherVector - The vector to compute the dot product with.
     */
   def dot(otherVector: Vector): Double = js.native
+  
   /**
     * Inserts an element at an index within the vector.
     *
@@ -40,11 +42,13 @@ class Vector protected () extends js.Object {
     * @param val - The value to be inserted into the vector.
     */
   def insert(insertIdx: Double, `val`: Double): Unit = js.native
+  
   /**
     * Calculates the magnitude of this vector.
     *
     */
   def magnitude(): Double = js.native
+  
   /**
     * Calculates the position within the vector to insert a given index.
     *
@@ -55,6 +59,7 @@ class Vector protected () extends js.Object {
     * @param insertIdx - The index at which the element should be inserted.
     */
   def positionForIndex(index: Double): Double = js.native
+  
   /**
     * Calculates the cosine similarity between this vector and another
     * vector.
@@ -63,16 +68,19 @@ class Vector protected () extends js.Object {
     * similarity with.
     */
   def similarity(otherVector: Vector): Double = js.native
+  
   /**
     * Converts the vector to an array of the elements within the vector.
     *
     */
   def toArray(): js.Array[Double] = js.native
+  
   /**
     * A JSON serializable representation of the vector.
     *
     */
   def toJSON(): js.Array[Double] = js.native
+  
   /**
     * Inserts or updates an existing index within the vector.
     *
@@ -87,4 +95,3 @@ class Vector protected () extends js.Object {
     fn: js.Function2[/* existingVal */ Double, /* val */ Double, Double]
   ): Unit = js.native
 }
-

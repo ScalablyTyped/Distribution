@@ -3,11 +3,12 @@ package typings.onHeaders
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("on-headers", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * This will add the listener to fire when headers are emitted for res.
     * The listener is passed the response object as its context (this).
@@ -23,4 +24,3 @@ object mod extends js.Object {
     */
   def apply(res: ServerResponse, listener: js.ThisFunction0[/* this */ ServerResponse, Unit]): Unit = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.composeFunction
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("compose-function", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   // Minimal typing for more than 4 parameters
   def apply[Result](f1: js.Function1[/* a */ js.Any, Result], functions: js.Function*): js.Function1[/* a */ js.Any, Result] = js.native
   def apply[A, B, C](f1: js.Function1[/* b */ B, C], f2: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, C] = js.native
@@ -18,4 +19,3 @@ object mod extends js.Object {
     f4: js.Function1[/* a */ A, B]
   ): js.Function1[/* a */ A, E] = js.native
 }
-

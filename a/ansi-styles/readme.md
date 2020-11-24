@@ -1,7 +1,7 @@
 
 # Scala.js typings for ansi-styles
 
-Typings are for version 3.2.1
+Typings are for version 4.3.0
 
 ## Library description:
 ANSI escape codes for styling strings in the terminal
@@ -10,9 +10,9 @@ ANSI escape codes for styling strings in the terminal
 | ------------------ | :-------------: |
 | Full name          | ansi-styles |
 | Keywords           | ansi, styles, color, colour, colors, terminal, console, cli, string, tty, escape, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
-| # releases         | 6 |
-| # dependents       | 362 |
-| # downloads        | 1047647105 |
+| # releases         | 5 |
+| # dependents       | 452 |
+| # downloads        | 1619475668 |
 | # stars            | 11 |
 
 ## Links
@@ -24,7 +24,7 @@ ANSI escape codes for styling strings in the terminal
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

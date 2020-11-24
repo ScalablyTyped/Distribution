@@ -3,7 +3,7 @@ package typings.videoJs.videoCoreMod.default
 import typings.videoJs.mod.videojs.MenuOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core", "Menu")
 @js.native
@@ -22,4 +22,3 @@ class MenuCls protected ()
   def this(player: typings.videoJs.mod.videojs.Player) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: MenuOptions) = this()
 }
-

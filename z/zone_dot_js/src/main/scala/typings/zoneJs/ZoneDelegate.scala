@@ -2,7 +2,7 @@ package typings.zoneJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *  A delegate when intercepting zone operations.
@@ -37,12 +37,17 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ZoneDelegate extends js.Object {
-  var zone: Zone = js.native
+  
   def cancelTask(targetZone: Zone, task: Task): js.Any = js.native
+  
   def fork(targetZone: Zone, zoneSpec: ZoneSpec): Zone = js.native
+  
   def handleError(targetZone: Zone, error: js.Any): Boolean = js.native
+  
   def hasTask(targetZone: Zone, isEmpty: HasTaskState): Unit = js.native
+  
   def intercept(targetZone: Zone, callback: js.Function, source: String): js.Function = js.native
+  
   def invoke(targetZone: Zone, callback: js.Function): js.Any = js.native
   def invoke(
     targetZone: Zone,
@@ -74,10 +79,13 @@ trait ZoneDelegate extends js.Object {
   ): js.Any = js.native
   def invoke(targetZone: Zone, callback: js.Function, applyThis: js.Any, applyArgs: js.Array[_]): js.Any = js.native
   def invoke(targetZone: Zone, callback: js.Function, applyThis: js.Any, applyArgs: js.Array[_], source: String): js.Any = js.native
+  
   def invokeTask(targetZone: Zone, task: Task): js.Any = js.native
   def invokeTask(targetZone: Zone, task: Task, applyThis: js.UndefOr[scala.Nothing], applyArgs: js.Array[_]): js.Any = js.native
   def invokeTask(targetZone: Zone, task: Task, applyThis: js.Any): js.Any = js.native
   def invokeTask(targetZone: Zone, task: Task, applyThis: js.Any, applyArgs: js.Array[_]): js.Any = js.native
+  
   def scheduleTask(targetZone: Zone, task: Task): Task = js.native
+  
+  var zone: Zone = js.native
 }
-

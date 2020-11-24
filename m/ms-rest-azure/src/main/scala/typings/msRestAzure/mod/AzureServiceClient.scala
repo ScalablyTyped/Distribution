@@ -7,7 +7,7 @@ import typings.msRest.mod.ServiceClient
 import typings.msRest.mod.ServiceClientCredentials
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest-azure", "AzureServiceClient")
 @js.native
@@ -34,6 +34,7 @@ class AzureServiceClient protected () extends ServiceClient {
     * AutomaticRPRegistration. Default value is 30 seconds.
     */
   def this(credentials: ServiceClientCredentials, options: AzureServiceClientOptions) = this()
+  
   def getLongRunningOperationResult[TResult](resultOfInitialRequest: HttpOperationResponse[TResult]): js.Promise[TResult] = js.native
   def getLongRunningOperationResult[TResult](resultOfInitialRequest: HttpOperationResponse[TResult], callback: ServiceCallback[TResult]): Unit = js.native
   def getLongRunningOperationResult[TResult](resultOfInitialRequest: HttpOperationResponse[TResult], options: RequestOptions): js.Promise[TResult] = js.native
@@ -42,11 +43,12 @@ class AzureServiceClient protected () extends ServiceClient {
     options: RequestOptions,
     callback: ServiceCallback[TResult]
   ): Unit = js.native
+  
   def sendLongRunningRequest[TResult](options: LongRunningPathTemplateBasedRequestPrepareOptions): js.Promise[TResult] = js.native
   def sendLongRunningRequest[TResult](options: LongRunningPathTemplateBasedRequestPrepareOptions, callback: ServiceCallback[TResult]): Unit = js.native
   def sendLongRunningRequest[TResult](options: LongRunningUrlBasedRequestPrepareOptions): js.Promise[TResult] = js.native
   def sendLongRunningRequest[TResult](options: LongRunningUrlBasedRequestPrepareOptions, callback: ServiceCallback[TResult]): Unit = js.native
+  
   def sendLongRunningRequestWithHttpOperationResponse[TResult](options: LongRunningPathTemplateBasedRequestPrepareOptions): js.Promise[HttpOperationResponse[TResult]] = js.native
   def sendLongRunningRequestWithHttpOperationResponse[TResult](options: LongRunningUrlBasedRequestPrepareOptions): js.Promise[HttpOperationResponse[TResult]] = js.native
 }
-

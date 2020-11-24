@@ -6,14 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/mirror/v1", "mirror_v1.Resource$Timeline")
 @js.native
 class ResourceTimeline protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var attachments: ResourceTimelineAttachments = js.native
+  
   var context: APIRequestContext = js.native
+  
   /**
     * mirror.timeline.delete
     * @desc Deletes a timeline item.
@@ -38,6 +41,7 @@ class ResourceTimeline protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceTimelineDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTimelineDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * mirror.timeline.get
     * @desc Gets a single timeline item by ID.
@@ -66,6 +70,7 @@ class ResourceTimeline protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTimelineItem]
   ): Unit = js.native
+  
   /**
     * mirror.timeline.insert
     * @desc Inserts a new item into the timeline.
@@ -97,6 +102,7 @@ class ResourceTimeline protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTimelineItem]
   ): Unit = js.native
+  
   /**
     * mirror.timeline.list
     * @desc Retrieves a list of timeline items for the authenticated user.
@@ -131,6 +137,7 @@ class ResourceTimeline protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTimelineListResponse]
   ): Unit = js.native
+  
   /**
     * mirror.timeline.patch
     * @desc Updates a timeline item in place. This method supports patch
@@ -161,6 +168,7 @@ class ResourceTimeline protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTimelineItem]
   ): Unit = js.native
+  
   /**
     * mirror.timeline.update
     * @desc Updates a timeline item in place.
@@ -194,4 +202,3 @@ class ResourceTimeline protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTimelineItem]
   ): Unit = js.native
 }
-

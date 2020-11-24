@@ -5,7 +5,7 @@ import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/cloud", "Table")
 @js.native
@@ -29,4 +29,3 @@ class TableCls protected ()
     opts: ResourceOptions
   ) = this()
 }
-

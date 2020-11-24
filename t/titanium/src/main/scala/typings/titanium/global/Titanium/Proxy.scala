@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base for all Titanium objects.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class Proxy ()
   extends typings.titanium.Titanium.Proxy
-

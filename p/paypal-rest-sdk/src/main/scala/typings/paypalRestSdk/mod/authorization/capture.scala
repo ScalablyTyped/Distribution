@@ -5,11 +5,12 @@ import typings.paypalRestSdk.mod.CallbackFunction
 import typings.paypalRestSdk.mod.CaptureResource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paypal-rest-sdk", "authorization.capture")
 @js.native
 object capture extends js.Object {
+  
   def apply(id: String, data: RequestOptions): Unit = js.native
   def apply(
     id: String,
@@ -64,4 +65,3 @@ object capture extends js.Object {
     cb: CallbackFunction[CaptureResource]
   ): Unit = js.native
 }
-

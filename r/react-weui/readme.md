@@ -10,9 +10,9 @@ weui for react
 | ------------------ | :-------------: |
 | Full name          | react-weui |
 | Keywords           | mobile, ui, framework, weui, react, wechat |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 10 |
-| # downloads        | 15362 |
+| # downloads        | 15539 |
 | # stars            | 4 |
 
 ## Links

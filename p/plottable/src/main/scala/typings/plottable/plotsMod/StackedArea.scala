@@ -2,7 +2,7 @@ package typings.plottable.plotsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/plots", "StackedArea")
 @js.native
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
   */
 class StackedArea[X] ()
   extends typings.plottable.stackedAreaPlotMod.StackedArea[X]
-
 /* static members */
 @JSImport("plottable/build/src/plots", "StackedArea")
 @js.native
 object StackedArea extends js.Object {
+  
   /**
     * Given an array of Datasets and the accessor function for the key, computes the
     * set reunion (no duplicates) of the domain of each Dataset. The keys are stringified
@@ -27,4 +27,3 @@ object StackedArea extends js.Object {
     */
   /* private */ def _domainKeys(datasets: js.Any, keyAccessor: js.Any): js.Any = js.native
 }
-

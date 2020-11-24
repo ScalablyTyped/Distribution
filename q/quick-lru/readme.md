@@ -4,15 +4,15 @@
 Typings are for version 5.1.1
 
 ## Library description:
-Simple "Least Recently Used" (LRU) cache
+Simple “Least Recently Used” (LRU) cache
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | quick-lru |
 | Keywords           | lru, quick, cache, caching, least, recently, used, fast, map, hash, buffer |
-| # releases         | 5 |
-| # dependents       | 63 |
-| # downloads        | 95029587 |
+| # releases         | 8 |
+| # dependents       | 107 |
+| # downloads        | 189804461 |
 | # stars            | 0 |
 
 ## Links

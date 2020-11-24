@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1beta2", "storage_v1beta2.Resource$Bucketaccesscontrols")
 @js.native
 class ResourceBucketaccesscontrols protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * storage.bucketAccessControls.delete
     * @desc Permanently deletes the ACL entry for the specified entity on the
@@ -43,6 +45,7 @@ class ResourceBucketaccesscontrols protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * storage.bucketAccessControls.get
     * @desc Returns the ACL entry for the specified entity on the specified
@@ -76,6 +79,7 @@ class ResourceBucketaccesscontrols protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBucketAccessControl]
   ): Unit = js.native
+  
   /**
     * storage.bucketAccessControls.insert
     * @desc Creates a new ACL entry on the specified bucket.
@@ -108,6 +112,7 @@ class ResourceBucketaccesscontrols protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBucketAccessControl]
   ): Unit = js.native
+  
   /**
     * storage.bucketAccessControls.list
     * @desc Retrieves ACL entries on the specified bucket.
@@ -139,6 +144,7 @@ class ResourceBucketaccesscontrols protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBucketAccessControls]
   ): Unit = js.native
+  
   /**
     * storage.bucketAccessControls.patch
     * @desc Updates an ACL entry on the specified bucket. This method supports
@@ -173,6 +179,7 @@ class ResourceBucketaccesscontrols protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBucketAccessControl]
   ): Unit = js.native
+  
   /**
     * storage.bucketAccessControls.update
     * @desc Updates an ACL entry on the specified bucket.
@@ -207,4 +214,3 @@ class ResourceBucketaccesscontrols protected () extends js.Object {
     callback: BodyResponseCallback[SchemaBucketAccessControl]
   ): Unit = js.native
 }
-

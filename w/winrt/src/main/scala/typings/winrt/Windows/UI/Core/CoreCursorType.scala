@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.Core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CoreCursorType extends js.Object
-
 @JSGlobal("Windows.UI.Core.CoreCursorType")
 @js.native
 object CoreCursorType extends js.Object {
+  
   @js.native
   sealed trait arrow extends CoreCursorType
   
@@ -51,6 +51,4 @@ object CoreCursorType extends js.Object {
   
   @js.native
   sealed trait wait extends CoreCursorType
-  
 }
-

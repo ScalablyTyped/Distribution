@@ -2,9 +2,10 @@ package typings.xrm.Xrm
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object ProcessFlow {
+  
   /**
     * Called when method to get active processes is complete
     * @param status The result of the get active processes operation.
@@ -17,6 +18,7 @@ package object ProcessFlow {
     * * StatusCodeName
     */
   type GetProcessInstancesDelegate = js.Function1[/* object */ typings.xrm.Xrm.ProcessFlow.ProcessDictionary, scala.Unit]
+  
   /**
     * Called when process change methods have completed.
     * @param status The result of the process change operation.
@@ -28,15 +30,18 @@ package object ProcessFlow {
     * * unreachable    (The stage exists on a different path.)
     */
   type ProcessCallbackDelegate = js.Function1[/* status */ java.lang.String, scala.Unit]
+  
   /**
     * Represents a key-value pair, where the key is the Process Flow's ID, and the value is the name thereof.
     */
   type ProcessDictionary = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  
   /**
     * Called when process set status method has completed.
     * @param status The new status of the process instance: active, aborted, or finished
     */
   type ProcessSetStatusDelegate = js.Function1[/* status */ typings.xrm.Xrm.ProcessFlow.ProcessStatus, scala.Unit]
+  
   /**
     * Called when method to set active process is complete
     * @param status The result of the set active process operation.

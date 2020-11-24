@@ -2,7 +2,7 @@ package typings.asana.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asana", "Dispatcher")
 @js.native
@@ -26,4 +26,3 @@ import scala.scalajs.js.annotation._
 class DispatcherCls () extends Dispatcher {
   def this(options: DispatcherOptions) = this()
 }
-

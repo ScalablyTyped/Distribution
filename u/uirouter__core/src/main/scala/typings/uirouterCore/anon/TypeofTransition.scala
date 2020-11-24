@@ -7,7 +7,7 @@ import typings.uirouterCore.targetStateMod.TargetState
 import typings.uirouterCore.transitionTransitionMod.Transition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofTransition
@@ -17,4 +17,3 @@ trait TypeofTransition
       /* router */ UIRouter, 
       Transition
     ]
-

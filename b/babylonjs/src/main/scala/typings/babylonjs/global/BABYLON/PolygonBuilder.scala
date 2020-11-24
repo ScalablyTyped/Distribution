@@ -1,20 +1,20 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
-import typings.babylonjs.anon.Shape
+import typings.babylonjs.anon.Wrap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PolygonBuilder")
 @js.native
 class PolygonBuilder ()
   extends typings.babylonjs.BABYLON.PolygonBuilder
-
 /* static members */
 @JSGlobal("BABYLON.PolygonBuilder")
 @js.native
 object PolygonBuilder extends js.Object {
+  
   /**
     * Creates a polygon mesh
     * The polygon's shape will depend on the input parameters and is constructed parallel to a ground mesh
@@ -29,14 +29,15 @@ object PolygonBuilder extends js.Object {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns the polygon mesh
     */
-  def CreatePolygon(name: String, options: Shape): typings.babylonjs.BABYLON.Mesh = js.native
-  def CreatePolygon(name: String, options: Shape, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  def CreatePolygon(name: String, options: Wrap): typings.babylonjs.BABYLON.Mesh = js.native
   def CreatePolygon(
     name: String,
-    options: Shape,
-    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    options: Wrap,
+    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
     earcutInjection: js.Any
   ): typings.babylonjs.BABYLON.Mesh = js.native
+  def CreatePolygon(name: String, options: Wrap, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  
   /**
     * Creates an extruded polygon mesh, with depth in the Y direction.
     * * You can set different colors and different images to the top, bottom and extruded side by using the parameters `faceColors` (an array of 3 Color3 elements) and `faceUV` (an array of 3 Vector4 elements)
@@ -47,13 +48,12 @@ object PolygonBuilder extends js.Object {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns the polygon mesh
     */
-  def ExtrudePolygon(name: String, options: Shape): typings.babylonjs.BABYLON.Mesh = js.native
-  def ExtrudePolygon(name: String, options: Shape, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
+  def ExtrudePolygon(name: String, options: Wrap): typings.babylonjs.BABYLON.Mesh = js.native
   def ExtrudePolygon(
     name: String,
-    options: Shape,
-    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    options: Wrap,
+    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
     earcutInjection: js.Any
   ): typings.babylonjs.BABYLON.Mesh = js.native
+  def ExtrudePolygon(name: String, options: Wrap, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
 }
-

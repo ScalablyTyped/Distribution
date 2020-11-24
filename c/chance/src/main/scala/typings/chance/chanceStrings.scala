@@ -5,9 +5,121 @@ import typings.chance.Chance.LastNameNationalities
 import typings.chance.Chance._FalsyType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chanceStrings {
+  
+  @scala.inline
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  
+  @scala.inline
+  def Colon: Colon = ":".asInstanceOf[Colon]
+  
+  @scala.inline
+  def Dot: Dot = ".".asInstanceOf[Dot]
+  
+  @scala.inline
+  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
+  
+  @scala.inline
+  def Friday: Friday = "Friday".asInstanceOf[Friday]
+  
+  @scala.inline
+  def Monday: Monday = "Monday".asInstanceOf[Monday]
+  
+  @scala.inline
+  def Questionmark: Questionmark = "?".asInstanceOf[Questionmark]
+  
+  @scala.inline
+  def Saturday: Saturday = "Saturday".asInstanceOf[Saturday]
+  
+  @scala.inline
+  def Semicolon: Semicolon = ";".asInstanceOf[Semicolon]
+  
+  @scala.inline
+  def Sunday: Sunday = "Sunday".asInstanceOf[Sunday]
+  
+  @scala.inline
+  def Thursday: Thursday = "Thursday".asInstanceOf[Thursday]
+  
+  @scala.inline
+  def Tuesday: Tuesday = "Tuesday".asInstanceOf[Tuesday]
+  
+  @scala.inline
+  def Wednesday: Wednesday = "Wednesday".asInstanceOf[Wednesday]
+  
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def armed_forces: armed_forces = "armed_forces".asInstanceOf[armed_forces]
+  
+  @scala.inline
+  def cc_types: cc_types = "cc_types".asInstanceOf[cc_types]
+  
+  @scala.inline
+  def currency_types: currency_types = "currency_types".asInstanceOf[currency_types]
+  
+  @scala.inline
+  def de: de = "de".asInstanceOf[de]
+  
+  @scala.inline
+  def en: en = "en".asInstanceOf[en]
+  
+  @scala.inline
+  def es: es = "es".asInstanceOf[es]
+  
+  @scala.inline
+  def female: female = "female".asInstanceOf[female]
+  
+  @scala.inline
+  def firstNames: firstNames = "firstNames".asInstanceOf[firstNames]
+  
+  @scala.inline
+  def fr: fr = "fr".asInstanceOf[fr]
+  
+  @scala.inline
+  def it: it = "it".asInstanceOf[it]
+  
+  @scala.inline
+  def jp: jp = "jp".asInstanceOf[jp]
+  
+  @scala.inline
+  def lastNames: lastNames = "lastNames".asInstanceOf[lastNames]
+  
+  @scala.inline
+  def lower: lower = "lower".asInstanceOf[lower]
+  
+  @scala.inline
+  def male: male = "male".asInstanceOf[male]
+  
+  @scala.inline
+  def months: months = "months".asInstanceOf[months]
+  
+  @scala.inline
+  def nl: nl = "nl".asInstanceOf[nl]
+  
+  @scala.inline
+  def provinces: provinces = "provinces".asInstanceOf[provinces]
+  
+  @scala.inline
+  def street_suffixes: street_suffixes = "street_suffixes".asInstanceOf[street_suffixes]
+  
+  @scala.inline
+  def territories: territories = "territories".asInstanceOf[territories]
+  
+  @scala.inline
+  def uk: uk = "uk".asInstanceOf[uk]
+  
+  @scala.inline
+  def upper: upper = "upper".asInstanceOf[upper]
+  
+  @scala.inline
+  def us_states_and_dc: us_states_and_dc = "us_states_and_dc".asInstanceOf[us_states_and_dc]
+  
   @js.native
   sealed trait Asterisk extends LastNameNationalities
   
@@ -122,80 +234,4 @@ object chanceStrings {
   
   @js.native
   sealed trait us_states_and_dc extends js.Object
-  
-  @scala.inline
-  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
-  @scala.inline
-  def Colon: Colon = ":".asInstanceOf[Colon]
-  @scala.inline
-  def Dot: Dot = ".".asInstanceOf[Dot]
-  @scala.inline
-  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
-  @scala.inline
-  def Friday: Friday = "Friday".asInstanceOf[Friday]
-  @scala.inline
-  def Monday: Monday = "Monday".asInstanceOf[Monday]
-  @scala.inline
-  def Questionmark: Questionmark = "?".asInstanceOf[Questionmark]
-  @scala.inline
-  def Saturday: Saturday = "Saturday".asInstanceOf[Saturday]
-  @scala.inline
-  def Semicolon: Semicolon = ";".asInstanceOf[Semicolon]
-  @scala.inline
-  def Sunday: Sunday = "Sunday".asInstanceOf[Sunday]
-  @scala.inline
-  def Thursday: Thursday = "Thursday".asInstanceOf[Thursday]
-  @scala.inline
-  def Tuesday: Tuesday = "Tuesday".asInstanceOf[Tuesday]
-  @scala.inline
-  def Wednesday: Wednesday = "Wednesday".asInstanceOf[Wednesday]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def armed_forces: armed_forces = "armed_forces".asInstanceOf[armed_forces]
-  @scala.inline
-  def cc_types: cc_types = "cc_types".asInstanceOf[cc_types]
-  @scala.inline
-  def currency_types: currency_types = "currency_types".asInstanceOf[currency_types]
-  @scala.inline
-  def de: de = "de".asInstanceOf[de]
-  @scala.inline
-  def en: en = "en".asInstanceOf[en]
-  @scala.inline
-  def es: es = "es".asInstanceOf[es]
-  @scala.inline
-  def female: female = "female".asInstanceOf[female]
-  @scala.inline
-  def firstNames: firstNames = "firstNames".asInstanceOf[firstNames]
-  @scala.inline
-  def fr: fr = "fr".asInstanceOf[fr]
-  @scala.inline
-  def it: it = "it".asInstanceOf[it]
-  @scala.inline
-  def jp: jp = "jp".asInstanceOf[jp]
-  @scala.inline
-  def lastNames: lastNames = "lastNames".asInstanceOf[lastNames]
-  @scala.inline
-  def lower: lower = "lower".asInstanceOf[lower]
-  @scala.inline
-  def male: male = "male".asInstanceOf[male]
-  @scala.inline
-  def months: months = "months".asInstanceOf[months]
-  @scala.inline
-  def nl: nl = "nl".asInstanceOf[nl]
-  @scala.inline
-  def provinces: provinces = "provinces".asInstanceOf[provinces]
-  @scala.inline
-  def street_suffixes: street_suffixes = "street_suffixes".asInstanceOf[street_suffixes]
-  @scala.inline
-  def territories: territories = "territories".asInstanceOf[territories]
-  @scala.inline
-  def uk: uk = "uk".asInstanceOf[uk]
-  @scala.inline
-  def upper: upper = "upper".asInstanceOf[upper]
-  @scala.inline
-  def us_states_and_dc: us_states_and_dc = "us_states_and_dc".asInstanceOf[us_states_and_dc]
 }
-

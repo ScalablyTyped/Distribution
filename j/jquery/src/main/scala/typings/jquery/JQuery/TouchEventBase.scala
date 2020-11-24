@@ -5,42 +5,54 @@ import typings.std.TouchList
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // region TouchEvent
 // #region TouchEvent
 @js.native
 trait TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  
   // MouseEvent, KeyboardEvent, TouchEvent
   @JSName("altKey")
   var altKey_TouchEventBase: Boolean = js.native
+  
   // MouseEvent
   @JSName("button")
   var button_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("buttons")
   var buttons_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   // TouchEvent
   @JSName("changedTouches")
   var changedTouches_TouchEventBase: TouchList = js.native
+  
   /** @deprecated */
   @JSName("charCode")
   var charCode_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   // KeyboardEvent
   /** @deprecated */
   @JSName("char")
   var char_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("clientX")
   var clientX_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("clientY")
   var clientY_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("ctrlKey")
   var ctrlKey_TouchEventBase: Boolean = js.native
+  
   /** @deprecated */
   @JSName("keyCode")
   var keyCode_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("key")
   var key_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * Indicates whether the META key was pressed when the event fired.
     * @see \`{@link https://api.jquery.com/event.metaKey/ }\`
@@ -79,12 +91,16 @@ trait TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
     */
   @JSName("metaKey")
   var metaKey_TouchEventBase: Boolean = js.native
+  
   @JSName("offsetX")
   var offsetX_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("offsetY")
   var offsetY_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("originalEvent")
   var originalEvent_TouchEventBase: js.UndefOr[TouchEvent] = js.native
+  
   /**
     * The mouse position relative to the left edge of the document.
     * @see \`{@link https://api.jquery.com/event.pageX/ }\`
@@ -122,6 +138,7 @@ trait TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
     */
   @JSName("pageX")
   var pageX_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * The mouse position relative to the top edge of the document.
     * @see \`{@link https://api.jquery.com/event.pageY/ }\`
@@ -159,11 +176,14 @@ trait TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
     */
   @JSName("pageY")
   var pageY_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   // PointerEvent
   @JSName("pointerId")
   var pointerId_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("pointerType")
   var pointerType_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * The other DOM element involved in the event, if any.
     * @see \`{@link https://api.jquery.com/event.relatedTarget/ }\`
@@ -176,19 +196,26 @@ trait TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   ```
     */
   var relatedTarget: js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("screenX")
   var screenX_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("screenY")
   var screenY_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("shiftKey")
   var shiftKey_TouchEventBase: Boolean = js.native
+  
   @JSName("targetTouches")
   var targetTouches_TouchEventBase: TouchList = js.native
+  
   /** @deprecated */
   @JSName("toElement")
   var toElement_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("touches")
   var touches_TouchEventBase: TouchList = js.native
+  
   // MouseEvent, KeyboardEvent
   /**
     * For key or mouse events, this property indicates the specific key or button that was pressed.
@@ -245,8 +272,8 @@ trait TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   @JSName("which")
   var which_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
 }
-
 object TouchEventBase {
+  
   @scala.inline
   def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
     altKey: Boolean,
@@ -278,36 +305,47 @@ object TouchEventBase {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
   }
+  
   @scala.inline
   implicit class TouchEventBaseOps[Self <: TouchEventBase[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAltKey(value: Boolean): Self = this.set("altKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setChangedTouches(value: TouchList): Self = this.set("changedTouches", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCtrlKey(value: Boolean): Self = this.set("ctrlKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMetaKey(value: Boolean): Self = this.set("metaKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setShiftKey(value: Boolean): Self = this.set("shiftKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTargetTouches(value: TouchList): Self = this.set("targetTouches", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTouches(value: TouchList): Self = this.set("touches", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOriginalEvent(value: TouchEvent): Self = this.set("originalEvent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOriginalEvent: Self = this.set("originalEvent", js.undefined)
   }
-  
 }
-

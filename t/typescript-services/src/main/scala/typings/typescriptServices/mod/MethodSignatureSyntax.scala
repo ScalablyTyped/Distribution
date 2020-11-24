@@ -3,7 +3,7 @@ package typings.typescriptServices.mod
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "MethodSignatureSyntax")
 @js.native
@@ -16,15 +16,15 @@ class MethodSignatureSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("typescript-services", "MethodSignatureSyntax")
 @js.native
 object MethodSignatureSyntax extends js.Object {
+  
   def create(
     propertyName: ISyntaxToken,
     callSignature: typings.typescriptServices.TypeScript.CallSignatureSyntax
   ): typings.typescriptServices.TypeScript.MethodSignatureSyntax = js.native
+  
   def create1(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.MethodSignatureSyntax = js.native
 }
-

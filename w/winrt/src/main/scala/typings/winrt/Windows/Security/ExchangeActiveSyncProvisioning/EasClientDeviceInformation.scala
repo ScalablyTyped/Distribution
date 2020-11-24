@@ -2,12 +2,12 @@ package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EasClientDeviceInformation extends IEasClientDeviceInformation
-
 object EasClientDeviceInformation {
+  
   @scala.inline
   def apply(
     friendlyName: String,
@@ -21,4 +21,3 @@ object EasClientDeviceInformation {
     __obj.asInstanceOf[EasClientDeviceInformation]
   }
 }
-

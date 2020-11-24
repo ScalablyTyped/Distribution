@@ -2,18 +2,20 @@ package typings.ngkookies.angular.kookies
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IKookiesService extends js.Object {
+  
   def get(): js.Any = js.native
   def get(name: String): js.Any = js.native
   def get(name: String, converter: js.Any): js.Any = js.native
   @JSName("get")
   def get_T_T[T](name: String, converter: js.Any): T = js.native
+  
   def remove(name: String): Boolean = js.native
   def remove(name: String, options: Options): Boolean = js.native
+  
   def set(name: String, value: String): Unit = js.native
   def set(name: String, value: String, optopns: Options): Unit = js.native
 }
-

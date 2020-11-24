@@ -8,7 +8,7 @@ import typings.typedoc.typedocStrings.number
 import typings.typedoc.typedocStrings.string
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.typedoc.tsInternalMod.CommandLineOptionOfCustomType
@@ -17,26 +17,29 @@ import scala.scalajs.js.annotation._
   - typings.typedoc.tsInternalMod.CommandLineOptionOfListType
 */
 trait CommandLineOption extends js.Object
-
 object CommandLineOption {
+  
   @scala.inline
   def CommandLineOptionOfCustomType(name: String, `type`: Map[Double | String, _]): CommandLineOption = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandLineOption]
   }
+  
   @scala.inline
   def CommandLineOptionOfPrimitiveType(name: String, `type`: string | number | boolean): CommandLineOption = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandLineOption]
   }
+  
   @scala.inline
   def TsConfigOnlyOption(name: String, `type`: `object`): CommandLineOption = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandLineOption]
   }
+  
   @scala.inline
   def CommandLineOptionOfListType(
     element: CommandLineOptionOfCustomType | CommandLineOptionOfPrimitiveType,
@@ -48,4 +51,3 @@ object CommandLineOption {
     __obj.asInstanceOf[CommandLineOption]
   }
 }
-

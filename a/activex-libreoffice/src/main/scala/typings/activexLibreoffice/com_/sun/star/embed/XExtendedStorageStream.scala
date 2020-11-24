@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface allows access to an extended storage stream that might be transacted. */
 @js.native
@@ -25,8 +25,8 @@ trait XExtendedStorageStream
      with XPropertySet
      with XTransactedObject
      with XTransactionBroadcaster
-
 object XExtendedStorageStream {
+  
   @scala.inline
   def apply(
     InputStream: XInputStream,
@@ -63,4 +63,3 @@ object XExtendedStorageStream {
     __obj.asInstanceOf[XExtendedStorageStream]
   }
 }
-

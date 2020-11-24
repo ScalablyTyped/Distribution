@@ -2,14 +2,14 @@ package typings.kiiCloudSdk.KiiCloud
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait KiiSocialNetworkName extends js.Object
-
 @JSGlobal("KiiCloud.KiiSocialNetworkName")
 @js.native
 object KiiSocialNetworkName extends js.Object {
+  
   @js.native
   sealed trait FACEBOOK extends KiiSocialNetworkName
   
@@ -24,6 +24,4 @@ object KiiSocialNetworkName extends js.Object {
   
   @js.native
   sealed trait TWITTER extends KiiSocialNetworkName
-  
 }
-

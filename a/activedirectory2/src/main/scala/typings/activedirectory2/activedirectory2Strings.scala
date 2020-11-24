@@ -5,9 +5,91 @@ import typings.activedirectory2.mod.MembershipType
 import typings.activedirectory2.mod.UserAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activedirectory2Strings {
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def base: base = "base".asInstanceOf[base]
+  
+  @scala.inline
+  def cn: cn = "cn".asInstanceOf[cn]
+  
+  @scala.inline
+  def comment: comment = "comment".asInstanceOf[comment]
+  
+  @scala.inline
+  def description: description = "description".asInstanceOf[description]
+  
+  @scala.inline
+  def displayName: displayName = "displayName".asInstanceOf[displayName]
+  
+  @scala.inline
+  def distinguishedName: distinguishedName = "distinguishedName".asInstanceOf[distinguishedName]
+  
+  @scala.inline
+  def dn: dn = "dn".asInstanceOf[dn]
+  
+  @scala.inline
+  def employeeID: employeeID = "employeeID".asInstanceOf[employeeID]
+  
+  @scala.inline
+  def givenName: givenName = "givenName".asInstanceOf[givenName]
+  
+  @scala.inline
+  def group: group = "group".asInstanceOf[group]
+  
+  @scala.inline
+  def initials: initials = "initials".asInstanceOf[initials]
+  
+  @scala.inline
+  def ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk: ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk = "ldaps?://DomainDnsZones\\..*/.*".asInstanceOf[ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk]
+  
+  @scala.inline
+  def ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk: ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk = "ldaps?://.*/CN=Configuration,.*".asInstanceOf[ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk]
+  
+  @scala.inline
+  def ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk: ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk = "ldaps?://ForestDnsZones\\..*/.*".asInstanceOf[ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk]
+  
+  @scala.inline
+  def lockoutTime: lockoutTime = "lockoutTime".asInstanceOf[lockoutTime]
+  
+  @scala.inline
+  def mail: mail = "mail".asInstanceOf[mail]
+  
+  @scala.inline
+  def objectCategory: objectCategory = "objectCategory".asInstanceOf[objectCategory]
+  
+  @scala.inline
+  def one: one = "one".asInstanceOf[one]
+  
+  @scala.inline
+  def pwdLastSet: pwdLastSet = "pwdLastSet".asInstanceOf[pwdLastSet]
+  
+  @scala.inline
+  def sAMAccountName: sAMAccountName = "sAMAccountName".asInstanceOf[sAMAccountName]
+  
+  @scala.inline
+  def sn: sn = "sn".asInstanceOf[sn]
+  
+  @scala.inline
+  def sub: sub = "sub".asInstanceOf[sub]
+  
+  @scala.inline
+  def user: user = "user".asInstanceOf[user]
+  
+  @scala.inline
+  def userAccountControl: userAccountControl = "userAccountControl".asInstanceOf[userAccountControl]
+  
+  @scala.inline
+  def userPrincipalName: userPrincipalName = "userPrincipalName".asInstanceOf[userPrincipalName]
+  
+  @scala.inline
+  def whenCreated: whenCreated = "whenCreated".asInstanceOf[whenCreated]
+  
   @js.native
   sealed trait all extends MembershipType
   
@@ -94,60 +176,4 @@ object activedirectory2Strings {
   
   @js.native
   sealed trait whenCreated extends UserAttributes
-  
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def base: base = "base".asInstanceOf[base]
-  @scala.inline
-  def cn: cn = "cn".asInstanceOf[cn]
-  @scala.inline
-  def comment: comment = "comment".asInstanceOf[comment]
-  @scala.inline
-  def description: description = "description".asInstanceOf[description]
-  @scala.inline
-  def displayName: displayName = "displayName".asInstanceOf[displayName]
-  @scala.inline
-  def distinguishedName: distinguishedName = "distinguishedName".asInstanceOf[distinguishedName]
-  @scala.inline
-  def dn: dn = "dn".asInstanceOf[dn]
-  @scala.inline
-  def employeeID: employeeID = "employeeID".asInstanceOf[employeeID]
-  @scala.inline
-  def givenName: givenName = "givenName".asInstanceOf[givenName]
-  @scala.inline
-  def group: group = "group".asInstanceOf[group]
-  @scala.inline
-  def initials: initials = "initials".asInstanceOf[initials]
-  @scala.inline
-  def ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk: ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk = "ldaps?://DomainDnsZones\\..*/.*".asInstanceOf[ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk]
-  @scala.inline
-  def ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk: ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk = "ldaps?://.*/CN=Configuration,.*".asInstanceOf[ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk]
-  @scala.inline
-  def ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk: ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk = "ldaps?://ForestDnsZones\\..*/.*".asInstanceOf[ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk]
-  @scala.inline
-  def lockoutTime: lockoutTime = "lockoutTime".asInstanceOf[lockoutTime]
-  @scala.inline
-  def mail: mail = "mail".asInstanceOf[mail]
-  @scala.inline
-  def objectCategory: objectCategory = "objectCategory".asInstanceOf[objectCategory]
-  @scala.inline
-  def one: one = "one".asInstanceOf[one]
-  @scala.inline
-  def pwdLastSet: pwdLastSet = "pwdLastSet".asInstanceOf[pwdLastSet]
-  @scala.inline
-  def sAMAccountName: sAMAccountName = "sAMAccountName".asInstanceOf[sAMAccountName]
-  @scala.inline
-  def sn: sn = "sn".asInstanceOf[sn]
-  @scala.inline
-  def sub: sub = "sub".asInstanceOf[sub]
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
-  @scala.inline
-  def userAccountControl: userAccountControl = "userAccountControl".asInstanceOf[userAccountControl]
-  @scala.inline
-  def userPrincipalName: userPrincipalName = "userPrincipalName".asInstanceOf[userPrincipalName]
-  @scala.inline
-  def whenCreated: whenCreated = "whenCreated".asInstanceOf[whenCreated]
 }
-

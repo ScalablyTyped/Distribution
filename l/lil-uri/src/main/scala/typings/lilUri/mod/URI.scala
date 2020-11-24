@@ -2,13 +2,14 @@ package typings.lilUri.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides access to URI component values and parser/builder functions.
   */
 @js.native
 trait URI extends js.Object {
+  
   /**
     * Gets the auth value
     */
@@ -19,10 +20,12 @@ trait URI extends js.Object {
     * @return this object
     */
   def auth(auth: String): URI = js.native
+  
   /**
     * Builds URI components into a URI string
     */
   def build(): String = js.native
+  
   /**
     * Gets the hash value
     */
@@ -33,6 +36,7 @@ trait URI extends js.Object {
     * @return this object
     */
   def hash(hash: String): URI = js.native
+  
   /**
     * Gets the host value
     */
@@ -43,6 +47,7 @@ trait URI extends js.Object {
     * @return this object
     */
   def host(host: String): URI = js.native
+  
   /**
     * Gets the hostname value
     */
@@ -53,11 +58,13 @@ trait URI extends js.Object {
     * @return this object
     */
   def hostname(hostname: String): URI = js.native
+  
   /**
     * Parses the given URI string
     * @param uri the URI to parse
     */
   def parse(uri: String): URIParts = js.native
+  
   /**
     * Gets the password value
     */
@@ -68,6 +75,7 @@ trait URI extends js.Object {
     * @return this object
     */
   def password(password: String): URI = js.native
+  
   /**
     * Gets the path value
     */
@@ -78,6 +86,7 @@ trait URI extends js.Object {
     * @return this object
     */
   def path(path: String): URI = js.native
+  
   /**
     * Gets the port value
     */
@@ -88,6 +97,7 @@ trait URI extends js.Object {
     * @return this object
     */
   def port(port: String): URI = js.native
+  
   /**
     * Gets the protocol value
     */
@@ -98,6 +108,7 @@ trait URI extends js.Object {
     * @return this object
     */
   def protocol(protocol: String): URI = js.native
+  
   /**
     * Gets the query value
     */
@@ -108,6 +119,7 @@ trait URI extends js.Object {
     * @return this object
     */
   def query(query: QueryString): URI = js.native
+  
   /**
     * Gets the search value
     */
@@ -118,6 +130,7 @@ trait URI extends js.Object {
     * @return this object
     */
   def search(search: String): URI = js.native
+  
   /**
     * Gets the user value
     */
@@ -129,4 +142,3 @@ trait URI extends js.Object {
     */
   def user(user: String): URI = js.native
 }
-

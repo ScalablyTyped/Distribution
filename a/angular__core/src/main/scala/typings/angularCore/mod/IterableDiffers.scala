@@ -2,25 +2,28 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "IterableDiffers")
 @js.native
 class IterableDiffers protected () extends js.Object {
   def this(factories: js.Array[IterableDifferFactory]) = this()
+  
   /**
     * @deprecated v4.0.0 - Should be private
     */
   var factories: js.Array[IterableDifferFactory] = js.native
+  
   def find(iterable: js.Any): IterableDifferFactory = js.native
 }
-
 /* static members */
 @JSImport("@angular/core", "IterableDiffers")
 @js.native
 object IterableDiffers extends js.Object {
+  
   def create(factories: js.Array[IterableDifferFactory]): IterableDiffers = js.native
   def create(factories: js.Array[IterableDifferFactory], parent: IterableDiffers): IterableDiffers = js.native
+  
   /**
     * Takes an array of {@link IterableDifferFactory} and returns a provider used to extend the
     * inherited {@link IterableDiffers} instance with the provided factories and return a new
@@ -43,4 +46,3 @@ object IterableDiffers extends js.Object {
     */
   def extend(factories: js.Array[IterableDifferFactory]): StaticProvider = js.native
 }
-

@@ -10,9 +10,9 @@ Implementation of JSON Web Signatures
 | ------------------ | :-------------: |
 | Full name          | jws |
 | Keywords           | jws, json, web, signatures |
-| # releases         | 6 |
-| # dependents       | 162 |
-| # downloads        | 153069137 |
+| # releases         | 5 |
+| # dependents       | 189 |
+| # downloads        | 253139548 |
 | # stars            | 14 |
 
 ## Links

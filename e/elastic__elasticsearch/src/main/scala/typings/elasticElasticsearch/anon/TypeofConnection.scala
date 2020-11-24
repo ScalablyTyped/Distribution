@@ -6,13 +6,14 @@ import typings.elasticElasticsearch.connectionMod.ConnectionOptions
 import typings.elasticElasticsearch.connectionMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofConnection
   extends Instantiable0[default]
      with Instantiable1[/* opts */ ConnectionOptions, default] {
+  
   var roles: DATA_ = js.native
+  
   var statuses: ALIVE = js.native
 }
-

@@ -11,8 +11,8 @@ MongoDB storage adapter for Keyv
 | Full name          | @keyv/mongo |
 | Keywords           | mongo, mongodb, keyv, storage, adapter, key, value, store, cache, ttl |
 | # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 7890 |
+| # dependents       | 3 |
+| # downloads        | 12981 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Twitter authentication strategy for Passport.
 | ------------------ | :-------------: |
 | Full name          | passport-twitter |
 | Keywords           | passport, twitter, auth, authn, authentication, identity |
-| # releases         | 1 |
-| # dependents       | 226 |
-| # downloads        | 1118874 |
+| # releases         | 0 |
+| # dependents       | 231 |
+| # downloads        | 1282286 |
 | # stars            | 28 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.qrImage.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.qrImage.qrImageStrings.png
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.qrImage.qrImageStrings.eps
 */
 trait imageType extends js.Object
-
 object imageType {
+  
   @scala.inline
   def eps: typings.qrImage.qrImageStrings.eps = "eps".asInstanceOf[typings.qrImage.qrImageStrings.eps]
+  
   @scala.inline
   def pdf: typings.qrImage.qrImageStrings.pdf = "pdf".asInstanceOf[typings.qrImage.qrImageStrings.pdf]
+  
   @scala.inline
   def png: typings.qrImage.qrImageStrings.png = "png".asInstanceOf[typings.qrImage.qrImageStrings.png]
+  
   @scala.inline
   def svg: typings.qrImage.qrImageStrings.svg = "svg".asInstanceOf[typings.qrImage.qrImageStrings.svg]
 }
-

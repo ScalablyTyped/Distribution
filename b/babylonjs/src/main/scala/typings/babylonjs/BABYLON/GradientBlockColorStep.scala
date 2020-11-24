@@ -2,24 +2,30 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait GradientBlockColorStep extends js.Object {
+  
+  var _color: js.Any = js.native
+  
+  var _step: js.Any = js.native
+  
   /**
-    * Gets or sets the color associated with this step
+    * Gets the color associated with this step
     */
-  var color: Color3
+  def color: Color3 = js.native
   /**
-    * Gets or sets a value indicating which step this color is associated with (between 0 and 1)
+    * Sets the color associated with this step
     */
-  var step: Double
+  def color_=(`val`: Color3): Unit = js.native
+  
+  /**
+    * Gets value indicating which step this color is associated with (between 0 and 1)
+    */
+  def step: Double = js.native
+  /**
+    * Sets a value indicating which step this color is associated with (between 0 and 1)
+    */
+  def step_=(`val`: Double): Unit = js.native
 }
-
-object GradientBlockColorStep {
-  @scala.inline
-  def apply(color: Color3, step: Double): GradientBlockColorStep = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
-    __obj.asInstanceOf[GradientBlockColorStep]
-  }
-}
-

@@ -2,7 +2,7 @@ package typings.smoothie.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("smoothie", "TimeSeries")
 @js.native
@@ -22,18 +22,7 @@ import scala.scalajs.js.annotation._
   */
 class TimeSeries () extends js.Object {
   def this(options: ITimeSeriesOptions) = this()
-  /**
-    * Hide this <code>TimeSeries</code> object in the chart.
-    */
-  var disabled: Boolean = js.native
-  /**
-    * Adjust or inspect the upper y-axis for this <code>TimeSeries</code> object.
-    */
-  var maxValue: Double = js.native
-  /**
-    * Adjust or inspect the lower y-axis for this <code>TimeSeries</code> object.
-    */
-  var minValue: Double = js.native
+  
   /**
     * Adds a new data point to the <code>TimeSeries</code>, preserving chronological order.
     *
@@ -44,11 +33,29 @@ class TimeSeries () extends js.Object {
     */
   def append(timestamp: Double, value: Double): Unit = js.native
   def append(timestamp: Double, value: Double, sumRepeatedTimeStampValues: Boolean): Unit = js.native
+  
   /**
     * Clears all data and state from this TimeSeries object.
     */
   def clear(): Unit = js.native
+  
+  /**
+    * Hide this <code>TimeSeries</code> object in the chart.
+    */
+  var disabled: Boolean = js.native
+  
   def dropOldData(oldestValidTime: Double, maxDataSetLength: Double): Unit = js.native
+  
+  /**
+    * Adjust or inspect the upper y-axis for this <code>TimeSeries</code> object.
+    */
+  var maxValue: Double = js.native
+  
+  /**
+    * Adjust or inspect the lower y-axis for this <code>TimeSeries</code> object.
+    */
+  var minValue: Double = js.native
+  
   /**
     * Recalculate the min/max values for this <code>TimeSeries</code> object.
     *
@@ -56,4 +63,3 @@ class TimeSeries () extends js.Object {
     */
   def resetBounds(): Unit = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.protobufjsFetch.mod
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@protobufjs/fetch", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Fetches the contents of a file.
     * @memberof util
@@ -39,4 +40,3 @@ object ^ extends js.Object {
   def apply(path: String, callback: FetchCallback): Unit = js.native
   def apply(path: String, options: FetchOptions): js.Promise[String | Uint8Array] = js.native
 }
-

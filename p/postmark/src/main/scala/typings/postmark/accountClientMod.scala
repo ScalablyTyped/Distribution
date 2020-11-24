@@ -21,14 +21,16 @@ import typings.postmark.signatureMod.Signatures
 import typings.postmark.templateMod.TemplatesPush
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark/dist/client/AccountClient", JSImport.Namespace)
 @js.native
 object accountClientMod extends js.Object {
+  
   @js.native
   trait AccountClient
     extends typings.postmark.baseClientMod.default {
+    
     /**
       * Create a new Domain.
       *
@@ -38,6 +40,7 @@ object accountClientMod extends js.Object {
       */
     def createDomain(options: CreateDomainRequest): js.Promise[DomainDetails] = js.native
     def createDomain(options: CreateDomainRequest, callback: Callback[DomainDetails]): js.Promise[DomainDetails] = js.native
+    
     /**
       * Create a new Sender Signature.
       *
@@ -47,6 +50,7 @@ object accountClientMod extends js.Object {
       */
     def createSenderSignature(options: CreateSignatureRequest): js.Promise[SignatureDetails] = js.native
     def createSenderSignature(options: CreateSignatureRequest, callback: Callback[SignatureDetails]): js.Promise[SignatureDetails] = js.native
+    
     /**
       * Create a new Server.
       *
@@ -56,6 +60,7 @@ object accountClientMod extends js.Object {
       */
     def createServer(options: CreateServerRequest): js.Promise[Server] = js.native
     def createServer(options: CreateServerRequest, callback: Callback[Server]): js.Promise[Server] = js.native
+    
     /**
       * Delete a Domain.
       *
@@ -66,6 +71,7 @@ object accountClientMod extends js.Object {
       */
     def deleteDomain(id: Double): js.Promise[DefaultResponse] = js.native
     def deleteDomain(id: Double, callback: Callback[DefaultResponse]): js.Promise[DefaultResponse] = js.native
+    
     /**
       * Delete a Domain.
       *
@@ -76,6 +82,7 @@ object accountClientMod extends js.Object {
       */
     def deleteSenderSignature(id: Double): js.Promise[DefaultResponse] = js.native
     def deleteSenderSignature(id: Double, callback: Callback[DefaultResponse]): js.Promise[DefaultResponse] = js.native
+    
     /**
       * Modify the Server associated with this Client.
       *
@@ -85,6 +92,7 @@ object accountClientMod extends js.Object {
       */
     def deleteServer(id: Double): js.Promise[DefaultResponse] = js.native
     def deleteServer(id: Double, callback: Callback[DefaultResponse]): js.Promise[DefaultResponse] = js.native
+    
     /**
       * Update a Domain.
       *
@@ -95,6 +103,7 @@ object accountClientMod extends js.Object {
       */
     def editDomain(id: Double, options: UpdateDomainRequest): js.Promise[DomainDetails] = js.native
     def editDomain(id: Double, options: UpdateDomainRequest, callback: Callback[DomainDetails]): js.Promise[DomainDetails] = js.native
+    
     /**
       * Update a Sender Signature.
       *
@@ -105,6 +114,7 @@ object accountClientMod extends js.Object {
       */
     def editSenderSignature(id: Double, options: UpdateSignatureRequest): js.Promise[SignatureDetails] = js.native
     def editSenderSignature(id: Double, options: UpdateSignatureRequest, callback: Callback[SignatureDetails]): js.Promise[SignatureDetails] = js.native
+    
     /**
       * Modify the Server associated with this Client.
       *
@@ -115,6 +125,7 @@ object accountClientMod extends js.Object {
       */
     def editServer(id: Double, options: UpdateServerRequest): js.Promise[Server] = js.native
     def editServer(id: Double, options: UpdateServerRequest, callback: Callback[Server]): js.Promise[Server] = js.native
+    
     /**
       * Retrieve a single Domain by ID.
       *
@@ -124,6 +135,7 @@ object accountClientMod extends js.Object {
       */
     def getDomain(id: Double): js.Promise[DomainDetails] = js.native
     def getDomain(id: Double, callback: Callback[DomainDetails]): js.Promise[DomainDetails] = js.native
+    
     /**
       * Retrieve a batch of Domains.
       *
@@ -135,6 +147,7 @@ object accountClientMod extends js.Object {
     def getDomains(filter: js.UndefOr[scala.Nothing], callback: Callback[Domains]): js.Promise[Domains] = js.native
     def getDomains(filter: FilteringParameters): js.Promise[Domains] = js.native
     def getDomains(filter: FilteringParameters, callback: Callback[Domains]): js.Promise[Domains] = js.native
+    
     /**
       * Retrieve a single Sender Signature by ID.
       *
@@ -144,6 +157,7 @@ object accountClientMod extends js.Object {
       */
     def getSenderSignature(id: Double): js.Promise[SignatureDetails] = js.native
     def getSenderSignature(id: Double, callback: Callback[SignatureDetails]): js.Promise[SignatureDetails] = js.native
+    
     /**
       * Retrieve a batch of Sender Signatures.
       *
@@ -155,6 +169,7 @@ object accountClientMod extends js.Object {
     def getSenderSignatures(filter: js.UndefOr[scala.Nothing], callback: Callback[Signatures]): js.Promise[Signatures] = js.native
     def getSenderSignatures(filter: FilteringParameters): js.Promise[Signatures] = js.native
     def getSenderSignatures(filter: FilteringParameters, callback: Callback[Signatures]): js.Promise[Signatures] = js.native
+    
     /**
       * Retrieve a single server by ID.
       *
@@ -164,6 +179,7 @@ object accountClientMod extends js.Object {
       */
     def getServer(id: Double): js.Promise[Server] = js.native
     def getServer(id: Double, callback: Callback[Server]): js.Promise[Server] = js.native
+    
     /**
       * Retrieve a list of Servers.
       *
@@ -175,6 +191,7 @@ object accountClientMod extends js.Object {
     def getServers(filter: js.UndefOr[scala.Nothing], callback: Callback[Servers]): js.Promise[Servers] = js.native
     def getServers(filter: ServerFilteringParameters): js.Promise[Servers] = js.native
     def getServers(filter: ServerFilteringParameters, callback: Callback[Servers]): js.Promise[Servers] = js.native
+    
     /**
       * Request a push of templates from one server to another.
       *
@@ -184,6 +201,7 @@ object accountClientMod extends js.Object {
       */
     def pushTemplates(options: TemplatesPushRequest): js.Promise[TemplatesPush] = js.native
     def pushTemplates(options: TemplatesPushRequest, callback: Callback[TemplatesPush]): js.Promise[TemplatesPush] = js.native
+    
     /**
       * Request that the SPF records for Sender Signature be verified.
       *
@@ -193,6 +211,7 @@ object accountClientMod extends js.Object {
       */
     def requestNewDKIMForSenderSignature(id: Double): js.Promise[SignatureDetails] = js.native
     def requestNewDKIMForSenderSignature(id: Double, callback: Callback[SignatureDetails]): js.Promise[SignatureDetails] = js.native
+    
     /**
       * Request a new confirmation email to be sent to the email address associated with a Sender Signature.
       *
@@ -202,6 +221,7 @@ object accountClientMod extends js.Object {
       */
     def resendSenderSignatureConfirmation(id: Double): js.Promise[DefaultResponse] = js.native
     def resendSenderSignatureConfirmation(id: Double, callback: Callback[DefaultResponse]): js.Promise[DefaultResponse] = js.native
+    
     /**
       * Trigger Domain DKIM key verification.
       *
@@ -211,6 +231,7 @@ object accountClientMod extends js.Object {
       */
     def rotateDomainDKIM(id: Double): js.Promise[DomainDetails] = js.native
     def rotateDomainDKIM(id: Double, callback: Callback[DomainDetails]): js.Promise[DomainDetails] = js.native
+    
     /**
       * Trigger Domain DKIM key verification.
       *
@@ -220,6 +241,7 @@ object accountClientMod extends js.Object {
       */
     def verifyDomainDKIM(id: Double): js.Promise[DomainDetails] = js.native
     def verifyDomainDKIM(id: Double, callback: Callback[DomainDetails]): js.Promise[DomainDetails] = js.native
+    
     /**
       * Trigger Domain DKIM key verification.
       *
@@ -229,6 +251,7 @@ object accountClientMod extends js.Object {
       */
     def verifyDomainReturnPath(id: Double): js.Promise[DomainDetails] = js.native
     def verifyDomainReturnPath(id: Double, callback: Callback[DomainDetails]): js.Promise[DomainDetails] = js.native
+    
     /**
       * Trigger Domain DKIM key verification.
       *
@@ -238,6 +261,7 @@ object accountClientMod extends js.Object {
       */
     def verifyDomainSPF(id: Double): js.Promise[DomainDetails] = js.native
     def verifyDomainSPF(id: Double, callback: Callback[DomainDetails]): js.Promise[DomainDetails] = js.native
+    
     /**
       * Request that the SPF records for Sender Signature be verified.
       *
@@ -259,6 +283,4 @@ object accountClientMod extends js.Object {
     def this(accountToken: String) = this()
     def this(accountToken: String, configOptions: Configuration) = this()
   }
-  
 }
-

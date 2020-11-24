@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pretty-error" : "2.1.1"
+      "pretty-error" : "2.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "pretty-error" : "2.1.1"
+      "pretty-error" : "2.1.2"
     }
   ],
   "compile-devDependencies" : [

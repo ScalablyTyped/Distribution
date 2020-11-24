@@ -3,11 +3,12 @@ package typings.strophe.mod.Strophe
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strophe", "Strophe.serialize")
 @js.native
 object serialize extends js.Object {
+  
   /** Function: serialize
     *  Render a DOM element and all descendants to a String.
     *
@@ -20,4 +21,3 @@ object serialize extends js.Object {
   def apply(elem: Element): String = js.native
   def apply(elem: Builder): String = js.native
 }
-

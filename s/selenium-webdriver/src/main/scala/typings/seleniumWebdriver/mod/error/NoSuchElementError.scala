@@ -2,7 +2,7 @@ package typings.seleniumWebdriver.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An element could not be located on the page using the given search
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 class NoSuchElementError () extends WebDriverError {
   def this(message: String) = this()
 }
-

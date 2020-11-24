@@ -20,11 +20,12 @@ import typings.sipJs.userAgentDelegateMod.UserAgentDelegate
 import typings.sipJs.userAgentStateMod.UserAgentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/api/user-agent", JSImport.Namespace)
 @js.native
 object userAgentMod extends js.Object {
+  
   @js.native
   /**
     * Constructs a new instance of the `UserAgent` class.
@@ -32,88 +33,111 @@ object userAgentMod extends js.Object {
     */
   class UserAgent () extends js.Object {
     def this(options: PartialUserAgentOptions) = this()
+    
     var _contact: js.Any = js.native
-    /** @internal */
-    var _publishers: StringDictionary[Publisher] = js.native
-    /** @internal */
-    var _registerers: StringDictionary[Registerer] = js.native
-    /** @internal */
-    var _sessions: StringDictionary[Session] = js.native
-    var _state: js.Any = js.native
-    var _stateEventEmitter: js.Any = js.native
-    /** @internal */
-    var _subscriptions: StringDictionary[Subscription] = js.native
-    var _transport: js.Any = js.native
-    var _userAgentCore: js.Any = js.native
-    /**
-      * Attempt reconnection up to `maxReconnectionAttempts` times.
-      * @param reconnectionAttempt - Current attempt number.
-      */
-    var attemptReconnection: js.Any = js.native
-    /**
-      * Property reserved for use by instance owner.
-      * @defaultValue `undefined`
-      */
-    var data: js.Any = js.native
-    /**
-      * Delegate.
-      */
-    var delegate: js.UndefOr[UserAgentDelegate] = js.native
-    /**
-      * Initialize contact.
-      */
-    var initContact: js.Any = js.native
-    /**
-      * Initialize user agent core.
-      */
-    var initCore: js.Any = js.native
-    var initTransportCallbacks: js.Any = js.native
-    /** Logger. */
-    var logger: js.Any = js.native
-    /** LoggerFactory. */
-    var loggerFactory: js.Any = js.native
-    var onTransportConnect: js.Any = js.native
-    var onTransportDisconnect: js.Any = js.native
-    var onTransportMessage: js.Any = js.native
-    /** Options. */
-    var options: js.Any = js.native
-    /**
-      * Transition state.
-      */
-    var transitionState: js.Any = js.native
-    /** Unload listener. */
-    var unloadListener: js.Any = js.native
+    
     /**
       * Used to avoid circular references.
       * @internal
       */
     def _makeInviter(targetURI: URI): Inviter = js.native
     def _makeInviter(targetURI: URI, options: InviterOptions): Inviter = js.native
+    
+    /** @internal */
+    var _publishers: StringDictionary[Publisher] = js.native
+    
+    /** @internal */
+    var _registerers: StringDictionary[Registerer] = js.native
+    
+    /** @internal */
+    var _sessions: StringDictionary[Session] = js.native
+    
+    var _state: js.Any = js.native
+    
+    var _stateEventEmitter: js.Any = js.native
+    
+    /** @internal */
+    var _subscriptions: StringDictionary[Subscription] = js.native
+    
+    var _transport: js.Any = js.native
+    
+    var _userAgentCore: js.Any = js.native
+    
+    /**
+      * Attempt reconnection up to `maxReconnectionAttempts` times.
+      * @param reconnectionAttempt - Current attempt number.
+      */
+    var attemptReconnection: js.Any = js.native
+    
     /**
       * User agent configuration.
       */
     def configuration: RequiredUserAgentOptions = js.native
+    
     /**
       * User agent contact.
       */
     def contact: Contact = js.native
+    
+    /**
+      * Property reserved for use by instance owner.
+      * @defaultValue `undefined`
+      */
+    var data: js.Any = js.native
+    
+    /**
+      * Delegate.
+      */
+    var delegate: js.UndefOr[UserAgentDelegate] = js.native
+    
     /**
       * The logger.
       */
     def getLogger(category: String): Logger = js.native
     def getLogger(category: String, label: String): Logger = js.native
+    
     /**
       * The logger factory.
       */
     def getLoggerFactory(): LoggerFactory = js.native
+    
+    /**
+      * Initialize contact.
+      */
+    var initContact: js.Any = js.native
+    
+    /**
+      * Initialize user agent core.
+      */
+    var initCore: js.Any = js.native
+    
+    var initTransportCallbacks: js.Any = js.native
+    
     /**
       * True if transport is connected.
       */
     def isConnected(): Boolean = js.native
+    
+    /** Logger. */
+    var logger: js.Any = js.native
+    
+    /** LoggerFactory. */
+    var loggerFactory: js.Any = js.native
+    
+    var onTransportConnect: js.Any = js.native
+    
+    var onTransportDisconnect: js.Any = js.native
+    
+    var onTransportMessage: js.Any = js.native
+    
+    /** Options. */
+    var options: js.Any = js.native
+    
     /**
       * Reconnect the transport.
       */
     def reconnect(): js.Promise[Unit] = js.native
+    
     /**
       * Start the user agent.
       *
@@ -132,14 +156,17 @@ object userAgentMod extends js.Object {
       * ```
       */
     def start(): js.Promise[Unit] = js.native
+    
     /**
       * User agent state.
       */
     def state: UserAgentState = js.native
+    
     /**
       * User agent state change emitter.
       */
     def stateChange: Emitter[UserAgentState] = js.native
+    
     /**
       * Stop the user agent.
       *
@@ -169,28 +196,32 @@ object userAgentMod extends js.Object {
       * not wait for the Promise returned by `stop()` to complete.
       */
     def stop(): js.Promise[Unit] = js.native
+    
+    /**
+      * Transition state.
+      */
+    var transitionState: js.Any = js.native
+    
     /**
       * User agent transport.
       */
     def transport: Transport = js.native
+    
+    /** Unload listener. */
+    var unloadListener: js.Any = js.native
+    
     /**
       * User agent core.
       */
     def userAgentCore: UserAgentCore = js.native
   }
-  
   /* static members */
   @js.native
   object UserAgent extends js.Object {
+    
     /** Default user agent options. */
     var defaultOptions: js.Any = js.native
-    /**
-      * Strip properties with undefined values from options.
-      * This is a work around while waiting for missing vs undefined to be addressed (or not)...
-      * https://github.com/Microsoft/TypeScript/issues/13195
-      * @param options - Options to reduce
-      */
-    var stripUndefinedProperties: js.Any = js.native
+    
     /**
       * Create a URI instance from a string.
       * @param uri - The string to parse.
@@ -201,7 +232,13 @@ object userAgentMod extends js.Object {
       * ```
       */
     def makeURI(uri: String): js.UndefOr[URI] = js.native
+    
+    /**
+      * Strip properties with undefined values from options.
+      * This is a work around while waiting for missing vs undefined to be addressed (or not)...
+      * https://github.com/Microsoft/TypeScript/issues/13195
+      * @param options - Options to reduce
+      */
+    var stripUndefinedProperties: js.Any = js.native
   }
-  
 }
-

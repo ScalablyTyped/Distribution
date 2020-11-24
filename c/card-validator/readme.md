@@ -1,7 +1,7 @@
 
 # Scala.js typings for card-validator
 
-Typings are for version 8.0.0
+Typings are for version 8.1.0
 
 ## Library description:
 A library for validating credit card fields
@@ -10,9 +10,9 @@ A library for validating credit card fields
 | ------------------ | :-------------: |
 | Full name          | card-validator |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 77 |
-| # downloads        | 6152036 |
+| # releases         | 8 |
+| # dependents       | 108 |
+| # downloads        | 9266137 |
 | # stars            | 2 |
 
 ## Links

@@ -1,7 +1,7 @@
 
 # Scala.js typings for htmlparser2
 
-Typings are for version 4.1.0
+Typings are for version v3.10.x
 
 ## Library description:
 Fast & forgiving HTML/XML/RSS parser
@@ -10,9 +10,9 @@ Fast & forgiving HTML/XML/RSS parser
 | ------------------ | :-------------: |
 | Full name          | htmlparser2 |
 | Keywords           | html, parser, streams, xml, dom, rss, feed, atom |
-| # releases         | 4 |
-| # dependents       | 1004 |
-| # downloads        | 361115762 |
+| # releases         | 5 |
+| # dependents       | 1127 |
+| # downloads        | 473290164 |
 | # stars            | 91 |
 
 ## Links
@@ -24,7 +24,7 @@ Fast & forgiving HTML/XML/RSS parser
 
 
 ## Note
-This library has been generated from typescript code from first party type definitions.
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

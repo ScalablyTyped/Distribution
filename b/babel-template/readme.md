@@ -11,8 +11,8 @@ Generate an AST from a string template.
 | Full name          | babel-template |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 438 |
-| # downloads        | 258763990 |
+| # dependents       | 458 |
+| # downloads        | 222269598 |
 | # stars            | 7 |
 
 ## Links

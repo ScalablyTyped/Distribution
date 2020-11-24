@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.chromeApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fired when the list of networks has changed. Sends a complete list of GUIDs for all the current networks.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object onNetworkListChanged
   extends TopLevel[Event[js.Function1[/* changes */ js.Array[String], Unit]]]
-

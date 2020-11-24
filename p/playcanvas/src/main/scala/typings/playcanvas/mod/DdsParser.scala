@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import typings.playcanvas.pc.TextureParser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Texture parser for dds files.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "DdsParser")
 @js.native
 class DdsParser () extends TextureParser
-

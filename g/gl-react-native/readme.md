@@ -10,9 +10,9 @@ React Native standalone implementation of gl-react, an universal React library t
 | ------------------ | :-------------: |
 | Full name          | gl-react-native |
 | Keywords           | gl-react, gl, opengl, react, react-native, react-component |
-| # releases         | 16 |
+| # releases         | 11 |
 | # dependents       | 5 |
-| # downloads        | 29671 |
+| # downloads        | 40994 |
 | # stars            | 2 |
 
 ## Links

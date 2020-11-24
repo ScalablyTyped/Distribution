@@ -2,13 +2,15 @@ package typings.circularJson
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("circular-json", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def parse(text: String): js.Any = js.native
   def parse(text: String, reviver: js.Function2[/* key */ js.Any, /* value */ js.Any, _]): js.Any = js.native
+  
   def stringify(value: js.Any): String = js.native
   def stringify(
     value: js.Any,
@@ -45,4 +47,3 @@ object mod extends js.Object {
   def stringify(value: js.Any, replacer: Null, space: js.Any): String = js.native
   def stringify(value: js.Any, replacer: Null, space: js.Any, placeholder: Boolean): String = js.native
 }
-

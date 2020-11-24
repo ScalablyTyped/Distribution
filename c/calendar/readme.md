@@ -12,7 +12,7 @@ calendar generator
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 29 |
-| # downloads        | 440762 |
+| # downloads        | 765818 |
 | # stars            | 5 |
 
 ## Links

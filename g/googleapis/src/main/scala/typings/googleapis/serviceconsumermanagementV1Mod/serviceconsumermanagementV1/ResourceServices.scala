@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/serviceconsumermanagement/v1", "serviceconsumermanagement_v1.Resource$Services")
 @js.native
 class ResourceServices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var tenancyUnits: ResourceServicesTenancyunits = js.native
+  
   /**
     * serviceconsumermanagement.services.search
     * @desc Search tenancy units for a managed service.
@@ -48,5 +49,6 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSearchTenancyUnitsResponse]
   ): Unit = js.native
+  
+  var tenancyUnits: ResourceServicesTenancyunits = js.native
 }
-

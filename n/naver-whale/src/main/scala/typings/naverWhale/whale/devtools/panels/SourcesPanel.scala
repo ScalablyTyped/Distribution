@@ -2,12 +2,11 @@ package typings.naverWhale.whale.devtools.panels
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SourcesPanel extends js.Object {
-  /** Fired when an object is selected in the panel. */
-  var onSelectionChanged: typings.chrome.chrome.devtools.panels.SelectionChangedEvent = js.native
+  
   /**
     * Creates a pane within panel's sidebar.
     * @param title Text that is displayed in sidebar caption.
@@ -21,5 +20,7 @@ trait SourcesPanel extends js.Object {
     title: String,
     callback: js.Function1[/* result */ typings.chrome.chrome.devtools.panels.ExtensionSidebarPane, Unit]
   ): Unit = js.native
+  
+  /** Fired when an object is selected in the panel. */
+  var onSelectionChanged: typings.chrome.chrome.devtools.panels.SelectionChangedEvent = js.native
 }
-

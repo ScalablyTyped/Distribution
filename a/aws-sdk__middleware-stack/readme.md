@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__middleware-stack
 
-Typings are for version 0.1.0-preview.2
+Typings are for version 1.0.0-rc.7
 
 ## Library description:
 Provides a means for composing multiple middleware functions into a single handler
@@ -10,9 +10,9 @@ Provides a means for composing multiple middleware functions into a single handl
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-stack |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 551 |
-| # downloads        | 34148 |
+| # releases         | 26 |
+| # dependents       | 593 |
+| # downloads        | 1839403 |
 | # stars            | 0 |
 
 ## Links

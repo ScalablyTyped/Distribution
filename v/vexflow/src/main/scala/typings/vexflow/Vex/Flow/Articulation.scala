@@ -4,12 +4,12 @@ import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Articulation extends Modifier
-
 object Articulation {
+  
   @scala.inline
   def apply(
     alignSubNotesWithNote: (js.Array[Note], Note) => Unit,
@@ -35,4 +35,3 @@ object Articulation {
     __obj.asInstanceOf[Articulation]
   }
 }
-

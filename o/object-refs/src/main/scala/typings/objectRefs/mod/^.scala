@@ -2,7 +2,7 @@ package typings.objectRefs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("object-refs", JSImport.Namespace)
 @js.native
@@ -15,4 +15,3 @@ class ^ protected () extends Refs {
     **/
   def this(a: AttributeDescriptor, b: AttributeDescriptor) = this()
 }
-

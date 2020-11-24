@@ -29,15 +29,18 @@ import typings.ngGrid.ngGrid.IStyleProviderStatic
 import typings.ngGrid.ngGrid.service.IDomUtilityService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   class ngAggregate protected () extends IAggregate {
     def this(aggEntity: js.Any, rowFactory: IRowFactory, rowHeight: Double, groupInitState: Boolean) = this()
   }
+  @js.native
+  object ngAggregate extends TopLevel[IAggregateStatic]
   
   @js.native
   class ngColumn protected () extends IColumn {
@@ -50,11 +53,15 @@ object global extends js.Object {
       $utils: js.Any
     ) = this()
   }
+  @js.native
+  object ngColumn extends TopLevel[IColumnStatic]
   
   @js.native
   class ngDimension protected () extends IDimension {
     def this(options: js.Any) = this()
   }
+  @js.native
+  object ngDimension extends TopLevel[IDimensionStatic]
   
   @js.native
   class ngEventProvider protected () extends IEventProvider {
@@ -65,11 +72,15 @@ object global extends js.Object {
       $timeout: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ITimeoutService */ js.Any
     ) = this()
   }
+  @js.native
+  object ngEventProvider extends TopLevel[IEventProviderStatic]
   
   @js.native
   class ngFooter protected () extends IFooter {
     def this($scope: IGridScope, grid: IGridInstance) = this()
   }
+  @js.native
+  object ngFooter extends TopLevel[IFooterStatic]
   
   @js.native
   class ngGridReorderable ()
@@ -79,6 +90,8 @@ object global extends js.Object {
   class ngRenderedRange protected () extends IRenderedRange {
     def this(top: Double, bottom: Double) = this()
   }
+  @js.native
+  object ngRenderedRange extends TopLevel[IRenderedRangeStatic]
   
   @js.native
   class ngRow protected () extends IRow {
@@ -90,6 +103,8 @@ object global extends js.Object {
       $utils: js.Any
     ) = this()
   }
+  @js.native
+  object ngRow extends TopLevel[IRowStatic]
   
   @js.native
   class ngSearchProvider protected () extends ISearchProvider {
@@ -99,6 +114,8 @@ object global extends js.Object {
       $filter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IFilterService */ js.Any
     ) = this()
   }
+  @js.native
+  object ngSearchProvider extends TopLevel[ISearchProviderStatic]
   
   @js.native
   class ngSelectionProvider protected () extends ISelectionProvider {
@@ -108,41 +125,13 @@ object global extends js.Object {
       $parse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IParseService */ js.Any
     ) = this()
   }
+  @js.native
+  object ngSelectionProvider extends TopLevel[ISelectionProviderStatic]
   
   @js.native
   class ngStyleProvider protected () extends IStyleProvider {
     def this($scope: IGridScope, grid: IGridInstance) = this()
   }
-  
-  @js.native
-  object ngAggregate extends TopLevel[IAggregateStatic]
-  
-  @js.native
-  object ngColumn extends TopLevel[IColumnStatic]
-  
-  @js.native
-  object ngDimension extends TopLevel[IDimensionStatic]
-  
-  @js.native
-  object ngEventProvider extends TopLevel[IEventProviderStatic]
-  
-  @js.native
-  object ngFooter extends TopLevel[IFooterStatic]
-  
-  @js.native
-  object ngRenderedRange extends TopLevel[IRenderedRangeStatic]
-  
-  @js.native
-  object ngRow extends TopLevel[IRowStatic]
-  
-  @js.native
-  object ngSearchProvider extends TopLevel[ISearchProviderStatic]
-  
-  @js.native
-  object ngSelectionProvider extends TopLevel[ISelectionProviderStatic]
-  
   @js.native
   object ngStyleProvider extends TopLevel[IStyleProviderStatic]
-  
 }
-

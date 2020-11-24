@@ -3,11 +3,12 @@ package typings.rxjs.mod
 import typings.rxjs.typesMod.UnaryFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs", "pipe")
 @js.native
 object pipe extends js.Object {
+  
   def apply[T](): UnaryFunction[T, T] = js.native
   def apply[T, A](fn1: UnaryFunction[T, A]): UnaryFunction[T, A] = js.native
   def apply[T, A, B](fn1: UnaryFunction[T, A], fn2: UnaryFunction[A, B]): UnaryFunction[T, B] = js.native
@@ -76,4 +77,3 @@ object pipe extends js.Object {
     fns: (UnaryFunction[_, _])*
   ): UnaryFunction[T, js.Object] = js.native
 }
-

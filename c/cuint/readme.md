@@ -11,8 +11,8 @@ Unsigned integers for Javascript
 | Full name          | cuint |
 | Keywords           | C, unsigned, integer, 32bits, 64bits |
 | # releases         | 0 |
-| # dependents       | 43 |
-| # downloads        | 30144348 |
+| # dependents       | 42 |
+| # downloads        | 40837636 |
 | # stars            | 1 |
 
 ## Links

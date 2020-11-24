@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 import typings.winrtUwp.Windows.Media.Protection.PlayReady.INDCustomData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Retrieves and sets properties used for fetching a PlayReady-ND license. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDLicenseFetchDescriptor")
@@ -22,4 +22,3 @@ class NDLicenseFetchDescriptor protected ()
     licenseFetchChallengeCustomData: INDCustomData
   ) = this()
 }
-

@@ -11,8 +11,8 @@ Smooth CSS3 transitions and transformations for jQuery.
 | Full name          | jquery.transit |
 | Keywords           | css3, animation, transition |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 356513 |
+| # dependents       | 9 |
+| # downloads        | 665678 |
 | # stars            | 3 |
 
 ## Links

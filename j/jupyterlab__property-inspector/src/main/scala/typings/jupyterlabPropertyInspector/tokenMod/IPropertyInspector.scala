@@ -5,12 +5,14 @@ import typings.luminoWidgets.mod.Widget
 import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IPropertyInspector extends IDisposable {
+  
   def render(content: Widget): Unit = js.native
   def render(content: ReactElement): Unit = js.native
+  
   /**
     * Show the property inspector panel.
     *
@@ -20,4 +22,3 @@ trait IPropertyInspector extends IDisposable {
     */
   def showPanel(): Unit = js.native
 }
-

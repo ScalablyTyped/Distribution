@@ -5,7 +5,7 @@ import typings.std.QueuingStrategy
 import typings.std.Transformer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("streamsaver", "TransformStream")
 @js.native
@@ -17,7 +17,6 @@ class TransformStream[I, O] protected ()
     readableStrategy: QueuingStrategy[O]
   ) = this()
 }
-
 @JSImport("streamsaver", "TransformStream")
 @js.native
 object TransformStream
@@ -27,4 +26,3 @@ object TransformStream
       /* readableStrategy */ QueuingStrategy[js.Object], 
       typings.std.TransformStream[js.Object, js.Object]
     ]
-

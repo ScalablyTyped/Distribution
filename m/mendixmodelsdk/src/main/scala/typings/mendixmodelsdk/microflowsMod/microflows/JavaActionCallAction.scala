@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.microflowsMod.microflows
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.internalMod.AbstractElement
@@ -7,12 +8,13 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.javaactionsMod.javaactions.IJavaAction
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/java-action-call relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/java-action-call relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.JavaActionCallAction")
 @js.native
@@ -22,41 +24,47 @@ class JavaActionCallAction protected () extends MicroflowAction {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FJavaActionCallAction: IModel = js.native
+  
   def javaAction: IJavaAction | Null = js.native
+  
   def javaActionQualifiedName: String | Null = js.native
+  
   def javaAction_=(newValue: IJavaAction | Null): Unit = js.native
+  
   def outputVariableName: String = js.native
   def outputVariableName_=(newValue: String): Unit = js.native
+  
   def parameterMappings: IList[JavaActionParameterMapping] = js.native
+  
   /**
     * In version 7.13.0: introduced
     */
   def useReturnVariable: Boolean = js.native
   def useReturnVariable_=(newValue: Boolean): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.JavaActionCallAction")
 @js.native
 object JavaActionCallAction extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new JavaActionCallAction instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): JavaActionCallAction = js.native
+  
   /**
     * Creates and returns a new JavaActionCallAction instance in the SDK and on the server.
     * The new JavaActionCallAction will be automatically stored in the 'action' property
     * of the parent ActionActivity element passed as argument.
     */
   def createIn(container: ActionActivity): JavaActionCallAction = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

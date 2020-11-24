@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/deploymentmanager/alpha", "deploymentmanager_alpha.Resource$Resources")
 @js.native
 class ResourceResources protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * deploymentmanager.resources.get
     * @desc Gets information about a single resource.
@@ -43,6 +45,7 @@ class ResourceResources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaResource]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.resources.list
     * @desc Lists all resources in a given deployment.
@@ -77,4 +80,3 @@ class ResourceResources protected () extends js.Object {
     callback: BodyResponseCallback[SchemaResourcesListResponse]
   ): Unit = js.native
 }
-

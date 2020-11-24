@@ -3,15 +3,17 @@ package typings.react.mod
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UIEvent[T, E] extends BaseSyntheticEvent[E, EventTarget with T, EventTarget] {
+  
   var detail: Double = js.native
+  
   var view: AbstractView = js.native
 }
-
 object UIEvent {
+  
   @scala.inline
   def apply[T, E](
     bubbles: Boolean,
@@ -36,22 +38,26 @@ object UIEvent {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIEvent[T, E]]
   }
+  
   @scala.inline
   implicit class UIEventOps[Self <: UIEvent[_, _], T, E] (val x: Self with (UIEvent[T, E])) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDetail(value: Double): Self = this.set("detail", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setView(value: AbstractView): Self = this.set("view", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-background-timer"
-version := "2.0-dt-20200515Z-654a86"
+version := "2.0-dt-20200515Z-601e5a"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

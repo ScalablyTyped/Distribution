@@ -10,9 +10,9 @@ React Native authentication with the native Touch ID popup.
 | ------------------ | :-------------: |
 | Full name          | react-native-touch-id |
 | Keywords           | react-native, react, native, touch-id, react-component, react-native-component, authentication, auth, authenticate, mobile |
-| # releases         | 13 |
-| # dependents       | 6 |
-| # downloads        | 704100 |
+| # releases         | 6 |
+| # dependents       | 10 |
+| # downloads        | 764316 |
 | # stars            | 1 |
 
 ## Links

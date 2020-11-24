@@ -2,18 +2,11 @@ package typings.tizenCommonWeb.applicationMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Application extends js.Object {
-  /**
-    * An attribute to store the application information for the current application.
-    */
-  val appInfo: ApplicationInformation = js.native
-  /**
-    * An attribute to store the ID of a running application.
-    */
-  val contextId: ApplicationContextId = js.native
+  
   /**
     * Adds a listener which will invoke a callback function when an event occurs.
     *
@@ -30,6 +23,12 @@ trait Application extends js.Object {
     *
     */
   def addEventListener(event: EventInfo, callback: EventCallback): Double = js.native
+  
+  /**
+    * An attribute to store the application information for the current application.
+    */
+  val appInfo: ApplicationInformation = js.native
+  
   /**
     * Broadcasts a user defined event to all the listeners which are listening for this event.
     *
@@ -44,6 +43,7 @@ trait Application extends js.Object {
     *
     */
   def broadcastEvent(event: EventInfo, data: UserEventData): Unit = js.native
+  
   /**
     * Broadcasts a user defined event to all the trusted listeners which are listening for this event. Applications which have the same certificate as the sending application can receive the event.
     *
@@ -58,6 +58,12 @@ trait Application extends js.Object {
     *
     */
   def broadcastTrustedEvent(event: EventInfo, data: UserEventData): Unit = js.native
+  
+  /**
+    * An attribute to store the ID of a running application.
+    */
+  val contextId: ApplicationContextId = js.native
+  
   /**
     * Exits the current application.
     *
@@ -68,6 +74,7 @@ trait Application extends js.Object {
     *
     */
   def exit(): Unit = js.native
+  
   /**
     * Gets the requested application control passed to the current application.
     *
@@ -89,6 +96,7 @@ trait Application extends js.Object {
     *
     */
   def getRequestedAppControl(): RequestedApplicationControl = js.native
+  
   /**
     * Hides the current application.
     *
@@ -99,6 +107,7 @@ trait Application extends js.Object {
     *
     */
   def hide(): Unit = js.native
+  
   /**
     * Removes an event listener with a specified listener identifier.
     *
@@ -113,8 +122,8 @@ trait Application extends js.Object {
     */
   def removeEventListener(watchId: Double): Unit = js.native
 }
-
 object Application {
+  
   @scala.inline
   def apply(
     addEventListener: (EventInfo, EventCallback) => Double,
@@ -130,36 +139,47 @@ object Application {
     val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), appInfo = appInfo.asInstanceOf[js.Any], broadcastEvent = js.Any.fromFunction2(broadcastEvent), broadcastTrustedEvent = js.Any.fromFunction2(broadcastTrustedEvent), contextId = contextId.asInstanceOf[js.Any], exit = js.Any.fromFunction0(exit), getRequestedAppControl = js.Any.fromFunction0(getRequestedAppControl), hide = js.Any.fromFunction0(hide), removeEventListener = js.Any.fromFunction1(removeEventListener))
     __obj.asInstanceOf[Application]
   }
+  
   @scala.inline
   implicit class ApplicationOps[Self <: Application] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddEventListener(value: (EventInfo, EventCallback) => Double): Self = this.set("addEventListener", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setAppInfo(value: ApplicationInformation): Self = this.set("appInfo", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBroadcastEvent(value: (EventInfo, UserEventData) => Unit): Self = this.set("broadcastEvent", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setBroadcastTrustedEvent(value: (EventInfo, UserEventData) => Unit): Self = this.set("broadcastTrustedEvent", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setContextId(value: ApplicationContextId): Self = this.set("contextId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExit(value: () => Unit): Self = this.set("exit", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetRequestedAppControl(value: () => RequestedApplicationControl): Self = this.set("getRequestedAppControl", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRemoveEventListener(value: Double => Unit): Self = this.set("removeEventListener", js.Any.fromFunction1(value))
   }
-  
 }
-

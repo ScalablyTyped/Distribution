@@ -11,8 +11,8 @@ Give your handlebars.js templates some swag son!
 | Full name          | swag |
 | Keywords           | swag, handlebars, templates, helpers, utilities |
 | # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 89428 |
+| # dependents       | 18 |
+| # downloads        | 48092 |
 | # stars            | 2 |
 
 ## Links

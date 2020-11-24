@@ -23,11 +23,18 @@ import typings.ngTable.publicInterfacesMod.IFilterConfigValues
 import typings.ngTable.publicInterfacesMod.ITableInputAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ng-table", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  val ngTableBrowserModule: IModule = js.native
+  
+  val ngTableCoreModule: IModule = js.native
+  
+  val ngTableModule: IModule = js.native
+  
   @js.native
   class NgTableController[TParams, TCol /* <: IColumnDef | IDynamicTableColDef */] protected ()
     extends typings.ngTable.browserMod.NgTableController[TParams, TCol] {
@@ -43,6 +50,13 @@ object mod extends js.Object {
       ngTableEventsChannel: typings.ngTable.coreMod.NgTableEventsChannel
     ) = this()
   }
+  /* static members */
+  @js.native
+  object NgTableController extends js.Object {
+    
+    @JSName("$inject")
+    var $inject: js.Array[String] = js.native
+  }
   
   @js.native
   class NgTableDefaultGetDataProvider ()
@@ -53,6 +67,13 @@ object mod extends js.Object {
     extends typings.ngTable.coreMod.NgTableEventsChannel {
     def this($rootScope: IRootScopeService) = this()
   }
+  /* static members */
+  @js.native
+  object NgTableEventsChannel extends js.Object {
+    
+    @JSName("$inject")
+    var $inject: js.Array[String] = js.native
+  }
   
   @js.native
   class NgTableFilterConfig protected ()
@@ -62,11 +83,25 @@ object mod extends js.Object {
       */
     config: IFilterConfigValues) = this()
   }
+  /* static members */
+  @js.native
+  object NgTableFilterConfig extends js.Object {
+    
+    @JSName("$inject")
+    var $inject: js.Array[String] = js.native
+  }
   
   @js.native
   class NgTableFilterConfigProvider protected ()
     extends typings.ngTable.browserMod.NgTableFilterConfigProvider {
     def this($injector: IInjectorService) = this()
+  }
+  /* static members */
+  @js.native
+  object NgTableFilterConfigProvider extends js.Object {
+    
+    @JSName("$inject")
+    var $inject: js.Array[String] = js.native
   }
   
   @js.native
@@ -78,48 +113,16 @@ object mod extends js.Object {
     def this(baseParameters: Boolean, baseSettings: ISettings[T]) = this()
     def this(baseParameters: IParamValues[T], baseSettings: ISettings[T]) = this()
   }
-  
-  val ngTableBrowserModule: IModule = js.native
-  val ngTableCoreModule: IModule = js.native
-  val ngTableModule: IModule = js.native
-  /* static members */
-  @js.native
-  object NgTableController extends js.Object {
-    @JSName("$inject")
-    var $inject: js.Array[String] = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object NgTableEventsChannel extends js.Object {
-    @JSName("$inject")
-    var $inject: js.Array[String] = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object NgTableFilterConfig extends js.Object {
-    @JSName("$inject")
-    var $inject: js.Array[String] = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object NgTableFilterConfigProvider extends js.Object {
-    @JSName("$inject")
-    var $inject: js.Array[String] = js.native
-  }
-  
   /* static members */
   @js.native
   object NgTableParams extends js.Object {
+    
     @JSName("$log")
     var $log: js.Any = js.native
+    
     @JSName("$q")
     var $q: js.Any = js.native
-    var ngTableDefaults: js.Any = js.native
-    var ngTableEventsChannel: js.Any = js.native
-    var ngTableSettings: js.Any = js.native
+    
     def init(
       $q: IQService,
       $log: ILogService,
@@ -127,7 +130,11 @@ object mod extends js.Object {
       ngTableEventsChannel: typings.ngTable.ngTableEventsChannelMod.NgTableEventsChannel,
       ngTableSettings: NgTableSettings
     ): Unit = js.native
+    
+    var ngTableDefaults: js.Any = js.native
+    
+    var ngTableEventsChannel: js.Any = js.native
+    
+    var ngTableSettings: js.Any = js.native
   }
-  
 }
-

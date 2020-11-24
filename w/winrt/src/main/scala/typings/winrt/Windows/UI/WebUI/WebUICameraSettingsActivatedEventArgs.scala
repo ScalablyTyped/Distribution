@@ -6,14 +6,14 @@ import typings.winrt.Windows.ApplicationModel.Activation.ICameraSettingsActivate
 import typings.winrt.Windows.ApplicationModel.Activation.SplashScreen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebUICameraSettingsActivatedEventArgs
   extends ICameraSettingsActivatedEventArgs
      with IActivatedEventArgsDeferral
-
 object WebUICameraSettingsActivatedEventArgs {
+  
   @scala.inline
   def apply(
     activatedOperation: ActivatedOperation,
@@ -27,4 +27,3 @@ object WebUICameraSettingsActivatedEventArgs {
     __obj.asInstanceOf[WebUICameraSettingsActivatedEventArgs]
   }
 }
-

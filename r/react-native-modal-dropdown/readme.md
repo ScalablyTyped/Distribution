@@ -10,9 +10,9 @@ A react-native dropdown component for both iOS and Android.
 | ------------------ | :-------------: |
 | Full name          | react-native-modal-dropdown |
 | Keywords           | react, react-component, react-native, react-native-component, ios, android, modal, dropdown, picker, select, selector, option |
-| # releases         | 5 |
-| # dependents       | 12 |
-| # downloads        | 414045 |
+| # releases         | 2 |
+| # dependents       | 13 |
+| # downloads        | 454769 |
 | # stars            | 4 |
 
 ## Links

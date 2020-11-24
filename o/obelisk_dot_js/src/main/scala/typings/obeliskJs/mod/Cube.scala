@@ -2,7 +2,7 @@ package typings.obeliskJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("obelisk.js", "Cube")
 @js.native
@@ -53,4 +53,3 @@ class Cube () extends AbstractPrimitive {
   ) = this()
   def this(dimension: CubeDimension, color: CubeColor, border: Boolean, useDefaultCanvas: Boolean) = this()
 }
-

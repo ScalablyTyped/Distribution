@@ -4,11 +4,10 @@ import typings.crittersWebpackPlugin.mod.Critters.CrittersOptions
 import typings.std.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("critters-webpack-plugin", JSImport.Default)
 @js.native
 class default () extends Plugin {
   def this(options: CrittersOptions) = this()
 }
-

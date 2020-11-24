@@ -3,11 +3,12 @@ package typings.winrtUwp.Windows.Media
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Registers a media parser or codec. */
 @js.native
 trait MediaExtensionManager extends js.Object {
+  
   /**
     * Registers an audio decoder for the specified input and output media types.
     * @param activatableClassId The class identifier of the activatable runtime class of the audio decoder. The runtime class must implement the IMediaExtension interface.
@@ -28,6 +29,7 @@ trait MediaExtensionManager extends js.Object {
     outputSubtype: String,
     configuration: IPropertySet
   ): Unit = js.native
+  
   /**
     * Registers an audio encoder for the specified input and output media types.
     * @param activatableClassId The class identifier of the activatable runtime class of the audio encoder. The runtime class must implement the IMediaExtension interface.
@@ -48,6 +50,7 @@ trait MediaExtensionManager extends js.Object {
     outputSubtype: String,
     configuration: IPropertySet
   ): Unit = js.native
+  
   /**
     * Registers a byte-stream handler by file name extension and MIME type.
     * @param activatableClassId The class identifier of the activatable runtime class of the byte-stream handler. The runtime class must implement the IMediaExtension interface.
@@ -63,6 +66,7 @@ trait MediaExtensionManager extends js.Object {
     * @param configuration An optional parameter that contains configuration properties for the byte-stream handler.
     */
   def registerByteStreamHandler(activatableClassId: String, fileExtension: String, mimeType: String, configuration: IPropertySet): Unit = js.native
+  
   /**
     * Registers a scheme handler for the specified URL scheme.
     * @param activatableClassId The class identifier of the activatable runtime class of the scheme handler. The runtime class must implement the IMediaExtension interface.
@@ -76,6 +80,7 @@ trait MediaExtensionManager extends js.Object {
     * @param configuration An optional parameter that contains configuration properties for the scheme handler.
     */
   def registerSchemeHandler(activatableClassId: String, scheme: String, configuration: IPropertySet): Unit = js.native
+  
   /**
     * Registers an video decoder for the specified input and output media types.
     * @param activatableClassId The class identifier of the activatable runtime class of the video decoder. The runtime class must implement the IMediaExtension interface.
@@ -96,6 +101,7 @@ trait MediaExtensionManager extends js.Object {
     outputSubtype: String,
     configuration: IPropertySet
   ): Unit = js.native
+  
   /**
     * Registers a video encoder for the specified input and output media types.
     * @param activatableClassId The class identifier of the activatable runtime class of the video encoder. The runtime class must implement the IMediaExtension interface.
@@ -117,4 +123,3 @@ trait MediaExtensionManager extends js.Object {
     configuration: IPropertySet
   ): Unit = js.native
 }
-

@@ -11,8 +11,8 @@ A Modern JavaScript Date Library
 | Full name          | xdate |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 81 |
-| # downloads        | 1808504 |
+| # dependents       | 96 |
+| # downloads        | 2430949 |
 | # stars            | 1 |
 
 ## Links

@@ -12,11 +12,12 @@ import typings.stripe.mod.fileLinks.IFileLinksListOptions
 import typings.stripe.mod.fileLinks.IFileLinksUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.FileLinks")
 @js.native
 class FileLinks () extends StripeResource {
+  
   def create(data: IFileLinksCreationOptions): js.Promise[IFileLink] = js.native
   /**
     * Creates a new file link object.
@@ -24,6 +25,7 @@ class FileLinks () extends StripeResource {
   def create(data: IFileLinksCreationOptions, options: HeaderOptions): js.Promise[IFileLink] = js.native
   def create(data: IFileLinksCreationOptions, options: HeaderOptions, response: IResponseFn[IFileLink]): js.Promise[IFileLink] = js.native
   def create(data: IFileLinksCreationOptions, response: IResponseFn[IFileLink]): js.Promise[IFileLink] = js.native
+  
   def list(): IListPromise[IFileLink] = js.native
   def list(data: IFileLinksListOptions): IListPromise[IFileLink] = js.native
   /**
@@ -35,6 +37,7 @@ class FileLinks () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[IFileLink] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IFileLink]]): IListPromise[IFileLink] = js.native
   def list(response: IResponseFn[IList[IFileLink]]): IListPromise[IFileLink] = js.native
+  
   def retrieve(id: String): js.Promise[IFileLink] = js.native
   def retrieve(id: String, data: IDataOptions): js.Promise[IFileLink] = js.native
   /**
@@ -46,6 +49,7 @@ class FileLinks () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions): js.Promise[IFileLink] = js.native
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[IFileLink]): js.Promise[IFileLink] = js.native
   def retrieve(id: String, response: IResponseFn[IFileLink]): js.Promise[IFileLink] = js.native
+  
   def update(id: String, data: IFileLinksUpdateOptions): js.Promise[IFileLink] = js.native
   /**
     * Updates an existing file link object. Expired links can no longer be updated. Returns the file link object if successful,
@@ -60,4 +64,3 @@ class FileLinks () extends StripeResource {
   ): js.Promise[IFileLink] = js.native
   def update(id: String, data: IFileLinksUpdateOptions, response: IResponseFn[IFileLink]): js.Promise[IFileLink] = js.native
 }
-

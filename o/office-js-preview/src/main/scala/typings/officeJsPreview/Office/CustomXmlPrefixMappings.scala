@@ -2,7 +2,7 @@ package typings.officeJsPreview.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a collection of CustomXmlPart objects.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CustomXmlPrefixMappings extends js.Object {
+  
   /**
     * Asynchronously adds a prefix to namespace mapping to use when querying an item.
     *
@@ -42,6 +43,7 @@ trait CustomXmlPrefixMappings extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Asynchronously gets the namespace mapped to the specified prefix.
     *
@@ -70,6 +72,7 @@ trait CustomXmlPrefixMappings extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[String], Unit]
   ): Unit = js.native
+  
   /**
     * Asynchronously gets the prefix for the specified namespace.
     *
@@ -99,4 +102,3 @@ trait CustomXmlPrefixMappings extends js.Object {
     callback: js.Function1[/* result */ AsyncResult[String], Unit]
   ): Unit = js.native
 }
-

@@ -40,12 +40,11 @@ import typings.semanticUiNag.semanticUiNagStrings.value
 import typings.semanticUiNag.semanticUiNagStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  @JSName("nag")
-  var nag_Original: Nag = js.native
+  
   def nag(): JQuery = js.native
   def nag(behavior: setting, name: animation, value: AnimationSettings): JQuery = js.native
   def nag(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
@@ -110,6 +109,8 @@ trait JQuery extends js.Object {
   def nag_ClassNameSettings(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
   @JSName("nag")
   def nag_ErrorSettings(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
+  @JSName("nag")
+  var nag_Original: Nag = js.native
   /**
     * Clears cookie so nag shows again
     */
@@ -124,4 +125,3 @@ trait JQuery extends js.Object {
   @JSName("nag")
   def nag_show(behavior: show): JQuery = js.native
 }
-

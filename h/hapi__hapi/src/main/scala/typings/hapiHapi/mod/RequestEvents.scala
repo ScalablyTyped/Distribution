@@ -6,10 +6,11 @@ import typings.hapiHapi.hapiHapiStrings.peek
 import typings.hapiPodium.mod.Podium
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RequestEvents extends Podium {
+  
   @JSName("on")
   def on_disconnect(criteria: disconnect, listener: js.Function1[/* data */ js.UndefOr[scala.Nothing], Unit]): Unit = js.native
   @JSName("on")
@@ -24,6 +25,7 @@ trait RequestEvents extends Podium {
     */
   @JSName("on")
   def on_peek(criteria: peek, listener: PeekListener): Unit = js.native
+  
   @JSName("once")
   def once_disconnect(criteria: disconnect, listener: js.Function1[/* data */ js.UndefOr[scala.Nothing], Unit]): Unit = js.native
   @JSName("once")
@@ -39,4 +41,3 @@ trait RequestEvents extends Podium {
   @JSName("once")
   def once_peek(criteria: peek, listener: PeekListener): Unit = js.native
 }
-

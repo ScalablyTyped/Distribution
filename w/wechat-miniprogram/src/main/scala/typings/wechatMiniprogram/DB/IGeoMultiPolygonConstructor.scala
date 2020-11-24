@@ -3,7 +3,7 @@ package typings.wechatMiniprogram.DB
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IGeoMultiPolygonConstructor
@@ -11,7 +11,7 @@ trait IGeoMultiPolygonConstructor
       (/* polygons */ js.Array[GeoPolygon]) | (/* polygons */ IGeoJSONMultiPolygon), 
       GeoMultiPolygon
     ] {
+  
   def apply(polygons: js.Array[GeoPolygon]): GeoMultiPolygon = js.native
   def apply(polygons: IGeoJSONMultiPolygon): GeoMultiPolygon = js.native
 }
-

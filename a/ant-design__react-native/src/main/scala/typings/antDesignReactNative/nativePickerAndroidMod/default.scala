@@ -9,7 +9,7 @@ import typings.antDesignReactNative.pickerTypesMod.PickerProps
 import typings.react.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native/lib/picker/NativePicker.android", JSImport.Default)
 @js.native
@@ -18,13 +18,13 @@ class default protected () extends ComponentDidMount {
   def this(props: PickerProps) = this()
   def this(props: PickerProps, context: js.Any) = this()
 }
-
 @JSImport("@ant-design/react-native/lib/picker/NativePicker.android", JSImport.Default)
 @js.native
 object default
   extends Instantiable1[(/* props */ PickerProps) | (/* props */ ReadonlyPickerProps), ComponentDidMount]
      with Instantiable2[/* props */ PickerProps, /* context */ js.Any, ComponentDidMount] {
-  var contextType: js.UndefOr[Context[_]] = js.native
+  
   def Item(_props: ValueAny): Null = js.native
+  
+  var contextType: js.UndefOr[Context[_]] = js.native
 }
-

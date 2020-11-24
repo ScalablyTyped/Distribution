@@ -10,9 +10,9 @@ Universal cookies for JavaScript
 | ------------------ | :-------------: |
 | Full name          | universal-cookie |
 | Keywords           | universal, isomophic, cookie |
-| # releases         | 14 |
-| # dependents       | 124 |
-| # downloads        | 9204234 |
+| # releases         | 7 |
+| # dependents       | 173 |
+| # downloads        | 15511105 |
 | # stars            | 8 |
 
 ## Links

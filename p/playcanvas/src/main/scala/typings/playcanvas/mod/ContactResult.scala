@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new ContactResult.
@@ -17,4 +17,3 @@ class ContactResult protected ()
   extends typings.playcanvas.pc.ContactResult {
   def this(other: typings.playcanvas.pc.Entity, contacts: js.Array[typings.playcanvas.pc.ContactPoint]) = this()
 }
-

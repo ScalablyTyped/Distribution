@@ -9,11 +9,13 @@ import typings.pouchdbReplication.pouchdbReplicationStrings.error
 import typings.pouchdbReplication.pouchdbReplicationStrings.paused
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ReplicationEventEmitter[Content /* <: js.Object */, C, F] extends EventEmitter {
+  
   def cancel(): Unit = js.native
+  
   @JSName("on")
   def on_active(event: active, listener: js.Function0[_]): this.type = js.native
   @JSName("on")
@@ -27,4 +29,3 @@ trait ReplicationEventEmitter[Content /* <: js.Object */, C, F] extends EventEmi
   @JSName("on")
   def on_paused(event: paused, listener: js.Function1[/* err */ js.Object, _]): this.type = js.native
 }
-

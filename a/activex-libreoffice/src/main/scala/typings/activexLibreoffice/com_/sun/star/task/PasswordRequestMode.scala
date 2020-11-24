@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * the mode in which a password should be asked
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait PasswordRequestMode extends js.Object
-
 object PasswordRequestMode {
+  
   /**
     * Password creation. <P>
     *
@@ -30,6 +30,7 @@ object PasswordRequestMode {
     */
   @scala.inline
   def PASSWORD_CREATE: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * Ask for a password. <P>
     *
@@ -39,6 +40,7 @@ object PasswordRequestMode {
     */
   @scala.inline
   def PASSWORD_ENTER: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * Wrong password was entered, ask again. <P>
     *
@@ -51,4 +53,3 @@ object PasswordRequestMode {
   @scala.inline
   def PASSWORD_REENTER: `2` = 2.asInstanceOf[`2`]
 }
-

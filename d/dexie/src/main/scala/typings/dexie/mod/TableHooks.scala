@@ -6,14 +6,11 @@ import typings.dexie.dexieStrings.reading
 import typings.dexie.dexieStrings.updating
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TableHooks[T, TKey] extends DexieEventSet {
-  var creating: DexieEvent = js.native
-  var deleting: DexieEvent = js.native
-  var reading: DexieEvent = js.native
-  var updating: DexieEvent = js.native
+  
   def apply(
     eventName: creating,
     subscriber: js.ThisFunction3[
@@ -46,5 +43,12 @@ trait TableHooks[T, TKey] extends DexieEventSet {
       _
     ]
   ): Unit = js.native
+  
+  var creating: DexieEvent = js.native
+  
+  var deleting: DexieEvent = js.native
+  
+  var reading: DexieEvent = js.native
+  
+  var updating: DexieEvent = js.native
 }
-

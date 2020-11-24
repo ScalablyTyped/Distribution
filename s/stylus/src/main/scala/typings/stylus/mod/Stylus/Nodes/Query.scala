@@ -3,26 +3,33 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Query extends Node {
-  var nodes: js.Array[QueryExpr] = js.native
-  var predicate: java.lang.String = js.native
-  var resolvedPredicate: java.lang.String = js.native
-  var resolvedType: java.lang.String = js.native
-  var `type`: java.lang.String = js.native
+  
   /**
     * Merges this query with the `other`.
     */
   def merge(other: Query): Query = js.native
+  
+  var nodes: js.Array[QueryExpr] = js.native
+  
+  var predicate: java.lang.String = js.native
+  
   /**
     * Push the given `expr`.
     */
   def push(expr: QueryExpr): scala.Unit = js.native
+  
+  var resolvedPredicate: java.lang.String = js.native
+  
+  var resolvedType: java.lang.String = js.native
+  
+  var `type`: java.lang.String = js.native
 }
-
 object Query {
+  
   @scala.inline
   def apply(
     coerce: Node => Node,
@@ -50,34 +57,44 @@ object Query {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
+  
   @scala.inline
   implicit class QueryOps[Self <: Query] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: java.lang.String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMerge(value: Query => Query): Self = this.set("merge", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setNodesVarargs(value: QueryExpr*): Self = this.set("nodes", js.Array(value :_*))
+    
     @scala.inline
     def setNodes(value: js.Array[QueryExpr]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPredicate(value: java.lang.String): Self = this.set("predicate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPush(value: QueryExpr => scala.Unit): Self = this.set("push", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setResolvedPredicate(value: java.lang.String): Self = this.set("resolvedPredicate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setResolvedType(value: java.lang.String): Self = this.set("resolvedType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
   }
-  
 }
-

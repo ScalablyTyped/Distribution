@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "del" : "5.1.0"
+      "del" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "del" : "5.1.0"
+      "del" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

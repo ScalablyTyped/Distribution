@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Privileges")
 @js.native
 class ResourcePrivileges protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.privileges.list
     * @desc Retrieves a paginated list of all privileges for a customer.
@@ -42,4 +44,3 @@ class ResourcePrivileges protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPrivileges]
   ): Unit = js.native
 }
-

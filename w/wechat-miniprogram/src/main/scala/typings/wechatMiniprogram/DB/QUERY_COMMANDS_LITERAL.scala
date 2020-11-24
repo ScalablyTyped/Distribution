@@ -2,14 +2,14 @@ package typings.wechatMiniprogram.DB
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait QUERY_COMMANDS_LITERAL extends js.Object
-
 @JSGlobal("DB.QUERY_COMMANDS_LITERAL")
 @js.native
 object QUERY_COMMANDS_LITERAL extends js.Object {
+  
   // array
   @js.native
   sealed trait ALL extends QUERY_COMMANDS_LITERAL
@@ -62,6 +62,4 @@ object QUERY_COMMANDS_LITERAL extends js.Object {
   
   @js.native
   sealed trait SIZE extends QUERY_COMMANDS_LITERAL
-  
 }
-

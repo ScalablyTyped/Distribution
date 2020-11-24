@@ -5,13 +5,15 @@ import typings.soap.typesMod.IHeaders
 import typings.soap.typesMod.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("soap/lib/http", "HttpClient")
 @js.native
 class HttpClient () extends js.Object {
   def this(options: IOptions) = this()
+  
   var _request: js.Any = js.native
+  
   /**
     * Build the HTTP request (method, uri, headers, ...)
     * @param {String} rurl The resource url
@@ -21,8 +23,10 @@ class HttpClient () extends js.Object {
     * @returns {Object} The http request object for the `request` module
     */
   def buildRequest(rurl: String, data: js.Any): js.Any = js.native
+  def buildRequest(rurl: String, data: js.Any, exheaders: js.UndefOr[scala.Nothing], exoptions: IExOptions): js.Any = js.native
   def buildRequest(rurl: String, data: js.Any, exheaders: IHeaders): js.Any = js.native
   def buildRequest(rurl: String, data: js.Any, exheaders: IHeaders, exoptions: IExOptions): js.Any = js.native
+  
   /**
     * Handle the http response
     * @param {Object} The req object
@@ -31,6 +35,7 @@ class HttpClient () extends js.Object {
     * @param {Object} The parsed body
     */
   def handleResponse(req: typings.request.mod.Request, res: Response, body: js.Any): js.Any = js.native
+  
   def request(
     rurl: String,
     data: js.Any,
@@ -40,7 +45,38 @@ class HttpClient () extends js.Object {
     rurl: String,
     data: js.Any,
     callback: js.Function3[/* error */ js.Any, /* res */ js.UndefOr[js.Any], /* body */ js.UndefOr[js.Any], _],
+    exheaders: js.UndefOr[scala.Nothing],
+    exoptions: js.UndefOr[scala.Nothing],
+    caller: js.Any
+  ): typings.request.mod.Request = js.native
+  def request(
+    rurl: String,
+    data: js.Any,
+    callback: js.Function3[/* error */ js.Any, /* res */ js.UndefOr[js.Any], /* body */ js.UndefOr[js.Any], _],
+    exheaders: js.UndefOr[scala.Nothing],
+    exoptions: IExOptions
+  ): typings.request.mod.Request = js.native
+  def request(
+    rurl: String,
+    data: js.Any,
+    callback: js.Function3[/* error */ js.Any, /* res */ js.UndefOr[js.Any], /* body */ js.UndefOr[js.Any], _],
+    exheaders: js.UndefOr[scala.Nothing],
+    exoptions: IExOptions,
+    caller: js.Any
+  ): typings.request.mod.Request = js.native
+  def request(
+    rurl: String,
+    data: js.Any,
+    callback: js.Function3[/* error */ js.Any, /* res */ js.UndefOr[js.Any], /* body */ js.UndefOr[js.Any], _],
     exheaders: IHeaders
+  ): typings.request.mod.Request = js.native
+  def request(
+    rurl: String,
+    data: js.Any,
+    callback: js.Function3[/* error */ js.Any, /* res */ js.UndefOr[js.Any], /* body */ js.UndefOr[js.Any], _],
+    exheaders: IHeaders,
+    exoptions: js.UndefOr[scala.Nothing],
+    caller: js.Any
   ): typings.request.mod.Request = js.native
   def request(
     rurl: String,
@@ -57,9 +93,31 @@ class HttpClient () extends js.Object {
     exoptions: IExOptions,
     caller: js.Any
   ): typings.request.mod.Request = js.native
+  
   def requestStream(rurl: String, data: js.Any): typings.request.mod.Request = js.native
+  def requestStream(
+    rurl: String,
+    data: js.Any,
+    exheaders: js.UndefOr[scala.Nothing],
+    exoptions: js.UndefOr[scala.Nothing],
+    caller: js.Any
+  ): typings.request.mod.Request = js.native
+  def requestStream(rurl: String, data: js.Any, exheaders: js.UndefOr[scala.Nothing], exoptions: IExOptions): typings.request.mod.Request = js.native
+  def requestStream(
+    rurl: String,
+    data: js.Any,
+    exheaders: js.UndefOr[scala.Nothing],
+    exoptions: IExOptions,
+    caller: js.Any
+  ): typings.request.mod.Request = js.native
   def requestStream(rurl: String, data: js.Any, exheaders: IHeaders): typings.request.mod.Request = js.native
+  def requestStream(
+    rurl: String,
+    data: js.Any,
+    exheaders: IHeaders,
+    exoptions: js.UndefOr[scala.Nothing],
+    caller: js.Any
+  ): typings.request.mod.Request = js.native
   def requestStream(rurl: String, data: js.Any, exheaders: IHeaders, exoptions: IExOptions): typings.request.mod.Request = js.native
   def requestStream(rurl: String, data: js.Any, exheaders: IHeaders, exoptions: IExOptions, caller: js.Any): typings.request.mod.Request = js.native
 }
-

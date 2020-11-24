@@ -2,11 +2,12 @@ package typings.luminoAlgorithm.arrayMod.ArrayExt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/array", "ArrayExt.fill")
 @js.native
 object fill extends js.Object {
+  
   /**
     * Fill an array with a static value.
     *
@@ -47,4 +48,3 @@ object fill extends js.Object {
   def apply[T](array: MutableArrayLike[T], value: T, start: Double): Unit = js.native
   def apply[T](array: MutableArrayLike[T], value: T, start: Double, stop: Double): Unit = js.native
 }
-

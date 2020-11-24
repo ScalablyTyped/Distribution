@@ -7,11 +7,12 @@ import typings.std.Window
 import typings.useItEventListener.useItEventListenerStrings.pointerout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@use-it/event-listener", JSImport.Default)
 @js.native
 object default_pointerout extends js.Object {
+  
   def apply(eventName: pointerout, handler: PointerEvent): Unit = js.native
   def apply(eventName: pointerout, handler: PointerEvent, element: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
   def apply(
@@ -39,4 +40,3 @@ object default_pointerout extends js.Object {
   def apply(eventName: pointerout, handler: PointerEvent, element: Window): Unit = js.native
   def apply(eventName: pointerout, handler: PointerEvent, element: Window, options: Options): Unit = js.native
 }
-

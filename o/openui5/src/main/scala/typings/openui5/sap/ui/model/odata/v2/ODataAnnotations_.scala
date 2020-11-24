@@ -4,10 +4,11 @@ import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.base.EventProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ODataAnnotations_ extends EventProvider {
+  
   /**
     * This event exists for compatibility with the old Annotation loaderAttaches the given callback to the
     * <code>allFailed</code> event. This event is fired when no annotation from a group ofsources was
@@ -21,6 +22,7 @@ trait ODataAnnotations_ extends EventProvider {
     */
   def attachAllFailed(oData: js.Any, fnFunction: js.Any): ODataAnnotations = js.native
   def attachAllFailed(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * Attaches the given callback to the <code>error</code> event, which is fired whenever a source cannot
     * be loaded, parsed ormerged into the annotation data.The following parameters will be set on the
@@ -36,6 +38,7 @@ trait ODataAnnotations_ extends EventProvider {
     */
   def attachError(oData: js.Any, fnFunction: js.Any): ODataAnnotations = js.native
   def attachError(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * Attaches the given callback to the <code>failed</code> event. This event is fired when at least one
     * annotation from a groupof sources was not successfully (loaded,) parsed or merged.The parameter
@@ -49,6 +52,7 @@ trait ODataAnnotations_ extends EventProvider {
     */
   def attachFailed(oData: js.Any, fnFunction: js.Any): ODataAnnotations = js.native
   def attachFailed(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * Attaches the given callback to the <code>loaded</code> event. This event is fired when all
     * annotations from a group ofsources was successfully (loaded,) parsed and merged.The parameter
@@ -62,6 +66,7 @@ trait ODataAnnotations_ extends EventProvider {
     */
   def attachLoaded(oData: js.Any, fnFunction: js.Any): ODataAnnotations = js.native
   def attachLoaded(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * This event exists for compatibility with the old Annotation loaderAttaches the given callback to the
     * <code>someLoaded</code> event. This event is fired when at least one annotation from agroup of
@@ -76,6 +81,7 @@ trait ODataAnnotations_ extends EventProvider {
     */
   def attachSomeLoaded(oData: js.Any, fnFunction: js.Any): ODataAnnotations = js.native
   def attachSomeLoaded(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * Attaches the given callback to the <code>success</code> event, which is fired whenever a source has
     * been successfully(loaded,) parsed and merged into the annotation data.The following parameters will
@@ -91,6 +97,7 @@ trait ODataAnnotations_ extends EventProvider {
     */
   def attachSuccess(oData: js.Any, fnFunction: js.Any): ODataAnnotations = js.native
   def attachSuccess(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * Detaches the given callback from the <code>allFailed</code> event.The passed function and listener
     * object must match the ones previously used for attaching to the event.
@@ -102,6 +109,7 @@ trait ODataAnnotations_ extends EventProvider {
     */
   def detachAllFailed(fnFunction: js.Any): ODataAnnotations = js.native
   def detachAllFailed(fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * Detaches the given callback from the <code>error</code> event.The passed function and listener
     * object must match the ones previously used for attaching to the event.
@@ -113,6 +121,7 @@ trait ODataAnnotations_ extends EventProvider {
     */
   def detachError(fnFunction: js.Any): ODataAnnotations = js.native
   def detachError(fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * Detaches the given callback from the <code>failed</code> event.The passed function and listener
     * object must match the ones previously used for attaching to the event.
@@ -124,6 +133,7 @@ trait ODataAnnotations_ extends EventProvider {
     */
   def detachFailed(fnFunction: js.Any): ODataAnnotations = js.native
   def detachFailed(fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * Detaches the given callback from the <code>loaded</code> event.The passed function and listener
     * object must match the ones previously used for attaching to the event.
@@ -135,6 +145,7 @@ trait ODataAnnotations_ extends EventProvider {
     */
   def detachLoaded(fnFunction: js.Any): ODataAnnotations = js.native
   def detachLoaded(fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * Detaches the given callback from the <code>someLoaded</code> event.The passed function and listener
     * object must match the ones previously used for attaching to the event.
@@ -146,6 +157,7 @@ trait ODataAnnotations_ extends EventProvider {
     */
   def detachSomeLoaded(fnFunction: js.Any): ODataAnnotations = js.native
   def detachSomeLoaded(fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * Detaches the given callback from the <code>success</code> event.The passed function and listener
     * object must match the ones previously used for attaching to the event.
@@ -157,23 +169,27 @@ trait ODataAnnotations_ extends EventProvider {
     */
   def detachSuccess(fnFunction: js.Any): ODataAnnotations = js.native
   def detachSuccess(fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * V1 API Compatibility method. @see sap.ui.model.odata.v2.ODataAnnotations#getDataReturns the parsed
     * and merged annotation data object
     * @returns returns annotations data
     */
   def getAnnotationsData(): js.Any = js.native
+  
   /**
     * Returns the parsed and merged annotation data object
     * @returns returns annotations data
     */
   def getData(): js.Any = js.native
+  
   /**
     * Returns a promise that resolves when the annotation sources that were added up to this point were
     * successfully(loaded,) parsed and merged
     * @returns The Promise that resolves/rejects after the last added sources have been processed
     */
   def loaded(): JQueryPromise[_] = js.native
+  
   /**
     * Set custom headers which are provided in a key/value map. These headers are used for all
     * requests.The "Accept-Language" header cannot be modified and is set using the core's language
@@ -184,4 +200,3 @@ trait ODataAnnotations_ extends EventProvider {
     */
   def setHeaders(mHeaders: js.Any): Unit = js.native
 }
-

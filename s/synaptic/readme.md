@@ -10,9 +10,9 @@ architecture-free neural network library
 | ------------------ | :-------------: |
 | Full name          | synaptic |
 | Keywords           | neural network, machine learning, long short term memory, perceptron, architecture free |
-| # releases         | 1 |
-| # dependents       | 24 |
-| # downloads        | 30682 |
+| # releases         | 0 |
+| # dependents       | 23 |
+| # downloads        | 27653 |
 | # stars            | 19 |
 
 ## Links

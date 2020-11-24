@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "openapi-schema-validator" : "7.0.0"
+      "openapi-schema-validator" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "openapi-schema-validator" : "7.0.0"
+      "openapi-schema-validator" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

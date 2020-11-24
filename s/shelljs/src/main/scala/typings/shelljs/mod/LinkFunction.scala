@@ -2,10 +2,11 @@ package typings.shelljs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LinkFunction extends js.Object {
+  
   /**
     * Links source to dest. Use `-f` to force the link, should dest already exist.
     *
@@ -26,4 +27,3 @@ trait LinkFunction extends js.Object {
     */
   def apply(source: String, dest: String): ShellString = js.native
 }
-

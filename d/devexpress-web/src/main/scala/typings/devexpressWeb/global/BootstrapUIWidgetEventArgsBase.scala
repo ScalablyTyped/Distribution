@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides base data for the client-side events.
@@ -18,4 +18,3 @@ class BootstrapUIWidgetEventArgsBase protected ()
     */
   def this(component: js.Any, element: js.Any) = this()
 }
-

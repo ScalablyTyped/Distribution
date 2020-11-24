@@ -2,7 +2,7 @@ package typings.akamaiEdgeworkers.EW
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // onOriginRequest
 @js.native
@@ -12,4 +12,3 @@ trait IngressOriginRequest
      with ReadsVariables
      with Request
      with MutatesVariables
-

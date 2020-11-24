@@ -1,9 +1,10 @@
 package typings.wechatMiniprogram.global
 
 import org.scalablytyped.runtime.TopLevel
+import typings.wechatMiniprogram.WechatMiniprogram.Page.GetCurrentPages
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 获取当前页面栈。数组中第一个元素为首页，最后一个元素为当前页面。
@@ -13,6 +14,4 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("getCurrentPages")
 @js.native
-object getCurrentPages
-  extends TopLevel[typings.wechatMiniprogram.WechatMiniprogram.Page.getCurrentPages]
-
+object getCurrentPages extends TopLevel[GetCurrentPages]

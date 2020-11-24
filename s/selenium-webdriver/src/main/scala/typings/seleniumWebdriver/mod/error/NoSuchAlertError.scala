@@ -2,7 +2,7 @@ package typings.seleniumWebdriver.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An attempt was made to operate on a modal dialog when one was not open.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class NoSuchAlertError () extends WebDriverError {
   def this(message: String) = this()
 }
-

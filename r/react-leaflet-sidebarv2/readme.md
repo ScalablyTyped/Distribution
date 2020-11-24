@@ -10,9 +10,9 @@ A react-leaflet plugin for leaflet-sidebar-v2
 | ------------------ | :-------------: |
 | Full name          | react-leaflet-sidebarv2 |
 | Keywords           | react, leaflet, sidebar |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 6897 |
+| # downloads        | 10525 |
 | # stars            | 0 |
 
 ## Links

@@ -4,7 +4,7 @@ import typings.std.HTMLElement
 import typings.std.HTMLIFrameElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@vimeo/player", JSImport.Default)
 @js.native
@@ -16,4 +16,3 @@ class default protected () extends Player {
   def this(element: HTMLElement, options: Options) = this()
   def this(element: HTMLIFrameElement, options: Options) = this()
 }
-

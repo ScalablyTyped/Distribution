@@ -11,8 +11,8 @@ Typings are for version 1.0
 | Full name          | react-native-bluetooth-serial |
 | Keywords           | bluetooth, react-native |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 7561 |
+| # dependents       | 1 |
+| # downloads        | 9181 |
 | # stars            | 1 |
 
 ## Links

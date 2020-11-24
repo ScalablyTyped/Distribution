@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Globaloperations")
 @js.native
 class ResourceGlobaloperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.globalOperations.aggregatedList
     * @desc Retrieves an aggregated list of all operations.
@@ -48,6 +48,9 @@ class ResourceGlobaloperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperationAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.globalOperations.delete
     * @desc Deletes the specified Operations resource.
@@ -77,6 +80,7 @@ class ResourceGlobaloperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * compute.globalOperations.get
     * @desc Retrieves the specified Operations resource. Gets a list of
@@ -107,6 +111,7 @@ class ResourceGlobaloperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.globalOperations.list
     * @desc Retrieves a list of Operation resources contained within the
@@ -140,6 +145,7 @@ class ResourceGlobaloperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperationList]
   ): Unit = js.native
+  
   def wait(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def wait(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def wait(params: ParamsResourceGlobaloperationsWait): GaxiosPromise[SchemaOperation] = js.native
@@ -156,4 +162,3 @@ class ResourceGlobaloperations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

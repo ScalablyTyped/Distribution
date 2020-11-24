@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InputDecorator
   extends Instantiable0[js.Any]
      with Instantiable1[/* bindingPropertyName */ String, js.Any] {
+  
   /**
     * Decorator that marks a class field as an input property and supplies configuration metadata.
     * The input property is bound to a DOM property in the template. During change detection,
@@ -58,4 +59,3 @@ trait InputDecorator
   def apply(): js.Any = js.native
   def apply(bindingPropertyName: String): js.Any = js.native
 }
-

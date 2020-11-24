@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The format of query rows fetched when using connection.execute() or connection.queryStream().
@@ -25,4 +25,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "outFormat")
 @js.native
 object outFormat extends TopLevel[Double]
-

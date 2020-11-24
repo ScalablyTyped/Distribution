@@ -2,17 +2,17 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SpecialCellValueType extends js.Object
-
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.SpecialCellValueType")
 @js.native
 object SpecialCellValueType extends js.Object {
+  
   /**
     * Cells that have errors, true/false, numeric, or a string value.
     *
@@ -117,6 +117,4 @@ object SpecialCellValueType extends js.Object {
     */
   @js.native
   sealed trait text extends SpecialCellValueType
-  
 }
-

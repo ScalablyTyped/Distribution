@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartMapProjectionType extends js.Object
-
 /**
   *
   * Represents the region projection type of a chart series layout. This only applies to region map charts.
@@ -16,6 +15,7 @@ sealed trait ChartMapProjectionType extends js.Object
 @JSGlobal("Excel.ChartMapProjectionType")
 @js.native
 object ChartMapProjectionType extends js.Object {
+  
   @js.native
   sealed trait albers extends ChartMapProjectionType
   
@@ -30,6 +30,4 @@ object ChartMapProjectionType extends js.Object {
   
   @js.native
   sealed trait robinson extends ChartMapProjectionType
-  
 }
-

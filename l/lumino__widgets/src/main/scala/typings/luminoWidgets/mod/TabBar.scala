@@ -3,7 +3,7 @@ package typings.luminoWidgets.mod
 import typings.luminoWidgets.tabbarMod.TabBar.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets", "TabBar")
 @js.native
@@ -16,10 +16,15 @@ class TabBar[T] ()
   extends typings.luminoWidgets.tabbarMod.TabBar[T] {
   def this(options: IOptions[T]) = this()
 }
-
 @JSImport("@lumino/widgets", "TabBar")
 @js.native
 object TabBar extends js.Object {
+  
+  /**
+    * The default `Renderer` instance.
+    */
+  val defaultRenderer: typings.luminoWidgets.tabbarMod.TabBar.Renderer = js.native
+  
   /**
     * The default implementation of `IRenderer`.
     *
@@ -32,10 +37,4 @@ object TabBar extends js.Object {
     */
   class Renderer ()
     extends typings.luminoWidgets.tabbarMod.TabBar.Renderer
-  
-  /**
-    * The default `Renderer` instance.
-    */
-  val defaultRenderer: typings.luminoWidgets.tabbarMod.TabBar.Renderer = js.native
 }
-

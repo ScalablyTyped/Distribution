@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Contacts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Field extends js.Object
-
 /**
   * An enum for contacts fields.
   */
 @JSGlobal("GoogleAppsScript.Contacts.Field")
 @js.native
 object Field extends js.Object {
+  
   @js.native
   sealed trait AIM extends Field
   
@@ -141,6 +141,4 @@ object Field extends js.Object {
   
   @js.native
   sealed trait YAHOO extends Field
-  
 }
-

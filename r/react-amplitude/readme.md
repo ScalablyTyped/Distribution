@@ -10,9 +10,9 @@ React Amplitude Analytics
 | ------------------ | :-------------: |
 | Full name          | react-amplitude |
 | Keywords           | React, Amplitude, React Amplitude, Universal Analytics |
-| # releases         | 9 |
+| # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 34564 |
+| # downloads        | 25281 |
 | # stars            | 0 |
 
 ## Links

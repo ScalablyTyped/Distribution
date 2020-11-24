@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium.UI.iOS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection of properties used to initialize a web view.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebViewConfiguration ()
   extends typings.titanium.Titanium.UI.iOS.WebViewConfiguration
-

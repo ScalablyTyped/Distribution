@@ -7,7 +7,7 @@ import typings.xrm.Xrm.FormContext
 import typings.xrm.Xrm.GlobalContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the event context.
@@ -17,26 +17,31 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait EventContext extends js.Object {
+  
   /**
     * Gets the Xrm context.
     * @returns The Xrm context.
     */
   def getContext(): GlobalContext = js.native
+  
   /**
     * Gets the handler's depth, which is the order in which the handler is executed.
     * @returns The depth, a 0-based index.
     */
   def getDepth(): Double = js.native
+  
   /**
     * Gets a reference to the object for which event occurred.
     * @returns The event source.
     */
   def getEventSource(): Attribute | Control | Entity = js.native
+  
   /**
     * Gets a reference to the currnet form context
     * @returns The {@link FormContext form context}
     */
   def getFormContext(): FormContext = js.native
+  
   /**
     * @summary Gets the shared variable with the specified key.
     * @param T Generic type parameter.
@@ -46,6 +51,7 @@ trait EventContext extends js.Object {
     * Used to pass values between handlers of an event.
     */
   def getSharedVariable[T](key: String): T = js.native
+  
   /**
     * @summary Sets a shared variable.
     * @param T Generic type parameter.
@@ -56,8 +62,8 @@ trait EventContext extends js.Object {
     */
   def setSharedVariable[T](key: String, value: T): Unit = js.native
 }
-
 object EventContext {
+  
   @scala.inline
   def apply(
     getContext: () => GlobalContext,
@@ -70,30 +76,38 @@ object EventContext {
     val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction0(getContext), getDepth = js.Any.fromFunction0(getDepth), getEventSource = js.Any.fromFunction0(getEventSource), getFormContext = js.Any.fromFunction0(getFormContext), getSharedVariable = js.Any.fromFunction1(getSharedVariable), setSharedVariable = js.Any.fromFunction2(setSharedVariable))
     __obj.asInstanceOf[EventContext]
   }
+  
   @scala.inline
   implicit class EventContextOps[Self <: EventContext] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetContext(value: () => GlobalContext): Self = this.set("getContext", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetDepth(value: () => Double): Self = this.set("getDepth", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetEventSource(value: () => Attribute | Control | Entity): Self = this.set("getEventSource", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetFormContext(value: () => FormContext): Self = this.set("getFormContext", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetSharedVariable(value: String => js.Any): Self = this.set("getSharedVariable", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetSharedVariable(value: (String, js.Any) => Unit): Self = this.set("setSharedVariable", js.Any.fromFunction2(value))
   }
-  
 }
-

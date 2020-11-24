@@ -3,10 +3,11 @@ package typings.tensorflowTfjsLayers.recurrentMod
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BaseRNNLayerArgs extends LayerArgs {
+  
   /**
     * A RNN cell instance. A RNN cell is a class that has:
     *   - a `call()` method, which takes `[Tensor, Tensor]` as the
@@ -30,17 +31,20 @@ trait BaseRNNLayerArgs extends LayerArgs {
     * efficient stacked RNN.
     */
   var cell: js.UndefOr[RNNCell | js.Array[RNNCell]] = js.native
+  
   /**
     * If `true`, process the input sequence backwards and return the reversed
     * sequence (default: `false`).
     */
   var goBackwards: js.UndefOr[Boolean] = js.native
+  
   /**
     * Dimensionality of the input (integer).
     *   This option (or alternatively, the option `inputShape`) is required when
     *   this layer is used as the first layer in a model.
     */
   var inputDim: js.UndefOr[Double] = js.native
+  
   /**
     * Length of the input sequences, to be specified when it is constant.
     * This argument is required if you are going to connect `Flatten` then
@@ -50,15 +54,18 @@ trait BaseRNNLayerArgs extends LayerArgs {
     * first layer (e.g., via the `inputShape` option).
     */
   var inputLength: js.UndefOr[Double] = js.native
+  
   /**
     * Whether to return the last output in the output sequence, or the full
     * sequence.
     */
   var returnSequences: js.UndefOr[Boolean] = js.native
+  
   /**
     * Whether to return the last state in addition to the output.
     */
   var returnState: js.UndefOr[Boolean] = js.native
+  
   /**
     * If `true`, the last state for each sample at index i in a batch will be
     * used as initial state of the sample of index i in the following batch
@@ -85,6 +92,7 @@ trait BaseRNNLayerArgs extends LayerArgs {
     * specific layer or on the entire model.
     */
   var stateful: js.UndefOr[Boolean] = js.native
+  
   /**
     * If `true`, the network will be unrolled, else a symbolic loop will be
     * used. Unrolling can speed-up a RNN, although it tends to be more memory-
@@ -96,59 +104,78 @@ trait BaseRNNLayerArgs extends LayerArgs {
     */
   var unroll: js.UndefOr[Boolean] = js.native
 }
-
 object BaseRNNLayerArgs {
+  
   @scala.inline
   def apply(): BaseRNNLayerArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseRNNLayerArgs]
   }
+  
   @scala.inline
   implicit class BaseRNNLayerArgsOps[Self <: BaseRNNLayerArgs] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCellVarargs(value: RNNCell*): Self = this.set("cell", js.Array(value :_*))
+    
     @scala.inline
     def setCell(value: RNNCell | js.Array[RNNCell]): Self = this.set("cell", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCell: Self = this.set("cell", js.undefined)
+    
     @scala.inline
     def setGoBackwards(value: Boolean): Self = this.set("goBackwards", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGoBackwards: Self = this.set("goBackwards", js.undefined)
+    
     @scala.inline
     def setInputDim(value: Double): Self = this.set("inputDim", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInputDim: Self = this.set("inputDim", js.undefined)
+    
     @scala.inline
     def setInputLength(value: Double): Self = this.set("inputLength", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInputLength: Self = this.set("inputLength", js.undefined)
+    
     @scala.inline
     def setReturnSequences(value: Boolean): Self = this.set("returnSequences", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReturnSequences: Self = this.set("returnSequences", js.undefined)
+    
     @scala.inline
     def setReturnState(value: Boolean): Self = this.set("returnState", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReturnState: Self = this.set("returnState", js.undefined)
+    
     @scala.inline
     def setStateful(value: Boolean): Self = this.set("stateful", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStateful: Self = this.set("stateful", js.undefined)
+    
     @scala.inline
     def setUnroll(value: Boolean): Self = this.set("unroll", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUnroll: Self = this.set("unroll", js.undefined)
   }
-  
 }
-

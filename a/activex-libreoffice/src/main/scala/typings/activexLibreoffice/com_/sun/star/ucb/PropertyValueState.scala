@@ -6,7 +6,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * defines the states of a property value in the process of obtaining the value (asynchronously).
@@ -19,19 +19,21 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
 trait PropertyValueState extends js.Object
-
 object PropertyValueState {
+  
   /** The given property name/handle is invalid. */
   @scala.inline
   def INVALID_NAME: `2` = 2.asInstanceOf[`2`]
+  
   /** The given property type is invalid. */
   @scala.inline
   def INVALID_TYPE: `3` = 3.asInstanceOf[`3`]
+  
   /** The value was obtained. <p>The value is stored in PropertyValueInfo::Value. */
   @scala.inline
   def PROCESSED: `1` = 1.asInstanceOf[`1`]
+  
   /** The property value was not obtained yet. */
   @scala.inline
   def UNPROCESSED: `0` = 0.asInstanceOf[`0`]
 }
-

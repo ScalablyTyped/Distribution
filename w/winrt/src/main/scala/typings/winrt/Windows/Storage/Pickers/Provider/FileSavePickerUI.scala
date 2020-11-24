@@ -3,12 +3,12 @@ package typings.winrt.Windows.Storage.Pickers.Provider
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FileSavePickerUI extends IFileSavePickerUI
-
 object FileSavePickerUI {
+  
   @scala.inline
   def apply(
     allowedFileTypes: IVectorView[String],
@@ -23,4 +23,3 @@ object FileSavePickerUI {
     __obj.asInstanceOf[FileSavePickerUI]
   }
 }
-

@@ -11,8 +11,8 @@ Extends Chai with assertions about promises.
 | Full name          | chai-as-promised |
 | Keywords           | chai, chai-plugin, browser, async, testing, assertions, promises, promises-aplus |
 | # releases         | 1 |
-| # dependents       | 471 |
-| # downloads        | 26512084 |
+| # dependents       | 534 |
+| # downloads        | 35409417 |
 | # stars            | 60 |
 
 ## Links

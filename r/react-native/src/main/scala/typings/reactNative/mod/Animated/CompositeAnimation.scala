@@ -2,14 +2,16 @@ package typings.reactNative.mod.Animated
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CompositeAnimation extends js.Object {
+  
   /**
     * Stops any running animation and resets the value to its original.
     */
   def reset(): Unit = js.native
+  
   /**
     * Animations are started by calling start() on your animation.
     * start() takes a completion callback that will be called when the
@@ -27,9 +29,9 @@ trait CompositeAnimation extends js.Object {
     */
   def start(): Unit = js.native
   def start(callback: EndCallback): Unit = js.native
+  
   /**
     * Stops any running animation.
     */
   def stop(): Unit = js.native
 }
-

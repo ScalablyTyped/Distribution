@@ -2,11 +2,12 @@ package typings.wyt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wyt", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * @param turnsPerInterval The number of turns that can be taken within a
     * certain interval.
@@ -17,6 +18,7 @@ object mod extends js.Object {
     * order to not exceed the limit.
     */
   def apply(turnsPerInterval: Double, interval: Double): WaitTurn = js.native
+  
   /**
     * @param turns (default=1) The number of turns that will be taken at the
     * same time. You can not await more turns at the same time as
@@ -29,4 +31,3 @@ object mod extends js.Object {
     */
   type WaitTurn = js.Function1[/* turns */ js.UndefOr[Double], js.Promise[Double]]
 }
-

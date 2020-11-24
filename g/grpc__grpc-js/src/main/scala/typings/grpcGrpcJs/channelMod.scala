@@ -11,18 +11,21 @@ import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@grpc/grpc-js/build/src/channel", JSImport.Namespace)
 @js.native
 object channelMod extends js.Object {
+  
   @js.native
   trait Channel extends js.Object {
+    
     /**
       * Close the channel. This has the same functionality as the existing
       * grpc.Client.prototype.close
       */
     def close(): Unit = js.native
+    
     def createCall(
       method: String,
       deadline: Deadline,
@@ -80,6 +83,7 @@ object channelMod extends js.Object {
     parentCall: js.Any,
       propagateFlags: Double
     ): Call = js.native
+    
     /**
       * Get the channel's current connectivity state. This method is here mainly
       * because it is in the existing internal Channel class, and there isn't
@@ -89,10 +93,12 @@ object channelMod extends js.Object {
       *     call starts.
       */
     def getConnectivityState(tryToConnect: Boolean): ConnectivityState = js.native
+    
     /**
       * Return the target that this channel connects to
       */
     def getTarget(): String = js.native
+    
     def watchConnectivityState(
       currentState: ConnectivityState,
       deadline: Double,
@@ -118,18 +124,44 @@ object channelMod extends js.Object {
   @js.native
   class ChannelImplementation protected () extends Channel {
     def this(target: String, credentials: ChannelCredentials, options: ChannelOptions) = this()
+    
+    def _startCallStream(stream: Http2CallStream, metadata: Metadata): Unit = js.native
+    
+    /**
+      * This timer does not do anything on its own. Its purpose is to hold the
+      * event loop open while there are any pending calls for the channel that
+      * have not yet been assigned to specific subchannels. In other words,
+      * the invariant is that callRefTimer is reffed if and only if pickQueue
+      * is non-empty.
+      */
+    var callRefTimer: js.Any = js.native
+    
     var connectivityState: js.Any = js.native
+    
     var connectivityStateWatchers: js.Any = js.native
+    
     val credentials: js.Any = js.native
+    
     var currentPicker: js.Any = js.native
+    
     var defaultAuthority: js.Any = js.native
+    
     var filterStackFactory: js.Any = js.native
+    
     val options: js.Any = js.native
+    
     var pickQueue: js.Any = js.native
+    
+    var pushPick: js.Any = js.native
+    
     var removeConnectivityStateWatcher: js.Any = js.native
+    
     var resolvingLoadBalancer: js.Any = js.native
+    
     var subchannelPool: js.Any = js.native
+    
     var target: js.Any = js.native
+    
     /**
       * Check the picker output for the given call and corresponding metadata,
       * and take any relevant actions. Should not be called while iterating
@@ -138,48 +170,41 @@ object channelMod extends js.Object {
       * @param callMetadata
       */
     var tryPick: js.Any = js.native
+    
     var updateState: js.Any = js.native
-    def _startCallStream(stream: Http2CallStream, metadata: Metadata): Unit = js.native
   }
   
   @js.native
   sealed trait ConnectivityState extends js.Object
-  
   @js.native
   object ConnectivityState extends js.Object {
-    @js.native
-    sealed trait CONNECTING extends ConnectivityState
-    
-    @js.native
-    sealed trait IDLE extends ConnectivityState
-    
-    @js.native
-    sealed trait READY extends ConnectivityState
-    
-    @js.native
-    sealed trait SHUTDOWN extends ConnectivityState
-    
-    @js.native
-    sealed trait TRANSIENT_FAILURE extends ConnectivityState
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ConnectivityState with Double] = js.native
+    
+    @js.native
+    sealed trait CONNECTING extends ConnectivityState
     /* 0 */ @js.native
     object CONNECTING extends TopLevel[CONNECTING with Double]
     
+    @js.native
+    sealed trait IDLE extends ConnectivityState
     /* 3 */ @js.native
     object IDLE extends TopLevel[IDLE with Double]
     
+    @js.native
+    sealed trait READY extends ConnectivityState
     /* 1 */ @js.native
     object READY extends TopLevel[READY with Double]
     
+    @js.native
+    sealed trait SHUTDOWN extends ConnectivityState
     /* 4 */ @js.native
     object SHUTDOWN extends TopLevel[SHUTDOWN with Double]
     
+    @js.native
+    sealed trait TRANSIENT_FAILURE extends ConnectivityState
     /* 2 */ @js.native
     object TRANSIENT_FAILURE extends TopLevel[TRANSIENT_FAILURE with Double]
-    
   }
-  
 }
-

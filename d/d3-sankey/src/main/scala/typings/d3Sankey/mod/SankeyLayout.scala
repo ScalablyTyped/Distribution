@@ -2,10 +2,11 @@ package typings.d3Sankey.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SankeyLayout[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] extends js.Object {
+  
   /**
     * Computes the node and link positions for the given arguments, returning a graph representing the Sankey layout.
     *
@@ -13,6 +14,7 @@ trait SankeyLayout[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPr
     * to the accessor functions.
     */
   def apply(data: Data, args: js.Any*): SankeyGraph[N, L] = js.native
+  
   /**
     * Return the current extent which defaults to [[0, 0], [1, 1]].
     */
@@ -24,6 +26,7 @@ trait SankeyLayout[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPr
     * where x0 is the left side of the extent, y0 is the top, x1 is the right and y1 is the bottom. The default is [[0, 0], [1, 1]].
     */
   def extent(extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): this.type = js.native
+  
   /**
     * Return the current number of relaxation iterations, which defaults to 32.
     */
@@ -34,6 +37,7 @@ trait SankeyLayout[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPr
     * @param iterations Number of relaxation iterations, which defaults to 32.
     */
   def iterations(iterations: Double): this.type = js.native
+  
   /**
     * Return the current links accessor function, which defaults to a function returning the "links" property of the
     * first argument it is invoked with.
@@ -52,6 +56,7 @@ trait SankeyLayout[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPr
     * This function must return an array of links.
     */
   def links(links: js.Function2[/* data */ Data, /* repeated */ js.Any, js.Array[SankeyLink[N, L]]]): this.type = js.native
+  
   /**
     * Return the current node alignment method, which defaults to d3.sankeyJustify.
     */
@@ -64,6 +69,7 @@ trait SankeyLayout[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPr
     * and must return an integer between 0 and n - 1 that indicates the desired horizontal position of the node in the generated Sankey diagram.
     */
   def nodeAlign(nodeAlign: js.Function2[/* node */ SankeyNode[N, L], /* n */ Double, Double]): this.type = js.native
+  
   /**
     * Return the current node id accessor.
     * The default accessor is a function being passed in a Sankey layout node and returning its numeric node.index.
@@ -78,6 +84,7 @@ trait SankeyLayout[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPr
     * @param nodeId A node id accessor function being passed a node in the Sankey graph and returning its id.
     */
   def nodeId(nodeId: js.Function1[/* node */ SankeyNode[N, L], String | Double]): this.type = js.native
+  
   /**
     * Return the current node padding, which defaults to 8.
     *
@@ -90,6 +97,7 @@ trait SankeyLayout[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPr
     * @param padding Node padding, i.e. vertical separation between nodes at each column, in pixels, which defaults to 8.
     */
   def nodePadding(padding: Double): this.type = js.native
+  
   /**
     * Returns the node comparison function which defaults to undefined.
     */
@@ -100,6 +108,7 @@ trait SankeyLayout[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPr
     * @param compare Node comparison function.
     */
   def nodeSort(compare: js.Function2[/* a */ SankeyNode[N, L], /* b */ SankeyNode[N, L], Double]): this.type = js.native
+  
   /**
     * Return the current node width, which defaults to 24.
     */
@@ -110,6 +119,7 @@ trait SankeyLayout[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPr
     * @param width Width of node in pixels, which defaults to 24.
     */
   def nodeWidth(width: Double): this.type = js.native
+  
   /**
     * Return the current nodes accessor function, which defaults to a function returning the "nodes" property of the
     * first argument it is invoked with.
@@ -128,6 +138,7 @@ trait SankeyLayout[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPr
     * This function must return an array of nodes.
     */
   def nodes(nodes: js.Function2[/* data */ Data, /* repeated */ js.Any, js.Array[SankeyNode[N, L]]]): this.type = js.native
+  
   /**
     * Return the current layout size in pixels. The size is a two element array of [width, height] which defaults to [1, 1].
     */
@@ -139,6 +150,7 @@ trait SankeyLayout[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPr
     * @param size A two element array of [width, height] in pixels which defaults to [1, 1].
     */
   def size(size: js.Tuple2[Double, Double]): this.type = js.native
+  
   /**
     * Recomputes the specified graph’s links’ positions, updating the following properties of each link:
     *
@@ -151,4 +163,3 @@ trait SankeyLayout[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPr
     */
   def update(graph: SankeyGraph[N, L]): SankeyGraph[N, L] = js.native
 }
-

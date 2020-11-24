@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Disks")
 @js.native
 class ResourceDisks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.disks.aggregatedList
     * @desc Retrieves an aggregated list of persistent disks.
@@ -115,6 +115,9 @@ class ResourceDisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDiskAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.disks.createSnapshot
     * @desc Creates a snapshot of a specified persistent disk.
@@ -211,6 +214,7 @@ class ResourceDisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.disks.delete
     * @desc Deletes the specified persistent disk. Deleting a disk removes its
@@ -304,6 +308,7 @@ class ResourceDisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.disks.get
     * @desc Returns a specified persistent disk. Gets a list of available
@@ -390,6 +395,7 @@ class ResourceDisks protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceDisksGet, options: MethodOptions): GaxiosPromise[SchemaDisk] = js.native
   def get(params: ParamsResourceDisksGet, options: MethodOptions, callback: BodyResponseCallback[SchemaDisk]): Unit = js.native
+  
   /**
     * compute.disks.getIamPolicy
     * @desc Gets the access control policy for a resource. May be empty if no
@@ -421,6 +427,7 @@ class ResourceDisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.disks.insert
     * @desc Creates a persistent disk in the specified project using the data
@@ -517,6 +524,7 @@ class ResourceDisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.disks.list
     * @desc Retrieves a list of persistent disks contained within the specified
@@ -620,6 +628,7 @@ class ResourceDisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDiskList]
   ): Unit = js.native
+  
   /**
     * compute.disks.resize
     * @desc Resizes the specified persistent disk. You can only increase the
@@ -716,6 +725,7 @@ class ResourceDisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.disks.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -748,6 +758,7 @@ class ResourceDisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.disks.setLabels
     * @desc Sets the labels on a disk. To learn more about labels, read the
@@ -844,6 +855,7 @@ class ResourceDisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.disks.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -879,4 +891,3 @@ class ResourceDisks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

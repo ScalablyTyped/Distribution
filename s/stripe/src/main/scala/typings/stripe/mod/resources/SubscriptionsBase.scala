@@ -12,11 +12,12 @@ import typings.stripe.mod.subscriptions.ISubscriptionListOptions
 import typings.stripe.mod.subscriptions.ISubscriptionUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.SubscriptionsBase")
 @js.native
 class SubscriptionsBase () extends StripeResource {
+  
   def del(subscriptionId: String): js.Promise[ISubscription] = js.native
   def del(subscriptionId: String, data: ISubscriptionCancellationOptions): js.Promise[ISubscription] = js.native
   /**
@@ -52,6 +53,7 @@ class SubscriptionsBase () extends StripeResource {
   def del(subscriptionId: String, options: HeaderOptions): js.Promise[ISubscription] = js.native
   def del(subscriptionId: String, options: HeaderOptions, response: IResponseFn[ISubscription]): js.Promise[ISubscription] = js.native
   def del(subscriptionId: String, response: IResponseFn[ISubscription]): js.Promise[ISubscription] = js.native
+  
   def deleteDiscount(subscriptionId: String): js.Promise[IDeleteConfirmation] = js.native
   /**
     * Removes the currently applied discount on a subscription.
@@ -64,6 +66,7 @@ class SubscriptionsBase () extends StripeResource {
   def deleteDiscount(subscriptionId: String, options: HeaderOptions): js.Promise[IDeleteConfirmation] = js.native
   def deleteDiscount(subscriptionId: String, options: HeaderOptions, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
   def deleteDiscount(subscriptionId: String, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
+  
   def list(): IListPromise[ISubscription] = js.native
   def list(data: ISubscriptionListOptions): IListPromise[ISubscription] = js.native
   /**
@@ -86,6 +89,7 @@ class SubscriptionsBase () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[ISubscription] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[ISubscription]]): IListPromise[ISubscription] = js.native
   def list(response: IResponseFn[IList[ISubscription]]): IListPromise[ISubscription] = js.native
+  
   def retrieve(subscriptionId: String): js.Promise[ISubscription] = js.native
   /**
     * By default, you can see the 10 most recent active subscriptions stored on a customer directly on the customer
@@ -98,6 +102,7 @@ class SubscriptionsBase () extends StripeResource {
   def retrieve(subscriptionId: String, options: HeaderOptions): js.Promise[ISubscription] = js.native
   def retrieve(subscriptionId: String, options: HeaderOptions, response: IResponseFn[ISubscription]): js.Promise[ISubscription] = js.native
   def retrieve(subscriptionId: String, response: IResponseFn[ISubscription]): js.Promise[ISubscription] = js.native
+  
   def update(subscriptionId: String, data: ISubscriptionUpdateOptions): js.Promise[ISubscription] = js.native
   /**
     * Updates an existing subscription on a customer to match the specified parameters. When changing plans or quantities,
@@ -132,4 +137,3 @@ class SubscriptionsBase () extends StripeResource {
   ): js.Promise[ISubscription] = js.native
   def update(subscriptionId: String, data: ISubscriptionUpdateOptions, response: IResponseFn[ISubscription]): js.Promise[ISubscription] = js.native
 }
-

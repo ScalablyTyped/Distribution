@@ -5,10 +5,11 @@ import typings.openui5.sap.ui.core.TextDirection
 import typings.openui5.sap.ui.core.ValueState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObjectStatus extends Control {
+  
   /**
     * Adds some ariaDescribedBy into the association <code>ariaDescribedBy</code>.
     * @param vAriaDescribedBy the ariaDescribedBy to add; if empty, nothing is inserted
@@ -16,17 +17,20 @@ trait ObjectStatus extends Control {
     */
   def addAriaDescribedBy(vAriaDescribedBy: js.Any): ObjectStatus = js.native
   def addAriaDescribedBy(vAriaDescribedBy: Control): ObjectStatus = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaDescribedBy</code>.
     */
   def getAriaDescribedBy(): js.Array[_] = js.native
+  
   /**
     * Gets current value of property <code>icon</code>.Icon URI. This may be either an icon font or image
     * path.
     * @returns Value of property <code>icon</code>
     */
   def getIcon(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>iconDensityAware</code>.By default, this is set to true but
     * then one or more requests are sent trying to get the density perfect version of image if this
@@ -35,17 +39,20 @@ trait ObjectStatus extends Control {
     * @returns Value of property <code>iconDensityAware</code>
     */
   def getIconDensityAware(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>state</code>.Defines the text value state.Default value is
     * <code>None</code>.
     * @returns Value of property <code>state</code>
     */
   def getState(): ValueState = js.native
+  
   /**
     * Gets current value of property <code>text</code>.Defines the ObjectStatus text.
     * @returns Value of property <code>text</code>
     */
   def getText(): String = js.native
+  
   /**
     * Gets current value of property <code>textDirection</code>.Determines the direction of the text, not
     * including the title.Available options for the text direction are LTR (left-to-right) and RTL
@@ -54,16 +61,19 @@ trait ObjectStatus extends Control {
     * @returns Value of property <code>textDirection</code>
     */
   def getTextDirection(): TextDirection = js.native
+  
   /**
     * Gets current value of property <code>title</code>.Defines the ObjectStatus title.
     * @returns Value of property <code>title</code>
     */
   def getTitle(): String = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaDescribedBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaDescribedBy(): js.Array[_] = js.native
+  
   def removeAriaDescribedBy(vAriaDescribedBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaDescribedBy from the association named <code>ariaDescribedBy</code>.
@@ -72,6 +82,7 @@ trait ObjectStatus extends Control {
     */
   def removeAriaDescribedBy(vAriaDescribedBy: Double): js.Any = js.native
   def removeAriaDescribedBy(vAriaDescribedBy: Control): js.Any = js.native
+  
   /**
     * Sets a new value for property <code>icon</code>.Icon URI. This may be either an icon font or image
     * path.When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -80,6 +91,7 @@ trait ObjectStatus extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIcon(sIcon: js.Any): ObjectStatus = js.native
+  
   /**
     * Sets a new value for property <code>iconDensityAware</code>.By default, this is set to true but then
     * one or more requests are sent trying to get the density perfect version of image if this version of
@@ -90,6 +102,7 @@ trait ObjectStatus extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIconDensityAware(bIconDensityAware: Boolean): ObjectStatus = js.native
+  
   /**
     * Sets a new value for property <code>state</code>.Defines the text value state.When called with a
     * value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -98,12 +111,14 @@ trait ObjectStatus extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setState(sState: ValueState): ObjectStatus = js.native
+  
   /**
     * Sets the text.The default value is empty/undefined.
     * @param sText New value for property text
     * @returns this to allow method chaining
     */
   def setText(sText: String): ObjectStatus = js.native
+  
   /**
     * Sets a new value for property <code>textDirection</code>.Determines the direction of the text, not
     * including the title.Available options for the text direction are LTR (left-to-right) and RTL
@@ -114,6 +129,7 @@ trait ObjectStatus extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTextDirection(sTextDirection: TextDirection): ObjectStatus = js.native
+  
   /**
     * Sets the title.The default value is empty/undefined.
     * @param sTitle New value for property title
@@ -121,4 +137,3 @@ trait ObjectStatus extends Control {
     */
   def setTitle(sTitle: String): ObjectStatus = js.native
 }
-

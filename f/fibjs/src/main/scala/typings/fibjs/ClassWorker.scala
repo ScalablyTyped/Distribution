@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassWorker extends ClassEventEmitter {
+  
   /**
     * class prop 
     *
@@ -16,6 +17,7 @@ trait ClassWorker extends ClassEventEmitter {
     * @type Function
     */
   var onmessage: js.Function = js.native
+  
   /**
     * 
     * @brief 向 Master 或 Worker 发送消息，
@@ -26,4 +28,3 @@ trait ClassWorker extends ClassEventEmitter {
     */
   def postMessage(data: js.Any): Unit = js.native
 }
-

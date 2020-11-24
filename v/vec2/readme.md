@@ -12,7 +12,7 @@ manipulate vectors in 2d
 | Keywords           | 2d, vec, vector, geometry |
 | # releases         | 2 |
 | # dependents       | 36 |
-| # downloads        | 53274 |
+| # downloads        | 62230 |
 | # stars            | 2 |
 
 ## Links

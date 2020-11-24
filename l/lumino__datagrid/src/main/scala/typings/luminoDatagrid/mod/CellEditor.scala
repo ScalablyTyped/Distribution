@@ -2,7 +2,7 @@ package typings.luminoDatagrid.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/datagrid", "CellEditor")
 @js.native
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   */
 abstract class CellEditor ()
   extends typings.luminoDatagrid.celleditorMod.CellEditor
-

@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.worklinkMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "WorkLink")
 @js.native
@@ -14,4 +14,3 @@ class WorkLink ()
   extends typings.awsSdk.allMod.WorkLink {
   def this(options: ClientConfiguration) = this()
 }
-

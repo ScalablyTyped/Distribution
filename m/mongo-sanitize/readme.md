@@ -10,9 +10,9 @@ Helper to sanitize mongodb queries against query selector injections
 | ------------------ | :-------------: |
 | Full name          | mongo-sanitize |
 | Keywords           | mongodb, sanitize, query, selector, injection, Petko |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 209390 |
+| # releases         | 3 |
+| # dependents       | 10 |
+| # downloads        | 345785 |
 | # stars            | 7 |
 
 ## Links

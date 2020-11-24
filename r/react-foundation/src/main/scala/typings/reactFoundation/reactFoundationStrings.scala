@@ -21,9 +21,97 @@ import typings.reactFoundation.enumsMod.SwitchSizes
 import typings.reactFoundation.enumsMod.VerticalAlignments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactFoundationStrings {
+  
+  @scala.inline
+  def alert: alert = "alert".asInstanceOf[alert]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  
+  @scala.inline
+  def grow: grow = "grow".asInstanceOf[grow]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def justify: justify = "justify".asInstanceOf[justify]
+  
+  @scala.inline
+  def large: large = "large".asInstanceOf[large]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def margin: margin = "margin".asInstanceOf[margin]
+  
+  @scala.inline
+  def medium: medium = "medium".asInstanceOf[medium]
+  
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  
+  @scala.inline
+  def padding: padding = "padding".asInstanceOf[padding]
+  
+  @scala.inline
+  def primary: primary = "primary".asInstanceOf[primary]
+  
+  @scala.inline
+  def radio: radio = "radio".asInstanceOf[radio]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def secondary: secondary = "secondary".asInstanceOf[secondary]
+  
+  @scala.inline
+  def shrink: shrink = "shrink".asInstanceOf[shrink]
+  
+  @scala.inline
+  def small: small = "small".asInstanceOf[small]
+  
+  @scala.inline
+  def spaced: spaced = "spaced".asInstanceOf[spaced]
+  
+  @scala.inline
+  def stretch: stretch = "stretch".asInstanceOf[stretch]
+  
+  @scala.inline
+  def success: success = "success".asInstanceOf[success]
+  
+  @scala.inline
+  def tiny: tiny = "tiny".asInstanceOf[tiny]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
+  
+  @scala.inline
+  def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
+  
+  @scala.inline
+  def xxlarge: xxlarge = "xxlarge".asInstanceOf[xxlarge]
+  
   @js.native
   sealed trait alert
     extends BadgeColors
@@ -166,64 +254,4 @@ object reactFoundationStrings {
   sealed trait xxlarge
     extends Breakpoints
        with ExtendedBreakpoints
-  
-  @scala.inline
-  def alert: alert = "alert".asInstanceOf[alert]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
-  @scala.inline
-  def grow: grow = "grow".asInstanceOf[grow]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def justify: justify = "justify".asInstanceOf[justify]
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def margin: margin = "margin".asInstanceOf[margin]
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def padding: padding = "padding".asInstanceOf[padding]
-  @scala.inline
-  def primary: primary = "primary".asInstanceOf[primary]
-  @scala.inline
-  def radio: radio = "radio".asInstanceOf[radio]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def secondary: secondary = "secondary".asInstanceOf[secondary]
-  @scala.inline
-  def shrink: shrink = "shrink".asInstanceOf[shrink]
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
-  @scala.inline
-  def spaced: spaced = "spaced".asInstanceOf[spaced]
-  @scala.inline
-  def stretch: stretch = "stretch".asInstanceOf[stretch]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
-  def tiny: tiny = "tiny".asInstanceOf[tiny]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
-  @scala.inline
-  def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
-  @scala.inline
-  def xxlarge: xxlarge = "xxlarge".asInstanceOf[xxlarge]
 }
-

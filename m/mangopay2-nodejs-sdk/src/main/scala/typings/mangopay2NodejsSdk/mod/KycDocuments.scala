@@ -3,7 +3,7 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.mod.kycDocument.KycDocumentData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * You need to create document in order to upload pages on this document.
@@ -18,25 +18,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mangopay2-nodejs-sdk", "KycDocuments")
 @js.native
 class KycDocuments () extends js.Object {
-  /**
-    * Creates temporary URLs where each page of a KYC document can be viewed.
-    * @param documentId
-    */
-  @JSName("createKycDocumentConsult")
-  var createKycDocumentConsult_Original: MethodOverload[String, _] = js.native
-  /**
-    * Get all KycDocuments
-    * @param options
-    */
-  @JSName("getAll")
-  var getAll_Original: NoArgMethodOverload[js.Array[KycDocumentData]] = js.native
-  /**
-    * Get KycDocument
-    * @param kycDocumentId
-    * @param options
-    */
-  @JSName("get")
-  var get_Original: MethodOverload[String, KycDocumentData] = js.native
+  
   /**
     * Creates temporary URLs where each page of a KYC document can be viewed.
     * @param documentId
@@ -67,6 +49,13 @@ class KycDocuments () extends js.Object {
     */
   def createKycDocumentConsult(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[_]] = js.native
   def createKycDocumentConsult(data: String, options: MethodOptionWithoutResponse): js.Promise[_] = js.native
+  /**
+    * Creates temporary URLs where each page of a KYC document can be viewed.
+    * @param documentId
+    */
+  @JSName("createKycDocumentConsult")
+  var createKycDocumentConsult_Original: MethodOverload[String, _] = js.native
+  
   /**
     * Get KycDocument
     * @param kycDocumentId
@@ -101,6 +90,7 @@ class KycDocuments () extends js.Object {
     */
   def get(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[KycDocumentData]] = js.native
   def get(data: String, options: MethodOptionWithoutResponse): js.Promise[KycDocumentData] = js.native
+  
   /**
     * Get all KycDocuments
     * @param options
@@ -130,5 +120,18 @@ class KycDocuments () extends js.Object {
     */
   def getAll(options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[KycDocumentData]]] = js.native
   def getAll(options: MethodOptionWithoutResponse): js.Promise[js.Array[KycDocumentData]] = js.native
+  /**
+    * Get all KycDocuments
+    * @param options
+    */
+  @JSName("getAll")
+  var getAll_Original: NoArgMethodOverload[js.Array[KycDocumentData]] = js.native
+  
+  /**
+    * Get KycDocument
+    * @param kycDocumentId
+    * @param options
+    */
+  @JSName("get")
+  var get_Original: MethodOverload[String, KycDocumentData] = js.native
 }
-

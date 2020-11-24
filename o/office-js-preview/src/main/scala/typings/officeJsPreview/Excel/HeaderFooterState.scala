@@ -2,17 +2,17 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait HeaderFooterState extends js.Object
-
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.HeaderFooterState")
 @js.native
 object HeaderFooterState extends js.Object {
+  
   /**
     * Only one general header/footer is used for all pages printed.
     *
@@ -40,6 +40,4 @@ object HeaderFooterState extends js.Object {
     */
   @js.native
   sealed trait oddAndEven extends HeaderFooterState
-  
 }
-

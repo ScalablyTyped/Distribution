@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.ReportViewer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait WordFormats extends js.Object
-
 @JSGlobal("ej.ReportViewer.WordFormats")
 @js.native
 object WordFormats extends js.Object {
+  
   ///Specifies the Automatic property in WordFormats to get specified version of exported format.
   @js.native
   sealed trait Automatic extends WordFormats
@@ -93,6 +93,4 @@ object WordFormats extends js.Object {
   ///Specifies the XML property in WordFormats to get specified version of exported format.
   @js.native
   sealed trait XML extends WordFormats
-  
 }
-

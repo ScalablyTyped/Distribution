@@ -2,11 +2,12 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ChangeDetectorRef")
 @js.native
 abstract class ChangeDetectorRef () extends js.Object {
+  
   /**
     * Checks the change detector and its children, and throws if any changes are detected.
     *
@@ -14,6 +15,7 @@ abstract class ChangeDetectorRef () extends js.Object {
     * other changes.
     */
   def checkNoChanges(): Unit = js.native
+  
   /**
     * Detaches this view from the change-detection tree.
     * A detached view is  not checked until it is reattached.
@@ -27,6 +29,7 @@ abstract class ChangeDetectorRef () extends js.Object {
     *
     */
   def detach(): Unit = js.native
+  
   /**
     * Checks this view and its children. Use in combination with {@link ChangeDetectorRef#detach
     * detach}
@@ -37,6 +40,7 @@ abstract class ChangeDetectorRef () extends js.Object {
     *
     */
   def detectChanges(): Unit = js.native
+  
   /**
     * When a view uses the {@link ChangeDetectionStrategy#OnPush OnPush} (checkOnce)
     * change detection strategy, explicitly marks the view as changed so that
@@ -50,6 +54,7 @@ abstract class ChangeDetectorRef () extends js.Object {
     *
     */
   def markForCheck(): Unit = js.native
+  
   /**
     * Re-attaches the previously detached view to the change detection tree.
     * Views are attached to the tree by default.
@@ -59,4 +64,3 @@ abstract class ChangeDetectorRef () extends js.Object {
     */
   def reattach(): Unit = js.native
 }
-

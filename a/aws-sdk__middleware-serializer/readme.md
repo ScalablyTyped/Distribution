@@ -12,7 +12,7 @@ Provides the middleware serializer for the AWS SDK
 | Keywords           | - |
 | # releases         | 9 |
 | # dependents       | 368 |
-| # downloads        | 37971 |
+| # downloads        | 174588 |
 | # stars            | 0 |
 
 ## Links

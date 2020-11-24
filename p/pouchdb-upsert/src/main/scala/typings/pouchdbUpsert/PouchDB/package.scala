@@ -2,9 +2,10 @@ package typings.pouchdbUpsert
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object PouchDB {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.pouchdbUpsert.pouchdbUpsertStrings._empty
     - typings.pouchdbUpsert.pouchdbUpsertNumbers.`0`
@@ -13,6 +14,7 @@ package object PouchDB {
     - js.UndefOr[scala.Nothing]
   */
   type CancelUpsert = js.UndefOr[typings.pouchdbUpsert.PouchDB._CancelUpsert | scala.Null]
+  
   // `Partial<Core.Document<Content>>` seems more useful than
   // `{} | Core.Document<Content>` since there isn't an easy way to narrow
   // `{} | Core.Document<Content>` to `Core.Document<Content>`.

@@ -2,27 +2,27 @@ package typings.kerberos.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kerberos", "KerberosClient")
 @js.native
 class KerberosClient () extends js.Object {
+  
   /**
     * @description Indicates that authentication has successfully completed or not
     */
   var contextComplete: Boolean = js.native
+  
   /**
     * @description The last response received during authentication steps
     */
   var response: String = js.native
+  
   /**
     * @description Indicates whether confidentiality was applied or not (GSSAPI only)
     */
   var responseConf: String = js.native
-  /**
-    * @description The username used for authentication
-    */
-  var username: String = js.native
+  
   /**
     * Processes a single kerberos client-side step using the supplied server challenge.
     *
@@ -32,6 +32,7 @@ class KerberosClient () extends js.Object {
     */
   def step(challenge: String): js.Promise[String] = js.native
   def step(challenge: String, callback: js.Function2[/* err */ String, /* clientResponse */ String, _]): Unit = js.native
+  
   /**
     * Perform the client side kerberos unwrap step
     *
@@ -41,6 +42,12 @@ class KerberosClient () extends js.Object {
     */
   def unwrap(challenge: String): js.Promise[String] = js.native
   def unwrap(challenge: String, callback: js.Function2[/* err */ String, /* challengeResponse */ String, _]): Unit = js.native
+  
+  /**
+    * @description The username used for authentication
+    */
+  var username: String = js.native
+  
   /**
     * Perform the client side kerberos wrap step.
     *
@@ -58,4 +65,3 @@ class KerberosClient () extends js.Object {
     callback: js.Function2[/* err */ String, /* challengeResponse */ String, _]
   ): Unit = js.native
 }
-

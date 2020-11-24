@@ -10,9 +10,9 @@ Format, validate and generate CNPJ numbers
 | ------------------ | :-------------: |
 | Full name          | cnpj |
 | Keywords           | cnpj, validation, brasil, brazil |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 42033 |
+| # releases         | 5 |
+| # dependents       | 3 |
+| # downloads        | 72453 |
 | # stars            | 0 |
 
 ## Links

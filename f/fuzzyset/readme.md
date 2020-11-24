@@ -4,21 +4,21 @@
 Typings are for version 1.0
 
 ## Library description:
-A fuzzy string set for JavaScript
+A fast fuzzy string set for JavaScript
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | fuzzyset |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 28685 |
+| # downloads        | 75751 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](http://github.com/washt/fuzzyset)
-- [Bugs](https://github.com/washt/fuzzyset/issues)
-- [Repository](https://github.com/washt/fuzzyset)
+- [Homepage](http://Glench.github.com/fuzzyset.js)
+- [Bugs](https://github.com/Glench/fuzzyset.js/issues)
+- [Repository](https://github.com/Glench/fuzzyset.js)
 - [Npm](https://www.npmjs.com/package/fuzzyset)
     
 

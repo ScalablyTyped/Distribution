@@ -11,8 +11,8 @@ This package provides the JavaScript driver library for the RethinkDB database s
 | Full name          | rethinkdb |
 | Keywords           | database, NoSQL, reql, query language |
 | # releases         | 4 |
-| # dependents       | 215 |
-| # downloads        | 454669 |
+| # dependents       | 223 |
+| # downloads        | 702300 |
 | # stars            | 48 |
 
 ## Links

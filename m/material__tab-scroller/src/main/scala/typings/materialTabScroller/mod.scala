@@ -8,32 +8,35 @@ import typings.std.Document
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/tab-scroller", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class MDCTabScroller ()
     extends typings.materialTabScroller.componentMod.MDCTabScroller
+  /* static members */
+  @js.native
+  object MDCTabScroller extends js.Object {
+    
+    def attachTo(root: Element): typings.materialTabScroller.componentMod.MDCTabScroller = js.native
+  }
   
   @js.native
   class MDCTabScrollerFoundation ()
     extends typings.materialTabScroller.foundationMod.MDCTabScrollerFoundation {
     def this(adapter: PartialMDCTabScrollerAdap) = this()
   }
-  
-  /* static members */
-  @js.native
-  object MDCTabScroller extends js.Object {
-    def attachTo(root: Element): typings.materialTabScroller.componentMod.MDCTabScroller = js.native
-  }
-  
   /* static members */
   @js.native
   object MDCTabScrollerFoundation extends js.Object {
+    
     def cssClasses: ANIMATING = js.native
+    
     def defaultAdapter: MDCTabScrollerAdapter = js.native
+    
     def strings: AREASELECTOR = js.native
   }
   
@@ -61,22 +64,26 @@ object mod extends js.Object {
     */
   @js.native
   object cssClasses extends js.Object {
+    
     var ANIMATING: String = js.native
+    
     var SCROLL_AREA_SCROLL: String = js.native
+    
     var SCROLL_TEST: String = js.native
   }
   
   @js.native
   object strings extends js.Object {
+    
     var AREA_SELECTOR: String = js.native
+    
     var CONTENT_SELECTOR: String = js.native
   }
   
   @js.native
   object util extends js.Object {
+    
     def computeHorizontalScrollbarHeight(documentObj: Document): Double = js.native
     def computeHorizontalScrollbarHeight(documentObj: Document, shouldCacheResult: Boolean): Double = js.native
   }
-  
 }
-

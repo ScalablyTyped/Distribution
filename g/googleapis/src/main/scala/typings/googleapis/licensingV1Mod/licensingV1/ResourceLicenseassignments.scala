@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/licensing/v1", "licensing_v1.Resource$Licenseassignments")
 @js.native
 class ResourceLicenseassignments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * licensing.licenseAssignments.delete
     * @desc Revoke License.
@@ -43,6 +45,7 @@ class ResourceLicenseassignments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * licensing.licenseAssignments.get
     * @desc Get license assignment of a particular product and sku for a user
@@ -76,6 +79,7 @@ class ResourceLicenseassignments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLicenseAssignment]
   ): Unit = js.native
+  
   /**
     * licensing.licenseAssignments.insert
     * @desc Assign License.
@@ -109,6 +113,7 @@ class ResourceLicenseassignments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLicenseAssignment]
   ): Unit = js.native
+  
   /**
     * licensing.licenseAssignments.listForProduct
     * @desc List license assignments for given product of the customer.
@@ -143,6 +148,7 @@ class ResourceLicenseassignments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLicenseAssignmentList]
   ): Unit = js.native
+  
   /**
     * licensing.licenseAssignments.listForProductAndSku
     * @desc List license assignments for given product and sku of the customer.
@@ -178,6 +184,7 @@ class ResourceLicenseassignments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLicenseAssignmentList]
   ): Unit = js.native
+  
   /**
     * licensing.licenseAssignments.patch
     * @desc Assign License. This method supports patch semantics.
@@ -212,6 +219,7 @@ class ResourceLicenseassignments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLicenseAssignment]
   ): Unit = js.native
+  
   /**
     * licensing.licenseAssignments.update
     * @desc Assign License.
@@ -247,4 +255,3 @@ class ResourceLicenseassignments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLicenseAssignment]
   ): Unit = js.native
 }
-

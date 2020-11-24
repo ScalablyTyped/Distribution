@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/webfonts/v1", "webfonts_v1.Resource$Webfonts")
 @js.native
 class ResourceWebfonts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * webfonts.webfonts.list
     * @desc Retrieves the list of fonts currently served by the Google Fonts
@@ -43,4 +45,3 @@ class ResourceWebfonts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaWebfontList]
   ): Unit = js.native
 }
-

@@ -2,14 +2,16 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object uri {
+  
   /**
     * translates between external and internal URI references.
     * @since OOo 2.0
     */
   type ExternalUriReferenceTranslator = typings.activexLibreoffice.com_.sun.star.uri.XExternalUriReferenceTranslator
+  
   /**
     * creates URI references.
     *
@@ -29,6 +31,7 @@ package object uri {
     * @since OOo 2.0
     */
   type UriReferenceFactory = typings.activexLibreoffice.com_.sun.star.uri.XUriReferenceFactory
+  
   /**
     * parses textual representations of absolute " vnd.sun.star.expand " URLs.
     *
@@ -41,6 +44,7 @@ package object uri {
     * @since OOo 2.3
     */
   type UriSchemeParserVndDOTsunDOTstarDOTexpand = typings.activexLibreoffice.com_.sun.star.uri.XUriSchemeParser
+  
   /**
     * parses textual representations of absolute " vnd.sun.star.script " URLs.
     *
@@ -53,6 +57,7 @@ package object uri {
     * @since OOo 2.0
     */
   type UriSchemeParserVndDOTsunDOTstarDOTscript = typings.activexLibreoffice.com_.sun.star.uri.XUriSchemeParser
+  
   /**
     * creates " vnd.sun.star.pkg " URL references.
     * @since OOo 2.0

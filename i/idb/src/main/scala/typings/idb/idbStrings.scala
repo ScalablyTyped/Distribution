@@ -2,9 +2,31 @@ package typings.idb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object idbStrings {
+  
+  @scala.inline
+  def next: next = "next".asInstanceOf[next]
+  
+  @scala.inline
+  def nextunique: nextunique = "nextunique".asInstanceOf[nextunique]
+  
+  @scala.inline
+  def prev: prev = "prev".asInstanceOf[prev]
+  
+  @scala.inline
+  def prevunique: prevunique = "prevunique".asInstanceOf[prevunique]
+  
+  @scala.inline
+  def readonly: readonly = "readonly".asInstanceOf[readonly]
+  
+  @scala.inline
+  def readwrite: readwrite = "readwrite".asInstanceOf[readwrite]
+  
+  @scala.inline
+  def versionchange: versionchange = "versionchange".asInstanceOf[versionchange]
+  
   @js.native
   sealed trait next extends js.Object
   
@@ -25,20 +47,4 @@ object idbStrings {
   
   @js.native
   sealed trait versionchange extends js.Object
-  
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
-  @scala.inline
-  def nextunique: nextunique = "nextunique".asInstanceOf[nextunique]
-  @scala.inline
-  def prev: prev = "prev".asInstanceOf[prev]
-  @scala.inline
-  def prevunique: prevunique = "prevunique".asInstanceOf[prevunique]
-  @scala.inline
-  def readonly: readonly = "readonly".asInstanceOf[readonly]
-  @scala.inline
-  def readwrite: readwrite = "readwrite".asInstanceOf[readwrite]
-  @scala.inline
-  def versionchange: versionchange = "versionchange".asInstanceOf[versionchange]
 }
-

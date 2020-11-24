@@ -10,9 +10,9 @@ JSON AST parser
 | ------------------ | :-------------: |
 | Full name          | json-to-ast |
 | Keywords           | json-parser, parser, ast, json, tree |
-| # releases         | 8 |
-| # dependents       | 15 |
-| # downloads        | 3665470 |
+| # releases         | 7 |
+| # dependents       | 17 |
+| # downloads        | 10905461 |
 | # stars            | 2 |
 
 ## Links

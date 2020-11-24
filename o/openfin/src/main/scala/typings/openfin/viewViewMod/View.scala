@@ -9,12 +9,13 @@ import typings.openfin.windowOptionMod.WindowOption
 import typings.openfin.windowWindowMod.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openfin/_v2/api/view/view", "View")
 @js.native
 class View protected () extends WebContents[ViewEvents] {
   def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
+  
   /**
     * Returns the zoom level of the view.
     * @function getZoomLevel
@@ -132,6 +133,7 @@ class View protected () extends WebContents[ViewEvents] {
     * @experimental
     */
   def attach(target: Identity): js.Promise[Unit] = js.native
+  
   /**
     * Destroys the current view
     * @return {Promise.<void>}
@@ -139,6 +141,7 @@ class View protected () extends WebContents[ViewEvents] {
     * @experimental
     */
   def destroy(): js.Promise[Unit] = js.native
+  
   /**
     * Gets the bounds (top, left, width, height) of the view relative to its window.
     * @return {Promise.<Bounds>}
@@ -146,12 +149,14 @@ class View protected () extends WebContents[ViewEvents] {
     * @experimental
     */
   def getBounds(): js.Promise[_] = js.native
+  
   /**
     * Retrieves the window the view is currently attached to.
     * @return {Promise.<_Window>}
     * @experimental
     */
   def getCurrentWindow(): js.Promise[Window] = js.native
+  
   /**
     * Gets the View's info.
     * @return {Promise.<ViewInfo>}
@@ -159,6 +164,7 @@ class View protected () extends WebContents[ViewEvents] {
     * @experimental
     */
   def getInfo(): js.Promise[_] = js.native
+  
   /**
     * Gets the View's options.
     * @return {Promise<ViewCreationOptions>}
@@ -166,6 +172,7 @@ class View protected () extends WebContents[ViewEvents] {
     * @experimental
     */
   def getOptions(): js.Promise[ViewCreationOptions] = js.native
+  
   /**
     * Hides the current view if it is currently visible.
     * @return {Promise.<void>}
@@ -173,6 +180,7 @@ class View protected () extends WebContents[ViewEvents] {
     * @experimental
     */
   def hide(): js.Promise[Unit] = js.native
+  
   /**
     * Sets the bounds (top, left, width, height) of the view relative to its window.
     * @param bounds {Bounds}
@@ -181,6 +189,7 @@ class View protected () extends WebContents[ViewEvents] {
     * @experimental
     */
   def setBounds(bounds: ViewBounds): js.Promise[Unit] = js.native
+  
   /**
     * Sets a custom window handler. Only works if experimental child windows are enabled for the view.
     * Takes a match pattern or array of match patterns for which to call the handler.
@@ -196,6 +205,7 @@ class View protected () extends WebContents[ViewEvents] {
     */
   def setCustomWindowHandler(urls: String, handler: js.Function1[/* options */ WindowOption, Unit]): js.Promise[js.Function0[js.Promise[Unit]]] = js.native
   def setCustomWindowHandler(urls: js.Array[String], handler: js.Function1[/* options */ WindowOption, Unit]): js.Promise[js.Function0[js.Promise[Unit]]] = js.native
+  
   /**
     * Shows the current view if it is currently hidden.
     * @return {Promise.<void>}
@@ -203,6 +213,7 @@ class View protected () extends WebContents[ViewEvents] {
     * @experimental
     */
   def show(): js.Promise[Unit] = js.native
+  
   /**
     * Gets the view's info.
     * @param { Partial<ViewOptions> } options
@@ -212,4 +223,3 @@ class View protected () extends WebContents[ViewEvents] {
     */
   def updateOptions(options: PartialViewOptions): js.Promise[_] = js.native
 }
-

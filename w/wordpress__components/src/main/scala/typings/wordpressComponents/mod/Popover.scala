@@ -5,10 +5,9 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.popoverMod.Popover.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/components", "Popover")
 @js.native
 object Popover
   extends TopLevel[ComponentType[Props] with typings.wordpressComponents.anon.Slot]
-

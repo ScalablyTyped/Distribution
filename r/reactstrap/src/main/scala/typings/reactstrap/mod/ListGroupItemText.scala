@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.listGroupItemTextMod.ListGroupItemTextProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "ListGroupItemText")
+@JSImport("reactstrap/lib", "ListGroupItemText")
 @js.native
-class ListGroupItemText[T] ()
+class ListGroupItemText ()
   extends Component[ListGroupItemTextProps, js.Object, js.Any]
-

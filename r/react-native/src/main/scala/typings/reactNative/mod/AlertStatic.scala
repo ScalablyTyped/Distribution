@@ -2,10 +2,11 @@ package typings.reactNative.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AlertStatic extends js.Object {
+  
   def alert(title: String): Unit = js.native
   def alert(
     title: String,
@@ -24,6 +25,7 @@ trait AlertStatic extends js.Object {
   def alert(title: String, message: String, buttons: js.UndefOr[scala.Nothing], options: AlertOptions): Unit = js.native
   def alert(title: String, message: String, buttons: js.Array[AlertButton]): Unit = js.native
   def alert(title: String, message: String, buttons: js.Array[AlertButton], options: AlertOptions): Unit = js.native
+  
   def prompt(title: String): Unit = js.native
   def prompt(
     title: String,
@@ -337,4 +339,3 @@ trait AlertStatic extends js.Object {
     keyboardType: String
   ): Unit = js.native
 }
-

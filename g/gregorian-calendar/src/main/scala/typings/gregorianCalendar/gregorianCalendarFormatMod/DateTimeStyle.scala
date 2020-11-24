@@ -2,14 +2,14 @@ package typings.gregorianCalendar.gregorianCalendarFormatMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DateTimeStyle extends js.Object
-
 @JSImport("gregorian-calendar-format", "DateTimeStyle")
 @js.native
 object DateTimeStyle extends js.Object {
+  
   /**
     * full style
     */
@@ -33,6 +33,4 @@ object DateTimeStyle extends js.Object {
     */
   @js.native
   sealed trait SHORT extends DateTimeStyle
-  
 }
-

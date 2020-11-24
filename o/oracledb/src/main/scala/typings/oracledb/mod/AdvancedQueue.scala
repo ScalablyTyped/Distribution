@@ -2,7 +2,7 @@ package typings.oracledb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used for enqueuing and dequeuing Oracle Advanced Queuing messages. Each can be used for enqueuing, dequeuing, or for both.
@@ -12,22 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AdvancedQueue[T] extends js.Object {
-  /** Options to use when dequeuing messages. Attributes can be set before each queue.deqOne() or queue.deqMany(). */
-  var deqOptions: DequeueOptions = js.native
-  /** Options to use when enqueuing messages. Attributes can be set before each queue.enqOne() or queue.denqMany(). */
-  var enqOptions: EnqueueOptions = js.native
-  /** Contains the name of the queue specified in the connection.getQueue() call. */
-  val name: String = js.native
-  /** One of the DB_TYPE_RAW or DB_TYPE_OBJECT constants. */
-  val payloadType: Double = js.native
-  /**
-    * The DBObject Class corresponding to the payload type specified when the queue was created
-    * 
-    * This is defined only if payloadType has the value oracledb.DB_TYPE_OBJECT.
-    */
-  val payloadTypeClass: js.UndefOr[DBObjectClass[T]] = js.native
-  /** Either the string “RAW” or the name of the Oracle Database object type identified when the queue was created. */
-  val payloadTypeName: String = js.native
+  
   /**
     * Dequeues up to the specified number of messages
     * 
@@ -38,6 +23,7 @@ trait AdvancedQueue[T] extends js.Object {
     maxMessages: Double,
     callback: js.Function2[/* error */ DBError, /* messages */ js.Array[AdvancedQueueMessage[T]], Unit]
   ): Unit = js.native
+  
   /**
     * Dequeues a single message. Depending on the dequeue options, the message may also be returned as undefined if no message is available.
     */
@@ -45,6 +31,10 @@ trait AdvancedQueue[T] extends js.Object {
   def deqOne(
     callback: js.Function2[/* error */ DBError, /* message */ js.UndefOr[AdvancedQueueMessage[T]], Unit]
   ): Unit = js.native
+  
+  /** Options to use when dequeuing messages. Attributes can be set before each queue.deqOne() or queue.deqMany(). */
+  var deqOptions: DequeueOptions = js.native
+  
   /**
     * Enqueues multiple messages.
     * 
@@ -56,6 +46,7 @@ trait AdvancedQueue[T] extends js.Object {
     */
   def enqMany(messages: js.Array[EnqueueMessage[T]]): js.Promise[Unit] = js.native
   def enqMany(messages: js.Array[EnqueueMessage[T]], callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  
   /**
     * Enqueues a single message.
     * 
@@ -63,5 +54,23 @@ trait AdvancedQueue[T] extends js.Object {
     */
   def enqOne(message: EnqueueMessage[T]): js.Promise[Unit] = js.native
   def enqOne(message: EnqueueMessage[T], callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  
+  /** Options to use when enqueuing messages. Attributes can be set before each queue.enqOne() or queue.denqMany(). */
+  var enqOptions: EnqueueOptions = js.native
+  
+  /** Contains the name of the queue specified in the connection.getQueue() call. */
+  val name: String = js.native
+  
+  /** One of the DB_TYPE_RAW or DB_TYPE_OBJECT constants. */
+  val payloadType: Double = js.native
+  
+  /**
+    * The DBObject Class corresponding to the payload type specified when the queue was created
+    * 
+    * This is defined only if payloadType has the value oracledb.DB_TYPE_OBJECT.
+    */
+  val payloadTypeClass: js.UndefOr[DBObjectClass[T]] = js.native
+  
+  /** Either the string “RAW” or the name of the Oracle Database object type identified when the queue was created. */
+  val payloadTypeName: String = js.native
 }
-

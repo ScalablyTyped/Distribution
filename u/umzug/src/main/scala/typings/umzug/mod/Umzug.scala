@@ -7,10 +7,11 @@ import typings.umzug.umzugStrings.reverted
 import typings.umzug.umzugStrings.reverting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Umzug extends EventEmitter {
+  
   @JSName("addListener")
   def addListener_migrated(eventName: migrated): this.type = js.native
   @JSName("addListener")
@@ -27,6 +28,7 @@ trait Umzug extends EventEmitter {
   def addListener_reverting(eventName: reverting): this.type = js.native
   @JSName("addListener")
   def addListener_reverting(eventName: reverting, cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]): this.type = js.native
+  
   /**
     * The down method can be used to revert the last executed migration.
     */
@@ -35,16 +37,19 @@ trait Umzug extends EventEmitter {
   def down(migrations: js.Array[String]): js.Promise[js.Array[Migration]] = js.native
   def down(options: DownToOptions): js.Promise[js.Array[Migration]] = js.native
   def down(options: UpDownMigrationsOptions): js.Promise[js.Array[Migration]] = js.native
+  
   /**
     * The execute method is a general purpose function that runs for
     * every specified migrations the respective function.
     */
   def execute(): js.Promise[js.Array[Migration]] = js.native
   def execute(options: ExecuteOptions): js.Promise[js.Array[Migration]] = js.native
+  
   /**
     * You can get a list of already executed migrations like this:
     */
   def executed(): js.Promise[js.Array[Migration]] = js.native
+  
   @JSName("on")
   def on_migrated(eventName: migrated): this.type = js.native
   @JSName("on")
@@ -61,10 +66,12 @@ trait Umzug extends EventEmitter {
   def on_reverting(eventName: reverting): this.type = js.native
   @JSName("on")
   def on_reverting(eventName: reverting, cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]): this.type = js.native
+  
   /**
     * You can get a list of pending/not yet executed migrations like this:
     */
   def pending(): js.Promise[js.Array[Migration]] = js.native
+  
   @JSName("removeListener")
   def removeListener_migrated(eventName: migrated): this.type = js.native
   @JSName("removeListener")
@@ -81,6 +88,7 @@ trait Umzug extends EventEmitter {
   def removeListener_reverting(eventName: reverting): this.type = js.native
   @JSName("removeListener")
   def removeListener_reverting(eventName: reverting, cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]): this.type = js.native
+  
   /**
     * The up method can be used to execute all pending migrations.
     */
@@ -90,4 +98,3 @@ trait Umzug extends EventEmitter {
   def up(options: UpDownMigrationsOptions): js.Promise[js.Array[Migration]] = js.native
   def up(options: UpToOptions): js.Promise[js.Array[Migration]] = js.native
 }
-

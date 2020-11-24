@@ -3,11 +3,12 @@ package typings.w3cWebUsb
 import typings.std.DataView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   class USB ()
     extends typings.w3cWebUsb.USB
@@ -78,6 +79,4 @@ object global extends js.Object {
     def this(status: USBTransferStatus) = this()
     def this(status: USBTransferStatus, bytesWriten: Double) = this()
   }
-  
 }
-

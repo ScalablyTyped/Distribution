@@ -11,8 +11,8 @@ The lodash method `_.defaults` exported as a module.
 | Full name          | lodash.defaults |
 | Keywords           | lodash-modularized, defaults |
 | # releases         | 0 |
-| # dependents       | 558 |
-| # downloads        | 156245709 |
+| # dependents       | 584 |
+| # downloads        | 185201560 |
 | # stars            | 4 |
 
 ## Links

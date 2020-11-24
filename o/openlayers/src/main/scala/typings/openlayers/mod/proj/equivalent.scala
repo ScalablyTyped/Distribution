@@ -2,11 +2,12 @@ package typings.openlayers.mod.proj
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "proj.equivalent")
 @js.native
 object equivalent extends js.Object {
+  
   /**
     * Checks if two projections are the same, that is every coordinate in one
     * projection does represent the same geographic point as the same coordinate in
@@ -19,4 +20,3 @@ object equivalent extends js.Object {
     */
   def apply(projection1: Projection, projection2: Projection): Boolean = js.native
 }
-

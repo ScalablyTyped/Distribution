@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.3", "adexchangebuyer_v1_3.Resource$Billinginfo")
 @js.native
 class ResourceBillinginfo protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer.billingInfo.get
     * @desc Returns the billing information for one account specified by
@@ -42,6 +44,7 @@ class ResourceBillinginfo protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBillingInfo]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.billingInfo.list
     * @desc Retrieves a list of billing information for all accounts of the
@@ -71,4 +74,3 @@ class ResourceBillinginfo protected () extends js.Object {
     callback: BodyResponseCallback[SchemaBillingInfoList]
   ): Unit = js.native
 }
-

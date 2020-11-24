@@ -2,7 +2,7 @@ package typings.reactNativeGoogleAnalyticsBridge.googleTagManagerMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Can only be used with one container. All functions returns a Promise.
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait GoogleTagManager extends js.Object
-

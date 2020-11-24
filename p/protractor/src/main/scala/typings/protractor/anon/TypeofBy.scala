@@ -5,10 +5,11 @@ import typings.seleniumWebdriver.mod.By
 import typings.seleniumWebdriver.mod.WebDriver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofBy extends Instantiable2[/* using */ String, /* value */ String, By] {
+  
   /**
     * Locates elements that have a specific class name.
     *
@@ -18,6 +19,7 @@ trait TypeofBy extends Instantiable2[/* using */ String, /* value */ String, By]
     * @see http://www.w3.org/TR/CSS2/selector.html#class-html
     */
   def className(name: String): typings.seleniumWebdriver.byMod.By = js.native
+  
   /**
     * Locates elements using a CSS selector.
     *
@@ -26,6 +28,7 @@ trait TypeofBy extends Instantiable2[/* using */ String, /* value */ String, By]
     * @see http://www.w3.org/TR/CSS2/selector.html
     */
   def css(selector: String): typings.seleniumWebdriver.byMod.By = js.native
+  
   /**
     * Locates eleemnts by the ID attribute. This locator uses the CSS selector
     * `*[id='$ID']`, _not_ `document.getElementById`.
@@ -34,6 +37,7 @@ trait TypeofBy extends Instantiable2[/* using */ String, /* value */ String, By]
     * @return {!By} The new locator.
     */
   def id(id: String): typings.seleniumWebdriver.byMod.By = js.native
+  
   /**
     * Locates an elements by evaluating a
     * {@linkplain WebDriver#executeScript JavaScript expression}.
@@ -48,6 +52,7 @@ trait TypeofBy extends Instantiable2[/* using */ String, /* value */ String, By]
   def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
   @JSName("js")
   def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
+  
   /**
     * Locates link elements whose
     * {@linkplain WebElement#getText visible text} matches the given
@@ -57,6 +62,7 @@ trait TypeofBy extends Instantiable2[/* using */ String, /* value */ String, By]
     * @return {!By} The new locator.
     */
   def linkText(text: String): typings.seleniumWebdriver.byMod.By = js.native
+  
   /**
     * Locates elements whose `name` attribute has the given value.
     *
@@ -64,6 +70,7 @@ trait TypeofBy extends Instantiable2[/* using */ String, /* value */ String, By]
     * @return {!By} The new locator.
     */
   def name(name: String): typings.seleniumWebdriver.byMod.By = js.native
+  
   /**
     * Locates link elements whose
     * {@linkplain WebElement#getText visible text} contains the given
@@ -73,6 +80,7 @@ trait TypeofBy extends Instantiable2[/* using */ String, /* value */ String, By]
     * @return {!By} The new locator.
     */
   def partialLinkText(text: String): typings.seleniumWebdriver.byMod.By = js.native
+  
   /**
     * Locates elements with a given tag name.
     *
@@ -81,6 +89,7 @@ trait TypeofBy extends Instantiable2[/* using */ String, /* value */ String, By]
     * @deprecated Use {@link By.css() By.css(tagName)} instead.
     */
   def tagName(name: String): typings.seleniumWebdriver.byMod.By = js.native
+  
   /**
     * Locates elements matching a XPath selector. Care should be taken when
     * using an XPath selector with a {@link WebElement} as WebDriver
@@ -94,4 +103,3 @@ trait TypeofBy extends Instantiable2[/* using */ String, /* value */ String, By]
     */
   def xpath(xpath: String): typings.seleniumWebdriver.byMod.By = js.native
 }
-

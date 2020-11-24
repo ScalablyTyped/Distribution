@@ -4,23 +4,32 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Builds a new dom tree */
 @js.native
 trait XSAXDocumentBuilder extends XInterface {
+  
   val Document: XDocument = js.native
+  
   val DocumentFragment: XDocumentFragment = js.native
+  
   val State: SAXDocumentBuilderState = js.native
+  
   def endDocumentFragment(): Unit = js.native
+  
   def getDocument(): XDocument = js.native
+  
   def getDocumentFragment(): XDocumentFragment = js.native
+  
   def getState(): SAXDocumentBuilderState = js.native
+  
   def reset(): Unit = js.native
+  
   def startDocumentFragment(ownerDoc: XDocument): Unit = js.native
 }
-
 object XSAXDocumentBuilder {
+  
   @scala.inline
   def apply(
     Document: XDocument,
@@ -39,36 +48,47 @@ object XSAXDocumentBuilder {
     val __obj = js.Dynamic.literal(Document = Document.asInstanceOf[js.Any], DocumentFragment = DocumentFragment.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), endDocumentFragment = js.Any.fromFunction0(endDocumentFragment), getDocument = js.Any.fromFunction0(getDocument), getDocumentFragment = js.Any.fromFunction0(getDocumentFragment), getState = js.Any.fromFunction0(getState), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reset = js.Any.fromFunction0(reset), startDocumentFragment = js.Any.fromFunction1(startDocumentFragment))
     __obj.asInstanceOf[XSAXDocumentBuilder]
   }
+  
   @scala.inline
   implicit class XSAXDocumentBuilderOps[Self <: XSAXDocumentBuilder] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDocument(value: XDocument): Self = this.set("Document", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDocumentFragment(value: XDocumentFragment): Self = this.set("DocumentFragment", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setState(value: SAXDocumentBuilderState): Self = this.set("State", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEndDocumentFragment(value: () => Unit): Self = this.set("endDocumentFragment", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetDocument(value: () => XDocument): Self = this.set("getDocument", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetDocumentFragment(value: () => XDocumentFragment): Self = this.set("getDocumentFragment", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetState(value: () => SAXDocumentBuilderState): Self = this.set("getState", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setStartDocumentFragment(value: XDocument => Unit): Self = this.set("startDocumentFragment", js.Any.fromFunction1(value))
   }
-  
 }
-

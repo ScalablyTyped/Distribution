@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__rendermime
 
-Typings are for version 2.1.1
+Typings are for version 2.2.4
 
 ## Library description:
 JupyterLab - RenderMime
@@ -10,9 +10,9 @@ JupyterLab - RenderMime
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/rendermime |
 | Keywords           | - |
-| # releases         | 65 |
-| # dependents       | 74 |
-| # downloads        | 1030955 |
+| # releases         | 113 |
+| # dependents       | 91 |
+| # downloads        | 1743051 |
 | # stars            | 0 |
 
 ## Links

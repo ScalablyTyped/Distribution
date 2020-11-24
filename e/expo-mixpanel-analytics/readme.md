@@ -10,9 +10,9 @@ Mixpanel integration for use with React Native apps built on Expo.
 | ------------------ | :-------------: |
 | Full name          | expo-mixpanel-analytics |
 | Keywords           | react, native, expo, mixpanel, analytics |
-| # releases         | 9 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 15789 |
+| # downloads        | 11472 |
 | # stars            | 0 |
 
 ## Links

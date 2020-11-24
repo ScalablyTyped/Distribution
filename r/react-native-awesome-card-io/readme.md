@@ -12,7 +12,7 @@ A complete and cross-platform React Native component for card.io
 | Keywords           | react-native, react-component, card.io, credit card, scan, android, ios |
 | # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 192701 |
+| # downloads        | 246767 |
 | # stars            | 0 |
 
 ## Links

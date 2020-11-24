@@ -2,7 +2,7 @@ package typings.officeJs.global.Visio
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -13,10 +13,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Visio.OverlayVerticalAlignment")
 @js.native
 object OverlayVerticalAlignment extends js.Object {
-  /* "Bottom" */ val bottom: typings.officeJs.Visio.OverlayVerticalAlignment.bottom with String = js.native
-  /* "Middle" */ val middle: typings.officeJs.Visio.OverlayVerticalAlignment.middle with String = js.native
-  /* "Top" */ val top: typings.officeJs.Visio.OverlayVerticalAlignment.top with String = js.native
+  
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJs.Visio.OverlayVerticalAlignment with String] = js.native
+  
+  /* "Bottom" */ val bottom: typings.officeJs.Visio.OverlayVerticalAlignment.bottom with String = js.native
+  
+  /* "Middle" */ val middle: typings.officeJs.Visio.OverlayVerticalAlignment.middle with String = js.native
+  
+  /* "Top" */ val top: typings.officeJs.Visio.OverlayVerticalAlignment.top with String = js.native
 }
-

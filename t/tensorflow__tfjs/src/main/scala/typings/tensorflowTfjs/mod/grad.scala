@@ -1,14 +1,15 @@
 package typings.tensorflowTfjs.mod
 
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs", "grad")
 @js.native
 object grad extends js.Object {
+  
   /**
     * Provided `f(x)`, returns another function `g(x, dy?)`, which gives the
     * gradient of `f(x)` with respect to `x`.
@@ -40,8 +41,9 @@ object grad extends js.Object {
     * ```
     *
     * @param f The function f(x), to compute gradient for.
+    *
+    * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  /** @doc {heading: 'Training', subheading: 'Gradients'} */
   def apply(
     f: js.Function1[
       /* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
@@ -53,4 +55,3 @@ object grad extends js.Object {
     Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
   ] = js.native
 }
-

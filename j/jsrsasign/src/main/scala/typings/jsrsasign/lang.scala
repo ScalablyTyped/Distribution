@@ -2,11 +2,12 @@ package typings.jsrsasign
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("lang")
 @js.native
 object lang extends js.Object {
+  
   /**
     * String and its utility class
     * This class provides some static utility methods for string.
@@ -21,6 +22,4 @@ object lang extends js.Object {
     */
   @js.native
   object String extends js.Object
-  
 }
-

@@ -3,10 +3,11 @@ package typings.puppeteer.mod
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Evalable extends js.Object {
+  
   /**
     * This method runs `document.querySelector` within the context and passes it as the first argument to `pageFunction`.
     * If there's no element matching `selector`, the method throws an error.
@@ -104,6 +105,7 @@ trait Evalable extends js.Object {
     x2: X2,
     x3: X3
   ): js.Promise[WrapElementHandle[R]] = js.native
+  
   /**
     * This method runs `Array.from(document.querySelectorAll(selector))` within the context and passes it as the
     * first argument to `pageFunction`.
@@ -206,4 +208,3 @@ trait Evalable extends js.Object {
     x3: X3
   ): js.Promise[WrapElementHandle[R]] = js.native
 }
-

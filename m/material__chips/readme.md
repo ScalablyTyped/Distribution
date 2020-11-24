@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__chips
 
-Typings are for version 7.0.0
+Typings are for version 8.0.0
 
 ## Library description:
 The Material Components for the Web chips component
@@ -10,9 +10,9 @@ The Material Components for the Web chips component
 | ------------------ | :-------------: |
 | Full name          | @material/chips |
 | Keywords           | material components, material design, chips |
-| # releases         | 172 |
-| # dependents       | 30 |
-| # downloads        | 1049897 |
+| # releases         | 620 |
+| # dependents       | 37 |
+| # downloads        | 1535277 |
 | # stars            | 0 |
 
 ## Links

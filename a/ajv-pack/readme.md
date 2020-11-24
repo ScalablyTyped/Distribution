@@ -11,8 +11,8 @@ Produces a compact module exporting JSON-schema validation functions compiled by
 | Full name          | ajv-pack |
 | Keywords           | Ajv, JSON-Schema |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 1532156 |
+| # dependents       | 9 |
+| # downloads        | 1957884 |
 | # stars            | 0 |
 
 ## Links

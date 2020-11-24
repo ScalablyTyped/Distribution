@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Foundation.Metadata
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AttributeTargets extends js.Object
-
 /** Specifies the programming construct to which an attribute applies. */
 @JSGlobal("Windows.Foundation.Metadata.AttributeTargets")
 @js.native
 object AttributeTargets extends js.Object {
+  
   /** The attribute applies to all programming constructs. */
   @js.native
   sealed trait all extends AttributeTargets
@@ -62,6 +62,4 @@ object AttributeTargets extends js.Object {
   /** The attribute applies to a struct. */
   @js.native
   sealed trait struct extends AttributeTargets
-  
 }
-

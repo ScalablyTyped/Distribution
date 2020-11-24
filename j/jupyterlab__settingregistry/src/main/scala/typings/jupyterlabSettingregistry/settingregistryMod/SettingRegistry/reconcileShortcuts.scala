@@ -3,11 +3,12 @@ package typings.jupyterlabSettingregistry.settingregistryMod.SettingRegistry
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IShortcut
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/settingregistry/lib/settingregistry", "SettingRegistry.reconcileShortcuts")
 @js.native
 object reconcileShortcuts extends js.Object {
+  
   /**
     * Reconcile default and user shortcuts and return the composite list.
     *
@@ -19,4 +20,3 @@ object reconcileShortcuts extends js.Object {
     */
   def apply(defaults: js.Array[IShortcut], user: js.Array[IShortcut]): js.Array[IShortcut] = js.native
 }
-

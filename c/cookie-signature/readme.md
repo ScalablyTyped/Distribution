@@ -10,9 +10,9 @@ Sign and unsign cookies
 | ------------------ | :-------------: |
 | Full name          | cookie-signature |
 | Keywords           | cookie, sign, unsign |
-| # releases         | 2 |
-| # dependents       | 320 |
-| # downloads        | 395853661 |
+| # releases         | 0 |
+| # dependents       | 349 |
+| # downloads        | 530791350 |
 | # stars            | 12 |
 
 ## Links

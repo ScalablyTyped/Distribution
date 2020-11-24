@@ -11,8 +11,8 @@ A generic rate limiter for node.js. Useful for API clients, web crawling, or oth
 | Full name          | limiter |
 | Keywords           | rate, limiting, throttling |
 | # releases         | 3 |
-| # dependents       | 165 |
-| # downloads        | 38374447 |
+| # dependents       | 168 |
+| # downloads        | 43667720 |
 | # stars            | 30 |
 
 ## Links

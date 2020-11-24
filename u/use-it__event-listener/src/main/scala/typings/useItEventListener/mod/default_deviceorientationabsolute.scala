@@ -5,11 +5,12 @@ import typings.std.Window
 import typings.useItEventListener.useItEventListenerStrings.deviceorientationabsolute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@use-it/event-listener", JSImport.Default)
 @js.native
 object default_deviceorientationabsolute extends js.Object {
+  
   def apply(eventName: deviceorientationabsolute, handler: DeviceOrientationEvent): Unit = js.native
   def apply(
     eventName: deviceorientationabsolute,
@@ -25,4 +26,3 @@ object default_deviceorientationabsolute extends js.Object {
     options: Options
   ): Unit = js.native
 }
-

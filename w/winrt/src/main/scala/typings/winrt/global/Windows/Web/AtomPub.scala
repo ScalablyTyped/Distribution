@@ -3,11 +3,12 @@ package typings.winrt.global.Windows.Web
 import typings.winrt.Windows.Security.Credentials.PasswordCredential
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Web.AtomPub")
 @js.native
 object AtomPub extends js.Object {
+  
   @js.native
   class AtomPubClient ()
     extends typings.winrt.Windows.Web.AtomPub.AtomPubClient {
@@ -25,6 +26,4 @@ object AtomPub extends js.Object {
   @js.native
   class Workspace ()
     extends typings.winrt.Windows.Web.AtomPub.Workspace
-  
 }
-

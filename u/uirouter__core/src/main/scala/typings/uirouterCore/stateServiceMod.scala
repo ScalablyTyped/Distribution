@@ -17,15 +17,17 @@ import typings.uirouterCore.transitionInterfaceMod.TransitionOptions
 import typings.uirouterCore.transitionTransitionMod.Transition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/state/stateService", JSImport.Namespace)
 @js.native
 object stateServiceMod extends js.Object {
+  
   @js.native
   class StateService protected () extends js.Object {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
+    
     /**
       * The current [[StateObject]] (an internal API)
       *
@@ -33,8 +35,10 @@ object stateServiceMod extends js.Object {
       */
     @JSName("$current")
     var $current: StateObject = js.native
+    
     /** @internal */
     var _defaultErrorHandler: js.Any = js.native
+    
     /**
       * Handler for when [[transitionTo]] is called with an invalid state.
       *
@@ -47,29 +51,14 @@ object stateServiceMod extends js.Object {
       * @internal
       */
     var _handleInvalidTargetState: js.Any = js.native
+    
     /**
       * The current [[StateDeclaration]]
       *
       * @deprecated This is a passthrough through to [[UIRouterGlobals.current]]
       */
     var current: StateDeclaration = js.native
-    /** @internal */
-    var getCurrentPath: js.Any = js.native
-    /** @internal */
-    var invalidCallbacks: js.Array[OnInvalidCallback] = js.native
-    /**
-      * The latest successful state parameters
-      *
-      * @deprecated This is a passthrough through to [[UIRouterGlobals.params]]
-      */
-    var params: StateParams = js.native
-    var router: js.Any = js.native
-    /**
-      * The [[Transition]] currently in progress (or null)
-      *
-      * @deprecated This is a passthrough through to [[UIRouterGlobals.transition]]
-      */
-    var transition: Transition = js.native
+    
     /**
       * Sets or gets the default [[transitionTo]] error handler.
       *
@@ -96,8 +85,10 @@ object stateServiceMod extends js.Object {
       */
     def defaultErrorHandler(): js.Function1[/* error */ js.Any, Unit] = js.native
     def defaultErrorHandler(handler: js.Function1[/* error */ js.Any, Unit]): js.Function1[/* error */ js.Any, Unit] = js.native
+    
     /** @internal */
     def dispose(): Unit = js.native
+    
     def get(): js.Array[StateDeclaration] = js.native
     def get(stateOrName: StateOrName): StateDeclaration = js.native
     /**
@@ -113,6 +104,10 @@ object stateServiceMod extends js.Object {
       * @deprecated use [[StateRegistry.get]]
       */
     def get(stateOrName: StateOrName, base: StateOrName): StateDeclaration = js.native
+    
+    /** @internal */
+    var getCurrentPath: js.Any = js.native
+    
     /**
       * Transition to a different state and/or parameters
       *
@@ -157,6 +152,7 @@ object stateServiceMod extends js.Object {
     def go(to: StateOrName, params: js.UndefOr[scala.Nothing], options: TransitionOptions): TransitionPromise = js.native
     def go(to: StateOrName, params: RawParams): TransitionPromise = js.native
     def go(to: StateOrName, params: RawParams, options: TransitionOptions): TransitionPromise = js.native
+    
     /**
       * Generates a URL for a state and parameters
       *
@@ -177,6 +173,7 @@ object stateServiceMod extends js.Object {
     def href(stateOrName: StateOrName, params: js.UndefOr[scala.Nothing], options: HrefOptions): String = js.native
     def href(stateOrName: StateOrName, params: RawParams): String = js.native
     def href(stateOrName: StateOrName, params: RawParams, options: HrefOptions): String = js.native
+    
     /**
       * Checks if the current state *includes* the provided state
       *
@@ -219,6 +216,10 @@ object stateServiceMod extends js.Object {
     def includes(stateOrName: StateOrName, params: js.UndefOr[scala.Nothing], options: TransitionOptions): Boolean = js.native
     def includes(stateOrName: StateOrName, params: RawParams): Boolean = js.native
     def includes(stateOrName: StateOrName, params: RawParams, options: TransitionOptions): Boolean = js.native
+    
+    /** @internal */
+    var invalidCallbacks: js.Array[OnInvalidCallback] = js.native
+    
     /**
       * Checks if the current state *is* the provided state
       *
@@ -254,6 +255,7 @@ object stateServiceMod extends js.Object {
     def is(stateOrName: StateOrName, params: js.UndefOr[scala.Nothing], options: Relative): Boolean = js.native
     def is(stateOrName: StateOrName, params: RawParams): Boolean = js.native
     def is(stateOrName: StateOrName, params: RawParams, options: Relative): Boolean = js.native
+    
     /**
       * Lazy loads a state
       *
@@ -268,6 +270,7 @@ object stateServiceMod extends js.Object {
       */
     def lazyLoad(stateOrName: StateOrName): js.Promise[LazyLoadResult] = js.native
     def lazyLoad(stateOrName: StateOrName, transition: Transition): js.Promise[LazyLoadResult] = js.native
+    
     /**
       * Registers an Invalid State handler
       *
@@ -293,6 +296,14 @@ object stateServiceMod extends js.Object {
       * @returns a function which deregisters the callback
       */
     def onInvalid(callback: OnInvalidCallback): js.Function = js.native
+    
+    /**
+      * The latest successful state parameters
+      *
+      * @deprecated This is a passthrough through to [[UIRouterGlobals.params]]
+      */
+    var params: StateParams = js.native
+    
     /**
       * Reloads the current state
       *
@@ -339,6 +350,9 @@ object stateServiceMod extends js.Object {
       */
     def reload(): js.Promise[StateObject] = js.native
     def reload(reloadState: StateOrName): js.Promise[StateObject] = js.native
+    
+    var router: js.Any = js.native
+    
     /**
       * Creates a [[TargetState]]
       *
@@ -350,6 +364,14 @@ object stateServiceMod extends js.Object {
     def target(identifier: StateOrName, params: js.UndefOr[scala.Nothing], options: TransitionOptions): TargetState = js.native
     def target(identifier: StateOrName, params: RawParams): TargetState = js.native
     def target(identifier: StateOrName, params: RawParams, options: TransitionOptions): TargetState = js.native
+    
+    /**
+      * The [[Transition]] currently in progress (or null)
+      *
+      * @deprecated This is a passthrough through to [[UIRouterGlobals.transition]]
+      */
+    var transition: Transition = js.native
+    
     /**
       * Low-level method for transitioning to a new state.
       *
@@ -386,4 +408,3 @@ object stateServiceMod extends js.Object {
     HookResult
   ]
 }
-

@@ -3,7 +3,7 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.anon.AdjustPitch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "BoneLookController")
 @js.native
@@ -40,13 +40,14 @@ class BoneLookController protected ()
     options: AdjustPitch
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/index", "BoneLookController")
 @js.native
 object BoneLookController extends js.Object {
+  
   var _tmpMats: js.Any = js.native
+  
   var _tmpQuat: js.Any = js.native
+  
   var _tmpVecs: js.Any = js.native
 }
-

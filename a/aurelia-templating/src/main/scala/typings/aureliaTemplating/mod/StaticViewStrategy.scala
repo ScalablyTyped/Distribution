@@ -4,7 +4,7 @@ import typings.std.HTMLTemplateElement
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "StaticViewStrategy")
 @js.native
@@ -12,14 +12,16 @@ class StaticViewStrategy protected () extends js.Object {
   def this(config: String) = this()
   def this(config: IStaticViewConfig) = this()
   def this(config: HTMLTemplateElement) = this()
+  
   /**@internal */
   var dependencies: js.Array[js.Function] | (js.Function0[
     js.Array[js.Function | (js.Promise[js.Function | (Record[String, js.Function])])]
   ]) = js.native
+  
   var factory: ViewFactory = js.native
+  
   var factoryIsReady: Boolean = js.native
-  /**@internal */
-  var template: String | HTMLTemplateElement = js.native
+  
   /**
     * Loads a view factory.
     * @param viewEngine The view engine to use during the load process.
@@ -34,5 +36,7 @@ class StaticViewStrategy protected () extends js.Object {
     loadContext: ResourceLoadContext,
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
+  
+  /**@internal */
+  var template: String | HTMLTemplateElement = js.native
 }
-

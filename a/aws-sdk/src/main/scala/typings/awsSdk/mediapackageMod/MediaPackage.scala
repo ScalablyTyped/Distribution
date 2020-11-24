@@ -1,17 +1,33 @@
 package typings.awsSdk.mediapackageMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MediaPackage extends Service {
+  
   @JSName("config")
   var config_MediaPackage: ConfigBase with ClientConfiguration = js.native
+  
+  /**
+    * Changes the Channel's properities to configure log subscription
+    */
+  def configureLogs(): Request[ConfigureLogsResponse, AWSError] = js.native
+  def configureLogs(callback: js.Function2[/* err */ AWSError, /* data */ ConfigureLogsResponse, Unit]): Request[ConfigureLogsResponse, AWSError] = js.native
+  /**
+    * Changes the Channel's properities to configure log subscription
+    */
+  def configureLogs(params: ConfigureLogsRequest): Request[ConfigureLogsResponse, AWSError] = js.native
+  def configureLogs(
+    params: ConfigureLogsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ConfigureLogsResponse, Unit]
+  ): Request[ConfigureLogsResponse, AWSError] = js.native
+  
   /**
     * Creates a new Channel.
     */
@@ -25,6 +41,7 @@ trait MediaPackage extends Service {
     params: CreateChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateChannelResponse, Unit]
   ): Request[CreateChannelResponse, AWSError] = js.native
+  
   /**
     * Creates a new HarvestJob record.
     */
@@ -38,6 +55,7 @@ trait MediaPackage extends Service {
     params: CreateHarvestJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateHarvestJobResponse, Unit]
   ): Request[CreateHarvestJobResponse, AWSError] = js.native
+  
   /**
     * Creates a new OriginEndpoint record.
     */
@@ -51,6 +69,7 @@ trait MediaPackage extends Service {
     params: CreateOriginEndpointRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateOriginEndpointResponse, Unit]
   ): Request[CreateOriginEndpointResponse, AWSError] = js.native
+  
   /**
     * Deletes an existing Channel.
     */
@@ -64,6 +83,7 @@ trait MediaPackage extends Service {
     params: DeleteChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteChannelResponse, Unit]
   ): Request[DeleteChannelResponse, AWSError] = js.native
+  
   /**
     * Deletes an existing OriginEndpoint.
     */
@@ -77,6 +97,7 @@ trait MediaPackage extends Service {
     params: DeleteOriginEndpointRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteOriginEndpointResponse, Unit]
   ): Request[DeleteOriginEndpointResponse, AWSError] = js.native
+  
   /**
     * Gets details about a Channel.
     */
@@ -90,6 +111,7 @@ trait MediaPackage extends Service {
     params: DescribeChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
   ): Request[DescribeChannelResponse, AWSError] = js.native
+  
   /**
     * Gets details about an existing HarvestJob.
     */
@@ -103,6 +125,7 @@ trait MediaPackage extends Service {
     params: DescribeHarvestJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeHarvestJobResponse, Unit]
   ): Request[DescribeHarvestJobResponse, AWSError] = js.native
+  
   /**
     * Gets details about an existing OriginEndpoint.
     */
@@ -116,6 +139,7 @@ trait MediaPackage extends Service {
     params: DescribeOriginEndpointRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOriginEndpointResponse, Unit]
   ): Request[DescribeOriginEndpointResponse, AWSError] = js.native
+  
   /**
     * Returns a collection of Channels.
     */
@@ -129,6 +153,7 @@ trait MediaPackage extends Service {
     params: ListChannelsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListChannelsResponse, Unit]
   ): Request[ListChannelsResponse, AWSError] = js.native
+  
   /**
     * Returns a collection of HarvestJob records.
     */
@@ -142,6 +167,7 @@ trait MediaPackage extends Service {
     params: ListHarvestJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListHarvestJobsResponse, Unit]
   ): Request[ListHarvestJobsResponse, AWSError] = js.native
+  
   /**
     * Returns a collection of OriginEndpoint records.
     */
@@ -155,6 +181,7 @@ trait MediaPackage extends Service {
     params: ListOriginEndpointsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListOriginEndpointsResponse, Unit]
   ): Request[ListOriginEndpointsResponse, AWSError] = js.native
+  
   /**
     * 
     */
@@ -168,6 +195,7 @@ trait MediaPackage extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Changes the Channel's first IngestEndpoint's username and password. WARNING - This API is deprecated. Please use RotateIngestEndpointCredentials instead
     */
@@ -181,6 +209,7 @@ trait MediaPackage extends Service {
     params: RotateChannelCredentialsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RotateChannelCredentialsResponse, Unit]
   ): Request[RotateChannelCredentialsResponse, AWSError] = js.native
+  
   /**
     * Rotate the IngestEndpoint's username and password, as specified by the IngestEndpoint's id.
     */
@@ -196,6 +225,7 @@ trait MediaPackage extends Service {
     params: RotateIngestEndpointCredentialsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RotateIngestEndpointCredentialsResponse, Unit]
   ): Request[RotateIngestEndpointCredentialsResponse, AWSError] = js.native
+  
   /**
     * 
     */
@@ -206,6 +236,7 @@ trait MediaPackage extends Service {
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * 
     */
@@ -219,6 +250,7 @@ trait MediaPackage extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates an existing Channel.
     */
@@ -232,6 +264,7 @@ trait MediaPackage extends Service {
     params: UpdateChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateChannelResponse, Unit]
   ): Request[UpdateChannelResponse, AWSError] = js.native
+  
   /**
     * Updates an existing OriginEndpoint.
     */
@@ -246,4 +279,3 @@ trait MediaPackage extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateOriginEndpointResponse, Unit]
   ): Request[UpdateOriginEndpointResponse, AWSError] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.standardHttpError.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("standard-http-error", JSImport.Namespace)
 @js.native
@@ -18,4 +18,3 @@ class ^ protected () extends HttpError {
   def this(code: Double, message: js.UndefOr[scala.Nothing], props: js.Object) = this()
   def this(code: Double, message: String, props: js.Object) = this()
 }
-

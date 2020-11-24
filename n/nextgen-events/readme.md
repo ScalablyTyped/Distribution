@@ -10,9 +10,9 @@ The next generation of events handling for javascript! New: abstract away the ne
 | ------------------ | :-------------: |
 | Full name          | nextgen-events |
 | Keywords           | events, async, emit, listener, context, series, serialize, namespace, proxy, network |
-| # releases         | 27 |
-| # dependents       | 8 |
-| # downloads        | 643877 |
+| # releases         | 5 |
+| # dependents       | 9 |
+| # downloads        | 971897 |
 | # stars            | 0 |
 
 ## Links

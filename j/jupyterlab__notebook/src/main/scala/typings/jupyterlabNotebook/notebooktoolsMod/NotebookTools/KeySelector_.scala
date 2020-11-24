@@ -4,7 +4,7 @@ import typings.std.Event
 import typings.std.HTMLSelectElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A cell tool that provides a selection for a given metadata key.
@@ -16,23 +16,27 @@ class KeySelector_ protected () extends Tool {
     * Construct a new KeySelector.
     */
   def this(options: typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.KeySelector.IOptions) = this()
+  
   var _changeGuard: js.Any = js.native
+  
   var _default: js.Any = js.native
+  
   /**
     * Get the value for the data.
     */
   var _getValue: js.Any = js.native
+  
   var _getter: js.Any = js.native
+  
   /**
     * Set the value for the data.
     */
   var _setValue: js.Any = js.native
+  
   var _setter: js.Any = js.native
+  
   var _validCellTypes: js.Any = js.native
-  /**
-    * The metadata key used by the selector.
-    */
-  val key: String = js.native
+  
   /**
     * Handle the DOM events for the widget.
     *
@@ -44,13 +48,19 @@ class KeySelector_ protected () extends Tool {
     * not be called directly by user code.
     */
   def handleEvent(event: Event): Unit = js.native
+  
+  /**
+    * The metadata key used by the selector.
+    */
+  val key: String = js.native
+  
   /**
     * Handle a change to the value.
     */
   /* protected */ def onValueChanged(): Unit = js.native
+  
   /**
     * The select node for the widget.
     */
   def selectNode: HTMLSelectElement = js.native
 }
-

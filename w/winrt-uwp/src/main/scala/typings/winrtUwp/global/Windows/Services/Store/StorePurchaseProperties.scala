@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Services.Store
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains additional details that you can pass to a purchase request for a product, including the product name to display to the user during the purchase. */
 @JSGlobal("Windows.Services.Store.StorePurchaseProperties")
@@ -15,4 +15,3 @@ class StorePurchaseProperties ()
     */
   def this(name: String) = this()
 }
-

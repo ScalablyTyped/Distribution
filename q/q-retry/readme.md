@@ -11,7 +11,7 @@ A shell for Q to enable retries.
 | Keywords           | q, retry, promise |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1252 |
+| # downloads        | 2131 |
 | # stars            | 0 |
 
 ## Links

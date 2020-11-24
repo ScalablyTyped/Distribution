@@ -2,10 +2,11 @@ package typings.anyPromise.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Thenable[R] extends js.Object {
+  
   def `then`[U](): Thenable[U] = js.native
   def `then`[U](
     onFulfilled: js.UndefOr[scala.Nothing],
@@ -17,4 +18,3 @@ trait Thenable[R] extends js.Object {
     onRejected: js.Function1[/* error */ js.Any, Thenable[U] | U | Unit]
   ): Thenable[U] = js.native
 }
-

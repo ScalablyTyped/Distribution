@@ -3,13 +3,15 @@ package typings.amapJsApiPlaceSearch
 import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object AMap extends js.Object {
+    
     @js.native
     /**
       * 地点搜索服务
@@ -19,8 +21,5 @@ object global extends js.Object {
       extends typings.amapJsApiPlaceSearch.AMap.PlaceSearch {
       def this(options: Options) = this()
     }
-    
   }
-  
 }
-

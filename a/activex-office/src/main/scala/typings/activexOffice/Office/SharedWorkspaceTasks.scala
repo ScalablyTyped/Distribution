@@ -3,16 +3,13 @@ package typings.activexOffice.Office
 import typings.std.VarDate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SharedWorkspaceTasks extends js.Object {
-  val Application: js.Any = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val ItemCountExceeded: Boolean = js.native
-  val Parent: js.Any = js.native
+  
   def apply(Index: Double): SharedWorkspaceTask = js.native
+  
   def Add(Title: String): SharedWorkspaceTask = js.native
   def Add(
     Title: String,
@@ -225,6 +222,16 @@ trait SharedWorkspaceTasks extends js.Object {
     Description: String,
     DueDate: VarDate
   ): SharedWorkspaceTask = js.native
+  
+  val Application: js.Any = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
   def Item(Index: Double): SharedWorkspaceTask = js.native
+  
+  val ItemCountExceeded: Boolean = js.native
+  
+  val Parent: js.Any = js.native
 }
-

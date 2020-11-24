@@ -10,9 +10,9 @@ A JavaScript library that breaks strings into their individual user-perceived ch
 | ------------------ | :-------------: |
 | Full name          | grapheme-splitter |
 | Keywords           | utf-8, strings, emoji, split |
-| # releases         | 3 |
-| # dependents       | 33 |
-| # downloads        | 14828091 |
+| # releases         | 0 |
+| # dependents       | 41 |
+| # downloads        | 31699886 |
 | # stars            | 0 |
 
 ## Links

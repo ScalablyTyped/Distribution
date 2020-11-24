@@ -12,7 +12,7 @@ The lodash method `_.property` exported as a module.
 | Keywords           | lodash-modularized, property |
 | # releases         | 0 |
 | # dependents       | 18 |
-| # downloads        | 1811826 |
+| # downloads        | 2240017 |
 | # stars            | 0 |
 
 ## Links

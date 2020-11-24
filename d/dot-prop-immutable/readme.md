@@ -10,9 +10,9 @@ Immutable version of dot-prop with some extensions
 | ------------------ | :-------------: |
 | Full name          | dot-prop-immutable |
 | Keywords           | immutable, dot-prop, react, redux, obj, object, prop, property, dot, path, get, access, notation |
-| # releases         | 2 |
-| # dependents       | 65 |
-| # downloads        | 699635 |
+| # releases         | 5 |
+| # dependents       | 77 |
+| # downloads        | 731858 |
 | # stars            | 2 |
 
 ## Links

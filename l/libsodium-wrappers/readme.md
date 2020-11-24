@@ -10,9 +10,9 @@ The Sodium cryptographic library compiled to pure JavaScript (wrappers)
 | ------------------ | :-------------: |
 | Full name          | libsodium-wrappers |
 | Keywords           | crypto, sodium, libsodium, nacl, chacha20, poly1305, curve25519, ed25519, blake2, siphash, argon2, ecc |
-| # releases         | 4 |
-| # dependents       | 91 |
-| # downloads        | 486353 |
+| # releases         | 6 |
+| # dependents       | 134 |
+| # downloads        | 735863 |
 | # stars            | 0 |
 
 ## Links

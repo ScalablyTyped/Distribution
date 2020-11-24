@@ -15,7 +15,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The {@link AccessibleGraphicShape} service is implemented by the graphic object shapes shapes {@link com.sun.star.drawing.GraphicObjectShape} and
@@ -31,8 +31,8 @@ trait AccessibleGraphicShape
      with XAccessible
      with XAccessibleContext
      with XAccessibleImage
-
 object AccessibleGraphicShape {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -91,4 +91,3 @@ object AccessibleGraphicShape {
     __obj.asInstanceOf[AccessibleGraphicShape]
   }
 }
-

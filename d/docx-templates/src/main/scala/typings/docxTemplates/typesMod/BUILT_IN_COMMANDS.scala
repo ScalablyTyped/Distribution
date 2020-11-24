@@ -15,7 +15,7 @@ import typings.docxTemplates.docxTemplatesStrings.`END-FOR`
 import typings.docxTemplates.docxTemplatesStrings.`END-IF`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("docx-templates/lib/types", "BUILT_IN_COMMANDS")
 @js.native
@@ -23,4 +23,3 @@ object BUILT_IN_COMMANDS
   extends TopLevel[
       js.Tuple12[QUERY, CMD_NODE, ALIAS, FOR, `END-FOR`, IF, `END-IF`, INS, EXEC, IMAGE, LINK, HTML]
     ]
-

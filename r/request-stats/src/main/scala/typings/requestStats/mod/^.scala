@@ -5,11 +5,12 @@ import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("request-stats", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Attach request-stats to a single HTTP request.
     * If no callback is provided, you can later attach a listener on the "complete" event.
@@ -32,4 +33,3 @@ object ^ extends js.Object {
   def apply(server: typings.node.httpsMod.Server): StatsEmitter = js.native
   def apply(server: typings.node.httpsMod.Server, statsCallback: StatsCallback): StatsEmitter = js.native
 }
-

@@ -5,15 +5,17 @@ import typings.lwip.lwipStrings.jpg
 import typings.lwip.lwipStrings.png
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Batch extends js.Object {
+  
   /**
     * Gaussian blur.
     * @param sigma Standard deviation of the Gaussian filter.
     */
   def blur(sigma: Double): Batch = js.native
+  
   /**
     * Add a colored border to the image.
     * @param width Border width in pixels.
@@ -25,6 +27,7 @@ trait Batch extends js.Object {
     * @param color Color of the border.
     */
   def border(width: Double, color: Color): Batch = js.native
+  
   /**
     * Contain the image in a colored canvas. The image will be resized to the largest possible size such that it's fully contained inside the canvas.
     * @param width Canvas' width in pixels.
@@ -53,6 +56,7 @@ trait Batch extends js.Object {
     * @param inter Interpolation method.
     */
   def contain(width: Double, height: Double, inter: String): Batch = js.native
+  
   /**
     * Cover a canvas with the image. The image will be resized to the smallest possible size such that both its dimensions are bigger than the canvas's dimensions. Margins of the image exceeding the canvas will be discarded.
     * @param width Canvas' width in pixels.
@@ -66,6 +70,7 @@ trait Batch extends js.Object {
     * @param inter Interpolation method.
     */
   def cover(width: Double, height: Double, inter: String): Batch = js.native
+  
   /**
     * Crop with rectangle coordinates
     */
@@ -76,16 +81,19 @@ trait Batch extends js.Object {
     * @param height Height of the rectangle to crop from the center of the image.
     */
   def crop(width: Double, height: Double): Batch = js.native
+  
   /**
     * Adjust image lightness. Equivalent to image.lighten(-delta, callback).
     * @param delta By how much to increase / decrease the lightness.
     */
   def darken(delta: Double): Batch = js.native
+  
   // Executing a batch
   /**
     * Execute batch and obtain the manipulated image object
     */
   def exec(callback: ImageCallback): Unit = js.native
+  
   /**
     * Adjust image transperancy.
     * 
@@ -99,11 +107,13 @@ trait Batch extends js.Object {
     * @param delta By how much to increase / decrease the transperancy.
     */
   def fade(delta: Double): Batch = js.native
+  
   /**
     * Alias of mirror. Mirror an image along the 'x' axis, 'y' axis or both.
     * @param axes 'x', 'y' or 'xy' (case sensitive).
     */
   def flip(axes: String): Batch = js.native
+  
   /**
     * Adjust image hue.
     * 
@@ -116,6 +126,7 @@ trait Batch extends js.Object {
     * @param shift By how many degrees to shift each pixel's hue.
     */
   def hue(shift: Double): Batch = js.native
+  
   /**
     * Adjust image lightness.
     * 
@@ -127,15 +138,18 @@ trait Batch extends js.Object {
     * @param delta By how much to increase / decrease the lightness.
     */
   def lighten(delta: Double): Batch = js.native
+  
   /**
     * Mirror an image along the 'x' axis, 'y' axis or both.
     * @param axes 'x', 'y' or 'xy' (case sensitive).
     */
   def mirror(axes: String): Batch = js.native
+  
   /**
     * Make image completely opaque.
     */
   def opacity(callback: ImageCallback): Unit = js.native
+  
   /**
     * Pad image edges with colored pixels.
     * @param left Number of pixels to add to left edge.
@@ -153,6 +167,7 @@ trait Batch extends js.Object {
     * @param color Color of the padding.
     */
   def pad(left: Double, top: Double, right: Double, bottom: Double, color: Color): Batch = js.native
+  
   /**
     * Paste an image on top of this image.
     * 
@@ -167,6 +182,7 @@ trait Batch extends js.Object {
     * @param img The image to paste.
     */
   def paste(left: Double, top: Double, img: Image): Batch = js.native
+  
   // Using a batch object
   /**
     * Resize
@@ -192,6 +208,7 @@ trait Batch extends js.Object {
     * @param Interpolation method.
     */
   def resize(width: Double, inter: String): Batch = js.native
+  
   /**
     * Rotate
     * @param degs Clockwise rotation degrees.
@@ -203,6 +220,7 @@ trait Batch extends js.Object {
     * @param color Color of the canvas.
     */
   def rotate(degs: Double, color: Color): Batch = js.native
+  
   /**
     * Adjust image saturation.
     * 
@@ -214,6 +232,7 @@ trait Batch extends js.Object {
     * @param delta By how much to increase / decrease the saturation.
     */
   def saturate(delta: Double): Batch = js.native
+  
   /**
     * Scale
     * @param wRatio Width scale ratio.
@@ -238,11 +257,13 @@ trait Batch extends js.Object {
     * @param inter Interpolation method.
     */
   def scale(wRatio: Double, inter: String): Batch = js.native
+  
   /**
     * Set the metadata in an image. This is currently only supported for PNG files. Sets a tEXt chunk with the key lwip_data and comment as the given string. If called with a null parameter, removes existing metadata from the image, if present.
     * @param metadata A string of arbitrary length, or null.
     */
   def setMetaData(metadata: String): Unit = js.native
+  
   /**
     * Set the color of a pixel.
     * 
@@ -255,11 +276,13 @@ trait Batch extends js.Object {
     * @param color Color of the pixel to set.
     */
   def setPixel(left: Double, top: Double, color: Color): Batch = js.native
+  
   /**
     * Inverse diffusion shapren.
     * @param amplitude Sharpening amplitude.
     */
   def sharpen(amplitude: Double): Batch = js.native
+  
   /**
     * Execute batch and obtain a Buffer object
     * 
@@ -336,6 +359,7 @@ trait Batch extends js.Object {
     */
   @JSName("toBuffer")
   def toBuffer_png(format: png, params: PngBufferParams, callback: BufferCallback): Unit = js.native
+  
   /**
     * Execute batch and write to file
     * 
@@ -420,4 +444,3 @@ trait Batch extends js.Object {
   @JSName("writeFile")
   def writeFile_png(path: String, format: png, params: PngBufferParams, callback: ImageCallback): Unit = js.native
 }
-

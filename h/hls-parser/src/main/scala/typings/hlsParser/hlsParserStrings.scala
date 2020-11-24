@@ -2,9 +2,34 @@ package typings.hlsParser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hlsParserStrings {
+  
+  @scala.inline
+  def AUDIO: AUDIO = "AUDIO".asInstanceOf[AUDIO]
+  
+  @scala.inline
+  def `CLOSED-CAPTIONS`: `CLOSED-CAPTIONS` = "CLOSED-CAPTIONS".asInstanceOf[`CLOSED-CAPTIONS`]
+  
+  @scala.inline
+  def EVENT: EVENT = "EVENT".asInstanceOf[EVENT]
+  
+  @scala.inline
+  def SUBTITLES: SUBTITLES = "SUBTITLES".asInstanceOf[SUBTITLES]
+  
+  @scala.inline
+  def VIDEO: VIDEO = "VIDEO".asInstanceOf[VIDEO]
+  
+  @scala.inline
+  def VOD: VOD = "VOD".asInstanceOf[VOD]
+  
+  @scala.inline
+  def playlist: playlist = "playlist".asInstanceOf[playlist]
+  
+  @scala.inline
+  def segment: segment = "segment".asInstanceOf[segment]
+  
   @js.native
   sealed trait AUDIO extends js.Object
   
@@ -28,22 +53,4 @@ object hlsParserStrings {
   
   @js.native
   sealed trait segment extends js.Object
-  
-  @scala.inline
-  def AUDIO: AUDIO = "AUDIO".asInstanceOf[AUDIO]
-  @scala.inline
-  def `CLOSED-CAPTIONS`: `CLOSED-CAPTIONS` = "CLOSED-CAPTIONS".asInstanceOf[`CLOSED-CAPTIONS`]
-  @scala.inline
-  def EVENT: EVENT = "EVENT".asInstanceOf[EVENT]
-  @scala.inline
-  def SUBTITLES: SUBTITLES = "SUBTITLES".asInstanceOf[SUBTITLES]
-  @scala.inline
-  def VIDEO: VIDEO = "VIDEO".asInstanceOf[VIDEO]
-  @scala.inline
-  def VOD: VOD = "VOD".asInstanceOf[VOD]
-  @scala.inline
-  def playlist: playlist = "playlist".asInstanceOf[playlist]
-  @scala.inline
-  def segment: segment = "segment".asInstanceOf[segment]
 }
-

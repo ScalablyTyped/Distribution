@@ -2,10 +2,11 @@ package typings.lodash.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RightCurriedFunction4[T1, T2, T3, T4, R] extends js.Object {
+  
   def apply(): RightCurriedFunction4[T1, T2, T3, T4, R] = js.native
   def apply(t1: T1, t2: T2, t3: T3, t4: T4): R = js.native
   def apply(t1: T1, t2: T2, t3: T3, t4: __): RightCurriedFunction1[T4, R] = js.native
@@ -23,4 +24,3 @@ trait RightCurriedFunction4[T1, T2, T3, T4, R] extends js.Object {
   def apply(t3: T3, t4: __): RightCurriedFunction3[T1, T2, T4, R] = js.native
   def apply(t4: T4): RightCurriedFunction3[T1, T2, T3, R] = js.native
 }
-

@@ -6,33 +6,52 @@ import typings.androiduix.androidui.attr.AttrBinder
 import typings.androiduix.androidui.attr.AttrBinder.ClassBinderMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LayoutParams
   extends typings.androiduix.android.widget.FrameLayout.LayoutParams {
-  var dimAmount: Double = js.native
-  var enterAnimation: Animation = js.native
-  var exitAnimation: Animation = js.native
-  var flags: Double = js.native
-  var hideAnimation: Animation = js.native
-  var mTitle: js.Any = js.native
-  var resumeAnimation: Animation = js.native
-  var `type`: Double = js.native
-  var x: Double = js.native
-  var y: Double = js.native
+  
   def copyFrom(o: LayoutParams): Double = js.native
+  
+  var dimAmount: Double = js.native
+  
+  var enterAnimation: Animation = js.native
+  
+  var exitAnimation: Animation = js.native
+  
+  var flags: Double = js.native
+  
   def getTitle(): String = js.native
+  
+  var hideAnimation: Animation = js.native
+  
   /* private */ def isFloating(): js.Any = js.native
+  
   /* private */ def isFocusable(): js.Any = js.native
+  
   /* private */ def isSplitTouch(): js.Any = js.native
+  
   /* private */ def isTouchModal(): js.Any = js.native
+  
   /* private */ def isTouchable(): js.Any = js.native
+  
   /* private */ def isWatchTouchOutside(): js.Any = js.native
+  
+  var mTitle: js.Any = js.native
+  
+  var resumeAnimation: Animation = js.native
+  
   def setTitle(title: String): Unit = js.native
+  
+  var `type`: Double = js.native
+  
+  var x: Double = js.native
+  
+  var y: Double = js.native
 }
-
 object LayoutParams {
+  
   @scala.inline
   def apply(
     _attrBinder: js.Any,
@@ -78,56 +97,77 @@ object LayoutParams {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutParams]
   }
+  
   @scala.inline
   implicit class LayoutParamsOps[Self <: LayoutParams] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCopyFrom(value: LayoutParams => Double): Self = this.set("copyFrom", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setDimAmount(value: Double): Self = this.set("dimAmount", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEnterAnimation(value: Animation): Self = this.set("enterAnimation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExitAnimation(value: Animation): Self = this.set("exitAnimation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFlags(value: Double): Self = this.set("flags", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetTitle(value: () => String): Self = this.set("getTitle", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setHideAnimation(value: Animation): Self = this.set("hideAnimation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsFloating(value: () => js.Any): Self = this.set("isFloating", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsFocusable(value: () => js.Any): Self = this.set("isFocusable", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsSplitTouch(value: () => js.Any): Self = this.set("isSplitTouch", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsTouchModal(value: () => js.Any): Self = this.set("isTouchModal", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsTouchable(value: () => js.Any): Self = this.set("isTouchable", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsWatchTouchOutside(value: () => js.Any): Self = this.set("isWatchTouchOutside", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setMTitle(value: js.Any): Self = this.set("mTitle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setResumeAnimation(value: Animation): Self = this.set("resumeAnimation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSetTitle(value: String => Unit): Self = this.set("setTitle", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
   }
-  
 }
-

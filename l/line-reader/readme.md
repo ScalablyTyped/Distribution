@@ -10,8 +10,8 @@ Asynchronous, buffered, line-by-line file/stream reader
 | Full name          | line-reader |
 | Keywords           | file, line, reader, scanner |
 | # releases         | 0 |
-| # dependents       | 160 |
-| # downloads        | 769806 |
+| # dependents       | 189 |
+| # downloads        | 1273059 |
 | # stars            | 11 |
 
 ## Links

@@ -2,15 +2,17 @@ package typings.domHelpers
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dom-helpers/cjs/types", JSImport.Namespace)
 @js.native
 object typesMod extends js.Object {
-  /* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* Rewritten from type alias, can be one of: 
+  
+  /* keyof csstype.csstype.Properties<string | 0> */ /* Rewritten from type alias, can be one of: 
     - typings.domHelpers.domHelpersStrings.alignContent
     - typings.domHelpers.domHelpersStrings.alignItems
     - typings.domHelpers.domHelpersStrings.alignSelf
+    - typings.domHelpers.domHelpersStrings.alignTracks
     - typings.domHelpers.domHelpersStrings.animationDelay
     - typings.domHelpers.domHelpersStrings.animationDirection
     - typings.domHelpers.domHelpersStrings.animationDuration
@@ -125,6 +127,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.fontOpticalSizing
     - typings.domHelpers.domHelpersStrings.fontSize
     - typings.domHelpers.domHelpersStrings.fontSizeAdjust
+    - typings.domHelpers.domHelpersStrings.fontSmooth
     - typings.domHelpers.domHelpersStrings.fontStretch
     - typings.domHelpers.domHelpersStrings.fontStyle
     - typings.domHelpers.domHelpersStrings.fontSynthesis
@@ -165,6 +168,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.justifyContent
     - typings.domHelpers.domHelpersStrings.justifyItems
     - typings.domHelpers.domHelpersStrings.justifySelf
+    - typings.domHelpers.domHelpersStrings.justifyTracks
     - typings.domHelpers.domHelpersStrings.left
     - typings.domHelpers.domHelpersStrings.letterSpacing
     - typings.domHelpers.domHelpersStrings.lineBreak
@@ -198,6 +202,8 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.maskRepeat
     - typings.domHelpers.domHelpersStrings.maskSize
     - typings.domHelpers.domHelpersStrings.maskType
+    - typings.domHelpers.domHelpersStrings.masonryAutoFlow
+    - typings.domHelpers.domHelpersStrings.mathStyle
     - typings.domHelpers.domHelpersStrings.maxBlockSize
     - typings.domHelpers.domHelpersStrings.maxHeight
     - typings.domHelpers.domHelpersStrings.maxInlineSize
@@ -297,6 +303,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.scrollSnapStop
     - typings.domHelpers.domHelpersStrings.scrollSnapType
     - typings.domHelpers.domHelpersStrings.scrollbarColor
+    - typings.domHelpers.domHelpersStrings.scrollbarGutter
     - typings.domHelpers.domHelpersStrings.scrollbarWidth
     - typings.domHelpers.domHelpersStrings.shapeImageThreshold
     - typings.domHelpers.domHelpersStrings.shapeMargin
@@ -424,19 +431,14 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.MozColumnRuleWidth
     - typings.domHelpers.domHelpersStrings.MozColumnWidth
     - typings.domHelpers.domHelpersStrings.MozContextProperties
-    - typings.domHelpers.domHelpersStrings.MozFloatEdge
     - typings.domHelpers.domHelpersStrings.MozFontFeatureSettings
     - typings.domHelpers.domHelpersStrings.MozFontLanguageOverride
-    - typings.domHelpers.domHelpersStrings.MozForceBrokenImageIcon
     - typings.domHelpers.domHelpersStrings.MozHyphens
     - typings.domHelpers.domHelpersStrings.MozImageRegion
     - typings.domHelpers.domHelpersStrings.MozMarginEnd
     - typings.domHelpers.domHelpersStrings.MozMarginStart
     - typings.domHelpers.domHelpersStrings.MozOrient
-    - typings.domHelpers.domHelpersStrings.MozOutlineRadiusBottomleft
-    - typings.domHelpers.domHelpersStrings.MozOutlineRadiusBottomright
-    - typings.domHelpers.domHelpersStrings.MozOutlineRadiusTopleft
-    - typings.domHelpers.domHelpersStrings.MozOutlineRadiusTopright
+    - typings.domHelpers.domHelpersStrings.MozOsxFontSmoothing
     - typings.domHelpers.domHelpersStrings.MozPaddingEnd
     - typings.domHelpers.domHelpersStrings.MozPaddingStart
     - typings.domHelpers.domHelpersStrings.MozPerspective
@@ -478,6 +480,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.msHyphenateLimitZone
     - typings.domHelpers.domHelpersStrings.msHyphens
     - typings.domHelpers.domHelpersStrings.msImeAlign
+    - typings.domHelpers.domHelpersStrings.msJustifySelf
     - typings.domHelpers.domHelpersStrings.msLineBreak
     - typings.domHelpers.domHelpersStrings.msOrder
     - typings.domHelpers.domHelpersStrings.msOverflowStyle
@@ -568,6 +571,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.WebkitFlexWrap
     - typings.domHelpers.domHelpersStrings.WebkitFontFeatureSettings
     - typings.domHelpers.domHelpersStrings.WebkitFontKerning
+    - typings.domHelpers.domHelpersStrings.WebkitFontSmoothing
     - typings.domHelpers.domHelpersStrings.WebkitFontVariantLigatures
     - typings.domHelpers.domHelpersStrings.WebkitHyphens
     - typings.domHelpers.domHelpersStrings.WebkitJustifyContent
@@ -595,6 +599,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.WebkitPerspective
     - typings.domHelpers.domHelpersStrings.WebkitPerspectiveOrigin
     - typings.domHelpers.domHelpersStrings.WebkitPrintColorAdjust
+    - typings.domHelpers.domHelpersStrings.WebkitRubyPosition
     - typings.domHelpers.domHelpersStrings.WebkitScrollSnapType
     - typings.domHelpers.domHelpersStrings.WebkitShapeMargin
     - typings.domHelpers.domHelpersStrings.WebkitTapHighlightColor
@@ -647,6 +652,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.WebkitTextEmphasis
     - typings.domHelpers.domHelpersStrings.WebkitTextStroke
     - typings.domHelpers.domHelpersStrings.WebkitTransition
+    - typings.domHelpers.domHelpersStrings.azimuth
     - typings.domHelpers.domHelpersStrings.boxAlign
     - typings.domHelpers.domHelpersStrings.boxDirection
     - typings.domHelpers.domHelpersStrings.boxFlex
@@ -703,10 +709,16 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.MozBoxOrient
     - typings.domHelpers.domHelpersStrings.MozBoxPack
     - typings.domHelpers.domHelpersStrings.MozBoxShadow
+    - typings.domHelpers.domHelpersStrings.MozFloatEdge
+    - typings.domHelpers.domHelpersStrings.MozForceBrokenImageIcon
     - typings.domHelpers.domHelpersStrings.MozOpacity
     - typings.domHelpers.domHelpersStrings.MozOutline
     - typings.domHelpers.domHelpersStrings.MozOutlineColor
     - typings.domHelpers.domHelpersStrings.MozOutlineRadius
+    - typings.domHelpers.domHelpersStrings.MozOutlineRadiusBottomleft
+    - typings.domHelpers.domHelpersStrings.MozOutlineRadiusBottomright
+    - typings.domHelpers.domHelpersStrings.MozOutlineRadiusTopleft
+    - typings.domHelpers.domHelpersStrings.MozOutlineRadiusTopright
     - typings.domHelpers.domHelpersStrings.MozOutlineStyle
     - typings.domHelpers.domHelpersStrings.MozOutlineWidth
     - typings.domHelpers.domHelpersStrings.MozTextAlignLast
@@ -776,10 +788,11 @@ object typesMod extends js.Object {
   */
   trait CamelProperty extends Property
   
-  /* keyof csstype.csstype.PropertiesHyphen<string & {} | 0, string & {}> */ /* Rewritten from type alias, can be one of: 
+  /* keyof csstype.csstype.PropertiesHyphen<string | 0> */ /* Rewritten from type alias, can be one of: 
     - typings.domHelpers.domHelpersStrings.`align-content`
     - typings.domHelpers.domHelpersStrings.`align-items`
     - typings.domHelpers.domHelpersStrings.`align-self`
+    - typings.domHelpers.domHelpersStrings.`align-tracks`
     - typings.domHelpers.domHelpersStrings.`animation-delay`
     - typings.domHelpers.domHelpersStrings.`animation-direction`
     - typings.domHelpers.domHelpersStrings.`animation-duration`
@@ -894,6 +907,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.`font-optical-sizing`
     - typings.domHelpers.domHelpersStrings.`font-size`
     - typings.domHelpers.domHelpersStrings.`font-size-adjust`
+    - typings.domHelpers.domHelpersStrings.`font-smooth`
     - typings.domHelpers.domHelpersStrings.`font-stretch`
     - typings.domHelpers.domHelpersStrings.`font-style`
     - typings.domHelpers.domHelpersStrings.`font-synthesis`
@@ -934,6 +948,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.`justify-content`
     - typings.domHelpers.domHelpersStrings.`justify-items`
     - typings.domHelpers.domHelpersStrings.`justify-self`
+    - typings.domHelpers.domHelpersStrings.`justify-tracks`
     - typings.domHelpers.domHelpersStrings.left
     - typings.domHelpers.domHelpersStrings.`letter-spacing`
     - typings.domHelpers.domHelpersStrings.`line-break`
@@ -967,6 +982,8 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.`mask-repeat`
     - typings.domHelpers.domHelpersStrings.`mask-size`
     - typings.domHelpers.domHelpersStrings.`mask-type`
+    - typings.domHelpers.domHelpersStrings.`masonry-auto-flow`
+    - typings.domHelpers.domHelpersStrings.`math-style`
     - typings.domHelpers.domHelpersStrings.`max-block-size`
     - typings.domHelpers.domHelpersStrings.`max-height`
     - typings.domHelpers.domHelpersStrings.`max-inline-size`
@@ -1066,6 +1083,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.`scroll-snap-stop`
     - typings.domHelpers.domHelpersStrings.`scroll-snap-type`
     - typings.domHelpers.domHelpersStrings.`scrollbar-color`
+    - typings.domHelpers.domHelpersStrings.`scrollbar-gutter`
     - typings.domHelpers.domHelpersStrings.`scrollbar-width`
     - typings.domHelpers.domHelpersStrings.`shape-image-threshold`
     - typings.domHelpers.domHelpersStrings.`shape-margin`
@@ -1193,19 +1211,14 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.`-moz-column-rule-width`
     - typings.domHelpers.domHelpersStrings.`-moz-column-width`
     - typings.domHelpers.domHelpersStrings.`-moz-context-properties`
-    - typings.domHelpers.domHelpersStrings.`-moz-float-edge`
     - typings.domHelpers.domHelpersStrings.`-moz-font-feature-settings`
     - typings.domHelpers.domHelpersStrings.`-moz-font-language-override`
-    - typings.domHelpers.domHelpersStrings.`-moz-force-broken-image-icon`
     - typings.domHelpers.domHelpersStrings.`-moz-hyphens`
     - typings.domHelpers.domHelpersStrings.`-moz-image-region`
     - typings.domHelpers.domHelpersStrings.`-moz-margin-end`
     - typings.domHelpers.domHelpersStrings.`-moz-margin-start`
     - typings.domHelpers.domHelpersStrings.`-moz-orient`
-    - typings.domHelpers.domHelpersStrings.`-moz-outline-radius-bottomleft`
-    - typings.domHelpers.domHelpersStrings.`-moz-outline-radius-bottomright`
-    - typings.domHelpers.domHelpersStrings.`-moz-outline-radius-topleft`
-    - typings.domHelpers.domHelpersStrings.`-moz-outline-radius-topright`
+    - typings.domHelpers.domHelpersStrings.`-moz-osx-font-smoothing`
     - typings.domHelpers.domHelpersStrings.`-moz-padding-end`
     - typings.domHelpers.domHelpersStrings.`-moz-padding-start`
     - typings.domHelpers.domHelpersStrings.`-moz-perspective`
@@ -1247,6 +1260,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.`-ms-hyphenate-limit-zone`
     - typings.domHelpers.domHelpersStrings.`-ms-hyphens`
     - typings.domHelpers.domHelpersStrings.`-ms-ime-align`
+    - typings.domHelpers.domHelpersStrings.`-ms-justify-self`
     - typings.domHelpers.domHelpersStrings.`-ms-line-break`
     - typings.domHelpers.domHelpersStrings.`-ms-order`
     - typings.domHelpers.domHelpersStrings.`-ms-overflow-style`
@@ -1337,6 +1351,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.`-webkit-flex-wrap`
     - typings.domHelpers.domHelpersStrings.`-webkit-font-feature-settings`
     - typings.domHelpers.domHelpersStrings.`-webkit-font-kerning`
+    - typings.domHelpers.domHelpersStrings.`-webkit-font-smoothing`
     - typings.domHelpers.domHelpersStrings.`-webkit-font-variant-ligatures`
     - typings.domHelpers.domHelpersStrings.`-webkit-hyphens`
     - typings.domHelpers.domHelpersStrings.`-webkit-justify-content`
@@ -1364,6 +1379,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.`-webkit-perspective`
     - typings.domHelpers.domHelpersStrings.`-webkit-perspective-origin`
     - typings.domHelpers.domHelpersStrings.`-webkit-print-color-adjust`
+    - typings.domHelpers.domHelpersStrings.`-webkit-ruby-position`
     - typings.domHelpers.domHelpersStrings.`-webkit-scroll-snap-type`
     - typings.domHelpers.domHelpersStrings.`-webkit-shape-margin`
     - typings.domHelpers.domHelpersStrings.`-webkit-tap-highlight-color`
@@ -1416,6 +1432,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.`-webkit-text-emphasis`
     - typings.domHelpers.domHelpersStrings.`-webkit-text-stroke`
     - typings.domHelpers.domHelpersStrings.`-webkit-transition`
+    - typings.domHelpers.domHelpersStrings.azimuth
     - typings.domHelpers.domHelpersStrings.`box-align`
     - typings.domHelpers.domHelpersStrings.`box-direction`
     - typings.domHelpers.domHelpersStrings.`box-flex`
@@ -1472,10 +1489,16 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.`-moz-box-orient`
     - typings.domHelpers.domHelpersStrings.`-moz-box-pack`
     - typings.domHelpers.domHelpersStrings.`-moz-box-shadow`
+    - typings.domHelpers.domHelpersStrings.`-moz-float-edge`
+    - typings.domHelpers.domHelpersStrings.`-moz-force-broken-image-icon`
     - typings.domHelpers.domHelpersStrings.`-moz-opacity`
     - typings.domHelpers.domHelpersStrings.`-moz-outline`
     - typings.domHelpers.domHelpersStrings.`-moz-outline-color`
     - typings.domHelpers.domHelpersStrings.`-moz-outline-radius`
+    - typings.domHelpers.domHelpersStrings.`-moz-outline-radius-bottomleft`
+    - typings.domHelpers.domHelpersStrings.`-moz-outline-radius-bottomright`
+    - typings.domHelpers.domHelpersStrings.`-moz-outline-radius-topleft`
+    - typings.domHelpers.domHelpersStrings.`-moz-outline-radius-topright`
     - typings.domHelpers.domHelpersStrings.`-moz-outline-style`
     - typings.domHelpers.domHelpersStrings.`-moz-outline-width`
     - typings.domHelpers.domHelpersStrings.`-moz-text-align-last`
@@ -1775,6 +1798,11 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.overflowWrap
     - typings.domHelpers.domHelpersStrings.overflowX
     - typings.domHelpers.domHelpersStrings.overflowY
+    - typings.domHelpers.domHelpersStrings.overscrollBehavior
+    - typings.domHelpers.domHelpersStrings.overscrollBehaviorBlock
+    - typings.domHelpers.domHelpersStrings.overscrollBehaviorInline
+    - typings.domHelpers.domHelpersStrings.overscrollBehaviorX
+    - typings.domHelpers.domHelpersStrings.overscrollBehaviorY
     - typings.domHelpers.domHelpersStrings.padding
     - typings.domHelpers.domHelpersStrings.paddingBlockEnd
     - typings.domHelpers.domHelpersStrings.paddingBlockStart
@@ -1937,6 +1965,4 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.zoom
   */
   trait Styles extends js.Object
-  
 }
-

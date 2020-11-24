@@ -2,9 +2,820 @@ package typings.stellarBase
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stellarBaseStrings {
+  
+  @scala.inline
+  def account: account = "account".asInstanceOf[account]
+  
+  @scala.inline
+  def accountMerge: accountMerge = "accountMerge".asInstanceOf[accountMerge]
+  
+  @scala.inline
+  def accountMergeDestFull: accountMergeDestFull = "accountMergeDestFull".asInstanceOf[accountMergeDestFull]
+  
+  @scala.inline
+  def accountMergeHasSubEntries: accountMergeHasSubEntries = "accountMergeHasSubEntries".asInstanceOf[accountMergeHasSubEntries]
+  
+  @scala.inline
+  def accountMergeImmutableSet: accountMergeImmutableSet = "accountMergeImmutableSet".asInstanceOf[accountMergeImmutableSet]
+  
+  @scala.inline
+  def accountMergeIsSponsor: accountMergeIsSponsor = "accountMergeIsSponsor".asInstanceOf[accountMergeIsSponsor]
+  
+  @scala.inline
+  def accountMergeMalformed: accountMergeMalformed = "accountMergeMalformed".asInstanceOf[accountMergeMalformed]
+  
+  @scala.inline
+  def accountMergeNoAccount: accountMergeNoAccount = "accountMergeNoAccount".asInstanceOf[accountMergeNoAccount]
+  
+  @scala.inline
+  def accountMergeSeqnumTooFar: accountMergeSeqnumTooFar = "accountMergeSeqnumTooFar".asInstanceOf[accountMergeSeqnumTooFar]
+  
+  @scala.inline
+  def accountMergeSuccess: accountMergeSuccess = "accountMergeSuccess".asInstanceOf[accountMergeSuccess]
+  
+  @scala.inline
+  def allowTrust: allowTrust = "allowTrust".asInstanceOf[allowTrust]
+  
+  @scala.inline
+  def allowTrustCantRevoke: allowTrustCantRevoke = "allowTrustCantRevoke".asInstanceOf[allowTrustCantRevoke]
+  
+  @scala.inline
+  def allowTrustMalformed: allowTrustMalformed = "allowTrustMalformed".asInstanceOf[allowTrustMalformed]
+  
+  @scala.inline
+  def allowTrustNoTrustLine: allowTrustNoTrustLine = "allowTrustNoTrustLine".asInstanceOf[allowTrustNoTrustLine]
+  
+  @scala.inline
+  def allowTrustSelfNotAllowed: allowTrustSelfNotAllowed = "allowTrustSelfNotAllowed".asInstanceOf[allowTrustSelfNotAllowed]
+  
+  @scala.inline
+  def allowTrustSuccess: allowTrustSuccess = "allowTrustSuccess".asInstanceOf[allowTrustSuccess]
+  
+  @scala.inline
+  def allowTrustTrustNotRequired: allowTrustTrustNotRequired = "allowTrustTrustNotRequired".asInstanceOf[allowTrustTrustNotRequired]
+  
+  @scala.inline
+  def assetTypeCreditAlphanum12: assetTypeCreditAlphanum12 = "assetTypeCreditAlphanum12".asInstanceOf[assetTypeCreditAlphanum12]
+  
+  @scala.inline
+  def assetTypeCreditAlphanum4: assetTypeCreditAlphanum4 = "assetTypeCreditAlphanum4".asInstanceOf[assetTypeCreditAlphanum4]
+  
+  @scala.inline
+  def assetTypeNative: assetTypeNative = "assetTypeNative".asInstanceOf[assetTypeNative]
+  
+  @scala.inline
+  def auth: auth = "auth".asInstanceOf[auth]
+  
+  @scala.inline
+  def authImmutableFlag: authImmutableFlag = "authImmutableFlag".asInstanceOf[authImmutableFlag]
+  
+  @scala.inline
+  def authRequiredFlag: authRequiredFlag = "authRequiredFlag".asInstanceOf[authRequiredFlag]
+  
+  @scala.inline
+  def authRevocableFlag: authRevocableFlag = "authRevocableFlag".asInstanceOf[authRevocableFlag]
+  
+  @scala.inline
+  def authorizedFlag: authorizedFlag = "authorizedFlag".asInstanceOf[authorizedFlag]
+  
+  @scala.inline
+  def authorizedToMaintainLiabilitiesFlag: authorizedToMaintainLiabilitiesFlag = "authorizedToMaintainLiabilitiesFlag".asInstanceOf[authorizedToMaintainLiabilitiesFlag]
+  
+  @scala.inline
+  def base64: base64 = "base64".asInstanceOf[base64]
+  
+  @scala.inline
+  def beginSponsoringFutureReserves: beginSponsoringFutureReserves = "beginSponsoringFutureReserves".asInstanceOf[beginSponsoringFutureReserves]
+  
+  @scala.inline
+  def beginSponsoringFutureReservesAlreadySponsored: beginSponsoringFutureReservesAlreadySponsored = "beginSponsoringFutureReservesAlreadySponsored".asInstanceOf[beginSponsoringFutureReservesAlreadySponsored]
+  
+  @scala.inline
+  def beginSponsoringFutureReservesMalformed: beginSponsoringFutureReservesMalformed = "beginSponsoringFutureReservesMalformed".asInstanceOf[beginSponsoringFutureReservesMalformed]
+  
+  @scala.inline
+  def beginSponsoringFutureReservesRecursive: beginSponsoringFutureReservesRecursive = "beginSponsoringFutureReservesRecursive".asInstanceOf[beginSponsoringFutureReservesRecursive]
+  
+  @scala.inline
+  def beginSponsoringFutureReservesSuccess: beginSponsoringFutureReservesSuccess = "beginSponsoringFutureReservesSuccess".asInstanceOf[beginSponsoringFutureReservesSuccess]
+  
+  @scala.inline
+  def bumpSequence: bumpSequence = "bumpSequence".asInstanceOf[bumpSequence]
+  
+  @scala.inline
+  def bumpSequenceBadSeq: bumpSequenceBadSeq = "bumpSequenceBadSeq".asInstanceOf[bumpSequenceBadSeq]
+  
+  @scala.inline
+  def bumpSequenceSuccess: bumpSequenceSuccess = "bumpSequenceSuccess".asInstanceOf[bumpSequenceSuccess]
+  
+  @scala.inline
+  def changeTrust: changeTrust = "changeTrust".asInstanceOf[changeTrust]
+  
+  @scala.inline
+  def changeTrustInvalidLimit: changeTrustInvalidLimit = "changeTrustInvalidLimit".asInstanceOf[changeTrustInvalidLimit]
+  
+  @scala.inline
+  def changeTrustLowReserve: changeTrustLowReserve = "changeTrustLowReserve".asInstanceOf[changeTrustLowReserve]
+  
+  @scala.inline
+  def changeTrustMalformed: changeTrustMalformed = "changeTrustMalformed".asInstanceOf[changeTrustMalformed]
+  
+  @scala.inline
+  def changeTrustNoIssuer: changeTrustNoIssuer = "changeTrustNoIssuer".asInstanceOf[changeTrustNoIssuer]
+  
+  @scala.inline
+  def changeTrustSelfNotAllowed: changeTrustSelfNotAllowed = "changeTrustSelfNotAllowed".asInstanceOf[changeTrustSelfNotAllowed]
+  
+  @scala.inline
+  def changeTrustSuccess: changeTrustSuccess = "changeTrustSuccess".asInstanceOf[changeTrustSuccess]
+  
+  @scala.inline
+  def claimClaimableBalance: claimClaimableBalance = "claimClaimableBalance".asInstanceOf[claimClaimableBalance]
+  
+  @scala.inline
+  def claimClaimableBalanceCannotClaim: claimClaimableBalanceCannotClaim = "claimClaimableBalanceCannotClaim".asInstanceOf[claimClaimableBalanceCannotClaim]
+  
+  @scala.inline
+  def claimClaimableBalanceDoesNotExist: claimClaimableBalanceDoesNotExist = "claimClaimableBalanceDoesNotExist".asInstanceOf[claimClaimableBalanceDoesNotExist]
+  
+  @scala.inline
+  def claimClaimableBalanceLineFull: claimClaimableBalanceLineFull = "claimClaimableBalanceLineFull".asInstanceOf[claimClaimableBalanceLineFull]
+  
+  @scala.inline
+  def claimClaimableBalanceNoTrust: claimClaimableBalanceNoTrust = "claimClaimableBalanceNoTrust".asInstanceOf[claimClaimableBalanceNoTrust]
+  
+  @scala.inline
+  def claimClaimableBalanceNotAuthorized: claimClaimableBalanceNotAuthorized = "claimClaimableBalanceNotAuthorized".asInstanceOf[claimClaimableBalanceNotAuthorized]
+  
+  @scala.inline
+  def claimClaimableBalanceSuccess: claimClaimableBalanceSuccess = "claimClaimableBalanceSuccess".asInstanceOf[claimClaimableBalanceSuccess]
+  
+  @scala.inline
+  def claimPredicateAnd: claimPredicateAnd = "claimPredicateAnd".asInstanceOf[claimPredicateAnd]
+  
+  @scala.inline
+  def claimPredicateBeforeAbsoluteTime: claimPredicateBeforeAbsoluteTime = "claimPredicateBeforeAbsoluteTime".asInstanceOf[claimPredicateBeforeAbsoluteTime]
+  
+  @scala.inline
+  def claimPredicateBeforeRelativeTime: claimPredicateBeforeRelativeTime = "claimPredicateBeforeRelativeTime".asInstanceOf[claimPredicateBeforeRelativeTime]
+  
+  @scala.inline
+  def claimPredicateNot: claimPredicateNot = "claimPredicateNot".asInstanceOf[claimPredicateNot]
+  
+  @scala.inline
+  def claimPredicateOr: claimPredicateOr = "claimPredicateOr".asInstanceOf[claimPredicateOr]
+  
+  @scala.inline
+  def claimPredicateUnconditional: claimPredicateUnconditional = "claimPredicateUnconditional".asInstanceOf[claimPredicateUnconditional]
+  
+  @scala.inline
+  def claimableBalance: claimableBalance = "claimableBalance".asInstanceOf[claimableBalance]
+  
+  @scala.inline
+  def claimableBalanceIdTypeV0: claimableBalanceIdTypeV0 = "claimableBalanceIdTypeV0".asInstanceOf[claimableBalanceIdTypeV0]
+  
+  @scala.inline
+  def claimantTypeV0: claimantTypeV0 = "claimantTypeV0".asInstanceOf[claimantTypeV0]
+  
+  @scala.inline
+  def createAccount: createAccount = "createAccount".asInstanceOf[createAccount]
+  
+  @scala.inline
+  def createAccountAlreadyExist: createAccountAlreadyExist = "createAccountAlreadyExist".asInstanceOf[createAccountAlreadyExist]
+  
+  @scala.inline
+  def createAccountLowReserve: createAccountLowReserve = "createAccountLowReserve".asInstanceOf[createAccountLowReserve]
+  
+  @scala.inline
+  def createAccountMalformed: createAccountMalformed = "createAccountMalformed".asInstanceOf[createAccountMalformed]
+  
+  @scala.inline
+  def createAccountSuccess: createAccountSuccess = "createAccountSuccess".asInstanceOf[createAccountSuccess]
+  
+  @scala.inline
+  def createAccountUnderfunded: createAccountUnderfunded = "createAccountUnderfunded".asInstanceOf[createAccountUnderfunded]
+  
+  @scala.inline
+  def createClaimableBalance: createClaimableBalance = "createClaimableBalance".asInstanceOf[createClaimableBalance]
+  
+  @scala.inline
+  def createClaimableBalanceLowReserve: createClaimableBalanceLowReserve = "createClaimableBalanceLowReserve".asInstanceOf[createClaimableBalanceLowReserve]
+  
+  @scala.inline
+  def createClaimableBalanceMalformed: createClaimableBalanceMalformed = "createClaimableBalanceMalformed".asInstanceOf[createClaimableBalanceMalformed]
+  
+  @scala.inline
+  def createClaimableBalanceNoTrust: createClaimableBalanceNoTrust = "createClaimableBalanceNoTrust".asInstanceOf[createClaimableBalanceNoTrust]
+  
+  @scala.inline
+  def createClaimableBalanceNotAuthorized: createClaimableBalanceNotAuthorized = "createClaimableBalanceNotAuthorized".asInstanceOf[createClaimableBalanceNotAuthorized]
+  
+  @scala.inline
+  def createClaimableBalanceSuccess: createClaimableBalanceSuccess = "createClaimableBalanceSuccess".asInstanceOf[createClaimableBalanceSuccess]
+  
+  @scala.inline
+  def createClaimableBalanceUnderfunded: createClaimableBalanceUnderfunded = "createClaimableBalanceUnderfunded".asInstanceOf[createClaimableBalanceUnderfunded]
+  
+  @scala.inline
+  def createPassiveSellOffer: createPassiveSellOffer = "createPassiveSellOffer".asInstanceOf[createPassiveSellOffer]
+  
+  @scala.inline
+  def credit_alphanum12: credit_alphanum12 = "credit_alphanum12".asInstanceOf[credit_alphanum12]
+  
+  @scala.inline
+  def credit_alphanum4: credit_alphanum4 = "credit_alphanum4".asInstanceOf[credit_alphanum4]
+  
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  
+  @scala.inline
+  def deadentry: deadentry = "deadentry".asInstanceOf[deadentry]
+  
+  @scala.inline
+  def dontHave: dontHave = "dontHave".asInstanceOf[dontHave]
+  
+  @scala.inline
+  def ed25519: ed25519 = "ed25519".asInstanceOf[ed25519]
+  
+  @scala.inline
+  def endSponsoringFutureReserves: endSponsoringFutureReserves = "endSponsoringFutureReserves".asInstanceOf[endSponsoringFutureReserves]
+  
+  @scala.inline
+  def endSponsoringFutureReservesNotSponsored: endSponsoringFutureReservesNotSponsored = "endSponsoringFutureReservesNotSponsored".asInstanceOf[endSponsoringFutureReservesNotSponsored]
+  
+  @scala.inline
+  def endSponsoringFutureReservesSuccess: endSponsoringFutureReservesSuccess = "endSponsoringFutureReservesSuccess".asInstanceOf[endSponsoringFutureReservesSuccess]
+  
+  @scala.inline
+  def envelopeTypeAuth: envelopeTypeAuth = "envelopeTypeAuth".asInstanceOf[envelopeTypeAuth]
+  
+  @scala.inline
+  def envelopeTypeOpId: envelopeTypeOpId = "envelopeTypeOpId".asInstanceOf[envelopeTypeOpId]
+  
+  @scala.inline
+  def envelopeTypeScp: envelopeTypeScp = "envelopeTypeScp".asInstanceOf[envelopeTypeScp]
+  
+  @scala.inline
+  def envelopeTypeScpvalue: envelopeTypeScpvalue = "envelopeTypeScpvalue".asInstanceOf[envelopeTypeScpvalue]
+  
+  @scala.inline
+  def envelopeTypeTx: envelopeTypeTx = "envelopeTypeTx".asInstanceOf[envelopeTypeTx]
+  
+  @scala.inline
+  def envelopeTypeTxFeeBump: envelopeTypeTxFeeBump = "envelopeTypeTxFeeBump".asInstanceOf[envelopeTypeTxFeeBump]
+  
+  @scala.inline
+  def envelopeTypeTxV0: envelopeTypeTxV0 = "envelopeTypeTxV0".asInstanceOf[envelopeTypeTxV0]
+  
+  @scala.inline
+  def errAuth: errAuth = "errAuth".asInstanceOf[errAuth]
+  
+  @scala.inline
+  def errConf: errConf = "errConf".asInstanceOf[errConf]
+  
+  @scala.inline
+  def errData: errData = "errData".asInstanceOf[errData]
+  
+  @scala.inline
+  def errLoad: errLoad = "errLoad".asInstanceOf[errLoad]
+  
+  @scala.inline
+  def errMisc: errMisc = "errMisc".asInstanceOf[errMisc]
+  
+  @scala.inline
+  def errorMsg: errorMsg = "errorMsg".asInstanceOf[errorMsg]
+  
+  @scala.inline
+  def getPeers: getPeers = "getPeers".asInstanceOf[getPeers]
+  
+  @scala.inline
+  def getScpQuorumset: getScpQuorumset = "getScpQuorumset".asInstanceOf[getScpQuorumset]
+  
+  @scala.inline
+  def getScpState: getScpState = "getScpState".asInstanceOf[getScpState]
+  
+  @scala.inline
+  def getTxSet: getTxSet = "getTxSet".asInstanceOf[getTxSet]
+  
+  @scala.inline
+  def hello: hello = "hello".asInstanceOf[hello]
+  
+  @scala.inline
+  def hex: hex = "hex".asInstanceOf[hex]
+  
+  @scala.inline
+  def iPv4: iPv4 = "iPv4".asInstanceOf[iPv4]
+  
+  @scala.inline
+  def iPv6: iPv6 = "iPv6".asInstanceOf[iPv6]
+  
+  @scala.inline
+  def inflation: inflation = "inflation".asInstanceOf[inflation]
+  
+  @scala.inline
+  def inflationNotTime: inflationNotTime = "inflationNotTime".asInstanceOf[inflationNotTime]
+  
+  @scala.inline
+  def inflationSuccess: inflationSuccess = "inflationSuccess".asInstanceOf[inflationSuccess]
+  
+  @scala.inline
+  def initentry: initentry = "initentry".asInstanceOf[initentry]
+  
+  @scala.inline
+  def keyTypeEd25519: keyTypeEd25519 = "keyTypeEd25519".asInstanceOf[keyTypeEd25519]
+  
+  @scala.inline
+  def keyTypeHashX: keyTypeHashX = "keyTypeHashX".asInstanceOf[keyTypeHashX]
+  
+  @scala.inline
+  def keyTypeMuxedEd25519: keyTypeMuxedEd25519 = "keyTypeMuxedEd25519".asInstanceOf[keyTypeMuxedEd25519]
+  
+  @scala.inline
+  def keyTypePreAuthTx: keyTypePreAuthTx = "keyTypePreAuthTx".asInstanceOf[keyTypePreAuthTx]
+  
+  @scala.inline
+  def ledgerEntryCreated: ledgerEntryCreated = "ledgerEntryCreated".asInstanceOf[ledgerEntryCreated]
+  
+  @scala.inline
+  def ledgerEntryRemoved: ledgerEntryRemoved = "ledgerEntryRemoved".asInstanceOf[ledgerEntryRemoved]
+  
+  @scala.inline
+  def ledgerEntryState: ledgerEntryState = "ledgerEntryState".asInstanceOf[ledgerEntryState]
+  
+  @scala.inline
+  def ledgerEntryUpdated: ledgerEntryUpdated = "ledgerEntryUpdated".asInstanceOf[ledgerEntryUpdated]
+  
+  @scala.inline
+  def ledgerUpgradeBaseFee: ledgerUpgradeBaseFee = "ledgerUpgradeBaseFee".asInstanceOf[ledgerUpgradeBaseFee]
+  
+  @scala.inline
+  def ledgerUpgradeBaseReserve: ledgerUpgradeBaseReserve = "ledgerUpgradeBaseReserve".asInstanceOf[ledgerUpgradeBaseReserve]
+  
+  @scala.inline
+  def ledgerUpgradeMaxTxSetSize: ledgerUpgradeMaxTxSetSize = "ledgerUpgradeMaxTxSetSize".asInstanceOf[ledgerUpgradeMaxTxSetSize]
+  
+  @scala.inline
+  def ledgerUpgradeVersion: ledgerUpgradeVersion = "ledgerUpgradeVersion".asInstanceOf[ledgerUpgradeVersion]
+  
+  @scala.inline
+  def liveentry: liveentry = "liveentry".asInstanceOf[liveentry]
+  
+  @scala.inline
+  def manageBuyOffer: manageBuyOffer = "manageBuyOffer".asInstanceOf[manageBuyOffer]
+  
+  @scala.inline
+  def manageBuyOfferBuyNoIssuer: manageBuyOfferBuyNoIssuer = "manageBuyOfferBuyNoIssuer".asInstanceOf[manageBuyOfferBuyNoIssuer]
+  
+  @scala.inline
+  def manageBuyOfferBuyNoTrust: manageBuyOfferBuyNoTrust = "manageBuyOfferBuyNoTrust".asInstanceOf[manageBuyOfferBuyNoTrust]
+  
+  @scala.inline
+  def manageBuyOfferBuyNotAuthorized: manageBuyOfferBuyNotAuthorized = "manageBuyOfferBuyNotAuthorized".asInstanceOf[manageBuyOfferBuyNotAuthorized]
+  
+  @scala.inline
+  def manageBuyOfferCrossSelf: manageBuyOfferCrossSelf = "manageBuyOfferCrossSelf".asInstanceOf[manageBuyOfferCrossSelf]
+  
+  @scala.inline
+  def manageBuyOfferLineFull: manageBuyOfferLineFull = "manageBuyOfferLineFull".asInstanceOf[manageBuyOfferLineFull]
+  
+  @scala.inline
+  def manageBuyOfferLowReserve: manageBuyOfferLowReserve = "manageBuyOfferLowReserve".asInstanceOf[manageBuyOfferLowReserve]
+  
+  @scala.inline
+  def manageBuyOfferMalformed: manageBuyOfferMalformed = "manageBuyOfferMalformed".asInstanceOf[manageBuyOfferMalformed]
+  
+  @scala.inline
+  def manageBuyOfferNotFound: manageBuyOfferNotFound = "manageBuyOfferNotFound".asInstanceOf[manageBuyOfferNotFound]
+  
+  @scala.inline
+  def manageBuyOfferSellNoIssuer: manageBuyOfferSellNoIssuer = "manageBuyOfferSellNoIssuer".asInstanceOf[manageBuyOfferSellNoIssuer]
+  
+  @scala.inline
+  def manageBuyOfferSellNoTrust: manageBuyOfferSellNoTrust = "manageBuyOfferSellNoTrust".asInstanceOf[manageBuyOfferSellNoTrust]
+  
+  @scala.inline
+  def manageBuyOfferSellNotAuthorized: manageBuyOfferSellNotAuthorized = "manageBuyOfferSellNotAuthorized".asInstanceOf[manageBuyOfferSellNotAuthorized]
+  
+  @scala.inline
+  def manageBuyOfferSuccess: manageBuyOfferSuccess = "manageBuyOfferSuccess".asInstanceOf[manageBuyOfferSuccess]
+  
+  @scala.inline
+  def manageBuyOfferUnderfunded: manageBuyOfferUnderfunded = "manageBuyOfferUnderfunded".asInstanceOf[manageBuyOfferUnderfunded]
+  
+  @scala.inline
+  def manageData: manageData = "manageData".asInstanceOf[manageData]
+  
+  @scala.inline
+  def manageDataInvalidName: manageDataInvalidName = "manageDataInvalidName".asInstanceOf[manageDataInvalidName]
+  
+  @scala.inline
+  def manageDataLowReserve: manageDataLowReserve = "manageDataLowReserve".asInstanceOf[manageDataLowReserve]
+  
+  @scala.inline
+  def manageDataNameNotFound: manageDataNameNotFound = "manageDataNameNotFound".asInstanceOf[manageDataNameNotFound]
+  
+  @scala.inline
+  def manageDataNotSupportedYet: manageDataNotSupportedYet = "manageDataNotSupportedYet".asInstanceOf[manageDataNotSupportedYet]
+  
+  @scala.inline
+  def manageDataSuccess: manageDataSuccess = "manageDataSuccess".asInstanceOf[manageDataSuccess]
+  
+  @scala.inline
+  def manageOfferCreated: manageOfferCreated = "manageOfferCreated".asInstanceOf[manageOfferCreated]
+  
+  @scala.inline
+  def manageOfferDeleted: manageOfferDeleted = "manageOfferDeleted".asInstanceOf[manageOfferDeleted]
+  
+  @scala.inline
+  def manageOfferUpdated: manageOfferUpdated = "manageOfferUpdated".asInstanceOf[manageOfferUpdated]
+  
+  @scala.inline
+  def manageSellOffer: manageSellOffer = "manageSellOffer".asInstanceOf[manageSellOffer]
+  
+  @scala.inline
+  def manageSellOfferBuyNoIssuer: manageSellOfferBuyNoIssuer = "manageSellOfferBuyNoIssuer".asInstanceOf[manageSellOfferBuyNoIssuer]
+  
+  @scala.inline
+  def manageSellOfferBuyNoTrust: manageSellOfferBuyNoTrust = "manageSellOfferBuyNoTrust".asInstanceOf[manageSellOfferBuyNoTrust]
+  
+  @scala.inline
+  def manageSellOfferBuyNotAuthorized: manageSellOfferBuyNotAuthorized = "manageSellOfferBuyNotAuthorized".asInstanceOf[manageSellOfferBuyNotAuthorized]
+  
+  @scala.inline
+  def manageSellOfferCrossSelf: manageSellOfferCrossSelf = "manageSellOfferCrossSelf".asInstanceOf[manageSellOfferCrossSelf]
+  
+  @scala.inline
+  def manageSellOfferLineFull: manageSellOfferLineFull = "manageSellOfferLineFull".asInstanceOf[manageSellOfferLineFull]
+  
+  @scala.inline
+  def manageSellOfferLowReserve: manageSellOfferLowReserve = "manageSellOfferLowReserve".asInstanceOf[manageSellOfferLowReserve]
+  
+  @scala.inline
+  def manageSellOfferMalformed: manageSellOfferMalformed = "manageSellOfferMalformed".asInstanceOf[manageSellOfferMalformed]
+  
+  @scala.inline
+  def manageSellOfferNotFound: manageSellOfferNotFound = "manageSellOfferNotFound".asInstanceOf[manageSellOfferNotFound]
+  
+  @scala.inline
+  def manageSellOfferSellNoIssuer: manageSellOfferSellNoIssuer = "manageSellOfferSellNoIssuer".asInstanceOf[manageSellOfferSellNoIssuer]
+  
+  @scala.inline
+  def manageSellOfferSellNoTrust: manageSellOfferSellNoTrust = "manageSellOfferSellNoTrust".asInstanceOf[manageSellOfferSellNoTrust]
+  
+  @scala.inline
+  def manageSellOfferSellNotAuthorized: manageSellOfferSellNotAuthorized = "manageSellOfferSellNotAuthorized".asInstanceOf[manageSellOfferSellNotAuthorized]
+  
+  @scala.inline
+  def manageSellOfferSuccess: manageSellOfferSuccess = "manageSellOfferSuccess".asInstanceOf[manageSellOfferSuccess]
+  
+  @scala.inline
+  def manageSellOfferUnderfunded: manageSellOfferUnderfunded = "manageSellOfferUnderfunded".asInstanceOf[manageSellOfferUnderfunded]
+  
+  @scala.inline
+  def memoHash: memoHash = "memoHash".asInstanceOf[memoHash]
+  
+  @scala.inline
+  def memoId: memoId = "memoId".asInstanceOf[memoId]
+  
+  @scala.inline
+  def memoNone: memoNone = "memoNone".asInstanceOf[memoNone]
+  
+  @scala.inline
+  def memoReturn: memoReturn = "memoReturn".asInstanceOf[memoReturn]
+  
+  @scala.inline
+  def memoText: memoText = "memoText".asInstanceOf[memoText]
+  
+  @scala.inline
+  def metaentry: metaentry = "metaentry".asInstanceOf[metaentry]
+  
+  @scala.inline
+  def native: native = "native".asInstanceOf[native]
+  
+  @scala.inline
+  def offer: offer = "offer".asInstanceOf[offer]
+  
+  @scala.inline
+  def opBadAuth: opBadAuth = "opBadAuth".asInstanceOf[opBadAuth]
+  
+  @scala.inline
+  def opExceededWorkLimit: opExceededWorkLimit = "opExceededWorkLimit".asInstanceOf[opExceededWorkLimit]
+  
+  @scala.inline
+  def opInner: opInner = "opInner".asInstanceOf[opInner]
+  
+  @scala.inline
+  def opNoAccount: opNoAccount = "opNoAccount".asInstanceOf[opNoAccount]
+  
+  @scala.inline
+  def opNotSupported: opNotSupported = "opNotSupported".asInstanceOf[opNotSupported]
+  
+  @scala.inline
+  def opTooManySponsoring: opTooManySponsoring = "opTooManySponsoring".asInstanceOf[opTooManySponsoring]
+  
+  @scala.inline
+  def opTooManySubentries: opTooManySubentries = "opTooManySubentries".asInstanceOf[opTooManySubentries]
+  
+  @scala.inline
+  def passiveFlag: passiveFlag = "passiveFlag".asInstanceOf[passiveFlag]
+  
+  @scala.inline
+  def pathPaymentStrictReceive: pathPaymentStrictReceive = "pathPaymentStrictReceive".asInstanceOf[pathPaymentStrictReceive]
+  
+  @scala.inline
+  def pathPaymentStrictReceiveLineFull: pathPaymentStrictReceiveLineFull = "pathPaymentStrictReceiveLineFull".asInstanceOf[pathPaymentStrictReceiveLineFull]
+  
+  @scala.inline
+  def pathPaymentStrictReceiveMalformed: pathPaymentStrictReceiveMalformed = "pathPaymentStrictReceiveMalformed".asInstanceOf[pathPaymentStrictReceiveMalformed]
+  
+  @scala.inline
+  def pathPaymentStrictReceiveNoDestination: pathPaymentStrictReceiveNoDestination = "pathPaymentStrictReceiveNoDestination".asInstanceOf[pathPaymentStrictReceiveNoDestination]
+  
+  @scala.inline
+  def pathPaymentStrictReceiveNoIssuer: pathPaymentStrictReceiveNoIssuer = "pathPaymentStrictReceiveNoIssuer".asInstanceOf[pathPaymentStrictReceiveNoIssuer]
+  
+  @scala.inline
+  def pathPaymentStrictReceiveNoTrust: pathPaymentStrictReceiveNoTrust = "pathPaymentStrictReceiveNoTrust".asInstanceOf[pathPaymentStrictReceiveNoTrust]
+  
+  @scala.inline
+  def pathPaymentStrictReceiveNotAuthorized: pathPaymentStrictReceiveNotAuthorized = "pathPaymentStrictReceiveNotAuthorized".asInstanceOf[pathPaymentStrictReceiveNotAuthorized]
+  
+  @scala.inline
+  def pathPaymentStrictReceiveOfferCrossSelf: pathPaymentStrictReceiveOfferCrossSelf = "pathPaymentStrictReceiveOfferCrossSelf".asInstanceOf[pathPaymentStrictReceiveOfferCrossSelf]
+  
+  @scala.inline
+  def pathPaymentStrictReceiveOverSendmax: pathPaymentStrictReceiveOverSendmax = "pathPaymentStrictReceiveOverSendmax".asInstanceOf[pathPaymentStrictReceiveOverSendmax]
+  
+  @scala.inline
+  def pathPaymentStrictReceiveSrcNoTrust: pathPaymentStrictReceiveSrcNoTrust = "pathPaymentStrictReceiveSrcNoTrust".asInstanceOf[pathPaymentStrictReceiveSrcNoTrust]
+  
+  @scala.inline
+  def pathPaymentStrictReceiveSrcNotAuthorized: pathPaymentStrictReceiveSrcNotAuthorized = "pathPaymentStrictReceiveSrcNotAuthorized".asInstanceOf[pathPaymentStrictReceiveSrcNotAuthorized]
+  
+  @scala.inline
+  def pathPaymentStrictReceiveSuccess: pathPaymentStrictReceiveSuccess = "pathPaymentStrictReceiveSuccess".asInstanceOf[pathPaymentStrictReceiveSuccess]
+  
+  @scala.inline
+  def pathPaymentStrictReceiveTooFewOffers: pathPaymentStrictReceiveTooFewOffers = "pathPaymentStrictReceiveTooFewOffers".asInstanceOf[pathPaymentStrictReceiveTooFewOffers]
+  
+  @scala.inline
+  def pathPaymentStrictReceiveUnderfunded: pathPaymentStrictReceiveUnderfunded = "pathPaymentStrictReceiveUnderfunded".asInstanceOf[pathPaymentStrictReceiveUnderfunded]
+  
+  @scala.inline
+  def pathPaymentStrictSend: pathPaymentStrictSend = "pathPaymentStrictSend".asInstanceOf[pathPaymentStrictSend]
+  
+  @scala.inline
+  def pathPaymentStrictSendLineFull: pathPaymentStrictSendLineFull = "pathPaymentStrictSendLineFull".asInstanceOf[pathPaymentStrictSendLineFull]
+  
+  @scala.inline
+  def pathPaymentStrictSendMalformed: pathPaymentStrictSendMalformed = "pathPaymentStrictSendMalformed".asInstanceOf[pathPaymentStrictSendMalformed]
+  
+  @scala.inline
+  def pathPaymentStrictSendNoDestination: pathPaymentStrictSendNoDestination = "pathPaymentStrictSendNoDestination".asInstanceOf[pathPaymentStrictSendNoDestination]
+  
+  @scala.inline
+  def pathPaymentStrictSendNoIssuer: pathPaymentStrictSendNoIssuer = "pathPaymentStrictSendNoIssuer".asInstanceOf[pathPaymentStrictSendNoIssuer]
+  
+  @scala.inline
+  def pathPaymentStrictSendNoTrust: pathPaymentStrictSendNoTrust = "pathPaymentStrictSendNoTrust".asInstanceOf[pathPaymentStrictSendNoTrust]
+  
+  @scala.inline
+  def pathPaymentStrictSendNotAuthorized: pathPaymentStrictSendNotAuthorized = "pathPaymentStrictSendNotAuthorized".asInstanceOf[pathPaymentStrictSendNotAuthorized]
+  
+  @scala.inline
+  def pathPaymentStrictSendOfferCrossSelf: pathPaymentStrictSendOfferCrossSelf = "pathPaymentStrictSendOfferCrossSelf".asInstanceOf[pathPaymentStrictSendOfferCrossSelf]
+  
+  @scala.inline
+  def pathPaymentStrictSendSrcNoTrust: pathPaymentStrictSendSrcNoTrust = "pathPaymentStrictSendSrcNoTrust".asInstanceOf[pathPaymentStrictSendSrcNoTrust]
+  
+  @scala.inline
+  def pathPaymentStrictSendSrcNotAuthorized: pathPaymentStrictSendSrcNotAuthorized = "pathPaymentStrictSendSrcNotAuthorized".asInstanceOf[pathPaymentStrictSendSrcNotAuthorized]
+  
+  @scala.inline
+  def pathPaymentStrictSendSuccess: pathPaymentStrictSendSuccess = "pathPaymentStrictSendSuccess".asInstanceOf[pathPaymentStrictSendSuccess]
+  
+  @scala.inline
+  def pathPaymentStrictSendTooFewOffers: pathPaymentStrictSendTooFewOffers = "pathPaymentStrictSendTooFewOffers".asInstanceOf[pathPaymentStrictSendTooFewOffers]
+  
+  @scala.inline
+  def pathPaymentStrictSendUnderDestmin: pathPaymentStrictSendUnderDestmin = "pathPaymentStrictSendUnderDestmin".asInstanceOf[pathPaymentStrictSendUnderDestmin]
+  
+  @scala.inline
+  def pathPaymentStrictSendUnderfunded: pathPaymentStrictSendUnderfunded = "pathPaymentStrictSendUnderfunded".asInstanceOf[pathPaymentStrictSendUnderfunded]
+  
+  @scala.inline
+  def payment: payment = "payment".asInstanceOf[payment]
+  
+  @scala.inline
+  def paymentLineFull: paymentLineFull = "paymentLineFull".asInstanceOf[paymentLineFull]
+  
+  @scala.inline
+  def paymentMalformed: paymentMalformed = "paymentMalformed".asInstanceOf[paymentMalformed]
+  
+  @scala.inline
+  def paymentNoDestination: paymentNoDestination = "paymentNoDestination".asInstanceOf[paymentNoDestination]
+  
+  @scala.inline
+  def paymentNoIssuer: paymentNoIssuer = "paymentNoIssuer".asInstanceOf[paymentNoIssuer]
+  
+  @scala.inline
+  def paymentNoTrust: paymentNoTrust = "paymentNoTrust".asInstanceOf[paymentNoTrust]
+  
+  @scala.inline
+  def paymentNotAuthorized: paymentNotAuthorized = "paymentNotAuthorized".asInstanceOf[paymentNotAuthorized]
+  
+  @scala.inline
+  def paymentSrcNoTrust: paymentSrcNoTrust = "paymentSrcNoTrust".asInstanceOf[paymentSrcNoTrust]
+  
+  @scala.inline
+  def paymentSrcNotAuthorized: paymentSrcNotAuthorized = "paymentSrcNotAuthorized".asInstanceOf[paymentSrcNotAuthorized]
+  
+  @scala.inline
+  def paymentSuccess: paymentSuccess = "paymentSuccess".asInstanceOf[paymentSuccess]
+  
+  @scala.inline
+  def paymentUnderfunded: paymentUnderfunded = "paymentUnderfunded".asInstanceOf[paymentUnderfunded]
+  
+  @scala.inline
+  def peers: peers = "peers".asInstanceOf[peers]
+  
+  @scala.inline
+  def publicKeyTypeEd25519: publicKeyTypeEd25519 = "publicKeyTypeEd25519".asInstanceOf[publicKeyTypeEd25519]
+  
+  @scala.inline
+  def raw: raw = "raw".asInstanceOf[raw]
+  
+  @scala.inline
+  def revokeSponsorship: revokeSponsorship = "revokeSponsorship".asInstanceOf[revokeSponsorship]
+  
+  @scala.inline
+  def revokeSponsorshipDoesNotExist: revokeSponsorshipDoesNotExist = "revokeSponsorshipDoesNotExist".asInstanceOf[revokeSponsorshipDoesNotExist]
+  
+  @scala.inline
+  def revokeSponsorshipLedgerEntry: revokeSponsorshipLedgerEntry = "revokeSponsorshipLedgerEntry".asInstanceOf[revokeSponsorshipLedgerEntry]
+  
+  @scala.inline
+  def revokeSponsorshipLowReserve: revokeSponsorshipLowReserve = "revokeSponsorshipLowReserve".asInstanceOf[revokeSponsorshipLowReserve]
+  
+  @scala.inline
+  def revokeSponsorshipNotSponsor: revokeSponsorshipNotSponsor = "revokeSponsorshipNotSponsor".asInstanceOf[revokeSponsorshipNotSponsor]
+  
+  @scala.inline
+  def revokeSponsorshipOnlyTransferable: revokeSponsorshipOnlyTransferable = "revokeSponsorshipOnlyTransferable".asInstanceOf[revokeSponsorshipOnlyTransferable]
+  
+  @scala.inline
+  def revokeSponsorshipSigner: revokeSponsorshipSigner = "revokeSponsorshipSigner".asInstanceOf[revokeSponsorshipSigner]
+  
+  @scala.inline
+  def revokeSponsorshipSuccess: revokeSponsorshipSuccess = "revokeSponsorshipSuccess".asInstanceOf[revokeSponsorshipSuccess]
+  
+  @scala.inline
+  def scpMessage: scpMessage = "scpMessage".asInstanceOf[scpMessage]
+  
+  @scala.inline
+  def scpQuorumset: scpQuorumset = "scpQuorumset".asInstanceOf[scpQuorumset]
+  
+  @scala.inline
+  def scpStConfirm: scpStConfirm = "scpStConfirm".asInstanceOf[scpStConfirm]
+  
+  @scala.inline
+  def scpStExternalize: scpStExternalize = "scpStExternalize".asInstanceOf[scpStExternalize]
+  
+  @scala.inline
+  def scpStNominate: scpStNominate = "scpStNominate".asInstanceOf[scpStNominate]
+  
+  @scala.inline
+  def scpStPrepare: scpStPrepare = "scpStPrepare".asInstanceOf[scpStPrepare]
+  
+  @scala.inline
+  def setOptions: setOptions = "setOptions".asInstanceOf[setOptions]
+  
+  @scala.inline
+  def setOptionsBadFlags: setOptionsBadFlags = "setOptionsBadFlags".asInstanceOf[setOptionsBadFlags]
+  
+  @scala.inline
+  def setOptionsBadSigner: setOptionsBadSigner = "setOptionsBadSigner".asInstanceOf[setOptionsBadSigner]
+  
+  @scala.inline
+  def setOptionsCantChange: setOptionsCantChange = "setOptionsCantChange".asInstanceOf[setOptionsCantChange]
+  
+  @scala.inline
+  def setOptionsInvalidHomeDomain: setOptionsInvalidHomeDomain = "setOptionsInvalidHomeDomain".asInstanceOf[setOptionsInvalidHomeDomain]
+  
+  @scala.inline
+  def setOptionsInvalidInflation: setOptionsInvalidInflation = "setOptionsInvalidInflation".asInstanceOf[setOptionsInvalidInflation]
+  
+  @scala.inline
+  def setOptionsLowReserve: setOptionsLowReserve = "setOptionsLowReserve".asInstanceOf[setOptionsLowReserve]
+  
+  @scala.inline
+  def setOptionsSuccess: setOptionsSuccess = "setOptionsSuccess".asInstanceOf[setOptionsSuccess]
+  
+  @scala.inline
+  def setOptionsThresholdOutOfRange: setOptionsThresholdOutOfRange = "setOptionsThresholdOutOfRange".asInstanceOf[setOptionsThresholdOutOfRange]
+  
+  @scala.inline
+  def setOptionsTooManySigners: setOptionsTooManySigners = "setOptionsTooManySigners".asInstanceOf[setOptionsTooManySigners]
+  
+  @scala.inline
+  def setOptionsUnknownFlag: setOptionsUnknownFlag = "setOptionsUnknownFlag".asInstanceOf[setOptionsUnknownFlag]
+  
+  @scala.inline
+  def signerKeyTypeEd25519: signerKeyTypeEd25519 = "signerKeyTypeEd25519".asInstanceOf[signerKeyTypeEd25519]
+  
+  @scala.inline
+  def signerKeyTypeHashX: signerKeyTypeHashX = "signerKeyTypeHashX".asInstanceOf[signerKeyTypeHashX]
+  
+  @scala.inline
+  def signerKeyTypePreAuthTx: signerKeyTypePreAuthTx = "signerKeyTypePreAuthTx".asInstanceOf[signerKeyTypePreAuthTx]
+  
+  @scala.inline
+  def stellarValueBasic: stellarValueBasic = "stellarValueBasic".asInstanceOf[stellarValueBasic]
+  
+  @scala.inline
+  def stellarValueSigned: stellarValueSigned = "stellarValueSigned".asInstanceOf[stellarValueSigned]
+  
+  @scala.inline
+  def surveyRequest: surveyRequest = "surveyRequest".asInstanceOf[surveyRequest]
+  
+  @scala.inline
+  def surveyResponse: surveyResponse = "surveyResponse".asInstanceOf[surveyResponse]
+  
+  @scala.inline
+  def surveyTopology: surveyTopology = "surveyTopology".asInstanceOf[surveyTopology]
+  
+  @scala.inline
+  def thresholdHigh: thresholdHigh = "thresholdHigh".asInstanceOf[thresholdHigh]
+  
+  @scala.inline
+  def thresholdLow: thresholdLow = "thresholdLow".asInstanceOf[thresholdLow]
+  
+  @scala.inline
+  def thresholdMasterWeight: thresholdMasterWeight = "thresholdMasterWeight".asInstanceOf[thresholdMasterWeight]
+  
+  @scala.inline
+  def thresholdMed: thresholdMed = "thresholdMed".asInstanceOf[thresholdMed]
+  
+  @scala.inline
+  def transaction: transaction = "transaction".asInstanceOf[transaction]
+  
+  @scala.inline
+  def trustline: trustline = "trustline".asInstanceOf[trustline]
+  
+  @scala.inline
+  def txBadAuth: txBadAuth = "txBadAuth".asInstanceOf[txBadAuth]
+  
+  @scala.inline
+  def txBadAuthExtra: txBadAuthExtra = "txBadAuthExtra".asInstanceOf[txBadAuthExtra]
+  
+  @scala.inline
+  def txBadSeq: txBadSeq = "txBadSeq".asInstanceOf[txBadSeq]
+  
+  @scala.inline
+  def txBadSponsorship: txBadSponsorship = "txBadSponsorship".asInstanceOf[txBadSponsorship]
+  
+  @scala.inline
+  def txFailed: txFailed = "txFailed".asInstanceOf[txFailed]
+  
+  @scala.inline
+  def txFeeBumpInnerFailed: txFeeBumpInnerFailed = "txFeeBumpInnerFailed".asInstanceOf[txFeeBumpInnerFailed]
+  
+  @scala.inline
+  def txFeeBumpInnerSuccess: txFeeBumpInnerSuccess = "txFeeBumpInnerSuccess".asInstanceOf[txFeeBumpInnerSuccess]
+  
+  @scala.inline
+  def txInsufficientBalance: txInsufficientBalance = "txInsufficientBalance".asInstanceOf[txInsufficientBalance]
+  
+  @scala.inline
+  def txInsufficientFee: txInsufficientFee = "txInsufficientFee".asInstanceOf[txInsufficientFee]
+  
+  @scala.inline
+  def txInternalError: txInternalError = "txInternalError".asInstanceOf[txInternalError]
+  
+  @scala.inline
+  def txMissingOperation: txMissingOperation = "txMissingOperation".asInstanceOf[txMissingOperation]
+  
+  @scala.inline
+  def txNoAccount: txNoAccount = "txNoAccount".asInstanceOf[txNoAccount]
+  
+  @scala.inline
+  def txNotSupported: txNotSupported = "txNotSupported".asInstanceOf[txNotSupported]
+  
+  @scala.inline
+  def txSet: txSet = "txSet".asInstanceOf[txSet]
+  
+  @scala.inline
+  def txSuccess: txSuccess = "txSuccess".asInstanceOf[txSuccess]
+  
+  @scala.inline
+  def txTooEarly: txTooEarly = "txTooEarly".asInstanceOf[txTooEarly]
+  
+  @scala.inline
+  def txTooLate: txTooLate = "txTooLate".asInstanceOf[txTooLate]
+  
   @js.native
   sealed trait account extends js.Object
   
@@ -15,10 +826,13 @@ object stellarBaseStrings {
   sealed trait accountMergeDestFull extends js.Object
   
   @js.native
-  sealed trait accountMergeHasSubEntry extends js.Object
+  sealed trait accountMergeHasSubEntries extends js.Object
   
   @js.native
   sealed trait accountMergeImmutableSet extends js.Object
+  
+  @js.native
+  sealed trait accountMergeIsSponsor extends js.Object
   
   @js.native
   sealed trait accountMergeMalformed extends js.Object
@@ -84,6 +898,21 @@ object stellarBaseStrings {
   sealed trait base64 extends js.Object
   
   @js.native
+  sealed trait beginSponsoringFutureReserves extends js.Object
+  
+  @js.native
+  sealed trait beginSponsoringFutureReservesAlreadySponsored extends js.Object
+  
+  @js.native
+  sealed trait beginSponsoringFutureReservesMalformed extends js.Object
+  
+  @js.native
+  sealed trait beginSponsoringFutureReservesRecursive extends js.Object
+  
+  @js.native
+  sealed trait beginSponsoringFutureReservesSuccess extends js.Object
+  
+  @js.native
   sealed trait bumpSequence extends js.Object
   
   @js.native
@@ -114,6 +943,54 @@ object stellarBaseStrings {
   sealed trait changeTrustSuccess extends js.Object
   
   @js.native
+  sealed trait claimClaimableBalance extends js.Object
+  
+  @js.native
+  sealed trait claimClaimableBalanceCannotClaim extends js.Object
+  
+  @js.native
+  sealed trait claimClaimableBalanceDoesNotExist extends js.Object
+  
+  @js.native
+  sealed trait claimClaimableBalanceLineFull extends js.Object
+  
+  @js.native
+  sealed trait claimClaimableBalanceNoTrust extends js.Object
+  
+  @js.native
+  sealed trait claimClaimableBalanceNotAuthorized extends js.Object
+  
+  @js.native
+  sealed trait claimClaimableBalanceSuccess extends js.Object
+  
+  @js.native
+  sealed trait claimPredicateAnd extends js.Object
+  
+  @js.native
+  sealed trait claimPredicateBeforeAbsoluteTime extends js.Object
+  
+  @js.native
+  sealed trait claimPredicateBeforeRelativeTime extends js.Object
+  
+  @js.native
+  sealed trait claimPredicateNot extends js.Object
+  
+  @js.native
+  sealed trait claimPredicateOr extends js.Object
+  
+  @js.native
+  sealed trait claimPredicateUnconditional extends js.Object
+  
+  @js.native
+  sealed trait claimableBalance extends js.Object
+  
+  @js.native
+  sealed trait claimableBalanceIdTypeV0 extends js.Object
+  
+  @js.native
+  sealed trait claimantTypeV0 extends js.Object
+  
+  @js.native
   sealed trait createAccount extends js.Object
   
   @js.native
@@ -132,6 +1009,27 @@ object stellarBaseStrings {
   sealed trait createAccountUnderfunded extends js.Object
   
   @js.native
+  sealed trait createClaimableBalance extends js.Object
+  
+  @js.native
+  sealed trait createClaimableBalanceLowReserve extends js.Object
+  
+  @js.native
+  sealed trait createClaimableBalanceMalformed extends js.Object
+  
+  @js.native
+  sealed trait createClaimableBalanceNoTrust extends js.Object
+  
+  @js.native
+  sealed trait createClaimableBalanceNotAuthorized extends js.Object
+  
+  @js.native
+  sealed trait createClaimableBalanceSuccess extends js.Object
+  
+  @js.native
+  sealed trait createClaimableBalanceUnderfunded extends js.Object
+  
+  @js.native
   sealed trait createPassiveSellOffer extends js.Object
   
   @js.native
@@ -141,7 +1039,7 @@ object stellarBaseStrings {
   sealed trait credit_alphanum4 extends js.Object
   
   @js.native
-  sealed trait datum extends js.Object
+  sealed trait data extends js.Object
   
   @js.native
   sealed trait deadentry extends js.Object
@@ -153,7 +1051,19 @@ object stellarBaseStrings {
   sealed trait ed25519 extends js.Object
   
   @js.native
+  sealed trait endSponsoringFutureReserves extends js.Object
+  
+  @js.native
+  sealed trait endSponsoringFutureReservesNotSponsored extends js.Object
+  
+  @js.native
+  sealed trait endSponsoringFutureReservesSuccess extends js.Object
+  
+  @js.native
   sealed trait envelopeTypeAuth extends js.Object
+  
+  @js.native
+  sealed trait envelopeTypeOpId extends js.Object
   
   @js.native
   sealed trait envelopeTypeScp extends js.Object
@@ -177,7 +1087,7 @@ object stellarBaseStrings {
   sealed trait errConf extends js.Object
   
   @js.native
-  sealed trait errDatum extends js.Object
+  sealed trait errData extends js.Object
   
   @js.native
   sealed trait errLoad extends js.Object
@@ -189,7 +1099,7 @@ object stellarBaseStrings {
   sealed trait errorMsg extends js.Object
   
   @js.native
-  sealed trait getPeer extends js.Object
+  sealed trait getPeers extends js.Object
   
   @js.native
   sealed trait getScpQuorumset extends js.Object
@@ -324,9 +1234,6 @@ object stellarBaseStrings {
   sealed trait manageDataSuccess extends js.Object
   
   @js.native
-  sealed trait manageDatum extends js.Object
-  
-  @js.native
   sealed trait manageOfferCreated extends js.Object
   
   @js.native
@@ -417,7 +1324,10 @@ object stellarBaseStrings {
   sealed trait opNotSupported extends js.Object
   
   @js.native
-  sealed trait opTooManySubentry extends js.Object
+  sealed trait opTooManySponsoring extends js.Object
+  
+  @js.native
+  sealed trait opTooManySubentries extends js.Object
   
   @js.native
   sealed trait passiveFlag extends js.Object
@@ -459,7 +1369,7 @@ object stellarBaseStrings {
   sealed trait pathPaymentStrictReceiveSuccess extends js.Object
   
   @js.native
-  sealed trait pathPaymentStrictReceiveTooFewOffer extends js.Object
+  sealed trait pathPaymentStrictReceiveTooFewOffers extends js.Object
   
   @js.native
   sealed trait pathPaymentStrictReceiveUnderfunded extends js.Object
@@ -498,7 +1408,7 @@ object stellarBaseStrings {
   sealed trait pathPaymentStrictSendSuccess extends js.Object
   
   @js.native
-  sealed trait pathPaymentStrictSendTooFewOffer extends js.Object
+  sealed trait pathPaymentStrictSendTooFewOffers extends js.Object
   
   @js.native
   sealed trait pathPaymentStrictSendUnderDestmin extends js.Object
@@ -540,13 +1450,37 @@ object stellarBaseStrings {
   sealed trait paymentUnderfunded extends js.Object
   
   @js.native
-  sealed trait peer extends js.Object
+  sealed trait peers extends js.Object
   
   @js.native
   sealed trait publicKeyTypeEd25519 extends js.Object
   
   @js.native
   sealed trait raw extends js.Object
+  
+  @js.native
+  sealed trait revokeSponsorship extends js.Object
+  
+  @js.native
+  sealed trait revokeSponsorshipDoesNotExist extends js.Object
+  
+  @js.native
+  sealed trait revokeSponsorshipLedgerEntry extends js.Object
+  
+  @js.native
+  sealed trait revokeSponsorshipLowReserve extends js.Object
+  
+  @js.native
+  sealed trait revokeSponsorshipNotSponsor extends js.Object
+  
+  @js.native
+  sealed trait revokeSponsorshipOnlyTransferable extends js.Object
+  
+  @js.native
+  sealed trait revokeSponsorshipSigner extends js.Object
+  
+  @js.native
+  sealed trait revokeSponsorshipSuccess extends js.Object
   
   @js.native
   sealed trait scpMessage extends js.Object
@@ -567,13 +1501,10 @@ object stellarBaseStrings {
   sealed trait scpStPrepare extends js.Object
   
   @js.native
-  sealed trait setOption extends js.Object
-  
-  @js.native
   sealed trait setOptions extends js.Object
   
   @js.native
-  sealed trait setOptionsBadFlag extends js.Object
+  sealed trait setOptionsBadFlags extends js.Object
   
   @js.native
   sealed trait setOptionsBadSigner extends js.Object
@@ -597,7 +1528,7 @@ object stellarBaseStrings {
   sealed trait setOptionsThresholdOutOfRange extends js.Object
   
   @js.native
-  sealed trait setOptionsTooManySigner extends js.Object
+  sealed trait setOptionsTooManySigners extends js.Object
   
   @js.native
   sealed trait setOptionsUnknownFlag extends js.Object
@@ -654,6 +1585,9 @@ object stellarBaseStrings {
   sealed trait txBadSeq extends js.Object
   
   @js.native
+  sealed trait txBadSponsorship extends js.Object
+  
+  @js.native
   sealed trait txFailed extends js.Object
   
   @js.native
@@ -691,464 +1625,4 @@ object stellarBaseStrings {
   
   @js.native
   sealed trait txTooLate extends js.Object
-  
-  @scala.inline
-  def account: account = "account".asInstanceOf[account]
-  @scala.inline
-  def accountMerge: accountMerge = "accountMerge".asInstanceOf[accountMerge]
-  @scala.inline
-  def accountMergeDestFull: accountMergeDestFull = "accountMergeDestFull".asInstanceOf[accountMergeDestFull]
-  @scala.inline
-  def accountMergeHasSubEntry: accountMergeHasSubEntry = "accountMergeHasSubEntry".asInstanceOf[accountMergeHasSubEntry]
-  @scala.inline
-  def accountMergeImmutableSet: accountMergeImmutableSet = "accountMergeImmutableSet".asInstanceOf[accountMergeImmutableSet]
-  @scala.inline
-  def accountMergeMalformed: accountMergeMalformed = "accountMergeMalformed".asInstanceOf[accountMergeMalformed]
-  @scala.inline
-  def accountMergeNoAccount: accountMergeNoAccount = "accountMergeNoAccount".asInstanceOf[accountMergeNoAccount]
-  @scala.inline
-  def accountMergeSeqnumTooFar: accountMergeSeqnumTooFar = "accountMergeSeqnumTooFar".asInstanceOf[accountMergeSeqnumTooFar]
-  @scala.inline
-  def accountMergeSuccess: accountMergeSuccess = "accountMergeSuccess".asInstanceOf[accountMergeSuccess]
-  @scala.inline
-  def allowTrust: allowTrust = "allowTrust".asInstanceOf[allowTrust]
-  @scala.inline
-  def allowTrustCantRevoke: allowTrustCantRevoke = "allowTrustCantRevoke".asInstanceOf[allowTrustCantRevoke]
-  @scala.inline
-  def allowTrustMalformed: allowTrustMalformed = "allowTrustMalformed".asInstanceOf[allowTrustMalformed]
-  @scala.inline
-  def allowTrustNoTrustLine: allowTrustNoTrustLine = "allowTrustNoTrustLine".asInstanceOf[allowTrustNoTrustLine]
-  @scala.inline
-  def allowTrustSelfNotAllowed: allowTrustSelfNotAllowed = "allowTrustSelfNotAllowed".asInstanceOf[allowTrustSelfNotAllowed]
-  @scala.inline
-  def allowTrustSuccess: allowTrustSuccess = "allowTrustSuccess".asInstanceOf[allowTrustSuccess]
-  @scala.inline
-  def allowTrustTrustNotRequired: allowTrustTrustNotRequired = "allowTrustTrustNotRequired".asInstanceOf[allowTrustTrustNotRequired]
-  @scala.inline
-  def assetTypeCreditAlphanum12: assetTypeCreditAlphanum12 = "assetTypeCreditAlphanum12".asInstanceOf[assetTypeCreditAlphanum12]
-  @scala.inline
-  def assetTypeCreditAlphanum4: assetTypeCreditAlphanum4 = "assetTypeCreditAlphanum4".asInstanceOf[assetTypeCreditAlphanum4]
-  @scala.inline
-  def assetTypeNative: assetTypeNative = "assetTypeNative".asInstanceOf[assetTypeNative]
-  @scala.inline
-  def auth: auth = "auth".asInstanceOf[auth]
-  @scala.inline
-  def authImmutableFlag: authImmutableFlag = "authImmutableFlag".asInstanceOf[authImmutableFlag]
-  @scala.inline
-  def authRequiredFlag: authRequiredFlag = "authRequiredFlag".asInstanceOf[authRequiredFlag]
-  @scala.inline
-  def authRevocableFlag: authRevocableFlag = "authRevocableFlag".asInstanceOf[authRevocableFlag]
-  @scala.inline
-  def authorizedFlag: authorizedFlag = "authorizedFlag".asInstanceOf[authorizedFlag]
-  @scala.inline
-  def authorizedToMaintainLiabilitiesFlag: authorizedToMaintainLiabilitiesFlag = "authorizedToMaintainLiabilitiesFlag".asInstanceOf[authorizedToMaintainLiabilitiesFlag]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def bumpSequence: bumpSequence = "bumpSequence".asInstanceOf[bumpSequence]
-  @scala.inline
-  def bumpSequenceBadSeq: bumpSequenceBadSeq = "bumpSequenceBadSeq".asInstanceOf[bumpSequenceBadSeq]
-  @scala.inline
-  def bumpSequenceSuccess: bumpSequenceSuccess = "bumpSequenceSuccess".asInstanceOf[bumpSequenceSuccess]
-  @scala.inline
-  def changeTrust: changeTrust = "changeTrust".asInstanceOf[changeTrust]
-  @scala.inline
-  def changeTrustInvalidLimit: changeTrustInvalidLimit = "changeTrustInvalidLimit".asInstanceOf[changeTrustInvalidLimit]
-  @scala.inline
-  def changeTrustLowReserve: changeTrustLowReserve = "changeTrustLowReserve".asInstanceOf[changeTrustLowReserve]
-  @scala.inline
-  def changeTrustMalformed: changeTrustMalformed = "changeTrustMalformed".asInstanceOf[changeTrustMalformed]
-  @scala.inline
-  def changeTrustNoIssuer: changeTrustNoIssuer = "changeTrustNoIssuer".asInstanceOf[changeTrustNoIssuer]
-  @scala.inline
-  def changeTrustSelfNotAllowed: changeTrustSelfNotAllowed = "changeTrustSelfNotAllowed".asInstanceOf[changeTrustSelfNotAllowed]
-  @scala.inline
-  def changeTrustSuccess: changeTrustSuccess = "changeTrustSuccess".asInstanceOf[changeTrustSuccess]
-  @scala.inline
-  def createAccount: createAccount = "createAccount".asInstanceOf[createAccount]
-  @scala.inline
-  def createAccountAlreadyExist: createAccountAlreadyExist = "createAccountAlreadyExist".asInstanceOf[createAccountAlreadyExist]
-  @scala.inline
-  def createAccountLowReserve: createAccountLowReserve = "createAccountLowReserve".asInstanceOf[createAccountLowReserve]
-  @scala.inline
-  def createAccountMalformed: createAccountMalformed = "createAccountMalformed".asInstanceOf[createAccountMalformed]
-  @scala.inline
-  def createAccountSuccess: createAccountSuccess = "createAccountSuccess".asInstanceOf[createAccountSuccess]
-  @scala.inline
-  def createAccountUnderfunded: createAccountUnderfunded = "createAccountUnderfunded".asInstanceOf[createAccountUnderfunded]
-  @scala.inline
-  def createPassiveSellOffer: createPassiveSellOffer = "createPassiveSellOffer".asInstanceOf[createPassiveSellOffer]
-  @scala.inline
-  def credit_alphanum12: credit_alphanum12 = "credit_alphanum12".asInstanceOf[credit_alphanum12]
-  @scala.inline
-  def credit_alphanum4: credit_alphanum4 = "credit_alphanum4".asInstanceOf[credit_alphanum4]
-  @scala.inline
-  def datum: datum = "datum".asInstanceOf[datum]
-  @scala.inline
-  def deadentry: deadentry = "deadentry".asInstanceOf[deadentry]
-  @scala.inline
-  def dontHave: dontHave = "dontHave".asInstanceOf[dontHave]
-  @scala.inline
-  def ed25519: ed25519 = "ed25519".asInstanceOf[ed25519]
-  @scala.inline
-  def envelopeTypeAuth: envelopeTypeAuth = "envelopeTypeAuth".asInstanceOf[envelopeTypeAuth]
-  @scala.inline
-  def envelopeTypeScp: envelopeTypeScp = "envelopeTypeScp".asInstanceOf[envelopeTypeScp]
-  @scala.inline
-  def envelopeTypeScpvalue: envelopeTypeScpvalue = "envelopeTypeScpvalue".asInstanceOf[envelopeTypeScpvalue]
-  @scala.inline
-  def envelopeTypeTx: envelopeTypeTx = "envelopeTypeTx".asInstanceOf[envelopeTypeTx]
-  @scala.inline
-  def envelopeTypeTxFeeBump: envelopeTypeTxFeeBump = "envelopeTypeTxFeeBump".asInstanceOf[envelopeTypeTxFeeBump]
-  @scala.inline
-  def envelopeTypeTxV0: envelopeTypeTxV0 = "envelopeTypeTxV0".asInstanceOf[envelopeTypeTxV0]
-  @scala.inline
-  def errAuth: errAuth = "errAuth".asInstanceOf[errAuth]
-  @scala.inline
-  def errConf: errConf = "errConf".asInstanceOf[errConf]
-  @scala.inline
-  def errDatum: errDatum = "errDatum".asInstanceOf[errDatum]
-  @scala.inline
-  def errLoad: errLoad = "errLoad".asInstanceOf[errLoad]
-  @scala.inline
-  def errMisc: errMisc = "errMisc".asInstanceOf[errMisc]
-  @scala.inline
-  def errorMsg: errorMsg = "errorMsg".asInstanceOf[errorMsg]
-  @scala.inline
-  def getPeer: getPeer = "getPeer".asInstanceOf[getPeer]
-  @scala.inline
-  def getScpQuorumset: getScpQuorumset = "getScpQuorumset".asInstanceOf[getScpQuorumset]
-  @scala.inline
-  def getScpState: getScpState = "getScpState".asInstanceOf[getScpState]
-  @scala.inline
-  def getTxSet: getTxSet = "getTxSet".asInstanceOf[getTxSet]
-  @scala.inline
-  def hello: hello = "hello".asInstanceOf[hello]
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
-  @scala.inline
-  def iPv4: iPv4 = "iPv4".asInstanceOf[iPv4]
-  @scala.inline
-  def iPv6: iPv6 = "iPv6".asInstanceOf[iPv6]
-  @scala.inline
-  def inflation: inflation = "inflation".asInstanceOf[inflation]
-  @scala.inline
-  def inflationNotTime: inflationNotTime = "inflationNotTime".asInstanceOf[inflationNotTime]
-  @scala.inline
-  def inflationSuccess: inflationSuccess = "inflationSuccess".asInstanceOf[inflationSuccess]
-  @scala.inline
-  def initentry: initentry = "initentry".asInstanceOf[initentry]
-  @scala.inline
-  def keyTypeEd25519: keyTypeEd25519 = "keyTypeEd25519".asInstanceOf[keyTypeEd25519]
-  @scala.inline
-  def keyTypeHashX: keyTypeHashX = "keyTypeHashX".asInstanceOf[keyTypeHashX]
-  @scala.inline
-  def keyTypeMuxedEd25519: keyTypeMuxedEd25519 = "keyTypeMuxedEd25519".asInstanceOf[keyTypeMuxedEd25519]
-  @scala.inline
-  def keyTypePreAuthTx: keyTypePreAuthTx = "keyTypePreAuthTx".asInstanceOf[keyTypePreAuthTx]
-  @scala.inline
-  def ledgerEntryCreated: ledgerEntryCreated = "ledgerEntryCreated".asInstanceOf[ledgerEntryCreated]
-  @scala.inline
-  def ledgerEntryRemoved: ledgerEntryRemoved = "ledgerEntryRemoved".asInstanceOf[ledgerEntryRemoved]
-  @scala.inline
-  def ledgerEntryState: ledgerEntryState = "ledgerEntryState".asInstanceOf[ledgerEntryState]
-  @scala.inline
-  def ledgerEntryUpdated: ledgerEntryUpdated = "ledgerEntryUpdated".asInstanceOf[ledgerEntryUpdated]
-  @scala.inline
-  def ledgerUpgradeBaseFee: ledgerUpgradeBaseFee = "ledgerUpgradeBaseFee".asInstanceOf[ledgerUpgradeBaseFee]
-  @scala.inline
-  def ledgerUpgradeBaseReserve: ledgerUpgradeBaseReserve = "ledgerUpgradeBaseReserve".asInstanceOf[ledgerUpgradeBaseReserve]
-  @scala.inline
-  def ledgerUpgradeMaxTxSetSize: ledgerUpgradeMaxTxSetSize = "ledgerUpgradeMaxTxSetSize".asInstanceOf[ledgerUpgradeMaxTxSetSize]
-  @scala.inline
-  def ledgerUpgradeVersion: ledgerUpgradeVersion = "ledgerUpgradeVersion".asInstanceOf[ledgerUpgradeVersion]
-  @scala.inline
-  def liveentry: liveentry = "liveentry".asInstanceOf[liveentry]
-  @scala.inline
-  def manageBuyOffer: manageBuyOffer = "manageBuyOffer".asInstanceOf[manageBuyOffer]
-  @scala.inline
-  def manageBuyOfferBuyNoIssuer: manageBuyOfferBuyNoIssuer = "manageBuyOfferBuyNoIssuer".asInstanceOf[manageBuyOfferBuyNoIssuer]
-  @scala.inline
-  def manageBuyOfferBuyNoTrust: manageBuyOfferBuyNoTrust = "manageBuyOfferBuyNoTrust".asInstanceOf[manageBuyOfferBuyNoTrust]
-  @scala.inline
-  def manageBuyOfferBuyNotAuthorized: manageBuyOfferBuyNotAuthorized = "manageBuyOfferBuyNotAuthorized".asInstanceOf[manageBuyOfferBuyNotAuthorized]
-  @scala.inline
-  def manageBuyOfferCrossSelf: manageBuyOfferCrossSelf = "manageBuyOfferCrossSelf".asInstanceOf[manageBuyOfferCrossSelf]
-  @scala.inline
-  def manageBuyOfferLineFull: manageBuyOfferLineFull = "manageBuyOfferLineFull".asInstanceOf[manageBuyOfferLineFull]
-  @scala.inline
-  def manageBuyOfferLowReserve: manageBuyOfferLowReserve = "manageBuyOfferLowReserve".asInstanceOf[manageBuyOfferLowReserve]
-  @scala.inline
-  def manageBuyOfferMalformed: manageBuyOfferMalformed = "manageBuyOfferMalformed".asInstanceOf[manageBuyOfferMalformed]
-  @scala.inline
-  def manageBuyOfferNotFound: manageBuyOfferNotFound = "manageBuyOfferNotFound".asInstanceOf[manageBuyOfferNotFound]
-  @scala.inline
-  def manageBuyOfferSellNoIssuer: manageBuyOfferSellNoIssuer = "manageBuyOfferSellNoIssuer".asInstanceOf[manageBuyOfferSellNoIssuer]
-  @scala.inline
-  def manageBuyOfferSellNoTrust: manageBuyOfferSellNoTrust = "manageBuyOfferSellNoTrust".asInstanceOf[manageBuyOfferSellNoTrust]
-  @scala.inline
-  def manageBuyOfferSellNotAuthorized: manageBuyOfferSellNotAuthorized = "manageBuyOfferSellNotAuthorized".asInstanceOf[manageBuyOfferSellNotAuthorized]
-  @scala.inline
-  def manageBuyOfferSuccess: manageBuyOfferSuccess = "manageBuyOfferSuccess".asInstanceOf[manageBuyOfferSuccess]
-  @scala.inline
-  def manageBuyOfferUnderfunded: manageBuyOfferUnderfunded = "manageBuyOfferUnderfunded".asInstanceOf[manageBuyOfferUnderfunded]
-  @scala.inline
-  def manageData: manageData = "manageData".asInstanceOf[manageData]
-  @scala.inline
-  def manageDataInvalidName: manageDataInvalidName = "manageDataInvalidName".asInstanceOf[manageDataInvalidName]
-  @scala.inline
-  def manageDataLowReserve: manageDataLowReserve = "manageDataLowReserve".asInstanceOf[manageDataLowReserve]
-  @scala.inline
-  def manageDataNameNotFound: manageDataNameNotFound = "manageDataNameNotFound".asInstanceOf[manageDataNameNotFound]
-  @scala.inline
-  def manageDataNotSupportedYet: manageDataNotSupportedYet = "manageDataNotSupportedYet".asInstanceOf[manageDataNotSupportedYet]
-  @scala.inline
-  def manageDataSuccess: manageDataSuccess = "manageDataSuccess".asInstanceOf[manageDataSuccess]
-  @scala.inline
-  def manageDatum: manageDatum = "manageDatum".asInstanceOf[manageDatum]
-  @scala.inline
-  def manageOfferCreated: manageOfferCreated = "manageOfferCreated".asInstanceOf[manageOfferCreated]
-  @scala.inline
-  def manageOfferDeleted: manageOfferDeleted = "manageOfferDeleted".asInstanceOf[manageOfferDeleted]
-  @scala.inline
-  def manageOfferUpdated: manageOfferUpdated = "manageOfferUpdated".asInstanceOf[manageOfferUpdated]
-  @scala.inline
-  def manageSellOffer: manageSellOffer = "manageSellOffer".asInstanceOf[manageSellOffer]
-  @scala.inline
-  def manageSellOfferBuyNoIssuer: manageSellOfferBuyNoIssuer = "manageSellOfferBuyNoIssuer".asInstanceOf[manageSellOfferBuyNoIssuer]
-  @scala.inline
-  def manageSellOfferBuyNoTrust: manageSellOfferBuyNoTrust = "manageSellOfferBuyNoTrust".asInstanceOf[manageSellOfferBuyNoTrust]
-  @scala.inline
-  def manageSellOfferBuyNotAuthorized: manageSellOfferBuyNotAuthorized = "manageSellOfferBuyNotAuthorized".asInstanceOf[manageSellOfferBuyNotAuthorized]
-  @scala.inline
-  def manageSellOfferCrossSelf: manageSellOfferCrossSelf = "manageSellOfferCrossSelf".asInstanceOf[manageSellOfferCrossSelf]
-  @scala.inline
-  def manageSellOfferLineFull: manageSellOfferLineFull = "manageSellOfferLineFull".asInstanceOf[manageSellOfferLineFull]
-  @scala.inline
-  def manageSellOfferLowReserve: manageSellOfferLowReserve = "manageSellOfferLowReserve".asInstanceOf[manageSellOfferLowReserve]
-  @scala.inline
-  def manageSellOfferMalformed: manageSellOfferMalformed = "manageSellOfferMalformed".asInstanceOf[manageSellOfferMalformed]
-  @scala.inline
-  def manageSellOfferNotFound: manageSellOfferNotFound = "manageSellOfferNotFound".asInstanceOf[manageSellOfferNotFound]
-  @scala.inline
-  def manageSellOfferSellNoIssuer: manageSellOfferSellNoIssuer = "manageSellOfferSellNoIssuer".asInstanceOf[manageSellOfferSellNoIssuer]
-  @scala.inline
-  def manageSellOfferSellNoTrust: manageSellOfferSellNoTrust = "manageSellOfferSellNoTrust".asInstanceOf[manageSellOfferSellNoTrust]
-  @scala.inline
-  def manageSellOfferSellNotAuthorized: manageSellOfferSellNotAuthorized = "manageSellOfferSellNotAuthorized".asInstanceOf[manageSellOfferSellNotAuthorized]
-  @scala.inline
-  def manageSellOfferSuccess: manageSellOfferSuccess = "manageSellOfferSuccess".asInstanceOf[manageSellOfferSuccess]
-  @scala.inline
-  def manageSellOfferUnderfunded: manageSellOfferUnderfunded = "manageSellOfferUnderfunded".asInstanceOf[manageSellOfferUnderfunded]
-  @scala.inline
-  def memoHash: memoHash = "memoHash".asInstanceOf[memoHash]
-  @scala.inline
-  def memoId: memoId = "memoId".asInstanceOf[memoId]
-  @scala.inline
-  def memoNone: memoNone = "memoNone".asInstanceOf[memoNone]
-  @scala.inline
-  def memoReturn: memoReturn = "memoReturn".asInstanceOf[memoReturn]
-  @scala.inline
-  def memoText: memoText = "memoText".asInstanceOf[memoText]
-  @scala.inline
-  def metaentry: metaentry = "metaentry".asInstanceOf[metaentry]
-  @scala.inline
-  def native: native = "native".asInstanceOf[native]
-  @scala.inline
-  def offer: offer = "offer".asInstanceOf[offer]
-  @scala.inline
-  def opBadAuth: opBadAuth = "opBadAuth".asInstanceOf[opBadAuth]
-  @scala.inline
-  def opExceededWorkLimit: opExceededWorkLimit = "opExceededWorkLimit".asInstanceOf[opExceededWorkLimit]
-  @scala.inline
-  def opInner: opInner = "opInner".asInstanceOf[opInner]
-  @scala.inline
-  def opNoAccount: opNoAccount = "opNoAccount".asInstanceOf[opNoAccount]
-  @scala.inline
-  def opNotSupported: opNotSupported = "opNotSupported".asInstanceOf[opNotSupported]
-  @scala.inline
-  def opTooManySubentry: opTooManySubentry = "opTooManySubentry".asInstanceOf[opTooManySubentry]
-  @scala.inline
-  def passiveFlag: passiveFlag = "passiveFlag".asInstanceOf[passiveFlag]
-  @scala.inline
-  def pathPaymentStrictReceive: pathPaymentStrictReceive = "pathPaymentStrictReceive".asInstanceOf[pathPaymentStrictReceive]
-  @scala.inline
-  def pathPaymentStrictReceiveLineFull: pathPaymentStrictReceiveLineFull = "pathPaymentStrictReceiveLineFull".asInstanceOf[pathPaymentStrictReceiveLineFull]
-  @scala.inline
-  def pathPaymentStrictReceiveMalformed: pathPaymentStrictReceiveMalformed = "pathPaymentStrictReceiveMalformed".asInstanceOf[pathPaymentStrictReceiveMalformed]
-  @scala.inline
-  def pathPaymentStrictReceiveNoDestination: pathPaymentStrictReceiveNoDestination = "pathPaymentStrictReceiveNoDestination".asInstanceOf[pathPaymentStrictReceiveNoDestination]
-  @scala.inline
-  def pathPaymentStrictReceiveNoIssuer: pathPaymentStrictReceiveNoIssuer = "pathPaymentStrictReceiveNoIssuer".asInstanceOf[pathPaymentStrictReceiveNoIssuer]
-  @scala.inline
-  def pathPaymentStrictReceiveNoTrust: pathPaymentStrictReceiveNoTrust = "pathPaymentStrictReceiveNoTrust".asInstanceOf[pathPaymentStrictReceiveNoTrust]
-  @scala.inline
-  def pathPaymentStrictReceiveNotAuthorized: pathPaymentStrictReceiveNotAuthorized = "pathPaymentStrictReceiveNotAuthorized".asInstanceOf[pathPaymentStrictReceiveNotAuthorized]
-  @scala.inline
-  def pathPaymentStrictReceiveOfferCrossSelf: pathPaymentStrictReceiveOfferCrossSelf = "pathPaymentStrictReceiveOfferCrossSelf".asInstanceOf[pathPaymentStrictReceiveOfferCrossSelf]
-  @scala.inline
-  def pathPaymentStrictReceiveOverSendmax: pathPaymentStrictReceiveOverSendmax = "pathPaymentStrictReceiveOverSendmax".asInstanceOf[pathPaymentStrictReceiveOverSendmax]
-  @scala.inline
-  def pathPaymentStrictReceiveSrcNoTrust: pathPaymentStrictReceiveSrcNoTrust = "pathPaymentStrictReceiveSrcNoTrust".asInstanceOf[pathPaymentStrictReceiveSrcNoTrust]
-  @scala.inline
-  def pathPaymentStrictReceiveSrcNotAuthorized: pathPaymentStrictReceiveSrcNotAuthorized = "pathPaymentStrictReceiveSrcNotAuthorized".asInstanceOf[pathPaymentStrictReceiveSrcNotAuthorized]
-  @scala.inline
-  def pathPaymentStrictReceiveSuccess: pathPaymentStrictReceiveSuccess = "pathPaymentStrictReceiveSuccess".asInstanceOf[pathPaymentStrictReceiveSuccess]
-  @scala.inline
-  def pathPaymentStrictReceiveTooFewOffer: pathPaymentStrictReceiveTooFewOffer = "pathPaymentStrictReceiveTooFewOffer".asInstanceOf[pathPaymentStrictReceiveTooFewOffer]
-  @scala.inline
-  def pathPaymentStrictReceiveUnderfunded: pathPaymentStrictReceiveUnderfunded = "pathPaymentStrictReceiveUnderfunded".asInstanceOf[pathPaymentStrictReceiveUnderfunded]
-  @scala.inline
-  def pathPaymentStrictSend: pathPaymentStrictSend = "pathPaymentStrictSend".asInstanceOf[pathPaymentStrictSend]
-  @scala.inline
-  def pathPaymentStrictSendLineFull: pathPaymentStrictSendLineFull = "pathPaymentStrictSendLineFull".asInstanceOf[pathPaymentStrictSendLineFull]
-  @scala.inline
-  def pathPaymentStrictSendMalformed: pathPaymentStrictSendMalformed = "pathPaymentStrictSendMalformed".asInstanceOf[pathPaymentStrictSendMalformed]
-  @scala.inline
-  def pathPaymentStrictSendNoDestination: pathPaymentStrictSendNoDestination = "pathPaymentStrictSendNoDestination".asInstanceOf[pathPaymentStrictSendNoDestination]
-  @scala.inline
-  def pathPaymentStrictSendNoIssuer: pathPaymentStrictSendNoIssuer = "pathPaymentStrictSendNoIssuer".asInstanceOf[pathPaymentStrictSendNoIssuer]
-  @scala.inline
-  def pathPaymentStrictSendNoTrust: pathPaymentStrictSendNoTrust = "pathPaymentStrictSendNoTrust".asInstanceOf[pathPaymentStrictSendNoTrust]
-  @scala.inline
-  def pathPaymentStrictSendNotAuthorized: pathPaymentStrictSendNotAuthorized = "pathPaymentStrictSendNotAuthorized".asInstanceOf[pathPaymentStrictSendNotAuthorized]
-  @scala.inline
-  def pathPaymentStrictSendOfferCrossSelf: pathPaymentStrictSendOfferCrossSelf = "pathPaymentStrictSendOfferCrossSelf".asInstanceOf[pathPaymentStrictSendOfferCrossSelf]
-  @scala.inline
-  def pathPaymentStrictSendSrcNoTrust: pathPaymentStrictSendSrcNoTrust = "pathPaymentStrictSendSrcNoTrust".asInstanceOf[pathPaymentStrictSendSrcNoTrust]
-  @scala.inline
-  def pathPaymentStrictSendSrcNotAuthorized: pathPaymentStrictSendSrcNotAuthorized = "pathPaymentStrictSendSrcNotAuthorized".asInstanceOf[pathPaymentStrictSendSrcNotAuthorized]
-  @scala.inline
-  def pathPaymentStrictSendSuccess: pathPaymentStrictSendSuccess = "pathPaymentStrictSendSuccess".asInstanceOf[pathPaymentStrictSendSuccess]
-  @scala.inline
-  def pathPaymentStrictSendTooFewOffer: pathPaymentStrictSendTooFewOffer = "pathPaymentStrictSendTooFewOffer".asInstanceOf[pathPaymentStrictSendTooFewOffer]
-  @scala.inline
-  def pathPaymentStrictSendUnderDestmin: pathPaymentStrictSendUnderDestmin = "pathPaymentStrictSendUnderDestmin".asInstanceOf[pathPaymentStrictSendUnderDestmin]
-  @scala.inline
-  def pathPaymentStrictSendUnderfunded: pathPaymentStrictSendUnderfunded = "pathPaymentStrictSendUnderfunded".asInstanceOf[pathPaymentStrictSendUnderfunded]
-  @scala.inline
-  def payment: payment = "payment".asInstanceOf[payment]
-  @scala.inline
-  def paymentLineFull: paymentLineFull = "paymentLineFull".asInstanceOf[paymentLineFull]
-  @scala.inline
-  def paymentMalformed: paymentMalformed = "paymentMalformed".asInstanceOf[paymentMalformed]
-  @scala.inline
-  def paymentNoDestination: paymentNoDestination = "paymentNoDestination".asInstanceOf[paymentNoDestination]
-  @scala.inline
-  def paymentNoIssuer: paymentNoIssuer = "paymentNoIssuer".asInstanceOf[paymentNoIssuer]
-  @scala.inline
-  def paymentNoTrust: paymentNoTrust = "paymentNoTrust".asInstanceOf[paymentNoTrust]
-  @scala.inline
-  def paymentNotAuthorized: paymentNotAuthorized = "paymentNotAuthorized".asInstanceOf[paymentNotAuthorized]
-  @scala.inline
-  def paymentSrcNoTrust: paymentSrcNoTrust = "paymentSrcNoTrust".asInstanceOf[paymentSrcNoTrust]
-  @scala.inline
-  def paymentSrcNotAuthorized: paymentSrcNotAuthorized = "paymentSrcNotAuthorized".asInstanceOf[paymentSrcNotAuthorized]
-  @scala.inline
-  def paymentSuccess: paymentSuccess = "paymentSuccess".asInstanceOf[paymentSuccess]
-  @scala.inline
-  def paymentUnderfunded: paymentUnderfunded = "paymentUnderfunded".asInstanceOf[paymentUnderfunded]
-  @scala.inline
-  def peer: peer = "peer".asInstanceOf[peer]
-  @scala.inline
-  def publicKeyTypeEd25519: publicKeyTypeEd25519 = "publicKeyTypeEd25519".asInstanceOf[publicKeyTypeEd25519]
-  @scala.inline
-  def raw: raw = "raw".asInstanceOf[raw]
-  @scala.inline
-  def scpMessage: scpMessage = "scpMessage".asInstanceOf[scpMessage]
-  @scala.inline
-  def scpQuorumset: scpQuorumset = "scpQuorumset".asInstanceOf[scpQuorumset]
-  @scala.inline
-  def scpStConfirm: scpStConfirm = "scpStConfirm".asInstanceOf[scpStConfirm]
-  @scala.inline
-  def scpStExternalize: scpStExternalize = "scpStExternalize".asInstanceOf[scpStExternalize]
-  @scala.inline
-  def scpStNominate: scpStNominate = "scpStNominate".asInstanceOf[scpStNominate]
-  @scala.inline
-  def scpStPrepare: scpStPrepare = "scpStPrepare".asInstanceOf[scpStPrepare]
-  @scala.inline
-  def setOption: setOption = "setOption".asInstanceOf[setOption]
-  @scala.inline
-  def setOptions: setOptions = "setOptions".asInstanceOf[setOptions]
-  @scala.inline
-  def setOptionsBadFlag: setOptionsBadFlag = "setOptionsBadFlag".asInstanceOf[setOptionsBadFlag]
-  @scala.inline
-  def setOptionsBadSigner: setOptionsBadSigner = "setOptionsBadSigner".asInstanceOf[setOptionsBadSigner]
-  @scala.inline
-  def setOptionsCantChange: setOptionsCantChange = "setOptionsCantChange".asInstanceOf[setOptionsCantChange]
-  @scala.inline
-  def setOptionsInvalidHomeDomain: setOptionsInvalidHomeDomain = "setOptionsInvalidHomeDomain".asInstanceOf[setOptionsInvalidHomeDomain]
-  @scala.inline
-  def setOptionsInvalidInflation: setOptionsInvalidInflation = "setOptionsInvalidInflation".asInstanceOf[setOptionsInvalidInflation]
-  @scala.inline
-  def setOptionsLowReserve: setOptionsLowReserve = "setOptionsLowReserve".asInstanceOf[setOptionsLowReserve]
-  @scala.inline
-  def setOptionsSuccess: setOptionsSuccess = "setOptionsSuccess".asInstanceOf[setOptionsSuccess]
-  @scala.inline
-  def setOptionsThresholdOutOfRange: setOptionsThresholdOutOfRange = "setOptionsThresholdOutOfRange".asInstanceOf[setOptionsThresholdOutOfRange]
-  @scala.inline
-  def setOptionsTooManySigner: setOptionsTooManySigner = "setOptionsTooManySigner".asInstanceOf[setOptionsTooManySigner]
-  @scala.inline
-  def setOptionsUnknownFlag: setOptionsUnknownFlag = "setOptionsUnknownFlag".asInstanceOf[setOptionsUnknownFlag]
-  @scala.inline
-  def signerKeyTypeEd25519: signerKeyTypeEd25519 = "signerKeyTypeEd25519".asInstanceOf[signerKeyTypeEd25519]
-  @scala.inline
-  def signerKeyTypeHashX: signerKeyTypeHashX = "signerKeyTypeHashX".asInstanceOf[signerKeyTypeHashX]
-  @scala.inline
-  def signerKeyTypePreAuthTx: signerKeyTypePreAuthTx = "signerKeyTypePreAuthTx".asInstanceOf[signerKeyTypePreAuthTx]
-  @scala.inline
-  def stellarValueBasic: stellarValueBasic = "stellarValueBasic".asInstanceOf[stellarValueBasic]
-  @scala.inline
-  def stellarValueSigned: stellarValueSigned = "stellarValueSigned".asInstanceOf[stellarValueSigned]
-  @scala.inline
-  def surveyRequest: surveyRequest = "surveyRequest".asInstanceOf[surveyRequest]
-  @scala.inline
-  def surveyResponse: surveyResponse = "surveyResponse".asInstanceOf[surveyResponse]
-  @scala.inline
-  def surveyTopology: surveyTopology = "surveyTopology".asInstanceOf[surveyTopology]
-  @scala.inline
-  def thresholdHigh: thresholdHigh = "thresholdHigh".asInstanceOf[thresholdHigh]
-  @scala.inline
-  def thresholdLow: thresholdLow = "thresholdLow".asInstanceOf[thresholdLow]
-  @scala.inline
-  def thresholdMasterWeight: thresholdMasterWeight = "thresholdMasterWeight".asInstanceOf[thresholdMasterWeight]
-  @scala.inline
-  def thresholdMed: thresholdMed = "thresholdMed".asInstanceOf[thresholdMed]
-  @scala.inline
-  def transaction: transaction = "transaction".asInstanceOf[transaction]
-  @scala.inline
-  def trustline: trustline = "trustline".asInstanceOf[trustline]
-  @scala.inline
-  def txBadAuth: txBadAuth = "txBadAuth".asInstanceOf[txBadAuth]
-  @scala.inline
-  def txBadAuthExtra: txBadAuthExtra = "txBadAuthExtra".asInstanceOf[txBadAuthExtra]
-  @scala.inline
-  def txBadSeq: txBadSeq = "txBadSeq".asInstanceOf[txBadSeq]
-  @scala.inline
-  def txFailed: txFailed = "txFailed".asInstanceOf[txFailed]
-  @scala.inline
-  def txFeeBumpInnerFailed: txFeeBumpInnerFailed = "txFeeBumpInnerFailed".asInstanceOf[txFeeBumpInnerFailed]
-  @scala.inline
-  def txFeeBumpInnerSuccess: txFeeBumpInnerSuccess = "txFeeBumpInnerSuccess".asInstanceOf[txFeeBumpInnerSuccess]
-  @scala.inline
-  def txInsufficientBalance: txInsufficientBalance = "txInsufficientBalance".asInstanceOf[txInsufficientBalance]
-  @scala.inline
-  def txInsufficientFee: txInsufficientFee = "txInsufficientFee".asInstanceOf[txInsufficientFee]
-  @scala.inline
-  def txInternalError: txInternalError = "txInternalError".asInstanceOf[txInternalError]
-  @scala.inline
-  def txMissingOperation: txMissingOperation = "txMissingOperation".asInstanceOf[txMissingOperation]
-  @scala.inline
-  def txNoAccount: txNoAccount = "txNoAccount".asInstanceOf[txNoAccount]
-  @scala.inline
-  def txNotSupported: txNotSupported = "txNotSupported".asInstanceOf[txNotSupported]
-  @scala.inline
-  def txSet: txSet = "txSet".asInstanceOf[txSet]
-  @scala.inline
-  def txSuccess: txSuccess = "txSuccess".asInstanceOf[txSuccess]
-  @scala.inline
-  def txTooEarly: txTooEarly = "txTooEarly".asInstanceOf[txTooEarly]
-  @scala.inline
-  def txTooLate: txTooLate = "txTooLate".asInstanceOf[txTooLate]
 }
-

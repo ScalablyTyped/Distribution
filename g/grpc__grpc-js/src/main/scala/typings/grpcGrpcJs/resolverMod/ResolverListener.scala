@@ -6,15 +6,17 @@ import typings.grpcGrpcJs.serviceConfigMod.ServiceConfig
 import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResolverListener extends js.Object {
+  
   /**
     * Called whenever a name resolution attempt fails.
     * @param error Describes how resolution failed
     */
   def onError(error: StatusObject): Unit = js.native
+  
   def onSuccessfulResolution(
     addressList: js.Array[SubchannelAddress],
     serviceConfig: Null,
@@ -49,4 +51,3 @@ trait ResolverListener extends js.Object {
     attributes: StringDictionary[js.Any]
   ): Unit = js.native
 }
-

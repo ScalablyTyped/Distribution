@@ -23,7 +23,7 @@ import typings.titanium.titaniumStrings.touchstart
 import typings.titanium.titaniumStrings.twofingertap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A dashboard view is an iOS Springboard-like view of <Titanium.UI.DashboardItem> items that may
@@ -31,26 +31,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DashboardView extends View {
-  /**
-    * The number of columns of items in the view.
-    */
-  var columnCount: Double = js.native
-  /**
-    * Items to display in this view.
-    */
-  var data: js.Array[DashboardItem] = js.native
-  /**
-    * Determines whether edit mode is activated by a longpress of an item.
-    */
-  var editable: Boolean = js.native
-  /**
-    * The number of rows of items in the view.
-    */
-  var rowCount: Double = js.native
-  /**
-    * Determines whether the wobble visual editing cue is enabled in edit mode.
-    */
-  var wobble: Boolean = js.native
+  
   @JSName("addEventListener")
   def addEventListener_commit(
     name: commit,
@@ -86,6 +67,22 @@ trait DashboardView extends View {
     name: pagechanged,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ DashboardViewPagechangedEvent, Unit]
   ): Unit = js.native
+  
+  /**
+    * The number of columns of items in the view.
+    */
+  var columnCount: Double = js.native
+  
+  /**
+    * Items to display in this view.
+    */
+  var data: js.Array[DashboardItem] = js.native
+  
+  /**
+    * Determines whether edit mode is activated by a longpress of an item.
+    */
+  var editable: Boolean = js.native
+  
   @JSName("fireEvent")
   def fireEvent_click(name: click, event: DashboardViewClickEvent): Unit = js.native
   @JSName("fireEvent")
@@ -142,31 +139,37 @@ trait DashboardView extends View {
   def fireEvent_touchstart(name: touchstart, event: DashboardViewTouchstartEvent): Unit = js.native
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: DashboardViewTwofingertapEvent): Unit = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.DashboardView.columnCount> property.
     * @deprecated Access <Titanium.UI.DashboardView.columnCount> instead.
     */
   def getColumnCount(): Double = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.DashboardView.data> property.
     * @deprecated Access <Titanium.UI.DashboardView.data> instead.
     */
   def getData(): js.Array[DashboardItem] = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.DashboardView.editable> property.
     * @deprecated Access <Titanium.UI.DashboardView.editable> instead.
     */
   def getEditable(): Boolean = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.DashboardView.rowCount> property.
     * @deprecated Access <Titanium.UI.DashboardView.rowCount> instead.
     */
   def getRowCount(): Double = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.DashboardView.wobble> property.
     * @deprecated Access <Titanium.UI.DashboardView.wobble> instead.
     */
   def getWobble(): Boolean = js.native
+  
   @JSName("removeEventListener")
   def removeEventListener_commit(
     name: commit,
@@ -202,38 +205,54 @@ trait DashboardView extends View {
     name: pagechanged,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ DashboardViewPagechangedEvent, Unit]
   ): Unit = js.native
+  
+  /**
+    * The number of rows of items in the view.
+    */
+  var rowCount: Double = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.DashboardView.columnCount> property.
     * @deprecated Set the value using <Titanium.UI.DashboardView.columnCount> instead.
     */
   def setColumnCount(columnCount: Double): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.DashboardView.data> property.
     * @deprecated Set the value using <Titanium.UI.DashboardView.data> instead.
     */
   def setData(data: js.Array[DashboardItem]): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.DashboardView.editable> property.
     * @deprecated Set the value using <Titanium.UI.DashboardView.editable> instead.
     */
   def setEditable(editable: Boolean): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.DashboardView.rowCount> property.
     * @deprecated Set the value using <Titanium.UI.DashboardView.rowCount> instead.
     */
   def setRowCount(rowCount: Double): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.DashboardView.wobble> property.
     * @deprecated Set the value using <Titanium.UI.DashboardView.wobble> instead.
     */
   def setWobble(wobble: Boolean): Unit = js.native
+  
   /**
     * Enable edit mode.
     */
   def startEditing(): Unit = js.native
+  
   /**
     * Disable edit mode.
     */
   def stopEditing(): Unit = js.native
+  
+  /**
+    * Determines whether the wobble visual editing cue is enabled in edit mode.
+    */
+  var wobble: Boolean = js.native
 }
-

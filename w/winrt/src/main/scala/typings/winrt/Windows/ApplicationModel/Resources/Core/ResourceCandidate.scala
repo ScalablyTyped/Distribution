@@ -5,12 +5,12 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.StorageFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResourceCandidate extends IResourceCandidate
-
 object ResourceCandidate {
+  
   @scala.inline
   def apply(
     getQualifierValue: String => String,
@@ -25,4 +25,3 @@ object ResourceCandidate {
     __obj.asInstanceOf[ResourceCandidate]
   }
 }
-

@@ -4,54 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.fridaGum.Java.MethodDispatcher
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined frida-gum.Java.Wrapper<{}> */
 @js.native
 trait Wrapper
   extends /* name */ StringDictionary[js.Any] {
-  /**
-    * Allocates a new instance without initializing it.
-    *
-    * Call `$init()` to initialize it.
-    */
-  @JSName("$alloc")
-  var $alloc_Original: MethodDispatcher[js.Object] = js.native
-  /**
-    * Canonical name of class being wrapped.
-    */
-  @JSName("$className")
-  var $className: String = js.native
-  /**
-    * Initializes an instance that was allocated but not yet initialized.
-    * This wraps the constructor(s).
-    *
-    * Replace the `implementation` property to hook a given constructor.
-    */
-  @JSName("$init")
-  var $init_Original: MethodDispatcher[js.Object] = js.native
-  /**
-    * Allocates and initializes a new instance of the given class.
-    *
-    * Use this to create a new instance.
-    */
-  @JSName("$new")
-  var $new_Original: MethodDispatcher[js.Object] = js.native
-  /**
-    * Method and field names exposed by this object’s class, not including
-    * parent classes.
-    */
-  @JSName("$ownMembers")
-  var $ownMembers: js.Array[String] = js.native
-  /**
-    * Instance used for chaining up to super-class method implementations.
-    */
-  @JSName("$super")
-  var $super: typings.fridaGum.Java.Wrapper[js.Object] = js.native
-  /**
-    * Retrieves a `java.lang.Class` wrapper for the current class.
-    */
-  var `class`: typings.fridaGum.Java.Wrapper[js.Object] = js.native
+  
   /**
     * Allocates a new instance without initializing it.
     *
@@ -59,6 +18,20 @@ trait Wrapper
     */
   @JSName("$alloc")
   def $alloc(params: js.Any*): js.Any = js.native
+  /**
+    * Allocates a new instance without initializing it.
+    *
+    * Call `$init()` to initialize it.
+    */
+  @JSName("$alloc")
+  var $alloc_Original: MethodDispatcher[js.Object] = js.native
+  
+  /**
+    * Canonical name of class being wrapped.
+    */
+  @JSName("$className")
+  var $className: String = js.native
+  
   /**
     * Eagerly deletes the underlying JNI global reference without having to
     * wait for the object to become unreachable and the JavaScript
@@ -69,6 +42,7 @@ trait Wrapper
     */
   @JSName("$dispose")
   def $dispose(): Unit = js.native
+  
   /**
     * Initializes an instance that was allocated but not yet initialized.
     * This wraps the constructor(s).
@@ -78,11 +52,44 @@ trait Wrapper
   @JSName("$init")
   def $init(params: js.Any*): js.Any = js.native
   /**
+    * Initializes an instance that was allocated but not yet initialized.
+    * This wraps the constructor(s).
+    *
+    * Replace the `implementation` property to hook a given constructor.
+    */
+  @JSName("$init")
+  var $init_Original: MethodDispatcher[js.Object] = js.native
+  
+  /**
     * Allocates and initializes a new instance of the given class.
     *
     * Use this to create a new instance.
     */
   @JSName("$new")
   def $new(params: js.Any*): js.Any = js.native
+  /**
+    * Allocates and initializes a new instance of the given class.
+    *
+    * Use this to create a new instance.
+    */
+  @JSName("$new")
+  var $new_Original: MethodDispatcher[js.Object] = js.native
+  
+  /**
+    * Method and field names exposed by this object’s class, not including
+    * parent classes.
+    */
+  @JSName("$ownMembers")
+  var $ownMembers: js.Array[String] = js.native
+  
+  /**
+    * Instance used for chaining up to super-class method implementations.
+    */
+  @JSName("$super")
+  var $super: typings.fridaGum.Java.Wrapper[js.Object] = js.native
+  
+  /**
+    * Retrieves a `java.lang.Class` wrapper for the current class.
+    */
+  var `class`: typings.fridaGum.Java.Wrapper[js.Object] = js.native
 }
-

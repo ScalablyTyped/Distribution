@@ -80,11 +80,11 @@ import typings.semanticUiPopup.semanticUiPopupStrings.variation
 import typings.semanticUiPopup.semanticUiPopupStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Popup_ extends js.Object {
-  var settings: PopupSettings = js.native
+  
   def apply(): JQuery = js.native
   /**
     * @since 2.2.11
@@ -284,5 +284,6 @@ trait Popup_ extends js.Object {
     */
   def apply(behavior: toggle): JQuery = js.native
   def apply(settings: PopupSettings): JQuery = js.native
+  
+  var settings: PopupSettings = js.native
 }
-

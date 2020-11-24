@@ -2,7 +2,7 @@ package typings.guacamoleClient.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "StringWriter")
 @js.native
@@ -13,4 +13,3 @@ class StringWriter protected ()
     */
   def this(stream: typings.guacamoleClient.outputStreamMod.OutputStream) = this()
 }
-

@@ -9,11 +9,12 @@ import typings.ink.inkStrings.truncate
 import typings.ink.inkStrings.wrap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ink/build/wrap-text", JSImport.Namespace)
 @js.native
 object wrapTextMod extends js.Object {
+  
   def default(text: String, maxWidth: Double): String = js.native
   @JSName("default")
   def default_end(text: String, maxWidth: Double, wrapType: end): String = js.native
@@ -30,4 +31,3 @@ object wrapTextMod extends js.Object {
   @JSName("default")
   def default_wrap(text: String, maxWidth: Double, wrapType: wrap): String = js.native
 }
-

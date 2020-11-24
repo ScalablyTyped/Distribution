@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "EffectLayer")
 @js.native
@@ -19,11 +19,11 @@ abstract class EffectLayer protected ()
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "EffectLayer")
 @js.native
 object EffectLayer extends js.Object {
+  
   /**
     * Creates an effect layer from parsed effect layer data
     * @param parsedEffectLayer defines effect layer data
@@ -32,7 +32,7 @@ object EffectLayer extends js.Object {
     * @returns a parsed effect Layer
     */
   def Parse(parsedEffectLayer: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.effectLayerMod.EffectLayer = js.native
+  
   /** @hidden */
   def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = js.native
 }
-

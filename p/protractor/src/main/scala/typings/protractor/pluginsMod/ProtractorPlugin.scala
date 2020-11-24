@@ -5,10 +5,11 @@ import typings.protractor.anon.`0`
 import typings.protractor.browserMod.ProtractorBrowser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ProtractorPlugin extends js.Object {
+  
   /**
     * Adds a failed assertion to the test's results.
     *
@@ -28,6 +29,7 @@ trait ProtractorPlugin extends js.Object {
   var addFailure: js.UndefOr[
     js.Function2[/* message */ js.UndefOr[String], /* info */ js.UndefOr[SpecName], Unit]
   ] = js.native
+  
   /**
     * Adds a passed assertion to the test's results.
     *
@@ -42,6 +44,7 @@ trait ProtractorPlugin extends js.Object {
     * @throws {Error} Throws an error if called after results have been reported
     */
   var addSuccess: js.UndefOr[js.Function1[/* info */ js.UndefOr[`0`], Unit]] = js.native
+  
   /**
     * Warns the user that something is problematic.
     *
@@ -55,6 +58,7 @@ trait ProtractorPlugin extends js.Object {
     *     Defaults to `{}`.
     */
   var addWarning: js.UndefOr[js.Function2[/* message */ js.UndefOr[String], /* info */ js.UndefOr[`0`], Unit]] = js.native
+  
   /**
     * The plugin's configuration object.
     *
@@ -67,6 +71,7 @@ trait ProtractorPlugin extends js.Object {
     * @type {Object}
     */
   var config: js.UndefOr[PluginConfig] = js.native
+  
   /**
     * The name of the plugin.  Used when reporting results.
     *
@@ -76,6 +81,7 @@ trait ProtractorPlugin extends js.Object {
     * @type {string}
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * This is called inside browser.get() directly after the page loads, and before
     * angular bootstraps.
@@ -92,6 +98,7 @@ trait ProtractorPlugin extends js.Object {
     *     the promise is rejected, a failed assertion is added to the test results.
     */
   var onPageLoad: js.UndefOr[js.Function1[/* browser */ ProtractorBrowser, Unit | js.Promise[Unit]]] = js.native
+  
   /**
     * This is called inside browser.get() directly after angular is done
     * bootstrapping/synchronizing.  If `browser.ignoreSynchronization` is `true`,
@@ -109,6 +116,7 @@ trait ProtractorPlugin extends js.Object {
     *     the promise is rejected, a failed assertion is added to the test results.
     */
   var onPageStable: js.UndefOr[js.Function1[/* browser */ ProtractorBrowser, Unit | js.Promise[Unit]]] = js.native
+  
   /**
     * This is called before the test have been run but after the test framework has
     * been set up.  Analogous to a config file's `onPrepare`.
@@ -126,6 +134,7 @@ trait ProtractorPlugin extends js.Object {
     *     rejected, a failed assertion is added to the test results.
     */
   var onPrepare: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  
   /**
     * Called after the test results have been finalized and any jobs have been
     * updated (if applicable).
@@ -140,6 +149,7 @@ trait ProtractorPlugin extends js.Object {
     *     rejected, an error is logged to the console.
     */
   var postResults: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  
   /**
     * Called after each test block (in Jasmine, this means an `it` block)
     * completes.
@@ -160,6 +170,7 @@ trait ProtractorPlugin extends js.Object {
   var postTest: js.UndefOr[
     js.Function2[/* passed */ Boolean, /* testInfo */ js.Any, Unit | js.Promise[Unit]]
   ] = js.native
+  
   /**
     * Sets up plugins before tests are run. This is called after the WebDriver
     * session has been started, but before the test framework has been set up.
@@ -174,6 +185,7 @@ trait ProtractorPlugin extends js.Object {
     *     rejected, a failed assertion is added to the test results.
     */
   var setup: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  
   /**
     * Used to turn off default checks for angular stability
     *
@@ -190,6 +202,7 @@ trait ProtractorPlugin extends js.Object {
     * @type {boolean}
     */
   var skipAngularStability: js.UndefOr[Boolean] = js.native
+  
   /**
     * This is called after the tests have been run, but before the WebDriver
     * session has been terminated.
@@ -204,6 +217,7 @@ trait ProtractorPlugin extends js.Object {
     *     rejected, a failed assertion is added to the test results.
     */
   var teardown: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  
   /**
     * Between every webdriver action, Protractor calls browser.waitForAngular() to
     * make sure that Angular has no outstanding $http or $timeout calls.
@@ -225,6 +239,7 @@ trait ProtractorPlugin extends js.Object {
     *     will continue onto the next command.
     */
   var waitForCondition: js.UndefOr[js.Function1[/* browser */ ProtractorBrowser, js.Promise[Boolean] | Boolean]] = js.native
+  
   /**
     * Between every webdriver action, Protractor calls browser.waitForAngular() to
     * make sure that Angular has no outstanding $http or $timeout calls.
@@ -247,85 +262,117 @@ trait ProtractorPlugin extends js.Object {
     */
   var waitForPromise: js.UndefOr[js.Function1[/* browser */ ProtractorBrowser, js.Promise[Unit]]] = js.native
 }
-
 object ProtractorPlugin {
+  
   @scala.inline
   def apply(): ProtractorPlugin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProtractorPlugin]
   }
+  
   @scala.inline
   implicit class ProtractorPluginOps[Self <: ProtractorPlugin] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddFailure(value: (/* message */ js.UndefOr[String], /* info */ js.UndefOr[SpecName]) => Unit): Self = this.set("addFailure", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteAddFailure: Self = this.set("addFailure", js.undefined)
+    
     @scala.inline
     def setAddSuccess(value: /* info */ js.UndefOr[`0`] => Unit): Self = this.set("addSuccess", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteAddSuccess: Self = this.set("addSuccess", js.undefined)
+    
     @scala.inline
     def setAddWarning(value: (/* message */ js.UndefOr[String], /* info */ js.UndefOr[`0`]) => Unit): Self = this.set("addWarning", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteAddWarning: Self = this.set("addWarning", js.undefined)
+    
     @scala.inline
     def setConfig(value: PluginConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteConfig: Self = this.set("config", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setOnPageLoad(value: /* browser */ ProtractorBrowser => Unit | js.Promise[Unit]): Self = this.set("onPageLoad", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteOnPageLoad: Self = this.set("onPageLoad", js.undefined)
+    
     @scala.inline
     def setOnPageStable(value: /* browser */ ProtractorBrowser => Unit | js.Promise[Unit]): Self = this.set("onPageStable", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteOnPageStable: Self = this.set("onPageStable", js.undefined)
+    
     @scala.inline
     def setOnPrepare(value: () => Unit | js.Promise[Unit]): Self = this.set("onPrepare", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteOnPrepare: Self = this.set("onPrepare", js.undefined)
+    
     @scala.inline
     def setPostResults(value: () => Unit | js.Promise[Unit]): Self = this.set("postResults", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deletePostResults: Self = this.set("postResults", js.undefined)
+    
     @scala.inline
     def setPostTest(value: (/* passed */ Boolean, /* testInfo */ js.Any) => Unit | js.Promise[Unit]): Self = this.set("postTest", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deletePostTest: Self = this.set("postTest", js.undefined)
+    
     @scala.inline
     def setSetup(value: () => Unit | js.Promise[Unit]): Self = this.set("setup", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteSetup: Self = this.set("setup", js.undefined)
+    
     @scala.inline
     def setSkipAngularStability(value: Boolean): Self = this.set("skipAngularStability", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSkipAngularStability: Self = this.set("skipAngularStability", js.undefined)
+    
     @scala.inline
     def setTeardown(value: () => Unit | js.Promise[Unit]): Self = this.set("teardown", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteTeardown: Self = this.set("teardown", js.undefined)
+    
     @scala.inline
     def setWaitForCondition(value: /* browser */ ProtractorBrowser => js.Promise[Boolean] | Boolean): Self = this.set("waitForCondition", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteWaitForCondition: Self = this.set("waitForCondition", js.undefined)
+    
     @scala.inline
     def setWaitForPromise(value: /* browser */ ProtractorBrowser => js.Promise[Unit]): Self = this.set("waitForPromise", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteWaitForPromise: Self = this.set("waitForPromise", js.undefined)
   }
-  
 }
-

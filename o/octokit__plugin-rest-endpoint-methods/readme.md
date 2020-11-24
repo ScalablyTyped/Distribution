@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__plugin-rest-endpoint-methods
 
-Typings are for version 4.1.2
+Typings are for version 4.2.1
 
 ## Library description:
 Octokit plugin adding one method for all of api.github.com REST API endpoints
@@ -10,9 +10,9 @@ Octokit plugin adding one method for all of api.github.com REST API endpoints
 | ------------------ | :-------------: |
 | Full name          | @octokit/plugin-rest-endpoint-methods |
 | Keywords           | github, api, sdk, toolkit |
-| # releases         | 19 |
-| # dependents       | 2 |
-| # downloads        | 1265319 |
+| # releases         | 57 |
+| # dependents       | 10 |
+| # downloads        | 46124422 |
 | # stars            | 0 |
 
 ## Links

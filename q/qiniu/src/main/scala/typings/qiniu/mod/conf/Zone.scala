@@ -2,7 +2,7 @@ package typings.qiniu.mod.conf
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("qiniu", "conf.Zone")
 @js.native
@@ -15,11 +15,16 @@ class Zone protected () extends js.Object {
     rsfHost: js.UndefOr[String],
     apiHost: js.UndefOr[String]
   ) = this()
+  
   var apiHost: String = js.native
+  
   var cdnUpHosts: js.Any = js.native
+  
   var ioHost: String = js.native
+  
   var rsHost: String = js.native
+  
   var rsfHost: String = js.native
+  
   var srcUpHosts: js.Any = js.native
 }
-

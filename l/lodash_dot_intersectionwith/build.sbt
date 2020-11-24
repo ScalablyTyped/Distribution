@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_intersectionwith"
-version := "4.4-dt-20200515Z-46614e"
+version := "4.4-dt-20200515Z-06ff7d"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

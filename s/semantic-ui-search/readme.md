@@ -10,9 +10,9 @@ Single component release of search
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-search |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 23579 |
+| # downloads        | 18077 |
 | # stars            | 0 |
 
 ## Links

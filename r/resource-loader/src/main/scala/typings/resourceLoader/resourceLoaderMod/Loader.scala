@@ -2,14 +2,14 @@ package typings.resourceLoader.resourceLoaderMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.resourceLoader.mod.default
-import typings.resourceLoader.resourceLoaderMod.Loader.OnCompleteSignal
 import typings.resourceLoader.resourceLoaderMod.Loader.OnErrorSignal
 import typings.resourceLoader.resourceLoaderMod.Loader.OnLoadSignal
 import typings.resourceLoader.resourceLoaderMod.Loader.OnProgressSignal
 import typings.resourceLoader.resourceLoaderMod.Loader.OnStartSignal
+import typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @param {string} [baseUrl=''] - The base url for all resources loaded by this loader.
@@ -21,103 +21,7 @@ class Loader () extends js.Object {
   def this(baseUrl: String) = this()
   def this(baseUrl: js.UndefOr[scala.Nothing], concurrency: Double) = this()
   def this(baseUrl: String, concurrency: Double) = this()
-  /**
-    * The base url for all resources loaded by this loader.
-    *
-    * @member {string}
-    */
-  var baseUrl: String = js.native
-  /**
-    * The number of resources to load concurrently.
-    *
-    * @member {number}
-    * @default 10
-    */
-  var concurrency: Double = js.native
-  /**
-    * A querystring to append to every URL added to the loader.
-    *
-    * This should be a valid query string *without* the question-mark (`?`). The loader will
-    * also *not* escape values for you. Make sure to escape your parameters with
-    * [`encodeURIComponent`](https://mdn.io/encodeURIComponent) before assigning this property.
-    *
-    * @example
-    * const loader = new Loader();
-    *
-    * loader.defaultQueryString = 'user=me&password=secret';
-    *
-    * // This will request 'image.png?user=me&password=secret'
-    * loader.add('image.png').load();
-    *
-    * loader.reset();
-    *
-    * // This will request 'image.png?v=1&user=me&password=secret'
-    * loader.add('iamge.png?v=1').load();
-    *
-    * @member {string}
-    * @default ''
-    */
-  var defaultQueryString: String = js.native
-  /**
-    * Loading state of the loader, true if it is currently loading resources.
-    *
-    * @member {boolean}
-    * @default false
-    */
-  var loading: Boolean = js.native
-  /**
-    * Dispatched when the queued resources all load.
-    *
-    * The callback looks like {@link Loader.OnCompleteSignal}.
-    *
-    * @member {Signal<Loader.OnCompleteSignal>}
-    */
-  var onComplete: default[OnCompleteSignal] = js.native
-  /**
-    * Dispatched once per errored resource.
-    *
-    * The callback looks like {@link Loader.OnErrorSignal}.
-    *
-    * @member {Signal<Loader.OnErrorSignal>}
-    */
-  var onError: default[OnErrorSignal] = js.native
-  /**
-    * Dispatched once per loaded resource.
-    *
-    * The callback looks like {@link Loader.OnLoadSignal}.
-    *
-    * @member {Signal<Loader.OnLoadSignal>}
-    */
-  var onLoad: default[OnLoadSignal] = js.native
-  /**
-    * Dispatched once per loaded or errored resource.
-    *
-    * The callback looks like {@link Loader.OnProgressSignal}.
-    *
-    * @member {Signal<Loader.OnProgressSignal>}
-    */
-  var onProgress: default[OnProgressSignal] = js.native
-  /**
-    * Dispatched when the loader begins to process the queue.
-    *
-    * The callback looks like {@link Loader.OnStartSignal}.
-    *
-    * @member {Signal<Loader.OnStartSignal>}
-    */
-  var onStart: default[OnStartSignal] = js.native
-  /**
-    * The progress percent of the loader going through the queue.
-    *
-    * @member {number}
-    * @default 0
-    */
-  var progress: Double = js.native
-  /**
-    * All the resources for this loader keyed by name.
-    *
-    * @member {object<string, Resource>}
-    */
-  var resources: StringDictionary[Resource] = js.native
+  
   /**
     * Adds a resource (or multiple resources) to the loader queue.
     *
@@ -170,24 +74,10 @@ class Loader () extends js.Object {
     * @return {this} Returns itself.
     */
   def add(name: String, url: String): this.type = js.native
-  def add(
-    name: String,
-    url: String,
-    callback: typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal
-  ): this.type = js.native
-  def add(
-    name: String,
-    url: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal
-  ): this.type = js.native
+  def add(name: String, url: String, callback: OnCompleteSignal): this.type = js.native
+  def add(name: String, url: String, options: js.UndefOr[scala.Nothing], callback: OnCompleteSignal): this.type = js.native
   def add(name: String, url: String, options: IAddOptions): this.type = js.native
-  def add(
-    name: String,
-    url: String,
-    options: IAddOptions,
-    callback: typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal
-  ): this.type = js.native
+  def add(name: String, url: String, options: IAddOptions, callback: OnCompleteSignal): this.type = js.native
   /** @function
     * @variation 5
     * @param {IAddOptions} options - The options for the load. This object must contain a `url` property.
@@ -195,7 +85,7 @@ class Loader () extends js.Object {
     * @return {this} Returns itself.
     */
   def add(options: IAddOptions): this.type = js.native
-  def add(options: IAddOptions, callback: typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal): this.type = js.native
+  def add(options: IAddOptions, callback: OnCompleteSignal): this.type = js.native
   /** @function
     * @variation 6
     * @param {Array<IAddOptions|string>} resources - An array of resources to load, where each is
@@ -204,10 +94,7 @@ class Loader () extends js.Object {
     * @return {this} Returns itself.
     */
   def add(resources: js.Array[IAddOptions | String]): this.type = js.native
-  def add(
-    resources: js.Array[IAddOptions | String],
-    callback: typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal
-  ): this.type = js.native
+  def add(resources: js.Array[IAddOptions | String], callback: OnCompleteSignal): this.type = js.native
   /** @function
     * @variation 3
     * @param {string} url - The url for this resource, relative to the baseUrl of this loader.
@@ -215,18 +102,51 @@ class Loader () extends js.Object {
     * @return {this} Returns itself.
     */
   def add(url: String): this.type = js.native
-  def add(url: String, callback: typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal): this.type = js.native
-  def add(
-    url: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal
-  ): this.type = js.native
+  def add(url: String, callback: OnCompleteSignal): this.type = js.native
+  def add(url: String, options: js.UndefOr[scala.Nothing], callback: OnCompleteSignal): this.type = js.native
   def add(url: String, options: IAddOptions): this.type = js.native
-  def add(
-    url: String,
-    options: IAddOptions,
-    callback: typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal
-  ): this.type = js.native
+  def add(url: String, options: IAddOptions, callback: OnCompleteSignal): this.type = js.native
+  
+  /**
+    * The base url for all resources loaded by this loader.
+    *
+    * @member {string}
+    */
+  var baseUrl: String = js.native
+  
+  /**
+    * The number of resources to load concurrently.
+    *
+    * @member {number}
+    * @default 10
+    */
+  var concurrency: Double = js.native
+  
+  /**
+    * A querystring to append to every URL added to the loader.
+    *
+    * This should be a valid query string *without* the question-mark (`?`). The loader will
+    * also *not* escape values for you. Make sure to escape your parameters with
+    * [`encodeURIComponent`](https://mdn.io/encodeURIComponent) before assigning this property.
+    *
+    * @example
+    * const loader = new Loader();
+    *
+    * loader.defaultQueryString = 'user=me&password=secret';
+    *
+    * // This will request 'image.png?user=me&password=secret'
+    * loader.add('image.png').load();
+    *
+    * loader.reset();
+    *
+    * // This will request 'image.png?v=1&user=me&password=secret'
+    * loader.add('iamge.png?v=1').load();
+    *
+    * @member {string}
+    * @default ''
+    */
+  var defaultQueryString: String = js.native
+  
   /**
     * Starts loading the queued resources.
     *
@@ -235,6 +155,60 @@ class Loader () extends js.Object {
     */
   def load(): this.type = js.native
   def load(cb: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  
+  /**
+    * Loading state of the loader, true if it is currently loading resources.
+    *
+    * @member {boolean}
+    * @default false
+    */
+  var loading: Boolean = js.native
+  
+  /**
+    * Dispatched when the queued resources all load.
+    *
+    * The callback looks like {@link Loader.OnCompleteSignal}.
+    *
+    * @member {Signal<Loader.OnCompleteSignal>}
+    */
+  var onComplete: default[typings.resourceLoader.resourceLoaderMod.Loader.OnCompleteSignal] = js.native
+  
+  /**
+    * Dispatched once per errored resource.
+    *
+    * The callback looks like {@link Loader.OnErrorSignal}.
+    *
+    * @member {Signal<Loader.OnErrorSignal>}
+    */
+  var onError: default[OnErrorSignal] = js.native
+  
+  /**
+    * Dispatched once per loaded resource.
+    *
+    * The callback looks like {@link Loader.OnLoadSignal}.
+    *
+    * @member {Signal<Loader.OnLoadSignal>}
+    */
+  var onLoad: default[OnLoadSignal] = js.native
+  
+  /**
+    * Dispatched once per loaded or errored resource.
+    *
+    * The callback looks like {@link Loader.OnProgressSignal}.
+    *
+    * @member {Signal<Loader.OnProgressSignal>}
+    */
+  var onProgress: default[OnProgressSignal] = js.native
+  
+  /**
+    * Dispatched when the loader begins to process the queue.
+    *
+    * The callback looks like {@link Loader.OnStartSignal}.
+    *
+    * @member {Signal<Loader.OnStartSignal>}
+    */
+  var onStart: default[OnStartSignal] = js.native
+  
   /**
     * Sets up a middleware function that will run *before* the
     * resource is loaded.
@@ -243,12 +217,29 @@ class Loader () extends js.Object {
     * @return {this} Returns itself.
     */
   def pre(fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  
+  /**
+    * The progress percent of the loader going through the queue.
+    *
+    * @member {number}
+    * @default 0
+    */
+  var progress: Double = js.native
+  
   /**
     * Resets the queue of the loader to prepare for a new load.
     *
     * @return {this} Returns itself.
     */
   def reset(): this.type = js.native
+  
+  /**
+    * All the resources for this loader keyed by name.
+    *
+    * @member {object<string, Resource>}
+    */
+  var resources: StringDictionary[Resource] = js.native
+  
   /**
     * Sets up a middleware function that will run *after* the
     * resource is loaded.
@@ -258,11 +249,11 @@ class Loader () extends js.Object {
     */
   def use(fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
 }
-
 /* static members */
 @JSImport("resource-loader", "Loader")
 @js.native
 object Loader extends js.Object {
+  
   /**
     * Sets up a middleware function that will run *before* the
     * resource is loaded.
@@ -272,6 +263,7 @@ object Loader extends js.Object {
     * @return {Loader} Returns itself.
     */
   def pre(fn: js.Function1[/* repeated */ js.Any, _]): Loader = js.native
+  
   /**
     * Sets up a middleware function that will run *after* the
     * resource is loaded.
@@ -281,6 +273,7 @@ object Loader extends js.Object {
     * @return {Loader} Returns itself.
     */
   def use(fn: js.Function1[/* repeated */ js.Any, _]): Loader = js.native
+  
   /**
     * When the loader completes loading resources it dispatches this callback.
     *
@@ -289,6 +282,7 @@ object Loader extends js.Object {
     * @param {Loader} loader - The loader that has finished loading resources.
     */
   type OnCompleteSignal = js.Function1[/* loader */ Loader, Unit]
+  
   /**
     * When an error occurrs the loader and resource are disaptched.
     *
@@ -298,6 +292,7 @@ object Loader extends js.Object {
     * @param {Resource} resource - The resource that caused the error.
     */
   type OnErrorSignal = js.Function2[/* loader */ Loader, /* resource */ Resource, Unit]
+  
   /**
     * When a load completes the loader and resource are disaptched.
     *
@@ -307,6 +302,7 @@ object Loader extends js.Object {
     * @param {Resource} resource - The resource that has completed loading.
     */
   type OnLoadSignal = js.Function2[/* loader */ Loader, /* resource */ Resource, Unit]
+  
   /**
     * When the progress changes the loader and resource are disaptched.
     *
@@ -316,6 +312,7 @@ object Loader extends js.Object {
     * @param {Resource} resource - The resource that has completed or failed to cause the progress to advance.
     */
   type OnProgressSignal = js.Function2[/* loader */ Loader, /* resource */ Resource, Unit]
+  
   /**
     * When the loader starts loading resources it dispatches this callback.
     *
@@ -325,4 +322,3 @@ object Loader extends js.Object {
     */
   type OnStartSignal = js.Function1[/* loader */ Loader, Unit]
 }
-

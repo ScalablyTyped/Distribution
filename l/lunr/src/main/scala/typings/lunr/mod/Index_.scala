@@ -6,7 +6,7 @@ import typings.lunr.mod.Index.QueryString
 import typings.lunr.mod.Index.Result
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An index contains the built index of all documents and provides a query interface
@@ -23,6 +23,7 @@ class Index_ protected () extends js.Object {
     * @param attrs The attributes of the built search index.
     */
   def this(attrs: Attributes) = this()
+  
   /**
     * Performs a query against the index using the yielded lunr.Query object.
     *
@@ -39,6 +40,7 @@ class Index_ protected () extends js.Object {
     * @param fn - A function that is used to build the query.
     */
   def query(fn: QueryBuilder): js.Array[Result] = js.native
+  
   /**
     * Performs a search against the index using lunr query syntax.
     *
@@ -51,6 +53,7 @@ class Index_ protected () extends js.Object {
     * @throws {lunr.QueryParseError} If the passed query string cannot be parsed.
     */
   def search(queryString: QueryString): js.Array[Result] = js.native
+  
   /**
     * Prepares the index for JSON serialization.
     *
@@ -60,4 +63,3 @@ class Index_ protected () extends js.Object {
     */
   def toJSON(): js.Object = js.native
 }
-

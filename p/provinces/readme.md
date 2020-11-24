@@ -11,8 +11,8 @@ state and province lists for countries
 | Full name          | provinces |
 | Keywords           | state, province, geo, data |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 127575 |
+| # dependents       | 7 |
+| # downloads        | 184156 |
 | # stars            | 1 |
 
 ## Links

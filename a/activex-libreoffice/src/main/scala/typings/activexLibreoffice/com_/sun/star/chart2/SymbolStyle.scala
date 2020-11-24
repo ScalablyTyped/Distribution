@@ -7,7 +7,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** determines what kind of symbol to use */
 /* Rewritten from type alias, can be one of: 
@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait SymbolStyle extends js.Object
-
 object SymbolStyle {
+  
   /**
     * The symbol is taken automatically. <p>This will typically be the nth standard symbol for the nth
     *
@@ -27,9 +27,11 @@ object SymbolStyle {
     */
   @scala.inline
   def AUTO: `1` = 1.asInstanceOf[`1`]
+  
   /** uses the graphic given in {@link Symbol.Graphic} as symbol. */
   @scala.inline
   def GRAPHIC: `4` = 4.asInstanceOf[`4`]
+  
   /**
     * Default, no pies are exploded.
     *
@@ -39,11 +41,12 @@ object SymbolStyle {
     */
   @scala.inline
   def NONE: `0` = 0.asInstanceOf[`0`]
+  
   /** uses the symbol given in the {@link com.sun.star.drawing.PolyPolygonBezierCoords} given in {@link Symbol.PolygonCoords} . */
   @scala.inline
   def POLYGON: `3` = 3.asInstanceOf[`3`]
+  
   /** uses one of the standard symbols. Which standard symbol is given in {@link Symbol.StandardSymbol} . */
   @scala.inline
   def STANDARD: `2` = 2.asInstanceOf[`2`]
 }
-

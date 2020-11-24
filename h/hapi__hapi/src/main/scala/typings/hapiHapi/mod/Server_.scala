@@ -15,13 +15,13 @@ import typings.hapiHapi.hapiHapiStrings.tcp
 import typings.hapiHapi.hapiHapiStrings.toolkit
 import typings.hapiHapi.mod.Lifecycle.Method
 import typings.hapiHapi.mod.Util.HTTP_METHODS
-import typings.hapiJoi.mod.Root
+import typings.joi.mod.Root
 import typings.node.httpMod.Server
 import typings.node.zlibMod.Gunzip_
 import typings.node.zlibMod.Gzip_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@hapi/hapi", "Server")
 @js.native
@@ -32,6 +32,7 @@ import scala.scalajs.js.annotation._
   */
 class Server_ () extends js.Object {
   def this(options: ServerOptions) = this()
+  
   /**
     * Provides a safe place to store server-specific run-time application data without potential conflicts with
     * the framework internals. The data can be accessed whenever the server is accessible.
@@ -39,126 +40,12 @@ class Server_ () extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverapp)
     */
   var app: ServerApplicationState = js.native
+  
   /**
     * Server Auth: properties and methods
     */
   val auth: ServerAuth = js.native
-  /**
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servercacheoptions)
-    */
-  @JSName("cache")
-  var cache_Original: ServerCache = js.native
-  /**
-    * Provides access to the decorations already applied to various framework interfaces. The object must not be
-    * modified directly, but only through server.decorate.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverdecorations)
-    */
-  val decorations: typings.hapiHapi.anon.Request = js.native
-  /**
-    * Access: podium public interface.
-    * The server events emitter. Utilizes the podium with support for event criteria validation, channels, and filters.
-    * Use the following methods to interact with server.events:
-    * [server.events.emit(criteria, data)](https://github.com/hapijs/hapi/blob/master/API.md#server.events.emit()) - emit server events.
-    * [server.events.on(criteria, listener)](https://github.com/hapijs/hapi/blob/master/API.md#server.events.on()) - subscribe to all events.
-    * [server.events.once(criteria, listener)](https://github.com/hapijs/hapi/blob/master/API.md#server.events.once()) - subscribe to
-    * Other methods include: server.events.removeListener(name, listener), server.events.removeAllListeners(name), and server.events.hasListeners(name).
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverevents)
-    */
-  var events: ServerEvents = js.native
-  /**
-    * An object containing information about the server where:
-    * * id - a unique server identifier (using the format '{hostname}:{pid}:{now base36}').
-    * * created - server creation timestamp.
-    * * started - server start timestamp (0 when stopped).
-    * * port - the connection port based on the following rules:
-    * * host - The host configuration value.
-    * * address - the active IP address the connection was bound to after starting. Set to undefined until the server has been started or when using a non TCP port (e.g. UNIX domain socket).
-    * * protocol - the protocol used:
-    * * 'http' - HTTP.
-    * * 'https' - HTTPS.
-    * * 'socket' - UNIX domain socket or Windows named pipe.
-    * * uri - a string representing the connection (e.g. 'http://example.com:8080' or 'socket:/unix/domain/socket/path'). Contains the uri value if set, otherwise constructed from the available
-    * settings. If no port is configured or is set to 0, the uri will not include a port component until the server is started.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverinfo)
-    */
-  val info: ServerInfo = js.native
-  /**
-    * Access: read only and listener public interface.
-    * The node HTTP server object.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverlistener)
-    */
-  var listener: Server = js.native
-  /**
-    * An object containing the process load metrics (when load.sampleInterval is enabled):
-    * * eventLoopDelay - event loop delay milliseconds.
-    * * heapUsed - V8 heap usage.
-    * * rss - RSS memory usage.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverload)
-    */
-  val load: EventLoopDelay = js.native
-  /**
-    * Server methods are functions registered with the server and used throughout the application as a common utility.
-    * Their advantage is in the ability to configure them to use the built-in cache and share across multiple request
-    * handlers without having to create a common module.
-    * sever.methods is an object which provides access to the methods registered via server.method() where each
-    * server method name is an object property.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servermethods
-    */
-  val methods: ServerMethods = js.native
-  /**
-    * Provides access to the server MIME database used for setting content-type information. The object must not be
-    * modified directly but only through the [mime](https://github.com/hapijs/hapi/blob/master/API.md#server.options.mime) server setting.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servermime)
-    */
-  var mime: js.Any = js.native
-  /**
-    * An object containing the values exposed by each registered plugin where each key is a plugin name and the values
-    * are the exposed properties by each plugin using server.expose(). Plugins may set the value of
-    * the server.plugins[name] object directly or via the server.expose() method.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverplugins)
-    */
-  var plugins: PluginProperties = js.native
-  /**
-    * The realm object contains sandboxed server settings specific to each plugin or authentication strategy. When
-    * registering a plugin or an authentication scheme, a server object reference is provided with a new server.realm
-    * container specific to that registration. It allows each plugin to maintain its own settings without leaking
-    * and affecting other plugins.
-    * For example, a plugin can set a default file path for local resources without breaking other plugins' configured
-    * paths. When calling server.bind(), the active realm's settings.bind property is set which is then used by
-    * routes and extensions added at the same level (server root or plugin).
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverrealm)
-    */
-  val realm: ServerRealm = js.native
-  /**
-    * An object of the currently registered plugins where each key is a registered plugin name and the value is
-    * an object containing:
-    * * version - the plugin version.
-    * * name - the plugin name.
-    * * options - (optional) options passed to the plugin during registration.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverregistrations)
-    */
-  val registrations: PluginsListRegistered = js.native
-  /**
-    * The server configuration object after defaults applied.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serversettings)
-    */
-  val settings: ServerOptions = js.native
-  /**
-    * The server cookies manager.
-    * Access: read only and statehood public interface.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverstates)
-    */
-  val states: ServerState = js.native
-  /**
-    * A string indicating the listener type where:
-    * * 'socket' - UNIX domain socket or Windows named pipe.
-    * * 'tcp' - an HTTP listener.
-    */
-  val `type`: socket | tcp = js.native
-  /**
-    * The hapi module version number.
-    */
-  val version: String = js.native
+  
   /**
     * Sets a global context used as the default bind object when adding a route or an extension where:
     * @param context - the object used to bind this in lifecycle methods such as the route handler and extension methods. The context is also made available as h.context.
@@ -168,6 +55,7 @@ class Server_ () extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverbindcontext)
     */
   def bind(context: js.Object): Unit = js.native
+  
   /**
     * Provisions a cache segment within the server cache facility where:
     * @param options - [catbox policy](https://github.com/hapijs/catbox#policy) configuration where:
@@ -198,11 +86,18 @@ class Server_ () extends js.Object {
     */
   def cache[T, O /* <: CachePolicyOptions[T] */](options: O): Policy[T, O] = js.native
   /**
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servercacheoptions)
+    */
+  @JSName("cache")
+  var cache_Original: ServerCache = js.native
+  
+  /**
     * Links another server to the initialize/start/stop state of the current server by calling the
     * controlled server `initialize()`/`start()`/`stop()` methods whenever the current server methods
     * are called, where:
     */
   def control(server: Server_): Unit = js.native
+  
   /**
     * Registers a custom content decoding compressor to extend the built-in support for 'gzip' and 'deflate' where:
     * @param encoding - the decoder name string.
@@ -212,6 +107,7 @@ class Server_ () extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverdecoderencoding-decoder)
     */
   def decoder(encoding: String, decoder: js.Function1[/* options */ PayloadCompressionDecoderSettings, Gunzip_]): Unit = js.native
+  
   /**
     * Extends various framework interfaces with custom methods where:
     * @param type - the interface being decorated. Supported types:
@@ -287,6 +183,14 @@ class Server_ () extends js.Object {
   def decorate_toolkit(`type`: toolkit, property: DecorateName, method: DecorationMethod[ResponseToolkit]): Unit = js.native
   @JSName("decorate")
   def decorate_toolkit(`type`: toolkit, property: DecorateName, method: DecorationMethod[ResponseToolkit], options: Apply): Unit = js.native
+  
+  /**
+    * Provides access to the decorations already applied to various framework interfaces. The object must not be
+    * modified directly, but only through server.decorate.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverdecorations)
+    */
+  val decorations: typings.hapiHapi.anon.Request = js.native
+  
   /**
     * Used within a plugin to declare a required dependency on other plugins where:
     * @param dependencies - plugins which must be registered in order for this plugin to operate. Plugins listed must be registered before the server is
@@ -301,6 +205,7 @@ class Server_ () extends js.Object {
     */
   def dependency(dependencies: Dependencies): Unit = js.native
   def dependency(dependencies: Dependencies, after: js.Function1[/* server */ this.type, js.Promise[Unit]]): Unit = js.native
+  
   /**
     * Registers a custom content encoding compressor to extend the built-in support for 'gzip' and 'deflate' where:
     * @param encoding - the encoder name string.
@@ -310,6 +215,7 @@ class Server_ () extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverencoderencoding-encoder)
     */
   def encoder(encoding: String, encoder: js.Function1[/* options */ RouteCompressionEncoderSettings, Gzip_]): Unit = js.native
+  
   def event(events: js.Array[ServerEventsApplication]): Unit = js.native
   /**
     * Register custom application events where:
@@ -333,6 +239,19 @@ class Server_ () extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverevents)
     */
   def event(events: ServerEventsApplication): Unit = js.native
+  
+  /**
+    * Access: podium public interface.
+    * The server events emitter. Utilizes the podium with support for event criteria validation, channels, and filters.
+    * Use the following methods to interact with server.events:
+    * [server.events.emit(criteria, data)](https://github.com/hapijs/hapi/blob/master/API.md#server.events.emit()) - emit server events.
+    * [server.events.on(criteria, listener)](https://github.com/hapijs/hapi/blob/master/API.md#server.events.on()) - subscribe to all events.
+    * [server.events.once(criteria, listener)](https://github.com/hapijs/hapi/blob/master/API.md#server.events.once()) - subscribe to
+    * Other methods include: server.events.removeListener(name, listener), server.events.removeAllListeners(name), and server.events.hasListeners(name).
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverevents)
+    */
+  var events: ServerEvents = js.native
+  
   /**
     * Used within a plugin to expose a property via server.plugins[name] where:
     * @param key - the key assigned (server.plugins[name][key]).
@@ -351,6 +270,7 @@ class Server_ () extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverexposeobj)
     */
   def expose(obj: js.Object): Unit = js.native
+  
   def ext(events: js.Array[ServerExtEventsObject | ServerExtEventsRequestObject]): Unit = js.native
   /**
     * Registers an extension function in one of the request lifecycle extension points where:
@@ -385,6 +305,25 @@ class Server_ () extends js.Object {
   def ext(event: ServerExtType, method: ServerExtPointFunction, options: ServerExtOptions): Unit = js.native
   def ext(event: ServerRequestExtType, method: Method): Unit = js.native
   def ext(event: ServerRequestExtType, method: Method, options: ServerExtOptions): Unit = js.native
+  
+  /**
+    * An object containing information about the server where:
+    * * id - a unique server identifier (using the format '{hostname}:{pid}:{now base36}').
+    * * created - server creation timestamp.
+    * * started - server start timestamp (0 when stopped).
+    * * port - the connection port based on the following rules:
+    * * host - The host configuration value.
+    * * address - the active IP address the connection was bound to after starting. Set to undefined until the server has been started or when using a non TCP port (e.g. UNIX domain socket).
+    * * protocol - the protocol used:
+    * * 'http' - HTTP.
+    * * 'https' - HTTPS.
+    * * 'socket' - UNIX domain socket or Windows named pipe.
+    * * uri - a string representing the connection (e.g. 'http://example.com:8080' or 'socket:/unix/domain/socket/path'). Contains the uri value if set, otherwise constructed from the available
+    * settings. If no port is configured or is set to 0, the uri will not include a port component until the server is started.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverinfo)
+    */
+  val info: ServerInfo = js.native
+  
   /**
     * Initializes the server (starts the caches, finalizes plugin registration) but does not start listening on the connection port.
     * @return Return value: none.
@@ -396,6 +335,7 @@ class Server_ () extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverinitialize)
     */
   def initialize(): js.Promise[Unit] = js.native
+  
   /**
     * Injects a request into the server simulating an incoming HTTP request without making an actual socket connection. Injection is useful for testing purposes as well as for invoking routing logic
     * internally without the overhead and limitations of the network stack. The method utilizes the shot module for performing injections, with some additional options and response properties:
@@ -435,6 +375,23 @@ class Server_ () extends js.Object {
     */
   def inject(options: String): js.Promise[ServerInjectResponse] = js.native
   def inject(options: ServerInjectOptions): js.Promise[ServerInjectResponse] = js.native
+  
+  /**
+    * Access: read only and listener public interface.
+    * The node HTTP server object.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverlistener)
+    */
+  var listener: Server = js.native
+  
+  /**
+    * An object containing the process load metrics (when load.sampleInterval is enabled):
+    * * eventLoopDelay - event loop delay milliseconds.
+    * * heapUsed - V8 heap usage.
+    * * rss - RSS memory usage.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverload)
+    */
+  val load: EventLoopDelay = js.native
+  
   /**
     * Logs server events that cannot be associated with a specific request. When called the server emits a 'log' event which can be used by other listeners or plugins to record the information or
     * output to the console. The arguments are:
@@ -462,6 +419,7 @@ class Server_ () extends js.Object {
   def log(tags: js.Array[String], data: js.Function0[_], timestamp: Double): Unit = js.native
   def log(tags: js.Array[String], data: js.Object): Unit = js.native
   def log(tags: js.Array[String], data: js.Object, timestamp: Double): Unit = js.native
+  
   /**
     * Looks up a route configuration where:
     * @param id - the route identifier.
@@ -469,6 +427,7 @@ class Server_ () extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverlookupid)
     */
   def lookup(id: String): RequestRoute | Null = js.native
+  
   /**
     * Looks up a route configuration where:
     * @param method - the HTTP method (e.g. 'GET', 'POST').
@@ -479,6 +438,7 @@ class Server_ () extends js.Object {
     */
   def `match`(method: HTTP_METHODS, path: String): RequestRoute | Null = js.native
   def `match`(method: HTTP_METHODS, path: String, host: String): RequestRoute | Null = js.native
+  
   def method(methods: js.Array[ServerMethodConfigurationObject]): Unit = js.native
   /**
     * Registers a server method function as described in server.method() using a configuration object where:
@@ -512,6 +472,24 @@ class Server_ () extends js.Object {
     */
   def method(name: String, method: ServerMethod): Unit = js.native
   def method(name: String, method: ServerMethod, options: ServerMethodOptions): Unit = js.native
+  
+  /**
+    * Server methods are functions registered with the server and used throughout the application as a common utility.
+    * Their advantage is in the ability to configure them to use the built-in cache and share across multiple request
+    * handlers without having to create a common module.
+    * sever.methods is an object which provides access to the methods registered via server.method() where each
+    * server method name is an object property.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servermethods
+    */
+  val methods: ServerMethods = js.native
+  
+  /**
+    * Provides access to the server MIME database used for setting content-type information. The object must not be
+    * modified directly but only through the [mime](https://github.com/hapijs/hapi/blob/master/API.md#server.options.mime) server setting.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servermime)
+    */
+  var mime: js.Any = js.native
+  
   /**
     * Sets the path prefix used to locate static resources (files and view templates) when relative paths are used where:
     * @param relativeTo - the path prefix added to any relative file path starting with '.'.
@@ -521,6 +499,27 @@ class Server_ () extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverpathrelativeto)
     */
   def path(relativeTo: String): Unit = js.native
+  
+  /**
+    * An object containing the values exposed by each registered plugin where each key is a plugin name and the values
+    * are the exposed properties by each plugin using server.expose(). Plugins may set the value of
+    * the server.plugins[name] object directly or via the server.expose() method.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverplugins)
+    */
+  var plugins: PluginProperties = js.native
+  
+  /**
+    * The realm object contains sandboxed server settings specific to each plugin or authentication strategy. When
+    * registering a plugin or an authentication scheme, a server object reference is provided with a new server.realm
+    * container specific to that registration. It allows each plugin to maintain its own settings without leaking
+    * and affecting other plugins.
+    * For example, a plugin can set a default file path for local resources without breaking other plugins' configured
+    * paths. When calling server.bind(), the active realm's settings.bind property is set which is then used by
+    * routes and extensions added at the same level (server root or plugin).
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverrealm)
+    */
+  val realm: ServerRealm = js.native
+  
   def register(plugins: js.Array[Plugin[_] | ServerRegisterPluginObject[_]]): js.Promise[Unit] = js.native
   def register(plugins: js.Array[Plugin[_] | ServerRegisterPluginObject[_]], options: ServerRegisterOptions): js.Promise[Unit] = js.native
   /* tslint:disable-next-line:unified-signatures */
@@ -550,6 +549,17 @@ class Server_ () extends js.Object {
   /* tslint:disable-next-line:no-unnecessary-generics */
   def register[T, U, V, W, X, Y, Z](plugins: ServerRegisterPluginObjectArray[T, U, V, W, X, Y, Z]): js.Promise[Unit] = js.native
   def register[T, U, V, W, X, Y, Z](plugins: ServerRegisterPluginObjectArray[T, U, V, W, X, Y, Z], options: ServerRegisterOptions): js.Promise[Unit] = js.native
+  
+  /**
+    * An object of the currently registered plugins where each key is a registered plugin name and the value is
+    * an object containing:
+    * * version - the plugin version.
+    * * name - the plugin name.
+    * * options - (optional) options passed to the plugin during registration.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverregistrations)
+    */
+  val registrations: PluginsListRegistered = js.native
+  
   def route(route: js.Array[ServerRoute]): Unit = js.native
   /**
     * Adds a route where:
@@ -570,6 +580,7 @@ class Server_ () extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverrouteroute)
     */
   def route(route: ServerRoute): Unit = js.native
+  
   /**
     * Defines a route rules processor for converting route rules object into route configuration where:
     * @param processor - a function using the signature function(rules, info) where:
@@ -594,6 +605,13 @@ class Server_ () extends js.Object {
     processor: js.Function2[/* rules */ js.Object, /* info */ typings.hapiHapi.anon.Method, js.Object],
     options: Validate
   ): Unit = js.native
+  
+  /**
+    * The server configuration object after defaults applied.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serversettings)
+    */
+  val settings: ServerOptions = js.native
+  
    // TODO needs implementation
   /**
     * Starts the server by listening for incoming requests on the configured port (unless the connection was configured with autoListen set to false).
@@ -605,6 +623,7 @@ class Server_ () extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverstart)
     */
   def start(): js.Promise[Unit] = js.native
+  
   /**
     * HTTP state management uses client cookies to persist a state across multiple requests.
     * @param name - the cookie name string.
@@ -615,6 +634,14 @@ class Server_ () extends js.Object {
     */
   def state(name: String): Unit = js.native
   def state(name: String, options: ServerStateCookieOptions): Unit = js.native
+  
+  /**
+    * The server cookies manager.
+    * Access: read only and statehood public interface.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverstates)
+    */
+  val states: ServerState = js.native
+  
   /**
     * Stops the server's listener by refusing to accept any new connections or requests (existing connections will continue until closed or timeout), where:
     * @param options - (optional) object with:
@@ -624,6 +651,7 @@ class Server_ () extends js.Object {
     */
   def stop(): js.Promise[Unit] = js.native
   def stop(options: Timeout): js.Promise[Unit] = js.native
+  
   /**
     * Returns a copy of the routing table where:
     * @param host - (optional) host to filter routes matching a specific virtual host. Defaults to all virtual hosts.
@@ -635,10 +663,22 @@ class Server_ () extends js.Object {
     */
   def table(): js.Array[RequestRoute] = js.native
   def table(host: String): js.Array[RequestRoute] = js.native
+  
+  /**
+    * A string indicating the listener type where:
+    * * 'socket' - UNIX domain socket or Windows named pipe.
+    * * 'tcp' - an HTTP listener.
+    */
+  val `type`: socket | tcp = js.native
+  
   /**
     * Registers a server validation module used to compile raw validation rules into validation schemas for all routes.
     * The validator is only used when validation rules are not pre-compiled schemas. When a validation rules is a function or schema object, the rule is used as-is and the validator is not used.
     */
   def validator(joi: Root): Unit = js.native
+  
+  /**
+    * The hapi module version number.
+    */
+  val version: String = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.aureliaTemplating.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ViewStrategy_ extends js.Object {
+  
   /**
     * Loads a view factory.
     * @param viewEngine The view engine to use during the load process.
@@ -33,4 +34,3 @@ trait ViewStrategy_ extends js.Object {
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
 }
-

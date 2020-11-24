@@ -2,16 +2,14 @@ package typings.activexExcel.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Hyperlinks extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val Count: Double = js.native
-  val Creator: XlCreator = js.native
-  val Parent: js.Any = js.native
+  
   def apply(Index: String): Hyperlink = js.native
   def apply(Index: Double): Hyperlink = js.native
+  
   def Add(Anchor: Range, Address: String): Hyperlink = js.native
   def Add(
     Anchor: Range,
@@ -64,9 +62,19 @@ trait Hyperlinks extends js.Object {
   ): Hyperlink = js.native
   def Add(Anchor: Shape, Address: String, SubAddress: String, ScreenTip: String): Hyperlink = js.native
   def Add(Anchor: Shape, Address: String, SubAddress: String, ScreenTip: String, TextToDisplay: String): Hyperlink = js.native
+  
+  val Application: typings.activexExcel.Excel.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: XlCreator = js.native
+  
   def Delete(): Unit = js.native
+  
   def Item(Index: String): Hyperlink = js.native
   def Item(Index: Double): Hyperlink = js.native
+  
+  val Parent: js.Any = js.native
+  
   def _Default(Index: js.Any): Hyperlink = js.native
 }
-

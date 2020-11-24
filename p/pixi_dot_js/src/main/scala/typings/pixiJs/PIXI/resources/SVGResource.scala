@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI.resources
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource type for SVG elements and graphics.
@@ -18,24 +18,28 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SVGResource extends BaseImageResource {
+  
   /**
     * A height override for rasterization on load
     * @readonly
     * @member {number} PIXI.resources.SVGResource#_overrideHeight
     */
   val _overrideHeight: Double = js.native
+  
   /**
     * A width override for rasterization on load
     * @readonly
     * @member {number} PIXI.resources.SVGResource#_overrideWidth
     */
   val _overrideWidth: Double = js.native
+  
   /**
     * The source scale to apply when rasterizing on load
     * @readonly
     * @member {number} PIXI.resources.SVGResource#scale
     */
   val scale: Double = js.native
+  
   /**
     * Base64 encoded SVG element or URL for SVG file
     * @readonly
@@ -43,4 +47,3 @@ trait SVGResource extends BaseImageResource {
     */
   val svg: String = js.native
 }
-

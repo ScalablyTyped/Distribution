@@ -14,7 +14,7 @@ import typings.ionic.definitionsMod.SSHKey
 import typings.ionic.httpMod.ResourceClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ionic/lib/ssh", "SSHKeyClient")
 @js.native
@@ -25,10 +25,14 @@ class SSHKeyClient protected ()
      with ResourceClientCreate[SSHKey, SSHKeyCreateDetails]
      with ResourceClientPaginate[SSHKey] {
   def this(hasClientTokenUser: SSHKeyClientDeps) = this()
+  
   var client: IClient = js.native
-  var token: String = js.native
-  var user: IdNumber = js.native
+  
   def load(id: String): js.Promise[SSHKey] = js.native
+  
   def paginate(args: PartialPaginateArgsResponMax): IPaginator[Response[js.Array[SSHKey]], PaginatorState] = js.native
+  
+  var token: String = js.native
+  
+  var user: IdNumber = js.native
 }
-

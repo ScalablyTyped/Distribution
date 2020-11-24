@@ -13,11 +13,12 @@ import typings.tstl.multiMapMod.MultiMap
 import typings.tstl.tstlBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/container/HashMultiMap", JSImport.Namespace)
 @js.native
 object hashMultiMapMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
@@ -65,6 +66,7 @@ object hashMultiMapMod extends js.Object {
       first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
       last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]]
     ) = this()
+    def this(hash: js.UndefOr[scala.Nothing], equal: BinaryPredicator[Key, Key]) = this()
     def this(hash: Hasher[Key], equal: BinaryPredicator[Key, Key]) = this()
     def this(items: js.Array[IPair[Key, T]], hash: Hasher[Key]) = this()
     def this(
@@ -72,22 +74,31 @@ object hashMultiMapMod extends js.Object {
       last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
       hash: Hasher[Key]
     ) = this()
+    def this(items: js.Array[IPair[Key, T]], hash: js.UndefOr[scala.Nothing], equal: BinaryPredicator[Key, Key]) = this()
     def this(items: js.Array[IPair[Key, T]], hash: Hasher[Key], equal: BinaryPredicator[Key, Key]) = this()
+    def this(
+      first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
+      last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
+      hash: js.UndefOr[scala.Nothing],
+      equal: BinaryPredicator[Key, Key]
+    ) = this()
     def this(
       first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
       last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
       hash: Hasher[Key],
       equal: BinaryPredicator[Key, Key]
     ) = this()
-    var buckets_ : js.Any = js.native
+    
     /* protected */ def _Handle_erase(
       first: (Iterator[Key, T]) | (typings.tstl.ihashmapMod.IHashMap.Iterator[Key, T, `false`, HashMultiMap[Key, T]]),
       last: (Iterator[Key, T]) | (typings.tstl.ihashmapMod.IHashMap.Iterator[Key, T, `false`, HashMultiMap[Key, T]])
     ): Unit = js.native
+    
     /* protected */ def _Handle_insert(
       first: (Iterator[Key, T]) | (typings.tstl.ihashmapMod.IHashMap.Iterator[Key, T, `false`, HashMultiMap[Key, T]]),
       last: (Iterator[Key, T]) | (typings.tstl.ihashmapMod.IHashMap.Iterator[Key, T, `false`, HashMultiMap[Key, T]])
     ): Unit = js.native
+    
     /**
       * Iterator to the first element in a specific bucket.
       *
@@ -105,6 +116,7 @@ object hashMultiMapMod extends js.Object {
       */
     @JSName("begin")
     def begin_Iterator(index: Double): Iterator[Key, T] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -115,6 +127,7 @@ object hashMultiMapMod extends js.Object {
       * @return Index number.
       */
     def bucket(key: Key): Double = js.native
+    
     /**
       * @inheritDoc
       */
@@ -122,6 +135,7 @@ object hashMultiMapMod extends js.Object {
       * Get number of buckets.
       */
     def bucket_count(): Double = js.native
+    
     /**
       * @inheritDoc
       */
@@ -132,16 +146,21 @@ object hashMultiMapMod extends js.Object {
       * @return Size of the specific bucket.
       */
     def bucket_size(index: Double): Double = js.native
+    
+    var buckets_ : js.Any = js.native
+    
     /**
       * @inheritDoc
       */
     @JSName("emplace")
     def emplace_Iterator(key: Key, `val`: T): Iterator[Key, T] = js.native
+    
     /**
       * @inheritDoc
       */
     @JSName("emplace_hint")
     def emplace_hint_Iterator(hint: Iterator[Key, T], key: Key, `val`: T): Iterator[Key, T] = js.native
+    
     /**
       * Iterator to the end in a specific bucket.
       *
@@ -159,11 +178,13 @@ object hashMultiMapMod extends js.Object {
       */
     @JSName("end")
     def end_Iterator(index: Double): Iterator[Key, T] = js.native
+    
     /**
       * @inheritDoc
       */
     @JSName("find")
     def find_Iterator(key: Key): Iterator[Key, T] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -173,6 +194,7 @@ object hashMultiMapMod extends js.Object {
       * @return The hash function.
       */
     def hash_function(): Hasher[Key] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -182,6 +204,7 @@ object hashMultiMapMod extends js.Object {
       * @return The key equality predicator.
       */
     def key_eq(): BinaryPredicator[Key, Key] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -191,6 +214,7 @@ object hashMultiMapMod extends js.Object {
       * @return `this.size() / this.bucket_count()`
       */
     def load_factor(): Double = js.native
+    
     /**
       * @inheritDoc
       */
@@ -209,6 +233,7 @@ object hashMultiMapMod extends js.Object {
       * @param z The new value to change.
       */
     def max_load_factor(z: Double): Unit = js.native
+    
     /**
       * @inheritDoc
       */
@@ -218,6 +243,7 @@ object hashMultiMapMod extends js.Object {
       */
     @JSName("rbegin")
     def rbegin_ReverseIterator(): ReverseIterator[Key, T] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -227,6 +253,7 @@ object hashMultiMapMod extends js.Object {
       * @param n The number to change.
       */
     def rehash(n: Double): Unit = js.native
+    
     /**
       * @inheritDoc
       */
@@ -236,6 +263,7 @@ object hashMultiMapMod extends js.Object {
       */
     @JSName("rend")
     def rend_ReverseIterator(): ReverseIterator[Key, T] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -246,9 +274,9 @@ object hashMultiMapMod extends js.Object {
       */
     def reserve(n: Double): Unit = js.native
   }
-  
   @js.native
   object HashMultiMap extends js.Object {
+    
     val Iterator: Instantiable0[
         typings.tstl.mapElementListMod.MapElementList.Iterator[
           js.Object, 
@@ -269,6 +297,7 @@ object hashMultiMapMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     val ReverseIterator: Instantiable0[
         typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
           js.Object, 
@@ -289,15 +318,15 @@ object hashMultiMapMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     /**
       * Iterator of {@link HashMultiMap}
       */
     type Iterator[Key, T] = typings.tstl.mapElementListMod.MapElementList.Iterator[Key, T, `false`, HashMultiMap[Key, T]]
+    
     /**
       * Reverse iterator of {@link HashMultiMap}
       */
     type ReverseIterator[Key, T] = typings.tstl.mapElementListMod.MapElementList.ReverseIterator[Key, T, `false`, HashMultiMap[Key, T]]
   }
-  
 }
-

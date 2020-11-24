@@ -11,8 +11,8 @@ Finds project root
 | Full name          | find-project-root |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 363073 |
+| # dependents       | 16 |
+| # downloads        | 1228882 |
 | # stars            | 0 |
 
 ## Links

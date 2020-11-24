@@ -2,7 +2,7 @@ package typings.asynciterator.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asynciterator", "SimpleTransformIterator")
 @js.native
@@ -28,14 +28,21 @@ class SimpleTransformIterator[S, D] () extends TransformIterator[S, D] {
     source: js.UndefOr[SourceExpression[S]],
     options: ((TransformOptions[S, D]) with (js.Function2[/* item */ S, /* done */ js.Function0[Unit], Unit])) | (TransformOptions[S, D])
   ) = this()
+  
   var _appender: js.Any = js.native
+  
   var _filter: js.Any = js.native
-  var _limit: js.Any = js.native
-  var _map: js.Any = js.native
-  var _offset: js.Any = js.native
-  var _prepender: js.Any = js.native
+  
   /* protected */ def _insert(inserter: js.UndefOr[scala.Nothing], done: js.Function0[Unit]): Unit = js.native
   /* protected */ def _insert(inserter: AsyncIterator[D], done: js.Function0[Unit]): Unit = js.native
+  
+  var _limit: js.Any = js.native
+  
+  var _map: js.Any = js.native
+  
+  var _offset: js.Any = js.native
+  
+  var _prepender: js.Any = js.native
+  
   /* protected */ def _readAndTransformSimple(count: Double, next: js.Function0[Unit], done: js.Function0[Unit]): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ Utility library to determine and normalize Element.scrollLeft behavior
 | ------------------ | :-------------: |
 | Full name          | normalize-scroll-left |
 | Keywords           | rtl, dom, scroll-left, scrollLeft, normalize, browser, element |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 42 |
-| # downloads        | 26025064 |
+| # downloads        | 29579298 |
 | # stars            | 0 |
 
 ## Links

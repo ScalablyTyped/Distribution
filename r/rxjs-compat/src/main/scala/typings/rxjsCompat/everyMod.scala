@@ -2,11 +2,12 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/operators/every", JSImport.Namespace)
 @js.native
 object everyMod extends js.Object {
+  
   def every[T](
     predicate: js.Function3[
       /* value */ T, 
@@ -25,4 +26,3 @@ object everyMod extends js.Object {
     thisArg: js.Any
   ): js.Any = js.native
 }
-

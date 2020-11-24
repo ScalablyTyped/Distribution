@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.XMLService
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ContentType extends js.Object
-
 /**
   * An enumeration representing the types of XML content nodes.
   */
 @JSGlobal("GoogleAppsScript.XML_Service.ContentType")
 @js.native
 object ContentType extends js.Object {
+  
   @js.native
   sealed trait CDATA extends ContentType
   
@@ -33,6 +33,4 @@ object ContentType extends js.Object {
   
   @js.native
   sealed trait TEXT extends ContentType
-  
 }
-

@@ -7,10 +7,11 @@ import typings.openui5.sap.ui.core.TextDirection
 import typings.openui5.sap.ui.core.ValueState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Select extends Control {
+  
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @since 1.27.0
@@ -19,12 +20,14 @@ trait Select extends Control {
     */
   def addAriaLabelledBy(vAriaLabelledBy: js.Any): Select = js.native
   def addAriaLabelledBy(vAriaLabelledBy: Control): Select = js.native
+  
   /**
     * Adds an item to the aggregation named <code>items</code>.
     * @param oItem The item to be added; if empty, nothing is added.
     * @returns <code>this</code> to allow method chaining.
     */
   def addItem(oItem: Item): Select = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>change</code> event of this
     * <code>sap.m.Select</code>.When called, the context of the event handler (its <code>this</code>) will
@@ -41,6 +44,7 @@ trait Select extends Control {
     */
   def attachChange(oData: js.Any, fnFunction: js.Any): Select = js.native
   def attachChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Select = js.native
+  
   /**
     * Binds aggregation <code>items</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -49,22 +53,26 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindItems(oBindingInfo: js.Any): Select = js.native
+  
   /**
     * Closes the control's picker popup.
     * @since 1.16
     * @returns <code>this</code> to allow method chaining.
     */
   def close(): Select = js.native
+  
   /**
     * Creates a picker popup container where the selection should take place.
     * @param sPickerType undefined
     */
   def createPicker(sPickerType: String): Popover | Dialog = js.native
+  
   /**
     * Destroys all the items in the aggregation named <code>items</code>.
     * @returns <code>this</code> to allow method chaining.
     */
   def destroyItems(): Select = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>change</code> event of this
     * <code>sap.m.Select</code>.The passed function and listener object must match the ones used for event
@@ -74,6 +82,7 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachChange(fnFunction: js.Any, oListener: js.Any): Select = js.native
+  
   /**
     * Fires event <code>change</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>selectedItem</code> of type <code>sap.ui.core.Item</code>The selected
@@ -82,12 +91,14 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireChange(mArguments: js.Any): Select = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     * @since 1.27.0
     */
   def getAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Gets current value of property <code>autoAdjustWidth</code>.Indicates whether the width of the input
     * field is determined by the selected item's content.Default value is <code>false</code>.
@@ -95,12 +106,14 @@ trait Select extends Control {
     * @returns Value of property <code>autoAdjustWidth</code>
     */
   def getAutoAdjustWidth(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>enabled</code>.Indicates whether the user can change the
     * selection.Default value is <code>true</code>.
     * @returns Value of property <code>enabled</code>
     */
   def getEnabled(): Boolean = js.native
+  
   /**
     * Gets the enabled items from the aggregation named <code>items</code>.
     * @since 1.22.0
@@ -108,12 +121,14 @@ trait Select extends Control {
     * @returns An array containing the enabled items.
     */
   def getEnabledItems(aItems: js.Array[Item]): js.Array[Item] = js.native
+  
   /**
     * Gets the first item from the aggregation named <code>items</code>.
     * @since 1.16
     * @returns The first item, or null if there are no items.
     */
   def getFirstItem(): Item | js.Any = js.native
+  
   /**
     * Gets current value of property <code>forceSelection</code>.Indicates whether the selection is
     * restricted to one of the items in the list.<b>Note:</b> We strongly recommend that you always set
@@ -123,6 +138,7 @@ trait Select extends Control {
     * @returns Value of property <code>forceSelection</code>
     */
   def getForceSelection(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>icon</code>.The URI to the icon that will be displayed only
     * when using the <code>IconOnly</code> type.Default value is <code></code>.
@@ -130,6 +146,7 @@ trait Select extends Control {
     * @returns Value of property <code>icon</code>
     */
   def getIcon(): js.Any = js.native
+  
   /**
     * Gets the item from the aggregation named <code>items</code> at the given 0-based index.
     * @since 1.16
@@ -137,6 +154,7 @@ trait Select extends Control {
     * @returns Item at the given index, or null if none.
     */
   def getItemAt(iIndex: Double): Item | js.Any = js.native
+  
   /**
     * Gets the item with the given key from the aggregation named <code>items</code>.<b>Note: </b> If
     * duplicate keys exist, the first item matching the key is returned.
@@ -144,16 +162,19 @@ trait Select extends Control {
     * @param sKey An item key that specifies the item to be retrieved.
     */
   def getItemByKey(sKey: String): Item | js.Any = js.native
+  
   /**
     * Gets aggregation <code>items</code>.<b>Note</b>: This is the default aggregation.
     */
   def getItems(): js.Array[Item] = js.native
+  
   /**
     * Gets the last item from the aggregation named <code>items</code>.
     * @since 1.16
     * @returns The last item, or null if there are no items.
     */
   def getLastItem(): Item | js.Any = js.native
+  
   /**
     * Gets current value of property <code>maxWidth</code>.Sets the maximum width of the
     * control.<b>Note:</b> This property is ignored if the <code>autoAdjustWidth</code> property is set to
@@ -161,17 +182,20 @@ trait Select extends Control {
     * @returns Value of property <code>maxWidth</code>
     */
   def getMaxWidth(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>name</code>.The name to be used in the HTML code (for example,
     * for HTML forms that send data to the server via submit).Default value is <code></code>.
     * @returns Value of property <code>name</code>
     */
   def getName(): String = js.native
+  
   /**
     * Gets the selected item object from the aggregation named <code>items</code>.
     * @returns The current target of the <code>selectedItem</code> association, or null.
     */
   def getSelectedItem(): Item | js.Any = js.native
+  
   /**
     * Gets current value of property <code>selectedItemId</code>.ID of the selected item.Default value is
     * <code></code>.
@@ -179,6 +203,7 @@ trait Select extends Control {
     * @returns Value of property <code>selectedItemId</code>
     */
   def getSelectedItemId(): String = js.native
+  
   /**
     * Gets current value of property <code>selectedKey</code>.Key of the selected item.<b>Note:</b> If
     * duplicate keys exist, the first item matching the key is used.Default value is <code></code>.
@@ -186,6 +211,7 @@ trait Select extends Control {
     * @returns Value of property <code>selectedKey</code>
     */
   def getSelectedKey(): String = js.native
+  
   /**
     * Gets current value of property <code>showSecondaryValues</code>.Indicates whether the text values of
     * the <code>additionalText</code> property of a{@link sap.ui.core.ListItem} are shown.Default value is
@@ -194,6 +220,7 @@ trait Select extends Control {
     * @returns Value of property <code>showSecondaryValues</code>
     */
   def getShowSecondaryValues(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>textAlign</code>.Sets the horizontal alignment of the text
     * within the input field.Default value is <code>Initial</code>.
@@ -201,6 +228,7 @@ trait Select extends Control {
     * @returns Value of property <code>textAlign</code>
     */
   def getTextAlign(): TextAlign = js.native
+  
   /**
     * Gets current value of property <code>textDirection</code>.Specifies the direction of the text within
     * the input field with enumerated options.By default, the control inherits text direction from the
@@ -209,6 +237,7 @@ trait Select extends Control {
     * @returns Value of property <code>textDirection</code>
     */
   def getTextDirection(): TextDirection = js.native
+  
   /**
     * Gets current value of property <code>type</code>.Type of a select. Possible values
     * <code>Default</code>, <code>IconOnly</code>.Default value is <code>Default</code>.
@@ -216,6 +245,7 @@ trait Select extends Control {
     * @returns Value of property <code>type</code>
     */
   def getType(): SelectType = js.native
+  
   /**
     * Gets current value of property <code>valueState</code>.Visualizes the validation state of the
     * control, e.g. <code>Error</code>, <code>Warning</code>,<code>Success</code>.Default value is
@@ -224,6 +254,7 @@ trait Select extends Control {
     * @returns Value of property <code>valueState</code>
     */
   def getValueState(): ValueState = js.native
+  
   /**
     * Gets current value of property <code>valueStateText</code>.Defines the text of the value state
     * message popup.If this is not specified, a default text is shown from the resource bundle.Default
@@ -232,6 +263,7 @@ trait Select extends Control {
     * @returns Value of property <code>valueStateText</code>
     */
   def getValueStateText(): String = js.native
+  
   /**
     * Gets current value of property <code>width</code>.Sets the width of the control. The default width
     * is derived from the widest item.If the width defined is smaller than the widest item in the
@@ -243,6 +275,7 @@ trait Select extends Control {
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Item</code> in the aggregation <code>items</code>.and
     * returns its index if found or -1 otherwise.
@@ -250,6 +283,7 @@ trait Select extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfItem(oItem: Item): Double = js.native
+  
   /**
     * Inserts an item into the aggregation named <code>items</code>.
     * @param oItem The item to be inserted; if empty, nothing is inserted.
@@ -259,6 +293,7 @@ trait Select extends Control {
     * @returns <code>this</code> to allow method chaining.
     */
   def insertItem(oItem: Item, iIndex: Double): Select = js.native
+  
   /**
     * Indicates whether the control's picker popup is opened.
     * @since 1.16
@@ -266,24 +301,28 @@ trait Select extends Control {
     * animations).
     */
   def isOpen(): Boolean = js.native
+  
   /**
     * Open the control's picker popup.
     * @since 1.16
     * @returns <code>this</code> to allow method chaining.
     */
   def open(): Select = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @since 1.27.0
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Removes all the items in the aggregation named <code>items</code>.Additionally unregisters them from
     * the hosting UIArea.
     * @returns An array of the removed items (might be empty).
     */
   def removeAllItems(): js.Array[Item] = js.native
+  
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaLabelledBy from the association named <code>ariaLabelledBy</code>.
@@ -293,6 +332,7 @@ trait Select extends Control {
     */
   def removeAriaLabelledBy(vAriaLabelledBy: Double): js.Any = js.native
   def removeAriaLabelledBy(vAriaLabelledBy: Control): js.Any = js.native
+  
   def removeItem(vItem: String): Item = js.native
   /**
     * Removes an item from the aggregation named <code>items</code>.
@@ -301,6 +341,7 @@ trait Select extends Control {
     */
   def removeItem(vItem: Double): Item = js.native
   def removeItem(vItem: Item): Item = js.native
+  
   /**
     * Sets a new value for property <code>autoAdjustWidth</code>.Indicates whether the width of the input
     * field is determined by the selected item's content.When called with a value of <code>null</code> or
@@ -311,6 +352,7 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAutoAdjustWidth(bAutoAdjustWidth: Boolean): Select = js.native
+  
   /**
     * Sets a new value for property <code>enabled</code>.Indicates whether the user can change the
     * selection.When called with a value of <code>null</code> or <code>undefined</code>, the default value
@@ -319,6 +361,7 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnabled(bEnabled: Boolean): Select = js.native
+  
   /**
     * Sets a new value for property <code>forceSelection</code>.Indicates whether the selection is
     * restricted to one of the items in the list.<b>Note:</b> We strongly recommend that you always set
@@ -331,6 +374,7 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setForceSelection(bForceSelection: Boolean): Select = js.native
+  
   /**
     * Sets a new value for property <code>icon</code>.The URI to the icon that will be displayed only when
     * using the <code>IconOnly</code> type.When called with a value of <code>null</code> or
@@ -341,6 +385,7 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIcon(sIcon: js.Any): Select = js.native
+  
   /**
     * Sets a new value for property <code>maxWidth</code>.Sets the maximum width of the
     * control.<b>Note:</b> This property is ignored if the <code>autoAdjustWidth</code> property is set to
@@ -350,6 +395,7 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaxWidth(sMaxWidth: js.Any): Select = js.native
+  
   /**
     * Sets a new value for property <code>name</code>.The name to be used in the HTML code (for example,
     * for HTML forms that send data to the server via submit).When called with a value of
@@ -359,6 +405,7 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setName(sName: String): Select = js.native
+  
   /**
     * Sets the <code>selectedItem</code> association.Default value is <code>null</code>.
     * @param vItem New value for the <code>selectedItem</code> association.If an ID of a
@@ -371,6 +418,7 @@ trait Select extends Control {
   def setSelectedItem(vItem: String): Select = js.native
   def setSelectedItem(vItem: js.Any): Select = js.native
   def setSelectedItem(vItem: Item): Select = js.native
+  
   /**
     * Sets the <code>selectedItemId</code> property.Default value is an empty string <code>""</code> or
     * <code>undefined</code>.
@@ -381,6 +429,7 @@ trait Select extends Control {
     */
   def setSelectedItemId(vItem: String): Select = js.native
   def setSelectedItemId(vItem: js.Any): Select = js.native
+  
   /**
     * Sets property <code>selectedKey</code>.Default value is an empty string <code>""</code> or
     * <code>undefined</code>.
@@ -394,6 +443,7 @@ trait Select extends Control {
     * @returns <code>this</code> to allow method chaining.
     */
   def setSelectedKey(sKey: String): Select = js.native
+  
   /**
     * Sets a new value for property <code>showSecondaryValues</code>.Indicates whether the text values of
     * the <code>additionalText</code> property of a{@link sap.ui.core.ListItem} are shown.When called with
@@ -404,6 +454,7 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowSecondaryValues(bShowSecondaryValues: Boolean): Select = js.native
+  
   /**
     * Sets a new value for property <code>textAlign</code>.Sets the horizontal alignment of the text
     * within the input field.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -413,6 +464,7 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTextAlign(sTextAlign: TextAlign): Select = js.native
+  
   /**
     * Sets a new value for property <code>textDirection</code>.Specifies the direction of the text within
     * the input field with enumerated options.By default, the control inherits text direction from the
@@ -423,6 +475,7 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTextDirection(sTextDirection: TextDirection): Select = js.native
+  
   /**
     * Sets a new value for property <code>type</code>.Type of a select. Possible values
     * <code>Default</code>, <code>IconOnly</code>.When called with a value of <code>null</code> or
@@ -433,6 +486,7 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setType(sType: SelectType): Select = js.native
+  
   /**
     * Sets a new value for property <code>valueState</code>.Visualizes the validation state of the
     * control, e.g. <code>Error</code>, <code>Warning</code>,<code>Success</code>.When called with a value
@@ -443,6 +497,7 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValueState(sValueState: ValueState): Select = js.native
+  
   /**
     * Sets a new value for property <code>valueStateText</code>.Defines the text of the value state
     * message popup.If this is not specified, a default text is shown from the resource bundle.When called
@@ -453,6 +508,7 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValueStateText(sValueStateText: String): Select = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.Sets the width of the control. The default width is
     * derived from the widest item.If the width defined is smaller than the widest item in the selection
@@ -466,10 +522,10 @@ trait Select extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setWidth(sWidth: js.Any): Select = js.native
+  
   /**
     * Unbinds aggregation <code>items</code> from model data.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindItems(): Select = js.native
 }
-

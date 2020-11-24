@@ -5,10 +5,11 @@ import typings.mongoose.mod.FilterQuery
 import typings.mongoose.mod.QueryFindBaseOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Fn0 extends js.Object {
+  
   def apply(): DocumentQueryanynullanyAll = js.native
   def apply(
     conditions: js.UndefOr[scala.Nothing],
@@ -40,4 +41,3 @@ trait Fn0 extends js.Object {
     callback: js.Function2[/* err */ js.Any, /* res */ js.Any | Null, Unit]
   ): DocumentQueryanynullanyAll = js.native
 }
-

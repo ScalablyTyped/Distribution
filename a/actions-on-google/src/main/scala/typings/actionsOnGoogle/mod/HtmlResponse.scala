@@ -5,7 +5,7 @@ import typings.actionsOnGoogle.htmlMod.HtmlResponseOptions
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsHtmlResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google", "HtmlResponse")
 @js.native
@@ -18,4 +18,3 @@ class HtmlResponse[TData /* <: JsonObject */] ()
   def this(options: HtmlResponseOptions[TData]) = this()
   def this(options: GoogleActionsV2UiElementsHtmlResponse) = this()
 }
-

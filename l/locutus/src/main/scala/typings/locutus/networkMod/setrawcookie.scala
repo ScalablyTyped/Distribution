@@ -2,11 +2,12 @@ package typings.locutus.networkMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("locutus/php/network", "setrawcookie")
 @js.native
 object setrawcookie extends js.Object {
+  
   def apply(
     name: js.UndefOr[js.Any],
     value: js.UndefOr[js.Any],
@@ -16,4 +17,3 @@ object setrawcookie extends js.Object {
     secure: js.UndefOr[js.Any]
   ): js.Any = js.native
 }
-

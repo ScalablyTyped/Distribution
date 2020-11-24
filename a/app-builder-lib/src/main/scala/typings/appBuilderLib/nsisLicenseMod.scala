@@ -5,11 +5,12 @@ import typings.appBuilderLib.nsisScriptGeneratorMod.NsisScriptGenerator
 import typings.appBuilderLib.winPackagerMod.WinPackager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("app-builder-lib/out/targets/nsis/nsisLicense", JSImport.Namespace)
 @js.native
 object nsisLicenseMod extends js.Object {
+  
   def computeLicensePage(
     packager: WinPackager,
     options: NsisOptions,
@@ -17,4 +18,3 @@ object nsisLicenseMod extends js.Object {
     languages: js.Array[String]
   ): js.Promise[Unit] = js.native
 }
-

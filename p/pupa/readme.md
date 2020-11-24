@@ -1,7 +1,7 @@
 
 # Scala.js typings for pupa
 
-Typings are for version 2.0.1
+Typings are for version 2.1.1
 
 ## Library description:
 Simple micro templating
@@ -11,8 +11,8 @@ Simple micro templating
 | Full name          | pupa |
 | Keywords           | string, formatting, template, object, format, interpolate, interpolation, templating, expand, simple, replace, placeholders, values, transform, micro |
 | # releases         | 3 |
-| # dependents       | 39 |
-| # downloads        | 1560633 |
+| # dependents       | 47 |
+| # downloads        | 36176561 |
 | # stars            | 2 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.makerJs.global.MakerJs.models
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.models.BoltCircle")
 @js.native
@@ -11,4 +11,3 @@ class BoltCircle protected ()
   def this(boltRadius: Double, holeRadius: Double, boltCount: Double) = this()
   def this(boltRadius: Double, holeRadius: Double, boltCount: Double, firstBoltAngleInDegrees: Double) = this()
 }
-

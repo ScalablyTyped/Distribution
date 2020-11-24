@@ -2,21 +2,24 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Table extends ListBase {
+  
   /**
     * Adds some column to the aggregation <code>columns</code>.
     * @param oColumn the column to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addColumn(oColumn: Column): Table = js.native
+  
   /**
     * Destroys all the columns in the aggregation <code>columns</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyColumns(): Table = js.native
+  
   /**
     * Gets current value of property <code>backgroundDesign</code>.Sets the background style of the table.
     * Depending on the theme, you can change the state of the background from <code>Solid</code> to
@@ -24,12 +27,14 @@ trait Table extends ListBase {
     * @returns Value of property <code>backgroundDesign</code>
     */
   def getBackgroundDesign(): BackgroundDesign = js.native
+  
   /**
     * Getter for aggregation columns.
     * @param bSort set true to get the columns in an order that respects personalization settings
     * @returns columns of the Table
     */
   def getColumns(bSort: Boolean): js.Array[Column] = js.native
+  
   /**
     * Gets current value of property <code>fixedLayout</code>.Defines the algorithm to be used to layout
     * the table cells, rows, and columns.By default, a table is rendered with fixed layout algorithm. This
@@ -51,6 +56,7 @@ trait Table extends ListBase {
     * @returns Value of property <code>fixedLayout</code>
     */
   def getFixedLayout(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showOverlay</code>.Setting this property to <code>true</code>
     * will show an overlay on top of the table content and prevents the user interaction with it.Default
@@ -59,6 +65,7 @@ trait Table extends ListBase {
     * @returns Value of property <code>showOverlay</code>
     */
   def getShowOverlay(): Boolean = js.native
+  
   /**
     * Checks for the provided <code>sap.m.Column</code> in the aggregation <code>columns</code>.and
     * returns its index if found or -1 otherwise.
@@ -66,6 +73,7 @@ trait Table extends ListBase {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfColumn(oColumn: Column): Double = js.native
+  
   /**
     * Inserts a column into the aggregation <code>columns</code>.
     * @param oColumn the column to insert; if empty, nothing is inserted
@@ -76,12 +84,14 @@ trait Table extends ListBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertColumn(oColumn: Column, iIndex: Double): Table = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>columns</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllColumns(): js.Array[Column] = js.native
+  
   def removeColumn(vColumn: String): Column = js.native
   /**
     * Removes a column from the aggregation <code>columns</code>.
@@ -90,6 +100,7 @@ trait Table extends ListBase {
     */
   def removeColumn(vColumn: Double): Column = js.native
   def removeColumn(vColumn: Column): Column = js.native
+  
   /**
     * Sets a new value for property <code>backgroundDesign</code>.Sets the background style of the table.
     * Depending on the theme, you can change the state of the background from <code>Solid</code> to
@@ -100,6 +111,7 @@ trait Table extends ListBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundDesign(sBackgroundDesign: BackgroundDesign): Table = js.native
+  
   /**
     * Sets a new value for property <code>fixedLayout</code>.Defines the algorithm to be used to layout
     * the table cells, rows, and columns.By default, a table is rendered with fixed layout algorithm. This
@@ -123,6 +135,7 @@ trait Table extends ListBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setFixedLayout(bFixedLayout: Boolean): Table = js.native
+  
   /**
     * Sets a new value for property <code>showOverlay</code>.Setting this property to <code>true</code>
     * will show an overlay on top of the table content and prevents the user interaction with it.When
@@ -134,4 +147,3 @@ trait Table extends ListBase {
     */
   def setShowOverlay(bShowOverlay: Boolean): Table = js.native
 }
-

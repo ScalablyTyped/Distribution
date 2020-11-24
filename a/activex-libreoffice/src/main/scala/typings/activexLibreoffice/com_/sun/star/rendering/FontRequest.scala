@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This structure contains all information necessary to describe a font to be queried from {@link XCanvas} .
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait FontRequest extends js.Object {
+  
   /**
     * The size of the font in **device** coordinate space.
     *
@@ -32,12 +33,14 @@ trait FontRequest extends js.Object {
     * XTextLayout} .
     */
   var CellSize: Double = js.native
+  
   /**
     * The description of the font.
     *
     * This member contains the description of the font as returned by the font listing methods.
     */
   var FontDescription: FontInfo = js.native
+  
   /**
     * The locale this font should be able to render.
     *
@@ -45,6 +48,7 @@ trait FontRequest extends js.Object {
     * simplified Chinese is necessary (since the letters have the same Unicode ranges and character values).
     */
   var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  
   /**
     * This value specifies the size of the font in the writing direction (i.e. width for horizontal writing, and height for vertical writing).
     *
@@ -55,33 +59,39 @@ trait FontRequest extends js.Object {
     */
   var ReferenceAdvancement: Double = js.native
 }
-
 object FontRequest {
+  
   @scala.inline
   def apply(CellSize: Double, FontDescription: FontInfo, Locale: Locale, ReferenceAdvancement: Double): FontRequest = {
     val __obj = js.Dynamic.literal(CellSize = CellSize.asInstanceOf[js.Any], FontDescription = FontDescription.asInstanceOf[js.Any], Locale = Locale.asInstanceOf[js.Any], ReferenceAdvancement = ReferenceAdvancement.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontRequest]
   }
+  
   @scala.inline
   implicit class FontRequestOps[Self <: FontRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCellSize(value: Double): Self = this.set("CellSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFontDescription(value: FontInfo): Self = this.set("FontDescription", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLocale(value: Locale): Self = this.set("Locale", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setReferenceAdvancement(value: Double): Self = this.set("ReferenceAdvancement", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -20,23 +20,25 @@ import typings.jpushReactNative.anon.codenumberSequence
 import typings.jpushReactNative.anon.mobileNumberstringSequenc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jpush-react-native", JSImport.Default)
 @js.native
 class default () extends JPush
-
 /* static members */
 @JSImport("jpush-react-native", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   //***************************************接口回调***************************************
   //连接状态
   def addConnectEventListener(callback: Callback[ConnectEnable]): Unit = js.native
+  
   /**
     * 自定义消息事件
     */
   def addCustomMessagegListener(callback: Callback[ContentExtras]): Unit = js.native
+  
   //***************************************本地通知***************************************
   /**
     * 添加一个本地通知
@@ -51,64 +53,77 @@ object default extends js.Object {
     *
     */
   def addLocalNotification(params: Content): Unit = js.native
+  
   /**
     * 本地通知事件
     *
     * 注意：应用在存活状态下点击通知不会有跳转行为,应用在被杀死状态下点击通知会启动应用
     */
   def addLocalNotificationListener(callback: Callback[Extras]): Unit = js.native
+  
   /**
     * 手机号码事件
     */
   def addMobileNumberListener(callback: Callback[codenumberSequence]): Unit = js.native
+  
   /**
     * 通知事件
     *
     * 注意：应用在存活状态下点击通知不会有跳转行为,应用在被杀死状态下点击通知会启动应用
     */
   def addNotificationListener(callback: Callback[Badge]): Unit = js.native
+  
   /**
     * tag alias事件
     */
   def addTagAliasListener(callback: Callback[Code with Sequence with (Tags | Alias | TagtagEnableboolean)]): Unit = js.native
+  
   /**
     * 新增标签
     *
     * 这个接口是增加逻辑,而不是覆盖逻辑
     */
   def addTags(params: Sequence with Tags): Unit = js.native
+  
   /**
     * 清除所有 JPush 展现的通知（不包括非 JPush SDK 展现的）
     *
     */
   def clearAllNotifications(): Unit = js.native
+  
   /**
     * 移除所有的本地通知
     *
     */
   def clearLocalNotifications(): Unit = js.native
+  
   /**
     * 删除指定的通知
     * */
   def clearNotificationById(params: NotificationId): Unit = js.native
+  
   /**
     * 删除别名
     */
   def deleteAlias(params: Sequence): Unit = js.native
+  
   /**
     * 删除指定id的地理围栏
     *
     */
   def deleteGeofence(params: GeoFenceID): Unit = js.native
+  
   /**
     * 删除指定标签
     *
     */
   def deleteTag(params: Sequence with Tags): Unit = js.native
+  
   /**
     * 清除所有标签
     */
   def deleteTags(params: Sequence): Unit = js.native
+  
   /**
     * 获取 RegistrationID
     *
@@ -117,6 +132,7 @@ object default extends js.Object {
     *
     */
   def getRegistrationID(callback: Callback[RegisterID]): Unit = js.native
+  
   /**
     * 初始化推送服务
     *
@@ -124,41 +140,50 @@ object default extends js.Object {
     *
     */
   def init(): Unit = js.native
+  
   /**
     * 开启 CrashLog 上报
     *
     */
   def initCrashHandler(): Unit = js.native
+  
   /**
     * 检查当前应用的通知开关是否开启
     * */
   def isNotificationEnabled(callback: Callback[Boolean]): Unit = js.native
+  
   /**
     * 用来检查 Push Service 是否已经被停止
     *
     * @platform Android
     */
   def isPushStopped(callback: Callback[Boolean]): Unit = js.native
+  
   /**
     * 查询别名
     */
   def queryAlias(params: Sequence): Unit = js.native
+  
   /**
     * 查询指定 tag 与当前用户绑定的状态
     */
   def queryTag(params: Sequence with Tag): Unit = js.native
+  
   /**
     * 查询所有标签
     */
   def queryTags(params: Sequence): Unit = js.native
+  
   //移除事件
   def removeListener(callback: js.Function): Unit = js.native
+  
   /**
     * 移除指定的本地通知
     *
     * messageID:唯一标识通知消息的ID,可用于移除消息
     */
   def removeLocalNotification(params: MessageID): Unit = js.native
+  
   //***************************************Android Only***************************************
   /**
     * 在 Android 6.0 及以上的系统上,需要去请求一些用到的权限.
@@ -171,17 +196,20 @@ object default extends js.Object {
     * @platform Android
     */
   def requestPermission(): Unit = js.native
+  
   /**
     * 恢复推送服务
     *
     * @platform Android
     */
   def resumePush(): Unit = js.native
+  
   /**
     * 设置别名
     * 需要理解的是,这个接口是覆盖逻辑,而不是增量逻辑。即新的调用会覆盖之前的设置
     */
   def setAlias(params: Sequence with Alias): Unit = js.native
+  
   //***************************************iOS Only***************************************
   /**
     * 设置 Badge
@@ -189,12 +217,14 @@ object default extends js.Object {
     * @platform iOS
     */
   def setBadge(params: AppBadge): Unit = js.native
+  
   /**
     * 动态配置 channel,优先级比 AndroidManifest 里配置的高
     *
     * @platform Android
     */
   def setChannel(params: Channel): Unit = js.native
+  
   /**
     * 设置保留最近通知条数
     *
@@ -207,6 +237,7 @@ object default extends js.Object {
     * @platform Android
     */
   def setLatestNotificationNumber(params: NotificationMaxNumber): Unit = js.native
+  
   /**
     * 设置调试模式,默认关闭状态
     *
@@ -215,6 +246,7 @@ object default extends js.Object {
     *
     */
   def setLoggerEnable(enable: Boolean): Unit = js.native
+  
   //***************************************地理围栏***************************************
   /**
     * 设置最多允许保存的地理围栏数量,超过最大限制后,如果继续创建先删除最早创建的地理围栏。
@@ -222,15 +254,18 @@ object default extends js.Object {
     *
     */
   def setMaxGeofenceNumber(params: GeoFenceMaxNumber): Unit = js.native
+  
   //***************************************统计***************************************
   /**
     * 设置手机号码。该接口会控制调用频率,频率为 10s 之内最多 3 次
     */
   def setMobileNumber(params: mobileNumberstringSequenc): Unit = js.native
+  
   /**
     * JPush SDK 开启和关闭省电模式，默认为关闭。
     */
   def setPowerSaveMode(enable: Boolean): Unit = js.native
+  
   /**
     * 设置允许推送时间
     *
@@ -244,6 +279,7 @@ object default extends js.Object {
     * @platform Android
     */
   def setPushTime(params: PushTimeDays): Unit = js.native
+  
   /**
     * 设置通知静默时间
     *
@@ -254,12 +290,14 @@ object default extends js.Object {
     * @platform Android
     */
   def setSilenceTime(params: SilenceTimeEndHour): Unit = js.native
+  
   /**
     * 停止推送服务
     *
     * @platform Android
     */
   def stopPush(): Unit = js.native
+  
   /**
     * 覆盖标签
     *
@@ -267,4 +305,3 @@ object default extends js.Object {
     */
   def updateTags(params: Sequence with Tags): Unit = js.native
 }
-

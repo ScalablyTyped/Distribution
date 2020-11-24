@@ -9,23 +9,24 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Misc/index", "SerializationHelper")
 @js.native
 class SerializationHelper ()
   extends typings.babylonjs.decoratorsMod.SerializationHelper
-
 /* static members */
 @JSImport("babylonjs/Misc/index", "SerializationHelper")
 @js.native
 object SerializationHelper extends js.Object {
+  
   /**
     * Appends the serialized animations from the source animations
     * @param source Source containing the animations
     * @param destination Target to store the animations
     */
   def AppendSerializedAnimations(source: IAnimatable, destination: js.Any): Unit = js.native
+  
   /**
     * Clones an object
     * @param creationFunction defines the function used to instanciate the new object
@@ -33,6 +34,7 @@ object SerializationHelper extends js.Object {
     * @returns the cloned object
     */
   def Clone[T](creationFunction: js.Function0[T], source: T): T = js.native
+  
   /**
     * Instanciates a new object based on a source one (some data will be shared between both object)
     * @param creationFunction defines the function used to instanciate the new object
@@ -40,6 +42,7 @@ object SerializationHelper extends js.Object {
     * @returns the new object
     */
   def Instanciate[T](creationFunction: js.Function0[T], source: T): T = js.native
+  
   /**
     * Creates a new entity from a serialization data object
     * @param creationFunction defines a function used to instanciated the new entity
@@ -55,6 +58,7 @@ object SerializationHelper extends js.Object {
     scene: Nullable[Scene],
     rootUrl: Nullable[String]
   ): T = js.native
+  
   /**
     * Static function used to serialized a specific entity
     * @param entity defines the entity to serialize
@@ -63,13 +67,16 @@ object SerializationHelper extends js.Object {
     */
   def Serialize[T](entity: T): js.Any = js.native
   def Serialize[T](entity: T, serializationObject: js.Any): js.Any = js.native
+  
   /** @hidden */
   def _ColorCurvesParser(sourceProperty: js.Any): ColorCurves = js.native
+  
   /** @hidden */
   def _FresnelParametersParser(sourceProperty: js.Any): FresnelParameters = js.native
+  
   /** @hidden */
   def _ImageProcessingConfigurationParser(sourceProperty: js.Any): ImageProcessingConfiguration = js.native
+  
   /** @hidden */
   def _TextureParser(sourceProperty: js.Any, scene: Scene, rootUrl: String): Nullable[BaseTexture] = js.native
 }
-

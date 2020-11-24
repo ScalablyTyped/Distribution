@@ -4,7 +4,7 @@ import typings.awsSdk.kinesisvideoMod.ClientConfiguration
 import typings.awsSdk.kinesisvideoMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "KinesisVideo")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class KinesisVideo () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

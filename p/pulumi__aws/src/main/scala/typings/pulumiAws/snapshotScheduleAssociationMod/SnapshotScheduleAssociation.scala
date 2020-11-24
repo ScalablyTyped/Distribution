@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/redshift/snapshotScheduleAssociation", "SnapshotScheduleAssociation")
 @js.native
@@ -21,20 +21,22 @@ class SnapshotScheduleAssociation protected () extends CustomResource {
     */
   def this(name: String, args: SnapshotScheduleAssociationArgs) = this()
   def this(name: String, args: SnapshotScheduleAssociationArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The cluster identifier.
     */
   val clusterIdentifier: Output_[String] = js.native
+  
   /**
     * The snapshot schedule identifier.
     */
   val scheduleIdentifier: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/redshift/snapshotScheduleAssociation", "SnapshotScheduleAssociation")
 @js.native
 object SnapshotScheduleAssociation extends js.Object {
+  
   /**
     * Get an existing SnapshotScheduleAssociation resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -48,10 +50,10 @@ object SnapshotScheduleAssociation extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SnapshotScheduleAssociation = js.native
   def get(name: String, id: Input[ID], state: SnapshotScheduleAssociationState): SnapshotScheduleAssociation = js.native
   def get(name: String, id: Input[ID], state: SnapshotScheduleAssociationState, opts: CustomResourceOptions): SnapshotScheduleAssociation = js.native
+  
   /**
     * Returns true if the given object is an instance of SnapshotScheduleAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/snapshotScheduleAssociation.SnapshotScheduleAssociation */ Boolean = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EditorContext extends js.Object {
+  
   /** [EditorContext.blur(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/editor/EditorContext.blur.html)
     *
     * 编辑器失焦，同时收起键盘。
@@ -13,6 +14,7 @@ trait EditorContext extends js.Object {
     * 最低基础库： `2.8.3` */
   def blur(): Unit = js.native
   def blur(option: BlurOption): Unit = js.native
+  
   /** [EditorContext.clear(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/editor/EditorContext.clear.html)
     *
     * 清空编辑器内容
@@ -20,6 +22,7 @@ trait EditorContext extends js.Object {
     * 最低基础库： `2.7.0` */
   def clear(): Unit = js.native
   def clear(option: ClearOption): Unit = js.native
+  
   /** [EditorContext.format(string name, string value)](https://developers.weixin.qq.com/miniprogram/dev/api/media/editor/EditorContext.format.html)
     *
     * 修改样式
@@ -61,6 +64,7 @@ trait EditorContext extends js.Object {
   def format(/** 属性 */
   name: String, /** 值 */
   value: String): Unit = js.native
+  
   /** [EditorContext.getContents(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/editor/EditorContext.getContents.html)
     *
     * 获取编辑器内容
@@ -68,6 +72,7 @@ trait EditorContext extends js.Object {
     * 最低基础库： `2.7.0` */
   def getContents(): Unit = js.native
   def getContents(option: GetContentsOption): Unit = js.native
+  
   /** [EditorContext.getSelectionText(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/editor/EditorContext.getSelectionText.html)
     *
     * 获取编辑器已选区域内的纯文本内容。当编辑器失焦或未选中一段区间时，返回内容为空。
@@ -75,6 +80,7 @@ trait EditorContext extends js.Object {
     * 最低基础库： `2.10.2` */
   def getSelectionText(): Unit = js.native
   def getSelectionText(option: GetSelectionTextOption): Unit = js.native
+  
   /** [EditorContext.insertDivider(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/editor/EditorContext.insertDivider.html)
     *
     * 插入分割线
@@ -82,6 +88,7 @@ trait EditorContext extends js.Object {
     * 最低基础库： `2.7.0` */
   def insertDivider(): Unit = js.native
   def insertDivider(option: InsertDividerOption): Unit = js.native
+  
   /** [EditorContext.insertImage(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/editor/EditorContext.insertImage.html)
   *
   * 插入图片。
@@ -104,12 +111,14 @@ trait EditorContext extends js.Object {
   *
   * 最低基础库： `2.7.0` */
   def insertImage(option: InsertImageOption): Unit = js.native
+  
   /** [EditorContext.insertText(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/editor/EditorContext.insertText.html)
     *
     * 覆盖当前选区，设置一段文本
     *
     * 最低基础库： `2.7.0` */
   def insertText(option: InsertTextOption): Unit = js.native
+  
   /** [EditorContext.redo(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/editor/EditorContext.redo.html)
     *
     * 恢复
@@ -117,6 +126,7 @@ trait EditorContext extends js.Object {
     * 最低基础库： `2.7.0` */
   def redo(): Unit = js.native
   def redo(option: RedoOption): Unit = js.native
+  
   /** [EditorContext.removeFormat(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/editor/EditorContext.removeFormat.html)
     *
     * 清除当前选区的样式
@@ -124,18 +134,21 @@ trait EditorContext extends js.Object {
     * 最低基础库： `2.7.0` */
   def removeFormat(): Unit = js.native
   def removeFormat(option: RemoveFormatOption): Unit = js.native
+  
   /** [EditorContext.scrollIntoView()](https://developers.weixin.qq.com/miniprogram/dev/api/media/editor/EditorContext.scrollIntoView.html)
     *
     * 使得编辑器光标处滚动到窗口可视区域内。
     *
     * 最低基础库： `2.8.3` */
   def scrollIntoView(): Unit = js.native
+  
   /** [EditorContext.setContents(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/editor/EditorContext.setContents.html)
     *
     * 初始化编辑器内容，html和delta同时存在时仅delta生效
     *
     * 最低基础库： `2.7.0` */
   def setContents(option: SetContentsOption): Unit = js.native
+  
   /** [EditorContext.undo(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/editor/EditorContext.undo.html)
     *
     * 撤销
@@ -144,4 +157,3 @@ trait EditorContext extends js.Object {
   def undo(): Unit = js.native
   def undo(option: UndoOption): Unit = js.native
 }
-

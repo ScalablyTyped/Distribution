@@ -5,12 +5,12 @@ import typings.skatejs.typesMod.WithLifecycle
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("skatejs", "withLifecycle")
 @js.native
 object withLifecycle extends js.Object {
+  
   def apply[T /* <: Constructor[HTMLElement] */](): Constructor[WithLifecycle] with T = js.native
   def apply[T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithLifecycle] with T = js.native
 }
-

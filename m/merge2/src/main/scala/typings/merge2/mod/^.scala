@@ -2,11 +2,12 @@ package typings.merge2.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("merge2", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(args: Streams*): Merge2Stream = js.native
   /**
     * @summary        This function takes an arbitrary number of streams and returns a
@@ -33,4 +34,3 @@ object ^ extends js.Object {
   def apply(a: Streams, b: Streams, options: Options): Merge2Stream = js.native
   def apply(a: Streams, options: Options): Merge2Stream = js.native
 }
-

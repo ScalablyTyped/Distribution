@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ListLevelNumberAlignment extends js.Object
-
 /**
   * Lists values that specify the paragraph text alignment within numbered list levels.
   */
 @JSGlobal("ListLevelNumberAlignment")
 @js.native
 object ListLevelNumberAlignment extends js.Object {
+  
   /**
     * Text is aligned to the center of the list level's paragraph.
     */
@@ -30,6 +30,4 @@ object ListLevelNumberAlignment extends js.Object {
     */
   @js.native
   sealed trait Right extends ListLevelNumberAlignment
-  
 }
-

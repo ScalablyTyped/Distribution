@@ -2,7 +2,7 @@ package typings.smartFoxServer.global.SFS2X.Requests
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.RoomExtension")
 @js.native
@@ -15,4 +15,3 @@ class RoomExtension protected ()
     */
   def this(id: String, className: String) = this()
 }
-

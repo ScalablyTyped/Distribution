@@ -10,14 +10,16 @@ import typings.devtoolsProtocol.mod.Protocol.BackgroundService.StartObservingReq
 import typings.devtoolsProtocol.mod.Protocol.BackgroundService.StopObservingRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BackgroundServiceApi extends js.Object {
+  
   /**
     * Clears all stored data for the service.
     */
   def clearEvents(params: ClearEventsRequest): js.Promise[Unit] = js.native
+  
   /**
     * Called with all existing backgroundServiceEvents when enabled, and all new
     * events afterwards if enabled and recording.
@@ -35,17 +37,19 @@ trait BackgroundServiceApi extends js.Object {
     event: recordingStateChanged,
     listener: js.Function1[/* params */ RecordingStateChangedEvent, Unit]
   ): Unit = js.native
+  
   /**
     * Set the recording state for the service.
     */
   def setRecording(params: SetRecordingRequest): js.Promise[Unit] = js.native
+  
   /**
     * Enables event updates for the service.
     */
   def startObserving(params: StartObservingRequest): js.Promise[Unit] = js.native
+  
   /**
     * Disables event updates for the service.
     */
   def stopObserving(params: StopObservingRequest): js.Promise[Unit] = js.native
 }
-

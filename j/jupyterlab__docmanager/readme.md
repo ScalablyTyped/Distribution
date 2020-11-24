@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__docmanager
 
-Typings are for version 2.1.2
+Typings are for version 2.2.4
 
 ## Library description:
 JupyterLab - Document Manager
@@ -10,9 +10,9 @@ JupyterLab - Document Manager
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/docmanager |
 | Keywords           | - |
-| # releases         | 65 |
-| # dependents       | 77 |
-| # downloads        | 822771 |
+| # releases         | 112 |
+| # dependents       | 105 |
+| # downloads        | 1567885 |
 | # stars            | 0 |
 
 ## Links

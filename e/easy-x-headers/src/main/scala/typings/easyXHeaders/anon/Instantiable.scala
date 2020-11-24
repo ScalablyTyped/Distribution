@@ -6,7 +6,7 @@ import typings.node.Buffer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Instantiable
@@ -15,6 +15,7 @@ trait Instantiable
       Buffer
     ]
      with Instantiable2[/* str */ String, /* encoding */ String, Buffer] {
+  
   /**
     * Gives the actual byte length of a string. encoding defaults to 'utf8'.
     * This is not the same as String.prototype.length since that returns the number of characters in a string.
@@ -24,10 +25,12 @@ trait Instantiable
     */
   def byteLength(string: String): Double = js.native
   def byteLength(string: String, encoding: String): Double = js.native
+  
   /**
     * The same as buf1.compare(buf2).
     */
   def compare(buf1: Buffer, buf2: Buffer): Double = js.native
+  
   /**
     * Returns a buffer which is the result of concatenating all the buffers in the list together.
     *
@@ -41,12 +44,14 @@ trait Instantiable
     */
   def concat(list: js.Array[Buffer]): Buffer = js.native
   def concat(list: js.Array[Buffer], totalLength: Double): Buffer = js.native
+  
   /**
     * Returns true if {obj} is a Buffer
     *
     * @param obj object to test.
     */
   def isBuffer(obj: js.Any): Boolean = js.native
+  
   /**
     * Returns true if {encoding} is a valid encoding argument.
     * Valid string encodings in Node 0.12: 'ascii'|'utf8'|'utf16le'|'ucs2'(alias of 'utf16le')|'base64'|'binary'(deprecated)|'hex'
@@ -55,4 +60,3 @@ trait Instantiable
     */
   def isEncoding(encoding: String): Boolean = js.native
 }
-

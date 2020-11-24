@@ -4,7 +4,7 @@ import typings.typescriptServices.TypeScript.ISyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "ConstructorDeclarationSyntax")
 @js.native
@@ -19,15 +19,15 @@ class ConstructorDeclarationSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("typescript-services", "ConstructorDeclarationSyntax")
 @js.native
 object ConstructorDeclarationSyntax extends js.Object {
+  
   def create(
     constructorKeyword: ISyntaxToken,
     callSignature: typings.typescriptServices.TypeScript.CallSignatureSyntax
   ): typings.typescriptServices.TypeScript.ConstructorDeclarationSyntax = js.native
+  
   def create1(): typings.typescriptServices.TypeScript.ConstructorDeclarationSyntax = js.native
 }
-

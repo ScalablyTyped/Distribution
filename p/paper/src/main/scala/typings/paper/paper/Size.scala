@@ -2,7 +2,7 @@ package typings.paper.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The Size object is used to describe the size or dimensions of
@@ -10,20 +10,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Size extends js.Object {
-  /** 
-    * The height of the size
-    */
-  var height: Double = js.native
-  /** 
-    * The width of the size
-    */
-  var width: Double = js.native
+  
   /** 
     * Returns a new size with the absolute values of the specified
     * {@link #width} and {@link #height} values. The object itself is not
     * modified!
     */
   def abs(): Size = js.native
+  
   /** 
     * Returns the addition of the supplied value to the width and height of the
     * size as a new size. The object itself is not modified!
@@ -42,12 +36,14 @@ trait Size extends js.Object {
     * @return the addition of the two sizes as a new size
     */
   def add(size: Size): Size = js.native
+  
   /** 
     * Returns a new size with the nearest greater non-fractional values to the
     * specified {@link #width} and {@link #height} values. The object itself is
     * not modified!
     */
   def ceil(): Size = js.native
+  
   /** 
     * Returns the division of the supplied value by the width and height of the
     * size as a new size. The object itself is not modified!
@@ -66,6 +62,7 @@ trait Size extends js.Object {
     * @return the division of the two sizes as a new size
     */
   def divide(size: Size): Size = js.native
+  
   /** 
     * Checks whether the width and height of the size are equal to those of the
     * supplied size.
@@ -73,24 +70,33 @@ trait Size extends js.Object {
     * @param size - the size to compare to
     */
   def equals(size: Size): Boolean = js.native
+  
   /** 
     * Returns a new size with the nearest smaller non-fractional values to the
     * specified {@link #width} and {@link #height} values. The object itself is
     * not modified!
     */
   def floor(): Size = js.native
+  
+  /** 
+    * The height of the size
+    */
+  var height: Double = js.native
+  
   /** 
     * Checks if the width or the height of the size are NaN.
     * 
     * @return true if the width or height of the size are NaN
     */
   def isNaN(): Boolean = js.native
+  
   /** 
     * Checks if this size has both the width and height set to 0.
     * 
     * @return true if both width and height are 0
     */
   def isZero(): Boolean = js.native
+  
   /** 
     * The modulo operator returns the integer remainders of dividing the size
     * by the supplied size as a new size.
@@ -107,6 +113,7 @@ trait Size extends js.Object {
     * as a new size
     */
   def modulo(value: Double): Size = js.native
+  
   /** 
     * Returns the multiplication of the supplied value with the width and
     * height of the size as a new size. The object itself is not modified!
@@ -125,17 +132,20 @@ trait Size extends js.Object {
     * @return the multiplication of the two sizes as a new size
     */
   def multiply(size: Size): Size = js.native
+  
   /** 
     * Returns a new size with rounded {@link #width} and {@link #height}
     * values. The object itself is not modified!
     */
   def round(): Size = js.native
+  
   /** 
     * Sets the size to the passed values. Note that any sequence of parameters
     * that is supported by the various {@link Size} constructors also work
     * for calls of `set()`.
     */
   def set(values: js.Any*): Size = js.native
+  
   /** 
     * Returns the subtraction of the supplied value from the width and height
     * of the size as a new size. The object itself is not modified!
@@ -155,5 +165,9 @@ trait Size extends js.Object {
     * @return the subtraction of the two sizes as a new size
     */
   def subtract(size: Size): Size = js.native
+  
+  /** 
+    * The width of the size
+    */
+  var width: Double = js.native
 }
-

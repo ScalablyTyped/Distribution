@@ -3,7 +3,7 @@ package typings.emberData.mod.DS
 import typings.emberObject.mod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `DS.Transform` class is used to serialize and deserialize model
@@ -15,15 +15,16 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "DS.Transform")
 @js.native
 class Transform () extends default {
+  
   /**
     * When given a serialize value from a JSON object this method must
     * return the deserialized value for the record attribute.
     */
   def deserialize(serialized: js.Any, options: AttrOptions[_]): js.Any = js.native
+  
   /**
     * When given a deserialized value from a record attribute this
     * method must return the serialized value.
     */
   def serialize(deserialized: js.Any, options: AttrOptions[_]): js.Any = js.native
 }
-

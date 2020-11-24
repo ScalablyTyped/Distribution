@@ -6,15 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fitness/v1", "fitness_v1.Resource$Users$Datasources")
 @js.native
 class ResourceUsersDatasources protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var dataPointChanges: ResourceUsersDatasourcesDatapointchanges = js.native
-  var datasets: ResourceUsersDatasourcesDatasets = js.native
+  
   /**
     * fitness.users.dataSources.create
     * @desc Creates a new data source that is unique across all data sources
@@ -51,6 +51,11 @@ class ResourceUsersDatasources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDataSource]
   ): Unit = js.native
+  
+  var dataPointChanges: ResourceUsersDatasourcesDatapointchanges = js.native
+  
+  var datasets: ResourceUsersDatasourcesDatasets = js.native
+  
   /**
     * fitness.users.dataSources.delete
     * @desc Deletes the specified data source. The request will fail if the
@@ -81,6 +86,7 @@ class ResourceUsersDatasources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDataSource]
   ): Unit = js.native
+  
   /**
     * fitness.users.dataSources.get
     * @desc Returns the specified data source.
@@ -110,6 +116,7 @@ class ResourceUsersDatasources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDataSource]
   ): Unit = js.native
+  
   /**
     * fitness.users.dataSources.list
     * @desc Lists all data sources that are visible to the developer, using the
@@ -145,6 +152,7 @@ class ResourceUsersDatasources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListDataSourcesResponse]
   ): Unit = js.native
+  
   /**
     * fitness.users.dataSources.update
     * @desc Updates the specified data source. The dataStreamId, dataType,
@@ -179,4 +187,3 @@ class ResourceUsersDatasources protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDataSource]
   ): Unit = js.native
 }
-

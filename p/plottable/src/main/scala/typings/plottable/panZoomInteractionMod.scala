@@ -9,11 +9,12 @@ import typings.plottable.scaleMod.TransformableScale
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/interactions/panZoomInteraction", JSImport.Namespace)
 @js.native
 object panZoomInteractionMod extends js.Object {
+  
   @js.native
   /**
     * A PanZoom Interaction updates the domains of an x-scale and/or a y-scale
@@ -27,33 +28,61 @@ object panZoomInteractionMod extends js.Object {
     def this(xScale: TransformableScale[_, Double]) = this()
     def this(xScale: js.UndefOr[scala.Nothing], yScale: TransformableScale[_, Double]) = this()
     def this(xScale: TransformableScale[_, Double], yScale: TransformableScale[_, Double]) = this()
-    var _dragInteraction: js.Any = js.native
-    var _maxDomainExtents: js.Any = js.native
-    var _maxDomainValues: js.Any = js.native
-    var _minDomainExtents: js.Any = js.native
-    var _minDomainValues: js.Any = js.native
-    var _mouseDispatcher: js.Any = js.native
-    var _panEndCallbacks: js.Any = js.native
-    var _panZoomUpdateCallbacks: js.Any = js.native
-    var _touchCancelCallback: js.Any = js.native
-    var _touchDispatcher: js.Any = js.native
-    var _touchEndCallback: js.Any = js.native
-    var _touchIds: js.Any = js.native
-    var _touchMoveCallback: js.Any = js.native
-    var _touchStartCallback: js.Any = js.native
-    var _wheelCallback: js.Any = js.native
-    var _wheelFilter: js.Any = js.native
-    var _xScales: js.Any = js.native
-    var _yScales: js.Any = js.native
-    var _zoomEndCallbacks: js.Any = js.native
+    
     /* private */ def _constrainedTranslation(scale: js.Any, translation: js.Any): js.Any = js.native
+    
     /* private */ def _constrainedZoom(scale: js.Any, zoomAmount: js.Any, centerPoint: js.Any): js.Any = js.native
+    
+    var _dragInteraction: js.Any = js.native
+    
     /* private */ def _handlePinch(ids: js.Any, idToPoint: js.Any, e: js.Any): js.Any = js.native
+    
     /* private */ def _handleTouchEnd(ids: js.Any, idToPoint: js.Any, e: js.Any): js.Any = js.native
+    
     /* private */ def _handleTouchStart(ids: js.Any, idToPoint: js.Any, e: js.Any): js.Any = js.native
+    
     /* private */ def _handleWheelEvent(p: js.Any, e: js.Any): js.Any = js.native
+    
+    var _maxDomainExtents: js.Any = js.native
+    
+    var _maxDomainValues: js.Any = js.native
+    
+    var _minDomainExtents: js.Any = js.native
+    
+    var _minDomainValues: js.Any = js.native
+    
+    var _mouseDispatcher: js.Any = js.native
+    
     /* private */ def _nonLinearScaleWithExtents(scale: js.Any): js.Any = js.native
+    
+    var _panEndCallbacks: js.Any = js.native
+    
+    var _panZoomUpdateCallbacks: js.Any = js.native
+    
     /* private */ def _setupDragInteraction(): js.Any = js.native
+    
+    var _touchCancelCallback: js.Any = js.native
+    
+    var _touchDispatcher: js.Any = js.native
+    
+    var _touchEndCallback: js.Any = js.native
+    
+    var _touchIds: js.Any = js.native
+    
+    var _touchMoveCallback: js.Any = js.native
+    
+    var _touchStartCallback: js.Any = js.native
+    
+    var _wheelCallback: js.Any = js.native
+    
+    var _wheelFilter: js.Any = js.native
+    
+    var _xScales: js.Any = js.native
+    
+    var _yScales: js.Any = js.native
+    
+    var _zoomEndCallbacks: js.Any = js.native
+    
     /**
       * Adds an x scale to this PanZoom Interaction
       *
@@ -61,6 +90,7 @@ object panZoomInteractionMod extends js.Object {
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
     def addXScale(xScale: TransformableScale[_, Double]): this.type = js.native
+    
     /**
       * Adds a y scale to this PanZoom Interaction
       *
@@ -68,11 +98,13 @@ object panZoomInteractionMod extends js.Object {
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
     def addYScale(yScale: TransformableScale[_, Double]): this.type = js.native
+    
     /**
       * Get the backing drag interaction. Useful to customize the panzoom interaction.
       * @returns {Drag}
       */
     def dragInteraction(): Drag = js.native
+    
     /**
       * Gets the maximum domain extent for the scale, specifying the maximum
       * allowable amount between the ends of the domain.
@@ -101,6 +133,7 @@ object panZoomInteractionMod extends js.Object {
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
     def maxDomainExtent(scale: TransformableScale[_, Double], maxDomainExtent: Double): this.type = js.native
+    
     /**
       * Gets the maximum domain value for the scale, constraining the pan/zoom
       * interaction to a maximum value in the domain.
@@ -132,6 +165,7 @@ object panZoomInteractionMod extends js.Object {
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
     def maxDomainValue(scale: TransformableScale[_, Double], maxDomainValue: Double): this.type = js.native
+    
     /**
       * Gets the minimum domain extent for the scale, specifying the minimum
       * allowable amount between the ends of the domain.
@@ -156,6 +190,7 @@ object panZoomInteractionMod extends js.Object {
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
     def minDomainExtent(scale: TransformableScale[_, Double], minDomainExtent: Double): this.type = js.native
+    
     /**
       * Gets the minimum domain value for the scale, constraining the pan/zoom
       * interaction to a minimum value in the domain.
@@ -187,6 +222,7 @@ object panZoomInteractionMod extends js.Object {
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
     def minDomainValue(scale: TransformableScale[_, Double], minDomainValue: Double): this.type = js.native
+    
     /**
       * Removes a callback that would be called when panning ends.
       *
@@ -194,6 +230,7 @@ object panZoomInteractionMod extends js.Object {
       * @returns {this} The calling PanZoom Interaction.
       */
     def offPanEnd(callback: PanCallback): this.type = js.native
+    
     /**
       * Removes a callback that would be called when any pan or zoom update occurs.
       *
@@ -201,6 +238,7 @@ object panZoomInteractionMod extends js.Object {
       * @returns {this} The calling PanZoom Interaction.
       */
     def offPanZoomUpdate(callback: PanZoomUpdateCallback): this.type = js.native
+    
     /**
       * Removes a callback that would be called when zooming ends.
       *
@@ -208,6 +246,7 @@ object panZoomInteractionMod extends js.Object {
       * @returns {this} The calling PanZoom Interaction.
       */
     def offZoomEnd(callback: ZoomCallback): this.type = js.native
+    
     /**
       * Adds a callback to be called when panning ends.
       *
@@ -215,6 +254,7 @@ object panZoomInteractionMod extends js.Object {
       * @returns {this} The calling PanZoom Interaction.
       */
     def onPanEnd(callback: PanCallback): this.type = js.native
+    
     /**
       * Adds a callback to be called when any pan or zoom update occurs. This is
       * called on every frame, so be sure your callback is fast.
@@ -223,6 +263,7 @@ object panZoomInteractionMod extends js.Object {
       * @returns {this} The calling PanZoom Interaction.
       */
     def onPanZoomUpdate(callback: PanZoomUpdateCallback): this.type = js.native
+    
     /**
       * Adds a callback to be called when zooming ends.
       *
@@ -230,12 +271,14 @@ object panZoomInteractionMod extends js.Object {
       * @returns {this} The calling PanZoom Interaction.
       */
     def onZoomEnd(callback: ZoomCallback): this.type = js.native
+    
     /**
       * Pans the chart by a specified amount
       *
       * @param {Plottable.Point} [translateAmount] The amount by which to translate the x and y scales.
       */
     def pan(translateAmount: Point): Unit = js.native
+    
     /**
       * Removes an x scale from this PanZoom Interaction
       *
@@ -243,6 +286,7 @@ object panZoomInteractionMod extends js.Object {
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
     def removeXScale(xScale: TransformableScale[_, Double]): this.type = js.native
+    
     /**
       * Removes a y scale from this PanZoom Interaction
       *
@@ -250,6 +294,7 @@ object panZoomInteractionMod extends js.Object {
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
     def removeYScale(yScale: TransformableScale[_, Double]): this.type = js.native
+    
     /**
       * Uses the current domain of the scale to apply a minimum and maximum
       * domain value for that scale.
@@ -258,6 +303,7 @@ object panZoomInteractionMod extends js.Object {
       * of the scale.
       */
     def setMinMaxDomainValuesTo(scale: TransformableScale[_, Double]): this.type = js.native
+    
     /**
       * Get the current mouse wheel filter.
       * @returns {WheelFilter}
@@ -268,6 +314,7 @@ object panZoomInteractionMod extends js.Object {
       * this to define custom filters (e.g. requires shift to be held down.)
       */
     def wheelFilter(filter: WheelFilter): this.type = js.native
+    
     /**
       * Gets the x scales for this PanZoom Interaction.
       */
@@ -278,6 +325,7 @@ object panZoomInteractionMod extends js.Object {
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
     def xScales(xScales: js.Array[TransformableScale[_, Double]]): this.type = js.native
+    
     /**
       * Gets the y scales for this PanZoom Interaction.
       */
@@ -288,6 +336,7 @@ object panZoomInteractionMod extends js.Object {
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
     def yScales(yScales: js.Array[TransformableScale[_, Double]]): this.type = js.native
+    
     /**
       * Zooms the chart by a specified amount around a specific point
       *
@@ -304,21 +353,25 @@ object panZoomInteractionMod extends js.Object {
     def zoom(zoomAmount: Double, centerValue: Point): CenterValue = js.native
     def zoom(zoomAmount: Double, centerValue: Point, constrained: Boolean): CenterValue = js.native
   }
-  
   /* static members */
   @js.native
   object PanZoom extends js.Object {
+    
     /**
       * The number of pixels occupied in a line.
       */
     var _PIXELS_PER_LINE: js.Any = js.native
+    
     /* private */ def _pointDistance(point1: js.Any, point2: js.Any): js.Any = js.native
+    
     def centerPoint(point1: Point, point2: Point): X = js.native
   }
   
   type PanCallback = js.Function0[Unit]
+  
   type PanZoomUpdateCallback = js.Function0[Unit]
+  
   type WheelFilter = js.Function1[/* wheelEvent */ WheelEvent, Boolean]
+  
   type ZoomCallback = js.Function0[Unit]
 }
-

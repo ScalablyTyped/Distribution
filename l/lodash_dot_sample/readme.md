@@ -11,8 +11,8 @@ The lodash method `_.sample` exported as a module.
 | Full name          | lodash.sample |
 | Keywords           | lodash-modularized, sample |
 | # releases         | 0 |
-| # dependents       | 72 |
-| # downloads        | 7522549 |
+| # dependents       | 81 |
+| # downloads        | 11056491 |
 | # stars            | 1 |
 
 ## Links

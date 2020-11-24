@@ -4,7 +4,7 @@ import typings.angularCompiler.coreMod.MissingTranslationStrategy
 import typings.angularCompiler.srcUtilMod.Console
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "I18NHtmlParser")
 @js.native
@@ -103,4 +103,3 @@ class I18NHtmlParser protected ()
     console: Console
   ) = this()
 }
-

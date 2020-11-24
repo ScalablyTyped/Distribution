@@ -3,25 +3,29 @@ package typings.squareConnect.mod
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderLineItemDiscount")
 @js.native
 class OrderLineItemDiscount () extends js.Object {
+  
   /**
     * The total declared monetary amount of the discount. `amount_money` is not set for percentage-based discounts.
     */
   var amount_money: js.UndefOr[Money] = js.native
+  
   /**
     * The amount of discount actually applied to the line item. Represents the amount of money applied as a line
     * item-scoped discount. When an amount-based discount is scoped to the entire order, the value of `applied_money`
     * is different from `amount_money` because the total amount of the discount is distributed across all line items.
     */
   var applied_money: js.UndefOr[Money] = js.native
+  
   /**
     * The catalog object id referencing `CatalogDiscount`.
     */
   var catalog_object_id: js.UndefOr[String] = js.native
+  
   /**
     * Application-defined data attached to this discount. Metadata fields are intended to store descriptive references
     * or associations with an entity in another system or store brief information about the object. Square does not process
@@ -34,15 +38,33 @@ class OrderLineItemDiscount () extends js.Object {
     * See [Metadata](https://developer.squareup.com/docs/build-basics/metadata) for more information.
     */
   var metadata: js.UndefOr[Record[String, String]] = js.native
+  
   /**
     * The discount's name.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * The percentage of the discount, as a string representation of a decimal number.
     * A value of `7.25` corresponds to a percentage of 7.25%. `percentage` is not set for amount-based discounts.
     */
   var percentage: js.UndefOr[String] = js.native
+  
+  /**
+    * The object identifier of a `pricing rule` to be applied automatically to this discount.
+    * The specification and application of the discounts, to which a `pricing_rule_id` is assigned,
+    * are completely controlled by the corresponding pricing rule.
+    */
+  var pricing_rule_id: js.UndefOr[String] = js.native
+  
+  /**
+    * The reward identifiers corresponding to this discount.
+    * The application and specification of discounts that have `reward_ids` are completely controlled by the backing
+    * criteria corresponding to the reward tiers of the rewards that are added to the order through the Loyalty API.
+    * To manually unapply discounts that are the result of added rewards, the rewards must be removed from the order through the Loyalty API.
+    */
+  var reward_ids: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Indicates the level at which the discount applies. For `ORDER` scoped discounts, Square generates references
     * in `applied_discounts` on all order line items that do not have them. For `LINE_ITEM` scoped discounts,
@@ -51,14 +73,15 @@ class OrderLineItemDiscount () extends js.Object {
     * See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values.
     */
   var scope: js.UndefOr[DiscountApplicationScopeType] = js.native
+  
   /**
     * The type of the discount. Discounts that don't reference a catalog object ID must have a type of `FIXED_PERCENTAGE`
     * or `FIXED_AMOUNT`. See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible values.
     */
   var `type`: js.UndefOr[DiscountType] = js.native
+  
   /**
     * Unique ID that identifies the discount only within this order.
     */
   var uid: js.UndefOr[String] = js.native
 }
-

@@ -3,15 +3,16 @@ package typings.qiniu.mod
 import typings.qiniu.mod.auth.digest.Mac
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("qiniu", "cdn")
 @js.native
 object cdn extends js.Object {
+  
   @js.native
   class CdnManager () extends js.Object {
     def this(mac: Mac) = this()
-    var mac: Mac = js.native
+    
     /**
       * 构建标准的基于时间戳的防盗链
       * @param domain  自定义域名，例如 http://img.abc.com
@@ -22,6 +23,7 @@ object cdn extends js.Object {
       * @return signedUrl  最终的带时间戳防盗链的url
       */
     def createTimestampAntiLeechUrl(domain: String, fileName: String, query: js.Any, encryptKey: String, deadline: Double): String = js.native
+    
     /**
       * 获取域名带宽数据
       * @see http://developer.qiniu.com/article/fusion/api/traffic-bandwidth.html#batch-flux
@@ -38,6 +40,7 @@ object cdn extends js.Object {
       domains: js.Array[String],
       callback: callback
     ): Unit = js.native
+    
     /**
       * 获取域名日志下载链接
       * @see http://developer.qiniu.com/article/fusion/api/log.html
@@ -47,6 +50,7 @@ object cdn extends js.Object {
       * @param callback  callbackFunc(err, respBody, respInfo)
       */
     def getCdnLogList(domains: js.Array[String], logDay: String, callback: callback): Unit = js.native
+    
     /**
       * 获取域名访问流量数据
       * @see http://developer.qiniu.com/article/fusion/api/traffic-bandwidth.html#batch-flux
@@ -64,6 +68,9 @@ object cdn extends js.Object {
       domains: js.Array[String],
       callback: callback
     ): Unit = js.native
+    
+    var mac: Mac = js.native
+    
     /**
       * 预取文件链接
       * @see http://developer.qiniu.com/article/fusion/api/prefetch.html
@@ -72,6 +79,7 @@ object cdn extends js.Object {
       * @param callback callbackFunc(err, respBody, respInfo)
       */
     def prefetchUrls(urls: js.Array[String], callback: callback): Unit = js.native
+    
     /**
       * 刷新目录列表，每次最多不可以超过10个目录, 刷新目录需要额外开通权限，可以联系七牛技术支持处理
       * @see http://developer.qiniu.com/article/fusion/api/refresh.html
@@ -80,6 +88,7 @@ object cdn extends js.Object {
       * @param callback callbackFunc(err, respBody, respInfo)
       */
     def refreshDirs(dirs: js.Array[String], callback: callback): Unit = js.native
+    
     /**
       * 刷新链接
       * @see http://developer.qiniu.com/article/fusion/api/refresh.html
@@ -88,6 +97,7 @@ object cdn extends js.Object {
       * @param callback callbackFunc(err, respBody, respInfo)
       */
     def refreshUrls(urls: js.Array[String], callback: callback): Unit = js.native
+    
     /**
       * 刷新目录和链接
       * @param urls refreshUrls =  ['http://obbid7qc6.qnssl.com/023','http://obbid7qc6.qnssl.com/025']
@@ -96,6 +106,4 @@ object cdn extends js.Object {
       */
     def refreshUrlsAndDirs(urls: js.Array[String], dirs: js.Array[String], callback: callback): Unit = js.native
   }
-  
 }
-

@@ -12,7 +12,7 @@ core files for the node-xmpp project
 | Keywords           | XMPP, JID, SRV, stanza, iq, message, presence |
 | # releases         | 1 |
 | # dependents       | 26 |
-| # downloads        | 508185 |
+| # downloads        | 617907 |
 | # stars            | 2 |
 
 ## Links

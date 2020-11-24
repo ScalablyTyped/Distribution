@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Notificationchannels")
 @js.native
 class ResourceProjectsNotificationchannels protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * monitoring.projects.notificationChannels.create
     * @desc Creates a new notification channel, representing a single
@@ -47,6 +49,7 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNotificationChannel]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.notificationChannels.delete
     * @desc Deletes a notification channel.
@@ -79,6 +82,7 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.notificationChannels.get
     * @desc Gets a single notification channel. The channel includes the
@@ -114,6 +118,7 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNotificationChannel]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.notificationChannels.getVerificationCode
     * @desc Requests a verification code for an already verified channel that
@@ -165,6 +170,7 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetNotificationChannelVerificationCodeResponse]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.notificationChannels.list
     * @desc Lists the notification channels that have been created for the
@@ -201,6 +207,7 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListNotificationChannelsResponse]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.notificationChannels.patch
     * @desc Updates a notification channel. Fields not specified in the field
@@ -235,6 +242,7 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNotificationChannel]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.notificationChannels.sendVerificationCode
     * @desc Causes a verification code to be delivered to the channel. The code
@@ -268,6 +276,7 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * monitoring.projects.notificationChannels.verify
     * @desc Verifies a NotificationChannel by proving receipt of the code
@@ -303,4 +312,3 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     callback: BodyResponseCallback[SchemaNotificationChannel]
   ): Unit = js.native
 }
-

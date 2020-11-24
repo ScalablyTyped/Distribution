@@ -7,16 +7,16 @@ import typings.tstl.icontainerMod.IContainer
 import typings.tstl.mapContainerMod.MapContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon-framework", "collections.HashMapCollection")
 @js.native
 class HashMapCollection[Key, T] ()
   extends typings.ecol.hashMapCollectionMod.HashMapCollection[Key, T]
-
 @JSImport("samchon-framework", "collections.HashMapCollection")
 @js.native
 object HashMapCollection extends js.Object {
+  
   val Event: Instantiable3[
     /* type */ String, 
     /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* first */ js.Any, 
@@ -46,6 +46,7 @@ object HashMapCollection extends js.Object {
       ]
     ]
   ] = js.native
+  
   val Iterator: Instantiable0[
     typings.tstl.mapElementListMod.MapElementList.Iterator[
       js.Object, 
@@ -66,6 +67,7 @@ object HashMapCollection extends js.Object {
       ]
     ]
   ] = js.native
+  
   val ReverseIterator: Instantiable0[
     typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
       js.Object, 
@@ -87,4 +89,3 @@ object HashMapCollection extends js.Object {
     ]
   ] = js.native
 }
-

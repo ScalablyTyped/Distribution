@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Uploader模块管理网络上传任务，用于从本地上传各种文件到服务器，并支持跨域访问操作。通过plus.uploader可获取上传管理对象。Uploader上传使用HTTP的POST方式提交数据，数据格式符合Multipart/form-data规范，即rfc1867（Form-based File Upload in HTML）协议。
@@ -11,36 +11,42 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusUploader extends js.Object {
+  
   /**
     * Upload对象管理一个上传任务
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   var Upload: js.UndefOr[PlusUploaderUpload] = js.native
+  
   /**
     * 上传任务事件类型
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   var UploadEvent: js.UndefOr[PlusUploaderUploadEvent] = js.native
+  
   /**
     * JSON对象，添加上传文件的参数
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   var UploadFileOptions: js.UndefOr[PlusUploaderUploadFileOptions] = js.native
+  
   /**
     * JSON对象，创建上传任务的参数
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   var UploadOptions: js.UndefOr[PlusUploaderUploadOptions] = js.native
+  
   /**
     * 上传任务的状态，Number类型
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   var UploadState: js.UndefOr[PlusUploaderUploadState] = js.native
+  
   /**
     * 清除上传任务
     * 清除指定状态的上传任务。
@@ -49,6 +55,7 @@ trait PlusUploader extends js.Object {
     */
   def clear(): Unit = js.native
   def clear(state: PlusUploaderUploadState): Unit = js.native
+  
   /**
     * 新建上传任务
     * 请求上传管理创建新的上传任务，创建成功则返回Upload对象，用于管理上传任务。
@@ -79,6 +86,7 @@ trait PlusUploader extends js.Object {
     options: PlusUploaderUploadOptions,
     completedCB: js.Function2[/* result0 */ PlusUploaderUpload, /* result1 */ Double, Unit]
   ): PlusUploaderUpload = js.native
+  
   /**
     * 枚举上传任务
     * 枚举指定状态的上传任务列表，通过enumCB回调函数返回结果。
@@ -89,6 +97,7 @@ trait PlusUploader extends js.Object {
   def enumerate(enumCB: js.UndefOr[scala.Nothing], state: PlusUploaderUploadState): Unit = js.native
   def enumerate(enumCB: js.Function1[/* result */ js.Array[this.type], Unit]): Unit = js.native
   def enumerate(enumCB: js.Function1[/* result */ js.Array[this.type], Unit], state: PlusUploaderUploadState): Unit = js.native
+  
   /**
     * 开始所有上传任务
     * 开始所有处于未开始调度或暂停状态的上传任务。
@@ -98,4 +107,3 @@ trait PlusUploader extends js.Object {
     */
   def startAll(): Unit = js.native
 }
-

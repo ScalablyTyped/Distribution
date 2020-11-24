@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "iam.UserLoginProfile")
 @js.native
@@ -23,11 +23,11 @@ class UserLoginProfile protected ()
   def this(name: String, args: UserLoginProfileArgs) = this()
   def this(name: String, args: UserLoginProfileArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "iam.UserLoginProfile")
 @js.native
 object UserLoginProfile extends js.Object {
+  
   /**
     * Get an existing UserLoginProfile resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object UserLoginProfile extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.userLoginProfileMod.UserLoginProfile = js.native
   def get(name: String, id: Input[ID], state: UserLoginProfileState): typings.pulumiAws.userLoginProfileMod.UserLoginProfile = js.native
   def get(name: String, id: Input[ID], state: UserLoginProfileState, opts: CustomResourceOptions): typings.pulumiAws.userLoginProfileMod.UserLoginProfile = js.native
+  
   /**
     * Returns true if the given object is an instance of UserLoginProfile.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userLoginProfile.UserLoginProfile */ Boolean = js.native
 }
-

@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PositionedLayout extends js.Object
-
 /**
   * An enumeration that specifies how to lay out a PositionedImage in relation to surrounding
   * text.
@@ -14,6 +13,7 @@ sealed trait PositionedLayout extends js.Object
 @JSGlobal("GoogleAppsScript.Document.PositionedLayout")
 @js.native
 object PositionedLayout extends js.Object {
+  
   @js.native
   sealed trait ABOVE_TEXT extends PositionedLayout
   
@@ -28,6 +28,4 @@ object PositionedLayout extends js.Object {
   
   @js.native
   sealed trait WRAP_TEXT extends PositionedLayout
-  
 }
-

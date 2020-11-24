@@ -6,7 +6,7 @@ import typings.kendoUi.kendo.data.DataSourceSchemaModelWithFieldsArray
 import typings.kendoUi.kendo.data.DataSourceSchemaModelWithFieldsObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.data.GanttTask")
 @js.native
@@ -14,14 +14,15 @@ class GanttTask ()
   extends typings.kendoUi.kendo.data.GanttTask {
   def this(data: js.Any) = this()
 }
-
 /* static members */
 @JSGlobal("kendo.data.GanttTask")
 @js.native
 object GanttTask extends js.Object {
-  var fields: DataSourceSchemaModelFields = js.native
-  var idField: String = js.native
+  
   def define(options: DataSourceSchemaModelWithFieldsArray): TypeofGanttTask = js.native
   def define(options: DataSourceSchemaModelWithFieldsObject): TypeofGanttTask = js.native
+  
+  var fields: DataSourceSchemaModelFields = js.native
+  
+  var idField: String = js.native
 }
-

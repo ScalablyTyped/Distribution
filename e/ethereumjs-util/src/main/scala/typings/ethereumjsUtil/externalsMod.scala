@@ -11,11 +11,12 @@ import typings.rlp.typesMod.Input
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ethereumjs-util/dist/externals", JSImport.Namespace)
 @js.native
 object externalsMod extends js.Object {
+  
   @js.native
   class BN protected () extends ^ {
     def this(number: String) = this()
@@ -61,26 +62,30 @@ object externalsMod extends js.Object {
     def this(number: Uint8Array, base: Double, endian: Endianness) = this()
     def this(number: Uint8Array, base: hex, endian: Endianness) = this()
   }
-  
   /* static members */
   @js.native
   object BN extends js.Object {
+    
     /**
       * @description returns true if the supplied object is a BN.js instance
       */
     def isBN(b: js.Any): /* is bn.js.bn.js.BN */ Boolean = js.native
+    
     /**
       * @description returns the maximum of 2 BN instances.
       */
     def max(left: typings.bnJs.mod.BN, right: typings.bnJs.mod.BN): typings.bnJs.mod.BN = js.native
+    
     /**
       * @description returns the minimum of 2 BN instances.
       */
     def min(left: typings.bnJs.mod.BN, right: typings.bnJs.mod.BN): typings.bnJs.mod.BN = js.native
+    
     /**
       * @description  create a reduction context  with the Montgomery trick.
       */
     def mont(num: typings.bnJs.mod.BN): ReductionContext = js.native
+    
     /**
       * @description  create a reduction context
       */
@@ -90,15 +95,16 @@ object externalsMod extends js.Object {
   
   @js.native
   object rlp extends js.Object {
+    
     def decode(input: js.Array[Buffer]): js.Array[Buffer] = js.native
     def decode(input: js.Array[Buffer], stream: Boolean): js.Array[Buffer] = js.native
     def decode(input: Buffer): Buffer = js.native
     def decode(input: Buffer, stream: Boolean): Buffer = js.native
     def decode(input: Input): js.Array[Buffer] | Buffer | Decoded = js.native
     def decode(input: Input, stream: Boolean): js.Array[Buffer] | Buffer | Decoded = js.native
+    
     def encode(input: Input): Buffer = js.native
+    
     def getLength(input: Input): Buffer | Double = js.native
   }
-  
 }
-

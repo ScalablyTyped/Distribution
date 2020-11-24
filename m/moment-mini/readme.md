@@ -11,8 +11,8 @@ Parse, validate, manipulate, and display dates
 | Full name          | moment-mini |
 | Keywords           | moment, date, time, parse, format, validate, i18n, l10n, ender |
 | # releases         | 2 |
-| # dependents       | 29 |
-| # downloads        | 1367760 |
+| # dependents       | 42 |
+| # downloads        | 4089266 |
 | # stars            | 0 |
 
 ## Links

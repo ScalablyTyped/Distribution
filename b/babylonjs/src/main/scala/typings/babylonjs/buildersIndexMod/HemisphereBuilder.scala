@@ -4,17 +4,17 @@ import typings.babylonjs.anon.Segments
 import typings.babylonjs.meshMod.Mesh
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/Builders/index", "HemisphereBuilder")
 @js.native
 class HemisphereBuilder ()
   extends typings.babylonjs.hemisphereBuilderMod.HemisphereBuilder
-
 /* static members */
 @JSImport("babylonjs/Meshes/Builders/index", "HemisphereBuilder")
 @js.native
 object HemisphereBuilder extends js.Object {
+  
   /**
     * Creates a hemisphere mesh
     * @param name defines the name of the mesh
@@ -24,4 +24,3 @@ object HemisphereBuilder extends js.Object {
     */
   def CreateHemisphere(name: String, options: Segments, scene: js.Any): Mesh = js.native
 }
-

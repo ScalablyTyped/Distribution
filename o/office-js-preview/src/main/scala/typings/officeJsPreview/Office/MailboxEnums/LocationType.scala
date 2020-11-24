@@ -2,11 +2,10 @@ package typings.officeJsPreview.Office.MailboxEnums
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LocationType extends js.Object
-
 /**
   * Specifies an appointment location's type.
   *
@@ -19,6 +18,7 @@ sealed trait LocationType extends js.Object
 @JSGlobal("Office.MailboxEnums.LocationType")
 @js.native
 object LocationType extends js.Object {
+  
   /**
     * A custom location.
     */
@@ -30,6 +30,4 @@ object LocationType extends js.Object {
     */
   @js.native
   sealed trait Room extends LocationType
-  
 }
-

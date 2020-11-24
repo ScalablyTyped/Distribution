@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/blogger/v3", "blogger_v3.Resource$Posts")
 @js.native
 class ResourcePosts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * blogger.posts.delete
     * @desc Delete a post by ID.
@@ -38,6 +40,7 @@ class ResourcePosts protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourcePostsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePostsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * blogger.posts.get
     * @desc Get a post by ID.
@@ -67,6 +70,7 @@ class ResourcePosts protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourcePostsGet, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def get(params: ParamsResourcePostsGet, options: MethodOptions, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
+  
   /**
     * blogger.posts.getByPath
     * @desc Retrieve a Post by Path.
@@ -98,6 +102,7 @@ class ResourcePosts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPost]
   ): Unit = js.native
+  
   /**
     * blogger.posts.insert
     * @desc Add a post.
@@ -130,6 +135,7 @@ class ResourcePosts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPost]
   ): Unit = js.native
+  
   /**
     * blogger.posts.list
     * @desc Retrieves a list of posts, possibly filtered.
@@ -168,6 +174,7 @@ class ResourcePosts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPostList]
   ): Unit = js.native
+  
   /**
     * blogger.posts.patch
     * @desc Update a post. This method supports patch semantics.
@@ -203,6 +210,7 @@ class ResourcePosts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPost]
   ): Unit = js.native
+  
   /**
     * blogger.posts.publish
     * @desc Publishes a draft post, optionally at the specific time of the
@@ -234,6 +242,7 @@ class ResourcePosts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPost]
   ): Unit = js.native
+  
   /**
     * blogger.posts.revert
     * @desc Revert a published or scheduled post to draft state.
@@ -263,6 +272,7 @@ class ResourcePosts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPost]
   ): Unit = js.native
+  
   /**
     * blogger.posts.search
     * @desc Search for a post.
@@ -294,6 +304,7 @@ class ResourcePosts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPostList]
   ): Unit = js.native
+  
   /**
     * blogger.posts.update
     * @desc Update a post.
@@ -330,4 +341,3 @@ class ResourcePosts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPost]
   ): Unit = js.native
 }
-

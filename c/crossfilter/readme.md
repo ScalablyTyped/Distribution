@@ -10,8 +10,8 @@ Fast multidimensional filtering for coordinated views.
 | Full name          | crossfilter |
 | Keywords           | square, analytics, visualization |
 | # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 748792 |
+| # dependents       | 31 |
+| # downloads        | 1311785 |
 | # stars            | 3 |
 
 ## Links

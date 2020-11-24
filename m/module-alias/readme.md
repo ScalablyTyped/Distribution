@@ -10,10 +10,10 @@ Create aliases of directories and register custom module paths
 | ------------------ | :-------------: |
 | Full name          | module-alias |
 | Keywords           | extend, modules, node, path, resolve |
-| # releases         | 8 |
-| # dependents       | 204 |
-| # downloads        | 3649783 |
-| # stars            | 14 |
+| # releases         | 4 |
+| # dependents       | 338 |
+| # downloads        | 7856620 |
+| # stars            | 15 |
 
 ## Links
 - [Homepage](https://github.com/ilearnio/module-alias)

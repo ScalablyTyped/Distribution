@@ -4,15 +4,15 @@
 Typings are for version 3.0
 
 ## Library description:
-Rails 5 ActionCable <-> Redux middleware
+Rails 6 ActionCable <-> Redux middleware
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | redux-cablecar |
 | Keywords           | cablecar, actioncable, rails, rails5, redux, redux-cablecar |
-| # releases         | 6 |
+| # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 33122 |
+| # downloads        | 32834 |
 | # stars            | 1 |
 
 ## Links

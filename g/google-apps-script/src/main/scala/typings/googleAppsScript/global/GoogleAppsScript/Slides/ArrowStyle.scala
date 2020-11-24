@@ -2,7 +2,7 @@ package typings.googleAppsScript.global.GoogleAppsScript.Slides
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The kinds of start and end forms with which linear geometry can be rendered.
@@ -14,18 +14,29 @@ import scala.scalajs.js.annotation._
 @JSGlobal("GoogleAppsScript.Slides.ArrowStyle")
 @js.native
 object ArrowStyle extends js.Object {
-  /* 3 */ val FILL_ARROW: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.FILL_ARROW with Double = js.native
-  /* 4 */ val FILL_CIRCLE: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.FILL_CIRCLE with Double = js.native
-  /* 6 */ val FILL_DIAMOND: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.FILL_DIAMOND with Double = js.native
-  /* 5 */ val FILL_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.FILL_SQUARE with Double = js.native
-  /* 1 */ val NONE: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.NONE with Double = js.native
-  /* 7 */ val OPEN_ARROW: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_ARROW with Double = js.native
-  /* 8 */ val OPEN_CIRCLE: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_CIRCLE with Double = js.native
-  /* 10 */ val OPEN_DIAMOND: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_DIAMOND with Double = js.native
-  /* 9 */ val OPEN_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_SQUARE with Double = js.native
-  /* 2 */ val STEALTH_ARROW: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.STEALTH_ARROW with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.UNSUPPORTED with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle with Double] = js.native
+  
+  /* 3 */ val FILL_ARROW: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.FILL_ARROW with Double = js.native
+  
+  /* 4 */ val FILL_CIRCLE: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.FILL_CIRCLE with Double = js.native
+  
+  /* 6 */ val FILL_DIAMOND: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.FILL_DIAMOND with Double = js.native
+  
+  /* 5 */ val FILL_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.FILL_SQUARE with Double = js.native
+  
+  /* 1 */ val NONE: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.NONE with Double = js.native
+  
+  /* 7 */ val OPEN_ARROW: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_ARROW with Double = js.native
+  
+  /* 8 */ val OPEN_CIRCLE: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_CIRCLE with Double = js.native
+  
+  /* 10 */ val OPEN_DIAMOND: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_DIAMOND with Double = js.native
+  
+  /* 9 */ val OPEN_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_SQUARE with Double = js.native
+  
+  /* 2 */ val STEALTH_ARROW: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.STEALTH_ARROW with Double = js.native
+  
+  /* 0 */ val UNSUPPORTED: typings.googleAppsScript.GoogleAppsScript.Slides.ArrowStyle.UNSUPPORTED with Double = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/operators/audit", JSImport.Namespace)
 @js.native
 object auditMod extends js.Object {
+  
   def audit[T](
     durationSelector: js.Function1[
       /* value */ T, 
@@ -14,4 +15,3 @@ object auditMod extends js.Object {
     ]
   ): js.Any = js.native
 }
-

@@ -1,6 +1,6 @@
 package typings.astTypes.buildersMod
 
-import typings.astTypes.AnonCommentsIn
+import typings.astTypes.anon.Right
 import typings.astTypes.astTypesStrings.Ampersand
 import typings.astTypes.astTypesStrings.Asterisk
 import typings.astTypes.astTypesStrings.AsteriskAsterisk
@@ -27,15 +27,37 @@ import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.namedTypesMod.namedTypes.BinaryExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BinaryExpressionBuilder extends js.Object {
+  
+  def apply(operator: Ampersand, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: AsteriskAsterisk, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: Asterisk, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: EqualssignEqualssignEqualssign, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: EqualssignEqualssign, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: ExclamationmarkEqualssignEqualssign, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: ExclamationmarkEqualssign, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: GreaterthansignEqualssign, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
   def apply(
-    operator: EqualssignEqualssign | ExclamationmarkEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssignEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign | LessthansignLessthansign | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | Plussign | `-_` | Asterisk | Slash | Percentsign | AsteriskAsterisk | Ampersand | Verticalline | ^  | in | instanceof,
+    operator: GreaterthansignGreaterthansignGreaterthansign,
     left: ExpressionKind,
     right: ExpressionKind
   ): BinaryExpression = js.native
-  def from(params: AnonCommentsIn): BinaryExpression = js.native
+  def apply(operator: GreaterthansignGreaterthansign, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: Greaterthansign, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: LessthansignEqualssign, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: LessthansignLessthansign, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: Lessthansign, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: Percentsign, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: Plussign, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: Slash, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: Verticalline, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: ^, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: `-_`, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: in, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  def apply(operator: instanceof, left: ExpressionKind, right: ExpressionKind): BinaryExpression = js.native
+  
+  def from(params: Right): BinaryExpression = js.native
 }
-

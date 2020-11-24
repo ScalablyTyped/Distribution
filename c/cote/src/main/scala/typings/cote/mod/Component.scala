@@ -3,7 +3,7 @@ package typings.cote.mod
 import typings.eventemitter2.mod.EventEmitter2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cote", "Component")
 @js.native
@@ -22,9 +22,9 @@ abstract class Component protected () extends EventEmitter2 {
     */
   discoveryOptions: DiscoveryOptions
   ) = this()
+  
   /**
     * Closes socket and stops discovery.
     */
   def close(): Unit = js.native
 }
-

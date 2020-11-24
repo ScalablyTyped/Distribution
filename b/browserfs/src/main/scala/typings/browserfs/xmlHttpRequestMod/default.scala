@@ -4,7 +4,7 @@ import typings.browserfs.fileSystemMod.BFSCallback
 import typings.browserfs.fileSystemMod.FileSystemOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("browserfs/dist/node/backend/XmlHttpRequest", JSImport.Default)
 @js.native
@@ -34,17 +34,16 @@ class default protected () extends XmlHttpRequest {
   def this(listingUrlOrObj: js.Object, prefixUrl: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
   def this(listingUrlOrObj: js.Object, prefixUrl: String, deprecateMsg: Boolean) = this()
 }
-
 /* static members */
 @JSImport("browserfs/dist/node/backend/XmlHttpRequest", JSImport.Default)
 @js.native
 object default extends js.Object {
-  val Name: String = js.native
-  val Options: FileSystemOptions = js.native
+  
   /**
     * Construct an XmlHttpRequest file system backend with the given options.
     */
   def Create(opts: XmlHttpRequestOptions, cb: BFSCallback[XmlHttpRequest]): Unit = js.native
+  
   /**
     * **Deprecated. Please use XmlHttpRequest.Create() method instead to construct XmlHttpRequest objects.**
     *
@@ -61,6 +60,10 @@ object default extends js.Object {
   ): Unit = js.native
   def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String): Unit = js.native
   def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String, deprecateMsg: Boolean): Unit = js.native
+  
+  val Name: String = js.native
+  
+  val Options: FileSystemOptions = js.native
+  
   def isAvailable(): Boolean = js.native
 }
-

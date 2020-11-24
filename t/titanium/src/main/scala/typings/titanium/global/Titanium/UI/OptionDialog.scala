@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An option dialog is a modal view that includes a message and one or more option items positioned
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class OptionDialog ()
   extends typings.titanium.Titanium.UI.OptionDialog
-

@@ -2,14 +2,14 @@ package typings.googleLibphonenumber.libphonenumber
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PhoneNumberFormat extends js.Object
-
 @JSGlobal("libphonenumber.PhoneNumberFormat")
 @js.native
 object PhoneNumberFormat extends js.Object {
+  
   @js.native
   sealed trait E164 extends PhoneNumberFormat
   
@@ -21,6 +21,4 @@ object PhoneNumberFormat extends js.Object {
   
   @js.native
   sealed trait RFC3966 extends PhoneNumberFormat
-  
 }
-

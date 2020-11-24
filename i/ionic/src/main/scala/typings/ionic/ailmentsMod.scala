@@ -5,11 +5,14 @@ import typings.ionic.definitionsMod.IAilment
 import typings.ionic.ionicStrings.`viewport-fit-not-set`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ionic/lib/doctor/ailments", JSImport.Namespace)
 @js.native
 object ailmentsMod extends js.Object {
+  
+  def formatAilmentMessage(ailment: IAilment): js.Promise[String] = js.native
+  
   @js.native
   abstract class Ailment protected ()
     extends typings.ionic.ailmentsBaseMod.Ailment {
@@ -41,6 +44,7 @@ object ailmentsMod extends js.Object {
   - typings.ionic.definitionsMod.TreatableAilment because var conflicts: `implicit`, projects. Inlined treatable */ @js.native
   class IonicCLIInstalledLocally ()
     extends typings.ionic.ailmentsBaseMod.Ailment {
+    
     val treatable: /* true */ Boolean = js.native
   }
   
@@ -53,6 +57,7 @@ object ailmentsMod extends js.Object {
   - typings.ionic.definitionsMod.TreatableAilment because var conflicts: `implicit`, projects. Inlined treatable */ @js.native
   class NpmInstalledLocally ()
     extends typings.ionic.ailmentsBaseMod.Ailment {
+    
     val treatable: /* true */ Boolean = js.native
   }
   
@@ -63,10 +68,8 @@ object ailmentsMod extends js.Object {
   @js.native
   class ViewportFitNotSet ()
     extends typings.ionic.ailmentsBaseMod.Ailment {
+    
     @JSName("id")
     val id_ViewportFitNotSet: `viewport-fit-not-set` = js.native
   }
-  
-  def formatAilmentMessage(ailment: IAilment): js.Promise[String] = js.native
 }
-

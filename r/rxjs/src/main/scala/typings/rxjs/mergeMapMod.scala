@@ -8,39 +8,11 @@ import typings.rxjs.typesMod.ObservedValueOf
 import typings.rxjs.typesMod.OperatorFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/mergeMap", JSImport.Namespace)
 @js.native
 object mergeMapMod extends js.Object {
-  @js.native
-  class MergeMapOperator[T, R] protected () extends Operator[T, R] {
-    def this(project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]]) = this()
-    def this(project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]], concurrent: Double) = this()
-    var concurrent: js.Any = js.native
-    var project: js.Any = js.native
-  }
-  
-  @js.native
-  class MergeMapSubscriber[T, R] protected () extends SimpleOuterSubscriber[T, R] {
-    def this(
-      destination: Subscriber[R],
-      project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]]
-    ) = this()
-    def this(
-      destination: Subscriber[R],
-      project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]],
-      concurrent: Double
-    ) = this()
-    var _innerSub: js.Any = js.native
-    var active: js.Any = js.native
-    var buffer: js.Any = js.native
-    var concurrent: js.Any = js.native
-    var hasCompleted: js.Any = js.native
-    var index: Double = js.native
-    var project: js.Any = js.native
-    /* protected */ def _tryNext(value: T): Unit = js.native
-  }
   
   def mergeMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
   def mergeMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O], concurrent: Double): OperatorFunction[T, ObservedValueOf[O]] = js.native
@@ -70,8 +42,49 @@ object mergeMapMod extends js.Object {
     ],
     concurrent: Double
   ): OperatorFunction[T, R] = js.native
+  
+  @js.native
+  class MergeMapOperator[T, R] protected () extends Operator[T, R] {
+    def this(project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]]) = this()
+    def this(project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]], concurrent: Double) = this()
+    
+    var concurrent: js.Any = js.native
+    
+    var project: js.Any = js.native
+  }
+  
+  @js.native
+  class MergeMapSubscriber[T, R] protected () extends SimpleOuterSubscriber[T, R] {
+    def this(
+      destination: Subscriber[R],
+      project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]]
+    ) = this()
+    def this(
+      destination: Subscriber[R],
+      project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]],
+      concurrent: Double
+    ) = this()
+    
+    var _innerSub: js.Any = js.native
+    
+    /* protected */ def _tryNext(value: T): Unit = js.native
+    
+    var active: js.Any = js.native
+    
+    var buffer: js.Any = js.native
+    
+    var concurrent: js.Any = js.native
+    
+    var hasCompleted: js.Any = js.native
+    
+    var index: Double = js.native
+    
+    var project: js.Any = js.native
+  }
+  
   @js.native
   object flatMap extends js.Object {
+    
     def apply[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
     def apply[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O], concurrent: Double): OperatorFunction[T, ObservedValueOf[O]] = js.native
     def apply[T, O /* <: ObservableInput[_] */](
@@ -101,6 +114,4 @@ object mergeMapMod extends js.Object {
       concurrent: Double
     ): OperatorFunction[T, R] = js.native
   }
-  
 }
-

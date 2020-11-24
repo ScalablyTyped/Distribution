@@ -7,11 +7,12 @@ import typings.heremaps.H.map.provider.ObjectProvider
 import typings.heremaps.H.map.provider.TileProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("H.map.layer")
 @js.native
 object layer extends js.Object {
+  
   /**
     * BaseTileLayer encapsulates funcitonailty that is common to all layers that deliver tiles, such as H.map.layer.TileLayer. The functionality includes geo bounding box to grid
     * calculation, tile request management.
@@ -90,6 +91,4 @@ object layer extends js.Object {
     def this(provider: TileProvider) = this()
     def this(provider: TileProvider, opt_options: Options) = this()
   }
-  
 }
-

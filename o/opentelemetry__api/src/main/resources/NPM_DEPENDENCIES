@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@opentelemetry/api" : "0.11.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@opentelemetry/api" : "0.11.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

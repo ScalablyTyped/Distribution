@@ -5,7 +5,7 @@ import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import typings.luminoMessaging.mod.ConflatableMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/notebook", "NotebookTools")
 @js.native
@@ -16,10 +16,35 @@ class NotebookTools protected ()
     */
   def this(options: IOptions) = this()
 }
-
 @JSImport("@jupyterlab/notebook", "NotebookTools")
 @js.native
 object NotebookTools extends js.Object {
+  
+  /**
+    * A singleton conflatable `'activecell-changed'` message.
+    */
+  val ActiveCellMessage: ConflatableMessage = js.native
+  
+  /**
+    * A singleton conflatable `'activenotebookpanel-changed'` message.
+    */
+  val ActiveNotebookPanelMessage: ConflatableMessage = js.native
+  
+  /**
+    * A singleton conflatable `'selection-changed'` message.
+    */
+  val SelectionMessage: ConflatableMessage = js.native
+  
+  /**
+    * Create an nbconvert selector.
+    */
+  def createNBConvertSelector(optionsMap: ReadonlyPartialJSONObject): typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.KeySelector = js.native
+  
+  /**
+    * Create a slideshow selector.
+    */
+  def createSlideShowSelector(): typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.KeySelector = js.native
+  
   /**
     * A cell tool displaying the active cell contents.
     */
@@ -50,6 +75,11 @@ object NotebookTools extends js.Object {
       */
     def this(options: typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.KeySelector.IOptions) = this()
   }
+  /**
+    * The namespace for `KeySelector` static data.
+    */
+  @js.native
+  object KeySelector extends js.Object
   
   /**
     * A raw metadata editor.
@@ -62,6 +92,11 @@ object NotebookTools extends js.Object {
       */
     def this(options: typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.MetadataEditorTool.IOptions) = this()
   }
+  /**
+    * The namespace for `MetadataEditorTool` static data.
+    */
+  @js.native
+  object MetadataEditorTool extends js.Object
   
   /**
     * A notebook metadata editor
@@ -78,38 +113,4 @@ object NotebookTools extends js.Object {
   @js.native
   class Tool ()
     extends typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.Tool
-  
-  /**
-    * A singleton conflatable `'activecell-changed'` message.
-    */
-  val ActiveCellMessage: ConflatableMessage = js.native
-  /**
-    * A singleton conflatable `'activenotebookpanel-changed'` message.
-    */
-  val ActiveNotebookPanelMessage: ConflatableMessage = js.native
-  /**
-    * A singleton conflatable `'selection-changed'` message.
-    */
-  val SelectionMessage: ConflatableMessage = js.native
-  /**
-    * Create an nbconvert selector.
-    */
-  def createNBConvertSelector(optionsMap: ReadonlyPartialJSONObject): typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.KeySelector = js.native
-  /**
-    * Create a slideshow selector.
-    */
-  def createSlideShowSelector(): typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.KeySelector = js.native
-  /**
-    * The namespace for `KeySelector` static data.
-    */
-  @js.native
-  object KeySelector extends js.Object
-  
-  /**
-    * The namespace for `MetadataEditorTool` static data.
-    */
-  @js.native
-  object MetadataEditorTool extends js.Object
-  
 }
-

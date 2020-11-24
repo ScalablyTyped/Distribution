@@ -2,10 +2,11 @@ package typings.xstream.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MergeSignature extends js.Object {
+  
   def apply(): Stream[_] = js.native
   def apply[T1](s1: Stream[T1]): Stream[T1] = js.native
   def apply[T](stream: Stream[T]*): Stream[T] = js.native
@@ -57,4 +58,3 @@ trait MergeSignature extends js.Object {
     s10: Stream[T10]
   ): Stream[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = js.native
 }
-

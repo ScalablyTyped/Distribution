@@ -7,7 +7,7 @@ import typings.react.mod.ComponentState
 import typings.semanticUiReact.stickyStickyMod.StickyProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Sticky")
 @js.native
@@ -16,8 +16,6 @@ class Sticky protected ()
   def this(props: StickyProps) = this()
   def this(props: StickyProps, context: js.Any) = this()
 }
-
 @JSImport("semantic-ui-react", "Sticky")
 @js.native
 object Sticky extends TopLevel[ComponentClass[StickyProps, ComponentState]]
-

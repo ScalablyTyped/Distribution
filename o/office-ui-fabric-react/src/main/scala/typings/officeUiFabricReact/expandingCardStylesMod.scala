@@ -4,11 +4,11 @@ import typings.officeUiFabricReact.expandingCardTypesMod.IExpandingCardStyleProp
 import typings.officeUiFabricReact.expandingCardTypesMod.IExpandingCardStyles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/HoverCard/ExpandingCard.styles", JSImport.Namespace)
 @js.native
 object expandingCardStylesMod extends js.Object {
+  
   def getStyles(props: IExpandingCardStyleProps): IExpandingCardStyles = js.native
 }
-

@@ -12,13 +12,15 @@ import typings.bignumberJs.bignumberJsNumbers.`8`
 import typings.bignumberJs.bignumberJsNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bignumber.js", "BigNumber")
 @js.native
 object ^ extends js.Object {
+  
   /** Helps ES6 import. */
   val BigNumber: js.UndefOr[Constructor] = js.native
+  
   /**
     * To aid in debugging, if a `BigNumber.DEBUG` property is `true` then an error will be thrown
     * if the BigNumber constructor receives an invalid `BigNumber.Value`, or if `BigNumber.isBigNumber`
@@ -62,29 +64,39 @@ object ^ extends js.Object {
     * ```
     */
   var DEBUG: js.UndefOr[Boolean] = js.native
+  
   /** See `MODULO_MODE`. */
   val EUCLID: `9` = js.native
+  
   /** Rounds towards Infinity. */
   val ROUND_CEIL: `2` = js.native
+  
   /** Rounds towards zero. */
   val ROUND_DOWN: `1` = js.native
+  
   /** Rounds towards -Infinity. */
   val ROUND_FLOOR: `3` = js.native
+  
   /** Rounds towards nearest neighbour. If equidistant, rounds towards Infinity. */
   val ROUND_HALF_CEIL: `7` = js.native
+  
   /** Rounds towards nearest neighbour. If equidistant, rounds towards zero. */
   val ROUND_HALF_DOWN: `5` = js.native
+  
   /** Rounds towards nearest neighbour. If equidistant, rounds towards even neighbour. */
   val ROUND_HALF_EVEN: `6` = js.native
+  
   /** Rounds towards nearest neighbour. If equidistant, rounds towards -Infinity. */
   val ROUND_HALF_FLOOR: `8` = js.native
+  
   /** Rounds towards nearest neighbour. If equidistant, rounds away from zero . */
   val ROUND_HALF_UP: `4` = js.native
+  
   /** Rounds away from zero. */
   val ROUND_UP: `0` = js.native
-  /** Helps ES6 import. */
-  val default: js.UndefOr[Constructor] = js.native
+  
   def clone(`object`: Config): Constructor = js.native
+  
   /**
     * Configures the settings that apply to this BigNumber constructor.
     *
@@ -119,6 +131,10 @@ object ^ extends js.Object {
     * @param object The configuration object.
     */
   def config(`object`: Config): Config = js.native
+  
+  /** Helps ES6 import. */
+  val default: js.UndefOr[Constructor] = js.native
+  
   /**
     * Returns `true` if `value` is a BigNumber instance, otherwise returns `false`.
     *
@@ -141,6 +157,7 @@ object ^ extends js.Object {
     * @param value The value to test.
     */
   def isBigNumber(value: js.Any): /* is bignumber.js.bignumber.js.BigNumber */ Boolean = js.native
+  
   /**
     * Returns a BigNumber whose value is the maximum of the arguments.
     *
@@ -157,6 +174,7 @@ object ^ extends js.Object {
     * @param n A numeric value.
     */
   def max(n: Value*): typings.bignumberJs.mod.BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the maximum of the arguments.
     *
@@ -173,6 +191,7 @@ object ^ extends js.Object {
     * @param n A numeric value.
     */
   def maximum(n: Value*): typings.bignumberJs.mod.BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the minimum of the arguments.
     *
@@ -189,6 +208,7 @@ object ^ extends js.Object {
     * @param n A numeric value.
     */
   def min(n: Value*): typings.bignumberJs.mod.BigNumber = js.native
+  
   /**
     * Returns a BigNumber whose value is the minimum of the arguments.
     *
@@ -205,6 +225,7 @@ object ^ extends js.Object {
     * @param n A numeric value.
     */
   def minimum(n: Value*): typings.bignumberJs.mod.BigNumber = js.native
+  
   /**
     * Returns a new BigNumber with a pseudo-random value equal to or greater than 0 and less than 1.
     *
@@ -239,6 +260,7 @@ object ^ extends js.Object {
     */
   def random(): typings.bignumberJs.mod.BigNumber = js.native
   def random(decimalPlaces: Double): typings.bignumberJs.mod.BigNumber = js.native
+  
   /**
     * Configures the settings that apply to this BigNumber constructor.
     *
@@ -273,6 +295,7 @@ object ^ extends js.Object {
     * @param object The configuration object.
     */
   def set(`object`: Config): Config = js.native
+  
   /**
     * Returns a BigNumber whose value is the sum of the arguments.
     *
@@ -290,4 +313,3 @@ object ^ extends js.Object {
     */
   def sum(n: Value*): typings.bignumberJs.mod.BigNumber = js.native
 }
-

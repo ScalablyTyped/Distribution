@@ -10,9 +10,9 @@ A tiny package that handles PKCS #7 padding for both strings and byte arrays
 | ------------------ | :-------------: |
 | Full name          | pkcs7-padding |
 | Keywords           | pkcs7, padding |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 7374 |
+| # releases         | 0 |
+| # dependents       | 1 |
+| # downloads        | 10636 |
 | # stars            | 0 |
 
 ## Links

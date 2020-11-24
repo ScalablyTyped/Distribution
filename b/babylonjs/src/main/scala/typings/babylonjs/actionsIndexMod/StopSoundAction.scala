@@ -3,7 +3,7 @@ package typings.babylonjs.actionsIndexMod
 import typings.babylonjs.soundMod.Sound
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Actions/index", "StopSoundAction")
 @js.native
@@ -18,4 +18,3 @@ class StopSoundAction protected ()
   def this(triggerOptions: js.Any, sound: Sound) = this()
   def this(triggerOptions: js.Any, sound: Sound, condition: typings.babylonjs.conditionMod.Condition) = this()
 }
-

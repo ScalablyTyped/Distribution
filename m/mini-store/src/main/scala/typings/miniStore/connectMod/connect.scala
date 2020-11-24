@@ -4,11 +4,12 @@ import typings.miniStore.typesMod.ConnectedComponent
 import typings.miniStore.typesMod.StoreProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mini-store/cjs/connect", "connect")
 @js.native
 object connect extends js.Object {
+  
   def apply[TStateProps, TOwnProps, State](): js.Function1[
     /* WrappedComponent */ js.Any, 
     ConnectedComponent[_, TStateProps with StoreProp[State], TOwnProps]
@@ -29,4 +30,3 @@ object connect extends js.Object {
     ConnectedComponent[_, TStateProps with StoreProp[State], TOwnProps]
   ] = js.native
 }
-

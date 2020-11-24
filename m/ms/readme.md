@@ -11,8 +11,8 @@ Tiny millisecond conversion utility
 | Full name          | ms |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 1217 |
-| # downloads        | 1565506212 |
+| # dependents       | 1457 |
+| # downloads        | 2327593091 |
 | # stars            | 113 |
 
 ## Links

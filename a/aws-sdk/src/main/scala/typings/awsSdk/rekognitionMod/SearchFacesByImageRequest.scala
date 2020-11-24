@@ -2,66 +2,81 @@ package typings.awsSdk.rekognitionMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SearchFacesByImageRequest extends js.Object {
+  
   /**
     * ID of the collection to search.
     */
   var CollectionId: typings.awsSdk.rekognitionMod.CollectionId = js.native
+  
   /**
     * (Optional) Specifies the minimum confidence in the face match to return. For example, don't return any matches where confidence in matches is less than 70%. The default value is 80%.
     */
   var FaceMatchThreshold: js.UndefOr[Percent] = js.native
+  
   /**
     * The input image as base64-encoded bytes or an S3 object. If you use the AWS CLI to call Amazon Rekognition operations, passing base64-encoded image bytes is not supported.  If you are using an AWS SDK to call Amazon Rekognition, you might not need to base64-encode image bytes passed using the Bytes field. For more information, see Images in the Amazon Rekognition developer guide.
     */
   var Image: typings.awsSdk.rekognitionMod.Image = js.native
+  
   /**
     * Maximum number of faces to return. The operation returns the maximum number of faces with the highest confidence in the match.
     */
   var MaxFaces: js.UndefOr[typings.awsSdk.rekognitionMod.MaxFaces] = js.native
+  
   /**
     * A filter that specifies a quality bar for how much filtering is done to identify faces. Filtered faces aren't searched for in the collection. If you specify AUTO, Amazon Rekognition chooses the quality bar. If you specify LOW, MEDIUM, or HIGH, filtering removes all faces that don’t meet the chosen quality bar. The quality bar is based on a variety of common use cases. Low-quality detections can occur for a number of reasons. Some examples are an object that's misidentified as a face, a face that's too blurry, or a face with a pose that's too extreme to use. If you specify NONE, no filtering is performed. The default value is NONE.  To use quality filtering, the collection you are using must be associated with version 3 of the face model or higher.
     */
   var QualityFilter: js.UndefOr[typings.awsSdk.rekognitionMod.QualityFilter] = js.native
 }
-
 object SearchFacesByImageRequest {
+  
   @scala.inline
   def apply(CollectionId: CollectionId, Image: Image): SearchFacesByImageRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId.asInstanceOf[js.Any], Image = Image.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchFacesByImageRequest]
   }
+  
   @scala.inline
   implicit class SearchFacesByImageRequestOps[Self <: SearchFacesByImageRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: java.lang.String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCollectionId(value: CollectionId): Self = this.set("CollectionId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setImage(value: Image): Self = this.set("Image", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFaceMatchThreshold(value: Percent): Self = this.set("FaceMatchThreshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFaceMatchThreshold: Self = this.set("FaceMatchThreshold", js.undefined)
+    
     @scala.inline
     def setMaxFaces(value: MaxFaces): Self = this.set("MaxFaces", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaxFaces: Self = this.set("MaxFaces", js.undefined)
+    
     @scala.inline
     def setQualityFilter(value: QualityFilter): Self = this.set("QualityFilter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteQualityFilter: Self = this.set("QualityFilter", js.undefined)
   }
-  
 }
-

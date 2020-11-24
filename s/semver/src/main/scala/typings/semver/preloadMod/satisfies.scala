@@ -4,11 +4,12 @@ import typings.semver.mod.Options
 import typings.semver.rangeMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver/preload", "satisfies")
 @js.native
 object satisfies extends js.Object {
+  
   /**
     * Return true if the version satisfies the range.
     */
@@ -25,4 +26,3 @@ object satisfies extends js.Object {
   def apply(version: typings.semver.semverMod.^, range: ^, optionsOrLoose: Boolean): Boolean = js.native
   def apply(version: typings.semver.semverMod.^, range: ^, optionsOrLoose: Options): Boolean = js.native
 }
-

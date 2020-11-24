@@ -4,7 +4,7 @@ import typings.std.EventTarget
 import typings.std.FrameRequestCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Type definitions for WebVR API
 // Project: https://w3c.github.io/webvr/
@@ -12,55 +12,57 @@ import scala.scalajs.js.annotation._
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 @js.native
 trait VRDisplay extends EventTarget {
-  /**
-    * Dictionary of capabilities describing the VRDisplay.
-    */
-  val capabilities: VRDisplayCapabilities = js.native
-  /**
-    * z-depth defining the far plane of the eye view frustum
-    * enables mapping of values in the render target depth
-    * attachment to scene coordinates. Initially set to 10000.0.
-    */
-  var depthFar: Double = js.native
-  /**
-    * z-depth defining the near plane of the eye view frustum
-    * enables mapping of values in the render target depth
-    * attachment to scene coordinates. Initially set to 0.01.
-    */
-  var depthNear: Double = js.native
-  /**
-    * An identifier for this distinct VRDisplay. Used as an
-    * association point in the Gamepad API.
-    */
-  val displayId: Double = js.native
-  /**
-    * A display name, a user-readable name identifying it.
-    */
-  val displayName: String = js.native
-  val isConnected: Boolean = js.native
-  val isPresenting: Boolean = js.native
-  /**
-    * If this VRDisplay supports room-scale experiences, the optional
-    * stage attribute contains details on the room-scale parameters.
-    */
-  val stageParameters: VRStageParameters | Null = js.native
+  
   /**
     * Passing the value returned by `requestAnimationFrame` to
     * `cancelAnimationFrame` will unregister the callback.
     * @param handle Define the hanle of the request to cancel
     */
   def cancelAnimationFrame(handle: Double): Unit = js.native
+  
+  /**
+    * Dictionary of capabilities describing the VRDisplay.
+    */
+  val capabilities: VRDisplayCapabilities = js.native
+  
+  /**
+    * z-depth defining the far plane of the eye view frustum
+    * enables mapping of values in the render target depth
+    * attachment to scene coordinates. Initially set to 10000.0.
+    */
+  var depthFar: Double = js.native
+  
+  /**
+    * z-depth defining the near plane of the eye view frustum
+    * enables mapping of values in the render target depth
+    * attachment to scene coordinates. Initially set to 0.01.
+    */
+  var depthNear: Double = js.native
+  
+  /**
+    * An identifier for this distinct VRDisplay. Used as an
+    * association point in the Gamepad API.
+    */
+  val displayId: Double = js.native
+  
+  /**
+    * A display name, a user-readable name identifying it.
+    */
+  val displayName: String = js.native
+  
   /**
     * Stops presenting to the VRDisplay.
     * @returns a promise to know when it stopped
     */
   def exitPresent(): js.Promise[Unit] = js.native
+  
   /**
     * Return the current VREyeParameters for the given eye.
     * @param whichEye Define the eye we want the parameter for
     * @returns the eye parameters
     */
   def getEyeParameters(whichEye: String): VREyeParameters = js.native
+  
   /**
     * Populates the passed VRFrameData with the information required to render
     * the current frame.
@@ -68,17 +70,20 @@ trait VRDisplay extends EventTarget {
     * @returns true if ok otherwise false
     */
   def getFrameData(frameData: VRFrameData): Boolean = js.native
+  
   /**
     * Return the current instantaneous pose of the VRDisplay, with no
     * prediction applied.
     * @returns the current instantaneous pose
     */
   def getImmediatePose(): VRPose = js.native
+  
   /**
     * Get the layers currently being presented.
     * @returns the list of VR layers
     */
   def getLayers(): js.Array[VRLayer] = js.native
+  
   /**
     * Return a VRPose containing the future predicted pose of the VRDisplay
     * when the current frame will be presented. The value returned will not
@@ -89,6 +94,11 @@ trait VRDisplay extends EventTarget {
     * @returns the pose object
     */
   def getPose(): VRPose = js.native
+  
+  val isConnected: Boolean = js.native
+  
+  val isPresenting: Boolean = js.native
+  
   /**
     * The callback passed to `requestAnimationFrame` will be called
     * any time a new frame should be rendered. When the VRDisplay is
@@ -101,6 +111,7 @@ trait VRDisplay extends EventTarget {
     * @returns the request handle it
     */
   def requestAnimationFrame(callback: FrameRequestCallback): Double = js.native
+  
   /**
     * Begin presenting to the VRDisplay. Must be called in response to a user gesture.
     * Repeat calls while already presenting will update the VRLayers being displayed.
@@ -108,6 +119,7 @@ trait VRDisplay extends EventTarget {
     * @returns a promise to know when the request has been fulfilled
     */
   def requestPresent(layers: js.Array[VRLayer]): js.Promise[Unit] = js.native
+  
   /**
     * Reset the pose for this display, treating its current position and
     * orientation as the "origin/zero" values. VRPose.position,
@@ -116,6 +128,13 @@ trait VRDisplay extends EventTarget {
     * sitting-space experiences.
     */
   def resetPose(): Unit = js.native
+  
+  /**
+    * If this VRDisplay supports room-scale experiences, the optional
+    * stage attribute contains details on the room-scale parameters.
+    */
+  val stageParameters: VRStageParameters | Null = js.native
+  
   /**
     * The VRLayer provided to the VRDisplay will be captured and presented
     * in the HMD. Calling this function has the same effect on the source
@@ -126,4 +145,3 @@ trait VRDisplay extends EventTarget {
   def submitFrame(): Unit = js.native
   def submitFrame(pose: VRPose): Unit = js.native
 }
-

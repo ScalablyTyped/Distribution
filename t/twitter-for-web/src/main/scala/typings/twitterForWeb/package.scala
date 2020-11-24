@@ -2,14 +2,16 @@ package typings
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object twitterForWeb {
+  
   /**
     * Base type for TwitterTimelineWidgetOptions. TwitterTimelineWidgetOptions can
     * use all options of tweet widgets and button widgets
     */
   type TwitterTimelineWidgetBaseOptions = typings.twitterForWeb.TwitterTweetWidgetOptions with typings.twitterForWeb.TwitterButtonWidgetOptions
+  
   /* Rewritten from type alias, can be one of: 
     - typings.twitterForWeb.TwitterTimelineWidgetProfileDataSource
     - typings.twitterForWeb.TwitterTimelineWidgetLikesDataSource

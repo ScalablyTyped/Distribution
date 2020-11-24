@@ -6,13 +6,14 @@ import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.parent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VictoryAreaProps
   extends VictorySingleLabableProps
      with VictoryCommonProps
      with VictoryDatableProps {
+  
   /**
     * The event prop take an array of event objects. Event objects are composed of
     * a target, an eventKey, and eventHandlers. Targets may be any valid style namespace
@@ -51,22 +52,26 @@ trait VictoryAreaProps
     * ]}
     */
   var events: js.UndefOr[js.Array[EventPropTypeInterface[data | labels | parent, all]]] = js.native
+  
   /**
     * The interpolation prop determines how data points should be connected when plotting a line
     * @default "linear"
     */
   var interpolation: js.UndefOr[InterpolationPropType] = js.native
+  
   /**
     * The labels prop defines the labels that will appear above each point.
     * This prop should be given as an array or as a function of data.
     */
   var labels: js.UndefOr[(js.Array[Double | String]) | js.Function] = js.native
+  
   /**
     * The samples prop specifies how many individual points to plot when plotting
     * y as a function of x. Samples is ignored if x props are provided instead.
     * @default 50
     */
   var samples: js.UndefOr[Double] = js.native
+  
   /**
     * The style prop specifies styles for your VictoryArea. Any valid inline style properties
     * will be applied. Height, width, and padding should be specified via the height,
@@ -76,49 +81,63 @@ trait VictoryAreaProps
     */
   var style: js.UndefOr[VictoryStyleInterface] = js.native
 }
-
 object VictoryAreaProps {
+  
   @scala.inline
   def apply(): VictoryAreaProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryAreaProps]
   }
+  
   @scala.inline
   implicit class VictoryAreaPropsOps[Self <: VictoryAreaProps] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setEventsVarargs(value: (EventPropTypeInterface[data | labels | parent, all])*): Self = this.set("events", js.Array(value :_*))
+    
     @scala.inline
     def setEvents(value: js.Array[EventPropTypeInterface[data | labels | parent, all]]): Self = this.set("events", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEvents: Self = this.set("events", js.undefined)
+    
     @scala.inline
     def setInterpolation(value: InterpolationPropType): Self = this.set("interpolation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInterpolation: Self = this.set("interpolation", js.undefined)
+    
     @scala.inline
     def setLabelsVarargs(value: (Double | String)*): Self = this.set("labels", js.Array(value :_*))
+    
     @scala.inline
     def setLabels(value: (js.Array[Double | String]) | js.Function): Self = this.set("labels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabels: Self = this.set("labels", js.undefined)
+    
     @scala.inline
     def setSamples(value: Double): Self = this.set("samples", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSamples: Self = this.set("samples", js.undefined)
+    
     @scala.inline
     def setStyle(value: VictoryStyleInterface): Self = this.set("style", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStyle: Self = this.set("style", js.undefined)
   }
-  
 }
-

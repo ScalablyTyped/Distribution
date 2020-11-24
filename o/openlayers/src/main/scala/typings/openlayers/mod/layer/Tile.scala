@@ -3,7 +3,7 @@ package typings.openlayers.mod.layer
 import typings.openlayers.mod.olx.layer.TileOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -33,6 +33,7 @@ import scala.scalajs.js.annotation._
   */
 class Tile () extends Layer {
   def this(opt_options: TileOptions) = this()
+  
   /**
     * Return the level as number to which we will preload tiles up to.
     * @return The level to preload tiles up to.
@@ -40,6 +41,7 @@ class Tile () extends Layer {
     * @api
     */
   def getPreload(): Double = js.native
+  
   /**
     * Whether we use interim tiles on error.
     * @return Use interim tiles on error.
@@ -47,6 +49,7 @@ class Tile () extends Layer {
     * @api
     */
   def getUseInterimTilesOnError(): Boolean = js.native
+  
   /**
     * Set the level as number to which we will preload tiles up to.
     * @param preload The level to preload tiles up to.
@@ -54,6 +57,7 @@ class Tile () extends Layer {
     * @api
     */
   def setPreload(preload: Double): Unit = js.native
+  
   /**
     * Set whether we use interim tiles on error.
     * @param useInterimTilesOnError Use interim tiles on error.
@@ -62,4 +66,3 @@ class Tile () extends Layer {
     */
   def setUseInterimTilesOnError(useInterimTilesOnError: Boolean): Unit = js.native
 }
-

@@ -175,186 +175,358 @@ import typings.superfine.superfineStrings.view
 import typings.superfine.superfineStrings.wbr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {readonly [ TTagName in keyof superfine.superfine.HtmlOrSvgElementTagNameMap ]: superfine.superfine.Props<TTagName>} */
 @js.native
 trait IntrinsicElements extends js.Object {
+  
   val a: Props[typings.superfine.superfineStrings.a] = js.native
+  
   val abbr: Props[typings.superfine.superfineStrings.abbr] = js.native
+  
   val address: Props[typings.superfine.superfineStrings.address] = js.native
+  
   val applet: Props[typings.superfine.superfineStrings.applet] = js.native
+  
   val area: Props[typings.superfine.superfineStrings.area] = js.native
+  
   val article: Props[typings.superfine.superfineStrings.article] = js.native
+  
   val aside: Props[typings.superfine.superfineStrings.aside] = js.native
+  
   val audio: Props[typings.superfine.superfineStrings.audio] = js.native
+  
   val b: Props[typings.superfine.superfineStrings.b] = js.native
+  
   val base: Props[typings.superfine.superfineStrings.base] = js.native
+  
   val basefont: Props[typings.superfine.superfineStrings.basefont] = js.native
+  
   val bdi: Props[typings.superfine.superfineStrings.bdi] = js.native
+  
   val bdo: Props[typings.superfine.superfineStrings.bdo] = js.native
+  
   val blockquote: Props[typings.superfine.superfineStrings.blockquote] = js.native
+  
   val body: Props[typings.superfine.superfineStrings.body] = js.native
+  
   val br: Props[typings.superfine.superfineStrings.br] = js.native
+  
   val button: Props[typings.superfine.superfineStrings.button] = js.native
+  
   val canvas: Props[typings.superfine.superfineStrings.canvas] = js.native
+  
   val caption: Props[typings.superfine.superfineStrings.caption] = js.native
+  
   val circle: Props[typings.superfine.superfineStrings.circle] = js.native
+  
   val cite: Props[typings.superfine.superfineStrings.cite] = js.native
+  
   val clipPath: Props[typings.superfine.superfineStrings.clipPath] = js.native
+  
   val code: Props[typings.superfine.superfineStrings.code] = js.native
+  
   val col: Props[typings.superfine.superfineStrings.col] = js.native
+  
   val colgroup: Props[typings.superfine.superfineStrings.colgroup] = js.native
+  
   val data: Props[typings.superfine.superfineStrings.data] = js.native
+  
   val datalist: Props[typings.superfine.superfineStrings.datalist] = js.native
+  
   val dd: Props[typings.superfine.superfineStrings.dd] = js.native
+  
   val defs: Props[typings.superfine.superfineStrings.defs] = js.native
+  
   val del: Props[typings.superfine.superfineStrings.del] = js.native
+  
   val desc: Props[typings.superfine.superfineStrings.desc] = js.native
+  
   val details: Props[typings.superfine.superfineStrings.details] = js.native
+  
   val dfn: Props[typings.superfine.superfineStrings.dfn] = js.native
+  
   val dialog: Props[typings.superfine.superfineStrings.dialog] = js.native
+  
   val dir: Props[typings.superfine.superfineStrings.dir] = js.native
+  
   val div: Props[typings.superfine.superfineStrings.div] = js.native
+  
   val dl: Props[typings.superfine.superfineStrings.dl] = js.native
+  
   val dt: Props[typings.superfine.superfineStrings.dt] = js.native
+  
   val ellipse: Props[typings.superfine.superfineStrings.ellipse] = js.native
+  
   val em: Props[typings.superfine.superfineStrings.em] = js.native
+  
   val embed: Props[typings.superfine.superfineStrings.embed] = js.native
+  
   val feBlend: Props[typings.superfine.superfineStrings.feBlend] = js.native
+  
   val feColorMatrix: Props[typings.superfine.superfineStrings.feColorMatrix] = js.native
+  
   val feComponentTransfer: Props[typings.superfine.superfineStrings.feComponentTransfer] = js.native
+  
   val feComposite: Props[typings.superfine.superfineStrings.feComposite] = js.native
+  
   val feConvolveMatrix: Props[typings.superfine.superfineStrings.feConvolveMatrix] = js.native
+  
   val feDiffuseLighting: Props[typings.superfine.superfineStrings.feDiffuseLighting] = js.native
+  
   val feDisplacementMap: Props[typings.superfine.superfineStrings.feDisplacementMap] = js.native
+  
   val feDistantLight: Props[typings.superfine.superfineStrings.feDistantLight] = js.native
+  
   val feFlood: Props[typings.superfine.superfineStrings.feFlood] = js.native
+  
   val feFuncA: Props[typings.superfine.superfineStrings.feFuncA] = js.native
+  
   val feFuncB: Props[typings.superfine.superfineStrings.feFuncB] = js.native
+  
   val feFuncG: Props[typings.superfine.superfineStrings.feFuncG] = js.native
+  
   val feFuncR: Props[typings.superfine.superfineStrings.feFuncR] = js.native
+  
   val feGaussianBlur: Props[typings.superfine.superfineStrings.feGaussianBlur] = js.native
+  
   val feImage: Props[typings.superfine.superfineStrings.feImage] = js.native
+  
   val feMerge: Props[typings.superfine.superfineStrings.feMerge] = js.native
+  
   val feMergeNode: Props[typings.superfine.superfineStrings.feMergeNode] = js.native
+  
   val feMorphology: Props[typings.superfine.superfineStrings.feMorphology] = js.native
+  
   val feOffset: Props[typings.superfine.superfineStrings.feOffset] = js.native
+  
   val fePointLight: Props[typings.superfine.superfineStrings.fePointLight] = js.native
+  
   val feSpecularLighting: Props[typings.superfine.superfineStrings.feSpecularLighting] = js.native
+  
   val feSpotLight: Props[typings.superfine.superfineStrings.feSpotLight] = js.native
+  
   val feTile: Props[typings.superfine.superfineStrings.feTile] = js.native
+  
   val feTurbulence: Props[typings.superfine.superfineStrings.feTurbulence] = js.native
+  
   val fieldset: Props[typings.superfine.superfineStrings.fieldset] = js.native
+  
   val figcaption: Props[typings.superfine.superfineStrings.figcaption] = js.native
+  
   val figure: Props[typings.superfine.superfineStrings.figure] = js.native
+  
   val filter: Props[typings.superfine.superfineStrings.filter] = js.native
+  
   val font: Props[typings.superfine.superfineStrings.font] = js.native
+  
   val footer: Props[typings.superfine.superfineStrings.footer] = js.native
+  
   val foreignObject: Props[typings.superfine.superfineStrings.foreignObject] = js.native
+  
   val form: Props[typings.superfine.superfineStrings.form] = js.native
+  
   val frame: Props[typings.superfine.superfineStrings.frame] = js.native
+  
   val frameset: Props[typings.superfine.superfineStrings.frameset] = js.native
+  
   val g: Props[typings.superfine.superfineStrings.g] = js.native
+  
   val h1: Props[typings.superfine.superfineStrings.h1] = js.native
+  
   val h2: Props[typings.superfine.superfineStrings.h2] = js.native
+  
   val h3: Props[typings.superfine.superfineStrings.h3] = js.native
+  
   val h4: Props[typings.superfine.superfineStrings.h4] = js.native
+  
   val h5: Props[typings.superfine.superfineStrings.h5] = js.native
+  
   val h6: Props[typings.superfine.superfineStrings.h6] = js.native
+  
   val head: Props[typings.superfine.superfineStrings.head] = js.native
+  
   val header: Props[typings.superfine.superfineStrings.header] = js.native
+  
   val hgroup: Props[typings.superfine.superfineStrings.hgroup] = js.native
+  
   val hr: Props[typings.superfine.superfineStrings.hr] = js.native
+  
   val html: Props[typings.superfine.superfineStrings.html] = js.native
+  
   val i: Props[typings.superfine.superfineStrings.i] = js.native
+  
   val iframe: Props[typings.superfine.superfineStrings.iframe] = js.native
+  
   val image: Props[typings.superfine.superfineStrings.image] = js.native
+  
   val img: Props[typings.superfine.superfineStrings.img] = js.native
+  
   val input: Props[typings.superfine.superfineStrings.input] = js.native
+  
   val ins: Props[typings.superfine.superfineStrings.ins] = js.native
+  
   val kbd: Props[typings.superfine.superfineStrings.kbd] = js.native
+  
   val label: Props[typings.superfine.superfineStrings.label] = js.native
+  
   val legend: Props[typings.superfine.superfineStrings.legend] = js.native
+  
   val li: Props[typings.superfine.superfineStrings.li] = js.native
+  
   val line: Props[typings.superfine.superfineStrings.line] = js.native
+  
   val linearGradient: Props[typings.superfine.superfineStrings.linearGradient] = js.native
+  
   val link: Props[typings.superfine.superfineStrings.link] = js.native
+  
   val main: Props[typings.superfine.superfineStrings.main] = js.native
+  
   val map: Props[typings.superfine.superfineStrings.map] = js.native
+  
   val mark: Props[typings.superfine.superfineStrings.mark] = js.native
+  
   val marker: Props[typings.superfine.superfineStrings.marker] = js.native
+  
   val marquee: Props[typings.superfine.superfineStrings.marquee] = js.native
+  
   val mask: Props[typings.superfine.superfineStrings.mask] = js.native
+  
   val menu: Props[typings.superfine.superfineStrings.menu] = js.native
+  
   val meta: Props[typings.superfine.superfineStrings.meta] = js.native
+  
   val metadata: Props[typings.superfine.superfineStrings.metadata] = js.native
+  
   val meter: Props[typings.superfine.superfineStrings.meter] = js.native
+  
   val nav: Props[typings.superfine.superfineStrings.nav] = js.native
+  
   val noscript: Props[typings.superfine.superfineStrings.noscript] = js.native
+  
   val `object`: Props[typings.superfine.superfineStrings.`object`] = js.native
+  
   val ol: Props[typings.superfine.superfineStrings.ol] = js.native
+  
   val optgroup: Props[typings.superfine.superfineStrings.optgroup] = js.native
+  
   val option: Props[typings.superfine.superfineStrings.option] = js.native
+  
   val output: Props[typings.superfine.superfineStrings.output] = js.native
+  
   val p: Props[typings.superfine.superfineStrings.p] = js.native
+  
   val param: Props[typings.superfine.superfineStrings.param] = js.native
+  
   val path: Props[typings.superfine.superfineStrings.path] = js.native
+  
   val pattern: Props[typings.superfine.superfineStrings.pattern] = js.native
+  
   val picture: Props[typings.superfine.superfineStrings.picture] = js.native
+  
   val polygon: Props[typings.superfine.superfineStrings.polygon] = js.native
+  
   val polyline: Props[typings.superfine.superfineStrings.polyline] = js.native
+  
   val pre: Props[typings.superfine.superfineStrings.pre] = js.native
+  
   val progress: Props[typings.superfine.superfineStrings.progress] = js.native
+  
   val q: Props[typings.superfine.superfineStrings.q] = js.native
+  
   val radialGradient: Props[typings.superfine.superfineStrings.radialGradient] = js.native
+  
   val rect: Props[typings.superfine.superfineStrings.rect] = js.native
+  
   val rp: Props[typings.superfine.superfineStrings.rp] = js.native
+  
   val rt: Props[typings.superfine.superfineStrings.rt] = js.native
+  
   val ruby: Props[typings.superfine.superfineStrings.ruby] = js.native
+  
   val s: Props[typings.superfine.superfineStrings.s] = js.native
+  
   val samp: Props[typings.superfine.superfineStrings.samp] = js.native
+  
   val script: Props[typings.superfine.superfineStrings.script] = js.native
+  
   val section: Props[typings.superfine.superfineStrings.section] = js.native
+  
   val select: Props[typings.superfine.superfineStrings.select] = js.native
+  
   val slot: Props[typings.superfine.superfineStrings.slot] = js.native
+  
   val small: Props[typings.superfine.superfineStrings.small] = js.native
+  
   val source: Props[typings.superfine.superfineStrings.source] = js.native
+  
   val span: Props[typings.superfine.superfineStrings.span] = js.native
+  
   val stop: Props[typings.superfine.superfineStrings.stop] = js.native
+  
   val strong: Props[typings.superfine.superfineStrings.strong] = js.native
+  
   val style: Props[typings.superfine.superfineStrings.style] = js.native
+  
   val sub: Props[typings.superfine.superfineStrings.sub] = js.native
+  
   val summary: Props[typings.superfine.superfineStrings.summary] = js.native
+  
   val sup: Props[typings.superfine.superfineStrings.sup] = js.native
+  
   val svg: Props[typings.superfine.superfineStrings.svg] = js.native
+  
   val switch: Props[typings.superfine.superfineStrings.switch] = js.native
+  
   val symbol: Props[typings.superfine.superfineStrings.symbol] = js.native
+  
   val table: Props[typings.superfine.superfineStrings.table] = js.native
+  
   val tbody: Props[typings.superfine.superfineStrings.tbody] = js.native
+  
   val td: Props[typings.superfine.superfineStrings.td] = js.native
+  
   val template: Props[typings.superfine.superfineStrings.template] = js.native
+  
   val text: Props[typings.superfine.superfineStrings.text] = js.native
+  
   val textPath: Props[typings.superfine.superfineStrings.textPath] = js.native
+  
   val textarea: Props[typings.superfine.superfineStrings.textarea] = js.native
+  
   val tfoot: Props[typings.superfine.superfineStrings.tfoot] = js.native
+  
   val th: Props[typings.superfine.superfineStrings.th] = js.native
+  
   val thead: Props[typings.superfine.superfineStrings.thead] = js.native
+  
   val time: Props[typings.superfine.superfineStrings.time] = js.native
+  
   val title: Props[typings.superfine.superfineStrings.title] = js.native
+  
   val tr: Props[typings.superfine.superfineStrings.tr] = js.native
+  
   val track: Props[typings.superfine.superfineStrings.track] = js.native
+  
   val tspan: Props[typings.superfine.superfineStrings.tspan] = js.native
+  
   val u: Props[typings.superfine.superfineStrings.u] = js.native
+  
   val ul: Props[typings.superfine.superfineStrings.ul] = js.native
+  
   val use: Props[typings.superfine.superfineStrings.use] = js.native
+  
   val `var`: Props[typings.superfine.superfineStrings.`var`] = js.native
+  
   val video: Props[typings.superfine.superfineStrings.video] = js.native
+  
   val view: Props[typings.superfine.superfineStrings.view] = js.native
+  
   val wbr: Props[typings.superfine.superfineStrings.wbr] = js.native
 }
-
 object IntrinsicElements {
+  
   @scala.inline
   def apply(
     a: Props[a],
@@ -535,362 +707,536 @@ object IntrinsicElements {
     __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrinsicElements]
   }
+  
   @scala.inline
   implicit class IntrinsicElementsOps[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setA(value: Props[a]): Self = this.set("a", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAbbr(value: Props[abbr]): Self = this.set("abbr", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAddress(value: Props[address]): Self = this.set("address", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setApplet(value: Props[applet]): Self = this.set("applet", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setArea(value: Props[area]): Self = this.set("area", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setArticle(value: Props[article]): Self = this.set("article", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAside(value: Props[aside]): Self = this.set("aside", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAudio(value: Props[audio]): Self = this.set("audio", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setB(value: Props[b]): Self = this.set("b", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBase(value: Props[base]): Self = this.set("base", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBasefont(value: Props[basefont]): Self = this.set("basefont", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBdi(value: Props[bdi]): Self = this.set("bdi", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBdo(value: Props[bdo]): Self = this.set("bdo", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBlockquote(value: Props[blockquote]): Self = this.set("blockquote", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBody(value: Props[body]): Self = this.set("body", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBr(value: Props[br]): Self = this.set("br", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setButton(value: Props[button]): Self = this.set("button", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCanvas(value: Props[canvas]): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCaption(value: Props[caption]): Self = this.set("caption", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCircle(value: Props[circle]): Self = this.set("circle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCite(value: Props[cite]): Self = this.set("cite", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClipPath(value: Props[clipPath]): Self = this.set("clipPath", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCode(value: Props[code]): Self = this.set("code", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCol(value: Props[col]): Self = this.set("col", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setColgroup(value: Props[colgroup]): Self = this.set("colgroup", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setData(value: Props[data]): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDatalist(value: Props[datalist]): Self = this.set("datalist", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDd(value: Props[dd]): Self = this.set("dd", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDefs(value: Props[defs]): Self = this.set("defs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDel(value: Props[del]): Self = this.set("del", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDesc(value: Props[desc]): Self = this.set("desc", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDetails(value: Props[details]): Self = this.set("details", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDfn(value: Props[dfn]): Self = this.set("dfn", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDialog(value: Props[dialog]): Self = this.set("dialog", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDir(value: Props[dir]): Self = this.set("dir", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDiv(value: Props[div]): Self = this.set("div", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDl(value: Props[dl]): Self = this.set("dl", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDt(value: Props[dt]): Self = this.set("dt", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEllipse(value: Props[ellipse]): Self = this.set("ellipse", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEm(value: Props[em]): Self = this.set("em", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEmbed(value: Props[embed]): Self = this.set("embed", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeBlend(value: Props[feBlend]): Self = this.set("feBlend", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeColorMatrix(value: Props[feColorMatrix]): Self = this.set("feColorMatrix", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeComponentTransfer(value: Props[feComponentTransfer]): Self = this.set("feComponentTransfer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeComposite(value: Props[feComposite]): Self = this.set("feComposite", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeConvolveMatrix(value: Props[feConvolveMatrix]): Self = this.set("feConvolveMatrix", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeDiffuseLighting(value: Props[feDiffuseLighting]): Self = this.set("feDiffuseLighting", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeDisplacementMap(value: Props[feDisplacementMap]): Self = this.set("feDisplacementMap", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeDistantLight(value: Props[feDistantLight]): Self = this.set("feDistantLight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeFlood(value: Props[feFlood]): Self = this.set("feFlood", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeFuncA(value: Props[feFuncA]): Self = this.set("feFuncA", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeFuncB(value: Props[feFuncB]): Self = this.set("feFuncB", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeFuncG(value: Props[feFuncG]): Self = this.set("feFuncG", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeFuncR(value: Props[feFuncR]): Self = this.set("feFuncR", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeGaussianBlur(value: Props[feGaussianBlur]): Self = this.set("feGaussianBlur", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeImage(value: Props[feImage]): Self = this.set("feImage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeMerge(value: Props[feMerge]): Self = this.set("feMerge", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeMergeNode(value: Props[feMergeNode]): Self = this.set("feMergeNode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeMorphology(value: Props[feMorphology]): Self = this.set("feMorphology", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeOffset(value: Props[feOffset]): Self = this.set("feOffset", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFePointLight(value: Props[fePointLight]): Self = this.set("fePointLight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeSpecularLighting(value: Props[feSpecularLighting]): Self = this.set("feSpecularLighting", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeSpotLight(value: Props[feSpotLight]): Self = this.set("feSpotLight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeTile(value: Props[feTile]): Self = this.set("feTile", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeTurbulence(value: Props[feTurbulence]): Self = this.set("feTurbulence", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFieldset(value: Props[fieldset]): Self = this.set("fieldset", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFigcaption(value: Props[figcaption]): Self = this.set("figcaption", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFigure(value: Props[figure]): Self = this.set("figure", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFilter(value: Props[filter]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFont(value: Props[font]): Self = this.set("font", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFooter(value: Props[footer]): Self = this.set("footer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setForeignObject(value: Props[foreignObject]): Self = this.set("foreignObject", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setForm(value: Props[form]): Self = this.set("form", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFrame(value: Props[frame]): Self = this.set("frame", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFrameset(value: Props[frameset]): Self = this.set("frameset", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setG(value: Props[g]): Self = this.set("g", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setH1(value: Props[h1]): Self = this.set("h1", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setH2(value: Props[h2]): Self = this.set("h2", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setH3(value: Props[h3]): Self = this.set("h3", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setH4(value: Props[h4]): Self = this.set("h4", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setH5(value: Props[h5]): Self = this.set("h5", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setH6(value: Props[h6]): Self = this.set("h6", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHead(value: Props[head]): Self = this.set("head", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHeader(value: Props[header]): Self = this.set("header", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHgroup(value: Props[hgroup]): Self = this.set("hgroup", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHr(value: Props[hr]): Self = this.set("hr", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHtml(value: Props[html]): Self = this.set("html", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setI(value: Props[i]): Self = this.set("i", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIframe(value: Props[iframe]): Self = this.set("iframe", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setImage(value: Props[image]): Self = this.set("image", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setImg(value: Props[img]): Self = this.set("img", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setInput(value: Props[input]): Self = this.set("input", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIns(value: Props[ins]): Self = this.set("ins", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setKbd(value: Props[kbd]): Self = this.set("kbd", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLabel(value: Props[label]): Self = this.set("label", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLegend(value: Props[legend]): Self = this.set("legend", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLi(value: Props[li]): Self = this.set("li", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLine(value: Props[line]): Self = this.set("line", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLinearGradient(value: Props[linearGradient]): Self = this.set("linearGradient", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLink(value: Props[link]): Self = this.set("link", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMain(value: Props[main]): Self = this.set("main", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMap(value: Props[map]): Self = this.set("map", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMark(value: Props[mark]): Self = this.set("mark", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMarker(value: Props[marker]): Self = this.set("marker", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMarquee(value: Props[marquee]): Self = this.set("marquee", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMask(value: Props[mask]): Self = this.set("mask", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMenu(value: Props[menu]): Self = this.set("menu", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMeta(value: Props[meta]): Self = this.set("meta", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMetadata(value: Props[metadata]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMeter(value: Props[meter]): Self = this.set("meter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNav(value: Props[nav]): Self = this.set("nav", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNoscript(value: Props[noscript]): Self = this.set("noscript", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setObject(value: Props[`object`]): Self = this.set("object", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOl(value: Props[ol]): Self = this.set("ol", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOptgroup(value: Props[optgroup]): Self = this.set("optgroup", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOption(value: Props[option]): Self = this.set("option", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOutput(value: Props[output]): Self = this.set("output", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setP(value: Props[p]): Self = this.set("p", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParam(value: Props[param]): Self = this.set("param", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPath(value: Props[path]): Self = this.set("path", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPattern(value: Props[pattern]): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPicture(value: Props[picture]): Self = this.set("picture", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPolygon(value: Props[polygon]): Self = this.set("polygon", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPolyline(value: Props[polyline]): Self = this.set("polyline", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPre(value: Props[pre]): Self = this.set("pre", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setProgress(value: Props[progress]): Self = this.set("progress", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQ(value: Props[q]): Self = this.set("q", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRadialGradient(value: Props[radialGradient]): Self = this.set("radialGradient", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRect(value: Props[rect]): Self = this.set("rect", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRp(value: Props[rp]): Self = this.set("rp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRt(value: Props[rt]): Self = this.set("rt", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRuby(value: Props[ruby]): Self = this.set("ruby", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setS(value: Props[s]): Self = this.set("s", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSamp(value: Props[samp]): Self = this.set("samp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setScript(value: Props[script]): Self = this.set("script", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSection(value: Props[section]): Self = this.set("section", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSelect(value: Props[select]): Self = this.set("select", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSlot(value: Props[slot]): Self = this.set("slot", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSmall(value: Props[small]): Self = this.set("small", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSource(value: Props[source]): Self = this.set("source", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSpan(value: Props[span]): Self = this.set("span", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStop(value: Props[stop]): Self = this.set("stop", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStrong(value: Props[strong]): Self = this.set("strong", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStyle(value: Props[style]): Self = this.set("style", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSub(value: Props[sub]): Self = this.set("sub", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSummary(value: Props[summary]): Self = this.set("summary", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSup(value: Props[sup]): Self = this.set("sup", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSvg(value: Props[svg]): Self = this.set("svg", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSwitch(value: Props[switch]): Self = this.set("switch", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSymbol(value: Props[symbol]): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTable(value: Props[table]): Self = this.set("table", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTbody(value: Props[tbody]): Self = this.set("tbody", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTd(value: Props[td]): Self = this.set("td", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTemplate(value: Props[template]): Self = this.set("template", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setText(value: Props[text]): Self = this.set("text", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTextPath(value: Props[textPath]): Self = this.set("textPath", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTextarea(value: Props[textarea]): Self = this.set("textarea", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTfoot(value: Props[tfoot]): Self = this.set("tfoot", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTh(value: Props[th]): Self = this.set("th", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setThead(value: Props[thead]): Self = this.set("thead", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTime(value: Props[time]): Self = this.set("time", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTitle(value: Props[title]): Self = this.set("title", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTr(value: Props[tr]): Self = this.set("tr", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTrack(value: Props[track]): Self = this.set("track", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTspan(value: Props[tspan]): Self = this.set("tspan", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setU(value: Props[u]): Self = this.set("u", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUl(value: Props[ul]): Self = this.set("ul", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUse(value: Props[use]): Self = this.set("use", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setVar(value: Props[`var`]): Self = this.set("var", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setVideo(value: Props[video]): Self = this.set("video", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setView(value: Props[view]): Self = this.set("view", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWbr(value: Props[wbr]): Self = this.set("wbr", value.asInstanceOf[js.Any])
   }
-  
 }
-

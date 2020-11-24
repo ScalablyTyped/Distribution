@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/toolresults/v1beta3", "toolresults_v1beta3.Resource$Projects")
 @js.native
 class ResourceProjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var histories: ResourceProjectsHistories = js.native
+  
   /**
     * toolresults.projects.getSettings
     * @desc Gets the Tool Results settings for a project.  May return any of
@@ -44,6 +45,9 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProjectSettings]
   ): Unit = js.native
+  
+  var histories: ResourceProjectsHistories = js.native
+  
   /**
     * toolresults.projects.initializeSettings
     * @desc Creates resources for settings which have not yet been set.
@@ -95,4 +99,3 @@ class ResourceProjects protected () extends js.Object {
     callback: BodyResponseCallback[SchemaProjectSettings]
   ): Unit = js.native
 }
-

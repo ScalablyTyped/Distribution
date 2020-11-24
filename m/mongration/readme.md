@@ -12,7 +12,7 @@ Node.js mongodb migration framework
 | Keywords           | mongration, mongodb, migration, database, node mongodb migration framework |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 14249 |
+| # downloads        | 12085 |
 | # stars            | 1 |
 
 ## Links

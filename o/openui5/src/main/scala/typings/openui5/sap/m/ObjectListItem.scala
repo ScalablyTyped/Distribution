@@ -4,53 +4,62 @@ import typings.openui5.sap.ui.core.TextDirection
 import typings.openui5.sap.ui.core.ValueState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObjectListItem extends ListItemBase {
+  
   /**
     * Adds some attribute to the aggregation <code>attributes</code>.
     * @param oAttribute the attribute to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addAttribute(oAttribute: ObjectAttribute): ObjectListItem = js.native
+  
   /**
     * Destroys all the attributes in the aggregation <code>attributes</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyAttributes(): ObjectListItem = js.native
+  
   /**
     * Destroys the firstStatus in the aggregation <code>firstStatus</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyFirstStatus(): ObjectListItem = js.native
+  
   /**
     * Destroys the secondStatus in the aggregation <code>secondStatus</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroySecondStatus(): ObjectListItem = js.native
+  
   /**
     * Gets current value of property <code>activeIcon</code>.Icon displayed when the ObjectListItem is
     * active.
     * @returns Value of property <code>activeIcon</code>
     */
   def getActiveIcon(): js.Any = js.native
+  
   /**
     * Gets content of aggregation <code>attributes</code>.List of attributes displayed below the title to
     * the left of the status fields.
     */
   def getAttributes(): js.Array[ObjectAttribute] = js.native
+  
   /**
     * Gets content of aggregation <code>firstStatus</code>.First status text field displayed on the right
     * side of the attributes.
     */
   def getFirstStatus(): ObjectStatus = js.native
+  
   /**
     * Gets current value of property <code>icon</code>.ObjectListItem icon displayed to the left of the
     * title.
     * @returns Value of property <code>icon</code>
     */
   def getIcon(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>iconDensityAware</code>.By default, this is set to true but
     * then one or more requests are sent trying to get the density perfect version of image (in case this
@@ -59,12 +68,14 @@ trait ObjectListItem extends ListItemBase {
     * @returns Value of property <code>iconDensityAware</code>
     */
   def getIconDensityAware(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>intro</code>.Defines the introductory text for the
     * ObjectListItem.
     * @returns Value of property <code>intro</code>
     */
   def getIntro(): String = js.native
+  
   /**
     * Gets current value of property <code>introTextDirection</code>.Determines the text direction of the
     * item intro.Available options for the intro direction are LTR (left-to-right) and RTL
@@ -73,6 +84,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Value of property <code>introTextDirection</code>
     */
   def getIntroTextDirection(): TextDirection = js.native
+  
   /**
     * Gets current value of property <code>markFavorite</code>.Sets the favorite state for the
     * ObjectListItem.
@@ -80,6 +92,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Value of property <code>markFavorite</code>
     */
   def getMarkFavorite(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>markFlagged</code>.Sets the flagged state for the
     * ObjectListItem.
@@ -87,6 +100,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Value of property <code>markFlagged</code>
     */
   def getMarkFlagged(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>markLocked</code>.Sets the locked state of the
     * ObjectListItem.Default value is <code>false</code>.
@@ -94,11 +108,13 @@ trait ObjectListItem extends ListItemBase {
     * @returns Value of property <code>markLocked</code>
     */
   def getMarkLocked(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>number</code>.Defines the ObjectListItem number.
     * @returns Value of property <code>number</code>
     */
   def getNumber(): String = js.native
+  
   /**
     * Gets current value of property <code>numberState</code>.Defines the ObjectListItem number and
     * numberUnit value state.Default value is <code>None</code>.
@@ -106,6 +122,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Value of property <code>numberState</code>
     */
   def getNumberState(): ValueState = js.native
+  
   /**
     * Gets current value of property <code>numberTextDirection</code>.Determines the text direction of the
     * item number.Available options for the number direction are LTR (left-to-right) and RTL
@@ -114,17 +131,20 @@ trait ObjectListItem extends ListItemBase {
     * @returns Value of property <code>numberTextDirection</code>
     */
   def getNumberTextDirection(): TextDirection = js.native
+  
   /**
     * Gets current value of property <code>numberUnit</code>.Defines the number units qualifier of the
     * ObjectListItem.
     * @returns Value of property <code>numberUnit</code>
     */
   def getNumberUnit(): String = js.native
+  
   /**
     * Gets content of aggregation <code>secondStatus</code>.Second status text field displayed on the
     * right side of the attributes.
     */
   def getSecondStatus(): ObjectStatus = js.native
+  
   /**
     * Gets current value of property <code>showMarkers</code>.If set to true, the ObjectListItem can be
     * marked with icons such as favorite and flag.
@@ -132,11 +152,13 @@ trait ObjectListItem extends ListItemBase {
     * @returns Value of property <code>showMarkers</code>
     */
   def getShowMarkers(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>title</code>.Defines the ObjectListItem title.
     * @returns Value of property <code>title</code>
     */
   def getTitle(): String = js.native
+  
   /**
     * Gets current value of property <code>titleTextDirection</code>.Determines the text direction of the
     * item title.Available options for the title direction are LTR (left-to-right) and RTL
@@ -145,6 +167,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Value of property <code>titleTextDirection</code>
     */
   def getTitleTextDirection(): TextDirection = js.native
+  
   /**
     * Checks for the provided <code>sap.m.ObjectAttribute</code> in the aggregation
     * <code>attributes</code>.and returns its index if found or -1 otherwise.
@@ -152,6 +175,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfAttribute(oAttribute: ObjectAttribute): Double = js.native
+  
   /**
     * Inserts a attribute into the aggregation <code>attributes</code>.
     * @param oAttribute the attribute to insert; if empty, nothing is inserted
@@ -162,12 +186,14 @@ trait ObjectListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertAttribute(oAttribute: ObjectAttribute, iIndex: Double): ObjectListItem = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>attributes</code>.Additionally, it unregisters
     * them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAttributes(): js.Array[ObjectAttribute] = js.native
+  
   def removeAttribute(vAttribute: String): ObjectAttribute = js.native
   /**
     * Removes a attribute from the aggregation <code>attributes</code>.
@@ -176,6 +202,7 @@ trait ObjectListItem extends ListItemBase {
     */
   def removeAttribute(vAttribute: Double): ObjectAttribute = js.native
   def removeAttribute(vAttribute: ObjectAttribute): ObjectAttribute = js.native
+  
   /**
     * Sets a new value for property <code>activeIcon</code>.Icon displayed when the ObjectListItem is
     * active.When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -184,12 +211,14 @@ trait ObjectListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setActiveIcon(sActiveIcon: js.Any): ObjectListItem = js.native
+  
   /**
     * Sets the aggregated <code>firstStatus</code>.
     * @param oFirstStatus The firstStatus to set
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setFirstStatus(oFirstStatus: ObjectStatus): ObjectListItem = js.native
+  
   /**
     * Sets a new value for property <code>icon</code>.ObjectListItem icon displayed to the left of the
     * title.When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -198,6 +227,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIcon(sIcon: js.Any): ObjectListItem = js.native
+  
   /**
     * Sets a new value for property <code>iconDensityAware</code>.By default, this is set to true but then
     * one or more requests are sent trying to get the density perfect version of image (in case this
@@ -208,6 +238,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIconDensityAware(bIconDensityAware: Boolean): ObjectListItem = js.native
+  
   /**
     * Sets a new value for property <code>intro</code>.Defines the introductory text for the
     * ObjectListItem.When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -216,6 +247,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIntro(sIntro: String): ObjectListItem = js.native
+  
   /**
     * Sets a new value for property <code>introTextDirection</code>.Determines the text direction of the
     * item intro.Available options for the intro direction are LTR (left-to-right) and RTL
@@ -226,6 +258,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIntroTextDirection(sIntroTextDirection: TextDirection): ObjectListItem = js.native
+  
   /**
     * Sets a new value for property <code>markFavorite</code>.Sets the favorite state for the
     * ObjectListItem.When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -235,6 +268,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMarkFavorite(bMarkFavorite: Boolean): ObjectListItem = js.native
+  
   /**
     * Sets a new value for property <code>markFlagged</code>.Sets the flagged state for the
     * ObjectListItem.When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -244,6 +278,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMarkFlagged(bMarkFlagged: Boolean): ObjectListItem = js.native
+  
   /**
     * Sets a new value for property <code>markLocked</code>.Sets the locked state of the
     * ObjectListItem.When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -253,6 +288,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMarkLocked(bMarkLocked: Boolean): ObjectListItem = js.native
+  
   /**
     * Sets a new value for property <code>number</code>.Defines the ObjectListItem number.When called with
     * a value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -261,6 +297,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNumber(sNumber: String): ObjectListItem = js.native
+  
   /**
     * Sets a new value for property <code>numberState</code>.Defines the ObjectListItem number and
     * numberUnit value state.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -270,6 +307,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNumberState(sNumberState: ValueState): ObjectListItem = js.native
+  
   /**
     * Sets a new value for property <code>numberTextDirection</code>.Determines the text direction of the
     * item number.Available options for the number direction are LTR (left-to-right) and RTL
@@ -280,6 +318,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNumberTextDirection(sNumberTextDirection: TextDirection): ObjectListItem = js.native
+  
   /**
     * Sets a new value for property <code>numberUnit</code>.Defines the number units qualifier of the
     * ObjectListItem.When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -288,12 +327,14 @@ trait ObjectListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNumberUnit(sNumberUnit: String): ObjectListItem = js.native
+  
   /**
     * Sets the aggregated <code>secondStatus</code>.
     * @param oSecondStatus The secondStatus to set
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSecondStatus(oSecondStatus: ObjectStatus): ObjectListItem = js.native
+  
   /**
     * Sets a new value for property <code>showMarkers</code>.If set to true, the ObjectListItem can be
     * marked with icons such as favorite and flag.When called with a value of <code>null</code> or
@@ -303,6 +344,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowMarkers(bShowMarkers: Boolean): ObjectListItem = js.native
+  
   /**
     * Sets a new value for property <code>title</code>.Defines the ObjectListItem title.When called with a
     * value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -311,6 +353,7 @@ trait ObjectListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTitle(sTitle: String): ObjectListItem = js.native
+  
   /**
     * Sets a new value for property <code>titleTextDirection</code>.Determines the text direction of the
     * item title.Available options for the title direction are LTR (left-to-right) and RTL
@@ -322,4 +365,3 @@ trait ObjectListItem extends ListItemBase {
     */
   def setTitleTextDirection(sTitleTextDirection: TextDirection): ObjectListItem = js.native
 }
-

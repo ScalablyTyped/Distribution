@@ -2,13 +2,17 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NamespaceExportDeclaration extends DeclarationStatement {
+trait NamespaceExportDeclaration
+  extends DeclarationStatement
+     with JSDocContainer
+     with _HasJSDoc {
+  
   @JSName("kind")
-  var kind_NamespaceExportDeclaration: typings.typescript.mod.SyntaxKind.NamespaceExportDeclaration = js.native
+  val kind_NamespaceExportDeclaration: typings.typescript.mod.SyntaxKind.NamespaceExportDeclaration = js.native
+  
   @JSName("name")
-  var name_NamespaceExportDeclaration: Identifier = js.native
+  val name_NamespaceExportDeclaration: Identifier = js.native
 }
-

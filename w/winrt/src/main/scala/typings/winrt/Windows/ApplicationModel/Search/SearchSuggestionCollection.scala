@@ -4,12 +4,12 @@ import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SearchSuggestionCollection extends ISearchSuggestionCollection
-
 object SearchSuggestionCollection {
+  
   @scala.inline
   def apply(
     appendQuerySuggestion: String => Unit,
@@ -22,4 +22,3 @@ object SearchSuggestionCollection {
     __obj.asInstanceOf[SearchSuggestionCollection]
   }
 }
-

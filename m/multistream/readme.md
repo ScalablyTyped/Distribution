@@ -10,9 +10,9 @@ A stream that emits multiple other streams one after another (streams3)
 | ------------------ | :-------------: |
 | Full name          | multistream |
 | Keywords           | combine streams, join streams, concat streams, multiple streams, combine, join, concat, multiple, file stream, append, append streams, combiner, joiner |
-| # releases         | 5 |
-| # dependents       | 103 |
-| # downloads        | 9957962 |
+| # releases         | 4 |
+| # dependents       | 112 |
+| # downloads        | 11431710 |
 | # stars            | 7 |
 
 ## Links

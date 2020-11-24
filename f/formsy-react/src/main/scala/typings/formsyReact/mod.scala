@@ -29,40 +29,49 @@ import typings.react.mod.ComponentType
 import typings.std.Omit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("formsy-react", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  class default protected () extends Formsy {
-    def this(props: FormsyProps) = this()
-  }
+  
+  def addValidationRule[V](name: String, func: ValidationFunction[V]): Unit = js.native
   
   val validationRules: Validations[js.Any] = js.native
-  def addValidationRule[V](name: String, func: ValidationFunction[V]): Unit = js.native
+  
   def withFormsy[T, V](WrappedComponent: ComponentType[T with PassDownProps[V]]): ComponentType[
     Omit[
       T with WrapperProps[V], 
       /* keyof formsy-react.formsy-react/dist/withFormsy.InjectedProps<V> */ errorMessage | errorMessages | hasValue | isFormDisabled | isFormSubmitted | isPristine | isRequired | isValid | isValidValue | ref | resetValue | setValidations | setValue | showError | showRequired
     ]
   ] = js.native
+  
+  @js.native
+  class default protected () extends Formsy {
+    def this(props: FormsyProps) = this()
+  }
   /* static members */
   @js.native
   object default extends js.Object {
+    
     var defaultProps: PartialFormsyProps = js.native
+    
     var displayName: String = js.native
+    
     var propTypes: Disabled = js.native
   }
   
   @js.native
   object propTypes extends js.Object {
+    
     var innerRef: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    
     var name: Validator[String] = js.native
+    
     var required: Requireable[String | Boolean | js.Object] = js.native
+    
     var validations: Requireable[String | js.Object] = js.native
+    
     var value: Requireable[_] = js.native
   }
-  
 }
-

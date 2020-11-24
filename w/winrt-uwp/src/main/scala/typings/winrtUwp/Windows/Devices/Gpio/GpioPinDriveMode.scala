@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Gpio
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait GpioPinDriveMode extends js.Object
-
 /** Describes whether a general-purpose I/O (GPIO) pin is configured as an input or an output, and how values are driven onto the pin. */
 @JSGlobal("Windows.Devices.Gpio.GpioPinDriveMode")
 @js.native
 object GpioPinDriveMode extends js.Object {
+  
   /** Configures the GPIO pin in floating mode, with high impedance. */
   @js.native
   sealed trait input extends GpioPinDriveMode
@@ -42,6 +42,4 @@ object GpioPinDriveMode extends js.Object {
   /** Configures the GPIO pin in open collector mode with resistive pull-down mode. */
   @js.native
   sealed trait outputOpenSourcePullDown extends GpioPinDriveMode
-  
 }
-

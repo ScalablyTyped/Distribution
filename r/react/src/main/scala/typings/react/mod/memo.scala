@@ -2,11 +2,12 @@ package typings.react.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react", "memo")
 @js.native
 object memo extends js.Object {
+  
   def apply[T /* <: ComponentType[_] */](Component: T): MemoExoticComponent[T] = js.native
   def apply[T /* <: ComponentType[_] */](
     Component: T,
@@ -18,4 +19,3 @@ object memo extends js.Object {
     propsAreEqual: js.Function2[/* prevProps */ PropsWithChildren[P], /* nextProps */ PropsWithChildren[P], Boolean]
   ): NamedExoticComponent[P] = js.native
 }
-

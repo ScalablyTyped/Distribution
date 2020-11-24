@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Comments")
 @js.native
 class ResourceComments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.comments.delete
     * @desc Deletes a comment.
@@ -37,6 +39,7 @@ class ResourceComments protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceCommentsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCommentsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * youtube.comments.insert
     * @desc Creates a reply to an existing comment. Note: To create a top-level
@@ -67,6 +70,7 @@ class ResourceComments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaComment]
   ): Unit = js.native
+  
   /**
     * youtube.comments.list
     * @desc Returns a list of comments that match the API request parameters.
@@ -100,6 +104,7 @@ class ResourceComments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommentListResponse]
   ): Unit = js.native
+  
   /**
     * youtube.comments.markAsSpam
     * @desc Expresses the caller's opinion that one or more comments should be
@@ -129,6 +134,7 @@ class ResourceComments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * youtube.comments.setModerationStatus
     * @desc Sets the moderation status of one or more comments. The API request
@@ -161,6 +167,7 @@ class ResourceComments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * youtube.comments.update
     * @desc Modifies a comment.
@@ -191,4 +198,3 @@ class ResourceComments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaComment]
   ): Unit = js.native
 }
-

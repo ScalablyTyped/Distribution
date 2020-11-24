@@ -12,7 +12,7 @@ import typings.qlikEngineapi.qlikEngineapiStrings.SlashqListObjectDef
 import typings.std.MediaList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class describes all the methods that apply at app level.
@@ -22,13 +22,14 @@ import scala.scalajs.js.annotation._
 trait IApp
   extends IGeneratedAPI
      with IAppObjectPrototype[IGenericListProperties, IGenericList] {
-  var global: IGlobal = js.native
+  
   /**
     * Aborts any selection mode in an app. For more information about selection mode!
     * @param qAccept - Set this parameter to true to accept the selections before exiting the selection mode.
     * @returns - A promise of a Qlik engine reply.
     */
   def abortModal(qAccept: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * You can create multiple states within a Qlik Sense app and apply these states to specific objects within the app.
     * Objects in a given state are not affected by user selections in the other states.
@@ -36,6 +37,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def addAlternateState(qStateName: String): js.Promise[Unit] = js.native
+  
   /**
     * Adds a field on the fly. The expression of a field on the fly is persisted but not its values.
     * @param qName - Name of the field.
@@ -44,22 +46,26 @@ trait IApp
     * @returns - true or false
     */
   def addFieldFromExpression(qName: String, qExpr: String): js.Promise[Boolean] = js.native
+  
   /**
     * Applies a bookmark.
     * @param qId - Identifier of the bookmark.
     * @returns - true or false
     */
   def applyBookmark(qId: String): js.Promise[Boolean] = js.native
+  
   /**
     * Loads the last logical operation (if any).
     * @returns"
     */
   def back(): js.Promise[Unit] = js.native
+  
   /**
     * Returns the number of entries on the Back stack..
     * @returns - "qReturn": <Number of entries in the back stack>
     */
   def backCount(): js.Promise[Double] = js.native
+  
   /**
     * Checks if a given expression is valid.
     *
@@ -70,6 +76,7 @@ trait IApp
     */
   def checkExpression(qExpr: String): js.Promise[ICheckExpressionResult] = js.native
   def checkExpression(qExpr: String, qLabels: js.Array[String]): js.Promise[ICheckExpressionResult] = js.native
+  
   /**
     * Checks if:
     *
@@ -81,6 +88,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def checkNumberOrExpression(qExpr: String): js.Promise[ICheckNumberOrExpressionResult] = js.native
+  
   /**
     * Checks the syntax of a script.
     * If there are errors, the engine returns the following properties in the response:
@@ -97,6 +105,7 @@ trait IApp
     * The second area ends when the next statement in the script begins.
     */
   def checkScriptSyntax(): js.Promise[js.Array[IScriptSyntaxError]] = js.native
+  
   /**
     * Clears all selections in all fields of the current app.
     * @param qLockedAlso - This parameter is optional. Default is false. Selections on locked fields are not cleared.
@@ -108,15 +117,18 @@ trait IApp
     */
   def clearAll(qLockedAlso: Boolean): js.Promise[Unit] = js.native
   def clearAll(qLockedAlso: Boolean, qStateName: String): js.Promise[Unit] = js.native
+  
   @JSName("clearSelections")
   def clearSelections_qListObjectDef(qPath: SlashqListObjectDef): js.Promise[Unit] = js.native
   @JSName("clearSelections")
   def clearSelections_qListObjectDef(qPath: SlashqListObjectDef, qColIndices: js.Array[Double]): js.Promise[Unit] = js.native
+  
   /**
     * Clears entirely the undo and redo buffer.
     * @returns - A promise of a Qlik engine reply.
     */
   def clearUndoBuffer(): js.Promise[Unit] = js.native
+  
   /**
     * Clones a bookmark.
     *
@@ -124,6 +136,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def cloneBookmark(qId: String): js.Promise[String] = js.native
+  
   /**
     * Clones a dimension.
     *
@@ -132,6 +145,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def cloneDimension(qId: String): js.Promise[String] = js.native
+  
   /**
     * Clones a measure.
     *
@@ -140,6 +154,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def cloneMeasure(qId: String): js.Promise[String] = js.native
+  
   /**
     * Clones any visualizations, sheets and stories. The clone method works for both app objects and child objects.
     * When you clone an object that contains children, the children are cloned as well.
@@ -149,6 +164,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def cloneObject(qId: String): js.Promise[String] = js.native
+  
   /**
     * Commits the draft of an object that was previously created by invoking the CreateDraft method.
     * Committing a draft replaces the corresponding published object.
@@ -158,18 +174,21 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def commitDraft(qId: String): js.Promise[Unit] = js.native
+  
   /**
     * Creates a bookmark.
     * @param qProp - Information about the object. >> This parameter is mandatory.
     * @returns - A promise of a Qlik engine reply.
     */
   def createBookmark(qProp: IGenericBookmarkProperties): js.Promise[IGenericBookmark] = js.native
+  
   /**
     * Creates a connection. A connection indicates from which data source, the data should be taken.
     * @param qConnection - Information about the connection. >> This parameter is mandatory.
     * @returns - returns a ConnectionId
     */
   def createConnection(qConnection: IConnection): js.Promise[String] = js.native
+  
   /**
     * Creates a master dimension.
     * A master dimension is stored in the library of an app and can be used in many objects.
@@ -178,6 +197,7 @@ trait IApp
     * @returns - returns a GenericDimension object
     */
   def createDimension(qProp: IGenericDimensionProperties): js.Promise[IGenericDimension] = js.native
+  
   /**
     * Creates a draft of an object.
     * This method can be used to create a draft of a sheet or a story that is published.
@@ -189,6 +209,7 @@ trait IApp
     * @returns - returns a DraftId
     */
   def createDraft(qId: String): js.Promise[String] = js.native
+  
   /**
     * Creates a master measure.
     * A master measure is stored in the library of an app and can be used in many objects.
@@ -197,6 +218,7 @@ trait IApp
     * @returns - returns a GenericMeasure
     */
   def createMeasure(qProp: IGenericMeasureProperties): js.Promise[IGenericMeasure] = js.native
+  
   def createObject(qProp: IGenericBookmarkListProperties): js.Promise[IBookmarkListObject] = js.native
   def createObject(qProp: IGenericDimensionsListProperties): js.Promise[IDimensionListObject] = js.native
   def createObject(qProp: IGenericFieldListProperties): js.Promise[IFieldListObject] = js.native
@@ -215,6 +237,7 @@ trait IApp
   def createObject(qProp: IGenericObjectProperties): js.Promise[IGenericObject] = js.native
   def createObject(qProp: IGenericSelectionListProperties): js.Promise[ISelectionListObject] = js.native
   def createObject(qProp: IGenericVariableListProperties): js.Promise[IVariableListObject] = js.native
+  
   def createSessionObject(qProp: IGenericBookmarkListProperties): js.Promise[IBookmarkListObject] = js.native
   def createSessionObject(qProp: IGenericDimensionsListProperties): js.Promise[IDimensionListObject] = js.native
   def createSessionObject(qProp: IGenericFieldListProperties): js.Promise[IFieldListObject] = js.native
@@ -232,6 +255,7 @@ trait IApp
   def createSessionObject(qProp: IGenericObjectProperties): js.Promise[IGenericObject] = js.native
   def createSessionObject(qProp: IGenericSelectionListProperties): js.Promise[ISelectionListObject] = js.native
   def createSessionObject(qProp: IGenericVariableListProperties): js.Promise[IVariableListObject] = js.native
+  
   /**
     * Creates a transient variable.
     * @param gProp - Name of the variable. Variable names are case sensitive.
@@ -239,6 +263,7 @@ trait IApp
     * @returns - returns a GenericVariable
     */
   def createSessionVariable(qProp: IGenericVariableProperties): js.Promise[IGenericVariable] = js.native
+  
   /**
     * Creates a variable.
     *
@@ -247,6 +272,7 @@ trait IApp
     * @returns - returns a Boolean
     */
   def createVariable(qName: String): js.Promise[Boolean] = js.native
+  
   /**
     * Creates a variable.
     *
@@ -256,6 +282,7 @@ trait IApp
     * @returns - returns a NxInfo. Identifier and type of the object. >> This parameter is mandatory.
     */
   def createVariableEx(qProp: IGenericVariableProperties): js.Promise[INxInfo] = js.native
+  
   /**
     * Deletes a connection.
     * The AttachedFiles connection can only be removed by the administrator of the system.
@@ -265,6 +292,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def deleteConnection(qConnectionId: String): js.Promise[Unit] = js.native
+  
   /**
     * Removes a bookmark.
     *
@@ -273,6 +301,7 @@ trait IApp
     * @returns - A promise of  Boolean
     */
   def destroyBookmark(qId: String): js.Promise[Boolean] = js.native
+  
   /**
     * Removes a dimension.
     *
@@ -281,6 +310,7 @@ trait IApp
     * @returns - A promise of  Boolean
     */
   def destroyDimension(qId: String): js.Promise[Boolean] = js.native
+  
   /**
     * Removes a dimension.
     *
@@ -290,6 +320,7 @@ trait IApp
     * @returns - A promise of  Boolean
     */
   def destroyDraft(qId: String, qSourceId: String): js.Promise[Boolean] = js.native
+  
   /**
     * Removes a generic measure.
     *
@@ -298,6 +329,7 @@ trait IApp
     * @returns - A promise of  Boolean
     */
   def destroyMeasure(qId: String): js.Promise[Boolean] = js.native
+  
   /**
     * Removes an app object.
     *
@@ -306,6 +338,7 @@ trait IApp
     * @returns - A promise of  Boolean
     */
   def destroyObject(qId: String): js.Promise[Boolean] = js.native
+  
   /**
     * Removes a transient object.
     *
@@ -314,6 +347,7 @@ trait IApp
     * @returns - A promise of Boolean
     */
   def destroySessionObject(qId: String): js.Promise[Boolean] = js.native
+  
   /**
     * Removes a transient variable.
     *
@@ -322,6 +356,7 @@ trait IApp
     * @returns - A promise of Boolean
     */
   def destroySessionVariable(qId: String): js.Promise[Boolean] = js.native
+  
   /**
     * Removes a variable.
     *
@@ -331,6 +366,7 @@ trait IApp
     * @returns - A promise of Boolean
     */
   def destroyVariableById(qId: String): js.Promise[Boolean] = js.native
+  
   /**
     * Removes a variable.
     *
@@ -340,6 +376,7 @@ trait IApp
     * @returns - A promise of Boolean
     */
   def destroyVariableByName(qName: String): js.Promise[Boolean] = js.native
+  
   /**
     * Reloads the script that is set in an app.
     *
@@ -366,6 +403,7 @@ trait IApp
   def doReload(qMode: Double, qPartial: js.UndefOr[scala.Nothing], qDebug: Boolean): js.Promise[Boolean] = js.native
   def doReload(qMode: Double, qPartial: Boolean): js.Promise[Boolean] = js.native
   def doReload(qMode: Double, qPartial: Boolean, qDebug: Boolean): js.Promise[Boolean] = js.native
+  
   /**
     * Reloads the script that is set in an app and returns the path to the script log file.
     *
@@ -376,6 +414,7 @@ trait IApp
     */
   def doReloadEx(): js.Promise[IDoReloadExResult] = js.native
   def doReloadEx(qParams: IDoReloadExParams): js.Promise[IDoReloadExResult] = js.native
+  
   /**
     * Saves an app. All objects and data in the data model are saved.
     * Script-defined variables cannot be removed using the DestroyVariableById method or the DestroyVariableByName method.
@@ -384,6 +423,7 @@ trait IApp
     */
   def doSave(): js.Promise[Unit] = js.native
   def doSave(qFileName: String): js.Promise[Unit] = js.native
+  
   /**
     * Evaluates an expression as a string.
     * Script-defined variables cannot be removed using the DestroyVariableById method or the DestroyVariableByName method.
@@ -391,6 +431,7 @@ trait IApp
     * @returns - return a expression evaluated as a string
     */
   def evaluate(qExpression: String): js.Promise[String] = js.native
+  
   /**
     * Evaluates an expression as a dual.
     * Script-defined variables cannot be removed using the DestroyVariableById method or the DestroyVariableByName method.
@@ -398,6 +439,7 @@ trait IApp
     * @returns - return a Promise with a FieldValue
     */
   def evaluateEx(qExpression: String): js.Promise[IFieldValue] = js.native
+  
   /**
     * Export an Qlik QVF with a reduced datamodel
     * @param qOptions - qBookmarkId - bookmark to export
@@ -406,6 +448,7 @@ trait IApp
     */
   def exportReducedData(): js.Promise[QDownloadInfo] = js.native
   def exportReducedData(qOptions: QBookmarkId): js.Promise[QDownloadInfo] = js.native
+  
   /**
     * Retrieves any fields that belong to the same archipelago as the specified field and
     * that match at least one of the specified tags.
@@ -416,16 +459,19 @@ trait IApp
     * @returns - A promise of FieldValue.
     */
   def findMatchingFields(qFieldName: String, qTags: js.Array[String]): js.Promise[js.Array[INxMatchingFieldInfo]] = js.native
+  
   /**
     * Loads the next logical operation (if any).
     * @returns - A promise of a Qlik engine reply.
     */
   def forward(): js.Promise[Unit] = js.native
+  
   /**
     * Returns the number of entries on the Forward stack.
     * @returns - A promise and Number of entries in the forward stack
     */
   def forwardCount(): js.Promise[Double] = js.native
+  
   /**
     * Returns the identifier and the type of any generic object in the app.
     * Script-defined variables cannot be removed using the DestroyVariableById method or the DestroyVariableByName method.
@@ -433,17 +479,20 @@ trait IApp
     * @returns - return a Promise Array of INxInfo
     */
   def getAllInfos(): js.Promise[js.Array[INxInfo]] = js.native
+  
   /**
     * Returns dynamic properties (if any) in addition to the engine (fixed) properties.
     * Script-defined variables cannot be removed using the DestroyVariableById method or the DestroyVariableByName method.
     * @returns - return a Promise  of a data set NxAppLayout
     */
   def getAppLayout(): js.Promise[INxAppLayout] = js.native
+  
   /**
     * Gets the properties of an app.
     * @returns - return a Promise of NxAppProperties qProp. Information about the properties of the app.
     */
   def getAppProperties(): js.Promise[INxAppProperties] = js.native
+  
   /**
     * Computes a set of association scores for each pair of fields between two given tables that have been loaded in an app.
     * @param qTable1 - Name of the first table.
@@ -451,18 +500,21 @@ trait IApp
     * @returns - return a Promise of IAssociationScore qScore.
     */
   def getAssociationScores(qTable1: String, qTable2: String): js.Promise[IAssociationScore] = js.native
+  
   /**
     * Returns the handle of a bookmark.
     * @param qId - Identifier of the bookmark.
     * @returns - return a Promise of IGenericBookmark.
     */
   def getBookmark(qId: String): js.Promise[IGenericBookmark] = js.native
+  
   /**
     * Returns a list of bookmarks in the app.
     * @param qOptions - Information about the list of bookmarks.
     * @returns - return a Promise of INxContainerEntry.
     */
   def getBookmarks(qOptions: INxGetBookmarkOptions): js.Promise[INxContainerEntry[_]] = js.native
+  
   /**
     * Retrieves a connection and returns:
     * - The creation time of the connection
@@ -474,6 +526,7 @@ trait IApp
     * @returns - return a Connection.
     */
   def getConnection(qConnectionId: String): js.Promise[IConnection] = js.native
+  
   /**
     * Lists the connections in an app.
     *
@@ -482,6 +535,7 @@ trait IApp
     * @returns - return a Promise of Array of Connection.
     */
   def getConnections(): js.Promise[js.Array[IConnection]] = js.native
+  
   /**
     * Lists the content libraries.
     * To differentiate a global content library from an app specific content library,
@@ -492,12 +546,14 @@ trait IApp
     * @returns - return a Promise of ContentLibraryList.
     */
   def getContentLibraries(): js.Promise[IContentLibraryList] = js.native
+  
   /**
     * Gives information about an ODBC, OLEDB or CUSTOM connection.
     * @param qConnectionId - Identifier of the connection. >> This parameter is mandatory.
     * @returns - return a Promise of DatabaseInfo.
     */
   def getDatabaseInfo(qConnectionId: String): js.Promise[IDatabaseInfo] = js.native
+  
   /**
     * Lists the owners of a database for a ODBC, OLEDB or CUSTOM connection.
     * @param qConnectionId - Identifier of the connection. >> This parameter is mandatory.
@@ -506,6 +562,7 @@ trait IApp
     */
   def getDatabaseOwners(qConnectionId: String): js.Promise[js.Array[IDatabaseOwner]] = js.native
   def getDatabaseOwners(qConnectionId: String, qDatabase: String): js.Promise[js.Array[IDatabaseOwner]] = js.native
+  
   /**
     * Lists the fields inside a table of a database for a ODBC, OLEDB or CUSTOM connection.
     * @param qConnectionId - Identifier of the connection. >> This parameter is mandatory.
@@ -520,6 +577,7 @@ trait IApp
   def getDatabaseTableFields(qConnectionId: String, qTable: String, qDatabase: js.UndefOr[scala.Nothing], qOwner: String): js.Promise[js.Array[IDataField]] = js.native
   def getDatabaseTableFields(qConnectionId: String, qTable: String, qDatabase: String): js.Promise[js.Array[IDataField]] = js.native
   def getDatabaseTableFields(qConnectionId: String, qTable: String, qDatabase: String, qOwner: String): js.Promise[js.Array[IDataField]] = js.native
+  
   /**
     * Retrieves the values of the specified table of a database for a ODBC, OLEDB or CUSTOM connection.
     * @param qConnectionId - Identifier of the connection. >> This parameter is mandatory.
@@ -534,6 +592,7 @@ trait IApp
   def getDatabaseTablePreview(qConnectionId: String, qTable: String, qDatabase: js.UndefOr[scala.Nothing], qOwner: String): js.Promise[js.Array[IDataRecord]] = js.native
   def getDatabaseTablePreview(qConnectionId: String, qTable: String, qDatabase: String): js.Promise[js.Array[IDataRecord]] = js.native
   def getDatabaseTablePreview(qConnectionId: String, qTable: String, qDatabase: String, qOwner: String): js.Promise[js.Array[IDataRecord]] = js.native
+  
   /**
     * Lists the tables inside a database for a ODBC, OLEDB or CUSTOM connection.
     * @param qConnectionId - Identifier of the connection. >> This parameter is mandatory.
@@ -547,18 +606,21 @@ trait IApp
   def getDatabaseTables(qConnectionId: String, qDatabase: js.UndefOr[scala.Nothing], qOwner: String): js.Promise[js.Array[IDataTable]] = js.native
   def getDatabaseTables(qConnectionId: String, qDatabase: String): js.Promise[js.Array[IDataTable]] = js.native
   def getDatabaseTables(qConnectionId: String, qDatabase: String, qOwner: String): js.Promise[js.Array[IDataTable]] = js.native
+  
   /**
     * Lists the databases inside a ODBC, OLEDB or CUSTOM data source.
     * @param qConnectionId - Identifier of the connection. >> This parameter is mandatory.
     * @returns - return a Promise Array of Database.
     */
   def getDatabases(qConnectionId: String): js.Promise[js.Array[IDatabase]] = js.native
+  
   /**
     * Returns the handle of a dimension.
     * @param qId - Identifier of the dimension. >> This parameter is mandatory.
     * @returns - return a Promise GenericDimension.
     */
   def getDimension(qId: String): js.Promise[IGenericDimension] = js.native
+  
   /**
     * Creates a script that contains one section.
     * This section contains Set statements that give localized information from the regional settings of the computer.
@@ -569,11 +631,13 @@ trait IApp
     */
   def getEmptyScript(): js.Promise[String] = js.native
   def getEmptyScript(qLocalizedMainSection: String): js.Promise[String] = js.native
+  
   /**
     * Retrieves the variables that are tagged as favorite.
     * @returns - return a Promise     Array of String
     */
   def getFavoriteVariables(): js.Promise[js.Array[String]] = js.native
+  
   /**
     * Retrieves the description of a field.
     * @param qFieldName - Name of the field. >> This parameter is mandatory.
@@ -582,18 +646,21 @@ trait IApp
     */
   def getField(qFieldName: String): js.Promise[IField] = js.native
   def getField(qFieldName: String, qStateName: String): js.Promise[IField] = js.native
+  
   /**
     * Retrieves the description of a field.
     * @param qFieldName - Name of the field. >> This parameter is mandatory
     * @returns - return a Promise of FieldDescription.
     */
   def getFieldDescription(qFieldName: String): js.Promise[IFieldDescription] = js.native
+  
   /**
     * Fetches the Expression behind a Field that is declared with DECLARE FIELD DEFINITIO
     * @param qReadableName: name of a Field that is declared with DECLARE FIELD DEFINITION
     * @returns qname wich contains the expression
     */
   def getFieldOnTheFlyByName(qReadableName: String): js.Promise[QName] = js.native
+  
   /**
     * Lists the fields of a table for a folder connection.
     * @param qConnectionId - Identifier of the connection. >> This parameter is mandatory.
@@ -604,6 +671,7 @@ trait IApp
     */
   def getFileTableFields(qConnectionId: String, qDataFormat: IFileDataFormat, qTable: String): js.Promise[QFields] = js.native
   def getFileTableFields(qConnectionId: String, qDataFormat: IFileDataFormat, qTable: String, qRelativePath: String): js.Promise[QFields] = js.native
+  
   /**
     * Lists the values in a table for a folder connection.
     * @param qConnectionId - Identifier of the connection. >> This parameter is mandatory.
@@ -613,6 +681,7 @@ trait IApp
     * @returns - return a Promise <Array of DataField> or <String>.
     */
   def getFileTablePreview(qConnectionId: String, qRelativePath: String, qDataFormat: IFileDataFormat, qTable: String): js.Promise[QFormatSpec] = js.native
+  
   /**
     * Lists the tables for a folder connection.
     * @param qConnectionId - Identifier of the connection. >> This parameter is mandatory.
@@ -621,6 +690,7 @@ trait IApp
     * @returns - return a Promise Array of DataTable.
     */
   def getFileTables(qConnectionId: String, qRelativePath: String, qDataFormat: IFileDataFormat): js.Promise[js.Array[IDataTable]] = js.native
+  
   /**
     * Lists the tables and fields of a JSON or XML file for a folder connection.
     * @param qConnectionId - Identifier of the connection. >> This parameter is mandatory.
@@ -629,6 +699,7 @@ trait IApp
     * @returns - return a Promise Array of DataTableEx.
     */
   def getFileTablesEx(qConnectionId: String, qRelativePath: String, qDataFormat: IFileDataFormat): js.Promise[js.Array[IDataTableEx]] = js.native
+  
   /**
     * There are two ways to specify the directory to retrieve the files from:
     * - Enter the connection identifier; the directory associated to the connection is used.
@@ -638,6 +709,7 @@ trait IApp
     * @returns - return a Promise Array of FolderItem.
     */
   def getFolderItemsForConnection(qConnectionId: String, qRelativePath: String): js.Promise[js.Array[IFolderItem]] = js.native
+  
   /**
     * Gets the content of a file.
     * @param qLibPath - ["lib://CONNECTION_NAME\\<the name of the file you want to use>.txt"] or
@@ -646,6 +718,7 @@ trait IApp
     * @returns - return a Promise of String.
     */
   def getIncludeFileContent(qLibPath: String): js.Promise[String] = js.native
+  
   /**
     * Returns the content of a library.
     * @param qName - Name of the content library. It corresponds to the property
@@ -653,16 +726,19 @@ trait IApp
     * @returns - return a Promise of StaticContentList.
     */
   def getLibraryContent(qName: String): js.Promise[IStaticContentList] = js.native
+  
   /**
     * Returns the lineage of the datamodel.
     * @returns - return a Promise of qLineage.
     */
   def getLineage(): js.Promise[QLineage] = js.native
+  
   /**
     * Retrieves locale information.
     * @returns - return a Promise of LocaleInfo.
     */
   def getLocaleInfo(): js.Promise[ILocaleInfo] = js.native
+  
   /**
     * Returns a vector of loosely coupled state flags, one element for each table in the app.
     * so that the circular references do not create a loop.
@@ -677,6 +753,7 @@ trait IApp
     * @returns - return a Promise <Array of bytes>.
     */
   def getLooselyCoupledVector(): js.Promise[js.Array[Double]] = js.native
+  
   /**
     * Retrieves any fields that match all or one of the specified tags in the data model of an app.
     *
@@ -691,6 +768,7 @@ trait IApp
     */
   def getMatchingFields(qTags: js.Array[String]): js.Promise[js.Array[INxMatchingFieldInfo]] = js.native
   def getMatchingFields(qTags: js.Array[String], qMatchingFieldMode: Boolean): js.Promise[js.Array[INxMatchingFieldInfo]] = js.native
+  
   /**
     * Returns the handle of a measure.
     *
@@ -698,6 +776,7 @@ trait IApp
     * @returns - return a Promise String GenericMeasure
     */
   def getMeasure(qId: String): js.Promise[IGenericMeasure] = js.native
+  
   /**
     * Lists the media files.
     *
@@ -705,6 +784,7 @@ trait IApp
     * @returns - return a Promise Boolean or MediaList
     */
   def getMediaList(): js.Promise[js.Array[MediaList]] = js.native
+  
   /**
     * Returns the type of the app object and the corresponding handle.
     *
@@ -712,6 +792,7 @@ trait IApp
     * @returns - return a Promise String GenericObject
     */
   def getObject(qId: String): js.Promise[IGenericObject] = js.native
+  
   /**
     * Returns a list of objects in the app.
     *
@@ -719,6 +800,7 @@ trait IApp
     * @returns - return a Promise array of NxContainerEntry.
     */
   def getObjects(qOptions: INxGetObjectOptions): js.Promise[INxContainerEntry[_]] = js.native
+  
   /**
     * Shows the properties of an object.
     *
@@ -728,11 +810,13 @@ trait IApp
     * @returns - return a Promise GenericObject
     */
   def getProperties(): js.Promise[INxAppProperties] = js.native
+  
   /**
     * Gets values in script.
     * @returns - return a Promise String <script values>
     */
   def getScript(): js.Promise[String] = js.native
+  
   /**
     * Lists the breakpoints in the script of an app.
     *
@@ -740,6 +824,7 @@ trait IApp
     * @returns - return a Promise Array of EditorBreakpoint
     */
   def getScriptBreakpoints(): js.Promise[js.Array[IEditorBreakpoint]] = js.native
+  
   /**
     * Retrieves the data of a specific table.
     * @param qOffset - Position from the top
@@ -753,6 +838,7 @@ trait IApp
     * @returns - return a Promise Array of TableRow.
     */
   def getTableData(qOffset: Double, qRows: Double, qSyntheticMode: Boolean, qTableName: String): js.Promise[js.Array[ITableRow]] = js.native
+  
   /**
     * Returns:
     *
@@ -778,6 +864,7 @@ trait IApp
     qSyntheticMode: Boolean,
     qIncludeSysVars: Boolean
   ): js.Promise[Qk] = js.native
+  
   /**
     * Fetches updated variables after a statement execution.
     *
@@ -785,6 +872,7 @@ trait IApp
     * @returns - return a Promise Array of TextMacro
     */
   def getTextMacros(): js.Promise[js.Array[ITextMacro]] = js.native
+  
   /**
     * Gets the handle of a variable.
     *
@@ -794,18 +882,21 @@ trait IApp
     * @returns - return a Promise Variable
     */
   def getVariable(qName: String): js.Promise[IVariable] = js.native
+  
   /**
     * Gets the handle of a variable.
     * @param qId - Identifier of the variable. >> This parameter is mandatory.
     * @returns - return a Promise GenericVariable
     */
   def getVariableById(qId: String): js.Promise[IGenericVariable] = js.native
+  
   /**
     * Gets the handle of a variable.
     * @param qName - Name of the variable. >> This parameter is mandatory.
     * @returns - return a Promise GenericVariable
     */
   def getVariableByName(qName: String): js.Promise[IGenericVariable] = js.native
+  
   /**
     * Retrieves information about the position of the tables in the data model viewer.
     *
@@ -813,6 +904,9 @@ trait IApp
     * @returns - return a Promise of TableViewDlgSaveInfo
     */
   def getViewDlgSaveInfo(): js.Promise[ITableViewDlgSaveInfo] = js.native
+  
+  var global: IGlobal = js.native
+  
   /**
     * Guesses the data format for a given file.
     * Recognized file formats are:
@@ -835,6 +929,7 @@ trait IApp
     */
   def guessFileType(qConnectionId: String): js.Promise[IFileDataFormat] = js.native
   def guessFileType(qConnectionId: String, qRelativePath: String): js.Promise[IFileDataFormat] = js.native
+  
   /**
     * Locks all selections in all fields of the current app.
     *
@@ -846,6 +941,7 @@ trait IApp
     */
   def lockAll(): js.Promise[Unit] = js.native
   def lockAll(qStateName: String): js.Promise[Unit] = js.native
+  
   /**
     * migrateDerivedFields.
     *
@@ -853,6 +949,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def migrateDerivedFields(): js.Promise[Unit] = js.native
+  
   /**
     * migrateDerivedFields.
     *
@@ -860,6 +957,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def migrateVariables(): js.Promise[Unit] = js.native
+  
   /**
     * Updates a connection.
     *
@@ -873,6 +971,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def modifyConnection(qConnectionId: String, qConnection: IConnection, qOverrideCredentials: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Publishes an app. The published app can have a different name than the original app.
     * All app objects are published. Generic objects, bookmarks, dimensions and measures inside the app are published.
@@ -885,6 +984,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def publish(qStreamId: String, qName: String): js.Promise[Unit] = js.native
+  
   /**
     * Redoes the previous operation.
     *
@@ -892,12 +992,14 @@ trait IApp
     * @returns - A promise true or false
     */
   def redo(): js.Promise[Boolean] = js.native
+  
   /**
     * Removes an alternate state in the app.
     * @param qStateName - Name of the alternate state. >> This parameter is mandatory.
     * @returns - A promise of a Qlik engine reply.
     */
   def removeAlternateState(qStateName: String): js.Promise[Unit] = js.native
+  
   /**
     * Removes a variable.
     *
@@ -908,11 +1010,13 @@ trait IApp
     * @returns - A promise true or false
     */
   def removeVariable(qName: String): js.Promise[Boolean] = js.native
+  
   /**
     * Resumes the app as the user left it.
     * @returns - A promise of a Qlik engine reply.
     */
   def resume(): js.Promise[Unit] = js.native
+  
   /**
     * Saves all objects that were modified in the app.
     *
@@ -921,6 +1025,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def saveObjects(): js.Promise[Unit] = js.native
+  
   /**
     * Scramble a field in the qlik datamodel.
     *
@@ -928,6 +1033,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def scramble(qFieldName: String): js.Promise[Unit] = js.native
+  
   /**
     * Returns the search matches for one or more search terms.
     * The search results depend on the search context.
@@ -942,6 +1048,7 @@ trait IApp
     * @returns - A promise true or false
     */
   def searchAssociations(qOptions: ISearchCombinationOptions, qTerms: js.Array[String], qPage: ISearchPage): js.Promise[Unit] = js.native
+  
   /**
     * Returns the generic objects corresponding to one or more search terms. The search is performed within the title,
     * subtitle, footnote and type. In addition, associated dimension values are also searched in. For example,
@@ -955,6 +1062,7 @@ trait IApp
     * @returns - A Promise of SearchResult
     */
   def searchObjects(qOptions: ISearchObjectOptions, qTerms: js.Array[String], qPage: ISearchPage): js.Promise[ISearchResult] = js.native
+  
   /**
     * Returns the search matches for one or more search terms.
     * Search results are organized in search groups. The type of search group indicates
@@ -980,6 +1088,7 @@ trait IApp
     * @returns - A Promise List of SearchResults
     */
   def searchResults(qOptions: ISearchCombinationOptions, qTerms: js.Array[String], qPage: ISearchPage): js.Promise[ISearchResult] = js.native
+  
   /**
     * For every search group item, there are one or several search matches. The position of the match in each search result is given.
     * @param qOptions - Information about the search combinations.
@@ -987,6 +1096,7 @@ trait IApp
     * @returns - A Promise List of SearchSuggestionResults
     */
   def searchSuggest(qOptions: ISearchCombinationOptions, qTerms: js.Array[String]): js.Promise[ISearchSuggestionResult] = js.native
+  
   /**
     * Selects all search hits for a specified group.
     * The results depend on the search context.
@@ -1003,6 +1113,7 @@ trait IApp
     qMatchIx: Double,
     qSoftLock: Boolean
   ): js.Promise[Unit] = js.native
+  
   /**
     * Sends a generic command to a custom connector.
     * For more information on the commands that can be sent to a custom connector, see the QVX SDK help.
@@ -1025,18 +1136,21 @@ trait IApp
     qParameters: js.Array[String],
     qAppendConnection: js.Array[String]
   ): js.Promise[String] = js.native
+  
   /**
     * Sets properties to an app.
     * @param qProp - Information about the properties of an app. / NxAppProperties
     * @returns - A promise of a Qlik engine reply.
     */
   def setAppProperties(qProp: INxAppProperties): js.Promise[Unit] = js.native
+  
   /**
     * Set some variables as favorite.
     * @param qNames - Variables to set as favorite.
     * @returns - A promise of a Qlik engine reply.
     */
   def setFavoriteVariables(qNames: js.Array[String]): js.Promise[Unit] = js.native
+  
   /**
     * Limits the number of rows of data to load from a data source.
     * This method works when reloading in debug mode.
@@ -1044,6 +1158,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def setFetchLimit(qLimit: Double): js.Promise[Unit] = js.native
+  
   /**
     * Sets a vector of loosely coupled state flags, one element for each table in the app.
     *
@@ -1057,6 +1172,7 @@ trait IApp
     * @returns - A promise true or false
     */
   def setLooselyCoupledVector(qv: js.Array[Double]): js.Promise[Boolean] = js.native
+  
   /**
     * Sets values in script.
     *
@@ -1064,6 +1180,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def setScript(qScript: String): js.Promise[Unit] = js.native
+  
   /**
     * Set some breakpoints in the script of an app.
     *
@@ -1071,6 +1188,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def setScriptBreakpoints(qBreakpoints: js.Array[IEditorBreakpoint]): js.Promise[Unit] = js.native
+  
   /**
     * Sets the positions of the tables in the data model viewer.
     *
@@ -1079,6 +1197,7 @@ trait IApp
     * @returns - A promise of a Qlik engine reply.
     */
   def setViewDlgSaveInfo(qInfo: ITableViewDlgSaveInfo): js.Promise[Unit] = js.native
+  
   /**
     * Undoes the previous operation.
     *
@@ -1086,6 +1205,7 @@ trait IApp
     * @returns - A promise true or false
     */
   def undo(): js.Promise[Boolean] = js.native
+  
   /**
     * Unlocks all selections in all fields of the current app.
     *
@@ -1098,4 +1218,3 @@ trait IApp
   def unlockAll(): js.Promise[Unit] = js.native
   def unlockAll(qStateName: String): js.Promise[Unit] = js.native
 }
-

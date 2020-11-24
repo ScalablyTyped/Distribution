@@ -11,8 +11,8 @@ A collection of loading spinners with React.js based on halogen
 | Full name          | halogenium |
 | Keywords           | react, react-component, loader, spinner, halogen, halogenium |
 | # releases         | 29 |
-| # dependents       | 8 |
-| # downloads        | 255837 |
+| # dependents       | 13 |
+| # downloads        | 387657 |
 | # stars            | 0 |
 
 ## Links

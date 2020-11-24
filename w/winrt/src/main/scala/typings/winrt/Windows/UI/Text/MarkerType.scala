@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MarkerType extends js.Object
-
 @JSGlobal("Windows.UI.Text.MarkerType")
 @js.native
 object MarkerType extends js.Object {
+  
   @js.native
   sealed trait arabic extends MarkerType
   
@@ -84,6 +84,4 @@ object MarkerType extends js.Object {
   
   @js.native
   sealed trait whiteCircleWingding extends MarkerType
-  
 }
-

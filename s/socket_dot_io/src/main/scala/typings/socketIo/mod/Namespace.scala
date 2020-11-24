@@ -6,7 +6,7 @@ import typings.socketIo.socketIoStrings.connect
 import typings.socketIo.socketIoStrings.connection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Namespace, sandboxed environments for sockets, each connection
@@ -14,47 +14,46 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Namespace extends EventEmitter {
+  
   /**
     * The Adapter that we're using to handle dealing with rooms etc
     */
   var adapter: Adapter = js.native
-  /**
-    * A dictionary of all the Sockets connected to this Namespace, where
-    * the Socket ID is the key
-    */
-  var connected: StringDictionary[Socket] = js.native
-  /**
-    * Sets the 'json' flag when emitting an event
-    */
-  var json: Namespace = js.native
-  /**
-    * The name of the NameSpace
-    */
-  var name: String = js.native
-  /**
-    * The controller Server for this Namespace
-    */
-  var server: Server = js.native
-  /**
-    * A dictionary of all the Sockets connected to this Namespace, where
-    * the Socket ID is the key
-    */
-  var sockets: StringDictionary[Socket] = js.native
+  
   /**
     * Gets a list of clients.
     * @return This Namespace
     */
   def clients(fn: js.Function): Namespace = js.native
+  
   /**
     * Sets the compress flag.
     * @param compress If `true`, compresses the sending data
     * @return This Namespace
     */
   def compress(compress: Boolean): Namespace = js.native
+  
+  /**
+    * A dictionary of all the Sockets connected to this Namespace, where
+    * the Socket ID is the key
+    */
+  var connected: StringDictionary[Socket] = js.native
+  
   /**
     * @see to( room )
     */
   def in(room: String): Namespace = js.native
+  
+  /**
+    * Sets the 'json' flag when emitting an event
+    */
+  var json: Namespace = js.native
+  
+  /**
+    * The name of the NameSpace
+    */
+  var name: String = js.native
+  
   /**
     * Base 'on' method to add a listener for an event
     * @param event The event that we want to add a listener for
@@ -76,18 +75,32 @@ trait Namespace extends EventEmitter {
     */
   @JSName("on")
   def on_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+  
   /**
     * Sends a 'message' event
     * @see emit( event, ...args )
     * @return This Namespace
     */
   def send(args: js.Any*): Namespace = js.native
+  
+  /**
+    * The controller Server for this Namespace
+    */
+  var server: Server = js.native
+  
+  /**
+    * A dictionary of all the Sockets connected to this Namespace, where
+    * the Socket ID is the key
+    */
+  var sockets: StringDictionary[Socket] = js.native
+  
   /**
     * Targets a room when emitting
     * @param room The name of the room that we're targeting
     * @return This Namespace
     */
   def to(room: String): Namespace = js.native
+  
   /**
     * Registers a middleware function, which is a function that gets executed
     * for every incoming Socket
@@ -101,9 +114,9 @@ trait Namespace extends EventEmitter {
   def use(
     fn: js.Function2[/* socket */ Socket, /* fn */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
   ): Namespace = js.native
+  
   /**
     * @see send( ...args )
     */
   def write(args: js.Any*): Namespace = js.native
 }
-

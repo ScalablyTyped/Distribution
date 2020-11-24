@@ -10,9 +10,9 @@ Promise version of fs.readFile
 | ------------------ | :-------------: |
 | Full name          | fs-readfile-promise |
 | Keywords           | fs, read, file, promise, promises, then, thenable |
-| # releases         | 1 |
-| # dependents       | 61 |
-| # downloads        | 1441632 |
+| # releases         | 0 |
+| # dependents       | 68 |
+| # downloads        | 2040039 |
 | # stars            | 4 |
 
 ## Links

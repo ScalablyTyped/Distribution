@@ -7,12 +7,14 @@ import typings.prettyFormat.typesMod.Refs
 import typings.prettyFormat.typesMod.Test
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pretty-format/build/plugins/ConvertAnsi", JSImport.Namespace)
 @js.native
 object convertAnsiMod extends js.Object {
+  
   val default: NewPlugin = js.native
+  
   val serialize: js.Function6[
     /* val */ js.Any, 
     /* config */ Config, 
@@ -22,6 +24,6 @@ object convertAnsiMod extends js.Object {
     /* printer */ Printer, 
     String
   ] = js.native
+  
   val test: Test = js.native
 }
-

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-mail"
-version := "3.0-dt-20190530Z-19ea4b"
+version := "3.0-dt-20190530Z-ef4b93"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -10,9 +10,9 @@ unzip a zip file into a directory using 100% javascript
 | ------------------ | :-------------: |
 | Full name          | extract-zip |
 | Keywords           | unzip, zip, extract |
-| # releases         | 2 |
-| # dependents       | 427 |
-| # downloads        | 113518904 |
+| # releases         | 5 |
+| # dependents       | 539 |
+| # downloads        | 179046039 |
 | # stars            | 14 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "HardwareScalingOptimization")
 @js.native
@@ -22,11 +22,63 @@ class HardwareScalingOptimization ()
     /**
     * Defines the priority of this optimization (0 by default which means first in the list)
     */
+  priority: js.UndefOr[scala.Nothing],
+    /**
+    * Defines the maximum scale to use (2 by default)
+    */
+  maximumScale: Double
+  ) = this()
+  def this(
+    /**
+    * Defines the priority of this optimization (0 by default which means first in the list)
+    */
   priority: Double,
     /**
     * Defines the maximum scale to use (2 by default)
     */
   maximumScale: Double
+  ) = this()
+  def this(
+    /**
+    * Defines the priority of this optimization (0 by default which means first in the list)
+    */
+  priority: js.UndefOr[scala.Nothing],
+    /**
+    * Defines the maximum scale to use (2 by default)
+    */
+  maximumScale: js.UndefOr[scala.Nothing],
+    /**
+    * Defines the step to use between two passes (0.5 by default)
+    */
+  step: Double
+  ) = this()
+  def this(
+    /**
+    * Defines the priority of this optimization (0 by default which means first in the list)
+    */
+  priority: js.UndefOr[scala.Nothing],
+    /**
+    * Defines the maximum scale to use (2 by default)
+    */
+  maximumScale: Double,
+    /**
+    * Defines the step to use between two passes (0.5 by default)
+    */
+  step: Double
+  ) = this()
+  def this(
+    /**
+    * Defines the priority of this optimization (0 by default which means first in the list)
+    */
+  priority: Double,
+    /**
+    * Defines the maximum scale to use (2 by default)
+    */
+  maximumScale: js.UndefOr[scala.Nothing],
+    /**
+    * Defines the step to use between two passes (0.5 by default)
+    */
+  step: Double
   ) = this()
   def this(
     /**
@@ -43,4 +95,3 @@ class HardwareScalingOptimization ()
   step: Double
   ) = this()
 }
-

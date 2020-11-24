@@ -4,10 +4,11 @@ import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.base.EventProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ODataAnnotations extends EventProvider {
+  
   /**
     * Adds either one URL or an array of URLs to be loaded and parsed. The result will be merged into the
     * annotationsdata which can be retrieved using the getAnnotations-method.
@@ -18,6 +19,7 @@ trait ODataAnnotations extends EventProvider {
     */
   def addUrl(vUrl: String): JQueryPromise[_] = js.native
   def addUrl(vUrl: js.Array[String]): JQueryPromise[_] = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'failed' event of this
     * <code>sap.ui.model.odata.ODataAnnotations</code>.
@@ -30,6 +32,7 @@ trait ODataAnnotations extends EventProvider {
     */
   def attachFailed(oData: js.Any, fnFunction: js.Any): ODataAnnotations = js.native
   def attachFailed(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'loaded' event of this
     * <code>sap.ui.model.odata.ODataAnnotations</code>.
@@ -42,6 +45,7 @@ trait ODataAnnotations extends EventProvider {
     */
   def attachLoaded(oData: js.Any, fnFunction: js.Any): ODataAnnotations = js.native
   def attachLoaded(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'failed' event of this
     * <code>sap.ui.model.odata.ODataAnnotations</code>.The passed function and listener object must match
@@ -51,6 +55,7 @@ trait ODataAnnotations extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def detachFailed(fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'loaded' event of this
     * <code>sap.ui.model.odata.ODataAnnotations</code>.The passed function and listener object must match
@@ -60,34 +65,40 @@ trait ODataAnnotations extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def detachLoaded(fnFunction: js.Any, oListener: js.Any): ODataAnnotations = js.native
+  
   /**
     * Fire event failed to attached listeners.
     * @param mArguments the arguments to pass along with the event.
     * @returns <code>this</code> to allow method chaining
     */
   def fireFailed(mArguments: js.Any): ODataAnnotations = js.native
+  
   /**
     * Fire event loaded to attached listeners.
     * @param mArguments Map of arguments that will be given as parameters to teh event handler
     * @returns <code>this</code> to allow method chaining
     */
   def fireLoaded(mArguments: js.Any): ODataAnnotations = js.native
+  
   /**
     * returns the raw annotation data
     * @returns returns annotations data
     */
   def getAnnotationsData(): js.Any = js.native
+  
   /**
     * Checks whether annotations loading of at least one of the given URLs has already failed.Note: For
     * asynchronous annotations {@link #attachFailed} has to be used.
     * @returns whether annotations request has failed
     */
   def isFailed(): Boolean = js.native
+  
   /**
     * Checks whether annotations from at least one source are available
     * @returns returns whether annotations is already loaded
     */
   def isLoaded(): Boolean = js.native
+  
   /**
     * Set custom headers which are provided in a key/value map. These headers are used for all
     * requests.The Accept-Language header cannot be modified and is set using the Core's language
@@ -97,6 +108,7 @@ trait ODataAnnotations extends EventProvider {
     * @param mHeaders the header name/value map.
     */
   def setHeaders(mHeaders: js.Any): Unit = js.native
+  
   /**
     * Sets an XML document
     * @param oXMLDocument The XML document to parse for annotations
@@ -107,4 +119,3 @@ trait ODataAnnotations extends EventProvider {
   def setXML(oXMLDocument: js.Any, sXMLContent: String): Boolean = js.native
   def setXML(oXMLDocument: js.Any, sXMLContent: String, mOptions: js.Any): Boolean = js.native
 }
-

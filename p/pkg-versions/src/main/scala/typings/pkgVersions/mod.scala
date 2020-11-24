@@ -4,16 +4,12 @@ import typings.pkgVersions.anon.Call
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pkg-versions", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function pkgVersions(packageName: string): Promise<Set<string>>;
-  // export = pkgVersions;
-  @JSName("default")
-  var default_Original: Call = js.native
+  
   /**
   	Get the version numbers of a package from the npm registry.
   	@returns The version numbers.
@@ -27,6 +23,7 @@ object mod extends js.Object {
   	```
   	*/
   def apply(packageName: String): js.Promise[Set[String]] = js.native
+  
   /**
   	Get the version numbers of a package from the npm registry.
   	@returns The version numbers.
@@ -43,5 +40,9 @@ object mod extends js.Object {
   // declare function pkgVersions(packageName: string): Promise<Set<string>>;
   // export = pkgVersions;
   def default(packageName: String): js.Promise[Set[String]] = js.native
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function pkgVersions(packageName: string): Promise<Set<string>>;
+  // export = pkgVersions;
+  @JSName("default")
+  var default_Original: Call = js.native
 }
-

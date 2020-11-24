@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Targethttpproxies")
 @js.native
 class ResourceTargethttpproxies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.targetHttpProxies.delete
     * @desc Deletes the specified TargetHttpProxy resource.
@@ -100,6 +102,7 @@ class ResourceTargethttpproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetHttpProxies.get
     * @desc Returns the specified TargetHttpProxy resource. Gets a list of
@@ -187,6 +190,7 @@ class ResourceTargethttpproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetHttpProxy]
   ): Unit = js.native
+  
   /**
     * compute.targetHttpProxies.insert
     * @desc Creates a TargetHttpProxy resource in the specified project using
@@ -275,6 +279,7 @@ class ResourceTargethttpproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetHttpProxies.list
     * @desc Retrieves the list of TargetHttpProxy resources available to the
@@ -377,6 +382,7 @@ class ResourceTargethttpproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetHttpProxyList]
   ): Unit = js.native
+  
   /**
     * compute.targetHttpProxies.setUrlMap
     * @desc Changes the URL map for TargetHttpProxy.
@@ -470,4 +476,3 @@ class ResourceTargethttpproxies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

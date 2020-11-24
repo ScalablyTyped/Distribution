@@ -3,11 +3,12 @@ package typings.pMap.mod
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-map", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   @param input - Iterated over concurrently in the `mapper` function.
   @param mapper - Function which is called for every item in `input`. Expected to return a `Promise` or value.
@@ -35,4 +36,3 @@ object ^ extends js.Object {
   def apply[Element, NewElement](input: Iterable[Element], mapper: Mapper[Element, NewElement]): js.Promise[js.Array[NewElement]] = js.native
   def apply[Element, NewElement](input: Iterable[Element], mapper: Mapper[Element, NewElement], options: Options): js.Promise[js.Array[NewElement]] = js.native
 }
-

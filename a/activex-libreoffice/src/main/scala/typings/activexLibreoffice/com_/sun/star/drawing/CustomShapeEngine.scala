@@ -7,15 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service is for a {@link CustomShape} */
 @js.native
 trait CustomShapeEngine
   extends XInitialization
      with XCustomShapeEngine
-
 object CustomShapeEngine {
+  
   @scala.inline
   def apply(
     Interaction: SafeArray[XCustomShapeHandle],
@@ -34,4 +34,3 @@ object CustomShapeEngine {
     __obj.asInstanceOf[CustomShapeEngine]
   }
 }
-

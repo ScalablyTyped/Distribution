@@ -2,11 +2,12 @@ package typings.awsSdkClientCodecommitNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-codecommit-node/types/ListPullRequestsExceptionsUnion", JSImport.Namespace)
 @js.native
 object listPullRequestsExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientCodecommitNode.typesInvalidPullRequestStatusExceptionMod.InvalidPullRequestStatusException
     - typings.awsSdkClientCodecommitNode.typesInvalidAuthorArnExceptionMod.InvalidAuthorArnException
@@ -23,6 +24,4 @@ object listPullRequestsExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientCodecommitNode.typesEncryptionKeyUnavailableExceptionMod.EncryptionKeyUnavailableException
   */
   trait ListPullRequestsExceptionsUnion extends js.Object
-  
 }
-

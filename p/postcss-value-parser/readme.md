@@ -11,8 +11,8 @@ Transforms css values and at-rule params into the tree
 | Full name          | postcss-value-parser |
 | Keywords           | postcss, value, parser |
 | # releases         | 7 |
-| # dependents       | 314 |
-| # downloads        | 892828971 |
+| # dependents       | 323 |
+| # downloads        | 1168964099 |
 | # stars            | 0 |
 
 ## Links

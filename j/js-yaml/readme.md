@@ -10,9 +10,9 @@ YAML 1.2 parser and serializer
 | ------------------ | :-------------: |
 | Full name          | js-yaml |
 | Keywords           | yaml, parser, serializer, pyyaml |
-| # releases         | 7 |
-| # dependents       | 7593 |
-| # downloads        | 711945733 |
+| # releases         | 6 |
+| # dependents       | 8939 |
+| # downloads        | 842368732 |
 | # stars            | 121 |
 
 ## Links

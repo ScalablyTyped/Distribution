@@ -4,13 +4,15 @@ import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.test.actions")
 @js.native
 object actions extends js.Object {
+  
   @js.native
   trait Action extends ManagedObject {
+    
     /**
       * Checks if the matcher is matching - will get an instance of sap.ui.Control as parameterShould be
       * overwritten by subclasses
@@ -18,12 +20,14 @@ object actions extends js.Object {
       * executed on
       */
     def executeOn(element: Control): Unit = js.native
+    
     /**
       * Gets current value of property <code>idSuffix</code>.
       * @since 1.38
       * @returns Value of property <code>idSuffix</code>
       */
     def getIdSuffix(): String = js.native
+    
     /**
       * Sets a new value for property <code>idSuffix</code>.When called with a value of <code>null</code> or
       * <code>undefined</code>, the default value of the property will be restored.
@@ -36,18 +40,21 @@ object actions extends js.Object {
   
   @js.native
   trait EnterText extends Action {
+    
     /**
       * Gets current value of property <code>clearTextFirst</code>.Default value is <code>true</code>.
       * @since 1.38.0
       * @returns Value of property <code>clearTextFirst</code>
       */
     def getClearTextFirst(): Boolean = js.native
+    
     /**
       * Gets current value of property <code>text</code>.The Text that is going to be typed to the control.
       * If you are entering an empty string, the value will be cleared.
       * @returns Value of property <code>text</code>
       */
     def getText(): String = js.native
+    
     /**
       * Sets a new value for property <code>clearTextFirst</code>.When called with a value of
       * <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -57,6 +64,7 @@ object actions extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def setClearTextFirst(bClearTextFirst: Boolean): EnterText = js.native
+    
     /**
       * Sets a new value for property <code>text</code>.The Text that is going to be typed to the control.
       * If you are entering an empty string, the value will be cleared.When called with a value of
@@ -69,6 +77,7 @@ object actions extends js.Object {
   
   @js.native
   trait Press extends Action {
+    
     /**
       * A map that contains the id suffixes for certain controls of the library.When you extended a UI5
       * controls the adapter of the control will be taken.If you need an adapter for your own control you
@@ -84,6 +93,4 @@ object actions extends js.Object {
       */
     var controlAdapters: js.Any = js.native
   }
-  
 }
-

@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XFlushable
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a dictionary used in a conversion dictionary list.
@@ -25,8 +25,8 @@ trait ConversionDictionary
   extends XConversionDictionary
      with XFlushable
      with XConversionPropertyType
-
 object ConversionDictionary {
+  
   @scala.inline
   def apply(
     ConversionType: Double,
@@ -56,4 +56,3 @@ object ConversionDictionary {
     __obj.asInstanceOf[ConversionDictionary]
   }
 }
-

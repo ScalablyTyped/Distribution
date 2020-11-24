@@ -5,7 +5,7 @@ import typings.awsSdk.anon.TimeoutNumber
 import typings.awsSdk.errorMod.AWSError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/lib/metadata_service", "MetadataService")
 @js.native
@@ -14,10 +14,12 @@ import scala.scalajs.js.annotation._
   */
 class MetadataService () extends js.Object {
   def this(options: MetadataServiceOptions) = this()
+  
   /**
     * A map of options to pass to the underlying HTTP request.
     */
   var httpOptions: TimeoutNumber = js.native
+  
   /**
     * Sends a request to the instance metadata service for a given resource.
     */
@@ -28,14 +30,13 @@ class MetadataService () extends js.Object {
     callback: js.Function2[/* err */ AWSError, /* data */ String, Unit]
   ): Unit = js.native
 }
-
 /* static members */
 @JSImport("aws-sdk/lib/metadata_service", "MetadataService")
 @js.native
 object MetadataService extends js.Object {
+  
   /**
     * 169.254.169.254
     */
   var host: String = js.native
 }
-

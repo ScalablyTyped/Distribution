@@ -4,7 +4,7 @@ import typings.std.Date
 import typings.timezonecomplete.javascriptMod.DateFunctions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("timezonecomplete/dist/lib/basics", "TimeStruct")
 @js.native
@@ -24,46 +24,60 @@ class TimeStruct protected () extends js.Object {
     * @throws timezonecomplete.Argument.UnixMillis for non-integer unixMillis
     */
   def this(unixMillis: Double) = this()
+  
   /**
     * The time value in separate year/month/... components
     */
   var _components: js.Any = js.native
+  
   /**
     * The time value in unix milliseconds
     */
   var _unixMillis: js.Any = js.native
+  
   def components: TimeComponents = js.native
+  
   def day: Double = js.native
+  
   /**
     * Equality function
     * @param other
     * @throws TypeError if other is not an Object
     */
   def equals(other: TimeStruct): Boolean = js.native
+  
   def hour: Double = js.native
+  
   def milli: Double = js.native
+  
   def minute: Double = js.native
+  
   def month: Double = js.native
+  
   def second: Double = js.native
+  
   def unixMillis: Double = js.native
+  
   /**
     * Validate a timestamp. Filters out non-existing values for all time components
     * @returns true iff the timestamp is valid
     * @throws nothing
     */
   def validate(): Boolean = js.native
+  
   def year: Double = js.native
+  
   /**
     * The day-of-year 0-365
     * @throws nothing
     */
   def yearDay(): Double = js.native
 }
-
 /* static members */
 @JSImport("timezonecomplete/dist/lib/basics", "TimeStruct")
 @js.native
 object TimeStruct extends js.Object {
+  
   /**
     * Returns a TimeStruct from the given year, month, day etc
     *
@@ -91,6 +105,7 @@ object TimeStruct extends js.Object {
     second: js.UndefOr[Double],
     milli: js.UndefOr[Double]
   ): TimeStruct = js.native
+  
   /**
     * Create a TimeStruct from a JavaScript date
     *
@@ -99,11 +114,13 @@ object TimeStruct extends js.Object {
     * @throws nothing
     */
   def fromDate(d: Date, df: DateFunctions): TimeStruct = js.native
+  
   /**
     * Returns a TimeStruct from an ISO 8601 string WITHOUT time zone
     * @throws timezonecomplete.Argument.S if `s` is not a proper iso string
     */
   def fromString(s: String): TimeStruct = js.native
+  
   /**
     * Create a TimeStruct from a number of unix milliseconds
     * (backward compatibility)
@@ -111,4 +128,3 @@ object TimeStruct extends js.Object {
     */
   def fromUnix(unixMillis: Double): TimeStruct = js.native
 }
-

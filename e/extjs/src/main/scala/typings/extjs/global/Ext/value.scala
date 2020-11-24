@@ -2,11 +2,12 @@ package typings.extjs.global.Ext
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.value")
 @js.native
 object value extends js.Object {
+  
   def apply(): js.Any = js.native
   def apply(value: js.UndefOr[scala.Nothing], defaultValue: js.UndefOr[scala.Nothing], allowBlank: Boolean): js.Any = js.native
   def apply(value: js.UndefOr[scala.Nothing], defaultValue: js.Any): js.Any = js.native
@@ -16,4 +17,3 @@ object value extends js.Object {
   def apply(value: js.Any, defaultValue: js.Any): js.Any = js.native
   def apply(value: js.Any, defaultValue: js.Any, allowBlank: Boolean): js.Any = js.native
 }
-

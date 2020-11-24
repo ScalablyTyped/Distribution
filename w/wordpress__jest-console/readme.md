@@ -9,10 +9,10 @@ Custom Jest matchers for the Console object.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/jest-console |
-| Keywords           | wordpress, jest, matchers, console |
-| # releases         | 21 |
+| Keywords           | wordpress, gutenberg, jest, matchers, console |
+| # releases         | 14 |
 | # dependents       | 3 |
-| # downloads        | 109138 |
+| # downloads        | 612589 |
 | # stars            | 0 |
 
 ## Links

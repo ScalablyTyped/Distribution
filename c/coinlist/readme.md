@@ -10,9 +10,9 @@ Comprehensive list of cryptocurrencies with metadata
 | ------------------ | :-------------: |
 | Full name          | coinlist |
 | Keywords           | crypto, cryptocurrencies, cryptocoins, list |
-| # releases         | 13 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 4301 |
+| # downloads        | 2313 |
 | # stars            | 0 |
 
 ## Links

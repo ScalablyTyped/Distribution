@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react", "unstable_SuspenseList")
 @js.native
 object unstableSuspenseList extends TopLevel[ExoticComponent[SuspenseListProps]]
-

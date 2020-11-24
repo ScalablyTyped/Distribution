@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PictureFormat extends js.Object
-
 /**
   *
   * The format of the image.
@@ -16,6 +15,7 @@ sealed trait PictureFormat extends js.Object
 @JSGlobal("Excel.PictureFormat")
 @js.native
 object PictureFormat extends js.Object {
+  
   /**
     * Bitmap image.
     *
@@ -53,6 +53,4 @@ object PictureFormat extends js.Object {
   
   @js.native
   sealed trait unknown extends PictureFormat
-  
 }
-

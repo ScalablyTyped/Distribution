@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "driftless"
-version := "2.0-dt-20190223Z-615a92"
+version := "2.0-dt-20190223Z-88cfcf"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

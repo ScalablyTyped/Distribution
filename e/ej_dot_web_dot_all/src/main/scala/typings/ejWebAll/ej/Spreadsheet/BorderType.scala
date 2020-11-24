@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Spreadsheet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BorderType extends js.Object
-
 @JSGlobal("ej.Spreadsheet.BorderType")
 @js.native
 object BorderType extends js.Object {
+  
   ///To apply all border for the given range of cell.
   @js.native
   sealed trait AllBorder extends BorderType
@@ -49,6 +49,4 @@ object BorderType extends js.Object {
   ///To apply top and thick bottom border for the given range of cell.
   @js.native
   sealed trait TopandThickBottom extends BorderType
-  
 }
-

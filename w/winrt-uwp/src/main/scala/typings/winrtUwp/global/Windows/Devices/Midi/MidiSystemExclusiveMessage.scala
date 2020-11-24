@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Devices.Midi
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a MIDI message that specifies a system exclusive message. */
 @JSGlobal("Windows.Devices.Midi.MidiSystemExclusiveMessage")
@@ -16,4 +16,3 @@ class MidiSystemExclusiveMessage protected ()
     */
   def this(rawData: IBuffer) = this()
 }
-

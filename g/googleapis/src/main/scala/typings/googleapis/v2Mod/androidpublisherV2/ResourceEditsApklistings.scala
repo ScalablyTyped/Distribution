@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v2", "androidpublisher_v2.Resource$Edits$Apklistings")
 @js.native
 class ResourceEditsApklistings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.edits.apklistings.delete
     * @desc Deletes the APK-specific localized listing for a specified APK and
@@ -45,6 +47,7 @@ class ResourceEditsApklistings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.apklistings.deleteall
     * @desc Deletes all the APK-specific localized listings for a specified
@@ -76,6 +79,7 @@ class ResourceEditsApklistings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.apklistings.get
     * @desc Fetches the APK-specific localized listing for a specified APK and
@@ -108,6 +112,7 @@ class ResourceEditsApklistings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaApkListing]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.apklistings.list
     * @desc Lists all the APK-specific localized listings for a specified APK.
@@ -141,6 +146,7 @@ class ResourceEditsApklistings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaApkListingsListResponse]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.apklistings.patch
     * @desc Updates or creates the APK-specific localized listing for a
@@ -174,6 +180,7 @@ class ResourceEditsApklistings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaApkListing]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.apklistings.update
     * @desc Updates or creates the APK-specific localized listing for a
@@ -208,4 +215,3 @@ class ResourceEditsApklistings protected () extends js.Object {
     callback: BodyResponseCallback[SchemaApkListing]
   ): Unit = js.native
 }
-

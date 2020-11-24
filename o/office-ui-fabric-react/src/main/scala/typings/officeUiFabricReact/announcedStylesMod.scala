@@ -5,11 +5,11 @@ import typings.officeUiFabricReact.announcedTypesMod.IAnnouncedStyles
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/Announced/Announced.styles", JSImport.Namespace)
 @js.native
 object announcedStylesMod extends js.Object {
+  
   val getStyles: IStyleFunction[IAnnouncedStyleProps, IAnnouncedStyles] = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.baidumapWebSdk.global.BMap
 import typings.baidumapWebSdk.BMap.DrivingRouteOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BMap.DrivingRoute")
 @js.native
@@ -16,4 +16,3 @@ class DrivingRoute protected ()
   def this(location: typings.baidumapWebSdk.BMap.Map, opts: DrivingRouteOptions) = this()
   def this(location: typings.baidumapWebSdk.BMap.Point, opts: DrivingRouteOptions) = this()
 }
-

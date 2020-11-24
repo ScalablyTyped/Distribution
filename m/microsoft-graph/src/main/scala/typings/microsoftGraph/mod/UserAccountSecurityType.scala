@@ -3,7 +3,7 @@ package typings.microsoftGraph.mod
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.unknown_
@@ -13,17 +13,20 @@ import scala.scalajs.js.annotation._
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
 */
 trait UserAccountSecurityType extends js.Object
-
 object UserAccountSecurityType {
+  
   @scala.inline
   def administrator: typings.microsoftGraph.microsoftGraphStrings.administrator = "administrator".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.administrator]
+  
   @scala.inline
   def power: typings.microsoftGraph.microsoftGraphStrings.power = "power".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.power]
+  
   @scala.inline
   def standard: typings.microsoftGraph.microsoftGraphStrings.standard = "standard".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.standard]
+  
   @scala.inline
   def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  
   @scala.inline
   def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
-

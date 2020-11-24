@@ -10,9 +10,9 @@ Typings are for version 3.0
 | ------------------ | :-------------: |
 | Full name          | fm-websync |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 137 |
+| # downloads        | 84 |
 | # stars            | 0 |
 
 ## Links

@@ -6,7 +6,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This enumeration specifies how the text within a shape relates to the size of the shape. */
 /* Rewritten from type alias, can be one of: 
@@ -16,14 +16,16 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait TextFitToSizeType extends js.Object
-
 object TextFitToSizeType {
+  
   /** like `PROPORTIONAL` , but the width of each text row is also scaled proportional. */
   @scala.inline
   def ALLLINES: `2` = 2.asInstanceOf[`2`]
+  
   /** if the shape is scaled, the font is scaled isotropically to fit the available space. Auto line-breaks will keep working */
   @scala.inline
   def AUTOFIT: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * the area is not filled.
     *
@@ -39,8 +41,8 @@ object TextFitToSizeType {
     */
   @scala.inline
   def NONE: `0` = 0.asInstanceOf[`0`]
+  
   /** if the shape is scaled, the text character size is scaled proportional */
   @scala.inline
   def PROPORTIONAL: `1` = 1.asInstanceOf[`1`]
 }
-

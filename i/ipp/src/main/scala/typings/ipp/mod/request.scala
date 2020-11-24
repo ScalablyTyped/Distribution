@@ -5,11 +5,12 @@ import typings.node.urlMod.UrlWithStringQuery
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ipp", "request")
 @js.native
 object request extends js.Object {
+  
   def apply(
     opts: String,
     buffer: Buffer,
@@ -21,4 +22,3 @@ object request extends js.Object {
     cb: js.Function2[/* error */ Error | Null, /* response */ ParsedBuffer, Unit]
   ): Unit = js.native
 }
-

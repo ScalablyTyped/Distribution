@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fluids" : "0.1.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fluids" : "0.1.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

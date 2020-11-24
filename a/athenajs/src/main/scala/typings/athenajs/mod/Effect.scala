@@ -2,7 +2,7 @@ package typings.athenajs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "Effect")
 @js.native
@@ -12,12 +12,15 @@ class Effect protected () extends js.Object {
     *
     */
   def this(options: EffectOptions, display: Display) = this()
+  
   var animProgress: Double = js.native
+  
   var buffer: RenderingContext = js.native
+  
   var ended: Boolean = js.native
+  
   var height: Double = js.native
-  var startValue: Double = js.native
-  var width: Double = js.native
+  
   /**
     * Calculates current animation process
     *
@@ -27,6 +30,7 @@ class Effect protected () extends js.Object {
   def process(ctx: RenderingContext, fxCtx: js.UndefOr[scala.Nothing], obj: js.Any): Boolean = js.native
   def process(ctx: RenderingContext, fxCtx: RenderingContext): Boolean = js.native
   def process(ctx: RenderingContext, fxCtx: RenderingContext, obj: js.Any): Boolean = js.native
+  
   /**
     * Changes the easing function used for the ffect
     *
@@ -41,15 +45,20 @@ class Effect protected () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Called when the ffect is started.
     *
     * This method can be overriden but the super should always be called
     */
   def start(): Promise = js.native
+  
+  var startValue: Double = js.native
+  
   /**
     * called when the effect is stopped
     */
   def stop(`object`: js.Any, setEndValue: js.Any): Unit = js.native
+  
+  var width: Double = js.native
 }
-

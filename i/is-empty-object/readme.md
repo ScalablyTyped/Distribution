@@ -11,8 +11,8 @@ Check if an object is empty.
 | Full name          | is-empty-object |
 | Keywords           | object, empty |
 | # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 131675 |
+| # dependents       | 27 |
+| # downloads        | 44583 |
 | # stars            | 1 |
 
 ## Links

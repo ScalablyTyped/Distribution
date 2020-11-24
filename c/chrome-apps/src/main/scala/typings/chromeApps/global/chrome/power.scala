@@ -8,7 +8,7 @@ import typings.chromeApps.chromeAppsStrings.system_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.power
@@ -23,8 +23,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.power")
 @js.native
 object power extends js.Object {
+  
   /** Releases a request previously made via requestKeepAwake(). */
   def releaseKeepAwake(): Unit = js.native
+  
   /**
     * Requests that power management be temporarily disabled.
     * @param level Level describes the degree to which power management should be disabled.
@@ -41,6 +43,7 @@ object power extends js.Object {
       ]
     ]
   ): Unit = js.native
+  
   /**
     * @enum
     * @property SYSTEM - Prevent the system from sleeping in response to user inactivity.
@@ -48,9 +51,9 @@ object power extends js.Object {
     */
   @js.native
   object Level extends js.Object {
+    
     var DISPLAY: display_ = js.native
+    
     var SYSTEM: system_ = js.native
   }
-  
 }
-

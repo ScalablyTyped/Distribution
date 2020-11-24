@@ -11,7 +11,7 @@ A Storytelling Timeline built in JavaScript.
 | Keywords           | timeline, storytelling, timelinejs, timeline.js, history, googledocs, storify |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1123 |
+| # downloads        | 1702 |
 | # stars            | 1 |
 
 ## Links

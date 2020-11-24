@@ -3,18 +3,20 @@ package typings.autolinker
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("autolinker/dist/commonjs/matcher/url-match-validator", JSImport.Namespace)
 @js.native
 object urlMatchValidatorMod extends js.Object {
+  
   @js.native
   class UrlMatchValidator () extends js.Object
-  
   /* static members */
   @js.native
   object UrlMatchValidator extends js.Object {
+    
     var containsMultipleDots: js.Any = js.native
+    
     /**
       * Regex to test for a full protocol, with the two trailing slashes. Ex: 'http://'
       *
@@ -22,6 +24,7 @@ object urlMatchValidatorMod extends js.Object {
       * @property {RegExp} hasFullProtocolRegex
       */
     var hasFullProtocolRegex: RegExp = js.native
+    
     /**
       * Regex to determine if at least one word char exists after the protocol (i.e. after the ':')
       *
@@ -29,6 +32,7 @@ object urlMatchValidatorMod extends js.Object {
       * @property {RegExp} hasWordCharAfterProtocolRegex
       */
     var hasWordCharAfterProtocolRegex: RegExp = js.native
+    
     /**
       * Regex to determine if the string is a valid IP address
       *
@@ -36,15 +40,7 @@ object urlMatchValidatorMod extends js.Object {
       * @property {RegExp} ipRegex
       */
     var ipRegex: RegExp = js.native
-    /**
-      * Regex to find the URI scheme, such as 'mailto:'.
-      *
-      * This is used to filter out 'javascript:' and 'vbscript:' schemes.
-      *
-      * @private
-      * @property {RegExp} uriSchemeRegex
-      */
-    var uriSchemeRegex: RegExp = js.native
+    
     /**
       * Determines if a given URL match found by the {@link Autolinker.matcher.Url UrlMatcher}
       * is valid. Will return `false` for:
@@ -72,7 +68,9 @@ object urlMatchValidatorMod extends js.Object {
       *   processed.
       */
     def isValid(urlMatch: String, protocolUrlMatch: String): Boolean = js.native
+    
     def isValidIpAddress(uriSchemeMatch: String): Boolean = js.native
+    
     /**
       * Determines if the URI scheme is a valid scheme to be autolinked. Returns
       * `false` if the scheme is 'javascript:' or 'vbscript:'
@@ -83,6 +81,17 @@ object urlMatchValidatorMod extends js.Object {
       * @return {Boolean} `true` if the scheme is a valid one, `false` otherwise.
       */
     def isValidUriScheme(uriSchemeMatch: String): Boolean = js.native
+    
+    /**
+      * Regex to find the URI scheme, such as 'mailto:'.
+      *
+      * This is used to filter out 'javascript:' and 'vbscript:' schemes.
+      *
+      * @private
+      * @property {RegExp} uriSchemeRegex
+      */
+    var uriSchemeRegex: RegExp = js.native
+    
     /**
       * Determines if a URL match does not have either:
       *
@@ -103,6 +112,7 @@ object urlMatchValidatorMod extends js.Object {
       * at least one word character in it, `false` otherwise.
       */
     def urlMatchDoesNotHaveAtLeastOneWordChar(urlMatch: String, protocolUrlMatch: String): Boolean = js.native
+    
     /**
       * Determines if a URL match does not have either:
       *
@@ -126,6 +136,4 @@ object urlMatchValidatorMod extends js.Object {
       */
     def urlMatchDoesNotHaveProtocolOrDot(urlMatch: String, protocolUrlMatch: String): Boolean = js.native
   }
-  
 }
-

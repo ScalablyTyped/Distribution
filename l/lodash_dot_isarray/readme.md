@@ -11,8 +11,8 @@ The lodash method `_.isArray` exported as a module.
 | Full name          | lodash.isarray |
 | Keywords           | lodash, lodash-modularized, stdlib, util, isarray |
 | # releases         | 0 |
-| # dependents       | 280 |
-| # downloads        | 144414730 |
+| # dependents       | 292 |
+| # downloads        | 144396998 |
 | # stars            | 1 |
 
 ## Links

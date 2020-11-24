@@ -2,12 +2,12 @@ package typings.winrt.Windows.Data.Xml.Dom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait XmlComment extends IXmlCharacterData
-
 object XmlComment {
+  
   @scala.inline
   def apply(
     appendChild: IXmlNode => IXmlNode,
@@ -49,4 +49,3 @@ object XmlComment {
     __obj.asInstanceOf[XmlComment]
   }
 }
-

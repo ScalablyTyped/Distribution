@@ -3,7 +3,7 @@ package typings.playcanvas.global.pc
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Texture stores normalmap data swizzled in GGGR format. This is used for tangent space normal
@@ -12,5 +12,4 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("pc.TEXTURETYPE_SWIZZLEGGGR")
 @js.native
-object TEXTURETYPE_SWIZZLEGGGR extends TopLevel[Double]
-
+object TEXTURETYPE_SWIZZLEGGGR extends TopLevel[String]

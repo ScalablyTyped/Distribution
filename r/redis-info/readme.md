@@ -10,9 +10,9 @@ Info output parser for Redis
 | ------------------ | :-------------: |
 | Full name          | redis-info |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 10066 |
+| # releases         | 3 |
+| # dependents       | 10 |
+| # downloads        | 145180 |
 | # stars            | 1 |
 
 ## Links

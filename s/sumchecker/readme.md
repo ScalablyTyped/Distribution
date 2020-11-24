@@ -12,7 +12,7 @@ Checksum validator
 | Keywords           | checksum, hash |
 | # releases         | 3 |
 | # dependents       | 11 |
-| # downloads        | 17388976 |
+| # downloads        | 19591091 |
 | # stars            | 1 |
 
 ## Links

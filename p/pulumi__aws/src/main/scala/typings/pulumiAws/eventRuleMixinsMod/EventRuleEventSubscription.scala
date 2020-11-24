@@ -6,7 +6,7 @@ import typings.pulumiAws.lambdaMod.EventSubscription
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/cloudwatch/eventRuleMixins", "EventRuleEventSubscription")
 @js.native
@@ -53,7 +53,8 @@ class EventRuleEventSubscription protected () extends EventSubscription {
     args: EventRuleEventSubscriptionArgs,
     opts: ComponentResourceOptions
   ) = this()
+  
   val eventRule: EventRule = js.native
+  
   val target: EventTarget = js.native
 }
-

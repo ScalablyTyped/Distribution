@@ -2,11 +2,12 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("playcanvas", "drawQuadWithShader")
 @js.native
 object drawQuadWithShader extends js.Object {
+  
   def apply(
     device: typings.playcanvas.pc.GraphicsDevice,
     target: js.UndefOr[scala.Nothing],
@@ -131,4 +132,3 @@ object drawQuadWithShader extends js.Object {
     useBlend: Boolean
   ): Unit = js.native
 }
-

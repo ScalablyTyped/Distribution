@@ -7,13 +7,15 @@ import typings.datatablesNetSelect.datatablesNetSelectStrings.os
 import typings.datatablesNetSelect.datatablesNetSelectStrings.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Style extends js.Object {
+    
     /*
       * Get the current selection style applied to the table
       */
@@ -30,6 +32,4 @@ object anon extends js.Object {
     @JSName("style")
     def style_single(s: single): Api = js.native
   }
-  
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebaserules/v1", "firebaserules_v1.Resource$Projects$Releases")
 @js.native
 class ResourceProjectsReleases protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * firebaserules.projects.releases.create
     * @desc Create a `Release`.  Release names should reflect the developer's
@@ -56,6 +58,7 @@ class ResourceProjectsReleases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRelease]
   ): Unit = js.native
+  
   /**
     * firebaserules.projects.releases.delete
     * @desc Delete a `Release` by resource name.
@@ -84,6 +87,7 @@ class ResourceProjectsReleases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * firebaserules.projects.releases.get
     * @desc Get a `Release` by name.
@@ -112,6 +116,7 @@ class ResourceProjectsReleases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRelease]
   ): Unit = js.native
+  
   /**
     * firebaserules.projects.releases.getExecutable
     * @desc Get the `Release` executable to use when enforcing rules.
@@ -144,6 +149,7 @@ class ResourceProjectsReleases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetReleaseExecutableResponse]
   ): Unit = js.native
+  
   /**
     * firebaserules.projects.releases.list
     * @desc List the `Release` values for a project. This list may optionally
@@ -180,6 +186,7 @@ class ResourceProjectsReleases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListReleasesResponse]
   ): Unit = js.native
+  
   /**
     * firebaserules.projects.releases.patch
     * @desc Update a `Release` via PATCH.  Only updates to the `ruleset_name`
@@ -212,4 +219,3 @@ class ResourceProjectsReleases protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRelease]
   ): Unit = js.native
 }
-

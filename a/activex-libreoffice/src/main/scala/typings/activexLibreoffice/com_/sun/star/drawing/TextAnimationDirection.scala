@@ -6,7 +6,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This enumeration defines the movement direction of a scrolltext. */
 /* Rewritten from type alias, can be one of: 
@@ -16,10 +16,11 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait TextAnimationDirection extends js.Object
-
 object TextAnimationDirection {
+  
   @scala.inline
   def DOWN: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * the connection line leaves the connected object to the left,
     *
@@ -29,6 +30,7 @@ object TextAnimationDirection {
     */
   @scala.inline
   def LEFT: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * the connection line leaves the connected object to the right,
     *
@@ -38,7 +40,7 @@ object TextAnimationDirection {
     */
   @scala.inline
   def RIGHT: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def UP: `2` = 2.asInstanceOf[`2`]
 }
-

@@ -10,9 +10,9 @@ Replace build blocks in HTML. Like useref but done right.
 | ------------------ | :-------------: |
 | Full name          | gulp-html-replace |
 | Keywords           | gulpplugin, html, replace |
-| # releases         | 1 |
-| # dependents       | 34 |
-| # downloads        | 624828 |
+| # releases         | 0 |
+| # dependents       | 37 |
+| # downloads        | 642386 |
 | # stars            | 80 |
 
 ## Links

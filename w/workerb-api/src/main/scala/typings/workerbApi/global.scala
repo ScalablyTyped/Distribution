@@ -7,14 +7,15 @@ import typings.workerbApi.workerbApiStrings.on
 import typings.workerbApi.workerbApiStrings.success
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   // global variables
   var args: js.Array[String] = js.native
-  var options: js.Any = js.native
+  
   /**
     * The click function performs a mouse click on a target element. The element can be specified using different query methods.
     *
@@ -25,6 +26,7 @@ object global extends js.Object {
     */
   def click(query: String): js.UndefOr[scala.Nothing] = js.native
   def click(query: String, options: ClickQueryOptions): js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * The download can be used to download data as part of the script
     *
@@ -36,6 +38,7 @@ object global extends js.Object {
     * @returns undefined
     */
   def download(filename: String, content: String, contentType: String): js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * The event function generates an event on a target element.
     *
@@ -47,6 +50,7 @@ object global extends js.Object {
     */
   def event(query: String, eventConfig: EventConfig): js.UndefOr[scala.Nothing] = js.native
   def event(query: String, eventConfig: EventConfig, options: ClickQueryOptions): js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * The getAttribute function can be used to get an attribute value of a target element.
     *
@@ -60,6 +64,7 @@ object global extends js.Object {
   def getAttribute(attributes: String, query: String, options: GetAttributeQueryOptions): js.Array[js.Object] = js.native
   def getAttribute(attributes: js.Array[String], query: String): js.Array[js.Object] = js.native
   def getAttribute(attributes: js.Array[String], query: String, options: GetAttributeQueryOptions): js.Array[js.Object] = js.native
+  
   /**
     * The httpDelete function can be used to make http delete requests.
     *
@@ -77,6 +82,7 @@ object global extends js.Object {
   def httpDelete(url: String, data: js.UndefOr[scala.Nothing], headers: js.Object): APIResponse = js.native
   def httpDelete(url: String, data: js.Any): APIResponse = js.native
   def httpDelete(url: String, data: js.Any, headers: js.Object): APIResponse = js.native
+  
   /**
     * The httpGet function can be used to make http get requests.
     *
@@ -91,6 +97,7 @@ object global extends js.Object {
     */
   def httpGet(url: String): APIResponse = js.native
   def httpGet(url: String, headers: js.Object): APIResponse = js.native
+  
   /**
     * The httpPost function can be used to make http post requests.
     *
@@ -108,6 +115,7 @@ object global extends js.Object {
   def httpPost(url: String, data: js.UndefOr[scala.Nothing], headers: js.Object): APIResponse = js.native
   def httpPost(url: String, data: js.Any): APIResponse = js.native
   def httpPost(url: String, data: js.Any, headers: js.Object): APIResponse = js.native
+  
   /**
     * The httpPut function can be used to make http put requests.
     *
@@ -125,6 +133,7 @@ object global extends js.Object {
   def httpPut(url: String, data: js.UndefOr[scala.Nothing], headers: js.Object): APIResponse = js.native
   def httpPut(url: String, data: js.Any): APIResponse = js.native
   def httpPut(url: String, data: js.Any, headers: js.Object): APIResponse = js.native
+  
   /**
     * The log function can be used to print messages to the browser console.
     *
@@ -135,6 +144,7 @@ object global extends js.Object {
     */
   def log(value: js.Any): js.UndefOr[scala.Nothing] = js.native
   def log(value: js.Any, color: String): js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("logging")
   def logging_off(state: off): js.UndefOr[scala.Nothing] = js.native
   /**
@@ -146,6 +156,7 @@ object global extends js.Object {
     */
   @JSName("logging")
   def logging_on(state: on): js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * The notify function can be used to display a message to the user.
     *
@@ -159,6 +170,7 @@ object global extends js.Object {
   def notify_error(message: String, `type`: error, timeout: Double): js.UndefOr[scala.Nothing] = js.native
   @JSName("notify")
   def notify_success(message: String, `type`: success, timeout: Double): js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * The open function opens a link in the same browser window.
     *
@@ -167,6 +179,9 @@ object global extends js.Object {
     * @returns undefined
     */
   def open(url: String): js.UndefOr[scala.Nothing] = js.native
+  
+  var options: js.Any = js.native
+  
   /**
     * The prompt function opens a prompt to query user for input.
     *
@@ -175,6 +190,7 @@ object global extends js.Object {
     * @returns A string that has the user input.
     */
   def prompt(label: String): String = js.native
+  
   /**
     * The read function returns a text from a target element.
     *
@@ -185,6 +201,7 @@ object global extends js.Object {
     */
   def read(query: String): String = js.native
   def read(query: String, options: ClickQueryOptions): String = js.native
+  
   /**
     * The readAll function returns texts of all target elements which match the query.
     *
@@ -195,6 +212,7 @@ object global extends js.Object {
     */
   def readAll(query: String): js.Array[_] = js.native
   def readAll(query: String, options: QueryOptions): js.Array[_] = js.native
+  
   /**
     * The readTable function returns the content of a target table.
     *
@@ -209,12 +227,14 @@ object global extends js.Object {
     */
   def readTable(query: String): Header = js.native
   def readTable(query: String, options: ClickQueryOptions): Header = js.native
+  
   /**
     * The readURL function returns the URL of the webpage in the active tab.
     *
     * @returns A string which is the URL of the webpage in the active tab.
     */
   def readUrl(): String = js.native
+  
   /**
     * The runInTab function runs the specified function in a new tab and returns the result to the current tab.
     *
@@ -224,6 +244,7 @@ object global extends js.Object {
     * @returns A string which is stringified version of the value returned by the passed function.
     */
   def runInTab(task: js.Function0[_], keepOpen: Boolean): String = js.native
+  
   /**
     * Select value on a particular a DOM element.
     *
@@ -235,6 +256,7 @@ object global extends js.Object {
     */
   def select(value: String, query: String): js.UndefOr[scala.Nothing] = js.native
   def select(value: String, query: String, options: SelectQueryOptions): js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * The submit function generates an the 'enter' keypress event on a target form element. This can result in the submission of the parent form.
     *
@@ -245,6 +267,7 @@ object global extends js.Object {
     */
   def submit(query: String): js.UndefOr[scala.Nothing] = js.native
   def submit(query: String, options: ClickQueryOptions): js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * The tab function opens a link in a new tab in the browser.
     *
@@ -253,6 +276,7 @@ object global extends js.Object {
     * @returns undefined
     */
   def tab(url: String): js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * The type function writes a given string to a target input field. The input field can be specified using different query methods.
     *
@@ -265,4 +289,3 @@ object global extends js.Object {
   def `type`(text: String, query: String): js.UndefOr[scala.Nothing] = js.native
   def `type`(text: String, query: String, options: TypeQueryInterface): js.UndefOr[scala.Nothing] = js.native
 }
-

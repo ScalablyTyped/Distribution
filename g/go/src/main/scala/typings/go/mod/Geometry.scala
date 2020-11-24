@@ -2,7 +2,7 @@ package typings.go.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Geometry class is used to define the "shape" of a Shape.
@@ -21,45 +21,46 @@ import scala.scalajs.js.annotation._
   */
 class Geometry () extends js.Object {
   def this(`type`: EnumValue) = this()
-  /**This read-only property returns a rectangle that contains all points within the Geometry.*/
-  var bounds: Rect = js.native
-  /**Gets or sets the Shape.geometryStretch value the Shape should use by default.*/
-  var defaultStretch: EnumValue = js.native
-  /**Gets or sets the ending X coordinate of the Geometry if it is of type .Line, .Rectangle, or .Ellipse.*/
-  var endX: Double = js.native
-  /**Gets or sets the ending Y coordinate of the Geometry if it is of type .Line, .Rectangle, or .Ellipse.*/
-  var endY: Double = js.native
-  /**Gets or sets the List of PathFigures that describes the content of the path for Geometries of type .Path.*/
-  var figures: List[PathFigure] = js.native
-  /**Gets or sets the spot to use when the Shape.spot1 value is Spot.Default.*/
-  var spot1: Spot = js.native
-  /**Gets or sets the spot to use when the Shape.spot2 value is Spot.Default.*/
-  var spot2: Spot = js.native
-  /**Gets or sets the starting X coordinate of the Geometry if it is of type .Line, .Rectangle, or .Ellipse.*/
-  var startX: Double = js.native
-  /**Gets or sets the starting Y coordinate of the Geometry if it is of type .Line, .Rectangle, or .Ellipse.*/
-  var startY: Double = js.native
-  /**Gets or sets the type of the Geometry.*/
-  var `type`: EnumValue = js.native
+  
   /**
     * Add a PathFigure to the figures list.
     * @param {PathFigure} figure a newly allocated unshared PathFigure that will become owned by this Geometry
     * @return {Geometry} this
     */
   def add(figure: PathFigure): Geometry = js.native
+  
+  /**This read-only property returns a rectangle that contains all points within the Geometry.*/
+  var bounds: Rect = js.native
+  
   /**
     * Computes the Geometry's bounds without adding an origin point, and returns those bounds as a rect.
     */
   def computeBoundsWithoutOrigin(): Rect = js.native
+  
   /**
     * Create a copy of this Geometry, with the same values and figures.
     */
   def copy(): Geometry = js.native
+  
+  /**Gets or sets the Shape.geometryStretch value the Shape should use by default.*/
+  var defaultStretch: EnumValue = js.native
+  
+  /**Gets or sets the ending X coordinate of the Geometry if it is of type .Line, .Rectangle, or .Ellipse.*/
+  var endX: Double = js.native
+  
+  /**Gets or sets the ending Y coordinate of the Geometry if it is of type .Line, .Rectangle, or .Ellipse.*/
+  var endY: Double = js.native
+  
   def equalsApprox(g: Geometry): Boolean = js.native
+  
+  /**Gets or sets the List of PathFigures that describes the content of the path for Geometries of type .Path.*/
+  var figures: List[PathFigure] = js.native
+  
   /**
     * Normalizes the Geometry points in place by ensuring the top-left bounds of the geometry lines up with (0, 0), returning the Point (x, y) amount it was shifted.
     */
   def normalize(): Point = js.native
+  
   /**
     * Offsets the Geometry in place by a given (x, y) amount
     * @param {number} x The x-axis offset factor.
@@ -67,6 +68,7 @@ class Geometry () extends js.Object {
     * @return {Geometry} this
     */
   def offset(x: Double, y: Double): Geometry = js.native
+  
   /**
     * Rotates the Geometry in place by a given angle, with optional x and y values to rotate the geometry about.
     * If no x and y value are giving, (0, 0) is used as the rotation point.
@@ -79,6 +81,7 @@ class Geometry () extends js.Object {
   def rotate(angle: Double, x: js.UndefOr[scala.Nothing], y: Double): Geometry = js.native
   def rotate(angle: Double, x: Double): Geometry = js.native
   def rotate(angle: Double, x: Double, y: Double): Geometry = js.native
+  
   /**
     * Scales the Geometry in place by a given (x, y) scale factor
     * @param {number} x The x-axis scale factor.
@@ -86,26 +89,46 @@ class Geometry () extends js.Object {
     * @return {Geometry} this
     */
   def scale(x: Double, y: Double): Geometry = js.native
+  
+  /**Gets or sets the spot to use when the Shape.spot1 value is Spot.Default.*/
+  var spot1: Spot = js.native
+  
+  /**Gets or sets the spot to use when the Shape.spot2 value is Spot.Default.*/
+  var spot2: Spot = js.native
+  
+  /**Gets or sets the starting X coordinate of the Geometry if it is of type .Line, .Rectangle, or .Ellipse.*/
+  var startX: Double = js.native
+  
+  /**Gets or sets the starting Y coordinate of the Geometry if it is of type .Line, .Rectangle, or .Ellipse.*/
+  var startY: Double = js.native
+  
+  /**Gets or sets the type of the Geometry.*/
+  var `type`: EnumValue = js.native
 }
-
 /* static members */
 @JSImport("go", "Geometry")
 @js.native
 object Geometry extends js.Object {
+  
   /**For drawing an ellipse fitting within a rectangle; a value for Geometry.type.*/
   var Ellipse: EnumValue = js.native
+  
   /**For drawing a simple straight line; a value for Geometry.type.*/
   var Line: EnumValue = js.native
+  
   /**For drawing a complex path made of a list of PathFigures; a value for Geometry.type.*/
   var Path: EnumValue = js.native
+  
   /**For drawing a rectangle; a value for Geometry.type.*/
   var Rectangle: EnumValue = js.native
+  
   /**
     * Given a SVG or GoJS path string, returns a congruent path string with each PathFigure filled.
     * For instance, "M0 0 L22 22 L33 0" would become "F M0 0 L22 22 L33 0".
     * @param {string} str
     */
   def fillPath(str: String): String = js.native
+  
   /**
     * Produce a Geometry from a string that uses an SVG-like compact path geometry syntax.
     * @param {string} str
@@ -117,6 +140,7 @@ object Geometry extends js.Object {
     */
   def parse(str: String): Geometry = js.native
   def parse(str: String, filled: Boolean): Geometry = js.native
+  
   /**
     * This static function can be used to write out a Geometry as a string
     * that can be read by Geometry.parse.
@@ -127,4 +151,3 @@ object Geometry extends js.Object {
     */
   def stringify(`val`: Geometry): String = js.native
 }
-

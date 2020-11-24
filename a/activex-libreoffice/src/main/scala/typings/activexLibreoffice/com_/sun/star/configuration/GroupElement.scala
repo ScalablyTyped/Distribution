@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides information about a predefined element contained in a heterogeneous group of elements within a hierarchy.
@@ -30,8 +30,8 @@ trait GroupElement
      with XProperty
      with XPropertyWithState
      with XChild
-
 object GroupElement {
+  
   @scala.inline
   def apply(
     AsProperty: Property,
@@ -58,4 +58,3 @@ object GroupElement {
     __obj.asInstanceOf[GroupElement]
   }
 }
-

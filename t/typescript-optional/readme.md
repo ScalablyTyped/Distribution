@@ -10,9 +10,9 @@ Optional (like Java) implementation in TypeScript
 | ------------------ | :-------------: |
 | Full name          | typescript-optional |
 | Keywords           | java, optional, typescript |
-| # releases         | 7 |
-| # dependents       | 9 |
-| # downloads        | 58887 |
+| # releases         | 4 |
+| # dependents       | 10 |
+| # downloads        | 82323 |
 | # stars            | 0 |
 
 ## Links

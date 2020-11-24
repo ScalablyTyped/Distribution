@@ -2,7 +2,7 @@ package typings.highcharts.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The AccessibilityComponent base class, representing a part of the chart
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AccessibilityComponent extends js.Object
-

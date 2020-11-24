@@ -4,7 +4,7 @@ import typings.sipJs.coreTransportMod.Transport
 import typings.sipJs.transactionUserMod.ServerTransactionUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.ServerTransaction")
 @js.native
@@ -18,4 +18,3 @@ abstract class ServerTransaction protected ()
     loggerCategory: String
   ) = this()
 }
-

@@ -2,12 +2,15 @@ package typings.winrt.Windows.Foundation
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IAsyncAction extends IAsyncInfo {
+  
+  def completed(asyncInfo: IAsyncAction, asyncStatus: AsyncStatus): Unit = js.native
   @JSName("completed")
   var completed_Original: AsyncActionCompletedHandler = js.native
+  
   var done: js.UndefOr[
     js.Function3[
       /* success */ js.UndefOr[js.Function0[_]], 
@@ -16,8 +19,9 @@ trait IAsyncAction extends IAsyncInfo {
       Unit
     ]
   ] = js.native
-  def completed(asyncInfo: IAsyncAction, asyncStatus: AsyncStatus): Unit = js.native
+  
   def getResults(): Unit = js.native
+  
   def `then`[U](): js.Any = js.native
   def `then`[U](
     success: js.UndefOr[scala.Nothing],
@@ -71,4 +75,3 @@ trait IAsyncAction extends IAsyncInfo {
     progress: js.Function1[/* progress */ js.Any, Unit]
   ): js.Any = js.native
 }
-

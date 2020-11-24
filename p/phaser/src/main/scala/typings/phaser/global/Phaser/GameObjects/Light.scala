@@ -2,7 +2,7 @@ package typings.phaser.global.Phaser.GameObjects
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A 2D point light.
@@ -29,4 +29,3 @@ class Light protected ()
     */
   def this(x: Double, y: Double, radius: Double, r: Double, g: Double, b: Double, intensity: Double) = this()
 }
-

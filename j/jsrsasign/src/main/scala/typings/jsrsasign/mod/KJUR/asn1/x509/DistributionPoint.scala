@@ -3,7 +3,7 @@ package typings.jsrsasign.mod.KJUR.asn1.x509
 import typings.jsrsasign.anon.Dpobj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DistributionPoint ASN.1 structure class
@@ -36,4 +36,3 @@ class DistributionPoint ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.DistributionPoint {
   def this(params: Dpobj) = this()
 }
-

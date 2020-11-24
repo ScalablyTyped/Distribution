@@ -3,11 +3,12 @@ package typings.linkifyUrls.mod
 import typings.std.DocumentFragment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("linkify-urls", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(string: String): String = js.native
   def apply(string: String, options: Options): String = js.native
   /**
@@ -37,4 +38,3 @@ object ^ extends js.Object {
   */
   def apply(string: String, options: TypeDomOptions): DocumentFragment = js.native
 }
-

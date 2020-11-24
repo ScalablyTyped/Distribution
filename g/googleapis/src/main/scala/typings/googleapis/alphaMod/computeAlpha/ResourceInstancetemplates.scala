@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Instancetemplates")
 @js.native
 class ResourceInstancetemplates protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.instanceTemplates.delete
     * @desc Deletes the specified instance template. Deleting an instance
@@ -45,6 +47,7 @@ class ResourceInstancetemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceTemplates.get
     * @desc Returns the specified instance template. Gets a list of available
@@ -75,6 +78,7 @@ class ResourceInstancetemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceTemplate]
   ): Unit = js.native
+  
   /**
     * compute.instanceTemplates.getIamPolicy
     * @desc Gets the access control policy for a resource. May be empty if no
@@ -105,6 +109,7 @@ class ResourceInstancetemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.instanceTemplates.insert
     * @desc Creates an instance template in the specified project using the
@@ -139,6 +144,7 @@ class ResourceInstancetemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.instanceTemplates.list
     * @desc Retrieves a list of instance templates that are contained within
@@ -175,6 +181,7 @@ class ResourceInstancetemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceTemplateList]
   ): Unit = js.native
+  
   /**
     * compute.instanceTemplates.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -206,6 +213,7 @@ class ResourceInstancetemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.instanceTemplates.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -240,4 +248,3 @@ class ResourceInstancetemplates protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

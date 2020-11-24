@@ -4,11 +4,12 @@ import typings.yandexMaps.anon.Fill
 import typings.yandexMaps.anon.StrokeWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "shape")
 @js.native
 object shape extends js.Object {
+  
   @js.native
   class Circle protected () extends IShape {
     def this(pixelGeometry: IPixelCircleGeometry) = this()
@@ -38,6 +39,4 @@ object shape extends js.Object {
     def this(geometry: IPixelRectangleGeometry) = this()
     def this(geometry: IPixelRectangleGeometry, params: Fill) = this()
   }
-  
 }
-

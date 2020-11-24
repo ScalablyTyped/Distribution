@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * When a pool getConnection() is called and the connection has been idle in the pool for at least
@@ -20,4 +20,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "poolPingInterval")
 @js.native
 object poolPingInterval extends TopLevel[Double]
-

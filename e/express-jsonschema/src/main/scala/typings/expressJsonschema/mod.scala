@@ -11,25 +11,11 @@ import typings.expressServeStaticCore.mod.Query
 import typings.jsonSchema.mod.JSONSchema4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("express-jsonschema", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  class JsonSchemaCustomPropertyError protected () extends js.Object {
-    def this(propertyName: String) = this()
-    var message: String = js.native
-    var name: String = js.native
-  }
-  
-  @js.native
-  class JsonSchemaValidation protected () extends js.Object {
-    def this(validations: StringDictionary[Instance]) = this()
-    var message: String = js.native
-    var name: String = js.native
-    var validations: StringDictionary[js.Array[Messages]] = js.native
-  }
   
   def addSchemaProperties(
     newProperties: StringDictionary[
@@ -42,6 +28,7 @@ object mod extends js.Object {
       ]
     ]
   ): Unit = js.native
+  
   def validate(schemas: StringDictionary[JSONSchema4]): js.Function3[
     /* req */ Request_[ParamsDictionary, _, _, Query], 
     /* res */ Response_[_], 
@@ -54,5 +41,24 @@ object mod extends js.Object {
     /* next */ NextFunction, 
     Unit
   ] = js.native
+  
+  @js.native
+  class JsonSchemaCustomPropertyError protected () extends js.Object {
+    def this(propertyName: String) = this()
+    
+    var message: String = js.native
+    
+    var name: String = js.native
+  }
+  
+  @js.native
+  class JsonSchemaValidation protected () extends js.Object {
+    def this(validations: StringDictionary[Instance]) = this()
+    
+    var message: String = js.native
+    
+    var name: String = js.native
+    
+    var validations: StringDictionary[js.Array[Messages]] = js.native
+  }
 }
-

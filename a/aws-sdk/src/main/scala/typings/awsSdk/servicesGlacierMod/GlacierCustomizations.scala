@@ -4,11 +4,12 @@ import typings.awsSdk.serviceMod.Service
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/lib/services/glacier", "GlacierCustomizations")
 @js.native
 class GlacierCustomizations () extends Service {
+  
   def computeChecksums(data: String): GlacierComputeChecksumsOutput = js.native
   /**
     * Computes the SHA-256 linear and tree hash checksums for a given
@@ -18,4 +19,3 @@ class GlacierCustomizations () extends Service {
     */
   def computeChecksums(data: Buffer): GlacierComputeChecksumsOutput = js.native
 }
-

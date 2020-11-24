@@ -2,7 +2,7 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used to provide a search operator for text properties. This is optional.
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaTextOperatorOptions extends js.Object {
+  
   /**
     * If true, the text value will be tokenized as one atomic value in operator
     * searches and facet matches. For example, if the operator name is
@@ -23,6 +24,7 @@ trait SchemaTextOperatorOptions extends js.Object {
     * &quot;genre:fiction&quot; will match the item.
     */
   var exactMatchWithOperator: js.UndefOr[Boolean] = js.native
+  
   /**
     * Indicates the operator name required in the query in order to isolate the
     * text property. For example, if operatorName is *subject* and the
@@ -37,33 +39,39 @@ trait SchemaTextOperatorOptions extends js.Object {
     */
   var operatorName: js.UndefOr[String] = js.native
 }
-
 object SchemaTextOperatorOptions {
+  
   @scala.inline
   def apply(): SchemaTextOperatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTextOperatorOptions]
   }
+  
   @scala.inline
   implicit class SchemaTextOperatorOptionsOps[Self <: SchemaTextOperatorOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setExactMatchWithOperator(value: Boolean): Self = this.set("exactMatchWithOperator", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteExactMatchWithOperator: Self = this.set("exactMatchWithOperator", js.undefined)
+    
     @scala.inline
     def setOperatorName(value: String): Self = this.set("operatorName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOperatorName: Self = this.set("operatorName", js.undefined)
   }
-  
 }
-

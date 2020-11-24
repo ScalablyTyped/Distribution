@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Regionnotificationendpoints")
 @js.native
 class ResourceRegionnotificationendpoints protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.regionNotificationEndpoints.delete
     * @desc Deletes the specified NotificationEndpoint in the given region
@@ -47,6 +49,7 @@ class ResourceRegionnotificationendpoints protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionNotificationEndpoints.get
     * @desc Returns the specified NotificationEndpoint resource in the given
@@ -81,6 +84,7 @@ class ResourceRegionnotificationendpoints protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNotificationEndpoint]
   ): Unit = js.native
+  
   /**
     * compute.regionNotificationEndpoints.insert
     * @desc Create a NotificationEndpoint in the specified project in the given
@@ -116,6 +120,7 @@ class ResourceRegionnotificationendpoints protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionNotificationEndpoints.list
     * @desc Lists the NotificationEndpoints for a project in the given region.
@@ -152,6 +157,7 @@ class ResourceRegionnotificationendpoints protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNotificationEndpointList]
   ): Unit = js.native
+  
   /**
     * compute.regionNotificationEndpoints.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -187,4 +193,3 @@ class ResourceRegionnotificationendpoints protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

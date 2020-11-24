@@ -2,11 +2,12 @@ package typings.makerJs.global.MakerJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.round")
 @js.native
 object round extends js.Object {
+  
   /**
     * Numeric rounding
     *
@@ -21,4 +22,3 @@ object round extends js.Object {
   def apply(n: Double): Double = js.native
   def apply(n: Double, accuracy: Double): Double = js.native
 }
-

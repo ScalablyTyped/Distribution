@@ -3,14 +3,12 @@ package typings.pThrottle.mod
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-throttle", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var AbortError: Instantiable0[AbortErrorClass] = js.native
-  // TODO: Remove this for the next major release
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pThrottle */ js.Any = js.native
+  
   /**
   	[Throttle](https://css-tricks.com/debouncing-throttling-explained-examples/) promise-returning/async/normal functions.
   	@param fn - Promise-returning/async function or a normal function.
@@ -33,5 +31,9 @@ object ^ extends js.Object {
     limit: Double,
     interval: Double
   ): ThrottledFunction[Arguments, Return] = js.native
+  
+  var AbortError: Instantiable0[AbortErrorClass] = js.native
+  
+  // TODO: Remove this for the next major release
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pThrottle */ js.Any = js.native
 }
-

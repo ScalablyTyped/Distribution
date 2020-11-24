@@ -4,7 +4,7 @@ import typings.jupyterlabServices.configMod.ConfigWithDefaults.IOptions
 import typings.luminoCoreutils.jsonMod.JSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/services/lib/config", "ConfigWithDefaults")
 @js.native
@@ -13,6 +13,7 @@ class ConfigWithDefaults_ protected () extends js.Object {
     * Create a new config with defaults.
     */
   def this(options: IOptions) = this()
+  
   /**
     * Get data from the Section with our classname, if available.
     *
@@ -20,13 +21,18 @@ class ConfigWithDefaults_ protected () extends js.Object {
     * If we have no classname, get all of the data in the Section
     */
   var _classData: js.Any = js.native
+  
   var _className: js.Any = js.native
+  
   var _defaults: js.Any = js.native
+  
   var _section: js.Any = js.native
+  
   /**
     * Get data from the config section or fall back to defaults.
     */
   def get(key: String): JSONValue = js.native
+  
   /**
     * Set a config value.
     *
@@ -40,4 +46,3 @@ class ConfigWithDefaults_ protected () extends js.Object {
     */
   def set(key: String, value: JSONValue): js.Promise[JSONValue] = js.native
 }
-

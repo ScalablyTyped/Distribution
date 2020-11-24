@@ -12,7 +12,7 @@ A handy wrapper for SignalR Hubs. Just specify the hub name, listening functions
 | Keywords           | angular, angularjs, signalr, hub, service |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 52325 |
+| # downloads        | 54983 |
 | # stars            | 0 |
 
 ## Links

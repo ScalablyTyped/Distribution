@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.BoundingBoxGizmo")
 @js.native
@@ -14,21 +14,17 @@ import scala.scalajs.js.annotation._
 class BoundingBoxGizmo ()
   extends typings.babylonjs.BABYLON.BoundingBoxGizmo {
   def this(color: typings.babylonjs.BABYLON.Color3) = this()
+  def this(color: js.UndefOr[scala.Nothing], gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer) = this()
   def this(
     color: typings.babylonjs.BABYLON.Color3,
     gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer
   ) = this()
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
 }
-
 /* static members */
 @JSGlobal("BABYLON.BoundingBoxGizmo")
 @js.native
 object BoundingBoxGizmo extends js.Object {
+  
   /**
     * Makes a mesh not pickable and wraps the mesh inside of a bounding box mesh that is pickable. (This is useful to avoid picking within complex geometry)
     * @param mesh the mesh to wrap in the bounding box mesh and make not pickable
@@ -36,4 +32,3 @@ object BoundingBoxGizmo extends js.Object {
     */
   def MakeNotPickableAndWrapInBoundingBox(mesh: typings.babylonjs.BABYLON.Mesh): typings.babylonjs.BABYLON.Mesh = js.native
 }
-

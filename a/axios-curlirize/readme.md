@@ -10,9 +10,9 @@ Axios third-party module to print all axios requests as curl commands in the con
 | ------------------ | :-------------: |
 | Full name          | axios-curlirize |
 | Keywords           | axios, curl, debug |
-| # releases         | 19 |
-| # dependents       | 2 |
-| # downloads        | 18023 |
+| # releases         | 11 |
+| # dependents       | 4 |
+| # downloads        | 83107 |
 | # stars            | 0 |
 
 ## Links

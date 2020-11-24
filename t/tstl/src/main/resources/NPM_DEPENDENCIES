@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tstl" : "2.4.10"
+      "tstl" : "2.4.12"
     }
   ],
   "test-dependencies" : [
     {
-      "tstl" : "2.4.10"
+      "tstl" : "2.4.12"
     }
   ],
   "compile-devDependencies" : [

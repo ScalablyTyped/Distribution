@@ -2,7 +2,7 @@ package typings.lokijs.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * LokiEventEmitter is a minimalist version of EventEmitter. It enables any
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class LokiEventEmitter ()
   extends typings.lokijs.LokiEventEmitter
-

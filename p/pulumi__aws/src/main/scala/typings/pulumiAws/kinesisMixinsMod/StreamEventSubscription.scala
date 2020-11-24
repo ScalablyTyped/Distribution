@@ -6,7 +6,7 @@ import typings.pulumiAws.streamMod.Stream
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/kinesis/kinesisMixins", "StreamEventSubscription")
 @js.native
@@ -19,7 +19,8 @@ class StreamEventSubscription protected () extends EventSubscription {
     args: StreamEventSubscriptionArgs,
     opts: ComponentResourceOptions
   ) = this()
+  
   val eventSourceMapping: EventSourceMapping = js.native
+  
   val stream: Stream = js.native
 }
-

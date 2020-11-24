@@ -5,38 +5,21 @@ import typings.aureliaPal.anon.Instantiable
 import typings.std.EventListenerOrEventListenerObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Platform extends js.Object {
+  
   /**
     * Reference to the Loader Class (set after the loader has been first imported)
     */
   var Loader: js.Any = js.native
+  
   /**
     * The runtime's XMLHttpRequest API.
     */
   var XMLHttpRequest: Instantiable with Instantiable0[typings.std.global.XMLHttpRequest] = js.native
-  /**
-    * The runtime environment's global.
-    */
-  var global: js.Any = js.native
-  /**
-    * The runtime's history API.
-    */
-  var history: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.history */ js.Any = js.native
-  /**
-    * The runtime's location API.
-    */
-  var location: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.location */ js.Any = js.native
-  /**
-    * A function wich does nothing.
-    */
-  var noop: js.Function = js.native
-  /**
-    * The runtime's performance API
-    */
-  var performance: Performance = js.native
+  
   /**
     * Add a global event listener.
     * @param eventName A string representing the event type to listen for.
@@ -45,11 +28,28 @@ trait Platform extends js.Object {
     */
   def addEventListener(eventName: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   def addEventListener(eventName: String, callback: EventListenerOrEventListenerObject, capture: Boolean): Unit = js.native
+  
   /**
     * Iterate all modules loaded by the script loader.
     * @param callback A callback that will receive each module id along with the module object. Return true to end enumeration.
     */
   def eachModule(callback: js.Function2[/* key */ String, /* value */ js.Object, Boolean]): Unit = js.native
+  
+  /**
+    * The runtime environment's global.
+    */
+  var global: js.Any = js.native
+  
+  /**
+    * The runtime's history API.
+    */
+  var history: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.history */ js.Any = js.native
+  
+  /**
+    * The runtime's location API.
+    */
+  var location: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.location */ js.Any = js.native
+  
   /**
     * Resolves a module name to a path resolvable by the loader. By default returns the first parameter.
     * It is recommended to use this for all dynamic imports as it enables static analysis
@@ -64,6 +64,17 @@ trait Platform extends js.Object {
   def moduleName(moduleName: String): String = js.native
   def moduleName(moduleName: String, chunk: String): String = js.native
   def moduleName(moduleName: String, options: ModuleNameOptions): String = js.native
+  
+  /**
+    * A function wich does nothing.
+    */
+  var noop: js.Function = js.native
+  
+  /**
+    * The runtime's performance API
+    */
+  var performance: Performance = js.native
+  
   /**
     * Remove a global event listener.
     * @param eventName A string representing the event type to listen for.
@@ -72,6 +83,7 @@ trait Platform extends js.Object {
     */
   def removeEventListener(eventName: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   def removeEventListener(eventName: String, callback: EventListenerOrEventListenerObject, capture: Boolean): Unit = js.native
+  
   /**
     * Registers a function to call when the system is ready to update (repaint) the display.
     * @param callback The function to call.
@@ -79,4 +91,3 @@ trait Platform extends js.Object {
     */
   def requestAnimationFrame(callback: js.Function1[/* animationFrameStart */ Double, Unit]): Double = js.native
 }
-

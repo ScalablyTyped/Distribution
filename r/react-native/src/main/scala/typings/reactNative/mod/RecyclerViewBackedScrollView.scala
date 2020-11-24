@@ -4,13 +4,14 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.ScrollResponderMixin */ @JSImport("react-native", "RecyclerViewBackedScrollView")
 @js.native
 class RecyclerViewBackedScrollView ()
   extends Component[RecyclerViewBackedScrollViewProps, js.Object, js.Any] {
+  
   /**
     * Returns a reference to the underlying scroll responder, which supports
     * operations like `scrollTo`. All ScrollView-like components should
@@ -18,6 +19,7 @@ class RecyclerViewBackedScrollView ()
     * to the underlying scroll responder's methods.
     */
   def getScrollResponder(): Element = js.native
+  
   /**
     * A helper function to scroll to a specific point  in the scrollview.
     * This is currently used to help focus on child textviews, but can also
@@ -42,4 +44,3 @@ class RecyclerViewBackedScrollView ()
   def scrollTo(y: typings.reactNative.anon.Animated, x: Double): Unit = js.native
   def scrollTo(y: typings.reactNative.anon.Animated, x: Double, animated: Boolean): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ Rollout.io ROX JS SDK Node
 | ------------------ | :-------------: |
 | Full name          | rox-node |
 | Keywords           | feature-flag, feature-flags, remote-configuration, remote-variable, rollout, rox, flags, flag, configuration, remote-control, rollout.io |
-| # releases         | 38 |
+| # releases         | 35 |
 | # dependents       | 2 |
-| # downloads        | 122450 |
+| # downloads        | 243618 |
 | # stars            | 0 |
 
 ## Links

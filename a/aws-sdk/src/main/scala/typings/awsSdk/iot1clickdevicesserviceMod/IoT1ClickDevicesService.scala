@@ -1,17 +1,16 @@
 package typings.awsSdk.iot1clickdevicesserviceMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IoT1ClickDevicesService extends Service {
-  @JSName("config")
-  var config_IoT1ClickDevicesService: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Adds device(s) to your account (i.e., claim one or more devices) if and only if you
     received a claim code with the device(s).
@@ -27,6 +26,10 @@ trait IoT1ClickDevicesService extends Service {
     params: ClaimDevicesByClaimCodeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ClaimDevicesByClaimCodeResponse, Unit]
   ): Request[ClaimDevicesByClaimCodeResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_IoT1ClickDevicesService: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Given a device ID, returns a DescribeDeviceResponse object describing the
     details of the device.
@@ -42,6 +45,7 @@ trait IoT1ClickDevicesService extends Service {
     params: DescribeDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDeviceResponse, Unit]
   ): Request[DescribeDeviceResponse, AWSError] = js.native
+  
   /**
     * Given a device ID, finalizes the claim request for the associated device.
     Claiming a device consists of initiating a claim, then publishing a device event,
@@ -63,6 +67,7 @@ trait IoT1ClickDevicesService extends Service {
     params: FinalizeDeviceClaimRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ FinalizeDeviceClaimResponse, Unit]
   ): Request[FinalizeDeviceClaimResponse, AWSError] = js.native
+  
   /**
     * Given a device ID, returns the invokable methods associated with the device.
     */
@@ -76,6 +81,7 @@ trait IoT1ClickDevicesService extends Service {
     params: GetDeviceMethodsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeviceMethodsResponse, Unit]
   ): Request[GetDeviceMethodsResponse, AWSError] = js.native
+  
   /**
     * Given a device ID, initiates a claim request for the associated device.
     Claiming a device consists of initiating a claim, then publishing a device event,
@@ -97,6 +103,7 @@ trait IoT1ClickDevicesService extends Service {
     params: InitiateDeviceClaimRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ InitiateDeviceClaimResponse, Unit]
   ): Request[InitiateDeviceClaimResponse, AWSError] = js.native
+  
   /**
     * Given a device ID, issues a request to invoke a named device method (with possible
     parameters). See the "Example POST" code snippet below.
@@ -112,6 +119,7 @@ trait IoT1ClickDevicesService extends Service {
     params: InvokeDeviceMethodRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ InvokeDeviceMethodResponse, Unit]
   ): Request[InvokeDeviceMethodResponse, AWSError] = js.native
+  
   /**
     * Using a device ID, returns a DeviceEventsResponse object containing an
     array of events for the device.
@@ -127,6 +135,7 @@ trait IoT1ClickDevicesService extends Service {
     params: ListDeviceEventsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDeviceEventsResponse, Unit]
   ): Request[ListDeviceEventsResponse, AWSError] = js.native
+  
   /**
     * Lists the 1-Click compatible devices associated with your AWS account.
     */
@@ -140,6 +149,7 @@ trait IoT1ClickDevicesService extends Service {
     params: ListDevicesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDevicesResponse, Unit]
   ): Request[ListDevicesResponse, AWSError] = js.native
+  
   /**
     * Lists the tags associated with the specified resource ARN.
     */
@@ -153,6 +163,7 @@ trait IoT1ClickDevicesService extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Adds or updates the tags associated with the resource ARN. See AWS IoT 1-Click Service Limits for the maximum number of tags allowed per
     resource.
@@ -165,6 +176,7 @@ trait IoT1ClickDevicesService extends Service {
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Disassociates a device from your AWS account using its device ID.
     */
@@ -178,6 +190,7 @@ trait IoT1ClickDevicesService extends Service {
     params: UnclaimDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UnclaimDeviceResponse, Unit]
   ): Request[UnclaimDeviceResponse, AWSError] = js.native
+  
   /**
     * Using tag keys, deletes the tags (key/value pairs) associated with the specified
     resource ARN.
@@ -193,6 +206,7 @@ trait IoT1ClickDevicesService extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Using a Boolean value (true or false), this operation
     enables or disables the device given a device ID.
@@ -209,4 +223,3 @@ trait IoT1ClickDevicesService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDeviceStateResponse, Unit]
   ): Request[UpdateDeviceStateResponse, AWSError] = js.native
 }
-

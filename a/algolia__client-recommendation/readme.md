@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__client-recommendation
 
-Typings are for version 4.3.1
+Typings are for version 4.8.0
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 4.3.1
 | ------------------ | :-------------: |
 | Full name          | @algolia/client-recommendation |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 22 |
 | # dependents       | 1 |
-| # downloads        | 1697819 |
+| # downloads        | 4065075 |
 | # stars            | 0 |
 
 ## Links

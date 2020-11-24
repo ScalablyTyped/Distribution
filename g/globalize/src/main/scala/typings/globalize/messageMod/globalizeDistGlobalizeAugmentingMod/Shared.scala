@@ -2,10 +2,11 @@ package typings.globalize.messageMod.globalizeDistGlobalizeAugmentingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Shared extends js.Object {
+  
   /**
     * Formats a message (using ICU message format pattern) given its path and a set of variables into a user-readable string
     * @param path String or Array containing the path of the message content, eg. "greetings/bye", or [ "greetings", "bye" ].
@@ -20,6 +21,7 @@ trait Shared extends js.Object {
   def formatMessage(path: js.Array[String], variables: String): String = js.native
   def formatMessage(path: js.Array[String], variables: js.Array[String]): String = js.native
   def formatMessage(path: js.Array[String], variables: js.Object): String = js.native
+  
   /**
     * Return a function that formats a message (using ICU message format pattern) given its path and a set of variables into a user-readable string. It supports pluralization and gender inflections.
     * @param path String or Array containing the path of the message content, eg. "greetings/bye", or [ "greetings", "bye" ].
@@ -28,4 +30,3 @@ trait Shared extends js.Object {
   def messageFormatter(path: String): js.Function1[/* variables */ js.UndefOr[String | js.Array[String] | js.Object], String] = js.native
   def messageFormatter(path: js.Array[String]): js.Function1[/* variables */ js.UndefOr[String | js.Array[String] | js.Object], String] = js.native
 }
-

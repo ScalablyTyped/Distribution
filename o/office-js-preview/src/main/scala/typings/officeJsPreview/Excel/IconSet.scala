@@ -2,17 +2,17 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait IconSet extends js.Object
-
 /**
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.IconSet")
 @js.native
 object IconSet extends js.Object {
+  
   @js.native
   sealed trait fiveArrows extends IconSet
   
@@ -75,6 +75,4 @@ object IconSet extends js.Object {
   
   @js.native
   sealed trait threeTriangles extends IconSet
-  
 }
-

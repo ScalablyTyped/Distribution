@@ -1,18 +1,18 @@
 
 # Scala.js typings for active-win
 
-Typings are for version 6.1.0
+Typings are for version 6.2.0
 
 ## Library description:
-Get metadata about the active window (title, id, bounds, owner, etc). Works on macOS, Linux, Windows.
+Get metadata about the active window (title, id, bounds, owner, URL, etc). Works on macOS, Linux, Windows.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | active-win |
-| Keywords           | macos, linux, windows, app, application, window, win, active, focused, current, title, name, id, pid, screenshot, capture, metadata, bounds, memory, usage, bundleid |
+| Keywords           | macos, linux, windows, app, application, window, win, active, focused, current, title, name, id, pid, screenshot, capture, metadata, bounds, memory, usage, bundleid, browser, url, chrome, safari, edge, brave |
 | # releases         | 10 |
-| # dependents       | 9 |
-| # downloads        | 14185 |
+| # dependents       | 10 |
+| # downloads        | 21787 |
 | # stars            | 1 |
 
 ## Links

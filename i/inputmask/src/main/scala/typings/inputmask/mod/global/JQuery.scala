@@ -13,10 +13,11 @@ import typings.inputmask.mod.Instance
 import typings.inputmask.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Creates a new Inputmask instance.
     *
@@ -38,7 +39,6 @@ trait JQuery extends js.Object {
     */
   @JSName("inputmask")
   def inputmask_getemptymask(method: getemptymask): String = js.native
-   // tslint:disable-line:unified-signatures
   /**
     * The metadata of the actual mask provided in the mask definitions can be obtained by calling getmetadata. If
     * only a mask is provided the mask definition will be returned by the getmetadata.
@@ -51,7 +51,6 @@ trait JQuery extends js.Object {
     */
   @JSName("inputmask")
   def inputmask_hasMaskedValue(method: hasMaskedValue): Boolean = js.native
-   // tslint:disable-line:unified-signatures
   /**
     * Verify whether the current value is complete or not.
     */
@@ -103,4 +102,3 @@ trait JQuery extends js.Object {
   @JSName("inputmask")
   def inputmask_unmaskedvalue(method: unmaskedvalue): String = js.native
 }
-

@@ -10,9 +10,9 @@ Migrate older jQuery code to jQuery 3.0+
 | ------------------ | :-------------: |
 | Full name          | jquery-migrate |
 | Keywords           | jquery, javascript, browser, plugin, migrate |
-| # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 2442539 |
+| # releases         | 4 |
+| # dependents       | 24 |
+| # downloads        | 4743148 |
 | # stars            | 2 |
 
 ## Links

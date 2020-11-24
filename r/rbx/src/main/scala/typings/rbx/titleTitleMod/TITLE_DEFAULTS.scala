@@ -8,11 +8,11 @@ import typings.rbx.rbxNumbers.`5`
 import typings.rbx.rbxNumbers.`6`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbx/elements/title/title", "TITLE_DEFAULTS")
 @js.native
 object TITLE_DEFAULTS extends js.Object {
+  
   var sizes: js.Tuple6[`1`, `2`, `3`, `4`, `5`, `6`] = js.native
 }
-

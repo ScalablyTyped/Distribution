@@ -1,17 +1,19 @@
 package typings.awsSdk.applicationinsightsMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ApplicationInsights extends Service {
+  
   @JSName("config")
   var config_ApplicationInsights: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Adds an application that is created from a resource group.
     */
@@ -25,6 +27,7 @@ trait ApplicationInsights extends Service {
     params: CreateApplicationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateApplicationResponse, scala.Unit]
   ): Request[CreateApplicationResponse, AWSError] = js.native
+  
   /**
     * Creates a custom component by grouping similar standalone instances to monitor.
     */
@@ -38,6 +41,7 @@ trait ApplicationInsights extends Service {
     params: CreateComponentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateComponentResponse, scala.Unit]
   ): Request[CreateComponentResponse, AWSError] = js.native
+  
   /**
     * Adds an log pattern to a LogPatternSet.
     */
@@ -51,6 +55,7 @@ trait ApplicationInsights extends Service {
     params: CreateLogPatternRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLogPatternResponse, scala.Unit]
   ): Request[CreateLogPatternResponse, AWSError] = js.native
+  
   /**
     * Removes the specified application from monitoring. Does not delete the application.
     */
@@ -64,6 +69,7 @@ trait ApplicationInsights extends Service {
     params: DeleteApplicationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteApplicationResponse, scala.Unit]
   ): Request[DeleteApplicationResponse, AWSError] = js.native
+  
   /**
     * Ungroups a custom component. When you ungroup custom components, all applicable monitors that are set up for the component are removed and the instances revert to their standalone status.
     */
@@ -77,6 +83,7 @@ trait ApplicationInsights extends Service {
     params: DeleteComponentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteComponentResponse, scala.Unit]
   ): Request[DeleteComponentResponse, AWSError] = js.native
+  
   /**
     * Removes the specified log pattern from a LogPatternSet.
     */
@@ -90,6 +97,7 @@ trait ApplicationInsights extends Service {
     params: DeleteLogPatternRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLogPatternResponse, scala.Unit]
   ): Request[DeleteLogPatternResponse, AWSError] = js.native
+  
   /**
     * Describes the application.
     */
@@ -103,6 +111,7 @@ trait ApplicationInsights extends Service {
     params: DescribeApplicationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeApplicationResponse, scala.Unit]
   ): Request[DescribeApplicationResponse, AWSError] = js.native
+  
   /**
     * Describes a component and lists the resources that are grouped together in a component.
     */
@@ -116,6 +125,7 @@ trait ApplicationInsights extends Service {
     params: DescribeComponentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeComponentResponse, scala.Unit]
   ): Request[DescribeComponentResponse, AWSError] = js.native
+  
   /**
     * Describes the monitoring configuration of the component.
     */
@@ -131,6 +141,7 @@ trait ApplicationInsights extends Service {
     params: DescribeComponentConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeComponentConfigurationResponse, scala.Unit]
   ): Request[DescribeComponentConfigurationResponse, AWSError] = js.native
+  
   /**
     * Describes the recommended monitoring configuration of the component.
     */
@@ -154,6 +165,7 @@ trait ApplicationInsights extends Service {
       scala.Unit
     ]
   ): Request[DescribeComponentConfigurationRecommendationResponse, AWSError] = js.native
+  
   /**
     * Describe a specific log pattern from a LogPatternSet.
     */
@@ -167,6 +179,7 @@ trait ApplicationInsights extends Service {
     params: DescribeLogPatternRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeLogPatternResponse, scala.Unit]
   ): Request[DescribeLogPatternResponse, AWSError] = js.native
+  
   /**
     * Describes an anomaly or error with the application.
     */
@@ -180,6 +193,7 @@ trait ApplicationInsights extends Service {
     params: DescribeObservationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeObservationResponse, scala.Unit]
   ): Request[DescribeObservationResponse, AWSError] = js.native
+  
   /**
     * Describes an application problem.
     */
@@ -193,6 +207,7 @@ trait ApplicationInsights extends Service {
     params: DescribeProblemRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProblemResponse, scala.Unit]
   ): Request[DescribeProblemResponse, AWSError] = js.native
+  
   /**
     * Describes the anomalies or errors associated with the problem.
     */
@@ -208,6 +223,7 @@ trait ApplicationInsights extends Service {
     params: DescribeProblemObservationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProblemObservationsResponse, scala.Unit]
   ): Request[DescribeProblemObservationsResponse, AWSError] = js.native
+  
   /**
     * Lists the IDs of the applications that you are monitoring. 
     */
@@ -221,6 +237,7 @@ trait ApplicationInsights extends Service {
     params: ListApplicationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListApplicationsResponse, scala.Unit]
   ): Request[ListApplicationsResponse, AWSError] = js.native
+  
   /**
     * Lists the auto-grouped, standalone, and custom components of the application.
     */
@@ -234,6 +251,7 @@ trait ApplicationInsights extends Service {
     params: ListComponentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListComponentsResponse, scala.Unit]
   ): Request[ListComponentsResponse, AWSError] = js.native
+  
   /**
     *  Lists the INFO, WARN, and ERROR events for periodic configuration updates performed by Application Insights. Examples of events represented are:    INFO: creating a new alarm or updating an alarm threshold.   WARN: alarm not created due to insufficient data points used to predict thresholds.   ERROR: alarm not created due to permission errors or exceeding quotas.   
     */
@@ -249,6 +267,7 @@ trait ApplicationInsights extends Service {
     params: ListConfigurationHistoryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListConfigurationHistoryResponse, scala.Unit]
   ): Request[ListConfigurationHistoryResponse, AWSError] = js.native
+  
   /**
     * Lists the log pattern sets in the specific application.
     */
@@ -262,6 +281,7 @@ trait ApplicationInsights extends Service {
     params: ListLogPatternSetsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListLogPatternSetsResponse, scala.Unit]
   ): Request[ListLogPatternSetsResponse, AWSError] = js.native
+  
   /**
     * Lists the log patterns in the specific log LogPatternSet.
     */
@@ -275,6 +295,7 @@ trait ApplicationInsights extends Service {
     params: ListLogPatternsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListLogPatternsResponse, scala.Unit]
   ): Request[ListLogPatternsResponse, AWSError] = js.native
+  
   /**
     * Lists the problems with your application.
     */
@@ -288,6 +309,7 @@ trait ApplicationInsights extends Service {
     params: ListProblemsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListProblemsResponse, scala.Unit]
   ): Request[ListProblemsResponse, AWSError] = js.native
+  
   /**
     * Retrieve a list of the tags (keys and values) that are associated with a specified application. A tag is a label that you optionally define and associate with an application. Each tag consists of a required tag key and an optional associated tag value. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
     */
@@ -301,6 +323,7 @@ trait ApplicationInsights extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, scala.Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Add one or more tags (keys and values) to a specified application. A tag is a label that you optionally define and associate with an application. Tags can help you categorize and manage application in different ways, such as by purpose, owner, environment, or other criteria.  Each tag consists of a required tag key and an associated tag value, both of which you define. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
     */
@@ -314,6 +337,7 @@ trait ApplicationInsights extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, scala.Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Remove one or more tags (keys and values) from a specified application.
     */
@@ -327,6 +351,7 @@ trait ApplicationInsights extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, scala.Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates the application.
     */
@@ -340,6 +365,7 @@ trait ApplicationInsights extends Service {
     params: UpdateApplicationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateApplicationResponse, scala.Unit]
   ): Request[UpdateApplicationResponse, AWSError] = js.native
+  
   /**
     * Updates the custom component name and/or the list of resources that make up the component.
     */
@@ -353,6 +379,7 @@ trait ApplicationInsights extends Service {
     params: UpdateComponentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateComponentResponse, scala.Unit]
   ): Request[UpdateComponentResponse, AWSError] = js.native
+  
   /**
     * Updates the monitoring configurations for the component. The configuration input parameter is an escaped JSON of the configuration and should match the schema of what is returned by DescribeComponentConfigurationRecommendation. 
     */
@@ -368,6 +395,7 @@ trait ApplicationInsights extends Service {
     params: UpdateComponentConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateComponentConfigurationResponse, scala.Unit]
   ): Request[UpdateComponentConfigurationResponse, AWSError] = js.native
+  
   /**
     * Adds a log pattern to a LogPatternSet.
     */
@@ -382,4 +410,3 @@ trait ApplicationInsights extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateLogPatternResponse, scala.Unit]
   ): Request[UpdateLogPatternResponse, AWSError] = js.native
 }
-

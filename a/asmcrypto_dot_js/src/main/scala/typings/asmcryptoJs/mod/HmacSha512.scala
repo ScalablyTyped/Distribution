@@ -3,7 +3,7 @@ package typings.asmcryptoJs.mod
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asmcrypto.js", "HmacSha512")
 @js.native
@@ -12,4 +12,3 @@ class HmacSha512 protected ()
   def this(password: Uint8Array) = this()
   def this(password: Uint8Array, verify: Uint8Array) = this()
 }
-

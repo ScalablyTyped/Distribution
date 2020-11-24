@@ -4,11 +4,12 @@ import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.postProcessMod.PostProcess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/vrMultiviewToSingleviewPostProcess", JSImport.Namespace)
 @js.native
 object vrMultiviewToSingleviewPostProcessMod extends js.Object {
+  
   @js.native
   class VRMultiviewToSingleviewPostProcess protected () extends PostProcess {
     /**
@@ -19,6 +20,4 @@ object vrMultiviewToSingleviewPostProcessMod extends js.Object {
       */
     def this(name: String, camera: Camera, scaleFactor: Double) = this()
   }
-  
 }
-

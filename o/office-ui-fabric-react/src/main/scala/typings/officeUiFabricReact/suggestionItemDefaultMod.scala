@@ -5,14 +5,15 @@ import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePickerItems/SuggestionItemDefault", JSImport.Namespace)
 @js.native
 object suggestionItemDefaultMod extends js.Object {
+  
   def SuggestionItemNormal(persona: IPersonaProps): Element = js.native
   def SuggestionItemNormal(persona: IPersonaProps, suggestionProps: IBasePickerSuggestionsProps[_]): Element = js.native
+  
   def SuggestionItemSmall(persona: IPersonaProps): Element = js.native
   def SuggestionItemSmall(persona: IPersonaProps, suggestionProps: IBasePickerSuggestionsProps[_]): Element = js.native
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-split-pane" : "0.1.91"
+      "react-split-pane" : "0.1.92"
     }
   ],
   "test-dependencies" : [
     {
-      "react-split-pane" : "0.1.91"
+      "react-split-pane" : "0.1.92"
     }
   ],
   "compile-devDependencies" : [

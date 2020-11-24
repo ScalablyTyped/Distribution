@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TextToColumnsDelimiter extends js.Object
-
 /**
   * An enumeration of the types of preset delimiters that can split a column of text into multiple
   * columns.
@@ -14,6 +13,7 @@ sealed trait TextToColumnsDelimiter extends js.Object
 @JSGlobal("GoogleAppsScript.Spreadsheet.TextToColumnsDelimiter")
 @js.native
 object TextToColumnsDelimiter extends js.Object {
+  
   @js.native
   sealed trait COMMA extends TextToColumnsDelimiter
   
@@ -25,6 +25,4 @@ object TextToColumnsDelimiter extends js.Object {
   
   @js.native
   sealed trait SPACE extends TextToColumnsDelimiter
-  
 }
-

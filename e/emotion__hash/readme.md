@@ -10,9 +10,9 @@ A MurmurHash2 implementation
 | ------------------ | :-------------: |
 | Full name          | @emotion/hash |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 21 |
-| # downloads        | 93385843 |
+| # releases         | 11 |
+| # dependents       | 33 |
+| # downloads        | 174993531 |
 | # stars            | 0 |
 
 ## Links

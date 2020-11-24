@@ -12,7 +12,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies accessibility support for a menu separator.
@@ -23,8 +23,8 @@ trait AccessibleMenuSeparator
   extends XAccessibleExtendedComponent
      with XAccessibleContext
      with XAccessibleEventBroadcaster
-
 object AccessibleMenuSeparator {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -77,4 +77,3 @@ object AccessibleMenuSeparator {
     __obj.asInstanceOf[AccessibleMenuSeparator]
   }
 }
-

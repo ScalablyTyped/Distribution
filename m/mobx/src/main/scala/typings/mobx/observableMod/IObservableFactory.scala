@@ -10,10 +10,11 @@ import typings.std.PropertyDescriptor
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IObservableFactory extends js.Object {
+  
   def apply(): scala.Nothing = js.native
   def apply(target: js.Object, key: String): js.Any = js.native
   def apply(target: js.Object, key: String, baseDescriptor: PropertyDescriptor): js.Any = js.native
@@ -44,4 +45,3 @@ trait IObservableFactory extends js.Object {
   def apply[K, V](value: Map[K, V]): ObservableMap[K, V] = js.native
   def apply[K, V](value: Map[K, V], options: CreateObservableOptions): ObservableMap[K, V] = js.native
 }
-

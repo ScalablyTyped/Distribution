@@ -2,7 +2,7 @@ package typings.timezonecomplete.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("timezonecomplete", "Transition")
 @js.native
@@ -30,4 +30,3 @@ class Transition protected ()
   letter: String
   ) = this()
 }
-

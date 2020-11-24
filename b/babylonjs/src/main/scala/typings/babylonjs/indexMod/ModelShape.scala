@@ -3,7 +3,7 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "ModelShape")
 @js.native
@@ -40,4 +40,3 @@ class ModelShape protected ()
     material: Nullable[typings.babylonjs.materialMod.Material]
   ) = this()
 }
-

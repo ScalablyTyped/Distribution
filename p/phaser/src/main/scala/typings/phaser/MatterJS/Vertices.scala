@@ -2,7 +2,7 @@ package typings.phaser.MatterJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Matter.Vertices` module contains methods for creating and manipulating sets of vertices.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Vertices extends js.Object
-

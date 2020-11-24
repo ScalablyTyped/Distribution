@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Graphics.Printing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrintColorMode extends js.Object
-
 /** Specifies the color mode option. */
 @JSGlobal("Windows.Graphics.Printing.PrintColorMode")
 @js.native
 object PrintColorMode extends js.Object {
+  
   /** An option to indicate that the printed output will be in color. */
   @js.native
   sealed trait color extends PrintColorMode
@@ -34,6 +34,4 @@ object PrintColorMode extends js.Object {
   /** A custom color mode option that is specific to the print device. */
   @js.native
   sealed trait printerCustom extends PrintColorMode
-  
 }
-

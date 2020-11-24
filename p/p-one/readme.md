@@ -12,7 +12,7 @@ Test whether some promise passes a testing function
 | Keywords           | async, await, bluebird, collection, concurrency, concurrently, filter, fulfilled, iterable, iterator, parallel, promise, promises, some, test |
 | # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 15944 |
+| # downloads        | 10939 |
 | # stars            | 0 |
 
 ## Links

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/genomics/v2alpha1", "genomics_v2alpha1.Resource$Workers")
 @js.native
 class ResourceWorkers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * genomics.workers.checkIn
     * @desc The worker uses this method to retrieve the assigned operation and
@@ -43,5 +43,6 @@ class ResourceWorkers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCheckInResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
 }
-

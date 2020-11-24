@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The number of statements that are cached in the statement cache of each connection.
@@ -18,4 +18,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "stmtCacheSize")
 @js.native
 object stmtCacheSize extends TopLevel[Double]
-

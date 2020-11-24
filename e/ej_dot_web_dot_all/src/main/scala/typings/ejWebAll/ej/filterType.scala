@@ -2,14 +2,14 @@ package typings.ejWebAll.ej
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait filterType extends js.Object
-
 @JSGlobal("ej.filterType")
 @js.native
 object filterType extends js.Object {
+  
   @js.native
   sealed trait Contains extends filterType
   
@@ -36,6 +36,4 @@ object filterType extends js.Object {
   
   @js.native
   sealed trait StartsWith extends filterType
-  
 }
-

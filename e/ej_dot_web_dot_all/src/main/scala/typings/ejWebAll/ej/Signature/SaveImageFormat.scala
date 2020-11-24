@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Signature
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SaveImageFormat extends js.Object
-
 @JSGlobal("ej.Signature.SaveImageFormat")
 @js.native
 object SaveImageFormat extends js.Object {
+  
   ///To save the signature image with BMP format only.
   @js.native
   sealed trait BMP extends SaveImageFormat
@@ -25,6 +25,4 @@ object SaveImageFormat extends js.Object {
   ///To save the signature image with TIFF format only.
   @js.native
   sealed trait TIFF extends SaveImageFormat
-  
 }
-

@@ -2,7 +2,7 @@ package typings.ranjs.mod.dist
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.Burr")
 @js.native
@@ -12,4 +12,3 @@ class Burr ()
   def this(c: js.UndefOr[scala.Nothing], k: Double) = this()
   def this(c: Double, k: Double) = this()
 }
-

@@ -4,15 +4,23 @@ import typings.devextreme.mod.global.JQueryPromise
 import typings.devextreme.mod.global.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait dxSlideOut extends CollectionWidget {
-  /** @name dxSlideOut.hideMenu() */
+  
+  /**
+    * [descr:dxSlideOut.hideMenu()]
+    */
   def hideMenu(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** @name dxSlideOut.showMenu() */
+  
+  /**
+    * [descr:dxSlideOut.showMenu()]
+    */
   def showMenu(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** @name dxSlideOut.toggleMenuVisibility(showing) */
+  
+  /**
+    * [descr:dxSlideOut.toggleMenuVisibility(showing)]
+    */
   def toggleMenuVisibility(showing: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
-

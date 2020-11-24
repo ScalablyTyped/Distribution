@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Devices.Usb
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the setup packet for a USB control transfer. For an explanation of the setup packet, see Table 9.2 in the Universal Serial Bus (USB) specification. */
 @JSGlobal("Windows.Devices.Usb.UsbSetupPacket")
@@ -17,4 +17,3 @@ class UsbSetupPacket ()
     */
   def this(eightByteBuffer: IBuffer) = this()
 }
-

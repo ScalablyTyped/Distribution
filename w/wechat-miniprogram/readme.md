@@ -1,7 +1,7 @@
 
 # Scala.js typings for wechat-miniprogram
 
-Typings are for version 2.11
+Typings are for version 3.1
 
 
 

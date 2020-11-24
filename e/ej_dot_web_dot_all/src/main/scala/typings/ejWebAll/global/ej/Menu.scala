@@ -4,7 +4,7 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.Menu")
 @js.native
@@ -15,12 +15,12 @@ class Menu protected ()
   def this(element: JQuery, options: typings.ejWebAll.ej.Menu.Model) = this()
   def this(element: Element, options: typings.ejWebAll.ej.Menu.Model) = this()
 }
-
 /* static members */
 @JSGlobal("ej.Menu")
 @js.native
 object Menu extends js.Object {
+  
   var Locale: js.Any = js.native
+  
   var fn: typings.ejWebAll.ej.Menu = js.native
 }
-

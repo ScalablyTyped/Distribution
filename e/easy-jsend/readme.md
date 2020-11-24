@@ -11,7 +11,7 @@ Adds jSend response functions to express.response prototype
 | Keywords           | express, jsend |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 558 |
+| # downloads        | 852 |
 | # stars            | 0 |
 
 ## Links

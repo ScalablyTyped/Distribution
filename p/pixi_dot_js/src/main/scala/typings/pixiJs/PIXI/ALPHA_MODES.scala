@@ -2,11 +2,10 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ALPHA_MODES extends js.Object
-
 /**
   * How to treat textures with premultiplied alpha
   *
@@ -27,6 +26,7 @@ sealed trait ALPHA_MODES extends js.Object
 @JSGlobal("PIXI.ALPHA_MODES")
 @js.native
 object ALPHA_MODES extends js.Object {
+  
   @js.native
   sealed trait NO_PREMULTIPLIED_ALPHA extends ALPHA_MODES
   
@@ -44,6 +44,4 @@ object ALPHA_MODES extends js.Object {
   
   @js.native
   sealed trait UNPACK extends ALPHA_MODES
-  
 }
-

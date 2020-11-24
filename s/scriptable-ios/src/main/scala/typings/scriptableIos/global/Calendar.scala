@@ -2,7 +2,7 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Holds reminders and events._
@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Calendar ()
   extends typings.scriptableIos.Calendar
-
 /* static members */
 @JSGlobal("Calendar")
 @js.native
 object Calendar extends js.Object {
+  
   /**
     * _Create a new calendar that holds reminders._
     *
@@ -24,6 +24,7 @@ object Calendar extends js.Object {
     * @see https://docs.scriptable.app/calendar/#createforreminders
     */
   def createForReminders(title: String): js.Promise[typings.scriptableIos.Calendar] = js.native
+  
   /**
     * _Default calendar for events._
     *
@@ -31,6 +32,7 @@ object Calendar extends js.Object {
     * @see https://docs.scriptable.app/calendar/#defaultforevents
     */
   def defaultForEvents(): js.Promise[typings.scriptableIos.Calendar] = js.native
+  
   /**
     * _Default calendar for reminders._
     *
@@ -38,6 +40,7 @@ object Calendar extends js.Object {
     * @see https://docs.scriptable.app/calendar/#defaultforreminders
     */
   def defaultForReminders(): js.Promise[typings.scriptableIos.Calendar] = js.native
+  
   /**
     * _Find or create a new calendar that holds reminders._
     *
@@ -47,6 +50,7 @@ object Calendar extends js.Object {
     * @see https://docs.scriptable.app/calendar/#findorcreateforreminders
     */
   def findOrCreateForReminders(title: String): js.Promise[typings.scriptableIos.Calendar] = js.native
+  
   /**
     * _Fetches calendars for events._
     *
@@ -54,12 +58,14 @@ object Calendar extends js.Object {
     * @see https://docs.scriptable.app/calendar/#forevents
     */
   def forEvents(): js.Promise[js.Array[typings.scriptableIos.Calendar]] = js.native
+  
   /**
     * _Fetches a calendar that holds events._
     * @param title - Title of calendar.
     * @see https://docs.scriptable.app/calendar/#foreventsbytitle
     */
   def forEventsByTitle(title: String): js.Promise[typings.scriptableIos.Calendar] = js.native
+  
   /**
     * _Fetches calendars for reminders._
     *
@@ -67,12 +73,14 @@ object Calendar extends js.Object {
     * @see https://docs.scriptable.app/calendar/#forreminders
     */
   def forReminders(): js.Promise[js.Array[typings.scriptableIos.Calendar]] = js.native
+  
   /**
     * _Fetches a calendar that holds reminders._
     * @param title - Title of calendar.
     * @see https://docs.scriptable.app/calendar/#forremindersbytitle
     */
   def forRemindersByTitle(title: String): js.Promise[typings.scriptableIos.Calendar] = js.native
+  
   /**
     * _Presents a view for picking calendars._
     * @param allowMultiple - Whether to allow picking multiple calenders. Defaults to false.
@@ -81,4 +89,3 @@ object Calendar extends js.Object {
   def presentPicker(): js.Promise[js.Array[typings.scriptableIos.Calendar]] = js.native
   def presentPicker(allowMultiple: Boolean): js.Promise[js.Array[typings.scriptableIos.Calendar]] = js.native
 }
-

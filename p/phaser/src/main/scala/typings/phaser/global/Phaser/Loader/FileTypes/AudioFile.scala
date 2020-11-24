@@ -6,7 +6,7 @@ import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import typings.std.AudioContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single Audio File suitable for loading by the Loader.
@@ -102,4 +102,3 @@ class AudioFile protected ()
     audioContext: AudioContext
   ) = this()
 }
-

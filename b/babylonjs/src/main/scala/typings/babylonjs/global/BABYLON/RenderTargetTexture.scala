@@ -5,7 +5,7 @@ import typings.babylonjs.anon.Height
 import typings.babylonjs.anon.Ratio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RenderTargetTexture")
 @js.native
@@ -30,7 +30,7 @@ class RenderTargetTexture protected ()
     */
   def this(
     name: String,
-    size: Double,
+    size: Double | Height | Ratio,
     scene: Nullable[typings.babylonjs.BABYLON.Scene],
     generateMipMaps: js.UndefOr[Boolean],
     doNotChangeAspectRatio: js.UndefOr[Boolean],
@@ -43,59 +43,25 @@ class RenderTargetTexture protected ()
     format: js.UndefOr[Double],
     delayAllocation: js.UndefOr[Boolean]
   ) = this()
-  def this(
-    name: String,
-    size: Height,
-    scene: Nullable[typings.babylonjs.BABYLON.Scene],
-    generateMipMaps: js.UndefOr[Boolean],
-    doNotChangeAspectRatio: js.UndefOr[Boolean],
-    `type`: js.UndefOr[Double],
-    isCube: js.UndefOr[Boolean],
-    samplingMode: js.UndefOr[Double],
-    generateDepthBuffer: js.UndefOr[Boolean],
-    generateStencilBuffer: js.UndefOr[Boolean],
-    isMulti: js.UndefOr[Boolean],
-    format: js.UndefOr[Double],
-    delayAllocation: js.UndefOr[Boolean]
-  ) = this()
-  def this(
-    name: String,
-    size: Ratio,
-    scene: Nullable[typings.babylonjs.BABYLON.Scene],
-    generateMipMaps: js.UndefOr[Boolean],
-    doNotChangeAspectRatio: js.UndefOr[Boolean],
-    `type`: js.UndefOr[Double],
-    isCube: js.UndefOr[Boolean],
-    samplingMode: js.UndefOr[Double],
-    generateDepthBuffer: js.UndefOr[Boolean],
-    generateStencilBuffer: js.UndefOr[Boolean],
-    isMulti: js.UndefOr[Boolean],
-    format: js.UndefOr[Double],
-    delayAllocation: js.UndefOr[Boolean]
-  ) = this()
-  /**
-    * Array of animations
-    */
-  /* CompleteClass */
-  override var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }
-
 /* static members */
 @JSGlobal("BABYLON.RenderTargetTexture")
 @js.native
 object RenderTargetTexture extends js.Object {
+  
   /**
     * The texture will only be rendered once which can be useful to improve performance if everything in your render is static for instance.
     */
   val REFRESHRATE_RENDER_ONCE: Double = js.native
+  
   /**
     * The texture will only be rendered rendered every frame and is recomended for dynamic contents.
     */
   val REFRESHRATE_RENDER_ONEVERYFRAME: Double = js.native
+  
   /**
     * The texture will be rendered every 2 frames which could be enough if your dynamic objects are not
     * the central point of your effect and can save a lot of performances.
     */
   val REFRESHRATE_RENDER_ONEVERYTWOFRAMES: Double = js.native
 }
-

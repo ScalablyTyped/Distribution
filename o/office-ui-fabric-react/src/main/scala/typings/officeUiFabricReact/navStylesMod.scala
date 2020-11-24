@@ -5,12 +5,13 @@ import typings.officeUiFabricReact.navTypesMod.INavStyleProps
 import typings.officeUiFabricReact.navTypesMod.INavStyles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/Nav/Nav.styles", JSImport.Namespace)
 @js.native
 object navStylesMod extends js.Object {
+  
   val buttonStyles: IButtonStyles = js.native
+  
   def getStyles(props: INavStyleProps): INavStyles = js.native
 }
-

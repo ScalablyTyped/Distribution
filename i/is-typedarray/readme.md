@@ -11,8 +11,8 @@ Detect whether or not an object is a Typed Array
 | Full name          | is-typedarray |
 | Keywords           | typed, array, detect, is, util |
 | # releases         | 0 |
-| # dependents       | 99 |
-| # downloads        | 516040889 |
+| # dependents       | 134 |
+| # downloads        | 681908589 |
 | # stars            | 1 |
 
 ## Links

@@ -2,10 +2,11 @@ package typings.knockoutPostbox
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait KnockoutObservable[T] extends js.Object {
+  
   def publishOn(topic: String): KnockoutObservable[T] = js.native
   def publishOn(
     topic: String,
@@ -18,7 +19,9 @@ trait KnockoutObservable[T] extends js.Object {
     skipInitialPublish: Boolean,
     equalityComparer: js.Function2[/* newValue */ T, /* oldValue */ T, Boolean]
   ): KnockoutObservable[T] = js.native
+  
   def stopPublishingOn(topic: String): KnockoutObservable[T] = js.native
+  
   def subscribeTo(topic: String): KnockoutObservable[T] = js.native
   def subscribeTo(
     topic: String,
@@ -31,6 +34,7 @@ trait KnockoutObservable[T] extends js.Object {
     useLastPublishedValueToInitialize: Boolean,
     transform: js.Function1[/* val */ js.Any, T]
   ): KnockoutObservable[T] = js.native
+  
   def syncWith(topic: String): KnockoutObservable[T] = js.native
   def syncWith(
     topic: String,
@@ -59,6 +63,6 @@ trait KnockoutObservable[T] extends js.Object {
     skipInitialPublish: Boolean,
     equalityComparer: js.Function2[/* newValue */ T, /* oldValue */ T, Boolean]
   ): KnockoutObservable[T] = js.native
+  
   def unsubscribeFrom(topic: String): KnockoutObservable[T] = js.native
 }
-

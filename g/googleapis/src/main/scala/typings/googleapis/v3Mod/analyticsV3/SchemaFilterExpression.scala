@@ -2,21 +2,24 @@ package typings.googleapis.v3Mod.analyticsV3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for an Analytics filter expression.
   */
 @js.native
 trait SchemaFilterExpression extends js.Object {
+  
   /**
     * Determines if the filter is case sensitive.
     */
   var caseSensitive: js.UndefOr[Boolean] = js.native
+  
   /**
     * Filter expression value
     */
   var expressionValue: js.UndefOr[String] = js.native
+  
   /**
     * Field to filter. Possible values:   - Content and Traffic   -
     * PAGE_REQUEST_URI,  - PAGE_HOSTNAME,  - PAGE_TITLE,  - REFERRAL,  -
@@ -51,15 +54,18 @@ trait SchemaFilterExpression extends js.Object {
     * - Custom dimension   - CUSTOM_DIMENSION (See accompanying field index),
     */
   var field: js.UndefOr[String] = js.native
+  
   /**
     * The Index of the custom dimension. Set only if the field is a is
     * CUSTOM_DIMENSION.
     */
   var fieldIndex: js.UndefOr[Double] = js.native
+  
   /**
     * Kind value for filter expression
     */
   var kind: js.UndefOr[String] = js.native
+  
   /**
     * Match type for this filter. Possible values are BEGINS_WITH, EQUAL,
     * ENDS_WITH, CONTAINS, or MATCHES. GEO_DOMAIN, GEO_IP_ADDRESS,
@@ -68,49 +74,63 @@ trait SchemaFilterExpression extends js.Object {
     */
   var matchType: js.UndefOr[String] = js.native
 }
-
 object SchemaFilterExpression {
+  
   @scala.inline
   def apply(): SchemaFilterExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFilterExpression]
   }
+  
   @scala.inline
   implicit class SchemaFilterExpressionOps[Self <: SchemaFilterExpression] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCaseSensitive: Self = this.set("caseSensitive", js.undefined)
+    
     @scala.inline
     def setExpressionValue(value: String): Self = this.set("expressionValue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteExpressionValue: Self = this.set("expressionValue", js.undefined)
+    
     @scala.inline
     def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteField: Self = this.set("field", js.undefined)
+    
     @scala.inline
     def setFieldIndex(value: Double): Self = this.set("fieldIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFieldIndex: Self = this.set("fieldIndex", js.undefined)
+    
     @scala.inline
     def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKind: Self = this.set("kind", js.undefined)
+    
     @scala.inline
     def setMatchType(value: String): Self = this.set("matchType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMatchType: Self = this.set("matchType", js.undefined)
   }
-  
 }
-

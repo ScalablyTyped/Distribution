@@ -5,18 +5,20 @@ import typings.idb.idbStrings.readwrite
 import typings.std.DOMStringList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DB extends js.Object {
-  /** A DOMString that contains the name of the connected database. */
-  val name: String = js.native
-  /** A DOMStringList that contains a list of the names of the object stores currently in the connected database. */
-  val objectStoreNames: DOMStringList = js.native
-  /** A 64-bit integer that contains the version of the connected database. When a database is first created, this attribute is an empty string. */
-  val version: Double = js.native
+  
   /** Returns immediately and closes the connection to a database in a separate thread. */
   def close(): Unit = js.native
+  
+  /** A DOMString that contains the name of the connected database. */
+  val name: String = js.native
+  
+  /** A DOMStringList that contains a list of the names of the object stores currently in the connected database. */
+  val objectStoreNames: DOMStringList = js.native
+  
   /** Immediately returns a transaction object (Transaction) containing the IDBTransaction.objectStore method, which you can use to access your object store. Runs in a separate thread.
     * @param storeNames The names of object stores and indexes that are in the scope of the new transaction, declared as an array of strings. Specify only the object stores that you need to access.
     * If you need to access only one object store, you can specify its name as a string.
@@ -32,5 +34,7 @@ trait DB extends js.Object {
   def transaction_readwrite(storeNames: String, mode: readwrite): Transaction = js.native
   @JSName("transaction")
   def transaction_readwrite(storeNames: js.Array[String], mode: readwrite): Transaction = js.native
+  
+  /** A 64-bit integer that contains the version of the connected database. When a database is first created, this attribute is an empty string. */
+  val version: Double = js.native
 }
-

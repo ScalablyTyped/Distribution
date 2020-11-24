@@ -2,14 +2,14 @@ package typings.winrt.Windows.Globalization
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DayOfWeek extends js.Object
-
 @JSGlobal("Windows.Globalization.DayOfWeek")
 @js.native
 object DayOfWeek extends js.Object {
+  
   @js.native
   sealed trait friday extends DayOfWeek
   
@@ -30,6 +30,4 @@ object DayOfWeek extends js.Object {
   
   @js.native
   sealed trait wednesday extends DayOfWeek
-  
 }
-

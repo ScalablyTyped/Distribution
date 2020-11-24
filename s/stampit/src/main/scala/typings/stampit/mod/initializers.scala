@@ -3,11 +3,12 @@ package typings.stampit.mod
 import typings.stampit.mod.stampit.Initializer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stampit", "initializers")
 @js.native
 object initializers extends js.Object {
+  
   def apply[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
     // tslint:disable-next-line: no-unnecessary-generics
   functions: (Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤])*
@@ -17,4 +18,3 @@ object initializers extends js.Object {
   functions: js.Array[Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤]]
   ): S̤t̤a̤m̤p̤ = js.native
 }
-

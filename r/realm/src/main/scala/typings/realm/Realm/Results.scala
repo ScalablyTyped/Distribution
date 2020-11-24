@@ -2,7 +2,7 @@ package typings.realm.Realm
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Results
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Results[T] extends Collection[T] {
+  
   /**
     * Bulk update objects in the collection.
     * @param  {string} property
@@ -18,4 +19,3 @@ trait Results[T] extends Collection[T] {
     */
   def update(property: String, value: js.Any): Unit = js.native
 }
-

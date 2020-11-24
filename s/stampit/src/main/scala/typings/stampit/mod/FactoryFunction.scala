@@ -2,7 +2,7 @@ package typings.stampit.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A factory function to create plain object instances.
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait FactoryFunction[Obj] extends js.Object {
+  
   def apply(options: js.UndefOr[scala.Nothing], args: js.Any*): StampObjectType[Obj] = js.native
   def apply(options: PropertyMap, args: js.Any*): StampObjectType[Obj] = js.native
 }
-

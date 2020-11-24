@@ -1,7 +1,7 @@
 
 # Scala.js typings for iarna__toml
 
-Typings are for version 2.0
+Typings are for version 2.2.5
 
 ## Library description:
 Better TOML parsing and stringifying all in that familiar JSON interface.
@@ -10,9 +10,9 @@ Better TOML parsing and stringifying all in that familiar JSON interface.
 | ------------------ | :-------------: |
 | Full name          | @iarna/toml |
 | Keywords           | toml, toml-parser, toml-stringifier, parser, stringifer, emitter, ini, tomlify, encoder, decoder |
-| # releases         | 20 |
-| # dependents       | 101 |
-| # downloads        | 6561026 |
+| # releases         | 7 |
+| # dependents       | 171 |
+| # downloads        | 15278686 |
 | # stars            | 1 |
 
 ## Links
@@ -24,7 +24,7 @@ Better TOML parsing and stringifying all in that familiar JSON interface.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

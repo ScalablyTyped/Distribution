@@ -2,7 +2,7 @@ package typings.sonicBoom.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sonic-boom", JSImport.Namespace)
 @js.native
@@ -21,4 +21,3 @@ class ^ protected () extends SonicBoom {
   def this(fileDescriptor: Double, minLength: js.UndefOr[scala.Nothing], sync: Boolean) = this()
   def this(fileDescriptor: Double, minLength: Double, sync: Boolean) = this()
 }
-

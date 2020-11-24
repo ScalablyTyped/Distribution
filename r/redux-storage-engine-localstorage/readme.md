@@ -12,13 +12,10 @@ window.localStorage engine for redux-storage
 | Keywords           | redux, redux-storage, redux-storage-engine, localStorage |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 271839 |
+| # downloads        | 214418 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/react-stack/redux-storage-engine-localstorage)
-- [Bugs](https://github.com/react-stack/redux-storage-engine-localstorage/issues)
-- [Repository](https://github.com/react-stack/redux-storage-engine-localstorage)
 - [Npm](https://www.npmjs.com/package/redux-storage-engine-localstorage)
     
 

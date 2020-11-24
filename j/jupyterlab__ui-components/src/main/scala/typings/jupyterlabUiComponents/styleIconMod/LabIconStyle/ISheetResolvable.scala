@@ -2,7 +2,7 @@ package typings.jupyterlabUiComponents.styleIconMod.LabIconStyle
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Type to help with resolving a stylesheet that might be a string
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   - typings.jupyterlabUiComponents.styleIconMod.LabIconStyle.IBuiltin
 */
 trait ISheetResolvable extends js.Object
-

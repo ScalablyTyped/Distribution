@@ -10,9 +10,9 @@ TypeScript generics to compare types
 | ------------------ | :-------------: |
 | Full name          | typescript-compare |
 | Keywords           | compare, generic, typescript, types |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 8339154 |
+| # downloads        | 19968136 |
 | # stars            | 0 |
 
 ## Links

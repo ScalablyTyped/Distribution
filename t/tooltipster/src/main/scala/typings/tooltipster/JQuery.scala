@@ -25,15 +25,16 @@ import typings.tooltipster.tooltipsterStrings.status
 import typings.tooltipster.tooltipsterStrings.triggerHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  @JSName("tooltipster")
-  var tooltipster_Original: ITooltipsterJQuery = js.native
+  
   /** Activates Tooltipster */
   def tooltipster(): JQuery = js.native
   def tooltipster(options: ITooltipsterOptions): JQuery = js.native
+  @JSName("tooltipster")
+  var tooltipster_Original: ITooltipsterJQuery = js.native
   /**
     * Closes the tooltip. When the animation is over, its HTML element is destroyed (definitely removed from the 
     * DOM). The `callback` function argument is optional.
@@ -136,4 +137,3 @@ trait JQuery extends js.Object {
   @JSName("tooltipster")
   def tooltipster_triggerHandler(method: triggerHandler, eventName: String): JQuery = js.native
 }
-

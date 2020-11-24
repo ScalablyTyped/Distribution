@@ -5,11 +5,12 @@ import typings.setCookieParser.anon.Optionsmapfalseundefined
 import typings.setCookieParser.anon.Optionsmaptrue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("set-cookie-parser", "parse")
 @js.native
 object parse extends js.Object {
+  
   def apply(input: String): js.Array[Cookie] | CookieMap = js.native
   def apply(input: String, options: Optionsmapfalseundefined): js.Array[Cookie] = js.native
   def apply(input: String, options: Optionsmaptrue): CookieMap = js.native
@@ -23,4 +24,3 @@ object parse extends js.Object {
   def apply(input: IncomingMessage, options: Optionsmaptrue): CookieMap = js.native
   def apply(input: IncomingMessage, options: Options): js.Array[Cookie] | CookieMap = js.native
 }
-

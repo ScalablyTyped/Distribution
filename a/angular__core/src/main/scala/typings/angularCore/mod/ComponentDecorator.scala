@@ -3,7 +3,7 @@ package typings.angularCore.mod
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ComponentDecorator
@@ -11,6 +11,7 @@ trait ComponentDecorator
   * See the `Component` decorator.
   */
 Instantiable1[/* obj */ Component, Component] {
+  
   /**
     * Decorator that marks a class as an Angular component and provides configuration
     * metadata that determines how the component should be processed,
@@ -130,8 +131,8 @@ Instantiable1[/* obj */ Component, Component] {
     *
     * ```html
     * <a>Spaces</a>&ngsp;<a>between</a>&ngsp;<a>links.</a>
-    * <!-->compiled to be equivalent to:</>
-    *  <a>Spaces</a> <a>between</a> <a>links.</a>
+    * <!-- compiled to be equivalent to:
+    *  <a>Spaces</a> <a>between</a> <a>links.</a>  -->
     * ```
     *
     * Note that sequences of `&ngsp;` are still collapsed to just one space character when
@@ -139,8 +140,8 @@ Instantiable1[/* obj */ Component, Component] {
     *
     * ```html
     * <a>before</a>&ngsp;&ngsp;&ngsp;<a>after</a>
-    * <!-->compiled to be equivalent to:</>
-    *  <a>Spaces</a> <a>between</a> <a>links.</a>
+    * <!-- compiled to be equivalent to:
+    *  <a>before</a> <a>after</a> -->
     * ```
     *
     * To preserve sequences of whitespace characters, use the
@@ -150,4 +151,3 @@ Instantiable1[/* obj */ Component, Component] {
     */
   def apply(obj: Component): TypeDecorator = js.native
 }
-

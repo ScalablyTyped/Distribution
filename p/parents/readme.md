@@ -11,8 +11,8 @@ return all the parent directories for a directory
 | Full name          | parents |
 | Keywords           | directory, parent, path, tree |
 | # releases         | 0 |
-| # dependents       | 80 |
-| # downloads        | 27841106 |
+| # dependents       | 88 |
+| # downloads        | 32213955 |
 | # stars            | 1 |
 
 ## Links

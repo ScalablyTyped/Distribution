@@ -6,11 +6,12 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/RenderPipeline/postProcessRenderEffect", JSImport.Namespace)
 @js.native
 object postProcessRenderEffectMod extends js.Object {
+  
   @js.native
   class PostProcessRenderEffect protected () extends js.Object {
     /**
@@ -32,16 +33,7 @@ object postProcessRenderEffectMod extends js.Object {
       getPostProcesses: js.Function0[Nullable[PostProcess | js.Array[PostProcess]]],
       singleInstance: Boolean
     ) = this()
-    var _cameras: js.Any = js.native
-    var _getPostProcesses: js.Any = js.native
-    var _indicesForCamera: js.Any = js.native
-    /**
-      * Name of the effect
-      * @hidden
-      */
-    var _name: String = js.native
-    var _postProcesses: js.Any = js.native
-    var _singleInstance: js.Any = js.native
+    
     /**
       * Attaches the effect on cameras
       * @param cameras The camera to attach to.
@@ -54,6 +46,9 @@ object postProcessRenderEffectMod extends js.Object {
       * @hidden
       */
     def _attachCameras(cameras: Camera): Unit = js.native
+    
+    var _cameras: js.Any = js.native
+    
     /**
       * Detatches the effect on cameras
       * @param cameras The camera to detatch from.
@@ -66,6 +61,7 @@ object postProcessRenderEffectMod extends js.Object {
       * @hidden
       */
     def _detachCameras(cameras: Camera): Unit = js.native
+    
     /**
       * Disables the effect on the given cameras
       * @param cameras The camera to disable.
@@ -78,6 +74,7 @@ object postProcessRenderEffectMod extends js.Object {
       * @hidden
       */
     def _disable(cameras: Nullable[js.Array[Camera]]): Unit = js.native
+    
     /**
       * Enables the effect on given cameras
       * @param cameras The camera to enable.
@@ -90,11 +87,27 @@ object postProcessRenderEffectMod extends js.Object {
       * @hidden
       */
     def _enable(cameras: Nullable[js.Array[Camera]]): Unit = js.native
+    
+    var _getPostProcesses: js.Any = js.native
+    
+    var _indicesForCamera: js.Any = js.native
+    
+    /**
+      * Name of the effect
+      * @hidden
+      */
+    var _name: String = js.native
+    
+    var _postProcesses: js.Any = js.native
+    
+    var _singleInstance: js.Any = js.native
+    
     /**
       * Updates the current state of the effect
       * @hidden
       */
     def _update(): Unit = js.native
+    
     /**
       * Gets a list of the post processes contained in the effect.
       * @param camera The camera to get the post processes on.
@@ -102,11 +115,10 @@ object postProcessRenderEffectMod extends js.Object {
       */
     def getPostProcesses(): Nullable[js.Array[PostProcess]] = js.native
     def getPostProcesses(camera: Camera): Nullable[js.Array[PostProcess]] = js.native
+    
     /**
       * Checks if all the post processes in the effect are supported.
       */
     def isSupported: Boolean = js.native
   }
-  
 }
-

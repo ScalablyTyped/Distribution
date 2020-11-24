@@ -2,14 +2,14 @@ package typings.winrt.Windows.Graphics.Imaging
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BitmapRotation extends js.Object
-
 @JSGlobal("Windows.Graphics.Imaging.BitmapRotation")
 @js.native
 object BitmapRotation extends js.Object {
+  
   @js.native
   sealed trait clockwise180Degrees extends BitmapRotation
   
@@ -21,6 +21,4 @@ object BitmapRotation extends js.Object {
   
   @js.native
   sealed trait none extends BitmapRotation
-  
 }
-

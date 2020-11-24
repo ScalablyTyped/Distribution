@@ -2,7 +2,7 @@ package typings.promise.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("promise", JSImport.Namespace)
 @js.native
@@ -19,4 +19,3 @@ class Class[T] protected () extends ThenPromise[T] {
         _
       ]) = this()
 }
-

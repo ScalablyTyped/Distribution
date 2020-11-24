@@ -3,10 +3,11 @@ package typings.openfin.layoutMod
 import typings.openfin.identityMod.Identity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LayoutModule extends js.Object {
+  
   /**
     * Asynchronously returns a Layout object that represents a Window's layout.
     * @return {Promise.<Layout>}
@@ -14,6 +15,7 @@ trait LayoutModule extends js.Object {
     * @static
     */
   def getCurrent(): js.Promise[Layout] = js.native
+  
   /**
     * Synchronously returns a Layout object that represents a Window's layout.
     * @return {Layout}
@@ -21,6 +23,7 @@ trait LayoutModule extends js.Object {
     * @static
     */
   def getCurrentSync(): Layout = js.native
+  
   /**
     * Initialize the window's Layout.  Must be called from a custom window that has a 'layout' option set upon creation of that window.
     * If a containerId is not provided, this method attempts to find an element with the id `layout-container`.
@@ -34,6 +37,7 @@ trait LayoutModule extends js.Object {
     */
   def init(): js.Promise[Layout] = js.native
   def init(options: InitLayoutOptions): js.Promise[Layout] = js.native
+  
   /**
     * Asynchronously returns a Layout object that represents a Window's layout.
     * @param { Identity } identity
@@ -42,6 +46,7 @@ trait LayoutModule extends js.Object {
     * @static
     */
   def wrap(identity: Identity): js.Promise[Layout] = js.native
+  
   /**
     * Synchronously returns a Layout object that represents a Window's layout.
     * @param { Identity } identity
@@ -51,4 +56,3 @@ trait LayoutModule extends js.Object {
     */
   def wrapSync(identity: Identity): Layout = js.native
 }
-

@@ -11,8 +11,8 @@ split a buffer by another buffer. think String.split()
 | Full name          | buffer-split |
 | Keywords           | buffer, split, chunks, binary |
 | # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 204958 |
+| # dependents       | 27 |
+| # downloads        | 195080 |
 | # stars            | 0 |
 
 ## Links

@@ -11,12 +11,13 @@ import typings.std.Uint32Array
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cometd", "CometD")
 @js.native
 class CometD () extends js.Object {
   def this(options: Configuration) = this()
+  
   /**
     * Adds a listener for Bayeux messages, performing the given callback in the given scope when a
     * message for the given channel arrives.
@@ -33,6 +34,7 @@ class CometD () extends js.Object {
     * @returns the subscription handle to be passed to `removeListener`
     */
   def addListener(channel: String, callback: Listener): SubscriptionHandle = js.native
+  
   /**
     * Executes the given callback in the given scope, surrounded by a `startBatch` and `endBatch`
     * calls.
@@ -40,15 +42,18 @@ class CometD () extends js.Object {
     * @param callback the callback to be executed within `startBatch` and `endBatch` calls
     */
   def batch(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Removes all listeners registered with `addListener` or `subscribe`.
     */
   def clearListeners(): Unit = js.native
+  
   /**
     * Removes all subscriptions added via `subscribe`, but does not remove the listeners added via
     * `addListener`.
     */
   def clearSubscriptions(): Unit = js.native
+  
   /**
     * Configures the initial Bayeux communication with the Bayeux server.
     *
@@ -57,6 +62,7 @@ class CometD () extends js.Object {
     */
   def configure(config: String): Unit = js.native
   def configure(config: Configuration): Unit = js.native
+  
   /**
     * Disconnects from the Bayeux server.
     *
@@ -70,11 +76,13 @@ class CometD () extends js.Object {
     * @param disconnectCallback a function to be invoked when the disconnect is acknowledged
     */
   def disconnect(disconnectProps: js.Object, disconnectCallback: Listener): Unit = js.native
+  
   /**
     * Marks the end of a batch of application messages to be sent to the server in a single
     * request.
     */
   def endBatch(): Unit = js.native
+  
   /**
     * Returns the backoff period used to increase the backoff time when retrying an unsuccessful or
     * failed message.
@@ -82,24 +90,28 @@ class CometD () extends js.Object {
     * @returns the backoff increment
     */
   def getBackoffIncrement(): Unit = js.native
+  
   /**
     * Returns the backoff period to wait before retrying an unsuccessful or failed message.
     *
     * @returns the backoff period
     */
   def getBackoffPeriod(): Unit = js.native
+  
   /**
     * Returns the client ID assigned by the Bayeux server during handshake.
     *
     * @return the client ID assigned by the Bayeux server
     */
   def getClientId(): String = js.native
+  
   /**
     * Returns the configuration for this CometD object.
     *
     * @return the configuration for this CometD object
     */
   def getConfiguration(): Configuration = js.native
+  
   /**
     * Find the extension registered with the given name.
     *
@@ -107,6 +119,7 @@ class CometD () extends js.Object {
     * @return the extension found or null if no extension with the given name has been registered
     */
   def getExtension(name: String): Extension = js.native
+  
   /**
     * Returns the name assigned to this CometD object, or the string 'default' if no name has been
     * explicitly passed as parameter to the constructor.
@@ -114,18 +127,28 @@ class CometD () extends js.Object {
     * @return the name assigned to this CometD object, or `'default'`
     */
   def getName(): String = js.native
+  
   /**
     * Returns a string representing the status of the Bayeux communication with the Bayeux server.
     *
     * @return the status of the Bayeux communication
     */
   def getStatus(): Status = js.native
+  
+  /**
+    * Gets all registered transport types.
+    *
+    * @return an array of all registered transport types
+    */
+  def getTransportTypes(): js.Array[String] = js.native
+  
   /**
     * Returns the URL of the Bayeux server.
     *
     * @return the URL of the Bayeux server
     */
   def getURL(): String = js.native
+  
   /**
     * Establishes the Bayeux communication with the Bayeux server via a handshake and a subsequent
     * connect.
@@ -141,12 +164,14 @@ class CometD () extends js.Object {
     * @param handshakeCallback a function to be invoked when the handshake is acknowledged
     */
   def handshake(handshakeProps: js.Object, handshakeCallback: HandshakeListener): Unit = js.native
+  
   /**
     * Increases the backoff period up to the maximum value configured.
     *
     * @returns the backoff period after increment
     */
   def increaseBackoffPeriod(): Double = js.native
+  
   /**
     * Configures and establishes the Bayeux communication with the Bayeux server via a handshake
     * and a subsequent connect.
@@ -158,12 +183,14 @@ class CometD () extends js.Object {
   def init(configuration: String, handshakeProps: js.Object): Unit = js.native
   def init(configuration: Configuration): Unit = js.native
   def init(configuration: Configuration, handshakeProps: js.Object): Unit = js.native
+  
   /**
     * Returns true if this instance is disconnected or disconnecting.
     *
     * @return whether this instance disconnected or disconnecting.
     */
   def isDisconnected(): Boolean = js.native
+  
   /**
     * Handler invoked every time a listener or subscriber throws an exception.
     *
@@ -173,6 +200,7 @@ class CometD () extends js.Object {
     * @param message the message received from the Bayeux server
     */
   def onListenerException(exception: js.Any, subscriptionHandle: SubscriptionHandle, isListener: Boolean, message: String): Unit = js.native
+  
   /**
     * Publishes a message on the given channel, containing the given content.
     *
@@ -194,6 +222,7 @@ class CometD () extends js.Object {
     */
   def publish(channel: String, content: js.Object, publishProps: js.Object): Unit = js.native
   def publish(channel: String, content: js.Object, publishProps: js.Object, publishCallback: Listener): Unit = js.native
+  
   /**
     * Publishes a message with binary data on the given channel.
     *
@@ -259,6 +288,7 @@ class CometD () extends js.Object {
   ): Unit = js.native
   def publishBinary(channel: String, data: Uint8Array, last: Boolean, meta: js.Object): Unit = js.native
   def publishBinary(channel: String, data: Uint8Array, last: Boolean, meta: js.Object, callback: Listener): Unit = js.native
+  
   /**
     * Registers an extension whose callbacks are called for every incoming message (that comes from
     * the server to this client implementation) and for every outgoing message (that originates
@@ -279,6 +309,7 @@ class CometD () extends js.Object {
     * @return true if the extension was registered, false otherwise
     */
   def registerExtension(name: String, extension: Extension): Boolean = js.native
+  
   /**
     * Registers the given transport under the given transport type.
     *
@@ -295,21 +326,25 @@ class CometD () extends js.Object {
     */
   def registerTransport(`type`: String, transport: js.Object): Boolean = js.native
   def registerTransport(`type`: String, transport: js.Object, index: Double): Boolean = js.native
+  
   /**
     * Removes the subscription obtained with a call to `addListener`.
     *
     * @param subscription the subscription to unsubscribe.
     */
   def removeListener(subscription: SubscriptionHandle): Unit = js.native
+  
   /**
     * Resets the backoff period to zero.
     */
   def resetBackoffPeriod(): Unit = js.native
+  
   /**
     * Resubscribes as necessary in case of a re-handshake.
     */
   def resubscribe(subscription: SubscriptionHandle): SubscriptionHandle = js.native
   def resubscribe(subscription: SubscriptionHandle, subscribeProps: js.Object): SubscriptionHandle = js.native
+  
   /**
     * Sets the backoff period used to increase the backoff time when retrying an unsuccessful or
     * failed message.
@@ -321,6 +356,7 @@ class CometD () extends js.Object {
     * @param period the backoff period to set
     */
   def setBackoffIncrement(period: Double): Unit = js.native
+  
   @JSName("setLogLevel")
   def setLogLevel_debug(level: debug): Unit = js.native
   /**
@@ -334,6 +370,7 @@ class CometD () extends js.Object {
   def setLogLevel_info(level: info): Unit = js.native
   @JSName("setLogLevel")
   def setLogLevel_warn(level: warn): Unit = js.native
+  
   /**
     * Marks the start of a batch of application messages to be sent to the server in a single
     * request, obtaining a single response containing (possibly) many application reply messages.
@@ -343,6 +380,7 @@ class CometD () extends js.Object {
     * send the batch of messages.
     */
   def startBatch(): Unit = js.native
+  
   /**
     * Subscribes to the given channel, performing the given callback in the given scope when a
     * message for the channel arrives.
@@ -389,6 +427,7 @@ class CometD () extends js.Object {
     subscribeProps: js.Object,
     subscribeCallback: SubscribeListener
   ): SubscriptionHandle = js.native
+  
   /**
     * Unregister an extension previously registered with `registerExtension`.
     *
@@ -396,6 +435,7 @@ class CometD () extends js.Object {
     * @return true if the extension was unregistered, false otherwise
     */
   def unregisterExtension(name: String): Boolean = js.native
+  
   /**
     * Unregisters the transport with the given transport type.
     *
@@ -404,10 +444,12 @@ class CometD () extends js.Object {
     * registered under the given transport type
     */
   def unregisterTransport(`type`: String): Unit = js.native
+  
   /**
     * Unregisters all transports.
     */
   def unregisterTransports(): Unit = js.native
+  
   /**
     * Unsubscribes the subscription obtained with a call to `subscribe`.
     *
@@ -430,4 +472,3 @@ class CometD () extends js.Object {
     unsubscribeCallback: SubscribeListener
   ): Unit = js.native
 }
-

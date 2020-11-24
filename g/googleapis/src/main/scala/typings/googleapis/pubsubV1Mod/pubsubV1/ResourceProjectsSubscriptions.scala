@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/pubsub/v1", "pubsub_v1.Resource$Projects$Subscriptions")
 @js.native
 class ResourceProjectsSubscriptions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * pubsub.projects.subscriptions.acknowledge
     * @desc Acknowledges the messages associated with the `ack_ids` in the
@@ -105,6 +105,9 @@ class ResourceProjectsSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * pubsub.projects.subscriptions.create
     * @desc Creates a subscription to a given topic. See the <a
@@ -215,6 +218,7 @@ class ResourceProjectsSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.subscriptions.delete
     * @desc Deletes an existing subscription. All messages retained in the
@@ -299,6 +303,7 @@ class ResourceProjectsSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.subscriptions.get
     * @desc Gets the configuration details of a subscription.
@@ -382,6 +387,7 @@ class ResourceProjectsSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.subscriptions.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -467,6 +473,7 @@ class ResourceProjectsSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.subscriptions.list
     * @desc Lists matching subscriptions.
@@ -568,6 +575,7 @@ class ResourceProjectsSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListSubscriptionsResponse]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.subscriptions.modifyAckDeadline
     * @desc Modifies the ack deadline for a specific message. This method is
@@ -658,6 +666,7 @@ class ResourceProjectsSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.subscriptions.modifyPushConfig
     * @desc Modifies the `PushConfig` for a specified subscription.  This may
@@ -750,6 +759,7 @@ class ResourceProjectsSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.subscriptions.patch
     * @desc Updates an existing subscription. Note that certain properties of a
@@ -783,6 +793,7 @@ class ResourceProjectsSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.subscriptions.pull
     * @desc Pulls messages from the server. The server may return `UNAVAILABLE`
@@ -876,6 +887,7 @@ class ResourceProjectsSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPullResponse]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.subscriptions.seek
     * @desc Seeks an existing subscription to a point in time or to a given
@@ -914,6 +926,7 @@ class ResourceProjectsSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSeekResponse]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.subscriptions.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -1004,6 +1017,7 @@ class ResourceProjectsSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.subscriptions.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -1099,4 +1113,3 @@ class ResourceProjectsSubscriptions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

@@ -4,11 +4,12 @@ import typings.gulp.mod.Gulp
 import typings.gulp.mod.TaskFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gulp-sequence", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /*
   Sequence functions (apart from the one returning TaskFunction) generated using the following (requires lodash for the padding):
   const fnBase = `declare function seq(`;
@@ -374,8 +375,10 @@ object mod extends js.Object {
     s25: Step,
     done: Done
   ): Unit = js.native
+  
   def use(gulp: Gulp): js.Any = js.native
+  
   type Done = js.Function1[/* error */ js.UndefOr[js.Any], Unit]
+  
   type Step = String | js.Array[String]
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for framesync
 
-Typings are for version 4.0.4
+Typings are for version 4.1.0
 
 ## Library description:
 A Unity-inspired render loop for JavaScript
@@ -10,9 +10,9 @@ A Unity-inspired render loop for JavaScript
 | ------------------ | :-------------: |
 | Full name          | framesync |
 | Keywords           | animation, raf |
-| # releases         | 8 |
-| # dependents       | 9 |
-| # downloads        | 4720770 |
+| # releases         | 5 |
+| # dependents       | 10 |
+| # downloads        | 8202219 |
 | # stars            | 0 |
 
 ## Links

@@ -4,10 +4,11 @@ import typings.openui5.sap.ui.core.AccessibleLandmarkRole
 import typings.openui5.sap.ui.core.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PageAccessibleLandmarkInfo extends Element {
+  
   /**
     * Gets current value of property <code>contentLabel</code>.Texts which describes the landmark of the
     * content container of the corresponding <code>sap.m.Page</code> control.If not set (and a landmark
@@ -16,6 +17,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Value of property <code>contentLabel</code>
     */
   def getContentLabel(): String = js.native
+  
   /**
     * Gets current value of property <code>contentRole</code>.Landmark role of the content container of
     * the corresponding <code>sap.m.Page</code> control.If set to
@@ -24,6 +26,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Value of property <code>contentRole</code>
     */
   def getContentRole(): AccessibleLandmarkRole = js.native
+  
   /**
     * Gets current value of property <code>footerLabel</code>.Texts which describes the landmark of the
     * header container of the corresponding <code>sap.m.Page</code> control.If not set (and a landmark
@@ -32,6 +35,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Value of property <code>footerLabel</code>
     */
   def getFooterLabel(): String = js.native
+  
   /**
     * Gets current value of property <code>footerRole</code>.Landmark role of the footer container of the
     * corresponding <code>sap.m.Page</code> control.If set to
@@ -40,6 +44,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Value of property <code>footerRole</code>
     */
   def getFooterRole(): AccessibleLandmarkRole = js.native
+  
   /**
     * Gets current value of property <code>headerLabel</code>.Texts which describes the landmark of the
     * header container of the corresponding <code>sap.m.Page</code> control.If not set (and a landmark
@@ -48,6 +53,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Value of property <code>headerLabel</code>
     */
   def getHeaderLabel(): String = js.native
+  
   /**
     * Gets current value of property <code>headerRole</code>.Landmark role of the header container of the
     * corresponding <code>sap.m.Page</code> control.If set to
@@ -56,6 +62,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Value of property <code>headerRole</code>
     */
   def getHeaderRole(): AccessibleLandmarkRole = js.native
+  
   /**
     * Gets current value of property <code>rootLabel</code>.Texts which describes the landmark of the root
     * container of the corresponding <code>sap.m.Page</code> control.If not set (and a landmark different
@@ -63,6 +70,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Value of property <code>rootLabel</code>
     */
   def getRootLabel(): String = js.native
+  
   /**
     * Gets current value of property <code>rootRole</code>.Landmark role of the root container of the
     * corresponding <code>sap.m.Page</code> control.If set to
@@ -71,6 +79,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Value of property <code>rootRole</code>
     */
   def getRootRole(): AccessibleLandmarkRole = js.native
+  
   /**
     * Gets current value of property <code>subHeaderLabel</code>.Texts which describes the landmark of the
     * subheader container of the corresponding <code>sap.m.Page</code> control.If not set (and a landmark
@@ -79,6 +88,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Value of property <code>subHeaderLabel</code>
     */
   def getSubHeaderLabel(): String = js.native
+  
   /**
     * Gets current value of property <code>subHeaderRole</code>.Landmark role of the subheader container
     * of the corresponding <code>sap.m.Page</code> control.If set to
@@ -86,6 +96,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Value of property <code>subHeaderRole</code>
     */
   def getSubHeaderRole(): AccessibleLandmarkRole = js.native
+  
   /**
     * Sets a new value for property <code>contentLabel</code>.Texts which describes the landmark of the
     * content container of the corresponding <code>sap.m.Page</code> control.If not set (and a landmark
@@ -96,6 +107,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setContentLabel(sContentLabel: String): PageAccessibleLandmarkInfo = js.native
+  
   /**
     * Sets a new value for property <code>contentRole</code>.Landmark role of the content container of the
     * corresponding <code>sap.m.Page</code> control.If set to
@@ -106,6 +118,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setContentRole(sContentRole: AccessibleLandmarkRole): PageAccessibleLandmarkInfo = js.native
+  
   /**
     * Sets a new value for property <code>footerLabel</code>.Texts which describes the landmark of the
     * header container of the corresponding <code>sap.m.Page</code> control.If not set (and a landmark
@@ -116,6 +129,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setFooterLabel(sFooterLabel: String): PageAccessibleLandmarkInfo = js.native
+  
   /**
     * Sets a new value for property <code>footerRole</code>.Landmark role of the footer container of the
     * corresponding <code>sap.m.Page</code> control.If set to
@@ -126,6 +140,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setFooterRole(sFooterRole: AccessibleLandmarkRole): PageAccessibleLandmarkInfo = js.native
+  
   /**
     * Sets a new value for property <code>headerLabel</code>.Texts which describes the landmark of the
     * header container of the corresponding <code>sap.m.Page</code> control.If not set (and a landmark
@@ -136,6 +151,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHeaderLabel(sHeaderLabel: String): PageAccessibleLandmarkInfo = js.native
+  
   /**
     * Sets a new value for property <code>headerRole</code>.Landmark role of the header container of the
     * corresponding <code>sap.m.Page</code> control.If set to
@@ -146,6 +162,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHeaderRole(sHeaderRole: AccessibleLandmarkRole): PageAccessibleLandmarkInfo = js.native
+  
   /**
     * Sets a new value for property <code>rootLabel</code>.Texts which describes the landmark of the root
     * container of the corresponding <code>sap.m.Page</code> control.If not set (and a landmark different
@@ -156,6 +173,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setRootLabel(sRootLabel: String): PageAccessibleLandmarkInfo = js.native
+  
   /**
     * Sets a new value for property <code>rootRole</code>.Landmark role of the root container of the
     * corresponding <code>sap.m.Page</code> control.If set to
@@ -166,6 +184,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setRootRole(sRootRole: AccessibleLandmarkRole): PageAccessibleLandmarkInfo = js.native
+  
   /**
     * Sets a new value for property <code>subHeaderLabel</code>.Texts which describes the landmark of the
     * subheader container of the corresponding <code>sap.m.Page</code> control.If not set (and a landmark
@@ -176,6 +195,7 @@ trait PageAccessibleLandmarkInfo extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSubHeaderLabel(sSubHeaderLabel: String): PageAccessibleLandmarkInfo = js.native
+  
   /**
     * Sets a new value for property <code>subHeaderRole</code>.Landmark role of the subheader container of
     * the corresponding <code>sap.m.Page</code> control.If set to
@@ -187,4 +207,3 @@ trait PageAccessibleLandmarkInfo extends Element {
     */
   def setSubHeaderRole(sSubHeaderRole: AccessibleLandmarkRole): PageAccessibleLandmarkInfo = js.native
 }
-

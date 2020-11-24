@@ -2,14 +2,14 @@ package typings.phaser.spine
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AttachmentType extends js.Object
-
 @JSGlobal("spine.AttachmentType")
 @js.native
 object AttachmentType extends js.Object {
+  
   @js.native
   sealed trait BoundingBox extends AttachmentType
   
@@ -30,6 +30,4 @@ object AttachmentType extends js.Object {
   
   @js.native
   sealed trait Region extends AttachmentType
-  
 }
-

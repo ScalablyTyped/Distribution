@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "babel-walk" : "3.0.0-canary-5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "babel-walk" : "3.0.0-canary-5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

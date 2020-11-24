@@ -4,15 +4,15 @@
 Typings are for version 0.9
 
 ## Library description:
-[![Build Status](https://travis-ci.org/processing/p5.js.svg?branch=master)](https://travis-ci.org/processing/p5.js) [![npm version](https://badge.fury.io/js/p5.svg)](https://www.npmjs.com/package/p5)
+[![npm version](https://badge.fury.io/js/p5.svg)](https://www.npmjs.com/package/p5)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | p5 |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 55 |
-| # downloads        | 92379 |
+| # releases         | 17 |
+| # dependents       | 66 |
+| # downloads        | 153316 |
 | # stars            | 17 |
 
 ## Links

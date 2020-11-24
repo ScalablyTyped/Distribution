@@ -7,11 +7,12 @@ import typings.std.Text
 import typings.stropheJs.anon.AUTH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Strophe")
 @js.native
 object ^ extends js.Object {
+  
   /** Class: Strophe.Builder
     *  XML DOM builder.
     *
@@ -42,6 +43,7 @@ object ^ extends js.Object {
     /* attrs */ js.UndefOr[js.Any], 
     typings.stropheJs.mod.Strophe.Builder
   ] = js.native
+  
   /** Class: Strophe.Connection
     *  XMPP Connection manager.
     *
@@ -68,6 +70,7 @@ object ^ extends js.Object {
     /* options */ js.UndefOr[typings.stropheJs.mod.Strophe.ConnectionOptions], 
     typings.stropheJs.mod.Strophe.Connection
   ] = js.native
+  
   /** Constants: XMPP Namespace Constants
     *  Common namespace constants from the XMPP RFCs and XEPs.
     *
@@ -88,6 +91,7 @@ object ^ extends js.Object {
     *  NS.XHTML - XHTML body namespace from XEP 71.
     */
   val NS: AUTH = js.native
+  
   /** Constants: SASL mechanisms
     *  Available authentication mechanisms
     *
@@ -97,14 +101,19 @@ object ^ extends js.Object {
     *  Strophe.SASLSHA1 - SASL SCRAM-SHA1 authentication
     */
   val SASLAnonymous: typings.stropheJs.mod.Strophe.SASLMechanism = js.native
+  
   val SASLMD5: typings.stropheJs.mod.Strophe.SASLMechanism = js.native
+  
   val SASLPlain: typings.stropheJs.mod.Strophe.SASLMechanism = js.native
+  
   val SASLSHA1: typings.stropheJs.mod.Strophe.SASLMechanism = js.native
+  
   /** Constant: VERSION
     *  The version of the Strophe library. Unreleased builds will have
     *  a version of head-HASH where HASH is a partial revision.
     */
   val VERSION: String = js.native
+  
   /** Function: addConnectionPlugin
     *  Extends the Strophe.Connection object with the given plugin.
     *
@@ -113,6 +122,7 @@ object ^ extends js.Object {
     *    (Object) ptype - The plugin's prototype.
     */
   def addConnectionPlugin(name: String, ptype: js.Any): Unit = js.native
+  
   /** Function: addNamespace
     *  This function is used to extend the current namespaces in
     *  Strophe.NS.  It takes a key and a value with the key being the
@@ -126,6 +136,7 @@ object ^ extends js.Object {
     *    (String) value - The actual namespace.
     */
   def addNamespace(name: String, value: String): Unit = js.native
+  
   /** Function: copyElement
     *  Copy an XML DOM element.
     *
@@ -139,6 +150,7 @@ object ^ extends js.Object {
     *    A new, copied DOM element tree.
     */
   def copyElement(elem: Element): Element = js.native
+  
   /** Function: createHtml
     *  Copy an HTML DOM element into an XML DOM.
     *
@@ -152,6 +164,7 @@ object ^ extends js.Object {
     *    A new, copied DOM element tree.
     */
   def createHtml(elem: Element): Element = js.native
+  
   /** Functions: debug, info, warn, error
     *  Log a message at the appropriate Strophe.LogLevel
     *
@@ -159,7 +172,9 @@ object ^ extends js.Object {
     *    (String) msg - The log message.
     */
   def debug(msg: String): Unit = js.native
+  
   def error(msg: String): Unit = js.native
+  
   /** Function: escapeNode
     *  Escape the node part (also called local part) of a JID.
     *
@@ -170,7 +185,9 @@ object ^ extends js.Object {
     *    An escaped node (or local part).
     */
   def escapeNode(node: String): String = js.native
+  
   def fatal(msg: String): Unit = js.native
+  
   /** Function: forEachChild
     *  Map a function over some or all child elements of a given element.
     *
@@ -186,6 +203,7 @@ object ^ extends js.Object {
     *      function should take a single argument, a DOM element.
     */
   def forEachChild(elem: Element, elemName: String, func: js.Function1[/* child */ Element, _]): Unit = js.native
+  
   /** Function: getBareJidFromJid
     *  Get the bare JID from a JID String.
     *
@@ -196,6 +214,7 @@ object ^ extends js.Object {
     *    A String containing the bare JID.
     */
   def getBareJidFromJid(jid: String): String = js.native
+  
   /** Function: getDomainFromJid
     *  Get the domain portion of a JID String.
     *
@@ -206,6 +225,7 @@ object ^ extends js.Object {
     *    A String containing the domain.
     */
   def getDomainFromJid(jid: String): String = js.native
+  
   /** Function: getNodeFromJid
     *  Get the node portion of a JID String.
     *
@@ -216,6 +236,7 @@ object ^ extends js.Object {
     *    A String containing the node.
     */
   def getNodeFromJid(jid: String): String = js.native
+  
   /** Function: getResourceFromJid
     *  Get the resource portion of a JID String.
     *
@@ -226,6 +247,7 @@ object ^ extends js.Object {
     *    A String containing the resource.
     */
   def getResourceFromJid(jid: String): String = js.native
+  
   /** Function: getText
     *  Get the concatenation of all text children of an element.
     *
@@ -236,7 +258,9 @@ object ^ extends js.Object {
     *    A String with the concatenated text of all text element children.
     */
   def getText(elem: Element): String = js.native
+  
   def info(msg: String): Unit = js.native
+  
   /** Function: isTagEqual
     *  Compare an element's tag name with a string.
     *
@@ -251,6 +275,7 @@ object ^ extends js.Object {
     *    otherwise.
     */
   def isTagEqual(el: Element, name: String): Boolean = js.native
+  
   /** Function: log
     *  User overrideable logging function.
     *
@@ -281,6 +306,7 @@ object ^ extends js.Object {
     *    (String) msg - The log message.
     */
   def log(level: typings.stropheJs.mod.Strophe.LogLevel, msg: String): Unit = js.native
+  
   /** Function: serialize
     *  Render a DOM element and all descendants to a String.
     *
@@ -292,6 +318,7 @@ object ^ extends js.Object {
     */
   def serialize(elem: Element): String = js.native
   def serialize(elem: typings.stropheJs.mod.Strophe.Builder): String = js.native
+  
   /** Function: unescapeNode
     *  Unescape a node part (also called local part) of a JID.
     *
@@ -302,7 +329,9 @@ object ^ extends js.Object {
     *    An unescaped node (or local part).
     */
   def unescapeNode(node: String): String = js.native
+  
   def warn(msg: String): Unit = js.native
+  
   /** Function: xmlElement
     *  Create an XML DOM element.
     *
@@ -328,6 +357,7 @@ object ^ extends js.Object {
   def xmlElement(name: String, text: js.UndefOr[scala.Nothing], attrs: js.Any): Element = js.native
   def xmlElement(name: String, text: String): Element = js.native
   def xmlElement(name: String, text: String, attrs: js.Any): Element = js.native
+  
   /** Function: xmlGenerator
     *  Get the DOM document to generate elements.
     *
@@ -335,6 +365,7 @@ object ^ extends js.Object {
     *    The currently used DOM document.
     */
   def xmlGenerator(): Document = js.native
+  
   /** Function: xmlHtmlNode
     *  Creates an XML DOM html node.
     *
@@ -345,6 +376,7 @@ object ^ extends js.Object {
     *    A new XML DOM text node.
     */
   def xmlHtmlNode(html: String): Document = js.native
+  
   /** Function: xmlTextNode
     *  Creates an XML DOM text node.
     *
@@ -357,6 +389,7 @@ object ^ extends js.Object {
     *    A new XML DOM text node.
     */
   def xmlTextNode(text: String): Text = js.native
+  
   /*  Function: xmlescape
     *  Excapes invalid xml characters.
     *
@@ -367,6 +400,7 @@ object ^ extends js.Object {
     *      Escaped text.
     */
   def xmlescape(text: String): String = js.native
+  
   /*  Function: xmlunescape
     *  Unexcapes invalid xml characters.
     *
@@ -378,4 +412,3 @@ object ^ extends js.Object {
     */
   def xmlunescape(text: String): String = js.native
 }
-

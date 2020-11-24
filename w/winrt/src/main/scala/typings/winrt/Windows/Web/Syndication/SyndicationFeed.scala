@@ -6,12 +6,12 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SyndicationFeed extends ISyndicationFeed
-
 object SyndicationFeed {
+  
   @scala.inline
   def apply(
     attributeExtensions: IVector[SyndicationAttribute],
@@ -47,4 +47,3 @@ object SyndicationFeed {
     __obj.asInstanceOf[SyndicationFeed]
   }
 }
-

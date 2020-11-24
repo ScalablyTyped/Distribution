@@ -11,31 +11,22 @@ import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.PathLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs-promise", "realpath")
 @js.native
 object realpath extends js.Object {
-  def apply(path: String): js.Promise[String] = js.native
-  def apply(path: String, cache: StringDictionary[String]): js.Promise[String] = js.native
-  def apply(
-    path: String,
-    cache: StringDictionary[String],
-    callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]
-  ): Unit = js.native
-  def apply(path: String, callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]): Unit = js.native
-  def apply(path: Buffer): js.Promise[String] = js.native
-  def apply(path: Buffer, cache: StringDictionary[String]): js.Promise[String] = js.native
-  def apply(
-    path: Buffer,
-    cache: StringDictionary[String],
-    callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]
-  ): Unit = js.native
-  def apply(path: Buffer, callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]): Unit = js.native
+  
   def apply(path: PathLike): js.Promise[String] = js.native
+  def apply(path: PathLike, cache: StringDictionary[String]): js.Promise[String] = js.native
   def apply(
     path: PathLike,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
+    cache: StringDictionary[String],
+    callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
+    callback: js.Function2[(/* err */ ErrnoException) | Null, /* resolvedPath */ String, _ | Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
@@ -83,6 +74,7 @@ object realpath extends js.Object {
     options: BufferEncoding,
     callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
   ): Unit = js.native
+  
   def native(path: PathLike): js.Promise[String] = js.native
   def native(
     path: PathLike,
@@ -137,4 +129,3 @@ object realpath extends js.Object {
     callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ Buffer, Unit]
   ): Unit = js.native
 }
-

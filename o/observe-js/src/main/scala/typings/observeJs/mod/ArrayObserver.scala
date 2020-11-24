@@ -5,7 +5,7 @@ import typings.observeJs.mod.observejs.ArrayObserverInstance
 import typings.observeJs.mod.observejs.ArrayObserverStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("observe-js", "ArrayObserver")
 @js.native
@@ -16,8 +16,6 @@ class ArrayObserver protected () extends ArrayObserverInstance {
     */
   def this(receiver: js.Array[_]) = this()
 }
-
 @JSImport("observe-js", "ArrayObserver")
 @js.native
 object ArrayObserver extends TopLevel[ArrayObserverStatic]
-

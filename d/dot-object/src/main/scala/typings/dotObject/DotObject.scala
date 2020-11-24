@@ -1,15 +1,20 @@
 package typings.dotObject
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.Instantiable4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DotObject")
 @js.native
 object DotObject extends js.Object {
+  
   @js.native
   trait Dot extends js.Object {
+    
     /**
       *
       * Copy a property from one object to another object.
@@ -57,15 +62,29 @@ object DotObject extends js.Object {
       mods: ModifierFunctionWrapper,
       merge: Boolean
     ): Unit = js.native
+    
     /**
       *
       * Remove value from an object using dot notation.
       *
-      * @param {String} path
+      * @param {String | Array<String>} path
       * @param {Object} obj
       * @return {Mixed} The removed value
       */
     def del(path: String, obj: js.Any): js.Any = js.native
+    def del(path: js.Array[String], obj: js.Any): js.Any = js.native
+    
+    /**
+      *
+      * Delete value from an object using dot notation.
+      *
+      * @param {String | Array<String>} path
+      * @param {Object} obj
+      * @return {any} The removed value
+      */
+    def delete(path: String, obj: js.Any): js.Any = js.native
+    def delete(path: js.Array[String], obj: js.Any): js.Any = js.native
+    
     /**
       *
       * Convert object to dotted-key/value pair
@@ -89,6 +108,31 @@ object DotObject extends js.Object {
       * @param {Object} tgt target object
       */
     def dot(obj: js.Any, tgt: js.Any): Unit = js.native
+    
+    /**
+      *
+      * Keep array
+      *
+      * example:
+      *
+      * var obj = {
+      *   "id": "my-id",
+      *   "other": [1, 2, 3]
+      *   "some": {
+      *     "array": ["A", "B"]
+      *   }
+      * }
+      *
+      * if the keepArray property is true:
+      *
+      * {
+      *   "id": "my-id",
+      *   "other": [1, 2, 3],
+      *   "some.array": ["A", "B"]
+      * }
+      */
+    var keepArray: Boolean = js.native
+    
     /**
       *
       * Move a property from one place to the other.
@@ -114,6 +158,7 @@ object DotObject extends js.Object {
     ): Unit = js.native
     def move(source: String, target: String, obj: js.Any, mods: ModifierFunctionWrapper): Unit = js.native
     def move(source: String, target: String, obj: js.Any, mods: ModifierFunctionWrapper, merge: Boolean): Unit = js.native
+    
     /**
       *
       * Converts an object with dotted-key/value pairs to it's expanded version
@@ -139,6 +184,7 @@ object DotObject extends js.Object {
     def `object`(obj: js.Object): js.Object = js.native
     def `object`(obj: js.Object, mods: js.Array[ModifierFunctionWrapper]): js.Object = js.native
     def `object`(obj: js.Object, mods: ModifierFunctionWrapper): js.Object = js.native
+    
     /**
       *
       * Pick a value from an object using dot notation.
@@ -151,15 +197,18 @@ object DotObject extends js.Object {
       */
     def pick(path: String, obj: js.Any): js.Any = js.native
     def pick(path: String, obj: js.Any, remove: Boolean): js.Any = js.native
+    
     /**
       *
       * Remove value from an object using dot notation.
       *
-      * @param {String} path
+      * @param {String | Array<String>} path
       * @param {Object} obj
       * @return {Mixed} The removed value
       */
     def remove(path: String, obj: js.Any): js.Any = js.native
+    def remove(path: js.Array[String], obj: js.Any): js.Any = js.native
+    
     /**
       *
       * Replace/merge an object to an existing object property
@@ -171,6 +220,7 @@ object DotObject extends js.Object {
       */
     def set(path: String, v: js.Any, obj: js.Object): Unit = js.native
     def set(path: String, v: js.Any, obj: js.Object, merge: Boolean): Unit = js.native
+    
     /**
       *
       * Replace/create with a string
@@ -183,6 +233,7 @@ object DotObject extends js.Object {
     def str(path: String, v: js.Any, obj: js.Object): Unit = js.native
     def str(path: String, v: js.Any, obj: js.Object, mods: js.Array[ModifierFunctionWrapper]): Unit = js.native
     def str(path: String, v: js.Any, obj: js.Object, mods: ModifierFunctionWrapper): Unit = js.native
+    
     /**
       *
       * Transfer a property from one object to another object.
@@ -230,6 +281,7 @@ object DotObject extends js.Object {
       mods: ModifierFunctionWrapper,
       merge: Boolean
     ): Unit = js.native
+    
     /**
       *
       * Transform an object
@@ -263,7 +315,20 @@ object DotObject extends js.Object {
   trait DotConstructor
     extends Dot
        with Instantiable1[/* separator */ String, Dot]
+       with Instantiable2[/* separator */ String, /* override */ Boolean, Dot]
+       with Instantiable3[
+          /* separator */ String, 
+          js.UndefOr[/* override */ Boolean], 
+          /* useArray */ Boolean, 
+          Dot
+        ]
+       with Instantiable4[
+          /* separator */ String, 
+          js.UndefOr[/* override */ Boolean], 
+          js.UndefOr[/* useArray */ Boolean], 
+          /* useBrackets */ Boolean, 
+          Dot
+        ]
   
   type ModifierFunctionWrapper = js.Function1[/* arg */ js.Any, js.Any]
 }
-

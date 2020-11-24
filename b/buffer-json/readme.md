@@ -11,8 +11,8 @@ JSON.stringify & JSON.parse which can encode/decode buffers.
 | Full name          | buffer-json |
 | Keywords           | JSON, parse, stringify, buffer, reviver, replacer, base64 |
 | # releases         | 2 |
-| # dependents       | 16 |
-| # downloads        | 11143900 |
+| # dependents       | 21 |
+| # downloads        | 38643372 |
 | # stars            | 0 |
 
 ## Links

@@ -1,17 +1,16 @@
 package typings.awsSdk.ioteventsdataMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IoTEventsData extends Service {
-  @JSName("config")
-  var config_IoTEventsData: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Sends a set of messages to the AWS IoT Events system. Each message payload is transformed into the input you specify ("inputName") and ingested into any detectors that monitor that input. If multiple messages are sent, the order in which the messages are processed isn't guaranteed. To guarantee ordering, you must send messages one at a time and wait for a successful response.
     */
@@ -25,6 +24,7 @@ trait IoTEventsData extends Service {
     params: BatchPutMessageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchPutMessageResponse, Unit]
   ): Request[BatchPutMessageResponse, AWSError] = js.native
+  
   /**
     * Updates the state, variable values, and timer settings of one or more detectors (instances) of a specified detector model.
     */
@@ -38,6 +38,10 @@ trait IoTEventsData extends Service {
     params: BatchUpdateDetectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchUpdateDetectorResponse, Unit]
   ): Request[BatchUpdateDetectorResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_IoTEventsData: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Returns information about the specified detector (instance).
     */
@@ -51,6 +55,7 @@ trait IoTEventsData extends Service {
     params: DescribeDetectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDetectorResponse, Unit]
   ): Request[DescribeDetectorResponse, AWSError] = js.native
+  
   /**
     * Lists detectors (the instances of a detector model).
     */
@@ -65,4 +70,3 @@ trait IoTEventsData extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListDetectorsResponse, Unit]
   ): Request[ListDetectorsResponse, AWSError] = js.native
 }
-

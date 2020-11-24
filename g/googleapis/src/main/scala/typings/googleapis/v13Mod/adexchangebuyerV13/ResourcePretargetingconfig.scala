@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.3", "adexchangebuyer_v1_3.Resource$Pretargetingconfig")
 @js.native
 class ResourcePretargetingconfig protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer.pretargetingConfig.delete
     * @desc Deletes an existing pretargeting config.
@@ -42,6 +44,7 @@ class ResourcePretargetingconfig protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.pretargetingConfig.get
     * @desc Gets a specific pretargeting configuration
@@ -74,6 +77,7 @@ class ResourcePretargetingconfig protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPretargetingConfig]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.pretargetingConfig.insert
     * @desc Inserts a new pretargeting configuration.
@@ -106,6 +110,7 @@ class ResourcePretargetingconfig protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPretargetingConfig]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.pretargetingConfig.list
     * @desc Retrieves a list of the authenticated user's pretargeting
@@ -138,6 +143,7 @@ class ResourcePretargetingconfig protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPretargetingConfigList]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.pretargetingConfig.patch
     * @desc Updates an existing pretargeting config. This method supports patch
@@ -172,6 +178,7 @@ class ResourcePretargetingconfig protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPretargetingConfig]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.pretargetingConfig.update
     * @desc Updates an existing pretargeting config.
@@ -206,4 +213,3 @@ class ResourcePretargetingconfig protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPretargetingConfig]
   ): Unit = js.native
 }
-

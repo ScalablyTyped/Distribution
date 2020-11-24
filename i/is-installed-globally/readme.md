@@ -10,9 +10,9 @@ Check if your package was installed globally
 | ------------------ | :-------------: |
 | Full name          | is-installed-globally |
 | Keywords           | global, package, globally, module, install, installed, npm, yarn, is, check, detect, local, locally, cli, bin, binary |
-| # releases         | 4 |
-| # dependents       | 33 |
-| # downloads        | 173157889 |
+| # releases         | 5 |
+| # dependents       | 63 |
+| # downloads        | 282249619 |
 | # stars            | 0 |
 
 ## Links

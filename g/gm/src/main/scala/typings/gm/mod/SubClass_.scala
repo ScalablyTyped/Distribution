@@ -4,10 +4,11 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SubClass_ extends js.Object {
+  
   def apply(image: String): State = js.native
   def apply(stream: Buffer): State = js.native
   def apply(stream: Buffer, image: String): State = js.native
@@ -16,4 +17,3 @@ trait SubClass_ extends js.Object {
   def apply(width: Double, height: Double): State = js.native
   def apply(width: Double, height: Double, color: String): State = js.native
 }
-

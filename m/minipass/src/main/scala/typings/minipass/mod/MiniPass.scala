@@ -13,19 +13,13 @@ import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MiniPass
   extends EventEmitter
      with WritableStream {
-  var buffer: js.Any = js.native
-  val bufferLength: Double = js.native
-  val emittedEnd: Boolean = js.native
-  var encoding: String | Null = js.native
-  val flowing: Boolean = js.native
-  var pipes: js.Any = js.native
-  var readable: Boolean = js.native
+  
   def addEventHandler(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("addEventHandler")
   def addEventHandler_close(event: close, listener: js.Function0[Unit]): this.type = js.native
@@ -43,6 +37,11 @@ trait MiniPass
   def addEventHandler_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addEventHandler")
   def addEventHandler_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
+  var buffer: js.Any = js.native
+  
+  val bufferLength: Double = js.native
+  
   @JSName("emit")
   def emit_close(event: close): Boolean = js.native
   @JSName("emit")
@@ -59,12 +58,20 @@ trait MiniPass
   def emit_readable(event: readable): Boolean = js.native
   @JSName("emit")
   def emit_resume(event: resume): Boolean = js.native
+  
+  val emittedEnd: Boolean = js.native
+  
+  var encoding: String | Null = js.native
+  
   def end(chunk: js.Any): Unit = js.native
   def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any, encoding: String): Unit = js.native
   def end(chunk: js.Any, encoding: String, cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any, encoding: Null, cb: js.Function0[Unit]): Unit = js.native
+  
+  val flowing: Boolean = js.native
+  
   @JSName("on")
   def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -81,6 +88,7 @@ trait MiniPass
   def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   @JSName("once")
   def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
@@ -97,9 +105,14 @@ trait MiniPass
   def once_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
   def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   def pause(): Unit = js.native
+  
   def pipe[T /* <: WritableStream */](destination: T): T = js.native
   def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
+  
+  var pipes: js.Any = js.native
+  
   @JSName("prependListener")
   def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
@@ -116,6 +129,7 @@ trait MiniPass
   def prependListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -132,8 +146,12 @@ trait MiniPass
   def prependOnceListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   def read(): js.Any = js.native
   def read(size: Double): js.Any = js.native
+  
+  var readable: Boolean = js.native
+  
   @JSName("removeListener")
   def removeListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("removeListener")
@@ -150,9 +168,12 @@ trait MiniPass
   def removeListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+  
   def resume(): Unit = js.native
+  
   def setEncoding(): Unit = js.native
   def setEncoding(encoding: String): Unit = js.native
+  
   def write(chunk: js.Any): Boolean = js.native
   def write(chunk: js.Any, cb: js.Function0[Unit]): Boolean = js.native
   def write(chunk: js.Any, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Boolean = js.native
@@ -160,4 +181,3 @@ trait MiniPass
   def write(chunk: js.Any, encoding: String, cb: js.Function0[Unit]): Boolean = js.native
   def write(chunk: js.Any, encoding: Null, cb: js.Function0[Unit]): Boolean = js.native
 }
-

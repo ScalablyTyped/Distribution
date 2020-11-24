@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "ClientPeersGetRequest")
 @js.native
@@ -17,17 +17,18 @@ import scala.scalajs.js.annotation._
   */
 class ClientPeersGetRequest () extends IClientPeersGetRequest {
   def this(properties: IClientPeersGetRequest) = this()
+  
   /**
     * Converts this ClientPeersGetRequest to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "ClientPeersGetRequest")
 @js.native
 object ClientPeersGetRequest extends js.Object {
+  
   /**
     * Creates a new ClientPeersGetRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -35,6 +36,7 @@ object ClientPeersGetRequest extends js.Object {
     */
   def create(): ClientPeersGetRequest = js.native
   def create(properties: IClientPeersGetRequest): ClientPeersGetRequest = js.native
+  
   /**
     * Decodes a ClientPeersGetRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -47,6 +49,7 @@ object ClientPeersGetRequest extends js.Object {
   def decode(reader: Reader, length: Double): ClientPeersGetRequest = js.native
   def decode(reader: Uint8Array): ClientPeersGetRequest = js.native
   def decode(reader: Uint8Array, length: Double): ClientPeersGetRequest = js.native
+  
   /**
     * Decodes a ClientPeersGetRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -56,6 +59,7 @@ object ClientPeersGetRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): ClientPeersGetRequest = js.native
   def decodeDelimited(reader: Uint8Array): ClientPeersGetRequest = js.native
+  
   /**
     * Encodes the specified ClientPeersGetRequest message. Does not implicitly {@link ClientPeersGetRequest.verify|verify} messages.
     * @param message ClientPeersGetRequest message or plain object to encode
@@ -64,6 +68,7 @@ object ClientPeersGetRequest extends js.Object {
     */
   def encode(message: IClientPeersGetRequest): Writer = js.native
   def encode(message: IClientPeersGetRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ClientPeersGetRequest message, length delimited. Does not implicitly {@link ClientPeersGetRequest.verify|verify} messages.
     * @param message ClientPeersGetRequest message or plain object to encode
@@ -72,12 +77,14 @@ object ClientPeersGetRequest extends js.Object {
     */
   def encodeDelimited(message: IClientPeersGetRequest): Writer = js.native
   def encodeDelimited(message: IClientPeersGetRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ClientPeersGetRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientPeersGetRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): ClientPeersGetRequest = js.native
+  
   /**
     * Creates a plain object from a ClientPeersGetRequest message. Also converts values to other types if specified.
     * @param message ClientPeersGetRequest
@@ -86,6 +93,7 @@ object ClientPeersGetRequest extends js.Object {
     */
   def toObject(message: ClientPeersGetRequest): StringDictionary[js.Any] = js.native
   def toObject(message: ClientPeersGetRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ClientPeersGetRequest message.
     * @param message Plain object to verify
@@ -93,4 +101,3 @@ object ClientPeersGetRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

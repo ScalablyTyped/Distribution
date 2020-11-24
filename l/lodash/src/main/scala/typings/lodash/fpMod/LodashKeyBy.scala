@@ -7,10 +7,11 @@ import typings.lodash.mod.ValueIterateeCustom
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashKeyBy extends LodashConvertible {
+trait LodashKeyBy extends js.Object {
+  
   def apply[T](iteratee: ValueIterateeCustom[T, PropertyName]): LodashKeyBy1x1[T] = js.native
   def apply[T /* <: js.Object */](
     iteratee: ValueIterateeCustom[
@@ -26,4 +27,3 @@ trait LodashKeyBy extends LodashConvertible {
   def apply[T /* <: js.Object */](iteratee: __, collection: T): LodashKeyBy2x2[T] = js.native
   def apply[T](iteratee: __, collection: List[T]): LodashKeyBy1x2[T] = js.native
 }
-

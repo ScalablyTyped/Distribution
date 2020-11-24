@@ -2,7 +2,7 @@ package typings.openui5.global.sap.ui.model.analytics.odata4analytics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.analytics.odata4analytics.EntitySet")
 @js.native
@@ -19,4 +19,3 @@ class EntitySet protected ()
     */
   def this(oModel: js.Any, oSchema: js.Any, oContainer: js.Any, oEntitySet: js.Any, oEntityType: js.Any) = this()
 }
-

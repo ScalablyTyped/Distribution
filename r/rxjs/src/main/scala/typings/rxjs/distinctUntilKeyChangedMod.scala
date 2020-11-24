@@ -3,11 +3,12 @@ package typings.rxjs
 import typings.rxjs.typesMod.MonoTypeOperatorFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/distinctUntilKeyChanged", JSImport.Namespace)
 @js.native
 object distinctUntilKeyChangedMod extends js.Object {
+  
   def distinctUntilKeyChanged[T](key: /* keyof T */ String): MonoTypeOperatorFunction[T] = js.native
   def distinctUntilKeyChanged[T, K /* <: /* keyof T */ String */](
     key: K,
@@ -18,4 +19,3 @@ object distinctUntilKeyChangedMod extends js.Object {
     ]
   ): MonoTypeOperatorFunction[T] = js.native
 }
-

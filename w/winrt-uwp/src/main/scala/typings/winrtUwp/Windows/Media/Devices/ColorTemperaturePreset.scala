@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ColorTemperaturePreset extends js.Object
-
 /** Defines the values for the possible color temperature presets. */
 @JSGlobal("Windows.Media.Devices.ColorTemperaturePreset")
 @js.native
 object ColorTemperaturePreset extends js.Object {
+  
   /** Indicates that the color temperature is set automatically. */
   @js.native
   sealed trait auto extends ColorTemperaturePreset
@@ -42,6 +42,4 @@ object ColorTemperaturePreset extends js.Object {
   /** Indicates that the color temperature is adjusted for a scene lit by tungsten light. */
   @js.native
   sealed trait tungsten extends ColorTemperaturePreset
-  
 }
-

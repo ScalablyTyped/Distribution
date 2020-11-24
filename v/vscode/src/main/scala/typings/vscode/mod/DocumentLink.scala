@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "DocumentLink")
 @js.native
@@ -15,14 +15,17 @@ class DocumentLink protected () extends js.Object {
     */
   def this(range: Range) = this()
   def this(range: Range, target: Uri) = this()
+  
   /**
     * The range this link applies to.
     */
   var range: Range = js.native
+  
   /**
     * The uri this link points to.
     */
   var target: js.UndefOr[Uri] = js.native
+  
   /**
     * The tooltip text when you hover over this link.
     *
@@ -32,4 +35,3 @@ class DocumentLink protected () extends js.Object {
     */
   var tooltip: js.UndefOr[String] = js.native
 }
-

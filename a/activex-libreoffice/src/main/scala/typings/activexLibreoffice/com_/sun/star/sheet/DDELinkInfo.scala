@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes all items of a DDE connection used in formulas.
@@ -18,38 +18,46 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DDELinkInfo extends js.Object {
+  
   /** A list of DDE items. Each item may contain its results from the last update. */
   var Items: SafeArray[DDEItemInfo] = js.native
+  
   /** The DDE service name. */
   var Service: String = js.native
+  
   /** The DDE topic. */
   var Topic: String = js.native
 }
-
 object DDELinkInfo {
+  
   @scala.inline
   def apply(Items: SafeArray[DDEItemInfo], Service: String, Topic: String): DDELinkInfo = {
     val __obj = js.Dynamic.literal(Items = Items.asInstanceOf[js.Any], Service = Service.asInstanceOf[js.Any], Topic = Topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[DDELinkInfo]
   }
+  
   @scala.inline
   implicit class DDELinkInfoOps[Self <: DDELinkInfo] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setItems(value: SafeArray[DDEItemInfo]): Self = this.set("Items", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setService(value: String): Self = this.set("Service", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTopic(value: String): Self = this.set("Topic", value.asInstanceOf[js.Any])
   }
-  
 }
-

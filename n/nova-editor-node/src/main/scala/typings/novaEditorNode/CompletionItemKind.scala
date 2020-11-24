@@ -2,14 +2,14 @@ package typings.novaEditorNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CompletionItemKind extends js.Object
-
 @JSGlobal("CompletionItemKind")
 @js.native
 object CompletionItemKind extends js.Object {
+  
   @js.native
   sealed trait Argument extends CompletionItemKind
   
@@ -93,6 +93,4 @@ object CompletionItemKind extends js.Object {
   
   @js.native
   sealed trait Variable extends CompletionItemKind
-  
 }
-

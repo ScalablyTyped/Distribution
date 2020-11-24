@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v2", "remotebuildexecution_v2.Resource$Actions")
 @js.native
 class ResourceActions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * remotebuildexecution.actions.execute
     * @desc Execute an action remotely.  In order to execute an action, the
@@ -87,4 +89,3 @@ class ResourceActions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.devexpressWeb.global
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientScheduler.MoreButtonClicked client-side event.
@@ -19,4 +19,3 @@ class MoreButtonClickedEventArgs protected ()
     */
   def this(dateTime: Date, resource: String) = this()
 }
-

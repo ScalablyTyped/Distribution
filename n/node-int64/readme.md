@@ -11,8 +11,8 @@ Support for representing 64-bit integers in JavaScript
 | Full name          | node-int64 |
 | Keywords           | math, integer, int64 |
 | # releases         | 1 |
-| # dependents       | 123 |
-| # downloads        | 221752912 |
+| # dependents       | 162 |
+| # downloads        | 304678885 |
 | # stars            | 7 |
 
 ## Links

@@ -11,8 +11,8 @@ Deeply convert the keys of an object to camelCase
 | Full name          | camelcase-keys-deep |
 | Keywords           | map, obj, object, key, keys, value, values, val, camelcase, camel-case, case, dash, hyphen, dot, underscore, separator, string, text, convert, deep, recursive |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 227687 |
+| # dependents       | 8 |
+| # downloads        | 318127 |
 | # stars            | 1 |
 
 ## Links

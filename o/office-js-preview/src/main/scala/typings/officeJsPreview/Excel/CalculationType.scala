@@ -2,17 +2,17 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CalculationType extends js.Object
-
 /**
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.CalculationType")
 @js.native
 object CalculationType extends js.Object {
+  
   /**
     * This will mark all cells as dirty and then recalculate them.
     *
@@ -33,6 +33,4 @@ object CalculationType extends js.Object {
     */
   @js.native
   sealed trait recalculate extends CalculationType
-  
 }
-

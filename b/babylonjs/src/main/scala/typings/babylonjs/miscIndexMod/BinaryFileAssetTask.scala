@@ -2,7 +2,7 @@ package typings.babylonjs.miscIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Misc/index", "BinaryFileAssetTask")
 @js.native
@@ -24,4 +24,3 @@ class BinaryFileAssetTask protected ()
   url: String
   ) = this()
 }
-

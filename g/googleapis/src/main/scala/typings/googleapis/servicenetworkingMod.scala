@@ -12,32 +12,27 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicenetworking", JSImport.Namespace)
 @js.native
 object servicenetworkingMod extends js.Object {
+  
   def servicenetworking(options: Options): Servicenetworking = js.native
   def servicenetworking(options: typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Options): typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking = js.native
   @JSName("servicenetworking")
   def servicenetworking_v1(version: v1): Servicenetworking = js.native
   @JSName("servicenetworking")
   def servicenetworking_v1beta(version: v1beta): typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Servicenetworking {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    class v1beta protected ()
-      extends typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
     @js.native
     object v1
       extends TopLevel[
@@ -49,6 +44,12 @@ object servicenetworkingMod extends js.Object {
             ]
     
     @js.native
+    class v1beta protected ()
+      extends typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    @js.native
     object v1beta
       extends TopLevel[
               Instantiable2[
@@ -57,11 +58,11 @@ object servicenetworkingMod extends js.Object {
                 typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -89,8 +90,5 @@ object servicenetworkingMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

@@ -13,11 +13,12 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare", JSImport.Namespace)
 @js.native
 object healthcareMod extends js.Object {
+  
   def healthcare(options: Options): Healthcare = js.native
   def healthcare(options: typings.googleapis.healthcareV1alphaMod.healthcareV1alpha.Options): typings.googleapis.healthcareV1alphaMod.healthcareV1alpha.Healthcare = js.native
   def healthcare(options: typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Options): typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare = js.native
@@ -27,28 +28,16 @@ object healthcareMod extends js.Object {
   def healthcare_v1alpha2(version: v1alpha2): Healthcare = js.native
   @JSName("healthcare")
   def healthcare_v1beta1(version: v1beta1): typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1alpha protected ()
       extends typings.googleapis.healthcareV1alphaMod.healthcareV1alpha.Healthcare {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    class v1alpha2 protected () extends Healthcare {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
-    @js.native
-    class v1beta1 protected ()
-      extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
     @js.native
     object v1alpha
       extends TopLevel[
@@ -60,11 +49,22 @@ object healthcareMod extends js.Object {
             ]
     
     @js.native
+    class v1alpha2 protected () extends Healthcare {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    @js.native
     object v1alpha2
       extends TopLevel[
               Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Healthcare]
             ]
     
+    @js.native
+    class v1beta1 protected ()
+      extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
     @js.native
     object v1beta1
       extends TopLevel[
@@ -74,11 +74,11 @@ object healthcareMod extends js.Object {
                 typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -106,8 +106,5 @@ object healthcareMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

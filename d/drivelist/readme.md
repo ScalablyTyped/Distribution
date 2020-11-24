@@ -10,9 +10,9 @@ List all connected drives in your computer, in all major operating systems
 | ------------------ | :-------------: |
 | Full name          | drivelist |
 | Keywords           | disk, cross, platform, physical, drive, list |
-| # releases         | 96 |
+| # releases         | 78 |
 | # dependents       | 44 |
-| # downloads        | 425215 |
+| # downloads        | 441103 |
 | # stars            | 1 |
 
 ## Links

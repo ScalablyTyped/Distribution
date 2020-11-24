@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Renderer for Particles that is designer for speed over feature set.
@@ -12,12 +12,26 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ParticleRenderer extends js.Object {
+  
+  /**
+    * Destroys the ParticleRenderer.
+    */
+  def destroy(): Unit = js.native
+  
+  /**
+    * Renders the particle container object.
+    *
+    * @param {PIXI.ParticleContainer} container - The container to render using this ParticleRenderer
+    */
+  def render(container: ParticleContainer): Unit = js.native
+  
   /**
     * The default shader that is used if a sprite doesn't have a more specific one.
     *
     * @member {PIXI.Shader} PIXI.ParticleRenderer#shader
     */
   var shader: Shader = js.native
+  
   /**
     * The WebGL state in which this renderer will work.
     *
@@ -25,16 +39,7 @@ trait ParticleRenderer extends js.Object {
     * @readonly
     */
   val state: State = js.native
-  /**
-    * Destroys the ParticleRenderer.
-    */
-  def destroy(): Unit = js.native
-  /**
-    * Renders the particle container object.
-    *
-    * @param {PIXI.ParticleContainer} container - The container to render using this ParticleRenderer
-    */
-  def render(container: ParticleContainer): Unit = js.native
+  
   /**
     * Uploads the position.
     *
@@ -53,6 +58,7 @@ trait ParticleRenderer extends js.Object {
     stride: Double,
     offset: Double
   ): Unit = js.native
+  
   /**
     * Uploads the rotation.
     *
@@ -71,6 +77,7 @@ trait ParticleRenderer extends js.Object {
     stride: Double,
     offset: Double
   ): Unit = js.native
+  
   /**
     * Uploads the tint.
     *
@@ -89,6 +96,7 @@ trait ParticleRenderer extends js.Object {
     stride: Double,
     offset: Double
   ): Unit = js.native
+  
   /**
     * Uploads the Uvs
     *
@@ -107,6 +115,7 @@ trait ParticleRenderer extends js.Object {
     stride: Double,
     offset: Double
   ): Unit = js.native
+  
   /**
     * Uploads the vertices.
     *
@@ -126,8 +135,8 @@ trait ParticleRenderer extends js.Object {
     offset: Double
   ): Unit = js.native
 }
-
 object ParticleRenderer {
+  
   @scala.inline
   def apply(
     destroy: () => Unit,
@@ -143,36 +152,47 @@ object ParticleRenderer {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), render = js.Any.fromFunction1(render), shader = shader.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], uploadPosition = js.Any.fromFunction6(uploadPosition), uploadRotation = js.Any.fromFunction6(uploadRotation), uploadTint = js.Any.fromFunction6(uploadTint), uploadUvs = js.Any.fromFunction6(uploadUvs), uploadVertices = js.Any.fromFunction6(uploadVertices))
     __obj.asInstanceOf[ParticleRenderer]
   }
+  
   @scala.inline
   implicit class ParticleRendererOps[Self <: ParticleRenderer] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRender(value: ParticleContainer => Unit): Self = this.set("render", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setShader(value: Shader): Self = this.set("shader", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setState(value: State): Self = this.set("state", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUploadPosition(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = this.set("uploadPosition", js.Any.fromFunction6(value))
+    
     @scala.inline
     def setUploadRotation(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = this.set("uploadRotation", js.Any.fromFunction6(value))
+    
     @scala.inline
     def setUploadTint(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = this.set("uploadTint", js.Any.fromFunction6(value))
+    
     @scala.inline
     def setUploadUvs(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = this.set("uploadUvs", js.Any.fromFunction6(value))
+    
     @scala.inline
     def setUploadVertices(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = this.set("uploadVertices", js.Any.fromFunction6(value))
   }
-  
 }
-

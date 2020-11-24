@@ -10,9 +10,9 @@ A querystring parser that supports nesting and arrays, with a depth limit
 | ------------------ | :-------------: |
 | Full name          | qs |
 | Keywords           | querystring, qs, query, url, parse, stringify |
-| # releases         | 7 |
-| # dependents       | 4396 |
-| # downloads        | 1200254120 |
+| # releases         | 13 |
+| # dependents       | 5532 |
+| # downloads        | 1665771024 |
 | # stars            | 183 |
 
 ## Links

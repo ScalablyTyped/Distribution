@@ -10,9 +10,9 @@ A promise based streaming tokenizer
 | ------------------ | :-------------: |
 | Full name          | strtok3 |
 | Keywords           | tokenizer, reader, token, async, promise, parser, decoder, binary, endian, uint, stream, streaming |
-| # releases         | 34 |
+| # releases         | 33 |
 | # dependents       | 6 |
-| # downloads        | 2422303 |
+| # downloads        | 2953817 |
 | # stars            | 0 |
 
 ## Links

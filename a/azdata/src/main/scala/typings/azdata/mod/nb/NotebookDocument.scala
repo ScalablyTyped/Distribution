@@ -4,51 +4,51 @@ import typings.vscode.Thenable
 import typings.vscode.mod.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NotebookDocument extends js.Object {
+  
   /**
     * All cells.
     */
   val cells: js.Array[NotebookCell] = js.native
+  
   /**
     * The file system path of the associated resource. Shorthand
     * notation for [TextDocument.uri.fsPath](#TextDocument.uri). Independent of the uri scheme.
     */
   val fileName: String = js.native
+  
   /**
     * `true` if the document have been closed. A closed document isn't synchronized anymore
     * and won't be re-used when the same resource is opened again.
     */
   val isClosed: Boolean = js.native
+  
   /**
     * `true` if there are unpersisted changes.
     */
   val isDirty: Boolean = js.native
+  
   /**
     * Is this document representing an untitled file which has never been saved yet. *Note* that
     * this does not mean the document will be saved to disk, use [`uri.scheme`](#Uri.scheme)
     * to figure out where a document will be [saved](#FileSystemProvider), e.g. `file`, `ftp` etc.
     */
   val isUntitled: Boolean = js.native
+  
   /**
     * The spec for current kernel, if applicable. This will be undefined
     * until a kernel has been started
     */
   val kernelSpec: IKernelSpec = js.native
+  
   /**
     * The identifier of the Notebook provider associated with this document.
     */
   val providerId: String = js.native
-  /**
-    * The associated uri for this notebook document.
-    *
-    * *Note* that most documents use the `file`-scheme, which means they are files on disk. However, **not** all documents are
-    * saved on disk and therefore the `scheme` must be checked before trying to access the underlying file or siblings on disk.
-    *
-    */
-  val uri: Uri = js.native
+  
   /**
     * Save the underlying file.
     *
@@ -57,6 +57,16 @@ trait NotebookDocument extends js.Object {
     * will return false.
     */
   def save(): Thenable[Boolean] = js.native
+  
+  /**
+    * The associated uri for this notebook document.
+    *
+    * *Note* that most documents use the `file`-scheme, which means they are files on disk. However, **not** all documents are
+    * saved on disk and therefore the `scheme` must be checked before trying to access the underlying file or siblings on disk.
+    *
+    */
+  val uri: Uri = js.native
+  
   /**
     * Ensure a cell range is completely contained in this document.
     *
@@ -65,8 +75,8 @@ trait NotebookDocument extends js.Object {
     */
   def validateCellRange(range: CellRange): CellRange = js.native
 }
-
 object NotebookDocument {
+  
   @scala.inline
   def apply(
     cells: js.Array[NotebookCell],
@@ -83,40 +93,53 @@ object NotebookDocument {
     val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], isClosed = isClosed.asInstanceOf[js.Any], isDirty = isDirty.asInstanceOf[js.Any], isUntitled = isUntitled.asInstanceOf[js.Any], kernelSpec = kernelSpec.asInstanceOf[js.Any], providerId = providerId.asInstanceOf[js.Any], save = js.Any.fromFunction0(save), uri = uri.asInstanceOf[js.Any], validateCellRange = js.Any.fromFunction1(validateCellRange))
     __obj.asInstanceOf[NotebookDocument]
   }
+  
   @scala.inline
   implicit class NotebookDocumentOps[Self <: NotebookDocument] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCellsVarargs(value: NotebookCell*): Self = this.set("cells", js.Array(value :_*))
+    
     @scala.inline
     def setCells(value: js.Array[NotebookCell]): Self = this.set("cells", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsClosed(value: Boolean): Self = this.set("isClosed", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsDirty(value: Boolean): Self = this.set("isDirty", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsUntitled(value: Boolean): Self = this.set("isUntitled", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setKernelSpec(value: IKernelSpec): Self = this.set("kernelSpec", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setProviderId(value: String): Self = this.set("providerId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSave(value: () => Thenable[Boolean]): Self = this.set("save", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setUri(value: Uri): Self = this.set("uri", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setValidateCellRange(value: CellRange => CellRange): Self = this.set("validateCellRange", js.Any.fromFunction1(value))
   }
-  
 }
-

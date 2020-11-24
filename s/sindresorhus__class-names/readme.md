@@ -10,9 +10,9 @@ Conditionally join CSS class names together - Especially useful with React
 | ------------------ | :-------------: |
 | Full name          | @sindresorhus/class-names |
 | Keywords           | class-names, classnames, class, names, name, classes, react, jsx, component, join, concatenate, concat |
-| # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 10683 |
+| # releases         | 3 |
+| # dependents       | 8 |
+| # downloads        | 31627 |
 | # stars            | 0 |
 
 ## Links

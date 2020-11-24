@@ -2,9 +2,532 @@ package typings.titanium
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object titaniumStrings {
+  
+  @scala.inline
+  def accessibilitychanged: accessibilitychanged = "accessibilitychanged".asInstanceOf[accessibilitychanged]
+  
+  @scala.inline
+  def activationCompleted: activationCompleted = "activationCompleted".asInstanceOf[activationCompleted]
+  
+  @scala.inline
+  def androidback: androidback = "androidback".asInstanceOf[androidback]
+  
+  @scala.inline
+  def androidcamera: androidcamera = "androidcamera".asInstanceOf[androidcamera]
+  
+  @scala.inline
+  def androidfocus: androidfocus = "androidfocus".asInstanceOf[androidfocus]
+  
+  @scala.inline
+  def androidsearch: androidsearch = "androidsearch".asInstanceOf[androidsearch]
+  
+  @scala.inline
+  def androidvoldown: androidvoldown = "androidvoldown".asInstanceOf[androidvoldown]
+  
+  @scala.inline
+  def androidvolup: androidvolup = "androidvolup".asInstanceOf[androidvolup]
+  
+  @scala.inline
+  def authorization: authorization = "authorization".asInstanceOf[authorization]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def backgroundfetch: backgroundfetch = "backgroundfetch".asInstanceOf[backgroundfetch]
+  
+  @scala.inline
+  def backgroundtransfer: backgroundtransfer = "backgroundtransfer".asInstanceOf[backgroundtransfer]
+  
+  @scala.inline
+  def battery: battery = "battery".asInstanceOf[battery]
+  
+  @scala.inline
+  def beforeload: beforeload = "beforeload".asInstanceOf[beforeload]
+  
+  @scala.inline
+  def blacklisturl: blacklisturl = "blacklisturl".asInstanceOf[blacklisturl]
+  
+  @scala.inline
+  def blockedurl: blockedurl = "blockedurl".asInstanceOf[blockedurl]
+  
+  @scala.inline
+  def blur: blur = "blur".asInstanceOf[blur]
+  
+  @scala.inline
+  def bookmark: bookmark = "bookmark".asInstanceOf[bookmark]
+  
+  @scala.inline
+  def boundarycollision: boundarycollision = "boundarycollision".asInstanceOf[boundarycollision]
+  
+  @scala.inline
+  def calibration: calibration = "calibration".asInstanceOf[calibration]
+  
+  @scala.inline
+  def cameraready: cameraready = "cameraready".asInstanceOf[cameraready]
+  
+  @scala.inline
+  def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @scala.inline
+  def cancelprefetch: cancelprefetch = "cancelprefetch".asInstanceOf[cancelprefetch]
+  
+  @scala.inline
+  def change: change = "change".asInstanceOf[change]
+  
+  @scala.inline
+  def click: click = "click".asInstanceOf[click]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def collapse: collapse = "collapse".asInstanceOf[collapse]
+  
+  @scala.inline
+  def commit: commit = "commit".asInstanceOf[commit]
+  
+  @scala.inline
+  def complete: complete = "complete".asInstanceOf[complete]
+  
+  @scala.inline
+  def completed: completed = "completed".asInstanceOf[completed]
+  
+  @scala.inline
+  def continueactivity: continueactivity = "continueactivity".asInstanceOf[continueactivity]
+  
+  @scala.inline
+  def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
+  
+  @scala.inline
+  def deactivate: deactivate = "deactivate".asInstanceOf[deactivate]
+  
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  
+  @scala.inline
+  def doubletap: doubletap = "doubletap".asInstanceOf[doubletap]
+  
+  @scala.inline
+  def downloadcompleted: downloadcompleted = "downloadcompleted".asInstanceOf[downloadcompleted]
+  
+  @scala.inline
+  def downloadprogress: downloadprogress = "downloadprogress".asInstanceOf[downloadprogress]
+  
+  @scala.inline
+  def dragEnd: dragEnd = "dragEnd".asInstanceOf[dragEnd]
+  
+  @scala.inline
+  def dragStart: dragStart = "dragStart".asInstanceOf[dragStart]
+  
+  @scala.inline
+  def dragend_ : dragend_ = "dragend".asInstanceOf[dragend_]
+  
+  @scala.inline
+  def dragstart_ : dragstart_ = "dragstart".asInstanceOf[dragstart_]
+  
+  @scala.inline
+  def durationavailable: durationavailable = "durationavailable".asInstanceOf[durationavailable]
+  
+  @scala.inline
+  def edit: edit = "edit".asInstanceOf[edit]
+  
+  @scala.inline
+  def editaction: editaction = "editaction".asInstanceOf[editaction]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def expand: expand = "expand".asInstanceOf[expand]
+  
+  @scala.inline
+  def finishfiletransfer: finishfiletransfer = "finishfiletransfer".asInstanceOf[finishfiletransfer]
+  
+  @scala.inline
+  def finishuserinfotransfer: finishuserinfotransfer = "finishuserinfotransfer".asInstanceOf[finishuserinfotransfer]
+  
+  @scala.inline
+  def focus: focus = "focus".asInstanceOf[focus]
+  
+  @scala.inline
+  def founditems: founditems = "founditems".asInstanceOf[founditems]
+  
+  @scala.inline
+  def handleurl: handleurl = "handleurl".asInstanceOf[handleurl]
+  
+  @scala.inline
+  def heading: heading = "heading".asInstanceOf[heading]
+  
+  @scala.inline
+  def hide: hide = "hide".asInstanceOf[hide]
+  
+  @scala.inline
+  def inactive: inactive = "inactive".asInstanceOf[inactive]
+  
+  @scala.inline
+  def indexclick: indexclick = "indexclick".asInstanceOf[indexclick]
+  
+  @scala.inline
+  def insert: insert = "insert".asInstanceOf[insert]
+  
+  @scala.inline
+  def interrupted: interrupted = "interrupted".asInstanceOf[interrupted]
+  
+  @scala.inline
+  def itemclick: itemclick = "itemclick".asInstanceOf[itemclick]
+  
+  @scala.inline
+  def itemcollision: itemcollision = "itemcollision".asInstanceOf[itemcollision]
+  
+  @scala.inline
+  def itemsselected: itemsselected = "itemsselected".asInstanceOf[itemsselected]
+  
+  @scala.inline
+  def keyboardframechanged: keyboardframechanged = "keyboardframechanged".asInstanceOf[keyboardframechanged]
+  
+  @scala.inline
+  def keypressed: keypressed = "keypressed".asInstanceOf[keypressed]
+  
+  @scala.inline
+  def link: link = "link".asInstanceOf[link]
+  
+  @scala.inline
+  def load: load = "load".asInstanceOf[load]
+  
+  @scala.inline
+  def loadstate: loadstate = "loadstate".asInstanceOf[loadstate]
+  
+  @scala.inline
+  def localnotificationaction: localnotificationaction = "localnotificationaction".asInstanceOf[localnotificationaction]
+  
+  @scala.inline
+  def location: location = "location".asInstanceOf[location]
+  
+  @scala.inline
+  def locationupdatepaused: locationupdatepaused = "locationupdatepaused".asInstanceOf[locationupdatepaused]
+  
+  @scala.inline
+  def locationupdateresumed: locationupdateresumed = "locationupdateresumed".asInstanceOf[locationupdateresumed]
+  
+  @scala.inline
+  def longclick: longclick = "longclick".asInstanceOf[longclick]
+  
+  @scala.inline
+  def longpress: longpress = "longpress".asInstanceOf[longpress]
+  
+  @scala.inline
+  def marker: marker = "marker".asInstanceOf[marker]
+  
+  @scala.inline
+  def memorywarning: memorywarning = "memorywarning".asInstanceOf[memorywarning]
+  
+  @scala.inline
+  def menu: menu = "menu".asInstanceOf[menu]
+  
+  @scala.inline
+  def message: message = "message".asInstanceOf[message]
+  
+  @scala.inline
+  def metadata: metadata = "metadata".asInstanceOf[metadata]
+  
+  @scala.inline
+  def move: move = "move".asInstanceOf[move]
+  
+  @scala.inline
+  def naturalsizeavailable: naturalsizeavailable = "naturalsizeavailable".asInstanceOf[naturalsizeavailable]
+  
+  @scala.inline
+  def newintent: newintent = "newintent".asInstanceOf[newintent]
+  
+  @scala.inline
+  def noresults: noresults = "noresults".asInstanceOf[noresults]
+  
+  @scala.inline
+  def notification: notification = "notification".asInstanceOf[notification]
+  
+  @scala.inline
+  def onIntent: onIntent = "onIntent".asInstanceOf[onIntent]
+  
+  @scala.inline
+  def onLoadResource: onLoadResource = "onLoadResource".asInstanceOf[onLoadResource]
+  
+  @scala.inline
+  def open: open = "open".asInstanceOf[open]
+  
+  @scala.inline
+  def orientationchange: orientationchange = "orientationchange".asInstanceOf[orientationchange]
+  
+  @scala.inline
+  def pagechanged: pagechanged = "pagechanged".asInstanceOf[pagechanged]
+  
+  @scala.inline
+  def pause: pause = "pause".asInstanceOf[pause]
+  
+  @scala.inline
+  def paused: paused = "paused".asInstanceOf[paused]
+  
+  @scala.inline
+  def peek: peek = "peek".asInstanceOf[peek]
+  
+  @scala.inline
+  def pinch: pinch = "pinch".asInstanceOf[pinch]
+  
+  @scala.inline
+  def playbackstate: playbackstate = "playbackstate".asInstanceOf[playbackstate]
+  
+  @scala.inline
+  def playing: playing = "playing".asInstanceOf[playing]
+  
+  @scala.inline
+  def playingchange: playingchange = "playingchange".asInstanceOf[playingchange]
+  
+  @scala.inline
+  def pop: pop = "pop".asInstanceOf[pop]
+  
+  @scala.inline
+  def postlayout: postlayout = "postlayout".asInstanceOf[postlayout]
+  
+  @scala.inline
+  def prefetch: prefetch = "prefetch".asInstanceOf[prefetch]
+  
+  @scala.inline
+  def preload: preload = "preload".asInstanceOf[preload]
+  
+  @scala.inline
+  def progress: progress = "progress".asInstanceOf[progress]
+  
+  @scala.inline
+  def proximity: proximity = "proximity".asInstanceOf[proximity]
+  
+  @scala.inline
+  def publish: publish = "publish".asInstanceOf[publish]
+  
+  @scala.inline
+  def pull: pull = "pull".asInstanceOf[pull]
+  
+  @scala.inline
+  def pullend: pullend = "pullend".asInstanceOf[pullend]
+  
+  @scala.inline
+  def reachabilitychanged: reachabilitychanged = "reachabilitychanged".asInstanceOf[reachabilitychanged]
+  
+  @scala.inline
+  def receiveapplicationcontext: receiveapplicationcontext = "receiveapplicationcontext".asInstanceOf[receiveapplicationcontext]
+  
+  @scala.inline
+  def receivefile: receivefile = "receivefile".asInstanceOf[receivefile]
+  
+  @scala.inline
+  def receivemessage: receivemessage = "receivemessage".asInstanceOf[receivemessage]
+  
+  @scala.inline
+  def receiveuserinfo: receiveuserinfo = "receiveuserinfo".asInstanceOf[receiveuserinfo]
+  
+  @scala.inline
+  def redirect: redirect = "redirect".asInstanceOf[redirect]
+  
+  @scala.inline
+  def refreshend: refreshend = "refreshend".asInstanceOf[refreshend]
+  
+  @scala.inline
+  def refreshstart: refreshstart = "refreshstart".asInstanceOf[refreshstart]
+  
+  @scala.inline
+  def reload: reload = "reload".asInstanceOf[reload]
+  
+  @scala.inline
+  def remotenotificationaction: remotenotificationaction = "remotenotificationaction".asInstanceOf[remotenotificationaction]
+  
+  @scala.inline
+  def resize: resize = "resize".asInstanceOf[resize]
+  
+  @scala.inline
+  def resolve: resolve = "resolve".asInstanceOf[resolve]
+  
+  @scala.inline
+  def resume: resume = "resume".asInstanceOf[resume]
+  
+  @scala.inline
+  def resumed: resumed = "resumed".asInstanceOf[resumed]
+  
+  @scala.inline
+  def `return`: `return` = "return".asInstanceOf[`return`]
+  
+  @scala.inline
+  def routechange: routechange = "routechange".asInstanceOf[routechange]
+  
+  @scala.inline
+  def rowsselected: rowsselected = "rowsselected".asInstanceOf[rowsselected]
+  
+  @scala.inline
+  def scale: scale = "scale".asInstanceOf[scale]
+  
+  @scala.inline
+  def screenshotcaptured: screenshotcaptured = "screenshotcaptured".asInstanceOf[screenshotcaptured]
+  
+  @scala.inline
+  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  
+  @scala.inline
+  def scrollend: scrollend = "scrollend".asInstanceOf[scrollend]
+  
+  @scala.inline
+  def scrolling: scrolling = "scrolling".asInstanceOf[scrolling]
+  
+  @scala.inline
+  def scrollstart: scrollstart = "scrollstart".asInstanceOf[scrollstart]
+  
+  @scala.inline
+  def seek: seek = "seek".asInstanceOf[seek]
+  
+  @scala.inline
+  def selected: selected = "selected".asInstanceOf[selected]
+  
+  @scala.inline
+  def sessioncompleted: sessioncompleted = "sessioncompleted".asInstanceOf[sessioncompleted]
+  
+  @scala.inline
+  def sessioneventscompleted: sessioneventscompleted = "sessioneventscompleted".asInstanceOf[sessioneventscompleted]
+  
+  @scala.inline
+  def shake: shake = "shake".asInstanceOf[shake]
+  
+  @scala.inline
+  def shortcutitemclick: shortcutitemclick = "shortcutitemclick".asInstanceOf[shortcutitemclick]
+  
+  @scala.inline
+  def significanttimechange: significanttimechange = "significanttimechange".asInstanceOf[significanttimechange]
+  
+  @scala.inline
+  def silentpush: silentpush = "silentpush".asInstanceOf[silentpush]
+  
+  @scala.inline
+  def singletap: singletap = "singletap".asInstanceOf[singletap]
+  
+  @scala.inline
+  def slide: slide = "slide".asInstanceOf[slide]
+  
+  @scala.inline
+  def sslerror: sslerror = "sslerror".asInstanceOf[sslerror]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
+  @scala.inline
+  def started: started = "started".asInstanceOf[started]
+  
+  @scala.inline
+  def startlistening: startlistening = "startlistening".asInstanceOf[startlistening]
+  
+  @scala.inline
+  def statechange: statechange = "statechange".asInstanceOf[statechange]
+  
+  @scala.inline
+  def stop: stop = "stop".asInstanceOf[stop]
+  
+  @scala.inline
+  def stoplistening: stoplistening = "stoplistening".asInstanceOf[stoplistening]
+  
+  @scala.inline
+  def submit: submit = "submit".asInstanceOf[submit]
+  
+  @scala.inline
+  def swipe: swipe = "swipe".asInstanceOf[swipe]
+  
+  @scala.inline
+  def taskremoved: taskremoved = "taskremoved".asInstanceOf[taskremoved]
+  
+  @scala.inline
+  def tileadded: tileadded = "tileadded".asInstanceOf[tileadded]
+  
+  @scala.inline
+  def tiledialogcancelled: tiledialogcancelled = "tiledialogcancelled".asInstanceOf[tiledialogcancelled]
+  
+  @scala.inline
+  def tiledialognegative: tiledialognegative = "tiledialognegative".asInstanceOf[tiledialognegative]
+  
+  @scala.inline
+  def tiledialogneutral: tiledialogneutral = "tiledialogneutral".asInstanceOf[tiledialogneutral]
+  
+  @scala.inline
+  def tiledialogoptionselected: tiledialogoptionselected = "tiledialogoptionselected".asInstanceOf[tiledialogoptionselected]
+  
+  @scala.inline
+  def tiledialogpositive: tiledialogpositive = "tiledialogpositive".asInstanceOf[tiledialogpositive]
+  
+  @scala.inline
+  def tileremoved: tileremoved = "tileremoved".asInstanceOf[tileremoved]
+  
+  @scala.inline
+  def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
+  
+  @scala.inline
+  def touchend: touchend = "touchend".asInstanceOf[touchend]
+  
+  @scala.inline
+  def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
+  
+  @scala.inline
+  def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
+  
+  @scala.inline
+  def traitcollectionchange: traitcollectionchange = "traitcollectionchange".asInstanceOf[traitcollectionchange]
+  
+  @scala.inline
+  def twofingertap: twofingertap = "twofingertap".asInstanceOf[twofingertap]
+  
+  @scala.inline
+  def uncaughtException: uncaughtException = "uncaughtException".asInstanceOf[uncaughtException]
+  
+  @scala.inline
+  def unload: unload = "unload".asInstanceOf[unload]
+  
+  @scala.inline
+  def unselected: unselected = "unselected".asInstanceOf[unselected]
+  
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  
+  @scala.inline
+  def updatedservices: updatedservices = "updatedservices".asInstanceOf[updatedservices]
+  
+  @scala.inline
+  def uploadprogress: uploadprogress = "uploadprogress".asInstanceOf[uploadprogress]
+  
+  @scala.inline
+  def useractivitydeleted: useractivitydeleted = "useractivitydeleted".asInstanceOf[useractivitydeleted]
+  
+  @scala.inline
+  def useractivitywascontinued: useractivitywascontinued = "useractivitywascontinued".asInstanceOf[useractivitywascontinued]
+  
+  @scala.inline
+  def useractivitywillsave: useractivitywillsave = "useractivitywillsave".asInstanceOf[useractivitywillsave]
+  
+  @scala.inline
+  def userinteraction: userinteraction = "userinteraction".asInstanceOf[userinteraction]
+  
+  @scala.inline
+  def userinterfacestyle: userinterfacestyle = "userinterfacestyle".asInstanceOf[userinterfacestyle]
+  
+  @scala.inline
+  def userleavehint: userleavehint = "userleavehint".asInstanceOf[userleavehint]
+  
+  @scala.inline
+  def usernotificationsettings: usernotificationsettings = "usernotificationsettings".asInstanceOf[usernotificationsettings]
+  
+  @scala.inline
+  def volume: volume = "volume".asInstanceOf[volume]
+  
+  @scala.inline
+  def watchkitextensionrequest: watchkitextensionrequest = "watchkitextensionrequest".asInstanceOf[watchkitextensionrequest]
+  
+  @scala.inline
+  def watchstatechanged: watchstatechanged = "watchstatechanged".asInstanceOf[watchstatechanged]
+  
   @js.native
   sealed trait accessibilitychanged extends js.Object
   
@@ -33,6 +556,9 @@ object titaniumStrings {
   sealed trait authorization extends js.Object
   
   @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
   sealed trait backgroundfetch extends js.Object
   
   @js.native
@@ -46,6 +572,9 @@ object titaniumStrings {
   
   @js.native
   sealed trait blacklisturl extends js.Object
+  
+  @js.native
+  sealed trait blockedurl extends js.Object
   
   @js.native
   sealed trait blur extends js.Object
@@ -360,6 +889,9 @@ object titaniumStrings {
   sealed trait scale extends js.Object
   
   @js.native
+  sealed trait screenshotcaptured extends js.Object
+  
+  @js.native
   sealed trait scroll extends js.Object
   
   @js.native
@@ -501,6 +1033,9 @@ object titaniumStrings {
   sealed trait userinteraction extends js.Object
   
   @js.native
+  sealed trait userinterfacestyle extends js.Object
+  
+  @js.native
   sealed trait userleavehint extends js.Object
   
   @js.native
@@ -514,346 +1049,4 @@ object titaniumStrings {
   
   @js.native
   sealed trait watchstatechanged extends js.Object
-  
-  @scala.inline
-  def accessibilitychanged: accessibilitychanged = "accessibilitychanged".asInstanceOf[accessibilitychanged]
-  @scala.inline
-  def activationCompleted: activationCompleted = "activationCompleted".asInstanceOf[activationCompleted]
-  @scala.inline
-  def androidback: androidback = "androidback".asInstanceOf[androidback]
-  @scala.inline
-  def androidcamera: androidcamera = "androidcamera".asInstanceOf[androidcamera]
-  @scala.inline
-  def androidfocus: androidfocus = "androidfocus".asInstanceOf[androidfocus]
-  @scala.inline
-  def androidsearch: androidsearch = "androidsearch".asInstanceOf[androidsearch]
-  @scala.inline
-  def androidvoldown: androidvoldown = "androidvoldown".asInstanceOf[androidvoldown]
-  @scala.inline
-  def androidvolup: androidvolup = "androidvolup".asInstanceOf[androidvolup]
-  @scala.inline
-  def authorization: authorization = "authorization".asInstanceOf[authorization]
-  @scala.inline
-  def backgroundfetch: backgroundfetch = "backgroundfetch".asInstanceOf[backgroundfetch]
-  @scala.inline
-  def backgroundtransfer: backgroundtransfer = "backgroundtransfer".asInstanceOf[backgroundtransfer]
-  @scala.inline
-  def battery: battery = "battery".asInstanceOf[battery]
-  @scala.inline
-  def beforeload: beforeload = "beforeload".asInstanceOf[beforeload]
-  @scala.inline
-  def blacklisturl: blacklisturl = "blacklisturl".asInstanceOf[blacklisturl]
-  @scala.inline
-  def blur: blur = "blur".asInstanceOf[blur]
-  @scala.inline
-  def bookmark: bookmark = "bookmark".asInstanceOf[bookmark]
-  @scala.inline
-  def boundarycollision: boundarycollision = "boundarycollision".asInstanceOf[boundarycollision]
-  @scala.inline
-  def calibration: calibration = "calibration".asInstanceOf[calibration]
-  @scala.inline
-  def cameraready: cameraready = "cameraready".asInstanceOf[cameraready]
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
-  @scala.inline
-  def cancelprefetch: cancelprefetch = "cancelprefetch".asInstanceOf[cancelprefetch]
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def collapse: collapse = "collapse".asInstanceOf[collapse]
-  @scala.inline
-  def commit: commit = "commit".asInstanceOf[commit]
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
-  @scala.inline
-  def completed: completed = "completed".asInstanceOf[completed]
-  @scala.inline
-  def continueactivity: continueactivity = "continueactivity".asInstanceOf[continueactivity]
-  @scala.inline
-  def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
-  @scala.inline
-  def deactivate: deactivate = "deactivate".asInstanceOf[deactivate]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def doubletap: doubletap = "doubletap".asInstanceOf[doubletap]
-  @scala.inline
-  def downloadcompleted: downloadcompleted = "downloadcompleted".asInstanceOf[downloadcompleted]
-  @scala.inline
-  def downloadprogress: downloadprogress = "downloadprogress".asInstanceOf[downloadprogress]
-  @scala.inline
-  def dragEnd: dragEnd = "dragEnd".asInstanceOf[dragEnd]
-  @scala.inline
-  def dragStart: dragStart = "dragStart".asInstanceOf[dragStart]
-  @scala.inline
-  def dragend_ : dragend_ = "dragend".asInstanceOf[dragend_]
-  @scala.inline
-  def dragstart_ : dragstart_ = "dragstart".asInstanceOf[dragstart_]
-  @scala.inline
-  def durationavailable: durationavailable = "durationavailable".asInstanceOf[durationavailable]
-  @scala.inline
-  def edit: edit = "edit".asInstanceOf[edit]
-  @scala.inline
-  def editaction: editaction = "editaction".asInstanceOf[editaction]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def expand: expand = "expand".asInstanceOf[expand]
-  @scala.inline
-  def finishfiletransfer: finishfiletransfer = "finishfiletransfer".asInstanceOf[finishfiletransfer]
-  @scala.inline
-  def finishuserinfotransfer: finishuserinfotransfer = "finishuserinfotransfer".asInstanceOf[finishuserinfotransfer]
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
-  @scala.inline
-  def founditems: founditems = "founditems".asInstanceOf[founditems]
-  @scala.inline
-  def handleurl: handleurl = "handleurl".asInstanceOf[handleurl]
-  @scala.inline
-  def heading: heading = "heading".asInstanceOf[heading]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def inactive: inactive = "inactive".asInstanceOf[inactive]
-  @scala.inline
-  def indexclick: indexclick = "indexclick".asInstanceOf[indexclick]
-  @scala.inline
-  def insert: insert = "insert".asInstanceOf[insert]
-  @scala.inline
-  def interrupted: interrupted = "interrupted".asInstanceOf[interrupted]
-  @scala.inline
-  def itemclick: itemclick = "itemclick".asInstanceOf[itemclick]
-  @scala.inline
-  def itemcollision: itemcollision = "itemcollision".asInstanceOf[itemcollision]
-  @scala.inline
-  def itemsselected: itemsselected = "itemsselected".asInstanceOf[itemsselected]
-  @scala.inline
-  def keyboardframechanged: keyboardframechanged = "keyboardframechanged".asInstanceOf[keyboardframechanged]
-  @scala.inline
-  def keypressed: keypressed = "keypressed".asInstanceOf[keypressed]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
-  @scala.inline
-  def load: load = "load".asInstanceOf[load]
-  @scala.inline
-  def loadstate: loadstate = "loadstate".asInstanceOf[loadstate]
-  @scala.inline
-  def localnotificationaction: localnotificationaction = "localnotificationaction".asInstanceOf[localnotificationaction]
-  @scala.inline
-  def location: location = "location".asInstanceOf[location]
-  @scala.inline
-  def locationupdatepaused: locationupdatepaused = "locationupdatepaused".asInstanceOf[locationupdatepaused]
-  @scala.inline
-  def locationupdateresumed: locationupdateresumed = "locationupdateresumed".asInstanceOf[locationupdateresumed]
-  @scala.inline
-  def longclick: longclick = "longclick".asInstanceOf[longclick]
-  @scala.inline
-  def longpress: longpress = "longpress".asInstanceOf[longpress]
-  @scala.inline
-  def marker: marker = "marker".asInstanceOf[marker]
-  @scala.inline
-  def memorywarning: memorywarning = "memorywarning".asInstanceOf[memorywarning]
-  @scala.inline
-  def menu: menu = "menu".asInstanceOf[menu]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def metadata: metadata = "metadata".asInstanceOf[metadata]
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
-  @scala.inline
-  def naturalsizeavailable: naturalsizeavailable = "naturalsizeavailable".asInstanceOf[naturalsizeavailable]
-  @scala.inline
-  def newintent: newintent = "newintent".asInstanceOf[newintent]
-  @scala.inline
-  def noresults: noresults = "noresults".asInstanceOf[noresults]
-  @scala.inline
-  def notification: notification = "notification".asInstanceOf[notification]
-  @scala.inline
-  def onIntent: onIntent = "onIntent".asInstanceOf[onIntent]
-  @scala.inline
-  def onLoadResource: onLoadResource = "onLoadResource".asInstanceOf[onLoadResource]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def orientationchange: orientationchange = "orientationchange".asInstanceOf[orientationchange]
-  @scala.inline
-  def pagechanged: pagechanged = "pagechanged".asInstanceOf[pagechanged]
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
-  @scala.inline
-  def paused: paused = "paused".asInstanceOf[paused]
-  @scala.inline
-  def peek: peek = "peek".asInstanceOf[peek]
-  @scala.inline
-  def pinch: pinch = "pinch".asInstanceOf[pinch]
-  @scala.inline
-  def playbackstate: playbackstate = "playbackstate".asInstanceOf[playbackstate]
-  @scala.inline
-  def playing: playing = "playing".asInstanceOf[playing]
-  @scala.inline
-  def playingchange: playingchange = "playingchange".asInstanceOf[playingchange]
-  @scala.inline
-  def pop: pop = "pop".asInstanceOf[pop]
-  @scala.inline
-  def postlayout: postlayout = "postlayout".asInstanceOf[postlayout]
-  @scala.inline
-  def prefetch: prefetch = "prefetch".asInstanceOf[prefetch]
-  @scala.inline
-  def preload: preload = "preload".asInstanceOf[preload]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def proximity: proximity = "proximity".asInstanceOf[proximity]
-  @scala.inline
-  def publish: publish = "publish".asInstanceOf[publish]
-  @scala.inline
-  def pull: pull = "pull".asInstanceOf[pull]
-  @scala.inline
-  def pullend: pullend = "pullend".asInstanceOf[pullend]
-  @scala.inline
-  def reachabilitychanged: reachabilitychanged = "reachabilitychanged".asInstanceOf[reachabilitychanged]
-  @scala.inline
-  def receiveapplicationcontext: receiveapplicationcontext = "receiveapplicationcontext".asInstanceOf[receiveapplicationcontext]
-  @scala.inline
-  def receivefile: receivefile = "receivefile".asInstanceOf[receivefile]
-  @scala.inline
-  def receivemessage: receivemessage = "receivemessage".asInstanceOf[receivemessage]
-  @scala.inline
-  def receiveuserinfo: receiveuserinfo = "receiveuserinfo".asInstanceOf[receiveuserinfo]
-  @scala.inline
-  def redirect: redirect = "redirect".asInstanceOf[redirect]
-  @scala.inline
-  def refreshend: refreshend = "refreshend".asInstanceOf[refreshend]
-  @scala.inline
-  def refreshstart: refreshstart = "refreshstart".asInstanceOf[refreshstart]
-  @scala.inline
-  def reload: reload = "reload".asInstanceOf[reload]
-  @scala.inline
-  def remotenotificationaction: remotenotificationaction = "remotenotificationaction".asInstanceOf[remotenotificationaction]
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
-  @scala.inline
-  def resolve: resolve = "resolve".asInstanceOf[resolve]
-  @scala.inline
-  def resume: resume = "resume".asInstanceOf[resume]
-  @scala.inline
-  def resumed: resumed = "resumed".asInstanceOf[resumed]
-  @scala.inline
-  def `return`: `return` = "return".asInstanceOf[`return`]
-  @scala.inline
-  def routechange: routechange = "routechange".asInstanceOf[routechange]
-  @scala.inline
-  def rowsselected: rowsselected = "rowsselected".asInstanceOf[rowsselected]
-  @scala.inline
-  def scale: scale = "scale".asInstanceOf[scale]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def scrollend: scrollend = "scrollend".asInstanceOf[scrollend]
-  @scala.inline
-  def scrolling: scrolling = "scrolling".asInstanceOf[scrolling]
-  @scala.inline
-  def scrollstart: scrollstart = "scrollstart".asInstanceOf[scrollstart]
-  @scala.inline
-  def seek: seek = "seek".asInstanceOf[seek]
-  @scala.inline
-  def selected: selected = "selected".asInstanceOf[selected]
-  @scala.inline
-  def sessioncompleted: sessioncompleted = "sessioncompleted".asInstanceOf[sessioncompleted]
-  @scala.inline
-  def sessioneventscompleted: sessioneventscompleted = "sessioneventscompleted".asInstanceOf[sessioneventscompleted]
-  @scala.inline
-  def shake: shake = "shake".asInstanceOf[shake]
-  @scala.inline
-  def shortcutitemclick: shortcutitemclick = "shortcutitemclick".asInstanceOf[shortcutitemclick]
-  @scala.inline
-  def significanttimechange: significanttimechange = "significanttimechange".asInstanceOf[significanttimechange]
-  @scala.inline
-  def silentpush: silentpush = "silentpush".asInstanceOf[silentpush]
-  @scala.inline
-  def singletap: singletap = "singletap".asInstanceOf[singletap]
-  @scala.inline
-  def slide: slide = "slide".asInstanceOf[slide]
-  @scala.inline
-  def sslerror: sslerror = "sslerror".asInstanceOf[sslerror]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def started: started = "started".asInstanceOf[started]
-  @scala.inline
-  def startlistening: startlistening = "startlistening".asInstanceOf[startlistening]
-  @scala.inline
-  def statechange: statechange = "statechange".asInstanceOf[statechange]
-  @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
-  @scala.inline
-  def stoplistening: stoplistening = "stoplistening".asInstanceOf[stoplistening]
-  @scala.inline
-  def submit: submit = "submit".asInstanceOf[submit]
-  @scala.inline
-  def swipe: swipe = "swipe".asInstanceOf[swipe]
-  @scala.inline
-  def taskremoved: taskremoved = "taskremoved".asInstanceOf[taskremoved]
-  @scala.inline
-  def tileadded: tileadded = "tileadded".asInstanceOf[tileadded]
-  @scala.inline
-  def tiledialogcancelled: tiledialogcancelled = "tiledialogcancelled".asInstanceOf[tiledialogcancelled]
-  @scala.inline
-  def tiledialognegative: tiledialognegative = "tiledialognegative".asInstanceOf[tiledialognegative]
-  @scala.inline
-  def tiledialogneutral: tiledialogneutral = "tiledialogneutral".asInstanceOf[tiledialogneutral]
-  @scala.inline
-  def tiledialogoptionselected: tiledialogoptionselected = "tiledialogoptionselected".asInstanceOf[tiledialogoptionselected]
-  @scala.inline
-  def tiledialogpositive: tiledialogpositive = "tiledialogpositive".asInstanceOf[tiledialogpositive]
-  @scala.inline
-  def tileremoved: tileremoved = "tileremoved".asInstanceOf[tileremoved]
-  @scala.inline
-  def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
-  @scala.inline
-  def touchend: touchend = "touchend".asInstanceOf[touchend]
-  @scala.inline
-  def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
-  @scala.inline
-  def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
-  @scala.inline
-  def traitcollectionchange: traitcollectionchange = "traitcollectionchange".asInstanceOf[traitcollectionchange]
-  @scala.inline
-  def twofingertap: twofingertap = "twofingertap".asInstanceOf[twofingertap]
-  @scala.inline
-  def uncaughtException: uncaughtException = "uncaughtException".asInstanceOf[uncaughtException]
-  @scala.inline
-  def unload: unload = "unload".asInstanceOf[unload]
-  @scala.inline
-  def unselected: unselected = "unselected".asInstanceOf[unselected]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
-  @scala.inline
-  def updatedservices: updatedservices = "updatedservices".asInstanceOf[updatedservices]
-  @scala.inline
-  def uploadprogress: uploadprogress = "uploadprogress".asInstanceOf[uploadprogress]
-  @scala.inline
-  def useractivitydeleted: useractivitydeleted = "useractivitydeleted".asInstanceOf[useractivitydeleted]
-  @scala.inline
-  def useractivitywascontinued: useractivitywascontinued = "useractivitywascontinued".asInstanceOf[useractivitywascontinued]
-  @scala.inline
-  def useractivitywillsave: useractivitywillsave = "useractivitywillsave".asInstanceOf[useractivitywillsave]
-  @scala.inline
-  def userinteraction: userinteraction = "userinteraction".asInstanceOf[userinteraction]
-  @scala.inline
-  def userleavehint: userleavehint = "userleavehint".asInstanceOf[userleavehint]
-  @scala.inline
-  def usernotificationsettings: usernotificationsettings = "usernotificationsettings".asInstanceOf[usernotificationsettings]
-  @scala.inline
-  def volume: volume = "volume".asInstanceOf[volume]
-  @scala.inline
-  def watchkitextensionrequest: watchkitextensionrequest = "watchkitextensionrequest".asInstanceOf[watchkitextensionrequest]
-  @scala.inline
-  def watchstatechanged: watchstatechanged = "watchstatechanged".asInstanceOf[watchstatechanged]
 }
-

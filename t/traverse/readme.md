@@ -10,9 +10,9 @@ traverse and transform objects by visiting every node on a recursive walk
 | ------------------ | :-------------: |
 | Full name          | traverse |
 | Keywords           | traverse, walk, recursive, map, forEach, deep, clone |
-| # releases         | 1 |
-| # dependents       | 859 |
-| # downloads        | 94922788 |
+| # releases         | 0 |
+| # dependents       | 934 |
+| # downloads        | 152620497 |
 | # stars            | 42 |
 
 ## Links

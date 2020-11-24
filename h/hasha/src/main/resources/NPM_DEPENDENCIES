@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "hasha" : "5.2.0"
+      "hasha" : "5.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "hasha" : "5.2.0"
+      "hasha" : "5.2.2"
     }
   ],
   "compile-devDependencies" : [

@@ -2,11 +2,12 @@ package typings.phaser.phaserMod.Math
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phaser", "Math.Fuzzy")
 @js.native
 object Fuzzy extends js.Object {
+  
   /**
     * Calculate the fuzzy ceiling of the given value.
     * @param value The value.
@@ -14,6 +15,7 @@ object Fuzzy extends js.Object {
     */
   def Ceil(value: Double): Double = js.native
   def Ceil(value: Double, epsilon: Double): Double = js.native
+  
   /**
     * Check whether the given values are fuzzily equal.
     * 
@@ -24,6 +26,7 @@ object Fuzzy extends js.Object {
     */
   def Equal(a: Double, b: Double): Boolean = js.native
   def Equal(a: Double, b: Double, epsilon: Double): Boolean = js.native
+  
   /**
     * Calculate the fuzzy floor of the given value.
     * @param value The value.
@@ -31,6 +34,7 @@ object Fuzzy extends js.Object {
     */
   def Floor(value: Double): Double = js.native
   def Floor(value: Double, epsilon: Double): Double = js.native
+  
   /**
     * Check whether `a` is fuzzily greater than `b`.
     * 
@@ -41,6 +45,7 @@ object Fuzzy extends js.Object {
     */
   def GreaterThan(a: Double, b: Double): Boolean = js.native
   def GreaterThan(a: Double, b: Double, epsilon: Double): Boolean = js.native
+  
   /**
     * Check whether `a` is fuzzily less than `b`.
     * 
@@ -52,4 +57,3 @@ object Fuzzy extends js.Object {
   def LessThan(a: Double, b: Double): Boolean = js.native
   def LessThan(a: Double, b: Double, epsilon: Double): Boolean = js.native
 }
-

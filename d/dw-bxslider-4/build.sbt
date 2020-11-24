@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dw-bxslider-4"
-version := "v4.2.5-dt-20200515Z-215def"
+version := "v4.2.5-dt-20201002Z-3fdd6d"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

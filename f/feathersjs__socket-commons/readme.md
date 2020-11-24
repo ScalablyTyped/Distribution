@@ -11,8 +11,8 @@ Shared functionality for websocket providers
 | Full name          | @feathersjs/socket-commons |
 | Keywords           | feathers, feathers-plugin |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 455906 |
+| # dependents       | 0 |
+| # downloads        | 331962 |
 | # stars            | 0 |
 
 ## Links

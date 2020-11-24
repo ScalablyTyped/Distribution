@@ -2,10 +2,11 @@ package typings.oibackoff.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BackoffInstance extends js.Object {
+  
   def apply[A](
     fn: js.Function1[/* callback */ js.Function1[/* a */ A | Null, Unit], Unit],
     callback: js.Function3[/* a */ A | Null, /* b */ Null, /* priorErrors */ js.UndefOr[js.Array[A]], Unit]
@@ -199,4 +200,3 @@ trait BackoffInstance extends js.Object {
     ]
   ): Unit = js.native
 }
-

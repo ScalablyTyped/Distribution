@@ -7,7 +7,7 @@ import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
 import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.luminoDisposable.mod.IDisposable because Already inherited
@@ -19,22 +19,26 @@ import scala.scalajs.js.annotation._
 @js.native
 class DocumentWidget_[T /* <: Widget */, U /* <: IModel */] protected () extends MainAreaWidget[T] {
   def this(options: IOptions[T, U]) = this()
+  
   /**
     * Handle the dirty state of the context model.
     */
   var _handleDirtyState: js.Any = js.native
+  
   /**
     * Handle a change to the context model state.
     */
   var _onModelStateChanged: js.Any = js.native
+  
   /**
     * Handle a path change.
     */
   var _onPathChanged: js.Any = js.native
+  
   val context: IContext[U] = js.native
+  
   /**
     * Set URI fragment identifier.
     */
   def setFragment(fragment: String): Unit = js.native
 }
-

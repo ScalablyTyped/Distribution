@@ -1,7 +1,7 @@
 
 # Scala.js typings for faker
 
-Typings are for version 4.1
+Typings are for version 5.1
 
 ## Library description:
 Generate massive amounts of fake contextual data
@@ -11,9 +11,9 @@ Generate massive amounts of fake contextual data
 | Full name          | faker |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 841 |
-| # downloads        | 42019297 |
-| # stars            | 271 |
+| # dependents       | 1046 |
+| # downloads        | 63224272 |
+| # stars            | 272 |
 
 ## Links
 - [Homepage](https://github.com/Marak/Faker.js#readme)

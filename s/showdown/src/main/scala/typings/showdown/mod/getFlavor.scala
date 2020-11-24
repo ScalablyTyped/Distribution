@@ -2,11 +2,12 @@ package typings.showdown.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("showdown", "getFlavor")
 @js.native
 object getFlavor extends js.Object {
+  
   /**
     * Get the "global" currently set flavor.
     *
@@ -14,4 +15,3 @@ object getFlavor extends js.Object {
     */
   def apply(): Flavor = js.native
 }
-

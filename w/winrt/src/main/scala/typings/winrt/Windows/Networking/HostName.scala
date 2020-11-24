@@ -3,12 +3,12 @@ package typings.winrt.Windows.Networking
 import typings.winrt.Windows.Networking.Connectivity.IPInformation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HostName extends IHostName
-
 object HostName {
+  
   @scala.inline
   def apply(
     canonicalName: String,
@@ -23,4 +23,3 @@ object HostName {
     __obj.asInstanceOf[HostName]
   }
 }
-

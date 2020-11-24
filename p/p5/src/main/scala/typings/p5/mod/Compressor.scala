@@ -3,15 +3,11 @@ package typings.p5.mod
 import typings.std.AudioNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Compressor extends Effect {
-  /**
-    *   The p5.Compressor is built with a Web Audio
-    *   Dynamics Compressor Node
-    */
-  var compressor: AudioNode = js.native
+  
   /**
     *   Get current attack or set value w/ time ramp
     *   @param [attack] Attack is the amount of time (in
@@ -24,6 +20,13 @@ trait Compressor extends Effect {
   def attack(attack: js.UndefOr[scala.Nothing], time: Double): Unit = js.native
   def attack(attack: Double): Unit = js.native
   def attack(attack: Double, time: Double): Unit = js.native
+  
+  /**
+    *   The p5.Compressor is built with a Web Audio
+    *   Dynamics Compressor Node
+    */
+  var compressor: AudioNode = js.native
+  
   /**
     *   Get current knee or set value w/ time ramp
     *   @param [knee] A decibel value representing the
@@ -37,6 +40,7 @@ trait Compressor extends Effect {
   def knee(knee: js.UndefOr[scala.Nothing], time: Double): Unit = js.native
   def knee(knee: Double): Unit = js.native
   def knee(knee: Double, time: Double): Unit = js.native
+  
   /**
     *   Performs the same function as .connect, but also
     *   accepts optional parameters to set compressor's
@@ -220,6 +224,7 @@ trait Compressor extends Effect {
   ): Unit = js.native
   def process(src: js.Object, attack: Double, knee: Double, ratio: Double, threshold: Double): Unit = js.native
   def process(src: js.Object, attack: Double, knee: Double, ratio: Double, threshold: Double, release: Double): Unit = js.native
+  
   /**
     *   Get current ratio or set value w/ time ramp
     *   @param [ratio] The amount of dB change in input
@@ -232,12 +237,14 @@ trait Compressor extends Effect {
   def ratio(ratio: js.UndefOr[scala.Nothing], time: Double): Unit = js.native
   def ratio(ratio: Double): Unit = js.native
   def ratio(ratio: Double, time: Double): Unit = js.native
+  
   /**
     *   Return the current reduction value
     *   @return Value of the amount of gain reduction that
     *   is applied to the signal
     */
   def reduction(): Double = js.native
+  
   /**
     *   Get current release or set value w/ time ramp
     *   @param release The amount of time (in seconds) to
@@ -248,6 +255,7 @@ trait Compressor extends Effect {
     */
   def release(release: Double): Unit = js.native
   def release(release: Double, time: Double): Unit = js.native
+  
   /**
     *   Set the paramters of a compressor.
     *   @param attack The amount of time (in seconds) to
@@ -267,6 +275,7 @@ trait Compressor extends Effect {
     *   1
     */
   def set(attack: Double, knee: Double, ratio: Double, threshold: Double, release: Double): Unit = js.native
+  
   /**
     *   Get current threshold or set value w/ time ramp
     *   @param threshold The decibel value above which the
@@ -278,4 +287,3 @@ trait Compressor extends Effect {
   def threshold(threshold: Double): Unit = js.native
   def threshold(threshold: Double, time: Double): Unit = js.native
 }
-

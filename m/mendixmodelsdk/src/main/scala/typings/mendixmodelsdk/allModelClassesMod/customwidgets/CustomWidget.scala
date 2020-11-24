@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.allModelClassesMod.customwidgets
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo
 import typings.mendixmodelsdk.internalMod.AbstractElement
@@ -29,9 +30,10 @@ import typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents
 import typings.mendixmodelsdk.pagesMod.pages.VerticalFlow
 import typings.mendixmodelsdk.pagesMod.pages.WebLayoutContent
 import typings.mendixmodelsdk.reportsMod.reports.ReportPane
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interfaces and instance classes for types from the Mendix sub meta model `CustomWidgets`.
@@ -45,23 +47,22 @@ class CustomWidget protected ()
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidget")
 @js.native
 object CustomWidget extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -71,6 +72,7 @@ object CustomWidget extends js.Object {
     *  7.7.0 to 7.14.0
     */
   def createInBuildingBlockUnderWidget(container: BuildingBlock): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -80,6 +82,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInBuildingBlockUnderWidgets(container: BuildingBlock): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'footerWidget' property
@@ -89,6 +92,7 @@ object CustomWidget extends js.Object {
     *  6.7.0 to 7.14.0
     */
   def createInDataViewUnderFooterWidget(container: DataView): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'footerWidgets' property
@@ -98,6 +102,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInDataViewUnderFooterWidgets(container: DataView): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -107,6 +112,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInDataViewUnderWidget(container: DataView): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -116,6 +122,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInDataViewUnderWidgets(container: DataView): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -125,6 +132,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInDivContainerUnderWidget(container: DivContainer): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -134,6 +142,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInDivContainerUnderWidgets(container: DivContainer): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -143,6 +152,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInGroupBoxUnderWidget(container: GroupBox): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -152,6 +162,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInGroupBoxUnderWidgets(container: GroupBox): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'leftWidget' property
@@ -161,6 +172,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInHeaderUnderLeftWidget(container: Header): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'leftWidgets' property
@@ -170,6 +182,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInHeaderUnderLeftWidgets(container: Header): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'rightWidget' property
@@ -179,6 +192,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInHeaderUnderRightWidget(container: Header): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'rightWidgets' property
@@ -188,6 +202,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInHeaderUnderRightWidgets(container: Header): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -197,6 +212,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -206,6 +222,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -215,6 +232,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -224,6 +242,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -233,6 +252,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInLayoutUnderWidget(container: Layout): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -242,6 +262,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInLayoutUnderWidgets(container: Layout): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -251,6 +272,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInListViewTemplateUnderWidget(container: ListViewTemplate): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -260,6 +282,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInListViewTemplateUnderWidgets(container: ListViewTemplate): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -269,6 +292,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInListViewUnderWidget(container: ListView): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -278,6 +302,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInListViewUnderWidgets(container: ListView): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -287,6 +312,7 @@ object CustomWidget extends js.Object {
     *  7.1.0 to 7.14.0
     */
   def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -296,6 +322,7 @@ object CustomWidget extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'sidebarWidgets' property
@@ -305,6 +332,7 @@ object CustomWidget extends js.Object {
     *  8.5.0 and higher
     */
   def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -314,6 +342,7 @@ object CustomWidget extends js.Object {
     *  8.0.0 and higher
     */
   def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'headerWidget' property
@@ -323,6 +352,7 @@ object CustomWidget extends js.Object {
     *  7.22.0 to 7.23.0
     */
   def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -332,6 +362,7 @@ object CustomWidget extends js.Object {
     *  7.21.0 to 7.23.0
     */
   def createInNativeLayoutUnderWidgets(container: NativeLayout): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -341,6 +372,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInNavigationListItemUnderWidget(container: NavigationListItem): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -350,6 +382,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInNavigationListItemUnderWidgets(container: NavigationListItem): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'parameterWidget' property
@@ -359,6 +392,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 6.9.0
     */
   def createInReportPaneUnderParameterWidget(container: ReportPane): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'reportWidget' property
@@ -368,6 +402,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 6.9.0
     */
   def createInReportPaneUnderReportWidget(container: ReportPane): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -377,6 +412,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -386,6 +422,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -395,6 +432,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInSnippetUnderWidget(container: Snippet): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -404,6 +442,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInSnippetUnderWidgets(container: Snippet): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'firstWidget' property
@@ -413,6 +452,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInSplitPaneUnderFirstWidget(container: SplitPane): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'firstWidgets' property
@@ -422,6 +462,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInSplitPaneUnderFirstWidgets(container: SplitPane): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'secondWidget' property
@@ -431,6 +472,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInSplitPaneUnderSecondWidget(container: SplitPane): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'secondWidgets' property
@@ -440,6 +482,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInSplitPaneUnderSecondWidgets(container: SplitPane): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -449,6 +492,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInTabPageUnderWidget(container: TabPage): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -458,6 +502,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInTabPageUnderWidgets(container: TabPage): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -467,6 +512,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInTableCellUnderWidget(container: TableCell): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -476,6 +522,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInTableCellUnderWidgets(container: TableCell): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widget' property
@@ -485,6 +532,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -494,6 +542,7 @@ object CustomWidget extends js.Object {
     *  7.15.0 and higher
     */
   def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -503,6 +552,7 @@ object CustomWidget extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInVerticalFlowUnderWidgets(container: VerticalFlow): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -512,6 +562,7 @@ object CustomWidget extends js.Object {
     *  8.0.0 and higher
     */
   def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
@@ -521,5 +572,8 @@ object CustomWidget extends js.Object {
     *  8.2.0 and higher
     */
   def createInWidgetValueUnderWidgets(container: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

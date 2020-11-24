@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait KeyModifiers extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.KeyModifiers")
 @js.native
 object KeyModifiers extends js.Object {
+  
   //The ALT key.
   @js.native
   sealed trait Alt extends KeyModifiers
@@ -25,6 +25,4 @@ object KeyModifiers extends js.Object {
   //The SHIFT key.
   @js.native
   sealed trait Shift extends KeyModifiers
-  
 }
-

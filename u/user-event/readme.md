@@ -9,9 +9,9 @@ Typings are for version 4.1
 | ------------------ | :-------------: |
 | Full name          | user-event |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 1 |
-| # downloads        | 289263 |
+| # releases         | 18 |
+| # dependents       | 2 |
+| # downloads        | 303693 |
 | # stars            | 0 |
 
 ## Links

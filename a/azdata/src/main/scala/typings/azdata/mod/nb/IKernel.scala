@@ -3,11 +3,19 @@ package typings.azdata.mod.nb
 import typings.vscode.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IKernel extends js.Object {
+  
+  /**
+    * Gets the full specification for this kernel, which can be serialized to
+    * a noteobok file
+    */
+  def getSpec(): Thenable[IKernelSpec] = js.native
+  
   val id: String = js.native
+  
   /**
     * The cached kernel info.
     *
@@ -15,22 +23,7 @@ trait IKernel extends js.Object {
     * This value will be null until the kernel is ready.
     */
   val info: IInfoReply | Null = js.native
-  /**
-    * Test whether the kernel is ready.
-    */
-  val isReady: Boolean = js.native
-  val name: String = js.native
-  /**
-    * A Thenable that is fulfilled when the kernel is ready.
-    */
-  val ready: Thenable[Unit] = js.native
-  val requiresConnection: js.UndefOr[Boolean] = js.native
-  val supportsIntellisense: Boolean = js.native
-  /**
-    * Gets the full specification for this kernel, which can be serialized to
-    * a noteobok file
-    */
-  def getSpec(): Thenable[IKernelSpec] = js.native
+  
   /**
     * Interrupt a kernel.
     *
@@ -45,6 +38,19 @@ trait IKernel extends js.Object {
     * request fails or the response is invalid.
     */
   def interrupt(): Thenable[Unit] = js.native
+  
+  /**
+    * Test whether the kernel is ready.
+    */
+  val isReady: Boolean = js.native
+  
+  val name: String = js.native
+  
+  /**
+    * A Thenable that is fulfilled when the kernel is ready.
+    */
+  val ready: Thenable[Unit] = js.native
+  
   /**
     * Send a `complete_request` message.
     *
@@ -59,6 +65,7 @@ trait IKernel extends js.Object {
     * received and validated.
     */
   def requestComplete(content: ICompleteRequest): Thenable[ICompleteReplyMsg] = js.native
+  
   /**
     * Send an `execute_request` message.
     *
@@ -82,5 +89,8 @@ trait IKernel extends js.Object {
     */
   def requestExecute(content: IExecuteRequest): IFuture = js.native
   def requestExecute(content: IExecuteRequest, disposeOnDone: Boolean): IFuture = js.native
+  
+  val requiresConnection: js.UndefOr[Boolean] = js.native
+  
+  val supportsIntellisense: Boolean = js.native
 }
-

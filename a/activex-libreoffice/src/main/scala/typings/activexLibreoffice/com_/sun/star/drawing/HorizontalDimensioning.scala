@@ -6,7 +6,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The HorizontalDimensioning specifies the horizontal position of the text of a dimensioning shape. */
 /* Rewritten from type alias, can be one of: 
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 */
 trait HorizontalDimensioning extends js.Object
-
 object HorizontalDimensioning {
+  
   /**
     * the connection point is chosen automatically,
     *
@@ -25,6 +25,7 @@ object HorizontalDimensioning {
     */
   @scala.inline
   def AUTO: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * The text is positioned at the center.
     *
@@ -32,6 +33,7 @@ object HorizontalDimensioning {
     */
   @scala.inline
   def CENTERED: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * the connection line leaves the connected object to the left,
     *
@@ -41,6 +43,7 @@ object HorizontalDimensioning {
     */
   @scala.inline
   def LEFT: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * the connection line leaves the connected object to the right,
     *
@@ -51,4 +54,3 @@ object HorizontalDimensioning {
   @scala.inline
   def RIGHT: `3` = 3.asInstanceOf[`3`]
 }
-

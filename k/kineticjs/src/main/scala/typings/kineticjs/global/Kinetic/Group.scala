@@ -7,17 +7,15 @@ import typings.kineticjs.Kinetic.IGroup
 import typings.kineticjs.Kinetic.ObjectOptionsConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Kinetic.Group")
 @js.native
 class Group () extends IContainer {
   def this(config: ObjectOptionsConfig) = this()
 }
-
 @JSGlobal("Kinetic.Group")
 @js.native
 object Group
   extends Instantiable0[IGroup]
      with Instantiable1[/* config */ ObjectOptionsConfig, IGroup]
-

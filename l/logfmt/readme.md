@@ -10,9 +10,9 @@ key=value logger and parser
 | ------------------ | :-------------: |
 | Full name          | logfmt |
 | Keywords           | log, parser, logfmt |
-| # releases         | 4 |
-| # dependents       | 45 |
-| # downloads        | 2219286 |
+| # releases         | 3 |
+| # dependents       | 47 |
+| # downloads        | 2566628 |
 | # stars            | 9 |
 
 ## Links

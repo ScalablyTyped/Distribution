@@ -10,9 +10,9 @@ The authentication plugin for feathers-client
 | ------------------ | :-------------: |
 | Full name          | @feathersjs/authentication-client |
 | Keywords           | feathers, feathers-plugin |
-| # releases         | 33 |
-| # dependents       | 30 |
-| # downloads        | 371441 |
+| # releases         | 40 |
+| # dependents       | 38 |
+| # downloads        | 466433 |
 | # stars            | 0 |
 
 ## Links

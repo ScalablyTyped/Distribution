@@ -5,7 +5,7 @@ import typings.socketclusterClient.clientsocketMod.ClientOptions
 import typings.socketclusterServer.serverMod.CodecEngine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("socketcluster-client/lib/transport", JSImport.Namespace)
 @js.native
@@ -32,4 +32,3 @@ class ^ protected () extends AGTransport {
     handlers: TransportHandlers
   ) = this()
 }
-

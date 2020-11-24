@@ -4,9 +4,37 @@ import typings.jsonrpcSerializer.mod.PayloadType
 import typings.jsonrpcSerializer.mod.err.ErrorName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonrpcSerializerStrings {
+  
+  @scala.inline
+  def InvalidParamsError: InvalidParamsError = "InvalidParamsError".asInstanceOf[InvalidParamsError]
+  
+  @scala.inline
+  def InvalidRequestError: InvalidRequestError = "InvalidRequestError".asInstanceOf[InvalidRequestError]
+  
+  @scala.inline
+  def JsonRpcError: JsonRpcError = "JsonRpcError".asInstanceOf[JsonRpcError]
+  
+  @scala.inline
+  def MethodNotFoundError: MethodNotFoundError = "MethodNotFoundError".asInstanceOf[MethodNotFoundError]
+  
+  @scala.inline
+  def ParseError: ParseError = "ParseError".asInstanceOf[ParseError]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def notification: notification = "notification".asInstanceOf[notification]
+  
+  @scala.inline
+  def request: request = "request".asInstanceOf[request]
+  
+  @scala.inline
+  def success: success = "success".asInstanceOf[success]
+  
   @js.native
   sealed trait InvalidParamsError extends ErrorName
   
@@ -33,24 +61,4 @@ object jsonrpcSerializerStrings {
   
   @js.native
   sealed trait success extends PayloadType
-  
-  @scala.inline
-  def InvalidParamsError: InvalidParamsError = "InvalidParamsError".asInstanceOf[InvalidParamsError]
-  @scala.inline
-  def InvalidRequestError: InvalidRequestError = "InvalidRequestError".asInstanceOf[InvalidRequestError]
-  @scala.inline
-  def JsonRpcError: JsonRpcError = "JsonRpcError".asInstanceOf[JsonRpcError]
-  @scala.inline
-  def MethodNotFoundError: MethodNotFoundError = "MethodNotFoundError".asInstanceOf[MethodNotFoundError]
-  @scala.inline
-  def ParseError: ParseError = "ParseError".asInstanceOf[ParseError]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def notification: notification = "notification".asInstanceOf[notification]
-  @scala.inline
-  def request: request = "request".asInstanceOf[request]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
 }
-

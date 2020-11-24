@@ -2,9 +2,10 @@ package typings.activexOffice.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object EventHelperTypes {
+  
   type CommandBarButtonInvokeArgNames = js.Tuple8[
     typings.activexOffice.activexOfficeStrings.dispidMember, 
     typings.activexOffice.activexOfficeStrings.riid, 
@@ -15,6 +16,7 @@ package object EventHelperTypes {
     typings.activexOffice.activexOfficeStrings.pexcepinfo, 
     typings.activexOffice.activexOfficeStrings.puArgErr
   ]
+  
   type CommandBarComboBoxInvokeArgNames = js.Tuple8[
     typings.activexOffice.activexOfficeStrings.dispidMember, 
     typings.activexOffice.activexOfficeStrings.riid, 
@@ -25,6 +27,7 @@ package object EventHelperTypes {
     typings.activexOffice.activexOfficeStrings.pexcepinfo, 
     typings.activexOffice.activexOfficeStrings.puArgErr
   ]
+  
   type CommandBarsInvokeArgNames = js.Tuple8[
     typings.activexOffice.activexOfficeStrings.dispidMember, 
     typings.activexOffice.activexOfficeStrings.riid, 
@@ -35,6 +38,7 @@ package object EventHelperTypes {
     typings.activexOffice.activexOfficeStrings.pexcepinfo, 
     typings.activexOffice.activexOfficeStrings.puArgErr
   ]
+  
   type CustomTaskPaneInvokeArgNames = js.Tuple8[
     typings.activexOffice.activexOfficeStrings.dispidMember, 
     typings.activexOffice.activexOfficeStrings.riid, 
@@ -45,6 +49,7 @@ package object EventHelperTypes {
     typings.activexOffice.activexOfficeStrings.pexcepinfo, 
     typings.activexOffice.activexOfficeStrings.puArgErr
   ]
+  
   type CustomXMLPartInvokeArgNames = js.Tuple8[
     typings.activexOffice.activexOfficeStrings.dispidMember, 
     typings.activexOffice.activexOfficeStrings.riid, 
@@ -55,6 +60,7 @@ package object EventHelperTypes {
     typings.activexOffice.activexOfficeStrings.pexcepinfo, 
     typings.activexOffice.activexOfficeStrings.puArgErr
   ]
+  
   type CustomXMLPartsInvokeArgNames = js.Tuple8[
     typings.activexOffice.activexOfficeStrings.dispidMember, 
     typings.activexOffice.activexOfficeStrings.riid, 

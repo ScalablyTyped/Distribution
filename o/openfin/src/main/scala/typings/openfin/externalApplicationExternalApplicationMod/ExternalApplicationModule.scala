@@ -3,10 +3,11 @@ package typings.openfin.externalApplicationExternalApplicationMod
 import typings.openfin.baseMod.Base
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ExternalApplicationModule extends Base {
+  
   /**
     * Asynchronously returns an External Application object that represents an external application.
     * <br>It is possible to wrap a process that does not yet exist, (for example, to listen for startup-related events)
@@ -17,6 +18,7 @@ trait ExternalApplicationModule extends Base {
     * @static
     */
   def wrap(uuid: String): js.Promise[ExternalApplication] = js.native
+  
   /**
     * Synchronously returns an External Application object that represents an external application.
     * <br>It is possible to wrap a process that does not yet exist, (for example, to listen for startup-related events)
@@ -28,4 +30,3 @@ trait ExternalApplicationModule extends Base {
     */
   def wrapSync(uuid: String): ExternalApplication = js.native
 }
-

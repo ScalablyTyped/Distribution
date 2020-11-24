@@ -10,11 +10,12 @@ import typings.tstl.tstlBooleans.`true`
 import typings.tstl.uniqueTreeSetMod.UniqueTreeSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/experimental/container/FlatSet", JSImport.Namespace)
 @js.native
 object flatSetMod extends js.Object {
+  
   @js.native
   /**
     * Default Constructor.
@@ -53,17 +54,21 @@ object flatSetMod extends js.Object {
       last: IForwardIterator[Key, IForwardIterator[Key, _]],
       comp: Comparator[Key, Key]
     ) = this()
-    var key_comp_ : js.Any = js.native
+    
     /* protected */ def _Handle_erase(has0: js.Object, has1: js.Object): Unit = js.native
+    
     /* protected */ def _Handle_insert(has0: js.Object, has1: js.Object): Unit = js.native
+    
+    var key_comp_ : js.Any = js.native
+    
     /**
       * @inheritDoc
       */
     def nth(index: Double): Iterator[Key] = js.native
   }
-  
   @js.native
   object FlatSet extends js.Object {
+    
     val Iterator: Instantiable0[
         typings.tstl.setElementVectorMod.SetElementVector.Iterator[
           js.Object, 
@@ -85,6 +90,7 @@ object flatSetMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     val ReverseIterator: Instantiable0[
         typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[
           js.Object, 
@@ -106,10 +112,11 @@ object flatSetMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     val __MODULE: /* "experimental" */ String = js.native
+    
     type Iterator[Key] = typings.tstl.setElementVectorMod.SetElementVector.Iterator[Key, `true`, FlatSet[Key]]
+    
     type ReverseIterator[Key] = typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[Key, `true`, FlatSet[Key]]
   }
-  
 }
-

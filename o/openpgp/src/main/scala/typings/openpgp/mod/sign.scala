@@ -10,15 +10,15 @@ import typings.openpgp.anon.Signature
 import typings.openpgp.anon.SignatureSignature
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "sign")
 @js.native
 object sign extends js.Object {
+  
   def apply(options: SignOptionsarmorfalsedeta): js.Promise[Message] = js.native
   def apply(options: SignOptionsarmorfalsedetaArmor): js.Promise[SignatureSignature] = js.native
   def apply(options: SignOptionsarmortrueundef): js.Promise[Data] = js.native
   def apply(options: SignOptionsarmortrueundefArmor): js.Promise[Signature] = js.native
   def apply(options: SignOptions): js.Promise[SignResult] = js.native
 }
-

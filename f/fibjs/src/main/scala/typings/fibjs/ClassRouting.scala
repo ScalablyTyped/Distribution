@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassRouting extends ClassHandler {
+  
   /**
     * 
     * @brief 添加一组接受所有 http 方法路由规则
@@ -27,6 +28,7 @@ trait ClassRouting extends ClassHandler {
     * 
     */
   def all(pattern: String, hdlr: ClassHandler): ClassRouting = js.native
+  
   /**
     * 
     * @brief 添加一组路由规则
@@ -70,6 +72,7 @@ trait ClassRouting extends ClassHandler {
     * 
     */
   def append(route: ClassRouting): ClassRouting = js.native
+  
   /**
     * 
     * @brief 添加一组接受 http DELETE 方法路由规则
@@ -91,6 +94,7 @@ trait ClassRouting extends ClassHandler {
     * 
     */
   def del(pattern: String, hdlr: ClassHandler): ClassRouting = js.native
+  
   /**
     * 
     * @brief 添加一组 FIND 方法路由规则
@@ -112,6 +116,7 @@ trait ClassRouting extends ClassHandler {
     * 
     */
   def find(pattern: String, hdlr: ClassHandler): ClassRouting = js.native
+  
   /**
     * 
     * @brief 添加一组 GET 方法路由规则
@@ -133,6 +138,7 @@ trait ClassRouting extends ClassHandler {
     * 
     */
   def get(pattern: String, hdlr: ClassHandler): ClassRouting = js.native
+  
   /**
     * 
     * @brief 添加一组 PATCH 方法路由规则
@@ -154,6 +160,7 @@ trait ClassRouting extends ClassHandler {
     * 
     */
   def patch(pattern: String, hdlr: ClassHandler): ClassRouting = js.native
+  
   /**
     * 
     * @brief 添加一组接受 http POST 方法路由规则
@@ -175,6 +182,7 @@ trait ClassRouting extends ClassHandler {
     * 
     */
   def post(pattern: String, hdlr: ClassHandler): ClassRouting = js.native
+  
   /**
     * 
     * @brief 添加一组 PUT 方法路由规则
@@ -197,4 +205,3 @@ trait ClassRouting extends ClassHandler {
     */
   def put(pattern: String, hdlr: ClassHandler): ClassRouting = js.native
 }
-

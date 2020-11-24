@@ -3,7 +3,7 @@ package typings.babylonjs.edgesRendererMod
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Rendering/edgesRenderer", "LineEdgesRenderer")
 @js.native
@@ -16,6 +16,6 @@ class LineEdgesRenderer protected () extends EdgesRenderer {
     */
   def this(source: AbstractMesh) = this()
   def this(source: AbstractMesh, epsilon: Double) = this()
+  def this(source: AbstractMesh, epsilon: js.UndefOr[scala.Nothing], checkVerticesInsteadOfIndices: Boolean) = this()
   def this(source: AbstractMesh, epsilon: Double, checkVerticesInsteadOfIndices: Boolean) = this()
 }
-

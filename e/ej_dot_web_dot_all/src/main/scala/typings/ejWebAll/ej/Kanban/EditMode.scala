@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Kanban
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EditMode extends js.Object
-
 @JSGlobal("ej.Kanban.EditMode")
 @js.native
 object EditMode extends js.Object {
+  
   ///Creates Kanban with editMode as Dialog
   @js.native
   sealed trait Dialog extends EditMode
@@ -25,6 +25,4 @@ object EditMode extends js.Object {
   ///Creates Kanban with editMode as ExternalFormTemplate
   @js.native
   sealed trait ExternalFormTemplate extends EditMode
-  
 }
-

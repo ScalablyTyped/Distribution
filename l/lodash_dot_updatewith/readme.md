@@ -12,7 +12,7 @@ The lodash method `_.updateWith` exported as a module.
 | Keywords           | lodash-modularized, updatewith |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3939 |
+| # downloads        | 15503 |
 | # stars            | 0 |
 
 ## Links

@@ -2,14 +2,14 @@ package typings.winrt.Windows.Media.Devices
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TelephonyKey extends js.Object
-
 @JSGlobal("Windows.Media.Devices.TelephonyKey")
 @js.native
 object TelephonyKey extends js.Object {
+  
   @js.native
   sealed trait a extends TelephonyKey
   
@@ -57,6 +57,4 @@ object TelephonyKey extends js.Object {
   
   @js.native
   sealed trait star extends TelephonyKey
-  
 }
-

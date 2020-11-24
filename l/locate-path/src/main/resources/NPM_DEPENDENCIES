@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "locate-path" : "5.0.0"
+      "locate-path" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "locate-path" : "5.0.0"
+      "locate-path" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

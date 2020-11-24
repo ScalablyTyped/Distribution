@@ -2,7 +2,7 @@ package typings.protractor.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An element command could not be completed because the element is in an
@@ -15,4 +15,3 @@ class InvalidElementStateError ()
   extends typings.seleniumWebdriver.mod.error.InvalidElementStateError {
   def this(message: String) = this()
 }
-

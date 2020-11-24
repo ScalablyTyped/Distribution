@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/chat/v1", "chat_v1.Resource$Spaces$Members")
 @js.native
 class ResourceSpacesMembers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * chat.spaces.members.get
     * @desc Returns a membership.
@@ -41,6 +43,7 @@ class ResourceSpacesMembers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMembership]
   ): Unit = js.native
+  
   /**
     * chat.spaces.members.list
     * @desc Lists human memberships in a space.
@@ -75,4 +78,3 @@ class ResourceSpacesMembers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListMembershipsResponse]
   ): Unit = js.native
 }
-

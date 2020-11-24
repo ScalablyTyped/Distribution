@@ -11,8 +11,8 @@ Highly customizable jquery plugin to show toast messages
 | Full name          | jquery-toast-plugin |
 | Keywords           | Toast, Toast plugin, Jquery toast plugin |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 177758 |
+| # dependents       | 3 |
+| # downloads        | 166152 |
 | # stars            | 2 |
 
 ## Links

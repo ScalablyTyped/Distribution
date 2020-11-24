@@ -2,7 +2,7 @@ package typings.massive.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a UPDATE query. */
 @JSImport("massive", "Delete")
@@ -21,7 +21,7 @@ class Delete protected () extends js.Object {
   def this(source: Readable, criteria: Double, options: ResultProcessingOptions with InheritanceOptions) = this()
   def this(source: Readable, criteria: AnyObject[_], options: ResultProcessingOptions with InheritanceOptions) = this()
   def this(source: Readable, criteria: UUID, options: ResultProcessingOptions with InheritanceOptions) = this()
+  
   /** Format this object into a SQL SELECT. */
   def format(): String = js.native
 }
-

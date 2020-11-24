@@ -6,13 +6,14 @@ import typings.kiiCloudSdk.anon.`33`
 import typings.kiiCloudSdk.anon.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a KiiUser object
   */
 @js.native
 trait KiiUser extends KiiACLSubject {
+  
   /**
     * Creates a reference to a bucket for this user
     *
@@ -27,6 +28,7 @@ trait KiiUser extends KiiACLSubject {
     *     var bucket = user.bucketWithName("myBucket");
     */
   def bucketWithName(bucketName: String): KiiBucket = js.native
+  
   /**
     * Change email of logged in user.
     * If the email address verification is required by your app configuration,
@@ -75,6 +77,7 @@ trait KiiUser extends KiiACLSubject {
     */
   def changeEmail(newEmail: String): js.Promise[KiiUser] = js.native
   def changeEmail(newEmail: String, callbacks: `32`): js.Promise[KiiUser] = js.native
+  
   /**
     * Change phone number of logged in user.
     * If the phone number verification is required by your app configuration,
@@ -123,6 +126,7 @@ trait KiiUser extends KiiACLSubject {
     */
   def changePhone(newPhoneNumber: String): js.Promise[KiiUser] = js.native
   def changePhone(newPhoneNumber: String, callbacks: `32`): js.Promise[KiiUser] = js.native
+  
   /**
     * Delete the user from the server
     *
@@ -165,6 +169,7 @@ trait KiiUser extends KiiACLSubject {
     */
   def delete(): js.Promise[KiiUser] = js.native
   def delete(callbacks: `32`): js.Promise[KiiUser] = js.native
+  
   /**
     * Return true if the user is disabled, false when enabled and undefined
     * when user is not refreshed.
@@ -172,6 +177,7 @@ trait KiiUser extends KiiACLSubject {
     * correct status.
     */
   def disabled(): Unit = js.native
+  
   /**
     * Creates a reference to a encrypted bucket for this user
     *
@@ -186,6 +192,7 @@ trait KiiUser extends KiiACLSubject {
     *     var bucket = user.encryptedBucketWithName("myBucket");
     */
   def encryptedBucketWithName(bucketName: String): KiiBucket = js.native
+  
   /**
     * Gets the value associated with the given key
     *
@@ -198,11 +205,13 @@ trait KiiUser extends KiiACLSubject {
     *     var score = user.get("score");
     */
   def get[T](key: String): T = js.native
+  
   /**
     * Get the access token for the user - only available if the user is currently logged in
     *
     */
   def getAccessToken(): String = js.native
+  
   /**
     * Return the access token and token expire time in a object.
     * <table border=4 width=250>
@@ -226,26 +235,31 @@ trait KiiUser extends KiiACLSubject {
     * @return Access token and token expires in a object.
     */
   def getAccessTokenObject(): KiiAccessTokenObject = js.native
+  
   /**
     * Get the country code associated with this user
     *
     */
   def getCountry(): String = js.native
+  
   /**
     * Get the server's creation date of this user
     *
     */
   def getCreated(): String = js.native
+  
   /**
     * Get the display name associated with this user
     *
     */
   def getDisplayName(): String = js.native
+  
   /**
     * Get the email address associated with this user
     *
     */
   def getEmailAddress(): String = js.native
+  
   /**
     * Get the status of the user's email verification. This field is assigned by the server
     *
@@ -254,12 +268,14 @@ trait KiiUser extends KiiACLSubject {
     *     Should be used by current login user to check the email verification status.
     */
   def getEmailVerified(): Boolean = js.native
+  
   /**
     * Get the ID of the current KiiUser instance.
     *
     * @return Id of the user or null if the user has not saved to cloud.
     */
   def getID(): String = js.native
+  
   /**
     * Get the social accounts that is linked to this user.
     * Refresh the user by {@link KiiUser#refresh()} prior call the method.
@@ -268,11 +284,13 @@ trait KiiUser extends KiiACLSubject {
     * @return Social network name as key and account info as value.
     */
   def getLinkedSocialAccounts(): StringDictionary[KiiSocialAccountInfo] = js.native
+  
   /**
     * Get the locale associated with this user
     *
     */
   def getLocale(): String = js.native
+  
   /**
     *
     *
@@ -280,6 +298,7 @@ trait KiiUser extends KiiACLSubject {
     *
     */
   def getModified(): String = js.native
+  
   /**
     * Get the email of this user that has not been verified.
     * When the user's email has been changed and email verification is required in you app configuration,
@@ -291,6 +310,7 @@ trait KiiUser extends KiiACLSubject {
     *     response or undefined when no refresh operation has been done before.
     */
   def getPendingEmailAddress(): String = js.native
+  
   /**
     * Get the phone of this user that has not been verified.
     * When the user's phone has been changed and phone verification is required in you app configuration,
@@ -302,11 +322,13 @@ trait KiiUser extends KiiACLSubject {
     *     response or undefined when no refresh operation has been done before.
     */
   def getPendingPhoneNumber(): String = js.native
+  
   /**
     * Get the phone number associated with this user
     *
     */
   def getPhoneNumber(): String = js.native
+  
   /**
     * Get the status of the user's phone number verification. This field is assigned by the server
     *
@@ -315,6 +337,7 @@ trait KiiUser extends KiiACLSubject {
     *     Should be used by current login user to check the phone verification status.
     */
   def getPhoneVerified(): Boolean = js.native
+  
   /**
     *
     *
@@ -323,11 +346,13 @@ trait KiiUser extends KiiACLSubject {
     *
     */
   def getUUID(): String = js.native
+  
   /**
     * Get the username of the given user
     *
     */
   def getUsername(): String = js.native
+  
   /**
     * Get whether or not the user is pseudo user.
     * If this method is not called for current login user, calling
@@ -336,6 +361,7 @@ trait KiiUser extends KiiACLSubject {
     * @return whether this user is pseudo user or not.
     */
   def isPseudoUser(): Boolean = js.native
+  
   /**
     * Gets a list of topics in this user scope
     *
@@ -406,6 +432,7 @@ trait KiiUser extends KiiACLSubject {
   def listTopics(callbacks: js.UndefOr[scala.Nothing], paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   def listTopics(callbacks: `4`): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   def listTopics(callbacks: `4`, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  
   /**
     * Retrieve a list of groups which the user is a member of
     *
@@ -461,6 +488,7 @@ trait KiiUser extends KiiACLSubject {
     */
   def memberOfGroups(): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
   def memberOfGroups(callbacks: `33`): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
+  
   /**
     * Get a specifically formatted string referencing the user
     *
@@ -473,6 +501,7 @@ trait KiiUser extends KiiACLSubject {
     *     var uri = user.objectURI();
     */
   def objectURI(): String = js.native
+  
   /**
     * Retrieve the groups owned by this user. Group in the groupList
     * does not contain all the property of group. To get all the
@@ -530,18 +559,21 @@ trait KiiUser extends KiiACLSubject {
     */
   def ownerOfGroups(): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
   def ownerOfGroups(callbacks: `33`): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
+  
   /**
     * Instantiate push installation for this user.
     *
     * @return push installation object.
     */
   def pushInstallation(): KiiPushInstallation = js.native
+  
   /**
     * Instantiate push subscription for this user.
     *
     * @return push subscription object.
     */
   def pushSubscription(): KiiPushSubscription = js.native
+  
   /**
     * Sets credentials data and custom fields to pseudo user.
     *
@@ -642,6 +674,7 @@ trait KiiUser extends KiiACLSubject {
     userFields: js.Any,
     removeFields: js.Array[String]
   ): js.Promise[KiiUser] = js.native
+  
   /**
     * Updates the local user's data with the user data on the server
     *
@@ -686,6 +719,7 @@ trait KiiUser extends KiiACLSubject {
     */
   def refresh(): js.Promise[KiiUser] = js.native
   def refresh(callbacks: `32`): js.Promise[KiiUser] = js.native
+  
   /**
     * Registers a user with the server
     *
@@ -730,6 +764,7 @@ trait KiiUser extends KiiACLSubject {
     */
   def register(): js.Promise[KiiUser] = js.native
   def register(callbacks: `32`): js.Promise[KiiUser] = js.native
+  
   /**
     * Resend the email verification code to the user
     *
@@ -774,6 +809,7 @@ trait KiiUser extends KiiACLSubject {
     */
   def resendEmailVerification(): js.Promise[KiiUser] = js.native
   def resendEmailVerification(callbacks: `32`): js.Promise[KiiUser] = js.native
+  
   /**
     * Resend the SMS verification code to the user
     *
@@ -818,6 +854,7 @@ trait KiiUser extends KiiACLSubject {
     */
   def resendPhoneNumberVerification(): js.Promise[KiiUser] = js.native
   def resendPhoneNumberVerification(callbacks: `32`): js.Promise[KiiUser] = js.native
+  
   /**
     * Saves the latest user values to the server
     *
@@ -862,6 +899,7 @@ trait KiiUser extends KiiACLSubject {
     */
   def save(): js.Promise[KiiUser] = js.native
   def save(callbacks: `32`): js.Promise[KiiUser] = js.native
+  
   /**
     * Sets a key/value pair to a KiiUser
     *
@@ -875,6 +913,7 @@ trait KiiUser extends KiiACLSubject {
     *     user.set("score", 4298);
     */
   def set(key: String, value: js.Any): Unit = js.native
+  
   /**
     * Set the country code associated with this user
     *
@@ -883,6 +922,7 @@ trait KiiUser extends KiiACLSubject {
     * @throws If the country code is not a valid format
     */
   def setCountry(value: String): Unit = js.native
+  
   /**
     * Set the display name associated with this user. Cannot be used for logging a user in; is non-unique
     *
@@ -891,6 +931,7 @@ trait KiiUser extends KiiACLSubject {
     * @throws If the displayName is not a valid format
     */
   def setDisplayName(value: String): Unit = js.native
+  
   /**
     * Set the locale associated with this user
     * The locale argument must be BCP 47 language tag.
@@ -902,6 +943,7 @@ trait KiiUser extends KiiACLSubject {
     * @param value The locale to set.
     */
   def setLocale(value: String): Unit = js.native
+  
   /**
     * Instantiate topic belongs to this user.
     *
@@ -910,6 +952,7 @@ trait KiiUser extends KiiACLSubject {
     * @return topic instance.
     */
   def topicWithName(topicName: String): KiiTopic = js.native
+  
   /**
     * Update user attributes.
     *
@@ -992,6 +1035,7 @@ trait KiiUser extends KiiACLSubject {
   ): js.Promise[KiiUser] = js.native
   def update(identityData: identityData, callbacks: `32`, userFields: js.Any): js.Promise[KiiUser] = js.native
   def update(identityData: identityData, callbacks: `32`, userFields: js.Any, removeFields: js.Array[String]): js.Promise[KiiUser] = js.native
+  
   /**
     * Update a user's password on the server
     *
@@ -1038,6 +1082,7 @@ trait KiiUser extends KiiACLSubject {
     */
   def updatePassword(fromPassword: String, toPassword: String): js.Promise[KiiUser] = js.native
   def updatePassword(fromPassword: String, toPassword: String, callbacks: `32`): js.Promise[KiiUser] = js.native
+  
   /**
     * Verify the current user's phone number
     * <br><br>This method is used to verify the phone number of user currently
@@ -1095,4 +1140,3 @@ trait KiiUser extends KiiACLSubject {
   def verifyPhoneNumber(verificationCode: String): js.Promise[KiiUser] = js.native
   def verifyPhoneNumber(verificationCode: String, callbacks: `32`): js.Promise[KiiUser] = js.native
 }
-

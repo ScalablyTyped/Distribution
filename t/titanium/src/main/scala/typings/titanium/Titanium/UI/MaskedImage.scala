@@ -18,29 +18,14 @@ import typings.titanium.titaniumStrings.touchstart
 import typings.titanium.titaniumStrings.twofingertap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A control that displays an image composited with a background image or color.
   */
 @js.native
 trait MaskedImage extends View {
-  /**
-    * Image drawn as the Foreground image.
-    */
-  var image: String = js.native
-  /**
-    * Image drawn as the background image.
-    */
-  var mask: String = js.native
-  /**
-    * Blend mode to use to combine layers.
-    */
-  var mode: Double = js.native
-  /**
-    * Color to combine with the image, as a color name or hex triplet.
-    */
-  var tint: String = js.native
+  
   @JSName("fireEvent")
   def fireEvent_click(name: click, event: MaskedImageClickEvent): Unit = js.native
   @JSName("fireEvent")
@@ -73,45 +58,73 @@ trait MaskedImage extends View {
   def fireEvent_touchstart(name: touchstart, event: MaskedImageTouchstartEvent): Unit = js.native
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: MaskedImageTwofingertapEvent): Unit = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.MaskedImage.image> property.
     * @deprecated Access <Titanium.UI.MaskedImage.image> instead.
     */
   def getImage(): String = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.MaskedImage.mask> property.
     * @deprecated Access <Titanium.UI.MaskedImage.mask> instead.
     */
   def getMask(): String = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.MaskedImage.mode> property.
     * @deprecated Access <Titanium.UI.MaskedImage.mode> instead.
     */
   def getMode(): Double = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.MaskedImage.tint> property.
     * @deprecated Access <Titanium.UI.MaskedImage.tint> instead.
     */
-  def getTint(): String = js.native
+  def getTint(): String | Color = js.native
+  
+  /**
+    * Image drawn as the Foreground image.
+    */
+  var image: String = js.native
+  
+  /**
+    * Image drawn as the background image.
+    */
+  var mask: String = js.native
+  
+  /**
+    * Blend mode to use to combine layers.
+    */
+  var mode: Double = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.MaskedImage.image> property.
     * @deprecated Set the value using <Titanium.UI.MaskedImage.image> instead.
     */
   def setImage(image: String): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.MaskedImage.mask> property.
     * @deprecated Set the value using <Titanium.UI.MaskedImage.mask> instead.
     */
   def setMask(mask: String): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.MaskedImage.mode> property.
     * @deprecated Set the value using <Titanium.UI.MaskedImage.mode> instead.
     */
   def setMode(mode: Double): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.MaskedImage.tint> property.
     * @deprecated Set the value using <Titanium.UI.MaskedImage.tint> instead.
     */
   def setTint(tint: String): Unit = js.native
+  def setTint(tint: Color): Unit = js.native
+  
+  /**
+    * Color to combine with the image, as a color name or hex triplet.
+    */
+  var tint: String | Color = js.native
 }
-

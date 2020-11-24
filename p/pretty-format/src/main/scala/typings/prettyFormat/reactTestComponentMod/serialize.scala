@@ -6,7 +6,7 @@ import typings.prettyFormat.typesMod.Printer
 import typings.prettyFormat.typesMod.Refs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pretty-format/build/plugins/ReactTestComponent", "serialize")
 @js.native
@@ -22,4 +22,3 @@ object serialize
         String
       ]
     ]
-

@@ -10,9 +10,9 @@ Generate hashes from javascript objects in node and the browser.
 | ------------------ | :-------------: |
 | Full name          | object-hash |
 | Keywords           | object, hash, sha1, md5 |
-| # releases         | 5 |
-| # dependents       | 728 |
-| # downloads        | 197786729 |
+| # releases         | 6 |
+| # dependents       | 945 |
+| # downloads        | 258614156 |
 | # stars            | 25 |
 
 ## Links

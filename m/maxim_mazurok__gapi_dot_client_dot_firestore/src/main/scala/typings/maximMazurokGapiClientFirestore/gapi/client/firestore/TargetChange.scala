@@ -1,0 +1,85 @@
+package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait TargetChange extends js.Object {
+  
+  /** The error that resulted in this change, if applicable. */
+  var cause: js.UndefOr[Status] = js.native
+  
+  /**
+    * The consistent `read_time` for the given `target_ids` (omitted when the target_ids are not at a consistent snapshot). The stream is guaranteed to send a `read_time` with
+    * `target_ids` empty whenever the entire stream reaches a new consistent snapshot. ADD, CURRENT, and RESET messages are guaranteed to (eventually) result in a new consistent snapshot
+    * (while NO_CHANGE and REMOVE messages are not). For a given stream, `read_time` is guaranteed to be monotonically increasing.
+    */
+  var readTime: js.UndefOr[String] = js.native
+  
+  /** A token that can be used to resume the stream for the given `target_ids`, or all targets if `target_ids` is empty. Not set on every target change. */
+  var resumeToken: js.UndefOr[String] = js.native
+  
+  /** The type of change that occurred. */
+  var targetChangeType: js.UndefOr[String] = js.native
+  
+  /** The target IDs of targets that have changed. If empty, the change applies to all targets. The order of the target IDs is not defined. */
+  var targetIds: js.UndefOr[js.Array[Double]] = js.native
+}
+object TargetChange {
+  
+  @scala.inline
+  def apply(): TargetChange = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[TargetChange]
+  }
+  
+  @scala.inline
+  implicit class TargetChangeOps[Self <: TargetChange] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setCause(value: Status): Self = this.set("cause", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCause: Self = this.set("cause", js.undefined)
+    
+    @scala.inline
+    def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteReadTime: Self = this.set("readTime", js.undefined)
+    
+    @scala.inline
+    def setResumeToken(value: String): Self = this.set("resumeToken", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteResumeToken: Self = this.set("resumeToken", js.undefined)
+    
+    @scala.inline
+    def setTargetChangeType(value: String): Self = this.set("targetChangeType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTargetChangeType: Self = this.set("targetChangeType", js.undefined)
+    
+    @scala.inline
+    def setTargetIdsVarargs(value: Double*): Self = this.set("targetIds", js.Array(value :_*))
+    
+    @scala.inline
+    def setTargetIds(value: js.Array[Double]): Self = this.set("targetIds", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTargetIds: Self = this.set("targetIds", js.undefined)
+  }
+}

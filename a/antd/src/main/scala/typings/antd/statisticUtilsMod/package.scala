@@ -2,9 +2,10 @@ package typings.antd
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object statisticUtilsMod {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.antd.antdBooleans.`false`
     - typings.antd.antdStrings.number
@@ -19,6 +20,8 @@ package object statisticUtilsMod {
     /* config */ js.UndefOr[typings.antd.statisticUtilsMod.FormatConfig], 
     typings.react.mod.ReactNode
   ])
+  
   type countdownValueType = typings.antd.statisticUtilsMod.valueType | java.lang.String
+  
   type valueType = scala.Double | java.lang.String
 }

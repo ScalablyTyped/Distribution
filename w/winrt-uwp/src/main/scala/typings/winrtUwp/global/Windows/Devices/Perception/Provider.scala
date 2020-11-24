@@ -12,16 +12,30 @@ import typings.winrtUwp.Windows.Graphics.Imaging.BitmapAlphaMode
 import typings.winrtUwp.Windows.Graphics.Imaging.BitmapPixelFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains types for implementing providers of perception frames. */
 @JSGlobal("Windows.Devices.Perception.Provider")
 @js.native
 object Provider extends js.Object {
+  
   /** A string used to identify the type classification of a frame. */
   @js.native
   abstract class KnownPerceptionFrameKind ()
     extends typings.winrtUwp.Windows.Devices.Perception.Provider.KnownPerceptionFrameKind
+  /* static members */
+  @js.native
+  object KnownPerceptionFrameKind extends js.Object {
+    
+    /** Gets the string representing the Color FrameKind of a PerceptionFrameProviderInfo. */
+    var color: String = js.native
+    
+    /** Gets the string representing the Depth FrameKind of a PerceptionFrameProviderInfo. */
+    var depth: String = js.native
+    
+    /** Gets the string representing the Infrared FrameKind of a PerceptionFrameProviderInfo. */
+    var infrared: String = js.native
+  }
   
   /** A group of IPerceptionFrameProvider identifiers to be controlled together. */
   @js.native
@@ -90,6 +104,107 @@ object Provider extends js.Object {
   @js.native
   abstract class PerceptionFrameProviderManagerService ()
     extends typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService
+  /* static members */
+  @js.native
+  object PerceptionFrameProviderManagerService extends js.Object {
+    
+    /**
+      * Sends the PerceptionFrame to the service to tell any apps listening for frames for the provided provider. Frames aren't expected to be published before IPerceptionFrameProvider::Start() is called or after IPerceptionFrameProvider::Stop() is called.
+      * @param provider The IPerceptionFrameProvider which produced the frame.
+      * @param frame The PerceptionFrame that was produced and should be sent to apps.
+      */
+    def publishFrameForProvider(
+      provider: IPerceptionFrameProvider,
+      frame: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrame
+    ): Unit = js.native
+    
+    /**
+      * Registers a PerceptionControlGroup associated with the IPerceptionFrameProviderManager.
+      * @param manager The manager that owns the lifetime of the group.
+      * @param controlGroup The group of IPerceptionFrameProvider(s) to control atomically.
+      */
+    def registerControlGroup(
+      manager: IPerceptionFrameProviderManager,
+      controlGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionControlGroup
+    ): Unit = js.native
+    
+    /**
+      * Registers a PerceptionCorrelationGroup associated with the IPerceptionFrameProviderManager.
+      * @param manager The manager that owns the lifetime of the group.
+      * @param correlationGroup The group of PerceptionCorrelations(s) to control atomically.
+      */
+    def registerCorrelationGroup(
+      manager: IPerceptionFrameProviderManager,
+      correlationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelationGroup
+    ): Unit = js.native
+    
+    /**
+      * Registers a PerceptionFaceAuthenticationGroup associated with the given IPerceptionProviderManager.
+      * @param manager The manager that owns the lifetime of the group.
+      * @param faceAuthenticationGroup The group of IPerceptionFrameProvider(s) to atomically control.
+      */
+    def registerFaceAuthenticationGroup(
+      manager: IPerceptionFrameProviderManager,
+      faceAuthenticationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFaceAuthenticationGroup
+    ): Unit = js.native
+    
+    /**
+      * Registers the PerceptionFrameProviderInfo in association with the given IPerceptionFrameProviderManager.
+      * @param manager The manager which can provide the IPerceptionFrameProvider associated with the info.
+      * @param frameProviderInfo The PerceptionFrameProviderInfo which identifies the available IPerceptionFrameProvider.
+      */
+    def registerFrameProviderInfo(
+      manager: IPerceptionFrameProviderManager,
+      frameProviderInfo: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrameProviderInfo
+    ): Unit = js.native
+    
+    /**
+      * Removes the registration of a previously registered PerceptionControlGroup.
+      * @param manager The manager that owns the lifetime of the group.
+      * @param controlGroup The group of IPerceptionFrameProvider(s) to prevent from being controlled.
+      */
+    def unregisterControlGroup(
+      manager: IPerceptionFrameProviderManager,
+      controlGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionControlGroup
+    ): Unit = js.native
+    
+    /**
+      * Unregisters a PerceptionCorrelationGroup associated with the IPerceptionFrameProviderManager.
+      * @param manager The manager that owns the lifetime of the group.
+      * @param correlationGroup The PerceptionCorrelationGroup to unregister.
+      */
+    def unregisterCorrelationGroup(
+      manager: IPerceptionFrameProviderManager,
+      correlationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelationGroup
+    ): Unit = js.native
+    
+    /**
+      * Unregisters a PerceptionFaceAuthenticationGroup in association with the given IPerceptionProviderManager.
+      * @param manager The manager that owns the lifetime of the group.
+      * @param faceAuthenticationGroup The PerceptionFaceAuthenticationGroup to unregister.
+      */
+    def unregisterFaceAuthenticationGroup(
+      manager: IPerceptionFrameProviderManager,
+      faceAuthenticationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFaceAuthenticationGroup
+    ): Unit = js.native
+    
+    /**
+      * Unregisters the PerceptionFrameProviderInfo in association with the given IPerceptionProviderManager.
+      * @param manager The manager which previously registered this info.
+      * @param frameProviderInfo The PerceptionFrameProviderInfo which identifies the IPerceptionFrameProvider.
+      */
+    def unregisterFrameProviderInfo(
+      manager: IPerceptionFrameProviderManager,
+      frameProviderInfo: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrameProviderInfo
+    ): Unit = js.native
+    
+    /**
+      * Sets whether or not the IPerceptionFrameProvider is available.
+      * @param provider The provider to set availability for.
+      * @param available Whether or not the provider is available.
+      */
+    def updateAvailabilityForProvider(provider: IPerceptionFrameProvider, available: Boolean): Unit = js.native
+  }
   
   /** A request from an app that's in control of this IPerceptionFrameProvider to update a property. */
   @js.native
@@ -114,109 +229,4 @@ object Provider extends js.Object {
       alpha: BitmapAlphaMode
     ) = this()
   }
-  
-  /* static members */
-  @js.native
-  object KnownPerceptionFrameKind extends js.Object {
-    /** Gets the string representing the Color FrameKind of a PerceptionFrameProviderInfo. */
-    var color: String = js.native
-    /** Gets the string representing the Depth FrameKind of a PerceptionFrameProviderInfo. */
-    var depth: String = js.native
-    /** Gets the string representing the Infrared FrameKind of a PerceptionFrameProviderInfo. */
-    var infrared: String = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object PerceptionFrameProviderManagerService extends js.Object {
-    /**
-      * Sends the PerceptionFrame to the service to tell any apps listening for frames for the provided provider. Frames aren't expected to be published before IPerceptionFrameProvider::Start() is called or after IPerceptionFrameProvider::Stop() is called.
-      * @param provider The IPerceptionFrameProvider which produced the frame.
-      * @param frame The PerceptionFrame that was produced and should be sent to apps.
-      */
-    def publishFrameForProvider(
-      provider: IPerceptionFrameProvider,
-      frame: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrame
-    ): Unit = js.native
-    /**
-      * Registers a PerceptionControlGroup associated with the IPerceptionFrameProviderManager.
-      * @param manager The manager that owns the lifetime of the group.
-      * @param controlGroup The group of IPerceptionFrameProvider(s) to control atomically.
-      */
-    def registerControlGroup(
-      manager: IPerceptionFrameProviderManager,
-      controlGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionControlGroup
-    ): Unit = js.native
-    /**
-      * Registers a PerceptionCorrelationGroup associated with the IPerceptionFrameProviderManager.
-      * @param manager The manager that owns the lifetime of the group.
-      * @param correlationGroup The group of PerceptionCorrelations(s) to control atomically.
-      */
-    def registerCorrelationGroup(
-      manager: IPerceptionFrameProviderManager,
-      correlationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelationGroup
-    ): Unit = js.native
-    /**
-      * Registers a PerceptionFaceAuthenticationGroup associated with the given IPerceptionProviderManager.
-      * @param manager The manager that owns the lifetime of the group.
-      * @param faceAuthenticationGroup The group of IPerceptionFrameProvider(s) to atomically control.
-      */
-    def registerFaceAuthenticationGroup(
-      manager: IPerceptionFrameProviderManager,
-      faceAuthenticationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFaceAuthenticationGroup
-    ): Unit = js.native
-    /**
-      * Registers the PerceptionFrameProviderInfo in association with the given IPerceptionFrameProviderManager.
-      * @param manager The manager which can provide the IPerceptionFrameProvider associated with the info.
-      * @param frameProviderInfo The PerceptionFrameProviderInfo which identifies the available IPerceptionFrameProvider.
-      */
-    def registerFrameProviderInfo(
-      manager: IPerceptionFrameProviderManager,
-      frameProviderInfo: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrameProviderInfo
-    ): Unit = js.native
-    /**
-      * Removes the registration of a previously registered PerceptionControlGroup.
-      * @param manager The manager that owns the lifetime of the group.
-      * @param controlGroup The group of IPerceptionFrameProvider(s) to prevent from being controlled.
-      */
-    def unregisterControlGroup(
-      manager: IPerceptionFrameProviderManager,
-      controlGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionControlGroup
-    ): Unit = js.native
-    /**
-      * Unregisters a PerceptionCorrelationGroup associated with the IPerceptionFrameProviderManager.
-      * @param manager The manager that owns the lifetime of the group.
-      * @param correlationGroup The PerceptionCorrelationGroup to unregister.
-      */
-    def unregisterCorrelationGroup(
-      manager: IPerceptionFrameProviderManager,
-      correlationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelationGroup
-    ): Unit = js.native
-    /**
-      * Unregisters a PerceptionFaceAuthenticationGroup in association with the given IPerceptionProviderManager.
-      * @param manager The manager that owns the lifetime of the group.
-      * @param faceAuthenticationGroup The PerceptionFaceAuthenticationGroup to unregister.
-      */
-    def unregisterFaceAuthenticationGroup(
-      manager: IPerceptionFrameProviderManager,
-      faceAuthenticationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFaceAuthenticationGroup
-    ): Unit = js.native
-    /**
-      * Unregisters the PerceptionFrameProviderInfo in association with the given IPerceptionProviderManager.
-      * @param manager The manager which previously registered this info.
-      * @param frameProviderInfo The PerceptionFrameProviderInfo which identifies the IPerceptionFrameProvider.
-      */
-    def unregisterFrameProviderInfo(
-      manager: IPerceptionFrameProviderManager,
-      frameProviderInfo: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrameProviderInfo
-    ): Unit = js.native
-    /**
-      * Sets whether or not the IPerceptionFrameProvider is available.
-      * @param provider The provider to set availability for.
-      * @param available Whether or not the provider is available.
-      */
-    def updateAvailabilityForProvider(provider: IPerceptionFrameProvider, available: Boolean): Unit = js.native
-  }
-  
 }
-

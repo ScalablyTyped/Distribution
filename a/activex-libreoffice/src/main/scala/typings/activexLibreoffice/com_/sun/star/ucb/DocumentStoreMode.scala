@@ -4,7 +4,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * These are the possible values for the property "DocumentStoreMode".
@@ -16,13 +16,13 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
 trait DocumentStoreMode extends js.Object
-
 object DocumentStoreMode {
+  
   /** Document contents are stored locally. */
   @scala.inline
   def LOCAL: `1` = 1.asInstanceOf[`1`]
+  
   /** Document contents are not stored locally. */
   @scala.inline
   def REMOTE: `0` = 0.asInstanceOf[`0`]
 }
-

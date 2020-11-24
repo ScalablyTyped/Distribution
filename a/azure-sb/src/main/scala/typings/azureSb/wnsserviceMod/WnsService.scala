@@ -3,11 +3,11 @@ package typings.azureSb.wnsserviceMod
 import typings.azureSb.mod.Azure.ServiceBus.ListNotificationHubsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WnsService extends js.Object {
-  var notificationHubService: typings.azureSb.notificationhubserviceMod.^ = js.native
+  
   def createNativeRegistration(
     channel: String,
     tags: String,
@@ -30,6 +30,7 @@ trait WnsService extends js.Object {
     options: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def createOrUpdateNativeRegistration(
     registrationId: String,
     channel: String,
@@ -56,6 +57,7 @@ trait WnsService extends js.Object {
     options: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def listRegistrationsByChannel(
     channel: String,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
@@ -65,6 +67,9 @@ trait WnsService extends js.Object {
     options: ListNotificationHubsOptions,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
+  var notificationHubService: typings.azureSb.notificationhubserviceMod.^ = js.native
+  
   def send(tags: String, payload: String, `type`: types): Unit = js.native
   def send(
     tags: String,
@@ -93,6 +98,7 @@ trait WnsService extends js.Object {
     options: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendBadge(tags: js.Array[badges], value: String): Unit = js.native
   def sendBadge(
     tags: js.Array[badges],
@@ -145,6 +151,7 @@ trait WnsService extends js.Object {
     options: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendRaw(tags: String, payload: js.Any): Unit = js.native
   def sendRaw(
     tags: String,
@@ -171,6 +178,7 @@ trait WnsService extends js.Object {
     options: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileSquareBlock(
     tags: String,
     payload: js.Any,
@@ -207,6 +215,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileSquareImage(
     tags: String,
     payload: js.Any,
@@ -243,6 +252,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileSquarePeekImageAndText01(
     tags: String,
     payload: js.Any,
@@ -279,6 +289,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileSquarePeekImageAndText02(
     tags: String,
     payload: js.Any,
@@ -315,6 +326,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileSquarePeekImageAndText03(
     tags: String,
     payload: js.Any,
@@ -351,6 +363,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileSquarePeekImageAndText04(
     tags: String,
     payload: js.Any,
@@ -387,6 +400,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileSquareText01(
     tags: String,
     payload: js.Any,
@@ -423,6 +437,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileSquareText02(
     tags: String,
     payload: js.Any,
@@ -459,6 +474,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileSquareText03(
     tags: String,
     payload: js.Any,
@@ -495,6 +511,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileSquareText04(
     tags: String,
     payload: js.Any,
@@ -531,6 +548,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideBlockAndText01(
     tags: String,
     payload: js.Any,
@@ -567,6 +585,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideBlockAndText02(
     tags: String,
     payload: js.Any,
@@ -603,6 +622,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideImage(
     tags: String,
     payload: js.Any,
@@ -639,6 +659,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideImageAndText01(
     tags: String,
     payload: js.Any,
@@ -675,6 +696,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideImageAndText02(
     tags: String,
     payload: js.Any,
@@ -711,6 +733,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideImageCollection(
     tags: String,
     payload: js.Any,
@@ -747,6 +770,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWidePeekImage01(
     tags: String,
     payload: js.Any,
@@ -783,6 +807,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWidePeekImage02(
     tags: String,
     payload: js.Any,
@@ -819,6 +844,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWidePeekImage03(
     tags: String,
     payload: js.Any,
@@ -855,6 +881,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWidePeekImage04(
     tags: String,
     payload: js.Any,
@@ -891,6 +918,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWidePeekImage05(
     tags: String,
     payload: js.Any,
@@ -927,6 +955,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWidePeekImage06(
     tags: String,
     payload: js.Any,
@@ -963,6 +992,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWidePeekImageAndText01(
     tags: String,
     payload: js.Any,
@@ -999,6 +1029,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWidePeekImageAndText02(
     tags: String,
     payload: js.Any,
@@ -1035,6 +1066,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWidePeekImageCollection01(
     tags: String,
     payload: js.Any,
@@ -1071,6 +1103,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWidePeekImageCollection02(
     tags: String,
     payload: js.Any,
@@ -1107,6 +1140,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWidePeekImageCollection03(
     tags: String,
     payload: js.Any,
@@ -1143,6 +1177,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWidePeekImageCollection04(
     tags: String,
     payload: js.Any,
@@ -1179,6 +1214,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWidePeekImageCollection05(
     tags: String,
     payload: js.Any,
@@ -1215,6 +1251,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWidePeekImageCollection06(
     tags: String,
     payload: js.Any,
@@ -1251,6 +1288,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideSmallImageAndText01(
     tags: String,
     payload: js.Any,
@@ -1287,6 +1325,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideSmallImageAndText02(
     tags: String,
     payload: js.Any,
@@ -1323,6 +1362,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideSmallImageAndText03(
     tags: String,
     payload: js.Any,
@@ -1359,6 +1399,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideSmallImageAndText04(
     tags: String,
     payload: js.Any,
@@ -1395,6 +1436,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideSmallImageAndText05(
     tags: String,
     payload: js.Any,
@@ -1431,6 +1473,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideText01(
     tags: String,
     payload: js.Any,
@@ -1467,6 +1510,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideText02(
     tags: String,
     payload: js.Any,
@@ -1503,6 +1547,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideText03(
     tags: String,
     payload: js.Any,
@@ -1539,6 +1584,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideText04(
     tags: String,
     payload: js.Any,
@@ -1575,6 +1621,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideText05(
     tags: String,
     payload: js.Any,
@@ -1611,6 +1658,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideText06(
     tags: String,
     payload: js.Any,
@@ -1647,6 +1695,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideText07(
     tags: String,
     payload: js.Any,
@@ -1683,6 +1732,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideText08(
     tags: String,
     payload: js.Any,
@@ -1719,6 +1769,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideText09(
     tags: String,
     payload: js.Any,
@@ -1755,6 +1806,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideText10(
     tags: String,
     payload: js.Any,
@@ -1791,6 +1843,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendTileWideText11(
     tags: String,
     payload: js.Any,
@@ -1827,6 +1880,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendToastImageAndText01(
     tags: String,
     payload: js.Any,
@@ -1863,6 +1917,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendToastImageAndText02(
     tags: String,
     payload: js.Any,
@@ -1899,6 +1954,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendToastImageAndText03(
     tags: String,
     payload: js.Any,
@@ -1935,6 +1991,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendToastImageAndText04(
     tags: String,
     payload: js.Any,
@@ -1971,6 +2028,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendToastText01(
     tags: String,
     payload: js.Any,
@@ -2007,6 +2065,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendToastText02(
     tags: String,
     payload: js.Any,
@@ -2043,6 +2102,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendToastText03(
     tags: String,
     payload: js.Any,
@@ -2079,6 +2139,7 @@ trait WnsService extends js.Object {
     optionsOrCallback: Options,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
+  
   def sendToastText04(
     tags: String,
     payload: js.Any,
@@ -2116,4 +2177,3 @@ trait WnsService extends js.Object {
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
 }
-

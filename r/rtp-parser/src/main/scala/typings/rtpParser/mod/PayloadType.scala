@@ -2,7 +2,7 @@ package typings.rtpParser.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.rtpParser.rtpParserStrings.`0`
@@ -135,4 +135,3 @@ import scala.scalajs.js.annotation._
   - typings.rtpParser.rtpParserStrings.`127`
 */
 trait PayloadType extends js.Object
-

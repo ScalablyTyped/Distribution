@@ -2,11 +2,10 @@ package typings.officeJs.Visio
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait OverlayHorizontalAlignment extends js.Object
-
 /**
   *
   * Represents the Horizontal Alignment of the Overlay relative to the shape.
@@ -16,6 +15,7 @@ sealed trait OverlayHorizontalAlignment extends js.Object
 @JSGlobal("Visio.OverlayHorizontalAlignment")
 @js.native
 object OverlayHorizontalAlignment extends js.Object {
+  
   /**
     *
     * center
@@ -39,6 +39,4 @@ object OverlayHorizontalAlignment extends js.Object {
     */
   @js.native
   sealed trait right extends OverlayHorizontalAlignment
-  
 }
-

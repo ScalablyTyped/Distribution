@@ -6,15 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicebroker/v1beta1", "servicebroker_v1beta1.Resource$Projects$Brokers")
 @js.native
 class ResourceProjectsBrokers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var instances: ResourceProjectsBrokersInstances = js.native
-  var v2: ResourceProjectsBrokersV2 = js.native
+  
   /**
     * servicebroker.projects.brokers.create
     * @desc CreateBroker creates a Broker.
@@ -47,6 +47,7 @@ class ResourceProjectsBrokers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1Broker]
   ): Unit = js.native
+  
   /**
     * servicebroker.projects.brokers.delete
     * @desc DeleteBroker deletes a Broker.
@@ -78,6 +79,9 @@ class ResourceProjectsBrokers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
+  var instances: ResourceProjectsBrokersInstances = js.native
+  
   /**
     * servicebroker.projects.brokers.list
     * @desc ListBrokers lists brokers.
@@ -111,5 +115,6 @@ class ResourceProjectsBrokers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse]
   ): Unit = js.native
+  
+  var v2: ResourceProjectsBrokersV2 = js.native
 }
-

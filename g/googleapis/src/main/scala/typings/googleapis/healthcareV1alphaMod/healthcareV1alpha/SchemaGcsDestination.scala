@@ -2,13 +2,14 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Google Cloud Storage location to which the output should be written.
   */
 @js.native
 trait SchemaGcsDestination extends js.Object {
+  
   /**
     * MIME types supported by DICOM spec. Each file will be written in the
     * following format:
@@ -21,6 +22,7 @@ trait SchemaGcsDestination extends js.Object {
     * instances will be exported in their original DICOM format.
     */
   var mimeType: js.UndefOr[String] = js.native
+  
   /**
     * URI for a Google Cloud Storage directory to which result files should be
     * written (e.g., `gs://bucket-id/path/to/destination/dir`). If there is no
@@ -30,33 +32,39 @@ trait SchemaGcsDestination extends js.Object {
     */
   var uriPrefix: js.UndefOr[String] = js.native
 }
-
 object SchemaGcsDestination {
+  
   @scala.inline
   def apply(): SchemaGcsDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGcsDestination]
   }
+  
   @scala.inline
   implicit class SchemaGcsDestinationOps[Self <: SchemaGcsDestination] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    
     @scala.inline
     def setUriPrefix(value: String): Self = this.set("uriPrefix", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUriPrefix: Self = this.set("uriPrefix", js.undefined)
   }
-  
 }
-

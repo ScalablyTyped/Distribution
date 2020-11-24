@@ -185,63 +185,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojLegendItem extends JetElement[ojLegendItemSettableProperties] {
-  var borderColor: js.UndefOr[String] = js.native
-  var categories: js.UndefOr[js.Array[String]] = js.native
-  var categoryVisibility: js.UndefOr[hidden | visible] = js.native
-  var color: js.UndefOr[String] = js.native
-  var drilling: js.UndefOr[on | off | inherit] = js.native
-  var lineStyle: js.UndefOr[dotted | dashed | solid] = js.native
-  var lineWidth: js.UndefOr[Double] = js.native
-  var markerColor: js.UndefOr[String] = js.native
-  var markerShape: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String = js.native
-  var markerSvgClassName: js.UndefOr[String] = js.native
-  var markerSvgStyle: js.UndefOr[js.Object] = js.native
-  var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Array[String]]], _]) | Null = js.native
-  var onCategoryVisibilityChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[hidden | visible]], _]) | Null = js.native
-  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[on | off | inherit]], _]) | Null = js.native
-  var onLineStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[dotted | dashed | solid]], _]) | Null = js.native
-  var onLineWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onMarkerColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onMarkerShapeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
-    ], 
-    _
-  ]) | Null = js.native
-  var onMarkerSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onMarkerSvgStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
-  var onPatternChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      js.UndefOr[
-        smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
-      ]
-    ], 
-    _
-  ]) | Null = js.native
-  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onSourceChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
-  var onSvgStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
-  var onSymbolTypeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[js.UndefOr[line | lineWithMarker | image | marker]], 
-    _
-  ]) | Null = js.native
-  var onTextChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var pattern: js.UndefOr[
-    smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
-  ] = js.native
-  var shortDesc: js.UndefOr[String] = js.native
-  var source: js.UndefOr[String] = js.native
-  var svgClassName: js.UndefOr[String] = js.native
-  var svgStyle: js.UndefOr[js.Object] = js.native
-  var symbolType: js.UndefOr[line | lineWithMarker | image | marker] = js.native
-  var text: String = js.native
+  
   def addEventListener(
     `type`: categoryVisibilityChanged,
     listener: js.ThisFunction1[
@@ -1271,6 +1219,17 @@ trait ojLegendItem extends JetElement[ojLegendItemSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var borderColor: js.UndefOr[String] = js.native
+  
+  var categories: js.UndefOr[js.Array[String]] = js.native
+  
+  var categoryVisibility: js.UndefOr[hidden | visible] = js.native
+  
+  var color: js.UndefOr[String] = js.native
+  
+  var drilling: js.UndefOr[on | off | inherit] = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_borderColor(property: borderColor): js.UndefOr[String] = js.native
@@ -1310,7 +1269,76 @@ trait ojLegendItem extends JetElement[ojLegendItemSettableProperties] {
   def getProperty_symbolType(property: symbolType): js.UndefOr[line | lineWithMarker | image | marker] = js.native
   @JSName("getProperty")
   def getProperty_text(property: text): String = js.native
+  
+  var lineStyle: js.UndefOr[dotted | dashed | solid] = js.native
+  
+  var lineWidth: js.UndefOr[Double] = js.native
+  
+  var markerColor: js.UndefOr[String] = js.native
+  
+  var markerShape: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String = js.native
+  
+  var markerSvgClassName: js.UndefOr[String] = js.native
+  
+  var markerSvgStyle: js.UndefOr[js.Object] = js.native
+  
+  var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Array[String]]], _]) | Null = js.native
+  
+  var onCategoryVisibilityChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[hidden | visible]], _]) | Null = js.native
+  
+  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[on | off | inherit]], _]) | Null = js.native
+  
+  var onLineStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[dotted | dashed | solid]], _]) | Null = js.native
+  
+  var onLineWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onMarkerColorChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onMarkerShapeChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onMarkerSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onMarkerSvgStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
+  
+  var onPatternChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      js.UndefOr[
+        smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
+      ]
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onSourceChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
+  
+  var onSvgStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object]], _]) | Null = js.native
+  
+  var onSymbolTypeChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[js.UndefOr[line | lineWithMarker | image | marker]], 
+    _
+  ]) | Null = js.native
+  
+  var onTextChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var pattern: js.UndefOr[
+    smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
+  ] = js.native
+  
   def setProperties(properties: ojLegendItemSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: categoryVisibility, value: hidden): Unit = js.native
   def setProperty(property: categoryVisibility, value: visible): Unit = js.native
   def setProperty(property: drilling, value: inherit): Unit = js.native
@@ -1405,5 +1433,16 @@ trait ojLegendItem extends JetElement[ojLegendItemSettableProperties] {
   def setProperty_symbolType(property: symbolType): Unit = js.native
   @JSName("setProperty")
   def setProperty_text(property: text, value: String): Unit = js.native
+  
+  var shortDesc: js.UndefOr[String] = js.native
+  
+  var source: js.UndefOr[String] = js.native
+  
+  var svgClassName: js.UndefOr[String] = js.native
+  
+  var svgStyle: js.UndefOr[js.Object] = js.native
+  
+  var symbolType: js.UndefOr[line | lineWithMarker | image | marker] = js.native
+  
+  var text: String = js.native
 }
-

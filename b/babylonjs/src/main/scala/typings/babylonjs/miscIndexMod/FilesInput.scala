@@ -1,12 +1,13 @@
 package typings.babylonjs.miscIndexMod
 
 import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.sceneLoaderMod.SceneLoaderProgressEvent
+import typings.babylonjs.sceneLoaderMod.ISceneLoaderProgressEvent
 import typings.babylonjs.sceneMod.Scene
+import typings.babylonjs.typesMod.Nullable
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Misc/index", "FilesInput")
 @js.native
@@ -26,24 +27,25 @@ class FilesInput protected ()
     */
   def this(
     engine: Engine,
-    scene: Scene,
-    sceneLoadedCallback: js.Function2[/* sceneFile */ File, /* scene */ Scene, Unit],
-    progressCallback: js.Function1[/* progress */ SceneLoaderProgressEvent, Unit],
-    additionalRenderLoopLogicCallback: js.Function0[Unit],
-    textureLoadingCallback: js.Function1[/* remaining */ Double, Unit],
-    startingProcessingFilesCallback: js.Function1[/* files */ js.UndefOr[js.Array[File]], Unit],
-    onReloadCallback: js.Function1[/* sceneFile */ File, Unit],
-    errorCallback: js.Function3[/* sceneFile */ File, /* scene */ Scene, /* message */ String, Unit]
+    scene: Nullable[Scene],
+    sceneLoadedCallback: Nullable[js.Function2[/* sceneFile */ File, /* scene */ Scene, Unit]],
+    progressCallback: Nullable[js.Function1[/* progress */ ISceneLoaderProgressEvent, Unit]],
+    additionalRenderLoopLogicCallback: Nullable[js.Function0[Unit]],
+    textureLoadingCallback: Nullable[js.Function1[/* remaining */ Double, Unit]],
+    startingProcessingFilesCallback: Nullable[js.Function1[/* files */ js.UndefOr[js.Array[File]], Unit]],
+    onReloadCallback: Nullable[js.Function1[/* sceneFile */ File, Unit]],
+    errorCallback: Nullable[
+        js.Function3[/* sceneFile */ File, /* scene */ Nullable[Scene], /* message */ String, Unit]
+      ]
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Misc/index", "FilesInput")
 @js.native
 object FilesInput extends js.Object {
+  
   /**
     * List of files ready to be loaded
     */
   def FilesToLoad: org.scalablytyped.runtime.StringDictionary[File] = js.native
 }
-

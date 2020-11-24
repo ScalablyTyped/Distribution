@@ -2,10 +2,11 @@ package typings.imagemapster.mod.global.ImageMapster
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AreaRenderingOptions extends RenderingOptions {
+  
   /**
     * when rendering an area or area group, also render the areas in the
     * other group (or groups) specified
@@ -29,6 +30,7 @@ trait AreaRenderingOptions extends RenderingOptions {
     * hidden, mousing over the menu area itself should have no effect.
     */
   var includeKeys: js.UndefOr[String] = js.native
+  
   /**
     * the area is a mask rather than a highlighted area.
     *
@@ -80,7 +82,9 @@ trait AreaRenderingOptions extends RenderingOptions {
     *
     */
   var isMask: js.UndefOr[Boolean] = js.native
+  
   var key: String = js.native
+  
   /**
     * tool tip data for an area
     *
@@ -93,39 +97,48 @@ trait AreaRenderingOptions extends RenderingOptions {
     */
   var toolTip: js.UndefOr[String] = js.native
 }
-
 object AreaRenderingOptions {
+  
   @scala.inline
   def apply(key: String): AreaRenderingOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaRenderingOptions]
   }
+  
   @scala.inline
   implicit class AreaRenderingOptionsOps[Self <: AreaRenderingOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIncludeKeys(value: String): Self = this.set("includeKeys", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIncludeKeys: Self = this.set("includeKeys", js.undefined)
+    
     @scala.inline
     def setIsMask(value: Boolean): Self = this.set("isMask", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIsMask: Self = this.set("isMask", js.undefined)
+    
     @scala.inline
     def setToolTip(value: String): Self = this.set("toolTip", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteToolTip: Self = this.set("toolTip", js.undefined)
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as a base for classes that are used as arguments for events generated on the client side.
@@ -19,4 +19,3 @@ class ASPxClientFileManagerActionEventArgsBase protected ()
     */
   def this(fullName: String, name: String, isFolder: Boolean) = this()
 }
-

@@ -11,8 +11,8 @@ Launch your command line tool with ease.
 | Full name          | liftoff |
 | Keywords           | command line |
 | # releases         | 3 |
-| # dependents       | 593 |
-| # downloads        | 89005489 |
+| # dependents       | 610 |
+| # downloads        | 102946647 |
 | # stars            | 53 |
 
 ## Links

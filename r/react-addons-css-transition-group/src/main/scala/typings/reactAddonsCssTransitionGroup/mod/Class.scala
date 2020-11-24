@@ -5,7 +5,7 @@ import typings.react.mod.ComponentState
 import typings.reactAddonsCssTransitionGroup.mod.reactAugmentingMod.CSSTransitionGroupProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-addons-css-transition-group", JSImport.Namespace)
 @js.native
@@ -14,4 +14,3 @@ class Class protected ()
   def this(props: CSSTransitionGroupProps) = this()
   def this(props: CSSTransitionGroupProps, context: js.Any) = this()
 }
-

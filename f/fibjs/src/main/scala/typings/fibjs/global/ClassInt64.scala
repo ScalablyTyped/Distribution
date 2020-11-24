@@ -2,7 +2,7 @@ package typings.fibjs.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -53,4 +53,3 @@ class ClassInt64 ()
   def this(hi: Double, lo: Double) = this()
   def this(num: String, base: Double) = this()
 }
-

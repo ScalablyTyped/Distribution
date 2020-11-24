@@ -3,12 +3,11 @@ package typings.sequelize.mod
 import typings.node.Buffer
 import typings.sequelize.anon.Count
 import typings.sequelize.anon.UpsertOptionsreturningfal
-import typings.sequelize.anon.UpsertOptionsreturningfalBenchmark
 import typings.sequelize.anon.UpsertOptionsreturningtru
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Model represents a table in the database. Sometimes you might also see it referred to as model, or simply
@@ -19,6 +18,42 @@ import scala.scalajs.js.annotation._
 trait Model[TInstance, TAttributes, TCreationAttributes]
   extends Hooks[TInstance]
      with Associations {
+  
+  /**
+    * The Instance class
+    */
+  def Instance(): TInstance = js.native
+  
+  def addScope(name: String, scope: js.Function): Unit = js.native
+  def addScope(name: String, scope: js.Function, options: AddScopeOptions): Unit = js.native
+  /**
+    * Add a new scope to the model. This is especially useful for adding scopes with includes, when the model you want to include is not available at the time this model is defined.
+    *
+    * By default this will throw an error if a scope with that name already exists. Pass `override: true` in the options object to silence this error.
+    *
+    * @param {String}          name The name of the scope. Use `defaultScope` to override the default scope
+    * @param {Object|Function} scope
+    * @param {Object}          [options]
+    * @param {Boolean}         [options.override=false]
+    */
+  def addScope(name: String, scope: AnyFindOptions): Unit = js.native
+  def addScope(name: String, scope: AnyFindOptions, options: AddScopeOptions): Unit = js.native
+  
+  /**
+    * Run an aggregation method on the specified field
+    *
+    * @param field The field to aggregate over. Can be a field name or *
+    * @param aggregateFunction The function to use for aggregation, e.g. sum, max etc.
+    * @param options Query options. See sequelize.query for full options
+    * @return Returns the aggregate result cast to `options.dataType`, unless `options.plain` is false, in
+    *     which case the complete data result is returned.
+    */
+  def aggregate(field: String, aggregateFunction: String): typings.bluebird.mod.^[js.Object] = js.native
+  def aggregate(field: String, aggregateFunction: String, options: AggregateOptions): typings.bluebird.mod.^[js.Object] = js.native
+  
+  def all[TCustomAttributes](): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
+  def all[TCustomAttributes](optionz: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
+  
   /**
     * Set associations with other models
     *
@@ -34,52 +69,21 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     * @param models
     */
   var associate: js.UndefOr[js.Function1[/* models */ Models, Unit]] = js.native
-  /**
-    * The singular name of the model
-    */
-  var name: String = js.native
-  /**
-    * The Instance class
-    */
-  def Instance(): TInstance = js.native
-  def addScope(name: String, scope: js.Function): Unit = js.native
-  def addScope(name: String, scope: js.Function, options: AddScopeOptions): Unit = js.native
-  /**
-    * Add a new scope to the model. This is especially useful for adding scopes with includes, when the model you want to include is not available at the time this model is defined.
-    *
-    * By default this will throw an error if a scope with that name already exists. Pass `override: true` in the options object to silence this error.
-    *
-    * @param {String}          name The name of the scope. Use `defaultScope` to override the default scope
-    * @param {Object|Function} scope
-    * @param {Object}          [options]
-    * @param {Boolean}         [options.override=false]
-    */
-  def addScope(name: String, scope: AnyFindOptions): Unit = js.native
-  def addScope(name: String, scope: AnyFindOptions, options: AddScopeOptions): Unit = js.native
-  /**
-    * Run an aggregation method on the specified field
-    *
-    * @param field The field to aggregate over. Can be a field name or *
-    * @param aggregateFunction The function to use for aggregation, e.g. sum, max etc.
-    * @param options Query options. See sequelize.query for full options
-    * @return Returns the aggregate result cast to `options.dataType`, unless `options.plain` is false, in
-    *     which case the complete data result is returned.
-    */
-  def aggregate(field: String, aggregateFunction: String): typings.bluebird.mod.^[js.Object] = js.native
-  def aggregate(field: String, aggregateFunction: String, options: AggregateOptions): typings.bluebird.mod.^[js.Object] = js.native
-  def all[TCustomAttributes](): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
-  def all[TCustomAttributes](optionz: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
+  
   /**
     * Builds a new model instance. Values is an object of key value pairs, must be defined but can be empty.
     */
   def build(): TInstance = js.native
   def build(record: TAttributes): TInstance = js.native
   def build(record: TAttributes, options: BuildOptions): TInstance = js.native
+  def build(record: js.UndefOr[scala.Nothing], options: BuildOptions): TInstance = js.native
+  
   /**
     * Undocumented bulkBuild
     */
   def bulkBuild(records: js.Array[TAttributes]): js.Array[TInstance] = js.native
   def bulkBuild(records: js.Array[TAttributes], options: BuildOptions): js.Array[TInstance] = js.native
+  
   /**
     * Create and insert multiple instances in bulk.
     *
@@ -93,6 +97,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     */
   def bulkCreate(records: js.Array[TCreationAttributes]): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
   def bulkCreate(records: js.Array[TCreationAttributes], options: BulkCreateOptions): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
+  
   /**
     * Count the number of records matching the provided where clause.
     *
@@ -100,17 +105,21 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     */
   def count(): typings.bluebird.mod.^[Double] = js.native
   def count(options: CountOptions): typings.bluebird.mod.^[Double] = js.native
+  
   /**
     * Builds a new model instance and calls save on it.
     */
   def create(): typings.bluebird.mod.^[TInstance] = js.native
   def create(values: TCreationAttributes): typings.bluebird.mod.^[TInstance] = js.native
   def create(values: TCreationAttributes, options: CreateOptions): typings.bluebird.mod.^[TInstance] = js.native
+  def create(values: js.UndefOr[scala.Nothing], options: CreateOptions): typings.bluebird.mod.^[TInstance] = js.native
+  
   /**
     * Run a describe query on the table. The result will be return to the listener as a hash of attributes and
     * their types.
     */
   def describe(): typings.bluebird.mod.^[js.Object] = js.native
+  
   /**
     * Delete multiple instances, or set their deletedAt timestamp to the current time if `paranoid` is enabled.
     *
@@ -118,6 +127,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     */
   def destroy(): typings.bluebird.mod.^[Double] = js.native
   def destroy(options: DestroyOptions): typings.bluebird.mod.^[Double] = js.native
+  
   /**
     * Drop the table represented by this Model
     *
@@ -125,8 +135,10 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     */
   def drop(): typings.bluebird.mod.^[Unit] = js.native
   def drop(options: DropOptions): typings.bluebird.mod.^[Unit] = js.native
+  
   def find[TCustomAttributes](): typings.bluebird.mod.^[TInstance | Null] = js.native
   def find[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[TInstance | Null] = js.native
+  
   /**
     * Search for multiple instances.
     *
@@ -191,6 +203,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     */
   def findAll[TCustomAttributes](): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
   def findAll[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
+  
   /**
     * Find all the rows matching your query, within a specified offset / limit, and get the total number of
     * rows matching your query. This is very usefull for paging
@@ -228,8 +241,10 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     */
   def findAndCount[TCustomAttributes](): typings.bluebird.mod.^[Count[TInstance]] = js.native
   def findAndCount[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[Count[TInstance]] = js.native
+  
   def findAndCountAll[TCustomAttributes](): typings.bluebird.mod.^[Count[TInstance]] = js.native
   def findAndCountAll[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[Count[TInstance]] = js.native
+  
   /**
     * Search for a single instance by its primary key. This applies LIMIT 1, so the listener will
     * always be called with a single instance.
@@ -240,6 +255,14 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def findById[TCustomAttributes](identifier: Buffer): typings.bluebird.mod.^[TInstance | Null] = js.native
   @JSName("findById")
   def findById_where[TCustomAttributes](
+    identifier: js.UndefOr[scala.Nothing],
+    options: Omit[
+      FindOptions[TAttributes with TCustomAttributes], 
+      typings.sequelize.sequelizeStrings.where
+    ]
+  ): typings.bluebird.mod.^[TInstance | Null] = js.native
+  @JSName("findById")
+  def findById_where[TCustomAttributes](
     identifier: String,
     options: Omit[
       FindOptions[TAttributes with TCustomAttributes], 
@@ -262,12 +285,21 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
       typings.sequelize.sequelizeStrings.where
     ]
   ): typings.bluebird.mod.^[TInstance | Null] = js.native
+  
   def findByPk[TCustomAttributes](): typings.bluebird.mod.^[TInstance | Null] = js.native
   def findByPk[TCustomAttributes](identifier: String): typings.bluebird.mod.^[TInstance | Null] = js.native
   def findByPk[TCustomAttributes](identifier: Double): typings.bluebird.mod.^[TInstance | Null] = js.native
   def findByPk[TCustomAttributes](identifier: Buffer): typings.bluebird.mod.^[TInstance | Null] = js.native
   @JSName("findByPk")
   def findByPk_where[TCustomAttributes](
+    identifier: js.UndefOr[scala.Nothing],
+    options: Omit[
+      FindOptions[TAttributes with TCustomAttributes], 
+      typings.sequelize.sequelizeStrings.where
+    ]
+  ): typings.bluebird.mod.^[TInstance | Null] = js.native
+  @JSName("findByPk")
+  def findByPk_where[TCustomAttributes](
     identifier: String,
     options: Omit[
       FindOptions[TAttributes with TCustomAttributes], 
@@ -290,12 +322,21 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
       typings.sequelize.sequelizeStrings.where
     ]
   ): typings.bluebird.mod.^[TInstance | Null] = js.native
+  
   def findByPrimary[TCustomAttributes](): typings.bluebird.mod.^[TInstance | Null] = js.native
   def findByPrimary[TCustomAttributes](identifier: String): typings.bluebird.mod.^[TInstance | Null] = js.native
   def findByPrimary[TCustomAttributes](identifier: Double): typings.bluebird.mod.^[TInstance | Null] = js.native
   def findByPrimary[TCustomAttributes](identifier: Buffer): typings.bluebird.mod.^[TInstance | Null] = js.native
   @JSName("findByPrimary")
   def findByPrimary_where[TCustomAttributes](
+    identifier: js.UndefOr[scala.Nothing],
+    options: Omit[
+      FindOptions[TAttributes with TCustomAttributes], 
+      typings.sequelize.sequelizeStrings.where
+    ]
+  ): typings.bluebird.mod.^[TInstance | Null] = js.native
+  @JSName("findByPrimary")
+  def findByPrimary_where[TCustomAttributes](
     identifier: String,
     options: Omit[
       FindOptions[TAttributes with TCustomAttributes], 
@@ -318,18 +359,22 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
       typings.sequelize.sequelizeStrings.where
     ]
   ): typings.bluebird.mod.^[TInstance | Null] = js.native
+  
   /**
     * A more performant findOrCreate that will not work under a transaction (at least not in postgres)
     * Will execute a find call, if empty then attempt to create, if unique constraint then attempt to find again
     */
   def findCreateFind[TCustomAttributes](options: FindCreateFindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[js.Tuple2[TInstance, Boolean]] = js.native
+  
   /**
     * Search for a single instance. This applies LIMIT 1, so the listener will always be called with a single
     * instance.
     */
   def findOne[TCustomAttributes](): typings.bluebird.mod.^[TInstance | Null] = js.native
   def findOne[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[TInstance | Null] = js.native
+  
   def findOrBuild(options: FindOrInitializeOptions[TAttributes]): typings.bluebird.mod.^[js.Tuple2[TInstance, Boolean]] = js.native
+  
   /**
     * Find a row that matches the query, or build and save the row if none is found
     * The successful result of the promise will be (instance, created) - Make sure to use .spread()
@@ -342,11 +387,13 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     * will be created instead, and any unique constraint violation will be handled internally.
     */
   def findOrCreate(options: FindOrInitializeOptions[TAttributes]): typings.bluebird.mod.^[js.Tuple2[TInstance, Boolean]] = js.native
+  
   /**
     * Find a row that matches the query, or build (but don't save) the row if none is found.
     * The successfull result of the promise will be (instance, initialized) - Make sure to use .spread()
     */
   def findOrInitialize(options: FindOrInitializeOptions[TAttributes]): typings.bluebird.mod.^[js.Tuple2[TInstance, Boolean]] = js.native
+  
   /**
     * Get the tablename of the model, taking schema into account. The method will return The name as a string
     * if the model has no schema, or an object with `tableName`, `schema` and `delimiter` properties.
@@ -359,30 +406,41 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     */
   def getTableName(): String | js.Object = js.native
   def getTableName(options: GetTableNameOptions): String | js.Object = js.native
+  
   def insertOrUpdate(values: TAttributes): typings.bluebird.mod.^[Boolean] = js.native
-  def insertOrUpdate(values: TAttributes, options: UpsertOptionsreturningfalBenchmark): typings.bluebird.mod.^[Boolean] = js.native
+  def insertOrUpdate(values: TAttributes, options: UpsertOptionsreturningfal): typings.bluebird.mod.^[Boolean] = js.native
   def insertOrUpdate(values: TAttributes, options: UpsertOptionsreturningtru): typings.bluebird.mod.^[js.Tuple2[TInstance, Boolean]] = js.native
+  
   /**
     * Find the maximum value of field
     */
   def max(field: String): typings.bluebird.mod.^[_] = js.native
   def max(field: String, options: AggregateOptions): typings.bluebird.mod.^[_] = js.native
+  
   /**
     * Find the minimum value of field
     */
   def min(field: String): typings.bluebird.mod.^[_] = js.native
   def min(field: String, options: AggregateOptions): typings.bluebird.mod.^[_] = js.native
+  
+  /**
+    * The singular name of the model
+    */
+  var name: String = js.native
+  
   /**
     * Remove attribute from model definition
     *
     * @param attribute
     */
   def removeAttribute(attribute: String): Unit = js.native
+  
   /**
     * Restore multiple instances if `paranoid` is enabled.
     */
   def restore(): typings.bluebird.mod.^[Unit] = js.native
   def restore(options: RestoreOptions): typings.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Apply a schema to this model. For postgres, this will actually place the schema in front of the table
     * name
@@ -394,6 +452,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     */
   def schema(schema: String): this.type = js.native
   def schema(schema: String, options: SchemaOptions): this.type = js.native
+  
   /**
     * Apply a scope created in `define` to the model. First let's look at how to create scopes:
     * ```js
@@ -446,26 +505,31 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def scope(options: js.Array[String | ScopeOptions | AnyWhereOptions]): this.type = js.native
   def scope(options: AnyWhereOptions): this.type = js.native
   def scope(options: ScopeOptions): this.type = js.native
+  
   /**
     * Find the sum of field
     */
   def sum(field: String): typings.bluebird.mod.^[Double] = js.native
   def sum(field: String, options: AggregateOptions): typings.bluebird.mod.^[Double] = js.native
+  
   /**
     * Sync this Model to the DB, that is create the table. Upon success, the callback will be called with the
     * model instance (this)
     */
   def sync(): typings.bluebird.mod.^[this.type] = js.native
   def sync(options: SyncOptions): typings.bluebird.mod.^[this.type] = js.native
+  
   /**
     * Truncate all instances of the model. This is a convenient method for Model.destroy({ truncate: true }).
     */
   def truncate(): typings.bluebird.mod.^[Unit] = js.native
   def truncate(options: TruncateOptions): typings.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Unscope the model
     */
   def unscoped(): this.type = js.native
+  
   /**
     * Update multiple instances that match the where options. The promise returns an array with one or two
     * elements. The first element is always the number of affected rows, while the second element is the actual
@@ -473,6 +537,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     */
   def update(values: Partial[TAttributes]): typings.bluebird.mod.^[js.Tuple2[Double, js.Array[TInstance]]] = js.native
   def update(values: Partial[TAttributes], options: UpdateOptions): typings.bluebird.mod.^[js.Tuple2[Double, js.Array[TInstance]]] = js.native
+  
   /**
     * Insert or update a single row. An update will be executed if a row which matches the supplied values on
     * either the primary key or a unique key is found. Note that the unique index must be defined in your
@@ -496,4 +561,3 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def upsert(values: TAttributes, options: UpsertOptionsreturningfal): typings.bluebird.mod.^[Boolean] = js.native
   def upsert(values: TAttributes, options: UpsertOptionsreturningtru): typings.bluebird.mod.^[js.Tuple2[TInstance, Boolean]] = js.native
 }
-

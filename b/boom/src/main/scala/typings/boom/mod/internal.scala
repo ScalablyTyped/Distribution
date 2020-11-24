@@ -2,11 +2,12 @@ package typings.boom.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("boom", "internal")
 @js.native
 object internal extends js.Object {
+  
   /**
     * Returns a 500 Internal Server Error error
     * Only 500 errors will hide your message from the end user. Your message is recorded in the server log.
@@ -19,4 +20,3 @@ object internal extends js.Object {
   def apply[Data](message: String): Boom[Data] = js.native
   def apply[Data](message: String, data: Data): Boom[Data] = js.native
 }
-

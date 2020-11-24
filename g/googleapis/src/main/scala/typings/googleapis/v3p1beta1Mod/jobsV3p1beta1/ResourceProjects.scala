@@ -6,17 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/jobs/v3p1beta1", "jobs_v3p1beta1.Resource$Projects")
 @js.native
 class ResourceProjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var clientEvents: ResourceProjectsClientevents = js.native
+  
   var companies: ResourceProjectsCompanies = js.native
-  var context: APIRequestContext = js.native
-  var jobs: ResourceProjectsJobs = js.native
-  var operations: ResourceProjectsOperations = js.native
+  
   /**
     * jobs.projects.complete
     * @desc Completes the specified prefix with keyword suggestions. Intended
@@ -56,5 +56,10 @@ class ResourceProjects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCompleteQueryResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
+  var jobs: ResourceProjectsJobs = js.native
+  
+  var operations: ResourceProjectsOperations = js.native
 }
-

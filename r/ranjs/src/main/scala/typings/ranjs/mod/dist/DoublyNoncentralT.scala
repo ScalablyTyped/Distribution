@@ -2,7 +2,7 @@ package typings.ranjs.mod.dist
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.DoublyNoncentralT")
 @js.native
@@ -16,4 +16,3 @@ class DoublyNoncentralT ()
   def this(nu: Double, mu: js.UndefOr[scala.Nothing], theta: Double) = this()
   def this(nu: Double, mu: Double, theta: Double) = this()
 }
-

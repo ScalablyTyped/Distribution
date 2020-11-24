@@ -4,51 +4,51 @@ import typings.std.Float32Array
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkImage extends SkObject[SkImage] {
+trait SkImage extends EmbindObject[SkImage] {
+  
+  /**
+    * Encodes this image's pixels to PNG and returns them. Must be built with the PNG codec.
+    */
   def encodeToData(): SkData = js.native
+  
+  /**
+    * Encodes this image's pixels to the specified format and returns them. Must be built with
+    * the specified codec.
+    * @param fmt
+    * @param quality - a value from 0 to 100; 100 is the least lossy. May be ignored.
+    */
+  def encodeToDataWithFormat(fmt: EncodedImageFormat, quality: Double): SkData = js.native
+  
+  /**
+    * Return the height in pixels of the image.
+    */
   def height(): Double = js.native
-  def readPixels(info: SkImageInfo, srcX: Double, srcY: Double): Uint8Array | Float32Array | Null = js.native
+  
+  /**
+    * Returns this image as a shader with the specified tiling.
+    * @param tx - tile mode in the x direction.
+    * @param ty - tile mode in the y direction.
+    * @param localMatrix
+    */
+  def makeShader(tx: TileMode, ty: TileMode): SkShader = js.native
+  def makeShader(tx: TileMode, ty: TileMode, localMatrix: InputMatrix): SkShader = js.native
+  
+  /**
+    * Returns a TypedArray containing the pixels reading starting at (srcX, srcY) and does not
+    * exceed the size indicated by imageInfo. See SkImage.h for more on the caveats.
+    *
+    * @param imageInfo - describes the destination format of the pixels.
+    * @param srcX
+    * @param srcY
+    * @returns a Uint8Array if RGB_8888 was requested, Float32Array if RGBA_F32 was requested.
+    */
+  def readPixels(imageInfo: SkImageInfo, srcX: Double, srcY: Double): Uint8Array | Float32Array | Null = js.native
+  
+  /**
+    * Return the width in pixels of the image.
+    */
   def width(): Double = js.native
 }
-
-object SkImage {
-  @scala.inline
-  def apply(
-    delete: () => Unit,
-    deleteAfter: () => Unit,
-    encodeToData: () => SkData,
-    height: () => Double,
-    isAliasOf: js.Any => Boolean,
-    isDeleted: () => Boolean,
-    readPixels: (SkImageInfo, Double, Double) => Uint8Array | Float32Array | Null,
-    width: () => Double
-  ): SkImage = {
-    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), deleteAfter = js.Any.fromFunction0(deleteAfter), encodeToData = js.Any.fromFunction0(encodeToData), height = js.Any.fromFunction0(height), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted), readPixels = js.Any.fromFunction3(readPixels), width = js.Any.fromFunction0(width))
-    __obj.asInstanceOf[SkImage]
-  }
-  @scala.inline
-  implicit class SkImageOps[Self <: SkImage] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setEncodeToData(value: () => SkData): Self = this.set("encodeToData", js.Any.fromFunction0(value))
-    @scala.inline
-    def setHeight(value: () => Double): Self = this.set("height", js.Any.fromFunction0(value))
-    @scala.inline
-    def setReadPixels(value: (SkImageInfo, Double, Double) => Uint8Array | Float32Array | Null): Self = this.set("readPixels", js.Any.fromFunction3(value))
-    @scala.inline
-    def setWidth(value: () => Double): Self = this.set("width", js.Any.fromFunction0(value))
-  }
-  
-}
-

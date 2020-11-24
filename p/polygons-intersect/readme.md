@@ -12,7 +12,7 @@ This script finds all points where the polygons intersect each other.
 | Keywords           | 2d, polygon, intersect |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 7242 |
+| # downloads        | 46319 |
 | # stars            | 0 |
 
 ## Links

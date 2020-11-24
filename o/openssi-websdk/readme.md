@@ -10,9 +10,9 @@ A SDK for issuing and verifying digital credentials through a cloud agent
 | ------------------ | :-------------: |
 | Full name          | openssi-websdk |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 1720 |
+| # downloads        | 2594 |
 | # stars            | 0 |
 
 ## Links

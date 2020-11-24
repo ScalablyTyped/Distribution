@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidmanagement/v1", "androidmanagement_v1.Resource$Enterprises$Devices")
 @js.native
 class ResourceEnterprisesDevices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var operations: ResourceEnterprisesDevicesOperations = js.native
+  
   /**
     * androidmanagement.enterprises.devices.delete
     * @desc Deletes a device. This operation wipes the device.
@@ -43,6 +44,7 @@ class ResourceEnterprisesDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * androidmanagement.enterprises.devices.get
     * @desc Gets a device.
@@ -71,6 +73,7 @@ class ResourceEnterprisesDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDevice]
   ): Unit = js.native
+  
   /**
     * androidmanagement.enterprises.devices.issueCommand
     * @desc Issues a command to a device. The Operation resource returned
@@ -105,6 +108,7 @@ class ResourceEnterprisesDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * androidmanagement.enterprises.devices.list
     * @desc Lists devices for a given enterprise.
@@ -138,6 +142,9 @@ class ResourceEnterprisesDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListDevicesResponse]
   ): Unit = js.native
+  
+  var operations: ResourceEnterprisesDevicesOperations = js.native
+  
   /**
     * androidmanagement.enterprises.devices.patch
     * @desc Updates a device.
@@ -169,4 +176,3 @@ class ResourceEnterprisesDevices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDevice]
   ): Unit = js.native
 }
-

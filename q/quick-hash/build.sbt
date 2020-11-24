@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "quick-hash"
-version := "1.0-dt-20190522Z-5f83f7"
+version := "1.0-dt-20190522Z-f62149"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

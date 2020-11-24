@@ -8,7 +8,7 @@ import typings.sawtoothSdk.protobufMod.IConsensusFinalizeBlockRequest
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ConsensusFinalizeBlockRequest")
 @js.native
@@ -20,11 +20,11 @@ class ConsensusFinalizeBlockRequest ()
   extends typings.sawtoothSdk.protobufMod.ConsensusFinalizeBlockRequest {
   def this(properties: IConsensusFinalizeBlockRequest) = this()
 }
-
 /* static members */
 @JSImport("sawtooth-sdk", "protobuf.ConsensusFinalizeBlockRequest")
 @js.native
 object ConsensusFinalizeBlockRequest extends js.Object {
+  
   /**
     * Creates a new ConsensusFinalizeBlockRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -32,6 +32,7 @@ object ConsensusFinalizeBlockRequest extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.ConsensusFinalizeBlockRequest = js.native
   def create(properties: IConsensusFinalizeBlockRequest): typings.sawtoothSdk.protobufMod.ConsensusFinalizeBlockRequest = js.native
+  
   /**
     * Decodes a ConsensusFinalizeBlockRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,6 +45,7 @@ object ConsensusFinalizeBlockRequest extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ConsensusFinalizeBlockRequest = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusFinalizeBlockRequest = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ConsensusFinalizeBlockRequest = js.native
+  
   /**
     * Decodes a ConsensusFinalizeBlockRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -53,6 +55,7 @@ object ConsensusFinalizeBlockRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusFinalizeBlockRequest = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusFinalizeBlockRequest = js.native
+  
   /**
     * Encodes the specified ConsensusFinalizeBlockRequest message. Does not implicitly {@link ConsensusFinalizeBlockRequest.verify|verify} messages.
     * @param message ConsensusFinalizeBlockRequest message or plain object to encode
@@ -61,6 +64,7 @@ object ConsensusFinalizeBlockRequest extends js.Object {
     */
   def encode(message: IConsensusFinalizeBlockRequest): Writer = js.native
   def encode(message: IConsensusFinalizeBlockRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ConsensusFinalizeBlockRequest message, length delimited. Does not implicitly {@link ConsensusFinalizeBlockRequest.verify|verify} messages.
     * @param message ConsensusFinalizeBlockRequest message or plain object to encode
@@ -69,12 +73,14 @@ object ConsensusFinalizeBlockRequest extends js.Object {
     */
   def encodeDelimited(message: IConsensusFinalizeBlockRequest): Writer = js.native
   def encodeDelimited(message: IConsensusFinalizeBlockRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ConsensusFinalizeBlockRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ConsensusFinalizeBlockRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ConsensusFinalizeBlockRequest = js.native
+  
   /**
     * Creates a plain object from a ConsensusFinalizeBlockRequest message. Also converts values to other types if specified.
     * @param message ConsensusFinalizeBlockRequest
@@ -86,6 +92,7 @@ object ConsensusFinalizeBlockRequest extends js.Object {
     message: typings.sawtoothSdk.protobufMod.ConsensusFinalizeBlockRequest,
     options: IConversionOptions
   ): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ConsensusFinalizeBlockRequest message.
     * @param message Plain object to verify
@@ -93,4 +100,3 @@ object ConsensusFinalizeBlockRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

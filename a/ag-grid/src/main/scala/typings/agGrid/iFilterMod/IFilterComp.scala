@@ -4,14 +4,14 @@ import typings.agGrid.iComponentMod.IComponent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IFilterComp
   extends IFilter
      with IComponent[IFilterParams]
-
 object IFilterComp {
+  
   @scala.inline
   def apply(
     doesFilterPass: IDoesFilterPassParams => Boolean,
@@ -24,4 +24,3 @@ object IFilterComp {
     __obj.asInstanceOf[IFilterComp]
   }
 }
-

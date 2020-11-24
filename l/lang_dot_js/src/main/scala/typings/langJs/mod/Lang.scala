@@ -2,10 +2,11 @@ package typings.langJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Lang extends js.Object {
+  
   /**
     * Gets the plural or singular form of the message specified based on an integer value.
     *
@@ -20,6 +21,7 @@ trait Lang extends js.Object {
   def choice(key: String, count: Double, replacements: js.UndefOr[scala.Nothing], locale: String): String = js.native
   def choice(key: String, count: Double, replacements: Replacements): String = js.native
   def choice(key: String, count: Double, replacements: Replacements, locale: String): String = js.native
+  
   /**
     * Gets a translation message.
     *
@@ -33,18 +35,21 @@ trait Lang extends js.Object {
   def get(key: String, replacements: js.UndefOr[scala.Nothing], locale: String): String = js.native
   def get(key: String, replacements: Replacements): String = js.native
   def get(key: String, replacements: Replacements, locale: String): String = js.native
+  
   /**
     * Get the fallback locale being used.
     *
     * @return The fallback locale.
     */
   def getFallback(): String = js.native
+  
   /**
     * Get the current locale.
     *
     * @return The current locale.
     */
   def getLocale(): String = js.native
+  
   /**
     * Checks whether a given key exists in the messages source.
     *
@@ -55,24 +60,28 @@ trait Lang extends js.Object {
     */
   def has(key: String): Boolean = js.native
   def has(key: String, locale: String): Boolean = js.native
+  
   /**
     * Set the fallback locale being used.
     *
     * @param fallback The fallback locale.
     */
   def setFallback(fallback: String): Unit = js.native
+  
   /**
     * Set the current locale.
     *
     * @return void
     */
   def setLocale(locale: String): Unit = js.native
+  
   /**
     * Set messages source.
     *
     * @param messages The messages source.
     */
   def setMessages(messages: Messages): Unit = js.native
+  
   /**
     * Gets a translation message.
     *
@@ -85,6 +94,7 @@ trait Lang extends js.Object {
     */
   def trans(key: String): String = js.native
   def trans(key: String, replacements: Replacements): String = js.native
+  
   /**
     * Gets the plural or singular form of the message specified based on an integer value.
     *
@@ -99,4 +109,3 @@ trait Lang extends js.Object {
   def transChoice(key: String, count: Double): String = js.native
   def transChoice(key: String, count: Double, replacements: Replacements): String = js.native
 }
-

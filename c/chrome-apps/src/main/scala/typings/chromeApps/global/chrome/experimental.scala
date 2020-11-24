@@ -3,7 +3,7 @@ package typings.chromeApps.global.chrome
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region placeholders
@@ -19,4 +19,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object experimental
   extends TopLevel[js.Any]
-

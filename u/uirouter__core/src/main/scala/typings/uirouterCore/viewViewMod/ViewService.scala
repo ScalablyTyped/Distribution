@@ -10,39 +10,51 @@ import typings.uirouterCore.viewInterfaceMod.ViewConfig
 import typings.uirouterCore.viewInterfaceMod.ViewContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/view/view", "ViewService")
 @js.native
 class ViewService protected () extends js.Object {
   /** @internal */
   def this(/** @internal */ router: UIRouter) = this()
+  
   /** @internal */ var _listeners: js.Any = js.native
+  
   /** @internal */
   var _pluginapi: ViewServicePluginAPI = js.native
+  
   /** @internal */ var _rootContext: js.Any = js.native
+  
   /** @internal */
   var _rootViewContext: js.Any = js.native
+  
   /** @internal */ var _uiViews: js.Any = js.native
+  
   /** @internal */ var _viewConfigFactories: js.Any = js.native
+  
   /** @internal */
   var _viewConfigFactory: js.Any = js.native
+  
   /** @internal */ var _viewConfigs: js.Any = js.native
-  var router: js.Any = js.native
+  
   def activateViewConfig(viewConfig: ViewConfig): Unit = js.native
+  
   /**
     * Returns the list of views on the page containing loaded content.
     *
     * @return {Array} Returns an array of fully-qualified view names.
     */
   def active(): js.Array[_] = js.native
+  
   /**
     * Returns the list of views currently available on the page, by fully-qualified name.
     *
     * @return {Array} Returns an array of fully-qualified view names.
     */
   def available(): js.Array[_] = js.native
+  
   def createViewConfig(path: js.Array[PathNode], decl: ViewDeclaration): js.Array[ViewConfig] = js.native
+  
   /**
     * Deactivates a ViewConfig.
     *
@@ -52,6 +64,7 @@ class ViewService protected () extends js.Object {
     * @param viewConfig The ViewConfig view to deregister.
     */
   def deactivateViewConfig(viewConfig: ViewConfig): Unit = js.native
+  
   /**
     * Registers a `ui-view` component
     *
@@ -68,13 +81,16 @@ class ViewService protected () extends js.Object {
     * @return a de-registration function used when the view is destroyed.
     */
   def registerUIView(uiView: ActiveUIView): js.Function0[Unit] = js.native
+  
+  var router: js.Any = js.native
+  
   def sync(): Unit = js.native
 }
-
 /* static members */
 @JSImport("@uirouter/core/lib/view/view", "ViewService")
 @js.native
 object ViewService extends js.Object {
+  
   /**
     * Given a ui-view and a ViewConfig, determines if they "match".
     *
@@ -133,6 +149,7 @@ object ViewService extends js.Object {
     * @internal
     */
   def matches(uiViewsByFqn: TypedMap[ActiveUIView], uiView: ActiveUIView): js.Function1[/* viewConfig */ ViewConfig, Boolean] = js.native
+  
   /**
     * Normalizes a view's name from a state.views configuration block.
     *
@@ -147,4 +164,3 @@ object ViewService extends js.Object {
   def normalizeUIViewTarget(context: ViewContext): UiViewContextAnchor = js.native
   def normalizeUIViewTarget(context: ViewContext, rawViewName: String): UiViewContextAnchor = js.native
 }
-

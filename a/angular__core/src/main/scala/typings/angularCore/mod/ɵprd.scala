@@ -2,11 +2,12 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275prd")
 @js.native
 object ɵprd extends js.Object {
+  
   def apply(
     flags: ɵNodeFlags,
     matchedQueries: js.Array[js.Tuple2[String | Double, ɵQueryValueType]],
@@ -22,4 +23,3 @@ object ɵprd extends js.Object {
     deps: js.Array[(js.Tuple2[ɵDepFlags, _]) | _]
   ): NodeDef = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.node.streamMod.Stream
 import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Converts provided CSV input to  a JSON object.
@@ -21,6 +21,7 @@ class Converter () extends Transform {
   def this(options: ConverterOptions) = this()
   def this(options: js.UndefOr[scala.Nothing], streamOptions: StreamOptions) = this()
   def this(options: ConverterOptions, streamOptions: StreamOptions) = this()
+  
   /**
     * Reads in a CSV from a file.
     * @param filePath the path to the CSV file
@@ -33,6 +34,7 @@ class Converter () extends Transform {
     * @param callback callback function to handle result or error
     */
   def fromFile(filePath: String, callback: ParseResultHandler): Unit = js.native
+  
   /**
     * Reads in a CSV from a stream.
     * @param stream the stream
@@ -45,6 +47,7 @@ class Converter () extends Transform {
     * @param callback callback function to handle result or error
     */
   def fromStream(stream: Stream, callback: ParseResultHandler): Unit = js.native
+  
   /**
     * Reads in a CSV from a string.
     * @param str the string to convert
@@ -57,6 +60,7 @@ class Converter () extends Transform {
     * @param callback callback function to handle result or error
     */
   def fromString(str: String, callback: ParseResultHandler): Unit = js.native
+  
   def on(
     event: String,
     listener: CsvEventHandler | DataEventHandler | DoneEventHandler | EndParsedEventHandler | ErrorEventHandler | JsonEventHandler
@@ -80,12 +84,14 @@ class Converter () extends Transform {
   def on(event: String, listener: js.Function): this.type = js.native
   def on(event: String, listener: EndEventHandler): this.type = js.native
   def on(event: String, listener: RecordParsedEventHandler): this.type = js.native
+  
   /**
     * The function is called each time a file line being found in csv stream.
     * @param  callback callback function
     * @return returns this object for chaining
     */
   def preFileLine(callback: js.Function2[/* line */ String, /* rowNumber */ Double, String]): this.type = js.native
+  
   /**
     * The function in preRawData will be called directly with the string from upper stream.
     * @param  callback callback function
@@ -94,6 +100,7 @@ class Converter () extends Transform {
   def preRawData(
     callback: js.Function2[/* csvRawData */ String, /* cb */ js.Function1[/* newData */ js.Any, Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Transform objects after CSV parsing but before result being emitted or pushed downstream.
     * @param  callback transform function
@@ -103,4 +110,3 @@ class Converter () extends Transform {
     callback: js.Function3[/* jsonObj */ js.Any, /* csvRow */ js.Array[String], /* rowNumber */ Double, Unit]
   ): this.type = js.native
 }
-

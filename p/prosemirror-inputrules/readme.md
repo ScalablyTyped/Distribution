@@ -10,9 +10,9 @@ Automatic transforms on text input for ProseMirror
 | ------------------ | :-------------: |
 | Full name          | prosemirror-inputrules |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 51 |
-| # downloads        | 2286739 |
+| # releases         | 6 |
+| # dependents       | 96 |
+| # downloads        | 4661300 |
 | # stars            | 0 |
 
 ## Links

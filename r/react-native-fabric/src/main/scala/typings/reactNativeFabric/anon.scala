@@ -3,31 +3,45 @@ package typings.reactNativeFabric
 import typings.reactNativeFabric.mod.Attributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Crash extends js.Object {
+    
     def crash(): Unit = js.native
+    
     def log(message: String): Unit = js.native
+    
     def logException(value: String): Unit = js.native
+    
     def recordCustomExceptionName(name: String, reason: String, frameArray: js.Array[js.Object]): Unit = js.native
+    
     def recordError(error: String): Unit = js.native
     def recordError(error: js.Object): Unit = js.native
     def recordError(error: Double): Unit = js.native
+    
     def setBool(key: String, value: Boolean): Unit = js.native
+    
     def setNumber(key: String, value: Double): Unit = js.native
+    
     def setString(key: String, value: String): Unit = js.native
+    
     def setUserEmail(email: String): Unit = js.native
+    
     def setUserIdentifier(userIdentifier: String): Unit = js.native
+    
     def setUserName(userName: String): Unit = js.native
+    
     def throwException(): Unit = js.native
   }
   
   @js.native
   trait LogAddToCart extends js.Object {
+    
     /**
       * Sends the Add To Cart tracking event.
       *
@@ -50,6 +64,7 @@ object anon extends js.Object {
       itemId: js.UndefOr[String],
       attributes: js.UndefOr[Attributes]
     ): Unit = js.native
+    
     /**
       * Send the Content View tracking event.
       *
@@ -68,6 +83,7 @@ object anon extends js.Object {
     def logContentView(name: String, `type`: String, id: js.UndefOr[scala.Nothing], attributes: Attributes): Unit = js.native
     def logContentView(name: String, `type`: String, id: String): Unit = js.native
     def logContentView(name: String, `type`: String, id: String, attributes: Attributes): Unit = js.native
+    
     /**
       * Send a custom tracking event with the given name.
       *
@@ -75,6 +91,7 @@ object anon extends js.Object {
       */
     def logCustom(name: String): Unit = js.native
     def logCustom(name: String, attributes: Attributes): Unit = js.native
+    
     /**
       * Sends the Invite tracking event.
       *
@@ -89,6 +106,7 @@ object anon extends js.Object {
     def logInvite(method: js.UndefOr[scala.Nothing], attributes: Attributes): Unit = js.native
     def logInvite(method: String): Unit = js.native
     def logInvite(method: String, attributes: Attributes): Unit = js.native
+    
     /**
       * Sends the Log In tracking event.
       *
@@ -108,6 +126,7 @@ object anon extends js.Object {
     def logLogin(method: String, success: js.UndefOr[scala.Nothing], attributes: Attributes): Unit = js.native
     def logLogin(method: String, success: Boolean): Unit = js.native
     def logLogin(method: String, success: Boolean, attributes: Attributes): Unit = js.native
+    
     /**
       * Sends the Purchase tracking event.
       *
@@ -132,6 +151,7 @@ object anon extends js.Object {
       itemId: js.UndefOr[String],
       attributes: js.UndefOr[Attributes]
     ): Unit = js.native
+    
     /**
       * Sends the Search tracking event.
       *
@@ -142,6 +162,7 @@ object anon extends js.Object {
       */
     def logSearch(query: String): Unit = js.native
     def logSearch(query: String, attributes: Attributes): Unit = js.native
+    
     /**
       * Sends the Share tracking event.
       *
@@ -303,6 +324,7 @@ object anon extends js.Object {
       contentId: String,
       attributes: Attributes
     ): Unit = js.native
+    
     /**
       * Sends the Sign Up tracking event.
       *
@@ -323,6 +345,4 @@ object anon extends js.Object {
     def logSignUp(method: String, success: Boolean): Unit = js.native
     def logSignUp(method: String, success: Boolean, attributes: Attributes): Unit = js.native
   }
-  
 }
-

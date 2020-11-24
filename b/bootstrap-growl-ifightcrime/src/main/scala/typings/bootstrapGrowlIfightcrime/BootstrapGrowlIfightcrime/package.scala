@@ -2,9 +2,10 @@ package typings.bootstrapGrowlIfightcrime
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object BootstrapGrowlIfightcrime {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.info
     - typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.danger

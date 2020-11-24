@@ -2,11 +2,10 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CoercionType extends js.Object
-
 /**
   * Specifies how to coerce data returned or set by the invoked method.
   *
@@ -19,6 +18,7 @@ sealed trait CoercionType extends js.Object
 @JSGlobal("Office.CoercionType")
 @js.native
 object CoercionType extends js.Object {
+  
   /**
     * Return or set data as HTML.
     * 
@@ -81,6 +81,4 @@ object CoercionType extends js.Object {
     */
   @js.native
   sealed trait XmlSvg extends CoercionType
-  
 }
-

@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Identity and Access Management (IAM) API
@@ -29,11 +29,16 @@ import scala.scalajs.js.annotation._
 class Iam protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var context: APIRequestContext = js.native
+  
   var iamPolicies: ResourceIampolicies = js.native
+  
   var organizations: ResourceOrganizations = js.native
+  
   var permissions: ResourcePermissions = js.native
+  
   var projects: ResourceProjects = js.native
+  
   var roles: ResourceRoles = js.native
 }
-

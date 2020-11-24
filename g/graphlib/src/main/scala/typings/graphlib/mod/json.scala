@@ -2,11 +2,12 @@ package typings.graphlib.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("graphlib", "json")
 @js.native
 object json extends js.Object {
+  
   /**
     * Takes JSON as input and returns the graph representation.
     *
@@ -21,6 +22,7 @@ object json extends js.Object {
     * @returns graph constructed acccording to specified representation
     */
   def read(json: js.Object): Graph = js.native
+  
   /**
     * Creates a JSON representation of the graph that can be serialized to a string with
     * JSON.stringify. The graph can later be restored using json.read.
@@ -30,4 +32,3 @@ object json extends js.Object {
     */
   def write(graph: Graph): js.Object = js.native
 }
-

@@ -10,9 +10,9 @@ Symlink files or directories, falling back to copying on Windows
 | ------------------ | :-------------: |
 | Full name          | symlink-or-copy |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 87 |
-| # downloads        | 6650684 |
+| # releases         | 3 |
+| # dependents       | 91 |
+| # downloads        | 8107115 |
 | # stars            | 2 |
 
 ## Links

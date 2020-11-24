@@ -3,7 +3,7 @@ package typings.jupyterlabCells.mod
 import typings.jupyterlabCells.modelMod.CellModel.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/cells", "CellModel")
 @js.native
@@ -14,4 +14,3 @@ class CellModel protected ()
     */
   def this(options: IOptions) = this()
 }
-

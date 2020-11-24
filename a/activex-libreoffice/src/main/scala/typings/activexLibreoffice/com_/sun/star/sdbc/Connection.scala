@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a connection (session) with a specific database. Within the context of a {@link Connection} , SQL statements are executed and results are
@@ -26,8 +26,8 @@ trait Connection
   extends XConnection
      with XComponent
      with XWarningsSupplier
-
 object Connection {
+  
   @scala.inline
   def apply(
     AutoCommit: Boolean,
@@ -68,4 +68,3 @@ object Connection {
     __obj.asInstanceOf[Connection]
   }
 }
-

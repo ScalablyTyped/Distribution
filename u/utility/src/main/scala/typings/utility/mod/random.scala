@@ -2,11 +2,12 @@ package typings.utility.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("utility", "random")
 @js.native
 object random extends js.Object {
+  
   /**
     * Produces a random integer between the inclusive `lower` and `upper` bounds.
     *
@@ -19,4 +20,3 @@ object random extends js.Object {
   def apply(lower: Double): Double = js.native
   def apply(lower: Double, upper: Double): Double = js.native
 }
-

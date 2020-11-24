@@ -10,9 +10,9 @@ js module that get token from vault HashiCorp server by using AWS STS
 | ------------------ | :-------------: |
 | Full name          | vault-auth-aws |
 | Keywords           | vault, hashicorp, token, aws, lambda, sts |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 71254 |
+| # downloads        | 240686 |
 | # stars            | 0 |
 
 ## Links

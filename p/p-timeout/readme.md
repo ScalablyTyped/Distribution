@@ -11,8 +11,8 @@ Timeout a promise after a specified amount of time
 | Full name          | p-timeout |
 | Keywords           | promise, timeout, error, invalidate, async, await, promises, time, out, cancel, bluebird |
 | # releases         | 4 |
-| # dependents       | 101 |
-| # downloads        | 119186834 |
+| # dependents       | 130 |
+| # downloads        | 176357490 |
 | # stars            | 3 |
 
 ## Links

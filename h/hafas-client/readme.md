@@ -1,7 +1,7 @@
 
 # Scala.js typings for hafas-client
 
-Typings are for version 5.6
+Typings are for version 5.8
 
 ## Library description:
 Client for HAFAS public transport APIs.
@@ -10,13 +10,13 @@ Client for HAFAS public transport APIs.
 | ------------------ | :-------------: |
 | Full name          | hafas-client |
 | Keywords           | hafas, public, transport, transit, api, http |
-| # releases         | 95 |
-| # dependents       | 9 |
-| # downloads        | 24874 |
+| # releases         | 60 |
+| # dependents       | 11 |
+| # downloads        | 28137 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/public-transport/hafas-client/tree/5.5.0)
+- [Homepage](https://github.com/public-transport/hafas-client/tree/5.10.1)
 - [Bugs](https://github.com/public-transport/hafas-client/issues)
 - [Repository](https://github.com/public-transport/hafas-client)
 - [Npm](https://www.npmjs.com/package/hafas-client)

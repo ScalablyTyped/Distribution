@@ -5,11 +5,12 @@ import typings.nodeJose.mod.JWK.Key
 import typings.nodeJose.mod.JWK.KeyStore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-jose", "JWS.createVerify")
 @js.native
 object createVerify extends js.Object {
+  
   /**
     * Using a keystore.
     */
@@ -24,4 +25,3 @@ object createVerify extends js.Object {
   def apply(input: KeyStore, opts: Algorithms): Verifier = js.native
   def apply(input: Key, opts: Algorithms): Verifier = js.native
 }
-

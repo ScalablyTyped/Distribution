@@ -10,9 +10,9 @@ PouchDB adapter using LevelDB as its backing store.
 | ------------------ | :-------------: |
 | Full name          | pouchdb-adapter-leveldb |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 12 |
-| # downloads        | 144491 |
+| # releases         | 5 |
+| # dependents       | 14 |
+| # downloads        | 300782 |
 | # stars            | 0 |
 
 ## Links

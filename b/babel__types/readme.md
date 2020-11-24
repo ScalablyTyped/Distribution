@@ -1,7 +1,7 @@
 
 # Scala.js typings for babel__types
 
-Typings are for version 7.11.0
+Typings are for version 7.12.7
 
 ## Library description:
 Babel Types is a Lodash-esque utility library for AST nodes
@@ -10,9 +10,9 @@ Babel Types is a Lodash-esque utility library for AST nodes
 | ------------------ | :-------------: |
 | Full name          | @babel/types |
 | Keywords           | - |
-| # releases         | 48 |
-| # dependents       | 726 |
-| # downloads        | 569821962 |
+| # releases         | 37 |
+| # dependents       | 1098 |
+| # downloads        | 1128362613 |
 | # stars            | 1 |
 
 ## Links

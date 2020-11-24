@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.util.XUpdatable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is an abstract service for a component which offers a more complex user interface to users within a toolbar.
@@ -26,8 +26,8 @@ trait ToolbarController
      with XUpdatable
      with XToolbarController
      with XSubToolbarController
-
 object ToolbarController {
+  
   @scala.inline
   def apply(
     SubToolbarName: String,
@@ -52,4 +52,3 @@ object ToolbarController {
     __obj.asInstanceOf[ToolbarController]
   }
 }
-

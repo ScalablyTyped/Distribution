@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/waf/byteMatchSet", "ByteMatchSet")
 @js.native
@@ -24,22 +24,24 @@ class ByteMatchSet protected () extends CustomResource {
   def this(name: String, args: ByteMatchSetArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ByteMatchSetArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * Specifies the bytes (typically a string that corresponds
     * with ASCII characters) that you want to search for in web requests,
     * the location in requests that you want to search, and other settings.
     */
   val byteMatchTuples: Output_[js.UndefOr[js.Array[ByteMatchSetByteMatchTuple]]] = js.native
+  
   /**
     * The name or description of the Byte Match Set.
     */
   val name: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/waf/byteMatchSet", "ByteMatchSet")
 @js.native
 object ByteMatchSet extends js.Object {
+  
   /**
     * Get an existing ByteMatchSet resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -53,10 +55,10 @@ object ByteMatchSet extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ByteMatchSet = js.native
   def get(name: String, id: Input[ID], state: ByteMatchSetState): ByteMatchSet = js.native
   def get(name: String, id: Input[ID], state: ByteMatchSetState, opts: CustomResourceOptions): ByteMatchSet = js.native
+  
   /**
     * Returns true if the given object is an instance of ByteMatchSet.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/byteMatchSet.ByteMatchSet */ Boolean = js.native
 }
-

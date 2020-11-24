@@ -2,11 +2,12 @@ package typings.mailparser.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mailparser", "simpleParser")
 @js.native
 object simpleParser extends js.Object {
+  
   def apply(source: Source): js.Promise[ParsedMail] = js.native
   def apply(source: Source, callback: js.Function2[/* err */ js.Any, /* mail */ ParsedMail, Unit]): Unit = js.native
   def apply(source: Source, options: SimpleParserOptions): js.Promise[ParsedMail] = js.native
@@ -16,4 +17,3 @@ object simpleParser extends js.Object {
     callback: js.Function2[/* err */ js.Any, /* mail */ ParsedMail, Unit]
   ): Unit = js.native
 }
-

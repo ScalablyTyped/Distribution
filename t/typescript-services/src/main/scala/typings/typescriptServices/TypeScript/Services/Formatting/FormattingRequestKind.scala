@@ -2,14 +2,14 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FormattingRequestKind extends js.Object
-
 @JSGlobal("TypeScript.Services.Formatting.FormattingRequestKind")
 @js.native
 object FormattingRequestKind extends js.Object {
+  
   @js.native
   sealed trait FormatDocument extends FormattingRequestKind
   
@@ -27,6 +27,4 @@ object FormattingRequestKind extends js.Object {
   
   @js.native
   sealed trait FormatSelection extends FormattingRequestKind
-  
 }
-

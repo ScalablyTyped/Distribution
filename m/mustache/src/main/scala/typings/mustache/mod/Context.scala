@@ -2,7 +2,7 @@ package typings.mustache.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a rendering context by wrapping a view object and maintaining a reference to the parent context.
@@ -16,4 +16,3 @@ class Context protected () extends MustacheContext {
   def this(view: js.Any) = this()
   def this(view: js.Any, parentContext: MustacheContext) = this()
 }
-

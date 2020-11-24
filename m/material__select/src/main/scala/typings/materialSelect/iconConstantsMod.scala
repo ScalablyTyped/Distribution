@@ -2,11 +2,12 @@ package typings.materialSelect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/select/icon/constants", JSImport.Namespace)
 @js.native
 object iconConstantsMod extends js.Object {
+  
   /**
     * @license
     * Copyright 2018 Google Inc.
@@ -31,9 +32,9 @@ object iconConstantsMod extends js.Object {
     */
   @js.native
   object strings extends js.Object {
+    
     var ICON_EVENT: String = js.native
+    
     var ICON_ROLE: String = js.native
   }
-  
 }
-

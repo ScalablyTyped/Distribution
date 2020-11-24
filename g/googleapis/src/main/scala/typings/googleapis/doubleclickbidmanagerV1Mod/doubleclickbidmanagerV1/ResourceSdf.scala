@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/doubleclickbidmanager/v1", "doubleclickbidmanager_v1.Resource$Sdf")
 @js.native
 class ResourceSdf protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * doubleclickbidmanager.sdf.download
     * @desc Retrieves entities in SDF format.
@@ -42,4 +44,3 @@ class ResourceSdf protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDownloadResponse]
   ): Unit = js.native
 }
-

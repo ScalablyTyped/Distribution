@@ -3,7 +3,7 @@ package typings.esriLeaflet.mod
 import typings.esriLeaflet.mod.leafletAugmentingMod.esri.TaskOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `L.esri.Task` is a generic class that provides the foundation for calling operations on ArcGIS Online and
@@ -16,4 +16,3 @@ class Task_ protected ()
   def this(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.Service) = this()
   def this(options: TaskOptions) = this()
 }
-

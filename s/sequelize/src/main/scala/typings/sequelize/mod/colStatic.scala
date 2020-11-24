@@ -3,7 +3,7 @@ package typings.sequelize.mod
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait colStatic
@@ -15,4 +15,3 @@ trait colStatic
   * @param col The name of the column
   */
 Instantiable1[/* col */ String, col]
-

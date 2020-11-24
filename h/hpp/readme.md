@@ -10,9 +10,9 @@ Express middleware to protect against HTTP Parameter Pollution attacks
 | ------------------ | :-------------: |
 | Full name          | hpp |
 | Keywords           | hpp, http, parameter, pollution, attack, security |
-| # releases         | 0 |
-| # dependents       | 45 |
-| # downloads        | 895969 |
+| # releases         | 2 |
+| # dependents       | 49 |
+| # downloads        | 1516001 |
 | # stars            | 14 |
 
 ## Links

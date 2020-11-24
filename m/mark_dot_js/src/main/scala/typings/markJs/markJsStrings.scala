@@ -3,9 +3,28 @@ package typings.markJs
 import typings.markJs.mod.MarkAccuracy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object markJsStrings {
+  
+  @scala.inline
+  def complementary: complementary = "complementary".asInstanceOf[complementary]
+  
+  @scala.inline
+  def disabled: disabled = "disabled".asInstanceOf[disabled]
+  
+  @scala.inline
+  def enabled: enabled = "enabled".asInstanceOf[enabled]
+  
+  @scala.inline
+  def exactly: exactly = "exactly".asInstanceOf[exactly]
+  
+  @scala.inline
+  def partially: partially = "partially".asInstanceOf[partially]
+  
+  @scala.inline
+  def withSpaces: withSpaces = "withSpaces".asInstanceOf[withSpaces]
+  
   @js.native
   sealed trait complementary extends MarkAccuracy
   
@@ -23,18 +42,4 @@ object markJsStrings {
   
   @js.native
   sealed trait withSpaces extends js.Object
-  
-  @scala.inline
-  def complementary: complementary = "complementary".asInstanceOf[complementary]
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
-  @scala.inline
-  def enabled: enabled = "enabled".asInstanceOf[enabled]
-  @scala.inline
-  def exactly: exactly = "exactly".asInstanceOf[exactly]
-  @scala.inline
-  def partially: partially = "partially".asInstanceOf[partially]
-  @scala.inline
-  def withSpaces: withSpaces = "withSpaces".asInstanceOf[withSpaces]
 }
-

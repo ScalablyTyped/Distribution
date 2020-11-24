@@ -2,16 +2,38 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "PositionGizmo")
 @js.native
 /**
   * Creates a PositionGizmo
   * @param gizmoLayer The utility layer the gizmo will be added to
+  @param thickness display gizmo axis thickness
   */
 class PositionGizmo ()
   extends typings.babylonjs.indexMod.PositionGizmo {
   def this(gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer) = this()
+  def this(gizmoLayer: js.UndefOr[scala.Nothing], thickness: Double) = this()
+  def this(gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer, thickness: Double) = this()
+  def this(
+    gizmoLayer: js.UndefOr[scala.Nothing],
+    thickness: js.UndefOr[scala.Nothing],
+    gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+  ) = this()
+  def this(
+    gizmoLayer: js.UndefOr[scala.Nothing],
+    thickness: Double,
+    gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+  ) = this()
+  def this(
+    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
+    thickness: js.UndefOr[scala.Nothing],
+    gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+  ) = this()
+  def this(
+    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
+    thickness: Double,
+    gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+  ) = this()
 }
-

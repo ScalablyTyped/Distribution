@@ -3,12 +3,13 @@ package typings.yeomanAssert.mod
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("assert", JSImport.Namespace)
 @js.native
 object assertAugmentingMod extends js.Object {
+  
   /**
     * Assert a JSON file contains the provided keys
     * @param filename
@@ -16,6 +17,7 @@ object assertAugmentingMod extends js.Object {
     */
   @JSName("JSONFileContent")
   def JSONFileContent_(filename: String, content: js.Object): Unit = js.native
+  
   /**
     * Assert that a file's content is the same as the given string
     * @param file path to a file
@@ -37,6 +39,7 @@ object assertAugmentingMod extends js.Object {
     * ]);
     */
   def equalsFileContent(pairs: js.Array[js.Tuple2[String, String]]): Unit = js.native
+  
   /**
     * Assert that a file exists or that each files in the array exists
     * @param path path to a file or an array of paths to files
@@ -45,6 +48,7 @@ object assertAugmentingMod extends js.Object {
     * assert.noFile(['templates/user.hbs', 'templates/user/edit.hbs']);
     */
   def file(path: String | js.Array[String]): Unit = js.native
+  
   /**
     * Assert that a file's content matches a regex or string
     * @param file path to a file
@@ -65,16 +69,19 @@ object assertAugmentingMod extends js.Object {
     * assert.fileContent(arg);
     */
   def fileContent(pairs: js.Array[js.Tuple2[String, RegExp]]): Unit = js.native
+  
   /**
     * Assert an Object implements an interface
     * @param subject subject implementing the façade
     * @param methods a façace, hash or array of keys to be implemented
     */
   def implement(subject: js.Object, methods: js.Object | js.Array[String]): Unit = js.native
+  
   /**
     * @see JSONFileContent
     */
   def jsonFileContent(filename: String, content: js.Object): Unit = js.native
+  
   /**
     * Assert that a file doesn't exist
     * @param file path to a file
@@ -83,6 +90,7 @@ object assertAugmentingMod extends js.Object {
     * assert.noFile(['templates/user.hbs', 'templates/user/edit.hbs']);
     */
   def noFile(file: String | js.Array[String]): Unit = js.native
+  
   /**
     * Assert that a file's content does not match a regex / string
     * @param file path to a file
@@ -102,6 +110,7 @@ object assertAugmentingMod extends js.Object {
     * assert.noFileContent(arg);
     */
   def noFileContent(pairs: js.Array[js.Tuple2[String, RegExp]]): Unit = js.native
+  
   /**
     * Assert a JSON file does not contain the provided keys
     * @param filename
@@ -109,28 +118,33 @@ object assertAugmentingMod extends js.Object {
     */
   @JSName("noJSONFileContent")
   def noJSONFileContent_(filename: String, content: js.Object): Unit = js.native
+  
   /**
     * @see noJSONFileContent
     */
   def noJsonFileContent(filename: String, content: js.Object): Unit = js.native
+  
   /**
     * Assert an object does not contain the provided keys
     * @param obj Object that should not match the given pattern
     * @param content An object of key/values the object should not contain
     */
   def noObjectContent(obj: js.Object, content: js.Object): Unit = js.native
+  
   /**
     * Assert an Object doesn't implements any method of an interface
     * @param subject subject not implementing the methods
     * @param methods hash or array of method names to be implemented
     */
   def notImplement(subject: js.Object, methods: js.Object | js.Array[String]): Unit = js.native
+  
   /**
     * Assert an object contains the provided keys
     * @param obj Object that should match the given pattern
     * @param content An object of key/values the object should contains
     */
   def objectContent(obj: js.Object, content: js.Object): Unit = js.native
+  
   /**
     * Assert that two strings are equal after standardization of newlines
     * @param value a string
@@ -140,4 +154,3 @@ object assertAugmentingMod extends js.Object {
     */
   def textEqual(value: String, expected: String): Unit = js.native
 }
-

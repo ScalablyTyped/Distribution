@@ -2,7 +2,7 @@ package typings.googlepay.google.payments.api
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enum strings for the state of the transaction.
@@ -24,11 +24,11 @@ import scala.scalajs.js.annotation._
   - typings.googlepay.googlepayStrings.ERROR
 */
 trait TransactionState extends js.Object
-
 object TransactionState {
+  
   @scala.inline
   def ERROR: typings.googlepay.googlepayStrings.ERROR = "ERROR".asInstanceOf[typings.googlepay.googlepayStrings.ERROR]
+  
   @scala.inline
   def SUCCESS: typings.googlepay.googlepayStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.googlepay.googlepayStrings.SUCCESS]
 }
-

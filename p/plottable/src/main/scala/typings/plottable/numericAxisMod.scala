@@ -5,11 +5,12 @@ import typings.plottable.axisMod.AxisOrientation
 import typings.plottable.quantitativeScaleMod.QuantitativeScale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/axes/numericAxis", JSImport.Namespace)
 @js.native
 object numericAxisMod extends js.Object {
+  
   @js.native
   class Numeric protected () extends Axis[Double] {
     /**
@@ -22,12 +23,11 @@ object numericAxisMod extends js.Object {
       * @param {AxisOrientation} orientation Orientation of this Numeric Axis.
       */
     def this(scale: QuantitativeScale[Double], orientation: AxisOrientation) = this()
-    var _measurer: js.Any = js.native
-    var _tickLabelPositioning: js.Any = js.native
-    var _usesTextWidthApproximation: js.Any = js.native
-    var _wrapper: js.Any = js.native
+    
     /* private */ def _computeApproximateTextWidth(): js.Any = js.native
+    
     /* private */ def _computeExactTextWidth(): js.Any = js.native
+    
     /**
       * The method is responsible for evenly spacing the labels on the axis.
       * @return test to see if taking every `interval` recrangle from `rects`
@@ -39,8 +39,19 @@ object numericAxisMod extends js.Object {
       * see https://github.com/palantir/plottable/pull/1812
       */
     /* private */ def _hasOverlapWithInterval(interval: js.Any, rects: js.Any): js.Any = js.native
+    
     /* private */ def _hideEndTickLabels(): js.Any = js.native
+    
     /* private */ def _hideOverlappingTickLabels(): js.Any = js.native
+    
+    var _measurer: js.Any = js.native
+    
+    var _tickLabelPositioning: js.Any = js.native
+    
+    var _usesTextWidthApproximation: js.Any = js.native
+    
+    var _wrapper: js.Any = js.native
+    
     /**
       * Gets the tick label position relative to the tick marks.
       *
@@ -55,6 +66,7 @@ object numericAxisMod extends js.Object {
       * @returns {Numeric} The calling Numeric Axis.
       */
     def tickLabelPosition(position: String): this.type = js.native
+    
     /**
       * Gets the approximate text width setting.
       *
@@ -72,6 +84,4 @@ object numericAxisMod extends js.Object {
       */
     def usesTextWidthApproximation(enable: Boolean): this.type = js.native
   }
-  
 }
-

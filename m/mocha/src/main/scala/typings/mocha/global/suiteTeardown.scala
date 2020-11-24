@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.mocha.Mocha.HookFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Execute after running tests.
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("suiteTeardown")
 @js.native
 object suiteTeardown extends TopLevel[HookFunction]
-

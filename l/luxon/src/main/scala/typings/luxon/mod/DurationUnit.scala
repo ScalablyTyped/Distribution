@@ -2,7 +2,7 @@ package typings.luxon.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.luxon.luxonStrings.year
@@ -25,4 +25,3 @@ import scala.scalajs.js.annotation._
   - typings.luxon.luxonStrings.milliseconds
 */
 trait DurationUnit extends js.Object
-

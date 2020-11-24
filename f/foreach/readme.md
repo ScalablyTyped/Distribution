@@ -11,8 +11,8 @@ foreach component + npm package
 | Full name          | foreach |
 | Keywords           | shim, Array.prototype.forEach, forEach, Array#forEach, each |
 | # releases         | 0 |
-| # dependents       | 106 |
-| # downloads        | 111858178 |
+| # dependents       | 107 |
+| # downloads        | 115725836 |
 | # stars            | 5 |
 
 ## Links

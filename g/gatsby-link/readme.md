@@ -1,7 +1,7 @@
 
 # Scala.js typings for gatsby-link
 
-Typings are for version 2.4.13
+Typings are for version 2.6.0
 
 ## Library description:
 An enhanced Link component for Gatsby sites with support for resource prefetching
@@ -10,9 +10,9 @@ An enhanced Link component for Gatsby sites with support for resource prefetchin
 | ------------------ | :-------------: |
 | Full name          | gatsby-link |
 | Keywords           | gatsby |
-| # releases         | 250 |
-| # dependents       | 62 |
-| # downloads        | 4745460 |
+| # releases         | 79 |
+| # dependents       | 103 |
+| # downloads        | 17249448 |
 | # stars            | 1 |
 
 ## Links

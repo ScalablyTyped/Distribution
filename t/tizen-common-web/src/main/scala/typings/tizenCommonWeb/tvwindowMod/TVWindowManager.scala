@@ -10,10 +10,11 @@ import typings.tizenCommonWeb.tizenMod.ErrorCallback
 import typings.tizenCommonWeb.tizenMod.SuccessCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TVWindowManager extends js.Object {
+  
   /**
     * Adds a video resolution listener for getting notified about resolution changes.
     *
@@ -33,6 +34,7 @@ trait TVWindowManager extends js.Object {
   def addVideoResolutionChangeListener(callback: VideoResolutionChangeCallback, `type`: WindowType): Double = js.native
   @JSName("addVideoResolutionChangeListener")
   def addVideoResolutionChangeListener_MAIN(callback: VideoResolutionChangeCallback, `type`: MAIN): Double = js.native
+  
   /**
     * Gets the list of available windows.
     * @param successCallback The method to invoke when a list of the available windows is retrieved successfully.
@@ -43,6 +45,7 @@ trait TVWindowManager extends js.Object {
     */
   def getAvailableWindows(successCallback: AvailableWindowListCallback): Unit = js.native
   def getAvailableWindows(successCallback: AvailableWindowListCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Gets the area information of a TV window which is shown.
     *
@@ -190,6 +193,7 @@ trait TVWindowManager extends js.Object {
     unit: px,
     `type`: WindowType
   ): Unit = js.native
+  
   /**
     * Gets information about the current source of a specified TV window.
     *
@@ -205,6 +209,7 @@ trait TVWindowManager extends js.Object {
   def getSource(`type`: WindowType): SystemInfoVideoSourceInfo = js.native
   @JSName("getSource")
   def getSource_MAIN(`type`: MAIN): SystemInfoVideoSourceInfo = js.native
+  
   /**
     * Gets video resolution information.
     *
@@ -222,6 +227,7 @@ trait TVWindowManager extends js.Object {
   def getVideoResolution(`type`: WindowType): VideoResolution = js.native
   @JSName("getVideoResolution")
   def getVideoResolution_MAIN(`type`: MAIN): VideoResolution = js.native
+  
   /**
     * Hides a TV window which is shown.
     *
@@ -241,6 +247,7 @@ trait TVWindowManager extends js.Object {
   def hide_MAIN(successCallback: SuccessCallback, errorCallback: js.UndefOr[scala.Nothing], `type`: MAIN): Unit = js.native
   @JSName("hide")
   def hide_MAIN(successCallback: SuccessCallback, errorCallback: ErrorCallback, `type`: MAIN): Unit = js.native
+  
   /**
     * Removes the listener to stop receiving notifications for the video resolution changes.
     *
@@ -255,6 +262,7 @@ trait TVWindowManager extends js.Object {
     * @privilegeName http://tizen.org/privilege/tv.window
     */
   def removeVideoResolutionChangeListener(listenerId: Double): Unit = js.native
+  
   /**
     * Changes the source of a TV window.
     *
@@ -300,6 +308,7 @@ trait TVWindowManager extends js.Object {
     errorCallback: ErrorCallback,
     `type`: MAIN
   ): Unit = js.native
+  
   /**
     * Sets the display area of a TV window and shows it on the display.
     *
@@ -671,4 +680,3 @@ trait TVWindowManager extends js.Object {
     zPosition: ZPosition
   ): Unit = js.native
 }
-

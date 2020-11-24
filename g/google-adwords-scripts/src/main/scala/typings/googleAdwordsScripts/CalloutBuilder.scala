@@ -2,7 +2,7 @@ package typings.googleAdwordsScripts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CalloutBuilder[Callout]
@@ -10,6 +10,6 @@ trait CalloutBuilder[Callout]
      with hasMobilePreferredBuilder[CalloutBuilder[Callout]]
      with hasSchedulesBuilder[CalloutBuilder[Callout]]
      with hasStartAndEndDateBuilder[CalloutBuilder[Callout]] {
+  
   def withText(text: String): CalloutBuilder[Callout] = js.native
 }
-

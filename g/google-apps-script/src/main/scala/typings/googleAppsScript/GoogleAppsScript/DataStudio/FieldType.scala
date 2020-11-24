@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FieldType extends js.Object
-
 /**
   * An enum that defines the types that can be set for a Field.
   */
 @JSGlobal("GoogleAppsScript.Data_Studio.FieldType")
 @js.native
 object FieldType extends js.Object {
+  
   @js.native
   sealed trait BOOLEAN extends FieldType
   
@@ -312,6 +312,4 @@ object FieldType extends js.Object {
   
   @js.native
   sealed trait YEAR_WEEK extends FieldType
-  
 }
-

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parse-color"
-version := "1.0-dt-20190430Z-2485c7"
+version := "1.0-dt-20190430Z-6d4e7b"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

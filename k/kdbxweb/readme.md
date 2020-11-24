@@ -10,9 +10,9 @@ Kdbx KeePass database reader for web
 | ------------------ | :-------------: |
 | Full name          | kdbxweb |
 | Keywords           | kdbx, keepass |
-| # releases         | 22 |
-| # dependents       | 7 |
-| # downloads        | 27702 |
+| # releases         | 21 |
+| # dependents       | 8 |
+| # downloads        | 25241 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.ranjs.mod.dist
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.SkewNormal")
 @js.native
@@ -16,4 +16,3 @@ class SkewNormal ()
   def this(xi: Double, omega: js.UndefOr[scala.Nothing], alpha: Double) = this()
   def this(xi: Double, omega: Double, alpha: Double) = this()
 }
-

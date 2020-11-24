@@ -2,12 +2,12 @@ package typings.pixiSpine.PIXI.spine.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PathConstraintSpacingTimeline extends PathConstraintPositionTimeline
-
 object PathConstraintSpacingTimeline {
+  
   @scala.inline
   def apply(
     apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
@@ -27,4 +27,3 @@ object PathConstraintSpacingTimeline {
     __obj.asInstanceOf[PathConstraintSpacingTimeline]
   }
 }
-

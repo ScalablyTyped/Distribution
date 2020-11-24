@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.ui.FilterOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofFilter
   extends Instantiable1[/* element */ Element, Filter]
      with Instantiable2[/* element */ Element, /* options */ FilterOptions, Filter] {
-  var fn: Filter = js.native
+  
   def extend(proto: js.Object): Filter = js.native
+  
+  var fn: Filter = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.scriptableIos.global
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Manages reminders in calendars._
@@ -21,11 +21,11 @@ import scala.scalajs.js.annotation._
   */
 class Reminder ()
   extends typings.scriptableIos.Reminder
-
 /* static members */
 @JSGlobal("Reminder")
 @js.native
 object Reminder extends js.Object {
+  
   /**
     * _Fetches all reminders._
     *
@@ -35,6 +35,7 @@ object Reminder extends js.Object {
     */
   def all(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def all(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches all completed reminders._
     *
@@ -44,6 +45,7 @@ object Reminder extends js.Object {
     */
   def allCompleted(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def allCompleted(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches due reminders._
     *
@@ -53,6 +55,7 @@ object Reminder extends js.Object {
     */
   def allDueBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def allDueBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches all reminders due last week._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -60,6 +63,7 @@ object Reminder extends js.Object {
     */
   def allDueLastWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def allDueLastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches all reminders due next week._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -67,6 +71,7 @@ object Reminder extends js.Object {
     */
   def allDueNextWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def allDueNextWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches all reminders due this week._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -74,6 +79,7 @@ object Reminder extends js.Object {
     */
   def allDueThisWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def allDueThisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches all reminders due today._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -81,6 +87,7 @@ object Reminder extends js.Object {
     */
   def allDueToday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def allDueToday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches all reminders due tomorrow._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -88,6 +95,7 @@ object Reminder extends js.Object {
     */
   def allDueTomorrow(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def allDueTomorrow(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches all reminders due yesterday._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -95,6 +103,7 @@ object Reminder extends js.Object {
     */
   def allDueYesterday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def allDueYesterday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches all incomplete reminders._
     *
@@ -104,6 +113,7 @@ object Reminder extends js.Object {
     */
   def allIncomplete(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def allIncomplete(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches completed reminders._
     *
@@ -113,6 +123,7 @@ object Reminder extends js.Object {
     */
   def completedBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def completedBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches completed reminders._
     *
@@ -122,6 +133,7 @@ object Reminder extends js.Object {
     */
   def completedDueBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def completedDueBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches completed reminders due last week._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -129,6 +141,7 @@ object Reminder extends js.Object {
     */
   def completedDueLastWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def completedDueLastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches completed reminders due next week._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -136,6 +149,7 @@ object Reminder extends js.Object {
     */
   def completedDueNextWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def completedDueNextWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches completed reminders due this week._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -143,6 +157,7 @@ object Reminder extends js.Object {
     */
   def completedDueThisWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def completedDueThisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches completed reminders due today._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -150,6 +165,7 @@ object Reminder extends js.Object {
     */
   def completedDueToday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def completedDueToday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches completed reminders due tomorrow._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -157,6 +173,7 @@ object Reminder extends js.Object {
     */
   def completedDueTomorrow(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def completedDueTomorrow(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches completed reminders due yesterday._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -164,6 +181,7 @@ object Reminder extends js.Object {
     */
   def completedDueYesterday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def completedDueYesterday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches reminders completed last week._
     *
@@ -173,6 +191,7 @@ object Reminder extends js.Object {
     */
   def completedLastWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def completedLastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches reminders completed this week._
     *
@@ -182,6 +201,7 @@ object Reminder extends js.Object {
     */
   def completedThisWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def completedThisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches reminders completed today._
     *
@@ -191,6 +211,7 @@ object Reminder extends js.Object {
     */
   def completedToday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def completedToday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches incomplete reminders._
     *
@@ -200,6 +221,7 @@ object Reminder extends js.Object {
     */
   def incompleteDueBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def incompleteDueBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches incomplete reminders due last week._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -207,6 +229,7 @@ object Reminder extends js.Object {
     */
   def incompleteDueLastWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def incompleteDueLastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches incomplete reminders due next week._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -214,6 +237,7 @@ object Reminder extends js.Object {
     */
   def incompleteDueNextWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def incompleteDueNextWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches incomplete reminders due this week._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -221,6 +245,7 @@ object Reminder extends js.Object {
     */
   def incompleteDueThisWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def incompleteDueThisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches incomplete reminders due today._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -228,6 +253,7 @@ object Reminder extends js.Object {
     */
   def incompleteDueToday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def incompleteDueToday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches incomplete reminders due tomorrow._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -235,6 +261,7 @@ object Reminder extends js.Object {
     */
   def incompleteDueTomorrow(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def incompleteDueTomorrow(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches incomplete reminders due yesterday._
     * @param calendars - Calendars to fetch reminders for. Defaults to all calendars.
@@ -242,6 +269,7 @@ object Reminder extends js.Object {
     */
   def incompleteDueYesterday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def incompleteDueYesterday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
+  
   /**
     * _Fetches the schedule of reminders._
     *
@@ -253,4 +281,3 @@ object Reminder extends js.Object {
   def scheduled(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
   def scheduled(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = js.native
 }
-

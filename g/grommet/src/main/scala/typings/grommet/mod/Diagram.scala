@@ -7,9 +7,8 @@ import typings.react.mod.SVGProps
 import typings.std.SVGSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "Diagram")
+@JSImport("grommet", "Diagram")
 @js.native
 object Diagram extends TopLevel[FC[DiagramProps with SVGProps[SVGSVGElement]]]
-

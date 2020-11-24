@@ -12,7 +12,7 @@ Document ready listener for modern browsers
 | Keywords           | document, ready, callback |
 | # releases         | 2 |
 | # dependents       | 15 |
-| # downloads        | 164352 |
+| # downloads        | 146057 |
 | # stars            | 1 |
 
 ## Links

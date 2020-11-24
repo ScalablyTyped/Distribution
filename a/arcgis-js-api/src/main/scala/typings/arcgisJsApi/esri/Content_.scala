@@ -7,12 +7,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.media
 import typings.arcgisJsApi.arcgisJsApiStrings.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Content_
   extends Accessor
      with JSONSupport {
+  
   /**
     * The type of popup element displayed.
     *
@@ -20,4 +21,3 @@ trait Content_
     */
   val `type`: text | fields | media | attachments | custom = js.native
 }
-

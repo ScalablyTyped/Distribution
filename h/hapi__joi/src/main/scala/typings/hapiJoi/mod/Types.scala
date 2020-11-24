@@ -2,7 +2,7 @@ package typings.hapiJoi.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.hapiJoi.hapiJoiStrings.any
@@ -19,31 +19,41 @@ import scala.scalajs.js.annotation._
   - typings.hapiJoi.hapiJoiStrings.symbol
 */
 trait Types extends js.Object
-
 object Types {
+  
   @scala.inline
   def alternatives: typings.hapiJoi.hapiJoiStrings.alternatives = "alternatives".asInstanceOf[typings.hapiJoi.hapiJoiStrings.alternatives]
+  
   @scala.inline
   def any: typings.hapiJoi.hapiJoiStrings.any = "any".asInstanceOf[typings.hapiJoi.hapiJoiStrings.any]
+  
   @scala.inline
   def array: typings.hapiJoi.hapiJoiStrings.array = "array".asInstanceOf[typings.hapiJoi.hapiJoiStrings.array]
+  
   @scala.inline
   def binary: typings.hapiJoi.hapiJoiStrings.binary = "binary".asInstanceOf[typings.hapiJoi.hapiJoiStrings.binary]
+  
   @scala.inline
   def boolean: typings.hapiJoi.hapiJoiStrings.boolean = "boolean".asInstanceOf[typings.hapiJoi.hapiJoiStrings.boolean]
+  
   @scala.inline
   def date: typings.hapiJoi.hapiJoiStrings.date = "date".asInstanceOf[typings.hapiJoi.hapiJoiStrings.date]
+  
   @scala.inline
   def function: typings.hapiJoi.hapiJoiStrings.function = "function".asInstanceOf[typings.hapiJoi.hapiJoiStrings.function]
+  
   @scala.inline
   def link: typings.hapiJoi.hapiJoiStrings.link = "link".asInstanceOf[typings.hapiJoi.hapiJoiStrings.link]
+  
   @scala.inline
   def number: typings.hapiJoi.hapiJoiStrings.number = "number".asInstanceOf[typings.hapiJoi.hapiJoiStrings.number]
+  
   @scala.inline
   def `object`: typings.hapiJoi.hapiJoiStrings.`object` = "object".asInstanceOf[typings.hapiJoi.hapiJoiStrings.`object`]
+  
   @scala.inline
   def string: typings.hapiJoi.hapiJoiStrings.string = "string".asInstanceOf[typings.hapiJoi.hapiJoiStrings.string]
+  
   @scala.inline
   def symbol: typings.hapiJoi.hapiJoiStrings.symbol = "symbol".asInstanceOf[typings.hapiJoi.hapiJoiStrings.symbol]
 }
-

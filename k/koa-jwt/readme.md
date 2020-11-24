@@ -4,15 +4,15 @@
 Typings are for version 4.0.0
 
 ## Library description:
-Koa JWT authentication middleware.
+Koa middleware for validating JSON Web Tokens
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | koa-jwt |
-| Keywords           | auth, authn, authentication, authz, authorization, http, jwt, json, middleware, token, oauth, koa |
-| # releases         | 7 |
-| # dependents       | 119 |
-| # downloads        | 1051099 |
+| Keywords           | auth, authn, authentication, authz, authorization, http, jwt, json, middleware, token, oauth, permissions, koa |
+| # releases         | 3 |
+| # dependents       | 133 |
+| # downloads        | 1295233 |
 | # stars            | 11 |
 
 ## Links

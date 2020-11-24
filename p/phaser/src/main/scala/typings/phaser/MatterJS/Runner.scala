@@ -2,7 +2,7 @@ package typings.phaser.MatterJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Matter.Runner` module is an optional utility which provides a game loop,
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Runner extends js.Object {
+  
   /**
     * A `Number` that specifies the time step between updates in milliseconds.
     * If `engine.timing.isFixed` is set to `true`, then `delta` is fixed.
@@ -28,6 +29,7 @@ trait Runner extends js.Object {
     * @default 1000 / 60
     */
   var delta: Double = js.native
+  
   /**
     * A flag that specifies whether the runner is running or not.
     *
@@ -36,6 +38,7 @@ trait Runner extends js.Object {
     * @default true
     */
   var enabled: Boolean = js.native
+  
   /**
     * A `Boolean` that specifies if the runner should use a fixed timestep (otherwise it is variable).
     * If timing is fixed, then the apparent simulation speed will change depending on the frame rate (but behaviour will be deterministic).
@@ -47,31 +50,36 @@ trait Runner extends js.Object {
     */
   var isFixed: Boolean = js.native
 }
-
 object Runner {
+  
   @scala.inline
   def apply(delta: Double, enabled: Boolean, isFixed: Boolean): Runner = {
     val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], isFixed = isFixed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Runner]
   }
+  
   @scala.inline
   implicit class RunnerOps[Self <: Runner] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDelta(value: Double): Self = this.set("delta", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsFixed(value: Boolean): Self = this.set("isFixed", value.asInstanceOf[js.Any])
   }
-  
 }
-

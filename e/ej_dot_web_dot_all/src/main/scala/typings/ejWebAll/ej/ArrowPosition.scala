@@ -2,14 +2,14 @@ package typings.ejWebAll.ej
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ArrowPosition extends js.Object
-
 @JSGlobal("ej.ArrowPosition")
 @js.native
 object ArrowPosition extends js.Object {
+  
   //To set Bottom arrowPosition of the split button
   @js.native
   sealed trait Bottom extends ArrowPosition
@@ -25,6 +25,4 @@ object ArrowPosition extends js.Object {
   //To set Top arrowPosition of the split button
   @js.native
   sealed trait Top extends ArrowPosition
-  
 }
-

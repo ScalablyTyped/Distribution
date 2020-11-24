@@ -2,7 +2,7 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Read/write requests may be routed to any cluster in the instance, and will
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaMultiClusterRoutingUseAny extends js.Object
-

@@ -4,11 +4,12 @@ import typings.rsvp.anon.`3`
 import typings.rsvp.mod.RSVP.Arg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rsvp", "filter")
 @js.native
 object filter extends js.Object {
+  
   def apply[T](entries: js.Array[Arg[T]], filterFn: js.Function1[/* item */ T, Boolean]): typings.rsvp.mod.RSVP.Promise[js.Array[T]] = js.native
   def apply[T](entries: js.Array[Arg[T]], filterFn: js.Function1[/* item */ T, Boolean], label: String): typings.rsvp.mod.RSVP.Promise[js.Array[T]] = js.native
   def apply[T1, T2](entries: js.Tuple2[Arg[T1], Arg[T2]], filterFn: js.Function1[/* item */ T1 | T2, Boolean]): typings.rsvp.mod.RSVP.Promise[js.Array[T1 | T2]] = js.native
@@ -90,4 +91,3 @@ object filter extends js.Object {
     label: String
   ): typings.rsvp.mod.RSVP.Promise[js.Array[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10]] = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.std.MouseWheelEvent
 import typings.std.PointerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "PointerInfo")
 @js.native
@@ -34,4 +34,3 @@ class PointerInfo protected ()
   pickInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo]
   ) = this()
 }
-

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "arch" : "2.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "arch" : "2.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

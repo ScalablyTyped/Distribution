@@ -2,10 +2,11 @@ package typings.shelljs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EchoFunction extends js.Object {
+  
   /**
     * Prints string to stdout, and returns string with additional utility methods like .to().
     *
@@ -24,4 +25,3 @@ trait EchoFunction extends js.Object {
     */
   def apply(text: String*): ShellString = js.native
 }
-

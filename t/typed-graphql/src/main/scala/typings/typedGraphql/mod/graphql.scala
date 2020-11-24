@@ -3,11 +3,12 @@ package typings.typedGraphql.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("graphql", "graphql")
 @js.native
 object graphql extends js.Object {
+  
   def apply(schema: GraphQLSchema, requestString: String): js.Promise[GraphQLResult] = js.native
   def apply(
     schema: GraphQLSchema,
@@ -110,4 +111,3 @@ object graphql extends js.Object {
     operationName: String
   ): js.Promise[GraphQLResult] = js.native
 }
-

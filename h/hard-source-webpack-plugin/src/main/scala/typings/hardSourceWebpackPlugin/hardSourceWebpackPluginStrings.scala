@@ -2,9 +2,31 @@ package typings.hardSourceWebpackPlugin
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hardSourceWebpackPluginStrings {
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def log: log = "log".asInstanceOf[log]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def test: test = "test".asInstanceOf[test]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  
   @js.native
   sealed trait debug extends js.Object
   
@@ -25,20 +47,4 @@ object hardSourceWebpackPluginStrings {
   
   @js.native
   sealed trait warn extends js.Object
-  
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def test: test = "test".asInstanceOf[test]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
 }
-

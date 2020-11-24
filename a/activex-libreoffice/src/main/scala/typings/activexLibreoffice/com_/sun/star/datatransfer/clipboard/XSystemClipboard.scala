@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for new-style service {@link SystemClipboard} .
@@ -18,8 +18,8 @@ trait XSystemClipboard
      with XClipboardNotifier
      with XFlushableClipboard
      with XComponent
-
 object XSystemClipboard {
+  
   @scala.inline
   def apply(
     Contents: XTransferable,
@@ -43,4 +43,3 @@ object XSystemClipboard {
     __obj.asInstanceOf[XSystemClipboard]
   }
 }
-

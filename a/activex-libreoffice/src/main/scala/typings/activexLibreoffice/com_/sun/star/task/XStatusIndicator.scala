@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * controls a status indicator which displays progress of longer actions to the user
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XStatusIndicator extends XInterface {
+  
   /**
     * stop the progress
     *
@@ -22,12 +23,14 @@ trait XStatusIndicator extends XInterface {
     * gone by using ref count or disposing.
     */
   def end(): Unit = js.native
+  
   /**
     * clear progress value and description
     *
     * Calling of setValue(0) and setText("") should do the same. Stopped indicators must ignore this call.
     */
   def reset(): Unit = js.native
+  
   /**
     * update progress description
     *
@@ -35,6 +38,7 @@ trait XStatusIndicator extends XInterface {
     * @param Text new value for progress description which should be shown now
     */
   def setText(Text: String): Unit = js.native
+  
   /**
     * update progress value
     *
@@ -42,6 +46,7 @@ trait XStatusIndicator extends XInterface {
     * @param Value new value for progress which should be shown now Must fit the range [0..Range] which was set during {@link XStatusIndicator.start()} .
     */
   def setValue(Value: Double): Unit = js.native
+  
   /**
     * initialize and start the progress
     *
@@ -52,8 +57,8 @@ trait XStatusIndicator extends XInterface {
     */
   def start(Text: String, Range: Double): Unit = js.native
 }
-
 object XStatusIndicator {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -68,28 +73,35 @@ object XStatusIndicator {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), end = js.Any.fromFunction0(end), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reset = js.Any.fromFunction0(reset), setText = js.Any.fromFunction1(setText), setValue = js.Any.fromFunction1(setValue), start = js.Any.fromFunction2(start))
     __obj.asInstanceOf[XStatusIndicator]
   }
+  
   @scala.inline
   implicit class XStatusIndicatorOps[Self <: XStatusIndicator] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setEnd(value: () => Unit): Self = this.set("end", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setSetText(value: String => Unit): Self = this.set("setText", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetValue(value: Double => Unit): Self = this.set("setValue", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setStart(value: (String, Double) => Unit): Self = this.set("start", js.Any.fromFunction2(value))
   }
-  
 }
-

@@ -3,122 +3,160 @@ package typings.senchaTouch.Ext.chart.series
 import typings.senchaTouch.Ext.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IPie3D extends IPolar {
+  
   /** [Config Option] (Boolean/Number) */
   var donut: js.UndefOr[js.Any] = js.native
+  
   /** [Config Option] (String) */
   var field: js.UndefOr[String] = js.native
+  
   /** [Method] Returns the value of distortion
     * @returns Number
     */
   var getDistortion: js.UndefOr[js.Function0[Double]] = js.native
+  
   /** [Method] Returns the value of donut
     * @returns Boolean/Number
     */
   var getDonut: js.UndefOr[js.Function0[_]] = js.native
+  
   /** [Method] Returns the value of field
     * @returns String
     */
   var getField: js.UndefOr[js.Function0[String]] = js.native
+  
   /** [Method] Returns the value of region
     * @returns Array
     */
   var getRegion: js.UndefOr[js.Function0[Array]] = js.native
+  
   /** [Method] Returns the value of thickness
     * @returns Number
     */
   var getThickness: js.UndefOr[js.Function0[Double]] = js.native
+  
   /** [Method] Sets the value of distortion
     * @param distortion Number The new value.
     */
   var setDistortion: js.UndefOr[js.Function1[/* distortion */ js.UndefOr[Double], Unit]] = js.native
+  
   /** [Method] Sets the value of donut
     * @param donut Boolean/Number The new value.
     */
   var setDonut: js.UndefOr[js.Function1[/* donut */ js.UndefOr[js.Any], Unit]] = js.native
+  
   /** [Method] Sets the value of field
     * @param field String The new value.
     */
   var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.native
+  
   /** [Method] Sets the value of region
     * @param region Array The new value.
     */
   var setRegion: js.UndefOr[js.Function1[/* region */ js.UndefOr[Array], Unit]] = js.native
+  
   /** [Method] Sets the value of thickness
     * @param thickness Number The new value.
     */
   var setThickness: js.UndefOr[js.Function1[/* thickness */ js.UndefOr[Double], Unit]] = js.native
 }
-
 object IPie3D {
+  
   @scala.inline
   def apply(): IPie3D = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPie3D]
   }
+  
   @scala.inline
   implicit class IPie3DOps[Self <: IPie3D] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDonut(value: js.Any): Self = this.set("donut", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDonut: Self = this.set("donut", js.undefined)
+    
     @scala.inline
     def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteField: Self = this.set("field", js.undefined)
+    
     @scala.inline
     def setGetDistortion(value: () => Double): Self = this.set("getDistortion", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteGetDistortion: Self = this.set("getDistortion", js.undefined)
+    
     @scala.inline
     def setGetDonut(value: () => _): Self = this.set("getDonut", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteGetDonut: Self = this.set("getDonut", js.undefined)
+    
     @scala.inline
     def setGetField(value: () => String): Self = this.set("getField", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteGetField: Self = this.set("getField", js.undefined)
+    
     @scala.inline
     def setGetRegion(value: () => Array): Self = this.set("getRegion", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteGetRegion: Self = this.set("getRegion", js.undefined)
+    
     @scala.inline
     def setGetThickness(value: () => Double): Self = this.set("getThickness", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteGetThickness: Self = this.set("getThickness", js.undefined)
+    
     @scala.inline
     def setSetDistortion(value: /* distortion */ js.UndefOr[Double] => Unit): Self = this.set("setDistortion", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteSetDistortion: Self = this.set("setDistortion", js.undefined)
+    
     @scala.inline
     def setSetDonut(value: /* donut */ js.UndefOr[js.Any] => Unit): Self = this.set("setDonut", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteSetDonut: Self = this.set("setDonut", js.undefined)
+    
     @scala.inline
     def setSetField(value: /* field */ js.UndefOr[String] => Unit): Self = this.set("setField", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteSetField: Self = this.set("setField", js.undefined)
+    
     @scala.inline
     def setSetRegion(value: /* region */ js.UndefOr[Array] => Unit): Self = this.set("setRegion", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteSetRegion: Self = this.set("setRegion", js.undefined)
+    
     @scala.inline
     def setSetThickness(value: /* thickness */ js.UndefOr[Double] => Unit): Self = this.set("setThickness", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteSetThickness: Self = this.set("setThickness", js.undefined)
   }
-  
 }
-

@@ -3,7 +3,7 @@ package typings.hdrHistogramJs.percentileIteratorMod
 import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used for iterating through histogram values according to percentile levels. The iteration is
@@ -20,4 +20,3 @@ class default protected () extends PercentileIterator {
     */
   def this(histogram: AbstractHistogram, percentileTicksPerHalfDistance: Double) = this()
 }
-

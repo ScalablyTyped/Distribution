@@ -14,11 +14,12 @@ import typings.std.PromiseConstructorLike
 import typings.std.global.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/Observable", JSImport.Namespace)
 @js.native
 object internalObservableMod extends js.Object {
+  
   @js.native
   /**
     * @constructor
@@ -29,16 +30,16 @@ object internalObservableMod extends js.Object {
     */
   class Observable[T] () extends Subscribable[T] {
     def this(subscribe: js.ThisFunction1[/* this */ Observable[T], /* subscriber */ Subscriber[T], TeardownLogic]) = this()
+    
     /** Internal implementation detail, do not use directly. */
     var _isScalar: Boolean = js.native
-    /** @deprecated This is an internal implementation detail, do not use. */
-    var operator: Operator[_, T] = js.native
-    /** @deprecated This is an internal implementation detail, do not use. */
-    var source: Observable[_] = js.native
+    
     /** @internal This is an internal implementation detail, do not use. */
     def _subscribe(subscriber: Subscriber[_]): TeardownLogic = js.native
+    
     /** @deprecated This is an internal implementation detail, do not use. */
     def _trySubscribe(sink: Subscriber[T]): TeardownLogic = js.native
+    
     /**
       * @method forEach
       * @param {Function} next a handler for each value emitted by the observable
@@ -48,6 +49,7 @@ object internalObservableMod extends js.Object {
       */
     def forEach(next: js.Function1[/* value */ T, Unit]): js.Promise[Unit] = js.native
     def forEach(next: js.Function1[/* value */ T, Unit], promiseCtor: PromiseConstructorLike): js.Promise[Unit] = js.native
+    
     /**
       * Creates a new Observable, with this Observable as the source, and the passed
       * operator defined as the new observable's operator.
@@ -56,6 +58,10 @@ object internalObservableMod extends js.Object {
       * @return {Observable} a new observable with the Operator applied
       */
     def lift[R](operator: Operator[T, R]): Observable[R] = js.native
+    
+    /** @deprecated This is an internal implementation detail, do not use. */
+    var operator: Operator[_, T] = js.native
+    
     def pipe(): Observable[T] = js.native
     def pipe[A](op1: OperatorFunction[T, A]): Observable[A] = js.native
     def pipe[A, B](op1: OperatorFunction[T, A], op2: OperatorFunction[A, B]): Observable[B] = js.native
@@ -123,14 +129,16 @@ object internalObservableMod extends js.Object {
       op9: OperatorFunction[H, I],
       operations: (OperatorFunction[_, _])*
     ): Observable[js.Object] = js.native
+    
+    /** @deprecated This is an internal implementation detail, do not use. */
+    var source: Observable[_] = js.native
+    
     def toPromise[T](): js.Promise[T] = js.native
     def toPromise[T](
       PromiseCtor: PromiseConstructor with (Instantiable1[
           /* executor */ js.Function2[
             /* resolve */ js.Function1[
-              /* value */ js.UndefOr[
-                (/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any])
-              ], 
+              /* value */ (/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]), 
               Unit
             ], 
             /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
@@ -141,10 +149,10 @@ object internalObservableMod extends js.Object {
     ): js.Promise[T] = js.native
     def toPromise[T](PromiseCtor: PromiseConstructorLike): js.Promise[T] = js.native
   }
-  
   /* static members */
   @js.native
   object Observable extends js.Object {
+    
     /**
       * Creates a new cold Observable by calling the Observable constructor
       * @static true
@@ -156,22 +164,7 @@ object internalObservableMod extends js.Object {
       * @deprecated use new Observable() instead
       */
     var create: js.Function = js.native
-    /**
-      * @nocollapse
-      * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
-      */
-    @JSName("if")
-    var if_Original: FnCall = js.native
-    /**
-      * @nocollapse
-      * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';
-      */
-    @JSName("throw")
-    var throw_Original: js.Function2[
-        /* error */ js.Any, 
-        /* scheduler */ js.UndefOr[SchedulerLike], 
-        Observable[scala.Nothing]
-      ] = js.native
+    
     /**
       * @nocollapse
       * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
@@ -185,11 +178,26 @@ object internalObservableMod extends js.Object {
     def `if`[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = js.native
     /**
       * @nocollapse
+      * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
+      */
+    @JSName("if")
+    var if_Original: FnCall = js.native
+    
+    /**
+      * @nocollapse
       * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';
       */
     def `throw`(error: js.Any): Observable[scala.Nothing] = js.native
     def `throw`(error: js.Any, scheduler: SchedulerLike): Observable[scala.Nothing] = js.native
+    /**
+      * @nocollapse
+      * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';
+      */
+    @JSName("throw")
+    var throw_Original: js.Function2[
+        /* error */ js.Any, 
+        /* scheduler */ js.UndefOr[SchedulerLike], 
+        Observable[scala.Nothing]
+      ] = js.native
   }
-  
 }
-

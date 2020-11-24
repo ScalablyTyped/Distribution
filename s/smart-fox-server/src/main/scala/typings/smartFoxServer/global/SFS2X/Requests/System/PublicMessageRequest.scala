@@ -3,7 +3,7 @@ package typings.smartFoxServer.global.SFS2X.Requests.System
 import typings.smartFoxServer.SFS2X.Entities.SFSRoom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.System.PublicMessageRequest")
 @js.native
@@ -20,4 +20,3 @@ class PublicMessageRequest protected ()
   def this(message: String, params: js.UndefOr[scala.Nothing], targetRoom: SFSRoom) = this()
   def this(message: String, params: js.Object, targetRoom: SFSRoom) = this()
 }
-

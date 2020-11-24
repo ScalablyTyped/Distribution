@@ -6,15 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudprivatecatalogproducer/v1beta1", "cloudprivatecatalogproducer_v1beta1.Resource$Catalogs")
 @js.native
 class ResourceCatalogs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var associations: ResourceCatalogsAssociations = js.native
+  
   var context: APIRequestContext = js.native
-  var products: ResourceCatalogsProducts = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.create
     * @desc Creates a new Catalog resource.
@@ -46,6 +48,7 @@ class ResourceCatalogs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.delete
     * @desc Soft deletes an existing Catalog and all resources under it. The
@@ -81,6 +84,7 @@ class ResourceCatalogs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.get
     * @desc Returns the requested Catalog resource.
@@ -112,6 +116,7 @@ class ResourceCatalogs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.getIamPolicy
     * @desc Gets IAM policy for the specified Catalog.
@@ -143,6 +148,7 @@ class ResourceCatalogs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleIamV1Policy]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.list
     * @desc Lists Catalog resources that the producer has access to, within the
@@ -177,6 +183,7 @@ class ResourceCatalogs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListCatalogsResponse]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.patch
     * @desc Updates a specific Catalog resource.
@@ -210,6 +217,9 @@ class ResourceCatalogs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog]
   ): Unit = js.native
+  
+  var products: ResourceCatalogsProducts = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.setIamPolicy
     * @desc Sets the IAM policy for the specified Catalog.
@@ -242,6 +252,7 @@ class ResourceCatalogs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleIamV1Policy]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.testIamPermissions
     * @desc Tests the IAM permissions for the specified Catalog.
@@ -274,6 +285,7 @@ class ResourceCatalogs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleIamV1TestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.undelete
     * @desc Undeletes a deleted Catalog and all resources under it.
@@ -307,4 +319,3 @@ class ResourceCatalogs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Catalog]
   ): Unit = js.native
 }
-

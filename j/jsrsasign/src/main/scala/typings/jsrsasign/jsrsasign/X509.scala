@@ -9,11 +9,11 @@ import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait X509 extends js.Object {
-  var hex: String = js.native
+  
   /**
     * get AuthorityInfoAccess extension value in the certificate as associative array
     * @return associative array of AIA extension properties
@@ -33,6 +33,7 @@ trait X509 extends js.Object {
     *   caissuer: ["http://rep.foo.com/aaa.p8m"] }
     */
   def getExtAIAInfo(): js.UndefOr[Caissuer] = js.native
+  
   /**
     * get authorityKeyIdentifier value as JSON object in the certificate
     * @return JSON object of authority key identifier or null
@@ -50,6 +51,7 @@ trait X509 extends js.Object {
     * x.getExtAuthorityKeyIdentifier() → { kid: "1234abcd..." }
     */
   def getExtAuthorityKeyIdentifier(): Kid | Null = js.native
+  
   /**
     * get BasicConstraints extension value as object in the certificate
     * @return associative array which may have "cA" and "pathLen" parameters
@@ -72,6 +74,7 @@ trait X509 extends js.Object {
     * x.getExtBasicConstraints() → { cA: true, pathLen: 3 };
     */
   def getExtBasicConstraints(): CA_ = js.native
+  
   /**
     * get array of string for fullName URIs in cRLDistributionPoints(CDP) in the certificate
     * @return array of fullName URIs of CDP of the certificate
@@ -89,6 +92,7 @@ trait X509 extends js.Object {
     * ["http://example.com/aaa.crl", "http://example.org/aaa.crl"]
     */
   def getExtCRLDistributionPointsURI(): js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * get CertificatePolicies extension value in the certificate as array
     * @return array of PolicyInformation JSON object
@@ -111,6 +115,7 @@ trait X509 extends js.Object {
     *    unotice: "explicit text" }]
     */
   def getExtCertificatePolicies(): js.UndefOr[Cps] = js.native
+  
   /**
     * get extKeyUsage value as array of name string in the certificate
     * @return array of extended key usage ID name or oid
@@ -127,6 +132,7 @@ trait X509 extends js.Object {
     * x.getExtExtKeyUsageName() → ["serverAuth", "clientAuth", "0.1.2.3.4.5"]
     */
   def getExtExtKeyUsageName(): js.Array[String] = js.native
+  
   /**
     * get a X.509v3 extesion information such as extension OID, criticality and value index for specified oid or name.
     * @param oidOrName X.509 extension oid or name (ex. keyUsage or 2.5.29.19)
@@ -144,6 +150,7 @@ trait X509 extends js.Object {
     * x.getExtInfo("unknownExt") → undefined
     */
   def getExtInfo(oidOrName: String): X509Extension = js.native
+  
   /**
     * get KeyUsage extension value as binary string in the certificate
     * @return binary string of key usage bits (ex. '101')
@@ -162,6 +169,7 @@ trait X509 extends js.Object {
     * // 1 - keyEncipherment
     */
   def getExtKeyUsageBin(): String = js.native
+  
   /**
     * get KeyUsage extension value as names in the certificate
     * @return comma separated string of key usage
@@ -176,6 +184,7 @@ trait X509 extends js.Object {
     * x.getExtKeyUsageString() → "digitalSignature,keyEncipherment"
     */
   def getExtKeyUsageString(): String = js.native
+  
   /**
     * get subjectAltName value as array of string in the certificate
     * @return array of alt name array
@@ -202,6 +211,7 @@ trait X509 extends js.Object {
     *  ["DN",   "/C=US/O=TEST1"]]
     */
   def getExtSubjectAltName2(): js.UndefOr[js.Array[js.Array[String]]] = js.native
+  
   /**
     * get subjectKeyIdentifier value as hexadecimal string in the certificate
     * @return hexadecimal string of subject key identifier or null
@@ -215,6 +225,7 @@ trait X509 extends js.Object {
     * x.getExtSubjectKeyIdentifier() → "1b3347ab...";
     */
   def getExtSubjectKeyIdentifier(): String = js.native
+  
   /**
     * get certificate information as string.
     * @return certificate information string
@@ -247,6 +258,7 @@ trait X509 extends js.Object {
     * signature: 1c1a0697dcd79c9f...
     */
   def getInfo(): String = js.native
+  
   /**
     * get hexadecimal string of issuer field TLV of certificate.
     * @return hexadecial string of issuer DN ASN.1
@@ -256,6 +268,7 @@ trait X509 extends js.Object {
     * var issuer = x.getIssuerHex(); // return string like "3013..."
     */
   def getIssuerHex(): String = js.native
+  
   /**
     * get string of issuer field of certificate.
     * @return issuer DN string
@@ -265,6 +278,7 @@ trait X509 extends js.Object {
     * var issuer = x.getIssuerString(); // return string like "/C=US/O=TEST"
     */
   def getIssuerString(): String = js.native
+  
   /**
     * get notAfter field string of certificate.
     * @return not after time value (ex. "151231235959Z")
@@ -274,6 +288,7 @@ trait X509 extends js.Object {
     * var notAfter = x.getNotAfter(); // return string like "151231235959Z"
     */
   def getNotAfter(): String = js.native
+  
   /**
     * get notBefore field string of certificate.
     * @return not before time value (ex. "151231235959Z")
@@ -283,6 +298,7 @@ trait X509 extends js.Object {
     * var notBefore = x.getNotBefore(); // return string like "151231235959Z"
     */
   def getNotBefore(): String = js.native
+  
   /**
     * get a RSAKey/ECDSA/DSA public key object of subjectPublicKeyInfo field.
     * @return RSAKey/ECDSA/DSA public key object of subjectPublicKeyInfo field
@@ -292,6 +308,7 @@ trait X509 extends js.Object {
     * pubkey = x.getPublicKey();
     */
   def getPublicKey(): RSAKey | DSA | ECDSA = js.native
+  
   /**
     * get a string index of contents of subjectPublicKeyInfo BITSTRING value from hexadecimal certificate
     * @return string index of key contents
@@ -302,6 +319,7 @@ trait X509 extends js.Object {
     */
   // NOTE: Without BITSTRING encapsulation.
   def getPublicKeyContentIdx(): Double = js.native
+  
   /**
     * get a hexadecimal string of subjectPublicKeyInfo field.
     * @return ASN.1 SEQUENCE hexadecimal string of subjectPublicKeyInfo field
@@ -311,6 +329,7 @@ trait X509 extends js.Object {
     * hSPKI = x.getPublicKeyHex(); // return string like "30820122..."
     */
   def getPublicKeyHex(): String = js.native
+  
   /**
     * get a string index of subjectPublicKeyInfo field for hexadecimal string certificate.
     * @return string index of subjectPublicKeyInfo field for hexadecimal string certificate.
@@ -320,6 +339,7 @@ trait X509 extends js.Object {
     * idx = x.getPublicKeyIdx(); // return string index in x.hex parameter
     */
   def getPublicKeyIdx(): Double = js.native
+  
   /**
     * get hexadecimal string of serialNumber field of certificate.
     * @return hexadecimal string of certificate serial number
@@ -329,6 +349,7 @@ trait X509 extends js.Object {
     * var sn = x.getSerialNumberHex(); // return string like "01ad..."
     */
   def getSerialNumberHex(): String = js.native
+  
   /**
     * get signature algorithm name in basic field
     * @return signature algorithm name (ex. SHA1withRSA, SHA256withECDSA)
@@ -340,6 +361,7 @@ trait X509 extends js.Object {
     * algName = x.getSignatureAlgorithmField();
     */
   def getSignatureAlgorithmField(): String = js.native
+  
   /**
     * get signature algorithm name from hexadecimal certificate data
     * @param hCert hexadecimal string of X.509 certificate binary
@@ -352,6 +374,7 @@ trait X509 extends js.Object {
     * x.getSignatureAlgorithmName() → "SHA256withRSA"
     */
   def getSignatureAlgorithmName(): String = js.native
+  
   /**
     * get signature value in hexadecimal string
     * @return signature value hexadecimal string without BitString unused bits
@@ -363,6 +386,7 @@ trait X509 extends js.Object {
     * x.getSignatureValueHex() → "8a4c47913..."
     */
   def getSignatureValueHex(): String = js.native
+  
   /**
     * get hexadecimal string of subject field of certificate.
     * @return hexadecial string of subject DN ASN.1
@@ -372,6 +396,7 @@ trait X509 extends js.Object {
     * var subject = x.getSubjectHex(); // return string like "3013..."
     */
   def getSubjectHex(): String = js.native
+  
   /**
     * get string of subject field of certificate.
     * @return subject DN string
@@ -381,6 +406,7 @@ trait X509 extends js.Object {
     * var subject = x.getSubjectString(); // return string like "/C=US/O=TEST"
     */
   def getSubjectString(): String = js.native
+  
   /**
     * get format version (X.509v1 or v3 certificate)
     * @return 1 for X509v1, 3 for X509v3, otherwise 0
@@ -398,6 +424,9 @@ trait X509 extends js.Object {
     * sn = x.getSerialNumberHex(); // return string like "01ad..."
     */
   def getVersion(): Double = js.native
+  
+  var hex: String = js.native
+  
   /**
     * set array of X.509v3 extesion information such as extension OID, criticality and value index.
     * @description
@@ -416,6 +445,7 @@ trait X509 extends js.Object {
     * [ { oid: "2.5.29,19", critical: true, vidx: 2504 }, ... ]
     */
   def parseExt(params: Vidx): Unit = js.native
+  
   /**
     * read a hexadecimal string of X.509 certificate
     * @param sCertHex hexadecimal string of X.509 certificate
@@ -426,6 +456,7 @@ trait X509 extends js.Object {
     * x.readCertHex("3082..."); // read certificate
     */
   def readCertHex(sCertHex: String): Unit = js.native
+  
   /**
     * read PEM formatted X.509 certificate from string.
     * @param sCertPEM string for PEM formatted X.509 certificate
@@ -434,6 +465,7 @@ trait X509 extends js.Object {
     * x.readCertPEM(sCertPEM); // read certificate
     */
   def readCertPEM(sCertPEM: String): Unit = js.native
+  
   def verifySignature(pubKey: DSA): Boolean = js.native
   def verifySignature(pubKey: ECDSA): Boolean = js.native
   /**
@@ -451,4 +483,3 @@ trait X509 extends js.Object {
     */
   def verifySignature(pubKey: RSAKey): Boolean = js.native
 }
-

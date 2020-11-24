@@ -1,0 +1,10 @@
+package typings.fingerprintjsFingerprintjs.mod
+
+import org.scalablytyped.runtime.TopLevel
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("@fingerprintjs/fingerprintjs", JSImport.Namespace)
+@js.native
+object ^ extends TopLevel[Fingerprint2Static]

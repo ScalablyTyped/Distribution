@@ -2,12 +2,209 @@ package typings.babylonjs
 
 import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerComponentStateType
 import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerComponentType
-import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHandness
+import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHandedness
+import typings.babylonjs.webXRHandTrackingMod.HandPart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object babylonjsStrings {
+  
+  @scala.inline
+  def DeepImmutableObject: DeepImmutableObject = "DeepImmutableObject".asInstanceOf[DeepImmutableObject]
+  
+  @scala.inline
+  def Horizontal: Horizontal = "Horizontal".asInstanceOf[Horizontal]
+  
+  @scala.inline
+  def Vertical: Vertical = "Vertical".asInstanceOf[Vertical]
+  
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @scala.inline
+  def abort: abort = "abort".asInstanceOf[abort]
+  
+  @scala.inline
+  def additive: additive = "additive".asInstanceOf[additive]
+  
+  @scala.inline
+  def `alpha-blend`: `alpha-blend` = "alpha-blend".asInstanceOf[`alpha-blend`]
+  
+  @scala.inline
+  def `bounded-floor`: `bounded-floor` = "bounded-floor".asInstanceOf[`bounded-floor`]
+  
+  @scala.inline
+  def button: button = "button".asInstanceOf[button]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def devicechange: devicechange = "devicechange".asInstanceOf[devicechange]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def gaze: gaze = "gaze".asInstanceOf[gaze]
+  
+  @scala.inline
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @scala.inline
+  def `immersive-ar`: `immersive-ar` = "immersive-ar".asInstanceOf[`immersive-ar`]
+  
+  @scala.inline
+  def `immersive-vr`: `immersive-vr` = "immersive-vr".asInstanceOf[`immersive-vr`]
+  
+  @scala.inline
+  def index: index = "index".asInstanceOf[index]
+  
+  @scala.inline
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @scala.inline
+  def inputsourceschange: inputsourceschange = "inputsourceschange".asInstanceOf[inputsourceschange]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def little: little = "little".asInstanceOf[little]
+  
+  @scala.inline
+  def load: load = "load".asInstanceOf[load]
+  
+  @scala.inline
+  def loadend: loadend = "loadend".asInstanceOf[loadend]
+  
+  @scala.inline
+  def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
+  
+  @scala.inline
+  def local: local = "local".asInstanceOf[local]
+  
+  @scala.inline
+  def `local-floor`: `local-floor` = "local-floor".asInstanceOf[`local-floor`]
+  
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def opaque: opaque = "opaque".asInstanceOf[opaque]
+  
+  @scala.inline
+  def pressed: pressed = "pressed".asInstanceOf[pressed]
+  
+  @scala.inline
+  def progress: progress = "progress".asInstanceOf[progress]
+  
+  @scala.inline
+  def readystatechange: readystatechange = "readystatechange".asInstanceOf[readystatechange]
+  
+  @scala.inline
+  def reset: reset = "reset".asInstanceOf[reset]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def ring: ring = "ring".asInstanceOf[ring]
+  
+  @scala.inline
+  def screen: screen = "screen".asInstanceOf[screen]
+  
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  
+  @scala.inline
+  def selectend: selectend = "selectend".asInstanceOf[selectend]
+  
+  @scala.inline
+  def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
+  
+  @scala.inline
+  def squeeze: squeeze = "squeeze".asInstanceOf[squeeze]
+  
+  @scala.inline
+  def squeezeend: squeezeend = "squeezeend".asInstanceOf[squeezeend]
+  
+  @scala.inline
+  def squeezestart: squeezestart = "squeezestart".asInstanceOf[squeezestart]
+  
+  @scala.inline
+  def state: state = "state".asInstanceOf[state]
+  
+  @scala.inline
+  def thumb: thumb = "thumb".asInstanceOf[thumb]
+  
+  @scala.inline
+  def thumbstick: thumbstick = "thumbstick".asInstanceOf[thumbstick]
+  
+  @scala.inline
+  def timeout: timeout = "timeout".asInstanceOf[timeout]
+  
+  @scala.inline
+  def touched: touched = "touched".asInstanceOf[touched]
+  
+  @scala.inline
+  def touchpad: touchpad = "touchpad".asInstanceOf[touchpad]
+  
+  @scala.inline
+  def `tracked-pointer`: `tracked-pointer` = "tracked-pointer".asInstanceOf[`tracked-pointer`]
+  
+  @scala.inline
+  def transform: transform = "transform".asInstanceOf[transform]
+  
+  @scala.inline
+  def trigger: trigger = "trigger".asInstanceOf[trigger]
+  
+  @scala.inline
+  def unbounded: unbounded = "unbounded".asInstanceOf[unbounded]
+  
+  @scala.inline
+  def viewer: viewer = "viewer".asInstanceOf[viewer]
+  
+  @scala.inline
+  def visibility: visibility = "visibility".asInstanceOf[visibility]
+  
+  @scala.inline
+  def visibilitychange: visibilitychange = "visibilitychange".asInstanceOf[visibilitychange]
+  
+  @scala.inline
+  def visible: visible = "visible".asInstanceOf[visible]
+  
+  @scala.inline
+  def `visible-blurred`: `visible-blurred` = "visible-blurred".asInstanceOf[`visible-blurred`]
+  
+  @scala.inline
+  def vrdisplayconnected: vrdisplayconnected = "vrdisplayconnected".asInstanceOf[vrdisplayconnected]
+  
+  @scala.inline
+  def vrdisplaydisconnected: vrdisplaydisconnected = "vrdisplaydisconnected".asInstanceOf[vrdisplaydisconnected]
+  
+  @scala.inline
+  def vrdisplaypresentchange: vrdisplaypresentchange = "vrdisplaypresentchange".asInstanceOf[vrdisplaypresentchange]
+  
+  @scala.inline
+  def wrist: wrist = "wrist".asInstanceOf[wrist]
+  
+  @scala.inline
+  def xAxis: xAxis = "xAxis".asInstanceOf[xAxis]
+  
+  @scala.inline
+  def `xr-standard`: `xr-standard` = "xr-standard".asInstanceOf[`xr-standard`]
+  
+  @scala.inline
+  def yAxis: yAxis = "yAxis".asInstanceOf[yAxis]
+  
   @js.native
   sealed trait DeepImmutableObject extends js.Object
   
@@ -43,6 +240,12 @@ object babylonjsStrings {
        with typings.babylonjs.BABYLON.MotionControllerComponentStateType
   
   @js.native
+  sealed trait devicechange extends XREventType
+  
+  @js.native
+  sealed trait end extends XREventType
+  
+  @js.native
   sealed trait error extends js.Object
   
   @js.native
@@ -58,14 +261,27 @@ object babylonjsStrings {
   sealed trait `immersive-vr` extends XRSessionMode
   
   @js.native
+  sealed trait index
+    extends HandPart
+       with typings.babylonjs.BABYLON.HandPart
+  
+  @js.native
   sealed trait `inline` extends XRSessionMode
   
   @js.native
+  sealed trait inputsourceschange extends XREventType
+  
+  @js.native
   sealed trait left
-    extends MotionControllerHandness
-       with typings.babylonjs.BABYLON.MotionControllerHandness
+    extends MotionControllerHandedness
+       with typings.babylonjs.BABYLON.MotionControllerHandedness
        with XREye
        with XRHandedness
+  
+  @js.native
+  sealed trait little
+    extends HandPart
+       with typings.babylonjs.BABYLON.HandPart
   
   @js.native
   sealed trait load extends js.Object
@@ -83,9 +299,14 @@ object babylonjsStrings {
   sealed trait `local-floor` extends XRReferenceSpaceType
   
   @js.native
+  sealed trait middle
+    extends HandPart
+       with typings.babylonjs.BABYLON.HandPart
+  
+  @js.native
   sealed trait none
-    extends MotionControllerHandness
-       with typings.babylonjs.BABYLON.MotionControllerHandness
+    extends MotionControllerHandedness
+       with typings.babylonjs.BABYLON.MotionControllerHandedness
        with XREye
        with XRHandedness
   
@@ -104,22 +325,51 @@ object babylonjsStrings {
   sealed trait readystatechange extends js.Object
   
   @js.native
+  sealed trait reset extends XREventType
+  
+  @js.native
   sealed trait right
-    extends MotionControllerHandness
-       with typings.babylonjs.BABYLON.MotionControllerHandness
+    extends MotionControllerHandedness
+       with typings.babylonjs.BABYLON.MotionControllerHandedness
        with XREye
        with XRHandedness
+  
+  @js.native
+  sealed trait ring
+    extends HandPart
+       with typings.babylonjs.BABYLON.HandPart
   
   @js.native
   sealed trait screen extends XRTargetRayMode
   
   @js.native
+  sealed trait select extends XREventType
+  
+  @js.native
+  sealed trait selectend extends XREventType
+  
+  @js.native
+  sealed trait selectstart extends XREventType
+  
+  @js.native
   sealed trait squeeze
     extends MotionControllerComponentType
        with typings.babylonjs.BABYLON.MotionControllerComponentType
+       with XREventType
+  
+  @js.native
+  sealed trait squeezeend extends XREventType
+  
+  @js.native
+  sealed trait squeezestart extends XREventType
   
   @js.native
   sealed trait state extends js.Object
+  
+  @js.native
+  sealed trait thumb
+    extends HandPart
+       with typings.babylonjs.BABYLON.HandPart
   
   @js.native
   sealed trait thumbstick
@@ -160,6 +410,9 @@ object babylonjsStrings {
   sealed trait visibility extends js.Object
   
   @js.native
+  sealed trait visibilitychange extends XREventType
+  
+  @js.native
   sealed trait visible extends XRVisibilityState
   
   @js.native
@@ -175,6 +428,11 @@ object babylonjsStrings {
   sealed trait vrdisplaypresentchange extends js.Object
   
   @js.native
+  sealed trait wrist
+    extends HandPart
+       with typings.babylonjs.BABYLON.HandPart
+  
+  @js.native
   sealed trait xAxis extends js.Object
   
   @js.native
@@ -182,104 +440,4 @@ object babylonjsStrings {
   
   @js.native
   sealed trait yAxis extends js.Object
-  
-  @scala.inline
-  def DeepImmutableObject: DeepImmutableObject = "DeepImmutableObject".asInstanceOf[DeepImmutableObject]
-  @scala.inline
-  def Horizontal: Horizontal = "Horizontal".asInstanceOf[Horizontal]
-  @scala.inline
-  def Vertical: Vertical = "Vertical".asInstanceOf[Vertical]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def abort: abort = "abort".asInstanceOf[abort]
-  @scala.inline
-  def additive: additive = "additive".asInstanceOf[additive]
-  @scala.inline
-  def `alpha-blend`: `alpha-blend` = "alpha-blend".asInstanceOf[`alpha-blend`]
-  @scala.inline
-  def `bounded-floor`: `bounded-floor` = "bounded-floor".asInstanceOf[`bounded-floor`]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def gaze: gaze = "gaze".asInstanceOf[gaze]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def `immersive-ar`: `immersive-ar` = "immersive-ar".asInstanceOf[`immersive-ar`]
-  @scala.inline
-  def `immersive-vr`: `immersive-vr` = "immersive-vr".asInstanceOf[`immersive-vr`]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def load: load = "load".asInstanceOf[load]
-  @scala.inline
-  def loadend: loadend = "loadend".asInstanceOf[loadend]
-  @scala.inline
-  def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
-  @scala.inline
-  def `local-floor`: `local-floor` = "local-floor".asInstanceOf[`local-floor`]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def opaque: opaque = "opaque".asInstanceOf[opaque]
-  @scala.inline
-  def pressed: pressed = "pressed".asInstanceOf[pressed]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def readystatechange: readystatechange = "readystatechange".asInstanceOf[readystatechange]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def screen: screen = "screen".asInstanceOf[screen]
-  @scala.inline
-  def squeeze: squeeze = "squeeze".asInstanceOf[squeeze]
-  @scala.inline
-  def state: state = "state".asInstanceOf[state]
-  @scala.inline
-  def thumbstick: thumbstick = "thumbstick".asInstanceOf[thumbstick]
-  @scala.inline
-  def timeout: timeout = "timeout".asInstanceOf[timeout]
-  @scala.inline
-  def touched: touched = "touched".asInstanceOf[touched]
-  @scala.inline
-  def touchpad: touchpad = "touchpad".asInstanceOf[touchpad]
-  @scala.inline
-  def `tracked-pointer`: `tracked-pointer` = "tracked-pointer".asInstanceOf[`tracked-pointer`]
-  @scala.inline
-  def transform: transform = "transform".asInstanceOf[transform]
-  @scala.inline
-  def trigger: trigger = "trigger".asInstanceOf[trigger]
-  @scala.inline
-  def unbounded: unbounded = "unbounded".asInstanceOf[unbounded]
-  @scala.inline
-  def viewer: viewer = "viewer".asInstanceOf[viewer]
-  @scala.inline
-  def visibility: visibility = "visibility".asInstanceOf[visibility]
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
-  @scala.inline
-  def `visible-blurred`: `visible-blurred` = "visible-blurred".asInstanceOf[`visible-blurred`]
-  @scala.inline
-  def vrdisplayconnected: vrdisplayconnected = "vrdisplayconnected".asInstanceOf[vrdisplayconnected]
-  @scala.inline
-  def vrdisplaydisconnected: vrdisplaydisconnected = "vrdisplaydisconnected".asInstanceOf[vrdisplaydisconnected]
-  @scala.inline
-  def vrdisplaypresentchange: vrdisplaypresentchange = "vrdisplaypresentchange".asInstanceOf[vrdisplaypresentchange]
-  @scala.inline
-  def xAxis: xAxis = "xAxis".asInstanceOf[xAxis]
-  @scala.inline
-  def `xr-standard`: `xr-standard` = "xr-standard".asInstanceOf[`xr-standard`]
-  @scala.inline
-  def yAxis: yAxis = "yAxis".asInstanceOf[yAxis]
 }
-

@@ -3,7 +3,7 @@ package typings.smartFoxServer.global.SFS2X.Requests.System
 import typings.smartFoxServer.SFS2X.Entities.Match.MatchExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.System.FindRoomsRequest")
 @js.native
@@ -20,4 +20,3 @@ class FindRoomsRequest protected ()
   def this(expr: MatchExpression, groupId: js.UndefOr[scala.Nothing], limit: Double) = this()
   def this(expr: MatchExpression, groupId: String, limit: Double) = this()
 }
-

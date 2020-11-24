@@ -2,7 +2,7 @@ package typings.reactNativeFirebase.mod.RNFirebase.functions
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The set of Firebase Functions status codes. The codes are the same at the
@@ -63,41 +63,56 @@ import scala.scalajs.js.annotation._
   - typings.reactNativeFirebase.reactNativeFirebaseStrings.unauthenticated
 */
 trait FunctionsErrorCode extends js.Object
-
 object FunctionsErrorCode {
+  
   @scala.inline
   def aborted: typings.reactNativeFirebase.reactNativeFirebaseStrings.aborted = "aborted".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.aborted]
+  
   @scala.inline
   def `already-exists`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`already-exists` = "already-exists".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`already-exists`]
+  
   @scala.inline
   def cancelled: typings.reactNativeFirebase.reactNativeFirebaseStrings.cancelled = "cancelled".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.cancelled]
+  
   @scala.inline
   def `data-loss`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`data-loss` = "data-loss".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`data-loss`]
+  
   @scala.inline
   def `deadline-exceeded`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`deadline-exceeded` = "deadline-exceeded".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`deadline-exceeded`]
+  
   @scala.inline
   def `failed-precondition`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`failed-precondition` = "failed-precondition".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`failed-precondition`]
+  
   @scala.inline
   def internal: typings.reactNativeFirebase.reactNativeFirebaseStrings.internal = "internal".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.internal]
+  
   @scala.inline
   def `invalid-argument`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`invalid-argument` = "invalid-argument".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`invalid-argument`]
+  
   @scala.inline
   def `not-found`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`not-found` = "not-found".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`not-found`]
+  
   @scala.inline
   def ok: typings.reactNativeFirebase.reactNativeFirebaseStrings.ok = "ok".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.ok]
+  
   @scala.inline
   def `out-of-range`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`out-of-range` = "out-of-range".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`out-of-range`]
+  
   @scala.inline
   def `permission-denied`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`permission-denied` = "permission-denied".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`permission-denied`]
+  
   @scala.inline
   def `resource-exhausted`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`resource-exhausted` = "resource-exhausted".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`resource-exhausted`]
+  
   @scala.inline
   def unauthenticated: typings.reactNativeFirebase.reactNativeFirebaseStrings.unauthenticated = "unauthenticated".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.unauthenticated]
+  
   @scala.inline
   def unavailable: typings.reactNativeFirebase.reactNativeFirebaseStrings.unavailable = "unavailable".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.unavailable]
+  
   @scala.inline
   def unimplemented: typings.reactNativeFirebase.reactNativeFirebaseStrings.unimplemented = "unimplemented".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.unimplemented]
+  
   @scala.inline
   def unknown: typings.reactNativeFirebase.reactNativeFirebaseStrings.unknown = "unknown".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.unknown]
 }
-

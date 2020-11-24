@@ -4,7 +4,7 @@ import typings.antDesignReactNative.anon.TypeofPortalHost
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Portal allows to render a component at a different place in the parent tree.
@@ -31,13 +31,14 @@ import scala.scalajs.js.annotation._
 @JSImport("@ant-design/react-native/lib/portal/portal", JSImport.Default)
 @js.native
 class default () extends Portal
-
 /* static members */
 @JSImport("@ant-design/react-native/lib/portal/portal", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   var Host: TypeofPortalHost = js.native
+  
   def add(e: ReactNode): Double = js.native
+  
   def remove(key: Double): Unit = js.native
 }
-

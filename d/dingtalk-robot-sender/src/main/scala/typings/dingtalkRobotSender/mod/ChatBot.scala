@@ -7,10 +7,11 @@ import typings.dingtalkRobotSender.anon.MessageUrl
 import typings.dingtalkRobotSender.mod.Message.FeedCardItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChatBot extends js.Object {
+  
   /**
     * 发送actionCard(动作卡片)
     * Ps: 支持多个按钮，支持Markdown
@@ -24,6 +25,7 @@ trait ChatBot extends js.Object {
     * @return
     */
   def actionCard(card: BtnOrientation): js.Promise[AxiosResponse[_]] = js.native
+  
   /**
     * 发送feedCard，支持多图文链接
     * Ps: links可包含多个link，建议不要超过4个
@@ -35,6 +37,7 @@ trait ChatBot extends js.Object {
     * @return
     */
   def feedCard(links: js.Array[FeedCardItem]): js.Promise[AxiosResponse[_]] = js.native
+  
   /**
     * 发送单个图文链接
     *
@@ -45,6 +48,7 @@ trait ChatBot extends js.Object {
     * @return
     */
   def link(link: MessageUrl): js.Promise[AxiosResponse[_]] = js.native
+  
   /**
     * 发送Markdown消息
     *
@@ -54,6 +58,7 @@ trait ChatBot extends js.Object {
     */
   def markdown(title: String, text: String): js.Promise[AxiosResponse[_]] = js.native
   def markdown(title: String, text: String, at: AtMobiles): js.Promise[AxiosResponse[_]] = js.native
+  
   /**
     * 发送钉钉消息
     *
@@ -61,6 +66,7 @@ trait ChatBot extends js.Object {
     * @return
     */
   def send(content: MessageType): js.Promise[AxiosResponse[_]] = js.native
+  
   /**
     * 发送纯文本消息，支持@群内成员
     *
@@ -71,4 +77,3 @@ trait ChatBot extends js.Object {
   def text(content: String): js.Promise[AxiosResponse[_]] = js.native
   def text(content: String, at: js.UndefOr[AtMobiles]): js.Promise[AxiosResponse[_]] = js.native
 }
-

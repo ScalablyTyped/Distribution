@@ -8,7 +8,7 @@ import typings.officeJs.Visio.Interfaces.PageCollectionData
 import typings.officeJs.Visio.Interfaces.PageCollectionLoadOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -18,11 +18,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PageCollection extends ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_PageCollection: RequestContext = js.native
-  /** Gets the loaded child items in this collection. */
-  val items: js.Array[Page] = js.native
+  
   /**
     *
     * Gets the number of pages in the collection.
@@ -30,6 +30,7 @@ trait PageCollection extends ClientObject {
     * [Api set:  1.1]
     */
   def getCount(): ClientResult[Double] = js.native
+  
   def getItem(key: String): Page = js.native
   /**
     *
@@ -40,6 +41,10 @@ trait PageCollection extends ClientObject {
     * @param key Key is the name or Id of the page to be retrieved.
     */
   def getItem(key: Double): Page = js.native
+  
+  /** Gets the loaded child items in this collection. */
+  val items: js.Array[Page] = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *
@@ -60,10 +65,10 @@ trait PageCollection extends ClientObject {
   def load(option: String): PageCollection = js.native
   def load(option: js.Array[String]): PageCollection = js.native
   def load(option: LoadOption): PageCollection = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original `Visio.PageCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.PageCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     */
   def toJSON(): PageCollectionData = js.native
 }
-

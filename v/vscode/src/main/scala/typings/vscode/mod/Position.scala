@@ -4,7 +4,7 @@ import typings.vscode.anon.Character
 import typings.vscode.anon.CharacterDelta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Position")
 @js.native
@@ -14,14 +14,12 @@ class Position protected () extends js.Object {
     * @param character A zero-based character value.
     */
   def this(line: Double, character: Double) = this()
+  
   /**
     * The zero-based character value.
     */
   val character: Double = js.native
-  /**
-    * The zero-based line value.
-    */
-  val line: Double = js.native
+  
   /**
     * Compare this to `other`.
     *
@@ -31,6 +29,7 @@ class Position protected () extends js.Object {
     * this and the given position are equal.
     */
   def compareTo(other: Position): Double = js.native
+  
   /**
     * Check if this position is after `other`.
     *
@@ -39,6 +38,7 @@ class Position protected () extends js.Object {
     * or on the same line on a greater character.
     */
   def isAfter(other: Position): Boolean = js.native
+  
   /**
     * Check if this position is after or equal to `other`.
     *
@@ -47,6 +47,7 @@ class Position protected () extends js.Object {
     * or on the same line on a greater or equal character.
     */
   def isAfterOrEqual(other: Position): Boolean = js.native
+  
   /**
     * Check if this position is before `other`.
     *
@@ -55,6 +56,7 @@ class Position protected () extends js.Object {
     * or on the same line on a smaller character.
     */
   def isBefore(other: Position): Boolean = js.native
+  
   /**
     * Check if this position is before or equal to `other`.
     *
@@ -63,6 +65,7 @@ class Position protected () extends js.Object {
     * or on the same line on a smaller or equal character.
     */
   def isBeforeOrEqual(other: Position): Boolean = js.native
+  
   /**
     * Check if this position is equal to `other`.
     *
@@ -71,6 +74,12 @@ class Position protected () extends js.Object {
     * the line and character of this position.
     */
   def isEqual(other: Position): Boolean = js.native
+  
+  /**
+    * The zero-based line value.
+    */
+  val line: Double = js.native
+  
   /**
     * Create a new position relative to this position.
     *
@@ -91,6 +100,7 @@ class Position protected () extends js.Object {
   def translate(lineDelta: js.UndefOr[scala.Nothing], characterDelta: Double): Position = js.native
   def translate(lineDelta: Double): Position = js.native
   def translate(lineDelta: Double, characterDelta: Double): Position = js.native
+  
   /**
     * Create a new position derived from this position.
     *
@@ -111,4 +121,3 @@ class Position protected () extends js.Object {
   def `with`(line: Double): Position = js.native
   def `with`(line: Double, character: Double): Position = js.native
 }
-

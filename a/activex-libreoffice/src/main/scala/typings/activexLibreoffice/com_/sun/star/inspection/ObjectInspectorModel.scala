@@ -4,7 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a default implementation of an {@link ObjectInspectorModel}
@@ -21,8 +21,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ObjectInspectorModel extends XObjectInspectorModel {
+  
   /** creates a default {@link ObjectInspectorModel} , whose one and only handler factory creates a {@link GenericPropertyHandler} . */
   def createDefault(): Unit = js.native
+  
   /**
     * creates a default {@link ObjectInspectorModel} , using an externally provided sequence of property handler factories.
     * @param handlerFactories a sequence of handler factories, as to be provided in the {@link XObjectInspectorModel.HandlerFactories} method.
@@ -30,6 +32,7 @@ trait ObjectInspectorModel extends XObjectInspectorModel {
     * @throws com::sun::star::lang::IllegalArgumentException if the given sequence is empty.
     */
   def createWithHandlerFactories(handlerFactories: SeqEquiv[_]): Unit = js.native
+  
   /**
     * creates a default {@link ObjectInspectorModel} , using an externally provided sequence of property handler factories, and describing an {@link
     * ObjectInspector} which has a help section.
@@ -46,8 +49,8 @@ trait ObjectInspectorModel extends XObjectInspectorModel {
     */
   def createWithHandlerFactoriesAndHelpSection(handlerFactories: SeqEquiv[_], minHelpTextLines: Double, maxHelpTextLines: Double): Unit = js.native
 }
-
 object ObjectInspectorModel {
+  
   @scala.inline
   def apply(
     HandlerFactories: SafeArray[_],
@@ -64,24 +67,29 @@ object ObjectInspectorModel {
     val __obj = js.Dynamic.literal(HandlerFactories = HandlerFactories.asInstanceOf[js.Any], HasHelpSection = HasHelpSection.asInstanceOf[js.Any], IsReadOnly = IsReadOnly.asInstanceOf[js.Any], MaxHelpTextLines = MaxHelpTextLines.asInstanceOf[js.Any], MinHelpTextLines = MinHelpTextLines.asInstanceOf[js.Any], createDefault = js.Any.fromFunction0(createDefault), createWithHandlerFactories = js.Any.fromFunction1(createWithHandlerFactories), createWithHandlerFactoriesAndHelpSection = js.Any.fromFunction3(createWithHandlerFactoriesAndHelpSection), describeCategories = js.Any.fromFunction0(describeCategories), getPropertyOrderIndex = js.Any.fromFunction1(getPropertyOrderIndex))
     __obj.asInstanceOf[ObjectInspectorModel]
   }
+  
   @scala.inline
   implicit class ObjectInspectorModelOps[Self <: ObjectInspectorModel] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreateDefault(value: () => Unit): Self = this.set("createDefault", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setCreateWithHandlerFactories(value: SeqEquiv[_] => Unit): Self = this.set("createWithHandlerFactories", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateWithHandlerFactoriesAndHelpSection(value: (SeqEquiv[_], Double, Double) => Unit): Self = this.set("createWithHandlerFactoriesAndHelpSection", js.Any.fromFunction3(value))
   }
-  
 }
-

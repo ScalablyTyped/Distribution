@@ -5,16 +5,18 @@ import typings.pulumiCloud.serviceMod.Endpoint
 import typings.pulumiPulumi.outputMod.Output_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait API extends js.Object {
+  
   /**
     * Routes all HTTP methods on the given path to the provided handler(s).
     * @param path The path to handle requests on.
     * @param handlers One or more handlers to apply to requests.
     */
   def all(path: String, handlers: RouteHandler*): Unit = js.native
+  
   /**
     * Attach a custom domain to this API.
     *
@@ -27,30 +29,35 @@ trait API extends js.Object {
     * variables and not in source code.
     */
   def attachCustomDomain(domain: Domain): Unit = js.native
+  
   /**
     * Routes DELETE requests on the given path to the provided handler(s).
     * @param path The path to handle requests on.
     * @param handlers One or more handlers to apply to requests.
     */
   def delete(path: String, handlers: RouteHandler*): Unit = js.native
+  
   /**
     * Routes GET requests on the given path to the provided handler(s).
     * @param path The path to handle requests on.
     * @param handlers One or more handlers to apply to requests.
     */
   def get(path: String, handlers: RouteHandler*): Unit = js.native
+  
   /**
     * Routes OPTIONS requests on the given path to the provided handler(s).
     * @param path The path to handle requests on.
     * @param handlers One or more handlers to apply to requests.
     */
   def options(path: String, handlers: RouteHandler*): Unit = js.native
+  
   /**
     * Routes POST requests on the given path to the provided handler(s).
     * @param path The path to handle requests on.
     * @param handlers One or more handlers to apply to requests.
     */
   def post(path: String, handlers: RouteHandler*): Unit = js.native
+  
   /**
     * proxy forwards an HTTP request to a target URL or Endpoint.
     *
@@ -61,6 +68,7 @@ trait API extends js.Object {
     */
   def proxy(path: String, target: String): Unit = js.native
   def proxy(path: String, target: Output_[Endpoint]): Unit = js.native
+  
   /**
     * Publishes an API to be internet accessible.
     *
@@ -70,12 +78,14 @@ trait API extends js.Object {
     * @returns An HttpDeployment object representing the live API.
     */
   def publish(): HttpDeployment = js.native
+  
   /**
     * Routes PUT requests on the given path to the provided handler(s).
     * @param path The path to handle requests on.
     * @param handlers One or more handlers to apply to requests.
     */
   def put(path: String, handlers: RouteHandler*): Unit = js.native
+  
   /**
     * Routes any requests with given HTTP method on the given path to the
     * provided handler(s).
@@ -84,6 +94,7 @@ trait API extends js.Object {
     * @param handlers One or more handlers to apply to requests.
     */
   def route(method: String, path: String, handlers: RouteHandler*): Unit = js.native
+  
   /**
     * static serves a file or directory from within the source folder at the requested path.
     *
@@ -95,8 +106,6 @@ trait API extends js.Object {
   def static(path: String, localPath: String): Unit = js.native
   def static(path: String, localPath: String, options: ServeStaticOptions): Unit = js.native
 }
-
 @JSImport("@pulumi/cloud/api", "API")
 @js.native
 object API extends TopLevel[APIConstructor]
-

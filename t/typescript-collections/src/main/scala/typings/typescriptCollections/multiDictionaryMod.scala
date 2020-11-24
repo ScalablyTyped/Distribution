@@ -3,20 +3,22 @@ package typings.typescriptCollections
 import typings.typescriptCollections.utilMod.IEqualsFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-collections/dist/lib/MultiDictionary", JSImport.Namespace)
 @js.native
 object multiDictionaryMod extends js.Object {
+  
   @js.native
   trait MultiDictionary[K, V] extends js.Object {
+    
     var allowDuplicate: js.Any = js.native
-    var dict: js.Any = js.native
-    var equalsF: js.Any = js.native
+    
     /**
       * Removes all mappings from this dictionary.
       */
     def clear(): Unit = js.native
+    
     /**
       * Returns true if this dictionary at least one value associatted the specified key.
       * @param {Object} key key whose presence in this dictionary is to be
@@ -25,6 +27,11 @@ object multiDictionaryMod extends js.Object {
       * the specified key.
       */
     def containsKey(key: K): Boolean = js.native
+    
+    var dict: js.Any = js.native
+    
+    var equalsF: js.Any = js.native
+    
     /**
       * Returns an array holding the values to which this dictionary maps
       * the specified key.
@@ -34,16 +41,19 @@ object multiDictionaryMod extends js.Object {
       * the specified key.
       */
     def getValue(key: K): js.Array[V] = js.native
+    
     /**
       * Returns true if this dictionary contains no mappings.
       * @return {boolean} true if this dictionary contains no mappings.
       */
     def isEmpty(): Boolean = js.native
+    
     /**
       * Returns an array containing all of the keys in this dictionary.
       * @return {Array} an array containing all of the keys in this dictionary.
       */
     def keys(): js.Array[K] = js.native
+    
     /**
       * Removes the specified values from the array of values associated with the
       * specified key. If a value isn't given, all values associated with the specified
@@ -57,6 +67,7 @@ object multiDictionaryMod extends js.Object {
       */
     def remove(key: K): Boolean = js.native
     def remove(key: K, value: V): Boolean = js.native
+    
     /**
       * Adds the value to the array associated with the specified key, if
       * it is not already present.
@@ -66,11 +77,13 @@ object multiDictionaryMod extends js.Object {
       * @return {boolean} true if the value was not already associated with that key.
       */
     def setValue(key: K, value: V): Boolean = js.native
+    
     /**
       * Returns the number of keys in this dictionary.
       * @return {number} the number of key-value mappings in this dictionary.
       */
     def size(): Double = js.native
+    
     /**
       * Returns an array containing all of the values in this dictionary.
       * @return {Array} an array containing all of the values in this dictionary.
@@ -139,6 +152,4 @@ object multiDictionaryMod extends js.Object {
       allowDuplicateValues: Boolean
     ) = this()
   }
-  
 }
-

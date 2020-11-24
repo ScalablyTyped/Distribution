@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.BooleanConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Boolean")
 @js.native
@@ -12,8 +12,6 @@ class Boolean ()
   extends typings.std.Boolean {
   def this(value: js.Any) = this()
 }
-
 @JSGlobal("Boolean")
 @js.native
 object Boolean extends TopLevel[BooleanConstructor]
-

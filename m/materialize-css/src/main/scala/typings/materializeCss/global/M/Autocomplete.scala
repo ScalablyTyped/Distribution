@@ -4,21 +4,22 @@ import typings.materializeCss.anon.PartialAutocompleteOption
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("M.Autocomplete")
 @js.native
 class Autocomplete ()
   extends typings.materializeCss.M.Autocomplete
-
 /* static members */
 @JSGlobal("M.Autocomplete")
 @js.native
 object Autocomplete extends js.Object {
+  
   /**
     * Get Instance
     */
   def getInstance(elem: Element): typings.materializeCss.M.Autocomplete = js.native
+  
   /**
     * Init autocompletes
     */
@@ -35,4 +36,3 @@ object Autocomplete extends js.Object {
   def init(els: Element): typings.materializeCss.M.Autocomplete = js.native
   def init(els: Element, options: PartialAutocompleteOption): typings.materializeCss.M.Autocomplete = js.native
 }
-

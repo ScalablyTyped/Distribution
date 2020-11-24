@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Implement this interface to expose the hypertext structure of a document.
@@ -21,11 +21,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XAccessibleHypertext extends XAccessibleText {
+  
   /**
     * Returns the number of links and link groups contained within this hypertext document.
     * @returns The number of links and link groups within this hypertext document. Returns 0 if there is no link.
     */
   val HyperLinkCount: Double = js.native
+  
   /**
     * Return the specified link.
     *
@@ -34,11 +36,13 @@ trait XAccessibleHypertext extends XAccessibleText {
     * @returns If the given index is valid, i.e. lies in the interval from 0 to the number of links minus one, a reference to the specified hyperlink object is
     */
   def getHyperLink(nLinkIndex: Double): XAccessibleHyperlink = js.native
+  
   /**
     * Returns the number of links and link groups contained within this hypertext document.
     * @returns The number of links and link groups within this hypertext document. Returns 0 if there is no link.
     */
   def getHyperLinkCount(): Double = js.native
+  
   /**
     * Returns the index of the hyperlink that is associated with this character index.
     *
@@ -49,8 +53,8 @@ trait XAccessibleHypertext extends XAccessibleText {
     */
   def getHyperLinkIndex(nCharIndex: Double): Double = js.native
 }
-
 object XAccessibleHypertext {
+  
   @scala.inline
   def apply(
     CaretPosition: Double,
@@ -87,26 +91,32 @@ object XAccessibleHypertext {
     val __obj = js.Dynamic.literal(CaretPosition = CaretPosition.asInstanceOf[js.Any], CharacterCount = CharacterCount.asInstanceOf[js.Any], HyperLinkCount = HyperLinkCount.asInstanceOf[js.Any], SelectedText = SelectedText.asInstanceOf[js.Any], SelectionEnd = SelectionEnd.asInstanceOf[js.Any], SelectionStart = SelectionStart.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), copyText = js.Any.fromFunction2(copyText), getCaretPosition = js.Any.fromFunction0(getCaretPosition), getCharacter = js.Any.fromFunction1(getCharacter), getCharacterAttributes = js.Any.fromFunction2(getCharacterAttributes), getCharacterBounds = js.Any.fromFunction1(getCharacterBounds), getCharacterCount = js.Any.fromFunction0(getCharacterCount), getHyperLink = js.Any.fromFunction1(getHyperLink), getHyperLinkCount = js.Any.fromFunction0(getHyperLinkCount), getHyperLinkIndex = js.Any.fromFunction1(getHyperLinkIndex), getIndexAtPoint = js.Any.fromFunction1(getIndexAtPoint), getSelectedText = js.Any.fromFunction0(getSelectedText), getSelectionEnd = js.Any.fromFunction0(getSelectionEnd), getSelectionStart = js.Any.fromFunction0(getSelectionStart), getText = js.Any.fromFunction0(getText), getTextAtIndex = js.Any.fromFunction2(getTextAtIndex), getTextBeforeIndex = js.Any.fromFunction2(getTextBeforeIndex), getTextBehindIndex = js.Any.fromFunction2(getTextBehindIndex), getTextRange = js.Any.fromFunction2(getTextRange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCaretPosition = js.Any.fromFunction1(setCaretPosition), setSelection = js.Any.fromFunction2(setSelection))
     __obj.asInstanceOf[XAccessibleHypertext]
   }
+  
   @scala.inline
   implicit class XAccessibleHypertextOps[Self <: XAccessibleHypertext] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setHyperLinkCount(value: Double): Self = this.set("HyperLinkCount", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetHyperLink(value: Double => XAccessibleHyperlink): Self = this.set("getHyperLink", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetHyperLinkCount(value: () => Double): Self = this.set("getHyperLinkCount", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetHyperLinkIndex(value: Double => Double): Self = this.set("getHyperLinkIndex", js.Any.fromFunction1(value))
   }
-  
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.System.RemoteSystems
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RemoteSystemStatus extends js.Object
-
 /** Contains the values that describe a remote system's availability status. */
 @JSGlobal("Windows.System.RemoteSystems.RemoteSystemStatus")
 @js.native
 object RemoteSystemStatus extends js.Object {
+  
   /** The remote system is available. */
   @js.native
   sealed trait available extends RemoteSystemStatus
@@ -26,6 +26,4 @@ object RemoteSystemStatus extends js.Object {
   /** The availability of the remote system is unknown. */
   @js.native
   sealed trait unknown extends RemoteSystemStatus
-  
 }
-

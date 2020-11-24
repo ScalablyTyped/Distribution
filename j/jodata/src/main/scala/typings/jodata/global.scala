@@ -2,20 +2,37 @@ package typings.jodata
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   class jo protected ()
     extends typings.jodata.jo {
     def this(baseUri: String) = this()
   }
-  
   /* static members */
   @js.native
   object jo extends js.Object {
+    
+    def datetime(stringLiteral: String): String = js.native
+    
+    def decimal(stringLiteral: Double): String = js.native
+    
+    def double(stringLiteral: Double): String = js.native
+    
+    def guid(stringLiteral: String): String = js.native
+    
+    // Casts
+    def literal(stringLiteral: String): String = js.native
+    
+    def loadLocal(): typings.jodata.jo = js.native
+    def loadLocal(key: String): typings.jodata.jo = js.native
+    
+    def single(stringLiteral: Double): String = js.native
+    
     @js.native
     class Concat protected ()
       extends typings.jodata.jo.Concat {
@@ -36,17 +53,5 @@ object global extends js.Object {
       extends typings.jodata.jo.PrecedenceGroup {
       def this(filterClause: typings.jodata.jo.FilterClause) = this()
     }
-    
-    def datetime(stringLiteral: String): String = js.native
-    def decimal(stringLiteral: Double): String = js.native
-    def double(stringLiteral: Double): String = js.native
-    def guid(stringLiteral: String): String = js.native
-    // Casts
-    def literal(stringLiteral: String): String = js.native
-    def loadLocal(): typings.jodata.jo = js.native
-    def loadLocal(key: String): typings.jodata.jo = js.native
-    def single(stringLiteral: Double): String = js.native
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.babylonjs.meshSimplificationMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/meshSimplification", "SimplificationSettings")
 @js.native
@@ -27,15 +27,4 @@ class SimplificationSettings protected () extends ISimplificationSettings {
     /** already optimized mesh  */
   optimizeMesh: Boolean
   ) = this()
-  /**
-    * Gets or sets the distance when this optimized version should be used
-    */
-  /* CompleteClass */
-  override var distance: Double = js.native
-  /**
-    * Gets or sets the expected quality
-    */
-  /* CompleteClass */
-  override var quality: Double = js.native
 }
-

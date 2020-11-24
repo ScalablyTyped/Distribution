@@ -1,7 +1,7 @@
 
 # Scala.js typings for locate-path
 
-Typings are for version 5.0.0
+Typings are for version 6.0.0
 
 ## Library description:
 Get the first path that exists on disk of multiple paths
@@ -11,8 +11,8 @@ Get the first path that exists on disk of multiple paths
 | Full name          | locate-path |
 | Keywords           | locate, path, paths, file, files, exists, find, finder, search, searcher, array, iterable, iterator |
 | # releases         | 4 |
-| # dependents       | 68 |
-| # downloads        | 761418096 |
+| # dependents       | 124 |
+| # downloads        | 1375254073 |
 | # stars            | 1 |
 
 ## Links

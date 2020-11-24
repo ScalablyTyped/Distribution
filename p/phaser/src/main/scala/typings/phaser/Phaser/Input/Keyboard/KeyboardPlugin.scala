@@ -10,7 +10,7 @@ import typings.phaser.Phaser.Types.Scenes.SettingsObject
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Keyboard Plugin is an input plugin that belongs to the Scene-owned Input system.
@@ -50,39 +50,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait KeyboardPlugin extends EventEmitter {
-  /**
-    * An array of KeyCombo objects to process.
-    */
-  var combos: js.Array[KeyCombo] = js.native
-  /**
-    * A boolean that controls if this Keyboard Plugin is enabled or not.
-    * Can be toggled on the fly.
-    */
-  var enabled: Boolean = js.native
-  /**
-    * A reference to the core game, so we can listen for visibility events.
-    */
-  var game: Game = js.native
-  /**
-    * An array of Key objects to process.
-    */
-  var keys: js.Array[Key] = js.native
-  /**
-    * A reference to the global Keyboard Manager.
-    */
-  var manager: InputPlugin = js.native
-  /**
-    * A reference to the Scene that this Input Plugin is responsible for.
-    */
-  var scene: Scene = js.native
-  /**
-    * A reference to the Scene Input Plugin that created this Keyboard Plugin.
-    */
-  var sceneInputPlugin: InputPlugin = js.native
-  /**
-    * A reference to the Scene Systems Settings.
-    */
-  var settings: SettingsObject = js.native
+  
   /**
     * By default when a key is pressed Phaser will not stop the event from propagating up to the browser.
     * There are some keys this can be annoying for, like the arrow keys or space bar, which make the browser window scroll.
@@ -119,6 +87,7 @@ trait KeyboardPlugin extends EventEmitter {
   def addCapture(keycode: String): this.type = js.native
   def addCapture(keycode: js.Array[_ | integer]): this.type = js.native
   def addCapture(keycode: integer): this.type = js.native
+  
   def addKey(key: String): Key = js.native
   def addKey(key: String, enableCapture: js.UndefOr[scala.Nothing], emitOnRepeat: Boolean): Key = js.native
   def addKey(key: String, enableCapture: Boolean): Key = js.native
@@ -141,6 +110,7 @@ trait KeyboardPlugin extends EventEmitter {
   def addKey(key: integer, enableCapture: js.UndefOr[scala.Nothing], emitOnRepeat: Boolean): Key = js.native
   def addKey(key: integer, enableCapture: Boolean): Key = js.native
   def addKey(key: integer, enableCapture: Boolean, emitOnRepeat: Boolean): Key = js.native
+  
   def addKeys(keys: String): js.Object = js.native
   def addKeys(keys: String, enableCapture: js.UndefOr[scala.Nothing], emitOnRepeat: Boolean): js.Object = js.native
   def addKeys(keys: String, enableCapture: Boolean): js.Object = js.native
@@ -173,6 +143,7 @@ trait KeyboardPlugin extends EventEmitter {
   def addKeys(keys: js.Object, enableCapture: js.UndefOr[scala.Nothing], emitOnRepeat: Boolean): js.Object = js.native
   def addKeys(keys: js.Object, enableCapture: Boolean): js.Object = js.native
   def addKeys(keys: js.Object, enableCapture: Boolean, emitOnRepeat: Boolean): js.Object = js.native
+  
   /**
     * Checks if the given Key object is currently being held down.
     * 
@@ -187,12 +158,19 @@ trait KeyboardPlugin extends EventEmitter {
     */
   def checkDown(key: Key): Boolean = js.native
   def checkDown(key: Key, duration: Double): Boolean = js.native
+  
   /**
     * Removes all keyboard captures.
     * 
     * Note that this is a global change. It will clear all event captures across your game, not just for this specific Scene.
     */
   def clearCaptures(): this.type = js.native
+  
+  /**
+    * An array of KeyCombo objects to process.
+    */
+  var combos: js.Array[KeyCombo] = js.native
+  
   /**
     * Creates a new KeyCombo.
     * 
@@ -228,34 +206,62 @@ trait KeyboardPlugin extends EventEmitter {
   def createCombo(keys: String, config: KeyComboConfig): KeyCombo = js.native
   def createCombo(keys: js.Array[js.Object | integer]): KeyCombo = js.native
   def createCombo(keys: js.Array[js.Object | integer], config: KeyComboConfig): KeyCombo = js.native
+  
   /**
     * Creates and returns an object containing 4 hotkeys for Up, Down, Left and Right, and also Space Bar and shift.
     */
   def createCursorKeys(): CursorKeys = js.native
+  
   /**
     * Disables Phaser from preventing any key captures you may have defined, without actually removing them.
     * You can use this to temporarily disable event capturing if, for example, you swap to a DOM element.
     */
   def disableGlobalCapture(): this.type = js.native
+  
   /**
     * Allows Phaser to prevent any key captures you may have defined from bubbling up the browser.
     * You can use this to re-enable event capturing if you had paused it via `disableGlobalCapture`.
     */
   def enableGlobalCapture(): this.type = js.native
+  
+  /**
+    * A boolean that controls if this Keyboard Plugin is enabled or not.
+    * Can be toggled on the fly.
+    */
+  var enabled: Boolean = js.native
+  
+  /**
+    * A reference to the core game, so we can listen for visibility events.
+    */
+  var game: Game = js.native
+  
   /**
     * Returns an array that contains all of the keyboard captures currently enabled.
     */
   def getCaptures(): js.Array[integer] = js.native
+  
   /**
     * Checks to see if both this plugin and the Scene to which it belongs is active.
     */
   def isActive(): Boolean = js.native
+  
+  /**
+    * An array of Key objects to process.
+    */
+  var keys: js.Array[Key] = js.native
+  
+  /**
+    * A reference to the global Keyboard Manager.
+    */
+  var manager: InputPlugin = js.native
+  
   /**
     * Removes all Key objects created by _this_ Keyboard Plugin.
     * @param destroy Call `Key.destroy` on each removed Key object? Default false.
     */
   def removeAllKeys(): this.type = js.native
   def removeAllKeys(destroy: Boolean): this.type = js.native
+  
   /**
     * Removes an existing key capture.
     * 
@@ -288,6 +294,7 @@ trait KeyboardPlugin extends EventEmitter {
   def removeCapture(keycode: String): this.type = js.native
   def removeCapture(keycode: js.Array[_ | integer]): this.type = js.native
   def removeCapture(keycode: integer): this.type = js.native
+  
   def removeKey(key: String): this.type = js.native
   def removeKey(key: String, destroy: Boolean): this.type = js.native
   /**
@@ -301,6 +308,7 @@ trait KeyboardPlugin extends EventEmitter {
   def removeKey(key: Key, destroy: Boolean): this.type = js.native
   def removeKey(key: integer): this.type = js.native
   def removeKey(key: integer, destroy: Boolean): this.type = js.native
+  
   /**
     * Resets all Key objects created by _this_ Keyboard Plugin back to their default un-pressed states.
     * This can only reset keys created via the `addKey`, `addKeys` or `createCursorKeys` methods.
@@ -310,5 +318,19 @@ trait KeyboardPlugin extends EventEmitter {
     * invoked directly at any time you require.
     */
   def resetKeys(): this.type = js.native
+  
+  /**
+    * A reference to the Scene that this Input Plugin is responsible for.
+    */
+  var scene: Scene = js.native
+  
+  /**
+    * A reference to the Scene Input Plugin that created this Keyboard Plugin.
+    */
+  var sceneInputPlugin: InputPlugin = js.native
+  
+  /**
+    * A reference to the Scene Systems Settings.
+    */
+  var settings: SettingsObject = js.native
 }
-

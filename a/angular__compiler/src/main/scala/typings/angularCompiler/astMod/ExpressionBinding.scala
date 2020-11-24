@@ -2,7 +2,7 @@ package typings.angularCompiler.astMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/expression_parser/ast", "ExpressionBinding")
 @js.native
@@ -19,8 +19,10 @@ class ExpressionBinding protected () extends TemplateBinding {
     */
   def this(sourceSpan: AbsoluteSourceSpan, key: TemplateBindingIdentifier) = this()
   def this(sourceSpan: AbsoluteSourceSpan, key: TemplateBindingIdentifier, value: ASTWithSource) = this()
+  
   val key: TemplateBindingIdentifier = js.native
+  
   val sourceSpan: AbsoluteSourceSpan = js.native
+  
   val value: ASTWithSource | Null = js.native
 }
-

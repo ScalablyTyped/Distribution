@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.iotMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "Iot")
 @js.native
@@ -14,4 +14,3 @@ class Iot ()
   extends typings.awsSdk.allMod.Iot {
   def this(options: ClientConfiguration) = this()
 }
-

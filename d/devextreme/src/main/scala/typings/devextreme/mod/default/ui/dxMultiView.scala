@@ -5,7 +5,7 @@ import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("devextreme", "ui.dxMultiView")
 @js.native
@@ -16,4 +16,3 @@ class dxMultiView protected ()
   def this(element: JQuery, options: dxMultiViewOptions[typings.devextreme.mod.DevExpress.ui.dxMultiView]) = this()
   def this(element: Element, options: dxMultiViewOptions[typings.devextreme.mod.DevExpress.ui.dxMultiView]) = this()
 }
-

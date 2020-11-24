@@ -11,8 +11,8 @@ Get the diff from objectA to objectB
 | Full name          | object-diff |
 | Keywords           | object, diff, patch |
 | # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 687653 |
+| # dependents       | 25 |
+| # downloads        | 1936232 |
 | # stars            | 3 |
 
 ## Links

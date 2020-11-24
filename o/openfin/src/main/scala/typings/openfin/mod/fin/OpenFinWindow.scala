@@ -5,7 +5,7 @@ import typings.openfin.openfinStrings.minimized
 import typings.openfin.openfinStrings.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Window
@@ -15,14 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait OpenFinWindow extends js.Object {
-  /**
-    * Name of window
-    */
-  var name: String = js.native
-  /**
-    * uuid of the application that the window belongs to.
-    */
-  var uuid: String = js.native
+  
   /**
     * Registers an event listener on the specified event.
     */
@@ -59,6 +52,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Performs the specified window transitions
     */
@@ -80,6 +74,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function1[/* event */ js.Any, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Provides credentials to authentication requests
     */
@@ -97,6 +92,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Removes focus from the window.
     */
@@ -104,6 +100,7 @@ trait OpenFinWindow extends js.Object {
   def blur(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def blur(callback: js.Function0[Unit]): Unit = js.native
   def blur(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Brings the window to the front of the OpenFin window stack.
     */
@@ -111,6 +108,7 @@ trait OpenFinWindow extends js.Object {
   def bringToFront(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def bringToFront(callback: js.Function0[Unit]): Unit = js.native
   def bringToFront(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Closes the window.
     * @param Close will be prevented from closing when force is false and 'close-requested' has been subscribed to for application's main window.
@@ -139,6 +137,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Prevents a user from changing a window's size/position when using the window's frame.
     * 'disabled-frame-bounds-changing' is generated at the start of and during a user move/size operation.
@@ -150,6 +149,7 @@ trait OpenFinWindow extends js.Object {
   def disableFrame(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def disableFrame(callback: js.Function0[Unit]): Unit = js.native
   def disableFrame(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Re-enables user changes to a window's size/position when using the window's frame.
     * 'disabled-frame-bounds-changing' is generated at the start of and during a user move/size operation.
@@ -161,6 +161,7 @@ trait OpenFinWindow extends js.Object {
   def enableFrame(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def enableFrame(callback: js.Function0[Unit]): Unit = js.native
   def enableFrame(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Executes Javascript on the window, restricted to windows you own or windows owned by applications you have created.
     * @param code JavaScript code to be executed on the window.
@@ -173,6 +174,7 @@ trait OpenFinWindow extends js.Object {
   ): Unit = js.native
   def executeJavaScript(code: String, callback: js.Function0[Unit]): Unit = js.native
   def executeJavaScript(code: String, callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Flashes the window's frame and taskbar icon until the window is activated.
     */
@@ -200,6 +202,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Gives focus to the window.
     */
@@ -207,6 +210,7 @@ trait OpenFinWindow extends js.Object {
   def focus(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def focus(callback: js.Function0[Unit]): Unit = js.native
   def focus(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Retrieves an array of frame info objects representing the main frame and any
     * iframes that are currently on the page.
@@ -218,6 +222,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function1[/* frames */ js.Array[FrameInfo], Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Gets the current bounds (top, left, width, height) of the window.
     */
@@ -228,6 +233,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function1[/* bounds */ Bounds, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves an array containing wrapped fin.desktop.Windows that are grouped with this window. If a window is not in a group an empty array is returned.
     * Please note that calling window is included in the result array.
@@ -239,6 +245,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function1[/* group */ js.Array[this.type], Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Gets an information object for the window.
     */
@@ -249,6 +256,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function1[/* info */ WindowInfo, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Returns the native JavaScript "window" object for the window. This method can only be used by the parent application or the window itself,
     * otherwise it will return undefined. The same Single-Origin-Policy (SOP) rules apply for child windows created by window.open(url) in that the
@@ -257,6 +265,7 @@ trait OpenFinWindow extends js.Object {
     * @returns Native window
     */
   def getNativeWindow(): typings.std.Window = js.native
+  
   /**
     * Gets the current settings of the window.
     */
@@ -267,15 +276,18 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function1[/* options */ WindowOption, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Gets the parent application.
     * @returns Parent application
     */
   def getParentApplication(): OpenFinApplication = js.native
+  
   /**
     * Gets the parent window.
     */
   def getParentWindow(): OpenFinWindow = js.native
+  
   /**
     * Gets a base64 encoded PNG snapshot of the window.
     */
@@ -286,6 +298,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function1[/* base64Snapshot */ String, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Gets the current state ("minimized", "maximized", or "normal") of the window.
     */
@@ -296,6 +309,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function1[/* state */ minimized | maximized | normal, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Returns the zoom level of the window.
     */
@@ -306,6 +320,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function1[/* level */ Double, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Hides the window.
     */
@@ -313,6 +328,7 @@ trait OpenFinWindow extends js.Object {
   def hide(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def hide(callback: js.Function0[Unit]): Unit = js.native
   def hide(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Determines if the window is currently showing.
     */
@@ -323,6 +339,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function1[/* showing */ Boolean, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Joins the same window group as the specified window.
     */
@@ -338,6 +355,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Leaves the current window group so that the window can be move independently of those in the group.
     */
@@ -345,6 +363,7 @@ trait OpenFinWindow extends js.Object {
   def leaveGroup(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def leaveGroup(callback: js.Function0[Unit]): Unit = js.native
   def leaveGroup(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Maximizes the window.
     */
@@ -352,6 +371,7 @@ trait OpenFinWindow extends js.Object {
   def maximize(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def maximize(callback: js.Function0[Unit]): Unit = js.native
   def maximize(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Merges the instance's window group with the same window group as the specified window
     */
@@ -367,6 +387,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Minimizes the window.
     */
@@ -374,6 +395,7 @@ trait OpenFinWindow extends js.Object {
   def minimize(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def minimize(callback: js.Function0[Unit]): Unit = js.native
   def minimize(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Moves the window by a specified amount.
     */
@@ -391,6 +413,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Moves the window to a specified location.
     */
@@ -408,6 +431,12 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
+  /**
+    * Name of window
+    */
+  var name: String = js.native
+  
   /**
     * Navigates the window to a specified URL.
     */
@@ -419,6 +448,7 @@ trait OpenFinWindow extends js.Object {
   ): Unit = js.native
   def navigate(url: String, callback: js.Function0[Unit]): Unit = js.native
   def navigate(url: String, callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Navigates the window back one page.
     */
@@ -426,6 +456,7 @@ trait OpenFinWindow extends js.Object {
   def navigateBack(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def navigateBack(callback: js.Function0[Unit]): Unit = js.native
   def navigateBack(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Navigates the window forward one page.
     */
@@ -433,6 +464,7 @@ trait OpenFinWindow extends js.Object {
   def navigateForward(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def navigateForward(callback: js.Function0[Unit]): Unit = js.native
   def navigateForward(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Reloads the window current page.
     */
@@ -460,6 +492,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Removes a previously registered event listener from the specified event.
     */
@@ -496,6 +529,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Resizes the window by a specified amount.
     */
@@ -515,6 +549,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Resizes the window by a specified amount.
     */
@@ -534,6 +569,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Restores the window to its normal state (i.e., unminimized, unmaximized).
     */
@@ -541,6 +577,7 @@ trait OpenFinWindow extends js.Object {
   def restore(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def restore(callback: js.Function0[Unit]): Unit = js.native
   def restore(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Will bring the window to the front of the entire stack and give it focus.
     */
@@ -548,6 +585,7 @@ trait OpenFinWindow extends js.Object {
   def setAsForeground(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def setAsForeground(callback: js.Function0[Unit]): Unit = js.native
   def setAsForeground(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Sets the window's size and position
     */
@@ -569,6 +607,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Sets the zoom level of the window.
     */
@@ -584,6 +623,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Shows the window if it is hidden.
     * @param Show will be prevented from closing when force is false and 'show-requested' has been subscribed to for application's main window.
@@ -612,6 +652,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Shows the window if it is hidden at the specified location. If the toggle parameter is set to true, the window will alternate between showing and hiding.
     */
@@ -647,6 +688,7 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Stops the taskbar icon from flashing.
     */
@@ -654,6 +696,7 @@ trait OpenFinWindow extends js.Object {
   def stopFlashing(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def stopFlashing(callback: js.Function0[Unit]): Unit = js.native
   def stopFlashing(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Stops any current navigation the window is performing.
     */
@@ -661,6 +704,7 @@ trait OpenFinWindow extends js.Object {
   def stopNavigation(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def stopNavigation(callback: js.Function0[Unit]): Unit = js.native
   def stopNavigation(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Updates the window using the passed options
     */
@@ -676,5 +720,9 @@ trait OpenFinWindow extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
+  /**
+    * uuid of the application that the window belongs to.
+    */
+  var uuid: String = js.native
 }
-

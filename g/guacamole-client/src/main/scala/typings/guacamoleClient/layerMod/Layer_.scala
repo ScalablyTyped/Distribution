@@ -11,7 +11,7 @@ import typings.std.HTMLImageElement
 import typings.std.Path2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client/lib/Layer", "Layer")
 @js.native
@@ -23,99 +23,7 @@ class Layer_ protected () extends js.Object {
     * backing this Layer will be given this height.
     */
   def this(width: Double, height: Double) = this()
-  /**
-    * Add the specified arc to the current path.
-    * @param x The X coordinate of the center of the circle which
-    *                   will contain the arc.
-    * @param y The Y coordinate of the center of the circle which
-    *                   will contain the arc.
-    * @param radius The radius of the circle.
-    * @param startAngle The starting angle of the arc, in radians.
-    * @param endAngle The ending angle of the arc, in radians.
-    * @param negative Whether the arc should be drawn in order of
-    *                           decreasing angle.
-    */
-  @JSName("arc")
-  var arc_Original: FnCall = js.native
-  /**
-    * Set to true if this Layer should resize itself to accomodate the
-    * dimensions of any drawing operation, and false (the default) otherwise.
-    * Note that setting this property takes effect immediately, and thus may
-    * take effect on operations that were started in the past but have not
-    * yet completed. If you wish the setting of this flag to only modify
-    * future operations, you will need to make the setting of this flag an
-    * operation with sync().
-    * @example
-    * // Set autosize to true for all future operations
-    * layer.sync(function() {
-    *     layer.autosize = true;
-    * });
-    */
-  var autoresize: Boolean = js.native
-  /**
-    * Clip all future drawing operations by the current path. The current path
-    * is implicitly closed. The current path can continue to be reused
-    * for other operations (such as fillColor()) but a new path will be started
-    * once a path drawing operation (path() or rect()) is used.
-    */
-  @JSName("clip")
-  var clip_Original: FnCallPathFillRule = js.native
-  /**
-    * Closes the current path by connecting the end point with the start
-    * point (if any) with a straight line.
-    */
-  @JSName("close")
-  var close_Original: js.Function0[Unit] = js.native
-  /**
-    * Starts a new path at the specified point.
-    * @param cp1x The X coordinate of the first control point.
-    * @param cp1y The Y coordinate of the first control point.
-    * @param cp2x The X coordinate of the second control point.
-    * @param cp2y The Y coordinate of the second control point.
-    * @param x The X coordinate of the endpoint of the curve.
-    * @param y The Y coordinate of the endpoint of the curve.
-    */
-  @JSName("curveTo")
-  var curveTo_Original: js.Function6[
-    /* cp1x */ Double, 
-    /* cp1y */ Double, 
-    /* cp2x */ Double, 
-    /* cp2y */ Double, 
-    /* x */ Double, 
-    /* y */ Double, 
-    Unit
-  ] = js.native
-  /**
-    * The current height of this layer.
-    */
-  var height: Double = js.native
-  /**
-    * Add the specified line to the current path.
-    * @param x The X coordinate of the endpoint of the line to draw.
-    * @param y The Y coordinate of the endpoint of the line to draw.
-    */
-  @JSName("lineTo")
-  var lineTo_Original: js.Function2[/* x */ Double, /* y */ Double, Unit] = js.native
-  /**
-    * Starts a new path at the specified point.
-    * @param x The X coordinate of the point to draw.
-    * @param y The Y coordinate of the point to draw.
-    */
-  @JSName("moveTo")
-  var moveTo_Original: js.Function2[/* x */ Double, /* y */ Double, Unit] = js.native
-  /**
-    * Add the specified rectangle to the current path.
-    * @param x The X coordinate of the upper-left corner of the rectangle to draw.
-    * @param y The Y coordinate of the upper-left corner of the rectangle to draw.
-    * @param w The width of the rectangle to draw.
-    * @param h The height of the rectangle to draw.
-    */
-  @JSName("rect")
-  var rect_Original: js.Function4[/* x */ Double, /* y */ Double, /* w */ Double, /* h */ Double, Unit] = js.native
-  /**
-    * The current width of this layer.
-    */
-  var width: Double = js.native
+  
   /**
     * Add the specified arc to the current path.
     * @param x The X coordinate of the center of the circle which
@@ -142,6 +50,37 @@ class Layer_ protected () extends js.Object {
     *                           decreasing angle.
     */
   def arc(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, anticlockwise: Boolean): Unit = js.native
+  /**
+    * Add the specified arc to the current path.
+    * @param x The X coordinate of the center of the circle which
+    *                   will contain the arc.
+    * @param y The Y coordinate of the center of the circle which
+    *                   will contain the arc.
+    * @param radius The radius of the circle.
+    * @param startAngle The starting angle of the arc, in radians.
+    * @param endAngle The ending angle of the arc, in radians.
+    * @param negative Whether the arc should be drawn in order of
+    *                           decreasing angle.
+    */
+  @JSName("arc")
+  var arc_Original: FnCall = js.native
+  
+  /**
+    * Set to true if this Layer should resize itself to accomodate the
+    * dimensions of any drawing operation, and false (the default) otherwise.
+    * Note that setting this property takes effect immediately, and thus may
+    * take effect on operations that were started in the past but have not
+    * yet completed. If you wish the setting of this flag to only modify
+    * future operations, you will need to make the setting of this flag an
+    * operation with sync().
+    * @example
+    * // Set autosize to true for all future operations
+    * layer.sync(function() {
+    *     layer.autosize = true;
+    * });
+    */
+  var autoresize: Boolean = js.native
+  
   /**
     * Clip all future drawing operations by the current path. The current path
     * is implicitly closed. The current path can continue to be reused
@@ -171,10 +110,26 @@ class Layer_ protected () extends js.Object {
     */
   def clip(path: Path2D, fillRule: CanvasFillRule): Unit = js.native
   /**
+    * Clip all future drawing operations by the current path. The current path
+    * is implicitly closed. The current path can continue to be reused
+    * for other operations (such as fillColor()) but a new path will be started
+    * once a path drawing operation (path() or rect()) is used.
+    */
+  @JSName("clip")
+  var clip_Original: FnCallPathFillRule = js.native
+  
+  /**
     * Closes the current path by connecting the end point with the start
     * point (if any) with a straight line.
     */
   def close(): Unit = js.native
+  /**
+    * Closes the current path by connecting the end point with the start
+    * point (if any) with a straight line.
+    */
+  @JSName("close")
+  var close_Original: js.Function0[Unit] = js.native
+  
   /**
     * Copy a rectangle of image data from one Layer to this Layer. This
     * operation will copy exactly the image data that will be drawn once all
@@ -194,6 +149,7 @@ class Layer_ protected () extends js.Object {
     * @param y The destination Y coordinate.
     */
   def copy(srcLayer: Layer, srcx: Double, srcy: Double, srcw: Double, srch: Double, x: Double, y: Double): Unit = js.native
+  
   /**
     * Starts a new path at the specified point.
     * @param cp1x The X coordinate of the first control point.
@@ -204,7 +160,28 @@ class Layer_ protected () extends js.Object {
     * @param y The Y coordinate of the endpoint of the curve.
     */
   def curveTo(cp1x: Double, cp1y: Double, cp2x: Double, cp2y: Double, x: Double, y: Double): Unit = js.native
+  /**
+    * Starts a new path at the specified point.
+    * @param cp1x The X coordinate of the first control point.
+    * @param cp1y The Y coordinate of the first control point.
+    * @param cp2x The X coordinate of the second control point.
+    * @param cp2y The Y coordinate of the second control point.
+    * @param x The X coordinate of the endpoint of the curve.
+    * @param y The Y coordinate of the endpoint of the curve.
+    */
+  @JSName("curveTo")
+  var curveTo_Original: js.Function6[
+    /* cp1x */ Double, 
+    /* cp1y */ Double, 
+    /* cp2x */ Double, 
+    /* cp2y */ Double, 
+    /* x */ Double, 
+    /* y */ Double, 
+    Unit
+  ] = js.native
+  
   def distort(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): Unit = js.native
+  
   /**
     * Draws the specified image at the given coordinates. The image specified
     * must already be loaded.
@@ -213,6 +190,7 @@ class Layer_ protected () extends js.Object {
     * @param image The image to draw. Note that this is an Image object - not a URL.
     */
   def drawImage(x: Double, y: Double, image: HTMLImageElement): Unit = js.native
+  
   /**
     * Fills the current path with the specified color. The current path
     * is implicitly closed. The current path can continue to be reused
@@ -224,6 +202,7 @@ class Layer_ protected () extends js.Object {
     * @param a The alpha component of the color to fill.
     */
   def fillColor(r: Double, g: Double, b: Double, a: Double): Unit = js.native
+  
   /**
     * Fills the current path with the image within the specified layer. The
     * is implicitly closed. The current path can continue to be reused
@@ -232,6 +211,7 @@ class Layer_ protected () extends js.Object {
     * @param srcLayer The layer to use as a repeating pattern within the fill.
     */
   def fillLayer(srcLayer: Layer): Unit = js.native
+  
   /**
     * Returns the canvas element backing this Layer. Note that the dimensions
     * of the canvas may not exactly match those of the Layer, as resizing a
@@ -239,6 +219,12 @@ class Layer_ protected () extends js.Object {
     * @returns The canvas element backing this Layer.
     */
   def getCanvas(): HTMLCanvasElement = js.native
+  
+  /**
+    * The current height of this layer.
+    */
+  var height: Double = js.native
+  
   /**
     * Add the specified line to the current path.
     * @param x The X coordinate of the endpoint of the line to draw.
@@ -246,19 +232,37 @@ class Layer_ protected () extends js.Object {
     */
   def lineTo(x: Double, y: Double): Unit = js.native
   /**
+    * Add the specified line to the current path.
+    * @param x The X coordinate of the endpoint of the line to draw.
+    * @param y The Y coordinate of the endpoint of the line to draw.
+    */
+  @JSName("lineTo")
+  var lineTo_Original: js.Function2[/* x */ Double, /* y */ Double, Unit] = js.native
+  
+  /**
     * Starts a new path at the specified point.
     * @param x The X coordinate of the point to draw.
     * @param y The Y coordinate of the point to draw.
     */
   def moveTo(x: Double, y: Double): Unit = js.native
   /**
+    * Starts a new path at the specified point.
+    * @param x The X coordinate of the point to draw.
+    * @param y The Y coordinate of the point to draw.
+    */
+  @JSName("moveTo")
+  var moveTo_Original: js.Function2[/* x */ Double, /* y */ Double, Unit] = js.native
+  
+  /**
     * Pop layer state off stack.
     */
   def pop(): Unit = js.native
+  
   /**
     * Push current layer state onto stack.
     */
   def push(): Unit = js.native
+  
   /**
     * Put a rectangle of image data from one Layer to this Layer directly
     * without performing any alpha blending. Simply copy the data.
@@ -275,6 +279,7 @@ class Layer_ protected () extends js.Object {
     * @param y The destination Y coordinate.
     */
   def put(srcLayer: Layer, srcx: Double, srcy: Double, srcw: Double, srch: Double, x: Double, y: Double): Unit = js.native
+  
   /**
     * Add the specified rectangle to the current path.
     * @param x The X coordinate of the upper-left corner of the rectangle to draw.
@@ -284,10 +289,21 @@ class Layer_ protected () extends js.Object {
     */
   def rect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
   /**
+    * Add the specified rectangle to the current path.
+    * @param x The X coordinate of the upper-left corner of the rectangle to draw.
+    * @param y The Y coordinate of the upper-left corner of the rectangle to draw.
+    * @param w The width of the rectangle to draw.
+    * @param h The height of the rectangle to draw.
+    */
+  @JSName("rect")
+  var rect_Original: js.Function4[/* x */ Double, /* y */ Double, /* w */ Double, /* h */ Double, Unit] = js.native
+  
+  /**
     * Reset the layer, clearing the stack, the current path, and any transform
     * matrix.
     */
   def reset(): Unit = js.native
+  
   /**
     * Changes the size of this Layer to the given width and height. Resizing
     * is only attempted if the new size provided is actually different from
@@ -296,6 +312,7 @@ class Layer_ protected () extends js.Object {
     * @param newHeight The new height to assign to this Layer.
     */
   def resize(newWidth: Double, newHeight: Double): Unit = js.native
+  
   /**
     * Sets the channel mask for future operations on this Layer.
     * The channel mask is a Guacamole-specific compositing operation identifier
@@ -305,6 +322,7 @@ class Layer_ protected () extends js.Object {
     * @param mask The channel mask for future operations on this Layer.
     */
   def setChannelMask(mask: Double): Unit = js.native
+  
   /**
     * Sets the miter limit for stroke operations using the miter join. This
     * limit is the maximum ratio of the size of the miter join to the stroke
@@ -313,6 +331,7 @@ class Layer_ protected () extends js.Object {
     * @param limit The miter limit for stroke operations using the miter join.
     */
   def setMiterLimit(limit: Double): Unit = js.native
+  
   /**
     * Sets the given affine transform (defined with six values from the
     * transform's matrix).
@@ -324,6 +343,7 @@ class Layer_ protected () extends js.Object {
     * @param f The sixth value in the affine transform's matrix.
     */
   def setTransform(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): Unit = js.native
+  
   /**
     * Stroke the current path with the specified color. The current path
     * is implicitly closed. The current path can continue to be reused
@@ -338,6 +358,7 @@ class Layer_ protected () extends js.Object {
     * @param a The alpha component of the color to fill.
     */
   def strokeColor(cap: LineCap, join: LineJoin, thickness: Double, r: Double, g: Double, b: Double, a: Double): Unit = js.native
+  
   /**
     * Stroke the current path with the specified color. The current path
     * is implicitly closed. The current path can continue to be reused
@@ -352,6 +373,7 @@ class Layer_ protected () extends js.Object {
     * @param a The alpha component of the color to fill.
     */
   def strokeLayer(cap: LineCap, join: LineJoin, thickness: Double, layer: Layer): Unit = js.native
+  
   /**
     * Returns a new canvas element containing the same image as this Layer.
     * Unlike getCanvas(), the canvas element returned is guaranteed to have
@@ -359,6 +381,7 @@ class Layer_ protected () extends js.Object {
     * @returns A new canvas element containing a copy of the image content this Layer.
     */
   def toCanvas(): HTMLCanvasElement = js.native
+  
   /**
     * Transfer a rectangle of image data from one Layer to this Layer using the
     * specified transfer function.
@@ -388,6 +411,7 @@ class Layer_ protected () extends js.Object {
     y: Double,
     transferFunction: js.Function2[/* srcPixel */ Pixel, /* dstPixel */ Pixel, Unit]
   ): Unit = js.native
+  
   /**
     * Applies the given affine transform (defined with six values from the
     * transform's matrix).
@@ -399,5 +423,9 @@ class Layer_ protected () extends js.Object {
     * @param f The sixth value in the affine transform's matrix.
     */
   def transform(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): Unit = js.native
+  
+  /**
+    * The current width of this layer.
+    */
+  var width: Double = js.native
 }
-

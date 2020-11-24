@@ -10,9 +10,9 @@ Always populate() certain fields in your mongoose schemas
 | ------------------ | :-------------: |
 | Full name          | mongoose-autopopulate |
 | Keywords           | mongoose, populate, autopopulate, mongodb |
-| # releases         | 8 |
-| # dependents       | 18 |
-| # downloads        | 200979 |
+| # releases         | 9 |
+| # dependents       | 23 |
+| # downloads        | 404292 |
 | # stars            | 7 |
 
 ## Links

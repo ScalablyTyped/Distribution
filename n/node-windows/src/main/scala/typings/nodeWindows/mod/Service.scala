@@ -3,17 +3,46 @@ package typings.nodeWindows.mod
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-windows", "Service")
 @js.native
 class Service protected () extends EventEmitter {
   def this(config: ServiceConfig) = this()
+  
   /**
     * {Boolean} exists
     * Determine whether the service exists.
     */
   var exists: Boolean = js.native
+  
+  /**
+    * install
+    * Install the script as a process.
+    * @param [dir=root of script]
+    * The directory where the process files will be saved. Defaults to #script path.
+    * @param [callback]
+    * The callback to fire when the installation completes.
+    */
+  /**
+    * @event install
+    * Fired when the installation process is complete.
+    */
+  /**
+    * @event alreadyinstalled
+    * Fired if the script is already known to be a service.
+    */
+  /**
+    * @event invalidinstallation
+    * Fired if an installation is detected but missing required files.
+    */
+  /**
+    * @event error
+    * Fired in some instances when an error occurs.
+    */
+  def install(): Unit = js.native
+  def install(dir: String): Unit = js.native
+  
   /**
     * {Object} [logOnAs]
     * If you need to specify a specific user or particular credentials for the service log on as once installed, the following
@@ -45,79 +74,19 @@ class Service protected () extends EventEmitter {
     * otherwise the Local System account will be used.
     */
   var logOnAs: User = js.native
-  /**
-    * {String} root
-    * The root directory where the process files are stored.
-    */
-  var root: String = js.native
-  /**
-    * {Object} [user]
-    * If you need to specify a specific user or particular credentials to manage a service, the following
-    * attributes may be helpful.
-    *
-    * The `user` attribute is an object with three keys: `domain`,`account`, and `password`.
-    * This can be used to identify which user the service library should use to perform system commands.
-    * By default, the domain is set to the local computer name, but it can be overridden with an Active Directory
-    * or LDAP domain. For example:
-    *
-    * **app.js**
-    *
-    *     var Service = require('node-windows').Service;
-    *
-    *     // Create a new service object
-    *     var svc = new Service({
-    *       name:'Hello World',
-    *       script: require('path').join(__dirname,'helloworld.js')
-    *     });
-    *
-    *     svc.user.domain = 'mydomain.local';
-    *     svc.user.account = 'username';
-    *     svc.user.password = 'password';
-    *     ...
-    *
-    * Both the account and password must be explicitly defined if you want the service module to
-    * run commands as a specific user. By default, it will run using the user account that launched
-    * the process (i.e. who launched `node app.js`).
-    */
-  var user: User = js.native
-  /**
-    * {String} [workingdirectory]
-    * The full path to the working directory that the service process
-    * should launch from. If this is omitted, it will default to the
-    * current processes working directory.
-    */
-  var workingdirectory: String = js.native
-  /**
-    * install
-    * Install the script as a process.
-    * @param [dir=root of script]
-    * The directory where the process files will be saved. Defaults to #script path.
-    * @param [callback]
-    * The callback to fire when the installation completes.
-    */
-  /**
-    * @event install
-    * Fired when the installation process is complete.
-    */
-  /**
-    * @event alreadyinstalled
-    * Fired if the script is already known to be a service.
-    */
-  /**
-    * @event invalidinstallation
-    * Fired if an installation is detected but missing required files.
-    */
-  /**
-    * @event error
-    * Fired in some instances when an error occurs.
-    */
-  def install(): Unit = js.native
-  def install(dir: String): Unit = js.native
+  
   /**
     * restart
     * Restart an existing service
     */
   def restart(): Unit = js.native
+  
+  /**
+    * {String} root
+    * The root directory where the process files are stored.
+    */
+  var root: String = js.native
+  
   /**
     * start
     * Start an existing method.
@@ -127,6 +96,7 @@ class Service protected () extends EventEmitter {
     * Fired when the event has started.
     */
   def start(): Unit = js.native
+  
   /**
     * stop
     * Stop the service.
@@ -136,6 +106,7 @@ class Service protected () extends EventEmitter {
     * Fired when the service is stopped.
     */
   def stop(): Unit = js.native
+  
   /**
     * uninstall
     * Uninstall the service.
@@ -169,5 +140,43 @@ class Service protected () extends EventEmitter {
     */
   def uninstall(): Unit = js.native
   def uninstall(waitTime: Double): Unit = js.native
+  
+  /**
+    * {Object} [user]
+    * If you need to specify a specific user or particular credentials to manage a service, the following
+    * attributes may be helpful.
+    *
+    * The `user` attribute is an object with three keys: `domain`,`account`, and `password`.
+    * This can be used to identify which user the service library should use to perform system commands.
+    * By default, the domain is set to the local computer name, but it can be overridden with an Active Directory
+    * or LDAP domain. For example:
+    *
+    * **app.js**
+    *
+    *     var Service = require('node-windows').Service;
+    *
+    *     // Create a new service object
+    *     var svc = new Service({
+    *       name:'Hello World',
+    *       script: require('path').join(__dirname,'helloworld.js')
+    *     });
+    *
+    *     svc.user.domain = 'mydomain.local';
+    *     svc.user.account = 'username';
+    *     svc.user.password = 'password';
+    *     ...
+    *
+    * Both the account and password must be explicitly defined if you want the service module to
+    * run commands as a specific user. By default, it will run using the user account that launched
+    * the process (i.e. who launched `node app.js`).
+    */
+  var user: User = js.native
+  
+  /**
+    * {String} [workingdirectory]
+    * The full path to the working directory that the service process
+    * should launch from. If this is omitted, it will default to the
+    * current processes working directory.
+    */
+  var workingdirectory: String = js.native
 }
-

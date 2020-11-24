@@ -2,7 +2,7 @@ package typings.winjs.mod.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A type of IListDataSource that provides read-access to an object that implements the IStorageQueryResultBase interface. A StorageDataSource enables you to query and bind to items in the data source.
@@ -21,15 +21,14 @@ class StorageDataSource[T] protected ()
   def this(query: js.Any) = this()
   def this(query: js.Any, options: js.Any) = this()
 }
-
 /* static members */
 @JSImport("winjs", "UI.StorageDataSource")
 @js.native
 object StorageDataSource extends js.Object {
+  
   //#endregion Methods
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
   var supportedForProcessing: Boolean = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.botvs.mod.global
 import typings.botvs.mod.global.botvs.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("talib")
 @js.native
 object talib extends js.Object {
+  
   /**
     * Vector Trigonometric ACos (反余弦函数)
     *
@@ -17,6 +18,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def ACOS(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Chaikin A/D Line (线随机指标)
     *
@@ -39,6 +41,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def AD(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Chaikin A/D Oscillator (佳庆指标)
     *
@@ -74,6 +77,7 @@ object talib extends js.Object {
   def ADOSC(Records: js.Array[Record], FastPeriod: js.UndefOr[scala.Nothing], SlowPeriod: Double): js.Array[Double] = js.native
   def ADOSC(Records: js.Array[Record], FastPeriod: Double): js.Array[Double] = js.native
   def ADOSC(Records: js.Array[Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Average Directional Movement Index (平均趋向指数)
     *
@@ -98,6 +102,7 @@ object talib extends js.Object {
     */
   def ADX(Records: js.Array[Record]): js.Array[Double] = js.native
   def ADX(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Average Directional Movement Index Rating (评估指数)
     *
@@ -122,6 +127,7 @@ object talib extends js.Object {
     */
   def ADXR(Records: js.Array[Record]): js.Array[Double] = js.native
   def ADXR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Absolute Price Oscillator (绝对价格振荡指数)
     *
@@ -156,6 +162,7 @@ object talib extends js.Object {
   ): js.Array[Double] = js.native
   def APO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = js.native
   def APO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, MAType: Double): js.Array[Double] = js.native
+  
   /**
     * Aroon (阿隆指标)
     *
@@ -179,6 +186,7 @@ object talib extends js.Object {
     */
   def AROON(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def AROON(Records: js.Array[Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * Aroon Oscillator (阿隆震荡线)
     *
@@ -202,6 +210,7 @@ object talib extends js.Object {
     */
   def AROONOSC(Records: js.Array[Record]): js.Array[Double] = js.native
   def AROONOSC(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Vector Trigonometric ASin (反正弦函数)
     *
@@ -211,6 +220,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def ASIN(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Vector Trigonometric ATan (反正切函数)
     *
@@ -220,6 +230,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def ATAN(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Average True Range (平均真实波幅)
     *
@@ -244,6 +255,7 @@ object talib extends js.Object {
     */
   def ATR(Records: js.Array[Record]): js.Array[Double] = js.native
   def ATR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Average Price (平均价格)
     *
@@ -265,6 +277,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def AVGPRICE(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Bollinger Bands (布林带)
     *
@@ -362,6 +375,7 @@ object talib extends js.Object {
     Deviationsdown: Double,
     MAType: Double
   ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * Balance Of Power (均势指标)
     *
@@ -383,6 +397,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def BOP(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Commodity Channel Index (顺势指标)
     *
@@ -407,6 +422,7 @@ object talib extends js.Object {
     */
   def CCI(Records: js.Array[Record]): js.Array[Double] = js.native
   def CCI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Two Crows (K线图--两只乌鸦)
     *
@@ -428,6 +444,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDL2CROWS(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Three Black Crows (K线图--3只黑乌鸦)
     *
@@ -449,6 +466,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDL3BLACKCROWS(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Three Inside Up/Down (K线图:3内上下震荡)
     *
@@ -470,6 +488,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDL3INSIDE(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Three-Line Strike  (K线图:3线震荡)
     *
@@ -491,6 +510,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDL3LINESTRIKE(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Three Outside Up/Down (K线图:3外下震荡)
     *
@@ -512,6 +532,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDL3OUTSIDE(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Three Stars In The South (K线图:南方三星)
     *
@@ -533,6 +554,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDL3STARSINSOUTH(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Three Advancing White Soldiers (K线图:三白兵)
     *
@@ -554,6 +576,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDL3WHITESOLDIERS(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Abandoned Baby (K线图:弃婴)
     *
@@ -584,6 +607,7 @@ object talib extends js.Object {
     */
   def CDLABANDONEDBABY(Records: js.Array[Record]): js.Array[Double] = js.native
   def CDLABANDONEDBABY(Records: js.Array[Record], Penetration: Double): js.Array[Double] = js.native
+  
   /**
     * Advance Block (K线图:推进)
     *
@@ -605,6 +629,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLADVANCEBLOCK(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Belt-hold (K线图:带住)
     *
@@ -626,6 +651,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLBELTHOLD(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Breakaway (K线图:分离)
     *
@@ -647,6 +673,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLBREAKAWAY(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Closing Marubozu (K线图:收盘光头光脚)
     *
@@ -668,6 +695,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLCLOSINGMARUBOZU(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Concealing Baby Swallow (K线图:藏婴吞没形态)
     *
@@ -689,6 +717,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLCONCEALBABYSWALL(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Counterattack (K线图:反击)
     *
@@ -710,6 +739,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLCOUNTERATTACK(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Dark Cloud Cover (K线图:乌云盖)
     *
@@ -740,6 +770,7 @@ object talib extends js.Object {
     */
   def CDLDARKCLOUDCOVER(Records: js.Array[Record]): js.Array[Double] = js.native
   def CDLDARKCLOUDCOVER(Records: js.Array[Record], Penetration: Double): js.Array[Double] = js.native
+  
   /**
     * Doji (K线图:十字星 )
     *
@@ -761,6 +792,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLDOJI(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Doji Star (K线图:十字星)
     *
@@ -782,6 +814,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLDOJISTAR(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Dragonfly Doji (K线图:蜻蜓十字星)
     *
@@ -803,6 +836,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLDRAGONFLYDOJI(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Engulfing Pattern (K线图:吞没)
     *
@@ -824,6 +858,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLENGULFING(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Evening Doji Star (K线图:黄昏十字星)
     *
@@ -854,6 +889,7 @@ object talib extends js.Object {
     */
   def CDLEVENINGDOJISTAR(Records: js.Array[Record]): js.Array[Double] = js.native
   def CDLEVENINGDOJISTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = js.native
+  
   /**
     * Evening Star (K线图:黄昏之星)
     *
@@ -884,6 +920,7 @@ object talib extends js.Object {
     */
   def CDLEVENINGSTAR(Records: js.Array[Record]): js.Array[Double] = js.native
   def CDLEVENINGSTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = js.native
+  
   /**
     * Up/Down-gap side-by-side white lines (K线图:上/下间隙并排的白色线条)
     *
@@ -905,6 +942,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLGAPSIDESIDEWHITE(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Gravestone Doji (K线图:墓碑十字线)
     *
@@ -926,6 +964,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLGRAVESTONEDOJI(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Hammer (K线图:锤)
     *
@@ -947,6 +986,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLHAMMER(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Hanging Man (K线图:吊人)
     *
@@ -968,6 +1008,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLHANGINGMAN(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Harami Pattern (K线图:阴阳线)
     *
@@ -989,6 +1030,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLHARAMI(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Harami Cross Pattern (K线图:交叉阴阳线)
     *
@@ -1010,6 +1052,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLHARAMICROSS(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * High-Wave Candle (K线图:长脚十字线 )
     *
@@ -1031,6 +1074,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLHIGHWAVE(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Hikkake Pattern (K线图:陷阱)
     *
@@ -1052,6 +1096,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLHIKKAKE(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Modified Hikkake Pattern (K线图:改良的陷阱)
     *
@@ -1073,6 +1118,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLHIKKAKEMOD(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Homing Pigeon (K线图:信鸽)
     *
@@ -1094,6 +1140,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLHOMINGPIGEON(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Identical Three Crows (K线图:相同的三只乌鸦)
     *
@@ -1115,6 +1162,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLIDENTICAL3CROWS(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * In-Neck Pattern (K线图:颈纹)
     *
@@ -1136,6 +1184,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLINNECK(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Inverted Hammer (K线图:倒锤)
     *
@@ -1157,6 +1206,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLINVERTEDHAMMER(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Kicking (K线图:踢)
     *
@@ -1178,6 +1228,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLKICKING(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Kicking - bull/bear determined by the longer marubozu (K线图:踢牛/踢熊)
     *
@@ -1199,6 +1250,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLKICKINGBYLENGTH(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Ladder Bottom (K线图:梯底)
     *
@@ -1220,6 +1272,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLLADDERBOTTOM(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Long Legged Doji (K线图:长腿十字线)
     *
@@ -1241,6 +1294,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLLONGLEGGEDDOJI(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Long Line Candle (K线图:长线)
     *
@@ -1262,6 +1316,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLLONGLINE(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Marubozu (K线图:光头光脚 )
     *
@@ -1283,6 +1338,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLMARUBOZU(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Matching Low (K线图:匹配低)
     *
@@ -1304,6 +1360,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLMATCHINGLOW(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Mat Hold (K线图:垫住)
     *
@@ -1334,6 +1391,7 @@ object talib extends js.Object {
     */
   def CDLMATHOLD(Records: js.Array[Record]): js.Array[Double] = js.native
   def CDLMATHOLD(Records: js.Array[Record], Penetration: Double): js.Array[Double] = js.native
+  
   /**
     * Morning Doji Star (K线图:早晨十字星)
     *
@@ -1364,6 +1422,7 @@ object talib extends js.Object {
     */
   def CDLMORNINGDOJISTAR(Records: js.Array[Record]): js.Array[Double] = js.native
   def CDLMORNINGDOJISTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = js.native
+  
   /**
     * Morning Star (K线图:晨星)
     *
@@ -1394,6 +1453,7 @@ object talib extends js.Object {
     */
   def CDLMORNINGSTAR(Records: js.Array[Record]): js.Array[Double] = js.native
   def CDLMORNINGSTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = js.native
+  
   /**
     * On-Neck Pattern (K线图:颈型)
     *
@@ -1415,6 +1475,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLONNECK(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Piercing Pattern (K线图:穿孔模式)
     *
@@ -1436,6 +1497,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLPIERCING(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Rickshaw Man (K线图:车夫)
     *
@@ -1457,6 +1519,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLRICKSHAWMAN(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Rising/Falling Three Methods (K线图:上升/下降三法)
     *
@@ -1478,6 +1541,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLRISEFALL3METHODS(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Separating Lines (K线图:分割线)
     *
@@ -1499,6 +1563,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLSEPARATINGLINES(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Shooting Star (K线图:流星)
     *
@@ -1520,6 +1585,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLSHOOTINGSTAR(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Short Line Candle (K线图:短线)
     *
@@ -1541,6 +1607,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLSHORTLINE(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Spinning Top (K线图:陀螺)
     *
@@ -1562,6 +1629,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLSPINNINGTOP(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Stalled Pattern (K线图:停滞模式)
     *
@@ -1583,6 +1651,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLSTALLEDPATTERN(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Stick Sandwich (K线图:棍子三明治)
     *
@@ -1604,6 +1673,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLSTICKSANDWICH(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Takuri (Dragonfly Doji with very long lower shadow) (K线图:托里)
     *
@@ -1625,6 +1695,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLTAKURI(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Tasuki Gap (K线图:翼隙)
     *
@@ -1646,6 +1717,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLTASUKIGAP(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Thrusting Pattern (K线图:推模式)
     *
@@ -1667,6 +1739,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLTHRUSTING(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Tristar Pattern (K线图:三星模式)
     *
@@ -1688,6 +1761,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLTRISTAR(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Unique 3 River (K线图:独特的3河)
     *
@@ -1709,6 +1783,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLUNIQUE3RIVER(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Upside Gap Two Crows (K线图:双飞乌鸦)
     *
@@ -1730,6 +1805,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLUPSIDEGAP2CROWS(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Upside/Downside Gap Three Methods (K线图:上行/下行缺口三方法)
     *
@@ -1751,6 +1827,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CDLXSIDEGAP3METHODS(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Vector Ceil (取整函数)
     *
@@ -1760,6 +1837,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def CEIL(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Chande Momentum Oscillator (钱德动量摆动指标)
     *
@@ -1771,6 +1849,7 @@ object talib extends js.Object {
     */
   def CMO(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def CMO(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Vector Trigonometric Cos (余弦函数)
     *
@@ -1780,6 +1859,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def COS(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Vector Trigonometric Cosh (双曲余弦值)
     *
@@ -1789,6 +1869,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def COSH(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Double Exponential Moving Average (双指数移动平均线)
     *
@@ -1800,6 +1881,7 @@ object talib extends js.Object {
     */
   def DEMA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def DEMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Directional Movement Index (动向指数)
     *
@@ -1824,6 +1906,7 @@ object talib extends js.Object {
     */
   def DX(Records: js.Array[Record]): js.Array[Double] = js.native
   def DX(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Exponential Moving Average (指数移动平均线)
     *
@@ -1835,6 +1918,7 @@ object talib extends js.Object {
     */
   def EMA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def EMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Vector Arithmetic Exp (指数函数)
     *
@@ -1844,6 +1928,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def EXP(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Vector Floor (向下取整)
     *
@@ -1853,6 +1938,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def FLOOR(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Hilbert Transform - Dominant Cycle Period (希尔伯特变换, 主周期)
     *
@@ -1862,6 +1948,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def HT_DCPERIOD(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Hilbert Transform - Dominant Cycle Phase (希尔伯特变换,主阶段)
     *
@@ -1871,6 +1958,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def HT_DCPHASE(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Hilbert Transform - Phasor Components (希尔伯特变换,相成分)
     *
@@ -1880,6 +1968,7 @@ object talib extends js.Object {
     * @return {[number[], number[]]}
     */
   def HT_PHASOR(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * Hilbert Transform - SineWave (希尔伯特变换,正弦波)
     *
@@ -1889,6 +1978,7 @@ object talib extends js.Object {
     * @return {[number[], number[]]}
     */
   def HT_SINE(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * Hilbert Transform - Instantaneous Trendline (希尔伯特变换,瞬时趋势)
     *
@@ -1898,6 +1988,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def HT_TRENDLINE(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Hilbert Transform - Trend vs Cycle Mode (希尔伯特变换-趋势与周期模式)
     *
@@ -1907,6 +1998,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def HT_TRENDMODE(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Kaufman Adaptive Moving Average (适应性移动平均线)
     *
@@ -1918,6 +2010,7 @@ object talib extends js.Object {
     */
   def KAMA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def KAMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Linear Regression (线性回归)
     *
@@ -1929,6 +2022,7 @@ object talib extends js.Object {
     */
   def LINEARREG(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def LINEARREG(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Linear Regression Angle (线性回归的角度)
     *
@@ -1939,6 +2033,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def LINEARREG_ANGLE(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Linear Regression Intercept (线性回归截距)
     *
@@ -1949,6 +2044,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def LINEARREG_INTERCEPT(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Linear Regression Slope (线性回归斜率)
     *
@@ -1959,6 +2055,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def LINEARREG_SLOPE(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Vector Log Natural (自然对数)
     *
@@ -1968,6 +2065,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def LN(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Vector Log10 (对数函数)
     *
@@ -1977,6 +2075,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def LOG10(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Moving average (移动平均线)
     *
@@ -1991,6 +2090,7 @@ object talib extends js.Object {
   def MA(Records: js.Array[Double | Record], TimePeriod: js.UndefOr[scala.Nothing], MAType: Double): js.Array[Double] = js.native
   def MA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
   def MA(Records: js.Array[Double | Record], TimePeriod: Double, MAType: Double): js.Array[Double] = js.native
+  
   /**
     * Moving Average Convergence/Divergence (指数平滑移动平均线)
     *
@@ -2026,6 +2126,7 @@ object talib extends js.Object {
   ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def MACD(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def MACD(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * MACD with controllable MA type (MA型可控 MACD)
     *
@@ -2051,6 +2152,7 @@ object talib extends js.Object {
     SignalPeriod: js.UndefOr[Double],
     SignalMA: js.UndefOr[Double]
   ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * Moving Average Convergence/Divergence Fix 12/26 (移动平均收敛/发散修复12/26)
     *
@@ -2062,6 +2164,7 @@ object talib extends js.Object {
     */
   def MACDFIX(Records: js.Array[Double | Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def MACDFIX(Records: js.Array[Double | Record], SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * MESA Adaptive Moving Average (MESA 移动平均线)
     *
@@ -2076,6 +2179,7 @@ object talib extends js.Object {
   def MAMA(Records: js.Array[Double | Record], FastLimit: js.UndefOr[scala.Nothing], SlowLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def MAMA(Records: js.Array[Double | Record], FastLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def MAMA(Records: js.Array[Double | Record], FastLimit: Double, SlowLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * Highest value over a specified period (最大值)
     *
@@ -2087,6 +2191,7 @@ object talib extends js.Object {
     */
   def MAX(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def MAX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Index of highest value over a specified period (最大值索引)
     *
@@ -2098,6 +2203,7 @@ object talib extends js.Object {
     */
   def MAXINDEX(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def MAXINDEX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Median Price (中位数价格)
     *
@@ -2117,6 +2223,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def MEDPRICE(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Money Flow Index (货币流量指数)
     *
@@ -2148,6 +2255,7 @@ object talib extends js.Object {
     */
   def MFI(Records: js.Array[Record]): js.Array[Double] = js.native
   def MFI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * MidPoint over period (中点)
     *
@@ -2159,6 +2267,7 @@ object talib extends js.Object {
     */
   def MIDPOINT(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def MIDPOINT(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Midpoint Price over period (中点价格)
     *
@@ -2182,6 +2291,7 @@ object talib extends js.Object {
     */
   def MIDPRICE(Records: js.Array[Record]): js.Array[Double] = js.native
   def MIDPRICE(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Lowest value over a specified period (最小值)
     *
@@ -2193,6 +2303,7 @@ object talib extends js.Object {
     */
   def MIN(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def MIN(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Index of lowest value over a specified period (最小值索引)
     *
@@ -2204,6 +2315,7 @@ object talib extends js.Object {
     */
   def MININDEX(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def MININDEX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Lowest and highest values over a specified period (最小最大值)
     *
@@ -2215,6 +2327,7 @@ object talib extends js.Object {
     */
   def MINMAX(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def MINMAX(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * Indexes of lowest and highest values over a specified period (最小最大值索引)
     *
@@ -2226,6 +2339,7 @@ object talib extends js.Object {
     */
   def MINMAXINDEX(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def MINMAXINDEX(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * Minus Directional Indicator (负向指标)
     *
@@ -2248,6 +2362,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def MINUS_DI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Minus Directional Movement (负向运动)
     *
@@ -2269,6 +2384,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def MINUS_DM(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Momentum (动量)
     *
@@ -2280,6 +2396,7 @@ object talib extends js.Object {
     */
   def MOM(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def MOM(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Normalized Average True Range (归一化平均值范围)
     *
@@ -2304,6 +2421,7 @@ object talib extends js.Object {
     */
   def NATR(Records: js.Array[Record]): js.Array[Double] = js.native
   def NATR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   def OBV(Close: js.Array[Double], Volume: js.Array[Double]): js.Array[Double] = js.native
   /**
     * On Balance Volume (能量潮)
@@ -2323,6 +2441,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def OBV(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Plus Directional Indicator (更向指示器)
     *
@@ -2345,6 +2464,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def PLUS_DI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Plus Directional Movement (定向运动)
     *
@@ -2366,6 +2486,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def PLUS_DM(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Percentage Price Oscillator (价格振荡百分比)
     *
@@ -2400,6 +2521,7 @@ object talib extends js.Object {
   ): js.Array[Double] = js.native
   def PPO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = js.native
   def PPO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, MAType: Double): js.Array[Double] = js.native
+  
   /**
     * Rate of change : ((price/prevPrice)-1)*100 (变动率指标)
     *
@@ -2411,6 +2533,7 @@ object talib extends js.Object {
     */
   def ROC(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def ROC(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Rate of change Percentage: (price-prevPrice)/prevPrice (价格变化率)
     *
@@ -2422,6 +2545,7 @@ object talib extends js.Object {
     */
   def ROCP(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def ROCP(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Rate of change ratio: (price/prevPrice) (价格变化率)
     *
@@ -2433,6 +2557,7 @@ object talib extends js.Object {
     */
   def ROCR(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def ROCR(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Rate of change ratio 100 scale: (price/prevPrice)*100 (价格变化率)
     *
@@ -2443,6 +2568,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def ROCR100(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Relative Strength Index (相对强弱指标)
     *
@@ -2454,6 +2580,7 @@ object talib extends js.Object {
     */
   def RSI(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def RSI(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Parabolic SAR (抛物线转向)
     *
@@ -2488,6 +2615,7 @@ object talib extends js.Object {
   def SAR(Records: js.Array[Record], AccelerationFactor: js.UndefOr[scala.Nothing], AFMaximum: Double): js.Array[Double] = js.native
   def SAR(Records: js.Array[Record], AccelerationFactor: Double): js.Array[Double] = js.native
   def SAR(Records: js.Array[Record], AccelerationFactor: Double, AFMaximum: Double): js.Array[Double] = js.native
+  
   /**
     * Parabolic SAR - Extended (增强型抛物线转向)
     *
@@ -2548,6 +2676,7 @@ object talib extends js.Object {
     AFShort: js.UndefOr[Double],
     AFMaxShort: js.UndefOr[Double]
   ): js.Array[Double] = js.native
+  
   /**
     * Vector Trigonometric Sin (正弦值)
     *
@@ -2557,6 +2686,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def SIN(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Vector Trigonometric Sinh (双曲正弦函数)
     *
@@ -2566,6 +2696,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def SINH(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Simple Moving Average (简单移动平均)
     *
@@ -2577,6 +2708,7 @@ object talib extends js.Object {
     */
   def SMA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def SMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Vector Square Root (平方根)
     *
@@ -2586,6 +2718,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def SQRT(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Standard Deviation (标准偏差)
     *
@@ -2600,6 +2733,7 @@ object talib extends js.Object {
   def STDDEV(Records: js.Array[Double | Record], TimePeriod: js.UndefOr[scala.Nothing], Deviations: Double): js.Array[Double] = js.native
   def STDDEV(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
   def STDDEV(Records: js.Array[Double | Record], TimePeriod: Double, Deviations: Double): js.Array[Double] = js.native
+  
   /**
     * Stochastic (STOCH指标)
     *
@@ -2849,6 +2983,7 @@ object talib extends js.Object {
     Slow_DPeriod: Double,
     Slow_DMA: Double
   ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * Stochastic Fast (快速STOCH指标)
     *
@@ -2906,6 +3041,7 @@ object talib extends js.Object {
   ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double, Fast_DPeriod: Double, Fast_DMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * Stochastic Relative Strength Index (随机强弱指数)
     *
@@ -2998,6 +3134,7 @@ object talib extends js.Object {
     Fast_DPeriod: Double,
     Fast_DMA: Double
   ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  
   /**
     * Summation (求和)
     *
@@ -3009,6 +3146,7 @@ object talib extends js.Object {
     */
   def SUM(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def SUM(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Triple Exponential Moving Average (T3) (三指数移动平均)
     *
@@ -3020,6 +3158,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def T3(Records: js.Array[Double | Record], TimePeriod: Double, VolumeFactor: Double): js.Array[Double] = js.native
+  
   /**
     * Vector Trigonometric Tan (正切)
     *
@@ -3029,6 +3168,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def TAN(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Vector Trigonometric Tanh (双曲正切函数)
     *
@@ -3038,6 +3178,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def TANH(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  
   /**
     * Triple Exponential Moving Average (三指数移动平均)
     *
@@ -3049,6 +3190,7 @@ object talib extends js.Object {
     */
   def TEMA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def TEMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * True Range (真实范围)
     *
@@ -3069,6 +3211,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def TRANGE(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Triangular Moving Average (三指数移动平均)
     *
@@ -3080,6 +3223,7 @@ object talib extends js.Object {
     */
   def TRIMA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def TRIMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * 1-day Rate-Of-Change (ROC) of a Triple Smooth EMA (三重指数平滑平均线)
     *
@@ -3091,6 +3235,7 @@ object talib extends js.Object {
     */
   def TRIX(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def TRIX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Time Series Forecast (时间序列预测)
     *
@@ -3102,6 +3247,7 @@ object talib extends js.Object {
     */
   def TSF(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def TSF(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Typical Price (典型价格)
     *
@@ -3122,6 +3268,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def TYPPRICE(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Ultimate Oscillator (极限振子)
     *
@@ -3177,6 +3324,7 @@ object talib extends js.Object {
   ): js.Array[Double] = js.native
   def ULTOSC(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double): js.Array[Double] = js.native
   def ULTOSC(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double, ThirdPeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Variance (变量定义)
     *
@@ -3191,6 +3339,7 @@ object talib extends js.Object {
   def VAR(Records: js.Array[Double | Record], TimePeriod: js.UndefOr[scala.Nothing], Deviations: Double): js.Array[Double] = js.native
   def VAR(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
   def VAR(Records: js.Array[Double | Record], TimePeriod: Double, Deviations: Double): js.Array[Double] = js.native
+  
   /**
     * Weighted Close Price (加权收盘价)
     *
@@ -3211,6 +3360,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def WCLPRICE(Records: js.Array[Record]): js.Array[Double] = js.native
+  
   /**
     * Williams' %R (威廉指标)
     *
@@ -3235,6 +3385,7 @@ object talib extends js.Object {
     */
   def WILLR(Records: js.Array[Record]): js.Array[Double] = js.native
   def WILLR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * Weighted Moving Average (加权移动平均)
     *
@@ -3246,6 +3397,7 @@ object talib extends js.Object {
     */
   def WMA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
   def WMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+  
   /**
     * 查询指标调用格式
     *
@@ -3256,4 +3408,3 @@ object talib extends js.Object {
     */
   def help(Func: String): String = js.native
 }
-

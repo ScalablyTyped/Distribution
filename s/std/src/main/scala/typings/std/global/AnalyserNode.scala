@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.AnalyserOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AnalyserNode")
 @js.native
@@ -14,7 +14,6 @@ class AnalyserNode protected ()
   def this(context: typings.std.BaseAudioContext) = this()
   def this(context: typings.std.BaseAudioContext, options: AnalyserOptions) = this()
 }
-
 @JSGlobal("AnalyserNode")
 @js.native
 object AnalyserNode
@@ -24,4 +23,3 @@ object AnalyserNode
       /* options */ AnalyserOptions, 
       typings.std.AnalyserNode
     ]
-

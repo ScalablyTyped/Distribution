@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "remark-mdx" : "2.0.0-next.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "remark-mdx" : "2.0.0-next.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -2,10 +2,11 @@ package typings.jqueryScrollto
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Scroll the matched elements
     */
@@ -20,4 +21,3 @@ trait JQuery extends js.Object {
   def scrollTo(target: js.Any, settings: ScrollToOptions): JQuery = js.native
   def scrollTo(target: js.Any, settings: ScrollToOptions, onAfter: js.Function): JQuery = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.smartFoxServer.global.SFS2X
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region Managers
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SFS2X.Managers")
 @js.native
 object Managers extends js.Object {
+  
   @js.native
   class BuddyManager protected ()
     extends typings.smartFoxServer.SFS2X.Managers.BuddyManager {
@@ -39,6 +40,4 @@ object Managers extends js.Object {
       */
     def this(sfs: typings.smartFoxServer.SFS2X.SmartFox) = this()
   }
-  
 }
-

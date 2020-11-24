@@ -3,7 +3,7 @@ package typings.materialUiStyles.withStylesWithStylesMod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CSSProperties
@@ -17,12 +17,11 @@ trait CSSProperties
 // BaseCSSProperties as well. Usually you would use `BaseCSSProperties[keyof BaseCSSProperties]`
 // but this would not allow assigning React.CSSProperties to CSSProperties
 /* k */ StringDictionary[js.Any | CSSProperties]
-
 object CSSProperties {
+  
   @scala.inline
   def apply(): CSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CSSProperties]
   }
 }
-

@@ -2,7 +2,7 @@ package typings.baidumapWebSdk.global.BMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BMap.IconSequence")
 @js.native
@@ -22,4 +22,3 @@ class IconSequence protected ()
   def this(symbol: js.Symbol, offset: String, repeat: js.UndefOr[scala.Nothing], fixedRotation: Boolean) = this()
   def this(symbol: js.Symbol, offset: String, repeat: String, fixedRotation: Boolean) = this()
 }
-

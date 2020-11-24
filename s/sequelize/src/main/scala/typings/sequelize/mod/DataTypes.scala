@@ -2,15 +2,15 @@ package typings.sequelize.mod
 
 import typings.sequelize.anon.Decimals
 import typings.sequelize.anon.Length
-import typings.sequelize.anon.LengthNumber
 import typings.sequelize.anon.LengthString
 import typings.sequelize.anon.Precision
 import typings.sequelize.anon.Subtype
 import typings.sequelize.anon.Type
 import typings.sequelize.anon.Values
+import typings.sequelize.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A convenience class holding commonly used data types. The datatypes are used when definining a new model
@@ -50,63 +50,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DataTypes extends js.Object {
+  
   var ABSTRACT: DataTypeAbstract = js.native
-  @JSName("ARRAY")
-  var ARRAY_Original: DataTypeArray = js.native
-  @JSName("BIGINT")
-  var BIGINT_Original: DataTypeBigInt = js.native
-  @JSName("BLOB")
-  var BLOB_Original: DataTypeBlob = js.native
-  var BOOLEAN: DataTypeBoolean = js.native
-  @JSName("CHAR")
-  var CHAR_Original: DataTypeChar = js.native
-  var DATEONLY: DataTypeDateOnly = js.native
-  @JSName("DATE")
-  var DATE_Original: DataTypeDate = js.native
-  @JSName("DECIMAL")
-  var DECIMAL_Original: DataTypeDecimal = js.native
-  @JSName("DOUBLE PRECISION")
-  var `DOUBLE PRECISION_Original`: DataTypeDouble = js.native
-  @JSName("DOUBLE")
-  var DOUBLE_Original: DataTypeDouble = js.native
-  @JSName("ENUM")
-  var ENUM_Original: DataTypeEnum = js.native
-  @JSName("FLOAT")
-  var FLOAT_Original: DataTypeFloat = js.native
-  @JSName("GEOMETRY")
-  var GEOMETRY_Original: DataTypeGeometry = js.native
-  var HSTORE: DataTypeHStore = js.native
-  @JSName("INTEGER")
-  var INTEGER_Original: DataTypeInteger = js.native
-  var JSON: DataTypeJSONType = js.native
-  var JSONB: DataTypeJSONB = js.native
-  @JSName("MEDIUMINT")
-  var MEDIUMINT_Original: DataTypeMediumInt = js.native
-  var NONE: DataTypeVirtual = js.native
-  var NOW: DataTypeNow = js.native
-  var NUMBER: DataTypeNumber = js.native
-  @JSName("NUMERIC")
-  var NUMERIC_Original: DataTypeDecimal = js.native
-  @JSName("RANGE")
-  var RANGE_Original: DataTypeRange = js.native
-  @JSName("REAL")
-  var REAL_Original: DataTypeReal = js.native
-  @JSName("SMALLINT")
-  var SMALLINT_Original: DataTypeSmallInt = js.native
-  @JSName("STRING")
-  var STRING_Original: DataTypeString = js.native
-  @JSName("TEXT")
-  var TEXT_Original: DataTypeText = js.native
-  var TIME: DataTypeTime = js.native
-  @JSName("TINYINT")
-  var TINYINT_Original: DataTypeTinyInt = js.native
-  @JSName("UUIDV1")
-  var UUIDV1_Original: DataTypeUUIDv1 = js.native
-  @JSName("UUIDV4")
-  var UUIDV4_Original: DataTypeUUIDv4 = js.native
-  @JSName("UUID")
-  var UUID_Original: DataTypeUUID = js.native
-  var VIRTUAL: DataTypeVirtual = js.native
+  
   /**
     * Array field for Postgre
     *
@@ -114,12 +60,18 @@ trait DataTypes extends js.Object {
     */
   def ARRAY(options: Type): DataTypeArray = js.native
   def ARRAY(`type`: DataTypeAbstract): DataTypeArray = js.native
+  @JSName("ARRAY")
+  var ARRAY_Original: DataTypeArray = js.native
+  
   /**
     * Length of the number field.
     */
   def BIGINT(): DataTypeBigInt = js.native
   def BIGINT(length: Double): DataTypeBigInt = js.native
   def BIGINT(options: Length): DataTypeBigInt = js.native
+  @JSName("BIGINT")
+  var BIGINT_Original: DataTypeBigInt = js.native
+  
   /**
     * Length of the blob field.
     *
@@ -128,18 +80,32 @@ trait DataTypes extends js.Object {
   def BLOB(): DataTypeBlob = js.native
   def BLOB(length: String): DataTypeBlob = js.native
   def BLOB(options: LengthString): DataTypeBlob = js.native
+  @JSName("BLOB")
+  var BLOB_Original: DataTypeBlob = js.native
+  
+  var BOOLEAN: DataTypeBoolean = js.native
+  
   /**
     * A variable length string. Default length 255
     */
   def CHAR(): DataTypeChar = js.native
   def CHAR(length: Double): DataTypeChar = js.native
   def CHAR(options: Length): DataTypeChar = js.native
+  @JSName("CHAR")
+  var CHAR_Original: DataTypeChar = js.native
+  
   /**
     * Length of decimal places of time
     */
   def DATE(): DataTypeDate = js.native
   def DATE(length: Double): DataTypeDate = js.native
-  def DATE(options: LengthNumber): DataTypeDate = js.native
+  def DATE(options: `0`): DataTypeDate = js.native
+  
+  var DATEONLY: DataTypeDateOnly = js.native
+  
+  @JSName("DATE")
+  var DATE_Original: DataTypeDate = js.native
+  
   /**
     * Precision and scale for the decimal number
     */
@@ -147,6 +113,9 @@ trait DataTypes extends js.Object {
   def DECIMAL(options: Precision): DataTypeDecimal = js.native
   def DECIMAL(precision: Double): DataTypeDecimal = js.native
   def DECIMAL(precision: Double, scale: Double): DataTypeDecimal = js.native
+  @JSName("DECIMAL")
+  var DECIMAL_Original: DataTypeDecimal = js.native
+  
   /**
     * Length of the number field and decimals of the real
     */
@@ -154,6 +123,7 @@ trait DataTypes extends js.Object {
   def DOUBLE(length: Double): DataTypeDouble = js.native
   def DOUBLE(length: Double, decimals: Double): DataTypeDouble = js.native
   def DOUBLE(options: Decimals): DataTypeDouble = js.native
+  
   /**
     * Length of the number field and decimals of the real
     */
@@ -161,6 +131,12 @@ trait DataTypes extends js.Object {
   def `DOUBLE PRECISION`(length: Double): DataTypeDouble = js.native
   def `DOUBLE PRECISION`(length: Double, decimals: Double): DataTypeDouble = js.native
   def `DOUBLE PRECISION`(options: Decimals): DataTypeDouble = js.native
+  @JSName("DOUBLE PRECISION")
+  var `DOUBLE PRECISION_Original`: DataTypeDouble = js.native
+  
+  @JSName("DOUBLE")
+  var DOUBLE_Original: DataTypeDouble = js.native
+  
   /**
     * Enum field
     *
@@ -171,6 +147,9 @@ trait DataTypes extends js.Object {
   def ENUM(options: Values): DataTypeEnum = js.native
   def ENUM(values: String): DataTypeEnum = js.native
   def ENUM(values: js.Array[String]): DataTypeEnum = js.native
+  @JSName("ENUM")
+  var ENUM_Original: DataTypeEnum = js.native
+  
   /**
     * Length of the number field and decimals of the float
     */
@@ -178,23 +157,47 @@ trait DataTypes extends js.Object {
   def FLOAT(length: Double): DataTypeFloat = js.native
   def FLOAT(length: Double, decimals: Double): DataTypeFloat = js.native
   def FLOAT(options: Decimals): DataTypeFloat = js.native
+  @JSName("FLOAT")
+  var FLOAT_Original: DataTypeFloat = js.native
+  
   /**
     * Geometry field for Postgres
     */
   def GEOMETRY(`type`: String): DataTypeGeometry = js.native
   def GEOMETRY(`type`: String, srid: Double): DataTypeGeometry = js.native
+  @JSName("GEOMETRY")
+  var GEOMETRY_Original: DataTypeGeometry = js.native
+  
+  var HSTORE: DataTypeHStore = js.native
+  
   /**
     * Length of the number field.
     */
   def INTEGER(): DataTypeInteger = js.native
   def INTEGER(length: Double): DataTypeInteger = js.native
   def INTEGER(options: Length): DataTypeInteger = js.native
+  @JSName("INTEGER")
+  var INTEGER_Original: DataTypeInteger = js.native
+  
+  var JSON: DataTypeJSONType = js.native
+  
+  var JSONB: DataTypeJSONB = js.native
+  
   /**
     * Length of the number field.
     */
   def MEDIUMINT(): DataTypeMediumInt = js.native
   def MEDIUMINT(length: Double): DataTypeMediumInt = js.native
   def MEDIUMINT(options: Length): DataTypeMediumInt = js.native
+  @JSName("MEDIUMINT")
+  var MEDIUMINT_Original: DataTypeMediumInt = js.native
+  
+  var NONE: DataTypeVirtual = js.native
+  
+  var NOW: DataTypeNow = js.native
+  
+  var NUMBER: DataTypeNumber = js.native
+  
   /**
     * Precision and scale for the decimal number
     */
@@ -202,6 +205,9 @@ trait DataTypes extends js.Object {
   def NUMERIC(options: Precision): DataTypeDecimal = js.native
   def NUMERIC(precision: Double): DataTypeDecimal = js.native
   def NUMERIC(precision: Double, scale: Double): DataTypeDecimal = js.native
+  @JSName("NUMERIC")
+  var NUMERIC_Original: DataTypeDecimal = js.native
+  
   /**
     * Range field for Postgre
     *
@@ -210,6 +216,9 @@ trait DataTypes extends js.Object {
   def RANGE(): DataTypeRange = js.native
   def RANGE(options: Subtype): DataTypeRange = js.native
   def RANGE(subtype: DataTypeAbstract): DataTypeRange = js.native
+  @JSName("RANGE")
+  var RANGE_Original: DataTypeRange = js.native
+  
   /**
     * Length of the number field and decimals of the real
     */
@@ -217,18 +226,27 @@ trait DataTypes extends js.Object {
   def REAL(length: Double): DataTypeReal = js.native
   def REAL(length: Double, decimals: Double): DataTypeReal = js.native
   def REAL(options: Decimals): DataTypeReal = js.native
+  @JSName("REAL")
+  var REAL_Original: DataTypeReal = js.native
+  
   /**
     * Length of the number field.
     */
   def SMALLINT(): DataTypeSmallInt = js.native
   def SMALLINT(length: Double): DataTypeSmallInt = js.native
   def SMALLINT(options: Length): DataTypeSmallInt = js.native
+  @JSName("SMALLINT")
+  var SMALLINT_Original: DataTypeSmallInt = js.native
+  
   /**
     * A variable length string. Default length 255
     */
   def STRING(): DataTypeString = js.native
   def STRING(length: Double): DataTypeString = js.native
   def STRING(options: Length): DataTypeString = js.native
+  @JSName("STRING")
+  var STRING_Original: DataTypeString = js.native
+  
   /**
     * Length of the text field.
     *
@@ -237,14 +255,32 @@ trait DataTypes extends js.Object {
   def TEXT(): DataTypeText = js.native
   def TEXT(length: String): DataTypeText = js.native
   def TEXT(options: LengthString): DataTypeText = js.native
+  @JSName("TEXT")
+  var TEXT_Original: DataTypeText = js.native
+  
+  var TIME: DataTypeTime = js.native
+  
   /**
     * Length of the number field.
     */
   def TINYINT(): DataTypeTinyInt = js.native
   def TINYINT(length: Double): DataTypeTinyInt = js.native
   def TINYINT(options: Length): DataTypeTinyInt = js.native
+  @JSName("TINYINT")
+  var TINYINT_Original: DataTypeTinyInt = js.native
+  
   def UUID(): DataTypeUUID = js.native
+  
   def UUIDV1(): DataTypeUUIDv1 = js.native
+  @JSName("UUIDV1")
+  var UUIDV1_Original: DataTypeUUIDv1 = js.native
+  
   def UUIDV4(): DataTypeUUIDv4 = js.native
+  @JSName("UUIDV4")
+  var UUIDV4_Original: DataTypeUUIDv4 = js.native
+  
+  @JSName("UUID")
+  var UUID_Original: DataTypeUUID = js.native
+  
+  var VIRTUAL: DataTypeVirtual = js.native
 }
-

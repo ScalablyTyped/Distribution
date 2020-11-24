@@ -4,7 +4,7 @@ import typings.std.Iterable
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/view/emptyelement
 @JSImport("@ckeditor/ckeditor5-engine", "view.EmptyElement")
@@ -23,4 +23,3 @@ class EmptyElement protected () extends Element {
   protected def this(name: String, attrs: Map[String, String], children: Node) = this()
   protected def this(name: String, attrs: Map[String, String], children: Iterable[Node]) = this()
 }
-

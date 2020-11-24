@@ -1,67 +1,47 @@
 package typings.sequelize.mod
 
-import typings.sequelize.anon.Exclude
-import typings.sequelize.anon.Level
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for Model.findOrInitialize method
   */
+@js.native
 trait FindCreateFindOptions[TAttributes] extends FindOptions[TAttributes] {
+  
   /**
     * Default values to use if building a new instance
     */
-  var defaults: js.UndefOr[TAttributes] = js.undefined
+  var defaults: js.UndefOr[TAttributes] = js.native
 }
-
 object FindCreateFindOptions {
+  
   @scala.inline
-  def apply[TAttributes](
-    attributes: FindOptionsAttributesArray | Exclude = null,
-    benchmark: js.UndefOr[Boolean] = js.undefined,
-    defaults: TAttributes = null,
-    distinct: js.UndefOr[Boolean] = js.undefined,
-    group: String | js.Array[String] | js.Object = null,
-    having: AnyWhereOptions = null,
-    include: js.Array[(Model[_, _, _]) | IncludeOptions] = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    lock: TransactionLockLevel | Level = null,
-    logging: Boolean | js.Function = null,
-    offset: js.UndefOr[Double] = js.undefined,
-    order: String | col | literal | FindOptionsOrderArray | fn | (js.Array[String | col | literal | FindOptionsOrderArray | fn]) = null,
-    paranoid: js.UndefOr[Boolean] = js.undefined,
-    raw: js.UndefOr[Boolean] = js.undefined,
-    rejectOnEmpty: js.UndefOr[Boolean] = js.undefined,
-    searchPath: String = null,
-    subQuery: js.UndefOr[Boolean] = js.undefined,
-    transaction: Transaction = null,
-    useMaster: js.UndefOr[Boolean] = js.undefined,
-    where: WhereOptions[TAttributes] | where | fn | (js.Array[col | and | or | String]) = null
-  ): FindCreateFindOptions[TAttributes] = {
+  def apply[TAttributes](): FindCreateFindOptions[TAttributes] = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark.get.asInstanceOf[js.Any])
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
-    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct.get.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (having != null) __obj.updateDynamic("having")(having.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (lock != null) __obj.updateDynamic("lock")(lock.asInstanceOf[js.Any])
-    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (!js.isUndefined(paranoid)) __obj.updateDynamic("paranoid")(paranoid.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectOnEmpty)) __obj.updateDynamic("rejectOnEmpty")(rejectOnEmpty.get.asInstanceOf[js.Any])
-    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(subQuery)) __obj.updateDynamic("subQuery")(subQuery.get.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMaster)) __obj.updateDynamic("useMaster")(useMaster.get.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindCreateFindOptions[TAttributes]]
   }
+  
+  @scala.inline
+  implicit class FindCreateFindOptionsOps[Self <: FindCreateFindOptions[_], TAttributes] (val x: Self with FindCreateFindOptions[TAttributes]) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setDefaults(value: TAttributes): Self = this.set("defaults", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDefaults: Self = this.set("defaults", js.undefined)
+  }
 }
-

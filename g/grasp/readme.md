@@ -12,7 +12,7 @@ JavaScript structural search, replace, and refactor
 | Keywords           | javascript, search, replace, refactor, structural, ast |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 9760 |
+| # downloads        | 14672 |
 | # stars            | 3 |
 
 ## Links

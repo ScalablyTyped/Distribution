@@ -10,9 +10,9 @@ Koa cookie session middleware with external store support
 | ------------------ | :-------------: |
 | Full name          | koa-session |
 | Keywords           | koa, middleware, session, cookie |
-| # releases         | 22 |
-| # dependents       | 231 |
-| # downloads        | 1700725 |
+| # releases         | 12 |
+| # dependents       | 248 |
+| # downloads        | 2673185 |
 | # stars            | 24 |
 
 ## Links

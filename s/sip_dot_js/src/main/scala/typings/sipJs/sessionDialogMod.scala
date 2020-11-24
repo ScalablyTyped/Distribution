@@ -27,11 +27,12 @@ import typings.sipJs.transactionsMod.InviteServerTransaction
 import typings.sipJs.userAgentCoreMod.UserAgentCore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/core/dialogs/session-dialog", JSImport.Namespace)
 @js.native
 object sessionDialogMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.sipJs.sessionSessionMod.Session because var conflicts: callId, id, localTag, localURI, remoteTag, remoteTarget, remoteURI. Inlined delegate, sessionState, signalingState, answer, offer, bye, bye, bye, bye, info, info, info, info, invite, invite, invite, invite, message, message, message, message, notify, notify, notify, notify, prack, prack, prack, prack, refer, refer, refer, refer */ @js.native
   class SessionDialog protected () extends Dialog {
@@ -49,43 +50,22 @@ object sessionDialogMod extends js.Object {
       state: DialogState,
       delegate: SessionDelegate
     ) = this()
+    
     /** The current answer. Undefined unless signaling state Stable. */
     var _answer: js.Any = js.native
+    
     /** The current offer. Undefined unless signaling state HaveLocalOffer, HaveRemoteOffer, or Stable. */
     var _offer: js.Any = js.native
+    
     /** The rollback answer. Undefined unless signaling state HaveLocalOffer or HaveRemoteOffer. */
     var _rollbackAnswer: js.Any = js.native
+    
     /** The rollback offer. Undefined unless signaling state HaveLocalOffer or HaveRemoteOffer. */
     var _rollbackOffer: js.Any = js.native
+    
     /** The state of the offer/answer exchange. */
     var _signalingState: js.Any = js.native
-    /** True if processing an ACK to the initial transaction 2xx (UAS only). */
-    var ackProcessing: js.Any = js.native
-    /** True if waiting for an ACK to the initial transaction 2xx (UAS only). */
-    var ackWait: js.Any = js.native
-    /** The current answer if signalingState is stable. Otherwise undefined. */
-    @JSName("answer")
-    val answer_FSessionDialog: js.UndefOr[Body] = js.native
-    var delegate: js.UndefOr[SessionDelegate] = js.native
-    var initialTransaction: js.Any = js.native
-    /** Retransmission timer for 2xx response which confirmed the dialog. */
-    var invite2xxTimer: js.Any = js.native
-    var logger: js.Any = js.native
-    /** The current offer if signalingState is not initial or closed. Otherwise undefined. */
-    @JSName("offer")
-    val offer_FSessionDialog: js.UndefOr[Body] = js.native
-    var reinviteUserAgentClient: js.UndefOr[ReInviteUserAgentClient] = js.native
-    var reinviteUserAgentServer: js.UndefOr[ReInviteUserAgentServer] = js.native
-    /** The rseq of the last reliable response. */
-    var rseq: js.Any = js.native
-    /** Session state. */
-    @JSName("sessionState")
-    val sessionState_FSessionDialog: SessionState = js.native
-    /** Current state of the offer/answer exchange. */
-    @JSName("signalingState")
-    val signalingState_FSessionDialog: SignalingState = js.native
-    var start2xxRetransmissionTimer: js.Any = js.native
-    var startReInvite2xxRetransmissionTimer: js.Any = js.native
+    
     /**
       * The UAC core MUST generate an ACK request for each 2xx received from
       * the transaction layer.  The header fields of the ACK are constructed
@@ -103,8 +83,19 @@ object sessionDialogMod extends js.Object {
       */
     def ack(): OutgoingAckRequest = js.native
     def ack(options: RequestOptions): OutgoingAckRequest = js.native
+    
+    /** True if processing an ACK to the initial transaction 2xx (UAS only). */
+    var ackProcessing: js.Any = js.native
+    
+    /** True if waiting for an ACK to the initial transaction 2xx (UAS only). */
+    var ackWait: js.Any = js.native
+    
     /** The current answer. Undefined unless signaling state Stable. */
     def answer: js.UndefOr[Body] = js.native
+    /** The current answer if signalingState is stable. Otherwise undefined. */
+    @JSName("answer")
+    val answer_FSessionDialog: js.UndefOr[Body] = js.native
+    
     /**
       * Terminating a Session
       *
@@ -153,6 +144,9 @@ object sessionDialogMod extends js.Object {
     def bye(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingByeRequest = js.native
     def bye(delegate: OutgoingRequestDelegate): OutgoingByeRequest = js.native
     def bye(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingByeRequest = js.native
+    
+    var delegate: js.UndefOr[SessionDelegate] = js.native
+    
     /**
       * An INFO request can be associated with an Info Package (see
       * Section 5), or associated with a legacy INFO usage (see Section 2).
@@ -174,6 +168,9 @@ object sessionDialogMod extends js.Object {
     def info(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingInfoRequest = js.native
     def info(delegate: OutgoingRequestDelegate): OutgoingInfoRequest = js.native
     def info(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingInfoRequest = js.native
+    
+    var initialTransaction: js.Any = js.native
+    
     /**
       * Modifying an Existing Session
       *
@@ -206,6 +203,12 @@ object sessionDialogMod extends js.Object {
     def invite(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingInviteRequest = js.native
     def invite(delegate: OutgoingInviteRequestDelegate): OutgoingInviteRequest = js.native
     def invite(delegate: OutgoingInviteRequestDelegate, options: RequestOptions): OutgoingInviteRequest = js.native
+    
+    /** Retransmission timer for 2xx response which confirmed the dialog. */
+    var invite2xxTimer: js.Any = js.native
+    
+    var logger: js.Any = js.native
+    
     /**
       * Send MESSAGE request.
       * Deliver a message during a session.
@@ -224,11 +227,17 @@ object sessionDialogMod extends js.Object {
       */
     def message(delegate: OutgoingRequestDelegate): OutgoingMessageRequest = js.native
     def message(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingMessageRequest = js.native
+    
     def notify(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingNotifyRequest = js.native
     def notify(delegate: OutgoingRequestDelegate): OutgoingNotifyRequest = js.native
     def notify(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingNotifyRequest = js.native
+    
     /** The current offer. Undefined unless signaling state HaveLocalOffer, HaveRemoteOffer, of Stable. */
     def offer: js.UndefOr[Body] = js.native
+    /** The current offer if signalingState is not initial or closed. Otherwise undefined. */
+    @JSName("offer")
+    val offer_FSessionDialog: js.UndefOr[Body] = js.native
+    
     /**
       * Assuming the response is to be transmitted reliably, the UAC MUST
       * create a new request with method PRACK.  This request is sent within
@@ -250,8 +259,10 @@ object sessionDialogMod extends js.Object {
     def prack(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingPrackRequest = js.native
     def prack(delegate: OutgoingRequestDelegate): OutgoingPrackRequest = js.native
     def prack(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingPrackRequest = js.native
+    
     /** Re-confirm the dialog. Only matters if handling re-INVITE request. */
     def reConfirm(): Unit = js.native
+    
     /**
       * REFER is a SIP request and is constructed as defined in [1].  A REFER
       * request MUST contain exactly one Refer-To header field value.
@@ -269,19 +280,34 @@ object sessionDialogMod extends js.Object {
     def refer(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingReferRequest = js.native
     def refer(delegate: OutgoingRequestDelegate): OutgoingReferRequest = js.native
     def refer(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingReferRequest = js.native
+    
+    var reinviteUserAgentClient: js.UndefOr[ReInviteUserAgentClient] = js.native
+    
+    var reinviteUserAgentServer: js.UndefOr[ReInviteUserAgentServer] = js.native
+    
     /**
       * Guard against out of order reliable provisional responses and retransmissions.
       * Returns false if the response should be discarded, otherwise true.
       * @param message - Incoming response message within this dialog.
       */
     def reliableSequenceGuard(message: IncomingResponseMessage): Boolean = js.native
+    
+    /** The rseq of the last reliable response. */
+    var rseq: js.Any = js.native
+    
     def sessionState: SessionState = js.native
+    /** Session state. */
+    @JSName("sessionState")
+    val sessionState_FSessionDialog: SessionState = js.native
+    
     /** The state of the offer/answer exchange. */
     def signalingState: SignalingState = js.native
+    
     /**
       * If not in a stable signaling state, rollback to prior stable signaling state.
       */
     def signalingStateRollback(): Unit = js.native
+    
     def signalingStateTransition(message: Body): Unit = js.native
     /**
       * Update the signaling state of the dialog.
@@ -290,7 +316,13 @@ object sessionDialogMod extends js.Object {
     def signalingStateTransition(message: IncomingRequestMessage): Unit = js.native
     def signalingStateTransition(message: IncomingResponseMessage): Unit = js.native
     def signalingStateTransition(message: OutgoingRequestMessage): Unit = js.native
+    
+    /** Current state of the offer/answer exchange. */
+    @JSName("signalingState")
+    val signalingState_FSessionDialog: SignalingState = js.native
+    
+    var start2xxRetransmissionTimer: js.Any = js.native
+    
+    var startReInvite2xxRetransmissionTimer: js.Any = js.native
   }
-  
 }
-

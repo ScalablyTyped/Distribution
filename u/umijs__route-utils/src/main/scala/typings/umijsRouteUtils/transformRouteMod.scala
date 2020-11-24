@@ -6,11 +6,12 @@ import typings.umijsRouteUtils.typesMod.MessageDescriptor
 import typings.umijsRouteUtils.typesMod.Route
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@umijs/route-utils/dist/transformRoute/transformRoute", JSImport.Namespace)
 @js.native
 object transformRouteMod extends js.Object {
+  
   /**
     * @param routes 路由配置
     * @param locale 是否使用国际化
@@ -54,8 +55,10 @@ object transformRouteMod extends js.Object {
     formatMessage: js.Function1[/* message */ MessageDescriptor, String],
     ignoreFilter: Boolean
   ): Breadcrumb = js.native
-  def getKeyByPath(item: MenuDataItem): String = js.native
-  def guid(): String = js.native
+  
+  def getKeyByPath(item: MenuDataItem): js.UndefOr[String] = js.native
+  
   def isUrl(path: String): Boolean = js.native
+  
+  def stripQueryStringAndHashFromPath(url: String): String = js.native
 }
-

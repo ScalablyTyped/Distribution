@@ -4,15 +4,15 @@
 Typings are for version 3.0
 
 ## Library description:
-A performant and comprehensive React sticky
+A performant and comprehensive React sticky component
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-stickynode |
 | Keywords           | Sticky, React |
-| # releases         | 6 |
-| # dependents       | 15 |
-| # downloads        | 2158945 |
+| # releases         | 7 |
+| # dependents       | 18 |
+| # downloads        | 3030530 |
 | # stars            | 0 |
 
 ## Links

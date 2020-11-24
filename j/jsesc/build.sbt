@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsesc"
-version := "2.5.2-dt-20200520Z-27b581"
+version := "2.5.2-dt-20201002Z-0c2635"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

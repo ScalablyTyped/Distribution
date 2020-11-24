@@ -2,7 +2,7 @@ package typings.actionsOnGoogle.apiV1Mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.actionsOnGoogle.actionsOnGoogleStrings.actionDotdevicesDotSYNC
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.actionsOnGoogle.actionsOnGoogleStrings.actionDotdevicesDotDISCONNECT
 */
 trait SmartHomeV1Intents extends js.Object
-
 object SmartHomeV1Intents {
+  
   @scala.inline
   def actionDotdevicesDotDISCONNECT: typings.actionsOnGoogle.actionsOnGoogleStrings.actionDotdevicesDotDISCONNECT = "action.devices.DISCONNECT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.actionDotdevicesDotDISCONNECT]
+  
   @scala.inline
   def actionDotdevicesDotEXECUTE: typings.actionsOnGoogle.actionsOnGoogleStrings.actionDotdevicesDotEXECUTE = "action.devices.EXECUTE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.actionDotdevicesDotEXECUTE]
+  
   @scala.inline
   def actionDotdevicesDotQUERY: typings.actionsOnGoogle.actionsOnGoogleStrings.actionDotdevicesDotQUERY = "action.devices.QUERY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.actionDotdevicesDotQUERY]
+  
   @scala.inline
   def actionDotdevicesDotSYNC: typings.actionsOnGoogle.actionsOnGoogleStrings.actionDotdevicesDotSYNC = "action.devices.SYNC".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.actionDotdevicesDotSYNC]
 }
-

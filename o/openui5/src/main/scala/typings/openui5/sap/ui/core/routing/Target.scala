@@ -4,10 +4,11 @@ import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.base.EventProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Target extends EventProvider {
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'display' event of this
     * <code>sap.ui.core.routing.Target</code>.<br/>
@@ -19,11 +20,13 @@ trait Target extends EventProvider {
     */
   def attachDisplay(oData: js.Any, fnFunction: js.Any): Target = js.native
   def attachDisplay(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Target = js.native
+  
   /**
     * Destroys the target, will be called by {@link sap.m.routing.Targets} don't call this directly.
     * @returns this for chaining.
     */
   def destroy(): Target = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'display' event of this
     * <code>sap.ui.core.routing.Target</code>.<br/>The passed function and listener object must match the
@@ -33,6 +36,7 @@ trait Target extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def detachDisplay(fnFunction: js.Any, oListener: js.Any): Target = js.native
+  
   /**
     * Creates a view and puts it in an aggregation of a control that has been defined in the {@link
     * sap.ui.core.routing.Target#constructor}.
@@ -42,6 +46,7 @@ trait Target extends EventProvider {
     * otherwise it resolves with {name: *, error: *}
     */
   def display(vData: js.Any): JQueryPromise[_] = js.native
+  
   /**
     * Fire event created to attached listeners.
     * @param mArguments the arguments to pass along with the event.
@@ -49,4 +54,3 @@ trait Target extends EventProvider {
     */
   def fireDisplay(mArguments: js.Any): Target = js.native
 }
-

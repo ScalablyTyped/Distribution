@@ -13,16 +13,18 @@ import typings.webgme.GmeCommon.ResultCallback
 import typings.webgme.GmeConfig.ConfigItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("GmePlugin")
 @js.native
 object GmePlugin extends js.Object {
+  
   /**
     The base plugin object from which all plugins should inherit.
     */
   @js.native
   trait PluginBase extends js.Object {
+    
     /**
       * The resolved META nodes based on the active namespace. Index by the fully qualified meta node names
       * with the namespace stripped off at the start.
@@ -37,54 +39,65 @@ object GmePlugin extends js.Object {
       * (n.b. 'a' and 'b' in example 3) are pointing to the meta nodes defined in A.B.)
       */
     var META: js.Any = js.native
+    
     var activeNode: Node = js.native
+    
     var activeSelection: js.Array[Node] = js.native
-    var blobClient: BlobClient = js.native
-    var core: typings.webgme.GmeClasses.Core = js.native
-    var gmeConfig: typings.webgme.GmeConfig.GmeConfig = js.native
-    var isConfigured: Boolean = js.native
-    var logger: GmeLogger = js.native
-    /**
-      * The namespace the META nodes are coming from (set by invoker).
-      * The default is the full meta, i.e. the empty string namespace.
-      * For example, if a project has a library A with a library B. The possible namespaces are:
-      * '', 'A' and 'A.B'.
-      */
-    var namespace: String = js.native
-    var notificationHandlers: js.Array[_] = js.native
-    var pluginMetadata: Metadata = js.native
-    var project: Project = js.native
-    var result: Result = js.native
-    var rootNode: Node = js.native
+    
     def addCommitToResult(status: String): Unit = js.native
+    
     def baseIsMeta(node: js.Any): Boolean = js.native
+    
+    var blobClient: BlobClient = js.native
+    
     def configure(config: typings.webgme.GmeConfig.GmeConfig): Unit = js.native
+    
+    var core: typings.webgme.GmeClasses.Core = js.native
+    
     def createMessage(node: js.Any, message: String, serverity: String): Unit = js.native
+    
     /**
       * Gets the configuration structure for the plugin.
       * The ConfigurationStructure defines the configuration for the plugin
       * and will be used to populate the GUI when invoking the plugin from webGME.
       */
     def getConfigStructure(): js.Array[ConfigItem] = js.native
+    
     def getCurrentConfig(): typings.webgme.GmeConfig.GmeConfig = js.native
+    
     def getDefaultConfig(): typings.webgme.GmeConfig.GmeConfig = js.native
+    
     /**
       * Gets the description of the plugin.
       */
     def getDescription(): String = js.native
+    
     def getMetaType(node: js.Any): js.Any = js.native
+    
     def getMetadata(): js.Any = js.native
+    
     /**
       * Gets the name of the plugin.
       */
     def getName(): String = js.native
+    
     /**
       * Gets the semantic version (semver.org) of the plugin.
       */
     def getVersion(): String = js.native
+    
+    var gmeConfig: typings.webgme.GmeConfig.GmeConfig = js.native
+    
     def initialize(logger: GmeLogger, blobClient: BlobClient, gmeConfig: typings.webgme.GmeConfig.GmeConfig): Unit = js.native
+    
+    var isConfigured: Boolean = js.native
+    
     def isInvalidActiveNode(pluginId: js.Any): js.Any = js.native
+    
     def isMetaTypeOf(node: js.Any, metaNode: js.Any): Boolean = js.native
+    
+    var logger: GmeLogger = js.native
+    
     /**
       Main function for the plugin to execute.
       Notes:
@@ -104,16 +117,37 @@ object GmePlugin extends js.Object {
       @param {function(string, plugin.PluginResult)} handler - the result handler
       */
     def main(callback: ResultCallback[Result]): Unit = js.native
+    
+    /**
+      * The namespace the META nodes are coming from (set by invoker).
+      * The default is the full meta, i.e. the empty string namespace.
+      * For example, if a project has a library A with a library B. The possible namespaces are:
+      * '', 'A' and 'A.B'.
+      */
+    var namespace: String = js.native
+    
+    var notificationHandlers: js.Array[_] = js.native
+    
+    var pluginMetadata: Metadata = js.native
+    
+    var project: Project = js.native
+    
+    var result: Result = js.native
+    
+    var rootNode: Node = js.native
+    
     def save(): Promisable = js.native
     def save(message: String): Promisable = js.native
+    
      // returns a promise?
     def sendNotification(message: String): js.Promise[DataObject] = js.native
      // returns a promise?
     def sendNotification(message: String, callback: ResultCallback[DataObject]): Unit = js.native
+    
     def setCurrentConfig(newConfig: typings.webgme.GmeConfig.GmeConfig): Unit = js.native
+    
     def updateMeta(generatedMeta: js.Any): Unit = js.native
+    
     def updateSuccess(value: Boolean, message: TemplateStringsArray): Unit = js.native
   }
-  
 }
-

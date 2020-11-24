@@ -3,7 +3,7 @@ package typings.googleapis.jobsV2Mod.jobsV2
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Deprecated. Use JobQuery instead.  The filters required to
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaJobFilters extends js.Object {
+  
   /**
     * Optional.  The category filter specifies the categories of jobs to search
     * against. See Category for more information.  If a value is not specified,
@@ -19,6 +20,7 @@ trait SchemaJobFilters extends js.Object {
     * against.
     */
   var categories: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Optional.   Allows filtering jobs by commute time with different travel
     * methods (e.g.  driving or public transit). Note: this only works with
@@ -26,6 +28,7 @@ trait SchemaJobFilters extends js.Object {
     * ignored.   Currently we do not support sorting by commute time.
     */
   var commuteFilter: js.UndefOr[SchemaCommutePreference] = js.native
+  
   /**
     * Optional.  The company names filter specifies the company entities to
     * search against.  If a value is not specified, jobs are searched for
@@ -34,6 +37,7 @@ trait SchemaJobFilters extends js.Object {
     * allowed.
     */
   var companyNames: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Optional.  This filter specifies the exact company titles of jobs to
     * search against.  If a value is not specified, jobs within the search
@@ -42,6 +46,7 @@ trait SchemaJobFilters extends js.Object {
     * the specified companies.  At most 20 company title filters are allowed.
     */
   var companyTitles: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Optional.  This search filter is applied only to Job.compensation_info.
     * For example, if the filter is specified as &quot;Hourly job with per-hour
@@ -49,6 +54,7 @@ trait SchemaJobFilters extends js.Object {
     * searched. If a filter is not defined, all open jobs are searched.
     */
   var compensationFilter: js.UndefOr[SchemaCompensationFilter] = js.native
+  
   /**
     * Optional.  This filter specifies a structured syntax to match against the
     * Job.custom_attributes that are marked as `filterable`.  The syntax for
@@ -66,6 +72,7 @@ trait SchemaJobFilters extends js.Object {
     * key2 &gt; 100
     */
   var customAttributeFilter: js.UndefOr[String] = js.native
+  
   /**
     * Deprecated. Use custom_attribute_filter instead.  Optional.  This filter
     * specifies searching against custom field values. See
@@ -75,6 +82,7 @@ trait SchemaJobFilters extends js.Object {
     * specified together with custom_attribute_filter, an error is thrown.
     */
   var customFieldFilters: js.UndefOr[StringDictionary[SchemaCustomFieldFilter]] = js.native
+  
   /**
     * Optional.  This flag controls the spell-check feature. If false, the
     * service attempts to correct a misspelled query, for example,
@@ -82,6 +90,7 @@ trait SchemaJobFilters extends js.Object {
     * false: a spell check is performed.
     */
   var disableSpellCheck: js.UndefOr[Boolean] = js.native
+  
   /**
     * Optional.  The employment type filter specifies the employment type of
     * jobs to search against, such as EmploymentType.FULL_TIME.  If a value is
@@ -90,6 +99,7 @@ trait SchemaJobFilters extends js.Object {
     * the specified employment types.
     */
   var employmentTypes: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Deprecated. Always use compensation_filter.  Optional.  This search
     * filter is applied only to Job.extended_compensation_info. For example, if
@@ -98,6 +108,7 @@ trait SchemaJobFilters extends js.Object {
     * filter is not defined, all open jobs are searched.
     */
   var extendedCompensationFilter: js.UndefOr[SchemaExtendedCompensationFilter] = js.native
+  
   /**
     * Optional.  This filter specifies the locale of jobs to search against,
     * for example, &quot;en-US&quot;.  If a value is not specified, the search
@@ -108,6 +119,7 @@ trait SchemaJobFilters extends js.Object {
     * filters are allowed.
     */
   var languageCodes: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Optional.  The location filter specifies geo-regions containing the jobs
     * to search against. See LocationFilter for more information.  If a
@@ -118,6 +130,7 @@ trait SchemaJobFilters extends js.Object {
     * is used for all locations.  At most 5 location filters are allowed.
     */
   var locationFilters: js.UndefOr[js.Array[SchemaLocationFilter]] = js.native
+  
   /**
     * Optional.  Jobs published within a range specified by this filter are
     * searched against, for example, DateRange.PAST_MONTH. If a value is not
@@ -125,12 +138,14 @@ trait SchemaJobFilters extends js.Object {
     * were published.
     */
   var publishDateRange: js.UndefOr[String] = js.native
+  
   /**
     * Optional.  The query filter contains the keywords that match against the
     * job title, description, and location fields.  The maximum query size is
     * 255 bytes/characters.
     */
   var query: js.UndefOr[String] = js.native
+  
   /**
     * Deprecated. Do not use this field.  This flag controls whether the job
     * search should be restricted to jobs owned by the current user.  Defaults
@@ -138,97 +153,135 @@ trait SchemaJobFilters extends js.Object {
     */
   var tenantJobOnly: js.UndefOr[Boolean] = js.native
 }
-
 object SchemaJobFilters {
+  
   @scala.inline
   def apply(): SchemaJobFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJobFilters]
   }
+  
   @scala.inline
   implicit class SchemaJobFiltersOps[Self <: SchemaJobFilters] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    
     @scala.inline
     def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCategories: Self = this.set("categories", js.undefined)
+    
     @scala.inline
     def setCommuteFilter(value: SchemaCommutePreference): Self = this.set("commuteFilter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCommuteFilter: Self = this.set("commuteFilter", js.undefined)
+    
     @scala.inline
     def setCompanyNamesVarargs(value: String*): Self = this.set("companyNames", js.Array(value :_*))
+    
     @scala.inline
     def setCompanyNames(value: js.Array[String]): Self = this.set("companyNames", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCompanyNames: Self = this.set("companyNames", js.undefined)
+    
     @scala.inline
     def setCompanyTitlesVarargs(value: String*): Self = this.set("companyTitles", js.Array(value :_*))
+    
     @scala.inline
     def setCompanyTitles(value: js.Array[String]): Self = this.set("companyTitles", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCompanyTitles: Self = this.set("companyTitles", js.undefined)
+    
     @scala.inline
     def setCompensationFilter(value: SchemaCompensationFilter): Self = this.set("compensationFilter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCompensationFilter: Self = this.set("compensationFilter", js.undefined)
+    
     @scala.inline
     def setCustomAttributeFilter(value: String): Self = this.set("customAttributeFilter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCustomAttributeFilter: Self = this.set("customAttributeFilter", js.undefined)
+    
     @scala.inline
     def setCustomFieldFilters(value: StringDictionary[SchemaCustomFieldFilter]): Self = this.set("customFieldFilters", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCustomFieldFilters: Self = this.set("customFieldFilters", js.undefined)
+    
     @scala.inline
     def setDisableSpellCheck(value: Boolean): Self = this.set("disableSpellCheck", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDisableSpellCheck: Self = this.set("disableSpellCheck", js.undefined)
+    
     @scala.inline
     def setEmploymentTypesVarargs(value: String*): Self = this.set("employmentTypes", js.Array(value :_*))
+    
     @scala.inline
     def setEmploymentTypes(value: js.Array[String]): Self = this.set("employmentTypes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEmploymentTypes: Self = this.set("employmentTypes", js.undefined)
+    
     @scala.inline
     def setExtendedCompensationFilter(value: SchemaExtendedCompensationFilter): Self = this.set("extendedCompensationFilter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteExtendedCompensationFilter: Self = this.set("extendedCompensationFilter", js.undefined)
+    
     @scala.inline
     def setLanguageCodesVarargs(value: String*): Self = this.set("languageCodes", js.Array(value :_*))
+    
     @scala.inline
     def setLanguageCodes(value: js.Array[String]): Self = this.set("languageCodes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLanguageCodes: Self = this.set("languageCodes", js.undefined)
+    
     @scala.inline
     def setLocationFiltersVarargs(value: SchemaLocationFilter*): Self = this.set("locationFilters", js.Array(value :_*))
+    
     @scala.inline
     def setLocationFilters(value: js.Array[SchemaLocationFilter]): Self = this.set("locationFilters", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLocationFilters: Self = this.set("locationFilters", js.undefined)
+    
     @scala.inline
     def setPublishDateRange(value: String): Self = this.set("publishDateRange", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePublishDateRange: Self = this.set("publishDateRange", js.undefined)
+    
     @scala.inline
     def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteQuery: Self = this.set("query", js.undefined)
+    
     @scala.inline
     def setTenantJobOnly(value: Boolean): Self = this.set("tenantJobOnly", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTenantJobOnly: Self = this.set("tenantJobOnly", js.undefined)
   }
-  
 }
-

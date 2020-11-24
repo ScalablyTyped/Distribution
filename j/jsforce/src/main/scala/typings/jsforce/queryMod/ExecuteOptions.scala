@@ -2,29 +2,64 @@ package typings.jsforce.queryMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ExecuteOptions extends js.Object {
-  var autoFetch: js.UndefOr[Boolean] = js.undefined
-  var headers: js.UndefOr[js.Object] = js.undefined
-  var maxFetch: js.UndefOr[Double] = js.undefined
-  var scanAll: js.UndefOr[Boolean] = js.undefined
+  
+  var autoFetch: js.UndefOr[Boolean] = js.native
+  
+  var headers: js.UndefOr[js.Object] = js.native
+  
+  var maxFetch: js.UndefOr[Double] = js.native
+  
+  var scanAll: js.UndefOr[Boolean] = js.native
 }
-
 object ExecuteOptions {
+  
   @scala.inline
-  def apply(
-    autoFetch: js.UndefOr[Boolean] = js.undefined,
-    headers: js.Object = null,
-    maxFetch: js.UndefOr[Double] = js.undefined,
-    scanAll: js.UndefOr[Boolean] = js.undefined
-  ): ExecuteOptions = {
+  def apply(): ExecuteOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFetch)) __obj.updateDynamic("autoFetch")(autoFetch.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxFetch)) __obj.updateDynamic("maxFetch")(maxFetch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scanAll)) __obj.updateDynamic("scanAll")(scanAll.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteOptions]
   }
+  
+  @scala.inline
+  implicit class ExecuteOptionsOps[Self <: ExecuteOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setAutoFetch(value: Boolean): Self = this.set("autoFetch", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAutoFetch: Self = this.set("autoFetch", js.undefined)
+    
+    @scala.inline
+    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    
+    @scala.inline
+    def setMaxFetch(value: Double): Self = this.set("maxFetch", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMaxFetch: Self = this.set("maxFetch", js.undefined)
+    
+    @scala.inline
+    def setScanAll(value: Boolean): Self = this.set("scanAll", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteScanAll: Self = this.set("scanAll", js.undefined)
+  }
 }
-

@@ -10,9 +10,9 @@ Prepare Brotli-compressed versions of assets to serve them with Content-Encoding
 | ------------------ | :-------------: |
 | Full name          | brotli-webpack-plugin |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 23 |
-| # downloads        | 2982310 |
+| # releases         | 2 |
+| # dependents       | 20 |
+| # downloads        | 3531010 |
 | # stars            | 1 |
 
 ## Links

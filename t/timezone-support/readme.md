@@ -10,9 +10,9 @@ Lightweight time zone support for your applications or other date libraries.
 | ------------------ | :-------------: |
 | Full name          | timezone-support |
 | Keywords           | timezone, tzdata, convert, offset, date, time |
-| # releases         | 27 |
-| # dependents       | 14 |
-| # downloads        | 1583188 |
+| # releases         | 17 |
+| # dependents       | 17 |
+| # downloads        | 2916149 |
 | # stars            | 0 |
 
 ## Links

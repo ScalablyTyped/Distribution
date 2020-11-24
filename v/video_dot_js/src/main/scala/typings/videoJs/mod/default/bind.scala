@@ -2,11 +2,12 @@ package typings.videoJs.mod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js", "bind")
 @js.native
 object bind extends js.Object {
+  
   /**
     * Bind (a.k.a proxy or Context). A simple method for changing the context of a function
     * It also stores a unique id on the function so it can be easily removed from events.
@@ -25,4 +26,3 @@ object bind extends js.Object {
   def apply[F /* <: js.Function0[_] */](context: js.Any, fn: F): F = js.native
   def apply[F /* <: js.Function0[_] */](context: js.Any, fn: F, uid: Double): F = js.native
 }
-

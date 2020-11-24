@@ -2,11 +2,12 @@ package typings.electronPublish
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("electron-publish/out/progress", JSImport.Namespace)
 @js.native
 object progressMod extends js.Object {
+  
   @js.native
   abstract class ProgressBar protected () extends js.Object {
     /**
@@ -35,27 +36,41 @@ object progressMod extends js.Object {
       */
     def this(format: String) = this()
     def this(format: String, options: js.Any) = this()
+    
     var chars: js.Any = js.native
+    
     var complete: js.Any = js.native
+    
     var current: js.Any = js.native
-    val format: js.Any = js.native
-    var lastDraw: js.Any = js.native
-    var start: js.Any = js.native
-    var stream: js.Any = js.native
-    var tokens: js.Any = js.native
-    var total: Double = js.native
-    var width: js.Any = js.native
+    
     def currentAmount_=(value: Double): Unit = js.native
+    
+    val format: js.Any = js.native
+    
     /**
       * "interrupt" the progress bar and write a message above it.
       */
     def interrupt(message: String): Unit = js.native
+    
+    var lastDraw: js.Any = js.native
+    
     def render(): Unit = js.native
+    
+    var start: js.Any = js.native
+    
+    var stream: js.Any = js.native
+    
     def terminate(): Unit = js.native
+    
     /**
       * "tick" the progress bar with optional `len` and optional `tokens`.
       */
     def tick(delta: Double): Unit = js.native
+    
+    var tokens: js.Any = js.native
+    
+    var total: Double = js.native
+    
     /**
       * "update" the progress bar to represent an exact percentage.
       * The ratio (between 0 and 1) specified will be multiplied by `total` and
@@ -66,16 +81,20 @@ object progressMod extends js.Object {
       * A ratio of 0.5 will attempt to set the progress to halfway.
       */
     def update(ratio: Double): Unit = js.native
+    
+    var width: js.Any = js.native
   }
   
   @js.native
   class ProgressCallback protected () extends js.Object {
     def this(progressBar: ProgressBar) = this()
+    
     var nextUpdate: js.Any = js.native
+    
     val progressBar: js.Any = js.native
+    
     var start: js.Any = js.native
+    
     def update(transferred: Double, total: Double): Unit = js.native
   }
-  
 }
-

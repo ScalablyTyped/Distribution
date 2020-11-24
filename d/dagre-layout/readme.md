@@ -10,9 +10,9 @@ Graph layout for JavaScript
 | ------------------ | :-------------: |
 | Full name          | dagre-layout |
 | Keywords           | graph, layout, dagre |
-| # releases         | 7 |
-| # dependents       | 9 |
-| # downloads        | 1527222 |
+| # releases         | 0 |
+| # dependents       | 12 |
+| # downloads        | 908503 |
 | # stars            | 0 |
 
 ## Links

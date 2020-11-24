@@ -2,11 +2,12 @@ package typings.senchaTouch.global.Ext
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.each")
 @js.native
 object each extends js.Object {
+  
   def apply(): Boolean = js.native
   def apply(
     iterable: js.UndefOr[scala.Nothing],
@@ -44,4 +45,3 @@ object each extends js.Object {
   def apply(iterable: js.Any, fn: js.Any, scope: js.Any): Boolean = js.native
   def apply(iterable: js.Any, fn: js.Any, scope: js.Any, reverse: Boolean): Boolean = js.native
 }
-

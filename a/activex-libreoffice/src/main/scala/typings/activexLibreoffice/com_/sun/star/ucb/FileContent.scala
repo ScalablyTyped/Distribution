@@ -14,7 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A File {@link Content} represents either a directory or a file in the local file system.
@@ -33,8 +33,8 @@ trait FileContent
      with XPropertySetInfoChangeNotifier
      with XCommandInfoChangeNotifier
      with XChild
-
 object FileContent {
+  
   @scala.inline
   def apply(
     ContentType: String,
@@ -71,4 +71,3 @@ object FileContent {
     __obj.asInstanceOf[FileContent]
   }
 }
-

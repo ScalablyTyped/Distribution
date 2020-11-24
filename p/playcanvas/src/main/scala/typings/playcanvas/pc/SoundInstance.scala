@@ -4,7 +4,7 @@ import typings.std.AudioBufferSourceNode
 import typings.std.AudioNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A pc.SoundInstance plays a {@link pc.Sound}.
@@ -36,79 +36,77 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SoundInstance extends EventHandler {
-  /**
-    * Gets or sets the current time of the sound that is playing. If the value provided is bigger than the duration of the instance it will wrap from the beginning.
-    */
-  var currentTime: Double = js.native
-  /**
-    * The duration of the sound that the instance will play starting from startTime.
-    */
-  var duration: Double = js.native
-  /**
-    * Returns true if the instance is currently paused.
-    */
-  var isPaused: Boolean = js.native
-  /**
-    * Returns true if the instance is currently playing.
-    */
-  var isPlaying: Boolean = js.native
-  /**
-    * Returns true if the instance is currently stopped.
-    */
-  var isStopped: Boolean = js.native
-  /**
-    * Returns true if the instance is currently suspended because the window is not focused.
-    */
-  var isSuspended: Boolean = js.native
-  /**
-    * If true the instance will restart when it finishes playing.
-    */
-  var loop: Boolean = js.native
-  /**
-    * The pitch modifier to play the sound with. Must be larger than 0.01.
-    */
-  var pitch: Double = js.native
-  /**
-    * The sound resource that the instance will play.
-    */
-  var sound: Sound = js.native
-  /**
-    * Gets the source that plays the sound resource. If the Web Audio API is not supported the type of source is <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">Audio</a>. Source is only available after calling play.
-    */
-  var source: AudioBufferSourceNode = js.native
-  /**
-    * The start time from which the sound will start playing.
-    */
-  var startTime: Double = js.native
-  /**
-    * The volume modifier to play the sound with. In range 0-1.
-    */
-  var volume: Double = js.native
+  
   /**
     * Clears any external nodes set by {@link pc.SoundInstance#setExternalNodes}.
     */
   def clearExternalNodes(): Unit = js.native
+  
+  /**
+    * Gets or sets the current time of the sound that is playing. If the value provided is bigger than the duration of the instance it will wrap from the beginning.
+    */
+  var currentTime: Double = js.native
+  
+  /**
+    * The duration of the sound that the instance will play starting from startTime.
+    */
+  var duration: Double = js.native
+  
   /**
     * Gets any external nodes set by {@link pc.SoundInstance#setExternalNodes}.
     * @returns Returns an array that contains the two nodes set by {@link pc.SoundInstance#setExternalNodes}.
     */
   def getExternalNodes(): js.Array[AudioNode] = js.native
+  
+  /**
+    * Returns true if the instance is currently paused.
+    */
+  var isPaused: Boolean = js.native
+  
+  /**
+    * Returns true if the instance is currently playing.
+    */
+  var isPlaying: Boolean = js.native
+  
+  /**
+    * Returns true if the instance is currently stopped.
+    */
+  var isStopped: Boolean = js.native
+  
+  /**
+    * Returns true if the instance is currently suspended because the window is not focused.
+    */
+  var isSuspended: Boolean = js.native
+  
+  /**
+    * If true the instance will restart when it finishes playing.
+    */
+  var loop: Boolean = js.native
+  
   /**
     * Pauses playback of sound. Call resume() to resume playback from the same position.
     * @returns Returns true if the sound was paused.
     */
   def pause(): Boolean = js.native
+  
+  /**
+    * The pitch modifier to play the sound with. Must be larger than 0.01.
+    */
+  var pitch: Double = js.native
+  
   /**
     * Begins playback of sound. If the sound is not loaded this will return false.
     * If the sound is already playing this will restart the sound.
     * @returns True if the sound was started.
     */
   def play(): Boolean = js.native
+  
   /**
     * Resumes playback of the sound. Playback resumes at the point that the audio was paused.
     * @returns Returns true if the sound was resumed.
     */
   def resume(): Boolean = js.native
+  
   /**
     * Connects external Web Audio API nodes. You need to pass
     * the first node of the node graph that you created externally and the last node of that graph. The first
@@ -128,10 +126,30 @@ trait SoundInstance extends EventHandler {
     */
   def setExternalNodes(firstNode: AudioNode): Unit = js.native
   def setExternalNodes(firstNode: AudioNode, lastNode: AudioNode): Unit = js.native
+  
+  /**
+    * The sound resource that the instance will play.
+    */
+  var sound: Sound = js.native
+  
+  /**
+    * Gets the source that plays the sound resource. If the Web Audio API is not supported the type of source is <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">Audio</a>. Source is only available after calling play.
+    */
+  var source: AudioBufferSourceNode = js.native
+  
+  /**
+    * The start time from which the sound will start playing.
+    */
+  var startTime: Double = js.native
+  
   /**
     * Stops playback of sound. Calling play() again will restart playback from the beginning of the sound.
     * @returns Returns true if the sound was stopped.
     */
   def stop(): Boolean = js.native
+  
+  /**
+    * The volume modifier to play the sound with. In range 0-1.
+    */
+  var volume: Double = js.native
 }
-

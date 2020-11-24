@@ -4,9 +4,37 @@ import typings.elasticlunr.mod.Bool
 import typings.elasticlunr.mod.EventType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticlunrStrings {
+  
+  @scala.inline
+  def AND: AND = "AND".asInstanceOf[AND]
+  
+  @scala.inline
+  def FieldSearchConfig: FieldSearchConfig = "FieldSearchConfig".asInstanceOf[FieldSearchConfig]
+  
+  @scala.inline
+  def Index: Index = "Index".asInstanceOf[Index]
+  
+  @scala.inline
+  def OR: OR = "OR".asInstanceOf[OR]
+  
+  @scala.inline
+  def SerialisedDocumentStore: SerialisedDocumentStore = "SerialisedDocumentStore".asInstanceOf[SerialisedDocumentStore]
+  
+  @scala.inline
+  def SerialisedIndexData: SerialisedIndexData = "SerialisedIndexData".asInstanceOf[SerialisedIndexData]
+  
+  @scala.inline
+  def add: add = "add".asInstanceOf[add]
+  
+  @scala.inline
+  def remove: remove = "remove".asInstanceOf[remove]
+  
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  
   @js.native
   sealed trait AND extends Bool
   
@@ -33,24 +61,4 @@ object elasticlunrStrings {
   
   @js.native
   sealed trait update extends EventType
-  
-  @scala.inline
-  def AND: AND = "AND".asInstanceOf[AND]
-  @scala.inline
-  def FieldSearchConfig: FieldSearchConfig = "FieldSearchConfig".asInstanceOf[FieldSearchConfig]
-  @scala.inline
-  def Index: Index = "Index".asInstanceOf[Index]
-  @scala.inline
-  def OR: OR = "OR".asInstanceOf[OR]
-  @scala.inline
-  def SerialisedDocumentStore: SerialisedDocumentStore = "SerialisedDocumentStore".asInstanceOf[SerialisedDocumentStore]
-  @scala.inline
-  def SerialisedIndexData: SerialisedIndexData = "SerialisedIndexData".asInstanceOf[SerialisedIndexData]
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
 }
-

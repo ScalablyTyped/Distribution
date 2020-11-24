@@ -11,8 +11,8 @@ Get a random boolean
 | Full name          | random-boolean |
 | Keywords           | random, bool, boolean, true, false |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2848 |
+| # dependents       | 2 |
+| # downloads        | 6518 |
 | # stars            | 0 |
 
 ## Links

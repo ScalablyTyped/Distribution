@@ -11,8 +11,8 @@ The lodash method `_.assignWith` exported as a module.
 | Full name          | lodash.assignwith |
 | Keywords           | lodash-modularized, assignwith |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 2847794 |
+| # dependents       | 29 |
+| # downloads        | 3629614 |
 | # stars            | 0 |
 
 ## Links

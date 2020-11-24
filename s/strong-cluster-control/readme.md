@@ -12,7 +12,7 @@ node cluster API wrapper and extensions
 | Keywords           | cluster, forever, master, pm, runner, strongloop, strongops, supervisor |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 203984 |
+| # downloads        | 109465 |
 | # stars            | 3 |
 
 ## Links

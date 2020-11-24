@@ -4,11 +4,12 @@ import typings.meteor.anon.LoginStyle
 import typings.meteor.meteorMod.globalError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/meteor", "Meteor.loginWith")
 @js.native
 object loginWith extends js.Object {
+  
   def apply[ExternalService](): Unit = js.native
   def apply[ExternalService](
     options: js.UndefOr[scala.Nothing],
@@ -20,4 +21,3 @@ object loginWith extends js.Object {
     callback: js.Function1[/* error */ js.UndefOr[globalError | Error | TypedError], Unit]
   ): Unit = js.native
 }
-

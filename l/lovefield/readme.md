@@ -11,8 +11,8 @@ Lovefield - A relational database for web apps
 | Full name          | lovefield |
 | Keywords           | lovefield |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 30464 |
+| # dependents       | 8 |
+| # downloads        | 36496 |
 | # stars            | 6 |
 
 ## Links

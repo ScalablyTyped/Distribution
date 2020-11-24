@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassWebSocketMessage extends ClassMessage {
+  
   /**
     * class prop 
     *
@@ -16,6 +17,7 @@ trait ClassWebSocketMessage extends ClassMessage {
     * @type Boolean
     */
   var compress: Boolean = js.native
+  
   /**
     * class prop 
     *
@@ -26,6 +28,7 @@ trait ClassWebSocketMessage extends ClassMessage {
     * @type Boolean
     */
   var masked: Boolean = js.native
+  
   /**
     * class prop 
     *
@@ -37,4 +40,3 @@ trait ClassWebSocketMessage extends ClassMessage {
     */
   var maxSize: Double = js.native
 }
-

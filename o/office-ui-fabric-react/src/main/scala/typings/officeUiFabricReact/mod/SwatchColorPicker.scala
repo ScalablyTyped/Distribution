@@ -5,9 +5,8 @@ import typings.officeUiFabricReact.swatchColorPickerTypesMod.ISwatchColorPickerP
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "SwatchColorPicker")
 @js.native
 object SwatchColorPicker extends TopLevel[FunctionComponent[ISwatchColorPickerProps]]
-

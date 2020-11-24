@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassStringDecoder extends ClassObject {
+  
   /**
     * class prop 
     *
@@ -21,36 +22,7 @@ trait ClassStringDecoder extends ClassObject {
     * @type String
     */
   var encoding: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 内部使用。
-    * 
-    * 
-    * @type Buffer
-    */
-  var lastChar: ClassBuffer = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 内部使用。
-    * 
-    * 
-    * @type Integer
-    */
-  var lastNeed: Double = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 内部使用。
-    * 
-    * 
-    * @type Integer
-    */
-  var lastTotal: Double = js.native
+  
   /**
     * 
     * @brief 将内部存留的 buffer 作为字符返回。不完整的 UTF-8 和 UTF-16 字节会尝试补全。
@@ -70,6 +42,7 @@ trait ClassStringDecoder extends ClassObject {
     * 
     */
   def end(buf: ClassBuffer): String = js.native
+  
   /**
     * 
     * @brief 内部使用。.
@@ -80,6 +53,40 @@ trait ClassStringDecoder extends ClassObject {
     * 
     */
   def fillLast(buf: ClassBuffer): String = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 内部使用。
+    * 
+    * 
+    * @type Buffer
+    */
+  var lastChar: ClassBuffer = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 内部使用。
+    * 
+    * 
+    * @type Integer
+    */
+  var lastNeed: Double = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 内部使用。
+    * 
+    * 
+    * @type Integer
+    */
+  var lastTotal: Double = js.native
+  
   /**
     * 
     * @brief 内部使用。.
@@ -91,6 +98,7 @@ trait ClassStringDecoder extends ClassObject {
     * 
     */
   def text(buf: ClassBuffer, offset: Double): String = js.native
+  
   /**
     * 
     * @brief 返回一个解码后的字符串, 确保任何非完整的末尾字符被省略此次不返回，并被存储在内部供下一次的 write 或者 end 方法使用。
@@ -102,4 +110,3 @@ trait ClassStringDecoder extends ClassObject {
     */
   def write(buf: ClassBuffer): String = js.native
 }
-

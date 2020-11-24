@@ -10,9 +10,9 @@ Join urls and normalize as in path.join.
 | ------------------ | :-------------: |
 | Full name          | url-join |
 | Keywords           | url, join |
-| # releases         | 7 |
-| # dependents       | 943 |
-| # downloads        | 86821333 |
+| # releases         | 2 |
+| # dependents       | 1130 |
+| # downloads        | 103062774 |
 | # stars            | 17 |
 
 ## Links

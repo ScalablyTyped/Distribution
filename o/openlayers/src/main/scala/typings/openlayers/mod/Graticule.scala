@@ -4,7 +4,7 @@ import typings.openlayers.mod.geom.LineString
 import typings.openlayers.mod.olx.GraticuleOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Graticule")
 @js.native
@@ -15,24 +15,28 @@ import scala.scalajs.js.annotation._
   */
 class Graticule () extends js.Object {
   def this(opt_options: GraticuleOptions) = this()
+  
   /**
     * Get the map associated with this graticule.
     * @return The map.
     * @api
     */
   def getMap(): Map = js.native
+  
   /**
     * Get the list of meridians.  Meridians are lines of equal longitude.
     * @return The meridians.
     * @api
     */
   def getMeridians(): js.Array[LineString] = js.native
+  
   /**
     * Get the list of parallels.  Pallels are lines of equal latitude.
     * @return The parallels.
     * @api
     */
   def getParallels(): js.Array[LineString] = js.native
+  
   /**
     * Set the map for this graticule.  The graticule will be rendered on the
     * provided map.
@@ -41,4 +45,3 @@ class Graticule () extends js.Object {
     */
   def setMap(map: Map): Unit = js.native
 }
-

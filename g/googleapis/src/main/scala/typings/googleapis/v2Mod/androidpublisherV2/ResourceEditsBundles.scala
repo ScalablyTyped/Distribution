@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v2", "androidpublisher_v2.Resource$Edits$Bundles")
 @js.native
 class ResourceEditsBundles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.edits.bundles.list
     * @alias androidpublisher.edits.bundles.list
@@ -41,6 +43,7 @@ class ResourceEditsBundles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBundlesListResponse]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.bundles.upload
     * @desc Uploads a new Android App Bundle to this edit. If you are using the
@@ -80,4 +83,3 @@ class ResourceEditsBundles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaBundle]
   ): Unit = js.native
 }
-

@@ -17,13 +17,14 @@ import typings.electron.electronStrings.`mouse-up`
 import typings.electron.electronStrings.`right-click`
 import typings.electron.electronStrings.click
 import typings.electron.electronStrings.drop
-import typings.node.eventsMod.global.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Tray extends EventEmitter {
+  
   @JSName("addListener")
   def addListener_balloonclick(event: `balloon-click`, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -73,22 +74,26 @@ trait Tray extends EventEmitter {
     event: `right-click`,
     listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
   ): this.type = js.native
+  
   /**
     * Closes an open context menu, as set by `tray.setContextMenu()`.
     *
     * @platform darwin,win32
     */
   def closeContextMenu(): Unit = js.native
+  
   /**
     * Destroys the tray icon immediately.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Displays a tray balloon.
     *
     * @platform win32
     */
   def displayBalloon(options: DisplayBalloonOptions): Unit = js.native
+  
   /**
     * Returns focus to the taskbar notification area. Notification area icons should
     * use this message when they have completed their UI operation. For example, if
@@ -98,29 +103,34 @@ trait Tray extends EventEmitter {
     * @platform win32
     */
   def focus(): Unit = js.native
+  
   /**
     * The `bounds` of this tray icon as `Object`.
     *
     * @platform darwin,win32
     */
   def getBounds(): Rectangle = js.native
+  
   /**
     * Whether double click events will be ignored.
     *
     * @platform darwin
     */
   def getIgnoreDoubleClickEvents(): Boolean = js.native
+  
   /**
     * the title displayed next to the tray icon in the status bar
     *
     * @platform darwin
     */
   def getTitle(): String = js.native
+  
   /**
     * Whether the tray icon is destroyed.
     */
   def isDestroyed(): Boolean = js.native
-  // Docs: http://electronjs.org/docs/api/tray
+  
+  // Docs: https://electronjs.org/docs/api/tray
   /**
     * Emitted when the tray balloon is clicked.
     *
@@ -257,6 +267,7 @@ trait Tray extends EventEmitter {
     event: `right-click`,
     listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_balloonclick(event: `balloon-click`, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -306,6 +317,7 @@ trait Tray extends EventEmitter {
     event: `right-click`,
     listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
   ): this.type = js.native
+  
   /**
     * Pops up the context menu of the tray icon. When `menu` is passed, the `menu`
     * will be shown instead of the tray icon's context menu.
@@ -318,12 +330,14 @@ trait Tray extends EventEmitter {
   def popUpContextMenu(menu: js.UndefOr[scala.Nothing], position: Point): Unit = js.native
   def popUpContextMenu(menu: Menu): Unit = js.native
   def popUpContextMenu(menu: Menu, position: Point): Unit = js.native
+  
   /**
     * Removes a tray balloon.
     *
     * @platform win32
     */
   def removeBalloon(): Unit = js.native
+  
   @JSName("removeListener")
   def removeListener_balloonclick(event: `balloon-click`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -373,11 +387,13 @@ trait Tray extends EventEmitter {
     event: `right-click`,
     listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
   ): this.type = js.native
+  
   /**
     * Sets the context menu for this icon.
     */
   def setContextMenu(): Unit = js.native
   def setContextMenu(menu: Menu): Unit = js.native
+  
   /**
     * Sets the option to ignore double click events. Ignoring these events allows you
     * to detect every individual click of the tray icon.
@@ -387,11 +403,13 @@ trait Tray extends EventEmitter {
     * @platform darwin
     */
   def setIgnoreDoubleClickEvents(ignore: Boolean): Unit = js.native
+  
   def setImage(image: String): Unit = js.native
   /**
     * Sets the `image` associated with this tray icon.
     */
   def setImage(image: NativeImage_): Unit = js.native
+  
   def setPressedImage(image: String): Unit = js.native
   /**
     * Sets the `image` associated with this tray icon when pressed on macOS.
@@ -399,6 +417,7 @@ trait Tray extends EventEmitter {
     * @platform darwin
     */
   def setPressedImage(image: NativeImage_): Unit = js.native
+  
   /**
     * Sets the title displayed next to the tray icon in the status bar (Support ANSI
     * colors).
@@ -406,9 +425,10 @@ trait Tray extends EventEmitter {
     * @platform darwin
     */
   def setTitle(title: String): Unit = js.native
+  def setTitle(title: String, options: TitleOptions): Unit = js.native
+  
   /**
     * Sets the hover text for this tray icon.
     */
   def setToolTip(toolTip: String): Unit = js.native
 }
-

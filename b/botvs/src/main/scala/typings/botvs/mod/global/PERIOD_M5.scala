@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.botvs.mod.global.botvs.VPeriod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 5分钟
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PERIOD_M5")
 @js.native
 object PERIOD_M5 extends TopLevel[VPeriod]
-

@@ -3,7 +3,7 @@ package typings.phaser.phaserMod.Input
 import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Input Plugin belongs to a Scene and handles all input related events and operations for it.
@@ -44,4 +44,3 @@ class InputPlugin protected ()
     */
   def this(scene: Scene) = this()
 }
-

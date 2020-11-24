@@ -2,10 +2,11 @@ package typings.flight.Flight
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Advice extends Base {
+  
   /**
     * Run the customFunc function after the existingFunc function.
     *
@@ -15,6 +16,7 @@ trait Advice extends Base {
     * customFunc The function to be invoked after existingFunc.
     */
   def after(method: String, fn: js.Function): Unit = js.native
+  
   /**
     * Run the existingFunc function in the middle of the customFunc function.
     * It's similar to underscore's _wrap function).
@@ -31,6 +33,7 @@ trait Advice extends Base {
     * surrounding it.
     */
   def around(method: String, fn: js.Function): Unit = js.native
+  
   /**
     * Run the customFunc function before the existingFunc function.
     *
@@ -41,4 +44,3 @@ trait Advice extends Base {
     */
   def before(method: String, fn: js.Function): Unit = js.native
 }
-

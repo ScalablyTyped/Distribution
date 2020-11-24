@@ -4,7 +4,7 @@ import typings.winrtUwp.Windows.Networking.DomainNameType
 import typings.winrtUwp.Windows.Networking.HostName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The RoutePolicy class is used to represent the traffic routing policy for a special PDP Context/APN. */
 @JSGlobal("Windows.Networking.Connectivity.RoutePolicy")
@@ -23,4 +23,3 @@ class RoutePolicy protected ()
     `type`: DomainNameType
   ) = this()
 }
-

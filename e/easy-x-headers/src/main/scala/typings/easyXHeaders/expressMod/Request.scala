@@ -3,17 +3,19 @@ package typings.easyXHeaders.expressMod
 import typings.easyXHeaders.httpMod.ServerRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Request
   extends ServerRequest
      with typings.easyXHeaders.Express.Request {
+  
   /**
     * Return an array of Accepted media types
     * ordered from highest quality to lowest.
     */
   var accepted: js.Array[MediaType] = js.native
+  
   /**
     * Return an array of Accepted charsets
     * ordered from highest quality to lowest.
@@ -24,6 +26,7 @@ trait Request
     *     ['unicode-1-1', 'iso-8859-5']
     */
   var acceptedCharsets: js.Array[_] = js.native
+  
   /**
     * Return an array of Accepted languages
     * ordered from highest quality to lowest.
@@ -34,87 +37,7 @@ trait Request
     *     ['en-us', 'en']
     */
   var acceptedLanguages: js.Array[_] = js.native
-  var authenticatedUser: js.Any = js.native
-  //body: { username: string; password: string; remember: boolean; title: string; };
-  var body: js.Any = js.native
-  //cookies: { string; remember: boolean; };
-  var cookies: js.Any = js.native
-  /**
-    * Check if the request is fresh, aka
-    * Last-Modified and/or the ETag
-    * still match.
-    */
-  var fresh: Boolean = js.native
-  /**
-    * @deprecated Use hostname instead.
-    */
-  var host: String = js.native
-  /**
-    * Parse the "Host" header field hostname.
-    */
-  var hostname: String = js.native
-  /**
-    * Return the remote address, or when
-    * "trust proxy" is `true` return
-    * the upstream addr.
-    */
-  var ip: String = js.native
-  /**
-    * When "trust proxy" is `true`, parse
-    * the "X-Forwarded-For" ip address list.
-    *
-    * For example if the value were "client, proxy1, proxy2"
-    * you would receive the array `["client", "proxy1", "proxy2"]`
-    * where "proxy2" is the furthest down-stream.
-    */
-  var ips: js.Array[String] = js.native
-  var originalUrl: String = js.native
-  var params: js.Any = js.native
-  /**
-    * Short-hand for `url.parse(req.url).pathname`.
-    */
-  var path: String = js.native
-  /**
-    * Return the protocol string "http" or "https"
-    * when requested with TLS. When the "trust proxy"
-    * setting is enabled the "X-Forwarded-Proto" header
-    * field will be trusted. If you're running behind
-    * a reverse proxy that supplies https for you this
-    * may be enabled.
-    */
-  var protocol: String = js.native
-  var query: js.Any = js.native
-  var route: js.Any = js.native
-  /**
-    * Short-hand for:
-    *
-    *    req.protocol == 'https'
-    */
-  var secure: Boolean = js.native
-  var signedCookies: js.Any = js.native
-  /**
-    * Check if the request is stale, aka
-    * "Last-Modified" and / or the "ETag" for the
-    * resource has changed.
-    */
-  var stale: Boolean = js.native
-  /**
-    * Return subdomains as an array.
-    *
-    * Subdomains are the dot-separated parts of the host before the main domain of
-    * the app. By default, the domain of the app is assumed to be the last two
-    * parts of the host. This can be changed by setting "subdomain offset".
-    *
-    * For example, if the domain is "tobi.ferrets.example.com":
-    * If "subdomain offset" is not set, req.subdomains is `["ferrets", "tobi"]`.
-    * If "subdomain offset" is 3, req.subdomains is `["tobi"]`.
-    */
-  var subdomains: js.Array[String] = js.native
-  var user: js.Any = js.native
-  /**
-    * Check if the request was an _XMLHttpRequest_.
-    */
-  var xhr: Boolean = js.native
+  
   /**
     * Check if the given `type(s)` is acceptable, returning
     * the best match when true, otherwise `undefined`, in which
@@ -154,6 +77,7 @@ trait Request
     */
   def accepts(`type`: String): String = js.native
   def accepts(`type`: js.Array[String]): String = js.native
+  
   /**
     * Check if the given `charset` is acceptable,
     * otherwise you should respond with 406 "Not Acceptable".
@@ -161,6 +85,7 @@ trait Request
     * @param charset
     */
   def acceptsCharset(charset: String): Boolean = js.native
+  
   /**
     * Check if the given `lang` is acceptable,
     * otherwise you should respond with 406 "Not Acceptable".
@@ -168,6 +93,12 @@ trait Request
     * @param lang
     */
   def acceptsLanguage(lang: String): Boolean = js.native
+  
+  var authenticatedUser: js.Any = js.native
+  
+  //body: { username: string; password: string; remember: boolean; title: string; };
+  var body: js.Any = js.native
+  
   /**
     * Clear cookie `name`.
     *
@@ -176,6 +107,17 @@ trait Request
     */
   def clearCookie(name: String): Response = js.native
   def clearCookie(name: String, options: js.Any): Response = js.native
+  
+  //cookies: { string; remember: boolean; };
+  var cookies: js.Any = js.native
+  
+  /**
+    * Check if the request is fresh, aka
+    * Last-Modified and/or the ETag
+    * still match.
+    */
+  var fresh: Boolean = js.native
+  
   /**
     * Return request header.
     *
@@ -198,7 +140,36 @@ trait Request
     * @param name
     */
   def get(name: String): String = js.native
+  
   def header(name: String): String = js.native
+  
+  /**
+    * @deprecated Use hostname instead.
+    */
+  var host: String = js.native
+  
+  /**
+    * Parse the "Host" header field hostname.
+    */
+  var hostname: String = js.native
+  
+  /**
+    * Return the remote address, or when
+    * "trust proxy" is `true` return
+    * the upstream addr.
+    */
+  var ip: String = js.native
+  
+  /**
+    * When "trust proxy" is `true`, parse
+    * the "X-Forwarded-For" ip address list.
+    *
+    * For example if the value were "client, proxy1, proxy2"
+    * you would receive the array `["client", "proxy1", "proxy2"]`
+    * where "proxy2" is the furthest down-stream.
+    */
+  var ips: js.Array[String] = js.native
+  
   /**
     * Check if the incoming request contains the "Content-Type"
     * header field, and it contains the give mime `type`.
@@ -223,6 +194,9 @@ trait Request
     * @param type
     */
   def is(`type`: String): Boolean = js.native
+  
+  var originalUrl: String = js.native
+  
   /**
     * Return the value of param `name` when present or `defaultValue`.
     *
@@ -239,6 +213,26 @@ trait Request
     */
   def param(name: String): String = js.native
   def param(name: String, defaultValue: js.Any): String = js.native
+  
+  var params: js.Any = js.native
+  
+  /**
+    * Short-hand for `url.parse(req.url).pathname`.
+    */
+  var path: String = js.native
+  
+  /**
+    * Return the protocol string "http" or "https"
+    * when requested with TLS. When the "trust proxy"
+    * setting is enabled the "X-Forwarded-Proto" header
+    * field will be trusted. If you're running behind
+    * a reverse proxy that supplies https for you this
+    * may be enabled.
+    */
+  var protocol: String = js.native
+  
+  var query: js.Any = js.native
+  
   /**
     * Parse Range header field,
     * capping to the given `size`.
@@ -257,5 +251,42 @@ trait Request
     * @param size
     */
   def range(size: Double): js.Array[_] = js.native
+  
+  var route: js.Any = js.native
+  
+  /**
+    * Short-hand for:
+    *
+    *    req.protocol == 'https'
+    */
+  var secure: Boolean = js.native
+  
+  var signedCookies: js.Any = js.native
+  
+  /**
+    * Check if the request is stale, aka
+    * "Last-Modified" and / or the "ETag" for the
+    * resource has changed.
+    */
+  var stale: Boolean = js.native
+  
+  /**
+    * Return subdomains as an array.
+    *
+    * Subdomains are the dot-separated parts of the host before the main domain of
+    * the app. By default, the domain of the app is assumed to be the last two
+    * parts of the host. This can be changed by setting "subdomain offset".
+    *
+    * For example, if the domain is "tobi.ferrets.example.com":
+    * If "subdomain offset" is not set, req.subdomains is `["ferrets", "tobi"]`.
+    * If "subdomain offset" is 3, req.subdomains is `["tobi"]`.
+    */
+  var subdomains: js.Array[String] = js.native
+  
+  var user: js.Any = js.native
+  
+  /**
+    * Check if the request was an _XMLHttpRequest_.
+    */
+  var xhr: Boolean = js.native
 }
-

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.leaflet.mod.TileLayerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "TileLayer.Provider")
 @js.native
@@ -14,4 +14,3 @@ class Provider_ protected ()
   def this(provider: String, options: StringDictionary[String]) = this()
   def this(provider: String, options: TileLayerOptions) = this()
 }
-

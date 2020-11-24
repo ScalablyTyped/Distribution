@@ -3,14 +3,16 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FileWillCreateEvent extends js.Object {
+  
   /**
     * The files that are going to be created.
     */
   val files: js.Array[Uri] = js.native
+  
   /**
     * Allows to pause the event and to apply a [workspace edit](#WorkspaceEdit).
     *
@@ -38,4 +40,3 @@ trait FileWillCreateEvent extends js.Object {
     */
   def waitUntil(thenable: Thenable[_ | WorkspaceEdit]): Unit = js.native
 }
-

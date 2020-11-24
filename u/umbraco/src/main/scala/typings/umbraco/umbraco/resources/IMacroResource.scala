@@ -2,7 +2,7 @@ package typings.umbraco.umbraco.resources
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   **/
 @js.native
 trait IMacroResource extends js.Object {
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.macroResource#getMacroParameters
@@ -24,6 +25,7 @@ trait IMacroResource extends js.Object {
     *
     */
   def getMacroParameters(macroId: Double): js.Any = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.macroResource#getMacroResult
@@ -39,8 +41,8 @@ trait IMacroResource extends js.Object {
     */
   def getMacroResultAsHtmlForEditor(macroId: Double, pageId: Double, macroParamDictionary: js.Array[_]): js.Any = js.native
 }
-
 object IMacroResource {
+  
   @scala.inline
   def apply(
     getMacroParameters: Double => js.Any,
@@ -49,22 +51,26 @@ object IMacroResource {
     val __obj = js.Dynamic.literal(getMacroParameters = js.Any.fromFunction1(getMacroParameters), getMacroResultAsHtmlForEditor = js.Any.fromFunction3(getMacroResultAsHtmlForEditor))
     __obj.asInstanceOf[IMacroResource]
   }
+  
   @scala.inline
   implicit class IMacroResourceOps[Self <: IMacroResource] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetMacroParameters(value: Double => js.Any): Self = this.set("getMacroParameters", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetMacroResultAsHtmlForEditor(value: (Double, Double, js.Array[_]) => js.Any): Self = this.set("getMacroResultAsHtmlForEditor", js.Any.fromFunction3(value))
   }
-  
 }
-

@@ -11,8 +11,8 @@ Library of JavaScript stage-0 decorators (aka ES2016/ES7 decorators but that's n
 | Full name          | core-decorators |
 | Keywords           | es6, es7, es2015, es2016, babel, decorators, override, deprecated, java, annotations, autobind, react, angular, lodash, mixin, mixins |
 | # releases         | 1 |
-| # dependents       | 245 |
-| # downloads        | 2934054 |
+| # dependents       | 268 |
+| # downloads        | 3262625 |
 | # stars            | 43 |
 
 ## Links

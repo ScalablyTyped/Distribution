@@ -11,14 +11,14 @@ Advanced html to plain text converter
 | Full name          | html-to-text |
 | Keywords           | html, node, text, mail, plain, converter |
 | # releases         | 5 |
-| # dependents       | 283 |
-| # downloads        | 7217561 |
+| # dependents       | 354 |
+| # downloads        | 13022637 |
 | # stars            | 36 |
 
 ## Links
-- [Homepage](https://github.com/werk85/node-html-to-text)
-- [Bugs](https://github.com/werk85/node-html-to-text/issues)
-- [Repository](https://github.com/werk85/node-html-to-text)
+- [Homepage](https://github.com/html-to-text/node-html-to-text)
+- [Bugs](https://github.com/html-to-text/node-html-to-text/issues)
+- [Repository](https://github.com/html-to-text/node-html-to-text)
 - [Npm](https://www.npmjs.com/package/html-to-text)
     
 

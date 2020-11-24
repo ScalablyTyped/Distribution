@@ -11,10 +11,11 @@ import typings.mongoose.mod.QueryFindOneAndUpdateOptions
 import typings.mongoose.mod.UpdateQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallConditionsUpdateOptionsCallback extends js.Object {
+  
   def apply(): DocumentQueryanynullanyAll = js.native
   def apply(conditions: FilterQuery[_], update: UpdateQuery[_]): DocumentQueryanynullanyAll = js.native
   def apply(
@@ -29,7 +30,7 @@ trait FnCallConditionsUpdateOptionsCallback extends js.Object {
     options: leantrueOmitQueryFindOneA,
     callback: js.Function3[/* err */ js.Any, /* doc */ DocumentDefinition[_], /* res */ js.Any, Unit]
   ): QueryDocumentDefinitionanAll = js.native
-  def apply(conditions: FilterQuery[_], update: UpdateQuery[_], options: rawResulttrueQueryFindOneArrayFilters): QueryFindAndModifyWriteOpBatchSize = js.native
+  def apply(conditions: FilterQuery[_], update: UpdateQuery[_], options: rawResulttrueQueryFindOneArrayFilters): QueryFindAndModifyWriteOpAsyncIterator = js.native
   def apply(
     conditions: FilterQuery[_],
     update: UpdateQuery[_],
@@ -40,7 +41,7 @@ trait FnCallConditionsUpdateOptionsCallback extends js.Object {
       /* res */ js.Any, 
       Unit
     ]
-  ): QueryFindAndModifyWriteOpBatchSize = js.native
+  ): QueryFindAndModifyWriteOpAsyncIterator = js.native
   def apply(conditions: FilterQuery[_], update: UpdateQuery[_], options: rawResulttrueupserttruene): QueryFindAndModifyWriteOpAnd = js.native
   def apply(
     conditions: FilterQuery[_],
@@ -68,4 +69,3 @@ trait FnCallConditionsUpdateOptionsCallback extends js.Object {
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
   ): DocumentQueryanynullanyAll = js.native
 }
-

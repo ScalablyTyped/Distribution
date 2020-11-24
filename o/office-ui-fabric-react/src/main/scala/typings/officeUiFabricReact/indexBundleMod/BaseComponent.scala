@@ -3,7 +3,7 @@ package typings.officeUiFabricReact.indexBundleMod
 import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "BaseComponent")
 @js.native
@@ -17,11 +17,11 @@ class BaseComponent[TProps /* <: IBaseProps[_] */, TState] protected ()
   def this(props: TProps) = this()
   def this(props: TProps, context: js.Any) = this()
 }
-
 /* static members */
 @JSImport("office-ui-fabric-react/lib/index.bundle", "BaseComponent")
 @js.native
 object BaseComponent extends js.Object {
+  
   /**
     * @deprecated Use React's error boundaries instead.
     */
@@ -30,4 +30,3 @@ object BaseComponent extends js.Object {
   def onError(errorMessage: String): Unit = js.native
   def onError(errorMessage: String, ex: js.Any): Unit = js.native
 }
-

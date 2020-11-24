@@ -10,9 +10,9 @@ Get the hash of a string
 | ------------------ | :-------------: |
 | Full name          | @sindresorhus/string-hash |
 | Keywords           | string, hash, code, hashcode, hash-code, fnv1a, fnv-1a, fnv, algorithm, hashing, function |
-| # releases         | 5 |
+| # releases         | 3 |
 | # dependents       | 4 |
-| # downloads        | 33988 |
+| # downloads        | 84586 |
 | # stars            | 0 |
 
 ## Links

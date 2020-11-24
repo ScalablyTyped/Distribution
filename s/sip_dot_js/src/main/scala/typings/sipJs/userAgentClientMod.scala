@@ -15,11 +15,12 @@ import typings.sipJs.transactionsMod.ClientTransaction
 import typings.sipJs.userAgentCoreMod.UserAgentCore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/core/user-agents/user-agent-client", JSImport.Namespace)
 @js.native
 object userAgentClientMod extends js.Object {
+  
   @js.native
   class UserAgentClient protected () extends OutgoingRequest {
     def this(
@@ -33,16 +34,9 @@ object userAgentClientMod extends js.Object {
       message: OutgoingRequestMessage,
       delegate: OutgoingRequestDelegate
     ) = this()
+    
     var _transaction: js.Any = js.native
-    var challenged: js.Any = js.native
-    var core: UserAgentCore = js.native
-    var credentials: js.Any = js.native
-    var init: js.Any = js.native
-    var logger: Logger = js.native
-    @JSName("message")
-    var message_UserAgentClient: OutgoingRequestMessage = js.native
-    var stale: js.Any = js.native
-    var transactionConstructor: js.Any = js.native
+    
     /**
       * If a 401 (Unauthorized) or 407 (Proxy Authentication Required)
       * response is received, the UAC SHOULD follow the authorization
@@ -67,7 +61,22 @@ object userAgentClientMod extends js.Object {
       */
     /* protected */ def authenticationGuard(message: IncomingResponseMessage): Boolean = js.native
     /* protected */ def authenticationGuard(message: IncomingResponseMessage, dialog: Dialog): Boolean = js.native
+    
+    var challenged: js.Any = js.native
+    
+    var core: UserAgentCore = js.native
+    
+    var credentials: js.Any = js.native
+    
+    var init: js.Any = js.native
+    
+    var logger: Logger = js.native
+    
     def loggerFactory: LoggerFactory = js.native
+    
+    @JSName("message")
+    var message_UserAgentClient: OutgoingRequestMessage = js.native
+    
     /**
       * 8.1.3.1 Transaction Layer Errors
       * In some cases, the response returned by the transaction layer will
@@ -81,6 +90,7 @@ object userAgentClientMod extends js.Object {
       * https://tools.ietf.org/html/rfc3261#section-8.1.3.1
       */
     /* protected */ def onRequestTimeout(): Unit = js.native
+    
     /**
       * 8.1.3.1 Transaction Layer Errors
       * In some cases, the response returned by the transaction layer will
@@ -95,13 +105,19 @@ object userAgentClientMod extends js.Object {
       * @param error - Transport error
       */
     /* protected */ def onTransportError(error: TransportError): Unit = js.native
+    
     /**
       * Receive a response from the transaction layer.
       * @param message - Incoming response message.
       */
     /* protected */ def receiveResponse(message: IncomingResponseMessage): Unit = js.native
+    
+    var stale: js.Any = js.native
+    
     /** The transaction associated with this request. */
     def transaction: ClientTransaction = js.native
+    
+    var transactionConstructor: js.Any = js.native
   }
   
   type ClientTransactionConstructor = Instantiable3[
@@ -111,4 +127,3 @@ object userAgentClientMod extends js.Object {
     ClientTransaction
   ]
 }
-

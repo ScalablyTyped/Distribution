@@ -10,9 +10,9 @@ A input spinner component for Bootstrap 3 and angular
 | ------------------ | :-------------: |
 | Full name          | angular-touchspin |
 | Keywords           | angular, bootstrap, angular-touchspin, touchspin, angularjs, angular touchspin |
-| # releases         | 6 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 7511 |
+| # downloads        | 3988 |
 | # stars            | 0 |
 
 ## Links

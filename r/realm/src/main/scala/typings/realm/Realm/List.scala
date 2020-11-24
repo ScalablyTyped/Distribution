@@ -2,7 +2,7 @@ package typings.realm.Realm
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List
@@ -10,16 +10,20 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait List[T] extends Collection[T] {
+  
   def pop(): js.UndefOr[T | Null] = js.native
+  
   /**
     * @param  {T} object
     * @returns number
     */
   def push(`object`: T*): Double = js.native
+  
   /**
     * @returns T
     */
   def shift(): js.UndefOr[T | Null] = js.native
+  
   /**
     * @param  {number} index
     * @param  {number} count?
@@ -30,6 +34,6 @@ trait List[T] extends Collection[T] {
   def splice(index: Double, count: js.UndefOr[scala.Nothing], `object`: js.Any): js.Array[T] = js.native
   def splice(index: Double, count: Double): js.Array[T] = js.native
   def splice(index: Double, count: Double, `object`: js.Any): js.Array[T] = js.native
+  
   def unshift(`object`: T*): Double = js.native
 }
-

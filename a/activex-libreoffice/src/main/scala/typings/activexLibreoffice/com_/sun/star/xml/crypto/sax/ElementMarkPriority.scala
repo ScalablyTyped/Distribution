@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines priority for the element mark's notification.
@@ -24,13 +24,14 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait ElementMarkPriority extends js.Object
-
 object ElementMarkPriority {
+  
   @scala.inline
   def AFTERMODIFY: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def BEFOREMODIFY: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def MINIMUM: `1` = 1.asInstanceOf[`1`]
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for acorn
 
-Typings are for version 7.3.1
+Typings are for version 7.4.1
 
 ## Library description:
 ECMAScript parser
@@ -10,9 +10,9 @@ ECMAScript parser
 | ------------------ | :-------------: |
 | Full name          | acorn |
 | Keywords           | - |
-| # releases         | 31 |
-| # dependents       | 1255 |
-| # downloads        | 1117460009 |
+| # releases         | 24 |
+| # dependents       | 1520 |
+| # downloads        | 1623195626 |
 | # stars            | 33 |
 
 ## Links

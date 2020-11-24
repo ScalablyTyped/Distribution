@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/logging/v2beta1", "logging_v2beta1.Resource$Entries")
 @js.native
 class ResourceEntries protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * logging.entries.list
     * @desc Lists log entries. Use this method to retrieve log entries that
@@ -110,6 +112,7 @@ class ResourceEntries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListLogEntriesResponse]
   ): Unit = js.native
+  
   /**
     * logging.entries.write
     * @desc Writes log entries to Logging. This API method is the only way to
@@ -198,4 +201,3 @@ class ResourceEntries protected () extends js.Object {
     callback: BodyResponseCallback[SchemaWriteLogEntriesResponse]
   ): Unit = js.native
 }
-

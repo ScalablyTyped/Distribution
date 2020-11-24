@@ -11,8 +11,8 @@ The ultimate javascript content-type utility.
 | Full name          | mime-types |
 | Keywords           | mime, types |
 | # releases         | 8 |
-| # dependents       | 1676 |
-| # downloads        | 850158332 |
+| # dependents       | 2115 |
+| # downloads        | 1118232863 |
 | # stars            | 64 |
 
 ## Links

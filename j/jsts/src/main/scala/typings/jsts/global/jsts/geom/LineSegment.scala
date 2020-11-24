@@ -2,7 +2,7 @@ package typings.jsts.global.jsts.geom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsts.geom.LineSegment")
 @js.native
@@ -10,11 +10,11 @@ class LineSegment protected ()
   extends typings.jsts.jsts.geom.LineSegment {
   def this(p0: typings.jsts.jsts.geom.Coordinate, p1: typings.jsts.jsts.geom.Coordinate) = this()
 }
-
 /* static members */
 @JSGlobal("jsts.geom.LineSegment")
 @js.native
 object LineSegment extends js.Object {
+  
   /**
     * Computes the midpoint of a segment
     *
@@ -24,4 +24,3 @@ object LineSegment extends js.Object {
     */
   def midPoint(p0: typings.jsts.jsts.geom.Coordinate, p1: typings.jsts.jsts.geom.Coordinate): typings.jsts.jsts.geom.Coordinate = js.native
 }
-

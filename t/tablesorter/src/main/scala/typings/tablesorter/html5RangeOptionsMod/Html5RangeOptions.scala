@@ -10,7 +10,7 @@ import typings.tablesorter.strictOptionsMod.StrictOptions
 import typings.tablesorter.testableOptionsMod.TestableOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Html5RangeOptions
@@ -22,12 +22,11 @@ trait Html5RangeOptions
      with PreviewableOptions
      with DelayableOptions
      with TestableOptions
-
 object Html5RangeOptions {
+  
   @scala.inline
   def apply(): Html5RangeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Html5RangeOptions]
   }
 }
-

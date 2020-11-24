@@ -9,9 +9,9 @@ High performance GPIO/i2c/PWM/SPI module for Raspberry Pi
 | ------------------ | :-------------: |
 | Full name          | rpio |
 | Keywords           | bcm2835, gpio, gpiomem, i2c, mmap, pi, pwm, raspberry, raspberrypi, raspberry pi, rpi, spi |
-| # releases         | 29 |
-| # dependents       | 79 |
-| # downloads        | 47063 |
+| # releases         | 32 |
+| # dependents       | 93 |
+| # downloads        | 49490 |
 | # stars            | 15 |
 
 ## Links

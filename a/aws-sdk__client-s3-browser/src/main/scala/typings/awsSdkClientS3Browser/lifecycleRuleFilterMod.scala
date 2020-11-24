@@ -1,14 +1,13 @@
 package typings.awsSdkClientS3Browser
 
-import typings.awsSdkTypes.protocolMod.Structure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-s3-browser/model/_LifecycleRuleFilter", JSImport.Namespace)
 @js.native
 object lifecycleRuleFilterMod extends js.Object {
+  
   @JSName("_LifecycleRuleFilter")
-  val LifecycleRuleFilter: Structure = js.native
+  val LifecycleRuleFilter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }
-

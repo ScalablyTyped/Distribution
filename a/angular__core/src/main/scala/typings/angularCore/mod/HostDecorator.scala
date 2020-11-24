@@ -3,10 +3,11 @@ package typings.angularCore.mod
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HostDecorator extends Instantiable0[Host] {
+  
   /**
     * Parameter decorator on a view-provider parameter of a class constructor
     * that tells the DI framework to resolve the view by checking injectors of child
@@ -24,4 +25,3 @@ trait HostDecorator extends Instantiable0[Host] {
     */
   def apply(): js.Any = js.native
 }
-

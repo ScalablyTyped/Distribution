@@ -2,11 +2,12 @@ package typings.jsrsasign.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("lang")
 @js.native
 object lang extends js.Object {
+  
   /**
     * String and its utility class
     * This class provides some static utility methods for string.
@@ -21,6 +22,7 @@ object lang extends js.Object {
     */
   @js.native
   object String extends js.Object {
+    
     /**
       * check whether a string is a base64 encoded string or not
       * Input string can conclude new lines or space characters.
@@ -32,6 +34,7 @@ object lang extends js.Object {
       * KJUR.lang.String.isBase64("YWE") → false -- length shall be multiples of 4
       */
     def isBase64(s: java.lang.String): Boolean = js.native
+    
     /**
       * check whether a string is a base64url encoded string or not
       * Input string can conclude new lines or space characters.
@@ -43,6 +46,7 @@ object lang extends js.Object {
       * KJUR.lang.String.isBase64URL("YW+") → false
       */
     def isBase64URL(s: java.lang.String): Boolean = js.native
+    
     /**
       * check whether a string is an hexadecimal string or not
       * @param s input string
@@ -55,6 +59,7 @@ object lang extends js.Object {
       * KJUR.lang.String.isHex("121") → false -- odd length
       */
     def isHex(s: java.lang.String): Boolean = js.native
+    
     /**
       * check whether a string is an integer string or not
       * @param s input string
@@ -64,6 +69,7 @@ object lang extends js.Object {
       * KJUR.lang.String.isInteger("123ab") → false
       */
     def isInteger(s: java.lang.String): Boolean = js.native
+    
     /**
       * check whether a string is a string of integer array or not
       * Input string can conclude new lines or space characters.
@@ -76,6 +82,4 @@ object lang extends js.Object {
       */
     def isIntegerArray(s: java.lang.String): Boolean = js.native
   }
-  
 }
-

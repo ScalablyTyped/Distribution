@@ -2,11 +2,12 @@ package typings.utility.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("utility", "assign")
 @js.native
 object assign extends js.Object {
+  
   def apply(target: ObjStatic, objects: js.Array[_]): ObjStatic = js.native
   /**
     * ------------------0_0--------------------------
@@ -22,4 +23,3 @@ object assign extends js.Object {
     */
   def apply(target: ObjStatic, objects: ObjStatic): ObjStatic = js.native
 }
-

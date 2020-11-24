@@ -11,8 +11,8 @@ Sanitize a string for use as a filename
 | Full name          | sanitize-filename |
 | Keywords           | file, name, filename, sanitize, validate, escape |
 | # releases         | 3 |
-| # dependents       | 531 |
-| # downloads        | 19536822 |
+| # dependents       | 629 |
+| # downloads        | 30879682 |
 | # stars            | 20 |
 
 ## Links

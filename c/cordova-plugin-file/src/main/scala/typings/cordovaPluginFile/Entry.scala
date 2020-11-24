@@ -2,7 +2,7 @@ package typings.cordovaPluginFile
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An abstract interface representing entries in a file system,
@@ -10,17 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Entry extends js.Object {
-  /** The file system on which the entry resides. */
-  var filesystem: FileSystem = js.native
-  /** The full absolute path from the root to the entry. */
-  var fullPath: String = js.native
-  /** Entry is a directory. */
-  var isDirectory: Boolean = js.native
-  /** Entry is a file. */
-  var isFile: Boolean = js.native
-  /** The name of the entry, excluding the path leading to it. */
-  var name: String = js.native
-  var nativeURL: String = js.native
+  
   /**
     * Copy an entry to a different location on the file system. It is an error to try to:
     *     copy a directory inside itself or to any child at any depth;
@@ -72,6 +62,13 @@ trait Entry extends js.Object {
     successCallback: js.Function1[/* entry */ this.type, Unit],
     errorCallback: js.Function1[/* error */ FileError, Unit]
   ): Unit = js.native
+  
+  /** The file system on which the entry resides. */
+  var filesystem: FileSystem = js.native
+  
+  /** The full absolute path from the root to the entry. */
+  var fullPath: String = js.native
+  
   /**
     * Look up metadata about this entry.
     * @param successCallback A callback that is called with the time of the last modification.
@@ -82,6 +79,7 @@ trait Entry extends js.Object {
     successCallback: js.Function1[/* metadata */ Metadata, Unit],
     errorCallback: js.Function1[/* error */ FileError, Unit]
   ): Unit = js.native
+  
   /**
     * Look up the parent DirectoryEntry containing this Entry. If this Entry is the root of its filesystem, its parent is itself.
     * @param successCallback A callback that is called with the time of the last modification.
@@ -92,6 +90,13 @@ trait Entry extends js.Object {
     successCallback: js.Function1[/* entry */ this.type, Unit],
     errorCallback: js.Function1[/* error */ FileError, Unit]
   ): Unit = js.native
+  
+  /** Entry is a directory. */
+  var isDirectory: Boolean = js.native
+  
+  /** Entry is a file. */
+  var isFile: Boolean = js.native
+  
   /**
     * Move an entry to a different location on the file system. It is an error to try to:
     *     move a directory inside itself or to any child at any depth;move an entry into its parent if a name different from its current one isn't provided;
@@ -141,6 +146,12 @@ trait Entry extends js.Object {
     successCallback: js.Function1[/* entry */ this.type, Unit],
     errorCallback: js.Function1[/* error */ FileError, Unit]
   ): Unit = js.native
+  
+  /** The name of the entry, excluding the path leading to it. */
+  var name: String = js.native
+  
+  var nativeURL: String = js.native
+  
   /**
     * Deletes a file or directory. It is an error to attempt to delete a directory that is not empty. It is an error to attempt to delete the root directory of a filesystem.
     * @param successCallback A callback that is called on success.
@@ -148,11 +159,13 @@ trait Entry extends js.Object {
     */
   def remove(successCallback: js.Function0[Unit]): Unit = js.native
   def remove(successCallback: js.Function0[Unit], errorCallback: js.Function1[/* error */ FileError, Unit]): Unit = js.native
+  
   /**
     * Return a URL that can be passed across the bridge to identify this entry.
     * @return string URL that can be passed across the bridge to identify this entry
     */
   def toInternalURL(): String = js.native
+  
   /**
     * Returns a URL that can be used as the src attribute of a <video> or <audio> tag.
     * If that is not possible, construct a cdvfile:// URL.
@@ -160,4 +173,3 @@ trait Entry extends js.Object {
     */
   def toURL(): String = js.native
 }
-

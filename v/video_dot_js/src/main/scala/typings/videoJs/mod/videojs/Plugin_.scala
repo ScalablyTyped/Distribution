@@ -4,7 +4,7 @@ import typings.std.Event
 import typings.videoJs.mod.videojs.Plugin.PluginEventHash
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parent class for all advanced plugins.
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Plugin_ extends EventedMixin {
-  var player: Player = js.native
+  
   /**
     * Disposes a plugin.
     *
@@ -30,6 +30,7 @@ trait Plugin_ extends EventedMixin {
     * @fires Plugin#dispose
     */
   def dispose(): Unit = js.native
+  
   /**
     * Each event triggered by plugins includes a hash of additional data with
     * conventional properties.
@@ -43,6 +44,7 @@ trait Plugin_ extends EventedMixin {
     */
   def getEventHash(): PluginEventHash = js.native
   def getEventHash(hash: js.Any): PluginEventHash = js.native
+  
   /**
     * Handles "statechanged" events on the plugin. No-op by default, override by
     * subclassing.
@@ -55,9 +57,11 @@ trait Plugin_ extends EventedMixin {
     *           event.
     */
   def handleStateChanged(e: Event): Unit = js.native
+  
+  var player: Player = js.native
+  
   /**
     * Get the version of the plugin that was set on <pluginName>.VERSION
     */
   def version(): String = js.native
 }
-

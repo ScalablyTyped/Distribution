@@ -9,17 +9,11 @@ import typings.angularCompiler.parseUtilMod.I18nError
 import typings.angularCompiler.translationBundleMod.TranslationBundle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/i18n/extractor_merger", JSImport.Namespace)
 @js.native
 object extractorMergerMod extends js.Object {
-  @js.native
-  class ExtractionResult protected () extends js.Object {
-    def this(messages: js.Array[Message], errors: js.Array[I18nError]) = this()
-    var errors: js.Array[I18nError] = js.native
-    var messages: js.Array[Message] = js.native
-  }
   
   def extractMessages(
     nodes: js.Array[Node],
@@ -27,6 +21,7 @@ object extractorMergerMod extends js.Object {
     implicitTags: js.Array[String],
     implicitAttrs: StringDictionary[js.Array[String]]
   ): ExtractionResult = js.native
+  
   def mergeTranslations(
     nodes: js.Array[Node],
     translations: TranslationBundle,
@@ -34,5 +29,13 @@ object extractorMergerMod extends js.Object {
     implicitTags: js.Array[String],
     implicitAttrs: StringDictionary[js.Array[String]]
   ): ParseTreeResult = js.native
+  
+  @js.native
+  class ExtractionResult protected () extends js.Object {
+    def this(messages: js.Array[Message], errors: js.Array[I18nError]) = this()
+    
+    var errors: js.Array[I18nError] = js.native
+    
+    var messages: js.Array[Message] = js.native
+  }
 }
-

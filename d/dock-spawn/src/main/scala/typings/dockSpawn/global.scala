@@ -5,13 +5,15 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object dockspawn extends js.Object {
+    
     @js.native
     class Dialog protected ()
       extends typings.dockSpawn.dockspawn.Dialog {
@@ -19,6 +21,12 @@ object global extends js.Object {
         panel: typings.dockSpawn.dockspawn.PanelContainer,
         dockManager: typings.dockSpawn.dockspawn.DockManager
       ) = this()
+    }
+    /* static members */
+    @js.native
+    object Dialog extends js.Object {
+      
+      def fromElement(id: String, dockManager: typings.dockSpawn.dockspawn.DockManager): typings.dockSpawn.dockspawn.Dialog = js.native
     }
     
     /**
@@ -91,23 +99,19 @@ object global extends js.Object {
       def this(host: typings.dockSpawn.dockspawn.TabHost, container: typings.dockSpawn.dockspawn.PanelContainer) = this()
     }
     
-    /* static members */
-    @js.native
-    object Dialog extends js.Object {
-      def fromElement(id: String, dockManager: typings.dockSpawn.dockspawn.DockManager): typings.dockSpawn.dockspawn.Dialog = js.native
-    }
-    
     @js.native
     object TabStripDirection extends js.Object {
-      /* 1 */ val DIRECTION_BOTTOM: typings.dockSpawn.dockspawn.TabStripDirection.DIRECTION_BOTTOM with Double = js.native
-      /* 2 */ val DIRECTION_LEFT: typings.dockSpawn.dockspawn.TabStripDirection.DIRECTION_LEFT with Double = js.native
-      /* 3 */ val DIRECTION_RIGHT: typings.dockSpawn.dockspawn.TabStripDirection.DIRECTION_RIGHT with Double = js.native
-      /* 0 */ val DIRECTION_TOP: typings.dockSpawn.dockspawn.TabStripDirection.DIRECTION_TOP with Double = js.native
+      
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.dockSpawn.dockspawn.TabStripDirection with Double] = js.native
+      
+      /* 1 */ val DIRECTION_BOTTOM: typings.dockSpawn.dockspawn.TabStripDirection.DIRECTION_BOTTOM with Double = js.native
+      
+      /* 2 */ val DIRECTION_LEFT: typings.dockSpawn.dockspawn.TabStripDirection.DIRECTION_LEFT with Double = js.native
+      
+      /* 3 */ val DIRECTION_RIGHT: typings.dockSpawn.dockspawn.TabStripDirection.DIRECTION_RIGHT with Double = js.native
+      
+      /* 0 */ val DIRECTION_TOP: typings.dockSpawn.dockspawn.TabStripDirection.DIRECTION_TOP with Double = js.native
     }
-    
   }
-  
 }
-

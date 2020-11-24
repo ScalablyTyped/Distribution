@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ant-design/react-slick" : "0.27.0"
+      "@ant-design/react-slick" : "0.27.14"
     }
   ],
   "test-dependencies" : [
     {
-      "@ant-design/react-slick" : "0.27.0"
+      "@ant-design/react-slick" : "0.27.14"
     }
   ],
   "compile-devDependencies" : [

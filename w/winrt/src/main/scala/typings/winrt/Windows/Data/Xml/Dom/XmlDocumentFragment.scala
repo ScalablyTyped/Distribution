@@ -2,12 +2,12 @@ package typings.winrt.Windows.Data.Xml.Dom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait XmlDocumentFragment extends IXmlNode
-
 object XmlDocumentFragment {
+  
   @scala.inline
   def apply(
     appendChild: IXmlNode => IXmlNode,
@@ -42,4 +42,3 @@ object XmlDocumentFragment {
     __obj.asInstanceOf[XmlDocumentFragment]
   }
 }
-

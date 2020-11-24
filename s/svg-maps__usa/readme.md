@@ -12,7 +12,7 @@ Map of USA states
 | Keywords           | svg, map, usa, states |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 3877 |
+| # downloads        | 6147 |
 | # stars            | 0 |
 
 ## Links

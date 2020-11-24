@@ -10,9 +10,9 @@ Argon2 library compiled for browser runtime
 | ------------------ | :-------------: |
 | Full name          | argon2-browser |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 4 |
-| # downloads        | 21767 |
+| # releases         | 23 |
+| # dependents       | 13 |
+| # downloads        | 51930 |
 | # stars            | 0 |
 
 ## Links

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-docgen-typescript-loader" : "3.7.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-docgen-typescript-loader" : "3.7.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

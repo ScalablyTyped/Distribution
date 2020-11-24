@@ -4,7 +4,7 @@ import typings.fontfaceobserver.FontFaceObserver
 import typings.fontfaceobserver.FontFaceObserver.FontVariant
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fontfaceobserver", JSImport.Namespace)
 @js.native
@@ -17,4 +17,3 @@ class ^ protected () extends FontFaceObserver {
   def this(fontFamilyName: String) = this()
   def this(fontFamilyName: String, variant: FontVariant) = this()
 }
-

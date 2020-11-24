@@ -1,7 +1,7 @@
 
 # Scala.js typings for gapi_dot_client_dot_pagespeedonline
 
-Typings are for version 2.0
+Typings are for version 5.0
 
 
 

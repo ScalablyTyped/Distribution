@@ -2,12 +2,11 @@ package typings.accounting.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Static extends js.Object {
-  // settings object that controls default parameters for library methods
-  var settings: Settings = js.native
+  
   // format a list of values for column-display
   def formatColumn(numbers: js.Array[js.Array[Double] | Double]): js.Array[String] = js.native
   def formatColumn(numbers: js.Array[js.Array[Double] | Double], options: CurrencySettings[CurrencyFormat | String]): js.Array[String] = js.native
@@ -217,6 +216,7 @@ trait Static extends js.Object {
     decimal: String,
     format: String
   ): js.Array[String] = js.native
+  
   // format any number or stringified number into currency
   def formatMoney(
     number: Double | String,
@@ -437,6 +437,7 @@ trait Static extends js.Object {
     decimal: String,
     format: String
   ): js.Array[String] = js.native
+  
   def formatNumber(number: js.Array[_ | Double]): js.Array[String] = js.native
   def formatNumber(number: js.Array[_ | Double], options: NumberSettings): js.Array[String] = js.native
   def formatNumber(
@@ -476,11 +477,15 @@ trait Static extends js.Object {
   def formatNumber(number: Double, precision: Double, thousand: js.UndefOr[scala.Nothing], decimal: String): String = js.native
   def formatNumber(number: Double, precision: Double, thousand: String): String = js.native
   def formatNumber(number: Double, precision: Double, thousand: String, decimal: String): String = js.native
+  
+  // settings object that controls default parameters for library methods
+  var settings: Settings = js.native
+  
   // better rounding for floating point numbers
   def toFixed(number: Double): String = js.native
   def toFixed(number: Double, precision: Double): String = js.native
+  
   // get a value from any formatted number/currency string
   def unformat(string: String): Double = js.native
   def unformat(string: String, decimal: String): Double = js.native
 }
-

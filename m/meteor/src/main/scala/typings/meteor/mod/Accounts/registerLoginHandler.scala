@@ -2,11 +2,12 @@ package typings.meteor.mod.Accounts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/accounts-base", "Accounts.registerLoginHandler")
 @js.native
 object registerLoginHandler extends js.Object {
+  
   /**
     *
     * The main entry point for auth packages to hook in to login.
@@ -24,4 +25,3 @@ object registerLoginHandler extends js.Object {
     **/
   def apply(name: String, handler: js.Function1[/* options */ js.Any, js.UndefOr[js.Object]]): Unit = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.dwBxslider4
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait bxSlider extends js.Object {
+  
   /**
     * destroySlider Destroy the slider. This reverts all slider elements back to their original state (before calling the slider).
     * 
@@ -14,6 +15,7 @@ trait bxSlider extends js.Object {
     * slider.destroySlider();
     */
   def destroySlider(): Unit = js.native
+  
   /**
     * getCurrentSlide Returns the current active slide
     * 
@@ -22,6 +24,7 @@ trait bxSlider extends js.Object {
     * var current = slider.getCurrentSlide();
     */
   def getCurrentSlide(): Double = js.native
+  
   /**
     * getSlideCount Returns the total number of slides in the slider
     * 
@@ -30,6 +33,7 @@ trait bxSlider extends js.Object {
     * var slideQty = slider.getSlideCount();
     */
   def getSlideCount(): Double = js.native
+  
   /**
     * goToNextSlide Performs a "Next" slide transition
     * 
@@ -38,6 +42,7 @@ trait bxSlider extends js.Object {
     * slider.goToNextSlide();
     */
   def goToNextSlide(): Unit = js.native
+  
   /**
     * goToPrevSlide Performs a "Prev" slide transition
     * 
@@ -46,6 +51,7 @@ trait bxSlider extends js.Object {
     * slider.goToPrevSlide();
     */
   def goToPrevSlide(): Unit = js.native
+  
   /**
     * goToSlide Performs a slide transition to the supplied slide index (zero-based)
     * 
@@ -54,6 +60,7 @@ trait bxSlider extends js.Object {
     * slider.goToSlide(3);
     */
   def goToSlide(index: Double): Unit = js.native
+  
   /**
     * redrawSlider Redraw the slider. Useful when needing to redraw a hidden slider after it is unhidden.
     * 
@@ -62,6 +69,7 @@ trait bxSlider extends js.Object {
     * slider.redrawSlider();
     */
   def redrawSlider(): Unit = js.native
+  
   /**
     * reloadSlider Reload the slider. Useful when adding slides on the fly. Accepts an optional settings object. See here for an example.
     * 
@@ -71,6 +79,7 @@ trait bxSlider extends js.Object {
     */
   def reloadSlider(): Unit = js.native
   def reloadSlider(settings: bxSliderOptions): Unit = js.native
+  
   /**
     * startAuto Starts the auto show. Provide an argument false to prevent the auto controls from being updated.
     * 
@@ -80,6 +89,7 @@ trait bxSlider extends js.Object {
     */
   def startAuto(): Unit = js.native
   def startAuto(preventControlUpdate: Boolean): Unit = js.native
+  
   /**
     * stopAuto Stops the auto show. Provide an argument false to prevent the auto controls from being updated.
     * 
@@ -90,4 +100,3 @@ trait bxSlider extends js.Object {
   def stopAuto(): Unit = js.native
   def stopAuto(preventControlUpdate: Boolean): Unit = js.native
 }
-

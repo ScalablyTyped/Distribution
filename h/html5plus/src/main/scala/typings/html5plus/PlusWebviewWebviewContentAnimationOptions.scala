@@ -3,7 +3,7 @@ package typings.html5plus
 import typings.html5plus.html5plusStrings.shrink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Webview窗口内容动画参数
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusWebviewWebviewContentAnimationOptions extends js.Object {
+  
   /**
     * 动画持续时间
     * 单位为毫秒，默认值为200ms。
@@ -20,6 +21,7 @@ trait PlusWebviewWebviewContentAnimationOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var duration: js.UndefOr[Double] = js.native
+  
   /**
     * 动画帧数
     * 必须为大于0的整数，默认值为12。
@@ -27,6 +29,7 @@ trait PlusWebviewWebviewContentAnimationOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var frames: js.UndefOr[Double] = js.native
+  
   /**
     * 动画作用区域
     * 支持以下属性：
@@ -39,6 +42,7 @@ trait PlusWebviewWebviewContentAnimationOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var region: js.UndefOr[js.Any] = js.native
+  
   /**
     * 动画类型
     * 可取值："shrink" - 从上到下分块收缩清除窗口动画。
@@ -48,41 +52,51 @@ trait PlusWebviewWebviewContentAnimationOptions extends js.Object {
     */
   var `type`: js.UndefOr[shrink] = js.native
 }
-
 object PlusWebviewWebviewContentAnimationOptions {
+  
   @scala.inline
   def apply(): PlusWebviewWebviewContentAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewContentAnimationOptions]
   }
+  
   @scala.inline
   implicit class PlusWebviewWebviewContentAnimationOptionsOps[Self <: PlusWebviewWebviewContentAnimationOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDuration: Self = this.set("duration", js.undefined)
+    
     @scala.inline
     def setFrames(value: Double): Self = this.set("frames", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFrames: Self = this.set("frames", js.undefined)
+    
     @scala.inline
     def setRegion(value: js.Any): Self = this.set("region", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRegion: Self = this.set("region", js.undefined)
+    
     @scala.inline
     def setType(value: shrink): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }
-  
 }
-

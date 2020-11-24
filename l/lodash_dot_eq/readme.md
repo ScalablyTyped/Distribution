@@ -11,8 +11,8 @@ The lodash method `_.eq` exported as a module.
 | Full name          | lodash.eq |
 | Keywords           | lodash, lodash-modularized, stdlib, util, eq |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 49340 |
+| # dependents       | 9 |
+| # downloads        | 98586 |
 | # stars            | 0 |
 
 ## Links

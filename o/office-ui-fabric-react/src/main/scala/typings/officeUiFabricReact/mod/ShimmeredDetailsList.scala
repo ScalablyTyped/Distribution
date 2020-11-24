@@ -5,9 +5,8 @@ import typings.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetail
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "ShimmeredDetailsList")
 @js.native
 object ShimmeredDetailsList extends TopLevel[FunctionComponent[IShimmeredDetailsListProps]]
-

@@ -5,10 +5,11 @@ import typings.lodash.mod.SetWithCustomizer
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashUpdateWith extends LodashConvertible {
+trait LodashUpdateWith extends js.Object {
+  
   def apply(customizer: __, path: PropertyPath): LodashUpdateWith1x2 = js.native
   def apply(customizer: __, path: PropertyPath, updater: js.Function1[/* oldValue */ js.Any, _]): LodashUpdateWith1x6 = js.native
   def apply(customizer: __, path: __, updater: js.Function1[/* oldValue */ js.Any, _]): LodashUpdateWith1x4 = js.native
@@ -39,4 +40,3 @@ trait LodashUpdateWith extends LodashConvertible {
   def apply[T /* <: js.Object */](customizer: __, path: __, updater: js.Function1[/* oldValue */ js.Any, _], `object`: T): LodashUpdateWith1x12[T] = js.native
   def apply[T /* <: js.Object */](customizer: __, path: __, updater: __, `object`: T): LodashUpdateWith1x8[T] = js.native
 }
-

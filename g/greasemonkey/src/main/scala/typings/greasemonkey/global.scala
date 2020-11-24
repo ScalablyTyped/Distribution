@@ -6,24 +6,21 @@ import typings.greasemonkey.anon.Script
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   /**
     * Window object of the content page where the user script is running on.
     * @see {@link http://wiki.greasespot.net/UnsafeWindow}
     */
   var unsafeWindow: Window = js.native
+  
   @js.native
   object GM extends js.Object {
-    // Headers
-    /**
-      * Meta data about the running user script.
-      * @see {@link https://wiki.greasespot.net/GM.info}
-      */
-    var info: Script = js.native
+    
     /**
       * Deletes an existing name / value pair from storage.
       * @see {@link https://wiki.greasespot.net/GM.deleteValue}
@@ -32,6 +29,7 @@ object global extends js.Object {
       * rejected with no value on failure.
       */
     def deleteValue(name: String): js.Promise[Unit] = js.native
+    
     // Resources
     /**
       * Given a defined `@resource`, this method returns it as a URL
@@ -43,6 +41,7 @@ object global extends js.Object {
       * (for a `<link>` or `<style>` for CSS, for an `<img>` tag, or similar).
       */
     def getResourceUrl(resourceName: String): js.Promise[String] = js.native
+    
     /**
       * Retrieves a value that was set with `GM.setValue`
       * @see {@link https://wiki.greasespot.net/GM.getValue}
@@ -65,6 +64,14 @@ object global extends js.Object {
       */
     def getValue[TValue](name: String): js.Promise[js.UndefOr[TValue]] = js.native
     def getValue[TValue](name: String, defaultValue: TValue): js.Promise[js.UndefOr[TValue]] = js.native
+    
+    // Headers
+    /**
+      * Meta data about the running user script.
+      * @see {@link https://wiki.greasespot.net/GM.info}
+      */
+    var info: Script = js.native
+    
     /**
       * Retrieves an array of preference names that this script has stored
       * @see {@link https://wiki.greasespot.net/GM.listValues}
@@ -72,6 +79,7 @@ object global extends js.Object {
       * an string[] for previously set values
       */
     def listValues(): js.Promise[js.Array[String]] = js.native
+    
     // Other
     /**
       * Displays a notification to the user, using the underlying operating
@@ -88,6 +96,7 @@ object global extends js.Object {
     def notification(text: String, title: String, image: js.UndefOr[scala.Nothing], onClick: js.Function0[Unit]): Unit = js.native
     def notification(text: String, title: String, image: String): Unit = js.native
     def notification(text: String, title: String, image: String, onClick: js.Function0[Unit]): Unit = js.native
+    
     /**
       * Opens the specified URL in a new tab.
       * @see {@link https://wiki.greasespot.net/GM.openInTab}
@@ -97,11 +106,13 @@ object global extends js.Object {
       */
     def openInTab(url: String): Unit = js.native
     def openInTab(url: String, openInBackground: Boolean): Unit = js.native
+    
     /**
       * Sets the current contents of the operating system's clipboard
       * @see {@link https://wiki.greasespot.net/GM.setClipboard}
       */
     def setClipboard(text: String): Unit = js.native
+    
     // Values
     /**
       * Allows user script authors to persist simple values across page loads and
@@ -116,6 +127,7 @@ object global extends js.Object {
       * rejected with no value on failure
       */
     def setValue(name: String, value: Value): js.Promise[Unit] = js.native
+    
     /**
       * Performs a similar function to the standard XMLHttpRequest object, but
       * allows these requests to cross the [same origin policy]{@link https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy} boundaries.
@@ -123,6 +135,4 @@ object global extends js.Object {
       */
     def xmlHttpRequest(details: Request[_]): Unit = js.native
   }
-  
 }
-

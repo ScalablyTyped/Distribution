@@ -2,33 +2,62 @@ package typings.canvaskitWasm.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SkTextBlobFactory extends js.Object {
-  def MakeFromText(text: String, font: SkFont): SkTextBlob = js.native
-}
-
-object SkTextBlobFactory {
-  @scala.inline
-  def apply(MakeFromText: (String, SkFont) => SkTextBlob): SkTextBlobFactory = {
-    val __obj = js.Dynamic.literal(MakeFromText = js.Any.fromFunction2(MakeFromText))
-    __obj.asInstanceOf[SkTextBlobFactory]
-  }
-  @scala.inline
-  implicit class SkTextBlobFactoryOps[Self <: SkTextBlobFactory] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setMakeFromText(value: (String, SkFont) => SkTextBlob): Self = this.set("MakeFromText", js.Any.fromFunction2(value))
-  }
   
+  /**
+    * Return a TextBlob with a single run of text.
+    *
+    * It does not perform typeface fallback for characters not found in the SkTypeface.
+    * It does not perform kerning or other complex shaping; glyphs are positioned based on their
+    * default advances.
+    * @param glyphs - if using Malloc'd array, be sure to use CanvasKit.MallocGlyphIDs().
+    * @param font
+    */
+  def MakeFromGlyphs(glyphs: InputGlyphIDArray, font: SkFont): SkTextBlob = js.native
+  
+  /**
+    * Returns a TextBlob built from a single run of text with rotation, scale, and translations.
+    *
+    * It uses the default character-to-glyph mapping from the typeface in the font.
+    * @param str
+    * @param rsxforms
+    * @param font
+    */
+  def MakeFromRSXform(str: String, rsxforms: InputFlattenedRSXFormArray, font: SkFont): SkTextBlob = js.native
+  
+  /**
+    * Returns a TextBlob built from a single run of text with rotation, scale, and translations.
+    *
+    * @param glyphs - if using Malloc'd array, be sure to use CanvasKit.MallocGlyphIDs().
+    * @param rsxforms
+    * @param font
+    */
+  def MakeFromRSXformGlyphs(glyphs: InputGlyphIDArray, rsxforms: InputFlattenedRSXFormArray, font: SkFont): SkTextBlob = js.native
+  
+  /**
+    * Return a TextBlob with a single run of text.
+    *
+    * It uses the default character-to-glyph mapping from the typeface in the font.
+    * It does not perform typeface fallback for characters not found in the SkTypeface.
+    * It does not perform kerning or other complex shaping; glyphs are positioned based on their
+    * default advances.
+    * @param str
+    * @param font
+    */
+  def MakeFromText(str: String, font: SkFont): SkTextBlob = js.native
+  
+  /**
+    * Returns a TextBlob that has the glyphs following the contours of the given path.
+    *
+    * It is a convenience wrapper around MakeFromRSXform and SkContourMeasureIter.
+    * @param str
+    * @param path
+    * @param font
+    * @param initialOffset - the length in pixels to start along the path.
+    */
+  def MakeOnPath(str: String, path: SkPath, font: SkFont): SkTextBlob = js.native
+  def MakeOnPath(str: String, path: SkPath, font: SkFont, initialOffset: Double): SkTextBlob = js.native
 }
-

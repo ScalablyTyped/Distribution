@@ -1,17 +1,16 @@
 package typings.awsSdk.codeartifactMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CodeArtifact extends Service {
-  @JSName("config")
-  var config_CodeArtifact: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Adds an existing external connection to a repository. One external connection is allowed per repository.  A repository can have one or more upstream repositories, or an external connection. 
     */
@@ -25,6 +24,10 @@ trait CodeArtifact extends Service {
     params: AssociateExternalConnectionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateExternalConnectionResult, Unit]
   ): Request[AssociateExternalConnectionResult, AWSError] = js.native
+  
+  @JSName("config")
+  var config_CodeArtifact: ConfigBase with ClientConfiguration = js.native
+  
   /**
     *  Copies package versions from one repository to another repository in the same domain.    You must specify versions or versionRevisions. You cannot specify both.  
     */
@@ -38,6 +41,7 @@ trait CodeArtifact extends Service {
     params: CopyPackageVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CopyPackageVersionsResult, Unit]
   ): Request[CopyPackageVersionsResult, AWSError] = js.native
+  
   /**
     *  Creates a domain. CodeArtifact domains make it easier to manage multiple repositories across an organization. You can use a domain to apply permissions across many repositories owned by different AWS accounts. An asset is stored only once in a domain, even if it's in multiple repositories.  Although you can have multiple domains, we recommend a single production domain that contains all published artifacts so that your development teams can find and share packages. You can use a second pre-production domain to test changes to the production domain configuration. 
     */
@@ -51,6 +55,7 @@ trait CodeArtifact extends Service {
     params: CreateDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainResult, Unit]
   ): Request[CreateDomainResult, AWSError] = js.native
+  
   /**
     *  Creates a repository. 
     */
@@ -64,6 +69,7 @@ trait CodeArtifact extends Service {
     params: CreateRepositoryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRepositoryResult, Unit]
   ): Request[CreateRepositoryResult, AWSError] = js.native
+  
   /**
     *  Deletes a domain. You cannot delete a domain that contains repositories. If you want to delete a domain with repositories, first delete its repositories. 
     */
@@ -77,6 +83,7 @@ trait CodeArtifact extends Service {
     params: DeleteDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainResult, Unit]
   ): Request[DeleteDomainResult, AWSError] = js.native
+  
   /**
     *  Deletes the resource policy set on a domain. 
     */
@@ -90,6 +97,7 @@ trait CodeArtifact extends Service {
     params: DeleteDomainPermissionsPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainPermissionsPolicyResult, Unit]
   ): Request[DeleteDomainPermissionsPolicyResult, AWSError] = js.native
+  
   /**
     *  Deletes one or more versions of a package. A deleted package version cannot be restored in your repository. If you want to remove a package version from your repository and be able to restore it later, set its status to Archived. Archived packages cannot be downloaded from a repository and don't show up with list package APIs (for example,  ListackageVersions ), but you can restore them using  UpdatePackageVersionsStatus . 
     */
@@ -103,6 +111,7 @@ trait CodeArtifact extends Service {
     params: DeletePackageVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePackageVersionsResult, Unit]
   ): Request[DeletePackageVersionsResult, AWSError] = js.native
+  
   /**
     *  Deletes a repository. 
     */
@@ -116,6 +125,7 @@ trait CodeArtifact extends Service {
     params: DeleteRepositoryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRepositoryResult, Unit]
   ): Request[DeleteRepositoryResult, AWSError] = js.native
+  
   /**
     *  Deletes the resource policy that is set on a repository. After a resource policy is deleted, the permissions allowed and denied by the deleted policy are removed. The effect of deleting a resource policy might not be immediate.    Use DeleteRepositoryPermissionsPolicy with caution. After a policy is deleted, AWS users, roles, and accounts lose permissions to perform the repository actions granted by the deleted policy.  
     */
@@ -131,6 +141,7 @@ trait CodeArtifact extends Service {
     params: DeleteRepositoryPermissionsPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRepositoryPermissionsPolicyResult, Unit]
   ): Request[DeleteRepositoryPermissionsPolicyResult, AWSError] = js.native
+  
   /**
     *  Returns a  DomainDescription  object that contains information about the requested domain. 
     */
@@ -144,6 +155,7 @@ trait CodeArtifact extends Service {
     params: DescribeDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainResult, Unit]
   ): Request[DescribeDomainResult, AWSError] = js.native
+  
   /**
     *  Returns a  PackageVersionDescription  object that contains information about the requested package version. 
     */
@@ -157,6 +169,7 @@ trait CodeArtifact extends Service {
     params: DescribePackageVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePackageVersionResult, Unit]
   ): Request[DescribePackageVersionResult, AWSError] = js.native
+  
   /**
     *  Returns a RepositoryDescription object that contains detailed information about the requested repository. 
     */
@@ -170,6 +183,7 @@ trait CodeArtifact extends Service {
     params: DescribeRepositoryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRepositoryResult, Unit]
   ): Request[DescribeRepositoryResult, AWSError] = js.native
+  
   /**
     *  Removes an existing external connection from a repository. 
     */
@@ -183,32 +197,35 @@ trait CodeArtifact extends Service {
     params: DisassociateExternalConnectionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateExternalConnectionResult, Unit]
   ): Request[DisassociateExternalConnectionResult, AWSError] = js.native
+  
   /**
-    *  Deletes the assets in package versions and sets the package versions' status to Disposed. A disposed package version cannot be restored in your repository because its assets are deleted.   To view all disposed package versions in a repository, use  ListackageVersions  and set the  status  parameter to Disposed.   To view information about a disposed package version, use  ListPackageVersions  and set the  status  parameter to Disposed. 
+    *  Deletes the assets in package versions and sets the package versions' status to Disposed. A disposed package version cannot be restored in your repository because its assets are deleted.   To view all disposed package versions in a repository, use  ListPackageVersions  and set the  status  parameter to Disposed.   To view information about a disposed package version, use  DescribePackageVersion .. 
     */
   def disposePackageVersions(): Request[DisposePackageVersionsResult, AWSError] = js.native
   def disposePackageVersions(callback: js.Function2[/* err */ AWSError, /* data */ DisposePackageVersionsResult, Unit]): Request[DisposePackageVersionsResult, AWSError] = js.native
   /**
-    *  Deletes the assets in package versions and sets the package versions' status to Disposed. A disposed package version cannot be restored in your repository because its assets are deleted.   To view all disposed package versions in a repository, use  ListackageVersions  and set the  status  parameter to Disposed.   To view information about a disposed package version, use  ListPackageVersions  and set the  status  parameter to Disposed. 
+    *  Deletes the assets in package versions and sets the package versions' status to Disposed. A disposed package version cannot be restored in your repository because its assets are deleted.   To view all disposed package versions in a repository, use  ListPackageVersions  and set the  status  parameter to Disposed.   To view information about a disposed package version, use  DescribePackageVersion .. 
     */
   def disposePackageVersions(params: DisposePackageVersionsRequest): Request[DisposePackageVersionsResult, AWSError] = js.native
   def disposePackageVersions(
     params: DisposePackageVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisposePackageVersionsResult, Unit]
   ): Request[DisposePackageVersionsResult, AWSError] = js.native
+  
   /**
-    *  Generates a temporary authentication token for accessing repositories in the domain. This API requires the codeartifact:GetAuthorizationToken and sts:GetServiceBearerToken permissions.   CodeArtifact authorization tokens are valid for a period of 12 hours when created with the login command. You can call login periodically to refresh the token. When you create an authorization token with the GetAuthorizationToken API, you can set a custom authorization period, up to a maximum of 12 hours, with the durationSeconds parameter. The authorization period begins after login or GetAuthorizationToken is called. If login or GetAuthorizationToken is called while assuming a role, the token lifetime is independent of the maximum session duration of the role. For example, if you call sts assume-role and specify a session duration of 15 minutes, then generate a CodeArtifact authorization token, the token will be valid for the full authorization period even though this is longer than the 15-minute session duration. See Using IAM Roles for more information on controlling session duration.  
+    *  Generates a temporary authorization token for accessing repositories in the domain. This API requires the codeartifact:GetAuthorizationToken and sts:GetServiceBearerToken permissions. For more information about authorization tokens, see AWS CodeArtifact authentication and tokens.   CodeArtifact authorization tokens are valid for a period of 12 hours when created with the login command. You can call login periodically to refresh the token. When you create an authorization token with the GetAuthorizationToken API, you can set a custom authorization period, up to a maximum of 12 hours, with the durationSeconds parameter. The authorization period begins after login or GetAuthorizationToken is called. If login or GetAuthorizationToken is called while assuming a role, the token lifetime is independent of the maximum session duration of the role. For example, if you call sts assume-role and specify a session duration of 15 minutes, then generate a CodeArtifact authorization token, the token will be valid for the full authorization period even though this is longer than the 15-minute session duration. See Using IAM Roles for more information on controlling session duration.  
     */
   def getAuthorizationToken(): Request[GetAuthorizationTokenResult, AWSError] = js.native
   def getAuthorizationToken(callback: js.Function2[/* err */ AWSError, /* data */ GetAuthorizationTokenResult, Unit]): Request[GetAuthorizationTokenResult, AWSError] = js.native
   /**
-    *  Generates a temporary authentication token for accessing repositories in the domain. This API requires the codeartifact:GetAuthorizationToken and sts:GetServiceBearerToken permissions.   CodeArtifact authorization tokens are valid for a period of 12 hours when created with the login command. You can call login periodically to refresh the token. When you create an authorization token with the GetAuthorizationToken API, you can set a custom authorization period, up to a maximum of 12 hours, with the durationSeconds parameter. The authorization period begins after login or GetAuthorizationToken is called. If login or GetAuthorizationToken is called while assuming a role, the token lifetime is independent of the maximum session duration of the role. For example, if you call sts assume-role and specify a session duration of 15 minutes, then generate a CodeArtifact authorization token, the token will be valid for the full authorization period even though this is longer than the 15-minute session duration. See Using IAM Roles for more information on controlling session duration.  
+    *  Generates a temporary authorization token for accessing repositories in the domain. This API requires the codeartifact:GetAuthorizationToken and sts:GetServiceBearerToken permissions. For more information about authorization tokens, see AWS CodeArtifact authentication and tokens.   CodeArtifact authorization tokens are valid for a period of 12 hours when created with the login command. You can call login periodically to refresh the token. When you create an authorization token with the GetAuthorizationToken API, you can set a custom authorization period, up to a maximum of 12 hours, with the durationSeconds parameter. The authorization period begins after login or GetAuthorizationToken is called. If login or GetAuthorizationToken is called while assuming a role, the token lifetime is independent of the maximum session duration of the role. For example, if you call sts assume-role and specify a session duration of 15 minutes, then generate a CodeArtifact authorization token, the token will be valid for the full authorization period even though this is longer than the 15-minute session duration. See Using IAM Roles for more information on controlling session duration.  
     */
   def getAuthorizationToken(params: GetAuthorizationTokenRequest): Request[GetAuthorizationTokenResult, AWSError] = js.native
   def getAuthorizationToken(
     params: GetAuthorizationTokenRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAuthorizationTokenResult, Unit]
   ): Request[GetAuthorizationTokenResult, AWSError] = js.native
+  
   /**
     *  Returns the resource policy attached to the specified domain.    The policy is a resource-based policy, not an identity-based policy. For more information, see Identity-based policies and resource-based policies  in the AWS Identity and Access Management User Guide.  
     */
@@ -222,6 +239,7 @@ trait CodeArtifact extends Service {
     params: GetDomainPermissionsPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDomainPermissionsPolicyResult, Unit]
   ): Request[GetDomainPermissionsPolicyResult, AWSError] = js.native
+  
   /**
     *  Returns an asset (or file) that is in a package. For example, for a Maven package version, use GetPackageVersionAsset to download a JAR file, a POM file, or any other assets in the package version. 
     */
@@ -235,6 +253,7 @@ trait CodeArtifact extends Service {
     params: GetPackageVersionAssetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPackageVersionAssetResult, Unit]
   ): Request[GetPackageVersionAssetResult, AWSError] = js.native
+  
   /**
     *  Gets the readme file or descriptive text for a package version. For packages that do not contain a readme file, CodeArtifact extracts a description from a metadata file. For example, from the &lt;description&gt; element in the pom.xml file of a Maven package.   The returned text might contain formatting. For example, it might contain formatting for Markdown or reStructuredText. 
     */
@@ -248,6 +267,7 @@ trait CodeArtifact extends Service {
     params: GetPackageVersionReadmeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPackageVersionReadmeResult, Unit]
   ): Request[GetPackageVersionReadmeResult, AWSError] = js.native
+  
   /**
     *  Returns the endpoint of a repository for a specific package format. A repository has one endpoint for each package format:     npm     pypi     maven   
     */
@@ -261,6 +281,7 @@ trait CodeArtifact extends Service {
     params: GetRepositoryEndpointRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRepositoryEndpointResult, Unit]
   ): Request[GetRepositoryEndpointResult, AWSError] = js.native
+  
   /**
     *  Returns the resource policy that is set on a repository. 
     */
@@ -274,6 +295,7 @@ trait CodeArtifact extends Service {
     params: GetRepositoryPermissionsPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRepositoryPermissionsPolicyResult, Unit]
   ): Request[GetRepositoryPermissionsPolicyResult, AWSError] = js.native
+  
   /**
     *  Returns a list of  DomainSummary  objects for all domains owned by the AWS account that makes this call. Each returned DomainSummary object contains information about a domain. 
     */
@@ -287,6 +309,7 @@ trait CodeArtifact extends Service {
     params: ListDomainsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDomainsResult, Unit]
   ): Request[ListDomainsResult, AWSError] = js.native
+  
   /**
     *  Returns a list of  AssetSummary  objects for assets in a package version. 
     */
@@ -300,6 +323,7 @@ trait CodeArtifact extends Service {
     params: ListPackageVersionAssetsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPackageVersionAssetsResult, Unit]
   ): Request[ListPackageVersionAssetsResult, AWSError] = js.native
+  
   /**
     *  Returns the direct dependencies for a package version. The dependencies are returned as  PackageDependency  objects. CodeArtifact extracts the dependencies for a package version from the metadata file for the package format (for example, the package.json file for npm packages and the pom.xml file for Maven). Any package version dependencies that are not listed in the configuration file are not returned. 
     */
@@ -313,6 +337,7 @@ trait CodeArtifact extends Service {
     params: ListPackageVersionDependenciesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPackageVersionDependenciesResult, Unit]
   ): Request[ListPackageVersionDependenciesResult, AWSError] = js.native
+  
   /**
     *  Returns a list of  PackageVersionSummary  objects for package versions in a repository that match the request parameters. 
     */
@@ -326,6 +351,7 @@ trait CodeArtifact extends Service {
     params: ListPackageVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPackageVersionsResult, Unit]
   ): Request[ListPackageVersionsResult, AWSError] = js.native
+  
   /**
     *  Returns a list of  PackageSummary  objects for packages in a repository that match the request parameters. 
     */
@@ -339,6 +365,7 @@ trait CodeArtifact extends Service {
     params: ListPackagesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPackagesResult, Unit]
   ): Request[ListPackagesResult, AWSError] = js.native
+  
   /**
     *  Returns a list of  RepositorySummary  objects. Each RepositorySummary contains information about a repository in the specified AWS account and that matches the input parameters. 
     */
@@ -352,6 +379,7 @@ trait CodeArtifact extends Service {
     params: ListRepositoriesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRepositoriesResult, Unit]
   ): Request[ListRepositoriesResult, AWSError] = js.native
+  
   /**
     *  Returns a list of  RepositorySummary  objects. Each RepositorySummary contains information about a repository in the specified domain and that matches the input parameters. 
     */
@@ -365,32 +393,77 @@ trait CodeArtifact extends Service {
     params: ListRepositoriesInDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRepositoriesInDomainResult, Unit]
   ): Request[ListRepositoriesInDomainResult, AWSError] = js.native
+  
   /**
-    *  Sets a resource policy on a domain that specifies permissions to access it. 
+    * Gets information about AWS tags for a specified Amazon Resource Name (ARN) in AWS CodeArtifact.
+    */
+  def listTagsForResource(): Request[ListTagsForResourceResult, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResult, Unit]): Request[ListTagsForResourceResult, AWSError] = js.native
+  /**
+    * Gets information about AWS tags for a specified Amazon Resource Name (ARN) in AWS CodeArtifact.
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResult, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResult, Unit]
+  ): Request[ListTagsForResourceResult, AWSError] = js.native
+  
+  /**
+    *  Sets a resource policy on a domain that specifies permissions to access it.   When you call PutDomainPermissionsPolicy, the resource policy on the domain is ignored when evaluting permissions. This ensures that the owner of a domain cannot lock themselves out of the domain, which would prevent them from being able to update the resource policy. 
     */
   def putDomainPermissionsPolicy(): Request[PutDomainPermissionsPolicyResult, AWSError] = js.native
   def putDomainPermissionsPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutDomainPermissionsPolicyResult, Unit]): Request[PutDomainPermissionsPolicyResult, AWSError] = js.native
   /**
-    *  Sets a resource policy on a domain that specifies permissions to access it. 
+    *  Sets a resource policy on a domain that specifies permissions to access it.   When you call PutDomainPermissionsPolicy, the resource policy on the domain is ignored when evaluting permissions. This ensures that the owner of a domain cannot lock themselves out of the domain, which would prevent them from being able to update the resource policy. 
     */
   def putDomainPermissionsPolicy(params: PutDomainPermissionsPolicyRequest): Request[PutDomainPermissionsPolicyResult, AWSError] = js.native
   def putDomainPermissionsPolicy(
     params: PutDomainPermissionsPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutDomainPermissionsPolicyResult, Unit]
   ): Request[PutDomainPermissionsPolicyResult, AWSError] = js.native
+  
   /**
-    *  Sets the resource policy on a repository that specifies permissions to access it. 
+    *  Sets the resource policy on a repository that specifies permissions to access it.   When you call PutRepositoryPermissionsPolicy, the resource policy on the repository is ignored when evaluting permissions. This ensures that the owner of a repository cannot lock themselves out of the repository, which would prevent them from being able to update the resource policy. 
     */
   def putRepositoryPermissionsPolicy(): Request[PutRepositoryPermissionsPolicyResult, AWSError] = js.native
   def putRepositoryPermissionsPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutRepositoryPermissionsPolicyResult, Unit]): Request[PutRepositoryPermissionsPolicyResult, AWSError] = js.native
   /**
-    *  Sets the resource policy on a repository that specifies permissions to access it. 
+    *  Sets the resource policy on a repository that specifies permissions to access it.   When you call PutRepositoryPermissionsPolicy, the resource policy on the repository is ignored when evaluting permissions. This ensures that the owner of a repository cannot lock themselves out of the repository, which would prevent them from being able to update the resource policy. 
     */
   def putRepositoryPermissionsPolicy(params: PutRepositoryPermissionsPolicyRequest): Request[PutRepositoryPermissionsPolicyResult, AWSError] = js.native
   def putRepositoryPermissionsPolicy(
     params: PutRepositoryPermissionsPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutRepositoryPermissionsPolicyResult, Unit]
   ): Request[PutRepositoryPermissionsPolicyResult, AWSError] = js.native
+  
+  /**
+    * Adds or updates tags for a resource in AWS CodeArtifact.
+    */
+  def tagResource(): Request[TagResourceResult, AWSError] = js.native
+  def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResult, Unit]): Request[TagResourceResult, AWSError] = js.native
+  /**
+    * Adds or updates tags for a resource in AWS CodeArtifact.
+    */
+  def tagResource(params: TagResourceRequest): Request[TagResourceResult, AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResult, Unit]
+  ): Request[TagResourceResult, AWSError] = js.native
+  
+  /**
+    * Removes tags from a resource in AWS CodeArtifact.
+    */
+  def untagResource(): Request[UntagResourceResult, AWSError] = js.native
+  def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResult, Unit]): Request[UntagResourceResult, AWSError] = js.native
+  /**
+    * Removes tags from a resource in AWS CodeArtifact.
+    */
+  def untagResource(params: UntagResourceRequest): Request[UntagResourceResult, AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResult, Unit]
+  ): Request[UntagResourceResult, AWSError] = js.native
+  
   /**
     *  Updates the status of one or more versions of a package. 
     */
@@ -404,6 +477,7 @@ trait CodeArtifact extends Service {
     params: UpdatePackageVersionsStatusRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePackageVersionsStatusResult, Unit]
   ): Request[UpdatePackageVersionsStatusResult, AWSError] = js.native
+  
   /**
     *  Update the properties of a repository. 
     */
@@ -418,4 +492,3 @@ trait CodeArtifact extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRepositoryResult, Unit]
   ): Request[UpdateRepositoryResult, AWSError] = js.native
 }
-

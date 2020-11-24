@@ -14,7 +14,7 @@ import typings.node.fsMod.Stats
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("chokidar", "FSWatcher")
 @js.native
@@ -24,13 +24,14 @@ import scala.scalajs.js.annotation._
 class FSWatcher ()
   extends typings.node.fsMod.FSWatcher {
   def this(options: WatchOptions) = this()
-  var options: WatchOptions = js.native
+  
   /**
     * Add files, directories, or glob patterns for tracking. Takes an array of strings or just one
     * string.
     */
   def add(paths: String): Unit = js.native
   def add(paths: js.Array[String]): Unit = js.native
+  
   /**
     * Returns an object representing all the paths on the file system being watched by this
     * `FSWatcher` instance. The object's keys are all the directories (using absolute paths unless
@@ -38,6 +39,7 @@ class FSWatcher ()
     * each directory.
     */
   def getWatched(): StringDictionary[js.Array[String]] = js.native
+  
   def on(
     event: all,
     listener: js.Function3[
@@ -75,6 +77,9 @@ class FSWatcher ()
   def on_unlink(event: unlink, listener: js.Function1[/* path */ String, Unit]): this.type = js.native
   @JSName("on")
   def on_unlinkDir(event: unlinkDir, listener: js.Function1[/* path */ String, Unit]): this.type = js.native
+  
+  var options: WatchOptions = js.native
+  
   /**
     * Stop watching files, directories, or glob patterns. Takes an array of strings or just one
     * string.
@@ -82,4 +87,3 @@ class FSWatcher ()
   def unwatch(paths: String): Unit = js.native
   def unwatch(paths: js.Array[String]): Unit = js.native
 }
-

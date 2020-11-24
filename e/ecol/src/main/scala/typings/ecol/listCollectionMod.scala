@@ -2,8 +2,6 @@ package typings.ecol
 
 import org.scalablytyped.runtime.Instantiable3
 import typings.ecol.collectionEventMod.CollectionEvent
-import typings.ecol.collectionEventMod.CollectionEvent.Listener
-import typings.ecol.collectionEventMod.CollectionEvent.Type
 import typings.ecol.ieventdispatcherMod.IEventDispatcher
 import typings.tstl.icontainerMod.IContainer
 import typings.tstl.iforwarditeratorMod.IForwardIterator
@@ -13,11 +11,12 @@ import typings.tstl.listMod.List.Iterator
 import typings.tstl.listMod.List.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ecol/lib/linear/ListCollection", JSImport.Namespace)
 @js.native
 object listCollectionMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
@@ -30,20 +29,17 @@ object listCollectionMod extends js.Object {
   class ListCollection[T] ()
     extends List[T]
        with IEventDispatcher[T, List[T], Iterator[T], ReverseIterator[T]] {
+    
     /**
       * @hidden
       */
     var _Notify_erase: js.Any = js.native
+    
     /**
       * @hidden
       */
     var _Notify_insert: js.Any = js.native
-    /**
-      * @hidden
-      */
-    var dispatcher_ : js.Any = js.native
-    /* CompleteClass */
-    override def addEventListener(`type`: Type, listener: Listener[T, List[T], Iterator[T], ReverseIterator[T]]): Unit = js.native
+    
     /**
       * Range Assigner.
       *
@@ -52,33 +48,18 @@ object listCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def assign[InputIterator /* <: IForwardIterator[T, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
-    /**
-      * Iterator to the first element.
-      *
-      * @return Iterator to the first element.
-      */
-    /* InferMemberOverrides */
-    override def begin(): typings.tstl.icontainerMod.IContainer.Iterator[T, List[T], Iterator[T], ReverseIterator[T], T] = js.native
+    
     /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def clear(): Unit = js.native
-    /* CompleteClass */
-    override def dispatchEvent(event: CollectionEvent[T, List[T], Iterator[T], ReverseIterator[T]]): Unit = js.native
+    
     /**
-      * Test whether container is empty.
+      * @hidden
       */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def empty(): Boolean = js.native
-    /**
-      * Iterator to the end.
-      *
-      * @return Iterator to the end.
-      */
-    /* InferMemberOverrides */
-    override def end(): typings.tstl.icontainerMod.IContainer.Iterator[T, List[T], Iterator[T], ReverseIterator[T], T] = js.native
+    var dispatcher_ : js.Any = js.native
+    
     /**
       * Erase elements in range.
       *
@@ -96,42 +77,19 @@ object listCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def erase(pos: Iterator[T]): Iterator[T] = js.native
-    /* CompleteClass */
-    override def hasEventListener(`type`: Type): Boolean = js.native
+    
     /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def pop_front(): Unit = js.native
-    /**
-      * Insert items at the end.
-      *
-      * @param items Items to insert.
-      * @return Number of elements in the container after insertion.
-      */
-    /* InferMemberOverrides */
-    override def push(items: T*): Double = js.native
-    /**
-      * Insert an element at the end.
-      *
-      * @param val Value to insert.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def push_back(`val`: T): Unit = js.native
+    
     /**
       * @inheritDoc
       */
     /* InferMemberOverrides */
     override def push_front(`val`: T): Unit = js.native
-    /**
-      * Reverse iterator to the first element in reverse.
-      *
-      * @return Reverse iterator to the first.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def rbegin(): ReverseIterator[T] = js.native
+    
     /**
       * @inheritdoc
       */
@@ -144,22 +102,7 @@ object listCollectionMod extends js.Object {
       * @inheritdoc
       */
     def refresh(it: Iterator[T]): Unit = js.native
-    /* CompleteClass */
-    override def removeEventListener(`type`: Type, listener: Listener[T, List[T], Iterator[T], ReverseIterator[T]]): Unit = js.native
-    /**
-      * Reverse iterator to the reverse end.
-      *
-      * @return Reverse iterator to the end.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def rend(): ReverseIterator[T] = js.native
-    /**
-      * Number of elements in the container.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def size(): Double = js.native
+    
     /**
       * Swap elements.
       *
@@ -167,6 +110,7 @@ object listCollectionMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def swap(obj: List[T]): Unit = js.native
+    
     /**
       * Native function for `JSON.stringify()`.
       *
@@ -175,45 +119,8 @@ object listCollectionMod extends js.Object {
     /* InferMemberOverrides */
     override def toJSON(): js.Array[T] = js.native
   }
-  
   @js.native
   object ListCollection extends js.Object {
-    /**
-      * Iterator of {@link List}
-      *
-      * @author Jeongho Nam - https://github.com/samchon
-      */
-    @js.native
-    class Iterator[T] protected ()
-      extends ListIterator[
-              T, 
-              List[T], 
-              typings.tstl.listMod.List.Iterator[T], 
-              typings.tstl.listMod.List.ReverseIterator[T], 
-              T
-            ] {
-      var source_ptr_ : js.Any = js.native
-      def equals(obj: typings.tstl.listMod.List.Iterator[T]): Boolean = js.native
-      /**
-        * @inheritDoc
-        */
-      def value(`val`: T): js.Any = js.native
-    }
-    
-    /**
-      * Reverse iterator of {@link List}
-      *
-      * @author Jeongho Nam - https://github.com/samchon
-      */
-    @js.native
-    class ReverseIterator[T] ()
-      extends typings.tstl.reverseIteratorMod.ReverseIterator[
-              T, 
-              List[T], 
-              typings.tstl.listMod.List.Iterator[T], 
-              typings.tstl.listMod.List.ReverseIterator[T], 
-              T
-            ]
     
     val Event: Instantiable3[
         /* type */ String, 
@@ -244,12 +151,60 @@ object listCollectionMod extends js.Object {
           ]
         ]
       ] = js.native
+    
+    /**
+      * Iterator of {@link List}
+      *
+      * @author Jeongho Nam - https://github.com/samchon
+      */
+    @js.native
+    class Iterator[T] protected ()
+      extends ListIterator[
+              T, 
+              List[T], 
+              typings.tstl.listMod.List.Iterator[T], 
+              typings.tstl.listMod.List.ReverseIterator[T], 
+              T
+            ] {
+      
+      def equals(obj: typings.tstl.listMod.List.Iterator[T]): Boolean = js.native
+      
+      var source_ptr_ : js.Any = js.native
+      
+      /**
+        * @inheritDoc
+        */
+      def value_=(`val`: T): Unit = js.native
+    }
+    
+    /**
+      * Reverse iterator of {@link List}
+      *
+      * @author Jeongho Nam - https://github.com/samchon
+      */
+    @js.native
+    class ReverseIterator[T] ()
+      extends typings.tstl.reverseIteratorMod.ReverseIterator[
+              T, 
+              List[T], 
+              typings.tstl.listMod.List.Iterator[T], 
+              typings.tstl.listMod.List.ReverseIterator[T], 
+              T
+            ] {
+      
+      /**
+        * @inheritDoc
+        */
+      def value_=(`val`: T): Unit = js.native
+    }
+    
     type Event[T] = CollectionEvent[
         T, 
         List[T], 
         typings.tstl.listMod.List.Iterator[T], 
         typings.tstl.listMod.List.ReverseIterator[T]
       ]
+    
     type Listener[T] = typings.ecol.collectionEventMod.CollectionEvent.Listener[
         T, 
         List[T], 
@@ -257,6 +212,4 @@ object listCollectionMod extends js.Object {
         typings.tstl.listMod.List.ReverseIterator[T]
       ]
   }
-  
 }
-

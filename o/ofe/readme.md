@@ -9,10 +9,10 @@ Overwrite OnFatalError to produce heapdump
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ofe |
-| Keywords           | On Fatal Error, Fatal, Error, OnFatalError |
+| Keywords           | On Fatal Error, Fatal, Error, OnFatalError, SetFatalErrorHandler |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 22532 |
+| # downloads        | 3323 |
 | # stars            | 3 |
 
 ## Links

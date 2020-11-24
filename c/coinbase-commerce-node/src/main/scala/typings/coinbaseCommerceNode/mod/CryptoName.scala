@@ -3,7 +3,7 @@ package typings.coinbaseCommerceNode.mod
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.usdc_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Full crypto currency name.
@@ -16,17 +16,20 @@ import scala.scalajs.js.annotation._
   - typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.usdc_
 */
 trait CryptoName extends js.Object
-
 object CryptoName {
+  
   @scala.inline
   def bitcoin: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoin = "bitcoin".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoin]
+  
   @scala.inline
   def bitcoincash: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoincash = "bitcoincash".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoincash]
+  
   @scala.inline
   def ethereum: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.ethereum = "ethereum".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.ethereum]
+  
   @scala.inline
   def litecoin: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.litecoin = "litecoin".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.litecoin]
+  
   @scala.inline
   def usdc: usdc_ = "usdc".asInstanceOf[usdc_]
 }
-

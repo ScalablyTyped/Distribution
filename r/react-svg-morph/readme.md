@@ -12,7 +12,7 @@ morph your svg component one into another
 | Keywords           | react, icons, svg, morph, transform, icon |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 64975 |
+| # downloads        | 66936 |
 | # stars            | 1 |
 
 ## Links

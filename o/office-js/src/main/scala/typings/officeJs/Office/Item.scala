@@ -2,7 +2,7 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The item namespace is used to access the currently selected message, meeting request, or appointment. 
@@ -29,4 +29,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Item extends js.Object
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for deep-freeze-es6
 
-Typings are for version 1.3.1
+Typings are for version 1.4.1
 
 ## Library description:
 deep freeze, works with Map and Set
@@ -10,9 +10,9 @@ deep freeze, works with Map and Set
 | ------------------ | :-------------: |
 | Full name          | deep-freeze-es6 |
 | Keywords           | freeze, deep-freeze, set, map |
-| # releases         | 5 |
+| # releases         | 1 |
 | # dependents       | 6 |
-| # downloads        | 26990 |
+| # downloads        | 32758 |
 | # stars            | 0 |
 
 ## Links

@@ -9,11 +9,12 @@ import typings.angularCompiler.serializerMod.Serializer
 import typings.angularCompiler.srcUtilMod.Console
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/i18n/translation_bundle", JSImport.Namespace)
 @js.native
 object translationBundleMod extends js.Object {
+  
   @js.native
   class TranslationBundle protected () extends js.Object {
     def this(
@@ -130,17 +131,23 @@ object translationBundleMod extends js.Object {
       missingTranslationStrategy: MissingTranslationStrategy,
       console: Console
     ) = this()
+    
     var _i18nNodesByMsgId: js.Any = js.native
+    
     var _i18nToHtml: js.Any = js.native
-    var mapperFactory: js.UndefOr[js.Function1[/* m */ Message, PlaceholderMapper]] = js.native
+    
     def digest(m: Message): String = js.native
+    
     def get(srcMsg: Message): js.Array[typings.angularCompiler.mlParserAstMod.Node] = js.native
+    
     def has(srcMsg: Message): Boolean = js.native
+    
+    var mapperFactory: js.UndefOr[js.Function1[/* m */ Message, PlaceholderMapper]] = js.native
   }
-  
   /* static members */
   @js.native
   object TranslationBundle extends js.Object {
+    
     def load(
       content: String,
       url: String,
@@ -155,6 +162,4 @@ object translationBundleMod extends js.Object {
       console: Console
     ): TranslationBundle = js.native
   }
-  
 }
-

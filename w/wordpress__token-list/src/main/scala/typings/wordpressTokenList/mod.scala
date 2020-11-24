@@ -3,26 +3,21 @@ package typings.wordpressTokenList
 import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/token-list", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   trait TokenList extends js.Object {
+    
     /** @type {string} */
     var _currentValue: String = js.native
+    
     /** @type {string[]} */
     var _valueAsArray: js.Array[String] = js.native
-    /**
-      * Returns an iterator for the TokenList, iterating items of the set.
-      *
-      * @see https://dom.spec.whatwg.org/#domtokenlist
-      *
-      * @return {IterableIterator<string>} TokenList iterator.
-      */
-    @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[IterableIterator[String]] = js.native
+    
     /**
       * Adds all arguments passed, except those already present.
       *
@@ -31,6 +26,7 @@ object mod extends js.Object {
       * @param {...string} items Items to add.
       */
     def add(items: String*): Unit = js.native
+    
     /**
       * Returns true if `token` is present, and false otherwise.
       *
@@ -41,10 +37,12 @@ object mod extends js.Object {
       * @return {boolean} Whether token is present.
       */
     def contains(item: String): Boolean = js.native
+    
     /**
       * @param {Parameters<Array<string>['entries']>} args
       */
     def entries(): IterableIterator[js.Tuple2[Double, String]] = js.native
+    
     /**
       * @param {Parameters<Array<string>['forEach']>} args
       */
@@ -55,6 +53,7 @@ object mod extends js.Object {
       callbackfn: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], Unit],
       thisArg: js.Any
     ): Unit = js.native
+    
     /**
       * Returns the token with index `index`.
       *
@@ -65,10 +64,22 @@ object mod extends js.Object {
       * @return {string|undefined} Token at index.
       */
     def item(index: Double): js.UndefOr[String] = js.native
+    
+    /**
+      * Returns an iterator for the TokenList, iterating items of the set.
+      *
+      * @see https://dom.spec.whatwg.org/#domtokenlist
+      *
+      * @return {IterableIterator<string>} TokenList iterator.
+      */
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[IterableIterator[String]] = js.native
+    
     /**
       * @param {Parameters<Array<string>['keys']>} args
       */
     def keys(): IterableIterator[Double] = js.native
+    
     /**
       * Returns the number of tokens.
       *
@@ -77,6 +88,7 @@ object mod extends js.Object {
       * @return {number} Number of tokens.
       */
     def length: Double = js.native
+    
     /**
       * Removes arguments passed, if they are present.
       *
@@ -85,6 +97,7 @@ object mod extends js.Object {
       * @param {...string} items Items to remove.
       */
     def remove(items: String*): Unit = js.native
+    
     /**
       * Replaces `token` with `newToken`. Returns true if `token` was replaced
       * with `newToken`, and false otherwise.
@@ -97,6 +110,7 @@ object mod extends js.Object {
       * @return {boolean} Whether replacement occurred.
       */
     def replace(token: String, newToken: String): Boolean = js.native
+    
     /**
       * Returns true if `token` is in the associated attribute’s supported
       * tokens. Returns false otherwise.
@@ -108,6 +122,7 @@ object mod extends js.Object {
       * @return {boolean} Whether token is supported.
       */
     def supports(): Boolean = js.native
+    
     /**
       * If `force` is not given, "toggles" `token`, removing it if it’s present
       * and adding it if it’s not present. If `force` is true, adds token (same
@@ -123,6 +138,7 @@ object mod extends js.Object {
       */
     def toggle(token: String): Boolean = js.native
     def toggle(token: String, force: Boolean): Boolean = js.native
+    
     /**
       * Returns the associated set as string.
       *
@@ -139,6 +155,7 @@ object mod extends js.Object {
       * @param {string} value New token set as string.
       */
     def value_=(arg: String): Unit = js.native
+    
     /**
       * @param {Parameters<Array<string>['values']>} args
       */
@@ -154,6 +171,4 @@ object mod extends js.Object {
   class default () extends TokenList {
     def this(initialValue: String) = this()
   }
-  
 }
-

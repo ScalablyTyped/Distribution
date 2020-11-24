@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-diff"
-version := "0.5-dt-20200528Z-f58e2f"
+version := "0.5-dt-20200528Z-fc6145"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -4,11 +4,12 @@ import typings.samchon.iprotocolMod.IProtocol
 import typings.samchon.sharedWorkerCommunicatorMod.SharedWorkerCommunicator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/protocol/communicator/server_connector/SharedWorkerServerConnector", JSImport.Namespace)
 @js.native
 object sharedWorkerServerConnectorMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.samchon.iprotocolMod.IProtocol because Already inherited
   - typings.samchon.icommunicatorMod.ICommunicator because Already inherited
@@ -21,10 +22,7 @@ object sharedWorkerServerConnectorMod extends js.Object {
       *				   {@link IProtocol.replyData replyData()} as an {@link Invoke} object.
       */
     def this(listener: IProtocol) = this()
-    /**
-      * @inheritdoc
-      */
-    var onConnect: js.Function = js.native
+    
     /**
       * Connect to a server.
       *
@@ -63,7 +61,10 @@ object sharedWorkerServerConnectorMod extends js.Object {
       * @param jsFile Path of JavaScript file to execute who defines SharedWorker.
       */
     def connect(jsFile: String): Unit = js.native
+    
+    /**
+      * @inheritdoc
+      */
+    var onConnect: js.Function = js.native
   }
-  
 }
-

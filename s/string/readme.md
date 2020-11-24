@@ -10,8 +10,8 @@ string contains methods that aren't included in the vanilla JavaScript string su
 | Full name          | string |
 | Keywords           | string, strings, string.js, stringjs, S, s, csv, html, entities, parse, html, tags, strip, trim, encode, decode, escape, unescape |
 | # releases         | 1 |
-| # dependents       | 803 |
-| # downloads        | 5161778 |
+| # dependents       | 823 |
+| # downloads        | 5151375 |
 | # stars            | 80 |
 
 ## Links

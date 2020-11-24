@@ -4,11 +4,12 @@ import typings.flux.fluxStoreMod.^
 import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("flux/lib/FluxContainer", "createFunctional")
 @js.native
 object createFunctional extends js.Object {
+  
   def apply[TProps, TState](
     viewFn: js.Function1[/* props */ TState, ReactElement],
     getStores: js.Function2[
@@ -39,4 +40,3 @@ object createFunctional extends js.Object {
     options: RealOptions
   ): Component[TProps, TState, _] = js.native
 }
-

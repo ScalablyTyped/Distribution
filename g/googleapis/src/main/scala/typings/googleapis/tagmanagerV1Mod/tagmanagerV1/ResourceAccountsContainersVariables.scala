@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v1", "tagmanager_v1.Resource$Accounts$Containers$Variables")
 @js.native
 class ResourceAccountsContainersVariables protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.containers.variables.create
     * @desc Creates a GTM Variable.
@@ -46,6 +48,7 @@ class ResourceAccountsContainersVariables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVariable]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.variables.delete
     * @desc Deletes a GTM Variable.
@@ -76,6 +79,7 @@ class ResourceAccountsContainersVariables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.variables.get
     * @desc Gets a GTM Variable.
@@ -109,6 +113,7 @@ class ResourceAccountsContainersVariables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVariable]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.variables.list
     * @desc Lists all GTM Variables of a Container.
@@ -141,6 +146,7 @@ class ResourceAccountsContainersVariables protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListVariablesResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.variables.update
     * @desc Updates a GTM Variable.
@@ -177,4 +183,3 @@ class ResourceAccountsContainersVariables protected () extends js.Object {
     callback: BodyResponseCallback[SchemaVariable]
   ): Unit = js.native
 }
-

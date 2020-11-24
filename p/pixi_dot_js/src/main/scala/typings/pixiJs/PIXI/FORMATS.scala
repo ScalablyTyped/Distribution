@@ -2,11 +2,10 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FORMATS extends js.Object
-
 /**
   * Various GL texture/resources formats.
   *
@@ -25,6 +24,7 @@ sealed trait FORMATS extends js.Object
 @JSGlobal("PIXI.FORMATS")
 @js.native
 object FORMATS extends js.Object {
+  
   @js.native
   sealed trait ALPHA extends FORMATS
   
@@ -45,6 +45,4 @@ object FORMATS extends js.Object {
   
   @js.native
   sealed trait RGBA extends FORMATS
-  
 }
-

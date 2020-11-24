@@ -2,14 +2,14 @@ package typings.amapJsApiDriving.AMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DrivingPolicy extends js.Object
-
 @JSGlobal("AMap.DrivingPolicy")
 @js.native
 object DrivingPolicy extends js.Object {
+  
   @js.native
   sealed trait FEE_HIGHWAY extends DrivingPolicy
   
@@ -49,6 +49,4 @@ object DrivingPolicy extends js.Object {
   
   @js.native
   sealed trait TRAFFIC_HIGHWAY extends DrivingPolicy
-  
 }
-

@@ -12,7 +12,7 @@ Universal Chess Interface protocol implementation for node.js
 | Keywords           | universal chess interface, uci, chess, engine |
 | # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 4373 |
+| # downloads        | 5678 |
 | # stars            | 0 |
 
 ## Links

@@ -5,7 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Service of {@link Decryptor} */
 @js.native
@@ -16,8 +16,8 @@ trait Decryptor
      with XKeyCollector
      with XMissionTaker
      with XInitialization
-
 object Decryptor {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -35,4 +35,3 @@ object Decryptor {
     __obj.asInstanceOf[Decryptor]
   }
 }
-

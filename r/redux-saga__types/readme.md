@@ -12,7 +12,7 @@ Shared types used by `redux-saga` packages.
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 7 |
-| # downloads        | 8977071 |
+| # downloads        | 19546832 |
 | # stars            | 0 |
 
 ## Links

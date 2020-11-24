@@ -4,15 +4,15 @@
 Typings are for version 2.0
 
 ## Library description:
-Convert between positions (line and column-based) and offsets (range-based) locations in a virtual file
+vfile utility to convert between positional (line and column-based) and offset (range-based) locations
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | vfile-location |
-| Keywords           | remark, comment, message, marker, control |
+| Keywords           | vfile, vfile-util, util, utility, virtual, file, location, point, position, offset |
 | # releases         | 5 |
-| # dependents       | 18 |
-| # downloads        | 65873111 |
+| # dependents       | 25 |
+| # downloads        | 116155598 |
 | # stars            | 0 |
 
 ## Links

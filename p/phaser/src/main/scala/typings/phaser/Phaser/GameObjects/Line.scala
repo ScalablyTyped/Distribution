@@ -2,7 +2,7 @@ package typings.phaser.Phaser.GameObjects
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Line Shape is a Game Object that can be added to a Scene, Group or Container. You can
@@ -23,6 +23,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Line extends Shape {
+  
   /**
     * Sets the width of the line.
     * 
@@ -35,6 +36,7 @@ trait Line extends Shape {
     */
   def setLineWidth(startWidth: Double): this.type = js.native
   def setLineWidth(startWidth: Double, endWidth: Double): this.type = js.native
+  
   /**
     * Sets the start and end coordinates of this Line.
     * @param x1 The horizontal position of the start of the line. Default 0.
@@ -64,4 +66,3 @@ trait Line extends Shape {
   def setTo(x1: Double, y1: Double, x2: Double): this.type = js.native
   def setTo(x1: Double, y1: Double, x2: Double, y2: Double): this.type = js.native
 }
-

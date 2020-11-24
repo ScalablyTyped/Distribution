@@ -3,11 +3,12 @@ package typings.cassandraDriver.mod
 import typings.cassandraDriver.anon.AuthorizationId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver", "auth")
 @js.native
 object auth extends js.Object {
+  
   @js.native
   class DseGssapiAuthProvider ()
     extends typings.cassandraDriver.authMod.auth.DseGssapiAuthProvider {
@@ -26,6 +27,4 @@ object auth extends js.Object {
     extends typings.cassandraDriver.authMod.auth.PlainTextAuthProvider {
     def this(username: String, password: String) = this()
   }
-  
 }
-

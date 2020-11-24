@@ -10,11 +10,12 @@ import typings.jupyterlabObservables.modeldbMod.IModelDB
 import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/docregistry", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   abstract class ABCWidgetFactory[T /* <: IDocumentWidget[Widget, IModel] */, U /* <: IModel */] protected ()
     extends typings.jupyterlabDocregistry.defaultMod.ABCWidgetFactory[T, U] {
@@ -44,6 +45,7 @@ object mod extends js.Object {
   class DocumentModel ()
     extends typings.jupyterlabDocregistry.defaultMod.DocumentModel {
     def this(languagePreference: String) = this()
+    def this(languagePreference: js.UndefOr[scala.Nothing], modelDB: IModelDB) = this()
     def this(languagePreference: String, modelDB: IModelDB) = this()
   }
   
@@ -54,6 +56,34 @@ object mod extends js.Object {
   class DocumentRegistry ()
     extends typings.jupyterlabDocregistry.registryMod.DocumentRegistry {
     def this(options: typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IOptions) = this()
+  }
+  @js.native
+  object DocumentRegistry extends js.Object {
+    
+    /**
+      * The default directory file type used by the document registry.
+      */
+    val defaultDirectoryFileType: IFileType = js.native
+    
+    /**
+      * The default file types used by the document registry.
+      */
+    val defaultFileTypes: js.Array[PartialIFileType] = js.native
+    
+    /**
+      * The default notebook file type used by the document registry.
+      */
+    val defaultNotebookFileType: IFileType = js.native
+    
+    /**
+      * The default text file type used by the document registry.
+      */
+    val defaultTextFileType: IFileType = js.native
+    
+    /**
+      * The defaults used for a file type.
+      */
+    val fileTypeDefaults: IFileType = js.native
   }
   
   @js.native
@@ -87,30 +117,4 @@ object mod extends js.Object {
   @js.native
   class TextModelFactory ()
     extends typings.jupyterlabDocregistry.defaultMod.TextModelFactory
-  
-  @js.native
-  object DocumentRegistry extends js.Object {
-    /**
-      * The default directory file type used by the document registry.
-      */
-    val defaultDirectoryFileType: IFileType = js.native
-    /**
-      * The default file types used by the document registry.
-      */
-    val defaultFileTypes: js.Array[PartialIFileType] = js.native
-    /**
-      * The default notebook file type used by the document registry.
-      */
-    val defaultNotebookFileType: IFileType = js.native
-    /**
-      * The default text file type used by the document registry.
-      */
-    val defaultTextFileType: IFileType = js.native
-    /**
-      * The defaults used for a file type.
-      */
-    val fileTypeDefaults: IFileType = js.native
-  }
-  
 }
-

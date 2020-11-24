@@ -6,14 +6,15 @@ import typings.pgwmodal.pgwmodalStrings.isOpen
 import typings.pgwmodal.pgwmodalStrings.reposition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQueryStatic extends js.Object {
-  @JSName("pgwModal")
-  var pgwModal_Original: PgwModalMethod = js.native
+  
   def pgwModal(action: String): js.Any = js.native
   def pgwModal(option: PgwModalOption): Boolean = js.native
+  @JSName("pgwModal")
+  var pgwModal_Original: PgwModalMethod = js.native
   @JSName("pgwModal")
   def pgwModal_close(action: close): Boolean = js.native
   @JSName("pgwModal")
@@ -23,4 +24,3 @@ trait JQueryStatic extends js.Object {
   @JSName("pgwModal")
   def pgwModal_reposition(action: reposition): Boolean = js.native
 }
-

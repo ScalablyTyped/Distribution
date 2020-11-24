@@ -2,7 +2,7 @@ package typings.naverWhale.global.whale
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Privacy
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.privacy")
 @js.native
 object privacy extends js.Object
-

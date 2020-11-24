@@ -31,19 +31,11 @@ import typings.node.urlMod.URL_
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Request extends js.Object {
-  var compressionEnabled: Boolean = js.native
-  var coreOptions: RequestOptions = js.native
-  var data: String | Buffer | Null = js.native
-  var method: String = js.native
-  var reqHeaders: StringDictionary[String] = js.native
-  var sendDataAs: form | json | buffer | Null = js.native
-  var streamEnabled: Boolean = js.native
-  var timeoutTime: Double | Null = js.native
-  var url: URL_ = js.native
+  
   def body(data: js.Any): this.type = js.native
   @JSName("body")
   def body_buffer(data: js.Any, sendAs: buffer): this.type = js.native
@@ -51,9 +43,20 @@ trait Request extends js.Object {
   def body_form(data: js.Any, sendAs: form): this.type = js.native
   @JSName("body")
   def body_json(data: js.Any, sendAs: json): this.type = js.native
+  
   def compress(): this.type = js.native
+  
+  var compressionEnabled: Boolean = js.native
+  
+  var coreOptions: RequestOptions = js.native
+  
+  var data: String | Buffer | Null = js.native
+  
   def header(headers: StringDictionary[String]): this.type = js.native
   def header(key: String, value: String): this.type = js.native
+  
+  var method: String = js.native
+  
   @JSName("option")
   def option_agent(key: agent): this.type = js.native
   @JSName("option")
@@ -139,11 +142,25 @@ trait Request extends js.Object {
   def option_timeout(key: timeout): this.type = js.native
   @JSName("option")
   def option_timeout(key: timeout, value: Double): this.type = js.native
+  
   def path(relativePath: String): this.type = js.native
+  
   def query(key: String, value: js.Any): this.type = js.native
   def query(params: StringDictionary[js.Any]): this.type = js.native
+  
+  var reqHeaders: StringDictionary[String] = js.native
+  
   def send(): js.Promise[Response] = js.native
+  
+  var sendDataAs: form | json | buffer | Null = js.native
+  
   def stream(): this.type = js.native
+  
+  var streamEnabled: Boolean = js.native
+  
   def timeout(timeMs: Double): this.type = js.native
+  
+  var timeoutTime: Double | Null = js.native
+  
+  var url: URL_ = js.native
 }
-

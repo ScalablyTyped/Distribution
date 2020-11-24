@@ -9,11 +9,12 @@ import typings.std.Iterable
 import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stream-mock/lib/duplex/DuplexMock", JSImport.Namespace)
 @js.native
 object duplexMockMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.node.eventsMod.global.NodeJS.EventEmitter because Already inherited
   - typings.node.eventsMod.EventEmitter because Already inherited
@@ -28,12 +29,19 @@ object duplexMockMod extends js.Object {
   - typings.streamMock.ireadablemockMod.IReadableMock because var conflicts: destroyed, readable. Inlined it
   - typings.streamMock.iwritablemockMod.IWritableMock because Inheritance from two classes. Inlined data, flatData */ @js.native
   trait DuplexMock extends Duplex {
+    
     var _readableState: js.Any = js.native
+    
     var _writableState: js.Any = js.native
+    
     var data: js.Array[_] | Buffer = js.native
+    
     var encoding: BufferEncoding = js.native
+    
     var flatData: js.Array[_] | Buffer = js.native
+    
     var it: IterableIterator[_] = js.native
+    
     var objectMode: Boolean = js.native
   }
   
@@ -45,6 +53,4 @@ object duplexMockMod extends js.Object {
     def this(source: ArrayLike[_], options: DuplexOptions) = this()
     def this(source: Iterable[_], options: DuplexOptions) = this()
   }
-  
 }
-

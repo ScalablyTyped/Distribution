@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Floodlightconfigurations")
 @js.native
 class ResourceFloodlightconfigurations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.floodlightConfigurations.get
     * @desc Gets one floodlight configuration by ID.
@@ -45,6 +47,7 @@ class ResourceFloodlightconfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFloodlightConfiguration]
   ): Unit = js.native
+  
   /**
     * dfareporting.floodlightConfigurations.list
     * @desc Retrieves a list of floodlight configurations, possibly filtered.
@@ -77,6 +80,7 @@ class ResourceFloodlightconfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFloodlightConfigurationsListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.floodlightConfigurations.patch
     * @desc Updates an existing floodlight configuration. This method supports
@@ -111,6 +115,7 @@ class ResourceFloodlightconfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFloodlightConfiguration]
   ): Unit = js.native
+  
   /**
     * dfareporting.floodlightConfigurations.update
     * @desc Updates an existing floodlight configuration.
@@ -144,4 +149,3 @@ class ResourceFloodlightconfigurations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaFloodlightConfiguration]
   ): Unit = js.native
 }
-

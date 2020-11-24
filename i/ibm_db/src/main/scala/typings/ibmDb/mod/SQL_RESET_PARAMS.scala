@@ -3,9 +3,8 @@ package typings.ibmDb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ibm_db", "SQL_RESET_PARAMS")
 @js.native
 object SQL_RESET_PARAMS extends TopLevel[String]
-

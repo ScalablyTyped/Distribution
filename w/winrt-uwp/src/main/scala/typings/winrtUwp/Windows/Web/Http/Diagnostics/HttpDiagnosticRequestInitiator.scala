@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Web.Http.Diagnostics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait HttpDiagnosticRequestInitiator extends js.Object
-
 /** Provides the source of the request. */
 @JSGlobal("Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator")
 @js.native
 object HttpDiagnosticRequestInitiator extends js.Object {
+  
   /** An HTML download. */
   @js.native
   sealed trait htmlDownload extends HttpDiagnosticRequestInitiator
@@ -50,6 +50,4 @@ object HttpDiagnosticRequestInitiator extends js.Object {
   /** An XML HTTP request. */
   @js.native
   sealed trait xmlHttpRequest extends HttpDiagnosticRequestInitiator
-  
 }
-

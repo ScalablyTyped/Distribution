@@ -12,7 +12,7 @@ Angular directive to show an animated spinner (using [spin.js](http://fgnass.git
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 275088 |
+| # downloads        | 278848 |
 | # stars            | 3 |
 
 ## Links

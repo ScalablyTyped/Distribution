@@ -1,6 +1,7 @@
 
 # Scala.js typings for is-my-json-valid
 
+Typings are for version 2.20.5
 
 ## Library description:
 A [JSONSchema](https://json-schema.org/) validator that uses code generation to be extremely fast.
@@ -9,9 +10,9 @@ A [JSONSchema](https://json-schema.org/) validator that uses code generation to 
 | ------------------ | :-------------: |
 | Full name          | is-my-json-valid |
 | Keywords           | json, schema, orderly, jsonschema |
-| # releases         | 6 |
-| # dependents       | 197 |
-| # downloads        | 93852129 |
+| # releases         | 7 |
+| # dependents       | 202 |
+| # downloads        | 79892391 |
 | # stars            | 24 |
 
 ## Links
@@ -23,7 +24,7 @@ A [JSONSchema](https://json-schema.org/) validator that uses code generation to 
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

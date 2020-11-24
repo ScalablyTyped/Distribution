@@ -2,14 +2,14 @@ package typings.sharepoint.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ListTemplateType extends js.Object
-
 @JSGlobal("SP.ListTemplateType")
 @js.native
 object ListTemplateType extends js.Object {
+  
   @js.native
   sealed trait accessRequest extends ListTemplateType
   
@@ -189,6 +189,4 @@ object ListTemplateType extends js.Object {
   
   @js.native
   sealed trait xMLForm extends ListTemplateType
-  
 }
-

@@ -1,17 +1,19 @@
 package typings.awsSdk.budgetsMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Budgets extends Service {
+  
   @JSName("config")
   var config_Budgets: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a budget and, if included, notifications and subscribers.   Only one of BudgetLimit or PlannedBudgetLimits can be present in the syntax at one time. Use the syntax that matches your case. The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
     */
@@ -25,6 +27,21 @@ trait Budgets extends Service {
     params: CreateBudgetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateBudgetResponse, Unit]
   ): Request[CreateBudgetResponse, AWSError] = js.native
+  
+  /**
+    *  Creates a budget action. 
+    */
+  def createBudgetAction(): Request[CreateBudgetActionResponse, AWSError] = js.native
+  def createBudgetAction(callback: js.Function2[/* err */ AWSError, /* data */ CreateBudgetActionResponse, Unit]): Request[CreateBudgetActionResponse, AWSError] = js.native
+  /**
+    *  Creates a budget action. 
+    */
+  def createBudgetAction(params: CreateBudgetActionRequest): Request[CreateBudgetActionResponse, AWSError] = js.native
+  def createBudgetAction(
+    params: CreateBudgetActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateBudgetActionResponse, Unit]
+  ): Request[CreateBudgetActionResponse, AWSError] = js.native
+  
   /**
     * Creates a notification. You must create the budget before you create the associated notification.
     */
@@ -38,6 +55,7 @@ trait Budgets extends Service {
     params: CreateNotificationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateNotificationResponse, Unit]
   ): Request[CreateNotificationResponse, AWSError] = js.native
+  
   /**
     * Creates a subscriber. You must create the associated budget and notification before you create the subscriber.
     */
@@ -51,6 +69,7 @@ trait Budgets extends Service {
     params: CreateSubscriberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSubscriberResponse, Unit]
   ): Request[CreateSubscriberResponse, AWSError] = js.native
+  
   /**
     * Deletes a budget. You can delete your budget at any time.  Deleting a budget also deletes the notifications and subscribers that are associated with that budget. 
     */
@@ -64,6 +83,21 @@ trait Budgets extends Service {
     params: DeleteBudgetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteBudgetResponse, Unit]
   ): Request[DeleteBudgetResponse, AWSError] = js.native
+  
+  /**
+    *  Deletes a budget action. 
+    */
+  def deleteBudgetAction(): Request[DeleteBudgetActionResponse, AWSError] = js.native
+  def deleteBudgetAction(callback: js.Function2[/* err */ AWSError, /* data */ DeleteBudgetActionResponse, Unit]): Request[DeleteBudgetActionResponse, AWSError] = js.native
+  /**
+    *  Deletes a budget action. 
+    */
+  def deleteBudgetAction(params: DeleteBudgetActionRequest): Request[DeleteBudgetActionResponse, AWSError] = js.native
+  def deleteBudgetAction(
+    params: DeleteBudgetActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteBudgetActionResponse, Unit]
+  ): Request[DeleteBudgetActionResponse, AWSError] = js.native
+  
   /**
     * Deletes a notification.  Deleting a notification also deletes the subscribers that are associated with the notification. 
     */
@@ -77,6 +111,7 @@ trait Budgets extends Service {
     params: DeleteNotificationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteNotificationResponse, Unit]
   ): Request[DeleteNotificationResponse, AWSError] = js.native
+  
   /**
     * Deletes a subscriber.  Deleting the last subscriber to a notification also deletes the notification. 
     */
@@ -90,6 +125,7 @@ trait Budgets extends Service {
     params: DeleteSubscriberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteSubscriberResponse, Unit]
   ): Request[DeleteSubscriberResponse, AWSError] = js.native
+  
   /**
     * Describes a budget.  The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
     */
@@ -103,6 +139,67 @@ trait Budgets extends Service {
     params: DescribeBudgetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeBudgetResponse, Unit]
   ): Request[DescribeBudgetResponse, AWSError] = js.native
+  
+  /**
+    *  Describes a budget action detail. 
+    */
+  def describeBudgetAction(): Request[DescribeBudgetActionResponse, AWSError] = js.native
+  def describeBudgetAction(callback: js.Function2[/* err */ AWSError, /* data */ DescribeBudgetActionResponse, Unit]): Request[DescribeBudgetActionResponse, AWSError] = js.native
+  /**
+    *  Describes a budget action detail. 
+    */
+  def describeBudgetAction(params: DescribeBudgetActionRequest): Request[DescribeBudgetActionResponse, AWSError] = js.native
+  def describeBudgetAction(
+    params: DescribeBudgetActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBudgetActionResponse, Unit]
+  ): Request[DescribeBudgetActionResponse, AWSError] = js.native
+  
+  /**
+    *  Describes a budget action history detail. 
+    */
+  def describeBudgetActionHistories(): Request[DescribeBudgetActionHistoriesResponse, AWSError] = js.native
+  def describeBudgetActionHistories(callback: js.Function2[/* err */ AWSError, /* data */ DescribeBudgetActionHistoriesResponse, Unit]): Request[DescribeBudgetActionHistoriesResponse, AWSError] = js.native
+  /**
+    *  Describes a budget action history detail. 
+    */
+  def describeBudgetActionHistories(params: DescribeBudgetActionHistoriesRequest): Request[DescribeBudgetActionHistoriesResponse, AWSError] = js.native
+  def describeBudgetActionHistories(
+    params: DescribeBudgetActionHistoriesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBudgetActionHistoriesResponse, Unit]
+  ): Request[DescribeBudgetActionHistoriesResponse, AWSError] = js.native
+  
+  /**
+    *  Describes all of the budget actions for an account. 
+    */
+  def describeBudgetActionsForAccount(): Request[DescribeBudgetActionsForAccountResponse, AWSError] = js.native
+  def describeBudgetActionsForAccount(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBudgetActionsForAccountResponse, Unit]
+  ): Request[DescribeBudgetActionsForAccountResponse, AWSError] = js.native
+  /**
+    *  Describes all of the budget actions for an account. 
+    */
+  def describeBudgetActionsForAccount(params: DescribeBudgetActionsForAccountRequest): Request[DescribeBudgetActionsForAccountResponse, AWSError] = js.native
+  def describeBudgetActionsForAccount(
+    params: DescribeBudgetActionsForAccountRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBudgetActionsForAccountResponse, Unit]
+  ): Request[DescribeBudgetActionsForAccountResponse, AWSError] = js.native
+  
+  /**
+    *  Describes all of the budget actions for a budget. 
+    */
+  def describeBudgetActionsForBudget(): Request[DescribeBudgetActionsForBudgetResponse, AWSError] = js.native
+  def describeBudgetActionsForBudget(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBudgetActionsForBudgetResponse, Unit]
+  ): Request[DescribeBudgetActionsForBudgetResponse, AWSError] = js.native
+  /**
+    *  Describes all of the budget actions for a budget. 
+    */
+  def describeBudgetActionsForBudget(params: DescribeBudgetActionsForBudgetRequest): Request[DescribeBudgetActionsForBudgetResponse, AWSError] = js.native
+  def describeBudgetActionsForBudget(
+    params: DescribeBudgetActionsForBudgetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBudgetActionsForBudgetResponse, Unit]
+  ): Request[DescribeBudgetActionsForBudgetResponse, AWSError] = js.native
+  
   /**
     * Describes the history for DAILY, MONTHLY, and QUARTERLY budgets. Budget history isn't available for ANNUAL budgets.
     */
@@ -118,6 +215,7 @@ trait Budgets extends Service {
     params: DescribeBudgetPerformanceHistoryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeBudgetPerformanceHistoryResponse, Unit]
   ): Request[DescribeBudgetPerformanceHistoryResponse, AWSError] = js.native
+  
   /**
     * Lists the budgets that are associated with an account.  The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
     */
@@ -131,6 +229,7 @@ trait Budgets extends Service {
     params: DescribeBudgetsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeBudgetsResponse, Unit]
   ): Request[DescribeBudgetsResponse, AWSError] = js.native
+  
   /**
     * Lists the notifications that are associated with a budget.
     */
@@ -146,6 +245,7 @@ trait Budgets extends Service {
     params: DescribeNotificationsForBudgetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeNotificationsForBudgetResponse, Unit]
   ): Request[DescribeNotificationsForBudgetResponse, AWSError] = js.native
+  
   /**
     * Lists the subscribers that are associated with a notification.
     */
@@ -161,6 +261,21 @@ trait Budgets extends Service {
     params: DescribeSubscribersForNotificationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSubscribersForNotificationResponse, Unit]
   ): Request[DescribeSubscribersForNotificationResponse, AWSError] = js.native
+  
+  /**
+    *  Executes a budget action. 
+    */
+  def executeBudgetAction(): Request[ExecuteBudgetActionResponse, AWSError] = js.native
+  def executeBudgetAction(callback: js.Function2[/* err */ AWSError, /* data */ ExecuteBudgetActionResponse, Unit]): Request[ExecuteBudgetActionResponse, AWSError] = js.native
+  /**
+    *  Executes a budget action. 
+    */
+  def executeBudgetAction(params: ExecuteBudgetActionRequest): Request[ExecuteBudgetActionResponse, AWSError] = js.native
+  def executeBudgetAction(
+    params: ExecuteBudgetActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ExecuteBudgetActionResponse, Unit]
+  ): Request[ExecuteBudgetActionResponse, AWSError] = js.native
+  
   /**
     * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When you modify a budget, the calculatedSpend drops to zero until AWS has new usage data to use for forecasting.  Only one of BudgetLimit or PlannedBudgetLimits can be present in the syntax at one time. Use the syntax that matches your case. The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
     */
@@ -174,6 +289,21 @@ trait Budgets extends Service {
     params: UpdateBudgetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateBudgetResponse, Unit]
   ): Request[UpdateBudgetResponse, AWSError] = js.native
+  
+  /**
+    *  Updates a budget action. 
+    */
+  def updateBudgetAction(): Request[UpdateBudgetActionResponse, AWSError] = js.native
+  def updateBudgetAction(callback: js.Function2[/* err */ AWSError, /* data */ UpdateBudgetActionResponse, Unit]): Request[UpdateBudgetActionResponse, AWSError] = js.native
+  /**
+    *  Updates a budget action. 
+    */
+  def updateBudgetAction(params: UpdateBudgetActionRequest): Request[UpdateBudgetActionResponse, AWSError] = js.native
+  def updateBudgetAction(
+    params: UpdateBudgetActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateBudgetActionResponse, Unit]
+  ): Request[UpdateBudgetActionResponse, AWSError] = js.native
+  
   /**
     * Updates a notification.
     */
@@ -187,6 +317,7 @@ trait Budgets extends Service {
     params: UpdateNotificationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateNotificationResponse, Unit]
   ): Request[UpdateNotificationResponse, AWSError] = js.native
+  
   /**
     * Updates a subscriber.
     */
@@ -201,4 +332,3 @@ trait Budgets extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateSubscriberResponse, Unit]
   ): Request[UpdateSubscriberResponse, AWSError] = js.native
 }
-

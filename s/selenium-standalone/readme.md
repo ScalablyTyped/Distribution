@@ -10,9 +10,9 @@ installs a `selenium-standalone` command line to install and start a standalone 
 | ------------------ | :-------------: |
 | Full name          | selenium-standalone |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 111 |
-| # downloads        | 11571361 |
+| # releases         | 8 |
+| # dependents       | 119 |
+| # downloads        | 17770476 |
 | # stars            | 43 |
 
 ## Links

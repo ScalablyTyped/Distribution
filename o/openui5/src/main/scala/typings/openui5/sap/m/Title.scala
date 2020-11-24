@@ -5,10 +5,11 @@ import typings.openui5.sap.ui.core.TextAlign
 import typings.openui5.sap.ui.core.TitleLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Title extends Control {
+  
   /**
     * Gets current value of property <code>level</code>.Defines the semantic level of the title.This
     * information is e.g. used by assistive technologies like screenreaders to create a hierarchical site
@@ -18,12 +19,14 @@ trait Title extends Control {
     * @returns Value of property <code>level</code>
     */
   def getLevel(): TitleLevel = js.native
+  
   /**
     * Gets current value of property <code>text</code>.Defines the text which should be displayed as a
     * title.
     * @returns Value of property <code>text</code>
     */
   def getText(): String = js.native
+  
   /**
     * Gets current value of property <code>textAlign</code>.Defines the alignment of the text within the
     * title. <b>Note:</b> This property only has an effect if the overall width of the title control
@@ -31,11 +34,13 @@ trait Title extends Control {
     * @returns Value of property <code>textAlign</code>
     */
   def getTextAlign(): TextAlign = js.native
+  
   /**
     * ID of the element which is the current target of the association <code>title</code>, or
     * <code>null</code>.
     */
   def getTitle(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>titleStyle</code>.Defines the style of the title.When using the
     * <code>Auto</code> styling, the appearance of the title depends on the current position of the title
@@ -45,11 +50,13 @@ trait Title extends Control {
     * @returns Value of property <code>titleStyle</code>
     */
   def getTitleStyle(): TitleLevel = js.native
+  
   /**
     * Gets current value of property <code>width</code>.Defines the width of the title.
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Sets a new value for property <code>level</code>.Defines the semantic level of the title.This
     * information is e.g. used by assistive technologies like screenreaders to create a hierarchical site
@@ -61,6 +68,7 @@ trait Title extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setLevel(sLevel: TitleLevel): Title = js.native
+  
   /**
     * Sets a new value for property <code>text</code>.Defines the text which should be displayed as a
     * title.When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -69,6 +77,7 @@ trait Title extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setText(sText: String): Title = js.native
+  
   /**
     * Sets a new value for property <code>textAlign</code>.Defines the alignment of the text within the
     * title. <b>Note:</b> This property only has an effect if the overall width of the title control
@@ -79,6 +88,7 @@ trait Title extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTextAlign(sTextAlign: TextAlign): Title = js.native
+  
   /**
     * Sets the associated <code>title</code>.
     * @param oTitle ID of an element which becomes the new target of this title association;
@@ -87,6 +97,7 @@ trait Title extends Control {
     */
   def setTitle(oTitle: js.Any): Title = js.native
   def setTitle(oTitle: typings.openui5.sap.ui.core.Title): Title = js.native
+  
   /**
     * Sets a new value for property <code>titleStyle</code>.Defines the style of the title.When using the
     * <code>Auto</code> styling, the appearance of the title depends on the current position of the title
@@ -98,6 +109,7 @@ trait Title extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTitleStyle(sTitleStyle: TitleLevel): Title = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.Defines the width of the title.When called with a
     * value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -107,4 +119,3 @@ trait Title extends Control {
     */
   def setWidth(sWidth: js.Any): Title = js.native
 }
-

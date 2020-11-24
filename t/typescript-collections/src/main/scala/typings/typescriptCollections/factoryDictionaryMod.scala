@@ -2,20 +2,23 @@ package typings.typescriptCollections
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-collections/dist/lib/FactoryDictionary", JSImport.Namespace)
 @js.native
 object factoryDictionaryMod extends js.Object {
+  
   @js.native
   trait FactoryDictionary[K, V]
     extends typings.typescriptCollections.dictionaryMod.default[K, V] {
+    
     /**
       * Factory to create default values.
       * @type {function(Object):string}
       * @protected
       */
     /* protected */ def defaultFactoryFunction(): V = js.native
+    
     /**
       * Associates the specified default value with the specified key in this dictionary,
       * if it didn't contain the key yet. If the key existed, the existing value will be used.
@@ -61,6 +64,4 @@ object factoryDictionaryMod extends js.Object {
     def this(defaultFactoryFunction: js.Function0[V]) = this()
     def this(defaultFactoryFunction: js.Function0[V], toStrFunction: js.Function1[/* key */ K, String]) = this()
   }
-  
 }
-

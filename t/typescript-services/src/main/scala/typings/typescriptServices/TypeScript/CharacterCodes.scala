@@ -2,14 +2,14 @@ package typings.typescriptServices.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CharacterCodes extends js.Object
-
 @JSGlobal("TypeScript.CharacterCodes")
 @js.native
 object CharacterCodes extends js.Object {
+  
   @js.native
   sealed trait $ extends CharacterCodes
   
@@ -282,6 +282,4 @@ object CharacterCodes extends js.Object {
   
   @js.native
   sealed trait zeroWidthSpace extends CharacterCodes
-  
 }
-

@@ -2,7 +2,7 @@ package typings.babylonjs.gamepadMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Gamepads/gamepad", "Gamepad")
 @js.native
@@ -59,8 +59,75 @@ class Gamepad protected () extends js.Object {
     * The browser gamepad
     */
   browserGamepad: js.Any,
+    leftStickX: js.UndefOr[scala.Nothing],
+    leftStickY: Double
+  ) = this()
+  def this(
+    /**
+    * The id of the gamepad
+    */
+  id: String,
+    /**
+    * The index of the gamepad
+    */
+  index: Double,
+    /**
+    * The browser gamepad
+    */
+  browserGamepad: js.Any,
     leftStickX: Double,
     leftStickY: Double
+  ) = this()
+  def this(
+    /**
+    * The id of the gamepad
+    */
+  id: String,
+    /**
+    * The index of the gamepad
+    */
+  index: Double,
+    /**
+    * The browser gamepad
+    */
+  browserGamepad: js.Any,
+    leftStickX: js.UndefOr[scala.Nothing],
+    leftStickY: js.UndefOr[scala.Nothing],
+    rightStickX: Double
+  ) = this()
+  def this(
+    /**
+    * The id of the gamepad
+    */
+  id: String,
+    /**
+    * The index of the gamepad
+    */
+  index: Double,
+    /**
+    * The browser gamepad
+    */
+  browserGamepad: js.Any,
+    leftStickX: js.UndefOr[scala.Nothing],
+    leftStickY: Double,
+    rightStickX: Double
+  ) = this()
+  def this(
+    /**
+    * The id of the gamepad
+    */
+  id: String,
+    /**
+    * The index of the gamepad
+    */
+  index: Double,
+    /**
+    * The browser gamepad
+    */
+  browserGamepad: js.Any,
+    leftStickX: Double,
+    leftStickY: js.UndefOr[scala.Nothing],
+    rightStickX: Double
   ) = this()
   def this(
     /**
@@ -92,55 +159,193 @@ class Gamepad protected () extends js.Object {
     * The browser gamepad
     */
   browserGamepad: js.Any,
+    leftStickX: js.UndefOr[scala.Nothing],
+    leftStickY: js.UndefOr[scala.Nothing],
+    rightStickX: js.UndefOr[scala.Nothing],
+    rightStickY: Double
+  ) = this()
+  def this(
+    /**
+    * The id of the gamepad
+    */
+  id: String,
+    /**
+    * The index of the gamepad
+    */
+  index: Double,
+    /**
+    * The browser gamepad
+    */
+  browserGamepad: js.Any,
+    leftStickX: js.UndefOr[scala.Nothing],
+    leftStickY: js.UndefOr[scala.Nothing],
+    rightStickX: Double,
+    rightStickY: Double
+  ) = this()
+  def this(
+    /**
+    * The id of the gamepad
+    */
+  id: String,
+    /**
+    * The index of the gamepad
+    */
+  index: Double,
+    /**
+    * The browser gamepad
+    */
+  browserGamepad: js.Any,
+    leftStickX: js.UndefOr[scala.Nothing],
+    leftStickY: Double,
+    rightStickX: js.UndefOr[scala.Nothing],
+    rightStickY: Double
+  ) = this()
+  def this(
+    /**
+    * The id of the gamepad
+    */
+  id: String,
+    /**
+    * The index of the gamepad
+    */
+  index: Double,
+    /**
+    * The browser gamepad
+    */
+  browserGamepad: js.Any,
+    leftStickX: js.UndefOr[scala.Nothing],
+    leftStickY: Double,
+    rightStickX: Double,
+    rightStickY: Double
+  ) = this()
+  def this(
+    /**
+    * The id of the gamepad
+    */
+  id: String,
+    /**
+    * The index of the gamepad
+    */
+  index: Double,
+    /**
+    * The browser gamepad
+    */
+  browserGamepad: js.Any,
+    leftStickX: Double,
+    leftStickY: js.UndefOr[scala.Nothing],
+    rightStickX: js.UndefOr[scala.Nothing],
+    rightStickY: Double
+  ) = this()
+  def this(
+    /**
+    * The id of the gamepad
+    */
+  id: String,
+    /**
+    * The index of the gamepad
+    */
+  index: Double,
+    /**
+    * The browser gamepad
+    */
+  browserGamepad: js.Any,
+    leftStickX: Double,
+    leftStickY: js.UndefOr[scala.Nothing],
+    rightStickX: Double,
+    rightStickY: Double
+  ) = this()
+  def this(
+    /**
+    * The id of the gamepad
+    */
+  id: String,
+    /**
+    * The index of the gamepad
+    */
+  index: Double,
+    /**
+    * The browser gamepad
+    */
+  browserGamepad: js.Any,
+    leftStickX: Double,
+    leftStickY: Double,
+    rightStickX: js.UndefOr[scala.Nothing],
+    rightStickY: Double
+  ) = this()
+  def this(
+    /**
+    * The id of the gamepad
+    */
+  id: String,
+    /**
+    * The index of the gamepad
+    */
+  index: Double,
+    /**
+    * The browser gamepad
+    */
+  browserGamepad: js.Any,
     leftStickX: Double,
     leftStickY: Double,
     rightStickX: Double,
     rightStickY: Double
   ) = this()
+  
   /**
     * Specifies whether the left control stick should be Y-inverted
     */
   var _invertLeftStickY: Boolean = js.native
+  
   /** @hidden */
   var _isConnected: Boolean = js.native
+  
   var _leftStick: js.Any = js.native
+  
   var _leftStickAxisX: js.Any = js.native
+  
   var _leftStickAxisY: js.Any = js.native
+  
   /**
     * Triggered when the left control stick has been changed
     */
   var _onleftstickchanged: js.Any = js.native
+  
   /**
     * Triggered when the right control stick has been changed
     */
   var _onrightstickchanged: js.Any = js.native
+  
   var _rightStick: js.Any = js.native
+  
   var _rightStickAxisX: js.Any = js.native
+  
   var _rightStickAxisY: js.Any = js.native
+  
   /**
     * The browser gamepad
     */
   var browserGamepad: js.Any = js.native
-  /**
-    * The id of the gamepad
-    */
-  var id: String = js.native
-  /**
-    * The index of the gamepad
-    */
-  var index: Double = js.native
-  /**
-    * Specifies what type of gamepad this represents
-    */
-  var `type`: Double = js.native
+  
   /**
     * Disposes the gamepad
     */
   def dispose(): Unit = js.native
+  
+  /**
+    * The id of the gamepad
+    */
+  var id: String = js.native
+  
+  /**
+    * The index of the gamepad
+    */
+  var index: Double = js.native
+  
   /**
     * Specifies if the gamepad has been connected
     */
   def isConnected: Boolean = js.native
+  
   /**
     * Gets the left joystick
     */
@@ -148,17 +353,20 @@ class Gamepad protected () extends js.Object {
   /**
     * Sets the left joystick values
     */
-  def leftStick(newValues: StickValues): js.Any = js.native
+  def leftStick_=(newValues: StickValues): Unit = js.native
+  
   /**
     * Callback triggered when the left joystick has changed
     * @param callback
     */
   def onleftstickchanged(callback: js.Function1[/* values */ StickValues, Unit]): Unit = js.native
+  
   /**
     * Callback triggered when the right joystick has changed
     * @param callback
     */
   def onrightstickchanged(callback: js.Function1[/* values */ StickValues, Unit]): Unit = js.native
+  
   /**
     * Gets the right joystick
     */
@@ -166,36 +374,45 @@ class Gamepad protected () extends js.Object {
   /**
     * Sets the right joystick value
     */
-  def rightStick(newValues: StickValues): js.Any = js.native
+  def rightStick_=(newValues: StickValues): Unit = js.native
+  
+  /**
+    * Specifies what type of gamepad this represents
+    */
+  var `type`: Double = js.native
+  
   /**
     * Updates the gamepad joystick positions
     */
   def update(): Unit = js.native
 }
-
 /* static members */
 @JSImport("babylonjs/Gamepads/gamepad", "Gamepad")
 @js.native
 object Gamepad extends js.Object {
+  
   /**
     * Represents an Dual Shock controller
     */
   var DUALSHOCK: Double = js.native
+  
   /**
     * Represents a gamepad controller
     */
   var GAMEPAD: Double = js.native
+  
   /**
     * Represents a generic controller
     */
   var GENERIC: Double = js.native
+  
   /**
     * Represents a pose-enabled controller
     */
   var POSE_ENABLED: Double = js.native
+  
   /**
     * Represents an XBox controller
     */
   var XBOX: Double = js.native
 }
-

@@ -12,7 +12,7 @@ Karma reporter that shows coverage for original non transpiled code (TypeScript,
 | Keywords           | karma, coverage, reporter, typescript, babel, es6, es7, istanbul, map, remap, sourcemap, webpack |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 1200550 |
+| # downloads        | 1108612 |
 | # stars            | 2 |
 
 ## Links

@@ -3,20 +3,22 @@ package typings.std.global
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SVGGradientElement")
 @js.native
 class SVGGradientElement ()
   extends typings.std.SVGGradientElement
-
 @JSGlobal("SVGGradientElement")
 @js.native
 object SVGGradientElement
   extends Instantiable0[typings.std.SVGGradientElement] {
+  
   val SVG_SPREADMETHOD_PAD: Double = js.native
+  
   val SVG_SPREADMETHOD_REFLECT: Double = js.native
+  
   val SVG_SPREADMETHOD_REPEAT: Double = js.native
+  
   val SVG_SPREADMETHOD_UNKNOWN: Double = js.native
 }
-

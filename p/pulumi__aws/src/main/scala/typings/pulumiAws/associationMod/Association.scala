@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/licensemanager/association", "Association")
 @js.native
@@ -21,20 +21,22 @@ class Association protected () extends CustomResource {
     */
   def this(name: String, args: AssociationArgs) = this()
   def this(name: String, args: AssociationArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * ARN of the license configuration.
     */
   val licenseConfigurationArn: Output_[String] = js.native
+  
   /**
     * ARN of the resource associated with the license configuration.
     */
   val resourceArn: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/licensemanager/association", "Association")
 @js.native
 object Association extends js.Object {
+  
   /**
     * Get an existing Association resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -48,10 +50,10 @@ object Association extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Association = js.native
   def get(name: String, id: Input[ID], state: AssociationState): Association = js.native
   def get(name: String, id: Input[ID], state: AssociationState, opts: CustomResourceOptions): Association = js.native
+  
   /**
     * Returns true if the given object is an instance of Association.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/licensemanager/association.Association */ Boolean = js.native
 }
-

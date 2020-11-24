@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha", "healthcare_v1alpha.Resource$Projects$Locations$Datasets$Hl7v2stores")
 @js.native
 class ResourceProjectsLocationsDatasetsHl7v2stores protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var messages: ResourceProjectsLocationsDatasetsHl7v2storesMessages = js.native
+  
   /**
     * healthcare.projects.locations.datasets.hl7V2Stores.create
     * @desc Creates a new HL7v2 store within the parent dataset.
@@ -47,6 +48,7 @@ class ResourceProjectsLocationsDatasetsHl7v2stores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHl7V2Store]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.hl7V2Stores.delete
     * @desc Deletes the specified HL7v2 store and removes all messages that are
@@ -79,6 +81,7 @@ class ResourceProjectsLocationsDatasetsHl7v2stores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.hl7V2Stores.get
     * @desc Gets the specified HL7v2 store.
@@ -110,6 +113,7 @@ class ResourceProjectsLocationsDatasetsHl7v2stores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHl7V2Store]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.hl7V2Stores.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -142,6 +146,7 @@ class ResourceProjectsLocationsDatasetsHl7v2stores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.hl7V2Stores.list
     * @desc Lists the HL7v2 stores in the given dataset.
@@ -175,6 +180,9 @@ class ResourceProjectsLocationsDatasetsHl7v2stores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListHl7V2StoresResponse]
   ): Unit = js.native
+  
+  var messages: ResourceProjectsLocationsDatasetsHl7v2storesMessages = js.native
+  
   /**
     * healthcare.projects.locations.datasets.hl7V2Stores.patch
     * @desc Updates the HL7v2 store.
@@ -208,6 +216,7 @@ class ResourceProjectsLocationsDatasetsHl7v2stores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHl7V2Store]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.hl7V2Stores.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -241,6 +250,7 @@ class ResourceProjectsLocationsDatasetsHl7v2stores protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.hl7V2Stores.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -282,4 +292,3 @@ class ResourceProjectsLocationsDatasetsHl7v2stores protected () extends js.Objec
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

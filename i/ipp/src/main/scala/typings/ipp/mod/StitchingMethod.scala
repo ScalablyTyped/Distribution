@@ -2,7 +2,7 @@ package typings.ipp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.ipp.ippStrings.auto
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.ipp.ippStrings.wire
 */
 trait StitchingMethod extends js.Object
-
 object StitchingMethod {
+  
   @scala.inline
   def auto: typings.ipp.ippStrings.auto = "auto".asInstanceOf[typings.ipp.ippStrings.auto]
+  
   @scala.inline
   def crimp: typings.ipp.ippStrings.crimp = "crimp".asInstanceOf[typings.ipp.ippStrings.crimp]
+  
   @scala.inline
   def wire: typings.ipp.ippStrings.wire = "wire".asInstanceOf[typings.ipp.ippStrings.wire]
 }
-

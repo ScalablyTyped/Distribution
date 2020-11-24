@@ -4,10 +4,11 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VerticalDividerProps extends HTMLAttributes[HTMLDivElement] {
+  
   /**
     * The max height for the vertical divider. This number **must** be greater
     * than 0 to work correctly.
@@ -18,29 +19,33 @@ trait VerticalDividerProps extends HTMLAttributes[HTMLDivElement] {
     */
   var maxHeight: js.UndefOr[Double] = js.native
 }
-
 object VerticalDividerProps {
+  
   @scala.inline
   def apply(): VerticalDividerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VerticalDividerProps]
   }
+  
   @scala.inline
   implicit class VerticalDividerPropsOps[Self <: VerticalDividerProps] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
   }
-  
 }
-

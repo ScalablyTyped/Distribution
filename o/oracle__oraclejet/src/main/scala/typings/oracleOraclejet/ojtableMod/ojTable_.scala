@@ -20,12 +20,6 @@ import typings.oracleOraclejet.ojtableMod.ojTable.CurrentRow
 import typings.oracleOraclejet.ojtableMod.ojTable.RowRendererContext
 import typings.oracleOraclejet.ojtableMod.ojTable.RowSelectionEnd
 import typings.oracleOraclejet.ojtableMod.ojTable.RowSelectionStart
-import typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateEnd
-import typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateStart
-import typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeCurrentRow
-import typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEdit
-import typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEditEnd
-import typings.oracleOraclejet.ojtableMod.ojTable.ojSort
 import typings.oracleOraclejet.oracleOraclejetStrings.accessibility
 import typings.oracleOraclejet.oracleOraclejetStrings.accessibilityChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.as
@@ -54,6 +48,12 @@ import typings.oracleOraclejet.oracleOraclejetStrings.horizontalGridVisibleChang
 import typings.oracleOraclejet.oracleOraclejetStrings.list
 import typings.oracleOraclejet.oracleOraclejetStrings.loadMoreOnScroll
 import typings.oracleOraclejet.oracleOraclejetStrings.none
+import typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateEnd
+import typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateStart
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCurrentRow
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeRowEdit
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeRowEditEnd
+import typings.oracleOraclejet.oracleOraclejetStrings.ojSort
 import typings.oracleOraclejet.oracleOraclejetStrings.rowEdit
 import typings.oracleOraclejet.oracleOraclejetStrings.rowRenderer
 import typings.oracleOraclejet.oracleOraclejetStrings.rowRendererChanged
@@ -76,75 +76,13 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
+  
   var accessibility: RowHeader = js.native
-  var as: String = js.native
-  var columns: (js.Array[Field[K, D]]) | Null = js.native
-  var columnsDefault: FooterClassName[K, D] = js.native
-  var currentRow: CurrentRow[K] | Null = js.native
-  var data: (DataProvider[K, D]) | Null = js.native
-  var display: list | grid = js.native
-  var dnd: DropReorder[K, D] = js.native
-  var editMode: none | rowEdit = js.native
-  val firstSelectedRow: js.Object = js.native
-  var horizontalGridVisible: auto | enabled | disabled = js.native
-  var onAccessibilityChanged: (js.Function1[/* event */ JetElementCustomEvent[RowHeader], _]) | Null = js.native
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onColumnsChanged: (js.Function1[/* event */ JetElementCustomEvent[(js.Array[Field[K, D]]) | Null], _]) | Null = js.native
-  var onColumnsDefaultChanged: (js.Function1[/* event */ JetElementCustomEvent[FooterClassName[K, D]], _]) | Null = js.native
-  var onCurrentRowChanged: (js.Function1[/* event */ JetElementCustomEvent[CurrentRow[K] | Null], _]) | Null = js.native
-  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
-  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[list | grid], _]) | Null = js.native
-  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[DropReorder[K, D]], _]) | Null = js.native
-  var onEditModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | rowEdit], _]) | Null = js.native
-  var onFirstSelectedRowChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onHorizontalGridVisibleChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | enabled | disabled], _]) | Null = js.native
-  var onOjAnimateEnd: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
-  var onOjAnimateStart: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
-  var onOjBeforeCurrentRow: (js.Function1[/* event */ ojBeforeCurrentRow[K], _]) | Null = js.native
-  var onOjBeforeRowEdit: (js.Function1[/* event */ ojBeforeRowEdit, _]) | Null = js.native
-  var onOjBeforeRowEditEnd: (js.Function1[/* event */ ojBeforeRowEditEnd, _]) | Null = js.native
-  var onOjSort: (js.Function1[/* event */ ojSort, _]) | Null = js.native
-  var onRowRendererChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      (js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]) | Null
-    ], 
-    _
-  ]) | Null = js.native
-  var onScrollPolicyChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | loadMoreOnScroll], _]) | Null = js.native
-  var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[MaxCount], _]) | Null = js.native
-  var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnKey], _]) | Null = js.native
-  var onSelectionChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      js.Array[
-        (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
-      ]
-    ], 
-    _
-  ]) | Null = js.native
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[`21`], _]) | Null = js.native
-  var onSelectionRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
-  var onVerticalGridVisibleChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | enabled | disabled], _]) | Null = js.native
-  var rowRenderer: (js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]) | Null = js.native
-  var scrollPolicy: auto | loadMoreOnScroll = js.native
-  var scrollPolicyOptions: MaxCount = js.native
-  var scrollPosition: ColumnKey = js.native
-  var selection: js.Array[
-    (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
-  ] = js.native
-  var selectionMode: `21` = js.native
-  var selectionRequired: Boolean = js.native
-  @JSName("translations")
-  var translations_ojTable_ : LabelAccSelectionAffordanceBottom = js.native
-  var verticalGridVisible: auto | enabled | disabled = js.native
+  
   def addEventListener(
     `type`: displayChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[list | grid], _]
@@ -306,68 +244,116 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateEnd(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateEnd,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateEnd, _]
+    `type`: ojAnimateEnd,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateEnd, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateEnd(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateEnd,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateEnd, _],
+    `type`: ojAnimateEnd,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateEnd, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateStart(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateStart,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateStart, _]
+    `type`: ojAnimateStart,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateStart, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateStart(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateStart,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateStart, _],
+    `type`: ojAnimateStart,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateStart, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeCurrentRow(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCurrentRow,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeCurrentRow[K], _]
+    `type`: ojBeforeCurrentRow,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeCurrentRow[K], 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeCurrentRow(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCurrentRow,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeCurrentRow[K], _],
+    `type`: ojBeforeCurrentRow,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeCurrentRow[K], 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeRowEdit(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeRowEdit,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeRowEdit, _]
+    `type`: ojBeforeRowEdit,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEdit, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeRowEdit(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeRowEdit,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeRowEdit, _],
+    `type`: ojBeforeRowEdit,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEdit, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeRowEditEnd(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeRowEditEnd,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeRowEditEnd, _]
+    `type`: ojBeforeRowEditEnd,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEditEnd, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeRowEditEnd(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeRowEditEnd,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeRowEditEnd, _],
+    `type`: ojBeforeRowEditEnd,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEditEnd, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojSort(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojSort,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojSort, _]
+    `type`: ojSort,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojSort, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojSort(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojSort,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojSort, _],
+    `type`: ojSort,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojtableMod.ojTable.ojSort, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -464,8 +450,29 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var as: String = js.native
+  
+  var columns: (js.Array[Field[K, D]]) | Null = js.native
+  
+  var columnsDefault: FooterClassName[K, D] = js.native
+  
+  var currentRow: CurrentRow[K] | Null = js.native
+  
+  var data: (DataProvider[K, D]) | Null = js.native
+  
+  var display: list | grid = js.native
+  
+  var dnd: DropReorder[K, D] = js.native
+  
+  var editMode: none | rowEdit = js.native
+  
+  val firstSelectedRow: js.Object = js.native
+  
   def getContextByNode(node: Element): ColumnIndexKey | IndexSubId = js.native
+  
   def getDataForVisibleRow(rowIndex: Double): (DataIndex[D, K]) | Null = js.native
+  
   @JSName("getProperty")
   def getProperty_accessibility(property: accessibility): RowHeader = js.native
   @JSName("getProperty")
@@ -506,8 +513,96 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   def getProperty_selectionRequired(property: selectionRequired): Boolean = js.native
   @JSName("getProperty")
   def getProperty_verticalGridVisible(property: verticalGridVisible): auto | enabled | disabled = js.native
+  
+  var horizontalGridVisible: auto | enabled | disabled = js.native
+  
+  var onAccessibilityChanged: (js.Function1[/* event */ JetElementCustomEvent[RowHeader], _]) | Null = js.native
+  
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onColumnsChanged: (js.Function1[/* event */ JetElementCustomEvent[(js.Array[Field[K, D]]) | Null], _]) | Null = js.native
+  
+  var onColumnsDefaultChanged: (js.Function1[/* event */ JetElementCustomEvent[FooterClassName[K, D]], _]) | Null = js.native
+  
+  var onCurrentRowChanged: (js.Function1[/* event */ JetElementCustomEvent[CurrentRow[K] | Null], _]) | Null = js.native
+  
+  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
+  
+  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[list | grid], _]) | Null = js.native
+  
+  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[DropReorder[K, D]], _]) | Null = js.native
+  
+  var onEditModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | rowEdit], _]) | Null = js.native
+  
+  var onFirstSelectedRowChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onHorizontalGridVisibleChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | enabled | disabled], _]) | Null = js.native
+  
+  var onOjAnimateEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateEnd, _]) | Null = js.native
+  
+  var onOjAnimateStart: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojAnimateStart, _]) | Null = js.native
+  
+  var onOjBeforeCurrentRow: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeCurrentRow[K], _]) | Null = js.native
+  
+  var onOjBeforeRowEdit: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEdit, _]) | Null = js.native
+  
+  var onOjBeforeRowEditEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojBeforeRowEditEnd, _]) | Null = js.native
+  
+  var onOjSort: (js.Function1[/* event */ typings.oracleOraclejet.ojtableMod.ojTable.ojSort, _]) | Null = js.native
+  
+  var onRowRendererChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      (js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]) | Null
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onScrollPolicyChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | loadMoreOnScroll], _]) | Null = js.native
+  
+  var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[MaxCount], _]) | Null = js.native
+  
+  var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnKey], _]) | Null = js.native
+  
+  var onSelectionChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      js.Array[
+        (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
+      ]
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[`21`], _]) | Null = js.native
+  
+  var onSelectionRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+  
+  var onVerticalGridVisibleChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | enabled | disabled], _]) | Null = js.native
+  
   def refreshRow(rowIdx: Double): js.Promise[Boolean] = js.native
+  
+  var rowRenderer: (js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]) | Null = js.native
+  
+  var scrollPolicy: auto | loadMoreOnScroll = js.native
+  
+  var scrollPolicyOptions: MaxCount = js.native
+  
+  var scrollPosition: ColumnKey = js.native
+  
+  var selection: js.Array[
+    (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
+  ] = js.native
+  
+  var selectionMode: `21` = js.native
+  
+  var selectionRequired: Boolean = js.native
+  
   def setProperties(properties: ojTableSettablePropertiesLenient[K, D]): Unit = js.native
+  
   def setProperty(property: display, value: grid): Unit = js.native
   def setProperty(property: display, value: list): Unit = js.native
   def setProperty(property: editMode, value: none): Unit = js.native
@@ -566,5 +661,9 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   def setProperty_selectionRequired(property: selectionRequired, value: Boolean): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: LabelAccSelectionAffordanceBottom): Unit = js.native
+  
+  @JSName("translations")
+  var translations_ojTable_ : LabelAccSelectionAffordanceBottom = js.native
+  
+  var verticalGridVisible: auto | enabled | disabled = js.native
 }
-

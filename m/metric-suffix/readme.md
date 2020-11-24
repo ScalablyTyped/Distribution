@@ -12,7 +12,7 @@ Display big numbers in short using metric suffixes like kilo (k), Mega(M).
 | Keywords           | metric, suffix, kilo, mega, giga, teta, peta, short |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 9746 |
+| # downloads        | 8161 |
 | # stars            | 1 |
 
 ## Links

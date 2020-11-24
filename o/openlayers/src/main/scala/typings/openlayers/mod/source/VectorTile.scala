@@ -3,7 +3,7 @@ package typings.openlayers.mod.source
 import typings.openlayers.mod.olx.source.VectorTileOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -38,4 +38,3 @@ class VectorTile protected () extends UrlTile {
     */
   def this(options: VectorTileOptions) = this()
 }
-

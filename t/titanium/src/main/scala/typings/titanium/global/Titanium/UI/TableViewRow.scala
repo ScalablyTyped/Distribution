@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A table view row is an individual item in a table, organized into table view sections.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class TableViewRow ()
   extends typings.titanium.Titanium.UI.TableViewRow
-

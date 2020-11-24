@@ -10,9 +10,9 @@ React Kawaii is a library of cute SVG illustrations (react components). Ideal if
 | ------------------ | :-------------: |
 | Full name          | react-kawaii |
 | Keywords           | library, react, component, svg, illustration, kawaii, icon, ui, animation, icons, cute, mbe, cartoons, design |
-| # releases         | 18 |
-| # dependents       | 2 |
-| # downloads        | 47122 |
+| # releases         | 16 |
+| # dependents       | 4 |
+| # downloads        | 45676 |
 | # stars            | 4 |
 
 ## Links

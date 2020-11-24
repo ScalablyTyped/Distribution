@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A BitmapText object will create a line or multiple lines of text using bitmap font.
@@ -31,6 +31,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BitmapText extends Container {
+  
   /**
     * The alignment of the BitmapText object.
     *
@@ -38,6 +39,7 @@ trait BitmapText extends Container {
     * @default 'left'
     */
   var align: String = js.native
+  
   /**
     * The anchor sets the origin point of the text.
     *
@@ -50,30 +52,35 @@ trait BitmapText extends Container {
     * @member {PIXI.Point | number}
     */
   var anchor: Point | Double = js.native
+  
   /**
     * Set to `true` if the BitmapText needs to be redrawn.
     *
     * @member {boolean} PIXI.BitmapText#dirty
     */
   var dirty: Boolean = js.native
+  
   /**
     * The name of the BitmapFont.
     *
     * @member {string}
     */
   var fontName: String = js.native
+  
   /**
     * The size of the font to display.
     *
     * @member {number}
     */
   var fontSize: Double = js.native
+  
   /**
     * Additional space between characters.
     *
     * @member {number}
     */
   var letterSpacing: Double = js.native
+  
   /**
     * The max line height. This is useful when trying to use the total height of the Text,
     * i.e. when trying to vertically align.
@@ -82,6 +89,7 @@ trait BitmapText extends Container {
     * @readonly
     */
   val maxLineHeight: Double = js.native
+  
   /**
     * The max width of this bitmap text in pixels. If the text provided is longer than the
     * value provided, line breaks will be automatically inserted in the last whitespace.
@@ -90,6 +98,7 @@ trait BitmapText extends Container {
     * @member {number}
     */
   var maxWidth: Double = js.native
+  
   /**
     * If true PixiJS will Math.floor() x/y values when rendering, stopping pixel interpolation.
     * Advantages can include sharper image quality (like text) and faster rendering on canvas.
@@ -100,12 +109,14 @@ trait BitmapText extends Container {
     * @default PIXI.settings.ROUND_PIXELS
     */
   var roundPixels: Boolean = js.native
+  
   /**
     * The text of the BitmapText object.
     *
     * @member {string}
     */
   var text: String = js.native
+  
   /**
     * The height of the overall text, different from fontSize,
     * which is defined in the style object.
@@ -114,6 +125,7 @@ trait BitmapText extends Container {
     * @readonly
     */
   val textHeight: Double = js.native
+  
   /**
     * The width of the overall text, different from fontSize,
     * which is defined in the style object.
@@ -122,6 +134,7 @@ trait BitmapText extends Container {
     * @readonly
     */
   val textWidth: Double = js.native
+  
   /**
     * The tint of the BitmapText object.
     *
@@ -129,10 +142,10 @@ trait BitmapText extends Container {
     * @default 0xffffff
     */
   var tint: Double = js.native
+  
   /**
     * Renders text and updates it when needed. This should only be called
     * if the BitmapFont is regenerated.
     */
   def updateText(): Unit = js.native
 }
-

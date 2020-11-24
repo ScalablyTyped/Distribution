@@ -4,7 +4,7 @@ import typings.nwJs.mod.global.NWJSHelpers.CreateMacBuiltinOption
 import typings.nwJs.mod.global.NWJSHelpers.MenuOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Menu: http://docs.nwjs.io/en/latest/References/Menu/ */
 /**
@@ -19,16 +19,14 @@ import scala.scalajs.js.annotation._
   */
 class Menu () extends js.Object {
   def this(option: MenuOption) = this()
-  /**
-    * Get an array that contains all items of a menu. Each item is an instance of MenuItem.
-    */
-  var items: js.Array[MenuItem] = js.native
+  
   /**
     * Append `item` to the tail of the menu.
     *
     * @param item {MenuItem} the item to be appended to the tail of the menu
     */
   def append(item: MenuItem): Unit = js.native
+  
   /**
     * Creates the builtin menus (App, Edit and Window) within the menubar on Mac.
     *
@@ -37,6 +35,7 @@ class Menu () extends js.Object {
     */
   def createMacBuiltin(appname: String): Unit = js.native
   def createMacBuiltin(appname: String, options: CreateMacBuiltinOption): Unit = js.native
+  
   /**
     * Insert the `item` at `i`th position of the menu. The index is started from 0.
     *
@@ -44,6 +43,12 @@ class Menu () extends js.Object {
     * @param i {Integer} the index in the menu list to insert the the item
     */
   def insert(item: MenuItem, i: Double): Unit = js.native
+  
+  /**
+    * Get an array that contains all items of a menu. Each item is an instance of MenuItem.
+    */
+  var items: js.Array[MenuItem] = js.native
+  
   /**
     * Popup the context menu at the anchor in (`x`, `y`) in current window.
     *
@@ -51,12 +56,14 @@ class Menu () extends js.Object {
     * @param y {Integer} the y position of the anchor
     */
   def popup(x: Double, y: Double): Unit = js.native
+  
   /**
     * Remove `item` from the menu.
     *
     * @param item {MenuItem} the item to be removed
     */
   def remove(item: MenuItem): Unit = js.native
+  
   /**
     * Remove the `i`th item form the menu.
     *
@@ -64,4 +71,3 @@ class Menu () extends js.Object {
     */
   def removeAt(i: Double): Unit = js.native
 }
-

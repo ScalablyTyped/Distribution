@@ -2,13 +2,15 @@ package typings.cloner
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cloner", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   object deep extends js.Object {
+    
     /**
       * Will loop over all own keys and deeply copy (copy by value) them to a new object.
       *
@@ -16,6 +18,7 @@ object mod extends js.Object {
       * @param [obj] The object to copy.
       */
     def copy[T](obj: T): T = js.native
+    
     /**
       * Preserves what's already in the target and merges all own keys found in one or more passed sources.
       *
@@ -28,6 +31,7 @@ object mod extends js.Object {
   
   @js.native
   object shallow extends js.Object {
+    
     /**
       * Will loop over all own keys and shallow copy (copy by reference) them to a new object.
       *
@@ -35,6 +39,7 @@ object mod extends js.Object {
       * @param [obj] The object to copy.
       */
     def copy[T](obj: T): T = js.native
+    
     /**
       * Preserves what's already in the target and merges all own keys found in one or more passed sources.
       *
@@ -44,6 +49,4 @@ object mod extends js.Object {
       */
     def merge(target: js.Any, sources: js.Any*): js.Any = js.native
   }
-  
 }
-

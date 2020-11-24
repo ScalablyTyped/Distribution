@@ -2,9 +2,34 @@ package typings.languageTags
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object languageTagsStrings {
+  
+  @scala.inline
+  def extlang: extlang = "extlang".asInstanceOf[extlang]
+  
+  @scala.inline
+  def grandfathered: grandfathered = "grandfathered".asInstanceOf[grandfathered]
+  
+  @scala.inline
+  def language: language = "language".asInstanceOf[language]
+  
+  @scala.inline
+  def redundant: redundant = "redundant".asInstanceOf[redundant]
+  
+  @scala.inline
+  def region: region = "region".asInstanceOf[region]
+  
+  @scala.inline
+  def script: script = "script".asInstanceOf[script]
+  
+  @scala.inline
+  def tag: tag = "tag".asInstanceOf[tag]
+  
+  @scala.inline
+  def variant: variant = "variant".asInstanceOf[variant]
+  
   @js.native
   sealed trait extlang extends js.Object
   
@@ -28,22 +53,4 @@ object languageTagsStrings {
   
   @js.native
   sealed trait variant extends js.Object
-  
-  @scala.inline
-  def extlang: extlang = "extlang".asInstanceOf[extlang]
-  @scala.inline
-  def grandfathered: grandfathered = "grandfathered".asInstanceOf[grandfathered]
-  @scala.inline
-  def language: language = "language".asInstanceOf[language]
-  @scala.inline
-  def redundant: redundant = "redundant".asInstanceOf[redundant]
-  @scala.inline
-  def region: region = "region".asInstanceOf[region]
-  @scala.inline
-  def script: script = "script".asInstanceOf[script]
-  @scala.inline
-  def tag: tag = "tag".asInstanceOf[tag]
-  @scala.inline
-  def variant: variant = "variant".asInstanceOf[variant]
 }
-

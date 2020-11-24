@@ -8,7 +8,7 @@ import typings.activexAdodb.activexAdodbNumbers.`4`
 import typings.activexAdodb.activexAdodbNumbers.`8`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexAdodb.activexAdodbNumbers.`8`
@@ -19,19 +19,23 @@ import scala.scalajs.js.annotation._
   - typings.activexAdodb.activexAdodbNumbers.`2`
 */
 trait SeekEnum extends js.Object
-
 object SeekEnum {
+  
   @scala.inline
   def adSeekAfter: `8` = 8.asInstanceOf[`8`]
+  
   @scala.inline
   def adSeekAfterEQ: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def adSeekBefore: `32` = 32.asInstanceOf[`32`]
+  
   @scala.inline
   def adSeekBeforeEQ: `16` = 16.asInstanceOf[`16`]
+  
   @scala.inline
   def adSeekFirstEQ: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def adSeekLastEQ: `2` = 2.asInstanceOf[`2`]
 }
-

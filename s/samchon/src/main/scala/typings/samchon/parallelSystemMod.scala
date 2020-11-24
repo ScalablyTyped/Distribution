@@ -8,11 +8,12 @@ import typings.samchon.parallelSystemArrayMod.ParallelSystemArray
 import typings.sxml.mod.XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/parallel/ParallelSystem", JSImport.Namespace)
 @js.native
 object parallelSystemMod extends js.Object {
+  
   @js.native
   abstract class ParallelSystem protected () extends ExternalSystem {
     /**
@@ -28,42 +29,27 @@ object parallelSystemMod extends js.Object {
       * @param communicator A communicator communicates with remote, the external system.
       */
     def this(systemArray: ParallelSystemArray[ParallelSystem], communicator: IClientDriver) = this()
+    
     /**
       * @hidden
       */
     var _Reply_data: js.Any = js.native
-    /**
-      * @hidden
-      */
-    var _Send_piece_data: js.Any = js.native
-    /**
-      * @hidden
-      */
-    var enforced_ : js.Any = js.native
-    /**
-      * @hidden
-      */
-    var exclude_ : js.Any = js.native
-    /**
-      * @hidden
-      */
-    var history_list_ : js.Any = js.native
-    /**
-      * @hidden
-      */
-    var performance: js.Any = js.native
-    /**
-      * @hidden
-      */
-    var progress_list_ : js.Any = js.native
+    
     /**
       * @hidden
       */
     /* protected */ def _Report_history(xml: XML): Unit = js.native
+    
     /**
       * @hidden
       */
     /* protected */ def _Send_back_history(invoke: Invoke, history: InvokeHistory): Unit = js.native
+    
+    /**
+      * @hidden
+      */
+    var _Send_piece_data: js.Any = js.native
+    
     /**
       * Enforce performance index.
       *
@@ -89,6 +75,17 @@ object parallelSystemMod extends js.Object {
       * @param val New performance index to be fixed.
       */
     def enforcePerformance(`val`: Double): Unit = js.native
+    
+    /**
+      * @hidden
+      */
+    var enforced_ : js.Any = js.native
+    
+    /**
+      * @hidden
+      */
+    var exclude_ : js.Any = js.native
+    
     /**
       * Get performance index.
       *
@@ -116,6 +113,7 @@ object parallelSystemMod extends js.Object {
       * @return Performance index.
       */
     def getPerformance(): Double = js.native
+    
     /**
       * Get manager of this object.
       *
@@ -123,6 +121,22 @@ object parallelSystemMod extends js.Object {
       */
     @JSName("getSystemArray")
     def getSystemArray_SystemArray_ParallelSystemArrayParallelSystem_SystemArray[SystemArray /* <: ParallelSystemArray[ParallelSystem] */](): SystemArray = js.native
+    
+    /**
+      * @hidden
+      */
+    var history_list_ : js.Any = js.native
+    
+    /**
+      * @hidden
+      */
+    var performance: js.Any = js.native
+    
+    /**
+      * @hidden
+      */
+    var progress_list_ : js.Any = js.native
+    
     /**
       * Set performance index.
       *
@@ -149,6 +163,4 @@ object parallelSystemMod extends js.Object {
       */
     def setPerformance(`val`: Double): Unit = js.native
   }
-  
 }
-

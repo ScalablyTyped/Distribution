@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 可视化配置组件
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSImport("@ant-design/pro-layout/lib/SettingDrawer", JSImport.Default)
 @js.native
 object default extends TopLevel[FC[SettingDrawerProps]]
-

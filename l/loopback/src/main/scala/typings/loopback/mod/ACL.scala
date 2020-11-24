@@ -13,7 +13,7 @@ import typings.loopback.loopbackStrings.WRITE
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Model for access control meta data
@@ -44,10 +44,13 @@ import scala.scalajs.js.annotation._
 @JSImport("loopback", "ACL")
 @js.native
 class ACL () extends PersistedModel {
+  
   /** accessType Type of access being granted: one of READ, WRITE, or EXECUTE. */
   var accesType: READ | WRITE | EXECUTE = js.native
+  
   /** model Name of the model. */
   var model: String = js.native
+  
   /**permission Type of permission granted  One of:
     *  - ALARM: Generate an alarm, in a system-dependent way, the access specified in the permissions component of the ACL entry.
     *  - ALLOW: Explicitly grants access to the resource.
@@ -55,27 +58,32 @@ class ACL () extends PersistedModel {
     *  - DENY: Explicitly denies access to the resource.
     */
   var permission: ALARM | ALLOW | AUDIT | DENY = js.native
+  
   /** principalId ID of the principal - such as appId, userId or roleId. */
   var principalId: String = js.native
+  
   /** principalType Type of the principal; one of: Application, Use, Role. */
   var principalType: Aplication | typings.loopback.loopbackStrings.User | typings.loopback.loopbackStrings.Role | String = js.native
+  
   /** property Name of the property, method, scope, or relation. */
   var property: String = js.native
-  /** settings Extends the `Model.settings` object. */
-  @JSName("settings")
-  var settings_ACL: Acls = js.native
+  
   /**
     * Get matching score for the given `AccessRequest`.
     * @param {AccessRequest} req The request
     * @returns {number} scor
     */
   def score(req: AccessRequest): Double = js.native
+  
+  /** settings Extends the `Model.settings` object. */
+  @JSName("settings")
+  var settings_ACL: Acls = js.native
 }
-
 /* static members */
 @JSImport("loopback", "ACL")
 @js.native
 object ACL extends js.Object {
+  
   /**
     * Check if the request has the permission to access.
     * @options {any} context See below.
@@ -88,6 +96,7 @@ object ACL extends js.Object {
     * @param {() => void} callback Callback functio
     */
   def checkAccessForContext(context: AccessType, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Check if the given access token can invoke the method
     * @param {AccessToken} token The access token
@@ -105,6 +114,7 @@ object ACL extends js.Object {
     method: String,
     callback: js.Function2[/* err */ String | Error, /* allowed */ Boolean, Unit]
   ): Unit = js.native
+  
   /**
     * Check if the given principal is allowed to access the model/property
     * @param {string} principalType The principal type.
@@ -124,6 +134,7 @@ object ACL extends js.Object {
     accessType: String,
     callback: js.Function2[/* err */ String | Error, /* result */ AccessRequest, Unit]
   ): Unit = js.native
+  
   /**
     * Calculate the matching score for the given rule and request
     * @param {ACL} rule The ACL entry
@@ -131,6 +142,7 @@ object ACL extends js.Object {
     * @returns {number}
     */
   def getMatchingScore(rule: ACL, req: AccessRequest): Double = js.native
+  
   /**
     * Check if the given principal is mapped to the role
     * @param {string} principalType Principal type
@@ -142,6 +154,7 @@ object ACL extends js.Object {
   def isMappedToRole(principalType: String, principalId: String, role: js.Any, cb: js.Function0[Unit]): Unit = js.native
   def isMappedToRole(principalType: String, principalId: js.Any, role: String, cb: js.Function0[Unit]): Unit = js.native
   def isMappedToRole(principalType: String, principalId: js.Any, role: js.Any, cb: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Resolve a principal by type/id
     * @param {string} type Principal type - ROLE/APP/USER
@@ -151,4 +164,3 @@ object ACL extends js.Object {
   def resolvePrincipal(`type`: String, id: String, cb: js.Function0[Unit]): Unit = js.native
   def resolvePrincipal(`type`: String, id: Double, cb: js.Function0[Unit]): Unit = js.native
 }
-

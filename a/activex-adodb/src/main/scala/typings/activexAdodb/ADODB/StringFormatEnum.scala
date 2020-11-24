@@ -3,10 +3,10 @@ package typings.activexAdodb.ADODB
 import typings.activexAdodb.activexAdodbNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StringFormatEnum {
+  
   @scala.inline
   def adClipString: `2` = 2.asInstanceOf[`2`]
 }
-

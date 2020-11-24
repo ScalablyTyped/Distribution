@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/container/v1beta1", "container_v1beta1.Resource$Projects$Aggregated$Usablesubnetworks")
 @js.native
 class ResourceProjectsAggregatedUsablesubnetworks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * container.projects.aggregated.usableSubnetworks.list
     * @desc Lists subnetworks that are usable for creating clusters in a
@@ -49,4 +51,3 @@ class ResourceProjectsAggregatedUsablesubnetworks protected () extends js.Object
     callback: BodyResponseCallback[SchemaListUsableSubnetworksResponse]
   ): Unit = js.native
 }
-

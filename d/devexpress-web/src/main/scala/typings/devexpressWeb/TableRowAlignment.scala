@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TableRowAlignment extends js.Object
-
 /**
   * Lists alignments allowed for the table row.
   */
 @JSGlobal("TableRowAlignment")
 @js.native
 object TableRowAlignment extends js.Object {
+  
   /**
     * Justified.
     */
@@ -48,6 +48,4 @@ object TableRowAlignment extends js.Object {
     */
   @js.native
   sealed trait Right extends TableRowAlignment
-  
 }
-

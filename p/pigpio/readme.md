@@ -10,9 +10,9 @@ Fast GPIO, PWM, servo control, state change notification, and interrupt handling
 | ------------------ | :-------------: |
 | Full name          | pigpio |
 | Keywords           | gpio, pwm, servo, iot, interrupt, raspberry, raspi, rpi, pi |
-| # releases         | 14 |
-| # dependents       | 36 |
-| # downloads        | 29857 |
+| # releases         | 16 |
+| # dependents       | 47 |
+| # downloads        | 31004 |
 | # stars            | 11 |
 
 ## Links

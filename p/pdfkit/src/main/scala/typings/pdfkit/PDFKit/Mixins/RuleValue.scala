@@ -2,7 +2,7 @@ package typings.pdfkit.PDFKit.Mixins
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // The winding / filling rule accepted by PDFKit:
 /* Rewritten from type alias, can be one of: 
@@ -12,15 +12,17 @@ import scala.scalajs.js.annotation._
   - typings.pdfkit.pdfkitStrings.nonzero
 */
 trait RuleValue extends js.Object
-
 object RuleValue {
+  
   @scala.inline
   def `even-odd`: typings.pdfkit.pdfkitStrings.`even-odd` = "even-odd".asInstanceOf[typings.pdfkit.pdfkitStrings.`even-odd`]
+  
   @scala.inline
   def evenodd: typings.pdfkit.pdfkitStrings.evenodd = "evenodd".asInstanceOf[typings.pdfkit.pdfkitStrings.evenodd]
+  
   @scala.inline
   def `non-zero`: typings.pdfkit.pdfkitStrings.`non-zero` = "non-zero".asInstanceOf[typings.pdfkit.pdfkitStrings.`non-zero`]
+  
   @scala.inline
   def nonzero: typings.pdfkit.pdfkitStrings.nonzero = "nonzero".asInstanceOf[typings.pdfkit.pdfkitStrings.nonzero]
 }
-

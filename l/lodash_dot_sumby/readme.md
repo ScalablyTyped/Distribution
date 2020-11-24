@@ -11,8 +11,8 @@ The lodash method `_.sumBy` exported as a module.
 | Full name          | lodash.sumby |
 | Keywords           | lodash-modularized, sumby |
 | # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 487104 |
+| # dependents       | 34 |
+| # downloads        | 678598 |
 | # stars            | 0 |
 
 ## Links

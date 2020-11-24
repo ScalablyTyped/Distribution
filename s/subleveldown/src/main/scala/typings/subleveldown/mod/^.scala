@@ -5,11 +5,12 @@ import typings.abstractLeveldown.mod.AbstractLevelDOWN
 import typings.levelup.mod.LevelUp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("subleveldown", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Returns a `levelup` instance that uses subleveldown to prefix the keys of the underlying store of `db`.
     * Any layers that this instance may have (like `encoding-down` or `subleveldown` itself) are peeled off to get to the innermost `abstract-leveldown` compliant store (like `leveldown`).
@@ -34,4 +35,3 @@ object ^ extends js.Object {
   def apply[K, V](db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]], prefix: String, opts: String): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = js.native
   def apply[K, V](db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]], prefix: String, opts: SubDownOptions): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = js.native
 }
-

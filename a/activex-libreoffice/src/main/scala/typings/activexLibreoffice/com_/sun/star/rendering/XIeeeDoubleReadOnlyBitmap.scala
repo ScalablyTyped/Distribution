@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealSize2D
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a specialized interface for bitmaps containing IEEE doubles for their color components. In contrast to {@link XIeeeDoubleBitmap} , this
@@ -22,12 +22,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XIeeeDoubleReadOnlyBitmap extends XBitmap {
+  
   /**
     * Query the memory layout for this bitmap.
     *
     * Please note that for volatile bitmaps, the memory layout might change between subsequent calls.
     */
   val MemoryLayout: FloatingPointBitmapLayout = js.native
+  
   /**
     * Query the raw data of this bitmap.
     *
@@ -41,12 +43,14 @@ trait XIeeeDoubleReadOnlyBitmap extends XBitmap {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if parts of the given rectangle are outside the permissible bitmap area.
     */
   def getData(bitmapLayout: js.Array[FloatingPointBitmapLayout], rect: IntegerRectangle2D): SafeArray[Double] = js.native
+  
   /**
     * Query the memory layout for this bitmap.
     *
     * Please note that for volatile bitmaps, the memory layout might change between subsequent calls.
     */
   def getMemoryLayout(): FloatingPointBitmapLayout = js.native
+  
   /**
     * Get a single pixel of the bitmap, returning its color value.
     *
@@ -58,8 +62,8 @@ trait XIeeeDoubleReadOnlyBitmap extends XBitmap {
     */
   def getPixel(bitmapLayout: js.Array[FloatingPointBitmapLayout], pos: IntegerPoint2D): SafeArray[Double] = js.native
 }
-
 object XIeeeDoubleReadOnlyBitmap {
+  
   @scala.inline
   def apply(
     MemoryLayout: FloatingPointBitmapLayout,
@@ -77,26 +81,32 @@ object XIeeeDoubleReadOnlyBitmap {
     val __obj = js.Dynamic.literal(MemoryLayout = MemoryLayout.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getData = js.Any.fromFunction2(getData), getMemoryLayout = js.Any.fromFunction0(getMemoryLayout), getPixel = js.Any.fromFunction2(getPixel), getScaledBitmap = js.Any.fromFunction2(getScaledBitmap), getSize = js.Any.fromFunction0(getSize), hasAlpha = js.Any.fromFunction0(hasAlpha), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XIeeeDoubleReadOnlyBitmap]
   }
+  
   @scala.inline
   implicit class XIeeeDoubleReadOnlyBitmapOps[Self <: XIeeeDoubleReadOnlyBitmap] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMemoryLayout(value: FloatingPointBitmapLayout): Self = this.set("MemoryLayout", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetData(value: (js.Array[FloatingPointBitmapLayout], IntegerRectangle2D) => SafeArray[Double]): Self = this.set("getData", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetMemoryLayout(value: () => FloatingPointBitmapLayout): Self = this.set("getMemoryLayout", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetPixel(value: (js.Array[FloatingPointBitmapLayout], IntegerPoint2D) => SafeArray[Double]): Self = this.set("getPixel", js.Any.fromFunction2(value))
   }
-  
 }
-

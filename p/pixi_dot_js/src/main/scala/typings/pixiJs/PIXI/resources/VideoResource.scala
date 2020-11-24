@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI.resources
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource type for HTMLVideoElement.
@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait VideoResource extends BaseImageResource {
+  
   /**
     * When set to true will automatically play videos used by this texture once
     * they are loaded. If false, it will not modify the playing state.
@@ -27,12 +28,16 @@ trait VideoResource extends BaseImageResource {
     * @default true
     */
   var autoPlay: Boolean = js.native
+  
   /**
     * Should the base texture automatically update itself, set to true by default
     *
     * @member {boolean}
     */
   var autoUpdate: Boolean = js.native
+  
+  def update(deltaTime: Double): Unit = js.native
+  
   /**
     * How many times a second to update the texture from the video. Leave at 0 to update at every render.
     * A lower fps can help performance, as updating the texture at 60fps on a 30ps video may not be efficient.
@@ -40,6 +45,4 @@ trait VideoResource extends BaseImageResource {
     * @member {number}
     */
   var updateFPS: Double = js.native
-  def update(deltaTime: Double): Unit = js.native
 }
-

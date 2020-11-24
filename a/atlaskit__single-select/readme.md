@@ -10,14 +10,14 @@ React component which allows selection of a single item from a dropdown list. Su
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/single-select |
 | Keywords           | - |
-| # releases         | 57 |
-| # dependents       | 1 |
-| # downloads        | 135997 |
+| # releases         | 33 |
+| # dependents       | 0 |
+| # downloads        | 139755 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://bitbucket.org/atlassian/atlaskit-mk-2#readme)
-- [Repository](https://bitbucket.org/atlassian/atlaskit-mk-2)
+- [Homepage](https://bitbucket.org/atlassian/atlassian-frontend#readme)
+- [Repository](https://bitbucket.org/atlassian/atlassian-frontend)
 - [Npm](https://www.npmjs.com/package/%40atlaskit%2Fsingle-select)
     
 

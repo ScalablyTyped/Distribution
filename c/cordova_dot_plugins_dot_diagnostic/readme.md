@@ -10,9 +10,9 @@ Cordova/Phonegap plugin to check the state of Location/WiFi/Camera/Bluetooth dev
 | ------------------ | :-------------: |
 | Full name          | cordova.plugins.diagnostic |
 | Keywords           | ecosystem:cordova, cordova, android, ios, windows, phonegap, diagnostic, wifi, location, gps, camera, bluetooth, settings |
-| # releases         | 19 |
+| # releases         | 10 |
 | # dependents       | 4 |
-| # downloads        | 609748 |
+| # downloads        | 711016 |
 | # stars            | 11 |
 
 ## Links

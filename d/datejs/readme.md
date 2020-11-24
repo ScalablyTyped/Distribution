@@ -10,8 +10,8 @@ DateJS is the most full-featured, internationalized, open-source JavaScript Date
 | Full name          | datejs |
 | Keywords           | date, javascript, js, mit |
 | # releases         | 0 |
-| # dependents       | 56 |
-| # downloads        | 608409 |
+| # dependents       | 60 |
+| # downloads        | 561907 |
 | # stars            | 5 |
 
 ## Links

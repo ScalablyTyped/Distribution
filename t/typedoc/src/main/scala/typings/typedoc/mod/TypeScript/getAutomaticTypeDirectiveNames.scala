@@ -4,11 +4,12 @@ import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.ModuleResolutionHost
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.getAutomaticTypeDirectiveNames")
 @js.native
 object getAutomaticTypeDirectiveNames extends js.Object {
+  
   /**
     * Given a set of options, returns the set of type directive names
     *   that should be included for this program automatically.
@@ -19,4 +20,3 @@ object getAutomaticTypeDirectiveNames extends js.Object {
     */
   def apply(options: CompilerOptions, host: ModuleResolutionHost): js.Array[String] = js.native
 }
-

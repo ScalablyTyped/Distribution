@@ -10,19 +10,23 @@ import typings.browserfs.workerFSMod.default
 import typings.std.Worker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofWorkerFS
   extends Instantiable1[/* worker */ Worker, default]
      with Instantiable2[/* worker */ Worker, /* deprecateMsg */ Boolean, default] {
-  val Name: String = js.native
-  val Options: FileSystemOptions = js.native
+  
   def Create(opts: WorkerFSOptions, cb: BFSCallback[WorkerFS]): Unit = js.native
+  
+  val Name: String = js.native
+  
+  val Options: FileSystemOptions = js.native
+  
   /**
     * Attaches a listener to the remote worker for file system requests.
     */
   def attachRemoteListener(worker: Worker): Unit = js.native
+  
   def isAvailable(): Boolean = js.native
 }
-

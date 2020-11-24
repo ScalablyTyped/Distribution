@@ -10,9 +10,9 @@ Provides an interface to convert PDF's pages to png files in Node.js by using Im
 | ------------------ | :-------------: |
 | Full name          | pdf-image |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 333269 |
+| # downloads        | 431038 |
 | # stars            | 13 |
 
 ## Links

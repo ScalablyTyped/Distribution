@@ -10,9 +10,9 @@ Utility to help you polyfill the Node.js runtime when the Intl APIs are missing,
 | ------------------ | :-------------: |
 | Full name          | intl-locales-supported |
 | Keywords           | i18n, intl, internationalization, localization, globalization |
-| # releases         | 34 |
+| # releases         | 42 |
 | # dependents       | 34 |
-| # downloads        | 3154399 |
+| # downloads        | 8419140 |
 | # stars            | 1 |
 
 ## Links

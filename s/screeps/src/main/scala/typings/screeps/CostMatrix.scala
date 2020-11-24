@@ -3,7 +3,7 @@ package typings.screeps
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Container for custom navigation cost data.
@@ -14,21 +14,25 @@ trait CostMatrix
   * Creates a new CostMatrix containing 0's for all positions.
   */
 Instantiable0[CostMatrix] {
+  
   /**
     * Static method which deserializes a new CostMatrix using the return value of serialize.
     * @param val Whatever serialize returned
     */
   def deserialize(`val`: js.Array[Double]): CostMatrix = js.native
+  
   /**
     * Get the cost of a position in this CostMatrix.
     * @param x X position in the room.
     * @param y Y position in the room.
     */
   def get(x: Double, y: Double): Double = js.native
+  
   /**
     * Returns a compact representation of this CostMatrix which can be stored via JSON.stringify.
     */
   def serialize(): js.Array[Double] = js.native
+  
   /**
     * Set the cost of a position in this CostMatrix.
     * @param x X position in the room.
@@ -37,4 +41,3 @@ Instantiable0[CostMatrix] {
     */
   def set(x: Double, y: Double, cost: Double): js.UndefOr[scala.Nothing] = js.native
 }
-

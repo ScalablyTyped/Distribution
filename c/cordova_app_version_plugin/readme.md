@@ -12,7 +12,7 @@ Read the version of the App from config.xml and make it available in js
 | Keywords           | cordova, appversion, version, ecosystem:cordova, cordova-android, cordova-amazon-fireos, cordova-ubuntu, cordova-ios, cordova-blackberry10, cordova-wp7, cordova-wp8, cordova-windows8, cordova-windows, cordova-browser |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 2271 |
+| # downloads        | 3753 |
 | # stars            | 0 |
 
 ## Links

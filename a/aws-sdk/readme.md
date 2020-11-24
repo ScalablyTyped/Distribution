@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk
 
-Typings are for version 2.725.0
+Typings are for version 2.797.0
 
 ## Library description:
 AWS SDK for JavaScript
@@ -10,9 +10,9 @@ AWS SDK for JavaScript
 | ------------------ | :-------------: |
 | Full name          | aws-sdk |
 | Keywords           | api, amazon, aws, ec2, simpledb, s3, sqs, ses, sns, route53, rds, elasticache, cloudfront, fps, cloudformation, cloudwatch, dynamodb, iam, swf, autoscaling, cloudsearch, elb, loadbalancing, emr, mapreduce, importexport, storagegateway, workflow, ebs, vpc, beanstalk, glacier, kinesis, cloudtrail, waf |
-| # releases         | 424 |
-| # dependents       | 6245 |
-| # downloads        | 152952071 |
+| # releases         | 440 |
+| # dependents       | 7646 |
+| # downloads        | 250166605 |
 | # stars            | 206 |
 
 ## Links

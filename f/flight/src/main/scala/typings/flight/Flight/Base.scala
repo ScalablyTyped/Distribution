@@ -6,10 +6,11 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Base extends js.Object {
+  
   /**
     * Most Components and Mixins need to define attributes. In Flight,
     * default values are assigned by passing an object to the attributes
@@ -20,6 +21,7 @@ trait Base extends js.Object {
     * then all the old attribute behavior remains in place.
     */
   def attributes(obj: js.Object): Unit = js.native
+  
   /**
     * Most Components and Mixins need to define attributes. In Flight,
     * default values are assigned by passing an object to the defaultAttrs
@@ -30,6 +32,7 @@ trait Base extends js.Object {
     * then all the old attribute behavior remains in place.
     */
   def defaultAttrs(obj: js.Object): Unit = js.native
+  
   /**
     * This method is attached to the prototype of every Component; it accepts
     * the component's node and an options object as arguments. The core
@@ -43,6 +46,7 @@ trait Base extends js.Object {
     * listeners that bind to callbacks.
     */
   def initialize(node: js.Any, options: js.Object): Unit = js.native
+  
   /**
     * If we no longer want a component instance to listen to an event we can
     * use the off method to unsubscribe.
@@ -81,6 +85,7 @@ trait Base extends js.Object {
   def off(selector: Element, eventType: js.Object): Unit = js.native
   def off(selector: Element, eventType: js.Object, handler: js.Function): Unit = js.native
   def off(selector: Element, eventType: js.Object, handler: js.Object): Unit = js.native
+  
   /**
     * This allows a component instance to listen to an event and register a
     * callback to be invoked. Flight will automatically bind the context
@@ -104,6 +109,7 @@ trait Base extends js.Object {
   def on(selector: Document, eventType: String, handler: js.Object): Unit = js.native
   def on(selector: Element, eventType: String, handler: js.Function): Unit = js.native
   def on(selector: Element, eventType: String, handler: js.Object): Unit = js.native
+  
   /**
     * The select method takes an attr key as its argument. The value of the
     * attr must be a CSS Selector. The method will return all matching
@@ -115,6 +121,7 @@ trait Base extends js.Object {
     * @param attr
     */
   def select(attr: String): JQuery[HTMLElement] = js.native
+  
   /**
     * Remove a component instance and its event bindings.
     *
@@ -124,6 +131,7 @@ trait Base extends js.Object {
     *
     */
   def teardown(): Unit = js.native
+  
   /**
     * Trigger an event.
     *
@@ -162,4 +170,3 @@ trait Base extends js.Object {
   def trigger(selector: Element, eventType: js.Object): Unit = js.native
   def trigger(selector: Element, eventType: js.Object, eventPayload: js.Object): Unit = js.native
 }
-

@@ -11,8 +11,8 @@ Parse an author, contributor, maintainer or other 'person' string into an object
 | Full name          | parse-author |
 | Keywords           | author, authors, contributor, exec, expression, extract, maintainer, maintainers, match, package, parse, person, pkg, re, regex, regexp, regular, somebody |
 | # releases         | 0 |
-| # dependents       | 111 |
-| # downloads        | 4848717 |
+| # dependents       | 123 |
+| # downloads        | 7183927 |
 | # stars            | 2 |
 
 ## Links

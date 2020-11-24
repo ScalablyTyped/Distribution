@@ -10,9 +10,9 @@ Enable destroying a server, and all currently open connections.
 | ------------------ | :-------------: |
 | Full name          | server-destroy |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 266 |
-| # downloads        | 28813119 |
+| # releases         | 0 |
+| # dependents       | 289 |
+| # downloads        | 39723896 |
 | # stars            | 2 |
 
 ## Links

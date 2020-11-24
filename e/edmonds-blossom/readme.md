@@ -11,8 +11,8 @@ Edmond's weighted maximum matching algorithm (Blossom algorithm) ported from htt
 | Full name          | edmonds-blossom |
 | Keywords           | graph, directional graph, edmonds, maximum matching, blossom |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2553 |
+| # dependents       | 2 |
+| # downloads        | 10316 |
 | # stars            | 0 |
 
 ## Links

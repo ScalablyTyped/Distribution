@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Foundation.Diagnostics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LoggingOpcode extends js.Object
-
 /** Specifies an event opcode. Opcodes represent an operation within a component of an application and are used to logically group events. */
 @JSGlobal("Windows.Foundation.Diagnostics.LoggingOpcode")
 @js.native
 object LoggingOpcode extends js.Object {
+  
   /** An informational event. */
   @js.native
   sealed trait info extends LoggingOpcode
@@ -38,6 +38,4 @@ object LoggingOpcode extends js.Object {
   /** An event that represents the activity being suspended pending another activity's completion. */
   @js.native
   sealed trait suspend extends LoggingOpcode
-  
 }
-

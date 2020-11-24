@@ -1,9 +1,9 @@
 package typings.three.mod
 
-import typings.three.textGeometryMod.TextGeometryParameters
+import typings.three.textBufferGeometryMod.TextGeometryParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "TextGeometry")
 @js.native
@@ -11,4 +11,3 @@ class TextGeometry protected ()
   extends typings.three.geometriesMod.TextGeometry {
   def this(text: String, parameters: TextGeometryParameters) = this()
 }
-

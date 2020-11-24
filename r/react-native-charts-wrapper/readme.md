@@ -10,9 +10,9 @@ A react-native charts support both android and iOS.
 | ------------------ | :-------------: |
 | Full name          | react-native-charts-wrapper |
 | Keywords           | react native, chart, android, MPAndroidChart, ios, Charts |
-| # releases         | 16 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 80897 |
+| # downloads        | 110062 |
 | # stars            | 2 |
 
 ## Links

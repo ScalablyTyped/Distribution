@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Regiondisks")
 @js.native
 class ResourceRegiondisks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.regionDisks.createSnapshot
     * @desc Creates a snapshot of this regional disk.
@@ -45,6 +47,7 @@ class ResourceRegiondisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionDisks.delete
     * @desc Deletes the specified regional persistent disk. Deleting a regional
@@ -79,6 +82,7 @@ class ResourceRegiondisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionDisks.get
     * @desc Returns a specified regional persistent disk.
@@ -109,6 +113,7 @@ class ResourceRegiondisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDisk]
   ): Unit = js.native
+  
   /**
     * compute.regionDisks.insert
     * @desc Creates a persistent regional disk in the specified project using
@@ -142,6 +147,7 @@ class ResourceRegiondisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionDisks.list
     * @desc Retrieves the list of persistent disks contained within the
@@ -176,6 +182,7 @@ class ResourceRegiondisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDiskList]
   ): Unit = js.native
+  
   /**
     * compute.regionDisks.resize
     * @desc Resizes the specified regional persistent disk.
@@ -208,6 +215,7 @@ class ResourceRegiondisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionDisks.setLabels
     * @desc Sets the labels on the target regional disk.
@@ -240,6 +248,7 @@ class ResourceRegiondisks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionDisks.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -275,4 +284,3 @@ class ResourceRegiondisks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

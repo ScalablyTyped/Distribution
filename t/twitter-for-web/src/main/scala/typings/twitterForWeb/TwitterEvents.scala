@@ -9,13 +9,14 @@ import typings.twitterForWeb.twitterForWebStrings.retweet
 import typings.twitterForWeb.twitterForWebStrings.tweet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for Twitter events.
   */
 @js.native
 trait TwitterEvents extends js.Object {
+  
   /**
     * Bind an event.
     *
@@ -80,4 +81,3 @@ trait TwitterEvents extends js.Object {
   @JSName("bind")
   def bind_tweet(name: tweet, callback: js.Function1[/* ev */ TwitterIntentEvent, Unit]): Unit = js.native
 }
-

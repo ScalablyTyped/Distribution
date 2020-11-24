@@ -6,19 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidmanagement/v1", "androidmanagement_v1.Resource$Enterprises")
 @js.native
 class ResourceEnterprises protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var applications: ResourceEnterprisesApplications = js.native
+  
   var context: APIRequestContext = js.native
-  var devices: ResourceEnterprisesDevices = js.native
-  var enrollmentTokens: ResourceEnterprisesEnrollmenttokens = js.native
-  var policies: ResourceEnterprisesPolicies = js.native
-  var webApps: ResourceEnterprisesWebapps = js.native
-  var webTokens: ResourceEnterprisesWebtokens = js.native
+  
   /**
     * androidmanagement.enterprises.create
     * @desc Creates an enterprise. This is the last step in the enterprise
@@ -51,6 +49,11 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnterprise]
   ): Unit = js.native
+  
+  var devices: ResourceEnterprisesDevices = js.native
+  
+  var enrollmentTokens: ResourceEnterprisesEnrollmenttokens = js.native
+  
   /**
     * androidmanagement.enterprises.get
     * @desc Gets an enterprise.
@@ -79,6 +82,7 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnterprise]
   ): Unit = js.native
+  
   /**
     * androidmanagement.enterprises.patch
     * @desc Updates an enterprise.
@@ -109,5 +113,10 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnterprise]
   ): Unit = js.native
+  
+  var policies: ResourceEnterprisesPolicies = js.native
+  
+  var webApps: ResourceEnterprisesWebapps = js.native
+  
+  var webTokens: ResourceEnterprisesWebtokens = js.native
 }
-

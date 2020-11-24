@@ -8,15 +8,19 @@ import typings.reactIcons.iconBaseMod.IconTree
 import typings.reactIcons.iconsManifestMod.IconManifest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-icons", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   val DefaultContext: typings.reactIcons.iconContextMod.IconContext = js.native
-  val IconContext: Context[typings.reactIcons.iconContextMod.IconContext] = js.native
-  val icons: IconManifest = js.native
+  
   def GenIcon(data: IconTree): js.Function1[/* props */ IconBaseProps, Element] = js.native
+  
   def IconBase(props: IconBasePropsattrundefine): Element = js.native
+  
+  val IconContext: Context[typings.reactIcons.iconContextMod.IconContext] = js.native
+  
+  val icons: IconManifest = js.native
 }
-

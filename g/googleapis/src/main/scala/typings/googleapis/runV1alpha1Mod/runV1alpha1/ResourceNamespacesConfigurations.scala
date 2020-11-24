@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/run/v1alpha1", "run_v1alpha1.Resource$Namespaces$Configurations")
 @js.native
 class ResourceNamespacesConfigurations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * run.namespaces.configurations.get
     * @desc Rpc to get information about a configuration.
@@ -44,6 +46,7 @@ class ResourceNamespacesConfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaConfiguration]
   ): Unit = js.native
+  
   /**
     * run.namespaces.configurations.list
     * @desc Rpc to list configurations.
@@ -83,4 +86,3 @@ class ResourceNamespacesConfigurations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListConfigurationsResponse]
   ): Unit = js.native
 }
-

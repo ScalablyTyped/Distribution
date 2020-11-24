@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides {@link XDispatch} objects for certain functions which are useful at the UI
@@ -21,8 +21,8 @@ import scala.scalajs.js.annotation._
 trait DispatchProvider
   extends XDispatchProvider
      with XDispatchProviderInterception
-
 object DispatchProvider {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -37,4 +37,3 @@ object DispatchProvider {
     __obj.asInstanceOf[DispatchProvider]
   }
 }
-

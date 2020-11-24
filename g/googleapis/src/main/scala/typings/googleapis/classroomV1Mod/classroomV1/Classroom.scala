@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Google Classroom API
@@ -27,10 +27,14 @@ import scala.scalajs.js.annotation._
 class Classroom protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var context: APIRequestContext = js.native
+  
   var courses: ResourceCourses = js.native
+  
   var invitations: ResourceInvitations = js.native
+  
   var registrations: ResourceRegistrations = js.native
+  
   var userProfiles: ResourceUserprofiles = js.native
 }
-

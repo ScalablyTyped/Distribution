@@ -2,7 +2,7 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new bounding sphere.
@@ -20,4 +20,3 @@ class BoundingSphere ()
   def this(center: js.UndefOr[scala.Nothing], radius: Double) = this()
   def this(center: typings.playcanvas.pc.Vec3, radius: Double) = this()
 }
-

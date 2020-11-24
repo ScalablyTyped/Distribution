@@ -2,10 +2,11 @@ package typings.c3.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Enable extends js.Object {
+  
   /**
     * Zoom by giving x domain.
     * @param domain If given, the chart will be zoomed to the given domain.
@@ -13,11 +14,13 @@ trait Enable extends js.Object {
     */
   def apply(): js.Array[Double] = js.native
   def apply(domain: js.Array[Double]): js.Array[Double] = js.native
+  
   /**
     * Enable and disable zooming.
     * @param enabled If enabled is `true`, the feature of zooming will be enabled. If `false` is given, it will be disabled.
     */
   def enable(enabled: Boolean): Unit = js.native
+  
   /**
     * Set or get the maximum x value of the chart for zooming.
     * @param max The new maximum zoom value.
@@ -26,6 +29,7 @@ trait Enable extends js.Object {
     */
   def max(): Double = js.native
   def max(max: Double): Unit = js.native
+  
   /**
     * Set or get the minimum x value of the chart for zooming.
     * @param min The new minimum zoom value.
@@ -34,6 +38,7 @@ trait Enable extends js.Object {
     */
   def min(): Double = js.native
   def min(min: Double): Unit = js.native
+  
   /**
     * Set or get both the max and min zoom values at the same time.
     * @param range An object with max and/or min values.
@@ -42,4 +47,3 @@ trait Enable extends js.Object {
   def range(): MinNumber = js.native
   def range(range: `5`): Unit = js.native
 }
-

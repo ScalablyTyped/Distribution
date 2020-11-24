@@ -9,11 +9,12 @@ import typings.std.WebGLFramebuffer
 import typings.std.WebGLTexture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Display.Masks")
 @js.native
 object Masks extends js.Object {
+  
   /**
     * A Bitmap Mask combines the alpha (opacity) of a masked pixel with the alpha of another pixel.
     * Unlike the Geometry Mask, which is a clipping path, a Bitmap Mask behaves like an alpha mask,
@@ -42,48 +43,12 @@ object Masks extends js.Object {
     */
   @js.native
   trait BitmapMask extends js.Object {
+    
     /**
       * A renderable Game Object that uses a texture, such as a Sprite.
       */
     var bitmapMask: GameObject = js.native
-    /**
-      * Whether the Bitmap Mask is dirty and needs to be updated.
-      */
-    var dirty: Boolean = js.native
-    /**
-      * Whether to invert the masks alpha.
-      * 
-      * If `true`, the alpha of the masking pixel will be inverted before it's multiplied with the masked pixel. Essentially, this means that a masked area will be visible only if the corresponding area in the mask is invisible.
-      */
-    var invertAlpha: Boolean = js.native
-    /**
-      * Is this mask a stencil mask?
-      */
-    val isStencil: Boolean = js.native
-    /**
-      * The framebuffer to which a masked Game Object is rendered.
-      */
-    var mainFramebuffer: WebGLFramebuffer = js.native
-    /**
-      * The texture used for the main framebuffer.
-      */
-    var mainTexture: WebGLTexture = js.native
-    /**
-      * The framebuffer to which the Bitmap Mask's masking Game Object is rendered.
-      */
-    var maskFramebuffer: WebGLFramebuffer = js.native
-    /**
-      * The texture used for the mask's framebuffer.
-      */
-    var maskTexture: WebGLTexture = js.native
-    /**
-      * The previous framebuffer set in the renderer before this one was enabled.
-      */
-    var prevFramebuffer: WebGLFramebuffer = js.native
-    /**
-      * A reference to either the Canvas or WebGL Renderer that this Mask is using.
-      */
-    var renderer: CanvasRenderer | WebGLRenderer = js.native
+    
     /**
       * Destroys this BitmapMask and nulls any references it holds.
       * 
@@ -91,12 +56,51 @@ object Masks extends js.Object {
       * so be sure to call `clearMask` on any Game Object using it, before destroying it.
       */
     def destroy(): Unit = js.native
+    
+    /**
+      * Whether the Bitmap Mask is dirty and needs to be updated.
+      */
+    var dirty: Boolean = js.native
+    
+    /**
+      * Whether to invert the masks alpha.
+      * 
+      * If `true`, the alpha of the masking pixel will be inverted before it's multiplied with the masked pixel. Essentially, this means that a masked area will be visible only if the corresponding area in the mask is invisible.
+      */
+    var invertAlpha: Boolean = js.native
+    
+    /**
+      * Is this mask a stencil mask?
+      */
+    val isStencil: Boolean = js.native
+    
+    /**
+      * The framebuffer to which a masked Game Object is rendered.
+      */
+    var mainFramebuffer: WebGLFramebuffer = js.native
+    
+    /**
+      * The texture used for the main framebuffer.
+      */
+    var mainTexture: WebGLTexture = js.native
+    
+    /**
+      * The framebuffer to which the Bitmap Mask's masking Game Object is rendered.
+      */
+    var maskFramebuffer: WebGLFramebuffer = js.native
+    
+    /**
+      * The texture used for the mask's framebuffer.
+      */
+    var maskTexture: WebGLTexture = js.native
+    
     /**
       * This is a NOOP method. Bitmap Masks are not supported by the Canvas Renderer.
       * @param renderer The Canvas Renderer which would be rendered to.
       */
     def postRenderCanvas(renderer: CanvasRenderer): Unit = js.native
     def postRenderCanvas(renderer: WebGLRenderer): Unit = js.native
+    
     /**
       * Finalizes rendering of a masked Game Object.
       * 
@@ -105,6 +109,7 @@ object Masks extends js.Object {
       */
     def postRenderWebGL(renderer: CanvasRenderer): Unit = js.native
     def postRenderWebGL(renderer: WebGLRenderer): Unit = js.native
+    
     /**
       * This is a NOOP method. Bitmap Masks are not supported by the Canvas Renderer.
       * @param renderer The Canvas Renderer which would be rendered to.
@@ -113,6 +118,7 @@ object Masks extends js.Object {
       */
     def preRenderCanvas(renderer: CanvasRenderer, mask: GameObject, camera: Camera): Unit = js.native
     def preRenderCanvas(renderer: WebGLRenderer, mask: GameObject, camera: Camera): Unit = js.native
+    
     /**
       * Prepares the WebGL Renderer to render a Game Object with this mask applied.
       * 
@@ -123,6 +129,17 @@ object Masks extends js.Object {
       */
     def preRenderWebGL(renderer: CanvasRenderer, maskedObject: GameObject, camera: Camera): Unit = js.native
     def preRenderWebGL(renderer: WebGLRenderer, maskedObject: GameObject, camera: Camera): Unit = js.native
+    
+    /**
+      * The previous framebuffer set in the renderer before this one was enabled.
+      */
+    var prevFramebuffer: WebGLFramebuffer = js.native
+    
+    /**
+      * A reference to either the Canvas or WebGL Renderer that this Mask is using.
+      */
+    var renderer: CanvasRenderer | WebGLRenderer = js.native
+    
     /**
       * Sets a new masking Game Object for the Bitmap Mask.
       * @param renderable A renderable Game Object that uses a texture, such as a Sprite.
@@ -149,19 +166,7 @@ object Masks extends js.Object {
     */
   @js.native
   trait GeometryMask extends js.Object {
-    /**
-      * The Graphics object which describes the Geometry Mask.
-      */
-    var geometryMask: Graphics = js.native
-    /**
-      * Similar to the BitmapMasks invertAlpha setting this to true will then hide all pixels
-      * drawn to the Geometry Mask.
-      */
-    var invertAlpha: Boolean = js.native
-    /**
-      * Is this mask a stencil mask?
-      */
-    val isStencil: Boolean = js.native
+    
     /**
       * Applies the current stencil mask to the renderer.
       * @param renderer The WebGL Renderer instance to draw to.
@@ -169,6 +174,7 @@ object Masks extends js.Object {
       * @param inc Is this an INCR stencil or a DECR stencil?
       */
     def applyStencil(renderer: WebGLRenderer, camera: Camera, inc: Boolean): Unit = js.native
+    
     /**
       * Destroys this GeometryMask and nulls any references it holds.
       * 
@@ -176,16 +182,35 @@ object Masks extends js.Object {
       * so be sure to call `clearMask` on any Game Object using it, before destroying it.
       */
     def destroy(): Unit = js.native
+    
+    /**
+      * The Graphics object which describes the Geometry Mask.
+      */
+    var geometryMask: Graphics = js.native
+    
+    /**
+      * Similar to the BitmapMasks invertAlpha setting this to true will then hide all pixels
+      * drawn to the Geometry Mask.
+      */
+    var invertAlpha: Boolean = js.native
+    
+    /**
+      * Is this mask a stencil mask?
+      */
+    val isStencil: Boolean = js.native
+    
     /**
       * Restore the canvas context's previous clipping path, thus turning off the mask for it.
       * @param renderer The Canvas Renderer instance being restored.
       */
     def postRenderCanvas(renderer: CanvasRenderer): Unit = js.native
+    
     /**
       * Flushes all rendered pixels and disables the stencil test of a WebGL context, thus disabling the mask for it.
       * @param renderer The WebGL Renderer instance to draw flush.
       */
     def postRenderWebGL(renderer: WebGLRenderer): Unit = js.native
+    
     /**
       * Sets the clipping path of a 2D canvas context to the Geometry Mask's underlying Graphics object.
       * @param renderer The Canvas Renderer instance to set the clipping path on.
@@ -193,6 +218,7 @@ object Masks extends js.Object {
       * @param camera The camera the Game Object is being rendered through.
       */
     def preRenderCanvas(renderer: CanvasRenderer, mask: GameObject, camera: Camera): Unit = js.native
+    
     /**
       * Renders the Geometry Mask's underlying Graphics object to the OpenGL stencil buffer and enables the stencil test, which clips rendered pixels according to the mask.
       * @param renderer The WebGL Renderer instance to draw to.
@@ -200,6 +226,7 @@ object Masks extends js.Object {
       * @param camera The camera the Game Object is being rendered through.
       */
     def preRenderWebGL(renderer: WebGLRenderer, child: GameObject, camera: Camera): Unit = js.native
+    
     /**
       * Sets the `invertAlpha` property of this Geometry Mask.
       * Inverting the alpha essentially flips the way the mask works.
@@ -207,12 +234,11 @@ object Masks extends js.Object {
       */
     def setInvertAlpha(): this.type = js.native
     def setInvertAlpha(value: Boolean): this.type = js.native
+    
     /**
       * Sets a new Graphics object for the Geometry Mask.
       * @param graphicsGeometry The Graphics object which will be used for the Geometry Mask.
       */
     def setShape(graphicsGeometry: Graphics): this.type = js.native
   }
-  
 }
-

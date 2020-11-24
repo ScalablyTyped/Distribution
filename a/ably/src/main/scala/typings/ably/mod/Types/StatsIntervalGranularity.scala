@@ -6,14 +6,17 @@ import typings.ably.ablyStrings.minute
 import typings.ably.ablyStrings.month
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ably", "Types.StatsIntervalGranularity")
 @js.native
 object StatsIntervalGranularity extends js.Object {
+  
   type DAY = day
+  
   type HOUR = hour
+  
   type MINUTE = minute
+  
   type MONTH = month
 }
-

@@ -2,14 +2,14 @@ package typings.amazonConnectStreams.connect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AgentAvailStates extends js.Object
-
 @JSGlobal("connect.AgentAvailStates")
 @js.native
 object AgentAvailStates extends js.Object {
+  
   @js.native
   sealed trait AFTER_CALL_WORK extends AgentAvailStates
   
@@ -33,6 +33,4 @@ object AgentAvailStates extends js.Object {
   
   @js.native
   sealed trait PENDING_BUSY extends AgentAvailStates
-  
 }
-

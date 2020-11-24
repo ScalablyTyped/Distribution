@@ -3,13 +3,15 @@ package typings.amapJsApiAutocomplete
 import typings.amapJsApiAutocomplete.AMap.Autocomplete.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object AMap extends js.Object {
+    
     @js.native
     /**
       * 输入提示，根据输入关键字提示匹配信息
@@ -19,8 +21,5 @@ object global extends js.Object {
       extends typings.amapJsApiAutocomplete.AMap.Autocomplete {
       def this(options: Options) = this()
     }
-    
   }
-  
 }
-

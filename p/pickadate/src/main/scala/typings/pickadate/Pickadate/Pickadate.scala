@@ -8,11 +8,11 @@ import typings.pickadate.pickadateStrings.picker
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Pickadate extends js.Object {
-  var defaults: DateOptions = js.native
+  
   /**
     * Initialize a date picker.
     */
@@ -29,5 +29,6 @@ trait Pickadate extends js.Object {
   def apply(objectName: $root): JQuery = js.native
   def apply(objectName: _hidden): HTMLInputElement = js.native
   def apply(options: DateOptions): JQuery = js.native
+  
+  var defaults: DateOptions = js.native
 }
-

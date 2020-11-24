@@ -2,11 +2,12 @@ package typings.p5.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:no-empty-interface
 @js.native
 trait p5 extends p5InstanceExtensions {
+  
   /**
     *   Allows for the friendly error system (FES) to be
     *   turned off when creating a sketch, which can give
@@ -14,6 +15,7 @@ trait p5 extends p5InstanceExtensions {
     *   See  disabling the friendly error system.
     */
   var disableFriendlyErrors: Boolean = js.native
+  
   /**
     *   Called directly after setup(), the draw() function
     *   continuously executes the lines of code contained
@@ -53,6 +55,7 @@ trait p5 extends p5InstanceExtensions {
     *   effect.
     */
   def draw(): Unit = js.native
+  
   /**
     *   Called directly before setup(), the preload()
     *   function is used to handle asynchronous loading of
@@ -70,6 +73,7 @@ trait p5 extends p5InstanceExtensions {
     *   your page. More information here.
     */
   def preload(): Unit = js.native
+  
   /**
     *   Removes the entire p5 sketch. This will remove the
     *   canvas and any elements created by p5.js. It will
@@ -83,6 +87,7 @@ trait p5 extends p5InstanceExtensions {
     *   will remain.
     */
   def remove(): Unit = js.native
+  
   /**
     *   The setup() function is called once when the
     *   program starts. It's used to define initial
@@ -97,4 +102,3 @@ trait p5 extends p5InstanceExtensions {
     */
   def setup(): Unit = js.native
 }
-

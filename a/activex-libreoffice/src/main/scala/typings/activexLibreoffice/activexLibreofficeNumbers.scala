@@ -193,9 +193,1588 @@ import typings.activexLibreoffice.com_.sun.star.xml.dom.events.PhaseType
 import typings.activexLibreoffice.com_.sun.star.xml.xpath.XPathObjectType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexLibreofficeNumbers {
+  
+  @scala.inline
+  def `-1`: `-1` = -1.asInstanceOf[`-1`]
+  
+  @scala.inline
+  def `-128`: `-128` = -128.asInstanceOf[`-128`]
+  
+  @scala.inline
+  def `-2`: `-2` = -2.asInstanceOf[`-2`]
+  
+  @scala.inline
+  def `-2147483648`: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
+  
+  @scala.inline
+  def `-256`: `-256` = -256.asInstanceOf[`-256`]
+  
+  @scala.inline
+  def `-3`: `-3` = -3.asInstanceOf[`-3`]
+  
+  @scala.inline
+  def `-4`: `-4` = -4.asInstanceOf[`-4`]
+  
+  @scala.inline
+  def `-5`: `-5` = -5.asInstanceOf[`-5`]
+  
+  @scala.inline
+  def `-6`: `-6` = -6.asInstanceOf[`-6`]
+  
+  @scala.inline
+  def `-7`: `-7` = -7.asInstanceOf[`-7`]
+  
+  @scala.inline
+  def `0`: `0` = 0.asInstanceOf[`0`]
+  
+  @scala.inline
+  def `0.000000`: `0.000000` = 0.000000.asInstanceOf[`0.000000`]
+  
+  @scala.inline
+  def `1`: `1` = 1.asInstanceOf[`1`]
+  
+  @scala.inline
+  def `10`: `10` = 10.asInstanceOf[`10`]
+  
+  @scala.inline
+  def `100`: `100` = 100.asInstanceOf[`100`]
+  
+  @scala.inline
+  def `100.000000`: `100.000000` = 100.000000.asInstanceOf[`100.000000`]
+  
+  @scala.inline
+  def `1000`: `1000` = 1000.asInstanceOf[`1000`]
+  
+  @scala.inline
+  def `1000000`: `1000000` = 1000000.asInstanceOf[`1000000`]
+  
+  @scala.inline
+  def `1001`: `1001` = 1001.asInstanceOf[`1001`]
+  
+  @scala.inline
+  def `1002`: `1002` = 1002.asInstanceOf[`1002`]
+  
+  @scala.inline
+  def `1003`: `1003` = 1003.asInstanceOf[`1003`]
+  
+  @scala.inline
+  def `1004`: `1004` = 1004.asInstanceOf[`1004`]
+  
+  @scala.inline
+  def `1005`: `1005` = 1005.asInstanceOf[`1005`]
+  
+  @scala.inline
+  def `1006`: `1006` = 1006.asInstanceOf[`1006`]
+  
+  @scala.inline
+  def `1007`: `1007` = 1007.asInstanceOf[`1007`]
+  
+  @scala.inline
+  def `1008`: `1008` = 1008.asInstanceOf[`1008`]
+  
+  @scala.inline
+  def `1009`: `1009` = 1009.asInstanceOf[`1009`]
+  
+  @scala.inline
+  def `101`: `101` = 101.asInstanceOf[`101`]
+  
+  @scala.inline
+  def `1010`: `1010` = 1010.asInstanceOf[`1010`]
+  
+  @scala.inline
+  def `101010256`: `101010256` = 101010256.asInstanceOf[`101010256`]
+  
+  @scala.inline
+  def `1011`: `1011` = 1011.asInstanceOf[`1011`]
+  
+  @scala.inline
+  def `1012`: `1012` = 1012.asInstanceOf[`1012`]
+  
+  @scala.inline
+  def `1013`: `1013` = 1013.asInstanceOf[`1013`]
+  
+  @scala.inline
+  def `1014`: `1014` = 1014.asInstanceOf[`1014`]
+  
+  @scala.inline
+  def `1015`: `1015` = 1015.asInstanceOf[`1015`]
+  
+  @scala.inline
+  def `102`: `102` = 102.asInstanceOf[`102`]
+  
+  @scala.inline
+  def `1024`: `1024` = 1024.asInstanceOf[`1024`]
+  
+  @scala.inline
+  def `1025`: `1025` = 1025.asInstanceOf[`1025`]
+  
+  @scala.inline
+  def `1026`: `1026` = 1026.asInstanceOf[`1026`]
+  
+  @scala.inline
+  def `1027`: `1027` = 1027.asInstanceOf[`1027`]
+  
+  @scala.inline
+  def `1028`: `1028` = 1028.asInstanceOf[`1028`]
+  
+  @scala.inline
+  def `1029`: `1029` = 1029.asInstanceOf[`1029`]
+  
+  @scala.inline
+  def `103`: `103` = 103.asInstanceOf[`103`]
+  
+  @scala.inline
+  def `1030`: `1030` = 1030.asInstanceOf[`1030`]
+  
+  @scala.inline
+  def `1031`: `1031` = 1031.asInstanceOf[`1031`]
+  
+  @scala.inline
+  def `104`: `104` = 104.asInstanceOf[`104`]
+  
+  @scala.inline
+  def `1048576`: `1048576` = 1048576.asInstanceOf[`1048576`]
+  
+  @scala.inline
+  def `105`: `105` = 105.asInstanceOf[`105`]
+  
+  @scala.inline
+  def `106`: `106` = 106.asInstanceOf[`106`]
+  
+  @scala.inline
+  def `107`: `107` = 107.asInstanceOf[`107`]
+  
+  @scala.inline
+  def `1073741824`: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
+  
+  @scala.inline
+  def `108`: `108` = 108.asInstanceOf[`108`]
+  
+  @scala.inline
+  def `109`: `109` = 109.asInstanceOf[`109`]
+  
+  @scala.inline
+  def `11`: `11` = 11.asInstanceOf[`11`]
+  
+  @scala.inline
+  def `110`: `110` = 110.asInstanceOf[`110`]
+  
+  @scala.inline
+  def `110.000000`: `110.000000` = 110.000000.asInstanceOf[`110.000000`]
+  
+  @scala.inline
+  def `1100`: `1100` = 1100.asInstanceOf[`1100`]
+  
+  @scala.inline
+  def `1101`: `1101` = 1101.asInstanceOf[`1101`]
+  
+  @scala.inline
+  def `1102`: `1102` = 1102.asInstanceOf[`1102`]
+  
+  @scala.inline
+  def `1103`: `1103` = 1103.asInstanceOf[`1103`]
+  
+  @scala.inline
+  def `1104`: `1104` = 1104.asInstanceOf[`1104`]
+  
+  @scala.inline
+  def `1105`: `1105` = 1105.asInstanceOf[`1105`]
+  
+  @scala.inline
+  def `1106`: `1106` = 1106.asInstanceOf[`1106`]
+  
+  @scala.inline
+  def `1107`: `1107` = 1107.asInstanceOf[`1107`]
+  
+  @scala.inline
+  def `1108`: `1108` = 1108.asInstanceOf[`1108`]
+  
+  @scala.inline
+  def `1109`: `1109` = 1109.asInstanceOf[`1109`]
+  
+  @scala.inline
+  def `111`: `111` = 111.asInstanceOf[`111`]
+  
+  @scala.inline
+  def `1110`: `1110` = 1110.asInstanceOf[`1110`]
+  
+  @scala.inline
+  def `1111`: `1111` = 1111.asInstanceOf[`1111`]
+  
+  @scala.inline
+  def `1112`: `1112` = 1112.asInstanceOf[`1112`]
+  
+  @scala.inline
+  def `1113`: `1113` = 1113.asInstanceOf[`1113`]
+  
+  @scala.inline
+  def `1114`: `1114` = 1114.asInstanceOf[`1114`]
+  
+  @scala.inline
+  def `112`: `112` = 112.asInstanceOf[`112`]
+  
+  @scala.inline
+  def `113`: `113` = 113.asInstanceOf[`113`]
+  
+  @scala.inline
+  def `114`: `114` = 114.asInstanceOf[`114`]
+  
+  @scala.inline
+  def `115`: `115` = 115.asInstanceOf[`115`]
+  
+  @scala.inline
+  def `116`: `116` = 116.asInstanceOf[`116`]
+  
+  @scala.inline
+  def `117`: `117` = 117.asInstanceOf[`117`]
+  
+  @scala.inline
+  def `118`: `118` = 118.asInstanceOf[`118`]
+  
+  @scala.inline
+  def `119`: `119` = 119.asInstanceOf[`119`]
+  
+  @scala.inline
+  def `12`: `12` = 12.asInstanceOf[`12`]
+  
+  @scala.inline
+  def `1200`: `1200` = 1200.asInstanceOf[`1200`]
+  
+  @scala.inline
+  def `1201`: `1201` = 1201.asInstanceOf[`1201`]
+  
+  @scala.inline
+  def `1202`: `1202` = 1202.asInstanceOf[`1202`]
+  
+  @scala.inline
+  def `1203`: `1203` = 1203.asInstanceOf[`1203`]
+  
+  @scala.inline
+  def `1204`: `1204` = 1204.asInstanceOf[`1204`]
+  
+  @scala.inline
+  def `1205`: `1205` = 1205.asInstanceOf[`1205`]
+  
+  @scala.inline
+  def `1206`: `1206` = 1206.asInstanceOf[`1206`]
+  
+  @scala.inline
+  def `1207`: `1207` = 1207.asInstanceOf[`1207`]
+  
+  @scala.inline
+  def `1208`: `1208` = 1208.asInstanceOf[`1208`]
+  
+  @scala.inline
+  def `1209`: `1209` = 1209.asInstanceOf[`1209`]
+  
+  @scala.inline
+  def `1210`: `1210` = 1210.asInstanceOf[`1210`]
+  
+  @scala.inline
+  def `1211`: `1211` = 1211.asInstanceOf[`1211`]
+  
+  @scala.inline
+  def `1212`: `1212` = 1212.asInstanceOf[`1212`]
+  
+  @scala.inline
+  def `1213`: `1213` = 1213.asInstanceOf[`1213`]
+  
+  @scala.inline
+  def `1214`: `1214` = 1214.asInstanceOf[`1214`]
+  
+  @scala.inline
+  def `1215`: `1215` = 1215.asInstanceOf[`1215`]
+  
+  @scala.inline
+  def `1216`: `1216` = 1216.asInstanceOf[`1216`]
+  
+  @scala.inline
+  def `1217`: `1217` = 1217.asInstanceOf[`1217`]
+  
+  @scala.inline
+  def `1218`: `1218` = 1218.asInstanceOf[`1218`]
+  
+  @scala.inline
+  def `1219`: `1219` = 1219.asInstanceOf[`1219`]
+  
+  @scala.inline
+  def `1220`: `1220` = 1220.asInstanceOf[`1220`]
+  
+  @scala.inline
+  def `1221`: `1221` = 1221.asInstanceOf[`1221`]
+  
+  @scala.inline
+  def `1222`: `1222` = 1222.asInstanceOf[`1222`]
+  
+  @scala.inline
+  def `1223`: `1223` = 1223.asInstanceOf[`1223`]
+  
+  @scala.inline
+  def `1224`: `1224` = 1224.asInstanceOf[`1224`]
+  
+  @scala.inline
+  def `1225`: `1225` = 1225.asInstanceOf[`1225`]
+  
+  @scala.inline
+  def `1226`: `1226` = 1226.asInstanceOf[`1226`]
+  
+  @scala.inline
+  def `1227`: `1227` = 1227.asInstanceOf[`1227`]
+  
+  @scala.inline
+  def `1228`: `1228` = 1228.asInstanceOf[`1228`]
+  
+  @scala.inline
+  def `122880`: `122880` = 122880.asInstanceOf[`122880`]
+  
+  @scala.inline
+  def `122881`: `122881` = 122881.asInstanceOf[`122881`]
+  
+  @scala.inline
+  def `122882`: `122882` = 122882.asInstanceOf[`122882`]
+  
+  @scala.inline
+  def `122883`: `122883` = 122883.asInstanceOf[`122883`]
+  
+  @scala.inline
+  def `122884`: `122884` = 122884.asInstanceOf[`122884`]
+  
+  @scala.inline
+  def `122885`: `122885` = 122885.asInstanceOf[`122885`]
+  
+  @scala.inline
+  def `122886`: `122886` = 122886.asInstanceOf[`122886`]
+  
+  @scala.inline
+  def `122887`: `122887` = 122887.asInstanceOf[`122887`]
+  
+  @scala.inline
+  def `122888`: `122888` = 122888.asInstanceOf[`122888`]
+  
+  @scala.inline
+  def `122889`: `122889` = 122889.asInstanceOf[`122889`]
+  
+  @scala.inline
+  def `122890`: `122890` = 122890.asInstanceOf[`122890`]
+  
+  @scala.inline
+  def `122891`: `122891` = 122891.asInstanceOf[`122891`]
+  
+  @scala.inline
+  def `122892`: `122892` = 122892.asInstanceOf[`122892`]
+  
+  @scala.inline
+  def `122893`: `122893` = 122893.asInstanceOf[`122893`]
+  
+  @scala.inline
+  def `122894`: `122894` = 122894.asInstanceOf[`122894`]
+  
+  @scala.inline
+  def `122895`: `122895` = 122895.asInstanceOf[`122895`]
+  
+  @scala.inline
+  def `122896`: `122896` = 122896.asInstanceOf[`122896`]
+  
+  @scala.inline
+  def `122897`: `122897` = 122897.asInstanceOf[`122897`]
+  
+  @scala.inline
+  def `122898`: `122898` = 122898.asInstanceOf[`122898`]
+  
+  @scala.inline
+  def `122899`: `122899` = 122899.asInstanceOf[`122899`]
+  
+  @scala.inline
+  def `1229`: `1229` = 1229.asInstanceOf[`1229`]
+  
+  @scala.inline
+  def `122900`: `122900` = 122900.asInstanceOf[`122900`]
+  
+  @scala.inline
+  def `122901`: `122901` = 122901.asInstanceOf[`122901`]
+  
+  @scala.inline
+  def `122902`: `122902` = 122902.asInstanceOf[`122902`]
+  
+  @scala.inline
+  def `122903`: `122903` = 122903.asInstanceOf[`122903`]
+  
+  @scala.inline
+  def `122904`: `122904` = 122904.asInstanceOf[`122904`]
+  
+  @scala.inline
+  def `122905`: `122905` = 122905.asInstanceOf[`122905`]
+  
+  @scala.inline
+  def `122906`: `122906` = 122906.asInstanceOf[`122906`]
+  
+  @scala.inline
+  def `122907`: `122907` = 122907.asInstanceOf[`122907`]
+  
+  @scala.inline
+  def `122908`: `122908` = 122908.asInstanceOf[`122908`]
+  
+  @scala.inline
+  def `122909`: `122909` = 122909.asInstanceOf[`122909`]
+  
+  @scala.inline
+  def `122910`: `122910` = 122910.asInstanceOf[`122910`]
+  
+  @scala.inline
+  def `122911`: `122911` = 122911.asInstanceOf[`122911`]
+  
+  @scala.inline
+  def `122912`: `122912` = 122912.asInstanceOf[`122912`]
+  
+  @scala.inline
+  def `122913`: `122913` = 122913.asInstanceOf[`122913`]
+  
+  @scala.inline
+  def `122914`: `122914` = 122914.asInstanceOf[`122914`]
+  
+  @scala.inline
+  def `122915`: `122915` = 122915.asInstanceOf[`122915`]
+  
+  @scala.inline
+  def `122916`: `122916` = 122916.asInstanceOf[`122916`]
+  
+  @scala.inline
+  def `122917`: `122917` = 122917.asInstanceOf[`122917`]
+  
+  @scala.inline
+  def `122918`: `122918` = 122918.asInstanceOf[`122918`]
+  
+  @scala.inline
+  def `122919`: `122919` = 122919.asInstanceOf[`122919`]
+  
+  @scala.inline
+  def `122920`: `122920` = 122920.asInstanceOf[`122920`]
+  
+  @scala.inline
+  def `122921`: `122921` = 122921.asInstanceOf[`122921`]
+  
+  @scala.inline
+  def `122922`: `122922` = 122922.asInstanceOf[`122922`]
+  
+  @scala.inline
+  def `122923`: `122923` = 122923.asInstanceOf[`122923`]
+  
+  @scala.inline
+  def `122924`: `122924` = 122924.asInstanceOf[`122924`]
+  
+  @scala.inline
+  def `122925`: `122925` = 122925.asInstanceOf[`122925`]
+  
+  @scala.inline
+  def `122926`: `122926` = 122926.asInstanceOf[`122926`]
+  
+  @scala.inline
+  def `122927`: `122927` = 122927.asInstanceOf[`122927`]
+  
+  @scala.inline
+  def `122928`: `122928` = 122928.asInstanceOf[`122928`]
+  
+  @scala.inline
+  def `122929`: `122929` = 122929.asInstanceOf[`122929`]
+  
+  @scala.inline
+  def `122930`: `122930` = 122930.asInstanceOf[`122930`]
+  
+  @scala.inline
+  def `122931`: `122931` = 122931.asInstanceOf[`122931`]
+  
+  @scala.inline
+  def `122932`: `122932` = 122932.asInstanceOf[`122932`]
+  
+  @scala.inline
+  def `122933`: `122933` = 122933.asInstanceOf[`122933`]
+  
+  @scala.inline
+  def `122934`: `122934` = 122934.asInstanceOf[`122934`]
+  
+  @scala.inline
+  def `122935`: `122935` = 122935.asInstanceOf[`122935`]
+  
+  @scala.inline
+  def `122936`: `122936` = 122936.asInstanceOf[`122936`]
+  
+  @scala.inline
+  def `122937`: `122937` = 122937.asInstanceOf[`122937`]
+  
+  @scala.inline
+  def `122938`: `122938` = 122938.asInstanceOf[`122938`]
+  
+  @scala.inline
+  def `122939`: `122939` = 122939.asInstanceOf[`122939`]
+  
+  @scala.inline
+  def `122940`: `122940` = 122940.asInstanceOf[`122940`]
+  
+  @scala.inline
+  def `122941`: `122941` = 122941.asInstanceOf[`122941`]
+  
+  @scala.inline
+  def `122942`: `122942` = 122942.asInstanceOf[`122942`]
+  
+  @scala.inline
+  def `122943`: `122943` = 122943.asInstanceOf[`122943`]
+  
+  @scala.inline
+  def `122944`: `122944` = 122944.asInstanceOf[`122944`]
+  
+  @scala.inline
+  def `122945`: `122945` = 122945.asInstanceOf[`122945`]
+  
+  @scala.inline
+  def `122946`: `122946` = 122946.asInstanceOf[`122946`]
+  
+  @scala.inline
+  def `122947`: `122947` = 122947.asInstanceOf[`122947`]
+  
+  @scala.inline
+  def `122948`: `122948` = 122948.asInstanceOf[`122948`]
+  
+  @scala.inline
+  def `122949`: `122949` = 122949.asInstanceOf[`122949`]
+  
+  @scala.inline
+  def `122950`: `122950` = 122950.asInstanceOf[`122950`]
+  
+  @scala.inline
+  def `122951`: `122951` = 122951.asInstanceOf[`122951`]
+  
+  @scala.inline
+  def `122952`: `122952` = 122952.asInstanceOf[`122952`]
+  
+  @scala.inline
+  def `122953`: `122953` = 122953.asInstanceOf[`122953`]
+  
+  @scala.inline
+  def `122954`: `122954` = 122954.asInstanceOf[`122954`]
+  
+  @scala.inline
+  def `122955`: `122955` = 122955.asInstanceOf[`122955`]
+  
+  @scala.inline
+  def `122956`: `122956` = 122956.asInstanceOf[`122956`]
+  
+  @scala.inline
+  def `122957`: `122957` = 122957.asInstanceOf[`122957`]
+  
+  @scala.inline
+  def `122958`: `122958` = 122958.asInstanceOf[`122958`]
+  
+  @scala.inline
+  def `122959`: `122959` = 122959.asInstanceOf[`122959`]
+  
+  @scala.inline
+  def `122960`: `122960` = 122960.asInstanceOf[`122960`]
+  
+  @scala.inline
+  def `122961`: `122961` = 122961.asInstanceOf[`122961`]
+  
+  @scala.inline
+  def `122962`: `122962` = 122962.asInstanceOf[`122962`]
+  
+  @scala.inline
+  def `122963`: `122963` = 122963.asInstanceOf[`122963`]
+  
+  @scala.inline
+  def `122964`: `122964` = 122964.asInstanceOf[`122964`]
+  
+  @scala.inline
+  def `122965`: `122965` = 122965.asInstanceOf[`122965`]
+  
+  @scala.inline
+  def `122966`: `122966` = 122966.asInstanceOf[`122966`]
+  
+  @scala.inline
+  def `122967`: `122967` = 122967.asInstanceOf[`122967`]
+  
+  @scala.inline
+  def `122968`: `122968` = 122968.asInstanceOf[`122968`]
+  
+  @scala.inline
+  def `122969`: `122969` = 122969.asInstanceOf[`122969`]
+  
+  @scala.inline
+  def `122970`: `122970` = 122970.asInstanceOf[`122970`]
+  
+  @scala.inline
+  def `122971`: `122971` = 122971.asInstanceOf[`122971`]
+  
+  @scala.inline
+  def `122972`: `122972` = 122972.asInstanceOf[`122972`]
+  
+  @scala.inline
+  def `122973`: `122973` = 122973.asInstanceOf[`122973`]
+  
+  @scala.inline
+  def `122974`: `122974` = 122974.asInstanceOf[`122974`]
+  
+  @scala.inline
+  def `122975`: `122975` = 122975.asInstanceOf[`122975`]
+  
+  @scala.inline
+  def `122976`: `122976` = 122976.asInstanceOf[`122976`]
+  
+  @scala.inline
+  def `122977`: `122977` = 122977.asInstanceOf[`122977`]
+  
+  @scala.inline
+  def `1230`: `1230` = 1230.asInstanceOf[`1230`]
+  
+  @scala.inline
+  def `1231`: `1231` = 1231.asInstanceOf[`1231`]
+  
+  @scala.inline
+  def `1232`: `1232` = 1232.asInstanceOf[`1232`]
+  
+  @scala.inline
+  def `1233`: `1233` = 1233.asInstanceOf[`1233`]
+  
+  @scala.inline
+  def `1234`: `1234` = 1234.asInstanceOf[`1234`]
+  
+  @scala.inline
+  def `1235`: `1235` = 1235.asInstanceOf[`1235`]
+  
+  @scala.inline
+  def `1236`: `1236` = 1236.asInstanceOf[`1236`]
+  
+  @scala.inline
+  def `1237`: `1237` = 1237.asInstanceOf[`1237`]
+  
+  @scala.inline
+  def `1238`: `1238` = 1238.asInstanceOf[`1238`]
+  
+  @scala.inline
+  def `1239`: `1239` = 1239.asInstanceOf[`1239`]
+  
+  @scala.inline
+  def `1240`: `1240` = 1240.asInstanceOf[`1240`]
+  
+  @scala.inline
+  def `128`: `128` = 128.asInstanceOf[`128`]
+  
+  @scala.inline
+  def `1280`: `1280` = 1280.asInstanceOf[`1280`]
+  
+  @scala.inline
+  def `1281`: `1281` = 1281.asInstanceOf[`1281`]
+  
+  @scala.inline
+  def `1282`: `1282` = 1282.asInstanceOf[`1282`]
+  
+  @scala.inline
+  def `1283`: `1283` = 1283.asInstanceOf[`1283`]
+  
+  @scala.inline
+  def `1284`: `1284` = 1284.asInstanceOf[`1284`]
+  
+  @scala.inline
+  def `1285`: `1285` = 1285.asInstanceOf[`1285`]
+  
+  @scala.inline
+  def `1286`: `1286` = 1286.asInstanceOf[`1286`]
+  
+  @scala.inline
+  def `1287`: `1287` = 1287.asInstanceOf[`1287`]
+  
+  @scala.inline
+  def `1288`: `1288` = 1288.asInstanceOf[`1288`]
+  
+  @scala.inline
+  def `1289`: `1289` = 1289.asInstanceOf[`1289`]
+  
+  @scala.inline
+  def `1290`: `1290` = 1290.asInstanceOf[`1290`]
+  
+  @scala.inline
+  def `1291`: `1291` = 1291.asInstanceOf[`1291`]
+  
+  @scala.inline
+  def `1292`: `1292` = 1292.asInstanceOf[`1292`]
+  
+  @scala.inline
+  def `1293`: `1293` = 1293.asInstanceOf[`1293`]
+  
+  @scala.inline
+  def `1294`: `1294` = 1294.asInstanceOf[`1294`]
+  
+  @scala.inline
+  def `1295`: `1295` = 1295.asInstanceOf[`1295`]
+  
+  @scala.inline
+  def `1296`: `1296` = 1296.asInstanceOf[`1296`]
+  
+  @scala.inline
+  def `1297`: `1297` = 1297.asInstanceOf[`1297`]
+  
+  @scala.inline
+  def `1298`: `1298` = 1298.asInstanceOf[`1298`]
+  
+  @scala.inline
+  def `1299`: `1299` = 1299.asInstanceOf[`1299`]
+  
+  @scala.inline
+  def `13`: `13` = 13.asInstanceOf[`13`]
+  
+  @scala.inline
+  def `1300`: `1300` = 1300.asInstanceOf[`1300`]
+  
+  @scala.inline
+  def `1301`: `1301` = 1301.asInstanceOf[`1301`]
+  
+  @scala.inline
+  def `1302`: `1302` = 1302.asInstanceOf[`1302`]
+  
+  @scala.inline
+  def `1303`: `1303` = 1303.asInstanceOf[`1303`]
+  
+  @scala.inline
+  def `1304`: `1304` = 1304.asInstanceOf[`1304`]
+  
+  @scala.inline
+  def `1305`: `1305` = 1305.asInstanceOf[`1305`]
+  
+  @scala.inline
+  def `1306`: `1306` = 1306.asInstanceOf[`1306`]
+  
+  @scala.inline
+  def `1307`: `1307` = 1307.asInstanceOf[`1307`]
+  
+  @scala.inline
+  def `1308`: `1308` = 1308.asInstanceOf[`1308`]
+  
+  @scala.inline
+  def `1309`: `1309` = 1309.asInstanceOf[`1309`]
+  
+  @scala.inline
+  def `1310`: `1310` = 1310.asInstanceOf[`1310`]
+  
+  @scala.inline
+  def `131072`: `131072` = 131072.asInstanceOf[`131072`]
+  
+  @scala.inline
+  def `1311`: `1311` = 1311.asInstanceOf[`1311`]
+  
+  @scala.inline
+  def `1312`: `1312` = 1312.asInstanceOf[`1312`]
+  
+  @scala.inline
+  def `1313`: `1313` = 1313.asInstanceOf[`1313`]
+  
+  @scala.inline
+  def `1314`: `1314` = 1314.asInstanceOf[`1314`]
+  
+  @scala.inline
+  def `1315`: `1315` = 1315.asInstanceOf[`1315`]
+  
+  @scala.inline
+  def `1316`: `1316` = 1316.asInstanceOf[`1316`]
+  
+  @scala.inline
+  def `1317`: `1317` = 1317.asInstanceOf[`1317`]
+  
+  @scala.inline
+  def `1318`: `1318` = 1318.asInstanceOf[`1318`]
+  
+  @scala.inline
+  def `134217728`: `134217728` = 134217728.asInstanceOf[`134217728`]
+  
+  @scala.inline
+  def `134695760`: `134695760` = 134695760.asInstanceOf[`134695760`]
+  
+  @scala.inline
+  def `14`: `14` = 14.asInstanceOf[`14`]
+  
+  @scala.inline
+  def `15`: `15` = 15.asInstanceOf[`15`]
+  
+  @scala.inline
+  def `150.000000`: `150.000000` = 150.000000.asInstanceOf[`150.000000`]
+  
+  @scala.inline
+  def `1536`: `1536` = 1536.asInstanceOf[`1536`]
+  
+  @scala.inline
+  def `1537`: `1537` = 1537.asInstanceOf[`1537`]
+  
+  @scala.inline
+  def `1538`: `1538` = 1538.asInstanceOf[`1538`]
+  
+  @scala.inline
+  def `1539`: `1539` = 1539.asInstanceOf[`1539`]
+  
+  @scala.inline
+  def `1540`: `1540` = 1540.asInstanceOf[`1540`]
+  
+  @scala.inline
+  def `1541`: `1541` = 1541.asInstanceOf[`1541`]
+  
+  @scala.inline
+  def `1542`: `1542` = 1542.asInstanceOf[`1542`]
+  
+  @scala.inline
+  def `1543`: `1543` = 1543.asInstanceOf[`1543`]
+  
+  @scala.inline
+  def `1544`: `1544` = 1544.asInstanceOf[`1544`]
+  
+  @scala.inline
+  def `1545`: `1545` = 1545.asInstanceOf[`1545`]
+  
+  @scala.inline
+  def `1546`: `1546` = 1546.asInstanceOf[`1546`]
+  
+  @scala.inline
+  def `1547`: `1547` = 1547.asInstanceOf[`1547`]
+  
+  @scala.inline
+  def `1548`: `1548` = 1548.asInstanceOf[`1548`]
+  
+  @scala.inline
+  def `1549`: `1549` = 1549.asInstanceOf[`1549`]
+  
+  @scala.inline
+  def `1550`: `1550` = 1550.asInstanceOf[`1550`]
+  
+  @scala.inline
+  def `1551`: `1551` = 1551.asInstanceOf[`1551`]
+  
+  @scala.inline
+  def `1552`: `1552` = 1552.asInstanceOf[`1552`]
+  
+  @scala.inline
+  def `1553`: `1553` = 1553.asInstanceOf[`1553`]
+  
+  @scala.inline
+  def `1554`: `1554` = 1554.asInstanceOf[`1554`]
+  
+  @scala.inline
+  def `1555`: `1555` = 1555.asInstanceOf[`1555`]
+  
+  @scala.inline
+  def `1556`: `1556` = 1556.asInstanceOf[`1556`]
+  
+  @scala.inline
+  def `1557`: `1557` = 1557.asInstanceOf[`1557`]
+  
+  @scala.inline
+  def `1558`: `1558` = 1558.asInstanceOf[`1558`]
+  
+  @scala.inline
+  def `1559`: `1559` = 1559.asInstanceOf[`1559`]
+  
+  @scala.inline
+  def `1560`: `1560` = 1560.asInstanceOf[`1560`]
+  
+  @scala.inline
+  def `1561`: `1561` = 1561.asInstanceOf[`1561`]
+  
+  @scala.inline
+  def `1562`: `1562` = 1562.asInstanceOf[`1562`]
+  
+  @scala.inline
+  def `1563`: `1563` = 1563.asInstanceOf[`1563`]
+  
+  @scala.inline
+  def `1564`: `1564` = 1564.asInstanceOf[`1564`]
+  
+  @scala.inline
+  def `1565`: `1565` = 1565.asInstanceOf[`1565`]
+  
+  @scala.inline
+  def `16`: `16` = 16.asInstanceOf[`16`]
+  
+  @scala.inline
+  def `16384`: `16384` = 16384.asInstanceOf[`16384`]
+  
+  @scala.inline
+  def `16777216`: `16777216` = 16777216.asInstanceOf[`16777216`]
+  
+  @scala.inline
+  def `17`: `17` = 17.asInstanceOf[`17`]
+  
+  @scala.inline
+  def `175.000000`: `175.000000` = 175.000000.asInstanceOf[`175.000000`]
+  
+  @scala.inline
+  def `18`: `18` = 18.asInstanceOf[`18`]
+  
+  @scala.inline
+  def `19`: `19` = 19.asInstanceOf[`19`]
+  
+  @scala.inline
+  def `196608`: `196608` = 196608.asInstanceOf[`196608`]
+  
+  @scala.inline
+  def `2`: `2` = 2.asInstanceOf[`2`]
+  
+  @scala.inline
+  def `20`: `20` = 20.asInstanceOf[`20`]
+  
+  @scala.inline
+  def `200`: `200` = 200.asInstanceOf[`200`]
+  
+  @scala.inline
+  def `200.000000`: `200.000000` = 200.000000.asInstanceOf[`200.000000`]
+  
+  @scala.inline
+  def `2000`: `2000` = 2000.asInstanceOf[`2000`]
+  
+  @scala.inline
+  def `2001`: `2001` = 2001.asInstanceOf[`2001`]
+  
+  @scala.inline
+  def `2002`: `2002` = 2002.asInstanceOf[`2002`]
+  
+  @scala.inline
+  def `2003`: `2003` = 2003.asInstanceOf[`2003`]
+  
+  @scala.inline
+  def `2004`: `2004` = 2004.asInstanceOf[`2004`]
+  
+  @scala.inline
+  def `2005`: `2005` = 2005.asInstanceOf[`2005`]
+  
+  @scala.inline
+  def `2006`: `2006` = 2006.asInstanceOf[`2006`]
+  
+  @scala.inline
+  def `2007`: `2007` = 2007.asInstanceOf[`2007`]
+  
+  @scala.inline
+  def `2008`: `2008` = 2008.asInstanceOf[`2008`]
+  
+  @scala.inline
+  def `2009`: `2009` = 2009.asInstanceOf[`2009`]
+  
+  @scala.inline
+  def `201`: `201` = 201.asInstanceOf[`201`]
+  
+  @scala.inline
+  def `2010`: `2010` = 2010.asInstanceOf[`2010`]
+  
+  @scala.inline
+  def `2011`: `2011` = 2011.asInstanceOf[`2011`]
+  
+  @scala.inline
+  def `202`: `202` = 202.asInstanceOf[`202`]
+  
+  @scala.inline
+  def `2048`: `2048` = 2048.asInstanceOf[`2048`]
+  
+  @scala.inline
+  def `207`: `207` = 207.asInstanceOf[`207`]
+  
+  @scala.inline
+  def `208`: `208` = 208.asInstanceOf[`208`]
+  
+  @scala.inline
+  def `209`: `209` = 209.asInstanceOf[`209`]
+  
+  @scala.inline
+  def `2097152`: `2097152` = 2097152.asInstanceOf[`2097152`]
+  
+  @scala.inline
+  def `21`: `21` = 21.asInstanceOf[`21`]
+  
+  @scala.inline
+  def `210`: `210` = 210.asInstanceOf[`210`]
+  
+  @scala.inline
+  def `2100`: `2100` = 2100.asInstanceOf[`2100`]
+  
+  @scala.inline
+  def `2101`: `2101` = 2101.asInstanceOf[`2101`]
+  
+  @scala.inline
+  def `2102`: `2102` = 2102.asInstanceOf[`2102`]
+  
+  @scala.inline
+  def `2103`: `2103` = 2103.asInstanceOf[`2103`]
+  
+  @scala.inline
+  def `2104`: `2104` = 2104.asInstanceOf[`2104`]
+  
+  @scala.inline
+  def `2105`: `2105` = 2105.asInstanceOf[`2105`]
+  
+  @scala.inline
+  def `2106`: `2106` = 2106.asInstanceOf[`2106`]
+  
+  @scala.inline
+  def `2107`: `2107` = 2107.asInstanceOf[`2107`]
+  
+  @scala.inline
+  def `2108`: `2108` = 2108.asInstanceOf[`2108`]
+  
+  @scala.inline
+  def `2147483647`: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  
+  @scala.inline
+  def `22`: `22` = 22.asInstanceOf[`22`]
+  
+  @scala.inline
+  def `23`: `23` = 23.asInstanceOf[`23`]
+  
+  @scala.inline
+  def `24`: `24` = 24.asInstanceOf[`24`]
+  
+  @scala.inline
+  def `25`: `25` = 25.asInstanceOf[`25`]
+  
+  @scala.inline
+  def `255`: `255` = 255.asInstanceOf[`255`]
+  
+  @scala.inline
+  def `256`: `256` = 256.asInstanceOf[`256`]
+  
+  @scala.inline
+  def `257`: `257` = 257.asInstanceOf[`257`]
+  
+  @scala.inline
+  def `258`: `258` = 258.asInstanceOf[`258`]
+  
+  @scala.inline
+  def `259`: `259` = 259.asInstanceOf[`259`]
+  
+  @scala.inline
+  def `26`: `26` = 26.asInstanceOf[`26`]
+  
+  @scala.inline
+  def `260`: `260` = 260.asInstanceOf[`260`]
+  
+  @scala.inline
+  def `261`: `261` = 261.asInstanceOf[`261`]
+  
+  @scala.inline
+  def `262`: `262` = 262.asInstanceOf[`262`]
+  
+  @scala.inline
+  def `262144`: `262144` = 262144.asInstanceOf[`262144`]
+  
+  @scala.inline
+  def `263`: `263` = 263.asInstanceOf[`263`]
+  
+  @scala.inline
+  def `264`: `264` = 264.asInstanceOf[`264`]
+  
+  @scala.inline
+  def `265`: `265` = 265.asInstanceOf[`265`]
+  
+  @scala.inline
+  def `268435456`: `268435456` = 268435456.asInstanceOf[`268435456`]
+  
+  @scala.inline
+  def `27`: `27` = 27.asInstanceOf[`27`]
+  
+  @scala.inline
+  def `28`: `28` = 28.asInstanceOf[`28`]
+  
+  @scala.inline
+  def `29`: `29` = 29.asInstanceOf[`29`]
+  
+  @scala.inline
+  def `3`: `3` = 3.asInstanceOf[`3`]
+  
+  @scala.inline
+  def `30`: `30` = 30.asInstanceOf[`30`]
+  
+  @scala.inline
+  def `300`: `300` = 300.asInstanceOf[`300`]
+  
+  @scala.inline
+  def `301`: `301` = 301.asInstanceOf[`301`]
+  
+  @scala.inline
+  def `302`: `302` = 302.asInstanceOf[`302`]
+  
+  @scala.inline
+  def `303`: `303` = 303.asInstanceOf[`303`]
+  
+  @scala.inline
+  def `304`: `304` = 304.asInstanceOf[`304`]
+  
+  @scala.inline
+  def `31`: `31` = 31.asInstanceOf[`31`]
+  
+  @scala.inline
+  def `32`: `32` = 32.asInstanceOf[`32`]
+  
+  @scala.inline
+  def `32512`: `32512` = 32512.asInstanceOf[`32512`]
+  
+  @scala.inline
+  def `32767`: `32767` = 32767.asInstanceOf[`32767`]
+  
+  @scala.inline
+  def `32768`: `32768` = 32768.asInstanceOf[`32768`]
+  
+  @scala.inline
+  def `327680`: `327680` = 327680.asInstanceOf[`327680`]
+  
+  @scala.inline
+  def `33`: `33` = 33.asInstanceOf[`33`]
+  
+  @scala.inline
+  def `33554432`: `33554432` = 33554432.asInstanceOf[`33554432`]
+  
+  @scala.inline
+  def `33639248`: `33639248` = 33639248.asInstanceOf[`33639248`]
+  
+  @scala.inline
+  def `34`: `34` = 34.asInstanceOf[`34`]
+  
+  @scala.inline
+  def `35`: `35` = 35.asInstanceOf[`35`]
+  
+  @scala.inline
+  def `36`: `36` = 36.asInstanceOf[`36`]
+  
+  @scala.inline
+  def `37`: `37` = 37.asInstanceOf[`37`]
+  
+  @scala.inline
+  def `38`: `38` = 38.asInstanceOf[`38`]
+  
+  @scala.inline
+  def `3840`: `3840` = 3840.asInstanceOf[`3840`]
+  
+  @scala.inline
+  def `39`: `39` = 39.asInstanceOf[`39`]
+  
+  @scala.inline
+  def `393216`: `393216` = 393216.asInstanceOf[`393216`]
+  
+  @scala.inline
+  def `4`: `4` = 4.asInstanceOf[`4`]
+  
+  @scala.inline
+  def `40`: `40` = 40.asInstanceOf[`40`]
+  
+  @scala.inline
+  def `400`: `400` = 400.asInstanceOf[`400`]
+  
+  @scala.inline
+  def `4096`: `4096` = 4096.asInstanceOf[`4096`]
+  
+  @scala.inline
+  def `41`: `41` = 41.asInstanceOf[`41`]
+  
+  @scala.inline
+  def `4194304`: `4194304` = 4194304.asInstanceOf[`4194304`]
+  
+  @scala.inline
+  def `42`: `42` = 42.asInstanceOf[`42`]
+  
+  @scala.inline
+  def `43`: `43` = 43.asInstanceOf[`43`]
+  
+  @scala.inline
+  def `44`: `44` = 44.asInstanceOf[`44`]
+  
+  @scala.inline
+  def `45`: `45` = 45.asInstanceOf[`45`]
+  
+  @scala.inline
+  def `46`: `46` = 46.asInstanceOf[`46`]
+  
+  @scala.inline
+  def `47`: `47` = 47.asInstanceOf[`47`]
+  
+  @scala.inline
+  def `48`: `48` = 48.asInstanceOf[`48`]
+  
+  @scala.inline
+  def `49`: `49` = 49.asInstanceOf[`49`]
+  
+  @scala.inline
+  def `5`: `5` = 5.asInstanceOf[`5`]
+  
+  @scala.inline
+  def `50`: `50` = 50.asInstanceOf[`50`]
+  
+  @scala.inline
+  def `50.000000`: `50.000000` = 50.000000.asInstanceOf[`50.000000`]
+  
+  @scala.inline
+  def `500`: `500` = 500.asInstanceOf[`500`]
+  
+  @scala.inline
+  def `51`: `51` = 51.asInstanceOf[`51`]
+  
+  @scala.inline
+  def `512`: `512` = 512.asInstanceOf[`512`]
+  
+  @scala.inline
+  def `513`: `513` = 513.asInstanceOf[`513`]
+  
+  @scala.inline
+  def `514`: `514` = 514.asInstanceOf[`514`]
+  
+  @scala.inline
+  def `515`: `515` = 515.asInstanceOf[`515`]
+  
+  @scala.inline
+  def `516`: `516` = 516.asInstanceOf[`516`]
+  
+  @scala.inline
+  def `517`: `517` = 517.asInstanceOf[`517`]
+  
+  @scala.inline
+  def `518`: `518` = 518.asInstanceOf[`518`]
+  
+  @scala.inline
+  def `519`: `519` = 519.asInstanceOf[`519`]
+  
+  @scala.inline
+  def `52`: `52` = 52.asInstanceOf[`52`]
+  
+  @scala.inline
+  def `520`: `520` = 520.asInstanceOf[`520`]
+  
+  @scala.inline
+  def `521`: `521` = 521.asInstanceOf[`521`]
+  
+  @scala.inline
+  def `522`: `522` = 522.asInstanceOf[`522`]
+  
+  @scala.inline
+  def `523`: `523` = 523.asInstanceOf[`523`]
+  
+  @scala.inline
+  def `524`: `524` = 524.asInstanceOf[`524`]
+  
+  @scala.inline
+  def `524288`: `524288` = 524288.asInstanceOf[`524288`]
+  
+  @scala.inline
+  def `525`: `525` = 525.asInstanceOf[`525`]
+  
+  @scala.inline
+  def `526`: `526` = 526.asInstanceOf[`526`]
+  
+  @scala.inline
+  def `527`: `527` = 527.asInstanceOf[`527`]
+  
+  @scala.inline
+  def `528`: `528` = 528.asInstanceOf[`528`]
+  
+  @scala.inline
+  def `529`: `529` = 529.asInstanceOf[`529`]
+  
+  @scala.inline
+  def `53`: `53` = 53.asInstanceOf[`53`]
+  
+  @scala.inline
+  def `530`: `530` = 530.asInstanceOf[`530`]
+  
+  @scala.inline
+  def `531`: `531` = 531.asInstanceOf[`531`]
+  
+  @scala.inline
+  def `532`: `532` = 532.asInstanceOf[`532`]
+  
+  @scala.inline
+  def `533`: `533` = 533.asInstanceOf[`533`]
+  
+  @scala.inline
+  def `534`: `534` = 534.asInstanceOf[`534`]
+  
+  @scala.inline
+  def `535`: `535` = 535.asInstanceOf[`535`]
+  
+  @scala.inline
+  def `536`: `536` = 536.asInstanceOf[`536`]
+  
+  @scala.inline
+  def `536870912`: `536870912` = 536870912.asInstanceOf[`536870912`]
+  
+  @scala.inline
+  def `537`: `537` = 537.asInstanceOf[`537`]
+  
+  @scala.inline
+  def `54`: `54` = 54.asInstanceOf[`54`]
+  
+  @scala.inline
+  def `55`: `55` = 55.asInstanceOf[`55`]
+  
+  @scala.inline
+  def `550`: `550` = 550.asInstanceOf[`550`]
+  
+  @scala.inline
+  def `56`: `56` = 56.asInstanceOf[`56`]
+  
+  @scala.inline
+  def `57`: `57` = 57.asInstanceOf[`57`]
+  
+  @scala.inline
+  def `58`: `58` = 58.asInstanceOf[`58`]
+  
+  @scala.inline
+  def `59`: `59` = 59.asInstanceOf[`59`]
+  
+  @scala.inline
+  def `6`: `6` = 6.asInstanceOf[`6`]
+  
+  @scala.inline
+  def `60`: `60` = 60.asInstanceOf[`60`]
+  
+  @scala.inline
+  def `60.000000`: `60.000000` = 60.000000.asInstanceOf[`60.000000`]
+  
+  @scala.inline
+  def `61`: `61` = 61.asInstanceOf[`61`]
+  
+  @scala.inline
+  def `62`: `62` = 62.asInstanceOf[`62`]
+  
+  @scala.inline
+  def `63`: `63` = 63.asInstanceOf[`63`]
+  
+  @scala.inline
+  def `64`: `64` = 64.asInstanceOf[`64`]
+  
+  @scala.inline
+  def `65`: `65` = 65.asInstanceOf[`65`]
+  
+  @scala.inline
+  def `65535`: `65535` = 65535.asInstanceOf[`65535`]
+  
+  @scala.inline
+  def `65536`: `65536` = 65536.asInstanceOf[`65536`]
+  
+  @scala.inline
+  def `66`: `66` = 66.asInstanceOf[`66`]
+  
+  @scala.inline
+  def `67`: `67` = 67.asInstanceOf[`67`]
+  
+  @scala.inline
+  def `67108864`: `67108864` = 67108864.asInstanceOf[`67108864`]
+  
+  @scala.inline
+  def `67324752`: `67324752` = 67324752.asInstanceOf[`67324752`]
+  
+  @scala.inline
+  def `68`: `68` = 68.asInstanceOf[`68`]
+  
+  @scala.inline
+  def `69`: `69` = 69.asInstanceOf[`69`]
+  
+  @scala.inline
+  def `7`: `7` = 7.asInstanceOf[`7`]
+  
+  @scala.inline
+  def `70`: `70` = 70.asInstanceOf[`70`]
+  
+  @scala.inline
+  def `700`: `700` = 700.asInstanceOf[`700`]
+  
+  @scala.inline
+  def `71`: `71` = 71.asInstanceOf[`71`]
+  
+  @scala.inline
+  def `72`: `72` = 72.asInstanceOf[`72`]
+  
+  @scala.inline
+  def `73`: `73` = 73.asInstanceOf[`73`]
+  
+  @scala.inline
+  def `74`: `74` = 74.asInstanceOf[`74`]
+  
+  @scala.inline
+  def `75`: `75` = 75.asInstanceOf[`75`]
+  
+  @scala.inline
+  def `75.000000`: `75.000000` = 75.000000.asInstanceOf[`75.000000`]
+  
+  @scala.inline
+  def `76`: `76` = 76.asInstanceOf[`76`]
+  
+  @scala.inline
+  def `768`: `768` = 768.asInstanceOf[`768`]
+  
+  @scala.inline
+  def `769`: `769` = 769.asInstanceOf[`769`]
+  
+  @scala.inline
+  def `77`: `77` = 77.asInstanceOf[`77`]
+  
+  @scala.inline
+  def `770`: `770` = 770.asInstanceOf[`770`]
+  
+  @scala.inline
+  def `771`: `771` = 771.asInstanceOf[`771`]
+  
+  @scala.inline
+  def `772`: `772` = 772.asInstanceOf[`772`]
+  
+  @scala.inline
+  def `773`: `773` = 773.asInstanceOf[`773`]
+  
+  @scala.inline
+  def `774`: `774` = 774.asInstanceOf[`774`]
+  
+  @scala.inline
+  def `775`: `775` = 775.asInstanceOf[`775`]
+  
+  @scala.inline
+  def `776`: `776` = 776.asInstanceOf[`776`]
+  
+  @scala.inline
+  def `777`: `777` = 777.asInstanceOf[`777`]
+  
+  @scala.inline
+  def `778`: `778` = 778.asInstanceOf[`778`]
+  
+  @scala.inline
+  def `779`: `779` = 779.asInstanceOf[`779`]
+  
+  @scala.inline
+  def `78`: `78` = 78.asInstanceOf[`78`]
+  
+  @scala.inline
+  def `780`: `780` = 780.asInstanceOf[`780`]
+  
+  @scala.inline
+  def `781`: `781` = 781.asInstanceOf[`781`]
+  
+  @scala.inline
+  def `782`: `782` = 782.asInstanceOf[`782`]
+  
+  @scala.inline
+  def `783`: `783` = 783.asInstanceOf[`783`]
+  
+  @scala.inline
+  def `784`: `784` = 784.asInstanceOf[`784`]
+  
+  @scala.inline
+  def `785`: `785` = 785.asInstanceOf[`785`]
+  
+  @scala.inline
+  def `786`: `786` = 786.asInstanceOf[`786`]
+  
+  @scala.inline
+  def `787`: `787` = 787.asInstanceOf[`787`]
+  
+  @scala.inline
+  def `788`: `788` = 788.asInstanceOf[`788`]
+  
+  @scala.inline
+  def `789`: `789` = 789.asInstanceOf[`789`]
+  
+  @scala.inline
+  def `79`: `79` = 79.asInstanceOf[`79`]
+  
+  @scala.inline
+  def `790`: `790` = 790.asInstanceOf[`790`]
+  
+  @scala.inline
+  def `791`: `791` = 791.asInstanceOf[`791`]
+  
+  @scala.inline
+  def `792`: `792` = 792.asInstanceOf[`792`]
+  
+  @scala.inline
+  def `793`: `793` = 793.asInstanceOf[`793`]
+  
+  @scala.inline
+  def `8`: `8` = 8.asInstanceOf[`8`]
+  
+  @scala.inline
+  def `80`: `80` = 80.asInstanceOf[`80`]
+  
+  @scala.inline
+  def `800`: `800` = 800.asInstanceOf[`800`]
+  
+  @scala.inline
+  def `81`: `81` = 81.asInstanceOf[`81`]
+  
+  @scala.inline
+  def `8192`: `8192` = 8192.asInstanceOf[`8192`]
+  
+  @scala.inline
+  def `82`: `82` = 82.asInstanceOf[`82`]
+  
+  @scala.inline
+  def `83`: `83` = 83.asInstanceOf[`83`]
+  
+  @scala.inline
+  def `8388608`: `8388608` = 8388608.asInstanceOf[`8388608`]
+  
+  @scala.inline
+  def `84`: `84` = 84.asInstanceOf[`84`]
+  
+  @scala.inline
+  def `85`: `85` = 85.asInstanceOf[`85`]
+  
+  @scala.inline
+  def `86`: `86` = 86.asInstanceOf[`86`]
+  
+  @scala.inline
+  def `87`: `87` = 87.asInstanceOf[`87`]
+  
+  @scala.inline
+  def `88`: `88` = 88.asInstanceOf[`88`]
+  
+  @scala.inline
+  def `89`: `89` = 89.asInstanceOf[`89`]
+  
+  @scala.inline
+  def `9`: `9` = 9.asInstanceOf[`9`]
+  
+  @scala.inline
+  def `90`: `90` = 90.asInstanceOf[`90`]
+  
+  @scala.inline
+  def `90.000000`: `90.000000` = 90.000000.asInstanceOf[`90.000000`]
+  
+  @scala.inline
+  def `900`: `900` = 900.asInstanceOf[`900`]
+  
+  @scala.inline
+  def `91`: `91` = 91.asInstanceOf[`91`]
+  
+  @scala.inline
+  def `92`: `92` = 92.asInstanceOf[`92`]
+  
+  @scala.inline
+  def `93`: `93` = 93.asInstanceOf[`93`]
+  
+  @scala.inline
+  def `94`: `94` = 94.asInstanceOf[`94`]
+  
+  @scala.inline
+  def `95`: `95` = 95.asInstanceOf[`95`]
+  
+  @scala.inline
+  def `96`: `96` = 96.asInstanceOf[`96`]
+  
+  @scala.inline
+  def `97`: `97` = 97.asInstanceOf[`97`]
+  
+  @scala.inline
+  def `98`: `98` = 98.asInstanceOf[`98`]
+  
+  @scala.inline
+  def `99`: `99` = 99.asInstanceOf[`99`]
+  
+  @scala.inline
+  def _17179869184: _17179869184 = 17179869184.0.asInstanceOf[_17179869184]
+  
+  @scala.inline
+  def _4294967296: _4294967296 = 4294967296.0.asInstanceOf[_4294967296]
+  
+  @scala.inline
+  def _8589934592: _8589934592 = 8589934592.0.asInstanceOf[_8589934592]
+  
   @js.native
   sealed trait `-1`
     extends Constants
@@ -6421,1058 +8000,4 @@ object activexLibreofficeNumbers {
   @js.native
   sealed trait _8589934592
     extends typings.activexLibreoffice.com_.sun.star.embed.EmbedMisc.Constants
-  
-  @scala.inline
-  def `-1`: `-1` = -1.asInstanceOf[`-1`]
-  @scala.inline
-  def `-128`: `-128` = -128.asInstanceOf[`-128`]
-  @scala.inline
-  def `-2`: `-2` = -2.asInstanceOf[`-2`]
-  @scala.inline
-  def `-2147483648`: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
-  @scala.inline
-  def `-256`: `-256` = -256.asInstanceOf[`-256`]
-  @scala.inline
-  def `-3`: `-3` = -3.asInstanceOf[`-3`]
-  @scala.inline
-  def `-4`: `-4` = -4.asInstanceOf[`-4`]
-  @scala.inline
-  def `-5`: `-5` = -5.asInstanceOf[`-5`]
-  @scala.inline
-  def `-6`: `-6` = -6.asInstanceOf[`-6`]
-  @scala.inline
-  def `-7`: `-7` = -7.asInstanceOf[`-7`]
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
-  @scala.inline
-  def `0.000000`: `0.000000` = 0.000000.asInstanceOf[`0.000000`]
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
-  @scala.inline
-  def `10`: `10` = 10.asInstanceOf[`10`]
-  @scala.inline
-  def `100`: `100` = 100.asInstanceOf[`100`]
-  @scala.inline
-  def `100.000000`: `100.000000` = 100.000000.asInstanceOf[`100.000000`]
-  @scala.inline
-  def `1000`: `1000` = 1000.asInstanceOf[`1000`]
-  @scala.inline
-  def `1000000`: `1000000` = 1000000.asInstanceOf[`1000000`]
-  @scala.inline
-  def `1001`: `1001` = 1001.asInstanceOf[`1001`]
-  @scala.inline
-  def `1002`: `1002` = 1002.asInstanceOf[`1002`]
-  @scala.inline
-  def `1003`: `1003` = 1003.asInstanceOf[`1003`]
-  @scala.inline
-  def `1004`: `1004` = 1004.asInstanceOf[`1004`]
-  @scala.inline
-  def `1005`: `1005` = 1005.asInstanceOf[`1005`]
-  @scala.inline
-  def `1006`: `1006` = 1006.asInstanceOf[`1006`]
-  @scala.inline
-  def `1007`: `1007` = 1007.asInstanceOf[`1007`]
-  @scala.inline
-  def `1008`: `1008` = 1008.asInstanceOf[`1008`]
-  @scala.inline
-  def `1009`: `1009` = 1009.asInstanceOf[`1009`]
-  @scala.inline
-  def `101`: `101` = 101.asInstanceOf[`101`]
-  @scala.inline
-  def `1010`: `1010` = 1010.asInstanceOf[`1010`]
-  @scala.inline
-  def `101010256`: `101010256` = 101010256.asInstanceOf[`101010256`]
-  @scala.inline
-  def `1011`: `1011` = 1011.asInstanceOf[`1011`]
-  @scala.inline
-  def `1012`: `1012` = 1012.asInstanceOf[`1012`]
-  @scala.inline
-  def `1013`: `1013` = 1013.asInstanceOf[`1013`]
-  @scala.inline
-  def `1014`: `1014` = 1014.asInstanceOf[`1014`]
-  @scala.inline
-  def `1015`: `1015` = 1015.asInstanceOf[`1015`]
-  @scala.inline
-  def `102`: `102` = 102.asInstanceOf[`102`]
-  @scala.inline
-  def `1024`: `1024` = 1024.asInstanceOf[`1024`]
-  @scala.inline
-  def `1025`: `1025` = 1025.asInstanceOf[`1025`]
-  @scala.inline
-  def `1026`: `1026` = 1026.asInstanceOf[`1026`]
-  @scala.inline
-  def `1027`: `1027` = 1027.asInstanceOf[`1027`]
-  @scala.inline
-  def `1028`: `1028` = 1028.asInstanceOf[`1028`]
-  @scala.inline
-  def `1029`: `1029` = 1029.asInstanceOf[`1029`]
-  @scala.inline
-  def `103`: `103` = 103.asInstanceOf[`103`]
-  @scala.inline
-  def `1030`: `1030` = 1030.asInstanceOf[`1030`]
-  @scala.inline
-  def `1031`: `1031` = 1031.asInstanceOf[`1031`]
-  @scala.inline
-  def `104`: `104` = 104.asInstanceOf[`104`]
-  @scala.inline
-  def `1048576`: `1048576` = 1048576.asInstanceOf[`1048576`]
-  @scala.inline
-  def `105`: `105` = 105.asInstanceOf[`105`]
-  @scala.inline
-  def `106`: `106` = 106.asInstanceOf[`106`]
-  @scala.inline
-  def `107`: `107` = 107.asInstanceOf[`107`]
-  @scala.inline
-  def `1073741824`: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
-  @scala.inline
-  def `108`: `108` = 108.asInstanceOf[`108`]
-  @scala.inline
-  def `109`: `109` = 109.asInstanceOf[`109`]
-  @scala.inline
-  def `11`: `11` = 11.asInstanceOf[`11`]
-  @scala.inline
-  def `110`: `110` = 110.asInstanceOf[`110`]
-  @scala.inline
-  def `110.000000`: `110.000000` = 110.000000.asInstanceOf[`110.000000`]
-  @scala.inline
-  def `1100`: `1100` = 1100.asInstanceOf[`1100`]
-  @scala.inline
-  def `1101`: `1101` = 1101.asInstanceOf[`1101`]
-  @scala.inline
-  def `1102`: `1102` = 1102.asInstanceOf[`1102`]
-  @scala.inline
-  def `1103`: `1103` = 1103.asInstanceOf[`1103`]
-  @scala.inline
-  def `1104`: `1104` = 1104.asInstanceOf[`1104`]
-  @scala.inline
-  def `1105`: `1105` = 1105.asInstanceOf[`1105`]
-  @scala.inline
-  def `1106`: `1106` = 1106.asInstanceOf[`1106`]
-  @scala.inline
-  def `1107`: `1107` = 1107.asInstanceOf[`1107`]
-  @scala.inline
-  def `1108`: `1108` = 1108.asInstanceOf[`1108`]
-  @scala.inline
-  def `1109`: `1109` = 1109.asInstanceOf[`1109`]
-  @scala.inline
-  def `111`: `111` = 111.asInstanceOf[`111`]
-  @scala.inline
-  def `1110`: `1110` = 1110.asInstanceOf[`1110`]
-  @scala.inline
-  def `1111`: `1111` = 1111.asInstanceOf[`1111`]
-  @scala.inline
-  def `1112`: `1112` = 1112.asInstanceOf[`1112`]
-  @scala.inline
-  def `1113`: `1113` = 1113.asInstanceOf[`1113`]
-  @scala.inline
-  def `1114`: `1114` = 1114.asInstanceOf[`1114`]
-  @scala.inline
-  def `112`: `112` = 112.asInstanceOf[`112`]
-  @scala.inline
-  def `113`: `113` = 113.asInstanceOf[`113`]
-  @scala.inline
-  def `114`: `114` = 114.asInstanceOf[`114`]
-  @scala.inline
-  def `115`: `115` = 115.asInstanceOf[`115`]
-  @scala.inline
-  def `116`: `116` = 116.asInstanceOf[`116`]
-  @scala.inline
-  def `117`: `117` = 117.asInstanceOf[`117`]
-  @scala.inline
-  def `118`: `118` = 118.asInstanceOf[`118`]
-  @scala.inline
-  def `119`: `119` = 119.asInstanceOf[`119`]
-  @scala.inline
-  def `12`: `12` = 12.asInstanceOf[`12`]
-  @scala.inline
-  def `1200`: `1200` = 1200.asInstanceOf[`1200`]
-  @scala.inline
-  def `1201`: `1201` = 1201.asInstanceOf[`1201`]
-  @scala.inline
-  def `1202`: `1202` = 1202.asInstanceOf[`1202`]
-  @scala.inline
-  def `1203`: `1203` = 1203.asInstanceOf[`1203`]
-  @scala.inline
-  def `1204`: `1204` = 1204.asInstanceOf[`1204`]
-  @scala.inline
-  def `1205`: `1205` = 1205.asInstanceOf[`1205`]
-  @scala.inline
-  def `1206`: `1206` = 1206.asInstanceOf[`1206`]
-  @scala.inline
-  def `1207`: `1207` = 1207.asInstanceOf[`1207`]
-  @scala.inline
-  def `1208`: `1208` = 1208.asInstanceOf[`1208`]
-  @scala.inline
-  def `1209`: `1209` = 1209.asInstanceOf[`1209`]
-  @scala.inline
-  def `1210`: `1210` = 1210.asInstanceOf[`1210`]
-  @scala.inline
-  def `1211`: `1211` = 1211.asInstanceOf[`1211`]
-  @scala.inline
-  def `1212`: `1212` = 1212.asInstanceOf[`1212`]
-  @scala.inline
-  def `1213`: `1213` = 1213.asInstanceOf[`1213`]
-  @scala.inline
-  def `1214`: `1214` = 1214.asInstanceOf[`1214`]
-  @scala.inline
-  def `1215`: `1215` = 1215.asInstanceOf[`1215`]
-  @scala.inline
-  def `1216`: `1216` = 1216.asInstanceOf[`1216`]
-  @scala.inline
-  def `1217`: `1217` = 1217.asInstanceOf[`1217`]
-  @scala.inline
-  def `1218`: `1218` = 1218.asInstanceOf[`1218`]
-  @scala.inline
-  def `1219`: `1219` = 1219.asInstanceOf[`1219`]
-  @scala.inline
-  def `1220`: `1220` = 1220.asInstanceOf[`1220`]
-  @scala.inline
-  def `1221`: `1221` = 1221.asInstanceOf[`1221`]
-  @scala.inline
-  def `1222`: `1222` = 1222.asInstanceOf[`1222`]
-  @scala.inline
-  def `1223`: `1223` = 1223.asInstanceOf[`1223`]
-  @scala.inline
-  def `1224`: `1224` = 1224.asInstanceOf[`1224`]
-  @scala.inline
-  def `1225`: `1225` = 1225.asInstanceOf[`1225`]
-  @scala.inline
-  def `1226`: `1226` = 1226.asInstanceOf[`1226`]
-  @scala.inline
-  def `1227`: `1227` = 1227.asInstanceOf[`1227`]
-  @scala.inline
-  def `1228`: `1228` = 1228.asInstanceOf[`1228`]
-  @scala.inline
-  def `122880`: `122880` = 122880.asInstanceOf[`122880`]
-  @scala.inline
-  def `122881`: `122881` = 122881.asInstanceOf[`122881`]
-  @scala.inline
-  def `122882`: `122882` = 122882.asInstanceOf[`122882`]
-  @scala.inline
-  def `122883`: `122883` = 122883.asInstanceOf[`122883`]
-  @scala.inline
-  def `122884`: `122884` = 122884.asInstanceOf[`122884`]
-  @scala.inline
-  def `122885`: `122885` = 122885.asInstanceOf[`122885`]
-  @scala.inline
-  def `122886`: `122886` = 122886.asInstanceOf[`122886`]
-  @scala.inline
-  def `122887`: `122887` = 122887.asInstanceOf[`122887`]
-  @scala.inline
-  def `122888`: `122888` = 122888.asInstanceOf[`122888`]
-  @scala.inline
-  def `122889`: `122889` = 122889.asInstanceOf[`122889`]
-  @scala.inline
-  def `122890`: `122890` = 122890.asInstanceOf[`122890`]
-  @scala.inline
-  def `122891`: `122891` = 122891.asInstanceOf[`122891`]
-  @scala.inline
-  def `122892`: `122892` = 122892.asInstanceOf[`122892`]
-  @scala.inline
-  def `122893`: `122893` = 122893.asInstanceOf[`122893`]
-  @scala.inline
-  def `122894`: `122894` = 122894.asInstanceOf[`122894`]
-  @scala.inline
-  def `122895`: `122895` = 122895.asInstanceOf[`122895`]
-  @scala.inline
-  def `122896`: `122896` = 122896.asInstanceOf[`122896`]
-  @scala.inline
-  def `122897`: `122897` = 122897.asInstanceOf[`122897`]
-  @scala.inline
-  def `122898`: `122898` = 122898.asInstanceOf[`122898`]
-  @scala.inline
-  def `122899`: `122899` = 122899.asInstanceOf[`122899`]
-  @scala.inline
-  def `1229`: `1229` = 1229.asInstanceOf[`1229`]
-  @scala.inline
-  def `122900`: `122900` = 122900.asInstanceOf[`122900`]
-  @scala.inline
-  def `122901`: `122901` = 122901.asInstanceOf[`122901`]
-  @scala.inline
-  def `122902`: `122902` = 122902.asInstanceOf[`122902`]
-  @scala.inline
-  def `122903`: `122903` = 122903.asInstanceOf[`122903`]
-  @scala.inline
-  def `122904`: `122904` = 122904.asInstanceOf[`122904`]
-  @scala.inline
-  def `122905`: `122905` = 122905.asInstanceOf[`122905`]
-  @scala.inline
-  def `122906`: `122906` = 122906.asInstanceOf[`122906`]
-  @scala.inline
-  def `122907`: `122907` = 122907.asInstanceOf[`122907`]
-  @scala.inline
-  def `122908`: `122908` = 122908.asInstanceOf[`122908`]
-  @scala.inline
-  def `122909`: `122909` = 122909.asInstanceOf[`122909`]
-  @scala.inline
-  def `122910`: `122910` = 122910.asInstanceOf[`122910`]
-  @scala.inline
-  def `122911`: `122911` = 122911.asInstanceOf[`122911`]
-  @scala.inline
-  def `122912`: `122912` = 122912.asInstanceOf[`122912`]
-  @scala.inline
-  def `122913`: `122913` = 122913.asInstanceOf[`122913`]
-  @scala.inline
-  def `122914`: `122914` = 122914.asInstanceOf[`122914`]
-  @scala.inline
-  def `122915`: `122915` = 122915.asInstanceOf[`122915`]
-  @scala.inline
-  def `122916`: `122916` = 122916.asInstanceOf[`122916`]
-  @scala.inline
-  def `122917`: `122917` = 122917.asInstanceOf[`122917`]
-  @scala.inline
-  def `122918`: `122918` = 122918.asInstanceOf[`122918`]
-  @scala.inline
-  def `122919`: `122919` = 122919.asInstanceOf[`122919`]
-  @scala.inline
-  def `122920`: `122920` = 122920.asInstanceOf[`122920`]
-  @scala.inline
-  def `122921`: `122921` = 122921.asInstanceOf[`122921`]
-  @scala.inline
-  def `122922`: `122922` = 122922.asInstanceOf[`122922`]
-  @scala.inline
-  def `122923`: `122923` = 122923.asInstanceOf[`122923`]
-  @scala.inline
-  def `122924`: `122924` = 122924.asInstanceOf[`122924`]
-  @scala.inline
-  def `122925`: `122925` = 122925.asInstanceOf[`122925`]
-  @scala.inline
-  def `122926`: `122926` = 122926.asInstanceOf[`122926`]
-  @scala.inline
-  def `122927`: `122927` = 122927.asInstanceOf[`122927`]
-  @scala.inline
-  def `122928`: `122928` = 122928.asInstanceOf[`122928`]
-  @scala.inline
-  def `122929`: `122929` = 122929.asInstanceOf[`122929`]
-  @scala.inline
-  def `122930`: `122930` = 122930.asInstanceOf[`122930`]
-  @scala.inline
-  def `122931`: `122931` = 122931.asInstanceOf[`122931`]
-  @scala.inline
-  def `122932`: `122932` = 122932.asInstanceOf[`122932`]
-  @scala.inline
-  def `122933`: `122933` = 122933.asInstanceOf[`122933`]
-  @scala.inline
-  def `122934`: `122934` = 122934.asInstanceOf[`122934`]
-  @scala.inline
-  def `122935`: `122935` = 122935.asInstanceOf[`122935`]
-  @scala.inline
-  def `122936`: `122936` = 122936.asInstanceOf[`122936`]
-  @scala.inline
-  def `122937`: `122937` = 122937.asInstanceOf[`122937`]
-  @scala.inline
-  def `122938`: `122938` = 122938.asInstanceOf[`122938`]
-  @scala.inline
-  def `122939`: `122939` = 122939.asInstanceOf[`122939`]
-  @scala.inline
-  def `122940`: `122940` = 122940.asInstanceOf[`122940`]
-  @scala.inline
-  def `122941`: `122941` = 122941.asInstanceOf[`122941`]
-  @scala.inline
-  def `122942`: `122942` = 122942.asInstanceOf[`122942`]
-  @scala.inline
-  def `122943`: `122943` = 122943.asInstanceOf[`122943`]
-  @scala.inline
-  def `122944`: `122944` = 122944.asInstanceOf[`122944`]
-  @scala.inline
-  def `122945`: `122945` = 122945.asInstanceOf[`122945`]
-  @scala.inline
-  def `122946`: `122946` = 122946.asInstanceOf[`122946`]
-  @scala.inline
-  def `122947`: `122947` = 122947.asInstanceOf[`122947`]
-  @scala.inline
-  def `122948`: `122948` = 122948.asInstanceOf[`122948`]
-  @scala.inline
-  def `122949`: `122949` = 122949.asInstanceOf[`122949`]
-  @scala.inline
-  def `122950`: `122950` = 122950.asInstanceOf[`122950`]
-  @scala.inline
-  def `122951`: `122951` = 122951.asInstanceOf[`122951`]
-  @scala.inline
-  def `122952`: `122952` = 122952.asInstanceOf[`122952`]
-  @scala.inline
-  def `122953`: `122953` = 122953.asInstanceOf[`122953`]
-  @scala.inline
-  def `122954`: `122954` = 122954.asInstanceOf[`122954`]
-  @scala.inline
-  def `122955`: `122955` = 122955.asInstanceOf[`122955`]
-  @scala.inline
-  def `122956`: `122956` = 122956.asInstanceOf[`122956`]
-  @scala.inline
-  def `122957`: `122957` = 122957.asInstanceOf[`122957`]
-  @scala.inline
-  def `122958`: `122958` = 122958.asInstanceOf[`122958`]
-  @scala.inline
-  def `122959`: `122959` = 122959.asInstanceOf[`122959`]
-  @scala.inline
-  def `122960`: `122960` = 122960.asInstanceOf[`122960`]
-  @scala.inline
-  def `122961`: `122961` = 122961.asInstanceOf[`122961`]
-  @scala.inline
-  def `122962`: `122962` = 122962.asInstanceOf[`122962`]
-  @scala.inline
-  def `122963`: `122963` = 122963.asInstanceOf[`122963`]
-  @scala.inline
-  def `122964`: `122964` = 122964.asInstanceOf[`122964`]
-  @scala.inline
-  def `122965`: `122965` = 122965.asInstanceOf[`122965`]
-  @scala.inline
-  def `122966`: `122966` = 122966.asInstanceOf[`122966`]
-  @scala.inline
-  def `122967`: `122967` = 122967.asInstanceOf[`122967`]
-  @scala.inline
-  def `122968`: `122968` = 122968.asInstanceOf[`122968`]
-  @scala.inline
-  def `122969`: `122969` = 122969.asInstanceOf[`122969`]
-  @scala.inline
-  def `122970`: `122970` = 122970.asInstanceOf[`122970`]
-  @scala.inline
-  def `122971`: `122971` = 122971.asInstanceOf[`122971`]
-  @scala.inline
-  def `122972`: `122972` = 122972.asInstanceOf[`122972`]
-  @scala.inline
-  def `122973`: `122973` = 122973.asInstanceOf[`122973`]
-  @scala.inline
-  def `122974`: `122974` = 122974.asInstanceOf[`122974`]
-  @scala.inline
-  def `122975`: `122975` = 122975.asInstanceOf[`122975`]
-  @scala.inline
-  def `122976`: `122976` = 122976.asInstanceOf[`122976`]
-  @scala.inline
-  def `122977`: `122977` = 122977.asInstanceOf[`122977`]
-  @scala.inline
-  def `1230`: `1230` = 1230.asInstanceOf[`1230`]
-  @scala.inline
-  def `1231`: `1231` = 1231.asInstanceOf[`1231`]
-  @scala.inline
-  def `1232`: `1232` = 1232.asInstanceOf[`1232`]
-  @scala.inline
-  def `1233`: `1233` = 1233.asInstanceOf[`1233`]
-  @scala.inline
-  def `1234`: `1234` = 1234.asInstanceOf[`1234`]
-  @scala.inline
-  def `1235`: `1235` = 1235.asInstanceOf[`1235`]
-  @scala.inline
-  def `1236`: `1236` = 1236.asInstanceOf[`1236`]
-  @scala.inline
-  def `1237`: `1237` = 1237.asInstanceOf[`1237`]
-  @scala.inline
-  def `1238`: `1238` = 1238.asInstanceOf[`1238`]
-  @scala.inline
-  def `1239`: `1239` = 1239.asInstanceOf[`1239`]
-  @scala.inline
-  def `1240`: `1240` = 1240.asInstanceOf[`1240`]
-  @scala.inline
-  def `128`: `128` = 128.asInstanceOf[`128`]
-  @scala.inline
-  def `1280`: `1280` = 1280.asInstanceOf[`1280`]
-  @scala.inline
-  def `1281`: `1281` = 1281.asInstanceOf[`1281`]
-  @scala.inline
-  def `1282`: `1282` = 1282.asInstanceOf[`1282`]
-  @scala.inline
-  def `1283`: `1283` = 1283.asInstanceOf[`1283`]
-  @scala.inline
-  def `1284`: `1284` = 1284.asInstanceOf[`1284`]
-  @scala.inline
-  def `1285`: `1285` = 1285.asInstanceOf[`1285`]
-  @scala.inline
-  def `1286`: `1286` = 1286.asInstanceOf[`1286`]
-  @scala.inline
-  def `1287`: `1287` = 1287.asInstanceOf[`1287`]
-  @scala.inline
-  def `1288`: `1288` = 1288.asInstanceOf[`1288`]
-  @scala.inline
-  def `1289`: `1289` = 1289.asInstanceOf[`1289`]
-  @scala.inline
-  def `1290`: `1290` = 1290.asInstanceOf[`1290`]
-  @scala.inline
-  def `1291`: `1291` = 1291.asInstanceOf[`1291`]
-  @scala.inline
-  def `1292`: `1292` = 1292.asInstanceOf[`1292`]
-  @scala.inline
-  def `1293`: `1293` = 1293.asInstanceOf[`1293`]
-  @scala.inline
-  def `1294`: `1294` = 1294.asInstanceOf[`1294`]
-  @scala.inline
-  def `1295`: `1295` = 1295.asInstanceOf[`1295`]
-  @scala.inline
-  def `1296`: `1296` = 1296.asInstanceOf[`1296`]
-  @scala.inline
-  def `1297`: `1297` = 1297.asInstanceOf[`1297`]
-  @scala.inline
-  def `1298`: `1298` = 1298.asInstanceOf[`1298`]
-  @scala.inline
-  def `1299`: `1299` = 1299.asInstanceOf[`1299`]
-  @scala.inline
-  def `13`: `13` = 13.asInstanceOf[`13`]
-  @scala.inline
-  def `1300`: `1300` = 1300.asInstanceOf[`1300`]
-  @scala.inline
-  def `1301`: `1301` = 1301.asInstanceOf[`1301`]
-  @scala.inline
-  def `1302`: `1302` = 1302.asInstanceOf[`1302`]
-  @scala.inline
-  def `1303`: `1303` = 1303.asInstanceOf[`1303`]
-  @scala.inline
-  def `1304`: `1304` = 1304.asInstanceOf[`1304`]
-  @scala.inline
-  def `1305`: `1305` = 1305.asInstanceOf[`1305`]
-  @scala.inline
-  def `1306`: `1306` = 1306.asInstanceOf[`1306`]
-  @scala.inline
-  def `1307`: `1307` = 1307.asInstanceOf[`1307`]
-  @scala.inline
-  def `1308`: `1308` = 1308.asInstanceOf[`1308`]
-  @scala.inline
-  def `1309`: `1309` = 1309.asInstanceOf[`1309`]
-  @scala.inline
-  def `1310`: `1310` = 1310.asInstanceOf[`1310`]
-  @scala.inline
-  def `131072`: `131072` = 131072.asInstanceOf[`131072`]
-  @scala.inline
-  def `1311`: `1311` = 1311.asInstanceOf[`1311`]
-  @scala.inline
-  def `1312`: `1312` = 1312.asInstanceOf[`1312`]
-  @scala.inline
-  def `1313`: `1313` = 1313.asInstanceOf[`1313`]
-  @scala.inline
-  def `1314`: `1314` = 1314.asInstanceOf[`1314`]
-  @scala.inline
-  def `1315`: `1315` = 1315.asInstanceOf[`1315`]
-  @scala.inline
-  def `1316`: `1316` = 1316.asInstanceOf[`1316`]
-  @scala.inline
-  def `1317`: `1317` = 1317.asInstanceOf[`1317`]
-  @scala.inline
-  def `1318`: `1318` = 1318.asInstanceOf[`1318`]
-  @scala.inline
-  def `134217728`: `134217728` = 134217728.asInstanceOf[`134217728`]
-  @scala.inline
-  def `134695760`: `134695760` = 134695760.asInstanceOf[`134695760`]
-  @scala.inline
-  def `14`: `14` = 14.asInstanceOf[`14`]
-  @scala.inline
-  def `15`: `15` = 15.asInstanceOf[`15`]
-  @scala.inline
-  def `150.000000`: `150.000000` = 150.000000.asInstanceOf[`150.000000`]
-  @scala.inline
-  def `1536`: `1536` = 1536.asInstanceOf[`1536`]
-  @scala.inline
-  def `1537`: `1537` = 1537.asInstanceOf[`1537`]
-  @scala.inline
-  def `1538`: `1538` = 1538.asInstanceOf[`1538`]
-  @scala.inline
-  def `1539`: `1539` = 1539.asInstanceOf[`1539`]
-  @scala.inline
-  def `1540`: `1540` = 1540.asInstanceOf[`1540`]
-  @scala.inline
-  def `1541`: `1541` = 1541.asInstanceOf[`1541`]
-  @scala.inline
-  def `1542`: `1542` = 1542.asInstanceOf[`1542`]
-  @scala.inline
-  def `1543`: `1543` = 1543.asInstanceOf[`1543`]
-  @scala.inline
-  def `1544`: `1544` = 1544.asInstanceOf[`1544`]
-  @scala.inline
-  def `1545`: `1545` = 1545.asInstanceOf[`1545`]
-  @scala.inline
-  def `1546`: `1546` = 1546.asInstanceOf[`1546`]
-  @scala.inline
-  def `1547`: `1547` = 1547.asInstanceOf[`1547`]
-  @scala.inline
-  def `1548`: `1548` = 1548.asInstanceOf[`1548`]
-  @scala.inline
-  def `1549`: `1549` = 1549.asInstanceOf[`1549`]
-  @scala.inline
-  def `1550`: `1550` = 1550.asInstanceOf[`1550`]
-  @scala.inline
-  def `1551`: `1551` = 1551.asInstanceOf[`1551`]
-  @scala.inline
-  def `1552`: `1552` = 1552.asInstanceOf[`1552`]
-  @scala.inline
-  def `1553`: `1553` = 1553.asInstanceOf[`1553`]
-  @scala.inline
-  def `1554`: `1554` = 1554.asInstanceOf[`1554`]
-  @scala.inline
-  def `1555`: `1555` = 1555.asInstanceOf[`1555`]
-  @scala.inline
-  def `1556`: `1556` = 1556.asInstanceOf[`1556`]
-  @scala.inline
-  def `1557`: `1557` = 1557.asInstanceOf[`1557`]
-  @scala.inline
-  def `1558`: `1558` = 1558.asInstanceOf[`1558`]
-  @scala.inline
-  def `1559`: `1559` = 1559.asInstanceOf[`1559`]
-  @scala.inline
-  def `1560`: `1560` = 1560.asInstanceOf[`1560`]
-  @scala.inline
-  def `1561`: `1561` = 1561.asInstanceOf[`1561`]
-  @scala.inline
-  def `1562`: `1562` = 1562.asInstanceOf[`1562`]
-  @scala.inline
-  def `1563`: `1563` = 1563.asInstanceOf[`1563`]
-  @scala.inline
-  def `1564`: `1564` = 1564.asInstanceOf[`1564`]
-  @scala.inline
-  def `1565`: `1565` = 1565.asInstanceOf[`1565`]
-  @scala.inline
-  def `16`: `16` = 16.asInstanceOf[`16`]
-  @scala.inline
-  def `16384`: `16384` = 16384.asInstanceOf[`16384`]
-  @scala.inline
-  def `16777216`: `16777216` = 16777216.asInstanceOf[`16777216`]
-  @scala.inline
-  def `17`: `17` = 17.asInstanceOf[`17`]
-  @scala.inline
-  def `175.000000`: `175.000000` = 175.000000.asInstanceOf[`175.000000`]
-  @scala.inline
-  def `18`: `18` = 18.asInstanceOf[`18`]
-  @scala.inline
-  def `19`: `19` = 19.asInstanceOf[`19`]
-  @scala.inline
-  def `196608`: `196608` = 196608.asInstanceOf[`196608`]
-  @scala.inline
-  def `2`: `2` = 2.asInstanceOf[`2`]
-  @scala.inline
-  def `20`: `20` = 20.asInstanceOf[`20`]
-  @scala.inline
-  def `200`: `200` = 200.asInstanceOf[`200`]
-  @scala.inline
-  def `200.000000`: `200.000000` = 200.000000.asInstanceOf[`200.000000`]
-  @scala.inline
-  def `2000`: `2000` = 2000.asInstanceOf[`2000`]
-  @scala.inline
-  def `2001`: `2001` = 2001.asInstanceOf[`2001`]
-  @scala.inline
-  def `2002`: `2002` = 2002.asInstanceOf[`2002`]
-  @scala.inline
-  def `2003`: `2003` = 2003.asInstanceOf[`2003`]
-  @scala.inline
-  def `2004`: `2004` = 2004.asInstanceOf[`2004`]
-  @scala.inline
-  def `2005`: `2005` = 2005.asInstanceOf[`2005`]
-  @scala.inline
-  def `2006`: `2006` = 2006.asInstanceOf[`2006`]
-  @scala.inline
-  def `2007`: `2007` = 2007.asInstanceOf[`2007`]
-  @scala.inline
-  def `2008`: `2008` = 2008.asInstanceOf[`2008`]
-  @scala.inline
-  def `2009`: `2009` = 2009.asInstanceOf[`2009`]
-  @scala.inline
-  def `201`: `201` = 201.asInstanceOf[`201`]
-  @scala.inline
-  def `2010`: `2010` = 2010.asInstanceOf[`2010`]
-  @scala.inline
-  def `2011`: `2011` = 2011.asInstanceOf[`2011`]
-  @scala.inline
-  def `202`: `202` = 202.asInstanceOf[`202`]
-  @scala.inline
-  def `2048`: `2048` = 2048.asInstanceOf[`2048`]
-  @scala.inline
-  def `207`: `207` = 207.asInstanceOf[`207`]
-  @scala.inline
-  def `208`: `208` = 208.asInstanceOf[`208`]
-  @scala.inline
-  def `209`: `209` = 209.asInstanceOf[`209`]
-  @scala.inline
-  def `2097152`: `2097152` = 2097152.asInstanceOf[`2097152`]
-  @scala.inline
-  def `21`: `21` = 21.asInstanceOf[`21`]
-  @scala.inline
-  def `210`: `210` = 210.asInstanceOf[`210`]
-  @scala.inline
-  def `2100`: `2100` = 2100.asInstanceOf[`2100`]
-  @scala.inline
-  def `2101`: `2101` = 2101.asInstanceOf[`2101`]
-  @scala.inline
-  def `2102`: `2102` = 2102.asInstanceOf[`2102`]
-  @scala.inline
-  def `2103`: `2103` = 2103.asInstanceOf[`2103`]
-  @scala.inline
-  def `2104`: `2104` = 2104.asInstanceOf[`2104`]
-  @scala.inline
-  def `2105`: `2105` = 2105.asInstanceOf[`2105`]
-  @scala.inline
-  def `2106`: `2106` = 2106.asInstanceOf[`2106`]
-  @scala.inline
-  def `2107`: `2107` = 2107.asInstanceOf[`2107`]
-  @scala.inline
-  def `2108`: `2108` = 2108.asInstanceOf[`2108`]
-  @scala.inline
-  def `2147483647`: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
-  @scala.inline
-  def `22`: `22` = 22.asInstanceOf[`22`]
-  @scala.inline
-  def `23`: `23` = 23.asInstanceOf[`23`]
-  @scala.inline
-  def `24`: `24` = 24.asInstanceOf[`24`]
-  @scala.inline
-  def `25`: `25` = 25.asInstanceOf[`25`]
-  @scala.inline
-  def `255`: `255` = 255.asInstanceOf[`255`]
-  @scala.inline
-  def `256`: `256` = 256.asInstanceOf[`256`]
-  @scala.inline
-  def `257`: `257` = 257.asInstanceOf[`257`]
-  @scala.inline
-  def `258`: `258` = 258.asInstanceOf[`258`]
-  @scala.inline
-  def `259`: `259` = 259.asInstanceOf[`259`]
-  @scala.inline
-  def `26`: `26` = 26.asInstanceOf[`26`]
-  @scala.inline
-  def `260`: `260` = 260.asInstanceOf[`260`]
-  @scala.inline
-  def `261`: `261` = 261.asInstanceOf[`261`]
-  @scala.inline
-  def `262`: `262` = 262.asInstanceOf[`262`]
-  @scala.inline
-  def `262144`: `262144` = 262144.asInstanceOf[`262144`]
-  @scala.inline
-  def `263`: `263` = 263.asInstanceOf[`263`]
-  @scala.inline
-  def `264`: `264` = 264.asInstanceOf[`264`]
-  @scala.inline
-  def `265`: `265` = 265.asInstanceOf[`265`]
-  @scala.inline
-  def `268435456`: `268435456` = 268435456.asInstanceOf[`268435456`]
-  @scala.inline
-  def `27`: `27` = 27.asInstanceOf[`27`]
-  @scala.inline
-  def `28`: `28` = 28.asInstanceOf[`28`]
-  @scala.inline
-  def `29`: `29` = 29.asInstanceOf[`29`]
-  @scala.inline
-  def `3`: `3` = 3.asInstanceOf[`3`]
-  @scala.inline
-  def `30`: `30` = 30.asInstanceOf[`30`]
-  @scala.inline
-  def `300`: `300` = 300.asInstanceOf[`300`]
-  @scala.inline
-  def `301`: `301` = 301.asInstanceOf[`301`]
-  @scala.inline
-  def `302`: `302` = 302.asInstanceOf[`302`]
-  @scala.inline
-  def `303`: `303` = 303.asInstanceOf[`303`]
-  @scala.inline
-  def `304`: `304` = 304.asInstanceOf[`304`]
-  @scala.inline
-  def `31`: `31` = 31.asInstanceOf[`31`]
-  @scala.inline
-  def `32`: `32` = 32.asInstanceOf[`32`]
-  @scala.inline
-  def `32512`: `32512` = 32512.asInstanceOf[`32512`]
-  @scala.inline
-  def `32767`: `32767` = 32767.asInstanceOf[`32767`]
-  @scala.inline
-  def `32768`: `32768` = 32768.asInstanceOf[`32768`]
-  @scala.inline
-  def `327680`: `327680` = 327680.asInstanceOf[`327680`]
-  @scala.inline
-  def `33`: `33` = 33.asInstanceOf[`33`]
-  @scala.inline
-  def `33554432`: `33554432` = 33554432.asInstanceOf[`33554432`]
-  @scala.inline
-  def `33639248`: `33639248` = 33639248.asInstanceOf[`33639248`]
-  @scala.inline
-  def `34`: `34` = 34.asInstanceOf[`34`]
-  @scala.inline
-  def `35`: `35` = 35.asInstanceOf[`35`]
-  @scala.inline
-  def `36`: `36` = 36.asInstanceOf[`36`]
-  @scala.inline
-  def `37`: `37` = 37.asInstanceOf[`37`]
-  @scala.inline
-  def `38`: `38` = 38.asInstanceOf[`38`]
-  @scala.inline
-  def `3840`: `3840` = 3840.asInstanceOf[`3840`]
-  @scala.inline
-  def `39`: `39` = 39.asInstanceOf[`39`]
-  @scala.inline
-  def `393216`: `393216` = 393216.asInstanceOf[`393216`]
-  @scala.inline
-  def `4`: `4` = 4.asInstanceOf[`4`]
-  @scala.inline
-  def `40`: `40` = 40.asInstanceOf[`40`]
-  @scala.inline
-  def `400`: `400` = 400.asInstanceOf[`400`]
-  @scala.inline
-  def `4096`: `4096` = 4096.asInstanceOf[`4096`]
-  @scala.inline
-  def `41`: `41` = 41.asInstanceOf[`41`]
-  @scala.inline
-  def `4194304`: `4194304` = 4194304.asInstanceOf[`4194304`]
-  @scala.inline
-  def `42`: `42` = 42.asInstanceOf[`42`]
-  @scala.inline
-  def `43`: `43` = 43.asInstanceOf[`43`]
-  @scala.inline
-  def `44`: `44` = 44.asInstanceOf[`44`]
-  @scala.inline
-  def `45`: `45` = 45.asInstanceOf[`45`]
-  @scala.inline
-  def `46`: `46` = 46.asInstanceOf[`46`]
-  @scala.inline
-  def `47`: `47` = 47.asInstanceOf[`47`]
-  @scala.inline
-  def `48`: `48` = 48.asInstanceOf[`48`]
-  @scala.inline
-  def `49`: `49` = 49.asInstanceOf[`49`]
-  @scala.inline
-  def `5`: `5` = 5.asInstanceOf[`5`]
-  @scala.inline
-  def `50`: `50` = 50.asInstanceOf[`50`]
-  @scala.inline
-  def `50.000000`: `50.000000` = 50.000000.asInstanceOf[`50.000000`]
-  @scala.inline
-  def `500`: `500` = 500.asInstanceOf[`500`]
-  @scala.inline
-  def `51`: `51` = 51.asInstanceOf[`51`]
-  @scala.inline
-  def `512`: `512` = 512.asInstanceOf[`512`]
-  @scala.inline
-  def `513`: `513` = 513.asInstanceOf[`513`]
-  @scala.inline
-  def `514`: `514` = 514.asInstanceOf[`514`]
-  @scala.inline
-  def `515`: `515` = 515.asInstanceOf[`515`]
-  @scala.inline
-  def `516`: `516` = 516.asInstanceOf[`516`]
-  @scala.inline
-  def `517`: `517` = 517.asInstanceOf[`517`]
-  @scala.inline
-  def `518`: `518` = 518.asInstanceOf[`518`]
-  @scala.inline
-  def `519`: `519` = 519.asInstanceOf[`519`]
-  @scala.inline
-  def `52`: `52` = 52.asInstanceOf[`52`]
-  @scala.inline
-  def `520`: `520` = 520.asInstanceOf[`520`]
-  @scala.inline
-  def `521`: `521` = 521.asInstanceOf[`521`]
-  @scala.inline
-  def `522`: `522` = 522.asInstanceOf[`522`]
-  @scala.inline
-  def `523`: `523` = 523.asInstanceOf[`523`]
-  @scala.inline
-  def `524`: `524` = 524.asInstanceOf[`524`]
-  @scala.inline
-  def `524288`: `524288` = 524288.asInstanceOf[`524288`]
-  @scala.inline
-  def `525`: `525` = 525.asInstanceOf[`525`]
-  @scala.inline
-  def `526`: `526` = 526.asInstanceOf[`526`]
-  @scala.inline
-  def `527`: `527` = 527.asInstanceOf[`527`]
-  @scala.inline
-  def `528`: `528` = 528.asInstanceOf[`528`]
-  @scala.inline
-  def `529`: `529` = 529.asInstanceOf[`529`]
-  @scala.inline
-  def `53`: `53` = 53.asInstanceOf[`53`]
-  @scala.inline
-  def `530`: `530` = 530.asInstanceOf[`530`]
-  @scala.inline
-  def `531`: `531` = 531.asInstanceOf[`531`]
-  @scala.inline
-  def `532`: `532` = 532.asInstanceOf[`532`]
-  @scala.inline
-  def `533`: `533` = 533.asInstanceOf[`533`]
-  @scala.inline
-  def `534`: `534` = 534.asInstanceOf[`534`]
-  @scala.inline
-  def `535`: `535` = 535.asInstanceOf[`535`]
-  @scala.inline
-  def `536`: `536` = 536.asInstanceOf[`536`]
-  @scala.inline
-  def `536870912`: `536870912` = 536870912.asInstanceOf[`536870912`]
-  @scala.inline
-  def `537`: `537` = 537.asInstanceOf[`537`]
-  @scala.inline
-  def `54`: `54` = 54.asInstanceOf[`54`]
-  @scala.inline
-  def `55`: `55` = 55.asInstanceOf[`55`]
-  @scala.inline
-  def `550`: `550` = 550.asInstanceOf[`550`]
-  @scala.inline
-  def `56`: `56` = 56.asInstanceOf[`56`]
-  @scala.inline
-  def `57`: `57` = 57.asInstanceOf[`57`]
-  @scala.inline
-  def `58`: `58` = 58.asInstanceOf[`58`]
-  @scala.inline
-  def `59`: `59` = 59.asInstanceOf[`59`]
-  @scala.inline
-  def `6`: `6` = 6.asInstanceOf[`6`]
-  @scala.inline
-  def `60`: `60` = 60.asInstanceOf[`60`]
-  @scala.inline
-  def `60.000000`: `60.000000` = 60.000000.asInstanceOf[`60.000000`]
-  @scala.inline
-  def `61`: `61` = 61.asInstanceOf[`61`]
-  @scala.inline
-  def `62`: `62` = 62.asInstanceOf[`62`]
-  @scala.inline
-  def `63`: `63` = 63.asInstanceOf[`63`]
-  @scala.inline
-  def `64`: `64` = 64.asInstanceOf[`64`]
-  @scala.inline
-  def `65`: `65` = 65.asInstanceOf[`65`]
-  @scala.inline
-  def `65535`: `65535` = 65535.asInstanceOf[`65535`]
-  @scala.inline
-  def `65536`: `65536` = 65536.asInstanceOf[`65536`]
-  @scala.inline
-  def `66`: `66` = 66.asInstanceOf[`66`]
-  @scala.inline
-  def `67`: `67` = 67.asInstanceOf[`67`]
-  @scala.inline
-  def `67108864`: `67108864` = 67108864.asInstanceOf[`67108864`]
-  @scala.inline
-  def `67324752`: `67324752` = 67324752.asInstanceOf[`67324752`]
-  @scala.inline
-  def `68`: `68` = 68.asInstanceOf[`68`]
-  @scala.inline
-  def `69`: `69` = 69.asInstanceOf[`69`]
-  @scala.inline
-  def `7`: `7` = 7.asInstanceOf[`7`]
-  @scala.inline
-  def `70`: `70` = 70.asInstanceOf[`70`]
-  @scala.inline
-  def `700`: `700` = 700.asInstanceOf[`700`]
-  @scala.inline
-  def `71`: `71` = 71.asInstanceOf[`71`]
-  @scala.inline
-  def `72`: `72` = 72.asInstanceOf[`72`]
-  @scala.inline
-  def `73`: `73` = 73.asInstanceOf[`73`]
-  @scala.inline
-  def `74`: `74` = 74.asInstanceOf[`74`]
-  @scala.inline
-  def `75`: `75` = 75.asInstanceOf[`75`]
-  @scala.inline
-  def `75.000000`: `75.000000` = 75.000000.asInstanceOf[`75.000000`]
-  @scala.inline
-  def `76`: `76` = 76.asInstanceOf[`76`]
-  @scala.inline
-  def `768`: `768` = 768.asInstanceOf[`768`]
-  @scala.inline
-  def `769`: `769` = 769.asInstanceOf[`769`]
-  @scala.inline
-  def `77`: `77` = 77.asInstanceOf[`77`]
-  @scala.inline
-  def `770`: `770` = 770.asInstanceOf[`770`]
-  @scala.inline
-  def `771`: `771` = 771.asInstanceOf[`771`]
-  @scala.inline
-  def `772`: `772` = 772.asInstanceOf[`772`]
-  @scala.inline
-  def `773`: `773` = 773.asInstanceOf[`773`]
-  @scala.inline
-  def `774`: `774` = 774.asInstanceOf[`774`]
-  @scala.inline
-  def `775`: `775` = 775.asInstanceOf[`775`]
-  @scala.inline
-  def `776`: `776` = 776.asInstanceOf[`776`]
-  @scala.inline
-  def `777`: `777` = 777.asInstanceOf[`777`]
-  @scala.inline
-  def `778`: `778` = 778.asInstanceOf[`778`]
-  @scala.inline
-  def `779`: `779` = 779.asInstanceOf[`779`]
-  @scala.inline
-  def `78`: `78` = 78.asInstanceOf[`78`]
-  @scala.inline
-  def `780`: `780` = 780.asInstanceOf[`780`]
-  @scala.inline
-  def `781`: `781` = 781.asInstanceOf[`781`]
-  @scala.inline
-  def `782`: `782` = 782.asInstanceOf[`782`]
-  @scala.inline
-  def `783`: `783` = 783.asInstanceOf[`783`]
-  @scala.inline
-  def `784`: `784` = 784.asInstanceOf[`784`]
-  @scala.inline
-  def `785`: `785` = 785.asInstanceOf[`785`]
-  @scala.inline
-  def `786`: `786` = 786.asInstanceOf[`786`]
-  @scala.inline
-  def `787`: `787` = 787.asInstanceOf[`787`]
-  @scala.inline
-  def `788`: `788` = 788.asInstanceOf[`788`]
-  @scala.inline
-  def `789`: `789` = 789.asInstanceOf[`789`]
-  @scala.inline
-  def `79`: `79` = 79.asInstanceOf[`79`]
-  @scala.inline
-  def `790`: `790` = 790.asInstanceOf[`790`]
-  @scala.inline
-  def `791`: `791` = 791.asInstanceOf[`791`]
-  @scala.inline
-  def `792`: `792` = 792.asInstanceOf[`792`]
-  @scala.inline
-  def `793`: `793` = 793.asInstanceOf[`793`]
-  @scala.inline
-  def `8`: `8` = 8.asInstanceOf[`8`]
-  @scala.inline
-  def `80`: `80` = 80.asInstanceOf[`80`]
-  @scala.inline
-  def `800`: `800` = 800.asInstanceOf[`800`]
-  @scala.inline
-  def `81`: `81` = 81.asInstanceOf[`81`]
-  @scala.inline
-  def `8192`: `8192` = 8192.asInstanceOf[`8192`]
-  @scala.inline
-  def `82`: `82` = 82.asInstanceOf[`82`]
-  @scala.inline
-  def `83`: `83` = 83.asInstanceOf[`83`]
-  @scala.inline
-  def `8388608`: `8388608` = 8388608.asInstanceOf[`8388608`]
-  @scala.inline
-  def `84`: `84` = 84.asInstanceOf[`84`]
-  @scala.inline
-  def `85`: `85` = 85.asInstanceOf[`85`]
-  @scala.inline
-  def `86`: `86` = 86.asInstanceOf[`86`]
-  @scala.inline
-  def `87`: `87` = 87.asInstanceOf[`87`]
-  @scala.inline
-  def `88`: `88` = 88.asInstanceOf[`88`]
-  @scala.inline
-  def `89`: `89` = 89.asInstanceOf[`89`]
-  @scala.inline
-  def `9`: `9` = 9.asInstanceOf[`9`]
-  @scala.inline
-  def `90`: `90` = 90.asInstanceOf[`90`]
-  @scala.inline
-  def `90.000000`: `90.000000` = 90.000000.asInstanceOf[`90.000000`]
-  @scala.inline
-  def `900`: `900` = 900.asInstanceOf[`900`]
-  @scala.inline
-  def `91`: `91` = 91.asInstanceOf[`91`]
-  @scala.inline
-  def `92`: `92` = 92.asInstanceOf[`92`]
-  @scala.inline
-  def `93`: `93` = 93.asInstanceOf[`93`]
-  @scala.inline
-  def `94`: `94` = 94.asInstanceOf[`94`]
-  @scala.inline
-  def `95`: `95` = 95.asInstanceOf[`95`]
-  @scala.inline
-  def `96`: `96` = 96.asInstanceOf[`96`]
-  @scala.inline
-  def `97`: `97` = 97.asInstanceOf[`97`]
-  @scala.inline
-  def `98`: `98` = 98.asInstanceOf[`98`]
-  @scala.inline
-  def `99`: `99` = 99.asInstanceOf[`99`]
-  @scala.inline
-  def _17179869184: _17179869184 = 17179869184.0.asInstanceOf[_17179869184]
-  @scala.inline
-  def _4294967296: _4294967296 = 4294967296.0.asInstanceOf[_4294967296]
-  @scala.inline
-  def _8589934592: _8589934592 = 8589934592.0.asInstanceOf[_8589934592]
 }
-

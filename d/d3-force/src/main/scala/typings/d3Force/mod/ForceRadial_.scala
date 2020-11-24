@@ -2,19 +2,21 @@ package typings.d3Force.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ForceRadial_[NodeDatum /* <: SimulationNodeDatum */]
   extends Force[NodeDatum, js.Any] {
+  
   /**
-    * Assign the array of nodes to this force. This method is called when a force is bound to a simulation via simulation.force
+    * Assigns the array of nodes and random source to this force. This method is called when a force is bound to a simulation via simulation.force
     * and when the simulation’s nodes change via simulation.nodes.
     *
     * A force may perform necessary work during initialization, such as evaluating per-node parameters, to avoid repeatedly performing work during each application of the force.
     */
   @JSName("initialize")
-  def initialize_MForceRadial_(nodes: js.Array[NodeDatum]): Unit = js.native
+  def initialize_MForceRadial_(nodes: js.Array[NodeDatum], random: js.Function0[Double]): Unit = js.native
+  
   /**
     * Return the current radius accessor for the circle.
     */
@@ -44,6 +46,7 @@ trait ForceRadial_[NodeDatum /* <: SimulationNodeDatum */]
     * @param radius Constant radius of the circle to be used for all nodes.
     */
   def radius(radius: Double): this.type = js.native
+  
   /**
     *  Returns the current strength accessor, which defaults to a constant strength for all nodes of 0.1.
     */
@@ -85,6 +88,7 @@ trait ForceRadial_[NodeDatum /* <: SimulationNodeDatum */]
     * @param strength Constant value of strength to be used for all nodes.
     */
   def strength(strength: Double): this.type = js.native
+  
   /**
     * Return the current x-accessor for the circle center, which defaults to a function returning 0 for all nodes.
     */
@@ -114,6 +118,7 @@ trait ForceRadial_[NodeDatum /* <: SimulationNodeDatum */]
     * @param x Constant x-coordinate of the circle center to be used for all nodes.
     */
   def x(x: Double): this.type = js.native
+  
   /**
     * Return the current y-accessor for the circle center, which defaults to a function returning 0 for all nodes.
     */
@@ -144,4 +149,3 @@ trait ForceRadial_[NodeDatum /* <: SimulationNodeDatum */]
     */
   def y(y: Double): this.type = js.native
 }
-

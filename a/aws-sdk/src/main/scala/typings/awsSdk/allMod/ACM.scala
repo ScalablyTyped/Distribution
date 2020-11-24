@@ -4,7 +4,7 @@ import typings.awsSdk.acmMod.ClientConfiguration
 import typings.awsSdk.acmMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "ACM")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class ACM () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

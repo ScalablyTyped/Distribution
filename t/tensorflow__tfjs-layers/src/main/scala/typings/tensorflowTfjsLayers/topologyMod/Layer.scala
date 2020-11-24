@@ -1,10 +1,10 @@
 package typings.tensorflowTfjsLayers.topologyMod
 
+import typings.tensorflowTfjsCore.distTensorMod.Scalar
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.mod.serialization.Serializable
-import typings.tensorflowTfjsCore.tensorMod.Scalar
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.constraintsMod.Constraint
 import typings.tensorflowTfjsLayers.distTypesMod.Kwargs
 import typings.tensorflowTfjsLayers.distTypesMod.RegularizerFn
@@ -14,22 +14,33 @@ import typings.tensorflowTfjsLayers.regularizersMod.Regularizer
 import typings.tensorflowTfjsLayers.variablesMod.LayerVariable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "Layer")
 @js.native
 abstract class Layer () extends Serializable {
   def this(args: LayerArgs) = this()
+  
   var _addedWeightNames: js.Any = js.native
+  
   var _built: js.Any = js.native
+  
   var _callHook: js.Any = js.native
+  
   var _losses: js.Any = js.native
+  
   var _nonTrainableWeights: js.Any = js.native
+  
   var _refCount: Double | Null = js.native
+  
   var _stateful: Boolean = js.native
+  
   var _trainableWeights: js.Array[LayerVariable] = js.native
+  
   var _updates: js.Any = js.native
+  
   var activityRegularizer: Regularizer = js.native
+  
   /**
     * Internal method to create an inbound node for the layer.
     *
@@ -43,92 +54,18 @@ abstract class Layer () extends Serializable {
     *   `call` method of the layer at the call that created the node.
     */
   var addInboundNode: js.Any = js.native
-  var batchInputShape: Shape = js.native
-  var built: Boolean = js.native
-  var dtype: DataType = js.native
-  var fastWeightInitDuringBuild: js.Any = js.native
-  /**
-    * Returns this.inboundNode at index nodeIndex.
-    *
-    * Porting note: This is a replacement for _get_node_attribute_at_index()
-    * @param nodeIndex
-    * @param attrName The name of the attribute related to request for this node.
-    */
-  var getNodeAtIndex: js.Any = js.native
-  val id: Double = js.native
-  var inboundNodes: js.Array[Node] = js.native
-  var initialWeights: js.Array[Tensor[Rank]] = js.native
-  /**
-    * Retrieves the input tensor(s) of a layer.
-    *
-    * Only applicable if the layer has exactly one inbound node,
-    * i.e. if it is connected to one incoming layer.
-    *
-    * @return Input tensor or list of input tensors.
-    *
-    * @exception AttributeError if the layer is connected to more than one
-    *   incoming layers.
-    */
-  val input: SymbolicTensor | js.Array[SymbolicTensor] = js.native
-  /**
-    * List of InputSpec class instances.
-    *
-    * Each entry describes one required input:
-    * - ndim
-    * - dtype
-    * A layer with `n` input tensors must have an `inputSpec` of length `n`.
-    */
-  var inputSpec: js.Array[InputSpec] = js.native
-  val losses: js.Array[RegularizerFn] = js.native
-  /** Name for this layer. Must be unique within a model. */
-  var name: String = js.native
-  var nonTrainableWeights: js.Array[LayerVariable] = js.native
-  var outboundNodes: js.Array[Node] = js.native
-  /**
-    * Retrieves the output tensor(s) of a layer.
-    *
-    * Only applicable if the layer has exactly one inbound node,
-    * i.e. if it is connected to one incoming layer.
-    *
-    * @return Output tensor or list of output tensors.
-    *
-    * @exception AttributeError if the layer is connected to more than one
-    *   incoming layers.
-    */
-  val output: SymbolicTensor | js.Array[SymbolicTensor] = js.native
-  /**
-    * Retrieves the output shape(s) of a layer.
-    *
-    * Only applicable if the layer has only one inbound node, or if all inbound
-    * nodes have the same output shape.
-    *
-    * @returns Output shape or shapes.
-    * @throws AttributeError: if the layer is connected to more than one incoming
-    *   nodes.
-    */
-  /** @doc {heading: 'Models', 'subheading': 'Classes'} */
-  val outputShape: Shape | js.Array[Shape] = js.native
-  val stateful: Boolean = js.native
-  var supportsMasking: Boolean = js.native
-  var trainable: Boolean = js.native
-  var trainableWeights: js.Array[LayerVariable] = js.native
-  /** Whether the layer weights will be updated during training. */
-  var trainable_ : Boolean = js.native
-  val updates: js.Array[Tensor[Rank]] = js.native
-  /**
-    * The concatenation of the lists trainableWeights and nonTrainableWeights
-    * (in this order).
-    */
-  val weights: js.Array[LayerVariable] = js.native
+  
   def addLoss(losses: js.Array[RegularizerFn]): Unit = js.native
   /**
     * Add losses to the layer.
     *
     * The loss may potentionally be conditional on some inputs tensors,
     * for instance activity losses are conditional on the layer's inputs.
+    *
+    * @doc {heading: 'Models', 'subheading': 'Classes'}
     */
-  /** @doc {heading: 'Models', 'subheading': 'Classes'} */
   def addLoss(losses: RegularizerFn): Unit = js.native
+  
   /**
     * Adds a weight variable to the layer.
     *
@@ -141,8 +78,9 @@ abstract class Layer () extends Serializable {
     *   (assuming that the layer itself is also trainable).
     * @param constraint An optional trainable.
     * @return The created weight variable.
+    *
+    * @doc {heading: 'Models', 'subheading': 'Classes'}
     */
-  /** @doc {heading: 'Models', 'subheading': 'Classes'} */
   /* protected */ def addWeight(name: String, shape: Shape): LayerVariable = js.native
   /* protected */ def addWeight(
     name: String,
@@ -377,6 +315,7 @@ abstract class Layer () extends Serializable {
     trainable: Boolean,
     constraint: Constraint
   ): LayerVariable = js.native
+  
   @JSName("apply")
   def apply(inputs: js.Array[SymbolicTensor | Tensor[Rank]]): Tensor[Rank] | (js.Array[SymbolicTensor | Tensor[Rank]]) | SymbolicTensor = js.native
   @JSName("apply")
@@ -446,8 +385,9 @@ abstract class Layer () extends Serializable {
     *
     * @exception ValueError error in case the layer is missing shape information
     *   for its `build` call.
+    *
+    * @doc {heading: 'Models', 'subheading': 'Classes'}
     */
-  /** @doc {heading: 'Models', 'subheading': 'Classes'} */
   @JSName("apply")
   def apply(inputs: Tensor[Rank]): Tensor[Rank] | (js.Array[SymbolicTensor | Tensor[Rank]]) | SymbolicTensor = js.native
   @JSName("apply")
@@ -456,6 +396,7 @@ abstract class Layer () extends Serializable {
   def apply(inputs: SymbolicTensor): Tensor[Rank] | (js.Array[SymbolicTensor | Tensor[Rank]]) | SymbolicTensor = js.native
   @JSName("apply")
   def apply(inputs: SymbolicTensor, kwargs: Kwargs): Tensor[Rank] | (js.Array[SymbolicTensor | Tensor[Rank]]) | SymbolicTensor = js.native
+  
   /* protected */ def assertInputCompatibility(inputs: js.Array[SymbolicTensor | Tensor[Rank]]): Unit = js.native
   /**
     * Checks compatibility between the layer and provided inputs.
@@ -471,7 +412,11 @@ abstract class Layer () extends Serializable {
     */
   /* protected */ def assertInputCompatibility(inputs: Tensor[Rank]): Unit = js.native
   /* protected */ def assertInputCompatibility(inputs: SymbolicTensor): Unit = js.native
+  
   /* protected */ def assertNotDisposed(): Unit = js.native
+  
+  var batchInputShape: Shape = js.native
+  
   /**
     * Creates the layer weights.
     *
@@ -480,15 +425,20 @@ abstract class Layer () extends Serializable {
     * Called when apply() is called to construct the weights.
     *
     * @param inputShape A `Shape` or array of `Shape` (unused).
+    *
+    * @doc {heading: 'Models', 'subheading': 'Classes'}
     */
-  /** @doc {heading: 'Models', 'subheading': 'Classes'} */
   def build(inputShape: js.Array[Shape] | Shape): Unit = js.native
+  
+  var built: Boolean = js.native
+  
   /**
     * Retrieves the Layer's current loss values.
     *
     * Used for regularizers during training.
     */
   def calculateLosses(): js.Array[Scalar] = js.native
+  
   def call(inputs: js.Array[Tensor[Rank]], kwargs: Kwargs): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   /**
     * This is where the layer's logic lives.
@@ -499,11 +449,13 @@ abstract class Layer () extends Serializable {
     * @return A tensor or list/tuple of tensors.
     */
   def call(inputs: Tensor[Rank], kwargs: Kwargs): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  
   /**
     * Clear call hook.
     * This is currently used for testing only.
     */
   def clearCallHook(): Unit = js.native
+  
   def computeMask(inputs: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   def computeMask(inputs: js.Array[Tensor[Rank]], mask: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   def computeMask(inputs: js.Array[Tensor[Rank]], mask: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
@@ -519,6 +471,7 @@ abstract class Layer () extends Serializable {
   def computeMask(inputs: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   def computeMask(inputs: Tensor[Rank], mask: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   def computeMask(inputs: Tensor[Rank], mask: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  
   /**
     * Computes the output shape of the layer.
     *
@@ -527,9 +480,11 @@ abstract class Layer () extends Serializable {
     * @param inputShape A shape (tuple of integers) or a list of shape tuples
     *   (one per output tensor of the layer). Shape tuples can include null for
     *   free dimensions, instead of an integer.
+    *
+    * @doc {heading: 'Models', 'subheading': 'Classes'}
     */
-  /** @doc {heading: 'Models', 'subheading': 'Classes'} */
   def computeOutputShape(inputShape: js.Array[Shape] | Shape): Shape | js.Array[Shape] = js.native
+  
   /**
     * Counts the total number of numbers (e.g., float32, int32) in the
     * weights.
@@ -537,9 +492,11 @@ abstract class Layer () extends Serializable {
     * @returns An integer count.
     * @throws RuntimeError: If the layer is not built yet (in which case its
     *   weights are not defined yet.)
+    *
+    * @doc {heading: 'Models', 'subheading': 'Classes'}
     */
-  /** @doc {heading: 'Models', 'subheading': 'Classes'} */
   def countParams(): Double = js.native
+  
   /**
     * Attempt to dispose layer's weights.
     *
@@ -567,15 +524,22 @@ abstract class Layer () extends Serializable {
     *     during this `dispose()` call.
     * @throws {Error} If the layer is not built yet, or if the layer has already
     *   been disposed.
+    *
+    * @doc {heading: 'Models', 'subheading': 'Classes'}
     */
-  /** @doc {heading: 'Models', 'subheading': 'Classes'} */
   def dispose(): DisposeResult = js.native
+  
   /**
     * Dispose the weight variables that this Layer instance holds.
     *
     * @returns {number} Number of disposed variables.
     */
   /* protected */ def disposeWeights(): Double = js.native
+  
+  var dtype: DataType = js.native
+  
+  var fastWeightInitDuringBuild: js.Any = js.native
+  
   /**
     * Retrieves the input tensor(s) of a layer at a given node.
     *
@@ -586,6 +550,16 @@ abstract class Layer () extends Serializable {
     * @return A tensor (or list of tensors if the layer has multiple inputs).
     */
   def getInputAt(nodeIndex: Double): SymbolicTensor | js.Array[SymbolicTensor] = js.native
+  
+  /**
+    * Returns this.inboundNode at index nodeIndex.
+    *
+    * Porting note: This is a replacement for _get_node_attribute_at_index()
+    * @param nodeIndex
+    * @param attrName The name of the attribute related to request for this node.
+    */
+  var getNodeAtIndex: js.Any = js.native
+  
   /**
     * Retrieves the output tensor(s) of a layer at a given node.
     *
@@ -596,17 +570,86 @@ abstract class Layer () extends Serializable {
     * @return A tensor (or list of tensors if the layer has multiple outputs).
     */
   def getOutputAt(nodeIndex: Double): SymbolicTensor | js.Array[SymbolicTensor] = js.native
+  
   /**
     * Returns the current values of the weights of the layer.
     *
     * @param trainableOnly Whether to get the values of only trainable weights.
     * @returns Weight values as an `Array` of `tf.Tensor`s.
+    *
+    * @doc {heading: 'Models', 'subheading': 'Classes'}
     */
-  /** @doc {heading: 'Models', 'subheading': 'Classes'} */
   def getWeights(): js.Array[Tensor[Rank]] = js.native
   def getWeights(trainableOnly: Boolean): js.Array[Tensor[Rank]] = js.native
+  
+  val id: Double = js.native
+  
+  var inboundNodes: js.Array[Node] = js.native
+  
+  var initialWeights: js.Array[Tensor[Rank]] = js.native
+  
+  /**
+    * Retrieves the input tensor(s) of a layer.
+    *
+    * Only applicable if the layer has exactly one inbound node,
+    * i.e. if it is connected to one incoming layer.
+    *
+    * @return Input tensor or list of input tensors.
+    *
+    * @exception AttributeError if the layer is connected to more than one
+    *   incoming layers.
+    */
+  val input: SymbolicTensor | js.Array[SymbolicTensor] = js.native
+  
+  /**
+    * List of InputSpec class instances.
+    *
+    * Each entry describes one required input:
+    * - ndim
+    * - dtype
+    * A layer with `n` input tensors must have an `inputSpec` of length `n`.
+    */
+  var inputSpec: js.Array[InputSpec] = js.native
+  
   /* protected */ def invokeCallHook(inputs: js.Array[Tensor[Rank]], kwargs: Kwargs): Unit = js.native
   /* protected */ def invokeCallHook(inputs: Tensor[Rank], kwargs: Kwargs): Unit = js.native
+  
+  val losses: js.Array[RegularizerFn] = js.native
+  
+  /** Name for this layer. Must be unique within a model. */
+  var name: String = js.native
+  
+  var nonTrainableWeights: js.Array[LayerVariable] = js.native
+  
+  var outboundNodes: js.Array[Node] = js.native
+  
+  /**
+    * Retrieves the output tensor(s) of a layer.
+    *
+    * Only applicable if the layer has exactly one inbound node,
+    * i.e. if it is connected to one incoming layer.
+    *
+    * @return Output tensor or list of output tensors.
+    *
+    * @exception AttributeError if the layer is connected to more than one
+    *   incoming layers.
+    */
+  val output: SymbolicTensor | js.Array[SymbolicTensor] = js.native
+  
+  /**
+    * Retrieves the output shape(s) of a layer.
+    *
+    * Only applicable if the layer has only one inbound node, or if all inbound
+    * nodes have the same output shape.
+    *
+    * @returns Output shape or shapes.
+    * @throws AttributeError: if the layer is connected to more than one incoming
+    *   nodes.
+    *
+    * @doc {heading: 'Models', 'subheading': 'Classes'}
+    */
+  val outputShape: Shape | js.Array[Shape] = js.native
+  
   /**
     * Reset the states of the layer.
     *
@@ -615,12 +658,14 @@ abstract class Layer () extends Serializable {
     * method.
     */
   def resetStates(): Unit = js.native
+  
   /**
     * Set call hook.
     * This is currently used for testing only.
     * @param callHook
     */
   def setCallHook(callHook: CallHook): Unit = js.native
+  
   /**
     * Set the fast-weight-initialization flag.
     *
@@ -632,6 +677,7 @@ abstract class Layer () extends Serializable {
     * @param value Target value of the flag.
     */
   def setFastWeightInitDuringBuild(value: Boolean): Unit = js.native
+  
   /**
     * Sets the weights of the layer, from Tensors.
     *
@@ -641,9 +687,24 @@ abstract class Layer () extends Serializable {
     *
     * @exception ValueError If the provided weights list does not match the
     *   layer's specifications.
+    *
+    * @doc {heading: 'Models', 'subheading': 'Classes'}
     */
-  /** @doc {heading: 'Models', 'subheading': 'Classes'} */
   def setWeights(weights: js.Array[Tensor[Rank]]): Unit = js.native
+  
+  val stateful: Boolean = js.native
+  
+  var supportsMasking: Boolean = js.native
+  
+  var trainable: Boolean = js.native
+  
+  var trainableWeights: js.Array[LayerVariable] = js.native
+  
+  /** Whether the layer weights will be updated during training. */
+  var trainable_ : Boolean = js.native
+  
+  val updates: js.Array[Tensor[Rank]] = js.native
+  
   /**
     * Check compatibility between input shape and this layer's batchInputShape.
     *
@@ -652,12 +713,18 @@ abstract class Layer () extends Serializable {
     * @param inputShape Input shape to be checked.
     */
   /* protected */ def warnOnIncompatibleInputShape(inputShape: Shape): Unit = js.native
+  
+  /**
+    * The concatenation of the lists trainableWeights and nonTrainableWeights
+    * (in this order).
+    */
+  val weights: js.Array[LayerVariable] = js.native
 }
-
 /* static members */
 @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "Layer")
 @js.native
 object Layer extends js.Object {
+  
   /**
     * Converts a layer and its index to a unique (immutable type) name.
     * This function is used internally with `this.containerNodes`.
@@ -669,4 +736,3 @@ object Layer extends js.Object {
     */
   /* protected */ def nodeKey(layer: Layer, nodeIndex: Double): String = js.native
 }
-

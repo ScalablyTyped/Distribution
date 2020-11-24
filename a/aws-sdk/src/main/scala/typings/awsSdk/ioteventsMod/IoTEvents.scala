@@ -1,17 +1,19 @@
 package typings.awsSdk.ioteventsMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IoTEvents extends Service {
+  
   @JSName("config")
   var config_IoTEvents: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a detector model.
     */
@@ -25,6 +27,7 @@ trait IoTEvents extends Service {
     params: CreateDetectorModelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDetectorModelResponse, Unit]
   ): Request[CreateDetectorModelResponse, AWSError] = js.native
+  
   /**
     * Creates an input.
     */
@@ -38,6 +41,7 @@ trait IoTEvents extends Service {
     params: CreateInputRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateInputResponse, Unit]
   ): Request[CreateInputResponse, AWSError] = js.native
+  
   /**
     * Deletes a detector model. Any active instances of the detector model are also deleted.
     */
@@ -51,6 +55,7 @@ trait IoTEvents extends Service {
     params: DeleteDetectorModelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDetectorModelResponse, Unit]
   ): Request[DeleteDetectorModelResponse, AWSError] = js.native
+  
   /**
     * Deletes an input.
     */
@@ -64,6 +69,7 @@ trait IoTEvents extends Service {
     params: DeleteInputRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteInputResponse, Unit]
   ): Request[DeleteInputResponse, AWSError] = js.native
+  
   /**
     * Describes a detector model. If the version parameter is not specified, information about the latest version is returned.
     */
@@ -77,6 +83,7 @@ trait IoTEvents extends Service {
     params: DescribeDetectorModelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDetectorModelResponse, Unit]
   ): Request[DescribeDetectorModelResponse, AWSError] = js.native
+  
   /**
     * Describes an input.
     */
@@ -90,6 +97,7 @@ trait IoTEvents extends Service {
     params: DescribeInputRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInputResponse, Unit]
   ): Request[DescribeInputResponse, AWSError] = js.native
+  
   /**
     * Retrieves the current settings of the AWS IoT Events logging options.
     */
@@ -103,6 +111,7 @@ trait IoTEvents extends Service {
     params: DescribeLoggingOptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeLoggingOptionsResponse, Unit]
   ): Request[DescribeLoggingOptionsResponse, AWSError] = js.native
+  
   /**
     * Lists all the versions of a detector model. Only the metadata associated with each detector model version is returned.
     */
@@ -116,6 +125,7 @@ trait IoTEvents extends Service {
     params: ListDetectorModelVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDetectorModelVersionsResponse, Unit]
   ): Request[ListDetectorModelVersionsResponse, AWSError] = js.native
+  
   /**
     * Lists the detector models you have created. Only the metadata associated with each detector model is returned.
     */
@@ -129,6 +139,7 @@ trait IoTEvents extends Service {
     params: ListDetectorModelsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDetectorModelsResponse, Unit]
   ): Request[ListDetectorModelsResponse, AWSError] = js.native
+  
   /**
     * Lists the inputs you have created.
     */
@@ -142,6 +153,7 @@ trait IoTEvents extends Service {
     params: ListInputsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListInputsResponse, Unit]
   ): Request[ListInputsResponse, AWSError] = js.native
+  
   /**
     * Lists the tags (metadata) you have assigned to the resource.
     */
@@ -155,6 +167,7 @@ trait IoTEvents extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Sets or updates the AWS IoT Events logging options. If you update the value of any loggingOptions field, it takes up to one minute for the change to take effect. If you change the policy attached to the role you specified in the roleArn field (for example, to correct an invalid policy), it takes up to five minutes for that change to take effect.
     */
@@ -168,6 +181,7 @@ trait IoTEvents extends Service {
     params: PutLoggingOptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Adds to or modifies the tags of the given resource. Tags are metadata that can be used to manage a resource.
     */
@@ -181,6 +195,7 @@ trait IoTEvents extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Removes the given tags (metadata) from the resource.
     */
@@ -194,6 +209,7 @@ trait IoTEvents extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates a detector model. Detectors (instances) spawned by the previous version are deleted and then re-created as new inputs arrive.
     */
@@ -207,6 +223,7 @@ trait IoTEvents extends Service {
     params: UpdateDetectorModelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDetectorModelResponse, Unit]
   ): Request[UpdateDetectorModelResponse, AWSError] = js.native
+  
   /**
     * Updates an input.
     */
@@ -221,4 +238,3 @@ trait IoTEvents extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateInputResponse, Unit]
   ): Request[UpdateInputResponse, AWSError] = js.native
 }
-

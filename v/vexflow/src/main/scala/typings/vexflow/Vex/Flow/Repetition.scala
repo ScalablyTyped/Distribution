@@ -2,27 +2,33 @@ package typings.vexflow.Vex.Flow
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Repetition extends StaveModifier {
+  
   def draw(stave: Stave, x: Double): Repetition = js.native
+  
   def drawCodaFixed(stave: Stave, x: Double): Repetition = js.native
+  
   def drawSignoFixed(stave: Stave, x: Double): Repetition = js.native
+  
    //inconsistent name: drawSignoFixed -> drawSegnoFixed
   def drawSymbolText(stave: Stave, x: Double, text: String, draw_coda: Boolean): Repetition = js.native
+  
   def setShiftX(x: Double): Repetition = js.native
+  
   def setShiftY(y: Double): Repetition = js.native
 }
-
 @JSGlobal("Vex.Flow.Repetition")
 @js.native
 object Repetition extends js.Object {
-  @js.native
-  sealed trait `type` extends js.Object
   
   @js.native
+  sealed trait `type` extends js.Object
+  @js.native
   object `type` extends js.Object {
+    
     @js.native
     sealed trait CODA_LEFT extends `type`
     
@@ -58,8 +64,5 @@ object Repetition extends js.Object {
     
     @js.native
     sealed trait SEGNO_RIGHT extends `type`
-    
   }
-  
 }
-

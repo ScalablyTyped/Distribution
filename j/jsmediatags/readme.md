@@ -12,7 +12,7 @@ Media Tags Reader (ID3, MP4)
 | Keywords           | ID3, tags, mp3, audio, mp4 |
 | # releases         | 4 |
 | # dependents       | 8 |
-| # downloads        | 32816 |
+| # downloads        | 33991 |
 | # stars            | 8 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.officeJsPreview.global.Office.MailboxEnums
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).
@@ -16,9 +16,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Office.MailboxEnums.SourceProperty")
 @js.native
 object SourceProperty extends js.Object {
-  /* "body" */ val Body: typings.officeJsPreview.Office.MailboxEnums.SourceProperty.Body with String = js.native
-  /* "subject" */ val Subject: typings.officeJsPreview.Office.MailboxEnums.SourceProperty.Subject with String = js.native
+  
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.Office.MailboxEnums.SourceProperty with String] = js.native
+  
+  /* "body" */ val Body: typings.officeJsPreview.Office.MailboxEnums.SourceProperty.Body with String = js.native
+  
+  /* "subject" */ val Subject: typings.officeJsPreview.Office.MailboxEnums.SourceProperty.Subject with String = js.native
 }
-

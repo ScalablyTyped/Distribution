@@ -2,7 +2,7 @@ package typings.ranjs.mod.dist
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.DiscreteUniform")
 @js.native
@@ -12,4 +12,3 @@ class DiscreteUniform ()
   def this(xmin: js.UndefOr[scala.Nothing], xmax: Double) = this()
   def this(xmin: Double, xmax: Double) = this()
 }
-

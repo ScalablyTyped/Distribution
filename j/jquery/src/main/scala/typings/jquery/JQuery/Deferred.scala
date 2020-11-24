@@ -7,10 +7,11 @@ import typings.jquery.jqueryStrings.resolved
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Deferred[TR, TJ, TN] extends js.Object {
+  
   /**
     * Add handlers to be called when the Deferred object is either resolved or rejected.
     * @param alwaysCallback A function, or array of functions, that is called when the Deferred is resolved or rejected.
@@ -25,6 +26,7 @@ trait Deferred[TR, TJ, TN] extends js.Object {
   ```
     */
   def always(alwaysCallback: TypeOrArray[Callback[TR | TJ]], alwaysCallbacks: (TypeOrArray[Callback[TR | TJ]])*): this.type = js.native
+  
   // #endregion
   /**
     * Add handlers to be called when the Deferred object is rejected.
@@ -49,6 +51,7 @@ trait Deferred[TR, TJ, TN] extends js.Object {
       (PromiseBase[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF]) | Thenable[ARF] | ARF
     ]
   ): PromiseBase[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF] = js.native
+  
   /**
     * Add handlers to be called when the Deferred object is resolved.
     * @param doneCallback A function, or array of functions, that are called when the Deferred is resolved.
@@ -110,6 +113,7 @@ trait Deferred[TR, TJ, TN] extends js.Object {
   ```
     */
   def done(doneCallback: TypeOrArray[Callback[TR]], doneCallbacks: TypeOrArray[Callback[TR]]*): this.type = js.native
+  
   /**
     * Add handlers to be called when the Deferred object is rejected.
     * @param failCallback A function, or array of functions, that are called when the Deferred is rejected.
@@ -128,6 +132,7 @@ trait Deferred[TR, TJ, TN] extends js.Object {
   ```
     */
   def fail(failCallback: TypeOrArray[Callback[TJ]], failCallbacks: TypeOrArray[Callback[TJ]]*): this.type = js.native
+  
   /**
     * Call the progressCallbacks on a Deferred object with the given args.
     * @param args Optional arguments that are passed to the progressCallbacks.
@@ -135,6 +140,7 @@ trait Deferred[TR, TJ, TN] extends js.Object {
     * @since 1.7
     */
   def notify(args: TN*): this.type = js.native
+  
   /**
     * Call the progressCallbacks on a Deferred object with the given context and args.
     * @param context Context passed to the progressCallbacks as the this object.
@@ -144,6 +150,7 @@ trait Deferred[TR, TJ, TN] extends js.Object {
     */
   def notifyWith(context: js.Object): this.type = js.native
   def notifyWith(context: js.Object, args: ArrayLike[TN]): this.type = js.native
+  
   /**
     * Utility method to filter and/or chain Deferreds.
     * @param doneFilter An optional function that is called when the Deferred is resolved.
@@ -537,6 +544,7 @@ trait Deferred[TR, TJ, TN] extends js.Object {
     RJD | RJF | RJP, 
     RND | RNF | RNP
   ] = js.native
+  
   /**
     * Add handlers to be called when the Deferred object generates progress notifications.
     * @param progressCallback A function, or array of functions, to be called when the Deferred generates progress notifications.
@@ -546,6 +554,7 @@ trait Deferred[TR, TJ, TN] extends js.Object {
     * @since 1.7
     */
   def progress(progressCallback: TypeOrArray[Callback[TN]], progressCallbacks: TypeOrArray[Callback[TN]]*): this.type = js.native
+  
   /**
     * Return a Deferred's Promise object.
     * @see \`{@link https://api.jquery.com/deferred.promise/ }\`
@@ -621,6 +630,7 @@ trait Deferred[TR, TJ, TN] extends js.Object {
   ```
     */
   def promise[TTarget /* <: js.Object */](target: TTarget): (Promise[TR, TJ, TN]) with TTarget = js.native
+  
   /**
     * Reject a Deferred object and call any failCallbacks with the given args.
     * @param args Optional arguments that are passed to the failCallbacks.
@@ -628,6 +638,7 @@ trait Deferred[TR, TJ, TN] extends js.Object {
     * @since 1.5
     */
   def reject(args: TJ*): this.type = js.native
+  
   /**
     * Reject a Deferred object and call any failCallbacks with the given context and args.
     * @param context Context passed to the failCallbacks as the this object.
@@ -637,6 +648,7 @@ trait Deferred[TR, TJ, TN] extends js.Object {
     */
   def rejectWith(context: js.Object): this.type = js.native
   def rejectWith(context: js.Object, args: ArrayLike[TJ]): this.type = js.native
+  
   /**
     * Resolve a Deferred object and call any doneCallbacks with the given args.
     * @param args Optional arguments that are passed to the doneCallbacks.
@@ -644,6 +656,7 @@ trait Deferred[TR, TJ, TN] extends js.Object {
     * @since 1.5
     */
   def resolve(args: TR*): this.type = js.native
+  
   /**
     * Resolve a Deferred object and call any doneCallbacks with the given context and args.
     * @param context Context passed to the doneCallbacks as the this object.
@@ -653,12 +666,14 @@ trait Deferred[TR, TJ, TN] extends js.Object {
     */
   def resolveWith(context: js.Object): this.type = js.native
   def resolveWith(context: js.Object, args: ArrayLike[TR]): this.type = js.native
+  
   /**
     * Determine the current state of a Deferred object.
     * @see \`{@link https://api.jquery.com/deferred.state/ }\`
     * @since 1.7
     */
   def state(): pending | resolved | rejected = js.native
+  
   /**
     * Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
     * @param doneFilter A function that is called when the Deferred is resolved.
@@ -1116,28 +1131,33 @@ trait Deferred[TR, TJ, TN] extends js.Object {
     RND | RNF | RNP
   ] = js.native
 }
-
 @JSGlobal("JQuery.Deferred")
 @js.native
 object Deferred extends js.Object {
+  
   /**
     * @deprecated ​ Deprecated. Use \`{@link Callback }\`.
     */
   type AlwaysCallback[TResolve, TReject] = Callback[TResolve | TReject]
+  
   type Callback[T] = js.Function1[/* repeated */ T, Unit]
+  
   type Callback3[T, U, V] = CallbackBase[T, U, V, scala.Nothing]
+  
   type CallbackBase[T, U, V, R] = js.Function4[/* t */ T, /* u */ U, /* v */ V, /* repeated */ R, Unit]
+  
   /**
     * @deprecated ​ Deprecated. Use \`{@link Callback }\`.
     */
   type DoneCallback[TResolve] = Callback[TResolve]
+  
   /**
     * @deprecated ​ Deprecated. Use \`{@link Callback }\`.
     */
   type FailCallback[TReject] = Callback[TReject]
+  
   /**
     * @deprecated ​ Deprecated. Use \`{@link Callback }\`.
     */
   type ProgressCallback[TNotify] = Callback[TNotify]
 }
-

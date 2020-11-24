@@ -8,11 +8,12 @@ import typings.node.childProcessMod.ChildProcess
 import typings.node.childProcessMod.ExecException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mz/child_process", "exec")
 @js.native
 object exec extends js.Object {
+  
   def apply(command: String): js.Promise[js.Tuple2[String, String]] = js.native
   def apply(
     command: String,
@@ -62,4 +63,3 @@ object exec extends js.Object {
     ]
   ): ChildProcess = js.native
 }
-

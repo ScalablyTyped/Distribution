@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "browser-fingerprint"
-version := "0.1-dt-20200515Z-b458da"
+version := "0.1-dt-20200515Z-901302"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

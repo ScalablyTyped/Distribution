@@ -12,14 +12,11 @@ import typings.webgme.GmeStorage.CommitResult
 import typings.webgme.GmeStorage.ErrorOnlyCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Project extends js.Object {
-  /**
-    * Unique ID of project, built up by the ownerId and projectName.
-    */
-  var projectId: String = js.native
+  
   /**
     * Creates a new branch with head pointing to the provided commit hash.
     */
@@ -28,6 +25,7 @@ trait Project extends js.Object {
     * Creates a new branch with head pointing to the provided commit hash.
     */
   def createBranch(branchName: String, newHash: CommitHash, callback: ResultCallback[CommitResult]): Unit = js.native
+  
   /**
     * Creates a new tag pointing to the provided commit hash.
     */
@@ -36,6 +34,7 @@ trait Project extends js.Object {
     * Creates a new tag pointing to the provided commit hash.
     */
   def createTag(tagName: String, commitHash: CommitHash, callback: ErrorOnlyCallback): Unit = js.native
+  
   /**
     * Deletes the given branch.
     */
@@ -44,6 +43,7 @@ trait Project extends js.Object {
     * Deletes the given branch.
     */
   def deleteBranch(branchName: String, oldHash: CommitHash, callback: ResultCallback[CommitResult]): Unit = js.native
+  
   /**
     * Deletes the given tag.
     */
@@ -52,6 +52,7 @@ trait Project extends js.Object {
     * Deletes the given tag.
     */
   def deleteTag(tagname: String): js.Promise[Unit] = js.native
+  
   /**
     * Retrieves the commit hash for the head of the branch.
     */
@@ -60,6 +61,7 @@ trait Project extends js.Object {
     * Retrieves the commit hash for the head of the branch.
     */
   def getBranchHash(branchName: String, callback: CommitHashCallback): Unit = js.native
+  
   /**
     * Retrieves all branches and their current heads within the project.
     */
@@ -68,6 +70,7 @@ trait Project extends js.Object {
     * Retrieves all branches and their current heads within the project.
     */
   def getBranches(callback: ResultCallback[Dictionary[CommitHash]]): Unit = js.native
+  
   /**
     * Retrieves the Class ancestor of two commits. 
     * If no ancestor exists it will result in an error.
@@ -78,6 +81,7 @@ trait Project extends js.Object {
     * If no ancestor exists it will result in an error.
     */
   def getClassAncestorCommit(commitA: CommitHash, commitB: CommitHash, callback: CommitHashCallback): Unit = js.native
+  
   /**
     * Retrieves and array of the latest 
     * (sorted by timestamp) commits for the project. 
@@ -106,6 +110,7 @@ trait Project extends js.Object {
   def getCommits(before: Double, number: Double, callback: ResultCallback[CommitObject]): Unit = js.native
   def getCommits(before: CommitHash, number: Double): js.Promise[CommitObject] = js.native
   def getCommits(before: CommitHash, number: Double, callback: ResultCallback[CommitObject]): Unit = js.native
+  
   /**
     * Retrieves an array of commits starting from a branch(es) and/or commitHash(es). 
     * The result is ordered by the rules (applied in order) 
@@ -120,6 +125,7 @@ trait Project extends js.Object {
     *  2. By their timestamp.
     */
   def getHistory(start: ProjectStart, number: Double, callback: ResultCallback[js.Array[CommitObject]]): Unit = js.native
+  
   /**
     * Retrieves all tags and their commits hashes within the project.
     */
@@ -128,8 +134,10 @@ trait Project extends js.Object {
     * Retrieves all tags and their commits hashes within the project.
     */
   def getTags(callback: CommitHashCallback): Unit = js.native
+  
   def loadObject(key: String): js.Promise[CommitObject] = js.native
   def loadObject(key: String, callback: ResultCallback[CommitObject]): Unit = js.native
+  
   /** 
     * Collects the objects from the server and pre-loads 
     * them into the cache making the load of multiple objects faster.
@@ -146,6 +154,7 @@ trait Project extends js.Object {
     * @param paths List of paths that needs to be pre-loaded.
     */
   def loadPaths(rootKey: String, paths: js.Array[String], callback: ErrorOnlyCallback): Unit = js.native
+  
   /**
     * Makes a commit to data base. 
     * Based on the root hash and commit message a 
@@ -175,6 +184,12 @@ trait Project extends js.Object {
     msg: String,
     callback: ResultCallback[CommitResult]
   ): Unit = js.native
+  
+  /**
+    * Unique ID of project, built up by the ownerId and projectName.
+    */
+  var projectId: String = js.native
+  
   /**
     * Updates the head of the branch.
     */
@@ -189,4 +204,3 @@ trait Project extends js.Object {
     callback: ResultCallback[CommitResult]
   ): Unit = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.mobx.comparerMod.IEqualsComparer
 import typings.mobx.modifiersMod.IEnhancer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx/lib/internal", "ObservableValue")
 @js.native
@@ -37,4 +37,3 @@ class ObservableValue[T] protected ()
   ) = this()
   def this(value: T, enhancer: IEnhancer[T], name: String, notifySpy: Boolean, equals: IEqualsComparer[_]) = this()
 }
-

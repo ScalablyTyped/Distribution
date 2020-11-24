@@ -12,7 +12,7 @@ Easily type math in your webapp
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 3 |
-| # downloads        | 13887 |
+| # downloads        | 75883 |
 | # stars            | 0 |
 
 ## Links

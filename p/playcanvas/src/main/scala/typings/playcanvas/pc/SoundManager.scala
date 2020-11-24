@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new sound manager.
@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SoundManager extends EventHandler {
+  
   /**
     * Global volume for the manager. All {@link pc.SoundInstance}s will scale their volume with this volume. Valid between [0, 1].
     */
   var volume: Double = js.native
 }
-

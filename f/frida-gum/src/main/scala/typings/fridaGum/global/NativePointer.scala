@@ -5,7 +5,7 @@ import typings.fridaGum.NativePointerValue
 import typings.fridaGum.UInt64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a native pointer value whose size depends on Process#pointerSize.
@@ -24,4 +24,3 @@ class NativePointer protected ()
   def this(v: NativePointerValue) = this()
   def this(v: UInt64) = this()
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Labels")
 @js.native
 class ResourceUsersLabels protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gmail.users.labels.create
     * @desc Creates a new label.
@@ -42,6 +44,7 @@ class ResourceUsersLabels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLabel]
   ): Unit = js.native
+  
   /**
     * gmail.users.labels.delete
     * @desc Immediately and permanently deletes the specified label and removes
@@ -72,6 +75,7 @@ class ResourceUsersLabels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gmail.users.labels.get
     * @desc Gets the specified label.
@@ -101,6 +105,7 @@ class ResourceUsersLabels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLabel]
   ): Unit = js.native
+  
   /**
     * gmail.users.labels.list
     * @desc Lists all labels in the user's mailbox.
@@ -129,6 +134,7 @@ class ResourceUsersLabels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListLabelsResponse]
   ): Unit = js.native
+  
   /**
     * gmail.users.labels.patch
     * @desc Updates the specified label. This method supports patch semantics.
@@ -159,6 +165,7 @@ class ResourceUsersLabels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLabel]
   ): Unit = js.native
+  
   /**
     * gmail.users.labels.update
     * @desc Updates the specified label.
@@ -190,4 +197,3 @@ class ResourceUsersLabels protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLabel]
   ): Unit = js.native
 }
-

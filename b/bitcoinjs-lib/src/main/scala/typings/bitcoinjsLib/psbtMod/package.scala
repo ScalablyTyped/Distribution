@@ -2,9 +2,10 @@ package typings.bitcoinjsLib
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object psbtMod {
+  
   /**
     * This function must do two things:
     * 1. Check if the `input` can be finalized. If it can not be finalized, throw.

@@ -11,8 +11,8 @@ Generate pseudo-randum numbers
 | Full name          | random-number |
 | Keywords           | random-number, random, random-integer |
 | # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 434655 |
+| # dependents       | 41 |
+| # downloads        | 424858 |
 | # stars            | 0 |
 
 ## Links

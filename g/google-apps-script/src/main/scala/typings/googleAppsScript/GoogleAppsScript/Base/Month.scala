@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Base
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Month extends js.Object
-
 /**
   * An enum representing the months of the year.
   */
 @JSGlobal("GoogleAppsScript.Base.Month")
 @js.native
 object Month extends js.Object {
+  
   @js.native
   sealed trait APRIL extends Month
   
@@ -48,6 +48,4 @@ object Month extends js.Object {
   
   @js.native
   sealed trait SEPTEMBER extends Month
-  
 }
-

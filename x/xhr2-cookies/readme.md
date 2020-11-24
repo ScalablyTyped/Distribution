@@ -11,8 +11,8 @@ XMLHttpRequest polyfill for node.js
 | Full name          | xhr2-cookies |
 | Keywords           | XMLHttpRequest, cookies, xhr2 |
 | # releases         | 0 |
-| # dependents       | 62 |
-| # downloads        | 2723938 |
+| # dependents       | 75 |
+| # downloads        | 3524514 |
 | # stars            | 0 |
 
 ## Links

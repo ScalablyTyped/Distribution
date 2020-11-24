@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Kanban
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Target extends js.Object
-
 @JSGlobal("ej.Kanban.Target")
 @js.native
 object Target extends js.Object {
+  
   ///Sets context menu to Kanban
   @js.native
   sealed trait All extends Target
@@ -25,6 +25,4 @@ object Target extends js.Object {
   ///Sets context menu to Kanban header
   @js.native
   sealed trait Header extends Target
-  
 }
-

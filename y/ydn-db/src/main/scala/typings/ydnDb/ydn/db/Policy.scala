@@ -2,14 +2,14 @@ package typings.ydnDb.ydn.db
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Policy extends js.Object
-
 @JSGlobal("ydn.db.Policy")
 @js.native
 object Policy extends js.Object {
+  
   @js.native
   sealed trait all extends Policy
   
@@ -24,6 +24,4 @@ object Policy extends js.Object {
   
   @js.native
   sealed trait single extends Policy
-  
 }
-

@@ -6,11 +6,12 @@ import typings.std.HTMLElement
 import typings.std.NodeList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("autosize", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * Attach autosize to JQuery collection
     */
@@ -23,6 +24,7 @@ object mod extends js.Object {
     * Attach autosize to Element
     */
   def apply(element: Element): Element = js.native
+  
   /**
     * Removes Autosize and reverts any changes it made to the textarea element.
     */
@@ -35,6 +37,7 @@ object mod extends js.Object {
     * Removes Autosize and reverts any changes it made to the textarea element.
     */
   def destroy(element: Element): Element = js.native
+  
   /**
     * Triggers the height adjustment for an assigned textarea element.
     * Autosize will automatically adjust the textarea height on keyboard and window resize events.
@@ -54,4 +57,3 @@ object mod extends js.Object {
     */
   def update(element: Element): Element = js.native
 }
-

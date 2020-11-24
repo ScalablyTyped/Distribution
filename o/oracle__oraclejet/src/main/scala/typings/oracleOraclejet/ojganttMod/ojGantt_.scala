@@ -15,8 +15,6 @@ import typings.oracleOraclejet.anon.`9`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojganttMod.ojGantt.ReferenceObject
-import typings.oracleOraclejet.ojganttMod.ojGantt.ojMove
-import typings.oracleOraclejet.ojganttMod.ojGantt.ojViewportChange
 import typings.oracleOraclejet.ojtimeBaseMod.dvtTimeComponent
 import typings.oracleOraclejet.oracleOraclejetStrings.animationOnDataChange
 import typings.oracleOraclejet.oracleOraclejetStrings.animationOnDataChangeChanged
@@ -42,6 +40,8 @@ import typings.oracleOraclejet.oracleOraclejetStrings.minorAxis
 import typings.oracleOraclejet.oracleOraclejetStrings.minorAxisChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.multiple
 import typings.oracleOraclejet.oracleOraclejetStrings.none
+import typings.oracleOraclejet.oracleOraclejetStrings.ojMove
+import typings.oracleOraclejet.oracleOraclejetStrings.ojViewportChange
 import typings.oracleOraclejet.oracleOraclejetStrings.referenceObjects
 import typings.oracleOraclejet.oracleOraclejetStrings.referenceObjectsChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.rowAxis
@@ -75,60 +75,11 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettableProperties[K1, K2, D1, D2]] {
-  var animationOnDataChange: auto | none = js.native
-  var animationOnDisplay: auto | none = js.native
-  var as: String = js.native
-  var axisPosition: bottom | top = js.native
-  var dependencyData: js.UndefOr[DataProvider[K1, D1]] = js.native
-  var dnd: Move = js.native
-  var end: String = js.native
-  var gridlines: Vertical = js.native
-  var majorAxis: Scale = js.native
-  var minorAxis: Scale = js.native
-  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onAxisPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[bottom | top], _]) | Null = js.native
-  var onDependencyDataChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[DataProvider[K1, D1]]], _]) | Null = js.native
-  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Move], _]) | Null = js.native
-  var onEndChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onGridlinesChanged: (js.Function1[/* event */ JetElementCustomEvent[Vertical], _]) | Null = js.native
-  var onMajorAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[Scale], _]) | Null = js.native
-  var onMinorAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[Scale], _]) | Null = js.native
-  var onOjMove: (js.Function1[/* event */ ojMove[K2, D2], _]) | Null = js.native
-  var onOjViewportChange: (js.Function1[/* event */ ojViewportChange, _]) | Null = js.native
-  var onReferenceObjectsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[ReferenceObject]], _]) | Null = js.native
-  var onRowAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[MaxWidth[K2, D2]], _]) | Null = js.native
-  var onRowDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[`8`], _]) | Null = js.native
-  var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[OffsetY], _]) | Null = js.native
-  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K2]], _]) | Null = js.native
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
-  var onStartChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onTaskDataChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[DataProvider[K2, D2]]], _]) | Null = js.native
-  var onTaskDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[Baseline], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`9`[K2, D2]], _]) | Null = js.native
-  var onValueFormatsChanged: (js.Function1[/* event */ JetElementCustomEvent[BaselineDate], _]) | Null = js.native
-  var onViewportEndChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onViewportStartChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var referenceObjects: js.Array[ReferenceObject] = js.native
-  var rowAxis: MaxWidth[K2, D2] = js.native
-  var rowDefaults: `8` = js.native
-  var scrollPosition: OffsetY = js.native
-  var selection: js.Array[K2] = js.native
-  var selectionMode: single | multiple | none = js.native
-  var start: String = js.native
-  var taskData: js.UndefOr[DataProvider[K2, D2]] = js.native
-  var taskDefaults: Baseline = js.native
-  var tooltip: `9`[K2, D2] = js.native
-  @JSName("translations")
-  var translations_ojGantt_ : AccessibleDependencyInfo = js.native
-  var valueFormats: BaselineDate = js.native
-  var viewportEnd: String = js.native
-  var viewportStart: String = js.native
+  
   def addEventListener(
     `type`: animationOnDataChangeChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _]
@@ -252,24 +203,40 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojMove(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojMove,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojMove[K2, D2], _]
+    `type`: ojMove,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojganttMod.ojGantt.ojMove[K2, D2], 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojMove(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojMove,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojMove[K2, D2], _],
+    `type`: ojMove,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojganttMod.ojGantt.ojMove[K2, D2], 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojViewportChange(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojViewportChange,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojViewportChange, _]
+    `type`: ojViewportChange,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojganttMod.ojGantt.ojViewportChange, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojViewportChange(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojViewportChange,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojViewportChange, _],
+    `type`: ojViewportChange,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojganttMod.ojGantt.ojViewportChange, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -412,7 +379,23 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var animationOnDataChange: auto | none = js.native
+  
+  var animationOnDisplay: auto | none = js.native
+  
+  var as: String = js.native
+  
+  var axisPosition: bottom | top = js.native
+  
+  var dependencyData: js.UndefOr[DataProvider[K1, D1]] = js.native
+  
+  var dnd: Move = js.native
+  
+  var end: String = js.native
+  
   def getContextByNode(node: Element): Index | RowIndex | Null = js.native
+  
   @JSName("getProperty")
   def getProperty_animationOnDataChange(property: animationOnDataChange): auto | none = js.native
   @JSName("getProperty")
@@ -459,7 +442,77 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   def getProperty_viewportEnd(property: viewportEnd): String = js.native
   @JSName("getProperty")
   def getProperty_viewportStart(property: viewportStart): String = js.native
+  
+  var gridlines: Vertical = js.native
+  
+  var majorAxis: Scale = js.native
+  
+  var minorAxis: Scale = js.native
+  
+  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onAxisPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[bottom | top], _]) | Null = js.native
+  
+  var onDependencyDataChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[DataProvider[K1, D1]]], _]) | Null = js.native
+  
+  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Move], _]) | Null = js.native
+  
+  var onEndChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onGridlinesChanged: (js.Function1[/* event */ JetElementCustomEvent[Vertical], _]) | Null = js.native
+  
+  var onMajorAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[Scale], _]) | Null = js.native
+  
+  var onMinorAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[Scale], _]) | Null = js.native
+  
+  var onOjMove: (js.Function1[/* event */ typings.oracleOraclejet.ojganttMod.ojGantt.ojMove[K2, D2], _]) | Null = js.native
+  
+  var onOjViewportChange: (js.Function1[/* event */ typings.oracleOraclejet.ojganttMod.ojGantt.ojViewportChange, _]) | Null = js.native
+  
+  var onReferenceObjectsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[ReferenceObject]], _]) | Null = js.native
+  
+  var onRowAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[MaxWidth[K2, D2]], _]) | Null = js.native
+  
+  var onRowDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[`8`], _]) | Null = js.native
+  
+  var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[OffsetY], _]) | Null = js.native
+  
+  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K2]], _]) | Null = js.native
+  
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
+  
+  var onStartChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onTaskDataChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[DataProvider[K2, D2]]], _]) | Null = js.native
+  
+  var onTaskDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[Baseline], _]) | Null = js.native
+  
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`9`[K2, D2]], _]) | Null = js.native
+  
+  var onValueFormatsChanged: (js.Function1[/* event */ JetElementCustomEvent[BaselineDate], _]) | Null = js.native
+  
+  var onViewportEndChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onViewportStartChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var referenceObjects: js.Array[ReferenceObject] = js.native
+  
+  var rowAxis: MaxWidth[K2, D2] = js.native
+  
+  var rowDefaults: `8` = js.native
+  
+  var scrollPosition: OffsetY = js.native
+  
+  var selection: js.Array[K2] = js.native
+  
+  var selectionMode: single | multiple | none = js.native
+  
   def setProperties(properties: ojGanttSettablePropertiesLenient[K1, K2, D1, D2]): Unit = js.native
+  
   def setProperty(property: animationOnDataChange, value: auto): Unit = js.native
   def setProperty(property: animationOnDataChange, value: none): Unit = js.native
   def setProperty(property: animationOnDisplay, value: auto): Unit = js.native
@@ -513,5 +566,21 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   def setProperty_viewportEnd(property: viewportEnd, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_viewportStart(property: viewportStart, value: String): Unit = js.native
+  
+  var start: String = js.native
+  
+  var taskData: js.UndefOr[DataProvider[K2, D2]] = js.native
+  
+  var taskDefaults: Baseline = js.native
+  
+  var tooltip: `9`[K2, D2] = js.native
+  
+  @JSName("translations")
+  var translations_ojGantt_ : AccessibleDependencyInfo = js.native
+  
+  var valueFormats: BaselineDate = js.native
+  
+  var viewportEnd: String = js.native
+  
+  var viewportStart: String = js.native
 }
-

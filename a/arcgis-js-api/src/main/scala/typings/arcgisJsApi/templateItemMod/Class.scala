@@ -4,11 +4,10 @@ import typings.arcgisJsApi.esri.TemplateItem
 import typings.arcgisJsApi.esri.TemplateItemProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/widgets/FeatureTemplates/TemplateItem", JSImport.Namespace)
 @js.native
 class Class () extends TemplateItem {
   def this(properties: TemplateItemProperties) = this()
 }
-

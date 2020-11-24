@@ -8,14 +8,16 @@ import typings.three.loadingManagerMod.LoadingManager
 import typings.three.textureMod.Texture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/loaders/TextureLoader", JSImport.Namespace)
 @js.native
 object textureLoaderMod extends js.Object {
+  
   @js.native
   class TextureLoader () extends Loader {
     def this(manager: LoadingManager) = this()
+    
     def load(url: String): Texture = js.native
     def load(
       url: String,
@@ -53,6 +55,4 @@ object textureLoaderMod extends js.Object {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Texture = js.native
   }
-  
 }
-

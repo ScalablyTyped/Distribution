@@ -1,17 +1,19 @@
 package typings.awsSdk.appsyncMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AppSync extends Service {
+  
   @JSName("config")
   var config_AppSync: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a cache for the GraphQL API.
     */
@@ -25,6 +27,7 @@ trait AppSync extends Service {
     params: CreateApiCacheRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateApiCacheResponse, Unit]
   ): Request[CreateApiCacheResponse, AWSError] = js.native
+  
   /**
     * Creates a unique key that you can distribute to clients who are executing your API.
     */
@@ -38,6 +41,7 @@ trait AppSync extends Service {
     params: CreateApiKeyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateApiKeyResponse, Unit]
   ): Request[CreateApiKeyResponse, AWSError] = js.native
+  
   /**
     * Creates a DataSource object.
     */
@@ -51,6 +55,7 @@ trait AppSync extends Service {
     params: CreateDataSourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDataSourceResponse, Unit]
   ): Request[CreateDataSourceResponse, AWSError] = js.native
+  
   /**
     * Creates a Function object. A function is a reusable entity. Multiple functions can be used to compose the resolver logic.
     */
@@ -64,6 +69,7 @@ trait AppSync extends Service {
     params: CreateFunctionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateFunctionResponse, Unit]
   ): Request[CreateFunctionResponse, AWSError] = js.native
+  
   /**
     * Creates a GraphqlApi object.
     */
@@ -77,6 +83,7 @@ trait AppSync extends Service {
     params: CreateGraphqlApiRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateGraphqlApiResponse, Unit]
   ): Request[CreateGraphqlApiResponse, AWSError] = js.native
+  
   /**
     * Creates a Resolver object. A resolver converts incoming requests into a format that a data source can understand and converts the data source's responses into GraphQL.
     */
@@ -90,6 +97,7 @@ trait AppSync extends Service {
     params: CreateResolverRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateResolverResponse, Unit]
   ): Request[CreateResolverResponse, AWSError] = js.native
+  
   /**
     * Creates a Type object.
     */
@@ -103,6 +111,7 @@ trait AppSync extends Service {
     params: CreateTypeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateTypeResponse, Unit]
   ): Request[CreateTypeResponse, AWSError] = js.native
+  
   /**
     * Deletes an ApiCache object.
     */
@@ -116,6 +125,7 @@ trait AppSync extends Service {
     params: DeleteApiCacheRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteApiCacheResponse, Unit]
   ): Request[DeleteApiCacheResponse, AWSError] = js.native
+  
   /**
     * Deletes an API key.
     */
@@ -129,6 +139,7 @@ trait AppSync extends Service {
     params: DeleteApiKeyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteApiKeyResponse, Unit]
   ): Request[DeleteApiKeyResponse, AWSError] = js.native
+  
   /**
     * Deletes a DataSource object.
     */
@@ -142,6 +153,7 @@ trait AppSync extends Service {
     params: DeleteDataSourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDataSourceResponse, Unit]
   ): Request[DeleteDataSourceResponse, AWSError] = js.native
+  
   /**
     * Deletes a Function.
     */
@@ -155,6 +167,7 @@ trait AppSync extends Service {
     params: DeleteFunctionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteFunctionResponse, Unit]
   ): Request[DeleteFunctionResponse, AWSError] = js.native
+  
   /**
     * Deletes a GraphqlApi object.
     */
@@ -168,6 +181,7 @@ trait AppSync extends Service {
     params: DeleteGraphqlApiRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteGraphqlApiResponse, Unit]
   ): Request[DeleteGraphqlApiResponse, AWSError] = js.native
+  
   /**
     * Deletes a Resolver object.
     */
@@ -181,6 +195,7 @@ trait AppSync extends Service {
     params: DeleteResolverRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteResolverResponse, Unit]
   ): Request[DeleteResolverResponse, AWSError] = js.native
+  
   /**
     * Deletes a Type object.
     */
@@ -194,6 +209,7 @@ trait AppSync extends Service {
     params: DeleteTypeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteTypeResponse, Unit]
   ): Request[DeleteTypeResponse, AWSError] = js.native
+  
   /**
     * Flushes an ApiCache object.
     */
@@ -207,6 +223,7 @@ trait AppSync extends Service {
     params: FlushApiCacheRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ FlushApiCacheResponse, Unit]
   ): Request[FlushApiCacheResponse, AWSError] = js.native
+  
   /**
     * Retrieves an ApiCache object.
     */
@@ -220,6 +237,7 @@ trait AppSync extends Service {
     params: GetApiCacheRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetApiCacheResponse, Unit]
   ): Request[GetApiCacheResponse, AWSError] = js.native
+  
   /**
     * Retrieves a DataSource object.
     */
@@ -233,6 +251,7 @@ trait AppSync extends Service {
     params: GetDataSourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDataSourceResponse, Unit]
   ): Request[GetDataSourceResponse, AWSError] = js.native
+  
   /**
     * Get a Function.
     */
@@ -246,6 +265,7 @@ trait AppSync extends Service {
     params: GetFunctionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetFunctionResponse, Unit]
   ): Request[GetFunctionResponse, AWSError] = js.native
+  
   /**
     * Retrieves a GraphqlApi object.
     */
@@ -259,6 +279,7 @@ trait AppSync extends Service {
     params: GetGraphqlApiRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetGraphqlApiResponse, Unit]
   ): Request[GetGraphqlApiResponse, AWSError] = js.native
+  
   /**
     * Retrieves the introspection schema for a GraphQL API.
     */
@@ -272,6 +293,7 @@ trait AppSync extends Service {
     params: GetIntrospectionSchemaRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetIntrospectionSchemaResponse, Unit]
   ): Request[GetIntrospectionSchemaResponse, AWSError] = js.native
+  
   /**
     * Retrieves a Resolver object.
     */
@@ -285,6 +307,7 @@ trait AppSync extends Service {
     params: GetResolverRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetResolverResponse, Unit]
   ): Request[GetResolverResponse, AWSError] = js.native
+  
   /**
     * Retrieves the current status of a schema creation operation.
     */
@@ -298,6 +321,7 @@ trait AppSync extends Service {
     params: GetSchemaCreationStatusRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSchemaCreationStatusResponse, Unit]
   ): Request[GetSchemaCreationStatusResponse, AWSError] = js.native
+  
   /**
     * Retrieves a Type object.
     */
@@ -311,19 +335,21 @@ trait AppSync extends Service {
     params: GetTypeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetTypeResponse, Unit]
   ): Request[GetTypeResponse, AWSError] = js.native
+  
   /**
-    * Lists the API keys for a given API.  API keys are deleted automatically sometime after they expire. However, they may still be included in the response until they have actually been deleted. You can safely call DeleteApiKey to manually delete a key before it's automatically deleted. 
+    * Lists the API keys for a given API.  API keys are deleted automatically 60 days after they expire. However, they may still be included in the response until they have actually been deleted. You can safely call DeleteApiKey to manually delete a key before it's automatically deleted. 
     */
   def listApiKeys(): Request[ListApiKeysResponse, AWSError] = js.native
   def listApiKeys(callback: js.Function2[/* err */ AWSError, /* data */ ListApiKeysResponse, Unit]): Request[ListApiKeysResponse, AWSError] = js.native
   /**
-    * Lists the API keys for a given API.  API keys are deleted automatically sometime after they expire. However, they may still be included in the response until they have actually been deleted. You can safely call DeleteApiKey to manually delete a key before it's automatically deleted. 
+    * Lists the API keys for a given API.  API keys are deleted automatically 60 days after they expire. However, they may still be included in the response until they have actually been deleted. You can safely call DeleteApiKey to manually delete a key before it's automatically deleted. 
     */
   def listApiKeys(params: ListApiKeysRequest): Request[ListApiKeysResponse, AWSError] = js.native
   def listApiKeys(
     params: ListApiKeysRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListApiKeysResponse, Unit]
   ): Request[ListApiKeysResponse, AWSError] = js.native
+  
   /**
     * Lists the data sources for a given API.
     */
@@ -337,6 +363,7 @@ trait AppSync extends Service {
     params: ListDataSourcesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDataSourcesResponse, Unit]
   ): Request[ListDataSourcesResponse, AWSError] = js.native
+  
   /**
     * List multiple functions.
     */
@@ -350,6 +377,7 @@ trait AppSync extends Service {
     params: ListFunctionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListFunctionsResponse, Unit]
   ): Request[ListFunctionsResponse, AWSError] = js.native
+  
   /**
     * Lists your GraphQL APIs.
     */
@@ -363,6 +391,7 @@ trait AppSync extends Service {
     params: ListGraphqlApisRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListGraphqlApisResponse, Unit]
   ): Request[ListGraphqlApisResponse, AWSError] = js.native
+  
   /**
     * Lists the resolvers for a given API and type.
     */
@@ -376,6 +405,7 @@ trait AppSync extends Service {
     params: ListResolversRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListResolversResponse, Unit]
   ): Request[ListResolversResponse, AWSError] = js.native
+  
   /**
     * List the resolvers that are associated with a specific function.
     */
@@ -389,6 +419,7 @@ trait AppSync extends Service {
     params: ListResolversByFunctionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListResolversByFunctionResponse, Unit]
   ): Request[ListResolversByFunctionResponse, AWSError] = js.native
+  
   /**
     * Lists the tags for a resource.
     */
@@ -402,6 +433,7 @@ trait AppSync extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Lists the types for a given API.
     */
@@ -415,6 +447,7 @@ trait AppSync extends Service {
     params: ListTypesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTypesResponse, Unit]
   ): Request[ListTypesResponse, AWSError] = js.native
+  
   /**
     * Adds a new schema to your GraphQL API. This operation is asynchronous. Use to determine when it has completed.
     */
@@ -428,6 +461,7 @@ trait AppSync extends Service {
     params: StartSchemaCreationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartSchemaCreationResponse, Unit]
   ): Request[StartSchemaCreationResponse, AWSError] = js.native
+  
   /**
     * Tags a resource with user-supplied tags.
     */
@@ -441,6 +475,7 @@ trait AppSync extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Untags a resource.
     */
@@ -454,6 +489,7 @@ trait AppSync extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates the cache for the GraphQL API.
     */
@@ -467,19 +503,21 @@ trait AppSync extends Service {
     params: UpdateApiCacheRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateApiCacheResponse, Unit]
   ): Request[UpdateApiCacheResponse, AWSError] = js.native
+  
   /**
-    * Updates an API key.
+    * Updates an API key. The key can be updated while it is not deleted.
     */
   def updateApiKey(): Request[UpdateApiKeyResponse, AWSError] = js.native
   def updateApiKey(callback: js.Function2[/* err */ AWSError, /* data */ UpdateApiKeyResponse, Unit]): Request[UpdateApiKeyResponse, AWSError] = js.native
   /**
-    * Updates an API key.
+    * Updates an API key. The key can be updated while it is not deleted.
     */
   def updateApiKey(params: UpdateApiKeyRequest): Request[UpdateApiKeyResponse, AWSError] = js.native
   def updateApiKey(
     params: UpdateApiKeyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateApiKeyResponse, Unit]
   ): Request[UpdateApiKeyResponse, AWSError] = js.native
+  
   /**
     * Updates a DataSource object.
     */
@@ -493,6 +531,7 @@ trait AppSync extends Service {
     params: UpdateDataSourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDataSourceResponse, Unit]
   ): Request[UpdateDataSourceResponse, AWSError] = js.native
+  
   /**
     * Updates a Function object.
     */
@@ -506,6 +545,7 @@ trait AppSync extends Service {
     params: UpdateFunctionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateFunctionResponse, Unit]
   ): Request[UpdateFunctionResponse, AWSError] = js.native
+  
   /**
     * Updates a GraphqlApi object.
     */
@@ -519,6 +559,7 @@ trait AppSync extends Service {
     params: UpdateGraphqlApiRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateGraphqlApiResponse, Unit]
   ): Request[UpdateGraphqlApiResponse, AWSError] = js.native
+  
   /**
     * Updates a Resolver object.
     */
@@ -532,6 +573,7 @@ trait AppSync extends Service {
     params: UpdateResolverRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateResolverResponse, Unit]
   ): Request[UpdateResolverResponse, AWSError] = js.native
+  
   /**
     * Updates a Type object.
     */
@@ -546,4 +588,3 @@ trait AppSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateTypeResponse, Unit]
   ): Request[UpdateTypeResponse, AWSError] = js.native
 }
-

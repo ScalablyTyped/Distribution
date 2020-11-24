@@ -9,9 +9,9 @@ Low level streaming torrent client that exposes files as node.js streams and dow
 | ------------------ | :-------------: |
 | Full name          | torrent-stream |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 52 |
-| # downloads        | 50326 |
+| # releases         | 2 |
+| # dependents       | 54 |
+| # downloads        | 55134 |
 | # stars            | 18 |
 
 ## Links

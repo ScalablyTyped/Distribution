@@ -2,17 +2,17 @@ package typings.officeJs.OneNote
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait NoteTagStatus extends js.Object
-
 /**
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.NoteTagStatus")
 @js.native
 object NoteTagStatus extends js.Object {
+  
   @js.native
   sealed trait completed extends NoteTagStatus
   
@@ -33,6 +33,4 @@ object NoteTagStatus extends js.Object {
   
   @js.native
   sealed trait unknown extends NoteTagStatus
-  
 }
-

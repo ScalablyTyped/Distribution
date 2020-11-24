@@ -2,12 +2,12 @@ package typings.winrt.Windows.Media.Devices
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MediaDeviceControlCapabilities extends IMediaDeviceControlCapabilities
-
 object MediaDeviceControlCapabilities {
+  
   @scala.inline
   def apply(
     autoModeSupported: Boolean,
@@ -21,4 +21,3 @@ object MediaDeviceControlCapabilities {
     __obj.asInstanceOf[MediaDeviceControlCapabilities]
   }
 }
-

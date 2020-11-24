@@ -19,7 +19,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XChangesListener
 import typings.activexLibreoffice.com_.sun.star.util.XChangesNotifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides update control for a hierarchy of configuration items and information about the hierarchy as a whole as well as its root.
@@ -49,8 +49,8 @@ trait UpdateRootElement
      with XChangesNotifier
      with XLocalizable
      with XChangesBatch
-
 object UpdateRootElement {
+  
   @scala.inline
   def apply(
     AsProperty: Property,
@@ -89,4 +89,3 @@ object UpdateRootElement {
     __obj.asInstanceOf[UpdateRootElement]
   }
 }
-

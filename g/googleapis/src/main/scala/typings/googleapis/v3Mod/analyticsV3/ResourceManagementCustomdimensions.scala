@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Customdimensions")
 @js.native
 class ResourceManagementCustomdimensions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.management.customDimensions.get
     * @desc Get a custom dimension to which the user has access.
@@ -46,6 +48,7 @@ class ResourceManagementCustomdimensions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomDimension]
   ): Unit = js.native
+  
   /**
     * analytics.management.customDimensions.insert
     * @desc Create a new custom dimension.
@@ -79,6 +82,7 @@ class ResourceManagementCustomdimensions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomDimension]
   ): Unit = js.native
+  
   /**
     * analytics.management.customDimensions.list
     * @desc Lists custom dimensions to which the user has access.
@@ -113,6 +117,7 @@ class ResourceManagementCustomdimensions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomDimensions]
   ): Unit = js.native
+  
   /**
     * analytics.management.customDimensions.patch
     * @desc Updates an existing custom dimension. This method supports patch
@@ -149,6 +154,7 @@ class ResourceManagementCustomdimensions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomDimension]
   ): Unit = js.native
+  
   /**
     * analytics.management.customDimensions.update
     * @desc Updates an existing custom dimension.
@@ -185,4 +191,3 @@ class ResourceManagementCustomdimensions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCustomDimension]
   ): Unit = js.native
 }
-

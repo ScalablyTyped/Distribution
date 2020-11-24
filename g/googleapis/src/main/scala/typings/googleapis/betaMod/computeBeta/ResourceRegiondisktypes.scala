@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Regiondisktypes")
 @js.native
 class ResourceRegiondisktypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.regionDiskTypes.get
     * @desc Returns the specified regional disk type. Gets a list of available
@@ -44,6 +46,7 @@ class ResourceRegiondisktypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDiskType]
   ): Unit = js.native
+  
   /**
     * compute.regionDiskTypes.list
     * @desc Retrieves a list of regional disk types available to the specified
@@ -82,4 +85,3 @@ class ResourceRegiondisktypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRegionDiskTypeList]
   ): Unit = js.native
 }
-

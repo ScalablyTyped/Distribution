@@ -2,11 +2,12 @@ package typings.luminoCommands.mod.CommandRegistry
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/commands", "CommandRegistry.normalizeKeystroke")
 @js.native
 object normalizeKeystroke extends js.Object {
+  
   /**
     * Normalize a keystroke into a canonical representation.
     *
@@ -22,4 +23,3 @@ object normalizeKeystroke extends js.Object {
     */
   def apply(keystroke: String): String = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.typescript.mod
 import typings.typescript.mod.SyntaxKind.Parameter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParameterDeclaration
@@ -14,15 +14,21 @@ trait ParameterDeclaration
      with VariableLikeDeclaration
      with _BindingOrAssignmentElement
      with _HasJSDoc {
-  var dotDotDotToken: js.UndefOr[DotDotDotToken] = js.native
-  var initializer: js.UndefOr[Expression] = js.native
+  
+  val dotDotDotToken: js.UndefOr[DotDotDotToken] = js.native
+  
+  val initializer: js.UndefOr[Expression] = js.native
+  
   @JSName("kind")
-  var kind_ParameterDeclaration: Parameter = js.native
+  val kind_ParameterDeclaration: Parameter = js.native
+  
   @JSName("name")
-  var name_ParameterDeclaration: BindingName = js.native
+  val name_ParameterDeclaration: BindingName = js.native
+  
   @JSName("parent")
-  var parent_ParameterDeclaration: SignatureDeclaration = js.native
-  var questionToken: js.UndefOr[QuestionToken] = js.native
-  var `type`: js.UndefOr[TypeNode] = js.native
+  val parent_ParameterDeclaration: SignatureDeclaration = js.native
+  
+  val questionToken: js.UndefOr[QuestionToken] = js.native
+  
+  val `type`: js.UndefOr[TypeNode] = js.native
 }
-

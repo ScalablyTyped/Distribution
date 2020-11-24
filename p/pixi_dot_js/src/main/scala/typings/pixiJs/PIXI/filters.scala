@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This namespace contains WebGL-only display filters that can be applied
@@ -34,6 +34,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.filters")
 @js.native
 object filters extends js.Object {
+  
   /**
     * Simplest filter - applies alpha.
     *
@@ -53,6 +54,7 @@ object filters extends js.Object {
     */
   @js.native
   trait AlphaFilter extends Filter {
+    
     /**
       * Coefficient for alpha multiplication
       *
@@ -73,6 +75,7 @@ object filters extends js.Object {
     */
   @js.native
   trait BlurFilter extends Filter {
+    
     /**
       * Sets the strength of both the blurX and blurY properties simultaneously
       *
@@ -80,6 +83,7 @@ object filters extends js.Object {
       * @default 2
       */
     var blur: Double = js.native
+    
     /**
       * Sets the strength of the blurX property
       *
@@ -87,6 +91,7 @@ object filters extends js.Object {
       * @default 2
       */
     var blurX: Double = js.native
+    
     /**
       * Sets the strength of the blurY property
       *
@@ -94,6 +99,7 @@ object filters extends js.Object {
       * @default 2
       */
     var blurY: Double = js.native
+    
     /**
       * Sets the number of passes for blur. More passes means higher quaility bluring.
       *
@@ -101,6 +107,7 @@ object filters extends js.Object {
       * @default 1
       */
     var quality: Double = js.native
+    
     /**
       * If set to true the edge of the target will be clamped
       *
@@ -119,6 +126,7 @@ object filters extends js.Object {
     */
   @js.native
   trait BlurFilterPass extends Filter {
+    
     /**
       * Sets the strength of both the blur.
       *
@@ -126,6 +134,7 @@ object filters extends js.Object {
       * @default 16
       */
     var blur: Double = js.native
+    
     /**
       * Sets the quality of the blur by modifying the number of passes. More passes means higher
       * quaility bluring but the lower the performance.
@@ -153,6 +162,16 @@ object filters extends js.Object {
     */
   @js.native
   trait ColorMatrixFilter extends Filter {
+    
+    /**
+      * Transforms current matrix and set the new one
+      *
+      * @param {number[]} matrix - 5x4 matrix
+      * @param {boolean} multiply - if true, current matrix and matrix are multiplied. If false,
+      *  just set the current matrix with @param matrix
+      */
+    def _loadMatrix(matrix: js.Array[Double], multiply: Boolean): Unit = js.native
+    
     /**
       * The opacity value to use when mixing the original and resultant colors.
       *
@@ -164,21 +183,7 @@ object filters extends js.Object {
       * @default 1
       */
     var alpha: Double = js.native
-    /**
-      * The matrix of the color matrix filter
-      *
-      * @member {number[]}
-      * @default [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0]
-      */
-    var matrix: js.Array[Double] = js.native
-    /**
-      * Transforms current matrix and set the new one
-      *
-      * @param {number[]} matrix - 5x4 matrix
-      * @param {boolean} multiply - if true, current matrix and matrix are multiplied. If false,
-      *  just set the current matrix with @param matrix
-      */
-    def _loadMatrix(matrix: js.Array[Double], multiply: Boolean): Unit = js.native
+    
     /**
       * Set the black and white matrice.
       *
@@ -186,6 +191,7 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def blackAndWhite(multiply: Boolean): Unit = js.native
+    
     /**
       * Adjusts brightness
       *
@@ -194,6 +200,7 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def brightness(b: Double, multiply: Boolean): Unit = js.native
+    
     /**
       * Brown delicious browni filter (thanks Dominic Szablewski)
       *
@@ -201,6 +208,7 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def browni(multiply: Boolean): Unit = js.native
+    
     /**
       * We don't know exactly what it does, kind of gradient map, but funny to play with!
       *
@@ -212,6 +220,7 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def colorTone(desaturation: Double, toned: Double, lightColor: Double, darkColor: Double, multiply: Boolean): Unit = js.native
+    
     /**
       * Set the contrast matrix, increase the separation between dark and bright
       * Increase contrast : shadows darker and highlights brighter
@@ -222,6 +231,7 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def contrast(amount: Double, multiply: Boolean): Unit = js.native
+    
     /**
       * Desaturate image (remove color)
       *
@@ -229,6 +239,7 @@ object filters extends js.Object {
       *
       */
     def desaturate(): Unit = js.native
+    
     /**
       * Set the matrices in grey scales
       *
@@ -237,6 +248,7 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def greyscale(scale: Double, multiply: Boolean): Unit = js.native
+    
     /**
       * Set the hue property of the color
       *
@@ -245,6 +257,7 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def hue(rotation: Double, multiply: Boolean): Unit = js.native
+    
     /**
       * Color reversal film introduced by Eastman Kodak in 1935. (thanks Dominic Szablewski)
       *
@@ -252,6 +265,7 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def kodachrome(multiply: Boolean): Unit = js.native
+    
     /**
       * LSD effect
       *
@@ -261,6 +275,15 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def lsd(multiply: Boolean): Unit = js.native
+    
+    /**
+      * The matrix of the color matrix filter
+      *
+      * @member {number[]}
+      * @default [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0]
+      */
+    var matrix: js.Array[Double] = js.native
+    
     /**
       * Negative image (inverse of classic rgb matrix)
       *
@@ -268,6 +291,7 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def negative(multiply: Boolean): Unit = js.native
+    
     /**
       * Night effect
       *
@@ -276,6 +300,7 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def night(intensity: Double, multiply: Boolean): Unit = js.native
+    
     /**
       * Polaroid filter
       *
@@ -283,6 +308,7 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def polaroid(multiply: Boolean): Unit = js.native
+    
     /**
       * Predator effect
       *
@@ -293,11 +319,13 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def predator(amount: Double, multiply: Boolean): Unit = js.native
+    
     /**
       * Erase the current matrix by setting the default one
       *
       */
     def reset(): Unit = js.native
+    
     /**
       * Set the saturation matrix, increase the separation between colors
       * Increase saturation : increase contrast, brightness, and sharpness
@@ -308,6 +336,7 @@ object filters extends js.Object {
       */
     def saturate(amount: Double): Unit = js.native
     def saturate(amount: Double, multiply: Boolean): Unit = js.native
+    
     /**
       * Sepia image
       *
@@ -315,6 +344,7 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def sepia(multiply: Boolean): Unit = js.native
+    
     /**
       * Color motion picture process invented in 1916 (thanks Dominic Szablewski)
       *
@@ -322,6 +352,7 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def technicolor(multiply: Boolean): Unit = js.native
+    
     /**
       * Filter who transforms : Red -> Blue and Blue -> Red
       *
@@ -329,6 +360,7 @@ object filters extends js.Object {
       *  just set the current matrix with @param matrix
       */
     def toBGR(multiply: Boolean): Unit = js.native
+    
     /**
       * Vintage filter (thanks Dominic Szablewski)
       *
@@ -358,12 +390,14 @@ object filters extends js.Object {
     */
   @js.native
   trait DisplacementFilter extends Filter {
+    
     /**
       * The texture used for the displacement map. Must be power of 2 sized texture.
       *
       * @member {PIXI.Texture}
       */
     var map: Texture = js.native
+    
     /**
       * scaleX, scaleY for displacements
       * @member {PIXI.Point} PIXI.filters.DisplacementFilter#scale
@@ -394,6 +428,7 @@ object filters extends js.Object {
     */
   @js.native
   trait NoiseFilter extends Filter {
+    
     /**
       * The amount of noise to apply, this value should be in the range (0, 1].
       *
@@ -401,6 +436,7 @@ object filters extends js.Object {
       * @default 0.5
       */
     var noise: Double = js.native
+    
     /**
       * A seed value to apply to the random noise generation. `Math.random()` is a good value to use.
       *
@@ -408,6 +444,4 @@ object filters extends js.Object {
       */
     var seed: Double = js.native
   }
-  
 }
-

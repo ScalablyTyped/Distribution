@@ -6,7 +6,7 @@ import typings.vscodeLanguageserverProtocol.mod.Proposed.CallHierarchyOptions
 import typings.vscodeLanguageserverProtocol.mod.Proposed.CallHierarchyRegistrationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient/lib/callHierarchy.proposed", "CallHierarchyFeature")
 @js.native
@@ -17,4 +17,3 @@ class CallHierarchyFeature protected () extends TextDocumentFeature[
     ] {
   def this(client: BaseLanguageClient) = this()
 }
-

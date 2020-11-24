@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v1", "remotebuildexecution_v1.Resource$Operations")
 @js.native
 class ResourceOperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * remotebuildexecution.operations.cancel
     * @desc Starts asynchronous cancellation on a long-running operation.  The
@@ -50,6 +50,9 @@ class ResourceOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * remotebuildexecution.operations.delete
     * @desc Deletes a long-running operation. This method indicates that the
@@ -81,6 +84,7 @@ class ResourceOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
   /**
     * remotebuildexecution.operations.list
     * @desc Lists operations that match the specified filter in the request. If
@@ -124,4 +128,3 @@ class ResourceOperations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleLongrunningListOperationsResponse]
   ): Unit = js.native
 }
-

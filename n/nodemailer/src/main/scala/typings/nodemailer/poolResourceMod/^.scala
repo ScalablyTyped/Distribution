@@ -2,7 +2,7 @@ package typings.nodemailer.poolResourceMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates an element for the pool
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class ^ protected () extends PoolResource {
   def this(pool: typings.nodemailer.smtpPoolMod.^) = this()
 }
-

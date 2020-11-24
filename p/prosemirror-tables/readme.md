@@ -10,9 +10,9 @@ ProseMirror's rowspan/colspan tables component
 | ------------------ | :-------------: |
 | Full name          | prosemirror-tables |
 | Keywords           | - |
-| # releases         | 31 |
-| # dependents       | 45 |
-| # downloads        | 1972838 |
+| # releases         | 19 |
+| # dependents       | 79 |
+| # downloads        | 4044229 |
 | # stars            | 0 |
 
 ## Links

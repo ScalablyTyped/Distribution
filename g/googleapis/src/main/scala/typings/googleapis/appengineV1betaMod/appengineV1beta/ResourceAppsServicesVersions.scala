@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1beta", "appengine_v1beta.Resource$Apps$Services$Versions")
 @js.native
 class ResourceAppsServicesVersions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var instances: ResourceAppsServicesVersionsInstances = js.native
+  
   /**
     * appengine.apps.services.versions.create
     * @desc Deploys code and resource files to a new version.
@@ -44,6 +45,7 @@ class ResourceAppsServicesVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * appengine.apps.services.versions.delete
     * @desc Deletes an existing Version resource.
@@ -74,6 +76,7 @@ class ResourceAppsServicesVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * appengine.apps.services.versions.get
     * @desc Gets the specified Version resource. By default, only a BASIC_VIEW
@@ -107,6 +110,9 @@ class ResourceAppsServicesVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVersion]
   ): Unit = js.native
+  
+  var instances: ResourceAppsServicesVersionsInstances = js.native
+  
   /**
     * appengine.apps.services.versions.list
     * @desc Lists the versions of a service.
@@ -142,6 +148,7 @@ class ResourceAppsServicesVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListVersionsResponse]
   ): Unit = js.native
+  
   /**
     * appengine.apps.services.versions.patch
     * @desc Updates the specified Version resource. You can specify the
@@ -204,4 +211,3 @@ class ResourceAppsServicesVersions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

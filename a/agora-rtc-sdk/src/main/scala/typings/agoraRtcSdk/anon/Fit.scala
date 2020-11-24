@@ -4,10 +4,11 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.contain
 import typings.agoraRtcSdk.agoraRtcSdkStrings.cover
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Fit extends js.Object {
+  
   /**
     * Video display mode:
     *
@@ -20,6 +21,7 @@ trait Fit extends js.Object {
     * For local streams, by default the cover mode is used for video playing and the contain mode is used for screen sharing; for remote streams, by default the cover mode is used.
     */
   var fit: js.UndefOr[cover | contain] = js.native
+  
   /**
     * Sets whether to mute the playing stream.
     *
@@ -32,33 +34,39 @@ trait Fit extends js.Object {
     */
   var muted: js.UndefOr[Boolean] = js.native
 }
-
 object Fit {
+  
   @scala.inline
   def apply(): Fit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Fit]
   }
+  
   @scala.inline
   implicit class FitOps[Self <: Fit] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFit(value: cover | contain): Self = this.set("fit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFit: Self = this.set("fit", js.undefined)
+    
     @scala.inline
     def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMuted: Self = this.set("muted", js.undefined)
   }
-  
 }
-

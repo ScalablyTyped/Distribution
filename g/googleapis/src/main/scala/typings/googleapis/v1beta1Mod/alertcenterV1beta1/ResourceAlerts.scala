@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/alertcenter/v1beta1", "alertcenter_v1beta1.Resource$Alerts")
 @js.native
 class ResourceAlerts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var feedback: ResourceAlertsFeedback = js.native
+  
   /**
     * alertcenter.alerts.delete
     * @desc Marks the specified alert for deletion. An alert that has been
@@ -47,6 +48,9 @@ class ResourceAlerts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var feedback: ResourceAlertsFeedback = js.native
+  
   /**
     * alertcenter.alerts.get
     * @desc Gets the specified alert. Attempting to get a nonexistent alert
@@ -77,6 +81,7 @@ class ResourceAlerts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAlert]
   ): Unit = js.native
+  
   /**
     * alertcenter.alerts.list
     * @desc Lists the alerts.
@@ -109,6 +114,7 @@ class ResourceAlerts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListAlertsResponse]
   ): Unit = js.native
+  
   /**
     * alertcenter.alerts.undelete
     * @desc Restores, or "undeletes", an alert that was marked for deletion
@@ -144,4 +150,3 @@ class ResourceAlerts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAlert]
   ): Unit = js.native
 }
-

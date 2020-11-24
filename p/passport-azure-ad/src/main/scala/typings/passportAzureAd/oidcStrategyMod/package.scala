@@ -2,9 +2,10 @@ package typings.passportAzureAd
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object oidcStrategyMod {
+  
   type VerifyOIDCFunction = (js.Function2[
     /* profile */ typings.passportAzureAd.oidcStrategyMod.IProfile, 
     /* done */ typings.passportAzureAd.commonMod.VerifyCallback, 
@@ -48,6 +49,7 @@ package object oidcStrategyMod {
     /* done */ typings.passportAzureAd.commonMod.VerifyCallback, 
     scala.Unit
   ])
+  
   type VerifyOIDCFunctionWithReq = (js.Function3[
     /* req */ typings.express.mod.Request_[
       typings.expressServeStaticCore.mod.ParamsDictionary, 

@@ -2,11 +2,12 @@ package typings.rxjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/operators/switchMapTo", JSImport.Namespace)
 @js.native
 object operatorsSwitchMapToMod extends js.Object {
+  
   def switchMapTo[T, R](
     observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
   ): js.Any = js.native
@@ -21,4 +22,3 @@ object operatorsSwitchMapToMod extends js.Object {
     ]
   ): js.Any = js.native
 }
-

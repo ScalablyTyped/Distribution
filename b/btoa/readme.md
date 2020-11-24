@@ -10,9 +10,9 @@ btoa for Node.JS (it's a one-liner)
 | ------------------ | :-------------: |
 | Full name          | btoa |
 | Keywords           | btoa, browser |
-| # releases         | 2 |
-| # dependents       | 559 |
-| # downloads        | 23320376 |
+| # releases         | 0 |
+| # dependents       | 711 |
+| # downloads        | 32965904 |
 | # stars            | 9 |
 
 ## Links

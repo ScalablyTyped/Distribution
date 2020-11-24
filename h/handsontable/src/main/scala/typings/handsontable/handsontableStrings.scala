@@ -14,9 +14,1045 @@ import typings.handsontable.mod.Handsontable.plugins.PasteModeType
 import typings.handsontable.mod.Handsontable.wot.OverlayType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handsontableStrings {
+  
+  @scala.inline
+  def `---------`: `---------` = "---------".asInstanceOf[`---------`]
+  
+  @scala.inline
+  def AutofillDotfill: AutofillDotfill = "Autofill.fill".asInstanceOf[AutofillDotfill]
+  
+  @scala.inline
+  def ColumnSummaryDotreset: ColumnSummaryDotreset = "ColumnSummary.reset".asInstanceOf[ColumnSummaryDotreset]
+  
+  @scala.inline
+  def ColumnSummaryDotset: ColumnSummaryDotset = "ColumnSummary.set".asInstanceOf[ColumnSummaryDotset]
+  
+  @scala.inline
+  def ContextMenuDotclearColumns: ContextMenuDotclearColumns = "ContextMenu.clearColumns".asInstanceOf[ContextMenuDotclearColumns]
+  
+  @scala.inline
+  def ContextMenuDotcolumnLeft: ContextMenuDotcolumnLeft = "ContextMenu.columnLeft".asInstanceOf[ContextMenuDotcolumnLeft]
+  
+  @scala.inline
+  def ContextMenuDotcolumnRight: ContextMenuDotcolumnRight = "ContextMenu.columnRight".asInstanceOf[ContextMenuDotcolumnRight]
+  
+  @scala.inline
+  def ContextMenuDotremoveColumn: ContextMenuDotremoveColumn = "ContextMenu.removeColumn".asInstanceOf[ContextMenuDotremoveColumn]
+  
+  @scala.inline
+  def ContextMenuDotremoveRow: ContextMenuDotremoveRow = "ContextMenu.removeRow".asInstanceOf[ContextMenuDotremoveRow]
+  
+  @scala.inline
+  def ContextMenuDotrowAbove: ContextMenuDotrowAbove = "ContextMenu.rowAbove".asInstanceOf[ContextMenuDotrowAbove]
+  
+  @scala.inline
+  def ContextMenuDotrowBelow: ContextMenuDotrowBelow = "ContextMenu.rowBelow".asInstanceOf[ContextMenuDotrowBelow]
+  
+  @scala.inline
+  def CopyPasteDotpaste: CopyPasteDotpaste = "CopyPaste.paste".asInstanceOf[CopyPasteDotpaste]
+  
+  @scala.inline
+  def ObserveChangesDotchange: ObserveChangesDotchange = "ObserveChanges.change".asInstanceOf[ObserveChangesDotchange]
+  
+  @scala.inline
+  def STATE_EDITING: STATE_EDITING = "STATE_EDITING".asInstanceOf[STATE_EDITING]
+  
+  @scala.inline
+  def STATE_FINISHED: STATE_FINISHED = "STATE_FINISHED".asInstanceOf[STATE_FINISHED]
+  
+  @scala.inline
+  def STATE_VIRGIN: STATE_VIRGIN = "STATE_VIRGIN".asInstanceOf[STATE_VIRGIN]
+  
+  @scala.inline
+  def STATE_WAITING: STATE_WAITING = "STATE_WAITING".asInstanceOf[STATE_WAITING]
+  
+  @scala.inline
+  def UndoRedoDotredo: UndoRedoDotredo = "UndoRedo.redo".asInstanceOf[UndoRedoDotredo]
+  
+  @scala.inline
+  def UndoRedoDotundo: UndoRedoDotundo = "UndoRedo.undo".asInstanceOf[UndoRedoDotundo]
+  
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @scala.inline
+  def add_child: add_child = "add_child".asInstanceOf[add_child]
+  
+  @scala.inline
+  def after: after = "after".asInstanceOf[after]
+  
+  @scala.inline
+  def afterAddChild: afterAddChild = "afterAddChild".asInstanceOf[afterAddChild]
+  
+  @scala.inline
+  def afterAutofill: afterAutofill = "afterAutofill".asInstanceOf[afterAutofill]
+  
+  @scala.inline
+  def afterBeginEditing: afterBeginEditing = "afterBeginEditing".asInstanceOf[afterBeginEditing]
+  
+  @scala.inline
+  def afterCellMetaReset: afterCellMetaReset = "afterCellMetaReset".asInstanceOf[afterCellMetaReset]
+  
+  @scala.inline
+  def afterChange: afterChange = "afterChange".asInstanceOf[afterChange]
+  
+  @scala.inline
+  def afterChangesObserved: afterChangesObserved = "afterChangesObserved".asInstanceOf[afterChangesObserved]
+  
+  @scala.inline
+  def afterColumnCollapse: afterColumnCollapse = "afterColumnCollapse".asInstanceOf[afterColumnCollapse]
+  
+  @scala.inline
+  def afterColumnExpand: afterColumnExpand = "afterColumnExpand".asInstanceOf[afterColumnExpand]
+  
+  @scala.inline
+  def afterColumnMove: afterColumnMove = "afterColumnMove".asInstanceOf[afterColumnMove]
+  
+  @scala.inline
+  def afterColumnResize: afterColumnResize = "afterColumnResize".asInstanceOf[afterColumnResize]
+  
+  @scala.inline
+  def afterColumnSort: afterColumnSort = "afterColumnSort".asInstanceOf[afterColumnSort]
+  
+  @scala.inline
+  def afterContextMenuDefaultOptions: afterContextMenuDefaultOptions = "afterContextMenuDefaultOptions".asInstanceOf[afterContextMenuDefaultOptions]
+  
+  @scala.inline
+  def afterContextMenuHide: afterContextMenuHide = "afterContextMenuHide".asInstanceOf[afterContextMenuHide]
+  
+  @scala.inline
+  def afterContextMenuShow: afterContextMenuShow = "afterContextMenuShow".asInstanceOf[afterContextMenuShow]
+  
+  @scala.inline
+  def afterCopy: afterCopy = "afterCopy".asInstanceOf[afterCopy]
+  
+  @scala.inline
+  def afterCopyLimit: afterCopyLimit = "afterCopyLimit".asInstanceOf[afterCopyLimit]
+  
+  @scala.inline
+  def afterCreateCol: afterCreateCol = "afterCreateCol".asInstanceOf[afterCreateCol]
+  
+  @scala.inline
+  def afterCreateRow: afterCreateRow = "afterCreateRow".asInstanceOf[afterCreateRow]
+  
+  @scala.inline
+  def afterCut: afterCut = "afterCut".asInstanceOf[afterCut]
+  
+  @scala.inline
+  def afterDeselect: afterDeselect = "afterDeselect".asInstanceOf[afterDeselect]
+  
+  @scala.inline
+  def afterDestroy: afterDestroy = "afterDestroy".asInstanceOf[afterDestroy]
+  
+  @scala.inline
+  def afterDetachChild: afterDetachChild = "afterDetachChild".asInstanceOf[afterDetachChild]
+  
+  @scala.inline
+  def afterDocumentKeyDown: afterDocumentKeyDown = "afterDocumentKeyDown".asInstanceOf[afterDocumentKeyDown]
+  
+  @scala.inline
+  def afterDrawSelection: afterDrawSelection = "afterDrawSelection".asInstanceOf[afterDrawSelection]
+  
+  @scala.inline
+  def afterDropdownMenuDefaultOptions: afterDropdownMenuDefaultOptions = "afterDropdownMenuDefaultOptions".asInstanceOf[afterDropdownMenuDefaultOptions]
+  
+  @scala.inline
+  def afterDropdownMenuHide: afterDropdownMenuHide = "afterDropdownMenuHide".asInstanceOf[afterDropdownMenuHide]
+  
+  @scala.inline
+  def afterDropdownMenuShow: afterDropdownMenuShow = "afterDropdownMenuShow".asInstanceOf[afterDropdownMenuShow]
+  
+  @scala.inline
+  def afterFilter: afterFilter = "afterFilter".asInstanceOf[afterFilter]
+  
+  @scala.inline
+  def afterGetCellMeta: afterGetCellMeta = "afterGetCellMeta".asInstanceOf[afterGetCellMeta]
+  
+  @scala.inline
+  def afterGetColHeader: afterGetColHeader = "afterGetColHeader".asInstanceOf[afterGetColHeader]
+  
+  @scala.inline
+  def afterGetColumnHeaderRenderers: afterGetColumnHeaderRenderers = "afterGetColumnHeaderRenderers".asInstanceOf[afterGetColumnHeaderRenderers]
+  
+  @scala.inline
+  def afterGetRowHeader: afterGetRowHeader = "afterGetRowHeader".asInstanceOf[afterGetRowHeader]
+  
+  @scala.inline
+  def afterGetRowHeaderRenderers: afterGetRowHeaderRenderers = "afterGetRowHeaderRenderers".asInstanceOf[afterGetRowHeaderRenderers]
+  
+  @scala.inline
+  def afterHideColumns: afterHideColumns = "afterHideColumns".asInstanceOf[afterHideColumns]
+  
+  @scala.inline
+  def afterHideRows: afterHideRows = "afterHideRows".asInstanceOf[afterHideRows]
+  
+  @scala.inline
+  def afterInit: afterInit = "afterInit".asInstanceOf[afterInit]
+  
+  @scala.inline
+  def afterLanguageChange: afterLanguageChange = "afterLanguageChange".asInstanceOf[afterLanguageChange]
+  
+  @scala.inline
+  def afterListen: afterListen = "afterListen".asInstanceOf[afterListen]
+  
+  @scala.inline
+  def afterLoadData: afterLoadData = "afterLoadData".asInstanceOf[afterLoadData]
+  
+  @scala.inline
+  def afterMergeCells: afterMergeCells = "afterMergeCells".asInstanceOf[afterMergeCells]
+  
+  @scala.inline
+  def afterModifyTransformEnd: afterModifyTransformEnd = "afterModifyTransformEnd".asInstanceOf[afterModifyTransformEnd]
+  
+  @scala.inline
+  def afterModifyTransformStart: afterModifyTransformStart = "afterModifyTransformStart".asInstanceOf[afterModifyTransformStart]
+  
+  @scala.inline
+  def afterMomentumScroll: afterMomentumScroll = "afterMomentumScroll".asInstanceOf[afterMomentumScroll]
+  
+  @scala.inline
+  def afterOnCellContextMenu: afterOnCellContextMenu = "afterOnCellContextMenu".asInstanceOf[afterOnCellContextMenu]
+  
+  @scala.inline
+  def afterOnCellCornerDblClick: afterOnCellCornerDblClick = "afterOnCellCornerDblClick".asInstanceOf[afterOnCellCornerDblClick]
+  
+  @scala.inline
+  def afterOnCellCornerMouseDown: afterOnCellCornerMouseDown = "afterOnCellCornerMouseDown".asInstanceOf[afterOnCellCornerMouseDown]
+  
+  @scala.inline
+  def afterOnCellMouseDown: afterOnCellMouseDown = "afterOnCellMouseDown".asInstanceOf[afterOnCellMouseDown]
+  
+  @scala.inline
+  def afterOnCellMouseOut: afterOnCellMouseOut = "afterOnCellMouseOut".asInstanceOf[afterOnCellMouseOut]
+  
+  @scala.inline
+  def afterOnCellMouseOver: afterOnCellMouseOver = "afterOnCellMouseOver".asInstanceOf[afterOnCellMouseOver]
+  
+  @scala.inline
+  def afterOnCellMouseUp: afterOnCellMouseUp = "afterOnCellMouseUp".asInstanceOf[afterOnCellMouseUp]
+  
+  @scala.inline
+  def afterPaste: afterPaste = "afterPaste".asInstanceOf[afterPaste]
+  
+  @scala.inline
+  def afterPluginsInitialized: afterPluginsInitialized = "afterPluginsInitialized".asInstanceOf[afterPluginsInitialized]
+  
+  @scala.inline
+  def afterRedo: afterRedo = "afterRedo".asInstanceOf[afterRedo]
+  
+  @scala.inline
+  def afterRefreshDimensions: afterRefreshDimensions = "afterRefreshDimensions".asInstanceOf[afterRefreshDimensions]
+  
+  @scala.inline
+  def afterRemoveCellMeta: afterRemoveCellMeta = "afterRemoveCellMeta".asInstanceOf[afterRemoveCellMeta]
+  
+  @scala.inline
+  def afterRemoveCol: afterRemoveCol = "afterRemoveCol".asInstanceOf[afterRemoveCol]
+  
+  @scala.inline
+  def afterRemoveRow: afterRemoveRow = "afterRemoveRow".asInstanceOf[afterRemoveRow]
+  
+  @scala.inline
+  def afterRender: afterRender = "afterRender".asInstanceOf[afterRender]
+  
+  @scala.inline
+  def afterRenderer: afterRenderer = "afterRenderer".asInstanceOf[afterRenderer]
+  
+  @scala.inline
+  def afterRowMove: afterRowMove = "afterRowMove".asInstanceOf[afterRowMove]
+  
+  @scala.inline
+  def afterRowResize: afterRowResize = "afterRowResize".asInstanceOf[afterRowResize]
+  
+  @scala.inline
+  def afterScrollHorizontally: afterScrollHorizontally = "afterScrollHorizontally".asInstanceOf[afterScrollHorizontally]
+  
+  @scala.inline
+  def afterScrollVertically: afterScrollVertically = "afterScrollVertically".asInstanceOf[afterScrollVertically]
+  
+  @scala.inline
+  def afterSelection: afterSelection = "afterSelection".asInstanceOf[afterSelection]
+  
+  @scala.inline
+  def afterSelectionByProp: afterSelectionByProp = "afterSelectionByProp".asInstanceOf[afterSelectionByProp]
+  
+  @scala.inline
+  def afterSelectionEnd: afterSelectionEnd = "afterSelectionEnd".asInstanceOf[afterSelectionEnd]
+  
+  @scala.inline
+  def afterSelectionEndByProp: afterSelectionEndByProp = "afterSelectionEndByProp".asInstanceOf[afterSelectionEndByProp]
+  
+  @scala.inline
+  def afterSetCellMeta: afterSetCellMeta = "afterSetCellMeta".asInstanceOf[afterSetCellMeta]
+  
+  @scala.inline
+  def afterSetDataAtCell: afterSetDataAtCell = "afterSetDataAtCell".asInstanceOf[afterSetDataAtCell]
+  
+  @scala.inline
+  def afterSetDataAtRowProp: afterSetDataAtRowProp = "afterSetDataAtRowProp".asInstanceOf[afterSetDataAtRowProp]
+  
+  @scala.inline
+  def afterSetSourceDataAtCell: afterSetSourceDataAtCell = "afterSetSourceDataAtCell".asInstanceOf[afterSetSourceDataAtCell]
+  
+  @scala.inline
+  def afterTrimRow: afterTrimRow = "afterTrimRow".asInstanceOf[afterTrimRow]
+  
+  @scala.inline
+  def afterUndo: afterUndo = "afterUndo".asInstanceOf[afterUndo]
+  
+  @scala.inline
+  def afterUnhideColumns: afterUnhideColumns = "afterUnhideColumns".asInstanceOf[afterUnhideColumns]
+  
+  @scala.inline
+  def afterUnhideRows: afterUnhideRows = "afterUnhideRows".asInstanceOf[afterUnhideRows]
+  
+  @scala.inline
+  def afterUnlisten: afterUnlisten = "afterUnlisten".asInstanceOf[afterUnlisten]
+  
+  @scala.inline
+  def afterUnmergeCells: afterUnmergeCells = "afterUnmergeCells".asInstanceOf[afterUnmergeCells]
+  
+  @scala.inline
+  def afterUntrimRow: afterUntrimRow = "afterUntrimRow".asInstanceOf[afterUntrimRow]
+  
+  @scala.inline
+  def afterUpdateSettings: afterUpdateSettings = "afterUpdateSettings".asInstanceOf[afterUpdateSettings]
+  
+  @scala.inline
+  def afterValidate: afterValidate = "afterValidate".asInstanceOf[afterValidate]
+  
+  @scala.inline
+  def afterViewportColumnCalculatorOverride: afterViewportColumnCalculatorOverride = "afterViewportColumnCalculatorOverride".asInstanceOf[afterViewportColumnCalculatorOverride]
+  
+  @scala.inline
+  def afterViewportRowCalculatorOverride: afterViewportRowCalculatorOverride = "afterViewportRowCalculatorOverride".asInstanceOf[afterViewportRowCalculatorOverride]
+  
+  @scala.inline
+  def alignment: alignment = "alignment".asInstanceOf[alignment]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def area: area = "area".asInstanceOf[area]
+  
+  @scala.inline
+  def asc: asc = "asc".asInstanceOf[asc]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def autoColumnSize: autoColumnSize = "autoColumnSize".asInstanceOf[autoColumnSize]
+  
+  @scala.inline
+  def autoRowSize: autoRowSize = "autoRowSize".asInstanceOf[autoRowSize]
+  
+  @scala.inline
+  def autocomplete: autocomplete = "autocomplete".asInstanceOf[autocomplete]
+  
+  @scala.inline
+  def autofill: autofill = "autofill".asInstanceOf[autofill]
+  
+  @scala.inline
+  def average: average = "average".asInstanceOf[average]
+  
+  @scala.inline
+  def basePlugin: basePlugin = "basePlugin".asInstanceOf[basePlugin]
+  
+  @scala.inline
+  def before: before = "before".asInstanceOf[before]
+  
+  @scala.inline
+  def beforeAddChild: beforeAddChild = "beforeAddChild".asInstanceOf[beforeAddChild]
+  
+  @scala.inline
+  def beforeAutofill: beforeAutofill = "beforeAutofill".asInstanceOf[beforeAutofill]
+  
+  @scala.inline
+  def beforeAutofillInsidePopulate: beforeAutofillInsidePopulate = "beforeAutofillInsidePopulate".asInstanceOf[beforeAutofillInsidePopulate]
+  
+  @scala.inline
+  def beforeCellAlignment: beforeCellAlignment = "beforeCellAlignment".asInstanceOf[beforeCellAlignment]
+  
+  @scala.inline
+  def beforeChange: beforeChange = "beforeChange".asInstanceOf[beforeChange]
+  
+  @scala.inline
+  def beforeChangeRender: beforeChangeRender = "beforeChangeRender".asInstanceOf[beforeChangeRender]
+  
+  @scala.inline
+  def beforeColumnCollapse: beforeColumnCollapse = "beforeColumnCollapse".asInstanceOf[beforeColumnCollapse]
+  
+  @scala.inline
+  def beforeColumnExpand: beforeColumnExpand = "beforeColumnExpand".asInstanceOf[beforeColumnExpand]
+  
+  @scala.inline
+  def beforeColumnMove: beforeColumnMove = "beforeColumnMove".asInstanceOf[beforeColumnMove]
+  
+  @scala.inline
+  def beforeColumnResize: beforeColumnResize = "beforeColumnResize".asInstanceOf[beforeColumnResize]
+  
+  @scala.inline
+  def beforeColumnSort: beforeColumnSort = "beforeColumnSort".asInstanceOf[beforeColumnSort]
+  
+  @scala.inline
+  def beforeContextMenuSetItems: beforeContextMenuSetItems = "beforeContextMenuSetItems".asInstanceOf[beforeContextMenuSetItems]
+  
+  @scala.inline
+  def beforeContextMenuShow: beforeContextMenuShow = "beforeContextMenuShow".asInstanceOf[beforeContextMenuShow]
+  
+  @scala.inline
+  def beforeCopy: beforeCopy = "beforeCopy".asInstanceOf[beforeCopy]
+  
+  @scala.inline
+  def beforeCreateCol: beforeCreateCol = "beforeCreateCol".asInstanceOf[beforeCreateCol]
+  
+  @scala.inline
+  def beforeCreateRow: beforeCreateRow = "beforeCreateRow".asInstanceOf[beforeCreateRow]
+  
+  @scala.inline
+  def beforeCut: beforeCut = "beforeCut".asInstanceOf[beforeCut]
+  
+  @scala.inline
+  def beforeDetachChild: beforeDetachChild = "beforeDetachChild".asInstanceOf[beforeDetachChild]
+  
+  @scala.inline
+  def beforeDrawBorders: beforeDrawBorders = "beforeDrawBorders".asInstanceOf[beforeDrawBorders]
+  
+  @scala.inline
+  def beforeDropdownMenuSetItems: beforeDropdownMenuSetItems = "beforeDropdownMenuSetItems".asInstanceOf[beforeDropdownMenuSetItems]
+  
+  @scala.inline
+  def beforeDropdownMenuShow: beforeDropdownMenuShow = "beforeDropdownMenuShow".asInstanceOf[beforeDropdownMenuShow]
+  
+  @scala.inline
+  def beforeFilter: beforeFilter = "beforeFilter".asInstanceOf[beforeFilter]
+  
+  @scala.inline
+  def beforeGetCellMeta: beforeGetCellMeta = "beforeGetCellMeta".asInstanceOf[beforeGetCellMeta]
+  
+  @scala.inline
+  def beforeHideColumns: beforeHideColumns = "beforeHideColumns".asInstanceOf[beforeHideColumns]
+  
+  @scala.inline
+  def beforeHideRows: beforeHideRows = "beforeHideRows".asInstanceOf[beforeHideRows]
+  
+  @scala.inline
+  def beforeInit: beforeInit = "beforeInit".asInstanceOf[beforeInit]
+  
+  @scala.inline
+  def beforeInitWalkontable: beforeInitWalkontable = "beforeInitWalkontable".asInstanceOf[beforeInitWalkontable]
+  
+  @scala.inline
+  def beforeKeyDown: beforeKeyDown = "beforeKeyDown".asInstanceOf[beforeKeyDown]
+  
+  @scala.inline
+  def beforeLanguageChange: beforeLanguageChange = "beforeLanguageChange".asInstanceOf[beforeLanguageChange]
+  
+  @scala.inline
+  def beforeLoadData: beforeLoadData = "beforeLoadData".asInstanceOf[beforeLoadData]
+  
+  @scala.inline
+  def beforeMergeCells: beforeMergeCells = "beforeMergeCells".asInstanceOf[beforeMergeCells]
+  
+  @scala.inline
+  def beforeOnCellContextMenu: beforeOnCellContextMenu = "beforeOnCellContextMenu".asInstanceOf[beforeOnCellContextMenu]
+  
+  @scala.inline
+  def beforeOnCellMouseDown: beforeOnCellMouseDown = "beforeOnCellMouseDown".asInstanceOf[beforeOnCellMouseDown]
+  
+  @scala.inline
+  def beforeOnCellMouseOut: beforeOnCellMouseOut = "beforeOnCellMouseOut".asInstanceOf[beforeOnCellMouseOut]
+  
+  @scala.inline
+  def beforeOnCellMouseOver: beforeOnCellMouseOver = "beforeOnCellMouseOver".asInstanceOf[beforeOnCellMouseOver]
+  
+  @scala.inline
+  def beforeOnCellMouseUp: beforeOnCellMouseUp = "beforeOnCellMouseUp".asInstanceOf[beforeOnCellMouseUp]
+  
+  @scala.inline
+  def beforePaste: beforePaste = "beforePaste".asInstanceOf[beforePaste]
+  
+  @scala.inline
+  def beforeRedo: beforeRedo = "beforeRedo".asInstanceOf[beforeRedo]
+  
+  @scala.inline
+  def beforeRefreshDimensions: beforeRefreshDimensions = "beforeRefreshDimensions".asInstanceOf[beforeRefreshDimensions]
+  
+  @scala.inline
+  def beforeRemoveCellClassNames: beforeRemoveCellClassNames = "beforeRemoveCellClassNames".asInstanceOf[beforeRemoveCellClassNames]
+  
+  @scala.inline
+  def beforeRemoveCellMeta: beforeRemoveCellMeta = "beforeRemoveCellMeta".asInstanceOf[beforeRemoveCellMeta]
+  
+  @scala.inline
+  def beforeRemoveCol: beforeRemoveCol = "beforeRemoveCol".asInstanceOf[beforeRemoveCol]
+  
+  @scala.inline
+  def beforeRemoveRow: beforeRemoveRow = "beforeRemoveRow".asInstanceOf[beforeRemoveRow]
+  
+  @scala.inline
+  def beforeRender: beforeRender = "beforeRender".asInstanceOf[beforeRender]
+  
+  @scala.inline
+  def beforeRenderer: beforeRenderer = "beforeRenderer".asInstanceOf[beforeRenderer]
+  
+  @scala.inline
+  def beforeRowMove: beforeRowMove = "beforeRowMove".asInstanceOf[beforeRowMove]
+  
+  @scala.inline
+  def beforeRowResize: beforeRowResize = "beforeRowResize".asInstanceOf[beforeRowResize]
+  
+  @scala.inline
+  def beforeSetCellMeta: beforeSetCellMeta = "beforeSetCellMeta".asInstanceOf[beforeSetCellMeta]
+  
+  @scala.inline
+  def beforeSetRangeEnd: beforeSetRangeEnd = "beforeSetRangeEnd".asInstanceOf[beforeSetRangeEnd]
+  
+  @scala.inline
+  def beforeSetRangeStart: beforeSetRangeStart = "beforeSetRangeStart".asInstanceOf[beforeSetRangeStart]
+  
+  @scala.inline
+  def beforeSetRangeStartOnly: beforeSetRangeStartOnly = "beforeSetRangeStartOnly".asInstanceOf[beforeSetRangeStartOnly]
+  
+  @scala.inline
+  def beforeStretchingColumnWidth: beforeStretchingColumnWidth = "beforeStretchingColumnWidth".asInstanceOf[beforeStretchingColumnWidth]
+  
+  @scala.inline
+  def beforeTouchScroll: beforeTouchScroll = "beforeTouchScroll".asInstanceOf[beforeTouchScroll]
+  
+  @scala.inline
+  def beforeTrimRow: beforeTrimRow = "beforeTrimRow".asInstanceOf[beforeTrimRow]
+  
+  @scala.inline
+  def beforeUndo: beforeUndo = "beforeUndo".asInstanceOf[beforeUndo]
+  
+  @scala.inline
+  def beforeUnhideColumns: beforeUnhideColumns = "beforeUnhideColumns".asInstanceOf[beforeUnhideColumns]
+  
+  @scala.inline
+  def beforeUnhideRows: beforeUnhideRows = "beforeUnhideRows".asInstanceOf[beforeUnhideRows]
+  
+  @scala.inline
+  def beforeUnmergeCells: beforeUnmergeCells = "beforeUnmergeCells".asInstanceOf[beforeUnmergeCells]
+  
+  @scala.inline
+  def beforeUntrimRow: beforeUntrimRow = "beforeUntrimRow".asInstanceOf[beforeUntrimRow]
+  
+  @scala.inline
+  def beforeValidate: beforeValidate = "beforeValidate".asInstanceOf[beforeValidate]
+  
+  @scala.inline
+  def beforeValueRender: beforeValueRender = "beforeValueRender".asInstanceOf[beforeValueRender]
+  
+  @scala.inline
+  def begins_with: begins_with = "begins_with".asInstanceOf[begins_with]
+  
+  @scala.inline
+  def between: between = "between".asInstanceOf[between]
+  
+  @scala.inline
+  def bindRowsWithHeaders: bindRowsWithHeaders = "bindRowsWithHeaders".asInstanceOf[bindRowsWithHeaders]
+  
+  @scala.inline
+  def borders: borders = "borders".asInstanceOf[borders]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def `bottom-left-corner`: `bottom-left-corner` = "bottom-left-corner".asInstanceOf[`bottom-left-corner`]
+  
+  @scala.inline
+  def bottom_left_corner: bottom_left_corner = "bottom_left_corner".asInstanceOf[bottom_left_corner]
+  
+  @scala.inline
+  def by_value: by_value = "by_value".asInstanceOf[by_value]
+  
+  @scala.inline
+  def cell: cell = "cell".asInstanceOf[cell]
+  
+  @scala.inline
+  def change: change = "change".asInstanceOf[change]
+  
+  @scala.inline
+  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  
+  @scala.inline
+  def clear_column: clear_column = "clear_column".asInstanceOf[clear_column]
+  
+  @scala.inline
+  def col_left: col_left = "col_left".asInstanceOf[col_left]
+  
+  @scala.inline
+  def col_right: col_right = "col_right".asInstanceOf[col_right]
+  
+  @scala.inline
+  def collapsibleColumns: collapsibleColumns = "collapsibleColumns".asInstanceOf[collapsibleColumns]
+  
+  @scala.inline
+  def columnSorting: columnSorting = "columnSorting".asInstanceOf[columnSorting]
+  
+  @scala.inline
+  def columnSummary: columnSummary = "columnSummary".asInstanceOf[columnSummary]
+  
+  @scala.inline
+  def comment: comment = "comment".asInstanceOf[comment]
+  
+  @scala.inline
+  def comments: comments = "comments".asInstanceOf[comments]
+  
+  @scala.inline
+  def commentsAddEdit: commentsAddEdit = "commentsAddEdit".asInstanceOf[commentsAddEdit]
+  
+  @scala.inline
+  def commentsReadOnly: commentsReadOnly = "commentsReadOnly".asInstanceOf[commentsReadOnly]
+  
+  @scala.inline
+  def commentsRemove: commentsRemove = "commentsRemove".asInstanceOf[commentsRemove]
+  
+  @scala.inline
+  def conjunction: conjunction = "conjunction".asInstanceOf[conjunction]
+  
+  @scala.inline
+  def construct: construct = "construct".asInstanceOf[construct]
+  
+  @scala.inline
+  def contains: contains = "contains".asInstanceOf[contains]
+  
+  @scala.inline
+  def contextMenu: contextMenu = "contextMenu".asInstanceOf[contextMenu]
+  
+  @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
+  
+  @scala.inline
+  def copyPaste: copyPaste = "copyPaste".asInstanceOf[copyPaste]
+  
+  @scala.inline
+  def count: count = "count".asInstanceOf[count]
+  
+  @scala.inline
+  def current: current = "current".asInstanceOf[current]
+  
+  @scala.inline
+  def custom: custom = "custom".asInstanceOf[custom]
+  
+  @scala.inline
+  def customBorders: customBorders = "customBorders".asInstanceOf[customBorders]
+  
+  @scala.inline
+  def cut: cut = "cut".asInstanceOf[cut]
+  
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  
+  @scala.inline
+  def dateValidate: dateValidate = "dateValidate".asInstanceOf[dateValidate]
+  
+  @scala.inline
+  def desc: desc = "desc".asInstanceOf[desc]
+  
+  @scala.inline
+  def detach_from_parent: detach_from_parent = "detach_from_parent".asInstanceOf[detach_from_parent]
+  
+  @scala.inline
+  def disjunction: disjunction = "disjunction".asInstanceOf[disjunction]
+  
+  @scala.inline
+  def down: down = "down".asInstanceOf[down]
+  
+  @scala.inline
+  def dragToScroll: dragToScroll = "dragToScroll".asInstanceOf[dragToScroll]
+  
+  @scala.inline
+  def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
+  
+  @scala.inline
+  def dropdownMenu: dropdownMenu = "dropdownMenu".asInstanceOf[dropdownMenu]
+  
+  @scala.inline
+  def edit: edit = "edit".asInstanceOf[edit]
+  
+  @scala.inline
+  def empty: empty = "empty".asInstanceOf[empty]
+  
+  @scala.inline
+  def ends_with: ends_with = "ends_with".asInstanceOf[ends_with]
+  
+  @scala.inline
+  def eq: eq = "eq".asInstanceOf[eq]
+  
+  @scala.inline
+  def exportFile: exportFile = "exportFile".asInstanceOf[exportFile]
+  
+  @scala.inline
+  def filter: filter = "filter".asInstanceOf[filter]
+  
+  @scala.inline
+  def filter_action_bar: filter_action_bar = "filter_action_bar".asInstanceOf[filter_action_bar]
+  
+  @scala.inline
+  def filter_by_condition: filter_by_condition = "filter_by_condition".asInstanceOf[filter_by_condition]
+  
+  @scala.inline
+  def filter_by_condition2: filter_by_condition2 = "filter_by_condition2".asInstanceOf[filter_by_condition2]
+  
+  @scala.inline
+  def filter_by_value: filter_by_value = "filter_by_value".asInstanceOf[filter_by_value]
+  
+  @scala.inline
+  def filter_operators: filter_operators = "filter_operators".asInstanceOf[filter_operators]
+  
+  @scala.inline
+  def filters: filters = "filters".asInstanceOf[filters]
+  
+  @scala.inline
+  def formulas: formulas = "formulas".asInstanceOf[formulas]
+  
+  @scala.inline
+  def freeze_column: freeze_column = "freeze_column".asInstanceOf[freeze_column]
+  
+  @scala.inline
+  def get: get = "get".asInstanceOf[get]
+  
+  @scala.inline
+  def gt: gt = "gt".asInstanceOf[gt]
+  
+  @scala.inline
+  def gte: gte = "gte".asInstanceOf[gte]
+  
+  @scala.inline
+  def handsontable: handsontable = "handsontable".asInstanceOf[handsontable]
+  
+  @scala.inline
+  def header: header = "header".asInstanceOf[header]
+  
+  @scala.inline
+  def headerTooltips: headerTooltips = "headerTooltips".asInstanceOf[headerTooltips]
+  
+  @scala.inline
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @scala.inline
+  def hiddenColumns: hiddenColumns = "hiddenColumns".asInstanceOf[hiddenColumns]
+  
+  @scala.inline
+  def hiddenRows: hiddenRows = "hiddenRows".asInstanceOf[hiddenRows]
+  
+  @scala.inline
+  def hidden_columns_hide: hidden_columns_hide = "hidden_columns_hide".asInstanceOf[hidden_columns_hide]
+  
+  @scala.inline
+  def hidden_columns_show: hidden_columns_show = "hidden_columns_show".asInstanceOf[hidden_columns_show]
+  
+  @scala.inline
+  def hidden_rows_hide: hidden_rows_hide = "hidden_rows_hide".asInstanceOf[hidden_rows_hide]
+  
+  @scala.inline
+  def hidden_rows_show: hidden_rows_show = "hidden_rows_show".asInstanceOf[hidden_rows_show]
+  
+  @scala.inline
+  def highlight: highlight = "highlight".asInstanceOf[highlight]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def htBottom: htBottom = "htBottom".asInstanceOf[htBottom]
+  
+  @scala.inline
+  def htCenter: htCenter = "htCenter".asInstanceOf[htCenter]
+  
+  @scala.inline
+  def htJustify: htJustify = "htJustify".asInstanceOf[htJustify]
+  
+  @scala.inline
+  def htLeft: htLeft = "htLeft".asInstanceOf[htLeft]
+  
+  @scala.inline
+  def htMiddle: htMiddle = "htMiddle".asInstanceOf[htMiddle]
+  
+  @scala.inline
+  def htRight: htRight = "htRight".asInstanceOf[htRight]
+  
+  @scala.inline
+  def htTop: htTop = "htTop".asInstanceOf[htTop]
+  
+  @scala.inline
+  def html: html = "html".asInstanceOf[html]
+  
+  @scala.inline
+  def init: init = "init".asInstanceOf[init]
+  
+  @scala.inline
+  def insert_col: insert_col = "insert_col".asInstanceOf[insert_col]
+  
+  @scala.inline
+  def insert_row: insert_row = "insert_row".asInstanceOf[insert_row]
+  
+  @scala.inline
+  def isSearchResult: isSearchResult = "isSearchResult".asInstanceOf[isSearchResult]
+  
+  @scala.inline
+  def last: last = "last".asInstanceOf[last]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def loadData: loadData = "loadData".asInstanceOf[loadData]
+  
+  @scala.inline
+  def loose: loose = "loose".asInstanceOf[loose]
+  
+  @scala.inline
+  def lt: lt = "lt".asInstanceOf[lt]
+  
+  @scala.inline
+  def lte: lte = "lte".asInstanceOf[lte]
+  
+  @scala.inline
+  def make_read_only: make_read_only = "make_read_only".asInstanceOf[make_read_only]
+  
+  @scala.inline
+  def manualColumnFreeze: manualColumnFreeze = "manualColumnFreeze".asInstanceOf[manualColumnFreeze]
+  
+  @scala.inline
+  def manualColumnMove: manualColumnMove = "manualColumnMove".asInstanceOf[manualColumnMove]
+  
+  @scala.inline
+  def manualColumnResize: manualColumnResize = "manualColumnResize".asInstanceOf[manualColumnResize]
+  
+  @scala.inline
+  def manualRowMove: manualRowMove = "manualRowMove".asInstanceOf[manualRowMove]
+  
+  @scala.inline
+  def manualRowResize: manualRowResize = "manualRowResize".asInstanceOf[manualRowResize]
+  
+  @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  
+  @scala.inline
+  def mergeCells: mergeCells = "mergeCells".asInstanceOf[mergeCells]
+  
+  @scala.inline
+  def min: min = "min".asInstanceOf[min]
+  
+  @scala.inline
+  def mixed: mixed = "mixed".asInstanceOf[mixed]
+  
+  @scala.inline
+  def mobile: mobile = "mobile".asInstanceOf[mobile]
+  
+  @scala.inline
+  def modifyAutofillRange: modifyAutofillRange = "modifyAutofillRange".asInstanceOf[modifyAutofillRange]
+  
+  @scala.inline
+  def modifyColHeader: modifyColHeader = "modifyColHeader".asInstanceOf[modifyColHeader]
+  
+  @scala.inline
+  def modifyColWidth: modifyColWidth = "modifyColWidth".asInstanceOf[modifyColWidth]
+  
+  @scala.inline
+  def modifyColumnHeaderHeight: modifyColumnHeaderHeight = "modifyColumnHeaderHeight".asInstanceOf[modifyColumnHeaderHeight]
+  
+  @scala.inline
+  def modifyCopyableRange: modifyCopyableRange = "modifyCopyableRange".asInstanceOf[modifyCopyableRange]
+  
+  @scala.inline
+  def modifyData: modifyData = "modifyData".asInstanceOf[modifyData]
+  
+  @scala.inline
+  def modifyGetCellCoords: modifyGetCellCoords = "modifyGetCellCoords".asInstanceOf[modifyGetCellCoords]
+  
+  @scala.inline
+  def modifyRowData: modifyRowData = "modifyRowData".asInstanceOf[modifyRowData]
+  
+  @scala.inline
+  def modifyRowHeader: modifyRowHeader = "modifyRowHeader".asInstanceOf[modifyRowHeader]
+  
+  @scala.inline
+  def modifyRowHeaderWidth: modifyRowHeaderWidth = "modifyRowHeaderWidth".asInstanceOf[modifyRowHeaderWidth]
+  
+  @scala.inline
+  def modifyRowHeight: modifyRowHeight = "modifyRowHeight".asInstanceOf[modifyRowHeight]
+  
+  @scala.inline
+  def modifyRowSourceData: modifyRowSourceData = "modifyRowSourceData".asInstanceOf[modifyRowSourceData]
+  
+  @scala.inline
+  def modifySourceData: modifySourceData = "modifySourceData".asInstanceOf[modifySourceData]
+  
+  @scala.inline
+  def modifyTransformEnd: modifyTransformEnd = "modifyTransformEnd".asInstanceOf[modifyTransformEnd]
+  
+  @scala.inline
+  def modifyTransformStart: modifyTransformStart = "modifyTransformStart".asInstanceOf[modifyTransformStart]
+  
+  @scala.inline
+  def multiColumnSorting: multiColumnSorting = "multiColumnSorting".asInstanceOf[multiColumnSorting]
+  
+  @scala.inline
+  def multiple: multiple = "multiple".asInstanceOf[multiple]
+  
+  @scala.inline
+  def multipleSelectionHandles: multipleSelectionHandles = "multipleSelectionHandles".asInstanceOf[multipleSelectionHandles]
+  
+  @scala.inline
+  def neq: neq = "neq".asInstanceOf[neq]
+  
+  @scala.inline
+  def nestedHeaders: nestedHeaders = "nestedHeaders".asInstanceOf[nestedHeaders]
+  
+  @scala.inline
+  def nestedRows: nestedRows = "nestedRows".asInstanceOf[nestedRows]
+  
+  @scala.inline
+  def `non-commercial-and-evaluation`: `non-commercial-and-evaluation` = "non-commercial-and-evaluation".asInstanceOf[`non-commercial-and-evaluation`]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def not_between: not_between = "not_between".asInstanceOf[not_between]
+  
+  @scala.inline
+  def not_contains: not_contains = "not_contains".asInstanceOf[not_contains]
+  
+  @scala.inline
+  def not_empty: not_empty = "not_empty".asInstanceOf[not_empty]
+  
+  @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  
+  @scala.inline
+  def observeChanges: observeChanges = "observeChanges".asInstanceOf[observeChanges]
+  
+  @scala.inline
+  def overwrite: overwrite = "overwrite".asInstanceOf[overwrite]
+  
+  @scala.inline
+  def password: password = "password".asInstanceOf[password]
+  
+  @scala.inline
+  def persistentState: persistentState = "persistentState".asInstanceOf[persistentState]
+  
+  @scala.inline
+  def persistentStateLoad: persistentStateLoad = "persistentStateLoad".asInstanceOf[persistentStateLoad]
+  
+  @scala.inline
+  def persistentStateReset: persistentStateReset = "persistentStateReset".asInstanceOf[persistentStateReset]
+  
+  @scala.inline
+  def persistentStateSave: persistentStateSave = "persistentStateSave".asInstanceOf[persistentStateSave]
+  
+  @scala.inline
+  def populateFromArray: populateFromArray = "populateFromArray".asInstanceOf[populateFromArray]
+  
+  @scala.inline
+  def range: range = "range".asInstanceOf[range]
+  
+  @scala.inline
+  def redo: redo = "redo".asInstanceOf[redo]
+  
+  @scala.inline
+  def remove_col: remove_col = "remove_col".asInstanceOf[remove_col]
+  
+  @scala.inline
+  def remove_row: remove_row = "remove_row".asInstanceOf[remove_row]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def row_above: row_above = "row_above".asInstanceOf[row_above]
+  
+  @scala.inline
+  def row_below: row_below = "row_below".asInstanceOf[row_below]
+  
+  @scala.inline
+  def search: search = "search".asInstanceOf[search]
+  
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  
+  @scala.inline
+  def set: set = "set".asInstanceOf[set]
+  
+  @scala.inline
+  def shift_down: shift_down = "shift_down".asInstanceOf[shift_down]
+  
+  @scala.inline
+  def shift_right: shift_right = "shift_right".asInstanceOf[shift_right]
+  
+  @scala.inline
+  def single: single = "single".asInstanceOf[single]
+  
+  @scala.inline
+  def skipRowOnPaste: skipRowOnPaste = "skipRowOnPaste".asInstanceOf[skipRowOnPaste]
+  
+  @scala.inline
+  def spliceCol: spliceCol = "spliceCol".asInstanceOf[spliceCol]
+  
+  @scala.inline
+  def spliceRow: spliceRow = "spliceRow".asInstanceOf[spliceRow]
+  
+  @scala.inline
+  def strict: strict = "strict".asInstanceOf[strict]
+  
+  @scala.inline
+  def sum: sum = "sum".asInstanceOf[sum]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def time: time = "time".asInstanceOf[time]
+  
+  @scala.inline
+  def timeValidate: timeValidate = "timeValidate".asInstanceOf[timeValidate]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def `top-left-corner`: `top-left-corner` = "top-left-corner".asInstanceOf[`top-left-corner`]
+  
+  @scala.inline
+  def top_left_corner: top_left_corner = "top_left_corner".asInstanceOf[top_left_corner]
+  
+  @scala.inline
+  def touchScroll: touchScroll = "touchScroll".asInstanceOf[touchScroll]
+  
+  @scala.inline
+  def trimRows: trimRows = "trimRows".asInstanceOf[trimRows]
+  
+  @scala.inline
+  def undo: undo = "undo".asInstanceOf[undo]
+  
+  @scala.inline
+  def unfreeze_column: unfreeze_column = "unfreeze_column".asInstanceOf[unfreeze_column]
+  
+  @scala.inline
+  def up: up = "up".asInstanceOf[up]
+  
+  @scala.inline
+  def valid: valid = "valid".asInstanceOf[valid]
+  
+  @scala.inline
+  def validateCells: validateCells = "validateCells".asInstanceOf[validateCells]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
   @js.native
   sealed trait `---------` extends PredefinedMenuItemKey
   
@@ -54,9 +1090,6 @@ object handsontableStrings {
   sealed trait CopyPasteDotpaste extends ChangeSource
   
   @js.native
-  sealed trait GantChartDotloadData extends ChangeSource
-  
-  @js.native
   sealed trait ObserveChangesDotchange extends ChangeSource
   
   @js.native
@@ -90,6 +1123,9 @@ object handsontableStrings {
   sealed trait afterAddChild extends js.Object
   
   @js.native
+  sealed trait afterAutofill extends js.Object
+  
+  @js.native
   sealed trait afterBeginEditing extends js.Object
   
   @js.native
@@ -100,6 +1136,12 @@ object handsontableStrings {
   
   @js.native
   sealed trait afterChangesObserved extends js.Object
+  
+  @js.native
+  sealed trait afterColumnCollapse extends js.Object
+  
+  @js.native
+  sealed trait afterColumnExpand extends js.Object
   
   @js.native
   sealed trait afterColumnMove extends js.Object
@@ -288,6 +1330,9 @@ object handsontableStrings {
   sealed trait afterSetDataAtRowProp extends js.Object
   
   @js.native
+  sealed trait afterSetSourceDataAtCell extends js.Object
+  
+  @js.native
   sealed trait afterTrimRow extends js.Object
   
   @js.native
@@ -379,6 +1424,12 @@ object handsontableStrings {
   sealed trait beforeChangeRender extends js.Object
   
   @js.native
+  sealed trait beforeColumnCollapse extends js.Object
+  
+  @js.native
+  sealed trait beforeColumnExpand extends js.Object
+  
+  @js.native
   sealed trait beforeColumnMove extends js.Object
   
   @js.native
@@ -442,6 +1493,9 @@ object handsontableStrings {
   sealed trait beforeLanguageChange extends js.Object
   
   @js.native
+  sealed trait beforeLoadData extends js.Object
+  
+  @js.native
   sealed trait beforeMergeCells extends js.Object
   
   @js.native
@@ -491,6 +1545,9 @@ object handsontableStrings {
   
   @js.native
   sealed trait beforeRowResize extends js.Object
+  
+  @js.native
+  sealed trait beforeSetCellMeta extends js.Object
   
   @js.native
   sealed trait beforeSetRangeEnd extends js.Object
@@ -628,6 +1685,9 @@ object handsontableStrings {
   sealed trait custom extends js.Object
   
   @js.native
+  sealed trait customBorders extends js.Object
+  
+  @js.native
   sealed trait cut extends PredefinedMenuItemKey
   
   @js.native
@@ -641,9 +1701,6 @@ object handsontableStrings {
   
   @js.native
   sealed trait dateValidate extends ChangeSource
-  
-  @js.native
-  sealed trait debug extends OverlayType
   
   @js.native
   sealed trait desc extends SortOrderType
@@ -711,9 +1768,6 @@ object handsontableStrings {
   sealed trait freeze_column extends PredefinedMenuItemKey
   
   @js.native
-  sealed trait ganttChart extends js.Object
-  
-  @js.native
   sealed trait get extends js.Object
   
   @js.native
@@ -737,13 +1791,7 @@ object handsontableStrings {
   sealed trait hidden extends js.Object
   
   @js.native
-  sealed trait hiddenColumn extends js.Object
-  
-  @js.native
   sealed trait hiddenColumns extends js.Object
-  
-  @js.native
-  sealed trait hiddenRow extends js.Object
   
   @js.native
   sealed trait hiddenRows extends js.Object
@@ -857,9 +1905,6 @@ object handsontableStrings {
   sealed trait modifyAutofillRange extends js.Object
   
   @js.native
-  sealed trait modifyCol extends js.Object
-  
-  @js.native
   sealed trait modifyColHeader extends js.Object
   
   @js.native
@@ -878,9 +1923,6 @@ object handsontableStrings {
   sealed trait modifyGetCellCoords extends js.Object
   
   @js.native
-  sealed trait modifyRow extends js.Object
-  
-  @js.native
   sealed trait modifyRowData extends js.Object
   
   @js.native
@@ -896,13 +1938,13 @@ object handsontableStrings {
   sealed trait modifyRowSourceData extends js.Object
   
   @js.native
+  sealed trait modifySourceData extends js.Object
+  
+  @js.native
   sealed trait modifyTransformEnd extends js.Object
   
   @js.native
   sealed trait modifyTransformStart extends js.Object
-  
-  @js.native
-  sealed trait monday extends js.Object
   
   @js.native
   sealed trait multiColumnSorting extends js.Object
@@ -1010,9 +2052,6 @@ object handsontableStrings {
   sealed trait single extends js.Object
   
   @js.native
-  sealed trait skipLengthCache extends js.Object
-  
-  @js.native
   sealed trait skipRowOnPaste extends js.Object
   
   @js.native
@@ -1026,9 +2065,6 @@ object handsontableStrings {
   
   @js.native
   sealed trait sum extends js.Object
-  
-  @js.native
-  sealed trait sunday extends js.Object
   
   @js.native
   sealed trait text
@@ -1066,12 +2102,6 @@ object handsontableStrings {
   sealed trait unfreeze_column extends PredefinedMenuItemKey
   
   @js.native
-  sealed trait unmodifyCol extends js.Object
-  
-  @js.native
-  sealed trait unmodifyRow extends js.Object
-  
-  @js.native
   sealed trait up extends js.Object
   
   @js.native
@@ -1082,700 +2112,4 @@ object handsontableStrings {
   
   @js.native
   sealed trait vertical extends js.Object
-  
-  @scala.inline
-  def `---------`: `---------` = "---------".asInstanceOf[`---------`]
-  @scala.inline
-  def AutofillDotfill: AutofillDotfill = "Autofill.fill".asInstanceOf[AutofillDotfill]
-  @scala.inline
-  def ColumnSummaryDotreset: ColumnSummaryDotreset = "ColumnSummary.reset".asInstanceOf[ColumnSummaryDotreset]
-  @scala.inline
-  def ColumnSummaryDotset: ColumnSummaryDotset = "ColumnSummary.set".asInstanceOf[ColumnSummaryDotset]
-  @scala.inline
-  def ContextMenuDotclearColumns: ContextMenuDotclearColumns = "ContextMenu.clearColumns".asInstanceOf[ContextMenuDotclearColumns]
-  @scala.inline
-  def ContextMenuDotcolumnLeft: ContextMenuDotcolumnLeft = "ContextMenu.columnLeft".asInstanceOf[ContextMenuDotcolumnLeft]
-  @scala.inline
-  def ContextMenuDotcolumnRight: ContextMenuDotcolumnRight = "ContextMenu.columnRight".asInstanceOf[ContextMenuDotcolumnRight]
-  @scala.inline
-  def ContextMenuDotremoveColumn: ContextMenuDotremoveColumn = "ContextMenu.removeColumn".asInstanceOf[ContextMenuDotremoveColumn]
-  @scala.inline
-  def ContextMenuDotremoveRow: ContextMenuDotremoveRow = "ContextMenu.removeRow".asInstanceOf[ContextMenuDotremoveRow]
-  @scala.inline
-  def ContextMenuDotrowAbove: ContextMenuDotrowAbove = "ContextMenu.rowAbove".asInstanceOf[ContextMenuDotrowAbove]
-  @scala.inline
-  def ContextMenuDotrowBelow: ContextMenuDotrowBelow = "ContextMenu.rowBelow".asInstanceOf[ContextMenuDotrowBelow]
-  @scala.inline
-  def CopyPasteDotpaste: CopyPasteDotpaste = "CopyPaste.paste".asInstanceOf[CopyPasteDotpaste]
-  @scala.inline
-  def GantChartDotloadData: GantChartDotloadData = "GantChart.loadData".asInstanceOf[GantChartDotloadData]
-  @scala.inline
-  def ObserveChangesDotchange: ObserveChangesDotchange = "ObserveChanges.change".asInstanceOf[ObserveChangesDotchange]
-  @scala.inline
-  def STATE_EDITING: STATE_EDITING = "STATE_EDITING".asInstanceOf[STATE_EDITING]
-  @scala.inline
-  def STATE_FINISHED: STATE_FINISHED = "STATE_FINISHED".asInstanceOf[STATE_FINISHED]
-  @scala.inline
-  def STATE_VIRGIN: STATE_VIRGIN = "STATE_VIRGIN".asInstanceOf[STATE_VIRGIN]
-  @scala.inline
-  def STATE_WAITING: STATE_WAITING = "STATE_WAITING".asInstanceOf[STATE_WAITING]
-  @scala.inline
-  def UndoRedoDotredo: UndoRedoDotredo = "UndoRedo.redo".asInstanceOf[UndoRedoDotredo]
-  @scala.inline
-  def UndoRedoDotundo: UndoRedoDotundo = "UndoRedo.undo".asInstanceOf[UndoRedoDotundo]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def add_child: add_child = "add_child".asInstanceOf[add_child]
-  @scala.inline
-  def after: after = "after".asInstanceOf[after]
-  @scala.inline
-  def afterAddChild: afterAddChild = "afterAddChild".asInstanceOf[afterAddChild]
-  @scala.inline
-  def afterBeginEditing: afterBeginEditing = "afterBeginEditing".asInstanceOf[afterBeginEditing]
-  @scala.inline
-  def afterCellMetaReset: afterCellMetaReset = "afterCellMetaReset".asInstanceOf[afterCellMetaReset]
-  @scala.inline
-  def afterChange: afterChange = "afterChange".asInstanceOf[afterChange]
-  @scala.inline
-  def afterChangesObserved: afterChangesObserved = "afterChangesObserved".asInstanceOf[afterChangesObserved]
-  @scala.inline
-  def afterColumnMove: afterColumnMove = "afterColumnMove".asInstanceOf[afterColumnMove]
-  @scala.inline
-  def afterColumnResize: afterColumnResize = "afterColumnResize".asInstanceOf[afterColumnResize]
-  @scala.inline
-  def afterColumnSort: afterColumnSort = "afterColumnSort".asInstanceOf[afterColumnSort]
-  @scala.inline
-  def afterContextMenuDefaultOptions: afterContextMenuDefaultOptions = "afterContextMenuDefaultOptions".asInstanceOf[afterContextMenuDefaultOptions]
-  @scala.inline
-  def afterContextMenuHide: afterContextMenuHide = "afterContextMenuHide".asInstanceOf[afterContextMenuHide]
-  @scala.inline
-  def afterContextMenuShow: afterContextMenuShow = "afterContextMenuShow".asInstanceOf[afterContextMenuShow]
-  @scala.inline
-  def afterCopy: afterCopy = "afterCopy".asInstanceOf[afterCopy]
-  @scala.inline
-  def afterCopyLimit: afterCopyLimit = "afterCopyLimit".asInstanceOf[afterCopyLimit]
-  @scala.inline
-  def afterCreateCol: afterCreateCol = "afterCreateCol".asInstanceOf[afterCreateCol]
-  @scala.inline
-  def afterCreateRow: afterCreateRow = "afterCreateRow".asInstanceOf[afterCreateRow]
-  @scala.inline
-  def afterCut: afterCut = "afterCut".asInstanceOf[afterCut]
-  @scala.inline
-  def afterDeselect: afterDeselect = "afterDeselect".asInstanceOf[afterDeselect]
-  @scala.inline
-  def afterDestroy: afterDestroy = "afterDestroy".asInstanceOf[afterDestroy]
-  @scala.inline
-  def afterDetachChild: afterDetachChild = "afterDetachChild".asInstanceOf[afterDetachChild]
-  @scala.inline
-  def afterDocumentKeyDown: afterDocumentKeyDown = "afterDocumentKeyDown".asInstanceOf[afterDocumentKeyDown]
-  @scala.inline
-  def afterDrawSelection: afterDrawSelection = "afterDrawSelection".asInstanceOf[afterDrawSelection]
-  @scala.inline
-  def afterDropdownMenuDefaultOptions: afterDropdownMenuDefaultOptions = "afterDropdownMenuDefaultOptions".asInstanceOf[afterDropdownMenuDefaultOptions]
-  @scala.inline
-  def afterDropdownMenuHide: afterDropdownMenuHide = "afterDropdownMenuHide".asInstanceOf[afterDropdownMenuHide]
-  @scala.inline
-  def afterDropdownMenuShow: afterDropdownMenuShow = "afterDropdownMenuShow".asInstanceOf[afterDropdownMenuShow]
-  @scala.inline
-  def afterFilter: afterFilter = "afterFilter".asInstanceOf[afterFilter]
-  @scala.inline
-  def afterGetCellMeta: afterGetCellMeta = "afterGetCellMeta".asInstanceOf[afterGetCellMeta]
-  @scala.inline
-  def afterGetColHeader: afterGetColHeader = "afterGetColHeader".asInstanceOf[afterGetColHeader]
-  @scala.inline
-  def afterGetColumnHeaderRenderers: afterGetColumnHeaderRenderers = "afterGetColumnHeaderRenderers".asInstanceOf[afterGetColumnHeaderRenderers]
-  @scala.inline
-  def afterGetRowHeader: afterGetRowHeader = "afterGetRowHeader".asInstanceOf[afterGetRowHeader]
-  @scala.inline
-  def afterGetRowHeaderRenderers: afterGetRowHeaderRenderers = "afterGetRowHeaderRenderers".asInstanceOf[afterGetRowHeaderRenderers]
-  @scala.inline
-  def afterHideColumns: afterHideColumns = "afterHideColumns".asInstanceOf[afterHideColumns]
-  @scala.inline
-  def afterHideRows: afterHideRows = "afterHideRows".asInstanceOf[afterHideRows]
-  @scala.inline
-  def afterInit: afterInit = "afterInit".asInstanceOf[afterInit]
-  @scala.inline
-  def afterLanguageChange: afterLanguageChange = "afterLanguageChange".asInstanceOf[afterLanguageChange]
-  @scala.inline
-  def afterListen: afterListen = "afterListen".asInstanceOf[afterListen]
-  @scala.inline
-  def afterLoadData: afterLoadData = "afterLoadData".asInstanceOf[afterLoadData]
-  @scala.inline
-  def afterMergeCells: afterMergeCells = "afterMergeCells".asInstanceOf[afterMergeCells]
-  @scala.inline
-  def afterModifyTransformEnd: afterModifyTransformEnd = "afterModifyTransformEnd".asInstanceOf[afterModifyTransformEnd]
-  @scala.inline
-  def afterModifyTransformStart: afterModifyTransformStart = "afterModifyTransformStart".asInstanceOf[afterModifyTransformStart]
-  @scala.inline
-  def afterMomentumScroll: afterMomentumScroll = "afterMomentumScroll".asInstanceOf[afterMomentumScroll]
-  @scala.inline
-  def afterOnCellContextMenu: afterOnCellContextMenu = "afterOnCellContextMenu".asInstanceOf[afterOnCellContextMenu]
-  @scala.inline
-  def afterOnCellCornerDblClick: afterOnCellCornerDblClick = "afterOnCellCornerDblClick".asInstanceOf[afterOnCellCornerDblClick]
-  @scala.inline
-  def afterOnCellCornerMouseDown: afterOnCellCornerMouseDown = "afterOnCellCornerMouseDown".asInstanceOf[afterOnCellCornerMouseDown]
-  @scala.inline
-  def afterOnCellMouseDown: afterOnCellMouseDown = "afterOnCellMouseDown".asInstanceOf[afterOnCellMouseDown]
-  @scala.inline
-  def afterOnCellMouseOut: afterOnCellMouseOut = "afterOnCellMouseOut".asInstanceOf[afterOnCellMouseOut]
-  @scala.inline
-  def afterOnCellMouseOver: afterOnCellMouseOver = "afterOnCellMouseOver".asInstanceOf[afterOnCellMouseOver]
-  @scala.inline
-  def afterOnCellMouseUp: afterOnCellMouseUp = "afterOnCellMouseUp".asInstanceOf[afterOnCellMouseUp]
-  @scala.inline
-  def afterPaste: afterPaste = "afterPaste".asInstanceOf[afterPaste]
-  @scala.inline
-  def afterPluginsInitialized: afterPluginsInitialized = "afterPluginsInitialized".asInstanceOf[afterPluginsInitialized]
-  @scala.inline
-  def afterRedo: afterRedo = "afterRedo".asInstanceOf[afterRedo]
-  @scala.inline
-  def afterRefreshDimensions: afterRefreshDimensions = "afterRefreshDimensions".asInstanceOf[afterRefreshDimensions]
-  @scala.inline
-  def afterRemoveCellMeta: afterRemoveCellMeta = "afterRemoveCellMeta".asInstanceOf[afterRemoveCellMeta]
-  @scala.inline
-  def afterRemoveCol: afterRemoveCol = "afterRemoveCol".asInstanceOf[afterRemoveCol]
-  @scala.inline
-  def afterRemoveRow: afterRemoveRow = "afterRemoveRow".asInstanceOf[afterRemoveRow]
-  @scala.inline
-  def afterRender: afterRender = "afterRender".asInstanceOf[afterRender]
-  @scala.inline
-  def afterRenderer: afterRenderer = "afterRenderer".asInstanceOf[afterRenderer]
-  @scala.inline
-  def afterRowMove: afterRowMove = "afterRowMove".asInstanceOf[afterRowMove]
-  @scala.inline
-  def afterRowResize: afterRowResize = "afterRowResize".asInstanceOf[afterRowResize]
-  @scala.inline
-  def afterScrollHorizontally: afterScrollHorizontally = "afterScrollHorizontally".asInstanceOf[afterScrollHorizontally]
-  @scala.inline
-  def afterScrollVertically: afterScrollVertically = "afterScrollVertically".asInstanceOf[afterScrollVertically]
-  @scala.inline
-  def afterSelection: afterSelection = "afterSelection".asInstanceOf[afterSelection]
-  @scala.inline
-  def afterSelectionByProp: afterSelectionByProp = "afterSelectionByProp".asInstanceOf[afterSelectionByProp]
-  @scala.inline
-  def afterSelectionEnd: afterSelectionEnd = "afterSelectionEnd".asInstanceOf[afterSelectionEnd]
-  @scala.inline
-  def afterSelectionEndByProp: afterSelectionEndByProp = "afterSelectionEndByProp".asInstanceOf[afterSelectionEndByProp]
-  @scala.inline
-  def afterSetCellMeta: afterSetCellMeta = "afterSetCellMeta".asInstanceOf[afterSetCellMeta]
-  @scala.inline
-  def afterSetDataAtCell: afterSetDataAtCell = "afterSetDataAtCell".asInstanceOf[afterSetDataAtCell]
-  @scala.inline
-  def afterSetDataAtRowProp: afterSetDataAtRowProp = "afterSetDataAtRowProp".asInstanceOf[afterSetDataAtRowProp]
-  @scala.inline
-  def afterTrimRow: afterTrimRow = "afterTrimRow".asInstanceOf[afterTrimRow]
-  @scala.inline
-  def afterUndo: afterUndo = "afterUndo".asInstanceOf[afterUndo]
-  @scala.inline
-  def afterUnhideColumns: afterUnhideColumns = "afterUnhideColumns".asInstanceOf[afterUnhideColumns]
-  @scala.inline
-  def afterUnhideRows: afterUnhideRows = "afterUnhideRows".asInstanceOf[afterUnhideRows]
-  @scala.inline
-  def afterUnlisten: afterUnlisten = "afterUnlisten".asInstanceOf[afterUnlisten]
-  @scala.inline
-  def afterUnmergeCells: afterUnmergeCells = "afterUnmergeCells".asInstanceOf[afterUnmergeCells]
-  @scala.inline
-  def afterUntrimRow: afterUntrimRow = "afterUntrimRow".asInstanceOf[afterUntrimRow]
-  @scala.inline
-  def afterUpdateSettings: afterUpdateSettings = "afterUpdateSettings".asInstanceOf[afterUpdateSettings]
-  @scala.inline
-  def afterValidate: afterValidate = "afterValidate".asInstanceOf[afterValidate]
-  @scala.inline
-  def afterViewportColumnCalculatorOverride: afterViewportColumnCalculatorOverride = "afterViewportColumnCalculatorOverride".asInstanceOf[afterViewportColumnCalculatorOverride]
-  @scala.inline
-  def afterViewportRowCalculatorOverride: afterViewportRowCalculatorOverride = "afterViewportRowCalculatorOverride".asInstanceOf[afterViewportRowCalculatorOverride]
-  @scala.inline
-  def alignment: alignment = "alignment".asInstanceOf[alignment]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def area: area = "area".asInstanceOf[area]
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def autoColumnSize: autoColumnSize = "autoColumnSize".asInstanceOf[autoColumnSize]
-  @scala.inline
-  def autoRowSize: autoRowSize = "autoRowSize".asInstanceOf[autoRowSize]
-  @scala.inline
-  def autocomplete: autocomplete = "autocomplete".asInstanceOf[autocomplete]
-  @scala.inline
-  def autofill: autofill = "autofill".asInstanceOf[autofill]
-  @scala.inline
-  def average: average = "average".asInstanceOf[average]
-  @scala.inline
-  def basePlugin: basePlugin = "basePlugin".asInstanceOf[basePlugin]
-  @scala.inline
-  def before: before = "before".asInstanceOf[before]
-  @scala.inline
-  def beforeAddChild: beforeAddChild = "beforeAddChild".asInstanceOf[beforeAddChild]
-  @scala.inline
-  def beforeAutofill: beforeAutofill = "beforeAutofill".asInstanceOf[beforeAutofill]
-  @scala.inline
-  def beforeAutofillInsidePopulate: beforeAutofillInsidePopulate = "beforeAutofillInsidePopulate".asInstanceOf[beforeAutofillInsidePopulate]
-  @scala.inline
-  def beforeCellAlignment: beforeCellAlignment = "beforeCellAlignment".asInstanceOf[beforeCellAlignment]
-  @scala.inline
-  def beforeChange: beforeChange = "beforeChange".asInstanceOf[beforeChange]
-  @scala.inline
-  def beforeChangeRender: beforeChangeRender = "beforeChangeRender".asInstanceOf[beforeChangeRender]
-  @scala.inline
-  def beforeColumnMove: beforeColumnMove = "beforeColumnMove".asInstanceOf[beforeColumnMove]
-  @scala.inline
-  def beforeColumnResize: beforeColumnResize = "beforeColumnResize".asInstanceOf[beforeColumnResize]
-  @scala.inline
-  def beforeColumnSort: beforeColumnSort = "beforeColumnSort".asInstanceOf[beforeColumnSort]
-  @scala.inline
-  def beforeContextMenuSetItems: beforeContextMenuSetItems = "beforeContextMenuSetItems".asInstanceOf[beforeContextMenuSetItems]
-  @scala.inline
-  def beforeContextMenuShow: beforeContextMenuShow = "beforeContextMenuShow".asInstanceOf[beforeContextMenuShow]
-  @scala.inline
-  def beforeCopy: beforeCopy = "beforeCopy".asInstanceOf[beforeCopy]
-  @scala.inline
-  def beforeCreateCol: beforeCreateCol = "beforeCreateCol".asInstanceOf[beforeCreateCol]
-  @scala.inline
-  def beforeCreateRow: beforeCreateRow = "beforeCreateRow".asInstanceOf[beforeCreateRow]
-  @scala.inline
-  def beforeCut: beforeCut = "beforeCut".asInstanceOf[beforeCut]
-  @scala.inline
-  def beforeDetachChild: beforeDetachChild = "beforeDetachChild".asInstanceOf[beforeDetachChild]
-  @scala.inline
-  def beforeDrawBorders: beforeDrawBorders = "beforeDrawBorders".asInstanceOf[beforeDrawBorders]
-  @scala.inline
-  def beforeDropdownMenuSetItems: beforeDropdownMenuSetItems = "beforeDropdownMenuSetItems".asInstanceOf[beforeDropdownMenuSetItems]
-  @scala.inline
-  def beforeDropdownMenuShow: beforeDropdownMenuShow = "beforeDropdownMenuShow".asInstanceOf[beforeDropdownMenuShow]
-  @scala.inline
-  def beforeFilter: beforeFilter = "beforeFilter".asInstanceOf[beforeFilter]
-  @scala.inline
-  def beforeGetCellMeta: beforeGetCellMeta = "beforeGetCellMeta".asInstanceOf[beforeGetCellMeta]
-  @scala.inline
-  def beforeHideColumns: beforeHideColumns = "beforeHideColumns".asInstanceOf[beforeHideColumns]
-  @scala.inline
-  def beforeHideRows: beforeHideRows = "beforeHideRows".asInstanceOf[beforeHideRows]
-  @scala.inline
-  def beforeInit: beforeInit = "beforeInit".asInstanceOf[beforeInit]
-  @scala.inline
-  def beforeInitWalkontable: beforeInitWalkontable = "beforeInitWalkontable".asInstanceOf[beforeInitWalkontable]
-  @scala.inline
-  def beforeKeyDown: beforeKeyDown = "beforeKeyDown".asInstanceOf[beforeKeyDown]
-  @scala.inline
-  def beforeLanguageChange: beforeLanguageChange = "beforeLanguageChange".asInstanceOf[beforeLanguageChange]
-  @scala.inline
-  def beforeMergeCells: beforeMergeCells = "beforeMergeCells".asInstanceOf[beforeMergeCells]
-  @scala.inline
-  def beforeOnCellContextMenu: beforeOnCellContextMenu = "beforeOnCellContextMenu".asInstanceOf[beforeOnCellContextMenu]
-  @scala.inline
-  def beforeOnCellMouseDown: beforeOnCellMouseDown = "beforeOnCellMouseDown".asInstanceOf[beforeOnCellMouseDown]
-  @scala.inline
-  def beforeOnCellMouseOut: beforeOnCellMouseOut = "beforeOnCellMouseOut".asInstanceOf[beforeOnCellMouseOut]
-  @scala.inline
-  def beforeOnCellMouseOver: beforeOnCellMouseOver = "beforeOnCellMouseOver".asInstanceOf[beforeOnCellMouseOver]
-  @scala.inline
-  def beforeOnCellMouseUp: beforeOnCellMouseUp = "beforeOnCellMouseUp".asInstanceOf[beforeOnCellMouseUp]
-  @scala.inline
-  def beforePaste: beforePaste = "beforePaste".asInstanceOf[beforePaste]
-  @scala.inline
-  def beforeRedo: beforeRedo = "beforeRedo".asInstanceOf[beforeRedo]
-  @scala.inline
-  def beforeRefreshDimensions: beforeRefreshDimensions = "beforeRefreshDimensions".asInstanceOf[beforeRefreshDimensions]
-  @scala.inline
-  def beforeRemoveCellClassNames: beforeRemoveCellClassNames = "beforeRemoveCellClassNames".asInstanceOf[beforeRemoveCellClassNames]
-  @scala.inline
-  def beforeRemoveCellMeta: beforeRemoveCellMeta = "beforeRemoveCellMeta".asInstanceOf[beforeRemoveCellMeta]
-  @scala.inline
-  def beforeRemoveCol: beforeRemoveCol = "beforeRemoveCol".asInstanceOf[beforeRemoveCol]
-  @scala.inline
-  def beforeRemoveRow: beforeRemoveRow = "beforeRemoveRow".asInstanceOf[beforeRemoveRow]
-  @scala.inline
-  def beforeRender: beforeRender = "beforeRender".asInstanceOf[beforeRender]
-  @scala.inline
-  def beforeRenderer: beforeRenderer = "beforeRenderer".asInstanceOf[beforeRenderer]
-  @scala.inline
-  def beforeRowMove: beforeRowMove = "beforeRowMove".asInstanceOf[beforeRowMove]
-  @scala.inline
-  def beforeRowResize: beforeRowResize = "beforeRowResize".asInstanceOf[beforeRowResize]
-  @scala.inline
-  def beforeSetRangeEnd: beforeSetRangeEnd = "beforeSetRangeEnd".asInstanceOf[beforeSetRangeEnd]
-  @scala.inline
-  def beforeSetRangeStart: beforeSetRangeStart = "beforeSetRangeStart".asInstanceOf[beforeSetRangeStart]
-  @scala.inline
-  def beforeSetRangeStartOnly: beforeSetRangeStartOnly = "beforeSetRangeStartOnly".asInstanceOf[beforeSetRangeStartOnly]
-  @scala.inline
-  def beforeStretchingColumnWidth: beforeStretchingColumnWidth = "beforeStretchingColumnWidth".asInstanceOf[beforeStretchingColumnWidth]
-  @scala.inline
-  def beforeTouchScroll: beforeTouchScroll = "beforeTouchScroll".asInstanceOf[beforeTouchScroll]
-  @scala.inline
-  def beforeTrimRow: beforeTrimRow = "beforeTrimRow".asInstanceOf[beforeTrimRow]
-  @scala.inline
-  def beforeUndo: beforeUndo = "beforeUndo".asInstanceOf[beforeUndo]
-  @scala.inline
-  def beforeUnhideColumns: beforeUnhideColumns = "beforeUnhideColumns".asInstanceOf[beforeUnhideColumns]
-  @scala.inline
-  def beforeUnhideRows: beforeUnhideRows = "beforeUnhideRows".asInstanceOf[beforeUnhideRows]
-  @scala.inline
-  def beforeUnmergeCells: beforeUnmergeCells = "beforeUnmergeCells".asInstanceOf[beforeUnmergeCells]
-  @scala.inline
-  def beforeUntrimRow: beforeUntrimRow = "beforeUntrimRow".asInstanceOf[beforeUntrimRow]
-  @scala.inline
-  def beforeValidate: beforeValidate = "beforeValidate".asInstanceOf[beforeValidate]
-  @scala.inline
-  def beforeValueRender: beforeValueRender = "beforeValueRender".asInstanceOf[beforeValueRender]
-  @scala.inline
-  def begins_with: begins_with = "begins_with".asInstanceOf[begins_with]
-  @scala.inline
-  def between: between = "between".asInstanceOf[between]
-  @scala.inline
-  def bindRowsWithHeaders: bindRowsWithHeaders = "bindRowsWithHeaders".asInstanceOf[bindRowsWithHeaders]
-  @scala.inline
-  def borders: borders = "borders".asInstanceOf[borders]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def `bottom-left-corner`: `bottom-left-corner` = "bottom-left-corner".asInstanceOf[`bottom-left-corner`]
-  @scala.inline
-  def bottom_left_corner: bottom_left_corner = "bottom_left_corner".asInstanceOf[bottom_left_corner]
-  @scala.inline
-  def by_value: by_value = "by_value".asInstanceOf[by_value]
-  @scala.inline
-  def cell: cell = "cell".asInstanceOf[cell]
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
-  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
-  @scala.inline
-  def clear_column: clear_column = "clear_column".asInstanceOf[clear_column]
-  @scala.inline
-  def col_left: col_left = "col_left".asInstanceOf[col_left]
-  @scala.inline
-  def col_right: col_right = "col_right".asInstanceOf[col_right]
-  @scala.inline
-  def collapsibleColumns: collapsibleColumns = "collapsibleColumns".asInstanceOf[collapsibleColumns]
-  @scala.inline
-  def columnSorting: columnSorting = "columnSorting".asInstanceOf[columnSorting]
-  @scala.inline
-  def columnSummary: columnSummary = "columnSummary".asInstanceOf[columnSummary]
-  @scala.inline
-  def comment: comment = "comment".asInstanceOf[comment]
-  @scala.inline
-  def comments: comments = "comments".asInstanceOf[comments]
-  @scala.inline
-  def commentsAddEdit: commentsAddEdit = "commentsAddEdit".asInstanceOf[commentsAddEdit]
-  @scala.inline
-  def commentsReadOnly: commentsReadOnly = "commentsReadOnly".asInstanceOf[commentsReadOnly]
-  @scala.inline
-  def commentsRemove: commentsRemove = "commentsRemove".asInstanceOf[commentsRemove]
-  @scala.inline
-  def conjunction: conjunction = "conjunction".asInstanceOf[conjunction]
-  @scala.inline
-  def construct: construct = "construct".asInstanceOf[construct]
-  @scala.inline
-  def contains: contains = "contains".asInstanceOf[contains]
-  @scala.inline
-  def contextMenu: contextMenu = "contextMenu".asInstanceOf[contextMenu]
-  @scala.inline
-  def copy: copy = "copy".asInstanceOf[copy]
-  @scala.inline
-  def copyPaste: copyPaste = "copyPaste".asInstanceOf[copyPaste]
-  @scala.inline
-  def count: count = "count".asInstanceOf[count]
-  @scala.inline
-  def current: current = "current".asInstanceOf[current]
-  @scala.inline
-  def custom: custom = "custom".asInstanceOf[custom]
-  @scala.inline
-  def cut: cut = "cut".asInstanceOf[cut]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def dateValidate: dateValidate = "dateValidate".asInstanceOf[dateValidate]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
-  @scala.inline
-  def detach_from_parent: detach_from_parent = "detach_from_parent".asInstanceOf[detach_from_parent]
-  @scala.inline
-  def disjunction: disjunction = "disjunction".asInstanceOf[disjunction]
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
-  @scala.inline
-  def dragToScroll: dragToScroll = "dragToScroll".asInstanceOf[dragToScroll]
-  @scala.inline
-  def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
-  @scala.inline
-  def dropdownMenu: dropdownMenu = "dropdownMenu".asInstanceOf[dropdownMenu]
-  @scala.inline
-  def edit: edit = "edit".asInstanceOf[edit]
-  @scala.inline
-  def empty: empty = "empty".asInstanceOf[empty]
-  @scala.inline
-  def ends_with: ends_with = "ends_with".asInstanceOf[ends_with]
-  @scala.inline
-  def eq: eq = "eq".asInstanceOf[eq]
-  @scala.inline
-  def exportFile: exportFile = "exportFile".asInstanceOf[exportFile]
-  @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
-  @scala.inline
-  def filter_action_bar: filter_action_bar = "filter_action_bar".asInstanceOf[filter_action_bar]
-  @scala.inline
-  def filter_by_condition: filter_by_condition = "filter_by_condition".asInstanceOf[filter_by_condition]
-  @scala.inline
-  def filter_by_condition2: filter_by_condition2 = "filter_by_condition2".asInstanceOf[filter_by_condition2]
-  @scala.inline
-  def filter_by_value: filter_by_value = "filter_by_value".asInstanceOf[filter_by_value]
-  @scala.inline
-  def filter_operators: filter_operators = "filter_operators".asInstanceOf[filter_operators]
-  @scala.inline
-  def filters: filters = "filters".asInstanceOf[filters]
-  @scala.inline
-  def formulas: formulas = "formulas".asInstanceOf[formulas]
-  @scala.inline
-  def freeze_column: freeze_column = "freeze_column".asInstanceOf[freeze_column]
-  @scala.inline
-  def ganttChart: ganttChart = "ganttChart".asInstanceOf[ganttChart]
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
-  @scala.inline
-  def gt: gt = "gt".asInstanceOf[gt]
-  @scala.inline
-  def gte: gte = "gte".asInstanceOf[gte]
-  @scala.inline
-  def handsontable: handsontable = "handsontable".asInstanceOf[handsontable]
-  @scala.inline
-  def header: header = "header".asInstanceOf[header]
-  @scala.inline
-  def headerTooltips: headerTooltips = "headerTooltips".asInstanceOf[headerTooltips]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def hiddenColumn: hiddenColumn = "hiddenColumn".asInstanceOf[hiddenColumn]
-  @scala.inline
-  def hiddenColumns: hiddenColumns = "hiddenColumns".asInstanceOf[hiddenColumns]
-  @scala.inline
-  def hiddenRow: hiddenRow = "hiddenRow".asInstanceOf[hiddenRow]
-  @scala.inline
-  def hiddenRows: hiddenRows = "hiddenRows".asInstanceOf[hiddenRows]
-  @scala.inline
-  def hidden_columns_hide: hidden_columns_hide = "hidden_columns_hide".asInstanceOf[hidden_columns_hide]
-  @scala.inline
-  def hidden_columns_show: hidden_columns_show = "hidden_columns_show".asInstanceOf[hidden_columns_show]
-  @scala.inline
-  def hidden_rows_hide: hidden_rows_hide = "hidden_rows_hide".asInstanceOf[hidden_rows_hide]
-  @scala.inline
-  def hidden_rows_show: hidden_rows_show = "hidden_rows_show".asInstanceOf[hidden_rows_show]
-  @scala.inline
-  def highlight: highlight = "highlight".asInstanceOf[highlight]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def htBottom: htBottom = "htBottom".asInstanceOf[htBottom]
-  @scala.inline
-  def htCenter: htCenter = "htCenter".asInstanceOf[htCenter]
-  @scala.inline
-  def htJustify: htJustify = "htJustify".asInstanceOf[htJustify]
-  @scala.inline
-  def htLeft: htLeft = "htLeft".asInstanceOf[htLeft]
-  @scala.inline
-  def htMiddle: htMiddle = "htMiddle".asInstanceOf[htMiddle]
-  @scala.inline
-  def htRight: htRight = "htRight".asInstanceOf[htRight]
-  @scala.inline
-  def htTop: htTop = "htTop".asInstanceOf[htTop]
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
-  @scala.inline
-  def init: init = "init".asInstanceOf[init]
-  @scala.inline
-  def insert_col: insert_col = "insert_col".asInstanceOf[insert_col]
-  @scala.inline
-  def insert_row: insert_row = "insert_row".asInstanceOf[insert_row]
-  @scala.inline
-  def isSearchResult: isSearchResult = "isSearchResult".asInstanceOf[isSearchResult]
-  @scala.inline
-  def last: last = "last".asInstanceOf[last]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def loadData: loadData = "loadData".asInstanceOf[loadData]
-  @scala.inline
-  def loose: loose = "loose".asInstanceOf[loose]
-  @scala.inline
-  def lt: lt = "lt".asInstanceOf[lt]
-  @scala.inline
-  def lte: lte = "lte".asInstanceOf[lte]
-  @scala.inline
-  def make_read_only: make_read_only = "make_read_only".asInstanceOf[make_read_only]
-  @scala.inline
-  def manualColumnFreeze: manualColumnFreeze = "manualColumnFreeze".asInstanceOf[manualColumnFreeze]
-  @scala.inline
-  def manualColumnMove: manualColumnMove = "manualColumnMove".asInstanceOf[manualColumnMove]
-  @scala.inline
-  def manualColumnResize: manualColumnResize = "manualColumnResize".asInstanceOf[manualColumnResize]
-  @scala.inline
-  def manualRowMove: manualRowMove = "manualRowMove".asInstanceOf[manualRowMove]
-  @scala.inline
-  def manualRowResize: manualRowResize = "manualRowResize".asInstanceOf[manualRowResize]
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
-  def mergeCells: mergeCells = "mergeCells".asInstanceOf[mergeCells]
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
-  @scala.inline
-  def mixed: mixed = "mixed".asInstanceOf[mixed]
-  @scala.inline
-  def mobile: mobile = "mobile".asInstanceOf[mobile]
-  @scala.inline
-  def modifyAutofillRange: modifyAutofillRange = "modifyAutofillRange".asInstanceOf[modifyAutofillRange]
-  @scala.inline
-  def modifyCol: modifyCol = "modifyCol".asInstanceOf[modifyCol]
-  @scala.inline
-  def modifyColHeader: modifyColHeader = "modifyColHeader".asInstanceOf[modifyColHeader]
-  @scala.inline
-  def modifyColWidth: modifyColWidth = "modifyColWidth".asInstanceOf[modifyColWidth]
-  @scala.inline
-  def modifyColumnHeaderHeight: modifyColumnHeaderHeight = "modifyColumnHeaderHeight".asInstanceOf[modifyColumnHeaderHeight]
-  @scala.inline
-  def modifyCopyableRange: modifyCopyableRange = "modifyCopyableRange".asInstanceOf[modifyCopyableRange]
-  @scala.inline
-  def modifyData: modifyData = "modifyData".asInstanceOf[modifyData]
-  @scala.inline
-  def modifyGetCellCoords: modifyGetCellCoords = "modifyGetCellCoords".asInstanceOf[modifyGetCellCoords]
-  @scala.inline
-  def modifyRow: modifyRow = "modifyRow".asInstanceOf[modifyRow]
-  @scala.inline
-  def modifyRowData: modifyRowData = "modifyRowData".asInstanceOf[modifyRowData]
-  @scala.inline
-  def modifyRowHeader: modifyRowHeader = "modifyRowHeader".asInstanceOf[modifyRowHeader]
-  @scala.inline
-  def modifyRowHeaderWidth: modifyRowHeaderWidth = "modifyRowHeaderWidth".asInstanceOf[modifyRowHeaderWidth]
-  @scala.inline
-  def modifyRowHeight: modifyRowHeight = "modifyRowHeight".asInstanceOf[modifyRowHeight]
-  @scala.inline
-  def modifyRowSourceData: modifyRowSourceData = "modifyRowSourceData".asInstanceOf[modifyRowSourceData]
-  @scala.inline
-  def modifyTransformEnd: modifyTransformEnd = "modifyTransformEnd".asInstanceOf[modifyTransformEnd]
-  @scala.inline
-  def modifyTransformStart: modifyTransformStart = "modifyTransformStart".asInstanceOf[modifyTransformStart]
-  @scala.inline
-  def monday: monday = "monday".asInstanceOf[monday]
-  @scala.inline
-  def multiColumnSorting: multiColumnSorting = "multiColumnSorting".asInstanceOf[multiColumnSorting]
-  @scala.inline
-  def multiple: multiple = "multiple".asInstanceOf[multiple]
-  @scala.inline
-  def multipleSelectionHandles: multipleSelectionHandles = "multipleSelectionHandles".asInstanceOf[multipleSelectionHandles]
-  @scala.inline
-  def neq: neq = "neq".asInstanceOf[neq]
-  @scala.inline
-  def nestedHeaders: nestedHeaders = "nestedHeaders".asInstanceOf[nestedHeaders]
-  @scala.inline
-  def nestedRows: nestedRows = "nestedRows".asInstanceOf[nestedRows]
-  @scala.inline
-  def `non-commercial-and-evaluation`: `non-commercial-and-evaluation` = "non-commercial-and-evaluation".asInstanceOf[`non-commercial-and-evaluation`]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def not_between: not_between = "not_between".asInstanceOf[not_between]
-  @scala.inline
-  def not_contains: not_contains = "not_contains".asInstanceOf[not_contains]
-  @scala.inline
-  def not_empty: not_empty = "not_empty".asInstanceOf[not_empty]
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
-  @scala.inline
-  def observeChanges: observeChanges = "observeChanges".asInstanceOf[observeChanges]
-  @scala.inline
-  def overwrite: overwrite = "overwrite".asInstanceOf[overwrite]
-  @scala.inline
-  def password: password = "password".asInstanceOf[password]
-  @scala.inline
-  def persistentState: persistentState = "persistentState".asInstanceOf[persistentState]
-  @scala.inline
-  def persistentStateLoad: persistentStateLoad = "persistentStateLoad".asInstanceOf[persistentStateLoad]
-  @scala.inline
-  def persistentStateReset: persistentStateReset = "persistentStateReset".asInstanceOf[persistentStateReset]
-  @scala.inline
-  def persistentStateSave: persistentStateSave = "persistentStateSave".asInstanceOf[persistentStateSave]
-  @scala.inline
-  def populateFromArray: populateFromArray = "populateFromArray".asInstanceOf[populateFromArray]
-  @scala.inline
-  def range: range = "range".asInstanceOf[range]
-  @scala.inline
-  def redo: redo = "redo".asInstanceOf[redo]
-  @scala.inline
-  def remove_col: remove_col = "remove_col".asInstanceOf[remove_col]
-  @scala.inline
-  def remove_row: remove_row = "remove_row".asInstanceOf[remove_row]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def row_above: row_above = "row_above".asInstanceOf[row_above]
-  @scala.inline
-  def row_below: row_below = "row_below".asInstanceOf[row_below]
-  @scala.inline
-  def search: search = "search".asInstanceOf[search]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
-  @scala.inline
-  def shift_down: shift_down = "shift_down".asInstanceOf[shift_down]
-  @scala.inline
-  def shift_right: shift_right = "shift_right".asInstanceOf[shift_right]
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
-  @scala.inline
-  def skipLengthCache: skipLengthCache = "skipLengthCache".asInstanceOf[skipLengthCache]
-  @scala.inline
-  def skipRowOnPaste: skipRowOnPaste = "skipRowOnPaste".asInstanceOf[skipRowOnPaste]
-  @scala.inline
-  def spliceCol: spliceCol = "spliceCol".asInstanceOf[spliceCol]
-  @scala.inline
-  def spliceRow: spliceRow = "spliceRow".asInstanceOf[spliceRow]
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
-  @scala.inline
-  def sum: sum = "sum".asInstanceOf[sum]
-  @scala.inline
-  def sunday: sunday = "sunday".asInstanceOf[sunday]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def timeValidate: timeValidate = "timeValidate".asInstanceOf[timeValidate]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def `top-left-corner`: `top-left-corner` = "top-left-corner".asInstanceOf[`top-left-corner`]
-  @scala.inline
-  def top_left_corner: top_left_corner = "top_left_corner".asInstanceOf[top_left_corner]
-  @scala.inline
-  def touchScroll: touchScroll = "touchScroll".asInstanceOf[touchScroll]
-  @scala.inline
-  def trimRows: trimRows = "trimRows".asInstanceOf[trimRows]
-  @scala.inline
-  def undo: undo = "undo".asInstanceOf[undo]
-  @scala.inline
-  def unfreeze_column: unfreeze_column = "unfreeze_column".asInstanceOf[unfreeze_column]
-  @scala.inline
-  def unmodifyCol: unmodifyCol = "unmodifyCol".asInstanceOf[unmodifyCol]
-  @scala.inline
-  def unmodifyRow: unmodifyRow = "unmodifyRow".asInstanceOf[unmodifyRow]
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
-  @scala.inline
-  def valid: valid = "valid".asInstanceOf[valid]
-  @scala.inline
-  def validateCells: validateCells = "validateCells".asInstanceOf[validateCells]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
-

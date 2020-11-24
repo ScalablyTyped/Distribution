@@ -16,17 +16,19 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plantuml-encoder", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * Decodes encoded PlantUML code.
     * @param encodedPuml The encoded PlantUML code that should be decoded.
     * @returns The decoded PlantUML code.
     */
   def decode(encodedPuml: String): String = js.native
+  
   /**
     * Encodes PlantUML code.
     * @param puml The PlantUML code that should be encoded.
@@ -37,9 +39,9 @@ object mod extends js.Object {
   def encode(puml: TypedArray): String = js.native
   def encode(puml: ArrayBuffer): String = js.native
   def encode(puml: DataView): String = js.native
+  
   /**
     * Union type for possible typed arrays.
     */
   type TypedArray = Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array | BigInt64Array | BigUint64Array
 }
-

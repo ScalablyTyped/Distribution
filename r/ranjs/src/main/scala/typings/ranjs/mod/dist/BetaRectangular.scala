@@ -2,7 +2,7 @@ package typings.ranjs.mod.dist
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.BetaRectangular")
 @js.native
@@ -111,4 +111,3 @@ class BetaRectangular ()
   def this(alpha: Double, beta: Double, theta: Double, a: js.UndefOr[scala.Nothing], b: Double) = this()
   def this(alpha: Double, beta: Double, theta: Double, a: Double, b: Double) = this()
 }
-

@@ -7,11 +7,14 @@ import typings.officeUiFabricReact.checkboxTypesMod.ICheckboxProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/Checkbox", JSImport.Namespace)
 @js.native
 object libCheckboxMod extends js.Object {
+  
+  val Checkbox: FunctionComponent[ICheckboxProps] = js.native
+  
   @js.native
   class CheckboxBase protected ()
     extends typings.officeUiFabricReact.checkboxMod.CheckboxBase {
@@ -23,14 +26,12 @@ object libCheckboxMod extends js.Object {
     def this(props: ICheckboxProps) = this()
     def this(props: ICheckboxProps, context: js.Any) = this()
   }
-  
-  val Checkbox: FunctionComponent[ICheckboxProps] = js.native
   /* static members */
   @js.native
   object CheckboxBase extends js.Object {
+    
     var defaultProps: ICheckboxProps = js.native
+    
     def getDerivedStateFromProps(nextProps: ReadonlyICheckboxProps, prevState: ReadonlyICheckboxState): ICheckboxState | Null = js.native
   }
-  
 }
-

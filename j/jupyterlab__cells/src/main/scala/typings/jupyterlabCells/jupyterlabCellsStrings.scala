@@ -3,9 +3,43 @@ package typings.jupyterlabCells
 import typings.jupyterlabCells.celldragutilsMod.CellDragUtils.ICellTargetArea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jupyterlabCellsStrings {
+  
+  @scala.inline
+  def bounded: bounded = "bounded".asInstanceOf[bounded]
+  
+  @scala.inline
+  def cell: cell = "cell".asInstanceOf[cell]
+  
+  @scala.inline
+  def code: code = "code".asInstanceOf[code]
+  
+  @scala.inline
+  def input: input = "input".asInstanceOf[input]
+  
+  @scala.inline
+  def markdown: markdown = "markdown".asInstanceOf[markdown]
+  
+  @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  
+  @scala.inline
+  def on: on = "on".asInstanceOf[on]
+  
+  @scala.inline
+  def prompt: prompt = "prompt".asInstanceOf[prompt]
+  
+  @scala.inline
+  def raw: raw = "raw".asInstanceOf[raw]
+  
+  @scala.inline
+  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  
+  @scala.inline
+  def wordWrapColumn: wordWrapColumn = "wordWrapColumn".asInstanceOf[wordWrapColumn]
+  
   @js.native
   sealed trait bounded extends js.Object
   
@@ -38,28 +72,4 @@ object jupyterlabCellsStrings {
   
   @js.native
   sealed trait wordWrapColumn extends js.Object
-  
-  @scala.inline
-  def bounded: bounded = "bounded".asInstanceOf[bounded]
-  @scala.inline
-  def cell: cell = "cell".asInstanceOf[cell]
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
-  @scala.inline
-  def markdown: markdown = "markdown".asInstanceOf[markdown]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def on: on = "on".asInstanceOf[on]
-  @scala.inline
-  def prompt: prompt = "prompt".asInstanceOf[prompt]
-  @scala.inline
-  def raw: raw = "raw".asInstanceOf[raw]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
-  @scala.inline
-  def wordWrapColumn: wordWrapColumn = "wordWrapColumn".asInstanceOf[wordWrapColumn]
 }
-

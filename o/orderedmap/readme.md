@@ -10,9 +10,9 @@ Persistent ordered mapping from strings
 | ------------------ | :-------------: |
 | Full name          | orderedmap |
 | Keywords           | persistent, map |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 2356290 |
+| # releases         | 3 |
+| # dependents       | 8 |
+| # downloads        | 4872597 |
 | # stars            | 0 |
 
 ## Links

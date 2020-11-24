@@ -17,40 +17,37 @@ import typings.opossum.opossumStrings.timeout
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CircuitBreaker[TI /* <: js.Array[_] */, TR] extends EventEmitter {
-  val closed: Boolean = js.native
-  val enabled: Boolean = js.native
-  val group: String = js.native
-  val halfOpen: Boolean = js.native
-  val isShutdown: Boolean = js.native
-  val name: String = js.native
-  val opened: Boolean = js.native
-  val pendingClose: Boolean = js.native
-  val stats: Stats = js.native
-  val status: Status = js.native
-  val volumeThreshold: Double = js.native
-  val warmUp: Boolean = js.native
+  
   /**
     * Clears the cache of this CircuitBreaker
     */
   def clearCache(): Unit = js.native
+  
   /**
     * Closes the breaker, allowing the action to execute again
     */
   def close(): Unit = js.native
+  
+  val closed: Boolean = js.native
+  
   /**
     * Disables this circuit, causing all calls to the circuit's function to be
     * executed without circuit or fallback protection.
     */
   def disable(): Unit = js.native
+  
   /**
     * Enables this circuit. If the circuit is the disabled state, it will be re-enabled.
     * If not, this is essentially a noop.
     */
   def enable(): Unit = js.native
+  
+  val enabled: Boolean = js.native
+  
   /**
     * Provide a fallback function for this CircuitBreaker.
     * This function will be executed when the circuit is fired and fails.
@@ -58,6 +55,7 @@ trait CircuitBreaker[TI /* <: js.Array[_] */, TR] extends EventEmitter {
     */
   def fallback(func: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
   def fallback(func: CircuitBreaker[js.Array[_], _]): this.type = js.native
+  
   /**
     * Execute the action for this circuit.
     * If the action fails or times out, the returned promise will be rejected.
@@ -67,6 +65,11 @@ trait CircuitBreaker[TI /* <: js.Array[_] */, TR] extends EventEmitter {
   def fire(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TI is not an array type */ args: TI
   ): js.Promise[TR] = js.native
+  
+  val group: String = js.native
+  
+  val halfOpen: Boolean = js.native
+  
   /**
     * Provide a health check function to be called periodically.
     * The function should return a Promise. If the promise is rejected the circuit will open.
@@ -82,6 +85,11 @@ trait CircuitBreaker[TI /* <: js.Array[_] */, TR] extends EventEmitter {
     */
   def healthCheck(func: js.Function0[js.Promise[Unit]]): Unit = js.native
   def healthCheck(func: js.Function0[js.Promise[Unit]], interval: Double): Unit = js.native
+  
+  val isShutdown: Boolean = js.native
+  
+  val name: String = js.native
+  
   @JSName("on")
   def on_cacheHit(event: cacheHit, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -117,16 +125,29 @@ trait CircuitBreaker[TI /* <: js.Array[_] */, TR] extends EventEmitter {
   def on_success(event: success, listener: js.Function2[/* result */ TR, /* latencyMs */ Double, Unit]): this.type = js.native
   @JSName("on")
   def on_timeout(event: timeout, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  
   /**
     * Opens the breaker.
     * Each time the breaker is fired while the circuit is opened, a failed Promise is
     * returned, or if any fallback function has been provided, it is invoked.
     */
   def open(): Unit = js.native
+  
+  val opened: Boolean = js.native
+  
+  val pendingClose: Boolean = js.native
+  
   /**
     * Shuts down this circuit breaker.
     * All subsequent calls to the circuit will fail, returning a rejected promise.
     */
   def shutdown(): Unit = js.native
+  
+  val stats: Stats = js.native
+  
+  val status: Status = js.native
+  
+  val volumeThreshold: Double = js.native
+  
+  val warmUp: Boolean = js.native
 }
-

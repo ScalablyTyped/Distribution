@@ -2,7 +2,7 @@ package typings.sequelize.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 //  Hooks
@@ -18,7 +18,9 @@ import scala.scalajs.js.annotation._
   * beforeDestroy, beforeSave, beforeUpdate, afterCreate, afterDestroy, afterSave, afterUpdate, afterBulkCreate,
   * afterBulkDestroy and afterBulkUpdate.
   */
+@js.native
 trait HooksDefineOptions[TInstance] extends js.Object {
+  
   var afterBulkCreate: js.UndefOr[
     js.Function3[
       /* instances */ js.Array[TInstance], 
@@ -26,10 +28,14 @@ trait HooksDefineOptions[TInstance] extends js.Object {
       /* fn */ js.UndefOr[js.Function], 
       _
     ]
-  ] = js.undefined
-  var afterBulkDelete: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.undefined
-  var afterBulkDestroy: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.undefined
-  var afterBulkUpdate: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.undefined
+  ] = js.native
+  
+  var afterBulkDelete: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.native
+  
+  var afterBulkDestroy: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.native
+  
+  var afterBulkUpdate: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.native
+  
   var afterCreate: js.UndefOr[
     js.Function3[
       /* attributes */ TInstance, 
@@ -37,13 +43,16 @@ trait HooksDefineOptions[TInstance] extends js.Object {
       /* fn */ js.UndefOr[js.Function], 
       _
     ]
-  ] = js.undefined
+  ] = js.native
+  
   var afterDelete: js.UndefOr[
     js.Function3[/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]
-  ] = js.undefined
+  ] = js.native
+  
   var afterDestroy: js.UndefOr[
     js.Function3[/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]
-  ] = js.undefined
+  ] = js.native
+  
   var afterFind: js.UndefOr[
     js.Function3[
       /* instancesOrInstance */ js.Array[TInstance] | TInstance, 
@@ -51,16 +60,20 @@ trait HooksDefineOptions[TInstance] extends js.Object {
       /* fn */ js.UndefOr[js.Function], 
       _
     ]
-  ] = js.undefined
+  ] = js.native
+  
   var afterSave: js.UndefOr[
     js.Function3[/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]
-  ] = js.undefined
+  ] = js.native
+  
   var afterUpdate: js.UndefOr[
     js.Function3[/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]
-  ] = js.undefined
+  ] = js.native
+  
   var afterValidate: js.UndefOr[
     js.Function3[/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]
-  ] = js.undefined
+  ] = js.native
+  
   var beforeBulkCreate: js.UndefOr[
     js.Function3[
       /* instances */ js.Array[TInstance], 
@@ -68,10 +81,14 @@ trait HooksDefineOptions[TInstance] extends js.Object {
       /* fn */ js.UndefOr[js.Function], 
       _
     ]
-  ] = js.undefined
-  var beforeBulkDelete: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.undefined
-  var beforeBulkDestroy: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.undefined
-  var beforeBulkUpdate: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.undefined
+  ] = js.native
+  
+  var beforeBulkDelete: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.native
+  
+  var beforeBulkDestroy: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.native
+  
+  var beforeBulkUpdate: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.native
+  
   var beforeCreate: js.UndefOr[
     js.Function3[
       /* attributes */ TInstance, 
@@ -79,81 +96,209 @@ trait HooksDefineOptions[TInstance] extends js.Object {
       /* fn */ js.UndefOr[js.Function], 
       _
     ]
-  ] = js.undefined
+  ] = js.native
+  
   var beforeDelete: js.UndefOr[
     js.Function3[/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]
-  ] = js.undefined
+  ] = js.native
+  
   var beforeDestroy: js.UndefOr[
     js.Function3[/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]
-  ] = js.undefined
-  var beforeFind: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.undefined
-  var beforeFindAfterExpandIncludeAll: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.undefined
-  var beforeFindAfterOptions: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.undefined
+  ] = js.native
+  
+  var beforeFind: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.native
+  
+  var beforeFindAfterExpandIncludeAll: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.native
+  
+  var beforeFindAfterOptions: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.native
+  
   var beforeSave: js.UndefOr[
     js.Function3[/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]
-  ] = js.undefined
+  ] = js.native
+  
   var beforeUpdate: js.UndefOr[
     js.Function3[/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]
-  ] = js.undefined
+  ] = js.native
+  
   var beforeValidate: js.UndefOr[
     js.Function3[/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]
-  ] = js.undefined
+  ] = js.native
 }
-
 object HooksDefineOptions {
+  
   @scala.inline
-  def apply[TInstance](
-    afterBulkCreate: (/* instances */ js.Array[TInstance], /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    afterBulkDelete: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    afterBulkDestroy: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    afterBulkUpdate: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    afterCreate: (/* attributes */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    afterDelete: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    afterDestroy: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    afterFind: (/* instancesOrInstance */ js.Array[TInstance] | TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    afterSave: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    afterUpdate: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    afterValidate: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    beforeBulkCreate: (/* instances */ js.Array[TInstance], /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    beforeBulkDelete: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    beforeBulkDestroy: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    beforeBulkUpdate: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    beforeCreate: (/* attributes */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    beforeDelete: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    beforeDestroy: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    beforeFind: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    beforeFindAfterExpandIncludeAll: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    beforeFindAfterOptions: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    beforeSave: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    beforeUpdate: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null,
-    beforeValidate: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _ = null
-  ): HooksDefineOptions[TInstance] = {
+  def apply[TInstance](): HooksDefineOptions[TInstance] = {
     val __obj = js.Dynamic.literal()
-    if (afterBulkCreate != null) __obj.updateDynamic("afterBulkCreate")(js.Any.fromFunction3(afterBulkCreate))
-    if (afterBulkDelete != null) __obj.updateDynamic("afterBulkDelete")(js.Any.fromFunction2(afterBulkDelete))
-    if (afterBulkDestroy != null) __obj.updateDynamic("afterBulkDestroy")(js.Any.fromFunction2(afterBulkDestroy))
-    if (afterBulkUpdate != null) __obj.updateDynamic("afterBulkUpdate")(js.Any.fromFunction2(afterBulkUpdate))
-    if (afterCreate != null) __obj.updateDynamic("afterCreate")(js.Any.fromFunction3(afterCreate))
-    if (afterDelete != null) __obj.updateDynamic("afterDelete")(js.Any.fromFunction3(afterDelete))
-    if (afterDestroy != null) __obj.updateDynamic("afterDestroy")(js.Any.fromFunction3(afterDestroy))
-    if (afterFind != null) __obj.updateDynamic("afterFind")(js.Any.fromFunction3(afterFind))
-    if (afterSave != null) __obj.updateDynamic("afterSave")(js.Any.fromFunction3(afterSave))
-    if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(js.Any.fromFunction3(afterUpdate))
-    if (afterValidate != null) __obj.updateDynamic("afterValidate")(js.Any.fromFunction3(afterValidate))
-    if (beforeBulkCreate != null) __obj.updateDynamic("beforeBulkCreate")(js.Any.fromFunction3(beforeBulkCreate))
-    if (beforeBulkDelete != null) __obj.updateDynamic("beforeBulkDelete")(js.Any.fromFunction2(beforeBulkDelete))
-    if (beforeBulkDestroy != null) __obj.updateDynamic("beforeBulkDestroy")(js.Any.fromFunction2(beforeBulkDestroy))
-    if (beforeBulkUpdate != null) __obj.updateDynamic("beforeBulkUpdate")(js.Any.fromFunction2(beforeBulkUpdate))
-    if (beforeCreate != null) __obj.updateDynamic("beforeCreate")(js.Any.fromFunction3(beforeCreate))
-    if (beforeDelete != null) __obj.updateDynamic("beforeDelete")(js.Any.fromFunction3(beforeDelete))
-    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(js.Any.fromFunction3(beforeDestroy))
-    if (beforeFind != null) __obj.updateDynamic("beforeFind")(js.Any.fromFunction2(beforeFind))
-    if (beforeFindAfterExpandIncludeAll != null) __obj.updateDynamic("beforeFindAfterExpandIncludeAll")(js.Any.fromFunction2(beforeFindAfterExpandIncludeAll))
-    if (beforeFindAfterOptions != null) __obj.updateDynamic("beforeFindAfterOptions")(js.Any.fromFunction2(beforeFindAfterOptions))
-    if (beforeSave != null) __obj.updateDynamic("beforeSave")(js.Any.fromFunction3(beforeSave))
-    if (beforeUpdate != null) __obj.updateDynamic("beforeUpdate")(js.Any.fromFunction3(beforeUpdate))
-    if (beforeValidate != null) __obj.updateDynamic("beforeValidate")(js.Any.fromFunction3(beforeValidate))
     __obj.asInstanceOf[HooksDefineOptions[TInstance]]
   }
+  
+  @scala.inline
+  implicit class HooksDefineOptionsOps[Self <: HooksDefineOptions[_], TInstance] (val x: Self with HooksDefineOptions[TInstance]) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setAfterBulkCreate(
+      value: (/* instances */ js.Array[TInstance], /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _
+    ): Self = this.set("afterBulkCreate", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteAfterBulkCreate: Self = this.set("afterBulkCreate", js.undefined)
+    
+    @scala.inline
+    def setAfterBulkDelete(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("afterBulkDelete", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def deleteAfterBulkDelete: Self = this.set("afterBulkDelete", js.undefined)
+    
+    @scala.inline
+    def setAfterBulkDestroy(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("afterBulkDestroy", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def deleteAfterBulkDestroy: Self = this.set("afterBulkDestroy", js.undefined)
+    
+    @scala.inline
+    def setAfterBulkUpdate(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("afterBulkUpdate", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def deleteAfterBulkUpdate: Self = this.set("afterBulkUpdate", js.undefined)
+    
+    @scala.inline
+    def setAfterCreate(
+      value: (/* attributes */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _
+    ): Self = this.set("afterCreate", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteAfterCreate: Self = this.set("afterCreate", js.undefined)
+    
+    @scala.inline
+    def setAfterDelete(value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("afterDelete", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteAfterDelete: Self = this.set("afterDelete", js.undefined)
+    
+    @scala.inline
+    def setAfterDestroy(value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("afterDestroy", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteAfterDestroy: Self = this.set("afterDestroy", js.undefined)
+    
+    @scala.inline
+    def setAfterFind(
+      value: (/* instancesOrInstance */ js.Array[TInstance] | TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _
+    ): Self = this.set("afterFind", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteAfterFind: Self = this.set("afterFind", js.undefined)
+    
+    @scala.inline
+    def setAfterSave(value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("afterSave", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteAfterSave: Self = this.set("afterSave", js.undefined)
+    
+    @scala.inline
+    def setAfterUpdate(value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("afterUpdate", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteAfterUpdate: Self = this.set("afterUpdate", js.undefined)
+    
+    @scala.inline
+    def setAfterValidate(value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("afterValidate", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteAfterValidate: Self = this.set("afterValidate", js.undefined)
+    
+    @scala.inline
+    def setBeforeBulkCreate(
+      value: (/* instances */ js.Array[TInstance], /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _
+    ): Self = this.set("beforeBulkCreate", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteBeforeBulkCreate: Self = this.set("beforeBulkCreate", js.undefined)
+    
+    @scala.inline
+    def setBeforeBulkDelete(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("beforeBulkDelete", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def deleteBeforeBulkDelete: Self = this.set("beforeBulkDelete", js.undefined)
+    
+    @scala.inline
+    def setBeforeBulkDestroy(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("beforeBulkDestroy", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def deleteBeforeBulkDestroy: Self = this.set("beforeBulkDestroy", js.undefined)
+    
+    @scala.inline
+    def setBeforeBulkUpdate(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("beforeBulkUpdate", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def deleteBeforeBulkUpdate: Self = this.set("beforeBulkUpdate", js.undefined)
+    
+    @scala.inline
+    def setBeforeCreate(
+      value: (/* attributes */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _
+    ): Self = this.set("beforeCreate", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteBeforeCreate: Self = this.set("beforeCreate", js.undefined)
+    
+    @scala.inline
+    def setBeforeDelete(value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("beforeDelete", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteBeforeDelete: Self = this.set("beforeDelete", js.undefined)
+    
+    @scala.inline
+    def setBeforeDestroy(value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("beforeDestroy", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteBeforeDestroy: Self = this.set("beforeDestroy", js.undefined)
+    
+    @scala.inline
+    def setBeforeFind(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("beforeFind", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def deleteBeforeFind: Self = this.set("beforeFind", js.undefined)
+    
+    @scala.inline
+    def setBeforeFindAfterExpandIncludeAll(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("beforeFindAfterExpandIncludeAll", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def deleteBeforeFindAfterExpandIncludeAll: Self = this.set("beforeFindAfterExpandIncludeAll", js.undefined)
+    
+    @scala.inline
+    def setBeforeFindAfterOptions(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("beforeFindAfterOptions", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def deleteBeforeFindAfterOptions: Self = this.set("beforeFindAfterOptions", js.undefined)
+    
+    @scala.inline
+    def setBeforeSave(value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("beforeSave", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteBeforeSave: Self = this.set("beforeSave", js.undefined)
+    
+    @scala.inline
+    def setBeforeUpdate(value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("beforeUpdate", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteBeforeUpdate: Self = this.set("beforeUpdate", js.undefined)
+    
+    @scala.inline
+    def setBeforeValidate(value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => _): Self = this.set("beforeValidate", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def deleteBeforeValidate: Self = this.set("beforeValidate", js.undefined)
+  }
 }
-

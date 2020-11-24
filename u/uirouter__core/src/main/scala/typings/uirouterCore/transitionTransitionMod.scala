@@ -22,11 +22,12 @@ import typings.uirouterCore.uirouterCoreStrings.SameAsPending
 import typings.uirouterCore.viewInterfaceMod.ViewConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/transition/transition", JSImport.Namespace)
 @js.native
 object transitionTransitionMod extends js.Object {
+  
   @js.native
   class Transition protected () extends IHookRegistry {
     /**
@@ -43,6 +44,14 @@ object transitionTransitionMod extends js.Object {
       * @internal
       */
     def this(fromPath: js.Array[PathNode], targetState: TargetState, router: UIRouter) = this()
+    
+    /**
+      * @internal
+      * @returns the internal from [State] object
+      */
+    @JSName("$from")
+    def $from(): StateObject = js.native
+    
     /**
       * A unique identifier for the transition.
       *
@@ -50,67 +59,45 @@ object transitionTransitionMod extends js.Object {
       */
     @JSName("$id")
     var $id: Double = js.native
-    /** @internal */
-    var _aborted: Boolean = js.native
-    /** @internal If a transition doesn't exit/enter any states, returns any [[Param]] whose value changed */
-    var _changedParams: js.Any = js.native
-    /** @internal */
-    var _deferred: js.Any = js.native
-    /** @internal */
-    var _error: js.Any = js.native
-    /** @internal */
-    var _hookBuilder: js.Any = js.native
-    /** @internal */
-    var _options: js.Any = js.native
-    /** @internal Holds the hook registration functions such as those passed to Transition.onStart() */
-    @JSName("_registeredHooks")
-    var _registeredHooks_Transition: RegisteredHooks = js.native
-    /** @internal */
-    var _targetState: js.Any = js.native
-    /** @internal */
-    var _treeChanges: js.Any = js.native
-    var applyViewConfigs: js.Any = js.native
-    /** @internal
-      * Creates the transition-level hook registration functions
-      * (which can then be used to register hooks)
-      */
-    var createTransitionHookRegFns: js.Any = js.native
-    /**
-      * This promise is resolved or rejected based on the outcome of the Transition.
-      *
-      * When the transition is successful, the promise is resolved
-      * When the transition is unsuccessful, the promise is rejected with the [[Rejection]] or javascript error
-      */
-    var promise: js.Promise[_] = js.native
-    /**
-      * A reference to the [[UIRouter]] instance
-      *
-      * This reference can be used to access the router services, such as the [[StateService]]
-      */
-    var router: UIRouter = js.native
-    /**
-      * A boolean which indicates if the transition was successful
-      *
-      * After a successful transition, this value is set to true.
-      * After an unsuccessful transition, this value is set to false.
-      *
-      * The value will be undefined if the transition is not complete
-      */
-    var success: Boolean = js.native
-    /**
-      * @internal
-      * @returns the internal from [State] object
-      */
-    @JSName("$from")
-    def $from(): StateObject = js.native
+    
     /**
       * @internal
       * @returns the internal to [State] object
       */
     @JSName("$to")
     def $to(): StateObject = js.native
+    
+    /** @internal */
+    var _aborted: Boolean = js.native
+    
+    /** @internal If a transition doesn't exit/enter any states, returns any [[Param]] whose value changed */
+    var _changedParams: js.Any = js.native
+    
+    /** @internal */
+    var _deferred: js.Any = js.native
+    
+    /** @internal */
+    var _error: js.Any = js.native
+    
+    /** @internal */
+    var _hookBuilder: js.Any = js.native
+    
     /** @internal */
     def _ignoredReason(): js.UndefOr[SameAsCurrent | SameAsPending] = js.native
+    
+    /** @internal */
+    var _options: js.Any = js.native
+    
+    /** @internal Holds the hook registration functions such as those passed to Transition.onStart() */
+    @JSName("_registeredHooks")
+    var _registeredHooks_Transition: RegisteredHooks = js.native
+    
+    /** @internal */
+    var _targetState: js.Any = js.native
+    
+    /** @internal */
+    var _treeChanges: js.Any = js.native
+    
     /**
       * Aborts this transition
       *
@@ -118,6 +105,7 @@ object transitionTransitionMod extends js.Object {
       * This only applies to Transitions that are not yet complete.
       */
     def abort(): Unit = js.native
+    
     /**
       * Dynamically adds a new [[Resolvable]] (i.e., [[StateDeclaration.resolve]]) to this transition.
       *
@@ -151,6 +139,15 @@ object transitionTransitionMod extends js.Object {
     def addResolvable(resolvable: Resolvable, state: StateOrName): Unit = js.native
     def addResolvable(resolvable: ResolvableLiteral): Unit = js.native
     def addResolvable(resolvable: ResolvableLiteral, state: StateOrName): Unit = js.native
+    
+    var applyViewConfigs: js.Any = js.native
+    
+    /** @internal
+      * Creates the transition-level hook registration functions
+      * (which can then be used to register hooks)
+      */
+    var createTransitionHookRegFns: js.Any = js.native
+    
     /**
       * Returns true if the transition is dynamic.
       *
@@ -159,12 +156,14 @@ object transitionTransitionMod extends js.Object {
       * @returns true if the Transition is dynamic
       */
     def dynamic(): Boolean = js.native
+    
     /**
       * Gets the states being entered.
       *
       * @returns an array of states that will be entered during this transition.
       */
     def entering(): js.Array[StateDeclaration] = js.native
+    
     /**
       * The Transition error reason.
       *
@@ -174,12 +173,14 @@ object transitionTransitionMod extends js.Object {
       * @returns a transition rejection explaining why the transition is invalid, or the reason the transition failed.
       */
     def error(): Rejection = js.native
+    
     /**
       * Gets the states being exited.
       *
       * @returns an array of states that will be exited during this transition.
       */
     def exiting(): js.Array[StateDeclaration] = js.native
+    
     /**
       * Returns the "from state"
       *
@@ -188,6 +189,7 @@ object transitionTransitionMod extends js.Object {
       * @returns The state declaration object for the Transition's ("from state").
       */
     def from(): StateDeclaration = js.native
+    
     /**
       * Gets all available resolve tokens (keys)
       *
@@ -222,6 +224,7 @@ object transitionTransitionMod extends js.Object {
       */
     def getResolveTokens(): js.Array[_] = js.native
     def getResolveTokens(pathname: String): js.Array[_] = js.native
+    
     /**
       * Returns true if the transition is ignored.
       *
@@ -230,6 +233,7 @@ object transitionTransitionMod extends js.Object {
       * @returns true if the Transition is ignored.
       */
     def ignored(): Boolean = js.native
+    
     /**
       * Creates a [[UIInjector]] Dependency Injector
       *
@@ -288,20 +292,24 @@ object transitionTransitionMod extends js.Object {
     def injector(): UIInjector = js.native
     def injector(state: js.UndefOr[StateOrName], pathName: String): UIInjector = js.native
     def injector(state: StateOrName): UIInjector = js.native
+    
     def is(compare: To): Boolean = js.native
     /**
       * Determines whether two transitions are equivalent.
       * @deprecated
       */
     def is(compare: Transition): Boolean = js.native
+    
     /** Checks if this transition is currently active/running. */
     def isActive(): Boolean = js.native
+    
     /**
       * Get the transition options
       *
       * @returns the options for this Transition.
       */
     def options(): TransitionOptions = js.native
+    
     /**
       * Gets the original transition in a redirect chain
       *
@@ -329,6 +337,7 @@ object transitionTransitionMod extends js.Object {
       * @returns The original Transition that started a redirect chain
       */
     def originalTransition(): Transition = js.native
+    
     /**
       * Gets transition parameter values
       *
@@ -356,6 +365,7 @@ object transitionTransitionMod extends js.Object {
       */
     def params(): StringDictionary[js.Any] = js.native
     def params(pathname: String): StringDictionary[js.Any] = js.native
+    
     /**
       * Gets the new values of any parameters that changed during this transition.
       *
@@ -418,10 +428,20 @@ object transitionTransitionMod extends js.Object {
     def paramsChanged(): StringDictionary[js.Any] = js.native
     @JSName("paramsChanged")
     def paramsChanged_T_T[T](): T = js.native
+    
     @JSName("params")
     def params_T_T[T](): T = js.native
     @JSName("params")
     def params_T_T[T](pathname: String): T = js.native
+    
+    /**
+      * This promise is resolved or rejected based on the outcome of the Transition.
+      *
+      * When the transition is successful, the promise is resolved
+      * When the transition is unsuccessful, the promise is rejected with the [[Rejection]] or javascript error
+      */
+    var promise: js.Promise[_] = js.native
+    
     /**
       * Creates a new transition that is a redirection of the current one.
       *
@@ -433,6 +453,7 @@ object transitionTransitionMod extends js.Object {
       * @returns Returns a new [[Transition]] instance.
       */
     def redirect(targetState: TargetState): Transition = js.native
+    
     /**
       * Gets the transition from which this transition was redirected.
       *
@@ -451,6 +472,7 @@ object transitionTransitionMod extends js.Object {
       * @returns The previous Transition, or null if this Transition is not the result of a redirection
       */
     def redirectedFrom(): Transition = js.native
+    
     /**
       * Gets the states being retained.
       *
@@ -458,6 +480,14 @@ object transitionTransitionMod extends js.Object {
       *    exited during this Transition
       */
     def retained(): js.Array[StateDeclaration] = js.native
+    
+    /**
+      * A reference to the [[UIRouter]] instance
+      *
+      * This reference can be used to access the router services, such as the [[StateService]]
+      */
+    var router: UIRouter = js.native
+    
     /**
       * Runs the transition
       *
@@ -468,6 +498,17 @@ object transitionTransitionMod extends js.Object {
       * @returns a promise for a successful transition.
       */
     def run(): js.Promise[_] = js.native
+    
+    /**
+      * A boolean which indicates if the transition was successful
+      *
+      * After a successful transition, this value is set to true.
+      * After an unsuccessful transition, this value is set to false.
+      *
+      * The value will be undefined if the transition is not complete
+      */
+    var success: Boolean = js.native
+    
     /**
       * Gets the Target State
       *
@@ -476,6 +517,7 @@ object transitionTransitionMod extends js.Object {
       * @returns the [[TargetState]] of this Transition
       */
     def targetState(): TargetState = js.native
+    
     /**
       * Returns the "to state"
       *
@@ -484,6 +526,7 @@ object transitionTransitionMod extends js.Object {
       * @returns The state declaration object for the Transition's target state ("to state").
       */
     def to(): StateDeclaration = js.native
+    
     def treeChanges(): TreeChanges = js.native
     /**
       * Return the transition's tree changes
@@ -498,12 +541,14 @@ object transitionTransitionMod extends js.Object {
       *   (`'to'`, `'from'`, `'entering'`, `'exiting'`, `'retained'`)
       */
     def treeChanges(pathname: String): js.Array[PathNode] = js.native
+    
     /**
       * Checks if the Transition is valid
       *
       * @returns true if the Transition is valid
       */
     def valid(): Boolean = js.native
+    
     /**
       * Get the [[ViewConfig]]s associated with this Transition
       *
@@ -521,13 +566,11 @@ object transitionTransitionMod extends js.Object {
     def views(pathname: String): js.Array[ViewConfig] = js.native
     def views(pathname: String, state: StateObject): js.Array[ViewConfig] = js.native
   }
-  
   /* static members */
   @js.native
   object Transition extends js.Object {
+    
     /** @internal */
     var diToken: TypeofTransition = js.native
   }
-  
 }
-

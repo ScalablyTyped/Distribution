@@ -2,11 +2,12 @@ package typings.openui5.global.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.IconPool")
 @js.native
 object IconPool extends js.Object {
+  
   /**
     * Register an additional icon to the sap.ui.core.IconPool.
     * @param iconName the name of the icon.
@@ -17,6 +18,7 @@ object IconPool extends js.Object {
     * content and suppressMirroring properties.
     */
   def addIcon(iconName: String, collectionName: String, iconInfo: js.Any): js.Any = js.native
+  
   /**
     * Creates an instance of {@link sap.ui.core.Icon} if the given URI is an icon URI, otherwise the given
     * constructor is called.The given URI is set to the src property of the control.
@@ -28,11 +30,13 @@ object IconPool extends js.Object {
     */
   def createControlByURI(setting: String, constructor: js.Any): typings.openui5.sap.ui.core.Control = js.native
   def createControlByURI(setting: js.Any, constructor: js.Any): typings.openui5.sap.ui.core.Control = js.native
+  
   /**
     * Returns all names of registered collections in IconPool
     * @returns An array contains all of the registered collections' names.
     */
   def getIconCollectionNames(): js.Array[_] = js.native
+  
   /**
     * Returns the icon url based on the given mime type
     * @since 1.25.0
@@ -40,6 +44,7 @@ object IconPool extends js.Object {
     * @returns the icon url (e.g. "sap-icon://attachment-zip-file")
     */
   def getIconForMimeType(sMimeType: String): String = js.native
+  
   /**
     * Returns an info object for the icon with the given <code>iconName</code> and
     * <code>collectionName</code>.Instead of giving name and collection, a complete icon-URI can be
@@ -60,12 +65,14 @@ object IconPool extends js.Object {
     */
   def getIconInfo(iconName: String): js.Any = js.native
   def getIconInfo(iconName: String, collectionName: String): js.Any = js.native
+  
   /**
     * Returns all name of icons that are registerd under the given collection.
     * @param collectionName the name of collection where icon names are retrieved.
     * @returns An array contains all of the registered icon names under the given collection.
     */
   def getIconNames(collectionName: String): js.Array[_] = js.native
+  
   /**
     * Returns the URI of the icon in the pool which has the given <code>iconName</code> and
     * <code>collectionName</code>.
@@ -76,6 +83,7 @@ object IconPool extends js.Object {
     */
   def getIconURI(iconName: String): String = js.native
   def getIconURI(iconName: String, collectionName: String): String = js.native
+  
   /**
     * Returns whether the given <code>uri</code> is an icon URI.A string is an icon URI when it can be
     * parsed as an URI and when it has one of the two
@@ -86,4 +94,3 @@ object IconPool extends js.Object {
     */
   def isIconURI(uri: String): Boolean = js.native
 }
-

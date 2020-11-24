@@ -10,9 +10,9 @@ Fast base encoding / decoding of any given alphabet
 | ------------------ | :-------------: |
 | Full name          | base-x |
 | Keywords           | base-x, base58, base62, base64, crypto, crytography, decode, decoding, encode, encoding |
-| # releases         | 4 |
-| # dependents       | 151 |
-| # downloads        | 7339640 |
+| # releases         | 5 |
+| # dependents       | 199 |
+| # downloads        | 10169845 |
 | # stars            | 5 |
 
 ## Links

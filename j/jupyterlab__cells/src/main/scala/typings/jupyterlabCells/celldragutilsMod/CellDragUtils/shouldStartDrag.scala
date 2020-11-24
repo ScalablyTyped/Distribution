@@ -2,11 +2,12 @@ package typings.jupyterlabCells.celldragutilsMod.CellDragUtils
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/cells/lib/celldragutils", "CellDragUtils.shouldStartDrag")
 @js.native
 object shouldStartDrag extends js.Object {
+  
   /**
     * Detect if a drag event should be started. This is down if the
     * mouse is moved beyond a certain distance (DRAG_THRESHOLD).
@@ -18,4 +19,3 @@ object shouldStartDrag extends js.Object {
     */
   def apply(prevX: Double, prevY: Double, nextX: Double, nextY: Double): Boolean = js.native
 }
-

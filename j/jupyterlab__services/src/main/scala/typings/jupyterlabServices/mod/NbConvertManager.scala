@@ -3,7 +3,7 @@ package typings.jupyterlabServices.mod
 import typings.jupyterlabServices.nbconvertMod.NbConvertManager.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/services", "NbConvertManager")
 @js.native
@@ -14,4 +14,3 @@ class NbConvertManager ()
   extends typings.jupyterlabServices.nbconvertMod.NbConvertManager {
   def this(options: IOptions) = this()
 }
-

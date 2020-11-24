@@ -4,14 +4,13 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("date-fns/esm/fp/max", JSImport.Namespace)
 @js.native
 object maxMod extends js.Object {
+  
   @js.native
   object default
     extends TopLevel[CurriedFn1[js.Array[Date | Double], Date]]
-  
 }
-

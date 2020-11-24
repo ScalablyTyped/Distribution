@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Factory function for creating an Error object. */
 @js.native
@@ -17,6 +17,7 @@ trait ErrorBuilder
   */
 Instantiable0[HttpError]
      with Instantiable1[(/* config */ Config) | (/* config */ Error) | (/* config */ String), HttpError] {
+  
   /**
     *  Creates an Error object. The new keyword is optional.
     * @param {string | Error | Config} config - If config is a string, it will be treated as config.message.
@@ -27,4 +28,3 @@ Instantiable0[HttpError]
   def apply(config: Config): HttpError = js.native
   def apply(config: Error): HttpError = js.native
 }
-

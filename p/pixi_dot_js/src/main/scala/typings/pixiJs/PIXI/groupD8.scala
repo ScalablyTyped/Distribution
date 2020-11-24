@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Implements the dihedral group D8, which is similar to
@@ -32,4 +32,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.groupD8")
 @js.native
 object groupD8 extends js.Object
-

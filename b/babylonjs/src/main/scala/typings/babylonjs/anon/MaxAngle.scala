@@ -5,41 +5,96 @@ import typings.babylonjs.BABYLON.Bone
 import typings.babylonjs.BABYLON.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait MaxAngle extends js.Object {
-  var bendAxis: js.UndefOr[Vector3] = js.undefined
-  var maxAngle: js.UndefOr[Double] = js.undefined
-  var poleAngle: js.UndefOr[Double] = js.undefined
-  var poleTargetBone: js.UndefOr[Bone] = js.undefined
-  var poleTargetLocalOffset: js.UndefOr[Vector3] = js.undefined
-  var poleTargetMesh: js.UndefOr[AbstractMesh] = js.undefined
-  var slerpAmount: js.UndefOr[Double] = js.undefined
-  var targetMesh: js.UndefOr[AbstractMesh] = js.undefined
+  
+  var bendAxis: js.UndefOr[Vector3] = js.native
+  
+  var maxAngle: js.UndefOr[Double] = js.native
+  
+  var poleAngle: js.UndefOr[Double] = js.native
+  
+  var poleTargetBone: js.UndefOr[Bone] = js.native
+  
+  var poleTargetLocalOffset: js.UndefOr[Vector3] = js.native
+  
+  var poleTargetMesh: js.UndefOr[AbstractMesh] = js.native
+  
+  var slerpAmount: js.UndefOr[Double] = js.native
+  
+  var targetMesh: js.UndefOr[AbstractMesh] = js.native
 }
-
 object MaxAngle {
+  
   @scala.inline
-  def apply(
-    bendAxis: Vector3 = null,
-    maxAngle: js.UndefOr[Double] = js.undefined,
-    poleAngle: js.UndefOr[Double] = js.undefined,
-    poleTargetBone: Bone = null,
-    poleTargetLocalOffset: Vector3 = null,
-    poleTargetMesh: AbstractMesh = null,
-    slerpAmount: js.UndefOr[Double] = js.undefined,
-    targetMesh: AbstractMesh = null
-  ): MaxAngle = {
+  def apply(): MaxAngle = {
     val __obj = js.Dynamic.literal()
-    if (bendAxis != null) __obj.updateDynamic("bendAxis")(bendAxis.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAngle)) __obj.updateDynamic("maxAngle")(maxAngle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(poleAngle)) __obj.updateDynamic("poleAngle")(poleAngle.get.asInstanceOf[js.Any])
-    if (poleTargetBone != null) __obj.updateDynamic("poleTargetBone")(poleTargetBone.asInstanceOf[js.Any])
-    if (poleTargetLocalOffset != null) __obj.updateDynamic("poleTargetLocalOffset")(poleTargetLocalOffset.asInstanceOf[js.Any])
-    if (poleTargetMesh != null) __obj.updateDynamic("poleTargetMesh")(poleTargetMesh.asInstanceOf[js.Any])
-    if (!js.isUndefined(slerpAmount)) __obj.updateDynamic("slerpAmount")(slerpAmount.get.asInstanceOf[js.Any])
-    if (targetMesh != null) __obj.updateDynamic("targetMesh")(targetMesh.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxAngle]
   }
+  
+  @scala.inline
+  implicit class MaxAngleOps[Self <: MaxAngle] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setBendAxis(value: Vector3): Self = this.set("bendAxis", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBendAxis: Self = this.set("bendAxis", js.undefined)
+    
+    @scala.inline
+    def setMaxAngle(value: Double): Self = this.set("maxAngle", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMaxAngle: Self = this.set("maxAngle", js.undefined)
+    
+    @scala.inline
+    def setPoleAngle(value: Double): Self = this.set("poleAngle", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePoleAngle: Self = this.set("poleAngle", js.undefined)
+    
+    @scala.inline
+    def setPoleTargetBone(value: Bone): Self = this.set("poleTargetBone", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePoleTargetBone: Self = this.set("poleTargetBone", js.undefined)
+    
+    @scala.inline
+    def setPoleTargetLocalOffset(value: Vector3): Self = this.set("poleTargetLocalOffset", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePoleTargetLocalOffset: Self = this.set("poleTargetLocalOffset", js.undefined)
+    
+    @scala.inline
+    def setPoleTargetMesh(value: AbstractMesh): Self = this.set("poleTargetMesh", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePoleTargetMesh: Self = this.set("poleTargetMesh", js.undefined)
+    
+    @scala.inline
+    def setSlerpAmount(value: Double): Self = this.set("slerpAmount", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSlerpAmount: Self = this.set("slerpAmount", js.undefined)
+    
+    @scala.inline
+    def setTargetMesh(value: AbstractMesh): Self = this.set("targetMesh", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTargetMesh: Self = this.set("targetMesh", js.undefined)
+  }
 }
-

@@ -4,16 +4,16 @@ import typings.angularCore.mod.ModuleWithProviders
 import typings.angularForms.anon.WarnOnNgModelWithFormControl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "ReactiveFormsModule")
 @js.native
 class ReactiveFormsModule () extends js.Object
-
 /* static members */
 @JSImport("@angular/forms", "ReactiveFormsModule")
 @js.native
 object ReactiveFormsModule extends js.Object {
+  
   /**
     * @description
     * Provides options for configuring the reactive forms module.
@@ -24,4 +24,3 @@ object ReactiveFormsModule extends js.Object {
     */
   def withConfig(opts: WarnOnNgModelWithFormControl): ModuleWithProviders[ReactiveFormsModule] = js.native
 }
-

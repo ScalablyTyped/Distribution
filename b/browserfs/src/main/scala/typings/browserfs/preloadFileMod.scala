@@ -11,11 +11,12 @@ import typings.node.Buffer
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("browserfs/dist/node/generic/preload_file", JSImport.Namespace)
 @js.native
 object preloadFileMod extends js.Object {
+  
   @js.native
   class NoSyncFile[T /* <: FileSystem */] protected ()
     extends PreloadFile[T]
@@ -28,14 +29,19 @@ object preloadFileMod extends js.Object {
       _stat: typings.browserfs.nodeFsStatsMod.default,
       contents: Buffer
     ) = this()
+    
     /* InferMemberOverrides */
     override def chmod(mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    
     /* InferMemberOverrides */
     override def chmodSync(mode: Double): Unit = js.native
+    
     /* InferMemberOverrides */
     override def chown(uid: Double, gid: Double, cb: BFSOneArgCallback): Unit = js.native
+    
     /* InferMemberOverrides */
     override def chownSync(uid: Double, gid: Double): Unit = js.native
+    
     /**
       * **Core**: Asynchronous close. Must be implemented by subclasses of this
       * class.
@@ -43,15 +49,19 @@ object preloadFileMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def close(cb: BFSOneArgCallback): Unit = js.native
+    
     /**
       * **Core**: Synchronous close.
       */
     /* InferMemberOverrides */
     override def closeSync(): Unit = js.native
+    
     /* InferMemberOverrides */
     override def datasync(cb: BFSOneArgCallback): Unit = js.native
+    
     /* InferMemberOverrides */
     override def datasyncSync(): Unit = js.native
+    
     /**
       * Get the current file position.
       *
@@ -63,6 +73,7 @@ object preloadFileMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def getPos(): Double with js.UndefOr[Double] = js.native
+    
     /**
       * Read data from the file.
       * @param [BrowserFS.node.Buffer] buffer The buffer that the data will be
@@ -84,6 +95,7 @@ object preloadFileMod extends js.Object {
       position: Double,
       cb: BFSThreeArgCallback[Double, Buffer]
     ): Unit = js.native
+    
     /**
       * Read data from the file.
       * @param [BrowserFS.node.Buffer] buffer The buffer that the data will be
@@ -98,21 +110,26 @@ object preloadFileMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def readSync(buffer: Buffer, offset: Double, length: Double, position: Double): Double = js.native
+    
     /**
       * Asynchronous `stat`.
       * @param [Function(BrowserFS.ApiError, BrowserFS.node.fs.Stats)] cb
       */
     /* InferMemberOverrides */
     override def stat(cb: BFSCallback[typings.browserfs.nodeFsStatsMod.default]): Unit = js.native
+    
     /**
       * Synchronous `stat`.
       */
     /* InferMemberOverrides */
     override def statSync(): typings.browserfs.nodeFsStatsMod.default = js.native
+    
     /* InferMemberOverrides */
     override def sync(cb: BFSOneArgCallback): Unit = js.native
+    
     /* InferMemberOverrides */
     override def syncSync(): Unit = js.native
+    
     /**
       * Asynchronous truncate.
       * @param [Number] len
@@ -120,16 +137,20 @@ object preloadFileMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def truncate(len: Double, cb: BFSOneArgCallback): Unit = js.native
+    
     /**
       * Synchronous truncate.
       * @param [Number] len
       */
     /* InferMemberOverrides */
     override def truncateSync(len: Double): Unit = js.native
+    
     /* InferMemberOverrides */
     override def utimes(atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+    
     /* InferMemberOverrides */
     override def utimesSync(atime: Date, mtime: Date): Unit = js.native
+    
     /**
       * Write buffer to the file.
       * Note that it is unsafe to use fs.write multiple times on the same file
@@ -152,6 +173,7 @@ object preloadFileMod extends js.Object {
       position: Double,
       cb: BFSThreeArgCallback[Double, Buffer]
     ): Unit = js.native
+    
     /**
       * Write buffer to the file.
       * Note that it is unsafe to use fs.writeSync multiple times on the same file
@@ -171,38 +193,52 @@ object preloadFileMod extends js.Object {
   
   @js.native
   trait PreloadFile[T /* <: FileSystem */] extends BaseFile {
+    
     var _buffer: js.Any = js.native
+    
     var _dirty: js.Any = js.native
+    
     var _flag: js.Any = js.native
+    
     var _fs: T = js.native
+    
     var _path: js.Any = js.native
+    
     var _pos: js.Any = js.native
+    
     var _stat: js.Any = js.native
+    
     /**
       * Advance the current file position by the indicated number of positions.
       * @param [Number] delta
       */
     def advancePos(delta: Double): Double = js.native
+    
     /**
       * **Core**: Asynchronous close. Must be implemented by subclasses of this
       * class.
       * @param [Function(BrowserFS.ApiError)] cb
       */
     def close(cb: BFSOneArgCallback): Unit = js.native
+    
     /**
       * **Core**: Synchronous close.
       */
     def closeSync(): Unit = js.native
+    
     /**
       * NONSTANDARD: Get the underlying buffer for this file. !!DO NOT MUTATE!! Will mess up dirty tracking.
       */
     def getBuffer(): Buffer = js.native
+    
     def getFlag(): FileFlag = js.native
+    
     /**
       * Get the path to this file.
       * @return [String] The path to the file.
       */
     def getPath(): String = js.native
+    
     /**
       * Get the current file position.
       *
@@ -213,11 +249,14 @@ object preloadFileMod extends js.Object {
       * @return [Number] The current file position.
       */
     def getPos(): Double = js.native
+    
     /**
       * NONSTANDARD: Get underlying stats for this file. !!DO NOT MUTATE!!
       */
     def getStats(): typings.browserfs.nodeFsStatsMod.default = js.native
+    
     /* protected */ def isDirty(): Boolean = js.native
+    
     /**
       * Read data from the file.
       * @param [BrowserFS.node.Buffer] buffer The buffer that the data will be
@@ -238,6 +277,7 @@ object preloadFileMod extends js.Object {
       position: Double,
       cb: BFSThreeArgCallback[Double, Buffer]
     ): Unit = js.native
+    
     /**
       * Read data from the file.
       * @param [BrowserFS.node.Buffer] buffer The buffer that the data will be
@@ -251,35 +291,42 @@ object preloadFileMod extends js.Object {
       * @return [Number]
       */
     def readSync(buffer: Buffer, offset: Double, length: Double, position: Double): Double = js.native
+    
     /**
       * Resets the dirty bit. Should only be called after a sync has completed successfully.
       */
     /* protected */ def resetDirty(): Unit = js.native
+    
     /**
       * Set the file position.
       * @param [Number] newPos
       */
     def setPos(newPos: Double): Double = js.native
+    
     /**
       * Asynchronous `stat`.
       * @param [Function(BrowserFS.ApiError, BrowserFS.node.fs.Stats)] cb
       */
     def stat(cb: BFSCallback[typings.browserfs.nodeFsStatsMod.default]): Unit = js.native
+    
     /**
       * Synchronous `stat`.
       */
     def statSync(): typings.browserfs.nodeFsStatsMod.default = js.native
+    
     /**
       * Asynchronous truncate.
       * @param [Number] len
       * @param [Function(BrowserFS.ApiError)] cb
       */
     def truncate(len: Double, cb: BFSOneArgCallback): Unit = js.native
+    
     /**
       * Synchronous truncate.
       * @param [Number] len
       */
     def truncateSync(len: Double): Unit = js.native
+    
     /**
       * Write buffer to the file.
       * Note that it is unsafe to use fs.write multiple times on the same file
@@ -301,6 +348,7 @@ object preloadFileMod extends js.Object {
       position: Double,
       cb: BFSThreeArgCallback[Double, Buffer]
     ): Unit = js.native
+    
     /**
       * Write buffer to the file.
       * Note that it is unsafe to use fs.writeSync multiple times on the same file
@@ -342,6 +390,4 @@ object preloadFileMod extends js.Object {
       contents: Buffer
     ) = this()
   }
-  
 }
-

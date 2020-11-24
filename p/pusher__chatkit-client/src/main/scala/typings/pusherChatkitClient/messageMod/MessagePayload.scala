@@ -3,7 +3,7 @@ package typings.pusherChatkitClient.messageMod
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.pusherChatkitClient.messageMod.InlinePayload
@@ -11,20 +11,22 @@ import scala.scalajs.js.annotation._
   - typings.pusherChatkitClient.messageMod.AttachmentPayload
 */
 trait MessagePayload extends js.Object
-
 object MessagePayload {
+  
   @scala.inline
   def InlinePayload(content: String, `type`: String): MessagePayload = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagePayload]
   }
+  
   @scala.inline
   def UrlPayload(`type`: String, url: String): MessagePayload = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagePayload]
   }
+  
   @scala.inline
   def AttachmentPayload(
     name: String,
@@ -38,4 +40,3 @@ object MessagePayload {
     __obj.asInstanceOf[MessagePayload]
   }
 }
-

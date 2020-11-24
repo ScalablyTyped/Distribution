@@ -12,7 +12,7 @@ Check if a number is in a given range
 | Keywords           | in, range, number, check, is |
 | # releases         | 2 |
 | # dependents       | 11 |
-| # downloads        | 37221 |
+| # downloads        | 46375 |
 | # stars            | 1 |
 
 ## Links

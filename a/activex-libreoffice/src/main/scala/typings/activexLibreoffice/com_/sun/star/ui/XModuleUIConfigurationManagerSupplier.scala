@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows to retrieve user interface configuration managers related to OpenOffice.org modules.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XModuleUIConfigurationManagerSupplier extends XInterface {
+  
   /**
     * returns the requested module based user interface configuration manager.
     * @param ModuleIdentifier a module identifier which identifies an OpenOffice.org module. The module identifier can be retrieved from the {@link com.sun.st
@@ -19,8 +20,8 @@ trait XModuleUIConfigurationManagerSupplier extends XInterface {
     */
   def getUIConfigurationManager(ModuleIdentifier: String): XUIConfigurationManager = js.native
 }
-
 object XModuleUIConfigurationManagerSupplier {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -31,20 +32,23 @@ object XModuleUIConfigurationManagerSupplier {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getUIConfigurationManager = js.Any.fromFunction1(getUIConfigurationManager), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XModuleUIConfigurationManagerSupplier]
   }
+  
   @scala.inline
   implicit class XModuleUIConfigurationManagerSupplierOps[Self <: XModuleUIConfigurationManagerSupplier] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetUIConfigurationManager(value: String => XUIConfigurationManager): Self = this.set("getUIConfigurationManager", js.Any.fromFunction1(value))
   }
-  
 }
-

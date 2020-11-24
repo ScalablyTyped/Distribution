@@ -6,11 +6,12 @@ import typings.semver.semverStrings.Greaterthansign
 import typings.semver.semverStrings.Lessthansign
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver/ranges/outside", JSImport.Namespace)
 @js.native
 object outsideMod extends js.Object {
+  
   /**
     * Return true if the version is outside the bounds of the range in either the high or low direction.
     * The hilo argument must be either the string '>' or '<'. (This is the function called by gtr and ltr.)
@@ -40,4 +41,3 @@ object outsideMod extends js.Object {
   def apply(version: typings.semver.semverMod.^, range: ^, hilo: Lessthansign, optionsOrLoose: Boolean): Boolean = js.native
   def apply(version: typings.semver.semverMod.^, range: ^, hilo: Lessthansign, optionsOrLoose: Options): Boolean = js.native
 }
-

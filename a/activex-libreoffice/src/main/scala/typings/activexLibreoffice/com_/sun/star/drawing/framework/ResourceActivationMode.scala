@@ -4,7 +4,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The ResourceActivationMode specifies, for example for the {@link com.sun.star.drawing.framework.XConfigurationController.requestResourceActivation()}
@@ -15,13 +15,13 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait ResourceActivationMode extends js.Object
-
 object ResourceActivationMode {
+  
   /** A resource is requested in addition to already existing ones. This is used for example for panes. */
   @scala.inline
   def ADD: `0` = 0.asInstanceOf[`0`]
+  
   /** A resource is requested to replace an already existing one of the same class. This is used for example for views. */
   @scala.inline
   def REPLACE: `1` = 1.asInstanceOf[`1`]
 }
-

@@ -4,11 +4,12 @@ import typings.semver.mod.Options
 import typings.semver.rangeMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver/preload", "validRange")
 @js.native
 object validRange extends js.Object {
+  
   /**
     * Return the valid range or null if it's not valid
     */
@@ -24,4 +25,3 @@ object validRange extends js.Object {
   def apply(range: ^, optionsOrLoose: Boolean): String = js.native
   def apply(range: ^, optionsOrLoose: Options): String = js.native
 }
-

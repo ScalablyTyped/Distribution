@@ -11,24 +11,33 @@ import typings.antdMobile.anon.OkText
 import typings.rmcCalendar.dataTypesMod.Models.Locale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile/lib/locale-provider/en_US", JSImport.Namespace)
 @js.native
 object localeProviderEnUSMod extends js.Object {
+  
   @js.native
   object default extends js.Object {
+    
     var Calendar: Locale = js.native
+    
     var DatePicker: DismissText = js.native
+    
     var DatePickerView: Day = js.native
+    
     var InputItem: BackspaceLabel = js.native
+    
     var Menu: CancelTextOkText = js.native
+    
     var Pagination: NextText = js.native
+    
     var Picker: OkText = js.native
+    
     var PullToRefresh: ActivateText = js.native
+    
     var SearchBar: CancelText = js.native
+    
     var locale: String = js.native
   }
-  
 }
-

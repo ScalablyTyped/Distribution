@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.Intl.PluralRulesOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Intl.PluralRules")
 @js.native
@@ -21,15 +21,16 @@ object PluralRules
       /* options */ PluralRulesOptions, 
       typings.std.Intl.PluralRules
     ] {
+  
   def apply(): typings.std.Intl.PluralRules = js.native
   def apply(locales: js.UndefOr[scala.Nothing], options: PluralRulesOptions): typings.std.Intl.PluralRules = js.native
   def apply(locales: String): typings.std.Intl.PluralRules = js.native
   def apply(locales: String, options: PluralRulesOptions): typings.std.Intl.PluralRules = js.native
   def apply(locales: js.Array[String]): typings.std.Intl.PluralRules = js.native
   def apply(locales: js.Array[String], options: PluralRulesOptions): typings.std.Intl.PluralRules = js.native
+  
   def supportedLocalesOf(locales: String): js.Array[String] = js.native
   def supportedLocalesOf(locales: String, options: PluralRulesOptions): js.Array[String] = js.native
   def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native
   def supportedLocalesOf(locales: js.Array[String], options: PluralRulesOptions): js.Array[String] = js.native
 }
-

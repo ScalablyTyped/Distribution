@@ -2,7 +2,7 @@ package typings.themeUi.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.themeUi.themeUiStrings.p
@@ -36,4 +36,3 @@ import scala.scalajs.js.annotation._
   - typings.themeUi.themeUiStrings.root
 */
 trait StyledTags extends js.Object
-

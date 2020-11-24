@@ -23,54 +23,88 @@ import typings.typedGithubApi.typedGithubApiStrings.popularity
 import typings.typedGithubApi.typedGithubApiStrings.updated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typed-github-api/dist/interfaces/repository", JSImport.Namespace)
 @js.native
 object interfacesRepositoryMod extends js.Object {
+  
   @js.native
   trait Repository extends RepositoryRef {
+    
     var allowMergeCommit: Boolean = js.native
+    
     var allowRebasemerge: Boolean = js.native
+    
     var allowSquashMerge: Boolean = js.native
+    
     var created: Moment = js.native
+    
     var defaultBranch: String = js.native
+    
     var description: String = js.native
+    
     var forksCount: Double = js.native
+    
     var fullName: String = js.native
+    
     var hasDownloads: Boolean = js.native
+    
     var hasIssues: Boolean = js.native
+    
     var hasPages: Boolean = js.native
+    
     var hasWiki: Boolean = js.native
+    
     var homePage: String = js.native
+    
     var htmlUri: String = js.native
+    
     var id: Double = js.native
+    
     var isFork: Boolean = js.native
+    
     var isPrivate: Boolean = js.native
+    
     var language: js.UndefOr[String] = js.native
+    
     var networkCount: Double = js.native
+    
     var openIssuesCount: Double = js.native
+    
     @JSName("owner")
     var owner_Repository: UserSummary = js.native
+    
     var permissions: Admin = js.native
+    
     var pushed: Moment = js.native
+    
     var size: Double = js.native
+    
     var starGazersCount: Double = js.native
+    
     var subscribersCount: Double = js.native
+    
     var topics: js.Array[String] = js.native
+    
     var updated: Moment = js.native
+    
     var watchersCount: Double = js.native
   }
   
   @js.native
   trait RepositoryRef extends js.Object {
-    val name: String = js.native
-    val owner: OwnerRef = js.native
+    
     def getBranch(name: String): BranchRef = js.native
+    
     def getCommit(sha: String): CommitRef = js.native
+    
     def getIssue(issueNumber: Double): IssueRef = js.native
+    
     def getPullRequest(pullRequestNumber: Double): PullRequestRef = js.native
+    
     def loadAsync(): js.Promise[Repository | Null] = js.native
+    
     /**
       * Loads branches from this repository.
       * @param protectedOnly Only loads protected branches
@@ -78,6 +112,7 @@ object interfacesRepositoryMod extends js.Object {
       */
     def loadBranchesAsync(): js.Promise[js.Array[BranchRef]] = js.native
     def loadBranchesAsync(protectedOnly: Boolean): js.Promise[js.Array[BranchRef]] = js.native
+    
     /**
       * Loads commits from this repository.
       * @param start         SHA or branch to start listing commits from. Default: the repository�s default branch (usually master)
@@ -229,6 +264,7 @@ object interfacesRepositoryMod extends js.Object {
     ): js.Promise[js.Array[CommitSummary]] = js.native
     def loadCommitsAsync(start: String, pathIncluded: String, author: String, since: Moment): js.Promise[js.Array[CommitSummary]] = js.native
     def loadCommitsAsync(start: String, pathIncluded: String, author: String, since: Moment, until: Moment): js.Promise[js.Array[CommitSummary]] = js.native
+    
     /**
       * Loads issues for this repository.
       * @param milestone     Only loads issues for this milestone, if specified;
@@ -256,6 +292,7 @@ object interfacesRepositoryMod extends js.Object {
       ascending: js.UndefOr[Boolean],
       updatedSince: js.UndefOr[Moment]
     ): js.Promise[js.Array[Issue]] = js.native
+    
     /**
       * Loads pull requests for this repository.
       * @param state         Only loads pull requests for this state (default open)
@@ -274,7 +311,9 @@ object interfacesRepositoryMod extends js.Object {
       sort: js.UndefOr[created | updated | popularity | `long-running`],
       ascending: js.UndefOr[Boolean]
     ): js.Promise[js.Array[PullRequest]] = js.native
+    
+    val name: String = js.native
+    
+    val owner: OwnerRef = js.native
   }
-  
 }
-

@@ -12,11 +12,12 @@ import typings.msRestAzure.mod.AzureServiceClientOptions
 import typings.msRestAzure.mod.CloudErrorParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource/lib/managedApplicationClient", JSImport.Namespace)
 @js.native
 object managedApplicationClientMod extends js.Object {
+  
   @js.native
   class ManagedApplicationClient protected () extends AzureServiceClient {
     /**
@@ -60,15 +61,20 @@ object managedApplicationClientMod extends js.Object {
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
+    
     var acceptLanguage: String = js.native
+    
     var apiVersion: String = js.native
+    
     var applianceDefinitions: ApplianceDefinitions = js.native
+    
     // Operation groups
     var appliances: Appliances = js.native
+    
     var credentials: ServiceClientCredentials = js.native
+    
     var generateClientRequestId: Boolean = js.native
-    var longRunningOperationRetryTimeout: Double = js.native
-    var subscriptionId: String = js.native
+    
     /**
       * Lists all of the available Microsoft.Solutions REST API operations.
       *
@@ -103,6 +109,7 @@ object managedApplicationClientMod extends js.Object {
     def listOperations(callback: ServiceCallback[OperationListResult]): Unit = js.native
     def listOperations(options: CustomHeaders): js.Promise[OperationListResult] = js.native
     def listOperations(options: CustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
+    
     /**
       * Lists all of the available Microsoft.Solutions REST API operations.
       *
@@ -140,6 +147,7 @@ object managedApplicationClientMod extends js.Object {
     def listOperationsNext(nextPageLink: String, callback: ServiceCallback[OperationListResult]): Unit = js.native
     def listOperationsNext(nextPageLink: String, options: CustomHeaders): js.Promise[OperationListResult] = js.native
     def listOperationsNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
+    
     /**
       * Lists all of the available Microsoft.Solutions REST API operations.
       *
@@ -159,6 +167,7 @@ object managedApplicationClientMod extends js.Object {
       */
     def listOperationsNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
     def listOperationsNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
+    
     /**
       * Lists all of the available Microsoft.Solutions REST API operations.
       *
@@ -175,6 +184,24 @@ object managedApplicationClientMod extends js.Object {
       */
     def listOperationsWithHttpOperationResponse(): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
     def listOperationsWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
+    
+    var longRunningOperationRetryTimeout: Double = js.native
+    
+    var subscriptionId: String = js.native
+  }
+  
+  @js.native
+  object ManagedApplicationModels extends js.Object {
+    
+    @js.native
+    class BaseResource ()
+      extends typings.msRestAzure.mod.BaseResource
+    
+    @js.native
+    class CloudError protected ()
+      extends typings.azureArmResource.libModelsMod.CloudError {
+      def this(parameters: CloudErrorParameters) = this()
+    }
   }
   
   @js.native
@@ -221,20 +248,4 @@ object managedApplicationClientMod extends js.Object {
       options: AzureServiceClientOptions
     ) = this()
   }
-  
-  @js.native
-  object ManagedApplicationModels extends js.Object {
-    @js.native
-    class BaseResource ()
-      extends typings.msRestAzure.mod.BaseResource
-    
-    @js.native
-    class CloudError protected ()
-      extends typings.azureArmResource.libModelsMod.CloudError {
-      def this(parameters: CloudErrorParameters) = this()
-    }
-    
-  }
-  
 }
-

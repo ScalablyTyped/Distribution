@@ -6,7 +6,7 @@ import typings.luminoWidgets.boxpanelMod.BoxPanel.IOptions
 import typings.luminoWidgets.panelMod.Panel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/boxpanel", "BoxPanel")
 @js.native
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   */
 class BoxPanel_ () extends Panel {
   def this(options: IOptions) = this()
+  
   /**
     * Get the content alignment for the box panel.
     *
@@ -36,6 +37,7 @@ class BoxPanel_ () extends Panel {
     * entire box layout.
     */
   var alignment: Alignment = js.native
+  
   /**
     * Get the layout direction for the box panel.
     */
@@ -43,6 +45,7 @@ class BoxPanel_ () extends Panel {
     * Set the layout direction for the box panel.
     */
   var direction: Direction = js.native
+  
   /**
     * Get the inter-element spacing for the box panel.
     */
@@ -51,4 +54,3 @@ class BoxPanel_ () extends Panel {
     */
   var spacing: Double = js.native
 }
-

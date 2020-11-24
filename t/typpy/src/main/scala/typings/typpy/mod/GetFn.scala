@@ -20,10 +20,11 @@ import typings.typpy.typpyStrings.string
 import typings.typpy.typpyStrings.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GetFn extends js.Object {
+  
   def apply(): Null = js.native
   def apply(input: js.UndefOr[scala.Nothing], asString: `false`): Unit = js.native
   def apply(input: js.UndefOr[scala.Nothing], asString: `true`): undefined = js.native
@@ -53,4 +54,3 @@ trait GetFn extends js.Object {
   def apply(input: RegExp, asString: `false`): RegExpConstructor = js.native
   def apply(input: RegExp, asString: `true`): regexp = js.native
 }
-

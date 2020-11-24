@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.ui.Editor_
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofEditor_
   extends Instantiable1[/* element */ Element, Editor_]
      with Instantiable2[/* element */ Element, /* options */ EditorOptions, Editor_] {
-  var fn: Editor_ = js.native
+  
   def extend(proto: js.Object): Editor_ = js.native
+  
+  var fn: Editor_ = js.native
 }
-

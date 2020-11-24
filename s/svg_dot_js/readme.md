@@ -10,9 +10,9 @@ A lightweight library for manipulating and animating SVG.
 | ------------------ | :-------------: |
 | Full name          | svg.js |
 | Keywords           | svg, vector, graphics, animation |
-| # releases         | 6 |
-| # dependents       | 107 |
-| # downloads        | 1948190 |
+| # releases         | 4 |
+| # dependents       | 122 |
+| # downloads        | 4769276 |
 | # stars            | 8 |
 
 ## Links

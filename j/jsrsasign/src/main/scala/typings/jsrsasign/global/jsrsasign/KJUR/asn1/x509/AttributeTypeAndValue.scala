@@ -3,7 +3,7 @@ package typings.jsrsasign.global.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AttributeTypeAndValue ASN.1 structure class
@@ -18,4 +18,3 @@ class AttributeTypeAndValue protected ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.AttributeTypeAndValue {
   def this(params: StringParam) = this()
 }
-

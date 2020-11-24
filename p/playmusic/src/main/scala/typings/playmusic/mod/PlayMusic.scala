@@ -3,10 +3,11 @@ package typings.playmusic.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PlayMusic extends js.Object {
+  
   /**
     * Creates a new playlist.
     *
@@ -17,6 +18,7 @@ trait PlayMusic extends js.Object {
     playlistName: String,
     callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit]
   ): Unit = js.native
+  
   /**
     * Adds a track to end of a playlist.
     *
@@ -76,6 +78,7 @@ trait PlayMusic extends js.Object {
     entryBeforeClientId: String,
     entryAfterClientId: String
   ): Unit = js.native
+  
   /**
     * Change metadata of a track a library
     * Currently only support changing rating
@@ -86,6 +89,7 @@ trait PlayMusic extends js.Object {
     * @param callback function(err, success) - success callback
     */
   def changeTrackMetadata(song: js.Any, callback: js.Function2[/* error */ Error, /* success */ MutateResponses, Unit]): Unit = js.native
+  
   /**
     * Deletes a playlist
     *
@@ -96,6 +100,7 @@ trait PlayMusic extends js.Object {
     playlistId: String,
     callback: js.Function2[/* error */ Error, /* mutationStatus */ MutateResponses, Unit]
   ): Unit = js.native
+  
   /**
     * Returns list of all tracks.
     *
@@ -112,6 +117,7 @@ trait PlayMusic extends js.Object {
     options: LibraryOptions,
     callback: js.Function2[/* error */ Error, /* response */ LibraryResponse, Unit]
   ): Unit = js.native
+  
   /**
     * Returns tracks on all playlists.
     *
@@ -128,18 +134,21 @@ trait PlayMusic extends js.Object {
     options: PlaylistOptions,
     callback: js.Function2[/* error */ Error, /* response */ PlaylistResponse, Unit]
   ): Unit = js.native
+  
   /**
     * Returns list of all playlists.
     *
     * @param callback function(error, playlists) - success callback
     */
   def getPlayLists(callback: js.Function2[/* error */ Error, /* response */ PlaylistListResponse, Unit]): Unit = js.native
+  
   /**
     * Returns settings / device ids authorized for account.
     *
     * @param callback function(error, response) - success callback
     */
   def getSettings(callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Opens and returns a stream object
     *
@@ -147,6 +156,7 @@ trait PlayMusic extends js.Object {
     * @param callback function(stream) - success callback
     */
   def getStream(id: String, callback: js.Function2[/* error */ Error, /* stream */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Returns stream URL for a track.
     *
@@ -154,6 +164,7 @@ trait PlayMusic extends js.Object {
     * @param callback function(err, streamUrl) - success callback
     */
   def getStreamUrl(id: String, callback: js.Function2[/* error */ Error, /* streamUrl */ String, Unit]): Unit = js.native
+  
   /**
     * Increments track's playcount
     *
@@ -164,11 +175,14 @@ trait PlayMusic extends js.Object {
     songId: String,
     callback: js.Function2[/* error */ Error, /* mutationStatus */ MutateResponses, Unit]
   ): Unit = js.native
+  
   def init(options: InitOptions, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   def login(
     options: LoginOptions,
     callback: js.Function2[/* error */ Error, /* response */ LoginResponse, Unit]
   ): Unit = js.native
+  
   /**
     * Move the specified entry inbetween two specified entries (identified by their clientIds)
     *
@@ -183,6 +197,7 @@ trait PlayMusic extends js.Object {
     entryAfterClientId: String,
     callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit]
   ): Unit = js.native
+  
   /**
     * Removes given entry ids from playlist entries.
     *
@@ -197,6 +212,7 @@ trait PlayMusic extends js.Object {
     playlistItemIds: js.Array[String],
     callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit]
   ): Unit = js.native
+  
   /**
     * Searches for All Access tracks.
     *
@@ -209,6 +225,7 @@ trait PlayMusic extends js.Object {
     maxResults: Double,
     callback: js.Function2[/* error */ Error, /* searchResults */ js.Any, Unit]
   ): Unit = js.native
+  
   /**
     * Updates a playlist's metadata
     *
@@ -222,4 +239,3 @@ trait PlayMusic extends js.Object {
     callback: js.Function2[/* error */ Error, /* mutationStatus */ MutateResponses, Unit]
   ): Unit = js.native
 }
-

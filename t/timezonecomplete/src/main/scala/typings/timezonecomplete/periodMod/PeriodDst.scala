@@ -3,19 +3,24 @@ package typings.timezonecomplete.periodMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PeriodDst extends js.Object
-
 @JSImport("timezonecomplete/dist/lib/period", "PeriodDst")
 @js.native
 object PeriodDst extends js.Object {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[PeriodDst with Double] = js.native
+  
   /**
     * End-of-enum marker
     */
   @js.native
   sealed trait MAX extends PeriodDst
+  /* 2 */ @js.native
+  object MAX extends TopLevel[MAX with Double]
   
   /**
     * Keep repeating in similar intervals measured in UTC,
@@ -27,6 +32,8 @@ object PeriodDst extends js.Object {
     */
   @js.native
   sealed trait RegularIntervals extends PeriodDst
+  /* 0 */ @js.native
+  object RegularIntervals extends TopLevel[RegularIntervals with Double]
   
   /**
     * Ensure that the time at which the intervals occur stay
@@ -40,17 +47,6 @@ object PeriodDst extends js.Object {
     */
   @js.native
   sealed trait RegularLocalTime extends PeriodDst
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PeriodDst with Double] = js.native
-  /* 2 */ @js.native
-  object MAX extends TopLevel[MAX with Double]
-  
-  /* 0 */ @js.native
-  object RegularIntervals extends TopLevel[RegularIntervals with Double]
-  
   /* 1 */ @js.native
   object RegularLocalTime extends TopLevel[RegularLocalTime with Double]
-  
 }
-

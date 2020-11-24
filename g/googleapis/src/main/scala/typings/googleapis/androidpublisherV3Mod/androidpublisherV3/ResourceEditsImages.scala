@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v3", "androidpublisher_v3.Resource$Edits$Images")
 @js.native
 class ResourceEditsImages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.edits.images.delete
     * @desc Deletes the image (specified by id) from the edit.
@@ -45,6 +47,7 @@ class ResourceEditsImages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.images.deleteall
     * @desc Deletes all images for the specified language and image type.
@@ -79,6 +82,7 @@ class ResourceEditsImages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaImagesDeleteAllResponse]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.images.list
     * @desc Lists all images for the specified language and image type.
@@ -110,6 +114,7 @@ class ResourceEditsImages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaImagesListResponse]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.images.upload
     * @desc Uploads a new image and adds it to the list of images for the
@@ -149,4 +154,3 @@ class ResourceEditsImages protected () extends js.Object {
     callback: BodyResponseCallback[SchemaImagesUploadResponse]
   ): Unit = js.native
 }
-

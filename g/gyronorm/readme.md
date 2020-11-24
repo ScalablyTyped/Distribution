@@ -11,8 +11,8 @@ Accesses the gyroscope and accelerometer data from the web browser and combines 
 | Full name          | gyronorm |
 | Keywords           | devicemotion, deviceorientation |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 9355 |
+| # dependents       | 5 |
+| # downloads        | 12200 |
 | # stars            | 1 |
 
 ## Links

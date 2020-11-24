@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a collection of groups in a data pilot field.
@@ -23,8 +23,8 @@ trait DataPilotFieldGroups
   extends XNameContainer
      with XIndexAccess
      with XEnumerationAccess
-
 object DataPilotFieldGroups {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -49,4 +49,3 @@ object DataPilotFieldGroups {
     __obj.asInstanceOf[DataPilotFieldGroups]
   }
 }
-

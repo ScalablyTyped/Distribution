@@ -2,7 +2,7 @@ package typings.officeJsPreview.global.Office.MailboxEnums
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies whether an attachment was added to or removed from an item.
@@ -16,9 +16,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Office.MailboxEnums.AttachmentStatus")
 @js.native
 object AttachmentStatus extends js.Object {
-  /* "added" */ val Added: typings.officeJsPreview.Office.MailboxEnums.AttachmentStatus.Added with String = js.native
-  /* "removed" */ val Removed: typings.officeJsPreview.Office.MailboxEnums.AttachmentStatus.Removed with String = js.native
+  
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.Office.MailboxEnums.AttachmentStatus with String] = js.native
+  
+  /* "added" */ val Added: typings.officeJsPreview.Office.MailboxEnums.AttachmentStatus.Added with String = js.native
+  
+  /* "removed" */ val Removed: typings.officeJsPreview.Office.MailboxEnums.AttachmentStatus.Removed with String = js.native
 }
-

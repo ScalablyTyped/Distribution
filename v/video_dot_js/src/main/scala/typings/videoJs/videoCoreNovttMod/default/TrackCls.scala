@@ -3,7 +3,7 @@ package typings.videoJs.videoCoreNovttMod.default
 import typings.videoJs.mod.videojs.TrackOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "Track")
 @js.native
@@ -29,4 +29,3 @@ class TrackCls ()
   extends typings.videoJs.mod.videojs.Track {
   def this(options: TrackOptions) = this()
 }
-

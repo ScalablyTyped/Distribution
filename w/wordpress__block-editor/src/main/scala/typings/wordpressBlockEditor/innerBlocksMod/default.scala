@@ -6,22 +6,25 @@ import typings.wordpressBlockEditor.anon.Children
 import typings.wordpressBlockEditor.innerBlocksMod.InnerBlocks.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/block-editor/components/inner-blocks", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
+  def apply(props: Props): Element = js.native
+  
   /**
     * display a `+` (plus) icon button that, when clicked, displays the block picker menu. No
     * default Block is inserted.
     */
   var ButtonBlockerAppender: ComponentType[Children] = js.native
+  
   var Content: ComponentType[Children] = js.native
+  
   /**
     * display the default block appender as set by `wp.blocks.setDefaultBlockName`. Typically this
     * is the `paragraph` block.
     */
   var DefaultBlockAppender: ComponentType[Children] = js.native
-  def apply(props: Props): Element = js.native
 }
-

@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ace-builds", "VirtualRenderer")
 @js.native
@@ -14,7 +14,6 @@ class VirtualRenderer protected ()
   def this(container: HTMLElement) = this()
   def this(container: HTMLElement, theme: String) = this()
 }
-
 @JSImport("ace-builds", "VirtualRenderer")
 @js.native
 object VirtualRenderer
@@ -24,4 +23,3 @@ object VirtualRenderer
       /* theme */ String, 
       typings.aceBuilds.mod.Ace.VirtualRenderer
     ]
-

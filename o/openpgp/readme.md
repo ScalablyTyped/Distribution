@@ -10,9 +10,9 @@ OpenPGP.js is a Javascript implementation of the OpenPGP protocol. This is defin
 | ------------------ | :-------------: |
 | Full name          | openpgp |
 | Keywords           | crypto, pgp, gpg, openpgp |
-| # releases         | 52 |
-| # dependents       | 85 |
-| # downloads        | 912541 |
+| # releases         | 45 |
+| # dependents       | 103 |
+| # downloads        | 1130926 |
 | # stars            | 12 |
 
 ## Links

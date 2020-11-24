@@ -6,11 +6,12 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3TransactionRequi
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionRequirementsCheckSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/transaction/requirements", JSImport.Namespace)
 @js.native
 object requirementsMod extends js.Object {
+  
   @js.native
   /**
     * @param options The raw {@link GoogleActionsV2TransactionRequirementsCheckSpec}
@@ -31,6 +32,4 @@ object requirementsMod extends js.Object {
     - typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3TransactionRequirementsCheckResult
   */
   trait TransactionRequirementsArgument extends js.Object
-  
 }
-

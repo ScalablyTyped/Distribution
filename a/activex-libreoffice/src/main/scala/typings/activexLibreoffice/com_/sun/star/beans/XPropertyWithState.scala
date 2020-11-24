@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to query information about the state of this object, seen as a property contained in a property set.
@@ -20,20 +20,25 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XPropertyWithState extends XInterface {
+  
   /**
     * @returns an object representing the default state of this object (as a property).  If no default exists, is not known or is void, then the return value is
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
   val DefaultAsProperty: XInterface = js.native
+  
   /** @returns the state of this as a property. */
   val StateAsProperty: PropertyState = js.native
+  
   /**
     * @returns an object representing the default state of this object (as a property).  If no default exists, is not known or is void, then the return value is
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
   def getDefaultAsProperty(): XInterface = js.native
+  
   /** @returns the state of this as a property. */
   def getStateAsProperty(): PropertyState = js.native
+  
   /**
     * sets this to its default value.
     *
@@ -43,8 +48,8 @@ trait XPropertyWithState extends XInterface {
     */
   def setToDefaultAsProperty(): Unit = js.native
 }
-
 object XPropertyWithState {
+  
   @scala.inline
   def apply(
     DefaultAsProperty: XInterface,
@@ -59,28 +64,35 @@ object XPropertyWithState {
     val __obj = js.Dynamic.literal(DefaultAsProperty = DefaultAsProperty.asInstanceOf[js.Any], StateAsProperty = StateAsProperty.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDefaultAsProperty = js.Any.fromFunction0(getDefaultAsProperty), getStateAsProperty = js.Any.fromFunction0(getStateAsProperty), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setToDefaultAsProperty = js.Any.fromFunction0(setToDefaultAsProperty))
     __obj.asInstanceOf[XPropertyWithState]
   }
+  
   @scala.inline
   implicit class XPropertyWithStateOps[Self <: XPropertyWithState] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDefaultAsProperty(value: XInterface): Self = this.set("DefaultAsProperty", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStateAsProperty(value: PropertyState): Self = this.set("StateAsProperty", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetDefaultAsProperty(value: () => XInterface): Self = this.set("getDefaultAsProperty", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetStateAsProperty(value: () => PropertyState): Self = this.set("getStateAsProperty", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setSetToDefaultAsProperty(value: () => Unit): Self = this.set("setToDefaultAsProperty", js.Any.fromFunction0(value))
   }
-  
 }
-

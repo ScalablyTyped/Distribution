@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Shell extends Control {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>logout</code> event of this
     * <code>sap.m.Shell</code>.When called, the context of the event handler (its <code>this</code>) will
@@ -21,11 +22,13 @@ trait Shell extends Control {
     */
   def attachLogout(oData: js.Any, fnFunction: js.Any): Shell = js.native
   def attachLogout(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Shell = js.native
+  
   /**
     * Destroys the app in the aggregation <code>app</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyApp(): Shell = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>logout</code> event of this
     * <code>sap.m.Shell</code>.The passed function and listener object must match the ones used for event
@@ -35,17 +38,20 @@ trait Shell extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachLogout(fnFunction: js.Any, oListener: js.Any): Shell = js.native
+  
   /**
     * Fires event <code>logout</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireLogout(mArguments: js.Any): Shell = js.native
+  
   /**
     * Gets content of aggregation <code>app</code>.A Shell contains an App or a SplitApp (they may be
     * wrapped in a View). Other control types are not allowed.
     */
   def getApp(): Control = js.native
+  
   /**
     * Gets current value of property <code>appWidthLimited</code>.Determines whether the width of the
     * content (the aggregated App) should be limited or extended to the full screen width.Default value is
@@ -53,6 +59,7 @@ trait Shell extends Control {
     * @returns Value of property <code>appWidthLimited</code>
     */
   def getAppWidthLimited(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>backgroundColor</code>.Defines the background color of the
     * Shell. If set, this color will override the default background defined by the theme. This should
@@ -63,6 +70,7 @@ trait Shell extends Control {
     * @returns Value of property <code>backgroundColor</code>
     */
   def getBackgroundColor(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>backgroundImage</code>.Defines the background image of the
     * Shell. If set, this image will override the default background defined by the theme. This should
@@ -73,6 +81,7 @@ trait Shell extends Control {
     * @returns Value of property <code>backgroundImage</code>
     */
   def getBackgroundImage(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>backgroundOpacity</code>.Defines the opacity of the background
     * image. The opacity can be set between 0 (fully transparent) and 1 (fully opaque).This can be used to
@@ -82,6 +91,7 @@ trait Shell extends Control {
     * @returns Value of property <code>backgroundOpacity</code>
     */
   def getBackgroundOpacity(): Double = js.native
+  
   /**
     * Gets current value of property <code>backgroundRepeat</code>.Determines whether the background image
     * (if configured) should be proportionally stretched to cover the whole Shell (false, default) or
@@ -90,6 +100,7 @@ trait Shell extends Control {
     * @returns Value of property <code>backgroundRepeat</code>
     */
   def getBackgroundRepeat(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>headerRightText</code>.Defines texts, such as the name of the
     * logged-in user, which should be displayed on the right side of the header (if there is enough space
@@ -98,6 +109,7 @@ trait Shell extends Control {
     * @returns Value of property <code>headerRightText</code>
     */
   def getHeaderRightText(): String = js.native
+  
   /**
     * Gets current value of property <code>homeIcon</code>.Sets the icon used for the mobile device home
     * screen and the icon to be used for bookmarks by desktop browsers.This property should be only set
@@ -112,12 +124,14 @@ trait Shell extends Control {
     * @returns Value of property <code>homeIcon</code>
     */
   def getHomeIcon(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>logo</code>.Defines the logo to be displayed next to the App
     * when the screen is sufficiently large.
     * @returns Value of property <code>logo</code>
     */
   def getLogo(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>showLogout</code>.Determines whether the Logout button should
     * be displayed. Currently, this only happens on very tall screens (1568px height), otherwise, it is
@@ -125,18 +139,21 @@ trait Shell extends Control {
     * @returns Value of property <code>showLogout</code>
     */
   def getShowLogout(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>title</code>.Defines the application title, which may or may
     * not be displayed outside the actual application, depending on the available screen size.
     * @returns Value of property <code>title</code>
     */
   def getTitle(): String = js.native
+  
   /**
     * Sets the aggregated <code>app</code>.
     * @param oApp The app to set
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setApp(oApp: Control): Shell = js.native
+  
   /**
     * Sets a new value for property <code>appWidthLimited</code>.Determines whether the width of the
     * content (the aggregated App) should be limited or extended to the full screen width.When called with
@@ -146,6 +163,7 @@ trait Shell extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAppWidthLimited(bAppWidthLimited: Boolean): Shell = js.native
+  
   /**
     * Sets a new value for property <code>backgroundColor</code>.Defines the background color of the
     * Shell. If set, this color will override the default background defined by the theme. This should
@@ -158,6 +176,7 @@ trait Shell extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundColor(sBackgroundColor: js.Any): Shell = js.native
+  
   /**
     * Sets a new value for property <code>backgroundImage</code>.Defines the background image of the
     * Shell. If set, this image will override the default background defined by the theme. This should
@@ -170,6 +189,7 @@ trait Shell extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundImage(sBackgroundImage: js.Any): Shell = js.native
+  
   /**
     * Sets a new value for property <code>backgroundOpacity</code>.Defines the opacity of the background
     * image. The opacity can be set between 0 (fully transparent) and 1 (fully opaque).This can be used to
@@ -181,6 +201,7 @@ trait Shell extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundOpacity(fBackgroundOpacity: Double): Shell = js.native
+  
   /**
     * Sets a new value for property <code>backgroundRepeat</code>.Determines whether the background image
     * (if configured) should be proportionally stretched to cover the whole Shell (false, default) or
@@ -192,6 +213,7 @@ trait Shell extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setBackgroundRepeat(bBackgroundRepeat: Boolean): Shell = js.native
+  
   /**
     * Sets a new value for property <code>headerRightText</code>.Defines texts, such as the name of the
     * logged-in user, which should be displayed on the right side of the header (if there is enough space
@@ -202,6 +224,7 @@ trait Shell extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHeaderRightText(sHeaderRightText: String): Shell = js.native
+  
   /**
     * Sets a new value for property <code>homeIcon</code>.Sets the icon used for the mobile device home
     * screen and the icon to be used for bookmarks by desktop browsers.This property should be only set
@@ -218,6 +241,7 @@ trait Shell extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHomeIcon(oHomeIcon: js.Any): Shell = js.native
+  
   /**
     * Sets a new value for property <code>logo</code>.Defines the logo to be displayed next to the App
     * when the screen is sufficiently large.When called with a value of <code>null</code> or
@@ -226,6 +250,7 @@ trait Shell extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setLogo(sLogo: js.Any): Shell = js.native
+  
   /**
     * Sets a new value for property <code>showLogout</code>.Determines whether the Logout button should be
     * displayed. Currently, this only happens on very tall screens (1568px height), otherwise, it is
@@ -235,6 +260,7 @@ trait Shell extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowLogout(bShowLogout: Boolean): Shell = js.native
+  
   /**
     * Sets a new value for property <code>title</code>.Defines the application title, which may or may not
     * be displayed outside the actual application, depending on the available screen size.When called with
@@ -245,4 +271,3 @@ trait Shell extends Control {
     */
   def setTitle(sTitle: String): Shell = js.native
 }
-

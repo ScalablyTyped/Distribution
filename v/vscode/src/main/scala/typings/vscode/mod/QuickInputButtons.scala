@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "QuickInputButtons")
 @js.native
@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
   * @hidden
   */
 class QuickInputButtons protected () extends js.Object
-
 /* static members */
 @JSImport("vscode", "QuickInputButtons")
 @js.native
 object QuickInputButtons extends js.Object {
+  
   /**
     * A back button for [QuickPick](#QuickPick) and [InputBox](#InputBox).
     *
@@ -23,4 +23,3 @@ object QuickInputButtons extends js.Object {
     */
   val Back: QuickInputButton = js.native
 }
-

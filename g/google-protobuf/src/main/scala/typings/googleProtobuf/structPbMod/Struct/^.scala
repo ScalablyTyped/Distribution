@@ -11,17 +11,23 @@ import typings.googleProtobuf.structPbMod.JavaScriptValue
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/struct_pb", "Struct")
 @js.native
 object ^ extends js.Object {
-  var extensions: NumberDictionary[ExtensionFieldInfo[Message]] = js.native
-  var extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
+  
   def deserializeBinary(bytes: Uint8Array): typings.googleProtobuf.structPbMod.Struct = js.native
+  
   def deserializeBinaryFromReader(message: typings.googleProtobuf.structPbMod.Struct, reader: BinaryReader): typings.googleProtobuf.structPbMod.Struct = js.native
+  
+  var extensions: NumberDictionary[ExtensionFieldInfo[Message]] = js.native
+  
+  var extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
+  
   def fromJavaScript(value: StringDictionary[JavaScriptValue]): typings.googleProtobuf.structPbMod.Struct = js.native
+  
   def serializeBinaryToWriter(message: typings.googleProtobuf.structPbMod.Struct, writer: BinaryWriter): Unit = js.native
+  
   def toObject(includeInstance: Boolean, msg: typings.googleProtobuf.structPbMod.Struct): AsObject = js.native
 }
-

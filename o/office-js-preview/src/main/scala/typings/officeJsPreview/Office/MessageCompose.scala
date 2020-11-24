@@ -4,7 +4,7 @@ import typings.officeJsPreview.Office.MailboxEnums.ItemType
 import typings.officeJsPreview.anon.AsyncContextOptionsisInli
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The message compose mode of {@link Office.Item | Office.context.mailbox.item}.
@@ -21,199 +21,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MessageCompose extends Item {
-  /**
-    * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.
-    *
-    * By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows, and Mac,
-    * the following limits apply.
-    *
-    * - Get 500 members maximum.
-    *
-    * - Set a maximum of 100 members per call, up to 500 members total.
-    *
-    * [Api set: Mailbox 1.1]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-    */
-  var bcc: Recipients = js.native
-  /**
-    * Gets an object that provides methods for manipulating the body of an item.
-    *
-    * [Api set: Mailbox 1.1]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-    */
-  var body: Body = js.native
-  /**
-    * Gets an object that provides methods for managing the item's categories.
-    *
-    * **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Compose mode.
-    *
-    * [Api set: Mailbox 1.8]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-    */
-  var categories: Categories = js.native
-  /**
-    * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the
-    * current item.
-    *
-    * The `cc` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the
-    * **Cc** line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows,
-    * and Mac, the following limits apply.
-    *
-    * - Get 500 members maximum.
-    *
-    * - Set a maximum of 100 members per call, up to 500 members total.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-    */
-  var cc: Recipients = js.native
-  /**
-    * Gets an identifier for the email conversation that contains a particular message.
-    *
-    * You can get an integer for this property if your mail app is activated in read forms or responses in compose forms.
-    * If subsequently the user changes the subject of the reply message, upon sending the reply, the conversation ID for that message will change
-    * and that value you obtained earlier will no longer apply.
-    *
-    * You get null for this property for a new item in a compose form.
-    * If the user sets a subject and saves the item, the `conversationId` property will return a value.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-    */
-  var conversationId: String = js.native
-  /**
-    * Gets the email address of the sender of a message.
-    *
-    * The `from` and `sender` properties represent the same person unless the message is sent by a delegate.
-    * In that case, the `from` property represents the owner, and the `sender` property represents the delegate.
-    *
-    * The `from` property returns a `From` object that provides a method to get the from value.
-    *
-    * [Api set: Mailbox 1.7]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-    */
-  var from: From = js.native
-  /**
-    * Gets or sets the custom internet headers of a message.
-    *
-    * The `internetHeaders` property returns an `InternetHeaders` object that provides methods to manage the internet headers on the message.
-    *
-    * [Api set: Mailbox 1.8]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-    */
-  var internetHeaders: InternetHeaders = js.native
-  /**
-    * Gets the type of item that an instance represents.
-    *
-    * The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the item object instance is a message or
-    * an appointment.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-    */
-  var itemType: ItemType | String = js.native
-  /**
-    * Gets the notification messages for an item.
-    *
-    * [Api set: Mailbox 1.3]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-    */
-  var notificationMessages: NotificationMessages = js.native
-  /**
-    * Gets the ID of the series that an instance belongs to.
-    *
-    * In Outlook on the web and desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item
-    * that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the parent item.
-    *
-    * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
-    * The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API.
-    * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
-    * For more details, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
-    *
-    * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests
-    * and returns `undefined` for any other items that are not meeting requests.
-    *
-    * [Api set: Mailbox 1.7]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-    */
-  var seriesId: String = js.native
-  /**
-    * Gets or sets the description that appears in the subject field of an item.
-    *
-    * The `subject` property gets or sets the entire subject of the item, as sent by the email server.
-    *
-    * The `subject` property returns a `Subject` object that provides methods to get and set the subject.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-    */
-  var subject: Subject = js.native
-  /**
-    * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the
-    * current item.
-    *
-    * The `to` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the
-    * **To** line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows,
-    * and Mac, the following limits apply.
-    *
-    * - Get 500 members maximum.
-    *
-    * - Set a maximum of 100 members per call, up to 500 members total.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-    */
-  var to: Recipients = js.native
+  
   /**
     * Adds a file to a message or appointment as an attachment.
     *
@@ -256,11 +64,6 @@ trait MessageCompose extends Item {
   def addFileAttachmentAsync(
     uri: String,
     attachmentName: String,
-    callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
-  ): Unit = js.native
-  def addFileAttachmentAsync(
-    uri: String,
-    attachmentName: String,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
@@ -271,6 +74,7 @@ trait MessageCompose extends Item {
     options: AsyncContextOptionsisInli,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
+  
   /**
     * Adds a file to a message or appointment as an attachment.
     *
@@ -311,11 +115,6 @@ trait MessageCompose extends Item {
   def addFileAttachmentFromBase64Async(
     base64File: String,
     attachmentName: String,
-    callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
-  ): Unit = js.native
-  def addFileAttachmentFromBase64Async(
-    base64File: String,
-    attachmentName: String,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
@@ -326,12 +125,8 @@ trait MessageCompose extends Item {
     options: AsyncContextOptionsisInli,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
+  
   def addHandlerAsync(eventType: String, handler: js.Any): Unit = js.native
-  def addHandlerAsync(
-    eventType: String,
-    handler: js.Any,
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
   def addHandlerAsync(
     eventType: String,
     handler: js.Any,
@@ -370,11 +165,6 @@ trait MessageCompose extends Item {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Any,
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
-  def addHandlerAsync(
-    eventType: EventType,
-    handler: js.Any,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
@@ -385,6 +175,7 @@ trait MessageCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
     *
@@ -423,11 +214,6 @@ trait MessageCompose extends Item {
   def addItemAttachmentAsync(
     itemId: js.Any,
     attachmentName: String,
-    callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
-  ): Unit = js.native
-  def addItemAttachmentAsync(
-    itemId: js.Any,
-    attachmentName: String,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
@@ -438,6 +224,68 @@ trait MessageCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
+  
+  /**
+    * Gets an object that provides methods to get or update the recipients on the **Bcc** (blind carbon copy) line of a message.
+    *
+    * Depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many recipients you can get or update.
+    * See the {@link Office.Recipients | Recipients} object for more details.
+    *
+    * [Api set: Mailbox 1.1]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    */
+  var bcc: Recipients = js.native
+  
+  /**
+    * Gets an object that provides methods for manipulating the body of an item.
+    *
+    * [Api set: Mailbox 1.1]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    */
+  var body: Body = js.native
+  
+  /**
+    * Gets an object that provides methods for managing the item's categories.
+    *
+    * **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Compose mode.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    */
+  var categories: Categories = js.native
+  
+  /**
+    * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depend on the mode of the
+    * current item.
+    *
+    *
+    * The `cc` property returns a `Recipients` object that provides methods to get or update the recipients on the
+    * **Cc** line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many recipients
+    * you can get or update. See the {@link Office.Recipients | Recipients} object for more details.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    */
+  var cc: Recipients = js.native
+  
   /**
     * Closes the current item that is being composed
     *
@@ -458,6 +306,25 @@ trait MessageCompose extends Item {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
     */
   def close(): Unit = js.native
+  
+  /**
+    * Gets an identifier for the email conversation that contains a particular message.
+    *
+    * You can get an integer for this property if your mail app is activated in read forms or responses in compose forms.
+    * If subsequently the user changes the subject of the reply message, upon sending the reply, the conversation ID for that message will change
+    * and that value you obtained earlier will no longer apply.
+    *
+    * You get null for this property for a new item in a compose form.
+    * If the user sets a subject and saves the item, the `conversationId` property will return a value.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    */
+  var conversationId: String = js.native
+  
   /**
     * Disables the Outlook client signature.
     *
@@ -482,13 +349,28 @@ trait MessageCompose extends Item {
     * @beta
     */
   def disableClientSignatureAsync(): Unit = js.native
-  def disableClientSignatureAsync(callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def disableClientSignatureAsync(
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def disableClientSignatureAsync(options: AsyncContextOptions): Unit = js.native
   def disableClientSignatureAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  
+  /**
+    * Gets the email address of the sender of a message.
+    *
+    * The `from` property returns a `From` object that provides a method to get the from value.
+    *
+    * [Api set: Mailbox 1.7]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    */
+  var from: From = js.native
+  
   /**
     * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
     *
@@ -523,10 +405,6 @@ trait MessageCompose extends Item {
   def getAttachmentContentAsync(attachmentId: String): Unit = js.native
   def getAttachmentContentAsync(
     attachmentId: String,
-    callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
-  ): Unit = js.native
-  def getAttachmentContentAsync(
-    attachmentId: String,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
   ): Unit = js.native
@@ -536,6 +414,7 @@ trait MessageCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
   ): Unit = js.native
+  
   /**
     * Gets the item's attachments as an array.
     *
@@ -554,7 +433,6 @@ trait MessageCompose extends Item {
     *                 the failure.
     */
   def getAttachmentsAsync(): Unit = js.native
-  def getAttachmentsAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetailsCompose]], Unit]): Unit = js.native
   def getAttachmentsAsync(
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetailsCompose]], Unit]
@@ -564,6 +442,7 @@ trait MessageCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetailsCompose]], Unit]
   ): Unit = js.native
+  
   /**
     * Specifies the type of message compose and its coercion type. The message can be new, or a reply or forward.
     * The coercion type can be HTML or plain text.
@@ -610,6 +489,7 @@ trait MessageCompose extends Item {
     * @beta
     */
   def getComposeTypeAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[_], Unit]): Unit = js.native
+  
   /**
     * Gets initialization data passed when the add-in is activated by an actionable message.
     *
@@ -636,13 +516,13 @@ trait MessageCompose extends Item {
     * @beta
     */
   def getInitializationContextAsync(): Unit = js.native
-  def getInitializationContextAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   def getInitializationContextAsync(
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
   def getInitializationContextAsync(options: AsyncContextOptions): Unit = js.native
   def getInitializationContextAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  
   /**
     * Asynchronously gets the ID of a saved item.
     *
@@ -695,6 +575,7 @@ trait MessageCompose extends Item {
     *                   of type `Office.AsyncResult`.
     */
   def getItemIdAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  
   def getSelectedDataAsync(coercionType: String, callback: js.Function1[/* asyncResult */ AsyncResult[_], Unit]): Unit = js.native
   def getSelectedDataAsync(
     coercionType: String,
@@ -759,10 +640,22 @@ trait MessageCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[_], Unit]
   ): Unit = js.native
+  
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
     *
-    * **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
+    * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or Windows unless the following conditions are met.
+    *
+    * 1. The owner shares at least one mailbox folder with the delegate.
+    *
+    * 2. The delegate drafts a message in the shared folder.
+    *
+    * After the message has been sent, it's usually found in the delegate's **Sent Items** folder.
+    *
+    * For more information around using this API, see the
+    * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.8]
     *
@@ -779,7 +672,18 @@ trait MessageCompose extends Item {
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
     *
-    * **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
+    * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or Windows unless the following conditions are met.
+    *
+    * 1. The owner shares at least one mailbox folder with the delegate.
+    *
+    * 2. The delegate drafts a message in the shared folder.
+    *
+    * After the message has been sent, it's usually found in the delegate's **Sent Items** folder.
+    *
+    * For more information around using this API, see the
+    * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.8]
     *
@@ -798,6 +702,22 @@ trait MessageCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[SharedProperties], Unit]
   ): Unit = js.native
+  
+  /**
+    * Gets or sets the custom internet headers of a message.
+    *
+    * The `internetHeaders` property returns an `InternetHeaders` object that provides methods to manage the internet headers on the message.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    */
+  var internetHeaders: InternetHeaders = js.native
+  
   /**
     * Gets if the client signature is enabled.
     *
@@ -844,6 +764,21 @@ trait MessageCompose extends Item {
     * @beta
     */
   def isClientSignatureEnabledAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[Boolean], Unit]): Unit = js.native
+  
+  /**
+    * Gets the type of item that an instance represents.
+    *
+    * The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the item object instance is a message or
+    * an appointment.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    */
+  var itemType: ItemType | String = js.native
+  
   /**
     * Asynchronously loads custom properties for this add-in on the selected item.
     *
@@ -868,6 +803,20 @@ trait MessageCompose extends Item {
     */
   def loadCustomPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], Unit]): Unit = js.native
   def loadCustomPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], Unit], userContext: js.Any): Unit = js.native
+  
+  /**
+    * Gets the notification messages for an item.
+    *
+    * [Api set: Mailbox 1.3]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    */
+  var notificationMessages: NotificationMessages = js.native
+  
   /**
     * Removes an attachment from a message or appointment.
     *
@@ -897,7 +846,6 @@ trait MessageCompose extends Item {
     *                 with the reason for the failure.
     */
   def removeAttachmentAsync(attachmentId: String): Unit = js.native
-  def removeAttachmentAsync(attachmentId: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def removeAttachmentAsync(
     attachmentId: String,
     options: js.UndefOr[scala.Nothing],
@@ -909,8 +857,8 @@ trait MessageCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   def removeHandlerAsync(eventType: String): Unit = js.native
-  def removeHandlerAsync(eventType: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def removeHandlerAsync(
     eventType: String,
     options: js.UndefOr[scala.Nothing],
@@ -942,7 +890,6 @@ trait MessageCompose extends Item {
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def removeHandlerAsync(eventType: EventType): Unit = js.native
-  def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
     options: js.UndefOr[scala.Nothing],
@@ -954,6 +901,7 @@ trait MessageCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Asynchronously saves an item.
     *
@@ -1018,6 +966,46 @@ trait MessageCompose extends Item {
     *                 type `Office.AsyncResult`.
     */
   def saveAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  
+  /**
+    * Gets the ID of the series that an instance belongs to.
+    *
+    * In Outlook on the web and desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item
+    * that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the parent item.
+    *
+    * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
+    * The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API.
+    * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
+    * For more details, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
+    *
+    * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests
+    * and returns `undefined` for any other items that are not meeting requests.
+    *
+    * [Api set: Mailbox 1.7]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    */
+  var seriesId: String = js.native
+  
+  /**
+    * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    *
+    * @beta
+    */
+  var sessionData: SessionData = js.native
+  
   /**
     * Asynchronously inserts data into the body or subject of a message.
     *
@@ -1051,7 +1039,6 @@ trait MessageCompose extends Item {
     *                 type `Office.AsyncResult`.
     */
   def setSelectedDataAsync(data: String): Unit = js.native
-  def setSelectedDataAsync(data: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def setSelectedDataAsync(data: String, options: AsyncContextOptions with CoercionTypeOptions): Unit = js.native
   def setSelectedDataAsync(
     data: String,
@@ -1063,5 +1050,35 @@ trait MessageCompose extends Item {
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
+  /**
+    * Gets or sets the description that appears in the subject field of an item.
+    *
+    * The `subject` property gets or sets the entire subject of the item, as sent by the email server.
+    *
+    * The `subject` property returns a `Subject` object that provides methods to get and set the subject.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    */
+  var subject: Subject = js.native
+  
+  /**
+    * Provides access to the recipients on the **To** line of a message. The type of object and level of access depend on the mode of the
+    * current item.
+    *
+    * The `to` property returns a `Recipients` object that provides methods to get or update the recipients on the
+    * **To** line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many recipients
+    * you can get or update. See the {@link Office.Recipients | Recipients} object for more details.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    */
+  var to: Recipients = js.native
 }
-

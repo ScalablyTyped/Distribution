@@ -6,7 +6,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the pages for which a page layout is valid. */
 /* Rewritten from type alias, can be one of: 
@@ -16,11 +16,12 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait PageStyleLayout extends js.Object
-
 object PageStyleLayout {
+  
   /** The page style is identically used for left and right pages. */
   @scala.inline
   def ALL: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * set the horizontal alignment to the left margin from the container object
     *
@@ -32,9 +33,11 @@ object PageStyleLayout {
     */
   @scala.inline
   def LEFT: `1` = 1.asInstanceOf[`1`]
+  
   /** The page style is used unchanged for left pages and mirrored for right pages. */
   @scala.inline
   def MIRRORED: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * set the horizontal alignment to the right margin from the container object
     *
@@ -47,4 +50,3 @@ object PageStyleLayout {
   @scala.inline
   def RIGHT: `2` = 2.asInstanceOf[`2`]
 }
-

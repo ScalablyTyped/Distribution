@@ -10,9 +10,9 @@ PostCSS gulp plugin
 | ------------------ | :-------------: |
 | Full name          | gulp-postcss |
 | Keywords           | gulpplugin, postcss, postcss-runner, css |
-| # releases         | 2 |
-| # dependents       | 515 |
-| # downloads        | 6128461 |
+| # releases         | 0 |
+| # dependents       | 576 |
+| # downloads        | 7135848 |
 | # stars            | 77 |
 
 ## Links

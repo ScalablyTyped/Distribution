@@ -10,9 +10,9 @@ koa compression middleware
 | ------------------ | :-------------: |
 | Full name          | kompression |
 | Keywords           | koa, compression, middleware, brotli, gzip, inflate |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 8928 |
+| # downloads        | 14736 |
 | # stars            | 1 |
 
 ## Links

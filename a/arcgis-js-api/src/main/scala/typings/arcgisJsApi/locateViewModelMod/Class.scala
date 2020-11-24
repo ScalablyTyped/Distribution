@@ -4,7 +4,7 @@ import typings.arcgisJsApi.esri.LocateViewModel
 import typings.arcgisJsApi.esri.LocateViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/widgets/Locate/LocateViewModel", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 class Class () extends LocateViewModel {
   def this(properties: LocateViewModelProperties) = this()
 }
-

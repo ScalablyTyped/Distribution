@@ -10,7 +10,7 @@ import typings.angularRouter.mod.ChildrenOutletContexts
 import typings.angularRouter.mod.Router
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular", "IonRouterOutlet")
 @js.native
@@ -46,4 +46,3 @@ class IonRouterOutlet protected ()
     parentOutlet: typings.ionicAngular.ionRouterOutletMod.IonRouterOutlet
   ) = this()
 }
-

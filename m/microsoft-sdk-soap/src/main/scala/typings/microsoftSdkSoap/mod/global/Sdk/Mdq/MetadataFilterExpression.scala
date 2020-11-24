@@ -2,12 +2,13 @@ package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Mdq.MetadataFilterExpression")
 @js.native
 class MetadataFilterExpression protected () extends js.Object {
   def this(filterOperator: LogicalOperator) = this()
+  
   def addCondition(propertyName: SearchableAttributeMetadataProperties, conditionOperator: MetadataConditionOperator): Unit = js.native
   def addCondition(
     propertyName: SearchableAttributeMetadataProperties,
@@ -36,4 +37,3 @@ class MetadataFilterExpression protected () extends js.Object {
     value: js.Object
   ): Unit = js.native
 }
-

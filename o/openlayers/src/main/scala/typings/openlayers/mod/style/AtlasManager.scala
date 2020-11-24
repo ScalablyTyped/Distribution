@@ -3,7 +3,7 @@ package typings.openlayers.mod.style
 import typings.openlayers.mod.olx.style.AtlasManagerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Manages the creation of image atlases.
@@ -43,4 +43,3 @@ import scala.scalajs.js.annotation._
 class AtlasManager () extends js.Object {
   def this(opt_options: AtlasManagerOptions) = this()
 }
-

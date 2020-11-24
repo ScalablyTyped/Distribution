@@ -2,11 +2,12 @@ package typings.stackMapper.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stack-mapper", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Returns a Stackmapper that will use the given source map to map error trace locations.
     *
@@ -17,4 +18,3 @@ object ^ extends js.Object {
     */
   def apply(sourcemap: js.Any): StackMapper = js.native
 }
-

@@ -7,7 +7,7 @@ import typings.std.HTMLElement
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("raphael", JSImport.Default)
 @js.native
@@ -62,8 +62,6 @@ class default () extends RaphaelPaper[SVG | VML] {
     callback: js.ThisFunction0[/* this */ RaphaelPaper[SVG | VML], Unit]
   ) = this()
 }
-
 @JSImport("raphael", JSImport.Default)
 @js.native
 object default extends TopLevel[RaphaelStatic[SVG | VML]]
-

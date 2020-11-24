@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait NodeMaterialBlockTargets extends js.Object
-
 @JSGlobal("BABYLON.NodeMaterialBlockTargets")
 @js.native
 object NodeMaterialBlockTargets extends js.Object {
+  
   /** Fragment shader */
   @js.native
   sealed trait Fragment extends NodeMaterialBlockTargets
@@ -25,6 +25,4 @@ object NodeMaterialBlockTargets extends js.Object {
   /** Vertex and Fragment */
   @js.native
   sealed trait VertexAndFragment extends NodeMaterialBlockTargets
-  
 }
-

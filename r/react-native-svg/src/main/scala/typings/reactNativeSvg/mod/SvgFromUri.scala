@@ -5,7 +5,7 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-svg", "SvgFromUri")
 @js.native
@@ -14,8 +14,6 @@ class SvgFromUri protected ()
   def this(props: UriProps) = this()
   def this(props: UriProps, context: js.Any) = this()
 }
-
 @JSImport("react-native-svg", "SvgFromUri")
 @js.native
 object SvgFromUri extends TopLevel[ComponentClass[UriProps, UriState]]
-

@@ -10,9 +10,9 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "Drop")
+@JSImport("grommet", "Drop")
 @js.native
 class Drop protected ()
   extends Component[
@@ -26,8 +26,7 @@ class Drop protected ()
     context: js.Any
   ) = this()
 }
-
-@JSImport("grommet/es6", "Drop")
+@JSImport("grommet", "Drop")
 @js.native
 object Drop extends TopLevel[
       ComponentClass[
@@ -35,4 +34,3 @@ object Drop extends TopLevel[
         ComponentState
       ]
     ]
-

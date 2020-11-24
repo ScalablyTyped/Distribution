@@ -4,7 +4,7 @@ import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.Injector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular", "TextValueAccessor")
 @js.native
@@ -12,4 +12,3 @@ class TextValueAccessor protected ()
   extends typings.ionicAngular.textValueAccessorMod.TextValueAccessor {
   def this(injector: Injector, el: ElementRef[_]) = this()
 }
-

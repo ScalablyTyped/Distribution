@@ -7,13 +7,13 @@ import typings.rmcPicker.pickerMixinMod.IItemProps
 import typings.rmcPicker.pickerTypesMod.IPickerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Item
   extends Instantiable0[ComponentDidUpdate]
      with Instantiable1[/* props */ IPickerProps, ComponentDidUpdate]
      with Instantiable2[js.UndefOr[/* props */ IPickerProps], /* context */ js.Any, ComponentDidUpdate] {
+  
   def Item(_props: IItemProps): js.Any = js.native
 }
-

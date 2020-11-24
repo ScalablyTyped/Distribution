@@ -5,33 +5,29 @@ import typings.awsSdkClientKmsBrowser.kmsconfigurationMod.KMSResolvedConfigurati
 import typings.awsSdkClientKmsBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientKmsBrowser.typesDisableKeyRotationInputMod.DisableKeyRotationInput
 import typings.awsSdkClientKmsBrowser.typesDisableKeyRotationOutputMod.DisableKeyRotationOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kms-browser/commands/DisableKeyRotationCommand", JSImport.Namespace)
 @js.native
 object disableKeyRotationCommandMod extends js.Object {
+  
   @js.native
   class DisableKeyRotationCommand protected () extends Command[
           InputTypesUnion, 
           DisableKeyRotationInput, 
           OutputTypesUnion, 
           DisableKeyRotationOutput, 
-          KMSResolvedConfiguration, 
-          Blob
+          KMSResolvedConfiguration
         ] {
     def this(input: DisableKeyRotationInput) = this()
-    val middlewareStack: MiddlewareStack[DisableKeyRotationInput, DisableKeyRotationOutput, Blob] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: KMSResolvedConfiguration
     ): Handler[DisableKeyRotationInput, DisableKeyRotationOutput] = js.native
   }
-  
 }
-

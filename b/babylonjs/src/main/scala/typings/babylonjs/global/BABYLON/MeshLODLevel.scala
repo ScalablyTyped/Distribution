@@ -3,7 +3,7 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.MeshLODLevel")
 @js.native
@@ -20,11 +20,4 @@ class MeshLODLevel protected ()
     /** Defines the mesh to use to render this level */
   mesh: Nullable[typings.babylonjs.BABYLON.Mesh]
   ) = this()
-  /** Defines the distance where this level should start being displayed */
-  /* CompleteClass */
-  override var distance: Double = js.native
-  /** Defines the mesh to use to render this level */
-  /* CompleteClass */
-  override var mesh: Nullable[typings.babylonjs.BABYLON.Mesh] = js.native
 }
-

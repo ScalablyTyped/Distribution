@@ -10,36 +10,41 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.projectiondisplayavailablechanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines a set of methods for managing the windows (app views) sent to secondary displays, such as projectors. */
 @JSGlobal("Windows.UI.ViewManagement.ProjectionManager")
 @js.native
 abstract class ProjectionManager ()
   extends typings.winrtUwp.Windows.UI.ViewManagement.ProjectionManager
-
 /* static members */
 @JSGlobal("Windows.UI.ViewManagement.ProjectionManager")
 @js.native
 object ProjectionManager extends js.Object {
-  /** Occurs when a projector or other secondary display becomes available or unavailable. */
-  @JSName("onprojectiondisplayavailablechanged")
-  var onprojectiondisplayavailablechanged_Original: EventHandler[_] = js.native
-  /** Gets whether or not a projection display is available to use. */
-  var projectionDisplayAvailable: Boolean = js.native
+  
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_projectiondisplayavailablechanged(`type`: projectiondisplayavailablechanged, listener: EventHandler[_]): Unit = js.native
+  
   /**
     * Returns a string that is used to enumerate device services.
     * @return A string that is used to enumerate device services.
     */
   def getDeviceSelector(): String = js.native
+  
   /** Occurs when a projector or other secondary display becomes available or unavailable. */
   def onprojectiondisplayavailablechanged(ev: js.Any with WinRTEvent[_]): Unit = js.native
+  /** Occurs when a projector or other secondary display becomes available or unavailable. */
+  @JSName("onprojectiondisplayavailablechanged")
+  var onprojectiondisplayavailablechanged_Original: EventHandler[_] = js.native
+  
+  /** Gets whether or not a projection display is available to use. */
+  var projectionDisplayAvailable: Boolean = js.native
+  
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_projectiondisplayavailablechanged(`type`: projectiondisplayavailablechanged, listener: EventHandler[_]): Unit = js.native
+  
   /**
     * Makes a request to asynchronously sends a window (app view) to the projector or other secondary display.
     * @param projectionViewId The new ID of the window to be displayed by the projector or other secondary display.
@@ -57,6 +62,7 @@ object ProjectionManager extends js.Object {
     * @return true if projection started; otherwise, false.
     */
   def requestStartProjectingAsync(projectionViewId: Double, anchorViewId: Double, selection: Rect, prefferedPlacement: Placement): IPromiseWithIAsyncOperation[Boolean] = js.native
+  
   /**
     * Asynchronously sends a window (app view) to the projector or other secondary display.
     * @param projectionViewId The new ID of the window to be displayed by the projector or other secondary display.
@@ -72,6 +78,7 @@ object ProjectionManager extends js.Object {
     * @return The asynchronous results of the operation. Use this to determine when the async call is complete.
     */
   def startProjectingAsync(projectionViewId: Double, anchorViewId: Double, displayDeviceInfo: DeviceInformation): IPromiseWithIAsyncAction = js.native
+  
   /**
     * Asynchronously hides a window (app view) displayed by a projector or other secondary display.
     * @param projectionViewId The ID of the window currently displayed by the projector or other secondary display.
@@ -79,6 +86,7 @@ object ProjectionManager extends js.Object {
     * @return The asynchronous results of the operation. Use this to determine when the async call is complete.
     */
   def stopProjectingAsync(projectionViewId: Double, anchorViewId: Double): IPromiseWithIAsyncAction = js.native
+  
   /**
     * Asynchronously swaps the calling window (app view) with the window displayed on the projector or other secondary display. The result is that the calling window is displayed on the projector, and the formerly projected window is displayed on the device screen.
     * @param projectionViewId The ID of the window currently displayed by the projector.
@@ -87,4 +95,3 @@ object ProjectionManager extends js.Object {
     */
   def swapDisplaysForViewsAsync(projectionViewId: Double, anchorViewId: Double): IPromiseWithIAsyncAction = js.native
 }
-

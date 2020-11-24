@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Placementgroups")
 @js.native
 class ResourcePlacementgroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.placementGroups.get
     * @desc Gets one placement group by ID.
@@ -42,6 +44,7 @@ class ResourcePlacementgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlacementGroup]
   ): Unit = js.native
+  
   /**
     * dfareporting.placementGroups.insert
     * @desc Inserts a new placement group.
@@ -71,6 +74,7 @@ class ResourcePlacementgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlacementGroup]
   ): Unit = js.native
+  
   /**
     * dfareporting.placementGroups.list
     * @desc Retrieves a list of placement groups, possibly filtered. This
@@ -122,6 +126,7 @@ class ResourcePlacementgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlacementGroupsListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.placementGroups.patch
     * @desc Updates an existing placement group. This method supports patch
@@ -153,6 +158,7 @@ class ResourcePlacementgroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlacementGroup]
   ): Unit = js.native
+  
   /**
     * dfareporting.placementGroups.update
     * @desc Updates an existing placement group.
@@ -183,4 +189,3 @@ class ResourcePlacementgroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPlacementGroup]
   ): Unit = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OnTypeFormattingEditProvider extends js.Object {
+  
   /**
     * Provide formatting edits after a character has been typed.
     *
@@ -29,8 +30,8 @@ trait OnTypeFormattingEditProvider extends js.Object {
     token: CancellationToken
   ): ProviderResult[js.Array[TextEdit]] = js.native
 }
-
 object OnTypeFormattingEditProvider {
+  
   @scala.inline
   def apply(
     provideOnTypeFormattingEdits: (TextDocument, Position, String, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
@@ -38,22 +39,25 @@ object OnTypeFormattingEditProvider {
     val __obj = js.Dynamic.literal(provideOnTypeFormattingEdits = js.Any.fromFunction5(provideOnTypeFormattingEdits))
     __obj.asInstanceOf[OnTypeFormattingEditProvider]
   }
+  
   @scala.inline
   implicit class OnTypeFormattingEditProviderOps[Self <: OnTypeFormattingEditProvider] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setProvideOnTypeFormattingEdits(
       value: (TextDocument, Position, String, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
     ): Self = this.set("provideOnTypeFormattingEdits", js.Any.fromFunction5(value))
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.`3dBinPacking`.bws.packer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A group of {@link Wrapper Wrappers} with same type.
@@ -11,16 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait WrapperGroup extends WrapperArray {
-  /**
-    * Allocated instances.
-    */
-  var allocatedInstanceArray: InstanceArray = js.native
-  /**
-    * <p> A sample, standard of the WrapperGroup. </p>
-    *
-    * <p> The sample represents what type of Wrappers are grouped into the WrapperGroup. </p>
-    */
-  var sample: Wrapper = js.native
+  
   /**
     * <p> Allocate instance(s) to the WrapperGroup. </p>
     *
@@ -43,18 +34,27 @@ trait WrapperGroup extends WrapperArray {
     */
   def allocate(instance: Instance): Boolean = js.native
   def allocate(instance: Instance, n: Double): Boolean = js.native
+  
+  /**
+    * Allocated instances.
+    */
+  var allocatedInstanceArray: InstanceArray = js.native
+  
   /**
     * Get allocated instances.
     */
   def getAllocatedInstanceArray(): InstanceArray = js.native
+  
   /**
     * Get sample.
     */
   def getSample(): Wrapper = js.native
+  
   /**
     * Key of a WrapperGroup is dependent on its sample.
     */
   def key(): js.Any = js.native
+  
   /**
     * <p> Run optimization in level of the group. </p>
     *
@@ -71,6 +71,7 @@ trait WrapperGroup extends WrapperArray {
     * in the {@link WrapperGroup} will be substituted with the newly optimized {@link Wrapper} objects. </p>
     */
   def optimize(): Unit = js.native
+  
   /**
     * <p> Wrap allocated instances into <b>a new</b> {@link Wrapper}. </p>
     *
@@ -84,5 +85,11 @@ trait WrapperGroup extends WrapperArray {
     * @see boxologic
     */
   /* private */ def pack(instanceArray: js.Any): js.Any = js.native
+  
+  /**
+    * <p> A sample, standard of the WrapperGroup. </p>
+    *
+    * <p> The sample represents what type of Wrappers are grouped into the WrapperGroup. </p>
+    */
+  var sample: Wrapper = js.native
 }
-

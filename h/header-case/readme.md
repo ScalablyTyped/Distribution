@@ -11,8 +11,8 @@ Transform into a dash separated string of capitalized words
 | Full name          | header-case |
 | Keywords           | header, case, dash, hyphen, capitalize, convert, transform |
 | # releases         | 5 |
-| # dependents       | 8 |
-| # downloads        | 34656328 |
+| # dependents       | 9 |
+| # downloads        | 55047619 |
 | # stars            | 0 |
 
 ## Links

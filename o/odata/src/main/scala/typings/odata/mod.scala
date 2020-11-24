@@ -6,11 +6,19 @@ import typings.std.RequestInit
 import typings.std.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("odata", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def o(rootUrl: String): typings.odata.ohandlerMod.OHandler = js.native
+  def o(rootUrl: String, config: js.Any): typings.odata.ohandlerMod.OHandler = js.native
+  def o(rootUrl: String, config: OdataConfig): typings.odata.ohandlerMod.OHandler = js.native
+  def o(rootUrl: URL): typings.odata.ohandlerMod.OHandler = js.native
+  def o(rootUrl: URL, config: js.Any): typings.odata.ohandlerMod.OHandler = js.native
+  def o(rootUrl: URL, config: OdataConfig): typings.odata.ohandlerMod.OHandler = js.native
+  
   @js.native
   class OBatch protected ()
     extends typings.odata.obatchMod.OBatch {
@@ -42,12 +50,4 @@ object mod extends js.Object {
     def this(url: String, config: RequestInit) = this()
     def this(url: URL, config: RequestInit) = this()
   }
-  
-  def o(rootUrl: String): typings.odata.ohandlerMod.OHandler = js.native
-  def o(rootUrl: String, config: js.Any): typings.odata.ohandlerMod.OHandler = js.native
-  def o(rootUrl: String, config: OdataConfig): typings.odata.ohandlerMod.OHandler = js.native
-  def o(rootUrl: URL): typings.odata.ohandlerMod.OHandler = js.native
-  def o(rootUrl: URL, config: js.Any): typings.odata.ohandlerMod.OHandler = js.native
-  def o(rootUrl: URL, config: OdataConfig): typings.odata.ohandlerMod.OHandler = js.native
 }
-

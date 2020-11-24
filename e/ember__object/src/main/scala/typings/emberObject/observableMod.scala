@@ -8,21 +8,26 @@ import typings.emberObject.typesMod.UnwrapComputedPropertySetters
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ember/object/observable", JSImport.Namespace)
 @js.native
 object observableMod extends js.Object {
+  
+  val default: typings.emberObject.mixinMod.default[Observable, typings.emberObject.coreMod.default] = js.native
+  
   /**
     * This mixin provides properties and property observing functionality, core features of the Ember object model.
     */
   @js.native
   trait Observable extends js.Object {
+    
     def addObserver(key: /* keyof this */ String, method: ObserverMethod[this.type, this.type]): this.type = js.native
     /**
       * Adds an observer on a property.
       */
     def addObserver[Target](key: /* keyof this */ String, target: Target, method: ObserverMethod[Target, this.type]): this.type = js.native
+    
     /**
       * Returns the cached value of a computed property, if it exists.
       * This allows you to inspect the value of a computed property
@@ -34,23 +39,27 @@ object observableMod extends js.Object {
           /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any
         ]
       ] = js.native
+    
     /**
       * Set the value of a property to the current value minus some amount.
       */
     def decrementProperty(keyName: /* keyof this */ String): Double = js.native
     def decrementProperty(keyName: /* keyof this */ String, decrement: Double): Double = js.native
+    
     /**
       * Retrieves the value of a property from the object.
       */
     def get[K /* <: /* keyof this */ String */](key: K): UnwrapComputedPropertyGetter[
         /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any
       ] = js.native
+    
     def getProperties[K /* <: /* keyof this */ String */](list: K*): Pick[UnwrapComputedPropertyGetters[this.type], K] = js.native
     /**
       * To get the values of multiple properties at once, call `getProperties`
       * with a list of strings or an array:
       */
     def getProperties[K /* <: /* keyof this */ String */](list: js.Array[K]): Pick[UnwrapComputedPropertyGetters[this.type], K] = js.native
+    
     /**
       * Retrieves the value of a property, or a default value in the case that the
       * property returns `undefined`.
@@ -63,16 +72,19 @@ object observableMod extends js.Object {
     ): UnwrapComputedPropertyGetter[
         /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any
       ] = js.native
+    
     /**
       * Set the value of a property to the current value plus some amount.
       */
     def incrementProperty(keyName: /* keyof this */ String): Double = js.native
     def incrementProperty(keyName: /* keyof this */ String, increment: Double): Double = js.native
+    
     /**
       * Convenience method to call `propertyWillChange` and `propertyDidChange` in
       * succession.
       */
     def notifyPropertyChange(keyName: String): this.type = js.native
+    
     def removeObserver(key: /* keyof this */ String, method: ObserverMethod[this.type, this.type]): this.type = js.native
     /**
       * Remove an observer you have previously registered on this object. Pass
@@ -80,6 +92,7 @@ object observableMod extends js.Object {
       * target will no longer receive notifications.
       */
     def removeObserver[Target](key: /* keyof this */ String, target: Target, method: ObserverMethod[Target, this.type]): this.type = js.native
+    
     /**
       * Sets the provided key or path to the value.
       */
@@ -88,6 +101,7 @@ object observableMod extends js.Object {
       value: /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any
     ): /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any = js.native
     def set[T](key: /* keyof this */ String, value: T): T = js.native
+    
     def setProperties[K /* <: /* keyof this */ String */](
       // tslint:disable-next-line:unified-signatures
     hash: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -100,13 +114,11 @@ object observableMod extends js.Object {
       * observers will be buffered.
       */
     def setProperties[K /* <: /* keyof this */ String */](hash: Pick[this.type, K]): Pick[UnwrapComputedPropertySetters[this.type], K] = js.native
+    
     /**
       * Set the value of a boolean property to the opposite of its
       * current value.
       */
     def toggleProperty(keyName: /* keyof this */ String): Boolean = js.native
   }
-  
-  val default: typings.emberObject.mixinMod.default[Observable, typings.emberObject.coreMod.default] = js.native
 }
-

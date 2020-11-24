@@ -11,8 +11,8 @@ Node.js implementation of PostgreSQL's format() to safely create dynamic SQL que
 | Full name          | pg-format |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 52 |
-| # downloads        | 904721 |
+| # dependents       | 62 |
+| # downloads        | 1525005 |
 | # stars            | 3 |
 
 ## Links

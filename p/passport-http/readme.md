@@ -10,9 +10,9 @@ HTTP Basic and Digest authentication strategies for Passport.
 | ------------------ | :-------------: |
 | Full name          | passport-http |
 | Keywords           | passport, http, basic, digest, auth, authn, authentication |
-| # releases         | 1 |
-| # dependents       | 211 |
-| # downloads        | 2705287 |
+| # releases         | 0 |
+| # dependents       | 232 |
+| # downloads        | 2796633 |
 | # stars            | 13 |
 
 ## Links

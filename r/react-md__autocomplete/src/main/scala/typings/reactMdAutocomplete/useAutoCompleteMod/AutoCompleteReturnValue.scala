@@ -14,26 +14,41 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLLIElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AutoCompleteReturnValue extends js.Object {
+  
   var activeId: String = js.native
+  
   var filteredData: js.Array[AutoCompleteData] = js.native
+  
   var fixedStyle: js.UndefOr[CSSProperties] = js.native
-  var handleBlur: FocusEventHandler[HTMLInputElement] = js.native
-  var handleChange: ChangeEventHandler[HTMLInputElement] = js.native
-  var handleClick: MouseEventHandler[HTMLInputElement] = js.native
-  var handleFocus: FocusEventHandler[HTMLInputElement] = js.native
-  var handleKeyDown: KeyboardEventHandler[HTMLInputElement] = js.native
-  var itemRefs: ItemRefList[HTMLLIElement] = js.native
-  var listboxRef: MutableRefObject[ListElement | Null] = js.native
-  var `match`: String = js.native
-  var transitionHooks: RequiredTransitionHooks = js.native
-  var value: String = js.native
-  var visible: Boolean = js.native
+  
   def handleAutoComplete(index: Double): Unit = js.native
+  
+  var handleBlur: FocusEventHandler[HTMLInputElement] = js.native
+  
+  var handleChange: ChangeEventHandler[HTMLInputElement] = js.native
+  
+  var handleClick: MouseEventHandler[HTMLInputElement] = js.native
+  
+  var handleFocus: FocusEventHandler[HTMLInputElement] = js.native
+  
+  var handleKeyDown: KeyboardEventHandler[HTMLInputElement] = js.native
+  
+  var itemRefs: ItemRefList[HTMLLIElement] = js.native
+  
+  var listboxRef: MutableRefObject[ListElement | Null] = js.native
+  
+  var `match`: String = js.native
+  
   def ref(): Unit = js.native
   def ref(instance: HTMLInputElement): Unit = js.native
+  
+  var transitionHooks: RequiredTransitionHooks = js.native
+  
+  var value: String = js.native
+  
+  var visible: Boolean = js.native
 }
-

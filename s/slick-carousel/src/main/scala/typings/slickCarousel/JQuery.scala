@@ -17,10 +17,11 @@ import typings.slickCarousel.slickCarouselStrings.unslick
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Create slick component
     */
@@ -159,4 +160,3 @@ trait JQuery extends js.Object {
   @JSName("slick")
   def slick_unslick(methodName: unslick): JQuery = js.native
 }
-

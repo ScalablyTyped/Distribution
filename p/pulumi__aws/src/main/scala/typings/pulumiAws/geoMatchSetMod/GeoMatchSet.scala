@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/wafregional/geoMatchSet", "GeoMatchSet")
 @js.native
@@ -24,20 +24,22 @@ class GeoMatchSet protected () extends CustomResource {
   def this(name: String, args: GeoMatchSetArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: GeoMatchSetArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The Geo Match Constraint objects which contain the country that you want AWS WAF to search for.
     */
   val geoMatchConstraints: Output_[js.UndefOr[js.Array[GeoMatchSetGeoMatchConstraint]]] = js.native
+  
   /**
     * The name or description of the Geo Match Set.
     */
   val name: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/wafregional/geoMatchSet", "GeoMatchSet")
 @js.native
 object GeoMatchSet extends js.Object {
+  
   /**
     * Get an existing GeoMatchSet resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -51,10 +53,10 @@ object GeoMatchSet extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): GeoMatchSet = js.native
   def get(name: String, id: Input[ID], state: GeoMatchSetState): GeoMatchSet = js.native
   def get(name: String, id: Input[ID], state: GeoMatchSetState, opts: CustomResourceOptions): GeoMatchSet = js.native
+  
   /**
     * Returns true if the given object is an instance of GeoMatchSet.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/geoMatchSet.GeoMatchSet */ Boolean = js.native
 }
-

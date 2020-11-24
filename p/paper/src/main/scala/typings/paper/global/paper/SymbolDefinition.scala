@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * Symbols allow you to place multiple instances of an item in your
@@ -24,4 +24,3 @@ class SymbolDefinition protected ()
   def this(item: typings.paper.paper.Item) = this()
   def this(item: typings.paper.paper.Item, dontCenter: Boolean) = this()
 }
-

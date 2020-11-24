@@ -53,7 +53,7 @@ import typings.stripe.stripeStrings.verified
 import typings.stripe.stripeStrings.wechat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Any Stripe source, including a bank account, credit/debit card, or less common "Source" types (see https://stripe.com/docs/api/sources/object). */
 /* Rewritten from type alias, can be one of: 
@@ -63,8 +63,8 @@ import scala.scalajs.js.annotation._
   - typings.stripe.mod.sources.ISource
 */
 trait IStripeSource extends js.Object
-
 object IStripeSource {
+  
   @scala.inline
   def ICard(
     brand: Visa | (`American Express`) | MasterCard | Discover | JCB | (`Diners Club`) | Unknown,
@@ -82,6 +82,7 @@ object IStripeSource {
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStripeSource]
   }
+  
   @scala.inline
   def IBitcoinReceiver(
     active: Boolean,
@@ -111,6 +112,7 @@ object IStripeSource {
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStripeSource]
   }
+  
   @scala.inline
   def IBankAccount(
     bank_name: String,
@@ -128,6 +130,7 @@ object IStripeSource {
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStripeSource]
   }
+  
   @scala.inline
   def ISource(
     client_secret: String,
@@ -148,4 +151,3 @@ object IStripeSource {
     __obj.asInstanceOf[IStripeSource]
   }
 }
-

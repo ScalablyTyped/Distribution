@@ -353,18 +353,25 @@ import typings.storybookComponents.storybookComponentsStrings.webview
 import typings.storybookTheming.typesMod.Theme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/components/dist/form/input/input", "Input")
 @js.native
 object Input extends js.Object {
-  var __emotion_styles: js.Any = js.native
-  var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
-  var defaultProps: js.UndefOr[PartialPickInputPropscolo] = js.native
-  var displayName: js.UndefOr[String] = js.native
-  var propTypes: js.UndefOr[WeakValidationMapPickInpu] = js.native
+  
   def apply(props: PropsWithChildrenPickInpu): ReactElement | Null = js.native
   def apply(props: PropsWithChildrenPickInpu, context: js.Any): ReactElement | Null = js.native
+  
+  var __emotion_styles: js.Any = js.native
+  
+  var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
+  
+  var defaultProps: js.UndefOr[PartialPickInputPropscolo] = js.native
+  
+  var displayName: js.UndefOr[String] = js.native
+  
+  var propTypes: js.UndefOr[WeakValidationMapPickInpu] = js.native
+  
   def withComponent[Tag /* <: ComponentType[_] */](tag: Tag): StyledComponent[PropsOf[Tag], InputStyleProps, Theme] = js.native
   /**
     * @desc this method is type-unsafe
@@ -1016,4 +1023,3 @@ object Input extends js.Object {
     Theme
   ] = js.native
 }
-

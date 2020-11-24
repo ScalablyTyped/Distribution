@@ -2,7 +2,7 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Returns a new pc.VertexIterator object.
@@ -15,4 +15,3 @@ class VertexIterator protected ()
   extends typings.playcanvas.pc.VertexIterator {
   def this(vertexBuffer: typings.playcanvas.pc.VertexBuffer) = this()
 }
-

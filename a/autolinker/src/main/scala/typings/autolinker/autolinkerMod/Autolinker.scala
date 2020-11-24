@@ -3,10 +3,11 @@ package typings.autolinker.autolinkerMod
 import typings.autolinker.matchMatchMod.Match
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Autolinker extends js.Object {
+  
   /**
     * @cfg {String} className
     *
@@ -24,6 +25,7 @@ trait Autolinker extends js.Object {
     *   where [type] is either "instagram", "twitter" or "soundcloud"
     */
   val className: js.Any = js.native
+  
   /**
     * After we have found all matches, we need to remove matches that overlap
     * with a previous match. This can happen for instance with URLs, where the
@@ -36,6 +38,7 @@ trait Autolinker extends js.Object {
     * @return {Autolinker.match.Match[]}
     */
   var compactMatches: js.Any = js.native
+  
   /**
     * @cfg {Object} context
     *
@@ -44,6 +47,7 @@ trait Autolinker extends js.Object {
     * Defaults to this Autolinker instance.
     */
   val context: js.Any = js.native
+  
   /**
     * Creates the return string value for a given match in the input string.
     *
@@ -57,6 +61,7 @@ trait Autolinker extends js.Object {
     *   if the match is not to be replaced.
     */
   var createMatchReturnVal: js.Any = js.native
+  
   /**
     * @cfg {Boolean} [decodePercentEncoding=true]
     *
@@ -67,6 +72,7 @@ trait Autolinker extends js.Object {
     *  be displayed as `https://en.wikipedia.org/wiki/San_José`.
     */
   val decodePercentEncoding: js.Any = js.native
+  
   /**
     * @cfg {Boolean} [email=true]
     *
@@ -74,6 +80,7 @@ trait Autolinker extends js.Object {
     * should not be.
     */
   val email: js.Any = js.native
+  
   /**
     * Lazily instantiates and returns the {@link Autolinker.matcher.Matcher}
     * instances for this Autolinker instance.
@@ -82,6 +89,7 @@ trait Autolinker extends js.Object {
     * @return {Autolinker.matcher.Matcher[]}
     */
   var getMatchers: js.Any = js.native
+  
   /**
     * Returns the {@link #tagBuilder} instance for this Autolinker instance,
     * lazily instantiating it if it does not yet exist.
@@ -90,6 +98,7 @@ trait Autolinker extends js.Object {
     * @return {Autolinker.AnchorTagBuilder}
     */
   var getTagBuilder: js.Any = js.native
+  
   /**
     * @cfg {Boolean/String} [hashtag=false]
     *
@@ -103,6 +112,27 @@ trait Autolinker extends js.Object {
     * Pass `false` to skip auto-linking of hashtags.
     */
   val hashtag: js.Any = js.native
+  
+  /**
+    * Automatically links URLs, Email addresses, Phone numbers, Hashtags,
+    * and Mentions (Twitter, Instagram, Soundcloud) found in the given chunk of HTML. Does not link
+    * URLs found within HTML tags.
+    *
+    * For instance, if given the text: `You should go to http://www.yahoo.com`,
+    * then the result will be `You should go to
+    * &lt;a href="http://www.yahoo.com"&gt;http://www.yahoo.com&lt;/a&gt;`
+    *
+    * This method finds the text around any HTML elements in the input
+    * `textOrHtml`, which will be the text that is processed. Any original HTML
+    * elements will be left as-is, as well as the text that is already wrapped
+    * in anchor (&lt;a&gt;) tags.
+    *
+    * @param {String} textOrHtml The HTML or text to autolink matches within
+    *   (depending on if the {@link #urls}, {@link #email}, {@link #phone}, {@link #hashtag}, and {@link #mention} options are enabled).
+    * @return {String} The HTML, with matches automatically linked.
+    */
+  def link(textOrHtml: String): String = js.native
+  
   /**
     * @private
     * @property {Autolinker.matcher.Matcher[]} matchers
@@ -113,6 +143,7 @@ trait Autolinker extends js.Object {
     * This is lazily created in {@link #getMatchers}.
     */
   var matchers: js.Any = js.native
+  
   /**
     * @cfg {String/Boolean} [mention=false]
     *
@@ -126,12 +157,14 @@ trait Autolinker extends js.Object {
     * Defaults to `false` to skip auto-linking of mentions.
     */
   val mention: js.Any = js.native
+  
   /**
     * @cfg {Boolean} [newWindow=true]
     *
     * `true` if the links should open in a new window, `false` otherwise.
     */
   val newWindow: js.Any = js.native
+  
   /**
     * Normalizes the {@link #stripPrefix} config into an Object with 2
     * properties: `scheme`, and `www` - both Booleans.
@@ -143,6 +176,7 @@ trait Autolinker extends js.Object {
     * @return {Object}
     */
   var normalizeStripPrefixCfg: js.Any = js.native
+  
   /**
     * Normalizes the {@link #truncate} config into an Object with 2 properties:
     * `length` (Number), and `location` (String).
@@ -154,6 +188,7 @@ trait Autolinker extends js.Object {
     * @return {Object}
     */
   var normalizeTruncateCfg: js.Any = js.native
+  
   /**
     * Normalizes the {@link #urls} config into an Object with 3 properties:
     * `schemeMatches`, `wwwMatches`, and `tldMatches`, all Booleans.
@@ -165,6 +200,40 @@ trait Autolinker extends js.Object {
     * @return {Object}
     */
   var normalizeUrlsCfg: js.Any = js.native
+  
+  /**
+    * Parses the input `textOrHtml` looking for URLs, email addresses, phone
+    * numbers, username handles, and hashtags (depending on the configuration
+    * of the Autolinker instance), and returns an array of {@link Autolinker.match.Match}
+    * objects describing those matches (without making any replacements).
+    *
+    * This method is used by the {@link #link} method, but can also be used to
+    * simply do parsing of the input in order to discover what kinds of links
+    * there are and how many.
+    *
+    * Example usage:
+    *
+    *     var autolinker = new Autolinker( {
+    *         urls: true,
+    *         email: true
+    *     } );
+    *
+    *     var matches = autolinker.parse( "Hello google.com, I am asdf@asdf.com" );
+    *
+    *     console.log( matches.length );           // 2
+    *     console.log( matches[ 0 ].getType() );   // 'url'
+    *     console.log( matches[ 0 ].getUrl() );    // 'google.com'
+    *     console.log( matches[ 1 ].getType() );   // 'email'
+    *     console.log( matches[ 1 ].getEmail() );  // 'asdf@asdf.com'
+    *
+    * @param {String} textOrHtml The HTML or text to find matches within
+    *   (depending on if the {@link #urls}, {@link #email}, {@link #phone},
+    *   {@link #hashtag}, and {@link #mention} options are enabled).
+    * @return {Autolinker.match.Match[]} The array of Matches found in the
+    *   given input `textOrHtml`.
+    */
+  def parse(textOrHtml: String): js.Array[Match] = js.native
+  
   /**
     * Parses the input `text` looking for URLs, email addresses, phone
     * numbers, username handles, and hashtags (depending on the configuration
@@ -187,6 +256,7 @@ trait Autolinker extends js.Object {
     *   given input `text`.
     */
   var parseText: js.Any = js.native
+  
   /**
     * @cfg {Boolean} [phone=true]
     *
@@ -194,6 +264,7 @@ trait Autolinker extends js.Object {
     * `false` if they should not be.
     */
   val phone: js.Any = js.native
+  
   /**
     * Removes matches for matchers that were turned off in the options. For
     * example, if {@link #hashtag hashtags} were not to be matched, we'll
@@ -213,6 +284,7 @@ trait Autolinker extends js.Object {
     * @return {Autolinker.match.Match[]} The mutated input `matches` array.
     */
   var removeUnwantedMatches: js.Any = js.native
+  
   /**
     * @cfg {Function} replaceFn
     *
@@ -231,6 +303,7 @@ trait Autolinker extends js.Object {
     *   for details.
     */
   val replaceFn: js.Any = js.native
+  
   /**
     * @cfg {Boolean} [sanitizeHtml=false]
     *
@@ -246,6 +319,7 @@ trait Autolinker extends js.Object {
     * before running Autolinker.
     */
   val sanitizeHtml: js.Any = js.native
+  
   /**
     * @cfg {Boolean/Object} [stripPrefix=true]
     *
@@ -280,6 +354,7 @@ trait Autolinker extends js.Object {
     *   strip the `'www'`.
     */
   val stripPrefix: js.Any = js.native
+  
   /**
     * @cfg {Boolean} [stripTrailingSlash=true]
     *
@@ -290,6 +365,7 @@ trait Autolinker extends js.Object {
     *  `http://google.com`.
     */
   val stripTrailingSlash: js.Any = js.native
+  
   /**
     * @private
     * @property {Autolinker.AnchorTagBuilder} tagBuilder
@@ -298,6 +374,7 @@ trait Autolinker extends js.Object {
     * Note: this is lazily instantiated in the {@link #getTagBuilder} method.
     */
   var tagBuilder: js.Any = js.native
+  
   /**
     * @cfg {Number/Object} [truncate=0]
     *
@@ -346,6 +423,7 @@ trait Autolinker extends js.Object {
     *   {@link Autolinker.truncate.TruncateSmart}.
     */
   val truncate: js.Any = js.native
+  
   /**
     * @cfg {Boolean/Object} [urls]
     *
@@ -382,66 +460,16 @@ trait Autolinker extends js.Object {
     *   to prevent these types of matches.
     */
   val urls: js.Any = js.native
+  
   /**
     * The Autolinker version number exposed on the instance itself.
     *
     * Ex: 0.25.1
     */
-  val version: /* "3.14.1" */ String = js.native
-  /**
-    * Automatically links URLs, Email addresses, Phone numbers, Hashtags,
-    * and Mentions (Twitter, Instagram, Soundcloud) found in the given chunk of HTML. Does not link
-    * URLs found within HTML tags.
-    *
-    * For instance, if given the text: `You should go to http://www.yahoo.com`,
-    * then the result will be `You should go to
-    * &lt;a href="http://www.yahoo.com"&gt;http://www.yahoo.com&lt;/a&gt;`
-    *
-    * This method finds the text around any HTML elements in the input
-    * `textOrHtml`, which will be the text that is processed. Any original HTML
-    * elements will be left as-is, as well as the text that is already wrapped
-    * in anchor (&lt;a&gt;) tags.
-    *
-    * @param {String} textOrHtml The HTML or text to autolink matches within
-    *   (depending on if the {@link #urls}, {@link #email}, {@link #phone}, {@link #hashtag}, and {@link #mention} options are enabled).
-    * @return {String} The HTML, with matches automatically linked.
-    */
-  def link(textOrHtml: String): String = js.native
-  /**
-    * Parses the input `textOrHtml` looking for URLs, email addresses, phone
-    * numbers, username handles, and hashtags (depending on the configuration
-    * of the Autolinker instance), and returns an array of {@link Autolinker.match.Match}
-    * objects describing those matches (without making any replacements).
-    *
-    * This method is used by the {@link #link} method, but can also be used to
-    * simply do parsing of the input in order to discover what kinds of links
-    * there are and how many.
-    *
-    * Example usage:
-    *
-    *     var autolinker = new Autolinker( {
-    *         urls: true,
-    *         email: true
-    *     } );
-    *
-    *     var matches = autolinker.parse( "Hello google.com, I am asdf@asdf.com" );
-    *
-    *     console.log( matches.length );           // 2
-    *     console.log( matches[ 0 ].getType() );   // 'url'
-    *     console.log( matches[ 0 ].getUrl() );    // 'google.com'
-    *     console.log( matches[ 1 ].getType() );   // 'email'
-    *     console.log( matches[ 1 ].getEmail() );  // 'asdf@asdf.com'
-    *
-    * @param {String} textOrHtml The HTML or text to find matches within
-    *   (depending on if the {@link #urls}, {@link #email}, {@link #phone},
-    *   {@link #hashtag}, and {@link #mention} options are enabled).
-    * @return {Autolinker.match.Match[]} The array of Matches found in the
-    *   given input `textOrHtml`.
-    */
-  def parse(textOrHtml: String): js.Array[Match] = js.native
+  val version: /* "3.14.2" */ String = js.native
 }
-
 object Autolinker {
+  
   @scala.inline
   def apply(
     className: js.Any,
@@ -471,79 +499,109 @@ object Autolinker {
     tagBuilder: js.Any,
     truncate: js.Any,
     urls: js.Any,
-    version: /* "3.14.1" */ String
+    version: /* "3.14.2" */ String
   ): Autolinker = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], compactMatches = compactMatches.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], createMatchReturnVal = createMatchReturnVal.asInstanceOf[js.Any], decodePercentEncoding = decodePercentEncoding.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], getMatchers = getMatchers.asInstanceOf[js.Any], getTagBuilder = getTagBuilder.asInstanceOf[js.Any], hashtag = hashtag.asInstanceOf[js.Any], link = js.Any.fromFunction1(link), matchers = matchers.asInstanceOf[js.Any], mention = mention.asInstanceOf[js.Any], newWindow = newWindow.asInstanceOf[js.Any], normalizeStripPrefixCfg = normalizeStripPrefixCfg.asInstanceOf[js.Any], normalizeTruncateCfg = normalizeTruncateCfg.asInstanceOf[js.Any], normalizeUrlsCfg = normalizeUrlsCfg.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse), parseText = parseText.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], removeUnwantedMatches = removeUnwantedMatches.asInstanceOf[js.Any], replaceFn = replaceFn.asInstanceOf[js.Any], sanitizeHtml = sanitizeHtml.asInstanceOf[js.Any], stripPrefix = stripPrefix.asInstanceOf[js.Any], stripTrailingSlash = stripTrailingSlash.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any], truncate = truncate.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Autolinker]
   }
+  
   @scala.inline
   implicit class AutolinkerOps[Self <: Autolinker] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setClassName(value: js.Any): Self = this.set("className", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCompactMatches(value: js.Any): Self = this.set("compactMatches", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCreateMatchReturnVal(value: js.Any): Self = this.set("createMatchReturnVal", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDecodePercentEncoding(value: js.Any): Self = this.set("decodePercentEncoding", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEmail(value: js.Any): Self = this.set("email", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetMatchers(value: js.Any): Self = this.set("getMatchers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetTagBuilder(value: js.Any): Self = this.set("getTagBuilder", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHashtag(value: js.Any): Self = this.set("hashtag", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLink(value: String => String): Self = this.set("link", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setMatchers(value: js.Any): Self = this.set("matchers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMention(value: js.Any): Self = this.set("mention", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNewWindow(value: js.Any): Self = this.set("newWindow", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNormalizeStripPrefixCfg(value: js.Any): Self = this.set("normalizeStripPrefixCfg", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNormalizeTruncateCfg(value: js.Any): Self = this.set("normalizeTruncateCfg", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNormalizeUrlsCfg(value: js.Any): Self = this.set("normalizeUrlsCfg", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParse(value: String => js.Array[Match]): Self = this.set("parse", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setParseText(value: js.Any): Self = this.set("parseText", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPhone(value: js.Any): Self = this.set("phone", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRemoveUnwantedMatches(value: js.Any): Self = this.set("removeUnwantedMatches", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setReplaceFn(value: js.Any): Self = this.set("replaceFn", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSanitizeHtml(value: js.Any): Self = this.set("sanitizeHtml", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStripPrefix(value: js.Any): Self = this.set("stripPrefix", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStripTrailingSlash(value: js.Any): Self = this.set("stripTrailingSlash", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTagBuilder(value: js.Any): Self = this.set("tagBuilder", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTruncate(value: js.Any): Self = this.set("truncate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUrls(value: js.Any): Self = this.set("urls", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setVersion(value: /* "3.14.1" */ String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: /* "3.14.2" */ String): Self = this.set("version", value.asInstanceOf[js.Any])
   }
-  
 }
-

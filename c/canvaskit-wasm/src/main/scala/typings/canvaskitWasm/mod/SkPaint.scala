@@ -2,123 +2,170 @@ package typings.canvaskitWasm.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkPaint extends SkObject[SkPaint] {
-  def getBlendMode(): SkBlendMode = js.native
-  def getColor(): SkColor = js.native
-  def getFilterQuality(): SkFilterQuality = js.native
-  def getStrokeCap(): SkStrokeCap = js.native
-  def getStrokeJoin(): SkStrokeJoin = js.native
-  def getStrokeMiter(): Double = js.native
-  def getStrokeWidth(): Double = js.native
-  def setAntiAlias(value: Boolean): Unit = js.native
-  def setBlendMode(value: SkBlendMode): Unit = js.native
-  def setColor(value: SkColor): Unit = js.native
-  def setColorFilter(value: SkColorFilter): Unit = js.native
-  def setColorf(fRed: Double, fGreen: Double, fBlue: Double, fAlpha: Double): Unit = js.native
-  def setFilterQuality(value: SkFilterQuality): Unit = js.native
-  def setImageFilter(value: SkImageFilter): Unit = js.native
-  def setMaskFilter(value: SkMaskFilter): Unit = js.native
-  def setPathEffect(value: SkPathEffect): Unit = js.native
-  def setShader(value: SkShader): Unit = js.native
-  def setStrokeCap(value: SkStrokeCap): Unit = js.native
-  def setStrokeJoin(value: SkStrokeJoin): Unit = js.native
-  def setStrokeMiter(value: Double): Unit = js.native
-  def setStrokeWidth(value: Double): Unit = js.native
-  def setStyle(value: SkPaintStyle): Unit = js.native
-}
-
-object SkPaint {
-  @scala.inline
-  def apply(
-    delete: () => Unit,
-    deleteAfter: () => Unit,
-    getBlendMode: () => SkBlendMode,
-    getColor: () => SkColor,
-    getFilterQuality: () => SkFilterQuality,
-    getStrokeCap: () => SkStrokeCap,
-    getStrokeJoin: () => SkStrokeJoin,
-    getStrokeMiter: () => Double,
-    getStrokeWidth: () => Double,
-    isAliasOf: js.Any => Boolean,
-    isDeleted: () => Boolean,
-    setAntiAlias: Boolean => Unit,
-    setBlendMode: SkBlendMode => Unit,
-    setColor: SkColor => Unit,
-    setColorFilter: SkColorFilter => Unit,
-    setColorf: (Double, Double, Double, Double) => Unit,
-    setFilterQuality: SkFilterQuality => Unit,
-    setImageFilter: SkImageFilter => Unit,
-    setMaskFilter: SkMaskFilter => Unit,
-    setPathEffect: SkPathEffect => Unit,
-    setShader: SkShader => Unit,
-    setStrokeCap: SkStrokeCap => Unit,
-    setStrokeJoin: SkStrokeJoin => Unit,
-    setStrokeMiter: Double => Unit,
-    setStrokeWidth: Double => Unit,
-    setStyle: SkPaintStyle => Unit
-  ): SkPaint = {
-    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), deleteAfter = js.Any.fromFunction0(deleteAfter), getBlendMode = js.Any.fromFunction0(getBlendMode), getColor = js.Any.fromFunction0(getColor), getFilterQuality = js.Any.fromFunction0(getFilterQuality), getStrokeCap = js.Any.fromFunction0(getStrokeCap), getStrokeJoin = js.Any.fromFunction0(getStrokeJoin), getStrokeMiter = js.Any.fromFunction0(getStrokeMiter), getStrokeWidth = js.Any.fromFunction0(getStrokeWidth), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted), setAntiAlias = js.Any.fromFunction1(setAntiAlias), setBlendMode = js.Any.fromFunction1(setBlendMode), setColor = js.Any.fromFunction1(setColor), setColorFilter = js.Any.fromFunction1(setColorFilter), setColorf = js.Any.fromFunction4(setColorf), setFilterQuality = js.Any.fromFunction1(setFilterQuality), setImageFilter = js.Any.fromFunction1(setImageFilter), setMaskFilter = js.Any.fromFunction1(setMaskFilter), setPathEffect = js.Any.fromFunction1(setPathEffect), setShader = js.Any.fromFunction1(setShader), setStrokeCap = js.Any.fromFunction1(setStrokeCap), setStrokeJoin = js.Any.fromFunction1(setStrokeJoin), setStrokeMiter = js.Any.fromFunction1(setStrokeMiter), setStrokeWidth = js.Any.fromFunction1(setStrokeWidth), setStyle = js.Any.fromFunction1(setStyle))
-    __obj.asInstanceOf[SkPaint]
-  }
-  @scala.inline
-  implicit class SkPaintOps[Self <: SkPaint] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setGetBlendMode(value: () => SkBlendMode): Self = this.set("getBlendMode", js.Any.fromFunction0(value))
-    @scala.inline
-    def setGetColor(value: () => SkColor): Self = this.set("getColor", js.Any.fromFunction0(value))
-    @scala.inline
-    def setGetFilterQuality(value: () => SkFilterQuality): Self = this.set("getFilterQuality", js.Any.fromFunction0(value))
-    @scala.inline
-    def setGetStrokeCap(value: () => SkStrokeCap): Self = this.set("getStrokeCap", js.Any.fromFunction0(value))
-    @scala.inline
-    def setGetStrokeJoin(value: () => SkStrokeJoin): Self = this.set("getStrokeJoin", js.Any.fromFunction0(value))
-    @scala.inline
-    def setGetStrokeMiter(value: () => Double): Self = this.set("getStrokeMiter", js.Any.fromFunction0(value))
-    @scala.inline
-    def setGetStrokeWidth(value: () => Double): Self = this.set("getStrokeWidth", js.Any.fromFunction0(value))
-    @scala.inline
-    def setSetAntiAlias(value: Boolean => Unit): Self = this.set("setAntiAlias", js.Any.fromFunction1(value))
-    @scala.inline
-    def setSetBlendMode(value: SkBlendMode => Unit): Self = this.set("setBlendMode", js.Any.fromFunction1(value))
-    @scala.inline
-    def setSetColor(value: SkColor => Unit): Self = this.set("setColor", js.Any.fromFunction1(value))
-    @scala.inline
-    def setSetColorFilter(value: SkColorFilter => Unit): Self = this.set("setColorFilter", js.Any.fromFunction1(value))
-    @scala.inline
-    def setSetColorf(value: (Double, Double, Double, Double) => Unit): Self = this.set("setColorf", js.Any.fromFunction4(value))
-    @scala.inline
-    def setSetFilterQuality(value: SkFilterQuality => Unit): Self = this.set("setFilterQuality", js.Any.fromFunction1(value))
-    @scala.inline
-    def setSetImageFilter(value: SkImageFilter => Unit): Self = this.set("setImageFilter", js.Any.fromFunction1(value))
-    @scala.inline
-    def setSetMaskFilter(value: SkMaskFilter => Unit): Self = this.set("setMaskFilter", js.Any.fromFunction1(value))
-    @scala.inline
-    def setSetPathEffect(value: SkPathEffect => Unit): Self = this.set("setPathEffect", js.Any.fromFunction1(value))
-    @scala.inline
-    def setSetShader(value: SkShader => Unit): Self = this.set("setShader", js.Any.fromFunction1(value))
-    @scala.inline
-    def setSetStrokeCap(value: SkStrokeCap => Unit): Self = this.set("setStrokeCap", js.Any.fromFunction1(value))
-    @scala.inline
-    def setSetStrokeJoin(value: SkStrokeJoin => Unit): Self = this.set("setStrokeJoin", js.Any.fromFunction1(value))
-    @scala.inline
-    def setSetStrokeMiter(value: Double => Unit): Self = this.set("setStrokeMiter", js.Any.fromFunction1(value))
-    @scala.inline
-    def setSetStrokeWidth(value: Double => Unit): Self = this.set("setStrokeWidth", js.Any.fromFunction1(value))
-    @scala.inline
-    def setSetStyle(value: SkPaintStyle => Unit): Self = this.set("setStyle", js.Any.fromFunction1(value))
-  }
+trait SkPaint extends EmbindObject[SkPaint] {
   
+  /**
+    * Returns a copy of this paint.
+    */
+  def copy(): SkPaint = js.native
+  
+  /**
+    * Returns the blend mode, that is, the mode used to combine source color
+    * with destination color.
+    */
+  def getBlendMode(): BlendMode = js.native
+  
+  /**
+    * Retrieves the alpha and RGB unpremultiplied. RGB are extended sRGB values
+    * (sRGB gamut, and encoded with the sRGB transfer function).
+    */
+  def getColor(): SkColor = js.native
+  
+  /**
+    * Returns the image filtering level.
+    * [deprecated] This will be removed in an upcoming release.
+    */
+  def getFilterQuality(): FilterQuality = js.native
+  
+  /**
+    * Returns the geometry drawn at the beginning and end of strokes.
+    */
+  def getStrokeCap(): StrokeCap = js.native
+  
+  /**
+    * Returns the geometry drawn at the corners of strokes.
+    */
+  def getStrokeJoin(): StrokeJoin = js.native
+  
+  /**
+    *  Returns the limit at which a sharp corner is drawn beveled.
+    */
+  def getStrokeMiter(): Double = js.native
+  
+  /**
+    * Returns the thickness of the pen used to outline the shape.
+    */
+  def getStrokeWidth(): Double = js.native
+  
+  /**
+    * Replaces alpha, leaving RGBA unchanged. 0 means fully transparent, 1.0 means opaque.
+    * @param alpha
+    */
+  def setAlphaf(alpha: Double): Unit = js.native
+  
+  /**
+    * Requests, but does not require, that edge pixels draw opaque or with
+    * partial transparency.
+    * @param aa
+    */
+  def setAntiAlias(aa: Boolean): Unit = js.native
+  
+  /**
+    * Sets the blend mode that is, the mode used to combine source color
+    * with destination color.
+    * @param mode
+    */
+  def setBlendMode(mode: BlendMode): Unit = js.native
+  
+  /**
+    * Sets alpha and RGB used when stroking and filling. The color is four floating
+    * point values, unpremultiplied. The color values are interpreted as being in
+    * the provided colorSpace.
+    * @param color
+    * @param colorSpace - defaults to sRGB
+    */
+  def setColor(color: InputColor): Unit = js.native
+  def setColor(color: InputColor, colorSpace: ColorSpace): Unit = js.native
+  
+  /**
+    * Sets alpha and RGB used when stroking and filling. The color is four floating
+    * point values, unpremultiplied. The color values are interpreted as being in
+    * the provided colorSpace.
+    * @param r
+    * @param g
+    * @param b
+    * @param a
+    * @param colorSpace - defaults to sRGB
+    */
+  def setColorComponents(r: Double, g: Double, b: Double, a: Double): Unit = js.native
+  def setColorComponents(r: Double, g: Double, b: Double, a: Double, colorSpace: ColorSpace): Unit = js.native
+  
+  /**
+    * Sets the current color filter, replacing the existing one if there was one.
+    * @param filter
+    */
+  def setColorFilter(filter: SkColorFilter): Unit = js.native
+  
+  /**
+    * Sets the color used when stroking and filling. The color values are interpreted as being in
+    * the provided colorSpace.
+    * @param color
+    * @param colorSpace - defaults to sRGB.
+    */
+  def setColorInt(color: SkColorInt): Unit = js.native
+  def setColorInt(color: SkColorInt, colorSpace: ColorSpace): Unit = js.native
+  
+  /**
+    * Sets the image filtering level.
+    * [deprecated] This will be removed in an upcoming release.
+    * @param quality
+    */
+  def setFilterQuality(quality: FilterQuality): Unit = js.native
+  
+  /**
+    * Sets the current image filter, replacing the existing one if there was one.
+    * @param filter
+    */
+  def setImageFilter(filter: SkImageFilter): Unit = js.native
+  
+  /**
+    * Sets the current mask filter, replacing the existing one if there was one.
+    * @param filter
+    */
+  def setMaskFilter(filter: SkMaskFilter): Unit = js.native
+  
+  /**
+    * Sets the current path effect, replacing the existing one if there was one.
+    * @param effect
+    */
+  def setPathEffect(effect: SkPathEffect): Unit = js.native
+  
+  /**
+    * Sets the current shader, replacing the existing one if there was one.
+    * @param shader
+    */
+  def setShader(shader: SkShader): Unit = js.native
+  
+  /**
+    * Sets the geometry drawn at the beginning and end of strokes.
+    * @param cap
+    */
+  def setStrokeCap(cap: StrokeCap): Unit = js.native
+  
+  /**
+    * Sets the geometry drawn at the corners of strokes.
+    * @param join
+    */
+  def setStrokeJoin(join: StrokeJoin): Unit = js.native
+  
+  /**
+    * Sets the limit at which a sharp corner is drawn beveled.
+    * @param limit
+    */
+  def setStrokeMiter(limit: Double): Unit = js.native
+  
+  /**
+    * Sets the thickness of the pen used to outline the shape.
+    * @param width
+    */
+  def setStrokeWidth(width: Double): Unit = js.native
+  
+  /**
+    * Sets whether the geometry is filled or stroked.
+    * @param style
+    */
+  def setStyle(style: PaintStyle): Unit = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Generic control access interface.
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XControlAccess extends XInterface {
+  
   /**
     * Query for a control property.
     * @param aControlName The name of the control. Common control names are for instance "OkButton" or "CancelButton".
@@ -25,6 +26,7 @@ trait XControlAccess extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException when the control is not supported or the control property is invalid.
     */
   def getControlProperty(aControlName: String, aControlProperty: String): js.Any = js.native
+  
   /**
     * Change a control property.
     * @param aControlName The name of the control. Common control names are for instance "OkButton" or "CancelButton".
@@ -34,8 +36,8 @@ trait XControlAccess extends XInterface {
     */
   def setControlProperty(aControlName: String, aControlProperty: String, aValue: js.Any): Unit = js.native
 }
-
 object XControlAccess {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -47,22 +49,26 @@ object XControlAccess {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getControlProperty = js.Any.fromFunction2(getControlProperty), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setControlProperty = js.Any.fromFunction3(setControlProperty))
     __obj.asInstanceOf[XControlAccess]
   }
+  
   @scala.inline
   implicit class XControlAccessOps[Self <: XControlAccess] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetControlProperty(value: (String, String) => js.Any): Self = this.set("getControlProperty", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSetControlProperty(value: (String, String, js.Any) => Unit): Self = this.set("setControlProperty", js.Any.fromFunction3(value))
   }
-  
 }
-

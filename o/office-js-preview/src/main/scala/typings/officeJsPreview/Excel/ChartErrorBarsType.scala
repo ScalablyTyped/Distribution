@@ -2,11 +2,10 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartErrorBarsType extends js.Object
-
 /**
   *
   * Represents the range type for error bars.
@@ -16,6 +15,7 @@ sealed trait ChartErrorBarsType extends js.Object
 @JSGlobal("Excel.ChartErrorBarsType")
 @js.native
 object ChartErrorBarsType extends js.Object {
+  
   @js.native
   sealed trait custom extends ChartErrorBarsType
   
@@ -30,6 +30,4 @@ object ChartErrorBarsType extends js.Object {
   
   @js.native
   sealed trait stError extends ChartErrorBarsType
-  
 }
-

@@ -6,7 +6,7 @@ import typings.openlayers.mod.events.Event
 import typings.openlayers.mod.olx.FrameState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -30,21 +30,23 @@ class RasterEvent protected () extends Event {
     * @param data An object made available to operations.
     */
   def this(`type`: String, frameState: FrameState, data: GlobalObject) = this()
+  
   /**
     * An object made available to all operations.  This can be used by operations
     * as a storage object (e.g. for calculating statistics).
     * @api
     */
   var data: GlobalObject = js.native
+  
   /**
     * The raster extent.
     * @api
     */
   var extent: Extent_ = js.native
+  
   /**
     * The pixel resolution (map units per pixel).
     * @api
     */
   var resolution: Double = js.native
 }
-

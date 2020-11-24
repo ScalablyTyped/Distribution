@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "console-stamp"
-version := "0.2.0-dt-20200515Z-2d4c3e"
+version := "0.2.0-dt-20201002Z-3398ef"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

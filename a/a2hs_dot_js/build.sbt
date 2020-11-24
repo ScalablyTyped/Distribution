@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "a2hs_dot_js"
-version := "0.4-dt-20200616Z-fcde06"
+version := "0.4-dt-20200616Z-7864c0"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

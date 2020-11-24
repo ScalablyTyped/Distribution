@@ -8,10 +8,11 @@ import typings.seleniumWebdriver.mod.Capabilities
 import typings.seleniumWebdriver.remoteMod.DriverService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofDriver extends Instantiable0[Driver] {
+  
   /**
     * Creates a new Firefox session.
     *
@@ -44,4 +45,3 @@ trait TypeofDriver extends Instantiable0[Driver] {
   def createSession(opt_config: Capabilities, opt_executor: Executor): Driver = js.native
   def createSession(opt_config: Capabilities, opt_executor: DriverService): Driver = js.native
 }
-

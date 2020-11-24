@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mdast-util-to-string" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mdast-util-to-string" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

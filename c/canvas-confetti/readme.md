@@ -1,7 +1,7 @@
 
 # Scala.js typings for canvas-confetti
 
-Typings are for version 1.0
+Typings are for version 1.3
 
 ## Library description:
 performant confetti animation in the browser
@@ -10,9 +10,9 @@ performant confetti animation in the browser
 | ------------------ | :-------------: |
 | Full name          | canvas-confetti |
 | Keywords           | canvas, confetti, animation, burst, fireworks, snow, particles |
-| # releases         | 16 |
-| # dependents       | 0 |
-| # downloads        | 198765 |
+| # releases         | 19 |
+| # dependents       | 11 |
+| # downloads        | 808222 |
 | # stars            | 0 |
 
 ## Links

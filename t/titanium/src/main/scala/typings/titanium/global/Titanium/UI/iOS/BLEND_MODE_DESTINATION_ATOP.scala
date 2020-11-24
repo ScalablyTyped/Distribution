@@ -3,7 +3,7 @@ package typings.titanium.global.Titanium.UI.iOS
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Use with [MaskedImage.mode](Titanium.UI.MaskedImage.mode) to specify a blend mode.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object BLEND_MODE_DESTINATION_ATOP
   extends TopLevel[scala.Nothing]
-

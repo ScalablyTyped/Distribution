@@ -3,13 +3,13 @@ package typings.cordovaPluginXSocialsharing
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SocialSharing extends js.Object {
-  @JSName("shareW3C")
-  var shareW3C_Original: SocialSharingW3C = js.native
+  
   def available(callback: js.Function1[/* available */ Boolean, Unit]): Unit = js.native
+  
   def canShareVia(via: String): Unit = js.native
   def canShareVia(
     via: String,
@@ -318,6 +318,7 @@ trait SocialSharing extends js.Object {
     successCallback: SocialSharingSuccessCallback[scala.Nothing],
     errorCallback: SocialSharingErrorCallback
   ): Unit = js.native
+  
   def canShareViaEmail(): Unit = js.native
   def canShareViaEmail(successCallback: js.UndefOr[scala.Nothing], errorCallback: SocialSharingErrorCallback): Unit = js.native
   def canShareViaEmail(successCallback: SocialSharingSuccessCallback[scala.Nothing]): Unit = js.native
@@ -325,7 +326,9 @@ trait SocialSharing extends js.Object {
     successCallback: SocialSharingSuccessCallback[scala.Nothing],
     errorCallback: SocialSharingErrorCallback
   ): Unit = js.native
+  
   def iPadPopupCoordinates(): String = js.native
+  
   def saveToPhotoAlbum(): Unit = js.native
   def saveToPhotoAlbum(
     fileOrFileArray: js.UndefOr[scala.Nothing],
@@ -365,7 +368,9 @@ trait SocialSharing extends js.Object {
     successCallback: SocialSharingSuccessCallback[scala.Nothing],
     errorCallback: SocialSharingErrorCallback
   ): Unit = js.native
+  
   def setIPadPopupCoordinates(coords: String): Unit = js.native
+  
   def share(
     message: js.UndefOr[String],
     subject: js.UndefOr[String],
@@ -374,6 +379,7 @@ trait SocialSharing extends js.Object {
     successCallback: js.UndefOr[SocialSharingSuccessCallback[Boolean]],
     errorCallback: js.UndefOr[SocialSharingErrorCallback]
   ): Unit = js.native
+  
   def shareVia(
     via: String,
     message: js.UndefOr[String],
@@ -383,6 +389,7 @@ trait SocialSharing extends js.Object {
     successCallback: js.UndefOr[SocialSharingSuccessCallback[Boolean]],
     errorCallback: js.UndefOr[SocialSharingErrorCallback]
   ): Unit = js.native
+  
   def shareViaEmail(
     message: js.UndefOr[String],
     subject: js.UndefOr[String],
@@ -393,6 +400,7 @@ trait SocialSharing extends js.Object {
     successCallback: js.UndefOr[SocialSharingSuccessCallback[Boolean]],
     errorCallback: js.UndefOr[SocialSharingErrorCallback]
   ): Unit = js.native
+  
   def shareViaFacebook(): Unit = js.native
   def shareViaFacebook(
     message: js.UndefOr[scala.Nothing],
@@ -645,6 +653,7 @@ trait SocialSharing extends js.Object {
     successCallback: SocialSharingSuccessCallback[Boolean],
     errorCallback: SocialSharingErrorCallback
   ): Unit = js.native
+  
   def shareViaFacebookWithPasteMessageHint(
     message: js.UndefOr[String],
     fileOrFileArray: js.UndefOr[String | ArrayLike[String]],
@@ -653,6 +662,7 @@ trait SocialSharing extends js.Object {
     successCallback: js.UndefOr[SocialSharingSuccessCallback[Boolean]],
     errorCallback: js.UndefOr[SocialSharingErrorCallback]
   ): Unit = js.native
+  
   def shareViaInstagram(): Unit = js.native
   def shareViaInstagram(
     message: js.UndefOr[scala.Nothing],
@@ -761,6 +771,7 @@ trait SocialSharing extends js.Object {
     successCallback: SocialSharingSuccessCallback[scala.Nothing],
     errorCallback: SocialSharingErrorCallback
   ): Unit = js.native
+  
   def shareViaSMS(): Unit = js.native
   def shareViaSMS(
     options: js.UndefOr[scala.Nothing],
@@ -869,6 +880,7 @@ trait SocialSharing extends js.Object {
     successCallback: SocialSharingSuccessCallback[Boolean],
     errorCallback: SocialSharingErrorCallback
   ): Unit = js.native
+  
   def shareViaTwitter(): Unit = js.native
   def shareViaTwitter(
     message: js.UndefOr[scala.Nothing],
@@ -1032,6 +1044,7 @@ trait SocialSharing extends js.Object {
     successCallback: SocialSharingSuccessCallback[Boolean],
     errorCallback: SocialSharingErrorCallback
   ): Unit = js.native
+  
   def shareViaWhatsApp(): Unit = js.native
   def shareViaWhatsApp(
     message: js.UndefOr[scala.Nothing],
@@ -1284,6 +1297,7 @@ trait SocialSharing extends js.Object {
     successCallback: SocialSharingSuccessCallback[scala.Nothing],
     errorCallback: SocialSharingErrorCallback
   ): Unit = js.native
+  
   def shareViaWhatsAppToPhone(
     phone: js.UndefOr[String],
     message: js.UndefOr[String],
@@ -1292,6 +1306,7 @@ trait SocialSharing extends js.Object {
     successCallback: js.UndefOr[SocialSharingSuccessCallback[scala.Nothing]],
     errorCallback: js.UndefOr[SocialSharingErrorCallback]
   ): Unit = js.native
+  
   def shareViaWhatsAppToReceiver(
     receiver: js.UndefOr[String],
     message: js.UndefOr[String],
@@ -1300,7 +1315,11 @@ trait SocialSharing extends js.Object {
     successCallback: js.UndefOr[SocialSharingSuccessCallback[scala.Nothing]],
     errorCallback: js.UndefOr[SocialSharingErrorCallback]
   ): Unit = js.native
+  
   def shareW3C(shareData: SocialSharingW3CData): js.Promise[SocialSharingResult] = js.native
+  @JSName("shareW3C")
+  var shareW3C_Original: SocialSharingW3C = js.native
+  
   def shareWithOptions(options: SocialSharingOptions): Unit = js.native
   def shareWithOptions(
     options: SocialSharingOptions,
@@ -1314,4 +1333,3 @@ trait SocialSharing extends js.Object {
     errorCallback: SocialSharingErrorCallback
   ): Unit = js.native
 }
-

@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a scroll bar control. */
 @js.native
@@ -17,8 +17,8 @@ trait UnoControlScrollBar
      with XView
      with XAccessible
      with XScrollBar
-
 object UnoControlScrollBar {
+  
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
@@ -94,4 +94,3 @@ object UnoControlScrollBar {
     __obj.asInstanceOf[UnoControlScrollBar]
   }
 }
-

@@ -11,8 +11,8 @@ BEM class name generator
 | Full name          | b_ |
 | Keywords           | bem, naming, className, class, generator |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 193814 |
+| # dependents       | 7 |
+| # downloads        | 300937 |
 | # stars            | 2 |
 
 ## Links

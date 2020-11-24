@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "quill-delta" : "4.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "quill-delta" : "4.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

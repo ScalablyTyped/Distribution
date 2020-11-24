@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides timestamp information for an object in the form of an arbitrary string.
@@ -18,19 +18,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XTimeStamped extends XInterface {
+  
   /**
     * returns the timestamp of the object.
     * @returns a `string` that represents a timestamp.
     */
   val Timestamp: String = js.native
+  
   /**
     * returns the timestamp of the object.
     * @returns a `string` that represents a timestamp.
     */
   def getTimestamp(): String = js.native
 }
-
 object XTimeStamped {
+  
   @scala.inline
   def apply(
     Timestamp: String,
@@ -42,22 +44,26 @@ object XTimeStamped {
     val __obj = js.Dynamic.literal(Timestamp = Timestamp.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getTimestamp = js.Any.fromFunction0(getTimestamp), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XTimeStamped]
   }
+  
   @scala.inline
   implicit class XTimeStampedOps[Self <: XTimeStamped] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setTimestamp(value: String): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetTimestamp(value: () => String): Self = this.set("getTimestamp", js.Any.fromFunction0(value))
   }
-  
 }
-

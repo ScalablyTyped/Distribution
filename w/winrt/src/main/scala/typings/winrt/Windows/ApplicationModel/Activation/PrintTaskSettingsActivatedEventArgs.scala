@@ -3,12 +3,12 @@ package typings.winrt.Windows.ApplicationModel.Activation
 import typings.winrt.Windows.Devices.Printers.Extensions.PrintTaskConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PrintTaskSettingsActivatedEventArgs extends IPrintTaskSettingsActivatedEventArgs
-
 object PrintTaskSettingsActivatedEventArgs {
+  
   @scala.inline
   def apply(
     configuration: PrintTaskConfiguration,
@@ -20,4 +20,3 @@ object PrintTaskSettingsActivatedEventArgs {
     __obj.asInstanceOf[PrintTaskSettingsActivatedEventArgs]
   }
 }
-

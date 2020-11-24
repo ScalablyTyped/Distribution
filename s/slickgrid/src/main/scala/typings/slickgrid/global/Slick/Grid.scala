@@ -8,7 +8,7 @@ import typings.slickgrid.Slick.SlickData
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Slick.Grid")
 @js.native
@@ -43,4 +43,3 @@ class Grid[T /* <: SlickData */] protected ()
     options: GridOptions[T]
   ) = this()
 }
-

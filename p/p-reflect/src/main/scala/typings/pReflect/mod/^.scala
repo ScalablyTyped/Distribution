@@ -2,17 +2,12 @@ package typings.pReflect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-reflect", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function pReflect<ValueType>(
-  // 	promise: PromiseLike<ValueType>
-  // ): Promise<pReflect.PromiseResult<ValueType>>;
-  // export = pReflect;
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pReflect */ js.Any = js.native
+  
   /**
   	Make a promise always fulfill with its actual fulfillment value or rejection reason.
   	@param promise - A promise to reflect upon.
@@ -58,5 +53,11 @@ object ^ extends js.Object {
   	```
   	*/
   def apply[ValueType](promise: js.Thenable[ValueType]): js.Promise[PromiseResult[ValueType]] = js.native
+  
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function pReflect<ValueType>(
+  // 	promise: PromiseLike<ValueType>
+  // ): Promise<pReflect.PromiseResult<ValueType>>;
+  // export = pReflect;
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pReflect */ js.Any = js.native
 }
-

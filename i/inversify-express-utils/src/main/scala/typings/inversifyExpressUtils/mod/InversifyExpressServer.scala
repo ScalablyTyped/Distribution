@@ -7,7 +7,7 @@ import typings.inversifyExpressUtils.anon.Instantiable
 import typings.inversifyExpressUtils.interfacesMod.interfaces.RoutingConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("inversify-express-utils", "InversifyExpressServer")
 @js.native
@@ -32,4 +32,3 @@ class InversifyExpressServer protected ()
     forceControllers: js.UndefOr[Boolean]
   ) = this()
 }
-

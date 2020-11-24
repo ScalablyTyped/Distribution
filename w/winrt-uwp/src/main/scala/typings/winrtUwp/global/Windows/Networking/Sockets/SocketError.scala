@@ -2,18 +2,18 @@ package typings.winrtUwp.global.Windows.Networking.Sockets
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides socket error status for operations on a DatagramSocket , StreamSocket , or StreamSocketListener . */
 @JSGlobal("Windows.Networking.Sockets.SocketError")
 @js.native
 abstract class SocketError ()
   extends typings.winrtUwp.Windows.Networking.Sockets.SocketError
-
 /* static members */
 @JSGlobal("Windows.Networking.Sockets.SocketError")
 @js.native
 object SocketError extends js.Object {
+  
   /**
     * Gets a SocketErrorStatus value based on an error encountered by a socket operation.
     * @param hresult The error encountered by a socket operation represented as an HRESULT.
@@ -21,4 +21,3 @@ object SocketError extends js.Object {
     */
   def getStatus(hresult: Double): typings.winrtUwp.Windows.Networking.Sockets.SocketErrorStatus = js.native
 }
-

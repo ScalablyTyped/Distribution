@@ -10,9 +10,9 @@ Align DOM Node Flexibly
 | ------------------ | :-------------: |
 | Full name          | dom-align |
 | Keywords           | dom, align |
-| # releases         | 10 |
-| # dependents       | 88 |
-| # downloads        | 26013327 |
+| # releases         | 13 |
+| # dependents       | 123 |
+| # downloads        | 40124976 |
 | # stars            | 1 |
 
 ## Links

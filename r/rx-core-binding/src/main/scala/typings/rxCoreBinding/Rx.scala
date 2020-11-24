@@ -9,17 +9,19 @@ import typings.rxCore.Rx.IScheduler
 import typings.rxCore.Rx.Observer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Rx")
 @js.native
 object Rx extends js.Object {
+  
   @js.native
   trait AsyncSubjectStatic
     extends Instantiable0[AsyncSubject[js.Object]]
   
   @js.native
   trait BehaviorSubject[T] extends ISubject[T] {
+    
     def getValue(): T = js.native
   }
   
@@ -29,7 +31,9 @@ object Rx extends js.Object {
   
   @js.native
   trait ConnectableObservable[T] extends Observable[T] {
+    
     def connect(): IDisposable = js.native
+    
     def refCount(): Observable[T] = js.native
   }
   
@@ -42,25 +46,31 @@ object Rx extends js.Object {
     extends Observable[T]
        with Observer[T]
        with IDisposable {
+    
     def hasObservers(): Boolean = js.native
   }
   
   @js.native
   trait Observable[T] extends js.Object {
+    
     def multicast(subject: Observable[T]): ConnectableObservable[T] = js.native
     def multicast[TResult](
       subjectSelector: js.Function0[ISubject[T]],
       selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]]
     ): Observable[T] = js.native
+    
     def publish(): ConnectableObservable[T] = js.native
     def publish[TResult](selector: js.Function1[/* source */ ConnectableObservable[T], Observable[TResult]]): Observable[TResult] = js.native
+    
     def publishLast(): ConnectableObservable[T] = js.native
     def publishLast[TResult](selector: js.Function1[/* source */ ConnectableObservable[T], Observable[TResult]]): Observable[TResult] = js.native
+    
     def publishValue(initialValue: T): ConnectableObservable[T] = js.native
     def publishValue[TResult](
       selector: js.Function1[/* source */ ConnectableObservable[T], Observable[TResult]],
       initialValue: T
     ): Observable[TResult] = js.native
+    
     def replay(): ConnectableObservable[T] = js.native
     def replay(
       selector: js.UndefOr[scala.Nothing],
@@ -134,6 +144,7 @@ object Rx extends js.Object {
     def replay(selector: Boolean, bufferSize: Double, window: js.UndefOr[scala.Nothing], scheduler: IScheduler): ConnectableObservable[T] = js.native
     def replay(selector: Boolean, bufferSize: Double, window: Double): ConnectableObservable[T] = js.native
     def replay(selector: Boolean, bufferSize: Double, window: Double, scheduler: IScheduler): ConnectableObservable[T] = js.native
+    
     /**
       * Returns an observable sequence that shares a single subscription to the underlying sequence.
       * This operator is a specialization of publish which creates a subscription when the number of observers goes from zero to one,
@@ -145,6 +156,7 @@ object Rx extends js.Object {
       * @returns An observable sequence that contains the elements of a sequence produced by multicasting the source sequence.
       */
     def share(): Observable[T] = js.native
+    
     def shareReplay(): Observable[T] = js.native
     def shareReplay(bufferSize: js.UndefOr[scala.Nothing], window: js.UndefOr[scala.Nothing], scheduler: IScheduler): Observable[T] = js.native
     def shareReplay(bufferSize: js.UndefOr[scala.Nothing], window: Double): Observable[T] = js.native
@@ -153,6 +165,7 @@ object Rx extends js.Object {
     def shareReplay(bufferSize: Double, window: js.UndefOr[scala.Nothing], scheduler: IScheduler): Observable[T] = js.native
     def shareReplay(bufferSize: Double, window: Double): Observable[T] = js.native
     def shareReplay(bufferSize: Double, window: Double, scheduler: IScheduler): Observable[T] = js.native
+    
     /**
       * Returns an observable sequence that shares a single subscription to the underlying sequence and starts with an initialValue.
       * This operator is a specialization of publishValue which creates a subscription when the number of observers goes from zero to one,
@@ -182,6 +195,7 @@ object Rx extends js.Object {
   @js.native
   trait SubjectStatic
     extends Instantiable0[Subject[js.Object]] {
+    
     def create[T](): ISubject[T] = js.native
     def create[T](observer: js.UndefOr[scala.Nothing], observable: Observable[T]): ISubject[T] = js.native
     def create[T](observer: Observer[T]): ISubject[T] = js.native
@@ -189,7 +203,8 @@ object Rx extends js.Object {
   }
   
   type AsyncSubject[T] = Subject[T]
+  
   type ReplaySubject[T] = Subject[T]
+  
   type Subject[T] = ISubject[T]
 }
-

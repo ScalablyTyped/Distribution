@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Courses$Students")
 @js.native
 class ResourceCoursesStudents protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * classroom.courses.students.create
     * @desc Adds a user as a student of a course.  This method returns the
@@ -51,6 +53,7 @@ class ResourceCoursesStudents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStudent]
   ): Unit = js.native
+  
   /**
     * classroom.courses.students.delete
     * @desc Deletes a student of a course.  This method returns the following
@@ -84,6 +87,7 @@ class ResourceCoursesStudents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * classroom.courses.students.get
     * @desc Returns a student of a course.  This method returns the following
@@ -117,6 +121,7 @@ class ResourceCoursesStudents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStudent]
   ): Unit = js.native
+  
   /**
     * classroom.courses.students.list
     * @desc Returns a list of students of this course that the requester is
@@ -154,4 +159,3 @@ class ResourceCoursesStudents protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListStudentsResponse]
   ): Unit = js.native
 }
-

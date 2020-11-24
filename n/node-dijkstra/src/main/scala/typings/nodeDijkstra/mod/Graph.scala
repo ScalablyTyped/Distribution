@@ -2,10 +2,11 @@ package typings.nodeDijkstra.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Graph extends js.Object {
+  
   /**
     * Adds a node to the graph
     *
@@ -30,6 +31,7 @@ trait Graph extends js.Object {
     * route.addNode('D', d)
     */
   def addNode(name: String, neighbors: js.Any): Graph = js.native
+  
   /**
     * Compute the shortest path between the specified nodes
     *
@@ -73,6 +75,7 @@ trait Graph extends js.Object {
     */
   def path(start: js.Any, goal: js.Any): js.Any = js.native
   def path(start: js.Any, goal: js.Any, options: PathOption): js.Any = js.native
+  
   /**
     * Removes a node and all of its references from the graph
     *
@@ -91,4 +94,3 @@ trait Graph extends js.Object {
     */
   def removeNode(name: String): Graph = js.native
 }
-

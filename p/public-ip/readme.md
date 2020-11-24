@@ -10,9 +10,9 @@ Get your public IP address - very fast!
 | ------------------ | :-------------: |
 | Full name          | public-ip |
 | Keywords           | get, ip, ipv4, ipv6, address, external, public, machine, fast, opendns, dns |
-| # releases         | 6 |
-| # dependents       | 161 |
-| # downloads        | 3821740 |
+| # releases         | 8 |
+| # dependents       | 196 |
+| # downloads        | 5828418 |
 | # stars            | 14 |
 
 ## Links

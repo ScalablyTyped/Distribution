@@ -10,9 +10,9 @@ Sort an array of numbers
 | ------------------ | :-------------: |
 | Full name          | num-sort |
 | Keywords           | sort, sorter, compare, comparator, number, numbers, order, asc, ascending, desc, descending |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 17 |
-| # downloads        | 104445 |
+| # downloads        | 139274 |
 | # stars            | 1 |
 
 ## Links

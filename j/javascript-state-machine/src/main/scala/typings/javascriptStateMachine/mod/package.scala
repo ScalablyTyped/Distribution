@@ -2,10 +2,12 @@ package typings.javascriptStateMachine
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type StateMachineCan = js.Function1[/* evt */ java.lang.String, scala.Boolean]
+  
   type StateMachineErrorCallback = js.Function7[
     /* eventName */ js.UndefOr[java.lang.String], 
     /* from */ js.UndefOr[java.lang.String], 
@@ -16,8 +18,12 @@ package object mod {
     /* ex */ js.UndefOr[typings.std.Error], 
     scala.Unit
   ]
+  
   type StateMachineEvent = js.Function1[/* repeated */ js.Any, scala.Unit]
+  
   type StateMachineIs = js.Function1[/* state */ java.lang.String, scala.Boolean]
+  
   type StateMachineIsFinished = js.Function1[/* state */ java.lang.String, scala.Boolean]
+  
   type StateMachineTransitions = js.Function0[js.Array[java.lang.String]]
 }

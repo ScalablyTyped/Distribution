@@ -8,9 +8,58 @@ import typings.pollyjsCore.mod.RecordingRouteEvent
 import typings.pollyjsCore.mod.ResponseRouteEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pollyjsCoreStrings {
+  
+  @scala.inline
+  def abort: abort = "abort".asInstanceOf[abort]
+  
+  @scala.inline
+  def beforePersist: beforePersist = "beforePersist".asInstanceOf[beforePersist]
+  
+  @scala.inline
+  def beforeReplay: beforeReplay = "beforeReplay".asInstanceOf[beforeReplay]
+  
+  @scala.inline
+  def beforeResponse: beforeResponse = "beforeResponse".asInstanceOf[beforeResponse]
+  
+  @scala.inline
+  def create: create = "create".asInstanceOf[create]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def intercept: intercept = "intercept".asInstanceOf[intercept]
+  
+  @scala.inline
+  def passthrough: passthrough = "passthrough".asInstanceOf[passthrough]
+  
+  @scala.inline
+  def record: record = "record".asInstanceOf[record]
+  
+  @scala.inline
+  def register: register = "register".asInstanceOf[register]
+  
+  @scala.inline
+  def replay: replay = "replay".asInstanceOf[replay]
+  
+  @scala.inline
+  def request: request = "request".asInstanceOf[request]
+  
+  @scala.inline
+  def response: response = "response".asInstanceOf[response]
+  
+  @scala.inline
+  def stop: stop = "stop".asInstanceOf[stop]
+  
+  @scala.inline
+  def stopped: stopped = "stopped".asInstanceOf[stopped]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  
   @js.native
   sealed trait abort extends js.Object
   
@@ -65,38 +114,4 @@ object pollyjsCoreStrings {
   
   @js.native
   sealed trait warn extends EXPIRY_STRATEGY
-  
-  @scala.inline
-  def abort: abort = "abort".asInstanceOf[abort]
-  @scala.inline
-  def beforePersist: beforePersist = "beforePersist".asInstanceOf[beforePersist]
-  @scala.inline
-  def beforeReplay: beforeReplay = "beforeReplay".asInstanceOf[beforeReplay]
-  @scala.inline
-  def beforeResponse: beforeResponse = "beforeResponse".asInstanceOf[beforeResponse]
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def intercept: intercept = "intercept".asInstanceOf[intercept]
-  @scala.inline
-  def passthrough: passthrough = "passthrough".asInstanceOf[passthrough]
-  @scala.inline
-  def record: record = "record".asInstanceOf[record]
-  @scala.inline
-  def register: register = "register".asInstanceOf[register]
-  @scala.inline
-  def replay: replay = "replay".asInstanceOf[replay]
-  @scala.inline
-  def request: request = "request".asInstanceOf[request]
-  @scala.inline
-  def response: response = "response".asInstanceOf[response]
-  @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
-  @scala.inline
-  def stopped: stopped = "stopped".asInstanceOf[stopped]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
 }
-

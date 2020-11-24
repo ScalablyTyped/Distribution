@@ -2,10 +2,11 @@ package typings.lodash.fpMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashProperty2x2[TObject] extends js.Object {
+  
   def apply[TKey /* <: /* keyof TObject */ String */](path: TKey): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
@@ -22,4 +23,3 @@ trait LodashProperty2x2[TObject] extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
   ] = js.native
 }
-

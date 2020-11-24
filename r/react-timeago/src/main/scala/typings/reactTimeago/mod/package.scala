@@ -2,9 +2,10 @@ package typings.reactTimeago
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type Formatter = js.Function5[
     /* value */ scala.Double, 
     /* unit */ typings.reactTimeago.mod.Unit, 
@@ -15,6 +16,7 @@ package object mod {
     ], 
     typings.react.mod.ReactNode
   ]
+  
   type ReactTimeago[T /* <: typings.react.mod.ComponentType[js.Object] */] = typings.react.mod.Component[
     typings.reactTimeago.mod.ReactTimeagoProps[T] with typings.react.mod.ComponentProps[T], 
     js.Object, 

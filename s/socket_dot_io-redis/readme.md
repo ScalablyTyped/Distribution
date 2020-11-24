@@ -10,9 +10,9 @@ Typings are for version 1.0.0
 | ------------------ | :-------------: |
 | Full name          | socket.io-redis |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 139 |
-| # downloads        | 2462196 |
+| # releases         | 3 |
+| # dependents       | 170 |
+| # downloads        | 4006028 |
 | # stars            | 44 |
 
 ## Links

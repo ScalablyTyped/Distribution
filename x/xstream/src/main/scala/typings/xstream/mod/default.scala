@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.xstream.anon.Subscribe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xstream", JSImport.Default)
 @js.native
@@ -15,57 +15,7 @@ object default
       /* producer */ InternalProducer[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
       Stream[js.Object]
     ] {
-  /**
-    * Combines multiple input streams together to return a stream whose events
-    * are arrays that collect the latest events from each input stream.
-    *
-    * *combine* internally remembers the most recent event from each of the input
-    * streams. When any of the input streams emits an event, that event together
-    * with all the other saved events are combined into an array. That array will
-    * be emitted on the output stream. It's essentially a way of joining together
-    * the events from multiple streams.
-    *
-    * Marble diagram:
-    *
-    * ```text
-    * --1----2-----3--------4---
-    * ----a-----b-----c--d------
-    *          combine
-    * ----1a-2a-2b-3b-3c-3d-4d--
-    * ```
-    *
-    * @factory true
-    * @param {Stream} stream1 A stream to combine together with other streams.
-    * @param {Stream} stream2 A stream to combine together with other streams.
-    * Multiple streams, not just two, may be given as arguments.
-    * @return {Stream}
-    */
-  @JSName("combine")
-  var combine_Original: CombineSignature = js.native
-  /**
-    * Blends multiple streams together, emitting events from all of them
-    * concurrently.
-    *
-    * *merge* takes multiple streams as arguments, and creates a stream that
-    * behaves like each of the argument streams, in parallel.
-    *
-    * Marble diagram:
-    *
-    * ```text
-    * --1----2-----3--------4---
-    * ----a-----b----c---d------
-    *            merge
-    * --1-a--2--b--3-c---d--4---
-    * ```
-    *
-    * @factory true
-    * @param {Stream} stream1 A stream to merge together with other streams.
-    * @param {Stream} stream2 A stream to merge together with other streams. Two
-    * or more streams may be given as arguments.
-    * @return {Stream}
-    */
-  @JSName("merge")
-  var merge_Original: MergeSignature = js.native
+  
   /**
     * Combines multiple input streams together to return a stream whose events
     * are arrays that collect the latest events from each input stream.
@@ -442,7 +392,35 @@ object default
     * @return {Stream}
     */
   @JSName("combine")
+  var combine_Original: CombineSignature = js.native
+  /**
+    * Combines multiple input streams together to return a stream whose events
+    * are arrays that collect the latest events from each input stream.
+    *
+    * *combine* internally remembers the most recent event from each of the input
+    * streams. When any of the input streams emits an event, that event together
+    * with all the other saved events are combined into an array. That array will
+    * be emitted on the output stream. It's essentially a way of joining together
+    * the events from multiple streams.
+    *
+    * Marble diagram:
+    *
+    * ```text
+    * --1----2-----3--------4---
+    * ----a-----b-----c--d------
+    *          combine
+    * ----1a-2a-2b-3b-3c-3d-4d--
+    * ```
+    *
+    * @factory true
+    * @param {Stream} stream1 A stream to combine together with other streams.
+    * @param {Stream} stream2 A stream to combine together with other streams.
+    * Multiple streams, not just two, may be given as arguments.
+    * @return {Stream}
+    */
+  @JSName("combine")
   def combine_T[T](stream: Stream[T]*): Stream[js.Array[T]] = js.native
+  
   /**
     * Creates a new Stream given a Producer.
     *
@@ -453,6 +431,7 @@ object default
     */
   def create[T](): Stream[T] = js.native
   def create[T](producer: Producer[T]): Stream[T] = js.native
+  
   /**
     * Creates a new MemoryStream given a Producer.
     *
@@ -463,6 +442,7 @@ object default
     */
   def createWithMemory[T](): MemoryStream[T] = js.native
   def createWithMemory[T](producer: Producer[T]): MemoryStream[T] = js.native
+  
   /**
     * Creates a Stream that immediately emits the "complete" notification when
     * started, and that's it.
@@ -477,7 +457,8 @@ object default
     * @factory true
     * @return {Stream}
     */
-  def empty(): Stream[_] = js.native
+  def empty[T](): Stream[T] = js.native
+  
   def from[T](input: js.Array[T]): Stream[T] = js.native
   /**
     * Creates a stream from an Array, Promise, or an Observable.
@@ -489,6 +470,7 @@ object default
   def from[T](input: js.Thenable[T]): Stream[T] = js.native
   def from[T](input: Observable[T]): Stream[T] = js.native
   def from[T](input: Stream[T]): Stream[T] = js.native
+  
   /**
     * Converts an array to a stream. The returned stream will emit synchronously
     * all the items in the array, and then complete.
@@ -505,6 +487,7 @@ object default
     * @return {Stream}
     */
   def fromArray[T](array: js.Array[T]): Stream[T] = js.native
+  
   /**
     * Converts an Observable into a Stream.
     *
@@ -513,6 +496,7 @@ object default
     * @return {Stream}
     */
   def fromObservable[T](obs: Subscribe): Stream[T] = js.native
+  
   /**
     * Converts a promise to a stream. The returned stream will emit the resolved
     * value of the promise, and then complete. However, if the promise is
@@ -530,6 +514,7 @@ object default
     * @return {Stream}
     */
   def fromPromise[T](promise: js.Thenable[T]): Stream[T] = js.native
+  
   /**
     * Blends multiple streams together, emitting events from all of them
     * concurrently.
@@ -845,6 +830,31 @@ object default
     s10: Stream[T10]
   ): Stream[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = js.native
   /**
+    * Blends multiple streams together, emitting events from all of them
+    * concurrently.
+    *
+    * *merge* takes multiple streams as arguments, and creates a stream that
+    * behaves like each of the argument streams, in parallel.
+    *
+    * Marble diagram:
+    *
+    * ```text
+    * --1----2-----3--------4---
+    * ----a-----b----c---d------
+    *            merge
+    * --1-a--2--b--3-c---d--4---
+    * ```
+    *
+    * @factory true
+    * @param {Stream} stream1 A stream to merge together with other streams.
+    * @param {Stream} stream2 A stream to merge together with other streams. Two
+    * or more streams may be given as arguments.
+    * @return {Stream}
+    */
+  @JSName("merge")
+  var merge_Original: MergeSignature = js.native
+  
+  /**
     * Creates a Stream that does nothing when started. It never emits any event.
     *
     * Marble diagram:
@@ -857,7 +867,8 @@ object default
     * @factory true
     * @return {Stream}
     */
-  def never(): Stream[_] = js.native
+  def never[T](): Stream[T] = js.native
+  
   /**
     * Creates a Stream that immediately emits the arguments that you give to
     * *of*, then completes.
@@ -876,6 +887,7 @@ object default
     * @return {Stream}
     */
   def of[T](items: T*): Stream[T] = js.native
+  
   /**
     * Creates a stream that periodically emits incremental numbers, every
     * `period` milliseconds.
@@ -893,6 +905,7 @@ object default
     * @return {Stream}
     */
   def periodic(period: Double): Stream[Double] = js.native
+  
   /**
     * Creates a Stream that immediately emits an "error" notification with the
     * value you passed as the `error` argument when the stream starts, and that's
@@ -911,4 +924,3 @@ object default
     */
   def `throw`(error: js.Any): Stream[_] = js.native
 }
-

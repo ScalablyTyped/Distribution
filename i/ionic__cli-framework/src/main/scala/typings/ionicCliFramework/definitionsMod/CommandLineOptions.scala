@@ -3,12 +3,12 @@ package typings.ionicCliFramework.definitionsMod
 import typings.minimist.mod.ParsedArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CommandLineOptions extends ParsedArgs
-
 object CommandLineOptions {
+  
   @scala.inline
   def apply(_underscore: js.Array[String]): CommandLineOptions = {
     val __obj = js.Dynamic.literal()
@@ -16,4 +16,3 @@ object CommandLineOptions {
     __obj.asInstanceOf[CommandLineOptions]
   }
 }
-

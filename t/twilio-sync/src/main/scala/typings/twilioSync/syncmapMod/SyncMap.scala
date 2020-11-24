@@ -7,7 +7,7 @@ import typings.twilioSync.mutatorMod.Mutator
 import typings.twilioSync.paginatorMod.Paginator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
@@ -28,9 +28,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class SyncMap protected () extends Closeable {
   def this(syncMapImpl: SyncMapImpl) = this()
-  val syncMapImpl: js.Any = js.native
+  
   def dateExpires: String = js.native
+  
   def dateUpdated: Date = js.native
+  
   /**
     * Retrieve an item by key.
     * @param {String} key Identifies the desired item.
@@ -47,6 +49,7 @@ class SyncMap protected () extends Closeable {
     *   });
     */
   def get(key: String): js.Promise[MapItem] = js.native
+  
   /**
     * Get a complete list of items from the map.
     * @param {Object} [args] Arguments for query.
@@ -71,8 +74,11 @@ class SyncMap protected () extends Closeable {
     */
   def getItems(): js.Promise[Paginator[MapItem]] = js.native
   def getItems(args: js.Any): js.Promise[Paginator[MapItem]] = js.native
+  
   def lastEventId: Double = js.native
+  
   def links: js.Any = js.native
+  
   /**
     * Schedules a modification to this Map Item that will apply a mutation function.
     * If no Item with the given key exists, it will first be created, having the default value (<code>{}</code>).
@@ -100,6 +106,7 @@ class SyncMap protected () extends Closeable {
     */
   def mutate(key: String, mutator: Mutator): js.Promise[MapItem] = js.native
   def mutate(key: String, mutator: Mutator, itemMetadataUpdates: ItemMetadata): js.Promise[MapItem] = js.native
+  
   /**
     * Delete an item, given its key.
     * @param {String} key Selects the item to delete.
@@ -116,6 +123,7 @@ class SyncMap protected () extends Closeable {
     *   });
     */
   def remove(key: String): js.Promise[Unit] = js.native
+  
   /**
     * Delete this map. It will be impossible to restore it.
     * @return {Promise<void>} A promise that resolves when the map has been deleted.
@@ -130,7 +138,9 @@ class SyncMap protected () extends Closeable {
     *   });
     */
   def removeMap(): js.Promise[Unit] = js.native
+  
   def revision: String = js.native
+  
   /**
     * Add a new item to the map with the given key:value pair. Overwrites any value that might already exist at that key.
     * @param {String} key Unique item identifier.
@@ -149,6 +159,7 @@ class SyncMap protected () extends Closeable {
     */
   def set(key: String, value: js.Object): js.Promise[MapItem] = js.native
   def set(key: String, value: js.Object, itemMetadataUpdates: ItemMetadata): js.Promise[MapItem] = js.native
+  
   /**
     * Update the time-to-live of a map item.
     * @param {Number} key Item key.
@@ -165,6 +176,7 @@ class SyncMap protected () extends Closeable {
     *   });
     */
   def setItemTtl(key: String, ttl: Double): js.Promise[Unit] = js.native
+  
   /**
     * Update the time-to-live of the map.
     * @param {Number} ttl Specifies the TTL in seconds after which the map is subject to automatic deletion. The value 0 means infinity.
@@ -180,9 +192,15 @@ class SyncMap protected () extends Closeable {
     *   });
     */
   def setTtl(ttl: Double): js.Promise[Unit] = js.native
+  
   def sid: String = js.native
+  
+  val syncMapImpl: js.Any = js.native
+  
   def `type`: String = js.native
+  
   def uniqueName: String = js.native
+  
   /**
     * Modify a map item by appending new fields (or by overwriting existing ones) with the values from
     * the provided Object. Creates a new item if no item by this key exists, copying all given fields and values
@@ -211,13 +229,13 @@ class SyncMap protected () extends Closeable {
     */
   def update(key: String, obj: js.Object): js.Promise[MapItem] = js.native
   def update(key: String, obj: js.Object, itemMetadataUpdates: ItemMetadata): js.Promise[MapItem] = js.native
+  
   def uri: String = js.native
 }
-
 /* static members */
 @JSImport("twilio-sync/lib/syncmap", "SyncMap")
 @js.native
 object SyncMap extends js.Object {
+  
   def `type`: String = js.native
 }
-

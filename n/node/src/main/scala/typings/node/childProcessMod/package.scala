@@ -2,10 +2,12 @@ package typings.node
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object childProcessMod {
+  
   type Serializable = java.lang.String | js.Object | scala.Double | scala.Boolean
+  
   /* Rewritten from type alias, can be one of: 
     - typings.node.nodeStrings.pipe
     - typings.node.nodeStrings.ignore
@@ -20,5 +22,6 @@ package object childProcessMod {
       typings.node.nodeStrings.pipe | typings.node.nodeStrings.ipc | typings.node.nodeStrings.ignore | typings.node.nodeStrings.inherit | typings.node.streamMod.Stream | scala.Double | scala.Null
     ]
   ])
+  
   type StdioPipe = js.UndefOr[scala.Null | typings.node.nodeStrings.pipe]
 }

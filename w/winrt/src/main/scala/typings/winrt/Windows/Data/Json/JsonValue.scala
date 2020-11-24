@@ -2,12 +2,12 @@ package typings.winrt.Windows.Data.Json
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JsonValue extends IJsonValue
-
 object JsonValue {
+  
   @scala.inline
   def apply(
     getArray: () => JsonArray,
@@ -22,4 +22,3 @@ object JsonValue {
     __obj.asInstanceOf[JsonValue]
   }
 }
-

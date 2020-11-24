@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/logging/v2beta1", "logging_v2beta1.Resource$Projects$Metrics")
 @js.native
 class ResourceProjectsMetrics protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * logging.projects.metrics.create
     * @desc Creates a logs-based metric.
@@ -101,6 +103,7 @@ class ResourceProjectsMetrics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLogMetric]
   ): Unit = js.native
+  
   /**
     * logging.projects.metrics.delete
     * @desc Deletes a logs-based metric.
@@ -181,6 +184,7 @@ class ResourceProjectsMetrics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * logging.projects.metrics.get
     * @desc Gets a logs-based metric.
@@ -264,6 +268,7 @@ class ResourceProjectsMetrics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLogMetric]
   ): Unit = js.native
+  
   /**
     * logging.projects.metrics.list
     * @desc Lists logs-based metrics.
@@ -364,6 +369,7 @@ class ResourceProjectsMetrics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListLogMetricsResponse]
   ): Unit = js.native
+  
   /**
     * logging.projects.metrics.update
     * @desc Creates or updates a logs-based metric.
@@ -459,4 +465,3 @@ class ResourceProjectsMetrics protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLogMetric]
   ): Unit = js.native
 }
-

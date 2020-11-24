@@ -10,9 +10,9 @@ Copy a file
 | ------------------ | :-------------: |
 | Full name          | cp-file |
 | Keywords           | copy, cp, file, clone, fs, stream, file-system, ncp, fast, quick, data, content, contents |
-| # releases         | 5 |
-| # dependents       | 145 |
-| # downloads        | 22160325 |
+| # releases         | 7 |
+| # dependents       | 159 |
+| # downloads        | 37257629 |
 | # stars            | 5 |
 
 ## Links

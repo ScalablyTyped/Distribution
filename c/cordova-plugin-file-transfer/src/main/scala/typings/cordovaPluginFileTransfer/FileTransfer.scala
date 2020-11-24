@@ -5,7 +5,7 @@ import typings.std.EventTarget
 import typings.std.ProgressEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The FileTransfer object provides a way to upload files using an HTTP multi-part POST request,
@@ -13,11 +13,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait FileTransfer extends js.Object {
+  
   /**
     * Aborts an in-progress transfer. The onerror callback is passed a FileTransferError object
     * which has an error code of FileTransferError.ABORT_ERR.
     */
   def abort(): Unit = js.native
+  
   /**
     * downloads a file from server.
     * @param source            URL of the server to download the file, as encoded by encodeURI().
@@ -60,8 +62,10 @@ trait FileTransfer extends js.Object {
     trustAllHosts: Boolean,
     options: FileDownloadOptions
   ): Unit = js.native
+  
   /** Called with a ProgressEvent whenever a new chunk of data is transferred.  */
   def onprogress(event: ProgressEvent[EventTarget]): Unit = js.native
+  
   /**
     * Sends a file to a server.
     * @param fileURL           Filesystem URL representing the file on the device. For backwards compatibility,
@@ -105,4 +109,3 @@ trait FileTransfer extends js.Object {
     trustAllHosts: Boolean
   ): Unit = js.native
 }
-

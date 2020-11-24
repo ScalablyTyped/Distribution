@@ -8,13 +8,14 @@ import typings.ejWebAll.ej.SplitButton.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofSplitButton
   extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), SplitButton]
      with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, SplitButton] {
+  
   var Locale: js.Any = js.native
+  
   var fn: SplitButton = js.native
 }
-

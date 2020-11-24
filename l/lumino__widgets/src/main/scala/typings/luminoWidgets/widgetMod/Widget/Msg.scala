@@ -4,7 +4,7 @@ import typings.luminoMessaging.mod.ConflatableMessage
 import typings.luminoMessaging.mod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection of stateless messages related to widgets.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@lumino/widgets/types/widget", "Widget.Msg")
 @js.native
 object Msg extends js.Object {
+  
   /**
     * A singleton conflatable `'activate-request'` message.
     *
@@ -21,6 +22,7 @@ object Msg extends js.Object {
     * may include focusing its node or descendant node.
     */
   val ActivateRequest: ConflatableMessage = js.native
+  
   /**
     * A singleton `'after-attach'` message.
     *
@@ -28,6 +30,7 @@ object Msg extends js.Object {
     * This message is sent to a widget after it is attached.
     */
   val AfterAttach: Message = js.native
+  
   /**
     * A singleton `'after-detach'` message.
     *
@@ -35,6 +38,7 @@ object Msg extends js.Object {
     * This message is sent to a widget after it is detached.
     */
   val AfterDetach: Message = js.native
+  
   /**
     * A singleton `'after-hide'` message.
     *
@@ -44,6 +48,7 @@ object Msg extends js.Object {
     * This message is **not** sent when the widget is being detached.
     */
   val AfterHide: Message = js.native
+  
   /**
     * A singleton `'after-show'` message.
     *
@@ -53,6 +58,7 @@ object Msg extends js.Object {
     * This message is **not** sent when the widget is being attached.
     */
   val AfterShow: Message = js.native
+  
   /**
     * A singleton `'before-attach'` message.
     *
@@ -60,6 +66,7 @@ object Msg extends js.Object {
     * This message is sent to a widget before it is attached.
     */
   val BeforeAttach: Message = js.native
+  
   /**
     * A singleton `'before-detach'` message.
     *
@@ -67,6 +74,7 @@ object Msg extends js.Object {
     * This message is sent to a widget before it is detached.
     */
   val BeforeDetach: Message = js.native
+  
   /**
     * A singleton `'before-hide'` message.
     *
@@ -76,6 +84,7 @@ object Msg extends js.Object {
     * This message is **not** sent when the widget is being detached.
     */
   val BeforeHide: Message = js.native
+  
   /**
     * A singleton `'before-show'` message.
     *
@@ -85,6 +94,7 @@ object Msg extends js.Object {
     * This message is **not** sent when the widget is being attached.
     */
   val BeforeShow: Message = js.native
+  
   /**
     * A singleton conflatable `'close-request'` message.
     *
@@ -93,6 +103,7 @@ object Msg extends js.Object {
     * and remove itself from the widget hierarchy.
     */
   val CloseRequest: ConflatableMessage = js.native
+  
   /**
     * A singleton conflatable `'fit-request'` message.
     *
@@ -103,6 +114,7 @@ object Msg extends js.Object {
     * layouts will respond to messages of this type.
     */
   val FitRequest: ConflatableMessage = js.native
+  
   /**
     * A singleton `'parent-changed'` message.
     *
@@ -110,6 +122,7 @@ object Msg extends js.Object {
     * This message is sent to a widget when its parent has changed.
     */
   val ParentChanged: Message = js.native
+  
   /**
     * A singleton conflatable `'update-request'` message.
     *
@@ -123,4 +136,3 @@ object Msg extends js.Object {
     */
   val UpdateRequest: ConflatableMessage = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class provides renderer-specific plugins for exporting content from a renderer.
@@ -31,4 +31,3 @@ class Extract protected ()
   extends typings.pixiJs.PIXI.Extract {
   def this(renderer: typings.pixiJs.PIXI.Renderer) = this()
 }
-

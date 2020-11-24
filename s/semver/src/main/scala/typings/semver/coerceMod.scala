@@ -4,11 +4,12 @@ import typings.semver.mod.CoerceOptions
 import typings.semver.semverMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver/functions/coerce", JSImport.Namespace)
 @js.native
 object coerceMod extends js.Object {
+  
   /**
     * Coerces a string to SemVer if possible
     */
@@ -22,4 +23,3 @@ object coerceMod extends js.Object {
   def apply(version: ^): ^  | Null = js.native
   def apply(version: ^, options: CoerceOptions): ^  | Null = js.native
 }
-

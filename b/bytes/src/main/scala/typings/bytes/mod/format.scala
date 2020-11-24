@@ -2,11 +2,12 @@ package typings.bytes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bytes", "format")
 @js.native
 object format extends js.Object {
+  
   /**
     * Format the given value in bytes into a string.
     *
@@ -16,4 +17,3 @@ object format extends js.Object {
   def apply(value: Double): String = js.native
   def apply(value: Double, options: BytesOptions): String = js.native
 }
-

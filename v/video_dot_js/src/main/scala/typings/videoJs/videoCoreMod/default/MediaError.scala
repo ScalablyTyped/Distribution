@@ -10,7 +10,7 @@ import typings.videoJs.videoJsNumbers.`4`
 import typings.videoJs.videoJsNumbers.`5`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core", "MediaError")
 @js.native
@@ -31,40 +31,48 @@ Instantiable1[
       (/* value */ Double) | (/* value */ typings.videoJs.mod.videojs.MediaError) | (/* value */ String) | (/* value */ StringDictionary[js.Any]), 
       typings.videoJs.mod.videojs.MediaError
     ] {
+  
   /**
     * W3C error code for media error aborted.
     * @default 1
     */
   var MEDIA_ERR_ABORTED: `1` = js.native
+  
   /**
     * W3C error code for any custom error.
     * @default 0
     */
   var MEDIA_ERR_CUSTOM: `0` = js.native
+  
   /**
     * W3C error code for any decoding error.
     * @default 3
     */
   var MEDIA_ERR_DECODE: `3` = js.native
+  
   /**
     * W3C error code for any time that a source is encrypted.
     * @default 5
     */
   var MEDIA_ERR_ENCRYPTED: `5` = js.native
+  
   /**
     * W3C error code for any network error.
     * @default 2
     */
   var MEDIA_ERR_NETWORK: `2` = js.native
+  
   /**
     * W3C error code for any time that a source is not supported.
     * @default 4
     */
   var MEDIA_ERR_SRC_NOT_SUPPORTED: `4` = js.native
+  
   /**
     * The default `MediaError` messages based on the {@link MediaError.errorTypes}.
     */
   var defaultMessages: js.Array[String] = js.native
+  
   /**
     * Errors indexed by the W3C standard. The order **CANNOT CHANGE**! See the
     * specification listed under {@link MediaError} for more information.
@@ -78,4 +86,3 @@ Instantiable1[
     */
   val errorTypes: js.Array[String] = js.native
 }
-

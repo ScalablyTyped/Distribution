@@ -3,14 +3,18 @@ package typings.layuiSrc.layui
 import typings.layuiSrc.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Table extends js.Object {
+  
   def checkStatus(id: String): Data = js.native
+  
   def exportFile(id: String, data: js.Any): Unit = js.native
   def exportFile(id: String, data: js.Any, `type`: String): Unit = js.native
+  
   def init(filter: String, option: TableOption): js.Object = js.native
+  
   // obj内容变化的，没法声明出指定，但这里提供了替代方案，
   /**
     * import TableOnCheckbox = layui.TableOnCheckbox;
@@ -29,10 +33,13 @@ trait Table extends js.Object {
     * @param callback
     */
   def on(event: String, callback: js.ThisFunction1[/* this */ js.Any, /* obj */ js.Any, _]): Unit = js.native
+  
   def reload(id: String, option: TableOption): Unit = js.native
   def reload(option: TableOption): Unit = js.native
+  
   def render(option: TableOption): TableRendered = js.native
+  
   def resize(id: String): Unit = js.native
+  
   def set(option: TableOption): Unit = js.native
 }
-

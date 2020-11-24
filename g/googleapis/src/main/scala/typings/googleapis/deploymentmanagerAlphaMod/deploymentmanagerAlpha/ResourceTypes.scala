@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/deploymentmanager/alpha", "deploymentmanager_alpha.Resource$Types")
 @js.native
 class ResourceTypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * deploymentmanager.types.delete
     * @desc Deletes a type and all of the resources in the type.
@@ -42,6 +44,7 @@ class ResourceTypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.types.get
     * @desc Gets information about a specific type.
@@ -67,6 +70,7 @@ class ResourceTypes protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceTypesGet, options: MethodOptions): GaxiosPromise[SchemaType] = js.native
   def get(params: ParamsResourceTypesGet, options: MethodOptions, callback: BodyResponseCallback[SchemaType]): Unit = js.native
+  
   /**
     * deploymentmanager.types.insert
     * @desc Creates a type.
@@ -96,6 +100,7 @@ class ResourceTypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.types.list
     * @desc Lists all resource types for Deployment Manager.
@@ -128,6 +133,7 @@ class ResourceTypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTypesListResponse]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.types.patch
     * @desc Updates a type. This method supports patch semantics.
@@ -158,6 +164,7 @@ class ResourceTypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.types.update
     * @desc Updates a type.
@@ -189,4 +196,3 @@ class ResourceTypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

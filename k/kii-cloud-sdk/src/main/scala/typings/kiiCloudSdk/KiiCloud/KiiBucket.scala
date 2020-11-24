@@ -5,13 +5,14 @@ import typings.kiiCloudSdk.anon.`6`
 import typings.kiiCloudSdk.anon.`7`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a KiiBucket object
   */
 @js.native
 trait KiiBucket extends js.Object {
+  
   /**
     * Get the ACL handle for this bucket
     *
@@ -24,6 +25,7 @@ trait KiiBucket extends js.Object {
     *         var acl = bucket.acl();
     */
   def acl(): KiiACL = js.native
+  
   /**
     * Execute count aggregation of all clause query on current bucket.
     *
@@ -81,6 +83,7 @@ trait KiiBucket extends js.Object {
     */
   def count(): js.Promise[js.Tuple3[KiiBucket, KiiQuery, Double]] = js.native
   def count(callbacks: `6`): js.Promise[js.Tuple3[KiiBucket, KiiQuery, Double]] = js.native
+  
   /**
     * Execute count aggregation of specified query on current bucket.
     * Query that passed as nextQuery in success callback of {@link #executeQuery}, is not
@@ -144,6 +147,7 @@ trait KiiBucket extends js.Object {
     */
   def countWithQuery(query: KiiQuery): js.Promise[js.Tuple3[KiiBucket, KiiQuery, Double]] = js.native
   def countWithQuery(query: KiiQuery, callbacks: `6`): js.Promise[js.Tuple3[KiiBucket, KiiQuery, Double]] = js.native
+  
   /**
     * Create a KiiObject within the current bucket
     *
@@ -156,6 +160,7 @@ trait KiiBucket extends js.Object {
     *     var object = bucket.createObject();
     */
   def createObject(): KiiObject = js.native
+  
   /**
     * Create a KiiObject within the current bucket, specifying its ID.
     *
@@ -177,6 +182,7 @@ trait KiiBucket extends js.Object {
     *      var object = bucket.createObjectWithID('__OBJECT_ID_');
     */
   def createObjectWithID(objectID: String): KiiObject = js.native
+  
   /**
     * Create a KiiObject within the current bucket, with type
     *
@@ -192,6 +198,7 @@ trait KiiBucket extends js.Object {
     *     var object = bucket.createObjectWithType("scores");
     */
   def createObjectWithType(`type`: String): KiiObject = js.native
+  
   /**
     * Delete the given bucket from the server
     *
@@ -242,6 +249,7 @@ trait KiiBucket extends js.Object {
     */
   def delete(): js.Promise[KiiBucket] = js.native
   def delete(callbacks: `7`): js.Promise[KiiBucket] = js.native
+  
   /**
     * Perform a query on the given bucket
     *
@@ -331,10 +339,10 @@ trait KiiBucket extends js.Object {
     */
   def executeQuery[T](query: KiiQuery): js.Promise[js.Tuple3[KiiQuery, js.Array[T], KiiQuery]] = js.native
   def executeQuery[T](query: KiiQuery, callbacks: `5`[T]): js.Promise[js.Tuple3[KiiQuery, js.Array[T], KiiQuery]] = js.native
+  
   /**
     * The name of this bucket
     *
     */
   def getBucketName(): String = js.native
 }
-

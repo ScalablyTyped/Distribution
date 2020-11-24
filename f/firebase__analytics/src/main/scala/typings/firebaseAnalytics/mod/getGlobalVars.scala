@@ -1,13 +1,13 @@
 package typings.firebaseAnalytics.mod
 
-import typings.firebaseAnalytics.anon.InitializedIdPromisesMap
+import typings.firebaseAnalytics.anon.DynamicConfigPromisesList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/analytics", "getGlobalVars")
 @js.native
 object getGlobalVars extends js.Object {
-  def apply(): InitializedIdPromisesMap = js.native
+  
+  def apply(): DynamicConfigPromisesList = js.native
 }
-

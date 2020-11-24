@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Mylibrary$Readingpositions")
 @js.native
 class ResourceMylibraryReadingpositions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * books.mylibrary.readingpositions.get
     * @desc Retrieves my reading position information for a volume.
@@ -46,6 +48,7 @@ class ResourceMylibraryReadingpositions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReadingPosition]
   ): Unit = js.native
+  
   /**
     * books.mylibrary.readingpositions.setPosition
     * @desc Sets my reading position information for a volume.
@@ -81,4 +84,3 @@ class ResourceMylibraryReadingpositions protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

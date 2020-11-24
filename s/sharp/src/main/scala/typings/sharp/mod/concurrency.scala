@@ -2,11 +2,12 @@ package typings.sharp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sharp", "concurrency")
 @js.native
 object concurrency extends js.Object {
+  
   /**
     * Gets or sets the number of threads libvips' should create to process each image.
     * The default value is the number of CPU cores. A value of 0 will reset to this default.
@@ -17,4 +18,3 @@ object concurrency extends js.Object {
   def apply(): Double = js.native
   def apply(concurrency: Double): Double = js.native
 }
-

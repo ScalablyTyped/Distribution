@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "Service")
 @js.native
@@ -14,4 +14,3 @@ class Service ()
   extends typings.awsSdk.mod.Service {
   def this(config: ServiceConfigurationOptions) = this()
 }
-

@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows to control notification behavior of a broadcaster.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XBroadcaster extends XInterface {
+  
   /**
     * suspends broadcasts to the registered listeners.
     *
@@ -19,6 +20,7 @@ trait XBroadcaster extends XInterface {
     * pairs. While there is at least one lock remaining, no broadcasts are sent to registered listeners.
     */
   def lockBroadcasts(): Unit = js.native
+  
   /**
     * resumes the broadcasts which were suspended by {@link XBroadcaster.lockBroadcasts()} .
     *
@@ -30,8 +32,8 @@ trait XBroadcaster extends XInterface {
     */
   def unlockBroadcasts(): Unit = js.native
 }
-
 object XBroadcaster {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -43,22 +45,26 @@ object XBroadcaster {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), lockBroadcasts = js.Any.fromFunction0(lockBroadcasts), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), unlockBroadcasts = js.Any.fromFunction0(unlockBroadcasts))
     __obj.asInstanceOf[XBroadcaster]
   }
+  
   @scala.inline
   implicit class XBroadcasterOps[Self <: XBroadcaster] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setLockBroadcasts(value: () => Unit): Self = this.set("lockBroadcasts", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setUnlockBroadcasts(value: () => Unit): Self = this.set("unlockBroadcasts", js.Any.fromFunction0(value))
   }
-  
 }
-

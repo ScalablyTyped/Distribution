@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storagetransfer/v1", "storagetransfer_v1.Resource$Googleserviceaccounts")
 @js.native
 class ResourceGoogleserviceaccounts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * storagetransfer.googleServiceAccounts.get
     * @desc Returns the Google service account that is used by Storage Transfer
@@ -105,4 +107,3 @@ class ResourceGoogleserviceaccounts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleServiceAccount]
   ): Unit = js.native
 }
-

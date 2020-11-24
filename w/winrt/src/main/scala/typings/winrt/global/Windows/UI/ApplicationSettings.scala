@@ -4,11 +4,12 @@ import typings.winrt.Windows.UI.ApplicationSettings.SettingsEdgeLocation
 import typings.winrt.Windows.UI.Popups.UICommandInvokedHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.UI.ApplicationSettings")
 @js.native
 object ApplicationSettings extends js.Object {
+  
   @js.native
   class SettingsCommand protected ()
     extends typings.winrt.Windows.UI.ApplicationSettings.SettingsCommand {
@@ -16,8 +17,29 @@ object ApplicationSettings extends js.Object {
   }
   
   @js.native
+  object SettingsEdgeLocation extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.winrt.Windows.UI.ApplicationSettings.SettingsEdgeLocation with Double] = js.native
+    
+    /* 1 */ val left: typings.winrt.Windows.UI.ApplicationSettings.SettingsEdgeLocation.left with Double = js.native
+    
+    /* 0 */ val right: typings.winrt.Windows.UI.ApplicationSettings.SettingsEdgeLocation.right with Double = js.native
+  }
+  
+  @js.native
   class SettingsPane ()
     extends typings.winrt.Windows.UI.ApplicationSettings.SettingsPane
+  /* static members */
+  @js.native
+  object SettingsPane extends js.Object {
+    
+    var edge: SettingsEdgeLocation = js.native
+    
+    def getForCurrentView(): typings.winrt.Windows.UI.ApplicationSettings.SettingsPane = js.native
+    
+    def show(): Unit = js.native
+  }
   
   @js.native
   class SettingsPaneCommandsRequest ()
@@ -26,22 +48,4 @@ object ApplicationSettings extends js.Object {
   @js.native
   class SettingsPaneCommandsRequestedEventArgs ()
     extends typings.winrt.Windows.UI.ApplicationSettings.SettingsPaneCommandsRequestedEventArgs
-  
-  @js.native
-  object SettingsEdgeLocation extends js.Object {
-    /* 1 */ val left: typings.winrt.Windows.UI.ApplicationSettings.SettingsEdgeLocation.left with Double = js.native
-    /* 0 */ val right: typings.winrt.Windows.UI.ApplicationSettings.SettingsEdgeLocation.right with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrt.Windows.UI.ApplicationSettings.SettingsEdgeLocation with Double] = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object SettingsPane extends js.Object {
-    var edge: SettingsEdgeLocation = js.native
-    def getForCurrentView(): typings.winrt.Windows.UI.ApplicationSettings.SettingsPane = js.native
-    def show(): Unit = js.native
-  }
-  
 }
-

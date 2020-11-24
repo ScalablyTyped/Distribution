@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fastify-warning" : "0.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fastify-warning" : "0.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

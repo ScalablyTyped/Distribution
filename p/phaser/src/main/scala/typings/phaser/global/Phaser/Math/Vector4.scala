@@ -2,7 +2,7 @@ package typings.phaser.global.Phaser.Math
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A representation of a vector in 4D space.
@@ -41,4 +41,3 @@ class Vector4 ()
   def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
 }
-

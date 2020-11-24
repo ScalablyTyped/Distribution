@@ -3,7 +3,7 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.anon.Duration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A pc.SoundInstance plays a {@link pc.Sound}.
@@ -39,4 +39,3 @@ class SoundInstance protected ()
   extends typings.playcanvas.pc.SoundInstance {
   def this(manager: typings.playcanvas.pc.SoundManager, sound: typings.playcanvas.pc.Sound, options: Duration) = this()
 }
-

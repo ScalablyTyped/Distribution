@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.StartScreen
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TileSize extends js.Object
-
 /** Specifies the size of tile to pin. Used by some secondary tile constructors. */
 @JSGlobal("Windows.UI.StartScreen.TileSize")
 @js.native
 object TileSize extends js.Object {
+  
   /** Use the default size of the app tile. */
   @js.native
   sealed trait default extends TileSize
@@ -42,6 +42,4 @@ object TileSize extends js.Object {
   /** The wide tile. */
   @js.native
   sealed trait wide310x150 extends TileSize
-  
 }
-

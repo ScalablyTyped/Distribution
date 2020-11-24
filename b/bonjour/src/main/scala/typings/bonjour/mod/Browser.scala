@@ -5,7 +5,7 @@ import typings.bonjour.bonjourStrings.up
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Start a browser
@@ -23,25 +23,32 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Browser extends EventEmitter {
-  var services: js.Array[Service] = js.native
+  
   @JSName("on")
-  def on_down(event: down, listener: js.Function1[/* service */ Service, Unit]): this.type = js.native
+  def on_down(event: down, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
   @JSName("on")
-  def on_up(event: up, listener: js.Function1[/* service */ Service, Unit]): this.type = js.native
+  def on_up(event: up, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
+  
   @JSName("once")
-  def once_down(event: down, listener: js.Function1[/* service */ Service, Unit]): this.type = js.native
+  def once_down(event: down, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
   @JSName("once")
-  def once_up(event: up, listener: js.Function1[/* service */ Service, Unit]): this.type = js.native
+  def once_up(event: up, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
+  
   @JSName("removeAllListeners")
   def removeAllListeners_down(event: down): this.type = js.native
   @JSName("removeAllListeners")
   def removeAllListeners_up(event: up): this.type = js.native
+  
   @JSName("removeListener")
-  def removeListener_down(event: down, listener: js.Function1[/* service */ Service, Unit]): this.type = js.native
+  def removeListener_down(event: down, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_up(event: up, listener: js.Function1[/* service */ Service, Unit]): this.type = js.native
+  def removeListener_up(event: up, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
+  
+  var services: js.Array[RemoteService] = js.native
+  
   def start(): Unit = js.native
+  
   def stop(): Unit = js.native
+  
   def update(): Unit = js.native
 }
-

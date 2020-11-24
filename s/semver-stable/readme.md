@@ -11,8 +11,8 @@ semver-stable
 | Full name          | semver-stable |
 | Keywords           | semver, satisfies, satisfy, match, stable, is |
 | # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 375129 |
+| # dependents       | 10 |
+| # downloads        | 803345 |
 | # stars            | 1 |
 
 ## Links

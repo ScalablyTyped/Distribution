@@ -1,7 +1,7 @@
 
 # Scala.js typings for pretty-bytes
 
-Typings are for version 5.3.0
+Typings are for version 5.4.1
 
 ## Library description:
 Convert bytes to a human readable string: 1337 → 1.34 kB
@@ -10,9 +10,9 @@ Convert bytes to a human readable string: 1337 → 1.34 kB
 | ------------------ | :-------------: |
 | Full name          | pretty-bytes |
 | Keywords           | pretty, bytes, byte, filesize, size, file, human, humanized, readable, si, data, locale, localization, localized |
-| # releases         | 5 |
-| # dependents       | 603 |
-| # downloads        | 154135253 |
+| # releases         | 3 |
+| # dependents       | 740 |
+| # downloads        | 191823068 |
 | # stars            | 31 |
 
 ## Links

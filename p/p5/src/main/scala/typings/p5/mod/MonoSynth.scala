@@ -2,17 +2,11 @@ package typings.p5.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MonoSynth extends js.Object {
-  /**
-    *   Getters and Setters
-    */
-  var attack: Double = js.native
-  var decay: Double = js.native
-  var release: Double = js.native
-  var sustain: Double = js.native
+  
   /**
     *   MonoSynth amp
     *   @param vol desired volume
@@ -21,20 +15,31 @@ trait MonoSynth extends js.Object {
     */
   def amp(vol: Double): Double = js.native
   def amp(vol: Double, rampTime: Double): Double = js.native
+  
+  /**
+    *   Getters and Setters
+    */
+  var attack: Double = js.native
+  
   /**
     *   Connect to a p5.sound / Web Audio object.
     *   @param unit A p5.sound or Web Audio object
     */
   def connect(unit: js.Object): Unit = js.native
+  
+  var decay: Double = js.native
+  
   /**
     *   Disconnect all outputs
     */
   def disconnect(): Unit = js.native
+  
   /**
     *   Get rid of the MonoSynth and free up its resources
     *   / memory.
     */
   def dispose(): Unit = js.native
+  
   /**
     *   Play tells the MonoSynth to start playing a note.
     *   This method schedules the calling of
@@ -76,6 +81,9 @@ trait MonoSynth extends js.Object {
   def play(note: Double, velocity: Double, secondsFromNow: js.UndefOr[scala.Nothing], sustainTime: Double): Unit = js.native
   def play(note: Double, velocity: Double, secondsFromNow: Double): Unit = js.native
   def play(note: Double, velocity: Double, secondsFromNow: Double, sustainTime: Double): Unit = js.native
+  
+  var release: Double = js.native
+  
   /**
     *   Set values like a traditional  ADSR envelope .
     *   @param attackTime Time (in seconds before envelope
@@ -108,6 +116,9 @@ trait MonoSynth extends js.Object {
   def setADSR(attackTime: Double, decayTime: Double, susRatio: js.UndefOr[scala.Nothing], releaseTime: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double, releaseTime: Double): Unit = js.native
+  
+  var sustain: Double = js.native
+  
   /**
     *   Trigger the Attack, and Decay portion of the
     *   Envelope. Similar to holding down a key on a
@@ -130,6 +141,7 @@ trait MonoSynth extends js.Object {
   def triggerAttack(note: Double, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double): Unit = js.native
   def triggerAttack(note: Double, velocity: Double): Unit = js.native
   def triggerAttack(note: Double, velocity: Double, secondsFromNow: Double): Unit = js.native
+  
   /**
     *   Trigger the release of the Envelope. This is
     *   similar to releasing the key on a piano and
@@ -139,4 +151,3 @@ trait MonoSynth extends js.Object {
     */
   def triggerRelease(secondsFromNow: Double): Unit = js.native
 }
-

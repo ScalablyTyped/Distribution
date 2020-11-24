@@ -10,9 +10,9 @@ Clone and modify a RegExp instance
 | ------------------ | :-------------: |
 | Full name          | clone-regexp |
 | Keywords           | regexp, regex, re, regular, expression, clone, duplicate, modify, mutate |
-| # releases         | 5 |
-| # dependents       | 19 |
-| # downloads        | 50463269 |
+| # releases         | 2 |
+| # dependents       | 24 |
+| # downloads        | 77512627 |
 | # stars            | 1 |
 
 ## Links

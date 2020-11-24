@@ -6,13 +6,15 @@ import typings.nodePgMigrate.schemasTypesMod.DropSchema
 import typings.nodePgMigrate.schemasTypesMod.RenameSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-pg-migrate/dist/operations/schemas", JSImport.Namespace)
 @js.native
 object schemasMod extends js.Object {
+  
   def createSchema(mOptions: MigrationOptions): CreateSchema = js.native
+  
   def dropSchema(mOptions: MigrationOptions): DropSchema = js.native
+  
   def renameSchema(mOptions: MigrationOptions): RenameSchema = js.native
 }
-

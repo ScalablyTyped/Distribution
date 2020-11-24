@@ -10,9 +10,9 @@ SAX based evented streaming JSON parser in JavaScript (browser and node)
 | ------------------ | :-------------: |
 | Full name          | clarinet |
 | Keywords           | sax, json, parser, stream, streaming, event, events, emitter, async, streamer, browser |
-| # releases         | 5 |
-| # dependents       | 28 |
-| # downloads        | 397264 |
+| # releases         | 4 |
+| # dependents       | 30 |
+| # downloads        | 381734 |
 | # stars            | 6 |
 
 ## Links

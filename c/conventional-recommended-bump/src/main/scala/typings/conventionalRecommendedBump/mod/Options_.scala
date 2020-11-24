@@ -5,7 +5,7 @@ import typings.conventionalRecommendedBump.mod.Options.WhatBump
 import typings.conventionalRecommendedBump.mod.Options.WhatBump.Result
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `options` is an object with the following properties:
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Options_ extends js.Object {
+  
   /**
     * This should serve as default values for other arguments of
     * `conventional-recommended-bump` so you don't need to rewrite the same or
@@ -28,6 +29,7 @@ trait Options_ extends js.Object {
   var config: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CoreOptions.Config<Commit, WriterContext> */ js.Any
   ] = js.native
+  
   /**
     * If `true`, reverted commits will be ignored.
     *
@@ -35,6 +37,7 @@ trait Options_ extends js.Object {
     * true
     */
   var ignoreReverted: js.UndefOr[Boolean] = js.native
+  
   /**
     * Specify the name of a package in a [Lerna](https://lernajs.io/)-managed
     * repository. The package name will be used when fetching all changes to a
@@ -47,6 +50,7 @@ trait Options_ extends js.Object {
     * `conventional-changelog` as the value of the `lernaPackage` option.
     */
   var lernaPackage: js.UndefOr[String] = js.native
+  
   /**
     * It's recommended to use a preset so you don't have to define everything
     * yourself.
@@ -54,6 +58,7 @@ trait Options_ extends js.Object {
     * The value is passed to [`conventional-changelog-preset-loader`](https://www.npmjs.com/package/conventional-changelog-preset-loader).
     */
   var preset: js.UndefOr[String] = js.native
+  
   /**
     * Specify a prefix for the git tag that will be taken into account during the
     * comparison.
@@ -63,6 +68,7 @@ trait Options_ extends js.Object {
     * value of the `tagPrefix` option.
     */
   var tagPrefix: js.UndefOr[String] = js.native
+  
   /**
     * A function that takes parsed commits as an argument.
     *
@@ -79,51 +85,65 @@ trait Options_ extends js.Object {
     */
   var whatBump: js.UndefOr[WhatBump] = js.native
 }
-
 object Options_ {
+  
   @scala.inline
   def apply(): Options_ = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options_]
   }
+  
   @scala.inline
   implicit class Options_Ops[Self <: Options_] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setConfig(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CoreOptions.Config<Commit, WriterContext> */ js.Any
     ): Self = this.set("config", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteConfig: Self = this.set("config", js.undefined)
+    
     @scala.inline
     def setIgnoreReverted(value: Boolean): Self = this.set("ignoreReverted", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIgnoreReverted: Self = this.set("ignoreReverted", js.undefined)
+    
     @scala.inline
     def setLernaPackage(value: String): Self = this.set("lernaPackage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLernaPackage: Self = this.set("lernaPackage", js.undefined)
+    
     @scala.inline
     def setPreset(value: String): Self = this.set("preset", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePreset: Self = this.set("preset", js.undefined)
+    
     @scala.inline
     def setTagPrefix(value: String): Self = this.set("tagPrefix", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTagPrefix: Self = this.set("tagPrefix", js.undefined)
+    
     @scala.inline
     def setWhatBump(value: /* commits */ js.Array[Commit[String | Double | js.Symbol]] => Result): Self = this.set("whatBump", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteWhatBump: Self = this.set("whatBump", js.undefined)
   }
-  
 }
-

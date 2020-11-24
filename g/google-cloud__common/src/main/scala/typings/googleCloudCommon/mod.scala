@@ -9,16 +9,34 @@ import typings.googleCloudCommon.utilMod.GoogleInnerError
 import typings.googleCloudCommon.utilMod.Util_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/common", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class ApiError protected ()
     extends typings.googleCloudCommon.utilMod.ApiError {
     def this(errorBody: GoogleErrorBody) = this()
     def this(errorMessage: String) = this()
+  }
+  /* static members */
+  @js.native
+  object ApiError extends js.Object {
+    
+    /**
+      * Pieces together an error message by combining all unique error messages
+      * returned from a single GoogleError
+      *
+      * @private
+      *
+      * @param {GoogleErrorBody} err The original error.
+      * @param {GoogleInnerError[]} [errors] Inner errors, if any.
+      * @returns {string}
+      */
+    def createMultiErrorMessage(err: GoogleErrorBody): String = js.native
+    def createMultiErrorMessage(err: GoogleErrorBody, errors: js.Array[GoogleInnerError]): String = js.native
   }
   
   @js.native
@@ -76,32 +94,13 @@ object mod extends js.Object {
     def this(config: ServiceObjectConfig) = this()
   }
   
-  /* static members */
-  @js.native
-  object ApiError extends js.Object {
-    /**
-      * Pieces together an error message by combining all unique error messages
-      * returned from a single GoogleError
-      *
-      * @private
-      *
-      * @param {GoogleErrorBody} err The original error.
-      * @param {GoogleInnerError[]} [errors] Inner errors, if any.
-      * @returns {string}
-      */
-    def createMultiErrorMessage(err: GoogleErrorBody): String = js.native
-    def createMultiErrorMessage(err: GoogleErrorBody, errors: js.Array[GoogleInnerError]): String = js.native
-  }
-  
   @js.native
   object util extends TopLevel[Util_] {
+    
     @js.native
     class PartialFailureError protected ()
       extends typings.googleCloudCommon.utilMod.PartialFailureError {
       def this(b: GoogleErrorBody) = this()
     }
-    
   }
-  
 }
-

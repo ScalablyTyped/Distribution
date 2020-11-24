@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Color extends js.Object
-
 /**
   * An enum representing the named colors available to use in map images.
   */
 @JSGlobal("GoogleAppsScript.Maps.Color")
 @js.native
 object Color extends js.Object {
+  
   @js.native
   sealed trait BLACK extends Color
   
@@ -42,6 +42,4 @@ object Color extends js.Object {
   
   @js.native
   sealed trait YELLOW extends Color
-  
 }
-

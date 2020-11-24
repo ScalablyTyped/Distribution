@@ -300,11 +300,12 @@ import typings.std.SVGUseElement
 import typings.std.SVGViewElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("element-ready", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(selector: `object`): StoppablePromise[js.UndefOr[HTMLObjectElement]] = js.native
   def apply(selector: `object`, options: Options): StoppablePromise[js.UndefOr[HTMLObjectElement]] = js.native
   def apply(selector: `var`): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
@@ -666,4 +667,3 @@ object ^ extends js.Object {
   def apply[ElementName /* <: Element */](selector: String): StoppablePromise[js.UndefOr[ElementName]] = js.native
   def apply[ElementName /* <: Element */](selector: String, options: Options): StoppablePromise[js.UndefOr[ElementName]] = js.native
 }
-

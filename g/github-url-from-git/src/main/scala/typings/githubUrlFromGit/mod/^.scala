@@ -2,11 +2,12 @@ package typings.githubUrlFromGit.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("github-url-from-git", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Normalize Git URLs into GitHub URLs
     *
@@ -17,4 +18,3 @@ object ^ extends js.Object {
   def apply(url: String): String = js.native
   def apply(url: String, opts: githubUrlFromGitOptions): String = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.playcanvas.pc
 import typings.playcanvas.pc.callbacks.UpdateShader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Standard material is the main, general purpose material that is most often used for rendering.
@@ -61,8 +61,28 @@ import scala.scalajs.js.annotation._
   * * When anisotropy == 0, specular is isotropic.
   * * When anisotropy < 0, anistropy direction aligns with the tangent, and specular anisotropy increases as the anisotropy value decreases to minimum of -1.
   * * When anisotropy > 0, anistropy direction aligns with the bi-normal, and specular anisotropy increases as anisotropy value increases to maximum of 1.
-  * @property clearCoat - Defines the strength of clear coat layer from 0 to 1. Clear coat layer is disabled when clearCoat == 0. Default value is 0 (disabled).
-  * @property clearCoatGlossiness - Defines the glossiness of the clear coat layer from 0 (rough) to 1 (mirror).
+  * @property clearCoat - Defines intensity of clear coat layer from 0 to 1. Clear coat layer is disabled when clearCoat == 0. Default value is 0 (disabled).
+  * @property clearCoatMap - Monochrome clear coat intensity map (default is null). If specified, will be multiplied by normalized 'clearCoat' value and/or vertex colors.
+  * @property clearCoatMapUv - Clear coat intensity map UV channel.
+  * @property clearCoatMapTiling - Controls the 2D tiling of the clear coat intensity map.
+  * @property clearCoatMapOffset - Controls the 2D offset of the clear coat intensity map. Each component is between 0 and 1.
+  * @property clearCoatMapChannel - Color channel of the clear coat intensity map to use. Can be "r", "g", "b" or "a".
+  * @property clearCoatVertexColor - Use mesh vertex colors for clear coat intensity. If clearCoatMap is set, it'll be multiplied by vertex colors.
+  * @property clearCoatVertexColorChannel - Vertex color channel to use for clear coat intensity. Can be "r", "g", "b" or "a".
+  * @property clearCoatGlossiness - Defines the clear coat glossiness of the clear coat layer from 0 (rough) to 1 (mirror).
+  * @property clearCoatGlossMap - Monochrome clear coat glossiness map (default is null). If specified, will be multiplied by normalized 'clearCoatGlossiness' value and/or vertex colors.
+  * @property clearCoatGlossMapUv - Clear coat gloss map UV channel.
+  * @property clearCoatGlossMapTiling - Controls the 2D tiling of the clear coat gloss map.
+  * @property clearCoatGlossMapOffset - Controls the 2D offset of the clear coat gloss map. Each component is between 0 and 1.
+  * @property clearCoatGlossMapChannel - Color channel of the clear coat gloss map to use. Can be "r", "g", "b" or "a".
+  * @property clearCoatGlossVertexColor - Use mesh vertex colors for clear coat glossiness. If clearCoatGlossMap is set, it'll be multiplied by vertex colors.
+  * @property clearCoatGlossVertexColorChannel - Vertex color channel to use for clear coat glossiness. Can be "r", "g", "b" or "a".
+  * @property clearCoatNormalMap - The clear coat normal map of the material (default is null). The texture must contains normalized, tangent space normals.
+  * @property clearCoatNormalMapUv - Clear coat normal map UV channel.
+  * @property clearCoatNormalMapTiling - Controls the 2D tiling of the main clear coat normal map.
+  * @property clearCoatNormalMapOffset - Controls the 2D offset of the main clear coat normal map. Each component is between 0 and 1.
+  * @property clearCoatBumpiness - The bumpiness of the clear coat layer. This value scales the assigned main clear coat normal map.
+  * It should be normally between 0 (no bump mapping) and 1 (full bump mapping), but can be set to e.g. 2 to give even more pronounced bump effect.
   * @property useMetalness - Use metalness properties instead of specular.
   * When enabled, diffuse colors also affect specular instead of the dedicated specular map.
   * This can be used as alternative to specular color to save space.
@@ -112,6 +132,8 @@ import scala.scalajs.js.annotation._
   * @property opacityMapOffset - Controls the 2D offset of the opacity map. Each component is between 0 and 1.
   * @property opacityVertexColor - Use mesh vertex colors for opacity. If opacityMap is set, it'll be multiplied by vertex colors.
   * @property opacityVertexColorChannel - Vertex color channels to use for opacity. Can be "r", "g", "b" or "a".
+  * @property opacityFadesSpecular - used to specify whether specular and reflections are faded out using {@link pc.Material#opacity}. Default is true. When set to false use {@link pc.Material#alphaFade} to fade out materials.
+  * @property alphaFade - used to fade out materials when {@link pc.Material#opacityFadesSpecular} is set to false.
   * @property normalMap - The main (primary) normal map of the material (default is null).
   * The texture must contains normalized, tangent space normals.
   * @property normalMapUv - Main (primary) normal map UV channel.
@@ -171,7 +193,7 @@ import scala.scalajs.js.annotation._
   * * {@link pc.SPECULAR_BLINN}: Energy-conserving Blinn-Phong.
   * @property fresnelModel - Defines the formula used for Fresnel effect.
   * As a side-effect, enabling any Fresnel model changes the way diffuse and reflection components are combined.
-  * When Fresnel is off, legacy non energy-conserving combining is used. When it is on, combining behaviour is defined by conserveEnergy parameter.
+  * When Fresnel is off, legacy non energy-conserving combining is used. When it is on, combining behavior is defined by conserveEnergy parameter.
   * * {@link pc.FRESNEL_NONE}: No Fresnel.
   * * {@link pc.FRESNEL_SCHLICK}: Schlick's approximation of Fresnel (recommended). Parameterized by specular color.
   * @property useFog - Apply fogging (as configured in scene settings)
@@ -213,6 +235,8 @@ import scala.scalajs.js.annotation._
   * * occludeSpecularFloat: defines if {@link pc.StandardMaterial#occludeSpecularIntensity} constant should affect specular occlusion.
   * * alphaTest: enable alpha testing. See {@link pc.Material#alphaTest}.
   * * alphaToCoverage: enable alpha to coverage. See {@link pc.Material#alphaToCoverage}.
+  * * opacityFadesSpecular: enable specular fade. See {@link pc.Material#opacityFadesSpecular}.
+  * * alphaFade: fade value. See {@link pc.Material#alphaFade}.
   * * sphereMap: if {@link pc.StandardMaterial#sphereMap} is used.
   * * cubeMap: if {@link pc.StandardMaterial#cubeMap} is used.
   * * dpAtlas: if dual-paraboloid reflection is used. Dual paraboloid reflections replace prefiltered cubemaps on certain platform (mostly Android) for performance reasons.
@@ -238,6 +262,8 @@ import scala.scalajs.js.annotation._
   * * fastTbn: Use slightly cheaper normal mapping code (skip tangent space normalization). Can look buggy sometimes.
   * * refraction: if refraction is used.
   * * skyboxIntensity: if reflected skybox intensity should be modulated.
+  * * useCubeMapRotation: if cube map rotation is enabled.
+  * * useRightHandedCubeMap: if the cube map uses a right-handed coordinate system. The convention for pre-generated cubemaps is left-handed.
   * * useTexCubeLod: if textureCubeLodEXT function should be used to read prefiltered cubemaps. Usually true of iOS, false on other devices due to quality/performance balance.
   * * useInstancing: if hardware instancing compatible shader should be generated. Transform is read from per-instance {@link pc.VertexBuffer} instead of shader's uniforms.
   * * useMorphPosition: if morphing code should be generated to morph positions.
@@ -245,15 +271,23 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait StandardMaterial extends Material {
+  
+  /**
+    * used to fade out materials when {@link pc.Material#opacityFadesSpecular} is set to false.
+    */
+  var alphaFade: Double = js.native
+  
   /**
     * The ambient color of the material. This color value is 3-component (RGB),
     where each component is between 0 and 1.
     */
   var ambient: Color = js.native
+  
   /**
     * Enables scene ambient multiplication by material ambient color.
     */
   var ambientTint: Boolean = js.native
+  
   /**
     * Defines amount of anisotropy. Requires enableGGXSpecular is set to true.
     * When anisotropy == 0, specular is isotropic.
@@ -261,60 +295,170 @@ trait StandardMaterial extends Material {
     * When anisotropy > 0, anistropy direction aligns with the bi-normal, and specular anisotropy increases as anisotropy value increases to maximum of 1.
     */
   var anisotropy: Double = js.native
+  
   /**
     * Baked ambient occlusion (AO) map (default is null). Modulates ambient color.
     */
   var aoMap: Texture | Null = js.native
+  
   /**
     * Color channel of the AO map to use. Can be "r", "g", "b" or "a".
     */
   var aoMapChannel: String = js.native
+  
   /**
     * Controls the 2D offset of the AO map. Each component is between 0 and 1.
     */
   var aoMapOffset: Vec2 = js.native
+  
   /**
     * Controls the 2D tiling of the AO map.
     */
   var aoMapTiling: Vec2 = js.native
+  
   /**
     * AO map UV channel
     */
   var aoMapUv: Double = js.native
+  
   /**
     * Use mesh vertex colors for AO. If aoMap is set, it'll be multiplied by vertex colors.
     */
   var aoVertexColor: Boolean = js.native
+  
   /**
     * Vertex color channels to use for AO. Can be "r", "g", "b" or "a".
     */
   var aoVertexColorChannel: String = js.native
+  
   /**
     * The bumpiness of the material. This value scales the assigned main (primary) normal map.
     It should be normally between 0 (no bump mapping) and 1 (full bump mapping), but can be set to e.g. 2 to give even more pronounced bump effect.
     */
   var bumpiness: Double = js.native
+  
   /**
     * Object containing custom shader chunks that will replace default ones.
     */
   var chunks: js.Any = js.native
+  
   /**
-    * Defines the strength of clear coat layer from 0 to 1. Clear coat layer is disabled when clearCoat == 0. Default value is 0 (disabled).
+    * Defines intensity of clear coat layer from 0 to 1. Clear coat layer is disabled when clearCoat == 0. Default value is 0 (disabled).
     */
   var clearCoat: Double = js.native
+  
   /**
-    * Defines the glossiness of the clear coat layer from 0 (rough) to 1 (mirror).
+    * The bumpiness of the clear coat layer. This value scales the assigned main clear coat normal map.
+    It should be normally between 0 (no bump mapping) and 1 (full bump mapping), but can be set to e.g. 2 to give even more pronounced bump effect.
+    */
+  var clearCoatBumpiness: Double = js.native
+  
+  /**
+    * Monochrome clear coat glossiness map (default is null). If specified, will be multiplied by normalized 'clearCoatGlossiness' value and/or vertex colors.
+    */
+  var clearCoatGlossMap: Texture | Null = js.native
+  
+  /**
+    * Color channel of the clear coat gloss map to use. Can be "r", "g", "b" or "a".
+    */
+  var clearCoatGlossMapChannel: String = js.native
+  
+  /**
+    * Controls the 2D offset of the clear coat gloss map. Each component is between 0 and 1.
+    */
+  var clearCoatGlossMapOffset: Vec2 = js.native
+  
+  /**
+    * Controls the 2D tiling of the clear coat gloss map.
+    */
+  var clearCoatGlossMapTiling: Vec2 = js.native
+  
+  /**
+    * Clear coat gloss map UV channel.
+    */
+  var clearCoatGlossMapUv: Double = js.native
+  
+  /**
+    * Use mesh vertex colors for clear coat glossiness. If clearCoatGlossMap is set, it'll be multiplied by vertex colors.
+    */
+  var clearCoatGlossVertexColor: Boolean = js.native
+  
+  /**
+    * Vertex color channel to use for clear coat glossiness. Can be "r", "g", "b" or "a".
+    */
+  var clearCoatGlossVertexColorChannel: String = js.native
+  
+  /**
+    * Defines the clear coat glossiness of the clear coat layer from 0 (rough) to 1 (mirror).
     */
   var clearCoatGlossiness: Double = js.native
+  
+  /**
+    * Monochrome clear coat intensity map (default is null). If specified, will be multiplied by normalized 'clearCoat' value and/or vertex colors.
+    */
+  var clearCoatMap: Texture | Null = js.native
+  
+  /**
+    * Color channel of the clear coat intensity map to use. Can be "r", "g", "b" or "a".
+    */
+  var clearCoatMapChannel: String = js.native
+  
+  /**
+    * Controls the 2D offset of the clear coat intensity map. Each component is between 0 and 1.
+    */
+  var clearCoatMapOffset: Vec2 = js.native
+  
+  /**
+    * Controls the 2D tiling of the clear coat intensity map.
+    */
+  var clearCoatMapTiling: Vec2 = js.native
+  
+  /**
+    * Clear coat intensity map UV channel.
+    */
+  var clearCoatMapUv: Double = js.native
+  
+  /**
+    * The clear coat normal map of the material (default is null). The texture must contains normalized, tangent space normals.
+    */
+  var clearCoatNormalMap: Texture | Null = js.native
+  
+  /**
+    * Controls the 2D offset of the main clear coat normal map. Each component is between 0 and 1.
+    */
+  var clearCoatNormalMapOffset: Vec2 = js.native
+  
+  /**
+    * Controls the 2D tiling of the main clear coat normal map.
+    */
+  var clearCoatNormalMapTiling: Vec2 = js.native
+  
+  /**
+    * Clear coat normal map UV channel.
+    */
+  var clearCoatNormalMapUv: Double = js.native
+  
+  /**
+    * Use mesh vertex colors for clear coat intensity. If clearCoatMap is set, it'll be multiplied by vertex colors.
+    */
+  var clearCoatVertexColor: Boolean = js.native
+  
+  /**
+    * Vertex color channel to use for clear coat intensity. Can be "r", "g", "b" or "a".
+    */
+  var clearCoatVertexColorChannel: String = js.native
+  
   /**
     * Defines how diffuse and specular components are combined when Fresnel is on.
     It is recommended that you leave this option enabled, although you may want to disable it in case when all reflection comes only from a few light sources, and you don't use an environment map, therefore having mostly black reflection.
     */
   var conserveEnergy: Boolean = js.native
+  
   /**
     * The cubic environment map of the material (default is null). Overrides sphereMap. Affects reflections. If cubemap is prefiltered, will also affect ambient color.
     */
   var cubeMap: Texture | Null = js.native
+  
   /**
     * The type of projection applied to the cubeMap property:
     * {@link pc.CUBEPROJ_NONE}: The cube map is treated as if it is infinitely far away.
@@ -322,37 +466,45 @@ trait StandardMaterial extends Material {
     Defaults to pc.CUBEPROJ_NONE.
     */
   var cubeMapProjection: Double = js.native
+  
   /**
     * The world space axis-aligned bounding box defining the
     box-projection used for the cubeMap property. Only used when cubeMapProjection is set to pc.CUBEPROJ_BOX.
     */
   var cubeMapProjectionBox: BoundingBox = js.native
+  
   /**
     * The diffuse color of the material. This color value is 3-component (RGB),
     where each component is between 0 and 1.
     Defines basic surface color (aka albedo).
     */
   var diffuse: Color = js.native
+  
   /**
     * The detail (secondary) diffuse map of the material (default is null). Will only be used if main (primary) diffuse map is non-null.
     */
   var diffuseDetailMap: Texture | Null = js.native
+  
   /**
     * Color channels of the detail (secondary) diffuse map to use. Can be "r", "g", "b", "a", "rgb" or any swizzled combination.
     */
   var diffuseDetailMapChannel: String = js.native
+  
   /**
     * Controls the 2D offset of the detail (secondary) diffuse map. Each component is between 0 and 1.
     */
   var diffuseDetailMapOffset: Vec2 = js.native
+  
   /**
     * Controls the 2D tiling of the detail (secondary) diffuse map.
     */
   var diffuseDetailMapTiling: Vec2 = js.native
+  
   /**
     * Detail (secondary) diffuse map UV channel.
     */
   var diffuseDetailMapUv: Double = js.native
+  
   /**
     * Determines how the main (primary) and detail (secondary) diffuse maps are blended together. Can be:
     * {@link pc.DETAILMODE_MUL}: Multiply together the primary and secondary colors.
@@ -364,247 +516,306 @@ trait StandardMaterial extends Material {
     Defaults to {@link pc.DETAILMODE_MUL}.
     */
   var diffuseDetailMode: String = js.native
+  
   /**
     * The main (primary) diffuse map of the material (default is null).
     */
   var diffuseMap: Texture | Null = js.native
+  
   /**
     * Color channels of the main (primary) diffuse map to use. Can be "r", "g", "b", "a", "rgb" or any swizzled combination.
     */
   var diffuseMapChannel: String = js.native
+  
   /**
     * Controls the 2D offset of the main (primary) diffuse map. Each component is between 0 and 1.
     */
   var diffuseMapOffset: Vec2 = js.native
+  
   /**
     * Controls the 2D tiling of the main (primary) diffuse map.
     */
   var diffuseMapTiling: Vec2 = js.native
+  
   /**
     * Main (primary) diffuse map UV channel.
     */
   var diffuseMapUv: Double = js.native
+  
   /**
     * Multiply main (primary) diffuse map and/or diffuse vertex color by the constant diffuse value.
     */
   var diffuseTint: Boolean = js.native
+  
   /**
     * Use mesh vertex colors for diffuse. If diffuseMap or are diffuseTint are set, they'll be multiplied by vertex colors.
     */
   var diffuseVertexColor: Boolean = js.native
+  
   /**
     * Vertex color channels to use for diffuse. Can be "r", "g", "b", "a", "rgb" or any swizzled combination.
     */
   var diffuseVertexColorChannel: String = js.native
+  
   /**
     * The emissive color of the material. This color value is 3-component (RGB),
     where each component is between 0 and 1.
     */
   var emissive: Color = js.native
+  
   /**
     * Emissive color multiplier.
     */
   var emissiveIntensity: Double = js.native
+  
   /**
     * The emissive map of the material (default is null). Can be HDR.
     */
   var emissiveMap: Texture | Null = js.native
+  
   /**
     * Color channels of the emissive map to use. Can be "r", "g", "b", "a", "rgb" or any swizzled combination.
     */
   var emissiveMapChannel: String = js.native
+  
   /**
     * Controls the 2D offset of the emissive map. Each component is between 0 and 1.
     */
   var emissiveMapOffset: Vec2 = js.native
+  
   /**
     * Controls the 2D tiling of the emissive map.
     */
   var emissiveMapTiling: Vec2 = js.native
+  
   /**
     * Emissive map UV channel.
     */
   var emissiveMapUv: Double = js.native
+  
   /**
     * Multiply emissive map and/or emissive vertex color by the constant emissive value.
     */
   var emissiveTint: Boolean = js.native
+  
   /**
     * Use mesh vertex colors for emission. If emissiveMap or emissiveTint are set, they'll be multiplied by vertex colors.
     */
   var emissiveVertexColor: Boolean = js.native
+  
   /**
     * Vertex color channels to use for emission. Can be "r", "g", "b", "a", "rgb" or any swizzled combination.
     */
   var emissiveVertexColorChannel: String = js.native
+  
   /**
     * Enables GGX specular. Also enables anisotropy parameter to set material anisotropy.
     */
   var enableGGXSpecular: Boolean = js.native
+  
   /**
     * Defines the formula used for Fresnel effect.
     As a side-effect, enabling any Fresnel model changes the way diffuse and reflection components are combined.
-    When Fresnel is off, legacy non energy-conserving combining is used. When it is on, combining behaviour is defined by conserveEnergy parameter.
+    When Fresnel is off, legacy non energy-conserving combining is used. When it is on, combining behavior is defined by conserveEnergy parameter.
     * {@link pc.FRESNEL_NONE}: No Fresnel.
     * {@link pc.FRESNEL_SCHLICK}: Schlick's approximation of Fresnel (recommended). Parameterized by specular color.
     */
   var fresnelModel: Double = js.native
+  
   /**
     * Glossiness map (default is null). If specified, will be multiplied by normalized 'shininess' value and/or vertex colors.
     */
   var glossMap: Texture | Null = js.native
+  
   /**
     * Color channel of the gloss map to use. Can be "r", "g", "b" or "a".
     */
   var glossMapChannel: String = js.native
+  
   /**
     * Controls the 2D offset of the gloss map. Each component is between 0 and 1.
     */
   var glossMapOffset: Vec2 = js.native
+  
   /**
     * Controls the 2D tiling of the gloss map.
     */
   var glossMapTiling: Vec2 = js.native
+  
   /**
     * Gloss map UV channel.
     */
   var glossMapUv: Double = js.native
+  
   /**
     * Use mesh vertex colors for glossiness. If glossMap is set, it'll be multiplied by vertex colors.
     */
   var glossVertexColor: Boolean = js.native
+  
   /**
     * Vertex color channel to use for glossiness. Can be "r", "g", "b" or "a".
     */
   var glossVertexColorChannel: String = js.native
+  
   /**
     * The height map of the material (default is null). Used for a view-dependent parallax effect.
     The texture must represent the height of the surface where darker pixels are lower and lighter pixels are higher.
     It is recommended to use it together with a normal map.
     */
   var heightMap: Texture | Null = js.native
+  
   /**
     * Color channel of the height map to use. Can be "r", "g", "b" or "a".
     */
   var heightMapChannel: String = js.native
+  
   /**
     * Height map multiplier. Affects the strength of the parallax effect.
     */
   var heightMapFactor: Double = js.native
+  
   /**
     * Controls the 2D offset of the height map. Each component is between 0 and 1.
     */
   var heightMapOffset: Vec2 = js.native
+  
   /**
     * Controls the 2D tiling of the height map.
     */
   var heightMapTiling: Vec2 = js.native
+  
   /**
     * Height map UV channel.
     */
   var heightMapUv: Double = js.native
+  
   /**
     * A custom lightmap of the material (default is null). Lightmaps are textures that contain pre-rendered lighting. Can be HDR.
     */
   var lightMap: Texture | Null = js.native
+  
   /**
     * Color channels of the lightmap to use. Can be "r", "g", "b", "a", "rgb" or any swizzled combination.
     */
   var lightMapChannel: String = js.native
+  
   /**
     * Controls the 2D offset of the lightmap. Each component is between 0 and 1.
     */
   var lightMapOffset: Vec2 = js.native
+  
   /**
     * Controls the 2D tiling of the lightmap.
     */
   var lightMapTiling: Vec2 = js.native
+  
   /**
     * Lightmap UV channel
     */
   var lightMapUv: Double = js.native
+  
   /**
     * Use baked vertex lighting. If lightMap is set, it'll be multiplied by vertex colors.
     */
   var lightVertexColor: Boolean = js.native
+  
   /**
     * Vertex color channels to use for baked lighting. Can be "r", "g", "b", "a", "rgb" or any swizzled combination.
     */
   var lightVertexColorChannel: String = js.native
+  
   /**
     * Defines how much the surface is metallic. From 0 (dielectric) to 1 (metal).
     */
   var metalness: Double = js.native
+  
   /**
     * Monochrome metalness map (default is null).
     */
   var metalnessMap: Texture | Null = js.native
+  
   /**
     * Color channel of the metalness map to use. Can be "r", "g", "b" or "a".
     */
   var metalnessMapChannel: String = js.native
+  
   /**
     * Controls the 2D offset of the metalness map. Each component is between 0 and 1.
     */
   var metalnessMapOffset: Vec2 = js.native
+  
   /**
     * Controls the 2D tiling of the metalness map.
     */
   var metalnessMapTiling: Vec2 = js.native
+  
   /**
     * Metalness map UV channel.
     */
   var metalnessMapUv: Double = js.native
+  
   /**
     * Use mesh vertex colors for metalness. If metalnessMap is set, it'll be multiplied by vertex colors.
     */
   var metalnessVertexColor: Boolean = js.native
+  
   /**
     * Vertex color channel to use for metalness. Can be "r", "g", "b" or "a".
     */
   var metalnessVertexColorChannel: String = js.native
+  
   /**
     * The detail (secondary) normal map of the material (default is null). Will only be used if main (primary) normal map is non-null.
     */
   var normalDetailMap: Texture | Null = js.native
+  
   /**
     * The bumpiness of the material. This value scales the assigned detail (secondary) normal map.
     It should be normally between 0 (no bump mapping) and 1 (full bump mapping), but can be set to e.g. 2 to give even more pronounced bump effect.
     */
   var normalDetailMapBumpiness: Double = js.native
+  
   /**
     * Controls the 2D offset of the detail (secondary) normal map. Each component is between 0 and 1.
     */
   var normalDetailMapOffset: Vec2 = js.native
+  
   /**
     * Controls the 2D tiling of the detail (secondary) normal map.
     */
   var normalDetailMapTiling: Vec2 = js.native
+  
   /**
     * Detail (secondary) normal map UV channel.
     */
   var normalDetailMapUv: Double = js.native
+  
   /**
     * The main (primary) normal map of the material (default is null).
     The texture must contains normalized, tangent space normals.
     */
   var normalMap: Texture | Null = js.native
+  
   /**
     * Controls the 2D offset of the main (primary) normal map. Each component is between 0 and 1.
     */
   var normalMapOffset: Vec2 = js.native
+  
   /**
     * Controls the 2D tiling of the main (primary) normal map.
     */
   var normalMapTiling: Vec2 = js.native
+  
   /**
     * Main (primary) normal map UV channel.
     */
   var normalMapUv: Double = js.native
+  
   /**
     * Tells if AO should darken directional lighting.
     */
   var occludeDirect: Double = js.native
+  
   /**
     * Uses ambient occlusion to darken specular/reflection. It's a hack, because real specular occlusion is view-dependent. However, it can be better than nothing.
     * {@link pc.SPECOCC_NONE}: No specular occlusion
@@ -612,10 +823,12 @@ trait StandardMaterial extends Material {
     * {@link pc.SPECOCC_GLOSSDEPENDENT}: Modify AO based on material glossiness/view angle to occlude specular.
     */
   var occludeSpecular: Double = js.native
+  
   /**
     * Controls visibility of specular occlusion.
     */
   var occludeSpecularIntensity: Double = js.native
+  
   /**
     * A custom function that will be called after all shader generator properties are collected and before shader code is generated.
     This function will receive an object with shader generator settings (based on current material and scene properties), that you can change and then return.
@@ -649,6 +862,8 @@ trait StandardMaterial extends Material {
     * occludeSpecularFloat: defines if {@link pc.StandardMaterial#occludeSpecularIntensity} constant should affect specular occlusion.
     * alphaTest: enable alpha testing. See {@link pc.Material#alphaTest}.
     * alphaToCoverage: enable alpha to coverage. See {@link pc.Material#alphaToCoverage}.
+    * opacityFadesSpecular: enable specular fade. See {@link pc.Material#opacityFadesSpecular}.
+    * alphaFade: fade value. See {@link pc.Material#alphaFade}.
     * sphereMap: if {@link pc.StandardMaterial#sphereMap} is used.
     * cubeMap: if {@link pc.StandardMaterial#cubeMap} is used.
     * dpAtlas: if dual-paraboloid reflection is used. Dual paraboloid reflections replace prefiltered cubemaps on certain platform (mostly Android) for performance reasons.
@@ -674,6 +889,76 @@ trait StandardMaterial extends Material {
     * fastTbn: Use slightly cheaper normal mapping code (skip tangent space normalization). Can look buggy sometimes.
     * refraction: if refraction is used.
     * skyboxIntensity: if reflected skybox intensity should be modulated.
+    * useCubeMapRotation: if cube map rotation is enabled.
+    * useRightHandedCubeMap: if the cube map uses a right-handed coordinate system. The convention for pre-generated cubemaps is left-handed.
+    * useTexCubeLod: if textureCubeLodEXT function should be used to read prefiltered cubemaps. Usually true of iOS, false on other devices due to quality/performance balance.
+    * useInstancing: if hardware instancing compatible shader should be generated. Transform is read from per-instance {@link pc.VertexBuffer} instead of shader's uniforms.
+    * useMorphPosition: if morphing code should be generated to morph positions.
+    * useMorphNormal: if morphing code should be generated to morph normals.
+    */
+  def onUpdateShader(options: js.Any): js.Any = js.native
+  /**
+    * A custom function that will be called after all shader generator properties are collected and before shader code is generated.
+    This function will receive an object with shader generator settings (based on current material and scene properties), that you can change and then return.
+    Returned value will be used instead. This is mostly useful when rendering the same set of objects, but with different shader variations based on the same material.
+    For example, you may wish to render a depth or normal pass using textures assigned to the material, a reflection pass with simpler shaders and so on.
+    Properties of the object passed into this function are:
+    * pass: value of {@link pc.Layer#shaderPass} of the Layer being rendered.
+    * chunks: Object containing custom shader chunks that will replace default ones.
+    * customFragmentShader: Completely replace fragment shader with this code.
+    * forceUv1: if UV1 (second set of texture coordinates) is required in the shader. Will be declared as "vUv1" and passed to the fragment shader.
+    * fog: the type of fog being applied in the shader. See {@link pc.Scene#fog} for the list of possible values.
+    * gamma: the type of gamma correction being applied in the shader. See {@link pc.Scene#gammaCorrection} for the list of possible values.
+    * toneMap: the type of tone mapping being applied in the shader. See {@link pc.Scene#toneMapping} for the list of possible values.
+    * ambientTint: the value of {@link pc.StandardMaterial#ambientTint}.
+    * specularAntialias: the value of {@link pc.StandardMaterial#specularAntialias}.
+    * conserveEnergy: the value of {@link pc.StandardMaterial#conserveEnergy}.
+    * occludeSpecular: the value of {@link pc.StandardMaterial#occludeSpecular}.
+    * occludeDirect: the value of {@link pc.StandardMaterial#occludeDirect}.
+    * shadingModel: the value of {@link pc.StandardMaterial#shadingModel}.
+    * fresnelModel: the value of {@link pc.StandardMaterial#fresnelModel}.
+    * cubeMapProjection: the value of {@link pc.StandardMaterial#cubeMapProjection}.
+    * useMetalness: the value of {@link pc.StandardMaterial#useMetalness}.
+    * blendType: the value of {@link pc.Material#blendType}.
+    * twoSidedLighting: the value of {@link pc.Material#twoSidedLighting}.
+    * diffuseTint: defines if {@link pc.StandardMaterial#diffuse} constant should affect diffuse color.
+    * specularTint: defines if {@link pc.StandardMaterial#specular} constant should affect specular color.
+    * metalnessTint: defines if {@link pc.StandardMaterial#metalness} constant should affect metalness value.
+    * glossTint: defines if {@link pc.StandardMaterial#shininess} constant should affect glossiness value.
+    * emissiveTint: defines if {@link pc.StandardMaterial#emissive} constant should affect emission value.
+    * opacityTint: defines if {@link pc.StandardMaterial#opacity} constant should affect opacity value.
+    * occludeSpecularFloat: defines if {@link pc.StandardMaterial#occludeSpecularIntensity} constant should affect specular occlusion.
+    * alphaTest: enable alpha testing. See {@link pc.Material#alphaTest}.
+    * alphaToCoverage: enable alpha to coverage. See {@link pc.Material#alphaToCoverage}.
+    * opacityFadesSpecular: enable specular fade. See {@link pc.Material#opacityFadesSpecular}.
+    * alphaFade: fade value. See {@link pc.Material#alphaFade}.
+    * sphereMap: if {@link pc.StandardMaterial#sphereMap} is used.
+    * cubeMap: if {@link pc.StandardMaterial#cubeMap} is used.
+    * dpAtlas: if dual-paraboloid reflection is used. Dual paraboloid reflections replace prefiltered cubemaps on certain platform (mostly Android) for performance reasons.
+    * ambientSH: if ambient spherical harmonics are used. Ambient SH replace prefiltered cubemap ambient on certain platform (mostly Android) for performance reasons.
+    * useSpecular: if any specular or reflections are needed at all.
+    * rgbmAmbient: if ambient cubemap or spherical harmonics are RGBM-encoded.
+    * hdrAmbient: if ambient cubemap or spherical harmonics are plain float HDR data.
+    * rgbmReflection: if reflection cubemap or dual paraboloid are RGBM-encoded.
+    * hdrReflection: if reflection cubemap or dual paraboloid are plain float HDR data.
+    * fixSeams: if cubemaps require seam fixing (see {@link pc.Texture#options.fixCubemapSeams}).
+    * prefilteredCubemap: if prefiltered cubemaps are used.
+    * emissiveFormat: how emissiveMap must be sampled. This value is based on {@link pc.Texture#options.rgbm} and {@link pc.Texture#options.format}. Possible values are:
+    * 0: sRGB texture
+    * 1: RGBM-encoded HDR texture
+    * 2: Simple read (no conversion from sRGB)
+    * lightMapFormat: how lightMap must be sampled. This value is based on {@link pc.Texture#options.rgbm} and {@link pc.Texture#options.format}. Possible values are:
+    * 0: sRGB texture
+    * 1: RGBM-encoded HDR texture
+    * 2: Simple read (no conversion from sRGB)
+    * useRgbm: if decodeRGBM() function is needed in the shader at all.
+    * packedNormal: if normal map contains X in RGB, Y in Alpha, and Z must be reconstructed.
+    * forceFragmentPrecision: Override fragment shader numeric precision. Can be "lowp", "mediump", "highp" or null to use default.
+    * fastTbn: Use slightly cheaper normal mapping code (skip tangent space normalization). Can look buggy sometimes.
+    * refraction: if refraction is used.
+    * skyboxIntensity: if reflected skybox intensity should be modulated.
+    * useCubeMapRotation: if cube map rotation is enabled.
+    * useRightHandedCubeMap: if the cube map uses a right-handed coordinate system. The convention for pre-generated cubemaps is left-handed.
     * useTexCubeLod: if textureCubeLodEXT function should be used to read prefiltered cubemaps. Usually true of iOS, false on other devices due to quality/performance balance.
     * useInstancing: if hardware instancing compatible shader should be generated. Transform is read from per-instance {@link pc.VertexBuffer} instead of shader's uniforms.
     * useMorphPosition: if morphing code should be generated to morph positions.
@@ -681,6 +966,7 @@ trait StandardMaterial extends Material {
     */
   @JSName("onUpdateShader")
   var onUpdateShader_Original: UpdateShader = js.native
+  
   /**
     * The opacity of the material. This value can be between 0 and 1, where 0 is fully
     transparent and 1 is fully opaque. If you want the material to be semi-transparent you also need to
@@ -688,126 +974,160 @@ trait StandardMaterial extends Material {
     Also note that for most semi-transparent objects you want {@link pc.Material#depthWrite} to be false, otherwise they can fully occlude objects behind them.
     */
   var opacity: Double = js.native
+  
+  /**
+    * used to specify whether specular and reflections are faded out using {@link pc.Material#opacity}. Default is true. When set to false use {@link pc.Material#alphaFade} to fade out materials.
+    */
+  var opacityFadesSpecular: Boolean = js.native
+  
   /**
     * The opacity map of the material (default is null).
     */
   var opacityMap: Texture | Null = js.native
+  
   /**
     * Color channel of the opacity map to use. Can be "r", "g", "b" or "a".
     */
   var opacityMapChannel: String = js.native
+  
   /**
     * Controls the 2D offset of the opacity map. Each component is between 0 and 1.
     */
   var opacityMapOffset: Vec2 = js.native
+  
   /**
     * Controls the 2D tiling of the opacity map.
     */
   var opacityMapTiling: Vec2 = js.native
+  
   /**
     * Opacity map UV channel.
     */
   var opacityMapUv: Double = js.native
+  
   /**
     * Use mesh vertex colors for opacity. If opacityMap is set, it'll be multiplied by vertex colors.
     */
   var opacityVertexColor: Boolean = js.native
+  
   /**
     * Vertex color channels to use for opacity. Can be "r", "g", "b" or "a".
     */
   var opacityVertexColorChannel: String = js.native
+  
   /**
     * Align vertices to pixel co-ordinates when rendering. Useful for pixel perfect 2D graphics
     */
   var pixelSnap: Boolean = js.native
+  
   /**
     * Environment map intensity.
     */
   var reflectivity: Double = js.native
+  
   /**
     * Defines the visibility of refraction. Material can refract the same cube map as used for reflections.
     */
   var refraction: Double = js.native
+  
   /**
     * Defines the index of refraction, i.e. The amount of distortion.
     The value is calculated as (outerIor / surfaceIor), where inputs are measured indices of refraction, the one around the object and the one of it's own surface.
     In most situations outer medium is air, so outerIor will be approximately 1. Then you only need to do (1.0 / surfaceIor).
     */
   var refractionIndex: Double = js.native
+  
   /**
     * Defines the shading model.
     * {@link pc.SPECULAR_PHONG}: Phong without energy conservation. You should only use it as a backwards compatibility with older projects.
     * {@link pc.SPECULAR_BLINN}: Energy-conserving Blinn-Phong.
     */
   var shadingModel: Double = js.native
+  
   /**
     * Defines glossiness of the material from 0 (rough) to 100 (shiny mirror).
     A higher shininess value results in a more focused specular highlight.
     Glossiness map/vertex colors are always multiplied by this value (normalized to 0 - 1 range), or it is used directly as constant output.
     */
   var shininess: Double = js.native
+  
   /**
     * The specular color of the material. This color value is 3-component (RGB),
     where each component is between 0 and 1.
     Defines surface reflection/specular color. Affects specular intensity and tint.
     */
   var specular: Color = js.native
+  
   /**
     * Enables Toksvig AA for mipmapped normal maps with specular.
     */
   var specularAntialias: Boolean = js.native
+  
   /**
     * The specular map of the material (default is null).
     */
   var specularMap: Texture | Null = js.native
+  
   /**
     * Color channels of the specular map to use. Can be "r", "g", "b", "a", "rgb" or any swizzled combination.
     */
   var specularMapChannel: String = js.native
+  
   /**
     * Controls the 2D offset of the specular map. Each component is between 0 and 1.
     */
   var specularMapOffset: Vec2 = js.native
+  
   /**
     * Controls the 2D tiling of the specular map.
     */
   var specularMapTiling: Vec2 = js.native
+  
   /**
     * Specular map UV channel.
     */
   var specularMapUv: Double = js.native
+  
   /**
     * Multiply specular map and/or specular vertex color by the constant specular value.
     */
   var specularTint: Boolean = js.native
+  
   /**
     * Use mesh vertex colors for specular. If specularMap or are specularTint are set, they'll be multiplied by vertex colors.
     */
   var specularVertexColor: Boolean = js.native
+  
   /**
     * Vertex color channels to use for specular. Can be "r", "g", "b", "a", "rgb" or any swizzled combination.
     */
   var specularVertexColorChannel: String = js.native
+  
   /**
     * The spherical environment map of the material (default is null). Affects reflections.
     */
   var sphereMap: Texture | Null = js.native
+  
   /**
     * Calculate proper normals (and therefore lighting) on backfaces
     */
   var twoSidedLighting: Boolean = js.native
+  
   /**
     * Apply fogging (as configured in scene settings)
     */
   var useFog: Boolean = js.native
+  
   /**
     * Apply gamma correction and tonemapping (as configured in scene settings)
     */
   var useGammaTonemap: Boolean = js.native
+  
   /**
     * Apply lighting
     */
   var useLighting: Boolean = js.native
+  
   /**
     * Use metalness properties instead of specular.
     When enabled, diffuse colors also affect specular instead of the dedicated specular map.
@@ -816,73 +1136,9 @@ trait StandardMaterial extends Material {
     With metaless == 1, the pixel is fully metallic, and diffuse color is used as specular color instead.
     */
   var useMetalness: Boolean = js.native
+  
   /**
     * Apply scene skybox as prefiltered environment map
     */
   var useSkybox: Boolean = js.native
-  /**
-    * A custom function that will be called after all shader generator properties are collected and before shader code is generated.
-    This function will receive an object with shader generator settings (based on current material and scene properties), that you can change and then return.
-    Returned value will be used instead. This is mostly useful when rendering the same set of objects, but with different shader variations based on the same material.
-    For example, you may wish to render a depth or normal pass using textures assigned to the material, a reflection pass with simpler shaders and so on.
-    Properties of the object passed into this function are:
-    * pass: value of {@link pc.Layer#shaderPass} of the Layer being rendered.
-    * chunks: Object containing custom shader chunks that will replace default ones.
-    * customFragmentShader: Completely replace fragment shader with this code.
-    * forceUv1: if UV1 (second set of texture coordinates) is required in the shader. Will be declared as "vUv1" and passed to the fragment shader.
-    * fog: the type of fog being applied in the shader. See {@link pc.Scene#fog} for the list of possible values.
-    * gamma: the type of gamma correction being applied in the shader. See {@link pc.Scene#gammaCorrection} for the list of possible values.
-    * toneMap: the type of tone mapping being applied in the shader. See {@link pc.Scene#toneMapping} for the list of possible values.
-    * ambientTint: the value of {@link pc.StandardMaterial#ambientTint}.
-    * specularAntialias: the value of {@link pc.StandardMaterial#specularAntialias}.
-    * conserveEnergy: the value of {@link pc.StandardMaterial#conserveEnergy}.
-    * occludeSpecular: the value of {@link pc.StandardMaterial#occludeSpecular}.
-    * occludeDirect: the value of {@link pc.StandardMaterial#occludeDirect}.
-    * shadingModel: the value of {@link pc.StandardMaterial#shadingModel}.
-    * fresnelModel: the value of {@link pc.StandardMaterial#fresnelModel}.
-    * cubeMapProjection: the value of {@link pc.StandardMaterial#cubeMapProjection}.
-    * useMetalness: the value of {@link pc.StandardMaterial#useMetalness}.
-    * blendType: the value of {@link pc.Material#blendType}.
-    * twoSidedLighting: the value of {@link pc.Material#twoSidedLighting}.
-    * diffuseTint: defines if {@link pc.StandardMaterial#diffuse} constant should affect diffuse color.
-    * specularTint: defines if {@link pc.StandardMaterial#specular} constant should affect specular color.
-    * metalnessTint: defines if {@link pc.StandardMaterial#metalness} constant should affect metalness value.
-    * glossTint: defines if {@link pc.StandardMaterial#shininess} constant should affect glossiness value.
-    * emissiveTint: defines if {@link pc.StandardMaterial#emissive} constant should affect emission value.
-    * opacityTint: defines if {@link pc.StandardMaterial#opacity} constant should affect opacity value.
-    * occludeSpecularFloat: defines if {@link pc.StandardMaterial#occludeSpecularIntensity} constant should affect specular occlusion.
-    * alphaTest: enable alpha testing. See {@link pc.Material#alphaTest}.
-    * alphaToCoverage: enable alpha to coverage. See {@link pc.Material#alphaToCoverage}.
-    * sphereMap: if {@link pc.StandardMaterial#sphereMap} is used.
-    * cubeMap: if {@link pc.StandardMaterial#cubeMap} is used.
-    * dpAtlas: if dual-paraboloid reflection is used. Dual paraboloid reflections replace prefiltered cubemaps on certain platform (mostly Android) for performance reasons.
-    * ambientSH: if ambient spherical harmonics are used. Ambient SH replace prefiltered cubemap ambient on certain platform (mostly Android) for performance reasons.
-    * useSpecular: if any specular or reflections are needed at all.
-    * rgbmAmbient: if ambient cubemap or spherical harmonics are RGBM-encoded.
-    * hdrAmbient: if ambient cubemap or spherical harmonics are plain float HDR data.
-    * rgbmReflection: if reflection cubemap or dual paraboloid are RGBM-encoded.
-    * hdrReflection: if reflection cubemap or dual paraboloid are plain float HDR data.
-    * fixSeams: if cubemaps require seam fixing (see {@link pc.Texture#options.fixCubemapSeams}).
-    * prefilteredCubemap: if prefiltered cubemaps are used.
-    * emissiveFormat: how emissiveMap must be sampled. This value is based on {@link pc.Texture#options.rgbm} and {@link pc.Texture#options.format}. Possible values are:
-    * 0: sRGB texture
-    * 1: RGBM-encoded HDR texture
-    * 2: Simple read (no conversion from sRGB)
-    * lightMapFormat: how lightMap must be sampled. This value is based on {@link pc.Texture#options.rgbm} and {@link pc.Texture#options.format}. Possible values are:
-    * 0: sRGB texture
-    * 1: RGBM-encoded HDR texture
-    * 2: Simple read (no conversion from sRGB)
-    * useRgbm: if decodeRGBM() function is needed in the shader at all.
-    * packedNormal: if normal map contains X in RGB, Y in Alpha, and Z must be reconstructed.
-    * forceFragmentPrecision: Override fragment shader numeric precision. Can be "lowp", "mediump", "highp" or null to use default.
-    * fastTbn: Use slightly cheaper normal mapping code (skip tangent space normalization). Can look buggy sometimes.
-    * refraction: if refraction is used.
-    * skyboxIntensity: if reflected skybox intensity should be modulated.
-    * useTexCubeLod: if textureCubeLodEXT function should be used to read prefiltered cubemaps. Usually true of iOS, false on other devices due to quality/performance balance.
-    * useInstancing: if hardware instancing compatible shader should be generated. Transform is read from per-instance {@link pc.VertexBuffer} instead of shader's uniforms.
-    * useMorphPosition: if morphing code should be generated to morph positions.
-    * useMorphNormal: if morphing code should be generated to morph normals.
-    */
-  def onUpdateShader(options: js.Any): js.Any = js.native
 }
-

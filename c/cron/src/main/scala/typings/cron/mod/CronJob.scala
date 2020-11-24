@@ -4,7 +4,7 @@ import typings.moment.mod.Moment
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cron", "CronJob")
 @js.native
@@ -37,27 +37,28 @@ class CronJob protected () extends js.Object {
     utcOffset: js.UndefOr[String | Double],
     unrefTimeout: js.UndefOr[Boolean]
   ) = this()
-  /**
-    * Function using to fire ```onTick```, default set to an inner private function. Overwrite this only if you have a really good reason to do so.
-    */
-  var fireOnTick: js.Function = js.native
-  /**
-    * Return ```true``` if job is running.
-    */
-  var running: js.UndefOr[Boolean] = js.native
+  
   /**
     * Add another ```onTick``` function.
     * @param callback Target function.
     */
   def addCallback(callback: js.Function): Unit = js.native
+  
+  /**
+    * Function using to fire ```onTick```, default set to an inner private function. Overwrite this only if you have a really good reason to do so.
+    */
+  var fireOnTick: js.Function = js.native
+  
   /**
     * Tells you the last execution date.
     */
   def lastDate(): Date = js.native
+  
   /**
     * Tells you when a ```CronTime``` will be run.
     */
   def nextDate(): Moment = js.native
+  
   /**
     * Tells you when a ```CronTime``` will be run.
     * @param i Indicate which turn of run after now. If not given return next run time.
@@ -67,18 +68,25 @@ class CronJob protected () extends js.Object {
   def nextDates(i: Double): Moment | js.Array[Moment] = js.native
   @JSName("nextDates")
   def nextDates_Moment(): Moment = js.native
+  
+  /**
+    * Return ```true``` if job is running.
+    */
+  var running: js.UndefOr[Boolean] = js.native
+  
   /**
     * Change the time for the ```CronJob```.
     * @param time Target time.
     */
   def setTime(time: CronTime): Unit = js.native
+  
   /**
     * Runs your job.
     */
   def start(): Unit = js.native
+  
   /**
     * Stops your job.
     */
   def stop(): Unit = js.native
 }
-

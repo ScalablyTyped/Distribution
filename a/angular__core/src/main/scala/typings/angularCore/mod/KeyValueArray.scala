@@ -4,7 +4,7 @@ import typings.angularCore.angularCoreStrings.`array-map`
 import typings.std.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `KeyValueArray` is an array where even positions contain keys and odd positions contain values.
@@ -20,6 +20,6 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait KeyValueArray[VALUE] extends Array[VALUE | String] {
+  
   var __brand__ : `array-map` = js.native
 }
-

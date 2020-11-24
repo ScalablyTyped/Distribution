@@ -3,7 +3,7 @@ package typings.googleapis.slidesV1Mod.slidesV1
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Duplicates a slide or page element.  When duplicating a slide, the
@@ -13,10 +13,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaDuplicateObjectRequest extends js.Object {
+  
   /**
     * The ID of the object to duplicate.
     */
   var objectId: js.UndefOr[String] = js.native
+  
   /**
     * The object being duplicated may contain other objects, for example when
     * duplicating a slide or a group page element. This map defines how the IDs
@@ -36,33 +38,39 @@ trait SchemaDuplicateObjectRequest extends js.Object {
     */
   var objectIds: js.UndefOr[StringDictionary[String]] = js.native
 }
-
 object SchemaDuplicateObjectRequest {
+  
   @scala.inline
   def apply(): SchemaDuplicateObjectRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDuplicateObjectRequest]
   }
+  
   @scala.inline
   implicit class SchemaDuplicateObjectRequestOps[Self <: SchemaDuplicateObjectRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteObjectId: Self = this.set("objectId", js.undefined)
+    
     @scala.inline
     def setObjectIds(value: StringDictionary[String]): Self = this.set("objectIds", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteObjectIds: Self = this.set("objectIds", js.undefined)
   }
-  
 }
-

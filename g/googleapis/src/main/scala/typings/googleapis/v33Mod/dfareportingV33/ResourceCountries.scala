@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Countries")
 @js.native
 class ResourceCountries protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.countries.get
     * @desc Gets one country by ID.
@@ -42,6 +44,7 @@ class ResourceCountries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCountry]
   ): Unit = js.native
+  
   /**
     * dfareporting.countries.list
     * @desc Retrieves a list of countries.
@@ -71,4 +74,3 @@ class ResourceCountries protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCountriesListResponse]
   ): Unit = js.native
 }
-

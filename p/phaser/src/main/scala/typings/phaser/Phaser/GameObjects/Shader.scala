@@ -25,7 +25,7 @@ import typings.std.WebGLRenderingContext
 import typings.std.WebGLTexture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Shader Game Object.
@@ -78,102 +78,42 @@ trait Shader
      with ScrollFactor
      with Transform
      with Visible {
+  
   /**
     * Uint8 view to the vertex raw buffer. Used for uploading vertex buffer resources to the GPU.
     */
   var bytes: Uint8Array = js.native
-  /**
-    * A reference to the GL Frame Buffer this Shader is drawing to.
-    * This property is only set if you have called `Shader.setRenderToTexture`.
-    */
-  var framebuffer: WebGLFramebuffer = js.native
-  /**
-    * The WebGL context belonging to the renderer.
-    */
-  var gl: WebGLRenderingContext = js.native
-  /**
-    * A reference to the WebGLTexture this Shader is rendering to.
-    * This property is only set if you have called `Shader.setRenderToTexture`.
-    */
-  var glTexture: WebGLTexture = js.native
-  /**
-    * The pointer bound to this shader, if any.
-    * Set via the chainable `setPointer` method, or by modifying this property directly.
-    */
-  var pointer: Pointer = js.native
-  /**
-    * The WebGL shader program this shader uses.
-    */
-  var program: WebGLProgram = js.native
-  /**
-    * The projection matrix the shader uses during rendering.
-    */
-  val projectionMatrix: Float32Array = js.native
-  /**
-    * A flag that indicates if this Shader has been set to render to a texture instead of the display list.
-    * 
-    * This property is `true` if you have called `Shader.setRenderToTexture`, otherwise it's `false`.
-    * 
-    * A Shader that is rendering to a texture _does not_ appear on the display list.
-    */
-  val renderToTexture: Boolean = js.native
-  /**
-    * A reference to the current renderer.
-    * Shaders only work with the WebGL Renderer.
-    */
-  var renderer: CanvasRenderer | WebGLRenderer = js.native
-  /**
-    * The underlying shader object being used.
-    * Empty by default and set during a call to the `setShader` method.
-    */
-  var shader: BaseShader = js.native
-  /**
-    * A reference to the Phaser.Textures.Texture that has been stored in the Texture Manager for this Shader.
-    * 
-    * This property is only set if you have called `Shader.setRenderToTexture`, otherwise it is `null`.
-    */
-  var texture: Texture = js.native
-  /**
-    * The default uniform mappings. These can be added to (or replaced) by specifying your own uniforms when
-    * creating this shader game object. The uniforms are updated automatically during the render step.
-    * 
-    * The defaults are:
-    * 
-    * `resolution` (2f) - Set to the size of this shader.
-    * `time` (1f) - The elapsed game time, in seconds.
-    * `mouse` (2f) - If a pointer has been bound (with `setPointer`), this uniform contains its position each frame.
-    * `date` (4fv) - A vec4 containing the year, month, day and time in seconds.
-    * `sampleRate` (1f) - Sound sample rate. 44100 by default.
-    * `iChannel0...3` (sampler2D) - Input channels 0 to 3. `null` by default.
-    */
-  var uniforms: js.Any = js.native
-  /**
-    * The WebGL vertex buffer object this shader uses.
-    */
-  var vertexBuffer: WebGLBuffer = js.native
-  /**
-    * Raw byte buffer of vertices this Shader uses.
-    */
-  var vertexData: ArrayBuffer = js.native
-  /**
-    * Float32 view of the array buffer containing the shaders vertices.
-    */
-  var vertexViewF32: Float32Array = js.native
-  /**
-    * The view matrix the shader uses during rendering.
-    */
-  val viewMatrix: Float32Array = js.native
+  
   /**
     * Called automatically during render.
     * 
     * Sets the active shader, loads the vertex buffer and then draws.
     */
   def flush(): Unit = js.native
+  
+  /**
+    * A reference to the GL Frame Buffer this Shader is drawing to.
+    * This property is only set if you have called `Shader.setRenderToTexture`.
+    */
+  var framebuffer: WebGLFramebuffer = js.native
+  
   /**
     * Returns the uniform object for the given key, or `null` if the uniform couldn't be found.
     * @param key The key of the uniform to return the value for.
     */
   def getUniform(key: String): js.Any = js.native
+  
+  /**
+    * The WebGL context belonging to the renderer.
+    */
+  var gl: WebGLRenderingContext = js.native
+  
+  /**
+    * A reference to the WebGLTexture this Shader is rendering to.
+    * This property is only set if you have called `Shader.setRenderToTexture`.
+    */
+  var glTexture: WebGLTexture = js.native
+  
   /**
     * Called automatically during render.
     * 
@@ -184,10 +124,23 @@ trait Shader
     */
   def load(): Unit = js.native
   def load(matrix2D: TransformMatrix): Unit = js.native
+  
+  /**
+    * The pointer bound to this shader, if any.
+    * Set via the chainable `setPointer` method, or by modifying this property directly.
+    */
+  var pointer: Pointer = js.native
+  
   /**
     * Internal destroy handler, called as part of the destroy process.
     */
   /* protected */ def preDestroy(): Unit = js.native
+  
+  /**
+    * The WebGL shader program this shader uses.
+    */
+  var program: WebGLProgram = js.native
+  
   /**
     * Sets this shader to use an orthographic projection matrix.
     * This matrix is stored locally in the `projectionMatrix` property,
@@ -198,6 +151,27 @@ trait Shader
     * @param top The top value.
     */
   def projOrtho(left: Double, right: Double, bottom: Double, top: Double): Unit = js.native
+  
+  /**
+    * The projection matrix the shader uses during rendering.
+    */
+  val projectionMatrix: Float32Array = js.native
+  
+  /**
+    * A flag that indicates if this Shader has been set to render to a texture instead of the display list.
+    * 
+    * This property is `true` if you have called `Shader.setRenderToTexture`, otherwise it's `false`.
+    * 
+    * A Shader that is rendering to a texture _does not_ appear on the display list.
+    */
+  val renderToTexture: Boolean = js.native
+  
+  /**
+    * A reference to the current renderer.
+    * Shaders only work with the WebGL Renderer.
+    */
+  var renderer: CanvasRenderer | WebGLRenderer = js.native
+  
   /**
     * A short-cut method that will directly set the texture being used by the `iChannel0` sampler2D uniform.
     * 
@@ -208,6 +182,7 @@ trait Shader
     */
   def setChannel0(textureKey: String): this.type = js.native
   def setChannel0(textureKey: String, textureData: js.Any): this.type = js.native
+  
   /**
     * A short-cut method that will directly set the texture being used by the `iChannel1` sampler2D uniform.
     * 
@@ -218,6 +193,7 @@ trait Shader
     */
   def setChannel1(textureKey: String): this.type = js.native
   def setChannel1(textureKey: String, textureData: js.Any): this.type = js.native
+  
   /**
     * A short-cut method that will directly set the texture being used by the `iChannel2` sampler2D uniform.
     * 
@@ -228,6 +204,7 @@ trait Shader
     */
   def setChannel2(textureKey: String): this.type = js.native
   def setChannel2(textureKey: String, textureData: js.Any): this.type = js.native
+  
   /**
     * A short-cut method that will directly set the texture being used by the `iChannel3` sampler2D uniform.
     * 
@@ -238,6 +215,7 @@ trait Shader
     */
   def setChannel3(textureKey: String): this.type = js.native
   def setChannel3(textureKey: String, textureData: js.Any): this.type = js.native
+  
   /**
     * Binds a Phaser Pointer object to this Shader.
     * 
@@ -247,6 +225,7 @@ trait Shader
     */
   def setPointer(): this.type = js.native
   def setPointer(pointer: Pointer): this.type = js.native
+  
   /**
     * Changes this Shader so instead of rendering to the display list it renders to a
     * WebGL Framebuffer and WebGL Texture instead. This allows you to use the output
@@ -284,6 +263,7 @@ trait Shader
   def setRenderToTexture(key: js.UndefOr[scala.Nothing], flipY: Boolean): this.type = js.native
   def setRenderToTexture(key: String): this.type = js.native
   def setRenderToTexture(key: String, flipY: Boolean): this.type = js.native
+  
   /**
     * Sets a sampler2D uniform on this shader.
     * 
@@ -305,6 +285,7 @@ trait Shader
   ): this.type = js.native
   def setSampler2D(uniformKey: String, textureKey: String, textureIndex: integer): this.type = js.native
   def setSampler2D(uniformKey: String, textureKey: String, textureIndex: integer, textureData: js.Any): this.type = js.native
+  
   /**
     * Sets a sampler2D uniform on this shader where the source texture is a WebGLTexture.
     * 
@@ -348,6 +329,7 @@ trait Shader
     textureIndex: integer,
     textureData: js.Any
   ): this.type = js.native
+  
   /**
     * Sets the fragment and, optionally, the vertex shader source code that this Shader will use.
     * This will immediately delete the active shader program, if set, and then create a new one
@@ -364,6 +346,7 @@ trait Shader
   def setShader(key: BaseShader, textures: js.UndefOr[scala.Nothing], textureData: js.Any): this.type = js.native
   def setShader(key: BaseShader, textures: js.Array[String]): this.type = js.native
   def setShader(key: BaseShader, textures: js.Array[String], textureData: js.Any): this.type = js.native
+  
   /**
     * Sets a property of a uniform already present on this shader.
     * 
@@ -384,5 +367,52 @@ trait Shader
     * @param value The value to set into the uniform.
     */
   def setUniform(key: String, value: js.Any): this.type = js.native
+  
+  /**
+    * The underlying shader object being used.
+    * Empty by default and set during a call to the `setShader` method.
+    */
+  var shader: BaseShader = js.native
+  
+  /**
+    * A reference to the Phaser.Textures.Texture that has been stored in the Texture Manager for this Shader.
+    * 
+    * This property is only set if you have called `Shader.setRenderToTexture`, otherwise it is `null`.
+    */
+  var texture: Texture = js.native
+  
+  /**
+    * The default uniform mappings. These can be added to (or replaced) by specifying your own uniforms when
+    * creating this shader game object. The uniforms are updated automatically during the render step.
+    * 
+    * The defaults are:
+    * 
+    * `resolution` (2f) - Set to the size of this shader.
+    * `time` (1f) - The elapsed game time, in seconds.
+    * `mouse` (2f) - If a pointer has been bound (with `setPointer`), this uniform contains its position each frame.
+    * `date` (4fv) - A vec4 containing the year, month, day and time in seconds.
+    * `sampleRate` (1f) - Sound sample rate. 44100 by default.
+    * `iChannel0...3` (sampler2D) - Input channels 0 to 3. `null` by default.
+    */
+  var uniforms: js.Any = js.native
+  
+  /**
+    * The WebGL vertex buffer object this shader uses.
+    */
+  var vertexBuffer: WebGLBuffer = js.native
+  
+  /**
+    * Raw byte buffer of vertices this Shader uses.
+    */
+  var vertexData: ArrayBuffer = js.native
+  
+  /**
+    * Float32 view of the array buffer containing the shaders vertices.
+    */
+  var vertexViewF32: Float32Array = js.native
+  
+  /**
+    * The view matrix the shader uses during rendering.
+    */
+  val viewMatrix: Float32Array = js.native
 }
-

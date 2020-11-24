@@ -12,8 +12,8 @@ Boilerplate and tooling for JavaScript application development with React
 | Keywords           | react, reactjs, webpack, babel, es6, es2015, jsx, redux, browsersync, browser-sync, template, templates, boilerplate, scarrold, scaffolding |
 | # releases         | 1 |
 | # dependents       | 10 |
-| # downloads        | 54121 |
-| # stars            | 2 |
+| # downloads        | 56008 |
+| # stars            | 3 |
 
 ## Links
 - [Homepage](https://github.com/kriasoft/react-app#readme)

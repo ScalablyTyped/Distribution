@@ -2,44 +2,79 @@ package typings.awsSdk.comprehendMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DocumentClassifierInputDataConfig extends js.Object {
+  
+  /**
+    * A list of augmented manifest files that provide training data for your custom model. An augmented manifest file is a labeled dataset that is produced by Amazon SageMaker Ground Truth. This parameter is required if you set DataFormat to AUGMENTED_MANIFEST.
+    */
+  var AugmentedManifests: js.UndefOr[DocumentClassifierAugmentedManifestsList] = js.native
+  
+  /**
+    * The format of your training data:    COMPREHEND_CSV: A two-column CSV file, where labels are provided in the first column, and documents are provided in the second. If you use this value, you must provide the S3Uri parameter in your request.    AUGMENTED_MANIFEST: A labeled dataset that is produced by Amazon SageMaker Ground Truth. This file is in JSON lines format. Each line is a complete JSON object that contains a training document and its associated labels.  If you use this value, you must provide the AugmentedManifests parameter in your request.   If you don't specify a value, Amazon Comprehend uses COMPREHEND_CSV as the default.
+    */
+  var DataFormat: js.UndefOr[DocumentClassifierDataFormat] = js.native
+  
   /**
     * Indicates the delimiter used to separate each label for training a multi-label classifier. The default delimiter between labels is a pipe (|). You can use a different character as a delimiter (if it's an allowed character) by specifying it under Delimiter for labels. If the training documents use a delimiter other than the default or the delimiter you specify, the labels on that line will be combined to make a single unique label, such as LABELLABELLABEL.
     */
   var LabelDelimiter: js.UndefOr[typings.awsSdk.comprehendMod.LabelDelimiter] = js.native
+  
   /**
-    * The Amazon S3 URI for the input data. The S3 bucket must be in the same region as the API endpoint that you are calling. The URI can point to a single input file or it can provide the prefix for a collection of input files. For example, if you use the URI S3://bucketName/prefix, if the prefix is a single file, Amazon Comprehend uses that file as input. If more than one file begins with the prefix, Amazon Comprehend uses all of them as input.
+    * The Amazon S3 URI for the input data. The S3 bucket must be in the same region as the API endpoint that you are calling. The URI can point to a single input file or it can provide the prefix for a collection of input files. For example, if you use the URI S3://bucketName/prefix, if the prefix is a single file, Amazon Comprehend uses that file as input. If more than one file begins with the prefix, Amazon Comprehend uses all of them as input. This parameter is required if you set DataFormat to COMPREHEND_CSV.
     */
-  var S3Uri: typings.awsSdk.comprehendMod.S3Uri = js.native
+  var S3Uri: js.UndefOr[typings.awsSdk.comprehendMod.S3Uri] = js.native
 }
-
 object DocumentClassifierInputDataConfig {
+  
   @scala.inline
-  def apply(S3Uri: S3Uri): DocumentClassifierInputDataConfig = {
-    val __obj = js.Dynamic.literal(S3Uri = S3Uri.asInstanceOf[js.Any])
+  def apply(): DocumentClassifierInputDataConfig = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentClassifierInputDataConfig]
   }
+  
   @scala.inline
   implicit class DocumentClassifierInputDataConfigOps[Self <: DocumentClassifierInputDataConfig] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: java.lang.String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
-    def setS3Uri(value: S3Uri): Self = this.set("S3Uri", value.asInstanceOf[js.Any])
+    def setAugmentedManifestsVarargs(value: AugmentedManifestsListItem*): Self = this.set("AugmentedManifests", js.Array(value :_*))
+    
+    @scala.inline
+    def setAugmentedManifests(value: DocumentClassifierAugmentedManifestsList): Self = this.set("AugmentedManifests", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAugmentedManifests: Self = this.set("AugmentedManifests", js.undefined)
+    
+    @scala.inline
+    def setDataFormat(value: DocumentClassifierDataFormat): Self = this.set("DataFormat", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDataFormat: Self = this.set("DataFormat", js.undefined)
+    
     @scala.inline
     def setLabelDelimiter(value: LabelDelimiter): Self = this.set("LabelDelimiter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabelDelimiter: Self = this.set("LabelDelimiter", js.undefined)
+    
+    @scala.inline
+    def setS3Uri(value: S3Uri): Self = this.set("S3Uri", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteS3Uri: Self = this.set("S3Uri", js.undefined)
   }
-  
 }
-

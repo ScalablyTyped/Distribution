@@ -4,7 +4,7 @@ import typings.googleCloudCommon.mod.ServiceObject
 import typings.googleCloudStorage.storageMod.Storage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/storage/build/src/hmacKey", "HmacKey")
 @js.native
@@ -33,7 +33,7 @@ class HmacKey protected ()
     */
   def this(storage: Storage, accessId: String) = this()
   def this(storage: Storage, accessId: String, options: HmacKeyOptions) = this()
+  
   @JSName("metadata")
   var metadata_HmacKey: js.UndefOr[HmacKeyMetadata] = js.native
 }
-

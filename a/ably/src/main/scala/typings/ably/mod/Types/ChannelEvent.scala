@@ -10,18 +10,25 @@ import typings.ably.ablyStrings.suspended
 import typings.ably.ablyStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ably", "Types.ChannelEvent")
 @js.native
 object ChannelEvent extends js.Object {
+  
   type ATTACHED = attached
+  
   type ATTACHING = attaching
+  
   type DETACHED = detached
+  
   type DETACHING = detaching
+  
   type FAILED = failed_
+  
   type INITIALIZED = initialized
+  
   type SUSPENDED = suspended
+  
   type UPDATE = update
 }
-

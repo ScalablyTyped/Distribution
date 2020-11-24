@@ -3,12 +3,13 @@ package typings.datadogMetrics.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("datadog-metrics", "BufferedMetricsLogger")
 @js.native
 class BufferedMetricsLogger protected () extends js.Object {
   def this(options: BufferedMetricsLoggerOptions) = this()
+  
   /**
     * Calling flush sends any buffered metrics to DataDog. Unless you set flushIntervalSeconds
     * to 0 it won't be necessary to call this function.
@@ -19,6 +20,7 @@ class BufferedMetricsLogger protected () extends js.Object {
   def flush(onSuccess: js.UndefOr[scala.Nothing], onError: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def flush(onSuccess: js.Function0[Unit]): Unit = js.native
   def flush(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Record the current value of a metric. They most recent value in a given flush
     * interval will be recorded. Optionally, specify a set of tags to associate with
@@ -29,6 +31,7 @@ class BufferedMetricsLogger protected () extends js.Object {
   def gauge(key: String, value: Double, tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
   def gauge(key: String, value: Double, tags: js.Array[String]): Unit = js.native
   def gauge(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = js.native
+  
   /**
     * Sample a histogram value. Histograms will produce metrics that describe the distribution
     * of the recorded values, namely the minimum, maximum, average, count and the 75th, 85th,
@@ -38,6 +41,7 @@ class BufferedMetricsLogger protected () extends js.Object {
   def histogram(key: String, value: Double, tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
   def histogram(key: String, value: Double, tags: js.Array[String]): Unit = js.native
   def histogram(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = js.native
+  
   /**
     * Increment the counter by the given value (or 1 by default). Optionally, specify a
     * list of tags to associate with the metric. This is useful for counting things such
@@ -52,4 +56,3 @@ class BufferedMetricsLogger protected () extends js.Object {
   def increment(key: String, value: Double, tags: js.Array[String]): Unit = js.native
   def increment(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = js.native
 }
-

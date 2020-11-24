@@ -10,7 +10,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/apiregistration/v1beta1/apiserviceList", "APIServiceList")
 @js.native
@@ -26,22 +26,26 @@ class APIServiceList protected () extends CustomResource {
   def this(name: String, args: APIServiceListArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: APIServiceListArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: Output_[apiregistrationDotk8sDotioSlashv1beta1] = js.native
+  
   val items: Output_[js.Array[APIService]] = js.native
+  
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.APIServiceList] = js.native
+  
   val metadata: Output_[ListMeta] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/apiregistration/v1beta1/apiserviceList", "APIServiceList")
 @js.native
 object APIServiceList extends js.Object {
+  
   /**
     * Get an existing APIServiceList resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -52,10 +56,10 @@ object APIServiceList extends js.Object {
     */
   def get(name: String, id: Input[ID]): APIServiceList = js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): APIServiceList = js.native
+  
   /**
     * Returns true if the given object is an instance of APIServiceList.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiregistration/v1beta1/apiserviceList.APIServiceList */ Boolean = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.knuddelsUserappsApi.mod.global
 import typings.knuddelsUserappsApi.anon.OnEnd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 	 * @see https://developer.knuddels.de/docs/classes/UserAccess.html
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("UserAccess")
 @js.native
 class UserAccess () extends js.Object {
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_eachAccessibleUser
   		 */
@@ -33,34 +34,40 @@ class UserAccess () extends js.Object {
     ],
     parameters: OnEnd
   ): Unit = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_exists
   		 */
   def exists(nick: java.lang.String): Boolean = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_getAccessibleUserCount
   		 * @since AppServer 20200212-112449
   		 */
   def getAccessibleUserCount(): Double = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_getNick
   		 */
   def getNick(userId: Double): java.lang.String = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_getUserById
   		 */
   def getUserById(userId: Double): User = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_getUserId
   		 */
   def getUserId(nick: java.lang.String): Double = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_isUserDeleted
   		 */
   def isUserDeleted(userId: Double): Boolean = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_mayAccess
   		 */
   def mayAccess(userId: Double): Boolean = js.native
 }
-

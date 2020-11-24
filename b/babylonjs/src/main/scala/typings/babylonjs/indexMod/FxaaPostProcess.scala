@@ -4,75 +4,32 @@ import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "FxaaPostProcess")
 @js.native
 class FxaaPostProcess protected ()
   extends typings.babylonjs.postProcessesIndexMod.FxaaPostProcess {
-  def this(name: String, options: Double) = this()
-  def this(name: String, options: PostProcessOptions) = this()
-  def this(name: String, options: Double, camera: Nullable[typings.babylonjs.cameraMod.Camera]) = this()
-  def this(name: String, options: PostProcessOptions, camera: Nullable[typings.babylonjs.cameraMod.Camera]) = this()
   def this(
     name: String,
-    options: Double,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    options: Double,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine
-  ) = this()
-  def this(
-    name: String,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine
-  ) = this()
-  def this(
-    name: String,
-    options: Double,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    options: Double,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
-    reusable: Boolean,
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
-    reusable: Boolean,
-    textureType: Double
+    options: Double | PostProcessOptions,
+    camera: js.UndefOr[Nullable[typings.babylonjs.cameraMod.Camera]],
+    samplingMode: js.UndefOr[Double],
+    engine: js.UndefOr[typings.babylonjs.engineMod.Engine],
+    reusable: js.UndefOr[Boolean],
+    textureType: js.UndefOr[Double]
   ) = this()
 }
-
+/* static members */
+@JSImport("babylonjs/index", "FxaaPostProcess")
+@js.native
+object FxaaPostProcess extends js.Object {
+  
+  /** @hidden */
+  def _Parse(
+    parsedPostProcess: js.Any,
+    targetCamera: typings.babylonjs.cameraMod.Camera,
+    scene: typings.babylonjs.sceneMod.Scene,
+    rootUrl: String
+  ): typings.babylonjs.fxaaPostProcessMod.FxaaPostProcess = js.native
+}

@@ -4,35 +4,58 @@ import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Refinement extends DisplayControl {
+  
   def addRefinementFilter(filterName: String, filterToken: js.Any): Unit = js.native
+  
   def addRefinementFilters(refiners: js.Array[_]): Unit = js.native
+  
   def addRefinementFiltersJSON(refinersJSON: String): Unit = js.native
+  
   def addRefinementFiltersJSONWithOr(refinersJSON: String): Unit = js.native
+  
   def addRefinementFiltersWithOp(refiners: js.Array[_], op: String): Unit = js.native
+  
   def getCurrentRefinementCategory(refinementName: String): js.Any = js.native
+  
   /** Gets refinement control with the specified propertyName */
   def getRefinementControl(refinerName: String): RefinementControl = js.native
+  
   def get_emptyRefinementMessageId(): String = js.native
+  
   def get_selectedRefinementControls(): js.Array[RefinementControl] = js.native
+  
   def get_useManagedNavigationRefiners(): Boolean = js.native
+  
   def hasAllRefinementFilters(filterName: String, filterTokens: js.Array[String]): Boolean = js.native
+  
   def hasRefinementCategory(refinementName: String): Boolean = js.native
+  
   def hasRefinementFilter(filterName: String, filterToken: String): Boolean = js.native
+  
   /** Returns true if selected refinement controls collection contains a control with the specified propertyName */
   def hasRefiner(refinerName: String): Boolean = js.native
+  
   def removeRefinementCategory(rcs: js.Any, filterName: String): Unit = js.native
+  
   def removeRefinementFilter(filterName: String, filterToken: String): Unit = js.native
+  
   def removeRefinementFiltersJSON(refinersJSON: String): Unit = js.native
+  
   def replaceRefinementFilter(oldRefinementFilter: js.Any, newRefinementFilter: js.Any): Unit = js.native
+  
   def set_emptyRefinementMessageId(value: String): String = js.native
+  
   def set_selectedRefinementControls(value: js.Array[RefinementControl]): js.Array[RefinementControl] = js.native
+  
   def set_useManagedNavigationRefiners(value: Boolean): Boolean = js.native
+  
   /** Replaces the refinement controls */
   def updateRefinementControls(newControls: js.Array[RefinementControl]): Unit = js.native
+  
   def updateRefinementFilters(
     filterName: String,
     filterTokens: js.Array[String],
@@ -40,11 +63,13 @@ trait Refinement extends DisplayControl {
     useKQL: Boolean,
     tokenToDisplayValueMap: js.Any
   ): Unit = js.native
+  
   def updateRefiners(refiners: js.Array[_], op: String, useKQL: Boolean, tokenToDisplayValueMap: js.Any): Unit = js.native
+  
   def updateRefinersJSON(refinersJSON: String): Unit = js.native
 }
-
 object Refinement {
+  
   @scala.inline
   def apply(
     addCssClass: String => Unit,
@@ -157,68 +182,95 @@ object Refinement {
     val __obj = js.Dynamic.literal(addCssClass = js.Any.fromFunction1(addCssClass), addRefinementFilter = js.Any.fromFunction2(addRefinementFilter), addRefinementFilters = js.Any.fromFunction1(addRefinementFilters), addRefinementFiltersJSON = js.Any.fromFunction1(addRefinementFiltersJSON), addRefinementFiltersJSONWithOr = js.Any.fromFunction1(addRefinementFiltersJSONWithOr), addRefinementFiltersWithOp = js.Any.fromFunction2(addRefinementFiltersWithOp), add_disposing = js.Any.fromFunction1(add_disposing), add_oneTimeResultRendered = js.Any.fromFunction1(add_oneTimeResultRendered), add_propertyChanged = js.Any.fromFunction1(add_propertyChanged), add_queryReady = js.Any.fromFunction1(add_queryReady), add_resultRendered = js.Any.fromFunction1(add_resultRendered), alternateRenderContext = alternateRenderContext.asInstanceOf[js.Any], alternateRenderer = alternateRenderer.asInstanceOf[js.Any], beginUpdate = js.Any.fromFunction0(beginUpdate), clickHandler = js.Any.fromFunction1(clickHandler), dataProvider_QueryIssuing = js.Any.fromFunction2(dataProvider_QueryIssuing), dataProvider_ResultReady = js.Any.fromFunction2(dataProvider_ResultReady), dispose = js.Any.fromFunction0(dispose), endUpdate = js.Any.fromFunction0(endUpdate), getCurrentRefinementCategory = js.Any.fromFunction1(getCurrentRefinementCategory), getRefinementControl = js.Any.fromFunction1(getRefinementControl), get_alternateErrorMessage = js.Any.fromFunction0(get_alternateErrorMessage), get_currentResultTableCollection = js.Any.fromFunction0(get_currentResultTableCollection), get_dataProvider = js.Any.fromFunction0(get_dataProvider), get_delayLoadTemplateScripts = js.Any.fromFunction0(get_delayLoadTemplateScripts), get_element = js.Any.fromFunction0(get_element), get_emptyMessage = js.Any.fromFunction0(get_emptyMessage), get_emptyRefinementMessageId = js.Any.fromFunction0(get_emptyRefinementMessageId), get_events = js.Any.fromFunction0(get_events), get_id = js.Any.fromFunction0(get_id), get_isInitialLoad = js.Any.fromFunction0(get_isInitialLoad), get_isInitialized = js.Any.fromFunction0(get_isInitialized), get_isUpdating = js.Any.fromFunction0(get_isUpdating), get_messages = js.Any.fromFunction0(get_messages), get_nextUniqueId = js.Any.fromFunction0(get_nextUniqueId), get_queryGroupName = js.Any.fromFunction0(get_queryGroupName), get_renderTemplateId = js.Any.fromFunction0(get_renderTemplateId), get_renderedResult = js.Any.fromFunction0(get_renderedResult), get_selectedRefinementControls = js.Any.fromFunction0(get_selectedRefinementControls), get_shouldShowNoResultMessage = js.Any.fromFunction0(get_shouldShowNoResultMessage), get_showDataErrors = js.Any.fromFunction0(get_showDataErrors), get_states = js.Any.fromFunction0(get_states), get_useManagedNavigationRefiners = js.Any.fromFunction0(get_useManagedNavigationRefiners), hasAllRefinementFilters = js.Any.fromFunction2(hasAllRefinementFilters), hasMessages = js.Any.fromFunction0(hasMessages), hasRefinementCategory = js.Any.fromFunction1(hasRefinementCategory), hasRefinementFilter = js.Any.fromFunction2(hasRefinementFilter), hasRefiner = js.Any.fromFunction1(hasRefiner), initialize = js.Any.fromFunction0(initialize), invokeAlternateRender = js.Any.fromFunction3(invokeAlternateRender), invokeClientRenderer = js.Any.fromFunction2(invokeClientRenderer), loadRenderTemplateScripts = js.Any.fromFunction5(loadRenderTemplateScripts), loadServerTemplateScripts = js.Any.fromFunction0(loadServerTemplateScripts), loaded = loaded.asInstanceOf[js.Any], onBubbleEvent = js.Any.fromFunction2(onBubbleEvent), processDataErrorMessages = js.Any.fromFunction1(processDataErrorMessages), processDataProviderErrors = js.Any.fromFunction1(processDataProviderErrors), processQueryIssuing = js.Any.fromFunction1(processQueryIssuing), processRenderingErrorMessages = js.Any.fromFunction1(processRenderingErrorMessages), processResultReady = js.Any.fromFunction1(processResultReady), raiseBubbleEvent = js.Any.fromFunction2(raiseBubbleEvent), raiseOneTimeResultRenderedEvent = js.Any.fromFunction1(raiseOneTimeResultRenderedEvent), raisePropertyChanged = js.Any.fromFunction1(raisePropertyChanged), raiseQueryReadyEvent = js.Any.fromFunction1(raiseQueryReadyEvent), raiseResultRenderedEvent = js.Any.fromFunction1(raiseResultRenderedEvent), refresh = js.Any.fromFunction1(refresh), removeCssClass = js.Any.fromFunction1(removeCssClass), removeRefinementCategory = js.Any.fromFunction2(removeRefinementCategory), removeRefinementFilter = js.Any.fromFunction2(removeRefinementFilter), removeRefinementFiltersJSON = js.Any.fromFunction1(removeRefinementFiltersJSON), remove_disposing = js.Any.fromFunction1(remove_disposing), remove_oneTimeResultRendered = js.Any.fromFunction1(remove_oneTimeResultRendered), remove_propertyChanged = js.Any.fromFunction1(remove_propertyChanged), remove_queryReady = js.Any.fromFunction1(remove_queryReady), remove_resultRendered = js.Any.fromFunction1(remove_resultRendered), render = js.Any.fromFunction0(render), renderControl = js.Any.fromFunction2(renderControl), replaceRefinementFilter = js.Any.fromFunction2(replaceRefinementFilter), scriptApplication_Load = js.Any.fromFunction2(scriptApplication_Load), scriptApplication_PostLoad = js.Any.fromFunction2(scriptApplication_PostLoad), scriptApplication_PreLoad = js.Any.fromFunction2(scriptApplication_PreLoad), serverTemplateScriptsCallback = js.Any.fromFunction0(serverTemplateScriptsCallback), serverTemplateScriptsToLoad = serverTemplateScriptsToLoad.asInstanceOf[js.Any], setControlElementVisibility = js.Any.fromFunction1(setControlElementVisibility), set_alternateErrorMessage = js.Any.fromFunction1(set_alternateErrorMessage), set_currentResultTableCollection = js.Any.fromFunction1(set_currentResultTableCollection), set_delayLoadTemplateScripts = js.Any.fromFunction1(set_delayLoadTemplateScripts), set_emptyMessage = js.Any.fromFunction1(set_emptyMessage), set_emptyRefinementMessageId = js.Any.fromFunction1(set_emptyRefinementMessageId), set_id = js.Any.fromFunction1(set_id), set_messages = js.Any.fromFunction1(set_messages), set_queryGroupName = js.Any.fromFunction1(set_queryGroupName), set_renderTemplateId = js.Any.fromFunction1(set_renderTemplateId), set_renderedResult = js.Any.fromFunction1(set_renderedResult), set_selectedRefinementControls = js.Any.fromFunction1(set_selectedRefinementControls), set_shouldShowNoResultMessage = js.Any.fromFunction1(set_shouldShowNoResultMessage), set_showDataErrors = js.Any.fromFunction1(set_showDataErrors), set_states = js.Any.fromFunction1(set_states), set_useManagedNavigationRefiners = js.Any.fromFunction1(set_useManagedNavigationRefiners), toggleCssClass = js.Any.fromFunction1(toggleCssClass), updateDisplayControlWithNewMessages = js.Any.fromFunction0(updateDisplayControlWithNewMessages), updateRefinementControls = js.Any.fromFunction1(updateRefinementControls), updateRefinementFilters = js.Any.fromFunction5(updateRefinementFilters), updateRefiners = js.Any.fromFunction4(updateRefiners), updateRefinersJSON = js.Any.fromFunction1(updateRefinersJSON), updated = js.Any.fromFunction0(updated))
     __obj.asInstanceOf[Refinement]
   }
+  
   @scala.inline
   implicit class RefinementOps[Self <: Refinement] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddRefinementFilter(value: (String, js.Any) => Unit): Self = this.set("addRefinementFilter", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setAddRefinementFilters(value: js.Array[_] => Unit): Self = this.set("addRefinementFilters", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setAddRefinementFiltersJSON(value: String => Unit): Self = this.set("addRefinementFiltersJSON", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setAddRefinementFiltersJSONWithOr(value: String => Unit): Self = this.set("addRefinementFiltersJSONWithOr", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setAddRefinementFiltersWithOp(value: (js.Array[_], String) => Unit): Self = this.set("addRefinementFiltersWithOp", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetCurrentRefinementCategory(value: String => js.Any): Self = this.set("getCurrentRefinementCategory", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetRefinementControl(value: String => RefinementControl): Self = this.set("getRefinementControl", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGet_emptyRefinementMessageId(value: () => String): Self = this.set("get_emptyRefinementMessageId", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGet_selectedRefinementControls(value: () => js.Array[RefinementControl]): Self = this.set("get_selectedRefinementControls", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGet_useManagedNavigationRefiners(value: () => Boolean): Self = this.set("get_useManagedNavigationRefiners", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setHasAllRefinementFilters(value: (String, js.Array[String]) => Boolean): Self = this.set("hasAllRefinementFilters", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setHasRefinementCategory(value: String => Boolean): Self = this.set("hasRefinementCategory", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setHasRefinementFilter(value: (String, String) => Boolean): Self = this.set("hasRefinementFilter", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setHasRefiner(value: String => Boolean): Self = this.set("hasRefiner", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRemoveRefinementCategory(value: (js.Any, String) => Unit): Self = this.set("removeRefinementCategory", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRemoveRefinementFilter(value: (String, String) => Unit): Self = this.set("removeRefinementFilter", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRemoveRefinementFiltersJSON(value: String => Unit): Self = this.set("removeRefinementFiltersJSON", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setReplaceRefinementFilter(value: (js.Any, js.Any) => Unit): Self = this.set("replaceRefinementFilter", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSet_emptyRefinementMessageId(value: String => String): Self = this.set("set_emptyRefinementMessageId", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSet_selectedRefinementControls(value: js.Array[RefinementControl] => js.Array[RefinementControl]): Self = this.set("set_selectedRefinementControls", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSet_useManagedNavigationRefiners(value: Boolean => Boolean): Self = this.set("set_useManagedNavigationRefiners", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setUpdateRefinementControls(value: js.Array[RefinementControl] => Unit): Self = this.set("updateRefinementControls", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setUpdateRefinementFilters(value: (String, js.Array[String], String, Boolean, js.Any) => Unit): Self = this.set("updateRefinementFilters", js.Any.fromFunction5(value))
+    
     @scala.inline
     def setUpdateRefiners(value: (js.Array[_], String, Boolean, js.Any) => Unit): Self = this.set("updateRefiners", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setUpdateRefinersJSON(value: String => Unit): Self = this.set("updateRefinersJSON", js.Any.fromFunction1(value))
   }
-  
 }
-

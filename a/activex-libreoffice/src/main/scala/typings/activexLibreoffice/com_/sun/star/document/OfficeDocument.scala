@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.view.XPrintable
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * abstract service which specifies a storable and printable document
@@ -32,6 +32,7 @@ trait OfficeDocument
      with XEmbeddedScripts
      with XDocumentPropertiesSupplier
      with XUndoManagerSupplier {
+  
   /**
     * controls the initial (on-load) behavior of the form controls in the document
     *
@@ -39,6 +40,7 @@ trait OfficeDocument
     *  With this, you may control if your document works primarily as a form document.
     */
   var ApplyFormDesignMode: Boolean = js.native
+  
   /**
     * controls the focus behavior of the form controls in the document
     *
@@ -46,11 +48,13 @@ trait OfficeDocument
     * document works primarily as a form document.
     */
   var AutomaticControlFocus: Boolean = js.native
+  
   /**
     * Grab bag of document properties, used as a string-any map for interim interop purposes.
     * @since LibreOffice 4.2  This property is intentionally not handled by the ODF filter. Any member that should be handled there should be first moved out
     */
   var InteropGrabBag: SafeArray[PropertyValue] = js.native
+  
   /**
     * contains a unique id for the document
     *
@@ -59,4 +63,3 @@ trait OfficeDocument
     */
   var RuntimeUID: String = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.lokijs.global
 import typings.lokijs.anon.PartialLokiConstructorOpt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Loki: The main database class
@@ -31,4 +31,3 @@ class Loki protected ()
   def this(filename: String) = this()
   def this(filename: String, options: PartialLokiConstructorOpt) = this()
 }
-

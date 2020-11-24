@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base class for all objects that are rendered on the screen.
@@ -17,11 +17,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class DisplayObject ()
   extends typings.pixiJs.PIXI.DisplayObject
-
 /* static members */
 @JSGlobal("PIXI.DisplayObject")
 @js.native
 object DisplayObject extends js.Object {
+  
   /**
     * Mixes all enumerable properties and methods from a source object to DisplayObject.
     *
@@ -29,4 +29,3 @@ object DisplayObject extends js.Object {
     */
   def mixin(source: js.Any): Unit = js.native
 }
-

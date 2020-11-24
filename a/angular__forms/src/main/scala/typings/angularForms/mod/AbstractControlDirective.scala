@@ -3,11 +3,33 @@ package typings.angularForms.mod
 import typings.rxjs.mod.Observable_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "AbstractControlDirective")
 @js.native
 abstract class AbstractControlDirective () extends js.Object {
+  
+  /**
+    * Contains the result of merging asynchronous validators into a single validator function
+    * (combined using `Validators.composeAsync`).
+    */
+  var _composedAsyncValidatorFn: js.Any = js.native
+  
+  /**
+    * Contains the result of merging synchronous validators into a single validator function
+    * (combined using `Validators.compose`).
+    */
+  var _composedValidatorFn: js.Any = js.native
+  
+  var _onDestroyCallbacks: js.Any = js.native
+  
+  /**
+    * @description
+    * Asynchronous validator function composed of all the asynchronous validators registered with
+    * this directive.
+    */
+  def asyncValidator: AsyncValidatorFn | Null = js.native
+  
   /**
     * @description
     * A reference to the underlying control.
@@ -15,12 +37,14 @@ abstract class AbstractControlDirective () extends js.Object {
     * @returns the control that backs this directive. Most properties fall through to that instance.
     */
   def control: AbstractControl | Null = js.native
+  
   /**
     * @description
     * Reports whether the control is dirty, meaning that the user has changed
     * the value in the UI. If the control is not present, null is returned.
     */
   def dirty: Boolean | Null = js.native
+  
   /**
     * @description
     * Reports whether the control is disabled, meaning that the control is disabled
@@ -28,17 +52,20 @@ abstract class AbstractControlDirective () extends js.Object {
     * values of ancestor controls. If the control is not present, null is returned.
     */
   def disabled: Boolean | Null = js.native
+  
   /**
     * @description
     * Reports whether the control is enabled, meaning that the control is included in ancestor
     * calculations of validity or value. If the control is not present, null is returned.
     */
   def enabled: Boolean | Null = js.native
+  
   /**
     * @description
     * Reports the control's validation errors. If the control is not present, null is returned.
     */
   def errors: ValidationErrors | Null = js.native
+  
   /**
     * @description
     * Reports error data for the control with the given path.
@@ -69,6 +96,7 @@ abstract class AbstractControlDirective () extends js.Object {
   def getError(errorCode: String): js.Any = js.native
   def getError(errorCode: String, path: String): js.Any = js.native
   def getError(errorCode: String, path: js.Array[String | Double]): js.Any = js.native
+  
   /**
     * @description
     * Reports whether the control with the given path has the error specified.
@@ -102,18 +130,21 @@ abstract class AbstractControlDirective () extends js.Object {
   def hasError(errorCode: String): Boolean = js.native
   def hasError(errorCode: String, path: String): Boolean = js.native
   def hasError(errorCode: String, path: js.Array[String | Double]): Boolean = js.native
+  
   /**
     * @description
     * Reports whether the control is invalid, meaning that an error exists in the input value.
     * If the control is not present, null is returned.
     */
   def invalid: Boolean | Null = js.native
+  
   /**
     * @description
     * Returns an array that represents the path from the top-level form to this control.
     * Each index is the string name of the control on that level.
     */
   def path: js.Array[String] | Null = js.native
+  
   /**
     * @description
     * Reports whether a control is pending, meaning that that async validation is occurring and
@@ -121,18 +152,21 @@ abstract class AbstractControlDirective () extends js.Object {
     * returned.
     */
   def pending: Boolean | Null = js.native
+  
   /**
     * @description
     * Reports whether the control is pristine, meaning that the user has not yet changed
     * the value in the UI. If the control is not present, null is returned.
     */
   def pristine: Boolean | Null = js.native
+  
   /**
     * @description
     * Resets the control with the provided value if the control is present.
     */
   def reset(): Unit = js.native
   def reset(value: js.Any): Unit = js.native
+  
   /**
     * @description
     * Reports the validation status of the control. Possible values include:
@@ -140,24 +174,28 @@ abstract class AbstractControlDirective () extends js.Object {
     * If the control is not present, null is returned.
     */
   def status: String | Null = js.native
+  
   /**
     * @description
     * Returns a multicasting observable that emits a validation status whenever it is
     * calculated for the control. If the control is not present, null is returned.
     */
   def statusChanges: Observable_[_] | Null = js.native
+  
   /**
     * @description
     * Reports whether the control is touched, meaning that the user has triggered
     * a `blur` event on it. If the control is not present, null is returned.
     */
   def touched: Boolean | Null = js.native
+  
   /**
     * @description
     * Reports whether the control is untouched, meaning that the user has not yet triggered
     * a `blur` event on it. If the control is not present, null is returned.
     */
   def untouched: Boolean | Null = js.native
+  
   /**
     * @description
     * Reports whether the control is valid. A control is considered valid if no
@@ -165,11 +203,20 @@ abstract class AbstractControlDirective () extends js.Object {
     * If the control is not present, null is returned.
     */
   def valid: Boolean | Null = js.native
+  
+  /**
+    * @description
+    * Synchronous validator function composed of all the synchronous validators registered with this
+    * directive.
+    */
+  def validator: ValidatorFn | Null = js.native
+  
   /**
     * @description
     * Reports the value of the control if it is present, otherwise null.
     */
   def value: js.Any = js.native
+  
   /**
     * @description
     * Returns a multicasting observable of value changes for the control that emits every time the
@@ -178,4 +225,3 @@ abstract class AbstractControlDirective () extends js.Object {
     */
   def valueChanges: Observable_[_] | Null = js.native
 }
-

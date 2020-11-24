@@ -5,7 +5,7 @@ import typings.std.Event
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Occurs if the load operation has been intentionally halted.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object onsuspend
   extends TopLevel[(js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null]
-

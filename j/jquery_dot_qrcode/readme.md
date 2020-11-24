@@ -11,8 +11,8 @@ http://jeromeetienne.github.com/jquery-qrcode
 | Full name          | jquery.qrcode |
 | Keywords           | jquery, qrcode |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 65205 |
+| # dependents       | 4 |
+| # downloads        | 112330 |
 | # stars            | 2 |
 
 ## Links

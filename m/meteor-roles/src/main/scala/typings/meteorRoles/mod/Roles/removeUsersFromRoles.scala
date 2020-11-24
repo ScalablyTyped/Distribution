@@ -2,11 +2,12 @@ package typings.meteorRoles.mod.Roles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/alanning:roles", "Roles.removeUsersFromRoles")
 @js.native
 object removeUsersFromRoles extends js.Object {
+  
   /**
     * Remove users from roles
     *
@@ -35,4 +36,3 @@ object removeUsersFromRoles extends js.Object {
   def apply(user: js.Object, roles: js.Array[String]): Unit = js.native
   def apply(user: js.Object, roles: js.Array[String], group: String): Unit = js.native
 }
-

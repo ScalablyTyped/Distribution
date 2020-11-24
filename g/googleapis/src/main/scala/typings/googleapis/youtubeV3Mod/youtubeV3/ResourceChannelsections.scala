@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Channelsections")
 @js.native
 class ResourceChannelsections protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.channelSections.delete
     * @desc Deletes a channelSection.
@@ -42,6 +44,7 @@ class ResourceChannelsections protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * youtube.channelSections.insert
     * @desc Adds a channelSection for the authenticated user's channel.
@@ -73,6 +76,7 @@ class ResourceChannelsections protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChannelSection]
   ): Unit = js.native
+  
   /**
     * youtube.channelSections.list
     * @desc Returns channelSection resources that match the API request
@@ -110,6 +114,7 @@ class ResourceChannelsections protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChannelSectionListResponse]
   ): Unit = js.native
+  
   /**
     * youtube.channelSections.update
     * @desc Update a channelSection.
@@ -141,4 +146,3 @@ class ResourceChannelsections protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChannelSection]
   ): Unit = js.native
 }
-

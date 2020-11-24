@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Ticker class that runs an update loop that other objects listen to.
@@ -17,11 +17,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Ticker ()
   extends typings.pixiJs.PIXI.Ticker
-
 /* static members */
 @JSGlobal("PIXI.Ticker")
 @js.native
 object Ticker extends js.Object {
+  
   /**
     * The shared ticker instance used by {@link PIXI.AnimatedSprite} and by
     * {@link PIXI.VideoResource} to update animation frames / video textures.
@@ -66,6 +66,7 @@ object Ticker extends js.Object {
     * @static
     */
   var shared: typings.pixiJs.PIXI.Ticker = js.native
+  
   /**
     * The system ticker instance used by {@link PIXI.InteractionManager} and by
     * {@link PIXI.BasePrepare} for core timing functionality that shouldn't usually need to be paused,
@@ -78,4 +79,3 @@ object Ticker extends js.Object {
     */
   var system: typings.pixiJs.PIXI.Ticker = js.native
 }
-

@@ -10,9 +10,9 @@ EditorConfig File Locator and Interpreter for Node.js
 | ------------------ | :-------------: |
 | Full name          | editorconfig |
 | Keywords           | editorconfig, core |
-| # releases         | 9 |
-| # dependents       | 45 |
-| # downloads        | 31266563 |
+| # releases         | 4 |
+| # dependents       | 62 |
+| # downloads        | 78093580 |
 | # stars            | 7 |
 
 ## Links
@@ -31,18 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for Minimatch 3.0
-// Project: https://github.com/isaacs/minimatch
-// Definitions by: vvakame <https://github.com/vvakame>
-//                 Shant Marouti <https://github.com/shantmarouti>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * Tests a path against the pattern using the options.
- */
-
-```
 

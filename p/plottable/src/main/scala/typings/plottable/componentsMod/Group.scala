@@ -3,7 +3,7 @@ package typings.plottable.componentsMod
 import typings.plottable.componentMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/components", "Group")
 @js.native
@@ -20,4 +20,3 @@ class Group ()
   extends typings.plottable.groupMod.Group {
   def this(components: js.Array[Component]) = this()
 }
-

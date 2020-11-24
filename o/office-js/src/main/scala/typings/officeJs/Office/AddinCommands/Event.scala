@@ -2,7 +2,7 @@ package typings.officeJs.Office.AddinCommands
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Event` object is passed as a parameter to add-in functions invoked by UI-less command buttons. The object allows the add-in to identify 
@@ -18,14 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Event extends js.Object {
-  /**
-    * Information about the control that triggered calling this function.
-    * 
-    * @remarks
-    * 
-    * This property is supported in Outlook only in {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | requirement set} Mailbox 1.3 and later.
-    */
-  var source: Source = js.native
+  
   /**
     * Indicates that the add-in has completed processing and will automatically be closed.
     * 
@@ -51,5 +44,13 @@ trait Event extends js.Object {
     */
   def completed(): Unit = js.native
   def completed(options: EventCompletedOptions): Unit = js.native
+  
+  /**
+    * Information about the control that triggered calling this function.
+    * 
+    * @remarks
+    * 
+    * This property is supported in Outlook only in {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | requirement set} Mailbox 1.3 and later.
+    */
+  var source: Source = js.native
 }
-

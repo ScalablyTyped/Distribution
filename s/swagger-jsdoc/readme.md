@@ -10,9 +10,9 @@ Generates swagger doc based on JSDoc
 | ------------------ | :-------------: |
 | Full name          | swagger-jsdoc |
 | Keywords           | jsdoc, restful, api, express, swagger |
-| # releases         | 24 |
-| # dependents       | 79 |
-| # downloads        | 3521165 |
+| # releases         | 12 |
+| # dependents       | 108 |
+| # downloads        | 5789914 |
 | # stars            | 21 |
 
 ## Links

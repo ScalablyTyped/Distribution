@@ -2,11 +2,12 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ReflectiveInjector")
 @js.native
 abstract class ReflectiveInjector () extends Injector {
+  
   /**
     * Creates a child injector from previously resolved providers.
     *
@@ -34,6 +35,7 @@ abstract class ReflectiveInjector () extends Injector {
     * ```
     */
   def createChildFromResolved(providers: js.Array[ResolvedReflectiveProvider]): ReflectiveInjector = js.native
+  
   /**
     * Instantiates an object using a resolved provider in the context of the injector.
     *
@@ -60,6 +62,7 @@ abstract class ReflectiveInjector () extends Injector {
     * ```
     */
   def instantiateResolved(provider: ResolvedReflectiveProvider): js.Any = js.native
+  
   /**
     * Parent of this injector.
     *
@@ -67,6 +70,7 @@ abstract class ReflectiveInjector () extends Injector {
     * -->
     */
   def parent: Injector | Null = js.native
+  
   /**
     * Resolves an array of providers and creates a child injector from those providers.
     *
@@ -92,6 +96,7 @@ abstract class ReflectiveInjector () extends Injector {
     * ```
     */
   def resolveAndCreateChild(providers: js.Array[Provider]): ReflectiveInjector = js.native
+  
   /**
     * Resolves a provider and instantiates an object in the context of the injector.
     *
@@ -119,11 +124,11 @@ abstract class ReflectiveInjector () extends Injector {
     */
   def resolveAndInstantiate(provider: Provider): js.Any = js.native
 }
-
 /* static members */
 @JSImport("@angular/core", "ReflectiveInjector")
 @js.native
 object ReflectiveInjector extends js.Object {
+  
   /**
     * Creates an injector from previously resolved providers.
     *
@@ -149,6 +154,7 @@ object ReflectiveInjector extends js.Object {
     */
   def fromResolvedProviders(providers: js.Array[ResolvedReflectiveProvider]): ReflectiveInjector = js.native
   def fromResolvedProviders(providers: js.Array[ResolvedReflectiveProvider], parent: Injector): ReflectiveInjector = js.native
+  
   /**
     * Turns an array of provider definitions into an array of resolved providers.
     *
@@ -183,6 +189,7 @@ object ReflectiveInjector extends js.Object {
     *
     */
   def resolve(providers: js.Array[Provider]): js.Array[ResolvedReflectiveProvider] = js.native
+  
   /**
     * Resolves an array of providers and creates an injector from those providers.
     *
@@ -209,4 +216,3 @@ object ReflectiveInjector extends js.Object {
   def resolveAndCreate(providers: js.Array[Provider]): ReflectiveInjector = js.native
   def resolveAndCreate(providers: js.Array[Provider], parent: Injector): ReflectiveInjector = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.phaser.global.Phaser.Math
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Math.CatmullRom")
 @js.native
 object CatmullRom extends js.Object {
+  
   /**
     * Calculates a Catmull-Rom value from the given points, based on an alpha of 0.5.
     * @param t The amount to interpolate by.
@@ -17,4 +18,3 @@ object CatmullRom extends js.Object {
     */
   def apply(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double = js.native
 }
-

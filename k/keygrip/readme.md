@@ -10,9 +10,9 @@ Key signing and verification for rotated credentials
 | ------------------ | :-------------: |
 | Full name          | keygrip |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 74 |
-| # downloads        | 25854208 |
+| # releases         | 2 |
+| # dependents       | 77 |
+| # downloads        | 35206465 |
 | # stars            | 17 |
 
 ## Links

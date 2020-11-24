@@ -3,11 +3,12 @@ package typings.msRestAzure.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest-azure", "interactiveLogin")
 @js.native
 object interactiveLogin extends js.Object {
+  
   def apply(): js.Promise[DeviceTokenCredentials] = js.native
   def apply(
     optionalCallback: js.Function3[
@@ -28,4 +29,3 @@ object interactiveLogin extends js.Object {
     ]
   ): Unit = js.native
 }
-

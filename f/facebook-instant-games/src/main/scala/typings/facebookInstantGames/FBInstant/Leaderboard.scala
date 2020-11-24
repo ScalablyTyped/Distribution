@@ -2,13 +2,14 @@ package typings.facebookInstantGames.FBInstant
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Instant Game leaderboard
   */
 @js.native
 trait Leaderboard extends js.Object {
+  
   /**
     * Retrieves the leaderboard score entries of the current player's connected players (including the current player), ordered by local rank within the set of connected players.
     * @param count  The number of entries to attempt to fetch from the leaderboard. Defaults to 10 if not specified. Currently, up to a maximum of 100 entries may be fetched per query.
@@ -16,10 +17,12 @@ trait Leaderboard extends js.Object {
     * @returns Resolves with the leaderboard entries that match the query.
     */
   def getConnectedPlayerEntriesAsync(count: Double, offset: Double): js.Promise[js.Array[LeaderboardEntry]] = js.native
+  
   /**
     * The ID of the context that the leaderboard is associated with, or null if the leaderboard is not tied to a particular context.
     */
   def getContextID(): String | Null = js.native
+  
   /**
     * Retrieves a set of leaderboard entries, ordered by score ranking in the leaderboard.
     *
@@ -30,6 +33,7 @@ trait Leaderboard extends js.Object {
     * @throws RATE_LIMITED
     */
   def getEntriesAsync(count: Double, offset: Double): js.Promise[js.Array[LeaderboardEntry]] = js.native
+  
   /**
     * Fetches the total number of player entries in the leaderboard.
     *
@@ -38,10 +42,12 @@ trait Leaderboard extends js.Object {
     * @throws RATE_LIMITED
     */
   def getEntryCountAsync(): js.Promise[Double] = js.native
+  
   /**
     * The name of the leaderboard.
     */
   def getName(): String = js.native
+  
   /**
     * Retrieves the leaderboard's entry for the current player, or null if the player has not set one yet.
     *
@@ -51,6 +57,7 @@ trait Leaderboard extends js.Object {
     * @throws RATE_LIMITED
     */
   def getPlayerEntryAsync(): js.Promise[LeaderboardEntry | Null] = js.native
+  
   /**
     * Updates the player's score. If the player has an existing score, the old score will only be replaced if the new score is better than it.
     * NOTE: If the leaderboard is associated with a specific context, the game must be in that context to set a score for the player.
@@ -67,4 +74,3 @@ trait Leaderboard extends js.Object {
   def setScoreAsync(score: Double): js.Promise[LeaderboardEntry] = js.native
   def setScoreAsync(score: Double, extraData: String): js.Promise[LeaderboardEntry] = js.native
 }
-

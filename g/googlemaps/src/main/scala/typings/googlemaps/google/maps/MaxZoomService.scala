@@ -2,7 +2,7 @@ package typings.googlemaps.google.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A service for obtaining the highest zoom level at which satellite imagery is available for a given location.
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MaxZoomService extends js.Object {
+  
   def getMaxZoomAtLatLng(latlng: LatLngLiteral, callback: js.Function1[/* result */ MaxZoomResult, Unit]): Unit = js.native
   /**
     * Returns the maximum zoom level for which detailed imagery is available at a particular {@link LatLng} for the
@@ -19,4 +20,3 @@ trait MaxZoomService extends js.Object {
     */
   def getMaxZoomAtLatLng(latlng: LatLng, callback: js.Function1[/* result */ MaxZoomResult, Unit]): Unit = js.native
 }
-

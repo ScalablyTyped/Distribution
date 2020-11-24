@@ -16,13 +16,17 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.tooltipShown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BootstrapPieChart extends Control {
+  
   def exportTo(format: String, fileName: String): Unit = js.native
+  
   def getDataSource(): js.Any = js.native
+  
   def getInstance(): js.Any = js.native
+  
   def off(
     eventName: js.UndefOr[scala.Nothing],
     callback: js.ThisFunction1[
@@ -159,6 +163,7 @@ trait BootstrapPieChart extends Control {
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("on")
   def on_disposing(
     eventName: disposing,
@@ -257,6 +262,7 @@ trait BootstrapPieChart extends Control {
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("once")
   def once_disposing(
     eventName: disposing,
@@ -355,8 +361,10 @@ trait BootstrapPieChart extends Control {
       Unit
     ]
   ): this.type = js.native
+  
   def print(): Unit = js.native
+  
   def setDataSource(dataSource: js.Any): Unit = js.native
+  
   def setOptions(options: js.Any): Unit = js.native
 }
-

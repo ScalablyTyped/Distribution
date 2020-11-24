@@ -2,7 +2,7 @@ package typings.nodeRsa.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-rsa", JSImport.Namespace)
 @js.native
@@ -19,4 +19,3 @@ class ^ () extends NodeRSA {
   def this(key: Key, format: js.UndefOr[scala.Nothing], options: Options) = this()
   def this(key: Key, format: Format, options: Options) = this()
 }
-

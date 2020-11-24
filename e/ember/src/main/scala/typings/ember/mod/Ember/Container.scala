@@ -2,7 +2,7 @@ package typings.ember.mod.Ember
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A container used to instantiate and cache objects.
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Ember.Container")
 @js.native
 class Container () extends js.Object {
+  
   /**
     * Given a fullName, return the corresponding factory. The consumer of the factory
     * is responsible for the destruction of any factory instances, as there is no
@@ -19,4 +20,3 @@ class Container () extends js.Object {
   def factoryFor(fullName: java.lang.String): js.Any = js.native
   def factoryFor(fullName: java.lang.String, options: js.Object): js.Any = js.native
 }
-

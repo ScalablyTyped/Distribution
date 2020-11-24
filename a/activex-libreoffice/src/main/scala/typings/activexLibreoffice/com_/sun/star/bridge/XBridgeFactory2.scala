@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the {@link BridgeFactory} service to implement.
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
 trait XBridgeFactory2
   extends XBridgeFactory
      with XComponent
-
 object XBridgeFactory2 {
+  
   @scala.inline
   def apply(
     ExistingBridges: SafeArray[XBridge],
@@ -36,4 +36,3 @@ object XBridgeFactory2 {
     __obj.asInstanceOf[XBridgeFactory2]
   }
 }
-

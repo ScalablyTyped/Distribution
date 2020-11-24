@@ -5,9 +5,715 @@ import typings.reactOnsenui.mod.SpeedDialPosition
 import typings.reactOnsenui.mod._NavigatorAnimationTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactOnsenuiStrings {
+  
+  @scala.inline
+  def about: about = "about".asInstanceOf[about]
+  
+  @scala.inline
+  def accept: accept = "accept".asInstanceOf[accept]
+  
+  @scala.inline
+  def accessKey: accessKey = "accessKey".asInstanceOf[accessKey]
+  
+  @scala.inline
+  def action: action = "action".asInstanceOf[action]
+  
+  @scala.inline
+  def alt: alt = "alt".asInstanceOf[alt]
+  
+  @scala.inline
+  def `aria-activedescendant`: `aria-activedescendant` = "aria-activedescendant".asInstanceOf[`aria-activedescendant`]
+  
+  @scala.inline
+  def `aria-atomic`: `aria-atomic` = "aria-atomic".asInstanceOf[`aria-atomic`]
+  
+  @scala.inline
+  def `aria-autocomplete`: `aria-autocomplete` = "aria-autocomplete".asInstanceOf[`aria-autocomplete`]
+  
+  @scala.inline
+  def `aria-busy`: `aria-busy` = "aria-busy".asInstanceOf[`aria-busy`]
+  
+  @scala.inline
+  def `aria-checked`: `aria-checked` = "aria-checked".asInstanceOf[`aria-checked`]
+  
+  @scala.inline
+  def `aria-colcount`: `aria-colcount` = "aria-colcount".asInstanceOf[`aria-colcount`]
+  
+  @scala.inline
+  def `aria-colindex`: `aria-colindex` = "aria-colindex".asInstanceOf[`aria-colindex`]
+  
+  @scala.inline
+  def `aria-colspan`: `aria-colspan` = "aria-colspan".asInstanceOf[`aria-colspan`]
+  
+  @scala.inline
+  def `aria-controls`: `aria-controls` = "aria-controls".asInstanceOf[`aria-controls`]
+  
+  @scala.inline
+  def `aria-current`: `aria-current` = "aria-current".asInstanceOf[`aria-current`]
+  
+  @scala.inline
+  def `aria-describedby`: `aria-describedby` = "aria-describedby".asInstanceOf[`aria-describedby`]
+  
+  @scala.inline
+  def `aria-details`: `aria-details` = "aria-details".asInstanceOf[`aria-details`]
+  
+  @scala.inline
+  def `aria-disabled`: `aria-disabled` = "aria-disabled".asInstanceOf[`aria-disabled`]
+  
+  @scala.inline
+  def `aria-dropeffect`: `aria-dropeffect` = "aria-dropeffect".asInstanceOf[`aria-dropeffect`]
+  
+  @scala.inline
+  def `aria-errormessage`: `aria-errormessage` = "aria-errormessage".asInstanceOf[`aria-errormessage`]
+  
+  @scala.inline
+  def `aria-expanded`: `aria-expanded` = "aria-expanded".asInstanceOf[`aria-expanded`]
+  
+  @scala.inline
+  def `aria-flowto`: `aria-flowto` = "aria-flowto".asInstanceOf[`aria-flowto`]
+  
+  @scala.inline
+  def `aria-grabbed`: `aria-grabbed` = "aria-grabbed".asInstanceOf[`aria-grabbed`]
+  
+  @scala.inline
+  def `aria-haspopup`: `aria-haspopup` = "aria-haspopup".asInstanceOf[`aria-haspopup`]
+  
+  @scala.inline
+  def `aria-hidden`: `aria-hidden` = "aria-hidden".asInstanceOf[`aria-hidden`]
+  
+  @scala.inline
+  def `aria-invalid`: `aria-invalid` = "aria-invalid".asInstanceOf[`aria-invalid`]
+  
+  @scala.inline
+  def `aria-keyshortcuts`: `aria-keyshortcuts` = "aria-keyshortcuts".asInstanceOf[`aria-keyshortcuts`]
+  
+  @scala.inline
+  def `aria-label`: `aria-label` = "aria-label".asInstanceOf[`aria-label`]
+  
+  @scala.inline
+  def `aria-labelledby`: `aria-labelledby` = "aria-labelledby".asInstanceOf[`aria-labelledby`]
+  
+  @scala.inline
+  def `aria-level`: `aria-level` = "aria-level".asInstanceOf[`aria-level`]
+  
+  @scala.inline
+  def `aria-live`: `aria-live` = "aria-live".asInstanceOf[`aria-live`]
+  
+  @scala.inline
+  def `aria-modal`: `aria-modal` = "aria-modal".asInstanceOf[`aria-modal`]
+  
+  @scala.inline
+  def `aria-multiline`: `aria-multiline` = "aria-multiline".asInstanceOf[`aria-multiline`]
+  
+  @scala.inline
+  def `aria-multiselectable`: `aria-multiselectable` = "aria-multiselectable".asInstanceOf[`aria-multiselectable`]
+  
+  @scala.inline
+  def `aria-orientation`: `aria-orientation` = "aria-orientation".asInstanceOf[`aria-orientation`]
+  
+  @scala.inline
+  def `aria-owns`: `aria-owns` = "aria-owns".asInstanceOf[`aria-owns`]
+  
+  @scala.inline
+  def `aria-placeholder`: `aria-placeholder` = "aria-placeholder".asInstanceOf[`aria-placeholder`]
+  
+  @scala.inline
+  def `aria-posinset`: `aria-posinset` = "aria-posinset".asInstanceOf[`aria-posinset`]
+  
+  @scala.inline
+  def `aria-pressed`: `aria-pressed` = "aria-pressed".asInstanceOf[`aria-pressed`]
+  
+  @scala.inline
+  def `aria-readonly`: `aria-readonly` = "aria-readonly".asInstanceOf[`aria-readonly`]
+  
+  @scala.inline
+  def `aria-relevant`: `aria-relevant` = "aria-relevant".asInstanceOf[`aria-relevant`]
+  
+  @scala.inline
+  def `aria-required`: `aria-required` = "aria-required".asInstanceOf[`aria-required`]
+  
+  @scala.inline
+  def `aria-roledescription`: `aria-roledescription` = "aria-roledescription".asInstanceOf[`aria-roledescription`]
+  
+  @scala.inline
+  def `aria-rowcount`: `aria-rowcount` = "aria-rowcount".asInstanceOf[`aria-rowcount`]
+  
+  @scala.inline
+  def `aria-rowindex`: `aria-rowindex` = "aria-rowindex".asInstanceOf[`aria-rowindex`]
+  
+  @scala.inline
+  def `aria-rowspan`: `aria-rowspan` = "aria-rowspan".asInstanceOf[`aria-rowspan`]
+  
+  @scala.inline
+  def `aria-selected`: `aria-selected` = "aria-selected".asInstanceOf[`aria-selected`]
+  
+  @scala.inline
+  def `aria-setsize`: `aria-setsize` = "aria-setsize".asInstanceOf[`aria-setsize`]
+  
+  @scala.inline
+  def `aria-sort`: `aria-sort` = "aria-sort".asInstanceOf[`aria-sort`]
+  
+  @scala.inline
+  def `aria-valuemax`: `aria-valuemax` = "aria-valuemax".asInstanceOf[`aria-valuemax`]
+  
+  @scala.inline
+  def `aria-valuemin`: `aria-valuemin` = "aria-valuemin".asInstanceOf[`aria-valuemin`]
+  
+  @scala.inline
+  def `aria-valuenow`: `aria-valuenow` = "aria-valuenow".asInstanceOf[`aria-valuenow`]
+  
+  @scala.inline
+  def `aria-valuetext`: `aria-valuetext` = "aria-valuetext".asInstanceOf[`aria-valuetext`]
+  
+  @scala.inline
+  def ascend: ascend = "ascend".asInstanceOf[ascend]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def autoCapitalize: autoCapitalize = "autoCapitalize".asInstanceOf[autoCapitalize]
+  
+  @scala.inline
+  def autoComplete: autoComplete = "autoComplete".asInstanceOf[autoComplete]
+  
+  @scala.inline
+  def autoCorrect: autoCorrect = "autoCorrect".asInstanceOf[autoCorrect]
+  
+  @scala.inline
+  def autoFocus: autoFocus = "autoFocus".asInstanceOf[autoFocus]
+  
+  @scala.inline
+  def autoSave: autoSave = "autoSave".asInstanceOf[autoSave]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def `bottom left`: `bottom left` = ("bottom left").asInstanceOf[`bottom left`]
+  
+  @scala.inline
+  def `bottom right`: `bottom right` = ("bottom right").asInstanceOf[`bottom right`]
+  
+  @scala.inline
+  def capture: capture = "capture".asInstanceOf[capture]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def checked: checked = "checked".asInstanceOf[checked]
+  
+  @scala.inline
+  def children: children = "children".asInstanceOf[children]
+  
+  @scala.inline
+  def className: className = "className".asInstanceOf[className]
+  
+  @scala.inline
+  def collapse: collapse = "collapse".asInstanceOf[collapse]
+  
+  @scala.inline
+  def color: color = "color".asInstanceOf[color]
+  
+  @scala.inline
+  def contentEditable: contentEditable = "contentEditable".asInstanceOf[contentEditable]
+  
+  @scala.inline
+  def contextMenu: contextMenu = "contextMenu".asInstanceOf[contextMenu]
+  
+  @scala.inline
+  def crossOrigin: crossOrigin = "crossOrigin".asInstanceOf[crossOrigin]
+  
+  @scala.inline
+  def dangerouslySetInnerHTML: dangerouslySetInnerHTML = "dangerouslySetInnerHTML".asInstanceOf[dangerouslySetInnerHTML]
+  
+  @scala.inline
+  def datatype: datatype = "datatype".asInstanceOf[datatype]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def defaultChecked: defaultChecked = "defaultChecked".asInstanceOf[defaultChecked]
+  
+  @scala.inline
+  def defaultValue: defaultValue = "defaultValue".asInstanceOf[defaultValue]
+  
+  @scala.inline
+  def dir: dir = "dir".asInstanceOf[dir]
+  
+  @scala.inline
+  def disabled: disabled = "disabled".asInstanceOf[disabled]
+  
+  @scala.inline
+  def down: down = "down".asInstanceOf[down]
+  
+  @scala.inline
+  def draggable: draggable = "draggable".asInstanceOf[draggable]
+  
+  @scala.inline
+  def enterKeyHint: enterKeyHint = "enterKeyHint".asInstanceOf[enterKeyHint]
+  
+  @scala.inline
+  def fade: fade = "fade".asInstanceOf[fade]
+  
+  @scala.inline
+  def fall: fall = "fall".asInstanceOf[fall]
+  
+  @scala.inline
+  def force: force = "force".asInstanceOf[force]
+  
+  @scala.inline
+  def form: form = "form".asInstanceOf[form]
+  
+  @scala.inline
+  def formAction: formAction = "formAction".asInstanceOf[formAction]
+  
+  @scala.inline
+  def formEncType: formEncType = "formEncType".asInstanceOf[formEncType]
+  
+  @scala.inline
+  def formMethod: formMethod = "formMethod".asInstanceOf[formMethod]
+  
+  @scala.inline
+  def formNoValidate: formNoValidate = "formNoValidate".asInstanceOf[formNoValidate]
+  
+  @scala.inline
+  def formTarget: formTarget = "formTarget".asInstanceOf[formTarget]
+  
+  @scala.inline
+  def height: height = "height".asInstanceOf[height]
+  
+  @scala.inline
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def id: id = "id".asInstanceOf[id]
+  
+  @scala.inline
+  def initial: initial = "initial".asInstanceOf[initial]
+  
+  @scala.inline
+  def inlist: inlist = "inlist".asInstanceOf[inlist]
+  
+  @scala.inline
+  def inputMode: inputMode = "inputMode".asInstanceOf[inputMode]
+  
+  @scala.inline
+  def is: is = "is".asInstanceOf[is]
+  
+  @scala.inline
+  def itemID: itemID = "itemID".asInstanceOf[itemID]
+  
+  @scala.inline
+  def itemProp: itemProp = "itemProp".asInstanceOf[itemProp]
+  
+  @scala.inline
+  def itemRef: itemRef = "itemRef".asInstanceOf[itemRef]
+  
+  @scala.inline
+  def itemScope: itemScope = "itemScope".asInstanceOf[itemScope]
+  
+  @scala.inline
+  def itemType: itemType = "itemType".asInstanceOf[itemType]
+  
+  @scala.inline
+  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  
+  @scala.inline
+  def lang: lang = "lang".asInstanceOf[lang]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def lift: lift = "lift".asInstanceOf[lift]
+  
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
+  
+  @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  
+  @scala.inline
+  def maxLength: maxLength = "maxLength".asInstanceOf[maxLength]
+  
+  @scala.inline
+  def min: min = "min".asInstanceOf[min]
+  
+  @scala.inline
+  def minLength: minLength = "minLength".asInstanceOf[minLength]
+  
+  @scala.inline
+  def multiple: multiple = "multiple".asInstanceOf[multiple]
+  
+  @scala.inline
+  def name: name = "name".asInstanceOf[name]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def onAbort: onAbort = "onAbort".asInstanceOf[onAbort]
+  
+  @scala.inline
+  def onAnimationEnd: onAnimationEnd = "onAnimationEnd".asInstanceOf[onAnimationEnd]
+  
+  @scala.inline
+  def onAnimationIteration: onAnimationIteration = "onAnimationIteration".asInstanceOf[onAnimationIteration]
+  
+  @scala.inline
+  def onAnimationStart: onAnimationStart = "onAnimationStart".asInstanceOf[onAnimationStart]
+  
+  @scala.inline
+  def onAuxClick: onAuxClick = "onAuxClick".asInstanceOf[onAuxClick]
+  
+  @scala.inline
+  def onBeforeInput: onBeforeInput = "onBeforeInput".asInstanceOf[onBeforeInput]
+  
+  @scala.inline
+  def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
+  
+  @scala.inline
+  def onCanPlay: onCanPlay = "onCanPlay".asInstanceOf[onCanPlay]
+  
+  @scala.inline
+  def onCanPlayThrough: onCanPlayThrough = "onCanPlayThrough".asInstanceOf[onCanPlayThrough]
+  
+  @scala.inline
+  def onChange: onChange = "onChange".asInstanceOf[onChange]
+  
+  @scala.inline
+  def onClick: onClick = "onClick".asInstanceOf[onClick]
+  
+  @scala.inline
+  def onCompositionEnd: onCompositionEnd = "onCompositionEnd".asInstanceOf[onCompositionEnd]
+  
+  @scala.inline
+  def onCompositionStart: onCompositionStart = "onCompositionStart".asInstanceOf[onCompositionStart]
+  
+  @scala.inline
+  def onCompositionUpdate: onCompositionUpdate = "onCompositionUpdate".asInstanceOf[onCompositionUpdate]
+  
+  @scala.inline
+  def onContextMenu: onContextMenu = "onContextMenu".asInstanceOf[onContextMenu]
+  
+  @scala.inline
+  def onCopy: onCopy = "onCopy".asInstanceOf[onCopy]
+  
+  @scala.inline
+  def onCut: onCut = "onCut".asInstanceOf[onCut]
+  
+  @scala.inline
+  def onDoubleClick: onDoubleClick = "onDoubleClick".asInstanceOf[onDoubleClick]
+  
+  @scala.inline
+  def onDrag: onDrag = "onDrag".asInstanceOf[onDrag]
+  
+  @scala.inline
+  def onDragEnd: onDragEnd = "onDragEnd".asInstanceOf[onDragEnd]
+  
+  @scala.inline
+  def onDragEnter: onDragEnter = "onDragEnter".asInstanceOf[onDragEnter]
+  
+  @scala.inline
+  def onDragExit: onDragExit = "onDragExit".asInstanceOf[onDragExit]
+  
+  @scala.inline
+  def onDragLeave: onDragLeave = "onDragLeave".asInstanceOf[onDragLeave]
+  
+  @scala.inline
+  def onDragOver: onDragOver = "onDragOver".asInstanceOf[onDragOver]
+  
+  @scala.inline
+  def onDragStart: onDragStart = "onDragStart".asInstanceOf[onDragStart]
+  
+  @scala.inline
+  def onDrop: onDrop = "onDrop".asInstanceOf[onDrop]
+  
+  @scala.inline
+  def onDurationChange: onDurationChange = "onDurationChange".asInstanceOf[onDurationChange]
+  
+  @scala.inline
+  def onEmptied: onEmptied = "onEmptied".asInstanceOf[onEmptied]
+  
+  @scala.inline
+  def onEncrypted: onEncrypted = "onEncrypted".asInstanceOf[onEncrypted]
+  
+  @scala.inline
+  def onEnded: onEnded = "onEnded".asInstanceOf[onEnded]
+  
+  @scala.inline
+  def onError: onError = "onError".asInstanceOf[onError]
+  
+  @scala.inline
+  def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
+  
+  @scala.inline
+  def onInput: onInput = "onInput".asInstanceOf[onInput]
+  
+  @scala.inline
+  def onInvalid: onInvalid = "onInvalid".asInstanceOf[onInvalid]
+  
+  @scala.inline
+  def onKeyDown: onKeyDown = "onKeyDown".asInstanceOf[onKeyDown]
+  
+  @scala.inline
+  def onKeyPress: onKeyPress = "onKeyPress".asInstanceOf[onKeyPress]
+  
+  @scala.inline
+  def onKeyUp: onKeyUp = "onKeyUp".asInstanceOf[onKeyUp]
+  
+  @scala.inline
+  def onLoad: onLoad = "onLoad".asInstanceOf[onLoad]
+  
+  @scala.inline
+  def onLoadStart: onLoadStart = "onLoadStart".asInstanceOf[onLoadStart]
+  
+  @scala.inline
+  def onLoadedData: onLoadedData = "onLoadedData".asInstanceOf[onLoadedData]
+  
+  @scala.inline
+  def onLoadedMetadata: onLoadedMetadata = "onLoadedMetadata".asInstanceOf[onLoadedMetadata]
+  
+  @scala.inline
+  def onMouseDown: onMouseDown = "onMouseDown".asInstanceOf[onMouseDown]
+  
+  @scala.inline
+  def onMouseEnter: onMouseEnter = "onMouseEnter".asInstanceOf[onMouseEnter]
+  
+  @scala.inline
+  def onMouseLeave: onMouseLeave = "onMouseLeave".asInstanceOf[onMouseLeave]
+  
+  @scala.inline
+  def onMouseMove: onMouseMove = "onMouseMove".asInstanceOf[onMouseMove]
+  
+  @scala.inline
+  def onMouseOut: onMouseOut = "onMouseOut".asInstanceOf[onMouseOut]
+  
+  @scala.inline
+  def onMouseOver: onMouseOver = "onMouseOver".asInstanceOf[onMouseOver]
+  
+  @scala.inline
+  def onMouseUp: onMouseUp = "onMouseUp".asInstanceOf[onMouseUp]
+  
+  @scala.inline
+  def onPaste: onPaste = "onPaste".asInstanceOf[onPaste]
+  
+  @scala.inline
+  def onPause: onPause = "onPause".asInstanceOf[onPause]
+  
+  @scala.inline
+  def onPlay: onPlay = "onPlay".asInstanceOf[onPlay]
+  
+  @scala.inline
+  def onPlaying: onPlaying = "onPlaying".asInstanceOf[onPlaying]
+  
+  @scala.inline
+  def onPointerCancel: onPointerCancel = "onPointerCancel".asInstanceOf[onPointerCancel]
+  
+  @scala.inline
+  def onPointerDown: onPointerDown = "onPointerDown".asInstanceOf[onPointerDown]
+  
+  @scala.inline
+  def onPointerEnter: onPointerEnter = "onPointerEnter".asInstanceOf[onPointerEnter]
+  
+  @scala.inline
+  def onPointerLeave: onPointerLeave = "onPointerLeave".asInstanceOf[onPointerLeave]
+  
+  @scala.inline
+  def onPointerMove: onPointerMove = "onPointerMove".asInstanceOf[onPointerMove]
+  
+  @scala.inline
+  def onPointerOut: onPointerOut = "onPointerOut".asInstanceOf[onPointerOut]
+  
+  @scala.inline
+  def onPointerOver: onPointerOver = "onPointerOver".asInstanceOf[onPointerOver]
+  
+  @scala.inline
+  def onPointerUp: onPointerUp = "onPointerUp".asInstanceOf[onPointerUp]
+  
+  @scala.inline
+  def onProgress: onProgress = "onProgress".asInstanceOf[onProgress]
+  
+  @scala.inline
+  def onRateChange: onRateChange = "onRateChange".asInstanceOf[onRateChange]
+  
+  @scala.inline
+  def onReset: onReset = "onReset".asInstanceOf[onReset]
+  
+  @scala.inline
+  def onScroll: onScroll = "onScroll".asInstanceOf[onScroll]
+  
+  @scala.inline
+  def onSeeked: onSeeked = "onSeeked".asInstanceOf[onSeeked]
+  
+  @scala.inline
+  def onSeeking: onSeeking = "onSeeking".asInstanceOf[onSeeking]
+  
+  @scala.inline
+  def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
+  
+  @scala.inline
+  def onStalled: onStalled = "onStalled".asInstanceOf[onStalled]
+  
+  @scala.inline
+  def onSubmit: onSubmit = "onSubmit".asInstanceOf[onSubmit]
+  
+  @scala.inline
+  def onSuspend: onSuspend = "onSuspend".asInstanceOf[onSuspend]
+  
+  @scala.inline
+  def onTimeUpdate: onTimeUpdate = "onTimeUpdate".asInstanceOf[onTimeUpdate]
+  
+  @scala.inline
+  def onTouchCancel: onTouchCancel = "onTouchCancel".asInstanceOf[onTouchCancel]
+  
+  @scala.inline
+  def onTouchEnd: onTouchEnd = "onTouchEnd".asInstanceOf[onTouchEnd]
+  
+  @scala.inline
+  def onTouchMove: onTouchMove = "onTouchMove".asInstanceOf[onTouchMove]
+  
+  @scala.inline
+  def onTouchStart: onTouchStart = "onTouchStart".asInstanceOf[onTouchStart]
+  
+  @scala.inline
+  def onTransitionEnd: onTransitionEnd = "onTransitionEnd".asInstanceOf[onTransitionEnd]
+  
+  @scala.inline
+  def onVolumeChange: onVolumeChange = "onVolumeChange".asInstanceOf[onVolumeChange]
+  
+  @scala.inline
+  def onWaiting: onWaiting = "onWaiting".asInstanceOf[onWaiting]
+  
+  @scala.inline
+  def onWheel: onWheel = "onWheel".asInstanceOf[onWheel]
+  
+  @scala.inline
+  def overlay: overlay = "overlay".asInstanceOf[overlay]
+  
+  @scala.inline
+  def pattern: pattern = "pattern".asInstanceOf[pattern]
+  
+  @scala.inline
+  def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
+  
+  @scala.inline
+  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
+  @scala.inline
+  def preaction: preaction = "preaction".asInstanceOf[preaction]
+  
+  @scala.inline
+  def prefix: prefix = "prefix".asInstanceOf[prefix]
+  
+  @scala.inline
+  def property: property = "property".asInstanceOf[property]
+  
+  @scala.inline
+  def radioGroup: radioGroup = "radioGroup".asInstanceOf[radioGroup]
+  
+  @scala.inline
+  def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
+  
+  @scala.inline
+  def required: required = "required".asInstanceOf[required]
+  
+  @scala.inline
+  def resource: resource = "resource".asInstanceOf[resource]
+  
+  @scala.inline
+  def results: results = "results".asInstanceOf[results]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def role: role = "role".asInstanceOf[role]
+  
+  @scala.inline
+  def security: security = "security".asInstanceOf[security]
+  
+  @scala.inline
+  def size: size = "size".asInstanceOf[size]
+  
+  @scala.inline
+  def slide: slide = "slide".asInstanceOf[slide]
+  
+  @scala.inline
+  def slot: slot = "slot".asInstanceOf[slot]
+  
+  @scala.inline
+  def spellCheck: spellCheck = "spellCheck".asInstanceOf[spellCheck]
+  
+  @scala.inline
+  def split: split = "split".asInstanceOf[split]
+  
+  @scala.inline
+  def src: src = "src".asInstanceOf[src]
+  
+  @scala.inline
+  def step: step = "step".asInstanceOf[step]
+  
+  @scala.inline
+  def style: style = "style".asInstanceOf[style]
+  
+  @scala.inline
+  def suppressContentEditableWarning: suppressContentEditableWarning = "suppressContentEditableWarning".asInstanceOf[suppressContentEditableWarning]
+  
+  @scala.inline
+  def suppressHydrationWarning: suppressHydrationWarning = "suppressHydrationWarning".asInstanceOf[suppressHydrationWarning]
+  
+  @scala.inline
+  def tabIndex: tabIndex = "tabIndex".asInstanceOf[tabIndex]
+  
+  @scala.inline
+  def title: title = "title".asInstanceOf[title]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def `top left`: `top left` = ("top left").asInstanceOf[`top left`]
+  
+  @scala.inline
+  def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
+  
+  @scala.inline
+  def translate: translate = "translate".asInstanceOf[translate]
+  
+  @scala.inline
+  def `type`: `type` = "type".asInstanceOf[`type`]
+  
+  @scala.inline
+  def typeof: typeof = "typeof".asInstanceOf[typeof]
+  
+  @scala.inline
+  def unselectable: unselectable = "unselectable".asInstanceOf[unselectable]
+  
+  @scala.inline
+  def up: up = "up".asInstanceOf[up]
+  
+  @scala.inline
+  def value: value = "value".asInstanceOf[value]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @scala.inline
+  def vocab: vocab = "vocab".asInstanceOf[vocab]
+  
+  @scala.inline
+  def width: width = "width".asInstanceOf[width]
+  
   @js.native
   sealed trait about extends js.Object
   
@@ -255,10 +961,16 @@ object reactOnsenuiStrings {
   sealed trait draggable extends js.Object
   
   @js.native
+  sealed trait enterKeyHint extends js.Object
+  
+  @js.native
   sealed trait fade extends _NavigatorAnimationTypes
   
   @js.native
   sealed trait fall extends js.Object
+  
+  @js.native
+  sealed trait force extends js.Object
   
   @js.native
   sealed trait form extends js.Object
@@ -710,472 +1422,4 @@ object reactOnsenuiStrings {
   
   @js.native
   sealed trait width extends js.Object
-  
-  @scala.inline
-  def about: about = "about".asInstanceOf[about]
-  @scala.inline
-  def accept: accept = "accept".asInstanceOf[accept]
-  @scala.inline
-  def accessKey: accessKey = "accessKey".asInstanceOf[accessKey]
-  @scala.inline
-  def action: action = "action".asInstanceOf[action]
-  @scala.inline
-  def alt: alt = "alt".asInstanceOf[alt]
-  @scala.inline
-  def `aria-activedescendant`: `aria-activedescendant` = "aria-activedescendant".asInstanceOf[`aria-activedescendant`]
-  @scala.inline
-  def `aria-atomic`: `aria-atomic` = "aria-atomic".asInstanceOf[`aria-atomic`]
-  @scala.inline
-  def `aria-autocomplete`: `aria-autocomplete` = "aria-autocomplete".asInstanceOf[`aria-autocomplete`]
-  @scala.inline
-  def `aria-busy`: `aria-busy` = "aria-busy".asInstanceOf[`aria-busy`]
-  @scala.inline
-  def `aria-checked`: `aria-checked` = "aria-checked".asInstanceOf[`aria-checked`]
-  @scala.inline
-  def `aria-colcount`: `aria-colcount` = "aria-colcount".asInstanceOf[`aria-colcount`]
-  @scala.inline
-  def `aria-colindex`: `aria-colindex` = "aria-colindex".asInstanceOf[`aria-colindex`]
-  @scala.inline
-  def `aria-colspan`: `aria-colspan` = "aria-colspan".asInstanceOf[`aria-colspan`]
-  @scala.inline
-  def `aria-controls`: `aria-controls` = "aria-controls".asInstanceOf[`aria-controls`]
-  @scala.inline
-  def `aria-current`: `aria-current` = "aria-current".asInstanceOf[`aria-current`]
-  @scala.inline
-  def `aria-describedby`: `aria-describedby` = "aria-describedby".asInstanceOf[`aria-describedby`]
-  @scala.inline
-  def `aria-details`: `aria-details` = "aria-details".asInstanceOf[`aria-details`]
-  @scala.inline
-  def `aria-disabled`: `aria-disabled` = "aria-disabled".asInstanceOf[`aria-disabled`]
-  @scala.inline
-  def `aria-dropeffect`: `aria-dropeffect` = "aria-dropeffect".asInstanceOf[`aria-dropeffect`]
-  @scala.inline
-  def `aria-errormessage`: `aria-errormessage` = "aria-errormessage".asInstanceOf[`aria-errormessage`]
-  @scala.inline
-  def `aria-expanded`: `aria-expanded` = "aria-expanded".asInstanceOf[`aria-expanded`]
-  @scala.inline
-  def `aria-flowto`: `aria-flowto` = "aria-flowto".asInstanceOf[`aria-flowto`]
-  @scala.inline
-  def `aria-grabbed`: `aria-grabbed` = "aria-grabbed".asInstanceOf[`aria-grabbed`]
-  @scala.inline
-  def `aria-haspopup`: `aria-haspopup` = "aria-haspopup".asInstanceOf[`aria-haspopup`]
-  @scala.inline
-  def `aria-hidden`: `aria-hidden` = "aria-hidden".asInstanceOf[`aria-hidden`]
-  @scala.inline
-  def `aria-invalid`: `aria-invalid` = "aria-invalid".asInstanceOf[`aria-invalid`]
-  @scala.inline
-  def `aria-keyshortcuts`: `aria-keyshortcuts` = "aria-keyshortcuts".asInstanceOf[`aria-keyshortcuts`]
-  @scala.inline
-  def `aria-label`: `aria-label` = "aria-label".asInstanceOf[`aria-label`]
-  @scala.inline
-  def `aria-labelledby`: `aria-labelledby` = "aria-labelledby".asInstanceOf[`aria-labelledby`]
-  @scala.inline
-  def `aria-level`: `aria-level` = "aria-level".asInstanceOf[`aria-level`]
-  @scala.inline
-  def `aria-live`: `aria-live` = "aria-live".asInstanceOf[`aria-live`]
-  @scala.inline
-  def `aria-modal`: `aria-modal` = "aria-modal".asInstanceOf[`aria-modal`]
-  @scala.inline
-  def `aria-multiline`: `aria-multiline` = "aria-multiline".asInstanceOf[`aria-multiline`]
-  @scala.inline
-  def `aria-multiselectable`: `aria-multiselectable` = "aria-multiselectable".asInstanceOf[`aria-multiselectable`]
-  @scala.inline
-  def `aria-orientation`: `aria-orientation` = "aria-orientation".asInstanceOf[`aria-orientation`]
-  @scala.inline
-  def `aria-owns`: `aria-owns` = "aria-owns".asInstanceOf[`aria-owns`]
-  @scala.inline
-  def `aria-placeholder`: `aria-placeholder` = "aria-placeholder".asInstanceOf[`aria-placeholder`]
-  @scala.inline
-  def `aria-posinset`: `aria-posinset` = "aria-posinset".asInstanceOf[`aria-posinset`]
-  @scala.inline
-  def `aria-pressed`: `aria-pressed` = "aria-pressed".asInstanceOf[`aria-pressed`]
-  @scala.inline
-  def `aria-readonly`: `aria-readonly` = "aria-readonly".asInstanceOf[`aria-readonly`]
-  @scala.inline
-  def `aria-relevant`: `aria-relevant` = "aria-relevant".asInstanceOf[`aria-relevant`]
-  @scala.inline
-  def `aria-required`: `aria-required` = "aria-required".asInstanceOf[`aria-required`]
-  @scala.inline
-  def `aria-roledescription`: `aria-roledescription` = "aria-roledescription".asInstanceOf[`aria-roledescription`]
-  @scala.inline
-  def `aria-rowcount`: `aria-rowcount` = "aria-rowcount".asInstanceOf[`aria-rowcount`]
-  @scala.inline
-  def `aria-rowindex`: `aria-rowindex` = "aria-rowindex".asInstanceOf[`aria-rowindex`]
-  @scala.inline
-  def `aria-rowspan`: `aria-rowspan` = "aria-rowspan".asInstanceOf[`aria-rowspan`]
-  @scala.inline
-  def `aria-selected`: `aria-selected` = "aria-selected".asInstanceOf[`aria-selected`]
-  @scala.inline
-  def `aria-setsize`: `aria-setsize` = "aria-setsize".asInstanceOf[`aria-setsize`]
-  @scala.inline
-  def `aria-sort`: `aria-sort` = "aria-sort".asInstanceOf[`aria-sort`]
-  @scala.inline
-  def `aria-valuemax`: `aria-valuemax` = "aria-valuemax".asInstanceOf[`aria-valuemax`]
-  @scala.inline
-  def `aria-valuemin`: `aria-valuemin` = "aria-valuemin".asInstanceOf[`aria-valuemin`]
-  @scala.inline
-  def `aria-valuenow`: `aria-valuenow` = "aria-valuenow".asInstanceOf[`aria-valuenow`]
-  @scala.inline
-  def `aria-valuetext`: `aria-valuetext` = "aria-valuetext".asInstanceOf[`aria-valuetext`]
-  @scala.inline
-  def ascend: ascend = "ascend".asInstanceOf[ascend]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def autoCapitalize: autoCapitalize = "autoCapitalize".asInstanceOf[autoCapitalize]
-  @scala.inline
-  def autoComplete: autoComplete = "autoComplete".asInstanceOf[autoComplete]
-  @scala.inline
-  def autoCorrect: autoCorrect = "autoCorrect".asInstanceOf[autoCorrect]
-  @scala.inline
-  def autoFocus: autoFocus = "autoFocus".asInstanceOf[autoFocus]
-  @scala.inline
-  def autoSave: autoSave = "autoSave".asInstanceOf[autoSave]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def `bottom left`: `bottom left` = ("bottom left").asInstanceOf[`bottom left`]
-  @scala.inline
-  def `bottom right`: `bottom right` = ("bottom right").asInstanceOf[`bottom right`]
-  @scala.inline
-  def capture: capture = "capture".asInstanceOf[capture]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def checked: checked = "checked".asInstanceOf[checked]
-  @scala.inline
-  def children: children = "children".asInstanceOf[children]
-  @scala.inline
-  def className: className = "className".asInstanceOf[className]
-  @scala.inline
-  def collapse: collapse = "collapse".asInstanceOf[collapse]
-  @scala.inline
-  def color: color = "color".asInstanceOf[color]
-  @scala.inline
-  def contentEditable: contentEditable = "contentEditable".asInstanceOf[contentEditable]
-  @scala.inline
-  def contextMenu: contextMenu = "contextMenu".asInstanceOf[contextMenu]
-  @scala.inline
-  def crossOrigin: crossOrigin = "crossOrigin".asInstanceOf[crossOrigin]
-  @scala.inline
-  def dangerouslySetInnerHTML: dangerouslySetInnerHTML = "dangerouslySetInnerHTML".asInstanceOf[dangerouslySetInnerHTML]
-  @scala.inline
-  def datatype: datatype = "datatype".asInstanceOf[datatype]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def defaultChecked: defaultChecked = "defaultChecked".asInstanceOf[defaultChecked]
-  @scala.inline
-  def defaultValue: defaultValue = "defaultValue".asInstanceOf[defaultValue]
-  @scala.inline
-  def dir: dir = "dir".asInstanceOf[dir]
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
-  @scala.inline
-  def draggable: draggable = "draggable".asInstanceOf[draggable]
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
-  @scala.inline
-  def fall: fall = "fall".asInstanceOf[fall]
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
-  @scala.inline
-  def formAction: formAction = "formAction".asInstanceOf[formAction]
-  @scala.inline
-  def formEncType: formEncType = "formEncType".asInstanceOf[formEncType]
-  @scala.inline
-  def formMethod: formMethod = "formMethod".asInstanceOf[formMethod]
-  @scala.inline
-  def formNoValidate: formNoValidate = "formNoValidate".asInstanceOf[formNoValidate]
-  @scala.inline
-  def formTarget: formTarget = "formTarget".asInstanceOf[formTarget]
-  @scala.inline
-  def height: height = "height".asInstanceOf[height]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def id: id = "id".asInstanceOf[id]
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
-  @scala.inline
-  def inlist: inlist = "inlist".asInstanceOf[inlist]
-  @scala.inline
-  def inputMode: inputMode = "inputMode".asInstanceOf[inputMode]
-  @scala.inline
-  def is: is = "is".asInstanceOf[is]
-  @scala.inline
-  def itemID: itemID = "itemID".asInstanceOf[itemID]
-  @scala.inline
-  def itemProp: itemProp = "itemProp".asInstanceOf[itemProp]
-  @scala.inline
-  def itemRef: itemRef = "itemRef".asInstanceOf[itemRef]
-  @scala.inline
-  def itemScope: itemScope = "itemScope".asInstanceOf[itemScope]
-  @scala.inline
-  def itemType: itemType = "itemType".asInstanceOf[itemType]
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
-  @scala.inline
-  def lang: lang = "lang".asInstanceOf[lang]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def lift: lift = "lift".asInstanceOf[lift]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
-  def maxLength: maxLength = "maxLength".asInstanceOf[maxLength]
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
-  @scala.inline
-  def minLength: minLength = "minLength".asInstanceOf[minLength]
-  @scala.inline
-  def multiple: multiple = "multiple".asInstanceOf[multiple]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def onAbort: onAbort = "onAbort".asInstanceOf[onAbort]
-  @scala.inline
-  def onAnimationEnd: onAnimationEnd = "onAnimationEnd".asInstanceOf[onAnimationEnd]
-  @scala.inline
-  def onAnimationIteration: onAnimationIteration = "onAnimationIteration".asInstanceOf[onAnimationIteration]
-  @scala.inline
-  def onAnimationStart: onAnimationStart = "onAnimationStart".asInstanceOf[onAnimationStart]
-  @scala.inline
-  def onAuxClick: onAuxClick = "onAuxClick".asInstanceOf[onAuxClick]
-  @scala.inline
-  def onBeforeInput: onBeforeInput = "onBeforeInput".asInstanceOf[onBeforeInput]
-  @scala.inline
-  def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
-  @scala.inline
-  def onCanPlay: onCanPlay = "onCanPlay".asInstanceOf[onCanPlay]
-  @scala.inline
-  def onCanPlayThrough: onCanPlayThrough = "onCanPlayThrough".asInstanceOf[onCanPlayThrough]
-  @scala.inline
-  def onChange: onChange = "onChange".asInstanceOf[onChange]
-  @scala.inline
-  def onClick: onClick = "onClick".asInstanceOf[onClick]
-  @scala.inline
-  def onCompositionEnd: onCompositionEnd = "onCompositionEnd".asInstanceOf[onCompositionEnd]
-  @scala.inline
-  def onCompositionStart: onCompositionStart = "onCompositionStart".asInstanceOf[onCompositionStart]
-  @scala.inline
-  def onCompositionUpdate: onCompositionUpdate = "onCompositionUpdate".asInstanceOf[onCompositionUpdate]
-  @scala.inline
-  def onContextMenu: onContextMenu = "onContextMenu".asInstanceOf[onContextMenu]
-  @scala.inline
-  def onCopy: onCopy = "onCopy".asInstanceOf[onCopy]
-  @scala.inline
-  def onCut: onCut = "onCut".asInstanceOf[onCut]
-  @scala.inline
-  def onDoubleClick: onDoubleClick = "onDoubleClick".asInstanceOf[onDoubleClick]
-  @scala.inline
-  def onDrag: onDrag = "onDrag".asInstanceOf[onDrag]
-  @scala.inline
-  def onDragEnd: onDragEnd = "onDragEnd".asInstanceOf[onDragEnd]
-  @scala.inline
-  def onDragEnter: onDragEnter = "onDragEnter".asInstanceOf[onDragEnter]
-  @scala.inline
-  def onDragExit: onDragExit = "onDragExit".asInstanceOf[onDragExit]
-  @scala.inline
-  def onDragLeave: onDragLeave = "onDragLeave".asInstanceOf[onDragLeave]
-  @scala.inline
-  def onDragOver: onDragOver = "onDragOver".asInstanceOf[onDragOver]
-  @scala.inline
-  def onDragStart: onDragStart = "onDragStart".asInstanceOf[onDragStart]
-  @scala.inline
-  def onDrop: onDrop = "onDrop".asInstanceOf[onDrop]
-  @scala.inline
-  def onDurationChange: onDurationChange = "onDurationChange".asInstanceOf[onDurationChange]
-  @scala.inline
-  def onEmptied: onEmptied = "onEmptied".asInstanceOf[onEmptied]
-  @scala.inline
-  def onEncrypted: onEncrypted = "onEncrypted".asInstanceOf[onEncrypted]
-  @scala.inline
-  def onEnded: onEnded = "onEnded".asInstanceOf[onEnded]
-  @scala.inline
-  def onError: onError = "onError".asInstanceOf[onError]
-  @scala.inline
-  def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
-  @scala.inline
-  def onInput: onInput = "onInput".asInstanceOf[onInput]
-  @scala.inline
-  def onInvalid: onInvalid = "onInvalid".asInstanceOf[onInvalid]
-  @scala.inline
-  def onKeyDown: onKeyDown = "onKeyDown".asInstanceOf[onKeyDown]
-  @scala.inline
-  def onKeyPress: onKeyPress = "onKeyPress".asInstanceOf[onKeyPress]
-  @scala.inline
-  def onKeyUp: onKeyUp = "onKeyUp".asInstanceOf[onKeyUp]
-  @scala.inline
-  def onLoad: onLoad = "onLoad".asInstanceOf[onLoad]
-  @scala.inline
-  def onLoadStart: onLoadStart = "onLoadStart".asInstanceOf[onLoadStart]
-  @scala.inline
-  def onLoadedData: onLoadedData = "onLoadedData".asInstanceOf[onLoadedData]
-  @scala.inline
-  def onLoadedMetadata: onLoadedMetadata = "onLoadedMetadata".asInstanceOf[onLoadedMetadata]
-  @scala.inline
-  def onMouseDown: onMouseDown = "onMouseDown".asInstanceOf[onMouseDown]
-  @scala.inline
-  def onMouseEnter: onMouseEnter = "onMouseEnter".asInstanceOf[onMouseEnter]
-  @scala.inline
-  def onMouseLeave: onMouseLeave = "onMouseLeave".asInstanceOf[onMouseLeave]
-  @scala.inline
-  def onMouseMove: onMouseMove = "onMouseMove".asInstanceOf[onMouseMove]
-  @scala.inline
-  def onMouseOut: onMouseOut = "onMouseOut".asInstanceOf[onMouseOut]
-  @scala.inline
-  def onMouseOver: onMouseOver = "onMouseOver".asInstanceOf[onMouseOver]
-  @scala.inline
-  def onMouseUp: onMouseUp = "onMouseUp".asInstanceOf[onMouseUp]
-  @scala.inline
-  def onPaste: onPaste = "onPaste".asInstanceOf[onPaste]
-  @scala.inline
-  def onPause: onPause = "onPause".asInstanceOf[onPause]
-  @scala.inline
-  def onPlay: onPlay = "onPlay".asInstanceOf[onPlay]
-  @scala.inline
-  def onPlaying: onPlaying = "onPlaying".asInstanceOf[onPlaying]
-  @scala.inline
-  def onPointerCancel: onPointerCancel = "onPointerCancel".asInstanceOf[onPointerCancel]
-  @scala.inline
-  def onPointerDown: onPointerDown = "onPointerDown".asInstanceOf[onPointerDown]
-  @scala.inline
-  def onPointerEnter: onPointerEnter = "onPointerEnter".asInstanceOf[onPointerEnter]
-  @scala.inline
-  def onPointerLeave: onPointerLeave = "onPointerLeave".asInstanceOf[onPointerLeave]
-  @scala.inline
-  def onPointerMove: onPointerMove = "onPointerMove".asInstanceOf[onPointerMove]
-  @scala.inline
-  def onPointerOut: onPointerOut = "onPointerOut".asInstanceOf[onPointerOut]
-  @scala.inline
-  def onPointerOver: onPointerOver = "onPointerOver".asInstanceOf[onPointerOver]
-  @scala.inline
-  def onPointerUp: onPointerUp = "onPointerUp".asInstanceOf[onPointerUp]
-  @scala.inline
-  def onProgress: onProgress = "onProgress".asInstanceOf[onProgress]
-  @scala.inline
-  def onRateChange: onRateChange = "onRateChange".asInstanceOf[onRateChange]
-  @scala.inline
-  def onReset: onReset = "onReset".asInstanceOf[onReset]
-  @scala.inline
-  def onScroll: onScroll = "onScroll".asInstanceOf[onScroll]
-  @scala.inline
-  def onSeeked: onSeeked = "onSeeked".asInstanceOf[onSeeked]
-  @scala.inline
-  def onSeeking: onSeeking = "onSeeking".asInstanceOf[onSeeking]
-  @scala.inline
-  def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
-  @scala.inline
-  def onStalled: onStalled = "onStalled".asInstanceOf[onStalled]
-  @scala.inline
-  def onSubmit: onSubmit = "onSubmit".asInstanceOf[onSubmit]
-  @scala.inline
-  def onSuspend: onSuspend = "onSuspend".asInstanceOf[onSuspend]
-  @scala.inline
-  def onTimeUpdate: onTimeUpdate = "onTimeUpdate".asInstanceOf[onTimeUpdate]
-  @scala.inline
-  def onTouchCancel: onTouchCancel = "onTouchCancel".asInstanceOf[onTouchCancel]
-  @scala.inline
-  def onTouchEnd: onTouchEnd = "onTouchEnd".asInstanceOf[onTouchEnd]
-  @scala.inline
-  def onTouchMove: onTouchMove = "onTouchMove".asInstanceOf[onTouchMove]
-  @scala.inline
-  def onTouchStart: onTouchStart = "onTouchStart".asInstanceOf[onTouchStart]
-  @scala.inline
-  def onTransitionEnd: onTransitionEnd = "onTransitionEnd".asInstanceOf[onTransitionEnd]
-  @scala.inline
-  def onVolumeChange: onVolumeChange = "onVolumeChange".asInstanceOf[onVolumeChange]
-  @scala.inline
-  def onWaiting: onWaiting = "onWaiting".asInstanceOf[onWaiting]
-  @scala.inline
-  def onWheel: onWheel = "onWheel".asInstanceOf[onWheel]
-  @scala.inline
-  def overlay: overlay = "overlay".asInstanceOf[overlay]
-  @scala.inline
-  def pattern: pattern = "pattern".asInstanceOf[pattern]
-  @scala.inline
-  def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
-  @scala.inline
-  def preaction: preaction = "preaction".asInstanceOf[preaction]
-  @scala.inline
-  def prefix: prefix = "prefix".asInstanceOf[prefix]
-  @scala.inline
-  def property: property = "property".asInstanceOf[property]
-  @scala.inline
-  def radioGroup: radioGroup = "radioGroup".asInstanceOf[radioGroup]
-  @scala.inline
-  def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
-  @scala.inline
-  def required: required = "required".asInstanceOf[required]
-  @scala.inline
-  def resource: resource = "resource".asInstanceOf[resource]
-  @scala.inline
-  def results: results = "results".asInstanceOf[results]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def role: role = "role".asInstanceOf[role]
-  @scala.inline
-  def security: security = "security".asInstanceOf[security]
-  @scala.inline
-  def size: size = "size".asInstanceOf[size]
-  @scala.inline
-  def slide: slide = "slide".asInstanceOf[slide]
-  @scala.inline
-  def slot: slot = "slot".asInstanceOf[slot]
-  @scala.inline
-  def spellCheck: spellCheck = "spellCheck".asInstanceOf[spellCheck]
-  @scala.inline
-  def split: split = "split".asInstanceOf[split]
-  @scala.inline
-  def src: src = "src".asInstanceOf[src]
-  @scala.inline
-  def step: step = "step".asInstanceOf[step]
-  @scala.inline
-  def style: style = "style".asInstanceOf[style]
-  @scala.inline
-  def suppressContentEditableWarning: suppressContentEditableWarning = "suppressContentEditableWarning".asInstanceOf[suppressContentEditableWarning]
-  @scala.inline
-  def suppressHydrationWarning: suppressHydrationWarning = "suppressHydrationWarning".asInstanceOf[suppressHydrationWarning]
-  @scala.inline
-  def tabIndex: tabIndex = "tabIndex".asInstanceOf[tabIndex]
-  @scala.inline
-  def title: title = "title".asInstanceOf[title]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def `top left`: `top left` = ("top left").asInstanceOf[`top left`]
-  @scala.inline
-  def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
-  @scala.inline
-  def translate: translate = "translate".asInstanceOf[translate]
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
-  @scala.inline
-  def typeof: typeof = "typeof".asInstanceOf[typeof]
-  @scala.inline
-  def unselectable: unselectable = "unselectable".asInstanceOf[unselectable]
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def vocab: vocab = "vocab".asInstanceOf[vocab]
-  @scala.inline
-  def width: width = "width".asInstanceOf[width]
 }
-

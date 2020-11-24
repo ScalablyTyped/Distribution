@@ -10,9 +10,9 @@ Basic authentication plugin
 | ------------------ | :-------------: |
 | Full name          | @hapi/basic |
 | Keywords           | hapi, plugin, auth, basic |
-| # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 63131 |
+| # releases         | 5 |
+| # dependents       | 11 |
+| # downloads        | 275361 |
 | # stars            | 0 |
 
 ## Links

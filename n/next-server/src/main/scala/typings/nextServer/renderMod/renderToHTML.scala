@@ -5,11 +5,12 @@ import typings.node.httpMod.ServerResponse
 import typings.node.querystringMod.ParsedUrlQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("next-server/dist/server/render", "renderToHTML")
 @js.native
 object renderToHTML extends js.Object {
+  
   def apply(
     req: IncomingMessage,
     res: ServerResponse,
@@ -18,4 +19,3 @@ object renderToHTML extends js.Object {
     renderOpts: RenderOpts
   ): js.Promise[String | Null] = js.native
 }
-

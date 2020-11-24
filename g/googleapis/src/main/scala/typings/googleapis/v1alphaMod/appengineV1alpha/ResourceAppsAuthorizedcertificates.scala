@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1alpha", "appengine_v1alpha.Resource$Apps$Authorizedcertificates")
 @js.native
 class ResourceAppsAuthorizedcertificates protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * appengine.apps.authorizedCertificates.create
     * @desc Uploads the specified SSL certificate.
@@ -45,6 +47,7 @@ class ResourceAppsAuthorizedcertificates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAuthorizedCertificate]
   ): Unit = js.native
+  
   /**
     * appengine.apps.authorizedCertificates.delete
     * @desc Deletes the specified SSL certificate.
@@ -77,6 +80,7 @@ class ResourceAppsAuthorizedcertificates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * appengine.apps.authorizedCertificates.get
     * @desc Gets the specified SSL certificate.
@@ -110,6 +114,7 @@ class ResourceAppsAuthorizedcertificates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAuthorizedCertificate]
   ): Unit = js.native
+  
   /**
     * appengine.apps.authorizedCertificates.list
     * @desc Lists all SSL certificates the user is authorized to administer.
@@ -144,6 +149,7 @@ class ResourceAppsAuthorizedcertificates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListAuthorizedCertificatesResponse]
   ): Unit = js.native
+  
   /**
     * appengine.apps.authorizedCertificates.patch
     * @desc Updates the specified SSL certificate. To renew a certificate and
@@ -183,4 +189,3 @@ class ResourceAppsAuthorizedcertificates protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAuthorizedCertificate]
   ): Unit = js.native
 }
-

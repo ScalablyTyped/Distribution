@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Managedconfigurationssettings")
 @js.native
 class ResourceManagedconfigurationssettings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.managedconfigurationssettings.list
     * @desc Lists all the managed configurations settings for the specified
@@ -47,4 +49,3 @@ class ResourceManagedconfigurationssettings protected () extends js.Object {
     callback: BodyResponseCallback[SchemaManagedConfigurationsSettingsListResponse]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A RenderTexture is a special texture that allows any PixiJS display object to be rendered to it.
@@ -46,6 +46,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RenderTexture extends Texture {
+  
   /**
     * Stores `sourceFrame` when this texture is inside current filter stack.
     * You can read it inside filters.
@@ -54,18 +55,21 @@ trait RenderTexture extends Texture {
     * @member {PIXI.Rectangle} PIXI.RenderTexture#filterFrame
     */
   val filterFrame: Rectangle = js.native
+  
   /**
     * The key for pooled texture of FilterSystem
     * @protected
     * @member {string} PIXI.RenderTexture#filterPoolKey
     */
   var filterPoolKey: String = js.native
+  
   /**
     * Shortcut to `this.baseTexture.framebuffer`, saves baseTexture cast.
     * @member {PIXI.Framebuffer}
     * @readonly
     */
   val framebuffer: Framebuffer = js.native
+  
   /**
     * Resizes the RenderTexture.
     *
@@ -75,6 +79,7 @@ trait RenderTexture extends Texture {
     */
   def resize(width: Double, height: Double): Unit = js.native
   def resize(width: Double, height: Double, resizeBaseTexture: Boolean): Unit = js.native
+  
   /**
     * Changes the resolution of baseTexture, but does not change framebuffer size.
     *
@@ -82,4 +87,3 @@ trait RenderTexture extends Texture {
     */
   def setResolution(resolution: Double): Unit = js.native
 }
-

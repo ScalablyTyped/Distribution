@@ -4,14 +4,14 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IRandomAccessStreamWithContentType
   extends IRandomAccessStream
      with IContentTypeProvider
-
 object IRandomAccessStreamWithContentType {
+  
   @scala.inline
   def apply(
     canRead: Boolean,
@@ -32,4 +32,3 @@ object IRandomAccessStreamWithContentType {
     __obj.asInstanceOf[IRandomAccessStreamWithContentType]
   }
 }
-

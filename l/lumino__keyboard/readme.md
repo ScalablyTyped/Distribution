@@ -10,9 +10,9 @@ Lumino Keyboard
 | ------------------ | :-------------: |
 | Full name          | @lumino/keyboard |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 320755 |
+| # releases         | 11 |
+| # dependents       | 6 |
+| # downloads        | 651779 |
 | # stars            | 0 |
 
 ## Links

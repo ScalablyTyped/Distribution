@@ -10,9 +10,9 @@ A tiny (339B) utility for human-readable time differences between now and past o
 | ------------------ | :-------------: |
 | Full name          | fromnow |
 | Keywords           | ago, date, time, parse, format, moment, from now, fromnow |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 8526 |
+| # downloads        | 27917 |
 | # stars            | 0 |
 
 ## Links

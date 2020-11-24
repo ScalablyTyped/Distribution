@@ -3,7 +3,7 @@ package typings.heremaps.global.H.map
 import typings.heremaps.H.map.Spatial.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents a spatial shape in geographic space. It is defined by a path containing the vertices of the shape (lat, lng, alt values).
@@ -19,4 +19,3 @@ class GeoShape protected ()
     */
   def this(isClosed: Boolean, options: Options) = this()
 }
-

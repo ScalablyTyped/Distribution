@@ -2,10 +2,11 @@ package typings.cassanknex.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WhereableQueryBuilder[T] extends js.Object {
+  
   def andWhere[K /* <: /* keyof T */ String */](
     lhs: K,
     comparison: ComparisonRestriction,
@@ -18,6 +19,7 @@ trait WhereableQueryBuilder[T] extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
     ]
   ): this.type = js.native
+  
   def orWhere[K /* <: /* keyof T */ String */](
     lhs: K,
     comparison: ComparisonRestriction,
@@ -30,6 +32,7 @@ trait WhereableQueryBuilder[T] extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
     ]
   ): this.type = js.native
+  
   def tokenWhere[K /* <: /* keyof T */ String */](
     lhs: K,
     comparison: ComparisonRestriction,
@@ -42,7 +45,9 @@ trait WhereableQueryBuilder[T] extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
     ]
   ): this.type = js.native
+  
   def ttl[K /* <: /* keyof T */ String */](columnName: K): this.type = js.native
+  
   def where[K /* <: /* keyof T */ String */](
     lhs: K,
     comparison: ComparisonRestriction,
@@ -56,4 +61,3 @@ trait WhereableQueryBuilder[T] extends js.Object {
     ]
   ): this.type = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for fortawesome__react-fontawesome
 
-Typings are for version 0.1.11
+Typings are for version 0.1.12
 
 ## Library description:
 Official React component for Font Awesome 5
@@ -10,9 +10,9 @@ Official React component for Font Awesome 5
 | ------------------ | :-------------: |
 | Full name          | @fortawesome/react-fontawesome |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 627 |
-| # downloads        | 10640117 |
+| # releases         | 10 |
+| # dependents       | 1107 |
+| # downloads        | 17565366 |
 | # stars            | 6 |
 
 ## Links

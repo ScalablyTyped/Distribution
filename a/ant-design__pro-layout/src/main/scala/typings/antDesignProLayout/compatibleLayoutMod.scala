@@ -7,11 +7,12 @@ import typings.antDesignProLayout.antDesignProLayoutStrings.top
 import typings.antDesignProLayout.antDesignProLayoutStrings.topmenu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/pro-layout/lib/utils/compatibleLayout", JSImport.Namespace)
 @js.native
 object compatibleLayoutMod extends js.Object {
+  
   def default(): js.UndefOr[String] = js.native
   @JSName("default")
   def default_mix(layout: mix): js.UndefOr[String] = js.native
@@ -24,4 +25,3 @@ object compatibleLayoutMod extends js.Object {
   @JSName("default")
   def default_topmenu(layout: topmenu): js.UndefOr[String] = js.native
 }
-

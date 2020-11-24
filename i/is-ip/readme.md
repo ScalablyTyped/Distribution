@@ -11,8 +11,8 @@ Check if a string is an IP address
 | Full name          | is-ip |
 | Keywords           | ip, ipv6, ipv4, regex, regexp, match, test, find, text, pattern, internet, protocol, address, validate, detect, check, is, string |
 | # releases         | 3 |
-| # dependents       | 81 |
-| # downloads        | 15593309 |
+| # dependents       | 110 |
+| # downloads        | 22195345 |
 | # stars            | 2 |
 
 ## Links

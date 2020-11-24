@@ -3,7 +3,7 @@ package typings.twilioSync.subscriptionsMod
 import typings.twilioSync.entityMod.SyncEntity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class Subscriptions
@@ -24,36 +24,7 @@ class Subscriptions protected () extends js.Object {
     * @param {Network} must be a viable running Sync Network object, useful for routing requests.
     */
   def this(services: SubscriptionsServices) = this()
-  var applyEventToSubscribedEntity: js.Any = js.native
-  var applyNewSubscriptionUpdateBatch: js.Any = js.native
-  var applySubscriptionCancelledMessage: js.Any = js.native
-  var applySubscriptionEstablishedMessage: js.Any = js.native
-  var applySubscriptionFailedMessage: js.Any = js.native
-  var backoff: js.Any = js.native
-  var getSubscriptionUpdateBatch: js.Any = js.native
-  var isConnected: js.Any = js.native
-  var latestPokeResponseArrivalTimestampByCorrelationId: js.Any = js.native
-  var maxBatchSize: js.Any = js.native
-  var onSubscriptionTtlElapsed: js.Any = js.native
-  var pendingPokeReason: js.Any = js.native
-  var persist: js.Any = js.native
-  var persisted: js.Any = js.native
-  /**
-    * Prompts a playback of any missed changes made to any subscribed object. This method
-    * should be invoked whenever the connectivity layer has experienced cross-cutting
-    * delivery failures that would affect the entire local sync set. Any tangible result
-    * of this operation will result in calls to the _update() function of subscribed
-    * Sync entities.
-    */
-  var poke: js.Any = js.native
-  var processLocalActions: js.Any = js.native
-  var recordActionAttemptOn: js.Any = js.native
-  var recordActionFailureOn: js.Any = js.native
-  var request: js.Any = js.native
-  var services: js.Any = js.native
-  var subscriptionTtlTimer: js.Any = js.native
-  var subscriptions: js.Any = js.native
-  var verifyPokeDelivery: js.Any = js.native
+  
   /**
     * The point of ingestion for remote incoming messages (e.g. new data was written to a map
     * to which we are subscribed).
@@ -63,6 +34,7 @@ class Subscriptions protected () extends js.Object {
     * @return undefined
     */
   def acceptMessage(message: js.Any, isStrictlyOrdered: Boolean): Unit = js.native
+  
   /**
     * Establishes intent to be subscribed to this entity. That subscription will be effected
     * asynchronously.
@@ -76,7 +48,52 @@ class Subscriptions protected () extends js.Object {
     * @return undefined
     */
   def add(sid: String, entity: SyncEntity): Unit = js.native
+  
+  var applyEventToSubscribedEntity: js.Any = js.native
+  
+  var applyNewSubscriptionUpdateBatch: js.Any = js.native
+  
+  var applySubscriptionCancelledMessage: js.Any = js.native
+  
+  var applySubscriptionEstablishedMessage: js.Any = js.native
+  
+  var applySubscriptionFailedMessage: js.Any = js.native
+  
+  var backoff: js.Any = js.native
+  
+  var getSubscriptionUpdateBatch: js.Any = js.native
+  
+  var isConnected: js.Any = js.native
+  
+  var latestPokeResponseArrivalTimestampByCorrelationId: js.Any = js.native
+  
+  var maxBatchSize: js.Any = js.native
+  
   def onConnectionStateChanged(isConnected: Boolean): Unit = js.native
+  
+  var onSubscriptionTtlElapsed: js.Any = js.native
+  
+  var pendingPokeReason: js.Any = js.native
+  
+  var persist: js.Any = js.native
+  
+  var persisted: js.Any = js.native
+  
+  /**
+    * Prompts a playback of any missed changes made to any subscribed object. This method
+    * should be invoked whenever the connectivity layer has experienced cross-cutting
+    * delivery failures that would affect the entire local sync set. Any tangible result
+    * of this operation will result in calls to the _update() function of subscribed
+    * Sync entities.
+    */
+  var poke: js.Any = js.native
+  
+  var processLocalActions: js.Any = js.native
+  
+  var recordActionAttemptOn: js.Any = js.native
+  
+  var recordActionFailureOn: js.Any = js.native
+  
   /**
     * Establishes the caller's intent to no longer be subscribed to this entity. Following this
     * call, no further events shall be routed to the local representation of the entity, even
@@ -89,9 +106,19 @@ class Subscriptions protected () extends js.Object {
     * @return undefined
     */
   def remove(sid: String): Unit = js.native
+  
+  var request: js.Any = js.native
+  
+  var services: js.Any = js.native
+  
   /**
     * Stops all communication, clears any subscription intent, and returns.
     */
   def shutdown(): Unit = js.native
+  
+  var subscriptionTtlTimer: js.Any = js.native
+  
+  var subscriptions: js.Any = js.native
+  
+  var verifyPokeDelivery: js.Any = js.native
 }
-

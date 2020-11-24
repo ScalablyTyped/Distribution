@@ -3,7 +3,7 @@ package typings.rx.Rx
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BehaviorSubjectStatic
@@ -12,4 +12,3 @@ trait BehaviorSubjectStatic
   *  @param {Mixed} value Initial value sent to observers when no other value has been received by the subject yet.
   */
 Instantiable1[/* initialValue */ js.Object, BehaviorSubject[js.Object]]
-

@@ -2,7 +2,7 @@ package typings.flux.fluxStoreMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents the most basic functionality for a FluxStore. Do not
@@ -17,4 +17,3 @@ abstract class ^[TPayload] protected () extends FluxStore[TPayload] {
     */
   def this(dispatcher: typings.flux.dispatcherMod.^[TPayload]) = this()
 }
-

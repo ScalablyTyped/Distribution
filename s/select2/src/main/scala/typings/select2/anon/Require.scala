@@ -1,35 +1,21 @@
 package typings.select2.anon
 
+import typings.select2.mod.Select2Require
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Require extends js.Object {
-  @JSName("require")
-  var require_Original: typings.requirejs.Require = js.native
-  /**
-    * CommonJS require call
-    * @param module Module to load
-    * @return The loaded module
-    */
+  
   def require(module: String): js.Any = js.native
-  /**
-    * Start the main app logic.
-    * Callback is optional.
-    * Can alternatively use deps and callback.
-    * @param modules Required modules to load.
-    **/
   def require(modules: js.Array[String]): Unit = js.native
-  /**
-    * @see Require()
-    * @param ready Called when required modules are ready.
-    **/
-  def require(modules: js.Array[String], ready: js.Function): Unit = js.native
-  /**
-    * @see http://requirejs.org/docs/api.html#errbacks
-    * @param ready Called when required modules are ready.
-    **/
-  def require(modules: js.Array[String], ready: js.Function, errback: js.Function): Unit = js.native
+  def require(modules: js.Array[String], ready: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def require(
+    modules: js.Array[String],
+    ready: js.Function1[/* repeated */ js.Any, Unit],
+    errback: js.Function1[/* err */ js.Any, Unit]
+  ): Unit = js.native
+  @JSName("require")
+  var require_Original: Select2Require = js.native
 }
-

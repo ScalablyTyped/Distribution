@@ -2,7 +2,7 @@ package typings.babylonjs.miscIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Misc/index", "SceneOptimization")
 @js.native
@@ -18,4 +18,3 @@ class SceneOptimization ()
     */
   priority: Double) = this()
 }
-

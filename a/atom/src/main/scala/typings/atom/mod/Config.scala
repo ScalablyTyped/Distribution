@@ -172,10 +172,11 @@ import typings.atom.atomStrings.undecided
 import typings.atom.atomStrings.yes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Config extends js.Object {
+  
   @JSName("getAll")
   def getAll_autocompleteplusautoActivationDelay(keyPath: `autocomplete-plusDotautoActivationDelay`): js.Array[ValueNumber] = js.native
   @JSName("getAll")
@@ -540,18 +541,22 @@ trait Config extends js.Object {
   def getAll_toolbarvisible(keyPath: `tool-barDotvisible`): js.Array[Value] = js.native
   @JSName("getAll")
   def getAll_toolbarvisible(keyPath: `tool-barDotvisible`, options: Sources): js.Array[Value] = js.native
+  
   /**
     *  Retrieve the schema for a specific key path. The schema will tell you what type
     *  the keyPath expects, and other metadata about the config option.
     */
   def getSchema(keyPath: String): js.Object | Null = js.native
+  
   /**
     *  Get an Array of all of the source Strings with which settings have been added
     *  via ::set.
     */
   def getSources(): js.Array[String] = js.native
+  
   /** Get the string path to the config file being used. */
   def getUserConfigPath(): String = js.native
+  
   @JSName("get")
   def get_autocompleteplusautoActivationDelay(keyPath: `autocomplete-plusDotautoActivationDelay`): Double = js.native
   @JSName("get")
@@ -914,6 +919,7 @@ trait Config extends js.Object {
   def get_toolbarvisible(keyPath: `tool-barDotvisible`): Boolean = js.native
   @JSName("get")
   def get_toolbarvisible(keyPath: `tool-barDotvisible`, options: ExcludeSources): Boolean = js.native
+  
   def observe(
     keyPath: `autocomplete-plusDotconfirmCompletion`,
     callback: js.Function1[
@@ -1641,6 +1647,7 @@ trait Config extends js.Object {
   def observe_toolbarvisible(keyPath: `tool-barDotvisible`, callback: js.Function1[/* value */ Boolean, Unit]): Disposable = js.native
   @JSName("observe")
   def observe_toolbarvisible(keyPath: `tool-barDotvisible`, options: Scope, callback: js.Function1[/* value */ Boolean, Unit]): Disposable = js.native
+  
   /**
     *  Add a listener for changes to a given key path. If keyPath is not specified, your
     *  callback will be called on changes to any key.
@@ -2404,6 +2411,7 @@ trait Config extends js.Object {
     options: Scope,
     callback: js.Function1[/* values */ NewValueOldValue, Unit]
   ): Disposable = js.native
+  
   def set(
     keyPath: `autocomplete-plusDotconfirmCompletion`,
     value: `tab alwaysComma enter when suggestion explicitly selected`
@@ -2857,14 +2865,15 @@ trait Config extends js.Object {
   def set_toolbarvisible(keyPath: `tool-barDotvisible`, value: Boolean): Unit = js.native
   @JSName("set")
   def set_toolbarvisible(keyPath: `tool-barDotvisible`, value: Boolean, options: ScopeSelector): Unit = js.native
+  
   /**
     *  Suppress calls to handler functions registered with ::onDidChange and ::observe
     *  for the duration of callback. After callback executes, handlers will be called
     *  once if the value for their key-path has changed.
     */
   def transact(callback: js.Function0[Unit]): Unit = js.native
+  
   /** Restore the setting at keyPath to its default value. */
   def unset(keyPath: String): Unit = js.native
   def unset(keyPath: String, options: ScopeSelector): Unit = js.native
 }
-

@@ -8,7 +8,7 @@ import typings.abstractLeveldown.mod.AbstractLevelDOWN
 import typings.abstractLeveldown.mod.ErrorCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LevelUpConstructor
@@ -27,10 +27,11 @@ trait LevelUpConstructor
       /* cb */ ErrorCallback, 
       LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]
     ] {
-  var errors: /*typeof levelerrors*/ js.Any = js.native
+  
   def apply[DB /* <: AbstractLevelDOWN[_, _] */](db: DB): LevelUp[DB, AbstractIterator[_, _]] = js.native
   def apply[DB /* <: AbstractLevelDOWN[_, _] */](db: DB, cb: ErrorCallback): LevelUp[DB, AbstractIterator[_, _]] = js.native
   def apply[DB /* <: AbstractLevelDOWN[_, _] */](db: DB, options: js.Any): LevelUp[DB, AbstractIterator[_, _]] = js.native
   def apply[DB /* <: AbstractLevelDOWN[_, _] */](db: DB, options: js.Any, cb: ErrorCallback): LevelUp[DB, AbstractIterator[_, _]] = js.native
+  
+  var errors: /*typeof levelerrors*/ js.Any = js.native
 }
-

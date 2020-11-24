@@ -2,11 +2,12 @@ package typings.validator
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("validator/lib/toInt", JSImport.Namespace)
 @js.native
 object toIntMod extends js.Object {
+  
   /**
     * Convert the input string to an integer, or `NaN` if the input is not an integer.
     *
@@ -15,4 +16,3 @@ object toIntMod extends js.Object {
   def default(input: String): Double = js.native
   def default(input: String, radix: Double): Double = js.native
 }
-

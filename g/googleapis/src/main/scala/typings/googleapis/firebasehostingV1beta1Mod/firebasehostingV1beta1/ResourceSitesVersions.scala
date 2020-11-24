@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebasehosting/v1beta1", "firebasehosting_v1beta1.Resource$Sites$Versions")
 @js.native
 class ResourceSitesVersions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var files: ResourceSitesVersionsFiles = js.native
+  
   /**
     * firebasehosting.sites.versions.create
     * @desc Creates a new version for a site.
@@ -45,6 +46,7 @@ class ResourceSitesVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVersion]
   ): Unit = js.native
+  
   /**
     * firebasehosting.sites.versions.delete
     * @desc Deletes the specified version.
@@ -73,6 +75,9 @@ class ResourceSitesVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var files: ResourceSitesVersionsFiles = js.native
+  
   /**
     * firebasehosting.sites.versions.patch
     * @desc Updates the specified metadata for a version. Note that this method
@@ -108,6 +113,7 @@ class ResourceSitesVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVersion]
   ): Unit = js.native
+  
   /**
     * firebasehosting.sites.versions.populateFiles
     * @desc Adds content files to a version.
@@ -141,4 +147,3 @@ class ResourceSitesVersions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPopulateVersionFilesResponse]
   ): Unit = js.native
 }
-

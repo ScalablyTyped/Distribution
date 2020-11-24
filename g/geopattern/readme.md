@@ -10,9 +10,9 @@ Generate beautiful SVG patterns
 | ------------------ | :-------------: |
 | Full name          | geopattern |
 | Keywords           | svg, pattern, geometric, background |
-| # releases         | 1 |
-| # dependents       | 18 |
-| # downloads        | 72653 |
+| # releases         | 0 |
+| # dependents       | 19 |
+| # downloads        | 87159 |
 | # stars            | 3 |
 
 ## Links

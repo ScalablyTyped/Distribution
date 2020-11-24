@@ -3,7 +3,7 @@ package typings.angularCompiler.outputAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "BinaryOperatorExpr")
 @js.native
@@ -103,9 +103,12 @@ class BinaryOperatorExpr protected () extends Expression {
     sourceSpan: ParseSourceSpan,
     parens: Boolean
   ) = this()
+  
   var lhs: Expression = js.native
+  
   var operator: BinaryOperator = js.native
+  
   var parens: Boolean = js.native
+  
   var rhs: Expression = js.native
 }
-

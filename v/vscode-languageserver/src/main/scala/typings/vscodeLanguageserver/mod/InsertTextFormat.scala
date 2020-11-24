@@ -4,15 +4,17 @@ import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`1`
 import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver", "InsertTextFormat")
 @js.native
 object InsertTextFormat extends js.Object {
+  
   /**
     * The primary text to be inserted is treated as a plain string.
     */
   val PlainText: `1` = js.native
+  
   /**
     * The primary text to be inserted is treated as a snippet.
     *
@@ -25,4 +27,3 @@ object InsertTextFormat extends js.Object {
     */
   val Snippet: `2` = js.native
 }
-

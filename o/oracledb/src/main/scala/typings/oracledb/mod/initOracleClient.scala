@@ -2,11 +2,12 @@ package typings.oracledb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("oracledb", "initOracleClient")
 @js.native
 object initOracleClient extends js.Object {
+  
   /**
     * This synchronous function loads and initializes the Oracle Client libraries that are necessary
     * for node-oracledb to communicate with Oracle Database. This function is optional. If used, it
@@ -33,4 +34,3 @@ object initOracleClient extends js.Object {
   def apply(): Unit = js.native
   def apply(opts: InitialiseOptions): Unit = js.native
 }
-

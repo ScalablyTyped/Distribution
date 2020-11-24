@@ -2,11 +2,12 @@ package typings.winrt.global.Windows.Graphics.Printing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Graphics.Printing.OptionDetails")
 @js.native
 object OptionDetails extends js.Object {
+  
   @js.native
   class PrintBindingOptionDetails ()
     extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintBindingOptionDetails
@@ -52,6 +53,38 @@ object OptionDetails extends js.Object {
     extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintMediaTypeOptionDetails
   
   @js.native
+  object PrintOptionStates extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[
+        typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates with Double
+      ] = js.native
+    
+    /* 2 */ val constrained: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates.constrained with Double = js.native
+    
+    /* 1 */ val enabled: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates.enabled with Double = js.native
+    
+    /* 0 */ val none: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates.none with Double = js.native
+  }
+  
+  @js.native
+  object PrintOptionType extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[
+        typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType with Double
+      ] = js.native
+    
+    /* 3 */ val itemList: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.itemList with Double = js.native
+    
+    /* 1 */ val number: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.number with Double = js.native
+    
+    /* 2 */ val text: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.text with Double = js.native
+    
+    /* 0 */ val unknown: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.unknown with Double = js.native
+  }
+  
+  @js.native
   class PrintOrientationOptionDetails ()
     extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOrientationOptionDetails
   
@@ -70,35 +103,10 @@ object OptionDetails extends js.Object {
   @js.native
   class PrintTaskOptionDetails ()
     extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails
-  
-  @js.native
-  object PrintOptionStates extends js.Object {
-    /* 2 */ val constrained: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates.constrained with Double = js.native
-    /* 1 */ val enabled: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates.enabled with Double = js.native
-    /* 0 */ val none: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates.none with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates with Double
-      ] = js.native
-  }
-  
-  @js.native
-  object PrintOptionType extends js.Object {
-    /* 3 */ val itemList: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.itemList with Double = js.native
-    /* 1 */ val number: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.number with Double = js.native
-    /* 2 */ val text: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.text with Double = js.native
-    /* 0 */ val unknown: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.unknown with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType with Double
-      ] = js.native
-  }
-  
   /* static members */
   @js.native
   object PrintTaskOptionDetails extends js.Object {
+    
     def getFromPrintTaskOptions(printTaskOptions: typings.winrt.Windows.Graphics.Printing.PrintTaskOptions): typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails = js.native
   }
-  
 }
-

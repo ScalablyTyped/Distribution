@@ -8,11 +8,13 @@ import typings.consul.mod.Kv.SetOptions
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Kv_ extends js.Object {
+  
   var consul: Consul = js.native
+  
   /**
     * Delete
     */
@@ -29,10 +31,12 @@ trait Kv_ extends js.Object {
     * Delete
     */
   def del[TData](opts: DelOptions, callback: Callback[TData]): Unit = js.native
+  
   def delete[TData](key: String): Thenable[TData] = js.native
   def delete[TData](key: String, callback: Callback[TData]): Unit = js.native
   def delete[TData](opts: DeleteOptions): Thenable[TData] = js.native
   def delete[TData](opts: DeleteOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Get
     */
@@ -49,6 +53,7 @@ trait Kv_ extends js.Object {
     * Get
     */
   def get[TData](opts: GetOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Keys
     */
@@ -67,6 +72,7 @@ trait Kv_ extends js.Object {
     * Keys
     */
   def keys[TData](opts: KeysOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Set
     */
@@ -96,4 +102,3 @@ trait Kv_ extends js.Object {
     */
   def set[TData](opts: SetOptions, callback: Callback[TData]): Unit = js.native
 }
-

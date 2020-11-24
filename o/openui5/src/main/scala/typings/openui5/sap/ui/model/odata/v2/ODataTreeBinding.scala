@@ -6,11 +6,13 @@ import typings.openui5.sap.ui.model.Filter
 import typings.openui5.sap.ui.model.TreeBinding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ODataTreeBinding extends TreeBinding {
+  
   def filter(aFilters: Filter, sFilterType: TypeofFilterType): ODataTreeBinding = js.native
+  
   /**
     * Get a download URL with the specified format considering thesort/filter/custom parameters.
     * @since 1.28
@@ -18,6 +20,7 @@ trait ODataTreeBinding extends TreeBinding {
     * @returns URL which can be used for downloading
     */
   def getDownloadUrl(sFormat: String): String = js.native
+  
   /**
     * Returns root contexts for the tree. You can specify the start index and the length for paging
     * requests.This function is not available when the annotation "hierarchy-node-descendant-count-for" is
@@ -34,11 +37,14 @@ trait ODataTreeBinding extends TreeBinding {
   def getRootContexts(iStartIndex: Double): js.Array[Context] = js.native
   def getRootContexts(iStartIndex: Double, iLength: js.UndefOr[scala.Nothing], iThreshold: Double): js.Array[Context] = js.native
   def getRootContexts(iStartIndex: Double, iLength: Double, iThreshold: Double): js.Array[Context] = js.native
+  
   /**
     * Returns the rootLevel
     */
   def getRootLevel(): Double = js.native
+  
   def refresh(bForceUpdate: Boolean, sGroupId: String): Unit = js.native
+  
   /**
     * Sets the rootLevelThe root level is the level of the topmost tree nodes, which will be used as an
     * entry point for OData services.This is only possible (and necessary) for OData services implementing
@@ -48,4 +54,3 @@ trait ODataTreeBinding extends TreeBinding {
     */
   def setRootLevel(iRootLevel: Double): Unit = js.native
 }
-

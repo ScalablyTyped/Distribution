@@ -68,11 +68,11 @@ import typings.semanticUiForm.semanticUiFormStrings.verbose
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Form_ extends js.Object {
-  var settings: FormSettings = js.native
+  
   def apply(): JQuery = js.native
   /**
     * Adds errors to form, given an array errors
@@ -247,5 +247,6 @@ trait Form_ extends js.Object {
   def apply(behavior: submit): JQuery = js.native
   def apply(settings: Fields): JQuery = js.native
   def apply(settings: FormSettings): JQuery = js.native
+  
+  var settings: FormSettings = js.native
 }
-

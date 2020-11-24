@@ -2,7 +2,7 @@ package typings.plottable.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable", "Dataset")
 @js.native
@@ -20,4 +20,3 @@ class Dataset ()
   def this(data: js.UndefOr[scala.Nothing], metadata: js.Any) = this()
   def this(data: js.Array[_], metadata: js.Any) = this()
 }
-

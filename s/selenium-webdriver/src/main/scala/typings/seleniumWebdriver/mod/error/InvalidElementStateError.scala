@@ -2,7 +2,7 @@ package typings.seleniumWebdriver.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An element command could not be completed because the element is in an
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class InvalidElementStateError () extends WebDriverError {
   def this(message: String) = this()
 }
-

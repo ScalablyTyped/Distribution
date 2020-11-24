@@ -2,13 +2,12 @@ package typings.dotdotdot
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dotdotdotStrings {
-  @js.native
-  sealed trait window extends js.Object
   
   @scala.inline
   def window: window = "window".asInstanceOf[window]
+  @js.native
+  sealed trait window extends js.Object
 }
-

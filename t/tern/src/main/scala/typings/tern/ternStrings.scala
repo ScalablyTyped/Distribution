@@ -2,9 +2,88 @@ package typings.tern
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ternStrings {
+  
+  @scala.inline
+  def Array: Array = "Array".asInstanceOf[Array]
+  
+  @scala.inline
+  def afterLoad: afterLoad = "afterLoad".asInstanceOf[afterLoad]
+  
+  @scala.inline
+  def beforeLoad: beforeLoad = "beforeLoad".asInstanceOf[beforeLoad]
+  
+  @scala.inline
+  def bool: bool = "bool".asInstanceOf[bool]
+  
+  @scala.inline
+  def completion: completion = "completion".asInstanceOf[completion]
+  
+  @scala.inline
+  def completions: completions = "completions".asInstanceOf[completions]
+  
+  @scala.inline
+  def definition: definition = "definition".asInstanceOf[definition]
+  
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  
+  @scala.inline
+  def documentation: documentation = "documentation".asInstanceOf[documentation]
+  
+  @scala.inline
+  def files: files = "files".asInstanceOf[files]
+  
+  @scala.inline
+  def full: full = "full".asInstanceOf[full]
+  
+  @scala.inline
+  def global: global = "global".asInstanceOf[global]
+  
+  @scala.inline
+  def local: local = "local".asInstanceOf[local]
+  
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  
+  @scala.inline
+  def part: part = "part".asInstanceOf[part]
+  
+  @scala.inline
+  def postInfer: postInfer = "postInfer".asInstanceOf[postInfer]
+  
+  @scala.inline
+  def postParse: postParse = "postParse".asInstanceOf[postParse]
+  
+  @scala.inline
+  def preInfer: preInfer = "preInfer".asInstanceOf[preInfer]
+  
+  @scala.inline
+  def preParse: preParse = "preParse".asInstanceOf[preParse]
+  
+  @scala.inline
+  def properties: properties = "properties".asInstanceOf[properties]
+  
+  @scala.inline
+  def refs: refs = "refs".asInstanceOf[refs]
+  
+  @scala.inline
+  def rename: rename = "rename".asInstanceOf[rename]
+  
+  @scala.inline
+  def reset: reset = "reset".asInstanceOf[reset]
+  
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  
+  @scala.inline
+  def `type`: `type` = "type".asInstanceOf[`type`]
+  
+  @scala.inline
+  def typeAt: typeAt = "typeAt".asInstanceOf[typeAt]
+  
   @js.native
   sealed trait Array extends js.Object
   
@@ -82,58 +161,4 @@ object ternStrings {
   
   @js.native
   sealed trait typeAt extends js.Object
-  
-  @scala.inline
-  def Array: Array = "Array".asInstanceOf[Array]
-  @scala.inline
-  def afterLoad: afterLoad = "afterLoad".asInstanceOf[afterLoad]
-  @scala.inline
-  def beforeLoad: beforeLoad = "beforeLoad".asInstanceOf[beforeLoad]
-  @scala.inline
-  def bool: bool = "bool".asInstanceOf[bool]
-  @scala.inline
-  def completion: completion = "completion".asInstanceOf[completion]
-  @scala.inline
-  def completions: completions = "completions".asInstanceOf[completions]
-  @scala.inline
-  def definition: definition = "definition".asInstanceOf[definition]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def documentation: documentation = "documentation".asInstanceOf[documentation]
-  @scala.inline
-  def files: files = "files".asInstanceOf[files]
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
-  @scala.inline
-  def global: global = "global".asInstanceOf[global]
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def part: part = "part".asInstanceOf[part]
-  @scala.inline
-  def postInfer: postInfer = "postInfer".asInstanceOf[postInfer]
-  @scala.inline
-  def postParse: postParse = "postParse".asInstanceOf[postParse]
-  @scala.inline
-  def preInfer: preInfer = "preInfer".asInstanceOf[preInfer]
-  @scala.inline
-  def preParse: preParse = "preParse".asInstanceOf[preParse]
-  @scala.inline
-  def properties: properties = "properties".asInstanceOf[properties]
-  @scala.inline
-  def refs: refs = "refs".asInstanceOf[refs]
-  @scala.inline
-  def rename: rename = "rename".asInstanceOf[rename]
-  @scala.inline
-  def reset: reset = "reset".asInstanceOf[reset]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
-  @scala.inline
-  def typeAt: typeAt = "typeAt".asInstanceOf[typeAt]
 }
-

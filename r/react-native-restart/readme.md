@@ -4,15 +4,15 @@
 Typings are for version 0.0
 
 ## Library description:
-React Native Restart Component
+Sometimes you want to reload your app bundle during app runtime. This package will allow you to do it.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-native-restart |
-| Keywords           | react-component, react-native, ios, android, restart |
-| # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 752160 |
+| Keywords           | react-native, ios, android |
+| # releases         | 11 |
+| # dependents       | 7 |
+| # downloads        | 1100407 |
 | # stars            | 3 |
 
 ## Links

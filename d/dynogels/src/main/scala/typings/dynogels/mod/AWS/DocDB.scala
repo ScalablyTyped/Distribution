@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.docdbMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.DocDB")
 @js.native
@@ -14,4 +14,3 @@ class DocDB ()
   extends typings.awsSdk.mod.DocDB {
   def this(options: ClientConfiguration) = this()
 }
-

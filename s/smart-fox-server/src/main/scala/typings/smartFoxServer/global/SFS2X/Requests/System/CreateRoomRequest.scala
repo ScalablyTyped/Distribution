@@ -4,7 +4,7 @@ import typings.smartFoxServer.SFS2X.Entities.SFSRoom
 import typings.smartFoxServer.SFS2X.Requests.RoomSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.System.CreateRoomRequest")
 @js.native
@@ -21,4 +21,3 @@ class CreateRoomRequest protected ()
   def this(settings: RoomSettings, autoJoin: js.UndefOr[scala.Nothing], roomToLeave: SFSRoom) = this()
   def this(settings: RoomSettings, autoJoin: Boolean, roomToLeave: SFSRoom) = this()
 }
-

@@ -52,11 +52,12 @@ import typings.std.WeakMap
 import typings.std.WeakSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kind-of", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply(thing: js.UndefOr[scala.Nothing]): undefined = js.native
   def apply(thing: String): string = js.native
   def apply(thing: js.Any): String = js.native
@@ -86,4 +87,3 @@ object mod extends js.Object {
   def apply(thing: WeakMap[_, _]): weakmap = js.native
   def apply(thing: WeakSet[_]): weakset = js.native
 }
-

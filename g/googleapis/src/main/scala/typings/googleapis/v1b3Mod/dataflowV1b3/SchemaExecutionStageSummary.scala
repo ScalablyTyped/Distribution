@@ -2,7 +2,7 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Description of the composing transforms, names/ids, and input/outputs of a
@@ -11,90 +11,117 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaExecutionStageSummary extends js.Object {
+  
   /**
     * Collections produced and consumed by component transforms of this stage.
     */
   var componentSource: js.UndefOr[js.Array[SchemaComponentSource]] = js.native
+  
   /**
     * Transforms that comprise this execution stage.
     */
   var componentTransform: js.UndefOr[js.Array[SchemaComponentTransform]] = js.native
+  
   /**
     * Dataflow service generated id for this stage.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * Input sources for this stage.
     */
   var inputSource: js.UndefOr[js.Array[SchemaStageSource]] = js.native
+  
   /**
     * Type of tranform this stage is executing.
     */
   var kind: js.UndefOr[String] = js.native
+  
   /**
     * Dataflow service generated name for this stage.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Output sources for this stage.
     */
   var outputSource: js.UndefOr[js.Array[SchemaStageSource]] = js.native
 }
-
 object SchemaExecutionStageSummary {
+  
   @scala.inline
   def apply(): SchemaExecutionStageSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExecutionStageSummary]
   }
+  
   @scala.inline
   implicit class SchemaExecutionStageSummaryOps[Self <: SchemaExecutionStageSummary] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setComponentSourceVarargs(value: SchemaComponentSource*): Self = this.set("componentSource", js.Array(value :_*))
+    
     @scala.inline
     def setComponentSource(value: js.Array[SchemaComponentSource]): Self = this.set("componentSource", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteComponentSource: Self = this.set("componentSource", js.undefined)
+    
     @scala.inline
     def setComponentTransformVarargs(value: SchemaComponentTransform*): Self = this.set("componentTransform", js.Array(value :_*))
+    
     @scala.inline
     def setComponentTransform(value: js.Array[SchemaComponentTransform]): Self = this.set("componentTransform", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteComponentTransform: Self = this.set("componentTransform", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setInputSourceVarargs(value: SchemaStageSource*): Self = this.set("inputSource", js.Array(value :_*))
+    
     @scala.inline
     def setInputSource(value: js.Array[SchemaStageSource]): Self = this.set("inputSource", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInputSource: Self = this.set("inputSource", js.undefined)
+    
     @scala.inline
     def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKind: Self = this.set("kind", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setOutputSourceVarargs(value: SchemaStageSource*): Self = this.set("outputSource", js.Array(value :_*))
+    
     @scala.inline
     def setOutputSource(value: js.Array[SchemaStageSource]): Self = this.set("outputSource", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOutputSource: Self = this.set("outputSource", js.undefined)
   }
-  
 }
-

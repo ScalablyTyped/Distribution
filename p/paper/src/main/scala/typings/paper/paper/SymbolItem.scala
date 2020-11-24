@@ -2,7 +2,7 @@ package typings.paper.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * A symbol item represents an instance of a symbol which has been
@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SymbolItem extends Item {
+  
   /** 
     * The symbol definition that the placed symbol refers to.
     */
   var definition: SymbolDefinition = js.native
 }
-

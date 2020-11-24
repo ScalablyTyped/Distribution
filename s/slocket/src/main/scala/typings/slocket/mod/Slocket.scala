@@ -6,7 +6,7 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Slocket
@@ -17,10 +17,13 @@ trait Slocket
       /* cb */ js.Function2[/* error */ Error | Null, /* lock */ Lock, Unit], 
       Slocket
     ] {
+  
   def apply(lockFile: String): Slocket = js.native
   def apply(lockFile: String, cb: js.Function2[/* error */ Error | Null, /* lock */ Lock, Unit]): Slocket = js.native
+  
   def `catch`[TResult](): js.Promise[Lock | TResult] = js.native
   def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[Lock | TResult] = js.native
+  
   def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     onfulfilled: js.UndefOr[scala.Nothing],
@@ -33,4 +36,3 @@ trait Slocket
   ): js.Promise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
 }
-

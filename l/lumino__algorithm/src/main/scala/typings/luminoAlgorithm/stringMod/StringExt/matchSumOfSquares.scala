@@ -2,11 +2,12 @@ package typings.luminoAlgorithm.stringMod.StringExt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/string", "StringExt.matchSumOfSquares")
 @js.native
 object matchSumOfSquares extends js.Object {
+  
   /**
     * A string matcher which uses a sum-of-squares algorithm.
     *
@@ -33,4 +34,3 @@ object matchSumOfSquares extends js.Object {
   def apply(source: String, query: String): IMatchResult | Null = js.native
   def apply(source: String, query: String, start: Double): IMatchResult | Null = js.native
 }
-

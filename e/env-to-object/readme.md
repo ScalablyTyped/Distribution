@@ -12,7 +12,7 @@ Maps environment variables to a configuration object.
 | Keywords           | utilities, utils, env, environment, variables, object, config, configuration, map, obj, convert, coerce |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 585 |
+| # downloads        | 1093 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ Login session ensuring middleware for Connect.
 | Full name          | connect-ensure-login |
 | Keywords           | connect, express, auth, authn, authentication, login, session, passport |
 | # releases         | 0 |
-| # dependents       | 99 |
-| # downloads        | 1086851 |
+| # dependents       | 104 |
+| # downloads        | 1196710 |
 | # stars            | 12 |
 
 ## Links

@@ -10,9 +10,9 @@ Test if a string is a North American Number Plan (phone) number.
 | ------------------ | :-------------: |
 | Full name          | nanp |
 | Keywords           | nanp, phone, number, regex |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3747 |
+| # downloads        | 8037 |
 | # stars            | 1 |
 
 ## Links

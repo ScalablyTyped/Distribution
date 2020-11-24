@@ -4,16 +4,20 @@ import typings.materialTopAppBar.anon.PartialMDCTopAppBarAdapte
 import typings.materialTopAppBar.materialTopAppBarMod.MDCTopAppBarBaseFoundation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/top-app-bar/short/foundation", JSImport.Namespace)
 @js.native
 object shortFoundationMod extends js.Object {
+  
   @js.native
   class MDCShortTopAppBarFoundation () extends MDCTopAppBarBaseFoundation {
     def this(adapter: PartialMDCTopAppBarAdapte) = this()
+    
     def getAlwaysCollapsed(): Boolean = js.native
+    
     def isCollapsed: Boolean = js.native
+    
     /**
       * Set if the short top app bar should always be collapsed.
       *
@@ -26,6 +30,4 @@ object shortFoundationMod extends js.Object {
   class default () extends MDCShortTopAppBarFoundation {
     def this(adapter: PartialMDCTopAppBarAdapte) = this()
   }
-  
 }
-

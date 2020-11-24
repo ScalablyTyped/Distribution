@@ -2,14 +2,14 @@ package typings.typescriptServices.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SyntaxConstants extends js.Object
-
 @JSGlobal("TypeScript.SyntaxConstants")
 @js.native
 object SyntaxConstants extends js.Object {
+  
   @js.native
   sealed trait IsVariableWidthKeyword extends SyntaxConstants
   
@@ -33,6 +33,4 @@ object SyntaxConstants extends js.Object {
   
   @js.native
   sealed trait TriviaNewLineMask extends SyntaxConstants
-  
 }
-

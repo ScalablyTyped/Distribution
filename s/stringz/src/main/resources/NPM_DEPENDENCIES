@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "stringz" : "2.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "stringz" : "2.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

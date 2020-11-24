@@ -1,7 +1,7 @@
 
 # Scala.js typings for attr-accept
 
-Typings are for version 2.2.0
+Typings are for version 2.2.2
 
 ## Library description:
 JavaScript implementation of the "accept" attribute for HTML5 <input type="file">
@@ -11,8 +11,8 @@ JavaScript implementation of the "accept" attribute for HTML5 <input type="file"
 | Full name          | attr-accept |
 | Keywords           | html5, input, tag, attribute, attr, accept, file |
 | # releases         | 4 |
-| # dependents       | 58 |
-| # downloads        | 37614774 |
+| # dependents       | 59 |
+| # downloads        | 39403608 |
 | # stars            | 0 |
 
 ## Links

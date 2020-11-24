@@ -2,16 +2,17 @@ package typings.tsMockito
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ts-mockito/lib/utils/ObjectInspector", JSImport.Namespace)
 @js.native
 object objectInspectorMod extends js.Object {
+  
   @js.native
   class ObjectInspector () extends js.Object {
+    
     def getObjectOwnPropertyNames(`object`: js.Any): js.Array[String] = js.native
+    
     def getObjectPrototypes(prototype: js.Any): js.Array[_] = js.native
   }
-  
 }
-

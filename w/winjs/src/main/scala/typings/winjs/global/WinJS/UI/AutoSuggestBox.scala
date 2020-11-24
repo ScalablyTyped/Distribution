@@ -3,7 +3,7 @@ package typings.winjs.global.WinJS.UI
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A rich input box that provides suggestions as the user types.
@@ -23,20 +23,20 @@ class AutoSuggestBox ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-
 /* static members */
 @JSGlobal("WinJS.UI.AutoSuggestBox")
 @js.native
 object AutoSuggestBox extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
+  
   //#endregion Properties
   /**
     * Creates the image argument for SearchSuggestionCollection.appendResultSuggestion.
     * @param url The url of the image.
     **/
   def createResultSuggestionImage(url: String): js.Any = js.native
+  
+  /**
+    * Indicates that the object is compatibile with declarative processing.
+    **/
+  var supportedForProcessing: Boolean = js.native
 }
-

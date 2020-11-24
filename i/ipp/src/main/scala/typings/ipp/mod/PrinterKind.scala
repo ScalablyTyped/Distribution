@@ -2,7 +2,7 @@ package typings.ipp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.ipp.ippStrings.disc
@@ -16,25 +16,32 @@ import scala.scalajs.js.annotation._
   - typings.ipp.ippStrings.roll
 */
 trait PrinterKind extends js.Object
-
 object PrinterKind {
+  
   @scala.inline
   def disc: typings.ipp.ippStrings.disc = "disc".asInstanceOf[typings.ipp.ippStrings.disc]
+  
   @scala.inline
   def document: typings.ipp.ippStrings.document = "document".asInstanceOf[typings.ipp.ippStrings.document]
+  
   @scala.inline
   def envelope: typings.ipp.ippStrings.envelope = "envelope".asInstanceOf[typings.ipp.ippStrings.envelope]
+  
   @scala.inline
   def label: typings.ipp.ippStrings.label = "label".asInstanceOf[typings.ipp.ippStrings.label]
+  
   @scala.inline
   def large: typings.ipp.ippStrings.large = "large".asInstanceOf[typings.ipp.ippStrings.large]
+  
   @scala.inline
   def photo: typings.ipp.ippStrings.photo = "photo".asInstanceOf[typings.ipp.ippStrings.photo]
+  
   @scala.inline
   def postcard: typings.ipp.ippStrings.postcard = "postcard".asInstanceOf[typings.ipp.ippStrings.postcard]
+  
   @scala.inline
   def receipt: typings.ipp.ippStrings.receipt = "receipt".asInstanceOf[typings.ipp.ippStrings.receipt]
+  
   @scala.inline
   def roll: typings.ipp.ippStrings.roll = "roll".asInstanceOf[typings.ipp.ippStrings.roll]
 }
-

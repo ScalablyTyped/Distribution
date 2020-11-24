@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Central service of the Accessibility API that gives access to various facets of an object's content.
@@ -20,8 +20,8 @@ import scala.scalajs.js.annotation._
 trait AccessibleContext
   extends XAccessibleContext
      with XAccessibleEventBroadcaster
-
 object AccessibleContext {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -53,4 +53,3 @@ object AccessibleContext {
     __obj.asInstanceOf[AccessibleContext]
   }
 }
-

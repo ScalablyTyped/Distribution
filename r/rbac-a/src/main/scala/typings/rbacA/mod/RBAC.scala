@@ -4,14 +4,15 @@ import typings.node.eventsMod.EventEmitter
 import typings.rbacA.anon.Attributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbac-a", "RBAC")
 @js.native
 class RBAC[P /* <: Provider */, AM /* <: AttributesManager */] protected () extends EventEmitter {
   def this(opts: Attributes[P, AM]) = this()
+  
   val attributes: AM = js.native
-  val provider: P = js.native
+  
   /**
     * Check the user for the given permissions. The method will return
     * a Promise resolving with a number. If the user has sufficient
@@ -24,5 +25,6 @@ class RBAC[P /* <: Provider */, AM /* <: AttributesManager */] protected () exte
   def check(user: js.Any, permission: String, params: js.Object): js.Promise[Double] = js.native
   def check(user: js.Any, permission: js.Array[String]): js.Promise[Double] = js.native
   def check(user: js.Any, permission: js.Array[String], params: js.Object): js.Promise[Double] = js.native
+  
+  val provider: P = js.native
 }
-

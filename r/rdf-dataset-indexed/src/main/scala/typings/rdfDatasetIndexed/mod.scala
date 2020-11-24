@@ -8,11 +8,12 @@ import typings.rdfJs.mod.DatasetCoreFactory
 import typings.rdfJs.mod.Quad
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rdf-dataset-indexed", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply[Q /* <: BaseQuad */](): DatasetIndexed[Q, Quad] = js.native
   def apply[Q /* <: BaseQuad */](
     quads: js.UndefOr[scala.Nothing],
@@ -24,4 +25,3 @@ object mod extends js.Object {
     dataFactory: (DataFactory[Q, Q]) with (DatasetCoreFactory[Q, Q, DatasetCore[Q, Q]])
   ): DatasetIndexed[Q, Quad] = js.native
 }
-

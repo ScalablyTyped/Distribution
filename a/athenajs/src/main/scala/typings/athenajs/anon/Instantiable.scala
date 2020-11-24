@@ -7,10 +7,9 @@ import typings.athenajs.mod.Drawable
 import typings.athenajs.mod.JSObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Instantiable
   extends Instantiable1[/* sprite */ Drawable, Behavior]
      with Instantiable2[/* sprite */ Drawable, /* options */ JSObject, Behavior]
-

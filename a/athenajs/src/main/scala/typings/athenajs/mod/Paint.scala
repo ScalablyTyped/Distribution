@@ -2,14 +2,13 @@ package typings.athenajs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "Paint")
 @js.native
 class Paint protected () extends Drawable {
   def this(`type`: String, paintOptions: PaintOptions) = this()
-  var color: String = js.native
-  var name: String = js.native
+  
   def arc(
     cx: Double,
     cy: Double,
@@ -19,6 +18,7 @@ class Paint protected () extends Drawable {
     fillStyle: String,
     borderSize: Double
   ): Unit = js.native
+  
   def circle(cx: Double, cy: Double, r: Double): Unit = js.native
   def circle(
     cx: Double,
@@ -48,8 +48,13 @@ class Paint protected () extends Drawable {
   ): Unit = js.native
   def circle(cx: Double, cy: Double, r: Double, fillStyle: String, borderWidth: Double): Unit = js.native
   def circle(cx: Double, cy: Double, r: Double, fillStyle: String, borderWidth: Double, borderStyle: String): Unit = js.native
+  
+  var color: String = js.native
+  
   def fill(): Unit = js.native
   def fill(color: String): Unit = js.native
+  
+  var name: String = js.native
+  
   def rect(x: Double, y: Double, width: Double, height: Double, color: String): Unit = js.native
 }
-

@@ -3,19 +3,25 @@ package typings.mangopay2NodejsSdk.mod
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ModelMethods[T /* <: js.Object */] extends js.Object {
+  
   /**
     * Returns object property value
     * @param attribute
     */
   def getData[K /* <: /* keyof T */ String */](attribute: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
+  
   def getDependsObjects(): js.Array[DependsObject] = js.native
+  
   def getReadOnlyProperties(): js.Array[/* keyof T */ String] = js.native
+  
   def initialize(): Unit = js.native
+  
   def parse(): Unit = js.native
+  
   def setData(attribute: Partial[T]): this.type = js.native
   /**
     * @param attribute   - attribute's value to be set or hash of properties with values
@@ -26,4 +32,3 @@ trait ModelMethods[T /* <: js.Object */] extends js.Object {
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type = js.native
 }
-

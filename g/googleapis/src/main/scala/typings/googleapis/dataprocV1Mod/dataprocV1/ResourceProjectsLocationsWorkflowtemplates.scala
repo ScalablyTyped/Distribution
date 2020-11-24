@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataproc/v1", "dataproc_v1.Resource$Projects$Locations$Workflowtemplates")
 @js.native
 class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dataproc.projects.locations.workflowTemplates.create
     * @desc Creates new workflow template.
@@ -45,6 +47,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWorkflowTemplate]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.locations.workflowTemplates.delete
     * @desc Deletes a workflow template. It does not cancel in-progress
@@ -78,6 +81,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.locations.workflowTemplates.get
     * @desc Retrieves the latest workflow template.Can retrieve previously
@@ -111,6 +115,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWorkflowTemplate]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.locations.workflowTemplates.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -144,6 +149,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.locations.workflowTemplates.instantiate
     * @desc Instantiates a template and begins execution.The returned Operation
@@ -182,6 +188,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.locations.workflowTemplates.instantiateInline
     * @desc Instantiates a template and begins execution.This method is
@@ -223,6 +230,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.locations.workflowTemplates.list
     * @desc Lists workflows that match the specified filter in the request.
@@ -256,6 +264,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListWorkflowTemplatesResponse]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.locations.workflowTemplates.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -289,6 +298,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.locations.workflowTemplates.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -325,6 +335,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.locations.workflowTemplates.update
     * @desc Updates (replaces) workflow template. The updated template must
@@ -359,4 +370,3 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     callback: BodyResponseCallback[SchemaWorkflowTemplate]
   ): Unit = js.native
 }
-

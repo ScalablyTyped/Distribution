@@ -3,11 +3,12 @@ package typings.ellipsize
 import typings.ellipsize.anon.Chars
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ellipsize", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply(): String = js.native
   def apply(
     /**
@@ -90,4 +91,3 @@ object mod extends js.Object {
   options: Chars
   ): String = js.native
 }
-

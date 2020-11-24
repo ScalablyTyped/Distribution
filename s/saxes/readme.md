@@ -10,9 +10,9 @@ An evented streaming XML parser in JavaScript
 | ------------------ | :-------------: |
 | Full name          | saxes |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 30 |
-| # downloads        | 82728718 |
+| # releases         | 21 |
+| # dependents       | 46 |
+| # downloads        | 197788155 |
 | # stars            | 0 |
 
 ## Links

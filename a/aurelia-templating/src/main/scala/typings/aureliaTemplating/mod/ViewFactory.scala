@@ -5,7 +5,7 @@ import typings.std.DocumentFragment
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ViewFactory")
 @js.native
@@ -17,10 +17,7 @@ class ViewFactory protected () extends js.Object {
     * @param resources The resources used to compile this factory.
     */
   def this(template: DocumentFragment, instructions: js.Object, resources: ViewResources_) = this()
-  /**
-    * Indicates whether this factory is currently using caching.
-    */
-  var isCaching: js.Any = js.native
+  
   /**
     * Creates a view or returns one from the internal cache, if available.
     * @param container The container to create the view from.
@@ -32,16 +29,24 @@ class ViewFactory protected () extends js.Object {
   def create(container: Container, createInstruction: js.UndefOr[scala.Nothing], element: Element): View_ = js.native
   def create(container: Container, createInstruction: ViewCreateInstruction): View_ = js.native
   def create(container: Container, createInstruction: ViewCreateInstruction, element: Element): View_ = js.native
+  
   /**
     * Gets a cached view if available...
     * @return A cached view or null if one isn't available.
     */
   def getCachedView(): View_ = js.native
+  
+  /**
+    * Indicates whether this factory is currently using caching.
+    */
+  var isCaching: js.Any = js.native
+  
   /**
     * Returns a view to the cache.
     * @param view The view to return to the cache if space is available.
     */
   def returnViewToCache(view: View_): Unit = js.native
+  
   def setCacheSize(size: String, doNotOverrideIfAlreadySet: Boolean): Unit = js.native
   /**
     * Sets the cache size for this factory.
@@ -50,4 +55,3 @@ class ViewFactory protected () extends js.Object {
     */
   def setCacheSize(size: Double, doNotOverrideIfAlreadySet: Boolean): Unit = js.native
 }
-

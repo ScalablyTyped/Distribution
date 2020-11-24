@@ -3,11 +3,11 @@ package typings.tensorflowTfjs.indexWithPolyfillsMod
 import org.scalablytyped.runtime.TopLevel
 import typings.tensorflowTfjs.tensorflowTfjsStrings.NCHW
 import typings.tensorflowTfjs.tensorflowTfjsStrings.NHWC
+import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike4D
-import typings.tensorflowTfjsCore.tensorMod.Tensor4D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "depthToSpace")
 @js.native
@@ -20,4 +20,3 @@ object depthToSpace
         Tensor4D
       ]
     ]
-

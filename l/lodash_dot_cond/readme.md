@@ -11,8 +11,8 @@ The lodash method `_.cond` exported as a module.
 | Full name          | lodash.cond |
 | Keywords           | lodash-modularized, cond |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 40167752 |
+| # dependents       | 16 |
+| # downloads        | 17267969 |
 | # stars            | 0 |
 
 ## Links

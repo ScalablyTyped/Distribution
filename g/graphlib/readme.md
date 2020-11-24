@@ -11,8 +11,8 @@ A directed and undirected multi-graph library
 | Full name          | graphlib |
 | Keywords           | graph, algorithms |
 | # releases         | 4 |
-| # dependents       | 174 |
-| # downloads        | 45699927 |
+| # dependents       | 205 |
+| # downloads        | 62109476 |
 | # stars            | 11 |
 
 ## Links

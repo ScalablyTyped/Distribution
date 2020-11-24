@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.ui.DialogOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofDialog
   extends Instantiable1[/* element */ Element, Dialog]
      with Instantiable2[/* element */ Element, /* options */ DialogOptions, Dialog] {
-  var fn: Dialog = js.native
+  
   def extend(proto: js.Object): Dialog = js.native
+  
+  var fn: Dialog = js.native
 }
-

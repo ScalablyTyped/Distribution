@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-selection
 
-Typings are for version 1.4
+Typings are for version 2.0
 
 ## Library description:
 Data-driven DOM manipulation: select elements and join them to data.
@@ -10,9 +10,9 @@ Data-driven DOM manipulation: select elements and join them to data.
 | ------------------ | :-------------: |
 | Full name          | d3-selection |
 | Keywords           | d3, d3-module, dom, selection, data-join |
-| # releases         | 8 |
-| # dependents       | 577 |
-| # downloads        | 30583559 |
+| # releases         | 10 |
+| # dependents       | 699 |
+| # downloads        | 45827720 |
 | # stars            | 4 |
 
 ## Links

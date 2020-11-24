@@ -2,9 +2,10 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object linguistic2 {
+  
   /**
     * represents a list of available conversion dictionaries.
     *
@@ -18,6 +19,7 @@ package object linguistic2 {
     * @since OOo 1.1.2
     */
   type ConversionDictionaryList = typings.activexLibreoffice.com_.sun.star.linguistic2.XConversionDictionaryList
+  
   /**
     * is the list of personal dictionaries.
     *
@@ -27,6 +29,7 @@ package object linguistic2 {
     * @see com.sun.star.linguistic2.XSearchableDictionaryList
     */
   type DictionaryList = typings.activexLibreoffice.com_.sun.star.linguistic2.XSearchableDictionaryList
+  
   /**
     * represents a dictionary for Hangul/Hanja text conversion.
     *
@@ -38,11 +41,15 @@ package object linguistic2 {
     * @since OOo 1.1.2
     */
   type HangulHanjaConversionDictionary = typings.activexLibreoffice.com_.sun.star.linguistic2.ConversionDictionary
+  
   type LanguageGuessing = typings.activexLibreoffice.com_.sun.star.linguistic2.XLanguageGuessing
+  
   /** the set of linguistic relevant properties. */
   type LinguProperties = typings.activexLibreoffice.com_.sun.star.linguistic2.XLinguProperties
+  
   /** offers linguistic functionality. Is to be used to access spell checker, hyphenator and thesaurus. */
   type LinguServiceManager = typings.activexLibreoffice.com_.sun.star.linguistic2.XLinguServiceManager2
+  
   /**
     * provides a proofreader (often known as grammar checker) for text
     *
@@ -54,6 +61,7 @@ package object linguistic2 {
     * @since OOo 3.0.1
     */
   type Proofreader = typings.activexLibreoffice.com_.sun.star.linguistic2.XProofreader
+  
   /**
     * provides a proofreading iterator
     *

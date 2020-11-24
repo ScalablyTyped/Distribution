@@ -2,9 +2,400 @@ package typings.devexpressAspnetcoreBootstrap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object devexpressAspnetcoreBootstrapStrings {
+  
+  @scala.inline
+  def activeTabChanged: activeTabChanged = "activeTabChanged".asInstanceOf[activeTabChanged]
+  
+  @scala.inline
+  def activeTabChanging: activeTabChanging = "activeTabChanging".asInstanceOf[activeTabChanging]
+  
+  @scala.inline
+  def activeViewChanged: activeViewChanged = "activeViewChanged".asInstanceOf[activeViewChanged]
+  
+  @scala.inline
+  def activeViewChanging: activeViewChanging = "activeViewChanging".asInstanceOf[activeViewChanging]
+  
+  @scala.inline
+  def afterResizing: afterResizing = "afterResizing".asInstanceOf[afterResizing]
+  
+  @scala.inline
+  def appointmentClick: appointmentClick = "appointmentClick".asInstanceOf[appointmentClick]
+  
+  @scala.inline
+  def appointmentDeleting: appointmentDeleting = "appointmentDeleting".asInstanceOf[appointmentDeleting]
+  
+  @scala.inline
+  def appointmentDoubleClick: appointmentDoubleClick = "appointmentDoubleClick".asInstanceOf[appointmentDoubleClick]
+  
+  @scala.inline
+  def appointmentDrag: appointmentDrag = "appointmentDrag".asInstanceOf[appointmentDrag]
+  
+  @scala.inline
+  def appointmentDrop: appointmentDrop = "appointmentDrop".asInstanceOf[appointmentDrop]
+  
+  @scala.inline
+  def appointmentResize: appointmentResize = "appointmentResize".asInstanceOf[appointmentResize]
+  
+  @scala.inline
+  def appointmentResizing: appointmentResizing = "appointmentResizing".asInstanceOf[appointmentResizing]
+  
+  @scala.inline
+  def appointmentToolTipShowing: appointmentToolTipShowing = "appointmentToolTipShowing".asInstanceOf[appointmentToolTipShowing]
+  
+  @scala.inline
+  def appointmentsSelectionChanged: appointmentsSelectionChanged = "appointmentsSelectionChanged".asInstanceOf[appointmentsSelectionChanged]
+  
+  @scala.inline
+  def argumentAxisClick: argumentAxisClick = "argumentAxisClick".asInstanceOf[argumentAxisClick]
+  
+  @scala.inline
+  def batchEditCardDeleting: batchEditCardDeleting = "batchEditCardDeleting".asInstanceOf[batchEditCardDeleting]
+  
+  @scala.inline
+  def batchEditCardInserting: batchEditCardInserting = "batchEditCardInserting".asInstanceOf[batchEditCardInserting]
+  
+  @scala.inline
+  def batchEditCardValidating: batchEditCardValidating = "batchEditCardValidating".asInstanceOf[batchEditCardValidating]
+  
+  @scala.inline
+  def batchEditChangesCanceling: batchEditChangesCanceling = "batchEditChangesCanceling".asInstanceOf[batchEditChangesCanceling]
+  
+  @scala.inline
+  def batchEditChangesSaving: batchEditChangesSaving = "batchEditChangesSaving".asInstanceOf[batchEditChangesSaving]
+  
+  @scala.inline
+  def batchEditConfirmShowing: batchEditConfirmShowing = "batchEditConfirmShowing".asInstanceOf[batchEditConfirmShowing]
+  
+  @scala.inline
+  def batchEditEndEditing: batchEditEndEditing = "batchEditEndEditing".asInstanceOf[batchEditEndEditing]
+  
+  @scala.inline
+  def batchEditRowDeleting: batchEditRowDeleting = "batchEditRowDeleting".asInstanceOf[batchEditRowDeleting]
+  
+  @scala.inline
+  def batchEditRowInserting: batchEditRowInserting = "batchEditRowInserting".asInstanceOf[batchEditRowInserting]
+  
+  @scala.inline
+  def batchEditRowValidating: batchEditRowValidating = "batchEditRowValidating".asInstanceOf[batchEditRowValidating]
+  
+  @scala.inline
+  def batchEditStartEditing: batchEditStartEditing = "batchEditStartEditing".asInstanceOf[batchEditStartEditing]
+  
+  @scala.inline
+  def batchEditTemplateCellFocused: batchEditTemplateCellFocused = "batchEditTemplateCellFocused".asInstanceOf[batchEditTemplateCellFocused]
+  
+  @scala.inline
+  def beforeResizing: beforeResizing = "beforeResizing".asInstanceOf[beforeResizing]
+  
+  @scala.inline
+  def beginCallback: beginCallback = "beginCallback".asInstanceOf[beginCallback]
+  
+  @scala.inline
+  def buttonClick: buttonClick = "buttonClick".asInstanceOf[buttonClick]
+  
+  @scala.inline
+  def calendarCustomDisabledDate: calendarCustomDisabledDate = "calendarCustomDisabledDate".asInstanceOf[calendarCustomDisabledDate]
+  
+  @scala.inline
+  def callbackError: callbackError = "callbackError".asInstanceOf[callbackError]
+  
+  @scala.inline
+  def cardClick: cardClick = "cardClick".asInstanceOf[cardClick]
+  
+  @scala.inline
+  def cardDblClick: cardDblClick = "cardDblClick".asInstanceOf[cardDblClick]
+  
+  @scala.inline
+  def cardFocusing: cardFocusing = "cardFocusing".asInstanceOf[cardFocusing]
+  
+  @scala.inline
+  def cellClick: cellClick = "cellClick".asInstanceOf[cellClick]
+  
+  @scala.inline
+  def cellDoubleClick: cellDoubleClick = "cellDoubleClick".asInstanceOf[cellDoubleClick]
+  
+  @scala.inline
+  def checkedChanged: checkedChanged = "checkedChanged".asInstanceOf[checkedChanged]
+  
+  @scala.inline
+  def click: click = "click".asInstanceOf[click]
+  
+  @scala.inline
+  def closeUp: closeUp = "closeUp".asInstanceOf[closeUp]
+  
+  @scala.inline
+  def closing: closing = "closing".asInstanceOf[closing]
+  
+  @scala.inline
+  def columnGrouping: columnGrouping = "columnGrouping".asInstanceOf[columnGrouping]
+  
+  @scala.inline
+  def columnMoving: columnMoving = "columnMoving".asInstanceOf[columnMoving]
+  
+  @scala.inline
+  def columnResized: columnResized = "columnResized".asInstanceOf[columnResized]
+  
+  @scala.inline
+  def columnResizing: columnResizing = "columnResizing".asInstanceOf[columnResizing]
+  
+  @scala.inline
+  def columnSorting: columnSorting = "columnSorting".asInstanceOf[columnSorting]
+  
+  @scala.inline
+  def columnStartDragging: columnStartDragging = "columnStartDragging".asInstanceOf[columnStartDragging]
+  
+  @scala.inline
+  def contextMenu: contextMenu = "contextMenu".asInstanceOf[contextMenu]
+  
+  @scala.inline
+  def contextMenuItemClick: contextMenuItemClick = "contextMenuItemClick".asInstanceOf[contextMenuItemClick]
+  
+  @scala.inline
+  def customButtonClick: customButtonClick = "customButtonClick".asInstanceOf[customButtonClick]
+  
+  @scala.inline
+  def customDisabledDate: customDisabledDate = "customDisabledDate".asInstanceOf[customDisabledDate]
+  
+  @scala.inline
+  def customHighlighting: customHighlighting = "customHighlighting".asInstanceOf[customHighlighting]
+  
+  @scala.inline
+  def customizationWindowCloseUp: customizationWindowCloseUp = "customizationWindowCloseUp".asInstanceOf[customizationWindowCloseUp]
+  
+  @scala.inline
+  def dateChanged: dateChanged = "dateChanged".asInstanceOf[dateChanged]
+  
+  @scala.inline
+  def detailRowCollapsing: detailRowCollapsing = "detailRowCollapsing".asInstanceOf[detailRowCollapsing]
+  
+  @scala.inline
+  def detailRowExpanding: detailRowExpanding = "detailRowExpanding".asInstanceOf[detailRowExpanding]
+  
+  @scala.inline
+  def disposing: disposing = "disposing".asInstanceOf[disposing]
+  
+  @scala.inline
+  def done: done = "done".asInstanceOf[done]
+  
+  @scala.inline
+  def drawn: drawn = "drawn".asInstanceOf[drawn]
+  
+  @scala.inline
+  def dropDown: dropDown = "dropDown".asInstanceOf[dropDown]
+  
+  @scala.inline
+  def dropZoneEnter: dropZoneEnter = "dropZoneEnter".asInstanceOf[dropZoneEnter]
+  
+  @scala.inline
+  def dropZoneLeave: dropZoneLeave = "dropZoneLeave".asInstanceOf[dropZoneLeave]
+  
+  @scala.inline
+  def endCallback: endCallback = "endCallback".asInstanceOf[endCallback]
+  
+  @scala.inline
+  def expandedChanged: expandedChanged = "expandedChanged".asInstanceOf[expandedChanged]
+  
+  @scala.inline
+  def expandedChanging: expandedChanging = "expandedChanging".asInstanceOf[expandedChanging]
+  
+  @scala.inline
+  def exported: exported = "exported".asInstanceOf[exported]
+  
+  @scala.inline
+  def exporting: exporting = "exporting".asInstanceOf[exporting]
+  
+  @scala.inline
+  def fileInputCountChanged: fileInputCountChanged = "fileInputCountChanged".asInstanceOf[fileInputCountChanged]
+  
+  @scala.inline
+  def fileSaving: fileSaving = "fileSaving".asInstanceOf[fileSaving]
+  
+  @scala.inline
+  def fileUploadComplete: fileUploadComplete = "fileUploadComplete".asInstanceOf[fileUploadComplete]
+  
+  @scala.inline
+  def filesUploadComplete: filesUploadComplete = "filesUploadComplete".asInstanceOf[filesUploadComplete]
+  
+  @scala.inline
+  def filesUploadStart: filesUploadStart = "filesUploadStart".asInstanceOf[filesUploadStart]
+  
+  @scala.inline
+  def focusedCardChanged: focusedCardChanged = "focusedCardChanged".asInstanceOf[focusedCardChanged]
+  
+  @scala.inline
+  def focusedCellChanging: focusedCellChanging = "focusedCellChanging".asInstanceOf[focusedCellChanging]
+  
+  @scala.inline
+  def focusedRowChanged: focusedRowChanged = "focusedRowChanged".asInstanceOf[focusedRowChanged]
+  
+  @scala.inline
+  def gotFocus: gotFocus = "gotFocus".asInstanceOf[gotFocus]
+  
+  @scala.inline
+  def headerClick: headerClick = "headerClick".asInstanceOf[headerClick]
+  
+  @scala.inline
+  def incidentOccurred: incidentOccurred = "incidentOccurred".asInstanceOf[incidentOccurred]
+  
+  @scala.inline
+  def init: init = "init".asInstanceOf[init]
+  
+  @scala.inline
+  def itemClick: itemClick = "itemClick".asInstanceOf[itemClick]
+  
+  @scala.inline
+  def itemDoubleClick: itemDoubleClick = "itemDoubleClick".asInstanceOf[itemDoubleClick]
+  
+  @scala.inline
+  def itemFiltering: itemFiltering = "itemFiltering".asInstanceOf[itemFiltering]
+  
+  @scala.inline
+  def itemMouseOut: itemMouseOut = "itemMouseOut".asInstanceOf[itemMouseOut]
+  
+  @scala.inline
+  def itemMouseOver: itemMouseOver = "itemMouseOver".asInstanceOf[itemMouseOver]
+  
+  @scala.inline
+  def keyDown: keyDown = "keyDown".asInstanceOf[keyDown]
+  
+  @scala.inline
+  def keyPress: keyPress = "keyPress".asInstanceOf[keyPress]
+  
+  @scala.inline
+  def keyUp: keyUp = "keyUp".asInstanceOf[keyUp]
+  
+  @scala.inline
+  def legendClick: legendClick = "legendClick".asInstanceOf[legendClick]
+  
+  @scala.inline
+  def lostFocus: lostFocus = "lostFocus".asInstanceOf[lostFocus]
+  
+  @scala.inline
+  def menuItemClicked: menuItemClicked = "menuItemClicked".asInstanceOf[menuItemClicked]
+  
+  @scala.inline
+  def moreButtonClicked: moreButtonClicked = "moreButtonClicked".asInstanceOf[moreButtonClicked]
+  
+  @scala.inline
+  def nodeClick: nodeClick = "nodeClick".asInstanceOf[nodeClick]
+  
+  @scala.inline
+  def numberChanged: numberChanged = "numberChanged".asInstanceOf[numberChanged]
+  
+  @scala.inline
+  def optionChanged: optionChanged = "optionChanged".asInstanceOf[optionChanged]
+  
+  @scala.inline
+  def parseDate: parseDate = "parseDate".asInstanceOf[parseDate]
+  
+  @scala.inline
+  def pinnedChanged: pinnedChanged = "pinnedChanged".asInstanceOf[pinnedChanged]
+  
+  @scala.inline
+  def pointClick: pointClick = "pointClick".asInstanceOf[pointClick]
+  
+  @scala.inline
+  def pointHoverChanged: pointHoverChanged = "pointHoverChanged".asInstanceOf[pointHoverChanged]
+  
+  @scala.inline
+  def pointSelectionChanged: pointSelectionChanged = "pointSelectionChanged".asInstanceOf[pointSelectionChanged]
+  
+  @scala.inline
+  def popUp: popUp = "popUp".asInstanceOf[popUp]
+  
+  @scala.inline
+  def queryCloseUp: queryCloseUp = "queryCloseUp".asInstanceOf[queryCloseUp]
+  
+  @scala.inline
+  def resize: resize = "resize".asInstanceOf[resize]
+  
+  @scala.inline
+  def rowClick: rowClick = "rowClick".asInstanceOf[rowClick]
+  
+  @scala.inline
+  def rowCollapsing: rowCollapsing = "rowCollapsing".asInstanceOf[rowCollapsing]
+  
+  @scala.inline
+  def rowDblClick: rowDblClick = "rowDblClick".asInstanceOf[rowDblClick]
+  
+  @scala.inline
+  def rowExpanding: rowExpanding = "rowExpanding".asInstanceOf[rowExpanding]
+  
+  @scala.inline
+  def rowFocusing: rowFocusing = "rowFocusing".asInstanceOf[rowFocusing]
+  
+  @scala.inline
+  def selectedIndexChanged: selectedIndexChanged = "selectedIndexChanged".asInstanceOf[selectedIndexChanged]
+  
+  @scala.inline
+  def selectionChanged: selectionChanged = "selectionChanged".asInstanceOf[selectionChanged]
+  
+  @scala.inline
+  def selectionChanging: selectionChanging = "selectionChanging".asInstanceOf[selectionChanging]
+  
+  @scala.inline
+  def seriesClick: seriesClick = "seriesClick".asInstanceOf[seriesClick]
+  
+  @scala.inline
+  def seriesHoverChanged: seriesHoverChanged = "seriesHoverChanged".asInstanceOf[seriesHoverChanged]
+  
+  @scala.inline
+  def seriesSelectionChanged: seriesSelectionChanged = "seriesSelectionChanged".asInstanceOf[seriesSelectionChanged]
+  
+  @scala.inline
+  def shortcut: shortcut = "shortcut".asInstanceOf[shortcut]
+  
+  @scala.inline
+  def shown: shown = "shown".asInstanceOf[shown]
+  
+  @scala.inline
+  def tabClick: tabClick = "tabClick".asInstanceOf[tabClick]
+  
+  @scala.inline
+  def tagsChanged: tagsChanged = "tagsChanged".asInstanceOf[tagsChanged]
+  
+  @scala.inline
+  def textChanged: textChanged = "textChanged".asInstanceOf[textChanged]
+  
+  @scala.inline
+  def toolbarItemClick: toolbarItemClick = "toolbarItemClick".asInstanceOf[toolbarItemClick]
+  
+  @scala.inline
+  def tooltipHidden: tooltipHidden = "tooltipHidden".asInstanceOf[tooltipHidden]
+  
+  @scala.inline
+  def tooltipShown: tooltipShown = "tooltipShown".asInstanceOf[tooltipShown]
+  
+  @scala.inline
+  def uploadingProgressChanged: uploadingProgressChanged = "uploadingProgressChanged".asInstanceOf[uploadingProgressChanged]
+  
+  @scala.inline
+  def userInput: userInput = "userInput".asInstanceOf[userInput]
+  
+  @scala.inline
+  def validation: validation = "validation".asInstanceOf[validation]
+  
+  @scala.inline
+  def validationErrorOccurred: validationErrorOccurred = "validationErrorOccurred".asInstanceOf[validationErrorOccurred]
+  
+  @scala.inline
+  def valueChanged: valueChanged = "valueChanged".asInstanceOf[valueChanged]
+  
+  @scala.inline
+  def visibleIntervalChanged: visibleIntervalChanged = "visibleIntervalChanged".asInstanceOf[visibleIntervalChanged]
+  
+  @scala.inline
+  def visibleMonthChanged: visibleMonthChanged = "visibleMonthChanged".asInstanceOf[visibleMonthChanged]
+  
+  @scala.inline
+  def zoomEnd: zoomEnd = "zoomEnd".asInstanceOf[zoomEnd]
+  
+  @scala.inline
+  def zoomStart: zoomStart = "zoomStart".asInstanceOf[zoomStart]
+  
   @js.native
   sealed trait activeTabChanged extends js.Object
   
@@ -394,266 +785,4 @@ object devexpressAspnetcoreBootstrapStrings {
   
   @js.native
   sealed trait zoomStart extends js.Object
-  
-  @scala.inline
-  def activeTabChanged: activeTabChanged = "activeTabChanged".asInstanceOf[activeTabChanged]
-  @scala.inline
-  def activeTabChanging: activeTabChanging = "activeTabChanging".asInstanceOf[activeTabChanging]
-  @scala.inline
-  def activeViewChanged: activeViewChanged = "activeViewChanged".asInstanceOf[activeViewChanged]
-  @scala.inline
-  def activeViewChanging: activeViewChanging = "activeViewChanging".asInstanceOf[activeViewChanging]
-  @scala.inline
-  def afterResizing: afterResizing = "afterResizing".asInstanceOf[afterResizing]
-  @scala.inline
-  def appointmentClick: appointmentClick = "appointmentClick".asInstanceOf[appointmentClick]
-  @scala.inline
-  def appointmentDeleting: appointmentDeleting = "appointmentDeleting".asInstanceOf[appointmentDeleting]
-  @scala.inline
-  def appointmentDoubleClick: appointmentDoubleClick = "appointmentDoubleClick".asInstanceOf[appointmentDoubleClick]
-  @scala.inline
-  def appointmentDrag: appointmentDrag = "appointmentDrag".asInstanceOf[appointmentDrag]
-  @scala.inline
-  def appointmentDrop: appointmentDrop = "appointmentDrop".asInstanceOf[appointmentDrop]
-  @scala.inline
-  def appointmentResize: appointmentResize = "appointmentResize".asInstanceOf[appointmentResize]
-  @scala.inline
-  def appointmentResizing: appointmentResizing = "appointmentResizing".asInstanceOf[appointmentResizing]
-  @scala.inline
-  def appointmentToolTipShowing: appointmentToolTipShowing = "appointmentToolTipShowing".asInstanceOf[appointmentToolTipShowing]
-  @scala.inline
-  def appointmentsSelectionChanged: appointmentsSelectionChanged = "appointmentsSelectionChanged".asInstanceOf[appointmentsSelectionChanged]
-  @scala.inline
-  def argumentAxisClick: argumentAxisClick = "argumentAxisClick".asInstanceOf[argumentAxisClick]
-  @scala.inline
-  def batchEditCardDeleting: batchEditCardDeleting = "batchEditCardDeleting".asInstanceOf[batchEditCardDeleting]
-  @scala.inline
-  def batchEditCardInserting: batchEditCardInserting = "batchEditCardInserting".asInstanceOf[batchEditCardInserting]
-  @scala.inline
-  def batchEditCardValidating: batchEditCardValidating = "batchEditCardValidating".asInstanceOf[batchEditCardValidating]
-  @scala.inline
-  def batchEditChangesCanceling: batchEditChangesCanceling = "batchEditChangesCanceling".asInstanceOf[batchEditChangesCanceling]
-  @scala.inline
-  def batchEditChangesSaving: batchEditChangesSaving = "batchEditChangesSaving".asInstanceOf[batchEditChangesSaving]
-  @scala.inline
-  def batchEditConfirmShowing: batchEditConfirmShowing = "batchEditConfirmShowing".asInstanceOf[batchEditConfirmShowing]
-  @scala.inline
-  def batchEditEndEditing: batchEditEndEditing = "batchEditEndEditing".asInstanceOf[batchEditEndEditing]
-  @scala.inline
-  def batchEditRowDeleting: batchEditRowDeleting = "batchEditRowDeleting".asInstanceOf[batchEditRowDeleting]
-  @scala.inline
-  def batchEditRowInserting: batchEditRowInserting = "batchEditRowInserting".asInstanceOf[batchEditRowInserting]
-  @scala.inline
-  def batchEditRowValidating: batchEditRowValidating = "batchEditRowValidating".asInstanceOf[batchEditRowValidating]
-  @scala.inline
-  def batchEditStartEditing: batchEditStartEditing = "batchEditStartEditing".asInstanceOf[batchEditStartEditing]
-  @scala.inline
-  def batchEditTemplateCellFocused: batchEditTemplateCellFocused = "batchEditTemplateCellFocused".asInstanceOf[batchEditTemplateCellFocused]
-  @scala.inline
-  def beforeResizing: beforeResizing = "beforeResizing".asInstanceOf[beforeResizing]
-  @scala.inline
-  def beginCallback: beginCallback = "beginCallback".asInstanceOf[beginCallback]
-  @scala.inline
-  def buttonClick: buttonClick = "buttonClick".asInstanceOf[buttonClick]
-  @scala.inline
-  def calendarCustomDisabledDate: calendarCustomDisabledDate = "calendarCustomDisabledDate".asInstanceOf[calendarCustomDisabledDate]
-  @scala.inline
-  def callbackError: callbackError = "callbackError".asInstanceOf[callbackError]
-  @scala.inline
-  def cardClick: cardClick = "cardClick".asInstanceOf[cardClick]
-  @scala.inline
-  def cardDblClick: cardDblClick = "cardDblClick".asInstanceOf[cardDblClick]
-  @scala.inline
-  def cardFocusing: cardFocusing = "cardFocusing".asInstanceOf[cardFocusing]
-  @scala.inline
-  def cellClick: cellClick = "cellClick".asInstanceOf[cellClick]
-  @scala.inline
-  def cellDoubleClick: cellDoubleClick = "cellDoubleClick".asInstanceOf[cellDoubleClick]
-  @scala.inline
-  def checkedChanged: checkedChanged = "checkedChanged".asInstanceOf[checkedChanged]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def closeUp: closeUp = "closeUp".asInstanceOf[closeUp]
-  @scala.inline
-  def closing: closing = "closing".asInstanceOf[closing]
-  @scala.inline
-  def columnGrouping: columnGrouping = "columnGrouping".asInstanceOf[columnGrouping]
-  @scala.inline
-  def columnMoving: columnMoving = "columnMoving".asInstanceOf[columnMoving]
-  @scala.inline
-  def columnResized: columnResized = "columnResized".asInstanceOf[columnResized]
-  @scala.inline
-  def columnResizing: columnResizing = "columnResizing".asInstanceOf[columnResizing]
-  @scala.inline
-  def columnSorting: columnSorting = "columnSorting".asInstanceOf[columnSorting]
-  @scala.inline
-  def columnStartDragging: columnStartDragging = "columnStartDragging".asInstanceOf[columnStartDragging]
-  @scala.inline
-  def contextMenu: contextMenu = "contextMenu".asInstanceOf[contextMenu]
-  @scala.inline
-  def contextMenuItemClick: contextMenuItemClick = "contextMenuItemClick".asInstanceOf[contextMenuItemClick]
-  @scala.inline
-  def customButtonClick: customButtonClick = "customButtonClick".asInstanceOf[customButtonClick]
-  @scala.inline
-  def customDisabledDate: customDisabledDate = "customDisabledDate".asInstanceOf[customDisabledDate]
-  @scala.inline
-  def customHighlighting: customHighlighting = "customHighlighting".asInstanceOf[customHighlighting]
-  @scala.inline
-  def customizationWindowCloseUp: customizationWindowCloseUp = "customizationWindowCloseUp".asInstanceOf[customizationWindowCloseUp]
-  @scala.inline
-  def dateChanged: dateChanged = "dateChanged".asInstanceOf[dateChanged]
-  @scala.inline
-  def detailRowCollapsing: detailRowCollapsing = "detailRowCollapsing".asInstanceOf[detailRowCollapsing]
-  @scala.inline
-  def detailRowExpanding: detailRowExpanding = "detailRowExpanding".asInstanceOf[detailRowExpanding]
-  @scala.inline
-  def disposing: disposing = "disposing".asInstanceOf[disposing]
-  @scala.inline
-  def done: done = "done".asInstanceOf[done]
-  @scala.inline
-  def drawn: drawn = "drawn".asInstanceOf[drawn]
-  @scala.inline
-  def dropDown: dropDown = "dropDown".asInstanceOf[dropDown]
-  @scala.inline
-  def dropZoneEnter: dropZoneEnter = "dropZoneEnter".asInstanceOf[dropZoneEnter]
-  @scala.inline
-  def dropZoneLeave: dropZoneLeave = "dropZoneLeave".asInstanceOf[dropZoneLeave]
-  @scala.inline
-  def endCallback: endCallback = "endCallback".asInstanceOf[endCallback]
-  @scala.inline
-  def expandedChanged: expandedChanged = "expandedChanged".asInstanceOf[expandedChanged]
-  @scala.inline
-  def expandedChanging: expandedChanging = "expandedChanging".asInstanceOf[expandedChanging]
-  @scala.inline
-  def exported: exported = "exported".asInstanceOf[exported]
-  @scala.inline
-  def exporting: exporting = "exporting".asInstanceOf[exporting]
-  @scala.inline
-  def fileInputCountChanged: fileInputCountChanged = "fileInputCountChanged".asInstanceOf[fileInputCountChanged]
-  @scala.inline
-  def fileSaving: fileSaving = "fileSaving".asInstanceOf[fileSaving]
-  @scala.inline
-  def fileUploadComplete: fileUploadComplete = "fileUploadComplete".asInstanceOf[fileUploadComplete]
-  @scala.inline
-  def filesUploadComplete: filesUploadComplete = "filesUploadComplete".asInstanceOf[filesUploadComplete]
-  @scala.inline
-  def filesUploadStart: filesUploadStart = "filesUploadStart".asInstanceOf[filesUploadStart]
-  @scala.inline
-  def focusedCardChanged: focusedCardChanged = "focusedCardChanged".asInstanceOf[focusedCardChanged]
-  @scala.inline
-  def focusedCellChanging: focusedCellChanging = "focusedCellChanging".asInstanceOf[focusedCellChanging]
-  @scala.inline
-  def focusedRowChanged: focusedRowChanged = "focusedRowChanged".asInstanceOf[focusedRowChanged]
-  @scala.inline
-  def gotFocus: gotFocus = "gotFocus".asInstanceOf[gotFocus]
-  @scala.inline
-  def headerClick: headerClick = "headerClick".asInstanceOf[headerClick]
-  @scala.inline
-  def incidentOccurred: incidentOccurred = "incidentOccurred".asInstanceOf[incidentOccurred]
-  @scala.inline
-  def init: init = "init".asInstanceOf[init]
-  @scala.inline
-  def itemClick: itemClick = "itemClick".asInstanceOf[itemClick]
-  @scala.inline
-  def itemDoubleClick: itemDoubleClick = "itemDoubleClick".asInstanceOf[itemDoubleClick]
-  @scala.inline
-  def itemFiltering: itemFiltering = "itemFiltering".asInstanceOf[itemFiltering]
-  @scala.inline
-  def itemMouseOut: itemMouseOut = "itemMouseOut".asInstanceOf[itemMouseOut]
-  @scala.inline
-  def itemMouseOver: itemMouseOver = "itemMouseOver".asInstanceOf[itemMouseOver]
-  @scala.inline
-  def keyDown: keyDown = "keyDown".asInstanceOf[keyDown]
-  @scala.inline
-  def keyPress: keyPress = "keyPress".asInstanceOf[keyPress]
-  @scala.inline
-  def keyUp: keyUp = "keyUp".asInstanceOf[keyUp]
-  @scala.inline
-  def legendClick: legendClick = "legendClick".asInstanceOf[legendClick]
-  @scala.inline
-  def lostFocus: lostFocus = "lostFocus".asInstanceOf[lostFocus]
-  @scala.inline
-  def menuItemClicked: menuItemClicked = "menuItemClicked".asInstanceOf[menuItemClicked]
-  @scala.inline
-  def moreButtonClicked: moreButtonClicked = "moreButtonClicked".asInstanceOf[moreButtonClicked]
-  @scala.inline
-  def nodeClick: nodeClick = "nodeClick".asInstanceOf[nodeClick]
-  @scala.inline
-  def numberChanged: numberChanged = "numberChanged".asInstanceOf[numberChanged]
-  @scala.inline
-  def optionChanged: optionChanged = "optionChanged".asInstanceOf[optionChanged]
-  @scala.inline
-  def parseDate: parseDate = "parseDate".asInstanceOf[parseDate]
-  @scala.inline
-  def pinnedChanged: pinnedChanged = "pinnedChanged".asInstanceOf[pinnedChanged]
-  @scala.inline
-  def pointClick: pointClick = "pointClick".asInstanceOf[pointClick]
-  @scala.inline
-  def pointHoverChanged: pointHoverChanged = "pointHoverChanged".asInstanceOf[pointHoverChanged]
-  @scala.inline
-  def pointSelectionChanged: pointSelectionChanged = "pointSelectionChanged".asInstanceOf[pointSelectionChanged]
-  @scala.inline
-  def popUp: popUp = "popUp".asInstanceOf[popUp]
-  @scala.inline
-  def queryCloseUp: queryCloseUp = "queryCloseUp".asInstanceOf[queryCloseUp]
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
-  @scala.inline
-  def rowClick: rowClick = "rowClick".asInstanceOf[rowClick]
-  @scala.inline
-  def rowCollapsing: rowCollapsing = "rowCollapsing".asInstanceOf[rowCollapsing]
-  @scala.inline
-  def rowDblClick: rowDblClick = "rowDblClick".asInstanceOf[rowDblClick]
-  @scala.inline
-  def rowExpanding: rowExpanding = "rowExpanding".asInstanceOf[rowExpanding]
-  @scala.inline
-  def rowFocusing: rowFocusing = "rowFocusing".asInstanceOf[rowFocusing]
-  @scala.inline
-  def selectedIndexChanged: selectedIndexChanged = "selectedIndexChanged".asInstanceOf[selectedIndexChanged]
-  @scala.inline
-  def selectionChanged: selectionChanged = "selectionChanged".asInstanceOf[selectionChanged]
-  @scala.inline
-  def selectionChanging: selectionChanging = "selectionChanging".asInstanceOf[selectionChanging]
-  @scala.inline
-  def seriesClick: seriesClick = "seriesClick".asInstanceOf[seriesClick]
-  @scala.inline
-  def seriesHoverChanged: seriesHoverChanged = "seriesHoverChanged".asInstanceOf[seriesHoverChanged]
-  @scala.inline
-  def seriesSelectionChanged: seriesSelectionChanged = "seriesSelectionChanged".asInstanceOf[seriesSelectionChanged]
-  @scala.inline
-  def shortcut: shortcut = "shortcut".asInstanceOf[shortcut]
-  @scala.inline
-  def shown: shown = "shown".asInstanceOf[shown]
-  @scala.inline
-  def tabClick: tabClick = "tabClick".asInstanceOf[tabClick]
-  @scala.inline
-  def tagsChanged: tagsChanged = "tagsChanged".asInstanceOf[tagsChanged]
-  @scala.inline
-  def textChanged: textChanged = "textChanged".asInstanceOf[textChanged]
-  @scala.inline
-  def toolbarItemClick: toolbarItemClick = "toolbarItemClick".asInstanceOf[toolbarItemClick]
-  @scala.inline
-  def tooltipHidden: tooltipHidden = "tooltipHidden".asInstanceOf[tooltipHidden]
-  @scala.inline
-  def tooltipShown: tooltipShown = "tooltipShown".asInstanceOf[tooltipShown]
-  @scala.inline
-  def uploadingProgressChanged: uploadingProgressChanged = "uploadingProgressChanged".asInstanceOf[uploadingProgressChanged]
-  @scala.inline
-  def userInput: userInput = "userInput".asInstanceOf[userInput]
-  @scala.inline
-  def validation: validation = "validation".asInstanceOf[validation]
-  @scala.inline
-  def validationErrorOccurred: validationErrorOccurred = "validationErrorOccurred".asInstanceOf[validationErrorOccurred]
-  @scala.inline
-  def valueChanged: valueChanged = "valueChanged".asInstanceOf[valueChanged]
-  @scala.inline
-  def visibleIntervalChanged: visibleIntervalChanged = "visibleIntervalChanged".asInstanceOf[visibleIntervalChanged]
-  @scala.inline
-  def visibleMonthChanged: visibleMonthChanged = "visibleMonthChanged".asInstanceOf[visibleMonthChanged]
-  @scala.inline
-  def zoomEnd: zoomEnd = "zoomEnd".asInstanceOf[zoomEnd]
-  @scala.inline
-  def zoomStart: zoomStart = "zoomStart".asInstanceOf[zoomStart]
 }
-

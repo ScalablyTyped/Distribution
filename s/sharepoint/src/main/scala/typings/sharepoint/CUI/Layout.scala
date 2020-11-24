@@ -3,12 +3,12 @@ package typings.sharepoint.CUI
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Layout extends RibbonComponent
-
 object Layout {
+  
   @scala.inline
   def apply(
     _lastHeightUpdate: Double,
@@ -57,4 +57,3 @@ object Layout {
     __obj.asInstanceOf[Layout]
   }
 }
-

@@ -3,13 +3,14 @@ package typings.watsonDeveloperCloud.v2Mod
 import typings.ibmCloudSdkCore.mod.BaseService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The IBM Watson&trade; Assistant service combines machine learning, natural language understanding, and integrated dialog tools to create conversation flows between your apps and your users.
   */
 @js.native
 trait AssistantV2 extends BaseService {
+  
   /*************************
     * sessions
     ************************/
@@ -31,6 +32,7 @@ trait AssistantV2 extends BaseService {
     */
   def createSession(params: CreateSessionParams): js.Promise[_] | Unit = js.native
   def createSession(params: CreateSessionParams, callback: Callback[SessionResponse]): js.Promise[_] | Unit = js.native
+  
   /**
     * Delete session.
     *
@@ -49,6 +51,7 @@ trait AssistantV2 extends BaseService {
     */
   def deleteSession(params: DeleteSessionParams): js.Promise[_] | Unit = js.native
   def deleteSession(params: DeleteSessionParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * message
     ************************/
@@ -77,4 +80,3 @@ trait AssistantV2 extends BaseService {
   def message(params: MessageParams): js.Promise[_] | Unit = js.native
   def message(params: MessageParams, callback: Callback[MessageResponse]): js.Promise[_] | Unit = js.native
 }
-

@@ -10,9 +10,9 @@ A module that integrates into your build process, helping you generate a manifes
 | ------------------ | :-------------: |
 | Full name          | workbox-build |
 | Keywords           | workbox, workboxjs, service worker, caching, fetch requests, offline, file manifest |
-| # releases         | 39 |
-| # dependents       | 81 |
-| # downloads        | 58869193 |
+| # releases         | 32 |
+| # dependents       | 92 |
+| # downloads        | 102364263 |
 | # stars            | 1 |
 
 ## Links

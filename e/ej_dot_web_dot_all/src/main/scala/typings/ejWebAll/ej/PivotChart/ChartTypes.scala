@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.PivotChart
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartTypes extends js.Object
-
 @JSGlobal("ej.PivotChart.ChartTypes")
 @js.native
 object ChartTypes extends js.Object {
+  
   ///To render an Area type PivotChart.
   @js.native
   sealed trait Area extends ChartTypes
@@ -77,6 +77,4 @@ object ChartTypes extends js.Object {
   ///To render a StepLine type PivotChart.
   @js.native
   sealed trait StepLine extends ChartTypes
-  
 }
-

@@ -3,11 +3,12 @@ package typings.fridaGum.global.Java
 import typings.fridaGum.Java.DexFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Java.openClassFile")
 @js.native
 object openClassFile extends js.Object {
+  
   /**
     * Opens the .dex file at `filePath`.
     *
@@ -15,4 +16,3 @@ object openClassFile extends js.Object {
     */
   def apply(filePath: String): DexFile = js.native
 }
-

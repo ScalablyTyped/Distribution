@@ -2,7 +2,7 @@ package typings.protractor.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A modal dialog was open, blocking this operation.
@@ -15,4 +15,3 @@ class UnexpectedAlertOpenError ()
   def this(message: js.UndefOr[scala.Nothing], openAlertText: String) = this()
   def this(message: String, openAlertText: String) = this()
 }
-

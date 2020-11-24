@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/elasticsearch/domainPolicy", "DomainPolicy")
 @js.native
@@ -21,20 +21,22 @@ class DomainPolicy protected () extends CustomResource {
     */
   def this(name: String, args: DomainPolicyArgs) = this()
   def this(name: String, args: DomainPolicyArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * IAM policy document specifying the access policies for the domain
     */
   val accessPolicies: Output_[String] = js.native
+  
   /**
     * Name of the domain.
     */
   val domainName: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/elasticsearch/domainPolicy", "DomainPolicy")
 @js.native
 object DomainPolicy extends js.Object {
+  
   /**
     * Get an existing DomainPolicy resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -48,10 +50,10 @@ object DomainPolicy extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DomainPolicy = js.native
   def get(name: String, id: Input[ID], state: DomainPolicyState): DomainPolicy = js.native
   def get(name: String, id: Input[ID], state: DomainPolicyState, opts: CustomResourceOptions): DomainPolicy = js.native
+  
   /**
     * Returns true if the given object is an instance of DomainPolicy.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticsearch/domainPolicy.DomainPolicy */ Boolean = js.native
 }
-

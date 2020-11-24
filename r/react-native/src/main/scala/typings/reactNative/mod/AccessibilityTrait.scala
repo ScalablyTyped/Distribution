@@ -2,7 +2,7 @@ package typings.reactNative.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactNative.reactNativeStrings.none
@@ -24,41 +24,56 @@ import scala.scalajs.js.annotation._
   - typings.reactNative.reactNativeStrings.pageTurn
 */
 trait AccessibilityTrait extends js.Object
-
 object AccessibilityTrait {
+  
   @scala.inline
   def adjustable: typings.reactNative.reactNativeStrings.adjustable = "adjustable".asInstanceOf[typings.reactNative.reactNativeStrings.adjustable]
+  
   @scala.inline
   def allowsDirectInteraction: typings.reactNative.reactNativeStrings.allowsDirectInteraction = "allowsDirectInteraction".asInstanceOf[typings.reactNative.reactNativeStrings.allowsDirectInteraction]
+  
   @scala.inline
   def button: typings.reactNative.reactNativeStrings.button = "button".asInstanceOf[typings.reactNative.reactNativeStrings.button]
+  
   @scala.inline
   def disabled: typings.reactNative.reactNativeStrings.disabled = "disabled".asInstanceOf[typings.reactNative.reactNativeStrings.disabled]
+  
   @scala.inline
   def frequentUpdates: typings.reactNative.reactNativeStrings.frequentUpdates = "frequentUpdates".asInstanceOf[typings.reactNative.reactNativeStrings.frequentUpdates]
+  
   @scala.inline
   def header: typings.reactNative.reactNativeStrings.header = "header".asInstanceOf[typings.reactNative.reactNativeStrings.header]
+  
   @scala.inline
   def image: typings.reactNative.reactNativeStrings.image = "image".asInstanceOf[typings.reactNative.reactNativeStrings.image]
+  
   @scala.inline
   def key: typings.reactNative.reactNativeStrings.key = "key".asInstanceOf[typings.reactNative.reactNativeStrings.key]
+  
   @scala.inline
   def link: typings.reactNative.reactNativeStrings.link = "link".asInstanceOf[typings.reactNative.reactNativeStrings.link]
+  
   @scala.inline
   def none: typings.reactNative.reactNativeStrings.none = "none".asInstanceOf[typings.reactNative.reactNativeStrings.none]
+  
   @scala.inline
   def pageTurn: typings.reactNative.reactNativeStrings.pageTurn = "pageTurn".asInstanceOf[typings.reactNative.reactNativeStrings.pageTurn]
+  
   @scala.inline
   def plays: typings.reactNative.reactNativeStrings.plays = "plays".asInstanceOf[typings.reactNative.reactNativeStrings.plays]
+  
   @scala.inline
   def search: typings.reactNative.reactNativeStrings.search = "search".asInstanceOf[typings.reactNative.reactNativeStrings.search]
+  
   @scala.inline
   def selected: typings.reactNative.reactNativeStrings.selected = "selected".asInstanceOf[typings.reactNative.reactNativeStrings.selected]
+  
   @scala.inline
   def startsMedia: typings.reactNative.reactNativeStrings.startsMedia = "startsMedia".asInstanceOf[typings.reactNative.reactNativeStrings.startsMedia]
+  
   @scala.inline
   def summary: typings.reactNative.reactNativeStrings.summary = "summary".asInstanceOf[typings.reactNative.reactNativeStrings.summary]
+  
   @scala.inline
   def text: typings.reactNative.reactNativeStrings.text = "text".asInstanceOf[typings.reactNative.reactNativeStrings.text]
 }
-

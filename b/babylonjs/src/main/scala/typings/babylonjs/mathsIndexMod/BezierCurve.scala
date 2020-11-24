@@ -2,17 +2,17 @@ package typings.babylonjs.mathsIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Maths/index", "BezierCurve")
 @js.native
 class BezierCurve ()
   extends typings.babylonjs.mathMod.BezierCurve
-
 /* static members */
 @JSImport("babylonjs/Maths/index", "BezierCurve")
 @js.native
 object BezierCurve extends js.Object {
+  
   /**
     * Returns the cubic Bezier interpolated value (float) at "t" (float) from the given x1, y1, x2, y2 floats
     * @param t defines the time
@@ -24,4 +24,3 @@ object BezierCurve extends js.Object {
     */
   def Interpolate(t: Double, x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
 }
-

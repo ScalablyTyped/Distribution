@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/rds", "EventSubscription")
 @js.native
@@ -23,11 +23,11 @@ class EventSubscription protected ()
   def this(name: String, args: EventSubscriptionArgs) = this()
   def this(name: String, args: EventSubscriptionArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/rds", "EventSubscription")
 @js.native
 object EventSubscription extends js.Object {
+  
   /**
     * Get an existing EventSubscription resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object EventSubscription extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.rdsEventSubscriptionMod.EventSubscription = js.native
   def get(name: String, id: Input[ID], state: EventSubscriptionState): typings.pulumiAws.rdsEventSubscriptionMod.EventSubscription = js.native
   def get(name: String, id: Input[ID], state: EventSubscriptionState, opts: CustomResourceOptions): typings.pulumiAws.rdsEventSubscriptionMod.EventSubscription = js.native
+  
   /**
     * Returns true if the given object is an instance of EventSubscription.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/eventSubscription.EventSubscription */ Boolean = js.native
 }
-

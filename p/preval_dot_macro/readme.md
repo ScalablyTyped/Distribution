@@ -3,21 +3,6 @@
 
 Typings are for version 3.0
 
-## Library description:
-Pre-evaluate code at build-time with babel-macros
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | preval.macro |
-| Keywords           | babel-macros, babel-plugin-macros |
-| # releases         | 4 |
-| # dependents       | 9 |
-| # downloads        | 341485 |
-| # stars            | 0 |
-
-## Links
-- [Npm](https://www.npmjs.com/package/preval.macro)
-    
 
 
 ## Note

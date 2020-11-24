@@ -10,9 +10,9 @@ A react hook to trigger callbacks on specified key combo with mousetrap
 | ------------------ | :-------------: |
 | Full name          | react-hook-mousetrap |
 | Keywords           | ract, hook, mousetrap, keys, combo, hotkeys |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 1555 |
+| # downloads        | 8148 |
 | # stars            | 0 |
 
 ## Links

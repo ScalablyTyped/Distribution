@@ -12,7 +12,7 @@ Select html elements on webpage using mouse
 | Keywords           | select, drag, dragselect, dom, mouse |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2342 |
+| # downloads        | 1627 |
 | # stars            | 1 |
 
 ## Links

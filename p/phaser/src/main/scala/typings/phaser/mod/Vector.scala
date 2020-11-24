@@ -3,7 +3,7 @@ package typings.phaser.mod
 import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Matter.Vector` module contains methods for creating and manipulating vectors.
@@ -18,11 +18,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Vector ()
   extends typings.phaser.MatterJS.Vector
-
 /* static members */
 @JSImport("matter", "Vector")
 @js.native
 object Vector extends js.Object {
+  
   /**
     * Adds the two vectors.
     * @method add
@@ -37,6 +37,7 @@ object Vector extends js.Object {
     vectorB: typings.phaser.MatterJS.Vector,
     output: typings.phaser.MatterJS.Vector
   ): typings.phaser.MatterJS.Vector = js.native
+  
   /**
     * Returns the angle in radians between the two vectors relative to the x-axis.
     * @method angle
@@ -45,6 +46,7 @@ object Vector extends js.Object {
     * @return {number} The angle in radians
     */
   def angle(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): Double = js.native
+  
   /**
     * Returns a new vector with `x` and `y` copied from the given `vector`.
     * @method clone
@@ -52,6 +54,7 @@ object Vector extends js.Object {
     * @return {vector} A new cloned vector
     */
   def clone(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
+  
   /**
     * Creates a new vector.
     * @method create
@@ -63,6 +66,7 @@ object Vector extends js.Object {
   def create(x: js.UndefOr[scala.Nothing], y: Double): typings.phaser.MatterJS.Vector = js.native
   def create(x: Double): typings.phaser.MatterJS.Vector = js.native
   def create(x: Double, y: Double): typings.phaser.MatterJS.Vector = js.native
+  
   /**
     * Returns the cross-product of two vectors.
     * @method cross
@@ -71,6 +75,7 @@ object Vector extends js.Object {
     * @return {number} The cross product of the two vectors
     */
   def cross(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): Double = js.native
+  
   /**
     * Returns the cross-product of three vectors.
     * @method cross3
@@ -84,6 +89,7 @@ object Vector extends js.Object {
     vectorB: typings.phaser.MatterJS.Vector,
     vectorC: typings.phaser.MatterJS.Vector
   ): Double = js.native
+  
   /**
     * Divides a vector and a scalar.
     * @method div
@@ -92,6 +98,7 @@ object Vector extends js.Object {
     * @return {vector} A new vector divided by scalar
     */
   def div(vector: typings.phaser.MatterJS.Vector, scalar: Double): typings.phaser.MatterJS.Vector = js.native
+  
   /**
     * Returns the dot-product of two vectors.
     * @method dot
@@ -100,6 +107,7 @@ object Vector extends js.Object {
     * @return {number} The dot product of the two vectors
     */
   def dot(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): Number = js.native
+  
   /**
     * Returns the magnitude (length) of a vector.
     * @method magnitude
@@ -107,6 +115,7 @@ object Vector extends js.Object {
     * @return {number} The magnitude of the vector
     */
   def magnitude(vector: typings.phaser.MatterJS.Vector): Double = js.native
+  
   /**
     * Returns the magnitude (length) of a vector (therefore saving a `sqrt` operation).
     * @method magnitudeSquared
@@ -114,6 +123,7 @@ object Vector extends js.Object {
     * @return {number} The squared magnitude of the vector
     */
   def magnitudeSquared(vector: typings.phaser.MatterJS.Vector): Double = js.native
+  
   /**
     * Multiplies a vector and a scalar.
     * @method mult
@@ -122,6 +132,7 @@ object Vector extends js.Object {
     * @return {vector} A new vector multiplied by scalar
     */
   def mult(vector: typings.phaser.MatterJS.Vector, scalar: Double): typings.phaser.MatterJS.Vector = js.native
+  
   /**
     * Negates both components of a vector such that it points in the opposite direction.
     * @method neg
@@ -129,6 +140,7 @@ object Vector extends js.Object {
     * @return {vector} The negated vector
     */
   def neg(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
+  
   /**
     * Normalises a vector (such that its magnitude is `1`).
     * @method normalise
@@ -136,6 +148,7 @@ object Vector extends js.Object {
     * @return {vector} A new vector normalised
     */
   def normalise(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
+  
   /**
     * Returns the perpendicular vector. Set `negate` to true for the perpendicular in the opposite direction.
     * @method perp
@@ -145,6 +158,7 @@ object Vector extends js.Object {
     */
   def perp(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
   def perp(vector: typings.phaser.MatterJS.Vector, negate: Boolean): typings.phaser.MatterJS.Vector = js.native
+  
   /**
     * Rotates the vector about (0, 0) by specified angle.
     * @method rotate
@@ -153,6 +167,7 @@ object Vector extends js.Object {
     * @return {vector} A new vector rotated about (0, 0)
     */
   def rotate(vector: typings.phaser.MatterJS.Vector, angle: Double): typings.phaser.MatterJS.Vector = js.native
+  
   /**
     * Rotates the vector about a specified point by specified angle.
     * @method rotateAbout
@@ -169,6 +184,7 @@ object Vector extends js.Object {
     point: typings.phaser.MatterJS.Vector,
     output: typings.phaser.MatterJS.Vector
   ): typings.phaser.MatterJS.Vector = js.native
+  
   /**
     * Subtracts the two vectors.
     * @method sub
@@ -184,4 +200,3 @@ object Vector extends js.Object {
     optional: typings.phaser.MatterJS.Vector
   ): typings.phaser.MatterJS.Vector = js.native
 }
-

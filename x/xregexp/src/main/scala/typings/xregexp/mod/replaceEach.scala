@@ -2,11 +2,12 @@ package typings.xregexp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xregexp", "replaceEach")
 @js.native
 object replaceEach extends js.Object {
+  
   /**
     * Performs batch processing of string replacements. Used like `XRegExp.replace`, but accepts an
     * array of replacement details. Later replacements operate on the output of earlier replacements.
@@ -31,4 +32,3 @@ object replaceEach extends js.Object {
     */
   def apply(str: String, replacements: js.Array[ReplacementDetail]): String = js.native
 }
-

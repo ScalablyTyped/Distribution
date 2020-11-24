@@ -3,7 +3,7 @@ package typings.fridaGum.global
 import typings.fridaGum.UnixStreamOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output stream backed by a file descriptor.
@@ -23,4 +23,3 @@ class UnixOutputStream protected ()
   def this(fd: Double) = this()
   def this(fd: Double, options: UnixStreamOptions) = this()
 }
-

@@ -3,7 +3,7 @@ package typings.makerJs.global.MakerJs.models
 import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.models.ConnectTheDots")
 @js.native
@@ -67,4 +67,3 @@ class ConnectTheDots protected ()
     */
   def this(isClosed: Boolean, numericList: String) = this()
 }
-

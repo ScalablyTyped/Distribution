@@ -4,11 +4,12 @@ import typings.rxjs.typesMod.MonoTypeOperatorFunction
 import typings.rxjs.typesMod.PartialObserver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/tap", JSImport.Namespace)
 @js.native
 object tapMod extends js.Object {
+  
   def tap[T](): MonoTypeOperatorFunction[T] = js.native
   def tap[T](next: js.UndefOr[scala.Nothing], error: js.UndefOr[scala.Nothing], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
   def tap[T](next: js.UndefOr[scala.Nothing], error: js.Function1[/* error */ /* e */ js.Any, Unit]): MonoTypeOperatorFunction[T] = js.native
@@ -37,4 +38,3 @@ object tapMod extends js.Object {
   def tap[T](next: Null, error: Null, complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
   def tap[T](observer: PartialObserver[T]): MonoTypeOperatorFunction[T] = js.native
 }
-

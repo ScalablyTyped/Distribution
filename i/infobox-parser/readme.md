@@ -10,9 +10,9 @@ Parse Wikipedia Infobox Source
 | ------------------ | :-------------: |
 | Full name          | infobox-parser |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 104515 |
+| # downloads        | 196304 |
 | # stars            | 0 |
 
 ## Links

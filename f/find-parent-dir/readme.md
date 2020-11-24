@@ -11,8 +11,8 @@ Finds the first parent directory that contains a given file or directory.
 | Full name          | find-parent-dir |
 | Keywords           | find, parent, dir, root, resolve, walk |
 | # releases         | 0 |
-| # dependents       | 114 |
-| # downloads        | 49923419 |
+| # dependents       | 119 |
+| # downloads        | 46639570 |
 | # stars            | 4 |
 
 ## Links

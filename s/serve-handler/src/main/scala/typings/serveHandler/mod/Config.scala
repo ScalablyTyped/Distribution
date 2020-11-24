@@ -2,10 +2,11 @@ package typings.serveHandler.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Config extends js.Object {
+  
   /**
     * #### Have the `.html` extension stripped from paths.
     *
@@ -20,6 +21,7 @@ trait Config extends js.Object {
     * using `minimatch`).
     */
   var cleanUrls: js.UndefOr[Boolean | js.Array[String]] = js.native
+  
   /**
     * ### Disable directory listing or restrict it to certain paths.
     *
@@ -32,6 +34,7 @@ trait Config extends js.Object {
     * **NOTE:** The paths can only contain globs that are matched using `minimatch`.
     */
   var directoryListing: js.UndefOr[Boolean | js.Array[String]] = js.native
+  
   /**
     * #### Calculate a strong `ETag` response header, instead of `Last-Modified`.
     *
@@ -43,6 +46,7 @@ trait Config extends js.Object {
     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Last-Modified
     */
   var etag: js.UndefOr[Boolean] = js.native
+  
   /**
     * #### Set custom headers for specific paths.
     *
@@ -56,6 +60,7 @@ trait Config extends js.Object {
     * **NOTE:** The paths can only contain globs that are matched using `minimatch`.
     */
   var headers: js.UndefOr[js.Array[Header]] = js.native
+  
   /**
     * #### Set a sub directory to be served.
     *
@@ -67,6 +72,7 @@ trait Config extends js.Object {
     * **NOTE:** The path cannot contain globs or regular expressions.
     */
   var public: js.UndefOr[String] = js.native
+  
   /**
     * #### Forward paths to different paths or external URLs.
     *
@@ -79,6 +85,7 @@ trait Config extends js.Object {
     * regular expressions (match using `path-to-regexp`).
     */
   var redirects: js.UndefOr[js.Array[Redirect]] = js.native
+  
   /**
     * #### If a directory only contains one file, render it.
     *
@@ -91,6 +98,7 @@ trait Config extends js.Object {
     * file.
     */
   var renderSingle: js.UndefOr[Boolean] = js.native
+  
   /**
     * #### Rewrite paths to different paths.
     *
@@ -102,6 +110,7 @@ trait Config extends js.Object {
     * regular expressions (match using `path-to-regexp`).
     */
   var rewrites: js.UndefOr[js.Array[Rewrite]] = js.native
+  
   /**
     * #### Resolve symlinks instead of rendering a 404 error.
     *
@@ -113,6 +122,7 @@ trait Config extends js.Object {
     * their targets.
     */
   var symlinks: js.UndefOr[Boolean] = js.native
+  
   /**
     * #### Remove or add trailing slashes to all paths.
     *
@@ -122,6 +132,7 @@ trait Config extends js.Object {
     * URLs.
     */
   var trailingSlash: js.UndefOr[Boolean] = js.native
+  
   /**
     * #### Exclude paths from the directory listing.
     *
@@ -135,81 +146,111 @@ trait Config extends js.Object {
     */
   var unlisted: js.UndefOr[js.Array[String]] = js.native
 }
-
 object Config {
+  
   @scala.inline
   def apply(): Config = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Config]
   }
+  
   @scala.inline
   implicit class ConfigOps[Self <: Config] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCleanUrlsVarargs(value: String*): Self = this.set("cleanUrls", js.Array(value :_*))
+    
     @scala.inline
     def setCleanUrls(value: Boolean | js.Array[String]): Self = this.set("cleanUrls", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCleanUrls: Self = this.set("cleanUrls", js.undefined)
+    
     @scala.inline
     def setDirectoryListingVarargs(value: String*): Self = this.set("directoryListing", js.Array(value :_*))
+    
     @scala.inline
     def setDirectoryListing(value: Boolean | js.Array[String]): Self = this.set("directoryListing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDirectoryListing: Self = this.set("directoryListing", js.undefined)
+    
     @scala.inline
     def setEtag(value: Boolean): Self = this.set("etag", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEtag: Self = this.set("etag", js.undefined)
+    
     @scala.inline
     def setHeadersVarargs(value: Header*): Self = this.set("headers", js.Array(value :_*))
+    
     @scala.inline
     def setHeaders(value: js.Array[Header]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeaders: Self = this.set("headers", js.undefined)
+    
     @scala.inline
     def setPublic(value: String): Self = this.set("public", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePublic: Self = this.set("public", js.undefined)
+    
     @scala.inline
     def setRedirectsVarargs(value: Redirect*): Self = this.set("redirects", js.Array(value :_*))
+    
     @scala.inline
     def setRedirects(value: js.Array[Redirect]): Self = this.set("redirects", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRedirects: Self = this.set("redirects", js.undefined)
+    
     @scala.inline
     def setRenderSingle(value: Boolean): Self = this.set("renderSingle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRenderSingle: Self = this.set("renderSingle", js.undefined)
+    
     @scala.inline
     def setRewritesVarargs(value: Rewrite*): Self = this.set("rewrites", js.Array(value :_*))
+    
     @scala.inline
     def setRewrites(value: js.Array[Rewrite]): Self = this.set("rewrites", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRewrites: Self = this.set("rewrites", js.undefined)
+    
     @scala.inline
     def setSymlinks(value: Boolean): Self = this.set("symlinks", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSymlinks: Self = this.set("symlinks", js.undefined)
+    
     @scala.inline
     def setTrailingSlash(value: Boolean): Self = this.set("trailingSlash", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTrailingSlash: Self = this.set("trailingSlash", js.undefined)
+    
     @scala.inline
     def setUnlistedVarargs(value: String*): Self = this.set("unlisted", js.Array(value :_*))
+    
     @scala.inline
     def setUnlisted(value: js.Array[String]): Self = this.set("unlisted", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUnlisted: Self = this.set("unlisted", js.undefined)
   }
-  
 }
-

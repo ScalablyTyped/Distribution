@@ -3,11 +3,12 @@ package typings.fridaGum.global
 import typings.fridaGum.CpuContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Thread")
 @js.native
 object Thread extends js.Object {
+  
   /**
     * Generates a backtrace for the given thread's `context`.
     *
@@ -27,6 +28,7 @@ object Thread extends js.Object {
   def backtrace(context: js.UndefOr[scala.Nothing], backtracer: typings.fridaGum.Backtracer): js.Array[typings.fridaGum.NativePointer] = js.native
   def backtrace(context: CpuContext): js.Array[typings.fridaGum.NativePointer] = js.native
   def backtrace(context: CpuContext, backtracer: typings.fridaGum.Backtracer): js.Array[typings.fridaGum.NativePointer] = js.native
+  
   /**
     * Suspends execution of the current thread for `delay` seconds.
     *
@@ -36,4 +38,3 @@ object Thread extends js.Object {
     */
   def sleep(delay: Double): Unit = js.native
 }
-

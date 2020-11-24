@@ -45,42 +45,11 @@ import typings.oracleOraclejet.oracleOraclejetStrings.visualEffectsChanged
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojRatingGauge_ extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
-  var changed: Boolean = js.native
-  var changedState: Source = js.native
-  var hoverState: Source = js.native
-  var max: Double = js.native
-  var min: Double = js.native
-  var onChangedChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
-  var onChangedStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], _]) | Null = js.native
-  var onHoverStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], _]) | Null = js.native
-  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[vertical | horizontal], _]) | Null = js.native
-  var onPreserveAspectRatioChanged: (js.Function1[/* event */ JetElementCustomEvent[none | meet], _]) | Null = js.native
-  var onReadonlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
-  var onSelectedStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], _]) | Null = js.native
-  var onStepChanged: (js.Function1[/* event */ JetElementCustomEvent[`0.5` | `1`], _]) | Null = js.native
-  var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`11`], _]) | Null = js.native
-  var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onUnselectedStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], _]) | Null = js.native
-  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onVisualEffectsChanged: (js.Function1[/* event */ JetElementCustomEvent[none | auto], _]) | Null = js.native
-  var orientation: vertical | horizontal = js.native
-  var preserveAspectRatio: none | meet = js.native
-  var readonly: Boolean = js.native
-  var selectedState: Source = js.native
-  var step: `0.5` | `1` = js.native
-  var thresholds: js.Array[Threshold] = js.native
-  var tooltip: `11` = js.native
-  val transientValue: Double | Null = js.native
-  var unselectedState: Source = js.native
-  var value: Double | Null = js.native
-  var visualEffects: none | auto = js.native
+  
   def addEventListener(
     `type`: orientationChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[vertical | horizontal], _]
@@ -249,6 +218,11 @@ trait ojRatingGauge_ extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double | Null], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var changed: Boolean = js.native
+  
+  var changedState: Source = js.native
+  
   @JSName("getProperty")
   def getProperty_changed(property: changed): Boolean = js.native
   @JSName("getProperty")
@@ -281,7 +255,55 @@ trait ojRatingGauge_ extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   def getProperty_value(property: value): Double | Null = js.native
   @JSName("getProperty")
   def getProperty_visualEffects(property: visualEffects): none | auto = js.native
+  
+  var hoverState: Source = js.native
+  
+  var max: Double = js.native
+  
+  var min: Double = js.native
+  
+  var onChangedChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+  
+  var onChangedStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], _]) | Null = js.native
+  
+  var onHoverStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], _]) | Null = js.native
+  
+  var onMaxChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onMinChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[vertical | horizontal], _]) | Null = js.native
+  
+  var onPreserveAspectRatioChanged: (js.Function1[/* event */ JetElementCustomEvent[none | meet], _]) | Null = js.native
+  
+  var onReadonlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+  
+  var onSelectedStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], _]) | Null = js.native
+  
+  var onStepChanged: (js.Function1[/* event */ JetElementCustomEvent[`0.5` | `1`], _]) | Null = js.native
+  
+  var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], _]) | Null = js.native
+  
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`11`], _]) | Null = js.native
+  
+  var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onUnselectedStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], _]) | Null = js.native
+  
+  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onVisualEffectsChanged: (js.Function1[/* event */ JetElementCustomEvent[none | auto], _]) | Null = js.native
+  
+  var orientation: vertical | horizontal = js.native
+  
+  var preserveAspectRatio: none | meet = js.native
+  
+  var readonly: Boolean = js.native
+  
+  var selectedState: Source = js.native
+  
   def setProperties(properties: ojRatingGaugeSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: orientation, value: horizontal): Unit = js.native
   def setProperty(property: orientation, value: vertical): Unit = js.native
   def setProperty(property: preserveAspectRatio, value: meet): Unit = js.native
@@ -318,5 +340,18 @@ trait ojRatingGauge_ extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   def setProperty_value(property: value): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value, value: Double): Unit = js.native
+  
+  var step: `0.5` | `1` = js.native
+  
+  var thresholds: js.Array[Threshold] = js.native
+  
+  var tooltip: `11` = js.native
+  
+  val transientValue: Double | Null = js.native
+  
+  var unselectedState: Source = js.native
+  
+  var value: Double | Null = js.native
+  
+  var visualEffects: none | auto = js.native
 }
-

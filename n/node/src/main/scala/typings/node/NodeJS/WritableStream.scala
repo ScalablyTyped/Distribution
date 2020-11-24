@@ -6,11 +6,11 @@ import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WritableStream extends EventEmitter {
-  var writable: Boolean = js.native
+  
   def end(): Unit = js.native
   def end(cb: js.Function0[Unit]): Unit = js.native
   def end(data: String): Unit = js.native
@@ -20,6 +20,9 @@ trait WritableStream extends EventEmitter {
   def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(str: String, encoding: BufferEncoding): Unit = js.native
   def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
+  
+  var writable: Boolean = js.native
+  
   def write(buffer: String): Boolean = js.native
   def write(buffer: String, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   def write(buffer: Uint8Array): Boolean = js.native
@@ -32,4 +35,3 @@ trait WritableStream extends EventEmitter {
   def write(str: String, encoding: BufferEncoding): Boolean = js.native
   def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
 }
-

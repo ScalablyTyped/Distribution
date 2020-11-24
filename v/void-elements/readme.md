@@ -11,8 +11,8 @@ Array of "void elements" defined by the HTML specification.
 | Full name          | void-elements |
 | Keywords           | html, void, elements |
 | # releases         | 0 |
-| # dependents       | 67 |
-| # downloads        | 100850541 |
+| # dependents       | 69 |
+| # downloads        | 139130369 |
 | # stars            | 3 |
 
 ## Links

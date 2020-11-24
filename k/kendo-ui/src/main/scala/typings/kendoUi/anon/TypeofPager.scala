@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.ui.PagerOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofPager
   extends Instantiable1[/* element */ Element, Pager]
      with Instantiable2[/* element */ Element, /* options */ PagerOptions, Pager] {
-  var fn: Pager = js.native
+  
   def extend(proto: js.Object): Pager = js.native
+  
+  var fn: Pager = js.native
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.ViewManagement
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ApplicationViewState extends js.Object
-
 /** Specifies the set of app view state changes that can be handled. */
 @JSGlobal("Windows.UI.ViewManagement.ApplicationViewState")
 @js.native
 object ApplicationViewState extends js.Object {
+  
   /** The current app's view has been reduced to a partial screen view as the result of another app snapping. */
   @js.native
   sealed trait filled extends ApplicationViewState
@@ -26,6 +26,4 @@ object ApplicationViewState extends js.Object {
   /** The current app's view has been snapped. */
   @js.native
   sealed trait snapped extends ApplicationViewState
-  
 }
-

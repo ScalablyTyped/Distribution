@@ -9,10 +9,11 @@ import typings.hapi.hapiStrings.stop
 import typings.podium.mod.Podium
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServerEvents extends Podium {
+  
   /**
     * Subscribe to an event where:
     * @param criteria - the subscription criteria which must be one of:
@@ -53,6 +54,7 @@ trait ServerEvents extends Podium {
   def on_stop(criteria: stop, listener: StopEventHandler): Unit = js.native
   @JSName("on")
   def on_stop(criteria: ServerEventCriteria[stop], listener: StopEventHandler): Unit = js.native
+  
   /**
     * Same as calling server.events.on() with the count option set to 1.
     * @param criteria - the subscription criteria which must be one of:
@@ -99,4 +101,3 @@ trait ServerEvents extends Podium {
   @JSName("once")
   def once_stop(criteria: ServerEventCriteria[stop], listener: StopEventHandler): Unit = js.native
 }
-

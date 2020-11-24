@@ -10,9 +10,9 @@ Joi validation for your Mongoose models without the hassle of maintaining two sc
 | ------------------ | :-------------: |
 | Full name          | joigoose |
 | Keywords           | joi, mongoose, validation, schema, model, hapi |
-| # releases         | 16 |
+| # releases         | 17 |
 | # dependents       | 12 |
-| # downloads        | 84784 |
+| # downloads        | 186596 |
 | # stars            | 1 |
 
 ## Links

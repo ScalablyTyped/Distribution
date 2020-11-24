@@ -2,7 +2,7 @@ package typings.videoJs.mod.videojs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A display that indicates an error has occurred. This means that the video
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ErrorDisplay extends ModalDialog
-

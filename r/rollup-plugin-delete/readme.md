@@ -9,10 +9,10 @@ Delete files and folders using Rollup
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-delete |
-| Keywords           | rollup, rollup-plugin, delete, clear, clean, remove |
-| # releases         | 10 |
-| # dependents       | 9 |
-| # downloads        | 77842 |
+| Keywords           | rollup, rollup-plugin, delete, clear, clean, remove, file, folder, directory |
+| # releases         | 8 |
+| # dependents       | 13 |
+| # downloads        | 221510 |
 | # stars            | 0 |
 
 ## Links

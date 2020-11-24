@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Contentcategories")
 @js.native
 class ResourceContentcategories protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.contentCategories.delete
     * @desc Deletes an existing content category.
@@ -42,6 +44,7 @@ class ResourceContentcategories protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * dfareporting.contentCategories.get
     * @desc Gets one content category by ID.
@@ -71,6 +74,7 @@ class ResourceContentcategories protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContentCategory]
   ): Unit = js.native
+  
   /**
     * dfareporting.contentCategories.insert
     * @desc Inserts a new content category.
@@ -103,6 +107,7 @@ class ResourceContentcategories protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContentCategory]
   ): Unit = js.native
+  
   /**
     * dfareporting.contentCategories.list
     * @desc Retrieves a list of content categories, possibly filtered. This
@@ -141,6 +146,7 @@ class ResourceContentcategories protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContentCategoriesListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.contentCategories.patch
     * @desc Updates an existing content category. This method supports patch
@@ -175,6 +181,7 @@ class ResourceContentcategories protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContentCategory]
   ): Unit = js.native
+  
   /**
     * dfareporting.contentCategories.update
     * @desc Updates an existing content category.
@@ -208,4 +215,3 @@ class ResourceContentcategories protected () extends js.Object {
     callback: BodyResponseCallback[SchemaContentCategory]
   ): Unit = js.native
 }
-

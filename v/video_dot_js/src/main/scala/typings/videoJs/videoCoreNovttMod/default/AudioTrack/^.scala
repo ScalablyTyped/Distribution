@@ -7,7 +7,7 @@ import typings.videoJs.mod.videojs.AudioTrackOptions
 import typings.videoJs.mod.videojs.Track
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "AudioTrack")
 @js.native
@@ -36,7 +36,6 @@ import scala.scalajs.js.annotation._
 class ^ () extends Track {
   def this(options: AudioTrackOptions) = this()
 }
-
 @JSImport("video.js/dist/alt/video.core.novtt", "AudioTrack")
 @js.native
 object ^
@@ -65,4 +64,3 @@ object ^
   */
 Instantiable0[Track]) with (Instantiable1[/* options */ AudioTrackOptions, Track])
     ]
-

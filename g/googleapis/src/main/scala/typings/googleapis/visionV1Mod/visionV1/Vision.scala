@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cloud Vision API
@@ -29,11 +29,16 @@ import scala.scalajs.js.annotation._
 class Vision protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var context: APIRequestContext = js.native
+  
   var files: ResourceFiles = js.native
+  
   var images: ResourceImages = js.native
+  
   var locations: ResourceLocations = js.native
+  
   var operations: ResourceOperations = js.native
+  
   var projects: ResourceProjects = js.native
 }
-

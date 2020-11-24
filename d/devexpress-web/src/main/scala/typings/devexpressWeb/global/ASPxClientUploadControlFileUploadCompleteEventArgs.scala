@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientUploadControl.FileUploadComplete event.
@@ -20,4 +20,3 @@ class ASPxClientUploadControlFileUploadCompleteEventArgs protected ()
     */
   def this(inputIndex: Double, isValid: Boolean, errorText: String, callbackData: String) = this()
 }
-

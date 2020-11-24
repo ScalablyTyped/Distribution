@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import typings.activexLibreoffice.com_.sun.star.util.XProtectable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a model component which consists of some settings and one or more spreadsheets. */
 @js.native
@@ -30,19 +30,25 @@ trait SpreadsheetDocument
      with XDrawPagesSupplier
      with XStyleFamiliesSupplier
      with XNumberFormatsSupplier {
+  
   /** contains the collection of area links in the document. */
   var AreaLinks: XAreaLinks = js.native
+  
   /** contains the collection of column label ranges in the document. */
   var ColumnLabelRanges: XLabelRanges = js.native
+  
   /** contains the collection of DDE links in the document. */
   var DDELinks: XNameAccess = js.native
+  
   /** contains the collection of database ranges in the document. */
   var DatabaseRanges: XDatabaseRanges = js.native
+  
   /** contains the collection of named ranges in the document. */
   var NamedRanges: XNamedRanges = js.native
+  
   /** contains the collection of row label ranges in the document. */
   var RowLabelRanges: XLabelRanges = js.native
+  
   /** contains the collection of sheet links in the document. */
   var SheetLinks: XNameAccess = js.native
 }
-

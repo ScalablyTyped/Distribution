@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@tensorflow/tfjs-backend-webgl" : "2.0.1"
+      "@tensorflow/tfjs-backend-webgl" : "2.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@tensorflow/tfjs-backend-webgl" : "2.0.1"
+      "@tensorflow/tfjs-backend-webgl" : "2.7.0"
     }
   ],
   "compile-devDependencies" : [

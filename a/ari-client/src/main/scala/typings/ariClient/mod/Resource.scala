@@ -2,10 +2,11 @@ package typings.ariClient.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Resource extends js.Object {
+  
   /**
     * Notification that trying to move a channel to another Stasis application failed.
     */
@@ -296,6 +297,7 @@ trait Resource extends js.Object {
     event: TextMessageReceivedEventType,
     callback: js.Function2[/* event */ TextMessageReceived, /* endpoint */ Endpoint, Unit]
   ): Unit = js.native
+  
   /**
     * Notification that trying to move a channel to another Stasis application failed.
     */
@@ -586,6 +588,7 @@ trait Resource extends js.Object {
     event: TextMessageReceivedEventType,
     callback: js.Function2[/* event */ TextMessageReceived, /* endpoint */ Endpoint, Unit]
   ): Unit = js.native
+  
   /**
     * Notification that trying to move a channel to another Stasis application failed.
     */
@@ -876,12 +879,14 @@ trait Resource extends js.Object {
     event: TextMessageReceivedEventType,
     callback: js.Function2[/* event */ TextMessageReceived, /* endpoint */ Endpoint, Unit]
   ): Unit = js.native
+  
   /**
     *  Removes all listeners, or those of the specified event type.
     *  @param [event] - The event type.
     */
   def removeAllListeners(): Unit = js.native
   def removeAllListeners(event: AnyEventType): Unit = js.native
+  
   /**
     *  Removes the event listener for the specified event type.
     *  @param event - The event type.
@@ -889,4 +894,3 @@ trait Resource extends js.Object {
     */
   def removeListener(event: AnyEventType, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
 }
-

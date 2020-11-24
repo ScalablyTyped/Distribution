@@ -5,10 +5,11 @@ import typings.openui5.sap.ui.base.Object
 import typings.openui5.sap.ui.core.routing.HashChanger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Opa5 extends Object {
+  
   /**
     * Create a page object configured as arrangement, action and assertion to the Opa.config.Use it to
     * structure your arrangement, action and assertion based on parts of the screen to avoid name clashes
@@ -21,11 +22,13 @@ trait Opa5 extends Object {
     * defined above  } }</code></pre>
     */
   def createPageObjects(mPageObjects: js.Any): js.Any = js.native
+  
   /**
     * Waits until all waitFor calls are doneSee {@link sap.ui.test.Opa#.emptyQueue} for the description
     * @returns If the waiting was successful, the promise will be resolved. If not it will be rejected
     */
   def emptyQueue(): js.Any = js.native
+  
   /**
     * Extends and overwrites default values of the {@link sap.ui.test.Opa#.config}.Most frequent
     * usecase:<pre>    <code>        // Every waitFor will append this namespace in front of your viewName
@@ -46,6 +49,7 @@ trait Opa5 extends Object {
     * @param options The values to be added to the existing config
     */
   def extendConfig(options: js.Any): Unit = js.native
+  
   /**
     * Gives access to a singleton object you can save values in.See {@link sap.ui.test.Opa#.getContext}
     * for the description
@@ -53,33 +57,39 @@ trait Opa5 extends Object {
     * @returns the context object
     */
   def getContext(): js.Any = js.native
+  
   /**
     * Returns HashChanger object of the IFrame. If the IFrame is not loaded it will return null.
     * @returns The HashChanger instance
     */
   def getHashChanger(): HashChanger = js.native
+  
   /**
     * Returns the jQuery object of the IFrame. If the IFrame is not loaded it will return null.
     * @returns The jQuery object
     */
   def getJQuery(): JQueryStatic = js.native
+  
   /**
     * Returns the Opa plugin used for retrieving controls. If an IFrame is used it will return the
     * iFrame's plugin.
     * @returns The plugin instance
     */
   def getPlugin(): OpaPlugin = js.native
+  
   /**
     * Returns QUnit utils object of the IFrame. If the IFrame is not loaded it will return null.
     * @returns The QUnit utils
     */
   def getUtils(): js.Any = js.native
+  
   /**
     * Returns the window object of the IFrame or the current window. If the IFrame is not loaded it will
     * return null.
     * @returns The window of the IFrame
     */
   def getWindow(): js.Any = js.native
+  
   /**
     * Starts an app in an IFrame. Only works reliably if running on the same server.
     * @param sSource The source of the IFrame
@@ -88,22 +98,26 @@ trait Opa5 extends Object {
     */
   def iStartMyAppInAFrame(sSource: String): js.Any = js.native
   def iStartMyAppInAFrame(sSource: String, iTimeout: Double): js.Any = js.native
+  
   /**
     * Starts a UIComponent.
     * @param oOptions An Object that contains the configuration for starting up a UIComponent.
     * @returns A promise that gets resolved on success.
     */
   def iStartMyUIComponent(oOptions: js.Any): js.Any = js.native
+  
   /**
     * Removes the IFrame from the DOM and removes all the references to its objects
     * @returns A promise that gets resolved on success
     */
   def iTeardownMyAppFrame(): js.Any = js.native
+  
   /**
     * Destroys the UIComponent and removes the div from the dom like all the references on its objects
     * @returns a promise that gets resolved on success.
     */
   def iTeardownMyUIComponent(): js.Any = js.native
+  
   /**
     * Resets Opa.config to its default values.See {@link sap.ui.test.Opa5#waitFor} for the
     * descriptionDefault values for OPA5 are:<ul>    <li>viewNamespace: empty string</li>    <li>arrangements:
@@ -113,6 +127,7 @@ trait Opa5 extends Object {
     * @since 1.25
     */
   def resetConfig(): Unit = js.native
+  
   /**
     * Clears the queue and stops running tests so that new tests can be run.This means all waitFor
     * statements registered by {@link sap.ui.test.Opa5#waitFor} will not be invoked anymore andthe promise
@@ -120,6 +135,7 @@ trait Opa5 extends Object {
     * in {@link sap.ui.test.Opa5#waitFor}the success function of this waitFor will not be called.
     */
   def stopQueue(): Unit = js.native
+  
   /**
     * Takes the same parameters as {@link sap.ui.test.Opa#waitFor}. Also allows you to specify additional
     * parameters:
@@ -128,4 +144,3 @@ trait Opa5 extends Object {
     */
   def waitFor(oOptions: js.Any): js.Any = js.native
 }
-

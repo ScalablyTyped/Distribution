@@ -5,7 +5,7 @@ import typings.heremaps.H.geo.MultiPolygon
 import typings.heremaps.H.map.Polygon.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents a polygon in geo-space. It is defined by a strip containing the vertices of a geo shape object (lat, lng, alt values) and a pen to use when rendering the polyline.
@@ -29,4 +29,3 @@ class Polygon protected ()
   def this(geometry: MultiPolygon, opt_options: Options) = this()
   def this(geometry: typings.heremaps.H.geo.Polygon, opt_options: Options) = this()
 }
-

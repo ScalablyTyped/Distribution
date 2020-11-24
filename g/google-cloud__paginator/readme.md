@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__paginator
 
-Typings are for version 3.0.3
+Typings are for version 3.0.5
 
 ## Library description:
 A result paging utility used by Google node.js modules
@@ -10,9 +10,9 @@ A result paging utility used by Google node.js modules
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/paginator |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 15 |
-| # downloads        | 38750235 |
+| # releases         | 15 |
+| # dependents       | 14 |
+| # downloads        | 78008478 |
 | # stars            | 0 |
 
 ## Links

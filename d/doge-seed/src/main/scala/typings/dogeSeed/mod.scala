@@ -7,11 +7,12 @@ import typings.dogeSeed.dogeSeedNumbers.`224`
 import typings.dogeSeed.dogeSeedNumbers.`256`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("doge-seed", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * Generates a cryptographically secure mnemonic seed phrase with added dankness.
     * The first four words will be a randomly generated Doge-like sentence.
@@ -29,4 +30,3 @@ object mod extends js.Object {
   def apply(bits: `224`): String = js.native
   def apply(bits: `256`): String = js.native
 }
-

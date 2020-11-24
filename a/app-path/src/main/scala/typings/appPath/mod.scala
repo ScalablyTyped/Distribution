@@ -3,14 +3,12 @@ package typings.appPath
 import typings.appPath.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("app-path", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  // TODO: remove this in the next major version
-  @JSName("default")
-  var default_Original: Call = js.native
+  
   /**
   	Get the path to an app on macOS.
   	@param appName - An app name or bundle identifier.
@@ -27,6 +25,7 @@ object mod extends js.Object {
   	```
   	*/
   def apply(appName: String): js.Promise[String] = js.native
+  
   /**
   	Get the path to an app on macOS.
   	@param appName - An app name or bundle identifier.
@@ -44,6 +43,10 @@ object mod extends js.Object {
   	*/
   // TODO: remove this in the next major version
   def default(appName: String): js.Promise[String] = js.native
+  // TODO: remove this in the next major version
+  @JSName("default")
+  var default_Original: Call = js.native
+  
   /**
   	Synchronously get the path to an app on macOS.
   	@param appName - An app name or bundle identifier.
@@ -59,4 +62,3 @@ object mod extends js.Object {
   	*/
   def sync(appName: String): String = js.native
 }
-

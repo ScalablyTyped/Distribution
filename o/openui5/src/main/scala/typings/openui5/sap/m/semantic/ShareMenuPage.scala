@@ -3,25 +3,29 @@ package typings.openui5.sap.m.semantic
 import typings.openui5.sap.m.Button
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ShareMenuPage extends SemanticPage {
+  
   /**
     * Adds some customShareMenuContent to the aggregation <code>customShareMenuContent</code>.
     * @param oCustomShareMenuContent the customShareMenuContent to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addCustomShareMenuContent(oCustomShareMenuContent: Button): ShareMenuPage = js.native
+  
   /**
     * Destroys all the customShareMenuContent in the aggregation <code>customShareMenuContent</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyCustomShareMenuContent(): ShareMenuPage = js.native
+  
   /**
     * Gets content of aggregation <code>customShareMenuContent</code>.Custom share menu buttons
     */
   def getCustomShareMenuContent(): js.Array[Button] = js.native
+  
   /**
     * Checks for the provided <code>sap.m.Button</code> in the aggregation
     * <code>customShareMenuContent</code>.and returns its index if found or -1 otherwise.
@@ -29,6 +33,7 @@ trait ShareMenuPage extends SemanticPage {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfCustomShareMenuContent(oCustomShareMenuContent: Button): Double = js.native
+  
   /**
     * Inserts a customShareMenuContent into the aggregation <code>customShareMenuContent</code>.
     * @param oCustomShareMenuContent the customShareMenuContent to insert; if empty, nothing is inserted
@@ -39,12 +44,14 @@ trait ShareMenuPage extends SemanticPage {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertCustomShareMenuContent(oCustomShareMenuContent: Button, iIndex: Double): ShareMenuPage = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>customShareMenuContent</code>.Additionally, it
     * unregisters them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllCustomShareMenuContent(): js.Array[Button] = js.native
+  
   def removeCustomShareMenuContent(vCustomShareMenuContent: String): Button = js.native
   /**
     * Removes a customShareMenuContent from the aggregation <code>customShareMenuContent</code>.
@@ -54,4 +61,3 @@ trait ShareMenuPage extends SemanticPage {
   def removeCustomShareMenuContent(vCustomShareMenuContent: Double): Button = js.native
   def removeCustomShareMenuContent(vCustomShareMenuContent: Button): Button = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.jsrsasign.jsrsasign.KJUR.crypto
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * static object for elliptic curve names and parameters
@@ -28,4 +28,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.crypto.ECParameterDB")
 @js.native
 object ECParameterDB extends js.Object
-

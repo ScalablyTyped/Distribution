@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-base16-styling" : "0.8.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-base16-styling" : "0.8.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

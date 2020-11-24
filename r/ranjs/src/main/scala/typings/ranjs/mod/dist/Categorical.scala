@@ -2,7 +2,7 @@ package typings.ranjs.mod.dist
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.Categorical")
 @js.native
@@ -12,4 +12,3 @@ class Categorical ()
   def this(weights: js.UndefOr[scala.Nothing], min: Double) = this()
   def this(weights: js.Array[Double], min: Double) = this()
 }
-

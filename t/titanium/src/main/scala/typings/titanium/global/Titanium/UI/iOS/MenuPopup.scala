@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium.UI.iOS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A menu popup provides the ability to create custom tooltip options using the `items` property
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class MenuPopup ()
   extends typings.titanium.Titanium.UI.iOS.MenuPopup
-

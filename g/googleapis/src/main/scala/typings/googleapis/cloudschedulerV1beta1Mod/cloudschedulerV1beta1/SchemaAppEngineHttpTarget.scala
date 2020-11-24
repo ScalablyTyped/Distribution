@@ -3,7 +3,7 @@ package typings.googleapis.cloudschedulerV1beta1Mod.cloudschedulerV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * App Engine target. The job will be pushed to a job handler by means of an
@@ -17,16 +17,19 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaAppEngineHttpTarget extends js.Object {
+  
   /**
     * App Engine Routing setting for the job.
     */
   var appEngineRouting: js.UndefOr[SchemaAppEngineRouting] = js.native
+  
   /**
     * Body.  HTTP request body. A request body is allowed only if the HTTP
     * method is POST or PUT. It will result in invalid argument error to set a
     * body on a job with an incompatible HttpMethod.
     */
   var body: js.UndefOr[String] = js.native
+  
   /**
     * HTTP request headers.  This map contains the header field names and
     * values. Headers can be set when the job is created.  Cloud Scheduler sets
@@ -48,11 +51,13 @@ trait SchemaAppEngineHttpTarget extends js.Object {
     * job-specific information, are also be sent to the job handler.
     */
   var headers: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * The HTTP method to use for the request. PATCH and OPTIONS are not
     * permitted.
     */
   var httpMethod: js.UndefOr[String] = js.native
+  
   /**
     * The relative URI.  The relative URL must begin with &quot;/&quot; and
     * must be a valid HTTP relative URL. It can contain a path, query string
@@ -62,45 +67,57 @@ trait SchemaAppEngineHttpTarget extends js.Object {
     */
   var relativeUri: js.UndefOr[String] = js.native
 }
-
 object SchemaAppEngineHttpTarget {
+  
   @scala.inline
   def apply(): SchemaAppEngineHttpTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAppEngineHttpTarget]
   }
+  
   @scala.inline
   implicit class SchemaAppEngineHttpTargetOps[Self <: SchemaAppEngineHttpTarget] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAppEngineRouting(value: SchemaAppEngineRouting): Self = this.set("appEngineRouting", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAppEngineRouting: Self = this.set("appEngineRouting", js.undefined)
+    
     @scala.inline
     def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBody: Self = this.set("body", js.undefined)
+    
     @scala.inline
     def setHeaders(value: StringDictionary[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeaders: Self = this.set("headers", js.undefined)
+    
     @scala.inline
     def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHttpMethod: Self = this.set("httpMethod", js.undefined)
+    
     @scala.inline
     def setRelativeUri(value: String): Self = this.set("relativeUri", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRelativeUri: Self = this.set("relativeUri", js.undefined)
   }
-  
 }
-

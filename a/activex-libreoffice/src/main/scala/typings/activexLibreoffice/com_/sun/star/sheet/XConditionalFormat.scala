@@ -4,20 +4,22 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait XConditionalFormat extends XIndexAccess {
+  
   /**
     * Creates a new conditional format entry and insert its at the position.
     * @param Type a com.sun.star.sheet.ConditionFormatEntryType specifying the type of the new entry
     * @param Position the position in the conditional format
     */
   def createEntry(Type: Double, Position: Double): Unit = js.native
+  
   def removeByIndex(Index: Double): Unit = js.native
 }
-
 object XConditionalFormat {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -35,22 +37,26 @@ object XConditionalFormat {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), createEntry = js.Any.fromFunction2(createEntry), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex))
     __obj.asInstanceOf[XConditionalFormat]
   }
+  
   @scala.inline
   implicit class XConditionalFormatOps[Self <: XConditionalFormat] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreateEntry(value: (Double, Double) => Unit): Self = this.set("createEntry", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRemoveByIndex(value: Double => Unit): Self = this.set("removeByIndex", js.Any.fromFunction1(value))
   }
-  
 }
-

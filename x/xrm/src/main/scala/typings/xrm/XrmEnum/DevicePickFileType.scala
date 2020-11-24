@@ -5,7 +5,7 @@ import typings.xrm.xrmStrings.image
 import typings.xrm.xrmStrings.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Possible file types for Xrm.Device.pickFile options
@@ -17,13 +17,14 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.image
 */
 trait DevicePickFileType extends js.Object
-
 object DevicePickFileType {
+  
   @scala.inline
   def Audio: audio = "audio".asInstanceOf[audio]
+  
   @scala.inline
   def Image: image = "image".asInstanceOf[image]
+  
   @scala.inline
   def Video: video = "video".asInstanceOf[video]
 }
-

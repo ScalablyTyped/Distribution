@@ -15,17 +15,18 @@ import typings.select2.select2Strings.select2Colonunselect
 import typings.select2.select2Strings.select2Colonunselecting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   trait JQuery[TElement] extends js.Object {
-    @JSName("select2")
-    var select2_Original: Select2Plugin[TElement] = js.native
+    
     @JSName("data")
     def data_select2(key: select2): Select2 = js.native
+    
     @JSName("on")
     def on_select2close(events: select2Colonclose): this.type = js.native
     @JSName("on")
@@ -68,9 +69,12 @@ object global extends js.Object {
       events: select2Colonunselecting,
       handler: JQueryEventHandlerBase[TElement, Event[TElement, IngParams]]
     ): this.type = js.native
+    
     def select2(): JQuery[TElement] = js.native
     // tslint:disable-next-line:no-unnecessary-generics
     def select2[Result, RemoteResult](options: Options[Result, RemoteResult]): JQuery[TElement] = js.native
+    @JSName("select2")
+    var select2_Original: Select2Plugin[TElement] = js.native
     /**
       * Closes the dropdown
       */
@@ -91,8 +95,7 @@ object global extends js.Object {
       */
     @JSName("select2")
     def select2_open(method: open): JQuery[TElement] = js.native
+    
     def trigger(events: Trigger): Unit = js.native
   }
-  
 }
-

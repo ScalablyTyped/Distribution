@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/iam/instanceProfile", "InstanceProfile")
 @js.native
@@ -23,46 +23,47 @@ class InstanceProfile protected () extends CustomResource {
   def this(name: String, args: InstanceProfileArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: InstanceProfileArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN assigned by AWS to the instance profile.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The creation timestamp of the instance profile.
     */
   val createDate: Output_[String] = js.native
+  
   /**
     * The profile's name. If omitted, this provider will assign a random, unique name.
     */
   val name: Output_[String] = js.native
+  
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
   val namePrefix: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * Path in which to create the profile.
     */
   val path: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The role name to include in the profile.
     */
-  val role: Output_[String] = js.native
-  /**
-    * A list of role names to include in the profile.  The current default is 1.  If you see an error message similar to `Cannot exceed quota for InstanceSessionsPerInstanceProfile: 1`, then you must contact AWS support and ask for a limit increase.
-    *
-    * @deprecated Use `role` instead. Only a single role can be passed to an IAM Instance Profile
-    */
-  val roles: Output_[js.Array[String]] = js.native
+  val role: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The [unique ID][1] assigned by AWS.
     */
   val uniqueId: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/iam/instanceProfile", "InstanceProfile")
 @js.native
 object InstanceProfile extends js.Object {
+  
   /**
     * Get an existing InstanceProfile resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -76,10 +77,10 @@ object InstanceProfile extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): InstanceProfile = js.native
   def get(name: String, id: Input[ID], state: InstanceProfileState): InstanceProfile = js.native
   def get(name: String, id: Input[ID], state: InstanceProfileState, opts: CustomResourceOptions): InstanceProfile = js.native
+  
   /**
     * Returns true if the given object is an instance of InstanceProfile.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/instanceProfile.InstanceProfile */ Boolean = js.native
 }
-

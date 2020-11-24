@@ -7,9 +7,73 @@ import typings.stripeV2.stripe.StripeCardDataBrand
 import typings.stripeV2.stripe.StripeCardDataFunding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stripeV2Strings {
+  
+  @scala.inline
+  def `American Express`: `American Express` = ("American Express").asInstanceOf[`American Express`]
+  
+  @scala.inline
+  def `Diners Club`: `Diners Club` = ("Diners Club").asInstanceOf[`Diners Club`]
+  
+  @scala.inline
+  def Discover: Discover = "Discover".asInstanceOf[Discover]
+  
+  @scala.inline
+  def JCB: JCB = "JCB".asInstanceOf[JCB]
+  
+  @scala.inline
+  def MasterCard: MasterCard = "MasterCard".asInstanceOf[MasterCard]
+  
+  @scala.inline
+  def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
+  
+  @scala.inline
+  def Visa: Visa = "Visa".asInstanceOf[Visa]
+  
+  @scala.inline
+  def credit: credit = "credit".asInstanceOf[credit]
+  
+  @scala.inline
+  def debit: debit = "debit".asInstanceOf[debit]
+  
+  @scala.inline
+  def delivery: delivery = "delivery".asInstanceOf[delivery]
+  
+  @scala.inline
+  def email: email = "email".asInstanceOf[email]
+  
+  @scala.inline
+  def `final`: `final` = "final".asInstanceOf[`final`]
+  
+  @scala.inline
+  def name: name = "name".asInstanceOf[name]
+  
+  @scala.inline
+  def pending: pending = "pending".asInstanceOf[pending]
+  
+  @scala.inline
+  def phone: phone = "phone".asInstanceOf[phone]
+  
+  @scala.inline
+  def postalAddress: postalAddress = "postalAddress".asInstanceOf[postalAddress]
+  
+  @scala.inline
+  def prepaid: prepaid = "prepaid".asInstanceOf[prepaid]
+  
+  @scala.inline
+  def servicePickup: servicePickup = "servicePickup".asInstanceOf[servicePickup]
+  
+  @scala.inline
+  def shipping: shipping = "shipping".asInstanceOf[shipping]
+  
+  @scala.inline
+  def storePickup: storePickup = "storePickup".asInstanceOf[storePickup]
+  
+  @scala.inline
+  def unknown_ : unknown_ = "unknown".asInstanceOf[unknown_]
+  
   @js.native
   sealed trait `American Express` extends StripeCardDataBrand
   
@@ -76,48 +140,4 @@ object stripeV2Strings {
   
   @js.native
   sealed trait unknown_ extends StripeCardDataFunding
-  
-  @scala.inline
-  def `American Express`: `American Express` = ("American Express").asInstanceOf[`American Express`]
-  @scala.inline
-  def `Diners Club`: `Diners Club` = ("Diners Club").asInstanceOf[`Diners Club`]
-  @scala.inline
-  def Discover: Discover = "Discover".asInstanceOf[Discover]
-  @scala.inline
-  def JCB: JCB = "JCB".asInstanceOf[JCB]
-  @scala.inline
-  def MasterCard: MasterCard = "MasterCard".asInstanceOf[MasterCard]
-  @scala.inline
-  def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
-  @scala.inline
-  def Visa: Visa = "Visa".asInstanceOf[Visa]
-  @scala.inline
-  def credit: credit = "credit".asInstanceOf[credit]
-  @scala.inline
-  def debit: debit = "debit".asInstanceOf[debit]
-  @scala.inline
-  def delivery: delivery = "delivery".asInstanceOf[delivery]
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
-  @scala.inline
-  def `final`: `final` = "final".asInstanceOf[`final`]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
-  @scala.inline
-  def phone: phone = "phone".asInstanceOf[phone]
-  @scala.inline
-  def postalAddress: postalAddress = "postalAddress".asInstanceOf[postalAddress]
-  @scala.inline
-  def prepaid: prepaid = "prepaid".asInstanceOf[prepaid]
-  @scala.inline
-  def servicePickup: servicePickup = "servicePickup".asInstanceOf[servicePickup]
-  @scala.inline
-  def shipping: shipping = "shipping".asInstanceOf[shipping]
-  @scala.inline
-  def storePickup: storePickup = "storePickup".asInstanceOf[storePickup]
-  @scala.inline
-  def unknown_ : unknown_ = "unknown".asInstanceOf[unknown_]
 }
-

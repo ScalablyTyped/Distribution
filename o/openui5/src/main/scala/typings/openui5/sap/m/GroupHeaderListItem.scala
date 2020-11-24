@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.TextDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GroupHeaderListItem extends ListItemBase {
+  
   /**
     * Gets current value of property <code>count</code>.Defines the count of items in the group, but it
     * could also be an amount which represents the sum of all amounts in the group.<b>Note:</b> Will not
@@ -14,11 +15,13 @@ trait GroupHeaderListItem extends ListItemBase {
     * @returns Value of property <code>count</code>
     */
   def getCount(): String = js.native
+  
   /**
     * Gets current value of property <code>title</code>.Defines the title of the group header.
     * @returns Value of property <code>title</code>
     */
   def getTitle(): String = js.native
+  
   /**
     * Gets current value of property <code>titleTextDirection</code>.Defines the title text directionality
     * with enumerated options. By default, the control inherits text direction from the DOM.Default value
@@ -27,6 +30,7 @@ trait GroupHeaderListItem extends ListItemBase {
     * @returns Value of property <code>titleTextDirection</code>
     */
   def getTitleTextDirection(): TextDirection = js.native
+  
   /**
     * Gets current value of property <code>upperCase</code>.Allows to uppercase the group title.Default
     * value is <code>false</code>.
@@ -34,6 +38,7 @@ trait GroupHeaderListItem extends ListItemBase {
     * @returns Value of property <code>upperCase</code>
     */
   def getUpperCase(): Boolean = js.native
+  
   /**
     * Sets a new value for property <code>count</code>.Defines the count of items in the group, but it
     * could also be an amount which represents the sum of all amounts in the group.<b>Note:</b> Will not
@@ -43,6 +48,7 @@ trait GroupHeaderListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setCount(sCount: String): GroupHeaderListItem = js.native
+  
   /**
     * Sets a new value for property <code>title</code>.Defines the title of the group header.When called
     * with a value of <code>null</code> or <code>undefined</code>, the default value of the property will
@@ -51,6 +57,7 @@ trait GroupHeaderListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTitle(sTitle: String): GroupHeaderListItem = js.native
+  
   /**
     * Sets a new value for property <code>titleTextDirection</code>.Defines the title text directionality
     * with enumerated options. By default, the control inherits text direction from the DOM.When called
@@ -61,6 +68,7 @@ trait GroupHeaderListItem extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTitleTextDirection(sTitleTextDirection: TextDirection): GroupHeaderListItem = js.native
+  
   /**
     * Sets a new value for property <code>upperCase</code>.Allows to uppercase the group title.When called
     * with a value of <code>null</code> or <code>undefined</code>, the default value of the property will
@@ -71,4 +79,3 @@ trait GroupHeaderListItem extends ListItemBase {
     */
   def setUpperCase(bUpperCase: Boolean): GroupHeaderListItem = js.native
 }
-

@@ -6,7 +6,7 @@ import typings.jupyterlabServices.workspaceMod.WorkspaceManager.IOptions
 import typings.jupyterlabStatedb.dataconnectorMod.DataConnector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/services/lib/workspace", "WorkspaceManager")
 @js.native
@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation._
   */
 class WorkspaceManager_ () extends DataConnector[IWorkspace, IWorkspace, String, String] {
   def this(options: IOptions) = this()
+  
   /**
     * The server settings used to make API requests.
     */
   val serverSettings: ISettings = js.native
 }
-

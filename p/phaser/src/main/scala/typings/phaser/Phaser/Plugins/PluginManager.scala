@@ -7,7 +7,7 @@ import typings.phaser.Phaser.Types.Plugins.GlobalPlugin
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The PluginManager is responsible for installing and adding plugins to Phaser.
@@ -44,19 +44,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PluginManager extends js.Object {
-  /**
-    * The game instance that owns this Plugin Manager.
-    */
-  var game: Game = js.native
-  /**
-    * The global plugins currently running and managed by this Plugin Manager.
-    * A plugin must have been started at least once in order to appear in this list.
-    */
-  var plugins: js.Array[GlobalPlugin] = js.native
-  /**
-    * A list of plugin keys that should be installed into Scenes as well as the Core Plugins.
-    */
-  var scenePlugins: js.Array[String] = js.native
+  
   /**
     * Called by the Scene Systems class. Tells the plugin manager to install all Scene plugins into it.
     * 
@@ -68,10 +56,12 @@ trait PluginManager extends js.Object {
     * @param scenePlugins An array of scene plugins to install.
     */
   /* protected */ def addToScene(sys: Systems, globalPlugins: js.Array[_], scenePlugins: js.Array[_]): Unit = js.native
+  
   /**
     * Run once the game has booted and installs all of the plugins configured in the Game Config.
     */
   /* protected */ def boot(): Unit = js.native
+  
   /**
     * Destroys this Plugin Manager and all associated plugins.
     * It will iterate all plugins found and call their `destroy` methods.
@@ -79,6 +69,12 @@ trait PluginManager extends js.Object {
     * The PluginCache will remove all custom plugins.
     */
   def destroy(): Unit = js.native
+  
+  /**
+    * The game instance that owns this Plugin Manager.
+    */
+  var game: Game = js.native
+  
   /**
     * Gets a global plugin from the Plugin Manager based on the given key and returns it.
     * 
@@ -89,26 +85,31 @@ trait PluginManager extends js.Object {
     */
   def get(key: String): BasePlugin | js.Function = js.native
   def get(key: String, autoStart: Boolean): BasePlugin | js.Function = js.native
+  
   /**
     * Returns the plugin class from the cache.
     * Used internally by the Plugin Manager.
     * @param key The key of the plugin to get.
     */
   def getClass(key: String): BasePlugin = js.native
+  
   /**
     * Called by the Scene Systems class. Returns a list of plugins to be installed.
     */
   /* protected */ def getDefaultScenePlugins(): js.Array[String] = js.native
+  
   /**
     * Gets a global plugin based on the given key.
     * @param key The unique plugin key.
     */
   /* protected */ def getEntry(key: String): GlobalPlugin = js.native
+  
   /**
     * Gets an index of a global plugin based on the given key.
     * @param key The unique plugin key.
     */
   /* protected */ def getIndex(key: String): integer = js.native
+  
   /**
     * Installs a new Global Plugin into the Plugin Manager and optionally starts it running.
     * A global plugin belongs to the Plugin Manager, rather than a specific Scene, and can be accessed
@@ -148,6 +149,7 @@ trait PluginManager extends js.Object {
   def install(key: String, plugin: js.Function, start: Boolean, mapping: js.UndefOr[scala.Nothing], data: js.Any): BasePlugin = js.native
   def install(key: String, plugin: js.Function, start: Boolean, mapping: String): BasePlugin = js.native
   def install(key: String, plugin: js.Function, start: Boolean, mapping: String, data: js.Any): BasePlugin = js.native
+  
   /**
     * Installs a new Scene Plugin into the Plugin Manager and optionally adds it
     * to the given Scene as well. A Scene Plugin added to the manager in this way
@@ -199,11 +201,19 @@ trait PluginManager extends js.Object {
   ): Unit = js.native
   def installScenePlugin(key: String, plugin: js.Function, mapping: String, addToScene: Scene): Unit = js.native
   def installScenePlugin(key: String, plugin: js.Function, mapping: String, addToScene: Scene, fromLoader: Boolean): Unit = js.native
+  
   /**
     * Checks if the given global plugin, based on its key, is active or not.
     * @param key The unique plugin key.
     */
   def isActive(key: String): Boolean = js.native
+  
+  /**
+    * The global plugins currently running and managed by this Plugin Manager.
+    * A plugin must have been started at least once in order to appear in this list.
+    */
+  var plugins: js.Array[GlobalPlugin] = js.native
+  
   /**
     * Registers a new file type with the global File Types Manager, making it available to all Loader
     * Plugins created after this.
@@ -236,6 +246,7 @@ trait PluginManager extends js.Object {
     */
   def registerFileType(key: String, callback: js.Function): Unit = js.native
   def registerFileType(key: String, callback: js.Function, addToScene: Scene): Unit = js.native
+  
   /**
     * Registers a new type of Game Object with the global Game Object Factory and / or Creator.
     * This is usually called from within your Plugin code and is a helpful short-cut for creating
@@ -270,6 +281,7 @@ trait PluginManager extends js.Object {
   def registerGameObject(key: String, factoryCallback: js.UndefOr[scala.Nothing], creatorCallback: js.Function): Unit = js.native
   def registerGameObject(key: String, factoryCallback: js.Function): Unit = js.native
   def registerGameObject(key: String, factoryCallback: js.Function, creatorCallback: js.Function): Unit = js.native
+  
   /**
     * Removes a previously registered Game Object from the global Game Object Factory and / or Creator.
     * This is usually called from within your Plugin destruction code to help clean-up after your plugin has been removed.
@@ -281,6 +293,7 @@ trait PluginManager extends js.Object {
   def removeGameObject(key: String, removeFromFactory: js.UndefOr[scala.Nothing], removeFromCreator: Boolean): Unit = js.native
   def removeGameObject(key: String, removeFromFactory: Boolean): Unit = js.native
   def removeGameObject(key: String, removeFromFactory: Boolean, removeFromCreator: Boolean): Unit = js.native
+  
   /**
     * Removes a global plugin from the Plugin Manager and Plugin Cache.
     * 
@@ -288,6 +301,7 @@ trait PluginManager extends js.Object {
     * @param key The key of the plugin to remove.
     */
   def removeGlobalPlugin(key: String): Unit = js.native
+  
   /**
     * Removes a scene plugin from the Plugin Manager and Plugin Cache.
     * 
@@ -297,6 +311,12 @@ trait PluginManager extends js.Object {
     * @param key The key of the plugin to remove.
     */
   def removeScenePlugin(key: String): Unit = js.native
+  
+  /**
+    * A list of plugin keys that should be installed into Scenes as well as the Core Plugins.
+    */
+  var scenePlugins: js.Array[String] = js.native
+  
   /**
     * Starts a global plugin running.
     * 
@@ -312,6 +332,7 @@ trait PluginManager extends js.Object {
     */
   def start(key: String): BasePlugin = js.native
   def start(key: String, runAs: String): BasePlugin = js.native
+  
   /**
     * Stops a global plugin from running.
     * 
@@ -323,4 +344,3 @@ trait PluginManager extends js.Object {
     */
   def stop(key: String): this.type = js.native
 }
-

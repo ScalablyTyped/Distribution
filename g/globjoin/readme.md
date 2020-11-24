@@ -11,8 +11,8 @@ Join paths and globs.
 | Full name          | globjoin |
 | Keywords           | array, glob, glob join, globbing, multiple, negative glob, path, path join, patterns, wildcard |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 43609249 |
+| # dependents       | 11 |
+| # downloads        | 63807263 |
 | # stars            | 0 |
 
 ## Links

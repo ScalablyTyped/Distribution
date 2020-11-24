@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@algolia/requester-common" : "4.3.1"
+      "@algolia/requester-common" : "4.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@algolia/requester-common" : "4.3.1"
+      "@algolia/requester-common" : "4.8.0"
     }
   ],
   "compile-devDependencies" : [

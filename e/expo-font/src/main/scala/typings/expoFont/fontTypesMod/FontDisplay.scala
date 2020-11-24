@@ -3,14 +3,17 @@ package typings.expoFont.fontTypesMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FontDisplay extends js.Object
-
 @JSImport("expo-font/build/Font.types", "FontDisplay")
 @js.native
 object FontDisplay extends js.Object {
+  
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[FontDisplay with String] = js.native
+  
   /**
     * (Default on web) The font display strategy is defined by the user agent or platform.
     * This generally defaults to the text being invisible until the font is loaded.
@@ -18,6 +21,8 @@ object FontDisplay extends js.Object {
     */
   @js.native
   sealed trait AUTO extends FontDisplay
+  /* "auto" */ @js.native
+  object AUTO extends TopLevel[AUTO with String]
   
   /**
     * The text will be invisible until the font has loaded.
@@ -25,6 +30,8 @@ object FontDisplay extends js.Object {
     */
   @js.native
   sealed trait BLOCK extends FontDisplay
+  /* "block" */ @js.native
+  object BLOCK extends TopLevel[BLOCK with String]
   
   /**
     * Splits the behavior between `SWAP` and `BLOCK`.
@@ -34,6 +41,8 @@ object FontDisplay extends js.Object {
     */
   @js.native
   sealed trait FALLBACK extends FontDisplay
+  /* "fallback" */ @js.native
+  object FALLBACK extends TopLevel[FALLBACK with String]
   
   /**
     * This works almost identically to `FALLBACK`,
@@ -41,6 +50,8 @@ object FontDisplay extends js.Object {
     */
   @js.native
   sealed trait OPTIONAL extends FontDisplay
+  /* "optional" */ @js.native
+  object OPTIONAL extends TopLevel[OPTIONAL with String]
   
   /**
     * Fallback text is rendered immediately with a default font while the desired font is loaded.
@@ -48,23 +59,6 @@ object FontDisplay extends js.Object {
     */
   @js.native
   sealed trait SWAP extends FontDisplay
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[FontDisplay with String] = js.native
-  /* "auto" */ @js.native
-  object AUTO extends TopLevel[AUTO with String]
-  
-  /* "block" */ @js.native
-  object BLOCK extends TopLevel[BLOCK with String]
-  
-  /* "fallback" */ @js.native
-  object FALLBACK extends TopLevel[FALLBACK with String]
-  
-  /* "optional" */ @js.native
-  object OPTIONAL extends TopLevel[OPTIONAL with String]
-  
   /* "swap" */ @js.native
   object SWAP extends TopLevel[SWAP with String]
-  
 }
-

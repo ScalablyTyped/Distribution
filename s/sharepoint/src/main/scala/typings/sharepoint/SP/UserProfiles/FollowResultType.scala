@@ -2,14 +2,14 @@ package typings.sharepoint.SP.UserProfiles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FollowResultType extends js.Object
-
 @JSGlobal("SP.UserProfiles.FollowResultType")
 @js.native
 object FollowResultType extends js.Object {
+  
   /** The request failed. */
   @js.native
   sealed trait failed extends FollowResultType
@@ -29,6 +29,4 @@ object FollowResultType extends js.Object {
   /** Result is unknown */
   @js.native
   sealed trait unknown extends FollowResultType
-  
 }
-

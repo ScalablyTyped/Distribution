@@ -4,7 +4,7 @@ import typings.grpcGrpcJs.channelCredentialsMod.VerifyOptions
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@grpc/grpc-js", "ChannelCredentials")
 @js.native
@@ -12,15 +12,16 @@ abstract class ChannelCredentials protected ()
   extends typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials {
   protected def this(callCredentials: typings.grpcGrpcJs.callCredentialsMod.CallCredentials) = this()
 }
-
 /* static members */
 @JSImport("@grpc/grpc-js", "ChannelCredentials")
 @js.native
 object ChannelCredentials extends js.Object {
+  
   /**
     * Return a new ChannelCredentials instance with no credentials.
     */
   def createInsecure(): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
+  
   /**
     * Return a new ChannelCredentials instance with a given set of credentials.
     * The resulting instance can be used to construct a Channel that communicates
@@ -36,4 +37,3 @@ object ChannelCredentials extends js.Object {
     verifyOptions: js.UndefOr[VerifyOptions]
   ): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
 }
-

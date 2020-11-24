@@ -2,15 +2,17 @@ package typings.babelParser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.babelParser.babelParserStrings.asyncGenerators
     - typings.babelParser.babelParserStrings.bigInt
     - typings.babelParser.babelParserStrings.classPrivateMethods
     - typings.babelParser.babelParserStrings.classPrivateProperties
     - typings.babelParser.babelParserStrings.classProperties
+    - typings.babelParser.babelParserStrings.classStaticBlock
     - typings.babelParser.babelParserStrings.decimal
     - typings.babelParser.babelParserStrings.decorators
     - typings.babelParser.babelParserStrings.`decorators-legacy`
@@ -26,7 +28,8 @@ package object mod {
     - typings.babelParser.babelParserStrings.importMeta
     - typings.babelParser.babelParserStrings.jsx
     - typings.babelParser.babelParserStrings.logicalAssignment
-    - typings.babelParser.babelParserStrings.moduleAttributes
+    - typings.babelParser.babelParserStrings.importAssertions
+    - typings.babelParser.babelParserStrings.moduleStringNames
     - typings.babelParser.babelParserStrings.nullishCoalescingOperator
     - typings.babelParser.babelParserStrings.numericSeparator
     - typings.babelParser.babelParserStrings.objectRestSpread
@@ -43,8 +46,9 @@ package object mod {
     - typings.babelParser.mod.ParserPluginWithOptions
   */
   type ParserPlugin = typings.babelParser.mod._ParserPlugin | typings.babelParser.mod.ParserPluginWithOptions
+  
   type ParserPluginWithOptions = js.Tuple2[
-    typings.babelParser.babelParserStrings.decorators | typings.babelParser.babelParserStrings.pipelineOperator | typings.babelParser.babelParserStrings.flow, 
-    typings.babelParser.mod.DecoratorsPluginOptions | typings.babelParser.mod.FlowPluginOptions | typings.babelParser.mod.PipelineOperatorPluginOptions
+    typings.babelParser.babelParserStrings.decorators | typings.babelParser.babelParserStrings.pipelineOperator | typings.babelParser.babelParserStrings.recordAndTuple | typings.babelParser.babelParserStrings.flow, 
+    typings.babelParser.mod.DecoratorsPluginOptions | typings.babelParser.mod.FlowPluginOptions | typings.babelParser.mod.PipelineOperatorPluginOptions | typings.babelParser.mod.RecordAndTuplePluginOptions
   ]
 }

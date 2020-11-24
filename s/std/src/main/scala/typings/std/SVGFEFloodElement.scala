@@ -2,13 +2,14 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Corresponds to the <feFlood> element. */
 @js.native
 trait SVGFEFloodElement
   extends SVGElement
      with SVGFilterPrimitiveStandardAttributes {
+  
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -19,6 +20,7 @@ trait SVGFEFloodElement
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -30,4 +32,3 @@ trait SVGFEFloodElement
     options: EventListenerOptions
   ): Unit = js.native
 }
-

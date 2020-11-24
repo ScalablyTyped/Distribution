@@ -2,9 +2,10 @@ package typings.jjve
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type Env = js.Function3[
     /* schema */ js.Object, 
     /* data */ js.Any, 

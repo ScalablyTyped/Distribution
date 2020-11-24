@@ -2,10 +2,11 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DebugAdapter extends Disposable {
+  
   /**
     * Handle a Debug Adapter Protocol message.
     * Messages can be requests, responses, or events.
@@ -13,6 +14,7 @@ trait DebugAdapter extends Disposable {
     * @param message A Debug Adapter Protocol message
     */
   def handleMessage(message: DebugProtocolMessage): Unit = js.native
+  
   /**
     * An event which fires after the debug adapter has sent a Debug Adapter Protocol message to VS Code.
     * Messages can be requests, responses, or events.
@@ -30,4 +32,3 @@ trait DebugAdapter extends Disposable {
     disposables: js.Array[Disposable]
   ): Disposable = js.native
 }
-

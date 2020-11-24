@@ -20,7 +20,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies accessibility support for a radio button.
@@ -34,8 +34,8 @@ trait AccessibleRadioButton
      with XAccessibleText
      with XAccessibleAction
      with XAccessibleValue
-
 object AccessibleRadioButton {
+  
   @scala.inline
   def apply(
     AccessibleActionCount: Double,
@@ -123,4 +123,3 @@ object AccessibleRadioButton {
     __obj.asInstanceOf[AccessibleRadioButton]
   }
 }
-

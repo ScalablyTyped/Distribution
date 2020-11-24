@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Firewalls")
 @js.native
 class ResourceFirewalls protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.firewalls.delete
     * @desc Deletes the specified firewall.
@@ -43,6 +45,7 @@ class ResourceFirewalls protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.firewalls.get
     * @desc Returns the specified firewall.
@@ -72,6 +75,7 @@ class ResourceFirewalls protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFirewall]
   ): Unit = js.native
+  
   /**
     * compute.firewalls.insert
     * @desc Creates a firewall rule in the specified project using the data
@@ -103,6 +107,7 @@ class ResourceFirewalls protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.firewalls.list
     * @desc Retrieves the list of firewall rules available to the specified
@@ -136,6 +141,7 @@ class ResourceFirewalls protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFirewallList]
   ): Unit = js.native
+  
   /**
     * compute.firewalls.patch
     * @desc Updates the specified firewall rule with the data included in the
@@ -169,6 +175,7 @@ class ResourceFirewalls protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.firewalls.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -202,6 +209,7 @@ class ResourceFirewalls protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * compute.firewalls.update
     * @desc Updates the specified firewall rule with the data included in the
@@ -236,4 +244,3 @@ class ResourceFirewalls protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

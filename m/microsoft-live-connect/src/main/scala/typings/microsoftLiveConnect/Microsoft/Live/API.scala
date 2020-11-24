@@ -2,7 +2,7 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Live Connect JavaScript API (Windows 8 and web), together with the
@@ -14,7 +14,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait API extends js.Object {
+  
   var Event: IEventAPI = js.native
+  
   /**
     * Makes a call to the Live Connect Representational State Transfer
     * (REST) API. This method encapsulates a REST API request, and then
@@ -33,6 +35,7 @@ trait API extends js.Object {
     */
   def api[T](properties: IAPIProperties): IPromise[T] = js.native
   def api[T](properties: IAPIProperties, callback: js.Function1[/* response */ js.Any, Unit]): IPromise[T] = js.native
+  
   /**
     * Makes a call to download a file from Microsoft SkyDrive.
     *
@@ -56,6 +59,7 @@ trait API extends js.Object {
     */
   def backgroundDownload[T](properties: IBackgroundDownloadProperties): IPromise[T] = js.native
   def backgroundDownload[T](properties: IBackgroundDownloadProperties, callback: js.Function1[/* response */ js.Any, Unit]): IPromise[T] = js.native
+  
   /**
     * Makes a call to upload a file to Microsoft SkyDrive.
     *
@@ -77,6 +81,7 @@ trait API extends js.Object {
     */
   def backgroundUpload[T](properties: IBackgroundUploadProperties): IPromise[T] = js.native
   def backgroundUpload[T](properties: IBackgroundUploadProperties, callback: js.Function1[/* response */ js.Any, Unit]): IPromise[T] = js.native
+  
   /**
     * Specifies whether the current user can be signed out of their
     * Microsoft account.
@@ -93,6 +98,7 @@ trait API extends js.Object {
     *   returns false if the user can't be signed out.
     */
   def canLogout(): Boolean = js.native
+  
   /**
     * Makes a call to download a file from Microsoft SkyDrive.
     *
@@ -112,6 +118,7 @@ trait API extends js.Object {
     */
   def download(properties: IDownloadProperties): IPromise[Unit] = js.native
   def download(properties: IDownloadProperties, callback: js.Function1[/* response */ js.Any, Unit]): IPromise[Unit] = js.native
+  
   /**
     * Displays the Microsoft SkyDrive file picker, which enables
     * JavaScript-based web apps to display a pre-built, consistent user
@@ -128,6 +135,7 @@ trait API extends js.Object {
     */
   def fileDialog(properties: IFileDialogProperties): IPromise[IFilePickerResult] = js.native
   def fileDialog(properties: IFileDialogProperties, callback: js.Function1[/* response */ js.Any, Unit]): IPromise[IFilePickerResult] = js.native
+  
   /**
     * Returns the sign-in status of the current user. If the user is signed
     * in and connected to your app, this function returns the session
@@ -156,6 +164,7 @@ trait API extends js.Object {
   def getLoginStatus(callback: js.UndefOr[scala.Nothing], force: Boolean): IPromise[ILoginStatus] = js.native
   def getLoginStatus(callback: js.Function1[/* status */ ILoginStatus, Unit]): IPromise[ILoginStatus] = js.native
   def getLoginStatus(callback: js.Function1[/* status */ ILoginStatus, Unit], force: Boolean): IPromise[ILoginStatus] = js.native
+  
   /**
     * Retrieves the current session object synchronously, if a session
     * object exists. For situations in which performance is critical, such
@@ -163,6 +172,7 @@ trait API extends js.Object {
     * @returns Returns the current session as a session object instance.
     */
   def getSession(): ISession = js.native
+  
   /**
     * Initializes the JavaScript library. An app must call this function on
     * every page before making other function calls in the library. The app
@@ -181,6 +191,7 @@ trait API extends js.Object {
     *   status.
     */
   def init(properties: IInitProperties): IPromise[ILoginStatus] = js.native
+  
   /**
     * Signs in the user or expands the user's list of scopes. Because this
     * function can result in launching the consent page prompt, you should
@@ -211,6 +222,7 @@ trait API extends js.Object {
     */
   def login(properties: ILoginProperties): IPromise[ILoginStatus] = js.native
   def login(properties: ILoginProperties, callback: js.Function1[/* status */ js.Any, Unit]): IPromise[ILoginStatus] = js.native
+  
   /**
     * Signs the user out of Live Connect and clears any user state that is
     * maintained by the JavaScript library, such as cookies. If the user
@@ -230,6 +242,7 @@ trait API extends js.Object {
     */
   def logout(): IPromise[ILoginStatus] = js.native
   def logout(callback: js.Function1[/* status */ ILoginStatus, Unit]): IPromise[ILoginStatus] = js.native
+  
   /**
     * Displays either the Live Connect sign-in button or the Microsoft
     * SkyDrive file picker button. The sign-in button either prompts the
@@ -249,6 +262,7 @@ trait API extends js.Object {
     */
   def ui(properties: IUIProperties): Unit = js.native
   def ui(properties: IUIProperties, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Makes a call to upload a file to Microsoft SkyDrive.
     *
@@ -272,4 +286,3 @@ trait API extends js.Object {
   def upload[T](properties: IUploadProperties): IPromise[T] = js.native
   def upload[T](properties: IUploadProperties, callback: js.Function1[/* response */ js.Any, Unit]): IPromise[T] = js.native
 }
-

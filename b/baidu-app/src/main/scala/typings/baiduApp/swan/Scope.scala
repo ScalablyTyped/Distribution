@@ -2,7 +2,7 @@ package typings.baiduApp.swan
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 开放接口-----设置
 /* Rewritten from type alias, can be one of: 
@@ -15,21 +15,26 @@ import scala.scalajs.js.annotation._
   - typings.baiduApp.baiduAppStrings.scopeDotwritePhotosAlbum
 */
 trait Scope extends js.Object
-
 object Scope {
+  
   @scala.inline
   def scopeDotaddress: typings.baiduApp.baiduAppStrings.scopeDotaddress = "scope.address".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotaddress]
+  
   @scala.inline
   def scopeDotinvoiceTitle: typings.baiduApp.baiduAppStrings.scopeDotinvoiceTitle = "scope.invoiceTitle".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotinvoiceTitle]
+  
   @scala.inline
   def scopeDotrecord: typings.baiduApp.baiduAppStrings.scopeDotrecord = "scope.record".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotrecord]
+  
   @scala.inline
   def scopeDotuserInfo: typings.baiduApp.baiduAppStrings.scopeDotuserInfo = "scope.userInfo".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotuserInfo]
+  
   @scala.inline
   def scopeDotuserLocation: typings.baiduApp.baiduAppStrings.scopeDotuserLocation = "scope.userLocation".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotuserLocation]
+  
   @scala.inline
   def scopeDotwerun: typings.baiduApp.baiduAppStrings.scopeDotwerun = "scope.werun".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotwerun]
+  
   @scala.inline
   def scopeDotwritePhotosAlbum: typings.baiduApp.baiduAppStrings.scopeDotwritePhotosAlbum = "scope.writePhotosAlbum".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotwritePhotosAlbum]
 }
-

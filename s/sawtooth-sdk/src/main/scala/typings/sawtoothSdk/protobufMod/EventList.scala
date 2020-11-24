@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "EventList")
 @js.native
@@ -17,20 +17,22 @@ import scala.scalajs.js.annotation._
   */
 class EventList () extends IEventList {
   def this(properties: IEventList) = this()
+  
   /** EventList events. */
   @JSName("events")
   var events_EventList: js.Array[IEvent] = js.native
+  
   /**
     * Converts this EventList to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "EventList")
 @js.native
 object EventList extends js.Object {
+  
   /**
     * Creates a new EventList instance using the specified properties.
     * @param [properties] Properties to set
@@ -38,6 +40,7 @@ object EventList extends js.Object {
     */
   def create(): EventList = js.native
   def create(properties: IEventList): EventList = js.native
+  
   /**
     * Decodes an EventList message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -50,6 +53,7 @@ object EventList extends js.Object {
   def decode(reader: Reader, length: Double): EventList = js.native
   def decode(reader: Uint8Array): EventList = js.native
   def decode(reader: Uint8Array, length: Double): EventList = js.native
+  
   /**
     * Decodes an EventList message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -59,6 +63,7 @@ object EventList extends js.Object {
     */
   def decodeDelimited(reader: Reader): EventList = js.native
   def decodeDelimited(reader: Uint8Array): EventList = js.native
+  
   /**
     * Encodes the specified EventList message. Does not implicitly {@link EventList.verify|verify} messages.
     * @param message EventList message or plain object to encode
@@ -67,6 +72,7 @@ object EventList extends js.Object {
     */
   def encode(message: IEventList): Writer = js.native
   def encode(message: IEventList, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified EventList message, length delimited. Does not implicitly {@link EventList.verify|verify} messages.
     * @param message EventList message or plain object to encode
@@ -75,12 +81,14 @@ object EventList extends js.Object {
     */
   def encodeDelimited(message: IEventList): Writer = js.native
   def encodeDelimited(message: IEventList, writer: Writer): Writer = js.native
+  
   /**
     * Creates an EventList message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns EventList
     */
   def fromObject(`object`: StringDictionary[js.Any]): EventList = js.native
+  
   /**
     * Creates a plain object from an EventList message. Also converts values to other types if specified.
     * @param message EventList
@@ -89,6 +97,7 @@ object EventList extends js.Object {
     */
   def toObject(message: EventList): StringDictionary[js.Any] = js.native
   def toObject(message: EventList, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies an EventList message.
     * @param message Plain object to verify
@@ -96,4 +105,3 @@ object EventList extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

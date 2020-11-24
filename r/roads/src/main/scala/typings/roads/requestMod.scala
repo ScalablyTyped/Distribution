@@ -3,16 +3,21 @@ package typings.roads
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roads/types/client/request", JSImport.Namespace)
 @js.native
 object requestMod extends js.Object {
+  
   @js.native
   trait Request extends js.Object {
+    
     var _host: String = js.native
+    
     var _port: Double = js.native
+    
     var _secure: Boolean = js.native
+    
     /**
       * Perform the HTTP request
       *
@@ -39,6 +44,4 @@ object requestMod extends js.Object {
       */
     def this(secure: Boolean, host: String, port: Double) = this()
   }
-  
 }
-

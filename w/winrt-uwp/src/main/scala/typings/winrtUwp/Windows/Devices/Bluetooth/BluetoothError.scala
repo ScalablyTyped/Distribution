@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Bluetooth
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BluetoothError extends js.Object
-
 /** Specifies common Bluetooth error cases. */
 @JSGlobal("Windows.Devices.Bluetooth.BluetoothError")
 @js.native
 object BluetoothError extends js.Object {
+  
   /** The operation cannot be completed because the remote device is not connected. */
   @js.native
   sealed trait deviceNotConnected extends BluetoothError
@@ -42,6 +42,4 @@ object BluetoothError extends js.Object {
   /** The operation was successfully completed or serviced. */
   @js.native
   sealed trait success extends BluetoothError
-  
 }
-

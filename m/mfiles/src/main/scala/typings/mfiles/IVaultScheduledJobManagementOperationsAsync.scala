@@ -2,10 +2,11 @@ package typings.mfiles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultScheduledJobManagementOperationsAsync extends js.Object {
+  
   def AddScheduledJob(ScheduledJob: IScheduledJob): Unit = js.native
   def AddScheduledJob(
     ScheduledJob: IScheduledJob,
@@ -42,6 +43,7 @@ trait IVaultScheduledJobManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def CancelScheduledJob(ID: Double): Unit = js.native
   def CancelScheduledJob(
     ID: Double,
@@ -78,6 +80,7 @@ trait IVaultScheduledJobManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetScheduledJob(ID: Double): Unit = js.native
   def GetScheduledJob(
     ID: Double,
@@ -114,6 +117,7 @@ trait IVaultScheduledJobManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetScheduledJobRunInfo(ID: Double): Unit = js.native
   def GetScheduledJobRunInfo(
     ID: Double,
@@ -150,6 +154,7 @@ trait IVaultScheduledJobManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetScheduledJobs(): Unit = js.native
   def GetScheduledJobs(
     successCallback: js.UndefOr[scala.Nothing],
@@ -180,6 +185,7 @@ trait IVaultScheduledJobManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ModifyScheduledJob(ScheduledJob: IScheduledJob): Unit = js.native
   def ModifyScheduledJob(
     ScheduledJob: IScheduledJob,
@@ -216,6 +222,7 @@ trait IVaultScheduledJobManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RemoveScheduledJob(ID: Double): Unit = js.native
   def RemoveScheduledJob(
     ID: Double,
@@ -252,6 +259,7 @@ trait IVaultScheduledJobManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def StartScheduledJob(ID: Double): Unit = js.native
   def StartScheduledJob(
     ID: Double,
@@ -289,4 +297,3 @@ trait IVaultScheduledJobManagementOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

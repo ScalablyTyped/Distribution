@@ -4,11 +4,12 @@ import typings.rxjs.typesMod.ObservableInput
 import typings.rxjs.typesMod.OperatorFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/zip", JSImport.Namespace)
 @js.native
 object operatorsZipMod extends js.Object {
+  
   def zip[T, R](array: js.Array[ObservableInput[T]]): OperatorFunction[T, R] = js.native
   def zip[T, R](observables: (ObservableInput[T] | (js.Function1[/* repeated */ T, R]))*): OperatorFunction[T, R] = js.native
   def zip[T, R](project: js.Function1[/* v1 */ T, R]): OperatorFunction[T, R] = js.native
@@ -55,4 +56,3 @@ object operatorsZipMod extends js.Object {
     project: js.Function6[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, /* v5 */ T5, /* v6 */ T6, R]
   ): OperatorFunction[T, R] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.fibjs.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_Chain")
 @js.native
@@ -18,4 +18,3 @@ class ClassChain protected ()
     */
   def this(hdlrs: js.Array[_]) = this()
 }
-

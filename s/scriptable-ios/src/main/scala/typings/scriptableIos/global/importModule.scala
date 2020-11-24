@@ -2,11 +2,12 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("importModule")
 @js.native
 object importModule extends js.Object {
+  
   /**
     * _Imports module with specified name._
     *
@@ -47,4 +48,3 @@ object importModule extends js.Object {
     */
   def apply(path: String): js.Any = js.native
 }
-

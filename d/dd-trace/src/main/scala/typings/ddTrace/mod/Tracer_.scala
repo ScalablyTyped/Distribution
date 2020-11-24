@@ -28,6 +28,7 @@ import typings.ddTrace.ddTraceStrings.ioredis
 import typings.ddTrace.ddTraceStrings.knex
 import typings.ddTrace.ddTraceStrings.koa
 import typings.ddTrace.ddTraceStrings.memcached
+import typings.ddTrace.ddTraceStrings.mongoose
 import typings.ddTrace.ddTraceStrings.mysql
 import typings.ddTrace.ddTraceStrings.mysql2
 import typings.ddTrace.ddTraceStrings.net
@@ -56,15 +57,24 @@ import typings.opentracing.tracerMod.Tracer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Tracer_ extends Tracer {
+  
+  /**
+    * Create and return a string that can be included in the <head> of a
+    * document to enable RUM tracing to include it. The resulting string
+    * should not be cached.
+    */
+  def getRumData(): String = js.native
+  
   /**
     * Initializes the tracer. This should be called before importing other libraries.
     */
   def init(): this.type = js.native
   def init(options: TracerOptions): this.type = js.native
+  
   /**
     * Injects the given SpanContext instance for cross-process propagation
     * within `carrier`
@@ -77,10 +87,19 @@ trait Tracer_ extends Tracer {
     */
   def inject(spanContext: SpanContext, format: String, carrier: js.Any): Unit = js.native
   def inject(spanContext: Span, format: String, carrier: js.Any): Unit = js.native
+  
   /**
     * Returns a reference to the current scope.
     */
   def scope(): Scope = js.native
+  
+  /**
+    * Sets the URL for the trace agent. This should only be called _after_
+    * init() is called, only in cases where the URL needs to be set after
+    * initialization.
+    */
+  def setUrl(url: String): this.type = js.native
+  
   /**
     * Instruments a function by automatically creating a span activated on its
     * scope.
@@ -115,6 +134,7 @@ trait Tracer_ extends Tracer {
       T
     ]
   ): T = js.native
+  
   /**
     * Enable and optionally configure a plugin.
     * @param plugin The name of a built-in plugin.
@@ -283,6 +303,12 @@ trait Tracer_ extends Tracer {
   @JSName("use")
   def use_mongodbcore(plugin: `mongodb-core`, config: mongodbCore): this.type = js.native
   @JSName("use")
+  def use_mongoose(plugin: mongoose): this.type = js.native
+  @JSName("use")
+  def use_mongoose(plugin: mongoose, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_mongoose(plugin: mongoose, config: typings.ddTrace.mod.plugins.mongoose): this.type = js.native
+  @JSName("use")
   def use_mysql(plugin: mysql): this.type = js.native
   @JSName("use")
   def use_mysql(plugin: mysql, config: Boolean): this.type = js.native
@@ -378,6 +404,7 @@ trait Tracer_ extends Tracer {
   def use_winston(plugin: winston, config: Boolean): this.type = js.native
   @JSName("use")
   def use_winston(plugin: winston, config: typings.ddTrace.mod.plugins.winston): this.type = js.native
+  
   /**
     * Wrap a function to automatically create a span activated on its
     * scope when it's called.
@@ -397,4 +424,3 @@ trait Tracer_ extends Tracer {
   def wrap[T](name: String, options: TraceOptions with SpanOptions, fn: T): T = js.native
   def wrap[T](name: String, options: js.Function1[/* repeated */ js.Any, TraceOptions with SpanOptions], fn: T): T = js.native
 }
-

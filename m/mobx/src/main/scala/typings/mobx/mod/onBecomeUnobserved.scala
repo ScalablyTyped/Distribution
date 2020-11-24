@@ -6,11 +6,12 @@ import typings.mobx.observablearrayMod.IObservableArray
 import typings.mobx.utilsMod.Lambda
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx", "onBecomeUnobserved")
 @js.native
 object onBecomeUnobserved extends js.Object {
+  
   def apply(value: IComputedValue[_], listener: Lambda): Lambda = js.native
   def apply(value: IObservable, listener: Lambda): Lambda = js.native
   def apply(value: typings.mobx.internalMod.ObservableMap[_, _], listener: Lambda): Lambda = js.native
@@ -19,4 +20,3 @@ object onBecomeUnobserved extends js.Object {
   def apply[K, V](value: js.Object, property: K, listener: Lambda): Lambda = js.native
   def apply[K, V](value: typings.mobx.internalMod.ObservableMap[K, V], property: K, listener: Lambda): Lambda = js.native
 }
-

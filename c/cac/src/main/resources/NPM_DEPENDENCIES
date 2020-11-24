@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cac" : "6.6.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cac" : "6.6.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

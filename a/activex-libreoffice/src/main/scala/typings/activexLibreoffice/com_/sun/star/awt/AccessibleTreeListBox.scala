@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies accessibility support for a tree list box.
@@ -28,8 +28,8 @@ trait AccessibleTreeListBox
      with XAccessibleEventBroadcaster
      with XAccessibleComponent
      with XAccessibleSelection
-
 object AccessibleTreeListBox {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -84,4 +84,3 @@ object AccessibleTreeListBox {
     __obj.asInstanceOf[AccessibleTreeListBox]
   }
 }
-

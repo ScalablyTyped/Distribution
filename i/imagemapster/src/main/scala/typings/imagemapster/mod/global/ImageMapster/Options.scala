@@ -5,10 +5,11 @@ import typings.imagemapster.imagemapsterStrings.desc
 import typings.imagemapster.mod.global.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Options extends RenderingOptions {
+  
   /**
     *
     * define area-specific options; each object in the array must contain
@@ -16,6 +17,7 @@ trait Options extends RenderingOptions {
     * rendering options specific to that area or group
     */
   var areas: js.UndefOr[js.Array[AreaRenderingOptions]] = js.native
+  
   /**
     * a jQuery object whose elements are bound to the map.
     *
@@ -26,6 +28,7 @@ trait Options extends RenderingOptions {
     * the action will affect all matching elements.
     */
   var boundList: js.UndefOr[JQuery] = js.native
+  
   /**
     * Clicking on a link should cause the browser to navigate to the href
     * whenever it's not a hash sign (#). Version 1.2.4.050 and later
@@ -43,6 +46,7 @@ trait Options extends RenderingOptions {
     * appropraite navigation.
     */
   var clickNavigate: js.UndefOr[Boolean] = js.native
+  
   /**
     * time (in milliseconds) to wait for images to load before giving up
     *
@@ -54,6 +58,7 @@ trait Options extends RenderingOptions {
     * may want to increase this to account for long load times.
     */
   var configTimeout: js.UndefOr[Double] = js.native
+  
   /**
     * an attribute on items in a boundList that corresponds to the value
     * of the mapKey attributes.
@@ -64,6 +69,7 @@ trait Options extends RenderingOptions {
     * mismatched data will be ignored.
     */
   var listKey: js.UndefOr[String] = js.native
+  
   /**
     * attribute to set or remove when an area is selected or deselected
     *
@@ -72,6 +78,7 @@ trait Options extends RenderingOptions {
     * their respective keys.
     */
   var listSelectedAttribute: js.UndefOr[String] = js.native
+  
   /**
     * a class to add or remove when an area is selected or deselected
     *
@@ -81,6 +88,7 @@ trait Options extends RenderingOptions {
     * the map are changed.
     */
   var listSelectedClass: js.UndefOr[String] = js.native
+  
   /**
     * an attribute identifying each imagemap area.
     *
@@ -114,6 +122,7 @@ trait Options extends RenderingOptions {
     * key listed will identify the group that's effective for that action.
     */
   var mapKey: js.UndefOr[String] = js.native
+  
   /**
     * an attribute on each area tag containing additional descriptive
     * information about an area.
@@ -135,6 +144,7 @@ trait Options extends RenderingOptions {
     * from the first area found with data in this attribute will be used.
     */
   var mapValue: js.UndefOr[String] = js.native
+  
   /**
     * delay removing highlight when mouse exits an area (1.2.5b36)
     *
@@ -163,6 +173,7 @@ trait Options extends RenderingOptions {
     * sparse, or have very small areas.
     */
   var mouseoutDelay: js.UndefOr[Double] = js.native
+  
   /**
     * Treat areas containing the onhref attribute (or missing the href
     * attribute) as masks. This is true by default.
@@ -187,6 +198,7 @@ trait Options extends RenderingOptions {
     * fillColorMask option below) to create the best possible effect.
     */
   var noHrefIsMask: js.UndefOr[Boolean] = js.native
+  
   /**
     * callback when a hotspot area is clicked. Return false to cancel
     * default select action, or true to navigate to the 'href'
@@ -201,6 +213,7 @@ trait Options extends RenderingOptions {
     * binding another event and having to obtain information manually.
     */
   var onClick: js.UndefOr[js.Function1[/* data */ OnClickData, Unit]] = js.native
+  
   /**
     * a callback when the mapster has finished initial configuration
     *
@@ -218,6 +231,7 @@ trait Options extends RenderingOptions {
     * time to ensure it is available immediately when needed.
     */
   var onConfigured: js.UndefOr[js.Function1[/* success */ Boolean, Unit]] = js.native
+  
   /**
     * a callback on mapster initialization that provides summary data
     * about the image map, and expects a jQuery list to be returned.
@@ -231,6 +245,7 @@ trait Options extends RenderingOptions {
     * manually.
     */
   var onGetList: js.UndefOr[js.Function1[/* data */ OnGetListData, JQuery]] = js.native
+  
   /**
     * callback when mouse leavesd a bound area.
     *
@@ -238,12 +253,14 @@ trait Options extends RenderingOptions {
     * passed to the callback is the same as onMouseover.
     */
   var onMouseout: js.UndefOr[js.Function1[/* data */ OnMouseData, Unit]] = js.native
+  
   /**
     * callback when mouse enters a bound area.
     *
     * This function is called when the mouse enters a bound area.
     */
   var onMouseover: js.UndefOr[js.Function1[/* data */ OnMouseData, Unit]] = js.native
+  
   /**
     * callback when a toolTip is created
     *
@@ -251,6 +268,7 @@ trait Options extends RenderingOptions {
     * desired.
     */
   var onShowToolTip: js.UndefOr[js.Function1[/* data */ OnShowToolTipData, Unit]] = js.native
+  
   /**
     * callback when area state is changed (either highlight or select).
     *
@@ -258,6 +276,7 @@ trait Options extends RenderingOptions {
     * mouseover or click events.
     */
   var onStateChange: js.UndefOr[js.Function1[/* data */ OnStateChangeData, Unit]] = js.native
+  
   /**
     * Automatically scale imagemaps to match the size of a
     * dynamically-scaled image.
@@ -278,6 +297,7 @@ trait Options extends RenderingOptions {
     * disabled by setting this option to false.
     */
   var scaleMap: js.UndefOr[Boolean] = js.native
+  
   /**
     * enable tooltips
     *
@@ -290,6 +310,7 @@ trait Options extends RenderingOptions {
     * the presence of tooltip data is necessary for a tooltip to appear.
     */
   var showToolTip: js.UndefOr[Boolean] = js.native
+  
   /**
     * sort the values before calling onGetList
     *
@@ -298,6 +319,7 @@ trait Options extends RenderingOptions {
     * passed, the list will be sorted in descending order.
     */
   var sortList: js.UndefOr[Boolean | asc | desc] = js.native
+  
   /**
     * specify the behavior that causes a toolTip to close.
     *
@@ -324,6 +346,7 @@ trait Options extends RenderingOptions {
     * though the tooltip method.
     */
   var toolTipClose: js.UndefOr[js.Array[ToolTipCloseEvent]] = js.native
+  
   /**
     * HTML describing the popup that will be created for tooltips.
     *
@@ -338,139 +361,195 @@ trait Options extends RenderingOptions {
     * lower-right corner and extend outside the image.
     */
   var toolTipContainer: js.UndefOr[String | JQuery] = js.native
+  
   /**
     * add "classname" class to the wrapper created around the image, or
     * copy classes from the image if "true"
     */
   var wrapClass: js.UndefOr[String | Boolean] = js.native
+  
   /**
     * add CSS to the wrapper created around the image
     */
   var wrapCss: js.UndefOr[String | Boolean] = js.native
 }
-
 object Options {
+  
   @scala.inline
   def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
+  
   @scala.inline
   implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAreasVarargs(value: AreaRenderingOptions*): Self = this.set("areas", js.Array(value :_*))
+    
     @scala.inline
     def setAreas(value: js.Array[AreaRenderingOptions]): Self = this.set("areas", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAreas: Self = this.set("areas", js.undefined)
+    
     @scala.inline
     def setBoundList(value: JQuery): Self = this.set("boundList", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBoundList: Self = this.set("boundList", js.undefined)
+    
     @scala.inline
     def setClickNavigate(value: Boolean): Self = this.set("clickNavigate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteClickNavigate: Self = this.set("clickNavigate", js.undefined)
+    
     @scala.inline
     def setConfigTimeout(value: Double): Self = this.set("configTimeout", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteConfigTimeout: Self = this.set("configTimeout", js.undefined)
+    
     @scala.inline
     def setListKey(value: String): Self = this.set("listKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteListKey: Self = this.set("listKey", js.undefined)
+    
     @scala.inline
     def setListSelectedAttribute(value: String): Self = this.set("listSelectedAttribute", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteListSelectedAttribute: Self = this.set("listSelectedAttribute", js.undefined)
+    
     @scala.inline
     def setListSelectedClass(value: String): Self = this.set("listSelectedClass", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteListSelectedClass: Self = this.set("listSelectedClass", js.undefined)
+    
     @scala.inline
     def setMapKey(value: String): Self = this.set("mapKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMapKey: Self = this.set("mapKey", js.undefined)
+    
     @scala.inline
     def setMapValue(value: String): Self = this.set("mapValue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMapValue: Self = this.set("mapValue", js.undefined)
+    
     @scala.inline
     def setMouseoutDelay(value: Double): Self = this.set("mouseoutDelay", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMouseoutDelay: Self = this.set("mouseoutDelay", js.undefined)
+    
     @scala.inline
     def setNoHrefIsMask(value: Boolean): Self = this.set("noHrefIsMask", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNoHrefIsMask: Self = this.set("noHrefIsMask", js.undefined)
+    
     @scala.inline
     def setOnClick(value: /* data */ OnClickData => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteOnClick: Self = this.set("onClick", js.undefined)
+    
     @scala.inline
     def setOnConfigured(value: /* success */ Boolean => Unit): Self = this.set("onConfigured", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteOnConfigured: Self = this.set("onConfigured", js.undefined)
+    
     @scala.inline
     def setOnGetList(value: /* data */ OnGetListData => JQuery): Self = this.set("onGetList", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteOnGetList: Self = this.set("onGetList", js.undefined)
+    
     @scala.inline
     def setOnMouseout(value: /* data */ OnMouseData => Unit): Self = this.set("onMouseout", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteOnMouseout: Self = this.set("onMouseout", js.undefined)
+    
     @scala.inline
     def setOnMouseover(value: /* data */ OnMouseData => Unit): Self = this.set("onMouseover", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteOnMouseover: Self = this.set("onMouseover", js.undefined)
+    
     @scala.inline
     def setOnShowToolTip(value: /* data */ OnShowToolTipData => Unit): Self = this.set("onShowToolTip", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteOnShowToolTip: Self = this.set("onShowToolTip", js.undefined)
+    
     @scala.inline
     def setOnStateChange(value: /* data */ OnStateChangeData => Unit): Self = this.set("onStateChange", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteOnStateChange: Self = this.set("onStateChange", js.undefined)
+    
     @scala.inline
     def setScaleMap(value: Boolean): Self = this.set("scaleMap", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteScaleMap: Self = this.set("scaleMap", js.undefined)
+    
     @scala.inline
     def setShowToolTip(value: Boolean): Self = this.set("showToolTip", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteShowToolTip: Self = this.set("showToolTip", js.undefined)
+    
     @scala.inline
     def setSortList(value: Boolean | asc | desc): Self = this.set("sortList", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSortList: Self = this.set("sortList", js.undefined)
+    
     @scala.inline
     def setToolTipCloseVarargs(value: ToolTipCloseEvent*): Self = this.set("toolTipClose", js.Array(value :_*))
+    
     @scala.inline
     def setToolTipClose(value: js.Array[ToolTipCloseEvent]): Self = this.set("toolTipClose", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteToolTipClose: Self = this.set("toolTipClose", js.undefined)
+    
     @scala.inline
     def setToolTipContainer(value: String | JQuery): Self = this.set("toolTipContainer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteToolTipContainer: Self = this.set("toolTipContainer", js.undefined)
+    
     @scala.inline
     def setWrapClass(value: String | Boolean): Self = this.set("wrapClass", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWrapClass: Self = this.set("wrapClass", js.undefined)
+    
     @scala.inline
     def setWrapCss(value: String | Boolean): Self = this.set("wrapCss", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWrapCss: Self = this.set("wrapCss", js.undefined)
   }
-  
 }
-

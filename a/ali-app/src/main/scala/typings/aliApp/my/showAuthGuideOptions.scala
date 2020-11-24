@@ -12,13 +12,14 @@ import typings.aliApp.aliAppStrings.SELFSTARTING
 import typings.aliApp.aliAppStrings.SHORTCUT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 权限引导 https://docs.alipay.com/mini/api/show-auth-guide
 @js.native
 trait showAuthGuideOptions
   extends BaseOptions[js.Any, js.Any] {
+  
   /**
     * 引导的权限标识，用于标识该权限类型(如 LBS)
     * 支持的 authType 如下：
@@ -37,8 +38,8 @@ trait showAuthGuideOptions
     */
   var authType: BACKGROUNDER | SHORTCUT | MICROPHONE | ADDRESSBOOK | CAMERA | PHOTO | NOTIFICATION | SELFSTARTING | LBSSERVICE | LBS = js.native
 }
-
 object showAuthGuideOptions {
+  
   @scala.inline
   def apply(
     authType: BACKGROUNDER | SHORTCUT | MICROPHONE | ADDRESSBOOK | CAMERA | PHOTO | NOTIFICATION | SELFSTARTING | LBSSERVICE | LBS
@@ -46,22 +47,25 @@ object showAuthGuideOptions {
     val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any])
     __obj.asInstanceOf[showAuthGuideOptions]
   }
+  
   @scala.inline
   implicit class showAuthGuideOptionsOps[Self <: showAuthGuideOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAuthType(
       value: BACKGROUNDER | SHORTCUT | MICROPHONE | ADDRESSBOOK | CAMERA | PHOTO | NOTIFICATION | SELFSTARTING | LBSSERVICE | LBS
     ): Self = this.set("authType", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -8,11 +8,12 @@ import typings.lodash.mod.ValueKeyIterateeTypeGuard
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashPickBy extends LodashConvertible {
-  def apply[T](predicate: ValueKeyIteratee[T]): LodashPickBy3x1[T] = js.native
+trait LodashPickBy extends js.Object {
+  
+  def apply[T](predicate: ValueKeyIteratee[T]): NumericDictionary[T] = js.native
   def apply[T /* <: js.Object */](
     predicate: ValueKeyIteratee[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
@@ -29,4 +30,3 @@ trait LodashPickBy extends LodashConvertible {
   def apply[T, S /* <: T */](predicate: ValueKeyIterateeTypeGuard[T, S], `object`: Dictionary[T]): Dictionary[S] = js.native
   def apply[T, S /* <: T */](predicate: ValueKeyIterateeTypeGuard[T, S], `object`: NumericDictionary[T]): NumericDictionary[S] = js.native
 }
-

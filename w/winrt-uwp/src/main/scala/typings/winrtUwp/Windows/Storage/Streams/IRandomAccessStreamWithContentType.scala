@@ -4,15 +4,15 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supports random access of data in input and output streams for a specified data format. */
 @js.native
 trait IRandomAccessStreamWithContentType
   extends IRandomAccessStream
      with IContentTypeProvider
-
 object IRandomAccessStreamWithContentType {
+  
   @scala.inline
   def apply(
     canRead: Boolean,
@@ -33,4 +33,3 @@ object IRandomAccessStreamWithContentType {
     __obj.asInstanceOf[IRandomAccessStreamWithContentType]
   }
 }
-

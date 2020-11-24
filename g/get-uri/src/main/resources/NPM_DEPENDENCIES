@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "get-uri" : "3.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "get-uri" : "3.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

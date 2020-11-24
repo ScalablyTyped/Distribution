@@ -2,16 +2,16 @@ package typings.matterJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Pairs")
 @js.native
 class Pairs () extends js.Object
-
 /* static members */
 @JSImport("matter-js", "Pairs")
 @js.native
 object Pairs extends js.Object {
+  
   /**
     * Clears the given pairs structure.
     * @method clear
@@ -20,4 +20,3 @@ object Pairs extends js.Object {
     */
   def clear(pairs: js.Any): js.Any = js.native
 }
-

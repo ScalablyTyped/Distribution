@@ -3,11 +3,12 @@ package typings.cacache.enMod.get
 import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cacache/en", "get.stream")
 @js.native
 object stream extends js.Object {
+  
   /**
     * Returns a Readable Stream of the cached data identified by `key`.
     *
@@ -24,7 +25,7 @@ object stream extends js.Object {
     */
   def apply(cachePath: String, key: String): ReadableStream = js.native
   def apply(cachePath: String, key: String, opts: Options): ReadableStream = js.native
+  
   def byDigest(cachePath: String, hash: String): ReadableStream = js.native
   def byDigest(cachePath: String, hash: String, opts: Options): ReadableStream = js.native
 }
-

@@ -10,9 +10,9 @@ insert a string of css into the <head>
 | ------------------ | :-------------: |
 | Full name          | insert-css |
 | Keywords           | css, insert, dom, browser, browserify, inject, styles, stylesheet, style, html, head, link |
-| # releases         | 1 |
-| # dependents       | 216 |
-| # downloads        | 4611386 |
+| # releases         | 0 |
+| # dependents       | 242 |
+| # downloads        | 7351042 |
 | # stars            | 16 |
 
 ## Links

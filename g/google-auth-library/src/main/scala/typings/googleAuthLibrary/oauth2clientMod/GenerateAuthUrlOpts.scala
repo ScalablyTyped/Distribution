@@ -2,10 +2,11 @@ package typings.googleAuthLibrary.oauth2clientMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GenerateAuthUrlOpts extends js.Object {
+  
   /**
     * Recommended. Indicates whether your application can refresh access tokens
     * when the user is not present at the browser. Valid parameter values are
@@ -17,17 +18,20 @@ trait GenerateAuthUrlOpts extends js.Object {
     * tokens.
     */
   var access_type: js.UndefOr[String] = js.native
+  
   /**
     * The client ID for your application. The value passed into the constructor
     * will be used if not provided. You can find this value in the API Console.
     */
   var client_id: js.UndefOr[String] = js.native
+  
   /**
     * Recommended. Specifies an encoded 'code_verifier' that will be used as a
     * server-side challenge during authorization code exchange. This parameter
     * must be used with the 'code_challenge' parameter described above.
     */
   var code_challenge: js.UndefOr[String] = js.native
+  
   /**
     * Recommended. Specifies what method was used to encode a 'code_verifier'
     * that will be used during authorization code exchange. This parameter must
@@ -37,6 +41,7 @@ trait GenerateAuthUrlOpts extends js.Object {
     * parameter are "S256" or "plain".
     */
   var code_challenge_method: js.UndefOr[CodeChallengeMethod] = js.native
+  
   /**
     * The hd (hosted domain) parameter streamlines the login process for G Suite
     * hosted accounts. By including the domain of the G Suite user (for example,
@@ -50,6 +55,7 @@ trait GenerateAuthUrlOpts extends js.Object {
     * contained within a security token from Google, so the value can be trusted.
     */
   var hd: js.UndefOr[String] = js.native
+  
   /**
     * Optional. Enables applications to use incremental authorization to request
     * access to additional scopes in context. If you set this parameter's value
@@ -58,6 +64,7 @@ trait GenerateAuthUrlOpts extends js.Object {
     * application access. See the incremental authorization section for examples.
     */
   var include_granted_scopes: js.UndefOr[Boolean] = js.native
+  
   /**
     * Optional. If your application knows which user is trying to authenticate,
     * it can use this parameter to provide a hint to the Google Authentication
@@ -67,6 +74,7 @@ trait GenerateAuthUrlOpts extends js.Object {
     * address or sub identifier, which is equivalent to the user's Google ID.
     */
   var login_hint: js.UndefOr[String] = js.native
+  
   /**
     * Optional. A space-delimited, case-sensitive list of prompts to present the
     * user. If you don't specify this parameter, the user will be prompted only
@@ -78,6 +86,7 @@ trait GenerateAuthUrlOpts extends js.Object {
     * 'select_account' - Prompt the user to select an account.
     */
   var prompt: js.UndefOr[String] = js.native
+  
   /**
     * Determines where the API server redirects the user after the user
     * completes the authorization flow. The value must exactly match one of the
@@ -86,10 +95,12 @@ trait GenerateAuthUrlOpts extends js.Object {
     * The value passed into the constructor will be used if not provided.
     */
   var redirect_uri: js.UndefOr[String] = js.native
+  
   /**
     * The 'response_type' will always be set to 'CODE'.
     */
   var response_type: js.UndefOr[String] = js.native
+  
   /**
     * Required. A space-delimited list of scopes that identify the resources that
     * your application could access on the user's behalf. These values inform the
@@ -106,6 +117,7 @@ trait GenerateAuthUrlOpts extends js.Object {
     * requesting.
     */
   var scope: js.UndefOr[js.Array[String] | String] = js.native
+  
   /**
     * Recommended. Specifies any string value that your application uses to
     * maintain state between your authorization request and the authorization
@@ -125,75 +137,102 @@ trait GenerateAuthUrlOpts extends js.Object {
     */
   var state: js.UndefOr[String] = js.native
 }
-
 object GenerateAuthUrlOpts {
+  
   @scala.inline
   def apply(): GenerateAuthUrlOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateAuthUrlOpts]
   }
+  
   @scala.inline
   implicit class GenerateAuthUrlOptsOps[Self <: GenerateAuthUrlOpts] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAccess_type(value: String): Self = this.set("access_type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAccess_type: Self = this.set("access_type", js.undefined)
+    
     @scala.inline
     def setClient_id(value: String): Self = this.set("client_id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteClient_id: Self = this.set("client_id", js.undefined)
+    
     @scala.inline
     def setCode_challenge(value: String): Self = this.set("code_challenge", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCode_challenge: Self = this.set("code_challenge", js.undefined)
+    
     @scala.inline
     def setCode_challenge_method(value: CodeChallengeMethod): Self = this.set("code_challenge_method", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCode_challenge_method: Self = this.set("code_challenge_method", js.undefined)
+    
     @scala.inline
     def setHd(value: String): Self = this.set("hd", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHd: Self = this.set("hd", js.undefined)
+    
     @scala.inline
     def setInclude_granted_scopes(value: Boolean): Self = this.set("include_granted_scopes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInclude_granted_scopes: Self = this.set("include_granted_scopes", js.undefined)
+    
     @scala.inline
     def setLogin_hint(value: String): Self = this.set("login_hint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLogin_hint: Self = this.set("login_hint", js.undefined)
+    
     @scala.inline
     def setPrompt(value: String): Self = this.set("prompt", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePrompt: Self = this.set("prompt", js.undefined)
+    
     @scala.inline
     def setRedirect_uri(value: String): Self = this.set("redirect_uri", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRedirect_uri: Self = this.set("redirect_uri", js.undefined)
+    
     @scala.inline
     def setResponse_type(value: String): Self = this.set("response_type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResponse_type: Self = this.set("response_type", js.undefined)
+    
     @scala.inline
     def setScopeVarargs(value: String*): Self = this.set("scope", js.Array(value :_*))
+    
     @scala.inline
     def setScope(value: js.Array[String] | String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteScope: Self = this.set("scope", js.undefined)
+    
     @scala.inline
     def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteState: Self = this.set("state", js.undefined)
   }
-  
 }
-

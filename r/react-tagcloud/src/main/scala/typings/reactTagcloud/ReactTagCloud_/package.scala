@@ -2,9 +2,10 @@ package typings.reactTagcloud
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object ReactTagCloud_ {
+  
   type RendererFunction = js.Function4[
     /* tag */ js.Any, 
     /* size */ scala.Double, 
@@ -12,6 +13,7 @@ package object ReactTagCloud_ {
     /* handlers */ js.Any, 
     js.Any
   ]
+  
   type TagCloudClass = typings.react.mod.ComponentClass[
     typings.reactTagcloud.ReactTagCloud_.TagCloudProps, 
     typings.react.mod.ComponentState

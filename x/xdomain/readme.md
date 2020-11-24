@@ -10,9 +10,9 @@ A pure JavaScript CORS alternative
 | ------------------ | :-------------: |
 | Full name          | xdomain |
 | Keywords           | cors, ie8, polyfill |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 29654 |
+| # downloads        | 37470 |
 | # stars            | 0 |
 
 ## Links

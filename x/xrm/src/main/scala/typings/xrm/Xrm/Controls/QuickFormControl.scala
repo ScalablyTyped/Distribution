@@ -2,7 +2,7 @@ package typings.xrm.Xrm.Controls
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for a quick view control instance on a form.
@@ -15,6 +15,7 @@ trait QuickFormControl
      with UiCanGetDisabledElement
      with UiCanSetDisabledElement
      with UiCanSetVisibleElement {
+  
   /**
     * Gets the constituent controls in a quick view control.
     * @returns An array of controls.
@@ -53,6 +54,7 @@ trait QuickFormControl
     */
   @JSName("getControl")
   def getControl_T_Control_T[T /* <: Control */](index: Double): T = js.native
+  
   /**
     * Returns whether the data binding for the constituent controls in a quick view control is complete.
     * @returns  True is the data binding for a constituent control is complete, otherwise false.
@@ -62,9 +64,9 @@ trait QuickFormControl
     * @remarks The data binding for the constituent controls in a quick view control may not be complete during the main form OnLoad event
     */
   def isLoaded(): Boolean = js.native
+  
   /**
     * Refreshes the data displayed in a quick view control.
     */
   def refresh(): Unit = js.native
 }
-

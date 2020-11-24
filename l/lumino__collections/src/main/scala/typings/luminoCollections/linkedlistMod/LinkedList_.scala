@@ -7,7 +7,7 @@ import typings.luminoAlgorithm.retroMod.IRetroable
 import typings.luminoCollections.linkedlistMod.LinkedList.INode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/collections/types/linkedlist", "LinkedList")
 @js.native
@@ -17,74 +17,13 @@ import scala.scalajs.js.annotation._
 class LinkedList_[T] ()
   extends IIterable[T]
      with IRetroable[T] {
+  
   var _first: js.Any = js.native
+  
   var _last: js.Any = js.native
+  
   var _size: js.Any = js.native
-  /**
-    * The first value in the list.
-    *
-    * This is `undefined` if the list is empty.
-    *
-    * #### Complexity
-    * Constant.
-    */
-  val first: js.UndefOr[T] = js.native
-  /**
-    * The first node in the list.
-    *
-    * This is `null` if the list is empty.
-    *
-    * #### Complexity
-    * Constant.
-    */
-  val firstNode: INode[T] | Null = js.native
-  /**
-    * Whether the list is empty.
-    *
-    * #### Complexity
-    * Constant.
-    */
-  val isEmpty: Boolean = js.native
-  /**
-    * The last value in the list.
-    *
-    * This is `undefined` if the list is empty.
-    *
-    * #### Complexity
-    * Constant.
-    */
-  val last: js.UndefOr[T] = js.native
-  /**
-    * The last node in the list.
-    *
-    * This is `null` if the list is empty.
-    *
-    * #### Complexity
-    * Constant.
-    */
-  val lastNode: INode[T] | Null = js.native
-  /**
-    * The length of the list.
-    *
-    * #### Complexity
-    * Constant.
-    *
-    * #### Notes
-    * This is equivalent to `size`.
-    *
-    * This property is deprecated.
-    */
-  val length: Double = js.native
-  /**
-    * The size of the list.
-    *
-    * #### Complexity
-    * `O(1)`
-    *
-    * #### Notes
-    * This is equivalent to `length`.
-    */
-  val size: Double = js.native
+  
   /**
     * Add a value to the beginning of the list.
     *
@@ -96,6 +35,7 @@ class LinkedList_[T] ()
     * Constant.
     */
   def addFirst(value: T): INode[T] = js.native
+  
   /**
     * Add a value to the end of the list.
     *
@@ -107,6 +47,7 @@ class LinkedList_[T] ()
     * Constant.
     */
   def addLast(value: T): INode[T] = js.native
+  
   /**
     * Assign new values to the list, replacing all current values.
     *
@@ -116,6 +57,7 @@ class LinkedList_[T] ()
     * Linear.
     */
   def assign(values: IterableOrArrayLike[T]): Unit = js.native
+  
   /**
     * Remove all values from the list.
     *
@@ -123,6 +65,27 @@ class LinkedList_[T] ()
     * Linear.
     */
   def clear(): Unit = js.native
+  
+  /**
+    * The first value in the list.
+    *
+    * This is `undefined` if the list is empty.
+    *
+    * #### Complexity
+    * Constant.
+    */
+  val first: js.UndefOr[T] = js.native
+  
+  /**
+    * The first node in the list.
+    *
+    * This is `null` if the list is empty.
+    *
+    * #### Complexity
+    * Constant.
+    */
+  val firstNode: INode[T] | Null = js.native
+  
   /**
     * Insert a value after a specific node in the list.
     *
@@ -141,6 +104,7 @@ class LinkedList_[T] ()
     */
   def insertAfter(value: T): INode[T] = js.native
   def insertAfter(value: T, ref: INode[T]): INode[T] = js.native
+  
   /**
     * Insert a value before a specific node in the list.
     *
@@ -159,6 +123,48 @@ class LinkedList_[T] ()
     */
   def insertBefore(value: T): INode[T] = js.native
   def insertBefore(value: T, ref: INode[T]): INode[T] = js.native
+  
+  /**
+    * Whether the list is empty.
+    *
+    * #### Complexity
+    * Constant.
+    */
+  val isEmpty: Boolean = js.native
+  
+  /**
+    * The last value in the list.
+    *
+    * This is `undefined` if the list is empty.
+    *
+    * #### Complexity
+    * Constant.
+    */
+  val last: js.UndefOr[T] = js.native
+  
+  /**
+    * The last node in the list.
+    *
+    * This is `null` if the list is empty.
+    *
+    * #### Complexity
+    * Constant.
+    */
+  val lastNode: INode[T] | Null = js.native
+  
+  /**
+    * The length of the list.
+    *
+    * #### Complexity
+    * Constant.
+    *
+    * #### Notes
+    * This is equivalent to `size`.
+    *
+    * This property is deprecated.
+    */
+  val length: Double = js.native
+  
   /**
     * Create an iterator over the nodes in the list.
     *
@@ -168,6 +174,7 @@ class LinkedList_[T] ()
     * Constant.
     */
   def nodes(): IIterator[INode[T]] = js.native
+  
   /**
     * Remove and return the value at the end of the list.
     *
@@ -180,6 +187,7 @@ class LinkedList_[T] ()
     * This is equivalent to `removeLast`.
     */
   def pop(): js.UndefOr[T] = js.native
+  
   /**
     * Add a value to the end of the list.
     *
@@ -192,6 +200,7 @@ class LinkedList_[T] ()
     * This is equivalent to `addLast`.
     */
   def push(value: T): Unit = js.native
+  
   /**
     * Remove and return the value at the beginning of the list.
     *
@@ -201,6 +210,7 @@ class LinkedList_[T] ()
     * Constant.
     */
   def removeFirst(): js.UndefOr[T] = js.native
+  
   /**
     * Remove and return the value at the end of the list.
     *
@@ -210,6 +220,7 @@ class LinkedList_[T] ()
     * Constant.
     */
   def removeLast(): js.UndefOr[T] = js.native
+  
   /**
     * Remove a specific node from the list.
     *
@@ -222,6 +233,7 @@ class LinkedList_[T] ()
     * The node must be owned by the list.
     */
   def removeNode(node: INode[T]): Unit = js.native
+  
   /**
     * Create a reverse iterator over the nodes in the list.
     *
@@ -231,6 +243,7 @@ class LinkedList_[T] ()
     * Constant.
     */
   def retroNodes(): IIterator[INode[T]] = js.native
+  
   /**
     * Add a value to the beginning of the list.
     *
@@ -243,6 +256,18 @@ class LinkedList_[T] ()
     * This is equivalent to `addFirst`.
     */
   def shift(value: T): Unit = js.native
+  
+  /**
+    * The size of the list.
+    *
+    * #### Complexity
+    * `O(1)`
+    *
+    * #### Notes
+    * This is equivalent to `length`.
+    */
+  val size: Double = js.native
+  
   /**
     * Remove and return the value at the beginning of the list.
     *
@@ -256,4 +281,3 @@ class LinkedList_[T] ()
     */
   def unshift(): js.UndefOr[T] = js.native
 }
-

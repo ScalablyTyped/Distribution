@@ -3,15 +3,13 @@ package typings.std.global
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("HTMLObjectElement")
 @js.native
 class HTMLObjectElement ()
   extends typings.std.HTMLObjectElement
-
 @JSGlobal("HTMLObjectElement")
 @js.native
 object HTMLObjectElement
   extends Instantiable0[typings.std.HTMLObjectElement]
-

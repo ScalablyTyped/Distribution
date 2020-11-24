@@ -3,7 +3,7 @@ package typings.sqlBricks.mod
 import typings.sqlBricks.anon.Placeholder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Statement is an abstract base class for all statements (SELECT, INSERT, UPDATE, DELETE)
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Statement extends js.Object {
+  
   /**
     * Returns an object with two properties: a parameterized text string and a values array. The values are populated with anything on the right-hand side
     * of a WHERE criteria,as well as any values passed into an insert() or update() (they can be passed explicitly with val() or opted out of with sql())
@@ -23,4 +24,3 @@ trait Statement extends js.Object {
   def toParams(): SqlBricksParam = js.native
   def toParams(options: Placeholder): SqlBricksParam = js.native
 }
-

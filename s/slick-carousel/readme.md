@@ -10,9 +10,9 @@ the last carousel you'll ever need
 | ------------------ | :-------------: |
 | Full name          | slick-carousel |
 | Keywords           | carousel, slick, responsive, js, slider |
-| # releases         | 2 |
-| # dependents       | 280 |
-| # downloads        | 14656805 |
+| # releases         | 0 |
+| # dependents       | 389 |
+| # downloads        | 21941465 |
 | # stars            | 37 |
 
 ## Links

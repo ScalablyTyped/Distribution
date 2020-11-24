@@ -2,10 +2,11 @@ package typings.bingmaps.Microsoft.Maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AutosuggestManager extends js.Object {
+  
   /**
     * Attaches the Autosuggest functionality to an input box.
     * @param suggestionBoxId The HTML element identifier of the input box.
@@ -17,15 +18,19 @@ trait AutosuggestManager extends js.Object {
     suggestionContainerId: String,
     selectedSuggestionCallback: js.Function1[/* result */ ISuggestionResult, Unit]
   ): Unit = js.native
+  
   /** Detaches the autosuggest functionality from the input box, freeing any resources it has or events it has tied to. */
   def detachAutosuggest(): Unit = js.native
+  
   /** Disposes the Autosuggest object, freeing any resources it has or events it has tied to. */
   def dispose(): Unit = js.native
+  
   /**
     * Gets the options currently used by the autosuggest manager.
     * @returns The options currently used by the autosuggest manager.
     */
   def getOptions(): IAutosuggestOptions = js.native
+  
   /**
     * Programmatically retrieves suggestions for queries without the need to attach a textbox to the AutosuggestManager.
     * @param query The text to get suggestions for.
@@ -35,6 +40,7 @@ trait AutosuggestManager extends js.Object {
     query: String,
     callback: js.Function2[/* suggestions */ js.Array[ISuggestionResult], /* query */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Sets the options currently used by the autosuggest manager.
     * @param options The options to use with the autosuggest manager.
@@ -42,4 +48,3 @@ trait AutosuggestManager extends js.Object {
   def setOptions(): Unit = js.native
   def setOptions(options: IAutosuggestOptions): Unit = js.native
 }
-

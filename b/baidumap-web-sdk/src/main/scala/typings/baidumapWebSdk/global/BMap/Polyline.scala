@@ -3,7 +3,7 @@ package typings.baidumapWebSdk.global.BMap
 import typings.baidumapWebSdk.BMap.PolylineOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BMap.Polyline")
 @js.native
@@ -12,4 +12,3 @@ class Polyline protected ()
   def this(points: js.Array[typings.baidumapWebSdk.BMap.Point]) = this()
   def this(points: js.Array[typings.baidumapWebSdk.BMap.Point], opts: PolylineOptions) = this()
 }
-

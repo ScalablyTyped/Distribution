@@ -4,7 +4,7 @@ import typings.navermaps.naver.maps.TileOptions
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Map.Tile
 @JSGlobal("naver.maps.Tile")
@@ -14,4 +14,3 @@ class Tile protected ()
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, tileOptions: TileOptions) = this()
 }
-

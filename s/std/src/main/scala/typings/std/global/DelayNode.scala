@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.DelayOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DelayNode")
 @js.native
@@ -14,7 +14,6 @@ class DelayNode protected ()
   def this(context: typings.std.BaseAudioContext) = this()
   def this(context: typings.std.BaseAudioContext, options: DelayOptions) = this()
 }
-
 @JSGlobal("DelayNode")
 @js.native
 object DelayNode
@@ -24,4 +23,3 @@ object DelayNode
       /* options */ DelayOptions, 
       typings.std.DelayNode
     ]
-

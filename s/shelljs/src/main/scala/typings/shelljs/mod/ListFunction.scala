@@ -2,10 +2,11 @@ package typings.shelljs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ListFunction extends js.Object {
+  
   def apply(options: String, paths: String*): ShellArray = js.native
   /**
     * Returns array of files in the given path, or in current directory if no path provided.
@@ -30,4 +31,3 @@ trait ListFunction extends js.Object {
     */
   def apply(paths: js.Array[String]): ShellArray = js.native
 }
-

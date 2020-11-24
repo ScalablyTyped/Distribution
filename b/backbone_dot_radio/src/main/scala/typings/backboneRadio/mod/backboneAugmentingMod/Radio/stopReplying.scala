@@ -2,11 +2,12 @@ package typings.backboneRadio.mod.backboneAugmentingMod.Radio
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone", "Radio.stopReplying")
 @js.native
 object stopReplying extends js.Object {
+  
   def apply(channelName: String): Requests = js.native
   def apply(
     channelName: String,
@@ -35,4 +36,3 @@ object stopReplying extends js.Object {
     context: js.Any
   ): Requests = js.native
 }
-

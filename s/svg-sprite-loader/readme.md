@@ -10,15 +10,15 @@ Webpack loader for creating SVG sprites
 | ------------------ | :-------------: |
 | Full name          | svg-sprite-loader |
 | Keywords           | svg, sprite, svg sprite, svg stack, webpack, webpack2, webpack3, webpack loader, webpack plugin |
-| # releases         | 17 |
-| # dependents       | 244 |
-| # downloads        | 5569483 |
+| # releases         | 20 |
+| # dependents       | 323 |
+| # downloads        | 7575540 |
 | # stars            | 7 |
 
 ## Links
-- [Homepage](https://github.com/kisenka/svg-sprite-loader#readme)
-- [Bugs](https://github.com/kisenka/svg-sprite-loader/issues)
-- [Repository](https://github.com/kisenka/svg-sprite-loader)
+- [Homepage](https://github.com/JetBrains/svg-sprite-loader#readme)
+- [Bugs](https://github.com/JetBrains/svg-sprite-loader/issues)
+- [Repository](https://github.com/JetBrains/svg-sprite-loader)
 - [Npm](https://www.npmjs.com/package/svg-sprite-loader)
     
 

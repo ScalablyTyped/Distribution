@@ -11,8 +11,8 @@ Checks whether a value is an object
 | Full name          | is-object |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 140 |
-| # downloads        | 110511892 |
+| # dependents       | 151 |
+| # downloads        | 161317781 |
 | # stars            | 1 |
 
 ## Links

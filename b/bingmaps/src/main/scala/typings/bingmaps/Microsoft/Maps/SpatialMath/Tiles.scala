@@ -2,7 +2,7 @@ package typings.bingmaps.Microsoft.Maps.SpatialMath
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //////////////////////////////////////////////
 /// Tile Calculations
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Microsoft.Maps.SpatialMath.Tiles")
 @js.native
 object Tiles extends js.Object
-

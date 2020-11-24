@@ -9,9 +9,9 @@ Session management and security simplifier
 | ------------------ | :-------------: |
 | Full name          | easy-session |
 | Keywords           | session, management, rbac |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 2059 |
+| # downloads        | 2397 |
 | # stars            | 4 |
 
 ## Links

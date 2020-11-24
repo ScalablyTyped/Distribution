@@ -10,9 +10,9 @@ a node port of Lazar Laszlo's `jsqrcode` qr code decoder
 | ------------------ | :-------------: |
 | Full name          | jsqrcode |
 | Keywords           | qr, code, qrcode, jsqrcode, decode, decoder, read, reader |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 4427 |
+| # downloads        | 6340 |
 | # stars            | 4 |
 
 ## Links

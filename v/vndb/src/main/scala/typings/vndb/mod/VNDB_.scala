@@ -2,13 +2,14 @@ package typings.vndb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used for creating a connection to VNDB API
   */
 @js.native
 trait VNDB_ extends js.Object {
+  
   /**
     * Connects to the VNDB API.
     * Host and port are not required unless VNDB changes them.
@@ -20,4 +21,3 @@ trait VNDB_ extends js.Object {
   def start(host: String): js.Promise[vndb] = js.native
   def start(host: String, port: Double): js.Promise[vndb] = js.native
 }
-

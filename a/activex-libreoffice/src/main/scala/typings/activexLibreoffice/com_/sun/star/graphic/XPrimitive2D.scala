@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * {@link XPrimitive2D} interface
@@ -18,11 +18,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XPrimitive2D extends XInterface {
+  
   /**
     * Retrieve decomposed list of simpler primitives
     * @param aViewParameters 2D View-specific parameter set. The defined but not mandatory parameters include:{@link com.sun.star.geometry.AffineMatrix2D} Tra
     */
   def getDecomposition(aViewParameters: SeqEquiv[PropertyValue]): SafeArray[XPrimitive2D] = js.native
+  
   /**
     * Retrieve bound rect of primitive
     *
@@ -32,8 +34,8 @@ trait XPrimitive2D extends XInterface {
     */
   def getRange(aViewParameters: SeqEquiv[PropertyValue]): RealRectangle2D = js.native
 }
-
 object XPrimitive2D {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -45,22 +47,26 @@ object XPrimitive2D {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDecomposition = js.Any.fromFunction1(getDecomposition), getRange = js.Any.fromFunction1(getRange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XPrimitive2D]
   }
+  
   @scala.inline
   implicit class XPrimitive2DOps[Self <: XPrimitive2D] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetDecomposition(value: SeqEquiv[PropertyValue] => SafeArray[XPrimitive2D]): Self = this.set("getDecomposition", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetRange(value: SeqEquiv[PropertyValue] => RealRectangle2D): Self = this.set("getRange", js.Any.fromFunction1(value))
   }
-  
 }
-

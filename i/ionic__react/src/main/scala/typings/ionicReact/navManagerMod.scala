@@ -11,26 +11,34 @@ import typings.ionicReact.routerDirectionMod.RouterDirection
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/react/dist/types/routing/NavManager", JSImport.Namespace)
 @js.native
 object navManagerMod extends js.Object {
+  
   @js.native
   class NavManager protected ()
     extends Component[NavManagerProps, NavContextState, js.Any] {
     def this(props: NavManagerProps) = this()
-    var ionRouterContextValue: IonRouterContextState = js.native
+    
     def getIonRedirect(): js.Any = js.native
+    
     def getIonRoute(): js.Any = js.native
+    
     def getPageManager(): TypeofPageManager = js.native
+    
     def getStackManager(): js.Any = js.native
+    
     def goBack(): Unit = js.native
     def goBack(route: js.UndefOr[scala.Nothing], animationBuilder: AnimationBuilder): Unit = js.native
     def goBack(route: String): Unit = js.native
     def goBack(route: String, animationBuilder: AnimationBuilder): Unit = js.native
     def goBack(route: RouteInfo[_]): Unit = js.native
     def goBack(route: RouteInfo[_], animationBuilder: AnimationBuilder): Unit = js.native
+    
+    var ionRouterContextValue: IonRouterContextState = js.native
+    
     def navigate(path: String): Unit = js.native
     def navigate(
       path: String,
@@ -242,13 +250,16 @@ object navManagerMod extends js.Object {
   
   @js.native
   trait NavManagerProps extends js.Object {
+    
     var ionRedirect: js.Any = js.native
+    
     var ionRoute: js.Any = js.native
+    
     var locationHistory: LocationHistory = js.native
-    var routeInfo: RouteInfo[_] = js.native
-    var stackManager: js.Any = js.native
+    
     def onChangeTab(tab: String, path: String): Unit = js.native
     def onChangeTab(tab: String, path: String, routeOptions: js.Any): Unit = js.native
+    
     def onNavigate(path: String, action: RouteAction): Unit = js.native
     def onNavigate(
       path: String,
@@ -350,16 +361,21 @@ object navManagerMod extends js.Object {
       options: js.Any,
       tab: String
     ): Unit = js.native
+    
     def onNavigateBack(): Unit = js.native
     def onNavigateBack(route: js.UndefOr[scala.Nothing], animationBuilder: AnimationBuilder): Unit = js.native
     def onNavigateBack(route: String): Unit = js.native
     def onNavigateBack(route: String, animationBuilder: AnimationBuilder): Unit = js.native
     def onNavigateBack(route: RouteInfo[_]): Unit = js.native
     def onNavigateBack(route: RouteInfo[_], animationBuilder: AnimationBuilder): Unit = js.native
+    
     def onResetTab(tab: String, path: String): Unit = js.native
     def onResetTab(tab: String, path: String, routeOptions: js.Any): Unit = js.native
+    
     def onSetCurrentTab(tab: String, routeInfo: RouteInfo[_]): Unit = js.native
+    
+    var routeInfo: RouteInfo[_] = js.native
+    
+    var stackManager: js.Any = js.native
   }
-  
 }
-

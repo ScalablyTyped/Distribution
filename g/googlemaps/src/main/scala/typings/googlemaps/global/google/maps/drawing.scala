@@ -3,11 +3,12 @@ package typings.googlemaps.global.google.maps
 import typings.googlemaps.google.maps.drawing.DrawingManagerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("google.maps.drawing")
 @js.native
 object drawing extends js.Object {
+  
   @js.native
   class DrawingManager ()
     extends typings.googlemaps.google.maps.drawing.DrawingManager {
@@ -21,14 +22,18 @@ object drawing extends js.Object {
     */
   @js.native
   object OverlayType extends js.Object {
-    /* "circle" */ val CIRCLE: typings.googlemaps.google.maps.drawing.OverlayType.CIRCLE with String = js.native
-    /* "marker" */ val MARKER: typings.googlemaps.google.maps.drawing.OverlayType.MARKER with String = js.native
-    /* "polygon" */ val POLYGON: typings.googlemaps.google.maps.drawing.OverlayType.POLYGON with String = js.native
-    /* "polyline" */ val POLYLINE: typings.googlemaps.google.maps.drawing.OverlayType.POLYLINE with String = js.native
-    /* "rectangle" */ val RECTANGLE: typings.googlemaps.google.maps.drawing.OverlayType.RECTANGLE with String = js.native
+    
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.googlemaps.google.maps.drawing.OverlayType with String] = js.native
+    
+    /* "circle" */ val CIRCLE: typings.googlemaps.google.maps.drawing.OverlayType.CIRCLE with String = js.native
+    
+    /* "marker" */ val MARKER: typings.googlemaps.google.maps.drawing.OverlayType.MARKER with String = js.native
+    
+    /* "polygon" */ val POLYGON: typings.googlemaps.google.maps.drawing.OverlayType.POLYGON with String = js.native
+    
+    /* "polyline" */ val POLYLINE: typings.googlemaps.google.maps.drawing.OverlayType.POLYLINE with String = js.native
+    
+    /* "rectangle" */ val RECTANGLE: typings.googlemaps.google.maps.drawing.OverlayType.RECTANGLE with String = js.native
   }
-  
 }
-

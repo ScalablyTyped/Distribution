@@ -5,11 +5,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends {@link XStorable} . */
 @js.native
 trait XStorable2 extends XStorable {
+  
   /**
     * stores the data to the URL from which it was loaded.
     *
@@ -23,8 +24,8 @@ trait XStorable2 extends XStorable {
     */
   def storeSelf(lArguments: SeqEquiv[PropertyValue]): Unit = js.native
 }
-
 object XStorable2 {
+  
   @scala.inline
   def apply(
     Location: String,
@@ -42,20 +43,23 @@ object XStorable2 {
     val __obj = js.Dynamic.literal(Location = Location.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getLocation = js.Any.fromFunction0(getLocation), hasLocation = js.Any.fromFunction0(hasLocation), isReadonly = js.Any.fromFunction0(isReadonly), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), store = js.Any.fromFunction0(store), storeAsURL = js.Any.fromFunction2(storeAsURL), storeSelf = js.Any.fromFunction1(storeSelf), storeToURL = js.Any.fromFunction2(storeToURL))
     __obj.asInstanceOf[XStorable2]
   }
+  
   @scala.inline
   implicit class XStorable2Ops[Self <: XStorable2] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setStoreSelf(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("storeSelf", js.Any.fromFunction1(value))
   }
-  
 }
-

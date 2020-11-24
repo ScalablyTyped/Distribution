@@ -2,15 +2,17 @@ package typings.phaser.global.Phaser.Loader
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Loader.FileTypesManager")
 @js.native
 object FileTypesManager extends js.Object {
+  
   /**
     * Removed all associated file types.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Static method called when a LoaderPlugin is created.
     * 
@@ -19,6 +21,7 @@ object FileTypesManager extends js.Object {
     * @param loader The LoaderPlugin to install the types into.
     */
   def install(loader: typings.phaser.Phaser.Loader.LoaderPlugin): Unit = js.native
+  
   /**
     * Static method called directly by the File Types.
     * 
@@ -28,4 +31,3 @@ object FileTypesManager extends js.Object {
     */
   def register(key: String, factoryFunction: js.Function): Unit = js.native
 }
-

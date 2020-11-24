@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-dotfile"
-version := "2.0-dt-20181225Z-dc3be6"
+version := "2.0-dt-20181225Z-9dbbfa"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

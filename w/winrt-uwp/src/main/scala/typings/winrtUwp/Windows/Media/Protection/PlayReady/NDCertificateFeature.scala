@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait NDCertificateFeature extends js.Object
-
 /** Indicates the PlayReady-ND feature to which the certificate controls access. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDCertificateFeature")
 @js.native
 object NDCertificateFeature extends js.Object {
+  
   /** Device implements anti-rollback clock. */
   @js.native
   sealed trait antiRollBackClock extends NDCertificateFeature
@@ -38,6 +38,4 @@ object NDCertificateFeature extends js.Object {
   /** Entity implements transmitter functionality. */
   @js.native
   sealed trait transmitter extends NDCertificateFeature
-  
 }
-

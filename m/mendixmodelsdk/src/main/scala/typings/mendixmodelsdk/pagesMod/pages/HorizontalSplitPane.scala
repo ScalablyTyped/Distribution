@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.pagesMod.pages
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
@@ -8,9 +9,10 @@ import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayout
 import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayoutCallArgument
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.reportsMod.reports.ReportPane
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://docs.mendix.com/refguide7/scroll-container relevant section in reference guide}
@@ -25,25 +27,22 @@ class HorizontalSplitPane protected () extends SplitPane {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FHorizontalSplitPane: IModel = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.HorizontalSplitPane")
 @js.native
 object HorizontalSplitPane extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -53,6 +52,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.7.0 to 7.14.0
     */
   def createInBuildingBlockUnderWidget(container: BuildingBlock): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -62,6 +62,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInBuildingBlockUnderWidgets(container: BuildingBlock): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'footerWidget' property
@@ -71,6 +72,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.7.0 to 7.14.0
     */
   def createInDataViewUnderFooterWidget(container: DataView): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'footerWidgets' property
@@ -80,6 +82,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInDataViewUnderFooterWidgets(container: DataView): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -89,6 +92,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInDataViewUnderWidget(container: DataView): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -98,6 +102,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInDataViewUnderWidgets(container: DataView): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -107,6 +112,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInDivContainerUnderWidget(container: DivContainer): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -116,6 +122,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInDivContainerUnderWidgets(container: DivContainer): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -125,6 +132,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInGroupBoxUnderWidget(container: GroupBox): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -134,6 +142,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInGroupBoxUnderWidgets(container: GroupBox): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'leftWidget' property
@@ -143,6 +152,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInHeaderUnderLeftWidget(container: Header): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'leftWidgets' property
@@ -152,6 +162,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInHeaderUnderLeftWidgets(container: Header): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'rightWidget' property
@@ -161,6 +172,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInHeaderUnderRightWidget(container: Header): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'rightWidgets' property
@@ -170,6 +182,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInHeaderUnderRightWidgets(container: Header): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -179,6 +192,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -188,6 +202,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -197,6 +212,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -206,6 +222,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -215,6 +232,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInLayoutUnderWidget(container: Layout): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -224,6 +242,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInLayoutUnderWidgets(container: Layout): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -233,6 +252,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInListViewTemplateUnderWidget(container: ListViewTemplate): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -242,6 +262,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInListViewTemplateUnderWidgets(container: ListViewTemplate): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -251,6 +272,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInListViewUnderWidget(container: ListView): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -260,6 +282,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInListViewUnderWidgets(container: ListView): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -269,6 +292,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.1.0 to 7.14.0
     */
   def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -278,6 +302,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'headerWidget' property
@@ -287,6 +312,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.22.0 to 7.23.0
     */
   def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -296,6 +322,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.21.0 to 7.23.0
     */
   def createInNativeLayoutUnderWidgets(container: NativeLayout): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -305,6 +332,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInNavigationListItemUnderWidget(container: NavigationListItem): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -314,6 +342,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInNavigationListItemUnderWidgets(container: NavigationListItem): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'parameterWidget' property
@@ -323,6 +352,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 6.9.0
     */
   def createInReportPaneUnderParameterWidget(container: ReportPane): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'reportWidget' property
@@ -332,6 +362,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 6.9.0
     */
   def createInReportPaneUnderReportWidget(container: ReportPane): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -341,6 +372,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -350,6 +382,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -359,6 +392,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInSnippetUnderWidget(container: Snippet): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -368,6 +402,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInSnippetUnderWidgets(container: Snippet): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'firstWidget' property
@@ -377,6 +412,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInSplitPaneUnderFirstWidget(container: SplitPane): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'firstWidgets' property
@@ -386,6 +422,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInSplitPaneUnderFirstWidgets(container: SplitPane): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'secondWidget' property
@@ -395,6 +432,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInSplitPaneUnderSecondWidget(container: SplitPane): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'secondWidgets' property
@@ -404,6 +442,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInSplitPaneUnderSecondWidgets(container: SplitPane): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -413,6 +452,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInTabPageUnderWidget(container: TabPage): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -422,6 +462,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInTabPageUnderWidgets(container: TabPage): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -431,6 +472,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInTableCellUnderWidget(container: TableCell): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -440,6 +482,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInTableCellUnderWidgets(container: TableCell): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widget' property
@@ -449,6 +492,7 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -458,6 +502,7 @@ object HorizontalSplitPane extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): HorizontalSplitPane = js.native
+  
   /**
     * Creates and returns a new HorizontalSplitPane instance in the SDK and on the server.
     * The new HorizontalSplitPane will be automatically stored in the 'widgets' property
@@ -467,5 +512,8 @@ object HorizontalSplitPane extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInVerticalFlowUnderWidgets(container: VerticalFlow): HorizontalSplitPane = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

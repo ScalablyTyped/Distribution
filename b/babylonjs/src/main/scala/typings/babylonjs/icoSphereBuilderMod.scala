@@ -1,22 +1,23 @@
 package typings.babylonjs
 
-import typings.babylonjs.anon.RadiusX
+import typings.babylonjs.anon.RadiusY
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/Builders/icoSphereBuilder", JSImport.Namespace)
 @js.native
 object icoSphereBuilderMod extends js.Object {
+  
   @js.native
   class IcoSphereBuilder () extends js.Object
-  
   /* static members */
   @js.native
   object IcoSphereBuilder extends js.Object {
+    
     /**
       * Creates a sphere based upon an icosahedron with 20 triangular faces which can be subdivided
       * * The parameter `radius` sets the radius size (float) of the icosphere (default 1)
@@ -32,9 +33,7 @@ object icoSphereBuilderMod extends js.Object {
       * @returns the icosahedron mesh
       * @see https://doc.babylonjs.com/how_to/polyhedra_shapes#icosphere
       */
-    def CreateIcoSphere(name: String, options: RadiusX): Mesh = js.native
-    def CreateIcoSphere(name: String, options: RadiusX, scene: Nullable[Scene]): Mesh = js.native
+    def CreateIcoSphere(name: String, options: RadiusY): Mesh = js.native
+    def CreateIcoSphere(name: String, options: RadiusY, scene: Nullable[Scene]): Mesh = js.native
   }
-  
 }
-

@@ -2,18 +2,21 @@ package typings.aureliaBinding.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InternalPropertyObserver extends js.Object {
+  
   /**
     * Gets the property value.
     */
   def getValue(): js.Any = js.native
+  
   /**
     * Sets the property value.
     */
   def setValue(newValue: js.Any): Unit = js.native
+  
   /**
     * Subscribe to property changes with a callback function.
     */
@@ -24,6 +27,7 @@ trait InternalPropertyObserver extends js.Object {
     * @param callable A callable object.
     */
   def subscribe(context: js.Any, callable: Callable): Unit = js.native
+  
   /**
     * Unsubscribes a callback function from property changes.
     */
@@ -35,4 +39,3 @@ trait InternalPropertyObserver extends js.Object {
     */
   def unsubscribe(context: js.Any, callable: Callable): Unit = js.native
 }
-

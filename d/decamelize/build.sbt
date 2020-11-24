@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "decamelize"
-version := "4.0.0-b48f53"
+version := "4.0.0-bf0c88"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

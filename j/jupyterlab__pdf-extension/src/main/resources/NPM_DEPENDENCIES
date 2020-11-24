@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/pdf-extension" : "2.2.0"
+      "@jupyterlab/pdf-extension" : "2.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/pdf-extension" : "2.2.0"
+      "@jupyterlab/pdf-extension" : "2.2.1"
     }
   ],
   "compile-devDependencies" : [

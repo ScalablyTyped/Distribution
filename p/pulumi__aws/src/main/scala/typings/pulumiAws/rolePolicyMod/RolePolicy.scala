@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/iam/rolePolicy", "RolePolicy")
 @js.native
@@ -21,30 +21,34 @@ class RolePolicy protected () extends CustomResource {
     */
   def this(name: String, args: RolePolicyArgs) = this()
   def this(name: String, args: RolePolicyArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The name of the role policy. If omitted, this provider will
     * assign a random, unique name.
     */
   val name: Output_[String] = js.native
+  
   /**
     * Creates a unique name beginning with the specified
     * prefix. Conflicts with `name`.
     */
   val namePrefix: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The policy document. This is a JSON formatted string.
     */
   val policy: Output_[String] = js.native
+  
   /**
     * The IAM role to attach to the policy.
     */
   val role: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/iam/rolePolicy", "RolePolicy")
 @js.native
 object RolePolicy extends js.Object {
+  
   /**
     * Get an existing RolePolicy resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -58,10 +62,10 @@ object RolePolicy extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RolePolicy = js.native
   def get(name: String, id: Input[ID], state: RolePolicyState): RolePolicy = js.native
   def get(name: String, id: Input[ID], state: RolePolicyState, opts: CustomResourceOptions): RolePolicy = js.native
+  
   /**
     * Returns true if the given object is an instance of RolePolicy.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/rolePolicy.RolePolicy */ Boolean = js.native
 }
-

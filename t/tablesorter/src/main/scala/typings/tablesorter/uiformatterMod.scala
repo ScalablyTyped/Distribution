@@ -9,13 +9,15 @@ import typings.tablesorter.uislideroptionsMod.UISliderOptions
 import typings.tablesorter.uispinneroptionsMod.UISpinnerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tablesorter/Filtering/Formatter/UIFormatter", JSImport.Namespace)
 @js.native
 object uiformatterMod extends js.Object {
+  
   @js.native
   trait UIFormatter extends js.Object {
+    
     /**
       * Creates a jQueryUI date-comparsion control.
       *
@@ -33,6 +35,7 @@ object uiformatterMod extends js.Object {
       */
     def uiDateCompare(cell: JQuery[HTMLElement], index: Double): JQuery[HTMLElement] = js.native
     def uiDateCompare(cell: JQuery[HTMLElement], index: Double, options: UIDateCompareOptions): JQuery[HTMLElement] = js.native
+    
     /**
       * Creates a jQueryUI datepicker-control.
       *
@@ -50,6 +53,7 @@ object uiformatterMod extends js.Object {
       */
     def uiDatepicker(cell: JQuery[HTMLElement], index: Double): JQuery[HTMLElement] = js.native
     def uiDatepicker(cell: JQuery[HTMLElement], index: Double, options: UIDateRangeOptions): JQuery[HTMLElement] = js.native
+    
     /**
       * Creates a jQueryUI range-control.
       *
@@ -67,6 +71,7 @@ object uiformatterMod extends js.Object {
       */
     def uiRange(cell: JQuery[HTMLElement], index: Double): JQuery[HTMLElement] = js.native
     def uiRange(cell: JQuery[HTMLElement], index: Double, options: UIRangeOptions): JQuery[HTMLElement] = js.native
+    
     /**
       * Creates a jQueryUI slider-control.
       *
@@ -84,6 +89,7 @@ object uiformatterMod extends js.Object {
       */
     def uiSlider(cell: JQuery[HTMLElement], index: Double): JQuery[HTMLElement] = js.native
     def uiSlider(cell: JQuery[HTMLElement], index: Double, options: UISliderOptions): JQuery[HTMLElement] = js.native
+    
     /**
       * Creates a jQueryUI spinner-control.
       *
@@ -102,6 +108,4 @@ object uiformatterMod extends js.Object {
     def uiSpinner(cell: JQuery[HTMLElement], index: Double): JQuery[HTMLElement] = js.native
     def uiSpinner(cell: JQuery[HTMLElement], index: Double, options: UISpinnerOptions): JQuery[HTMLElement] = js.native
   }
-  
 }
-

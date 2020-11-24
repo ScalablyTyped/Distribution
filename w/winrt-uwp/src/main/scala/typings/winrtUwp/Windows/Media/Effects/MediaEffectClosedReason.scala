@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Effects
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MediaEffectClosedReason extends js.Object
-
 /** Specifies the reason why a media effect was closed. */
 @JSGlobal("Windows.Media.Effects.MediaEffectClosedReason")
 @js.native
 object MediaEffectClosedReason extends js.Object {
+  
   /** The operation is complete. */
   @js.native
   sealed trait done extends MediaEffectClosedReason
@@ -26,6 +26,4 @@ object MediaEffectClosedReason extends js.Object {
   /** The media effect does not support the required encoding format. */
   @js.native
   sealed trait unsupportedEncodingFormat extends MediaEffectClosedReason
-  
 }
-

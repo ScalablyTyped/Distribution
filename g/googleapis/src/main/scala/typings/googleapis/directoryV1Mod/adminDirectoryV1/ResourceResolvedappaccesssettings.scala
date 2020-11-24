@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Resolvedappaccesssettings")
 @js.native
 class ResourceResolvedappaccesssettings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * directory.resolvedAppAccessSettings.GetSettings
     * @desc Retrieves resolved app access settings of the logged in user.
@@ -43,6 +43,7 @@ class ResourceResolvedappaccesssettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAppAccessCollections]
   ): Unit = js.native
+  
   /**
     * directory.resolvedAppAccessSettings.ListTrustedApps
     * @desc Retrieves the list of apps trusted by the admin of the logged in
@@ -74,5 +75,6 @@ class ResourceResolvedappaccesssettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTrustedApps]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
 }
-

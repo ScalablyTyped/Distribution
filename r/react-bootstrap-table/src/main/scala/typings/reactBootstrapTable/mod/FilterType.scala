@@ -2,7 +2,7 @@ package typings.reactBootstrapTable.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactBootstrapTable.reactBootstrapTableStrings.TextFilter
@@ -14,21 +14,26 @@ import scala.scalajs.js.annotation._
   - typings.reactBootstrapTable.reactBootstrapTableStrings.ArrayFilter
 */
 trait FilterType extends js.Object
-
 object FilterType {
+  
   @scala.inline
   def ArrayFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.ArrayFilter = "ArrayFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.ArrayFilter]
+  
   @scala.inline
   def CustomFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter = "CustomFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter]
+  
   @scala.inline
   def DateFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter = "DateFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter]
+  
   @scala.inline
   def NumberFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter = "NumberFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter]
+  
   @scala.inline
   def RegexFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.RegexFilter = "RegexFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.RegexFilter]
+  
   @scala.inline
   def SelectFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter = "SelectFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter]
+  
   @scala.inline
   def TextFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.TextFilter = "TextFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.TextFilter]
 }
-

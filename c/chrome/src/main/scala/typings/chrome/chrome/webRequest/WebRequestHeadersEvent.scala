@@ -3,11 +3,12 @@ package typings.chrome.chrome.webRequest
 import typings.chrome.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebRequestHeadersEvent
   extends Event[js.Function1[/* details */ WebRequestHeadersDetails, Unit]] {
+  
   def addListener(
     callback: js.Function1[/* details */ WebRequestHeadersDetails, Unit],
     filter: js.UndefOr[scala.Nothing],
@@ -20,4 +21,3 @@ trait WebRequestHeadersEvent
     opt_extraInfoSpec: js.Array[String]
   ): Unit = js.native
 }
-

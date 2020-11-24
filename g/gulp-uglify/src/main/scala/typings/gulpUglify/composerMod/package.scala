@@ -2,9 +2,10 @@ package typings.gulpUglify
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object composerMod {
+  
   type Composer = js.Function2[
     /* uglify */ typings.gulpUglify.composerMod.Uglify, 
     /* log */ typings.gulpUglify.composerMod.Logger, 

@@ -4,11 +4,12 @@ import typings.meteor.Meteor.User
 import typings.meteor.anon.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/accounts-base", "Accounts._checkPassword")
 @js.native
 object checkPassword extends js.Object {
+  
   /**
     *
     * Check whether the provided password matches the bcrypt'ed password in
@@ -19,4 +20,3 @@ object checkPassword extends js.Object {
     */
   def apply(user: User, password: Password): Error = js.native
 }
-

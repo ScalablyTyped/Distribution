@@ -2,17 +2,17 @@ package typings.officeJsPreview.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait VerticalAlignment extends js.Object
-
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.VerticalAlignment")
 @js.native
 object VerticalAlignment extends js.Object {
+  
   @js.native
   sealed trait bottom extends VerticalAlignment
   
@@ -24,6 +24,4 @@ object VerticalAlignment extends js.Object {
   
   @js.native
   sealed trait top extends VerticalAlignment
-  
 }
-

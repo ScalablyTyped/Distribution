@@ -4,18 +4,22 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // MobileServiceClient object based on Microsoft Azure documentation: http://msdn.microsoft.com/en-us/library/windowsazure/jj554219.aspx
 @js.native
 trait MobileServiceClient
   extends Instantiable1[/* applicationUrl */ String, MobileServiceClient]
      with Instantiable2[/* applicationUrl */ String, /* applicationKey */ String, MobileServiceClient] {
+  
   var applicationKey: String = js.native
+  
   var applicationUrl: String = js.native
+  
   var currentUser: User = js.native
-  var push: Push = js.native
+  
   def getTable(tableName: String): MobileServiceTable = js.native
+  
   /**
     * Invokes the specified custom api and returns a response object.
     *
@@ -39,12 +43,17 @@ trait MobileServiceClient
     options: InvokeApiOptions,
     callback: js.Function2[/* error */ js.Any, /* results */ js.Any, Unit]
   ): asyncPromise = js.native
+  
   def login(provider: String): asyncPromise = js.native
   def login(provider: String, callback: js.Function2[/* error */ js.Any, /* user */ User, Unit]): Unit = js.native
   def login(provider: String, token: String): asyncPromise = js.native
   //for provider:string use one of ProviderEnum: 'microsoftaccount', 'facebook', 'twitter', 'google'
   def login(provider: String, token: String, callback: js.Function2[/* error */ js.Any, /* user */ User, Unit]): Unit = js.native
+  
   def logout(): asyncPromise = js.native
+  
+  var push: Push = js.native
+  
   def withFilter(
     serviceFilter: js.Function3[
       /* request */ js.Any, 
@@ -58,4 +67,3 @@ trait MobileServiceClient
     ]
   ): MobileServiceClient = js.native
 }
-

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "loadable__webpack-plugin"
-version := "5.7-dt-20200515Z-299e6b"
+version := "5.7-dt-20200925Z-32bd17"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

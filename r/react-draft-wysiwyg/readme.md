@@ -10,9 +10,9 @@ A wysiwyg on top of DraftJS.
 | ------------------ | :-------------: |
 | Full name          | react-draft-wysiwyg |
 | Keywords           | - |
-| # releases         | 23 |
-| # dependents       | 109 |
-| # downloads        | 2294845 |
+| # releases         | 17 |
+| # dependents       | 141 |
+| # downloads        | 3906459 |
 | # stars            | 4 |
 
 ## Links

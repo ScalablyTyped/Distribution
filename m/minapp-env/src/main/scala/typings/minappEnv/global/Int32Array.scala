@@ -7,7 +7,7 @@ import typings.minappEnv.Int32ArrayConstructor
 import typings.minappEnv.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Int32Array")
 @js.native
@@ -20,8 +20,6 @@ class Int32Array protected ()
   def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
   def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
 }
-
 @JSGlobal("Int32Array")
 @js.native
 object Int32Array extends TopLevel[Int32ArrayConstructor]
-

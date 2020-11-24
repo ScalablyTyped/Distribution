@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Targethttpsproxies")
 @js.native
 class ResourceTargethttpsproxies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.targetHttpsProxies.aggregatedList
     * @desc Retrieves the list of all TargetHttpsProxy resources, regional and
@@ -49,6 +49,9 @@ class ResourceTargethttpsproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetHttpsProxyAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.targetHttpsProxies.delete
     * @desc Deletes the specified TargetHttpsProxy resource.
@@ -79,6 +82,7 @@ class ResourceTargethttpsproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetHttpsProxies.get
     * @desc Returns the specified TargetHttpsProxy resource. Gets a list of
@@ -112,6 +116,7 @@ class ResourceTargethttpsproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetHttpsProxy]
   ): Unit = js.native
+  
   /**
     * compute.targetHttpsProxies.insert
     * @desc Creates a TargetHttpsProxy resource in the specified project using
@@ -143,6 +148,7 @@ class ResourceTargethttpsproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetHttpsProxies.list
     * @desc Retrieves the list of TargetHttpsProxy resources available to the
@@ -179,6 +185,7 @@ class ResourceTargethttpsproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetHttpsProxyList]
   ): Unit = js.native
+  
   /**
     * compute.targetHttpsProxies.setQuicOverride
     * @desc Sets the QUIC override policy for TargetHttpsProxy.
@@ -213,6 +220,7 @@ class ResourceTargethttpsproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetHttpsProxies.setSslCertificates
     * @desc Replaces SslCertificates for TargetHttpsProxy.
@@ -247,6 +255,7 @@ class ResourceTargethttpsproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetHttpsProxies.setSslPolicy
     * @desc Sets the SSL policy for TargetHttpsProxy. The SSL policy specifies
@@ -284,6 +293,7 @@ class ResourceTargethttpsproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetHttpsProxies.setUrlMap
     * @desc Changes the URL map for TargetHttpsProxy.
@@ -315,6 +325,7 @@ class ResourceTargethttpsproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetHttpsProxies.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -349,4 +360,3 @@ class ResourceTargethttpsproxies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

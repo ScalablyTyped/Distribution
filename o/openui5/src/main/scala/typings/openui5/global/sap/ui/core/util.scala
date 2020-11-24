@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.mvc.HTMLView
 import typings.openui5.sap.ui.core.mvc.XMLView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.util")
 @js.native
 object util extends js.Object {
+  
   @js.native
   class Export protected ()
     extends typings.openui5.sap.ui.core.util.Export {
@@ -100,6 +101,27 @@ object util extends js.Object {
   }
   
   @js.native
+  object File extends js.Object {
+    
+    /**
+      * <p>Triggers a download / save action of the given file.</p><p>There are limitations for this feature
+      * in some browsers:<p><p><b>Internet Explorer 8 / 9</b><br>Some file extensions on some operating
+      * systems are not working due to a bug in IE.Therefore 'txt' will be used as file extension if the
+      * problem is occurring.</p><p><b>Safari (OS X / iOS)</b><br>A new window/tab will be opened. In OS X
+      * the user has to manually save the file (CMD + S), choose "page source" and specify a filename.In iOS
+      * the content can be opened in another app (Mail, Notes, ...) or copied to the clipboard.In case the
+      * popup blocker prevents this action, an error will be thrown which can be used to notify the user to
+      * disable it.</p><p><b>Android Browser</b><br>Not supported</p>
+      * @param sData file content
+      * @param sFileName file name
+      * @param sFileExtension file extension
+      * @param sMimeType file mime-type
+      * @param sCharset file charset
+      */
+    def save(sData: String, sFileName: String, sFileExtension: String, sMimeType: String, sCharset: String): Unit = js.native
+  }
+  
+  @js.native
   abstract class MockServer protected ()
     extends typings.openui5.sap.ui.core.util.MockServer {
     /**
@@ -122,27 +144,8 @@ object util extends js.Object {
   }
   
   @js.native
-  object File extends js.Object {
-    /**
-      * <p>Triggers a download / save action of the given file.</p><p>There are limitations for this feature
-      * in some browsers:<p><p><b>Internet Explorer 8 / 9</b><br>Some file extensions on some operating
-      * systems are not working due to a bug in IE.Therefore 'txt' will be used as file extension if the
-      * problem is occurring.</p><p><b>Safari (OS X / iOS)</b><br>A new window/tab will be opened. In OS X
-      * the user has to manually save the file (CMD + S), choose "page source" and specify a filename.In iOS
-      * the content can be opened in another app (Mail, Notes, ...) or copied to the clipboard.In case the
-      * popup blocker prevents this action, an error will be thrown which can be used to notify the user to
-      * disable it.</p><p><b>Android Browser</b><br>Not supported</p>
-      * @param sData file content
-      * @param sFileName file name
-      * @param sFileExtension file extension
-      * @param sMimeType file mime-type
-      * @param sCharset file charset
-      */
-    def save(sData: String, sFileName: String, sFileExtension: String, sMimeType: String, sCharset: String): Unit = js.native
-  }
-  
-  @js.native
   object serializer extends js.Object {
+    
     @js.native
     class HTMLViewSerializer protected ()
       extends typings.openui5.sap.ui.core.util.serializer.HTMLViewSerializer {
@@ -236,6 +239,7 @@ object util extends js.Object {
     
     @js.native
     object delegate extends js.Object {
+      
       @js.native
       /**
         * Abstract serializer delegate class. All delegates must extend from this class and implement the
@@ -299,10 +303,6 @@ object util extends js.Object {
           fnMemorizePackage: js.Any
         ) = this()
       }
-      
     }
-    
   }
-  
 }
-

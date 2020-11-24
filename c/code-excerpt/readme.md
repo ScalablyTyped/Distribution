@@ -11,8 +11,8 @@ Extract code excerpts
 | Full name          | code-excerpt |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 7690493 |
+| # dependents       | 10 |
+| # downloads        | 8056233 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Detects what package manager was used for installation
 | ------------------ | :-------------: |
 | Full name          | which-pm |
 | Keywords           | npm, pnpm, yarn |
-| # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 1957288 |
+| # releases         | 2 |
+| # dependents       | 8 |
+| # downloads        | 2630914 |
 | # stars            | 0 |
 
 ## Links

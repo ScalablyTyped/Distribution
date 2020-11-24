@@ -6,15 +6,18 @@ import typings.std.Record
 import typings.wordpressBlockEditor.urlInputMod.URLInput.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/block-editor/components/url-input", JSImport.Namespace)
 @js.native
 object urlInputMod extends js.Object {
+  
   @js.native
   object URLInput extends js.Object {
+    
     @js.native
     trait Props extends js.Object {
+      
       /**
         * By default, the input will gain focus when it is rendered, as typically it is displayed
         * conditionally. For example when clicking on `URLInputButton` or editing a block.
@@ -23,11 +26,14 @@ object urlInputMod extends js.Object {
         * @defaultValue true
         */
       var autoFocus: js.UndefOr[Boolean] = js.native
+      
       var children: js.UndefOr[scala.Nothing] = js.native
+      
       /**
         * Adds and optional class to the parent `div` that wraps the URLInput field and popover.
         */
       var className: js.UndefOr[String] = js.native
+      
       /**
         * Provides additional control over whether suggestions are disabled.
         *
@@ -43,19 +49,24 @@ object urlInputMod extends js.Object {
         * items are found.
         */
       var disableSuggestions: js.UndefOr[Boolean] = js.native
+      
       var hasBorder: js.UndefOr[Boolean] = js.native
+      
       var id: js.UndefOr[String] = js.native
+      
       var isFullWidth: js.UndefOr[Boolean] = js.native
-      /**
-        * This should be set to the attribute (or component state) property used to store the URL.
-        */
-      var value: String = js.native
+      
       /**
         * Called when the value changes. The second parameter is `null` unless the user selects a
         * post from the suggestions dropdown.
         */
       def onChange(url: String): Unit = js.native
       def onChange(url: String, post: PostType): Unit = js.native
+      
+      /**
+        * This should be set to the attribute (or component state) property used to store the URL.
+        */
+      var value: String = js.native
     }
     
     // TODO: if PostType is ever typed import it and use it here
@@ -64,6 +75,4 @@ object urlInputMod extends js.Object {
   
   @js.native
   object default extends TopLevel[ComponentType[Props]]
-  
 }
-

@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Iffmpeg
@@ -15,4 +15,3 @@ trait Iffmpeg
       /* cb */ js.Function2[/* err */ Error, /* video */ Video, Unit], 
       js.Promise[Video]
     ]
-

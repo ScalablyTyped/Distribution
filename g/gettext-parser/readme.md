@@ -10,9 +10,9 @@ Parse and compile gettext po and mo files to/from json, nothing more, nothing le
 | ------------------ | :-------------: |
 | Full name          | gettext-parser |
 | Keywords           | i18n, l10n, gettext, mo, po |
-| # releases         | 10 |
-| # dependents       | 152 |
-| # downloads        | 7890673 |
+| # releases         | 12 |
+| # dependents       | 162 |
+| # downloads        | 9919540 |
 | # stars            | 5 |
 
 ## Links

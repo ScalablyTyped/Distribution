@@ -4,7 +4,7 @@ import typings.actionsOnGoogle.browseMod.BrowseCarouselOptions
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsCarouselBrowseItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google", "BrowseCarousel")
 @js.native
@@ -26,4 +26,3 @@ class BrowseCarousel protected ()
     */
   def this(options: BrowseCarouselOptions) = this()
 }
-

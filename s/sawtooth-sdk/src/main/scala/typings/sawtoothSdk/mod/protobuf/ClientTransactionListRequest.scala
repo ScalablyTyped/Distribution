@@ -8,7 +8,7 @@ import typings.sawtoothSdk.protobufMod.IClientTransactionListRequest
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ClientTransactionListRequest")
 @js.native
@@ -20,11 +20,11 @@ class ClientTransactionListRequest ()
   extends typings.sawtoothSdk.protobufMod.ClientTransactionListRequest {
   def this(properties: IClientTransactionListRequest) = this()
 }
-
 /* static members */
 @JSImport("sawtooth-sdk", "protobuf.ClientTransactionListRequest")
 @js.native
 object ClientTransactionListRequest extends js.Object {
+  
   /**
     * Creates a new ClientTransactionListRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -32,6 +32,7 @@ object ClientTransactionListRequest extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.ClientTransactionListRequest = js.native
   def create(properties: IClientTransactionListRequest): typings.sawtoothSdk.protobufMod.ClientTransactionListRequest = js.native
+  
   /**
     * Decodes a ClientTransactionListRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,6 +45,7 @@ object ClientTransactionListRequest extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ClientTransactionListRequest = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientTransactionListRequest = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ClientTransactionListRequest = js.native
+  
   /**
     * Decodes a ClientTransactionListRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -53,6 +55,7 @@ object ClientTransactionListRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ClientTransactionListRequest = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientTransactionListRequest = js.native
+  
   /**
     * Encodes the specified ClientTransactionListRequest message. Does not implicitly {@link ClientTransactionListRequest.verify|verify} messages.
     * @param message ClientTransactionListRequest message or plain object to encode
@@ -61,6 +64,7 @@ object ClientTransactionListRequest extends js.Object {
     */
   def encode(message: IClientTransactionListRequest): Writer = js.native
   def encode(message: IClientTransactionListRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ClientTransactionListRequest message, length delimited. Does not implicitly {@link ClientTransactionListRequest.verify|verify} messages.
     * @param message ClientTransactionListRequest message or plain object to encode
@@ -69,12 +73,14 @@ object ClientTransactionListRequest extends js.Object {
     */
   def encodeDelimited(message: IClientTransactionListRequest): Writer = js.native
   def encodeDelimited(message: IClientTransactionListRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ClientTransactionListRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientTransactionListRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ClientTransactionListRequest = js.native
+  
   /**
     * Creates a plain object from a ClientTransactionListRequest message. Also converts values to other types if specified.
     * @param message ClientTransactionListRequest
@@ -83,6 +89,7 @@ object ClientTransactionListRequest extends js.Object {
     */
   def toObject(message: typings.sawtoothSdk.protobufMod.ClientTransactionListRequest): StringDictionary[js.Any] = js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.ClientTransactionListRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ClientTransactionListRequest message.
     * @param message Plain object to verify
@@ -90,4 +97,3 @@ object ClientTransactionListRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

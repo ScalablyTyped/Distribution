@@ -2,7 +2,7 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new ContactPoint.
@@ -29,4 +29,3 @@ class ContactPoint protected ()
     normal: typings.playcanvas.pc.Vec3
   ) = this()
 }
-

@@ -4,19 +4,22 @@ import typings.openui5.sap.ui.base.Object
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.test.gherkin")
 @js.native
 object gherkin extends js.Object {
+  
   @js.native
   trait StepDefinitions extends Object {
+    
     /**
       * Closes the application and cleans up any mess made by the tests. To avoid erroneous exceptions
       * during testexecution, make sure that it is safe to run this method even if the application was never
       * started.
       */
     def closeApplication(): Unit = js.native
+    
     /**
       * Registers the step definitions by calling the method 'register'. The order of the register calls is
       * important.The first step definition whose regular expression matches the step text is the one that
@@ -24,6 +27,7 @@ object gherkin extends js.Object {
       * wrote is checked first).
       */
     def init(): Unit = js.native
+    
     /**
       * Registers a step definition.
       * @param rRegex the regular expression that matches the feature file step (with leading 'Given',
@@ -42,6 +46,4 @@ object gherkin extends js.Object {
       */
     def register(rRegex: RegExp, fnFunc: js.Any): Unit = js.native
   }
-  
 }
-

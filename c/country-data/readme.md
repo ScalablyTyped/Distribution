@@ -10,9 +10,9 @@ Data about countries - like their ISO codes and currencies
 | ------------------ | :-------------: |
 | Full name          | country-data |
 | Keywords           | data, country |
-| # releases         | 1 |
-| # dependents       | 64 |
-| # downloads        | 1602079 |
+| # releases         | 0 |
+| # dependents       | 73 |
+| # downloads        | 1879420 |
 | # stars            | 21 |
 
 ## Links

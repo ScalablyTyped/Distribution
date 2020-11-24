@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nanoscheduler"
-version := "1.0-dt-20200706Z-84fa4c"
+version := "1.0-dt-20200706Z-c2829b"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

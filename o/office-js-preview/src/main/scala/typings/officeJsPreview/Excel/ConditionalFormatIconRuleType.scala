@@ -2,11 +2,10 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ConditionalFormatIconRuleType extends js.Object
-
 /**
   *
   * Represents the types of icon conditional format.
@@ -16,6 +15,7 @@ sealed trait ConditionalFormatIconRuleType extends js.Object
 @JSGlobal("Excel.ConditionalFormatIconRuleType")
 @js.native
 object ConditionalFormatIconRuleType extends js.Object {
+  
   @js.native
   sealed trait formula extends ConditionalFormatIconRuleType
   
@@ -30,6 +30,4 @@ object ConditionalFormatIconRuleType extends js.Object {
   
   @js.native
   sealed trait percentile extends ConditionalFormatIconRuleType
-  
 }
-

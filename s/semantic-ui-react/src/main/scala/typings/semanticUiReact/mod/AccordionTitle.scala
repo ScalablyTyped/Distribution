@@ -7,7 +7,7 @@ import typings.react.mod.ComponentState
 import typings.semanticUiReact.accordionTitleMod.AccordionTitleProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "AccordionTitle")
 @js.native
@@ -16,8 +16,6 @@ class AccordionTitle protected ()
   def this(props: AccordionTitleProps) = this()
   def this(props: AccordionTitleProps, context: js.Any) = this()
 }
-
 @JSImport("semantic-ui-react", "AccordionTitle")
 @js.native
 object AccordionTitle extends TopLevel[ComponentClass[AccordionTitleProps, ComponentState]]
-

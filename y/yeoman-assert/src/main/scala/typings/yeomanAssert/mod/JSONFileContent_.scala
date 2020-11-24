@@ -2,11 +2,12 @@ package typings.yeomanAssert.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yeoman-assert", "JSONFileContent")
 @js.native
 object JSONFileContent_ extends js.Object {
+  
   /**
     * Assert a JSON file contains the provided keys
     * @param filename
@@ -14,4 +15,3 @@ object JSONFileContent_ extends js.Object {
     */
   def apply(filename: String, content: js.Object): Unit = js.native
 }
-

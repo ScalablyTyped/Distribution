@@ -12,7 +12,7 @@ Run and access GTmetrix tests to measure website performance (unofficial)
 | Keywords           | api, gtmetrix, meassure, metrics, pagespeed, performance, screenshot, website, yslow |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 8998 |
+| # downloads        | 9390 |
 | # stars            | 2 |
 
 ## Links

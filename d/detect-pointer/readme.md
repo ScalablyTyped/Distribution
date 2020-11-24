@@ -12,13 +12,13 @@ JavaScript wrapper for pointer and any-pointer media queries
 | Keywords           | detect, pointer, any-pointer, media query |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 766283 |
+| # downloads        | 1269101 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/rafrex/detect-pointer#readme)
-- [Bugs](https://github.com/rafrex/detect-pointer/issues)
-- [Repository](https://github.com/rafrex/detect-pointer)
+- [Homepage](https://github.com/rafgraph/detect-pointer#readme)
+- [Bugs](https://github.com/rafgraph/detect-pointer/issues)
+- [Repository](https://github.com/rafgraph/detect-pointer)
 - [Npm](https://www.npmjs.com/package/detect-pointer)
     
 

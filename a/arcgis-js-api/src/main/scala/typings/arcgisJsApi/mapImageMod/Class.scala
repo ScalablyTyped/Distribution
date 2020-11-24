@@ -4,11 +4,10 @@ import typings.arcgisJsApi.esri.MapImage
 import typings.arcgisJsApi.esri.MapImageProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/layers/support/MapImage", JSImport.Namespace)
 @js.native
 class Class () extends MapImage {
   def this(properties: MapImageProperties) = this()
 }
-

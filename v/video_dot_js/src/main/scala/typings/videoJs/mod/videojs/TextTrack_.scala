@@ -4,7 +4,7 @@ import typings.videoJs.mod.videojs.TextTrack.Mode
 import typings.videoJs.mod.videojs.TextTrackCueList.TextTrackCue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create an instance of this class.
@@ -42,24 +42,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TextTrack_ extends Track {
+  
   /**
     * The list text track cues that are currently active for this TextTrack.
     */
   var activeCues: TextTrackCueList = js.native
-  /**
-    * @The text track cue list for this TextTrack.
-    */
-  var cues: TextTrackCueList = js.native
-  /**
-    * If this track was set to be on or off by default. Cannot be changed after creation.
-    */
-  val default: Boolean = js.native
-  /**
-    * Set the mode of this TextTrack to a valid {@link TextTrack~Mode}. Will
-    * not be set if setting to an invalid mode.
-    * @fires TextTrack#modechange
-    */
-  var mode: Mode = js.native
+  
   /**
     * Add a cue to the internal list of cues.
     *
@@ -67,6 +55,24 @@ trait TextTrack_ extends Track {
     *        The cue to add to our internal list
     */
   def addCue(cue: TextTrackCue): Unit = js.native
+  
+  /**
+    * @The text track cue list for this TextTrack.
+    */
+  var cues: TextTrackCueList = js.native
+  
+  /**
+    * If this track was set to be on or off by default. Cannot be changed after creation.
+    */
+  val default: Boolean = js.native
+  
+  /**
+    * Set the mode of this TextTrack to a valid {@link TextTrack~Mode}. Will
+    * not be set if setting to an invalid mode.
+    * @fires TextTrack#modechange
+    */
+  var mode: Mode = js.native
+  
   /**
     * Remove a cue from our internal list
     *
@@ -75,4 +81,3 @@ trait TextTrack_ extends Track {
     */
   def removeCue(cue: TextTrackCue): Unit = js.native
 }
-

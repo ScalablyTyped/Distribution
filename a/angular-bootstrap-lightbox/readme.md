@@ -1,6 +1,7 @@
 
 # Scala.js typings for angular-bootstrap-lightbox
 
+Typings are for version 0.12
 
 ## Library description:
 An AngularJS lightbox built using UI Bootstrap Modal.
@@ -11,7 +12,7 @@ An AngularJS lightbox built using UI Bootstrap Modal.
 | Keywords           | angular, lightbox, image, gallery |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 61839 |
+| # downloads        | 80981 |
 | # stars            | 2 |
 
 ## Links

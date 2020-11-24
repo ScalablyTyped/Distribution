@@ -3,11 +3,12 @@ package typings.bip38.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bip38", "encrypt")
 @js.native
 object encrypt extends js.Object {
+  
   def apply(buffer: Buffer, compressed: Boolean, passphrase: String): String = js.native
   def apply(
     buffer: Buffer,
@@ -30,4 +31,3 @@ object encrypt extends js.Object {
     scryptParams: ScryptParams
   ): String = js.native
 }
-

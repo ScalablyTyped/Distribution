@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-align
 
-Typings are for version 4.0.1
+Typings are for version 4.0.9
 
 ## Library description:
 align ui component for react
@@ -10,9 +10,9 @@ align ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-align |
 | Keywords           | react, react-component, react-align, align |
-| # releases         | 17 |
+| # releases         | 22 |
 | # dependents       | 32 |
-| # downloads        | 36299098 |
+| # downloads        | 40195023 |
 | # stars            | 0 |
 
 ## Links

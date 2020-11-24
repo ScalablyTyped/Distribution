@@ -3,11 +3,12 @@ package typings.appBuilderLib.licenseMod
 import typings.appBuilderLib.platformPackagerMod.PlatformPackager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("app-builder-lib/out/util/license", "getNotLocalizedLicenseFile")
 @js.native
 object getNotLocalizedLicenseFile extends js.Object {
+  
   def apply(custom: js.UndefOr[scala.Nothing], packager: PlatformPackager[_]): js.Promise[String | Null] = js.native
   def apply(
     custom: js.UndefOr[scala.Nothing],
@@ -19,4 +20,3 @@ object getNotLocalizedLicenseFile extends js.Object {
   def apply(custom: Null, packager: PlatformPackager[_]): js.Promise[String | Null] = js.native
   def apply(custom: Null, packager: PlatformPackager[_], supportedExtension: js.Array[String]): js.Promise[String | Null] = js.native
 }
-

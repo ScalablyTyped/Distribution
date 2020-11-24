@@ -4,7 +4,7 @@ import typings.openui5.sap.ui.model.Context
 import typings.openui5.sap.ui.model.Model
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.odata.ODataListBinding")
 @js.native
@@ -53,4 +53,3 @@ class ODataListBinding protected ()
     mParameters: js.Any
   ) = this()
 }
-

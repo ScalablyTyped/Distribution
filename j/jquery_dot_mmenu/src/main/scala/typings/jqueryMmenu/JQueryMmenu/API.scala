@@ -10,10 +10,11 @@ import typings.jqueryMmenu.jqueryMmenuStrings.setSelected
 import typings.jqueryMmenu.jqueryMmenuStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait API extends js.Object {
+  
   /**
     * Trigger non-specialized signature method
     * @param methodName
@@ -44,30 +45,36 @@ trait API extends js.Object {
   /** @see update() */
   @JSName("bind")
   def bind_update(methodName: update, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Trigger this method to close all opened panels and go back to the first panel.
     */
   def closeAllPanels(): JQuery = js.native
+  
   /**
     * Trigger this method to close a panel
     * (only available if the "slidingSubmenus" option is set to false).
     * @param panel
     */
   def closePanel(panel: JQuery): Unit = js.native
+  
   /**
     * Trigger this method to get the class instance for the menu.
     */
   def getInstance(): Unit = js.native
+  
   /**
     * Trigger this method to (re)initialize a newly added panel.
     * @param panel The panel to (re)initialize.
     */
   def init(panel: JQuery): Unit = js.native
+  
   /**
     * Trigger this method to open a panel.
     * @param panel The panel to open.
     */
   def openPanel(panel: JQuery): Unit = js.native
+  
   /**
     * Trigger this method to set or unset a list item as "selected".
     * @param li The list item to set or unset as "selected".
@@ -75,9 +82,9 @@ trait API extends js.Object {
     */
   def setSelected(li: JQuery): Unit = js.native
   def setSelected(li: JQuery, selected: Boolean): Unit = js.native
+  
   /**
     * Trigger this method to update the appearance for the menu.
     */
   def update(): Unit = js.native
 }
-

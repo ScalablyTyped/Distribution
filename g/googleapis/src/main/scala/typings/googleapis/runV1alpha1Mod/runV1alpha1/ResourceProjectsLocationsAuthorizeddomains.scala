@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/run/v1alpha1", "run_v1alpha1.Resource$Projects$Locations$Authorizeddomains")
 @js.native
 class ResourceProjectsLocationsAuthorizeddomains protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * run.projects.locations.authorizeddomains.list
     * @desc RPC to list authorized domains.
@@ -47,4 +49,3 @@ class ResourceProjectsLocationsAuthorizeddomains protected () extends js.Object 
     callback: BodyResponseCallback[SchemaListAuthorizedDomainsResponse]
   ): Unit = js.native
 }
-

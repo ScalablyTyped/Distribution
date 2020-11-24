@@ -3,7 +3,7 @@ package typings.couchbase.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Authenticator for using classic authentication.
@@ -19,4 +19,3 @@ class ClassicAuthenticator protected () extends Authenticator {
     */
   def this(buckets: StringDictionary[String], username: String, password: String) = this()
 }
-

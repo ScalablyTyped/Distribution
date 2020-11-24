@@ -10,16 +10,21 @@ import typings.std.SVGRectElement
 import typings.std.SVGSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/components/primitives/svg", JSImport.Namespace)
 @js.native
 object svgMod extends js.Object {
+  
   val Circle: ComponentType[SVGProps[SVGCircleElement]] = js.native
+  
   val G: ComponentType[SVGProps[SVGGElement]] = js.native
+  
   val Path: ComponentType[SVGProps[SVGPathElement]] = js.native
+  
   val Polygon: ComponentType[SVGProps[SVGPolygonElement]] = js.native
+  
   val Rect: ComponentType[SVGProps[SVGRectElement]] = js.native
+  
   val SVG: ComponentType[SVGProps[SVGSVGElement]] = js.native
 }
-

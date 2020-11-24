@@ -5,20 +5,15 @@ import typings.electron.electronStrings.data
 import typings.electron.electronStrings.end
 import typings.electron.electronStrings.error
 import typings.node.Buffer
-import typings.node.eventsMod.global.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IncomingMessage extends EventEmitter {
-  var headers: Record[String, js.Array[String]] = js.native
-  var httpVersion: String = js.native
-  var httpVersionMajor: Double = js.native
-  var httpVersionMinor: Double = js.native
-  var statusCode: Double = js.native
-  var statusMessage: String = js.native
+  
   @JSName("addListener")
   def addListener_aborted(event: aborted, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -27,7 +22,16 @@ trait IncomingMessage extends EventEmitter {
   def addListener_end(event: end, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_error(event: error, listener: js.Function): this.type = js.native
-  // Docs: http://electronjs.org/docs/api/incoming-message
+  
+  var headers: Record[String, String | js.Array[String]] = js.native
+  
+  var httpVersion: String = js.native
+  
+  var httpVersionMajor: Double = js.native
+  
+  var httpVersionMinor: Double = js.native
+  
+  // Docs: https://electronjs.org/docs/api/incoming-message
   /**
     * Emitted when a request has been canceled during an ongoing HTTP transaction.
     */
@@ -56,6 +60,7 @@ trait IncomingMessage extends EventEmitter {
     */
   @JSName("on")
   def on_error(event: error, listener: js.Function): this.type = js.native
+  
   @JSName("once")
   def once_aborted(event: aborted, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -64,6 +69,7 @@ trait IncomingMessage extends EventEmitter {
   def once_end(event: end, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_error(event: error, listener: js.Function): this.type = js.native
+  
   @JSName("removeListener")
   def removeListener_aborted(event: aborted, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -72,5 +78,8 @@ trait IncomingMessage extends EventEmitter {
   def removeListener_end(event: end, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_error(event: error, listener: js.Function): this.type = js.native
+  
+  var statusCode: Double = js.native
+  
+  var statusMessage: String = js.native
 }
-

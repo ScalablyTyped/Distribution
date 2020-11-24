@@ -7,11 +7,12 @@ import typings.tensorflowTfjsData.textLineDatasetMod.TextLineDataset
 import typings.tensorflowTfjsData.typesMod.CSVConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-data/dist/datasets/csv_dataset", JSImport.Namespace)
 @js.native
 object csvDatasetMod extends js.Object {
+  
   @js.native
   class CSVDataset protected () extends Dataset[TensorContainer] {
     /**
@@ -48,19 +49,11 @@ object csvDatasetMod extends js.Object {
       */
     def this(input: DataSource) = this()
     def this(input: DataSource, csvConfig: CSVConfig) = this()
+    
     var base: TextLineDataset = js.native
+    
     var columnConfigs: js.Any = js.native
-    var columnNamesValidated: js.Any = js.native
-    var configuredColumnsOnly: js.Any = js.native
-    var delimWhitespace: js.Any = js.native
-    var delimiter: js.Any = js.native
-    var fullColumnNames: js.Any = js.native
-    var getBoolean: js.Any = js.native
-    var hasHeader: js.Any = js.native
-    val input: DataSource = js.native
-    var maybeReadHeaderLine: js.Any = js.native
-    var parseRow: js.Any = js.native
-    var setColumnNames: js.Any = js.native
+    
     /**
       * Returns column names of the csv dataset. If `configuredColumnsOnly` is
       * true, return column names in `columnConfigs`. If `configuredColumnsOnly` is
@@ -68,11 +61,33 @@ object csvDatasetMod extends js.Object {
       * `configuredColumnsOnly` is false and `columnNames` is not provided, return
       * all column names parsed from the csv file. For example usage please go to
       * `tf.data.csv`.
+      *
+      * @doc {heading: 'Data', subheading: 'Classes'}
       */
-    /** @doc {heading: 'Data', subheading: 'Classes'} */
     def columnNames(): js.Promise[js.Array[String]] = js.native
+    
+    var columnNamesValidated: js.Any = js.native
+    
+    var configuredColumnsOnly: js.Any = js.native
+    
+    var delimWhitespace: js.Any = js.native
+    
+    var delimiter: js.Any = js.native
+    
+    var fullColumnNames: js.Any = js.native
+    
+    var getBoolean: js.Any = js.native
+    
+    var hasHeader: js.Any = js.native
+    
+    val input: DataSource = js.native
+    
     def makeDataElement(line: String): TensorContainer = js.native
+    
+    var maybeReadHeaderLine: js.Any = js.native
+    
+    var parseRow: js.Any = js.native
+    
+    var setColumnNames: js.Any = js.native
   }
-  
 }
-

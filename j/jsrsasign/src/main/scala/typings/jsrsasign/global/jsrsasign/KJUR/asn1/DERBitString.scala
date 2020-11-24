@@ -7,7 +7,7 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.HexParam
 import typings.jsrsasign.jsrsasignBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * class for ASN.1 DER encoded BitString primitive
@@ -53,11 +53,11 @@ class DERBitString ()
   def this(params: BinParam) = this()
   def this(params: HexParam) = this()
 }
-
 /* static members */
 @JSGlobal("jsrsasign.KJUR.asn1.DERBitString")
 @js.native
 object DERBitString extends js.Object {
+  
   /**
     * generate an array of falses with specified length
     * @param nLength length of array to generate
@@ -70,4 +70,3 @@ object DERBitString extends js.Object {
     */
   def newFalseArray(nLength: Double): js.Array[`false`] = js.native
 }
-

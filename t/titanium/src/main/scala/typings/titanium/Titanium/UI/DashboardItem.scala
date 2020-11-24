@@ -7,29 +7,14 @@ import typings.titanium.titaniumStrings.delete
 import typings.titanium.titaniumStrings.move
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A dashboard item is a view that is displayed as an icon in a <Titanium.UI.DashboardView>.
   */
 @js.native
 trait DashboardItem extends Proxy {
-  /**
-    * Integer value displayed in a badge.
-    */
-  var badge: Double = js.native
-  /**
-    * Determines whether this item can be deleted when it edit mode.
-    */
-  var canDelete: Boolean = js.native
-  /**
-    * Image or path to image to display in the item by default.
-    */
-  var image: String | Blob = js.native
-  /**
-    * Image or path to image to display in the item as it is selected.
-    */
-  var selectedImage: String | Blob = js.native
+  
   /**
     * Adds the specified callback as an event listener for the named event.
     */
@@ -48,6 +33,17 @@ trait DashboardItem extends Proxy {
     name: move,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ DashboardItemMoveEvent, Unit]
   ): Unit = js.native
+  
+  /**
+    * Integer value displayed in a badge.
+    */
+  var badge: Double = js.native
+  
+  /**
+    * Determines whether this item can be deleted when it edit mode.
+    */
+  var canDelete: Boolean = js.native
+  
   /**
     * Fires a synthesized event to any registered listeners.
     */
@@ -63,26 +59,36 @@ trait DashboardItem extends Proxy {
   def fireEvent_move(name: move): Unit = js.native
   @JSName("fireEvent")
   def fireEvent_move(name: move, event: DashboardItemMoveEvent): Unit = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.DashboardItem.badge> property.
     * @deprecated Access <Titanium.UI.DashboardItem.badge> instead.
     */
   def getBadge(): Double = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.DashboardItem.canDelete> property.
     * @deprecated Access <Titanium.UI.DashboardItem.canDelete> instead.
     */
   def getCanDelete(): Boolean = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.DashboardItem.image> property.
     * @deprecated Access <Titanium.UI.DashboardItem.image> instead.
     */
   def getImage(): String | Blob = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.DashboardItem.selectedImage> property.
     * @deprecated Access <Titanium.UI.DashboardItem.selectedImage> instead.
     */
   def getSelectedImage(): String | Blob = js.native
+  
+  /**
+    * Image or path to image to display in the item by default.
+    */
+  var image: String | Blob = js.native
+  
   /**
     * Removes the specified callback as an event listener for the named event.
     */
@@ -101,22 +107,31 @@ trait DashboardItem extends Proxy {
     name: move,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ DashboardItemMoveEvent, Unit]
   ): Unit = js.native
+  
+  /**
+    * Image or path to image to display in the item as it is selected.
+    */
+  var selectedImage: String | Blob = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.DashboardItem.badge> property.
     * @deprecated Set the value using <Titanium.UI.DashboardItem.badge> instead.
     */
   def setBadge(badge: Double): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.DashboardItem.canDelete> property.
     * @deprecated Set the value using <Titanium.UI.DashboardItem.canDelete> instead.
     */
   def setCanDelete(canDelete: Boolean): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.DashboardItem.image> property.
     * @deprecated Set the value using <Titanium.UI.DashboardItem.image> instead.
     */
   def setImage(image: String): Unit = js.native
   def setImage(image: Blob): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.DashboardItem.selectedImage> property.
     * @deprecated Set the value using <Titanium.UI.DashboardItem.selectedImage> instead.
@@ -124,4 +139,3 @@ trait DashboardItem extends Proxy {
   def setSelectedImage(selectedImage: String): Unit = js.native
   def setSelectedImage(selectedImage: Blob): Unit = js.native
 }
-

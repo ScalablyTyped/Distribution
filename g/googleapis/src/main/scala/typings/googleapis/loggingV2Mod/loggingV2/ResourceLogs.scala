@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/logging/v2", "logging_v2.Resource$Logs")
 @js.native
 class ResourceLogs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * logging.logs.delete
     * @desc Deletes all the log entries in a log. The log reappears if it
@@ -43,6 +45,7 @@ class ResourceLogs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * logging.logs.list
     * @desc Lists the logs in projects, organizations, folders, or billing
@@ -75,4 +78,3 @@ class ResourceLogs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListLogsResponse]
   ): Unit = js.native
 }
-

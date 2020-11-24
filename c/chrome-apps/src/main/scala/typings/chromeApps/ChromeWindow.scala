@@ -6,7 +6,7 @@ import typings.std.History
 import typings.std.Location
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////////////
 // WEB APIs & Warnings //
@@ -23,24 +23,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ChromeWindow extends js.Object {
+  
   ///
   /// Other APIs
   ///
   var AudioContext: InstantiableAudioContext with Instantiable0[typings.std.global.AudioContext] = js.native
-  /**
-    * ❗ window.history is not available in packaged apps. ❗
-    * Links open up with the system web browser.
-    */
-  val history: History = js.native
-  /**
-    * ❗ window.localStorage is not available in packaged apps. Use chrome.storage.local instead. ❗
-    */
-  // localStorage: typeof localStorage;
-  /**
-    * ❗ window.location is not available in packaged apps. ❗
-    * Links open up with the system web browser.
-    */
-  var location: Location = js.native
+  
   ///
   /// Disabled Web Features
   /// https://developer.chrome.com/apps/app_deprecated
@@ -51,11 +39,27 @@ trait ChromeWindow extends js.Object {
     */
   def alert(): Unit = js.native
   def alert(message: js.Any): Unit = js.native
+  
   /**
     * ❗ confirm is not available in packaged apps. ❗
     * Work-around: Use a custom lightbox / popup.
     */
   def confirm(): Boolean = js.native
   def confirm(message: String): Boolean = js.native
+  
+  /**
+    * ❗ window.history is not available in packaged apps. ❗
+    * Links open up with the system web browser.
+    */
+  val history: History = js.native
+  
+  /**
+    * ❗ window.localStorage is not available in packaged apps. Use chrome.storage.local instead. ❗
+    */
+  // localStorage: typeof localStorage;
+  /**
+    * ❗ window.location is not available in packaged apps. ❗
+    * Links open up with the system web browser.
+    */
+  var location: Location = js.native
 }
-

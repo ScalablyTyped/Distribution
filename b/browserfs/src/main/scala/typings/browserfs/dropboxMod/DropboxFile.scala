@@ -9,7 +9,7 @@ import typings.node.Buffer
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("browserfs/dist/node/backend/Dropbox", "DropboxFile")
 @js.native
@@ -29,14 +29,19 @@ class DropboxFile protected ()
     _stat: typings.browserfs.nodeFsStatsMod.default,
     contents: Buffer
   ) = this()
+  
   /* InferMemberOverrides */
   override def chmod(mode: Double, cb: BFSOneArgCallback): Unit = js.native
+  
   /* InferMemberOverrides */
   override def chmodSync(mode: Double): Unit = js.native
+  
   /* InferMemberOverrides */
   override def chown(uid: Double, gid: Double, cb: BFSOneArgCallback): Unit = js.native
+  
   /* InferMemberOverrides */
   override def chownSync(uid: Double, gid: Double): Unit = js.native
+  
   /**
     * **Core**: Asynchronous close. Must be implemented by subclasses of this
     * class.
@@ -44,15 +49,19 @@ class DropboxFile protected ()
     */
   /* InferMemberOverrides */
   override def close(cb: BFSOneArgCallback): Unit = js.native
+  
   /**
     * **Core**: Synchronous close.
     */
   /* InferMemberOverrides */
   override def closeSync(): Unit = js.native
+  
   /* InferMemberOverrides */
   override def datasync(cb: BFSOneArgCallback): Unit = js.native
+  
   /* InferMemberOverrides */
   override def datasyncSync(): Unit = js.native
+  
   /**
     * Get the current file position.
     *
@@ -64,6 +73,7 @@ class DropboxFile protected ()
     */
   /* InferMemberOverrides */
   override def getPos(): Double with js.UndefOr[Double] = js.native
+  
   /**
     * Read data from the file.
     * @param [BrowserFS.node.Buffer] buffer The buffer that the data will be
@@ -85,6 +95,7 @@ class DropboxFile protected ()
     position: Double,
     cb: BFSThreeArgCallback[Double, Buffer]
   ): Unit = js.native
+  
   /**
     * Read data from the file.
     * @param [BrowserFS.node.Buffer] buffer The buffer that the data will be
@@ -99,21 +110,26 @@ class DropboxFile protected ()
     */
   /* InferMemberOverrides */
   override def readSync(buffer: Buffer, offset: Double, length: Double, position: Double): Double = js.native
+  
   /**
     * Asynchronous `stat`.
     * @param [Function(BrowserFS.ApiError, BrowserFS.node.fs.Stats)] cb
     */
   /* InferMemberOverrides */
   override def stat(cb: BFSCallback[typings.browserfs.nodeFsStatsMod.default]): Unit = js.native
+  
   /**
     * Synchronous `stat`.
     */
   /* InferMemberOverrides */
   override def statSync(): typings.browserfs.nodeFsStatsMod.default = js.native
+  
   /* InferMemberOverrides */
   override def sync(cb: BFSOneArgCallback): Unit = js.native
+  
   /* InferMemberOverrides */
   override def syncSync(): Unit = js.native
+  
   /**
     * Asynchronous truncate.
     * @param [Number] len
@@ -121,16 +137,20 @@ class DropboxFile protected ()
     */
   /* InferMemberOverrides */
   override def truncate(len: Double, cb: BFSOneArgCallback): Unit = js.native
+  
   /**
     * Synchronous truncate.
     * @param [Number] len
     */
   /* InferMemberOverrides */
   override def truncateSync(len: Double): Unit = js.native
+  
   /* InferMemberOverrides */
   override def utimes(atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+  
   /* InferMemberOverrides */
   override def utimesSync(atime: Date, mtime: Date): Unit = js.native
+  
   /**
     * Write buffer to the file.
     * Note that it is unsafe to use fs.write multiple times on the same file
@@ -153,6 +173,7 @@ class DropboxFile protected ()
     position: Double,
     cb: BFSThreeArgCallback[Double, Buffer]
   ): Unit = js.native
+  
   /**
     * Write buffer to the file.
     * Note that it is unsafe to use fs.writeSync multiple times on the same file
@@ -169,4 +190,3 @@ class DropboxFile protected ()
   /* InferMemberOverrides */
   override def writeSync(buffer: Buffer, offset: Double, length: Double, position: Double): Double = js.native
 }
-

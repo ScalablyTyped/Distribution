@@ -4,7 +4,7 @@ import typings.pahoMqtt.mod.global.Paho.MQTT.TypedArray
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An application message, sent or received.
@@ -20,4 +20,3 @@ class Message protected ()
   def this(payload: TypedArray) = this()
   def this(payload: ArrayBuffer) = this()
 }
-

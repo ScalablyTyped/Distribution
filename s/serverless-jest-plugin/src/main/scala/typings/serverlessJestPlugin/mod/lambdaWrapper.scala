@@ -8,14 +8,17 @@ import typings.lambdaWrapper.anon.PartialContext
 import typings.lambdaWrapper.mod.Wrapped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("serverless-jest-plugin", "lambdaWrapper")
 @js.native
 object lambdaWrapper extends js.Object {
+  
   def init(mod: js.Any, options: js.Any): Unit = js.native
+  
   def run(event: js.Any, callback: Callback[_]): js.Promise[_] = js.native
   def run(event: js.Any, context: PartialContext, callback: Callback[_]): js.Promise[_] = js.native
+  
   def wrap(mod: LambdaFunction): Wrapped[_, _] = js.native
   def wrap(mod: LambdaFunction, options: js.Object): Wrapped[_, _] = js.native
   def wrap[TEvent, TResult, THandlerName /* <: String */](
@@ -30,4 +33,3 @@ object lambdaWrapper extends js.Object {
     options: Handler[THandlerName]
   ): Wrapped[TEvent, TResult] = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.awsSdkClientDynamodbNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-dynamodb-node/types/UpdateGlobalTableExceptionsUnion", JSImport.Namespace)
 @js.native
 object updateGlobalTableExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError
     - typings.awsSdkClientDynamodbNode.typesGlobalTableNotFoundExceptionMod.GlobalTableNotFoundException
@@ -15,6 +16,4 @@ object updateGlobalTableExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientDynamodbNode.typesTableNotFoundExceptionMod.TableNotFoundException
   */
   trait UpdateGlobalTableExceptionsUnion extends js.Object
-  
 }
-

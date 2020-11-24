@@ -10,15 +10,15 @@ Typings are for version 1.4.5
 | ------------------ | :-------------: |
 | Full name          | socket.io-client |
 | Keywords           | realtime, framework, websocket, tcp, events, client |
-| # releases         | 5 |
-| # dependents       | 3221 |
-| # downloads        | 160128012 |
+| # releases         | 10 |
+| # dependents       | 3816 |
+| # downloads        | 219264930 |
 | # stars            | 111 |
 
 ## Links
-- [Homepage](https://github.com/Automattic/socket.io-client#readme)
-- [Bugs](https://github.com/Automattic/socket.io-client/issues)
-- [Repository](https://github.com/Automattic/socket.io-client)
+- [Homepage](https://github.com/socketio/socket.io-client#readme)
+- [Bugs](https://github.com/socketio/socket.io-client/issues)
+- [Repository](https://github.com/socketio/socket.io-client)
 - [Npm](https://www.npmjs.com/package/socket.io-client)
     
 

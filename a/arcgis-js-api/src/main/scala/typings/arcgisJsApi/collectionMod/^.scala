@@ -7,7 +7,7 @@ import typings.arcgisJsApi.esri.Constructor
 import typings.arcgisJsApi.esri.Types
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/core/Collection", JSImport.Namespace)
 @js.native
@@ -15,12 +15,13 @@ class ^[T] () extends Collection[T] {
   def this(values: js.Array[_]) = this()
   def this(values: Collection[_]) = this()
 }
-
 @JSImport("esri/core/Collection", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def isCollection[T](value: js.Any): /* is arcgis-js-api.__esri.Collection<T> */ Boolean = js.native
   def isCollection[T](value: Collection[T]): /* is arcgis-js-api.__esri.Collection<T> */ Boolean = js.native
+  
   def ofType[T /* <: Base */, Base](`type`: Constructor[T]): Instantiable1[
     /* items */ js.UndefOr[js.Array[T] | Collection[T] | (Items[T, Base])], 
     Collection[T]
@@ -30,4 +31,3 @@ object ^ extends js.Object {
     Collection[T]
   ] = js.native
 }
-

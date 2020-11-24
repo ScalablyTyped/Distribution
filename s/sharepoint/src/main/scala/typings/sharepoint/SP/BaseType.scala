@@ -2,15 +2,15 @@ package typings.sharepoint.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BaseType extends js.Object
-
 /** Specifies the base type for a list. */
 @JSGlobal("SP.BaseType")
 @js.native
 object BaseType extends js.Object {
+  
   @js.native
   sealed trait discussionBoard extends BaseType
   
@@ -31,6 +31,4 @@ object BaseType extends js.Object {
   
   @js.native
   sealed trait unused extends BaseType
-  
 }
-

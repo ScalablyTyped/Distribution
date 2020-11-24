@@ -7,17 +7,18 @@ import typings.intlMessageformatParser.srcTypesMod.TYPE.tag
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _MessageFormatElement extends js.Object
-
 object _MessageFormatElement {
+  
   @scala.inline
   def SelectElement(options: Record[String, PluralOrSelectOption], `type`: select, value: String): _MessageFormatElement = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_MessageFormatElement]
   }
+  
   @scala.inline
   def PluralElement(
     offset: Double,
@@ -29,12 +30,14 @@ object _MessageFormatElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_MessageFormatElement]
   }
+  
   @scala.inline
   def TagElement(children: js.Array[MessageFormatElement], `type`: tag, value: String): _MessageFormatElement = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_MessageFormatElement]
   }
+  
   @scala.inline
   def PoundElement(`type`: pound): _MessageFormatElement = {
     val __obj = js.Dynamic.literal()
@@ -42,4 +45,3 @@ object _MessageFormatElement {
     __obj.asInstanceOf[_MessageFormatElement]
   }
 }
-

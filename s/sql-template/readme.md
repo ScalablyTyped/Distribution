@@ -10,9 +10,9 @@ Template string (ES6) builder for SQL.
 | ------------------ | :-------------: |
 | Full name          | sql-template |
 | Keywords           | pg, pgsql, sql, sql-string, sql-builder, query-builder, sql query, ES6 template string, prepared statement, Let's have a beer and talk in Paris |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 4750 |
+| # downloads        | 11870 |
 | # stars            | 1 |
 
 ## Links

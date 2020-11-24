@@ -3,7 +3,7 @@ package typings.pixiJs.global.PIXI
 import typings.pixiJs.anon.Fragment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
@@ -14,27 +14,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class BatchPluginFactory ()
   extends typings.pixiJs.PIXI.BatchPluginFactory
-
 /* static members */
 @JSGlobal("PIXI.BatchPluginFactory")
 @js.native
 object BatchPluginFactory extends js.Object {
-  /**
-    * The default fragment shader source
-    *
-    * @static
-    * @type {string}
-    * @constant
-    */
-  val defaultFragmentTemplate: String = js.native
-  /**
-    * The default vertex shader source
-    *
-    * @static
-    * @type {string}
-    * @constant
-    */
-  val defaultVertexSrc: String = js.native
+  
   /**
     * Create a new BatchRenderer plugin for Renderer. this convenience can provide an easy way
     * to extend BatchRenderer with all the necessary pieces.
@@ -66,5 +50,22 @@ object BatchPluginFactory extends js.Object {
     */
   def create(): js.Any = js.native
   def create(options: Fragment): js.Any = js.native
+  
+  /**
+    * The default fragment shader source
+    *
+    * @static
+    * @type {string}
+    * @constant
+    */
+  val defaultFragmentTemplate: String = js.native
+  
+  /**
+    * The default vertex shader source
+    *
+    * @static
+    * @type {string}
+    * @constant
+    */
+  val defaultVertexSrc: String = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.babylonjs.actionsIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Actions/index", "ValueCondition")
 @js.native
@@ -35,52 +35,59 @@ class ValueCondition protected ()
   operator: Double
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Actions/index", "ValueCondition")
 @js.native
 object ValueCondition extends js.Object {
-  /**
-    * Internal only
-    * @hidden
-    */
-  var _IsDifferent: js.Any = js.native
-  /**
-    * Internal only
-    * @hidden
-    */
-  var _IsEqual: js.Any = js.native
-  /**
-    * Internal only
-    * @hidden
-    */
-  var _IsGreater: js.Any = js.native
-  /**
-    * Internal only
-    * @hidden
-    */
-  var _IsLesser: js.Any = js.native
+  
   /**
     * Gets the name of the conditional operator for the ValueCondition
     * @param operator the conditional operator
     * @returns the name
     */
   def GetOperatorName(operator: Double): String = js.native
+  
   /**
     * Returns the number for IsDifferent
     */
   def IsDifferent: Double = js.native
+  
   /**
     * returns the number for IsEqual
     */
   def IsEqual: Double = js.native
+  
   /**
     * Returns the number for IsGreater
     */
   def IsGreater: Double = js.native
+  
   /**
     * Returns the number for IsLesser
     */
   def IsLesser: Double = js.native
+  
+  /**
+    * Internal only
+    * @hidden
+    */
+  var _IsDifferent: js.Any = js.native
+  
+  /**
+    * Internal only
+    * @hidden
+    */
+  var _IsEqual: js.Any = js.native
+  
+  /**
+    * Internal only
+    * @hidden
+    */
+  var _IsGreater: js.Any = js.native
+  
+  /**
+    * Internal only
+    * @hidden
+    */
+  var _IsLesser: js.Any = js.native
 }
-

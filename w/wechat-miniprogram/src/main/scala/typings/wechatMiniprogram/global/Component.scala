@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.wechatMiniprogram.WechatMiniprogram.Component.Constructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Component构造器可用于定义组件，调用Component构造器时可以指定组件的属性、数据、方法等。
   *
@@ -18,4 +18,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Component")
 @js.native
 object Component extends TopLevel[Constructor]
-

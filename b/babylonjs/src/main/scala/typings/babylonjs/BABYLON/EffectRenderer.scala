@@ -2,17 +2,17 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EffectRenderer extends js.Object {
+  
   var _fullscreenViewport: js.Any = js.native
-  var _getNextFrameBuffer: js.Any = js.native
+  
   var _indexBuffer: js.Any = js.native
-  var _ringBufferIndex: js.Any = js.native
-  var _ringScreenBuffer: js.Any = js.native
+  
   var _vertexBuffers: js.Any = js.native
-  var engine: js.Any = js.native
+  
   /**
     * Sets the current effect wrapper to use during draw.
     * The effect needs to be ready before calling this api.
@@ -20,28 +20,40 @@ trait EffectRenderer extends js.Object {
     * @param effectWrapper Defines the effect to draw with
     */
   def applyEffectWrapper(effectWrapper: EffectWrapper): Unit = js.native
+  
   /**
     * Binds the embedded attributes buffer to the effect.
     * @param effect Defines the effect to bind the attributes for
     */
   def bindBuffers(effect: Effect): Unit = js.native
+  
   /**
     * Disposes of the effect renderer
     */
   def dispose(): Unit = js.native
+  
   /**
     * Draws a full screen quad.
     */
   def draw(): Unit = js.native
+  
+  var engine: js.Any = js.native
+  
+  var isRenderTargetTexture: js.Any = js.native
+  
   /**
     * renders one or more effects to a specified texture
-    * @param effectWrappers list of effects to renderer
-    * @param outputTexture texture to draw to, if null it will render to the screen
+    * @param effectWrapper the effect to renderer
+    * @param outputTexture texture to draw to, if null it will render to the screen.
     */
-  def render(effectWrappers: js.Array[EffectWrapper]): Unit = js.native
-  def render(effectWrappers: js.Array[EffectWrapper], outputTexture: Nullable[Texture]): Unit = js.native
-  def render(effectWrappers: EffectWrapper): Unit = js.native
-  def render(effectWrappers: EffectWrapper, outputTexture: Nullable[Texture]): Unit = js.native
+  def render(effectWrapper: EffectWrapper): Unit = js.native
+  def render(effectWrapper: EffectWrapper, outputTexture: Nullable[InternalTexture | RenderTargetTexture]): Unit = js.native
+  
+  /**
+    * Restores engine states
+    */
+  def restoreStates(): Unit = js.native
+  
   /**
     * Sets the current viewport in normalized coordinates 0-1
     * @param viewport Defines the viewport to set (defaults to 0 0 1 1)
@@ -49,4 +61,3 @@ trait EffectRenderer extends js.Object {
   def setViewport(): Unit = js.native
   def setViewport(viewport: Viewport): Unit = js.native
 }
-

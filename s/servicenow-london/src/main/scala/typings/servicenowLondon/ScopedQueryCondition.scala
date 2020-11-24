@@ -2,10 +2,11 @@ package typings.servicenowLondon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ScopedQueryCondition extends js.Object {
+  
   def addCondition(name: String, oper: QueryOperator, value: String): ScopedQueryCondition = js.native
   /**
     * Adds an AND condition to the current condition.
@@ -36,6 +37,7 @@ trait ScopedQueryCondition extends js.Object {
     */
   def addCondition(name: String, value: js.Object): ScopedQueryCondition = js.native
   def addCondition(name: String, value: Double): ScopedQueryCondition = js.native
+  
   /**
     * Appends a 2-or-3 parameter OR condition to an existing GlideQueryCondition.
     *
@@ -76,4 +78,3 @@ trait ScopedQueryCondition extends js.Object {
   def addOrCondition(name: String, value: js.Object): ScopedQueryCondition = js.native
   def addOrCondition(name: String, value: Double): ScopedQueryCondition = js.native
 }
-

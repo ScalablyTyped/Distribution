@@ -6,14 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Accounts$Customchannels")
 @js.native
 class ResourceAccountsCustomchannels protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var adunits: ResourceAccountsCustomchannelsAdunits = js.native
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adsense.accounts.customchannels.get
     * @desc Get the specified custom channel from the specified ad client for
@@ -48,6 +51,7 @@ class ResourceAccountsCustomchannels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCustomChannel]
   ): Unit = js.native
+  
   /**
     * adsense.accounts.customchannels.list
     * @desc List all custom channels in the specified ad client for the
@@ -84,4 +88,3 @@ class ResourceAccountsCustomchannels protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCustomChannels]
   ): Unit = js.native
 }
-

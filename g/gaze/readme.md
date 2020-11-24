@@ -10,9 +10,9 @@ A globbing fs.watch wrapper built from the best parts of other fine watch libs.
 | ------------------ | :-------------: |
 | Full name          | gaze |
 | Keywords           | watch, glob |
-| # releases         | 2 |
-| # dependents       | 468 |
-| # downloads        | 235188122 |
+| # releases         | 0 |
+| # dependents       | 477 |
+| # downloads        | 259002879 |
 | # stars            | 40 |
 
 ## Links

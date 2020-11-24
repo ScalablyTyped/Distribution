@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexContainer
 import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a container of user actions.
@@ -23,4 +23,3 @@ trait ActionTriggerContainer
      with XMultiServiceFactory
      with XEnumerationAccess
      with XContainer
-

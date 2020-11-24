@@ -2,11 +2,12 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** EventTarget is a DOM interface implemented by objects that can receive events and may have listeners for them. */
 @js.native
 trait EventTarget extends js.Object {
+  
   /**
     * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
     * 
@@ -30,10 +31,12 @@ trait EventTarget extends js.Object {
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  
   /**
     * Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
     */
   def dispatchEvent(event: Event): scala.Boolean = js.native
+  
   /**
     * Removes the event listener in target's event listener list with the same type, callback, and options.
     */
@@ -48,4 +51,3 @@ trait EventTarget extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
 }
-

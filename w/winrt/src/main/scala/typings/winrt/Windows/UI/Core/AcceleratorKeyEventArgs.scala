@@ -3,12 +3,12 @@ package typings.winrt.Windows.UI.Core
 import typings.winrt.Windows.System.VirtualKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AcceleratorKeyEventArgs extends IAcceleratorKeyEventArgs
-
 object AcceleratorKeyEventArgs {
+  
   @scala.inline
   def apply(
     eventType: CoreAcceleratorKeyEventType,
@@ -20,4 +20,3 @@ object AcceleratorKeyEventArgs {
     __obj.asInstanceOf[AcceleratorKeyEventArgs]
   }
 }
-

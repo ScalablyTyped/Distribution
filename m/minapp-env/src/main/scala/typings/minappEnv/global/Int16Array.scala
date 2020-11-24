@@ -7,7 +7,7 @@ import typings.minappEnv.Int16ArrayConstructor
 import typings.minappEnv.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Int16Array")
 @js.native
@@ -20,8 +20,6 @@ class Int16Array protected ()
   def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
   def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
 }
-
 @JSGlobal("Int16Array")
 @js.native
 object Int16Array extends TopLevel[Int16ArrayConstructor]
-

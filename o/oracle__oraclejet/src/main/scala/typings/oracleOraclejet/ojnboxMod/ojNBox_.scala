@@ -89,75 +89,11 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojNBox_[K, D] extends dvtBaseComponent[ojNBoxSettableProperties[K, D]] {
-  var animationOnDataChange: auto | none = js.native
-  var animationOnDisplay: auto | none = js.native
-  var as: String = js.native
-  var cellContent: counts | auto = js.native
-  var cellMaximize: off | on = js.native
-  var cells: js.Promise[js.Array[Cell]] | Null = js.native
-  var columns: js.Promise[js.Array[Column]] | Null = js.native
-  var columnsTitle: String = js.native
-  var data: (DataProvider[K, D]) | Null = js.native
-  var groupAttributes: color | indicatorColor | indicatorIconColor | indicatorIconPattern | indicatorIconShape = js.native
-  var groupBehavior: acrossCells | none | withinCell = js.native
-  var hiddenCategories: js.Array[String] = js.native
-  var highlightMatch: any | all = js.native
-  var highlightedCategories: js.Array[String] = js.native
-  var hoverBehavior: dim | none = js.native
-  var labelTruncation: ifRequired | on = js.native
-  var maximizedColumn: String = js.native
-  var maximizedRow: String = js.native
-  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onCellContentChanged: (js.Function1[/* event */ JetElementCustomEvent[counts | auto], _]) | Null = js.native
-  var onCellMaximizeChanged: (js.Function1[/* event */ JetElementCustomEvent[off | on], _]) | Null = js.native
-  var onCellsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Promise[js.Array[Cell]] | Null], _]) | Null = js.native
-  var onColumnsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Promise[js.Array[Column]] | Null], _]) | Null = js.native
-  var onColumnsTitleChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onCountLabelChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[js.Function1[/* context */ CountLabelContext, String | Null]], 
-    _
-  ]) | Null = js.native
-  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
-  var onGroupAttributesChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      color | indicatorColor | indicatorIconColor | indicatorIconPattern | indicatorIconShape
-    ], 
-    _
-  ]) | Null = js.native
-  var onGroupBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[acrossCells | none | withinCell], _]) | Null = js.native
-  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], _]) | Null = js.native
-  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
-  var onLabelTruncationChanged: (js.Function1[/* event */ JetElementCustomEvent[ifRequired | on], _]) | Null = js.native
-  var onMaximizedColumnChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onMaximizedRowChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onOtherColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onOtherThresholdChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onRowsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Promise[js.Array[Row]] | Null], _]) | Null = js.native
-  var onRowsTitleChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], _]) | Null = js.native
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | single | multiple], _]) | Null = js.native
-  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[CellDefaults], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`15`[K]], _]) | Null = js.native
-  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
-  var otherColor: String = js.native
-  var otherThreshold: Double = js.native
-  var rows: js.Promise[js.Array[Row]] | Null = js.native
-  var rowsTitle: String = js.native
-  var selection: js.Array[K] = js.native
-  var selectionMode: none | single | multiple = js.native
-  var styleDefaults: CellDefaults = js.native
-  var tooltip: `15`[K] = js.native
-  var touchResponse: touchStart | auto = js.native
-  @JSName("translations")
-  var translations_ojNBox_ : HighlightedCount = js.native
+  
   def addEventListener(
     `type`: animationOnDataChangeChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _]
@@ -504,15 +440,43 @@ trait ojNBox_[K, D] extends dvtBaseComponent[ojNBoxSettableProperties[K, D]] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`15`[K]], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var animationOnDataChange: auto | none = js.native
+  
+  var animationOnDisplay: auto | none = js.native
+  
+  var as: String = js.native
+  
+  var cellContent: counts | auto = js.native
+  
+  var cellMaximize: off | on = js.native
+  
+  var cells: js.Promise[js.Array[Cell]] | Null = js.native
+  
+  var columns: js.Promise[js.Array[Column]] | Null = js.native
+  
+  var columnsTitle: String = js.native
+  
   def countLabel(context: CountLabelContext): String | Null = js.native
+  
+  var data: (DataProvider[K, D]) | Null = js.native
+  
   def getCell(rowValue: String, columnValue: String): js.Object | Null = js.native
+  
   def getColumn(columnValue: String): js.Object | Null = js.native
+  
   def getColumnCount(): Double = js.native
+  
   def getColumnsTitle(): String = js.native
+  
   def getContextByNode(node: Element): js.Object | Null = js.native
+  
   def getDialog(): js.Object | Null = js.native
+  
   def getGroupBehavior(): String = js.native
+  
   def getGroupNode(groupCategory: String): js.Object | Null = js.native
+  
   @JSName("getProperty")
   def getProperty_animationOnDataChange(property: animationOnDataChange): auto | none = js.native
   @JSName("getProperty")
@@ -567,10 +531,109 @@ trait ojNBox_[K, D] extends dvtBaseComponent[ojNBoxSettableProperties[K, D]] {
   def getProperty_tooltip(property: tooltip): `15`[K] = js.native
   @JSName("getProperty")
   def getProperty_touchResponse(property: touchResponse): touchStart | auto = js.native
+  
   def getRow(rowValue: String): js.Object | Null = js.native
+  
   def getRowCount(): Double = js.native
+  
   def getRowsTitle(): String = js.native
+  
+  var groupAttributes: color | indicatorColor | indicatorIconColor | indicatorIconPattern | indicatorIconShape = js.native
+  
+  var groupBehavior: acrossCells | none | withinCell = js.native
+  
+  var hiddenCategories: js.Array[String] = js.native
+  
+  var highlightMatch: any | all = js.native
+  
+  var highlightedCategories: js.Array[String] = js.native
+  
+  var hoverBehavior: dim | none = js.native
+  
+  var labelTruncation: ifRequired | on = js.native
+  
+  var maximizedColumn: String = js.native
+  
+  var maximizedRow: String = js.native
+  
+  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onCellContentChanged: (js.Function1[/* event */ JetElementCustomEvent[counts | auto], _]) | Null = js.native
+  
+  var onCellMaximizeChanged: (js.Function1[/* event */ JetElementCustomEvent[off | on], _]) | Null = js.native
+  
+  var onCellsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Promise[js.Array[Cell]] | Null], _]) | Null = js.native
+  
+  var onColumnsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Promise[js.Array[Column]] | Null], _]) | Null = js.native
+  
+  var onColumnsTitleChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onCountLabelChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[js.Function1[/* context */ CountLabelContext, String | Null]], 
+    _
+  ]) | Null = js.native
+  
+  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
+  
+  var onGroupAttributesChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      color | indicatorColor | indicatorIconColor | indicatorIconPattern | indicatorIconShape
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onGroupBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[acrossCells | none | withinCell], _]) | Null = js.native
+  
+  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], _]) | Null = js.native
+  
+  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
+  
+  var onLabelTruncationChanged: (js.Function1[/* event */ JetElementCustomEvent[ifRequired | on], _]) | Null = js.native
+  
+  var onMaximizedColumnChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onMaximizedRowChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onOtherColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onOtherThresholdChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onRowsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Promise[js.Array[Row]] | Null], _]) | Null = js.native
+  
+  var onRowsTitleChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], _]) | Null = js.native
+  
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | single | multiple], _]) | Null = js.native
+  
+  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[CellDefaults], _]) | Null = js.native
+  
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`15`[K]], _]) | Null = js.native
+  
+  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
+  
+  var otherColor: String = js.native
+  
+  var otherThreshold: Double = js.native
+  
+  var rows: js.Promise[js.Array[Row]] | Null = js.native
+  
+  var rowsTitle: String = js.native
+  
+  var selection: js.Array[K] = js.native
+  
+  var selectionMode: none | single | multiple = js.native
+  
   def setProperties(properties: ojNBoxSettablePropertiesLenient[K, D]): Unit = js.native
+  
   def setProperty(property: animationOnDataChange, value: auto): Unit = js.native
   def setProperty(property: animationOnDataChange, value: none): Unit = js.native
   def setProperty(property: animationOnDisplay, value: auto): Unit = js.native
@@ -646,5 +709,13 @@ trait ojNBox_[K, D] extends dvtBaseComponent[ojNBoxSettableProperties[K, D]] {
   def setProperty_tooltip(property: tooltip, value: `15`[K]): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: HighlightedCount): Unit = js.native
+  
+  var styleDefaults: CellDefaults = js.native
+  
+  var tooltip: `15`[K] = js.native
+  
+  var touchResponse: touchStart | auto = js.native
+  
+  @JSName("translations")
+  var translations_ojNBox_ : HighlightedCount = js.native
 }
-

@@ -3,17 +3,28 @@ package typings.devextreme.mod.DevExpress.ui
 import typings.devextreme.mod.DevExpress.data.PivotGridDataSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait dxPivotGridFieldChooser extends Widget {
-  /** @name dxPivotGridFieldChooser.applyChanges() */
+  
+  /**
+    * [descr:dxPivotGridFieldChooser.applyChanges()]
+    */
   def applyChanges(): Unit = js.native
-  /** @name dxPivotGridFieldChooser.cancelChanges() */
+  
+  /**
+    * [descr:dxPivotGridFieldChooser.cancelChanges()]
+    */
   def cancelChanges(): Unit = js.native
-  /** @name dxPivotGridFieldChooser.getDataSource() */
+  
+  /**
+    * [descr:dxPivotGridFieldChooser.getDataSource()]
+    */
   def getDataSource(): PivotGridDataSource = js.native
-  /** @name dxPivotGridFieldChooser.updateDimensions() */
+  
+  /**
+    * [descr:dxPivotGridFieldChooser.updateDimensions()]
+    */
   def updateDimensions(): Unit = js.native
 }
-

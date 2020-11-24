@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ValidatorStatic extends js.Object {
-  var messages: StringDictionary[String] = js.native
-  var methods: StringDictionary[js.Function] = js.native
+  
   /**
     * Add a compound class method - useful to refactor common combinations of rules into a single class.
     *
@@ -23,6 +22,7 @@ trait ValidatorStatic extends js.Object {
     * @param rules A map of className-rules pairs
     */
   def addClassRules(rules: RulesDictionary): Unit = js.native
+  
   /**
     * Add a custom validation method. It must consist of a name (must be a legal javascript identifier), a javascript based function and a default string message or a message generating function.
     *
@@ -44,6 +44,7 @@ trait ValidatorStatic extends js.Object {
     method: js.Function3[/* value */ js.Any, /* element */ HTMLElement, /* params */ js.Any, Boolean],
     message: js.Function2[/* params */ js.Any, /* element */ HTMLElement, String]
   ): Unit = js.native
+  
   /**
     * Replaces {n} placeholders with arguments.
     *
@@ -51,6 +52,11 @@ trait ValidatorStatic extends js.Object {
     */
   def format(template: String): js.Function1[/* repeated */ js.Any, String] = js.native
   def format(template: String, args: js.Any*): String = js.native
+  
+  var messages: StringDictionary[String] = js.native
+  
+  var methods: StringDictionary[js.Function] = js.native
+  
   /**
     * Modify default settings for validation.
     *
@@ -58,4 +64,3 @@ trait ValidatorStatic extends js.Object {
     */
   def setDefaults(defaults: ValidationOptions): Unit = js.native
 }
-

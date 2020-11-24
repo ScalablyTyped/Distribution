@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassEventInfo extends ClassObject {
+  
   /**
     * class prop 
     *
@@ -21,6 +22,7 @@ trait ClassEventInfo extends ClassObject {
     * @type Integer
     */
   var code: Double = js.native
+  
   /**
     * class prop 
     *
@@ -31,6 +33,7 @@ trait ClassEventInfo extends ClassObject {
     * @type String
     */
   var reason: String = js.native
+  
   /**
     * class prop 
     *
@@ -41,6 +44,7 @@ trait ClassEventInfo extends ClassObject {
     * @type Object
     */
   var target: js.Object = js.native
+  
   /**
     * class prop 
     *
@@ -52,4 +56,3 @@ trait ClassEventInfo extends ClassObject {
     */
   var `type`: String = js.native
 }
-

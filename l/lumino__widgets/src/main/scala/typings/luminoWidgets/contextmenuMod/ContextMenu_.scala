@@ -7,7 +7,7 @@ import typings.luminoWidgets.menuMod.Menu
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/contextmenu", "ContextMenu")
 @js.native
@@ -18,12 +18,11 @@ class ContextMenu_ protected () extends js.Object {
     * @param options - The options for initializing the menu.
     */
   def this(options: IOptions) = this()
+  
   var _idTick: js.Any = js.native
+  
   var _items: js.Any = js.native
-  /**
-    * The menu widget which displays the matched context items.
-    */
-  val menu: Menu = js.native
+  
   /**
     * Add an item to the context menu.
     *
@@ -32,6 +31,12 @@ class ContextMenu_ protected () extends js.Object {
     * @returns A disposable which will remove the item from the menu.
     */
   def addItem(options: IItemOptions): IDisposable = js.native
+  
+  /**
+    * The menu widget which displays the matched context items.
+    */
+  val menu: Menu = js.native
+  
   /**
     * Open the context menu in response to a `'contextmenu'` event.
     *
@@ -47,4 +52,3 @@ class ContextMenu_ protected () extends js.Object {
     */
   def open(event: MouseEvent): Boolean = js.native
 }
-

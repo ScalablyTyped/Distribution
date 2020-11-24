@@ -2,7 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single choice associated with a type of Item that supports choices, like CheckboxItem, ListItem, or MultipleChoiceItem.
@@ -29,13 +29,17 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Choice extends js.Object {
+  
   def getGotoPage(): PageBreakItem = js.native
+  
   def getPageNavigationType(): PageNavigationType = js.native
+  
   def getValue(): String = js.native
+  
   def isCorrectAnswer(): Boolean = js.native
 }
-
 object Choice {
+  
   @scala.inline
   def apply(
     getGotoPage: () => PageBreakItem,
@@ -46,26 +50,32 @@ object Choice {
     val __obj = js.Dynamic.literal(getGotoPage = js.Any.fromFunction0(getGotoPage), getPageNavigationType = js.Any.fromFunction0(getPageNavigationType), getValue = js.Any.fromFunction0(getValue), isCorrectAnswer = js.Any.fromFunction0(isCorrectAnswer))
     __obj.asInstanceOf[Choice]
   }
+  
   @scala.inline
   implicit class ChoiceOps[Self <: Choice] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetGotoPage(value: () => PageBreakItem): Self = this.set("getGotoPage", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetPageNavigationType(value: () => PageNavigationType): Self = this.set("getPageNavigationType", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetValue(value: () => String): Self = this.set("getValue", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsCorrectAnswer(value: () => Boolean): Self = this.set("isCorrectAnswer", js.Any.fromFunction0(value))
   }
-  
 }
-

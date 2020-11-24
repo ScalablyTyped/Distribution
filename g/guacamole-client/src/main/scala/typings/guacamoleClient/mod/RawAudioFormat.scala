@@ -3,7 +3,7 @@ package typings.guacamoleClient.mod
 import typings.guacamoleClient.guacCommonMod.Mimetype
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "RawAudioFormat")
 @js.native
@@ -15,11 +15,11 @@ class RawAudioFormat protected ()
     */
   def this(template: typings.guacamoleClient.rawAudioFormatMod.RawAudioFormat) = this()
 }
-
 /* static members */
 @JSImport("guacamole-client", "RawAudioFormat")
 @js.native
 object RawAudioFormat extends js.Object {
+  
   /**
     * Parses the given mimetype, returning a new Guacamole.RawAudioFormat
     * which describes the type of raw audio data represented by that mimetype. If
@@ -33,4 +33,3 @@ object RawAudioFormat extends js.Object {
     */
   def parse(mimetype: Mimetype): typings.guacamoleClient.rawAudioFormatMod.RawAudioFormat = js.native
 }
-

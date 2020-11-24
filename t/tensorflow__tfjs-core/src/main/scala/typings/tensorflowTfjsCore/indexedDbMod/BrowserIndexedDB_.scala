@@ -6,12 +6,13 @@ import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsCore.typesMod.SaveResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core/dist/io/indexed_db", "BrowserIndexedDB")
 @js.native
 class BrowserIndexedDB_ protected () extends IOHandler {
   def this(modelPath: String) = this()
+  
   /**
     * Perform database action to put model artifacts into or read model artifacts
     * from IndexedDB object store.
@@ -27,18 +28,21 @@ class BrowserIndexedDB_ protected () extends IOHandler {
     *   of `ModelArtifacts`, if the action is get.
     */
   var databaseAction: js.Any = js.native
+  
   val indexedDB: IDBFactory = js.native
-  val modelPath: String = js.native
+  
   @JSName("load")
   def load_MBrowserIndexedDB_(): js.Promise[ModelArtifacts] = js.native
+  
+  val modelPath: String = js.native
+  
   @JSName("save")
   def save_MBrowserIndexedDB_(modelArtifacts: ModelArtifacts): js.Promise[SaveResult] = js.native
 }
-
 /* static members */
 @JSImport("@tensorflow/tfjs-core/dist/io/indexed_db", "BrowserIndexedDB")
 @js.native
 object BrowserIndexedDB_ extends js.Object {
+  
   val URL_SCHEME: /* "indexeddb://" */ String = js.native
 }
-

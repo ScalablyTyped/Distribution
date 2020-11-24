@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SVGSpriterConstructor
@@ -14,4 +14,3 @@ trait SVGSpriterConstructor
   * @param config Main configuration for the spriting process
   */
 Instantiable1[/* config */ Config, SVGSpriter]
-

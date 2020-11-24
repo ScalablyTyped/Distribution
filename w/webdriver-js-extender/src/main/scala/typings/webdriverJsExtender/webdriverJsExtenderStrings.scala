@@ -2,9 +2,46 @@ package typings.webdriverJsExtender
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webdriverJsExtenderStrings {
+  
+  @scala.inline
+  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  
+  @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
+  
+  @scala.inline
+  def LANDSCAPE: LANDSCAPE = "LANDSCAPE".asInstanceOf[LANDSCAPE]
+  
+  @scala.inline
+  def PORTRAIT: PORTRAIT = "PORTRAIT".asInstanceOf[PORTRAIT]
+  
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
+  
+  @scala.inline
+  def PUT: PUT = "PUT".asInstanceOf[PUT]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def press: press = "press".asInstanceOf[press]
+  
+  @scala.inline
+  def pressKey: pressKey = "pressKey".asInstanceOf[pressKey]
+  
+  @scala.inline
+  def swipeDown: swipeDown = "swipeDown".asInstanceOf[swipeDown]
+  
+  @scala.inline
+  def tapOut: tapOut = "tapOut".asInstanceOf[tapOut]
+  
+  @scala.inline
+  def tapOutside: tapOutside = "tapOutside".asInstanceOf[tapOutside]
+  
   @js.native
   sealed trait DELETE extends js.Object
   
@@ -40,30 +77,4 @@ object webdriverJsExtenderStrings {
   
   @js.native
   sealed trait tapOutside extends js.Object
-  
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def LANDSCAPE: LANDSCAPE = "LANDSCAPE".asInstanceOf[LANDSCAPE]
-  @scala.inline
-  def PORTRAIT: PORTRAIT = "PORTRAIT".asInstanceOf[PORTRAIT]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def press: press = "press".asInstanceOf[press]
-  @scala.inline
-  def pressKey: pressKey = "pressKey".asInstanceOf[pressKey]
-  @scala.inline
-  def swipeDown: swipeDown = "swipeDown".asInstanceOf[swipeDown]
-  @scala.inline
-  def tapOut: tapOut = "tapOut".asInstanceOf[tapOut]
-  @scala.inline
-  def tapOutside: tapOutside = "tapOutside".asInstanceOf[tapOutside]
 }
-

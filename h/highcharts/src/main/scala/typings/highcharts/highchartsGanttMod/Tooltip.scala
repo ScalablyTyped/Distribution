@@ -3,7 +3,7 @@ package typings.highcharts.highchartsGanttMod
 import typings.highcharts.mod.TooltipOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts/highcharts-gantt", "Tooltip")
 @js.native
@@ -20,4 +20,3 @@ class Tooltip protected ()
     */
   def this(chart: typings.highcharts.mod.Chart_, options: TooltipOptions) = this()
 }
-

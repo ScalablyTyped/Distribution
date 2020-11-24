@@ -2,7 +2,7 @@ package typings.vis.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.vis.visStrings.auto
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.vis.visStrings.right
 */
 trait TimelineAlignType extends js.Object
-
 object TimelineAlignType {
+  
   @scala.inline
   def auto: typings.vis.visStrings.auto = "auto".asInstanceOf[typings.vis.visStrings.auto]
+  
   @scala.inline
   def center: typings.vis.visStrings.center = "center".asInstanceOf[typings.vis.visStrings.center]
+  
   @scala.inline
   def left: typings.vis.visStrings.left = "left".asInstanceOf[typings.vis.visStrings.left]
+  
   @scala.inline
   def right: typings.vis.visStrings.right = "right".asInstanceOf[typings.vis.visStrings.right]
 }
-

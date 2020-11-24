@@ -12,7 +12,7 @@ return random last names.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 7 |
-| # downloads        | 192522 |
+| # downloads        | 190996 |
 | # stars            | 3 |
 
 ## Links

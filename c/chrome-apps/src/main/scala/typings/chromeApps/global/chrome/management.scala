@@ -16,7 +16,7 @@ import typings.chromeApps.chromeAppsStrings.theme
 import typings.chromeApps.chromeAppsStrings.unknown__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.management
@@ -31,6 +31,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.management")
 @js.native
 object management extends js.Object {
+  
   /**
     * Returns a list of permission warnings for the given extension manifest string.
     * @param manifestStr Extension manifest JSON string. See example
@@ -40,6 +41,7 @@ object management extends js.Object {
     */
   def getPermissionWarningsByManifest(manifestStr: String): Unit = js.native
   def getPermissionWarningsByManifest(manifestStr: String, callback: js.Function1[/* permissionWarnings */ js.Array[String], Unit]): Unit = js.native
+  
   /**
     * Returns information about the calling extension, app, or theme. Note: This function can be used without requesting the 'management' permission in the manifest.
     * @since Chrome 39.
@@ -48,6 +50,7 @@ object management extends js.Object {
     */
   def getSelf(): Unit = js.native
   def getSelf(callback: js.Function1[/* result */ ExtensionInfo, Unit]): Unit = js.native
+  
   /**
     * Uninstalls the calling extension.
     * Note: This function can be used without requesting the 'management' permission in the manifest.
@@ -59,37 +62,52 @@ object management extends js.Object {
   def uninstallSelf(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def uninstallSelf(options: UninstallOptions): Unit = js.native
   def uninstallSelf(options: UninstallOptions, callback: js.Function0[Unit]): Unit = js.native
+  
   @js.native
   object ExtensionDisabledReason extends js.Object {
+    
     var PERMISSIONS_INCREASE: permissions_increase_ = js.native
+    
     var UNKNOWN: unknown__ = js.native
   }
   
   @js.native
   object ExtensionInstallType extends js.Object {
+    
     var ADMIN: admin_ = js.native
+    
     var DEVELOPMENT: development_ = js.native
+    
     var NORMAL: normal_ = js.native
+    
     var OTHER: other_ = js.native
+    
     var SIDELOAD: sideload_ = js.native
   }
   
   @js.native
   object ExtensionType extends js.Object {
+    
     var EXTENSION: extension = js.native
+    
     var HOSTED_APP: hosted_app = js.native
+    
     var LEGACY_PACKAGED_APP: legacy_packaged_app = js.native
+    
     var PACKAGED_APP: packaged_app = js.native
+    
     var THEME: theme = js.native
   }
   
   @js.native
   object LaunchType extends js.Object {
+    
     var OPEN_AS_PINNED_TAB: typings.chromeApps.chromeAppsStrings.OPEN_AS_PINNED_TAB = js.native
+    
     var OPEN_AS_REGULAR_TAB: typings.chromeApps.chromeAppsStrings.OPEN_AS_REGULAR_TAB = js.native
+    
     var OPEN_AS_WINDOW: typings.chromeApps.chromeAppsStrings.OPEN_AS_WINDOW = js.native
+    
     var OPEN_FULL_SCREEN: typings.chromeApps.chromeAppsStrings.OPEN_FULL_SCREEN = js.native
   }
-  
 }
-

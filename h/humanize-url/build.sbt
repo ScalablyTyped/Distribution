@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "humanize-url"
-version := "2.1.0-10dc4e"
+version := "2.1.0-7d05d9"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

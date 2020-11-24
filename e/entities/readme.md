@@ -1,18 +1,18 @@
 
 # Scala.js typings for entities
 
-Typings are for version 2.0.3
+Typings are for version 1.1
 
 ## Library description:
-Encode & decode XML/HTML entities with ease
+Encode & decode XML and HTML entities with ease
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | entities |
-| Keywords           | html, xml, entity, decoding, encoding |
-| # releases         | 3 |
-| # dependents       | 317 |
-| # downloads        | 408675904 |
+| Keywords           | entity, decoding, encoding, html, xml, html entities |
+| # releases         | 6 |
+| # dependents       | 370 |
+| # downloads        | 714222617 |
 | # stars            | 19 |
 
 ## Links
@@ -24,7 +24,7 @@ Encode & decode XML/HTML entities with ease
 
 
 ## Note
-This library has been generated from typescript code from first party type definitions.
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

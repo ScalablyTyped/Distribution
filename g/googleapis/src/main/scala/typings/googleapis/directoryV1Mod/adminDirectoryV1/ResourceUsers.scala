@@ -6,15 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Users")
 @js.native
 class ResourceUsers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var aliases: ResourceUsersAliases = js.native
+  
   var context: APIRequestContext = js.native
-  var photos: ResourceUsersPhotos = js.native
+  
   /**
     * directory.users.delete
     * @desc Delete user
@@ -39,6 +41,7 @@ class ResourceUsers protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceUsersDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * directory.users.get
     * @desc retrieve user
@@ -66,6 +69,7 @@ class ResourceUsers protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceUsersGet, options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
   def get(params: ParamsResourceUsersGet, options: MethodOptions, callback: BodyResponseCallback[SchemaUser]): Unit = js.native
+  
   /**
     * directory.users.insert
     * @desc create user.
@@ -94,6 +98,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUser]
   ): Unit = js.native
+  
   /**
     * directory.users.list
     * @desc Retrieve either deleted users or all users in a domain (paginated)
@@ -133,6 +138,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUsers]
   ): Unit = js.native
+  
   /**
     * directory.users.makeAdmin
     * @desc change admin status of a user
@@ -158,6 +164,7 @@ class ResourceUsers protected () extends js.Object {
   ): Unit = js.native
   def makeAdmin(params: ParamsResourceUsersMakeadmin, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def makeAdmin(params: ParamsResourceUsersMakeadmin, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * directory.users.patch
     * @desc update user. This method supports patch semantics.
@@ -187,6 +194,9 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUser]
   ): Unit = js.native
+  
+  var photos: ResourceUsersPhotos = js.native
+  
   /**
     * directory.users.undelete
     * @desc Undelete a deleted user
@@ -212,6 +222,7 @@ class ResourceUsers protected () extends js.Object {
   ): Unit = js.native
   def undelete(params: ParamsResourceUsersUndelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def undelete(params: ParamsResourceUsersUndelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * directory.users.update
     * @desc update user
@@ -241,6 +252,7 @@ class ResourceUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUser]
   ): Unit = js.native
+  
   /**
     * directory.users.watch
     * @desc Watch for changes in users list
@@ -282,4 +294,3 @@ class ResourceUsers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChannel]
   ): Unit = js.native
 }
-

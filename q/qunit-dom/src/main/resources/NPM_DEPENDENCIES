@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "qunit-dom" : "1.4.0"
+      "qunit-dom" : "1.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "qunit-dom" : "1.4.0"
+      "qunit-dom" : "1.6.0"
     }
   ],
   "compile-devDependencies" : [

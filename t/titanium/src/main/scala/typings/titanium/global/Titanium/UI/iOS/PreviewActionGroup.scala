@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium.UI.iOS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A PreviewActionGroup provides options to configure a group of actions used by the iOS9 3D-Touch
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class PreviewActionGroup ()
   extends typings.titanium.Titanium.UI.iOS.PreviewActionGroup
-

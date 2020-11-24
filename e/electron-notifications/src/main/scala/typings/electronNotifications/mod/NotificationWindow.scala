@@ -6,11 +6,12 @@ import typings.electronNotifications.electronNotificationsStrings.clicked
 import typings.electronNotifications.electronNotificationsStrings.swipedRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("electron-notifications", "NotificationWindow")
 @js.native
 class NotificationWindow () extends BrowserWindow {
+  
   def on(event: String, listener: js.Function): this.type = js.native
   /** When any one of the buttons are clicked, it will trigger a buttonClicked event, and pass the text that was clicked to the handler. */
   @JSName("on")
@@ -22,4 +23,3 @@ class NotificationWindow () extends BrowserWindow {
   @JSName("on")
   def on_swipedRight(event: swipedRight, listener: js.Function): this.type = js.native
 }
-

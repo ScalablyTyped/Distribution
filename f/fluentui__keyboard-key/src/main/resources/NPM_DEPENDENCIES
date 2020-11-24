@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fluentui/keyboard-key" : "0.2.7"
+      "@fluentui/keyboard-key" : "0.2.12"
     }
   ],
   "test-dependencies" : [
     {
-      "@fluentui/keyboard-key" : "0.2.7"
+      "@fluentui/keyboard-key" : "0.2.12"
     }
   ],
   "compile-devDependencies" : [

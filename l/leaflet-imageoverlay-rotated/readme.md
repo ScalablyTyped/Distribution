@@ -10,9 +10,9 @@ Displays rotated/slanted image overlays in Leaflet
 | ------------------ | :-------------: |
 | Full name          | leaflet-imageoverlay-rotated |
 | Keywords           | leaflet |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 19290 |
+| # releases         | 4 |
+| # dependents       | 2 |
+| # downloads        | 24002 |
 | # stars            | 0 |
 
 ## Links

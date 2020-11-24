@@ -3,11 +3,12 @@ package typings.botvs.mod.global
 import typings.botvs.mod.global.botvs.Socket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Dial")
 @js.native
 object Dial extends js.Object {
+  
   /**
     * 原始的Socket访问, 支持tcp, udp, tls, unix 协议
     *
@@ -35,4 +36,3 @@ object Dial extends js.Object {
   def apply(Address: String): Socket | Unit = js.native
   def apply(Address: String, Timeout: Double): Socket | Unit = js.native
 }
-

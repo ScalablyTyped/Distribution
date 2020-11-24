@@ -3,11 +3,12 @@ package typings.hdrHistogramJs
 import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hdr-histogram-js/Recorder", JSImport.Namespace)
 @js.native
 object recorderMod extends js.Object {
+  
   /**
     * Records integer values, and provides stable interval {@link Histogram} samples from
     * live recorded data without interrupting or stalling active recording of values. Each interval
@@ -23,13 +24,11 @@ object recorderMod extends js.Object {
     */
   @js.native
   trait Recorder extends js.Object {
+    
     var activeHistogram: js.Any = js.native
+    
     var clock: js.Any = js.native
-    var histogramConstr: js.Any = js.native
-    var inactiveHistogram: js.Any = js.native
-    var numberOfSignificantValueDigits: js.Any = js.native
-    var packed: js.Any = js.native
-    var performIntervalSample: js.Any = js.native
+    
     /**
       * Get an interval histogram, which will include a stable, consistent view of all value counts
       * accumulated since the last interval histogram was taken.
@@ -59,6 +58,7 @@ object recorderMod extends js.Object {
       */
     def getIntervalHistogram(): AbstractHistogram = js.native
     def getIntervalHistogram(histogramToRecycle: AbstractHistogram): AbstractHistogram = js.native
+    
     /**
       * Place a copy of the value counts accumulated since accumulated (since the last interval histogram
       * was taken) into {@code targetHistogram}.
@@ -69,6 +69,17 @@ object recorderMod extends js.Object {
       * @param targetHistogram the histogram into which the interval histogram's data should be copied
       */
     def getIntervalHistogramInto(targetHistogram: AbstractHistogram): Unit = js.native
+    
+    var histogramConstr: js.Any = js.native
+    
+    var inactiveHistogram: js.Any = js.native
+    
+    var numberOfSignificantValueDigits: js.Any = js.native
+    
+    var packed: js.Any = js.native
+    
+    var performIntervalSample: js.Any = js.native
+    
     /**
       * Record a value in the histogram
       *
@@ -76,6 +87,7 @@ object recorderMod extends js.Object {
       * @throws may throw Error if value is exceeds highestTrackableValue
       */
     def recordValue(value: Double): Unit = js.native
+    
     /**
       * Record a value in the histogram (adding to the value's current count)
       *
@@ -84,6 +96,7 @@ object recorderMod extends js.Object {
       * @throws ArrayIndexOutOfBoundsException (may throw) if value is exceeds highestTrackableValue
       */
     def recordValueWithCount(value: Double, count: Double): Unit = js.native
+    
     /**
       * Record a value
       * <p>
@@ -101,6 +114,7 @@ object recorderMod extends js.Object {
       * @throws ArrayIndexOutOfBoundsException (may throw) if value is exceeds highestTrackableValue
       */
     def recordValueWithExpectedInterval(value: Double, expectedIntervalBetweenValueSamples: Double): Unit = js.native
+    
     /**
       * Reset any value counts accumulated thus far.
       */
@@ -152,12 +166,10 @@ object recorderMod extends js.Object {
     ) = this()
     def this(numberOfSignificantValueDigits: Double, packed: Boolean, clock: js.Function0[Double]) = this()
   }
-  
   /* static members */
   @js.native
   object default extends js.Object {
+    
     var idGenerator: Double = js.native
   }
-  
 }
-

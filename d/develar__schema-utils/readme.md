@@ -11,8 +11,8 @@ webpack Validation Utils
 | Full name          | @develar/schema-utils |
 | Keywords           | webpack |
 | # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 3094654 |
+| # dependents       | 7 |
+| # downloads        | 4082964 |
 | # stars            | 0 |
 
 ## Links

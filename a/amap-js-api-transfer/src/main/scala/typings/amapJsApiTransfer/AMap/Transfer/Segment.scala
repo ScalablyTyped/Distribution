@@ -8,7 +8,7 @@ import typings.amapJsApiTransfer.amapJsApiTransferStrings.TAXI
 import typings.amapJsApiTransfer.amapJsApiTransferStrings.WALK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.amapJsApiTransfer.AMap.Transfer.WalkSegment
@@ -17,18 +17,20 @@ import scala.scalajs.js.annotation._
   - typings.amapJsApiTransfer.AMap.Transfer.RailwaySegment
 */
 trait Segment extends js.Object
-
 object Segment {
+  
   @scala.inline
   def WalkSegment(distance: Double, instruction: String, time: Double, transit: WalkDetails, transit_mode: WALK): Segment = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = transit_mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Segment]
   }
+  
   @scala.inline
   def TaxiSegment(distance: Double, instruction: String, time: Double, transit: TaxiDetails, transit_mode: TAXI): Segment = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = transit_mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Segment]
   }
+  
   @scala.inline
   def TransitSegment(
     distance: Double,
@@ -40,6 +42,7 @@ object Segment {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = transit_mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Segment]
   }
+  
   @scala.inline
   def RailwaySegment(
     distance: Double,
@@ -52,4 +55,3 @@ object Segment {
     __obj.asInstanceOf[Segment]
   }
 }
-

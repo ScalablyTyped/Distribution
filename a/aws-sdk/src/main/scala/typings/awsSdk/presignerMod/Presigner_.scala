@@ -5,7 +5,7 @@ import typings.awsSdk.pollyMod.SynthesizeSpeechInput
 import typings.awsSdk.presignerMod.Presigner.PresignerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/lib/polly/presigner", "Presigner")
 @js.native
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 class Presigner_ () extends js.Object {
   def this(options: PresignerOptions) = this()
+  
   /**
     * Generate a signed URL.
     */
@@ -32,4 +33,3 @@ class Presigner_ () extends js.Object {
   ): Unit = js.native
   def getSynthesizeSpeechUrl(params: SynthesizeSpeechInput, expires: Double): String = js.native
 }
-

@@ -8,16 +8,19 @@ import typings.vscodeLanguageserverProtocol.protocolWorkspaceFoldersMod.Workspac
 import typings.vscodeLanguageserverProtocol.protocolWorkspaceFoldersMod.WorkspaceFoldersChangeEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver/lib/workspaceFolders", JSImport.Namespace)
 @js.native
 object workspaceFoldersMod extends js.Object {
+  
+  val WorkspaceFoldersFeature: Feature[_RemoteWorkspace, WorkspaceFolders] = js.native
+  
   @js.native
   trait WorkspaceFolders extends js.Object {
-    @JSName("onDidChangeWorkspaceFolders")
-    var onDidChangeWorkspaceFolders_Original: Event[WorkspaceFoldersChangeEvent] = js.native
+    
     def getWorkspaceFolders(): js.Promise[js.Array[WorkspaceFolder] | Null] = js.native
+    
     def onDidChangeWorkspaceFolders(listener: js.Function1[/* e */ WorkspaceFoldersChangeEvent, _]): Disposable = js.native
     def onDidChangeWorkspaceFolders(
       listener: js.Function1[/* e */ WorkspaceFoldersChangeEvent, _],
@@ -30,8 +33,7 @@ object workspaceFoldersMod extends js.Object {
       thisArgs: js.Any,
       disposables: js.Array[Disposable]
     ): Disposable = js.native
+    @JSName("onDidChangeWorkspaceFolders")
+    var onDidChangeWorkspaceFolders_Original: Event[WorkspaceFoldersChangeEvent] = js.native
   }
-  
-  val WorkspaceFoldersFeature: Feature[_RemoteWorkspace, WorkspaceFolders] = js.native
 }
-

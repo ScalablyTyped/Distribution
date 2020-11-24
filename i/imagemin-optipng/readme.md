@@ -10,9 +10,9 @@ Imagemin plugin for OptiPNG
 | ------------------ | :-------------: |
 | Full name          | imagemin-optipng |
 | Keywords           | imageminplugin, compress, image, minify, optimize, optipng, png |
-| # releases         | 4 |
-| # dependents       | 156 |
-| # downloads        | 22123521 |
+| # releases         | 5 |
+| # dependents       | 180 |
+| # downloads        | 25641540 |
 | # stars            | 9 |
 
 ## Links

@@ -11,8 +11,8 @@ Bitfield that allocates a series of small buffers to support sparse bits without
 | Full name          | sparse-bitfield |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 26122479 |
+| # dependents       | 12 |
+| # downloads        | 40982458 |
 | # stars            | 0 |
 
 ## Links

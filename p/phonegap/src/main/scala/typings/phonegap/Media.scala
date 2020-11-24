@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.std.MediaError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
 interface InAppBrowser {
@@ -32,15 +32,23 @@ trait Media
       /* mediaStatus */ js.Function, 
       Media
     ] {
+  
   def getCurrentPosition(mediaSuccess: js.Function): Unit = js.native
   def getCurrentPosition(mediaSuccess: js.Function, mediaError: js.Function1[/* mediaError */ MediaError, _]): Unit = js.native
+  
   def getDuration(): js.Any = js.native
+  
   def pause(): Unit = js.native
+  
   def play(): Unit = js.native
+  
   def release(): Unit = js.native
+  
   def seekTo(milliseconds: Double): Unit = js.native
+  
   def startRecord(): Unit = js.native
+  
   def stop(): Unit = js.native
+  
   def stopRecord(): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ Improves usage of html inline styles in javascript.
 | ------------------ | :-------------: |
 | Full name          | stylenames |
 | Keywords           | inline-styles, styles, es6, middleware |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 1 |
-| # downloads        | 19758 |
+| # downloads        | 52130 |
 | # stars            | 0 |
 
 ## Links

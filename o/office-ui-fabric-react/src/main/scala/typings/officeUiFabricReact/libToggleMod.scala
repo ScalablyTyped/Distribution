@@ -7,23 +7,23 @@ import typings.officeUiFabricReact.toggleTypesMod.IToggleProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/Toggle", JSImport.Namespace)
 @js.native
 object libToggleMod extends js.Object {
+  
+  val Toggle: FunctionComponent[IToggleProps] = js.native
+  
   @js.native
   class ToggleBase protected ()
     extends typings.officeUiFabricReact.toggleMod.ToggleBase {
     def this(props: IToggleProps) = this()
   }
-  
-  val Toggle: FunctionComponent[IToggleProps] = js.native
   /* static members */
   @js.native
   object ToggleBase extends js.Object {
+    
     def getDerivedStateFromProps(nextProps: ReadonlyIToggleProps, prevState: ReadonlyIToggleState): PartialIToggleState | Null = js.native
   }
-  
 }
-

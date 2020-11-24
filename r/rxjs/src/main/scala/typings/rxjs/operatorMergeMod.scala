@@ -2,11 +2,12 @@ package typings.rxjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/operator/merge", JSImport.Namespace)
 @js.native
 object operatorMergeMod extends js.Object {
+  
   def merge[T](): js.Any = js.native
   def merge[T](
     concurrent: js.UndefOr[scala.Nothing],
@@ -188,4 +189,3 @@ object operatorMergeMod extends js.Object {
     v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any
   ): js.Any = js.native
 }
-

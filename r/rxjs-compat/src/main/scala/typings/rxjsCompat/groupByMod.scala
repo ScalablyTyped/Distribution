@@ -2,11 +2,12 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/operators/groupBy", JSImport.Namespace)
 @js.native
 object groupByMod extends js.Object {
+  
   def groupBy[T, K](keySelector: js.Function1[/* value */ T, K]): js.Any = js.native
   def groupBy[T, K](
     keySelector: js.Function1[/* value */ T, K],
@@ -74,4 +75,3 @@ object groupByMod extends js.Object {
   @JSName("groupBy")
   def groupBy_TKR[T, K, R](keySelector: js.Function1[/* value */ T, K]): js.Any = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.stellarSdk.anon.Assetcode
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.pathPayment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.stellarSdk.horizonApiMod.Horizon.BaseResponse because Already inherited
@@ -17,17 +17,28 @@ trait PathPaymentOperationRecord
       typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.pathPayment
     ]
      with OperationRecord {
+  
   var amount: String = js.native
+  
   var asset_code: js.UndefOr[String] = js.native
+  
   var asset_issuer: js.UndefOr[String] = js.native
+  
   var asset_type: AssetType = js.native
+  
   var from: String = js.native
+  
   var path: js.Array[Assetcode] = js.native
+  
   var source_amount: String = js.native
+  
   var source_asset_code: js.UndefOr[String] = js.native
+  
   var source_asset_issuer: js.UndefOr[String] = js.native
+  
   var source_asset_type: AssetType = js.native
+  
   var source_max: String = js.native
+  
   var to: String = js.native
 }
-

@@ -11,11 +11,35 @@ import typings.openlayers.mod.style.Style
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "render")
 @js.native
 object render extends js.Object {
+  
+  /**
+    * Binds a Canvas Immediate API to a canvas context, to allow drawing geometries
+    * to the context's canvas.
+    *
+    * The units for geometry coordinates are css pixels relative to the top left
+    * corner of the canvas element.
+    * ```js
+    * var canvas = document.createElement('canvas');
+    * var render = ol.render.toContext(canvas.getContext('2d'),
+    *     { size: [100, 100] });
+    * render.setFillStrokeStyle(new ol.style.Fill({ color: blue }));
+    * render.drawPolygon(
+    *     new ol.geom.Polygon([[[0, 0], [100, 100], [100, 0], [0, 0]]]));
+    * ```
+    *
+    * @param context Canvas context.
+    * @param opt_options Options.
+    * @return Canvas Immediate.
+    * @api
+    */
+  def toContext(context: CanvasRenderingContext2D): Immediate = js.native
+  def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): Immediate = js.native
+  
   /**
     * @param type Type.
     * @param opt_vectorContext Vector context.
@@ -117,23 +141,27 @@ object render extends js.Object {
       opt_context: CanvasRenderingContext2D,
       opt_glContext: js.Any
     ) = this()
+    
     /**
       * Canvas context. Only available when a Canvas renderer is used, null
       * otherwise.
       * @api
       */
     var context: CanvasRenderingContext2D = js.native
+    
     /**
       * An object representing the current render frame state.
       * @api
       */
     var frameState: FrameState = js.native
+    
     /**
       * WebGL context. Only available when a WebGL renderer is used, null
       * otherwise.
       * @api
       */
     var glContext: js.Any = js.native
+    
     /**
       * For canvas, this is an instance of {@link ol.render.canvas.Immediate}.
       * @api
@@ -171,6 +199,7 @@ object render extends js.Object {
       ends: js.Array[js.Array[Double] | Double],
       properties: StringDictionary[js.Any]
     ) = this()
+    
     /**
       * Get a feature property by its key.
       * @param key Key
@@ -178,24 +207,28 @@ object render extends js.Object {
       * @api
       */
     def get(key: String): js.Any = js.native
+    
     /**
       * Get the extent of this feature's geometry.
       * @return Extent.
       * @api
       */
     def getExtent(): Extent_ = js.native
+    
     /**
       * Get the feature for working with its geometry.
       * @return Feature.
       * @api
       */
     def getGeometry(): typings.openlayers.mod.render.Feature = js.native
+    
     /**
       * Get the feature properties.
       * @return Feature properties.
       * @api
       */
     def getProperties(): StringDictionary[js.Any] = js.native
+    
     /**
       * Get the type of this feature's geometry.
       * @return Geometry type.
@@ -220,30 +253,9 @@ object render extends js.Object {
     */
   class VectorContext () extends js.Object
   
-  /**
-    * Binds a Canvas Immediate API to a canvas context, to allow drawing geometries
-    * to the context's canvas.
-    *
-    * The units for geometry coordinates are css pixels relative to the top left
-    * corner of the canvas element.
-    * ```js
-    * var canvas = document.createElement('canvas');
-    * var render = ol.render.toContext(canvas.getContext('2d'),
-    *     { size: [100, 100] });
-    * render.setFillStrokeStyle(new ol.style.Fill({ color: blue }));
-    * render.drawPolygon(
-    *     new ol.geom.Polygon([[[0, 0], [100, 100], [100, 0], [0, 0]]]));
-    * ```
-    *
-    * @param context Canvas context.
-    * @param opt_options Options.
-    * @return Canvas Immediate.
-    * @api
-    */
-  def toContext(context: CanvasRenderingContext2D): Immediate = js.native
-  def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): Immediate = js.native
   @js.native
   object canvas extends js.Object {
+    
     /**
       * @classdesc
       * A concrete subclass of {@link ol.render.VectorContext} that implements
@@ -285,6 +297,7 @@ object render extends js.Object {
         transform: js.Any,
         viewRotation: Double
       ) = this()
+      
       /**
         * Render a circle geometry into the canvas.  Rendering is immediate and uses
         * the current fill and stroke styles.
@@ -293,6 +306,7 @@ object render extends js.Object {
         * @api
         */
       def drawCircle(geometry: Circle): Unit = js.native
+      
       /**
         * Render a feature into the canvas.  Note that any `zIndex` on the provided
         * style will be ignored - features are rendered immediately in the order that
@@ -304,6 +318,7 @@ object render extends js.Object {
         * @api
         */
       def drawFeature(feature: typings.openlayers.mod.Feature, style: Style): Unit = js.native
+      
       /**
         * Render a geometry into the canvas.  Call
         * {@link ol.render.canvas.Immediate#setStyle} first to set the rendering style.
@@ -313,6 +328,7 @@ object render extends js.Object {
         */
       def drawGeometry(geometry: Geometry): Unit = js.native
       def drawGeometry(geometry: typings.openlayers.mod.render.Feature): Unit = js.native
+      
       /**
         * Set the rendering style.  Note that since this is an immediate rendering API,
         * any `zIndex` on the provided style will be ignored.
@@ -322,9 +338,7 @@ object render extends js.Object {
         */
       def setStyle(style: Style): Unit = js.native
     }
-    
   }
   
   type EventType = String
 }
-

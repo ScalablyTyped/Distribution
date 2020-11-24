@@ -2,9 +2,10 @@ package typings.emailTemplates
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   // email-templates accepts nodemailer.createTransport options directly
   // too and calls createTransport if given a non-function, thus a lot
   // of different types accepted for transport

@@ -2,78 +2,74 @@ package typings.pulumiAws.getAuthorizationTokenMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GetAuthorizationTokenResult extends js.Object {
+  
   /**
-    * Temporary IAM authentication credentials to access the ECR repository encoded in base64 in the form of `user_name:password`.
+    * Temporary authorization token.
     */
   val authorizationToken: String = js.native
+  
+  val domain: String = js.native
+  
+  val domainOwner: String = js.native
+  
+  val durationSeconds: js.UndefOr[Double] = js.native
+  
   /**
     * The time in UTC RFC3339 format when the authorization token expires.
     */
-  val expiresAt: String = js.native
+  val expiration: String = js.native
+  
   /**
     * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
-  /**
-    * Password decoded from the authorization token.
-    */
-  val password: String = js.native
-  /**
-    * The registry URL to use in the docker login command.
-    */
-  val proxyEndpoint: String = js.native
-  val registryId: js.UndefOr[String] = js.native
-  /**
-    * User name decoded from the authorization token.
-    */
-  val userName: String = js.native
 }
-
 object GetAuthorizationTokenResult {
+  
   @scala.inline
-  def apply(
-    authorizationToken: String,
-    expiresAt: String,
-    id: String,
-    password: String,
-    proxyEndpoint: String,
-    userName: String
-  ): GetAuthorizationTokenResult = {
-    val __obj = js.Dynamic.literal(authorizationToken = authorizationToken.asInstanceOf[js.Any], expiresAt = expiresAt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], proxyEndpoint = proxyEndpoint.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
+  def apply(authorizationToken: String, domain: String, domainOwner: String, expiration: String, id: String): GetAuthorizationTokenResult = {
+    val __obj = js.Dynamic.literal(authorizationToken = authorizationToken.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], domainOwner = domainOwner.asInstanceOf[js.Any], expiration = expiration.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAuthorizationTokenResult]
   }
+  
   @scala.inline
   implicit class GetAuthorizationTokenResultOps[Self <: GetAuthorizationTokenResult] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAuthorizationToken(value: String): Self = this.set("authorizationToken", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setExpiresAt(value: String): Self = this.set("expiresAt", value.asInstanceOf[js.Any])
+    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDomainOwner(value: String): Self = this.set("domainOwner", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setExpiration(value: String): Self = this.set("expiration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setDurationSeconds(value: Double): Self = this.set("durationSeconds", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def setProxyEndpoint(value: String): Self = this.set("proxyEndpoint", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setRegistryId(value: String): Self = this.set("registryId", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+    def deleteDurationSeconds: Self = this.set("durationSeconds", js.undefined)
   }
-  
 }
-

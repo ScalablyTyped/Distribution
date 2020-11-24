@@ -2,7 +2,7 @@ package typings.firefoxWebextBrowser.browser.downloads
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * *file*:
@@ -29,23 +29,29 @@ import scala.scalajs.js.annotation._
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.accepted
 */
 trait DangerType extends js.Object
-
 object DangerType {
+  
   @scala.inline
   def accepted: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.accepted = "accepted".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.accepted]
+  
   @scala.inline
   def content: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.content = "content".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.content]
+  
   @scala.inline
   def file: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.file = "file".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.file]
+  
   @scala.inline
   def host: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.host = "host".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.host]
+  
   @scala.inline
   def safe: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.safe = "safe".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.safe]
+  
   @scala.inline
   def uncommon: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uncommon = "uncommon".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uncommon]
+  
   @scala.inline
   def unwanted: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unwanted = "unwanted".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unwanted]
+  
   @scala.inline
   def url: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url = "url".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url]
 }
-

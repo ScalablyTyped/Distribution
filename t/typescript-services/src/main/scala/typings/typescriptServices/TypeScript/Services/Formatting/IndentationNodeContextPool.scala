@@ -3,11 +3,11 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 import typings.typescriptServices.TypeScript.SyntaxNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IndentationNodeContextPool extends js.Object {
-  var nodes: js.Any = js.native
+  
   def getNode(
     parent: IndentationNodeContext,
     node: SyntaxNode,
@@ -15,7 +15,9 @@ trait IndentationNodeContextPool extends js.Object {
     indentationLevel: Double,
     childIndentationLevelDelta: Double
   ): IndentationNodeContext = js.native
+  
+  var nodes: js.Any = js.native
+  
   def releaseNode(node: IndentationNodeContext): Unit = js.native
   def releaseNode(node: IndentationNodeContext, recursive: Boolean): Unit = js.native
 }
-

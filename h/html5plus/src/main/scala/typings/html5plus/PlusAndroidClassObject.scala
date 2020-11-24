@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Java类对象
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusAndroidClassObject extends js.Object {
+  
   /**
     * 获取Java类对象的静态属性
     * 
@@ -20,6 +21,7 @@ trait PlusAndroidClassObject extends js.Object {
     */
   def plusGetAttribute(): js.Any = js.native
   def plusGetAttribute(name: String): js.Any = js.native
+  
   /**
     * 设置Java类对象的静态属性
     * 
@@ -30,4 +32,3 @@ trait PlusAndroidClassObject extends js.Object {
   def plusSetAttribute(name: String): Unit = js.native
   def plusSetAttribute(name: String, value: js.Any): Unit = js.native
 }
-

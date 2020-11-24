@@ -11,15 +11,12 @@ import typings.i18n.i18n.Replacements
 import typings.i18n.i18n.TranslateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("i18n", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  /**
-    * Get current i18n-node version
-    */
-  val version: String = js.native
+  
   //#region __()
   /**
     * Translate the given phrase using locale configuration
@@ -36,11 +33,13 @@ object mod extends js.Object {
   def __(phraseOrOptions: String, replacements: Replacements): String = js.native
   def __(phraseOrOptions: TranslateOptions, replace: String*): String = js.native
   def __(phraseOrOptions: TranslateOptions, replacements: Replacements): String = js.native
+  
   /**
     * Configure current i18n instance
     * @param options - configuration options for i18n
     */
   def configure(options: ConfigurationOptions): Unit = js.native
+  
   //#endregion
   //#region Catalog
   /**
@@ -62,6 +61,7 @@ object mod extends js.Object {
     */
   def getCatalog(request: Request): LocaleCatalog = js.native
   def getCatalog(request: Request, locale: String): LocaleCatalog = js.native
+  
   /**
     * Get the current active locale for specified request
     * @param [request] - The request to get locale for
@@ -69,10 +69,12 @@ object mod extends js.Object {
     */
   def getLocale(): String = js.native
   def getLocale(request: Request): String = js.native
+  
   /**
     * Get a list with all configured locales
     */
   def getLocales(): js.Array[String] = js.native
+  
   //#endregion
   //#region __h()
   /**
@@ -82,6 +84,7 @@ object mod extends js.Object {
     */
   @JSName("__h")
   def h(phrase: String): js.Array[HashedList] = js.native
+  
   /**
     * Initialize i18n middleware for express
     * @param request - Current express request
@@ -90,6 +93,7 @@ object mod extends js.Object {
     */
   def init(request: Request, response: Response): Unit = js.native
   def init(request: Request, response: Response, next: js.Function0[Unit]): Unit = js.native
+  
   //#endregion
   //#region __l()
   /**
@@ -99,6 +103,7 @@ object mod extends js.Object {
     */
   @JSName("__l")
   def l(phrase: String): js.Array[String] = js.native
+  
   //#endregion
   //#region __mf()
   /**
@@ -120,6 +125,7 @@ object mod extends js.Object {
   def mf(phraseOrOptions: TranslateOptions, replace: js.Any*): String = js.native
   @JSName("__mf")
   def mf(phraseOrOptions: TranslateOptions, replacements: Replacements): String = js.native
+  
   /**
     * Translate with plural condition the given phrase and count using locale configuration
     * @param options - Options for plural translate
@@ -151,6 +157,7 @@ object mod extends js.Object {
     */
   @JSName("__n")
   def n(singular: String, plural: String, count: Double): String = js.native
+  
   //#endregion
   /**
     * Override the current request locale by using the query param (?locale=en)
@@ -158,6 +165,7 @@ object mod extends js.Object {
     */
   def overrideLocaleFromQuery(): Unit = js.native
   def overrideLocaleFromQuery(request: Request): Unit = js.native
+  
   //#endregion
   //#region Locale
   /**
@@ -182,10 +190,13 @@ object mod extends js.Object {
     * @param locale - The locale to set as default
     * @param [inheritance=false] - Disables inheritance if true
     */
-  // tslint:disable-next-line:unified-signatures
   def setLocale(requestOrResponse: Request, locale: String): Unit = js.native
   def setLocale(requestOrResponse: Request, locale: String, inheritance: Boolean): Unit = js.native
   def setLocale(requestOrResponse: Response, locale: String): Unit = js.native
   def setLocale(requestOrResponse: Response, locale: String, inheritance: Boolean): Unit = js.native
+  
+  /**
+    * Get current i18n-node version
+    */
+  val version: String = js.native
 }
-

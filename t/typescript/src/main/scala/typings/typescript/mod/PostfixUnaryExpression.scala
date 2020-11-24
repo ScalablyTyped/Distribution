@@ -2,13 +2,15 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PostfixUnaryExpression extends UpdateExpression {
+  
   @JSName("kind")
-  var kind_PostfixUnaryExpression: typings.typescript.mod.SyntaxKind.PostfixUnaryExpression = js.native
-  var operand: LeftHandSideExpression = js.native
-  var operator: PostfixUnaryOperator = js.native
+  val kind_PostfixUnaryExpression: typings.typescript.mod.SyntaxKind.PostfixUnaryExpression = js.native
+  
+  val operand: LeftHandSideExpression = js.native
+  
+  val operator: PostfixUnaryOperator = js.native
 }
-

@@ -12,7 +12,7 @@ Encode keys, values and range options, with built-in or custom encodings
 | Keywords           | level |
 | # releases         | 3 |
 | # dependents       | 16 |
-| # downloads        | 5802624 |
+| # downloads        | 8482366 |
 | # stars            | 0 |
 
 ## Links

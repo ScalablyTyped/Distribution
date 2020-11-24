@@ -10,9 +10,9 @@ The lodash method `_.groupBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.groupby |
 | Keywords           | lodash-modularized, groupby |
-| # releases         | 1 |
-| # dependents       | 213 |
-| # downloads        | 6191331 |
+| # releases         | 0 |
+| # dependents       | 234 |
+| # downloads        | 12041739 |
 | # stars            | 2 |
 
 ## Links

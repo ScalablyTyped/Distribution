@@ -2,9 +2,70 @@ package typings.compassVerticalRhythm
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compassVerticalRhythmStrings {
+  
+  @scala.inline
+  def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def ch: ch = "ch".asInstanceOf[ch]
+  
+  @scala.inline
+  def dashed: dashed = "dashed".asInstanceOf[dashed]
+  
+  @scala.inline
+  def dotted: dotted = "dotted".asInstanceOf[dotted]
+  
+  @scala.inline
+  def double: double = "double".asInstanceOf[double]
+  
+  @scala.inline
+  def em: em = "em".asInstanceOf[em]
+  
+  @scala.inline
+  def ex: ex = "ex".asInstanceOf[ex]
+  
+  @scala.inline
+  def groove: groove = "groove".asInstanceOf[groove]
+  
+  @scala.inline
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @scala.inline
+  def inset: inset = "inset".asInstanceOf[inset]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def outset: outset = "outset".asInstanceOf[outset]
+  
+  @scala.inline
+  def px: px = "px".asInstanceOf[px]
+  
+  @scala.inline
+  def rem: rem = "rem".asInstanceOf[rem]
+  
+  @scala.inline
+  def ridge: ridge = "ridge".asInstanceOf[ridge]
+  
+  @scala.inline
+  def solid: solid = "solid".asInstanceOf[solid]
+  
+  @scala.inline
+  def vh: vh = "vh".asInstanceOf[vh]
+  
+  @scala.inline
+  def vmin: vmin = "vmin".asInstanceOf[vmin]
+  
+  @scala.inline
+  def vw: vw = "vw".asInstanceOf[vw]
+  
   @js.native
   sealed trait Percentsign extends js.Object
   
@@ -64,46 +125,4 @@ object compassVerticalRhythmStrings {
   
   @js.native
   sealed trait vw extends js.Object
-  
-  @scala.inline
-  def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def ch: ch = "ch".asInstanceOf[ch]
-  @scala.inline
-  def dashed: dashed = "dashed".asInstanceOf[dashed]
-  @scala.inline
-  def dotted: dotted = "dotted".asInstanceOf[dotted]
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
-  @scala.inline
-  def em: em = "em".asInstanceOf[em]
-  @scala.inline
-  def ex: ex = "ex".asInstanceOf[ex]
-  @scala.inline
-  def groove: groove = "groove".asInstanceOf[groove]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def inset: inset = "inset".asInstanceOf[inset]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def outset: outset = "outset".asInstanceOf[outset]
-  @scala.inline
-  def px: px = "px".asInstanceOf[px]
-  @scala.inline
-  def rem: rem = "rem".asInstanceOf[rem]
-  @scala.inline
-  def ridge: ridge = "ridge".asInstanceOf[ridge]
-  @scala.inline
-  def solid: solid = "solid".asInstanceOf[solid]
-  @scala.inline
-  def vh: vh = "vh".asInstanceOf[vh]
-  @scala.inline
-  def vmin: vmin = "vmin".asInstanceOf[vmin]
-  @scala.inline
-  def vw: vw = "vw".asInstanceOf[vw]
 }
-

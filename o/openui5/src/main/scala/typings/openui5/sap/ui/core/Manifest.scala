@@ -4,16 +4,18 @@ import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.base.Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Manifest extends Object {
+  
   /**
     * Returns the Component name which is defined in the manifest as<code>sap.ui5/componentName</code> or
     * <code>sap.app/id</code>
     * @returns the component name
     */
   def getComponentName(): String = js.native
+  
   /**
     * Returns the configuration of a manifest section or the value for aspecific path. If no key is
     * specified, the return value is null.Example:<code>  {    "sap.ui5": {      "dependencies": {       
@@ -27,18 +29,21 @@ trait Manifest extends Object {
     * @returns Value of the key (could be any kind of value)
     */
   def getEntry(sKey: String): js.Any = js.native
+  
   /**
     * Returns the manifest defined in the metadata of the component.If not specified, the return value is
     * null.
     * @returns manifest.
     */
   def getJson(): js.Any = js.native
+  
   /**
     * Returns the raw manifest defined in the metadata of the component.If not specified, the return value
     * is null.
     * @returns manifest
     */
   def getRawJson(): js.Any = js.native
+  
   /**
     * Function to load the manifest by URL
     * @param mOptions the configuration options
@@ -46,4 +51,3 @@ trait Manifest extends Object {
     */
   def load(mOptions: js.Any): Manifest | JQueryPromise[_] = js.native
 }
-

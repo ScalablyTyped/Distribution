@@ -2,9 +2,10 @@ package typings.expressJwt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type GetTokenCallback = js.Function1[
     /* req */ typings.express.mod.Request_[
       typings.expressServeStaticCore.mod.ParamsDictionary, 
@@ -14,6 +15,7 @@ package object mod {
     ], 
     js.Any
   ]
+  
   type IsRevokedCallback = js.Function3[
     /* req */ typings.express.mod.Request_[
       typings.expressServeStaticCore.mod.ParamsDictionary, 
@@ -25,6 +27,7 @@ package object mod {
     /* done */ js.Function2[/* err */ js.Any, /* revoked */ js.UndefOr[scala.Boolean], scala.Unit], 
     scala.Unit
   ]
+  
   type SecretCallback = js.Function3[
     /* req */ typings.express.mod.Request_[
       typings.expressServeStaticCore.mod.ParamsDictionary, 
@@ -40,6 +43,7 @@ package object mod {
     ], 
     scala.Unit
   ]
+  
   type SecretCallbackLong = js.Function4[
     /* req */ typings.express.mod.Request_[
       typings.expressServeStaticCore.mod.ParamsDictionary, 
@@ -56,5 +60,6 @@ package object mod {
     ], 
     scala.Unit
   ]
+  
   type secretType = java.lang.String | typings.node.Buffer
 }

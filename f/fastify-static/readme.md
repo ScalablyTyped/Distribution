@@ -1,7 +1,7 @@
 
 # Scala.js typings for fastify-static
 
-Typings are for version 2.4.0
+Typings are for version 3.3.0
 
 ## Library description:
 Plugin for serving static files as fast as possible.
@@ -10,9 +10,9 @@ Plugin for serving static files as fast as possible.
 | ------------------ | :-------------: |
 | Full name          | fastify-static |
 | Keywords           | fastify, static |
-| # releases         | 28 |
-| # dependents       | 27 |
-| # downloads        | 200111 |
+| # releases         | 20 |
+| # dependents       | 105 |
+| # downloads        | 1784152 |
 | # stars            | 1 |
 
 ## Links
@@ -31,12 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Definitions by: Jannik <https://github.com/jannikkeye>
-//                 Leo <https://github.com/leomelzer>
-
-```
 

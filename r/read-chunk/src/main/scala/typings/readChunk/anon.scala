@@ -3,13 +3,15 @@ package typings.readChunk
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
+    
     /**
     	Read a chunk from a file asyncronously.
     	@param filePath - The path to the file.
@@ -25,6 +27,7 @@ object anon extends js.Object {
     	```
     	*/
     def apply(filePath: String, startPosition: Double, length: Double): js.Promise[Buffer] = js.native
+    
     /**
     	Read a chunk from a file synchronously.
     	@param filePath - The path to the file.
@@ -34,6 +37,4 @@ object anon extends js.Object {
     	*/
     def sync(filePath: String, startPosition: Double, length: Double): Buffer = js.native
   }
-  
 }
-

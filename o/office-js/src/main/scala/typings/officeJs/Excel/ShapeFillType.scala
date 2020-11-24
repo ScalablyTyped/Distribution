@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ShapeFillType extends js.Object
-
 /**
   *
   * Specifies a shape's fill type.
@@ -16,6 +15,7 @@ sealed trait ShapeFillType extends js.Object
 @JSGlobal("Excel.ShapeFillType")
 @js.native
 object ShapeFillType extends js.Object {
+  
   /**
     * Gradient fill.
     *
@@ -57,6 +57,4 @@ object ShapeFillType extends js.Object {
     */
   @js.native
   sealed trait solid extends ShapeFillType
-  
 }
-

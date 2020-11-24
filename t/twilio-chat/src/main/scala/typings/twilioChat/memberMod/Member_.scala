@@ -7,7 +7,7 @@ import typings.twilioChat.userMod.User
 import typings.twilioChat.userdescriptorMod.UserDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc A Member represents a remote Client in a Channel.
@@ -41,49 +41,69 @@ class Member_ protected () extends EventEmitter {
     * @typedef {('chat' | 'sms' | 'whatsapp')} Member#Type
     */
   def this(services: MemberServices, channel: js.Any, data: MemberDescriptor, sid: String) = this()
-  val channel: js.Any = js.native
-  var services: js.Any = js.native
-  var state: js.Any = js.native
+  
   /**
     * Private method function used to stop typing indicator (with event emitting)
     * @private
     */
   def _endTyping(): Unit = js.native
+  
   /**
     * Private method used to start or reset the typing indicator timeout (with event emitting)
     * @private
     */
   def _startTyping(timeout: js.Any): this.type = js.native
+  
   /**
     * Private method function used update local object's property roleSid with new value
     * @private
     */
   def _update(data: js.Any): this.type = js.native
+  
   def attributes: js.Object = js.native
+  
+  val channel: js.Any = js.native
+  
   def dateCreated: Date = js.native
+  
   def dateUpdated: Date = js.native
+  
   /**
     * Gets User for this member and subscribes to it. Supported only for <code>chat</code> type of Members
     * @returns {Promise<User|Error>}
     */
   def getUser(): js.Promise[User] = js.native
+  
   /**
     * Gets User Descriptor for this member. Supported only for <code>chat</code> type of Members
     * @returns {Promise<UserDescriptor|Error>}
     */
   def getUserDescriptor(): js.Promise[UserDescriptor] = js.native
+  
   def identity: String = js.native
+  
   def isTyping: Boolean = js.native
+  
   def lastConsumedMessageIndex: Double = js.native
+  
   def lastConsumptionTimestamp: Date = js.native
+  
   /**
     * Remove Member from the Channel.
     * @returns {Promise<void|Error|SessionError>}
     */
   def remove(): js.Promise[_] = js.native
+  
   def roleSid: String = js.native
+  
+  var services: js.Any = js.native
+  
   def sid: String = js.native
+  
+  var state: js.Any = js.native
+  
   def `type`: Type = js.native
+  
   /**
     * Edit member attributes.
     * @param {any} attributes new attributes for Member.
@@ -91,4 +111,3 @@ class Member_ protected () extends EventEmitter {
     */
   def updateAttributes(attributes: js.Any): js.Promise[this.type] = js.native
 }
-

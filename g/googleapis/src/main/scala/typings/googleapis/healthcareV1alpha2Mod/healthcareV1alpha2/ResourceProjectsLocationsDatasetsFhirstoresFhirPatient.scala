@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha2", "healthcare_v1alpha2.Resource$Projects$Locations$Datasets$Fhirstores$Fhir$Patient")
 @js.native
 class ResourceProjectsLocationsDatasetsFhirstoresFhirPatient protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.fhir.Patient.get$everything
     * @desc Gets all the resources in the patient compartment.
@@ -59,4 +61,3 @@ class ResourceProjectsLocationsDatasetsFhirstoresFhirPatient protected () extend
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
 }
-

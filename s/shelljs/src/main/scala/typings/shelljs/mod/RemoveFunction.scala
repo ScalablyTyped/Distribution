@@ -2,10 +2,11 @@ package typings.shelljs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RemoveFunction extends js.Object {
+  
   def apply(files: String*): ShellString = js.native
   /**
     * Removes files. The wildcard `*` is accepted.
@@ -26,4 +27,3 @@ trait RemoveFunction extends js.Object {
     */
   def apply(options: String, files: js.Array[String]): ShellString = js.native
 }
-

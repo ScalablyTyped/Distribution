@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-plugin-serve
 
-Typings are for version 0.10
+Typings are for version 1.2
 
 ## Library description:
 A Development Server in a Webpack Plugin
@@ -10,9 +10,9 @@ A Development Server in a Webpack Plugin
 | ------------------ | :-------------: |
 | Full name          | webpack-plugin-serve |
 | Keywords           | dev, development, devserver, serve, server, webpack |
-| # releases         | 26 |
-| # dependents       | 6 |
-| # downloads        | 236103 |
+| # releases         | 28 |
+| # dependents       | 8 |
+| # downloads        | 521846 |
 | # stars            | 0 |
 
 ## Links

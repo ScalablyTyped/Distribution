@@ -7,32 +7,45 @@ import typings.openfin.identityMod.Identity
 import typings.openfin.transportMod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openfin/_v2/api/interappbus/interappbus", JSImport.Namespace)
 @js.native
 object interappbusMod extends js.Object {
+  
   @js.native
   class InterAppPayload () extends js.Object {
+    
     var destinationUuid: js.UndefOr[String] = js.native
+    
     var message: js.UndefOr[js.Any] = js.native
+    
     var sourceUuid: String = js.native
+    
     var sourceWindowName: String = js.native
+    
     var topic: String = js.native
   }
   
   @js.native
   trait InterApplicationBus extends Base {
+    
     var Channel: typings.openfin.interappbusChannelMod.Channel = js.native
-    var emitSubscriverEvent: js.Any = js.native
-    var emitter: EventEmitter = js.native
-    var events: SubscriberAdded = js.native
-    var on: js.Any = js.native
-    var processMessage: js.Any = js.native
-    var refCounter: js.Any = js.native
-    var removeAllListeners: js.Any = js.native
+    
     /* protected */ def createSubscriptionKey(uuid: String, name: String, topic: String): String = js.native
+    
+    var emitSubscriverEvent: js.Any = js.native
+    
+    var emitter: EventEmitter = js.native
+    
+    var events: SubscriberAdded = js.native
+    
+    var on: js.Any = js.native
+    
     /* protected */ def onmessage(message: Message[InterAppPayload]): Boolean = js.native
+    
+    var processMessage: js.Any = js.native
+    
     /**
       * Publishes a message to all applications running on OpenFin Runtime that
       * are subscribed to the specified topic.
@@ -44,6 +57,11 @@ object interappbusMod extends js.Object {
       * @tutorial InterApplicationBus.publish
       */
     def publish(topic: String, message: js.Any): js.Promise[Unit] = js.native
+    
+    var refCounter: js.Any = js.native
+    
+    var removeAllListeners: js.Any = js.native
+    
     /**
       * Sends a message to a specific application on a specific topic.
       * @param { Identity } destination The identity of the application to which the message is sent
@@ -55,6 +73,7 @@ object interappbusMod extends js.Object {
       * @tutorial InterApplicationBus.send
       */
     def send(destination: Identity, topic: String, message: js.Any): js.Promise[Unit] = js.native
+    
     /**
       * Subscribes to messages from the specified application on the specified topic.
       * If the subscription is for a uuid, [name], topic combination that has already
@@ -71,6 +90,7 @@ object interappbusMod extends js.Object {
       * @tutorial InterApplicationBus.subscribe
       */
     def subscribe(source: Identity, topic: String, listener: js.Any): js.Promise[Unit] = js.native
+    
     /**
       * Unsubscribes to messages from the specified application on the specified topic.
       * @param { Identity } source This object is described in the Identity in the typedef
@@ -86,6 +106,4 @@ object interappbusMod extends js.Object {
   class default protected () extends InterApplicationBus {
     def this(wire: typings.openfin.transportMod.default) = this()
   }
-  
 }
-

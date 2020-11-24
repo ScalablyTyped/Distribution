@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Rounded Rectangle object is an area that has nice rounded corners, as indicated by its
@@ -118,4 +118,3 @@ class RoundedRectangle ()
   def this(x: Double, y: Double, width: Double, height: js.UndefOr[scala.Nothing], radius: Double) = this()
   def this(x: Double, y: Double, width: Double, height: Double, radius: Double) = this()
 }
-

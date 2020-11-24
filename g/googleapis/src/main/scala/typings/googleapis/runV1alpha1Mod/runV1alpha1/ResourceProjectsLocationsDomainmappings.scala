@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/run/v1alpha1", "run_v1alpha1.Resource$Projects$Locations$Domainmappings")
 @js.native
 class ResourceProjectsLocationsDomainmappings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * run.projects.locations.domainmappings.create
     * @desc Creates a new domain mapping.
@@ -45,6 +47,7 @@ class ResourceProjectsLocationsDomainmappings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDomainMapping]
   ): Unit = js.native
+  
   /**
     * run.projects.locations.domainmappings.delete
     * @desc Rpc to delete a domain mapping.
@@ -80,6 +83,7 @@ class ResourceProjectsLocationsDomainmappings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * run.projects.locations.domainmappings.get
     * @desc Rpc to get information about a domain mapping.
@@ -111,6 +115,7 @@ class ResourceProjectsLocationsDomainmappings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDomainMapping]
   ): Unit = js.native
+  
   /**
     * run.projects.locations.domainmappings.list
     * @desc Rpc to list domain mappings.
@@ -150,4 +155,3 @@ class ResourceProjectsLocationsDomainmappings protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListDomainMappingsResponse]
   ): Unit = js.native
 }
-

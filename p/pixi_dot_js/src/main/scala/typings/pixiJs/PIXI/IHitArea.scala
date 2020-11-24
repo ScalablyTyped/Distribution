@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for classes that represent a hit area.
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IHitArea extends js.Object {
+  
   /**
     * Checks whether the x and y coordinates given are contained within this area
     *
@@ -30,27 +31,30 @@ trait IHitArea extends js.Object {
     */
   def contains(x: Double, y: Double): Boolean = js.native
 }
-
 object IHitArea {
+  
   @scala.inline
   def apply(contains: (Double, Double) => Boolean): IHitArea = {
     val __obj = js.Dynamic.literal(contains = js.Any.fromFunction2(contains))
     __obj.asInstanceOf[IHitArea]
   }
+  
   @scala.inline
   implicit class IHitAreaOps[Self <: IHitArea] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setContains(value: (Double, Double) => Boolean): Self = this.set("contains", js.Any.fromFunction2(value))
   }
-  
 }
-

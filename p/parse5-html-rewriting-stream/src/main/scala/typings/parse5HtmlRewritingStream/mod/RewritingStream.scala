@@ -13,7 +13,7 @@ import typings.parse5SaxParser.mod.StartTagToken
 import typings.parse5SaxParser.mod.TextToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Streaming SAX-style HTML rewriter. A transform stream (which means you can
@@ -24,30 +24,37 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RewritingStream extends Transform {
+  
   /**
     * Emits serialized comment token into the output stream.
     */
   def emitComment(text: CommentToken): Unit = js.native
+  
   /**
     * Emits serialized document type token into the output stream.
     */
   def emitDoctype(text: DoctypeToken): Unit = js.native
+  
   /**
     * Emits serialized end tag token into the output stream.
     */
   def emitEndTag(endTag: EndTagToken): Unit = js.native
+  
   /**
     * Emits raw HTML string into the output stream.
     */
   def emitRaw(html: String): Unit = js.native
+  
   /**
     * Emits serialized start tag token into the output stream.
     */
   def emitStartTag(startTag: StartTagToken): Unit = js.native
+  
   /**
     * Emits serialized text token into the output stream.
     */
   def emitText(text: TextToken): Unit = js.native
+  
   /**
     * Raised when rewriter encounters a comment.
     */
@@ -74,4 +81,3 @@ trait RewritingStream extends Transform {
   @JSName("on")
   def on_text(`type`: text, callback: js.Function2[/* text */ TextToken, /* rawHtml */ String, Unit]): this.type = js.native
 }
-

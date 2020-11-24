@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new graphics device.
@@ -21,4 +21,3 @@ class GraphicsDevice protected ()
   def this(canvas: HTMLCanvasElement) = this()
   def this(canvas: HTMLCanvasElement, options: js.Any) = this()
 }
-

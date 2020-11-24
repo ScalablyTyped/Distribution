@@ -10,11 +10,12 @@ import typings.stripe.mod.creditNotes.ICreditNoteListOptions
 import typings.stripe.mod.creditNotes.ICreditNoteUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.CreditNotes")
 @js.native
 class CreditNotes () extends StripeResource {
+  
   def create(data: ICreditNoteCreationOptions): js.Promise[ICreditNote] = js.native
   /**
     * A credit note can be issued for open and paid invoices.
@@ -24,6 +25,7 @@ class CreditNotes () extends StripeResource {
   def create(data: ICreditNoteCreationOptions, options: HeaderOptions): js.Promise[ICreditNote] = js.native
   def create(data: ICreditNoteCreationOptions, options: HeaderOptions, response: IResponseFn[ICreditNote]): js.Promise[ICreditNote] = js.native
   def create(data: ICreditNoteCreationOptions, response: IResponseFn[ICreditNote]): js.Promise[ICreditNote] = js.native
+  
   def list(): js.Promise[IList[ICreditNote]] = js.native
   def list(data: ICreditNoteListOptions): js.Promise[IList[ICreditNote]] = js.native
   /**
@@ -36,6 +38,7 @@ class CreditNotes () extends StripeResource {
   def list(options: HeaderOptions): js.Promise[IList[ICreditNote]] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[ICreditNote]]): js.Promise[IList[ICreditNote]] = js.native
   def list(response: IResponseFn[IList[ICreditNote]]): js.Promise[IList[ICreditNote]] = js.native
+  
   def retrieve(creditNoteId: String): js.Promise[ICreditNote] = js.native
   /**
     * Retrieves the credit note with the given ID.
@@ -43,6 +46,7 @@ class CreditNotes () extends StripeResource {
   def retrieve(creditNoteId: String, options: HeaderOptions): js.Promise[ICreditNote] = js.native
   def retrieve(creditNoteId: String, options: HeaderOptions, response: IResponseFn[ICreditNote]): js.Promise[ICreditNote] = js.native
   def retrieve(creditNoteId: String, response: IResponseFn[ICreditNote]): js.Promise[ICreditNote] = js.native
+  
   def update(creditNoteId: String, data: ICreditNoteUpdateOptions): js.Promise[ICreditNote] = js.native
   /**
     * Updates the memo or metadata on the credit note.
@@ -55,6 +59,7 @@ class CreditNotes () extends StripeResource {
     response: IResponseFn[ICreditNote]
   ): js.Promise[ICreditNote] = js.native
   def update(creditNoteId: String, data: ICreditNoteUpdateOptions, response: IResponseFn[ICreditNote]): js.Promise[ICreditNote] = js.native
+  
   def voidCreditNote(creditNoteId: String): js.Promise[ICreditNote] = js.native
   /**
     * Marks a credit note as void. Voiding a credit note reverses its adjustment. Voiding is only possible on open invoices.
@@ -63,4 +68,3 @@ class CreditNotes () extends StripeResource {
   def voidCreditNote(creditNoteId: String, options: HeaderOptions, response: IResponseFn[ICreditNote]): js.Promise[ICreditNote] = js.native
   def voidCreditNote(creditNoteId: String, response: IResponseFn[ICreditNote]): js.Promise[ICreditNote] = js.native
 }
-

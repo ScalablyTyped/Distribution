@@ -5,11 +5,12 @@ import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/cells/lib/celldragutils", "CellDragUtils.findCell")
 @js.native
 object findCell extends js.Object {
+  
   /**
     * Find the cell index containing the target html element.
     * This function traces up the DOM hierarchy to find the root cell
@@ -29,4 +30,3 @@ object findCell extends js.Object {
     isCellNode: js.Function1[/* node */ HTMLElement, Boolean]
   ): Double = js.native
 }
-

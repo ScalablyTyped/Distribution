@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/javascript-extension" : "2.1.1"
+      "@jupyterlab/javascript-extension" : "2.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/javascript-extension" : "2.1.1"
+      "@jupyterlab/javascript-extension" : "2.2.4"
     }
   ],
   "compile-devDependencies" : [

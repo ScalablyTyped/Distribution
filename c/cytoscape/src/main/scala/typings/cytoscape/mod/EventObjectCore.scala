@@ -3,22 +3,24 @@ package typings.cytoscape.mod
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.cytoscape.mod.AbstractEventObject because Already inherited
 - typings.cytoscape.mod.LayoutEventObject because var conflicts: cy, namespace, target, timeStamp, `type`. Inlined layout */ @js.native
 trait EventObjectCore extends InputEventObject {
+  
   /**
     * layout : indicates the corresponding layout that triggered the event
     * (useful if running multiple layouts simultaneously)
     */
   var layout: js.Any = js.native
+  
   @JSName("target")
   var target_EventObjectCore: Core = js.native
 }
-
 object EventObjectCore {
+  
   @scala.inline
   def apply(
     cy: Core,
@@ -41,22 +43,26 @@ object EventObjectCore {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventObjectCore]
   }
+  
   @scala.inline
   implicit class EventObjectCoreOps[Self <: EventObjectCore] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setLayout(value: js.Any): Self = this.set("layout", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTarget(value: Core): Self = this.set("target", value.asInstanceOf[js.Any])
   }
-  
 }
-

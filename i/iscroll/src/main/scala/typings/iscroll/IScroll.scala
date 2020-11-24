@@ -3,30 +3,39 @@ package typings.iscroll
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IScroll extends js.Object {
-  var scale: Double = js.native
-  var x: Double = js.native
-  var y: Double = js.native
+  
   def destroy(): Unit = js.native
+  
   def disable(): Unit = js.native
+  
   def enable(): Unit = js.native
+  
   def goToPage(pageX: Double, pageY: Double): Unit = js.native
   def goToPage(pageX: Double, pageY: Double, time: Double): Unit = js.native
+  
   def isReady(): Boolean = js.native
+  
   def off(`type`: String): Unit = js.native
   def off(`type`: String, fn: js.Function1[/* evt */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  
   // Events
   def on(`type`: String, fn: js.Function0[Unit]): Unit = js.native
   // Events
   def on(`type`: String, fn: js.Function1[/* evt */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  
   def refresh(): Unit = js.native
+  
+  var scale: Double = js.native
+  
   def scrollTo(x: Double, y: Double): Unit = js.native
   def scrollTo(x: Double, y: Double, time: js.UndefOr[scala.Nothing], relative: Boolean): Unit = js.native
   def scrollTo(x: Double, y: Double, time: Double): Unit = js.native
   def scrollTo(x: Double, y: Double, time: Double, relative: Boolean): Unit = js.native
+  
   def scrollToElement(element: String): Unit = js.native
   def scrollToElement(element: String, time: Double): Unit = js.native
   def scrollToElement(element: HTMLElement): Unit = js.native
@@ -159,7 +168,13 @@ trait IScroll extends js.Object {
   def scrollToElement(element: HTMLElement, time: Double, offsetX: Double, offsetY: Boolean, easing: js.Function): Unit = js.native
   def scrollToElement(element: HTMLElement, time: Double, offsetX: Double, offsetY: Double): Unit = js.native
   def scrollToElement(element: HTMLElement, time: Double, offsetX: Double, offsetY: Double, easing: js.Function): Unit = js.native
+  
   def stop(): Unit = js.native
+  
+  var x: Double = js.native
+  
+  var y: Double = js.native
+  
   def zoom(scale: Double): Unit = js.native
   def zoom(scale: Double, x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], time: Double): Unit = js.native
   def zoom(scale: Double, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
@@ -169,4 +184,3 @@ trait IScroll extends js.Object {
   def zoom(scale: Double, x: Double, y: Double): Unit = js.native
   def zoom(scale: Double, x: Double, y: Double, time: Double): Unit = js.native
 }
-

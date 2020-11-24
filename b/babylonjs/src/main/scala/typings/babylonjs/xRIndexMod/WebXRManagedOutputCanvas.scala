@@ -2,7 +2,7 @@ package typings.babylonjs.xRIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/XR/index", "WebXRManagedOutputCanvas")
 @js.native
@@ -19,4 +19,3 @@ class WebXRManagedOutputCanvas protected ()
     _options: typings.babylonjs.webXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOptions
   ) = this()
 }
-

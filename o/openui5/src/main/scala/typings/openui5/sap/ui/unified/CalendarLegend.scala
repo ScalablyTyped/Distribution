@@ -3,31 +3,36 @@ package typings.openui5.sap.ui.unified
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CalendarLegend extends Control {
+  
   /**
     * Adds some item to the aggregation <code>items</code>.
     * @param oItem the item to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addItem(oItem: CalendarLegendItem): CalendarLegend = js.native
+  
   /**
     * Destroys all the items in the aggregation <code>items</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyItems(): CalendarLegend = js.native
+  
   /**
     * Gets current value of property <code>columnWidth</code>.Width of the columns created in which the
     * items are arranged.Default value is <code>120px</code>.
     * @returns Value of property <code>columnWidth</code>
     */
   def getColumnWidth(): js.Any = js.native
+  
   /**
     * Gets content of aggregation <code>items</code>.Items to be displayed.
     */
   def getItems(): js.Array[CalendarLegendItem] = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.unified.CalendarLegendItem</code> in the aggregation
     * <code>items</code>.and returns its index if found or -1 otherwise.
@@ -35,6 +40,7 @@ trait CalendarLegend extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfItem(oItem: CalendarLegendItem): Double = js.native
+  
   /**
     * Inserts a item into the aggregation <code>items</code>.
     * @param oItem the item to insert; if empty, nothing is inserted
@@ -45,12 +51,14 @@ trait CalendarLegend extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertItem(oItem: CalendarLegendItem, iIndex: Double): CalendarLegend = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>items</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllItems(): js.Array[CalendarLegendItem] = js.native
+  
   def removeItem(vItem: String): CalendarLegendItem = js.native
   /**
     * Removes a item from the aggregation <code>items</code>.
@@ -59,6 +67,7 @@ trait CalendarLegend extends Control {
     */
   def removeItem(vItem: Double): CalendarLegendItem = js.native
   def removeItem(vItem: CalendarLegendItem): CalendarLegendItem = js.native
+  
   /**
     * Sets a new value for property <code>columnWidth</code>.Width of the columns created in which the
     * items are arranged.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -68,4 +77,3 @@ trait CalendarLegend extends Control {
     */
   def setColumnWidth(sColumnWidth: js.Any): CalendarLegend = js.native
 }
-

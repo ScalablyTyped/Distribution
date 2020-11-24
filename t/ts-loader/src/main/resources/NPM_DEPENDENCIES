@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ts-loader" : "6.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ts-loader" : "6.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

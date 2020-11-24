@@ -5,11 +5,12 @@ import typings.meteor.Mongo.Cursor
 import typings.meteorRoles.anon.Fields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/alanning:roles", "Roles.getUsersInRole")
 @js.native
 object getUsersInRole extends js.Object {
+  
   /**
     * Retrieve all users who are in target role.
     *
@@ -28,13 +29,12 @@ object getUsersInRole extends js.Object {
     *                           through to `Meteor.users.find(query, options)`
     * @return {Cursor} cursor of users in role
     */
-  def apply(role: String): Cursor[User] = js.native
-  def apply(role: String, group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User] = js.native
-  def apply(role: String, group: String): Cursor[User] = js.native
-  def apply(role: String, group: String, options: Fields): Cursor[User] = js.native
-  def apply(role: js.Array[String]): Cursor[User] = js.native
-  def apply(role: js.Array[String], group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User] = js.native
-  def apply(role: js.Array[String], group: String): Cursor[User] = js.native
-  def apply(role: js.Array[String], group: String, options: Fields): Cursor[User] = js.native
+  def apply(role: String): Cursor[User, User] = js.native
+  def apply(role: String, group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User, User] = js.native
+  def apply(role: String, group: String): Cursor[User, User] = js.native
+  def apply(role: String, group: String, options: Fields): Cursor[User, User] = js.native
+  def apply(role: js.Array[String]): Cursor[User, User] = js.native
+  def apply(role: js.Array[String], group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User, User] = js.native
+  def apply(role: js.Array[String], group: String): Cursor[User, User] = js.native
+  def apply(role: js.Array[String], group: String, options: Fields): Cursor[User, User] = js.native
 }
-

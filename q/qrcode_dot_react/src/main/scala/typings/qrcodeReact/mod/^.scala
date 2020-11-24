@@ -5,7 +5,7 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("qrcode.react", JSImport.Namespace)
 @js.native
@@ -16,8 +16,6 @@ class ^ protected ()
   def this(props: CanvasQRCodeProps, context: js.Any) = this()
   def this(props: SvgQRCodeProps, context: js.Any) = this()
 }
-
 @JSImport("qrcode.react", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[QRCode]
-

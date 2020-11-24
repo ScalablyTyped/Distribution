@@ -3,12 +3,12 @@ package typings.winrt.Windows.Devices.Enumeration.Pnp
 import typings.winrt.Windows.Devices.Enumeration.DeviceWatcherStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PnpObjectWatcher extends IPnpObjectWatcher
-
 object PnpObjectWatcher {
+  
   @scala.inline
   def apply(
     onadded: js.Any,
@@ -24,4 +24,3 @@ object PnpObjectWatcher {
     __obj.asInstanceOf[PnpObjectWatcher]
   }
 }
-

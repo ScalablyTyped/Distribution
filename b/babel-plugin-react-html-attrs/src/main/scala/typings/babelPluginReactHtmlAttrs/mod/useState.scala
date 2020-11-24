@@ -2,11 +2,12 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babel-plugin-react-html-attrs", "useState")
 @js.native
 object useState extends js.Object {
+  
   // convenience overload when first argument is ommitted
   /**
     * Returns a stateful value, and a function to update it.
@@ -24,4 +25,3 @@ object useState extends js.Object {
   def apply[S](initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
   def apply[S](initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
 }
-

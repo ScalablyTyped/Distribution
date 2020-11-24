@@ -4,7 +4,7 @@ import typings.heremaps.H.geo.IPoint
 import typings.heremaps.H.map.Marker.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A marker with a visual representation in the form of a bitmap icon. Marker are predestinated if large amounts of markers with static icons should be displayed om the map.
@@ -21,4 +21,3 @@ class Marker protected ()
   def this(position: IPoint) = this()
   def this(position: IPoint, opt_options: Options) = this()
 }
-

@@ -3,11 +3,12 @@ package typings.semver.mod
 import typings.semver.semverMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver", "maxSatisfying")
 @js.native
 object maxSatisfying extends js.Object {
+  
   /**
     * Return the highest version in the list that satisfies the range, or null if none of them do.
     */
@@ -18,4 +19,3 @@ object maxSatisfying extends js.Object {
   def apply[T /* <: String | ^  */](versions: js.Array[T], range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): T | Null = js.native
   def apply[T /* <: String | ^  */](versions: js.Array[T], range: typings.semver.rangeMod.^, optionsOrLoose: Options): T | Null = js.native
 }
-

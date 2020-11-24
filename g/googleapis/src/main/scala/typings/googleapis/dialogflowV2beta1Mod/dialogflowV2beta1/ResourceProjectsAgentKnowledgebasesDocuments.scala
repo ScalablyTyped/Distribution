@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2beta1", "dialogflow_v2beta1.Resource$Projects$Agent$Knowledgebases$Documents")
 @js.native
 class ResourceProjectsAgentKnowledgebasesDocuments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dialogflow.projects.agent.knowledgeBases.documents.create
     * @desc Creates a new document.  Operation <response: Document, metadata:
@@ -46,6 +48,7 @@ class ResourceProjectsAgentKnowledgebasesDocuments protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.knowledgeBases.documents.delete
     * @desc Deletes the specified document.  Operation <response:
@@ -78,6 +81,7 @@ class ResourceProjectsAgentKnowledgebasesDocuments protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.knowledgeBases.documents.get
     * @desc Retrieves the specified document.
@@ -109,6 +113,7 @@ class ResourceProjectsAgentKnowledgebasesDocuments protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1Document]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.knowledgeBases.documents.list
     * @desc Returns the list of all documents of the knowledge base.
@@ -142,6 +147,7 @@ class ResourceProjectsAgentKnowledgebasesDocuments protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1ListDocumentsResponse]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.knowledgeBases.documents.patch
     * @desc Updates the specified document. Operation <response: Document,
@@ -176,6 +182,7 @@ class ResourceProjectsAgentKnowledgebasesDocuments protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.knowledgeBases.documents.reload
     * @desc Reloads the specified document from its specified source,
@@ -214,4 +221,3 @@ class ResourceProjectsAgentKnowledgebasesDocuments protected () extends js.Objec
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
 }
-

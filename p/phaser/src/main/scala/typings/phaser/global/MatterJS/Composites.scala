@@ -3,7 +3,7 @@ package typings.phaser.global.MatterJS
 import typings.phaser.MatterJS.CompositeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Matter.Composites` module contains factory methods for creating composite bodies
@@ -17,11 +17,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Composites ()
   extends typings.phaser.MatterJS.Composites
-
 /* static members */
 @JSGlobal("MatterJS.Composites")
 @js.native
 object Composites extends js.Object {
+  
   /**
     * Creates a composite with simple car setup of bodies and constraints.
     * @method car
@@ -33,6 +33,7 @@ object Composites extends js.Object {
     * @return {composite} A new composite car body
     */
   def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): CompositeType = js.native
+  
   /**
     * Chains all bodies in the given composite together using constraints.
     * @method chain
@@ -52,6 +53,7 @@ object Composites extends js.Object {
     yOffsetB: Double,
     options: js.Any
   ): CompositeType = js.native
+  
   /**
     * Connects bodies in the composite with constraints in a grid pattern, with optional cross braces.
     * @method mesh
@@ -63,6 +65,7 @@ object Composites extends js.Object {
     * @return {composite} The composite containing objects meshed together with constraints
     */
   def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): CompositeType = js.native
+  
   /**
     * Creates a composite with a Newton's Cradle setup of bodies and constraints.
     * @method newtonsCradle
@@ -74,6 +77,7 @@ object Composites extends js.Object {
     * @return {composite} A new composite newtonsCradle body
     */
   def newtonsCradle(xx: Double, yy: Double, number: Double, size: Double, length: Double): CompositeType = js.native
+  
   /**
     * Create a new composite containing bodies created in the callback in a pyramid arrangement.
     * This function uses the body's bounds to prevent overlaps.
@@ -96,6 +100,7 @@ object Composites extends js.Object {
     rowGap: Double,
     callback: js.Function
   ): CompositeType = js.native
+  
   /**
     * Creates a simple soft body like object.
     * @method softBody
@@ -123,6 +128,7 @@ object Composites extends js.Object {
     particleOptions: js.Any,
     constraintOptions: js.Any
   ): CompositeType = js.native
+  
   /**
     * Create a new composite containing bodies created in the callback in a grid arrangement.
     * This function uses the body's bounds to prevent overlaps.
@@ -146,4 +152,3 @@ object Composites extends js.Object {
     callback: js.Function
   ): CompositeType = js.native
 }
-

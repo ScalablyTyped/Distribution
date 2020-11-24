@@ -10,9 +10,9 @@ Throttle and debounce functions.
 | ------------------ | :-------------: |
 | Full name          | throttle-debounce |
 | Keywords           | debounce, throttle |
-| # releases         | 5 |
-| # dependents       | 929 |
-| # downloads        | 22124499 |
+| # releases         | 7 |
+| # dependents       | 1335 |
+| # downloads        | 86222427 |
 | # stars            | 12 |
 
 ## Links

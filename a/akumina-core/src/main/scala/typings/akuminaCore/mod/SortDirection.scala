@@ -2,7 +2,7 @@ package typings.akuminaCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // class OrExpression extends Expression { }
 // class EqualExpression extends Expression { }
@@ -16,11 +16,10 @@ import scala.scalajs.js.annotation._
 @JSImport("akumina-core", "SortDirection")
 @js.native
 class SortDirection () extends js.Object
-
 /* static members */
 @JSImport("akumina-core", "SortDirection")
 @js.native
 object SortDirection extends js.Object {
+  
   var Descending: String = js.native
 }
-

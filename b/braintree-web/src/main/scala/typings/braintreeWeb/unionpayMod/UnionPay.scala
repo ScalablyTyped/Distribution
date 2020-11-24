@@ -7,14 +7,16 @@ import typings.braintreeWeb.anon.HostedFields
 import typings.braintreeWeb.coreMod.callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UnionPay extends js.Object {
+  
   /**
     * @description The current version of the SDK, i.e. `3.0.2`.
     */
   var VERSION: String = js.native
+  
   /**
     * braintree.unionpay.create({ client: clientInstance }, function (createErr, unionpayInstance) {
     *   if (createErr) {
@@ -24,7 +26,8 @@ trait UnionPay extends js.Object {
     *   // ...
     * });
     */
-  def create(options: Client, callback: callback): Unit = js.native
+  def create(options: Client, callback: callback[_]): Unit = js.native
+  
   /**
     * Enrolls a UnionPay card. Use {@link UnionPay#fetchCapabilities|fetchCapabilities} to determine if the SMS enrollment
     * process is required.
@@ -74,7 +77,8 @@ trait UnionPay extends js.Object {
     *   }
     * });
     */
-  def enroll(options: HostedFields, callback: callback): Unit = js.native
+  def enroll(options: HostedFields, callback: callback[_]): Unit = js.native
+  
   /**
     * Fetches the capabilities of a card, including whether or not the SMS enrollment process is required.
     * @example <caption>With raw card data</caption>
@@ -139,7 +143,8 @@ trait UnionPay extends js.Object {
     *   });
     * });
     */
-  def fetchCapabilities(options: Card, callback: callback): Unit = js.native
+  def fetchCapabilities(options: Card, callback: callback[_]): Unit = js.native
+  
   /**
     * Cleanly tear down anything set up by {@link module:braintree-web/unionpay.create|create}.
     * This only needs to be called when using UnionPay with Hosted Fields.
@@ -153,7 +158,8 @@ trait UnionPay extends js.Object {
     * });
     */
   def teardown(): Unit = js.native
-  def teardown(callback: callback): Unit = js.native
+  def teardown(callback: callback[_]): Unit = js.native
+  
   /**
     * Tokenizes a UnionPay card and returns a nonce payload.
     * @example <caption>With raw card data</caption>
@@ -188,6 +194,5 @@ trait UnionPay extends js.Object {
     *   // Send response.nonce to your server
     * });
     */
-  def tokenize(options: EnrollmentId, callback: callback): Unit = js.native
+  def tokenize(options: EnrollmentId, callback: callback[_]): Unit = js.native
 }
-

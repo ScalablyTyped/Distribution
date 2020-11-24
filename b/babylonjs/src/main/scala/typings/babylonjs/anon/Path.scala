@@ -4,54 +4,136 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.mathVectorMod.Vector4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Path extends js.Object {
-  var backUVs: js.UndefOr[Vector4] = js.undefined
-  var cap: js.UndefOr[Double] = js.undefined
-  var frontUVs: js.UndefOr[Vector4] = js.undefined
-  var instance: js.UndefOr[typings.babylonjs.meshMod.Mesh] = js.undefined
-  var invertUV: js.UndefOr[Boolean] = js.undefined
-  var path: js.Array[Vector3]
-  var ribbonCloseArray: js.UndefOr[Boolean] = js.undefined
-  var ribbonClosePath: js.UndefOr[Boolean] = js.undefined
-  var rotationFunction: js.UndefOr[js.Any] = js.undefined
-  var scaleFunction: js.UndefOr[js.Any] = js.undefined
-  var shape: js.Array[Vector3]
-  var sideOrientation: js.UndefOr[Double] = js.undefined
-  var updatable: js.UndefOr[Boolean] = js.undefined
+  
+  var backUVs: js.UndefOr[Vector4] = js.native
+  
+  var cap: js.UndefOr[Double] = js.native
+  
+  var frontUVs: js.UndefOr[Vector4] = js.native
+  
+  var instance: js.UndefOr[typings.babylonjs.meshMod.Mesh] = js.native
+  
+  var invertUV: js.UndefOr[Boolean] = js.native
+  
+  var path: js.Array[Vector3] = js.native
+  
+  var ribbonCloseArray: js.UndefOr[Boolean] = js.native
+  
+  var ribbonClosePath: js.UndefOr[Boolean] = js.native
+  
+  var rotationFunction: js.UndefOr[js.Any] = js.native
+  
+  var scaleFunction: js.UndefOr[js.Any] = js.native
+  
+  var shape: js.Array[Vector3] = js.native
+  
+  var sideOrientation: js.UndefOr[Double] = js.native
+  
+  var updatable: js.UndefOr[Boolean] = js.native
 }
-
 object Path {
+  
   @scala.inline
-  def apply(
-    path: js.Array[Vector3],
-    shape: js.Array[Vector3],
-    backUVs: Vector4 = null,
-    cap: js.UndefOr[Double] = js.undefined,
-    frontUVs: Vector4 = null,
-    instance: typings.babylonjs.meshMod.Mesh = null,
-    invertUV: js.UndefOr[Boolean] = js.undefined,
-    ribbonCloseArray: js.UndefOr[Boolean] = js.undefined,
-    ribbonClosePath: js.UndefOr[Boolean] = js.undefined,
-    rotationFunction: js.Any = null,
-    scaleFunction: js.Any = null,
-    sideOrientation: js.UndefOr[Double] = js.undefined,
-    updatable: js.UndefOr[Boolean] = js.undefined
-  ): Path = {
+  def apply(path: js.Array[Vector3], shape: js.Array[Vector3]): Path = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
-    if (backUVs != null) __obj.updateDynamic("backUVs")(backUVs.asInstanceOf[js.Any])
-    if (!js.isUndefined(cap)) __obj.updateDynamic("cap")(cap.get.asInstanceOf[js.Any])
-    if (frontUVs != null) __obj.updateDynamic("frontUVs")(frontUVs.asInstanceOf[js.Any])
-    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (!js.isUndefined(invertUV)) __obj.updateDynamic("invertUV")(invertUV.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ribbonCloseArray)) __obj.updateDynamic("ribbonCloseArray")(ribbonCloseArray.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ribbonClosePath)) __obj.updateDynamic("ribbonClosePath")(ribbonClosePath.get.asInstanceOf[js.Any])
-    if (rotationFunction != null) __obj.updateDynamic("rotationFunction")(rotationFunction.asInstanceOf[js.Any])
-    if (scaleFunction != null) __obj.updateDynamic("scaleFunction")(scaleFunction.asInstanceOf[js.Any])
-    if (!js.isUndefined(sideOrientation)) __obj.updateDynamic("sideOrientation")(sideOrientation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(updatable)) __obj.updateDynamic("updatable")(updatable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Path]
   }
+  
+  @scala.inline
+  implicit class PathOps[Self <: Path] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setPathVarargs(value: Vector3*): Self = this.set("path", js.Array(value :_*))
+    
+    @scala.inline
+    def setPath(value: js.Array[Vector3]): Self = this.set("path", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setShapeVarargs(value: Vector3*): Self = this.set("shape", js.Array(value :_*))
+    
+    @scala.inline
+    def setShape(value: js.Array[Vector3]): Self = this.set("shape", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBackUVs(value: Vector4): Self = this.set("backUVs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBackUVs: Self = this.set("backUVs", js.undefined)
+    
+    @scala.inline
+    def setCap(value: Double): Self = this.set("cap", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCap: Self = this.set("cap", js.undefined)
+    
+    @scala.inline
+    def setFrontUVs(value: Vector4): Self = this.set("frontUVs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteFrontUVs: Self = this.set("frontUVs", js.undefined)
+    
+    @scala.inline
+    def setInstance(value: typings.babylonjs.meshMod.Mesh): Self = this.set("instance", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteInstance: Self = this.set("instance", js.undefined)
+    
+    @scala.inline
+    def setInvertUV(value: Boolean): Self = this.set("invertUV", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteInvertUV: Self = this.set("invertUV", js.undefined)
+    
+    @scala.inline
+    def setRibbonCloseArray(value: Boolean): Self = this.set("ribbonCloseArray", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRibbonCloseArray: Self = this.set("ribbonCloseArray", js.undefined)
+    
+    @scala.inline
+    def setRibbonClosePath(value: Boolean): Self = this.set("ribbonClosePath", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRibbonClosePath: Self = this.set("ribbonClosePath", js.undefined)
+    
+    @scala.inline
+    def setRotationFunction(value: js.Any): Self = this.set("rotationFunction", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRotationFunction: Self = this.set("rotationFunction", js.undefined)
+    
+    @scala.inline
+    def setScaleFunction(value: js.Any): Self = this.set("scaleFunction", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteScaleFunction: Self = this.set("scaleFunction", js.undefined)
+    
+    @scala.inline
+    def setSideOrientation(value: Double): Self = this.set("sideOrientation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSideOrientation: Self = this.set("sideOrientation", js.undefined)
+    
+    @scala.inline
+    def setUpdatable(value: Boolean): Self = this.set("updatable", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUpdatable: Self = this.set("updatable", js.undefined)
+  }
 }
-

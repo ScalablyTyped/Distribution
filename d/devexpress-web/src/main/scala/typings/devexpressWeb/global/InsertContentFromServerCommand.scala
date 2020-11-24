@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to insert content created on the server to the client model.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class InsertContentFromServerCommand ()
   extends typings.devexpressWeb.InsertContentFromServerCommand
-

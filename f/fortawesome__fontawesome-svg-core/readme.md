@@ -1,7 +1,7 @@
 
 # Scala.js typings for fortawesome__fontawesome-svg-core
 
-Typings are for version 1.2.30
+Typings are for version 1.2.32
 
 ## Library description:
 The iconic font, CSS, and SVG framework
@@ -10,9 +10,9 @@ The iconic font, CSS, and SVG framework
 | ------------------ | :-------------: |
 | Full name          | @fortawesome/fontawesome-svg-core |
 | Keywords           | font, awesome, fontawesome, icon, svg, bootstrap |
-| # releases         | 55 |
-| # dependents       | 940 |
-| # downloads        | 17211142 |
+| # releases         | 47 |
+| # dependents       | 1577 |
+| # downloads        | 26989088 |
 | # stars            | 0 |
 
 ## Links

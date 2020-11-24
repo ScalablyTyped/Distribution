@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is implemented by objects that are instances of a named template to provide information about the template.
@@ -17,19 +17,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XTemplateInstance extends XInterface {
+  
   /**
     * retrieves the name of the template
     * @returns the name of the template this object was built from or conforms to.
     */
   val TemplateName: String = js.native
+  
   /**
     * retrieves the name of the template
     * @returns the name of the template this object was built from or conforms to.
     */
   def getTemplateName(): String = js.native
 }
-
 object XTemplateInstance {
+  
   @scala.inline
   def apply(
     TemplateName: String,
@@ -41,22 +43,26 @@ object XTemplateInstance {
     val __obj = js.Dynamic.literal(TemplateName = TemplateName.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getTemplateName = js.Any.fromFunction0(getTemplateName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XTemplateInstance]
   }
+  
   @scala.inline
   implicit class XTemplateInstanceOps[Self <: XTemplateInstance] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setTemplateName(value: String): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetTemplateName(value: () => String): Self = this.set("getTemplateName", js.Any.fromFunction0(value))
   }
-  
 }
-

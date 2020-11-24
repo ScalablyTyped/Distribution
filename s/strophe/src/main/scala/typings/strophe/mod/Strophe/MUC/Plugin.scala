@@ -6,10 +6,11 @@ import typings.strophe.stropheStrings.chat
 import typings.strophe.stropheStrings.groupchat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Plugin extends js.Object {
+  
   /**
     * Ban a user.
     *
@@ -46,6 +47,7 @@ trait Plugin extends js.Object {
   ): String = js.native
   def ban(room: String, jid: String, reason: String, handler_cb: js.Function): String = js.native
   def ban(room: String, jid: String, reason: String, handler_cb: js.Function, error_cb: js.Function): String = js.native
+  
   /**
     * Cancel the room configuration
     *
@@ -53,6 +55,7 @@ trait Plugin extends js.Object {
     * @return id - the unique id used to cancel the configuration.
     */
   def cancelConfigure(room: String): String = js.native
+  
   /**
     * Change the current users nick name.
     *
@@ -60,6 +63,7 @@ trait Plugin extends js.Object {
     * @param user - The new nick name.
     */
   def changeNick(room: String, user: String): Unit = js.native
+  
   /**
     * Start a room configuration.
     *
@@ -72,6 +76,7 @@ trait Plugin extends js.Object {
   def configure(room: String, handler_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def configure(room: String, handler_cb: js.Function): String = js.native
   def configure(room: String, handler_cb: js.Function, error_cb: js.Function): String = js.native
+  
   /**
     * Create a configured room.
     *
@@ -82,6 +87,7 @@ trait Plugin extends js.Object {
     * @return id - the unique id used to create the chat room.
     */
   def createConfiguredRoom(room: String, config: js.Any, success_cb: js.Function, error_cb: js.Function): String = js.native
+  
   /**
     * Create an instance room.
     *
@@ -94,6 +100,7 @@ trait Plugin extends js.Object {
   def createInstantRoom(room: String, success_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def createInstantRoom(room: String, success_cb: js.Function): String = js.native
   def createInstantRoom(room: String, success_cb: js.Function, error_cb: js.Function): String = js.native
+  
   /**
     * De-Op a user.
     *
@@ -130,6 +137,7 @@ trait Plugin extends js.Object {
   ): String = js.native
   def deop(room: String, nick: String, reason: String, handler_cb: js.Function): String = js.native
   def deop(room: String, nick: String, reason: String, handler_cb: js.Function, error_cb: js.Function): String = js.native
+  
   /**
     * Send a direct invitation.
     *
@@ -143,6 +151,7 @@ trait Plugin extends js.Object {
   def directInvite(room: String, receiver: String, reason: js.UndefOr[scala.Nothing], password: String): String = js.native
   def directInvite(room: String, receiver: String, reason: String): String = js.native
   def directInvite(room: String, receiver: String, reason: String, password: String): String = js.native
+  
   /**
     * Convenience Function to send a Message to all Occupants
     *
@@ -156,6 +165,7 @@ trait Plugin extends js.Object {
   def groupchat(room: String, message: String, html_message: js.UndefOr[scala.Nothing], msgid: String): String = js.native
   def groupchat(room: String, message: String, html_message: String): String = js.native
   def groupchat(room: String, message: String, html_message: String, msgid: String): String = js.native
+  
   /**
     * Initialize the MUC plugin. Sets the correct connection object and
     * extends the namesace.
@@ -163,6 +173,7 @@ trait Plugin extends js.Object {
     * @param conn - the connection instance.
     */
   def init(conn: Connection): Unit = js.native
+  
   /**
     * Send a mediated invitation.
     *
@@ -173,6 +184,7 @@ trait Plugin extends js.Object {
     */
   def invite(room: String, receiver: String): String = js.native
   def invite(room: String, receiver: String, reason: String): String = js.native
+  
   /**
     * Join a multi-user chat room
     *
@@ -354,6 +366,7 @@ trait Plugin extends js.Object {
     history_attrs: js.Any,
     extended_presence: Element
   ): Unit = js.native
+  
   /**
     * Kick a user.
     *
@@ -390,6 +403,7 @@ trait Plugin extends js.Object {
   ): String = js.native
   def kick(room: String, nick: String, reason: String, handler_cb: js.Function): String = js.native
   def kick(room: String, nick: String, reason: String, handler_cb: js.Function, error_cb: js.Function): String = js.native
+  
   /**
     * Leave a multi-user chat room
     *
@@ -403,6 +417,7 @@ trait Plugin extends js.Object {
   def leave(room: String, nick: String, handler_cb: js.UndefOr[scala.Nothing], exit_msg: String): String = js.native
   def leave(room: String, nick: String, handler_cb: js.Function): String = js.native
   def leave(room: String, nick: String, handler_cb: js.Function, exit_msg: String): String = js.native
+  
   /**
     * List all chat room available on a server.
     *
@@ -415,6 +430,7 @@ trait Plugin extends js.Object {
     handle_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* error */ js.Any, _]
   ): Unit = js.native
+  
   /**
     * Member a user.
     *
@@ -451,6 +467,7 @@ trait Plugin extends js.Object {
   ): String = js.native
   def member(room: String, jid: String, reason: String, handler_cb: js.Function): String = js.native
   def member(room: String, jid: String, reason: String, handler_cb: js.Function, error_cb: js.Function): String = js.native
+  
   @JSName("message")
   def message_chat(room: String, nick: String, message: String, html_message: String, `type`: chat): String = js.native
   /**
@@ -465,6 +482,7 @@ trait Plugin extends js.Object {
     */
   @JSName("message")
   def message_groupchat(room: String, nick: String, message: String, html_message: String, `type`: groupchat): String = js.native
+  
   /**
     * Changes the affiliation of a member of a MUC room.
     * The modification can only be done by a room moderator. An error will be
@@ -520,6 +538,7 @@ trait Plugin extends js.Object {
     handler_cb: js.Function,
     error_cb: js.Function
   ): String = js.native
+  
   /**
     * Changes the role of a member of a MUC room.
     * The modification can only be done by a room moderator. An error will be
@@ -575,6 +594,7 @@ trait Plugin extends js.Object {
     handler_cb: js.Function,
     error_cb: js.Function
   ): String = js.native
+  
   /**
     * Send a mediated multiple invitation.
     *
@@ -585,6 +605,7 @@ trait Plugin extends js.Object {
     */
   def multipleInvites(room: String, receivers: js.Array[String]): String = js.native
   def multipleInvites(room: String, receivers: js.Array[String], reason: String): String = js.native
+  
   /**
     * Mute a user.
     *
@@ -621,6 +642,7 @@ trait Plugin extends js.Object {
   ): String = js.native
   def mute(room: String, nick: String, reason: String, handler_cb: js.Function): String = js.native
   def mute(room: String, nick: String, reason: String, handler_cb: js.Function, error_cb: js.Function): String = js.native
+  
   /**
     * Op a user.
     *
@@ -657,6 +679,7 @@ trait Plugin extends js.Object {
   ): String = js.native
   def op(room: String, nick: String, reason: String, handler_cb: js.Function): String = js.native
   def op(room: String, nick: String, reason: String, handler_cb: js.Function, error_cb: js.Function): String = js.native
+  
   /**
     * Owner a user.
     *
@@ -693,6 +716,7 @@ trait Plugin extends js.Object {
   ): String = js.native
   def owner(room: String, jid: String, reason: String, handler_cb: js.Function): String = js.native
   def owner(room: String, jid: String, reason: String, handler_cb: js.Function, error_cb: js.Function): String = js.native
+  
   /**
     * Queries a room for a list of occupants
     *
@@ -709,6 +733,7 @@ trait Plugin extends js.Object {
     success_cb: js.Function1[/* stanza */ Element, _],
     error_cb: js.Function1[/* error */ js.Any, _]
   ): String = js.native
+  
   /**
     * Registering with a room.
     * @see http://xmpp.org/extensions/xep-0045.html#register
@@ -718,6 +743,7 @@ trait Plugin extends js.Object {
     * @param error_cb - Function to call on error.
     */
   def registrationRequest(room: String, handle_cb: js.Function, error_cb: js.Function): Unit = js.native
+  
   /**
     * Revoke a user.
     *
@@ -754,6 +780,7 @@ trait Plugin extends js.Object {
   ): String = js.native
   def revoke(room: String, jid: String, reason: String, handler_cb: js.Function): String = js.native
   def revoke(room: String, jid: String, reason: String, handler_cb: js.Function, error_cb: js.Function): String = js.native
+  
   /**
     * Save a room configuration.
     *
@@ -767,6 +794,7 @@ trait Plugin extends js.Object {
   def saveConfiguration(room: String, config: js.Any, success_cb: js.UndefOr[scala.Nothing], error_cb: js.Function): String = js.native
   def saveConfiguration(room: String, config: js.Any, success_cb: js.Function): String = js.native
   def saveConfiguration(room: String, config: js.Any, success_cb: js.Function, error_cb: js.Function): String = js.native
+  
   /**
     * Change the current users status.
     *
@@ -776,6 +804,7 @@ trait Plugin extends js.Object {
     * @param status - The new status-text.
     */
   def setStatus(room: String, user: String, show: String, status: String): Unit = js.native
+  
   /**
     * Set the topic of the chat room.
     *
@@ -783,6 +812,7 @@ trait Plugin extends js.Object {
     * @param topic - Topic message.
     */
   def setTopic(room: String, topic: String): Unit = js.native
+  
   /**
     * Submits registration form.
     *
@@ -792,6 +822,7 @@ trait Plugin extends js.Object {
     * @param error_cb - Function to call on error.
     */
   def submitRegistrationForm(room: String, fields: js.Any, handle_cb: js.Function, error_cb: js.Function): Unit = js.native
+  
   /**
     * Voice a user.
     *
@@ -829,4 +860,3 @@ trait Plugin extends js.Object {
   def voice(room: String, nick: String, reason: String, handler_cb: js.Function): String = js.native
   def voice(room: String, nick: String, reason: String, handler_cb: js.Function, error_cb: js.Function): String = js.native
 }
-

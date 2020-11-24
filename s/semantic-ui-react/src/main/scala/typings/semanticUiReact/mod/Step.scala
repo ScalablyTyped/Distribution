@@ -7,7 +7,7 @@ import typings.semanticUiReact.stepStepMod.StepComponent
 import typings.semanticUiReact.stepStepMod.StepProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Step")
 @js.native
@@ -16,8 +16,6 @@ class Step protected ()
   def this(props: StepProps) = this()
   def this(props: StepProps, context: js.Any) = this()
 }
-
 @JSImport("semantic-ui-react", "Step")
 @js.native
 object Step extends TopLevel[StepComponent]
-

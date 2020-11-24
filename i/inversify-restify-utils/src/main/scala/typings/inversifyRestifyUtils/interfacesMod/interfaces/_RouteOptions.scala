@@ -3,16 +3,17 @@ package typings.inversifyRestifyUtils.interfacesMod.interfaces
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _RouteOptions extends js.Object
-
 object _RouteOptions {
+  
   @scala.inline
   def Path(path: StrOrRegex): _RouteOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[_RouteOptions]
   }
+  
   @scala.inline
   def optionsObjectpathStrOrReg(
     constructor: js.Function,
@@ -25,4 +26,3 @@ object _RouteOptions {
     __obj.asInstanceOf[_RouteOptions]
   }
 }
-

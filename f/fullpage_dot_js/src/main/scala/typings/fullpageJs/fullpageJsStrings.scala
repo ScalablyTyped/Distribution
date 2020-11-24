@@ -2,9 +2,43 @@ package typings.fullpageJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fullpageJsStrings {
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def cover: cover = "cover".asInstanceOf[cover]
+  
+  @scala.inline
+  def fingersonly: fingersonly = "fingersonly".asInstanceOf[fingersonly]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def mouseonly: mouseonly = "mouseonly".asInstanceOf[mouseonly]
+  
+  @scala.inline
+  def reveal: reveal = "reveal".asInstanceOf[reveal]
+  
+  @scala.inline
+  def sections: sections = "sections".asInstanceOf[sections]
+  
+  @scala.inline
+  def slides: slides = "slides".asInstanceOf[slides]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
   @js.native
   sealed trait all extends js.Object
   
@@ -37,28 +71,4 @@ object fullpageJsStrings {
   
   @js.native
   sealed trait vertical extends js.Object
-  
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def cover: cover = "cover".asInstanceOf[cover]
-  @scala.inline
-  def fingersonly: fingersonly = "fingersonly".asInstanceOf[fingersonly]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def mouseonly: mouseonly = "mouseonly".asInstanceOf[mouseonly]
-  @scala.inline
-  def reveal: reveal = "reveal".asInstanceOf[reveal]
-  @scala.inline
-  def sections: sections = "sections".asInstanceOf[sections]
-  @scala.inline
-  def slides: slides = "slides".asInstanceOf[slides]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
-

@@ -19,7 +19,7 @@ import typings.phaser.integer
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Game Object Factory is a Scene plugin that allows you to quickly create many common
@@ -30,22 +30,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait GameObjectFactory extends js.Object {
-  /**
-    * A reference to the Scene Display List.
-    */
-  var displayList: DisplayList = js.native
-  /**
-    * The Scene to which this Game Object Factory belongs.
-    */
-  var scene: Scene = js.native
-  /**
-    * A reference to the Scene.Systems.
-    */
-  var systems: Systems = js.native
-  /**
-    * A reference to the Scene Update List.
-    */
-  var updateList: UpdateList = js.native
+  
   /**
     * Creates a new Arc Shape Game Object and adds it to the Scene.
     * 
@@ -81,6 +66,7 @@ trait GameObjectFactory extends js.Object {
     fillColor: js.UndefOr[Double],
     fillAlpha: js.UndefOr[Double]
   ): Arc = js.native
+  
   /**
     * Creates a new Bitmap Text Game Object and adds it to the Scene.
     * 
@@ -138,6 +124,7 @@ trait GameObjectFactory extends js.Object {
   ): BitmapText = js.native
   def bitmapText(x: Double, y: Double, font: String, text: js.Array[String], size: Double): BitmapText = js.native
   def bitmapText(x: Double, y: Double, font: String, text: js.Array[String], size: Double, align: integer): BitmapText = js.native
+  
   /**
     * Creates a new Blitter Game Object and adds it to the Scene.
     * 
@@ -150,6 +137,7 @@ trait GameObjectFactory extends js.Object {
   def blitter(x: Double, y: Double, key: String): Blitter = js.native
   def blitter(x: Double, y: Double, key: String, frame: String): Blitter = js.native
   def blitter(x: Double, y: Double, key: String, frame: integer): Blitter = js.native
+  
   /**
     * Creates a new Circle Shape Game Object and adds it to the Scene.
     * 
@@ -265,6 +253,7 @@ trait GameObjectFactory extends js.Object {
   def circle(x: Double, y: Double, radius: Double, fillColor: js.UndefOr[scala.Nothing], fillAlpha: Double): Arc = js.native
   def circle(x: Double, y: Double, radius: Double, fillColor: Double): Arc = js.native
   def circle(x: Double, y: Double, radius: Double, fillColor: Double, fillAlpha: Double): Arc = js.native
+  
   /**
     * Creates a new Container Game Object and adds it to the Scene.
     * 
@@ -285,6 +274,7 @@ trait GameObjectFactory extends js.Object {
   def container(x: Double, y: Double): Container = js.native
   def container(x: Double, y: Double, children: js.Array[GameObject]): Container = js.native
   def container(x: Double, y: Double, children: GameObject): Container = js.native
+  
   /**
     * Creates a new Curve Shape Game Object and adds it to the Scene.
     * 
@@ -456,6 +446,12 @@ trait GameObjectFactory extends js.Object {
     fillColor: Double,
     fillAlpha: Double
   ): Curve = js.native
+  
+  /**
+    * A reference to the Scene Display List.
+    */
+  var displayList: DisplayList = js.native
+  
   /**
     * DOM Element Game Objects are a way to control and manipulate HTML Elements over the top of your game.
     * 
@@ -540,6 +536,7 @@ trait GameObjectFactory extends js.Object {
   def dom(x: Double, y: Double, element: HTMLElement, style: String, innerText: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: HTMLElement, style: js.Any): DOMElement = js.native
   def dom(x: Double, y: Double, element: HTMLElement, style: js.Any, innerText: String): DOMElement = js.native
+  
   /**
     * Creates a new Dynamic Bitmap Text Game Object and adds it to the Scene.
     * 
@@ -582,6 +579,7 @@ trait GameObjectFactory extends js.Object {
   def dynamicBitmapText(x: Double, y: Double, font: String, text: String, size: Double): DynamicBitmapText = js.native
   def dynamicBitmapText(x: Double, y: Double, font: String, text: js.Array[String]): DynamicBitmapText = js.native
   def dynamicBitmapText(x: Double, y: Double, font: String, text: js.Array[String], size: Double): DynamicBitmapText = js.native
+  
   /**
     * Creates a new Ellipse Shape Game Object and adds it to the Scene.
     * 
@@ -617,6 +615,7 @@ trait GameObjectFactory extends js.Object {
     fillColor: js.UndefOr[Double],
     fillAlpha: js.UndefOr[Double]
   ): Ellipse = js.native
+  
   /**
     * Adds an existing Game Object to this Scene.
     * 
@@ -626,12 +625,14 @@ trait GameObjectFactory extends js.Object {
     */
   def existing(child: GameObject): GameObject = js.native
   def existing(child: Group): GameObject = js.native
+  
   /**
     * Creates a new Extern Game Object and adds it to the Scene.
     * 
     * Note: This method will only be available if the Extern Game Object has been built into Phaser.
     */
   def extern(): Extern = js.native
+  
   /**
     * Creates a new PathFollower Game Object and adds it to the Scene.
     * 
@@ -648,6 +649,7 @@ trait GameObjectFactory extends js.Object {
   def follower(path: Path, x: Double, y: Double, texture: Texture): PathFollower = js.native
   def follower(path: Path, x: Double, y: Double, texture: Texture, frame: String): PathFollower = js.native
   def follower(path: Path, x: Double, y: Double, texture: Texture, frame: integer): PathFollower = js.native
+  
   /**
     * Creates a new Graphics Game Object and adds it to the Scene.
     * 
@@ -656,6 +658,7 @@ trait GameObjectFactory extends js.Object {
     */
   def graphics(): Graphics = js.native
   def graphics(config: Options): Graphics = js.native
+  
   /**
     * Creates a new Grid Shape Game Object and adds it to the Scene.
     * 
@@ -698,6 +701,7 @@ trait GameObjectFactory extends js.Object {
     outlineFillColor: js.UndefOr[Double],
     outlineFillAlpha: js.UndefOr[Double]
   ): Grid = js.native
+  
   /**
     * Creates a new Group Game Object and adds it to the Scene.
     * 
@@ -714,6 +718,7 @@ trait GameObjectFactory extends js.Object {
   def group(children: GroupConfig): Group = js.native
   def group(children: GroupConfig, config: GroupConfig): Group = js.native
   def group(children: GroupConfig, config: GroupCreateConfig): Group = js.native
+  
   /**
     * Creates a new Image Game Object and adds it to the Scene.
     * 
@@ -729,6 +734,7 @@ trait GameObjectFactory extends js.Object {
   def image(x: Double, y: Double, texture: Texture): Image = js.native
   def image(x: Double, y: Double, texture: Texture, frame: String): Image = js.native
   def image(x: Double, y: Double, texture: Texture, frame: integer): Image = js.native
+  
   /**
     * Creates a new IsoBox Shape Game Object and adds it to the Scene.
     * 
@@ -764,6 +770,7 @@ trait GameObjectFactory extends js.Object {
     fillLeft: js.UndefOr[Double],
     fillRight: js.UndefOr[Double]
   ): IsoBox = js.native
+  
   /**
     * Creates a new IsoTriangle Shape Game Object and adds it to the Scene.
     * 
@@ -802,6 +809,7 @@ trait GameObjectFactory extends js.Object {
     fillLeft: js.UndefOr[Double],
     fillRight: js.UndefOr[Double]
   ): IsoTriangle = js.native
+  
   /**
     * Creates a new Line Shape Game Object and adds it to the Scene.
     * 
@@ -838,6 +846,7 @@ trait GameObjectFactory extends js.Object {
     strokeColor: js.UndefOr[Double],
     strokeAlpha: js.UndefOr[Double]
   ): Line = js.native
+  
   /**
     * Creates a new Mesh Game Object and adds it to the Scene.
     * 
@@ -909,6 +918,7 @@ trait GameObjectFactory extends js.Object {
     texture: Texture,
     frame: integer
   ): Mesh = js.native
+  
   /**
     * Creates a new Particle Emitter Manager Game Object and adds it to the Scene.
     * 
@@ -941,12 +951,14 @@ trait GameObjectFactory extends js.Object {
   def particles(texture: Texture, frame: integer): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: integer, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: integer, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
+  
   /**
     * Creates a new Path Object.
     * @param x The horizontal position of this Path.
     * @param y The vertical position of this Path.
     */
   def path(x: Double, y: Double): Path = js.native
+  
   /**
     * Creates a new Polygon Shape Game Object and adds it to the Scene.
     * 
@@ -1078,6 +1090,7 @@ trait GameObjectFactory extends js.Object {
   def polygon(x: Double, y: Double, points: js.Any, fillColor: js.UndefOr[scala.Nothing], fillAlpha: Double): Polygon = js.native
   def polygon(x: Double, y: Double, points: js.Any, fillColor: Double): Polygon = js.native
   def polygon(x: Double, y: Double, points: js.Any, fillColor: Double, fillAlpha: Double): Polygon = js.native
+  
   /**
     * Creates a new Quad Game Object and adds it to the Scene.
     * 
@@ -1093,6 +1106,7 @@ trait GameObjectFactory extends js.Object {
   def quad(x: Double, y: Double, texture: Texture): Quad = js.native
   def quad(x: Double, y: Double, texture: Texture, frame: String): Quad = js.native
   def quad(x: Double, y: Double, texture: Texture, frame: integer): Quad = js.native
+  
   /**
     * Creates a new Rectangle Shape Game Object and adds it to the Scene.
     * 
@@ -1121,6 +1135,7 @@ trait GameObjectFactory extends js.Object {
     fillColor: js.UndefOr[Double],
     fillAlpha: js.UndefOr[Double]
   ): Rectangle = js.native
+  
   /**
     * Creates a new Render Texture Game Object and adds it to the Scene.
     * 
@@ -1138,6 +1153,7 @@ trait GameObjectFactory extends js.Object {
   def renderTexture(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: integer): RenderTexture = js.native
   def renderTexture(x: Double, y: Double, width: integer): RenderTexture = js.native
   def renderTexture(x: Double, y: Double, width: integer, height: integer): RenderTexture = js.native
+  
   /**
     * Creates a new Rope Game Object and adds it to the Scene.
     * 
@@ -1161,6 +1177,12 @@ trait GameObjectFactory extends js.Object {
     colors: js.UndefOr[js.Array[Double]],
     alphas: js.UndefOr[js.Array[Double]]
   ): Rope = js.native
+  
+  /**
+    * The Scene to which this Game Object Factory belongs.
+    */
+  var scene: Scene = js.native
+  
   /**
     * Creates a new Shader Game Object and adds it to the Scene.
     * 
@@ -1182,6 +1204,7 @@ trait GameObjectFactory extends js.Object {
     textures: js.UndefOr[js.Array[String]],
     textureData: js.UndefOr[js.Object]
   ): Shader = js.native
+  
   def spine(x: Double, y: Double): SpineGameObject = js.native
   def spine(
     x: Double,
@@ -1196,6 +1219,7 @@ trait GameObjectFactory extends js.Object {
   def spine(x: Double, y: Double, key: String, aimationName: js.UndefOr[scala.Nothing], loop: Boolean): SpineGameObject = js.native
   def spine(x: Double, y: Double, key: String, aimationName: String): SpineGameObject = js.native
   def spine(x: Double, y: Double, key: String, aimationName: String, loop: Boolean): SpineGameObject = js.native
+  
   /**
     * Creates a new Sprite Game Object and adds it to the Scene.
     * 
@@ -1211,6 +1235,7 @@ trait GameObjectFactory extends js.Object {
   def sprite(x: Double, y: Double, texture: Texture): Sprite = js.native
   def sprite(x: Double, y: Double, texture: Texture, frame: String): Sprite = js.native
   def sprite(x: Double, y: Double, texture: Texture, frame: integer): Sprite = js.native
+  
   /**
     * Creates a new Star Shape Game Object and adds it to the Scene.
     * 
@@ -1247,6 +1272,12 @@ trait GameObjectFactory extends js.Object {
     fillColor: js.UndefOr[Double],
     fillAlpha: js.UndefOr[Double]
   ): Star = js.native
+  
+  /**
+    * A reference to the Scene.Systems.
+    */
+  var systems: Systems = js.native
+  
   /**
     * Creates a new Text Game Object and adds it to the Scene.
     * 
@@ -1283,6 +1314,7 @@ trait GameObjectFactory extends js.Object {
   def text(x: Double, y: Double, text: String, style: js.Object): Text = js.native
   def text(x: Double, y: Double, text: js.Array[String]): Text = js.native
   def text(x: Double, y: Double, text: js.Array[String], style: js.Object): Text = js.native
+  
   /**
     * Creates a new TileSprite Game Object and adds it to the Scene.
     * 
@@ -1300,6 +1332,7 @@ trait GameObjectFactory extends js.Object {
   def tileSprite(x: Double, y: Double, width: integer, height: integer, texture: Texture): TileSprite = js.native
   def tileSprite(x: Double, y: Double, width: integer, height: integer, texture: Texture, frame: String): TileSprite = js.native
   def tileSprite(x: Double, y: Double, width: integer, height: integer, texture: Texture, frame: integer): TileSprite = js.native
+  
   /**
     * Creates a Tilemap from the given key or data, or creates a blank Tilemap if no key/data provided.
     * When loading from CSV or a 2D array, you should specify the tileWidth & tileHeight. When parsing
@@ -1332,6 +1365,7 @@ trait GameObjectFactory extends js.Object {
     data: js.UndefOr[js.Array[js.Array[integer]]],
     insertNull: js.UndefOr[Boolean]
   ): Tilemap = js.native
+  
   /**
     * Creates a new Triangle Shape Game Object and adds it to the Scene.
     * 
@@ -1370,6 +1404,7 @@ trait GameObjectFactory extends js.Object {
     fillColor: js.UndefOr[Double],
     fillAlpha: js.UndefOr[Double]
   ): Triangle = js.native
+  
   def tween(config: js.Object): Tween = js.native
   /**
     * Creates a new Tween object.
@@ -1378,6 +1413,12 @@ trait GameObjectFactory extends js.Object {
     * @param config The Tween configuration.
     */
   def tween(config: TweenBuilderConfig): Tween = js.native
+  
+  /**
+    * A reference to the Scene Update List.
+    */
+  var updateList: UpdateList = js.native
+  
   /**
     * Creates a new Video Game Object and adds it to the Scene.
     * 
@@ -1388,6 +1429,7 @@ trait GameObjectFactory extends js.Object {
     */
   def video(x: Double, y: Double): Video = js.native
   def video(x: Double, y: Double, key: String): Video = js.native
+  
   /**
     * Creates a new Zone Game Object and adds it to the Scene.
     * 
@@ -1399,4 +1441,3 @@ trait GameObjectFactory extends js.Object {
     */
   def zone(x: Double, y: Double, width: Double, height: Double): Zone = js.native
 }
-

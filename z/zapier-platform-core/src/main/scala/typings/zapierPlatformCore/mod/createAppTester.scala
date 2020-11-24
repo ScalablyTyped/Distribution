@@ -5,11 +5,12 @@ import typings.std.Partial
 import typings.zapierPlatformCore.anon.CustomStoreKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("zapier-platform-core", "createAppTester")
 @js.native
 object createAppTester extends js.Object {
+  
   def apply(appRaw: js.Object): js.Function2[
     /* func */ js.Function2[/* z */ ZObject, /* bundle */ Bundle[StringDictionary[_]], _ | js.Promise[_]], 
     /* bundle */ js.UndefOr[Partial[Bundle[StringDictionary[_]]]], 
@@ -21,4 +22,3 @@ object createAppTester extends js.Object {
     js.Promise[_]
   ] = js.native
 }
-

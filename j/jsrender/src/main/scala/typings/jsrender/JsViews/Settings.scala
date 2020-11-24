@@ -2,11 +2,12 @@ package typings.jsrender.JsViews
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* $.views.settings*/
 @js.native
 trait Settings extends js.Object {
+  
   /**
     * Get advanced settings
     * advancedSettings = $.views.settings.advanced()
@@ -22,6 +23,7 @@ trait Settings extends js.Object {
     * @returns {Settings}
     */
   def advanced(settings: Hash[_]): Settings = js.native
+  
   /**
     * Get allowCode mode setting
     * allowCode = $.views.settings.allowCode()
@@ -37,6 +39,7 @@ trait Settings extends js.Object {
     * @returns {Settings}
     */
   def allowCode(allowCode: Boolean): Settings = js.native
+  
   /**
     * Get debug mode setting
     * debugMode = $.views.settings.debugMode()
@@ -60,6 +63,7 @@ trait Settings extends js.Object {
   	 * @returns {Settings}
   	 */
   def debugMode(debugMode: Boolean): Settings = js.native
+  
   /**
   	 * Get delimiters
   	 * delimsArray = $.views.settings.delimiters()
@@ -82,4 +86,3 @@ trait Settings extends js.Object {
   def delimiters(openChars: String, closeChars: String): Settings = js.native
   def delimiters(openChars: String, closeChars: String, link: String): Settings = js.native
 }
-

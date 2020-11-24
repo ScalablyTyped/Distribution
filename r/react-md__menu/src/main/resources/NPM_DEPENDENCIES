@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-md/menu" : "2.1.2"
+      "@react-md/menu" : "2.4.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-md/menu" : "2.1.2"
+      "@react-md/menu" : "2.4.3"
     }
   ],
   "compile-devDependencies" : [

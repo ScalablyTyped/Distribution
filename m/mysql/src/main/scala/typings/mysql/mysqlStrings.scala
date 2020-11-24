@@ -2,9 +2,70 @@ package typings.mysql
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mysqlStrings {
+  
+  @scala.inline
+  def DATE: DATE = "DATE".asInstanceOf[DATE]
+  
+  @scala.inline
+  def DATETIME: DATETIME = "DATETIME".asInstanceOf[DATETIME]
+  
+  @scala.inline
+  def TIMESTAMP: TIMESTAMP = "TIMESTAMP".asInstanceOf[TIMESTAMP]
+  
+  @scala.inline
+  def acquire: acquire = "acquire".asInstanceOf[acquire]
+  
+  @scala.inline
+  def authenticated: authenticated = "authenticated".asInstanceOf[authenticated]
+  
+  @scala.inline
+  def connect: connect = "connect".asInstanceOf[connect]
+  
+  @scala.inline
+  def connected: connected = "connected".asInstanceOf[connected]
+  
+  @scala.inline
+  def connection: connection = "connection".asInstanceOf[connection]
+  
+  @scala.inline
+  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  
+  @scala.inline
+  def drain: drain = "drain".asInstanceOf[drain]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def enqueue: enqueue = "enqueue".asInstanceOf[enqueue]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def fields: fields = "fields".asInstanceOf[fields]
+  
+  @scala.inline
+  def offline: offline = "offline".asInstanceOf[offline]
+  
+  @scala.inline
+  def packet: packet = "packet".asInstanceOf[packet]
+  
+  @scala.inline
+  def protocol_error: protocol_error = "protocol_error".asInstanceOf[protocol_error]
+  
+  @scala.inline
+  def release: release = "release".asInstanceOf[release]
+  
+  @scala.inline
+  def remove: remove = "remove".asInstanceOf[remove]
+  
+  @scala.inline
+  def result: result = "result".asInstanceOf[result]
+  
   @js.native
   sealed trait DATE extends js.Object
   
@@ -64,46 +125,4 @@ object mysqlStrings {
   
   @js.native
   sealed trait result extends js.Object
-  
-  @scala.inline
-  def DATE: DATE = "DATE".asInstanceOf[DATE]
-  @scala.inline
-  def DATETIME: DATETIME = "DATETIME".asInstanceOf[DATETIME]
-  @scala.inline
-  def TIMESTAMP: TIMESTAMP = "TIMESTAMP".asInstanceOf[TIMESTAMP]
-  @scala.inline
-  def acquire: acquire = "acquire".asInstanceOf[acquire]
-  @scala.inline
-  def authenticated: authenticated = "authenticated".asInstanceOf[authenticated]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def connected: connected = "connected".asInstanceOf[connected]
-  @scala.inline
-  def connection: connection = "connection".asInstanceOf[connection]
-  @scala.inline
-  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
-  @scala.inline
-  def drain: drain = "drain".asInstanceOf[drain]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def enqueue: enqueue = "enqueue".asInstanceOf[enqueue]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fields: fields = "fields".asInstanceOf[fields]
-  @scala.inline
-  def offline: offline = "offline".asInstanceOf[offline]
-  @scala.inline
-  def packet: packet = "packet".asInstanceOf[packet]
-  @scala.inline
-  def protocol_error: protocol_error = "protocol_error".asInstanceOf[protocol_error]
-  @scala.inline
-  def release: release = "release".asInstanceOf[release]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def result: result = "result".asInstanceOf[result]
 }
-

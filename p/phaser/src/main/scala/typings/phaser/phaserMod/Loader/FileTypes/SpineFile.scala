@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phaser", "Loader.FileTypes.SpineFile")
 @js.native
@@ -48,4 +48,3 @@ class SpineFile protected ()
     atlasXhrSettings: XHRSettingsObject
   ) = this()
 }
-

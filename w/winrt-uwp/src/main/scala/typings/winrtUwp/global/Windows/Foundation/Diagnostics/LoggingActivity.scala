@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Foundation.Diagnostics
 import typings.winrtUwp.Windows.Foundation.Diagnostics.ILoggingChannel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Creates Event Tracing for Windows (ETW) events that mark the start and end of a group of related events. */
 @JSGlobal("Windows.Foundation.Diagnostics.LoggingActivity")
@@ -28,4 +28,3 @@ class LoggingActivity protected ()
     level: typings.winrtUwp.Windows.Foundation.Diagnostics.LoggingLevel
   ) = this()
 }
-

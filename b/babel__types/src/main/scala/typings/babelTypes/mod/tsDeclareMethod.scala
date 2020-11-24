@@ -2,11 +2,12 @@ package typings.babelTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@babel/types", "tsDeclareMethod")
 @js.native
 object tsDeclareMethod extends js.Object {
+  
   def apply(
     decorators: js.UndefOr[js.Array[Decorator_] | Null],
     key: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression,
@@ -15,4 +16,3 @@ object tsDeclareMethod extends js.Object {
     returnType: js.UndefOr[TSTypeAnnotation_ | Noop_ | Null]
   ): TSDeclareMethod_ = js.native
 }
-

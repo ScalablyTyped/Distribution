@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebasedynamiclinks/v1", "firebasedynamiclinks_v1.Resource$V1")
 @js.native
 class ResourceV1 protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * firebasedynamiclinks.getLinkStats
     * @desc Fetches analytics stats of a short Dynamic Link for a given
@@ -45,6 +47,7 @@ class ResourceV1 protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDynamicLinkStats]
   ): Unit = js.native
+  
   /**
     * firebasedynamiclinks.installAttribution
     * @desc Get iOS strong/weak-match info for post-install attribution.
@@ -76,6 +79,7 @@ class ResourceV1 protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetIosPostInstallAttributionResponse]
   ): Unit = js.native
+  
   /**
     * firebasedynamiclinks.reopenAttribution
     * @desc Get iOS reopen attribution for app universal link open deeplinking.
@@ -108,4 +112,3 @@ class ResourceV1 protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGetIosReopenAttributionResponse]
   ): Unit = js.native
 }
-

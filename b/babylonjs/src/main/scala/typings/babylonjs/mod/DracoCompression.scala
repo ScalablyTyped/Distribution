@@ -3,7 +3,7 @@ package typings.babylonjs.mod
 import typings.babylonjs.dracoCompressionMod.IDracoCompressionConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "DracoCompression")
 @js.native
@@ -15,11 +15,11 @@ class DracoCompression ()
   extends typings.babylonjs.legacyMod.DracoCompression {
   def this(numWorkers: Double) = this()
 }
-
 /* static members */
 @JSImport("babylonjs", "DracoCompression")
 @js.native
 object DracoCompression extends js.Object {
+  
   /**
     * The configuration. Defaults to the following urls:
     * - wasmUrl: "https://preview.babylonjs.com/draco_wasm_wrapper_gltf.js"
@@ -27,19 +27,23 @@ object DracoCompression extends js.Object {
     * - fallbackUrl: "https://preview.babylonjs.com/draco_decoder_gltf.js"
     */
   var Configuration: IDracoCompressionConfiguration = js.native
-  /**
-    * Default number of workers to create when creating the draco compression object.
-    */
-  var DefaultNumWorkers: Double = js.native
-  var GetDefaultNumWorkers: js.Any = js.native
-  var _Default: js.Any = js.native
+  
   /**
     * Returns true if the decoder configuration is available.
     */
   def DecoderAvailable: Boolean = js.native
+  
   /**
     * Default instance for the draco compression object.
     */
   def Default: typings.babylonjs.dracoCompressionMod.DracoCompression = js.native
+  
+  /**
+    * Default number of workers to create when creating the draco compression object.
+    */
+  var DefaultNumWorkers: Double = js.native
+  
+  var GetDefaultNumWorkers: js.Any = js.native
+  
+  var _Default: js.Any = js.native
 }
-

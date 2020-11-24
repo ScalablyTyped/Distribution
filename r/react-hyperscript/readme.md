@@ -10,9 +10,9 @@ Hyperscript syntax for React.js markup
 | ------------------ | :-------------: |
 | Full name          | react-hyperscript |
 | Keywords           | react, react.js, hyperscript, markup, dom |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 30 |
-| # downloads        | 59430 |
+| # downloads        | 67587 |
 | # stars            | 0 |
 
 ## Links

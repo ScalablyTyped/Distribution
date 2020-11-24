@@ -2,7 +2,7 @@ package typings.asyncEventemitter.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An EventEmitter that supports serial execution of asynchronous event listeners.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSImport("async-eventemitter", JSImport.Namespace)
 @js.native
 class ^[T /* <: EventMap */] () extends AsyncEventEmitter[T]
-

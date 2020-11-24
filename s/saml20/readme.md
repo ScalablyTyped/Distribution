@@ -11,8 +11,8 @@ SAML 2.0 and 1.1 token parser for Node.js
 | Full name          | saml20 |
 | Keywords           | SAML 2.0, SAML 1.1, Token Parser |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 31824 |
+| # dependents       | 4 |
+| # downloads        | 29374 |
 | # stars            | 1 |
 
 ## Links

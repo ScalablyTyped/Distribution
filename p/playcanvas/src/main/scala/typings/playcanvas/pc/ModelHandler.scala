@@ -3,7 +3,7 @@ package typings.playcanvas.pc
 import typings.playcanvas.pc.callbacks.AddParser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource handler used for loading {@link pc.Model} resources.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ModelHandler extends ResourceHandler {
+  
   /**
     * Add a parser that converts raw data into a {@link pc.Model}
     * Default parser is for JSON models.
@@ -22,4 +23,3 @@ trait ModelHandler extends ResourceHandler {
     */
   def addParser(parser: js.Any, decider: AddParser): Unit = js.native
 }
-

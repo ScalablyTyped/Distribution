@@ -2,7 +2,7 @@ package typings.ranjs.mod.dist
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.ExponentialLogarithmic")
 @js.native
@@ -12,4 +12,3 @@ class ExponentialLogarithmic ()
   def this(p: js.UndefOr[scala.Nothing], beta: Double) = this()
   def this(p: Double, beta: Double) = this()
 }
-

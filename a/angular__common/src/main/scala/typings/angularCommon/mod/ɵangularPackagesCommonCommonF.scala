@@ -8,7 +8,7 @@ import typings.angularCore.mod.ChangeDetectorRef
 import typings.angularCore.mod.KeyValueDiffers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "\u0275angular_packages_common_common_f")
 @js.native
@@ -21,4 +21,3 @@ object ɵangularPackagesCommonCommonF
         ]) | (Instantiable0[I18nSelectPipe | SlicePipe]) | (Instantiable2[/* _locale */ String, /* _defaultCurrencyCode */ js.UndefOr[String], CurrencyPipe])
       ]
     ]
-

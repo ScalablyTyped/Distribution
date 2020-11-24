@@ -6,7 +6,7 @@ import typings.rxjs.mod.Subject
 import typings.rxjs.mod.Subscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EventEmitter[T]
@@ -20,12 +20,14 @@ trait EventEmitter[T]
   */
 Instantiable0[EventEmitter[T]]
      with Instantiable1[/* isAsync */ Boolean, EventEmitter[T]] {
+  
   /**
     * Emits an event containing a given value.
     * @param value The value to emit.
     */
   def emit(): Unit = js.native
   def emit(value: T): Unit = js.native
+  
   def subscribe(generatorOrNext: js.UndefOr[scala.Nothing], error: js.UndefOr[scala.Nothing], complete: js.Any): Subscription = js.native
   def subscribe(generatorOrNext: js.UndefOr[scala.Nothing], error: js.Any): Subscription = js.native
   def subscribe(generatorOrNext: js.UndefOr[scala.Nothing], error: js.Any, complete: js.Any): Subscription = js.native
@@ -34,10 +36,8 @@ Instantiable0[EventEmitter[T]]
   def subscribe(generatorOrNext: js.Any, error: js.Any): Subscription = js.native
   def subscribe(generatorOrNext: js.Any, error: js.Any, complete: js.Any): Subscription = js.native
 }
-
 @JSImport("@angular/core", "EventEmitter")
 @js.native
 object EventEmitter
   extends Instantiable0[EventEmitter[js.Any | js.Object]]
      with Instantiable1[/* isAsync */ Boolean, EventEmitter[js.Any | js.Object]]
-

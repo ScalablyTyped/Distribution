@@ -7,7 +7,7 @@ import typings.unist.mod.Point
 import typings.unist.mod.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vfile-message", JSImport.Namespace)
 @js.native
@@ -37,8 +37,6 @@ class ^ protected () extends VFileMessage {
   def this(reason: Error, position: Point, origin: String) = this()
   def this(reason: Error, position: Position, origin: String) = this()
 }
-
 @JSImport("vfile-message", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[VFileMessage]
-

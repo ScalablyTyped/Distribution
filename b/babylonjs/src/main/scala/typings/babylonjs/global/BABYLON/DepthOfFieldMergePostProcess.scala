@@ -4,7 +4,7 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.DepthOfFieldMergePostProcess")
 @js.native
@@ -29,126 +29,12 @@ class DepthOfFieldMergePostProcess protected ()
     originalFromInput: typings.babylonjs.BABYLON.PostProcess,
     circleOfConfusion: typings.babylonjs.BABYLON.PostProcess,
     blurSteps: js.Array[typings.babylonjs.BABYLON.PostProcess],
-    options: Double,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera]
-  ) = this()
-  def this(
-    name: String,
-    originalFromInput: typings.babylonjs.BABYLON.PostProcess,
-    circleOfConfusion: typings.babylonjs.BABYLON.PostProcess,
-    blurSteps: js.Array[typings.babylonjs.BABYLON.PostProcess],
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera]
-  ) = this()
-  def this(
-    name: String,
-    originalFromInput: typings.babylonjs.BABYLON.PostProcess,
-    circleOfConfusion: typings.babylonjs.BABYLON.PostProcess,
-    blurSteps: js.Array[typings.babylonjs.BABYLON.PostProcess],
-    options: Double,
+    options: Double | PostProcessOptions,
     camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    originalFromInput: typings.babylonjs.BABYLON.PostProcess,
-    circleOfConfusion: typings.babylonjs.BABYLON.PostProcess,
-    blurSteps: js.Array[typings.babylonjs.BABYLON.PostProcess],
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    originalFromInput: typings.babylonjs.BABYLON.PostProcess,
-    circleOfConfusion: typings.babylonjs.BABYLON.PostProcess,
-    blurSteps: js.Array[typings.babylonjs.BABYLON.PostProcess],
-    options: Double,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine
-  ) = this()
-  def this(
-    name: String,
-    originalFromInput: typings.babylonjs.BABYLON.PostProcess,
-    circleOfConfusion: typings.babylonjs.BABYLON.PostProcess,
-    blurSteps: js.Array[typings.babylonjs.BABYLON.PostProcess],
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine
-  ) = this()
-  def this(
-    name: String,
-    originalFromInput: typings.babylonjs.BABYLON.PostProcess,
-    circleOfConfusion: typings.babylonjs.BABYLON.PostProcess,
-    blurSteps: js.Array[typings.babylonjs.BABYLON.PostProcess],
-    options: Double,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    originalFromInput: typings.babylonjs.BABYLON.PostProcess,
-    circleOfConfusion: typings.babylonjs.BABYLON.PostProcess,
-    blurSteps: js.Array[typings.babylonjs.BABYLON.PostProcess],
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    originalFromInput: typings.babylonjs.BABYLON.PostProcess,
-    circleOfConfusion: typings.babylonjs.BABYLON.PostProcess,
-    blurSteps: js.Array[typings.babylonjs.BABYLON.PostProcess],
-    options: Double,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean,
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    originalFromInput: typings.babylonjs.BABYLON.PostProcess,
-    circleOfConfusion: typings.babylonjs.BABYLON.PostProcess,
-    blurSteps: js.Array[typings.babylonjs.BABYLON.PostProcess],
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean,
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    originalFromInput: typings.babylonjs.BABYLON.PostProcess,
-    circleOfConfusion: typings.babylonjs.BABYLON.PostProcess,
-    blurSteps: js.Array[typings.babylonjs.BABYLON.PostProcess],
-    options: Double,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean,
-    textureType: Double,
-    blockCompilation: Boolean
-  ) = this()
-  def this(
-    name: String,
-    originalFromInput: typings.babylonjs.BABYLON.PostProcess,
-    circleOfConfusion: typings.babylonjs.BABYLON.PostProcess,
-    blurSteps: js.Array[typings.babylonjs.BABYLON.PostProcess],
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.BABYLON.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.BABYLON.Engine,
-    reusable: Boolean,
-    textureType: Double,
-    blockCompilation: Boolean
+    samplingMode: js.UndefOr[Double],
+    engine: js.UndefOr[typings.babylonjs.BABYLON.Engine],
+    reusable: js.UndefOr[Boolean],
+    textureType: js.UndefOr[Double],
+    blockCompilation: js.UndefOr[Boolean]
   ) = this()
 }
-

@@ -11,15 +11,15 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a range of cells within a table. */
 @js.native
 trait CellRange
   extends CellProperties
      with XCellRange
-
 object CellRange {
+  
   @scala.inline
   def apply(
     AsianVerticalMode: Boolean,
@@ -72,4 +72,3 @@ object CellRange {
     __obj.asInstanceOf[CellRange]
   }
 }
-

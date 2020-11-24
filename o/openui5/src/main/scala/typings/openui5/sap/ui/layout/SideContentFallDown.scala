@@ -2,17 +2,17 @@ package typings.openui5.sap.ui.layout
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SideContentFallDown extends js.Object
-
 /**
   * Types of the DynamicSideContent FallDown options
   */
 @JSGlobal("sap.ui.layout.SideContentFallDown")
 @js.native
 object SideContentFallDown extends js.Object {
+  
   @js.native
   sealed trait BelowL extends SideContentFallDown
   
@@ -24,6 +24,4 @@ object SideContentFallDown extends js.Object {
   
   @js.native
   sealed trait OnMinimumWidth extends SideContentFallDown
-  
 }
-

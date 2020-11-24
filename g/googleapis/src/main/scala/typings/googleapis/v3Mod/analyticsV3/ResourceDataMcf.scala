@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Data$Mcf")
 @js.native
 class ResourceDataMcf protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.data.mcf.get
     * @desc Returns Analytics Multi-Channel Funnels data for a view (profile).
@@ -51,4 +53,3 @@ class ResourceDataMcf protected () extends js.Object {
     callback: BodyResponseCallback[SchemaMcfData]
   ): Unit = js.native
 }
-

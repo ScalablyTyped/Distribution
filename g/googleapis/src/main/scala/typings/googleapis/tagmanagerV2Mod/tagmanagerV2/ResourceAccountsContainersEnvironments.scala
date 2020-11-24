@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$Containers$Environments")
 @js.native
 class ResourceAccountsContainersEnvironments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.containers.environments.create
     * @desc Creates a GTM Environment.
@@ -45,6 +47,7 @@ class ResourceAccountsContainersEnvironments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnvironment]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.environments.delete
     * @desc Deletes a GTM Environment.
@@ -73,6 +76,7 @@ class ResourceAccountsContainersEnvironments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.environments.get
     * @desc Gets a GTM Environment.
@@ -104,6 +108,7 @@ class ResourceAccountsContainersEnvironments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnvironment]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.environments.list
     * @desc Lists all GTM Environments of a GTM Container.
@@ -136,6 +141,7 @@ class ResourceAccountsContainersEnvironments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListEnvironmentsResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.environments.reauthorize
     * @desc Re-generates the authorization code for a GTM Environment.
@@ -168,6 +174,7 @@ class ResourceAccountsContainersEnvironments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnvironment]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.environments.update
     * @desc Updates a GTM Environment.
@@ -202,4 +209,3 @@ class ResourceAccountsContainersEnvironments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEnvironment]
   ): Unit = js.native
 }
-

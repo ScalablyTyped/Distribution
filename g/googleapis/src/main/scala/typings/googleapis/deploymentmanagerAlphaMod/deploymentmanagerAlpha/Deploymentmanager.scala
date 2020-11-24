@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Google Cloud Deployment Manager Alpha API
@@ -28,13 +28,20 @@ import scala.scalajs.js.annotation._
 class Deploymentmanager protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var compositeTypes: ResourceCompositetypes = js.native
+  
   var context: APIRequestContext = js.native
+  
   var deployments: ResourceDeployments = js.native
+  
   var manifests: ResourceManifests = js.native
+  
   var operations: ResourceOperations = js.native
+  
   var resources: ResourceResources = js.native
+  
   var typeProviders: ResourceTypeproviders = js.native
+  
   var types: ResourceTypes = js.native
 }
-

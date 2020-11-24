@@ -8,7 +8,7 @@ import typings.xdate.mod.formattersInfo
 import typings.xdate.mod.localeDetail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-calendars", "LocaleConfig")
 @js.native
@@ -312,14 +312,11 @@ class LocaleConfig () extends ^ {
     utcmode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("react-native-calendars", "LocaleConfig")
 @js.native
 object LocaleConfig extends js.Object {
-  var defaultLocale: String = js.native
-  var formatters: formattersInfo = js.native
-  var locales: StringDictionary[localeDetail] = js.native
+  
   /*
     *Returns a milliseconds time since the epoch for the given UTC date
     */
@@ -434,6 +431,11 @@ object LocaleConfig extends js.Object {
     seconds: Double,
     ms: Double
   ): Double = js.native
+  
+  var defaultLocale: String = js.native
+  
+  var formatters: formattersInfo = js.native
+  
   //------------
   //Static function
   //------------
@@ -441,17 +443,21 @@ object LocaleConfig extends js.Object {
     *Returns the number of days in the given month
     */
   def getDaysInMonth(year: Double, month: Double): Double = js.native
+  
+  var locales: StringDictionary[localeDetail] = js.native
+  
   /*
     *Returns the current date, as milliseconds since the epoch. You'll probably want to use new XDate() instead.
     */
   def now(): Double = js.native
+  
   /*
     *Parses a date-string and returns milliseconds since the epoch. You'll probably want to use new XDate(dateString) instead.
     */
   def parse(dateString: String): Double = js.native
+  
   /*
     *Returns the current date with time cleared, as an XDate object
     */
   def today(): XDate = js.native
 }
-

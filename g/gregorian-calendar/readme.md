@@ -12,7 +12,7 @@ date time utils ported from java
 | Keywords           | date, time |
 | # releases         | 0 |
 | # dependents       | 62 |
-| # downloads        | 252525 |
+| # downloads        | 69208 |
 | # stars            | 0 |
 
 ## Links

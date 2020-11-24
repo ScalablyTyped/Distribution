@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-navigation-stack
 
-Typings are for version 2.8.2
+Typings are for version 2.10.2
 
 ## Library description:
 Stack navigator component for React Navigation
@@ -10,9 +10,9 @@ Stack navigator component for React Navigation
 | ------------------ | :-------------: |
 | Full name          | react-navigation-stack |
 | Keywords           | react-native-component, react-component, react-native, ios, android, stack |
-| # releases         | 139 |
-| # dependents       | 31 |
-| # downloads        | 8042442 |
+| # releases         | 165 |
+| # dependents       | 74 |
+| # downloads        | 9848212 |
 | # stars            | 0 |
 
 ## Links

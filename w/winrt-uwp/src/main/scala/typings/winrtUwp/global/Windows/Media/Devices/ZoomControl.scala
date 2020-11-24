@@ -2,11 +2,10 @@ package typings.winrtUwp.global.Windows.Media.Devices
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the zoom settings on a capture device. */
 @JSGlobal("Windows.Media.Devices.ZoomControl")
 @js.native
 abstract class ZoomControl ()
   extends typings.winrtUwp.Windows.Media.Devices.ZoomControl
-

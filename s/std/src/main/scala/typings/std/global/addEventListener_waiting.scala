@@ -6,11 +6,12 @@ import typings.std.Window
 import typings.std.stdStrings.waiting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("addEventListener")
 @js.native
 object addEventListener_waiting extends js.Object {
+  
   def apply(`type`: waiting, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]): Unit = js.native
   def apply(
     `type`: waiting,
@@ -23,4 +24,3 @@ object addEventListener_waiting extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
 }
-

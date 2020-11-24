@@ -13,18 +13,26 @@ import typings.memfs.volumeMod.IWriteStream
 import typings.memfs.volumeMod.NestedDirectoryJSON
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("memfs", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def createFsFromVolume(vol: typings.memfs.volumeMod.Volume): IFs = js.native
+  
   @js.native
   trait IFs
     extends typings.memfs.volumeMod.Volume {
+    
     var Dirent: Instantiable1[/* args (repeated) */ js.Any, default] = js.native
+    
     var Stats: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.statsMod.default[TStatNumber]] = js.native
+    
     var _toUnixTimestamp: js.Any = js.native
+    
     var constants: COPYFILEEXCL = js.native
+    
     @JSName("promises")
     var promises_FIFs: IPromisesAPI = js.native
   }
@@ -34,12 +42,11 @@ object mod extends js.Object {
     extends typings.memfs.volumeMod.Volume {
     def this(props: js.Object) = this()
   }
-  
-  def createFsFromVolume(vol: typings.memfs.volumeMod.Volume): IFs = js.native
   @js.native
   object Volume
     extends Instantiable0[typings.memfs.volumeMod.Volume]
        with Instantiable1[/* props */ js.Object, typings.memfs.volumeMod.Volume] {
+    
     /**
       * Global file descriptor counter. UNIX file descriptors start from 0 and go sequentially
       * up, so here, in order not to conflict with them, we choose some big number and descrease
@@ -48,14 +55,17 @@ object mod extends js.Object {
       * @todo This should not be static, right?
       */
     var fd: Double = js.native
+    
     def fromJSON(json: DirectoryJSON): typings.memfs.volumeMod.Volume = js.native
     def fromJSON(json: DirectoryJSON, cwd: String): typings.memfs.volumeMod.Volume = js.native
+    
     def fromNestedJSON(json: NestedDirectoryJSON): typings.memfs.volumeMod.Volume = js.native
     def fromNestedJSON(json: NestedDirectoryJSON, cwd: String): typings.memfs.volumeMod.Volume = js.native
   }
   
   @js.native
   object fs extends TopLevel[IFs] {
+    
     @js.native
     class Dirent protected () extends default {
       def this(args: js.Any*) = this()
@@ -84,12 +94,12 @@ object mod extends js.Object {
     class WriteStream protected () extends IWriteStream {
       def this(args: js.Any*) = this()
     }
-    
   }
   
   @js.native
   object vol
     extends TopLevel[typings.memfs.volumeMod.Volume] {
+    
     @js.native
     class FSWatcher ()
       extends typings.memfs.volumeMod.FSWatcher
@@ -107,8 +117,5 @@ object mod extends js.Object {
     class WriteStream protected () extends IWriteStream {
       def this(args: js.Any*) = this()
     }
-    
   }
-  
 }
-

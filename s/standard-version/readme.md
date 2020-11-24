@@ -10,9 +10,9 @@ replacement for `npm version` with automatic CHANGELOG generation
 | ------------------ | :-------------: |
 | Full name          | standard-version |
 | Keywords           | conventional-changelog, recommended, changelog, automatic, workflow, version, angular, standard |
-| # releases         | 12 |
-| # dependents       | 157 |
-| # downloads        | 4462485 |
+| # releases         | 15 |
+| # dependents       | 201 |
+| # downloads        | 6766535 |
 | # stars            | 12 |
 
 ## Links

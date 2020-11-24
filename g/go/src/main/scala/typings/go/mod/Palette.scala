@@ -3,7 +3,7 @@ package typings.go.mod
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Palette extends the Diagram class to allow objects to be dragged and placed onto other Diagrams.
@@ -22,4 +22,3 @@ class Palette () extends Diagram {
   def this(div: HTMLDivElement) = this()
   def this(id: String) = this()
 }
-

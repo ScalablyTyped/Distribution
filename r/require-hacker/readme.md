@@ -12,7 +12,7 @@ Provides a hooking mechanism for Node.js require() calls
 | Keywords           | require |
 | # releases         | 0 |
 | # dependents       | 19 |
-| # downloads        | 839954 |
+| # downloads        | 824486 |
 | # stars            | 7 |
 
 ## Links

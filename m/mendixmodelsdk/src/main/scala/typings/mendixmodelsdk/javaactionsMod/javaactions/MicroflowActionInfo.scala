@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.javaactionsMod.javaactions
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.imagesMod.images.IImage
 import typings.mendixmodelsdk.internalMod.AbstractElement
@@ -7,9 +8,10 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * In version 7.21.0: deleted
@@ -23,49 +25,52 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.javaactionsMod.javaactions.IMicroflowActionInfo because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsJavaAction, caption, category, icon, iconQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.MicroflowActionInfo")
 @js.native
-class MicroflowActionInfo protected () extends Element {
+class MicroflowActionInfo protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("caption")
-  val caption_FMicroflowActionInfo: String = js.native
-  @JSName("category")
-  val category_FMicroflowActionInfo: String = js.native
-  @JSName("containerAsJavaAction")
-  val containerAsJavaAction_FMicroflowActionInfo: IJavaAction = js.native
-  @JSName("iconQualifiedName")
-  val iconQualifiedName_FMicroflowActionInfo: String | Null = js.native
-  @JSName("icon")
-  val icon_FMicroflowActionInfo: IImage | Null = js.native
-  @JSName("model")
-  var model_FMicroflowActionInfo: IModel = js.native
+  
   def caption: String = js.native
   def caption_=(newValue: String): Unit = js.native
+  @JSName("caption")
+  val caption_FMicroflowActionInfo: String = js.native
+  
   def category: String = js.native
   def category_=(newValue: String): Unit = js.native
+  @JSName("category")
+  val category_FMicroflowActionInfo: String = js.native
+  
   def containerAsJavaAction: JavaAction = js.native
+  @JSName("containerAsJavaAction")
+  val containerAsJavaAction_FMicroflowActionInfo: IJavaAction = js.native
+  
   def icon: IImage | Null = js.native
+  
   def iconQualifiedName: String | Null = js.native
+  @JSName("iconQualifiedName")
+  val iconQualifiedName_FMicroflowActionInfo: String | Null = js.native
+  
   def icon_=(newValue: IImage | Null): Unit = js.native
+  @JSName("icon")
+  val icon_FMicroflowActionInfo: IImage | Null = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.MicroflowActionInfo")
 @js.native
 object MicroflowActionInfo extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): MicroflowActionInfo = js.native
+  
   /**
     * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
     * The new MicroflowActionInfo will be automatically stored in the 'microflowActionInfo' property
@@ -75,5 +80,8 @@ object MicroflowActionInfo extends js.Object {
     *  6.6.0 to 7.20.0
     */
   def createIn(container: JavaAction): MicroflowActionInfo = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

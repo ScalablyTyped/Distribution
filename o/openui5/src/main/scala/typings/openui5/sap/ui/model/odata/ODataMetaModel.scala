@@ -5,10 +5,11 @@ import typings.openui5.sap.ui.model.Context
 import typings.openui5.sap.ui.model.MetaModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ODataMetaModel extends MetaModel {
+  
   /**
     * Returns the OData meta model context corresponding to the given OData model path.
     * @param sPath an absolute path pointing to an entity or property, e.g. 
@@ -19,6 +20,7 @@ trait ODataMetaModel extends MetaModel {
     * or <code>null</code> in case no path is given
     */
   def getMetaContext(sPath: String): Context = js.native
+  
   /**
     * Returns the OData association end corresponding to the given entity type's navigationproperty of
     * given name.
@@ -27,6 +29,7 @@ trait ODataMetaModel extends MetaModel {
     * @returns the OData association end or <code>null</code> if no such association end is found
     */
   def getODataAssociationEnd(oEntityType: js.Any, sName: String): js.Any = js.native
+  
   /**
     * Returns the OData association <em>set</em> end corresponding to the given entity type'snavigation
     * property of given name.
@@ -35,6 +38,7 @@ trait ODataMetaModel extends MetaModel {
     * @returns the OData association set end or <code>null</code> if no such association set end is found
     */
   def getODataAssociationSetEnd(oEntityType: js.Any, sName: String): js.Any = js.native
+  
   /**
     * Returns the OData complex type with the given qualified name, either as a path or as anobject, as
     * indicated.
@@ -45,6 +49,7 @@ trait ODataMetaModel extends MetaModel {
     */
   def getODataComplexType(sQualifiedName: String): js.Any | String = js.native
   def getODataComplexType(sQualifiedName: String, bAsPath: Boolean): js.Any | String = js.native
+  
   /**
     * Returns the OData default entity container.
     * @param bAsPath determines whether the entity container is returned as a path or as an object
@@ -52,6 +57,7 @@ trait ODataMetaModel extends MetaModel {
     * <code>null</code> (for an object) if no such container is found
     */
   def getODataEntityContainer(bAsPath: Boolean): js.Any | String = js.native
+  
   /**
     * Returns the OData entity set with the given simple name from the default entity container.
     * @param sName a simple name, e.g. "ProductSet"
@@ -61,6 +67,7 @@ trait ODataMetaModel extends MetaModel {
     */
   def getODataEntitySet(sName: String): js.Any | String = js.native
   def getODataEntitySet(sName: String, bAsPath: Boolean): js.Any | String = js.native
+  
   /**
     * Returns the OData entity type with the given qualified name, either as a path or as anobject, as
     * indicated.
@@ -71,6 +78,7 @@ trait ODataMetaModel extends MetaModel {
     */
   def getODataEntityType(sQualifiedName: String): js.Any | String = js.native
   def getODataEntityType(sQualifiedName: String, bAsPath: Boolean): js.Any | String = js.native
+  
   /**
     * Returns the OData function import with the given simple or qualified name from the defaultentity
     * container or the respective entity container specified in the qualified name.
@@ -82,6 +90,7 @@ trait ODataMetaModel extends MetaModel {
     */
   def getODataFunctionImport(sName: String): js.Any | String = js.native
   def getODataFunctionImport(sName: String, bAsPath: Boolean): js.Any | String = js.native
+  
   /**
     * Returns the given OData type's property (not navigation property!) of given name.If an array is
     * given instead of a single name, it is consumed (via<code>Array.prototype.shift</code>) piece by
@@ -114,6 +123,7 @@ trait ODataMetaModel extends MetaModel {
   def getODataProperty(oType: js.Any, vName: String, bAsPath: Boolean): js.Any | String = js.native
   def getODataProperty(oType: js.Any, vName: js.Array[String]): js.Any | String = js.native
   def getODataProperty(oType: js.Any, vName: js.Array[String], bAsPath: Boolean): js.Any | String = js.native
+  
   /**
     * Returns a <code>Promise</code> which is resolved with a map representing
     * the<code>com.sap.vocabularies.Common.v1.ValueList</code> annotations of the given property
@@ -128,14 +138,15 @@ trait ODataMetaModel extends MetaModel {
     * elements have been loaded
     */
   def getODataValueLists(oPropertyContext: Context): JQueryPromise[_] = js.native
+  
   /**
     * Returns a promise which is fulfilled once the meta model data is loaded and can be used.
     * @returns a Promise
     */
   def loaded(): JQueryPromise[_] = js.native
+  
   /**
     * Refresh not supported by OData meta model!
     */
   def refresh(): Unit = js.native
 }
-

@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XLocalizable
 import typings.activexLibreoffice.com_.sun.star.ucb.XContent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides a high level API to organize document templates */
 @js.native
 trait TemplateAccess
   extends XDocumentTemplates
      with XLocalizable
-
 object TemplateAccess {
+  
   @scala.inline
   def apply(
     Content: XContent,
@@ -38,4 +38,3 @@ object TemplateAccess {
     __obj.asInstanceOf[TemplateAccess]
   }
 }
-

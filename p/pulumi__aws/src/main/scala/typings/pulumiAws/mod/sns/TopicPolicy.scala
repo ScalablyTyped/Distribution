@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "sns.TopicPolicy")
 @js.native
@@ -23,11 +23,11 @@ class TopicPolicy protected ()
   def this(name: String, args: TopicPolicyArgs) = this()
   def this(name: String, args: TopicPolicyArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "sns.TopicPolicy")
 @js.native
 object TopicPolicy extends js.Object {
+  
   /**
     * Get an existing TopicPolicy resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object TopicPolicy extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.topicPolicyMod.TopicPolicy = js.native
   def get(name: String, id: Input[ID], state: TopicPolicyState): typings.pulumiAws.topicPolicyMod.TopicPolicy = js.native
   def get(name: String, id: Input[ID], state: TopicPolicyState, opts: CustomResourceOptions): typings.pulumiAws.topicPolicyMod.TopicPolicy = js.native
+  
   /**
     * Returns true if the given object is an instance of TopicPolicy.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topicPolicy.TopicPolicy */ Boolean = js.native
 }
-

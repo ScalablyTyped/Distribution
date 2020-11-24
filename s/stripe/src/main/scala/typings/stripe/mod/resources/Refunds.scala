@@ -12,11 +12,12 @@ import typings.stripe.mod.refunds.IRefundCreationOptionsWithCharge
 import typings.stripe.mod.refunds.IRefundListOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Refunds")
 @js.native
 class Refunds () extends StripeResource {
+  
   def create(data: IRefundCreationOptionsWithCharge): js.Promise[IRefund] = js.native
   /**
     * When you create a new refund, you must specify a charge to create it on.
@@ -34,6 +35,7 @@ class Refunds () extends StripeResource {
   def create(data: IRefundCreationOptionsWithCharge, options: HeaderOptions): js.Promise[IRefund] = js.native
   def create(data: IRefundCreationOptionsWithCharge, options: HeaderOptions, response: IResponseFn[IRefund]): js.Promise[IRefund] = js.native
   def create(data: IRefundCreationOptionsWithCharge, response: IResponseFn[IRefund]): js.Promise[IRefund] = js.native
+  
   def list(): IListPromise[IRefund] = js.native
   def list(data: IRefundListOptions): IListPromise[IRefund] = js.native
   /**
@@ -47,6 +49,7 @@ class Refunds () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[IRefund] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IRefund]]): IListPromise[IRefund] = js.native
   def list(response: IResponseFn[IList[IRefund]]): IListPromise[IRefund] = js.native
+  
   def retrieve(id: String): js.Promise[IRefund] = js.native
   def retrieve(id: String, data: IDataOptions): js.Promise[IRefund] = js.native
   /**
@@ -58,6 +61,7 @@ class Refunds () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions): js.Promise[IRefund] = js.native
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[IRefund]): js.Promise[IRefund] = js.native
   def retrieve(id: String, response: IResponseFn[IRefund]): js.Promise[IRefund] = js.native
+  
   def update(id: String, data: IDataOptionsWithMetadata): js.Promise[IRefund] = js.native
   /**
     * Updates the specified refund by setting the values of the parameters passed.
@@ -69,4 +73,3 @@ class Refunds () extends StripeResource {
   def update(id: String, data: IDataOptionsWithMetadata, options: HeaderOptions, response: IResponseFn[IRefund]): js.Promise[IRefund] = js.native
   def update(id: String, data: IDataOptionsWithMetadata, response: IResponseFn[IRefund]): js.Promise[IRefund] = js.native
 }
-

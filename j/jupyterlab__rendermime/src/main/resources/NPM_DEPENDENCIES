@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/rendermime" : "2.1.1"
+      "@jupyterlab/rendermime" : "2.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/rendermime" : "2.1.1"
+      "@jupyterlab/rendermime" : "2.2.4"
     }
   ],
   "compile-devDependencies" : [

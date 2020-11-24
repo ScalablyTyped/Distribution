@@ -2,10 +2,11 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TextEditorEdit extends js.Object {
+  
   /**
     * Delete a certain text region.
     *
@@ -13,6 +14,7 @@ trait TextEditorEdit extends js.Object {
     */
   def delete(location: Range): Unit = js.native
   def delete(location: Selection): Unit = js.native
+  
   /**
     * Insert text at a location.
     * You can use \r\n or \n in `value` and they will be normalized to the current [document](#TextDocument).
@@ -22,6 +24,7 @@ trait TextEditorEdit extends js.Object {
     * @param value The new text this operation should insert.
     */
   def insert(location: Position, value: String): Unit = js.native
+  
   /**
     * Replace a certain text region with a new value.
     * You can use \r\n or \n in `value` and they will be normalized to the current [document](#TextDocument).
@@ -32,6 +35,7 @@ trait TextEditorEdit extends js.Object {
   def replace(location: Position, value: String): Unit = js.native
   def replace(location: Range, value: String): Unit = js.native
   def replace(location: Selection, value: String): Unit = js.native
+  
   /**
     * Set the end of line sequence.
     *
@@ -39,4 +43,3 @@ trait TextEditorEdit extends js.Object {
     */
   def setEndOfLine(endOfLine: EndOfLine): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ A small tool to find unused Sass variables
 | ------------------ | :-------------: |
 | Full name          | find-unused-sass-variables |
 | Keywords           | sass, unused, variables, scss |
-| # releases         | 19 |
+| # releases         | 15 |
 | # dependents       | 0 |
-| # downloads        | 64064 |
+| # downloads        | 79326 |
 | # stars            | 0 |
 
 ## Links

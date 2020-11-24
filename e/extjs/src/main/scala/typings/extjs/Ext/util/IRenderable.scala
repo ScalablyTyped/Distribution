@@ -5,27 +5,33 @@ import typings.extjs.Ext.core.IElement
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IRenderable extends IBase {
+  
   /** [Method] Allows addition of behavior after rendering is complete  */
   var afterRender: js.UndefOr[js.Function0[Unit]] = js.native
+  
   /** [Method] Handles autoRender  */
   var doAutoRender: js.UndefOr[js.Function0[Unit]] = js.native
+  
   /** [Method] Ensures that this component is attached to document body
     * @param runLayout Boolean True to run the component's layout.
     */
   var ensureAttachedToBody: js.UndefOr[js.Function1[/* runLayout */ js.UndefOr[Boolean], Unit]] = js.native
+  
   /** [Method] This function takes the position argument passed to onRender and returns a DOM element that you can use in the insert
     * @param position String/Number/Ext.dom.Element/HTMLElement Index, element id or element you want to put this component before.
     * @returns HTMLElement DOM element that you can use in the insertBefore
     */
   var getInsertPosition: js.UndefOr[js.Function1[/* position */ js.UndefOr[js.Any], HTMLElement]] = js.native
+  
   /** [Method] Initialized the renderData to be used when rendering the renderTpl
     * @returns Object Object with keys and values that are going to be applied to the renderTpl
     */
   var initRenderData: js.UndefOr[js.Function0[_]] = js.native
+  
   /** [Method] Template method called when this Component s DOM structure is created
     * @param parentNode Ext.core.Element The parent Element in which this Component's encapsulating element is contained.
     * @param containerIdx Number The index within the parent Container's child collection of this Component.
@@ -33,6 +39,7 @@ trait IRenderable extends IBase {
   var onRender: js.UndefOr[
     js.Function2[/* parentNode */ js.UndefOr[IElement], /* containerIdx */ js.UndefOr[Double], Unit]
   ] = js.native
+  
   /** [Method] Renders the Component into the passed HTML element
     * @param container Ext.Element/HTMLElement/String The element this Component should be rendered into. If it is being created from existing markup, this should be omitted.
     * @param position String/Number The element ID or DOM node index within the container before which this component will be inserted (defaults to appending to the end of the container)
@@ -41,53 +48,69 @@ trait IRenderable extends IBase {
     js.Function2[/* container */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any], Unit]
   ] = js.native
 }
-
 object IRenderable {
+  
   @scala.inline
   def apply(): IRenderable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRenderable]
   }
+  
   @scala.inline
   implicit class IRenderableOps[Self <: IRenderable] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAfterRender(value: () => Unit): Self = this.set("afterRender", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteAfterRender: Self = this.set("afterRender", js.undefined)
+    
     @scala.inline
     def setDoAutoRender(value: () => Unit): Self = this.set("doAutoRender", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteDoAutoRender: Self = this.set("doAutoRender", js.undefined)
+    
     @scala.inline
     def setEnsureAttachedToBody(value: /* runLayout */ js.UndefOr[Boolean] => Unit): Self = this.set("ensureAttachedToBody", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteEnsureAttachedToBody: Self = this.set("ensureAttachedToBody", js.undefined)
+    
     @scala.inline
     def setGetInsertPosition(value: /* position */ js.UndefOr[js.Any] => HTMLElement): Self = this.set("getInsertPosition", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteGetInsertPosition: Self = this.set("getInsertPosition", js.undefined)
+    
     @scala.inline
     def setInitRenderData(value: () => _): Self = this.set("initRenderData", js.Any.fromFunction0(value))
+    
     @scala.inline
     def deleteInitRenderData: Self = this.set("initRenderData", js.undefined)
+    
     @scala.inline
     def setOnRender(value: (/* parentNode */ js.UndefOr[IElement], /* containerIdx */ js.UndefOr[Double]) => Unit): Self = this.set("onRender", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteOnRender: Self = this.set("onRender", js.undefined)
+    
     @scala.inline
     def setRender(value: (/* container */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit): Self = this.set("render", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteRender: Self = this.set("render", js.undefined)
   }
-  
 }
-

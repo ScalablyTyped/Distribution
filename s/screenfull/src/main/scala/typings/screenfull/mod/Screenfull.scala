@@ -5,14 +5,22 @@ import typings.std.Element
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Screenfull extends js.Object {
+  
   /**
   		The element currently in fullscreen, otherwise `null`.
   		*/
   val element: Element | Null = js.native
+  
+  /**
+  		Brings you out of fullscreen.
+  		@returns A promise that resolves after the element exits fullscreen.
+  		*/
+  def exit(): js.Promise[Unit] = js.native
+  
   /**
   		Whether you are allowed to enter fullscreen. If your page is inside an `<iframe>` you will need to add a `allowfullscreen` attribute (+ `webkitallowfullscreen` and `mozallowfullscreen`).
   		@example
@@ -23,19 +31,12 @@ trait Screenfull extends js.Object {
   		```
   		*/
   val isEnabled: `true` = js.native
+  
   /**
   		Whether fullscreen is active.
   		*/
   val isFullscreen: Boolean = js.native
-  /**
-  		Exposes the raw properties (prefixed if needed) used internally.
-  		*/
-  var raw: RawEventNames = js.native
-  /**
-  		Brings you out of fullscreen.
-  		@returns A promise that resolves after the element exits fullscreen.
-  		*/
-  def exit(): js.Promise[Unit] = js.native
+  
   /**
   		Remove a previously registered event listener.
   		@example
@@ -44,6 +45,7 @@ trait Screenfull extends js.Object {
   		```
   		*/
   def off(name: EventName, handler: js.Function1[/* event */ Event, Unit]): Unit = js.native
+  
   /**
   		Add a listener for when the browser switches in and out of fullscreen or when there is an error.
   		@example
@@ -63,14 +65,22 @@ trait Screenfull extends js.Object {
   		```
   		*/
   def on(name: EventName, handler: js.Function1[/* event */ Event, Unit]): Unit = js.native
+  
   /**
   		Alias for `.on('change', function)`.
   		*/
   def onchange(handler: js.Function1[/* event */ Event, Unit]): Unit = js.native
+  
   /**
   		Alias for `.on('error', function)`.
   		*/
   def onerror(handler: js.Function1[/* event */ Event, Unit]): Unit = js.native
+  
+  /**
+  		Exposes the raw properties (prefixed if needed) used internally.
+  		*/
+  var raw: RawEventNames = js.native
+  
   /**
   		Make an element fullscreen.
   		If your page is inside an `<iframe>` you will need to add a `allowfullscreen` attribute (+ `webkitallowfullscreen` and `mozallowfullscreen`).
@@ -105,6 +115,7 @@ trait Screenfull extends js.Object {
   		*/
   def request(): js.Promise[Unit] = js.native
   def request(element: Element): js.Promise[Unit] = js.native
+  
   /**
   		Requests fullscreen if not active, otherwise exits.
   		@returns A promise that resolves after the element enters/exits fullscreen.
@@ -121,4 +132,3 @@ trait Screenfull extends js.Object {
   def toggle(): js.Promise[Unit] = js.native
   def toggle(element: Element): js.Promise[Unit] = js.native
 }
-

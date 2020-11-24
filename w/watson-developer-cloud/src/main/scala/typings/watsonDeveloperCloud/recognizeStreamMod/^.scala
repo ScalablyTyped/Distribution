@@ -3,7 +3,7 @@ package typings.watsonDeveloperCloud.recognizeStreamMod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * pipe()-able Node.js Readable/Writeable stream - accepts binary audio and emits text in its `data` events.
@@ -63,12 +63,13 @@ class ^ protected () extends RecognizeStream {
     */
   def this(options: js.Any) = this()
 }
-
 @JSImport("watson-developer-cloud/lib/recognize-stream", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   var ERROR_UNRECOGNIZED_FORMAT: String = js.native
+  
   var WEBSOCKET_CONNECTION_ERROR: String = js.native
+  
   def getContentType(buffer: Buffer): String = js.native
 }
-

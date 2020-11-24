@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataproc/v1beta2", "dataproc_v1beta2.Resource$Projects$Regions$Jobs")
 @js.native
 class ResourceProjectsRegionsJobs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * dataproc.projects.regions.jobs.cancel
     * @desc Starts a job cancellation request. To access the job resource after
@@ -46,6 +46,9 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * dataproc.projects.regions.jobs.delete
     * @desc Deletes the job from the project. If the job is active, the delete
@@ -77,6 +80,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.jobs.get
     * @desc Gets the resource representation for a job in a project.
@@ -107,6 +111,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.jobs.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -139,6 +144,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.jobs.list
     * @desc Lists regions/{region}/jobs in a project.
@@ -176,6 +182,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListJobsResponse]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.jobs.patch
     * @desc Updates a job in a project.
@@ -208,6 +215,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.jobs.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -241,6 +249,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.jobs.submit
     * @desc Submits a job to a cluster.
@@ -271,6 +280,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * dataproc.projects.regions.jobs.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -308,4 +318,3 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

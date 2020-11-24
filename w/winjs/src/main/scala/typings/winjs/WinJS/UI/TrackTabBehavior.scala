@@ -2,7 +2,7 @@ package typings.winjs.WinJS.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods for detecting when the user tabs to or from DOM elements.
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WinJS.UI.TrackTabBehavior")
 @js.native
 object TrackTabBehavior extends js.Object
-

@@ -4,7 +4,7 @@ import typings.phaser.Phaser.GameObjects.Particles.Particle
 import typings.phaser.Phaser.Types.GameObjects.Particles.DeathZoneSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Death Zone.
@@ -16,47 +16,55 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DeathZone extends js.Object {
+  
   /**
     * Set to `true` if the Particle should be killed if it enters this zone.
     * Set to `false` to kill the Particle if it leaves this zone.
     */
   var killOnEnter: Boolean = js.native
+  
   /**
     * An object instance that has a `contains` method that returns a boolean when given `x` and `y` arguments.
     * This could be a Geometry shape, such as `Phaser.Geom.Circle`, or your own custom object.
     */
   var source: DeathZoneSource = js.native
+  
   /**
     * Checks if the given Particle will be killed or not by this zone.
     * @param particle The Particle to be checked against this zone.
     */
   def willKill(particle: Particle): Boolean = js.native
 }
-
 object DeathZone {
+  
   @scala.inline
   def apply(killOnEnter: Boolean, source: DeathZoneSource, willKill: Particle => Boolean): DeathZone = {
     val __obj = js.Dynamic.literal(killOnEnter = killOnEnter.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], willKill = js.Any.fromFunction1(willKill))
     __obj.asInstanceOf[DeathZone]
   }
+  
   @scala.inline
   implicit class DeathZoneOps[Self <: DeathZone] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setKillOnEnter(value: Boolean): Self = this.set("killOnEnter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSource(value: DeathZoneSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWillKill(value: Particle => Boolean): Self = this.set("willKill", js.Any.fromFunction1(value))
   }
-  
 }
-

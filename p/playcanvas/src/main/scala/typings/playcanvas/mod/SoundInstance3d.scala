@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.DistanceModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A pc.SoundInstance3d plays a {@link pc.Sound} in 3D.
@@ -50,4 +50,3 @@ class SoundInstance3d protected ()
     options: DistanceModel
   ) = this()
 }
-

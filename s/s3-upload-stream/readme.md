@@ -10,9 +10,9 @@ Writeable stream for uploading content of unknown size to S3 via the multipart A
 | ------------------ | :-------------: |
 | Full name          | s3-upload-stream |
 | Keywords           | aws, s3, upload, pipe, stream |
-| # releases         | 1 |
-| # dependents       | 52 |
-| # downloads        | 1648794 |
+| # releases         | 0 |
+| # dependents       | 57 |
+| # downloads        | 1542103 |
 | # stars            | 20 |
 
 ## Links

@@ -8,17 +8,20 @@ import typings.browserfs.fileSystemMod.BFSCallback
 import typings.browserfs.fileSystemMod.FileSystemOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofEmscripten
   extends Instantiable1[/* _FS */ js.Any, default] {
-  val Name: String = js.native
-  val Options: FileSystemOptions = js.native
+  
   /**
     * Create an EmscriptenFileSystem instance with the given options.
     */
   def Create(opts: EmscriptenFileSystemOptions, cb: BFSCallback[EmscriptenFileSystem]): Unit = js.native
+  
+  val Name: String = js.native
+  
+  val Options: FileSystemOptions = js.native
+  
   def isAvailable(): Boolean = js.native
 }
-

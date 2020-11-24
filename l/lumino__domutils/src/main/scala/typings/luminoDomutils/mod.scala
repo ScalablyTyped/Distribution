@@ -7,13 +7,15 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/domutils", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   object ClipboardExt extends js.Object {
+    
     /**
       * Copy text to the system clipboard.
       *
@@ -24,6 +26,7 @@ object mod extends js.Object {
   
   @js.native
   object ElementExt extends js.Object {
+    
     /**
       * Compute the box sizing for an element.
       *
@@ -32,6 +35,7 @@ object mod extends js.Object {
       * @returns The box sizing data for the specified element.
       */
     def boxSizing(element: Element): IBoxSizing = js.native
+    
     /**
       * Test whether a client position lies within an element.
       *
@@ -44,6 +48,7 @@ object mod extends js.Object {
       * @returns Whether the point is within the given element.
       */
     def hitTest(element: Element, clientX: Double, clientY: Double): Boolean = js.native
+    
     /**
       * Vertically scroll an element into view if needed.
       *
@@ -61,6 +66,7 @@ object mod extends js.Object {
       * the nearest edges of the area and element are aligned.
       */
     def scrollIntoViewIfNeeded(area: Element, element: Element): Unit = js.native
+    
     /**
       * Compute the size limits for an element.
       *
@@ -73,22 +79,27 @@ object mod extends js.Object {
   
   @js.native
   object Platform extends js.Object {
+    
     /**
       * A flag indicating whether the browser is Edge.
       */
     val IS_EDGE: Boolean = js.native
+    
     /**
       * A flag indicating whether the browser is IE.
       */
     val IS_IE: Boolean = js.native
+    
     /**
       * A flag indicating whether the platform is Mac.
       */
     val IS_MAC: Boolean = js.native
+    
     /**
       * A flag indicating whether the platform is Windows.
       */
     val IS_WIN: Boolean = js.native
+    
     /**
       * Test whether the `accel` key is pressed.
       *
@@ -106,6 +117,7 @@ object mod extends js.Object {
   
   @js.native
   object Selector extends js.Object {
+    
     /**
       * Calculate the specificity of a single CSS selector.
       *
@@ -132,6 +144,7 @@ object mod extends js.Object {
       * same selector are extremely fast.
       */
     def calculateSpecificity(selector: String): Double = js.native
+    
     /**
       * Test whether a selector is a valid CSS selector.
       *
@@ -144,6 +157,7 @@ object mod extends js.Object {
       * selector are extremely fast.
       */
     def isValid(selector: String): Boolean = js.native
+    
     /**
       * Test whether an element matches a CSS selector.
       *
@@ -159,6 +173,4 @@ object mod extends js.Object {
       */
     def matches(element: Element, selector: String): Boolean = js.native
   }
-  
 }
-

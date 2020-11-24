@@ -2,13 +2,14 @@ package typings.postmate.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Composes an API to be used by the child
   */
 @js.native
 trait ChildAPI extends js.Object {
+  
   /**
     * Emits an event to the parent
     *
@@ -18,4 +19,3 @@ trait ChildAPI extends js.Object {
   def emit(name: String): Unit = js.native
   def emit(name: String, data: js.Any): Unit = js.native
 }
-

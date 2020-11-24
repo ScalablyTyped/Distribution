@@ -1,17 +1,16 @@
 package typings.awsSdk.macie2Mod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Macie2 extends Service {
-  @JSName("config")
-  var config_Macie2: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Accepts an Amazon Macie membership invitation that was received from a specific account.
     */
@@ -25,6 +24,7 @@ trait Macie2 extends Service {
     params: AcceptInvitationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AcceptInvitationResponse, scala.Unit]
   ): Request[AcceptInvitationResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about one or more custom data identifiers.
     */
@@ -40,6 +40,10 @@ trait Macie2 extends Service {
     params: BatchGetCustomDataIdentifiersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetCustomDataIdentifiersResponse, scala.Unit]
   ): Request[BatchGetCustomDataIdentifiersResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_Macie2: ConfigBase with ClientConfiguration = js.native
+  
   /**
     *  Creates and defines the settings for a classification job.
     */
@@ -53,6 +57,7 @@ trait Macie2 extends Service {
     params: CreateClassificationJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateClassificationJobResponse, scala.Unit]
   ): Request[CreateClassificationJobResponse, AWSError] = js.native
+  
   /**
     * Creates and defines the criteria and other settings for a custom data identifier.
     */
@@ -68,6 +73,7 @@ trait Macie2 extends Service {
     params: CreateCustomDataIdentifierRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCustomDataIdentifierResponse, scala.Unit]
   ): Request[CreateCustomDataIdentifierResponse, AWSError] = js.native
+  
   /**
     * Creates and defines the criteria and other settings for a findings filter.
     */
@@ -81,6 +87,7 @@ trait Macie2 extends Service {
     params: CreateFindingsFilterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateFindingsFilterResponse, scala.Unit]
   ): Request[CreateFindingsFilterResponse, AWSError] = js.native
+  
   /**
     *  Sends an Amazon Macie membership invitation to one or more accounts.
     */
@@ -94,6 +101,7 @@ trait Macie2 extends Service {
     params: CreateInvitationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateInvitationsResponse, scala.Unit]
   ): Request[CreateInvitationsResponse, AWSError] = js.native
+  
   /**
     *  Associates an account with an Amazon Macie master account.
     */
@@ -107,6 +115,7 @@ trait Macie2 extends Service {
     params: CreateMemberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateMemberResponse, scala.Unit]
   ): Request[CreateMemberResponse, AWSError] = js.native
+  
   /**
     *  Creates sample findings.
     */
@@ -120,6 +129,7 @@ trait Macie2 extends Service {
     params: CreateSampleFindingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSampleFindingsResponse, scala.Unit]
   ): Request[CreateSampleFindingsResponse, AWSError] = js.native
+  
   /**
     * Declines Amazon Macie membership invitations that were received from specific accounts.
     */
@@ -133,6 +143,7 @@ trait Macie2 extends Service {
     params: DeclineInvitationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeclineInvitationsResponse, scala.Unit]
   ): Request[DeclineInvitationsResponse, AWSError] = js.native
+  
   /**
     * Soft deletes a custom data identifier.
     */
@@ -148,6 +159,7 @@ trait Macie2 extends Service {
     params: DeleteCustomDataIdentifierRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteCustomDataIdentifierResponse, scala.Unit]
   ): Request[DeleteCustomDataIdentifierResponse, AWSError] = js.native
+  
   /**
     * Deletes a findings filter.
     */
@@ -161,6 +173,7 @@ trait Macie2 extends Service {
     params: DeleteFindingsFilterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteFindingsFilterResponse, scala.Unit]
   ): Request[DeleteFindingsFilterResponse, AWSError] = js.native
+  
   /**
     * Deletes Amazon Macie membership invitations that were received from specific accounts.
     */
@@ -174,6 +187,7 @@ trait Macie2 extends Service {
     params: DeleteInvitationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteInvitationsResponse, scala.Unit]
   ): Request[DeleteInvitationsResponse, AWSError] = js.native
+  
   /**
     * Deletes the association between an Amazon Macie master account and an account.
     */
@@ -187,6 +201,7 @@ trait Macie2 extends Service {
     params: DeleteMemberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteMemberResponse, scala.Unit]
   ): Request[DeleteMemberResponse, AWSError] = js.native
+  
   /**
     *  Retrieves (queries) statistical data and other information about one or more S3 buckets that Amazon Macie monitors and analyzes.
     */
@@ -200,36 +215,39 @@ trait Macie2 extends Service {
     params: DescribeBucketsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeBucketsResponse, scala.Unit]
   ): Request[DescribeBucketsResponse, AWSError] = js.native
+  
   /**
-    * Retrieves information about the status and settings for a classification job.
+    * Retrieves the status and settings for a classification job.
     */
   def describeClassificationJob(): Request[DescribeClassificationJobResponse, AWSError] = js.native
   def describeClassificationJob(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeClassificationJobResponse, scala.Unit]
   ): Request[DescribeClassificationJobResponse, AWSError] = js.native
   /**
-    * Retrieves information about the status and settings for a classification job.
+    * Retrieves the status and settings for a classification job.
     */
   def describeClassificationJob(params: DescribeClassificationJobRequest): Request[DescribeClassificationJobResponse, AWSError] = js.native
   def describeClassificationJob(
     params: DescribeClassificationJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeClassificationJobResponse, scala.Unit]
   ): Request[DescribeClassificationJobResponse, AWSError] = js.native
+  
   /**
-    * Retrieves information about the Amazon Macie configuration settings for an AWS organization.
+    * Retrieves the Amazon Macie configuration settings for an AWS organization.
     */
   def describeOrganizationConfiguration(): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
   def describeOrganizationConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConfigurationResponse, scala.Unit]
   ): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
   /**
-    * Retrieves information about the Amazon Macie configuration settings for an AWS organization.
+    * Retrieves the Amazon Macie configuration settings for an AWS organization.
     */
   def describeOrganizationConfiguration(params: DescribeOrganizationConfigurationRequest): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
   def describeOrganizationConfiguration(
     params: DescribeOrganizationConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConfigurationResponse, scala.Unit]
   ): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
+  
   /**
     * Disables an Amazon Macie account and deletes Macie resources for the account.
     */
@@ -243,21 +261,23 @@ trait Macie2 extends Service {
     params: DisableMacieRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisableMacieResponse, scala.Unit]
   ): Request[DisableMacieResponse, AWSError] = js.native
+  
   /**
-    * Disables an account as a delegated administrator of Amazon Macie for an AWS organization.
+    * Disables an account as the delegated Amazon Macie administrator account for an AWS organization.
     */
   def disableOrganizationAdminAccount(): Request[DisableOrganizationAdminAccountResponse, AWSError] = js.native
   def disableOrganizationAdminAccount(
     callback: js.Function2[/* err */ AWSError, /* data */ DisableOrganizationAdminAccountResponse, scala.Unit]
   ): Request[DisableOrganizationAdminAccountResponse, AWSError] = js.native
   /**
-    * Disables an account as a delegated administrator of Amazon Macie for an AWS organization.
+    * Disables an account as the delegated Amazon Macie administrator account for an AWS organization.
     */
   def disableOrganizationAdminAccount(params: DisableOrganizationAdminAccountRequest): Request[DisableOrganizationAdminAccountResponse, AWSError] = js.native
   def disableOrganizationAdminAccount(
     params: DisableOrganizationAdminAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisableOrganizationAdminAccountResponse, scala.Unit]
   ): Request[DisableOrganizationAdminAccountResponse, AWSError] = js.native
+  
   /**
     * Disassociates a member account from its Amazon Macie master account.
     */
@@ -273,6 +293,7 @@ trait Macie2 extends Service {
     params: DisassociateFromMasterAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateFromMasterAccountResponse, scala.Unit]
   ): Request[DisassociateFromMasterAccountResponse, AWSError] = js.native
+  
   /**
     * Disassociates an Amazon Macie master account from a member account.
     */
@@ -286,6 +307,7 @@ trait Macie2 extends Service {
     params: DisassociateMemberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateMemberResponse, scala.Unit]
   ): Request[DisassociateMemberResponse, AWSError] = js.native
+  
   /**
     * Enables Amazon Macie and specifies the configuration settings for a Macie account.
     */
@@ -299,21 +321,23 @@ trait Macie2 extends Service {
     params: EnableMacieRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ EnableMacieResponse, scala.Unit]
   ): Request[EnableMacieResponse, AWSError] = js.native
+  
   /**
-    * Enables an account as a delegated administrator of Amazon Macie for an AWS organization.
+    * Designates an account as the delegated Amazon Macie administrator account for an AWS organization.
     */
   def enableOrganizationAdminAccount(): Request[EnableOrganizationAdminAccountResponse, AWSError] = js.native
   def enableOrganizationAdminAccount(
     callback: js.Function2[/* err */ AWSError, /* data */ EnableOrganizationAdminAccountResponse, scala.Unit]
   ): Request[EnableOrganizationAdminAccountResponse, AWSError] = js.native
   /**
-    * Enables an account as a delegated administrator of Amazon Macie for an AWS organization.
+    * Designates an account as the delegated Amazon Macie administrator account for an AWS organization.
     */
   def enableOrganizationAdminAccount(params: EnableOrganizationAdminAccountRequest): Request[EnableOrganizationAdminAccountResponse, AWSError] = js.native
   def enableOrganizationAdminAccount(
     params: EnableOrganizationAdminAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ EnableOrganizationAdminAccountResponse, scala.Unit]
   ): Request[EnableOrganizationAdminAccountResponse, AWSError] = js.native
+  
   /**
     *  Retrieves (queries) aggregated statistical data for all the S3 buckets that Amazon Macie monitors and analyzes.
     */
@@ -327,6 +351,7 @@ trait Macie2 extends Service {
     params: GetBucketStatisticsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetBucketStatisticsResponse, scala.Unit]
   ): Request[GetBucketStatisticsResponse, AWSError] = js.native
+  
   /**
     * Retrieves the configuration settings for storing data classification results.
     */
@@ -350,19 +375,21 @@ trait Macie2 extends Service {
       scala.Unit
     ]
   ): Request[GetClassificationExportConfigurationResponse, AWSError] = js.native
+  
   /**
-    * Retrieves information about the criteria and other settings for a custom data identifier.
+    * Retrieves the criteria and other settings for a custom data identifier.
     */
   def getCustomDataIdentifier(): Request[GetCustomDataIdentifierResponse, AWSError] = js.native
   def getCustomDataIdentifier(callback: js.Function2[/* err */ AWSError, /* data */ GetCustomDataIdentifierResponse, scala.Unit]): Request[GetCustomDataIdentifierResponse, AWSError] = js.native
   /**
-    * Retrieves information about the criteria and other settings for a custom data identifier.
+    * Retrieves the criteria and other settings for a custom data identifier.
     */
   def getCustomDataIdentifier(params: GetCustomDataIdentifierRequest): Request[GetCustomDataIdentifierResponse, AWSError] = js.native
   def getCustomDataIdentifier(
     params: GetCustomDataIdentifierRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCustomDataIdentifierResponse, scala.Unit]
   ): Request[GetCustomDataIdentifierResponse, AWSError] = js.native
+  
   /**
     *  Retrieves (queries) aggregated statistical data about findings.
     */
@@ -376,32 +403,35 @@ trait Macie2 extends Service {
     params: GetFindingStatisticsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetFindingStatisticsResponse, scala.Unit]
   ): Request[GetFindingStatisticsResponse, AWSError] = js.native
+  
   /**
-    * Retrieves information about one or more findings.
+    * Retrieves the details of one or more findings.
     */
   def getFindings(): Request[GetFindingsResponse, AWSError] = js.native
   def getFindings(callback: js.Function2[/* err */ AWSError, /* data */ GetFindingsResponse, scala.Unit]): Request[GetFindingsResponse, AWSError] = js.native
   /**
-    * Retrieves information about one or more findings.
+    * Retrieves the details of one or more findings.
     */
   def getFindings(params: GetFindingsRequest): Request[GetFindingsResponse, AWSError] = js.native
   def getFindings(
     params: GetFindingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetFindingsResponse, scala.Unit]
   ): Request[GetFindingsResponse, AWSError] = js.native
+  
   /**
-    * Retrieves information about the criteria and other settings for a findings filter.
+    * Retrieves the criteria and other settings for a findings filter.
     */
   def getFindingsFilter(): Request[GetFindingsFilterResponse, AWSError] = js.native
   def getFindingsFilter(callback: js.Function2[/* err */ AWSError, /* data */ GetFindingsFilterResponse, scala.Unit]): Request[GetFindingsFilterResponse, AWSError] = js.native
   /**
-    * Retrieves information about the criteria and other settings for a findings filter.
+    * Retrieves the criteria and other settings for a findings filter.
     */
   def getFindingsFilter(params: GetFindingsFilterRequest): Request[GetFindingsFilterResponse, AWSError] = js.native
   def getFindingsFilter(
     params: GetFindingsFilterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetFindingsFilterResponse, scala.Unit]
   ): Request[GetFindingsFilterResponse, AWSError] = js.native
+  
   /**
     * Retrieves the count of Amazon Macie membership invitations that were received by an account.
     */
@@ -415,19 +445,21 @@ trait Macie2 extends Service {
     params: GetInvitationsCountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInvitationsCountResponse, scala.Unit]
   ): Request[GetInvitationsCountResponse, AWSError] = js.native
+  
   /**
-    * Retrieves information about the current status and configuration settings for an Amazon Macie account.
+    * Retrieves the current status and configuration settings for an Amazon Macie account.
     */
   def getMacieSession(): Request[GetMacieSessionResponse, AWSError] = js.native
   def getMacieSession(callback: js.Function2[/* err */ AWSError, /* data */ GetMacieSessionResponse, scala.Unit]): Request[GetMacieSessionResponse, AWSError] = js.native
   /**
-    * Retrieves information about the current status and configuration settings for an Amazon Macie account.
+    * Retrieves the current status and configuration settings for an Amazon Macie account.
     */
   def getMacieSession(params: GetMacieSessionRequest): Request[GetMacieSessionResponse, AWSError] = js.native
   def getMacieSession(
     params: GetMacieSessionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMacieSessionResponse, scala.Unit]
   ): Request[GetMacieSessionResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the Amazon Macie master account for an account.
     */
@@ -441,6 +473,7 @@ trait Macie2 extends Service {
     params: GetMasterAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMasterAccountResponse, scala.Unit]
   ): Request[GetMasterAccountResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a member account that's associated with an Amazon Macie master account.
     */
@@ -454,6 +487,7 @@ trait Macie2 extends Service {
     params: GetMemberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMemberResponse, scala.Unit]
   ): Request[GetMemberResponse, AWSError] = js.native
+  
   /**
     * Retrieves (queries) quotas and aggregated usage data for one or more accounts.
     */
@@ -467,6 +501,7 @@ trait Macie2 extends Service {
     params: GetUsageStatisticsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetUsageStatisticsResponse, scala.Unit]
   ): Request[GetUsageStatisticsResponse, AWSError] = js.native
+  
   /**
     * Retrieves (queries) aggregated usage data for an account.
     */
@@ -480,6 +515,7 @@ trait Macie2 extends Service {
     params: GetUsageTotalsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetUsageTotalsResponse, scala.Unit]
   ): Request[GetUsageTotalsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a subset of information about one or more classification jobs.
     */
@@ -493,6 +529,7 @@ trait Macie2 extends Service {
     params: ListClassificationJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListClassificationJobsResponse, scala.Unit]
   ): Request[ListClassificationJobsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a subset of information about all the custom data identifiers for an account.
     */
@@ -508,6 +545,7 @@ trait Macie2 extends Service {
     params: ListCustomDataIdentifiersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListCustomDataIdentifiersResponse, scala.Unit]
   ): Request[ListCustomDataIdentifiersResponse, AWSError] = js.native
+  
   /**
     *  Retrieves a subset of information about one or more findings.
     */
@@ -521,6 +559,7 @@ trait Macie2 extends Service {
     params: ListFindingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListFindingsResponse, scala.Unit]
   ): Request[ListFindingsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a subset of information about all the findings filters for an account.
     */
@@ -534,6 +573,7 @@ trait Macie2 extends Service {
     params: ListFindingsFiltersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListFindingsFiltersResponse, scala.Unit]
   ): Request[ListFindingsFiltersResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about all the Amazon Macie membership invitations that were received by an account.
     */
@@ -547,6 +587,7 @@ trait Macie2 extends Service {
     params: ListInvitationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListInvitationsResponse, scala.Unit]
   ): Request[ListInvitationsResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the accounts that are associated with an Amazon Macie master account.
     */
@@ -560,21 +601,23 @@ trait Macie2 extends Service {
     params: ListMembersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListMembersResponse, scala.Unit]
   ): Request[ListMembersResponse, AWSError] = js.native
+  
   /**
-    * Retrieves information about the account that's designated as the delegated administrator of Amazon Macie for an AWS organization.
+    * Retrieves information about the delegated Amazon Macie administrator account for an AWS organization.
     */
   def listOrganizationAdminAccounts(): Request[ListOrganizationAdminAccountsResponse, AWSError] = js.native
   def listOrganizationAdminAccounts(
     callback: js.Function2[/* err */ AWSError, /* data */ ListOrganizationAdminAccountsResponse, scala.Unit]
   ): Request[ListOrganizationAdminAccountsResponse, AWSError] = js.native
   /**
-    * Retrieves information about the account that's designated as the delegated administrator of Amazon Macie for an AWS organization.
+    * Retrieves information about the delegated Amazon Macie administrator account for an AWS organization.
     */
   def listOrganizationAdminAccounts(params: ListOrganizationAdminAccountsRequest): Request[ListOrganizationAdminAccountsResponse, AWSError] = js.native
   def listOrganizationAdminAccounts(
     params: ListOrganizationAdminAccountsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListOrganizationAdminAccountsResponse, scala.Unit]
   ): Request[ListOrganizationAdminAccountsResponse, AWSError] = js.native
+  
   /**
     * Retrieves the tags (keys and values) that are associated with a classification job, custom data identifier, findings filter, or member account.
     */
@@ -588,6 +631,7 @@ trait Macie2 extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, scala.Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Creates or updates the configuration settings for storing data classification results.
     */
@@ -611,6 +655,7 @@ trait Macie2 extends Service {
       scala.Unit
     ]
   ): Request[PutClassificationExportConfigurationResponse, AWSError] = js.native
+  
   /**
     * Adds or updates one or more tags (keys and values) that are associated with a classification job, custom data identifier, findings filter, or member account.
     */
@@ -624,6 +669,7 @@ trait Macie2 extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, scala.Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Tests a custom data identifier.
     */
@@ -639,6 +685,7 @@ trait Macie2 extends Service {
     params: TestCustomDataIdentifierRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TestCustomDataIdentifierResponse, scala.Unit]
   ): Request[TestCustomDataIdentifierResponse, AWSError] = js.native
+  
   /**
     * Removes one or more tags (keys and values) from a classification job, custom data identifier, findings filter, or member account.
     */
@@ -652,19 +699,21 @@ trait Macie2 extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, scala.Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
-    * Cancels a classification job.
+    * Changes the status of a classification job.
     */
   def updateClassificationJob(): Request[UpdateClassificationJobResponse, AWSError] = js.native
   def updateClassificationJob(callback: js.Function2[/* err */ AWSError, /* data */ UpdateClassificationJobResponse, scala.Unit]): Request[UpdateClassificationJobResponse, AWSError] = js.native
   /**
-    * Cancels a classification job.
+    * Changes the status of a classification job.
     */
   def updateClassificationJob(params: UpdateClassificationJobRequest): Request[UpdateClassificationJobResponse, AWSError] = js.native
   def updateClassificationJob(
     params: UpdateClassificationJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateClassificationJobResponse, scala.Unit]
   ): Request[UpdateClassificationJobResponse, AWSError] = js.native
+  
   /**
     * Updates the criteria and other settings for a findings filter.
     */
@@ -678,6 +727,7 @@ trait Macie2 extends Service {
     params: UpdateFindingsFilterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateFindingsFilterResponse, scala.Unit]
   ): Request[UpdateFindingsFilterResponse, AWSError] = js.native
+  
   /**
     * Suspends or re-enables an Amazon Macie account, or updates the configuration settings for a Macie account.
     */
@@ -691,6 +741,7 @@ trait Macie2 extends Service {
     params: UpdateMacieSessionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateMacieSessionResponse, scala.Unit]
   ): Request[UpdateMacieSessionResponse, AWSError] = js.native
+  
   /**
     *  Enables an Amazon Macie master account to suspend or re-enable a member account.
     */
@@ -704,15 +755,16 @@ trait Macie2 extends Service {
     params: UpdateMemberSessionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateMemberSessionResponse, scala.Unit]
   ): Request[UpdateMemberSessionResponse, AWSError] = js.native
+  
   /**
-    * Updates Amazon Macie configuration settings for an AWS organization.
+    * Updates the Amazon Macie configuration settings for an AWS organization.
     */
   def updateOrganizationConfiguration(): Request[UpdateOrganizationConfigurationResponse, AWSError] = js.native
   def updateOrganizationConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateOrganizationConfigurationResponse, scala.Unit]
   ): Request[UpdateOrganizationConfigurationResponse, AWSError] = js.native
   /**
-    * Updates Amazon Macie configuration settings for an AWS organization.
+    * Updates the Amazon Macie configuration settings for an AWS organization.
     */
   def updateOrganizationConfiguration(params: UpdateOrganizationConfigurationRequest): Request[UpdateOrganizationConfigurationResponse, AWSError] = js.native
   def updateOrganizationConfiguration(
@@ -720,4 +772,3 @@ trait Macie2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateOrganizationConfigurationResponse, scala.Unit]
   ): Request[UpdateOrganizationConfigurationResponse, AWSError] = js.native
 }
-

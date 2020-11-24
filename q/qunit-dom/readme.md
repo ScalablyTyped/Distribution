@@ -1,7 +1,7 @@
 
 # Scala.js typings for qunit-dom
 
-Typings are for version 1.4.0
+Typings are for version 1.6.0
 
 ## Library description:
 High Level DOM Assertions for QUnit
@@ -9,10 +9,10 @@ High Level DOM Assertions for QUnit
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | qunit-dom |
-| Keywords           | browser, dom, ember-addon, html, qunit, testing |
-| # releases         | 17 |
+| Keywords           | browser, dom, ember-addon, html, qunit, qunit-plugin, testing |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 2735767 |
+| # downloads        | 4504984 |
 | # stars            | 0 |
 
 ## Links

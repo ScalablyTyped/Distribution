@@ -1,11 +1,11 @@
 package typings.tensorflowTfjsLayers.trainingMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.tensorflowTfjsCore.distTensorMod.Scalar
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.mod.Optimizer
 import typings.tensorflowTfjsCore.modelTypesMod.ModelPredictConfig
-import typings.tensorflowTfjsCore.tensorMod.Scalar
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsCore.typesMod.IOHandler
 import typings.tensorflowTfjsCore.typesMod.SaveConfig
@@ -24,13 +24,14 @@ import typings.tensorflowTfjsLayers.trainingUtilsMod.ClassWeight
 import typings.tensorflowTfjsLayers.trainingUtilsMod.ClassWeightMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.tensorflowTfjsCore.modelTypesMod.InferenceModel because var conflicts: inputs, outputs. Inlined execute, execute, execute, execute, execute, execute, predict, predict, predict */ @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "LayersModel")
 @js.native
 class LayersModel protected () extends Container {
   def this(args: ContainerArgs) = this()
+  
   /**
     * Get number of samples provided for training, evaluation or prediction.
     *
@@ -42,91 +43,7 @@ class LayersModel protected () extends Container {
     * @returns Number of samples provided.
     */
   var checkNumSamples: js.Any = js.native
-  var collectedTrainableWeights: js.Any = js.native
-  var feedLossFns: js.Any = js.native
-  var feedOutputShapes: js.Any = js.native
-  var getLossIdentifiers: js.Any = js.native
-  var getMetricIdentifiers: js.Any = js.native
-  var history: History = js.native
-  var isOptimizerOwned: Boolean = js.native
-  var isTraining: Boolean = js.native
-  var loss: String | (js.Array[LossOrMetricFn | String]) | (StringDictionary[LossOrMetricFn | String]) | LossOrMetricFn = js.native
-  var lossFunctions: js.Array[LossOrMetricFn] = js.native
-  /**
-    * Create a function which, when invoked with an array of `tf.Tensor`s as a
-    * batch of inputs, returns the prespecified loss and metrics of the model
-    * under the batch of input data.
-    */
-  var makeTestFunction: js.Any = js.native
-  var metrics: String | LossOrMetricFn | (js.Array[String | LossOrMetricFn]) | (StringDictionary[String | LossOrMetricFn]) = js.native
-  var metricsNames: js.Array[String] = js.native
-  var metricsTensors: js.Array[js.Tuple2[LossOrMetricFn, Double]] = js.native
-  var optimizer: Optimizer = js.native
-  var optimizer_ : Optimizer = js.native
-  /**
-    * Helper method to loop over some data in batches.
-    *
-    * Porting Note: Not using the functional approach in the Python equivalent
-    *   due to the imperative backend.
-    * Porting Note: Does not support step mode currently.
-    *
-    * @param ins: input data
-    * @param batchSize: integer batch size.
-    * @param verbose: verbosity model
-    * @returns: Predictions as `tf.Tensor` (if a single output) or an `Array` of
-    *   `tf.Tensor` (if multipe outputs).
-    */
-  var predictLoop: js.Any = js.native
-  /**
-    * Retrieve the model's internal symbolic tensors from symbolic-tensor names.
-    */
-  var retrieveSymbolicTensors: js.Any = js.native
-  /**
-    * Setter used for force stopping of LayersModel.fit() (i.e., training).
-    *
-    * Example:
-    *
-    * ```js
-    * const input = tf.input({shape: [10]});
-    * const output = tf.layers.dense({units: 1}).apply(input);
-    * const model = tf.model({inputs: [input], outputs: [output]});
-    * model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
-    * const xs = tf.ones([8, 10]);
-    * const ys = tf.zeros([8, 1]);
-    *
-    * const history = await model.fit(xs, ys, {
-    *   epochs: 10,
-    *   callbacks: {
-    *     onEpochEnd: async (epoch, logs) => {
-    *       if (epoch === 2) {
-    *         model.stopTraining = true;
-    *       }
-    *     }
-    *   }
-    * });
-    *
-    * // There should be only 3 values in the loss array, instead of 10
-    * values,
-    * // due to the stopping after 3 epochs.
-    * console.log(history.history.loss);
-    * ```
-    */
-  var stopTraining: Boolean = js.native
-  var stopTraining_ : Boolean = js.native
-  var testFunction: js.Any = js.native
-  /**
-    * Loop over some test data in batches.
-    * @param f A Function returning a list of tensors.
-    * @param ins Array of tensors to be fed to `f`.
-    * @param batchSize Integer batch size or `null` / `undefined`.
-    * @param verbose verbosity mode.
-    * @param steps Total number of steps (batches of samples) before
-    * declaring test finished. Ignored with the default value of `null` /
-    * `undefined`.
-    * @returns Array of Scalars.
-    */
-  var testLoop: js.Any = js.native
-  var userDefinedMetadata: js.Any = js.native
+  
   /**
     * Check trainable weights count consistency.
     *
@@ -137,6 +54,9 @@ class LayersModel protected () extends Container {
     * without calling `model.compile()` again.
     */
   /* protected */ def checkTrainableWeightsConsistency(): Unit = js.native
+  
+  var collectedTrainableWeights: js.Any = js.native
+  
   /**
     * Configures and prepares the model for training and evaluation.  Compiling
     * outfits the model with an optimizer, loss, and/or metrics.  Calling `fit`
@@ -144,11 +64,11 @@ class LayersModel protected () extends Container {
     *
     * @param args a `ModelCompileArgs` specifying the loss, optimizer, and
     * metrics to be used for fitting and evaluating this model.
-    */
-  /**
+    *
     * @doc {heading: 'Models', subheading: 'Classes'}
     */
   def compile(args: ModelCompileArgs): Unit = js.native
+  
   def evaluate(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): Scalar | js.Array[Scalar] = js.native
   def evaluate(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelEvaluateArgs): Scalar | js.Array[Scalar] = js.native
   def evaluate(x: js.Array[Tensor[Rank]], y: Tensor[Rank]): Scalar | js.Array[Scalar] = js.native
@@ -183,12 +103,12 @@ class LayersModel protected () extends Container {
     *   metrics) or `Array` of `Scalar`s (if the model has multiple outputs
     *   and/or metrics). The attribute `model.metricsNames`
     *   will give you the display labels for the scalar outputs.
-    */
-  /**
+    *
     * @doc {heading: 'Models', subheading: 'Classes'}
     */
   def evaluate(x: Tensor[Rank], y: Tensor[Rank]): Scalar | js.Array[Scalar] = js.native
   def evaluate(x: Tensor[Rank], y: Tensor[Rank], args: ModelEvaluateArgs): Scalar | js.Array[Scalar] = js.native
+  
   /**
     * Evaluate model using a dataset object.
     *
@@ -206,12 +126,12 @@ class LayersModel protected () extends Container {
     *   first is the input feature(s) and the second is the output target(s).
     * @param args A configuration object for the dataset-based evaluation.
     * @returns Loss and metric values as an Array of `Scalar` objects.
-    */
-  /**
+    *
     * @doc {heading: 'Models', subheading: 'Classes'}
     */
   def evaluateDataset(dataset: Dataset[js.Object]): js.Promise[Scalar | js.Array[Scalar]] = js.native
   def evaluateDataset(dataset: Dataset[js.Object], args: ModelEvaluateDatasetArgs): js.Promise[Scalar | js.Array[Scalar]] = js.native
+  
   def execute(inputs: js.Array[Tensor[Rank]], outputs: String): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   def execute(inputs: js.Array[Tensor[Rank]], outputs: js.Array[String]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   /**
@@ -242,6 +162,11 @@ class LayersModel protected () extends Container {
   def execute(inputs: Tensor[Rank], outputs: js.Array[String]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   def execute(inputs: NamedTensorMap, outputs: String): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   def execute(inputs: NamedTensorMap, outputs: js.Array[String]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  
+  var feedLossFns: js.Any = js.native
+  
+  var feedOutputShapes: js.Any = js.native
+  
   def fit(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = js.native
   def fit(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
   def fit(x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = js.native
@@ -289,12 +214,12 @@ class LayersModel protected () extends Container {
     *
     * @exception ValueError In case of mismatch between the provided input
     * data and what the model expects.
-    */
-  /**
+    *
     * @doc {heading: 'Models', subheading: 'Classes'}
     */
   def fit(x: Tensor[Rank], y: Tensor[Rank]): js.Promise[History] = js.native
   def fit(x: Tensor[Rank], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = js.native
+  
   /**
     * Trains the model using a dataset object.
     *
@@ -313,12 +238,17 @@ class LayersModel protected () extends Container {
     *
     * @return A `History` instance. Its `history` attribute contains all
     *   information collected during training.
-    */
-  /**
+    *
     * @doc {heading: 'Models', subheading: 'Classes'}
     */
   def fitDataset[T](dataset: Dataset[T], args: ModelFitDatasetArgs[T]): js.Promise[History] = js.native
+  
   /* protected */ def getDedupedMetricsNames(): js.Array[String] = js.native
+  
+  var getLossIdentifiers: js.Any = js.native
+  
+  var getMetricIdentifiers: js.Any = js.native
+  
   /**
     * Extract weight values of the model.
     *
@@ -330,7 +260,9 @@ class LayersModel protected () extends Container {
     */
   /* protected */ def getNamedWeights(): js.Array[NamedTensor] = js.native
   /* protected */ def getNamedWeights(config: SaveConfig): js.Array[NamedTensor] = js.native
+  
   /* protected */ def getTrainingConfig(): TrainingConfig = js.native
+  
   /**
     * Get user-defined metadata.
     *
@@ -343,7 +275,26 @@ class LayersModel protected () extends Container {
     * two routes, this function will return `undefined`.
     */
   def getUserDefinedMetadata(): js.Object = js.native
+  
+  var history: History = js.native
+  
+  var isOptimizerOwned: Boolean = js.native
+  
+  var isTraining: Boolean = js.native
+  
   def loadTrainingConfig(trainingConfig: TrainingConfig): Unit = js.native
+  
+  var loss: String | (js.Array[LossOrMetricFn | String]) | (StringDictionary[LossOrMetricFn | String]) | LossOrMetricFn = js.native
+  
+  var lossFunctions: js.Array[LossOrMetricFn] = js.native
+  
+  /**
+    * Create a function which, when invoked with an array of `tf.Tensor`s as a
+    * batch of inputs, returns the prespecified loss and metrics of the model
+    * under the batch of input data.
+    */
+  var makeTestFunction: js.Any = js.native
+  
   /**
     * Creates a function that performs the following actions:
     *
@@ -355,6 +306,17 @@ class LayersModel protected () extends Container {
     * 5. returns the values of the losses and metrics.
     */
   /* protected */ def makeTrainFunction(): js.Function1[/* data */ js.Array[Tensor[Rank]], js.Array[Scalar]] = js.native
+  
+  var metrics: String | LossOrMetricFn | (js.Array[String | LossOrMetricFn]) | (StringDictionary[String | LossOrMetricFn]) = js.native
+  
+  var metricsNames: js.Array[String] = js.native
+  
+  var metricsTensors: js.Array[js.Tuple2[LossOrMetricFn, Double]] = js.native
+  
+  var optimizer: Optimizer = js.native
+  
+  var optimizer_ : Optimizer = js.native
+  
   def predict(inputs: NamedTensorMap, config: ModelPredictConfig): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
   def predict(x: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   def predict(x: js.Array[Tensor[Rank]], args: ModelPredictConfig): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
@@ -382,8 +344,7 @@ class LayersModel protected () extends Container {
     * @exception ValueError In case of mismatch between the provided input data
     *   and the model's expectations, or in case a stateful model receives a
     *   number of samples that is not a multiple of the batch size.
-    */
-  /**
+    *
     * @doc {heading: 'Models', subheading: 'Classes'}
     */
   def predict(x: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
@@ -407,6 +368,22 @@ class LayersModel protected () extends Container {
     * be returned for model with multiple outputs.
     */
   def predict(x: Tensor[Rank], args: ModelPredictConfig): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  
+  /**
+    * Helper method to loop over some data in batches.
+    *
+    * Porting Note: Not using the functional approach in the Python equivalent
+    *   due to the imperative backend.
+    * Porting Note: Does not support step mode currently.
+    *
+    * @param ins: input data
+    * @param batchSize: integer batch size.
+    * @param verbose: verbosity model
+    * @returns: Predictions as `tf.Tensor` (if a single output) or an `Array` of
+    *   `tf.Tensor` (if multipe outputs).
+    */
+  var predictLoop: js.Any = js.native
+  
   def predictOnBatch(x: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   /**
     * Returns predictions for a single batch of samples.
@@ -420,9 +397,16 @@ class LayersModel protected () extends Container {
     * @param x: Input samples, as a Tensor (for models with exactly one
     *   input) or an array of Tensors (for models with more than one input).
     * @return Tensor(s) of predictions
+    *
+    * @doc {heading: 'Models', subheading: 'Classes'}
     */
-  /** @doc {heading: 'Models', subheading: 'Classes'} */
   def predictOnBatch(x: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  
+  /**
+    * Retrieve the model's internal symbolic tensors from symbolic-tensor names.
+    */
+  var retrieveSymbolicTensors: js.Any = js.native
+  
   def save(handlerOrURL: String): js.Promise[SaveResult] = js.native
   def save(handlerOrURL: String, config: SaveConfig): js.Promise[SaveResult] = js.native
   /**
@@ -503,12 +487,12 @@ class LayersModel protected () extends Container {
     * @returns A `Promise` of `SaveResult`, which summarizes the result of
     * the saving, such as byte sizes of the saved artifacts for the model's
     *   topology and weight values.
-    */
-  /**
+    *
     * @doc {heading: 'Models', subheading: 'Classes', ignoreCI: true}
     */
   def save(handlerOrURL: IOHandler): js.Promise[SaveResult] = js.native
   def save(handlerOrURL: IOHandler, config: SaveConfig): js.Promise[SaveResult] = js.native
+  
   /**
     * Set user-defined metadata.
     *
@@ -518,6 +502,7 @@ class LayersModel protected () extends Container {
     * @param setUserDefinedMetadata
     */
   def setUserDefinedMetadata(userDefinedMetadata: js.Object): Unit = js.native
+  
   /* protected */ def standardizeUserData(
     x: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]],
     y: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]],
@@ -528,6 +513,7 @@ class LayersModel protected () extends Container {
   ): js.Promise[
     js.Tuple3[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]]
   ] = js.native
+  
   /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
   /* protected */ def standardizeUserDataXY(
     x: js.Array[Tensor[Rank]],
@@ -619,6 +605,41 @@ class LayersModel protected () extends Container {
   /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: Tensor[Rank], checkBatchAxis: js.UndefOr[scala.Nothing], batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
   /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: Tensor[Rank], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
   /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: Tensor[Rank], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  
+  /**
+    * Setter used for force stopping of LayersModel.fit() (i.e., training).
+    *
+    * Example:
+    *
+    * ```js
+    * const input = tf.input({shape: [10]});
+    * const output = tf.layers.dense({units: 1}).apply(input);
+    * const model = tf.model({inputs: [input], outputs: [output]});
+    * model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
+    * const xs = tf.ones([8, 10]);
+    * const ys = tf.zeros([8, 1]);
+    *
+    * const history = await model.fit(xs, ys, {
+    *   epochs: 10,
+    *   callbacks: {
+    *     onEpochEnd: async (epoch, logs) => {
+    *       if (epoch === 2) {
+    *         model.stopTraining = true;
+    *       }
+    *     }
+    *   }
+    * });
+    *
+    * // There should be only 3 values in the loss array, instead of 10
+    * values,
+    * // due to the stopping after 3 epochs.
+    * console.log(history.history.loss);
+    * ```
+    */
+  var stopTraining: Boolean = js.native
+  
+  var stopTraining_ : Boolean = js.native
+  
   /**
     * Print a text summary of the model's layers.
     *
@@ -651,8 +672,9 @@ class LayersModel protected () extends Container {
     * @param printFn Custom print function. Can be used to replace the default
     *   `console.log`. For example, you can use `x => {}` to mute the printed
     *   messages in the console.
+    *
+    * @doc {heading: 'Models', subheading: 'Classes'}
     */
-  /** @doc {heading: 'Models', subheading: 'Classes'} */
   def summary(): Unit = js.native
   def summary(
     lineLength: js.UndefOr[scala.Nothing],
@@ -677,6 +699,22 @@ class LayersModel protected () extends Container {
     positions: js.Array[Double],
     printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
   ): Unit = js.native
+  
+  var testFunction: js.Any = js.native
+  
+  /**
+    * Loop over some test data in batches.
+    * @param f A Function returning a list of tensors.
+    * @param ins Array of tensors to be fed to `f`.
+    * @param batchSize Integer batch size or `null` / `undefined`.
+    * @param verbose verbosity mode.
+    * @param steps Total number of steps (batches of samples) before
+    * declaring test finished. Ignored with the default value of `null` /
+    * `undefined`.
+    * @returns Array of Scalars.
+    */
+  var testLoop: js.Any = js.native
+  
   def trainOnBatch(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
   def trainOnBatch(x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
   def trainOnBatch(x: js.Array[Tensor[Rank]], y: Tensor[Rank]): js.Promise[Double | js.Array[Double]] = js.native
@@ -705,18 +743,18 @@ class LayersModel protected () extends Container {
     *   `tf.Tensor`s. It should be consistent with `x`.
     * @returns Training loss or losses (in case the model has
     *   multiple outputs), along with metrics (if any), as numbers.
-    */
-  /**
+    *
     * @doc {heading: 'Models', subheading: 'Classes'}
     */
   def trainOnBatch(x: Tensor[Rank], y: Tensor[Rank]): js.Promise[Double | js.Array[Double]] = js.native
+  
+  var userDefinedMetadata: js.Any = js.native
 }
-
 /* static members */
 @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "LayersModel")
 @js.native
 object LayersModel extends js.Object {
+  
   /** @nocollapse */
   var className: String = js.native
 }
-

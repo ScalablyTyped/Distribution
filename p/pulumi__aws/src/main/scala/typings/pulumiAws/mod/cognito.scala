@@ -24,11 +24,15 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "cognito")
 @js.native
 object cognito extends js.Object {
+  
+  def getUserPools(args: GetUserPoolsArgs): js.Promise[GetUserPoolsResult] = js.native
+  def getUserPools(args: GetUserPoolsArgs, opts: InvokeOptions): js.Promise[GetUserPoolsResult] = js.native
+  
   @js.native
   class IdentityPool protected ()
     extends typings.pulumiAws.cognitoMod.IdentityPool {
@@ -41,6 +45,30 @@ object cognito extends js.Object {
       */
     def this(name: String, args: IdentityPoolArgs) = this()
     def this(name: String, args: IdentityPoolArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object IdentityPool extends js.Object {
+    
+    /**
+      * Get an existing IdentityPool resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.identityPoolMod.IdentityPool = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.identityPoolMod.IdentityPool = js.native
+    def get(name: String, id: Input[ID], state: IdentityPoolState): typings.pulumiAws.identityPoolMod.IdentityPool = js.native
+    def get(name: String, id: Input[ID], state: IdentityPoolState, opts: CustomResourceOptions): typings.pulumiAws.identityPoolMod.IdentityPool = js.native
+    
+    /**
+      * Returns true if the given object is an instance of IdentityPool.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPool.IdentityPool */ Boolean = js.native
   }
   
   @js.native
@@ -56,6 +84,30 @@ object cognito extends js.Object {
     def this(name: String, args: IdentityPoolRoleAttachmentArgs) = this()
     def this(name: String, args: IdentityPoolRoleAttachmentArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object IdentityPoolRoleAttachment extends js.Object {
+    
+    /**
+      * Get an existing IdentityPoolRoleAttachment resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
+    def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
+    def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
+    
+    /**
+      * Returns true if the given object is an instance of IdentityPoolRoleAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPoolRoleAttachment.IdentityPoolRoleAttachment */ Boolean = js.native
+  }
   
   @js.native
   class IdentityProvider protected ()
@@ -69,6 +121,30 @@ object cognito extends js.Object {
       */
     def this(name: String, args: IdentityProviderArgs) = this()
     def this(name: String, args: IdentityProviderArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object IdentityProvider extends js.Object {
+    
+    /**
+      * Get an existing IdentityProvider resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.identityProviderMod.IdentityProvider = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.identityProviderMod.IdentityProvider = js.native
+    def get(name: String, id: Input[ID], state: IdentityProviderState): typings.pulumiAws.identityProviderMod.IdentityProvider = js.native
+    def get(name: String, id: Input[ID], state: IdentityProviderState, opts: CustomResourceOptions): typings.pulumiAws.identityProviderMod.IdentityProvider = js.native
+    
+    /**
+      * Returns true if the given object is an instance of IdentityProvider.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityProvider.IdentityProvider */ Boolean = js.native
   }
   
   @js.native
@@ -84,6 +160,30 @@ object cognito extends js.Object {
     def this(name: String, args: ResourceServerArgs) = this()
     def this(name: String, args: ResourceServerArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object ResourceServer extends js.Object {
+    
+    /**
+      * Get an existing ResourceServer resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.resourceServerMod.ResourceServer = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resourceServerMod.ResourceServer = js.native
+    def get(name: String, id: Input[ID], state: ResourceServerState): typings.pulumiAws.resourceServerMod.ResourceServer = js.native
+    def get(name: String, id: Input[ID], state: ResourceServerState, opts: CustomResourceOptions): typings.pulumiAws.resourceServerMod.ResourceServer = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ResourceServer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/resourceServer.ResourceServer */ Boolean = js.native
+  }
   
   @js.native
   class UserGroup protected ()
@@ -97,6 +197,30 @@ object cognito extends js.Object {
       */
     def this(name: String, args: UserGroupArgs) = this()
     def this(name: String, args: UserGroupArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object UserGroup extends js.Object {
+    
+    /**
+      * Get an existing UserGroup resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.userGroupMod.UserGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.userGroupMod.UserGroup = js.native
+    def get(name: String, id: Input[ID], state: UserGroupState): typings.pulumiAws.userGroupMod.UserGroup = js.native
+    def get(name: String, id: Input[ID], state: UserGroupState, opts: CustomResourceOptions): typings.pulumiAws.userGroupMod.UserGroup = js.native
+    
+    /**
+      * Returns true if the given object is an instance of UserGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userGroup.UserGroup */ Boolean = js.native
   }
   
   @js.native
@@ -114,6 +238,30 @@ object cognito extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: UserPoolArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object UserPool extends js.Object {
+    
+    /**
+      * Get an existing UserPool resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.userPoolMod.UserPool = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.userPoolMod.UserPool = js.native
+    def get(name: String, id: Input[ID], state: UserPoolState): typings.pulumiAws.userPoolMod.UserPool = js.native
+    def get(name: String, id: Input[ID], state: UserPoolState, opts: CustomResourceOptions): typings.pulumiAws.userPoolMod.UserPool = js.native
+    
+    /**
+      * Returns true if the given object is an instance of UserPool.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPool.UserPool */ Boolean = js.native
+  }
   
   @js.native
   class UserPoolClient protected ()
@@ -127,6 +275,30 @@ object cognito extends js.Object {
       */
     def this(name: String, args: UserPoolClientArgs) = this()
     def this(name: String, args: UserPoolClientArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object UserPoolClient extends js.Object {
+    
+    /**
+      * Get an existing UserPoolClient resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.userPoolClientMod.UserPoolClient = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.userPoolClientMod.UserPoolClient = js.native
+    def get(name: String, id: Input[ID], state: UserPoolClientState): typings.pulumiAws.userPoolClientMod.UserPoolClient = js.native
+    def get(name: String, id: Input[ID], state: UserPoolClientState, opts: CustomResourceOptions): typings.pulumiAws.userPoolClientMod.UserPoolClient = js.native
+    
+    /**
+      * Returns true if the given object is an instance of UserPoolClient.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolClient.UserPoolClient */ Boolean = js.native
   }
   
   @js.native
@@ -142,173 +314,10 @@ object cognito extends js.Object {
     def this(name: String, args: UserPoolDomainArgs) = this()
     def this(name: String, args: UserPoolDomainArgs, opts: CustomResourceOptions) = this()
   }
-  
-  def getUserPools(args: GetUserPoolsArgs): js.Promise[GetUserPoolsResult] = js.native
-  def getUserPools(args: GetUserPoolsArgs, opts: InvokeOptions): js.Promise[GetUserPoolsResult] = js.native
-  /* static members */
-  @js.native
-  object IdentityPool extends js.Object {
-    /**
-      * Get an existing IdentityPool resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.identityPoolMod.IdentityPool = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.identityPoolMod.IdentityPool = js.native
-    def get(name: String, id: Input[ID], state: IdentityPoolState): typings.pulumiAws.identityPoolMod.IdentityPool = js.native
-    def get(name: String, id: Input[ID], state: IdentityPoolState, opts: CustomResourceOptions): typings.pulumiAws.identityPoolMod.IdentityPool = js.native
-    /**
-      * Returns true if the given object is an instance of IdentityPool.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPool.IdentityPool */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object IdentityPoolRoleAttachment extends js.Object {
-    /**
-      * Get an existing IdentityPoolRoleAttachment resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
-    def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
-    def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.identityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
-    /**
-      * Returns true if the given object is an instance of IdentityPoolRoleAttachment.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPoolRoleAttachment.IdentityPoolRoleAttachment */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object IdentityProvider extends js.Object {
-    /**
-      * Get an existing IdentityProvider resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.identityProviderMod.IdentityProvider = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.identityProviderMod.IdentityProvider = js.native
-    def get(name: String, id: Input[ID], state: IdentityProviderState): typings.pulumiAws.identityProviderMod.IdentityProvider = js.native
-    def get(name: String, id: Input[ID], state: IdentityProviderState, opts: CustomResourceOptions): typings.pulumiAws.identityProviderMod.IdentityProvider = js.native
-    /**
-      * Returns true if the given object is an instance of IdentityProvider.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityProvider.IdentityProvider */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object ResourceServer extends js.Object {
-    /**
-      * Get an existing ResourceServer resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.resourceServerMod.ResourceServer = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resourceServerMod.ResourceServer = js.native
-    def get(name: String, id: Input[ID], state: ResourceServerState): typings.pulumiAws.resourceServerMod.ResourceServer = js.native
-    def get(name: String, id: Input[ID], state: ResourceServerState, opts: CustomResourceOptions): typings.pulumiAws.resourceServerMod.ResourceServer = js.native
-    /**
-      * Returns true if the given object is an instance of ResourceServer.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/resourceServer.ResourceServer */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object UserGroup extends js.Object {
-    /**
-      * Get an existing UserGroup resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.userGroupMod.UserGroup = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.userGroupMod.UserGroup = js.native
-    def get(name: String, id: Input[ID], state: UserGroupState): typings.pulumiAws.userGroupMod.UserGroup = js.native
-    def get(name: String, id: Input[ID], state: UserGroupState, opts: CustomResourceOptions): typings.pulumiAws.userGroupMod.UserGroup = js.native
-    /**
-      * Returns true if the given object is an instance of UserGroup.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userGroup.UserGroup */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object UserPool extends js.Object {
-    /**
-      * Get an existing UserPool resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.userPoolMod.UserPool = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.userPoolMod.UserPool = js.native
-    def get(name: String, id: Input[ID], state: UserPoolState): typings.pulumiAws.userPoolMod.UserPool = js.native
-    def get(name: String, id: Input[ID], state: UserPoolState, opts: CustomResourceOptions): typings.pulumiAws.userPoolMod.UserPool = js.native
-    /**
-      * Returns true if the given object is an instance of UserPool.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPool.UserPool */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object UserPoolClient extends js.Object {
-    /**
-      * Get an existing UserPoolClient resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.userPoolClientMod.UserPoolClient = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.userPoolClientMod.UserPoolClient = js.native
-    def get(name: String, id: Input[ID], state: UserPoolClientState): typings.pulumiAws.userPoolClientMod.UserPoolClient = js.native
-    def get(name: String, id: Input[ID], state: UserPoolClientState, opts: CustomResourceOptions): typings.pulumiAws.userPoolClientMod.UserPoolClient = js.native
-    /**
-      * Returns true if the given object is an instance of UserPoolClient.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolClient.UserPoolClient */ Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object UserPoolDomain extends js.Object {
+    
     /**
       * Get an existing UserPoolDomain resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -322,12 +331,11 @@ object cognito extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.userPoolDomainMod.UserPoolDomain = js.native
     def get(name: String, id: Input[ID], state: UserPoolDomainState): typings.pulumiAws.userPoolDomainMod.UserPoolDomain = js.native
     def get(name: String, id: Input[ID], state: UserPoolDomainState, opts: CustomResourceOptions): typings.pulumiAws.userPoolDomainMod.UserPoolDomain = js.native
+    
     /**
       * Returns true if the given object is an instance of UserPoolDomain.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolDomain.UserPoolDomain */ Boolean = js.native
   }
-  
 }
-

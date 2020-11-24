@@ -2,11 +2,12 @@ package typings.jsrsasign.global.jsrsasign
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsrsasign.stob64u")
 @js.native
 object stob64u extends js.Object {
+  
   /**
     * convert a ASCII string to a Base64URL encoded string.
     * NOTE: This can't be used for non ASCII characters.
@@ -15,4 +16,3 @@ object stob64u extends js.Object {
     */
   def apply(s: String): String = js.native
 }
-

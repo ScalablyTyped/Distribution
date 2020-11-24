@@ -2,7 +2,7 @@ package typings.cspHtmlWebpackPlugin.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("csp-html-webpack-plugin", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ class ^ () extends CspHtmlWebpackPlugin {
   def this(policy: js.UndefOr[scala.Nothing], additionalOpts: AdditionalOptions) = this()
   def this(policy: Policy, additionalOpts: AdditionalOptions) = this()
 }
-

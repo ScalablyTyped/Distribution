@@ -2,7 +2,7 @@ package typings.ranjs.mod.dist
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.PolyaAeppli")
 @js.native
@@ -12,4 +12,3 @@ class PolyaAeppli ()
   def this(lambda: js.UndefOr[scala.Nothing], theta: Double) = this()
   def this(lambda: Double, theta: Double) = this()
 }
-

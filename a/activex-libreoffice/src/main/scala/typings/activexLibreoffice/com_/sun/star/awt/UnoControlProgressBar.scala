@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a progress bar control. */
 @js.native
@@ -18,8 +18,8 @@ trait UnoControlProgressBar
      with XView
      with XAccessible
      with XProgressBar
-
 object UnoControlProgressBar {
+  
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
@@ -80,4 +80,3 @@ object UnoControlProgressBar {
     __obj.asInstanceOf[UnoControlProgressBar]
   }
 }
-

@@ -4,10 +4,11 @@ import typings.jsonSchemaMergeAllof.anon.DefaultResolver
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Options_[Schema /* <: JSONSchema */] extends js.Object {
+  
   /**
     * **ignoreAdditionalProperties** default **false**
     *
@@ -21,6 +22,7 @@ trait Options_[Schema /* <: JSONSchema */] extends js.Object {
     * additionalProperties set to false.
     */
   var ignoreAdditionalProperties: js.UndefOr[Boolean] = js.native
+  
   /**
     * **resolvers** Object
     *
@@ -51,33 +53,39 @@ trait Options_[Schema /* <: JSONSchema */] extends js.Object {
     */
   var resolvers: js.UndefOr[Partial[Resolvers[Schema]] with DefaultResolver[Schema]] = js.native
 }
-
 object Options_ {
+  
   @scala.inline
-  def apply[/* <: typings.jsonSchemaMergeAllof.mod.JSONSchema */ Schema](): Options_[Schema] = {
+  def apply[Schema /* <: JSONSchema */](): Options_[Schema] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options_[Schema]]
   }
+  
   @scala.inline
-  implicit class Options_Ops[Self <: Options_[_], /* <: typings.jsonSchemaMergeAllof.mod.JSONSchema */ Schema] (val x: Self with Options_[Schema]) extends AnyVal {
+  implicit class Options_Ops[Self <: Options_[_], Schema /* <: JSONSchema */] (val x: Self with Options_[Schema]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setIgnoreAdditionalProperties(value: Boolean): Self = this.set("ignoreAdditionalProperties", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIgnoreAdditionalProperties: Self = this.set("ignoreAdditionalProperties", js.undefined)
+    
     @scala.inline
     def setResolvers(value: Partial[Resolvers[Schema]] with DefaultResolver[Schema]): Self = this.set("resolvers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResolvers: Self = this.set("resolvers", js.undefined)
   }
-  
 }
-

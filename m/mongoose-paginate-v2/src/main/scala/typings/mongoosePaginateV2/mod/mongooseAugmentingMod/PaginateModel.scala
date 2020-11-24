@@ -5,11 +5,12 @@ import typings.mongoose.mod.Model_
 import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PaginateModel[T /* <: Document */]
   extends Model_[T, js.Object] {
+  
   def paginate(): js.Promise[PaginateResult[T]] = js.native
   def paginate(
     query: js.UndefOr[scala.Nothing],
@@ -35,4 +36,3 @@ trait PaginateModel[T /* <: Document */]
     callback: js.Function2[/* err */ js.Any, /* result */ PaginateResult[T], Unit]
   ): js.Promise[PaginateResult[T]] = js.native
 }
-

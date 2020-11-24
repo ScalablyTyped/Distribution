@@ -3,77 +3,93 @@ package typings.ariClient.mod
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BridgeAttendedTransfer extends Event {
+  
   /**
     * Application that has been transferred into.
     */
   var destination_application: String = js.native
+  
   /**
     * Bridge that survived the merge result.
     */
   var destination_bridge: String = js.native
+  
   /**
     * First leg of a link transfer result.
     */
   var destination_link_first_leg: Channel = js.native
+  
   /**
     * Second leg of a link transfer result.
     */
   var destination_link_second_leg: Channel = js.native
+  
   /**
     * Bridge that survived the threeway result.
     */
   var destination_threeway_bridge: Bridge = js.native
+  
   /**
     * Transferer channel that survived the threeway result.
     */
   var destination_threeway_channel: Channel = js.native
+  
   /**
     * How the transfer was accomplished.
     */
   var destination_type: String = js.native
+  
   /**
     * Whether the transfer was externally initiated or not.
     */
   var is_external: Boolean = js.native
+  
   /**
     * The channel that is replacing transferer_first_leg in the swap.
     */
   var replace_channel: js.UndefOr[Channel] = js.native
+  
   /**
     * The result of the transfer attempt.
     */
   var result: String = js.native
+  
   /**
     * The channel that is being transferred to.
     */
   var transfer_target: js.UndefOr[Channel] = js.native
+  
   /**
     * The channel that is being transferred.
     */
   var transferee: js.UndefOr[Channel] = js.native
+  
   /**
     * First leg of the transferer.
     */
   var transferer_first_leg: Channel = js.native
+  
   /**
     * Bridge the transferer first leg is in.
     */
   var transferer_first_leg_bridge: Bridge = js.native
+  
   /**
     * Second leg of the transferer.
     */
   var transferer_second_leg: Channel = js.native
+  
   /**
     * Bridge the transferer second leg is in.
     */
   var transferer_second_leg_bridge: Bridge = js.native
 }
-
 object BridgeAttendedTransfer {
+  
   @scala.inline
   def apply(
     application: String,
@@ -97,56 +113,77 @@ object BridgeAttendedTransfer {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BridgeAttendedTransfer]
   }
+  
   @scala.inline
   implicit class BridgeAttendedTransferOps[Self <: BridgeAttendedTransfer] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDestination_application(value: String): Self = this.set("destination_application", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDestination_bridge(value: String): Self = this.set("destination_bridge", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDestination_link_first_leg(value: Channel): Self = this.set("destination_link_first_leg", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDestination_link_second_leg(value: Channel): Self = this.set("destination_link_second_leg", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDestination_threeway_bridge(value: Bridge): Self = this.set("destination_threeway_bridge", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDestination_threeway_channel(value: Channel): Self = this.set("destination_threeway_channel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDestination_type(value: String): Self = this.set("destination_type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIs_external(value: Boolean): Self = this.set("is_external", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setResult(value: String): Self = this.set("result", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTransferer_first_leg(value: Channel): Self = this.set("transferer_first_leg", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTransferer_first_leg_bridge(value: Bridge): Self = this.set("transferer_first_leg_bridge", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTransferer_second_leg(value: Channel): Self = this.set("transferer_second_leg", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTransferer_second_leg_bridge(value: Bridge): Self = this.set("transferer_second_leg_bridge", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setReplace_channel(value: Channel): Self = this.set("replace_channel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReplace_channel: Self = this.set("replace_channel", js.undefined)
+    
     @scala.inline
     def setTransfer_target(value: Channel): Self = this.set("transfer_target", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTransfer_target: Self = this.set("transfer_target", js.undefined)
+    
     @scala.inline
     def setTransferee(value: Channel): Self = this.set("transferee", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTransferee: Self = this.set("transferee", js.undefined)
   }
-  
 }
-

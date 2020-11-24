@@ -2,11 +2,12 @@ package typings.apicache.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("apicache", "middleware")
 @js.native
 object middleware extends js.Object {
+  
   def apply(): js.Any = js.native
   def apply(
     duration: js.UndefOr[scala.Nothing],
@@ -24,4 +25,3 @@ object middleware extends js.Object {
   def apply(duration: Double, toggleMiddleware: js.Any): js.Any = js.native
   def apply(duration: Double, toggleMiddleware: js.Any, localOptions: Options_): js.Any = js.native
 }
-

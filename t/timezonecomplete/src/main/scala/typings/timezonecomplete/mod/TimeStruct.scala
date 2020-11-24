@@ -4,7 +4,7 @@ import typings.std.Date
 import typings.timezonecomplete.basicsMod.TimeComponentOpts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("timezonecomplete", "TimeStruct")
 @js.native
@@ -26,11 +26,11 @@ class TimeStruct protected ()
     */
   def this(unixMillis: Double) = this()
 }
-
 /* static members */
 @JSImport("timezonecomplete", "TimeStruct")
 @js.native
 object TimeStruct extends js.Object {
+  
   /**
     * Returns a TimeStruct from the given year, month, day etc
     *
@@ -58,6 +58,7 @@ object TimeStruct extends js.Object {
     second: js.UndefOr[Double],
     milli: js.UndefOr[Double]
   ): typings.timezonecomplete.basicsMod.TimeStruct = js.native
+  
   /**
     * Create a TimeStruct from a JavaScript date
     *
@@ -66,11 +67,13 @@ object TimeStruct extends js.Object {
     * @throws nothing
     */
   def fromDate(d: Date, df: typings.timezonecomplete.javascriptMod.DateFunctions): typings.timezonecomplete.basicsMod.TimeStruct = js.native
+  
   /**
     * Returns a TimeStruct from an ISO 8601 string WITHOUT time zone
     * @throws timezonecomplete.Argument.S if `s` is not a proper iso string
     */
   def fromString(s: String): typings.timezonecomplete.basicsMod.TimeStruct = js.native
+  
   /**
     * Create a TimeStruct from a number of unix milliseconds
     * (backward compatibility)
@@ -78,4 +81,3 @@ object TimeStruct extends js.Object {
     */
   def fromUnix(unixMillis: Double): typings.timezonecomplete.basicsMod.TimeStruct = js.native
 }
-

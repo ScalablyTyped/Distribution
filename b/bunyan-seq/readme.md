@@ -11,8 +11,8 @@ A Bunyan stream that sends log events to Seq
 | Full name          | bunyan-seq |
 | Keywords           | bunyan, seq |
 | # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 70041 |
+| # dependents       | 1 |
+| # downloads        | 119092 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Retry a failed promise
 | ------------------ | :-------------: |
 | Full name          | retry-as-promised |
 | Keywords           | retry, promise, bluebird |
-| # releases         | 4 |
-| # dependents       | 60 |
-| # downloads        | 17057619 |
+| # releases         | 3 |
+| # dependents       | 73 |
+| # downloads        | 27486824 |
 | # stars            | 3 |
 
 ## Links

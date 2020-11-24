@@ -2,10 +2,11 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IterableDiffer[V] extends js.Object {
+  
   /**
     * Compute a difference between the previous state and the new `object` state.
     *
@@ -16,4 +17,3 @@ trait IterableDiffer[V] extends js.Object {
   def diff(): IterableChanges[V] | Null = js.native
   def diff(`object`: NgIterable[V]): IterableChanges[V] | Null = js.native
 }
-

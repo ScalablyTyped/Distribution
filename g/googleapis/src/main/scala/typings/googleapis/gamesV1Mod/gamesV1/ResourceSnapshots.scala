@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Snapshots")
 @js.native
 class ResourceSnapshots protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * games.snapshots.get
     * @desc Retrieves the metadata for a given snapshot ID.
@@ -42,6 +44,7 @@ class ResourceSnapshots protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSnapshot]
   ): Unit = js.native
+  
   /**
     * games.snapshots.list
     * @desc Retrieves a list of snapshots created by your application for the
@@ -75,4 +78,3 @@ class ResourceSnapshots protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSnapshotListResponse]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.officeJsPreview.global.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -13,9 +13,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.ChartGradientStyle")
 @js.native
 object ChartGradientStyle extends js.Object {
-  /* "ThreePhaseColor" */ val threePhaseColor: typings.officeJsPreview.Excel.ChartGradientStyle.threePhaseColor with String = js.native
-  /* "TwoPhaseColor" */ val twoPhaseColor: typings.officeJsPreview.Excel.ChartGradientStyle.twoPhaseColor with String = js.native
+  
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ChartGradientStyle with String] = js.native
+  
+  /* "ThreePhaseColor" */ val threePhaseColor: typings.officeJsPreview.Excel.ChartGradientStyle.threePhaseColor with String = js.native
+  
+  /* "TwoPhaseColor" */ val twoPhaseColor: typings.officeJsPreview.Excel.ChartGradientStyle.twoPhaseColor with String = js.native
 }
-

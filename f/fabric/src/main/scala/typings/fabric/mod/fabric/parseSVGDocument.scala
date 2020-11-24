@@ -3,11 +3,12 @@ package typings.fabric.mod.fabric
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.parseSVGDocument")
 @js.native
 object parseSVGDocument extends js.Object {
+  
   def apply(
     doc: SVGElement,
     callback: js.Function2[
@@ -26,4 +27,3 @@ object parseSVGDocument extends js.Object {
     reviver: js.Function
   ): Unit = js.native
 }
-

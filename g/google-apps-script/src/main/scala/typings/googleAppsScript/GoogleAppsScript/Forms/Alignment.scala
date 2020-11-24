@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Alignment extends js.Object
-
 /**
   * An enum representing the supported types of image alignment. Alignment types can be accessed from
   * FormApp.Alignment.
@@ -21,6 +20,7 @@ sealed trait Alignment extends js.Object
 @JSGlobal("GoogleAppsScript.Forms.Alignment")
 @js.native
 object Alignment extends js.Object {
+  
   @js.native
   sealed trait CENTER extends Alignment
   
@@ -29,6 +29,4 @@ object Alignment extends js.Object {
   
   @js.native
   sealed trait RIGHT extends Alignment
-  
 }
-

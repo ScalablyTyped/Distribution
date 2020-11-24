@@ -11,14 +11,11 @@ escape postgres queries which do not support stored procedures
 | Full name          | pg-escape |
 | Keywords           | pg, postgres, escape, query |
 | # releases         | 0 |
-| # dependents       | 43 |
-| # downloads        | 337296 |
+| # dependents       | 47 |
+| # downloads        | 749466 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/segmentio/pg-escape#readme)
-- [Bugs](https://github.com/segmentio/pg-escape/issues)
-- [Repository](https://github.com/segmentio/pg-escape)
 - [Npm](https://www.npmjs.com/package/pg-escape)
     
 

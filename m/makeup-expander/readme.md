@@ -10,15 +10,15 @@ Creates the basic interactivity for an element that expands and collapses anothe
 | ------------------ | :-------------: |
 | Full name          | makeup-expander |
 | Keywords           | makeup, ebay, accessibility, a11y |
-| # releases         | 13 |
+| # releases         | 16 |
 | # dependents       | 1 |
-| # downloads        | 4007 |
+| # downloads        | 4513 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/makeup-js/makeup-expander#readme)
-- [Bugs](https://github.com/makeup-js/makeup-expander/issues)
-- [Repository](https://github.com/makeup-js/makeup-expander)
+- [Homepage](https://github.com/makeup/makeup-js#readme)
+- [Bugs](https://github.com/makeup/makeup-js/issues)
+- [Repository](https://github.com/makeup/makeup-js)
 - [Npm](https://www.npmjs.com/package/makeup-expander)
     
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__colors
 
-Typings are for version 4.0.4
+Typings are for version 5.0.0
 
 ## Library description:
 Color palettes calculator of Ant Design
@@ -10,9 +10,9 @@ Color palettes calculator of Ant Design
 | ------------------ | :-------------: |
 | Full name          | @ant-design/colors |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 18 |
-| # downloads        | 5108555 |
+| # releases         | 21 |
+| # dependents       | 44 |
+| # downloads        | 15255925 |
 | # stars            | 0 |
 
 ## Links

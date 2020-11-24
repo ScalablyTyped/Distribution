@@ -12,7 +12,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies filled net diagrams.
@@ -24,8 +24,8 @@ trait FilledNetDiagram
      with ChartAxisXSupplier
      with ChartAxisYSupplier
      with StackableDiagram
-
 object FilledNetDiagram {
+  
   @scala.inline
   def apply(
     AutomaticPosition: Boolean,
@@ -105,4 +105,3 @@ object FilledNetDiagram {
     __obj.asInstanceOf[FilledNetDiagram]
   }
 }
-

@@ -3,7 +3,7 @@ package typings.openlayers.mod.format.filter
 import typings.openlayers.mod.geom.Geometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -33,4 +33,3 @@ class Intersects_ protected () extends Spatial {
   def this(geometryName: String, geometry: Geometry) = this()
   def this(geometryName: String, geometry: Geometry, opt_srsName: String) = this()
 }
-

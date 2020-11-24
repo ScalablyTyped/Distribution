@@ -4,11 +4,12 @@ import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import typings.luminoCollections.linkedlistMod.LinkedList.INode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/collections", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class BPlusTree[T] protected ()
     extends typings.luminoCollections.bplustreeMod.BPlusTree[T] {
@@ -19,16 +20,9 @@ object mod extends js.Object {
       */
     def this(cmp: js.Function2[/* a */ T, /* b */ T, Double]) = this()
   }
-  
-  @js.native
-  /**
-    * Construct a new linked list.
-    */
-  class LinkedList[T] ()
-    extends typings.luminoCollections.linkedlistMod.LinkedList[T]
-  
   @js.native
   object BPlusTree extends js.Object {
+    
     /**
       * Create a new B+ tree populated with the given items.
       *
@@ -45,7 +39,26 @@ object mod extends js.Object {
   }
   
   @js.native
+  /**
+    * Construct a new linked list.
+    */
+  class LinkedList[T] ()
+    extends typings.luminoCollections.linkedlistMod.LinkedList[T]
+  @js.native
   object LinkedList extends js.Object {
+    
+    /**
+      * Create a linked list from an iterable of values.
+      *
+      * @param values - The iterable or array-like object of interest.
+      *
+      * @returns A new linked list initialized with the given values.
+      *
+      * #### Complexity
+      * Linear.
+      */
+    def from[T](values: IterableOrArrayLike[T]): typings.luminoCollections.linkedlistMod.LinkedList[T] = js.native
+    
     /**
       * A forward iterator for nodes in a linked list.
       */
@@ -101,19 +114,5 @@ object mod extends js.Object {
       extends typings.luminoCollections.linkedlistMod.LinkedList.RetroValueIterator[T] {
       def this(node: INode[T]) = this()
     }
-    
-    /**
-      * Create a linked list from an iterable of values.
-      *
-      * @param values - The iterable or array-like object of interest.
-      *
-      * @returns A new linked list initialized with the given values.
-      *
-      * #### Complexity
-      * Linear.
-      */
-    def from[T](values: IterableOrArrayLike[T]): typings.luminoCollections.linkedlistMod.LinkedList[T] = js.native
   }
-  
 }
-

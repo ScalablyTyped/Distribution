@@ -2,11 +2,12 @@ package typings.filingCabinet.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("filing-cabinet", "register")
 @js.native
 object register extends js.Object {
+  
   /**
     * Register a custom lookup resolver for a file extension
     * If a given extension does not have a registered resolver,
@@ -17,4 +18,3 @@ object register extends js.Object {
     */
   def apply(extension: String, resolver: Resolver): Unit = js.native
 }
-

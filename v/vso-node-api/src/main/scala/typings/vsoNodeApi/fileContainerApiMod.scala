@@ -10,11 +10,12 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vso-node-api/FileContainerApi", JSImport.Namespace)
 @js.native
 object fileContainerApiMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.vsoNodeApi.clientApiBasesMod.ClientApiBase because Already inherited
   - typings.vsoNodeApi.fileContainerApiBaseMod.IFileContainerApiBase because Already inherited
@@ -22,6 +23,7 @@ object fileContainerApiMod extends js.Object {
   class FileContainerApi protected () extends FileContainerApiBase {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
+    
     def _createItem(
       customHeaders: IHeaders,
       contentStream: ReadableStream,
@@ -30,6 +32,7 @@ object fileContainerApiMod extends js.Object {
       scope: String,
       onResult: js.Function3[/* err */ js.Any, /* statusCode */ Double, /* Container */ FileContainerItem, Unit]
     ): Unit = js.native
+    
     def createItem(
       contentStream: ReadableStream,
       uncompressedLength: Double,
@@ -38,6 +41,7 @@ object fileContainerApiMod extends js.Object {
       scope: String,
       options: js.Any
     ): js.Promise[FileContainerItem] = js.native
+    
     /**
       * @param {number} containerId
       * @param {string} scope
@@ -61,6 +65,7 @@ object fileContainerApiMod extends js.Object {
   
   @js.native
   trait IFileContainerApi extends IFileContainerApiBase {
+    
     def createItem(
       contentStream: ReadableStream,
       uncompressedLength: Double,
@@ -69,6 +74,7 @@ object fileContainerApiMod extends js.Object {
       scope: String,
       options: js.Any
     ): js.Promise[FileContainerItem] = js.native
+    
     def getItem(containerId: Double): js.Promise[IRestResponse[ReadableStream]] = js.native
     def getItem(
       containerId: Double,
@@ -83,6 +89,4 @@ object fileContainerApiMod extends js.Object {
     def getItem(containerId: Double, scope: String, itemPath: String): js.Promise[IRestResponse[ReadableStream]] = js.native
     def getItem(containerId: Double, scope: String, itemPath: String, downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
   }
-  
 }
-

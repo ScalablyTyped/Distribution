@@ -6,12 +6,14 @@ import typings.stellarBase.stellarBaseStrings.hex
 import typings.stellarBase.stellarBaseStrings.raw
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LedgerKeyAccount extends js.Object {
+  
   def accountId(): AccountId = js.native
   def accountId(value: AccountId): AccountId = js.native
+  
   def toXDR(): Buffer = js.native
   @JSName("toXDR")
   def toXDR_base64(format: base64): String = js.native
@@ -20,4 +22,3 @@ trait LedgerKeyAccount extends js.Object {
   @JSName("toXDR")
   def toXDR_raw(format: raw): Buffer = js.native
 }
-

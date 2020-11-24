@@ -2,17 +2,17 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartType extends js.Object
-
 /**
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartType")
 @js.native
 object ChartType extends js.Object {
+  
   @js.native
   sealed trait _3DArea extends ChartType
   
@@ -258,6 +258,4 @@ object ChartType extends js.Object {
   
   @js.native
   sealed trait xyscatterSmoothNoMarkers extends ChartType
-  
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for internal-ip
 
-Typings are for version 6.0.0
+Typings are for version 6.2.0
 
 ## Library description:
 Get your internal IP address
@@ -10,9 +10,9 @@ Get your internal IP address
 | ------------------ | :-------------: |
 | Full name          | internal-ip |
 | Keywords           | ip, ipv6, ipv4, address, internal, local, machine, system, net, gateway |
-| # releases         | 6 |
-| # dependents       | 195 |
-| # downloads        | 222907532 |
+| # releases         | 8 |
+| # dependents       | 240 |
+| # downloads        | 285116250 |
 | # stars            | 10 |
 
 ## Links

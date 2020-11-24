@@ -5,11 +5,12 @@ import typings.std.Parameters
 import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Parse.Cloud.run")
 @js.native
 object run_0 extends js.Object {
+  
   def apply[T /* <: js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
@@ -30,4 +31,3 @@ object run_0 extends js.Object {
     options: RunOptions
   ): js.Promise[ReturnType[T]] = js.native
 }
-

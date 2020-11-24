@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ast-types" : "0.13.2"
+      "ast-types" : "0.14.2"
     }
   ],
   "test-dependencies" : [
     {
-      "ast-types" : "0.13.2"
+      "ast-types" : "0.14.2"
     }
   ],
   "compile-devDependencies" : [

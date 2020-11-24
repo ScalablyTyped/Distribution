@@ -10,9 +10,9 @@ File system persister for @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/adapter-puppeteer |
 | Keywords           | polly, pollyjs, record, replay, fs, file |
-| # releases         | 25 |
-| # dependents       | 0 |
-| # downloads        | 81675 |
+| # releases         | 30 |
+| # dependents       | 1 |
+| # downloads        | 205843 |
 | # stars            | 0 |
 
 ## Links

@@ -2,11 +2,12 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("pc.calculateTangents")
 @js.native
 object calculateTangents extends js.Object {
+  
   /**
     * Generates tangent information from the specified positions,
     * normals, texture coordinates and triangle indices. See {@link pc.createMesh}.
@@ -26,4 +27,3 @@ object calculateTangents extends js.Object {
     indices: js.Array[Double]
   ): js.Array[Double] = js.native
 }
-

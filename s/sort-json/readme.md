@@ -12,7 +12,7 @@ Takes a json-file and return a copy of the same file, but sorted
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 19 |
-| # downloads        | 3339872 |
+| # downloads        | 3401730 |
 | # stars            | 3 |
 
 ## Links

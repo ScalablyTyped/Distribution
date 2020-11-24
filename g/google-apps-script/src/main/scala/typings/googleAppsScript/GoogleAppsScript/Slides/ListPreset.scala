@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Slides
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ListPreset extends js.Object
-
 /**
   * Preset patterns of glyphs for lists in text.
   *
@@ -51,6 +50,7 @@ sealed trait ListPreset extends js.Object
 @JSGlobal("GoogleAppsScript.Slides.ListPreset")
 @js.native
 object ListPreset extends js.Object {
+  
   @js.native
   sealed trait ARROW3D_CIRCLE_SQUARE extends ListPreset
   
@@ -95,6 +95,4 @@ object ListPreset extends js.Object {
   
   @js.native
   sealed trait ZERODIGIT_ALPHA_ROMAN extends ListPreset
-  
 }
-

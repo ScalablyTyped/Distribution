@@ -2,7 +2,7 @@ package typings.lunr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains and collects metadata about a matching document.
@@ -18,10 +18,7 @@ class MatchData protected () extends js.Object {
     * @param metadata - The metadata recorded about this term in this field
     */
   def this(term: String, field: String, metadata: js.Object) = this()
-  /**
-    * A cloned collection of metadata associated with this document.
-    */
-  var metadata: js.Object = js.native
+  
   /**
     * An instance of lunr.MatchData will be created for every term that matches a
     * document. However only one instance is required in a lunr.Index~Result. This
@@ -32,5 +29,9 @@ class MatchData protected () extends js.Object {
     * @see {@link lunr.Index~Result}
     */
   def combine(otherMatchData: MatchData): Unit = js.native
+  
+  /**
+    * A cloned collection of metadata associated with this document.
+    */
+  var metadata: js.Object = js.native
 }
-

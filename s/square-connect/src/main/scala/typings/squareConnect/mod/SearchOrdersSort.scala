@@ -5,11 +5,12 @@ import typings.squareConnect.squareConnectStrings.CREATED_AT
 import typings.squareConnect.squareConnectStrings.UPDATED_AT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "SearchOrdersSort")
 @js.native
 class SearchOrdersSort () extends js.Object {
+  
   /**
     * The field to sort by.
     * @note When using a `DateTimeFilter`, `sort_field` must match the timestamp field that the DateTimeFilter uses to filter.
@@ -19,10 +20,10 @@ class SearchOrdersSort () extends js.Object {
     * See [SearchOrdersSortField](#type-searchorderssortfield) for possible values.
     */
   var sort_field: CREATED_AT | UPDATED_AT | CLOSED_AT = js.native
+  
   /**
     * The chronological order in which results are returned. Defaults to `DESC`.
     * See [SortOrder](#type-sortorder) for possible values.
     */
   var sort_order: js.UndefOr[SortOrderType] = js.native
 }
-

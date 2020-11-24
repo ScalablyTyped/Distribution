@@ -4,9 +4,136 @@ import typings.sharp.mod.Blend
 import typings.sharp.mod.TileLayout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sharpStrings {
+  
+  @scala.inline
+  def add: add = "add".asInstanceOf[add]
+  
+  @scala.inline
+  def and: and = "and".asInstanceOf[and]
+  
+  @scala.inline
+  def atop: atop = "atop".asInstanceOf[atop]
+  
+  @scala.inline
+  def clear: clear = "clear".asInstanceOf[clear]
+  
+  @scala.inline
+  def `colour-burn`: `colour-burn` = "colour-burn".asInstanceOf[`colour-burn`]
+  
+  @scala.inline
+  def `colour-dodge`: `colour-dodge` = "colour-dodge".asInstanceOf[`colour-dodge`]
+  
+  @scala.inline
+  def contain: contain = "contain".asInstanceOf[contain]
+  
+  @scala.inline
+  def cover: cover = "cover".asInstanceOf[cover]
+  
+  @scala.inline
+  def cubic: cubic = "cubic".asInstanceOf[cubic]
+  
+  @scala.inline
+  def darken: darken = "darken".asInstanceOf[darken]
+  
+  @scala.inline
+  def dest: dest = "dest".asInstanceOf[dest]
+  
+  @scala.inline
+  def `dest-atop`: `dest-atop` = "dest-atop".asInstanceOf[`dest-atop`]
+  
+  @scala.inline
+  def `dest-in`: `dest-in` = "dest-in".asInstanceOf[`dest-in`]
+  
+  @scala.inline
+  def `dest-out`: `dest-out` = "dest-out".asInstanceOf[`dest-out`]
+  
+  @scala.inline
+  def `dest-over`: `dest-over` = "dest-over".asInstanceOf[`dest-over`]
+  
+  @scala.inline
+  def difference: difference = "difference".asInstanceOf[difference]
+  
+  @scala.inline
+  def dz: dz = "dz".asInstanceOf[dz]
+  
+  @scala.inline
+  def eor: eor = "eor".asInstanceOf[eor]
+  
+  @scala.inline
+  def exclusion: exclusion = "exclusion".asInstanceOf[exclusion]
+  
+  @scala.inline
+  def fill: fill = "fill".asInstanceOf[fill]
+  
+  @scala.inline
+  def google: google = "google".asInstanceOf[google]
+  
+  @scala.inline
+  def `hard-light`: `hard-light` = "hard-light".asInstanceOf[`hard-light`]
+  
+  @scala.inline
+  def iiif: iiif = "iiif".asInstanceOf[iiif]
+  
+  @scala.inline
+  def in: in = "in".asInstanceOf[in]
+  
+  @scala.inline
+  def inside: inside = "inside".asInstanceOf[inside]
+  
+  @scala.inline
+  def lanczos2: lanczos2 = "lanczos2".asInstanceOf[lanczos2]
+  
+  @scala.inline
+  def lanczos3: lanczos3 = "lanczos3".asInstanceOf[lanczos3]
+  
+  @scala.inline
+  def lighten: lighten = "lighten".asInstanceOf[lighten]
+  
+  @scala.inline
+  def mitchell: mitchell = "mitchell".asInstanceOf[mitchell]
+  
+  @scala.inline
+  def multiply: multiply = "multiply".asInstanceOf[multiply]
+  
+  @scala.inline
+  def nearest: nearest = "nearest".asInstanceOf[nearest]
+  
+  @scala.inline
+  def or: or = "or".asInstanceOf[or]
+  
+  @scala.inline
+  def out: out = "out".asInstanceOf[out]
+  
+  @scala.inline
+  def outside: outside = "outside".asInstanceOf[outside]
+  
+  @scala.inline
+  def over: over = "over".asInstanceOf[over]
+  
+  @scala.inline
+  def overlay: overlay = "overlay".asInstanceOf[overlay]
+  
+  @scala.inline
+  def saturate: saturate = "saturate".asInstanceOf[saturate]
+  
+  @scala.inline
+  def screen: screen = "screen".asInstanceOf[screen]
+  
+  @scala.inline
+  def `soft-light`: `soft-light` = "soft-light".asInstanceOf[`soft-light`]
+  
+  @scala.inline
+  def source: source = "source".asInstanceOf[source]
+  
+  @scala.inline
+  def xor: xor = "xor".asInstanceOf[xor]
+  
+  @scala.inline
+  def zoomify: zoomify = "zoomify".asInstanceOf[zoomify]
+  
   @js.native
   sealed trait add extends Blend
   
@@ -132,90 +259,4 @@ object sharpStrings {
   
   @js.native
   sealed trait zoomify extends TileLayout
-  
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def and: and = "and".asInstanceOf[and]
-  @scala.inline
-  def atop: atop = "atop".asInstanceOf[atop]
-  @scala.inline
-  def clear: clear = "clear".asInstanceOf[clear]
-  @scala.inline
-  def `colour-burn`: `colour-burn` = "colour-burn".asInstanceOf[`colour-burn`]
-  @scala.inline
-  def `colour-dodge`: `colour-dodge` = "colour-dodge".asInstanceOf[`colour-dodge`]
-  @scala.inline
-  def contain: contain = "contain".asInstanceOf[contain]
-  @scala.inline
-  def cover: cover = "cover".asInstanceOf[cover]
-  @scala.inline
-  def cubic: cubic = "cubic".asInstanceOf[cubic]
-  @scala.inline
-  def darken: darken = "darken".asInstanceOf[darken]
-  @scala.inline
-  def dest: dest = "dest".asInstanceOf[dest]
-  @scala.inline
-  def `dest-atop`: `dest-atop` = "dest-atop".asInstanceOf[`dest-atop`]
-  @scala.inline
-  def `dest-in`: `dest-in` = "dest-in".asInstanceOf[`dest-in`]
-  @scala.inline
-  def `dest-out`: `dest-out` = "dest-out".asInstanceOf[`dest-out`]
-  @scala.inline
-  def `dest-over`: `dest-over` = "dest-over".asInstanceOf[`dest-over`]
-  @scala.inline
-  def difference: difference = "difference".asInstanceOf[difference]
-  @scala.inline
-  def dz: dz = "dz".asInstanceOf[dz]
-  @scala.inline
-  def eor: eor = "eor".asInstanceOf[eor]
-  @scala.inline
-  def exclusion: exclusion = "exclusion".asInstanceOf[exclusion]
-  @scala.inline
-  def fill: fill = "fill".asInstanceOf[fill]
-  @scala.inline
-  def google: google = "google".asInstanceOf[google]
-  @scala.inline
-  def `hard-light`: `hard-light` = "hard-light".asInstanceOf[`hard-light`]
-  @scala.inline
-  def iiif: iiif = "iiif".asInstanceOf[iiif]
-  @scala.inline
-  def in: in = "in".asInstanceOf[in]
-  @scala.inline
-  def inside: inside = "inside".asInstanceOf[inside]
-  @scala.inline
-  def lanczos2: lanczos2 = "lanczos2".asInstanceOf[lanczos2]
-  @scala.inline
-  def lanczos3: lanczos3 = "lanczos3".asInstanceOf[lanczos3]
-  @scala.inline
-  def lighten: lighten = "lighten".asInstanceOf[lighten]
-  @scala.inline
-  def mitchell: mitchell = "mitchell".asInstanceOf[mitchell]
-  @scala.inline
-  def multiply: multiply = "multiply".asInstanceOf[multiply]
-  @scala.inline
-  def nearest: nearest = "nearest".asInstanceOf[nearest]
-  @scala.inline
-  def or: or = "or".asInstanceOf[or]
-  @scala.inline
-  def out: out = "out".asInstanceOf[out]
-  @scala.inline
-  def outside: outside = "outside".asInstanceOf[outside]
-  @scala.inline
-  def over: over = "over".asInstanceOf[over]
-  @scala.inline
-  def overlay: overlay = "overlay".asInstanceOf[overlay]
-  @scala.inline
-  def saturate: saturate = "saturate".asInstanceOf[saturate]
-  @scala.inline
-  def screen: screen = "screen".asInstanceOf[screen]
-  @scala.inline
-  def `soft-light`: `soft-light` = "soft-light".asInstanceOf[`soft-light`]
-  @scala.inline
-  def source: source = "source".asInstanceOf[source]
-  @scala.inline
-  def xor: xor = "xor".asInstanceOf[xor]
-  @scala.inline
-  def zoomify: zoomify = "zoomify".asInstanceOf[zoomify]
 }
-

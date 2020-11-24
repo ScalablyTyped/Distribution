@@ -3,11 +3,12 @@ package typings.hookrouter.mod
 import typings.hookrouter.mod.HookRouter.QueryParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hookrouter", "navigate")
 @js.native
 object navigate extends js.Object {
+  
   def apply(url: String): Unit = js.native
   def apply(
     url: String,
@@ -29,4 +30,3 @@ object navigate extends js.Object {
   def apply(url: String, replace: Boolean, queryParams: QueryParams): Unit = js.native
   def apply(url: String, replace: Boolean, queryParams: QueryParams, replaceQueryParams: Boolean): Unit = js.native
 }
-

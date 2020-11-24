@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.FocusNavigationEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("FocusNavigationEvent")
 @js.native
@@ -14,7 +14,6 @@ class FocusNavigationEvent protected ()
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, eventInitDict: FocusNavigationEventInit) = this()
 }
-
 @JSGlobal("FocusNavigationEvent")
 @js.native
 object FocusNavigationEvent
@@ -24,4 +23,3 @@ object FocusNavigationEvent
       /* eventInitDict */ FocusNavigationEventInit, 
       typings.std.FocusNavigationEvent
     ]
-

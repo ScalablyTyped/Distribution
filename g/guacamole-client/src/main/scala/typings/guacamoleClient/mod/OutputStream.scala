@@ -2,7 +2,7 @@ package typings.guacamoleClient.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "OutputStream")
 @js.native
@@ -14,4 +14,3 @@ class OutputStream protected ()
     */
   def this(client: typings.guacamoleClient.clientMod.Client, index: Double) = this()
 }
-

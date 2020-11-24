@@ -11,8 +11,8 @@ Quickly calculate common statistics on lists of numbers
 | Full name          | fast-stats |
 | Keywords           | statistics, statistic, gauss, lognormal, normal, mean, median, mode, standard deviation, margin of error, iqr, quartile, inter quartile range |
 | # releases         | 3 |
-| # dependents       | 50 |
-| # downloads        | 1191688 |
+| # dependents       | 51 |
+| # downloads        | 2036042 |
 | # stars            | 4 |
 
 ## Links

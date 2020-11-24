@@ -3,26 +3,33 @@ package typings.protractor
 import typings.protractor.browserMod.ProtractorBrowser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor/built/debugger", JSImport.Namespace)
 @js.native
 object debuggerMod extends js.Object {
+  
   @js.native
   class DebugHelper protected () extends js.Object {
     def this(browserUnderDebug_ : ProtractorBrowser) = this()
+    
     var browserUnderDebug_ : js.Any = js.native
+    
     var dbgCodeExecutor: js.Any = js.native
+    
     /**
       * Set to true when we validate that the debug port is open. Since the debug
       * port is held open forever once the debugger is attached, it's important
       * we only do validation once.
       */
     var debuggerValidated_ : Boolean = js.native
+    
     def init(debuggerClientPath: String, onStartFn: js.Function): Unit = js.native
     def init(debuggerClientPath: String, onStartFn: js.Function, opt_debugPort: Double): Unit = js.native
+    
     def initBlocking(debuggerClientPath: String, onStartFn: js.Function): Unit = js.native
     def initBlocking(debuggerClientPath: String, onStartFn: js.Function, opt_debugPort: Double): Unit = js.native
+    
     /**
       *  1) Set up helper functions for debugger clients to call on (e.g.
       *     execute code, get autocompletion).
@@ -43,7 +50,9 @@ object debuggerMod extends js.Object {
       */
     def init_(debuggerClientPath: String, blockUntilExit: Boolean, onStartFn: js.Function): js.Promise[js.Object] = js.native
     def init_(debuggerClientPath: String, blockUntilExit: Boolean, onStartFn: js.Function, opt_debugPort: Double): js.Promise[js.Object] = js.native
+    
     def isAttached(): Boolean = js.native
+    
     /**
       * Validates that the port is free to use. This will only validate the first
       * time it is called. The reason is that on subsequent calls, the port will
@@ -57,6 +66,4 @@ object debuggerMod extends js.Object {
       */
     /* private */ def validatePortAvailability_(port: js.Any): js.Any = js.native
   }
-  
 }
-

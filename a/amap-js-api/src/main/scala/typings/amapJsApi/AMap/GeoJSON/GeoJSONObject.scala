@@ -4,21 +4,22 @@ import typings.amapJsApi.amapJsApiStrings.Feature
 import typings.amapJsApi.amapJsApiStrings.FeatureCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.amapJsApi.anon.Geometry
   - typings.amapJsApi.anon.Features
 */
 trait GeoJSONObject extends js.Object
-
 object GeoJSONObject {
+  
   @scala.inline
   def Geometry(geometry: typings.amapJsApi.AMap.GeoJSON.Geometry, properties: js.Any, `type`: Feature): GeoJSONObject = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSONObject]
   }
+  
   @scala.inline
   def Features(
     features: js.Array[
@@ -32,4 +33,3 @@ object GeoJSONObject {
     __obj.asInstanceOf[GeoJSONObject]
   }
 }
-

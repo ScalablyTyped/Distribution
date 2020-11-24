@@ -9,15 +9,15 @@ import typings.figma.figmaStrings.ROWS
 import typings.figma.figmaStrings.STRETCH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.figma.mod.global.RowsColsLayoutGrid
   - typings.figma.mod.global.GridLayoutGrid
 */
 trait LayoutGrid extends js.Object
-
 object LayoutGrid {
+  
   @scala.inline
   def RowsColsLayoutGrid(
     alignment: MIN | MAX | STRETCH | CENTER,
@@ -28,10 +28,10 @@ object LayoutGrid {
     val __obj = js.Dynamic.literal(alignment = alignment.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], gutterSize = gutterSize.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutGrid]
   }
+  
   @scala.inline
   def GridLayoutGrid(pattern: GRID, sectionSize: Double): LayoutGrid = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any], sectionSize = sectionSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutGrid]
   }
 }
-

@@ -3,7 +3,7 @@ package typings.fridaGum.global
 import typings.fridaGum.Int64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a signed 64-bit value.
@@ -19,4 +19,3 @@ class Int64_ protected () extends Int64 {
   def this(v: Double) = this()
   def this(v: Int64) = this()
 }
-

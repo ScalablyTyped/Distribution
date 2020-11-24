@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/replicapool/v1beta1", "replicapool_v1beta1.Resource$Replicas")
 @js.native
 class ResourceReplicas protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * replicapool.replicas.delete
     * @desc Deletes a replica from the pool.
@@ -45,6 +47,7 @@ class ResourceReplicas protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReplica]
   ): Unit = js.native
+  
   /**
     * replicapool.replicas.get
     * @desc Gets information about a specific replica.
@@ -76,6 +79,7 @@ class ResourceReplicas protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReplica]
   ): Unit = js.native
+  
   /**
     * replicapool.replicas.list
     * @desc Lists all replicas in a pool.
@@ -108,6 +112,7 @@ class ResourceReplicas protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReplicasListResponse]
   ): Unit = js.native
+  
   /**
     * replicapool.replicas.restart
     * @desc Restarts a replica in a pool.
@@ -140,4 +145,3 @@ class ResourceReplicas protected () extends js.Object {
     callback: BodyResponseCallback[SchemaReplica]
   ): Unit = js.native
 }
-

@@ -4,53 +4,13 @@ import typings.easyXHeaders.httpMod.ServerResponse
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Response
   extends ServerResponse
      with typings.easyXHeaders.Express.Response {
-  var charset: String = js.native
-  // Property indicating if HTTP headers has been sent for the response.
-  var headersSent: Boolean = js.native
-  /**
-    * Send JSON response.
-    *
-    * Examples:
-    *
-    *     res.json(null);
-    *     res.json({ user: 'tj' });
-    *     res.json(500, 'oh noes!');
-    *     res.json(404, 'I dont have that');
-    */
-  @JSName("json")
-  var json_Original: Send = js.native
-  /**
-    * Send JSON response with JSONP callback support.
-    *
-    * Examples:
-    *
-    *     res.jsonp(null);
-    *     res.jsonp({ user: 'tj' });
-    *     res.jsonp(500, 'oh noes!');
-    *     res.jsonp(404, 'I dont have that');
-    */
-  @JSName("jsonp")
-  var jsonp_Original: Send = js.native
-  var locals: js.Any = js.native
-  /**
-    * Send a response.
-    *
-    * Examples:
-    *
-    *     res.send(new Buffer('wahoo'));
-    *     res.send({ some: 'json' });
-    *     res.send('<p>some html</p>');
-    *     res.send(404, 'Sorry, cant find that');
-    *     res.send(404);
-    */
-  @JSName("send")
-  var send_Original: Send = js.native
+  
   /**
     * Set _Content-Disposition_ header to _attachment_ with optional `filename`.
     *
@@ -58,6 +18,9 @@ trait Response
     */
   def attachment(): Response = js.native
   def attachment(filename: String): Response = js.native
+  
+  var charset: String = js.native
+  
   /**
     * Clear cookie `name`.
     *
@@ -66,6 +29,7 @@ trait Response
     */
   def clearCookie(name: String): Response = js.native
   def clearCookie(name: String, options: js.Any): Response = js.native
+  
   /**
     * Set _Content-Type_ response header with `type` through `mime.lookup()`
     * when it does not contain "/", or set the Content-Type to `type` otherwise.
@@ -81,6 +45,7 @@ trait Response
     * @param type
     */
   def contentType(`type`: String): Response = js.native
+  
   /**
     * Set cookie `name` to `val`, with the given `options`.
     *
@@ -101,6 +66,7 @@ trait Response
   def cookie(name: String, `val`: String, options: CookieOptions): Response = js.native
   def cookie(name: String, `val`: js.Any): Response = js.native
   def cookie(name: String, `val`: js.Any, options: CookieOptions): Response = js.native
+  
   /**
     * Transfer the file at the given `path` as an attachment.
     *
@@ -115,6 +81,7 @@ trait Response
   def download(path: String, filename: String): Unit = js.native
   def download(path: String, filename: String, fn: Errback): Unit = js.native
   def download(path: String, fn: Errback): Unit = js.native
+  
   /**
     * Respond to the Acceptable formats using an `obj`
     * of mime-type callbacks.
@@ -170,15 +137,21 @@ trait Response
     * @param obj
     */
   def format(obj: js.Any): Response = js.native
+  
   /**
     * Get value for header `field`.
     *
     * @param field
     */
   def get(field: String): String = js.native
+  
   def header(field: String): Response = js.native
   def header(field: String, value: String): Response = js.native
   def header(field: js.Any): Response = js.native
+  
+  // Property indicating if HTTP headers has been sent for the response.
+  var headersSent: Boolean = js.native
+  
   /**
     * Send JSON response.
     *
@@ -203,6 +176,19 @@ trait Response
   def json(status: Double): Response = js.native
   def json(status: Double, body: js.Any): Response = js.native
   /**
+    * Send JSON response.
+    *
+    * Examples:
+    *
+    *     res.json(null);
+    *     res.json({ user: 'tj' });
+    *     res.json(500, 'oh noes!');
+    *     res.json(404, 'I dont have that');
+    */
+  @JSName("json")
+  var json_Original: Send = js.native
+  
+  /**
     * Send JSON response with JSONP callback support.
     *
     * Examples:
@@ -226,6 +212,19 @@ trait Response
   def jsonp(status: Double): Response = js.native
   def jsonp(status: Double, body: js.Any): Response = js.native
   /**
+    * Send JSON response with JSONP callback support.
+    *
+    * Examples:
+    *
+    *     res.jsonp(null);
+    *     res.jsonp({ user: 'tj' });
+    *     res.jsonp(500, 'oh noes!');
+    *     res.jsonp(404, 'I dont have that');
+    */
+  @JSName("jsonp")
+  var jsonp_Original: Send = js.native
+  
+  /**
     * Set Link header field with the given `links`.
     *
     * Examples:
@@ -238,6 +237,9 @@ trait Response
     * @param links
     */
   def links(links: js.Any): Response = js.native
+  
+  var locals: js.Any = js.native
+  
   /**
     * Set the location header to `url`.
     *
@@ -267,6 +269,7 @@ trait Response
     * @param url
     */
   def location(url: String): Response = js.native
+  
   def redirect(status: Double, url: String): Unit = js.native
   /**
     * Redirect to the given `url` with optional response `status`
@@ -286,6 +289,7 @@ trait Response
     */
   def redirect(url: String): Unit = js.native
   def redirect(url: String, status: Double): Unit = js.native
+  
   /**
     * Render `view` with the given `options` and optional callback `fn`.
     * When a callback function is given a response will _not_ be made
@@ -305,6 +309,7 @@ trait Response
   ): Unit = js.native
   def render(view: String, options: js.Object): Unit = js.native
   def render(view: String, options: js.Object, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
+  
   /**
     * Send a response.
     *
@@ -330,6 +335,7 @@ trait Response
     */
   def send(status: Double): Response = js.native
   def send(status: Double, body: js.Any): Response = js.native
+  
   /**
     * Transfer the file at the given `path`.
     *
@@ -374,6 +380,7 @@ trait Response
   def sendFile(path: String, fn: Errback): Unit = js.native
   def sendFile(path: String, options: js.Any): Unit = js.native
   def sendFile(path: String, options: js.Any, fn: Errback): Unit = js.native
+  
   /**
     * Set the response HTTP status code to `statusCode` and send its string representation as the response body.
     * @link http://expressjs.com/4x/api.html#res.sendStatus
@@ -388,6 +395,21 @@ trait Response
     * @param code
     */
   def sendStatus(code: Double): Response = js.native
+  
+  /**
+    * Send a response.
+    *
+    * Examples:
+    *
+    *     res.send(new Buffer('wahoo'));
+    *     res.send({ some: 'json' });
+    *     res.send('<p>some html</p>');
+    *     res.send(404, 'Sorry, cant find that');
+    *     res.send(404);
+    */
+  @JSName("send")
+  var send_Original: Send = js.native
+  
   /**
     * @deprecated Use sendFile instead.
     */
@@ -404,6 +426,7 @@ trait Response
     * @deprecated Use sendFile instead.
     */
   def sendfile(path: String, options: js.Any, fn: Errback): Unit = js.native
+  
   def set(field: String): Response = js.native
   def set(field: String, value: String): Response = js.native
   /**
@@ -419,12 +442,14 @@ trait Response
     * Aliased as `res.header()`.
     */
   def set(field: js.Any): Response = js.native
+  
   /**
     * Set status `code`.
     *
     * @param code
     */
   def status(code: Double): Response = js.native
+  
   /**
     * Set _Content-Type_ response header with `type` through `mime.lookup()`
     * when it does not contain "/", or set the Content-Type to `type` otherwise.
@@ -441,4 +466,3 @@ trait Response
     */
   def `type`(`type`: String): Response = js.native
 }
-

@@ -2,9 +2,31 @@ package typings.materialUiStyles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialUiStylesStrings {
+  
+  @scala.inline
+  def ThemeWithProps: ThemeWithProps = "ThemeWithProps".asInstanceOf[ThemeWithProps]
+  
+  @scala.inline
+  def className: className = "className".asInstanceOf[className]
+  
+  @scala.inline
+  def classes: classes = "classes".asInstanceOf[classes]
+  
+  @scala.inline
+  def innerRef: innerRef = "innerRef".asInstanceOf[innerRef]
+  
+  @scala.inline
+  def root: root = "root".asInstanceOf[root]
+  
+  @scala.inline
+  def theme: theme = "theme".asInstanceOf[theme]
+  
+  @scala.inline
+  def withTheme: withTheme = "withTheme".asInstanceOf[withTheme]
+  
   @js.native
   sealed trait ThemeWithProps extends js.Object
   
@@ -25,20 +47,4 @@ object materialUiStylesStrings {
   
   @js.native
   sealed trait withTheme extends js.Object
-  
-  @scala.inline
-  def ThemeWithProps: ThemeWithProps = "ThemeWithProps".asInstanceOf[ThemeWithProps]
-  @scala.inline
-  def className: className = "className".asInstanceOf[className]
-  @scala.inline
-  def classes: classes = "classes".asInstanceOf[classes]
-  @scala.inline
-  def innerRef: innerRef = "innerRef".asInstanceOf[innerRef]
-  @scala.inline
-  def root: root = "root".asInstanceOf[root]
-  @scala.inline
-  def theme: theme = "theme".asInstanceOf[theme]
-  @scala.inline
-  def withTheme: withTheme = "withTheme".asInstanceOf[withTheme]
 }
-

@@ -9,11 +9,12 @@ import typings.theo.theoStrings.options
 import typings.theo.theoStrings.props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ImmutableStyleMap
   extends Map[String, js.Any] {
+  
   @JSName("get")
   def get_aliases(key: aliases): Aliases = js.native
   @JSName("get")
@@ -27,4 +28,3 @@ trait ImmutableStyleMap
   @JSName("get")
   def get_props(key: props): Props = js.native
 }
-

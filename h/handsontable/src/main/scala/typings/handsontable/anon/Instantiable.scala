@@ -6,10 +6,9 @@ import typings.handsontable.mod.Handsontable.plugins.Base
 import typings.handsontable.mod._Handsontable.Core
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Instantiable
   extends Instantiable0[Base]
      with Instantiable1[/* hotInstance */ Core, Base]
-

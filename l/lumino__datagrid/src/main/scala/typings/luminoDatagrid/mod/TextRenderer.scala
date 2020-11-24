@@ -4,7 +4,7 @@ import typings.luminoDatagrid.textrendererMod.TextRenderer.FormatFunc
 import typings.luminoDatagrid.textrendererMod.TextRenderer.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/datagrid", "TextRenderer")
 @js.native
@@ -17,10 +17,10 @@ class TextRenderer ()
   extends typings.luminoDatagrid.textrendererMod.TextRenderer {
   def this(options: IOptions) = this()
 }
-
 @JSImport("@lumino/datagrid", "TextRenderer")
 @js.native
 object TextRenderer extends js.Object {
+  
   /**
     * Measure the height of a font.
     *
@@ -35,11 +35,13 @@ object TextRenderer extends js.Object {
     * subsequent call for the same font will return the cached value.
     */
   def measureFontHeight(font: String): Double = js.native
+  
   /**
     * The namespace for the `formatDate` function statics.
     */
   @js.native
   object formatDate extends js.Object {
+    
     /**
       * Create a date format function.
       *
@@ -64,6 +66,7 @@ object TextRenderer extends js.Object {
     */
   @js.native
   object formatExponential extends js.Object {
+    
     /**
       * Create a scientific notation format function.
       *
@@ -86,6 +89,7 @@ object TextRenderer extends js.Object {
     */
   @js.native
   object formatFixed extends js.Object {
+    
     /**
       * Create a fixed decimal format function.
       *
@@ -108,6 +112,7 @@ object TextRenderer extends js.Object {
     */
   @js.native
   object formatGeneric extends js.Object {
+    
     /**
       * Create a generic text format function.
       *
@@ -128,6 +133,7 @@ object TextRenderer extends js.Object {
     */
   @js.native
   object formatISODateTime extends js.Object {
+    
     /**
       * Create an ISO datetime format function.
       *
@@ -152,6 +158,7 @@ object TextRenderer extends js.Object {
     */
   @js.native
   object formatIntlDateTime extends js.Object {
+    
     /**
       * Create an international datetime format function.
       *
@@ -174,6 +181,7 @@ object TextRenderer extends js.Object {
     */
   @js.native
   object formatIntlNumber extends js.Object {
+    
     /**
       * Create an international number format function.
       *
@@ -196,6 +204,7 @@ object TextRenderer extends js.Object {
     */
   @js.native
   object formatPrecision extends js.Object {
+    
     /**
       * Create a significant figure format function.
       *
@@ -218,6 +227,7 @@ object TextRenderer extends js.Object {
     */
   @js.native
   object formatTime extends js.Object {
+    
     /**
       * Create a time format function.
       *
@@ -242,6 +252,7 @@ object TextRenderer extends js.Object {
     */
   @js.native
   object formatUTCDateTime extends js.Object {
+    
     /**
       * Create a UTC datetime format function.
       *
@@ -260,6 +271,4 @@ object TextRenderer extends js.Object {
     def apply(): FormatFunc = js.native
     def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatUTCDateTime.IOptions): FormatFunc = js.native
   }
-  
 }
-

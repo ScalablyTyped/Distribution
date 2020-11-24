@@ -4,11 +4,12 @@ import typings.detectNewline.detectNewlineStrings.CarriagereturnLinefeed
 import typings.detectNewline.detectNewlineStrings.Linefeed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("detect-newline", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
   	Detect the dominant newline character of a string.
   	@returns The detected newline or `undefined` when no newline character is found.
@@ -20,6 +21,7 @@ object mod extends js.Object {
   	```
   	*/
   def apply(string: String): js.UndefOr[CarriagereturnLinefeed | Linefeed] = js.native
+  
   def graceful(): Linefeed = js.native
   /**
   	Detect the dominant newline character of a string.
@@ -28,4 +30,3 @@ object mod extends js.Object {
   def graceful(string: String): CarriagereturnLinefeed | Linefeed = js.native
   def graceful(string: js.Any): Linefeed = js.native
 }
-

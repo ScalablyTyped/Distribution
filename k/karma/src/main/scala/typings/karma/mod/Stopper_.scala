@@ -2,10 +2,11 @@ package typings.karma.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Stopper_ extends js.Object {
+  
   /**
     * This function will signal a running server to stop. The equivalent of karma stop.
     */
@@ -14,4 +15,3 @@ trait Stopper_ extends js.Object {
   def stop(options: ConfigOptions): Unit = js.native
   def stop(options: ConfigOptions, callback: ServerCallback): Unit = js.native
 }
-

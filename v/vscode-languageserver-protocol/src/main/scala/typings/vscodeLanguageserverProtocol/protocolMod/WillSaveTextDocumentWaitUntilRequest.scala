@@ -5,12 +5,14 @@ import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.
 import typings.vscodeLanguageserverTypes.mod.TextEdit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver-protocol/lib/protocol", "WillSaveTextDocumentWaitUntilRequest")
 @js.native
 object WillSaveTextDocumentWaitUntilRequest extends js.Object {
+  
   val method: textDocumentSlashwillSaveWaitUntil = js.native
+  
   val `type`: ProtocolRequestType[
     WillSaveTextDocumentParams, 
     js.Array[TextEdit] | Null, 
@@ -19,4 +21,3 @@ object WillSaveTextDocumentWaitUntilRequest extends js.Object {
     TextDocumentRegistrationOptions
   ] = js.native
 }
-

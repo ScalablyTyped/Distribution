@@ -2,11 +2,13 @@ package typings.chrome.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Typeofchrome extends js.Object {
+  
   val _debugger: TypeofDebugger = js.native
+  
   ////////////////////
   // Accessibility Features
   ////////////////////
@@ -17,6 +19,7 @@ trait Typeofchrome extends js.Object {
     * Important: This API works only on Chrome OS.
     */
   val accessibilityFeatures: TypeofaccessibilityFeatur = js.native
+  
   ////////////////////
   // Alarms
   ////////////////////
@@ -26,6 +29,7 @@ trait Typeofchrome extends js.Object {
     * Permissions:  "alarms"
     */
   val alarms: Typeofalarms = js.native
+  
   ////////////////////
   // Bookmarks
   ////////////////////
@@ -35,6 +39,7 @@ trait Typeofchrome extends js.Object {
     * Permissions:  "bookmarks"
     */
   val bookmarks: Typeofbookmarks = js.native
+  
   ////////////////////
   // Browser
   ////////////////////
@@ -43,6 +48,7 @@ trait Typeofchrome extends js.Object {
     * the current application and Chrome profile.
     */
   val browser: Typeofbrowser = js.native
+  
   ////////////////////
   // Browser Action
   ////////////////////
@@ -52,6 +58,7 @@ trait Typeofchrome extends js.Object {
     * Manifest:  "browser_action": {...}
     */
   val browserAction: TypeofbrowserAction = js.native
+  
   ////////////////////
   // Browsing Data
   ////////////////////
@@ -61,7 +68,9 @@ trait Typeofchrome extends js.Object {
     * Permissions:  "browsingData"
     */
   val browsingData: TypeofbrowsingData = js.native
+  
   val cast: Typeofcast = js.native
+  
   ////////////////////
   // Commands
   ////////////////////
@@ -71,6 +80,7 @@ trait Typeofchrome extends js.Object {
     * Manifest:  "commands": {...}
     */
   val commands: Typeofcommands = js.native
+  
   ////////////////////
   // Content Settings
   ////////////////////
@@ -80,6 +90,7 @@ trait Typeofchrome extends js.Object {
     * Permissions:  "contentSettings"
     */
   val contentSettings: TypeofcontentSettings = js.native
+  
   ////////////////////
   // Context Menus
   ////////////////////
@@ -89,6 +100,7 @@ trait Typeofchrome extends js.Object {
     * Permissions:  "contextMenus"
     */
   val contextMenus: TypeofcontextMenus = js.native
+  
   ////////////////////
   // Cookies
   ////////////////////
@@ -98,6 +110,7 @@ trait Typeofchrome extends js.Object {
     * Permissions:  "cookies", host permissions
     */
   val cookies: Typeofcookies = js.native
+  
   ////////////////////
   // Declarative Content
   ////////////////////
@@ -107,10 +120,12 @@ trait Typeofchrome extends js.Object {
     * Permissions:  "declarativeContent"
     */
   val declarativeContent: TypeofdeclarativeContent = js.native
+  
   ////////////////////
   // Declarative Web Request
   ////////////////////
   val declarativeWebRequest: TypeofdeclarativeWebReque = js.native
+  
   ////////////////////
   // DesktopCapture
   ////////////////////
@@ -120,7 +135,9 @@ trait Typeofchrome extends js.Object {
     * Permissions:  "desktopCapture"
     */
   val desktopCapture: TypeofdesktopCapture = js.native
+  
   val devtools: Typeofdevtools = js.native
+  
   ////////////////////
   // Document Scan
   ////////////////////
@@ -131,6 +148,7 @@ trait Typeofchrome extends js.Object {
     * Important: This API works only on Chrome OS.
     */
   val documentScan: TypeofdocumentScan = js.native
+  
   ////////////////////
   // Dev Tools - Downloads
   ////////////////////
@@ -140,7 +158,9 @@ trait Typeofchrome extends js.Object {
     * Permissions:  "downloads"
     */
   val downloads: Typeofdownloads = js.native
+  
   val enterprise: Typeofenterprise = js.native
+  
   ////////////////////
   // Events
   ////////////////////
@@ -149,6 +169,7 @@ trait Typeofchrome extends js.Object {
     * Availability: Since Chrome 21.
     */
   val events: js.Any = js.native
+  
   ////////////////////
   // Extension
   ////////////////////
@@ -157,6 +178,7 @@ trait Typeofchrome extends js.Object {
     * Availability: Since Chrome 5.
     */
   val extension: Typeofextension = js.native
+  
   ////////////////////
   // File Browser Handler
   ////////////////////
@@ -167,6 +189,7 @@ trait Typeofchrome extends js.Object {
     * Important: This API works only on Chrome OS.
     */
   val fileBrowserHandler: TypeoffileBrowserHandler = js.native
+  
   ////////////////////
   // File System Provider
   ////////////////////
@@ -177,6 +200,7 @@ trait Typeofchrome extends js.Object {
     * Important: This API works only on Chrome OS.
     */
   val fileSystemProvider: TypeoffileSystemProvider = js.native
+  
   ////////////////////
   // Font Settings
   ////////////////////
@@ -186,6 +210,7 @@ trait Typeofchrome extends js.Object {
     * Permissions:  "fontSettings"
     */
   val fontSettings: TypeoffontSettings = js.native
+  
   ////////////////////
   // Google Cloud Messaging
   ////////////////////
@@ -195,6 +220,7 @@ trait Typeofchrome extends js.Object {
     * Permissions:  "gcm"
     */
   val gcm: Typeofgcm = js.native
+  
   ////////////////////
   // History
   ////////////////////
@@ -204,6 +230,7 @@ trait Typeofchrome extends js.Object {
     * Permissions:  "history"
     */
   val history: Typeofhistory = js.native
+  
   ////////////////////
   // i18n
   ////////////////////
@@ -212,6 +239,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 5.
     */
   val i18n: Typeofi18n = js.native
+  
   ////////////////////
   // Identity
   ////////////////////
@@ -221,6 +249,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 29.
     */
   val identity: Typeofidentity = js.native
+  
   ////////////////////
   // Idle
   ////////////////////
@@ -230,7 +259,9 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 6.
     */
   val idle: Typeofidle = js.native
+  
   val input: Typeofinput = js.native
+  
   ////////////////////
   // LoginState
   ////////////////////
@@ -241,6 +272,7 @@ trait Typeofchrome extends js.Object {
     * Important: This API works only on Chrome OS.
     */
   val loginState: TypeofloginState = js.native
+  
   ////////////////////
   // Management
   ////////////////////
@@ -250,7 +282,9 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 8.
     */
   val management: Typeofmanagement = js.native
+  
   val networking: Typeofnetworking = js.native
+  
   ////////////////////
   // Notifications
   // https://developer.chrome.com/extensions/notifications
@@ -261,6 +295,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 28.
     */
   val notifications: Typeofnotifications = js.native
+  
   ////////////////////
   // Omnibox
   ////////////////////
@@ -270,6 +305,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 9.
     */
   val omnibox: Typeofomnibox = js.native
+  
   ////////////////////
   // Page Action
   ////////////////////
@@ -279,6 +315,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 5.
     */
   val pageAction: TypeofpageAction = js.native
+  
   ////////////////////
   // Page Capture
   ////////////////////
@@ -288,6 +325,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 18.
     */
   val pageCapture: TypeofpageCapture = js.native
+  
   ////////////////////
   // Permissions
   ////////////////////
@@ -296,6 +334,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 16.
     */
   val permissions: Typeofpermissions = js.native
+  
   ////////////////////
   // Platform Keys
   ////////////////////
@@ -306,6 +345,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 45.
     */
   val platformKeys: TypeofplatformKeysGetKeyPair = js.native
+  
   ////////////////////
   // Power
   ////////////////////
@@ -315,6 +355,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 27.
     */
   val power: Typeofpower = js.native
+  
   ////////////////////
   // Printer Provider
   ////////////////////
@@ -324,6 +365,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 44.
     */
   val printerProvider: TypeofprinterProvider = js.native
+  
   ////////////////////
   // Privacy
   ////////////////////
@@ -334,6 +376,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 18.
     */
   val privacy: Typeofprivacy = js.native
+  
   ////////////////////
   // Proxy
   ////////////////////
@@ -343,6 +386,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 13.
     */
   val proxy: Typeofproxy = js.native
+  
   ////////////////////
   // Runtime
   ////////////////////
@@ -351,10 +395,12 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 22
     */
   val runtime: Typeofruntime = js.native
+  
   ////////////////////
   // Script Badge
   ////////////////////
   val scriptBadge: TypeofscriptBadge = js.native
+  
   ////////////////////
   // Serial
   ////////////////////
@@ -365,6 +411,7 @@ trait Typeofchrome extends js.Object {
     * Important: This API works only on Chrome OS.
     */
   val serial: Typeofserial = js.native
+  
   ////////////////////
   // Sessions
   ////////////////////
@@ -374,10 +421,12 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 37.
     */
   val sessions: Typeofsessions = js.native
+  
   ////////////////////
   // Socket
   ////////////////////
   val socket: Typeofsocket = js.native
+  
   ////////////////////
   // Storage
   ////////////////////
@@ -387,7 +436,9 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 20.
     */
   val storage: Typeofstorage = js.native
+  
   val system: Typeofsystem = js.native
+  
   ////////////////////
   // TabCapture
   ////////////////////
@@ -397,6 +448,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 31.
     */
   val tabCapture: TypeoftabCapture = js.native
+  
   ////////////////////
   // Tabs
   ////////////////////
@@ -406,6 +458,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 5.
     */
   val tabs: Typeoftabs = js.native
+  
   ////////////////////
   // Top Sites
   ////////////////////
@@ -415,6 +468,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 19.
     */
   val topSites: TypeoftopSites = js.native
+  
   ////////////////////
   // Text to Speech
   ////////////////////
@@ -424,6 +478,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 14.
     */
   val tts: Typeoftts = js.native
+  
   ////////////////////
   // Text to Speech Engine
   ////////////////////
@@ -433,6 +488,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 14.
     */
   val ttsEngine: TypeofttsEngine = js.native
+  
   ////////////////////
   // Types
   ////////////////////
@@ -441,6 +497,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 13.
     */
   val types: js.Any = js.native
+  
   ////////////////////
   // VPN Provider
   ////////////////////
@@ -451,6 +508,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 43.
     */
   val vpnProvider: TypeofvpnProvider = js.native
+  
   ////////////////////
   // Wallpaper
   ////////////////////
@@ -461,6 +519,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 43.
     */
   val wallpaper: Typeofwallpaper = js.native
+  
   ////////////////////
   // Web Navigation
   ////////////////////
@@ -470,6 +529,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 16.
     */
   val webNavigation: TypeofwebNavigation = js.native
+  
   ////////////////////
   // Web Request
   ////////////////////
@@ -479,6 +539,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 17.
     */
   val webRequest: TypeofwebRequest = js.native
+  
   ////////////////////
   // Web Store
   ////////////////////
@@ -487,6 +548,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 15.
     */
   val webstore: Typeofwebstore = js.native
+  
   ////////////////////
   // Windows
   ////////////////////
@@ -497,8 +559,8 @@ trait Typeofchrome extends js.Object {
     */
   val windows: Typeofwindows = js.native
 }
-
 object Typeofchrome {
+  
   @scala.inline
   def apply(
     _debugger: TypeofDebugger,
@@ -567,142 +629,206 @@ object Typeofchrome {
     val __obj = js.Dynamic.literal(_debugger = _debugger.asInstanceOf[js.Any], accessibilityFeatures = accessibilityFeatures.asInstanceOf[js.Any], alarms = alarms.asInstanceOf[js.Any], bookmarks = bookmarks.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], browserAction = browserAction.asInstanceOf[js.Any], browsingData = browsingData.asInstanceOf[js.Any], cast = cast.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], contentSettings = contentSettings.asInstanceOf[js.Any], contextMenus = contextMenus.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], declarativeContent = declarativeContent.asInstanceOf[js.Any], declarativeWebRequest = declarativeWebRequest.asInstanceOf[js.Any], desktopCapture = desktopCapture.asInstanceOf[js.Any], devtools = devtools.asInstanceOf[js.Any], documentScan = documentScan.asInstanceOf[js.Any], downloads = downloads.asInstanceOf[js.Any], enterprise = enterprise.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], fileBrowserHandler = fileBrowserHandler.asInstanceOf[js.Any], fileSystemProvider = fileSystemProvider.asInstanceOf[js.Any], fontSettings = fontSettings.asInstanceOf[js.Any], gcm = gcm.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], loginState = loginState.asInstanceOf[js.Any], management = management.asInstanceOf[js.Any], networking = networking.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], omnibox = omnibox.asInstanceOf[js.Any], pageAction = pageAction.asInstanceOf[js.Any], pageCapture = pageCapture.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], platformKeys = platformKeys.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], printerProvider = printerProvider.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], scriptBadge = scriptBadge.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], tabCapture = tabCapture.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any], topSites = topSites.asInstanceOf[js.Any], tts = tts.asInstanceOf[js.Any], ttsEngine = ttsEngine.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], vpnProvider = vpnProvider.asInstanceOf[js.Any], wallpaper = wallpaper.asInstanceOf[js.Any], webNavigation = webNavigation.asInstanceOf[js.Any], webRequest = webRequest.asInstanceOf[js.Any], webstore = webstore.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofchrome]
   }
+  
   @scala.inline
   implicit class TypeofchromeOps[Self <: Typeofchrome] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def set_debugger(value: TypeofDebugger): Self = this.set("_debugger", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAccessibilityFeatures(value: TypeofaccessibilityFeatur): Self = this.set("accessibilityFeatures", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAlarms(value: Typeofalarms): Self = this.set("alarms", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBookmarks(value: Typeofbookmarks): Self = this.set("bookmarks", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBrowser(value: Typeofbrowser): Self = this.set("browser", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBrowserAction(value: TypeofbrowserAction): Self = this.set("browserAction", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBrowsingData(value: TypeofbrowsingData): Self = this.set("browsingData", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCast(value: Typeofcast): Self = this.set("cast", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCommands(value: Typeofcommands): Self = this.set("commands", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setContentSettings(value: TypeofcontentSettings): Self = this.set("contentSettings", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setContextMenus(value: TypeofcontextMenus): Self = this.set("contextMenus", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCookies(value: Typeofcookies): Self = this.set("cookies", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDeclarativeContent(value: TypeofdeclarativeContent): Self = this.set("declarativeContent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDeclarativeWebRequest(value: TypeofdeclarativeWebReque): Self = this.set("declarativeWebRequest", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDesktopCapture(value: TypeofdesktopCapture): Self = this.set("desktopCapture", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDevtools(value: Typeofdevtools): Self = this.set("devtools", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDocumentScan(value: TypeofdocumentScan): Self = this.set("documentScan", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDownloads(value: Typeofdownloads): Self = this.set("downloads", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEnterprise(value: Typeofenterprise): Self = this.set("enterprise", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEvents(value: js.Any): Self = this.set("events", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExtension(value: Typeofextension): Self = this.set("extension", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFileBrowserHandler(value: TypeoffileBrowserHandler): Self = this.set("fileBrowserHandler", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFileSystemProvider(value: TypeoffileSystemProvider): Self = this.set("fileSystemProvider", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFontSettings(value: TypeoffontSettings): Self = this.set("fontSettings", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGcm(value: Typeofgcm): Self = this.set("gcm", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHistory(value: Typeofhistory): Self = this.set("history", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setI18n(value: Typeofi18n): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIdentity(value: Typeofidentity): Self = this.set("identity", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIdle(value: Typeofidle): Self = this.set("idle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setInput(value: Typeofinput): Self = this.set("input", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLoginState(value: TypeofloginState): Self = this.set("loginState", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setManagement(value: Typeofmanagement): Self = this.set("management", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNetworking(value: Typeofnetworking): Self = this.set("networking", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNotifications(value: Typeofnotifications): Self = this.set("notifications", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOmnibox(value: Typeofomnibox): Self = this.set("omnibox", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPageAction(value: TypeofpageAction): Self = this.set("pageAction", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPageCapture(value: TypeofpageCapture): Self = this.set("pageCapture", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPermissions(value: Typeofpermissions): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPlatformKeys(value: TypeofplatformKeysGetKeyPair): Self = this.set("platformKeys", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPower(value: Typeofpower): Self = this.set("power", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPrinterProvider(value: TypeofprinterProvider): Self = this.set("printerProvider", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPrivacy(value: Typeofprivacy): Self = this.set("privacy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setProxy(value: Typeofproxy): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRuntime(value: Typeofruntime): Self = this.set("runtime", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setScriptBadge(value: TypeofscriptBadge): Self = this.set("scriptBadge", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSerial(value: Typeofserial): Self = this.set("serial", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSessions(value: Typeofsessions): Self = this.set("sessions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSocket(value: Typeofsocket): Self = this.set("socket", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStorage(value: Typeofstorage): Self = this.set("storage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSystem(value: Typeofsystem): Self = this.set("system", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTabCapture(value: TypeoftabCapture): Self = this.set("tabCapture", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTabs(value: Typeoftabs): Self = this.set("tabs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTopSites(value: TypeoftopSites): Self = this.set("topSites", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTts(value: Typeoftts): Self = this.set("tts", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTtsEngine(value: TypeofttsEngine): Self = this.set("ttsEngine", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTypes(value: js.Any): Self = this.set("types", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setVpnProvider(value: TypeofvpnProvider): Self = this.set("vpnProvider", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWallpaper(value: Typeofwallpaper): Self = this.set("wallpaper", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWebNavigation(value: TypeofwebNavigation): Self = this.set("webNavigation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWebRequest(value: TypeofwebRequest): Self = this.set("webRequest", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWebstore(value: Typeofwebstore): Self = this.set("webstore", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWindows(value: Typeofwindows): Self = this.set("windows", value.asInstanceOf[js.Any])
   }
-  
 }
-

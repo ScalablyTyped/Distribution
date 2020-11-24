@@ -1,15 +1,31 @@
 package typings.firebaseStorage
 
-import typings.firebaseStorage.serviceMod.StorageService
-import typings.firebaseStorage.srcListMod.ListResult
+import typings.firebaseStorage.referenceMod.ReferenceCompat
+import typings.firebaseStorage.serviceMod.StorageServiceCompat
+import typings.firebaseStorageTypes.mod.ListResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/storage/dist/src/implementation/list", JSImport.Namespace)
+@JSImport("@firebase/storage/dist/compat/list", JSImport.Namespace)
 @js.native
 object listMod extends js.Object {
-  def fromResponseString(service: StorageService, bucket: String, resourceString: String): ListResult | Null = js.native
-  def listOptionsValidator(p: js.Any): Unit = js.native
+  
+  @js.native
+  class ListResultCompat protected () extends ListResult {
+    def this(_delegate: typings.firebaseStorage.srcListMod.ListResult, _service: StorageServiceCompat) = this()
+    
+    val _delegate: js.Any = js.native
+    
+    val _service: js.Any = js.native
+    
+    @JSName("items")
+    def items_MListResultCompat: js.Array[ReferenceCompat] = js.native
+    
+    @JSName("nextPageToken")
+    def nextPageToken_MListResultCompat: String | Null = js.native
+    
+    @JSName("prefixes")
+    def prefixes_MListResultCompat: js.Array[ReferenceCompat] = js.native
+  }
 }
-

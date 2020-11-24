@@ -2,11 +2,12 @@ package typings.xregexp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xregexp", "split")
 @js.native
 object split extends js.Object {
+  
   /**
     * Splits a string into an array of strings using a regex or string separator. Matches of the
     * separator are not included in the result array. However, if `separator` is a regex that contains
@@ -35,4 +36,3 @@ object split extends js.Object {
   def apply(str: String, separator: Pattern): js.Array[String] = js.native
   def apply(str: String, separator: Pattern, limit: Double): js.Array[String] = js.native
 }
-

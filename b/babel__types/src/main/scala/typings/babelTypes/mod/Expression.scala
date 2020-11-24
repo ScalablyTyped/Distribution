@@ -80,7 +80,7 @@ import typings.babelTypes.babelTypesStrings.typeof
 import typings.babelTypes.babelTypesStrings.void
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.babelTypes.mod.ArrayExpression_
@@ -130,8 +130,8 @@ import scala.scalajs.js.annotation._
   - typings.babelTypes.mod.TSNonNullExpression_
 */
 trait Expression extends _Node
-
 object Expression {
+  
   @scala.inline
   def NewExpression_(
     arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_],
@@ -142,18 +142,21 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def ParenthesizedExpression_(expression: Expression, `type`: ParenthesizedExpression): Expression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def Import_(`type`: Import): Expression = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def ArrowFunctionExpression_(
     async: Boolean,
@@ -167,24 +170,28 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def DecimalLiteral_(`type`: DecimalLiteral, value: String): Expression = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def TSNonNullExpression_(expression: Expression, `type`: TSNonNullExpression): Expression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def ArrayExpression_(elements: js.Array[Null | Expression | SpreadElement_], `type`: ArrayExpression): Expression = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def BinaryExpression_(
     left: Expression | PrivateName_,
@@ -196,66 +203,77 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def RegExpLiteral_(flags: String, pattern: String, `type`: RegExpLiteral): Expression = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def Super_(`type`: Super): Expression = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def AssignmentExpression_(left: LVal, operator: String, right: Expression, `type`: AssignmentExpression): Expression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def UpdateExpression_(argument: Expression, operator: PlussignPlussign | `--`, prefix: Boolean, `type`: UpdateExpression): Expression = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def TSTypeAssertion_(expression: Expression, `type`: TSTypeAssertion, typeAnnotation: TSType): Expression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def NullLiteral_(`type`: NullLiteral): Expression = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def MetaProperty_(meta: Identifier_, property: Identifier_, `type`: MetaProperty): Expression = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def BooleanLiteral_(`type`: BooleanLiteral, value: Boolean): Expression = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def ObjectExpression_(properties: js.Array[ObjectMethod_ | ObjectProperty_ | SpreadElement_], `type`: ObjectExpression): Expression = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def BigIntLiteral_(`type`: BigIntLiteral, value: String): Expression = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def OptionalMemberExpression_(
     computed: Boolean,
@@ -269,12 +287,14 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def ClassExpression_(body: ClassBody_, `type`: ClassExpression): Expression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def MemberExpression_(
     computed: Boolean,
@@ -287,6 +307,7 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def UnaryExpression_(
     argument: Expression,
@@ -298,12 +319,14 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def NumericLiteral_(`type`: NumericLiteral, value: Double): Expression = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def FunctionExpression_(
     async: Boolean,
@@ -316,12 +339,14 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def TaggedTemplateExpression_(quasi: TemplateLiteral_, tag: Expression, `type`: TaggedTemplateExpression): Expression = {
     val __obj = js.Dynamic.literal(quasi = quasi.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def LogicalExpression_(
     left: Expression,
@@ -333,12 +358,14 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def StringLiteral_(`type`: StringLiteral, value: String): Expression = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def BindExpression_(callee: Expression, `object`: Expression, `type`: BindExpression): Expression = {
     val __obj = js.Dynamic.literal(callee = callee.asInstanceOf[js.Any])
@@ -346,24 +373,28 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def RecordExpression_(properties: js.Array[ObjectProperty_ | SpreadElement_], `type`: RecordExpression): Expression = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def AwaitExpression_(argument: Expression, `type`: AwaitExpression): Expression = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def ThisExpression_(`type`: ThisExpression): Expression = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def CallExpression_(
     arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_],
@@ -374,18 +405,21 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def TupleExpression_(elements: js.Array[Expression | SpreadElement_], `type`: TupleExpression): Expression = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def YieldExpression_(delegate: Boolean, `type`: YieldExpression): Expression = {
     val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def JSXFragment_(
     children: js.Array[
@@ -399,18 +433,21 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def PipelinePrimaryTopicReference_(`type`: PipelinePrimaryTopicReference): Expression = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def Identifier_(name: String, `type`: Identifier): Expression = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def OptionalCallExpression_(
     arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_],
@@ -422,30 +459,39 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def TypeCastExpression_(expression: Expression, `type`: TypeCastExpression, typeAnnotation: TypeAnnotation_): Expression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def DoExpression_(body: BlockStatement_, `type`: DoExpression): Expression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def SequenceExpression_(expressions: js.Array[Expression], `type`: SequenceExpression): Expression = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
-  def TemplateLiteral_(expressions: js.Array[Expression], quasis: js.Array[TemplateElement_], `type`: TemplateLiteral): Expression = {
+  def TemplateLiteral_(
+    expressions: js.Array[Expression | TSType],
+    quasis: js.Array[TemplateElement_],
+    `type`: TemplateLiteral
+  ): Expression = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any], quasis = quasis.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def JSXElement_(
     children: js.Array[
@@ -458,12 +504,14 @@ object Expression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def TSAsExpression_(expression: Expression, `type`: TSAsExpression, typeAnnotation: TSType): Expression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  
   @scala.inline
   def ConditionalExpression_(alternate: Expression, consequent: Expression, test: Expression, `type`: ConditionalExpression): Expression = {
     val __obj = js.Dynamic.literal(alternate = alternate.asInstanceOf[js.Any], consequent = consequent.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
@@ -471,4 +519,3 @@ object Expression {
     __obj.asInstanceOf[Expression]
   }
 }
-

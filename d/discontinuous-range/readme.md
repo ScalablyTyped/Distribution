@@ -12,7 +12,7 @@ for adding, subtracting, and indexing discontinuous ranges of numbers
 | Keywords           | discontinuous, range, set |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 89442178 |
+| # downloads        | 105036999 |
 | # stars            | 0 |
 
 ## Links

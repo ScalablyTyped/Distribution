@@ -10,9 +10,9 @@ Dev Tools for ProseMirror
 | ------------------ | :-------------: |
 | Full name          | prosemirror-dev-tools |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 236704 |
+| # releases         | 4 |
+| # dependents       | 7 |
+| # downloads        | 341410 |
 | # stars            | 0 |
 
 ## Links

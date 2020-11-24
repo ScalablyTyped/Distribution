@@ -11,8 +11,8 @@ a simple but effective <Link /> component for redux-first-router (better for SEO
 | Full name          | redux-first-router-link |
 | Keywords           | - |
 | # releases         | 8 |
-| # dependents       | 8 |
-| # downloads        | 530966 |
+| # dependents       | 10 |
+| # downloads        | 589742 |
 | # stars            | 2 |
 
 ## Links

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1beta", "appengine_v1beta.Resource$Apps$Services$Versions$Instances")
 @js.native
 class ResourceAppsServicesVersionsInstances protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * appengine.apps.services.versions.instances.debug
     * @desc Enables debugging on a VM instance. This allows you to use the SSH
@@ -53,6 +55,7 @@ class ResourceAppsServicesVersionsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * appengine.apps.services.versions.instances.delete
     * @desc Stops a running instance.
@@ -87,6 +90,7 @@ class ResourceAppsServicesVersionsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * appengine.apps.services.versions.instances.get
     * @desc Gets instance information.
@@ -121,6 +125,7 @@ class ResourceAppsServicesVersionsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstance]
   ): Unit = js.native
+  
   /**
     * appengine.apps.services.versions.instances.list
     * @desc Lists the instances of a version.Tip: To aggregate details about
@@ -159,4 +164,3 @@ class ResourceAppsServicesVersionsInstances protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListInstancesResponse]
   ): Unit = js.native
 }
-

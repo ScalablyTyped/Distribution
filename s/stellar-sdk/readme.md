@@ -1,7 +1,7 @@
 
 # Scala.js typings for stellar-sdk
 
-Typings are for version 5.0.4
+Typings are for version 7.0.0
 
 ## Library description:
 stellar-sdk is a library for working with the Stellar Horizon server.
@@ -10,9 +10,9 @@ stellar-sdk is a library for working with the Stellar Horizon server.
 | ------------------ | :-------------: |
 | Full name          | stellar-sdk |
 | Keywords           | stellar |
-| # releases         | 51 |
-| # dependents       | 67 |
-| # downloads        | 278123 |
+| # releases         | 54 |
+| # dependents       | 91 |
+| # downloads        | 328060 |
 | # stars            | 2 |
 
 ## Links

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/testing/v1", "testing_v1.Resource$Applicationdetailservice")
 @js.native
 class ResourceApplicationdetailservice protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * testing.applicationDetailService.getApkDetails
     * @desc Gets the details of an Android application APK.
@@ -45,4 +47,3 @@ class ResourceApplicationdetailservice protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGetApkDetailsResponse]
   ): Unit = js.native
 }
-

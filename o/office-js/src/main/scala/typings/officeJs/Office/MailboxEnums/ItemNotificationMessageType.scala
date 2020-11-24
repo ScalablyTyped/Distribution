@@ -2,11 +2,10 @@ package typings.officeJs.Office.MailboxEnums
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ItemNotificationMessageType extends js.Object
-
 /**
   * Specifies the notification message type for an appointment or message.
   *
@@ -19,6 +18,7 @@ sealed trait ItemNotificationMessageType extends js.Object
 @JSGlobal("Office.MailboxEnums.ItemNotificationMessageType")
 @js.native
 object ItemNotificationMessageType extends js.Object {
+  
   /**
     * The notification message is an error message.
     */
@@ -36,6 +36,4 @@ object ItemNotificationMessageType extends js.Object {
     */
   @js.native
   sealed trait ProgressIndicator extends ItemNotificationMessageType
-  
 }
-

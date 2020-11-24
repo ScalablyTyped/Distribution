@@ -5,10 +5,11 @@ import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.model.Binding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Element extends ManagedObject {
+  
   /**
     * Returns the best suitable DOM node that represents this Element wrapped as jQuery object.I.e. the
     * element returned by {@link sap.ui.core.Element#getDomRef} is wrapped and returned.If an ID suffix is
@@ -20,12 +21,14 @@ trait Element extends ManagedObject {
     */
   @JSName("$")
   def $(sSuffix: String): JQueryStatic = js.native
+  
   /**
     * Adds some customData to the aggregation <code>customData</code>.
     * @param oCustomData the customData to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addCustomData(oCustomData: CustomData): Element = js.native
+  
   /**
     * Adds some dependent to the aggregation <code>dependents</code>.
     * @since 1.19
@@ -33,6 +36,7 @@ trait Element extends ManagedObject {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addDependent(oDependent: Control): Element = js.native
+  
   /**
     * Adds a delegate that listens to the events that are fired on this element (as opposed to events
     * which are fired BY this element).When this element is cloned, the same delegate will be added to all
@@ -55,11 +59,13 @@ trait Element extends ManagedObject {
     */
   def addEventDelegate(oDelegate: js.Any): Element = js.native
   def addEventDelegate(oDelegate: js.Any, oThis: js.Any): Element = js.native
+  
   /**
     * Applies the focus info.To be overwritten by the specific control method.
     * @param oFocusInfo undefined
     */
   def applyFocusInfo(oFocusInfo: js.Any): Unit = js.native
+  
   /**
     * Bind the object to the referenced entity in the model, which is used as the binding contextto
     * resolve bound properties or aggregations of the object itself and all of its childrenrelatively to
@@ -74,6 +80,7 @@ trait Element extends ManagedObject {
   def bindElement(vPath: String, mParameters: js.Any): ManagedObject = js.native
   def bindElement(vPath: js.Any): ManagedObject = js.native
   def bindElement(vPath: js.Any, mParameters: js.Any): ManagedObject = js.native
+  
   def create(vData: js.Any): Unit = js.native
   /**
     * Creates a new Element from the given data.If vData is an Element already, that element is
@@ -85,6 +92,7 @@ trait Element extends ManagedObject {
     */
   def create(vData: Element): Unit = js.native
   def create(vData: Element, oKeyInfo: js.Any): Unit = js.native
+  
   /**
     * Attaches custom data to an Element or retrieves attached data.Usage:   data("myKey", myData)attaches
     * myData (which can be any JS data type, e.g. a number, a string, an object, or a function) to this
@@ -99,27 +107,32 @@ trait Element extends ManagedObject {
     * (using the key "myKey") before   data(null)removes all data   data()returns all data, as a map
     */
   def data(): Unit = js.native
+  
   /**
     * Destroys all the customData in the aggregation <code>customData</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyCustomData(): Element = js.native
+  
   /**
     * Destroys all the dependents in the aggregation <code>dependents</code>.
     * @since 1.19
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyDependents(): Element = js.native
+  
   /**
     * Destroys the layoutData in the aggregation <code>layoutData</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyLayoutData(): Element = js.native
+  
   /**
     * Destroys the tooltip in the aggregationnamed <code>tooltip</code>.
     * @returns <code>this</code> to allow method chaining
     */
   def destroyTooltip(): Element = js.native
+  
   /**
     * Allows the parent of a control to enhance the aria information during rendering.This function is
     * called by the RenderManager's writeAccessibilityState methodfor the parent of the currently rendered
@@ -129,12 +142,14 @@ trait Element extends ManagedObject {
     * @returns map of enhanced aria properties
     */
   def enhanceAccessibilityState(oElement: Element, mAriaProps: js.Any): js.Any = js.native
+  
   /**
     * Cleans up the element instance before destruction.Applications must not call this hook method
     * directly, it is called by the frameworkwhen the element is {@link #destroy destroyed}.Subclasses of
     * Element should override this hook to implement any necessary cleanup.
     */
   def exit(): Unit = js.native
+  
   /**
     * Searches and returns an array of child elements and controls which arereferenced within an
     * aggregation or aggregations of child elements/controls.This can be either done recursive or
@@ -143,21 +158,25 @@ trait Element extends ManagedObject {
     * @returns array of child elements and controls
     */
   def findElements(bRecursive: Boolean): js.Array[Element] = js.native
+  
   /**
     * Sets the focus to the stored focus DOM reference
     */
   def focus(): Unit = js.native
+  
   /**
     * Gets content of aggregation <code>customData</code>.Custom Data, a data structure like a map
     * containing arbitrary key value pairs.
     */
   def getCustomData(): js.Array[CustomData] = js.native
+  
   /**
     * Gets content of aggregation <code>dependents</code>.Dependents are not rendered, but their
     * databinding context and lifecycle are bound to the aggregating Element.
     * @since 1.19
     */
   def getDependents(): js.Array[Control] = js.native
+  
   /**
     * Returns the best suitable DOM Element that represents this UI5 Element.By default the DOM Element
     * with the same ID as this Element is returned.Subclasses should override this method if the lookup
@@ -171,23 +190,27 @@ trait Element extends ManagedObject {
     * @returns The Element's DOM Element sub DOM Element or null
     */
   def getDomRef(sSuffix: String): Element = js.native
+  
   /**
     * Get the element binding object for a specific model
     * @param sModelName the name of the model
     * @returns the element binding for the given model name
     */
   def getElementBinding(sModelName: String): Binding = js.native
+  
   /**
     * Returns the DOM Element that should get the focus.To be overwritten by the specific control method.
     * @returns Returns the DOM Element that should get the focus
     */
   def getFocusDomRef(): Element = js.native
+  
   /**
     * Returns an object representing the serialized focus informationTo be overwritten by the specific
     * control method
     * @returns an object representing the serialized focus information
     */
   def getFocusInfo(): js.Any = js.native
+  
   /**
     * Gets content of aggregation <code>layoutData</code>.Defines the layout constraints for this control
     * when it is used inside a Layout.LayoutData classes are typed classes and must match the embedding
@@ -195,6 +218,7 @@ trait Element extends ManagedObject {
     * Element.
     */
   def getLayoutData(): LayoutData = js.native
+  
   /**
     * Returns the tooltip for this element if any or an undefined value.The tooltip can either be a simple
     * string or a subclass of{@link sap.ui.core.TooltipBase}.Callers that are only interested in tooltips
@@ -205,12 +229,14 @@ trait Element extends ManagedObject {
     * @returns The tooltip for this Element.
     */
   def getTooltip(): String | TooltipBase = js.native
+  
   /**
     * Returns the tooltip for this element but only if it is a simple string.Otherwise an undefined value
     * is returned.
     * @returns string tooltip or undefined
     */
   def getTooltip_AsString(): String = js.native
+  
   /**
     * Returns the main text for the current tooltip or undefined if there is no such text.If the tooltip
     * is an object derived from sap.ui.core.Tooltip, then the text propertyof that object is returned.
@@ -218,6 +244,7 @@ trait Element extends ManagedObject {
     * @returns text of the current tooltip or undefined
     */
   def getTooltip_Text(): String = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.CustomData</code> in the aggregation
     * <code>customData</code>.and returns its index if found or -1 otherwise.
@@ -225,6 +252,7 @@ trait Element extends ManagedObject {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfCustomData(oCustomData: CustomData): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation
     * <code>dependents</code>.and returns its index if found or -1 otherwise.
@@ -233,12 +261,14 @@ trait Element extends ManagedObject {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfDependent(oDependent: Control): Double = js.native
+  
   /**
     * Initializes the element instance after creation.Applications must not call this hook method
     * directly, it is called by the frameworkwhile the constructor of an element is executed.Subclasses of
     * Element should override this hook to implement any necessary initialization.
     */
   def init(): Unit = js.native
+  
   /**
     * Inserts a customData into the aggregation <code>customData</code>.
     * @param oCustomData the customData to insert; if empty, nothing is inserted
@@ -249,6 +279,7 @@ trait Element extends ManagedObject {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertCustomData(oCustomData: CustomData, iIndex: Double): Element = js.native
+  
   /**
     * Inserts a dependent into the aggregation <code>dependents</code>.
     * @since 1.19
@@ -260,6 +291,7 @@ trait Element extends ManagedObject {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertDependent(oDependent: Control, iIndex: Double): Element = js.native
+  
   /**
     * This function either calls set[sPropertyName] or get[sPropertyName] with the specified property
     * namedepending if an <code>oValue</code> is provided or not.
@@ -270,12 +302,14 @@ trait Element extends ManagedObject {
     */
   def prop(sPropertyName: String): js.Any | Element = js.native
   def prop(sPropertyName: String, oValue: js.Any): js.Any | Element = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>customData</code>.Additionally, it unregisters
     * them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllCustomData(): js.Array[CustomData] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>dependents</code>.Additionally, it unregisters
     * them from the hosting UIArea.
@@ -283,6 +317,7 @@ trait Element extends ManagedObject {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllDependents(): js.Array[Control] = js.native
+  
   def removeCustomData(vCustomData: String): CustomData = js.native
   /**
     * Removes a customData from the aggregation <code>customData</code>.
@@ -291,6 +326,7 @@ trait Element extends ManagedObject {
     */
   def removeCustomData(vCustomData: Double): CustomData = js.native
   def removeCustomData(vCustomData: CustomData): CustomData = js.native
+  
   def removeDependent(vDependent: String): Control = js.native
   /**
     * Removes a dependent from the aggregation <code>dependents</code>.
@@ -300,6 +336,7 @@ trait Element extends ManagedObject {
     */
   def removeDependent(vDependent: Double): Control = js.native
   def removeDependent(vDependent: Control): Control = js.native
+  
   /**
     * Removes the given delegate from this element.This method will remove all registrations of the given
     * delegate, not only one.
@@ -308,18 +345,21 @@ trait Element extends ManagedObject {
     * @returns Returns <code>this</code> to allow method chaining
     */
   def removeEventDelegate(oDelegate: js.Any): Element = js.native
+  
   /**
     * This triggers immediate rerendering of its parent and thus of itself and its children.<br/> As
     * <code>sap.ui.core.Element</code> "bubbles up" thererender, changes to child-<code>Elements</code>
     * will also result in immediate rerendering of the whole sub tree.
     */
   def rerender(): Unit = js.native
+  
   /**
     * Sets the {@link sap.ui.core.LayoutData} defining the layout constraintsfor this control when it is
     * used inside a layout.
     * @param oLayoutData undefined
     */
   def setLayoutData(oLayoutData: LayoutData): Unit = js.native
+  
   /**
     * Sets a new tooltip for this object. The tooltip can either be a simple string(which in most cases
     * will be rendered as the <code>title</code> attribute of thisElement) or an instance of {@link
@@ -328,6 +368,7 @@ trait Element extends ManagedObject {
     */
   def setTooltip(vTooltip: String): Unit = js.native
   def setTooltip(vTooltip: TooltipBase): Unit = js.native
+  
   /**
     * Removes the defined binding context of this object, all bindings will now resolverelative to the
     * parent context again.
@@ -336,4 +377,3 @@ trait Element extends ManagedObject {
     */
   def unbindElement(sModelName: String): ManagedObject = js.native
 }
-

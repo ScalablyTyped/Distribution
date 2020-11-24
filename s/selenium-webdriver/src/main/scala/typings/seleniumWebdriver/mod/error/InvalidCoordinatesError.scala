@@ -2,7 +2,7 @@ package typings.seleniumWebdriver.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The coordinates provided to an interactions operation are invalid.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class InvalidCoordinatesError () extends WebDriverError {
   def this(message: String) = this()
 }
-

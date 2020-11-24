@@ -2,16 +2,15 @@ package typings.asn1js.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LocalUniversalStringValueParams extends LocalHexBlockParams
-
 object LocalUniversalStringValueParams {
+  
   @scala.inline
   def apply(): LocalUniversalStringValueParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalUniversalStringValueParams]
   }
 }
-

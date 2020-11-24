@@ -7,11 +7,12 @@ import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/bloomMergePostProcess", JSImport.Namespace)
 @js.native
 object bloomMergePostProcessMod extends js.Object {
+  
   @js.native
   class BloomMergePostProcess protected () extends PostProcess {
     /**
@@ -34,141 +35,16 @@ object bloomMergePostProcessMod extends js.Object {
       blurred: PostProcess,
       /** Weight of the bloom to be added to the original input. */
     weight: Double,
-      options: Double,
-      camera: Nullable[Camera]
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      blurred: PostProcess,
-      /** Weight of the bloom to be added to the original input. */
-    weight: Double,
-      options: PostProcessOptions,
-      camera: Nullable[Camera]
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      blurred: PostProcess,
-      /** Weight of the bloom to be added to the original input. */
-    weight: Double,
-      options: Double,
+      options: Double | PostProcessOptions,
       camera: Nullable[Camera],
-      samplingMode: Double
+      samplingMode: js.UndefOr[Double],
+      engine: js.UndefOr[Engine],
+      reusable: js.UndefOr[Boolean],
+      textureType: js.UndefOr[Double],
+      blockCompilation: js.UndefOr[Boolean]
     ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      blurred: PostProcess,
-      /** Weight of the bloom to be added to the original input. */
-    weight: Double,
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      blurred: PostProcess,
-      /** Weight of the bloom to be added to the original input. */
-    weight: Double,
-      options: Double,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      blurred: PostProcess,
-      /** Weight of the bloom to be added to the original input. */
-    weight: Double,
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      blurred: PostProcess,
-      /** Weight of the bloom to be added to the original input. */
-    weight: Double,
-      options: Double,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      blurred: PostProcess,
-      /** Weight of the bloom to be added to the original input. */
-    weight: Double,
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      blurred: PostProcess,
-      /** Weight of the bloom to be added to the original input. */
-    weight: Double,
-      options: Double,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      blurred: PostProcess,
-      /** Weight of the bloom to be added to the original input. */
-    weight: Double,
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      blurred: PostProcess,
-      /** Weight of the bloom to be added to the original input. */
-    weight: Double,
-      options: Double,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double,
-      blockCompilation: Boolean
-    ) = this()
-    def this(
-      name: String,
-      originalFromInput: PostProcess,
-      blurred: PostProcess,
-      /** Weight of the bloom to be added to the original input. */
-    weight: Double,
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double,
-      blockCompilation: Boolean
-    ) = this()
+    
     /** Weight of the bloom to be added to the original input. */
     var weight: Double = js.native
   }
-  
 }
-

@@ -3,7 +3,7 @@ package typings.playcanvas.pc
 import typings.playcanvas.anon.Border
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A pc.TextureAtlas contains a number of frames from a texture. Each frame
@@ -31,24 +31,24 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TextureAtlas extends EventHandler {
-  /**
-    * Contains frames which define portions of the texture atlas.
-    */
-  var frames: js.Any = js.native
-  /**
-    * The texture atlas.
-    */
-  var texture: Texture = js.native
+  
   /**
     * Free up the underlying texture owned by the atlas.
     */
   def destroy(): Unit = js.native
+  
+  /**
+    * Contains frames which define portions of the texture atlas.
+    */
+  var frames: js.Any = js.native
+  
   /**
     * @example
     * atlas.removeFrame('1');
     * @param key - The key of the frame.
     */
   def removeFrame(key: String): Unit = js.native
+  
   /**
     * @example
     * atlas.setFrame('1', {
@@ -64,5 +64,9 @@ trait TextureAtlas extends EventHandler {
     * as follows: left, bottom, right, top border in pixels.
     */
   def setFrame(key: String, data: Border): Unit = js.native
+  
+  /**
+    * The texture atlas.
+    */
+  var texture: Texture = js.native
 }
-

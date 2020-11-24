@@ -2,7 +2,7 @@ package typings.stylelintWebpackPlugin.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @typedef {import('webpack').Compiler} Compiler */
 @JSImport("stylelint-webpack-plugin", JSImport.Default)
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 class default () extends StylelintWebpackPlugin {
   def this(options: js.Object) = this()
 }
-

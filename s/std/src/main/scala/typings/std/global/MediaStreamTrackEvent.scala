@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.MediaStreamTrackEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MediaStreamTrackEvent")
 @js.native
@@ -12,7 +12,6 @@ class MediaStreamTrackEvent protected ()
   extends typings.std.MediaStreamTrackEvent {
   def this(`type`: java.lang.String, eventInitDict: MediaStreamTrackEventInit) = this()
 }
-
 @JSGlobal("MediaStreamTrackEvent")
 @js.native
 object MediaStreamTrackEvent
@@ -21,4 +20,3 @@ object MediaStreamTrackEvent
       /* eventInitDict */ MediaStreamTrackEventInit, 
       typings.std.MediaStreamTrackEvent
     ]
-

@@ -2,10 +2,11 @@ package typings.socketIoRedis.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SocketIORedisStatic extends js.Object {
+  
   /**
     * Default Redis Adapter constructor
     */
@@ -23,4 +24,3 @@ trait SocketIORedisStatic extends js.Object {
   def apply(uri: String): RedisAdapter = js.native
   def apply(uri: String, opts: SocketIORedisOptions): RedisAdapter = js.native
 }
-

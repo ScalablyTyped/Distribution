@@ -6,7 +6,7 @@ import typings.angularMocks.mod.angularAugmentingMod.mock.IBrowserTriggerEventDa
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////////
 // functions attached to global object (window)
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object global extends js.Object {
-  val inject: IInjectStatic = js.native
+  
   /**
     * This is a global (window) function that is only available when the `ngMock` module is included.
     * It can be used to trigger a native browser event on an element, which is useful for unit testing.
@@ -35,5 +35,6 @@ object global extends js.Object {
   def browserTrigger(element: Element, eventType: js.UndefOr[scala.Nothing], eventData: IBrowserTriggerEventData): Unit = js.native
   def browserTrigger(element: Element, eventType: String): Unit = js.native
   def browserTrigger(element: Element, eventType: String, eventData: IBrowserTriggerEventData): Unit = js.native
+  
+  val inject: IInjectStatic = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.xrm.Xrm.Events.ContextSensitiveHandler
 import typings.xrm.Xrm.Events.ProcessStatusChangeHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the formContext.data.process API.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ProcessManager extends js.Object {
+  
   /**
     * Use this to add a function as an event handler for the OnPreProcessStatusChange event so that it will be called before the
     * business process flow status changes.
@@ -24,6 +25,7 @@ trait ProcessManager extends js.Object {
     *                event handler.
     */
   def addOnPreProcessStatusChange(handler: ContextSensitiveHandler): Unit = js.native
+  
   /**
     * Use this to add a function as an event handler for the OnPreStageChange event so that it will be called before the
     * business process flow stage changes.
@@ -35,6 +37,7 @@ trait ProcessManager extends js.Object {
     *                event handler.
     */
   def addOnPreStageChange(handler: ContextSensitiveHandler): Unit = js.native
+  
   /**
     * Use this to add a function as an event handler for the OnPreProcessStatusChange event so that it will be called when the
     * business process flow status changes.
@@ -46,6 +49,7 @@ trait ProcessManager extends js.Object {
     *                event handler.
     */
   def addOnProcessStatusChange(handler: ContextSensitiveHandler): Unit = js.native
+  
   /**
     * Use this to add a function as an event handler for the OnStageChange event so that it will be called when the
     * business process flow stage changes.
@@ -57,6 +61,7 @@ trait ProcessManager extends js.Object {
     *                event handler.
     */
   def addOnStageChange(handler: ContextSensitiveHandler): Unit = js.native
+  
   /**
     * Use this to add a function as an event handler for the OnStageSelected event so that it will be called
     * when a business process flow stage is selected.
@@ -68,6 +73,7 @@ trait ProcessManager extends js.Object {
     *                event handler.
     */
   def addOnStageSelected(handler: ContextSensitiveHandler): Unit = js.native
+  
   /**
     * Use this method to get a collection of stages currently in the active path with methods to interact with the
     * stages displayed in the business process flow control. The active path represents stages currently rendered in
@@ -79,16 +85,19 @@ trait ProcessManager extends js.Object {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
   def getActivePath(): ItemCollection[Stage] = js.native
+  
   /**
     * Returns a Process object representing the active process.
     * @returns current active process.
     */
   def getActiveProcess(): Process = js.native
+  
   /**
     * Returns a Stage object representing the active stage.
     * @returns current active stage.
     */
   def getActiveStage(): Stage = js.native
+  
   /**
     * Use this method to asynchronously retrieve the enabled business process flows that the user can switch to for an
     * entity.
@@ -101,74 +110,87 @@ trait ProcessManager extends js.Object {
     *                         want to change the process manually.
     */
   def getEnabledProcesses(callbackFunction: js.Function1[/* enabledProcesses */ ProcessDictionary, Unit]): Unit = js.native
+  
   /**
     * Use this method to get the unique identifier of the process instance
     * @returns The unique identifier of the process instance
     */
   def getInstanceId(): String = js.native
+  
   /**
     * Use this method to get the name of the process instance
     * @returns The name of the process instance
     */
   def getInstanceName(): String = js.native
+  
   /**
     * Returns all process instances for the entity record that the calling user has access to.
     * @param callbackFunction (Optional) a function to call when the operation is complete.
     */
   def getProcessInstances(): Unit = js.native
   def getProcessInstances(callbackFunction: GetProcessInstancesDelegate): Unit = js.native
+  
   /**
     * Use this method to get the currently selected stage.
     * @returns The currently selected stage.
     */
   def getSelectedStage(): Stage = js.native
+  
   /**
     * Use this method to get the current status of the process instance
     * @returns The current status of the process
     */
   def getStatus(): ProcessStatus = js.native
+  
   /**
     * Progresses to the next stage.
     * @param callbackFunction (Optional) A function to call when the operation is complete.
     */
   def moveNext(): Unit = js.native
   def moveNext(callbackFunction: ProcessCallbackDelegate): Unit = js.native
+  
   /**
     * Moves to the previous stage.
     * @param callbackFunction (Optional) A function to call when the operation is complete.
     */
   def movePrevious(): Unit = js.native
   def movePrevious(callbackFunction: ProcessCallbackDelegate): Unit = js.native
+  
   /**
     * Use this to remove a function as an event handler for the OnPreProcessStatusChange event.
     * @param handler If an anonymous function is set using the addOnPreProcessStatusChange method it
     *                cannot be removed using this method.
     */
   def removeOnPreProcessStatusChange(handler: ProcessStatusChangeHandler): Unit = js.native
+  
   /**
     * Use this to remove a function as an event handler for the OnPreStageChange event.
     * @param handler If an anonymous function is set using the addOnPreStageChange method it
     *                cannot be removed using this method.
     */
   def removeOnPreStageChange(handler: ContextSensitiveHandler): Unit = js.native
+  
   /**
     * Use this to remove a function as an event handler for the OnProcessStatusChange event.
     * @param handler If an anonymous function is set using the addOnProcessStatusChange method it
     *                cannot be removed using this method.
     */
   def removeOnProcessStatusChange(handler: ProcessStatusChangeHandler): Unit = js.native
+  
   /**
     * Use this to remove a function as an event handler for the OnStageChange event.
     * @param handler If an anonymous function is set using the addOnStageChange method it
     *                cannot be removed using this method.
     */
   def removeOnStageChange(handler: ContextSensitiveHandler): Unit = js.native
+  
   /**
     * Use this to remove a function as an event handler for the OnStageChange event.
     * @param handler If an anonymous function is set using the addOnStageChange method it
     *                cannot be removed using this method.
     */
   def removeOnStageSelected(handler: ContextSensitiveHandler): Unit = js.native
+  
   /**
     * Set a Process as the active process.
     * @param processId The Id of the process to make the active process.
@@ -176,6 +198,7 @@ trait ProcessManager extends js.Object {
     */
   def setActiveProcess(processId: String): Unit = js.native
   def setActiveProcess(processId: String, callbackFunction: ProcessCallbackDelegate): Unit = js.native
+  
   /**
     * Sets a process instance as the active instance
     * @param processInstanceId The Id of the process instance to make the active instance.
@@ -183,6 +206,7 @@ trait ProcessManager extends js.Object {
     */
   def setActiveProcessInstance(processInstanceId: String): Unit = js.native
   def setActiveProcessInstance(processInstanceId: String, callbackFunction: SetProcessInstanceDelegate): Unit = js.native
+  
   /**
     * Set a stage as the active stage.
     * @param stageId the Id of the stage to make the active stage.
@@ -190,6 +214,7 @@ trait ProcessManager extends js.Object {
     */
   def setActiveStage(stageId: String): Unit = js.native
   def setActiveStage(stageId: String, callbackFunction: ProcessCallbackDelegate): Unit = js.native
+  
   /**
     * Use this method to set the current status of the process instance
     * @param status The new status for the process
@@ -198,4 +223,3 @@ trait ProcessManager extends js.Object {
   def setStatus(status: ProcessStatus): Unit = js.native
   def setStatus(status: ProcessStatus, callbackFunction: ProcessSetStatusDelegate): Unit = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Mylibrary$Annotations")
 @js.native
 class ResourceMylibraryAnnotations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * books.mylibrary.annotations.delete
     * @desc Deletes an annotation.
@@ -42,6 +44,7 @@ class ResourceMylibraryAnnotations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * books.mylibrary.annotations.insert
     * @desc Inserts a new annotation.
@@ -74,6 +77,7 @@ class ResourceMylibraryAnnotations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnnotation]
   ): Unit = js.native
+  
   /**
     * books.mylibrary.annotations.list
     * @desc Retrieves a list of annotations, possibly filtered.
@@ -111,6 +115,7 @@ class ResourceMylibraryAnnotations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnnotations]
   ): Unit = js.native
+  
   /**
     * books.mylibrary.annotations.summary
     * @desc Gets the summary of specified layers.
@@ -143,6 +148,7 @@ class ResourceMylibraryAnnotations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnnotationsSummary]
   ): Unit = js.native
+  
   /**
     * books.mylibrary.annotations.update
     * @desc Updates an existing annotation.
@@ -174,4 +180,3 @@ class ResourceMylibraryAnnotations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAnnotation]
   ): Unit = js.native
 }
-

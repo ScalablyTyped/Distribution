@@ -4,7 +4,7 @@ import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorModel.mod.Slice
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-transform", "ReplaceStep")
 @js.native
@@ -21,4 +21,3 @@ class ReplaceStep_[S /* <: Schema[_, _] */] protected () extends Step[S] {
   def this(from: Double, to: Double, slice: Slice[S]) = this()
   def this(from: Double, to: Double, slice: Slice[S], structure: Boolean) = this()
 }
-

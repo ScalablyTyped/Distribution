@@ -2,9 +2,28 @@ package typings.updateNotifier
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object updateNotifierStrings {
+  
+  @scala.inline
+  def build: build = "build".asInstanceOf[build]
+  
+  @scala.inline
+  def latest: latest = "latest".asInstanceOf[latest]
+  
+  @scala.inline
+  def major: major = "major".asInstanceOf[major]
+  
+  @scala.inline
+  def minor: minor = "minor".asInstanceOf[minor]
+  
+  @scala.inline
+  def patch: patch = "patch".asInstanceOf[patch]
+  
+  @scala.inline
+  def prerelease: prerelease = "prerelease".asInstanceOf[prerelease]
+  
   @js.native
   sealed trait build extends js.Object
   
@@ -22,18 +41,4 @@ object updateNotifierStrings {
   
   @js.native
   sealed trait prerelease extends js.Object
-  
-  @scala.inline
-  def build: build = "build".asInstanceOf[build]
-  @scala.inline
-  def latest: latest = "latest".asInstanceOf[latest]
-  @scala.inline
-  def major: major = "major".asInstanceOf[major]
-  @scala.inline
-  def minor: minor = "minor".asInstanceOf[minor]
-  @scala.inline
-  def patch: patch = "patch".asInstanceOf[patch]
-  @scala.inline
-  def prerelease: prerelease = "prerelease".asInstanceOf[prerelease]
 }
-

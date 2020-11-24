@@ -2,11 +2,12 @@ package typings.falcor.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("falcor", "Observable")
 @js.native
 class Observable[T] () extends js.Object {
+  
   /**
     * The forEach method is a synonym for {@link Observable.prototype.subscribe} and triggers the execution of the Observable, causing the values within to be pushed to a callback.
     * An Observable is like a pipe of water that is closed.
@@ -37,6 +38,7 @@ class Observable[T] () extends js.Object {
     onError: ObservableOnErrorCallback,
     onCompleted: ObservableOnCompletedCallback
   ): Subscription = js.native
+  
   /**
     * The subscribe method is a synonym for {@link Observable.prototype.forEach} and triggers the execution of the Observable, causing the values within to be pushed to a callback.
     * An Observable is like a pipe of water that is closed.
@@ -67,4 +69,3 @@ class Observable[T] () extends js.Object {
     onCompleted: ObservableOnCompletedCallback
   ): Subscription = js.native
 }
-

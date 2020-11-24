@@ -10,8 +10,8 @@ Parse HTTP Request and Response from String
 | Full name          | http-string-parser |
 | Keywords           | http, message, request, response, parser, string, raw, bare |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 815958 |
+| # dependents       | 24 |
+| # downloads        | 989373 |
 | # stars            | 1 |
 
 ## Links

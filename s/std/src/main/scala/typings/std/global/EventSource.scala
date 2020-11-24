@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.EventSourceInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("EventSource")
 @js.native
@@ -14,7 +14,6 @@ class EventSource protected ()
   def this(url: java.lang.String) = this()
   def this(url: java.lang.String, eventSourceInitDict: EventSourceInit) = this()
 }
-
 @JSGlobal("EventSource")
 @js.native
 object EventSource
@@ -24,8 +23,10 @@ object EventSource
       /* eventSourceInitDict */ EventSourceInit, 
       typings.std.EventSource
     ] {
+  
   val CLOSED: Double = js.native
+  
   val CONNECTING: Double = js.native
+  
   val OPEN: Double = js.native
 }
-

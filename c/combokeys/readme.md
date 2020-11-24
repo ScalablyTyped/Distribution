@@ -11,8 +11,8 @@ Handles keyboard shortcuts in the browser
 | Full name          | combokeys |
 | Keywords           | keyboard, shortcuts, events, browser |
 | # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 627693 |
+| # dependents       | 20 |
+| # downloads        | 764737 |
 | # stars            | 9 |
 
 ## Links

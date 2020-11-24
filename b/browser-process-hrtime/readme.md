@@ -10,9 +10,9 @@ Shim for process.hrtime in the browser
 | ------------------ | :-------------: |
 | Full name          | browser-process-hrtime |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 81 |
-| # downloads        | 290851432 |
+| # releases         | 1 |
+| # dependents       | 96 |
+| # downloads        | 334554192 |
 | # stars            | 2 |
 
 ## Links

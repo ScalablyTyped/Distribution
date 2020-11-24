@@ -2,14 +2,12 @@ package typings.superstruct.indexCjsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("superstruct/lib/index.cjs", "refinement")
 @js.native
 object refinement extends js.Object {
-  /**
-    * Augment a `Struct` to add an additional refinement to the validation.
-    */
+  
   /**
     * Augment a `Struct` to add an additional refinement to the validation.
     */
@@ -19,4 +17,3 @@ object refinement extends js.Object {
     refiner: js.Function2[/* value */ T, /* context */ StructContext, StructResult]
   ): Struct_[T, _] = js.native
 }
-

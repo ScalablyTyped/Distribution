@@ -2,14 +2,14 @@ package typings.pixiSpine.PIXI.spine.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EventType extends js.Object
-
 @JSGlobal("PIXI.spine.core.EventType")
 @js.native
 object EventType extends js.Object {
+  
   @js.native
   sealed trait complete extends EventType
   
@@ -27,6 +27,4 @@ object EventType extends js.Object {
   
   @js.native
   sealed trait start extends EventType
-  
 }
-

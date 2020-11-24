@@ -4,11 +4,10 @@ import typings.arcgisJsApi.esri.HistogramRangeSliderViewModel
 import typings.arcgisJsApi.esri.HistogramRangeSliderViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/widgets/HistogramRangeSlider/HistogramRangeSliderViewModel", JSImport.Namespace)
 @js.native
 class Class () extends HistogramRangeSliderViewModel {
   def this(properties: HistogramRangeSliderViewModelProperties) = this()
 }
-

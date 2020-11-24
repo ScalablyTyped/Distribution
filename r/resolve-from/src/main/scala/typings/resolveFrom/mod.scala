@@ -2,11 +2,12 @@ package typings.resolveFrom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("resolve-from", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
   	Resolve the path of a module like [`require.resolve()`](https://nodejs.org/api/globals.html#globals_require_resolve) but from a given path.
   	@param fromDirectory - Directory to resolve from.
@@ -21,6 +22,7 @@ object mod extends js.Object {
   	```
   	*/
   def apply(fromDirectory: String, moduleId: String): String = js.native
+  
   /**
   	Resolve the path of a module like [`require.resolve()`](https://nodejs.org/api/globals.html#globals_require_resolve) but from a given path.
   	@param fromDirectory - Directory to resolve from.
@@ -29,4 +31,3 @@ object mod extends js.Object {
   	*/
   def silent(fromDirectory: String, moduleId: String): js.UndefOr[String] = js.native
 }
-

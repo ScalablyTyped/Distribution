@@ -8,11 +8,11 @@ import typings.i18n.i18n.Replacements
 import typings.i18n.i18n.TranslateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait i18nAPI extends js.Object {
-  var locale: String = js.native
+  
   //#region __()
   /**
     * Translate the given phrase using locale configuration
@@ -29,6 +29,7 @@ trait i18nAPI extends js.Object {
   def __(phraseOrOptions: String, replacements: Replacements): String = js.native
   def __(phraseOrOptions: TranslateOptions, replace: String*): String = js.native
   def __(phraseOrOptions: TranslateOptions, replacements: Replacements): String = js.native
+  
   //#endregion
   //#region __h()
   /**
@@ -37,6 +38,7 @@ trait i18nAPI extends js.Object {
     * @returns The phrase in each language
     */
   def __h(phrase: String): js.Array[HashedList] = js.native
+  
   //#endregion
   //#region __l()
   /**
@@ -45,6 +47,7 @@ trait i18nAPI extends js.Object {
     * @returns The phrase in each language
     */
   def __l(phrase: String): js.Array[String] = js.native
+  
   //#endregion
   //#region __mf()
   /**
@@ -62,6 +65,7 @@ trait i18nAPI extends js.Object {
   def __mf(phraseOrOptions: String, replacements: Replacements): String = js.native
   def __mf(phraseOrOptions: TranslateOptions, replace: js.Any*): String = js.native
   def __mf(phraseOrOptions: TranslateOptions, replacements: Replacements): String = js.native
+  
   /**
     * Translate with plural condition the given phrase and count using locale configuration
     * @param options - Options for plural translate
@@ -88,6 +92,7 @@ trait i18nAPI extends js.Object {
     * @returns The translated phrase
     */
   def __n(singular: String, plural: String, count: Double): String = js.native
+  
   /**
     * Get the catalog for the given locale
     * @param locale - The locale to get catalog for
@@ -101,16 +106,19 @@ trait i18nAPI extends js.Object {
     */
   @JSName("getCatalog")
   def getCatalog_GlobalCatalog(): GlobalCatalog = js.native
+  
   //#endregion
   /**
     * Get the current active locale
     * @returns The current locale in request
     */
   def getLocale(): String = js.native
+  
+  var locale: String = js.native
+  
   /**
     * Change the current active locale
     * @param locale - The locale to set as default
     */
   def setLocale(locale: String): Unit = js.native
 }
-

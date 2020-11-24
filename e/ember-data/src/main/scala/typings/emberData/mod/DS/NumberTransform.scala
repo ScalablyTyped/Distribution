@@ -2,7 +2,7 @@ package typings.emberData.mod.DS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `DS.NumberTransform` class is used to serialize and deserialize
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "DS.NumberTransform")
 @js.native
 class NumberTransform () extends Transform
-

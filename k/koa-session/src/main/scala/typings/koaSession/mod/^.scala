@@ -6,12 +6,12 @@ import typings.koa.mod.Middleware
 import typings.koaSession.anon.Partialopts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("koa-session", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(CONFIG: Partialopts, app: typings.koa.mod.^[DefaultState, DefaultContext]): Middleware[DefaultState, DefaultContext] = js.native
   def apply(app: typings.koa.mod.^[DefaultState, DefaultContext]): Middleware[DefaultState, DefaultContext] = js.native
 }
-

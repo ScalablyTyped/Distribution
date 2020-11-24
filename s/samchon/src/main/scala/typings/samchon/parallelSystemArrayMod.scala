@@ -6,28 +6,33 @@ import typings.samchon.invokeMod.Invoke
 import typings.samchon.parallelSystemMod.ParallelSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/parallel/ParallelSystemArray", JSImport.Namespace)
 @js.native
 object parallelSystemArrayMod extends js.Object {
+  
   @js.native
   /**
     * Default Constructor.
     */
   abstract class ParallelSystemArray[System /* <: ParallelSystem */] () extends ExternalSystemArray[System] {
-    /**
-      * @hidden
-      */
-    var history_sequence_ : js.Any = js.native
+    
     /**
       * @hidden
       */
     /* protected */ def _Complete_history(history: InvokeHistory): Boolean = js.native
+    
     /**
       * @hidden
       */
     /* protected */ def _Normalize_performance(): Unit = js.native
+    
+    /**
+      * @hidden
+      */
+    var history_sequence_ : js.Any = js.native
+    
     /**
       * Send an {@link Invoke} message with range of pieces.
       *
@@ -61,6 +66,7 @@ object parallelSystemArrayMod extends js.Object {
       * @see {@link sendSegmentData}, {@link ParallelSystem.getPerformacen}
       */
     def sendPieceData(invoke: Invoke, first: Double, last: Double): Double = js.native
+    
     /**
       * Send an {@link Invoke} message with segment size.
       *
@@ -91,6 +97,4 @@ object parallelSystemArrayMod extends js.Object {
       */
     def sendSegmentData(invoke: Invoke, size: Double): Double = js.native
   }
-  
 }
-

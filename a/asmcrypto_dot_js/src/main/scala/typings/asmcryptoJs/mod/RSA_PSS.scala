@@ -3,7 +3,7 @@ package typings.asmcryptoJs.mod
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asmcrypto.js", "RSA_PSS")
 @js.native
@@ -16,4 +16,3 @@ class RSA_PSS protected ()
   def this(key: js.Array[Uint8Array], hash: typings.asmcryptoJs.sha256Mod.Sha256, saltLength: Double) = this()
   def this(key: js.Array[Uint8Array], hash: typings.asmcryptoJs.sha512Mod.Sha512, saltLength: Double) = this()
 }
-

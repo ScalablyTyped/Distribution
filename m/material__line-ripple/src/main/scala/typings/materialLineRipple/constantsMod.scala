@@ -2,11 +2,12 @@ package typings.materialLineRipple
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/line-ripple/constants", JSImport.Namespace)
 @js.native
 object constantsMod extends js.Object {
+  
   /**
     * @license
     * Copyright 2018 Google Inc.
@@ -31,9 +32,9 @@ object constantsMod extends js.Object {
     */
   @js.native
   object cssClasses extends js.Object {
+    
     var LINE_RIPPLE_ACTIVE: String = js.native
+    
     var LINE_RIPPLE_DEACTIVATING: String = js.native
   }
-  
 }
-

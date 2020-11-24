@@ -2,11 +2,12 @@ package typings.luminoDatagrid.datagridMod.DataGrid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/datagrid/lib/datagrid", "DataGrid.copyFormatGeneric")
 @js.native
 object copyFormatGeneric extends js.Object {
+  
   /**
     * A generic format function for the copy handler.
     *
@@ -19,4 +20,3 @@ object copyFormatGeneric extends js.Object {
     */
   def apply(args: CopyFormatArgs): String = js.native
 }
-

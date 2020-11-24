@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "num-sort"
-version := "2.1.0-9375df"
+version := "2.1.0-9fd3a5"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

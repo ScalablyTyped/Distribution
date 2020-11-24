@@ -5,7 +5,7 @@ import typings.uirouterCore.stateInterfaceMod.StateOrName
 import typings.uirouterCore.transitionInterfaceMod.TransitionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "core.TargetState")
 @js.native
@@ -44,12 +44,11 @@ class TargetState protected ()
     _options: TransitionOptions
   ) = this()
 }
-
 /* static members */
 @JSImport("@uirouter/angularjs", "core.TargetState")
 @js.native
 object TargetState extends js.Object {
+  
   /** Returns true if the object has a state property that might be a state or state name */
   def isDef(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean = js.native
 }
-

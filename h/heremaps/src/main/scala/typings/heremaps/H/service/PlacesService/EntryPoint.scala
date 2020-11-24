@@ -2,17 +2,17 @@ package typings.heremaps.H.service.PlacesService
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EntryPoint extends js.Object
-
 /**
   * List of available entry points
   */
 @JSGlobal("H.service.PlacesService.EntryPoint")
 @js.native
 object EntryPoint extends js.Object {
+  
   @js.native
   sealed trait AROUND extends EntryPoint
   
@@ -30,6 +30,4 @@ object EntryPoint extends js.Object {
   
   @js.native
   sealed trait SUGGEST extends EntryPoint
-  
 }
-

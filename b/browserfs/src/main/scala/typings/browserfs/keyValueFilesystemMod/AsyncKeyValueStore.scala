@@ -5,10 +5,11 @@ import typings.browserfs.browserfsStrings.readwrite
 import typings.browserfs.fileSystemMod.BFSOneArgCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AsyncKeyValueStore extends js.Object {
+  
   def beginTransaction(`type`: String): AsyncKeyValueROTransaction = js.native
   /**
     * Begins a read-only transaction.
@@ -20,13 +21,14 @@ trait AsyncKeyValueStore extends js.Object {
     */
   @JSName("beginTransaction")
   def beginTransaction_readwrite(`type`: readwrite): AsyncKeyValueRWTransaction = js.native
+  
   /**
     * Empties the key-value store completely.
     */
   def clear(cb: BFSOneArgCallback): Unit = js.native
+  
   /**
     * The name of the key-value store.
     */
   def name(): String = js.native
 }
-

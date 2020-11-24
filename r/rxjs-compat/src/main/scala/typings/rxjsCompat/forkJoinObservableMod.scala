@@ -2,18 +2,19 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/observable/ForkJoinObservable", JSImport.Namespace)
 @js.native
 object forkJoinObservableMod extends js.Object {
+  
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @js.native
   class ForkJoinObservable[T] () extends js.Object
-  
   /* static members */
   @js.native
   object ForkJoinObservable extends js.Object {
+    
     def create[T](
       sources: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ js.Any)*
     ): js.Any = js.native
@@ -115,6 +116,4 @@ object forkJoinObservableMod extends js.Object {
       project: js.Function1[/* repeated */ T, R]
     ): js.Any = js.native
   }
-  
 }
-

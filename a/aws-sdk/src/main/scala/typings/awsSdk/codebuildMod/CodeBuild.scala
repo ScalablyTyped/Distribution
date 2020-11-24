@@ -1,17 +1,16 @@
 package typings.awsSdk.codebuildMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CodeBuild extends Service {
-  @JSName("config")
-  var config_CodeBuild: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Deletes one or more builds.
     */
@@ -25,6 +24,7 @@ trait CodeBuild extends Service {
     params: BatchDeleteBuildsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteBuildsOutput, Unit]
   ): Request[BatchDeleteBuildsOutput, AWSError] = js.native
+  
   /**
     * Retrieves information about one or more batch builds.
     */
@@ -38,6 +38,7 @@ trait CodeBuild extends Service {
     params: BatchGetBuildBatchesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetBuildBatchesOutput, Unit]
   ): Request[BatchGetBuildBatchesOutput, AWSError] = js.native
+  
   /**
     * Gets information about one or more builds.
     */
@@ -51,6 +52,7 @@ trait CodeBuild extends Service {
     params: BatchGetBuildsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetBuildsOutput, Unit]
   ): Request[BatchGetBuildsOutput, AWSError] = js.native
+  
   /**
     * Gets information about one or more build projects.
     */
@@ -64,6 +66,7 @@ trait CodeBuild extends Service {
     params: BatchGetProjectsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetProjectsOutput, Unit]
   ): Request[BatchGetProjectsOutput, AWSError] = js.native
+  
   /**
     *  Returns an array of report groups. 
     */
@@ -77,6 +80,7 @@ trait CodeBuild extends Service {
     params: BatchGetReportGroupsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetReportGroupsOutput, Unit]
   ): Request[BatchGetReportGroupsOutput, AWSError] = js.native
+  
   /**
     *  Returns an array of reports. 
     */
@@ -90,6 +94,10 @@ trait CodeBuild extends Service {
     params: BatchGetReportsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetReportsOutput, Unit]
   ): Request[BatchGetReportsOutput, AWSError] = js.native
+  
+  @JSName("config")
+  var config_CodeBuild: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a build project.
     */
@@ -103,6 +111,7 @@ trait CodeBuild extends Service {
     params: CreateProjectInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProjectOutput, Unit]
   ): Request[CreateProjectOutput, AWSError] = js.native
+  
   /**
     *  Creates a report group. A report group contains a collection of reports. 
     */
@@ -116,6 +125,7 @@ trait CodeBuild extends Service {
     params: CreateReportGroupInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateReportGroupOutput, Unit]
   ): Request[CreateReportGroupOutput, AWSError] = js.native
+  
   /**
     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, enables AWS CodeBuild to start rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in AWS CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
     */
@@ -129,6 +139,7 @@ trait CodeBuild extends Service {
     params: CreateWebhookInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateWebhookOutput, Unit]
   ): Request[CreateWebhookOutput, AWSError] = js.native
+  
   /**
     * Deletes a batch build.
     */
@@ -142,6 +153,7 @@ trait CodeBuild extends Service {
     params: DeleteBuildBatchInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteBuildBatchOutput, Unit]
   ): Request[DeleteBuildBatchOutput, AWSError] = js.native
+  
   /**
     *  Deletes a build project. When you delete a project, its builds are not deleted. 
     */
@@ -155,6 +167,7 @@ trait CodeBuild extends Service {
     params: DeleteProjectInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteProjectOutput, Unit]
   ): Request[DeleteProjectOutput, AWSError] = js.native
+  
   /**
     *  Deletes a report. 
     */
@@ -168,19 +181,21 @@ trait CodeBuild extends Service {
     params: DeleteReportInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteReportOutput, Unit]
   ): Request[DeleteReportOutput, AWSError] = js.native
+  
   /**
-    *  DeleteReportGroup: Deletes a report group. Before you delete a report group, you must delete its reports. Use ListReportsForReportGroup to get the reports in a report group. Use DeleteReport to delete the reports. If you call DeleteReportGroup for a report group that contains one or more reports, an exception is thrown. 
+    * Deletes a report group. Before you delete a report group, you must delete its reports. 
     */
   def deleteReportGroup(): Request[DeleteReportGroupOutput, AWSError] = js.native
   def deleteReportGroup(callback: js.Function2[/* err */ AWSError, /* data */ DeleteReportGroupOutput, Unit]): Request[DeleteReportGroupOutput, AWSError] = js.native
   /**
-    *  DeleteReportGroup: Deletes a report group. Before you delete a report group, you must delete its reports. Use ListReportsForReportGroup to get the reports in a report group. Use DeleteReport to delete the reports. If you call DeleteReportGroup for a report group that contains one or more reports, an exception is thrown. 
+    * Deletes a report group. Before you delete a report group, you must delete its reports. 
     */
   def deleteReportGroup(params: DeleteReportGroupInput): Request[DeleteReportGroupOutput, AWSError] = js.native
   def deleteReportGroup(
     params: DeleteReportGroupInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteReportGroupOutput, Unit]
   ): Request[DeleteReportGroupOutput, AWSError] = js.native
+  
   /**
     *  Deletes a resource policy that is identified by its resource ARN. 
     */
@@ -194,6 +209,7 @@ trait CodeBuild extends Service {
     params: DeleteResourcePolicyInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourcePolicyOutput, Unit]
   ): Request[DeleteResourcePolicyOutput, AWSError] = js.native
+  
   /**
     *  Deletes a set of GitHub, GitHub Enterprise, or Bitbucket source credentials. 
     */
@@ -207,6 +223,7 @@ trait CodeBuild extends Service {
     params: DeleteSourceCredentialsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteSourceCredentialsOutput, Unit]
   ): Request[DeleteSourceCredentialsOutput, AWSError] = js.native
+  
   /**
     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops AWS CodeBuild from rebuilding the source code every time a code change is pushed to the repository.
     */
@@ -220,6 +237,7 @@ trait CodeBuild extends Service {
     params: DeleteWebhookInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteWebhookOutput, Unit]
   ): Request[DeleteWebhookOutput, AWSError] = js.native
+  
   /**
     * Retrieves one or more code coverage reports.
     */
@@ -233,6 +251,7 @@ trait CodeBuild extends Service {
     params: DescribeCodeCoveragesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCodeCoveragesOutput, Unit]
   ): Request[DescribeCodeCoveragesOutput, AWSError] = js.native
+  
   /**
     *  Returns a list of details about test cases for a report. 
     */
@@ -246,6 +265,7 @@ trait CodeBuild extends Service {
     params: DescribeTestCasesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTestCasesOutput, Unit]
   ): Request[DescribeTestCasesOutput, AWSError] = js.native
+  
   /**
     *  Gets a resource policy that is identified by its resource ARN. 
     */
@@ -259,6 +279,7 @@ trait CodeBuild extends Service {
     params: GetResourcePolicyInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePolicyOutput, Unit]
   ): Request[GetResourcePolicyOutput, AWSError] = js.native
+  
   /**
     *  Imports the source repository credentials for an AWS CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository. 
     */
@@ -272,6 +293,7 @@ trait CodeBuild extends Service {
     params: ImportSourceCredentialsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ImportSourceCredentialsOutput, Unit]
   ): Request[ImportSourceCredentialsOutput, AWSError] = js.native
+  
   /**
     * Resets the cache for a project.
     */
@@ -285,6 +307,7 @@ trait CodeBuild extends Service {
     params: InvalidateProjectCacheInput,
     callback: js.Function2[/* err */ AWSError, /* data */ InvalidateProjectCacheOutput, Unit]
   ): Request[InvalidateProjectCacheOutput, AWSError] = js.native
+  
   /**
     * Retrieves the identifiers of your build batches in the current region.
     */
@@ -298,6 +321,7 @@ trait CodeBuild extends Service {
     params: ListBuildBatchesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBuildBatchesOutput, Unit]
   ): Request[ListBuildBatchesOutput, AWSError] = js.native
+  
   /**
     * Retrieves the identifiers of the build batches for a specific project.
     */
@@ -311,6 +335,7 @@ trait CodeBuild extends Service {
     params: ListBuildBatchesForProjectInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBuildBatchesForProjectOutput, Unit]
   ): Request[ListBuildBatchesForProjectOutput, AWSError] = js.native
+  
   /**
     * Gets a list of build IDs, with each build ID representing a single build.
     */
@@ -324,6 +349,7 @@ trait CodeBuild extends Service {
     params: ListBuildsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBuildsOutput, Unit]
   ): Request[ListBuildsOutput, AWSError] = js.native
+  
   /**
     * Gets a list of build IDs for the specified build project, with each build ID representing a single build.
     */
@@ -337,6 +363,7 @@ trait CodeBuild extends Service {
     params: ListBuildsForProjectInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBuildsForProjectOutput, Unit]
   ): Request[ListBuildsForProjectOutput, AWSError] = js.native
+  
   /**
     * Gets information about Docker images that are managed by AWS CodeBuild.
     */
@@ -350,6 +377,7 @@ trait CodeBuild extends Service {
     params: ListCuratedEnvironmentImagesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListCuratedEnvironmentImagesOutput, Unit]
   ): Request[ListCuratedEnvironmentImagesOutput, AWSError] = js.native
+  
   /**
     * Gets a list of build project names, with each build project name representing a single build project.
     */
@@ -363,6 +391,7 @@ trait CodeBuild extends Service {
     params: ListProjectsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListProjectsOutput, Unit]
   ): Request[ListProjectsOutput, AWSError] = js.native
+  
   /**
     *  Gets a list ARNs for the report groups in the current AWS account. 
     */
@@ -376,6 +405,7 @@ trait CodeBuild extends Service {
     params: ListReportGroupsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListReportGroupsOutput, Unit]
   ): Request[ListReportGroupsOutput, AWSError] = js.native
+  
   /**
     *  Returns a list of ARNs for the reports in the current AWS account. 
     */
@@ -389,6 +419,7 @@ trait CodeBuild extends Service {
     params: ListReportsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListReportsOutput, Unit]
   ): Request[ListReportsOutput, AWSError] = js.native
+  
   /**
     *  Returns a list of ARNs for the reports that belong to a ReportGroup. 
     */
@@ -402,6 +433,7 @@ trait CodeBuild extends Service {
     params: ListReportsForReportGroupInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListReportsForReportGroupOutput, Unit]
   ): Request[ListReportsForReportGroupOutput, AWSError] = js.native
+  
   /**
     *  Gets a list of projects that are shared with other AWS accounts or users. 
     */
@@ -415,6 +447,7 @@ trait CodeBuild extends Service {
     params: ListSharedProjectsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSharedProjectsOutput, Unit]
   ): Request[ListSharedProjectsOutput, AWSError] = js.native
+  
   /**
     *  Gets a list of report groups that are shared with other AWS accounts or users. 
     */
@@ -428,6 +461,7 @@ trait CodeBuild extends Service {
     params: ListSharedReportGroupsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSharedReportGroupsOutput, Unit]
   ): Request[ListSharedReportGroupsOutput, AWSError] = js.native
+  
   /**
     *  Returns a list of SourceCredentialsInfo objects. 
     */
@@ -441,6 +475,7 @@ trait CodeBuild extends Service {
     params: ListSourceCredentialsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSourceCredentialsOutput, Unit]
   ): Request[ListSourceCredentialsOutput, AWSError] = js.native
+  
   /**
     *  Stores a resource policy for the ARN of a Project or ReportGroup object. 
     */
@@ -454,6 +489,7 @@ trait CodeBuild extends Service {
     params: PutResourcePolicyInput,
     callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyOutput, Unit]
   ): Request[PutResourcePolicyOutput, AWSError] = js.native
+  
   /**
     * Restarts a build.
     */
@@ -467,19 +503,21 @@ trait CodeBuild extends Service {
     params: RetryBuildInput,
     callback: js.Function2[/* err */ AWSError, /* data */ RetryBuildOutput, Unit]
   ): Request[RetryBuildOutput, AWSError] = js.native
+  
   /**
-    * Restarts a batch build.
+    * Restarts a failed batch build. Only batch builds that have failed can be retried.
     */
   def retryBuildBatch(): Request[RetryBuildBatchOutput, AWSError] = js.native
   def retryBuildBatch(callback: js.Function2[/* err */ AWSError, /* data */ RetryBuildBatchOutput, Unit]): Request[RetryBuildBatchOutput, AWSError] = js.native
   /**
-    * Restarts a batch build.
+    * Restarts a failed batch build. Only batch builds that have failed can be retried.
     */
   def retryBuildBatch(params: RetryBuildBatchInput): Request[RetryBuildBatchOutput, AWSError] = js.native
   def retryBuildBatch(
     params: RetryBuildBatchInput,
     callback: js.Function2[/* err */ AWSError, /* data */ RetryBuildBatchOutput, Unit]
   ): Request[RetryBuildBatchOutput, AWSError] = js.native
+  
   /**
     * Starts running a build.
     */
@@ -493,6 +531,7 @@ trait CodeBuild extends Service {
     params: StartBuildInput,
     callback: js.Function2[/* err */ AWSError, /* data */ StartBuildOutput, Unit]
   ): Request[StartBuildOutput, AWSError] = js.native
+  
   /**
     * Starts a batch build for a project.
     */
@@ -506,6 +545,7 @@ trait CodeBuild extends Service {
     params: StartBuildBatchInput,
     callback: js.Function2[/* err */ AWSError, /* data */ StartBuildBatchOutput, Unit]
   ): Request[StartBuildBatchOutput, AWSError] = js.native
+  
   /**
     * Attempts to stop running a build.
     */
@@ -519,6 +559,7 @@ trait CodeBuild extends Service {
     params: StopBuildInput,
     callback: js.Function2[/* err */ AWSError, /* data */ StopBuildOutput, Unit]
   ): Request[StopBuildOutput, AWSError] = js.native
+  
   /**
     * Stops a running batch build.
     */
@@ -532,6 +573,7 @@ trait CodeBuild extends Service {
     params: StopBuildBatchInput,
     callback: js.Function2[/* err */ AWSError, /* data */ StopBuildBatchOutput, Unit]
   ): Request[StopBuildBatchOutput, AWSError] = js.native
+  
   /**
     * Changes the settings of a build project.
     */
@@ -545,6 +587,7 @@ trait CodeBuild extends Service {
     params: UpdateProjectInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateProjectOutput, Unit]
   ): Request[UpdateProjectOutput, AWSError] = js.native
+  
   /**
     *  Updates a report group. 
     */
@@ -558,6 +601,7 @@ trait CodeBuild extends Service {
     params: UpdateReportGroupInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateReportGroupOutput, Unit]
   ): Request[UpdateReportGroupOutput, AWSError] = js.native
+  
   /**
     *  Updates the webhook associated with an AWS CodeBuild build project.    If you use Bitbucket for your repository, rotateSecret is ignored.  
     */
@@ -572,4 +616,3 @@ trait CodeBuild extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateWebhookOutput, Unit]
   ): Request[UpdateWebhookOutput, AWSError] = js.native
 }
-

@@ -10,9 +10,9 @@ Database using JSON file as storage for Node.JS
 | ------------------ | :-------------: |
 | Full name          | node-json-db |
 | Keywords           | database, json, db, typescript |
-| # releases         | 14 |
-| # dependents       | 32 |
-| # downloads        | 105657 |
+| # releases         | 10 |
+| # dependents       | 42 |
+| # downloads        | 130214 |
 | # stars            | 15 |
 
 ## Links

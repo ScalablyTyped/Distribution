@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.elasticinferenceMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.ElasticInference")
 @js.native
@@ -14,4 +14,3 @@ class ElasticInference ()
   extends typings.awsSdk.mod.ElasticInference {
   def this(options: ClientConfiguration) = this()
 }
-

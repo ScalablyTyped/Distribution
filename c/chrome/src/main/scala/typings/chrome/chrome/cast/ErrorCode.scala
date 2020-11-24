@@ -2,14 +2,14 @@ package typings.chrome.chrome.cast
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ErrorCode extends js.Object
-
 @JSGlobal("chrome.cast.ErrorCode")
 @js.native
 object ErrorCode extends js.Object {
+  
   @js.native
   sealed trait API_NOT_INITIALIZED extends ErrorCode
   
@@ -39,6 +39,4 @@ object ErrorCode extends js.Object {
   
   @js.native
   sealed trait TIMEOUT extends ErrorCode
-  
 }
-

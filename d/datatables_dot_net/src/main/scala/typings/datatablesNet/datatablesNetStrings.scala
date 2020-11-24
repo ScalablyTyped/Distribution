@@ -2,9 +2,25 @@ package typings.datatablesNet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datatablesNetStrings {
+  
+  @scala.inline
+  def display: display = "display".asInstanceOf[display]
+  
+  @scala.inline
+  def filter: filter = "filter".asInstanceOf[filter]
+  
+  @scala.inline
+  def set: set = "set".asInstanceOf[set]
+  
+  @scala.inline
+  def sort: sort = "sort".asInstanceOf[sort]
+  
+  @scala.inline
+  def `type`: `type` = "type".asInstanceOf[`type`]
+  
   @js.native
   sealed trait display extends js.Object
   
@@ -19,16 +35,4 @@ object datatablesNetStrings {
   
   @js.native
   sealed trait `type` extends js.Object
-  
-  @scala.inline
-  def display: display = "display".asInstanceOf[display]
-  @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
-  @scala.inline
-  def sort: sort = "sort".asInstanceOf[sort]
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
 }
-

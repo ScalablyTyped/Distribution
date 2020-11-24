@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BarcodeScannerStatus extends js.Object
-
 /** Defines the constants that indicates the barcode scanner status. */
 @JSGlobal("Windows.Devices.PointOfService.BarcodeScannerStatus")
 @js.native
 object BarcodeScannerStatus extends js.Object {
+  
   /** Vendor specific status information. */
   @js.native
   sealed trait extended extends BarcodeScannerStatus
@@ -30,6 +30,4 @@ object BarcodeScannerStatus extends js.Object {
   /** The device is online. This is valid if UnifiedPosPowerReportingType is Standard or Advanced. */
   @js.native
   sealed trait online extends BarcodeScannerStatus
-  
 }
-

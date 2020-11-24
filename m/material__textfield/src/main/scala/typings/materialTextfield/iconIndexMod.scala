@@ -7,40 +7,44 @@ import typings.materialTextfield.iconAdapterMod.MDCTextFieldIconAdapter
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/textfield/icon/index", JSImport.Namespace)
 @js.native
 object iconIndexMod extends js.Object {
+  
   @js.native
   class MDCTextFieldIcon ()
     extends typings.materialTextfield.iconComponentMod.MDCTextFieldIcon
+  /* static members */
+  @js.native
+  object MDCTextFieldIcon extends js.Object {
+    
+    def attachTo(root: Element): typings.materialTextfield.iconComponentMod.MDCTextFieldIcon = js.native
+  }
   
   @js.native
   class MDCTextFieldIconFoundation ()
     extends typings.materialTextfield.iconFoundationMod.MDCTextFieldIconFoundation {
     def this(adapter: PartialMDCTextFieldIconAd) = this()
   }
-  
-  /* static members */
-  @js.native
-  object MDCTextFieldIcon extends js.Object {
-    def attachTo(root: Element): typings.materialTextfield.iconComponentMod.MDCTextFieldIcon = js.native
-  }
-  
   /* static members */
   @js.native
   object MDCTextFieldIconFoundation extends js.Object {
+    
     def cssClasses: ROOT = js.native
+    
     /**
       * See {@link MDCTextFieldIconAdapter} for typing information on parameters and return types.
       */
     def defaultAdapter: MDCTextFieldIconAdapter = js.native
+    
     def strings: ICONEVENT = js.native
   }
   
   @js.native
   object iconCssClasses extends js.Object {
+    
     var ROOT: String = js.native
   }
   
@@ -68,9 +72,9 @@ object iconIndexMod extends js.Object {
     */
   @js.native
   object iconStrings extends js.Object {
+    
     var ICON_EVENT: String = js.native
+    
     var ICON_ROLE: String = js.native
   }
-  
 }
-

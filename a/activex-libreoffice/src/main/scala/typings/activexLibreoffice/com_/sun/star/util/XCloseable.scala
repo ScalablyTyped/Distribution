@@ -3,7 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.util
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to release any objects in a ordered manner by using a two-step mechanism
@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XCloseable extends XCloseBroadcaster {
+  
   /**
     * try to close the object
     *
@@ -52,8 +53,8 @@ trait XCloseable extends XCloseBroadcaster {
     */
   def close(DeliverOwnership: Boolean): Unit = js.native
 }
-
 object XCloseable {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -66,20 +67,23 @@ object XCloseable {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addCloseListener = js.Any.fromFunction1(addCloseListener), close = js.Any.fromFunction1(close), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeCloseListener = js.Any.fromFunction1(removeCloseListener))
     __obj.asInstanceOf[XCloseable]
   }
+  
   @scala.inline
   implicit class XCloseableOps[Self <: XCloseable] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setClose(value: Boolean => Unit): Self = this.set("close", js.Any.fromFunction1(value))
   }
-  
 }
-

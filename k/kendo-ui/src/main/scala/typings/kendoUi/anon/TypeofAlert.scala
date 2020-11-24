@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.ui.AlertOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofAlert
   extends Instantiable1[/* element */ Element, Alert]
      with Instantiable2[/* element */ Element, /* options */ AlertOptions, Alert] {
-  var fn: Alert = js.native
+  
   def extend(proto: js.Object): Alert = js.native
+  
+  var fn: Alert = js.native
 }
-

@@ -11,8 +11,8 @@ An async/await WebSocket client for browsers
 | Full name          | websocket-async |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1033 |
+| # dependents       | 0 |
+| # downloads        | 1175 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ Evaluates the result of an expression given as postfix terms
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 390847 |
+| # downloads        | 663729 |
 | # stars            | 0 |
 
 ## Links

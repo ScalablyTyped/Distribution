@@ -3,11 +3,12 @@ package typings.officeJsPreview.global.Office
 import typings.officeJsPreview.anon.Host
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Office.onReady")
 @js.native
 object onReady extends js.Object {
+  
   /**
     * Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise
     * will wait until the Office host is ready to accept API calls. Note that though this API is intended to be used inside an Office add-in, it can
@@ -21,4 +22,3 @@ object onReady extends js.Object {
   def apply(): js.Promise[Host] = js.native
   def apply(callback: js.Function1[/* info */ Host, _]): js.Promise[Host] = js.native
 }
-

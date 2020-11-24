@@ -8,19 +8,22 @@ import typings.rx.Rx.Observable
 import typings.rxNode.RxNode.PublishableEventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object RxNode extends js.Object {
+    
     /**
       * Converts a flowing readline stream to an Observable sequence.
       * @param {Stream} stream A stream to convert to a observable sequence.
       * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'end' events.
       */
     def fromReadLineStream[T](stream: ReadableStream): Observable[T] = js.native
+    
     /**
       * Converts a flowing readable stream to an Observable sequence.
       * @param {Stream} stream A stream to convert to a observable sequence.
@@ -29,6 +32,7 @@ object global extends js.Object {
       */
     def fromReadableStream[T](stream: ReadableStream): Observable[T] = js.native
     def fromReadableStream[T](stream: ReadableStream, dataEventName: String): Observable[T] = js.native
+    
     /**
       * Converts a flowing stream to an Observable sequence.
       * @param {Stream} stream A stream to convert to a observable sequence.
@@ -40,6 +44,7 @@ object global extends js.Object {
     def fromStream[T](stream: ReadableStream, finishEventName: js.UndefOr[scala.Nothing], dataEventName: String): Observable[T] = js.native
     def fromStream[T](stream: ReadableStream, finishEventName: String): Observable[T] = js.native
     def fromStream[T](stream: ReadableStream, finishEventName: String, dataEventName: String): Observable[T] = js.native
+    
     /**
       * Converts a flowing transform stream to an Observable sequence.
       * @param {Stream} stream A stream to convert to a observable sequence.
@@ -48,12 +53,14 @@ object global extends js.Object {
       */
     def fromTransformStream[T](stream: ReadWriteStream): Observable[T] = js.native
     def fromTransformStream[T](stream: ReadWriteStream, dataEventName: String): Observable[T] = js.native
+    
     /**
       * Converts a flowing writeable stream to an Observable sequence.
       * @param {Stream} stream A stream to convert to a observable sequence.
       * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'finish' events.
       */
     def fromWritableStream[T](stream: WritableStream): Observable[T] = js.native
+    
     /**
       * Converts the given observable sequence to an event emitter with the given event name.
       * The errors are handled on the 'error' event and completion on the 'end' event.
@@ -63,6 +70,7 @@ object global extends js.Object {
       * @returns {EventEmitter} An EventEmitter which emits the given eventName for each onNext call in addition to 'error' and 'end' events.
       */
     def toEventEmitter[T](observable: Observable[T], eventName: String): PublishableEventEmitter = js.native
+    
     /**
       * Writes an observable sequence to a stream
       * @param {Observable} observable Observable sequence to write to a stream.
@@ -72,6 +80,4 @@ object global extends js.Object {
       */
     def writeToStream[T](observable: Observable[T], stream: WritableStream, encoding: String): Disposable = js.native
   }
-  
 }
-

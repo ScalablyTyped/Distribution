@@ -2,9 +2,46 @@ package typings.backstopjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object backstopjsStrings {
+  
+  @scala.inline
+  def CI: CI = "CI".asInstanceOf[CI]
+  
+  @scala.inline
+  def approve: approve = "approve".asInstanceOf[approve]
+  
+  @scala.inline
+  def browser: browser = "browser".asInstanceOf[browser]
+  
+  @scala.inline
+  def chromy: chromy = "chromy".asInstanceOf[chromy]
+  
+  @scala.inline
+  def desktop: desktop = "desktop".asInstanceOf[desktop]
+  
+  @scala.inline
+  def init: init = "init".asInstanceOf[init]
+  
+  @scala.inline
+  def json: json = "json".asInstanceOf[json]
+  
+  @scala.inline
+  def phone: phone = "phone".asInstanceOf[phone]
+  
+  @scala.inline
+  def puppeteer: puppeteer = "puppeteer".asInstanceOf[puppeteer]
+  
+  @scala.inline
+  def reference: reference = "reference".asInstanceOf[reference]
+  
+  @scala.inline
+  def tablet: tablet = "tablet".asInstanceOf[tablet]
+  
+  @scala.inline
+  def test: test = "test".asInstanceOf[test]
+  
   @js.native
   sealed trait CI extends js.Object
   
@@ -40,30 +77,4 @@ object backstopjsStrings {
   
   @js.native
   sealed trait test extends js.Object
-  
-  @scala.inline
-  def CI: CI = "CI".asInstanceOf[CI]
-  @scala.inline
-  def approve: approve = "approve".asInstanceOf[approve]
-  @scala.inline
-  def browser: browser = "browser".asInstanceOf[browser]
-  @scala.inline
-  def chromy: chromy = "chromy".asInstanceOf[chromy]
-  @scala.inline
-  def desktop: desktop = "desktop".asInstanceOf[desktop]
-  @scala.inline
-  def init: init = "init".asInstanceOf[init]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def phone: phone = "phone".asInstanceOf[phone]
-  @scala.inline
-  def puppeteer: puppeteer = "puppeteer".asInstanceOf[puppeteer]
-  @scala.inline
-  def reference: reference = "reference".asInstanceOf[reference]
-  @scala.inline
-  def tablet: tablet = "tablet".asInstanceOf[tablet]
-  @scala.inline
-  def test: test = "test".asInstanceOf[test]
 }
-

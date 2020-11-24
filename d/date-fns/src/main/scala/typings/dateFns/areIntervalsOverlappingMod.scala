@@ -3,13 +3,15 @@ package typings.dateFns
 import typings.dateFns.anon.Inclusive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("date-fns/areIntervalsOverlapping", JSImport.Namespace)
 @js.native
 object areIntervalsOverlappingMod extends js.Object {
+  
   @js.native
   object default extends js.Object {
+    
     def apply(intervalLeft: typings.dateFns.mod.Interval, intervalRight: typings.dateFns.mod.Interval): Boolean = js.native
     def apply(
       intervalLeft: typings.dateFns.mod.Interval,
@@ -17,6 +19,4 @@ object areIntervalsOverlappingMod extends js.Object {
       options: Inclusive
     ): Boolean = js.native
   }
-  
 }
-

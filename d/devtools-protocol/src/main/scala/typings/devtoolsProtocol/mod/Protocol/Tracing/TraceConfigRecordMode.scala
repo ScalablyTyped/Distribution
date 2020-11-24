@@ -6,7 +6,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.recordContinuously
 import typings.devtoolsProtocol.devtoolsProtocolStrings.recordUntilFull
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.recordUntilFull
@@ -15,15 +15,17 @@ import scala.scalajs.js.annotation._
   - typings.devtoolsProtocol.devtoolsProtocolStrings.echoToConsole
 */
 trait TraceConfigRecordMode extends js.Object
-
 object TraceConfigRecordMode {
+  
   @scala.inline
   def EchoToConsole: echoToConsole = "echoToConsole".asInstanceOf[echoToConsole]
+  
   @scala.inline
   def RecordAsMuchAsPossible: recordAsMuchAsPossible = "recordAsMuchAsPossible".asInstanceOf[recordAsMuchAsPossible]
+  
   @scala.inline
   def RecordContinuously: recordContinuously = "recordContinuously".asInstanceOf[recordContinuously]
+  
   @scala.inline
   def RecordUntilFull: recordUntilFull = "recordUntilFull".asInstanceOf[recordUntilFull]
 }
-

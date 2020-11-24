@@ -2,15 +2,17 @@ package typings.vscodeLanguageserverTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParameterInformation extends js.Object {
+  
   /**
     * The human-readable doc-comment of this signature. Will be shown
     * in the UI but can be omitted.
     */
   var documentation: js.UndefOr[String | MarkupContent] = js.native
+  
   /**
     * The label of this parameter information.
     *
@@ -23,10 +25,10 @@ trait ParameterInformation extends js.Object {
     */
   var label: String | (js.Tuple2[Double, Double]) = js.native
 }
-
 @JSImport("vscode-languageserver-types", "ParameterInformation")
 @js.native
 object ParameterInformation extends js.Object {
+  
   /**
     * Creates a new parameter information literal.
     *
@@ -38,4 +40,3 @@ object ParameterInformation extends js.Object {
   def create(label: js.Tuple2[Double, Double]): ParameterInformation = js.native
   def create(label: js.Tuple2[Double, Double], documentation: String): ParameterInformation = js.native
 }
-

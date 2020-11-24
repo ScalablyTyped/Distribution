@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "react-native-elements"
-version := "2.1.0-78d05a"
+version := "3.0.0-alpha.1-e5db86"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "3.0.2-b6fa26",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-64dc32",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200711Z-7368c8",
-  "org.scalablytyped" %%% "react-native" % "0.63-dt-20200723Z-d06c5c",
-  "org.scalablytyped" %%% "react-native-ratings" % "7.2.0-dc12f6",
-  "org.scalablytyped" %%% "react-native-vector-icons" % "6.4-dt-20200515Z-dffd21",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "csstype" % "2.6.14-fa358f",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-0012d8",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-cfb347",
+  "org.scalablytyped" %%% "react-native" % "0.63-dt-20201120Z-d8889c",
+  "org.scalablytyped" %%% "react-native-ratings" % "7.3.0-2e59df",
+  "org.scalablytyped" %%% "react-native-vector-icons" % "6.4-dt-20200918Z-76cfdb",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

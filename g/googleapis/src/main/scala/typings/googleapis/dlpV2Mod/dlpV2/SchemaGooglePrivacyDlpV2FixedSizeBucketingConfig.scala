@@ -2,7 +2,7 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Buckets values based on fixed size ranges. The Bucketing transformation can
@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig extends js.Object {
+  
   /**
     * Size of each bucket (except for minimum and maximum buckets). So if
     * `lower_bound` = 10, `upper_bound` = 89, and `bucket_size` = 10, then the
@@ -26,6 +27,7 @@ trait SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig extends js.Object {
     * 60-70, 70-80, 80-89, 89+. Precision up to 2 decimals works. [Required].
     */
   var bucketSize: js.UndefOr[Double] = js.native
+  
   /**
     * Lower bound value of buckets. All values less than `lower_bound` are
     * grouped together into a single bucket; for example if `lower_bound` = 10,
@@ -33,6 +35,7 @@ trait SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig extends js.Object {
     * [Required].
     */
   var lowerBound: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.native
+  
   /**
     * Upper bound value of buckets. All values greater than upper_bound are
     * grouped together into a single bucket; for example if `upper_bound` = 89,
@@ -41,37 +44,45 @@ trait SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig extends js.Object {
     */
   var upperBound: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.native
 }
-
 object SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig {
+  
   @scala.inline
   def apply(): SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig]
   }
+  
   @scala.inline
   implicit class SchemaGooglePrivacyDlpV2FixedSizeBucketingConfigOps[Self <: SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBucketSize(value: Double): Self = this.set("bucketSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBucketSize: Self = this.set("bucketSize", js.undefined)
+    
     @scala.inline
     def setLowerBound(value: SchemaGooglePrivacyDlpV2Value): Self = this.set("lowerBound", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLowerBound: Self = this.set("lowerBound", js.undefined)
+    
     @scala.inline
     def setUpperBound(value: SchemaGooglePrivacyDlpV2Value): Self = this.set("upperBound", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUpperBound: Self = this.set("upperBound", js.undefined)
   }
-  
 }
-

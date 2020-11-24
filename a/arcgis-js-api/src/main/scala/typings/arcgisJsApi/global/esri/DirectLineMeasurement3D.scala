@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.esri.DirectLineMeasurement3DConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.DirectLineMeasurement3D")
 @js.native
 object DirectLineMeasurement3D extends TopLevel[DirectLineMeasurement3DConstructor]
-

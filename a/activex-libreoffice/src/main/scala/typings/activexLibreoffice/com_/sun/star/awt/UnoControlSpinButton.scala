@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a spin button control.
@@ -21,8 +21,8 @@ trait UnoControlSpinButton
      with XView
      with XAccessible
      with XSpinValue
-
 object UnoControlSpinButton {
+  
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
@@ -95,4 +95,3 @@ object UnoControlSpinButton {
     __obj.asInstanceOf[UnoControlSpinButton]
   }
 }
-

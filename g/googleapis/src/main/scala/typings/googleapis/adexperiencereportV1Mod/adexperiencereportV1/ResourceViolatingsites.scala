@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexperiencereport/v1", "adexperiencereport_v1.Resource$Violatingsites")
 @js.native
 class ResourceViolatingsites protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexperiencereport.violatingSites.list
     * @desc Lists sites with Ad Experience Report statuses of "Failing" or
@@ -45,4 +47,3 @@ class ResourceViolatingsites protected () extends js.Object {
     callback: BodyResponseCallback[SchemaViolatingSitesResponse]
   ): Unit = js.native
 }
-

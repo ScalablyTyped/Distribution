@@ -3,11 +3,12 @@ package typings.autoBind.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auto-bind", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Automatically bind methods to their class instance.
   @param self - Object with methods to bind.
@@ -37,4 +38,3 @@ object ^ extends js.Object {
   def apply[SelfType /* <: StringDictionary[js.Any] */](self: SelfType): SelfType = js.native
   def apply[SelfType /* <: StringDictionary[js.Any] */](self: SelfType, options: Options): SelfType = js.native
 }
-

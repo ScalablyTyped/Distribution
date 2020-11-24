@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Utilities
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DigestAlgorithm extends js.Object
-
 /**
   * Selector of Digest algorithm.
   */
 @JSGlobal("GoogleAppsScript.Utilities.DigestAlgorithm")
 @js.native
 object DigestAlgorithm extends js.Object {
+  
   @js.native
   sealed trait MD2 extends DigestAlgorithm
   
@@ -30,6 +30,4 @@ object DigestAlgorithm extends js.Object {
   
   @js.native
   sealed trait SHA_512 extends DigestAlgorithm
-  
 }
-

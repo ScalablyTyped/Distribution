@@ -5,7 +5,7 @@ import typings.aframe.mod.GeometryConstructor
 import typings.aframe.mod.GeometryDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AFRAME.registerGeometry")
 @js.native
@@ -17,4 +17,3 @@ object registerGeometry
         GeometryConstructor[js.Object]
       ]
     ]
-

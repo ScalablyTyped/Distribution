@@ -5,7 +5,7 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.ExplicitParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.TagParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * class for ASN.1 DER TaggedObject
@@ -36,4 +36,3 @@ class DERTaggedObject ()
   def this(params: ExplicitParam) = this()
   def this(params: TagParam) = this()
 }
-

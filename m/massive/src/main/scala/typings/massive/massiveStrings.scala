@@ -2,9 +2,34 @@ package typings.massive
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object massiveStrings {
+  
+  @scala.inline
+  def ASC: ASC = "ASC".asInstanceOf[ASC]
+  
+  @scala.inline
+  def DESC: DESC = "DESC".asInstanceOf[DESC]
+  
+  @scala.inline
+  def FIRST: FIRST = "FIRST".asInstanceOf[FIRST]
+  
+  @scala.inline
+  def LAST: LAST = "LAST".asInstanceOf[LAST]
+  
+  @scala.inline
+  def asc_ : asc_ = "asc".asInstanceOf[asc_]
+  
+  @scala.inline
+  def desc_ : desc_ = "desc".asInstanceOf[desc_]
+  
+  @scala.inline
+  def first_ : first_ = "first".asInstanceOf[first_]
+  
+  @scala.inline
+  def last_ : last_ = "last".asInstanceOf[last_]
+  
   @js.native
   sealed trait ASC extends js.Object
   
@@ -28,22 +53,4 @@ object massiveStrings {
   
   @js.native
   sealed trait last_ extends js.Object
-  
-  @scala.inline
-  def ASC: ASC = "ASC".asInstanceOf[ASC]
-  @scala.inline
-  def DESC: DESC = "DESC".asInstanceOf[DESC]
-  @scala.inline
-  def FIRST: FIRST = "FIRST".asInstanceOf[FIRST]
-  @scala.inline
-  def LAST: LAST = "LAST".asInstanceOf[LAST]
-  @scala.inline
-  def asc_ : asc_ = "asc".asInstanceOf[asc_]
-  @scala.inline
-  def desc_ : desc_ = "desc".asInstanceOf[desc_]
-  @scala.inline
-  def first_ : first_ = "first".asInstanceOf[first_]
-  @scala.inline
-  def last_ : last_ = "last".asInstanceOf[last_]
 }
-

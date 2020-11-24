@@ -2,11 +2,12 @@ package typings.d3Color.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CubehelixColorFactory
   extends js.Function {
+  
   def apply(color: ColorCommonInstance): CubehelixColor = js.native
   /**
     * Converts the provided color instance and returns a Cubehelix color.
@@ -34,4 +35,3 @@ trait CubehelixColorFactory
   def apply(h: Double, s: Double, l: Double): CubehelixColor = js.native
   def apply(h: Double, s: Double, l: Double, opacity: Double): CubehelixColor = js.native
 }
-

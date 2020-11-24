@@ -10,9 +10,9 @@ Plugin to replace a standard webpack chunk hashing with custom (md5) one.
 | ------------------ | :-------------: |
 | Full name          | webpack-chunk-hash |
 | Keywords           | webpack, hash, plugin, md5 |
-| # releases         | 2 |
-| # dependents       | 67 |
-| # downloads        | 4681735 |
+| # releases         | 0 |
+| # dependents       | 65 |
+| # downloads        | 3824231 |
 | # stars            | 4 |
 
 ## Links

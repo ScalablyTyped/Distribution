@@ -3,12 +3,12 @@ package typings.dynamodb.modelMod.Model
 import typings.dynamodb.callbackMod.Callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynamodb/Model", "Model.createTable")
 @js.native
 object createTable extends js.Object {
+  
   def apply(hashKey: String, rangeKey: String, options: js.Any): js.Promise[_] | Unit = js.native
   def apply(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[_] | Unit = js.native
 }
-

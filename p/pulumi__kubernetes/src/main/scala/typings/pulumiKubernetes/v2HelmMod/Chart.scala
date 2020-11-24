@@ -9,7 +9,7 @@ import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/helm/v2/helm", "Chart")
 @js.native
@@ -24,6 +24,7 @@ class Chart protected () extends CollectionComponentResource {
   def this(releaseName: String, config: LocalChartOpts) = this()
   def this(releaseName: String, config: ChartOpts, opts: ComponentResourceOptions) = this()
   def this(releaseName: String, config: LocalChartOpts, opts: ComponentResourceOptions) = this()
+  
   def parseTemplate(
     text: String,
     transformations: js.UndefOr[scala.Nothing],
@@ -77,4 +78,3 @@ class Chart protected () extends CollectionComponentResource {
     defaultNamespace: String
   ): Output_[StringDictionary[CustomResource]] = js.native
 }
-

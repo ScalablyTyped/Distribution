@@ -7,60 +7,108 @@ import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IResolver
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options for the `renderMarkdown` function.
   */
+@js.native
 trait IRenderOptions extends js.Object {
+  
   /**
     * The host node for the rendered Markdown.
     */
-  var host: HTMLElement
+  var host: HTMLElement = js.native
+  
   /**
     * The LaTeX typesetter for the application.
     */
-  var latexTypesetter: ILatexTypesetter | Null
+  var latexTypesetter: ILatexTypesetter | Null = js.native
+  
   /**
     * An optional link handler.
     */
-  var linkHandler: ILinkHandler | Null
+  var linkHandler: ILinkHandler | Null = js.native
+  
   /**
     * An optional url resolver.
     */
-  var resolver: IResolver | Null
+  var resolver: IResolver | Null = js.native
+  
   /**
     * The html sanitizer for untrusted source.
     */
-  var sanitizer: ISanitizer
+  var sanitizer: ISanitizer = js.native
+  
   /**
     * Whether the node should be typeset.
     */
-  var shouldTypeset: Boolean
+  var shouldTypeset: Boolean = js.native
+  
   /**
     * The Markdown source to render.
     */
-  var source: String
+  var source: String = js.native
+  
   /**
     * Whether the source is trusted.
     */
-  var trusted: Boolean
+  var trusted: Boolean = js.native
 }
-
 object IRenderOptions {
+  
   @scala.inline
-  def apply(
-    host: HTMLElement,
-    sanitizer: ISanitizer,
-    shouldTypeset: Boolean,
-    source: String,
-    trusted: Boolean,
-    latexTypesetter: ILatexTypesetter = null,
-    linkHandler: ILinkHandler = null,
-    resolver: IResolver = null
-  ): IRenderOptions = {
-    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], sanitizer = sanitizer.asInstanceOf[js.Any], shouldTypeset = shouldTypeset.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], trusted = trusted.asInstanceOf[js.Any], latexTypesetter = latexTypesetter.asInstanceOf[js.Any], linkHandler = linkHandler.asInstanceOf[js.Any], resolver = resolver.asInstanceOf[js.Any])
+  def apply(host: HTMLElement, sanitizer: ISanitizer, shouldTypeset: Boolean, source: String, trusted: Boolean): IRenderOptions = {
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], sanitizer = sanitizer.asInstanceOf[js.Any], shouldTypeset = shouldTypeset.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], trusted = trusted.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRenderOptions]
   }
+  
+  @scala.inline
+  implicit class IRenderOptionsOps[Self <: IRenderOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setHost(value: HTMLElement): Self = this.set("host", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSanitizer(value: ISanitizer): Self = this.set("sanitizer", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setShouldTypeset(value: Boolean): Self = this.set("shouldTypeset", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTrusted(value: Boolean): Self = this.set("trusted", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLatexTypesetter(value: ILatexTypesetter): Self = this.set("latexTypesetter", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLatexTypesetterNull: Self = this.set("latexTypesetter", null)
+    
+    @scala.inline
+    def setLinkHandler(value: ILinkHandler): Self = this.set("linkHandler", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLinkHandlerNull: Self = this.set("linkHandler", null)
+    
+    @scala.inline
+    def setResolver(value: IResolver): Self = this.set("resolver", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setResolverNull: Self = this.set("resolver", null)
+  }
 }
-

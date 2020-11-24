@@ -14,53 +14,50 @@ import typings.ionicCore.navInterfaceMod.TransitionDoneFn
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IonNav extends js.Object {
+  
   /**
     * If `true`, the nav should animate the transition of components.
     */
   var animated: Boolean = js.native
+  
   /**
     * By default `ion-nav` animates transition between pages based in the mode (ios or material design). However, this property allows to create custom transition using `AnimateBuilder` functions.
     */
   var animation: js.UndefOr[AnimationBuilder] = js.native
-  var delegate: js.UndefOr[FrameworkDelegate] = js.native
-  /**
-    * Root NavComponent to load
-    */
-  var root: js.UndefOr[NavComponent] = js.native
-  /**
-    * Any parameters for the root component
-    */
-  var rootParams: js.UndefOr[ComponentProps[Null]] = js.native
-  /**
-    * If the nav component should allow for swipe-to-go-back.
-    */
-  var swipeGesture: js.UndefOr[Boolean] = js.native
+  
   /**
     * Returns `true` if the current view can go back.
     * @param view The view to check.
     */
   def canGoBack(): js.Promise[Boolean] = js.native
   def canGoBack(view: ViewController): js.Promise[Boolean] = js.native
+  
+  var delegate: js.UndefOr[FrameworkDelegate] = js.native
+  
   /**
     * Get the active view.
     */
   def getActive(): js.Promise[js.UndefOr[ViewController]] = js.native
+  
   /**
     * Get the view at the specified index.
     * @param index The index of the view.
     */
   def getByIndex(index: Double): js.Promise[js.UndefOr[ViewController]] = js.native
+  
   /**
     * Get the previous view.
     * @param view The view to get.
     */
   def getPrevious(): js.Promise[js.UndefOr[ViewController]] = js.native
   def getPrevious(view: ViewController): js.Promise[js.UndefOr[ViewController]] = js.native
+  
   def getRouteId(): js.Promise[js.UndefOr[RouteID]] = js.native
+  
   def insert(insertIndex: Double): js.Promise[Boolean] = js.native
   def insert(insertIndex: Double, component: String): js.Promise[Boolean] = js.native
   def insert(
@@ -441,6 +438,7 @@ trait IonNav extends js.Object {
     opts: NavOptions,
     done: TransitionDoneFn
   ): js.Promise[Boolean] = js.native
+  
   /**
     * Inserts an array of components into the navigation stack at the specified index. The last component in the array will become instantiated as a view, and animate in to become the active view.
     * @param insertIndex The index to insert the components at in the stack.
@@ -472,6 +470,7 @@ trait IonNav extends js.Object {
     opts: NavOptions,
     done: TransitionDoneFn
   ): js.Promise[Boolean] = js.native
+  
   /**
     * Pop a component off of the navigation stack. Navigates back from the current component.
     * @param opts The navigation options.
@@ -482,6 +481,7 @@ trait IonNav extends js.Object {
   def pop(opts: Null, done: TransitionDoneFn): js.Promise[Boolean] = js.native
   def pop(opts: NavOptions): js.Promise[Boolean] = js.native
   def pop(opts: NavOptions, done: TransitionDoneFn): js.Promise[Boolean] = js.native
+  
   /**
     * Pop to a specific index in the navigation stack.
     * @param indexOrViewCtrl The index or view controller to pop to.
@@ -498,6 +498,7 @@ trait IonNav extends js.Object {
   def popTo(indexOrViewCtrl: ViewController, opts: Null, done: TransitionDoneFn): js.Promise[Boolean] = js.native
   def popTo(indexOrViewCtrl: ViewController, opts: NavOptions): js.Promise[Boolean] = js.native
   def popTo(indexOrViewCtrl: ViewController, opts: NavOptions, done: TransitionDoneFn): js.Promise[Boolean] = js.native
+  
   /**
     * Navigate back to the root of the stack, no matter how far back that is.
     * @param opts The navigation options.
@@ -508,6 +509,7 @@ trait IonNav extends js.Object {
   def popToRoot(opts: Null, done: TransitionDoneFn): js.Promise[Boolean] = js.native
   def popToRoot(opts: NavOptions): js.Promise[Boolean] = js.native
   def popToRoot(opts: NavOptions, done: TransitionDoneFn): js.Promise[Boolean] = js.native
+  
   def push(): js.Promise[Boolean] = js.native
   def push(component: String): js.Promise[Boolean] = js.native
   def push(
@@ -750,6 +752,7 @@ trait IonNav extends js.Object {
     opts: NavOptions,
     done: TransitionDoneFn
   ): js.Promise[Boolean] = js.native
+  
   /**
     * Removes a component from the navigation stack at the specified index.
     * @param startIndex The number to begin removal at.
@@ -777,6 +780,17 @@ trait IonNav extends js.Object {
   def removeIndex(startIndex: Double, removeCount: Double, opts: Null, done: TransitionDoneFn): js.Promise[Boolean] = js.native
   def removeIndex(startIndex: Double, removeCount: Double, opts: NavOptions): js.Promise[Boolean] = js.native
   def removeIndex(startIndex: Double, removeCount: Double, opts: NavOptions, done: TransitionDoneFn): js.Promise[Boolean] = js.native
+  
+  /**
+    * Root NavComponent to load
+    */
+  var root: js.UndefOr[NavComponent] = js.native
+  
+  /**
+    * Any parameters for the root component
+    */
+  var rootParams: js.UndefOr[ComponentProps[Null]] = js.native
+  
   /**
     * Set the views of the current navigation stack and navigate to the last view. By default animations are disabled, but they can be enabled by passing options to the navigation controller. Navigation parameters can also be passed to the individual pages in the array.
     * @param views The list of views to set as the navigation stack.
@@ -792,6 +806,7 @@ trait IonNav extends js.Object {
   def setPages(views: js.Array[NavComponent | NavComponentWithProps[_]], opts: Null, done: TransitionDoneFn): js.Promise[Boolean] = js.native
   def setPages(views: js.Array[NavComponent | NavComponentWithProps[_]], opts: NavOptions): js.Promise[Boolean] = js.native
   def setPages(views: js.Array[NavComponent | NavComponentWithProps[_]], opts: NavOptions, done: TransitionDoneFn): js.Promise[Boolean] = js.native
+  
   def setRoot(): js.Promise[Boolean] = js.native
   def setRoot(component: String): js.Promise[Boolean] = js.native
   def setRoot(
@@ -1034,6 +1049,7 @@ trait IonNav extends js.Object {
     opts: NavOptions,
     done: TransitionDoneFn
   ): js.Promise[Boolean] = js.native
+  
   def setRouteId(id: String, params: js.UndefOr[scala.Nothing], direction: RouterDirection): js.Promise[RouteWrite] = js.native
   def setRouteId(
     id: String,
@@ -1043,5 +1059,9 @@ trait IonNav extends js.Object {
   ): js.Promise[RouteWrite] = js.native
   def setRouteId(id: String, params: ComponentProps[Null], direction: RouterDirection): js.Promise[RouteWrite] = js.native
   def setRouteId(id: String, params: ComponentProps[Null], direction: RouterDirection, animation: AnimationBuilder): js.Promise[RouteWrite] = js.native
+  
+  /**
+    * If the nav component should allow for swipe-to-go-back.
+    */
+  var swipeGesture: js.UndefOr[Boolean] = js.native
 }
-

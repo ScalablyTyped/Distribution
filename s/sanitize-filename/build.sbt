@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sanitize-filename"
-version := "1.6.3-8235f0"
+version := "1.6.3-531bb5"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

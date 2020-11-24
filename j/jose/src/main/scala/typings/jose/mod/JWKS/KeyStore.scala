@@ -14,16 +14,18 @@ import typings.jose.mod._ConsumeKeyInput
 import typings.jose.mod.keyType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jose", "JWKS.KeyStore")
 @js.native
 class KeyStore () extends _ConsumeKeyInput {
   def this(keys: js.Array[Key]) = this()
-  val size: Double = js.native
+  
   def add(key: Key): Unit = js.native
+  
   def all(): js.Array[Key] = js.native
   def all(parameters: KeyQuery): js.Array[Key] = js.native
+  
   def generate(kty: keyType): js.Promise[Unit] = js.native
   def generate(
     kty: keyType,
@@ -46,6 +48,7 @@ class KeyStore () extends _ConsumeKeyInput {
   def generate(kty: keyType, crvOrSize: Curves, parameters: js.UndefOr[scala.Nothing], `private`: Boolean): js.Promise[Unit] = js.native
   def generate(kty: keyType, crvOrSize: Curves, parameters: BasicParameters): js.Promise[Unit] = js.native
   def generate(kty: keyType, crvOrSize: Curves, parameters: BasicParameters, `private`: Boolean): js.Promise[Unit] = js.native
+  
   def generateSync(kty: keyType): Unit = js.native
   def generateSync(
     kty: keyType,
@@ -134,6 +137,7 @@ class KeyStore () extends _ConsumeKeyInput {
   def generateSync_oct(kty: oct, bitlength: Double): Unit = js.native
   @JSName("generateSync")
   def generateSync_oct(kty: oct, bitlength: Double, parameters: BasicParameters): Unit = js.native
+  
   @JSName("generate")
   def generate_EC(kty: EC): js.Promise[Unit] = js.native
   @JSName("generate")
@@ -200,20 +204,24 @@ class KeyStore () extends _ConsumeKeyInput {
   def generate_oct(kty: oct, bitlength: Double): js.Promise[Unit] = js.native
   @JSName("generate")
   def generate_oct(kty: oct, bitlength: Double, parameters: BasicParameters): js.Promise[Unit] = js.native
+  
   def get(): Key = js.native
   def get(parameters: KeyQuery): Key = js.native
+  
   def remove(key: Key): Unit = js.native
+  
+  val size: Double = js.native
+  
   def toJWKS(): JSONWebKeySet = js.native
   def toJWKS(`private`: Boolean): JSONWebKeySet = js.native
 }
-
 /* static members */
 @JSImport("jose", "JWKS.KeyStore")
 @js.native
 object KeyStore extends js.Object {
+  
   /*
     * @deprecated in favor of JWKS.asKeyStore
     */
   def fromJWKS(jwks: JSONWebKeySet): KeyStore = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`1`
 import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *  Android only
@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
   - typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`2`
 */
 trait OSNotificationPermissionState extends js.Object
-
 object OSNotificationPermissionState {
+  
   @scala.inline
   def Authorized: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def Denied: `2` = 2.asInstanceOf[`2`]
 }
-

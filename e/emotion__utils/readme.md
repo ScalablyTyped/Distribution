@@ -10,9 +10,9 @@ internal utils for emotion
 | ------------------ | :-------------: |
 | Full name          | @emotion/utils |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 21 |
-| # downloads        | 83204742 |
+| # releases         | 12 |
+| # dependents       | 25 |
+| # downloads        | 148378192 |
 | # stars            | 0 |
 
 ## Links

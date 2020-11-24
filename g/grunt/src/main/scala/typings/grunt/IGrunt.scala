@@ -14,7 +14,7 @@ import typings.grunt.grunt.util.UtilModule
 import typings.grunt.node.NodePackage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* GRUNT MODULE
   **************/
@@ -28,26 +28,13 @@ trait IGrunt
   extends IConfigComponents
      with FailModule
      with ITaskComponents {
+  
   /**
     * The current Grunt package.json metadata, as an object.
     */
   @JSName("package")
   var _package: NodePackage = js.native
-  @JSName("config")
-  var config_Original: ConfigModule = js.native
-  var event: EventModule = js.native
-  var fail: FailModule = js.native
-  var file: FileModule = js.native
-  var log: LogModule = js.native
-  @JSName("option")
-  var option_Original: OptionModule = js.native
-  var task: TaskModule = js.native
-  var template: TemplateModule = js.native
-  var util: UtilModule = js.native
-  /**
-    * The current Grunt version, as a string. This is just a shortcut to the grunt.package.version property.
-    */
-  var version: java.lang.String = js.native
+  
   def config(prop: java.lang.String): js.Any = js.native
   /**
     * Get or set a value from the project's Grunt configuration.
@@ -56,6 +43,17 @@ trait IGrunt
     * otherwise grunt.config.get is called.
     */
   def config(prop: java.lang.String, value: js.Any): js.Any = js.native
+  @JSName("config")
+  var config_Original: ConfigModule = js.native
+  
+  var event: EventModule = js.native
+  
+  var fail: FailModule = js.native
+  
+  var file: FileModule = js.native
+  
+  var log: LogModule = js.native
+  
   def option[T](key: java.lang.String): T = js.native
   /**
     * Gets or sets an option.
@@ -66,5 +64,17 @@ trait IGrunt
     * assert(isDev === true)
     */
   def option[T](key: java.lang.String, value: T): Unit = js.native
+  @JSName("option")
+  var option_Original: OptionModule = js.native
+  
+  var task: TaskModule = js.native
+  
+  var template: TemplateModule = js.native
+  
+  var util: UtilModule = js.native
+  
+  /**
+    * The current Grunt version, as a string. This is just a shortcut to the grunt.package.version property.
+    */
+  var version: java.lang.String = js.native
 }
-

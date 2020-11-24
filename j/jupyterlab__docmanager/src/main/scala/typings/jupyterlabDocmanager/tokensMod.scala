@@ -15,33 +15,30 @@ import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/docmanager/lib/tokens", JSImport.Namespace)
 @js.native
 object tokensMod extends js.Object {
+  
   @js.native
   trait IDocumentManager extends IDisposable {
+    
     /**
       * A signal emitted when one of the documents is activated.
       */
     val activateRequested: ISignal[this.type, String] = js.native
+    
     /**
       * Whether to autosave documents.
       */
     var autosave: Boolean = js.native
+    
     /**
       * Determines the time interval for autosave in seconds.
       */
     var autosaveInterval: Double = js.native
-    /**
-      * The registry used by the manager.
-      */
-    val registry: DocumentRegistry = js.native
-    /**
-      * The service manager used by the manager.
-      */
-    val services: IManager = js.native
+    
     /**
       * Clone a widget.
       *
@@ -54,12 +51,14 @@ object tokensMod extends js.Object {
       *  `undefined` if the source widget is not managed by this manager.
       */
     def cloneWidget(widget: Widget): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    
     /**
       * Close all of the open documents.
       *
       * @returns A promise resolving when the widgets are closed.
       */
     def closeAll(): js.Promise[Unit] = js.native
+    
     /**
       * Close the widgets associated with a given path.
       *
@@ -68,6 +67,7 @@ object tokensMod extends js.Object {
       * @returns A promise resolving when the widgets are closed.
       */
     def closeFile(path: String): js.Promise[Unit] = js.native
+    
     /**
       * Get the document context for a widget.
       *
@@ -77,6 +77,7 @@ object tokensMod extends js.Object {
       * context exists.
       */
     def contextForWidget(widget: Widget): js.UndefOr[Context] = js.native
+    
     /**
       * Copy a file.
       *
@@ -87,6 +88,7 @@ object tokensMod extends js.Object {
       * @returns A promise which resolves to the contents of the file.
       */
     def copy(fromFile: String, toDir: String): js.Promise[typings.jupyterlabServices.contentsMod.Contents.IModel] = js.native
+    
     /**
       * Create a new file and return the widget used to view it.
       *
@@ -103,8 +105,10 @@ object tokensMod extends js.Object {
       * cannot be found.
       */
     def createNew(path: String): js.UndefOr[Widget] = js.native
+    def createNew(path: String, widgetName: js.UndefOr[scala.Nothing], kernel: PartialIModel): js.UndefOr[Widget] = js.native
     def createNew(path: String, widgetName: String): js.UndefOr[Widget] = js.native
     def createNew(path: String, widgetName: String, kernel: PartialIModel): js.UndefOr[Widget] = js.native
+    
     /**
       * Delete a file.
       *
@@ -117,6 +121,7 @@ object tokensMod extends js.Object {
       * sessions are using the kernel, the session will be shut down.
       */
     def deleteFile(path: String): js.Promise[Unit] = js.native
+    
     /**
       * See if a widget already exists for the given path and widget name.
       *
@@ -132,12 +137,14 @@ object tokensMod extends js.Object {
       */
     def findWidget(path: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     def findWidget(path: String, widgetName: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    
     /**
       * Create a new untitled file.
       *
       * @param options - The file content creation options.
       */
     def newUntitled(options: ICreateOptions): js.Promise[typings.jupyterlabServices.contentsMod.Contents.IModel] = js.native
+    
     /**
       * Open a file and return the widget used to view it.
       *
@@ -154,9 +161,19 @@ object tokensMod extends js.Object {
       * cannot be found.
       */
     def open(path: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def open(
+      path: String,
+      widgetName: js.UndefOr[scala.Nothing],
+      kernel: js.UndefOr[scala.Nothing],
+      options: IOpenOptions
+    ): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def open(path: String, widgetName: js.UndefOr[scala.Nothing], kernel: PartialIModel): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def open(path: String, widgetName: js.UndefOr[scala.Nothing], kernel: PartialIModel, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     def open(path: String, widgetName: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def open(path: String, widgetName: String, kernel: js.UndefOr[scala.Nothing], options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     def open(path: String, widgetName: String, kernel: PartialIModel): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     def open(path: String, widgetName: String, kernel: PartialIModel, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    
     /**
       * Open a file and return the widget used to view it.
       * Reveals an already existing editor.
@@ -174,9 +191,19 @@ object tokensMod extends js.Object {
       * cannot be found.
       */
     def openOrReveal(path: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def openOrReveal(
+      path: String,
+      widgetName: js.UndefOr[scala.Nothing],
+      kernel: js.UndefOr[scala.Nothing],
+      options: IOpenOptions
+    ): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def openOrReveal(path: String, widgetName: js.UndefOr[scala.Nothing], kernel: PartialIModel): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def openOrReveal(path: String, widgetName: js.UndefOr[scala.Nothing], kernel: PartialIModel, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     def openOrReveal(path: String, widgetName: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def openOrReveal(path: String, widgetName: String, kernel: js.UndefOr[scala.Nothing], options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     def openOrReveal(path: String, widgetName: String, kernel: PartialIModel): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
     def openOrReveal(path: String, widgetName: String, kernel: PartialIModel, options: IOpenOptions): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    
     /**
       * Overwrite a file.
       *
@@ -187,6 +214,12 @@ object tokensMod extends js.Object {
       * @returns A promise containing the new file contents model.
       */
     def overwrite(oldPath: String, newPath: String): js.Promise[typings.jupyterlabServices.contentsMod.Contents.IModel] = js.native
+    
+    /**
+      * The registry used by the manager.
+      */
+    val registry: DocumentRegistry = js.native
+    
     /**
       * Rename a file or directory.
       *
@@ -199,10 +232,12 @@ object tokensMod extends js.Object {
       * a file.
       */
     def rename(oldPath: String, newPath: String): js.Promise[typings.jupyterlabServices.contentsMod.Contents.IModel] = js.native
+    
+    /**
+      * The service manager used by the manager.
+      */
+    val services: IManager = js.native
   }
-  
   @js.native
   object IDocumentManager extends TopLevel[Token[IDocumentManager]]
-  
 }
-

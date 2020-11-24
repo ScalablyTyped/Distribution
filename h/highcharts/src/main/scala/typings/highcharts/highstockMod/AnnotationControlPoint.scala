@@ -4,7 +4,7 @@ import typings.highcharts.mod.AnnotationControlPointOptionsObject
 import typings.highcharts.mod.AnnotationControllable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts/highstock", "AnnotationControlPoint")
 @js.native
@@ -38,4 +38,3 @@ class AnnotationControlPoint protected ()
     index: Double
   ) = this()
 }
-

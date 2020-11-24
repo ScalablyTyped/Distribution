@@ -6,7 +6,7 @@ import typings.figma.figmaStrings.PNG
 import typings.figma.figmaStrings.SVG
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.figma.mod.global.ExportSettingsImage
@@ -14,22 +14,23 @@ import scala.scalajs.js.annotation._
   - typings.figma.mod.global.ExportSettingsPDF
 */
 trait ExportSettings extends js.Object
-
 object ExportSettings {
+  
   @scala.inline
   def ExportSettingsImage(format: JPG | PNG): ExportSettings = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportSettings]
   }
+  
   @scala.inline
   def ExportSettingsSVG(format: SVG): ExportSettings = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportSettings]
   }
+  
   @scala.inline
   def ExportSettingsPDF(format: PDF): ExportSettings = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportSettings]
   }
 }
-

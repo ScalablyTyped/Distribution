@@ -3,9 +3,70 @@ package typings.amapJsApiPlaceSearch
 import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.SearchStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amapJsApiPlaceSearchStrings {
+  
+  @scala.inline
+  def CINEMA: CINEMA = "CINEMA".asInstanceOf[CINEMA]
+  
+  @scala.inline
+  def DINING: DINING = "DINING".asInstanceOf[DINING]
+  
+  @scala.inline
+  def HOTEL: HOTEL = "HOTEL".asInstanceOf[HOTEL]
+  
+  @scala.inline
+  def SCENIC: SCENIC = "SCENIC".asInstanceOf[SCENIC]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def base: base = "base".asInstanceOf[base]
+  
+  @scala.inline
+  def click: click = "click".asInstanceOf[click]
+  
+  @scala.inline
+  def complete: complete = "complete".asInstanceOf[complete]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def infoWindowClick: infoWindowClick = "infoWindowClick".asInstanceOf[infoWindowClick]
+  
+  @scala.inline
+  def listElementClick: listElementClick = "listElementClick".asInstanceOf[listElementClick]
+  
+  @scala.inline
+  def listElementDetroyed: listElementDetroyed = "listElementDetroyed".asInstanceOf[listElementDetroyed]
+  
+  @scala.inline
+  def markerClick: markerClick = "markerClick".asInstanceOf[markerClick]
+  
+  @scala.inline
+  def markerDestoryed: markerDestoryed = "markerDestoryed".asInstanceOf[markerDestoryed]
+  
+  @scala.inline
+  def newpc: newpc = "newpc".asInstanceOf[newpc]
+  
+  @scala.inline
+  def no_data: no_data = "no_data".asInstanceOf[no_data]
+  
+  @scala.inline
+  def renderComplete: renderComplete = "renderComplete".asInstanceOf[renderComplete]
+  
+  @scala.inline
+  def selectChanged: selectChanged = "selectChanged".asInstanceOf[selectChanged]
+  
+  @scala.inline
+  def willClear: willClear = "willClear".asInstanceOf[willClear]
+  
   @js.native
   sealed trait CINEMA extends js.Object
   
@@ -65,46 +126,4 @@ object amapJsApiPlaceSearchStrings {
   
   @js.native
   sealed trait willClear extends js.Object
-  
-  @scala.inline
-  def CINEMA: CINEMA = "CINEMA".asInstanceOf[CINEMA]
-  @scala.inline
-  def DINING: DINING = "DINING".asInstanceOf[DINING]
-  @scala.inline
-  def HOTEL: HOTEL = "HOTEL".asInstanceOf[HOTEL]
-  @scala.inline
-  def SCENIC: SCENIC = "SCENIC".asInstanceOf[SCENIC]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def base: base = "base".asInstanceOf[base]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def infoWindowClick: infoWindowClick = "infoWindowClick".asInstanceOf[infoWindowClick]
-  @scala.inline
-  def listElementClick: listElementClick = "listElementClick".asInstanceOf[listElementClick]
-  @scala.inline
-  def listElementDetroyed: listElementDetroyed = "listElementDetroyed".asInstanceOf[listElementDetroyed]
-  @scala.inline
-  def markerClick: markerClick = "markerClick".asInstanceOf[markerClick]
-  @scala.inline
-  def markerDestoryed: markerDestoryed = "markerDestoryed".asInstanceOf[markerDestoryed]
-  @scala.inline
-  def newpc: newpc = "newpc".asInstanceOf[newpc]
-  @scala.inline
-  def no_data: no_data = "no_data".asInstanceOf[no_data]
-  @scala.inline
-  def renderComplete: renderComplete = "renderComplete".asInstanceOf[renderComplete]
-  @scala.inline
-  def selectChanged: selectChanged = "selectChanged".asInstanceOf[selectChanged]
-  @scala.inline
-  def willClear: willClear = "willClear".asInstanceOf[willClear]
 }
-

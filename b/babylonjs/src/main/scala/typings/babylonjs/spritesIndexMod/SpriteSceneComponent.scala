@@ -3,7 +3,7 @@ package typings.babylonjs.spritesIndexMod
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Sprites/index", "SpriteSceneComponent")
 @js.native
@@ -15,4 +15,3 @@ class SpriteSceneComponent protected ()
     */
   def this(scene: Scene) = this()
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Operatingsystems")
 @js.native
 class ResourceOperatingsystems protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.operatingSystems.get
     * @desc Gets one operating system by DART ID.
@@ -42,6 +44,7 @@ class ResourceOperatingsystems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperatingSystem]
   ): Unit = js.native
+  
   /**
     * dfareporting.operatingSystems.list
     * @desc Retrieves a list of operating systems.
@@ -74,4 +77,3 @@ class ResourceOperatingsystems protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperatingSystemsListResponse]
   ): Unit = js.native
 }
-

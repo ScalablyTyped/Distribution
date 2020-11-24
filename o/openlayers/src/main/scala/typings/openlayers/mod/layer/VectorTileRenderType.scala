@@ -2,7 +2,7 @@ package typings.openlayers.mod.layer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Render mode for vector tiles:
@@ -22,13 +22,14 @@ import scala.scalajs.js.annotation._
   - typings.openlayers.openlayersStrings.vector
 */
 trait VectorTileRenderType extends js.Object
-
 object VectorTileRenderType {
+  
   @scala.inline
   def hybrid: typings.openlayers.openlayersStrings.hybrid = "hybrid".asInstanceOf[typings.openlayers.openlayersStrings.hybrid]
+  
   @scala.inline
   def image: typings.openlayers.openlayersStrings.image = "image".asInstanceOf[typings.openlayers.openlayersStrings.image]
+  
   @scala.inline
   def vector: typings.openlayers.openlayersStrings.vector = "vector".asInstanceOf[typings.openlayers.openlayersStrings.vector]
 }
-

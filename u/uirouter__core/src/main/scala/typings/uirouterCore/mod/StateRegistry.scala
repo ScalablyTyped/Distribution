@@ -2,7 +2,7 @@ package typings.uirouterCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "StateRegistry")
 @js.native
@@ -11,4 +11,3 @@ class StateRegistry protected ()
   /** @internal */
   def this(router: typings.uirouterCore.routerMod.UIRouter) = this()
 }
-

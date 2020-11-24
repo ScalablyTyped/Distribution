@@ -4,7 +4,7 @@ import typings.baidumapWebSdk.BMap.MapOptions
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BMap.Map")
 @js.native
@@ -15,4 +15,3 @@ class Map protected ()
   def this(container: String, opts: MapOptions) = this()
   def this(container: HTMLElement, opts: MapOptions) = this()
 }
-

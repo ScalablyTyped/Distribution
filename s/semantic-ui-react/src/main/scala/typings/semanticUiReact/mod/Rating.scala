@@ -7,7 +7,7 @@ import typings.semanticUiReact.ratingRatingMod.RatingComponent
 import typings.semanticUiReact.ratingRatingMod.RatingProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Rating")
 @js.native
@@ -16,8 +16,6 @@ class Rating protected ()
   def this(props: RatingProps) = this()
   def this(props: RatingProps, context: js.Any) = this()
 }
-
 @JSImport("semantic-ui-react", "Rating")
 @js.native
 object Rating extends TopLevel[RatingComponent]
-

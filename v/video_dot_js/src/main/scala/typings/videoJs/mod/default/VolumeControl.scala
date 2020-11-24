@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.videoJs.mod.videojs.VolumeControlOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js", "VolumeControl")
 @js.native
@@ -28,4 +28,3 @@ Instantiable1[
       /* options */ VolumeControlOptions, 
       typings.videoJs.mod.videojs.VolumeControl
     ]
-

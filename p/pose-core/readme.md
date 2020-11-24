@@ -10,9 +10,9 @@ Factory for Pose animation state machines
 | ------------------ | :-------------: |
 | Full name          | pose-core |
 | Keywords           | animation, dom, declarative, popmotion |
-| # releases         | 39 |
+| # releases         | 5 |
 | # dependents       | 4 |
-| # downloads        | 3519125 |
+| # downloads        | 4427011 |
 | # stars            | 0 |
 
 ## Links

@@ -2,9 +2,25 @@ package typings.reactFauxDom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactFauxDomStrings {
+  
+  @scala.inline
+  def animateFauxDOM: animateFauxDOM = "animateFauxDOM".asInstanceOf[animateFauxDOM]
+  
+  @scala.inline
+  def connectFauxDOM: connectFauxDOM = "connectFauxDOM".asInstanceOf[connectFauxDOM]
+  
+  @scala.inline
+  def drawFauxDOM: drawFauxDOM = "drawFauxDOM".asInstanceOf[drawFauxDOM]
+  
+  @scala.inline
+  def isAnimatingFauxDOM: isAnimatingFauxDOM = "isAnimatingFauxDOM".asInstanceOf[isAnimatingFauxDOM]
+  
+  @scala.inline
+  def stopAnimatingFauxDOM: stopAnimatingFauxDOM = "stopAnimatingFauxDOM".asInstanceOf[stopAnimatingFauxDOM]
+  
   @js.native
   sealed trait animateFauxDOM extends js.Object
   
@@ -19,16 +35,4 @@ object reactFauxDomStrings {
   
   @js.native
   sealed trait stopAnimatingFauxDOM extends js.Object
-  
-  @scala.inline
-  def animateFauxDOM: animateFauxDOM = "animateFauxDOM".asInstanceOf[animateFauxDOM]
-  @scala.inline
-  def connectFauxDOM: connectFauxDOM = "connectFauxDOM".asInstanceOf[connectFauxDOM]
-  @scala.inline
-  def drawFauxDOM: drawFauxDOM = "drawFauxDOM".asInstanceOf[drawFauxDOM]
-  @scala.inline
-  def isAnimatingFauxDOM: isAnimatingFauxDOM = "isAnimatingFauxDOM".asInstanceOf[isAnimatingFauxDOM]
-  @scala.inline
-  def stopAnimatingFauxDOM: stopAnimatingFauxDOM = "stopAnimatingFauxDOM".asInstanceOf[stopAnimatingFauxDOM]
 }
-

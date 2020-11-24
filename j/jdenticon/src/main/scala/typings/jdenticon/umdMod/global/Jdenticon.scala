@@ -4,14 +4,11 @@ import typings.node.Buffer
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Jdenticon extends js.Object {
-  /**
-    * Specifies the version of the Jdenticon package in use.
-    */
-  val version: String = js.native
+  
   /**
     * Updates all canvas elements with the `data-jdenticon-hash` or `data-jdenticon-value` attribute.
     * 
@@ -19,6 +16,7 @@ trait Jdenticon extends js.Object {
     * This method is only available in the browser. Calling this method on Node.js will throw an error.
     */
   def apply(): Unit = js.native
+  
   /**
     * Gets the current global style configuration.
     */
@@ -31,6 +29,7 @@ trait Jdenticon extends js.Object {
     * condition where the style is set before the Jdenticon lib has loaded, leading to an unhandled error.
     */
   def configure(newConfig: JdenticonConfig): JdenticonConfig = js.native
+  
   /**
     * Draws an identicon to a context.
     * @param ctx Canvas context on which the icon will be drawn at location (0, 0).
@@ -53,6 +52,7 @@ trait Jdenticon extends js.Object {
     size: Double,
     config: JdenticonConfig
   ): Unit = js.native
+  
   /**
     * Draws an identicon as PNG.
     * 
@@ -69,6 +69,7 @@ trait Jdenticon extends js.Object {
   def toPng(hashOrValue: js.Any, size: Double): Buffer = js.native
   def toPng(hashOrValue: js.Any, size: Double, config: Double): Buffer = js.native
   def toPng(hashOrValue: js.Any, size: Double, config: JdenticonConfig): Buffer = js.native
+  
   /**
     * Draws an identicon as an SVG string.
     * @param hashOrValue A hexadecimal hash string or any value that will be hashed by Jdenticon.
@@ -81,6 +82,7 @@ trait Jdenticon extends js.Object {
   def toSvg(hashOrValue: js.Any, size: Double): String = js.native
   def toSvg(hashOrValue: js.Any, size: Double, config: Double): String = js.native
   def toSvg(hashOrValue: js.Any, size: Double, config: JdenticonConfig): String = js.native
+  
   def update(elementOrSelector: String): Unit = js.native
   def update(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
   def update(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
@@ -107,6 +109,7 @@ trait Jdenticon extends js.Object {
   def update(elementOrSelector: Element, hashOrValue: js.Any): Unit = js.native
   def update(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = js.native
   def update(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
+  
   def updateCanvas(elementOrSelector: String): Unit = js.native
   def updateCanvas(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
   def updateCanvas(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
@@ -133,6 +136,7 @@ trait Jdenticon extends js.Object {
   def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any): Unit = js.native
   def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = js.native
   def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
+  
   def updateSvg(elementOrSelector: String): Unit = js.native
   def updateSvg(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
   def updateSvg(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
@@ -159,5 +163,9 @@ trait Jdenticon extends js.Object {
   def updateSvg(elementOrSelector: Element, hashOrValue: js.Any): Unit = js.native
   def updateSvg(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = js.native
   def updateSvg(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
+  
+  /**
+    * Specifies the version of the Jdenticon package in use.
+    */
+  val version: String = js.native
 }
-

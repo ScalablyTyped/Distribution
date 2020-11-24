@@ -2,9 +2,19 @@ package typings.prosemirrorModel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object prosemirrorModelStrings {
+  
+  @scala.inline
+  def Schema: Schema = "Schema".asInstanceOf[Schema]
+  
+  @scala.inline
+  def SchemaSpec: SchemaSpec = "SchemaSpec".asInstanceOf[SchemaSpec]
+  
+  @scala.inline
+  def full: full = "full".asInstanceOf[full]
+  
   @js.native
   sealed trait Schema extends js.Object
   
@@ -13,12 +23,4 @@ object prosemirrorModelStrings {
   
   @js.native
   sealed trait full extends js.Object
-  
-  @scala.inline
-  def Schema: Schema = "Schema".asInstanceOf[Schema]
-  @scala.inline
-  def SchemaSpec: SchemaSpec = "SchemaSpec".asInstanceOf[SchemaSpec]
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
 }
-

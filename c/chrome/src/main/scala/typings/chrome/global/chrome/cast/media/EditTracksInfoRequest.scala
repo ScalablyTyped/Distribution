@@ -2,7 +2,7 @@ package typings.chrome.global.chrome.cast.media
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.cast.media.EditTracksInfoRequest")
 @js.native
@@ -21,4 +21,3 @@ class EditTracksInfoRequest ()
   ) = this()
   def this(activeTrackIds: js.Array[Double], textTrackStyle: typings.chrome.chrome.cast.media.TextTrackStyle) = this()
 }
-

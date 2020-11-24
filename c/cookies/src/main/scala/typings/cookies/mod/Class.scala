@@ -5,7 +5,7 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cookies", JSImport.Namespace)
 @js.native
@@ -14,7 +14,6 @@ class Class protected () extends Cookies {
   /**
     * "options" array of key strings is deprecated, provide using options {"keys": keygrip}
     */
-  // tslint:disable-next-line:unified-signatures
   def this(request: IncomingMessage, response: ServerResponse, options: js.Array[String]) = this()
   def this(request: IncomingMessage, response: ServerResponse, options: Option) = this()
   /**
@@ -23,4 +22,3 @@ class Class protected () extends Cookies {
   // tslint:disable-next-line:unified-signatures
   def this(request: IncomingMessage, response: ServerResponse, options: Keygrip) = this()
 }
-

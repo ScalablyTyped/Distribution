@@ -5,7 +5,7 @@ import typings.mysql.mod.MysqlError
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "Connection")
 @js.native
@@ -13,22 +13,7 @@ class Connection protected () extends EventEmitter {
   def this(connection: String) = this()
   def this(connection: typings.mysql.mod.Connection) = this()
   def this(connection: ConnectionConfig) = this()
-  /**
-    * The real database connection socket.
-    */
-  var connection: typings.mysql.mod.Connection = js.native
-  /**
-    * Collection of the supported event types for the tables.
-    */
-  var eventTypes: js.Array[String] = js.native
-  /**
-    * Force to fetch ONLY these Database table names {array of string}.
-    */
-  var tableNamesToUseOnly: js.Array[_] = js.native
-  /**
-    * All tables {MysqlTable} inside this connection's database.
-    */
-  var tables: js.Array[Table[_]] = js.native
+  
   /**
     * Attach a real connection.
     * @param {Mysql.Connection} connection the real connection object.
@@ -36,12 +21,19 @@ class Connection protected () extends EventEmitter {
     * @return {nothing}
     */
   def attach(connection: typings.mysql.mod.Connection): Unit = js.native
+  
   /**
     * Clear all binary logs from the whole database.
     * When finish returns a promise, use it with .then(function(){});
     * @return Promise
     */
   def clearBinaryLogs(): typings.bluebird.mod.^[Unit] = js.native
+  
+  /**
+    * The real database connection socket.
+    */
+  var connection: typings.mysql.mod.Connection = js.native
+  
   /**
     * Creates the MysqlConnection from the connection url or the real connection object.
     * @param {string | Mysql.Connection |  Mysql.ConnectionConfig} connection the connection url or the real connection object.
@@ -51,11 +43,13 @@ class Connection protected () extends EventEmitter {
   def create(connection: String): Unit = js.native
   def create(connection: typings.mysql.mod.Connection): Unit = js.native
   def create(connection: ConnectionConfig): Unit = js.native
+  
   /**
     * Close the entire real connection and remove all event's listeners (if exist).
     * the difference from the 'end' is that this method doesn't care about errors so no callback passing here.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Close the entire real connection and remove all event's listeners (if exist).
     * @param {function} callback If error occurs when closing the connection, this callback has the responsibility to catch it.
@@ -64,6 +58,7 @@ class Connection protected () extends EventEmitter {
     */
   def end(): Unit = js.native
   def end(callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Escape the query column's value  and return it.
     * @param {string} val the value which will be escaped.
@@ -71,12 +66,19 @@ class Connection protected () extends EventEmitter {
     * @return {string}
     */
   def escape(`val`: String): String = js.native
+  
+  /**
+    * Collection of the supported event types for the tables.
+    */
+  var eventTypes: js.Array[String] = js.native
+  
   /**
     * This method has the resposibility of fetching the correct tables from the database ( table = columns' names, primary key name).
     * @returnType {Promise}
     * @return {Promise}
     */
   def fetchDatabaseInformation(): typings.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Link the real connection with this MysqlConnection object.
     * @param {function} readyCallback when the link operation is done this callback is executed.
@@ -85,6 +87,7 @@ class Connection protected () extends EventEmitter {
     */
   def link(): typings.bluebird.mod.^[Unit] = js.native
   def link(readyCallback: js.Function0[Unit]): typings.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Call when must notify the Database events, SAVE(INSERT,UPDATE), REMOVE(DELETE).
     * @param {string} tableWhichCalled the table name which event is coming from.
@@ -94,6 +97,7 @@ class Connection protected () extends EventEmitter {
     * @return {nothing}
     */
   def notice(tableWhichCalled: String, queryStr: String, rawRows: js.Array[_]): Unit = js.native
+  
   /**
     * Executes a database query.
     * @param {string} queryStr the query text/string to be executed.
@@ -108,6 +112,7 @@ class Connection protected () extends EventEmitter {
     callback: js.Function2[/* err */ MysqlError, /* results */ js.Any, _],
     queryArguments: js.Array[_]
   ): Unit = js.native
+  
   /**
     * Returns a MysqlTable object from the database factory. (Note: this method doesn't create anything, just finds and returns the correct table, you don't have to create anything at all. Tables are fetched by the library itself.)
     * If you are using typescript you can pass a class (generic<T>) in order to use the auto completion assistance on table's results methods(find,findById,findAll,save,remove,safeRemove).
@@ -116,6 +121,17 @@ class Connection protected () extends EventEmitter {
     * @return {MysqlTable}
     */
   def table[T](tableName: String): Table[T] = js.native
+  
+  /**
+    * Force to fetch ONLY these Database table names {array of string}.
+    */
+  var tableNamesToUseOnly: js.Array[_] = js.native
+  
+  /**
+    * All tables {MysqlTable} inside this connection's database.
+    */
+  var tables: js.Array[Table[_]] = js.native
+  
   /**
     * Removes an event listener/watcher from a table for a specific event type.
     * @param {string} tableName the table name which you want to remove the event listener.
@@ -129,6 +145,7 @@ class Connection protected () extends EventEmitter {
     evtType: String,
     callbackToRemove: js.Function1[/* rawResults */ js.Array[_], Unit]
   ): Unit = js.native
+  
   /**
     * Force to use/fetch information from only certain of database's tables, otherwise all database's tables information will be fetched.
     * @param {Array} tables the array of the tables  {string}
@@ -136,6 +153,7 @@ class Connection protected () extends EventEmitter {
     * @return {nothing}
     */
   def useOnly(tables: js.Any*): Unit = js.native
+  
   /**
     * Adds an event listener/watcher on a table for a 'database event'.
     * @param {string} tableName the table name which you want to add the event listener.
@@ -146,4 +164,3 @@ class Connection protected () extends EventEmitter {
     */
   def watch(tableName: String, evtType: js.Any, callback: js.Function1[/* rawRows */ js.Array[_], Unit]): Unit = js.native
 }
-

@@ -4,12 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver/lib/logging", "Preferences")
 @js.native
 class Preferences () extends js.Object {
+  
   var prefs_ : Map[String, Level] = js.native
+  
   /**
     * Sets the desired logging level for a particular log type.
     * @param {(string|Type)} type The log type.
@@ -18,6 +20,7 @@ class Preferences () extends js.Object {
     */
   def setLevel(`type`: String, level: Level): Unit = js.native
   def setLevel(`type`: IType, level: Level): Unit = js.native
+  
   /**
     * Converts this instance to its JSON representation.
     * @return {!Object<string, string>} The JSON representation of this set of
@@ -25,4 +28,3 @@ class Preferences () extends js.Object {
     */
   def toJSON(): StringDictionary[String] = js.native
 }
-

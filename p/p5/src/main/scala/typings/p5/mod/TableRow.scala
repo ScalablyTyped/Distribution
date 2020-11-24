@@ -2,10 +2,11 @@ package typings.p5.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TableRow extends js.Object {
+  
   /**
     *   Retrieves a value from the TableRow's specified
     *   column. The column may be specified by either its
@@ -14,6 +15,7 @@ trait TableRow extends js.Object {
     */
   def get(column: String): String | Double = js.native
   def get(column: Double): String | Double = js.native
+  
   /**
     *   Retrieves a Float value from the TableRow's
     *   specified column. The column may be specified by
@@ -23,6 +25,7 @@ trait TableRow extends js.Object {
     */
   def getNum(column: String): Double = js.native
   def getNum(column: Double): Double = js.native
+  
   /**
     *   Retrieves an String value from the TableRow's
     *   specified column. The column may be specified by
@@ -32,6 +35,7 @@ trait TableRow extends js.Object {
     */
   def getString(column: String): String = js.native
   def getString(column: Double): String = js.native
+  
   /**
     *   Stores a value in the TableRow's specified column.
     *   The column may be specified by either its ID or
@@ -43,6 +47,7 @@ trait TableRow extends js.Object {
   def set(column: String, value: Double): Unit = js.native
   def set(column: Double, value: String): Unit = js.native
   def set(column: Double, value: Double): Unit = js.native
+  
   def setNum(column: String, value: String): Unit = js.native
   /**
     *   Stores a Float value in the TableRow's specified
@@ -54,6 +59,7 @@ trait TableRow extends js.Object {
   def setNum(column: String, value: Double): Unit = js.native
   def setNum(column: Double, value: String): Unit = js.native
   def setNum(column: Double, value: Double): Unit = js.native
+  
   /**
     *   Stores a String value in the TableRow's specified
     *   column. The column may be specified by either its
@@ -70,4 +76,3 @@ trait TableRow extends js.Object {
   def setString(column: Double, value: Boolean): Unit = js.native
   def setString(column: Double, value: Double): Unit = js.native
 }
-

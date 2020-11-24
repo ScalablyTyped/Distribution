@@ -2,7 +2,7 @@ package typings.angularForms.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @description
@@ -24,4 +24,3 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/forms", "\u0275angular_packages_forms_forms_y")
 @js.native
 class ɵangularPackagesFormsFormsY () extends ɵNgNoValidate
-

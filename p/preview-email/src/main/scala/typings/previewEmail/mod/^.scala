@@ -2,11 +2,12 @@ package typings.previewEmail.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("preview-email", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Automatically opens your browser to preview Node.js email messages sent with Nodemailer. Made for Lad!
     *
@@ -16,4 +17,3 @@ object ^ extends js.Object {
   def apply(message: typings.nodemailer.mailerMod.Options): js.Promise[String] = js.native
   def apply(message: typings.nodemailer.mailerMod.Options, options: Options): js.Promise[String] = js.native
 }
-

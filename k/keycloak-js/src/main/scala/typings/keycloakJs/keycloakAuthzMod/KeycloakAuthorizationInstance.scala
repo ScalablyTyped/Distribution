@@ -3,12 +3,11 @@ package typings.keycloakJs.keycloakAuthzMod
 import typings.keycloakJs.anon.Rptendpoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait KeycloakAuthorizationInstance extends js.Object {
-  var config: Rptendpoint = js.native
-  var rpt: js.Any = js.native
+  
   /**
     * This method enables client applications to better integrate with resource servers protected by a Keycloak
     * policy enforcer using UMA protocol.
@@ -19,6 +18,9 @@ trait KeycloakAuthorizationInstance extends js.Object {
     * @returns A promise to set functions to be invoked on grant, deny or error.
     */
   def authorize(authorizationRequest: AuthorizationRequest): KeycloakAuthorizationPromise = js.native
+  
+  var config: Rptendpoint = js.native
+  
   /**
   		 * Obtains all entitlements from a Keycloak server based on a given resourceServerId.
     *
@@ -28,6 +30,8 @@ trait KeycloakAuthorizationInstance extends js.Object {
   		 */
   def entitlement(resourceServerId: String): KeycloakAuthorizationPromise = js.native
   def entitlement(resourceServerId: String, authorizationRequest: AuthorizationRequest): KeycloakAuthorizationPromise = js.native
+  
   def init(): Unit = js.native
+  
+  var rpt: js.Any = js.native
 }
-

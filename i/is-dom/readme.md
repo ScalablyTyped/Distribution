@@ -12,7 +12,7 @@ Check if the given object is a dom node
 | Keywords           | dom, html, is dom, dom node, dom object |
 | # releases         | 2 |
 | # dependents       | 54 |
-| # downloads        | 59314901 |
+| # downloads        | 62452781 |
 | # stars            | 3 |
 
 ## Links

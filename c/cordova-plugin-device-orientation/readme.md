@@ -12,7 +12,7 @@ Typings are for version 2.0.1
 | Keywords           | cordova, device, orientation, ecosystem:cordova, cordova-firefoxos, cordova-android, cordova-amazon-fireos, cordova-ubuntu, cordova-blackberry10, cordova-ios, cordova-wp7, cordova-wp8, cordova-windows8, cordova-tizen, cordova-browser |
 | # releases         | 1 |
 | # dependents       | 2 |
-| # downloads        | 103437 |
+| # downloads        | 75490 |
 | # stars            | 6 |
 
 ## Links

@@ -6,61 +6,86 @@ import typings.std.FlatArray
 import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   /* Inlined std.ReadonlyArray<cookiejar.cookiejar.Cookie> & {toValueString (): string} */
   @js.native
   trait ReadonlyArrayCookietoValu extends /* n */ NumberDictionary[Cookie] {
-    /** Iterator of values in the array. */
-    @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[IterableIterator[Cookie]] = js.native
-    /**
-      * Gets the length of the array. This is a number one higher than the highest element defined in an array.
-      */
-    val length: Double = js.native
+    
     /**
       * Combines two or more arrays.
       * @param items Additional items to add to the end of array1.
       */
     def concat(items: (js.Array[Cookie] | Cookie)*): js.Array[Cookie] = js.native
+    
     /**
       * Returns an iterable of key, value pairs for every entry in the array
       */
     def entries(): IterableIterator[js.Tuple2[Double, Cookie]] = js.native
+    
     /**
       * Determines whether all the members of an array satisfy the specified test.
-      * @param callbackfn A function that accepts up to three arguments. The every method calls
-      * the callbackfn function for each element in the array until the callbackfn returns a value
+      * @param predicate A function that accepts up to three arguments. The every method calls
+      * the predicate function for each element in the array until the predicate returns a value
       * which is coercible to the Boolean value false, or until the end of the array.
-      * @param thisArg An object to which the this keyword can refer in the callbackfn function.
+      * @param thisArg An object to which the this keyword can refer in the predicate function.
       * If thisArg is omitted, undefined is used as the this value.
       */
-    def every(callbackfn: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _]): Boolean = js.native
+    def every(predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _]): Boolean = js.native
     def every(
-      callbackfn: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _],
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _],
       thisArg: js.Any
     ): Boolean = js.native
     /**
-      * Returns the elements of an array that meet the condition specified in a callback function.
-      * @param callbackfn A function that accepts up to three arguments. The filter method calls the callbackfn function one time for each element in the array.
-      * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+      * Determines whether all the members of an array satisfy the specified test.
+      * @param predicate A function that accepts up to three arguments. The every method calls
+      * the predicate function for each element in the array until the predicate returns a value
+      * which is coercible to the Boolean value false, or until the end of the array.
+      * @param thisArg An object to which the this keyword can refer in the predicate function.
+      * If thisArg is omitted, undefined is used as the this value.
       */
-    def filter(callbackfn: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _]): js.Array[Cookie] = js.native
+    @JSName("every")
+    def every_S_Cookie[S /* <: Cookie */](
+      predicate: js.Function3[
+          /* value */ Cookie, 
+          /* index */ Double, 
+          /* array */ js.Array[Cookie], 
+          /* is S */ Boolean
+        ]
+    ): /* is std.Array<S> */ Boolean = js.native
+    @JSName("every")
+    def every_S_Cookie[S /* <: Cookie */](
+      predicate: js.Function3[
+          /* value */ Cookie, 
+          /* index */ Double, 
+          /* array */ js.Array[Cookie], 
+          /* is S */ Boolean
+        ],
+      thisArg: js.Any
+    ): /* is std.Array<S> */ Boolean = js.native
+    
+    /**
+      * Returns the elements of an array that meet the condition specified in a callback function.
+      * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
+      * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
+      */
+    def filter(predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _]): js.Array[Cookie] = js.native
     def filter(
-      callbackfn: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _],
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _],
       thisArg: js.Any
     ): js.Array[Cookie] = js.native
     /**
       * Returns the elements of an array that meet the condition specified in a callback function.
-      * @param callbackfn A function that accepts up to three arguments. The filter method calls the callbackfn function one time for each element in the array.
-      * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+      * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
+      * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
     @JSName("filter")
     def filter_S_Cookie[S /* <: Cookie */](
-      callbackfn: js.Function3[
+      predicate: js.Function3[
           /* value */ Cookie, 
           /* index */ Double, 
           /* array */ js.Array[Cookie], 
@@ -69,7 +94,7 @@ object anon extends js.Object {
     ): js.Array[S] = js.native
     @JSName("filter")
     def filter_S_Cookie[S /* <: Cookie */](
-      callbackfn: js.Function3[
+      predicate: js.Function3[
           /* value */ Cookie, 
           /* index */ Double, 
           /* array */ js.Array[Cookie], 
@@ -77,6 +102,7 @@ object anon extends js.Object {
         ],
       thisArg: js.Any
     ): js.Array[S] = js.native
+    
     def find(predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], _]): js.UndefOr[Cookie] = js.native
     def find(
       predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], _],
@@ -110,6 +136,7 @@ object anon extends js.Object {
         ],
       thisArg: js.Any
     ): js.UndefOr[S] = js.native
+    
     /**
       * Returns the index of the first element in the array where predicate is true, and -1
       * otherwise.
@@ -124,6 +151,7 @@ object anon extends js.Object {
       predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], _],
       thisArg: js.Any
     ): Double = js.native
+    
     /**
       * Returns a new array with all sub-array elements concatenated into it recursively up to the
       * specified depth.
@@ -132,6 +160,7 @@ object anon extends js.Object {
       */
     def flat[A, D /* <: Double */](): js.Array[FlatArray[A, D]] = js.native
     def flat[A, D /* <: Double */](depth: D): js.Array[FlatArray[A, D]] = js.native
+    
     /**
       * Calls a defined callback function on each element of an array. Then, flattens the result into
       * a new array.
@@ -161,6 +190,7 @@ object anon extends js.Object {
         ],
       thisArg: This
     ): js.Array[U] = js.native
+    
     /**
       * Performs the specified action for each element in an array.
       * @param callbackfn  A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
@@ -173,6 +203,7 @@ object anon extends js.Object {
       callbackfn: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], Unit],
       thisArg: js.Any
     ): Unit = js.native
+    
     /**
       * Determines whether an array includes a certain element, returning true or false as appropriate.
       * @param searchElement The element to search for.
@@ -180,6 +211,7 @@ object anon extends js.Object {
       */
     def includes(searchElement: Cookie): Boolean = js.native
     def includes(searchElement: Cookie, fromIndex: Double): Boolean = js.native
+    
     /**
       * Returns the index of the first occurrence of a value in an array.
       * @param searchElement The value to locate in the array.
@@ -187,16 +219,23 @@ object anon extends js.Object {
       */
     def indexOf(searchElement: Cookie): Double = js.native
     def indexOf(searchElement: Cookie, fromIndex: Double): Double = js.native
+    
+    /** Iterator of values in the array. */
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[IterableIterator[Cookie]] = js.native
+    
     /**
       * Adds all the elements of an array separated by the specified separator string.
       * @param separator A string used to separate one element of an array from the next in the resulting String. If omitted, the array elements are separated with a comma.
       */
     def join(): String = js.native
     def join(separator: String): String = js.native
+    
     /**
       * Returns an iterable of keys in the array
       */
     def keys(): IterableIterator[Double] = js.native
+    
     /**
       * Returns the index of the last occurrence of a specified value in an array.
       * @param searchElement The value to locate in the array.
@@ -204,6 +243,12 @@ object anon extends js.Object {
       */
     def lastIndexOf(searchElement: Cookie): Double = js.native
     def lastIndexOf(searchElement: Cookie, fromIndex: Double): Double = js.native
+    
+    /**
+      * Gets the length of the array. This is a number one higher than the highest element defined in an array.
+      */
+    val length: Double = js.native
+    
     /**
       * Calls a defined callback function on each element of an array, and returns an array that contains the results.
       * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
@@ -214,6 +259,7 @@ object anon extends js.Object {
       callbackfn: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], U],
       thisArg: js.Any
     ): js.Array[U] = js.native
+    
     /**
       * Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
       * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
@@ -253,6 +299,7 @@ object anon extends js.Object {
         ],
       initialValue: U
     ): U = js.native
+    
     /**
       * Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
       * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
@@ -292,6 +339,7 @@ object anon extends js.Object {
         ],
       initialValue: U
     ): U = js.native
+    
     /**
       * Returns a section of an array.
       * @param start The beginning of the specified portion of the array.
@@ -301,25 +349,26 @@ object anon extends js.Object {
     def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[Cookie] = js.native
     def slice(start: Double): js.Array[Cookie] = js.native
     def slice(start: Double, end: Double): js.Array[Cookie] = js.native
+    
     /**
       * Determines whether the specified callback function returns true for any element of an array.
-      * @param callbackfn A function that accepts up to three arguments. The some method calls
-      * the callbackfn function for each element in the array until the callbackfn returns a value
+      * @param predicate A function that accepts up to three arguments. The some method calls
+      * the predicate function for each element in the array until the predicate returns a value
       * which is coercible to the Boolean value true, or until the end of the array.
-      * @param thisArg An object to which the this keyword can refer in the callbackfn function.
+      * @param thisArg An object to which the this keyword can refer in the predicate function.
       * If thisArg is omitted, undefined is used as the this value.
       */
-    def some(callbackfn: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _]): Boolean = js.native
+    def some(predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _]): Boolean = js.native
     def some(
-      callbackfn: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _],
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _],
       thisArg: js.Any
     ): Boolean = js.native
+    
     def toValueString(): String = js.native
+    
     /**
       * Returns an iterable of values in the array
       */
     def values(): IterableIterator[Cookie] = js.native
   }
-  
 }
-

@@ -13,24 +13,18 @@ import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular/providers/nav-controller", "NavController")
 @js.native
 class NavController protected () extends js.Object {
   def this(platform: Platform, location: Location, serializer: UrlSerializer) = this()
   def this(platform: Platform, location: Location, serializer: UrlSerializer, router: Router) = this()
+  
   var animated: js.Any = js.native
+  
   var animationBuilder: js.Any = js.native
-  var direction: js.Any = js.native
-  var guessAnimation: js.Any = js.native
-  var guessDirection: js.Any = js.native
-  var lastNavId: js.Any = js.native
-  var location: js.Any = js.native
-  var navigate: js.Any = js.native
-  var router: js.Any = js.native
-  var serializer: js.Any = js.native
-  var topOutlet: js.Any = js.native
+  
   /**
     * Same as [Location](https://angular.io/api/common/Location)'s back() method.
     * It will use the standard `window.history.back()` under the hood, but featuring a `back` animation
@@ -38,10 +32,24 @@ class NavController protected () extends js.Object {
     */
   def back(): Unit = js.native
   def back(options: AnimationOptions): Unit = js.native
+  
   /**
     * @internal
     */
   def consumeTransition(): Animation = js.native
+  
+  var direction: js.Any = js.native
+  
+  var guessAnimation: js.Any = js.native
+  
+  var guessDirection: js.Any = js.native
+  
+  var lastNavId: js.Any = js.native
+  
+  var location: js.Any = js.native
+  
+  var navigate: js.Any = js.native
+  
   /**
     * This method uses Angular's [Router](https://angular.io/api/router/Router) under the hood,
     * it's equivalent to calling:
@@ -66,6 +74,7 @@ class NavController protected () extends js.Object {
   def navigateBack(url: js.Array[_], options: NavigationOptions): js.Promise[Boolean] = js.native
   def navigateBack(url: UrlTree): js.Promise[Boolean] = js.native
   def navigateBack(url: UrlTree, options: NavigationOptions): js.Promise[Boolean] = js.native
+  
   /**
     * This method uses Angular's [Router](https://angular.io/api/router/Router) under the hood,
     * it's equivalent to calling `this.router.navigateByUrl()`, but it's explicit about the **direction** of the transition.
@@ -85,6 +94,7 @@ class NavController protected () extends js.Object {
   def navigateForward(url: js.Array[_], options: NavigationOptions): js.Promise[Boolean] = js.native
   def navigateForward(url: UrlTree): js.Promise[Boolean] = js.native
   def navigateForward(url: UrlTree, options: NavigationOptions): js.Promise[Boolean] = js.native
+  
   /**
     * This method uses Angular's [Router](https://angular.io/api/router/Router) under the hood,
     * it's equivalent to calling:
@@ -109,6 +119,7 @@ class NavController protected () extends js.Object {
   def navigateRoot(url: js.Array[_], options: NavigationOptions): js.Promise[Boolean] = js.native
   def navigateRoot(url: UrlTree): js.Promise[Boolean] = js.native
   def navigateRoot(url: UrlTree, options: NavigationOptions): js.Promise[Boolean] = js.native
+  
   /**
     * This methods goes back in the context of Ionic's stack navigation.
     *
@@ -116,6 +127,11 @@ class NavController protected () extends js.Object {
     * This is the recommended way to go back when you are using `ion-router-outlet`.
     */
   def pop(): js.Promise[Unit] = js.native
+  
+  var router: js.Any = js.native
+  
+  var serializer: js.Any = js.native
+  
   /**
     * This methods specifies the direction of the next navigation performed by the Angular router.
     *
@@ -173,9 +189,11 @@ class NavController protected () extends js.Object {
     animationDirection: forward,
     animationBuilder: AnimationBuilder
   ): Unit = js.native
+  
   /**
     * @internal
     */
   def setTopOutlet(outlet: IonRouterOutlet): Unit = js.native
+  
+  var topOutlet: js.Any = js.native
 }
-

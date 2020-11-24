@@ -11,7 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.script.XEventAttacherManager
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service specifies a form which is a group of {@link FormComponents} .
@@ -32,6 +32,6 @@ trait Form
      with XEnumerationAccess
      with XEventAttacherManager
      with XTabControllerModel {
+  
   def getPropertyValues(aPropertyNames: SeqEquiv[String]): SafeArray[_] = js.native
 }
-

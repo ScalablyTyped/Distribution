@@ -1,16 +1,19 @@
 package typings.ol.dragBoxMod
 
 import typings.ol.coordinateMod.Coordinate
+import typings.std.UIEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/interaction/DragBox", "DragBoxEvent")
 @js.native
-class DragBoxEvent protected ()
+trait DragBoxEvent
   extends typings.ol.eventMod.default {
-  def this(`type`: String, coordinate: Coordinate, mapBrowserEvent: typings.ol.mapBrowserEventMod.default) = this()
+  
+  /**
+    * The coordinate of the drag event.
+    */
   var coordinate: Coordinate = js.native
-  var mapBrowserEvent: typings.ol.mapBrowserEventMod.default = js.native
+  
+  var mapBrowserEvent: typings.ol.mapBrowserEventMod.default[UIEvent] = js.native
 }
-

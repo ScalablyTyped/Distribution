@@ -3,7 +3,7 @@ package typings.googleAppsScript.GoogleAppsScript.Properties
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -13,13 +13,19 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait UserProperties extends js.Object {
+  
   /** @deprecated DO NOT USE */ def deleteAllProperties(): UserProperties = js.native
+  
   /** @deprecated DO NOT USE */ def deleteProperty(key: String): UserProperties = js.native
+  
   /** @deprecated DO NOT USE */ def getKeys(): js.Array[String] = js.native
+  
   /** @deprecated DO NOT USE */ def getProperties(): StringDictionary[String] = js.native
+  
   /** @deprecated DO NOT USE */ def getProperty(key: String): String | Null = js.native
+  
   /** @deprecated DO NOT USE */ def setProperties(properties: StringDictionary[String]): UserProperties = js.native
   /** @deprecated DO NOT USE */ def setProperties(properties: StringDictionary[String], deleteAllOthers: Boolean): UserProperties = js.native
+  
   /** @deprecated DO NOT USE */ def setProperty(key: String, value: String): UserProperties = js.native
 }
-

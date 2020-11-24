@@ -5,11 +5,12 @@ import typings.openui5.sap.ui.core.Fragment
 import typings.openui5.sap.ui.core.mvc.View
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.extensionpoint")
 @js.native
 object extensionpoint extends js.Object {
+  
   //  Creates 0.
   def apply(oContainer: js.Any, sExtName: String): Unit = js.native
   def apply(
@@ -144,4 +145,3 @@ object extensionpoint extends js.Object {
     sAggregationName: String
   ): js.Array[Control] = js.native
 }
-

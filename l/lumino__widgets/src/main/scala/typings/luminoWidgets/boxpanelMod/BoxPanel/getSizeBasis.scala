@@ -3,11 +3,12 @@ package typings.luminoWidgets.boxpanelMod.BoxPanel
 import typings.luminoWidgets.widgetMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/boxpanel", "BoxPanel.getSizeBasis")
 @js.native
 object getSizeBasis extends js.Object {
+  
   /**
     * Get the box panel size basis for the given widget.
     *
@@ -17,4 +18,3 @@ object getSizeBasis extends js.Object {
     */
   def apply(widget: Widget): Double = js.native
 }
-

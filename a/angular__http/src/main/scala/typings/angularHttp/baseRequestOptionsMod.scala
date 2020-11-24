@@ -7,53 +7,35 @@ import typings.angularHttp.interfacesMod.RequestOptionsArgs
 import typings.angularHttp.urlSearchParamsMod.URLSearchParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/http/src/base_request_options", JSImport.Namespace)
 @js.native
 object baseRequestOptionsMod extends js.Object {
+  
   @js.native
   class BaseRequestOptions () extends RequestOptions
   
   @js.native
   class RequestOptions () extends js.Object {
     def this(opts: RequestOptionsArgs) = this()
+    
     var _appendParam: js.Any = js.native
+    
     var _mergeSearchParams: js.Any = js.native
+    
     var _parseParams: js.Any = js.native
+    
     /**
       * Body to be used when creating a {@link Request}.
       */
     var body: js.Any = js.native
+    
     /**
       * {@link Headers} to be attached to a {@link Request}.
       */
     var headers: Headers | Null = js.native
-    /**
-      * Http method with which to execute a {@link Request}.
-      * Acceptable methods are defined in the {@link RequestMethod} enum.
-      */
-    var method: RequestMethod | String | Null = js.native
-    /**
-      * Search parameters to be included in a {@link Request}.
-      */
-    var params: URLSearchParams = js.native
-    var responseType: ResponseContentType | Null = js.native
-    /**
-      * @deprecated from 4.0.0. Use params instead.
-      */
-    /**
-      * @deprecated from 4.0.0. Use params instead.
-      */
-    var search: URLSearchParams = js.native
-    /**
-      * Url with which to perform a {@link Request}.
-      */
-    var url: String | Null = js.native
-    /**
-      * Enable use credentials for a {@link Request}.
-      */
-    var withCredentials: Boolean | Null = js.native
+    
     /**
       * Creates a copy of the `RequestOptions` instance, using the optional input as values to override
       * existing values. This method will not change the values of the instance on which it is being
@@ -79,7 +61,36 @@ object baseRequestOptionsMod extends js.Object {
       */
     def merge(): RequestOptions = js.native
     def merge(options: RequestOptionsArgs): RequestOptions = js.native
+    
+    /**
+      * Http method with which to execute a {@link Request}.
+      * Acceptable methods are defined in the {@link RequestMethod} enum.
+      */
+    var method: RequestMethod | String | Null = js.native
+    
+    /**
+      * Search parameters to be included in a {@link Request}.
+      */
+    var params: URLSearchParams = js.native
+    
+    var responseType: ResponseContentType | Null = js.native
+    
+    /**
+      * @deprecated from 4.0.0. Use params instead.
+      */
+    /**
+      * @deprecated from 4.0.0. Use params instead.
+      */
+    var search: URLSearchParams = js.native
+    
+    /**
+      * Url with which to perform a {@link Request}.
+      */
+    var url: String | Null = js.native
+    
+    /**
+      * Enable use credentials for a {@link Request}.
+      */
+    var withCredentials: Boolean | Null = js.native
   }
-  
 }
-

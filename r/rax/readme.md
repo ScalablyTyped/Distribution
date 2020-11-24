@@ -10,9 +10,9 @@ A universal React-compatible render engine.
 | ------------------ | :-------------: |
 | Full name          | rax |
 | Keywords           | - |
-| # releases         | 41 |
-| # dependents       | 82 |
-| # downloads        | 156279 |
+| # releases         | 40 |
+| # dependents       | 96 |
+| # downloads        | 195920 |
 | # stars            | 4 |
 
 ## Links

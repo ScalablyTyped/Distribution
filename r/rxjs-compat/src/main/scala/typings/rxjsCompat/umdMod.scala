@@ -2,15 +2,20 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/umd", JSImport.Namespace)
 @js.native
 object umdMod extends js.Object {
+  
   val ajax: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ajax */ js.Any = js.native
+  
   val operators: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _operators */ js.Any = js.native
+  
   val testing: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _testing */ js.Any = js.native
+  
   val webSocket: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _webSocket */ js.Any = js.native
+  
   /**
     * @typedef {Object} Rx.Scheduler
     * @property {Scheduler} queue Schedules on a queue in the current event frame
@@ -25,9 +30,13 @@ object umdMod extends js.Object {
     */
   @js.native
   object Scheduler extends js.Object {
+    
     var animationFrame: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
+    
     var asap: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
+    
     var async: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
+    
     var queue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
   }
   
@@ -46,10 +55,11 @@ object umdMod extends js.Object {
     */
   @js.native
   object Symbol extends js.Object {
+    
     var iterator: js.Symbol = js.native
+    
     var observable: String | js.Symbol = js.native
+    
     var rxSubscriber: String | js.Symbol = js.native
   }
-  
 }
-

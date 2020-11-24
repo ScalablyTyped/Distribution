@@ -11,8 +11,8 @@ Normalizes data that can be found in package.json files.
 | Full name          | normalize-package-data |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 205 |
-| # downloads        | 447160715 |
+| # dependents       | 259 |
+| # downloads        | 598394428 |
 | # stars            | 7 |
 
 ## Links

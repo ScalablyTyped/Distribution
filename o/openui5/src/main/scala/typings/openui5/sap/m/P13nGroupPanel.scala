@@ -2,10 +2,11 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait P13nGroupPanel extends P13nPanel {
+  
   /**
     * Adds some groupItem to the aggregation <code>groupItems</code>.
     * @since 1.26
@@ -13,6 +14,7 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addGroupItem(oGroupItem: P13nGroupItem): P13nGroupPanel = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>addGroupItem</code> event of this
     * <code>sap.m.P13nGroupPanel</code>.When called, the context of the event handler (its
@@ -29,6 +31,7 @@ trait P13nGroupPanel extends P13nPanel {
     */
   def attachAddGroupItem(oData: js.Any, fnFunction: js.Any): P13nGroupPanel = js.native
   def attachAddGroupItem(oData: js.Any, fnFunction: js.Any, oListener: js.Any): P13nGroupPanel = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>removeGroupItem</code> event of this
     * <code>sap.m.P13nGroupPanel</code>.When called, the context of the event handler (its
@@ -44,6 +47,7 @@ trait P13nGroupPanel extends P13nPanel {
     */
   def attachRemoveGroupItem(oData: js.Any, fnFunction: js.Any): P13nGroupPanel = js.native
   def attachRemoveGroupItem(oData: js.Any, fnFunction: js.Any, oListener: js.Any): P13nGroupPanel = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>updateGroupItem</code> event of this
     * <code>sap.m.P13nGroupPanel</code>.When called, the context of the event handler (its
@@ -59,6 +63,7 @@ trait P13nGroupPanel extends P13nPanel {
     */
   def attachUpdateGroupItem(oData: js.Any, fnFunction: js.Any): P13nGroupPanel = js.native
   def attachUpdateGroupItem(oData: js.Any, fnFunction: js.Any, oListener: js.Any): P13nGroupPanel = js.native
+  
   /**
     * Binds aggregation <code>groupItems</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -68,12 +73,14 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindGroupItems(oBindingInfo: js.Any): P13nGroupPanel = js.native
+  
   /**
     * Destroys all the groupItems in the aggregation <code>groupItems</code>.
     * @since 1.26
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyGroupItems(): P13nGroupPanel = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>addGroupItem</code> event of this
     * <code>sap.m.P13nGroupPanel</code>.The passed function and listener object must match the ones used
@@ -84,6 +91,7 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAddGroupItem(fnFunction: js.Any, oListener: js.Any): P13nGroupPanel = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>removeGroupItem</code> event of this
     * <code>sap.m.P13nGroupPanel</code>.The passed function and listener object must match the ones used
@@ -94,6 +102,7 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachRemoveGroupItem(fnFunction: js.Any, oListener: js.Any): P13nGroupPanel = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>updateGroupItem</code> event of this
     * <code>sap.m.P13nGroupPanel</code>.The passed function and listener object must match the ones used
@@ -104,6 +113,7 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachUpdateGroupItem(fnFunction: js.Any, oListener: js.Any): P13nGroupPanel = js.native
+  
   /**
     * Fires event <code>addGroupItem</code> to attached listeners.
     * @since 1.26
@@ -111,6 +121,7 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAddGroupItem(mArguments: js.Any): P13nGroupPanel = js.native
+  
   /**
     * Fires event <code>removeGroupItem</code> to attached listeners.
     * @since 1.26
@@ -118,6 +129,7 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireRemoveGroupItem(mArguments: js.Any): P13nGroupPanel = js.native
+  
   /**
     * Fires event <code>updateGroupItem</code> to attached listeners.
     * @since 1.26
@@ -125,6 +137,7 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireUpdateGroupItem(mArguments: js.Any): P13nGroupPanel = js.native
+  
   /**
     * Gets current value of property <code>containerQuery</code>.Defines if <code>mediaQuery</code> or
     * <code>ContainerResize</code> is used for a layout update. If <code>ConditionPanel</code>is used in a
@@ -133,11 +146,13 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns Value of property <code>containerQuery</code>
     */
   def getContainerQuery(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>groupItems</code>.Defined group items.
     * @since 1.26
     */
   def getGroupItems(): js.Array[P13nGroupItem] = js.native
+  
   /**
     * Gets current value of property <code>layoutMode</code>.Can be used to control the layout behavior.
     * Default is "" which will automatically change the layout. With "Desktop", "Table"or"Phone" you can
@@ -146,6 +161,7 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns Value of property <code>layoutMode</code>
     */
   def getLayoutMode(): String = js.native
+  
   /**
     * Gets current value of property <code>maxGroups</code>.Defines the maximum number of groups.Default
     * value is <code>-1</code>.
@@ -153,6 +169,7 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns Value of property <code>maxGroups</code>
     */
   def getMaxGroups(): String = js.native
+  
   /**
     * Checks for the provided <code>sap.m.P13nGroupItem</code> in the aggregation
     * <code>groupItems</code>.and returns its index if found or -1 otherwise.
@@ -161,6 +178,7 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfGroupItem(oGroupItem: P13nGroupItem): Double = js.native
+  
   /**
     * Inserts a groupItem into the aggregation <code>groupItems</code>.
     * @since 1.26
@@ -172,6 +190,7 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertGroupItem(oGroupItem: P13nGroupItem, iIndex: Double): P13nGroupPanel = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>groupItems</code>.Additionally, it unregisters
     * them from the hosting UIArea.
@@ -179,6 +198,7 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllGroupItems(): js.Array[P13nGroupItem] = js.native
+  
   def removeGroupItem(vGroupItem: String): P13nGroupItem = js.native
   /**
     * Removes a groupItem from the aggregation <code>groupItems</code>.
@@ -188,16 +208,19 @@ trait P13nGroupPanel extends P13nPanel {
     */
   def removeGroupItem(vGroupItem: Double): P13nGroupItem = js.native
   def removeGroupItem(vGroupItem: P13nGroupItem): P13nGroupItem = js.native
+  
   /**
     * Removes all invalid group conditions.
     * @since 1.28
     */
   def removeInvalidConditions(): Unit = js.native
+  
   /**
     * Removes all errors/warning states from of all group conditions.
     * @since 1.28
     */
   def removeValidationErrors(): Unit = js.native
+  
   /**
     * Sets a new value for property <code>containerQuery</code>.Defines if <code>mediaQuery</code> or
     * <code>ContainerResize</code> is used for a layout update. If <code>ConditionPanel</code>is used in a
@@ -209,6 +232,7 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setContainerQuery(bContainerQuery: Boolean): P13nGroupPanel = js.native
+  
   /**
     * Sets a new value for property <code>layoutMode</code>.Can be used to control the layout behavior.
     * Default is "" which will automatically change the layout. With "Desktop", "Table"or"Phone" you can
@@ -219,6 +243,7 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setLayoutMode(sLayoutMode: String): P13nGroupPanel = js.native
+  
   /**
     * Sets a new value for property <code>maxGroups</code>.Defines the maximum number of groups.When
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -228,18 +253,21 @@ trait P13nGroupPanel extends P13nPanel {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaxGroups(sMaxGroups: String): P13nGroupPanel = js.native
+  
   /**
     * Setter for the supported operations array.
     * @since 1.26
     * @param array of operations [sap.m.P13nConditionOperation.BT, sap.m.P13nConditionOperation.EQ]
     */
   def setOperations(array: js.Array[_]): Unit = js.native
+  
   /**
     * Unbinds aggregation <code>groupItems</code> from model data.
     * @since 1.26
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindGroupItems(): P13nGroupPanel = js.native
+  
   /**
     * Checks if the entered or modified conditions are correct, marks invalid fields yellow (Warning) and
     * opens a popup message dialog to let theuser know that some values are not correct or missing.
@@ -247,4 +275,3 @@ trait P13nGroupPanel extends P13nPanel {
     */
   def validateConditions(): Unit = js.native
 }
-

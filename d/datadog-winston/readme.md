@@ -10,9 +10,9 @@ Ship winston logs to datadog without breaking a sweat
 | ------------------ | :-------------: |
 | Full name          | datadog-winston |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 12878 |
+| # releases         | 11 |
+| # dependents       | 1 |
+| # downloads        | 67288 |
 | # stars            | 0 |
 
 ## Links

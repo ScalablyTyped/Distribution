@@ -3,7 +3,7 @@ package typings.bingmaps.global.Microsoft.Maps
 import typings.bingmaps.Microsoft.Maps.IAutosuggestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Microsoft.Maps.AutosuggestManager")
 @js.native
@@ -16,4 +16,3 @@ class AutosuggestManager ()
   extends typings.bingmaps.Microsoft.Maps.AutosuggestManager {
   def this(options: IAutosuggestOptions) = this()
 }
-

@@ -2,9 +2,490 @@ package typings.activexOutlook
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexOutlookStrings {
+  
+  @scala.inline
+  def Account: Account = "Account".asInstanceOf[Account]
+  
+  @scala.inline
+  def Action: Action = "Action".asInstanceOf[Action]
+  
+  @scala.inline
+  def Activate: Activate = "Activate".asInstanceOf[Activate]
+  
+  @scala.inline
+  def ActivePageName: ActivePageName = "ActivePageName".asInstanceOf[ActivePageName]
+  
+  @scala.inline
+  def AdvancedSearchComplete: AdvancedSearchComplete = "AdvancedSearchComplete".asInstanceOf[AdvancedSearchComplete]
+  
+  @scala.inline
+  def AdvancedSearchStopped: AdvancedSearchStopped = "AdvancedSearchStopped".asInstanceOf[AdvancedSearchStopped]
+  
+  @scala.inline
+  def AfterUpdate: AfterUpdate = "AfterUpdate".asInstanceOf[AfterUpdate]
+  
+  @scala.inline
+  def AfterWrite: AfterWrite = "AfterWrite".asInstanceOf[AfterWrite]
+  
+  @scala.inline
+  def Attachment: Attachment = "Attachment".asInstanceOf[Attachment]
+  
+  @scala.inline
+  def AttachmentAdd: AttachmentAdd = "AttachmentAdd".asInstanceOf[AttachmentAdd]
+  
+  @scala.inline
+  def AttachmentContextMenuDisplay: AttachmentContextMenuDisplay = "AttachmentContextMenuDisplay".asInstanceOf[AttachmentContextMenuDisplay]
+  
+  @scala.inline
+  def AttachmentRead: AttachmentRead = "AttachmentRead".asInstanceOf[AttachmentRead]
+  
+  @scala.inline
+  def AttachmentRemove: AttachmentRemove = "AttachmentRemove".asInstanceOf[AttachmentRemove]
+  
+  @scala.inline
+  def AttachmentSelectionChange: AttachmentSelectionChange = "AttachmentSelectionChange".asInstanceOf[AttachmentSelectionChange]
+  
+  @scala.inline
+  def Attachments: Attachments = "Attachments".asInstanceOf[Attachments]
+  
+  @scala.inline
+  def AutoDiscoverComplete: AutoDiscoverComplete = "AutoDiscoverComplete".asInstanceOf[AutoDiscoverComplete]
+  
+  @scala.inline
+  def BeforeAttachmentAdd: BeforeAttachmentAdd = "BeforeAttachmentAdd".asInstanceOf[BeforeAttachmentAdd]
+  
+  @scala.inline
+  def BeforeAttachmentPreview: BeforeAttachmentPreview = "BeforeAttachmentPreview".asInstanceOf[BeforeAttachmentPreview]
+  
+  @scala.inline
+  def BeforeAttachmentRead: BeforeAttachmentRead = "BeforeAttachmentRead".asInstanceOf[BeforeAttachmentRead]
+  
+  @scala.inline
+  def BeforeAttachmentSave: BeforeAttachmentSave = "BeforeAttachmentSave".asInstanceOf[BeforeAttachmentSave]
+  
+  @scala.inline
+  def BeforeAttachmentWriteToTempFile: BeforeAttachmentWriteToTempFile = "BeforeAttachmentWriteToTempFile".asInstanceOf[BeforeAttachmentWriteToTempFile]
+  
+  @scala.inline
+  def BeforeAutoSave: BeforeAutoSave = "BeforeAutoSave".asInstanceOf[BeforeAutoSave]
+  
+  @scala.inline
+  def BeforeCheckNames: BeforeCheckNames = "BeforeCheckNames".asInstanceOf[BeforeCheckNames]
+  
+  @scala.inline
+  def BeforeDelete: BeforeDelete = "BeforeDelete".asInstanceOf[BeforeDelete]
+  
+  @scala.inline
+  def BeforeFolderMove: BeforeFolderMove = "BeforeFolderMove".asInstanceOf[BeforeFolderMove]
+  
+  @scala.inline
+  def BeforeFolderSharingDialog: BeforeFolderSharingDialog = "BeforeFolderSharingDialog".asInstanceOf[BeforeFolderSharingDialog]
+  
+  @scala.inline
+  def BeforeFolderSwitch: BeforeFolderSwitch = "BeforeFolderSwitch".asInstanceOf[BeforeFolderSwitch]
+  
+  @scala.inline
+  def BeforeGroupAdd: BeforeGroupAdd = "BeforeGroupAdd".asInstanceOf[BeforeGroupAdd]
+  
+  @scala.inline
+  def BeforeGroupRemove: BeforeGroupRemove = "BeforeGroupRemove".asInstanceOf[BeforeGroupRemove]
+  
+  @scala.inline
+  def BeforeGroupSwitch: BeforeGroupSwitch = "BeforeGroupSwitch".asInstanceOf[BeforeGroupSwitch]
+  
+  @scala.inline
+  def BeforeItemCopy: BeforeItemCopy = "BeforeItemCopy".asInstanceOf[BeforeItemCopy]
+  
+  @scala.inline
+  def BeforeItemCut: BeforeItemCut = "BeforeItemCut".asInstanceOf[BeforeItemCut]
+  
+  @scala.inline
+  def BeforeItemMove: BeforeItemMove = "BeforeItemMove".asInstanceOf[BeforeItemMove]
+  
+  @scala.inline
+  def BeforeItemPaste: BeforeItemPaste = "BeforeItemPaste".asInstanceOf[BeforeItemPaste]
+  
+  @scala.inline
+  def BeforeMaximize: BeforeMaximize = "BeforeMaximize".asInstanceOf[BeforeMaximize]
+  
+  @scala.inline
+  def BeforeMinimize: BeforeMinimize = "BeforeMinimize".asInstanceOf[BeforeMinimize]
+  
+  @scala.inline
+  def BeforeMove: BeforeMove = "BeforeMove".asInstanceOf[BeforeMove]
+  
+  @scala.inline
+  def BeforeNavigate: BeforeNavigate = "BeforeNavigate".asInstanceOf[BeforeNavigate]
+  
+  @scala.inline
+  def BeforeRead: BeforeRead = "BeforeRead".asInstanceOf[BeforeRead]
+  
+  @scala.inline
+  def BeforeReminderShow: BeforeReminderShow = "BeforeReminderShow".asInstanceOf[BeforeReminderShow]
+  
+  @scala.inline
+  def BeforeShortcutAdd: BeforeShortcutAdd = "BeforeShortcutAdd".asInstanceOf[BeforeShortcutAdd]
+  
+  @scala.inline
+  def BeforeShortcutRemove: BeforeShortcutRemove = "BeforeShortcutRemove".asInstanceOf[BeforeShortcutRemove]
+  
+  @scala.inline
+  def BeforeSize: BeforeSize = "BeforeSize".asInstanceOf[BeforeSize]
+  
+  @scala.inline
+  def BeforeStoreRemove: BeforeStoreRemove = "BeforeStoreRemove".asInstanceOf[BeforeStoreRemove]
+  
+  @scala.inline
+  def BeforeUpdate: BeforeUpdate = "BeforeUpdate".asInstanceOf[BeforeUpdate]
+  
+  @scala.inline
+  def BeforeViewSwitch: BeforeViewSwitch = "BeforeViewSwitch".asInstanceOf[BeforeViewSwitch]
+  
+  @scala.inline
+  def Button: Button = "Button".asInstanceOf[Button]
+  
+  @scala.inline
+  def Cancel: Cancel = "Cancel".asInstanceOf[Cancel]
+  
+  @scala.inline
+  def Change: Change = "Change".asInstanceOf[Change]
+  
+  @scala.inline
+  def Click: Click = "Click".asInstanceOf[Click]
+  
+  @scala.inline
+  def ClipboardContent: ClipboardContent = "ClipboardContent".asInstanceOf[ClipboardContent]
+  
+  @scala.inline
+  def Close: Close = "Close".asInstanceOf[Close]
+  
+  @scala.inline
+  def Code: Code = "Code".asInstanceOf[Code]
+  
+  @scala.inline
+  def CommandBar: CommandBar = "CommandBar".asInstanceOf[CommandBar]
+  
+  @scala.inline
+  def ContextMenu: ContextMenu = "ContextMenu".asInstanceOf[ContextMenu]
+  
+  @scala.inline
+  def ContextMenuClose: ContextMenuClose = "ContextMenuClose".asInstanceOf[ContextMenuClose]
+  
+  @scala.inline
+  def CurrentModule: CurrentModule = "CurrentModule".asInstanceOf[CurrentModule]
+  
+  @scala.inline
+  def CustomAction: CustomAction = "CustomAction".asInstanceOf[CustomAction]
+  
+  @scala.inline
+  def CustomPropertyChange: CustomPropertyChange = "CustomPropertyChange".asInstanceOf[CustomPropertyChange]
+  
+  @scala.inline
+  def Deactivate: Deactivate = "Deactivate".asInstanceOf[Deactivate]
+  
+  @scala.inline
+  def Description: Description = "Description".asInstanceOf[Description]
+  
+  @scala.inline
+  def DoubleClick: DoubleClick = "DoubleClick".asInstanceOf[DoubleClick]
+  
+  @scala.inline
+  def DropButtonClick: DropButtonClick = "DropButtonClick".asInstanceOf[DropButtonClick]
+  
+  @scala.inline
+  def Enter: Enter = "Enter".asInstanceOf[Enter]
+  
+  @scala.inline
+  def EntryIDCollection: EntryIDCollection = "EntryIDCollection".asInstanceOf[EntryIDCollection]
+  
+  @scala.inline
+  def Exit: Exit = "Exit".asInstanceOf[Exit]
+  
+  @scala.inline
+  def Expand: Expand = "Expand".asInstanceOf[Expand]
+  
+  @scala.inline
+  def Expanded: Expanded = "Expanded".asInstanceOf[Expanded]
+  
+  @scala.inline
+  def Explorer: Explorer = "Explorer".asInstanceOf[Explorer]
+  
+  @scala.inline
+  def Folder: Folder = "Folder".asInstanceOf[Folder]
+  
+  @scala.inline
+  def FolderAdd: FolderAdd = "FolderAdd".asInstanceOf[FolderAdd]
+  
+  @scala.inline
+  def FolderChange: FolderChange = "FolderChange".asInstanceOf[FolderChange]
+  
+  @scala.inline
+  def FolderContextMenuDisplay: FolderContextMenuDisplay = "FolderContextMenuDisplay".asInstanceOf[FolderContextMenuDisplay]
+  
+  @scala.inline
+  def FolderRemove: FolderRemove = "FolderRemove".asInstanceOf[FolderRemove]
+  
+  @scala.inline
+  def FolderSwitch: FolderSwitch = "FolderSwitch".asInstanceOf[FolderSwitch]
+  
+  @scala.inline
+  def FolderToShare: FolderToShare = "FolderToShare".asInstanceOf[FolderToShare]
+  
+  @scala.inline
+  def Forward: Forward = "Forward".asInstanceOf[Forward]
+  
+  @scala.inline
+  def Group: Group = "Group".asInstanceOf[Group]
+  
+  @scala.inline
+  def GroupAdd: GroupAdd = "GroupAdd".asInstanceOf[GroupAdd]
+  
+  @scala.inline
+  def Inspector: Inspector = "Inspector".asInstanceOf[Inspector]
+  
+  @scala.inline
+  def Item: Item = "Item".asInstanceOf[Item]
+  
+  @scala.inline
+  def ItemAdd: ItemAdd = "ItemAdd".asInstanceOf[ItemAdd]
+  
+  @scala.inline
+  def ItemChange: ItemChange = "ItemChange".asInstanceOf[ItemChange]
+  
+  @scala.inline
+  def ItemContextMenuDisplay: ItemContextMenuDisplay = "ItemContextMenuDisplay".asInstanceOf[ItemContextMenuDisplay]
+  
+  @scala.inline
+  def ItemLoad: ItemLoad = "ItemLoad".asInstanceOf[ItemLoad]
+  
+  @scala.inline
+  def ItemRemove: ItemRemove = "ItemRemove".asInstanceOf[ItemRemove]
+  
+  @scala.inline
+  def ItemSend: ItemSend = "ItemSend".asInstanceOf[ItemSend]
+  
+  @scala.inline
+  def KeyAscii: KeyAscii = "KeyAscii".asInstanceOf[KeyAscii]
+  
+  @scala.inline
+  def KeyCode: KeyCode = "KeyCode".asInstanceOf[KeyCode]
+  
+  @scala.inline
+  def KeyDown: KeyDown = "KeyDown".asInstanceOf[KeyDown]
+  
+  @scala.inline
+  def KeyPress: KeyPress = "KeyPress".asInstanceOf[KeyPress]
+  
+  @scala.inline
+  def KeyUp: KeyUp = "KeyUp".asInstanceOf[KeyUp]
+  
+  @scala.inline
+  def MAPILogonComplete: MAPILogonComplete = "MAPILogonComplete".asInstanceOf[MAPILogonComplete]
+  
+  @scala.inline
+  def Max: Max = "Max".asInstanceOf[Max]
+  
+  @scala.inline
+  def ModuleSwitch: ModuleSwitch = "ModuleSwitch".asInstanceOf[ModuleSwitch]
+  
+  @scala.inline
+  def MouseDown: MouseDown = "MouseDown".asInstanceOf[MouseDown]
+  
+  @scala.inline
+  def MouseMove: MouseMove = "MouseMove".asInstanceOf[MouseMove]
+  
+  @scala.inline
+  def MouseUp: MouseUp = "MouseUp".asInstanceOf[MouseUp]
+  
+  @scala.inline
+  def MoveTo: MoveTo = "MoveTo".asInstanceOf[MoveTo]
+  
+  @scala.inline
+  def Name: Name = "Name".asInstanceOf[Name]
+  
+  @scala.inline
+  def NavigationFolder: NavigationFolder = "NavigationFolder".asInstanceOf[NavigationFolder]
+  
+  @scala.inline
+  def NavigationFolderAdd: NavigationFolderAdd = "NavigationFolderAdd".asInstanceOf[NavigationFolderAdd]
+  
+  @scala.inline
+  def NavigationFolderRemove: NavigationFolderRemove = "NavigationFolderRemove".asInstanceOf[NavigationFolderRemove]
+  
+  @scala.inline
+  def NewExplorer: NewExplorer = "NewExplorer".asInstanceOf[NewExplorer]
+  
+  @scala.inline
+  def NewFolder: NewFolder = "NewFolder".asInstanceOf[NewFolder]
+  
+  @scala.inline
+  def NewGroup: NewGroup = "NewGroup".asInstanceOf[NewGroup]
+  
+  @scala.inline
+  def NewInspector: NewInspector = "NewInspector".asInstanceOf[NewInspector]
+  
+  @scala.inline
+  def NewMail: NewMail = "NewMail".asInstanceOf[NewMail]
+  
+  @scala.inline
+  def NewMailEx: NewMailEx = "NewMailEx".asInstanceOf[NewMailEx]
+  
+  @scala.inline
+  def NewShortcut: NewShortcut = "NewShortcut".asInstanceOf[NewShortcut]
+  
+  @scala.inline
+  def NewView: NewView = "NewView".asInstanceOf[NewView]
+  
+  @scala.inline
+  def OnError: OnError = "OnError".asInstanceOf[OnError]
+  
+  @scala.inline
+  def Open: Open = "Open".asInstanceOf[Open]
+  
+  @scala.inline
+  def OptionsPagesAdd: OptionsPagesAdd = "OptionsPagesAdd".asInstanceOf[OptionsPagesAdd]
+  
+  @scala.inline
+  def PageChange: PageChange = "PageChange".asInstanceOf[PageChange]
+  
+  @scala.inline
+  def Pages: Pages = "Pages".asInstanceOf[Pages]
+  
+  @scala.inline
+  def Progress: Progress = "Progress".asInstanceOf[Progress]
+  
+  @scala.inline
+  def PropertyChange: PropertyChange = "PropertyChange".asInstanceOf[PropertyChange]
+  
+  @scala.inline
+  def Quit: Quit = "Quit".asInstanceOf[Quit]
+  
+  @scala.inline
+  def Read: Read = "Read".asInstanceOf[Read]
+  
+  @scala.inline
+  def Reminder: Reminder = "Reminder".asInstanceOf[Reminder]
+  
+  @scala.inline
+  def ReminderAdd: ReminderAdd = "ReminderAdd".asInstanceOf[ReminderAdd]
+  
+  @scala.inline
+  def ReminderChange: ReminderChange = "ReminderChange".asInstanceOf[ReminderChange]
+  
+  @scala.inline
+  def ReminderFire: ReminderFire = "ReminderFire".asInstanceOf[ReminderFire]
+  
+  @scala.inline
+  def ReminderObject: ReminderObject = "ReminderObject".asInstanceOf[ReminderObject]
+  
+  @scala.inline
+  def ReminderRemove: ReminderRemove = "ReminderRemove".asInstanceOf[ReminderRemove]
+  
+  @scala.inline
+  def Reply: Reply = "Reply".asInstanceOf[Reply]
+  
+  @scala.inline
+  def ReplyAll: ReplyAll = "ReplyAll".asInstanceOf[ReplyAll]
+  
+  @scala.inline
+  def Response: Response = "Response".asInstanceOf[Response]
+  
+  @scala.inline
+  def SearchObject: SearchObject = "SearchObject".asInstanceOf[SearchObject]
+  
+  @scala.inline
+  def SelectedAccount: SelectedAccount = "SelectedAccount".asInstanceOf[SelectedAccount]
+  
+  @scala.inline
+  def SelectedAccountChange: SelectedAccountChange = "SelectedAccountChange".asInstanceOf[SelectedAccountChange]
+  
+  @scala.inline
+  def SelectedChange: SelectedChange = "SelectedChange".asInstanceOf[SelectedChange]
+  
+  @scala.inline
+  def Selection: Selection = "Selection".asInstanceOf[Selection]
+  
+  @scala.inline
+  def SelectionChange: SelectionChange = "SelectionChange".asInstanceOf[SelectionChange]
+  
+  @scala.inline
+  def Send: Send = "Send".asInstanceOf[Send]
+  
+  @scala.inline
+  def Shift: Shift = "Shift".asInstanceOf[Shift]
+  
+  @scala.inline
+  def Shortcut: Shortcut = "Shortcut".asInstanceOf[Shortcut]
+  
+  @scala.inline
+  def ShortcutAdd: ShortcutAdd = "ShortcutAdd".asInstanceOf[ShortcutAdd]
+  
+  @scala.inline
+  def ShortcutContextMenuDisplay: ShortcutContextMenuDisplay = "ShortcutContextMenuDisplay".asInstanceOf[ShortcutContextMenuDisplay]
+  
+  @scala.inline
+  def Snooze: Snooze = "Snooze".asInstanceOf[Snooze]
+  
+  @scala.inline
+  def Startup: Startup = "Startup".asInstanceOf[Startup]
+  
+  @scala.inline
+  def State: State = "State".asInstanceOf[State]
+  
+  @scala.inline
+  def Store: Store = "Store".asInstanceOf[Store]
+  
+  @scala.inline
+  def StoreAdd: StoreAdd = "StoreAdd".asInstanceOf[StoreAdd]
+  
+  @scala.inline
+  def StoreContextMenuDisplay: StoreContextMenuDisplay = "StoreContextMenuDisplay".asInstanceOf[StoreContextMenuDisplay]
+  
+  @scala.inline
+  def SyncEnd: SyncEnd = "SyncEnd".asInstanceOf[SyncEnd]
+  
+  @scala.inline
+  def SyncStart: SyncStart = "SyncStart".asInstanceOf[SyncStart]
+  
+  @scala.inline
+  def Target: Target = "Target".asInstanceOf[Target]
+  
+  @scala.inline
+  def ToGroup: ToGroup = "ToGroup".asInstanceOf[ToGroup]
+  
+  @scala.inline
+  def Unload: Unload = "Unload".asInstanceOf[Unload]
+  
+  @scala.inline
+  def Value: Value = "Value".asInstanceOf[Value]
+  
+  @scala.inline
+  def View: View = "View".asInstanceOf[View]
+  
+  @scala.inline
+  def ViewAdd: ViewAdd = "ViewAdd".asInstanceOf[ViewAdd]
+  
+  @scala.inline
+  def ViewContextMenuDisplay: ViewContextMenuDisplay = "ViewContextMenuDisplay".asInstanceOf[ViewContextMenuDisplay]
+  
+  @scala.inline
+  def ViewRemove: ViewRemove = "ViewRemove".asInstanceOf[ViewRemove]
+  
+  @scala.inline
+  def ViewSwitch: ViewSwitch = "ViewSwitch".asInstanceOf[ViewSwitch]
+  
+  @scala.inline
+  def Write: Write = "Write".asInstanceOf[Write]
+  
+  @scala.inline
+  def X: X = "X".asInstanceOf[X]
+  
+  @scala.inline
+  def Y: Y = "Y".asInstanceOf[Y]
+  
   @js.native
   sealed trait Account extends js.Object
   
@@ -484,326 +965,4 @@ object activexOutlookStrings {
   
   @js.native
   sealed trait Y extends js.Object
-  
-  @scala.inline
-  def Account: Account = "Account".asInstanceOf[Account]
-  @scala.inline
-  def Action: Action = "Action".asInstanceOf[Action]
-  @scala.inline
-  def Activate: Activate = "Activate".asInstanceOf[Activate]
-  @scala.inline
-  def ActivePageName: ActivePageName = "ActivePageName".asInstanceOf[ActivePageName]
-  @scala.inline
-  def AdvancedSearchComplete: AdvancedSearchComplete = "AdvancedSearchComplete".asInstanceOf[AdvancedSearchComplete]
-  @scala.inline
-  def AdvancedSearchStopped: AdvancedSearchStopped = "AdvancedSearchStopped".asInstanceOf[AdvancedSearchStopped]
-  @scala.inline
-  def AfterUpdate: AfterUpdate = "AfterUpdate".asInstanceOf[AfterUpdate]
-  @scala.inline
-  def AfterWrite: AfterWrite = "AfterWrite".asInstanceOf[AfterWrite]
-  @scala.inline
-  def Attachment: Attachment = "Attachment".asInstanceOf[Attachment]
-  @scala.inline
-  def AttachmentAdd: AttachmentAdd = "AttachmentAdd".asInstanceOf[AttachmentAdd]
-  @scala.inline
-  def AttachmentContextMenuDisplay: AttachmentContextMenuDisplay = "AttachmentContextMenuDisplay".asInstanceOf[AttachmentContextMenuDisplay]
-  @scala.inline
-  def AttachmentRead: AttachmentRead = "AttachmentRead".asInstanceOf[AttachmentRead]
-  @scala.inline
-  def AttachmentRemove: AttachmentRemove = "AttachmentRemove".asInstanceOf[AttachmentRemove]
-  @scala.inline
-  def AttachmentSelectionChange: AttachmentSelectionChange = "AttachmentSelectionChange".asInstanceOf[AttachmentSelectionChange]
-  @scala.inline
-  def Attachments: Attachments = "Attachments".asInstanceOf[Attachments]
-  @scala.inline
-  def AutoDiscoverComplete: AutoDiscoverComplete = "AutoDiscoverComplete".asInstanceOf[AutoDiscoverComplete]
-  @scala.inline
-  def BeforeAttachmentAdd: BeforeAttachmentAdd = "BeforeAttachmentAdd".asInstanceOf[BeforeAttachmentAdd]
-  @scala.inline
-  def BeforeAttachmentPreview: BeforeAttachmentPreview = "BeforeAttachmentPreview".asInstanceOf[BeforeAttachmentPreview]
-  @scala.inline
-  def BeforeAttachmentRead: BeforeAttachmentRead = "BeforeAttachmentRead".asInstanceOf[BeforeAttachmentRead]
-  @scala.inline
-  def BeforeAttachmentSave: BeforeAttachmentSave = "BeforeAttachmentSave".asInstanceOf[BeforeAttachmentSave]
-  @scala.inline
-  def BeforeAttachmentWriteToTempFile: BeforeAttachmentWriteToTempFile = "BeforeAttachmentWriteToTempFile".asInstanceOf[BeforeAttachmentWriteToTempFile]
-  @scala.inline
-  def BeforeAutoSave: BeforeAutoSave = "BeforeAutoSave".asInstanceOf[BeforeAutoSave]
-  @scala.inline
-  def BeforeCheckNames: BeforeCheckNames = "BeforeCheckNames".asInstanceOf[BeforeCheckNames]
-  @scala.inline
-  def BeforeDelete: BeforeDelete = "BeforeDelete".asInstanceOf[BeforeDelete]
-  @scala.inline
-  def BeforeFolderMove: BeforeFolderMove = "BeforeFolderMove".asInstanceOf[BeforeFolderMove]
-  @scala.inline
-  def BeforeFolderSharingDialog: BeforeFolderSharingDialog = "BeforeFolderSharingDialog".asInstanceOf[BeforeFolderSharingDialog]
-  @scala.inline
-  def BeforeFolderSwitch: BeforeFolderSwitch = "BeforeFolderSwitch".asInstanceOf[BeforeFolderSwitch]
-  @scala.inline
-  def BeforeGroupAdd: BeforeGroupAdd = "BeforeGroupAdd".asInstanceOf[BeforeGroupAdd]
-  @scala.inline
-  def BeforeGroupRemove: BeforeGroupRemove = "BeforeGroupRemove".asInstanceOf[BeforeGroupRemove]
-  @scala.inline
-  def BeforeGroupSwitch: BeforeGroupSwitch = "BeforeGroupSwitch".asInstanceOf[BeforeGroupSwitch]
-  @scala.inline
-  def BeforeItemCopy: BeforeItemCopy = "BeforeItemCopy".asInstanceOf[BeforeItemCopy]
-  @scala.inline
-  def BeforeItemCut: BeforeItemCut = "BeforeItemCut".asInstanceOf[BeforeItemCut]
-  @scala.inline
-  def BeforeItemMove: BeforeItemMove = "BeforeItemMove".asInstanceOf[BeforeItemMove]
-  @scala.inline
-  def BeforeItemPaste: BeforeItemPaste = "BeforeItemPaste".asInstanceOf[BeforeItemPaste]
-  @scala.inline
-  def BeforeMaximize: BeforeMaximize = "BeforeMaximize".asInstanceOf[BeforeMaximize]
-  @scala.inline
-  def BeforeMinimize: BeforeMinimize = "BeforeMinimize".asInstanceOf[BeforeMinimize]
-  @scala.inline
-  def BeforeMove: BeforeMove = "BeforeMove".asInstanceOf[BeforeMove]
-  @scala.inline
-  def BeforeNavigate: BeforeNavigate = "BeforeNavigate".asInstanceOf[BeforeNavigate]
-  @scala.inline
-  def BeforeRead: BeforeRead = "BeforeRead".asInstanceOf[BeforeRead]
-  @scala.inline
-  def BeforeReminderShow: BeforeReminderShow = "BeforeReminderShow".asInstanceOf[BeforeReminderShow]
-  @scala.inline
-  def BeforeShortcutAdd: BeforeShortcutAdd = "BeforeShortcutAdd".asInstanceOf[BeforeShortcutAdd]
-  @scala.inline
-  def BeforeShortcutRemove: BeforeShortcutRemove = "BeforeShortcutRemove".asInstanceOf[BeforeShortcutRemove]
-  @scala.inline
-  def BeforeSize: BeforeSize = "BeforeSize".asInstanceOf[BeforeSize]
-  @scala.inline
-  def BeforeStoreRemove: BeforeStoreRemove = "BeforeStoreRemove".asInstanceOf[BeforeStoreRemove]
-  @scala.inline
-  def BeforeUpdate: BeforeUpdate = "BeforeUpdate".asInstanceOf[BeforeUpdate]
-  @scala.inline
-  def BeforeViewSwitch: BeforeViewSwitch = "BeforeViewSwitch".asInstanceOf[BeforeViewSwitch]
-  @scala.inline
-  def Button: Button = "Button".asInstanceOf[Button]
-  @scala.inline
-  def Cancel: Cancel = "Cancel".asInstanceOf[Cancel]
-  @scala.inline
-  def Change: Change = "Change".asInstanceOf[Change]
-  @scala.inline
-  def Click: Click = "Click".asInstanceOf[Click]
-  @scala.inline
-  def ClipboardContent: ClipboardContent = "ClipboardContent".asInstanceOf[ClipboardContent]
-  @scala.inline
-  def Close: Close = "Close".asInstanceOf[Close]
-  @scala.inline
-  def Code: Code = "Code".asInstanceOf[Code]
-  @scala.inline
-  def CommandBar: CommandBar = "CommandBar".asInstanceOf[CommandBar]
-  @scala.inline
-  def ContextMenu: ContextMenu = "ContextMenu".asInstanceOf[ContextMenu]
-  @scala.inline
-  def ContextMenuClose: ContextMenuClose = "ContextMenuClose".asInstanceOf[ContextMenuClose]
-  @scala.inline
-  def CurrentModule: CurrentModule = "CurrentModule".asInstanceOf[CurrentModule]
-  @scala.inline
-  def CustomAction: CustomAction = "CustomAction".asInstanceOf[CustomAction]
-  @scala.inline
-  def CustomPropertyChange: CustomPropertyChange = "CustomPropertyChange".asInstanceOf[CustomPropertyChange]
-  @scala.inline
-  def Deactivate: Deactivate = "Deactivate".asInstanceOf[Deactivate]
-  @scala.inline
-  def Description: Description = "Description".asInstanceOf[Description]
-  @scala.inline
-  def DoubleClick: DoubleClick = "DoubleClick".asInstanceOf[DoubleClick]
-  @scala.inline
-  def DropButtonClick: DropButtonClick = "DropButtonClick".asInstanceOf[DropButtonClick]
-  @scala.inline
-  def Enter: Enter = "Enter".asInstanceOf[Enter]
-  @scala.inline
-  def EntryIDCollection: EntryIDCollection = "EntryIDCollection".asInstanceOf[EntryIDCollection]
-  @scala.inline
-  def Exit: Exit = "Exit".asInstanceOf[Exit]
-  @scala.inline
-  def Expand: Expand = "Expand".asInstanceOf[Expand]
-  @scala.inline
-  def Expanded: Expanded = "Expanded".asInstanceOf[Expanded]
-  @scala.inline
-  def Explorer: Explorer = "Explorer".asInstanceOf[Explorer]
-  @scala.inline
-  def Folder: Folder = "Folder".asInstanceOf[Folder]
-  @scala.inline
-  def FolderAdd: FolderAdd = "FolderAdd".asInstanceOf[FolderAdd]
-  @scala.inline
-  def FolderChange: FolderChange = "FolderChange".asInstanceOf[FolderChange]
-  @scala.inline
-  def FolderContextMenuDisplay: FolderContextMenuDisplay = "FolderContextMenuDisplay".asInstanceOf[FolderContextMenuDisplay]
-  @scala.inline
-  def FolderRemove: FolderRemove = "FolderRemove".asInstanceOf[FolderRemove]
-  @scala.inline
-  def FolderSwitch: FolderSwitch = "FolderSwitch".asInstanceOf[FolderSwitch]
-  @scala.inline
-  def FolderToShare: FolderToShare = "FolderToShare".asInstanceOf[FolderToShare]
-  @scala.inline
-  def Forward: Forward = "Forward".asInstanceOf[Forward]
-  @scala.inline
-  def Group: Group = "Group".asInstanceOf[Group]
-  @scala.inline
-  def GroupAdd: GroupAdd = "GroupAdd".asInstanceOf[GroupAdd]
-  @scala.inline
-  def Inspector: Inspector = "Inspector".asInstanceOf[Inspector]
-  @scala.inline
-  def Item: Item = "Item".asInstanceOf[Item]
-  @scala.inline
-  def ItemAdd: ItemAdd = "ItemAdd".asInstanceOf[ItemAdd]
-  @scala.inline
-  def ItemChange: ItemChange = "ItemChange".asInstanceOf[ItemChange]
-  @scala.inline
-  def ItemContextMenuDisplay: ItemContextMenuDisplay = "ItemContextMenuDisplay".asInstanceOf[ItemContextMenuDisplay]
-  @scala.inline
-  def ItemLoad: ItemLoad = "ItemLoad".asInstanceOf[ItemLoad]
-  @scala.inline
-  def ItemRemove: ItemRemove = "ItemRemove".asInstanceOf[ItemRemove]
-  @scala.inline
-  def ItemSend: ItemSend = "ItemSend".asInstanceOf[ItemSend]
-  @scala.inline
-  def KeyAscii: KeyAscii = "KeyAscii".asInstanceOf[KeyAscii]
-  @scala.inline
-  def KeyCode: KeyCode = "KeyCode".asInstanceOf[KeyCode]
-  @scala.inline
-  def KeyDown: KeyDown = "KeyDown".asInstanceOf[KeyDown]
-  @scala.inline
-  def KeyPress: KeyPress = "KeyPress".asInstanceOf[KeyPress]
-  @scala.inline
-  def KeyUp: KeyUp = "KeyUp".asInstanceOf[KeyUp]
-  @scala.inline
-  def MAPILogonComplete: MAPILogonComplete = "MAPILogonComplete".asInstanceOf[MAPILogonComplete]
-  @scala.inline
-  def Max: Max = "Max".asInstanceOf[Max]
-  @scala.inline
-  def ModuleSwitch: ModuleSwitch = "ModuleSwitch".asInstanceOf[ModuleSwitch]
-  @scala.inline
-  def MouseDown: MouseDown = "MouseDown".asInstanceOf[MouseDown]
-  @scala.inline
-  def MouseMove: MouseMove = "MouseMove".asInstanceOf[MouseMove]
-  @scala.inline
-  def MouseUp: MouseUp = "MouseUp".asInstanceOf[MouseUp]
-  @scala.inline
-  def MoveTo: MoveTo = "MoveTo".asInstanceOf[MoveTo]
-  @scala.inline
-  def Name: Name = "Name".asInstanceOf[Name]
-  @scala.inline
-  def NavigationFolder: NavigationFolder = "NavigationFolder".asInstanceOf[NavigationFolder]
-  @scala.inline
-  def NavigationFolderAdd: NavigationFolderAdd = "NavigationFolderAdd".asInstanceOf[NavigationFolderAdd]
-  @scala.inline
-  def NavigationFolderRemove: NavigationFolderRemove = "NavigationFolderRemove".asInstanceOf[NavigationFolderRemove]
-  @scala.inline
-  def NewExplorer: NewExplorer = "NewExplorer".asInstanceOf[NewExplorer]
-  @scala.inline
-  def NewFolder: NewFolder = "NewFolder".asInstanceOf[NewFolder]
-  @scala.inline
-  def NewGroup: NewGroup = "NewGroup".asInstanceOf[NewGroup]
-  @scala.inline
-  def NewInspector: NewInspector = "NewInspector".asInstanceOf[NewInspector]
-  @scala.inline
-  def NewMail: NewMail = "NewMail".asInstanceOf[NewMail]
-  @scala.inline
-  def NewMailEx: NewMailEx = "NewMailEx".asInstanceOf[NewMailEx]
-  @scala.inline
-  def NewShortcut: NewShortcut = "NewShortcut".asInstanceOf[NewShortcut]
-  @scala.inline
-  def NewView: NewView = "NewView".asInstanceOf[NewView]
-  @scala.inline
-  def OnError: OnError = "OnError".asInstanceOf[OnError]
-  @scala.inline
-  def Open: Open = "Open".asInstanceOf[Open]
-  @scala.inline
-  def OptionsPagesAdd: OptionsPagesAdd = "OptionsPagesAdd".asInstanceOf[OptionsPagesAdd]
-  @scala.inline
-  def PageChange: PageChange = "PageChange".asInstanceOf[PageChange]
-  @scala.inline
-  def Pages: Pages = "Pages".asInstanceOf[Pages]
-  @scala.inline
-  def Progress: Progress = "Progress".asInstanceOf[Progress]
-  @scala.inline
-  def PropertyChange: PropertyChange = "PropertyChange".asInstanceOf[PropertyChange]
-  @scala.inline
-  def Quit: Quit = "Quit".asInstanceOf[Quit]
-  @scala.inline
-  def Read: Read = "Read".asInstanceOf[Read]
-  @scala.inline
-  def Reminder: Reminder = "Reminder".asInstanceOf[Reminder]
-  @scala.inline
-  def ReminderAdd: ReminderAdd = "ReminderAdd".asInstanceOf[ReminderAdd]
-  @scala.inline
-  def ReminderChange: ReminderChange = "ReminderChange".asInstanceOf[ReminderChange]
-  @scala.inline
-  def ReminderFire: ReminderFire = "ReminderFire".asInstanceOf[ReminderFire]
-  @scala.inline
-  def ReminderObject: ReminderObject = "ReminderObject".asInstanceOf[ReminderObject]
-  @scala.inline
-  def ReminderRemove: ReminderRemove = "ReminderRemove".asInstanceOf[ReminderRemove]
-  @scala.inline
-  def Reply: Reply = "Reply".asInstanceOf[Reply]
-  @scala.inline
-  def ReplyAll: ReplyAll = "ReplyAll".asInstanceOf[ReplyAll]
-  @scala.inline
-  def Response: Response = "Response".asInstanceOf[Response]
-  @scala.inline
-  def SearchObject: SearchObject = "SearchObject".asInstanceOf[SearchObject]
-  @scala.inline
-  def SelectedAccount: SelectedAccount = "SelectedAccount".asInstanceOf[SelectedAccount]
-  @scala.inline
-  def SelectedAccountChange: SelectedAccountChange = "SelectedAccountChange".asInstanceOf[SelectedAccountChange]
-  @scala.inline
-  def SelectedChange: SelectedChange = "SelectedChange".asInstanceOf[SelectedChange]
-  @scala.inline
-  def Selection: Selection = "Selection".asInstanceOf[Selection]
-  @scala.inline
-  def SelectionChange: SelectionChange = "SelectionChange".asInstanceOf[SelectionChange]
-  @scala.inline
-  def Send: Send = "Send".asInstanceOf[Send]
-  @scala.inline
-  def Shift: Shift = "Shift".asInstanceOf[Shift]
-  @scala.inline
-  def Shortcut: Shortcut = "Shortcut".asInstanceOf[Shortcut]
-  @scala.inline
-  def ShortcutAdd: ShortcutAdd = "ShortcutAdd".asInstanceOf[ShortcutAdd]
-  @scala.inline
-  def ShortcutContextMenuDisplay: ShortcutContextMenuDisplay = "ShortcutContextMenuDisplay".asInstanceOf[ShortcutContextMenuDisplay]
-  @scala.inline
-  def Snooze: Snooze = "Snooze".asInstanceOf[Snooze]
-  @scala.inline
-  def Startup: Startup = "Startup".asInstanceOf[Startup]
-  @scala.inline
-  def State: State = "State".asInstanceOf[State]
-  @scala.inline
-  def Store: Store = "Store".asInstanceOf[Store]
-  @scala.inline
-  def StoreAdd: StoreAdd = "StoreAdd".asInstanceOf[StoreAdd]
-  @scala.inline
-  def StoreContextMenuDisplay: StoreContextMenuDisplay = "StoreContextMenuDisplay".asInstanceOf[StoreContextMenuDisplay]
-  @scala.inline
-  def SyncEnd: SyncEnd = "SyncEnd".asInstanceOf[SyncEnd]
-  @scala.inline
-  def SyncStart: SyncStart = "SyncStart".asInstanceOf[SyncStart]
-  @scala.inline
-  def Target: Target = "Target".asInstanceOf[Target]
-  @scala.inline
-  def ToGroup: ToGroup = "ToGroup".asInstanceOf[ToGroup]
-  @scala.inline
-  def Unload: Unload = "Unload".asInstanceOf[Unload]
-  @scala.inline
-  def Value: Value = "Value".asInstanceOf[Value]
-  @scala.inline
-  def View: View = "View".asInstanceOf[View]
-  @scala.inline
-  def ViewAdd: ViewAdd = "ViewAdd".asInstanceOf[ViewAdd]
-  @scala.inline
-  def ViewContextMenuDisplay: ViewContextMenuDisplay = "ViewContextMenuDisplay".asInstanceOf[ViewContextMenuDisplay]
-  @scala.inline
-  def ViewRemove: ViewRemove = "ViewRemove".asInstanceOf[ViewRemove]
-  @scala.inline
-  def ViewSwitch: ViewSwitch = "ViewSwitch".asInstanceOf[ViewSwitch]
-  @scala.inline
-  def Write: Write = "Write".asInstanceOf[Write]
-  @scala.inline
-  def X: X = "X".asInstanceOf[X]
-  @scala.inline
-  def Y: Y = "Y".asInstanceOf[Y]
 }
-

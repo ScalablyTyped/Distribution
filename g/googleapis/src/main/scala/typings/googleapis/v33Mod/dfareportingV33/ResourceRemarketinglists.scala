@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Remarketinglists")
 @js.native
 class ResourceRemarketinglists protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.remarketingLists.get
     * @desc Gets one remarketing list by ID.
@@ -42,6 +44,7 @@ class ResourceRemarketinglists protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRemarketingList]
   ): Unit = js.native
+  
   /**
     * dfareporting.remarketingLists.insert
     * @desc Inserts a new remarketing list.
@@ -74,6 +77,7 @@ class ResourceRemarketinglists protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRemarketingList]
   ): Unit = js.native
+  
   /**
     * dfareporting.remarketingLists.list
     * @desc Retrieves a list of remarketing lists, possibly filtered. This
@@ -114,6 +118,7 @@ class ResourceRemarketinglists protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRemarketingListsListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.remarketingLists.patch
     * @desc Updates an existing remarketing list. This method supports patch
@@ -145,6 +150,7 @@ class ResourceRemarketinglists protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRemarketingList]
   ): Unit = js.native
+  
   /**
     * dfareporting.remarketingLists.update
     * @desc Updates an existing remarketing list.
@@ -178,4 +184,3 @@ class ResourceRemarketinglists protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRemarketingList]
   ): Unit = js.native
 }
-

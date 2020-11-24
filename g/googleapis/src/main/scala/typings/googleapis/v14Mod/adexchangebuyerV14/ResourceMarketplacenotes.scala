@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.4", "adexchangebuyer_v1_4.Resource$Marketplacenotes")
 @js.native
 class ResourceMarketplacenotes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer.marketplacenotes.insert
     * @desc Add notes to the proposal
@@ -45,6 +47,7 @@ class ResourceMarketplacenotes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAddOrderNotesResponse]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.marketplacenotes.list
     * @desc Get all the notes associated with a proposal
@@ -78,4 +81,3 @@ class ResourceMarketplacenotes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGetOrderNotesResponse]
   ): Unit = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/containeranalysis/v1beta1", "containeranalysis_v1beta1.Resource$Projects$Notes$Occurrences")
 @js.native
 class ResourceProjectsNotesOccurrences protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * containeranalysis.projects.notes.occurrences.list
     * @desc Lists occurrences referencing the specified note. Provider projects
@@ -50,4 +52,3 @@ class ResourceProjectsNotesOccurrences protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListNoteOccurrencesResponse]
   ): Unit = js.native
 }
-

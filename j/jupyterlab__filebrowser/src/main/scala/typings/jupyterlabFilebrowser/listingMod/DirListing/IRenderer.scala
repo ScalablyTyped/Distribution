@@ -6,13 +6,14 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The render interface for file browser listing options.
   */
 @js.native
 trait IRenderer extends js.Object {
+  
   /**
     * Create an appropriate drag image for an item.
     *
@@ -26,16 +27,19 @@ trait IRenderer extends js.Object {
     */
   def createDragImage(node: HTMLElement, count: Double): HTMLElement = js.native
   def createDragImage(node: HTMLElement, count: Double, fileType: IFileType): HTMLElement = js.native
+  
   /**
     * Create a new item node for a dir listing.
     *
     * @returns A new DOM node to use as a content item.
     */
   def createItemNode(): HTMLElement = js.native
+  
   /**
     * Create the DOM node for a dir listing.
     */
   def createNode(): HTMLElement = js.native
+  
   /**
     * Get the node containing the file name.
     *
@@ -44,6 +48,7 @@ trait IRenderer extends js.Object {
     * @returns The node containing the file name.
     */
   def getNameNode(node: HTMLElement): HTMLElement = js.native
+  
   /**
     * Handle a header click.
     *
@@ -54,12 +59,14 @@ trait IRenderer extends js.Object {
     * @returns The sort state of the header after the click event.
     */
   def handleHeaderClick(node: HTMLElement, event: MouseEvent): ISortState = js.native
+  
   /**
     * Populate and empty header node for a dir listing.
     *
     * @param node - The header node to populate.
     */
   def populateHeaderNode(node: HTMLElement): Unit = js.native
+  
   /**
     * Update an item node to reflect the current state of a model.
     *
@@ -72,4 +79,3 @@ trait IRenderer extends js.Object {
   def updateItemNode(node: HTMLElement, model: IModel): Unit = js.native
   def updateItemNode(node: HTMLElement, model: IModel, fileType: IFileType): Unit = js.native
 }
-

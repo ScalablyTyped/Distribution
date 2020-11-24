@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sheets/v4", "sheets_v4.Resource$Spreadsheets$Sheets")
 @js.native
 class ResourceSpreadsheetsSheets protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * sheets.spreadsheets.sheets.copyTo
     * @desc Copies a single sheet from a spreadsheet to another spreadsheet.
@@ -108,4 +110,3 @@ class ResourceSpreadsheetsSheets protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSheetProperties]
   ): Unit = js.native
 }
-

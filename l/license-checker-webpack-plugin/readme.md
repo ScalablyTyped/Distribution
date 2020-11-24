@@ -10,9 +10,9 @@ Verifies licenses of all external dependencies in a compilation, and outputs the
 | ------------------ | :-------------: |
 | Full name          | license-checker-webpack-plugin |
 | Keywords           | license, webpack |
-| # releases         | 16 |
-| # dependents       | 0 |
-| # downloads        | 106518 |
+| # releases         | 12 |
+| # dependents       | 2 |
+| # downloads        | 312802 |
 | # stars            | 0 |
 
 ## Links

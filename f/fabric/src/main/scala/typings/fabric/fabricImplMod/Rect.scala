@@ -3,7 +3,7 @@ package typings.fabric.fabricImplMod
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fabric.fabricImplMod.IObjectOptions because Already inherited
@@ -15,24 +15,27 @@ import scala.scalajs.js.annotation._
   */
 class Rect () extends Object {
   def this(options: IRectOptions) = this()
+  
   /**
     * Horizontal border radius
     */
   var rx: js.UndefOr[Double] = js.native
+  
   /**
     * Vertical border radius
     */
   var ry: js.UndefOr[Double] = js.native
 }
-
 /* static members */
 @JSImport("fabric/fabric-impl", "Rect")
 @js.native
 object Rect extends js.Object {
+  
   /**
     * List of attribute names to account for when parsing SVG element (used by `fabric.Rect.fromElement`)
     */
   var ATTRIBUTE_NAMES: js.Array[String] = js.native
+  
   /**
     * Returns Rect instance from an SVG element
     * @param element Element to parse
@@ -40,10 +43,10 @@ object Rect extends js.Object {
     */
   def fromElement(element: SVGElement): Rect = js.native
   def fromElement(element: SVGElement, options: IRectOptions): Rect = js.native
+  
   /**
     * Returns Rect instance from an object representation
     * @param object Object to create an instance from
     */
   def fromObject(`object`: js.Any): Rect = js.native
 }
-

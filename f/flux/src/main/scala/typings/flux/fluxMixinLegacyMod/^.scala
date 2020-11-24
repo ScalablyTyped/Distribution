@@ -2,11 +2,12 @@ package typings.flux.fluxMixinLegacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("flux/lib/FluxMixinLegacy", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * `FluxContainer` should be preferred over this mixin, but it requires using
     * react with classes. So this mixin is provided where it is not yet possible
@@ -25,4 +26,3 @@ object ^ extends js.Object {
   def apply(stores: js.Array[typings.flux.fluxStoreMod.^[_]]): js.Any = js.native
   def apply(stores: js.Array[typings.flux.fluxStoreMod.^[_]], options: Options): js.Any = js.native
 }
-

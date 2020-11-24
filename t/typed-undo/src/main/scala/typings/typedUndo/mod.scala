@@ -2,11 +2,12 @@ package typings.typedUndo
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typed-undo", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   /**
     * Create a new UndoManager
@@ -21,6 +22,4 @@ object mod extends js.Object {
   @js.native
   abstract class UndoableEdit ()
     extends typings.typedUndo.undoableEditMod.UndoableEdit
-  
 }
-

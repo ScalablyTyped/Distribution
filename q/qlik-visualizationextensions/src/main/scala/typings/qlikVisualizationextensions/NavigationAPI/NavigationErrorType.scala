@@ -2,7 +2,7 @@ package typings.qlikVisualizationextensions.NavigationAPI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSHEET
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSTORY
 */
 trait NavigationErrorType extends js.Object
-
 object NavigationErrorType {
+  
   @scala.inline
   def NOCURRENTSHEET: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOCURRENTSHEET = "NOCURRENTSHEET".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOCURRENTSHEET]
+  
   @scala.inline
   def NOSUCHSHEET: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSHEET = "NOSUCHSHEET".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSHEET]
+  
   @scala.inline
   def NOSUCHSTORY: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSTORY = "NOSUCHSTORY".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSTORY]
 }
-

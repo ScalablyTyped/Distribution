@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.tooltipMod.UncontrolledTooltipProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "UncontrolledTooltip")
+@JSImport("reactstrap/lib", "UncontrolledTooltip")
 @js.native
-class UncontrolledTooltip[T] ()
+class UncontrolledTooltip ()
   extends Component[UncontrolledTooltipProps, js.Object, js.Any]
-

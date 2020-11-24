@@ -6,11 +6,12 @@ import typings.rsocketCore.rsocketencodingMod.Encoders
 import typings.rsocketTcpClient.rsockettcpclientMod.RSocketTcpClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rsocket-tcp-client", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class RSocketTcpConnection ()
     extends typings.rsocketTcpClient.rsockettcpclientMod.RSocketTcpConnection {
@@ -24,6 +25,4 @@ object mod extends js.Object {
     def this(options: TcpSocketConnectOpts) = this()
     def this(options: TcpSocketConnectOpts, encoders: Encoders[_]) = this()
   }
-  
 }
-

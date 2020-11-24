@@ -11,8 +11,8 @@ Decodes every html entity possible
 | Full name          | decode-entities |
 | Keywords           | html |
 | # releases         | 9 |
-| # dependents       | 1 |
-| # downloads        | 2842 |
+| # dependents       | 2 |
+| # downloads        | 1669 |
 | # stars            | 0 |
 
 ## Links

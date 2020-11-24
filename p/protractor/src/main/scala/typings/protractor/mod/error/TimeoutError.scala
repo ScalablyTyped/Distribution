@@ -2,7 +2,7 @@ package typings.protractor.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An operation did not completErrorCodee before its timeout expired.
@@ -13,4 +13,3 @@ class TimeoutError ()
   extends typings.seleniumWebdriver.mod.error.TimeoutError {
   def this(message: String) = this()
 }
-

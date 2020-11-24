@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Resource$Accounts")
 @js.native
 class ResourceAccounts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * content.accounts.authinfo
     * @desc Returns information about the authenticated user.
@@ -43,6 +43,7 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountsAuthInfoResponse]
   ): Unit = js.native
+  
   /**
     * content.accounts.claimwebsite
     * @desc Claims the website of a Merchant Center sub-account.
@@ -76,6 +77,9 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountsClaimWebsiteResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * content.accounts.custombatch
     * @desc Retrieves, inserts, updates, and deletes multiple Merchant Center
@@ -109,6 +113,7 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountsCustomBatchResponse]
   ): Unit = js.native
+  
   /**
     * content.accounts.delete
     * @desc Deletes a Merchant Center sub-account.
@@ -136,6 +141,7 @@ class ResourceAccounts protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceAccountsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * content.accounts.get
     * @desc Retrieves a Merchant Center account.
@@ -165,6 +171,7 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccount]
   ): Unit = js.native
+  
   /**
     * content.accounts.insert
     * @desc Creates a Merchant Center sub-account.
@@ -195,6 +202,7 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccount]
   ): Unit = js.native
+  
   /**
     * content.accounts.link
     * @desc Performs an action on a link between a Merchant Center account and
@@ -226,6 +234,7 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountsLinkResponse]
   ): Unit = js.native
+  
   /**
     * content.accounts.list
     * @desc Lists the sub-accounts in your Merchant Center account.
@@ -256,6 +265,7 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountsListResponse]
   ): Unit = js.native
+  
   /**
     * content.accounts.patch
     * @desc Updates a Merchant Center account. This method supports patch
@@ -288,6 +298,7 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccount]
   ): Unit = js.native
+  
   /**
     * content.accounts.update
     * @desc Updates a Merchant Center account.
@@ -320,4 +331,3 @@ class ResourceAccounts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAccount]
   ): Unit = js.native
 }
-

@@ -1,0 +1,27 @@
+package typings.devtoolsProtocol.mod.Protocol.Page
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.Secure
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.SecureLocalhost
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureScheme
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureAncestor
+*/
+trait SecureContextType extends js.Object
+object SecureContextType {
+  
+  @scala.inline
+  def InsecureAncestor: typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureAncestor = "InsecureAncestor".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureAncestor]
+  
+  @scala.inline
+  def InsecureScheme: typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureScheme = "InsecureScheme".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureScheme]
+  
+  @scala.inline
+  def Secure: typings.devtoolsProtocol.devtoolsProtocolStrings.Secure = "Secure".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Secure]
+  
+  @scala.inline
+  def SecureLocalhost: typings.devtoolsProtocol.devtoolsProtocolStrings.SecureLocalhost = "SecureLocalhost".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SecureLocalhost]
+}

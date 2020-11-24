@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/redis/v1beta1", "redis_v1beta1.Resource$Projects$Locations$Instances")
 @js.native
 class ResourceProjectsLocationsInstances protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * redis.projects.locations.instances.create
     * @desc Creates a Redis instance based on the specified tier and memory
@@ -54,6 +56,7 @@ class ResourceProjectsLocationsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * redis.projects.locations.instances.delete
     * @desc Deletes a specific Redis instance.  Instance stops serving and data
@@ -86,6 +89,7 @@ class ResourceProjectsLocationsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * redis.projects.locations.instances.get
     * @desc Gets the details of a specific Redis instance.
@@ -117,6 +121,7 @@ class ResourceProjectsLocationsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstance]
   ): Unit = js.native
+  
   /**
     * redis.projects.locations.instances.list
     * @desc Lists all Redis instances owned by a project in either the
@@ -154,6 +159,7 @@ class ResourceProjectsLocationsInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListInstancesResponse]
   ): Unit = js.native
+  
   /**
     * redis.projects.locations.instances.patch
     * @desc Updates the metadata and configuration of a specific Redis
@@ -191,4 +197,3 @@ class ResourceProjectsLocationsInstances protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

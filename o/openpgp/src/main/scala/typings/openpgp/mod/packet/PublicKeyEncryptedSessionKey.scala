@@ -4,7 +4,7 @@ import typings.openpgp.mod.Integer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "packet.PublicKeyEncryptedSessionKey")
 @js.native
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
   * decrypt the message.
   */
 class PublicKeyEncryptedSessionKey () extends js.Object {
-  var encrypted: js.Array[_] = js.native
+  
   /**
     * Decrypts the session key (only for public key encrypted session key
     * packets (tag 1)
@@ -32,16 +32,21 @@ class PublicKeyEncryptedSessionKey () extends js.Object {
     * @returns
     */
   def decrypt(key: SecretKey): js.Promise[Boolean] = js.native
+  
   /**
     * Encrypt session key packet
     * @param key Public key
     * @returns
     */
   def encrypt(key: PublicKey): js.Promise[Boolean] = js.native
+  
+  var encrypted: js.Array[_] = js.native
+  
   /**
     * Fix custom types after cloning
     */
   def postCloneTypeFix(): Unit = js.native
+  
   /**
     * Parsing function for a publickey encrypted session key packet (tag 1).
     * @param input Payload of a tag 1 packet
@@ -51,10 +56,10 @@ class PublicKeyEncryptedSessionKey () extends js.Object {
     * @returns Object representation
     */
   def read(input: Uint8Array, position: Integer, len: Integer): PublicKeyEncryptedSessionKey = js.native
+  
   /**
     * Create a string representation of a tag 1 packet
     * @returns The Uint8Array representation
     */
   def write(): Uint8Array = js.native
 }
-

@@ -4,21 +4,18 @@ import typings.p5.anon.X
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Element extends js.Object {
-  /**
-    *   Underlying HTML element. All normal HTML methods
-    *   can be called on this.
-    */
-  var elt: js.Any = js.native
+  
   /**
     *   Adds specified class to the element.
     *   @param class name of class to add
     *   @chainable
     */
   def addClass(theClass: String): Element = js.native
+  
   /**
     *   Adds a new attribute or changes the value of an
     *   existing attribute on the specified element. If no
@@ -37,6 +34,7 @@ trait Element extends js.Object {
     *   @chainable
     */
   def attribute(attr: String, value: String): Element = js.native
+  
   /**
     *   Centers a p5 Element either vertically,
     *   horizontally, or both, relative to its parent or
@@ -49,6 +47,7 @@ trait Element extends js.Object {
     */
   def center(): Element = js.native
   def center(align: String): Element = js.native
+  
   /**
     *   Attaches the element as a child to the parent
     *   specified. Accepts either a string ID, DOM node,
@@ -70,6 +69,7 @@ trait Element extends js.Object {
     */
   @JSName("child")
   def child_Element(): Element = js.native
+  
   /**
     *   Adds given class to the element. If no class
     *   argument is passed in, it instead returns a string
@@ -85,6 +85,7 @@ trait Element extends js.Object {
     *   @chainable
     */
   def `class`(theClass: String): Element = js.native
+  
   /**
     *   The .doubleClicked() function is called once after
     *   every time a mouse button is pressed twice over
@@ -97,6 +98,7 @@ trait Element extends js.Object {
     */
   def doubleClicked(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def doubleClicked(fxn: Boolean): Element = js.native
+  
   /**
     *   The .dragLeave() function is called once after
     *   every time a dragged file leaves the element area.
@@ -110,6 +112,7 @@ trait Element extends js.Object {
     */
   def dragLeave(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def dragLeave(fxn: Boolean): Element = js.native
+  
   /**
     *   The .dragOver() function is called once after
     *   every time a file is dragged over the element.
@@ -123,6 +126,7 @@ trait Element extends js.Object {
     */
   def dragOver(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def dragOver(fxn: Boolean): Element = js.native
+  
   /**
     *   Registers a callback that gets called every time a
     *   file that is dropped on the element has been
@@ -145,6 +149,13 @@ trait Element extends js.Object {
     */
   def drop(callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def drop(callback: js.Function1[/* repeated */ js.Any, _], fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  
+  /**
+    *   Underlying HTML element. All normal HTML methods
+    *   can be called on this.
+    */
+  var elt: js.Any = js.native
+  
   /**
     *   Checks if specified class already set to element
     *   @param c class name of class to check
@@ -152,12 +163,14 @@ trait Element extends js.Object {
     *   class
     */
   def hasClass(c: String): Boolean = js.native
+  
   /**
     *   Hides the current element. Essentially, setting
     *   display:none for the style.
     *   @chainable
     */
   def hide(): Element = js.native
+  
   /**
     *   If an argument is given, sets the inner HTML of
     *   the element, replacing any existing html. If true
@@ -185,6 +198,7 @@ trait Element extends js.Object {
     */
   @JSName("html")
   def html_Element(): Element = js.native
+  
   /**
     *   Sets the ID of the element. If no ID argument is
     *   passed in, it instead returns the current ID of
@@ -206,6 +220,7 @@ trait Element extends js.Object {
     *   @chainable
     */
   def id(id: String): Element = js.native
+  
   /**
     *   The .mouseClicked() function is called once after
     *   a mouse button is pressed and released over the
@@ -221,6 +236,7 @@ trait Element extends js.Object {
     */
   def mouseClicked(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def mouseClicked(fxn: Boolean): Element = js.native
+  
   /**
     *   The .mouseMoved() function is called once every
     *   time a mouse moves over the element. This can be
@@ -232,6 +248,7 @@ trait Element extends js.Object {
     */
   def mouseMoved(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def mouseMoved(fxn: Boolean): Element = js.native
+  
   /**
     *   The .mouseOut() function is called once after
     *   every time a mouse moves off the element. This can
@@ -244,6 +261,7 @@ trait Element extends js.Object {
     */
   def mouseOut(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def mouseOut(fxn: Boolean): Element = js.native
+  
   /**
     *   The .mouseOver() function is called once after
     *   every time a mouse moves onto the element. This
@@ -256,6 +274,7 @@ trait Element extends js.Object {
     */
   def mouseOver(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def mouseOver(fxn: Boolean): Element = js.native
+  
   /**
     *   The .mousePressed() function is called once after
     *   every time a mouse button is pressed over the
@@ -271,6 +290,7 @@ trait Element extends js.Object {
     */
   def mousePressed(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def mousePressed(fxn: Boolean): Element = js.native
+  
   /**
     *   The .mouseReleased() function is called once after
     *   every time a mouse button is released over the
@@ -286,6 +306,7 @@ trait Element extends js.Object {
     */
   def mouseReleased(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def mouseReleased(fxn: Boolean): Element = js.native
+  
   /**
     *   The .mouseWheel() function is called once after
     *   every time a mouse wheel is scrolled over the
@@ -312,6 +333,7 @@ trait Element extends js.Object {
     */
   def mouseWheel(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def mouseWheel(fxn: Boolean): Element = js.native
+  
   /**
     *   Attaches the element to the parent specified. A
     *   way of setting the container for the element.
@@ -343,6 +365,7 @@ trait Element extends js.Object {
   def parent(parent: String): Element = js.native
   def parent(parent: js.Object): Element = js.native
   def parent(parent: Element): Element = js.native
+  
   /**
     *   Sets the position of the element relative to (0,
     *   0) of the window. Essentially, sets
@@ -370,28 +393,33 @@ trait Element extends js.Object {
     */
   @JSName("position")
   def position_Element(): Element = js.native
+  
   /**
     *   Removes the element and deregisters all listeners.
     */
   def remove(): Unit = js.native
+  
   /**
     *   Removes an attribute on the specified element.
     *   @param attr attribute to remove
     *   @chainable
     */
   def removeAttribute(attr: String): Element = js.native
+  
   /**
     *   Removes specified class from the element.
     *   @param class name of class to remove
     *   @chainable
     */
   def removeClass(theClass: String): Element = js.native
+  
   /**
     *   Shows the current element. Essentially, setting
     *   display:block for the style.
     *   @chainable
     */
   def show(): Element = js.native
+  
   /**
     *   Sets the width and height of the element. AUTO can
     *   be used to only adjust one dimension at a time. If
@@ -424,6 +452,7 @@ trait Element extends js.Object {
   def size(w: SIZE_W): Element = js.native
   def size(w: SIZE_W, h: Double): Element = js.native
   def size(w: SIZE_W, h: SIZE_H): Element = js.native
+  
   /**
     *   Sets the given style (css) property (1st arg) of
     *   the element with the given value (2nd arg). If a
@@ -451,12 +480,14 @@ trait Element extends js.Object {
   def style(property: String, value: String): Element = js.native
   def style(property: String, value: Double): Element = js.native
   def style(property: String, value: Color): Element = js.native
+  
   /**
     *   Toggles element class
     *   @param c class name to toggle
     *   @chainable
     */
   def toggleClass(c: String): Element = js.native
+  
   /**
     *   The .touchEnded() function is called once after
     *   every time a touch is registered. This can be used
@@ -468,6 +499,7 @@ trait Element extends js.Object {
     */
   def touchEnded(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def touchEnded(fxn: Boolean): Element = js.native
+  
   /**
     *   The .touchMoved() function is called once after
     *   every time a touch move is registered. This can be
@@ -479,6 +511,7 @@ trait Element extends js.Object {
     */
   def touchMoved(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def touchMoved(fxn: Boolean): Element = js.native
+  
   /**
     *   The .touchStarted() function is called once after
     *   every time a touch is registered. This can be used
@@ -491,6 +524,7 @@ trait Element extends js.Object {
     */
   def touchStarted(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def touchStarted(fxn: Boolean): Element = js.native
+  
   /**
     *   Either returns the value of the element if no
     *   arguments given, or sets the value of the element.
@@ -505,4 +539,3 @@ trait Element extends js.Object {
   def value(value: String): Element = js.native
   def value(value: Double): Element = js.native
 }
-

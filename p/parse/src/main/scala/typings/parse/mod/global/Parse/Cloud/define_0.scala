@@ -5,11 +5,12 @@ import typings.std.Parameters
 import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Parse.Cloud.define")
 @js.native
 object define_0 extends js.Object {
+  
   def apply[T /* <: js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
@@ -25,4 +26,3 @@ object define_0 extends js.Object {
     ]
   ): Unit = js.native
 }
-

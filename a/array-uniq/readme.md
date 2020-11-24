@@ -10,9 +10,9 @@ Create an array without duplicates
 | ------------------ | :-------------: |
 | Full name          | array-uniq |
 | Keywords           | array, set, uniq, unique, duplicate, remove |
-| # releases         | 3 |
-| # dependents       | 135 |
-| # downloads        | 390007191 |
+| # releases         | 2 |
+| # dependents       | 151 |
+| # downloads        | 468838104 |
 | # stars            | 8 |
 
 ## Links

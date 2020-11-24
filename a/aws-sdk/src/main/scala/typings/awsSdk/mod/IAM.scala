@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.iamMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "IAM")
 @js.native
@@ -14,4 +14,3 @@ class IAM ()
   extends typings.awsSdk.allMod.IAM {
   def this(options: ClientConfiguration) = this()
 }
-

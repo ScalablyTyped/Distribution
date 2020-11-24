@@ -2,10 +2,11 @@ package typings.nightwatch.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebDriverProtocolElementInteraction extends js.Object {
+  
   /**
     * Scrolls into view a submittable element excluding buttons or editable element, and then attempts to clear its value, reset the checked state, or text content.
     */
@@ -14,6 +15,7 @@ trait WebDriverProtocolElementInteraction extends js.Object {
     id: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Scrolls into view the element and clicks the in-view center point. If the element is not pointer-interactable, an <code>element not interactable</code> error is returned.
     */
@@ -22,6 +24,7 @@ trait WebDriverProtocolElementInteraction extends js.Object {
     id: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Scrolls into view the form control element and then sends the provided keys to the element, or returns the current value of the element.
     * In case the element is not keyboard interactable, an <code>element not interactable error</code> is returned.
@@ -41,6 +44,7 @@ trait WebDriverProtocolElementInteraction extends js.Object {
     value: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Send a sequence of key strokes to the active element. The sequence is defined in the same format as the `sendKeys` command.
     * An object map with available keys and their respective UTF-8 characters, as defined on [W3C WebDriver draft spec](https://www.w3.org/TR/webdriver/#character-types),
@@ -54,6 +58,7 @@ trait WebDriverProtocolElementInteraction extends js.Object {
     keysToSend: js.Array[String],
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Submit a FORM element. The submit command may also be applied to any element that is a descendant of a FORM element.
     */
@@ -63,4 +68,3 @@ trait WebDriverProtocolElementInteraction extends js.Object {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.pixiJs.PIXI.FillStyle
 import typings.pixiJs.PIXI.LineStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A structure to hold interim batch objects for Graphics.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BatchPart extends js.Object {
+  
   /**
     * Begin batch part
     *
@@ -22,6 +23,7 @@ trait BatchPart extends js.Object {
     */
   def begin(style: FillStyle, startIndex: Double, attribStart: Double): Unit = js.native
   def begin(style: LineStyle, startIndex: Double, attribStart: Double): Unit = js.native
+  
   /**
     * End batch part
     *
@@ -30,4 +32,3 @@ trait BatchPart extends js.Object {
     */
   def end(endIndex: Double, endAttrib: Double): Unit = js.native
 }
-

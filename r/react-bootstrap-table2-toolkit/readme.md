@@ -10,9 +10,9 @@ The toolkit for react-bootstrap-table2
 | ------------------ | :-------------: |
 | Full name          | react-bootstrap-table2-toolkit |
 | Keywords           | react, bootstrap, table, grid, react-bootstrap-table-addons, react-component |
-| # releases         | 23 |
-| # dependents       | 7 |
-| # downloads        | 432152 |
+| # releases         | 19 |
+| # dependents       | 8 |
+| # downloads        | 784740 |
 | # stars            | 0 |
 
 ## Links

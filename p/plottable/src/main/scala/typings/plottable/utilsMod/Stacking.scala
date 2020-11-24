@@ -9,12 +9,14 @@ import typings.plottable.stackingUtilsMod.IStackingOrder
 import typings.plottable.stackingUtilsMod.StackingResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/utils", "Stacking")
 @js.native
 object Stacking extends js.Object {
+  
   val normalizeKey: (js.Function1[/* key */ js.Any, String]) with MemoizedFunction = js.native
+  
   def stack(datasets: js.Array[Dataset], keyAccessor: IAccessor[_], valueAccessor: IAccessor[Double]): StackingResult = js.native
   def stack(
     datasets: js.Array[Dataset],
@@ -22,13 +24,16 @@ object Stacking extends js.Object {
     valueAccessor: IAccessor[Double],
     stackingOrder: IStackingOrder
   ): StackingResult = js.native
+  
   def stackedExtent(stackingResult: StackingResult, keyAccessor: IAccessor[_], filter: IAccessor[Boolean]): js.Array[Double] = js.native
+  
   def stackedExtents[D](stackingResult: GenericStackingResult[D]): MaximumExtents[D] = js.native
+  
   @js.native
   object IStackingOrder extends js.Object {
+    
     var bottomup: typings.plottable.plottableStrings.bottomup = js.native
+    
     var topdown: typings.plottable.plottableStrings.topdown = js.native
   }
-  
 }
-

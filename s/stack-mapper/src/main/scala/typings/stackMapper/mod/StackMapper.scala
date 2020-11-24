@@ -2,11 +2,12 @@ package typings.stackMapper.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stack-mapper", "StackMapper")
 @js.native
 class StackMapper () extends js.Object {
+  
   /**
     * Maps the trace statements of the given error stack and replaces locations
     * referencing code in the generated file with the locations inside the original files.
@@ -21,4 +22,3 @@ class StackMapper () extends js.Object {
     */
   def map(stack: js.Array[Callsite]): js.Array[Callsite] = js.native
 }
-

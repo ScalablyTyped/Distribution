@@ -2,7 +2,7 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Time ASN.1 structure class
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Time extends ASN1Object {
+  
   def setTimeParams(timeParams: String): Unit = js.native
   def setTimeParams(timeParams: DateParam): Unit = js.native
   def setTimeParams(timeParams: HexParam): Unit = js.native
   def setTimeParams(timeParams: StringParam): Unit = js.native
 }
-

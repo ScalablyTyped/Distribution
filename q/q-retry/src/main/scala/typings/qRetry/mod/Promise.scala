@@ -3,11 +3,12 @@ package typings.qRetry.mod
 import typings.q.mod.IWhenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("q-retry", "Promise")
 @js.native
 object Promise extends js.Object {
+  
   def apply[T](
     resolver: js.Function3[
       /* resolve */ js.Function1[/* val */ js.UndefOr[IWhenable[T]], Unit], 
@@ -17,4 +18,3 @@ object Promise extends js.Object {
     ]
   ): typings.q.mod.Promise[T] = js.native
 }
-

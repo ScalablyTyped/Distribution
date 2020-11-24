@@ -2,9 +2,49 @@ package typings.spectrum
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spectrumStrings {
+  
+  @scala.inline
+  def container: container = "container".asInstanceOf[container]
+  
+  @scala.inline
+  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  
+  @scala.inline
+  def disable: disable = "disable".asInstanceOf[disable]
+  
+  @scala.inline
+  def dragstartDotspectrum: dragstartDotspectrum = "dragstart.spectrum".asInstanceOf[dragstartDotspectrum]
+  
+  @scala.inline
+  def dragstopDotspectrum: dragstopDotspectrum = "dragstop.spectrum".asInstanceOf[dragstopDotspectrum]
+  
+  @scala.inline
+  def enable: enable = "enable".asInstanceOf[enable]
+  
+  @scala.inline
+  def get: get = "get".asInstanceOf[get]
+  
+  @scala.inline
+  def hide: hide = "hide".asInstanceOf[hide]
+  
+  @scala.inline
+  def option: option = "option".asInstanceOf[option]
+  
+  @scala.inline
+  def reflow: reflow = "reflow".asInstanceOf[reflow]
+  
+  @scala.inline
+  def set: set = "set".asInstanceOf[set]
+  
+  @scala.inline
+  def show: show = "show".asInstanceOf[show]
+  
+  @scala.inline
+  def toggle: toggle = "toggle".asInstanceOf[toggle]
+  
   @js.native
   sealed trait container extends js.Object
   
@@ -43,32 +83,4 @@ object spectrumStrings {
   
   @js.native
   sealed trait toggle extends js.Object
-  
-  @scala.inline
-  def container: container = "container".asInstanceOf[container]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def disable: disable = "disable".asInstanceOf[disable]
-  @scala.inline
-  def dragstartDotspectrum: dragstartDotspectrum = "dragstart.spectrum".asInstanceOf[dragstartDotspectrum]
-  @scala.inline
-  def dragstopDotspectrum: dragstopDotspectrum = "dragstop.spectrum".asInstanceOf[dragstopDotspectrum]
-  @scala.inline
-  def enable: enable = "enable".asInstanceOf[enable]
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def option: option = "option".asInstanceOf[option]
-  @scala.inline
-  def reflow: reflow = "reflow".asInstanceOf[reflow]
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
-  @scala.inline
-  def toggle: toggle = "toggle".asInstanceOf[toggle]
 }
-

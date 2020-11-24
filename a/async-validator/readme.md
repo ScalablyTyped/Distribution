@@ -1,7 +1,7 @@
 
 # Scala.js typings for async-validator
 
-Typings are for version 3.3.0
+Typings are for version 3.5.1
 
 ## Library description:
 validate form asynchronous
@@ -10,14 +10,14 @@ validate form asynchronous
 | ------------------ | :-------------: |
 | Full name          | async-validator |
 | Keywords           | validator, validate, async |
-| # releases         | 25 |
-| # dependents       | 1312 |
-| # downloads        | 17459767 |
+| # releases         | 26 |
+| # dependents       | 1798 |
+| # downloads        | 28067556 |
 | # stars            | 10 |
 
 ## Links
-- [Homepage](http://github.com/yiminghe/async-validator)
-- [Bugs](http://github.com/yiminghe/async-validator/issues)
+- [Homepage](https://github.com/yiminghe/async-validator)
+- [Bugs](https://github.com/yiminghe/async-validator/issues)
 - [Repository](https://github.com/yiminghe/async-validator)
 - [Npm](https://www.npmjs.com/package/async-validator)
     

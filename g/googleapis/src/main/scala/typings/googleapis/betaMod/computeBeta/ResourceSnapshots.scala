@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Snapshots")
 @js.native
 class ResourceSnapshots protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.snapshots.delete
     * @desc Deletes the specified Snapshot resource. Keep in mind that deleting
@@ -103,6 +105,7 @@ class ResourceSnapshots protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.snapshots.get
     * @desc Returns the specified Snapshot resource. Gets a list of available
@@ -189,6 +192,7 @@ class ResourceSnapshots protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSnapshot]
   ): Unit = js.native
+  
   /**
     * compute.snapshots.getIamPolicy
     * @desc Gets the access control policy for a resource. May be empty if no
@@ -219,6 +223,7 @@ class ResourceSnapshots protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.snapshots.list
     * @desc Retrieves the list of Snapshot resources contained within the
@@ -318,6 +323,7 @@ class ResourceSnapshots protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSnapshotList]
   ): Unit = js.native
+  
   /**
     * compute.snapshots.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -349,6 +355,7 @@ class ResourceSnapshots protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.snapshots.setLabels
     * @desc Sets the labels on a snapshot. To learn more about labels, read the
@@ -440,6 +447,7 @@ class ResourceSnapshots protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.snapshots.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -534,4 +542,3 @@ class ResourceSnapshots protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

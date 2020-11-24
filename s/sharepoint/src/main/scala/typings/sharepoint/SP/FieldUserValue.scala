@@ -2,12 +2,12 @@ package typings.sharepoint.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FieldUserValue extends FieldLookupValue
-
 object FieldUserValue {
+  
   @scala.inline
   def apply(
     customFromJson: js.Any => Boolean,
@@ -23,4 +23,3 @@ object FieldUserValue {
     __obj.asInstanceOf[FieldUserValue]
   }
 }
-

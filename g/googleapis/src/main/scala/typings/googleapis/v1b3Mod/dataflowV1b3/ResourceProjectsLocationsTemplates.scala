@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataflow/v1b3", "dataflow_v1b3.Resource$Projects$Locations$Templates")
 @js.native
 class ResourceProjectsLocationsTemplates protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dataflow.projects.locations.templates.create
     * @desc Creates a Cloud Dataflow job from a template.
@@ -43,6 +45,7 @@ class ResourceProjectsLocationsTemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * dataflow.projects.locations.templates.get
     * @desc Get the template associated with a template.
@@ -77,6 +80,7 @@ class ResourceProjectsLocationsTemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetTemplateResponse]
   ): Unit = js.native
+  
   /**
     * dataflow.projects.locations.templates.launch
     * @desc Launch a template.
@@ -115,4 +119,3 @@ class ResourceProjectsLocationsTemplates protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLaunchTemplateResponse]
   ): Unit = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.phaser.MatterJS.ICollisionData
 import typings.phaser.MatterJS.IPair
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `Matter.Pair` module contains methods for creating and manipulating collision pairs.
@@ -16,11 +16,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Pair ()
   extends typings.phaser.MatterJS.Pair
-
 /* static members */
 @JSGlobal("MatterJS.Pair")
 @js.native
 object Pair extends js.Object {
+  
   /**
     * Creates a pair.
     * @method create
@@ -29,6 +29,7 @@ object Pair extends js.Object {
     * @return {IPair} A new pair
     */
   def create(collision: ICollisionData, timestamp: Double): IPair = js.native
+  
   /**
     * Get the id for the given pair.
     * @method id
@@ -37,6 +38,7 @@ object Pair extends js.Object {
     * @return {string} Unique pairId
     */
   def id(bodyA: BodyType, bodyB: BodyType): String = js.native
+  
   /**
     * Set a pair as active or inactive.
     * @method setActive
@@ -45,6 +47,7 @@ object Pair extends js.Object {
     * @param {number} timestamp
     */
   def setActive(pair: IPair, isActive: Boolean, timestamp: Double): Unit = js.native
+  
   /**
     * Updates a pair given a collision.
     * @method update
@@ -54,4 +57,3 @@ object Pair extends js.Object {
     */
   def update(pair: IPair, collision: ICollisionData, timestamp: Double): Unit = js.native
 }
-

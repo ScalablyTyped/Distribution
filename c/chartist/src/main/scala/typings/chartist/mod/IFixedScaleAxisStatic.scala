@@ -2,7 +2,7 @@ package typings.chartist.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // these have no other purpose than to help define the types that can be placed on
 // a line chart axisX
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 // the parent class
 @js.native
 trait IFixedScaleAxisStatic extends js.Object
-

@@ -3,7 +3,7 @@ package typings.typescriptServices.global.TypeScript
 import typings.typescriptServices.TypeScript.TypeArgumentMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.PullInstantiatedSignatureSymbol")
 @js.native
@@ -14,4 +14,3 @@ class PullInstantiatedSignatureSymbol protected ()
     _typeParameterArgumentMap: TypeArgumentMap
   ) = this()
 }
-

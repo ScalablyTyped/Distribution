@@ -4,7 +4,7 @@ import typings.googlemaps.google.maps.MapTypeStyle
 import typings.googlemaps.google.maps.StyledMapTypeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("google.maps.StyledMapType")
 @js.native
@@ -13,4 +13,3 @@ class StyledMapType protected ()
   def this(styles: js.Array[MapTypeStyle]) = this()
   def this(styles: js.Array[MapTypeStyle], options: StyledMapTypeOptions) = this()
 }
-

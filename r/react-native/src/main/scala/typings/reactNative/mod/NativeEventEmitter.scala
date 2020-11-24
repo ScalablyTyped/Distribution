@@ -2,9 +2,14 @@ package typings.reactNative.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native", "NativeEventEmitter")
+/**
+  * Abstract base class for implementing event-emitting modules. This implements
+  * a subset of the standard EventEmitter node module API.
+  */
 @js.native
-class NativeEventEmitter () extends EventEmitter
-
+trait NativeEventEmitter extends EventEmitter {
+  
+  def addListener(eventType: String, listener: js.Function1[/* event */ js.Any, Unit], context: js.Object): EmitterSubscription = js.native
+}

@@ -10,9 +10,9 @@ A clientside Javascript library for standardizing requests to OAuth2 web service
 | ------------------ | :-------------: |
 | Full name          | hellojs |
 | Keywords           | oauth, oauth1.0, oauth2, api, facebooks, google, windows, linkedin, twitter |
-| # releases         | 3 |
-| # dependents       | 11 |
-| # downloads        | 250665 |
+| # releases         | 6 |
+| # dependents       | 13 |
+| # downloads        | 334986 |
 | # stars            | 3 |
 
 ## Links

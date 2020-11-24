@@ -8,11 +8,12 @@ import typings.tstl.tstlBooleans.`true`
 import typings.tstl.uniqueTreeMapMod.UniqueTreeMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/internal/tree/UniqueMapTree", JSImport.Namespace)
 @js.native
 object uniqueMapTreeMod extends js.Object {
+  
   @js.native
   class UniqueMapTree[Key, T, Source /* <: UniqueTreeMap[
     Key, 
@@ -23,6 +24,4 @@ object uniqueMapTreeMod extends js.Object {
   ] */] protected () extends MapTree[Key, T, `true`, Source] {
     def this(source: Source, comp: Comparator[Key, Key]) = this()
   }
-  
 }
-

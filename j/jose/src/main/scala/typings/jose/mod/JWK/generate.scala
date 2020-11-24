@@ -5,11 +5,12 @@ import typings.jose.mod.Curves
 import typings.jose.mod.keyType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jose", "JWK.generate")
 @js.native
 object generate extends js.Object {
+  
   def apply(kty: keyType): js.Promise[Key] = js.native
   def apply(
     kty: keyType,
@@ -33,4 +34,3 @@ object generate extends js.Object {
   def apply(kty: keyType, crvOrSize: Curves, parameters: BasicParameters): js.Promise[Key] = js.native
   def apply(kty: keyType, crvOrSize: Curves, parameters: BasicParameters, `private`: Boolean): js.Promise[Key] = js.native
 }
-

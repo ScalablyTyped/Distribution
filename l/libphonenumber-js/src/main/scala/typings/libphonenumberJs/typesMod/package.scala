@@ -2,21 +2,29 @@ package typings.libphonenumberJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object typesMod {
+  
   type CarrierCode = java.lang.String
+  
   type CountryCallingCode = java.lang.String
+  
   type CountryCallingCodes = org.scalablytyped.runtime.StringDictionary[js.Array[typings.libphonenumberJs.typesMod.CountryCode]]
+  
   type E164Number = java.lang.String
+  
   type Extension = java.lang.String
+  
   type FormatExtension = js.Function3[
     /* formattedNumber */ java.lang.String, 
     /* extension */ typings.libphonenumberJs.typesMod.Extension, 
     /* metadata */ typings.libphonenumberJs.typesMod.Metadata, 
     java.lang.String
   ]
+  
   type NationalNumber = java.lang.String
+  
   /* Rewritten from type alias, can be one of: 
     - js.UndefOr[scala.Nothing]
     - typings.libphonenumberJs.libphonenumberJsStrings.PREMIUM_RATE

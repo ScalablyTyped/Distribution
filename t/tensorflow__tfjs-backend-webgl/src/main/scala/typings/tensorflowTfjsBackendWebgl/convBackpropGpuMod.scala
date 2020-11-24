@@ -5,11 +5,12 @@ import typings.tensorflowTfjsCore.convUtilMod.Conv2DInfo
 import typings.tensorflowTfjsCore.convUtilMod.Conv3DInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-backend-webgl/dist/conv_backprop_gpu", JSImport.Namespace)
 @js.native
 object convBackpropGpuMod extends js.Object {
+  
   @js.native
   class Conv2DDerFilterProgram protected () extends GPGPUProgram {
     def this(convInfo: Conv2DInfo) = this()
@@ -29,6 +30,4 @@ object convBackpropGpuMod extends js.Object {
   class Conv3DDerInputProgram protected () extends GPGPUProgram {
     def this(convInfo: Conv3DInfo) = this()
   }
-  
 }
-

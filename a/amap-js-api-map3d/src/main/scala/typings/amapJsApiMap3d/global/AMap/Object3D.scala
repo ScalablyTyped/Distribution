@@ -3,16 +3,16 @@ package typings.amapJsApiMap3d.global.AMap
 import typings.amapJsApiMap3d.AMap.Object3D.MeshLine.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.Object3D")
 @js.native
 class Object3D ()
   extends typings.amapJsApiMap3d.AMap.Object3D
-
 @JSGlobal("AMap.Object3D")
 @js.native
 object Object3D extends js.Object {
+  
   @js.native
   class Line ()
     extends typings.amapJsApiMap3d.AMap.Object3D.Line
@@ -52,10 +52,7 @@ object Object3D extends js.Object {
     def this(options: typings.amapJsApiMap3d.AMap.Object3D.ThinLine.Options) = this()
   }
   
-  // tslint:disable-next-line
   @js.native
   class Wall ()
     extends typings.amapJsApiMap3d.AMap.Object3D.MeshAcceptLights
-  
 }
-

@@ -4,21 +4,22 @@ import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
 import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
   - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`2`
 */
 trait InsertTextFormat extends js.Object
-
 @JSImport("vscode-languageserver-types", "InsertTextFormat")
 @js.native
 object InsertTextFormat extends js.Object {
+  
   /**
     * The primary text to be inserted is treated as a plain string.
     */
   val PlainText: `1` = js.native
+  
   /**
     * The primary text to be inserted is treated as a snippet.
     *
@@ -31,4 +32,3 @@ object InsertTextFormat extends js.Object {
     */
   val Snippet: `2` = js.native
 }
-

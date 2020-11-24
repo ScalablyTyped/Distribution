@@ -11,7 +11,7 @@ Chai Things adds support to [Chai](http://chaijs.com/) for assertions on array e
 | Keywords           | chai, chai-plugin, browser, array, things |
 | # releases         | 0 |
 | # dependents       | 32 |
-| # downloads        | 1986928 |
+| # downloads        | 2245826 |
 | # stars            | 6 |
 
 ## Links

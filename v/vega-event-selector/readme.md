@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-event-selector
 
-Typings are for version 2.0.3
+Typings are for version 2.0.6
 
 ## Library description:
 A CSS-inspired language to select, sequence, and compose DOM events.
@@ -10,9 +10,9 @@ A CSS-inspired language to select, sequence, and compose DOM events.
 | ------------------ | :-------------: |
 | Full name          | vega-event-selector |
 | Keywords           | vega, event, selector |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 5 |
-| # downloads        | 1793284 |
+| # downloads        | 2736842 |
 | # stars            | 0 |
 
 ## Links

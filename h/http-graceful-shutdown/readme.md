@@ -10,9 +10,9 @@ gracefully shuts downs http server
 | ------------------ | :-------------: |
 | Full name          | http-graceful-shutdown |
 | Keywords           | http, https, koa, express, shutdown, graceful, force, graceful-shutdown |
-| # releases         | 12 |
-| # dependents       | 14 |
-| # downloads        | 664301 |
+| # releases         | 10 |
+| # dependents       | 15 |
+| # downloads        | 1191827 |
 | # stars            | 2 |
 
 ## Links

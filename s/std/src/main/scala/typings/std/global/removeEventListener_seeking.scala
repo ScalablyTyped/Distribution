@@ -6,11 +6,12 @@ import typings.std.Window
 import typings.std.stdStrings.seeking
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("removeEventListener")
 @js.native
 object removeEventListener_seeking extends js.Object {
+  
   def apply(`type`: seeking, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]): Unit = js.native
   def apply(
     `type`: seeking,
@@ -23,4 +24,3 @@ object removeEventListener_seeking extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
 }
-

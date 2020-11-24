@@ -2,7 +2,7 @@ package typings.sawtoothSdk.mod.exceptions
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "exceptions.AuthorizationException")
 @js.native
@@ -16,4 +16,3 @@ class AuthorizationException ()
   extends typings.sawtoothSdk.exceptionsMod.AuthorizationException {
   def this(message: String) = this()
 }
-

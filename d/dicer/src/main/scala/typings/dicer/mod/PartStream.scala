@@ -11,7 +11,7 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PartStream is a _ReadableStream_
@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PartStream extends Readable {
+  
   @JSName("addListener")
   def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
@@ -33,6 +34,7 @@ trait PartStream extends Readable {
   def addListener_header(event: header, listener: js.Function1[/* header */ js.Object, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+  
   @JSName("on")
   def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -45,6 +47,7 @@ trait PartStream extends Readable {
   def on_header(event: header, listener: js.Function1[/* header */ js.Object, Unit]): this.type = js.native
   @JSName("on")
   def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+  
   @JSName("once")
   def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
@@ -57,6 +60,7 @@ trait PartStream extends Readable {
   def once_header(event: header, listener: js.Function1[/* header */ js.Object, Unit]): this.type = js.native
   @JSName("once")
   def once_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+  
   @JSName("prependListener")
   def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
@@ -69,6 +73,7 @@ trait PartStream extends Readable {
   def prependListener_header(event: header, listener: js.Function1[/* header */ js.Object, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -81,6 +86,7 @@ trait PartStream extends Readable {
   def prependOnceListener_header(event: header, listener: js.Function1[/* header */ js.Object, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+  
   @JSName("removeListener")
   def removeListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("removeListener")
@@ -94,4 +100,3 @@ trait PartStream extends Readable {
   @JSName("removeListener")
   def removeListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
 }
-

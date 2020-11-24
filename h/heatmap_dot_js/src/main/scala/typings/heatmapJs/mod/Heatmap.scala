@@ -3,11 +3,12 @@ package typings.heatmapJs.mod
 import typings.heatmapJs.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("heatmap.js", "Heatmap")
 @js.native
 class Heatmap[V /* <: String */, X /* <: String */, Y /* <: String */] () extends js.Object {
+  
   def addData(dataPoint: js.Array[DataPoint[V, X, Y]]): this.type = js.native
   /**
     * Use this functionality only for adding datapoints on the fly, not for data
@@ -30,6 +31,7 @@ class Heatmap[V /* <: String */, X /* <: String */, Y /* <: String */] () extend
     * heatmapInstance.addData(dataPoints);
     */
   def addData(dataPoint: DataPoint[V, X, Y]): this.type = js.native
+  
   /**
     * Reconfigures a heatmap instance after it has been initialized. Triggers a
     * complete rerendering.
@@ -49,6 +51,7 @@ class Heatmap[V /* <: String */, X /* <: String */, Y /* <: String */] () extend
     * heatmapInstance.configure(nuConfig);
     */
   def configure[Vn /* <: String */, Xn /* <: String */, Yn /* <: String */](configObject: HeatmapConfiguration[Vn, Xn, Yn]): Heatmap[Vn, Xn, Yn] = js.native
+  
   /**
     * Returns a persistable and reimportable (with setData) JSON object.
     *
@@ -60,6 +63,7 @@ class Heatmap[V /* <: String */, X /* <: String */, Y /* <: String */] () extend
     * heatmap2.setData(currentData); // now both heatmap instances have the same content
     */
   def getData(): HeatmapData[DataCircle] = js.native
+  
   /**
     * Returns dataURL string.
     *
@@ -71,6 +75,7 @@ class Heatmap[V /* <: String */, X /* <: String */, Y /* <: String */] () extend
     * // ready for saving locally or on the server
     */
   def getDataURL(): String = js.native
+  
   /**
     * Returns value at datapoint position.
     *
@@ -84,10 +89,12 @@ class Heatmap[V /* <: String */, X /* <: String */, Y /* <: String */] () extend
     * heatmapInstance.getValueAt({ x: 10, y: 10 }); // returns 100
     */
   def getValueAt(point: X): Double = js.native
+  
   /**
     * Repaints the whole heatmap canvas.
     */
   def repaint(): this.type = js.native
+  
   /**
     * Initialize a heatmap instance with the given dataset. Removes all
     * previously existing points from the heatmap instance and re-initializes
@@ -105,6 +112,7 @@ class Heatmap[V /* <: String */, X /* <: String */, Y /* <: String */] () extend
     * heatmapInstance.setData(data);
     */
   def setData(data: HeatmapData[DataPoint[V, X, Y]]): this.type = js.native
+  
   /**
     * Changes the upper bound of your dataset and triggers a complete
     * rerendering.
@@ -116,6 +124,7 @@ class Heatmap[V /* <: String */, X /* <: String */, Y /* <: String */] () extend
     * heatmapInstance.setDataMax(100);
     */
   def setDataMax(number: Double): this.type = js.native
+  
   /**
     * Changes the lower bound of your dataset and triggers a complete
     * rerendering.
@@ -128,4 +137,3 @@ class Heatmap[V /* <: String */, X /* <: String */, Y /* <: String */] () extend
     */
   def setDataMin(number: Double): this.type = js.native
 }
-

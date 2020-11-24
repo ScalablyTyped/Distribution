@@ -2,11 +2,12 @@ package typings.diff.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("diff", "createPatch")
 @js.native
 object createPatch extends js.Object {
+  
   def apply(fileName: String, oldStr: String, newStr: String): String = js.native
   def apply(
     fileName: String,
@@ -50,4 +51,3 @@ object createPatch extends js.Object {
     options: PatchOptions
   ): String = js.native
 }
-

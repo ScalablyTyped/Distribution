@@ -3,7 +3,7 @@ package typings.officeUiFabricReact.indexBundleMod
 import typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "PersonaCoinBase")
 @js.native
@@ -11,11 +11,10 @@ class PersonaCoinBase protected ()
   extends typings.officeUiFabricReact.mod.PersonaCoinBase {
   def this(props: IPersonaCoinProps) = this()
 }
-
 /* static members */
 @JSImport("office-ui-fabric-react/lib/index.bundle", "PersonaCoinBase")
 @js.native
 object PersonaCoinBase extends js.Object {
+  
   var defaultProps: IPersonaCoinProps = js.native
 }
-

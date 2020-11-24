@@ -4,7 +4,7 @@ import typings.tstl.backInsertIteratorMod.BackInsertIterator.ValueType
 import typings.tstl.ipushbackMod.IPushBack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl", "BackInsertIterator")
 @js.native
@@ -17,4 +17,3 @@ class BackInsertIterator[Source /* <: IPushBack[ValueType[Source]] */] protected
     */
   def this(source: Source) = this()
 }
-

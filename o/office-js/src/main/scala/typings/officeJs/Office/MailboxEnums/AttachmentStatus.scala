@@ -2,11 +2,10 @@ package typings.officeJs.Office.MailboxEnums
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AttachmentStatus extends js.Object
-
 /**
   * Specifies whether an attachment was added to or removed from an item.
   * 
@@ -19,6 +18,7 @@ sealed trait AttachmentStatus extends js.Object
 @JSGlobal("Office.MailboxEnums.AttachmentStatus")
 @js.native
 object AttachmentStatus extends js.Object {
+  
   /**
     * An attachment was added to the item.
     */
@@ -30,6 +30,4 @@ object AttachmentStatus extends js.Object {
     */
   @js.native
   sealed trait Removed extends AttachmentStatus
-  
 }
-

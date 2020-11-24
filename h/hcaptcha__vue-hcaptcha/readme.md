@@ -10,9 +10,9 @@ hCaptcha Component Library for Vue.js, compatible with Vue 2+.
 | ------------------ | :-------------: |
 | Full name          | @hcaptcha/vue-hcaptcha |
 | Keywords           | hcaptcha, captcha, component, vue, vue-component, earn |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 564 |
+| # downloads        | 4687 |
 | # stars            | 0 |
 
 ## Links

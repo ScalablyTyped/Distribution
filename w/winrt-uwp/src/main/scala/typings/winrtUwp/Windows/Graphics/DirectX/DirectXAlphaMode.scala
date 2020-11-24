@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Graphics.DirectX
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DirectXAlphaMode extends js.Object
-
 /** Identifies the alpha value, transparency behavior, of a surface. This is a managed version of the DXGI_APLAHA_MODE enumeration. */
 @JSGlobal("Windows.Graphics.DirectX.DirectXAlphaMode")
 @js.native
 object DirectXAlphaMode extends js.Object {
+  
   /** Indicates to ignore the transparency behavior. */
   @js.native
   sealed trait ignore extends DirectXAlphaMode
@@ -26,6 +26,4 @@ object DirectXAlphaMode extends js.Object {
   /** Indicates that the transparency behavior is not specified. */
   @js.native
   sealed trait unspecified extends DirectXAlphaMode
-  
 }
-

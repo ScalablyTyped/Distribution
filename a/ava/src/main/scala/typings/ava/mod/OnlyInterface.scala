@@ -2,10 +2,11 @@ package typings.ava.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OnlyInterface[Context] extends js.Object {
+  
   /** Declare a test. Only this test and others declared with `.only()` are run. */
   def apply(title: String, implementation: Implementation[Context]): Unit = js.native
   /**
@@ -26,4 +27,3 @@ trait OnlyInterface[Context] extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
 }
-

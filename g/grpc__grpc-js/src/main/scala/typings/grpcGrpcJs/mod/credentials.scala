@@ -2,16 +2,12 @@ package typings.grpcGrpcJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@grpc/grpc-js", "credentials")
 @js.native
 object credentials extends js.Object {
-  var createEmpty: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createEmpty */ js.Any = js.native
-  var createFromGoogleCredential: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromGoogleCredential */ js.Any = js.native
-  var createFromMetadataGenerator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromMetadataGenerator */ js.Any = js.native
-  var createInsecure: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChannelCredentials.createInsecure */ js.Any = js.native
-  var createSsl: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChannelCredentials.createSsl */ js.Any = js.native
+  
   /**
     * Combine any number of CallCredentials into a single CallCredentials
     * object.
@@ -23,6 +19,7 @@ object credentials extends js.Object {
     first: typings.grpcGrpcJs.callCredentialsMod.CallCredentials,
     additional: typings.grpcGrpcJs.callCredentialsMod.CallCredentials*
   ): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = js.native
+  
   /**
     * Combine a ChannelCredentials with any number of CallCredentials into a
     * single ChannelCredentials object.
@@ -34,5 +31,14 @@ object credentials extends js.Object {
     channelCredentials: typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials,
     callCredentials: typings.grpcGrpcJs.callCredentialsMod.CallCredentials*
   ): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
+  
+  var createEmpty: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createEmpty */ js.Any = js.native
+  
+  var createFromGoogleCredential: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromGoogleCredential */ js.Any = js.native
+  
+  var createFromMetadataGenerator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromMetadataGenerator */ js.Any = js.native
+  
+  var createInsecure: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChannelCredentials.createInsecure */ js.Any = js.native
+  
+  var createSsl: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChannelCredentials.createSsl */ js.Any = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$Containers$Workspaces$Built_in_variables")
 @js.native
 class ResourceAccountsContainersWorkspacesBuiltInVariables protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.built_in_variables.create
     * @desc Creates one or more GTM Built-In Variables.
@@ -46,6 +48,7 @@ class ResourceAccountsContainersWorkspacesBuiltInVariables protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreateBuiltInVariableResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.built_in_variables.delete
     * @desc Deletes one or more GTM Built-In Variables.
@@ -79,6 +82,7 @@ class ResourceAccountsContainersWorkspacesBuiltInVariables protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.built_in_variables.list
     * @desc Lists all the enabled Built-In Variables of a GTM Container.
@@ -111,6 +115,7 @@ class ResourceAccountsContainersWorkspacesBuiltInVariables protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListEnabledBuiltInVariablesResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.workspaces.built_in_variables.revert
     * @desc Reverts changes to a GTM Built-In Variables in a GTM Workspace.
@@ -145,4 +150,3 @@ class ResourceAccountsContainersWorkspacesBuiltInVariables protected () extends 
     callback: BodyResponseCallback[SchemaRevertBuiltInVariableResponse]
   ): Unit = js.native
 }
-

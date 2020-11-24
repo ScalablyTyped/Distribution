@@ -6,14 +6,18 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Storage.Streams.IOutputStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IWebSocket extends IClosable {
-  var onclosed: js.Any = js.native
-  var outputStream: IOutputStream = js.native
+  
   def close(code: Double, reason: String): Unit = js.native
+  
   def connectAsync(uri: Uri): IAsyncAction = js.native
+  
+  var onclosed: js.Any = js.native
+  
+  var outputStream: IOutputStream = js.native
+  
   def setRequestHeader(headerName: String, headerValue: String): Unit = js.native
 }
-

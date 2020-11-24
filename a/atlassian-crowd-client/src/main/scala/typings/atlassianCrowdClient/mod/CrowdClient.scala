@@ -8,16 +8,21 @@ import typings.atlassianCrowdClient.anon.Create
 import typings.atlassianCrowdClient.anon.Group
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CrowdClient
   extends typings.atlassianCrowdClient.apiMod.^ {
+  
   var authentication: Authenticate = js.native
+  
   var config: Cookie = js.native
+  
   var group: Children = js.native
+  
   var search: Group = js.native
+  
   var session: Create = js.native
+  
   var user: Attributes = js.native
 }
-

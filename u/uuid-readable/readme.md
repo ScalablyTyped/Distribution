@@ -10,13 +10,14 @@ Easy to Remember, Readable UUIDs, that are Shakespearean gramatically correct se
 | ------------------ | :-------------: |
 | Full name          | uuid-readable |
 | Keywords           | id, uuid, shortid, readable-id, shakespeare, unique, universal, identifier, readable, sentence, uuid-v4, uuid-v5 |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 0 |
+| # downloads        | 202 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/Debdut/readable-uuid#readme)
+- [Homepage](https://github.com/Debdut/uuid-readable#readme)
+- [Bugs](https://github.com/Debdut/uuid-readable/issues)
 - [Repository](https://github.com/Debdut/readable-uuid)
 - [Npm](https://www.npmjs.com/package/uuid-readable)
     

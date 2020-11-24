@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-ace" : "9.1.1"
+      "react-ace" : "9.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-ace" : "9.1.1"
+      "react-ace" : "9.2.0"
     }
   ],
   "compile-devDependencies" : [

@@ -5,11 +5,12 @@ import typings.d3Time.mod.TimeInterval_
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3", "timeInterval")
 @js.native
 object timeInterval extends js.Object {
+  
   def apply(
     floor: js.Function1[/* date */ Date, Unit],
     offset: js.Function2[/* date */ Date, /* step */ Double, Unit]
@@ -26,4 +27,3 @@ object timeInterval extends js.Object {
     field: js.Function1[/* date */ Date, Double]
   ): CountableTimeInterval = js.native
 }
-

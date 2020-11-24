@@ -3,7 +3,7 @@ package typings.passportFacebookToken.mod
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrategyStatic extends Instantiable2[
@@ -11,4 +11,3 @@ trait StrategyStatic extends Instantiable2[
       (/* verify */ VerifyFunction) | (/* verify */ VerifyFunctionWithRequest), 
       StrategyInstance
     ]
-

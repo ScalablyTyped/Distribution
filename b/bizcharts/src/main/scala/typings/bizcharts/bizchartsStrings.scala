@@ -14,9 +14,238 @@ import typings.bizcharts.mod.PositionType
 import typings.bizcharts.mod.triggerOnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bizchartsStrings {
+  
+  @scala.inline
+  def area: area = "area".asInstanceOf[area]
+  
+  @scala.inline
+  def areaStack: areaStack = "areaStack".asInstanceOf[areaStack]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
+  
+  @scala.inline
+  def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
+  
+  @scala.inline
+  def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
+  
+  @scala.inline
+  def bowtie: bowtie = "bowtie".asInstanceOf[bowtie]
+  
+  @scala.inline
+  def circle: circle = "circle".asInstanceOf[circle]
+  
+  @scala.inline
+  def click: click = "click".asInstanceOf[click]
+  
+  @scala.inline
+  def cross: cross = "cross".asInstanceOf[cross]
+  
+  @scala.inline
+  def diamond: diamond = "diamond".asInstanceOf[diamond]
+  
+  @scala.inline
+  def dodge: dodge = "dodge".asInstanceOf[dodge]
+  
+  @scala.inline
+  def downward: downward = "downward".asInstanceOf[downward]
+  
+  @scala.inline
+  def edge: edge = "edge".asInstanceOf[edge]
+  
+  @scala.inline
+  def heatmap: heatmap = "heatmap".asInstanceOf[heatmap]
+  
+  @scala.inline
+  def helix: helix = "helix".asInstanceOf[helix]
+  
+  @scala.inline
+  def hexagon: hexagon = "hexagon".asInstanceOf[hexagon]
+  
+  @scala.inline
+  def hollowBowtie: hollowBowtie = "hollowBowtie".asInstanceOf[hollowBowtie]
+  
+  @scala.inline
+  def hollowCircle: hollowCircle = "hollowCircle".asInstanceOf[hollowCircle]
+  
+  @scala.inline
+  def hollowDiamond: hollowDiamond = "hollowDiamond".asInstanceOf[hollowDiamond]
+  
+  @scala.inline
+  def hollowHexagon: hollowHexagon = "hollowHexagon".asInstanceOf[hollowHexagon]
+  
+  @scala.inline
+  def hollowSquare: hollowSquare = "hollowSquare".asInstanceOf[hollowSquare]
+  
+  @scala.inline
+  def hollowTriangle: hollowTriangle = "hollowTriangle".asInstanceOf[hollowTriangle]
+  
+  @scala.inline
+  def `hollowTriangle-down`: `hollowTriangle-down` = "hollowTriangle-down".asInstanceOf[`hollowTriangle-down`]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def hyphen: hyphen = "hyphen".asInstanceOf[hyphen]
+  
+  @scala.inline
+  def interval: interval = "interval".asInstanceOf[interval]
+  
+  @scala.inline
+  def intervalDodge: intervalDodge = "intervalDodge".asInstanceOf[intervalDodge]
+  
+  @scala.inline
+  def intervalStack: intervalStack = "intervalStack".asInstanceOf[intervalStack]
+  
+  @scala.inline
+  def intervalSymmetric: intervalSymmetric = "intervalSymmetric".asInstanceOf[intervalSymmetric]
+  
+  @scala.inline
+  def jitter: jitter = "jitter".asInstanceOf[jitter]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def `left-bottom`: `left-bottom` = "left-bottom".asInstanceOf[`left-bottom`]
+  
+  @scala.inline
+  def `left-center`: `left-center` = "left-center".asInstanceOf[`left-center`]
+  
+  @scala.inline
+  def `left-top`: `left-top` = "left-top".asInstanceOf[`left-top`]
+  
+  @scala.inline
+  def line: line = "line".asInstanceOf[line]
+  
+  @scala.inline
+  def lineStack: lineStack = "lineStack".asInstanceOf[lineStack]
+  
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
+  
+  @scala.inline
+  def matrix: matrix = "matrix".asInstanceOf[matrix]
+  
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  
+  @scala.inline
+  def mirror: mirror = "mirror".asInstanceOf[mirror]
+  
+  @scala.inline
+  def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
+  
+  @scala.inline
+  def multiple: multiple = "multiple".asInstanceOf[multiple]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def path: path = "path".asInstanceOf[path]
+  
+  @scala.inline
+  def plus: plus = "plus".asInstanceOf[plus]
+  
+  @scala.inline
+  def point: point = "point".asInstanceOf[point]
+  
+  @scala.inline
+  def pointDodge: pointDodge = "pointDodge".asInstanceOf[pointDodge]
+  
+  @scala.inline
+  def pointJitter: pointJitter = "pointJitter".asInstanceOf[pointJitter]
+  
+  @scala.inline
+  def pointStack: pointStack = "pointStack".asInstanceOf[pointStack]
+  
+  @scala.inline
+  def polar: polar = "polar".asInstanceOf[polar]
+  
+  @scala.inline
+  def polygon: polygon = "polygon".asInstanceOf[polygon]
+  
+  @scala.inline
+  def rect: rect = "rect".asInstanceOf[rect]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def `right-bottom`: `right-bottom` = "right-bottom".asInstanceOf[`right-bottom`]
+  
+  @scala.inline
+  def `right-center`: `right-center` = "right-center".asInstanceOf[`right-center`]
+  
+  @scala.inline
+  def `right-top`: `right-top` = "right-top".asInstanceOf[`right-top`]
+  
+  @scala.inline
+  def schema: schema = "schema".asInstanceOf[schema]
+  
+  @scala.inline
+  def schemaDodge: schemaDodge = "schemaDodge".asInstanceOf[schemaDodge]
+  
+  @scala.inline
+  def single: single = "single".asInstanceOf[single]
+  
+  @scala.inline
+  def square: square = "square".asInstanceOf[square]
+  
+  @scala.inline
+  def stack: stack = "stack".asInstanceOf[stack]
+  
+  @scala.inline
+  def symmetric: symmetric = "symmetric".asInstanceOf[symmetric]
+  
+  @scala.inline
+  def theta: theta = "theta".asInstanceOf[theta]
+  
+  @scala.inline
+  def tick: tick = "tick".asInstanceOf[tick]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
+  
+  @scala.inline
+  def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  
+  @scala.inline
+  def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  
+  @scala.inline
+  def tree: tree = "tree".asInstanceOf[tree]
+  
+  @scala.inline
+  def triangle: triangle = "triangle".asInstanceOf[triangle]
+  
+  @scala.inline
+  def `triangle-down`: `triangle-down` = "triangle-down".asInstanceOf[`triangle-down`]
+  
+  @scala.inline
+  def upward: upward = "upward".asInstanceOf[upward]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @scala.inline
+  def x: x = "x".asInstanceOf[x]
+  
+  @scala.inline
+  def y: y = "y".asInstanceOf[y]
+  
   @js.native
   sealed trait area extends GeomType
   
@@ -267,158 +496,4 @@ object bizchartsStrings {
   
   @js.native
   sealed trait y extends CrosshairsType
-  
-  @scala.inline
-  def area: area = "area".asInstanceOf[area]
-  @scala.inline
-  def areaStack: areaStack = "areaStack".asInstanceOf[areaStack]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
-  @scala.inline
-  def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
-  @scala.inline
-  def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
-  @scala.inline
-  def bowtie: bowtie = "bowtie".asInstanceOf[bowtie]
-  @scala.inline
-  def circle: circle = "circle".asInstanceOf[circle]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def cross: cross = "cross".asInstanceOf[cross]
-  @scala.inline
-  def diamond: diamond = "diamond".asInstanceOf[diamond]
-  @scala.inline
-  def dodge: dodge = "dodge".asInstanceOf[dodge]
-  @scala.inline
-  def downward: downward = "downward".asInstanceOf[downward]
-  @scala.inline
-  def edge: edge = "edge".asInstanceOf[edge]
-  @scala.inline
-  def heatmap: heatmap = "heatmap".asInstanceOf[heatmap]
-  @scala.inline
-  def helix: helix = "helix".asInstanceOf[helix]
-  @scala.inline
-  def hexagon: hexagon = "hexagon".asInstanceOf[hexagon]
-  @scala.inline
-  def hollowBowtie: hollowBowtie = "hollowBowtie".asInstanceOf[hollowBowtie]
-  @scala.inline
-  def hollowCircle: hollowCircle = "hollowCircle".asInstanceOf[hollowCircle]
-  @scala.inline
-  def hollowDiamond: hollowDiamond = "hollowDiamond".asInstanceOf[hollowDiamond]
-  @scala.inline
-  def hollowHexagon: hollowHexagon = "hollowHexagon".asInstanceOf[hollowHexagon]
-  @scala.inline
-  def hollowSquare: hollowSquare = "hollowSquare".asInstanceOf[hollowSquare]
-  @scala.inline
-  def hollowTriangle: hollowTriangle = "hollowTriangle".asInstanceOf[hollowTriangle]
-  @scala.inline
-  def `hollowTriangle-down`: `hollowTriangle-down` = "hollowTriangle-down".asInstanceOf[`hollowTriangle-down`]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def hyphen: hyphen = "hyphen".asInstanceOf[hyphen]
-  @scala.inline
-  def interval: interval = "interval".asInstanceOf[interval]
-  @scala.inline
-  def intervalDodge: intervalDodge = "intervalDodge".asInstanceOf[intervalDodge]
-  @scala.inline
-  def intervalStack: intervalStack = "intervalStack".asInstanceOf[intervalStack]
-  @scala.inline
-  def intervalSymmetric: intervalSymmetric = "intervalSymmetric".asInstanceOf[intervalSymmetric]
-  @scala.inline
-  def jitter: jitter = "jitter".asInstanceOf[jitter]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def `left-bottom`: `left-bottom` = "left-bottom".asInstanceOf[`left-bottom`]
-  @scala.inline
-  def `left-center`: `left-center` = "left-center".asInstanceOf[`left-center`]
-  @scala.inline
-  def `left-top`: `left-top` = "left-top".asInstanceOf[`left-top`]
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
-  @scala.inline
-  def lineStack: lineStack = "lineStack".asInstanceOf[lineStack]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def matrix: matrix = "matrix".asInstanceOf[matrix]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def mirror: mirror = "mirror".asInstanceOf[mirror]
-  @scala.inline
-  def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
-  @scala.inline
-  def multiple: multiple = "multiple".asInstanceOf[multiple]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def path: path = "path".asInstanceOf[path]
-  @scala.inline
-  def plus: plus = "plus".asInstanceOf[plus]
-  @scala.inline
-  def point: point = "point".asInstanceOf[point]
-  @scala.inline
-  def pointDodge: pointDodge = "pointDodge".asInstanceOf[pointDodge]
-  @scala.inline
-  def pointJitter: pointJitter = "pointJitter".asInstanceOf[pointJitter]
-  @scala.inline
-  def pointStack: pointStack = "pointStack".asInstanceOf[pointStack]
-  @scala.inline
-  def polar: polar = "polar".asInstanceOf[polar]
-  @scala.inline
-  def polygon: polygon = "polygon".asInstanceOf[polygon]
-  @scala.inline
-  def rect: rect = "rect".asInstanceOf[rect]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def `right-bottom`: `right-bottom` = "right-bottom".asInstanceOf[`right-bottom`]
-  @scala.inline
-  def `right-center`: `right-center` = "right-center".asInstanceOf[`right-center`]
-  @scala.inline
-  def `right-top`: `right-top` = "right-top".asInstanceOf[`right-top`]
-  @scala.inline
-  def schema: schema = "schema".asInstanceOf[schema]
-  @scala.inline
-  def schemaDodge: schemaDodge = "schemaDodge".asInstanceOf[schemaDodge]
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
-  @scala.inline
-  def stack: stack = "stack".asInstanceOf[stack]
-  @scala.inline
-  def symmetric: symmetric = "symmetric".asInstanceOf[symmetric]
-  @scala.inline
-  def theta: theta = "theta".asInstanceOf[theta]
-  @scala.inline
-  def tick: tick = "tick".asInstanceOf[tick]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
-  @scala.inline
-  def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
-  @scala.inline
-  def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
-  @scala.inline
-  def tree: tree = "tree".asInstanceOf[tree]
-  @scala.inline
-  def triangle: triangle = "triangle".asInstanceOf[triangle]
-  @scala.inline
-  def `triangle-down`: `triangle-down` = "triangle-down".asInstanceOf[`triangle-down`]
-  @scala.inline
-  def upward: upward = "upward".asInstanceOf[upward]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
 }
-

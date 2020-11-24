@@ -10,9 +10,9 @@ reCAPTCHA v3 / v2 client for Node
 | ------------------ | :-------------: |
 | Full name          | grecaptcha |
 | Keywords           | recaptcha, recaptcha-v3, v3, recaptcha-v2, v2, verify, recaptcha-verify, recaptcha2 |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 12874 |
+| # releases         | 2 |
+| # dependents       | 5 |
+| # downloads        | 15013 |
 | # stars            | 0 |
 
 ## Links

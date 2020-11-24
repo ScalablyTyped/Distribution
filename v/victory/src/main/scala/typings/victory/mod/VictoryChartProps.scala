@@ -3,10 +3,11 @@ package typings.victory.mod
 import typings.victory.anon.PickVictoryStyleInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VictoryChartProps extends VictoryCommonProps {
+  
   /**
     * The domain prop describes the range of values your chart will include. This prop can be
     * given as a array of the minimum and maximum expected values for your chart,
@@ -16,6 +17,7 @@ trait VictoryChartProps extends VictoryCommonProps {
     * @example: [-1, 1], {x: [0, 100], y: [0, 1]}
     */
   var domain: js.UndefOr[DomainPropType] = js.native
+  
   /**
     * The domainPadding prop specifies a number of pixels of padding to add to the
     * beginning and end of a domain. This prop is useful for explicitly spacing ticks farther
@@ -23,11 +25,13 @@ trait VictoryChartProps extends VictoryCommonProps {
     * numbers specified for x and y.
     */
   var domainPadding: js.UndefOr[DomainPaddingPropType] = js.native
+  
   /**
     * Similar to data accessor props `x` and `y`, this prop may be used to functionally
     * assign eventKeys to data
     */
   var eventKey: js.UndefOr[StringOrNumberOrCallback] = js.native
+  
   /**
     * The event prop take an array of event objects. Event objects are composed of
     * a childName, target, eventKey, and eventHandlers. Targets may be any valid style namespace
@@ -70,6 +74,7 @@ trait VictoryChartProps extends VictoryCommonProps {
     * ]}
     */
   var events: js.UndefOr[js.Array[EventPropTypeInterface[String, StringOrNumberOrCallback]]] = js.native
+  
   /**
     * The style prop specifies styles for your chart. Any valid inline style properties
     * will be applied. Height, width, and padding should be specified via the height,
@@ -79,49 +84,63 @@ trait VictoryChartProps extends VictoryCommonProps {
     */
   var style: js.UndefOr[PickVictoryStyleInterface] = js.native
 }
-
 object VictoryChartProps {
+  
   @scala.inline
   def apply(): VictoryChartProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryChartProps]
   }
+  
   @scala.inline
   implicit class VictoryChartPropsOps[Self <: VictoryChartProps] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDomain(value: DomainPropType): Self = this.set("domain", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDomain: Self = this.set("domain", js.undefined)
+    
     @scala.inline
     def setDomainPadding(value: DomainPaddingPropType): Self = this.set("domainPadding", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDomainPadding: Self = this.set("domainPadding", js.undefined)
+    
     @scala.inline
     def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("eventKey", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setEventKey(value: StringOrNumberOrCallback): Self = this.set("eventKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEventKey: Self = this.set("eventKey", js.undefined)
+    
     @scala.inline
     def setEventsVarargs(value: (EventPropTypeInterface[String, StringOrNumberOrCallback])*): Self = this.set("events", js.Array(value :_*))
+    
     @scala.inline
     def setEvents(value: js.Array[EventPropTypeInterface[String, StringOrNumberOrCallback]]): Self = this.set("events", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEvents: Self = this.set("events", js.undefined)
+    
     @scala.inline
     def setStyle(value: PickVictoryStyleInterface): Self = this.set("style", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStyle: Self = this.set("style", js.undefined)
   }
-  
 }
-

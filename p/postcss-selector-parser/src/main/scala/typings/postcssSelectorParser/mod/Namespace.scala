@@ -5,30 +5,34 @@ import typings.postcssSelectorParser.postcssSelectorParserBooleans.`true`
 import typings.postcssSelectorParser.postcssSelectorParserStrings.`class`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Namespace[Value /* <: js.UndefOr[String] */]
-  extends Base[Value, js.UndefOr[Container[String]]] {
+  extends Base[Value, js.UndefOr[Container[String, Node]]] {
+  
   /**
     *  namespace prefix.
     */
   var namespace: String | `true` = js.native
+  
   /**
     * A string representing the namespace suitable for output.
     */
   val namespaceString: String = js.native
+  
   /** alias for namespace */
   var ns: String | `true` = js.native
+  
   /**
     * If a namespace exists, prefix the value provided with it, separated by |.
     */
   def qualifiedName(value: String): String = js.native
 }
-
 object Namespace {
+  
   @scala.inline
-  def apply[/* <: js.UndefOr[java.lang.String] */ Value](
+  def apply[Value /* <: js.UndefOr[String] */](
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
     clone: StringDictionary[js.Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
@@ -53,26 +57,32 @@ object Namespace {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Namespace[Value]]
   }
+  
   @scala.inline
-  implicit class NamespaceOps[Self <: Namespace[_], /* <: js.UndefOr[java.lang.String] */ Value] (val x: Self with Namespace[Value]) extends AnyVal {
+  implicit class NamespaceOps[Self <: Namespace[_], Value /* <: js.UndefOr[String] */] (val x: Self with Namespace[Value]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setNamespace(value: String | `true`): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNamespaceString(value: String): Self = this.set("namespaceString", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNs(value: String | `true`): Self = this.set("ns", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQualifiedName(value: String => String): Self = this.set("qualifiedName", js.Any.fromFunction1(value))
   }
-  
 }
-

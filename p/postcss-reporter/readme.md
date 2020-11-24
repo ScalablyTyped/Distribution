@@ -10,9 +10,9 @@ Log PostCSS messages in the console
 | ------------------ | :-------------: |
 | Full name          | postcss-reporter |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 226 |
-| # downloads        | 67526481 |
+| # releases         | 2 |
+| # dependents       | 239 |
+| # downloads        | 82367878 |
 | # stars            | 4 |
 
 ## Links

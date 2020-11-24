@@ -8,11 +8,12 @@ import typings.msRestAzure.mod.AzureServiceClientOptions
 import typings.msRestAzure.mod.CloudErrorParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource/lib/lock/managementLockClient", JSImport.Namespace)
 @js.native
 object managementLockClientMod extends js.Object {
+  
   @js.native
   class ManagementLockClient protected () extends AzureServiceClient {
     /**
@@ -56,15 +57,37 @@ object managementLockClientMod extends js.Object {
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
+    
     var acceptLanguage: String = js.native
+    
     var apiVersion: String = js.native
+    
     // Operation groups
     var authorizationOperations: AuthorizationOperations = js.native
+    
     var credentials: ServiceClientCredentials = js.native
+    
     var generateClientRequestId: Boolean = js.native
+    
     var longRunningOperationRetryTimeout: Double = js.native
+    
     var managementLocks: ManagementLocks = js.native
+    
     var subscriptionId: String = js.native
+  }
+  
+  @js.native
+  object ManagementLockModels extends js.Object {
+    
+    @js.native
+    class BaseResource ()
+      extends typings.msRestAzure.mod.BaseResource
+    
+    @js.native
+    class CloudError protected ()
+      extends typings.azureArmResource.lockModelsMod.CloudError {
+      def this(parameters: CloudErrorParameters) = this()
+    }
   }
   
   @js.native
@@ -111,20 +134,4 @@ object managementLockClientMod extends js.Object {
       options: AzureServiceClientOptions
     ) = this()
   }
-  
-  @js.native
-  object ManagementLockModels extends js.Object {
-    @js.native
-    class BaseResource ()
-      extends typings.msRestAzure.mod.BaseResource
-    
-    @js.native
-    class CloudError protected ()
-      extends typings.azureArmResource.lockModelsMod.CloudError {
-      def this(parameters: CloudErrorParameters) = this()
-    }
-    
-  }
-  
 }
-

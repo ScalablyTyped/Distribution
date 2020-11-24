@@ -3,9 +3,49 @@ package typings.archiver
 import typings.archiver.mod.Format
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object archiverStrings {
+  
+  @scala.inline
+  def Partial: Partial = "Partial".asInstanceOf[Partial]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  
+  @scala.inline
+  def drain: drain = "drain".asInstanceOf[drain]
+  
+  @scala.inline
+  def entry: entry = "entry".asInstanceOf[entry]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def finish: finish = "finish".asInstanceOf[finish]
+  
+  @scala.inline
+  def pipe: pipe = "pipe".asInstanceOf[pipe]
+  
+  @scala.inline
+  def progress: progress = "progress".asInstanceOf[progress]
+  
+  @scala.inline
+  def tar: tar = "tar".asInstanceOf[tar]
+  
+  @scala.inline
+  def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
+  
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
+  
+  @scala.inline
+  def zip: zip = "zip".asInstanceOf[zip]
+  
   @js.native
   sealed trait Partial extends js.Object
   
@@ -44,32 +84,4 @@ object archiverStrings {
   
   @js.native
   sealed trait zip extends Format
-  
-  @scala.inline
-  def Partial: Partial = "Partial".asInstanceOf[Partial]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def drain: drain = "drain".asInstanceOf[drain]
-  @scala.inline
-  def entry: entry = "entry".asInstanceOf[entry]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def finish: finish = "finish".asInstanceOf[finish]
-  @scala.inline
-  def pipe: pipe = "pipe".asInstanceOf[pipe]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def tar: tar = "tar".asInstanceOf[tar]
-  @scala.inline
-  def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
-  @scala.inline
-  def zip: zip = "zip".asInstanceOf[zip]
 }
-

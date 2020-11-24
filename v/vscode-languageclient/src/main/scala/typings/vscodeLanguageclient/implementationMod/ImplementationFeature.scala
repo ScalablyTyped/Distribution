@@ -7,7 +7,7 @@ import typings.vscodeLanguageserverProtocol.protocolImplementationMod.Implementa
 import typings.vscodeLanguageserverProtocol.protocolImplementationMod.ImplementationRegistrationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient/lib/implementation", "ImplementationFeature")
 @js.native
@@ -18,4 +18,3 @@ class ImplementationFeature protected () extends TextDocumentFeature[
     ] {
   def this(client: BaseLanguageClient) = this()
 }
-

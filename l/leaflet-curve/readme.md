@@ -12,7 +12,7 @@ A Leaflet plugin for drawing Bézier curves and other complex shapes.
 | Keywords           | leaflet, Bezier, curve, SVG |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 13034 |
+| # downloads        | 16885 |
 | # stars            | 0 |
 
 ## Links

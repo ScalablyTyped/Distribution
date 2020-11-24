@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/mq/configuration", "Configuration")
 @js.native
@@ -22,46 +22,54 @@ class Configuration protected () extends CustomResource {
     */
   def this(name: String, args: ConfigurationArgs) = this()
   def this(name: String, args: ConfigurationArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of the configuration.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The broker configuration in XML format.
     * See [official docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-broker-configuration-parameters.html)
     * for supported parameters and format of the XML.
     */
   val data: Output_[String] = js.native
+  
   /**
     * The description of the configuration.
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The type of broker engine.
     */
   val engineType: Output_[String] = js.native
+  
   /**
     * The version of the broker engine.
     */
   val engineVersion: Output_[String] = js.native
+  
   /**
     * The latest revision of the configuration.
     */
   val latestRevision: Output_[Double] = js.native
+  
   /**
     * The name of the configuration
     */
   val name: Output_[String] = js.native
+  
   /**
     * A map of tags to assign to the resource.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/mq/configuration", "Configuration")
 @js.native
 object Configuration extends js.Object {
+  
   /**
     * Get an existing Configuration resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -75,10 +83,10 @@ object Configuration extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Configuration = js.native
   def get(name: String, id: Input[ID], state: ConfigurationState): Configuration = js.native
   def get(name: String, id: Input[ID], state: ConfigurationState, opts: CustomResourceOptions): Configuration = js.native
+  
   /**
     * Returns true if the given object is an instance of Configuration.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mq/configuration.Configuration */ Boolean = js.native
 }
-

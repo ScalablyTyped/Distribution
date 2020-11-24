@@ -3,11 +3,12 @@ package typings.ol
 import typings.ol.baseTileMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/layer/Tile", JSImport.Namespace)
 @js.native
 object tileMod extends js.Object {
+  
   @js.native
   trait TileLayer
     extends typings.ol.baseTileMod.default
@@ -16,6 +17,4 @@ object tileMod extends js.Object {
   class default () extends TileLayer {
     def this(opt_options: Options) = this()
   }
-  
 }
-

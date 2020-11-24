@@ -2,11 +2,12 @@ package typings.luminoProperties.mod.AttachedProperty
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/properties", "AttachedProperty.clearData")
 @js.native
 object clearData extends js.Object {
+  
   /**
     * Clear the stored property data for the given owner.
     *
@@ -18,4 +19,3 @@ object clearData extends js.Object {
     */
   def apply(owner: js.Any): Unit = js.native
 }
-

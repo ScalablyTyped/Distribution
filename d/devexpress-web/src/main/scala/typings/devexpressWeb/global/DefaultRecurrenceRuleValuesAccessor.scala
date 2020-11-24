@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object providing access to an ASPxClientRecurrenceControlBase control's editor values.
@@ -16,4 +16,3 @@ class DefaultRecurrenceRuleValuesAccessor protected ()
     */
   def this(recurrenceControl: typings.devexpressWeb.ASPxClientRecurrenceControlBase) = this()
 }
-

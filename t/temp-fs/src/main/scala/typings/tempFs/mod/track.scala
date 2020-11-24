@@ -2,11 +2,12 @@ package typings.tempFs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("temp-fs", "track")
 @js.native
 object track extends js.Object {
+  
   /**
     * Use it to switch global files/directories tracking on or off.
     *
@@ -23,4 +24,3 @@ object track extends js.Object {
   def apply(): Unit = js.native
   def apply(on: Boolean): Unit = js.native
 }
-

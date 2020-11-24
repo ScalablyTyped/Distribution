@@ -2,20 +2,48 @@ package typings.nodeMysqlWrapper.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Multi extends js.Object {
-  var multi: js.UndefOr[Boolean] = js.undefined
-  var upsert: js.UndefOr[Boolean] = js.undefined
+  
+  var multi: js.UndefOr[Boolean] = js.native
+  
+  var upsert: js.UndefOr[Boolean] = js.native
 }
-
 object Multi {
+  
   @scala.inline
-  def apply(multi: js.UndefOr[Boolean] = js.undefined, upsert: js.UndefOr[Boolean] = js.undefined): Multi = {
+  def apply(): Multi = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Multi]
   }
+  
+  @scala.inline
+  implicit class MultiOps[Self <: Multi] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setMulti(value: Boolean): Self = this.set("multi", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMulti: Self = this.set("multi", js.undefined)
+    
+    @scala.inline
+    def setUpsert(value: Boolean): Self = this.set("upsert", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUpsert: Self = this.set("upsert", js.undefined)
+  }
 }
-

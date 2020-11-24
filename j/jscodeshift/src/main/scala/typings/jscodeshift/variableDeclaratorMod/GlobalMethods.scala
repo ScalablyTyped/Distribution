@@ -3,10 +3,11 @@ package typings.jscodeshift.variableDeclaratorMod
 import typings.jscodeshift.collectionMod.Collection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GlobalMethods extends js.Object {
+  
   /**
     * Finds all variable declarators, optionally filtered by name.
     */
@@ -17,4 +18,3 @@ trait GlobalMethods extends js.Object {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.VariableDeclarator */ _
   ] = js.native
 }
-

@@ -10,9 +10,9 @@ React Mobile Pull To Refresh Component
 | ------------------ | :-------------: |
 | Full name          | rmc-pull-to-refresh |
 | Keywords           | react, react-component, react-pull-to-refresh, pull-to-refresh |
-| # releases         | 9 |
-| # dependents       | 32 |
-| # downloads        | 609503 |
+| # releases         | 7 |
+| # dependents       | 33 |
+| # downloads        | 909722 |
 | # stars            | 0 |
 
 ## Links

@@ -1,36 +1,40 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.DebuggerStatement
+import typings.babelTraverse.babelTraverseStrings.FunctionDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait `133` extends js.Object {
-  var `type`: DebuggerStatement = js.native
+  
+  var `type`: FunctionDeclaration = js.native
 }
-
 object `133` {
+  
   @scala.inline
-  def apply(`type`: DebuggerStatement): `133` = {
+  def apply(`type`: FunctionDeclaration): `133` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`133`]
   }
+  
   @scala.inline
   implicit class `133Ops`[Self <: `133`] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
-    def setType(value: DebuggerStatement): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: FunctionDeclaration): Self = this.set("type", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -2,9 +2,10 @@ package typings.babylonjs.materialsIndexMod
 
 import typings.babylonjs.anon.PartialIShaderMaterialOpt
 import typings.babylonjs.sceneMod.Scene
+import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/index", "ShaderMaterial")
 @js.native
@@ -14,7 +15,7 @@ class ShaderMaterial protected ()
     * Instantiate a new shader material.
     * The ShaderMaterial object has the necessary methods to pass data from your scene to the Vertex and Fragment Shaders and returns a material that can be applied to any mesh.
     * This returned material effects how the mesh will look based on the code in the shaders.
-    * @see http://doc.babylonjs.com/how_to/shader_material
+    * @see https://doc.babylonjs.com/how_to/shader_material
     * @param name Define the name of the material in the scene
     * @param scene Define the scene the material belongs to
     * @param shaderPath Defines  the route to the shader code in one of three ways:
@@ -27,11 +28,21 @@ class ShaderMaterial protected ()
   def this(name: String, scene: Scene, shaderPath: js.Any) = this()
   def this(name: String, scene: Scene, shaderPath: js.Any, options: PartialIShaderMaterialOpt) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Materials/index", "ShaderMaterial")
 @js.native
 object ShaderMaterial extends js.Object {
+  
+  /**
+    * Creates a ShaderMaterial from a snippet saved by the Inspector
+    * @param snippetId defines the snippet to load
+    * @param scene defines the hosting scene
+    * @param rootUrl defines the root URL to use to load textures and relative dependencies
+    * @returns a promise that will resolve to the new ShaderMaterial
+    */
+  def CreateFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial] = js.native
+  def CreateFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial] = js.native
+  
   /**
     * Creates a shader material from parsed shader material data
     * @param source defines the JSON represnetation of the material
@@ -40,5 +51,18 @@ object ShaderMaterial extends js.Object {
     * @returns a new material
     */
   def Parse(source: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.shaderMaterialMod.ShaderMaterial = js.native
+  
+  /**
+    * Creates a new ShaderMaterial from a snippet saved in a remote file
+    * @param name defines the name of the ShaderMaterial to create (can be null or empty to use the one from the json data)
+    * @param url defines the url to load from
+    * @param scene defines the hosting scene
+    * @param rootUrl defines the root URL to use to load textures and relative dependencies
+    * @returns a promise that will resolve to the new ShaderMaterial
+    */
+  def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene): js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial] = js.native
+  def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial] = js.native
+  
+  /** Define the Url to load snippets */
+  var SnippetUrl: String = js.native
 }
-

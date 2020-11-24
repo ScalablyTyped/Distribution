@@ -18,7 +18,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The accessible object of the ruler in the CSV import dialog.
@@ -30,8 +30,8 @@ trait AccessibleCsvRuler
   extends XAccessibleContext
      with XAccessibleComponent
      with XAccessibleText
-
 object AccessibleCsvRuler {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -99,4 +99,3 @@ object AccessibleCsvRuler {
     __obj.asInstanceOf[AccessibleCsvRuler]
   }
 }
-

@@ -13,11 +13,12 @@ import typings.uifabricFoundation.libIslotsMod.ValidProps
 import typings.uifabricMergeStyles.istylesetMod.IStyleSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uifabric/foundation/lib/next/composed", JSImport.Namespace)
 @js.native
 object composedMod extends js.Object {
+  
   def composed[TComponentProps /* <: ValidProps with ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps /* <: TComponentProps */, TComponentSlots, TStatics](
     baseComponent: FunctionComponent[js.Object],
     options: IRecompositionComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]
@@ -25,6 +26,7 @@ object composedMod extends js.Object {
   def composed[TComponentProps /* <: ValidProps with ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps /* <: TComponentProps */, TComponentSlots, TStatics](
     options: IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]
   ): (IFoundationComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]) with TStatics = js.native
+  
   def resolveSlots[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TComponentSlots](
     slots: js.UndefOr[
       (IPartialSlotComponent[TComponentProps, TComponentSlots]) | (ISlotComponent[TComponentProps, TComponentSlots])
@@ -32,4 +34,3 @@ object composedMod extends js.Object {
     data: TComponentProps
   ): ISlotDefinition[Required[TComponentSlots]] = js.native
 }
-

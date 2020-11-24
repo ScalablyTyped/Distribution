@@ -6,7 +6,7 @@ import typings.openlayers.mod.olx.format.WriteOptions
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -32,6 +32,7 @@ import scala.scalajs.js.annotation._
   */
 class GML3 () extends GMLBase {
   def this(opt_options: GMLOptions) = this()
+  
   /**
     * Encode an array of features in GML 3.1.1 Simple Features.
     *
@@ -42,6 +43,7 @@ class GML3 () extends GMLBase {
     */
   def writeFeatures(features: js.Array[typings.openlayers.mod.Feature]): String = js.native
   def writeFeatures(features: js.Array[typings.openlayers.mod.Feature], opt_options: WriteOptions): String = js.native
+  
   /**
     * Encode an array of features in the GML 3.1.1 format as an XML node.
     *
@@ -52,6 +54,7 @@ class GML3 () extends GMLBase {
     */
   def writeFeaturesNode(features: js.Array[typings.openlayers.mod.Feature]): Node = js.native
   def writeFeaturesNode(features: js.Array[typings.openlayers.mod.Feature], opt_options: WriteOptions): Node = js.native
+  
   /**
     * Encode a geometry in GML 3.1.1 Simple Features.
     *
@@ -63,4 +66,3 @@ class GML3 () extends GMLBase {
   def writeGeometryNode(geometry: Geometry): Node = js.native
   def writeGeometryNode(geometry: Geometry, opt_options: WriteOptions): Node = js.native
 }
-

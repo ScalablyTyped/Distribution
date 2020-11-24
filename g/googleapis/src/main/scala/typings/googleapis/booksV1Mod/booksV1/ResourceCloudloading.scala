@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Cloudloading")
 @js.native
 class ResourceCloudloading protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * books.cloudloading.addBook
     * @alias books.cloudloading.addBook
@@ -46,6 +46,9 @@ class ResourceCloudloading protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBooksCloudloadingResource]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * books.cloudloading.deleteBook
     * @desc Remove the book and its contents
@@ -74,6 +77,7 @@ class ResourceCloudloading protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * books.cloudloading.updateBook
     * @alias books.cloudloading.updateBook
@@ -105,4 +109,3 @@ class ResourceCloudloading protected () extends js.Object {
     callback: BodyResponseCallback[SchemaBooksCloudloadingResource]
   ): Unit = js.native
 }
-

@@ -5,38 +5,12 @@ import typings.mangopay2NodejsSdk.mod.hook.HookData
 import typings.mangopay2NodejsSdk.mod.hook.UpdateHook
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Hooks")
 @js.native
 class Hooks () extends js.Object {
-  /**
-    * Create new hook
-    * @param hook
-    * @param options
-    */
-  @JSName("create")
-  var create_Original: MethodOverload[CreateHook, HookData] = js.native
-  /**
-    * Get all hooks
-    * @param options
-    */
-  @JSName("getAll")
-  var getAll_Original: NoArgMethodOverload[js.Array[HookData]] = js.native
-  /**
-    * Get hook
-    * @param hookId
-    * @param options
-    */
-  @JSName("get")
-  var get_Original: MethodOverload[String, HookData] = js.native
-  /**
-    * Save hook
-    * @param hook
-    * @param options
-    */
-  @JSName("update")
-  var update_Original: MethodOverload[UpdateHook, HookData] = js.native
+  
   /**
     * Create new hook
     * @param hook
@@ -72,6 +46,14 @@ class Hooks () extends js.Object {
   def create(data: CreateHook, options: MethodOptionWithResponse): js.Promise[WithResponse[HookData]] = js.native
   def create(data: CreateHook, options: MethodOptionWithoutResponse): js.Promise[HookData] = js.native
   /**
+    * Create new hook
+    * @param hook
+    * @param options
+    */
+  @JSName("create")
+  var create_Original: MethodOverload[CreateHook, HookData] = js.native
+  
+  /**
     * Get hook
     * @param hookId
     * @param options
@@ -105,6 +87,7 @@ class Hooks () extends js.Object {
     */
   def get(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[HookData]] = js.native
   def get(data: String, options: MethodOptionWithoutResponse): js.Promise[HookData] = js.native
+  
   /**
     * Get all hooks
     * @param options
@@ -131,6 +114,21 @@ class Hooks () extends js.Object {
     */
   def getAll(options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[HookData]]] = js.native
   def getAll(options: MethodOptionWithoutResponse): js.Promise[js.Array[HookData]] = js.native
+  /**
+    * Get all hooks
+    * @param options
+    */
+  @JSName("getAll")
+  var getAll_Original: NoArgMethodOverload[js.Array[HookData]] = js.native
+  
+  /**
+    * Get hook
+    * @param hookId
+    * @param options
+    */
+  @JSName("get")
+  var get_Original: MethodOverload[String, HookData] = js.native
+  
   /**
     * Save hook
     * @param hook
@@ -165,5 +163,11 @@ class Hooks () extends js.Object {
     */
   def update(data: UpdateHook, options: MethodOptionWithResponse): js.Promise[WithResponse[HookData]] = js.native
   def update(data: UpdateHook, options: MethodOptionWithoutResponse): js.Promise[HookData] = js.native
+  /**
+    * Save hook
+    * @param hook
+    * @param options
+    */
+  @JSName("update")
+  var update_Original: MethodOverload[UpdateHook, HookData] = js.native
 }
-

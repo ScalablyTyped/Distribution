@@ -13,11 +13,12 @@ import typings.luminoWidgets.widgetMod.Widget.Flag
 import typings.luminoWidgets.widgetMod.Widget.ResizeMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/imageviewer/lib/widget", JSImport.Namespace)
 @js.native
 object widgetMod extends js.Object {
+  
   @js.native
   class ImageViewer protected ()
     extends Widget
@@ -26,29 +27,34 @@ object widgetMod extends js.Object {
       * Construct a new image widget.
       */
     def this(context: Context) = this()
+    
     var _colorinversion: js.Any = js.native
-    var _format: js.Any = js.native
+    
     var _img: js.Any = js.native
+    
     var _matrix: js.Any = js.native
+    
     var _mimeType: js.Any = js.native
+    
     /**
       * Handle a change to the title.
       */
     var _onTitleChanged: js.Any = js.native
+    
     var _ready: js.Any = js.native
+    
     /**
       * Render the widget content.
       */
     var _render: js.Any = js.native
+    
     var _scale: js.Any = js.native
+    
     /**
       * Update the image CSS style, including the transform and filter.
       */
     var _updateStyle: js.Any = js.native
-    /**
-      * The image widget's context.
-      */
-    val context: Context = js.native
+    
     /**
       * Post an `'activate-request'` message to the widget.
       *
@@ -57,6 +63,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def activate(): Unit = js.native
+    
     /**
       * Add a class name to the widget's DOM node.
       *
@@ -69,6 +76,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def addClass(name: String): Unit = js.native
+    
     /**
       * Create an iterator over the widget's children.
       *
@@ -81,6 +89,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def children(): IIterator[typings.luminoWidgets.widgetMod.Widget] = js.native
+    
     /**
       * Clear the given widget flag.
       *
@@ -89,6 +98,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def clearFlag(flag: Flag): Unit = js.native
+    
     /**
       * Send a `'close-request'` message to the widget.
       *
@@ -97,11 +107,13 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def close(): Unit = js.native
+    
     /**
       * The color inversion of the image.
       */
     def colorinversion: Double = js.native
-    def colorinversion(value: Double): js.Any = js.native
+    def colorinversion_=(value: Double): Unit = js.native
+    
     /**
       * Test whether a widget is a descendant of this widget.
       *
@@ -111,20 +123,12 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def contains(widget: typings.luminoWidgets.widgetMod.Widget): Boolean = js.native
+    
     /**
-      * Dispose of the resources held by the object.
-      *
-      * #### Notes
-      * If the object's `dispose` method is called more than once, all
-      * calls made after the first will be a no-op.
-      *
-      * #### Undefined Behavior
-      * It is undefined behavior to use any functionality of the object
-      * after it has been disposed unless otherwise explicitly noted.
+      * The image widget's context.
       */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def dispose(): Unit = js.native
+    val context: Context = js.native
+    
     /**
       * Post a `'fit-request'` message to the widget.
       *
@@ -133,14 +137,17 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def fit(): Unit = js.native
+    
     /**
       * Flip the image horizontally.
       */
     def flipHorizontal(): Unit = js.native
+    
     /**
       * Flip the image vertically.
       */
     def flipVertical(): Unit = js.native
+    
     /**
       * Test whether the widget's DOM node has the given class name.
       *
@@ -150,6 +157,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def hasClass(name: String): Boolean = js.native
+    
     /**
       * Hide the widget and make it hidden to its parent widget.
       *
@@ -160,6 +168,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def hide(): Unit = js.native
+    
     /**
       * Invoke the message processing routine of the widget's layout.
       *
@@ -172,6 +181,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def notifyLayout(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on an `'activate-request'` message.
       *
@@ -180,6 +190,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onActivateRequest(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on an `'after-attach'` message.
       *
@@ -188,6 +199,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onAfterAttach(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on an `'after-detach'` message.
       *
@@ -196,6 +208,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onAfterDetach(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on an `'after-hide'` message.
       *
@@ -204,6 +217,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onAfterHide(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on an `'after-show'` message.
       *
@@ -212,6 +226,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onAfterShow(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on a `'before-attach'` message.
       *
@@ -220,6 +235,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onBeforeAttach(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on a `'before-detach'` message.
       *
@@ -228,6 +244,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onBeforeDetach(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on a `'before-hide'` message.
       *
@@ -236,6 +253,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onBeforeHide(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on a `'before-show'` message.
       *
@@ -244,6 +262,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onBeforeShow(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on a `'child-added'` message.
       *
@@ -252,6 +271,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onChildAdded(msg: ChildMessage): Unit = js.native
+    
     /**
       * A message handler invoked on a `'child-removed'` message.
       *
@@ -260,6 +280,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onChildRemoved(msg: ChildMessage): Unit = js.native
+    
     /**
       * A message handler invoked on a `'close-request'` message.
       *
@@ -268,6 +289,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onCloseRequest(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on a `'fit-request'` message.
       *
@@ -276,6 +298,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onFitRequest(msg: Message): Unit = js.native
+    
     /**
       * A message handler invoked on a `'resize'` message.
       *
@@ -284,6 +307,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onResize(msg: ResizeMessage): Unit = js.native
+    
     /**
       * A message handler invoked on an `'update-request'` message.
       *
@@ -292,18 +316,12 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     /* protected */ override def onUpdateRequest(msg: Message): Unit = js.native
-    /**
-      * Process a message sent to the handler.
-      *
-      * @param msg - The message to be processed.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def processMessage(msg: Message): Unit = js.native
+    
     /**
       * A promise that resolves when the image viewer is ready.
       */
     def ready: js.Promise[Unit] = js.native
+    
     /**
       * Remove a class name from the widget's DOM node.
       *
@@ -316,23 +334,28 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def removeClass(name: String): Unit = js.native
+    
     /**
       * Reset rotation and flip transformations.
       */
     def resetRotationFlip(): Unit = js.native
+    
     /**
       * Rotate the image clockwise (right).
       */
     def rotateClockwise(): Unit = js.native
+    
     /**
       * Rotate the image counter-clockwise (left).
       */
     def rotateCounterclockwise(): Unit = js.native
+    
     /**
       * The scale factor for the image.
       */
     def scale: Double = js.native
-    def scale(value: Double): js.Any = js.native
+    def scale_=(value: Double): Unit = js.native
+    
     /**
       * Set the given widget flag.
       *
@@ -341,6 +364,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def setFlag(flag: Flag): Unit = js.native
+    
     /**
       * Show or hide the widget according to a boolean value.
       *
@@ -351,6 +375,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def setHidden(hidden: Boolean): Unit = js.native
+    
     /**
       * Show the widget and make it visible to its parent widget.
       *
@@ -361,6 +386,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def show(): Unit = js.native
+    
     /**
       * Test whether the given widget flag is set.
       *
@@ -369,6 +395,7 @@ object widgetMod extends js.Object {
       */
     /* InferMemberOverrides */
     override def testFlag(flag: Flag): Boolean = js.native
+    
     /**
       * Toggle a class name on the widget's DOM node.
       *
@@ -387,6 +414,7 @@ object widgetMod extends js.Object {
     override def toggleClass(name: String): Boolean = js.native
     /* InferMemberOverrides */
     override def toggleClass(name: String, force: Boolean): Boolean = js.native
+    
     /**
       * Post an `'update-request'` message to the widget.
       *
@@ -399,6 +427,4 @@ object widgetMod extends js.Object {
   
   @js.native
   class ImageViewerFactory () extends ABCWidgetFactory[IDocumentWidget[ImageViewer, IModel], IModel]
-  
 }
-

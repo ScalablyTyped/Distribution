@@ -10,9 +10,9 @@ istanbul reports
 | ------------------ | :-------------: |
 | Full name          | istanbul-reports |
 | Keywords           | istanbul, reports |
-| # releases         | 28 |
-| # dependents       | 57 |
-| # downloads        | 287487921 |
+| # releases         | 23 |
+| # dependents       | 92 |
+| # downloads        | 435473764 |
 | # stars            | 0 |
 
 ## Links

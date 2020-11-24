@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Disktypes")
 @js.native
 class ResourceDisktypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.diskTypes.aggregatedList
     * @desc Retrieves an aggregated list of disk types.
@@ -115,6 +115,9 @@ class ResourceDisktypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDiskTypeAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.diskTypes.get
     * @desc Returns the specified disk type. Gets a list of available disk
@@ -205,6 +208,7 @@ class ResourceDisktypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDiskType]
   ): Unit = js.native
+  
   /**
     * compute.diskTypes.list
     * @desc Retrieves a list of disk types available to the specified project.
@@ -308,4 +312,3 @@ class ResourceDisktypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDiskTypeList]
   ): Unit = js.native
 }
-

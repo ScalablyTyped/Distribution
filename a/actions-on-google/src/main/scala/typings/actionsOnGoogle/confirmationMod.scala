@@ -5,11 +5,12 @@ import typings.actionsOnGoogle.helperHelperMod.Helper
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2ConfirmationValueSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/confirmation", JSImport.Namespace)
 @js.native
 object confirmationMod extends js.Object {
+  
   @js.native
   class Confirmation protected () extends Helper[actionsDotintentDotCONFIRMATION, GoogleActionsV2ConfirmationValueSpec] {
     /**
@@ -22,4 +23,3 @@ object confirmationMod extends js.Object {
   
   type ConfirmationArgument = Boolean
 }
-

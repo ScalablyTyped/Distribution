@@ -10,9 +10,9 @@ A [ponyfill](https://ponyfill.com) for `Buffer.from`, uses native implementation
 | ------------------ | :-------------: |
 | Full name          | buffer-from |
 | Keywords           | buffer, buffer from |
-| # releases         | 5 |
-| # dependents       | 120 |
-| # downloads        | 475712094 |
+| # releases         | 0 |
+| # dependents       | 160 |
+| # downloads        | 664489748 |
 | # stars            | 0 |
 
 ## Links

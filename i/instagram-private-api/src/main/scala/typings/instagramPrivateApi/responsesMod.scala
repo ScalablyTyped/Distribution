@@ -2,11 +2,12 @@ package typings.instagramPrivateApi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("instagram-private-api/dist/responses", JSImport.Namespace)
 @js.native
 object responsesMod extends js.Object {
+  
   @js.native
   class AccountFollowersFeedResponseUsersItem ()
     extends typings.instagramPrivateApi.accountFollowersFeedResponseMod.AccountFollowersFeedResponseUsersItem
@@ -14,6 +15,10 @@ object responsesMod extends js.Object {
   @js.native
   class AccountFollowingFeedResponseUsersItem ()
     extends typings.instagramPrivateApi.accountFollowingFeedResponseMod.AccountFollowingFeedResponseUsersItem
+  
+  @js.native
+  class BestiesFeedResponseUsersItem ()
+    extends typings.instagramPrivateApi.accountFriendshipsBestiesFeedResponseMod.BestiesFeedResponseUsersItem
   
   @js.native
   class BlockedUsersFeedResponseBlockedListItem ()
@@ -34,6 +39,4 @@ object responsesMod extends js.Object {
   @js.native
   class PendingFriendshipsFeedResponseUsersItem ()
     extends typings.instagramPrivateApi.accountFriendshipsFeedResponseMod.PendingFriendshipsFeedResponseUsersItem
-  
 }
-

@@ -3,7 +3,7 @@ package typings.codemirror.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Commands are parameter-less actions that can be performed on an editor.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSImport("codemirror", "commands")
 @js.native
 object commands extends TopLevel[CommandActions]
-

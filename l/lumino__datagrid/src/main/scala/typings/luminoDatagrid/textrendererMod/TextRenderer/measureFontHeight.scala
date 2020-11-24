@@ -2,11 +2,12 @@ package typings.luminoDatagrid.textrendererMod.TextRenderer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.measureFontHeight")
 @js.native
 object measureFontHeight extends js.Object {
+  
   /**
     * Measure the height of a font.
     *
@@ -22,4 +23,3 @@ object measureFontHeight extends js.Object {
     */
   def apply(font: String): Double = js.native
 }
-

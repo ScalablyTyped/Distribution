@@ -3,7 +3,7 @@ package typings.heremaps.global.H.ui
 import typings.heremaps.H.ui.DistanceMeasurement.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents a distance measurement control which helps calculating distances between geographical locations indicated by the user clicks.
@@ -18,4 +18,3 @@ class DistanceMeasurement ()
   extends typings.heremaps.H.ui.Control {
   def this(opt_options: Options) = this()
 }
-

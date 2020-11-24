@@ -3,11 +3,21 @@ package typings.cassandraDriver.mod.policies
 import typings.cassandraDriver.anon.Filter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver", "policies.loadBalancing")
 @js.native
 object loadBalancing extends js.Object {
+  
+  @js.native
+  class AllowListPolicy protected ()
+    extends typings.cassandraDriver.policiesMod.policies.loadBalancing.AllowListPolicy {
+    def this(
+      childPolicy: typings.cassandraDriver.policiesMod.policies.loadBalancing.LoadBalancingPolicy,
+      allowList: js.Array[String]
+    ) = this()
+  }
+  
   @js.native
   class DCAwareRoundRobinPolicy protected ()
     extends typings.cassandraDriver.policiesMod.policies.loadBalancing.DCAwareRoundRobinPolicy {
@@ -35,13 +45,6 @@ object loadBalancing extends js.Object {
   }
   
   @js.native
-  class WhiteListPolicy protected ()
-    extends typings.cassandraDriver.policiesMod.policies.loadBalancing.WhiteListPolicy {
-    def this(
-      childPolicy: typings.cassandraDriver.policiesMod.policies.loadBalancing.LoadBalancingPolicy,
-      whiteList: js.Array[String]
-    ) = this()
-  }
-  
+  class WhiteListPolicy ()
+    extends typings.cassandraDriver.policiesMod.policies.loadBalancing.AllowListPolicy
 }
-

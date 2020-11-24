@@ -10,9 +10,9 @@ Check whether a string is a URL.
 | ------------------ | :-------------: |
 | Full name          | is-url |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 502 |
-| # downloads        | 54677719 |
+| # releases         | 0 |
+| # dependents       | 590 |
+| # downloads        | 80176291 |
 | # stars            | 8 |
 
 ## Links

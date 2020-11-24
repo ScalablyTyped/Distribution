@@ -2,17 +2,17 @@ package typings.officeJs.OneNote
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PageContentType extends js.Object
-
 /**
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.PageContentType")
 @js.native
 object PageContentType extends js.Object {
+  
   @js.native
   sealed trait image extends PageContentType
   
@@ -24,6 +24,4 @@ object PageContentType extends js.Object {
   
   @js.native
   sealed trait outline extends PageContentType
-  
 }
-

@@ -12,7 +12,7 @@ React component for place dropdowns outside overflow: hidden; elements
 | Keywords           | react, react-component, portal, react-portal |
 | # releases         | 6 |
 | # dependents       | 5 |
-| # downloads        | 92162 |
+| # downloads        | 94101 |
 | # stars            | 0 |
 
 ## Links

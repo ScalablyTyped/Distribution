@@ -16,13 +16,13 @@ import typings.ionicReact.ionicReactStrings.pwa
 import typings.ionicReact.ionicReactStrings.tablet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/react", "getPlatforms")
 @js.native
 object getPlatforms extends js.Object {
+  
   def apply(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native
 }
-

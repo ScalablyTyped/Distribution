@@ -2,7 +2,7 @@ package typings.cloudeventsSdk.emitterBinaryMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A class to emit binary CloudEvents over HTTP.
@@ -20,4 +20,3 @@ class ^ protected () extends BinaryHTTPEmitter {
     */
   def this(version: String) = this()
 }
-

@@ -19,29 +19,19 @@ import typings.titanium.titaniumStrings.touchstart
 import typings.titanium.titaniumStrings.twofingertap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A picker column, representing a selectable group of items in a <Titanium.UI.Picker>.
   */
 @js.native
 trait PickerColumn extends View {
-  /**
-    * Font to use for text.
-    */
-  var font: Font = js.native
-  /**
-    * Number of rows in this column.
-    */
-  val rowCount: Double = js.native
-  /**
-    * Rows of this column.
-    */
-  val rows: js.Array[PickerRow] = js.native
+  
   /**
     * Adds a row to this column.
     */
   def addRow(row: PickerRow): Unit = js.native
+  
   @JSName("fireEvent")
   def fireEvent_click(name: click, event: PickerColumnClickEvent): Unit = js.native
   @JSName("fireEvent")
@@ -74,29 +64,48 @@ trait PickerColumn extends View {
   def fireEvent_touchstart(name: touchstart, event: PickerColumnTouchstartEvent): Unit = js.native
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: PickerColumnTwofingertapEvent): Unit = js.native
+  
+  /**
+    * Font to use for text.
+    */
+  var font: Font = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.PickerColumn.font> property.
     * @deprecated Access <Titanium.UI.PickerColumn.font> instead.
     */
   def getFont(): Font = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.PickerColumn.rowCount> property.
     * @deprecated Access <Titanium.UI.PickerColumn.rowCount> instead.
     */
   def getRowCount(): Double = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.PickerColumn.rows> property.
     * @deprecated Access <Titanium.UI.PickerColumn.rows> instead.
     */
   def getRows(): js.Array[PickerRow] = js.native
+  
   /**
     * Removes a row from this column.
     */
   def removeRow(row: PickerRow): Unit = js.native
+  
+  /**
+    * Number of rows in this column.
+    */
+  val rowCount: Double = js.native
+  
+  /**
+    * Rows of this column.
+    */
+  val rows: js.Array[PickerRow] = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.PickerColumn.font> property.
     * @deprecated Set the value using <Titanium.UI.PickerColumn.font> instead.
     */
   def setFont(font: Font): Unit = js.native
 }
-

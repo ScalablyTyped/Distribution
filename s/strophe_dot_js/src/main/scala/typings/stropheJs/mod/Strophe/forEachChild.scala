@@ -3,11 +3,12 @@ package typings.stropheJs.mod.Strophe
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strophe.js", "Strophe.forEachChild")
 @js.native
 object forEachChild extends js.Object {
+  
   /** Function: forEachChild
     *  Map a function over some or all child elements of a given element.
     *
@@ -24,4 +25,3 @@ object forEachChild extends js.Object {
     */
   def apply(elem: Element, elemName: String, func: js.Function1[/* child */ Element, _]): Unit = js.native
 }
-

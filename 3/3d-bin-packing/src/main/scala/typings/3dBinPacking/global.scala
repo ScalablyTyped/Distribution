@@ -5,11 +5,12 @@ import typings.`3dBinPacking`.bws.packer.InstanceArray
 import typings.`3dBinPacking`.bws.packer.Wrapper
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   /**
     * <p> A set of programs that calculate the best fit for boxes on a pallet migrated from language C. </p>
     *
@@ -22,6 +23,7 @@ object global extends js.Object {
     */
   @js.native
   object boxologic extends js.Object {
+    
     /**
       * A box, trying to pack into a {@link Pallet}.
       *
@@ -122,13 +124,17 @@ object global extends js.Object {
         */
       def this(cumx: Double, cumz: Double) = this()
     }
-    
   }
   
   @js.native
   object bws extends js.Object {
+    
     @js.native
     object packer extends js.Object {
+      
+      @JSName("_Test")
+      def Test(): Unit = js.native
+      
       @js.native
       class GAWrapperArray protected ()
         extends typings.`3dBinPacking`.bws.packer.GAWrapperArray {
@@ -394,12 +400,6 @@ object global extends js.Object {
           */
         def this(name: String, price: Double, width: Double, height: Double, length: Double, thickness: Double) = this()
       }
-      
-      @JSName("_Test")
-      def Test(): Unit = js.native
     }
-    
   }
-  
 }
-

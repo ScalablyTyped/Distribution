@@ -92,10 +92,11 @@ import typings.activexMsforms.anon.IndexPercent
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ActiveXObject extends js.Object {
+  
   def on(
     obj: CheckBox,
     event: DblClick,
@@ -1296,6 +1297,7 @@ trait ActiveXObject extends js.Object {
     event: SpinUp,
     handler: js.ThisFunction1[/* this */ SpinButton, /* parameter */ js.Object, Unit]
   ): Unit = js.native
+  
   @JSName("set")
   def set_Column(obj: ComboBox, propertyName: Column, parameterTypes: js.Array[Double], newValue: js.Any): Unit = js.native
   @JSName("set")
@@ -1323,4 +1325,3 @@ trait ActiveXObject extends js.Object {
   @JSName("set")
   def set_Selected(obj: ListBox, propertyName: Selected, parameterTypes: js.Array[_], newValue: Boolean): Unit = js.native
 }
-

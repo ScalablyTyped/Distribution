@@ -4,12 +4,12 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Security.Credentials.PasswordCredential
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MessageWebSocketControl extends IMessageWebSocketControl
-
 object MessageWebSocketControl {
+  
   @scala.inline
   def apply(
     maxMessageSize: Double,
@@ -23,4 +23,3 @@ object MessageWebSocketControl {
     __obj.asInstanceOf[MessageWebSocketControl]
   }
 }
-

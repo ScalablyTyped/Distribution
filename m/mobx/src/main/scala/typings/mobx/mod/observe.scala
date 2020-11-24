@@ -12,15 +12,16 @@ import typings.mobx.observablevalueMod.IValueDidChange
 import typings.mobx.utilsMod.Lambda
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx", "observe")
 @js.native
 object observe extends js.Object {
-  def apply(`object`: js.Object, listener: js.Function1[/* change */ IObjectDidChange, Unit]): Lambda = js.native
+  
+  def apply(`object`: js.Object, listener: js.Function1[/* change */ IObjectDidChange[_], Unit]): Lambda = js.native
   def apply(
     `object`: js.Object,
-    listener: js.Function1[/* change */ IObjectDidChange, Unit],
+    listener: js.Function1[/* change */ IObjectDidChange[_], Unit],
     fireImmediately: Boolean
   ): Lambda = js.native
   def apply[T](
@@ -95,4 +96,3 @@ object observe extends js.Object {
     fireImmediately: Boolean
   ): Lambda = js.native
 }
-

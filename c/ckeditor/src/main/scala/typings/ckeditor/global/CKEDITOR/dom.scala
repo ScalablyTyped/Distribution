@@ -9,11 +9,12 @@ import typings.std.NodeList
 import typings.std.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CKEDITOR.dom")
 @js.native
 object dom extends js.Object {
+  
   @js.native
   class comment protected ()
     extends typings.ckeditor.CKEDITOR.dom.comment {
@@ -48,6 +49,23 @@ object dom extends js.Object {
     def this(element: HTMLElement) = this()
     def this(element: String, ownerDocument: typings.ckeditor.CKEDITOR.dom.document) = this()
     def this(element: HTMLElement, ownerDocument: typings.ckeditor.CKEDITOR.dom.document) = this()
+  }
+  /* static members */
+  @js.native
+  object element extends js.Object {
+    
+    // static method
+    def clearAllMarkers(database: js.Any): js.Any = js.native
+    
+    def clearMarkers(database: js.Any, element: typings.ckeditor.CKEDITOR.dom.element, removeFromDatabase: Boolean): Unit = js.native
+    
+    def createFromHtml(html: String): typings.ckeditor.CKEDITOR.dom.element = js.native
+    
+    def get(element: String): typings.ckeditor.CKEDITOR.dom.element = js.native
+    def get(element: typings.ckeditor.CKEDITOR.dom.element): typings.ckeditor.CKEDITOR.dom.element = js.native
+    def get(element: HTMLElement): typings.ckeditor.CKEDITOR.dom.element = js.native
+    
+    def setMarker(database: js.Any, element: typings.ckeditor.CKEDITOR.dom.element, name: String, value: js.Any): typings.ckeditor.CKEDITOR.dom.element = js.native
   }
   
   @js.native
@@ -87,6 +105,12 @@ object dom extends js.Object {
     def this(root: typings.ckeditor.CKEDITOR.dom.document) = this()
     def this(root: typings.ckeditor.CKEDITOR.dom.element) = this()
   }
+  /* static members */
+  @js.native
+  object range extends js.Object {
+    
+    def mergeRanges(ranges: js.Array[typings.ckeditor.CKEDITOR.dom.range]): js.Array[typings.ckeditor.CKEDITOR.dom.range] = js.native
+  }
   
   @js.native
   class rangeList ()
@@ -118,59 +142,49 @@ object dom extends js.Object {
     extends typings.ckeditor.CKEDITOR.dom.walker {
     def this(range: typings.ckeditor.CKEDITOR.dom.range) = this()
   }
+  /* static members */
+  @js.native
+  object walker extends js.Object {
+    
+    def blockBoundary(customNodeNames: js.Any): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    
+    def bogus(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    def bogus(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    
+    def bookmark(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    def bookmark(contentOnly: js.UndefOr[scala.Nothing], isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    def bookmark(contentOnly: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    def bookmark(contentOnly: Boolean, isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    
+    def editable(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    def editable(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    
+    def empty(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    def empty(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    
+    def ignored(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    def ignored(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    
+    def invisible(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    def invisible(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    
+    def listItemBoundary(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    
+    def nodeType(`type`: Double): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    def nodeType(`type`: Double, isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    
+    def temp(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    def temp(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    
+    var validEmptyBlockContainers: StringDictionary[js.Any] = js.native
+    
+    def whitespaces(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    def whitespaces(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+  }
   
   @js.native
   class window protected ()
     extends typings.ckeditor.CKEDITOR.dom.window {
     def this(domWindow: Window) = this()
   }
-  
-  /* static members */
-  @js.native
-  object element extends js.Object {
-    // static method
-    def clearAllMarkers(database: js.Any): js.Any = js.native
-    def clearMarkers(database: js.Any, element: typings.ckeditor.CKEDITOR.dom.element, removeFromDatabase: Boolean): Unit = js.native
-    def createFromHtml(html: String): typings.ckeditor.CKEDITOR.dom.element = js.native
-    def get(element: String): typings.ckeditor.CKEDITOR.dom.element = js.native
-    def get(element: typings.ckeditor.CKEDITOR.dom.element): typings.ckeditor.CKEDITOR.dom.element = js.native
-    def get(element: HTMLElement): typings.ckeditor.CKEDITOR.dom.element = js.native
-    def setMarker(database: js.Any, element: typings.ckeditor.CKEDITOR.dom.element, name: String, value: js.Any): typings.ckeditor.CKEDITOR.dom.element = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object range extends js.Object {
-    def mergeRanges(ranges: js.Array[typings.ckeditor.CKEDITOR.dom.range]): js.Array[typings.ckeditor.CKEDITOR.dom.range] = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object walker extends js.Object {
-    var validEmptyBlockContainers: StringDictionary[js.Any] = js.native
-    def blockBoundary(customNodeNames: js.Any): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def bogus(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def bogus(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def bookmark(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def bookmark(contentOnly: js.UndefOr[scala.Nothing], isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def bookmark(contentOnly: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def bookmark(contentOnly: Boolean, isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def editable(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def editable(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def empty(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def empty(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def ignored(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def ignored(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def invisible(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def invisible(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def listItemBoundary(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def nodeType(`type`: Double): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def nodeType(`type`: Double, isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def temp(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def temp(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def whitespaces(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-    def whitespaces(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
-  }
-  
 }
-

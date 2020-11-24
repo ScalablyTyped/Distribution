@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new Material instance.
@@ -58,4 +58,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class Material ()
   extends typings.playcanvas.pc.Material
-

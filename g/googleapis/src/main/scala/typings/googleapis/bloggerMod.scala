@@ -12,24 +12,32 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/blogger", JSImport.Namespace)
 @js.native
 object bloggerMod extends js.Object {
+  
   def blogger(options: Options): Blogger = js.native
   def blogger(options: typings.googleapis.bloggerV3Mod.bloggerV3.Options): typings.googleapis.bloggerV3Mod.bloggerV3.Blogger = js.native
   @JSName("blogger")
   def blogger_v2(version: v2): Blogger = js.native
   @JSName("blogger")
   def blogger_v3(version: v3): typings.googleapis.bloggerV3Mod.bloggerV3.Blogger = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v2 protected () extends Blogger {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v2
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Blogger]
+            ]
     
     @js.native
     class v3 protected ()
@@ -37,13 +45,6 @@ object bloggerMod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    object v2
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Blogger]
-            ]
-    
     @js.native
     object v3
       extends TopLevel[
@@ -53,11 +54,11 @@ object bloggerMod extends js.Object {
                 typings.googleapis.bloggerV3Mod.bloggerV3.Blogger
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -85,8 +86,5 @@ object bloggerMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

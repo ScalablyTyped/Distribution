@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constructor function for the HttpError class. */
 @js.native
@@ -18,4 +18,3 @@ trait HttpErrorStatic
       /* extra */ js.Object, 
       HttpError
     ]
-

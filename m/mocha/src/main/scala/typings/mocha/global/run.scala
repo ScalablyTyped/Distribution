@@ -2,11 +2,12 @@ package typings.mocha.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("run")
 @js.native
 object run extends js.Object {
+  
   // #region Test interface augmentations
   /**
     * Triggers root suite execution.
@@ -18,4 +19,3 @@ object run extends js.Object {
     */
   def apply(): Unit = js.native
 }
-

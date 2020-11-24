@@ -9,11 +9,12 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mirrorx", "withRouter")
 @js.native
 object withRouter extends js.Object {
+  
   def apply[P /* <: RouteComponentProps[_] */](component: ComponentType[P]): ComponentClass[
     Omit[
       P, 
@@ -23,4 +24,3 @@ object withRouter extends js.Object {
   ] = js.native
   def apply[TFunction /* <: ComponentClass[_, ComponentState] */](target: TFunction): TFunction = js.native
 }
-

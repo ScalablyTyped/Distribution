@@ -2,11 +2,13 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "updateSourceFileNode")
 @js.native
 object updateSourceFileNode extends js.Object {
+  
+  /** @deprecated Use `factory.updateSourceFile` or the factory supplied by your transformation context instead. */
   def apply(node: SourceFile, statements: js.Array[Statement]): SourceFile = js.native
   def apply(
     node: SourceFile,
@@ -258,4 +260,3 @@ object updateSourceFileNode extends js.Object {
     libReferences: js.Array[FileReference]
   ): SourceFile = js.native
 }
-

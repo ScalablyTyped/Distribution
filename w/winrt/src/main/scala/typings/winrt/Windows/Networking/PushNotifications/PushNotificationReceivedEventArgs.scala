@@ -5,12 +5,12 @@ import typings.winrt.Windows.UI.Notifications.TileNotification
 import typings.winrt.Windows.UI.Notifications.ToastNotification
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PushNotificationReceivedEventArgs extends IPushNotificationReceivedEventArgs
-
 object PushNotificationReceivedEventArgs {
+  
   @scala.inline
   def apply(
     badgeNotification: BadgeNotification,
@@ -24,4 +24,3 @@ object PushNotificationReceivedEventArgs {
     __obj.asInstanceOf[PushNotificationReceivedEventArgs]
   }
 }
-

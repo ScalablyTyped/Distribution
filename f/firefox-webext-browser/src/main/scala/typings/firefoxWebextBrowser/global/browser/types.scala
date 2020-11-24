@@ -2,7 +2,7 @@ package typings.firefoxWebextBrowser.global.browser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains types used by other schemas.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.types")
 @js.native
 object types extends js.Object
-

@@ -10,9 +10,9 @@ Get an array of recursive directory contents
 | ------------------ | :-------------: |
 | Full name          | walk-sync |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 290 |
-| # downloads        | 27580439 |
+| # releases         | 14 |
+| # dependents       | 335 |
+| # downloads        | 36958945 |
 | # stars            | 4 |
 
 ## Links

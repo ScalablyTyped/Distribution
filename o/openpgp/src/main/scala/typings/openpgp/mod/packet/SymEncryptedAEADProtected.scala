@@ -6,7 +6,7 @@ import typings.openpgp.openpgpStrings.encrypt
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "packet.SymEncryptedAEADProtected")
 @js.native
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   * AEAD Protected Data Packet
   */
 class SymEncryptedAEADProtected () extends js.Object {
+  
   @JSName("crypt")
   def crypt_decrypt(fn: decrypt, key: Uint8Array, data: ReadableStream[Uint8Array], streaming: Boolean): Uint8Array | ReadableStream[Uint8Array] = js.native
   @JSName("crypt")
@@ -33,6 +34,7 @@ class SymEncryptedAEADProtected () extends js.Object {
     */
   @JSName("crypt")
   def crypt_encrypt(fn: encrypt, key: Uint8Array, data: Uint8Array, streaming: Boolean): Uint8Array | ReadableStream[Uint8Array] = js.native
+  
   /**
     * Decrypt the encrypted payload.
     * @param sessionKeyAlgorithm The session key's cipher algorithm e.g. 'aes128'
@@ -41,6 +43,7 @@ class SymEncryptedAEADProtected () extends js.Object {
     * @returns
     */
   def decrypt(sessionKeyAlgorithm: String, key: Uint8Array, streaming: Boolean): Boolean = js.native
+  
   /**
     * Encrypt the packet list payload.
     * @param sessionKeyAlgorithm The session key's cipher algorithm e.g. 'aes128'
@@ -48,16 +51,17 @@ class SymEncryptedAEADProtected () extends js.Object {
     * @param streaming Whether the top-level function will return a stream
     */
   def encrypt(sessionKeyAlgorithm: String, key: Uint8Array, streaming: Boolean): Unit = js.native
+  
   def read(bytes: ReadableStream[Uint8Array]): Unit = js.native
   /**
     * Parse an encrypted payload of bytes in the order: version, IV, ciphertext (see specification)
     * @param bytes
     */
   def read(bytes: Uint8Array): Unit = js.native
+  
   /**
     * Write the encrypted payload of bytes in the order: version, IV, ciphertext (see specification)
     * @returns The encrypted payload
     */
   def write(): Uint8Array | ReadableStream[Uint8Array] = js.native
 }
-

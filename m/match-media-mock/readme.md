@@ -12,7 +12,7 @@ server side compatible replacement for Window.matchMedia()
 | Keywords           | radium, matchMedia, isomorphic, server, mediaquery |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 109336 |
+| # downloads        | 189409 |
 | # stars            | 0 |
 
 ## Links

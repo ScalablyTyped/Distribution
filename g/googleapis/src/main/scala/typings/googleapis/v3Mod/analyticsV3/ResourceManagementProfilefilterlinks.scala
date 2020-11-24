@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Profilefilterlinks")
 @js.native
 class ResourceManagementProfilefilterlinks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.management.profileFilterLinks.delete
     * @desc Delete a profile filter link.
@@ -44,6 +46,7 @@ class ResourceManagementProfilefilterlinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * analytics.management.profileFilterLinks.get
     * @desc Returns a single profile filter link.
@@ -78,6 +81,7 @@ class ResourceManagementProfilefilterlinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProfileFilterLink]
   ): Unit = js.native
+  
   /**
     * analytics.management.profileFilterLinks.insert
     * @desc Create a new profile filter link.
@@ -112,6 +116,7 @@ class ResourceManagementProfilefilterlinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProfileFilterLink]
   ): Unit = js.native
+  
   /**
     * analytics.management.profileFilterLinks.list
     * @desc Lists all profile filter links for a profile.
@@ -147,6 +152,7 @@ class ResourceManagementProfilefilterlinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProfileFilterLinks]
   ): Unit = js.native
+  
   /**
     * analytics.management.profileFilterLinks.patch
     * @desc Update an existing profile filter link. This method supports patch
@@ -183,6 +189,7 @@ class ResourceManagementProfilefilterlinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProfileFilterLink]
   ): Unit = js.native
+  
   /**
     * analytics.management.profileFilterLinks.update
     * @desc Update an existing profile filter link.
@@ -219,4 +226,3 @@ class ResourceManagementProfilefilterlinks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaProfileFilterLink]
   ): Unit = js.native
 }
-

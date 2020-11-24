@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * derivations of this abstract service are used to load components into Frames of the environment
@@ -21,8 +21,8 @@ trait SynchronousFrameLoader
   extends XSynchronousFrameLoader
      with XInitialization
      with XNamed
-
 object SynchronousFrameLoader {
+  
   @scala.inline
   def apply(
     Name: String,
@@ -39,4 +39,3 @@ object SynchronousFrameLoader {
     __obj.asInstanceOf[SynchronousFrameLoader]
   }
 }
-

@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a hierarchy in a data pilot source dimension.
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 trait DataPilotSourceHierarchy
   extends XNamed
      with XLevelsSupplier
-
 object DataPilotSourceHierarchy {
+  
   @scala.inline
   def apply(
     Levels: XNameAccess,
@@ -33,4 +33,3 @@ object DataPilotSourceHierarchy {
     __obj.asInstanceOf[DataPilotSourceHierarchy]
   }
 }
-

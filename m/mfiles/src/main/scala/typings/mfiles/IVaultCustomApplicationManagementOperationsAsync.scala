@@ -3,10 +3,11 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFExtApplicationPlatform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultCustomApplicationManagementOperationsAsync extends js.Object {
+  
   def DownloadCustomApplicationBlock(DownloadID: Double, BlockSize: Double, Offset: Double): Unit = js.native
   def DownloadCustomApplicationBlock(
     DownloadID: Double,
@@ -60,6 +61,7 @@ trait IVaultCustomApplicationManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def DownloadCustomApplicationBlockBegin(ApplicationID: String): Unit = js.native
   def DownloadCustomApplicationBlockBegin(
     ApplicationID: String,
@@ -96,6 +98,7 @@ trait IVaultCustomApplicationManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def DownloadCustomApplicationBlockBegin_32bit(ApplicationID: String): Unit = js.native
   def DownloadCustomApplicationBlockBegin_32bit(
     ApplicationID: String,
@@ -132,6 +135,7 @@ trait IVaultCustomApplicationManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def DownloadCustomApplicationBlock_32bit(DownloadID: Double, BlockSize: Double, Offset: Double): Unit = js.native
   def DownloadCustomApplicationBlock_32bit(
     DownloadID: Double,
@@ -185,6 +189,7 @@ trait IVaultCustomApplicationManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def EnableCustomApplication(ApplicationID: String, Enabled: Boolean): Unit = js.native
   def EnableCustomApplication(
     ApplicationID: String,
@@ -227,6 +232,7 @@ trait IVaultCustomApplicationManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetCustomApplication(ApplicationID: String): Unit = js.native
   def GetCustomApplication(
     ApplicationID: String,
@@ -263,6 +269,7 @@ trait IVaultCustomApplicationManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetCustomApplications(): Unit = js.native
   def GetCustomApplications(
     successCallback: js.UndefOr[scala.Nothing],
@@ -293,6 +300,7 @@ trait IVaultCustomApplicationManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetCustomApplicationsEx(Platform: MFExtApplicationPlatform): Unit = js.native
   def GetCustomApplicationsEx(
     Platform: MFExtApplicationPlatform,
@@ -332,6 +340,7 @@ trait IVaultCustomApplicationManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def InstallCustomApplication(File: String): Unit = js.native
   def InstallCustomApplication(
     File: String,
@@ -368,6 +377,7 @@ trait IVaultCustomApplicationManagementOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UninstallCustomApplication(ApplicationID: String): Unit = js.native
   def UninstallCustomApplication(
     ApplicationID: String,
@@ -405,4 +415,3 @@ trait IVaultCustomApplicationManagementOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.bunyanPrettystream.mod
 import typings.bunyanPrettystream.anon.Mode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bunyan-prettystream", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends PrettyStream {
   def this(options: Mode) = this()
 }
-

@@ -11,8 +11,8 @@ A packing algorithm for 2D bin packing. Largely based on code and a blog post by
 | Full name          | bin-pack |
 | Keywords           | bin, rectangle, square, sprite, pack |
 | # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 2240503 |
+| # dependents       | 17 |
+| # downloads        | 2989144 |
 | # stars            | 2 |
 
 ## Links

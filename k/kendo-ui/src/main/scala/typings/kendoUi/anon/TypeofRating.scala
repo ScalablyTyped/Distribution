@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.ui.RatingOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofRating
   extends Instantiable1[/* element */ Element, Rating]
      with Instantiable2[/* element */ Element, /* options */ RatingOptions, Rating] {
-  var fn: Rating = js.native
+  
   def extend(proto: js.Object): Rating = js.native
+  
+  var fn: Rating = js.native
 }
-

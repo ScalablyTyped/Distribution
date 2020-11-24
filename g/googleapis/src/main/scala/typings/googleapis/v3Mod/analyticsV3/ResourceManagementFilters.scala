@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Filters")
 @js.native
 class ResourceManagementFilters protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.management.filters.delete
     * @desc Delete a filter.
@@ -42,6 +44,7 @@ class ResourceManagementFilters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFilter]
   ): Unit = js.native
+  
   /**
     * analytics.management.filters.get
     * @desc Returns a filters to which the user has access.
@@ -71,6 +74,7 @@ class ResourceManagementFilters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFilter]
   ): Unit = js.native
+  
   /**
     * analytics.management.filters.insert
     * @desc Create a new filter.
@@ -100,6 +104,7 @@ class ResourceManagementFilters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFilter]
   ): Unit = js.native
+  
   /**
     * analytics.management.filters.list
     * @desc Lists all filters for an account
@@ -130,6 +135,7 @@ class ResourceManagementFilters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFilters]
   ): Unit = js.native
+  
   /**
     * analytics.management.filters.patch
     * @desc Updates an existing filter. This method supports patch semantics.
@@ -160,6 +166,7 @@ class ResourceManagementFilters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFilter]
   ): Unit = js.native
+  
   /**
     * analytics.management.filters.update
     * @desc Updates an existing filter.
@@ -191,4 +198,3 @@ class ResourceManagementFilters protected () extends js.Object {
     callback: BodyResponseCallback[SchemaFilter]
   ): Unit = js.native
 }
-

@@ -3,12 +3,12 @@ package typings.winrt.Windows.Security.Cryptography.Core
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HashAlgorithmProvider extends IHashAlgorithmProvider
-
 object HashAlgorithmProvider {
+  
   @scala.inline
   def apply(
     algorithmName: String,
@@ -20,4 +20,3 @@ object HashAlgorithmProvider {
     __obj.asInstanceOf[HashAlgorithmProvider]
   }
 }
-

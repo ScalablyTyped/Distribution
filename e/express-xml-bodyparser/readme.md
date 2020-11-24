@@ -11,8 +11,8 @@ Simple XML body parser connect/express middleware
 | Full name          | express-xml-bodyparser |
 | Keywords           | xml, json, middleware, parser, express |
 | # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 619580 |
+| # dependents       | 50 |
+| # downloads        | 910527 |
 | # stars            | 14 |
 
 ## Links

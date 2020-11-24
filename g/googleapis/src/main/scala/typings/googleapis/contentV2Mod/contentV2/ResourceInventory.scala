@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Resource$Inventory")
 @js.native
 class ResourceInventory protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * content.inventory.custombatch
     * @desc Updates price and availability for multiple products or stores in a
@@ -47,6 +49,7 @@ class ResourceInventory protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInventoryCustomBatchResponse]
   ): Unit = js.native
+  
   /**
     * content.inventory.set
     * @desc Updates price and availability of a product in your Merchant Center
@@ -81,4 +84,3 @@ class ResourceInventory protected () extends js.Object {
     callback: BodyResponseCallback[SchemaInventorySetResponse]
   ): Unit = js.native
 }
-

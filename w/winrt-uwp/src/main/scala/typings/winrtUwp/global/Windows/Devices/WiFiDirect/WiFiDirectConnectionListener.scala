@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Devices.WiFiDirect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Class used to listen for incoming Wi-Fi Direct connection requests. */
 @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectConnectionListener")
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 /** Creates a new WiFiDirectConnectionListener object. */
 class WiFiDirectConnectionListener ()
   extends typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectConnectionListener
-

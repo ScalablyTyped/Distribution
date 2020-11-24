@@ -2,11 +2,12 @@ package typings.ora.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ora", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Elegant terminal spinner.
   	@param options - If a string is provided, it is treated as a shortcut for `options.text`.
@@ -23,6 +24,7 @@ object ^ extends js.Object {
   def apply(): Ora = js.native
   def apply(options: String): Ora = js.native
   def apply(options: Options): Ora = js.native
+  
   /**
   	Starts a spinner for a promise. The spinner is stopped with `.succeed()` if the promise fulfills or with `.fail()` if it rejects.
   	@param action - The promise to start the spinner for.
@@ -33,4 +35,3 @@ object ^ extends js.Object {
   def promise(action: js.Thenable[_], options: String): Ora = js.native
   def promise(action: js.Thenable[_], options: Options): Ora = js.native
 }
-

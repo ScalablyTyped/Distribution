@@ -4,12 +4,12 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.StorageFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CameraCaptureUI extends ICameraCaptureUI
-
 object CameraCaptureUI {
+  
   @scala.inline
   def apply(
     captureFileAsync: CameraCaptureUIMode => IAsyncOperation[StorageFile],
@@ -20,4 +20,3 @@ object CameraCaptureUI {
     __obj.asInstanceOf[CameraCaptureUI]
   }
 }
-

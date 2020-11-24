@@ -1,15 +1,14 @@
 package typings.superstruct.mod
 
-import typings.std.Iterable
+import typings.std.IterableIterator
 import typings.superstruct.structMod.StructFailure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("superstruct", "StructError")
 @js.native
 class StructError protected ()
   extends typings.superstruct.structMod.StructError {
-  def this(failure: StructFailure, iterable: Iterable[StructFailure]) = this()
+  def this(failure: StructFailure, moreFailures: IterableIterator[StructFailure]) = this()
 }
-

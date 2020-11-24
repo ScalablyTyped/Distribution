@@ -2,14 +2,14 @@ package typings.sharepoint.SP.JsGrid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UpdateTrackingMode extends js.Object
-
 @JSGlobal("SP.JsGrid.UpdateTrackingMode")
 @js.native
 object UpdateTrackingMode extends js.Object {
+  
   @js.native
   sealed trait PropBoth extends UpdateTrackingMode
   
@@ -20,6 +20,4 @@ object UpdateTrackingMode extends js.Object {
    // 3,
   @js.native
   sealed trait PropLocalized extends UpdateTrackingMode
-  
 }
-

@@ -10,9 +10,9 @@ BrowserSync and Webpack integration
 | ------------------ | :-------------: |
 | Full name          | browser-sync-webpack-plugin |
 | Keywords           | webpack, webpack-plugin, browsersync, browser-sync, livereload, serve |
-| # releases         | 6 |
-| # dependents       | 62 |
-| # downloads        | 3272637 |
+| # releases         | 0 |
+| # dependents       | 72 |
+| # downloads        | 4717705 |
 | # stars            | 37 |
 
 ## Links

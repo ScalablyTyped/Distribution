@@ -7,10 +7,11 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ImapMessage extends EventEmitter {
+  
   def on(event: String, listener: js.Function): this.type = js.native
   @JSName("on")
   def on_attributes(event: attributes, listener: js.Function1[/* attrs */ ImapMessageAttributes, Unit]): this.type = js.native
@@ -22,4 +23,3 @@ trait ImapMessage extends EventEmitter {
   @JSName("on")
   def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
 }
-

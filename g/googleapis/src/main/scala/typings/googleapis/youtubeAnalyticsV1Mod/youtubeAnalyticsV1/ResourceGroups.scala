@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtubeAnalytics/v1", "youtubeAnalytics_v1.Resource$Groups")
 @js.native
 class ResourceGroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtubeAnalytics.groups.delete
     * @desc Deletes a group.
@@ -38,6 +40,7 @@ class ResourceGroups protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceGroupsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceGroupsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * youtubeAnalytics.groups.insert
     * @desc Creates a group.
@@ -67,6 +70,7 @@ class ResourceGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroup]
   ): Unit = js.native
+  
   /**
     * youtubeAnalytics.groups.list
     * @desc Returns a collection of groups that match the API request
@@ -101,6 +105,7 @@ class ResourceGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroupListResponse]
   ): Unit = js.native
+  
   /**
     * youtubeAnalytics.groups.update
     * @desc Modifies a group. For example, you could change a group's title.
@@ -131,4 +136,3 @@ class ResourceGroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGroup]
   ): Unit = js.native
 }
-

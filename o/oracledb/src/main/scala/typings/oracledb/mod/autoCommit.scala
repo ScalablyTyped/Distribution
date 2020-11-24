@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * If true, the transaction in the current connection is automatically committed at the end of statement execution.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "autoCommit")
 @js.native
 object autoCommit extends TopLevel[Boolean]
-

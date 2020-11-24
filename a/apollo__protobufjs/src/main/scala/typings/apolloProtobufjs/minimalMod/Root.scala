@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.apolloProtobufjs.mod.INamespace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs/minimal", "Root")
 @js.native
@@ -14,13 +14,13 @@ import scala.scalajs.js.annotation._
   */
 class Root ()
   extends typings.apolloProtobufjs.mod.Root {
-  def this(options: StringDictionary[js.Any]) = this()
+  def this(options: StringDictionary[js.UndefOr[js.Any]]) = this()
 }
-
 /* static members */
 @JSImport("@apollo/protobufjs/minimal", "Root")
 @js.native
 object Root extends js.Object {
+  
   /**
     * Loads a namespace descriptor into a root namespace.
     * @param json Nameespace descriptor
@@ -30,4 +30,3 @@ object Root extends js.Object {
   def fromJSON(json: INamespace): typings.apolloProtobufjs.mod.Root = js.native
   def fromJSON(json: INamespace, root: typings.apolloProtobufjs.mod.Root): typings.apolloProtobufjs.mod.Root = js.native
 }
-

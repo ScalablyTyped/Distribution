@@ -12,7 +12,7 @@ Higher level promise-based template rendering for Co and others, built on co-ren
 | Keywords           | template, render, consolidate, engine, koa |
 | # releases         | 0 |
 | # dependents       | 55 |
-| # downloads        | 84389 |
+| # downloads        | 49019 |
 | # stars            | 9 |
 
 ## Links

@@ -2,11 +2,12 @@ package typings.babelTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@babel/types", "functionTypeAnnotation")
 @js.native
 object functionTypeAnnotation extends js.Object {
+  
   def apply(
     typeParameters: js.UndefOr[scala.Nothing],
     params: js.Array[FunctionTypeParam_],
@@ -57,4 +58,3 @@ object functionTypeAnnotation extends js.Object {
     returnType: FlowType
   ): FunctionTypeAnnotation_ = js.native
 }
-

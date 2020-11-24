@@ -3,7 +3,7 @@ package typings.openlayers.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Object")
 @js.native
@@ -52,6 +52,7 @@ import scala.scalajs.js.annotation._
   */
 class Object () extends Observable {
   def this(opt_values: StringDictionary[js.Any]) = this()
+  
   /**
     * Gets a value.
     * @param key Key name.
@@ -59,18 +60,21 @@ class Object () extends Observable {
     * @api stable
     */
   def get(key: String): js.Any = js.native
+  
   /**
     * Get a list of object property names.
     * @return List of property names.
     * @api stable
     */
   def getKeys(): js.Array[String] = js.native
+  
   /**
     * Get an object of all property names and values.
     * @return Object.
     * @api stable
     */
   def getProperties(): StringDictionary[js.Any] = js.native
+  
   /**
     * Sets a value.
     * @param key Key name.
@@ -80,6 +84,7 @@ class Object () extends Observable {
     */
   def set(key: String, value: js.Any): Unit = js.native
   def set(key: String, value: js.Any, opt_silent: Boolean): Unit = js.native
+  
   /**
     * Sets a collection of key-value pairs.  Note that this changes any existing
     * properties and adds new ones (it does not remove any existing properties).
@@ -89,6 +94,7 @@ class Object () extends Observable {
     */
   def setProperties(values: StringDictionary[js.Any]): Unit = js.native
   def setProperties(values: StringDictionary[js.Any], opt_silent: Boolean): Unit = js.native
+  
   /**
     * Unsets a property.
     * @param key Key name.
@@ -98,4 +104,3 @@ class Object () extends Observable {
   def unset(key: String): Unit = js.native
   def unset(key: String, opt_silent: Boolean): Unit = js.native
 }
-

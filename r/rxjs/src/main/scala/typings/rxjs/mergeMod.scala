@@ -5,11 +5,12 @@ import typings.rxjs.typesMod.ObservableInput
 import typings.rxjs.typesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/observable/merge", JSImport.Namespace)
 @js.native
 object mergeMod extends js.Object {
+  
   def merge[T](observables: (Double | ObservableInput[T] | SchedulerLike)*): Observable[T] = js.native
   def merge[T](v1: ObservableInput[T]): Observable[T] = js.native
   def merge[T](v1: ObservableInput[T], concurrent: Double): Observable[T] = js.native
@@ -123,4 +124,3 @@ object mergeMod extends js.Object {
   @JSName("merge")
   def merge_TR[T, R](observables: (Double | ObservableInput[_] | SchedulerLike)*): Observable[R] = js.native
 }
-

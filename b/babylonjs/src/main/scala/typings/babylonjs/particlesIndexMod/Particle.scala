@@ -2,7 +2,7 @@ package typings.babylonjs.particlesIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Particles/index", "Particle")
 @js.native
@@ -17,11 +17,10 @@ class Particle protected ()
     */
   particleSystem: typings.babylonjs.particleSystemMod.ParticleSystem) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Particles/index", "Particle")
 @js.native
 object Particle extends js.Object {
+  
   var _Count: js.Any = js.native
 }
-

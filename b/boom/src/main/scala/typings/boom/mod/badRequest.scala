@@ -2,11 +2,12 @@ package typings.boom.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("boom", "badRequest")
 @js.native
 object badRequest extends js.Object {
+  
   // 4xx
   /**
     * Returns a 400 Bad Request error
@@ -19,4 +20,3 @@ object badRequest extends js.Object {
   def apply[Data](message: String): Boom[Data] = js.native
   def apply[Data](message: String, data: Data): Boom[Data] = js.native
 }
-

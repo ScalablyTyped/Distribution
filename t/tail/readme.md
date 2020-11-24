@@ -10,9 +10,9 @@ tail a file in node
 | ------------------ | :-------------: |
 | Full name          | tail |
 | Keywords           | tail, file, logs |
-| # releases         | 8 |
-| # dependents       | 169 |
-| # downloads        | 5061863 |
+| # releases         | 7 |
+| # dependents       | 193 |
+| # downloads        | 7695363 |
 | # stars            | 12 |
 
 ## Links

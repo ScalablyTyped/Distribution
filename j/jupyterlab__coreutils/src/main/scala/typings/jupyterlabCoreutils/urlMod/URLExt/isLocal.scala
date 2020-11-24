@@ -2,11 +2,12 @@ package typings.jupyterlabCoreutils.urlMod.URLExt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/coreutils/lib/url", "URLExt.isLocal")
 @js.native
 object isLocal extends js.Object {
+  
   /**
     * Test whether the url is a local url.
     *
@@ -16,4 +17,3 @@ object isLocal extends js.Object {
     */
   def apply(url: String): Boolean = js.native
 }
-

@@ -21,10 +21,11 @@ import typings.tooltipster.tooltipsterStrings.status
 import typings.tooltipster.tooltipsterStrings.triggerHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ITooltipsterJQuery extends js.Object {
+  
   /** Activates Tooltipster */
   def apply(): JQuery = js.native
   /**
@@ -110,4 +111,3 @@ trait ITooltipsterJQuery extends js.Object {
   def apply(method: triggerHandler, eventName: String): JQuery = js.native
   def apply(options: ITooltipsterOptions): JQuery = js.native
 }
-

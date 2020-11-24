@@ -9,25 +9,11 @@ import typings.chromeApps.chrome.sockets.tcpServer.SocketInfo
 import typings.chromeApps.chrome.sockets.tcpServer.SocketProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeoftcpServer extends js.Object {
-  /**
-    * Event raised when a connection has been made to the server socket.
-    *
-    * @see https://developer.chrome.com/apps/sockets_tcpServer#event-onAccept
-    */
-  val onAccept: Event[js.Function1[/* args */ AcceptEventArgs, Unit]] = js.native
-  /**
-    * Event raised when a network error occured while the runtime was waiting
-    * for new connections on the socket address and port. Once this event is
-    * raised, the socket is set to paused and no more onAccept events are
-    * raised for this socket until the socket is resumed.
-    *
-    * @see https://developer.chrome.com/apps/sockets_tcpServer#event-onAcceptError
-    */
-  val onAcceptError: Event[js.Function1[/* args */ AcceptErrorEventArgs, Unit]] = js.native
+  
   /**
     * Disconnects and destroys the socket. Each socket created should be closed
     * after use. The socket id is no longer valid as soon at the function is
@@ -40,6 +26,7 @@ trait TypeoftcpServer extends js.Object {
     */
   def close(socketId: integer): Unit = js.native
   def close(socketId: integer, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Creates a TCP server socket.
     *
@@ -55,6 +42,7 @@ trait TypeoftcpServer extends js.Object {
     * @param callback   Called when the socket has been created.
     */
   def create(properties: SocketProperties, callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = js.native
+  
   /**
     * Disconnects the listening socket, i.e. stops accepting new connections
     * and releases the address/port the socket is bound to. The socket
@@ -67,6 +55,7 @@ trait TypeoftcpServer extends js.Object {
     */
   def disconnect(socketId: integer): Unit = js.native
   def disconnect(socketId: integer, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Retrieves the state of the given socket.
     *
@@ -75,6 +64,7 @@ trait TypeoftcpServer extends js.Object {
     * @param callback Called when the socket state is available.
     */
   def getInfo(socketId: integer, callback: js.Function1[/* socketInfo */ SocketInfo, Unit]): Unit = js.native
+  
   /**
     * Retrieves the list of currently opened sockets owned by the application.
     *
@@ -82,6 +72,7 @@ trait TypeoftcpServer extends js.Object {
     * @param callback Called when the list of sockets is available.
     */
   def getSockets(callback: js.Function1[/* socketInfos */ js.Array[SocketInfo], Unit]): Unit = js.native
+  
   /**
     * Listens for connections on the specified port and address. If the
     * port/address is in use, the callback indicates a failure.
@@ -122,6 +113,24 @@ trait TypeoftcpServer extends js.Object {
     port: integer,
     callback: js.Function1[/* result */ integer, Unit]
   ): Unit = js.native
+  
+  /**
+    * Event raised when a connection has been made to the server socket.
+    *
+    * @see https://developer.chrome.com/apps/sockets_tcpServer#event-onAccept
+    */
+  val onAccept: Event[js.Function1[/* args */ AcceptEventArgs, Unit]] = js.native
+  
+  /**
+    * Event raised when a network error occured while the runtime was waiting
+    * for new connections on the socket address and port. Once this event is
+    * raised, the socket is set to paused and no more onAccept events are
+    * raised for this socket until the socket is resumed.
+    *
+    * @see https://developer.chrome.com/apps/sockets_tcpServer#event-onAcceptError
+    */
+  val onAcceptError: Event[js.Function1[/* args */ AcceptErrorEventArgs, Unit]] = js.native
+  
   /**
     * Enables or disables a listening socket from accepting new connections.
     * When paused, a listening socket accepts new connections until its backlog
@@ -133,6 +142,7 @@ trait TypeoftcpServer extends js.Object {
     */
   def setPaused(socketId: integer, paused: Boolean): Unit = js.native
   def setPaused(socketId: integer, paused: Boolean, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Updates the socket properties.
     *
@@ -144,4 +154,3 @@ trait TypeoftcpServer extends js.Object {
   def update(socketId: integer, properties: SocketProperties): Unit = js.native
   def update(socketId: integer, properties: SocketProperties, callback: js.Function0[Unit]): Unit = js.native
 }
-

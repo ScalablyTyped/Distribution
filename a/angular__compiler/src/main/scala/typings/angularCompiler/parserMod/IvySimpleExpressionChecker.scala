@@ -3,7 +3,7 @@ package typings.angularCompiler.parserMod
 import typings.angularCompiler.astMod.RecursiveAstVisitor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class implements SimpleExpressionChecker used in View Engine and performs more strict checks
@@ -14,9 +14,10 @@ import scala.scalajs.js.annotation._
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.angularCompiler.astMod.AstVisitor because Already inherited
-- typings.angularCompiler.parserMod.SimpleExpressionChecker because var conflicts: visit, visitASTWithSource. Inlined errors */ @js.native
+- typings.angularCompiler.parserMod.SimpleExpressionChecker because var conflicts: visit, visitASTWithSource, visitThisReceiver, visitUnary. Inlined errors */ @js.native
 trait IvySimpleExpressionChecker extends RecursiveAstVisitor {
+  
   var errors: js.Array[String] = js.native
+  
   def visitPipe(): Unit = js.native
 }
-

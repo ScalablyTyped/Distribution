@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "SubEmitter")
 @js.native
@@ -17,20 +17,26 @@ class SubEmitter protected ()
     */
   particleSystem: typings.babylonjs.particleSystemMod.ParticleSystem) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "SubEmitter")
 @js.native
 object SubEmitter extends js.Object {
+  
   /**
     * Creates a new SubEmitter from a serialized JSON version
     * @param serializationObject defines the JSON object to read from
-    * @param scene defines the hosting scene
+    * @param sceneOrEngine defines the hosting scene or the hosting engine
     * @param rootUrl defines the rootUrl for data loading
     * @returns a new SubEmitter
     */
-  def Parse(serializationObject: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.subEmitterMod.SubEmitter = js.native
+  def Parse(serializationObject: js.Any, sceneOrEngine: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.subEmitterMod.SubEmitter = js.native
+  def Parse(
+    serializationObject: js.Any,
+    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
+    rootUrl: String
+  ): typings.babylonjs.subEmitterMod.SubEmitter = js.native
+  
   /** @hidden */
-  def _ParseParticleSystem(system: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = js.native
+  def _ParseParticleSystem(system: js.Any, sceneOrEngine: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = js.native
+  def _ParseParticleSystem(system: js.Any, sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = js.native
 }
-

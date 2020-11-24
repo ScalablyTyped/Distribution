@@ -10,9 +10,9 @@ Primitives to build simple, flexible, WAI-ARIA compliant React datepicker compon
 | ------------------ | :-------------: |
 | Full name          | dayzed |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 2 |
-| # downloads        | 384552 |
+| # releases         | 8 |
+| # dependents       | 5 |
+| # downloads        | 586323 |
 | # stars            | 0 |
 
 ## Links

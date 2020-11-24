@@ -12,7 +12,7 @@ Browser locale negotiation for node.js
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 52 |
-| # downloads        | 1428487 |
+| # downloads        | 1412609 |
 | # stars            | 8 |
 
 ## Links

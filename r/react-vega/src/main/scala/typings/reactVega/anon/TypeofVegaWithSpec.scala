@@ -5,10 +5,10 @@ import typings.reactVega.mod.VegaWithSpec
 import typings.vegaTypings.specMod.Spec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofVegaWithSpec extends Instantiable0[VegaWithSpec] {
+  
   def getSpec(): Spec = js.native
 }
-

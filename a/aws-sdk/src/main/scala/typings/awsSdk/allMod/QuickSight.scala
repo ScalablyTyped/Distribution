@@ -4,7 +4,7 @@ import typings.awsSdk.quicksightMod.ClientConfiguration
 import typings.awsSdk.quicksightMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "QuickSight")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class QuickSight () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -2,14 +2,14 @@ package typings.tableau.tableau
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FieldAggregationType extends js.Object
-
 @JSGlobal("tableau.FieldAggregationType")
 @js.native
 object FieldAggregationType extends js.Object {
+  
   @js.native
   sealed trait ATTR extends FieldAggregationType
   
@@ -126,6 +126,4 @@ object FieldAggregationType extends js.Object {
   
   @js.native
   sealed trait YEAR extends FieldAggregationType
-  
 }
-

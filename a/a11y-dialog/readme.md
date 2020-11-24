@@ -1,7 +1,7 @@
 
 # Scala.js typings for a11y-dialog
 
-Typings are for version 5.2
+Typings are for version 5.4.2
 
 ## Library description:
 A tiny script to make dialog windows accessible to assistive technology users.
@@ -10,9 +10,9 @@ A tiny script to make dialog windows accessible to assistive technology users.
 | ------------------ | :-------------: |
 | Full name          | a11y-dialog |
 | Keywords           | modal, dialog, accessibility, a11y, focus |
-| # releases         | 8 |
-| # dependents       | 12 |
-| # downloads        | 357471 |
+| # releases         | 7 |
+| # dependents       | 15 |
+| # downloads        | 830781 |
 | # stars            | 0 |
 
 ## Links
@@ -24,7 +24,7 @@ A tiny script to make dialog windows accessible to assistive technology users.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

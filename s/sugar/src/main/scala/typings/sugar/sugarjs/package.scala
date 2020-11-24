@@ -2,9 +2,10 @@ package typings.sugar
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object sugarjs {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.sugar.ArrayConstructor
     - typings.sugar.DateConstructor
@@ -17,5 +18,6 @@ package object sugarjs {
     - typings.std.ErrorConstructor
   */
   type NativeConstructor = typings.sugar.sugarjs._NativeConstructor | typings.std.FunctionConstructor | typings.std.BooleanConstructor | typings.std.ErrorConstructor
+  
   type SugarDefaultChainable[RawValue] = (typings.sugar.sugarjs.Array.Chainable[_, RawValue]) with typings.sugar.sugarjs.Date.Chainable[RawValue] with typings.sugar.sugarjs.Function.Chainable[RawValue] with typings.sugar.sugarjs.Number.Chainable[RawValue] with typings.sugar.sugarjs.Object.Chainable[RawValue] with typings.sugar.sugarjs.RegExp.Chainable[RawValue] with typings.sugar.sugarjs.String.Chainable[RawValue]
 }

@@ -8,11 +8,12 @@ import typings.plottable.scalesMod.Color
 import typings.plottable.symbolFactoriesMod.SymbolFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/components/legend", JSImport.Namespace)
 @js.native
 object legendMod extends js.Object {
+  
   @js.native
   class Legend protected () extends Component {
     /**
@@ -22,21 +23,37 @@ object legendMod extends js.Object {
       * @param {Scale.Color} scale
       */
     def this(colorScale: Color) = this()
-    var _colorScale: js.Any = js.native
-    var _comparator: js.Any = js.native
-    var _formatter: js.Any = js.native
-    var _maxEntriesPerRow: js.Any = js.native
-    var _maxLinesPerEntry: js.Any = js.native
-    var _maxWidth: js.Any = js.native
-    var _measurer: js.Any = js.native
-    var _padding: js.Any = js.native
-    var _redrawCallback: js.Any = js.native
-    var _rowBottomPadding: js.Any = js.native
-    var _symbolFactoryAccessor: js.Any = js.native
-    var _symbolOpacityAccessor: js.Any = js.native
-    var _wrapper: js.Any = js.native
-    var _writer: js.Any = js.native
+    
     /* private */ def _buildLegendTable(width: js.Any, height: js.Any): js.Any = js.native
+    
+    var _colorScale: js.Any = js.native
+    
+    var _comparator: js.Any = js.native
+    
+    var _formatter: js.Any = js.native
+    
+    var _maxEntriesPerRow: js.Any = js.native
+    
+    var _maxLinesPerEntry: js.Any = js.native
+    
+    var _maxWidth: js.Any = js.native
+    
+    var _measurer: js.Any = js.native
+    
+    var _padding: js.Any = js.native
+    
+    var _redrawCallback: js.Any = js.native
+    
+    var _rowBottomPadding: js.Any = js.native
+    
+    var _symbolFactoryAccessor: js.Any = js.native
+    
+    var _symbolOpacityAccessor: js.Any = js.native
+    
+    var _wrapper: js.Any = js.native
+    
+    var _writer: js.Any = js.native
+    
     /**
       * Gets the Color Scale.
       *
@@ -50,6 +67,7 @@ object legendMod extends js.Object {
       * @returns {Legend} The calling Legend.
       */
     def colorScale(colorScale: Color): this.type = js.native
+    
     /**
       * Gets the current comparator for the Legend's entries.
       *
@@ -64,6 +82,7 @@ object legendMod extends js.Object {
       * @returns {Legend} The calling Legend.
       */
     def comparator(comparator: js.Function2[/* a */ String, /* b */ String, Double]): this.type = js.native
+    
     /**
       * Gets the Entities (representing Legend entries) at a particular point.
       * Returns an empty array if no Entities are present at that location.
@@ -72,6 +91,7 @@ object legendMod extends js.Object {
       * @returns {Entity<Legend>[]}
       */
     def entitiesAt(p: Point): js.Array[IEntity[Legend]] = js.native
+    
     /**
       * Gets the Formatter for the entry texts.
       */
@@ -84,6 +104,7 @@ object legendMod extends js.Object {
       * @returns {Legend} The calling Legend.
       */
     def formatter(formatter: Formatter): this.type = js.native
+    
     /**
       * Gets the maximum number of entries per row.
       *
@@ -97,6 +118,7 @@ object legendMod extends js.Object {
       * @returns {Legend} The calling Legend.
       */
     def maxEntriesPerRow(maxEntriesPerRow: Double): this.type = js.native
+    
     /**
       * Gets the maximum lines per row.
       *
@@ -114,6 +136,7 @@ object legendMod extends js.Object {
       * @returns {Legend} The calling Legend.
       */
     def maxLinesPerEntry(maxLinesPerEntry: Double): this.type = js.native
+    
     /**
       * Gets the maximum width of the legend in pixels.
       * @returns {number}
@@ -125,6 +148,7 @@ object legendMod extends js.Object {
       * @returns {Legend}
       */
     def maxWidth(maxWidth: Double): this.type = js.native
+    
     /**
       * Gets the function determining the symbols of the Legend.
       *
@@ -138,6 +162,7 @@ object legendMod extends js.Object {
       * @returns {Legend} The calling Legend
       */
     def symbol(symbol: js.Function2[/* datum */ js.Any, /* index */ Double, SymbolFactory]): this.type = js.native
+    
     /**
       * Gets the opacity of the symbols of the Legend.
       *
@@ -153,23 +178,23 @@ object legendMod extends js.Object {
       */
     def symbolOpacity(symbolOpacity: Double): this.type = js.native
   }
-  
   /* static members */
   @js.native
   object Legend extends js.Object {
+    
     /**
       * The css class applied to each legend entry
       */
     var LEGEND_ENTRY_CLASS: String = js.native
+    
     /**
       * The css class applied to each legend row
       */
     var LEGEND_ROW_CLASS: String = js.native
+    
     /**
       * The css class applied to each legend symbol
       */
     var LEGEND_SYMBOL_CLASS: String = js.native
   }
-  
 }
-

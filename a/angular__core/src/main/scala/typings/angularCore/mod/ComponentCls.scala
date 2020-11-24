@@ -2,7 +2,7 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "Component")
 @js.native
@@ -12,4 +12,3 @@ class ComponentCls protected () extends Component {
     */
   def this(obj: Component) = this()
 }
-

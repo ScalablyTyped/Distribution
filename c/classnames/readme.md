@@ -10,10 +10,10 @@ A simple utility for conditionally joining classNames together
 | ------------------ | :-------------: |
 | Full name          | classnames |
 | Keywords           | react, css, classes, classname, classnames, util, utility |
-| # releases         | 2 |
-| # dependents       | 13131 |
-| # downloads        | 175153839 |
-| # stars            | 224 |
+| # releases         | 1 |
+| # dependents       | 16861 |
+| # downloads        | 240449704 |
+| # stars            | 225 |
 
 ## Links
 - [Homepage](https://github.com/JedWatson/classnames#readme)

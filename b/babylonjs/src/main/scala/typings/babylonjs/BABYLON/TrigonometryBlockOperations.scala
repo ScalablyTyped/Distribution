@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TrigonometryBlockOperations extends js.Object
-
 @JSGlobal("BABYLON.TrigonometryBlockOperations")
 @js.native
 object TrigonometryBlockOperations extends js.Object {
+  
   /** Abs */
   @js.native
   sealed trait Abs extends TrigonometryBlockOperations
@@ -81,6 +81,4 @@ object TrigonometryBlockOperations extends js.Object {
   /** Tangent */
   @js.native
   sealed trait Tan extends TrigonometryBlockOperations
-  
 }
-

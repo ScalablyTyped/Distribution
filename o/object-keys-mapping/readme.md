@@ -10,9 +10,9 @@ mapping object keys
 | ------------------ | :-------------: |
 | Full name          | object-keys-mapping |
 | Keywords           | mapping, object, keys |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 740 |
+| # downloads        | 862 |
 | # stars            | 0 |
 
 ## Links

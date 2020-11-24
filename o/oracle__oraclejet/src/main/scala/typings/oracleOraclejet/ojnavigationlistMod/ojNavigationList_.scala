@@ -7,14 +7,6 @@ import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojkeysetMod.KeySet
 import typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.NodeContext
-import typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateEnd
-import typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateStart
-import typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCollapse
-import typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCurrentItem
-import typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeExpand
-import typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeSelect
-import typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojCollapse
-import typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojExpand
 import typings.oracleOraclejet.oracleOraclejetStrings.all
 import typings.oracleOraclejet.oracleOraclejetStrings.as
 import typings.oracleOraclejet.oracleOraclejetStrings.asChanged
@@ -38,6 +30,14 @@ import typings.oracleOraclejet.oracleOraclejetStrings.icons
 import typings.oracleOraclejet.oracleOraclejetStrings.item
 import typings.oracleOraclejet.oracleOraclejetStrings.itemChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.none
+import typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateEnd
+import typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateStart
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCollapse
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCurrentItem
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeExpand
+import typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeSelect
+import typings.oracleOraclejet.oracleOraclejetStrings.ojCollapse
+import typings.oracleOraclejet.oracleOraclejetStrings.ojExpand
 import typings.oracleOraclejet.oracleOraclejetStrings.overflow
 import typings.oracleOraclejet.oracleOraclejetStrings.overflowChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.popup
@@ -53,44 +53,11 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojNavigationList_[K, D] extends baseComponent[ojNavigationListSettableProperties[K, D]] {
-  var as: String = js.native
-  var currentItem: K = js.native
-  var data: (DataProvider[K, D]) | Null = js.native
-  var display: all | icons = js.native
-  var drillMode: none | collapsible | sliding = js.native
-  var edge: top | start = js.native
-  var expanded: KeySet[K] = js.native
-  var hierarchyMenuThreshold: Double = js.native
-  var item: Selectable[K, D] = js.native
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onCurrentItemChanged: (js.Function1[/* event */ JetElementCustomEvent[K], _]) | Null = js.native
-  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
-  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], _]) | Null = js.native
-  var onDrillModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | collapsible | sliding], _]) | Null = js.native
-  var onEdgeChanged: (js.Function1[/* event */ JetElementCustomEvent[top | start], _]) | Null = js.native
-  var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K]], _]) | Null = js.native
-  var onHierarchyMenuThresholdChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onItemChanged: (js.Function1[/* event */ JetElementCustomEvent[Selectable[K, D]], _]) | Null = js.native
-  var onOjAnimateEnd: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
-  var onOjAnimateStart: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
-  var onOjBeforeCollapse: (js.Function1[/* event */ ojBeforeCollapse, _]) | Null = js.native
-  var onOjBeforeCurrentItem: (js.Function1[/* event */ ojBeforeCurrentItem, _]) | Null = js.native
-  var onOjBeforeExpand: (js.Function1[/* event */ ojBeforeExpand, _]) | Null = js.native
-  var onOjBeforeSelect: (js.Function1[/* event */ ojBeforeSelect, _]) | Null = js.native
-  var onOjCollapse: (js.Function1[/* event */ ojCollapse, _]) | Null = js.native
-  var onOjExpand: (js.Function1[/* event */ ojExpand, _]) | Null = js.native
-  var onOverflowChanged: (js.Function1[/* event */ JetElementCustomEvent[popup | hidden], _]) | Null = js.native
-  var onRootLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
-  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[K], _]) | Null = js.native
-  var overflow: popup | hidden = js.native
-  var rootLabel: String | Null = js.native
-  var selection: K = js.native
-  @JSName("translations")
-  var translations_ojNavigationList_ : DefaultRootLabel = js.native
+  
   def addEventListener(
     `type`: displayChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], _]
@@ -211,90 +178,154 @@ trait ojNavigationList_[K, D] extends baseComponent[ojNavigationListSettableProp
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateEnd(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateEnd,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateEnd, _]
+    `type`: ojAnimateEnd,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateEnd, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateEnd(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateEnd,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateEnd, _],
+    `type`: ojAnimateEnd,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateEnd, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateStart(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateStart,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateStart, _]
+    `type`: ojAnimateStart,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateStart, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateStart(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateStart,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojAnimateStart, _],
+    `type`: ojAnimateStart,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateStart, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeCollapse(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCollapse,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeCollapse, _]
+    `type`: ojBeforeCollapse,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCollapse, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeCollapse(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCollapse,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeCollapse, _],
+    `type`: ojBeforeCollapse,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCollapse, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeCurrentItem(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCurrentItem,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeCurrentItem, _]
+    `type`: ojBeforeCurrentItem,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCurrentItem, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeCurrentItem(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeCurrentItem,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeCurrentItem, _],
+    `type`: ojBeforeCurrentItem,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCurrentItem, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeExpand(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeExpand,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeExpand, _]
+    `type`: ojBeforeExpand,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeExpand, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeExpand(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeExpand,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeExpand, _],
+    `type`: ojBeforeExpand,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeExpand, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeSelect(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeSelect,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeSelect, _]
+    `type`: ojBeforeSelect,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeSelect, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojBeforeSelect(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojBeforeSelect,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojBeforeSelect, _],
+    `type`: ojBeforeSelect,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeSelect, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojCollapse(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojCollapse,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojCollapse, _]
+    `type`: ojCollapse,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojCollapse, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojCollapse(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojCollapse,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojCollapse, _],
+    `type`: ojCollapse,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojCollapse, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojExpand(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojExpand,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojExpand, _]
+    `type`: ojExpand,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojExpand, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojExpand(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojExpand,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojExpand, _],
+    `type`: ojExpand,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojExpand, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -319,7 +350,23 @@ trait ojNavigationList_[K, D] extends baseComponent[ojNavigationListSettableProp
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var as: String = js.native
+  
+  var currentItem: K = js.native
+  
+  var data: (DataProvider[K, D]) | Null = js.native
+  
+  var display: all | icons = js.native
+  
+  var drillMode: none | collapsible | sliding = js.native
+  
+  var edge: top | start = js.native
+  
+  var expanded: KeySet[K] = js.native
+  
   def getContextByNode(node: Element): NodeContext[K] | Null = js.native
+  
   @JSName("getProperty")
   def getProperty_as(property: as): String = js.native
   @JSName("getProperty")
@@ -344,7 +391,83 @@ trait ojNavigationList_[K, D] extends baseComponent[ojNavigationListSettableProp
   def getProperty_rootLabel(property: rootLabel): String | Null = js.native
   @JSName("getProperty")
   def getProperty_selection(property: selection): K = js.native
+  
+  var hierarchyMenuThreshold: Double = js.native
+  
+  var item: Selectable[K, D] = js.native
+  
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onCurrentItemChanged: (js.Function1[/* event */ JetElementCustomEvent[K], _]) | Null = js.native
+  
+  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
+  
+  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], _]) | Null = js.native
+  
+  var onDrillModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | collapsible | sliding], _]) | Null = js.native
+  
+  var onEdgeChanged: (js.Function1[/* event */ JetElementCustomEvent[top | start], _]) | Null = js.native
+  
+  var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K]], _]) | Null = js.native
+  
+  var onHierarchyMenuThresholdChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onItemChanged: (js.Function1[/* event */ JetElementCustomEvent[Selectable[K, D]], _]) | Null = js.native
+  
+  var onOjAnimateEnd: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateEnd, 
+    _
+  ]) | Null = js.native
+  
+  var onOjAnimateStart: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateStart, 
+    _
+  ]) | Null = js.native
+  
+  var onOjBeforeCollapse: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCollapse, 
+    _
+  ]) | Null = js.native
+  
+  var onOjBeforeCurrentItem: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCurrentItem, 
+    _
+  ]) | Null = js.native
+  
+  var onOjBeforeExpand: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeExpand, 
+    _
+  ]) | Null = js.native
+  
+  var onOjBeforeSelect: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeSelect, 
+    _
+  ]) | Null = js.native
+  
+  var onOjCollapse: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojCollapse, 
+    _
+  ]) | Null = js.native
+  
+  var onOjExpand: (js.Function1[
+    /* event */ typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ojExpand, 
+    _
+  ]) | Null = js.native
+  
+  var onOverflowChanged: (js.Function1[/* event */ JetElementCustomEvent[popup | hidden], _]) | Null = js.native
+  
+  var onRootLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
+  
+  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[K], _]) | Null = js.native
+  
+  var overflow: popup | hidden = js.native
+  
+  var rootLabel: String | Null = js.native
+  
+  var selection: K = js.native
+  
   def setProperties(properties: ojNavigationListSettablePropertiesLenient[K, D]): Unit = js.native
+  
   def setProperty(property: display, value: all): Unit = js.native
   def setProperty(property: display, value: icons): Unit = js.native
   def setProperty(property: drillMode, value: collapsible): Unit = js.native
@@ -376,5 +499,7 @@ trait ojNavigationList_[K, D] extends baseComponent[ojNavigationListSettableProp
   def setProperty_selection(property: selection, value: K): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: DefaultRootLabel): Unit = js.native
+  
+  @JSName("translations")
+  var translations_ojNavigationList_ : DefaultRootLabel = js.native
 }
-

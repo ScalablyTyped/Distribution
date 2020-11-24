@@ -2,12 +2,13 @@ package typings.winrtUwp.global.Windows.Globalization
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes that allow apps to select language-appropriate and script-appropriate fonts for text display. */
 @JSGlobal("Windows.Globalization.Fonts")
 @js.native
 object Fonts extends js.Object {
+  
   /** Provides data related to a particular font recommendation for a given language. */
   @js.native
   abstract class LanguageFont ()
@@ -23,6 +24,4 @@ object Fonts extends js.Object {
       */
     def this(languageTag: String) = this()
   }
-  
 }
-

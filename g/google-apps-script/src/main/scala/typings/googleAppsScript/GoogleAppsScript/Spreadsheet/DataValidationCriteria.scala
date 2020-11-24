@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DataValidationCriteria extends js.Object
-
 /**
   * An enumeration representing the data validation criteria that can be set on a range.
   *
@@ -39,6 +38,7 @@ sealed trait DataValidationCriteria extends js.Object
 @JSGlobal("GoogleAppsScript.Spreadsheet.DataValidationCriteria")
 @js.native
 object DataValidationCriteria extends js.Object {
+  
   @js.native
   sealed trait CHECKBOX extends DataValidationCriteria
   
@@ -113,6 +113,4 @@ object DataValidationCriteria extends js.Object {
   
   @js.native
   sealed trait VALUE_IN_RANGE extends DataValidationCriteria
-  
 }
-

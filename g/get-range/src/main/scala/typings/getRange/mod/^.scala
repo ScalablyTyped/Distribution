@@ -3,11 +3,12 @@ package typings.getRange.mod
 import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("get-range", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Lazy number range generator.
   @example
@@ -31,4 +32,3 @@ object ^ extends js.Object {
   */
   def apply(range: Range): IterableIterator[Double] = js.native
 }
-

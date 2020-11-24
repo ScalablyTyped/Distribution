@@ -2,14 +2,19 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PhysicsEngine extends IPhysicsEngine {
+  
   var _impostors: js.Any = js.native
+  
   var _joints: js.Any = js.native
+  
   var _physicsPlugin: js.Any = js.native
+  
   var _subTimeStep: js.Any = js.native
+  
   /**
     * Set the sub time step of the physics engine.
     * Default is 0 meaning there is no sub steps
@@ -17,6 +22,7 @@ trait PhysicsEngine extends IPhysicsEngine {
     * @param subTimeStep defines the new sub timestep used for physics resolution.
     */
   def setSubTimeStep(): Unit = js.native
+  
   /**
     * Set the time step of the physics engine.
     * Default is 1/60.
@@ -26,4 +32,3 @@ trait PhysicsEngine extends IPhysicsEngine {
     */
   def setTimeStep(): Unit = js.native
 }
-

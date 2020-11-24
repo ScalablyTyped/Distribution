@@ -13,16 +13,18 @@ import typings.jupyterlabObservables.observablestringMod.IObservableString
 import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait IAttachmentsCellModel extends ICellModel {
+  
   /**
     * The cell attachments
     */
-  val attachments: IAttachmentsModel
+  val attachments: IAttachmentsModel = js.native
 }
-
 object IAttachmentsCellModel {
+  
   @scala.inline
   def apply(
     attachments: IAttachmentsModel,
@@ -45,5 +47,23 @@ object IAttachmentsCellModel {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAttachmentsCellModel]
   }
+  
+  @scala.inline
+  implicit class IAttachmentsCellModelOps[Self <: IAttachmentsCellModel] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setAttachments(value: IAttachmentsModel): Self = this.set("attachments", value.asInstanceOf[js.Any])
+  }
 }
-

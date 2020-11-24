@@ -3,35 +3,80 @@ package typings.babylonjs.anon
 import typings.babylonjs.mathVectorMod.Vector4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Radius extends js.Object {
-  var arc: js.UndefOr[Double] = js.undefined
-  var backUVs: js.UndefOr[Vector4] = js.undefined
-  var frontUVs: js.UndefOr[Vector4] = js.undefined
-  var radius: js.UndefOr[Double] = js.undefined
-  var sideOrientation: js.UndefOr[Double] = js.undefined
-  var tessellation: js.UndefOr[Double] = js.undefined
+  
+  var arc: js.UndefOr[Double] = js.native
+  
+  var backUVs: js.UndefOr[Vector4] = js.native
+  
+  var frontUVs: js.UndefOr[Vector4] = js.native
+  
+  var radius: js.UndefOr[Double] = js.native
+  
+  var sideOrientation: js.UndefOr[Double] = js.native
+  
+  var tessellation: js.UndefOr[Double] = js.native
 }
-
 object Radius {
+  
   @scala.inline
-  def apply(
-    arc: js.UndefOr[Double] = js.undefined,
-    backUVs: Vector4 = null,
-    frontUVs: Vector4 = null,
-    radius: js.UndefOr[Double] = js.undefined,
-    sideOrientation: js.UndefOr[Double] = js.undefined,
-    tessellation: js.UndefOr[Double] = js.undefined
-  ): Radius = {
+  def apply(): Radius = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arc)) __obj.updateDynamic("arc")(arc.get.asInstanceOf[js.Any])
-    if (backUVs != null) __obj.updateDynamic("backUVs")(backUVs.asInstanceOf[js.Any])
-    if (frontUVs != null) __obj.updateDynamic("frontUVs")(frontUVs.asInstanceOf[js.Any])
-    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sideOrientation)) __obj.updateDynamic("sideOrientation")(sideOrientation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tessellation)) __obj.updateDynamic("tessellation")(tessellation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Radius]
   }
+  
+  @scala.inline
+  implicit class RadiusOps[Self <: Radius] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setArc(value: Double): Self = this.set("arc", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteArc: Self = this.set("arc", js.undefined)
+    
+    @scala.inline
+    def setBackUVs(value: Vector4): Self = this.set("backUVs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBackUVs: Self = this.set("backUVs", js.undefined)
+    
+    @scala.inline
+    def setFrontUVs(value: Vector4): Self = this.set("frontUVs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteFrontUVs: Self = this.set("frontUVs", js.undefined)
+    
+    @scala.inline
+    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRadius: Self = this.set("radius", js.undefined)
+    
+    @scala.inline
+    def setSideOrientation(value: Double): Self = this.set("sideOrientation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSideOrientation: Self = this.set("sideOrientation", js.undefined)
+    
+    @scala.inline
+    def setTessellation(value: Double): Self = this.set("tessellation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTessellation: Self = this.set("tessellation", js.undefined)
+  }
 }
-

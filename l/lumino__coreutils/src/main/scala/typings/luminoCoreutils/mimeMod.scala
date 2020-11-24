@@ -2,19 +2,24 @@ package typings.luminoCoreutils
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/coreutils/types/mime", JSImport.Namespace)
 @js.native
 object mimeMod extends js.Object {
+  
   @js.native
   class MimeData () extends js.Object {
+    
     var _types: js.Any = js.native
+    
     var _values: js.Any = js.native
+    
     /**
       * Remove all data entries from the dataset.
       */
     def clear(): Unit = js.native
+    
     /**
       * Remove the data entry for the given MIME type.
       *
@@ -24,6 +29,7 @@ object mimeMod extends js.Object {
       * This is a no-op if there is no entry for the given MIME type.
       */
     def clearData(mime: String): Unit = js.native
+    
     /**
       * Get the data value for the given MIME type.
       *
@@ -33,6 +39,7 @@ object mimeMod extends js.Object {
       *   the dataset does not contain a value for the type.
       */
     def getData(mime: String): js.UndefOr[js.Any] = js.native
+    
     /**
       * Test whether the dataset has an entry for the given type.
       *
@@ -42,6 +49,7 @@ object mimeMod extends js.Object {
       *   MIME type, `false` otherwise.
       */
     def hasData(mime: String): Boolean = js.native
+    
     /**
       * Set the data value for the given MIME type.
       *
@@ -53,6 +61,7 @@ object mimeMod extends js.Object {
       * This will overwrite any previous entry for the MIME type.
       */
     def setData(mime: String, data: js.Any): Unit = js.native
+    
     /**
       * Get an array of the MIME types contained within the dataset.
       *
@@ -60,6 +69,4 @@ object mimeMod extends js.Object {
       */
     def types(): js.Array[String] = js.native
   }
-  
 }
-

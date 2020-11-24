@@ -11,8 +11,8 @@ Give me a color and I'll name it.
 | Full name          | color-namer |
 | Keywords           | color, colors, names, rgb, hsl, hsv, lab, search, tagging, image, design |
 | # releases         | 2 |
-| # dependents       | 35 |
-| # downloads        | 343113 |
+| # dependents       | 36 |
+| # downloads        | 532866 |
 | # stars            | 6 |
 
 ## Links

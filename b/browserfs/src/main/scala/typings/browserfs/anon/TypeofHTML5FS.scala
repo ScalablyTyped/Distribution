@@ -11,7 +11,7 @@ import typings.browserfs.html5fsMod.HTML5FSOptions
 import typings.browserfs.html5fsMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofHTML5FS
@@ -24,12 +24,15 @@ trait TypeofHTML5FS
       /* deprecateMsg */ Boolean, 
       default
     ] {
-  val Name: String = js.native
-  val Options: FileSystemOptions = js.native
+  
   /**
     * Creates an HTML5FS instance with the given options.
     */
   def Create(opts: HTML5FSOptions, cb: BFSCallback[HTML5FS]): Unit = js.native
+  
+  val Name: String = js.native
+  
+  val Options: FileSystemOptions = js.native
+  
   def isAvailable(): Boolean = js.native
 }
-

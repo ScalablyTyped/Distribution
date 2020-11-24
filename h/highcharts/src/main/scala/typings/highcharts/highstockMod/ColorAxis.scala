@@ -3,7 +3,7 @@ package typings.highcharts.highstockMod
 import typings.highcharts.mod.ColorAxisOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts/highstock", "ColorAxis")
 @js.native
@@ -20,4 +20,3 @@ class ColorAxis protected ()
     */
   def this(chart: typings.highcharts.mod.Chart_, userOptions: ColorAxisOptions) = this()
 }
-

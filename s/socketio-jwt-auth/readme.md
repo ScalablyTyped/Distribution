@@ -12,7 +12,7 @@ Socket.io authentication middleware using Json Web Token
 | Keywords           | socket.io, socket.io middleware, authenticate, authentication, authorize, authorization, auth, jwt, Json Web Token, Socket.io JWT Auth |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 35020 |
+| # downloads        | 54020 |
 | # stars            | 0 |
 
 ## Links

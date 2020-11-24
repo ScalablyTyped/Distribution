@@ -14,7 +14,7 @@ import typings.phaser.integer
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Input Manager is responsible for handling the pointer related systems in a single Phaser Game instance.
@@ -31,6 +31,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait InputManager extends js.Object {
+  
   /**
     * The most recently active Pointer object.
     * 
@@ -40,88 +41,7 @@ trait InputManager extends js.Object {
     * code and it will adapt to be either the mouse or the touch, based on device.
     */
   var activePointer: Pointer = js.native
-  /**
-    * The Canvas that is used for all DOM event input listeners.
-    */
-  var canvas: HTMLCanvasElement = js.native
-  /**
-    * The Game Configuration object, as set during the game boot.
-    */
-  var config: Config = js.native
-  /**
-    * The default CSS cursor to be used when interacting with your game.
-    * 
-    * See the `setDefaultCursor` method for more details.
-    */
-  var defaultCursor: String = js.native
-  /**
-    * If set, the Input Manager will run its update loop every frame.
-    */
-  var enabled: Boolean = js.native
-  /**
-    * The Event Emitter instance that the Input Manager uses to emit events from.
-    */
-  var events: EventEmitter = js.native
-  /**
-    * The Game instance that owns the Input Manager.
-    * A Game only maintains on instance of the Input Manager at any time.
-    */
-  val game: Game = js.native
-  /**
-    * If the top-most Scene in the Scene List receives an input it will stop input from
-    * propagating any lower down the scene list, i.e. if you have a UI Scene at the top
-    * and click something on it, that click will not then be passed down to any other
-    * Scene below. Disable this to have input events passed through all Scenes, all the time.
-    */
-  var globalTopOnly: Boolean = js.native
-  /**
-    * Are any mouse or touch pointers currently over the game canvas?
-    * This is updated automatically by the canvas over and out handlers.
-    */
-  val isOver: Boolean = js.native
-  /**
-    * A reference to the Keyboard Manager class, if enabled via the `input.keyboard` Game Config property.
-    */
-  var keyboard: KeyboardManager = js.native
-  /**
-    * A reference to the Mouse Manager class, if enabled via the `input.mouse` Game Config property.
-    */
-  var mouse: MouseManager = js.native
-  /**
-    * The mouse has its own unique Pointer object, which you can reference directly if making a _desktop specific game_.
-    * If you are supporting both desktop and touch devices then do not use this property, instead use `activePointer`
-    * which will always map to the most recently interacted pointer.
-    */
-  var mousePointer: Pointer = js.native
-  /**
-    * An array of Pointers that have been added to the game.
-    * The first entry is reserved for the Mouse Pointer, the rest are Touch Pointers.
-    * 
-    * By default there is 1 touch pointer enabled. If you need more use the `addPointer` method to start them,
-    * or set the `input.activePointers` property in the Game Config.
-    */
-  var pointers: js.Array[Pointer] = js.native
-  /**
-    * The number of touch objects activated and being processed each update.
-    * 
-    * You can change this by either calling `addPointer` at run-time, or by
-    * setting the `input.activePointers` property in the Game Config.
-    */
-  val pointersTotal: integer = js.native
-  /**
-    * A reference to the global Game Scale Manager.
-    * Used for all bounds checks and pointer scaling.
-    */
-  var scaleManager: ScaleManager = js.native
-  /**
-    * The time this Input Manager was last updated.
-    * This value is populated by the Game Step each frame.
-    */
-  val time: Double = js.native
-  /**
-    * A reference to the Touch Manager class, if enabled via the `input.touch` Game Config property.
-    */
-  var touch: TouchManager = js.native
+  
   /**
     * Adds new Pointer objects to the Input Manager.
     * 
@@ -136,17 +56,61 @@ trait InputManager extends js.Object {
     */
   def addPointer(): js.Array[Pointer] = js.native
   def addPointer(quantity: integer): js.Array[Pointer] = js.native
+  
   /**
     * The Boot handler is called by Phaser.Game when it first starts up.
     * The renderer is available by now.
     */
   /* protected */ def boot(): Unit = js.native
+  
+  /**
+    * The Canvas that is used for all DOM event input listeners.
+    */
+  var canvas: HTMLCanvasElement = js.native
+  
+  /**
+    * The Game Configuration object, as set during the game boot.
+    */
+  var config: Config = js.native
+  
+  /**
+    * The default CSS cursor to be used when interacting with your game.
+    * 
+    * See the `setDefaultCursor` method for more details.
+    */
+  var defaultCursor: String = js.native
+  
   /**
     * Destroys the Input Manager and all of its systems.
     * 
     * There is no way to recover from doing this.
     */
   def destroy(): Unit = js.native
+  
+  /**
+    * If set, the Input Manager will run its update loop every frame.
+    */
+  var enabled: Boolean = js.native
+  
+  /**
+    * The Event Emitter instance that the Input Manager uses to emit events from.
+    */
+  var events: EventEmitter = js.native
+  
+  /**
+    * The Game instance that owns the Input Manager.
+    * A Game only maintains on instance of the Input Manager at any time.
+    */
+  val game: Game = js.native
+  
+  /**
+    * If the top-most Scene in the Scene List receives an input it will stop input from
+    * propagating any lower down the scene list, i.e. if you have a UI Scene at the top
+    * and click something on it, that click will not then be passed down to any other
+    * Scene below. Disable this to have input events passed through all Scenes, all the time.
+    */
+  var globalTopOnly: Boolean = js.native
+  
   /**
     * Performs a hit test using the given Pointer and camera, against an array of interactive Game Objects.
     * 
@@ -163,6 +127,30 @@ trait InputManager extends js.Object {
     */
   def hitTest(pointer: Pointer, gameObjects: js.Array[_], camera: Camera): js.Array[_] = js.native
   def hitTest(pointer: Pointer, gameObjects: js.Array[_], camera: Camera, output: js.Array[_]): js.Array[_] = js.native
+  
+  /**
+    * Are any mouse or touch pointers currently over the game canvas?
+    * This is updated automatically by the canvas over and out handlers.
+    */
+  val isOver: Boolean = js.native
+  
+  /**
+    * A reference to the Keyboard Manager class, if enabled via the `input.keyboard` Game Config property.
+    */
+  var keyboard: KeyboardManager = js.native
+  
+  /**
+    * A reference to the Mouse Manager class, if enabled via the `input.mouse` Game Config property.
+    */
+  var mouse: MouseManager = js.native
+  
+  /**
+    * The mouse has its own unique Pointer object, which you can reference directly if making a _desktop specific game_.
+    * If you are supporting both desktop and touch devices then do not use this property, instead use `activePointer`
+    * which will always map to the most recently interacted pointer.
+    */
+  var mousePointer: Pointer = js.native
+  
   /**
     * Checks if the given x and y coordinate are within the hit area of the Game Object.
     * 
@@ -174,6 +162,7 @@ trait InputManager extends js.Object {
     * @param y The translated y coordinate for the hit test.
     */
   def pointWithinHitArea(gameObject: GameObject, x: Double, y: Double): Boolean = js.native
+  
   /**
     * Checks if the given x and y coordinate are within the hit area of the Interactive Object.
     * 
@@ -185,6 +174,30 @@ trait InputManager extends js.Object {
     * @param y The translated y coordinate for the hit test.
     */
   def pointWithinInteractiveObject(`object`: InteractiveObject, x: Double, y: Double): Boolean = js.native
+  
+  /**
+    * An array of Pointers that have been added to the game.
+    * The first entry is reserved for the Mouse Pointer, the rest are Touch Pointers.
+    * 
+    * By default there is 1 touch pointer enabled. If you need more use the `addPointer` method to start them,
+    * or set the `input.activePointers` property in the Game Config.
+    */
+  var pointers: js.Array[Pointer] = js.native
+  
+  /**
+    * The number of touch objects activated and being processed each update.
+    * 
+    * You can change this by either calling `addPointer` at run-time, or by
+    * setting the `input.activePointers` property in the Game Config.
+    */
+  val pointersTotal: integer = js.native
+  
+  /**
+    * A reference to the global Game Scale Manager.
+    * Used for all bounds checks and pointer scaling.
+    */
+  var scaleManager: ScaleManager = js.native
+  
   /**
     * Tells the Input system to set a custom cursor.
     * 
@@ -207,6 +220,18 @@ trait InputManager extends js.Object {
     * @param cursor The CSS to be used when setting the default cursor.
     */
   def setDefaultCursor(cursor: String): Unit = js.native
+  
+  /**
+    * The time this Input Manager was last updated.
+    * This value is populated by the Game Step each frame.
+    */
+  val time: Double = js.native
+  
+  /**
+    * A reference to the Touch Manager class, if enabled via the `input.touch` Game Config property.
+    */
+  var touch: TouchManager = js.native
+  
   /**
     * Transforms the pageX and pageY values of a Pointer into the scaled coordinate space of the Input Manager.
     * @param pointer The Pointer to transform the values for.
@@ -215,6 +240,7 @@ trait InputManager extends js.Object {
     * @param wasMove Are we transforming the Pointer from a move event, or an up / down event?
     */
   def transformPointer(pointer: Pointer, pageX: Double, pageY: Double, wasMove: Boolean): Unit = js.native
+  
   /**
     * Internal method that gets a list of all the active Input Plugins in the game
     * and updates each of them in turn, in reverse order (top to bottom), to allow
@@ -224,4 +250,3 @@ trait InputManager extends js.Object {
     */
   def updateInputPlugins(`type`: integer, pointers: js.Array[Pointer]): Unit = js.native
 }
-

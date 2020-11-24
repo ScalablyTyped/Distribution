@@ -5,12 +5,13 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Gets info about smart card readers and smart cards; configures physical smart cards; and creates, configures, and deletes Trusted Platform Module (TPM) virtual smart cards. */
 @JSGlobal("Windows.Devices.SmartCards")
 @js.native
 object SmartCards extends js.Object {
+  
   /** Provides data for the CardAdded event. */
   @js.native
   abstract class CardAddedEventArgs ()
@@ -36,6 +37,22 @@ object SmartCards extends js.Object {
   abstract class SmartCardConnection ()
     extends typings.winrtUwp.Windows.Devices.SmartCards.SmartCardConnection
   
+  /** Specifies the rules for characters in a smart card personal identification number (PIN). */
+  @js.native
+  object SmartCardPinCharacterPolicyOption extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[
+        typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption with Double
+      ] = js.native
+    
+    /* 0 */ val allow: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption.allow with Double = js.native
+    
+    /* 2 */ val disallow: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption.disallow with Double = js.native
+    
+    /* 1 */ val requireAtLeastOne: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption.requireAtLeastOne with Double = js.native
+  }
+  
   /** Represents a set of personal identification number (PIN) rules on a Trusted Platform Module (TPM) virtual smart card. */
   @js.native
   /** Creates and initializes a new instance of a set of personal identification number (PIN) rules on a Trusted Platform Module (TPM) virtual smart card. */
@@ -56,34 +73,19 @@ object SmartCards extends js.Object {
   @js.native
   abstract class SmartCardProvisioning ()
     extends typings.winrtUwp.Windows.Devices.SmartCards.SmartCardProvisioning
-  
-  /** Represents info about a smart card reader. */
-  @js.native
-  abstract class SmartCardReader ()
-    extends typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReader
-  
-  /** Specifies the rules for characters in a smart card personal identification number (PIN). */
-  @js.native
-  object SmartCardPinCharacterPolicyOption extends js.Object {
-    /* 0 */ val allow: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption.allow with Double = js.native
-    /* 2 */ val disallow: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption.disallow with Double = js.native
-    /* 1 */ val requireAtLeastOne: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption.requireAtLeastOne with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption with Double
-      ] = js.native
-  }
-  
   /* static members */
   @js.native
   object SmartCardProvisioning extends js.Object {
-    var requestAttestedVirtualSmartCardCreationAsync: js.Any = js.native
+    
     /**
       * Returns a smart card to be configured.
       * @param card The specified smart card.
       * @return An instance of SmartCardProvisioning , representing the smart card to be configured.
       */
     def fromSmartCardAsync(card: typings.winrtUwp.Windows.Devices.SmartCards.SmartCard): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.SmartCards.SmartCardProvisioning] = js.native
+    
+    var requestAttestedVirtualSmartCardCreationAsync: js.Any = js.native
+    
     /**
       * Creates a Trusted Platform Module (TPM) virtual smart card with a given human-readable name, admin key, and personal identification number (PIN) rules set.
       * @param friendlyName The smart card's human-readable name.
@@ -110,6 +112,7 @@ object SmartCards extends js.Object {
       pinPolicy: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinPolicy,
       cardId: String
     ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.SmartCards.SmartCardProvisioning] = js.native
+    
     /**
       * Deletes a Trusted Platform Module (TPM) virtual smart card.
       * @param card The TPM virtual smart card to delete.
@@ -118,15 +121,21 @@ object SmartCards extends js.Object {
     def requestVirtualSmartCardDeletionAsync(card: typings.winrtUwp.Windows.Devices.SmartCards.SmartCard): IPromiseWithIAsyncOperation[Boolean] = js.native
   }
   
+  /** Represents info about a smart card reader. */
+  @js.native
+  abstract class SmartCardReader ()
+    extends typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReader
   /* static members */
   @js.native
   object SmartCardReader extends js.Object {
+    
     /**
       * Returns a smart card reader that matches the specified device ID.
       * @param deviceId The smart card reader's device ID.
       * @return The matching smart card reader.
       */
     def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReader] = js.native
+    
     /**
       * Returns an Advanced Query Syntax (AQS) string representing all smart card readers connected to the device. This string is passed to the FindAllAsync method to enumerate the given set of smart card readers.
       * @return The Advanced Query Syntax (AQS) string representing all smart card readers connected to the device.
@@ -143,36 +152,50 @@ object SmartCards extends js.Object {
   /** Represents the smart card reader's type. */
   @js.native
   object SmartCardReaderKind extends js.Object {
-    /* 0 */ val any: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderKind.any with Double = js.native
-    /* 1 */ val generic: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderKind.generic with Double = js.native
-    /* 3 */ val nfc: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderKind.nfc with Double = js.native
-    /* 2 */ val tpm: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderKind.tpm with Double = js.native
-    /* 4 */ val uicc: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderKind.uicc with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderKind with Double] = js.native
+    
+    /* 0 */ val any: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderKind.any with Double = js.native
+    
+    /* 1 */ val generic: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderKind.generic with Double = js.native
+    
+    /* 3 */ val nfc: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderKind.nfc with Double = js.native
+    
+    /* 2 */ val tpm: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderKind.tpm with Double = js.native
+    
+    /* 4 */ val uicc: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderKind.uicc with Double = js.native
   }
   
   /** Specifies the smart card reader's status. */
   @js.native
   object SmartCardReaderStatus extends js.Object {
-    /* 0 */ val disconnected: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderStatus.disconnected with Double = js.native
-    /* 2 */ val exclusive: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderStatus.exclusive with Double = js.native
-    /* 1 */ val ready: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderStatus.ready with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderStatus with Double] = js.native
+    
+    /* 0 */ val disconnected: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderStatus.disconnected with Double = js.native
+    
+    /* 2 */ val exclusive: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderStatus.exclusive with Double = js.native
+    
+    /* 1 */ val ready: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderStatus.ready with Double = js.native
   }
   
   /** Specifies the smart card's status. */
   @js.native
   object SmartCardStatus extends js.Object {
-    /* 0 */ val disconnected: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardStatus.disconnected with Double = js.native
-    /* 3 */ val exclusive: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardStatus.exclusive with Double = js.native
-    /* 1 */ val ready: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardStatus.ready with Double = js.native
-    /* 2 */ val shared: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardStatus.shared with Double = js.native
-    /* 4 */ val unresponsive: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardStatus.unresponsive with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.SmartCards.SmartCardStatus with Double] = js.native
+    
+    /* 0 */ val disconnected: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardStatus.disconnected with Double = js.native
+    
+    /* 3 */ val exclusive: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardStatus.exclusive with Double = js.native
+    
+    /* 1 */ val ready: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardStatus.ready with Double = js.native
+    
+    /* 2 */ val shared: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardStatus.shared with Double = js.native
+    
+    /* 4 */ val unresponsive: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardStatus.unresponsive with Double = js.native
   }
-  
 }
-

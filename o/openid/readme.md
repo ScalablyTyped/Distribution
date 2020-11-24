@@ -4,15 +4,15 @@
 Typings are for version 2.0
 
 ## Library description:
-OpenID 1.1/2.0 library for node.js
+OpenID 1.1/2.0 library for Node.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | openid |
-| Keywords           | openid, auth, authentication, identity, identifier, relying, party, 1.1, 2.0, library |
-| # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 570278 |
+| Keywords           | openid, auth, authentication, identity, identifier, relying, party, relying party, 1.1, 2.0, library |
+| # releases         | 2 |
+| # dependents       | 42 |
+| # downloads        | 725755 |
 | # stars            | 6 |
 
 ## Links

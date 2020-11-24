@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudasset/v1", "cloudasset_v1.Resource$V1")
 @js.native
 class ResourceV1 protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * cloudasset.batchGetAssetsHistory
     * @desc Batch gets the update history of assets that overlap a time window.
@@ -53,6 +53,9 @@ class ResourceV1 protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchGetAssetsHistoryResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * cloudasset.exportAssets
     * @desc Exports assets with time and resource types to a given Cloud
@@ -86,4 +89,3 @@ class ResourceV1 protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "regex-parser" : "2.2.10"
+      "regex-parser" : "2.2.11"
     }
   ],
   "test-dependencies" : [
     {
-      "regex-parser" : "2.2.10"
+      "regex-parser" : "2.2.11"
     }
   ],
   "compile-devDependencies" : [

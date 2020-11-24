@@ -10,20 +10,24 @@ import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.SearchStatus
 import typings.amapJsApiPlaceSearch.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PlaceSearch_ extends EventEmitter {
+  
   /**
     * 清除搜索结果
     */
   def clear(): Unit = js.native
+  
   def close(): Unit = js.native
+  
   /**
     * 唤起高德地图客户端POI详情页
     * @param obj 唤起参数
     */
   def detailOnAMAP(obj: Id): Unit = js.native
+  
   /**
     * 根据POIID 查询POI 详细信息
     * @param POIID POIID
@@ -33,17 +37,21 @@ trait PlaceSearch_ extends EventEmitter {
     POIID: String,
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | SearchResult, Unit]
   ): Unit = js.native
+  
   /**
     * 获取检索语言类型
     */
   def getLang(): js.UndefOr[Lang] = js.native
+  
   // internal
   def open(): Unit = js.native
+  
   /**
     * 唤起高德地图客户端marker页
     * @param obj 唤起参数
     */
   def poiOnAMAP(obj: Id): Unit = js.native
+  
   /**
     * 根据关键字搜索
     * @param keyword 根据关键字搜索
@@ -53,6 +61,7 @@ trait PlaceSearch_ extends EventEmitter {
     keyword: String,
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | SearchResult, Unit]
   ): Unit = js.native
+  
   /**
     * 根据范围和关键词进行范围查询
     * @param keyword 关键字
@@ -69,6 +78,7 @@ trait PlaceSearch_ extends EventEmitter {
     bounds: Polygon[_],
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | SearchResult, Unit]
   ): Unit = js.native
+  
   /**
     * 周边查询
     * @param keyword 关键字
@@ -82,36 +92,42 @@ trait PlaceSearch_ extends EventEmitter {
     radius: Double,
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | SearchResult, Unit]
   ): Unit = js.native
+  
   /**
     * 设置查询城市
     * @param city 城市
     */
   def setCity(): Unit = js.native
   def setCity(city: String): Unit = js.native
+  
   /**
     * 设置是否强制限制城市
     * @param limit 是否强制限制城市
     */
   def setCityLimit(): Unit = js.native
   def setCityLimit(limit: Boolean): Unit = js.native
+  
   /**
     * 设置检索语言类型
     * @param lang 语言类型
     */
   def setLang(): Unit = js.native
   def setLang(lang: Lang): Unit = js.native
+  
   /**
     * 设置查询结果特定页数
     * @param pageIndex 页码
     */
   def setPageIndex(): Unit = js.native
   def setPageIndex(pageIndex: Double): Unit = js.native
+  
   /**
     * 设置查询单页结果数
     * @param pageSize 结果数
     */
   def setPageSize(): Unit = js.native
   def setPageSize(pageSize: Double): Unit = js.native
+  
   /**
     * 设置查询类别
     * @param type 查询类别
@@ -119,4 +135,3 @@ trait PlaceSearch_ extends EventEmitter {
   def setType(): Unit = js.native
   def setType(`type`: String): Unit = js.native
 }
-

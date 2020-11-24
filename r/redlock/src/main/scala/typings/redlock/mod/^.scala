@@ -2,7 +2,7 @@ package typings.redlock.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Inherit all the EventEmitter methods, like `on`, and `off`.
@@ -21,4 +21,3 @@ class ^ protected () extends Redlock {
   def this(clients: js.Array[CompatibleRedisClient]) = this()
   def this(clients: js.Array[CompatibleRedisClient], options: Options) = this()
 }
-

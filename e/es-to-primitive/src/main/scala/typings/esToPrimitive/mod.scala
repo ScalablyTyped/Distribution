@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.esToPrimitive.anon.ES2015
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("es-to-primitive", JSImport.Namespace)
 @js.native
@@ -15,7 +15,6 @@ object mod
         /* hint */ js.UndefOr[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof String */ js.Any
         ], 
-        js.UndefOr[String | Double | Boolean | js.Symbol | Null]
+        js.UndefOr[String | Double | js.BigInt | Boolean | js.Symbol | Null]
       ]) with ES2015
     ]
-

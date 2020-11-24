@@ -3,13 +3,15 @@ package typings.rethinkdb.mod
 import typings.rethinkdb.anon.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Table_
   extends Sequence
      with HasFields[Sequence] {
+  
   def get[TObjectType /* <: js.Object */](key: String): (Operation[TObjectType | Null]) with Writeable = js.native
+  
    // without index defaults to primary key
   /**
     * Get all documents matching 2 or more compound index keys.
@@ -115,17 +117,23 @@ trait Table_
     * [compound indexes](https://www.rethinkdb.com/docs/secondary-indexes/javascript/#compound-indexes)
     */
   def getAll(key: Expression[_ | js.Array[_]], index: Index): Sequence = js.native
+  
   def getIntersecting(geometry: Geometry, index: Index): Sequence = js.native
+  
   def indexCreate(name: String): Operation[CreateResult] = js.native
   def indexCreate(name: String, index: IndexFunction[_]): Operation[CreateResult] = js.native
+  
   def indexDrop(name: String): Operation[DropResult] = js.native
+  
   def indexList(): Operation[js.Array[String]] = js.native
+  
   def indexWait(): Operation[js.Array[Function]] = js.native
   def indexWait(name: String): Operation[js.Array[Function]] = js.native
+  
   def insert(obj: js.Any): Operation[WriteResult] = js.native
   def insert(obj: js.Any, options: InsertOptions): Operation[WriteResult] = js.native
   def insert(obj: js.Array[_]): Operation[WriteResult] = js.native
   def insert(obj: js.Array[_], options: InsertOptions): Operation[WriteResult] = js.native
+  
   def wait(WaitOptions: WaitOptions): Operation[WaitResult] = js.native
 }
-

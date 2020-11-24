@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/alertcenter/v1beta1", "alertcenter_v1beta1.Resource$V1beta1")
 @js.native
 class ResourceV1beta1 protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * alertcenter.getSettings
     * @desc Returns customer-level settings.
@@ -41,6 +43,7 @@ class ResourceV1beta1 protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSettings]
   ): Unit = js.native
+  
   /**
     * alertcenter.updateSettings
     * @desc Updates the customer-level settings.
@@ -71,4 +74,3 @@ class ResourceV1beta1 protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSettings]
   ): Unit = js.native
 }
-

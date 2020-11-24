@@ -5,7 +5,7 @@ import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.EntityQueryExpression
 import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.IEntityMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to retrieve metadata and metadata changes.
@@ -28,8 +28,10 @@ class RetrieveMetadataChangesRequest protected () extends OrganizationRequest {
     clientVersionStamp: java.lang.String,
     deletedMetadataFilters: DeletedMetadataFilters
   ) = this()
+  
   def getDeletedMetadata(): js.Object = js.native
+  
   def getEntityMetadata(): js.Array[IEntityMetadata] = js.native
+  
   def getServerVersionStamp(): java.lang.String = js.native
 }
-

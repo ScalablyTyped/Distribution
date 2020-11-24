@@ -10,9 +10,9 @@ A Node.js library for building zero-configuration microservices.
 | ------------------ | :-------------: |
 | Full name          | cote |
 | Keywords           | microservices, zero-configuration, zero-conf, mesh, network, auto discovery, scalable, fault-tolerant |
-| # releases         | 22 |
-| # dependents       | 31 |
-| # downloads        | 139235 |
+| # releases         | 13 |
+| # dependents       | 39 |
+| # downloads        | 157112 |
 | # stars            | 11 |
 
 ## Links

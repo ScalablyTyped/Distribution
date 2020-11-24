@@ -3,7 +3,7 @@ package typings.electron.global.Electron
 import typings.electron.Electron.MenuItemConstructorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Electron.Menu")
 @js.native
@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
   */
 class Menu ()
   extends typings.electron.Electron.Menu
-
 /* static members */
 @JSGlobal("Electron.Menu")
 @js.native
 object Menu extends js.Object {
+  
   /**
     * Generally, the `template` is an array of `options` for constructing a MenuItem.
     * The usage can be referenced above.
@@ -25,6 +25,7 @@ object Menu extends js.Object {
     * become properties of the constructed menu items.
     */
   def buildFromTemplate(template: js.Array[MenuItemConstructorOptions | typings.electron.Electron.MenuItem]): typings.electron.Electron.Menu = js.native
+  
   /**
     * The application menu, if set, or `null`, if not set.
     *
@@ -32,6 +33,7 @@ object Menu extends js.Object {
     * removal of menu items. Instance properties can still be dynamically modified.
     */
   def getApplicationMenu(): typings.electron.Electron.Menu | Null = js.native
+  
   /**
     * Sends the `action` to the first responder of application. This is used for
     * emulating default macOS menu behaviors. Usually you would use the `role`
@@ -43,6 +45,7 @@ object Menu extends js.Object {
     * @platform darwin
     */
   def sendActionToFirstResponder(action: String): Unit = js.native
+  
   /**
     * Sets `menu` as the application menu on macOS. On Windows and Linux, the `menu`
     * will be set as each window's top menu.
@@ -63,4 +66,3 @@ object Menu extends js.Object {
   def setApplicationMenu(): Unit = js.native
   def setApplicationMenu(menu: typings.electron.Electron.Menu): Unit = js.native
 }
-

@@ -12,7 +12,7 @@ Browser SDK for AWS Key Management Service
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 1269 |
+| # downloads        | 1066 |
 | # stars            | 0 |
 
 ## Links

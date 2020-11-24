@@ -3,7 +3,7 @@ package typings.microsoftSdkSoap.mod.global.Sdk
 import typings.microsoftSdkSoap.mod.global.Sdk.Query.QueryBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains the data that is needed to  convert a query, which is represented as a QueryExpression class, to its equivalent query, which is represented as FetchXML.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class QueryExpressionToFetchXmlRequest protected () extends OrganizationRequest {
   def this(query: QueryBase) = this()
+  
   /**
     * Sets the query to convert.
     * @param query The query.
@@ -20,4 +21,3 @@ class QueryExpressionToFetchXmlRequest protected () extends OrganizationRequest 
     */
   def setQuery(query: QueryBase): Unit = js.native
 }
-

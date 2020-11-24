@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Webpropertyadwordslinks")
 @js.native
 class ResourceManagementWebpropertyadwordslinks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.management.webPropertyAdWordsLinks.delete
     * @desc Deletes a web property-Google Ads link.
@@ -46,6 +48,7 @@ class ResourceManagementWebpropertyadwordslinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * analytics.management.webPropertyAdWordsLinks.get
     * @desc Returns a web property-Google Ads link to which the user has
@@ -80,6 +83,7 @@ class ResourceManagementWebpropertyadwordslinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEntityAdWordsLink]
   ): Unit = js.native
+  
   /**
     * analytics.management.webPropertyAdWordsLinks.insert
     * @desc Creates a webProperty-Google Ads link.
@@ -113,6 +117,7 @@ class ResourceManagementWebpropertyadwordslinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEntityAdWordsLink]
   ): Unit = js.native
+  
   /**
     * analytics.management.webPropertyAdWordsLinks.list
     * @desc Lists webProperty-Google Ads links for a given web property.
@@ -147,6 +152,7 @@ class ResourceManagementWebpropertyadwordslinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEntityAdWordsLinks]
   ): Unit = js.native
+  
   /**
     * analytics.management.webPropertyAdWordsLinks.patch
     * @desc Updates an existing webProperty-Google Ads link. This method
@@ -182,6 +188,7 @@ class ResourceManagementWebpropertyadwordslinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEntityAdWordsLink]
   ): Unit = js.native
+  
   /**
     * analytics.management.webPropertyAdWordsLinks.update
     * @desc Updates an existing webProperty-Google Ads link.
@@ -217,4 +224,3 @@ class ResourceManagementWebpropertyadwordslinks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEntityAdWordsLink]
   ): Unit = js.native
 }
-

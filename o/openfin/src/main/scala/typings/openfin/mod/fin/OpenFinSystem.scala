@@ -11,7 +11,7 @@ import typings.openfin.openfinStrings.info
 import typings.openfin.openfinStrings.warn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * System
@@ -20,7 +20,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait OpenFinSystem extends js.Object {
+  
   var Clipboard: OpenFinClipboard = js.native
+  
   /**
     * Registers an event listener on the specified event.
     */
@@ -57,6 +59,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Clears cached data containing window state/positions,
     * application resource files (images, HTML, JavaScript files), cookies, and items stored in the Local Storage.
@@ -73,6 +76,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Clears all cached data when OpenFin Runtime exits.
     */
@@ -80,6 +84,7 @@ trait OpenFinSystem extends js.Object {
   def deleteCacheOnExit(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def deleteCacheOnExit(callback: js.Function0[Unit]): Unit = js.native
   def deleteCacheOnExit(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Downloads the given application asset
     */
@@ -119,6 +124,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* successObj */ Path, Unit],
     errorCallback: js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit]
   ): Unit = js.native
+  
   /**
     * Download preload scripts from given URLs
     */
@@ -137,6 +143,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* downloadInfo */ js.Array[DownloadPreloadInfo], Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Downloads the given OpenFin Runtime.
     */
@@ -179,6 +186,7 @@ trait OpenFinSystem extends js.Object {
     onComplete: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Exits the Runtime.
     */
@@ -186,6 +194,7 @@ trait OpenFinSystem extends js.Object {
   def exit(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def exit(callback: js.Function0[Unit]): Unit = js.native
   def exit(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Writes any unwritten cookies data to disk.
     */
@@ -193,6 +202,7 @@ trait OpenFinSystem extends js.Object {
   def flushCookieStore(callback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def flushCookieStore(callback: js.Function0[Unit]): Unit = js.native
   def flushCookieStore(callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Retrieves an array of data for all applications.
     */
@@ -203,6 +213,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* applicationInfoList */ js.Array[ApplicationInfo], Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves an array of data for all external applications.
     */
@@ -213,6 +224,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* applicationInfoList */ js.Array[ApplicationInfo], Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves an array of data (name, ids, bounds) for all application windows.
     */
@@ -223,6 +235,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* windowInfoList */ js.Array[SystemWindowInfo], Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Returns information about the app asset.
     */
@@ -238,6 +251,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* appAssetInfo */ AppAssetInfo, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves the command line argument string that started OpenFin Runtime.
     */
@@ -248,6 +262,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* args */ String, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Get additional info of cookies.
     */
@@ -263,6 +278,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* info */ js.Array[CookieInfo], Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Get the current state of the crash reporter.
     */
@@ -273,6 +289,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* state */ CrashReporterOption, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves the configuration object that started the OpenFin Runtime.
     */
@@ -283,6 +300,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* uuid */ String, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Returns a hex encoded hash of the mac address and the currently logged in user name
     */
@@ -293,6 +311,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* id */ String, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Returns an Entity info object relating to the entity specified by the uuid and name passed in. The possible types are 'window', 'iframe', 'external connection' or 'unknown'.
     */
@@ -310,6 +329,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* info */ EntityInfo, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Gets the value of a given environment variable on the computer on which the runtime is installed.
     */
@@ -325,6 +345,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* variable */ String, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves currently focused window identity.
     */
@@ -335,6 +356,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* focusedWindowIdentity */ Identity, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves system information.
     */
@@ -345,11 +367,13 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* info */ HostSpecs, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     *
     * Returns an array of version numbers of the runtimes installed. Requires RVM 5.2+
     */
   def getInstalledRuntimes(): js.Promise[js.Array[String]] = js.native
+  
   /**
     * Retrieves the contents of the log with the specified filename.
     */
@@ -365,6 +389,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* variable */ String, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves an array containing information for each log file.
     */
@@ -375,6 +400,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* logInfoList */ js.Array[LogInfo], Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Returns a unique identifier (UUID) provided by the machine.
     */
@@ -385,6 +411,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* uuid */ String, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves the minimum (inclusive) logging level that is currently being written to the logs.
     */
@@ -395,6 +422,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* logLevel */ String, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves an object that contains data about the about the monitor setup of the computer that the runtime is running on.
     */
@@ -405,6 +433,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* monitorInfo */ MonitorInfo, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Returns the mouse in virtual screen coordinates (left, top).
     */
@@ -415,6 +444,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* mousePosition */ PointTopLeft, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves an array of all of the runtime processes that are currently running.
     * Each element in the array is an object containing the uuid and the name of the application to which the process belongs.
@@ -426,6 +456,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* processInfoList */ js.Array[ProcessInfo], Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves the Proxy settings.
     */
@@ -436,6 +467,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* proxy */ ProxyInfo, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Returns information about the running Runtime in an object.
     */
@@ -446,6 +478,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* rvmInfo */ RuntimeInfo, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Returns information about the running RVM in an object.
     */
@@ -456,6 +489,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* rvmInfo */ RVMInfo, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Returns the version of the runtime. The version contains the major, minor, build and revision numbers.
     */
@@ -466,6 +500,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* version */ String, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Runs an executable or batch file.
     */
@@ -481,6 +516,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* payload */ UuidString, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Writes the passed message into both the log file and the console.
     */
@@ -556,6 +592,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Monitors a running process.
     */
@@ -571,6 +608,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* payload */ UuidString, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Opens the passed URL in the default web browser.
     */
@@ -582,6 +620,7 @@ trait OpenFinSystem extends js.Object {
   ): Unit = js.native
   def openUrlWithBrowser(url: String, callback: js.Function0[Unit]): Unit = js.native
   def openUrlWithBrowser(url: String, callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  
   /**
     * Opens the passed URL in the default web browser.
     */
@@ -606,6 +645,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* info */ RegistryInfo, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * This function call will register a unique id and produce a token. The token can be used to broker an external connection.
     */
@@ -621,6 +661,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* detail */ Token, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Removes the process entry for the passed UUID obtained from a prior call of fin.desktop.System.launchExternalProcess().
     */
@@ -636,6 +677,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Removes a previously registered event listener from the specified event.
     */
@@ -672,6 +714,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Set the minimum log level above which logs will be written to the OpenFin log
     */
@@ -687,6 +730,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Shows the Chrome Developer Tools for the specified window.
     */
@@ -704,6 +748,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Start the crash reporter for the browser process if not already running.
     * You can optionally specify `diagnosticMode` to have the logs sent to
@@ -721,6 +766,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Attempt to close an external process. The process will be terminated if it has not closed after the elapsed timeout in milliseconds.
     */
@@ -745,6 +791,7 @@ trait OpenFinSystem extends js.Object {
     callback: js.Function1[/* info */ Result, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Update the OpenFin Runtime Proxy settings.
     */
@@ -765,4 +812,3 @@ trait OpenFinSystem extends js.Object {
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
 }
-

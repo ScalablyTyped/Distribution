@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Messages")
 @js.native
 class ResourceUsersMessages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var attachments: ResourceUsersMessagesAttachments = js.native
-  var context: APIRequestContext = js.native
+  
   /**
     * gmail.users.messages.batchDelete
     * @desc Deletes many messages by message ID. Provides no guarantees that
@@ -44,6 +45,7 @@ class ResourceUsersMessages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gmail.users.messages.batchModify
     * @desc Modifies the labels on the specified messages.
@@ -73,6 +75,9 @@ class ResourceUsersMessages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * gmail.users.messages.delete
     * @desc Immediately and permanently deletes the specified message. This
@@ -103,6 +108,7 @@ class ResourceUsersMessages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gmail.users.messages.get
     * @desc Gets the specified message.
@@ -134,6 +140,7 @@ class ResourceUsersMessages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMessage]
   ): Unit = js.native
+  
   /**
     * gmail.users.messages.import
     * @desc Imports a message into only this user's mailbox, with standard email
@@ -172,6 +179,7 @@ class ResourceUsersMessages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMessage]
   ): Unit = js.native
+  
   /**
     * gmail.users.messages.insert
     * @desc Directly inserts a message into only this user's mailbox similar to IMAP APPEND, bypassing most scanning and classification. Does not send a message.
@@ -206,6 +214,7 @@ class ResourceUsersMessages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMessage]
   ): Unit = js.native
+  
   /**
     * gmail.users.messages.list
     * @desc Lists the messages in the user's mailbox.
@@ -242,6 +251,7 @@ class ResourceUsersMessages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListMessagesResponse]
   ): Unit = js.native
+  
   /**
     * gmail.users.messages.modify
     * @desc Modifies the labels on the specified message.
@@ -272,6 +282,7 @@ class ResourceUsersMessages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMessage]
   ): Unit = js.native
+  
   /**
     * gmail.users.messages.send
     * @desc Sends the specified message to the recipients in the To, Cc, and
@@ -305,6 +316,7 @@ class ResourceUsersMessages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMessage]
   ): Unit = js.native
+  
   /**
     * gmail.users.messages.trash
     * @desc Moves the specified message to the trash.
@@ -334,6 +346,7 @@ class ResourceUsersMessages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMessage]
   ): Unit = js.native
+  
   /**
     * gmail.users.messages.untrash
     * @desc Removes the specified message from the trash.
@@ -364,4 +377,3 @@ class ResourceUsersMessages protected () extends js.Object {
     callback: BodyResponseCallback[SchemaMessage]
   ): Unit = js.native
 }
-

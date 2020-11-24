@@ -3,7 +3,7 @@ package typings.languageTags.mod
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Note that all lookups and checks for tags and subtags are case insensitive. For formatting according to common
@@ -11,15 +11,18 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Tags extends js.Object {
+  
   /**
     * Check whether a hyphen-separated tag is valid and well-formed.
     */
   def apply(tag: String): typings.languageTags.tagMod.^ = js.native
+  
   /**
     * Shortcut for `tags(tag).valid()`. Return `true` if the tag is valid, `false` otherwise. For meaningful error
     * output see `tag.errors()`.
     */
   def check(tag: String): Boolean = js.native
+  
   /**
     * Returns the file date for the underlying data, as a string.
     *
@@ -29,6 +32,7 @@ trait Tags extends js.Object {
     * ```
     */
   def date(): String = js.native
+  
   /**
     * The opposite of `tags.subtags(subtags)`. Returns an array of codes that are not registered subtags, otherwise
     * returns an empty array.
@@ -39,6 +43,7 @@ trait Tags extends js.Object {
     * ```
     */
   def filter(tags: js.Array[String]): js.Array[String] = js.native
+  
   /**
     * Convenience method to get a single 'language' type subtag. Can be used to validate an input value as a language
     * subtag. Returns a `Subtag` object or `null`.
@@ -51,6 +56,7 @@ trait Tags extends js.Object {
     * ```
     */
   def language(subtag: String): typings.languageTags.subtagMod.^  | Null = js.native
+  
   /**
     * Returns an array of `Subtag` objects representing all the 'language' type subtags belonging to the given
     * 'macrolanguage' type subtag.
@@ -65,6 +71,7 @@ trait Tags extends js.Object {
     * ```
     */
   def languages(macrolanguage: String): js.Array[typings.languageTags.subtagMod.^] = js.native
+  
   /**
     * As above, but with 'region' type subtags.
     *
@@ -76,6 +83,7 @@ trait Tags extends js.Object {
     * ```
     */
   def region(subtag: String): typings.languageTags.subtagMod.^  | Null = js.native
+  
   /**
     * Search for tags and subtags by description. Supports either a RegExp object or a string for `description`.
     * Returns an array of `Subtag` and `Tag` objects or an empty array if no results were found.
@@ -89,6 +97,7 @@ trait Tags extends js.Object {
   def search(description: String, all: Boolean): js.Array[typings.languageTags.subtagMod.^  | typings.languageTags.tagMod.^ ] = js.native
   def search(description: RegExp): js.Array[typings.languageTags.subtagMod.^  | typings.languageTags.tagMod.^ ] = js.native
   def search(description: RegExp, all: Boolean): js.Array[typings.languageTags.subtagMod.^  | typings.languageTags.tagMod.^ ] = js.native
+  
   /**
     * Look up one or more subtags. Returns an array of `Subtag` objects. Returns an empty array if all of the subtags
     * are non-existent.
@@ -108,6 +117,7 @@ trait Tags extends js.Object {
     */
   def subtags(tag: String): js.Array[typings.languageTags.subtagMod.^] = js.native
   def subtags(tag: js.Array[String]): js.Array[typings.languageTags.subtagMod.^] = js.native
+  
   /**
     * Get a subtag by type. Returns the subtag matching `type` as a `Subtag` object otherwise returns `null`.
     *
@@ -123,4 +133,3 @@ trait Tags extends js.Object {
     */
   def `type`(subtag: String, `type`: String): typings.languageTags.subtagMod.^  | Null = js.native
 }
-

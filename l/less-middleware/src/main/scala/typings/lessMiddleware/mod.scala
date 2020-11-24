@@ -6,11 +6,12 @@ import typings.expressServeStaticCore.mod.Query
 import typings.lessMiddleware.anon.CacheFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("less-middleware", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * Middleware created to allow processing of Less files for Connect JS framework
     * and by extension the Express JS framework
@@ -18,4 +19,3 @@ object mod extends js.Object {
   def apply(source: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(source: String, options: CacheFile): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
-

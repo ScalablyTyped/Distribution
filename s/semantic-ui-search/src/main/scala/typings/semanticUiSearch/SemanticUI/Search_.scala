@@ -68,11 +68,11 @@ import typings.semanticUiSearch.semanticUiSearchStrings.transition
 import typings.semanticUiSearch.semanticUiSearchStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Search_ extends js.Object {
-  var settings: SearchSettings = js.native
+  
   def apply(): JQuery = js.native
   /**
     * Adds HTML to results and displays
@@ -242,5 +242,6 @@ trait Search_ extends js.Object {
   def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def apply(behavior: setting, value: SearchSettings): JQuery = js.native
   def apply(settings: SearchSettings): JQuery = js.native
+  
+  var settings: SearchSettings = js.native
 }
-

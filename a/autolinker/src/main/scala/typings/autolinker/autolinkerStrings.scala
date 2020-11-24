@@ -7,9 +7,40 @@ import typings.autolinker.autolinkerMod.MentionServices
 import typings.autolinker.autolinkerMod.UrlMatchTypeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autolinkerStrings {
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def facebook: facebook = "facebook".asInstanceOf[facebook]
+  
+  @scala.inline
+  def instagram: instagram = "instagram".asInstanceOf[instagram]
+  
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  
+  @scala.inline
+  def scheme: scheme = "scheme".asInstanceOf[scheme]
+  
+  @scala.inline
+  def smart: smart = "smart".asInstanceOf[smart]
+  
+  @scala.inline
+  def soundcloud: soundcloud = "soundcloud".asInstanceOf[soundcloud]
+  
+  @scala.inline
+  def tld: tld = "tld".asInstanceOf[tld]
+  
+  @scala.inline
+  def twitter: twitter = "twitter".asInstanceOf[twitter]
+  
+  @scala.inline
+  def www: www = "www".asInstanceOf[www]
+  
   @js.native
   sealed trait end extends js.Object
   
@@ -51,26 +82,4 @@ object autolinkerStrings {
   
   @js.native
   sealed trait www extends UrlMatchTypeOptions
-  
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def facebook: facebook = "facebook".asInstanceOf[facebook]
-  @scala.inline
-  def instagram: instagram = "instagram".asInstanceOf[instagram]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def scheme: scheme = "scheme".asInstanceOf[scheme]
-  @scala.inline
-  def smart: smart = "smart".asInstanceOf[smart]
-  @scala.inline
-  def soundcloud: soundcloud = "soundcloud".asInstanceOf[soundcloud]
-  @scala.inline
-  def tld: tld = "tld".asInstanceOf[tld]
-  @scala.inline
-  def twitter: twitter = "twitter".asInstanceOf[twitter]
-  @scala.inline
-  def www: www = "www".asInstanceOf[www]
 }
-

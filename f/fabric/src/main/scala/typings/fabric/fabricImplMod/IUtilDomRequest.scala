@@ -4,10 +4,11 @@ import typings.fabric.anon.Method
 import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IUtilDomRequest extends js.Object {
+  
   /**
     * Cross-browser abstraction for sending XMLHttpRequest
     * @param url URL to send XMLHttpRequest to
@@ -15,4 +16,3 @@ trait IUtilDomRequest extends js.Object {
   def request(url: String): XMLHttpRequest = js.native
   def request(url: String, options: Method): XMLHttpRequest = js.native
 }
-

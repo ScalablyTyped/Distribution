@@ -7,25 +7,29 @@ import typings.openfin.viewViewMod.View
 import typings.openfin.windowWindowMod.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openfin/_v2/api/application/application", "Application")
 @js.native
 class Application protected () extends EmitterBase[ApplicationEvents] {
   def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
+  
   var _close: js.Any = js.native
+  
   var _manifestUrl: js.UndefOr[String] = js.native
+  
   var _run: js.Any = js.native
-  var window: js.Any = js.native
-  var windowListFromIdentityList: js.Any = js.native
+  
   def close(): js.Promise[Unit] = js.native
   def close(force: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Retrieves an array of wrapped fin.Windows for each of the application’s child windows.
     * @return {Promise.Array.<_Window>}
     * @tutorial Application.getChildWindows
     */
   def getChildWindows(): js.Promise[js.Array[Window]] = js.native
+  
   /**
     * Retrieves an array of active window groups for all of the application's windows. Each group is
     * represented as an array of wrapped fin.Windows.
@@ -33,12 +37,14 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     * @tutorial Application.getGroups
     */
   def getGroups(): js.Promise[js.Array[js.Array[Window]]] = js.native
+  
   /**
     * Retrieves information about the application.
     * @return {Promise.<ApplicationInfo>}
     * @tutorial Application.getInfo
     */
   def getInfo(): js.Promise[ApplicationInfo] = js.native
+  
   /**
     * Retrieves the JSON manifest that was used to create the application. Invokes the error callback
     * if the application was not created from a manifest.
@@ -46,6 +52,7 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     * @tutorial Application.getManifest
     */
   def getManifest(): js.Promise[_] = js.native
+  
   /**
     * Retrieves UUID of the application that launches this application. Invokes the error callback
     * if the application was created from a manifest.
@@ -53,12 +60,14 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     * @tutorial Application.getParentUuid
     */
   def getParentUuid(): js.Promise[String] = js.native
+  
   /**
     * Retrieves current application's shortcut configuration.
     * @return {Promise.<ShortCutConfig>}
     * @tutorial Application.getShortcuts
     */
   def getShortcuts(): js.Promise[ShortCutConfig] = js.native
+  
   /**
     * @summary Retrieves information about the system tray.
     * @desc The only information currently returned is the position and dimensions.
@@ -66,6 +75,7 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     * @tutorial Application.getTrayIconInfo
     */
   def getTrayIconInfo(): js.Promise[TrayInfo] = js.native
+  
   /**
     * Retrieves current application's views.
     * @experimental
@@ -73,18 +83,21 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     * @tutorial Application.getViews
     */
   def getViews(): js.Promise[js.Array[View]] = js.native
+  
   /**
     * Returns an instance of the main Window of the application
     * @return {Promise.<_Window>}
     * @tutorial Application.getWindow
     */
   def getWindow(): js.Promise[Window] = js.native
+  
   /**
     * Returns the current zoom level of the application.
     * @return {Promise.<number>}
     * @tutorial Application.getZoomLevel
     */
   def getZoomLevel(): js.Promise[Double] = js.native
+  
   /**
     * Adds a listener to the end of the listeners array for the specified event.
     * @param { string | symbol } eventType  - The type of the event.
@@ -168,6 +181,7 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     * @tutorial Application.isRunning
     */
   def isRunning(): js.Promise[Boolean] = js.native
+  
   /**
     * Closes the application and any child windows created by the application.
     * Cleans the application from state so it is no longer found in getAllApplications.
@@ -178,6 +192,7 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     */
   def quit(): js.Promise[Unit] = js.native
   def quit(force: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Manually registers a user with the licensing service. The only data sent by this call is userName and appName.
     * @param { string } userName - username to be passed to the RVM.
@@ -186,18 +201,21 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     * @tutorial Application.registerUser
     */
   def registerUser(userName: String, appName: String): js.Promise[Unit] = js.native
+  
   /**
     * Removes the application’s icon from the tray.
     * @return {Promise.<void>}
     * @tutorial Application.removeTrayIcon
     */
   def removeTrayIcon(): js.Promise[Unit] = js.native
+  
   /**
     * Restarts the application.
     * @return {Promise.<void>}
     * @tutorial Application.restart
     */
   def restart(): js.Promise[Unit] = js.native
+  
   /**
     * DEPRECATED method to run the application.
     * Needed when starting application via {@link Application.create}, but NOT needed when starting via {@link Application.start}.
@@ -206,12 +224,14 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     * @ignore
     */
   def run(): js.Promise[Unit] = js.native
+  
   /**
     * Instructs the RVM to schedule one restart of the application.
     * @return {Promise.<void>}
     * @tutorial Application.scheduleRestart
     */
   def scheduleRestart(): js.Promise[Unit] = js.native
+  
   /**
     * Sends a message to the RVM to upload the application's logs. On success,
     * an object containing logId is returned.
@@ -219,6 +239,7 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     * @tutorial Application.sendApplicationLog
     */
   def sendApplicationLog(): js.Promise[LogInfo] = js.native
+  
   /**
     * Sets a username to correlate with App Log Management.
     * @param { string } username Username to correlate with App's Log.
@@ -226,6 +247,7 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     * @tutorial Application.setAppLogUsername
     */
   def setAppLogUsername(username: String): js.Promise[Unit] = js.native
+  
   /**
     * Sets the query string in all shortcuts for this app. Requires RVM 5.5+.
     * @param { string } queryString The new query string for this app's shortcuts.
@@ -233,6 +255,7 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     * @tutorial Application.setShortcutQueryParams
     */
   def setShortcutQueryParams(queryString: String): js.Promise[Unit] = js.native
+  
   /**
     * Sets new application's shortcut configuration. Windows only.
     * @param { ShortCutConfig } config New application's shortcut configuration.
@@ -243,6 +266,7 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     * @tutorial Application.setShortcuts
     */
   def setShortcuts(config: ShortCutConfig): js.Promise[Unit] = js.native
+  
   /**
     * Adds a customizable icon in the system tray.  To listen for a click on the icon use the `tray-icon-clicked` event.
     * @param { string } icon Image URL or base64 encoded string to be used as the icon
@@ -250,6 +274,7 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     * @tutorial Application.setTrayIcon
     */
   def setTrayIcon(icon: String): js.Promise[Unit] = js.native
+  
   /**
     * Sets the zoom level of the application. The original size is 0 and each increment above or below represents zooming 20%
     * larger or smaller to default limits of 300% and 50% of original size, respectively.
@@ -258,11 +283,15 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     * @tutorial Application.setZoomLevel
     */
   def setZoomLevel(level: Double): js.Promise[Unit] = js.native
+  
   /**
     * Closes the application by terminating its process.
     * @return {Promise.<void>}
     * @tutorial Application.terminate
     */
   def terminate(): js.Promise[Unit] = js.native
+  
+  var window: js.Any = js.native
+  
+  var windowListFromIdentityList: js.Any = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for keytar
 
-Typings are for version 6.0.1
+Typings are for version 7.2.0
 
 ## Library description:
 Bindings to native Mac/Linux/Windows password APIs
@@ -10,9 +10,9 @@ Bindings to native Mac/Linux/Windows password APIs
 | ------------------ | :-------------: |
 | Full name          | keytar |
 | Keywords           | keychain, password, passwords, credential, credentials, vault, credential vault |
-| # releases         | 26 |
-| # dependents       | 148 |
-| # downloads        | 1137906 |
+| # releases         | 35 |
+| # dependents       | 211 |
+| # downloads        | 3489498 |
 | # stars            | 15 |
 
 ## Links

@@ -5,9 +5,8 @@ import typings.i18nJs.i18nJsStrings.guess
 import typings.i18nJs.i18nJsStrings.message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("i18n-js", "missingBehaviour")
 @js.native
 object missingBehaviour extends TopLevel[message | guess]
-

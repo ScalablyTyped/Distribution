@@ -1,7 +1,7 @@
 
 # Scala.js typings for bip39
 
-Typings are for version 3.0.2
+Typings are for version 3.0.3
 
 ## Library description:
 Bitcoin BIP39: Mnemonic code for generating deterministic keys
@@ -11,8 +11,8 @@ Bitcoin BIP39: Mnemonic code for generating deterministic keys
 | Full name          | bip39 |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 593 |
-| # downloads        | 2488368 |
+| # dependents       | 801 |
+| # downloads        | 3519730 |
 | # stars            | 5 |
 
 ## Links

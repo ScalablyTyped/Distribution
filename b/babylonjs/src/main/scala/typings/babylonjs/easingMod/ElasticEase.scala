@@ -2,7 +2,7 @@ package typings.babylonjs.easingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Animations/easing", "ElasticEase")
 @js.native
@@ -17,13 +17,20 @@ class ElasticEase () extends EasingFunction {
   oscillations: Double) = this()
   def this(
     /** Defines the number of oscillations*/
+  oscillations: js.UndefOr[scala.Nothing],
+    /** Defines the amplitude of the oscillations*/
+  springiness: Double
+  ) = this()
+  def this(
+    /** Defines the number of oscillations*/
   oscillations: Double,
     /** Defines the amplitude of the oscillations*/
   springiness: Double
   ) = this()
+  
   /** Defines the number of oscillations*/
   var oscillations: Double = js.native
+  
   /** Defines the amplitude of the oscillations*/
   var springiness: Double = js.native
 }
-

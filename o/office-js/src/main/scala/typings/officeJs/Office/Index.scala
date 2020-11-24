@@ -2,17 +2,17 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Index extends js.Object
-
 /**
   * Specifies the relative PowerPoint slide.
   */
 @JSGlobal("Office.Index")
 @js.native
 object Index extends js.Object {
+  
   /**
     * Represents the first PowerPoint slide
     */
@@ -36,6 +36,4 @@ object Index extends js.Object {
     */
   @js.native
   sealed trait Previous extends Index
-  
 }
-

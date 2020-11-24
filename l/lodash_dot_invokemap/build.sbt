@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_invokemap"
-version := "4.6-dt-20200515Z-590fcf"
+version := "4.6-dt-20200515Z-063db8"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

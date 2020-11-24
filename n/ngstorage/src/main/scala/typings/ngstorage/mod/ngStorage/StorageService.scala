@@ -3,7 +3,7 @@ package typings.ngstorage.mod.ngStorage
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StorageService
@@ -11,8 +11,10 @@ trait StorageService
   * Access to the properties of the store.
   */
 /* key */ StringDictionary[js.Any] {
+  
   @JSName("$apply")
   def $apply(): Unit = js.native
+  
   /**
     * Adds default values to the store.
     * Copies all properties of the default items to the store.
@@ -23,6 +25,7 @@ trait StorageService
     */
   @JSName("$default")
   def $default[T](items: T): StorageService with T = js.native
+  
   /**
     * Removes all properties from the store.
     *
@@ -33,12 +36,13 @@ trait StorageService
   def $reset[T](): StorageService with T = js.native
   @JSName("$reset")
   def $reset[T](items: T): StorageService with T = js.native
+  
   /**
     * @return true if the storage service is supported by the browser.
     */
   @JSName("$supported")
   def $supported(): Boolean = js.native
+  
   @JSName("$sync")
   def $sync(): Unit = js.native
 }
-

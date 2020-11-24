@@ -9,7 +9,7 @@ import typings.sawtoothSdk.protobufMod.TpProcessResponse.Status
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "TpProcessResponse")
 @js.native
@@ -19,28 +19,29 @@ import scala.scalajs.js.annotation._
   */
 class TpProcessResponse () extends ITpProcessResponse {
   def this(properties: ITpProcessResponse) = this()
+  
   /** TpProcessResponse extendedData. */
   @JSName("extendedData")
   var extendedData_TpProcessResponse: Uint8Array = js.native
+  
   /** TpProcessResponse message. */
   @JSName("message")
   var message_TpProcessResponse: String = js.native
+  
   /** TpProcessResponse status. */
   @JSName("status")
   var status_TpProcessResponse: Status = js.native
+  
   /**
     * Converts this TpProcessResponse to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "TpProcessResponse")
 @js.native
 object TpProcessResponse extends js.Object {
-  @js.native
-  sealed trait Status extends js.Object
   
   /**
     * Creates a new TpProcessResponse instance using the specified properties.
@@ -49,6 +50,7 @@ object TpProcessResponse extends js.Object {
     */
   def create(): TpProcessResponse = js.native
   def create(properties: ITpProcessResponse): TpProcessResponse = js.native
+  
   /**
     * Decodes a TpProcessResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -61,6 +63,7 @@ object TpProcessResponse extends js.Object {
   def decode(reader: Reader, length: Double): TpProcessResponse = js.native
   def decode(reader: Uint8Array): TpProcessResponse = js.native
   def decode(reader: Uint8Array, length: Double): TpProcessResponse = js.native
+  
   /**
     * Decodes a TpProcessResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -70,6 +73,7 @@ object TpProcessResponse extends js.Object {
     */
   def decodeDelimited(reader: Reader): TpProcessResponse = js.native
   def decodeDelimited(reader: Uint8Array): TpProcessResponse = js.native
+  
   /**
     * Encodes the specified TpProcessResponse message. Does not implicitly {@link TpProcessResponse.verify|verify} messages.
     * @param message TpProcessResponse message or plain object to encode
@@ -78,6 +82,7 @@ object TpProcessResponse extends js.Object {
     */
   def encode(message: ITpProcessResponse): Writer = js.native
   def encode(message: ITpProcessResponse, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified TpProcessResponse message, length delimited. Does not implicitly {@link TpProcessResponse.verify|verify} messages.
     * @param message TpProcessResponse message or plain object to encode
@@ -86,12 +91,14 @@ object TpProcessResponse extends js.Object {
     */
   def encodeDelimited(message: ITpProcessResponse): Writer = js.native
   def encodeDelimited(message: ITpProcessResponse, writer: Writer): Writer = js.native
+  
   /**
     * Creates a TpProcessResponse message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns TpProcessResponse
     */
   def fromObject(`object`: StringDictionary[js.Any]): TpProcessResponse = js.native
+  
   /**
     * Creates a plain object from a TpProcessResponse message. Also converts values to other types if specified.
     * @param message TpProcessResponse
@@ -100,42 +107,41 @@ object TpProcessResponse extends js.Object {
     */
   def toObject(message: TpProcessResponse): StringDictionary[js.Any] = js.native
   def toObject(message: TpProcessResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a TpProcessResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  
+  @js.native
+  sealed trait Status extends js.Object
   /** Status enum. */
   @js.native
   object Status extends js.Object {
-    @js.native
-    sealed trait INTERNAL_ERROR extends Status
-    
-    @js.native
-    sealed trait INVALID_TRANSACTION extends Status
-    
-    @js.native
-    sealed trait OK extends Status
-    
-    @js.native
-    sealed trait STATUS_UNSET extends Status
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Status with Double] = js.native
+    
+    @js.native
+    sealed trait INTERNAL_ERROR extends Status
     /* 3 */ @js.native
     object INTERNAL_ERROR extends TopLevel[INTERNAL_ERROR with Double]
     
+    @js.native
+    sealed trait INVALID_TRANSACTION extends Status
     /* 2 */ @js.native
     object INVALID_TRANSACTION extends TopLevel[INVALID_TRANSACTION with Double]
     
+    @js.native
+    sealed trait OK extends Status
     /* 1 */ @js.native
     object OK extends TopLevel[OK with Double]
     
+    @js.native
+    sealed trait STATUS_UNSET extends Status
     /* 0 */ @js.native
     object STATUS_UNSET extends TopLevel[STATUS_UNSET with Double]
-    
   }
-  
 }
-

@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createEmitAndSemanticDiagnosticsBuilderProgram")
 @js.native
 object createEmitAndSemanticDiagnosticsBuilderProgram extends js.Object {
+  
   /**
     * Create the builder that can handle the changes in program and iterate through changed files
     * to emit the those files and manage semantic diagnostics cache as well
@@ -38,4 +39,3 @@ object createEmitAndSemanticDiagnosticsBuilderProgram extends js.Object {
     projectReferences: js.UndefOr[js.Array[ProjectReference]]
   ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
 }
-

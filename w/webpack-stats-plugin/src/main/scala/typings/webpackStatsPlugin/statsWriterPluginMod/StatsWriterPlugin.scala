@@ -3,10 +3,11 @@ package typings.webpackStatsPlugin.statsWriterPluginMod
 import typings.std.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StatsWriterPlugin extends Plugin {
+  
   def emitStats(
     curCompiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any
   ): js.Promise[String] = js.native
@@ -15,4 +16,3 @@ trait StatsWriterPlugin extends Plugin {
     callback: TransformFunc
   ): js.Promise[Unit] = js.native
 }
-

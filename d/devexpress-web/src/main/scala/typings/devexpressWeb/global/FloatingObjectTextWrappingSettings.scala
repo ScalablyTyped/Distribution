@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains text wrapping settings for floating objects.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class FloatingObjectTextWrappingSettings ()
   extends typings.devexpressWeb.FloatingObjectTextWrappingSettings
-

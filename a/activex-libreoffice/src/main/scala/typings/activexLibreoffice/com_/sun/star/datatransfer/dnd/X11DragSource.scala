@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service connects the Java-like UNO Drag and Drop protocol to the X Drag and Drop protocol used on X-Servers to transfer data between applications
@@ -20,8 +20,8 @@ trait X11DragSource
   extends XDragSource
      with XInitialization
      with XComponent
-
 object X11DragSource {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -39,4 +39,3 @@ object X11DragSource {
     __obj.asInstanceOf[X11DragSource]
   }
 }
-

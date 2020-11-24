@@ -9,9 +9,9 @@ Compile Jade templates
 | ------------------ | :-------------: |
 | Full name          | gulp-jade |
 | Keywords           | jade, gulpplugin, stream, compile |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 141 |
-| # downloads        | 437913 |
+| # downloads        | 327934 |
 | # stars            | 86 |
 
 ## Links

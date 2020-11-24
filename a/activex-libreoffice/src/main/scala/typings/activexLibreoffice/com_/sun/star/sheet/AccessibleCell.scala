@@ -19,7 +19,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The accessible view of a spreadsheet document
@@ -31,8 +31,8 @@ trait AccessibleCell
      with XAccessibleComponent
      with XAccessibleValue
      with XAccessibleText
-
 object AccessibleCell {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -107,4 +107,3 @@ object AccessibleCell {
     __obj.asInstanceOf[AccessibleCell]
   }
 }
-

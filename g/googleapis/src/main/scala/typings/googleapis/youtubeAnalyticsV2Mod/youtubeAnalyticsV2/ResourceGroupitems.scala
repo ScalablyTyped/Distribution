@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtubeAnalytics/v2", "youtubeAnalytics_v2.Resource$Groupitems")
 @js.native
 class ResourceGroupitems protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtubeAnalytics.groupItems.delete
     * @desc Removes an item from a group.
@@ -42,6 +44,7 @@ class ResourceGroupitems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmptyResponse]
   ): Unit = js.native
+  
   /**
     * youtubeAnalytics.groupItems.insert
     * @desc Creates a group item.
@@ -71,6 +74,7 @@ class ResourceGroupitems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroupItem]
   ): Unit = js.native
+  
   /**
     * youtubeAnalytics.groupItems.list
     * @desc Returns a collection of group items that match the API request
@@ -102,4 +106,3 @@ class ResourceGroupitems protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListGroupItemsResponse]
   ): Unit = js.native
 }
-

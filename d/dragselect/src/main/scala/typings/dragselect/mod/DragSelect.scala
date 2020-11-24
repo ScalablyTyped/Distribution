@@ -20,24 +20,11 @@ import typings.std.SVGElement
 import typings.std.TouchEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DragSelect extends js.Object {
-  var area: HTMLElement | SVGElement | Document = js.native
-  var autoScrollSpeed: Double = js.native
-  var customStyles: Boolean = js.native
-  var hoverClass: String = js.native
-  var multiSelectKeys: js.Array[ctrlKey | shiftKey | metaKey | altKey] = js.native
-  var multiSelectMode: Boolean = js.native
-  var selectableClass: String = js.native
-  var selectables: (ArrayLike[HTMLElement | SVGElement]) | HTMLElement | SVGElement = js.native
-  // These properties store the options passed to the constructor, or the
-  // defaults if the relevant options aren't passed. See the docs below.
-  var selectedClass: String = js.native
-  var selector: HTMLElement = js.native
-  var selectorClass: String = js.native
-  var zoom: Double = js.native
+  
   /**
     * Add nodes that can be selected.
     * The algorithm makes sure that no node is added twice
@@ -47,6 +34,7 @@ trait DragSelect extends js.Object {
     */
   def addSelectables(_nodes: ArrayLike[HTMLElement | SVGElement]): js.Array[HTMLElement | SVGElement] = js.native
   def addSelectables(_nodes: ArrayLike[HTMLElement | SVGElement], addToSelection: Boolean): js.Array[HTMLElement | SVGElement] = js.native
+  
   /**
     * Adds several items to the selection list
     * also adds the specific classes and take into account all calculations.
@@ -69,6 +57,11 @@ trait DragSelect extends js.Object {
     triggerCallback: Boolean,
     dontAddToSelectables: Boolean
   ): js.Array[HTMLElement | SVGElement] = js.native
+  
+  var area: HTMLElement | SVGElement | Document = js.native
+  
+  var autoScrollSpeed: Double = js.native
+  
   /**
     * Function break: used in callbacks to disable the execution of the upcoming code at the specific moment
     * In contrary to stop():
@@ -76,8 +69,10 @@ trait DragSelect extends js.Object {
     * - Selector won’t display and will not select
     */
   def break(): Unit = js.native
+  
   def callback(selected: js.Array[HTMLElement | SVGElement], event: MouseEvent): Unit = js.native
   def callback(selected: js.Array[HTMLElement | SVGElement], event: TouchEvent): Unit = js.native
+  
   /**
     * Checks if any selectable element is inside selection.
     * @param [force] forces through. Handles first clicks and accessibility. Here is user is clicking directly onto some element at start, (contrary to later hovers) we can assume that he really
@@ -85,6 +80,7 @@ trait DragSelect extends js.Object {
     */
   def checkIfInsideSelection(): Boolean = js.native
   def checkIfInsideSelection(force: Boolean): Boolean = js.native
+  
   /**
     * Unselect / Deselect all current selected Nodes
     * @param [triggerCallback] - if callback should be called
@@ -92,6 +88,9 @@ trait DragSelect extends js.Object {
     */
   def clearSelection(): js.Array[HTMLElement | SVGElement] = js.native
   def clearSelection(triggerCallback: Boolean): js.Array[HTMLElement | SVGElement] = js.native
+  
+  var customStyles: Boolean = js.native
+  
   def getAreaRect(area: Document): Bottom = js.native
   /**
     * Returns the top/left/bottom/right/width/height
@@ -101,10 +100,12 @@ trait DragSelect extends js.Object {
     */
   def getAreaRect(area: HTMLElement): Bottom = js.native
   def getAreaRect(area: SVGElement): Bottom = js.native
+  
   /**
     * Returns the last seen position of the cursor/selector
     */
   def getCurrentCursorPosition(): X = js.native
+  
   /**
     * Returns cursor x, y position based on event object
     * Will be relative to an area including the scroll unless advised otherwise
@@ -143,6 +144,7 @@ trait DragSelect extends js.Object {
   def getCursorPos_false(event: TouchEvent, _area: `false`): X = js.native
   @JSName("getCursorPos")
   def getCursorPos_false(event: TouchEvent, _area: `false`, ignoreScroll: Boolean): X = js.native
+  
   /**
     * Returns the cursor position difference between start and now
     * If usePreviousCursorDifference is passed,
@@ -151,14 +153,17 @@ trait DragSelect extends js.Object {
     */
   def getCursorPositionDifference(): X = js.native
   def getCursorPositionDifference(usePreviousCursorDifference: Boolean): X = js.native
+  
   /**
     * Returns the starting/initial position of the cursor/selector
     */
   def getInitialCursorPosition(): X = js.native
+  
   /**
     * Returns the previous position of the cursor/selector
     */
   def getPreviousCursorPosition(): X = js.native
+  
   /**
     * Returns the current x, y scroll value of a container
     * If container has no scroll it will return 0
@@ -168,15 +173,20 @@ trait DragSelect extends js.Object {
   def getScroll(): Y = js.native
   def getScroll(area: HTMLElement): Y = js.native
   def getScroll(area: SVGElement): Y = js.native
+  
   /**
     * Gets all nodes that can be selected
     * @return this.selectables
     */
   def getSelectables(): js.Array[HTMLElement | SVGElement] = js.native
+  
   /**
     * Returns the current selected nodes
     */
   def getSelection(): js.Array[HTMLElement | SVGElement] = js.native
+  
+  var hoverClass: String = js.native
+  
   def isCursorNearEdge(event: js.UndefOr[scala.Nothing], area: HTMLElement): `false` | left | right | top | bottom = js.native
   def isCursorNearEdge(event: js.UndefOr[scala.Nothing], area: SVGElement): `false` | left | right | top | bottom = js.native
   /**
@@ -188,12 +198,20 @@ trait DragSelect extends js.Object {
   def isCursorNearEdge(event: MouseEvent, area: SVGElement): `false` | left | right | top | bottom = js.native
   def isCursorNearEdge(event: TouchEvent, area: HTMLElement): `false` | left | right | top | bottom = js.native
   def isCursorNearEdge(event: TouchEvent, area: SVGElement): `false` | left | right | top | bottom = js.native
+  
   def moveCallback(event: MouseEvent): Unit = js.native
   def moveCallback(event: TouchEvent): Unit = js.native
+  
   def moveStartCallback(event: MouseEvent): Unit = js.native
   def moveStartCallback(event: TouchEvent): Unit = js.native
+  
+  var multiSelectKeys: js.Array[ctrlKey | shiftKey | metaKey | altKey] = js.native
+  
+  var multiSelectMode: Boolean = js.native
+  
   def onDragStartBegin(event: MouseEvent): Unit = js.native
   def onDragStartBegin(event: TouchEvent): Unit = js.native
+  
   /**
     * Remove nodes from the nodes that can be selected.
     * @param _nodes – dom nodes
@@ -202,6 +220,7 @@ trait DragSelect extends js.Object {
     */
   def removeSelectables(_nodes: ArrayLike[HTMLElement | SVGElement]): js.Array[HTMLElement | SVGElement] = js.native
   def removeSelectables(_nodes: ArrayLike[HTMLElement | SVGElement], removeFromSelection: Boolean): js.Array[HTMLElement | SVGElement] = js.native
+  
   /**
     * Removes specific nodes from the selection
     * Multiple nodes can be given at once, in contrary to unselect
@@ -222,6 +241,7 @@ trait DragSelect extends js.Object {
     triggerCallback: Boolean,
     removeFromSelectables: Boolean
   ): js.Array[HTMLElement | SVGElement] = js.native
+  
   /**
     * Unbind functions i.e. when mouse click is released
     * @param [event] - The event object.
@@ -233,6 +253,7 @@ trait DragSelect extends js.Object {
   def reset(event: MouseEvent, withCallback: Boolean): Boolean = js.native
   def reset(event: TouchEvent): Boolean = js.native
   def reset(event: TouchEvent, withCallback: Boolean): Boolean = js.native
+  
   /**
     * Adds an item to the selection.
     * @param item selected item.
@@ -240,8 +261,22 @@ trait DragSelect extends js.Object {
     */
   def select(item: HTMLElement): HTMLElement | SVGElement | `false` = js.native
   def select(item: SVGElement): HTMLElement | SVGElement | `false` = js.native
+  
   def selectCallback(selected: HTMLElement): Unit = js.native
   def selectCallback(selected: SVGElement): Unit = js.native
+  
+  var selectableClass: String = js.native
+  
+  var selectables: (ArrayLike[HTMLElement | SVGElement]) | HTMLElement | SVGElement = js.native
+  
+  // These properties store the options passed to the constructor, or the
+  // defaults if the relevant options aren't passed. See the docs below.
+  var selectedClass: String = js.native
+  
+  var selector: HTMLElement = js.native
+  
+  var selectorClass: String = js.native
+  
   /**
     * Sets all elements that can be selected.
     * Removes all current selectables (& their respective classes).
@@ -259,6 +294,7 @@ trait DragSelect extends js.Object {
   ): js.Array[HTMLElement | SVGElement] = js.native
   def setSelectables(nodes: ArrayLike[HTMLElement | SVGElement], removeFromSelection: Boolean): js.Array[HTMLElement | SVGElement] = js.native
   def setSelectables(nodes: ArrayLike[HTMLElement | SVGElement], removeFromSelection: Boolean, addToSelection: Boolean): js.Array[HTMLElement | SVGElement] = js.native
+  
   /**
     * Sets the current selected nodes and optionally run the callback
     * By default, adds new elements also to the list of selectables
@@ -278,11 +314,13 @@ trait DragSelect extends js.Object {
     triggerCallback: Boolean,
     dontAddToSelectables: Boolean
   ): js.Array[HTMLElement | SVGElement] = js.native
+  
   /**
     * Starts the functionality. Automatically triggered when created.
     * Also, reset the functionality after a teardown
     */
   def start(): Unit = js.native
+  
   /**
     * Complete function teardown
     * Will teardown/stop the whole functionality
@@ -298,6 +336,7 @@ trait DragSelect extends js.Object {
   def stop(remove: Boolean, fromSelection: js.UndefOr[scala.Nothing], withCallback: Boolean): Unit = js.native
   def stop(remove: Boolean, fromSelection: Boolean): Unit = js.native
   def stop(remove: Boolean, fromSelection: Boolean, withCallback: Boolean): Unit = js.native
+  
   /**
     * Adds/Removes an item to the selection.
     * If it is already selected = remove, if not = add.
@@ -306,6 +345,7 @@ trait DragSelect extends js.Object {
     */
   def toggle(item: HTMLElement): HTMLElement | SVGElement = js.native
   def toggle(item: SVGElement): HTMLElement | SVGElement = js.native
+  
   /**
     * Toggles specific nodes from the selection:
     * If element is not in selection it will be added, if it is already selected, it will be removed.
@@ -323,6 +363,7 @@ trait DragSelect extends js.Object {
   ): js.Array[HTMLElement | SVGElement] = js.native
   def toggleSelection(_nodes: ArrayLike[HTMLElement | SVGElement], triggerCallback: Boolean): js.Array[HTMLElement | SVGElement] = js.native
   def toggleSelection(_nodes: ArrayLike[HTMLElement | SVGElement], triggerCallback: Boolean, special: Boolean): js.Array[HTMLElement | SVGElement] = js.native
+  
   /**
     * Removes an item from the selection.
     * @param item selected item.
@@ -330,7 +371,9 @@ trait DragSelect extends js.Object {
     */
   def unselect(item: HTMLElement): HTMLElement | SVGElement | `false` = js.native
   def unselect(item: SVGElement): HTMLElement | SVGElement | `false` = js.native
+  
   def unselectCallback(selected: HTMLElement): Unit = js.native
   def unselectCallback(selected: SVGElement): Unit = js.native
+  
+  var zoom: Double = js.native
 }
-

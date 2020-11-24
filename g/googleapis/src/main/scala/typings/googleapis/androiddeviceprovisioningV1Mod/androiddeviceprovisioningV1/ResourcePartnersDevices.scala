@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androiddeviceprovisioning/v1", "androiddeviceprovisioning_v1.Resource$Partners$Devices")
 @js.native
 class ResourcePartnersDevices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * androiddeviceprovisioning.partners.devices.claim
     * @desc Claims a device for a customer and adds it to zero-touch
@@ -47,6 +47,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaClaimDeviceResponse]
   ): Unit = js.native
+  
   /**
     * androiddeviceprovisioning.partners.devices.claimAsync
     * @desc Claims a batch of devices for a customer asynchronously. Adds the
@@ -78,6 +79,9 @@ class ResourcePartnersDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * androiddeviceprovisioning.partners.devices.findByIdentifier
     * @desc Finds devices by hardware identifiers, such as IMEI.
@@ -110,6 +114,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFindDevicesByDeviceIdentifierResponse]
   ): Unit = js.native
+  
   /**
     * androiddeviceprovisioning.partners.devices.findByOwner
     * @desc Finds devices claimed for customers. The results only contain
@@ -145,6 +150,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFindDevicesByOwnerResponse]
   ): Unit = js.native
+  
   /**
     * androiddeviceprovisioning.partners.devices.get
     * @desc Gets a device.
@@ -173,6 +179,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDevice]
   ): Unit = js.native
+  
   /**
     * androiddeviceprovisioning.partners.devices.metadata
     * @desc Updates reseller metadata associated with the device.
@@ -206,6 +213,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeviceMetadata]
   ): Unit = js.native
+  
   /**
     * androiddeviceprovisioning.partners.devices.unclaim
     * @desc Unclaims a device from a customer and removes it from zero-touch
@@ -236,6 +244,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * androiddeviceprovisioning.partners.devices.unclaimAsync
     * @desc Unclaims a batch of devices for a customer asynchronously. Removes
@@ -267,6 +276,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * androiddeviceprovisioning.partners.devices.updateMetadataAsync
     * @desc Updates the reseller metadata attached to a batch of devices. This
@@ -303,4 +313,3 @@ class ResourcePartnersDevices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

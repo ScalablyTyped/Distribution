@@ -2,17 +2,17 @@ package typings.reactNativeGoby.mod.Goby
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CheckFrequency extends js.Object
-
 /**
   * Indicates when you would like to check for (and install) updates from the Goby server.
   */
 @JSImport("react-native-goby", "Goby.CheckFrequency")
 @js.native
 object CheckFrequency extends js.Object {
+  
   /**
     * Don't automatically check for updates, but only do it when goby.sync() is manully called inside app code.
     */
@@ -30,6 +30,4 @@ object CheckFrequency extends js.Object {
     */
   @js.native
   sealed trait ON_APP_START extends CheckFrequency
-  
 }
-

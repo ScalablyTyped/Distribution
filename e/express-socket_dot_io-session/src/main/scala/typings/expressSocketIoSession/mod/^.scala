@@ -5,11 +5,12 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("express-socket.io-session", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(expressSessionMiddleware: RequestHandler[ParamsDictionary, _, _, Query]): SocketIoSharedSessionMiddleware = js.native
   def apply(
     expressSessionMiddleware: RequestHandler[ParamsDictionary, _, _, Query],
@@ -25,4 +26,3 @@ object ^ extends js.Object {
     options: SharedSessionOptions
   ): SocketIoSharedSessionMiddleware = js.native
 }
-

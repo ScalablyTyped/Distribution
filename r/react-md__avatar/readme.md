@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__avatar
 
-Typings are for version 2.1.2
+Typings are for version 2.4.2
 
 ## Library description:
 This package is used to avatars which are used to symbolize people or objects.
@@ -10,9 +10,9 @@ This package is used to avatars which are used to symbolize people or objects.
 | ------------------ | :-------------: |
 | Full name          | @react-md/avatar |
 | Keywords           | react-md, material design, react, avatar, placeholder, component, components |
-| # releases         | 22 |
+| # releases         | 31 |
 | # dependents       | 2 |
-| # downloads        | 4207 |
+| # downloads        | 8006 |
 | # stars            | 0 |
 
 ## Links

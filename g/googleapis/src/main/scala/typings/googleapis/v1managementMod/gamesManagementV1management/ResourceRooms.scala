@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesManagement/v1management", "gamesManagement_v1management.Resource$Rooms")
 @js.native
 class ResourceRooms protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gamesManagement.rooms.reset
     * @desc Reset all rooms for the currently authenticated player for your
@@ -38,6 +40,7 @@ class ResourceRooms protected () extends js.Object {
   ): Unit = js.native
   def reset(params: ParamsResourceRoomsReset, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def reset(params: ParamsResourceRoomsReset, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * gamesManagement.rooms.resetForAllPlayers
     * @desc Deletes rooms where the only room participants are from whitelisted
@@ -68,4 +71,3 @@ class ResourceRooms protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

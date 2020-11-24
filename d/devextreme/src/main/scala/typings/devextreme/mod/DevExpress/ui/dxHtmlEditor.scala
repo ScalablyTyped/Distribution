@@ -18,21 +18,33 @@ import typings.devextreme.devextremeStrings.strike
 import typings.devextreme.devextremeStrings.underline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait dxHtmlEditor extends Editor {
-  /** @name dxHtmlEditor.clearHistory() */
+  
+  /**
+    * [descr:dxHtmlEditor.clearHistory()]
+    */
   def clearHistory(): Unit = js.native
-  /** @name dxHtmlEditor.delete(index, length) */
+  
+  /**
+    * [descr:dxHtmlEditor.delete(index, length)]
+    */
   def delete(index: Double, length: Double): Unit = js.native
+  
   def format(formatName: String, formatValue: js.Any): Unit = js.native
+  
   def formatLine(index: Double, length: Double, formatName: String, formatValue: js.Any): Unit = js.native
-  /** @name dxHtmlEditor.formatLine(index, length, formats) */
+  /**
+    * [descr:dxHtmlEditor.formatLine(index, length, formats)]
+    */
   def formatLine(index: Double, length: Double, formats: js.Any): Unit = js.native
   @JSName("formatLine")
   def formatLine_align(index: Double, length: Double, formatName: align, formatValue: js.Any): Unit = js.native
-  /** @name dxHtmlEditor.formatLine(index, length, formatName, formatValue) */
+  /**
+    * [descr:dxHtmlEditor.formatLine(index, length, formatName, formatValue)]
+    */
   @JSName("formatLine")
   def formatLine_background(index: Double, length: Double, formatName: background, formatValue: js.Any): Unit = js.native
   @JSName("formatLine")
@@ -63,12 +75,17 @@ trait dxHtmlEditor extends Editor {
   def formatLine_strike(index: Double, length: Double, formatName: strike, formatValue: js.Any): Unit = js.native
   @JSName("formatLine")
   def formatLine_underline(index: Double, length: Double, formatName: underline, formatValue: js.Any): Unit = js.native
+  
   def formatText(index: Double, length: Double, formatName: String, formatValue: js.Any): Unit = js.native
-  /** @name dxHtmlEditor.formatText(index, length, formats) */
+  /**
+    * [descr:dxHtmlEditor.formatText(index, length, formats)]
+    */
   def formatText(index: Double, length: Double, formats: js.Any): Unit = js.native
   @JSName("formatText")
   def formatText_align(index: Double, length: Double, formatName: align, formatValue: js.Any): Unit = js.native
-  /** @name dxHtmlEditor.formatText(index, length, formatName, formatValue) */
+  /**
+    * [descr:dxHtmlEditor.formatText(index, length, formatName, formatValue)]
+    */
   @JSName("formatText")
   def formatText_background(index: Double, length: Double, formatName: background, formatValue: js.Any): Unit = js.native
   @JSName("formatText")
@@ -99,9 +116,12 @@ trait dxHtmlEditor extends Editor {
   def formatText_strike(index: Double, length: Double, formatName: strike, formatValue: js.Any): Unit = js.native
   @JSName("formatText")
   def formatText_underline(index: Double, length: Double, formatName: underline, formatValue: js.Any): Unit = js.native
+  
   @JSName("format")
   def format_align(formatName: align, formatValue: js.Any): Unit = js.native
-  /** @name dxHtmlEditor.format(formatName, formatValue) */
+  /**
+    * [descr:dxHtmlEditor.format(formatName, formatValue)]
+    */
   @JSName("format")
   def format_background(formatName: background, formatValue: js.Any): Unit = js.native
   @JSName("format")
@@ -132,29 +152,69 @@ trait dxHtmlEditor extends Editor {
   def format_strike(formatName: strike, formatValue: js.Any): Unit = js.native
   @JSName("format")
   def format_underline(formatName: underline, formatValue: js.Any): Unit = js.native
-  /** @name dxHtmlEditor.get(componentPath) */
+  
+  /**
+    * [descr:dxHtmlEditor.get(componentPath)]
+    */
   def get(componentPath: String): js.Any = js.native
-  /** @name dxHtmlEditor.getFormat(index, length) */
+  
+  /**
+    * [descr:dxHtmlEditor.getFormat(index, length)]
+    */
   def getFormat(index: Double, length: Double): js.Any = js.native
-  /** @name dxHtmlEditor.getLength() */
+  
+  /**
+    * [descr:dxHtmlEditor.getLength()]
+    */
   def getLength(): Double = js.native
-  /** @name dxHtmlEditor.getQuillInstance() */
+  
+  /**
+    * [descr:dxHtmlEditor.getModule(moduleName)]
+    */
+  def getModule(moduleName: String): js.Any = js.native
+  
+  /**
+    * [descr:dxHtmlEditor.getQuillInstance()]
+    */
   def getQuillInstance(): js.Any = js.native
-  /** @name dxHtmlEditor.getSelection() */
+  
+  /**
+    * [descr:dxHtmlEditor.getSelection()]
+    */
   def getSelection(): js.Any = js.native
-  /** @name dxHtmlEditor.insertEmbed(index, type, config) */
+  
+  /**
+    * [descr:dxHtmlEditor.insertEmbed(index, type, config)]
+    */
   def insertEmbed(index: Double, `type`: String, config: js.Any): Unit = js.native
-  /** @name dxHtmlEditor.insertText(index, text, formats) */
+  
+  /**
+    * [descr:dxHtmlEditor.insertText(index, text, formats)]
+    */
   def insertText(index: Double, text: String, formats: js.Any): Unit = js.native
-  /** @name dxHtmlEditor.redo() */
+  
+  /**
+    * [descr:dxHtmlEditor.redo()]
+    */
   def redo(): Unit = js.native
-  /** @name dxHtmlEditor.register(components) */
+  
+  /**
+    * [descr:dxHtmlEditor.register(components)]
+    */
   def register(modules: js.Any): Unit = js.native
-  /** @name dxHtmlEditor.removeFormat(index, length) */
+  
+  /**
+    * [descr:dxHtmlEditor.removeFormat(index, length)]
+    */
   def removeFormat(index: Double, length: Double): Unit = js.native
-  /** @name dxHtmlEditor.setSelection(index, length) */
+  
+  /**
+    * [descr:dxHtmlEditor.setSelection(index, length)]
+    */
   def setSelection(index: Double, length: Double): Unit = js.native
-  /** @name dxHtmlEditor.undo() */
+  
+  /**
+    * [descr:dxHtmlEditor.undo()]
+    */
   def undo(): Unit = js.native
 }
-

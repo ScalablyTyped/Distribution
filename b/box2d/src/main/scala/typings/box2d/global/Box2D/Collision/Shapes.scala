@@ -4,11 +4,12 @@ import typings.box2d.Box2D.Common.Math.b2Transform
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Box2D.Collision.Shapes")
 @js.native
 object Shapes extends js.Object {
+  
   @js.native
   /**
     * Creates a new circle shape.
@@ -44,17 +45,10 @@ object Shapes extends js.Object {
   @js.native
   class b2PolygonShape ()
     extends typings.box2d.Box2D.Collision.Shapes.b2PolygonShape
-  
-  @js.native
-  /**
-    * Creates a new b2Shape.
-    **/
-  class b2Shape ()
-    extends typings.box2d.Box2D.Collision.Shapes.b2Shape
-  
   /* static members */
   @js.native
   object b2PolygonShape extends js.Object {
+    
     /**
       * Creates a b2PolygonShape from a vertices list. This assumes the vertices define a convex polygon.  It is assumed that the exterior is the the right of each edge.
       * @param vertices List of vertices to create the polygon shape from.
@@ -63,6 +57,7 @@ object Shapes extends js.Object {
       **/
     def AsArray(vertices: js.Array[b2Vec2]): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = js.native
     def AsArray(vertices: js.Array[b2Vec2], vertexCount: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = js.native
+    
     /**
       * Build vertices to represent an axis-aligned box.
       * @param hx The half-width.
@@ -70,6 +65,7 @@ object Shapes extends js.Object {
       * @return Box polygon shape.
       **/
     def AsBox(hx: Double, hy: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = js.native
+    
     /**
       * Creates a single edge from two vertices.
       * @param v1 First vertex.
@@ -77,6 +73,7 @@ object Shapes extends js.Object {
       * @return Edge polygon shape.
       **/
     def AsEdge(v1: b2Vec2, b2: b2Vec2): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = js.native
+    
     /**
       * Build vertices to represent an oriented box.
       * @param hx The half-width.
@@ -89,6 +86,7 @@ object Shapes extends js.Object {
     def AsOrientedBox(hx: Double, hy: Double, center: js.UndefOr[scala.Nothing], angle: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = js.native
     def AsOrientedBox(hx: Double, hy: Double, center: b2Vec2): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = js.native
     def AsOrientedBox(hx: Double, hy: Double, center: b2Vec2, angle: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = js.native
+    
     /**
       * This assumes the vertices define a convex polygon.  It is assumed that the exterior is the the right of each edge.
       * @param vertices List of vertices to create the polygon shape from.
@@ -99,27 +97,16 @@ object Shapes extends js.Object {
     def AsVector(vertices: js.Array[b2Vec2], vertexCount: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = js.native
   }
   
+  @js.native
+  /**
+    * Creates a new b2Shape.
+    **/
+  class b2Shape ()
+    extends typings.box2d.Box2D.Collision.Shapes.b2Shape
   /* static members */
   @js.native
   object b2Shape extends js.Object {
-    var e_circleShape: Double = js.native
-    var e_edgeShape: Double = js.native
-    /**
-      * Return value for TestSegment indicating a hit.
-      **/
-    var e_hitCollide: Double = js.native
-    /**
-      * Return value for TestSegment indicating a miss.
-      **/
-    var e_missCollide: Double = js.native
-    var e_polygonShape: Double = js.native
-    var e_shapeTypeCount: Double = js.native
-    // Note: these enums are public in the source but no referenced by the documentation
-    var e_unknownShape: Double = js.native
-    /**
-      * Return value for TestSegment indicating that the segment starting point, p1, is already inside the shape.
-      **/
-    var startsInsideCollide: Double = js.native
+    
     /**
       * Test if two shapes overlap with the applied transforms.
       * @param shape1 shape to test for overlap with shape2.
@@ -134,7 +121,31 @@ object Shapes extends js.Object {
       shape2: typings.box2d.Box2D.Collision.Shapes.b2Shape,
       transform2: b2Transform
     ): Boolean = js.native
+    
+    var e_circleShape: Double = js.native
+    
+    var e_edgeShape: Double = js.native
+    
+    /**
+      * Return value for TestSegment indicating a hit.
+      **/
+    var e_hitCollide: Double = js.native
+    
+    /**
+      * Return value for TestSegment indicating a miss.
+      **/
+    var e_missCollide: Double = js.native
+    
+    var e_polygonShape: Double = js.native
+    
+    var e_shapeTypeCount: Double = js.native
+    
+    // Note: these enums are public in the source but no referenced by the documentation
+    var e_unknownShape: Double = js.native
+    
+    /**
+      * Return value for TestSegment indicating that the segment starting point, p1, is already inside the shape.
+      **/
+    var startsInsideCollide: Double = js.native
   }
-  
 }
-

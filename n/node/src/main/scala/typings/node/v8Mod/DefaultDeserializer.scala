@@ -2,7 +2,7 @@ package typings.node.v8Mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A subclass of `Serializer` that serializes `TypedArray` (in particular `Buffer`) and `DataView` objects as host objects,
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSImport("v8", "DefaultDeserializer")
 @js.native
 class DefaultDeserializer () extends Deserializer
-

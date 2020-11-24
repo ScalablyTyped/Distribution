@@ -4,7 +4,7 @@ import typings.node.fsMod.ReadStream
 import typings.node.fsMod.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-kcl", "KCLManager")
 @js.native
@@ -32,7 +32,8 @@ class KCLManager protected () extends js.Object {
     errorFile: WriteStream
   ) = this()
   def this(kclManagerInput: KCLInput, inputFile: ReadStream, outputFile: WriteStream, errorFile: WriteStream) = this()
+  
   def checkpoint(sequenceNumber: String): Unit = js.native
+  
   def run(): Unit = js.native
 }
-

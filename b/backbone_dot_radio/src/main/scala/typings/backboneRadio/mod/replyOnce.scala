@@ -3,11 +3,12 @@ package typings.backboneRadio.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone.radio", "replyOnce")
 @js.native
 object replyOnce extends js.Object {
+  
   def apply(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
   def apply(
     channelName: String,
@@ -22,4 +23,3 @@ object replyOnce extends js.Object {
     context: js.Any
   ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
 }
-

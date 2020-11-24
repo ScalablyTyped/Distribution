@@ -2,9 +2,10 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object sdbc {
+  
   /**
     * is the basic service for pooling SDBC connections.
     *
@@ -15,6 +16,7 @@ package object sdbc {
     * @see com.sun.star.sdbc.XConnection
     */
   type ConnectionPool = typings.activexLibreoffice.com_.sun.star.sdbc.XConnectionPool
+  
   /**
     * is the service that every driver class must implement.
     *
@@ -31,7 +33,9 @@ package object sdbc {
     * @see com.sun.star.sdbc.XConnection
     */
   type Driver = typings.activexLibreoffice.com_.sun.star.sdbc.XDriver
+  
   type DriverManager = typings.activexLibreoffice.com_.sun.star.sdbc.XDriverManager2
+  
   /**
     * is an exception that provides information on database access warnings. Warnings are silently chained to the object whose method caused it to be
     * reported.

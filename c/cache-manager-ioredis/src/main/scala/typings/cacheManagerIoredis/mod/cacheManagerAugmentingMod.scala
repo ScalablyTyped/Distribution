@@ -9,14 +9,14 @@ import typings.cacheManagerIoredis.mod.CacheManagerIORedis.RedisStoreSingleNodeC
 import typings.cacheManagerIoredis.mod.CacheManagerIORedis.SingleNodeCache
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("cache-manager", JSImport.Namespace)
 @js.native
 object cacheManagerAugmentingMod extends js.Object {
+  
   def caching(IConfig: StoreConfig with CacheOptions): Cache = js.native
   def caching(IConfig: RedisStoreClusterConfig): ClusterCache = js.native
   def caching(IConfig: RedisStoreSingleNodeConfig): SingleNodeCache = js.native
 }
-

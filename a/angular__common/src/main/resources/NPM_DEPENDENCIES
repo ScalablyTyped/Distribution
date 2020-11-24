@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/common" : "10.0.7"
+      "@angular/common" : "11.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/common" : "10.0.7"
+      "@angular/common" : "11.0.2"
     }
   ],
   "compile-devDependencies" : [

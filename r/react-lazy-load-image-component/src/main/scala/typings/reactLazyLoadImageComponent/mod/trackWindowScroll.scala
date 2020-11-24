@@ -5,11 +5,11 @@ import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.sc
 import typings.std.Omit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-lazy-load-image-component", "trackWindowScroll")
 @js.native
 object trackWindowScroll extends js.Object {
+  
   def apply[P /* <: LazyComponentProps */](BaseComponent: ComponentType[P]): ComponentType[Omit[P, scrollPosition]] = js.native
 }
-

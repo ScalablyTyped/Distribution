@@ -3,11 +3,12 @@ package typings.tensorflowTfjsBackendWebgl
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-backend-webgl/dist/batchnorm_gpu", JSImport.Namespace)
 @js.native
 object batchnormGpuMod extends js.Object {
+  
   @js.native
   class BatchNormProgram protected () extends GPGPUProgram {
     def this(
@@ -43,6 +44,4 @@ object batchnormGpuMod extends js.Object {
       varianceEpsilon: Double
     ) = this()
   }
-  
 }
-

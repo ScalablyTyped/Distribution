@@ -2,19 +2,12 @@ package typings.luminoCoreutils.jsonMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/coreutils/types/json", "JSONExt")
 @js.native
 object JSONExt extends js.Object {
-  /**
-    * A shared frozen empty JSONArray
-    */
-  val emptyArray: ReadonlyJSONArray = js.native
-  /**
-    * A shared frozen empty JSONObject
-    */
-  val emptyObject: ReadonlyJSONObject = js.native
+  
   def deepCopy(value: String): String = js.native
   def deepCopy(value: js.Array[ReadonlyPartialJSONValue]): js.Array[ReadonlyPartialJSONValue] = js.native
   /**
@@ -28,6 +21,7 @@ object JSONExt extends js.Object {
   def deepCopy(value: Double): Double = js.native
   def deepCopy(value: Null): Null = js.native
   def deepCopy(value: ReadonlyPartialJSONObject): ReadonlyPartialJSONObject = js.native
+  
   /**
     * Compare two JSON values for deep equality.
     *
@@ -38,6 +32,17 @@ object JSONExt extends js.Object {
     * @returns `true` if the values are equivalent, `false` otherwise.
     */
   def deepEqual(first: ReadonlyPartialJSONValue, second: ReadonlyPartialJSONValue): Boolean = js.native
+  
+  /**
+    * A shared frozen empty JSONArray
+    */
+  val emptyArray: ReadonlyJSONArray = js.native
+  
+  /**
+    * A shared frozen empty JSONObject
+    */
+  val emptyObject: ReadonlyJSONObject = js.native
+  
   /**
     * Test whether a JSON value is an array.
     *
@@ -46,6 +51,7 @@ object JSONExt extends js.Object {
     * @returns `true` if the value is a an array, `false` otherwise.
     */
   def isArray(value: JSONValue | PartialJSONValue | ReadonlyJSONValue | ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONArray */ Boolean = js.native
+  
   /**
     * Test whether a JSON value is an object.
     *
@@ -54,6 +60,7 @@ object JSONExt extends js.Object {
     * @returns `true` if the value is a an object, `false` otherwise.
     */
   def isObject(value: JSONValue | PartialJSONValue | ReadonlyJSONValue | ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONObject */ Boolean = js.native
+  
   /**
     * Test whether a JSON value is a primitive.
     *
@@ -63,4 +70,3 @@ object JSONExt extends js.Object {
     */
   def isPrimitive(value: ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONPrimitive */ Boolean = js.native
 }
-

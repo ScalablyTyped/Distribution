@@ -3,7 +3,7 @@ package typings.jsrsasign.jsrsasign.KJUR.crypto
 import typings.jsrsasign.jsrsasign.BigInteger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * class for DSA signing and verification
@@ -21,33 +21,39 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DSA extends js.Object {
+  
   /**
     * parse hexadecimal ASN.1 DSA signature value
     * @param hSigVal hexadecimal string of ASN.1 encoded DSA signature value
     * @return array [r, s] of DSA signature value. Both r and s are BigInteger.
     */
   def parseASN1Signature(hSigVal: String): js.Tuple2[BigInteger, BigInteger] = js.native
+  
   /**
     * read an ASN.1 hexadecimal string of X.509 DSA public key certificate
     * @param h hexadecimal string of X.509 DSA public key certificate
     * @param nthPKI nth index of publicKeyInfo. (DEFAULT: 6 for X509v3)
     */
   def readCertPubKeyHex(h: String, nthPKI: Double): Unit = js.native
+  
   /**
     * read an ASN.1 hexadecimal string of PKCS#1/5 plain DSA private key
     * @param h hexadecimal string of PKCS#1/5 DSA private key
     */
   def readPKCS5PrvKeyHex(h: String): Unit = js.native
+  
   /**
     * read an ASN.1 hexadecimal string of PKCS#8 plain DSA private key
     * @param h hexadecimal string of PKCS#8 DSA private key
     */
   def readPKCS8PrvKeyHex(h: String): Unit = js.native
+  
   /**
     * read an ASN.1 hexadecimal string of PKCS#8 plain DSA private key
     * @param h hexadecimal string of PKCS#8 DSA private key
     */
   def readPKCS8PubKeyHex(h: String): Unit = js.native
+  
   def setPrivate(p: BigInteger, q: BigInteger, g: BigInteger, y: Null, x: BigInteger): Unit = js.native
   /**
     * set DSA private key by key parameters of BigInteger object
@@ -58,6 +64,7 @@ trait DSA extends js.Object {
     * @param x private key X
     */
   def setPrivate(p: BigInteger, q: BigInteger, g: BigInteger, y: BigInteger, x: BigInteger): Unit = js.native
+  
   /**
     * set DSA private key by key parameters of hexadecimal string
     * @param hP prime P parameter
@@ -67,6 +74,7 @@ trait DSA extends js.Object {
     * @param hX private key X
     */
   def setPrivateHex(hP: String, hQ: String, hG: String, hY: String, hX: String): Unit = js.native
+  
   /**
     * set DSA public key by key parameters of BigInteger object
     * @param p prime P parameter
@@ -75,6 +83,7 @@ trait DSA extends js.Object {
     * @param y public key Y
     */
   def setPublic(p: BigInteger, q: BigInteger, g: BigInteger, y: BigInteger): Unit = js.native
+  
   /**
     * set DSA public key by key parameters of hexadecimal string
     * @param hP prime P parameter
@@ -83,12 +92,14 @@ trait DSA extends js.Object {
     * @param hY public key Y
     */
   def setPublicHex(hP: String, hQ: String, hG: String, hY: String): Unit = js.native
+  
   /**
     * sign to hashed message by this DSA private key object
     * @param sHashHex hexadecimal string of hashed message
     * @return hexadecimal string of ASN.1 encoded DSA signature value
     */
   def signWithMessageHash(sHashHex: String): String = js.native
+  
   /**
     * verify signature by this DSA public key object
     * @param sHashHex hexadecimal string of hashed message
@@ -97,4 +108,3 @@ trait DSA extends js.Object {
     */
   def verifyWithMessageHash(sHashHex: String, hSigVal: String): Boolean = js.native
 }
-

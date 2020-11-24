@@ -10,9 +10,9 @@ A Karma plugin. Launch any browser on BrowserStack!
 | ------------------ | :-------------: |
 | Full name          | karma-browserstack-launcher |
 | Keywords           | karma-plugin, karma-launcher, browserstack, browser-stack |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 15 |
-| # downloads        | 1300719 |
+| # downloads        | 1256106 |
 | # stars            | 5 |
 
 ## Links

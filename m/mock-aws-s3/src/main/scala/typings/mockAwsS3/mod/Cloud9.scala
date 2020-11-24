@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.cloud9Mod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "Cloud9")
 @js.native
@@ -14,4 +14,3 @@ class Cloud9 ()
   extends typings.awsSdk.mod.Cloud9 {
   def this(options: ClientConfiguration) = this()
 }
-

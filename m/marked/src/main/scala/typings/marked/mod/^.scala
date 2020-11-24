@@ -2,11 +2,12 @@ package typings.marked.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("marked", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Compiles markdown to HTML synchronously.
     *
@@ -39,4 +40,3 @@ object ^ extends js.Object {
     callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ String, Unit]
   ): Unit = js.native
 }
-

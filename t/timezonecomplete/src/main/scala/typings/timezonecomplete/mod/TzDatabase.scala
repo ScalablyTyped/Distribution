@@ -2,7 +2,7 @@ package typings.timezonecomplete.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("timezonecomplete", "TzDatabase")
 @js.native
@@ -13,15 +13,16 @@ import scala.scalajs.js.annotation._
   */
 class TzDatabase protected ()
   extends typings.timezonecomplete.tzDatabaseMod.TzDatabase
-
 /* static members */
 @JSImport("timezonecomplete", "TzDatabase")
 @js.native
 object TzDatabase extends js.Object {
+  
   /**
     * Single instance member
     */
   var _instance: js.Any = js.native
+  
   /**
     * (re-) initialize timezonecomplete with time zone data
     *
@@ -32,10 +33,10 @@ object TzDatabase extends js.Object {
   def init(): Unit = js.native
   def init(data: js.Any): Unit = js.native
   def init(data: js.Array[_]): Unit = js.native
+  
   /**
     * Single instance of this database
     * @throws timezonecomplete.InvalidTimeZoneData if the global time zone data is invalid
     */
   def instance(): typings.timezonecomplete.tzDatabaseMod.TzDatabase = js.native
 }
-

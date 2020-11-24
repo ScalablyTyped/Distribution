@@ -5,7 +5,7 @@ import typings.std.Document
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   * @api
   */
 class WMSCapabilities () extends XML {
+  
   def read(source: String): GlobalObject = js.native
   /**
     * Read a WMS capabilities document.
@@ -33,4 +34,3 @@ class WMSCapabilities () extends XML {
   def read(source: Document): GlobalObject = js.native
   def read(source: Node): GlobalObject = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Implement this interface for exposing various aspects of a class's content.
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XAccessibleContext extends XInterface {
+  
   /**
     * Return the number of children.
     *
@@ -25,6 +26,7 @@ trait XAccessibleContext extends XInterface {
     * @returns The returned value is non-negative.
     */
   val AccessibleChildCount: Double = js.native
+  
   /**
     * Returns the object's description.
     *
@@ -32,6 +34,7 @@ trait XAccessibleContext extends XInterface {
     * @returns The returned string is the object's localized description.
     */
   val AccessibleDescription: String = js.native
+  
   /**
     * Returns the index of this object in its accessible parent.
     *
@@ -39,6 +42,7 @@ trait XAccessibleContext extends XInterface {
     * @returns The returned index is zero based.
     */
   val AccessibleIndexInParent: Double = js.native
+  
   /**
     * Return the object's localized name.
     *
@@ -47,6 +51,7 @@ trait XAccessibleContext extends XInterface {
     * @returns The returned string is the object's localized name.
     */
   val AccessibleName: String = js.native
+  
   /**
     * Returns the parent of this object.
     *
@@ -54,6 +59,7 @@ trait XAccessibleContext extends XInterface {
     * @returns The returned reference points to a valid object for all but the root node. If called for the root node an empty reference is returned.
     */
   val AccessibleParent: XAccessible = js.native
+  
   /**
     * Returns the set of relations defined for this object.
     *
@@ -63,6 +69,7 @@ trait XAccessibleContext extends XInterface {
     * @returns The returned value is either an empty reference or a reference to a valid object that represents a copy of the objects list of relations.
     */
   val AccessibleRelationSet: XAccessibleRelationSet = js.native
+  
   /**
     * Returns the role of this object.
     *
@@ -71,6 +78,7 @@ trait XAccessibleContext extends XInterface {
     * @see AccessibleRole for a list of the available roles.
     */
   val AccessibleRole: Double = js.native
+  
   /**
     * Returns the set of states that are currently active for this object.
     *
@@ -80,6 +88,7 @@ trait XAccessibleContext extends XInterface {
     * @see XAccessibleStateSet
     */
   val AccessibleStateSet: XAccessibleStateSet = js.native
+  
   /**
     * Returns the locale of the component.
     *
@@ -88,6 +97,7 @@ trait XAccessibleContext extends XInterface {
     * @throws IllegalAccessibleComponentStateException when this object does not (yet) have a parent.
     */
   val Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  
   /**
     * Returns the i-th child of this object.
     *
@@ -97,6 +107,7 @@ trait XAccessibleContext extends XInterface {
     * @throws com::sun::star::lang::IndexOutOfBoundsException If no child with the given index exists then an {@link com.sun.star.lang.IndexOutOfBoundsExceptio
     */
   def getAccessibleChild(i: Double): XAccessible = js.native
+  
   /**
     * Return the number of children.
     *
@@ -104,6 +115,7 @@ trait XAccessibleContext extends XInterface {
     * @returns The returned value is non-negative.
     */
   def getAccessibleChildCount(): Double = js.native
+  
   /**
     * Returns the object's description.
     *
@@ -111,6 +123,7 @@ trait XAccessibleContext extends XInterface {
     * @returns The returned string is the object's localized description.
     */
   def getAccessibleDescription(): String = js.native
+  
   /**
     * Returns the index of this object in its accessible parent.
     *
@@ -118,6 +131,7 @@ trait XAccessibleContext extends XInterface {
     * @returns The returned index is zero based.
     */
   def getAccessibleIndexInParent(): Double = js.native
+  
   /**
     * Return the object's localized name.
     *
@@ -126,6 +140,7 @@ trait XAccessibleContext extends XInterface {
     * @returns The returned string is the object's localized name.
     */
   def getAccessibleName(): String = js.native
+  
   /**
     * Returns the parent of this object.
     *
@@ -133,6 +148,7 @@ trait XAccessibleContext extends XInterface {
     * @returns The returned reference points to a valid object for all but the root node. If called for the root node an empty reference is returned.
     */
   def getAccessibleParent(): XAccessible = js.native
+  
   /**
     * Returns the set of relations defined for this object.
     *
@@ -142,6 +158,7 @@ trait XAccessibleContext extends XInterface {
     * @returns The returned value is either an empty reference or a reference to a valid object that represents a copy of the objects list of relations.
     */
   def getAccessibleRelationSet(): XAccessibleRelationSet = js.native
+  
   /**
     * Returns the role of this object.
     *
@@ -150,6 +167,7 @@ trait XAccessibleContext extends XInterface {
     * @see AccessibleRole for a list of the available roles.
     */
   def getAccessibleRole(): Double = js.native
+  
   /**
     * Returns the set of states that are currently active for this object.
     *
@@ -159,6 +177,7 @@ trait XAccessibleContext extends XInterface {
     * @see XAccessibleStateSet
     */
   def getAccessibleStateSet(): XAccessibleStateSet = js.native
+  
   /**
     * Returns the locale of the component.
     *
@@ -168,8 +187,8 @@ trait XAccessibleContext extends XInterface {
     */
   def getLocale(): typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
 }
-
 object XAccessibleContext {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -198,56 +217,77 @@ object XAccessibleContext {
     val __obj = js.Dynamic.literal(AccessibleChildCount = AccessibleChildCount.asInstanceOf[js.Any], AccessibleDescription = AccessibleDescription.asInstanceOf[js.Any], AccessibleIndexInParent = AccessibleIndexInParent.asInstanceOf[js.Any], AccessibleName = AccessibleName.asInstanceOf[js.Any], AccessibleParent = AccessibleParent.asInstanceOf[js.Any], AccessibleRelationSet = AccessibleRelationSet.asInstanceOf[js.Any], AccessibleRole = AccessibleRole.asInstanceOf[js.Any], AccessibleStateSet = AccessibleStateSet.asInstanceOf[js.Any], Locale = Locale.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getAccessibleChild = js.Any.fromFunction1(getAccessibleChild), getAccessibleChildCount = js.Any.fromFunction0(getAccessibleChildCount), getAccessibleDescription = js.Any.fromFunction0(getAccessibleDescription), getAccessibleIndexInParent = js.Any.fromFunction0(getAccessibleIndexInParent), getAccessibleName = js.Any.fromFunction0(getAccessibleName), getAccessibleParent = js.Any.fromFunction0(getAccessibleParent), getAccessibleRelationSet = js.Any.fromFunction0(getAccessibleRelationSet), getAccessibleRole = js.Any.fromFunction0(getAccessibleRole), getAccessibleStateSet = js.Any.fromFunction0(getAccessibleStateSet), getLocale = js.Any.fromFunction0(getLocale), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XAccessibleContext]
   }
+  
   @scala.inline
   implicit class XAccessibleContextOps[Self <: XAccessibleContext] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAccessibleChildCount(value: Double): Self = this.set("AccessibleChildCount", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAccessibleDescription(value: String): Self = this.set("AccessibleDescription", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAccessibleIndexInParent(value: Double): Self = this.set("AccessibleIndexInParent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAccessibleName(value: String): Self = this.set("AccessibleName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAccessibleParent(value: XAccessible): Self = this.set("AccessibleParent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAccessibleRelationSet(value: XAccessibleRelationSet): Self = this.set("AccessibleRelationSet", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAccessibleRole(value: Double): Self = this.set("AccessibleRole", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAccessibleStateSet(value: XAccessibleStateSet): Self = this.set("AccessibleStateSet", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLocale(value: Locale): Self = this.set("Locale", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetAccessibleChild(value: Double => XAccessible): Self = this.set("getAccessibleChild", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetAccessibleChildCount(value: () => Double): Self = this.set("getAccessibleChildCount", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetAccessibleDescription(value: () => String): Self = this.set("getAccessibleDescription", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetAccessibleIndexInParent(value: () => Double): Self = this.set("getAccessibleIndexInParent", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetAccessibleName(value: () => String): Self = this.set("getAccessibleName", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetAccessibleParent(value: () => XAccessible): Self = this.set("getAccessibleParent", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetAccessibleRelationSet(value: () => XAccessibleRelationSet): Self = this.set("getAccessibleRelationSet", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetAccessibleRole(value: () => Double): Self = this.set("getAccessibleRole", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetAccessibleStateSet(value: () => XAccessibleStateSet): Self = this.set("getAccessibleStateSet", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetLocale(value: () => Locale): Self = this.set("getLocale", js.Any.fromFunction0(value))
   }
-  
 }
-

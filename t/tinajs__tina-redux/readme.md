@@ -10,9 +10,9 @@ Tina.js bindings for Redux
 | ------------------ | :-------------: |
 | Full name          | @tinajs/tina-redux |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 185 |
+| # downloads        | 160 |
 | # stars            | 0 |
 
 ## Links

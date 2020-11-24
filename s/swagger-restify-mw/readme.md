@@ -12,7 +12,7 @@ Swagger loader and middleware for Restify
 | Keywords           | swagger, api, apis, restify |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 24982 |
+| # downloads        | 23053 |
 | # stars            | 2 |
 
 ## Links

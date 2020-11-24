@@ -2,10 +2,11 @@ package typings.mathjax.MathJax
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Asciimath2jaxPreprocessor extends js.Object {
+  
   /*Array of pairs of strings that are to be used as math delimiters. The first in each pair is the initial
     * delimiter and the second is the terminal delimiter. You can have as many pairs as you want. For example,
     *
@@ -19,6 +20,7 @@ trait Asciimath2jaxPreprocessor extends js.Object {
     * as your math delimiters.
     */
   var delimiters: js.UndefOr[js.Any] = js.native
+  
   /*This is the class name used to mark elements whose contents should not be processed by asciimath2jax (other
     * than to look for the processClass pattern below). Note that this is a regular expression, and so you need to
     * be sure to quote any regexp special characters. The pattern is inserted into one that requires your pattern to
@@ -28,6 +30,7 @@ trait Asciimath2jaxPreprocessor extends js.Object {
     * either class1 or class2 will be skipped.
     */
   var ignoreClass: js.UndefOr[String] = js.native
+  
   /*This controls whether asciimath2jax inserts MathJax_Preview spans to make a preview available, and what
     * preview to use, when it locates in-line or display mathematics in the page. The default is "AsciiMath", which
     * means use the ASCIIMath code as the preview (which will be visible until it is processed by MathJax). Set to
@@ -41,6 +44,7 @@ trait Asciimath2jaxPreprocessor extends js.Object {
     * preview: [["img",{src: "/images/mypic.jpg"}]],  // insert an image as the preview
     */
   var preview: js.UndefOr[js.Any] = js.native
+  
   /*This is the class name used to mark elements whose contents should be processed by asciimath2jax. This is used
     * to restart processing within tags that have been marked as ignored via the ignoreClass or to cause a tag that
     * appears in the skipTags list to be processed rather than skipped. Note that this is a regular expression, and
@@ -51,53 +55,67 @@ trait Asciimath2jaxPreprocessor extends js.Object {
     * element assigned a class of either class1 or class2 will have its contents processed.
     */
   var processClass: js.UndefOr[String] = js.native
+  
   /*This array lists the names of the tags whose contents should not be processed by asciimath2jax (other than to
     * look for ignore/process classes as listed below). You can add to (or remove from) this list to prevent MathJax
     * from processing mathematics in specific contexts.
     */
   var skipTags: js.UndefOr[js.Array[String]] = js.native
 }
-
 object Asciimath2jaxPreprocessor {
+  
   @scala.inline
   def apply(): Asciimath2jaxPreprocessor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Asciimath2jaxPreprocessor]
   }
+  
   @scala.inline
   implicit class Asciimath2jaxPreprocessorOps[Self <: Asciimath2jaxPreprocessor] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDelimiters(value: js.Any): Self = this.set("delimiters", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDelimiters: Self = this.set("delimiters", js.undefined)
+    
     @scala.inline
     def setIgnoreClass(value: String): Self = this.set("ignoreClass", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIgnoreClass: Self = this.set("ignoreClass", js.undefined)
+    
     @scala.inline
     def setPreview(value: js.Any): Self = this.set("preview", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePreview: Self = this.set("preview", js.undefined)
+    
     @scala.inline
     def setProcessClass(value: String): Self = this.set("processClass", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProcessClass: Self = this.set("processClass", js.undefined)
+    
     @scala.inline
     def setSkipTagsVarargs(value: String*): Self = this.set("skipTags", js.Array(value :_*))
+    
     @scala.inline
     def setSkipTags(value: js.Array[String]): Self = this.set("skipTags", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSkipTags: Self = this.set("skipTags", js.undefined)
   }
-  
 }
-

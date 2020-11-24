@@ -2,11 +2,12 @@ package typings.node.tlsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tls", "connect")
 @js.native
 object connect extends js.Object {
+  
   def apply(options: ConnectionOptions): TLSSocket = js.native
   def apply(options: ConnectionOptions, secureConnectListener: js.Function0[Unit]): TLSSocket = js.native
   def apply(port: Double): TLSSocket = js.native
@@ -36,4 +37,3 @@ object connect extends js.Object {
   def apply(port: Double, options: ConnectionOptions): TLSSocket = js.native
   def apply(port: Double, options: ConnectionOptions, secureConnectListener: js.Function0[Unit]): TLSSocket = js.native
 }
-

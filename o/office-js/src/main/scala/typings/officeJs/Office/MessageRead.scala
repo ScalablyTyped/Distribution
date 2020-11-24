@@ -5,7 +5,7 @@ import typings.officeJs.Office.MailboxEnums.ItemType
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The message read mode of {@link Office.Item | Office.context.mailbox.item}.
@@ -22,356 +22,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MessageRead extends Item {
-  /**
-    * Gets the item's attachments as an array.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    * 
-    * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. 
-    * For more information, see 
-    * {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
-    *
-    */
-  var attachments: js.Array[AttachmentDetails] = js.native
-  /**
-    * Gets an object that provides methods for manipulating the body of an item.
-    *
-    * [Api set: Mailbox 1.1]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var body: Body = js.native
-  /**
-    * Gets an object that provides methods for managing the item's categories.
-    *
-    * [Api set: Mailbox 1.8]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var categories: Categories = js.native
-  /**
-    * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the 
-    * current item.
-    *
-    * The `cc` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the Cc line of the message. 
-    * By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, you can get 20 members maximum, while
-    * on Windows and Mac, you can get 500 members maximum.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var cc: js.Array[EmailAddressDetails] = js.native
-  /**
-    * Gets an identifier for the email conversation that contains a particular message.
-    *
-    * You can get an integer for this property if your mail app is activated in read forms or responses in compose forms.
-    * If subsequently the user changes the subject of the reply message, upon sending the reply, the conversation ID for that message will change
-    * and that value you obtained earlier will no longer apply.
-    *
-    * You get null for this property for a new item in a compose form.
-    * If the user sets a subject and saves the item, the `conversationId` property will return a value.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var conversationId: String = js.native
-  /**
-    * Gets the date and time that an item was created.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var dateTimeCreated: Date = js.native
-  /**
-    * Gets the date and time that an item was last modified.
-    *
-    * **Note**: This member is not supported in Outlook on iOS or Android.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var dateTimeModified: Date = js.native
-  /**
-    * Gets the date and time that the appointment is to end.
-    *
-    * The `end` property is a `Date` object expressed as a Coordinated Universal Time (UTC) date and time value. 
-    * You can use the `convertToLocalClientTime` method to convert the `end` property value to the client's local date and time.
-    *
-    * When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to convert the local time on 
-    * the client to UTC for the server.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var end: Date = js.native
-  /**
-    * Gets the email address of the sender of a message.
-    *
-    * The `from` and `sender` properties represent the same person unless the message is sent by a delegate.
-    * In that case, the `from` property represents the delegator, and the `sender` property represents the delegate.
-    *
-    * **Note**: The `recipientType` property of the `EmailAddressDetails` object in the `from` property is undefined.
-    * 
-    * The `from` property returns an `EmailAddressDetails` object.
-    * 
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var from: EmailAddressDetails = js.native
-  /**
-    * Gets the internet message identifier for an email message.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var internetMessageId: String = js.native
-  /**
-    * Gets the Exchange Web Services item class of the selected item.
-    * 
-    * You can create custom message classes that extends a default message class, for example, a custom appointment message class
-    * `IPM.Appointment.Contoso`.
-    *
-    * @remarks
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    *
-    * The `itemClass` property specifies the message class of the selected item.
-    * The following are the default message classes for the message or appointment item.
-    * 
-    * <table>
-    *   <tr>
-    *     <th>Type</th>
-    *     <th>Description</th>
-    *     <th>Item Class</th>
-    *   </tr>
-    *   <tr>
-    *     <td>Appointment items</td>
-    *     <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence.</td>
-    *     <td>IPM.Appointment,IPM.Appointment.Occurrence</td>
-    *   </tr>
-    *   <tr>
-    *     <td>Message items</td>
-    *     <td>These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.</td>
-    *     <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
-    *   </tr>
-    * </table>
-    * 
-    */
-  var itemClass: String = js.native
-  /**
-    * Gets the {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}
-    * for the current item.
-    *
-    * The `itemId` property is not available in compose mode.
-    * If an item identifier is required, the `saveAsync` method can be used to save the item to the store, which will return the item identifier
-    * in the `asyncResult.value` parameter in the callback function.
-    *
-    * **Note**: The identifier returned by the `itemId` property is the same as the
-    * {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}.
-    * The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API.
-    * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
-    * For more details, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var itemId: String = js.native
-  /**
-    * Gets the type of item that an instance represents.
-    *
-    * The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the item object instance is a message or 
-    * an appointment.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var itemType: ItemType | String = js.native
-  /**
-    * Gets the location of a meeting request.
-    *
-    * The `location` property returns a string that contains the location of the appointment.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var location: String = js.native
-  /**
-    * Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
-    *
-    * The `normalizedSubject` property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by
-    * email programs. To get the subject of the item with the prefixes intact, use the `subject` property.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var normalizedSubject: String = js.native
-  /**
-    * Gets the notification messages for an item.
-    *
-    * [Api set: Mailbox 1.3]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var notificationMessages: NotificationMessages = js.native
-  /**
-    * Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request.
-    * Read and compose modes for appointment items. Read mode for meeting request items.
-    * 
-    * The `recurrence` property returns a `Recurrence` object for recurring appointments or meetings requests if an item is a series or an instance
-    * in a series. `null` is returned for single appointments and meeting requests of single appointments.
-    * `undefined` is returned for messages that are not meeting requests.
-    * 
-    * **Note**: Meeting requests have an itemClass value of `IPM.Schedule.Meeting.Request`.
-    * 
-    * **Note**: If the `recurrence` object is null, this indicates that the object is a single appointment or a meeting request of a single appointment
-    * and NOT a part of a series.
-    * 
-    * [Api set: Mailbox 1.7]
-    * 
-    * @remarks
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var recurrence: Recurrence = js.native
-  /**
-    * Gets the email address of the sender of an email message.
-    *
-    * The `from` and `sender` properties represent the same person unless the message is sent by a delegate.
-    * In that case, the `from` property represents the delegator, and the `sender` property represents the delegate.
-    *
-    * **Note**: The `recipientType` property of the `EmailAddressDetails` object in the `sender` property is undefined.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var sender: EmailAddressDetails = js.native
-  /**
-    * Gets the id of the series that an instance belongs to.
-    * 
-    * In Outlook on the web and desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item
-    * that this item belongs to. However, on iOS and Android, the `seriesId` returns the REST ID of the parent item.
-    * 
-    * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
-    * The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API.
-    * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
-    * For more details, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
-    * 
-    * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests
-    * and returns `undefined` for any other items that are not meeting requests.
-    * 
-    * [Api set: Mailbox 1.7]
-    * 
-    * @remarks
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var seriesId: String = js.native
-  /**
-    * Gets the date and time that the appointment is to begin.
-    *
-    * The `start` property is a `Date` object expressed as a Coordinated Universal Time (UTC) date and time value.
-    * You can use the `convertToLocalClientTime` method to convert the value to the client's local date and time.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var start: Date = js.native
-  /**
-    * Gets the description that appears in the subject field of an item.
-    *
-    * The `subject` property gets or sets the entire subject of the item, as sent by the email server.
-    *
-    * The `subject` property returns a string. Use the `normalizedSubject` property to get the subject minus any leading prefixes such as RE: and FW:.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var subject: String = js.native
-  /**
-    * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the
-    * current item.
-    *
-    * The `to` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the To line of the message.
-    * By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, you can get 20 members maximum, while
-    * on Windows and Mac, you can get 500 members maximum.
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-    */
-  var to: js.Array[EmailAddressDetails] = js.native
+  
   def addHandlerAsync(eventType: String, handler: js.Any): Unit = js.native
-  def addHandlerAsync(
-    eventType: String,
-    handler: js.Any,
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
   def addHandlerAsync(
     eventType: String,
     handler: js.Any,
@@ -410,11 +62,6 @@ trait MessageRead extends Item {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Any,
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
-  def addHandlerAsync(
-    eventType: EventType,
-    handler: js.Any,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
@@ -425,6 +72,114 @@ trait MessageRead extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
+  /**
+    * Gets the item's attachments as an array.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    * 
+    * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. 
+    * For more information, see 
+    * {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
+    *
+    */
+  var attachments: js.Array[AttachmentDetails] = js.native
+  
+  /**
+    * Gets an object that provides methods for manipulating the body of an item.
+    *
+    * [Api set: Mailbox 1.1]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var body: Body = js.native
+  
+  /**
+    * Gets an object that provides methods for managing the item's categories.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var categories: Categories = js.native
+  
+  /**
+    * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depend on the mode of the 
+    * current item.
+    *
+    * The `cc` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
+    * each recipient listed on the **Cc** line of the message. Collection size limits:
+    *
+    * - Windows: 500 members
+    *
+    * - Mac: 100 members
+    *
+    * - Web browser: 20 members
+    *
+    * - Other: No limit
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var cc: js.Array[EmailAddressDetails] = js.native
+  
+  /**
+    * Gets an identifier for the email conversation that contains a particular message.
+    *
+    * You can get an integer for this property if your mail app is activated in read forms or responses in compose forms.
+    * If subsequently the user changes the subject of the reply message, upon sending the reply, the conversation ID for that message will change
+    * and that value you obtained earlier will no longer apply.
+    *
+    * You get null for this property for a new item in a compose form.
+    * If the user sets a subject and saves the item, the `conversationId` property will return a value.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var conversationId: String = js.native
+  
+  /**
+    * Gets the date and time that an item was created.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var dateTimeCreated: Date = js.native
+  
+  /**
+    * Gets the date and time that an item was last modified.
+    *
+    * **Note**: This member is not supported in Outlook on iOS or Android.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var dateTimeModified: Date = js.native
+  
   /**
     * Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the
     * selected appointment.
@@ -449,6 +204,60 @@ trait MessageRead extends Item {
     */
   def displayReplyAllForm(formData: String): Unit = js.native
   def displayReplyAllForm(formData: ReplyFormData): Unit = js.native
+  
+  /**
+    * Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the
+    * selected appointment.
+    *
+    * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+    *
+    * If any of the string parameters exceed their limits, `displayReplyAllFormAsync` throws an exception.
+    *
+    * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+    * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
+    *
+    * [Api set: Mailbox 1.9]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    *
+    * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *                `asyncResult`, which is an `Office.AsyncResult` object.
+    */
+  def displayReplyAllFormAsync(formData: String): Unit = js.native
+  def displayReplyAllFormAsync(
+    formData: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def displayReplyAllFormAsync(formData: String, options: AsyncContextOptions): Unit = js.native
+  def displayReplyAllFormAsync(
+    formData: String,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def displayReplyAllFormAsync(formData: ReplyFormData): Unit = js.native
+  def displayReplyAllFormAsync(
+    formData: ReplyFormData,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def displayReplyAllFormAsync(formData: ReplyFormData, options: AsyncContextOptions): Unit = js.native
+  def displayReplyAllFormAsync(
+    formData: ReplyFormData,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  
   /**
     * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
     *
@@ -472,6 +281,94 @@ trait MessageRead extends Item {
     */
   def displayReplyForm(formData: String): Unit = js.native
   def displayReplyForm(formData: ReplyFormData): Unit = js.native
+  
+  /**
+    * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
+    *
+    * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+    *
+    * If any of the string parameters exceed their limits, `displayReplyFormAsync` throws an exception.
+    *
+    * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+    * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
+    *
+    * [Api set: Mailbox 1.9]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    *
+    * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *                `asyncResult`, which is an `Office.AsyncResult` object.
+    */
+  def displayReplyFormAsync(formData: String): Unit = js.native
+  def displayReplyFormAsync(
+    formData: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def displayReplyFormAsync(formData: String, options: AsyncContextOptions): Unit = js.native
+  def displayReplyFormAsync(
+    formData: String,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def displayReplyFormAsync(formData: ReplyFormData): Unit = js.native
+  def displayReplyFormAsync(
+    formData: ReplyFormData,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def displayReplyFormAsync(formData: ReplyFormData, options: AsyncContextOptions): Unit = js.native
+  def displayReplyFormAsync(
+    formData: ReplyFormData,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  
+  /**
+    * Gets the date and time that the appointment is to end.
+    *
+    * The `end` property is a `Date` object expressed as a Coordinated Universal Time (UTC) date and time value. 
+    * You can use the `convertToLocalClientTime` method to convert the `end` property value to the client's local date and time.
+    *
+    * When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to convert the local time on 
+    * the client to UTC for the server.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var end: Date = js.native
+  
+  /**
+    * Gets the email address of the sender of a message.
+    *
+    * The `from` and `sender` properties represent the same person unless the message is sent by a delegate.
+    * In that case, the `from` property represents the delegator, and the `sender` property represents the delegate.
+    *
+    * **Note**: The `recipientType` property of the `EmailAddressDetails` object in the `from` property is undefined.
+    * 
+    * The `from` property returns an `EmailAddressDetails` object.
+    * 
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var from: EmailAddressDetails = js.native
+  
   /**
     * Gets all the internet headers for the message as a string.
     * 
@@ -492,13 +389,13 @@ trait MessageRead extends Item {
     *                If the call fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
     */
   def getAllInternetHeadersAsync(): Unit = js.native
-  def getAllInternetHeadersAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   def getAllInternetHeadersAsync(
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
   def getAllInternetHeadersAsync(options: AsyncContextOptions): Unit = js.native
   def getAllInternetHeadersAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  
   /**
     * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
     * 
@@ -533,10 +430,6 @@ trait MessageRead extends Item {
   def getAttachmentContentAsync(attachmentId: String): Unit = js.native
   def getAttachmentContentAsync(
     attachmentId: String,
-    callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
-  ): Unit = js.native
-  def getAttachmentContentAsync(
-    attachmentId: String,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
   ): Unit = js.native
@@ -546,6 +439,7 @@ trait MessageRead extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
   ): Unit = js.native
+  
   /**
     * Gets the entities found in the selected item's body.
     *
@@ -558,6 +452,7 @@ trait MessageRead extends Item {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
     */
   def getEntities(): Entities = js.native
+  
   def getEntitiesByType(entityType: String): js.Array[String | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion] = js.native
   /**
     * Gets an array of all the entities of the specified entity type found in the selected item's body.
@@ -624,6 +519,7 @@ trait MessageRead extends Item {
     * </table>
     */
   def getEntitiesByType(entityType: EntityType): js.Array[String | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion] = js.native
+  
   /**
     * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
     *
@@ -646,6 +542,7 @@ trait MessageRead extends Item {
     * @param name - The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
     */
   def getFilteredEntitiesByName(name: String): js.Array[String | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion] = js.native
+  
   /**
     * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
     *
@@ -673,6 +570,7 @@ trait MessageRead extends Item {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
     */
   def getRegExMatches(): js.Any = js.native
+  
   /**
     * Returns string values in the selected item that match the named regular expression defined in the manifest XML file.
     *
@@ -697,6 +595,7 @@ trait MessageRead extends Item {
     * @param name - The name of the `ItemHasRegularExpressionMatch` rule element that defines the filter to match.
     */
   def getRegExMatchesByName(name: String): js.Array[String] = js.native
+  
   /**
     * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
     *
@@ -713,6 +612,7 @@ trait MessageRead extends Item {
     * @param name - The name of the `ItemHasRegularExpressionMatch` rule element that defines the filter to match.
     */
   def getSelectedEntities(): Entities = js.native
+  
   /**
     * Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file. 
     * Highlighted matches apply to contextual add-ins.
@@ -743,10 +643,14 @@ trait MessageRead extends Item {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
     */
   def getSelectedRegExMatches(): js.Any = js.native
+  
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
     *
-    * **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
+    * For more information around using this API, see the
+    * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.8]
     *
@@ -763,7 +667,10 @@ trait MessageRead extends Item {
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
     *
-    * **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
+    * For more information around using this API, see the
+    * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.8]
     *
@@ -782,6 +689,94 @@ trait MessageRead extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[SharedProperties], Unit]
   ): Unit = js.native
+  
+  /**
+    * Gets the internet message identifier for an email message.
+    *
+    * **Important**: In the **Sent Items** folder, the `internetMessageId` may not be available yet on recently sent items. In that case,
+    * consider using {@link https://docs.microsoft.com/office/dev/add-ins/outlook/web-services | Exchange Web Services} to get this
+    * {@link https://docs.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid | property from the server}.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var internetMessageId: String = js.native
+  
+  /**
+    * Gets the Exchange Web Services item class of the selected item.
+    * 
+    * You can create custom message classes that extends a default message class, for example, a custom appointment message class
+    * `IPM.Appointment.Contoso`.
+    *
+    * @remarks
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    *
+    * The `itemClass` property specifies the message class of the selected item.
+    * The following are the default message classes for the message or appointment item.
+    * 
+    * <table>
+    *   <tr>
+    *     <th>Type</th>
+    *     <th>Description</th>
+    *     <th>Item Class</th>
+    *   </tr>
+    *   <tr>
+    *     <td>Appointment items</td>
+    *     <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence.</td>
+    *     <td>IPM.Appointment,IPM.Appointment.Occurrence</td>
+    *   </tr>
+    *   <tr>
+    *     <td>Message items</td>
+    *     <td>These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.</td>
+    *     <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
+    *   </tr>
+    * </table>
+    * 
+    */
+  var itemClass: String = js.native
+  
+  /**
+    * Gets the {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}
+    * for the current item.
+    *
+    * The `itemId` property is not available in compose mode.
+    * If an item identifier is required, the `saveAsync` method can be used to save the item to the store, which will return the item identifier
+    * in the `asyncResult.value` parameter in the callback function.
+    *
+    * **Note**: The identifier returned by the `itemId` property is the same as the
+    * {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}.
+    * The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API.
+    * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
+    * For more details, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var itemId: String = js.native
+  
+  /**
+    * Gets the type of item that an instance represents.
+    *
+    * The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the item object instance is a message or 
+    * an appointment.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var itemType: ItemType | String = js.native
+  
   /**
     * Asynchronously loads custom properties for this add-in on the selected item.
     *
@@ -805,8 +800,71 @@ trait MessageRead extends Item {
     */
   def loadCustomPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], Unit]): Unit = js.native
   def loadCustomPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], Unit], userContext: js.Any): Unit = js.native
+  
+  /**
+    * Gets the location of a meeting request.
+    *
+    * The `location` property returns a string that contains the location of the appointment.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var location: String = js.native
+  
+  /**
+    * Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
+    *
+    * The `normalizedSubject` property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by
+    * email programs. To get the subject of the item with the prefixes intact, use the `subject` property.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var normalizedSubject: String = js.native
+  
+  /**
+    * Gets the notification messages for an item.
+    *
+    * [Api set: Mailbox 1.3]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var notificationMessages: NotificationMessages = js.native
+  
+  /**
+    * Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request.
+    * Read and compose modes for appointment items. Read mode for meeting request items.
+    * 
+    * The `recurrence` property returns a `Recurrence` object for recurring appointments or meetings requests if an item is a series or an instance
+    * in a series. `null` is returned for single appointments and meeting requests of single appointments.
+    * `undefined` is returned for messages that are not meeting requests.
+    * 
+    * **Note**: Meeting requests have an itemClass value of `IPM.Schedule.Meeting.Request`.
+    * 
+    * **Note**: If the `recurrence` object is null, this indicates that the object is a single appointment or a meeting request of a single appointment
+    * and NOT a part of a series.
+    * 
+    * [Api set: Mailbox 1.7]
+    * 
+    * @remarks
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var recurrence: Recurrence = js.native
+  
   def removeHandlerAsync(eventType: String): Unit = js.native
-  def removeHandlerAsync(eventType: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def removeHandlerAsync(
     eventType: String,
     options: js.UndefOr[scala.Nothing],
@@ -838,7 +896,6 @@ trait MessageRead extends Item {
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def removeHandlerAsync(eventType: EventType): Unit = js.native
-  def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
     options: js.UndefOr[scala.Nothing],
@@ -850,5 +907,96 @@ trait MessageRead extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
+  /**
+    * Gets the email address of the sender of an email message.
+    *
+    * The `from` and `sender` properties represent the same person unless the message is sent by a delegate.
+    * In that case, the `from` property represents the delegator, and the `sender` property represents the delegate.
+    *
+    * **Note**: The `recipientType` property of the `EmailAddressDetails` object in the `sender` property is undefined.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var sender: EmailAddressDetails = js.native
+  
+  /**
+    * Gets the id of the series that an instance belongs to.
+    * 
+    * In Outlook on the web and desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item
+    * that this item belongs to. However, on iOS and Android, the `seriesId` returns the REST ID of the parent item.
+    * 
+    * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
+    * The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API.
+    * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
+    * For more details, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
+    * 
+    * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests
+    * and returns `undefined` for any other items that are not meeting requests.
+    * 
+    * [Api set: Mailbox 1.7]
+    * 
+    * @remarks
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var seriesId: String = js.native
+  
+  /**
+    * Gets the date and time that the appointment is to begin.
+    *
+    * The `start` property is a `Date` object expressed as a Coordinated Universal Time (UTC) date and time value.
+    * You can use the `convertToLocalClientTime` method to convert the value to the client's local date and time.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var start: Date = js.native
+  
+  /**
+    * Gets the description that appears in the subject field of an item.
+    *
+    * The `subject` property gets or sets the entire subject of the item, as sent by the email server.
+    *
+    * The `subject` property returns a string. Use the `normalizedSubject` property to get the subject minus any leading prefixes such as RE: and FW:.
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var subject: String = js.native
+  
+  /**
+    * Provides access to the recipients on the **To** line of a message. The type of object and level of access depend on the mode of the
+    * current item.
+    *
+    * The `to` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
+    * each recipient listed on the **To** line of the message. Collection size limits:
+    *
+    * - Windows: 500 members
+    *
+    * - Mac: 100 members
+    *
+    * - Web browser: 20 members
+    *
+    * - Other: No limit
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var to: js.Array[EmailAddressDetails] = js.native
 }
-

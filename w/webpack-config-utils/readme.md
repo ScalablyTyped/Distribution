@@ -10,9 +10,9 @@ Utilities to help your webpack config be easier to read
 | ------------------ | :-------------: |
 | Full name          | webpack-config-utils |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 682848 |
+| # downloads        | 609546 |
 | # stars            | 7 |
 
 ## Links

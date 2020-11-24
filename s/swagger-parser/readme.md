@@ -1,7 +1,7 @@
 
 # Scala.js typings for swagger-parser
 
-Typings are for version 10.0.1
+Typings are for version 10.0.2
 
 ## Library description:
 Swagger 2.0 and OpenAPI 3.0 parser and validator for Node and browsers
@@ -10,9 +10,9 @@ Swagger 2.0 and OpenAPI 3.0 parser and validator for Node and browsers
 | ------------------ | :-------------: |
 | Full name          | swagger-parser |
 | Keywords           | swagger, openapi, open-api, json, yaml, parse, parser, validate, validator, validation, spec, specification, schema, reference, dereference |
-| # releases         | 21 |
-| # dependents       | 302 |
-| # downloads        | 18449214 |
+| # releases         | 17 |
+| # dependents       | 340 |
+| # downloads        | 26781213 |
 | # stars            | 9 |
 
 ## Links

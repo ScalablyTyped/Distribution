@@ -1,7 +1,7 @@
 
 # Scala.js typings for lcid
 
-Typings are for version 3.0.0
+Typings are for version 3.1.1
 
 ## Library description:
 Mapping between standard locale identifiers and Windows locale identifiers (LCID)
@@ -10,9 +10,9 @@ Mapping between standard locale identifiers and Windows locale identifiers (LCID
 | ------------------ | :-------------: |
 | Full name          | lcid |
 | Keywords           | lcid, locale, string, id, identifier, windows, language, lang, map, mapping, convert, json, bcp47, ietf, tag |
-| # releases         | 3 |
-| # dependents       | 42 |
-| # downloads        | 394073088 |
+| # releases         | 4 |
+| # dependents       | 75 |
+| # downloads        | 714320489 |
 | # stars            | 1 |
 
 ## Links

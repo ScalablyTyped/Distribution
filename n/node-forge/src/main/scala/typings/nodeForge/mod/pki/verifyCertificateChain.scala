@@ -2,11 +2,12 @@ package typings.nodeForge.mod.pki
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-forge", "pki.verifyCertificateChain")
 @js.native
 object verifyCertificateChain extends js.Object {
+  
   def apply(caStore: CAStore, chain: js.Array[Certificate]): Boolean = js.native
   def apply(
     caStore: CAStore,
@@ -19,4 +20,3 @@ object verifyCertificateChain extends js.Object {
     ]
   ): Boolean = js.native
 }
-

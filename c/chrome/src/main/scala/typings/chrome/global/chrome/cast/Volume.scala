@@ -2,7 +2,7 @@ package typings.chrome.global.chrome.cast
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.cast.Volume")
 @js.native
@@ -18,4 +18,3 @@ class Volume ()
   def this(level: js.UndefOr[scala.Nothing], muted: Boolean) = this()
   def this(level: Double, muted: Boolean) = this()
 }
-

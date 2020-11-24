@@ -3,7 +3,7 @@ package typings.babylonjs.legacyMod
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "LoadFileError")
 @js.native
@@ -19,4 +19,3 @@ class LoadFileError protected ()
   def this(message: String, `object`: typings.babylonjs.webRequestMod.WebRequest) = this()
   def this(message: String, `object`: File) = this()
 }
-

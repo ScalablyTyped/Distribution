@@ -3,7 +3,7 @@ package typings.pinyin.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 声母风格，只返回各个拼音的声母部分。对于没有声母的汉字，返回空白字符串。
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSImport("pinyin", "STYLE_INITIALS")
 @js.native
 object STYLE_INITIALS extends TopLevel[Double]
-

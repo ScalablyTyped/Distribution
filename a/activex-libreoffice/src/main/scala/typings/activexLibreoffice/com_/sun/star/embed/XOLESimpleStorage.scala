@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface allows to access and change contents of OLE storages.
@@ -21,8 +21,8 @@ trait XOLESimpleStorage
      with XComponent
      with XTransactedObject
      with XClassifiedObject
-
 object XOLESimpleStorage {
+  
   @scala.inline
   def apply(
     ClassID: SafeArray[Double],
@@ -53,4 +53,3 @@ object XOLESimpleStorage {
     __obj.asInstanceOf[XOLESimpleStorage]
   }
 }
-

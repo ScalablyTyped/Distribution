@@ -1,17 +1,19 @@
 package typings.awsSdk.amplifyMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Amplify extends Service {
+  
   @JSName("config")
   var config_Amplify: ConfigBase with ClientConfiguration = js.native
+  
   /**
     *  Creates a new Amplify app. 
     */
@@ -25,6 +27,7 @@ trait Amplify extends Service {
     params: CreateAppRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateAppResult, Unit]
   ): Request[CreateAppResult, AWSError] = js.native
+  
   /**
     *  Creates a new backend environment for an Amplify app. 
     */
@@ -38,6 +41,7 @@ trait Amplify extends Service {
     params: CreateBackendEnvironmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateBackendEnvironmentResult, Unit]
   ): Request[CreateBackendEnvironmentResult, AWSError] = js.native
+  
   /**
     *  Creates a new branch for an Amplify app. 
     */
@@ -51,6 +55,7 @@ trait Amplify extends Service {
     params: CreateBranchRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateBranchResult, Unit]
   ): Request[CreateBranchResult, AWSError] = js.native
+  
   /**
     *  Creates a deployment for a manually deployed Amplify app. Manually deployed apps are not connected to a repository. 
     */
@@ -64,6 +69,7 @@ trait Amplify extends Service {
     params: CreateDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDeploymentResult, Unit]
   ): Request[CreateDeploymentResult, AWSError] = js.native
+  
   /**
     *  Creates a new domain association for an Amplify app. This action associates a custom domain with the Amplify app 
     */
@@ -77,6 +83,7 @@ trait Amplify extends Service {
     params: CreateDomainAssociationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainAssociationResult, Unit]
   ): Request[CreateDomainAssociationResult, AWSError] = js.native
+  
   /**
     *  Creates a new webhook on an Amplify app. 
     */
@@ -90,6 +97,7 @@ trait Amplify extends Service {
     params: CreateWebhookRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateWebhookResult, Unit]
   ): Request[CreateWebhookResult, AWSError] = js.native
+  
   /**
     *  Deletes an existing Amplify app specified by an app ID. 
     */
@@ -103,6 +111,7 @@ trait Amplify extends Service {
     params: DeleteAppRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAppResult, Unit]
   ): Request[DeleteAppResult, AWSError] = js.native
+  
   /**
     *  Deletes a backend environment for an Amplify app. 
     */
@@ -116,6 +125,7 @@ trait Amplify extends Service {
     params: DeleteBackendEnvironmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteBackendEnvironmentResult, Unit]
   ): Request[DeleteBackendEnvironmentResult, AWSError] = js.native
+  
   /**
     *  Deletes a branch for an Amplify app. 
     */
@@ -129,6 +139,7 @@ trait Amplify extends Service {
     params: DeleteBranchRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteBranchResult, Unit]
   ): Request[DeleteBranchResult, AWSError] = js.native
+  
   /**
     *  Deletes a domain association for an Amplify app. 
     */
@@ -142,6 +153,7 @@ trait Amplify extends Service {
     params: DeleteDomainAssociationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainAssociationResult, Unit]
   ): Request[DeleteDomainAssociationResult, AWSError] = js.native
+  
   /**
     *  Deletes a job for a branch of an Amplify app. 
     */
@@ -155,6 +167,7 @@ trait Amplify extends Service {
     params: DeleteJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteJobResult, Unit]
   ): Request[DeleteJobResult, AWSError] = js.native
+  
   /**
     *  Deletes a webhook. 
     */
@@ -168,6 +181,7 @@ trait Amplify extends Service {
     params: DeleteWebhookRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteWebhookResult, Unit]
   ): Request[DeleteWebhookResult, AWSError] = js.native
+  
   /**
     *  Returns the website access logs for a specific time range using a presigned URL. 
     */
@@ -181,6 +195,7 @@ trait Amplify extends Service {
     params: GenerateAccessLogsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GenerateAccessLogsResult, Unit]
   ): Request[GenerateAccessLogsResult, AWSError] = js.native
+  
   /**
     *  Returns an existing Amplify app by appID. 
     */
@@ -191,6 +206,7 @@ trait Amplify extends Service {
     */
   def getApp(params: GetAppRequest): Request[GetAppResult, AWSError] = js.native
   def getApp(params: GetAppRequest, callback: js.Function2[/* err */ AWSError, /* data */ GetAppResult, Unit]): Request[GetAppResult, AWSError] = js.native
+  
   /**
     *  Returns the artifact info that corresponds to an artifact id. 
     */
@@ -204,6 +220,7 @@ trait Amplify extends Service {
     params: GetArtifactUrlRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetArtifactUrlResult, Unit]
   ): Request[GetArtifactUrlResult, AWSError] = js.native
+  
   /**
     *  Returns a backend environment for an Amplify app. 
     */
@@ -217,6 +234,7 @@ trait Amplify extends Service {
     params: GetBackendEnvironmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetBackendEnvironmentResult, Unit]
   ): Request[GetBackendEnvironmentResult, AWSError] = js.native
+  
   /**
     *  Returns a branch for an Amplify app. 
     */
@@ -230,6 +248,7 @@ trait Amplify extends Service {
     params: GetBranchRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetBranchResult, Unit]
   ): Request[GetBranchResult, AWSError] = js.native
+  
   /**
     *  Returns the domain information for an Amplify app. 
     */
@@ -243,6 +262,7 @@ trait Amplify extends Service {
     params: GetDomainAssociationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDomainAssociationResult, Unit]
   ): Request[GetDomainAssociationResult, AWSError] = js.native
+  
   /**
     *  Returns a job for a branch of an Amplify app. 
     */
@@ -253,6 +273,7 @@ trait Amplify extends Service {
     */
   def getJob(params: GetJobRequest): Request[GetJobResult, AWSError] = js.native
   def getJob(params: GetJobRequest, callback: js.Function2[/* err */ AWSError, /* data */ GetJobResult, Unit]): Request[GetJobResult, AWSError] = js.native
+  
   /**
     *  Returns the webhook information that corresponds to a specified webhook ID. 
     */
@@ -266,6 +287,7 @@ trait Amplify extends Service {
     params: GetWebhookRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetWebhookResult, Unit]
   ): Request[GetWebhookResult, AWSError] = js.native
+  
   /**
     *  Returns a list of the existing Amplify apps. 
     */
@@ -279,6 +301,7 @@ trait Amplify extends Service {
     params: ListAppsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAppsResult, Unit]
   ): Request[ListAppsResult, AWSError] = js.native
+  
   /**
     *  Returns a list of artifacts for a specified app, branch, and job. 
     */
@@ -292,6 +315,7 @@ trait Amplify extends Service {
     params: ListArtifactsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListArtifactsResult, Unit]
   ): Request[ListArtifactsResult, AWSError] = js.native
+  
   /**
     *  Lists the backend environments for an Amplify app. 
     */
@@ -305,6 +329,7 @@ trait Amplify extends Service {
     params: ListBackendEnvironmentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBackendEnvironmentsResult, Unit]
   ): Request[ListBackendEnvironmentsResult, AWSError] = js.native
+  
   /**
     *  Lists the branches of an Amplify app. 
     */
@@ -318,6 +343,7 @@ trait Amplify extends Service {
     params: ListBranchesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBranchesResult, Unit]
   ): Request[ListBranchesResult, AWSError] = js.native
+  
   /**
     *  Returns the domain associations for an Amplify app. 
     */
@@ -331,6 +357,7 @@ trait Amplify extends Service {
     params: ListDomainAssociationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDomainAssociationsResult, Unit]
   ): Request[ListDomainAssociationsResult, AWSError] = js.native
+  
   /**
     *  Lists the jobs for a branch of an Amplify app. 
     */
@@ -344,6 +371,7 @@ trait Amplify extends Service {
     params: ListJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListJobsResult, Unit]
   ): Request[ListJobsResult, AWSError] = js.native
+  
   /**
     *  Returns a list of tags for a specified Amazon Resource Name (ARN). 
     */
@@ -357,6 +385,7 @@ trait Amplify extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     *  Returns a list of webhooks for an Amplify app. 
     */
@@ -370,6 +399,7 @@ trait Amplify extends Service {
     params: ListWebhooksRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListWebhooksResult, Unit]
   ): Request[ListWebhooksResult, AWSError] = js.native
+  
   /**
     *  Starts a deployment for a manually deployed app. Manually deployed apps are not connected to a repository. 
     */
@@ -383,6 +413,7 @@ trait Amplify extends Service {
     params: StartDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartDeploymentResult, Unit]
   ): Request[StartDeploymentResult, AWSError] = js.native
+  
   /**
     *  Starts a new job for a branch of an Amplify app. 
     */
@@ -396,6 +427,7 @@ trait Amplify extends Service {
     params: StartJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartJobResult, Unit]
   ): Request[StartJobResult, AWSError] = js.native
+  
   /**
     *  Stops a job that is in progress for a branch of an Amplify app. 
     */
@@ -406,6 +438,7 @@ trait Amplify extends Service {
     */
   def stopJob(params: StopJobRequest): Request[StopJobResult, AWSError] = js.native
   def stopJob(params: StopJobRequest, callback: js.Function2[/* err */ AWSError, /* data */ StopJobResult, Unit]): Request[StopJobResult, AWSError] = js.native
+  
   /**
     *  Tags the resource with a tag key and value. 
     */
@@ -419,6 +452,7 @@ trait Amplify extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     *  Untags a resource with a specified Amazon Resource Name (ARN). 
     */
@@ -432,6 +466,7 @@ trait Amplify extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     *  Updates an existing Amplify app. 
     */
@@ -445,6 +480,7 @@ trait Amplify extends Service {
     params: UpdateAppRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAppResult, Unit]
   ): Request[UpdateAppResult, AWSError] = js.native
+  
   /**
     *  Updates a branch for an Amplify app. 
     */
@@ -458,6 +494,7 @@ trait Amplify extends Service {
     params: UpdateBranchRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateBranchResult, Unit]
   ): Request[UpdateBranchResult, AWSError] = js.native
+  
   /**
     *  Creates a new domain association for an Amplify app.
     */
@@ -471,6 +508,7 @@ trait Amplify extends Service {
     params: UpdateDomainAssociationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainAssociationResult, Unit]
   ): Request[UpdateDomainAssociationResult, AWSError] = js.native
+  
   /**
     *  Updates a webhook. 
     */
@@ -485,4 +523,3 @@ trait Amplify extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateWebhookResult, Unit]
   ): Request[UpdateWebhookResult, AWSError] = js.native
 }
-

@@ -3,19 +3,22 @@ package typings.rxLiteBackpressure
 import typings.rxCore.Rx.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Rx")
 @js.native
 object Rx extends js.Object {
+  
   @js.native
   trait ControlledObservable[T] extends Observable[T] {
+    
     def request(): IDisposable = js.native
     def request(numberOfItems: Double): IDisposable = js.native
   }
   
   @js.native
   trait Observable[T] extends js.Object {
+    
     /**
       * Attaches a controller to the observable sequence with the ability to queue.
       * @example
@@ -24,6 +27,7 @@ object Rx extends js.Object {
       */
     def controlled(): ControlledObservable[T] = js.native
     def controlled(enableQueue: Boolean): ControlledObservable[T] = js.native
+    
     /**
       * Pauses the underlying observable sequence based upon the observable sequence which yields true/false.
       * @example
@@ -34,6 +38,7 @@ object Rx extends js.Object {
       */
     def pausable(): PausableObservable[T] = js.native
     def pausable(pauser: Observable[Boolean]): PausableObservable[T] = js.native
+    
     /**
       * Pauses the underlying observable sequence based upon the observable sequence which yields true/false,
       * and yields the values that were buffered while paused.
@@ -49,9 +54,9 @@ object Rx extends js.Object {
   
   @js.native
   trait PausableObservable[T] extends Observable[T] {
+    
     def pause(): Unit = js.native
+    
     def resume(): Unit = js.native
   }
-  
 }
-

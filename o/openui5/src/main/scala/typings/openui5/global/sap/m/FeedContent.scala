@@ -2,7 +2,7 @@ package typings.openui5.global.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.FeedContent")
 @js.native
@@ -19,4 +19,3 @@ class FeedContent protected ()
   def this(sId: String) = this()
   def this(sId: String, mSettings: js.Any) = this()
 }
-

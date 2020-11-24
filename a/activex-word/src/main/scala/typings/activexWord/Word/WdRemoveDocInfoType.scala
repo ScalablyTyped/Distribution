@@ -17,7 +17,7 @@ import typings.activexWord.activexWordNumbers.`99`
 import typings.activexWord.activexWordNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexWord.activexWordNumbers.`99`
@@ -37,37 +37,50 @@ import scala.scalajs.js.annotation._
   - typings.activexWord.activexWordNumbers.`3`
 */
 trait WdRemoveDocInfoType extends js.Object
-
 object WdRemoveDocInfoType {
+  
   @scala.inline
   def wdRDIAll: `99` = 99.asInstanceOf[`99`]
+  
   @scala.inline
   def wdRDIComments: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def wdRDIContentType: `16` = 16.asInstanceOf[`16`]
+  
   @scala.inline
   def wdRDIDocumentManagementPolicy: `15` = 15.asInstanceOf[`15`]
+  
   @scala.inline
   def wdRDIDocumentProperties: `8` = 8.asInstanceOf[`8`]
+  
   @scala.inline
   def wdRDIDocumentServerProperties: `14` = 14.asInstanceOf[`14`]
+  
   @scala.inline
   def wdRDIDocumentWorkspace: `10` = 10.asInstanceOf[`10`]
+  
   @scala.inline
   def wdRDIEmailHeader: `5` = 5.asInstanceOf[`5`]
+  
   @scala.inline
   def wdRDIInkAnnotations: `11` = 11.asInstanceOf[`11`]
+  
   @scala.inline
   def wdRDIRemovePersonalInformation: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def wdRDIRevisions: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def wdRDIRoutingSlip: `6` = 6.asInstanceOf[`6`]
+  
   @scala.inline
   def wdRDISendForReview: `7` = 7.asInstanceOf[`7`]
+  
   @scala.inline
   def wdRDITemplate: `9` = 9.asInstanceOf[`9`]
+  
   @scala.inline
   def wdRDIVersions: `3` = 3.asInstanceOf[`3`]
 }
-

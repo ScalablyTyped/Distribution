@@ -2,17 +2,17 @@ package typings.officeJs.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait HeaderFooterType extends js.Object
-
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.HeaderFooterType")
 @js.native
 object HeaderFooterType extends js.Object {
+  
   /**
     * Returns all headers or footers on even-numbered pages of a section.
     *
@@ -33,6 +33,4 @@ object HeaderFooterType extends js.Object {
     */
   @js.native
   sealed trait primary extends HeaderFooterType
-  
 }
-

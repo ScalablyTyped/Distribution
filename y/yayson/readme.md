@@ -10,9 +10,9 @@ A library for serializing and reading JSON API standardized data in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | yayson |
 | Keywords           | json-api, json, api, response, format, serialization, deserialization, yay, wow, omg |
-| # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 61336 |
+| # releases         | 3 |
+| # dependents       | 8 |
+| # downloads        | 75920 |
 | # stars            | 2 |
 
 ## Links

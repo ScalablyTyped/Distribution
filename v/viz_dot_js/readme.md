@@ -10,9 +10,9 @@ A hack to put Graphviz on the web.
 | ------------------ | :-------------: |
 | Full name          | viz.js |
 | Keywords           | graphviz, emscripten |
-| # releases         | 3 |
-| # dependents       | 91 |
-| # downloads        | 9358608 |
+| # releases         | 4 |
+| # dependents       | 97 |
+| # downloads        | 10779082 |
 | # stars            | 4 |
 
 ## Links

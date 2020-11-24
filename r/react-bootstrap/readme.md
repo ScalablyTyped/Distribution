@@ -10,9 +10,9 @@ Bootstrap 4 components built with React
 | ------------------ | :-------------: |
 | Full name          | react-bootstrap |
 | Keywords           | react, ecosystem-react, react-component, bootstrap |
-| # releases         | 25 |
-| # dependents       | 1178 |
-| # downloads        | 23460640 |
+| # releases         | 30 |
+| # dependents       | 1433 |
+| # downloads        | 28428084 |
 | # stars            | 50 |
 
 ## Links

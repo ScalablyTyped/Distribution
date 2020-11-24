@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1", "appengine_v1.Resource$Apps$Authorizeddomains")
 @js.native
 class ResourceAppsAuthorizeddomains protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * appengine.apps.authorizedDomains.list
     * @desc Lists all domains the user is authorized to administer.
@@ -47,4 +49,3 @@ class ResourceAppsAuthorizeddomains protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListAuthorizedDomainsResponse]
   ): Unit = js.native
 }
-

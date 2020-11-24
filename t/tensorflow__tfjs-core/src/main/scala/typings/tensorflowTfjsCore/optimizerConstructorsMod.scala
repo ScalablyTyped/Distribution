@@ -9,17 +9,18 @@ import typings.tensorflowTfjsCore.rmspropOptimizerMod.RMSPropOptimizer
 import typings.tensorflowTfjsCore.sgdOptimizerMod.SGDOptimizer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", JSImport.Namespace)
 @js.native
 object optimizerConstructorsMod extends js.Object {
+  
   @js.native
   class OptimizerConstructors () extends js.Object
-  
   /* static members */
   @js.native
   object OptimizerConstructors extends js.Object {
+    
     /**
       * Constructs a `tf.AdadeltaOptimizer` that uses the Adadelta algorithm.
       * See [https://arxiv.org/abs/1212.5701](https://arxiv.org/abs/1212.5701)
@@ -29,8 +30,7 @@ object optimizerConstructorsMod extends js.Object {
       * @param rho The learning rate decay over each update.
       * @param epsilon A constant epsilon used to better condition the grad
       * update.
-      */
-    /**
+      *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
     def adadelta(): AdadeltaOptimizer = js.native
@@ -41,6 +41,7 @@ object optimizerConstructorsMod extends js.Object {
     def adadelta(learningRate: Double, rho: js.UndefOr[scala.Nothing], epsilon: Double): AdadeltaOptimizer = js.native
     def adadelta(learningRate: Double, rho: Double): AdadeltaOptimizer = js.native
     def adadelta(learningRate: Double, rho: Double, epsilon: Double): AdadeltaOptimizer = js.native
+    
     /**
       * Constructs a `tf.AdagradOptimizer` that uses the Adagrad algorithm.
       * See
@@ -54,12 +55,12 @@ object optimizerConstructorsMod extends js.Object {
       * descent algorithm.
       * @param initialAccumulatorValue Starting value for the accumulators, must be
       * positive.
-      */
-    /**
+      *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
     def adagrad(learningRate: Double): AdagradOptimizer = js.native
     def adagrad(learningRate: Double, initialAccumulatorValue: Double): AdagradOptimizer = js.native
+    
     /**
       * Constructs a `tf.AdamOptimizer` that uses the Adam algorithm.
       * See [https://arxiv.org/abs/1412.6980](https://arxiv.org/abs/1412.6980)
@@ -69,8 +70,7 @@ object optimizerConstructorsMod extends js.Object {
       * @param beta1 The exponential decay rate for the 1st moment estimates.
       * @param beta2 The exponential decay rate for the 2nd moment estimates.
       * @param epsilon A small constant for numerical stability.
-      */
-    /**
+      *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
     def adam(): AdamOptimizer = js.native
@@ -109,6 +109,7 @@ object optimizerConstructorsMod extends js.Object {
     def adam(learningRate: Double, beta1: Double, beta2: js.UndefOr[scala.Nothing], epsilon: Double): AdamOptimizer = js.native
     def adam(learningRate: Double, beta1: Double, beta2: Double): AdamOptimizer = js.native
     def adam(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double): AdamOptimizer = js.native
+    
     /**
       * Constructs a `tf.AdamaxOptimizer` that uses the Adamax algorithm.
       * See [https://arxiv.org/abs/1412.6980](https://arxiv.org/abs/1412.6980)
@@ -119,8 +120,7 @@ object optimizerConstructorsMod extends js.Object {
       * @param beta2 The exponential decay rate for the 2nd moment estimates.
       * @param epsilon A small constant for numerical stability.
       * @param decay The learning rate decay over each update.
-      */
-    /**
+      *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
     def adamax(): AdamaxOptimizer = js.native
@@ -265,6 +265,7 @@ object optimizerConstructorsMod extends js.Object {
     ): AdamaxOptimizer = js.native
     def adamax(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double): AdamaxOptimizer = js.native
     def adamax(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double, decay: Double): AdamaxOptimizer = js.native
+    
     /**
       * Constructs a `tf.MomentumOptimizer` that uses momentum gradient
       * descent.
@@ -277,12 +278,12 @@ object optimizerConstructorsMod extends js.Object {
       * descent algorithm.
       * @param momentum The momentum to use for the momentum gradient descent
       * algorithm.
-      */
-    /**
+      *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
     def momentum(learningRate: Double, momentum: Double): MomentumOptimizer = js.native
     def momentum(learningRate: Double, momentum: Double, useNesterov: Boolean): MomentumOptimizer = js.native
+    
     /**
       * Constructs a `tf.RMSPropOptimizer` that uses RMSProp gradient
       * descent. This implementation uses plain momentum and is not centered
@@ -300,8 +301,7 @@ object optimizerConstructorsMod extends js.Object {
       * @param epsilon Small value to avoid zero denominator.
       * @param centered If true, gradients are normalized by the estimated
       * variance of the gradient.
-      */
-    /**
+      *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
     def rmsprop(learningRate: Double): RMSPropOptimizer = js.native
@@ -367,6 +367,7 @@ object optimizerConstructorsMod extends js.Object {
     ): RMSPropOptimizer = js.native
     def rmsprop(learningRate: Double, decay: Double, momentum: Double, epsilon: Double): RMSPropOptimizer = js.native
     def rmsprop(learningRate: Double, decay: Double, momentum: Double, epsilon: Double, centered: Boolean): RMSPropOptimizer = js.native
+    
     /**
       * Constructs a `tf.SGDOptimizer` that uses stochastic gradient descent.
       *
@@ -401,12 +402,9 @@ object optimizerConstructorsMod extends js.Object {
       * ```
       *
       * @param learningRate The learning rate to use for the SGD algorithm.
-      */
-    /**
+      *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
     def sgd(learningRate: Double): SGDOptimizer = js.native
   }
-  
 }
-

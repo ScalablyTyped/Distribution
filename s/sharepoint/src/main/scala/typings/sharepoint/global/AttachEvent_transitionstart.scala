@@ -6,15 +6,15 @@ import typings.std.HTMLElement
 import typings.std.TransitionEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AttachEvent")
 @js.native
 object AttachEvent_transitionstart extends js.Object {
+  
   def apply(
     `type`: transitionstart,
     eventFunc: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, _],
     el: GlobalEventHandlers
   ): js.Any = js.native
 }
-

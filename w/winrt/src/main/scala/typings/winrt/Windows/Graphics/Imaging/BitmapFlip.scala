@@ -2,14 +2,14 @@ package typings.winrt.Windows.Graphics.Imaging
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BitmapFlip extends js.Object
-
 @JSGlobal("Windows.Graphics.Imaging.BitmapFlip")
 @js.native
 object BitmapFlip extends js.Object {
+  
   @js.native
   sealed trait horizontal extends BitmapFlip
   
@@ -18,6 +18,4 @@ object BitmapFlip extends js.Object {
   
   @js.native
   sealed trait vertical extends BitmapFlip
-  
 }
-

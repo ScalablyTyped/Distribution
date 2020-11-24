@@ -12,7 +12,7 @@ Javascript library for precise tracking of facial features via Constrained Local
 | Keywords           | computer-vision |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 6744 |
+| # downloads        | 4161 |
 | # stars            | 1 |
 
 ## Links

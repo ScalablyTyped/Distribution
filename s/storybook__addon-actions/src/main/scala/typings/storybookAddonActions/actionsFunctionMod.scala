@@ -5,13 +5,15 @@ import typings.storybookAddonActions.actionOptionsMod.ActionOptions
 import typings.storybookAddonActions.actionsMapMod.ActionsMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/addon-actions/dist/models/ActionsFunction", JSImport.Namespace)
 @js.native
 object actionsFunctionMod extends js.Object {
+  
   @js.native
   trait ActionsFunction extends js.Object {
+    
     def apply[T /* <: String */](handler1: T): ActionsMap[T] = js.native
     def apply[T /* <: String */](handler1: T, handler2: T): ActionsMap[T] = js.native
     def apply[T /* <: String */](handler1: T, handler2: T, handler3: T): ActionsMap[T] = js.native
@@ -116,6 +118,4 @@ object actionsFunctionMod extends js.Object {
     def apply[T /* <: String */](handlerMap: Record[T, String], options: ActionOptions): ActionsMap[T] = js.native
     def apply[T /* <: String */](handlers: T*): ActionsMap[T] = js.native
   }
-  
 }
-

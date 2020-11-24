@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This namespace contains WebGL-only display filters that can be applied
@@ -34,6 +34,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.filters")
 @js.native
 object filters extends js.Object {
+  
   /**
     * Simplest filter - applies alpha.
     *
@@ -254,6 +255,4 @@ object filters extends js.Object {
     def this(noise: js.UndefOr[scala.Nothing], seed: Double) = this()
     def this(noise: Double, seed: Double) = this()
   }
-  
 }
-

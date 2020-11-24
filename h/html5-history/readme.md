@@ -12,7 +12,7 @@ A npm friendly version of history.js
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 2992 |
+| # downloads        | 6639 |
 | # stars            | 0 |
 
 ## Links

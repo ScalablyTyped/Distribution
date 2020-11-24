@@ -11,8 +11,8 @@ A well-tested UTF-8 encoder/decoder written in JavaScript.
 | Full name          | utf8 |
 | Keywords           | charset, encoding, unicode, utf8 |
 | # releases         | 1 |
-| # dependents       | 469 |
-| # downloads        | 18352611 |
+| # dependents       | 541 |
+| # downloads        | 24081966 |
 | # stars            | 15 |
 
 ## Links

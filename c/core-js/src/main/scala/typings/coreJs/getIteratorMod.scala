@@ -4,11 +4,11 @@ import typings.std.Iterable
 import typings.std.Iterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("core-js/fn/get-iterator", JSImport.Namespace)
 @js.native
 object getIteratorMod extends js.Object {
+  
   def apply[T](iterable: Iterable[T]): Iterator[T, _, js.UndefOr[scala.Nothing]] = js.native
 }
-

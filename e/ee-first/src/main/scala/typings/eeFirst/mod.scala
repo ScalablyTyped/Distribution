@@ -3,20 +3,11 @@ package typings.eeFirst
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ee-first", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  trait Thunk[TEmitter /* <: EventEmitter */] extends js.Object {
-    def apply(listener: Listener[TEmitter]): Unit = js.native
-    /**
-      * The group of listeners can be cancelled before being invoked and have all the event listeners removed
-      * from the underlying event emitters.
-      */
-    def cancel(): Unit = js.native
-  }
   
   /**
     * Get the first event in a set of event emitters and event pairs, then clean up after itself.
@@ -32,6 +23,19 @@ object mod extends js.Object {
     * - `args`: an array of the arguments that were emitted on the event
     */
   def apply[TEmitter /* <: EventEmitter */](eventSpec: js.Array[Array[TEmitter | String]], listener: Listener[TEmitter]): Thunk[TEmitter] = js.native
+  
+  @js.native
+  trait Thunk[TEmitter /* <: EventEmitter */] extends js.Object {
+    
+    def apply(listener: Listener[TEmitter]): Unit = js.native
+    
+    /**
+      * The group of listeners can be cancelled before being invoked and have all the event listeners removed
+      * from the underlying event emitters.
+      */
+    def cancel(): Unit = js.native
+  }
+  
   type Listener[TEmitter /* <: EventEmitter */] = js.Function4[
     /* err */ js.Any, 
     /* ee */ TEmitter, 
@@ -40,4 +44,3 @@ object mod extends js.Object {
     Unit
   ]
 }
-

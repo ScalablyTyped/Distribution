@@ -4,15 +4,15 @@
 Typings are for version 4.0
 
 ## Library description:
-return an md5sum of a given file
+Get the MD5-sum of a given file, with low memory usage, even on huge files.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | md5-file |
 | Keywords           | md5, md5sum, checksum |
 | # releases         | 2 |
-| # dependents       | 402 |
-| # downloads        | 24825211 |
+| # dependents       | 448 |
+| # downloads        | 37421869 |
 | # stars            | 17 |
 
 ## Links

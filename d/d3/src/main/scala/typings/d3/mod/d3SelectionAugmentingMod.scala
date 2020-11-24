@@ -4,12 +4,13 @@ import typings.d3Selection.mod.BaseType
 import typings.d3Transition.mod.Transition_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("d3", "d3-selection")
 @js.native
 object d3SelectionAugmentingMod extends js.Object {
+  
   /**
     * A D3 Selection of elements.
     *
@@ -20,6 +21,7 @@ object d3SelectionAugmentingMod extends js.Object {
     */
   @js.native
   trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, PDatum] extends js.Object {
+    
     /**
       * Interrupts the active transition of the specified name on the selected elements, and cancels any pending transitions with the specified name, if any.
       * If a name is not specified, null is used.
@@ -32,6 +34,7 @@ object d3SelectionAugmentingMod extends js.Object {
       */
     def interrupt(): this.type = js.native
     def interrupt(name: String): this.type = js.native
+    
     /**
       * Returns a new transition on the given selection with the specified name. If a name is not specified, null is used.
       * The new transition is only exclusive with other transitions of the same name.
@@ -56,6 +59,4 @@ object d3SelectionAugmentingMod extends js.Object {
       */
     def transition(transition: Transition_[BaseType, _, _, _]): Transition_[GElement, Datum, PElement, PDatum] = js.native
   }
-  
 }
-

@@ -2,11 +2,12 @@ package typings.vscodeLanguageserver.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver", "combineFeatures")
 @js.native
 object combineFeatures extends js.Object {
+  
   def apply[OConsole, OTracer, OTelemetry, OClient, OWindow, OWorkspace, TConsole, TTracer, TTelemetry, TClient, TWindow, TWorkspace](
     one: Features[OConsole, OTracer, OTelemetry, OClient, OWindow, OWorkspace, _underscore],
     two: Features[TConsole, TTracer, TTelemetry, TClient, TWindow, TWorkspace, _underscore]
@@ -20,4 +21,3 @@ object combineFeatures extends js.Object {
     _underscore
   ] = js.native
 }
-

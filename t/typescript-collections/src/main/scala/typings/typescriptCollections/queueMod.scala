@@ -4,29 +4,27 @@ import typings.typescriptCollections.utilMod.IEqualsFunction
 import typings.typescriptCollections.utilMod.ILoopFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-collections/dist/lib/Queue", JSImport.Namespace)
 @js.native
 object queueMod extends js.Object {
+  
   @js.native
   trait Queue[T] extends js.Object {
-    /**
-      * List containing the elements.
-      * @type collections.LinkedList
-      * @private
-      */
-    var list: js.Any = js.native
+    
     /**
       * Inserts the specified element into the end of this queue.
       * @param {Object} elem the element to insert.
       * @return {boolean} true if the element was inserted, or false if it is undefined.
       */
     def add(elem: T): Boolean = js.native
+    
     /**
       * Removes all of the elements from this queue.
       */
     def clear(): Unit = js.native
+    
     /**
       * Returns true if this queue contains the specified element.
       * <p>If the elements inside this stack are
@@ -47,17 +45,20 @@ object queueMod extends js.Object {
       */
     def contains(elem: T): Boolean = js.native
     def contains(elem: T, equalsFunction: IEqualsFunction[T]): Boolean = js.native
+    
     /**
       * Retrieves and removes the head of this queue.
       * @return {*} the head of this queue, or undefined if this queue is empty.
       */
     def dequeue(): js.UndefOr[T] = js.native
+    
     /**
       * Inserts the specified element into the end of this queue.
       * @param {Object} elem the element to insert.
       * @return {boolean} true if the element was inserted, or false if it is undefined.
       */
     def enqueue(elem: T): Boolean = js.native
+    
     /**
       * Executes the provided function once for each element present in this queue in
       * FIFO order.
@@ -66,17 +67,27 @@ object queueMod extends js.Object {
       * optionally return false.
       */
     def forEach(callback: ILoopFunction[T]): Unit = js.native
+    
     /**
       * Checks if this queue is empty.
       * @return {boolean} true if and only if this queue contains no items; false
       * otherwise.
       */
     def isEmpty(): Boolean = js.native
+    
+    /**
+      * List containing the elements.
+      * @type collections.LinkedList
+      * @private
+      */
+    var list: js.Any = js.native
+    
     /**
       * Retrieves, but does not remove, the head of this queue.
       * @return {*} the head of this queue, or undefined if this queue is empty.
       */
     def peek(): js.UndefOr[T] = js.native
+    
     /**
       * Returns the number of elements in this queue.
       * @return {number} the number of elements in this queue.
@@ -93,6 +104,4 @@ object queueMod extends js.Object {
     * @constructor
     */
   class default[T] () extends Queue[T]
-  
 }
-

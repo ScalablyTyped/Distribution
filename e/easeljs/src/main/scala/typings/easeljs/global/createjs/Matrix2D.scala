@@ -2,7 +2,7 @@ package typings.easeljs.global.createjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.Matrix2D")
 @js.native
@@ -17,12 +17,12 @@ class Matrix2D protected ()
     ty: js.UndefOr[Double]
   ) = this()
 }
-
 /* static members */
 @JSGlobal("createjs.Matrix2D")
 @js.native
 object Matrix2D extends js.Object {
+  
   var DEG_TO_RAD: Double = js.native
+  
   var identity: typings.easeljs.createjs.Matrix2D = js.native
 }
-

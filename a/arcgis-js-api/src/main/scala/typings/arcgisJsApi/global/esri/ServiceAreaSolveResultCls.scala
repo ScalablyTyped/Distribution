@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.ServiceAreaSolveResultProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.ServiceAreaSolveResult")
 @js.native
@@ -16,4 +16,3 @@ class ServiceAreaSolveResultCls ()
   extends typings.arcgisJsApi.esri.ServiceAreaSolveResult {
   def this(properties: ServiceAreaSolveResultProperties) = this()
 }
-

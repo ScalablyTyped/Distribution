@@ -4,7 +4,7 @@ import typings.typescriptServices.TypeScript.ISeparatedSyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "TypeArgumentListSyntax")
 @js.native
@@ -17,12 +17,12 @@ class TypeArgumentListSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("typescript-services", "TypeArgumentListSyntax")
 @js.native
 object TypeArgumentListSyntax extends js.Object {
+  
   def create(lessThanToken: ISyntaxToken, greaterThanToken: ISyntaxToken): typings.typescriptServices.TypeScript.TypeArgumentListSyntax = js.native
+  
   def create1(): typings.typescriptServices.TypeScript.TypeArgumentListSyntax = js.native
 }
-

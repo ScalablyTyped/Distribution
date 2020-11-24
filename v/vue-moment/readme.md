@@ -10,9 +10,9 @@ Handy Moment.js filters for your Vue.js project
 | ------------------ | :-------------: |
 | Full name          | vue-moment |
 | Keywords           | vue, custom, date, time, filter, moment, moment.js |
-| # releases         | 3 |
-| # dependents       | 71 |
-| # downloads        | 2317477 |
+| # releases         | 2 |
+| # dependents       | 92 |
+| # downloads        | 3580458 |
 | # stars            | 9 |
 
 ## Links

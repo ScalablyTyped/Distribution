@@ -5,9 +5,8 @@ import typings.grommet.containerTargetContextMod.ContainerTargetValue
 import typings.react.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "ContainerTargetContext")
+@JSImport("grommet", "ContainerTargetContext")
 @js.native
 object ContainerTargetContext extends TopLevel[Context[ContainerTargetValue]]
-

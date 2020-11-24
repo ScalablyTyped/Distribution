@@ -117,12 +117,12 @@ import typings.semanticUiDropdown.semanticUiDropdownStrings.values
 import typings.semanticUiDropdown.semanticUiDropdownStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: Should 'value'/'values' parameters be of type 'string' instead of 'any'?
 @js.native
 trait Dropdown_ extends js.Object {
-  var settings: DropdownSettings = js.native
+  
   def apply(): JQuery = js.native
   /**
     * Binds a click to document to determine if you click away from a dropdown
@@ -459,5 +459,6 @@ trait Dropdown_ extends js.Object {
     */
   def apply(behavior: toggle): JQuery = js.native
   def apply(settings: DropdownSettings): JQuery = js.native
+  
+  var settings: DropdownSettings = js.native
 }
-

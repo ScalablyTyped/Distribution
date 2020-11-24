@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Protection
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RenewalStatus extends js.Object
-
 /** Defines the possible values returned from RenewSystemComponentsAsync . */
 @JSGlobal("Windows.Media.Protection.RenewalStatus")
 @js.native
 object RenewalStatus extends js.Object {
+  
   /** Specifies that no system components were detected that need updating. But app components may need to be updated, in which case the user may need to get an updated application from the store. */
   @js.native
   sealed trait appComponentsMayNeedUpdating extends RenewalStatus
@@ -30,6 +30,4 @@ object RenewalStatus extends js.Object {
   /** Specifies that the user declined to allow updates to proceed. */
   @js.native
   sealed trait userCancelled extends RenewalStatus
-  
 }
-

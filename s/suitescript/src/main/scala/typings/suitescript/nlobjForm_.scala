@@ -3,7 +3,7 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjForm used for scriptable form page.
@@ -18,6 +18,7 @@ trait nlobjForm_ extends /**
   * @return
   */
 Instantiable0[nlobjForm] {
+  
   /**
     * add a button to this form.
     *
@@ -34,6 +35,7 @@ Instantiable0[nlobjForm] {
     */
   def addButton(name: String, label: String): nlobjButton = js.native
   def addButton(name: String, label: String, script: String): nlobjButton = js.native
+  
   /**
     *
     * @param name
@@ -264,6 +266,7 @@ Instantiable0[nlobjForm] {
     entityMatch: Boolean,
     tab: String
   ): nlobjField = js.native
+  
   /**
     * add a field (nlobjField) to this form and return it.
     *
@@ -296,6 +299,7 @@ Instantiable0[nlobjForm] {
   def addField(name: String, `type`: String, label: String, sourceOrRadio: js.UndefOr[scala.Nothing], tab: String): nlobjField = js.native
   def addField(name: String, `type`: String, label: String, sourceOrRadio: js.Any): nlobjField = js.native
   def addField(name: String, `type`: String, label: String, sourceOrRadio: js.Any, tab: String): nlobjField = js.native
+  
   /**
     * add a field group to the form.
     * @param {string} name field group name
@@ -313,6 +317,7 @@ Instantiable0[nlobjForm] {
     * @return
     */
   def addFieldGroup(name: String, label: String, tab: js.Any): nlobjFieldGroup = js.native
+  
   /**
     * add a navigation cross-link to the page.
     *
@@ -325,6 +330,7 @@ Instantiable0[nlobjForm] {
     * @param url
     */
   def addPageLink(`type`: String, title: String, url: String): Unit = js.native
+  
   /**
     * add a reset button to this form.
     *
@@ -337,6 +343,7 @@ Instantiable0[nlobjForm] {
     */
   def addResetButton(): nlobjButton = js.native
   def addResetButton(label: String): nlobjButton = js.native
+  
   /**
     * add a sublist (nlobjSubList) to this form and return it.
     *
@@ -355,6 +362,7 @@ Instantiable0[nlobjForm] {
     */
   def addSubList(name: String, `type`: String, label: String): nlobjSubList = js.native
   def addSubList(name: String, `type`: String, label: String, tab: String): nlobjSubList = js.native
+  
   /**
     * add a subtab (nlobjTab) to this form and return it.
     *
@@ -371,6 +379,7 @@ Instantiable0[nlobjForm] {
     */
   def addSubTab(name: String, label: String): nlobjTab = js.native
   def addSubTab(name: String, label: String, tab: String): nlobjTab = js.native
+  
   /**
     * add a submit button to this form.
     *
@@ -383,6 +392,7 @@ Instantiable0[nlobjForm] {
     */
   def addSubmitButton(): nlobjButton = js.native
   def addSubmitButton(label: String): nlobjButton = js.native
+  
   /**
     * add a tab (nlobjTab) to this form and return it.
     *
@@ -396,6 +406,7 @@ Instantiable0[nlobjForm] {
     * @return
     */
   def addTab(name: String, label: String): nlobjTab = js.native
+  
   /**
     * set additional title Html. INTERNAL ONLY
     *
@@ -404,6 +415,7 @@ Instantiable0[nlobjForm] {
     * @param html
     */
   def addTitleHtml(html: js.Any): Unit = js.native
+  
   /**
     * get a button from this form by name.
     * @param {string} name
@@ -417,6 +429,7 @@ Instantiable0[nlobjForm] {
     * @return
     */
   def getButton(name: String): nlobjButton = js.native
+  
   /**
     * return a field (nlobjField) on this form.
     *
@@ -431,6 +444,7 @@ Instantiable0[nlobjForm] {
     */
   def getField(name: String): nlobjField = js.native
   def getField(name: String, radio: String): nlobjField = js.native
+  
   /**
     * return a sublist (nlobjSubList) on this form.
     *
@@ -442,6 +456,7 @@ Instantiable0[nlobjForm] {
     * @return
     */
   def getSubList(name: String): nlobjSubList = js.native
+  
   /**
     * return a subtab (nlobjTab) on this form.
     *
@@ -453,6 +468,7 @@ Instantiable0[nlobjForm] {
     * @return
     */
   def getSubTab(name: String): nlobjTab = js.native
+  
   /**
     * return a tab (nlobjTab) on this form.
     *
@@ -464,6 +480,7 @@ Instantiable0[nlobjForm] {
     * @return
     */
   def getTab(name: String): nlobjTab = js.native
+  
   /**
     * get a list of all tabs.
     * @return an array with names of all tabs
@@ -474,6 +491,7 @@ Instantiable0[nlobjForm] {
     * @since 2012.2
     */
   def getTabs(): js.Array[nlobjTab] = js.native
+  
   /**
     * insert a field (nlobjField) before another field (name).
     *
@@ -487,6 +505,7 @@ Instantiable0[nlobjForm] {
     * @return
     */
   def insertField(field: js.Function0[Unit], nextfld: String): nlobjField = js.native
+  
   /**
     * insert a sublist (nlobjSubList) before another subtab or sublist (name).
     *
@@ -500,6 +519,7 @@ Instantiable0[nlobjForm] {
     * @return
     */
   def insertSubList(sublist: js.Function0[Unit], nextsublist: String): nlobjSubList = js.native
+  
   /**
     * insert a subtab (nlobjTab) before another subtab or sublist (name).
     *
@@ -513,6 +533,7 @@ Instantiable0[nlobjForm] {
     * @return
     */
   def insertSubTab(subtab: js.Function0[Unit], nextsubtab: String): nlobjTab = js.native
+  
   /**
     * insert a tab (nlobjTab) before another tab (name).
     *
@@ -526,6 +547,7 @@ Instantiable0[nlobjForm] {
     * @return
     */
   def insertTab(tab: js.Function0[Unit], nexttab: String): nlobjTab = js.native
+  
   /**
     * set the values for all the fields on this form.
     *
@@ -534,6 +556,7 @@ Instantiable0[nlobjForm] {
     * @param values
     */
   def setFieldValues(values: js.Any): Unit = js.native
+  
   /**
     * set the Client Script definition used for this page.
     *
@@ -542,6 +565,7 @@ Instantiable0[nlobjForm] {
     * @param script
     */
   def setScript(script: js.Any): Unit = js.native
+  
   /**
     * set the page title.
     *
@@ -551,4 +575,3 @@ Instantiable0[nlobjForm] {
     */
   def setTitle(title: String): Unit = js.native
 }
-

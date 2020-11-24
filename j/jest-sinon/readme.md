@@ -10,9 +10,9 @@ Jest assertions for the mocking library Sinon.js
 | ------------------ | :-------------: |
 | Full name          | jest-sinon |
 | Keywords           | jest, sinon, mocks, spies, stubs, testing, test, assertions, matchers, tdd |
-| # releases         | 16 |
+| # releases         | 18 |
 | # dependents       | 0 |
-| # downloads        | 38554 |
+| # downloads        | 174494 |
 | # stars            | 0 |
 
 ## Links

@@ -7,10 +7,11 @@ import typings.meteor.Mongo.Cursor
 import typings.meteor.Tracker.Computation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IScope extends IRootScopeService {
+  
   /**
     * This method is a wrapper of Tracker.autorun and shares exactly the same API.
     * The autorun method is part of the ReactiveContext, and available on every context and $scope.
@@ -20,6 +21,7 @@ trait IScope extends IRootScopeService {
     * @param runFunc - The function to run. It receives one argument: the Computation object that will be returned.
     */
   def autorun(runFunc: js.Function0[Unit]): Computation = js.native
+  
   /**
     * A method to get a $scope variable and watch it reactivly
     *
@@ -28,6 +30,7 @@ trait IScope extends IRootScopeService {
     */
   def getReactively(scopeVariableName: String): ReactiveResult = js.native
   def getReactively(scopeVariableName: String, objectEquality: Boolean): ReactiveResult = js.native
+  
   /**
     * The helpers method is part of the ReactiveContext, and available on every context and $scope.
     * These method are defined as Object, where each key is the name of the variable that will be available on the context we run, and each value is a function with a return value.
@@ -38,7 +41,8 @@ trait IScope extends IRootScopeService {
     * @param definitions - Object containing `name` => `function` definition, where each name is a string and each function is the helper function. Should return a [MongoDB Cursor](http://docs.meteor.com/#/full/mongo_cursor)
     * @return This method returns this, which the the reactive context, in order to provide the ability to chain the logic.
     */
-  def helpers(definitions: StringDictionary[js.Function0[Cursor[_]]]): IScope = js.native
+  def helpers(definitions: StringDictionary[js.Function0[Cursor[_, _]]]): IScope = js.native
+  
   /**
     * A service which is a wrapper for Meteor.subscribe. It subscribes to a Meteor.publish method in the client and returns a AngularJS promise when ready.
     * Calling $scope.subscribe will automatically stop the subscription when the scope is destroyed.
@@ -50,4 +54,3 @@ trait IScope extends IRootScopeService {
     */
   def subscribe(name: String, publisherArguments: js.Any*): IPromise[SubscriptionHandle] = js.native
 }
-

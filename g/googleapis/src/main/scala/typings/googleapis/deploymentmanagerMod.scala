@@ -13,11 +13,12 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/deploymentmanager", JSImport.Namespace)
 @js.native
 object deploymentmanagerMod extends js.Object {
+  
   def deploymentmanager(options: Options): Deploymentmanager = js.native
   def deploymentmanager(options: typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Options): typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager = js.native
   def deploymentmanager(options: typings.googleapis.v2betaMod.deploymentmanagerV2beta.Options): typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager = js.native
@@ -27,28 +28,15 @@ object deploymentmanagerMod extends js.Object {
   def deploymentmanager_v2(version: v2): typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager = js.native
   @JSName("deploymentmanager")
   def deploymentmanager_v2beta(version: v2beta): typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class alpha protected () extends Deploymentmanager {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    class v2 protected ()
-      extends typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
-    @js.native
-    class v2beta protected ()
-      extends typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
     @js.native
     object alpha
       extends TopLevel[
@@ -60,6 +48,12 @@ object deploymentmanagerMod extends js.Object {
             ]
     
     @js.native
+    class v2 protected ()
+      extends typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    @js.native
     object v2
       extends TopLevel[
               Instantiable2[
@@ -70,6 +64,12 @@ object deploymentmanagerMod extends js.Object {
             ]
     
     @js.native
+    class v2beta protected ()
+      extends typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    @js.native
     object v2beta
       extends TopLevel[
               Instantiable2[
@@ -78,11 +78,11 @@ object deploymentmanagerMod extends js.Object {
                 typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -110,8 +110,5 @@ object deploymentmanagerMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TetheringCapability extends js.Object
-
 /** Defines values that can be returned after calling getTetheringCapability to indicate the tethering capabilities of a network account. */
 @JSGlobal("Windows.Networking.NetworkOperators.TetheringCapability")
 @js.native
 object TetheringCapability extends js.Object {
+  
   /** Tethering is disabled according to the current group policy. */
   @js.native
   sealed trait disabledByGroupPolicy extends TetheringCapability
@@ -42,6 +42,4 @@ object TetheringCapability extends js.Object {
   /** Tethering is enabled. */
   @js.native
   sealed trait enabled extends TetheringCapability
-  
 }
-

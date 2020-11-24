@@ -2,11 +2,12 @@ package typings.oracledb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("oracledb", "createPool")
 @js.native
 object createPool extends js.Object {
+  
   /**
     * This method creates a pool of connections with the specified user name, password and connection string.
     * A pool is typically created once during application initialization.
@@ -28,4 +29,3 @@ object createPool extends js.Object {
   def apply(poolAttributes: PoolAttributes): js.Promise[Pool] = js.native
   def apply(poolAttributes: PoolAttributes, callback: js.Function2[/* error */ DBError, /* pool */ Pool, Unit]): Unit = js.native
 }
-

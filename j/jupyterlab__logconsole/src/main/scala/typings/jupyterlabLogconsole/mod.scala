@@ -5,11 +5,14 @@ import typings.luminoCoreutils.mod.Token
 import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/logconsole", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  val ILoggerRegistry: Token[typings.jupyterlabLogconsole.tokensMod.ILoggerRegistry] = js.native
+  
   @js.native
   class LogConsolePanel protected ()
     extends typings.jupyterlabLogconsole.widgetMod.LogConsolePanel {
@@ -32,6 +35,11 @@ object mod extends js.Object {
       */
     def this(options: IOptions) = this()
   }
+  /**
+    * Log Output Model namespace that defines initialization options.
+    */
+  @js.native
+  object LogOutputModel extends js.Object
   
   @js.native
   class Logger protected ()
@@ -67,13 +75,4 @@ object mod extends js.Object {
     extends typings.jupyterlabLogconsole.widgetMod.ScrollingWidget[T] {
     def this(hasContentOptions: typings.jupyterlabLogconsole.widgetMod.ScrollingWidget.IOptions[T]) = this()
   }
-  
-  val ILoggerRegistry: Token[typings.jupyterlabLogconsole.tokensMod.ILoggerRegistry] = js.native
-  /**
-    * Log Output Model namespace that defines initialization options.
-    */
-  @js.native
-  object LogOutputModel extends js.Object
-  
 }
-

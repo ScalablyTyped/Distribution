@@ -3,7 +3,7 @@ package typings.phaser.Phaser.GameObjects.Components
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods used for setting the tint of a Game Object.
@@ -11,39 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Tint extends js.Object {
-  /**
-    * Does this Game Object have a tint applied to it or not?
-    */
-  val isTinted: Boolean = js.native
-  /**
-    * The tint value being applied to the whole of the Game Object.
-    * This property is a setter-only. Use the properties `tintTopLeft` etc to read the current tint value.
-    */
-  var tint: integer = js.native
-  /**
-    * The tint value being applied to the bottom-left of the Game Object.
-    * This value is interpolated from the corner to the center of the Game Object.
-    */
-  var tintBottomLeft: integer = js.native
-  /**
-    * The tint value being applied to the bottom-right of the Game Object.
-    * This value is interpolated from the corner to the center of the Game Object.
-    */
-  var tintBottomRight: integer = js.native
-  /**
-    * Fill or additive?
-    */
-  var tintFill: Boolean = js.native
-  /**
-    * The tint value being applied to the top-left of the Game Object.
-    * This value is interpolated from the corner to the center of the Game Object.
-    */
-  var tintTopLeft: integer = js.native
-  /**
-    * The tint value being applied to the top-right of the Game Object.
-    * This value is interpolated from the corner to the center of the Game Object.
-    */
-  var tintTopRight: integer = js.native
+  
   /**
     * Clears all tint values associated with this Game Object.
     * 
@@ -51,6 +19,12 @@ trait Tint extends js.Object {
     * which results in no visible change to the texture.
     */
   def clearTint(): this.type = js.native
+  
+  /**
+    * Does this Game Object have a tint applied to it or not?
+    */
+  val isTinted: Boolean = js.native
+  
   /**
     * Sets an additive tint on this Game Object.
     * 
@@ -107,6 +81,7 @@ trait Tint extends js.Object {
   def setTint(topLeft: integer, topRight: integer, bottomLeft: js.UndefOr[scala.Nothing], bottomRight: integer): this.type = js.native
   def setTint(topLeft: integer, topRight: integer, bottomLeft: integer): this.type = js.native
   def setTint(topLeft: integer, topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
+  
   /**
     * Sets a fill-based tint on this Game Object.
     * 
@@ -164,5 +139,39 @@ trait Tint extends js.Object {
   def setTintFill(topLeft: integer, topRight: integer, bottomLeft: js.UndefOr[scala.Nothing], bottomRight: integer): this.type = js.native
   def setTintFill(topLeft: integer, topRight: integer, bottomLeft: integer): this.type = js.native
   def setTintFill(topLeft: integer, topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
+  
+  /**
+    * The tint value being applied to the whole of the Game Object.
+    * This property is a setter-only. Use the properties `tintTopLeft` etc to read the current tint value.
+    */
+  var tint: integer = js.native
+  
+  /**
+    * The tint value being applied to the bottom-left of the Game Object.
+    * This value is interpolated from the corner to the center of the Game Object.
+    */
+  var tintBottomLeft: integer = js.native
+  
+  /**
+    * The tint value being applied to the bottom-right of the Game Object.
+    * This value is interpolated from the corner to the center of the Game Object.
+    */
+  var tintBottomRight: integer = js.native
+  
+  /**
+    * Fill or additive?
+    */
+  var tintFill: Boolean = js.native
+  
+  /**
+    * The tint value being applied to the top-left of the Game Object.
+    * This value is interpolated from the corner to the center of the Game Object.
+    */
+  var tintTopLeft: integer = js.native
+  
+  /**
+    * The tint value being applied to the top-right of the Game Object.
+    * This value is interpolated from the corner to the center of the Game Object.
+    */
+  var tintTopRight: integer = js.native
 }
-

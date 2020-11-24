@@ -1,7 +1,7 @@
 
 # Scala.js typings for mapbox-gl
 
-Typings are for version 1.11
+Typings are for version 1.12
 
 ## Library description:
 A WebGL interactive maps library
@@ -10,9 +10,9 @@ A WebGL interactive maps library
 | ------------------ | :-------------: |
 | Full name          | mapbox-gl |
 | Keywords           | - |
-| # releases         | 49 |
-| # dependents       | 226 |
-| # downloads        | 8600239 |
+| # releases         | 52 |
+| # dependents       | 337 |
+| # downloads        | 17176673 |
 | # stars            | 6 |
 
 ## Links

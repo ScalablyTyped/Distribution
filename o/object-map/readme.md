@@ -12,7 +12,7 @@ Map a function over some Object's values to produce a new Object.
 | Keywords           | object, map, functional |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 11326 |
+| # downloads        | 10656 |
 | # stars            | 0 |
 
 ## Links

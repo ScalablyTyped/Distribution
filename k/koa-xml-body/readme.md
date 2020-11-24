@@ -10,9 +10,9 @@ koa middleware to parse xml request body
 | ------------------ | :-------------: |
 | Full name          | koa-xml-body |
 | Keywords           | xml, body, bodyParser, koa, middleware, xml2js, xml parser |
-| # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 63218 |
+| # releases         | 3 |
+| # dependents       | 15 |
+| # downloads        | 89057 |
 | # stars            | 0 |
 
 ## Links

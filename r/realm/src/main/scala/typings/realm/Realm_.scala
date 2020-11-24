@@ -1,35 +1,25 @@
 package typings.realm
 
+import typings.realm.Realm.App.Sync.Session
 import typings.realm.Realm.List
 import typings.realm.Realm.Object
-import typings.realm.Realm.ObjectClass
-import typings.realm.Realm.ObjectPropsType
 import typings.realm.Realm.ObjectSchema
-import typings.realm.Realm.ObjectType
-import typings.realm.Realm.Permissions.Class
-import typings.realm.Realm.Permissions.ClassPrivileges
-import typings.realm.Realm.Permissions.ObjectPrivileges
-import typings.realm.Realm.Permissions.RealmPrivileges
 import typings.realm.Realm.Results
-import typings.realm.Realm.Sync.Session
-import typings.realm.Realm.UpdateMode
+import typings.realm.Realm.UpdateMode.All
+import typings.realm.Realm.UpdateMode.Modified
+import typings.realm.Realm.UpdateMode.Never
+import typings.realm.anon.Instantiable
 import typings.realm.realmStrings.change
 import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Realm_ extends js.Object {
-  val empty: Boolean = js.native
-  val isClosed: Boolean = js.native
-  val isInTransaction: Boolean = js.native
-  val path: String = js.native
-  val readOnly: Boolean = js.native
-  val schema: js.Array[ObjectSchema] = js.native
-  val schemaVersion: Double = js.native
-  val syncSession: Session | Null = js.native
+  
   /**
     * Update the schema of the Realm.
     *
@@ -37,6 +27,7 @@ trait Realm_ extends js.Object {
     * @private Not a part of the public API: Consider passing a `schema` when constructing the `Realm` instead.
     */
   def _updateSchema(schema: js.Array[ObjectSchema]): Unit = js.native
+  
   /**
     * @param  {string} name
     * @param  {()=>void} callback
@@ -54,52 +45,53 @@ trait Realm_ extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * @returns void
     */
   def beginTransaction(): Unit = js.native
+  
   /**
     * @returns void
     */
   def cancelTransaction(): Unit = js.native
+  
   /**
     * @returns void
     */
   def close(): Unit = js.native
+  
   /**
     * @returns void
     */
   def commitTransaction(): Unit = js.native
+  
   /**
     * @returns boolean
     */
   def compact(): Boolean = js.native
+  
   /**
-    * @param  {string|Realm.ObjectClass|Function} type
-    * @param  {T&Realm.ObjectPropsType} properties
-    * @param  {boolean} update?
-    * @returns T
-    *
-    * @deprecated, to be removed in future versions. Use `create(type, properties, UpdateMode)` instead.
+    * @param  {string} type
+    * @param  {T} properties
+    * @param  {Realm.UpdateMode} mode? If not provided, `Realm.UpdateMode.Never` is used.
+    * @returns T & Realm.Object
     */
-  def create[T](`type`: String, properties: T): T = js.native
-  def create[T](`type`: String, properties: T, mode: UpdateMode): T = js.native
-  def create[T](`type`: String, properties: T, update: Boolean): T = js.native
-  def create[T](`type`: String, properties: ObjectPropsType): T = js.native
-  def create[T](`type`: String, properties: ObjectPropsType, mode: UpdateMode): T = js.native
-  def create[T](`type`: String, properties: ObjectPropsType, update: Boolean): T = js.native
-  def create[T](`type`: js.Function, properties: T): T = js.native
-  def create[T](`type`: js.Function, properties: T, mode: UpdateMode): T = js.native
-  def create[T](`type`: js.Function, properties: T, update: Boolean): T = js.native
-  def create[T](`type`: js.Function, properties: ObjectPropsType): T = js.native
-  def create[T](`type`: js.Function, properties: ObjectPropsType, mode: UpdateMode): T = js.native
-  def create[T](`type`: js.Function, properties: ObjectPropsType, update: Boolean): T = js.native
-  def create[T](`type`: ObjectClass, properties: T): T = js.native
-  def create[T](`type`: ObjectClass, properties: T, mode: UpdateMode): T = js.native
-  def create[T](`type`: ObjectClass, properties: T, update: Boolean): T = js.native
-  def create[T](`type`: ObjectClass, properties: ObjectPropsType): T = js.native
-  def create[T](`type`: ObjectClass, properties: ObjectPropsType, mode: UpdateMode): T = js.native
-  def create[T](`type`: ObjectClass, properties: ObjectPropsType, update: Boolean): T = js.native
+  def create[T](`type`: String, properties: RealmInsertionModel[T]): T with Object = js.native
+  def create[T](`type`: String, properties: RealmInsertionModel[T], mode: Never): T with Object = js.native
+  def create[T](`type`: String, properties: Partial[RealmInsertionModel[T] | T], mode: All): T with Object = js.native
+  def create[T](`type`: String, properties: Partial[RealmInsertionModel[T] | T], mode: Modified): T with Object = js.native
+  /**
+    * @param  {Class} type
+    * @param  {T} properties
+    * @param  {Realm.UpdateMode} mode? If not provided, `Realm.UpdateMode.Never` is used.
+    * @returns T
+    */
+  def create[T /* <: Object */](`type`: Instantiable[T], properties: RealmInsertionModel[T]): T = js.native
+  def create[T /* <: Object */](`type`: Instantiable[T], properties: RealmInsertionModel[T], mode: Never): T = js.native
+  def create[T /* <: Object */](`type`: Instantiable[T], properties: Partial[RealmInsertionModel[T] | T], mode: All): T = js.native
+  def create[T /* <: Object */](`type`: Instantiable[T], properties: Partial[RealmInsertionModel[T] | T], mode: Modified): T = js.native
+  
   def delete(`object`: js.Any): Unit = js.native
   def delete(`object`: js.Array[Object]): Unit = js.native
   def delete(`object`: List[_]): Unit = js.native
@@ -109,52 +101,68 @@ trait Realm_ extends js.Object {
     */
   def delete(`object`: Object): Unit = js.native
   def delete(`object`: Results[_]): Unit = js.native
+  
   /**
     * @returns void
     */
   def deleteAll(): Unit = js.native
+  
   /**
     * @returns void
     */
   def deleteModel(name: String): Unit = js.native
-  /**
-    * @param  {string|Realm.ObjectType|Function} type
-    * @param  {string} id
-    * @returns {T | undefined}
-    */
+  
+  val empty: Boolean = js.native
+  
+  val isClosed: Boolean = js.native
+  
+  val isInTransaction: Boolean = js.native
+  
   def objectForPrimaryKey[T](`type`: String, key: String): js.UndefOr[T with Object] = js.native
+  def objectForPrimaryKey[T](
+    `type`: String,
+    key: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Realm.ObjectId */ js.Any
+  ): js.UndefOr[T with Object] = js.native
   /**
-    * @param  {string|Realm.ObjectType|Function} type
-    * @param  {number|string} key
+    * @param  {string} type
+    * @param  {number|string|ObjectId} key
     * @returns {T | undefined}
     */
   def objectForPrimaryKey[T](`type`: String, key: Double): js.UndefOr[T with Object] = js.native
-  def objectForPrimaryKey[T](`type`: js.Function, key: String): js.UndefOr[T with Object] = js.native
-  def objectForPrimaryKey[T](`type`: js.Function, key: Double): js.UndefOr[T with Object] = js.native
-  def objectForPrimaryKey[T](`type`: ObjectType, key: String): js.UndefOr[T with Object] = js.native
-  def objectForPrimaryKey[T](`type`: ObjectType, key: Double): js.UndefOr[T with Object] = js.native
+  def objectForPrimaryKey[T /* <: Object */](`type`: Instantiable[T], key: String): js.UndefOr[T] = js.native
+  def objectForPrimaryKey[T /* <: Object */](
+    `type`: Instantiable[T],
+    key: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Realm.ObjectId */ js.Any
+  ): js.UndefOr[T] = js.native
   /**
-    * @param  {string|Realm.ObjectType|Function} type
-    * @returns Realm
+    * @param  {Class} type
+    * @param  {number|string|ObjectId} key
+    * @returns {T | undefined}
+    */
+  def objectForPrimaryKey[T /* <: Object */](`type`: Instantiable[T], key: Double): js.UndefOr[T] = js.native
+  
+  /**
+    * @param  {string} type
+    * @returns Realm.Results<T & Realm.Object>
     */
   def objects[T](`type`: String): Results[T with Object] = js.native
-  def objects[T](`type`: js.Function): Results[T with Object] = js.native
-  def objects[T](`type`: ObjectType): Results[T with Object] = js.native
-  def permissions(): typings.realm.Realm.Permissions.Realm = js.native
-  def permissions(objectType: String): Class = js.native
-  def permissions(objectType: js.Function): Class = js.native
-  def permissions(objectType: ObjectSchema): Class = js.native
-  def privileges(): RealmPrivileges = js.native
-  def privileges(objectType: String): ClassPrivileges = js.native
-  def privileges(objectType: js.Function): ClassPrivileges = js.native
-  def privileges(objectType: ObjectSchema): ClassPrivileges = js.native
-  def privileges(obj: Object): ObjectPrivileges = js.native
+  /**
+    * @param  {Class} type
+    * @returns Realm.Results<T>
+    */
+  def objects[T /* <: Object */](`type`: Instantiable[T]): Results[T] = js.native
+  
+  val path: String = js.native
+  
+  val readOnly: Boolean = js.native
+  
   /**
     * @param  {string} name?
     * @returns void
     */
   def removeAllListeners(): Unit = js.native
   def removeAllListeners(name: String): Unit = js.native
+  
   /**
     * @param  {string} name
     * @param  {()=>void} callback
@@ -172,14 +180,19 @@ trait Realm_ extends js.Object {
       Unit
     ]
   ): Unit = js.native
-  def subscriptions(): Results[NamedSubscription] = js.native
-  def subscriptions(name: String): Results[NamedSubscription] = js.native
-  def unsubscribe(name: String): Unit = js.native
+  
+  val schema: js.Array[ObjectSchema] = js.native
+  
+  val schemaVersion: Double = js.native
+  
+  val syncSession: Session | Null = js.native
+  
   /**
     * @param  {()=>void} callback
     * @returns void
     */
   def write(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Write a copy to destination path
     * @param path destination path
@@ -190,4 +203,3 @@ trait Realm_ extends js.Object {
   def writeCopyTo(path: String, encryptionKey: ArrayBuffer): Unit = js.native
   def writeCopyTo(path: String, encryptionKey: ArrayBufferView): Unit = js.native
 }
-

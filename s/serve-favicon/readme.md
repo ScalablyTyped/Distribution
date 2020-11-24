@@ -1,7 +1,7 @@
 
 # Scala.js typings for serve-favicon
 
-Typings are for version 2.5.0
+Typings are for version 2.5
 
 ## Library description:
 favicon serving middleware with caching
@@ -10,9 +10,9 @@ favicon serving middleware with caching
 | ------------------ | :-------------: |
 | Full name          | serve-favicon |
 | Keywords           | express, favicon, middleware |
-| # releases         | 2 |
-| # dependents       | 1839 |
-| # downloads        | 65256147 |
+| # releases         | 0 |
+| # dependents       | 1882 |
+| # downloads        | 89597043 |
 | # stars            | 124 |
 
 ## Links

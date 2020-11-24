@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__terminal
 
-Typings are for version 2.1.1
+Typings are for version 2.2.4
 
 ## Library description:
 JupyterLab - Terminal Emulator Widget
@@ -10,9 +10,9 @@ JupyterLab - Terminal Emulator Widget
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/terminal |
 | Keywords           | - |
-| # releases         | 64 |
-| # dependents       | 21 |
-| # downloads        | 765181 |
+| # releases         | 111 |
+| # dependents       | 26 |
+| # downloads        | 1378007 |
 | # stars            | 0 |
 
 ## Links

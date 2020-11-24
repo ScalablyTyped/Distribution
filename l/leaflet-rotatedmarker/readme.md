@@ -11,8 +11,8 @@ Enables rotation of marker icons in Leaflet.
 | Full name          | leaflet-rotatedmarker |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 298195 |
+| # dependents       | 19 |
+| # downloads        | 487583 |
 | # stars            | 1 |
 
 ## Links

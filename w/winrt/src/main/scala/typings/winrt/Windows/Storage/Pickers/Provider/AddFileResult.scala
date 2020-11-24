@@ -2,14 +2,14 @@ package typings.winrt.Windows.Storage.Pickers.Provider
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AddFileResult extends js.Object
-
 @JSGlobal("Windows.Storage.Pickers.Provider.AddFileResult")
 @js.native
 object AddFileResult extends js.Object {
+  
   @js.native
   sealed trait added extends AddFileResult
   
@@ -21,6 +21,4 @@ object AddFileResult extends js.Object {
   
   @js.native
   sealed trait unavailable extends AddFileResult
-  
 }
-

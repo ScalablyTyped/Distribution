@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Storage.AccessCache
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AccessCacheOptions extends js.Object
-
 /** Describes the behavior to use when the app accesses an item in a list. */
 @JSGlobal("Windows.Storage.AccessCache.AccessCacheOptions")
 @js.native
 object AccessCacheOptions extends js.Object {
+  
   /** When the app accesses the item, the user is prevented from entering information. */
   @js.native
   sealed trait disallowUserInput extends AccessCacheOptions
@@ -30,6 +30,4 @@ object AccessCacheOptions extends js.Object {
   /** When the app accesses the item, the app retrieves a cached, read-only version of the file. This version of the file might not be the most recent. */
   @js.native
   sealed trait useReadOnlyCachedCopy extends AccessCacheOptions
-  
 }
-

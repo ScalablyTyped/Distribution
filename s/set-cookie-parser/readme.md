@@ -1,6 +1,7 @@
 
 # Scala.js typings for set-cookie-parser
 
+Typings are for version 2.4
 
 ## Library description:
 Parses set-cookie headers into objects
@@ -10,8 +11,8 @@ Parses set-cookie headers into objects
 | Full name          | set-cookie-parser |
 | Keywords           | set-cookie, set, cookie, cookies, header, parser |
 | # releases         | 10 |
-| # dependents       | 66 |
-| # downloads        | 2097788 |
+| # dependents       | 87 |
+| # downloads        | 7067954 |
 | # stars            | 1 |
 
 ## Links

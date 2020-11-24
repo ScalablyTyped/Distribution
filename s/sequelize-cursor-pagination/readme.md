@@ -10,9 +10,9 @@ Sequelize model decorator which provides cursor based pagination queries
 | ------------------ | :-------------: |
 | Full name          | sequelize-cursor-pagination |
 | Keywords           | sequelize, pagination |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 21531 |
+| # downloads        | 26384 |
 | # stars            | 0 |
 
 ## Links

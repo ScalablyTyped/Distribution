@@ -1,15 +1,16 @@
 package typings.astTypes.buildersMod
 
-import typings.astTypes.AnonCommentsLocParamsArrayCommentKind
+import typings.astTypes.anon.CommentsLocParams
 import typings.astTypes.kindsMod.FlowTypeKind
 import typings.astTypes.namedTypesMod.namedTypes.TypeParameterInstantiation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeParameterInstantiationBuilder extends js.Object {
+  
   def apply(params: js.Array[FlowTypeKind]): TypeParameterInstantiation = js.native
-  def from(params: AnonCommentsLocParamsArrayCommentKind): TypeParameterInstantiation = js.native
+  
+  def from(params: CommentsLocParams): TypeParameterInstantiation = js.native
 }
-

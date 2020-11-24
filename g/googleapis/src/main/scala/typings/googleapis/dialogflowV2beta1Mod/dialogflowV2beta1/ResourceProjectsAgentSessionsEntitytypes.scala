@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2beta1", "dialogflow_v2beta1.Resource$Projects$Agent$Sessions$Entitytypes")
 @js.native
 class ResourceProjectsAgentSessionsEntitytypes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dialogflow.projects.agent.sessions.entityTypes.create
     * @desc Creates a session entity type.  If the specified session entity
@@ -46,6 +48,7 @@ class ResourceProjectsAgentSessionsEntitytypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1SessionEntityType]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.sessions.entityTypes.delete
     * @desc Deletes the specified session entity type.
@@ -77,6 +80,7 @@ class ResourceProjectsAgentSessionsEntitytypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.sessions.entityTypes.get
     * @desc Retrieves the specified session entity type.
@@ -108,6 +112,7 @@ class ResourceProjectsAgentSessionsEntitytypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1SessionEntityType]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.sessions.entityTypes.list
     * @desc Returns the list of all session entity types in the specified
@@ -142,6 +147,7 @@ class ResourceProjectsAgentSessionsEntitytypes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1ListSessionEntityTypesResponse]
   ): Unit = js.native
+  
   /**
     * dialogflow.projects.agent.sessions.entityTypes.patch
     * @desc Updates the specified session entity type.
@@ -176,4 +182,3 @@ class ResourceProjectsAgentSessionsEntitytypes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1SessionEntityType]
   ): Unit = js.native
 }
-

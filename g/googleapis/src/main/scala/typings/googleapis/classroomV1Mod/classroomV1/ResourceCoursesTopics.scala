@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Courses$Topics")
 @js.native
 class ResourceCoursesTopics protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * classroom.courses.topics.create
     * @desc Creates a topic.  This method returns the following error codes:  *
@@ -46,6 +48,7 @@ class ResourceCoursesTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTopic]
   ): Unit = js.native
+  
   /**
     * classroom.courses.topics.delete
     * @desc Deletes a topic.  This method returns the following error codes:  *
@@ -79,6 +82,7 @@ class ResourceCoursesTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * classroom.courses.topics.get
     * @desc Returns a topic.  This method returns the following error codes:  *
@@ -112,6 +116,7 @@ class ResourceCoursesTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTopic]
   ): Unit = js.native
+  
   /**
     * classroom.courses.topics.list
     * @desc Returns the list of topics that the requester is permitted to view.
@@ -146,6 +151,7 @@ class ResourceCoursesTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListTopicResponse]
   ): Unit = js.native
+  
   /**
     * classroom.courses.topics.patch
     * @desc Updates one or more fields of a topic.  This method returns the
@@ -182,4 +188,3 @@ class ResourceCoursesTopics protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTopic]
   ): Unit = js.native
 }
-

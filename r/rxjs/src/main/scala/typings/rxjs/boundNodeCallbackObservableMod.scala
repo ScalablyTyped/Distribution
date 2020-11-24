@@ -2,19 +2,20 @@ package typings.rxjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/observable/BoundNodeCallbackObservable", JSImport.Namespace)
 @js.native
 object boundNodeCallbackObservableMod extends js.Object {
+  
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @js.native
   class BoundNodeCallbackObservable[T] ()
     extends typings.rxjsCompat.boundNodeCallbackObservableMod.BoundNodeCallbackObservable[T]
-  
   /* static members */
   @js.native
   object BoundNodeCallbackObservable extends js.Object {
+    
     def create[T](callbackFunc: js.Function): js.Function1[
         /* repeated */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ _
@@ -449,6 +450,4 @@ object boundNodeCallbackObservableMod extends js.Object {
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
   }
-  
 }
-

@@ -7,11 +7,12 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/apiregistration/v1beta1", JSImport.Namespace)
 @js.native
 object apiregistrationV1beta1Mod extends js.Object {
+  
   @js.native
   class APIService protected ()
     extends typings.pulumiKubernetes.apiserviceMod.APIService {
@@ -26,6 +27,27 @@ object apiregistrationV1beta1Mod extends js.Object {
     def this(name: String, args: APIServiceArgs) = this()
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: APIServiceArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object APIService extends js.Object {
+    
+    /**
+      * Get an existing APIService resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.apiserviceMod.APIService = js.native
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.apiserviceMod.APIService = js.native
+    
+    /**
+      * Returns true if the given object is an instance of APIService.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiregistration/v1beta1/apiservice.APIService */ Boolean = js.native
   }
   
   @js.native
@@ -43,30 +65,10 @@ object apiregistrationV1beta1Mod extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: APIServiceListArgs, opts: CustomResourceOptions) = this()
   }
-  
-  /* static members */
-  @js.native
-  object APIService extends js.Object {
-    /**
-      * Get an existing APIService resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.apiserviceMod.APIService = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.apiserviceMod.APIService = js.native
-    /**
-      * Returns true if the given object is an instance of APIService.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiregistration/v1beta1/apiservice.APIService */ Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object APIServiceList extends js.Object {
+    
     /**
       * Get an existing APIServiceList resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -77,12 +79,11 @@ object apiregistrationV1beta1Mod extends js.Object {
       */
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.apiserviceListMod.APIServiceList = js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.apiserviceListMod.APIServiceList = js.native
+    
     /**
       * Returns true if the given object is an instance of APIServiceList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiregistration/v1beta1/apiserviceList.APIServiceList */ Boolean = js.native
   }
-  
 }
-

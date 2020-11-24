@@ -10,9 +10,9 @@ easy way to wrap js object to java object
 | ------------------ | :-------------: |
 | Full name          | js-to-java |
 | Keywords           | js, java, object, wraper, class |
-| # releases         | 4 |
-| # dependents       | 23 |
-| # downloads        | 9764 |
+| # releases         | 2 |
+| # dependents       | 27 |
+| # downloads        | 7430 |
 | # stars            | 3 |
 
 ## Links

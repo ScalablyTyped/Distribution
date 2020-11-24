@@ -2,10 +2,11 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebAuthentication extends js.Object {
+  
   def getAssertion(): js.Promise[WebAuthnAssertion] = js.native
   def getAssertion(assertionChallenge: Null, options: AssertionOptions): js.Promise[WebAuthnAssertion] = js.native
   def getAssertion(assertionChallenge: ArrayBuffer): js.Promise[WebAuthnAssertion] = js.native
@@ -30,6 +31,7 @@ trait WebAuthentication extends js.Object {
   def getAssertion(assertionChallenge: Uint8Array, options: AssertionOptions): js.Promise[WebAuthnAssertion] = js.native
   def getAssertion(assertionChallenge: Uint8ClampedArray): js.Promise[WebAuthnAssertion] = js.native
   def getAssertion(assertionChallenge: Uint8ClampedArray, options: AssertionOptions): js.Promise[WebAuthnAssertion] = js.native
+  
   def makeCredential(accountInformation: Account, cryptoParameters: js.Array[ScopedCredentialParameters]): js.Promise[ScopedCredentialInfo] = js.native
   def makeCredential(
     accountInformation: Account,
@@ -287,4 +289,3 @@ trait WebAuthentication extends js.Object {
     options: ScopedCredentialOptions
   ): js.Promise[ScopedCredentialInfo] = js.native
 }
-

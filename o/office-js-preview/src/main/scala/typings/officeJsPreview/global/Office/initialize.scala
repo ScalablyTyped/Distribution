@@ -2,11 +2,12 @@ package typings.officeJsPreview.global.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Office.initialize")
 @js.native
 object initialize extends js.Object {
+  
   /**
     * Occurs when the runtime environment is loaded and the add-in is ready to start interacting with the application and hosted document.
     *
@@ -45,4 +46,3 @@ object initialize extends js.Object {
     */
   def apply(reason: typings.officeJsPreview.Office.InitializationReason): Unit = js.native
 }
-

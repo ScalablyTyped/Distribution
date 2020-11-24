@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.WebGLContextEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("WebGLContextEvent")
 @js.native
@@ -14,7 +14,6 @@ class WebGLContextEvent protected ()
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, eventInit: WebGLContextEventInit) = this()
 }
-
 @JSGlobal("WebGLContextEvent")
 @js.native
 object WebGLContextEvent
@@ -24,4 +23,3 @@ object WebGLContextEvent
       /* eventInit */ WebGLContextEventInit, 
       typings.std.WebGLContextEvent
     ]
-

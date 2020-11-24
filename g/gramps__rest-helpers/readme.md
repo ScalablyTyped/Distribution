@@ -10,9 +10,9 @@ REST helper classes for GrAMPS GraphQL data sources.
 | ------------------ | :-------------: |
 | Full name          | @gramps/rest-helpers |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 15 |
 | # dependents       | 2 |
-| # downloads        | 8384 |
+| # downloads        | 8164 |
 | # stars            | 0 |
 
 ## Links

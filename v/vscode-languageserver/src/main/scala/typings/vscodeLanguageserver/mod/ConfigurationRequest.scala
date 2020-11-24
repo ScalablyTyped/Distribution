@@ -5,11 +5,12 @@ import typings.vscodeLanguageserverProtocol.protocolConfigurationMod.Configurati
 import typings.vscodeLanguageserverProtocol.protocolMod.PartialResultParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver", "ConfigurationRequest")
 @js.native
 object ConfigurationRequest extends js.Object {
+  
   val `type`: ProtocolRequestType[
     ConfigurationParams with PartialResultParams, 
     js.Array[js.Any], 
@@ -18,4 +19,3 @@ object ConfigurationRequest extends js.Object {
     Unit
   ] = js.native
 }
-

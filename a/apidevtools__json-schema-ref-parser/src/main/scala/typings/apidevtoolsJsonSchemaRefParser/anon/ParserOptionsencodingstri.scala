@@ -5,17 +5,19 @@ import typings.std.Error
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @apidevtools/json-schema-ref-parser.@apidevtools/json-schema-ref-parser.ParserOptions & {  encoding :string | undefined} */
 @js.native
 trait ParserOptionsencodingstri extends js.Object {
+  
   /**
     * All of the built-in parsers allow empty files by default. The JSON and YAML parsers will parse empty files as `undefined`. The text parser will parse empty files as an empty string. The binary parser will parse empty files as an empty byte array.
     *
     * You can set `allowEmpty: false` on any parser, which will cause an error to be thrown if a file empty.
     */
   var allowEmpty: js.UndefOr[Boolean] = js.native
+  
   /**
     * Determines which parsers will be used for which files.
     *
@@ -24,13 +26,16 @@ trait ParserOptionsencodingstri extends js.Object {
   var canParse: js.UndefOr[
     Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
   ] = js.native
+  
   var encoding: js.UndefOr[String] = js.native
+  
   /**
     * Parsers run in a specific order, relative to other parsers. For example, a parser with `order: 5` will run before a parser with `order: 10`. If a parser is unable to successfully parse a file, then the next parser is tried, until one succeeds or they all fail.
     *
     * You can change the order in which parsers run, which is useful if you know that most of your referenced files will be a certain type, or if you add your own custom parser that you want to run first.
     */
   var order: js.UndefOr[Double] = js.native
+  
   /**
     * This is where the real work of a parser happens. The `parse` method accepts the same file info object as the `canParse` function, but rather than returning a boolean value, the `parse` method should return a JavaScript representation of the file contents.  For our CSV parser, that is a two-dimensional array of lines and values.  For your parser, it might be an object, a string, a custom class, or anything else.
     *
@@ -39,4 +44,3 @@ trait ParserOptionsencodingstri extends js.Object {
   def parse(file: FileInfo): js.Any | js.Promise[_] = js.native
   def parse(file: FileInfo, callback: js.Function2[/* error */ Error | Null, /* data */ String | Null, _]): js.Any | js.Promise[_] = js.native
 }
-

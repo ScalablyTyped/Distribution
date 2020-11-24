@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.ui.XSidebarProvider
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * extends the {@link XController} interface
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XController2 extends XController {
+  
   /**
     * denotes the "root window" of the controller.
     *
@@ -23,6 +24,7 @@ trait XController2 extends XController {
     * @see XFrame
     */
   var ComponentWindow: XWindow = js.native
+  
   /**
     * denotes the arguments used to create the instance.
     *
@@ -30,11 +32,13 @@ trait XController2 extends XController {
     * parameterizing the to-be-created instance. Those arguments used at creation time can subsequently be retrieved using the `CreationArguments` member.
     */
   var CreationArguments: SafeArray[PropertyValue] = js.native
+  
   /**
     * get the sidebar if exists
     * @since LibreOffice 5.1
     */
   val Sidebar: XSidebarProvider = js.native
+  
   /**
     * specifies the view name of the controller.
     *
@@ -42,14 +46,15 @@ trait XController2 extends XController {
     * XModel2.createViewController()}if it's passed there, a view/controller pair of the same type will be created.
     */
   var ViewControllerName: String = js.native
+  
   /**
     * get the sidebar if exists
     * @since LibreOffice 5.1
     */
   def getSidebar(): XSidebarProvider = js.native
 }
-
 object XController2 {
+  
   @scala.inline
   def apply(
     ComponentWindow: XWindow,
@@ -77,28 +82,35 @@ object XController2 {
     val __obj = js.Dynamic.literal(ComponentWindow = ComponentWindow.asInstanceOf[js.Any], CreationArguments = CreationArguments.asInstanceOf[js.Any], Frame = Frame.asInstanceOf[js.Any], Model = Model.asInstanceOf[js.Any], Sidebar = Sidebar.asInstanceOf[js.Any], ViewControllerName = ViewControllerName.asInstanceOf[js.Any], ViewData = ViewData.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attachFrame = js.Any.fromFunction1(attachFrame), attachModel = js.Any.fromFunction1(attachModel), dispose = js.Any.fromFunction0(dispose), getFrame = js.Any.fromFunction0(getFrame), getModel = js.Any.fromFunction0(getModel), getSidebar = js.Any.fromFunction0(getSidebar), getViewData = js.Any.fromFunction0(getViewData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), restoreViewData = js.Any.fromFunction1(restoreViewData), suspend = js.Any.fromFunction1(suspend))
     __obj.asInstanceOf[XController2]
   }
+  
   @scala.inline
   implicit class XController2Ops[Self <: XController2] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setComponentWindow(value: XWindow): Self = this.set("ComponentWindow", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCreationArguments(value: SafeArray[PropertyValue]): Self = this.set("CreationArguments", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSidebar(value: XSidebarProvider): Self = this.set("Sidebar", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setViewControllerName(value: String): Self = this.set("ViewControllerName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetSidebar(value: () => XSidebarProvider): Self = this.set("getSidebar", js.Any.fromFunction0(value))
   }
-  
 }
-

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.bucks.Bucks.BucksStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Bucks")
 @js.native
@@ -13,8 +13,6 @@ import scala.scalajs.js.annotation._
   */
 class ^ ()
   extends typings.bucks.Bucks.Bucks
-
 @JSGlobal("Bucks")
 @js.native
 object ^ extends TopLevel[BucksStatic]
-

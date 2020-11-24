@@ -2,30 +2,44 @@ package typings.astTypes.namedTypesMod.namedTypes
 
 import org.scalablytyped.runtime.TopLevel
 import typings.astTypes.kindsMod.CallExpressionKind
+import typings.astTypes.kindsMod.ChainElementKind
+import typings.astTypes.kindsMod.CommentKind
 import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.NodeKind
 import typings.astTypes.kindsMod.PrintableKind
+import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.SpreadElementKind
 import typings.astTypes.kindsMod.TypeParameterInstantiationKind
 import typings.astTypes.typesMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/namedTypes.namedTypes.Expression, 'type'> ]: ast-types.ast-types/gen/namedTypes.namedTypes.Expression[P]} */ trait CallExpression
+/* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Expression, 'type'> */
+/* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.ChainElement, 'type'> */
+@js.native
+trait CallExpression
   extends ASTNode
      with CallExpressionKind
+     with ChainElementKind
      with ExpressionKind
      with NodeKind
      with PrintableKind {
-  var arguments: js.Array[ExpressionKind | SpreadElementKind]
-  var callee: ExpressionKind
-  var `type`: typings.astTypes.astTypesStrings.CallExpression
-  var typeArguments: js.UndefOr[Null | TypeParameterInstantiationKind] = js.undefined
+  
+  var arguments: js.Array[ExpressionKind | SpreadElementKind] = js.native
+  
+  var callee: ExpressionKind = js.native
+  
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  
+  var optional: js.UndefOr[Boolean] = js.native
+  
+  var `type`: typings.astTypes.astTypesStrings.CallExpression = js.native
+  
+  var typeArguments: js.UndefOr[Null | TypeParameterInstantiationKind] = js.native
 }
-
 @JSImport("ast-types/gen/namedTypes", "namedTypes.CallExpression")
 @js.native
 object CallExpression extends TopLevel[Type[CallExpression]]
-

@@ -5,7 +5,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.png
 import typings.devtoolsProtocol.devtoolsProtocolStrings.webp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.webp
@@ -13,13 +13,14 @@ import scala.scalajs.js.annotation._
   - typings.devtoolsProtocol.devtoolsProtocolStrings.png
 */
 trait GetEncodedResponseRequestEncoding extends js.Object
-
 object GetEncodedResponseRequestEncoding {
+  
   @scala.inline
   def Jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+  
   @scala.inline
   def Png: png = "png".asInstanceOf[png]
+  
   @scala.inline
   def Webp: webp = "webp".asInstanceOf[webp]
 }
-

@@ -5,11 +5,12 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   class Hammer protected () extends HammerManager {
     def this(element: HTMLElement) = this()
@@ -17,6 +18,8 @@ object global extends js.Object {
     def this(element: HTMLElement, options: HammerOptions) = this()
     def this(element: SVGElement, options: HammerOptions) = this()
   }
+  @js.native
+  object Hammer extends TopLevel[HammerStatic]
   
   @js.native
   class HammerInput protected ()
@@ -59,9 +62,4 @@ object global extends js.Object {
     extends typings.hammerjs.HammerInput {
     def this(manager: HammerManager, callback: js.Function) = this()
   }
-  
-  @js.native
-  object Hammer extends TopLevel[HammerStatic]
-  
 }
-

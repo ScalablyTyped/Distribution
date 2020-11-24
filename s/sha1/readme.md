@@ -10,9 +10,9 @@ native js function for hashing messages with SHA-1
 | ------------------ | :-------------: |
 | Full name          | sha1 |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 488 |
-| # downloads        | 5015034 |
+| # releases         | 0 |
+| # dependents       | 553 |
+| # downloads        | 5929482 |
 | # stars            | 17 |
 
 ## Links

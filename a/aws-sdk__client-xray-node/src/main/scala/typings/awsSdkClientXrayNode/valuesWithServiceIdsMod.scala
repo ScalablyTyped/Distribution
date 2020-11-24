@@ -1,14 +1,13 @@
 package typings.awsSdkClientXrayNode
 
-import typings.awsSdkTypes.protocolMod.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-xray-node/model/_ValuesWithServiceIds", JSImport.Namespace)
 @js.native
 object valuesWithServiceIdsMod extends js.Object {
+  
   @JSName("_ValuesWithServiceIds")
-  val ValuesWithServiceIds: List = js.native
+  val ValuesWithServiceIds: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
 }
-

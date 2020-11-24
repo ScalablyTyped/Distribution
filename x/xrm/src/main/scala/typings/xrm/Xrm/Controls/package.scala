@@ -2,13 +2,15 @@ package typings.xrm.Xrm
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object Controls {
+  
   /**
     * Control type for formContext.ui.quickForms.getControlType().
     */
   type ControlQuickFormType = typings.xrm.xrmStrings.quickform
+  
   /**
     * Control types for {@link Controls.Control.getControlType Controls.Control.getControlType()}.
     * @see {@link XrmEnum.StandardControlType}
@@ -27,5 +29,6 @@ package object Controls {
     - typings.xrm.Xrm.Controls.ControlQuickFormType
   */
   type ControlType = typings.xrm.Xrm.Controls._ControlType | typings.xrm.Xrm.Controls.ControlQuickFormType
+  
   type Grid = typings.xrm.Xrm.Controls.Grid_
 }

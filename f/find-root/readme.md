@@ -10,9 +10,9 @@ find the closest package.json
 | ------------------ | :-------------: |
 | Full name          | find-root |
 | Keywords           | fs, get, find, closest, package, module, base, root |
-| # releases         | 1 |
-| # dependents       | 332 |
-| # downloads        | 97702415 |
+| # releases         | 0 |
+| # dependents       | 358 |
+| # downloads        | 155133965 |
 | # stars            | 2 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.angularEs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Decorated target
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 - js.Function because Already inherited
 - typings.angularEs.mod.MethodDecorator because var conflicts: length. Inlined  */ @js.native
 trait ngESDecorator extends ClassDecorator {
+  
   def apply(
     target: js.Function,
     ngName: js.UndefOr[scala.Nothing],
@@ -149,4 +150,3 @@ trait ngESDecorator extends ClassDecorator {
     injectAsProperty: js.Array[String]
   ): Unit = js.native
 }
-

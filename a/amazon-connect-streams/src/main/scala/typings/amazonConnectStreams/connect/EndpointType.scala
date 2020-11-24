@@ -2,15 +2,15 @@ package typings.amazonConnectStreams.connect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EndpointType extends js.Object
-
 /** This enumeration lists the different types of endpoints. */
 @JSGlobal("connect.EndpointType")
 @js.native
 object EndpointType extends js.Object {
+  
   /** An endpoint pointing to an agent in the same instance. */
   @js.native
   sealed trait AGENT extends EndpointType
@@ -22,6 +22,4 @@ object EndpointType extends js.Object {
   /** An endpoint pointing to a queue call flow in the same instance. */
   @js.native
   sealed trait QUEUE extends EndpointType
-  
 }
-

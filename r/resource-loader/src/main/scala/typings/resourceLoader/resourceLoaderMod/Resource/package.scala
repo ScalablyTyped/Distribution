@@ -2,9 +2,10 @@ package typings.resourceLoader.resourceLoaderMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object Resource {
+  
   /**
     * When the resource finishes loading.
     *
@@ -13,6 +14,7 @@ package object Resource {
     * @param {Resource} resource - The resource that the event happened on.
     */
   type OnCompleteSignal = js.Function1[/* resource */ typings.resourceLoader.resourceLoaderMod.Resource, scala.Unit]
+  
   /**
     * When the resource reports loading progress.
     *
@@ -26,6 +28,7 @@ package object Resource {
     /* percentage */ scala.Double, 
     scala.Unit
   ]
+  
   /**
     * When the resource starts to load.
     *

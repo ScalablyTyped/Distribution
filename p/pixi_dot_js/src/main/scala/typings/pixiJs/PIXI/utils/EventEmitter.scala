@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI.utils
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A high performance event emitter
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait EventEmitter extends js.Object {
+  
   /**
     * Alias method for `on`
     */
@@ -23,6 +24,7 @@ trait EventEmitter extends js.Object {
   def addListener(event: String, fn: js.Function, context: js.Any): this.type = js.native
   def addListener(event: js.Symbol, fn: js.Function): this.type = js.native
   def addListener(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
+  
   /**
     * Calls each of the listeners registered for a given event.
     *
@@ -32,12 +34,14 @@ trait EventEmitter extends js.Object {
     */
   def emit(event: String, args: js.Any*): Boolean = js.native
   def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
+  
   /**
     * Return an array listing the events for which the emitter has registered listeners.
     *
     * @returns {(string | symbol)[]}
     */
   def eventNames(): js.Array[String | js.Symbol] = js.native
+  
   /**
     * Return the number of listeners listening to a given event.
     *
@@ -46,6 +50,7 @@ trait EventEmitter extends js.Object {
     */
   def listenerCount(event: String): Double = js.native
   def listenerCount(event: js.Symbol): Double = js.native
+  
   /**
     * Return the listeners registered for a given event.
     *
@@ -55,6 +60,7 @@ trait EventEmitter extends js.Object {
   //tslint:disable-next-line:ban-types forbidden-types
   def listeners(event: String): js.Array[js.Function] = js.native
   def listeners(event: js.Symbol): js.Array[js.Function] = js.native
+  
   /**
     * Alias method for `removeListener`
     */
@@ -75,6 +81,7 @@ trait EventEmitter extends js.Object {
   def off(event: js.Symbol, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
   def off(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
   def off(event: js.Symbol, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+  
   /**
     * Add a listener for a given event.
     *
@@ -88,6 +95,7 @@ trait EventEmitter extends js.Object {
   def on(event: String, fn: js.Function, context: js.Any): this.type = js.native
   def on(event: js.Symbol, fn: js.Function): this.type = js.native
   def on(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
+  
   /**
     * Add a one-time listener for a given event.
     *
@@ -101,6 +109,7 @@ trait EventEmitter extends js.Object {
   def once(event: String, fn: js.Function, context: js.Any): this.type = js.native
   def once(event: js.Symbol, fn: js.Function): this.type = js.native
   def once(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
+  
   /**
     * Remove all listeners, or those of the specified event.
     *
@@ -110,6 +119,7 @@ trait EventEmitter extends js.Object {
   def removeAllListeners(): this.type = js.native
   def removeAllListeners(event: String): this.type = js.native
   def removeAllListeners(event: js.Symbol): this.type = js.native
+  
   /**
     * Remove the listeners of a given event.
     *
@@ -137,4 +147,3 @@ trait EventEmitter extends js.Object {
   def removeListener(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
   def removeListener(event: js.Symbol, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.angularCore.mod
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InjectDecorator
   extends Instantiable1[/* token */ js.Any, Inject_] {
+  
   /**
     * Parameter decorator on a dependency parameter of a class constructor
     * that specifies a custom provider of the dependency.
@@ -27,4 +28,3 @@ trait InjectDecorator
     */
   def apply(token: js.Any): js.Any = js.native
 }
-

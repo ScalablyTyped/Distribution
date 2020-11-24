@@ -11,8 +11,8 @@ use node builtins in browser with rollup
 | Full name          | rollup-plugin-node-builtins |
 | Keywords           | rollup-plugin |
 | # releases         | 1 |
-| # dependents       | 134 |
-| # downloads        | 1292047 |
+| # dependents       | 160 |
+| # downloads        | 1653779 |
 | # stars            | 1 |
 
 ## Links

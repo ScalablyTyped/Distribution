@@ -10,9 +10,9 @@ Object.prototype.hasOwnProperty.call shortcut
 | ------------------ | :-------------: |
 | Full name          | has |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 233 |
-| # downloads        | 515896481 |
+| # releases         | 0 |
+| # dependents       | 259 |
+| # downloads        | 607904660 |
 | # stars            | 11 |
 
 ## Links

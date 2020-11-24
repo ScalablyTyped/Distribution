@@ -2,7 +2,7 @@ package typings.babylonjs.audioIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Audio/index", "WeightedSound")
 @js.native
@@ -16,4 +16,3 @@ class WeightedSound protected ()
     */
   def this(loop: Boolean, sounds: js.Array[typings.babylonjs.soundMod.Sound], weights: js.Array[Double]) = this()
 }
-

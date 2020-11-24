@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Resource$Stats")
 @js.native
 class ResourceStats protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var index: ResourceStatsIndex = js.native
+  
   /**
     * cloudsearch.stats.getIndex
     * @desc Gets indexed item statistics aggreggated across all data sources.
@@ -52,5 +53,6 @@ class ResourceStats protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetCustomerIndexStatsResponse]
   ): Unit = js.native
+  
+  var index: ResourceStatsIndex = js.native
 }
-

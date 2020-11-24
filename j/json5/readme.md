@@ -9,9 +9,9 @@ JSON for humans.
 | ------------------ | :-------------: |
 | Full name          | json5 |
 | Keywords           | json, json5, es5, es2015, ecmascript |
-| # releases         | 7 |
-| # dependents       | 1046 |
-| # downloads        | 770623397 |
+| # releases         | 5 |
+| # dependents       | 1319 |
+| # downloads        | 1235542941 |
 | # stars            | 26 |
 
 ## Links

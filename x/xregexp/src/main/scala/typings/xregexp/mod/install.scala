@@ -2,11 +2,12 @@ package typings.xregexp.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xregexp", "install")
 @js.native
 object install extends js.Object {
+  
   /**
     * Installs optional features according to the specified options. Can be undone using
     * `XRegExp.uninstall`.
@@ -28,4 +29,3 @@ object install extends js.Object {
     */
   def apply(options: FeatureOptions): Unit = js.native
 }
-

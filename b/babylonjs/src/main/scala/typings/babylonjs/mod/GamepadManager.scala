@@ -2,7 +2,7 @@ package typings.babylonjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "GamepadManager")
 @js.native
@@ -14,4 +14,3 @@ class GamepadManager ()
   extends typings.babylonjs.legacyMod.GamepadManager {
   def this(_scene: typings.babylonjs.sceneMod.Scene) = this()
 }
-

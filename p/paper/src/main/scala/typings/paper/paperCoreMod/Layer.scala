@@ -2,7 +2,7 @@ package typings.paper.paperCoreMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paper/dist/paper-core", "Layer")
 @js.native
@@ -18,4 +18,3 @@ class Layer ()
   extends typings.paper.paper.Layer {
   def this(children: js.Array[typings.paper.paper.Item]) = this()
 }
-

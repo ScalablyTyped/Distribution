@@ -2,10 +2,11 @@ package typings.bootstrapSlider
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SliderPlugin[TJQuery] extends js.Object {
+  
   /**
     * Creates a slider from the current element.
     */
@@ -13,4 +14,3 @@ trait SliderPlugin[TJQuery] extends js.Object {
   def apply(methodName: String, args: js.Any*): TJQuery = js.native
   def apply(options: SliderOptions): TJQuery = js.native
 }
-

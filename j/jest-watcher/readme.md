@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-watcher
 
-Typings are for version 26.2.0
+Typings are for version 26.6.2
 
 ## Library description:
 Delightful JavaScript Testing.
@@ -10,9 +10,9 @@ Delightful JavaScript Testing.
 | ------------------ | :-------------: |
 | Full name          | jest-watcher |
 | Keywords           | - |
-| # releases         | 28 |
-| # dependents       | 12 |
-| # downloads        | 179516120 |
+| # releases         | 47 |
+| # dependents       | 28 |
+| # downloads        | 317071456 |
 | # stars            | 0 |
 
 ## Links

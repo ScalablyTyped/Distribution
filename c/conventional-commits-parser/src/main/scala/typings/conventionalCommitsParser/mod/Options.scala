@@ -8,10 +8,11 @@ import typings.conventionalCommitsParser.mod.Options.Prefixes
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Options extends js.Object {
+  
   /**
     * What commentChar to use. By default it is `null`, so no comments are stripped.
     * Set to `#` if you pass the contents of `.git/COMMIT_EDITMSG` directly.
@@ -23,6 +24,7 @@ trait Options extends js.Object {
     * null
     */
   var commentChar: js.UndefOr[String | Null] = js.native
+  
   /**
     * Pattern to match other fields.
     *
@@ -30,6 +32,7 @@ trait Options extends js.Object {
     * /^-(.*?)-$/
     */
   var fieldPattern: js.UndefOr[Pattern] = js.native
+  
   /**
     * Used to define what capturing group of `headerPattern` captures what header
     * part. The order of the array should correspond to the order of
@@ -40,6 +43,7 @@ trait Options extends js.Object {
     * ['type', 'scope', 'subject']
     */
   var headerCorrespondence: js.UndefOr[Correspondence] = js.native
+  
   /**
     * Used to match header pattern.
     *
@@ -47,6 +51,7 @@ trait Options extends js.Object {
     * /^(\w*)(?:\(([\w\$\.\-\* ]*)\))?\: (.*)$/
     */
   var headerPattern: js.UndefOr[Pattern] = js.native
+  
   /**
     * The prefixes of an issue. EG: In `gh-123` `gh-` is the prefix.
     *
@@ -54,6 +59,7 @@ trait Options extends js.Object {
     * ['#']
     */
   var issuePrefixes: js.UndefOr[Prefixes] = js.native
+  
   /**
     * Used to define if `issuePrefixes` should be considered case sensitive.
     *
@@ -61,6 +67,7 @@ trait Options extends js.Object {
     * false
     */
   var issuePrefixesCaseSensitive: js.UndefOr[Boolean] = js.native
+  
   /**
     * Used to define what capturing group of `mergePattern`.
     *
@@ -70,6 +77,7 @@ trait Options extends js.Object {
     * null
     */
   var mergeCorrespondence: js.UndefOr[Correspondence] = js.native
+  
   /**
     * Pattern to match merge headers. EG: branch merge, GitHub or GitLab like pull
     * requests headers. When a merge header is parsed, the next line is used for
@@ -96,6 +104,7 @@ trait Options extends js.Object {
     * null
     */
   var mergePattern: js.UndefOr[Pattern] = js.native
+  
   /**
     * Keywords for important notes. This value is case __insensitive__. If it's a
     * `string` it will be converted to an `array` separated by a comma.
@@ -104,6 +113,7 @@ trait Options extends js.Object {
     * ['BREAKING CHANGE']
     */
   var noteKeywords: js.UndefOr[Keywords] = js.native
+  
   /**
     * Keywords to reference an issue. This value is case __insensitive__. If it's a
     * `string` it will be converted to an `array` separated by a comma.
@@ -114,6 +124,7 @@ trait Options extends js.Object {
     * ['close', 'closes', 'closed', 'fix', 'fixes', 'fixed', 'resolve', 'resolves', 'resolved']
     */
   var referenceActions: js.UndefOr[Actions] = js.native
+  
   /**
     * Used to define what capturing group of `revertPattern` captures what reverted
     * commit fields. The order of the array should correspond to the order of
@@ -147,6 +158,7 @@ trait Options extends js.Object {
     * ['header', 'hash']
     */
   var revertCorrespondence: js.UndefOr[Correspondence] = js.native
+  
   /**
     * Pattern to match what this commit reverts.
     *
@@ -154,6 +166,7 @@ trait Options extends js.Object {
     * /^Revert\s"([\s\S]*)"\s*This reverts commit (\w*)\./
     */
   var revertPattern: js.UndefOr[Pattern] = js.native
+  
   /**
     * What warn function to use. For example, `console.warn.bind(console)` or
     * `grunt.log.writeln`. By default, it's a noop. If it is `true`, it will error
@@ -162,16 +175,19 @@ trait Options extends js.Object {
     * @default
     * function () {}
     */
-  var warn: js.UndefOr[js.Function1[/* message */ js.UndefOr[js.Any], Unit | Boolean]] = js.native
+  var warn: js.UndefOr[(js.Function1[/* message */ js.UndefOr[js.Any], Unit]) | Boolean] = js.native
 }
-
 @JSImport("conventional-commits-parser", "Options")
 @js.native
 object Options extends js.Object {
+  
   type Actions = js.Array[String] | String | Null
+  
   type Correspondence = js.Array[String] | String | Null
+  
   type Keywords = js.Array[String] | String | Null
+  
   type Pattern = RegExp | String | Null
+  
   type Prefixes = js.Array[String] | String | Null
 }
-

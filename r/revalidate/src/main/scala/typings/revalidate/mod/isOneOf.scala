@@ -2,11 +2,12 @@ package typings.revalidate.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("revalidate", "isOneOf")
 @js.native
 object isOneOf extends js.Object {
+  
   def apply(): ConfiguredValidator | js.Any = js.native
   def apply(config: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
   def apply(config: js.UndefOr[scala.Nothing], value: js.Any): ConfiguredValidator | js.Any = js.native
@@ -20,4 +21,3 @@ object isOneOf extends js.Object {
   def apply(config: Config, value: js.Any): ConfiguredValidator | js.Any = js.native
   def apply(config: Config, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.parse.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("parse", "initialize")
 @js.native
 object initialize extends js.Object {
+  
   /**
     * Call this method first to set up your authentication tokens for Parse.
     * You can get your keys from the Data Browser on parse.com.
@@ -19,4 +20,3 @@ object initialize extends js.Object {
   def apply(applicationId: String, javaScriptKey: String): Unit = js.native
   def apply(applicationId: String, javaScriptKey: String, masterKey: String): Unit = js.native
 }
-

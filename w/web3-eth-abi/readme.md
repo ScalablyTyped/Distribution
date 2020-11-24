@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-eth-abi
 
-Typings are for version 1.2.11
+Typings are for version 1.3.0
 
 ## Library description:
 Web3 module encode and decode EVM in/output.
@@ -10,9 +10,9 @@ Web3 module encode and decode EVM in/output.
 | ------------------ | :-------------: |
 | Full name          | web3-eth-abi |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 113 |
-| # downloads        | 4570164 |
+| # releases         | 41 |
+| # dependents       | 154 |
+| # downloads        | 6088244 |
 | # stars            | 1 |
 
 ## Links

@@ -4,7 +4,7 @@ import typings.std.RegExp
 import typings.uirouterCore.urlInterfaceMod.UrlMatcherCompileConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "UrlMatcher")
 @js.native
@@ -28,13 +28,11 @@ class UrlMatcher protected ()
     config: UrlMatcherCompileConfig
   ) = this()
 }
-
 /* static members */
 @JSImport("@uirouter/core", "UrlMatcher")
 @js.native
 object UrlMatcher extends js.Object {
-  /** @internal */
-  var nameValidator: RegExp = js.native
+  
   /**
     * Compare two UrlMatchers
     *
@@ -45,11 +43,16 @@ object UrlMatcher extends js.Object {
     * The comparison function sorts static segments before dynamic ones.
     */
   def compare(a: typings.uirouterCore.urlMatcherMod.UrlMatcher, b: typings.uirouterCore.urlMatcherMod.UrlMatcher): Double = js.native
+  
   /** @internal */
   def encodeDashes(str: String): String = js.native
+  
+  /** @internal */
+  var nameValidator: RegExp = js.native
+  
   /** @internal Given a matcher, return an array with the matcher's path segments and path params, in order */
   def pathSegmentsAndParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Any = js.native
+  
   /** @internal Given a matcher, return an array with the matcher's query params */
   def queryParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Array[typings.uirouterCore.paramMod.Param] = js.native
 }
-

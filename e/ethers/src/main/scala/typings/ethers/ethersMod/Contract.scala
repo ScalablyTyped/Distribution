@@ -1,33 +1,33 @@
 package typings.ethers.ethersMod
 
-import typings.ethers.typesMod.MinimalProvider
-import typings.ethers.typesMod.ParamType
-import typings.ethers.typesMod.Signer
+import typings.ethersprojectAbi.mod.Interface
+import typings.ethersprojectAbstractProvider.mod.Provider
+import typings.ethersprojectContracts.anon.From
+import typings.ethersprojectContracts.mod.ContractInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ethers/dist/types/ethers", "Contract")
+@JSImport("ethers/lib/ethers", "Contract")
 @js.native
 class Contract protected ()
-  extends typings.ethers.contractsMod.Contract {
-  def this(addressOrName: String, contractInterface: String, signerOrProvider: MinimalProvider) = this()
-  def this(addressOrName: String, contractInterface: String, signerOrProvider: Signer) = this()
+  extends typings.ethersprojectContracts.mod.Contract {
+  def this(addressOrName: String, contractInterface: ContractInterface) = this()
+  def this(addressOrName: String, contractInterface: ContractInterface, signerOrProvider: Provider) = this()
   def this(
     addressOrName: String,
-    contractInterface: js.Array[String | ParamType],
-    signerOrProvider: MinimalProvider
-  ) = this()
-  def this(addressOrName: String, contractInterface: js.Array[String | ParamType], signerOrProvider: Signer) = this()
-  def this(
-    addressOrName: String,
-    contractInterface: typings.ethers.interfaceMod.Interface,
-    signerOrProvider: MinimalProvider
-  ) = this()
-  def this(
-    addressOrName: String,
-    contractInterface: typings.ethers.interfaceMod.Interface,
-    signerOrProvider: Signer
+    contractInterface: ContractInterface,
+    signerOrProvider: typings.ethersprojectAbstractSigner.mod.Signer
   ) = this()
 }
-
+/* static members */
+@JSImport("ethers/lib/ethers", "Contract")
+@js.native
+object Contract extends js.Object {
+  
+  def getContractAddress(transaction: From): String = js.native
+  
+  def getInterface(contractInterface: ContractInterface): Interface = js.native
+  
+  def isIndexed(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi.Indexed */ Boolean = js.native
+}

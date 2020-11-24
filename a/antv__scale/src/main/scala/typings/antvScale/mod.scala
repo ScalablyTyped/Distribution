@@ -6,11 +6,20 @@ import typings.antvScale.typesMod.ScaleConfig
 import typings.antvScale.typesMod.TickMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/scale/esm", JSImport.Namespace)
+@JSImport("@antv/scale", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def getScale(key: String): ScaleConstructor[default] = js.native
+  
+  def getTickMethod(key: String): TickMethod = js.native
+  
+  def registerScale(key: String, cls: ScaleConstructor[default]): Unit = js.native
+  
+  def registerTickMethod(key: String, method: TickMethod): Unit = js.native
+  
   /**
     * 分类度量
     * @class
@@ -72,9 +81,4 @@ object mod extends js.Object {
   @js.native
   class TimeCat ()
     extends typings.antvScale.timeMod.TimeCat
-  
-  def getScale(key: String): ScaleConstructor[default] = js.native
-  def getTickMethod(key: String): TickMethod = js.native
-  def registerScale(key: String, cls: ScaleConstructor[default]): Unit = js.native
 }
-

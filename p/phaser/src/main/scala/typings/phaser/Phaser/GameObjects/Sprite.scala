@@ -18,7 +18,7 @@ import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Sprite Game Object.
@@ -48,10 +48,12 @@ trait Sprite
      with Tint
      with Transform
      with Visible {
+  
   /**
     * The Animation Controller of this Sprite.
     */
   var anims: Animation = js.native
+  
   /**
     * Start playing the given animation.
     * @param key The string-based key of the animation to play.
@@ -62,6 +64,7 @@ trait Sprite
   def play(key: String, ignoreIfPlaying: js.UndefOr[scala.Nothing], startFrame: integer): this.type = js.native
   def play(key: String, ignoreIfPlaying: Boolean): this.type = js.native
   def play(key: String, ignoreIfPlaying: Boolean, startFrame: integer): this.type = js.native
+  
   /**
     * Update this Sprite's animations.
     * @param time The current timestamp.
@@ -69,4 +72,3 @@ trait Sprite
     */
   /* protected */ def preUpdate(time: Double, delta: Double): Unit = js.native
 }
-

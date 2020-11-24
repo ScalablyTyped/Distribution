@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/websecurityscanner/v1beta", "websecurityscanner_v1beta.Resource$Projects$Scanconfigs$Scanruns$Findings")
 @js.native
 class ResourceProjectsScanconfigsScanrunsFindings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * websecurityscanner.projects.scanConfigs.scanRuns.findings.get
     * @desc Gets a Finding.
@@ -44,6 +46,7 @@ class ResourceProjectsScanconfigsScanrunsFindings protected () extends js.Object
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFinding]
   ): Unit = js.native
+  
   /**
     * websecurityscanner.projects.scanConfigs.scanRuns.findings.list
     * @desc List Findings under a given ScanRun.
@@ -79,4 +82,3 @@ class ResourceProjectsScanconfigsScanrunsFindings protected () extends js.Object
     callback: BodyResponseCallback[SchemaListFindingsResponse]
   ): Unit = js.native
 }
-

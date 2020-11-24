@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "decode-uri-component"
-version := "0.2-dt-20181208Z-c0a842"
+version := "0.2-dt-20181208Z-c23e30"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

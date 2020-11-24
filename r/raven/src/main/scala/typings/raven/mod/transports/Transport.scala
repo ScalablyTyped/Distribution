@@ -6,11 +6,12 @@ import typings.raven.mod.CaptureCallback
 import typings.raven.mod.Client
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("raven", "transports.Transport")
 @js.native
 abstract class Transport () extends EventEmitter {
+  
   def send(
     client: Client,
     message: js.Any,
@@ -19,4 +20,3 @@ abstract class Transport () extends EventEmitter {
     cb: CaptureCallback
   ): Unit = js.native
 }
-

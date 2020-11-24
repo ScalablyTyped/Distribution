@@ -10,9 +10,9 @@ Simplifies communications with Workbox packages running in the service worker
 | ------------------ | :-------------: |
 | Full name          | workbox-window |
 | Keywords           | workbox, workboxjs, service worker, sw, window, message, postMessage |
-| # releases         | 22 |
-| # dependents       | 10 |
-| # downloads        | 26735046 |
+| # releases         | 32 |
+| # dependents       | 16 |
+| # downloads        | 85236070 |
 | # stars            | 0 |
 
 ## Links

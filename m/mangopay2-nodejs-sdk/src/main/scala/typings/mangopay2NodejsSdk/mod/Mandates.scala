@@ -5,60 +5,12 @@ import typings.mangopay2NodejsSdk.mod.mandate.MandateData
 import typings.mangopay2NodejsSdk.mod.transaction.TransactionData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Mandates")
 @js.native
 class Mandates () extends js.Object {
-  /**
-    * Cancel a mandate
-    * @param mandateId
-    * @param options
-    */
-  @JSName("cancel")
-  var cancel_Original: MethodOverload[String, MandateData] = js.native
-  /**
-    * Create a new Mandate
-    * @param mandate
-    * @param options
-    */
-  @JSName("create")
-  var create_Original: MethodOverload[CreateMandate, MandateData] = js.native
-  /**
-    * Get all mandates
-    * @param options
-    */
-  @JSName("getAll")
-  var getAll_Original: NoArgMethodOverload[js.Array[MandateData]] = js.native
-  /**
-    * Gets bank account mandates
-    * @param userId
-    * @param bankAccountId
-    * @param options
-    */
-  @JSName("getMandatesForBankAccount")
-  var getMandatesForBankAccount_Original: TwoArgsMethodOverload[String, String, js.Array[MandateData]] = js.native
-  /**
-    * Gets user's mandates
-    * @param userId
-    * @param options
-    */
-  @JSName("getMandatesForUser")
-  var getMandatesForUser_Original: MethodOverload[String, js.Array[MandateData]] = js.native
-  /**
-    * Gets Transactions for a Mandate
-    * @param mandateId
-    * @param options
-    */
-  @JSName("getTransactions")
-  var getTransactions_Original: MethodOverload[String, js.Array[TransactionData]] = js.native
-  /**
-    * Get mandate by ID
-    * @param mandateId
-    * @param options
-    */
-  @JSName("get")
-  var get_Original: MethodOverload[String, MandateData] = js.native
+  
   /**
     * Cancel a mandate
     * @param mandateId
@@ -94,6 +46,14 @@ class Mandates () extends js.Object {
   def cancel(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[MandateData]] = js.native
   def cancel(data: String, options: MethodOptionWithoutResponse): js.Promise[MandateData] = js.native
   /**
+    * Cancel a mandate
+    * @param mandateId
+    * @param options
+    */
+  @JSName("cancel")
+  var cancel_Original: MethodOverload[String, MandateData] = js.native
+  
+  /**
     * Create a new Mandate
     * @param mandate
     * @param options
@@ -128,6 +88,14 @@ class Mandates () extends js.Object {
   def create(data: CreateMandate, options: MethodOptionWithResponse): js.Promise[WithResponse[MandateData]] = js.native
   def create(data: CreateMandate, options: MethodOptionWithoutResponse): js.Promise[MandateData] = js.native
   /**
+    * Create a new Mandate
+    * @param mandate
+    * @param options
+    */
+  @JSName("create")
+  var create_Original: MethodOverload[CreateMandate, MandateData] = js.native
+  
+  /**
     * Get mandate by ID
     * @param mandateId
     * @param options
@@ -161,6 +129,7 @@ class Mandates () extends js.Object {
     */
   def get(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[MandateData]] = js.native
   def get(data: String, options: MethodOptionWithoutResponse): js.Promise[MandateData] = js.native
+  
   /**
     * Get all mandates
     * @param options
@@ -190,6 +159,13 @@ class Mandates () extends js.Object {
     */
   def getAll(options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[MandateData]]] = js.native
   def getAll(options: MethodOptionWithoutResponse): js.Promise[js.Array[MandateData]] = js.native
+  /**
+    * Get all mandates
+    * @param options
+    */
+  @JSName("getAll")
+  var getAll_Original: NoArgMethodOverload[js.Array[MandateData]] = js.native
+  
   /**
     * Gets bank account mandates
     * @param userId
@@ -232,6 +208,15 @@ class Mandates () extends js.Object {
   def getMandatesForBankAccount(data: String, extra: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[MandateData]]] = js.native
   def getMandatesForBankAccount(data: String, extra: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[MandateData]] = js.native
   /**
+    * Gets bank account mandates
+    * @param userId
+    * @param bankAccountId
+    * @param options
+    */
+  @JSName("getMandatesForBankAccount")
+  var getMandatesForBankAccount_Original: TwoArgsMethodOverload[String, String, js.Array[MandateData]] = js.native
+  
+  /**
     * Gets user's mandates
     * @param userId
     * @param options
@@ -266,6 +251,14 @@ class Mandates () extends js.Object {
   def getMandatesForUser(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[MandateData]]] = js.native
   def getMandatesForUser(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[MandateData]] = js.native
   /**
+    * Gets user's mandates
+    * @param userId
+    * @param options
+    */
+  @JSName("getMandatesForUser")
+  var getMandatesForUser_Original: MethodOverload[String, js.Array[MandateData]] = js.native
+  
+  /**
     * Gets Transactions for a Mandate
     * @param mandateId
     * @param options
@@ -299,5 +292,19 @@ class Mandates () extends js.Object {
     */
   def getTransactions(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[TransactionData]]] = js.native
   def getTransactions(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[TransactionData]] = js.native
+  /**
+    * Gets Transactions for a Mandate
+    * @param mandateId
+    * @param options
+    */
+  @JSName("getTransactions")
+  var getTransactions_Original: MethodOverload[String, js.Array[TransactionData]] = js.native
+  
+  /**
+    * Get mandate by ID
+    * @param mandateId
+    * @param options
+    */
+  @JSName("get")
+  var get_Original: MethodOverload[String, MandateData] = js.native
 }
-

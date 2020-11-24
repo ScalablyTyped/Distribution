@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A base class for commands that modify floating object settings.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class ChangeFloatingObjectPropertyCommandBase[T] ()
   extends typings.devexpressWeb.ChangeFloatingObjectPropertyCommandBase[T]
-

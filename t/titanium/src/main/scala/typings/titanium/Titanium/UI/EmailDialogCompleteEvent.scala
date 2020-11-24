@@ -2,13 +2,14 @@ package typings.titanium.Titanium.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fired when this email dialog has completed sending an email.
   */
 @js.native
 trait EmailDialogCompleteEvent extends EmailDialogBaseEvent {
+  
   /**
     * Error code.
     * Error code will be 0 if `success` is `true`, nonzero otherwise. If the error
@@ -16,10 +17,12 @@ trait EmailDialogCompleteEvent extends EmailDialogBaseEvent {
     * Otherwise, this value will be -1.
     */
   var code: Double = js.native
+  
   /**
     * Error message, if any returned. Will be undefined if `success` is `true`.
     */
   var error: String = js.native
+  
   /**
     * Status of the email send process.
     * The `SAVED` and `CANCELLED` constants are iOS only.
@@ -27,6 +30,7 @@ trait EmailDialogCompleteEvent extends EmailDialogBaseEvent {
     * a message.
     */
   var result: Double = js.native
+  
   /**
     * Indicates if the email was handled successfully.
     * Returns `true` if request succeeded, `false` otherwise. Note that emails being
@@ -34,33 +38,39 @@ trait EmailDialogCompleteEvent extends EmailDialogBaseEvent {
     */
   var success: Boolean = js.native
 }
-
 object EmailDialogCompleteEvent {
+  
   @scala.inline
   def apply(code: Double, error: String, result: Double, source: EmailDialog, success: Boolean): EmailDialogCompleteEvent = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailDialogCompleteEvent]
   }
+  
   @scala.inline
   implicit class EmailDialogCompleteEventOps[Self <: EmailDialogCompleteEvent] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setResult(value: Double): Self = this.set("result", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
   }
-  
 }
-

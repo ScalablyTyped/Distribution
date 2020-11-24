@@ -16,7 +16,7 @@ import typings.jsrsasign.jsrsasign.KJUR.jws.JWS.JsonWebKey
 import typings.jsrsasign.jsrsasign.RSAKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ASN.1 CertificationRequestInfo structure class
@@ -38,7 +38,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CertificationRequestInfo extends ASN1Object {
+  
   def _initialize(): Unit = js.native
+  
   /**
     * append X.509v3 extension to this object by name and parameters
     * @param name name of X.509v3 Extension object
@@ -58,6 +60,7 @@ trait CertificationRequestInfo extends ASN1Object {
   def appendExtensionByName(name: String, extParams: ArrayParam[AccessLocation | Name]): Unit = js.native
   def appendExtensionByName(name: String, extParams: BinParam): Unit = js.native
   def appendExtensionByName(name: String, extParams: UriParam): Unit = js.native
+  
   /**
     * set subject name field by parameter
     * @param x500NameParam X500Name parameter
@@ -67,6 +70,7 @@ trait CertificationRequestInfo extends ASN1Object {
     * @see KJUR.asn1.x509.X500Name
     */
   def setSubjectByParam(x500NameParam: StringParam): Unit = js.native
+  
   def setSubjectPublicKeyByGetKey(keyParam: String): Unit = js.native
   def setSubjectPublicKeyByGetKey(keyParam: E): Unit = js.native
   def setSubjectPublicKeyByGetKey(keyParam: DSA): Unit = js.native
@@ -84,4 +88,3 @@ trait CertificationRequestInfo extends ASN1Object {
     */
   def setSubjectPublicKeyByGetKey(keyParam: RSAKey): Unit = js.native
 }
-

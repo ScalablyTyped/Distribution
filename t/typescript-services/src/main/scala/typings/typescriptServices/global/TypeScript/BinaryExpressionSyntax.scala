@@ -4,7 +4,7 @@ import typings.typescriptServices.TypeScript.IExpressionSyntax
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.BinaryExpressionSyntax")
 @js.native
@@ -18,4 +18,3 @@ class BinaryExpressionSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new RigidBodyComponent.
@@ -41,77 +41,30 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RigidBodyComponent extends Component {
-  /**
-    * Controls the rate at which a body loses angular velocity over time.
-    Defaults to 0.
-    */
-  var angularDamping: Double = js.native
-  /**
-    * Scaling factor for angular movement of the body in each axis. Only
-    valid for rigid bodies of type pc.BODYTYPE_DYNAMIC. Defaults to 1 in all axes.
-    */
-  var angularFactor: Vec3 = js.native
-  /**
-    * Defines the rotational speed of the body around each world axis.
-    */
-  var angularVelocity: Vec3 = js.native
-  /**
-    * The friction value used when contacts occur between two bodies. A higher
-    value indicates more friction. Should be set in the range 0 to 1. Defaults to 0.5.
-    */
-  var friction: Double = js.native
-  /**
-    * The collision group this body belongs to. Combine the group and the mask to
-    prevent bodies colliding with each other. Defaults to 1.
-    */
-  var group: Double = js.native
-  /**
-    * Controls the rate at which a body loses linear velocity over time.
-    Defaults to 0.
-    */
-  var linearDamping: Double = js.native
-  /**
-    * Scaling factor for linear movement of the body in each axis. Only
-    valid for rigid bodies of type pc.BODYTYPE_DYNAMIC. Defaults to 1 in all axes.
-    */
-  var linearFactor: Vec3 = js.native
-  /**
-    * Defines the speed of the body in a given direction.
-    */
-  var linearVelocity: Vec3 = js.native
-  /**
-    * The collision mask sets which groups this body collides with. It is a bitfield
-    of 16 bits, the first 8 bits are reserved for engine use. Defaults to 65535.
-    */
-  var mask: Double = js.native
-  /**
-    * The mass of the body. This is only relevant for {@link pc.BODYTYPE_DYNAMIC}
-    bodies, other types have infinite mass. Defaults to 1.
-    */
-  var mass: Double = js.native
-  /**
-    * Influences the amount of energy lost when two rigid bodies collide. The
-    calculation multiplies the restitution values for both colliding bodies. A multiplied value of 0 means
-    that all energy is lost in the collision while a value of 1 means that no energy is lost. Should be
-    set in the range 0 to 1. Defaults to 0.
-    */
-  var restitution: Double = js.native
-  /**
-    * The rigid body type determines how the body is simulated. Can be:
-    
-    * {@link pc.BODYTYPE_STATIC}: infinite mass and cannot move.
-    * {@link pc.BODYTYPE_DYNAMIC}: simulated according to applied forces.
-    * {@link pc.BODYTYPE_KINEMATIC}: infinite mass and does not respond to forces but can still be moved
-    by setting their velocity or position.
-    
-    Defaults to pc.BODYTYPE_STATIC.
-    */
-  var `type`: String = js.native
+  
   /**
     * Forcibly activate the rigid body simulation. Only affects rigid bodies of
     * type pc.BODYTYPE_DYNAMIC.
     */
   def activate(): Unit = js.native
+  
+  /**
+    * Controls the rate at which a body loses angular velocity over time.
+    Defaults to 0.
+    */
+  var angularDamping: Double = js.native
+  
+  /**
+    * Scaling factor for angular movement of the body in each axis. Only
+    valid for rigid bodies of type pc.BODYTYPE_DYNAMIC. Defaults to 1 in all axes.
+    */
+  var angularFactor: Vec3 = js.native
+  
+  /**
+    * Defines the rotational speed of the body around each world axis.
+    */
+  var angularVelocity: Vec3 = js.native
+  
   /**
     * Apply an force to the body at a point. By default, the force is applied at the origin of the
     * body. However, the force can be applied at an offset this point by specifying a world space vector from
@@ -159,6 +112,7 @@ trait RigidBodyComponent extends Component {
     py: js.UndefOr[Double],
     pz: js.UndefOr[Double]
   ): Unit = js.native
+  
   /**
     * Apply an impulse (instantaneous change of velocity) to the body at a point.
     * This function has two valid signatures. You can either specify the impulse (and optional relative
@@ -198,6 +152,7 @@ trait RigidBodyComponent extends Component {
     py: js.UndefOr[Double],
     pz: js.UndefOr[Double]
   ): Unit = js.native
+  
   def applyTorque(x: Double): Unit = js.native
   def applyTorque(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def applyTorque(x: Double, y: Double): Unit = js.native
@@ -221,6 +176,7 @@ trait RigidBodyComponent extends Component {
   def applyTorque(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def applyTorque(x: Vec3, y: Double): Unit = js.native
   def applyTorque(x: Vec3, y: Double, z: Double): Unit = js.native
+  
   def applyTorqueImpulse(x: Double): Unit = js.native
   def applyTorqueImpulse(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def applyTorqueImpulse(x: Double, y: Double): Unit = js.native
@@ -245,26 +201,80 @@ trait RigidBodyComponent extends Component {
   def applyTorqueImpulse(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def applyTorqueImpulse(x: Vec3, y: Double): Unit = js.native
   def applyTorqueImpulse(x: Vec3, y: Double, z: Double): Unit = js.native
+  
+  /**
+    * The friction value used when contacts occur between two bodies. A higher
+    value indicates more friction. Should be set in the range 0 to 1. Defaults to 0.5.
+    */
+  var friction: Double = js.native
+  
+  /**
+    * The collision group this body belongs to. Combine the group and the mask to
+    prevent bodies colliding with each other. Defaults to 1.
+    */
+  var group: Double = js.native
+  
   /**
     * Returns true if the rigid body is currently actively being simulated. I.e. Not 'sleeping'.
     * @returns True if the body is active.
     */
   def isActive(): Boolean = js.native
+  
   /**
     * Returns true if the rigid body is of type {@link pc.BODYTYPE_KINEMATIC}.
     * @returns True if kinematic.
     */
   def isKinematic(): Boolean = js.native
+  
   /**
     * Returns true if the rigid body is of type {@link pc.BODYTYPE_STATIC}.
     * @returns True if static.
     */
   def isStatic(): Boolean = js.native
+  
   /**
     * Returns true if the rigid body is of type {@link pc.BODYTYPE_STATIC} or {@link pc.BODYTYPE_KINEMATIC}.
     * @returns True if static or kinematic.
     */
   def isStaticOrKinematic(): Boolean = js.native
+  
+  /**
+    * Controls the rate at which a body loses linear velocity over time.
+    Defaults to 0.
+    */
+  var linearDamping: Double = js.native
+  
+  /**
+    * Scaling factor for linear movement of the body in each axis. Only
+    valid for rigid bodies of type pc.BODYTYPE_DYNAMIC. Defaults to 1 in all axes.
+    */
+  var linearFactor: Vec3 = js.native
+  
+  /**
+    * Defines the speed of the body in a given direction.
+    */
+  var linearVelocity: Vec3 = js.native
+  
+  /**
+    * The collision mask sets which groups this body collides with. It is a bitfield
+    of 16 bits, the first 8 bits are reserved for engine use. Defaults to 65535.
+    */
+  var mask: Double = js.native
+  
+  /**
+    * The mass of the body. This is only relevant for {@link pc.BODYTYPE_DYNAMIC}
+    bodies, other types have infinite mass. Defaults to 1.
+    */
+  var mass: Double = js.native
+  
+  /**
+    * Influences the amount of energy lost when two rigid bodies collide. The
+    calculation multiplies the restitution values for both colliding bodies. A multiplied value of 0 means
+    that all energy is lost in the collision while a value of 1 means that no energy is lost. Should be
+    set in the range 0 to 1. Defaults to 0.
+    */
+  var restitution: Double = js.native
+  
   /**
     * Teleport an entity to a new world-space position, optionally setting orientation. This function
     * should only be called for rigid bodies that are dynamic. This function has three valid signatures.
@@ -300,5 +310,16 @@ trait RigidBodyComponent extends Component {
     ry: js.UndefOr[Double],
     rz: js.UndefOr[Double]
   ): Unit = js.native
+  
+  /**
+    * The rigid body type determines how the body is simulated. Can be:
+    
+    * {@link pc.BODYTYPE_STATIC}: infinite mass and cannot move.
+    * {@link pc.BODYTYPE_DYNAMIC}: simulated according to applied forces.
+    * {@link pc.BODYTYPE_KINEMATIC}: infinite mass and does not respond to forces but can still be moved
+    by setting their velocity or position.
+    
+    Defaults to pc.BODYTYPE_STATIC.
+    */
+  var `type`: String = js.native
 }
-

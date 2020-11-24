@@ -2,9 +2,25 @@ package typings.tress
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tressStrings {
+  
+  @scala.inline
+  def active: active = "active".asInstanceOf[active]
+  
+  @scala.inline
+  def failed: failed = "failed".asInstanceOf[failed]
+  
+  @scala.inline
+  def finished: finished = "finished".asInstanceOf[finished]
+  
+  @scala.inline
+  def missing: missing = "missing".asInstanceOf[missing]
+  
+  @scala.inline
+  def waiting: waiting = "waiting".asInstanceOf[waiting]
+  
   @js.native
   sealed trait active extends js.Object
   
@@ -19,16 +35,4 @@ object tressStrings {
   
   @js.native
   sealed trait waiting extends js.Object
-  
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
-  @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
-  @scala.inline
-  def finished: finished = "finished".asInstanceOf[finished]
-  @scala.inline
-  def missing: missing = "missing".asInstanceOf[missing]
-  @scala.inline
-  def waiting: waiting = "waiting".asInstanceOf[waiting]
 }
-

@@ -2,7 +2,7 @@ package typings.officeJsPreview.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods to get and set the all-day event status of a meeting in an Outlook add-in.
@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IsAllDayEvent extends js.Object {
+  
   /**
     * Gets the boolean value indicating whether the event is all day or not.
     *
@@ -54,6 +55,7 @@ trait IsAllDayEvent extends js.Object {
     * @beta
     */
   def getAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[Boolean], Unit]): Unit = js.native
+  
   /**
     * Sets the all-day event status of an appointment.
     *
@@ -76,7 +78,6 @@ trait IsAllDayEvent extends js.Object {
     * @beta
     */
   def setAsync(isAllDayEvent: Boolean): Unit = js.native
-  def setAsync(isAllDayEvent: Boolean, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def setAsync(
     isAllDayEvent: Boolean,
     options: js.UndefOr[scala.Nothing],
@@ -89,4 +90,3 @@ trait IsAllDayEvent extends js.Object {
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
 }
-

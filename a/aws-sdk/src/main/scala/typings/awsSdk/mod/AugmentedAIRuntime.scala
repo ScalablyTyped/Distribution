@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.augmentedairuntimeMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "AugmentedAIRuntime")
 @js.native
@@ -14,4 +14,3 @@ class AugmentedAIRuntime ()
   extends typings.awsSdk.allMod.AugmentedAIRuntime {
   def this(options: ClientConfiguration) = this()
 }
-

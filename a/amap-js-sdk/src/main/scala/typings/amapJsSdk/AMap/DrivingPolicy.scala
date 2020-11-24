@@ -2,14 +2,14 @@ package typings.amapJsSdk.AMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DrivingPolicy extends js.Object
-
 @JSGlobal("AMap.DrivingPolicy")
 @js.native
 object DrivingPolicy extends js.Object {
+  
   @js.native
   sealed trait LEAST_DISTANCE extends DrivingPolicy
   
@@ -21,6 +21,4 @@ object DrivingPolicy extends js.Object {
   
   @js.native
   sealed trait REAL_TRAFFIC extends DrivingPolicy
-  
 }
-

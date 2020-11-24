@@ -2,7 +2,7 @@ package typings.vegaTypings.sceneMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.vegaTypings.vegaTypingsStrings.top
@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation._
   - typings.vegaTypings.vegaTypingsStrings.bottom
 */
 trait SceneTextBaseline extends js.Object
-
 object SceneTextBaseline {
+  
   @scala.inline
   def bottom: typings.vegaTypings.vegaTypingsStrings.bottom = "bottom".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.bottom]
+  
   @scala.inline
   def middle: typings.vegaTypings.vegaTypingsStrings.middle = "middle".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.middle]
+  
   @scala.inline
   def top: typings.vegaTypings.vegaTypingsStrings.top = "top".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.top]
 }
-

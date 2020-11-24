@@ -1,7 +1,6 @@
 package typings.xmlcreate
 
 import typings.xmlcreate.xmlAttributeMod.IXmlAttributeOptions
-import typings.xmlcreate.xmlAttributeMod.default
 import typings.xmlcreate.xmlAttributeTextMod.IXmlAttributeTextOptions
 import typings.xmlcreate.xmlCdataMod.IXmlCdataOptions
 import typings.xmlcreate.xmlCharDataMod.IXmlCharDataOptions
@@ -9,6 +8,7 @@ import typings.xmlcreate.xmlCharRefMod.IXmlCharRefOptions
 import typings.xmlcreate.xmlCommentMod.IXmlCommentOptions
 import typings.xmlcreate.xmlDeclMod.IXmlDeclOptions
 import typings.xmlcreate.xmlDocumentMod.IXmlDocumentOptions
+import typings.xmlcreate.xmlDocumentMod.default
 import typings.xmlcreate.xmlDtdAttlistMod.IXmlDtdAttlistOptions
 import typings.xmlcreate.xmlDtdElementMod.IXmlDtdElementOptions
 import typings.xmlcreate.xmlDtdEntityMod.IXmlDtdEntityOptions
@@ -20,13 +20,18 @@ import typings.xmlcreate.xmlEntityRefMod.IXmlEntityRefOptions
 import typings.xmlcreate.xmlProcInstMod.IXmlProcInstOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmlcreate", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def document(): default = js.native
+  def document(options: IXmlDocumentOptions): default = js.native
+  
   @js.native
-  class XmlAttribute[Parent] protected () extends default[Parent] {
+  class XmlAttribute[Parent] protected ()
+    extends typings.xmlcreate.xmlAttributeMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlAttributeOptions) = this()
   }
   
@@ -67,8 +72,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  class XmlDocument protected ()
-    extends typings.xmlcreate.xmlDocumentMod.default {
+  class XmlDocument protected () extends default {
     def this(options: IXmlDocumentOptions) = this()
   }
   
@@ -125,8 +129,4 @@ object mod extends js.Object {
     extends typings.xmlcreate.xmlProcInstMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlProcInstOptions) = this()
   }
-  
-  def document(): typings.xmlcreate.xmlDocumentMod.default = js.native
-  def document(options: IXmlDocumentOptions): typings.xmlcreate.xmlDocumentMod.default = js.native
 }
-

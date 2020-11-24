@@ -2,7 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.document
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * indicates support for executing scripts contained in a, possibly foreign, document.
@@ -19,33 +19,37 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XScriptInvocationContext extends js.Object {
+  
   /**
     * denotes the document which contains the scripts which are to be invoked from the component implementing the {@link XScriptInvocationContext}
     * interface.
     */
   var ScriptContainer: XEmbeddedScripts = js.native
 }
-
 object XScriptInvocationContext {
+  
   @scala.inline
   def apply(ScriptContainer: XEmbeddedScripts): XScriptInvocationContext = {
     val __obj = js.Dynamic.literal(ScriptContainer = ScriptContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[XScriptInvocationContext]
   }
+  
   @scala.inline
   implicit class XScriptInvocationContextOps[Self <: XScriptInvocationContext] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setScriptContainer(value: XEmbeddedScripts): Self = this.set("ScriptContainer", value.asInstanceOf[js.Any])
   }
-  
 }
-

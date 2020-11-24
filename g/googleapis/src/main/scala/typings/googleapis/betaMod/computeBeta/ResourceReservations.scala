@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Reservations")
 @js.native
 class ResourceReservations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.reservations.aggregatedList
     * @desc Retrieves an aggregated list of reservations.
@@ -48,6 +48,9 @@ class ResourceReservations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReservationAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.reservations.delete
     * @desc Deletes the specified reservation.
@@ -79,6 +82,7 @@ class ResourceReservations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.reservations.get
     * @desc Retrieves all information of the specified reservation.
@@ -109,6 +113,7 @@ class ResourceReservations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReservation]
   ): Unit = js.native
+  
   /**
     * compute.reservations.getIamPolicy
     * @desc Gets the access control policy for a resource. May be empty if no
@@ -140,6 +145,7 @@ class ResourceReservations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.reservations.insert
     * @desc Creates a new reservation.
@@ -171,6 +177,7 @@ class ResourceReservations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.reservations.list
     * @desc A list all the reservations that have been configured for the
@@ -205,6 +212,7 @@ class ResourceReservations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReservationList]
   ): Unit = js.native
+  
   /**
     * compute.reservations.resize
     * @desc Resizes the reservation (applicable to standalone reservations
@@ -238,6 +246,7 @@ class ResourceReservations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.reservations.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -270,6 +279,7 @@ class ResourceReservations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.reservations.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -305,4 +315,3 @@ class ResourceReservations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

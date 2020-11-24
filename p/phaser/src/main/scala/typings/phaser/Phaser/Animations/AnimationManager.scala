@@ -13,7 +13,7 @@ import typings.phaser.integer
 import typings.phaser.phaserBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Animation Manager.
@@ -26,44 +26,26 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AnimationManager extends EventEmitter {
-  /**
-    * The Animations registered in the Animation Manager.
-    * 
-    * This map should be modified with the {@link #add} and {@link #create} methods of the Animation Manager.
-    */
-  var anims: Map[String, Animation] = js.native
-  /**
-    * A reference to the Phaser.Game instance.
-    */
-  var game: Game = js.native
-  /**
-    * The global time scale of the Animation Manager.
-    * 
-    * This scales the time delta between two frames, thus influencing the speed of time for the Animation Manager.
-    */
-  var globalTimeScale: Double = js.native
-  /**
-    * The name of this Animation Manager.
-    */
-  var name: String = js.native
-  /**
-    * Whether the Animation Manager is paused along with all of its Animations.
-    */
-  var paused: Boolean = js.native
-  /**
-    * A reference to the Texture Manager.
-    */
-  var textureManager: TextureManager = js.native
+  
   /**
     * Adds an existing Animation to the Animation Manager.
     * @param key The key under which the Animation should be added. The Animation will be updated with it. Must be unique.
     * @param animation The Animation which should be added to the Animation Manager.
     */
   def add(key: String, animation: Animation): this.type = js.native
+  
+  /**
+    * The Animations registered in the Animation Manager.
+    * 
+    * This map should be modified with the {@link #add} and {@link #create} methods of the Animation Manager.
+    */
+  var anims: Map[String, Animation] = js.native
+  
   /**
     * Registers event listeners after the Game boots.
     */
   def boot(): Unit = js.native
+  
   /**
     * Creates a new Animation and adds it to the Animation Manager.
     * 
@@ -79,6 +61,7 @@ trait AnimationManager extends EventEmitter {
     * @param config The configuration settings for the Animation.
     */
   def create(config: typings.phaser.Phaser.Types.Animations.Animation): Animation | `false` = js.native
+  
   /**
     * Checks to see if the given key is already in use within the Animation Manager or not.
     * 
@@ -86,6 +69,7 @@ trait AnimationManager extends EventEmitter {
     * @param key The key of the Animation to check.
     */
   def exists(key: String): Boolean = js.native
+  
   /**
     * Loads this Animation Manager's Animations and settings from a JSON object.
     * @param data The JSON object to parse.
@@ -97,6 +81,12 @@ trait AnimationManager extends EventEmitter {
   def fromJSON(data: JSONAnimation, clearCurrentAnimations: Boolean): js.Array[Animation] = js.native
   def fromJSON(data: JSONAnimations): js.Array[Animation] = js.native
   def fromJSON(data: JSONAnimations, clearCurrentAnimations: Boolean): js.Array[Animation] = js.native
+  
+  /**
+    * A reference to the Phaser.Game instance.
+    */
+  var game: Game = js.native
+  
   /**
     * Generate an array of {@link Phaser.Types.Animations.AnimationFrame} objects from a texture key and configuration object.
     * 
@@ -131,6 +121,7 @@ trait AnimationManager extends EventEmitter {
     */
   def generateFrameNames(key: String): js.Array[typings.phaser.Phaser.Types.Animations.AnimationFrame] = js.native
   def generateFrameNames(key: String, config: GenerateFrameNames): js.Array[typings.phaser.Phaser.Types.Animations.AnimationFrame] = js.native
+  
   /**
     * Generate an array of {@link Phaser.Types.Animations.AnimationFrame} objects from a texture key and configuration object.
     * 
@@ -141,11 +132,20 @@ trait AnimationManager extends EventEmitter {
     * @param config The configuration object for the animation frames.
     */
   def generateFrameNumbers(key: String, config: GenerateFrameNumbers): js.Array[typings.phaser.Phaser.Types.Animations.AnimationFrame] = js.native
+  
   /**
     * Get an Animation.
     * @param key The key of the Animation to retrieve.
     */
   def get(key: String): Animation = js.native
+  
+  /**
+    * The global time scale of the Animation Manager.
+    * 
+    * This scales the time delta between two frames, thus influencing the speed of time for the Animation Manager.
+    */
+  var globalTimeScale: Double = js.native
+  
   /**
     * Load an Animation into a Game Object's Animation Component.
     * @param child The Game Object to load the animation into.
@@ -155,10 +155,22 @@ trait AnimationManager extends EventEmitter {
   def load(child: GameObject, key: String): GameObject = js.native
   def load(child: GameObject, key: String, startFrame: String): GameObject = js.native
   def load(child: GameObject, key: String, startFrame: integer): GameObject = js.native
+  
+  /**
+    * The name of this Animation Manager.
+    */
+  var name: String = js.native
+  
   /**
     * Pause all animations.
     */
   def pauseAll(): this.type = js.native
+  
+  /**
+    * Whether the Animation Manager is paused along with all of its Animations.
+    */
+  var paused: Boolean = js.native
+  
   def play(key: String, child: js.Array[GameObject]): this.type = js.native
   /**
     * Play an animation on the given Game Objects that have an Animation Component.
@@ -166,6 +178,7 @@ trait AnimationManager extends EventEmitter {
     * @param child The Game Objects to play the animation on.
     */
   def play(key: String, child: GameObject): this.type = js.native
+  
   /**
     * Removes an Animation from this Animation Manager, based on the given key.
     * 
@@ -174,10 +187,12 @@ trait AnimationManager extends EventEmitter {
     * @param key The key of the animation to remove.
     */
   def remove(key: String): Animation = js.native
+  
   /**
     * Resume all paused animations.
     */
   def resumeAll(): this.type = js.native
+  
   def staggerPlay[G /* <: js.Array[GameObject] */](key: String, children: js.Array[GameObject]): G = js.native
   def staggerPlay[G /* <: js.Array[GameObject] */](key: String, children: js.Array[GameObject], stagger: Double): G = js.native
   /**
@@ -190,6 +205,12 @@ trait AnimationManager extends EventEmitter {
     */
   def staggerPlay[G /* <: js.Array[GameObject] */](key: String, children: GameObject): G = js.native
   def staggerPlay[G /* <: js.Array[GameObject] */](key: String, children: GameObject, stagger: Double): G = js.native
+  
+  /**
+    * A reference to the Texture Manager.
+    */
+  var textureManager: TextureManager = js.native
+  
   /**
     * Returns the Animation data as JavaScript object based on the given key.
     * Or, if not key is defined, it will return the data of all animations as array of objects.
@@ -198,4 +219,3 @@ trait AnimationManager extends EventEmitter {
   def toJSON(): JSONAnimations = js.native
   def toJSON(key: String): JSONAnimations = js.native
 }
-

@@ -10,9 +10,9 @@ Sticky session balancer based on a `cluster` module
 | ------------------ | :-------------: |
 | Full name          | sticky-session |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 52 |
-| # downloads        | 129108 |
+| # releases         | 0 |
+| # dependents       | 53 |
+| # downloads        | 150282 |
 | # stars            | 16 |
 
 ## Links

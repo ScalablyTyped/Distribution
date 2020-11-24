@@ -11,8 +11,8 @@ Fast line to line SourceMap generator.
 | Full name          | source-list-map |
 | Keywords           | source-map |
 | # releases         | 2 |
-| # dependents       | 68 |
-| # downloads        | 352942607 |
+| # dependents       | 81 |
+| # downloads        | 445546906 |
 | # stars            | 0 |
 
 ## Links

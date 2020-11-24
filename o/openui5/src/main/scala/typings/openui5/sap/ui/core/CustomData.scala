@@ -2,10 +2,11 @@ package typings.openui5.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CustomData extends Element {
+  
   /**
     * Gets current value of property <code>key</code>.The key of the data in this CustomData object.When
     * the data is just stored, it can be any string, but when it is to be written to HTML (writeToDom ==
@@ -16,6 +17,7 @@ trait CustomData extends Element {
     * @returns Value of property <code>key</code>
     */
   def getKey(): String = js.native
+  
   /**
     * Gets current value of property <code>value</code>.The data stored in this CustomData object.When the
     * data is just stored, it can be any JS type, but when it is to be written to HTML (writeToDom ==
@@ -24,6 +26,7 @@ trait CustomData extends Element {
     * @returns Value of property <code>value</code>
     */
   def getValue(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>writeToDom</code>.If set to "true" and the value is of type
     * "string" and the key conforms to the documented restrictions, this custom data is written to the
@@ -36,6 +39,7 @@ trait CustomData extends Element {
     * @returns Value of property <code>writeToDom</code>
     */
   def getWriteToDom(): Boolean = js.native
+  
   /**
     * Sets a new value for property <code>key</code>.The key of the data in this CustomData object.When
     * the data is just stored, it can be any string, but when it is to be written to HTML (writeToDom ==
@@ -48,6 +52,7 @@ trait CustomData extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setKey(sKey: String): CustomData = js.native
+  
   /**
     * Sets a new value for property <code>value</code>.The data stored in this CustomData object.When the
     * data is just stored, it can be any JS type, but when it is to be written to HTML (writeToDom ==
@@ -58,6 +63,7 @@ trait CustomData extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setValue(oValue: js.Any): CustomData = js.native
+  
   /**
     * Sets a new value for property <code>writeToDom</code>.If set to "true" and the value is of type
     * "string" and the key conforms to the documented restrictions, this custom data is written to the
@@ -73,4 +79,3 @@ trait CustomData extends Element {
     */
   def setWriteToDom(bWriteToDom: Boolean): CustomData = js.native
 }
-

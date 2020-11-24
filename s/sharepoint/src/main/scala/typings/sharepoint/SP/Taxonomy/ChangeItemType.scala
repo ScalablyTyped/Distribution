@@ -2,14 +2,14 @@ package typings.sharepoint.SP.Taxonomy
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChangeItemType extends js.Object
-
 @JSGlobal("SP.Taxonomy.ChangeItemType")
 @js.native
 object ChangeItemType extends js.Object {
+  
   @js.native
   sealed trait group extends ChangeItemType
   
@@ -27,6 +27,4 @@ object ChangeItemType extends js.Object {
   
   @js.native
   sealed trait unknown extends ChangeItemType
-  
 }
-

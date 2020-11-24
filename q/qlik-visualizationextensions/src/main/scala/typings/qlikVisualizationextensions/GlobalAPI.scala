@@ -3,18 +3,21 @@ package typings.qlikVisualizationextensions
 import typings.angular.mod.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("GlobalAPI")
 @js.native
 object GlobalAPI extends js.Object {
+  
   @js.native
   trait IGlobal extends js.Object {
+    
     /**
       * Cancels an ongoing reload. The reload of the app is stopped.
       * @return - A promise of a Qlik engine reply.
       */
     def cancelReload(): IPromise[_] = js.native
+    
     /**
       * Gets a list of Qlik Sense apps that you potentially can connect to and
       * registers a callback to receive the data. Calling the getAppList method
@@ -23,6 +26,7 @@ object GlobalAPI extends js.Object {
       * @param callback - Callback method.
       */
     def getAppList(callback: js.Any): Unit = js.native
+    
     /**
       * Gets information (user directory and user id) about the authenticated user.
       * @param [callback] - Optional. Callback method.
@@ -30,6 +34,7 @@ object GlobalAPI extends js.Object {
       */
     def getAuthenticatedUser(): IPromise[_] = js.native
     def getAuthenticatedUser(callback: js.Any): IPromise[_] = js.native
+    
     /**
       * Gets the product version.
       * @param [callback] - Optional. Callback method.
@@ -37,6 +42,7 @@ object GlobalAPI extends js.Object {
       */
     def getProductVersion(): IPromise[_] = js.native
     def getProductVersion(callback: js.Any): IPromise[_] = js.native
+    
     /**
       * Gets information about progress of doReload and doSave calls.
       * @param qRequestId - Request id from doReload call or 0.
@@ -47,6 +53,7 @@ object GlobalAPI extends js.Object {
       */
     def getProgress(qRequestId: Double): IPromise[_] = js.native
     def getProgress(qRequestId: Double, callback: js.Any): IPromise[_] = js.native
+    
     /**
       * Gets the Qlik product name.
       * @param [callback] - Optional. Callback method.
@@ -54,6 +61,7 @@ object GlobalAPI extends js.Object {
       */
     def getQTProduct(): IPromise[_] = js.native
     def getQTProduct(callback: js.Any): IPromise[_] = js.native
+    
     /**
       * Gets the Qlik Sense version number.
       * @param [callback] - Optional. Callback method.
@@ -61,6 +69,7 @@ object GlobalAPI extends js.Object {
       */
     def getQvVersion(): IPromise[_] = js.native
     def getQvVersion(callback: js.Any): IPromise[_] = js.native
+    
     /**
       * Gets information if the user is working in personal mode
       * (returns true if Qlik Sense Desktop is used) or not
@@ -71,6 +80,4 @@ object GlobalAPI extends js.Object {
     def isPersonalMode(): IPromise[_] = js.native
     def isPersonalMode(callback: js.Any): IPromise[_] = js.native
   }
-  
 }
-

@@ -2,14 +2,14 @@ package typings.tableau.tableau
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DateRangeType extends js.Object
-
 @JSGlobal("tableau.DateRangeType")
 @js.native
 object DateRangeType extends js.Object {
+  
    /** Refers to the current day, week, month, etc. of the date period. */ @js.native
   sealed trait CURRENT extends DateRangeType
   
@@ -27,6 +27,4 @@ object DateRangeType extends js.Object {
   
    /** Refers to everything up to and including the current day, week, month, etc. of the date period. */ @js.native
   sealed trait TODATE extends DateRangeType
-  
 }
-

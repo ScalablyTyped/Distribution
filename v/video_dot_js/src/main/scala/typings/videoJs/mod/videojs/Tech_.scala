@@ -6,71 +6,11 @@ import typings.std.HTMLTrackElement
 import typings.videoJs.videoJsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Tech_ extends Component {
-  /**
-    * Boolean indicating whether the `Tech` supports fullscreen resize control.
-    * Resizing plugins using request fullscreen reloads the plugin
-    *
-    * @default
-    */
-  var featuresFullscreenResize: Boolean = js.native
-  /**
-    * Boolean indicating whether the `Tech` supports muting volume.
-    *
-    * @default
-    */
-  var featuresMuteControl: Boolean = js.native
-  /**
-    * Boolean indicating whether the `Tech` supports the native `TextTrack`s.
-    * This will help us integrate with native `TextTrack`s if the browser supports them.
-    *
-    * @default
-    */
-  var featuresNativeTextTracks: Boolean = js.native
-  /**
-    * Boolean indicating whether the `Tech` supports changing the speed at which the video
-    * plays. Examples:
-    *   - Set player to play 2x (twice) as fast
-    *   - Set player to play 0.5x (half) as fast
-    *
-    * @default
-    */
-  var featuresPlaybackRate: Boolean = js.native
-  /**
-    * Boolean indicating whether the `Tech` supports the `progress` event. This is currently
-    * not triggered by video-js-swf. This will be used to determine if
-    * {@link Tech#manualProgressOn} should be called.
-    *
-    * @default
-    */
-  var featuresProgressEvents: Boolean = js.native
-  /**
-    * Boolean indicating whether the `Tech` supports the `sourceset` event.
-    *
-    * A tech should set this to `true` and then use {@link Tech#triggerSourceset}
-    * to trigger a {@link Tech#event:sourceset} at the earliest time after getting
-    * a new source.
-    *
-    * @default
-    */
-  var featuresSourceset: Boolean = js.native
-  /**
-    * Boolean indicating whether the `Tech` supports the `timeupdate` event. This is currently
-    * not triggered by video-js-swf. This will be used to determine if
-    * {@link Tech#manualTimeUpdates} should be called.
-    *
-    * @default
-    */
-  var featuresTimeupdateEvents: Boolean = js.native
-  /**
-    * Boolean indicating whether the `Tech` supports volume control.
-    *
-    * @default
-    */
-  var featuresVolumeControl: Boolean = js.native
+  
   /**
     * Creates a remote text track object and returns an html track element.
     *
@@ -92,6 +32,7 @@ trait Tech_ extends Component {
     */
   @JSName("addRemoteTextTrack")
   def addRemoteTextTrack_true(options: TextTrackOptions, manualCleanup: `true`): HTMLTrackElement = js.native
+  
   /**
     * Create and returns a remote {@link TextTrack} object.
     *
@@ -107,6 +48,7 @@ trait Tech_ extends Component {
     * @return The TextTrack that gets created.
     */
   def addTextTrack(kind: String, label: String, language: String): TextTrack = js.native
+  
   /**
     * Emulate TextTracks using vtt.js if necessary
     *
@@ -114,18 +56,21 @@ trait Tech_ extends Component {
     * @fires Tech#vttjserror
     */
   def addWebVttScript_(): Unit = js.native
+  
   /**
     * Get the {@link AudioTrackList}
     *
     * @return Tech.prototype.audioTracks
     */
   def audioTracks(): TrackList = js.native
+  
   /**
     * Get and create a `TimeRange` object for buffering.
     *
     * @return The time range object that was created.
     */
   def buffered(): js.Any = js.native
+  
   /**
     * Get the percentage of the current video that is currently buffered.
     *
@@ -134,6 +79,7 @@ trait Tech_ extends Component {
     *
     */
   def bufferedPercent(): Double = js.native
+  
   /**
     * Check if the tech can support the given mime-type.
     *
@@ -148,11 +94,13 @@ trait Tech_ extends Component {
     * @see [Spec]{@link https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/canPlayType}
     */
   def canPlayType(`type`: String): String = js.native
+  
   /**
     * Remove any TextTracks added via addRemoteTextTrack that are
     * flagged for automatic garbage collection
     */
   def cleanupAutoTextTracks(): Unit = js.native
+  
   /**
     * Clear out a single `TrackList` or an array of `TrackLists` given their names.
     *
@@ -165,6 +113,7 @@ trait Tech_ extends Component {
     */
   def clearTracks(types: String): Unit = js.native
   def clearTracks(types: js.Array[String]): Unit = js.native
+  
   /**
     * Create an emulated TextTrack for use by addRemoteTextTrack
     *
@@ -186,11 +135,13 @@ trait Tech_ extends Component {
     * @return The track element that gets created.
     */
   def createRemoteTextTrack(options: TextTrackOptions): HTMLTextAreaElement = js.native
+  
   /**
     * Emulate texttracks
     *
     */
   def emulateTextTracks(): Unit = js.native
+  
   /**
     * Get or set an error on the Tech.
     *
@@ -200,6 +151,76 @@ trait Tech_ extends Component {
     * @return The current error object on the tech, or null if there isn't one.
     */
   def error(err: MediaError): MediaError | Null = js.native
+  
+  /**
+    * Boolean indicating whether the `Tech` supports fullscreen resize control.
+    * Resizing plugins using request fullscreen reloads the plugin
+    *
+    * @default
+    */
+  var featuresFullscreenResize: Boolean = js.native
+  
+  /**
+    * Boolean indicating whether the `Tech` supports muting volume.
+    *
+    * @default
+    */
+  var featuresMuteControl: Boolean = js.native
+  
+  /**
+    * Boolean indicating whether the `Tech` supports the native `TextTrack`s.
+    * This will help us integrate with native `TextTrack`s if the browser supports them.
+    *
+    * @default
+    */
+  var featuresNativeTextTracks: Boolean = js.native
+  
+  /**
+    * Boolean indicating whether the `Tech` supports changing the speed at which the video
+    * plays. Examples:
+    *   - Set player to play 2x (twice) as fast
+    *   - Set player to play 0.5x (half) as fast
+    *
+    * @default
+    */
+  var featuresPlaybackRate: Boolean = js.native
+  
+  /**
+    * Boolean indicating whether the `Tech` supports the `progress` event. This is currently
+    * not triggered by video-js-swf. This will be used to determine if
+    * {@link Tech#manualProgressOn} should be called.
+    *
+    * @default
+    */
+  var featuresProgressEvents: Boolean = js.native
+  
+  /**
+    * Boolean indicating whether the `Tech` supports the `sourceset` event.
+    *
+    * A tech should set this to `true` and then use {@link Tech#triggerSourceset}
+    * to trigger a {@link Tech#event:sourceset} at the earliest time after getting
+    * a new source.
+    *
+    * @default
+    */
+  var featuresSourceset: Boolean = js.native
+  
+  /**
+    * Boolean indicating whether the `Tech` supports the `timeupdate` event. This is currently
+    * not triggered by video-js-swf. This will be used to determine if
+    * {@link Tech#manualTimeUpdates} should be called.
+    *
+    * @default
+    */
+  var featuresTimeupdateEvents: Boolean = js.native
+  
+  /**
+    * Boolean indicating whether the `Tech` supports volume control.
+    *
+    * @default
+    */
+  var featuresVolumeControl: Boolean = js.native
+  
   /**
     * Gets available media playback quality metrics as specified by the W3C's Media
     * Playback Quality API.
@@ -209,6 +230,7 @@ trait Tech_ extends Component {
     * @return An object with supported media playback quality metrics
     */
   def getVideoPlaybackQuality(): js.Any = js.native
+  
   /**
     * Turn on listeners for {@link VideoTrackList}, {@link {AudioTrackList}, and
     * {@link TextTrackList} events.
@@ -220,24 +242,29 @@ trait Tech_ extends Component {
     * @fires Tech#texttrackchange
     */
   def initTrackListeners(): Unit = js.native
+  
   def manualProgressOff(): Unit = js.native
+  
   /**
     * Polyfill the `progress` event for browsers that don't support it natively.
     *
     * @see {@link Tech#trackProgress}
     */
   def manualProgressOn(): Unit = js.native
+  
   /**
     * Turn off the polyfill for `progress` events that was created in
     * {@link Tech#manualProgressOn}
     */
   def manualTimeUpdatesOff(): Unit = js.native
+  
   /**
     * Polyfill the `timeupdate` event for browsers that don't support it.
     *
     * @see {@link Tech#trackCurrentTime}
     */
   def manualTimeUpdatesOn(): Unit = js.native
+  
   /**
     * Update our internal duration on a `durationchange` event by calling
     * {@link Tech#duration}.
@@ -248,6 +275,7 @@ trait Tech_ extends Component {
     * @listens Tech#durationchange
     */
   def onDurationChange(event: Event): Unit = js.native
+  
   /**
     * Attempt to force override of native audio tracks.
     *
@@ -255,6 +283,7 @@ trait Tech_ extends Component {
     * otherwise native audio will potentially be used.
     */
   def overrideNativeAudioTracks(`override`: Boolean): Unit = js.native
+  
   /**
     * Attempt to force override of native video tracks.
     *
@@ -262,18 +291,22 @@ trait Tech_ extends Component {
     * otherwise native video will potentially be used.
     */
   def overrideNativeVideoTracks(`override`: Boolean): Unit = js.native
+  
   /**
     * A method to check for the presence of the 'playsinline' <video> attribute.
     */
   def playsinline(): js.Any = js.native
+  
   /**
     * Get the remote element {@link HTMLTrackElementList}
     */
   def remoteTextTrackEls(): HTMLTrackElementList = js.native
+  
   /**
     * Get the remote element {@link TextTrackList}
     */
   def remoteTextTracks(): TextTrackList = js.native
+  
   /**
     * Remove a remote text track from the remote `TextTrackList`.
     *
@@ -281,10 +314,12 @@ trait Tech_ extends Component {
     *        `TextTrack` to remove from the `TextTrackList`
     */
   def removeRemoteTextTrack(track: TextTrack): Unit = js.native
+  
   /**
     * Reset the tech, which will removes all sources and reset the internal readyState.
     */
   def reset(): Unit = js.native
+  
   /**
     * Causes a manual time update to occur if {@link Tech#manualTimeUpdatesOn} was
     * previously called.
@@ -292,14 +327,17 @@ trait Tech_ extends Component {
     * @fires Tech#timeupdate
     */
   def setCurrentTime(): Unit = js.native
+  
   /**
     * A method to set or unset the 'playsinline' <video> attribute.
     */
   def setPlaysinline(): Unit = js.native
+  
   /**
     * A method to set a poster from a `Tech`.
     */
   def setPoster(): Unit = js.native
+  
   /**
     * Stop the interval function created in {@link Tech#trackCurrentTime} so that the
     * `timeupdate` event is no longer triggered.
@@ -307,6 +345,7 @@ trait Tech_ extends Component {
     * @listens {Tech#pause}
     */
   def stopTrackingCurrentTime(): Unit = js.native
+  
   /**
     * Turn off the polyfill for `progress` events that was created in
     * {@link Tech#manualProgressOn}
@@ -314,10 +353,12 @@ trait Tech_ extends Component {
     * {@link Tech#trackProgress}.
     */
   def stopTrackingProgress(): Unit = js.native
+  
   /**
     * Get the {@link TextTrackList}
     */
   def textTracks(): TextTrackList = js.native
+  
   /**
     * Sets up an interval function to track current time and trigger `timeupdate` every
     * 250 milliseconds.
@@ -326,6 +367,7 @@ trait Tech_ extends Component {
     * @triggers Tech#timeupdate
     */
   def trackCurrentTime(): Unit = js.native
+  
   /**
     * This is used to trigger a `progress` event when the buffered percent changes. It
     * sets an interval function that will be called every 500 milliseconds to check if the
@@ -340,6 +382,7 @@ trait Tech_ extends Component {
     * @fires Tech#progress
     */
   def trackProgress(event: typings.videoJs.mod.videojs.EventTarget.Event): Unit = js.native
+  
   /**
     * A special function to trigger source set in a way that will allow player
     * to re-trigger if the player or tech are not ready yet.
@@ -348,9 +391,9 @@ trait Tech_ extends Component {
     * @param src The source string at the time of the source changing.
     */
   def triggerSourceset(src: String): Unit = js.native
+  
   /**
     * Get the {@link VideoTrackList}
     */
   def videoTracks(): TrackList = js.native
 }
-

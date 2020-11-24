@@ -10,9 +10,9 @@ Read a package.json file
 | ------------------ | :-------------: |
 | Full name          | read-pkg |
 | Keywords           | json, read, parse, file, fs, graceful, load, package, normalize |
-| # releases         | 7 |
-| # dependents       | 473 |
-| # downloads        | 920476797 |
+| # releases         | 5 |
+| # dependents       | 563 |
+| # downloads        | 1277442093 |
 | # stars            | 6 |
 
 ## Links

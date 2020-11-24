@@ -8,10 +8,11 @@ import typings.ldapjs.ldapjsStrings.searchReference
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SearchCallbackResponse extends EventEmitter {
+  
   @JSName("on")
   def on_end(event: end, listener: js.Function1[/* res */ LDAPResult | Null, Unit]): this.type = js.native
   @JSName("on")
@@ -26,4 +27,3 @@ trait SearchCallbackResponse extends EventEmitter {
   @JSName("on")
   def on_searchReference(event: searchReference, listener: js.Function1[/* referral */ SearchReference, Unit]): this.type = js.native
 }
-

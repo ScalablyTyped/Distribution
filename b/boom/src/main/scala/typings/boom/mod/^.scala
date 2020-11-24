@@ -3,7 +3,7 @@ package typings.boom.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * boom provides a set of utilities for returning HTTP errors. Each utility returns a Boom error response object (instance of Error) which includes the following properties:
@@ -19,4 +19,3 @@ class ^[Data] () extends Boom[Data] {
   def this(message: String, options: Options[Data]) = this()
   def this(message: Error, options: Options[Data]) = this()
 }
-

@@ -3,12 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait widgetsSwipeVisibleElements extends SwipeVisibleElements
-
 object widgetsSwipeVisibleElements {
+  
   @scala.inline
   def apply(
     constructor: js.Function,
@@ -21,4 +21,3 @@ object widgetsSwipeVisibleElements {
     __obj.asInstanceOf[widgetsSwipeVisibleElements]
   }
 }
-

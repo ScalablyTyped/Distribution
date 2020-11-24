@@ -10,9 +10,9 @@ jsreport engine using jsrender
 | ------------------ | :-------------: |
 | Full name          | jsreport-jsrender |
 | Keywords           | jsreport, jsrender |
-| # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 159967 |
+| # releases         | 3 |
+| # dependents       | 5 |
+| # downloads        | 161076 |
 | # stars            | 0 |
 
 ## Links

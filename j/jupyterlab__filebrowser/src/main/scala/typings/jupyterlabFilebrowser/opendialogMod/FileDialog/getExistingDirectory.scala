@@ -4,11 +4,12 @@ import typings.jupyterlabApputils.dialogMod.Dialog.IResult
 import typings.jupyterlabServices.contentsMod.Contents.IModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/filebrowser/lib/opendialog", "FileDialog.getExistingDirectory")
 @js.native
 object getExistingDirectory extends js.Object {
+  
   /**
     * Create and show a open directory dialog.
     *
@@ -21,4 +22,3 @@ object getExistingDirectory extends js.Object {
     */
   def apply(options: IDirectoryOptions): js.Promise[IResult[js.Array[IModel]]] = js.native
 }
-

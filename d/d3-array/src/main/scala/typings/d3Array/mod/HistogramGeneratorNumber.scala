@@ -4,15 +4,17 @@ import typings.std.ArrayLike
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HistogramGeneratorNumber[Datum, Value /* <: js.UndefOr[Double] */] extends HistogramCommon[Datum, Value] {
+  
   def domain(): js.Function1[/* values */ Iterable[Value], js.Tuple2[js.UndefOr[Double], js.UndefOr[Double]]] = js.native
   def domain(
     domainAccessor: js.Function1[/* values */ Iterable[Value], js.Tuple2[js.UndefOr[Double], js.UndefOr[Double]]]
   ): this.type = js.native
   def domain(domain: js.Tuple2[Double, Double]): this.type = js.native
+  
   def thresholds(): ThresholdCountGenerator[Value] | ThresholdNumberArrayGenerator[Value] = js.native
   /**
     * Set a threshold accessor function, which returns the desired number of bins.
@@ -59,4 +61,3 @@ trait HistogramGeneratorNumber[Datum, Value /* <: js.UndefOr[Double] */] extends
     */
   def thresholds(thresholds: ArrayLike[Value]): this.type = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.angularAnimations.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/animations", "transition")
 @js.native
 object transition extends js.Object {
+  
   def apply(stateChangeExpr: String, steps: js.Array[AnimationMetadata]): AnimationTransitionMetadata = js.native
   def apply(stateChangeExpr: String, steps: js.Array[AnimationMetadata], options: AnimationOptions): AnimationTransitionMetadata = js.native
   def apply(stateChangeExpr: String, steps: AnimationMetadata): AnimationTransitionMetadata = js.native
@@ -55,4 +56,3 @@ object transition extends js.Object {
     options: AnimationOptions
   ): AnimationTransitionMetadata = js.native
 }
-

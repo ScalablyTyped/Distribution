@@ -10,9 +10,9 @@ Library for rolling dice based on dice-syntax used in RPGs.
 | ------------------ | :-------------: |
 | Full name          | d20 |
 | Keywords           | dice, rpg, d20 |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 3966 |
+| # downloads        | 5454 |
 | # stars            | 2 |
 
 ## Links

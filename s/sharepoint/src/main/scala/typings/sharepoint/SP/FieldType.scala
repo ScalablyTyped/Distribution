@@ -2,14 +2,14 @@ package typings.sharepoint.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FieldType extends js.Object
-
 @JSGlobal("SP.FieldType")
 @js.native
 object FieldType extends js.Object {
+  
   @js.native
   sealed trait URL extends FieldType
   
@@ -111,6 +111,4 @@ object FieldType extends js.Object {
   
   @js.native
   sealed trait workflowStatus extends FieldType
-  
 }
-

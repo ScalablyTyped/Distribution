@@ -2,7 +2,7 @@ package typings.remarkable.rulerMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Ruler is a helper class for building responsibility chains from
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSImport("remarkable/lib/ruler", JSImport.Namespace)
 @js.native
 class ^[RULE] () extends Ruler[RULE]
-

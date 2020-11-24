@@ -11,8 +11,8 @@ Extends Chai with lint-friendly terminating assertions.
 | Full name          | dirty-chai |
 | Keywords           | chai, chai-plugin, browser, testing |
 | # releases         | 0 |
-| # dependents       | 45 |
-| # downloads        | 2369895 |
+| # dependents       | 50 |
+| # downloads        | 2612921 |
 | # stars            | 3 |
 
 ## Links

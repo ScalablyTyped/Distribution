@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zenaton"
-version := "0.5-dt-20190717Z-ad2c6f"
+version := "0.5-dt-20190717Z-778a84"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

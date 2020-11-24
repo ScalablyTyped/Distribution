@@ -3,7 +3,7 @@ package typings.backoff.mod
 import org.scalablytyped.runtime.Instantiable3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FunctionCallConstructor
@@ -41,4 +41,3 @@ trait FunctionCallConstructor
         js.UndefOr[js.Object]
       ])
     ]
-

@@ -5,7 +5,7 @@ import typings.mocha.Mocha.reporters.XUnit
 import typings.mocha.Mocha.reporters.XUnit.MochaOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Initialize a new `XUnit` test reporter.
@@ -18,4 +18,3 @@ class XUnit_ protected () extends XUnit {
   def this(runner: Runner) = this()
   def this(runner: Runner, options: MochaOptions) = this()
 }
-

@@ -11,8 +11,8 @@ Use the system's native `realpath`
 | Full name          | realpath-native |
 | Keywords           | realpath |
 | # releases         | 5 |
-| # dependents       | 27 |
-| # downloads        | 181501605 |
+| # dependents       | 31 |
+| # downloads        | 287275322 |
 | # stars            | 0 |
 
 ## Links

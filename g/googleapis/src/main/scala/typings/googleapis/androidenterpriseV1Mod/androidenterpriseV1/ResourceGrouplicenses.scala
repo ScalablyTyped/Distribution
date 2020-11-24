@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Grouplicenses")
 @js.native
 class ResourceGrouplicenses protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.grouplicenses.get
     * @desc Retrieves details of an enterprise's group license for a product.
@@ -42,6 +44,7 @@ class ResourceGrouplicenses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroupLicense]
   ): Unit = js.native
+  
   /**
     * androidenterprise.grouplicenses.list
     * @desc Retrieves IDs of all products for which the enterprise has a group
@@ -75,4 +78,3 @@ class ResourceGrouplicenses protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGroupLicensesListResponse]
   ): Unit = js.native
 }
-

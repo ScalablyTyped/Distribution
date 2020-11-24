@@ -2,7 +2,7 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SubjectAltName ASN.1 structure class
@@ -34,11 +34,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SubjectAltName extends Extension {
+  
   def getExtnValueHex(): String = js.native
+  
   def setNameArray(paramsArray: js.Array[UriParam]): Unit = js.native
 }
-
 object SubjectAltName {
+  
   @scala.inline
   def apply(
     getEncodedHex: () => String,
@@ -56,22 +58,26 @@ object SubjectAltName {
     val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getExtnValueHex = js.Any.fromFunction0(getExtnValueHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setNameArray = js.Any.fromFunction1(setNameArray))
     __obj.asInstanceOf[SubjectAltName]
   }
+  
   @scala.inline
   implicit class SubjectAltNameOps[Self <: SubjectAltName] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetExtnValueHex(value: () => String): Self = this.set("getExtnValueHex", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setSetNameArray(value: js.Array[UriParam] => Unit): Self = this.set("setNameArray", js.Any.fromFunction1(value))
   }
-  
 }
-

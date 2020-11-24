@@ -2,10 +2,11 @@ package typings.p5.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Shader extends js.Object {
+  
   def setUniform(uniformName: String, data: js.Array[Double]): Shader = js.native
   /**
     *   Wrapper around gl.uniform functions. As we store
@@ -24,4 +25,3 @@ trait Shader extends js.Object {
   def setUniform(uniformName: String, data: Boolean): Shader = js.native
   def setUniform(uniformName: String, data: Double): Shader = js.native
 }
-

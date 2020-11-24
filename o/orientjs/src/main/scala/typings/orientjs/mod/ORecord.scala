@@ -6,16 +6,20 @@ import typings.orientjs.orientjsStrings.d
 import typings.std.Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("orientjs", "ORecord")
 @js.native
 class ORecord () extends Object {
+  
   var `@class`: js.UndefOr[String] = js.native
+  
   var `@rid`: js.UndefOr[ORID] = js.native
+  
   var `@type`: js.UndefOr[d | b] = js.native
+  
   var `@version`: js.UndefOr[Version] = js.native
-  var rid: js.UndefOr[ORID] = js.native
+  
   /**
     * Insert the given record into the database.
     *
@@ -34,6 +38,7 @@ class ORecord () extends Object {
     */
   def create(records: js.Array[BinaryRecord | ODocument | ORecord]): js.Promise[js.Array[ORecord]] = js.native
   def create(records: js.Array[BinaryRecord | ODocument | ORecord], options: js.Any): js.Promise[js.Array[ORecord]] = js.native
+  
   def delete(): js.Promise[ORecord] = js.native
   def delete(record: ORID): js.Promise[ORecord] = js.native
   def delete(record: ORID, options: js.Any): js.Promise[ORecord] = js.native
@@ -46,6 +51,7 @@ class ORecord () extends Object {
     */
   def delete(record: ORecord): js.Promise[ORecord] = js.native
   def delete(record: ORecord, options: js.Any): js.Promise[ORecord] = js.native
+  
   /**
     * Read the given record.
     *
@@ -66,6 +72,7 @@ class ORecord () extends Object {
     */
   def get(record: ORecord): js.Promise[ORecord | Buffer] = js.native
   def get(record: ORecord, options: js.Any): js.Promise[ORecord | Buffer] = js.native
+  
   def meta(record: String): js.Promise[RecordMeta] = js.native
   def meta(record: String, options: js.Any): js.Promise[RecordMeta] = js.native
   /**
@@ -88,6 +95,7 @@ class ORecord () extends Object {
     */
   def meta(record: ORecord): js.Promise[RecordMeta] = js.native
   def meta(record: ORecord, options: js.Any): js.Promise[RecordMeta] = js.native
+  
   /**
     * Resolve all references within the given collection of records.
     *
@@ -95,6 +103,9 @@ class ORecord () extends Object {
     * @return            The records with references replaced.
     */
   def resolveReferences(records: js.Array[ORecord]): js.Array[ORecord] = js.native
+  
+  var rid: js.UndefOr[ORID] = js.native
+  
   /**
     * Update the given record.
     *
@@ -109,4 +120,3 @@ class ORecord () extends Object {
   def update(record: ORecord): js.Promise[ORecord] = js.native
   def update(record: ORecord, options: js.Any): js.Promise[ORecord] = js.native
 }
-

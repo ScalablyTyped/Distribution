@@ -7,17 +7,16 @@ import typings.std.Iterable
 import typings.std.global.Float32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("two.js", JSImport.Namespace)
 @js.native
 class ^ () extends Two {
   def this(params: ConstructorParams) = this()
 }
-
 @JSImport("two.js", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   var Array: (Float32ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], Float32Array])) | (ArrayConstructor with (Instantiable1[/* arrayLength */ Double, typings.std.global.Array[js.Object]])) = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.semver.mod
 import typings.semver.comparatorMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver", "Comparator")
 @js.native
@@ -15,4 +15,3 @@ class Comparator protected () extends ^ {
   def this(comp: typings.semver.comparatorMod.Comparator, optionsOrLoose: Boolean) = this()
   def this(comp: typings.semver.comparatorMod.Comparator, optionsOrLoose: Options) = this()
 }
-

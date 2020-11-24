@@ -2,7 +2,7 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HttpRouteRuleMatch specifies a set of criteria for matching requests to an
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaHttpRouteRuleMatch extends js.Object {
+  
   /**
     * For satifying the matchRule condition, the path of the request must
     * exactly match the value specified in fullPathMatch after removing any
@@ -19,17 +20,20 @@ trait SchemaHttpRouteRuleMatch extends js.Object {
     * prefixMatch, fullPathMatch or regexMatch must be specified.
     */
   var fullPathMatch: js.UndefOr[String] = js.native
+  
   /**
     * Specifies a list of header match criteria, all of which must match
     * corresponding headers in the request.
     */
   var headerMatches: js.UndefOr[js.Array[SchemaHttpHeaderMatch]] = js.native
+  
   /**
     * Specifies that prefixMatch and fullPathMatch matches are case sensitive.
     * The default value is false. caseSensitive must not be used with
     * regexMatch.
     */
   var ignoreCase: js.UndefOr[Boolean] = js.native
+  
   /**
     * Opaque filter criteria used by Loadbalancer to restrict routing
     * configuration to a limited set xDS compliant clients. In their xDS
@@ -46,6 +50,7 @@ trait SchemaHttpRouteRuleMatch extends js.Object {
     * INTERNAL_SELF_MANAGED.
     */
   var metadataFilters: js.UndefOr[js.Array[SchemaMetadataFilter]] = js.native
+  
   /**
     * For satifying the matchRule condition, the request&#39;s path must begin
     * with the specified prefixMatch. prefixMatch must begin with a /. The
@@ -53,11 +58,13 @@ trait SchemaHttpRouteRuleMatch extends js.Object {
     * fullPathMatch or regexMatch must be specified.
     */
   var prefixMatch: js.UndefOr[String] = js.native
+  
   /**
     * Specifies a list of query parameter match criteria, all of which must
     * match corresponding query parameters in the request.
     */
   var queryParameterMatches: js.UndefOr[js.Array[SchemaHttpQueryParameterMatch]] = js.native
+  
   /**
     * For satifying the matchRule condition, the path of the request must
     * satisfy the regular expression specified in regexMatch after removing any
@@ -67,59 +74,78 @@ trait SchemaHttpRouteRuleMatch extends js.Object {
     */
   var regexMatch: js.UndefOr[String] = js.native
 }
-
 object SchemaHttpRouteRuleMatch {
+  
   @scala.inline
   def apply(): SchemaHttpRouteRuleMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHttpRouteRuleMatch]
   }
+  
   @scala.inline
   implicit class SchemaHttpRouteRuleMatchOps[Self <: SchemaHttpRouteRuleMatch] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFullPathMatch(value: String): Self = this.set("fullPathMatch", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFullPathMatch: Self = this.set("fullPathMatch", js.undefined)
+    
     @scala.inline
     def setHeaderMatchesVarargs(value: SchemaHttpHeaderMatch*): Self = this.set("headerMatches", js.Array(value :_*))
+    
     @scala.inline
     def setHeaderMatches(value: js.Array[SchemaHttpHeaderMatch]): Self = this.set("headerMatches", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeaderMatches: Self = this.set("headerMatches", js.undefined)
+    
     @scala.inline
     def setIgnoreCase(value: Boolean): Self = this.set("ignoreCase", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIgnoreCase: Self = this.set("ignoreCase", js.undefined)
+    
     @scala.inline
     def setMetadataFiltersVarargs(value: SchemaMetadataFilter*): Self = this.set("metadataFilters", js.Array(value :_*))
+    
     @scala.inline
     def setMetadataFilters(value: js.Array[SchemaMetadataFilter]): Self = this.set("metadataFilters", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMetadataFilters: Self = this.set("metadataFilters", js.undefined)
+    
     @scala.inline
     def setPrefixMatch(value: String): Self = this.set("prefixMatch", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePrefixMatch: Self = this.set("prefixMatch", js.undefined)
+    
     @scala.inline
     def setQueryParameterMatchesVarargs(value: SchemaHttpQueryParameterMatch*): Self = this.set("queryParameterMatches", js.Array(value :_*))
+    
     @scala.inline
     def setQueryParameterMatches(value: js.Array[SchemaHttpQueryParameterMatch]): Self = this.set("queryParameterMatches", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteQueryParameterMatches: Self = this.set("queryParameterMatches", js.undefined)
+    
     @scala.inline
     def setRegexMatch(value: String): Self = this.set("regexMatch", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRegexMatch: Self = this.set("regexMatch", js.undefined)
   }
-  
 }
-

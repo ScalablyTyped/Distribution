@@ -7,14 +7,16 @@ import typings.ethereumjsTx.typesMod.TransactionOptions
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ethereumjs-tx/dist/fake", JSImport.Namespace)
 @js.native
 object fakeMod extends js.Object {
+  
   @js.native
   trait FakeTransaction
     extends typings.ethereumjsTx.transactionMod.default {
+    
     /**
       * Set from address to bypass transaction signing.
       * This is not an optional property, as its getter never returns undefined.
@@ -34,6 +36,4 @@ object fakeMod extends js.Object {
     def this(data: PrefixedHexString, opts: TransactionOptions) = this()
     def this(data: Buffer, opts: TransactionOptions) = this()
   }
-  
 }
-

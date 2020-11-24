@@ -1,17 +1,19 @@
 package typings.awsSdk.cloud9Mod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Cloud9 extends Service {
+  
   @JSName("config")
   var config_Cloud9: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates an AWS Cloud9 development environment, launches an Amazon Elastic Compute Cloud (Amazon EC2) instance, and then connects from the instance to the environment.
     */
@@ -25,6 +27,7 @@ trait Cloud9 extends Service {
     params: CreateEnvironmentEC2Request,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEnvironmentEC2Result, Unit]
   ): Request[CreateEnvironmentEC2Result, AWSError] = js.native
+  
   /**
     * Adds an environment member to an AWS Cloud9 development environment.
     */
@@ -38,6 +41,7 @@ trait Cloud9 extends Service {
     params: CreateEnvironmentMembershipRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEnvironmentMembershipResult, Unit]
   ): Request[CreateEnvironmentMembershipResult, AWSError] = js.native
+  
   /**
     * Deletes an AWS Cloud9 development environment. If an Amazon EC2 instance is connected to the environment, also terminates the instance.
     */
@@ -51,6 +55,7 @@ trait Cloud9 extends Service {
     params: DeleteEnvironmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEnvironmentResult, Unit]
   ): Request[DeleteEnvironmentResult, AWSError] = js.native
+  
   /**
     * Deletes an environment member from an AWS Cloud9 development environment.
     */
@@ -64,6 +69,7 @@ trait Cloud9 extends Service {
     params: DeleteEnvironmentMembershipRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEnvironmentMembershipResult, Unit]
   ): Request[DeleteEnvironmentMembershipResult, AWSError] = js.native
+  
   /**
     * Gets information about environment members for an AWS Cloud9 development environment.
     */
@@ -77,6 +83,7 @@ trait Cloud9 extends Service {
     params: DescribeEnvironmentMembershipsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEnvironmentMembershipsResult, Unit]
   ): Request[DescribeEnvironmentMembershipsResult, AWSError] = js.native
+  
   /**
     * Gets status information for an AWS Cloud9 development environment.
     */
@@ -90,6 +97,7 @@ trait Cloud9 extends Service {
     params: DescribeEnvironmentStatusRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEnvironmentStatusResult, Unit]
   ): Request[DescribeEnvironmentStatusResult, AWSError] = js.native
+  
   /**
     * Gets information about AWS Cloud9 development environments.
     */
@@ -103,6 +111,7 @@ trait Cloud9 extends Service {
     params: DescribeEnvironmentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEnvironmentsResult, Unit]
   ): Request[DescribeEnvironmentsResult, AWSError] = js.native
+  
   /**
     * Gets a list of AWS Cloud9 development environment identifiers.
     */
@@ -116,6 +125,7 @@ trait Cloud9 extends Service {
     params: ListEnvironmentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListEnvironmentsResult, Unit]
   ): Request[ListEnvironmentsResult, AWSError] = js.native
+  
   /**
     * Gets a list of the tags associated with an AWS Cloud9 development environment.
     */
@@ -129,6 +139,7 @@ trait Cloud9 extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Adds tags to an AWS Cloud9 development environment.  Tags that you add to an AWS Cloud9 environment by using this method will NOT be automatically propagated to underlying resources. 
     */
@@ -142,6 +153,7 @@ trait Cloud9 extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Removes tags from an AWS Cloud9 development environment.
     */
@@ -155,6 +167,7 @@ trait Cloud9 extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Changes the settings of an existing AWS Cloud9 development environment.
     */
@@ -168,6 +181,7 @@ trait Cloud9 extends Service {
     params: UpdateEnvironmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEnvironmentResult, Unit]
   ): Request[UpdateEnvironmentResult, AWSError] = js.native
+  
   /**
     * Changes the settings of an existing environment member for an AWS Cloud9 development environment.
     */
@@ -182,4 +196,3 @@ trait Cloud9 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEnvironmentMembershipResult, Unit]
   ): Request[UpdateEnvironmentMembershipResult, AWSError] = js.native
 }
-

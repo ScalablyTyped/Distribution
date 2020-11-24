@@ -7,7 +7,7 @@ import typings.luminoDatagrid.datagridMod.DataGrid.IOptions
 import typings.luminoDatagrid.datagridMod.DataGrid.Style
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/datagrid", "DataGrid")
 @js.native
@@ -20,22 +20,10 @@ class DataGrid ()
   extends typings.luminoDatagrid.datagridMod.DataGrid {
   def this(options: IOptions) = this()
 }
-
 @JSImport("@lumino/datagrid", "DataGrid")
 @js.native
 object DataGrid extends js.Object {
-  /**
-    * The default copy config for a data grid.
-    */
-  val defaultCopyConfig: CopyConfig = js.native
-  /**
-    * The default sizes for a data grid.
-    */
-  val defaultSizes: DefaultSizes_ = js.native
-  /**
-    * The default theme for a data grid.
-    */
-  val defaultStyle: Style = js.native
+  
   /**
     * A generic format function for the copy handler.
     *
@@ -47,5 +35,19 @@ object DataGrid extends js.Object {
     * This function uses `String()` to coerce a value to a string.
     */
   def copyFormatGeneric(args: CopyFormatArgs): String = js.native
+  
+  /**
+    * The default copy config for a data grid.
+    */
+  val defaultCopyConfig: CopyConfig = js.native
+  
+  /**
+    * The default sizes for a data grid.
+    */
+  val defaultSizes: DefaultSizes_ = js.native
+  
+  /**
+    * The default theme for a data grid.
+    */
+  val defaultStyle: Style = js.native
 }
-

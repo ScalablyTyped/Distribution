@@ -10,9 +10,9 @@ A JavaScript mock Date object that can be used to change when "now" is.
 | ------------------ | :-------------: |
 | Full name          | mockdate |
 | Keywords           | date, mock, test |
-| # releases         | 4 |
+| # releases         | 7 |
 | # dependents       | 34 |
-| # downloads        | 9440613 |
+| # downloads        | 15905941 |
 | # stars            | 5 |
 
 ## Links

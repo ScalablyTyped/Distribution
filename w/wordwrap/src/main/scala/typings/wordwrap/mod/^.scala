@@ -2,11 +2,12 @@ package typings.wordwrap.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wordwrap", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Pad out lines with spaces out to column `start` and then wrap until column
     * `stop`. If a word is longer than `stop - start` characters it will overflow.
@@ -25,4 +26,3 @@ object ^ extends js.Object {
   def apply(stop: Double): Wrap = js.native
   def apply(stop: Double, params: typings.wordwrap.anon.Mode): Wrap = js.native
 }
-

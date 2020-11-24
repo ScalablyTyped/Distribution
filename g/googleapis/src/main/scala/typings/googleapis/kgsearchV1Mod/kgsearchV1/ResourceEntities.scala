@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/kgsearch/v1", "kgsearch_v1.Resource$Entities")
 @js.native
 class ResourceEntities protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * kgsearch.entities.search
     * @desc Searches Knowledge Graph for entities that match the constraints. A
@@ -50,4 +52,3 @@ class ResourceEntities protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSearchResponse]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.backoff.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backoff", "BackoffStrategy")
 @js.native
@@ -15,17 +15,22 @@ import scala.scalajs.js.annotation._
   */
 abstract class BackoffStrategy () extends js.Object {
   def this(options: Options) = this()
+  
   def getInitialDelay(): Double = js.native
+  
   def getMaxDelay(): Double = js.native
+  
   /**
     * Computes and returns the next backoff delay.
     */
   def next(): Double = js.native
+  
   /* protected */ def next_(): Double = js.native
+  
   /**
     * Resets the backoff delay to its initial value.
     */
   def reset(): Unit = js.native
+  
   /* protected */ def reset_(): Unit = js.native
 }
-

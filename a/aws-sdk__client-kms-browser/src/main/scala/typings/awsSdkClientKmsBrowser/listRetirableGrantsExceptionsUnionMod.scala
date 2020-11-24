@@ -2,11 +2,12 @@ package typings.awsSdkClientKmsBrowser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kms-browser/types/ListRetirableGrantsExceptionsUnion", JSImport.Namespace)
 @js.native
 object listRetirableGrantsExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientKmsBrowser.typesDependencyTimeoutExceptionMod.DependencyTimeoutException
     - typings.awsSdkClientKmsBrowser.typesInvalidMarkerExceptionMod.InvalidMarkerException
@@ -15,6 +16,4 @@ object listRetirableGrantsExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientKmsBrowser.typesKmsinternalexceptionMod.KMSInternalException
   */
   trait ListRetirableGrantsExceptionsUnion extends js.Object
-  
 }
-

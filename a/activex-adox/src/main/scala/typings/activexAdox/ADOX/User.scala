@@ -5,19 +5,16 @@ import typings.activexAdodb.ADODB.Property
 import typings.activexAdox.activexAdoxNumbers.`-1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait User extends js.Object {
+  
   @JSName("ADOX.User_typekey")
   var ADOXDotUser_typekey: User = js.native
-  @JSName("Groups")
-  val Groups_Original: Groups = js.native
-  var Name: String = js.native
-  var ParentCatalog: Catalog = js.native
-  @JSName("Properties")
-  val Properties_Original: Properties = js.native
+  
   def ChangePassword(OldPassword: String, NewPassword: String): Unit = js.native
+  
   def GetPermissions(Name: String, ObjectType: ObjectTypeEnum): RightsEnum = js.native
   def GetPermissions(Name: Null, ObjectType: ObjectTypeEnum): RightsEnum = js.native
   /**
@@ -28,10 +25,21 @@ trait User extends js.Object {
   def GetPermissions_1(Name: String, ObjectType: `-1`, ObjectTypeId: js.Any): RightsEnum = js.native
   @JSName("GetPermissions")
   def GetPermissions_1(Name: Null, ObjectType: `-1`, ObjectTypeId: js.Any): RightsEnum = js.native
+  
   def Groups(Item: String): Group = js.native
   def Groups(Item: Double): Group = js.native
+  @JSName("Groups")
+  val Groups_Original: Groups = js.native
+  
+  var Name: String = js.native
+  
+  var ParentCatalog: Catalog = js.native
+  
   def Properties(Index: String): Property = js.native
   def Properties(Index: Double): Property = js.native
+  @JSName("Properties")
+  val Properties_Original: Properties = js.native
+  
   def SetPermissions(Name: String, ObjectType: ObjectTypeEnum, Action: ActionEnum, Rights: RightsEnum): Unit = js.native
   def SetPermissions(
     Name: String,
@@ -55,4 +63,3 @@ trait User extends js.Object {
     ObjectTypeId: js.Any
   ): Unit = js.native
 }
-

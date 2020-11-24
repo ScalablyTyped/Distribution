@@ -2,7 +2,7 @@ package typings.fibjs.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_WebSocket")
 @js.native
@@ -23,4 +23,3 @@ class ClassWebSocket protected ()
   def this(url: String, protocol: js.UndefOr[scala.Nothing], origin: String) = this()
   def this(url: String, protocol: String, origin: String) = this()
 }
-

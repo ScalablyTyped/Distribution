@@ -9,9 +9,9 @@ Amazingly short non-sequential url-friendly unique id generator.
 | ------------------ | :-------------: |
 | Full name          | shortid |
 | Keywords           | short, tiny, id, uuid, bitly, shorten, mongoid, shortid, tinyid |
-| # releases         | 8 |
-| # dependents       | 1891 |
-| # downloads        | 25662004 |
+| # releases         | 3 |
+| # dependents       | 2344 |
+| # downloads        | 52310523 |
 | # stars            | 195 |
 
 ## Links

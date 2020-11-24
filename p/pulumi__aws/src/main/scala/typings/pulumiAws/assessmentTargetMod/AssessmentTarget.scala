@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/inspector/assessmentTarget", "AssessmentTarget")
 @js.native
@@ -23,24 +23,27 @@ class AssessmentTarget protected () extends CustomResource {
   def this(name: String, args: AssessmentTargetArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: AssessmentTargetArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The target assessment ARN.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The name of the assessment target.
     */
   val name: Output_[String] = js.native
+  
   /**
     * Inspector Resource Group Amazon Resource Name (ARN) stating tags for instance matching. If not specified, all EC2 instances in the current AWS account and region are included in the assessment target.
     */
   val resourceGroupArn: Output_[js.UndefOr[String]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/inspector/assessmentTarget", "AssessmentTarget")
 @js.native
 object AssessmentTarget extends js.Object {
+  
   /**
     * Get an existing AssessmentTarget resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -54,10 +57,10 @@ object AssessmentTarget extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AssessmentTarget = js.native
   def get(name: String, id: Input[ID], state: AssessmentTargetState): AssessmentTarget = js.native
   def get(name: String, id: Input[ID], state: AssessmentTargetState, opts: CustomResourceOptions): AssessmentTarget = js.native
+  
   /**
     * Returns true if the given object is an instance of AssessmentTarget.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTarget.AssessmentTarget */ Boolean = js.native
 }
-

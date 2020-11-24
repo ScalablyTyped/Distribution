@@ -4,7 +4,7 @@ import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "MotionBlurPostProcess")
 @js.native
@@ -20,109 +20,32 @@ class MotionBlurPostProcess protected ()
     * @param engine The engine which the post process will be applied. (default: current engine)
     * @param reusable If the post process can be reused on the same frame. (default: false)
     * @param textureType Type of textures used when performing the post process. (default: 0)
-    * @param blockCompilation If compilation of the shader should not be done in the constructor. The updateEffect method can be used to compile the shader at a later time. (default: false)
+    * @param blockCompilation If compilation of the shader should not be done in the constructor. The updateEffect method can be used to compile the shader at a later time. (default: true)
+    * @param forceGeometryBuffer If this post process should use geometry buffer instead of prepass (default: false)
     */
   def this(
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
-    options: Double,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera]
-  ) = this()
-  def this(
-    name: String,
-    scene: typings.babylonjs.sceneMod.Scene,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera]
-  ) = this()
-  def this(
-    name: String,
-    scene: typings.babylonjs.sceneMod.Scene,
-    options: Double,
+    options: Double | PostProcessOptions,
     camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    scene: typings.babylonjs.sceneMod.Scene,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    scene: typings.babylonjs.sceneMod.Scene,
-    options: Double,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine
-  ) = this()
-  def this(
-    name: String,
-    scene: typings.babylonjs.sceneMod.Scene,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine
-  ) = this()
-  def this(
-    name: String,
-    scene: typings.babylonjs.sceneMod.Scene,
-    options: Double,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    scene: typings.babylonjs.sceneMod.Scene,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
-    reusable: Boolean
-  ) = this()
-  def this(
-    name: String,
-    scene: typings.babylonjs.sceneMod.Scene,
-    options: Double,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
-    reusable: Boolean,
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    scene: typings.babylonjs.sceneMod.Scene,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
-    reusable: Boolean,
-    textureType: Double
-  ) = this()
-  def this(
-    name: String,
-    scene: typings.babylonjs.sceneMod.Scene,
-    options: Double,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
-    reusable: Boolean,
-    textureType: Double,
-    blockCompilation: Boolean
-  ) = this()
-  def this(
-    name: String,
-    scene: typings.babylonjs.sceneMod.Scene,
-    options: PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
-    reusable: Boolean,
-    textureType: Double,
-    blockCompilation: Boolean
+    samplingMode: js.UndefOr[Double],
+    engine: js.UndefOr[typings.babylonjs.engineMod.Engine],
+    reusable: js.UndefOr[Boolean],
+    textureType: js.UndefOr[Double],
+    blockCompilation: js.UndefOr[Boolean],
+    forceGeometryBuffer: js.UndefOr[Boolean]
   ) = this()
 }
-
+/* static members */
+@JSImport("babylonjs/index", "MotionBlurPostProcess")
+@js.native
+object MotionBlurPostProcess extends js.Object {
+  
+  /** @hidden */
+  def _Parse(
+    parsedPostProcess: js.Any,
+    targetCamera: typings.babylonjs.cameraMod.Camera,
+    scene: typings.babylonjs.sceneMod.Scene,
+    rootUrl: String
+  ): Nullable[typings.babylonjs.motionBlurPostProcessMod.MotionBlurPostProcess] = js.native
+}

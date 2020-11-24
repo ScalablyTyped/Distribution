@@ -1,7 +1,7 @@
 
 # Scala.js typings for find-up
 
-Typings are for version 4.1.0
+Typings are for version 5.0.0
 
 ## Library description:
 Find a file or directory by walking up parent directories
@@ -11,8 +11,8 @@ Find a file or directory by walking up parent directories
 | Full name          | find-up |
 | Keywords           | find, up, find-up, findup, look-up, look, file, search, match, package, resolve, parent, parents, folder, directory, walk, walking, path |
 | # releases         | 4 |
-| # dependents       | 1016 |
-| # downloads        | 1082307150 |
+| # dependents       | 1325 |
+| # downloads        | 1788698380 |
 | # stars            | 13 |
 
 ## Links

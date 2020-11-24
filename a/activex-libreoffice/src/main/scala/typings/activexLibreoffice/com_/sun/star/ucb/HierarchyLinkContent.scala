@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A HCP {@link Link} is a content which points to another location.
@@ -33,8 +33,8 @@ trait HierarchyLinkContent
      with XPropertySetInfoChangeNotifier
      with XCommandInfoChangeNotifier
      with XChild
-
 object HierarchyLinkContent {
+  
   @scala.inline
   def apply(
     ContentType: String,
@@ -69,4 +69,3 @@ object HierarchyLinkContent {
     __obj.asInstanceOf[HierarchyLinkContent]
   }
 }
-

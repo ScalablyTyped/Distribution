@@ -8,15 +8,16 @@ import typings.uirouterCore.transitionInterfaceMod.TreeChanges
 import typings.uirouterCore.transitionTransitionMod.Transition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/transition/hookBuilder", JSImport.Namespace)
 @js.native
 object hookBuilderMod extends js.Object {
+  
   @js.native
   class HookBuilder protected () extends js.Object {
     def this(transition: Transition) = this()
-    var transition: js.Any = js.native
+    
     /**
       * Returns an array of newly built TransitionHook objects.
       *
@@ -27,7 +28,9 @@ object hookBuilderMod extends js.Object {
       * @param hookType the type of the hook registration function, e.g., 'onEnter', 'onFinish'.
       */
     def buildHooks(hookType: TransitionEventType): js.Array[TransitionHook] = js.native
+    
     def buildHooksForPhase(phase: TransitionHookPhase): js.Array[TransitionHook] = js.native
+    
     /**
       * Finds all RegisteredHooks from:
       * - The Transition object instance hook registry
@@ -40,7 +43,7 @@ object hookBuilderMod extends js.Object {
       * @returns an array of matched [[RegisteredHook]]s
       */
     def getMatchingHooks(hookType: TransitionEventType, treeChanges: TreeChanges, transition: Transition): js.Array[RegisteredHook] = js.native
+    
+    var transition: js.Any = js.native
   }
-  
 }
-

@@ -11,8 +11,8 @@ an operating-system utility library
 | Full name          | os-utils |
 | Keywords           | os, operating system, server, memory, cpu, monitor, stats, harddrive |
 | # releases         | 0 |
-| # dependents       | 67 |
-| # downloads        | 429749 |
+| # dependents       | 86 |
+| # downloads        | 530638 |
 | # stars            | 6 |
 
 ## Links

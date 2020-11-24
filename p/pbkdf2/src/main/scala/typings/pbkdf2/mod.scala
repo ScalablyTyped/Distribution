@@ -14,11 +14,12 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pbkdf2", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def pbkdf2(
     password: String,
     salt: String,
@@ -259,6 +260,7 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  
   def pbkdf2Sync(password: String, salt: String, iterations: Double, keylen: Double): Buffer = js.native
   def pbkdf2Sync(password: String, salt: String, iterations: Double, keylen: Double, digest: String): Buffer = js.native
   def pbkdf2Sync(password: String, salt: Buffer, iterations: Double, keylen: Double): Buffer = js.native
@@ -291,7 +293,7 @@ object mod extends js.Object {
   def pbkdf2Sync(password: DataView, salt: TypedArray, iterations: Double, keylen: Double, digest: String): Buffer = js.native
   def pbkdf2Sync(password: DataView, salt: DataView, iterations: Double, keylen: Double): Buffer = js.native
   def pbkdf2Sync(password: DataView, salt: DataView, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  
   // No need to export this
   type TypedArray = Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array
 }
-

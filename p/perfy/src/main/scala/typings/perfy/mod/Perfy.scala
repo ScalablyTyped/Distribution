@@ -2,23 +2,27 @@ package typings.perfy.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Perfy extends js.Object {
+  
   /**
     * Gets the total number of existing performance instances.
     */
   def count(): Double = js.native
+  
   /**
     * Destroys the performance instance with the given name.
     * @param name - Name of the performance instance to be destroyed.
     */
   def destroy(name: String): this.type = js.native
+  
   /**
     * Destroys all existing performance instances.
     */
   def destroyAll(): this.type = js.native
+  
   /**
     * Ends the performance instance with the given name;
     * and calculates the elapsed high-resolution real time.
@@ -26,6 +30,7 @@ trait Perfy extends js.Object {
     * @param name - Unique name of the performance instance to be ended
     */
   def end(name: String): PerfyResult = js.native
+  
   def exec(fn: AsyncOperationFn): this.type = js.native
   def exec(fn: SyncOperationFn): PerfyResult = js.native
   /**
@@ -39,15 +44,18 @@ trait Perfy extends js.Object {
     * You should omit the done argument if it's a synchronous operation.
     */
   def exec(name: String, fn: AsyncOperationFn): this.type = js.native
+  
   /**
     * Specifies whether a performance instance exists with the given name. This method will return false for an item, if called after .end(name) is called since the instance is destroyed
     * @param name - Unique name of the performance instance.
     */
   def exists(name: String): Boolean = js.native
+  
   /**
     * Gets the names of existing performance instances.
     */
   def names(): js.Array[String] = js.native
+  
   /**
     * Gets the calculated result of the performance instance for the given name.
     * To be used with non-destroyed, ended instances.
@@ -55,6 +63,7 @@ trait Perfy extends js.Object {
     * @param name - Unique name of the performance instance.
     */
   def result(name: String): PerfyResult | Null = js.native
+  
   /**
     * Initializes a new performance instance with the given name;
     * and marks the current high-resolution real time.
@@ -65,4 +74,3 @@ trait Perfy extends js.Object {
   def start(name: String): this.type = js.native
   def start(name: String, autoDestroy: Boolean): this.type = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.locutus.arrayMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("locutus/php/array", "array_slice")
 @js.native
 object arraySlice extends js.Object {
+  
   def apply(): js.Any = js.native
   def apply(
     arr: js.UndefOr[scala.Nothing],
@@ -44,4 +45,3 @@ object arraySlice extends js.Object {
   def apply(arr: js.Any, offst: js.Any, lgth: js.Any): js.Any = js.native
   def apply(arr: js.Any, offst: js.Any, lgth: js.Any, preserveKeys: js.Any): js.Any = js.native
 }
-

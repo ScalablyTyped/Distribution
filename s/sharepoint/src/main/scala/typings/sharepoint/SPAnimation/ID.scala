@@ -2,14 +2,14 @@ package typings.sharepoint.SPAnimation
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ID extends js.Object
-
 @JSGlobal("SPAnimation.ID")
 @js.native
 object ID extends js.Object {
+  
   @js.native
   sealed trait Basic_Fade extends ID
   
@@ -75,6 +75,4 @@ object ID extends js.Object {
   
   @js.native
   sealed trait Test_Instant extends ID
-  
 }
-

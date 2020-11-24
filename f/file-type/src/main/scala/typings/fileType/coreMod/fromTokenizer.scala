@@ -3,11 +3,12 @@ package typings.fileType.coreMod
 import typings.strtok3.typesMod.ITokenizer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("file-type/core", "fromTokenizer")
 @js.native
 object fromTokenizer extends js.Object {
+  
   /**
   	Detect the file type from an [`ITokenizer`](https://github.com/Borewit/strtok3#tokenizer) source.
   	This method is used internally, but can also be used for a special "tokenizer" reader.
@@ -29,4 +30,3 @@ object fromTokenizer extends js.Object {
   	*/
   def apply(tokenizer: ITokenizer): js.Promise[js.UndefOr[FileTypeResult]] = js.native
 }
-

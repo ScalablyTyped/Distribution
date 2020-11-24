@@ -10,15 +10,12 @@ ProseMirror editor state
 | ------------------ | :-------------: |
 | Full name          | prosemirror-state |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 132 |
-| # downloads        | 2567636 |
+| # releases         | 7 |
+| # dependents       | 211 |
+| # downloads        | 5011348 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/prosemirror/prosemirror-state#readme)
-- [Bugs](https://github.com/prosemirror/prosemirror-state/issues)
-- [Repository](https://github.com/prosemirror/prosemirror-state)
 - [Npm](https://www.npmjs.com/package/prosemirror-state)
     
 

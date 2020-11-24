@@ -2,7 +2,7 @@ package typings.googlepay.google.payments.api
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Billing address format enum string.
@@ -44,11 +44,11 @@ import scala.scalajs.js.annotation._
   - typings.googlepay.googlepayStrings.FULL
 */
 trait BillingAddressFormat extends js.Object
-
 object BillingAddressFormat {
+  
   @scala.inline
   def FULL: typings.googlepay.googlepayStrings.FULL = "FULL".asInstanceOf[typings.googlepay.googlepayStrings.FULL]
+  
   @scala.inline
   def MIN: typings.googlepay.googlepayStrings.MIN = "MIN".asInstanceOf[typings.googlepay.googlepayStrings.MIN]
 }
-

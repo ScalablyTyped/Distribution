@@ -2,14 +2,18 @@ package typings.activexInfopath.InfoPath
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UI extends js.Object {
+  
+  def Alert(bstrAlertString: String): Unit = js.native
+  
   @JSName("InfoPath.UI_typekey")
   var InfoPathDotUI_typekey: UI = js.native
-  def Alert(bstrAlertString: String): Unit = js.native
+  
   def ShowMailItem(bstrTo: String, bstrCC: String, bstrBCC: String, bstrSubject: String, bstrBody: String): Unit = js.native
+  
   def ShowModalDialog(bstrName: String): js.Any = js.native
   def ShowModalDialog(
     bstrName: String,
@@ -201,6 +205,6 @@ trait UI extends js.Object {
     varTop: js.Any,
     varLeft: js.Any
   ): js.Any = js.native
+  
   def ShowSignatureDialog(): Unit = js.native
 }
-

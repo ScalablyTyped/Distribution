@@ -2,7 +2,7 @@ package typings.openlayers.mod.format.filter
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -38,4 +38,3 @@ class ComparisonBinary protected () extends Comparison {
   def this(tagName: String, propertyName: String, expression: String, opt_matchCase: Boolean) = this()
   def this(tagName: String, propertyName: String, expression: Double, opt_matchCase: Boolean) = this()
 }
-

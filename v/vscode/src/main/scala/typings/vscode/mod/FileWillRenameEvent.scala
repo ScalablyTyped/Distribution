@@ -4,14 +4,16 @@ import typings.vscode.Thenable
 import typings.vscode.anon.NewUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FileWillRenameEvent extends js.Object {
+  
   /**
     * The files that are going to be renamed.
     */
   val files: js.Array[NewUri] = js.native
+  
   /**
     * Allows to pause the event and to apply a [workspace edit](#WorkspaceEdit).
     *
@@ -39,4 +41,3 @@ trait FileWillRenameEvent extends js.Object {
     */
   def waitUntil(thenable: Thenable[_ | WorkspaceEdit]): Unit = js.native
 }
-

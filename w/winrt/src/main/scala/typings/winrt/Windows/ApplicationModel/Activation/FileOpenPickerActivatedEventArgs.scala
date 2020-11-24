@@ -3,12 +3,12 @@ package typings.winrt.Windows.ApplicationModel.Activation
 import typings.winrt.Windows.Storage.Pickers.Provider.FileOpenPickerUI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FileOpenPickerActivatedEventArgs extends IFileOpenPickerActivatedEventArgs
-
 object FileOpenPickerActivatedEventArgs {
+  
   @scala.inline
   def apply(
     fileOpenPickerUI: FileOpenPickerUI,
@@ -20,4 +20,3 @@ object FileOpenPickerActivatedEventArgs {
     __obj.asInstanceOf[FileOpenPickerActivatedEventArgs]
   }
 }
-

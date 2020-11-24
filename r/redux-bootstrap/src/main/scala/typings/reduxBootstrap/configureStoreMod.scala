@@ -9,11 +9,12 @@ import typings.redux.mod.StoreEnhancer
 import typings.reduxBootstrap.interfacesMod.interfaces.DevToolsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-bootstrap/dts/store/configure_store", JSImport.Namespace)
 @js.native
 object configureStoreMod extends js.Object {
+  
   def default(
     middlewares: js.Array[Middleware[js.Object, _, Dispatch[AnyAction]]],
     enhancers: js.Array[StoreEnhancer[_, js.Object]],
@@ -22,4 +23,3 @@ object configureStoreMod extends js.Object {
     devToolsOptions: DevToolsOptions
   ): Store[_, AnyAction] = js.native
 }
-

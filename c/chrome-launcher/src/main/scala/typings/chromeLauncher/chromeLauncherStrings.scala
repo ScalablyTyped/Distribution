@@ -3,9 +3,70 @@ package typings.chromeLauncher
 import typings.chromeLauncher.utilsMod.LaunchErrorCodes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chromeLauncherStrings {
+  
+  @scala.inline
+  def ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY: ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY = "ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY".asInstanceOf[ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY]
+  
+  @scala.inline
+  def ERR_LAUNCHER_NOT_INSTALLED: ERR_LAUNCHER_NOT_INSTALLED = "ERR_LAUNCHER_NOT_INSTALLED".asInstanceOf[ERR_LAUNCHER_NOT_INSTALLED]
+  
+  @scala.inline
+  def ERR_LAUNCHER_PATH_NOT_SET: ERR_LAUNCHER_PATH_NOT_SET = "ERR_LAUNCHER_PATH_NOT_SET".asInstanceOf[ERR_LAUNCHER_PATH_NOT_SET]
+  
+  @scala.inline
+  def ERR_LAUNCHER_UNSUPPORTED_PLATFORM: ERR_LAUNCHER_UNSUPPORTED_PLATFORM = "ERR_LAUNCHER_UNSUPPORTED_PLATFORM".asInstanceOf[ERR_LAUNCHER_UNSUPPORTED_PLATFORM]
+  
+  @scala.inline
+  def aix: aix = "aix".asInstanceOf[aix]
+  
+  @scala.inline
+  def android: android = "android".asInstanceOf[android]
+  
+  @scala.inline
+  def buffer: buffer = "buffer".asInstanceOf[buffer]
+  
+  @scala.inline
+  def cygwin: cygwin = "cygwin".asInstanceOf[cygwin]
+  
+  @scala.inline
+  def darwin: darwin = "darwin".asInstanceOf[darwin]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def freebsd: freebsd = "freebsd".asInstanceOf[freebsd]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def linux: linux = "linux".asInstanceOf[linux]
+  
+  @scala.inline
+  def netbsd: netbsd = "netbsd".asInstanceOf[netbsd]
+  
+  @scala.inline
+  def openbsd: openbsd = "openbsd".asInstanceOf[openbsd]
+  
+  @scala.inline
+  def silent: silent = "silent".asInstanceOf[silent]
+  
+  @scala.inline
+  def sunos: sunos = "sunos".asInstanceOf[sunos]
+  
+  @scala.inline
+  def verbose: verbose = "verbose".asInstanceOf[verbose]
+  
+  @scala.inline
+  def win32: win32 = "win32".asInstanceOf[win32]
+  
+  @scala.inline
+  def wsl: wsl = "wsl".asInstanceOf[wsl]
+  
   @js.native
   sealed trait ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY extends LaunchErrorCodes
   
@@ -65,46 +126,4 @@ object chromeLauncherStrings {
   
   @js.native
   sealed trait wsl extends js.Object
-  
-  @scala.inline
-  def ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY: ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY = "ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY".asInstanceOf[ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY]
-  @scala.inline
-  def ERR_LAUNCHER_NOT_INSTALLED: ERR_LAUNCHER_NOT_INSTALLED = "ERR_LAUNCHER_NOT_INSTALLED".asInstanceOf[ERR_LAUNCHER_NOT_INSTALLED]
-  @scala.inline
-  def ERR_LAUNCHER_PATH_NOT_SET: ERR_LAUNCHER_PATH_NOT_SET = "ERR_LAUNCHER_PATH_NOT_SET".asInstanceOf[ERR_LAUNCHER_PATH_NOT_SET]
-  @scala.inline
-  def ERR_LAUNCHER_UNSUPPORTED_PLATFORM: ERR_LAUNCHER_UNSUPPORTED_PLATFORM = "ERR_LAUNCHER_UNSUPPORTED_PLATFORM".asInstanceOf[ERR_LAUNCHER_UNSUPPORTED_PLATFORM]
-  @scala.inline
-  def aix: aix = "aix".asInstanceOf[aix]
-  @scala.inline
-  def android: android = "android".asInstanceOf[android]
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
-  @scala.inline
-  def cygwin: cygwin = "cygwin".asInstanceOf[cygwin]
-  @scala.inline
-  def darwin: darwin = "darwin".asInstanceOf[darwin]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def freebsd: freebsd = "freebsd".asInstanceOf[freebsd]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def linux: linux = "linux".asInstanceOf[linux]
-  @scala.inline
-  def netbsd: netbsd = "netbsd".asInstanceOf[netbsd]
-  @scala.inline
-  def openbsd: openbsd = "openbsd".asInstanceOf[openbsd]
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
-  @scala.inline
-  def sunos: sunos = "sunos".asInstanceOf[sunos]
-  @scala.inline
-  def verbose: verbose = "verbose".asInstanceOf[verbose]
-  @scala.inline
-  def win32: win32 = "win32".asInstanceOf[win32]
-  @scala.inline
-  def wsl: wsl = "wsl".asInstanceOf[wsl]
 }
-

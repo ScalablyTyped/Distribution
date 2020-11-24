@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Courses$Coursework")
 @js.native
 class ResourceCoursesCoursework protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var studentSubmissions: ResourceCoursesCourseworkStudentsubmissions = js.native
+  
   /**
     * classroom.courses.courseWork.create
     * @desc Creates course work.  The resulting course work (and corresponding
@@ -54,6 +55,7 @@ class ResourceCoursesCoursework protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCourseWork]
   ): Unit = js.native
+  
   /**
     * classroom.courses.courseWork.delete
     * @desc Deletes a course work.  This request must be made by the Developer
@@ -91,6 +93,7 @@ class ResourceCoursesCoursework protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * classroom.courses.courseWork.get
     * @desc Returns course work.  This method returns the following error
@@ -124,6 +127,7 @@ class ResourceCoursesCoursework protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCourseWork]
   ): Unit = js.native
+  
   /**
     * classroom.courses.courseWork.list
     * @desc Returns a list of course work that the requester is permitted to
@@ -165,6 +169,7 @@ class ResourceCoursesCoursework protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListCourseWorkResponse]
   ): Unit = js.native
+  
   /**
     * classroom.courses.courseWork.modifyAssignees
     * @desc Modifies assignee mode and options of a coursework.  Only a teacher
@@ -204,6 +209,7 @@ class ResourceCoursesCoursework protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCourseWork]
   ): Unit = js.native
+  
   /**
     * classroom.courses.courseWork.patch
     * @desc Updates one or more fields of a course work.  See
@@ -247,5 +253,6 @@ class ResourceCoursesCoursework protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCourseWork]
   ): Unit = js.native
+  
+  var studentSubmissions: ResourceCoursesCourseworkStudentsubmissions = js.native
 }
-

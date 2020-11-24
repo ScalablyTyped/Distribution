@@ -6,11 +6,12 @@ import typings.jsonSchema.mod.JSONSchema7
 import typings.jsonSchemaMergeAllof.anon.IgnoreAdditionalProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("json-schema-merge-allof", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(rootSchema: JSONSchema4): JSONSchema4 = js.native
   def apply(
     rootSchema: JSONSchema4,
@@ -29,4 +30,3 @@ object ^ extends js.Object {
   def apply(rootSchema: JSONSchema46): JSONSchema46 = js.native
   def apply(rootSchema: JSONSchema46, options: Options_[JSONSchema46]): JSONSchema46 = js.native
 }
-

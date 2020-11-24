@@ -11,7 +11,7 @@ Secure Remote Password (SRP)
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 1176 |
+| # downloads        | 868 |
 | # stars            | 0 |
 
 ## Links

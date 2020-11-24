@@ -4,15 +4,15 @@
 Typings are for version 1.10
 
 ## Library description:
-JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery required. Supports Meteor, AngularJS, React, Polymer, Vue, Knockout and any CSS library, e.g. Bootstrap.
+JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sortablejs |
 | Keywords           | sortable, reorder, drag, meteor, angular, ng-sortable, react, vue, mixin |
-| # releases         | 14 |
-| # dependents       | 426 |
-| # downloads        | 11295149 |
+| # releases         | 18 |
+| # dependents       | 692 |
+| # downloads        | 20769400 |
 | # stars            | 20 |
 
 ## Links

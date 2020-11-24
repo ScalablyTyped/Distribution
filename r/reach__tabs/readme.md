@@ -10,9 +10,9 @@ Accessible React Tabs Component
 | ------------------ | :-------------: |
 | Full name          | @reach/tabs |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 13 |
-| # downloads        | 362814 |
+| # releases         | 39 |
+| # dependents       | 33 |
+| # downloads        | 2574095 |
 | # stars            | 0 |
 
 ## Links

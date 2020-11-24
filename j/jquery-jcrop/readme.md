@@ -4,19 +4,21 @@
 Typings are for version 2.0
 
 ## Library description:
-Image cropping plugin for jQuery
+Jcrop Javascript Image Cropper
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | jquery-jcrop |
-| Keywords           | img, image, form, crop, cropping, cropper |
-| # releases         | 1 |
+| Keywords           | jcrop, image, cropping, ui |
+| # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 289903 |
+| # downloads        | 398695 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/tapmodo/Jcrop)
+- [Homepage](https://github.com/tapmodo/Jcrop#readme)
+- [Bugs](https://github.com/tapmodo/Jcrop/issues)
+- [Repository](https://github.com/tapmodo/Jcrop)
 - [Npm](https://www.npmjs.com/package/jquery-jcrop)
     
 

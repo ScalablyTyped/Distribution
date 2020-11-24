@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Changelogs")
 @js.native
 class ResourceChangelogs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.changeLogs.get
     * @desc Gets one change log by ID.
@@ -42,6 +44,7 @@ class ResourceChangelogs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChangeLog]
   ): Unit = js.native
+  
   /**
     * dfareporting.changeLogs.list
     * @desc Retrieves a list of change logs. This method supports paging.
@@ -81,4 +84,3 @@ class ResourceChangelogs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaChangeLogsListResponse]
   ): Unit = js.native
 }
-

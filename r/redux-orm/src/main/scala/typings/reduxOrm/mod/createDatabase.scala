@@ -7,11 +7,12 @@ import typings.reduxOrm.ormMod.IndexedModelClasses
 import typings.std.Extract
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-orm", "createDatabase")
 @js.native
 object createDatabase extends js.Object {
+  
   def apply[I /* <: IndexedModelClasses[
     _, 
     Extract[
@@ -25,4 +26,3 @@ object createDatabase extends js.Object {
     */ typings.reduxOrm.reduxOrmStrings.createDatabase with TopLevel[I]
   ] = js.native
 }
-

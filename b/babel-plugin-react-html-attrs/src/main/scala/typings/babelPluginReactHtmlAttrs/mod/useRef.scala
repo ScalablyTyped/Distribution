@@ -2,11 +2,12 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babel-plugin-react-html-attrs", "useRef")
 @js.native
 object useRef extends js.Object {
+  
   // convenience overload for refs given as a ref prop as they typically start with a null value
   /**
     * `useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument
@@ -25,4 +26,3 @@ object useRef extends js.Object {
   def apply[T](): RefObject[T] = js.native
   def apply[T](initialValue: T): RefObject[T] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.twilioSync.listitemMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
@@ -26,4 +26,3 @@ class default protected () extends ListItem {
     */
   def this(data: ListItemDescriptor) = this()
 }
-

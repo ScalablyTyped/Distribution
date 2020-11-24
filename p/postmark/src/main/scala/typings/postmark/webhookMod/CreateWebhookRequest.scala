@@ -3,7 +3,7 @@ package typings.postmark.webhookMod
 import typings.postmark.messageSupportingTypesMod.Header
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark/dist/client/models/webhooks/Webhook", "CreateWebhookRequest")
 @js.native
@@ -59,4 +59,3 @@ class CreateWebhookRequest () extends UpdateWebhookRequest {
   ) = this()
   def this(url: String, triggers: WebhookRequestTriggers, httpAuth: HttpAuth, httpHeaders: js.Array[Header]) = this()
 }
-

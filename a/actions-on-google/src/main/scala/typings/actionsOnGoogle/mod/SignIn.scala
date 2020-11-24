@@ -2,7 +2,7 @@ package typings.actionsOnGoogle.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google", "SignIn")
 @js.native
@@ -16,4 +16,3 @@ class SignIn ()
   extends typings.actionsOnGoogle.actionssdkMod.SignIn {
   def this(context: String) = this()
 }
-

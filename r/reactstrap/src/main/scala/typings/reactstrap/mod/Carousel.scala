@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.carouselMod.CarouselProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "Carousel")
+@JSImport("reactstrap/lib", "Carousel")
 @js.native
-class Carousel[T] ()
+class Carousel ()
   extends Component[CarouselProps, js.Object, js.Any]
-

@@ -6,81 +6,102 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesList extends StandardParameters {
+  
   /**
     * Auth client or API Key for the request
     */
   var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  
   /**
     * A tool results execution ID.
     */
   var executionId: js.UndefOr[String] = js.native
+  
   /**
     * Specify one or more PerfMetricType values such as CPU to filter the
     * result
     */
   var filter: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * A tool results history ID.
     */
   var historyId: js.UndefOr[String] = js.native
+  
   /**
     * The cloud project
     */
   var projectId: js.UndefOr[String] = js.native
+  
   /**
     * A tool results step ID.
     */
   var stepId: js.UndefOr[String] = js.native
 }
-
 object ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesList {
+  
   @scala.inline
   def apply(): ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesList]
   }
+  
   @scala.inline
   implicit class ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesListOps[Self <: ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesList] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAuth: Self = this.set("auth", js.undefined)
+    
     @scala.inline
     def setExecutionId(value: String): Self = this.set("executionId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteExecutionId: Self = this.set("executionId", js.undefined)
+    
     @scala.inline
     def setFilterVarargs(value: String*): Self = this.set("filter", js.Array(value :_*))
+    
     @scala.inline
     def setFilter(value: js.Array[String]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFilter: Self = this.set("filter", js.undefined)
+    
     @scala.inline
     def setHistoryId(value: String): Self = this.set("historyId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHistoryId: Self = this.set("historyId", js.undefined)
+    
     @scala.inline
     def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProjectId: Self = this.set("projectId", js.undefined)
+    
     @scala.inline
     def setStepId(value: String): Self = this.set("stepId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStepId: Self = this.set("stepId", js.undefined)
   }
-  
 }
-

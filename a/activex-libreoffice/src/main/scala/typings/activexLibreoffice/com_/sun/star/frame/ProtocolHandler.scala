@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * special dispatch provider registered for URL protocols
@@ -21,8 +21,8 @@ import scala.scalajs.js.annotation._
 trait ProtocolHandler
   extends XDispatchProvider
      with XInitialization
-
 object ProtocolHandler {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -36,4 +36,3 @@ object ProtocolHandler {
     __obj.asInstanceOf[ProtocolHandler]
   }
 }
-

@@ -2,7 +2,7 @@ package typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the retry policy in case of function&#39;s execution failure. A
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaRetry extends js.Object
-

@@ -2,11 +2,12 @@ package typings.registryAuthToken.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("registry-auth-token", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     *
     * @param registryUrl - Either the registry url used
@@ -21,4 +22,3 @@ object ^ extends js.Object {
   def apply(registryUrl: AuthOptions): NpmCredentials = js.native
   def apply(registryUrl: AuthOptions, options: AuthOptions): NpmCredentials = js.native
 }
-

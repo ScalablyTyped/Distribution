@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebasedynamiclinks/v1", "firebasedynamiclinks_v1.Resource$Shortlinks")
 @js.native
 class ResourceShortlinks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * firebasedynamiclinks.shortLinks.create
     * @desc Creates a short Dynamic Link given either a valid long Dynamic Link
@@ -50,4 +52,3 @@ class ResourceShortlinks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCreateShortDynamicLinkResponse]
   ): Unit = js.native
 }
-

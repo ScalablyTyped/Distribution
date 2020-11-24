@@ -11,8 +11,8 @@ A simple React wrapper for the audio tag
 | Full name          | react-audio-player |
 | Keywords           | react, audio, player, wrapper, simple |
 | # releases         | 5 |
-| # dependents       | 13 |
-| # downloads        | 348166 |
+| # dependents       | 18 |
+| # downloads        | 390841 |
 | # stars            | 5 |
 
 ## Links

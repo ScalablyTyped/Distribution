@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium.UI.iOS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The cover flow view is a container showing animated three-dimensional images in a style
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class CoverFlowView ()
   extends typings.titanium.Titanium.UI.iOS.CoverFlowView
-

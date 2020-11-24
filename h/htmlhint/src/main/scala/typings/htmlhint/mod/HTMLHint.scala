@@ -2,14 +2,17 @@ package typings.htmlhint.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("htmlhint", "HTMLHint")
 @js.native
 object HTMLHint extends js.Object {
+  
+  def addRule(rule: Rule): Unit = js.native
+  
   def format(arrMessages: js.Array[LintResult]): js.Array[String] = js.native
   def format(arrMessages: js.Array[LintResult], options: FormatOptions): js.Array[String] = js.native
+  
   def verify(fileContent: String): js.Array[LintResult] = js.native
   def verify(fileContent: String, ruleSet: RuleSet): js.Array[LintResult] = js.native
 }
-

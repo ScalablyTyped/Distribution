@@ -9,9 +9,9 @@ Express 3.x Layout & Partial support.
 | ------------------ | :-------------: |
 | Full name          | express-partials |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 43 |
-| # downloads        | 899169 |
+| # downloads        | 1135823 |
 | # stars            | 5 |
 
 ## Links

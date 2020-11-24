@@ -3,13 +3,15 @@ package typings.luminoCoreutils
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/coreutils/types/random", JSImport.Namespace)
 @js.native
 object randomMod extends js.Object {
+  
   @js.native
   object Random extends js.Object {
+    
     /**
       * A function which generates random bytes.
       *
@@ -29,6 +31,4 @@ object randomMod extends js.Object {
       */
     def getRandomValues(buffer: Uint8Array): Unit = js.native
   }
-  
 }
-

@@ -2,11 +2,13 @@ package typings.phonegap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Database extends js.Object {
+  
   def changeVersion(var1: String, var2: String): Unit = js.native
+  
   def transaction(): Unit = js.native
   def transaction(
     populateDB: js.UndefOr[scala.Nothing],
@@ -32,4 +34,3 @@ trait Database extends js.Object {
     successCB: js.Function0[_]
   ): Unit = js.native
 }
-

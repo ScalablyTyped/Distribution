@@ -3,7 +3,7 @@ package typings.pixiJs.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Two Pi.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "PI_2")
 @js.native
 object PI_2 extends TopLevel[Double]
-

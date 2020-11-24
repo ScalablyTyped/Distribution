@@ -2,7 +2,7 @@ package typings.plottable.mod.Components
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable", "Components.TitleLabel")
 @js.native
@@ -17,11 +17,10 @@ class TitleLabel ()
   def this(text: js.UndefOr[scala.Nothing], angle: Double) = this()
   def this(text: String, angle: Double) = this()
 }
-
 /* static members */
 @JSImport("plottable", "Components.TitleLabel")
 @js.native
 object TitleLabel extends js.Object {
+  
   var TITLE_LABEL_CLASS: String = js.native
 }
-

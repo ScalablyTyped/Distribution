@@ -2,11 +2,12 @@ package typings.babelTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@babel/types", "tsInterfaceDeclaration")
 @js.native
 object tsInterfaceDeclaration extends js.Object {
+  
   def apply(
     id: Identifier_,
     typeParameters: js.UndefOr[scala.Nothing],
@@ -47,4 +48,3 @@ object tsInterfaceDeclaration extends js.Object {
     body: TSInterfaceBody_
   ): TSInterfaceDeclaration_ = js.native
 }
-

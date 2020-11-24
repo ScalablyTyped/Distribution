@@ -10,9 +10,9 @@ A robust Punycode converter that fully complies to RFC 3492 and RFC 5891, and wo
 | ------------------ | :-------------: |
 | Full name          | punycode |
 | Keywords           | punycode, unicode, idn, idna, dns, url, domain |
-| # releases         | 2 |
-| # dependents       | 269 |
-| # downloads        | 1371527309 |
+| # releases         | 0 |
+| # dependents       | 355 |
+| # downloads        | 1795495648 |
 | # stars            | 14 |
 
 ## Links

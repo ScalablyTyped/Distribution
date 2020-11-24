@@ -3,12 +3,12 @@ package typings.winrt.Windows.ApplicationModel.Activation
 import typings.winrt.Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ShareTargetActivatedEventArgs extends IShareTargetActivatedEventArgs
-
 object ShareTargetActivatedEventArgs {
+  
   @scala.inline
   def apply(
     kind: ActivationKind,
@@ -20,4 +20,3 @@ object ShareTargetActivatedEventArgs {
     __obj.asInstanceOf[ShareTargetActivatedEventArgs]
   }
 }
-

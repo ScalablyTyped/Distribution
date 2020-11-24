@@ -2,7 +2,7 @@ package typings.heremaps.H.util.OList
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The event class for events that are dispatched by OList
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Event
   extends typings.heremaps.H.util.Event
-
 object Event {
+  
   @scala.inline
   def apply(
     currentTarget: js.Any,
@@ -30,4 +30,3 @@ object Event {
     __obj.asInstanceOf[Event]
   }
 }
-

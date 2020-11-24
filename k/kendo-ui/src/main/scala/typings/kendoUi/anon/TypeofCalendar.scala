@@ -6,7 +6,7 @@ import typings.kendoUi.kendo.ui.CalendarOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofCalendar
@@ -16,7 +16,8 @@ trait TypeofCalendar
       /* options */ CalendarOptions, 
       typings.kendoUi.kendo.ui.Calendar
     ] {
-  var fn: typings.kendoUi.kendo.ui.Calendar = js.native
+  
   def extend(proto: js.Object): typings.kendoUi.kendo.ui.Calendar = js.native
+  
+  var fn: typings.kendoUi.kendo.ui.Calendar = js.native
 }
-

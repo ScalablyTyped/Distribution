@@ -7,28 +7,11 @@ import typings.socketIoClient.SocketIOClient.ManagerStatic
 import typings.socketIoClient.SocketIOClient.Socket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SocketIOClientStatic extends js.Object {
-  /**
-    * Manager constructor - exposed for the standalone build
-    */
-  @JSName("Manager")
-  var Manager_Original: ManagerStatic = js.native
-  /**
-    * Socket constructor - exposed for the standalone build
-    */
-  var Socket: typings.socketIoClient.SocketIOClient.Socket = js.native
-  /**
-    * Managers cache
-    */
-  var managers: StringDictionary[Manager] = js.native
-  /**
-    * The socket.io protocol revision number this client works with
-    * @default 4
-    */
-  var protocol: Double = js.native
+  
   /**
     * Auto-connects to the window location and defalt namespace.
     * E.g. window.protocol + '//' + window.host + ':80/'
@@ -51,6 +34,7 @@ trait SocketIOClientStatic extends js.Object {
     */
   def apply(uri: String): Socket = js.native
   def apply(uri: String, opts: ConnectOpts): Socket = js.native
+  
   /**
     * Creates a new Manager with the default URI (window host)
     * @param opts Any connection options that we want to use (and pass to engine.io)
@@ -71,6 +55,17 @@ trait SocketIOClientStatic extends js.Object {
   def Manager(uri: String): typings.socketIoClient.SocketIOClient.Manager = js.native
   def Manager(uri: String, opts: ConnectOpts): typings.socketIoClient.SocketIOClient.Manager = js.native
   /**
+    * Manager constructor - exposed for the standalone build
+    */
+  @JSName("Manager")
+  var Manager_Original: ManagerStatic = js.native
+  
+  /**
+    * Socket constructor - exposed for the standalone build
+    */
+  var Socket: typings.socketIoClient.SocketIOClient.Socket = js.native
+  
+  /**
     * @see the default constructor (io(opts))
     */
   def connect(): Socket = js.native
@@ -80,5 +75,15 @@ trait SocketIOClientStatic extends js.Object {
     */
   def connect(uri: String): Socket = js.native
   def connect(uri: String, opts: ConnectOpts): Socket = js.native
+  
+  /**
+    * Managers cache
+    */
+  var managers: StringDictionary[Manager] = js.native
+  
+  /**
+    * The socket.io protocol revision number this client works with
+    * @default 4
+    */
+  var protocol: Double = js.native
 }
-

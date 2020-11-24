@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.RTCPeerConnectionIceErrorEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("RTCPeerConnectionIceErrorEvent")
 @js.native
@@ -12,7 +12,6 @@ class RTCPeerConnectionIceErrorEvent protected ()
   extends typings.std.RTCPeerConnectionIceErrorEvent {
   def this(`type`: java.lang.String, eventInitDict: RTCPeerConnectionIceErrorEventInit) = this()
 }
-
 @JSGlobal("RTCPeerConnectionIceErrorEvent")
 @js.native
 object RTCPeerConnectionIceErrorEvent
@@ -21,4 +20,3 @@ object RTCPeerConnectionIceErrorEvent
       /* eventInitDict */ RTCPeerConnectionIceErrorEventInit, 
       typings.std.RTCPeerConnectionIceErrorEvent
     ]
-

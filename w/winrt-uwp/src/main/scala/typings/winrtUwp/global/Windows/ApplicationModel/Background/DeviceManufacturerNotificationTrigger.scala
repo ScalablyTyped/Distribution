@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that launches a background task to enable device manufacturer operations. */
 @JSGlobal("Windows.ApplicationModel.Background.DeviceManufacturerNotificationTrigger")
@@ -16,4 +16,3 @@ class DeviceManufacturerNotificationTrigger protected ()
     */
   def this(triggerQualifier: String, oneShot: Boolean) = this()
 }
-

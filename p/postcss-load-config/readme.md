@@ -10,15 +10,15 @@ Autoload Config for PostCSS
 | ------------------ | :-------------: |
 | Full name          | postcss-load-config |
 | Keywords           | postcss, postcssrc, postcss.config.js |
-| # releases         | 3 |
-| # dependents       | 180 |
-| # downloads        | 245807038 |
+| # releases         | 2 |
+| # dependents       | 220 |
+| # downloads        | 324896940 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/michael-ciniawsky/postcss-load-config#readme)
-- [Bugs](https://github.com/michael-ciniawsky/postcss-load-config/issues)
-- [Repository](https://github.com/michael-ciniawsky/postcss-load-config)
+- [Homepage](https://github.com/postcss/postcss-load-config#readme)
+- [Bugs](https://github.com/postcss/postcss-load-config/issues)
+- [Repository](https://github.com/postcss/postcss-load-config)
 - [Npm](https://www.npmjs.com/package/postcss-load-config)
     
 

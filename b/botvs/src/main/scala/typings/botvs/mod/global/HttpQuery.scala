@@ -3,11 +3,12 @@ package typings.botvs.mod.global
 import typings.botvs.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("HttpQuery")
 @js.native
 object HttpQuery extends js.Object {
+  
   /**
     * 网络URL访问
     *
@@ -32,4 +33,3 @@ object HttpQuery extends js.Object {
   def apply(Url: String, PostData: Null, Cookies: String, Headers: String): String = js.native
   def apply(Url: String, PostData: Data, Cookies: String, Headers: String): String = js.native
 }
-

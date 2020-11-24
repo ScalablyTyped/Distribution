@@ -5,7 +5,7 @@ import typings.winrtUwp.Windows.Media.Protection.PlayReady.INDMessenger
 import typings.winrtUwp.Windows.Media.Protection.PlayReady.INDStreamParser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Creates PlayReady-ND sessions, coordinates with the download engine and the stream parser (for example, an MPEG-2 demuxer), manages the sample buffer, and listens to media stream source events. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDClient")
@@ -20,4 +20,3 @@ class NDClient protected ()
     */
   def this(downloadEngine: INDDownloadEngine, streamParser: INDStreamParser, pMessenger: INDMessenger) = this()
 }
-

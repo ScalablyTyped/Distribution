@@ -5,11 +5,24 @@ import typings.tensorflowTfjsCore.typesMod.IOHandler
 import typings.tensorflowTfjsCore.typesMod.LoadOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-converter", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def deregisterOp(name: String): Unit = js.native
+  
+  def loadGraphModel(modelUrl: String): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native
+  def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native
+  def loadGraphModel(modelUrl: IOHandler): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native
+  def loadGraphModel(modelUrl: IOHandler, options: LoadOptions): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native
+  
+  def registerOp(name: String, opFunc: OpExecutor): Unit = js.native
+  
+  @JSName("version_converter")
+  val versionConverter: /* "2.7.0" */ String = js.native
+  
   @js.native
   class GraphModel protected ()
     extends typings.tensorflowTfjsConverter.graphModelMod.GraphModel {
@@ -27,14 +40,4 @@ object mod extends js.Object {
     def this(modelUrl: String, loadOptions: LoadOptions) = this()
     def this(modelUrl: IOHandler, loadOptions: LoadOptions) = this()
   }
-  
-  @JSName("version_converter")
-  val versionConverter: /* "2.0.1" */ String = js.native
-  def deregisterOp(name: String): Unit = js.native
-  def loadGraphModel(modelUrl: String): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native
-  def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native
-  def loadGraphModel(modelUrl: IOHandler): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native
-  def loadGraphModel(modelUrl: IOHandler, options: LoadOptions): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native
-  def registerOp(name: String, opFunc: OpExecutor): Unit = js.native
 }
-

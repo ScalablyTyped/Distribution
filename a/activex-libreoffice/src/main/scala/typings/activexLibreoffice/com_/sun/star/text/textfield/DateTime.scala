@@ -12,7 +12,7 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a date or time text field.
@@ -20,8 +20,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DateTime extends TextField_ {
+  
   /** contains an offset to the date or time value in minutes. */
   var Adjust: Double = js.native
+  
   /**
     * this is the display format for this field. Depending on {@link IsDate} , this is either a {@link com.sun.star.text.DateDisplayFormat} or {@link
     * com.sun.star.text.TimeDisplayFormat} .
@@ -32,28 +34,33 @@ trait DateTime extends TextField_ {
     * @see com.sun.star.text.TimeDisplayFormat
     */
   var DateTimeFormat: Double = js.native
+  
   /** the is the content of this field. */
   var DateTimeValue: typings.activexLibreoffice.com_.sun.star.util.DateTime = js.native
+  
   /** If this flag is set to `TRUE` this field represents a date with an optional time. If it is set to `FALSE` only the time is used here. */
   var IsDate: Boolean = js.native
+  
   /**
     * If this flag is set to `FALSE` the date or time is always displayed as the current date or time.
     * @since OOo 1.1.2
     */
   var IsFixed: Boolean = js.native
+  
   /**
     * determines whether changes in language attributes at the position the text field is located also change the number format as appropriate for this
     * language.
     */
   var IsFixedLanguage: Boolean = js.native
+  
   /**
     * this is the number format for this field
     * @see com.sun.star.util.NumberFormatter
     */
   var NumberFormat: Double = js.native
 }
-
 object DateTime {
+  
   @scala.inline
   def apply(
     Adjust: Double,
@@ -90,32 +97,41 @@ object DateTime {
     val __obj = js.Dynamic.literal(Adjust = Adjust.asInstanceOf[js.Any], Anchor = Anchor.asInstanceOf[js.Any], AnchorType = AnchorType.asInstanceOf[js.Any], AnchorTypes = AnchorTypes.asInstanceOf[js.Any], DateTimeFormat = DateTimeFormat.asInstanceOf[js.Any], DateTimeValue = DateTimeValue.asInstanceOf[js.Any], IsDate = IsDate.asInstanceOf[js.Any], IsFieldDisplayed = IsFieldDisplayed.asInstanceOf[js.Any], IsFieldUsed = IsFieldUsed.asInstanceOf[js.Any], IsFixed = IsFixed.asInstanceOf[js.Any], IsFixedLanguage = IsFixedLanguage.asInstanceOf[js.Any], NumberFormat = NumberFormat.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], TextWrap = TextWrap.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), attach = js.Any.fromFunction1(attach), dispose = js.Any.fromFunction0(dispose), getAnchor = js.Any.fromFunction0(getAnchor), getPresentation = js.Any.fromFunction1(getPresentation), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[DateTime]
   }
+  
   @scala.inline
   implicit class DateTimeOps[Self <: DateTime] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAdjust(value: Double): Self = this.set("Adjust", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDateTimeFormat(value: Double): Self = this.set("DateTimeFormat", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDateTimeValue(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = this.set("DateTimeValue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsDate(value: Boolean): Self = this.set("IsDate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsFixed(value: Boolean): Self = this.set("IsFixed", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsFixedLanguage(value: Boolean): Self = this.set("IsFixedLanguage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNumberFormat(value: Double): Self = this.set("NumberFormat", value.asInstanceOf[js.Any])
   }
-  
 }
-

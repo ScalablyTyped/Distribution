@@ -3,7 +3,7 @@ package typings.luminoVirtualdom.mod
 import typings.luminoVirtualdom.luminoVirtualdomStrings.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/virtualdom", "VirtualText")
 @js.native
@@ -14,10 +14,12 @@ class VirtualText protected () extends VirtualNode {
     * @param content - The text content for the node.
     */
   def this(content: String) = this()
+  
   /**
     * The text content for the node.
     */
   val content: String = js.native
+  
   /**
     * The type of the node.
     *
@@ -26,4 +28,3 @@ class VirtualText protected () extends VirtualNode {
     */
   val `type`: text = js.native
 }
-

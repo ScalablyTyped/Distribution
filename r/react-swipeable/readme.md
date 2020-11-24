@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-swipeable
 
-Typings are for version 5.5.1
+Typings are for version 6.0.0
 
 ## Library description:
 React Swipe event handler component & hook
@@ -10,15 +10,15 @@ React Swipe event handler component & hook
 | ------------------ | :-------------: |
 | Full name          | react-swipeable |
 | Keywords           | react swipe, react touch, react hook, touch, swipe, swipeable, react, hook, react-component |
-| # releases         | 28 |
-| # dependents       | 103 |
-| # downloads        | 5996258 |
+| # releases         | 25 |
+| # dependents       | 143 |
+| # downloads        | 8894764 |
 | # stars            | 11 |
 
 ## Links
-- [Homepage](https://github.com/dogfessional/react-swipeable)
-- [Bugs](https://github.com/dogfessional/react-swipeable/issues)
-- [Repository](https://github.com/dogfessional/react-swipeable)
+- [Homepage](https://github.com/FormidableLabs/react-swipeable)
+- [Bugs](https://github.com/FormidableLabs/react-swipeable/issues)
+- [Repository](https://github.com/FormidableLabs/react-swipeable)
 - [Npm](https://www.npmjs.com/package/react-swipeable)
     
 

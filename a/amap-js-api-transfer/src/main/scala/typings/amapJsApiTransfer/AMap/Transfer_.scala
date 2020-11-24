@@ -9,15 +9,18 @@ import typings.amapJsApiTransfer.AMap.Transfer.SearchStatus
 import typings.amapJsApiTransfer.anon.Destination
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Transfer_ extends EventEmitter {
+  
   /**
     * 清除结果显示
     */
   def clear(): Unit = js.native
+  
   def close(): Unit = js.native
+  
   /**
     * 设置公交路径规划出发时间
     * @param time 时间
@@ -27,8 +30,10 @@ trait Transfer_ extends EventEmitter {
   def leaveAt(time: js.UndefOr[scala.Nothing], date: String): Unit = js.native
   def leaveAt(time: String): Unit = js.native
   def leaveAt(time: String, date: String): Unit = js.native
+  
   // internal
   def open(): Unit = js.native
+  
   /**
     * 根据起点和终点坐标，进行公交换乘查询
     * @param origin 起点坐标
@@ -51,23 +56,27 @@ trait Transfer_ extends EventEmitter {
     path: js.Tuple2[SearchPoint, SearchPoint],
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | SearchResultExt, Unit]
   ): Unit = js.native
+  
   /**
     * 唤起高德地图客户端公交路径规划
     * @param obj 唤起参数
     */
   def searchOnAMAP(obj: Destination): Unit = js.native
+  
   /**
     * 设置公交换乘查询的城市
     * @param city  城市名称、城市区号、电话区号
     */
   def setCity(): Unit = js.native
   def setCity(city: String): Unit = js.native
+  
   /**
     * 设置公交换乘查询的城市
     * @param city  城市名称、城市区号、电话区号
     */
   def setCityd(): Unit = js.native
   def setCityd(city: String): Unit = js.native
+  
   /**
     * 设置公交换乘策略
     * @param policy 公交换乘策略
@@ -75,4 +84,3 @@ trait Transfer_ extends EventEmitter {
   def setPolicy(): Unit = js.native
   def setPolicy(policy: TransferPolicy): Unit = js.native
 }
-

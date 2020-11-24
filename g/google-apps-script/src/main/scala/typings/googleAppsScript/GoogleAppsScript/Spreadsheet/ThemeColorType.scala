@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ThemeColorType extends js.Object
-
 /**
   * An enum which describes various color entries supported in themes.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.ThemeColorType")
 @js.native
 object ThemeColorType extends js.Object {
+  
   @js.native
   sealed trait ACCENT1 extends ThemeColorType
   
@@ -42,6 +42,4 @@ object ThemeColorType extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends ThemeColorType
-  
 }
-

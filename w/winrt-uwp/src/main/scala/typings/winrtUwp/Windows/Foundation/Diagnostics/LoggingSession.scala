@@ -5,13 +5,12 @@ import typings.winrtUwp.Windows.Storage.IStorageFolder
 import typings.winrtUwp.Windows.Storage.StorageFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the destination of logged messages from LoggingChannel instances. */
 @js.native
 trait LoggingSession extends js.Object {
-  /** Gets the name of the logging session. */
-  var name: String = js.native
+  
   /**
     * Adds a logging channel to the current logging session.
     * @param loggingChannel The logging channel to add.
@@ -23,13 +22,19 @@ trait LoggingSession extends js.Object {
     * @param maxLevel The logging level for loggingChannel.
     */
   def addLoggingChannel(loggingChannel: ILoggingChannel, maxLevel: LoggingLevel): Unit = js.native
+  
   /** Ends the current logging session. */
   def close(): Unit = js.native
+  
+  /** Gets the name of the logging session. */
+  var name: String = js.native
+  
   /**
     * Removes the specified logging channel from the current logging session.
     * @param loggingChannel The logging channel to remove.
     */
   def removeLoggingChannel(loggingChannel: ILoggingChannel): Unit = js.native
+  
   /**
     * Saves the current logging session to a file.
     * @param folder The folder that contains the log file.
@@ -38,4 +43,3 @@ trait LoggingSession extends js.Object {
     */
   def saveToFileAsync(folder: IStorageFolder, fileName: String): IPromiseWithIAsyncOperation[StorageFile] = js.native
 }
-

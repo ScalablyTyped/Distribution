@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service connects the Java-like UNO Drag and Drop protocol to the X Drag and Drop protocol used on X-Servers to transfer data between application
@@ -20,8 +20,8 @@ trait X11DropTarget
   extends XDropTarget
      with XInitialization
      with XComponent
-
 object X11DropTarget {
+  
   @scala.inline
   def apply(
     DefaultActions: Double,
@@ -43,4 +43,3 @@ object X11DropTarget {
     __obj.asInstanceOf[X11DropTarget]
   }
 }
-

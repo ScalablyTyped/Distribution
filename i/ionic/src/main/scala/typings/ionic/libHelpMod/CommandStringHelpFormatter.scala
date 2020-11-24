@@ -7,7 +7,7 @@ import typings.ionic.definitionsMod.INamespace
 import typings.ionicCliFramework.definitionsMod.CommandMetadataInput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ionic/lib/help", "CommandStringHelpFormatter")
 @js.native
@@ -15,4 +15,3 @@ class CommandStringHelpFormatter protected ()
   extends typings.ionicCliFramework.helpMod.CommandStringHelpFormatter[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
   def this(options: CommandHelpFormatterDeps) = this()
 }
-

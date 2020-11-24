@@ -2,9 +2,58 @@ package typings.scBroker
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scBrokerStrings {
+  
+  @scala.inline
+  def broker: broker = "broker".asInstanceOf[broker]
+  
+  @scala.inline
+  def brokerMessage: brokerMessage = "brokerMessage".asInstanceOf[brokerMessage]
+  
+  @scala.inline
+  def connected: connected = "connected".asInstanceOf[connected]
+  
+  @scala.inline
+  def connecting: connecting = "connecting".asInstanceOf[connecting]
+  
+  @scala.inline
+  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def exit: exit = "exit".asInstanceOf[exit]
+  
+  @scala.inline
+  def masterMessage: masterMessage = "masterMessage".asInstanceOf[masterMessage]
+  
+  @scala.inline
+  def message: message = "message".asInstanceOf[message]
+  
+  @scala.inline
+  def publish: publish = "publish".asInstanceOf[publish]
+  
+  @scala.inline
+  def publishIn: publishIn = "publishIn".asInstanceOf[publishIn]
+  
+  @scala.inline
+  def ready: ready = "ready".asInstanceOf[ready]
+  
+  @scala.inline
+  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
+  
+  @scala.inline
+  def subscribeFail: subscribeFail = "subscribeFail".asInstanceOf[subscribeFail]
+  
+  @scala.inline
+  def unsubscribe: unsubscribe = "unsubscribe".asInstanceOf[unsubscribe]
+  
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
+  
   @js.native
   sealed trait broker extends js.Object
   
@@ -52,38 +101,4 @@ object scBrokerStrings {
   
   @js.native
   sealed trait warning extends js.Object
-  
-  @scala.inline
-  def broker: broker = "broker".asInstanceOf[broker]
-  @scala.inline
-  def brokerMessage: brokerMessage = "brokerMessage".asInstanceOf[brokerMessage]
-  @scala.inline
-  def connected: connected = "connected".asInstanceOf[connected]
-  @scala.inline
-  def connecting: connecting = "connecting".asInstanceOf[connecting]
-  @scala.inline
-  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def exit: exit = "exit".asInstanceOf[exit]
-  @scala.inline
-  def masterMessage: masterMessage = "masterMessage".asInstanceOf[masterMessage]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def publish: publish = "publish".asInstanceOf[publish]
-  @scala.inline
-  def publishIn: publishIn = "publishIn".asInstanceOf[publishIn]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
-  @scala.inline
-  def subscribeFail: subscribeFail = "subscribeFail".asInstanceOf[subscribeFail]
-  @scala.inline
-  def unsubscribe: unsubscribe = "unsubscribe".asInstanceOf[unsubscribe]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
 }
-

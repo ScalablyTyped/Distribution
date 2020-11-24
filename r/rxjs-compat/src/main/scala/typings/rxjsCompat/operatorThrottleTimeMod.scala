@@ -2,11 +2,12 @@ package typings.rxjsCompat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/operator/throttleTime", JSImport.Namespace)
 @js.native
 object operatorThrottleTimeMod extends js.Object {
+  
   def throttleTime[T](duration: Double): js.Any = js.native
   def throttleTime[T](
     duration: Double,
@@ -23,4 +24,3 @@ object operatorThrottleTimeMod extends js.Object {
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThrottleConfig */ js.Any
   ): js.Any = js.native
 }
-

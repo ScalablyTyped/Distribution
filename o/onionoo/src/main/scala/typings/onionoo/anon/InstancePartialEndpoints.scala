@@ -16,17 +16,18 @@ import typings.onionoo.onionooStrings.uptime
 import typings.onionoo.onionooStrings.weights
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined onionoo.onionoo.Onionoo.Instance & std.Partial<onionoo.onionoo.Onionoo.Endpoints> */
 @js.native
 trait InstancePartialEndpoints extends js.Object {
+  
   var bandwidth: js.UndefOr[js.Function1[/* query */ js.UndefOr[QueryParameters], GotPromise[Bandwidth]]] = js.native
+  
   var clients: js.UndefOr[js.Function1[/* query */ js.UndefOr[QueryParameters], GotPromise[Clients]]] = js.native
+  
   var details: js.UndefOr[js.Function1[/* query */ js.UndefOr[QueryParameters], GotPromise[Details]]] = js.native
-  var summary: js.UndefOr[js.Function1[/* query */ js.UndefOr[QueryParameters], GotPromise[Summary]]] = js.native
-  var uptime: js.UndefOr[js.Function1[/* query */ js.UndefOr[QueryParameters], GotPromise[Uptime]]] = js.native
-  var weights: js.UndefOr[js.Function1[/* query */ js.UndefOr[QueryParameters], GotPromise[Weights]]] = js.native
+  
   @JSName("get")
   def get_bandwidth(endpoint: bandwidth): GotPromise[Bandwidth] = js.native
   @JSName("get")
@@ -51,5 +52,10 @@ trait InstancePartialEndpoints extends js.Object {
   def get_weights(endpoint: weights): GotPromise[Weights] = js.native
   @JSName("get")
   def get_weights(endpoint: weights, query: QueryParameters): GotPromise[Weights] = js.native
+  
+  var summary: js.UndefOr[js.Function1[/* query */ js.UndefOr[QueryParameters], GotPromise[Summary]]] = js.native
+  
+  var uptime: js.UndefOr[js.Function1[/* query */ js.UndefOr[QueryParameters], GotPromise[Uptime]]] = js.native
+  
+  var weights: js.UndefOr[js.Function1[/* query */ js.UndefOr[QueryParameters], GotPromise[Weights]]] = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NavigatorBeacon extends js.Object {
+  
   def sendBeacon(url: java.lang.String): scala.Boolean = js.native
   def sendBeacon(url: java.lang.String, data: java.lang.String): scala.Boolean = js.native
   def sendBeacon(url: java.lang.String, data: ArrayBuffer): scala.Boolean = js.native
@@ -22,4 +23,3 @@ trait NavigatorBeacon extends js.Object {
   def sendBeacon(url: java.lang.String, data: Uint8Array): scala.Boolean = js.native
   def sendBeacon(url: java.lang.String, data: Uint8ClampedArray): scala.Boolean = js.native
 }
-

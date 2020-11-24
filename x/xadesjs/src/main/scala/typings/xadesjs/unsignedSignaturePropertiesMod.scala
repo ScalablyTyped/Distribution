@@ -9,11 +9,12 @@ import typings.xmlCore.mod.XmlCollection
 import typings.xmlCore.mod.XmlObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xadesjs/build/types/xml/unsigned_signature_properties", JSImport.Namespace)
 @js.native
 object unsignedSignaturePropertiesMod extends js.Object {
+  
   @js.native
   class ArchiveTimeStamp () extends XAdESTimeStamp
   
@@ -40,11 +41,10 @@ object unsignedSignaturePropertiesMod extends js.Object {
   
   @js.native
   class UnsignedSignatureProperties () extends XmlCollection[UnsignedSignatureProperty] {
+    
     var Id: String = js.native
   }
   
   @js.native
   class UnsignedSignatureProperty () extends XmlObject
-  
 }
-

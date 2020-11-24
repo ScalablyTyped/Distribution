@@ -3,7 +3,7 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PostProcessRenderEffect")
 @js.native
@@ -37,4 +37,3 @@ class PostProcessRenderEffect protected ()
     singleInstance: Boolean
   ) = this()
 }
-

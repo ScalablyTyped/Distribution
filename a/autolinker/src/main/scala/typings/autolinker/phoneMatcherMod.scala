@@ -4,13 +4,15 @@ import typings.autolinker.matcherMatcherMod.Matcher
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("autolinker/dist/commonjs/matcher/phone-matcher", JSImport.Namespace)
 @js.native
 object phoneMatcherMod extends js.Object {
+  
   @js.native
   class PhoneMatcher () extends Matcher {
+    
     /**
       * The regular expression to match Phone numbers. Example matches:
       *
@@ -30,8 +32,7 @@ object phoneMatcherMod extends js.Object {
       * @property {RegExp} matcherRegex
       */
     var matcherRegex: RegExp = js.native
+    
     /* protected */ def testMatch(text: String): Boolean = js.native
   }
-  
 }
-

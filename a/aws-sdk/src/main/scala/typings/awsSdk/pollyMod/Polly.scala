@@ -1,17 +1,19 @@
 package typings.awsSdk.pollyMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.servicesPollyMod.PollyCustomizations
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Polly extends PollyCustomizations {
+  
   @JSName("config")
   var config_Polly: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Deletes the specified pronunciation lexicon stored in an AWS Region. A lexicon which has been deleted is not available for speech synthesis, nor is it possible to retrieve it using either the GetLexicon or ListLexicon APIs. For more information, see Managing Lexicons.
     */
@@ -25,6 +27,7 @@ trait Polly extends PollyCustomizations {
     params: DeleteLexiconInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLexiconOutput, Unit]
   ): Request[DeleteLexiconOutput, AWSError] = js.native
+  
   /**
     * Returns the list of voices that are available for use when requesting speech synthesis. Each voice speaks a specified language, is either male or female, and is identified by an ID, which is the ASCII version of the voice name.  When synthesizing speech ( SynthesizeSpeech ), you provide the voice ID for the voice you want from the list of voices returned by DescribeVoices. For example, you want your news reader application to read news in a specific language, but giving a user the option to choose the voice. Using the DescribeVoices operation you can provide the user with a list of available voices to select from.  You can optionally specify a language code to filter the available voices. For example, if you specify en-US, the operation returns a list of all available US English voices.  This operation requires permissions to perform the polly:DescribeVoices action.
     */
@@ -38,6 +41,7 @@ trait Polly extends PollyCustomizations {
     params: DescribeVoicesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeVoicesOutput, Unit]
   ): Request[DescribeVoicesOutput, AWSError] = js.native
+  
   /**
     * Returns the content of the specified pronunciation lexicon stored in an AWS Region. For more information, see Managing Lexicons.
     */
@@ -51,6 +55,7 @@ trait Polly extends PollyCustomizations {
     params: GetLexiconInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLexiconOutput, Unit]
   ): Request[GetLexiconOutput, AWSError] = js.native
+  
   /**
     * Retrieves a specific SpeechSynthesisTask object based on its TaskID. This object contains information about the given speech synthesis task, including the status of the task, and a link to the S3 bucket containing the output of the task.
     */
@@ -64,6 +69,7 @@ trait Polly extends PollyCustomizations {
     params: GetSpeechSynthesisTaskInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSpeechSynthesisTaskOutput, Unit]
   ): Request[GetSpeechSynthesisTaskOutput, AWSError] = js.native
+  
   /**
     * Returns a list of pronunciation lexicons stored in an AWS Region. For more information, see Managing Lexicons.
     */
@@ -77,6 +83,7 @@ trait Polly extends PollyCustomizations {
     params: ListLexiconsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListLexiconsOutput, Unit]
   ): Request[ListLexiconsOutput, AWSError] = js.native
+  
   /**
     * Returns a list of SpeechSynthesisTask objects ordered by their creation date. This operation can filter the tasks by their status, for example, allowing users to list only tasks that are completed.
     */
@@ -90,6 +97,7 @@ trait Polly extends PollyCustomizations {
     params: ListSpeechSynthesisTasksInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSpeechSynthesisTasksOutput, Unit]
   ): Request[ListSpeechSynthesisTasksOutput, AWSError] = js.native
+  
   /**
     * Stores a pronunciation lexicon in an AWS Region. If a lexicon with the same name already exists in the region, it is overwritten by the new lexicon. Lexicon operations have eventual consistency, therefore, it might take some time before the lexicon is available to the SynthesizeSpeech operation. For more information, see Managing Lexicons.
     */
@@ -103,6 +111,7 @@ trait Polly extends PollyCustomizations {
     params: PutLexiconInput,
     callback: js.Function2[/* err */ AWSError, /* data */ PutLexiconOutput, Unit]
   ): Request[PutLexiconOutput, AWSError] = js.native
+  
   /**
     * Allows the creation of an asynchronous synthesis task, by starting a new SpeechSynthesisTask. This operation requires all the standard information needed for speech synthesis, plus the name of an Amazon S3 bucket for the service to store the output of the synthesis task and two optional parameters (OutputS3KeyPrefix and SnsTopicArn). Once the synthesis task is created, this operation will return a SpeechSynthesisTask object, which will include an identifier of this task as well as the current status.
     */
@@ -116,6 +125,7 @@ trait Polly extends PollyCustomizations {
     params: StartSpeechSynthesisTaskInput,
     callback: js.Function2[/* err */ AWSError, /* data */ StartSpeechSynthesisTaskOutput, Unit]
   ): Request[StartSpeechSynthesisTaskOutput, AWSError] = js.native
+  
   /**
     * Synthesizes UTF-8 input, plain text or SSML, to a stream of bytes. SSML input must be valid, well-formed SSML. Some alphabets might not be available with all the voices (for example, Cyrillic might not be read at all by English voices) unless phoneme mapping is used. For more information, see How it Works.
     */
@@ -130,4 +140,3 @@ trait Polly extends PollyCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ SynthesizeSpeechOutput, Unit]
   ): Request[SynthesizeSpeechOutput, AWSError] = js.native
 }
-

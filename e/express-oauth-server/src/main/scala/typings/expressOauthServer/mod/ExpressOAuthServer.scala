@@ -12,11 +12,11 @@ import typings.oauth2Server.mod.Token
 import typings.oauth2Server.mod.TokenOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ExpressOAuthServer extends js.Object {
-  var server: typings.oauth2Server.mod.^ = js.native
+  
   def authenticate(): js.Function3[
     /* request */ Request_[ParamsDictionary, _, _, Query], 
     /* response */ Response_[_], 
@@ -29,6 +29,7 @@ trait ExpressOAuthServer extends js.Object {
     /* next */ NextFunction, 
     js.Promise[Token]
   ] = js.native
+  
   def authorize(): js.Function3[
     /* request */ Request_[ParamsDictionary, _, _, Query], 
     /* response */ Response_[_], 
@@ -41,6 +42,9 @@ trait ExpressOAuthServer extends js.Object {
     /* next */ NextFunction, 
     js.Promise[AuthorizationCode]
   ] = js.native
+  
+  var server: typings.oauth2Server.mod.^ = js.native
+  
   def token(): js.Function3[
     /* request */ Request_[ParamsDictionary, _, _, Query], 
     /* response */ Response_[_], 
@@ -54,4 +58,3 @@ trait ExpressOAuthServer extends js.Object {
     js.Promise[Token]
   ] = js.native
 }
-

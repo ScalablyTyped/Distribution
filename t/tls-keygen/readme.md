@@ -12,7 +12,7 @@ Generate a self-signed TLS certificate and add it to the trusted certificate sto
 | Keywords           | localhost, ssl, tls, certificate, self-signed |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 23841 |
+| # downloads        | 24245 |
 | # stars            | 5 |
 
 ## Links

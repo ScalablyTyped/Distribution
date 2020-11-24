@@ -1,17 +1,16 @@
 package typings.awsSdk.dataexchangeMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DataExchange extends Service {
-  @JSName("config")
-  var config_DataExchange: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * This operation cancels a job. Jobs can be cancelled only when they are in the WAITING state.
     */
@@ -22,6 +21,10 @@ trait DataExchange extends Service {
     */
   def cancelJob(params: CancelJobRequest): Request[js.Object, AWSError] = js.native
   def cancelJob(params: CancelJobRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
+  @JSName("config")
+  var config_DataExchange: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * This operation creates a data set.
     */
@@ -35,6 +38,7 @@ trait DataExchange extends Service {
     params: CreateDataSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDataSetResponse, Unit]
   ): Request[CreateDataSetResponse, AWSError] = js.native
+  
   /**
     * This operation creates a job.
     */
@@ -48,6 +52,7 @@ trait DataExchange extends Service {
     params: CreateJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateJobResponse, Unit]
   ): Request[CreateJobResponse, AWSError] = js.native
+  
   /**
     * This operation creates a revision for a data set.
     */
@@ -61,6 +66,7 @@ trait DataExchange extends Service {
     params: CreateRevisionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRevisionResponse, Unit]
   ): Request[CreateRevisionResponse, AWSError] = js.native
+  
   /**
     * This operation deletes an asset.
     */
@@ -71,6 +77,7 @@ trait DataExchange extends Service {
     */
   def deleteAsset(params: DeleteAssetRequest): Request[js.Object, AWSError] = js.native
   def deleteAsset(params: DeleteAssetRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * This operation deletes a data set.
     */
@@ -84,6 +91,7 @@ trait DataExchange extends Service {
     params: DeleteDataSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * This operation deletes a revision.
     */
@@ -97,6 +105,7 @@ trait DataExchange extends Service {
     params: DeleteRevisionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * This operation returns information about an asset.
     */
@@ -110,6 +119,7 @@ trait DataExchange extends Service {
     params: GetAssetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAssetResponse, Unit]
   ): Request[GetAssetResponse, AWSError] = js.native
+  
   /**
     * This operation returns information about a data set.
     */
@@ -123,6 +133,7 @@ trait DataExchange extends Service {
     params: GetDataSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDataSetResponse, Unit]
   ): Request[GetDataSetResponse, AWSError] = js.native
+  
   /**
     * This operation returns information about a job.
     */
@@ -133,6 +144,7 @@ trait DataExchange extends Service {
     */
   def getJob(params: GetJobRequest): Request[GetJobResponse, AWSError] = js.native
   def getJob(params: GetJobRequest, callback: js.Function2[/* err */ AWSError, /* data */ GetJobResponse, Unit]): Request[GetJobResponse, AWSError] = js.native
+  
   /**
     * This operation returns information about a revision.
     */
@@ -146,6 +158,7 @@ trait DataExchange extends Service {
     params: GetRevisionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRevisionResponse, Unit]
   ): Request[GetRevisionResponse, AWSError] = js.native
+  
   /**
     * This operation lists a data set's revisions sorted by CreatedAt in descending order.
     */
@@ -159,6 +172,7 @@ trait DataExchange extends Service {
     params: ListDataSetRevisionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDataSetRevisionsResponse, Unit]
   ): Request[ListDataSetRevisionsResponse, AWSError] = js.native
+  
   /**
     * This operation lists your data sets. When listing by origin OWNED, results are sorted by CreatedAt in descending order. When listing by origin ENTITLED, there is no order and the maxResults parameter is ignored.
     */
@@ -172,6 +186,7 @@ trait DataExchange extends Service {
     params: ListDataSetsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDataSetsResponse, Unit]
   ): Request[ListDataSetsResponse, AWSError] = js.native
+  
   /**
     * This operation lists your jobs sorted by CreatedAt in descending order.
     */
@@ -185,6 +200,7 @@ trait DataExchange extends Service {
     params: ListJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListJobsResponse, Unit]
   ): Request[ListJobsResponse, AWSError] = js.native
+  
   /**
     * This operation lists a revision's assets sorted alphabetically in descending order.
     */
@@ -198,6 +214,7 @@ trait DataExchange extends Service {
     params: ListRevisionAssetsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRevisionAssetsResponse, Unit]
   ): Request[ListRevisionAssetsResponse, AWSError] = js.native
+  
   /**
     * This operation lists the tags on the resource.
     */
@@ -211,6 +228,7 @@ trait DataExchange extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * This operation starts a job.
     */
@@ -224,6 +242,7 @@ trait DataExchange extends Service {
     params: StartJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartJobResponse, Unit]
   ): Request[StartJobResponse, AWSError] = js.native
+  
   /**
     * This operation tags a resource.
     */
@@ -234,6 +253,7 @@ trait DataExchange extends Service {
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * This operation removes one or more tags from a resource.
     */
@@ -247,6 +267,7 @@ trait DataExchange extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * This operation updates an asset.
     */
@@ -260,6 +281,7 @@ trait DataExchange extends Service {
     params: UpdateAssetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAssetResponse, Unit]
   ): Request[UpdateAssetResponse, AWSError] = js.native
+  
   /**
     * This operation updates a data set.
     */
@@ -273,6 +295,7 @@ trait DataExchange extends Service {
     params: UpdateDataSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDataSetResponse, Unit]
   ): Request[UpdateDataSetResponse, AWSError] = js.native
+  
   /**
     * This operation updates a revision.
     */
@@ -287,4 +310,3 @@ trait DataExchange extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRevisionResponse, Unit]
   ): Request[UpdateRevisionResponse, AWSError] = js.native
 }
-

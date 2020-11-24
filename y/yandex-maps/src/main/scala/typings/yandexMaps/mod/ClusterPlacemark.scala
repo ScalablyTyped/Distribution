@@ -4,7 +4,7 @@ import typings.yandexMaps.mod.collection.Item
 import typings.yandexMaps.mod.data.Manager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.yandexMaps.mod.IEventEmitter because Already inherited
@@ -28,12 +28,18 @@ class ClusterPlacemark protected () extends Item {
     properties: IClusterPlacemarkProperties,
     options: IClusterPlacemarkOptions
   ) = this()
+  
   var geometry: IGeometry | Null = js.native
-  var properties: IDataManager = js.native
-  var state: IDataManager | Manager = js.native
+  
   def getBounds(): js.Array[js.Array[Double]] | Null = js.native
-  def getGeoObjects(): js.Array[IGeoObject] = js.native
+  
+  def getGeoObjects(): js.Array[IGeoObject[IGeometry]] = js.native
+  
   def getOverlay(): js.Promise[IOverlay | Null] = js.native
+  
   def getOverlaySync(): IOverlay | Null = js.native
+  
+  var properties: IDataManager = js.native
+  
+  var state: IDataManager | Manager = js.native
 }
-

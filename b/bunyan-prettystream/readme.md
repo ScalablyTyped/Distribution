@@ -11,8 +11,8 @@ A stream implementation of the bunyan cli tool's pretty printing capabilities
 | Full name          | bunyan-prettystream |
 | Keywords           | log, logging, console, bunyan, development, stream |
 | # releases         | 0 |
-| # dependents       | 91 |
-| # downloads        | 2850337 |
+| # dependents       | 95 |
+| # downloads        | 4347413 |
 | # stars            | 5 |
 
 ## Links

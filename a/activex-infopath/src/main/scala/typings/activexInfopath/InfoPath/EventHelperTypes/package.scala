@@ -2,9 +2,10 @@ package typings.activexInfopath.InfoPath
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object EventHelperTypes {
+  
   type ButtonInvokeArgNames = js.Tuple8[
     typings.activexInfopath.activexInfopathStrings.dispidMember, 
     typings.activexInfopath.activexInfopathStrings.riid, 
@@ -15,6 +16,7 @@ package object EventHelperTypes {
     typings.activexInfopath.activexInfopathStrings.pexcepinfo, 
     typings.activexInfopath.activexInfopathStrings.puArgErr
   ]
+  
   type DataDOMInvokeArgNames = js.Tuple8[
     typings.activexInfopath.activexInfopathStrings.dispidMember, 
     typings.activexInfopath.activexInfopathStrings.riid, 
@@ -25,6 +27,7 @@ package object EventHelperTypes {
     typings.activexInfopath.activexInfopathStrings.pexcepinfo, 
     typings.activexInfopath.activexInfopathStrings.puArgErr
   ]
+  
   type XDocumentInvokeArgNames = js.Tuple8[
     typings.activexInfopath.activexInfopathStrings.dispidMember, 
     typings.activexInfopath.activexInfopathStrings.riid, 

@@ -3,11 +3,12 @@ package typings.baseui.mod
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("baseui", "createTheme")
 @js.native
 object createTheme extends js.Object {
+  
   def apply[P /* <: js.Object */](
     primitives: Partial[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemePrimitives */ _
@@ -20,4 +21,3 @@ object createTheme extends js.Object {
     overrides: P
   ): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ js.Any) with P = js.native
 }
-

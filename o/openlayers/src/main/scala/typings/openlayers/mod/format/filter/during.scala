@@ -2,11 +2,12 @@ package typings.openlayers.mod.format.filter
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "format.filter.during")
 @js.native
 object during extends js.Object {
+  
   /**
     * Create a `<During>` temporal operator.
     *
@@ -18,4 +19,3 @@ object during extends js.Object {
     */
   def apply(propertyName: String, begin: String, end: String): During_ = js.native
 }
-

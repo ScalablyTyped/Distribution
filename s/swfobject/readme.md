@@ -11,8 +11,8 @@ SWFObject is an easy-to-use and standards-friendly method to embed Flash content
 | Full name          | swfobject |
 | Keywords           | SWFObject, swf, object, flash, embed, content |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 221928 |
+| # dependents       | 19 |
+| # downloads        | 259186 |
 | # stars            | 0 |
 
 ## Links

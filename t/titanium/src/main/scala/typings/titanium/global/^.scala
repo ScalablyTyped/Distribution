@@ -1,19 +1,19 @@
 package typings.titanium.global
 
-import typings.titanium.Console
+import typings.titanium.Titanium.Global
+import typings.titanium.mod.global.Console_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  /**
-    * The APIs that reside in the global scope, which may be called without a namespace prefix.
-    */
+  
   /**
     * Console logging facilities.
     */
-  var console: Console = js.native
+  var console: Console_ = js.native
+  
+  var global: Global = js.native
 }
-

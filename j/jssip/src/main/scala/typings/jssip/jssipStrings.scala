@@ -2,9 +2,115 @@ package typings.jssip
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jssipStrings {
+  
+  @scala.inline
+  def accepted: accepted = "accepted".asInstanceOf[accepted]
+  
+  @scala.inline
+  def confirmed: confirmed = "confirmed".asInstanceOf[confirmed]
+  
+  @scala.inline
+  def connected: connected = "connected".asInstanceOf[connected]
+  
+  @scala.inline
+  def connecting: connecting = "connecting".asInstanceOf[connecting]
+  
+  @scala.inline
+  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  
+  @scala.inline
+  def ended: ended = "ended".asInstanceOf[ended]
+  
+  @scala.inline
+  def failed: failed = "failed".asInstanceOf[failed]
+  
+  @scala.inline
+  def getusermediafailed: getusermediafailed = "getusermediafailed".asInstanceOf[getusermediafailed]
+  
+  @scala.inline
+  def hold: hold = "hold".asInstanceOf[hold]
+  
+  @scala.inline
+  def icecandidate: icecandidate = "icecandidate".asInstanceOf[icecandidate]
+  
+  @scala.inline
+  def muted: muted = "muted".asInstanceOf[muted]
+  
+  @scala.inline
+  def newDTMF: newDTMF = "newDTMF".asInstanceOf[newDTMF]
+  
+  @scala.inline
+  def newInfo: newInfo = "newInfo".asInstanceOf[newInfo]
+  
+  @scala.inline
+  def newMessage: newMessage = "newMessage".asInstanceOf[newMessage]
+  
+  @scala.inline
+  def newRTCSession: newRTCSession = "newRTCSession".asInstanceOf[newRTCSession]
+  
+  @scala.inline
+  def peerconnection: peerconnection = "peerconnection".asInstanceOf[peerconnection]
+  
+  @scala.inline
+  def peerconnectionColoncreateanswerfailed: peerconnectionColoncreateanswerfailed = "peerconnection:createanswerfailed".asInstanceOf[peerconnectionColoncreateanswerfailed]
+  
+  @scala.inline
+  def peerconnectionColoncreateofferfailed: peerconnectionColoncreateofferfailed = "peerconnection:createofferfailed".asInstanceOf[peerconnectionColoncreateofferfailed]
+  
+  @scala.inline
+  def peerconnectionColonsetlocaldescriptionfailed: peerconnectionColonsetlocaldescriptionfailed = "peerconnection:setlocaldescriptionfailed".asInstanceOf[peerconnectionColonsetlocaldescriptionfailed]
+  
+  @scala.inline
+  def peerconnectionColonsetremotedescriptionfailed: peerconnectionColonsetremotedescriptionfailed = "peerconnection:setremotedescriptionfailed".asInstanceOf[peerconnectionColonsetremotedescriptionfailed]
+  
+  @scala.inline
+  def progress: progress = "progress".asInstanceOf[progress]
+  
+  @scala.inline
+  def refer: refer = "refer".asInstanceOf[refer]
+  
+  @scala.inline
+  def registered: registered = "registered".asInstanceOf[registered]
+  
+  @scala.inline
+  def registrationExpiring: registrationExpiring = "registrationExpiring".asInstanceOf[registrationExpiring]
+  
+  @scala.inline
+  def registrationFailed: registrationFailed = "registrationFailed".asInstanceOf[registrationFailed]
+  
+  @scala.inline
+  def reinvite: reinvite = "reinvite".asInstanceOf[reinvite]
+  
+  @scala.inline
+  def replaces: replaces = "replaces".asInstanceOf[replaces]
+  
+  @scala.inline
+  def sdp: sdp = "sdp".asInstanceOf[sdp]
+  
+  @scala.inline
+  def sending: sending = "sending".asInstanceOf[sending]
+  
+  @scala.inline
+  def sipEvent: sipEvent = "sipEvent".asInstanceOf[sipEvent]
+  
+  @scala.inline
+  def succeeded: succeeded = "succeeded".asInstanceOf[succeeded]
+  
+  @scala.inline
+  def unhold: unhold = "unhold".asInstanceOf[unhold]
+  
+  @scala.inline
+  def unmuted: unmuted = "unmuted".asInstanceOf[unmuted]
+  
+  @scala.inline
+  def unregistered: unregistered = "unregistered".asInstanceOf[unregistered]
+  
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  
   @js.native
   sealed trait accepted extends js.Object
   
@@ -109,76 +215,4 @@ object jssipStrings {
   
   @js.native
   sealed trait update extends js.Object
-  
-  @scala.inline
-  def accepted: accepted = "accepted".asInstanceOf[accepted]
-  @scala.inline
-  def confirmed: confirmed = "confirmed".asInstanceOf[confirmed]
-  @scala.inline
-  def connected: connected = "connected".asInstanceOf[connected]
-  @scala.inline
-  def connecting: connecting = "connecting".asInstanceOf[connecting]
-  @scala.inline
-  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
-  @scala.inline
-  def ended: ended = "ended".asInstanceOf[ended]
-  @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
-  @scala.inline
-  def getusermediafailed: getusermediafailed = "getusermediafailed".asInstanceOf[getusermediafailed]
-  @scala.inline
-  def hold: hold = "hold".asInstanceOf[hold]
-  @scala.inline
-  def icecandidate: icecandidate = "icecandidate".asInstanceOf[icecandidate]
-  @scala.inline
-  def muted: muted = "muted".asInstanceOf[muted]
-  @scala.inline
-  def newDTMF: newDTMF = "newDTMF".asInstanceOf[newDTMF]
-  @scala.inline
-  def newInfo: newInfo = "newInfo".asInstanceOf[newInfo]
-  @scala.inline
-  def newMessage: newMessage = "newMessage".asInstanceOf[newMessage]
-  @scala.inline
-  def newRTCSession: newRTCSession = "newRTCSession".asInstanceOf[newRTCSession]
-  @scala.inline
-  def peerconnection: peerconnection = "peerconnection".asInstanceOf[peerconnection]
-  @scala.inline
-  def peerconnectionColoncreateanswerfailed: peerconnectionColoncreateanswerfailed = "peerconnection:createanswerfailed".asInstanceOf[peerconnectionColoncreateanswerfailed]
-  @scala.inline
-  def peerconnectionColoncreateofferfailed: peerconnectionColoncreateofferfailed = "peerconnection:createofferfailed".asInstanceOf[peerconnectionColoncreateofferfailed]
-  @scala.inline
-  def peerconnectionColonsetlocaldescriptionfailed: peerconnectionColonsetlocaldescriptionfailed = "peerconnection:setlocaldescriptionfailed".asInstanceOf[peerconnectionColonsetlocaldescriptionfailed]
-  @scala.inline
-  def peerconnectionColonsetremotedescriptionfailed: peerconnectionColonsetremotedescriptionfailed = "peerconnection:setremotedescriptionfailed".asInstanceOf[peerconnectionColonsetremotedescriptionfailed]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def refer: refer = "refer".asInstanceOf[refer]
-  @scala.inline
-  def registered: registered = "registered".asInstanceOf[registered]
-  @scala.inline
-  def registrationExpiring: registrationExpiring = "registrationExpiring".asInstanceOf[registrationExpiring]
-  @scala.inline
-  def registrationFailed: registrationFailed = "registrationFailed".asInstanceOf[registrationFailed]
-  @scala.inline
-  def reinvite: reinvite = "reinvite".asInstanceOf[reinvite]
-  @scala.inline
-  def replaces: replaces = "replaces".asInstanceOf[replaces]
-  @scala.inline
-  def sdp: sdp = "sdp".asInstanceOf[sdp]
-  @scala.inline
-  def sending: sending = "sending".asInstanceOf[sending]
-  @scala.inline
-  def sipEvent: sipEvent = "sipEvent".asInstanceOf[sipEvent]
-  @scala.inline
-  def succeeded: succeeded = "succeeded".asInstanceOf[succeeded]
-  @scala.inline
-  def unhold: unhold = "unhold".asInstanceOf[unhold]
-  @scala.inline
-  def unmuted: unmuted = "unmuted".asInstanceOf[unmuted]
-  @scala.inline
-  def unregistered: unregistered = "unregistered".asInstanceOf[unregistered]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
 }
-

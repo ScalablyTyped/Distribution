@@ -2,10 +2,11 @@ package typings.chromeApps.chrome.storage
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StorageAreaWrite extends js.Object {
+  
   /**
     * Removes all items from storage.
     * @param callback Optional.
@@ -13,6 +14,7 @@ trait StorageAreaWrite extends js.Object {
     */
   def clear(): Unit = js.native
   def clear(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Removes one or more items from storage.
     * @param A single key or a list of keys for items to remove.
@@ -23,6 +25,7 @@ trait StorageAreaWrite extends js.Object {
   def remove(keys: String, callback: js.Function0[Unit]): Unit = js.native
   def remove(keys: js.Array[String]): Unit = js.native
   def remove(keys: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Sets multiple items.
     * @param items An object which gives each key/value pair to update storage with. Any other key/value pairs in storage will not be affected.
@@ -33,4 +36,3 @@ trait StorageAreaWrite extends js.Object {
   def set(items: js.Object): Unit = js.native
   def set(items: js.Object, callback: js.Function0[Unit]): Unit = js.native
 }
-

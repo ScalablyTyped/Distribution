@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassMongoDB extends ClassObject {
+  
   /**
     * 
     * @brief 关闭当前数据库连接
@@ -18,6 +19,7 @@ trait ClassMongoDB extends ClassObject {
     * @async
     */
   def close(): Unit = js.native
+  
   /**
     * 
     * @brief 获取指定集合访问对象
@@ -28,6 +30,7 @@ trait ClassMongoDB extends ClassObject {
     * 
     */
   def getCollection(name: String): ClassMongoCollection = js.native
+  
   /**
     * 
     * @brief 生成一个 mongodb _objectid 对象
@@ -39,6 +42,7 @@ trait ClassMongoDB extends ClassObject {
     */
   def oid(): ClassMongoID = js.native
   def oid(hexStr: String): ClassMongoID = js.native
+  
   /**
     * 
     * @brief 指定一个简单的 MongoDB 数据库命令
@@ -61,4 +65,3 @@ trait ClassMongoDB extends ClassObject {
     */
   def runCommand(cmd: js.Object): js.Object = js.native
 }
-

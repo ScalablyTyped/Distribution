@@ -1,16 +1,18 @@
 package typings.mendixmodelsdk.microflowsMod.microflows
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/decisions relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/decisions relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ExclusiveSplit")
 @js.native
@@ -20,38 +22,42 @@ class ExclusiveSplit protected () extends MicroflowObject {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FExclusiveSplit: IModel = js.native
+  
   def caption: String = js.native
   def caption_=(newValue: String): Unit = js.native
+  
   def documentation: String = js.native
   def documentation_=(newValue: String): Unit = js.native
+  
   def errorHandlingType: ErrorHandlingType = js.native
   def errorHandlingType_=(newValue: ErrorHandlingType): Unit = js.native
+  
   def splitCondition: SplitCondition = js.native
   def splitCondition_=(newValue: SplitCondition): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ExclusiveSplit")
 @js.native
 object ExclusiveSplit extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new ExclusiveSplit instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): ExclusiveSplit = js.native
+  
   /**
     * Creates and returns a new ExclusiveSplit instance in the SDK and on the server.
     * The new ExclusiveSplit will be automatically stored in the 'objects' property
     * of the parent MicroflowObjectCollection element passed as argument.
     */
   def createIn(container: MicroflowObjectCollection): ExclusiveSplit = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

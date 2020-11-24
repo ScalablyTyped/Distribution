@@ -2,7 +2,7 @@ package typings.preact.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Type alias for a component instance considered generally, whether stateless or stateful.
 /* Rewritten from type alias, can be one of: 
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
   - typings.preact.mod.Component[P, S]
 */
 trait AnyComponent[P, S] extends js.Object
-

@@ -10,9 +10,9 @@ String left pad
 | ------------------ | :-------------: |
 | Full name          | left-pad |
 | Keywords           | leftpad, left, pad, padding, string, repeat |
-| # releases         | 2 |
-| # dependents       | 361 |
-| # downloads        | 181329810 |
+| # releases         | 1 |
+| # dependents       | 362 |
+| # downloads        | 239843756 |
 | # stars            | 12 |
 
 ## Links

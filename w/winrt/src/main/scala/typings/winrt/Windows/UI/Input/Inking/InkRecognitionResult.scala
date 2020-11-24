@@ -4,12 +4,12 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.Rect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InkRecognitionResult extends IInkRecognitionResult
-
 object InkRecognitionResult {
+  
   @scala.inline
   def apply(
     boundingRect: Rect,
@@ -20,4 +20,3 @@ object InkRecognitionResult {
     __obj.asInstanceOf[InkRecognitionResult]
   }
 }
-

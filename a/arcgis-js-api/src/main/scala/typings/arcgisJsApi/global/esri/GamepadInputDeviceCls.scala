@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.GamepadInputDeviceProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.GamepadInputDevice")
 @js.native
@@ -16,4 +16,3 @@ class GamepadInputDeviceCls ()
   extends typings.arcgisJsApi.esri.GamepadInputDevice {
   def this(properties: GamepadInputDeviceProperties) = this()
 }
-

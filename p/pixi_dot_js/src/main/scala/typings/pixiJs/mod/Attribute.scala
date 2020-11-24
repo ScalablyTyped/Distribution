@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Holds the information for a single attribute structure required to render geometry.
@@ -202,11 +202,11 @@ class Attribute protected ()
   ) = this()
   def this(buffer: String, size: Double, normalized: Boolean, `type`: Double, stride: Double, start: Double) = this()
 }
-
 /* static members */
 @JSImport("pixi.js", "Attribute")
 @js.native
 object Attribute extends js.Object {
+  
   /**
     * Helper function that creates an Attribute based on the information provided
     *
@@ -283,4 +283,3 @@ object Attribute extends js.Object {
   def from(buffer: String, size: Double, normalized: Boolean, `type`: Double): typings.pixiJs.PIXI.Attribute = js.native
   def from(buffer: String, size: Double, normalized: Boolean, `type`: Double, stride: Double): typings.pixiJs.PIXI.Attribute = js.native
 }
-

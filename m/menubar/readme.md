@@ -10,9 +10,9 @@ high level way to create menubar desktop applications with electron
 | ------------------ | :-------------: |
 | Full name          | menubar |
 | Keywords           | electron, shell, menubar, menu, taskbar, tray, traybar, mac, linux, windows, app |
-| # releases         | 11 |
-| # dependents       | 28 |
-| # downloads        | 57926 |
+| # releases         | 18 |
+| # dependents       | 30 |
+| # downloads        | 68844 |
 | # stars            | 10 |
 
 ## Links

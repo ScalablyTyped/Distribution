@@ -6,7 +6,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes", "core.v1.PersistentVolumeList")
 @js.native
@@ -24,11 +24,11 @@ class PersistentVolumeList protected ()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: PersistentVolumeListArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes", "core.v1.PersistentVolumeList")
 @js.native
 object PersistentVolumeList extends js.Object {
+  
   /**
     * Get an existing PersistentVolumeList resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -39,10 +39,10 @@ object PersistentVolumeList extends js.Object {
     */
   def get(name: String, id: Input[ID]): typings.pulumiKubernetes.persistentVolumeListMod.PersistentVolumeList = js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.persistentVolumeListMod.PersistentVolumeList = js.native
+  
   /**
     * Returns true if the given object is an instance of PersistentVolumeList.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/persistentVolumeList.PersistentVolumeList */ Boolean = js.native
 }
-

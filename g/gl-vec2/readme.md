@@ -10,9 +10,9 @@ gl-matrix's vec2, split into smaller pieces
 | ------------------ | :-------------: |
 | Full name          | gl-vec2 |
 | Keywords           | gl-matrix, matrix, math, gl, vec2, vec, 2d, vector, maths |
-| # releases         | 4 |
-| # dependents       | 38 |
-| # downloads        | 1511070 |
+| # releases         | 2 |
+| # dependents       | 42 |
+| # downloads        | 1518530 |
 | # stars            | 1 |
 
 ## Links

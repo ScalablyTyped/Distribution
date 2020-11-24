@@ -7,12 +7,13 @@ import typings.tstl.iforwarditeratorMod.IForwardIterator
 import typings.tstl.ilinearcontainerMod.ILinearContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IDequeContainer_[T /* <: PElem */, SourceT /* <: IDequeContainer[T, SourceT, IteratorT, ReverseT, PElem] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, PElem] */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, PElem] */, PElem]
   extends ILinearContainer[T, SourceT, IteratorT, ReverseT, PElem]
      with IDeque[T] {
+  
   /**
     * Range Assigner.
     *
@@ -21,11 +22,13 @@ trait IDequeContainer_[T /* <: PElem */, SourceT /* <: IDequeContainer[T, Source
     */
   /* InferMemberOverrides */
   override def assign[InputIterator /* <: IForwardIterator[PElem, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
+  
   /**
     * @inheritDoc
     */
   /* InferMemberOverrides */
   override def clear(): Unit = js.native
+  
   /**
     * Erase elements in range.
     *
@@ -43,6 +46,7 @@ trait IDequeContainer_[T /* <: PElem */, SourceT /* <: IDequeContainer[T, Source
     */
   /* InferMemberOverrides */
   override def erase(pos: IteratorT): IteratorT = js.native
+  
   /**
     * Swap elements.
     *
@@ -50,6 +54,7 @@ trait IDequeContainer_[T /* <: PElem */, SourceT /* <: IDequeContainer[T, Source
     */
   /* InferMemberOverrides */
   override def swap(obj: SourceT): Unit = js.native
+  
   /**
     * Native function for `JSON.stringify()`.
     *
@@ -58,4 +63,3 @@ trait IDequeContainer_[T /* <: PElem */, SourceT /* <: IDequeContainer[T, Source
   /* InferMemberOverrides */
   override def toJSON(): js.Array[T] = js.native
 }
-

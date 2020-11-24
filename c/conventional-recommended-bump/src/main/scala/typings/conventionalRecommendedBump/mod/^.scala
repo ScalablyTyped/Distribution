@@ -2,11 +2,12 @@ package typings.conventionalRecommendedBump.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("conventional-recommended-bump", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * @param options  `options` is an object with the following properties:
     *
@@ -31,4 +32,3 @@ object ^ extends js.Object {
     */
   def apply(options: Options, parserOpts: typings.conventionalCommitsParser.mod.Options, callback: Callback): Unit = js.native
 }
-

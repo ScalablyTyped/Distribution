@@ -2,7 +2,7 @@ package typings.xstyledSystem.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SpaceProps
@@ -20,12 +20,11 @@ trait SpaceProps
      with PaddingLeftProps[StyledSystemLength]
      with PaddingXProps[StyledSystemLength]
      with PaddingYProps[StyledSystemLength]
-
 object SpaceProps {
+  
   @scala.inline
   def apply(): SpaceProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpaceProps]
   }
 }
-

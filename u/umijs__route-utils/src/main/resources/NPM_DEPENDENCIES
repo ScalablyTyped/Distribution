@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@umijs/route-utils" : "1.0.30"
+      "@umijs/route-utils" : "1.0.34"
     }
   ],
   "test-dependencies" : [
     {
-      "@umijs/route-utils" : "1.0.30"
+      "@umijs/route-utils" : "1.0.34"
     }
   ],
   "compile-devDependencies" : [

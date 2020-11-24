@@ -10,9 +10,9 @@ ScrollArea component for react
 | ------------------ | :-------------: |
 | Full name          | react-scrollbar |
 | Keywords           | react, react-component, component, scrollbar, scroll, scrollarea |
-| # releases         | 6 |
-| # dependents       | 51 |
-| # downloads        | 505585 |
+| # releases         | 3 |
+| # dependents       | 54 |
+| # downloads        | 553200 |
 | # stars            | 10 |
 
 ## Links

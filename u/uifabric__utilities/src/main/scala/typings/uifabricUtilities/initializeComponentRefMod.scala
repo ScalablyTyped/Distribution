@@ -4,11 +4,11 @@ import typings.react.mod.Component
 import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uifabric/utilities/lib/initializeComponentRef", JSImport.Namespace)
 @js.native
 object initializeComponentRefMod extends js.Object {
+  
   def initializeComponentRef[TProps /* <: IBaseProps[_] */, TState](obj: Component[TProps, TState, _]): Unit = js.native
 }
-

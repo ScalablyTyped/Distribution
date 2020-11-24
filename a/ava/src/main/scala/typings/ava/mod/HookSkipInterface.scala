@@ -2,10 +2,11 @@ package typings.ava.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HookSkipInterface[Context] extends js.Object {
+  
   /** Skip this hook. */
   def apply(implementation: Implementation[Context]): Unit = js.native
   /** Skip this hook. */
@@ -22,4 +23,3 @@ trait HookSkipInterface[Context] extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
 }
-

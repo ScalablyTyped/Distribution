@@ -10,15 +10,15 @@ The most advanced responsive front-end framework in the world.
 | ------------------ | :-------------: |
 | Full name          | foundation-sites |
 | Keywords           | css, scss, sass, js, responsive, mobile-first, framework, eyeglass-module, handlebars-helper-rel, handlebars-helper-slugify |
-| # releases         | 11 |
-| # dependents       | 134 |
-| # downloads        | 3765222 |
+| # releases         | 10 |
+| # dependents       | 148 |
+| # downloads        | 5215019 |
 | # stars            | 17 |
 
 ## Links
-- [Homepage](http://foundation.zurb.com/sites)
-- [Bugs](https://github.com/zurb/foundation-sites/issues)
-- [Repository](https://github.com/zurb/foundation-sites)
+- [Homepage](https://get.foundation/sites)
+- [Bugs](https://github.com/foundation/foundation-sites/issues)
+- [Repository](https://github.com/foundation/foundation-sites)
 - [Npm](https://www.npmjs.com/package/foundation-sites)
     
 

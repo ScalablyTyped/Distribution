@@ -124,15 +124,17 @@ import typings.wordpressEditor.wordpressEditorStrings.video
 import typings.wordpressEditor.wordpressEditorStrings.wbr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Content extends js.Object {
+  
   def apply(
     props: Props[
       a | abbr | address | applet | area | article | aside | audio | b | base | basefont | bdi | bdo | blockquote | body | br | button | canvas | caption | cite | code | col | colgroup | data | datalist | dd | del | details | dfn | dialog | dir | div | dl | dt | em | embed | fieldset | figcaption | figure | font | footer | form | frame | frameset | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | img | input | ins | kbd | label | legend | li | link | main | map | mark | marquee | menu | meta | meter | nav | noscript | `object` | ol | optgroup | option | output | p | param | picture | pre | progress | q | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | strong | style | sub | summary | sup | table | tbody | td | template | textarea | tfoot | th | thead | time | title | tr | track | u | ul | `var` | video | wbr
     ]
   ): Element = js.native
+  
   /**
     * Should be used in the `save` function of your block to correctly save rich text content.
     */
@@ -374,7 +376,7 @@ trait Content extends js.Object {
   def Content_video(props: ContentProps[video]): Element = js.native
   @JSName("Content")
   def Content_wbr(props: ContentProps[wbr]): Element = js.native
+  
   def isEmpty(value: String): Boolean = js.native
   def isEmpty(value: js.Array[String]): Boolean = js.native
 }
-

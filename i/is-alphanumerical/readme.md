@@ -11,8 +11,8 @@ Check if a character is alphanumerical
 | Full name          | is-alphanumerical |
 | Keywords           | string, character, char, code, alphabetical, numerical, alphanumerical |
 | # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 81371428 |
+| # dependents       | 13 |
+| # downloads        | 138650054 |
 | # stars            | 1 |
 
 ## Links

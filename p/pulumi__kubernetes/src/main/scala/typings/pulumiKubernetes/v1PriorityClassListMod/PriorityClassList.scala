@@ -10,7 +10,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/scheduling/v1/priorityClassList", "PriorityClassList")
 @js.native
@@ -26,28 +26,32 @@ class PriorityClassList protected () extends CustomResource {
   def this(name: String, args: PriorityClassListArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: PriorityClassListArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: Output_[schedulingDotk8sDotioSlashv1] = js.native
+  
   /**
     * items is the list of PriorityClasses
     */
   val items: Output_[js.Array[PriorityClass]] = js.native
+  
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.PriorityClassList] = js.native
+  
   /**
     * Standard list metadata More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: Output_[ListMeta] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/scheduling/v1/priorityClassList", "PriorityClassList")
 @js.native
 object PriorityClassList extends js.Object {
+  
   /**
     * Get an existing PriorityClassList resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -58,10 +62,10 @@ object PriorityClassList extends js.Object {
     */
   def get(name: String, id: Input[ID]): PriorityClassList = js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): PriorityClassList = js.native
+  
   /**
     * Returns true if the given object is an instance of PriorityClassList.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1/priorityClassList.PriorityClassList */ Boolean = js.native
 }
-

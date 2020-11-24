@@ -2,9 +2,10 @@ package typings.jupyterlabCodeeditor.editorMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object CodeEditor {
+  
   /**
     * A factory used to create a code editor.
     */
@@ -12,6 +13,7 @@ package object CodeEditor {
     /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions, 
     typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
   ]
+  
   /**
     * A keydown handler type.
     *
@@ -24,5 +26,6 @@ package object CodeEditor {
     /* event */ typings.std.KeyboardEvent, 
     scala.Boolean
   ]
+  
   type Model = typings.jupyterlabCodeeditor.editorMod.CodeEditor.Model_
 }

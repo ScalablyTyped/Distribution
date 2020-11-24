@@ -5,7 +5,7 @@ import typings.parse5.mod.Element
 import typings.parse5ParserStream.parse5ParserStreamStrings.script
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Streaming HTML parser with scripting support.
@@ -33,10 +33,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ParserStream[TDocument] extends Writable {
+  
   /**
     * The resulting document node.
     */
   var document: TDocument = js.native
+  
   /**
     * Raised when parser encounters a `<script>` element.
     * If this event has listeners, parsing will be suspended once it is emitted.
@@ -81,4 +83,3 @@ trait ParserStream[TDocument] extends Writable {
     ]
   ): this.type = js.native
 }
-

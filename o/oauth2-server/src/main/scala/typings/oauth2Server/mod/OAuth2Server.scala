@@ -2,13 +2,14 @@ package typings.oauth2Server.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an OAuth2 server instance.
   */
 @js.native
 trait OAuth2Server extends js.Object {
+  
   /**
     * Authenticates a request.
     */
@@ -21,6 +22,7 @@ trait OAuth2Server extends js.Object {
   ): js.Promise[Token] = js.native
   def authenticate(request: Request, response: Response, options: AuthenticateOptions): js.Promise[Token] = js.native
   def authenticate(request: Request, response: Response, options: AuthenticateOptions, callback: Callback[Token]): js.Promise[Token] = js.native
+  
   /**
     * Authorizes a token request.
     */
@@ -38,6 +40,7 @@ trait OAuth2Server extends js.Object {
     options: AuthorizeOptions,
     callback: Callback[AuthorizationCode]
   ): js.Promise[AuthorizationCode] = js.native
+  
   /**
     * Retrieves a new token for an authorized token request.
     */
@@ -51,4 +54,3 @@ trait OAuth2Server extends js.Object {
   def token(request: Request, response: Response, options: TokenOptions): js.Promise[Token] = js.native
   def token(request: Request, response: Response, options: TokenOptions, callback: Callback[Token]): js.Promise[Token] = js.native
 }
-

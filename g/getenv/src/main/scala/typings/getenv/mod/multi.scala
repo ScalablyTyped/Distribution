@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("getenv", "multi")
 @js.native
 object multi extends js.Object {
+  
   /**
     * Return a list of environment variables based on a spec:
     * ```
@@ -24,4 +25,3 @@ object multi extends js.Object {
   {[ P in keyof S ]: S[P][2] extends getenv.getenv.ParseTypes? getenv.getenv.ParseMappings[S[P][2]] : string}
     */ typings.getenv.getenvStrings.multi with TopLevel[js.Any] = js.native
 }
-

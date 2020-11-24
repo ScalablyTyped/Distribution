@@ -6,7 +6,7 @@ import typings.phaser.spine.AssetManager
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofAssetManager
@@ -19,7 +19,8 @@ trait TypeofAssetManager
       /* pathPrefix */ String, 
       AssetManager
     ] {
+  
   var downloadBinary: js.Any = js.native
+  
   var downloadText: js.Any = js.native
 }
-

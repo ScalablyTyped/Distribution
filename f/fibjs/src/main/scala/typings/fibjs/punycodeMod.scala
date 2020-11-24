@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -12,9 +12,12 @@ import scala.scalajs.js.annotation._
 @JSImport("punycode", JSImport.Namespace)
 @js.native
 object punycodeMod extends js.Object {
+  
   def decode(domain: String): String = js.native
+  
   def encode(domain: String): String = js.native
+  
   def toASCII(domain: String): String = js.native
+  
   def toUnicode(domain: String): String = js.native
 }
-

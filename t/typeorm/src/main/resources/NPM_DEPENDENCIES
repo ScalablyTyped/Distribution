@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "typeorm" : "0.2.29"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "typeorm" : "0.2.29"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

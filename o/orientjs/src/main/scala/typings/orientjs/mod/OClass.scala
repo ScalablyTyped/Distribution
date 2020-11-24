@@ -3,7 +3,7 @@ package typings.orientjs.mod
 import typings.orientjs.anon.Force
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The class constructor.
@@ -12,14 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("orientjs", "OClass")
 @js.native
 class OClass () extends js.Object {
-  var clusterIds: js.UndefOr[js.Array[Double]] = js.native
-  var db: js.UndefOr[ODB] = js.native
-  var defaultClusterId: js.UndefOr[js.Any] = js.native
-  var name: js.UndefOr[String] = js.native
-  var originalName: js.UndefOr[String] = js.native
-  var property: OClassProperty = js.native
-  var shortName: js.UndefOr[String] = js.native
-  var superClass: js.UndefOr[String] = js.native
+  
   /**
     * Cache the given class data for fast lookup later.
     *
@@ -27,6 +20,9 @@ class OClass () extends js.Object {
     * @return                The db instance.
     */
   def cacheData(classes: js.Array[OClass]): ODB = js.native
+  
+  var clusterIds: js.UndefOr[js.Array[Double]] = js.native
+  
   /**
     * Create a new class.
     *
@@ -107,6 +103,11 @@ class OClass () extends js.Object {
     * @promise {Object}        The created record.
     */
   def create(record: ORecord): js.Promise[ORecord] = js.native
+  
+  var db: js.UndefOr[ODB] = js.native
+  
+  var defaultClusterId: js.UndefOr[js.Any] = js.native
+  
   /**
     * Delete a class.
     *
@@ -116,6 +117,7 @@ class OClass () extends js.Object {
     */
   def drop(name: String): js.Promise[ODB] = js.native
   def drop(name: String, config: Force): js.Promise[ODB] = js.native
+  
   /**
     * Find a list of records in the class.
     *
@@ -128,6 +130,7 @@ class OClass () extends js.Object {
   def find(attributes: js.Any, limit: js.UndefOr[scala.Nothing], offset: Double): js.Promise[js.Array[ORecord]] = js.native
   def find(attributes: js.Any, limit: Double): js.Promise[js.Array[ORecord]] = js.native
   def find(attributes: js.Any, limit: Double, offset: Double): js.Promise[js.Array[ORecord]] = js.native
+  
   /**
     * Get a class by name.
     *
@@ -137,6 +140,7 @@ class OClass () extends js.Object {
     */
   def get(name: String): js.Promise[OClass] = js.native
   def get(name: String, refresh: Boolean): js.Promise[OClass] = js.native
+  
   def list(limit: js.Any): js.Promise[js.Array[OClass]] = js.native
   def list(limit: js.Any, offset: Double): js.Promise[js.Array[OClass]] = js.native
   def list(limit: Boolean): js.Promise[js.Array[OClass]] = js.native
@@ -153,12 +157,24 @@ class OClass () extends js.Object {
     */
   def list(limit: Double): js.Promise[js.Array[OClass]] = js.native
   def list(limit: Double, offset: Double): js.Promise[js.Array[OClass]] = js.native
+  
+  var name: js.UndefOr[String] = js.native
+  
+  var originalName: js.UndefOr[String] = js.native
+  
+  var property: OClassProperty = js.native
+  
   /**
     * Reload the class instance.
     *
     * @promise {Class} The class instance.
     */
   def reload(): js.Promise[js.Array[OClass]] = js.native
+  
+  var shortName: js.UndefOr[String] = js.native
+  
+  var superClass: js.UndefOr[String] = js.native
+  
   /**
     * Update the given class.
     *
@@ -168,4 +184,3 @@ class OClass () extends js.Object {
     */
   def update(cls: js.Any, reload: Boolean): js.Promise[OClass] = js.native
 }
-

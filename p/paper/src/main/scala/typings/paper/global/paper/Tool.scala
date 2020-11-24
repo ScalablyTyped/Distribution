@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The Tool object refers to a script that the user can interact with by
@@ -19,4 +19,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class Tool ()
   extends typings.paper.paper.Tool
-

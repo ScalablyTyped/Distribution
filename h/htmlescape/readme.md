@@ -11,8 +11,8 @@ Properly escape JSON for usage as an object literal inside of a `<script>` tag
 | Full name          | htmlescape |
 | Keywords           | escape, encoding, html, json, template |
 | # releases         | 1 |
-| # dependents       | 88 |
-| # downloads        | 27532043 |
+| # dependents       | 94 |
+| # downloads        | 30454232 |
 | # stars            | 5 |
 
 ## Links

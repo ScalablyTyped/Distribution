@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Morph Target (also known as Blend Shape) contains deformation data to apply to existing mesh.
@@ -18,4 +18,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MorphTarget extends js.Object
-

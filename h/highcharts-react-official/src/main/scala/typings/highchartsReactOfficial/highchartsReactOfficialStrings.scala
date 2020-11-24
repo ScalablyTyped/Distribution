@@ -2,9 +2,250 @@ package typings.highchartsReactOfficial
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object highchartsReactOfficialStrings {
+  
+  @scala.inline
+  def Annotation: Annotation = "Annotation".asInstanceOf[Annotation]
+  
+  @scala.inline
+  def AnnotationControlPoint: AnnotationControlPoint = "AnnotationControlPoint".asInstanceOf[AnnotationControlPoint]
+  
+  @scala.inline
+  def Axis: Axis = "Axis".asInstanceOf[Axis]
+  
+  @scala.inline
+  def Chart: Chart = "Chart".asInstanceOf[Chart]
+  
+  @scala.inline
+  def Color: Color = "Color".asInstanceOf[Color]
+  
+  @scala.inline
+  def ColorAxis: ColorAxis = "ColorAxis".asInstanceOf[ColorAxis]
+  
+  @scala.inline
+  def Legend: Legend = "Legend".asInstanceOf[Legend]
+  
+  @scala.inline
+  def PlotLineOrBand: PlotLineOrBand = "PlotLineOrBand".asInstanceOf[PlotLineOrBand]
+  
+  @scala.inline
+  def Point: Point = "Point".asInstanceOf[Point]
+  
+  @scala.inline
+  def Pointer: Pointer = "Pointer".asInstanceOf[Pointer]
+  
+  @scala.inline
+  def SVGElement: SVGElement = "SVGElement".asInstanceOf[SVGElement]
+  
+  @scala.inline
+  def SVGRenderer: SVGRenderer = "SVGRenderer".asInstanceOf[SVGRenderer]
+  
+  @scala.inline
+  def Series: Series = "Series".asInstanceOf[Series]
+  
+  @scala.inline
+  def Tick: Tick = "Tick".asInstanceOf[Tick]
+  
+  @scala.inline
+  def Time: Time = "Time".asInstanceOf[Time]
+  
+  @scala.inline
+  def Tooltip: Tooltip = "Tooltip".asInstanceOf[Tooltip]
+  
+  @scala.inline
+  def addEvent: addEvent = "addEvent".asInstanceOf[addEvent]
+  
+  @scala.inline
+  def animObject: animObject = "animObject".asInstanceOf[animObject]
+  
+  @scala.inline
+  def animate: animate = "animate".asInstanceOf[animate]
+  
+  @scala.inline
+  def arrayMax: arrayMax = "arrayMax".asInstanceOf[arrayMax]
+  
+  @scala.inline
+  def arrayMin: arrayMin = "arrayMin".asInstanceOf[arrayMin]
+  
+  @scala.inline
+  def attr: attr = "attr".asInstanceOf[attr]
+  
+  @scala.inline
+  def chart_ : chart_ = "chart".asInstanceOf[chart_]
+  
+  @scala.inline
+  def charts: charts = "charts".asInstanceOf[charts]
+  
+  @scala.inline
+  def clearTimeout: clearTimeout = "clearTimeout".asInstanceOf[clearTimeout]
+  
+  @scala.inline
+  def color_ : color_ = "color".asInstanceOf[color_]
+  
+  @scala.inline
+  def correctFloat: correctFloat = "correctFloat".asInstanceOf[correctFloat]
+  
+  @scala.inline
+  def createElement: createElement = "createElement".asInstanceOf[createElement]
+  
+  @scala.inline
+  def css: css = "css".asInstanceOf[css]
+  
+  @scala.inline
+  def dateFormat: dateFormat = "dateFormat".asInstanceOf[dateFormat]
+  
+  @scala.inline
+  def dateFormats: dateFormats = "dateFormats".asInstanceOf[dateFormats]
+  
+  @scala.inline
+  def defaultOptions: defaultOptions = "defaultOptions".asInstanceOf[defaultOptions]
+  
+  @scala.inline
+  def defined: defined = "defined".asInstanceOf[defined]
+  
+  @scala.inline
+  def destroyObjectProperties: destroyObjectProperties = "destroyObjectProperties".asInstanceOf[destroyObjectProperties]
+  
+  @scala.inline
+  def discardElement: discardElement = "discardElement".asInstanceOf[discardElement]
+  
+  @scala.inline
+  def each: each = "each".asInstanceOf[each]
+  
+  @scala.inline
+  def erase: erase = "erase".asInstanceOf[erase]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def extend: extend = "extend".asInstanceOf[extend]
+  
+  @scala.inline
+  def extendClass: extendClass = "extendClass".asInstanceOf[extendClass]
+  
+  @scala.inline
+  def find: find = "find".asInstanceOf[find]
+  
+  @scala.inline
+  def fireEvent: fireEvent = "fireEvent".asInstanceOf[fireEvent]
+  
+  @scala.inline
+  def format: format = "format".asInstanceOf[format]
+  
+  @scala.inline
+  def getDeferredAnimation: getDeferredAnimation = "getDeferredAnimation".asInstanceOf[getDeferredAnimation]
+  
+  @scala.inline
+  def getMagnitude: getMagnitude = "getMagnitude".asInstanceOf[getMagnitude]
+  
+  @scala.inline
+  def getOptions: getOptions = "getOptions".asInstanceOf[getOptions]
+  
+  @scala.inline
+  def getStyle: getStyle = "getStyle".asInstanceOf[getStyle]
+  
+  @scala.inline
+  def grep: grep = "grep".asInstanceOf[grep]
+  
+  @scala.inline
+  def inArray: inArray = "inArray".asInstanceOf[inArray]
+  
+  @scala.inline
+  def isArray: isArray = "isArray".asInstanceOf[isArray]
+  
+  @scala.inline
+  def isClass: isClass = "isClass".asInstanceOf[isClass]
+  
+  @scala.inline
+  def isDOMElement: isDOMElement = "isDOMElement".asInstanceOf[isDOMElement]
+  
+  @scala.inline
+  def isNumber: isNumber = "isNumber".asInstanceOf[isNumber]
+  
+  @scala.inline
+  def isObject: isObject = "isObject".asInstanceOf[isObject]
+  
+  @scala.inline
+  def isString: isString = "isString".asInstanceOf[isString]
+  
+  @scala.inline
+  def keys: keys = "keys".asInstanceOf[keys]
+  
+  @scala.inline
+  def map: map = "map".asInstanceOf[map]
+  
+  @scala.inline
+  def merge: merge = "merge".asInstanceOf[merge]
+  
+  @scala.inline
+  def normalizeTickInterval: normalizeTickInterval = "normalizeTickInterval".asInstanceOf[normalizeTickInterval]
+  
+  @scala.inline
+  def numberFormat: numberFormat = "numberFormat".asInstanceOf[numberFormat]
+  
+  @scala.inline
+  def objectEach: objectEach = "objectEach".asInstanceOf[objectEach]
+  
+  @scala.inline
+  def offset: offset = "offset".asInstanceOf[offset]
+  
+  @scala.inline
+  def pad: pad = "pad".asInstanceOf[pad]
+  
+  @scala.inline
+  def pick: pick = "pick".asInstanceOf[pick]
+  
+  @scala.inline
+  def reduce: reduce = "reduce".asInstanceOf[reduce]
+  
+  @scala.inline
+  def relativeLength: relativeLength = "relativeLength".asInstanceOf[relativeLength]
+  
+  @scala.inline
+  def removeEvent: removeEvent = "removeEvent".asInstanceOf[removeEvent]
+  
+  @scala.inline
+  def seriesType: seriesType = "seriesType".asInstanceOf[seriesType]
+  
+  @scala.inline
+  def setAnimation: setAnimation = "setAnimation".asInstanceOf[setAnimation]
+  
+  @scala.inline
+  def setOptions: setOptions = "setOptions".asInstanceOf[setOptions]
+  
+  @scala.inline
+  def some: some = "some".asInstanceOf[some]
+  
+  @scala.inline
+  def splat: splat = "splat".asInstanceOf[splat]
+  
+  @scala.inline
+  def stableSort: stableSort = "stableSort".asInstanceOf[stableSort]
+  
+  @scala.inline
+  def stop: stop = "stop".asInstanceOf[stop]
+  
+  @scala.inline
+  def syncTimeout: syncTimeout = "syncTimeout".asInstanceOf[syncTimeout]
+  
+  @scala.inline
+  def theme: theme = "theme".asInstanceOf[theme]
+  
+  @scala.inline
+  def time_ : time_ = "time".asInstanceOf[time_]
+  
+  @scala.inline
+  def uniqueKey: uniqueKey = "uniqueKey".asInstanceOf[uniqueKey]
+  
+  @scala.inline
+  def useSerialIds: useSerialIds = "useSerialIds".asInstanceOf[useSerialIds]
+  
+  @scala.inline
+  def wrap: wrap = "wrap".asInstanceOf[wrap]
+  
   @js.native
   sealed trait Annotation extends js.Object
   
@@ -135,6 +376,9 @@ object highchartsReactOfficialStrings {
   sealed trait format extends js.Object
   
   @js.native
+  sealed trait getDeferredAnimation extends js.Object
+  
+  @js.native
   sealed trait getMagnitude extends js.Object
   
   @js.native
@@ -228,6 +472,9 @@ object highchartsReactOfficialStrings {
   sealed trait syncTimeout extends js.Object
   
   @js.native
+  sealed trait theme extends js.Object
+  
+  @js.native
   sealed trait time_ extends js.Object
   
   @js.native
@@ -238,162 +485,4 @@ object highchartsReactOfficialStrings {
   
   @js.native
   sealed trait wrap extends js.Object
-  
-  @scala.inline
-  def Annotation: Annotation = "Annotation".asInstanceOf[Annotation]
-  @scala.inline
-  def AnnotationControlPoint: AnnotationControlPoint = "AnnotationControlPoint".asInstanceOf[AnnotationControlPoint]
-  @scala.inline
-  def Axis: Axis = "Axis".asInstanceOf[Axis]
-  @scala.inline
-  def Chart: Chart = "Chart".asInstanceOf[Chart]
-  @scala.inline
-  def Color: Color = "Color".asInstanceOf[Color]
-  @scala.inline
-  def ColorAxis: ColorAxis = "ColorAxis".asInstanceOf[ColorAxis]
-  @scala.inline
-  def Legend: Legend = "Legend".asInstanceOf[Legend]
-  @scala.inline
-  def PlotLineOrBand: PlotLineOrBand = "PlotLineOrBand".asInstanceOf[PlotLineOrBand]
-  @scala.inline
-  def Point: Point = "Point".asInstanceOf[Point]
-  @scala.inline
-  def Pointer: Pointer = "Pointer".asInstanceOf[Pointer]
-  @scala.inline
-  def SVGElement: SVGElement = "SVGElement".asInstanceOf[SVGElement]
-  @scala.inline
-  def SVGRenderer: SVGRenderer = "SVGRenderer".asInstanceOf[SVGRenderer]
-  @scala.inline
-  def Series: Series = "Series".asInstanceOf[Series]
-  @scala.inline
-  def Tick: Tick = "Tick".asInstanceOf[Tick]
-  @scala.inline
-  def Time: Time = "Time".asInstanceOf[Time]
-  @scala.inline
-  def Tooltip: Tooltip = "Tooltip".asInstanceOf[Tooltip]
-  @scala.inline
-  def addEvent: addEvent = "addEvent".asInstanceOf[addEvent]
-  @scala.inline
-  def animObject: animObject = "animObject".asInstanceOf[animObject]
-  @scala.inline
-  def animate: animate = "animate".asInstanceOf[animate]
-  @scala.inline
-  def arrayMax: arrayMax = "arrayMax".asInstanceOf[arrayMax]
-  @scala.inline
-  def arrayMin: arrayMin = "arrayMin".asInstanceOf[arrayMin]
-  @scala.inline
-  def attr: attr = "attr".asInstanceOf[attr]
-  @scala.inline
-  def chart_ : chart_ = "chart".asInstanceOf[chart_]
-  @scala.inline
-  def charts: charts = "charts".asInstanceOf[charts]
-  @scala.inline
-  def clearTimeout: clearTimeout = "clearTimeout".asInstanceOf[clearTimeout]
-  @scala.inline
-  def color_ : color_ = "color".asInstanceOf[color_]
-  @scala.inline
-  def correctFloat: correctFloat = "correctFloat".asInstanceOf[correctFloat]
-  @scala.inline
-  def createElement: createElement = "createElement".asInstanceOf[createElement]
-  @scala.inline
-  def css: css = "css".asInstanceOf[css]
-  @scala.inline
-  def dateFormat: dateFormat = "dateFormat".asInstanceOf[dateFormat]
-  @scala.inline
-  def dateFormats: dateFormats = "dateFormats".asInstanceOf[dateFormats]
-  @scala.inline
-  def defaultOptions: defaultOptions = "defaultOptions".asInstanceOf[defaultOptions]
-  @scala.inline
-  def defined: defined = "defined".asInstanceOf[defined]
-  @scala.inline
-  def destroyObjectProperties: destroyObjectProperties = "destroyObjectProperties".asInstanceOf[destroyObjectProperties]
-  @scala.inline
-  def discardElement: discardElement = "discardElement".asInstanceOf[discardElement]
-  @scala.inline
-  def each: each = "each".asInstanceOf[each]
-  @scala.inline
-  def erase: erase = "erase".asInstanceOf[erase]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def extend: extend = "extend".asInstanceOf[extend]
-  @scala.inline
-  def extendClass: extendClass = "extendClass".asInstanceOf[extendClass]
-  @scala.inline
-  def find: find = "find".asInstanceOf[find]
-  @scala.inline
-  def fireEvent: fireEvent = "fireEvent".asInstanceOf[fireEvent]
-  @scala.inline
-  def format: format = "format".asInstanceOf[format]
-  @scala.inline
-  def getMagnitude: getMagnitude = "getMagnitude".asInstanceOf[getMagnitude]
-  @scala.inline
-  def getOptions: getOptions = "getOptions".asInstanceOf[getOptions]
-  @scala.inline
-  def getStyle: getStyle = "getStyle".asInstanceOf[getStyle]
-  @scala.inline
-  def grep: grep = "grep".asInstanceOf[grep]
-  @scala.inline
-  def inArray: inArray = "inArray".asInstanceOf[inArray]
-  @scala.inline
-  def isArray: isArray = "isArray".asInstanceOf[isArray]
-  @scala.inline
-  def isClass: isClass = "isClass".asInstanceOf[isClass]
-  @scala.inline
-  def isDOMElement: isDOMElement = "isDOMElement".asInstanceOf[isDOMElement]
-  @scala.inline
-  def isNumber: isNumber = "isNumber".asInstanceOf[isNumber]
-  @scala.inline
-  def isObject: isObject = "isObject".asInstanceOf[isObject]
-  @scala.inline
-  def isString: isString = "isString".asInstanceOf[isString]
-  @scala.inline
-  def keys: keys = "keys".asInstanceOf[keys]
-  @scala.inline
-  def map: map = "map".asInstanceOf[map]
-  @scala.inline
-  def merge: merge = "merge".asInstanceOf[merge]
-  @scala.inline
-  def normalizeTickInterval: normalizeTickInterval = "normalizeTickInterval".asInstanceOf[normalizeTickInterval]
-  @scala.inline
-  def numberFormat: numberFormat = "numberFormat".asInstanceOf[numberFormat]
-  @scala.inline
-  def objectEach: objectEach = "objectEach".asInstanceOf[objectEach]
-  @scala.inline
-  def offset: offset = "offset".asInstanceOf[offset]
-  @scala.inline
-  def pad: pad = "pad".asInstanceOf[pad]
-  @scala.inline
-  def pick: pick = "pick".asInstanceOf[pick]
-  @scala.inline
-  def reduce: reduce = "reduce".asInstanceOf[reduce]
-  @scala.inline
-  def relativeLength: relativeLength = "relativeLength".asInstanceOf[relativeLength]
-  @scala.inline
-  def removeEvent: removeEvent = "removeEvent".asInstanceOf[removeEvent]
-  @scala.inline
-  def seriesType: seriesType = "seriesType".asInstanceOf[seriesType]
-  @scala.inline
-  def setAnimation: setAnimation = "setAnimation".asInstanceOf[setAnimation]
-  @scala.inline
-  def setOptions: setOptions = "setOptions".asInstanceOf[setOptions]
-  @scala.inline
-  def some: some = "some".asInstanceOf[some]
-  @scala.inline
-  def splat: splat = "splat".asInstanceOf[splat]
-  @scala.inline
-  def stableSort: stableSort = "stableSort".asInstanceOf[stableSort]
-  @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
-  @scala.inline
-  def syncTimeout: syncTimeout = "syncTimeout".asInstanceOf[syncTimeout]
-  @scala.inline
-  def time_ : time_ = "time".asInstanceOf[time_]
-  @scala.inline
-  def uniqueKey: uniqueKey = "uniqueKey".asInstanceOf[uniqueKey]
-  @scala.inline
-  def useSerialIds: useSerialIds = "useSerialIds".asInstanceOf[useSerialIds]
-  @scala.inline
-  def wrap: wrap = "wrap".asInstanceOf[wrap]
 }
-

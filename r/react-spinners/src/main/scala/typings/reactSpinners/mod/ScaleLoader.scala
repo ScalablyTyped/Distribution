@@ -7,7 +7,7 @@ import typings.react.mod.ComponentState
 import typings.reactSpinners.interfacesMod.LoaderHeightWidthRadiusProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-spinners", "ScaleLoader")
 @js.native
@@ -16,8 +16,6 @@ class ScaleLoader protected ()
   def this(props: LoaderHeightWidthRadiusProps) = this()
   def this(props: LoaderHeightWidthRadiusProps, context: js.Any) = this()
 }
-
 @JSImport("react-spinners", "ScaleLoader")
 @js.native
 object ScaleLoader extends TopLevel[ComponentClass[LoaderHeightWidthRadiusProps, ComponentState]]
-

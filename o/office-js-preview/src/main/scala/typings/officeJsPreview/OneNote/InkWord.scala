@@ -6,7 +6,7 @@ import typings.officeJsPreview.OneNote.Interfaces.InkWordLoadOptions
 import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -16,9 +16,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait InkWord extends ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_InkWord: RequestContext = js.native
+  
   /**
     *
     * Gets the ID of the InkWord object. Read-only.
@@ -26,6 +28,7 @@ trait InkWord extends ClientObject {
     * [Api set: OneNoteApi 1.1]
     */
   val id: String = js.native
+  
   /**
     *
     * The id of the recognized language in this ink word. Read-only.
@@ -33,20 +36,7 @@ trait InkWord extends ClientObject {
     * [Api set: OneNoteApi 1.1]
     */
   val languageId: String = js.native
-  /**
-    *
-    * The parent paragraph containing the ink word. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  val paragraph: Paragraph = js.native
-  /**
-    *
-    * The words that were recognized in this ink word, in order of likelihood. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  val wordAlternates: js.Array[String] = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *
@@ -67,18 +57,36 @@ trait InkWord extends ClientObject {
   def load(option: js.Array[String]): InkWord = js.native
   def load(option: InkWordLoadOptions): InkWord = js.native
   def load(option: Expand): InkWord = js.native
+  
+  /**
+    *
+    * The parent paragraph containing the ink word. Read-only.
+    *
+    * [Api set: OneNoteApi 1.1]
+    */
+  val paragraph: Paragraph = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original OneNote.InkWord object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkWordData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): InkWordData = js.native
+  
   /**
     * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): InkWord = js.native
+  
   /**
     * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
     */
   def untrack(): InkWord = js.native
+  
+  /**
+    *
+    * The words that were recognized in this ink word, in order of likelihood. Read-only.
+    *
+    * [Api set: OneNoteApi 1.1]
+    */
+  val wordAlternates: js.Array[String] = js.native
 }
-

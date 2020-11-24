@@ -4,15 +4,15 @@
 Typings are for version 6.4
 
 ## Library description:
-Customizable Icons for React Native with support for NavBar/TabBar/ToolbarAndroid, image source and full styling.
+Customizable Icons for React Native with support for NavBar/TabBar, image source and full styling.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-native-vector-icons |
 | Keywords           | react-native, react-component, react-native-component, react, mobile, ios, android, osx, windows, macos, ui, icon, icons, vector, retina, font |
-| # releases         | 16 |
-| # dependents       | 494 |
-| # downloads        | 9367030 |
+| # releases         | 13 |
+| # dependents       | 676 |
+| # downloads        | 10136850 |
 | # stars            | 38 |
 
 ## Links

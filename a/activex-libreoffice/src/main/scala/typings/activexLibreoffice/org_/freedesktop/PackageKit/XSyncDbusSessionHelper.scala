@@ -4,14 +4,14 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait XSyncDbusSessionHelper
   extends XModify
      with XQuery
-
 object XSyncDbusSessionHelper {
+  
   @scala.inline
   def apply(
     InstallCatalogs: (Double, SeqEquiv[String], String) => Unit,
@@ -34,4 +34,3 @@ object XSyncDbusSessionHelper {
     __obj.asInstanceOf[XSyncDbusSessionHelper]
   }
 }
-

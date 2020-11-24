@@ -2,11 +2,12 @@ package typings.locutus.phpMod.strings
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("locutus/php", "strings.strpos")
 @js.native
 object strpos extends js.Object {
+  
   def apply(): js.Any = js.native
   def apply(haystack: js.UndefOr[scala.Nothing], needle: js.UndefOr[scala.Nothing], offset: js.Any): js.Any = js.native
   def apply(haystack: js.UndefOr[scala.Nothing], needle: js.Any): js.Any = js.native
@@ -16,4 +17,3 @@ object strpos extends js.Object {
   def apply(haystack: js.Any, needle: js.Any): js.Any = js.native
   def apply(haystack: js.Any, needle: js.Any, offset: js.Any): js.Any = js.native
 }
-

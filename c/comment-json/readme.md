@@ -1,7 +1,7 @@
 
 # Scala.js typings for comment-json
 
-Typings are for version 1.1
+Typings are for version 4.1.0
 
 ## Library description:
 Parse and stringify JSON with comments. It will retain comments even after saved!
@@ -10,9 +10,9 @@ Parse and stringify JSON with comments. It will retain comments even after saved
 | ------------------ | :-------------: |
 | Full name          | comment-json |
 | Keywords           | comment-json, comments, annotations, json, json-stringify, json-parse, parser, comments-json, json-comments |
-| # releases         | 14 |
-| # dependents       | 76 |
-| # downloads        | 2473958 |
+| # releases         | 30 |
+| # dependents       | 113 |
+| # downloads        | 4704665 |
 | # stars            | 1 |
 
 ## Links
@@ -24,7 +24,7 @@ Parse and stringify JSON with comments. It will retain comments even after saved
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__tooltip
 
-Typings are for version 2.1.1
+Typings are for version 2.2.6
 
 ## Library description:
 JupyterLab - Tooltip Widget
@@ -10,9 +10,9 @@ JupyterLab - Tooltip Widget
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/tooltip |
 | Keywords           | - |
-| # releases         | 64 |
-| # dependents       | 3 |
-| # downloads        | 744282 |
+| # releases         | 113 |
+| # dependents       | 4 |
+| # downloads        | 1351708 |
 | # stars            | 0 |
 
 ## Links

@@ -8,22 +8,16 @@ import typings.protractor.pluginsMod.Plugins
 import typings.q.mod.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor/built/runner", JSImport.Namespace)
 @js.native
 object runnerMod extends js.Object {
+  
   @js.native
   class Runner protected () extends EventEmitter {
     def this(config: Config) = this()
-    var config_ : Config = js.native
-    var driverprovider_ : DriverProvider = js.native
-    var frameworkUsesAfterEach: Boolean = js.native
-    var o: js.Any = js.native
-    var plugins_ : Plugins = js.native
-    var preparer_ : js.Any = js.native
-    var ready_ : js.UndefOr[js.Promise[Unit]] = js.native
-    var restartPromise: Promise[_] = js.native
+    
     /**
       * Called after each test finishes.
       *
@@ -33,11 +27,15 @@ object runnerMod extends js.Object {
       * @return {q.Promise} A promise that will resolve when the work here is done
       */
     def afterEach(): Promise[Unit] = js.native
+    
+    var config_ : Config = js.native
+    
     /**
       * Get the control flow used by this runner.
       * @return {Object} WebDriver control flow.
       */
     def controlFlow(): js.Any = js.native
+    
     /**
       * Create a new driver from a driverProvider. Then set up a
       * new protractor instance using this driver.
@@ -52,18 +50,25 @@ object runnerMod extends js.Object {
       */
     def createBrowser(plugins: js.Any): js.Any = js.native
     def createBrowser(plugins: js.Any, parentBrowser: ProtractorBrowser): js.Any = js.native
+    
+    var driverprovider_ : DriverProvider = js.native
+    
     /**
       * Responsible for cleaning up test run and exiting the process.
       * @private
       * @param {int} Standard unix exit code
       */
     def exit_(exitCode: Double): js.Any = js.native
+    
+    var frameworkUsesAfterEach: Boolean = js.native
+    
     /**
       * Getter for the Runner config object
       * @public
       * @return {Object} config
       */
     def getConfig(): Config = js.native
+    
     /**
       * Grab driver provider based on type
       * @private
@@ -76,6 +81,17 @@ object runnerMod extends js.Object {
       * 5) try to find the seleniumServerJar in protractor/selenium
       */
     def loadDriverProvider_(config: Config): Unit = js.native
+    
+    var o: js.Any = js.native
+    
+    var plugins_ : Plugins = js.native
+    
+    var preparer_ : js.Any = js.native
+    
+    var ready_ : js.UndefOr[js.Promise[Unit]] = js.native
+    
+    var restartPromise: Promise[_] = js.native
+    
     /**
       * The primary workhorse interface. Kicks off the test running process.
       *
@@ -83,6 +99,7 @@ object runnerMod extends js.Object {
       * @public
       */
     def run(): Promise[_] = js.native
+    
     /**
       * Executor of testPreparer
       * @public
@@ -92,6 +109,7 @@ object runnerMod extends js.Object {
       */
     def runTestPreparer(): Promise[_] = js.native
     def runTestPreparer(extraFlags: js.Array[String]): Promise[_] = js.native
+    
     /**
       * Registrar for testPreparers - executed right before tests run.
       * @public
@@ -99,11 +117,13 @@ object runnerMod extends js.Object {
       */
     def setTestPreparer(filenameOrFn: String): Unit = js.native
     def setTestPreparer(filenameOrFn: js.Function): Unit = js.native
+    
     /**
       * Sets up convenience globals for test specs
       * @private
       */
     def setupGlobals_(browser_ : ProtractorBrowser): Unit = js.native
+    
     /**
       * Final cleanup on exiting the runner.
       *
@@ -112,6 +132,4 @@ object runnerMod extends js.Object {
       */
     def shutdown_(): Promise[Unit] = js.native
   }
-  
 }
-

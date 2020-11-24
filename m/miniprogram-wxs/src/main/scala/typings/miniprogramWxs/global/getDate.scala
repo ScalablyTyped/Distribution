@@ -2,11 +2,12 @@ package typings.miniprogramWxs.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("getDate")
 @js.native
 object getDate extends js.Object {
+  
   /**
     * 返回一个当前时间的对象。
     */
@@ -235,4 +236,3 @@ object getDate extends js.Object {
     ms: Double
   ): typings.miniprogramWxs.Date = js.native
 }
-

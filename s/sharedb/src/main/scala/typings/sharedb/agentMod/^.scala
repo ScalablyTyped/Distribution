@@ -2,7 +2,7 @@ package typings.sharedb.agentMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An `Agent` is the representation of a client's `Connection` state on the
@@ -19,4 +19,3 @@ import scala.scalajs.js.annotation._
 @JSImport("sharedb/lib/agent", JSImport.Namespace)
 @js.native
 class ^ () extends Agent
-

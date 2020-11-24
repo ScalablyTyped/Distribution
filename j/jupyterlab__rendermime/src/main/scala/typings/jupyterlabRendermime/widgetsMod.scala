@@ -9,11 +9,12 @@ import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IResolver
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.ISanitizer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/rendermime/lib/widgets", JSImport.Namespace)
 @js.native
 object widgetsMod extends js.Object {
+  
   @js.native
   abstract class RenderedCommon protected () extends IRenderer {
     /**
@@ -22,26 +23,22 @@ object widgetsMod extends js.Object {
       * @param options - The options for initializing the widget.
       */
     def this(options: IRendererOptions) = this()
+    
     /**
       * The latexTypesetter.
       */
     val latexTypesetter: ILatexTypesetter | Null = js.native
+    
     /**
       * The link handler.
       */
     val linkHandler: ILinkHandler | Null = js.native
+    
     /**
       * The mimetype being rendered.
       */
     val mimeType: String = js.native
-    /**
-      * The resolver object.
-      */
-    val resolver: IResolver | Null = js.native
-    /**
-      * The sanitizer used to sanitize untrusted html inputs.
-      */
-    val sanitizer: ISanitizer = js.native
+    
     /**
       * Render the mime model.
       *
@@ -50,6 +47,17 @@ object widgetsMod extends js.Object {
       * @returns A promise which resolves when rendering is complete.
       */
     def render(model: IMimeModel): js.Promise[Unit] = js.native
+    
+    /**
+      * The resolver object.
+      */
+    val resolver: IResolver | Null = js.native
+    
+    /**
+      * The sanitizer used to sanitize untrusted html inputs.
+      */
+    val sanitizer: ISanitizer = js.native
+    
     /**
       * Set the URI fragment identifier.
       *
@@ -137,6 +145,4 @@ object widgetsMod extends js.Object {
       */
     def this(options: IRendererOptions) = this()
   }
-  
 }
-

@@ -13,11 +13,12 @@ import typings.msRestAzure.mod.AzureServiceClientOptions
 import typings.msRestAzure.mod.CloudErrorParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource/lib/resource/resourceManagementClient", JSImport.Namespace)
 @js.native
 object resourceManagementClientMod extends js.Object {
+  
   @js.native
   class ResourceManagementClient protected () extends AzureServiceClient {
     /**
@@ -61,20 +62,47 @@ object resourceManagementClientMod extends js.Object {
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
+    
     var acceptLanguage: String = js.native
+    
     var apiVersion: String = js.native
+    
     var credentials: ServiceClientCredentials = js.native
+    
     var deploymentOperations: DeploymentOperations = js.native
+    
     var deployments: Deployments = js.native
+    
     var generateClientRequestId: Boolean = js.native
+    
     var longRunningOperationRetryTimeout: Double = js.native
+    
     // Operation groups
     var operations: Operations = js.native
+    
     var providers: Providers = js.native
+    
     var resourceGroups: ResourceGroups = js.native
+    
     var resources: Resources = js.native
+    
     var subscriptionId: String = js.native
+    
     var tags: Tags = js.native
+  }
+  
+  @js.native
+  object ResourceManagementModels extends js.Object {
+    
+    @js.native
+    class BaseResource ()
+      extends typings.msRestAzure.mod.BaseResource
+    
+    @js.native
+    class CloudError protected ()
+      extends typings.azureArmResource.resourceModelsMod.CloudError {
+      def this(parameters: CloudErrorParameters) = this()
+    }
   }
   
   @js.native
@@ -121,20 +149,4 @@ object resourceManagementClientMod extends js.Object {
       options: AzureServiceClientOptions
     ) = this()
   }
-  
-  @js.native
-  object ResourceManagementModels extends js.Object {
-    @js.native
-    class BaseResource ()
-      extends typings.msRestAzure.mod.BaseResource
-    
-    @js.native
-    class CloudError protected ()
-      extends typings.azureArmResource.resourceModelsMod.CloudError {
-      def this(parameters: CloudErrorParameters) = this()
-    }
-    
-  }
-  
 }
-

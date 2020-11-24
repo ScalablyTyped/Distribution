@@ -2,11 +2,10 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LINE_JOIN extends js.Object
-
 /**
   * Supported line joints in `PIXI.LineStyle` for graphics.
   *
@@ -24,6 +23,7 @@ sealed trait LINE_JOIN extends js.Object
 @JSGlobal("PIXI.LINE_JOIN")
 @js.native
 object LINE_JOIN extends js.Object {
+  
   @js.native
   sealed trait BEVEL extends LINE_JOIN
   
@@ -32,6 +32,4 @@ object LINE_JOIN extends js.Object {
   
   @js.native
   sealed trait ROUND extends LINE_JOIN
-  
 }
-

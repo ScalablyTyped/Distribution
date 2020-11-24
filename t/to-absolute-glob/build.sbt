@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "to-absolute-glob"
-version := "2.0-dt-20200515Z-7987f3"
+version := "2.0-dt-20200515Z-8dbf98"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

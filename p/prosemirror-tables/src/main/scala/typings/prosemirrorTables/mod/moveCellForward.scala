@@ -4,11 +4,11 @@ import typings.prosemirrorModel.mod.ResolvedPos
 import typings.prosemirrorModel.mod.Schema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-tables", "moveCellForward")
 @js.native
 object moveCellForward extends js.Object {
+  
   def apply[S /* <: Schema[_, _] */](pos: ResolvedPos[S]): ResolvedPos[S] = js.native
 }
-

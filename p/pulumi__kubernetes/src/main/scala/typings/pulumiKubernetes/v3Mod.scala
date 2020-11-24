@@ -2,15 +2,15 @@ package typings.pulumiKubernetes
 
 import typings.pulumiKubernetes.v3HelmMod.ChartOpts
 import typings.pulumiKubernetes.v3HelmMod.LocalChartOpts
-import typings.pulumiKubernetes.v3HelmMod.ResolvedFetchOpts
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/helm/v3", JSImport.Namespace)
 @js.native
 object v3Mod extends js.Object {
+  
   @js.native
   class Chart protected ()
     extends typings.pulumiKubernetes.v3HelmMod.Chart {
@@ -25,8 +25,4 @@ object v3Mod extends js.Object {
     def this(releaseName: String, config: ChartOpts, opts: ComponentResourceOptions) = this()
     def this(releaseName: String, config: LocalChartOpts, opts: ComponentResourceOptions) = this()
   }
-  
-  def fetch(chart: String): Unit = js.native
-  def fetch(chart: String, opts: ResolvedFetchOpts): Unit = js.native
 }
-

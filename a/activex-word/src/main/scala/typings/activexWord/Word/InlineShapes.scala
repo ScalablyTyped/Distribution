@@ -4,29 +4,28 @@ import typings.activexOffice.Office.SmartArtLayout
 import typings.activexOffice.Office.XlChartType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InlineShapes extends js.Object {
-  val Application: typings.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.InlineShapes_typekey")
-  var WordDotInlineShapes_typekey: InlineShapes = js.native
+  
   /** @param Office.XlChartType [Type=-1] */
   def AddChart(): InlineShape = js.native
   def AddChart(Type: js.UndefOr[scala.Nothing], Range: js.Any): InlineShape = js.native
   def AddChart(Type: XlChartType): InlineShape = js.native
   def AddChart(Type: XlChartType, Range: js.Any): InlineShape = js.native
+  
   def AddHorizontalLine(FileName: String): InlineShape = js.native
   def AddHorizontalLine(FileName: String, Range: js.Any): InlineShape = js.native
+  
   def AddHorizontalLineStandard(): InlineShape = js.native
   def AddHorizontalLineStandard(Range: js.Any): InlineShape = js.native
+  
   def AddOLEControl(): InlineShape = js.native
   def AddOLEControl(ClassType: js.UndefOr[scala.Nothing], Range: js.Any): InlineShape = js.native
   def AddOLEControl(ClassType: js.Any): InlineShape = js.native
   def AddOLEControl(ClassType: js.Any, Range: js.Any): InlineShape = js.native
+  
   def AddOLEObject(
     ClassType: js.UndefOr[js.Any],
     FileName: js.UndefOr[js.Any],
@@ -37,6 +36,7 @@ trait InlineShapes extends js.Object {
     IconLabel: js.UndefOr[js.Any],
     Range: js.UndefOr[js.Any]
   ): InlineShape = js.native
+  
   def AddPicture(FileName: String): InlineShape = js.native
   def AddPicture(
     FileName: String,
@@ -50,11 +50,25 @@ trait InlineShapes extends js.Object {
   def AddPicture(FileName: String, LinkToFile: js.Any, SaveWithDocument: js.UndefOr[scala.Nothing], Range: js.Any): InlineShape = js.native
   def AddPicture(FileName: String, LinkToFile: js.Any, SaveWithDocument: js.Any): InlineShape = js.native
   def AddPicture(FileName: String, LinkToFile: js.Any, SaveWithDocument: js.Any, Range: js.Any): InlineShape = js.native
+  
   def AddPictureBullet(FileName: String): InlineShape = js.native
   def AddPictureBullet(FileName: String, Range: js.Any): InlineShape = js.native
+  
   def AddSmartArt(Layout: SmartArtLayout): InlineShape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Range: js.Any): InlineShape = js.native
+  
+  val Application: typings.activexWord.Word.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
   def Item(Index: Double): InlineShape = js.native
+  
   def New(Range: Range): InlineShape = js.native
+  
+  val Parent: js.Any = js.native
+  
+  @JSName("Word.InlineShapes_typekey")
+  var WordDotInlineShapes_typekey: InlineShapes = js.native
 }
-

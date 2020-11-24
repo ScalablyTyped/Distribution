@@ -9,11 +9,12 @@ import typings.msRestAzure.mod.AzureServiceClientOptions
 import typings.msRestAzure.mod.CloudErrorParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource/lib/subscription/subscriptionClient", JSImport.Namespace)
 @js.native
 object subscriptionClientMod extends js.Object {
+  
   @js.native
   class SubscriptionClient protected () extends AzureServiceClient {
     /**
@@ -49,15 +50,37 @@ object subscriptionClientMod extends js.Object {
       options: AzureServiceClientOptions
     ) = this()
     def this(credentials: ServiceClientCredentials, baseUri: String, options: AzureServiceClientOptions) = this()
+    
     var acceptLanguage: String = js.native
+    
     var apiVersion: String = js.native
+    
     var credentials: ServiceClientCredentials = js.native
+    
     var generateClientRequestId: Boolean = js.native
+    
     var longRunningOperationRetryTimeout: Double = js.native
+    
     // Operation groups
     var operations: Operations = js.native
+    
     var subscriptions: Subscriptions = js.native
+    
     var tenants: Tenants = js.native
+  }
+  
+  @js.native
+  object SubscriptionModels extends js.Object {
+    
+    @js.native
+    class BaseResource ()
+      extends typings.msRestAzure.mod.BaseResource
+    
+    @js.native
+    class CloudError protected ()
+      extends typings.azureArmResource.subscriptionModelsMod.CloudError {
+      def this(parameters: CloudErrorParameters) = this()
+    }
   }
   
   @js.native
@@ -96,20 +119,4 @@ object subscriptionClientMod extends js.Object {
     ) = this()
     def this(credentials: ServiceClientCredentials, baseUri: String, options: AzureServiceClientOptions) = this()
   }
-  
-  @js.native
-  object SubscriptionModels extends js.Object {
-    @js.native
-    class BaseResource ()
-      extends typings.msRestAzure.mod.BaseResource
-    
-    @js.native
-    class CloudError protected ()
-      extends typings.azureArmResource.subscriptionModelsMod.CloudError {
-      def this(parameters: CloudErrorParameters) = this()
-    }
-    
-  }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.microsoftAjax.Sys.Services
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides the client proxy class for the authentication service.
@@ -14,12 +14,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AuthenticationService extends js.Object {
+  
   //#endregion
   //#region Fields
   /**
     * Specifies the path of the default authentication service.
     */
   var DefaultWebServicePath: String = js.native
+  
   /**
     * Gets or sets the default succeeded callback function for the service.
     * @return A reference to the succeeded callback function for the service.
@@ -31,6 +33,7 @@ trait AuthenticationService extends js.Object {
     *           A reference to the succeeded callback function for the service.
     */
   def defaultSucceededCallback(value: js.Function): Unit = js.native
+  
   /**
     * Gets or sets the default user context for the service.
     * @return A reference to the user context for the service.
@@ -42,23 +45,27 @@ trait AuthenticationService extends js.Object {
     *       A reference to the user context for the service.
     */
   def defaultUserContext(value: js.Object): Unit = js.native
+  
   //#endregion
   //#region Properties
   /**
     * Gets or sets the name of the default failure callback function.
     */
   def get_defaultFailedCallback(): js.Function = js.native
+  
   /**
     * Gets the authentication state of the current user.
     * The value of this property is set by the ScriptManager object during a page request.
     * @return true if the current user is logged in; otherwise, false.
     */
   def get_isLoggedIn(): Boolean = js.native
+  
   /**
     * Gets or sets the authentication service path.
     * By default, the path property is set to an empty string. If you do not set the path property, the internal default path is used, which points to the built-in authentication service.
     */
   def get_path(): String = js.native
+  
   /**
     * Gets or sets the authentication service time-out value.
     * The timeout property represents the time in milliseconds that the current instance of the Sys.Net.WebRequestExecutor class should wait before timing out the request.
@@ -67,6 +74,7 @@ trait AuthenticationService extends js.Object {
     *       The timeout
     */
   def get_timeout(): Double = js.native
+  
   //#endregion
   //#region Methods
   /**
@@ -98,6 +106,7 @@ trait AuthenticationService extends js.Object {
     failedCallback: js.Function,
     userContext: js.Any
   ): Unit = js.native
+  
   /**
     * Logs out the currently authenticated user.
     *
@@ -121,12 +130,14 @@ trait AuthenticationService extends js.Object {
     failedCallback: js.Function,
     userContext: js.Any
   ): Unit = js.native
+  
   /**
     * Gets or sets the name of the default failure callback function.
     * @param value
     *           A string that contains the name of the default failure callback function.
     */
   def set_defaultFailedCallback(value: String): Unit = js.native
+  
   /**
     * Gets or sets the authentication service path.
     * You usually set the path property in declarative markup. This value can be an absolute virtual path, a relative virtual path, or a fully qualified domain name and a path.
@@ -135,6 +146,7 @@ trait AuthenticationService extends js.Object {
     *           The authentication service path.
     */
   def set_path(value: String): Unit = js.native
+  
   /**
     * Gets or sets the authentication service time-out value.
     * The timeout property represents the time in milliseconds that the current instance of the Sys.Net.WebRequestExecutor class should wait before timing out the request.
@@ -144,4 +156,3 @@ trait AuthenticationService extends js.Object {
     */
   def set_timeout(value: Double): Unit = js.native
 }
-

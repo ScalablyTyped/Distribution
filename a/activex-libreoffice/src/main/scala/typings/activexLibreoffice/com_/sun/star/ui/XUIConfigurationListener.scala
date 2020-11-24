@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * supplies information about changes of a user interface configuration manager.
@@ -13,24 +13,27 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XUIConfigurationListener extends XEventListener {
+  
   /**
     * is invoked when a configuration has inserted an user interface element.
     * @param Event provides information about the element which has been inserted.
     */
   def elementInserted(Event: ConfigurationEvent): Unit = js.native
+  
   /**
     * is invoked when a configuration has removed an user interface element.
     * @param Event provides information about the element which has been removed.
     */
   def elementRemoved(Event: ConfigurationEvent): Unit = js.native
+  
   /**
     * is invoked when a configuration has replaced an user interface element.
     * @param Event provides information about the element which has been inserted/replaced.
     */
   def elementReplaced(Event: ConfigurationEvent): Unit = js.native
 }
-
 object XUIConfigurationListener {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -44,24 +47,29 @@ object XUIConfigurationListener {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), elementInserted = js.Any.fromFunction1(elementInserted), elementRemoved = js.Any.fromFunction1(elementRemoved), elementReplaced = js.Any.fromFunction1(elementReplaced), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XUIConfigurationListener]
   }
+  
   @scala.inline
   implicit class XUIConfigurationListenerOps[Self <: XUIConfigurationListener] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setElementInserted(value: ConfigurationEvent => Unit): Self = this.set("elementInserted", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setElementRemoved(value: ConfigurationEvent => Unit): Self = this.set("elementRemoved", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setElementReplaced(value: ConfigurationEvent => Unit): Self = this.set("elementReplaced", js.Any.fromFunction1(value))
   }
-  
 }
-

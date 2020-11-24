@@ -12,16 +12,11 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojSwitch extends editableValue[Boolean, ojSwitchSettableProperties, Boolean, Boolean] {
-  @JSName("onOjAnimateEnd")
-  var onOjAnimateEnd_ojSwitch: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
-  @JSName("onOjAnimateStart")
-  var onOjAnimateStart_ojSwitch: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
-  var onReadonlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
-  var readonly: Boolean = js.native
+  
   @JSName("addEventListener")
   def addEventListener_readonlyChanged(
     `type`: readonlyChanged_,
@@ -33,17 +28,30 @@ trait ojSwitch extends editableValue[Boolean, ojSwitchSettableProperties, Boolea
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _],
     useCapture: Boolean
   ): Unit = js.native
+  
   @JSName("getProperty")
   def getProperty_readonly(property: readonly_): Boolean = js.native
+  
+  @JSName("onOjAnimateEnd")
+  var onOjAnimateEnd_ojSwitch: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
+  
+  @JSName("onOjAnimateStart")
+  var onOjAnimateStart_ojSwitch: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
+  
+  var onReadonlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+  
+  var readonly: Boolean = js.native
+  
   def setProperties(properties: ojSwitchSettablePropertiesLenient): Unit = js.native
+  
   @JSName("setProperty")
   def setProperty_readonly(property: readonly_, value: Boolean): Unit = js.native
 }
-
 @JSImport("@oracle/oraclejet/ojswitch", "ojSwitch")
 @js.native
 object ojSwitch extends js.Object {
+  
   type ojAnimateEnd = CustomEvent[Action]
+  
   type ojAnimateStart = CustomEvent[Element]
 }
-

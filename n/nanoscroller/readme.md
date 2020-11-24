@@ -11,8 +11,8 @@ A jQuery plugin that offers a simplistic way of implementing Lion OS scrollbars.
 | Full name          | nanoscroller |
 | Keywords           | ecosystem:jquery, jquery-plugin, scrollbar |
 | # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 299019 |
+| # dependents       | 18 |
+| # downloads        | 216133 |
 | # stars            | 3 |
 
 ## Links

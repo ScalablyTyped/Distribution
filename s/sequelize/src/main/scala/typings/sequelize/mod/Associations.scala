@@ -2,7 +2,7 @@ package typings.sequelize.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creating assocations in sequelize is done by calling one of the belongsTo / hasOne / hasMany functions on a
@@ -107,6 +107,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Associations extends js.Object {
+  
   /**
     * Creates an association between this (the source) and the provided target. The foreign key is added on the
     * source.
@@ -119,6 +120,7 @@ trait Associations extends js.Object {
     */
   def belongsTo(target: Model[_, _, _]): IncludeAssociation = js.native
   def belongsTo(target: Model[_, _, _], options: AssociationOptionsBelongsTo): IncludeAssociation = js.native
+  
   /**
     * Create an N:M association with a join table
     *
@@ -169,6 +171,7 @@ trait Associations extends js.Object {
     *
     */
   def belongsToMany(target: Model[_, _, _], options: AssociationOptionsBelongsToMany): IncludeAssociation = js.native
+  
   /**
     * Create an association that is either 1:m or n:m.
     *
@@ -224,6 +227,7 @@ trait Associations extends js.Object {
     */
   def hasMany(target: Model[_, _, _]): IncludeAssociation = js.native
   def hasMany(target: Model[_, _, _], options: AssociationOptionsHasMany): IncludeAssociation = js.native
+  
   /**
     * Creates an association between this (the source) and the provided target. The foreign key is added
     * on the target.
@@ -237,4 +241,3 @@ trait Associations extends js.Object {
   def hasOne(target: Model[_, _, _]): IncludeAssociation = js.native
   def hasOne(target: Model[_, _, _], options: AssociationOptionsHasOne): IncludeAssociation = js.native
 }
-

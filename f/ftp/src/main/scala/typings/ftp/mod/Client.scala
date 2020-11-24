@@ -7,7 +7,7 @@ import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FTP client.
@@ -22,10 +22,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Client extends EventEmitter {
+  
   /**
     * Aborts the current data transfer (e.g. from get(), put(), or list())
     */
   def abort(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   def append(input: String, destPath: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   def append(
     input: String,
@@ -53,41 +55,50 @@ trait Client extends EventEmitter {
     useCompression: Boolean,
     callback: js.Function1[/* error */ Error, Unit]
   ): Unit = js.native
+  
   /**
     * Sets the transfer data type to ASCII.
     */
   def ascii(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   /**
     * Sets the transfer data type to binary (default at time of connection).
     */
   def binary(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   /**
     * Optional "standard" commands (RFC 959)
     * Changes the working directory to the parent of the current directory
     */
   def cdup(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   /**
     * Connects to an FTP server.
     */
   def connect(): Unit = js.native
   def connect(config: Options): Unit = js.native
+  
   /**
     * Changes the current working directory to path. callback has 2 parameters: < Error >err, < string >currentDir.
     * Note: currentDir is only given if the server replies with the path in the response text.
     */
   def cwd(path: String, callback: js.Function2[/* error */ Error, /* currentDir */ js.UndefOr[String], Unit]): Unit = js.native
+  
   /**
     * Delete a file on the server
     */
   def delete(path: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   /**
     * Closes the connection to the server immediately.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Closes the connection to the server after any/all enqueued commands have been executed.
     */
   def end(): Unit = js.native
+  
   /**
     * Retrieves a file at path from the server. useCompression defaults to false
     */
@@ -97,11 +108,13 @@ trait Client extends EventEmitter {
     useCompression: Boolean,
     callback: js.Function2[/* error */ Error, /* stream */ ReadableStream, Unit]
   ): Unit = js.native
+  
   /**
     * Extended commands (RFC 3659)
     * Retrieves the last modified date and time for path
     */
   def lastMod(path: String, callback: js.Function2[/* error */ Error, /* lastMod */ Date, Unit]): Unit = js.native
+  
   def list(callback: js.Function2[/* error */ Error, /* listing */ js.Array[ListingElement], Unit]): Unit = js.native
   def list(
     path: String,
@@ -121,6 +134,7 @@ trait Client extends EventEmitter {
     useCompression: Boolean,
     callback: js.Function2[/* error */ Error, /* listing */ js.Array[ListingElement], Unit]
   ): Unit = js.native
+  
   def listSafe(callback: js.Function2[/* error */ Error, /* listing */ js.Array[ListingElement], Unit]): Unit = js.native
   def listSafe(
     path: String,
@@ -141,16 +155,19 @@ trait Client extends EventEmitter {
     useCompression: Boolean,
     callback: js.Function2[/* error */ Error, /* listing */ js.Array[ListingElement], Unit]
   ): Unit = js.native
+  
   /**
     * Logout the user from the server.
     */
   def logout(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   def mkdir(path: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   /**
     * Optional "standard" commands (RFC 959)
     * Creates a new directory, path, on the server. recursive is for enabling a 'mkdir -p' algorithm and defaults to false
     */
   def mkdir(path: String, recursive: Boolean, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   def put(input: String, destPath: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   def put(
     input: String,
@@ -178,26 +195,31 @@ trait Client extends EventEmitter {
     useCompression: Boolean,
     callback: js.Function1[/* error */ Error, Unit]
   ): Unit = js.native
+  
   /**
     * Optional "standard" commands (RFC 959)
     * Retrieves the current working directory
     */
   def pwd(callback: js.Function2[/* error */ Error, /* path */ String, Unit]): Unit = js.native
+  
   /**
     * Renames oldPath to newPath on the server
     */
   def rename(oldPath: String, newPath: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   /**
     * Extended commands (RFC 3659)
     * Sets the file byte offset for the next file transfer action (get/put) to byteOffset
     */
   def restart(byteOffset: Double, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   def rmdir(path: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   /**
     * Optional "standard" commands (RFC 959)
     * Removes a directory, path, on the server. If recursive, this call will delete the contents of the directory if it is not empty
     */
   def rmdir(path: String, recursive: Boolean, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   /**
     * Sends command (e.g. 'CHMOD 755 foo', 'QUOTA') using SITE. callback has 3 parameters:
     * < Error >err, < _string >responseText, < integer >responseCode.
@@ -206,19 +228,21 @@ trait Client extends EventEmitter {
     command: String,
     callback: js.Function3[/* error */ Error, /* responseText */ String, /* responseCode */ Double, Unit]
   ): Unit = js.native
+  
   /**
     * Extended commands (RFC 3659)
     * Retrieves the size of path
     */
   def size(path: String, callback: js.Function2[/* error */ Error, /* size */ Double, Unit]): Unit = js.native
+  
   /**
     * Retrieves human-readable information about the server's status.
     */
   def status(callback: js.Function2[/* error */ Error, /* status */ String, Unit]): Unit = js.native
+  
   /**
     * Optional "standard" commands (RFC 959)
     * Retrieves the server's operating system.
     */
   def system(callback: js.Function2[/* error */ Error, /* OS */ String, Unit]): Unit = js.native
 }
-

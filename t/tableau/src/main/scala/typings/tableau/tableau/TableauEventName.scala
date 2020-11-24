@@ -2,11 +2,10 @@ package typings.tableau.tableau
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TableauEventName extends js.Object
-
 //#endregion
 //#region Viz Event Classes
 /**
@@ -18,6 +17,7 @@ sealed trait TableauEventName extends js.Object
 @JSGlobal("tableau.TableauEventName")
 @js.native
 object TableauEventName extends js.Object {
+  
   /**
     * Raised when a custom view has finished loading.
     * This event is raised after the callback function for onFirstInteractive (if any) has been called.
@@ -64,6 +64,4 @@ object TableauEventName extends js.Object {
   /** Raised every time the frame size is calculated from the available size and the Viz object's published size. */
   @js.native
   sealed trait VIZ_RESIZE extends TableauEventName
-  
 }
-

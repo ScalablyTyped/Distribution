@@ -12,7 +12,7 @@ Check if two floats are almost equal
 | Keywords           | float, number, epsilon, equal, same, almost, compare, comparison, round, near, tolerance, upperbound |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 5733 |
+| # downloads        | 17910 |
 | # stars            | 0 |
 
 ## Links

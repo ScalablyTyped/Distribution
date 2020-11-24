@@ -5,11 +5,11 @@ import typings.googleapis.sheetsV4Mod.sheetsV4.Options
 import typings.googleapis.sheetsV4Mod.sheetsV4.Sheets
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Fn123 extends js.Object {
+  
   def apply(options: Options): Sheets = js.native
   def apply(version: v4): Sheets = js.native
 }
-

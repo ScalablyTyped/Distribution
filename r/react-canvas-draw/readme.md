@@ -10,9 +10,9 @@ A simple yet powerful canvas-drawing component for React.
 | ------------------ | :-------------: |
 | Full name          | react-canvas-draw |
 | Keywords           | react-component, react, reactjs, canvas, drawing |
-| # releases         | 28 |
-| # dependents       | 3 |
-| # downloads        | 66286 |
+| # releases         | 18 |
+| # dependents       | 8 |
+| # downloads        | 123083 |
 | # stars            | 0 |
 
 ## Links

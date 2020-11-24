@@ -5,14 +5,19 @@ import typings.facebookJsSdk.facebookJsSdkStrings.get
 import typings.facebookJsSdk.facebookJsSdkStrings.post
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FacebookStatic extends js.Object {
+  
   var AppEvents: js.Any = js.native
+  
   var Canvas: js.Any = js.native
+  
   var Event: FacebookStaticEvent = js.native
+  
   var XFBML: js.Any = js.native
+  
   def api[TResponse](path: String, callback: js.Function1[/* response */ TResponse, Unit]): Unit = js.native
   def api[TParams /* <: js.Object */, TResponse](path: String, params: TParams, callback: js.Function1[/* response */ TResponse, Unit]): Unit = js.native
   @JSName("api")
@@ -31,6 +36,7 @@ trait FacebookStatic extends js.Object {
     params: TParams,
     callback: js.Function1[/* response */ TResponse, Unit]
   ): Unit = js.native
+  
   /**
     * The method FB.getAuthResponse() is a synchronous accessor for the current authResponse.
     * The synchronous nature of this method is what sets it apart from the other login methods.
@@ -38,6 +44,7 @@ trait FacebookStatic extends js.Object {
     * This method is similar in nature to FB.getLoginStatus(), but it returns just the authResponse object.
     */
   def getAuthResponse(): AuthResponse | Null = js.native
+  
   /**
     * FB.getLoginStatus() allows you to determine if a user is
     * logged in to Facebook and has authenticated your app.
@@ -47,12 +54,14 @@ trait FacebookStatic extends js.Object {
     */
   def getLoginStatus(callback: js.Function1[/* response */ StatusResponse, Unit]): Unit = js.native
   def getLoginStatus(callback: js.Function1[/* response */ StatusResponse, Unit], roundtrip: Boolean): Unit = js.native
+  
   /**
     * The method FB.init() is used to initialize and setup the SDK.
     *
     * @param params params for the initialization.
     */
   def init(params: InitParams): Unit = js.native
+  
   /**
     * Use this function to log the user in
     *
@@ -76,6 +85,7 @@ trait FacebookStatic extends js.Object {
   def login(callback: js.Function1[/* response */ StatusResponse, Unit]): Unit = js.native
   def login(callback: js.Function1[/* response */ StatusResponse, Unit], options: LoginOptions): Unit = js.native
   def login(options: LoginOptions): Unit = js.native
+  
   /**
     * The method FB.logout() logs the user out of your site and, in some cases, Facebook.
     *
@@ -83,6 +93,7 @@ trait FacebookStatic extends js.Object {
     */
   def logout(): Unit = js.native
   def logout(callback: js.Function1[/* response */ StatusResponse, Unit]): Unit = js.native
+  
   /**
     * @see https://developers.facebook.com/docs/pages/page-tab-dialog
     */
@@ -170,4 +181,3 @@ trait FacebookStatic extends js.Object {
     callback: js.Function1[/* response */ ShareOpenGraphDialogResponse, Unit]
   ): Unit = js.native
 }
-

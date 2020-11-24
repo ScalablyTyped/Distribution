@@ -2,14 +2,16 @@ package typings.antd
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object sizeContextMod {
+  
   /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.small
-    - typings.antd.antdStrings.middle
     - typings.antd.antdStrings.large
-    - js.UndefOr[scala.Nothing]
+    - typings.antd.antdStrings.small
+    - typings.antd.antdStrings.default
+    - scala.Double
+    - typings.antd.responsiveObserveMod.ScreenSizeMap
   */
-  type SizeType = js.UndefOr[typings.antd.sizeContextMod._SizeType]
+  type AvatarSize = typings.antd.sizeContextMod._AvatarSize | scala.Double
 }

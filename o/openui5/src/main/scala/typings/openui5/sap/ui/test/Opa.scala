@@ -2,10 +2,11 @@ package typings.openui5.sap.ui.test
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Opa extends js.Object {
+  
   /**
     * the global configuration of Opa.All of the global values can be overwritten in an individual waitFor
     * call.The default values are:<ul>        <li>arrangements: A new Opa instance</li>        <li>actions: A new Opa
@@ -15,11 +16,13 @@ trait Opa extends js.Object {
     * extend it using {@link sap.ui.test.Opa#.extendConfig}
     */
   var config: js.Any = js.native
+  
   /**
     * Waits until all waitFor calls are done.
     * @returns If the waiting was successful, the promise will be resolved. If not it will be rejected
     */
   def emptyQueue(): js.Any = js.native
+  
   /**
     * Calls the static extendConfig function in the Opa namespace {@link sap.ui.test.Opa#.extendConfig}
     */
@@ -38,12 +41,14 @@ trait Opa extends js.Object {
     * @param options The values to be added to the existing config
     */
   def extendConfig(options: js.Any): Unit = js.native
+  
   /**
     * Gives access to a singleton object you can save values in.Same as {@link sap.ui.test.Opa#getContext}
     * @since 1.29.0
     * @returns the context object
     */
   def getContext(): js.Any = js.native
+  
   /**
     * Reset Opa.config to its default values.All of the global values can be overwritten in an individual
     * waitFor call.The default values are:<ul>        <li>arrangements: A new Opa instance</li>        <li>actions: A
@@ -53,6 +58,7 @@ trait Opa extends js.Object {
     * @since 1.25
     */
   def resetConfig(): Unit = js.native
+  
   /**
     * Clears the queue and stops running tests so that new tests can be run.This means all waitFor
     * statements registered by {@link sap.ui.test.Opa#waitFor} will not be invoked anymore andthe promise
@@ -64,6 +70,7 @@ trait Opa extends js.Object {
     * sap.ui.test.Opa#.emptyQueue} is rejected. If false is passed the promis is resolved.
     */
   def stopQueue(boolean: js.Any): Unit = js.native
+  
   /**
     * Queues up a waitFor command for Opa.The Queue will not be emptied until {@link
     * sap.ui.test.Opa#.emptyQueue} is called.If you are using {@link sap.ui.test.opaQunit}, emptyQueue
@@ -76,4 +83,3 @@ trait Opa extends js.Object {
     */
   def waitFor(options: js.Any): js.Any = js.native
 }
-

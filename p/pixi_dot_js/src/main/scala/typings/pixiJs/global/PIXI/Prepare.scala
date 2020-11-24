@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The prepare plugin provides renderer-specific plugins for pre-rendering DisplayObjects. These plugins are useful for
@@ -41,4 +41,3 @@ class Prepare protected ()
   extends typings.pixiJs.PIXI.Prepare {
   def this(renderer: typings.pixiJs.PIXI.Renderer) = this()
 }
-

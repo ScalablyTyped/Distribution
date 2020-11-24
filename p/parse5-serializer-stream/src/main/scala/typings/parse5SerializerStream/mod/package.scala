@@ -2,9 +2,10 @@ package typings.parse5SerializerStream
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /**
     * Streaming AST node to an HTML serializer.
     * A [readable stream](https://nodejs.org/api/stream.html#stream_class_stream_readable).

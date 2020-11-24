@@ -11,7 +11,7 @@ A generic function library for Node.js
 | Keywords           | library, generic, functions, strcmp, println, printlns |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 708 |
+| # downloads        | 597 |
 | # stars            | 0 |
 
 ## Links

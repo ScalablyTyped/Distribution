@@ -6,11 +6,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.cssGlobalVariables.anon.Autoprefix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("css-global-variables", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   object CSSGlobalVariables
     extends Instantiable0[CGVInterface]
@@ -18,4 +19,3 @@ object mod extends js.Object {
   
   type CGVInterface = StringDictionary[String]
 }
-

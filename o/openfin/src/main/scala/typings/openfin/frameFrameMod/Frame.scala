@@ -5,12 +5,13 @@ import typings.openfin.frameMod.FrameEvents
 import typings.openfin.identityMod.Identity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openfin/_v2/api/frame/frame", "_Frame")
 @js.native
 class Frame protected () extends EmitterBase[FrameEvents] {
   def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
+  
   /**
     * Adds the listener function to the end of the listeners array for the specified event type.
     * @param { string | symbol } eventType  - The type of the event.
@@ -94,6 +95,7 @@ class Frame protected () extends EmitterBase[FrameEvents] {
     * @tutorial Frame.getInfo
     */
   def getInfo(): js.Promise[FrameInfo] = js.native
+  
   /**
     * Returns a frame info object representing the window that the referenced iframe is
     * currently embedded in
@@ -102,4 +104,3 @@ class Frame protected () extends EmitterBase[FrameEvents] {
     */
   def getParentWindow(): js.Promise[FrameInfo] = js.native
 }
-

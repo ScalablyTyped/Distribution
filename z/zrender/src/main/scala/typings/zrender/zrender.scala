@@ -5,11 +5,12 @@ import typings.zrender.anon.AddColorStop
 import typings.zrender.anon.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("zrender")
 @js.native
 object zrender extends js.Object {
+  
   /**
     * x, y, x2, y2 are all percent from 0 to 1
     */
@@ -26,10 +27,14 @@ object zrender extends js.Object {
         ]
   
   type ColorStops = js.Array[Color]
+  
   type GlobalCoords = Boolean
+  
   type X = Double
+  
   type X2 = Double
+  
   type Y = Double
+  
   type Y2 = Double
 }
-

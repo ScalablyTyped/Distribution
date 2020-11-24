@@ -2,14 +2,14 @@ package typings.winrt.Windows.Graphics.Imaging
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait JpegSubsamplingMode extends js.Object
-
 @JSGlobal("Windows.Graphics.Imaging.JpegSubsamplingMode")
 @js.native
 object JpegSubsamplingMode extends js.Object {
+  
   @js.native
   sealed trait default extends JpegSubsamplingMode
   
@@ -21,6 +21,4 @@ object JpegSubsamplingMode extends js.Object {
   
   @js.native
   sealed trait y4Cb4Cr4 extends JpegSubsamplingMode
-  
 }
-

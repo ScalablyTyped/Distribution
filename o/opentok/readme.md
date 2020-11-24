@@ -10,9 +10,9 @@ OpenTok server-side SDK
 | ------------------ | :-------------: |
 | Full name          | opentok |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 13 |
-| # downloads        | 406366 |
+| # releases         | 8 |
+| # dependents       | 15 |
+| # downloads        | 630159 |
 | # stars            | 1 |
 
 ## Links

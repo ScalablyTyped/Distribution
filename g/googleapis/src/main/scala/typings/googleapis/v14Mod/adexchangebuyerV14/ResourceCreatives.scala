@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.4", "adexchangebuyer_v1_4.Resource$Creatives")
 @js.native
 class ResourceCreatives protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer.creatives.addDeal
     * @desc Add a deal id association for the creative.
@@ -43,6 +43,9 @@ class ResourceCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer.creatives.get
     * @desc Gets the status for a single creative. A creative will be available
@@ -73,6 +76,7 @@ class ResourceCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreative]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.creatives.insert
     * @desc Submit a new creative.
@@ -101,6 +105,7 @@ class ResourceCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreative]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.creatives.list
     * @desc Retrieves a list of the authenticated user's active creatives. A
@@ -135,6 +140,7 @@ class ResourceCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativesList]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.creatives.listDeals
     * @desc Lists the external deal ids associated with the creative.
@@ -164,6 +170,7 @@ class ResourceCreatives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativeDealIds]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.creatives.removeDeal
     * @desc Remove a deal id associated with the creative.
@@ -195,4 +202,3 @@ class ResourceCreatives protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

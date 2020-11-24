@@ -1,7 +1,7 @@
 
 # Scala.js typings for readdirp
 
-Typings are for version 3.4.0
+Typings are for version 3.5.0
 
 ## Library description:
 Recursive version of fs.readdir with streaming API.
@@ -11,8 +11,8 @@ Recursive version of fs.readdir with streaming API.
 | Full name          | readdirp |
 | Keywords           | recursive, fs, stream, streams, readdir, filesystem, find, filter |
 | # releases         | 14 |
-| # dependents       | 357 |
-| # downloads        | 708405871 |
+| # dependents       | 363 |
+| # downloads        | 783492904 |
 | # stars            | 26 |
 
 ## Links

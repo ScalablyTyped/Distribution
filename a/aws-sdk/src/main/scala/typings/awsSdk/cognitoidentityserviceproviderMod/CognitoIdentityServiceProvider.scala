@@ -1,17 +1,16 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CognitoIdentityServiceProvider extends Service {
-  @JSName("config")
-  var config_CognitoIdentityServiceProvider: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Adds additional user attributes to the user pool schema.
     */
@@ -25,6 +24,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AddCustomAttributesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AddCustomAttributesResponse, Unit]
   ): Request[AddCustomAttributesResponse, AWSError] = js.native
+  
   /**
     * Adds the specified user to the specified group. Calling this action requires developer credentials.
     */
@@ -38,6 +38,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminAddUserToGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Confirms user registration as an admin without using a confirmation code. Works on any user. Calling this action requires developer credentials.
     */
@@ -51,19 +52,21 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminConfirmSignUpRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminConfirmSignUpResponse, Unit]
   ): Request[AdminConfirmSignUpResponse, AWSError] = js.native
+  
   /**
-    * Creates a new user in the specified user pool. If MessageAction is not set, the default is to send a welcome message via email or phone (SMS).  This message is based on a template that you configured in your call to or . This template includes your custom sign-up instructions and placeholders for user name and temporary password.  Alternatively, you can call AdminCreateUser with “SUPPRESS” for the MessageAction parameter, and Amazon Cognito will not send any email.  In either case, the user will be in the FORCE_CHANGE_PASSWORD state until they sign in and change their password. AdminCreateUser requires developer credentials.
+    * Creates a new user in the specified user pool. If MessageAction is not set, the default is to send a welcome message via email or phone (SMS). This message is based on a template that you configured in your call to create or update a user pool. This template includes your custom sign-up instructions and placeholders for user name and temporary password. Alternatively, you can call AdminCreateUser with “SUPPRESS” for the MessageAction parameter, and Amazon Cognito will not send any email.  In either case, the user will be in the FORCE_CHANGE_PASSWORD state until they sign in and change their password.  AdminCreateUser requires developer credentials.
     */
   def adminCreateUser(): Request[AdminCreateUserResponse, AWSError] = js.native
   def adminCreateUser(callback: js.Function2[/* err */ AWSError, /* data */ AdminCreateUserResponse, Unit]): Request[AdminCreateUserResponse, AWSError] = js.native
   /**
-    * Creates a new user in the specified user pool. If MessageAction is not set, the default is to send a welcome message via email or phone (SMS).  This message is based on a template that you configured in your call to or . This template includes your custom sign-up instructions and placeholders for user name and temporary password.  Alternatively, you can call AdminCreateUser with “SUPPRESS” for the MessageAction parameter, and Amazon Cognito will not send any email.  In either case, the user will be in the FORCE_CHANGE_PASSWORD state until they sign in and change their password. AdminCreateUser requires developer credentials.
+    * Creates a new user in the specified user pool. If MessageAction is not set, the default is to send a welcome message via email or phone (SMS). This message is based on a template that you configured in your call to create or update a user pool. This template includes your custom sign-up instructions and placeholders for user name and temporary password. Alternatively, you can call AdminCreateUser with “SUPPRESS” for the MessageAction parameter, and Amazon Cognito will not send any email.  In either case, the user will be in the FORCE_CHANGE_PASSWORD state until they sign in and change their password.  AdminCreateUser requires developer credentials.
     */
   def adminCreateUser(params: AdminCreateUserRequest): Request[AdminCreateUserResponse, AWSError] = js.native
   def adminCreateUser(
     params: AdminCreateUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminCreateUserResponse, Unit]
   ): Request[AdminCreateUserResponse, AWSError] = js.native
+  
   /**
     * Deletes a user as an administrator. Works on any user. Calling this action requires developer credentials.
     */
@@ -77,6 +80,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminDeleteUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the user attributes in a user pool as an administrator. Works on any user. Calling this action requires developer credentials.
     */
@@ -90,19 +94,21 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminDeleteUserAttributesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminDeleteUserAttributesResponse, Unit]
   ): Request[AdminDeleteUserAttributesResponse, AWSError] = js.native
+  
   /**
-    * Disables the user from signing in with the specified external (SAML or social) identity provider. If the user to disable is a Cognito User Pools native username + password user, they are not permitted to use their password to sign-in. If the user to disable is a linked external IdP user, any link between that user and an existing user is removed. The next time the external user (no longer attached to the previously linked DestinationUser) signs in, they must create a new user account. See . This action is enabled only for admin access and requires developer credentials. The ProviderName must match the value specified when creating an IdP for the pool.  To disable a native username + password user, the ProviderName value must be Cognito and the ProviderAttributeName must be Cognito_Subject, with the ProviderAttributeValue being the name that is used in the user pool for the user. The ProviderAttributeName must always be Cognito_Subject for social identity providers. The ProviderAttributeValue must always be the exact subject that was used when the user was originally linked as a source user. For de-linking a SAML identity, there are two scenarios. If the linked identity has not yet been used to sign-in, the ProviderAttributeName and ProviderAttributeValue must be the same values that were used for the SourceUser when the identities were originally linked in the call. (If the linking was done with ProviderAttributeName set to Cognito_Subject, the same applies here). However, if the user has already signed in, the ProviderAttributeName must be Cognito_Subject and ProviderAttributeValue must be the subject of the SAML assertion.
+    * Disables the user from signing in with the specified external (SAML or social) identity provider. If the user to disable is a Cognito User Pools native username + password user, they are not permitted to use their password to sign-in. If the user to disable is a linked external IdP user, any link between that user and an existing user is removed. The next time the external user (no longer attached to the previously linked DestinationUser) signs in, they must create a new user account. See AdminLinkProviderForUser. This action is enabled only for admin access and requires developer credentials. The ProviderName must match the value specified when creating an IdP for the pool.  To disable a native username + password user, the ProviderName value must be Cognito and the ProviderAttributeName must be Cognito_Subject, with the ProviderAttributeValue being the name that is used in the user pool for the user. The ProviderAttributeName must always be Cognito_Subject for social identity providers. The ProviderAttributeValue must always be the exact subject that was used when the user was originally linked as a source user. For de-linking a SAML identity, there are two scenarios. If the linked identity has not yet been used to sign-in, the ProviderAttributeName and ProviderAttributeValue must be the same values that were used for the SourceUser when the identities were originally linked using  AdminLinkProviderForUser call. (If the linking was done with ProviderAttributeName set to Cognito_Subject, the same applies here). However, if the user has already signed in, the ProviderAttributeName must be Cognito_Subject and ProviderAttributeValue must be the subject of the SAML assertion.
     */
   def adminDisableProviderForUser(): Request[AdminDisableProviderForUserResponse, AWSError] = js.native
   def adminDisableProviderForUser(callback: js.Function2[/* err */ AWSError, /* data */ AdminDisableProviderForUserResponse, Unit]): Request[AdminDisableProviderForUserResponse, AWSError] = js.native
   /**
-    * Disables the user from signing in with the specified external (SAML or social) identity provider. If the user to disable is a Cognito User Pools native username + password user, they are not permitted to use their password to sign-in. If the user to disable is a linked external IdP user, any link between that user and an existing user is removed. The next time the external user (no longer attached to the previously linked DestinationUser) signs in, they must create a new user account. See . This action is enabled only for admin access and requires developer credentials. The ProviderName must match the value specified when creating an IdP for the pool.  To disable a native username + password user, the ProviderName value must be Cognito and the ProviderAttributeName must be Cognito_Subject, with the ProviderAttributeValue being the name that is used in the user pool for the user. The ProviderAttributeName must always be Cognito_Subject for social identity providers. The ProviderAttributeValue must always be the exact subject that was used when the user was originally linked as a source user. For de-linking a SAML identity, there are two scenarios. If the linked identity has not yet been used to sign-in, the ProviderAttributeName and ProviderAttributeValue must be the same values that were used for the SourceUser when the identities were originally linked in the call. (If the linking was done with ProviderAttributeName set to Cognito_Subject, the same applies here). However, if the user has already signed in, the ProviderAttributeName must be Cognito_Subject and ProviderAttributeValue must be the subject of the SAML assertion.
+    * Disables the user from signing in with the specified external (SAML or social) identity provider. If the user to disable is a Cognito User Pools native username + password user, they are not permitted to use their password to sign-in. If the user to disable is a linked external IdP user, any link between that user and an existing user is removed. The next time the external user (no longer attached to the previously linked DestinationUser) signs in, they must create a new user account. See AdminLinkProviderForUser. This action is enabled only for admin access and requires developer credentials. The ProviderName must match the value specified when creating an IdP for the pool.  To disable a native username + password user, the ProviderName value must be Cognito and the ProviderAttributeName must be Cognito_Subject, with the ProviderAttributeValue being the name that is used in the user pool for the user. The ProviderAttributeName must always be Cognito_Subject for social identity providers. The ProviderAttributeValue must always be the exact subject that was used when the user was originally linked as a source user. For de-linking a SAML identity, there are two scenarios. If the linked identity has not yet been used to sign-in, the ProviderAttributeName and ProviderAttributeValue must be the same values that were used for the SourceUser when the identities were originally linked using  AdminLinkProviderForUser call. (If the linking was done with ProviderAttributeName set to Cognito_Subject, the same applies here). However, if the user has already signed in, the ProviderAttributeName must be Cognito_Subject and ProviderAttributeValue must be the subject of the SAML assertion.
     */
   def adminDisableProviderForUser(params: AdminDisableProviderForUserRequest): Request[AdminDisableProviderForUserResponse, AWSError] = js.native
   def adminDisableProviderForUser(
     params: AdminDisableProviderForUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminDisableProviderForUserResponse, Unit]
   ): Request[AdminDisableProviderForUserResponse, AWSError] = js.native
+  
   /**
     * Disables the specified user. Calling this action requires developer credentials.
     */
@@ -116,6 +122,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminDisableUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminDisableUserResponse, Unit]
   ): Request[AdminDisableUserResponse, AWSError] = js.native
+  
   /**
     * Enables the specified user as an administrator. Works on any user. Calling this action requires developer credentials.
     */
@@ -129,6 +136,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminEnableUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminEnableUserResponse, Unit]
   ): Request[AdminEnableUserResponse, AWSError] = js.native
+  
   /**
     * Forgets the device, as an administrator. Calling this action requires developer credentials.
     */
@@ -142,6 +150,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminForgetDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Gets the device, as an administrator. Calling this action requires developer credentials.
     */
@@ -155,6 +164,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminGetDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminGetDeviceResponse, Unit]
   ): Request[AdminGetDeviceResponse, AWSError] = js.native
+  
   /**
     * Gets the specified user by user name in a user pool as an administrator. Works on any user. Calling this action requires developer credentials.
     */
@@ -168,6 +178,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminGetUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminGetUserResponse, Unit]
   ): Request[AdminGetUserResponse, AWSError] = js.native
+  
   /**
     * Initiates the authentication flow, as an administrator. Calling this action requires developer credentials.
     */
@@ -181,19 +192,21 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminInitiateAuthRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminInitiateAuthResponse, Unit]
   ): Request[AdminInitiateAuthResponse, AWSError] = js.native
+  
   /**
-    * Links an existing user account in a user pool (DestinationUser) to an identity from an external identity provider (SourceUser) based on a specified attribute name and value from the external identity provider. This allows you to create a link from the existing user account to an external federated user identity that has not yet been used to sign in, so that the federated user identity can be used to sign in as the existing user account.   For example, if there is an existing user with a username and password, this API links that user to a federated user identity, so that when the federated user identity is used, the user signs in as the existing user account.   Because this API allows a user with an external federated identity to sign in as an existing user in the user pool, it is critical that it only be used with external identity providers and provider attributes that have been trusted by the application owner.  See also . This action is enabled only for admin access and requires developer credentials.
+    * Links an existing user account in a user pool (DestinationUser) to an identity from an external identity provider (SourceUser) based on a specified attribute name and value from the external identity provider. This allows you to create a link from the existing user account to an external federated user identity that has not yet been used to sign in, so that the federated user identity can be used to sign in as the existing user account.   For example, if there is an existing user with a username and password, this API links that user to a federated user identity, so that when the federated user identity is used, the user signs in as the existing user account.   The maximum number of federated identities linked to a user is 5.   Because this API allows a user with an external federated identity to sign in as an existing user in the user pool, it is critical that it only be used with external identity providers and provider attributes that have been trusted by the application owner.  This action is enabled only for admin access and requires developer credentials.
     */
   def adminLinkProviderForUser(): Request[AdminLinkProviderForUserResponse, AWSError] = js.native
   def adminLinkProviderForUser(callback: js.Function2[/* err */ AWSError, /* data */ AdminLinkProviderForUserResponse, Unit]): Request[AdminLinkProviderForUserResponse, AWSError] = js.native
   /**
-    * Links an existing user account in a user pool (DestinationUser) to an identity from an external identity provider (SourceUser) based on a specified attribute name and value from the external identity provider. This allows you to create a link from the existing user account to an external federated user identity that has not yet been used to sign in, so that the federated user identity can be used to sign in as the existing user account.   For example, if there is an existing user with a username and password, this API links that user to a federated user identity, so that when the federated user identity is used, the user signs in as the existing user account.   Because this API allows a user with an external federated identity to sign in as an existing user in the user pool, it is critical that it only be used with external identity providers and provider attributes that have been trusted by the application owner.  See also . This action is enabled only for admin access and requires developer credentials.
+    * Links an existing user account in a user pool (DestinationUser) to an identity from an external identity provider (SourceUser) based on a specified attribute name and value from the external identity provider. This allows you to create a link from the existing user account to an external federated user identity that has not yet been used to sign in, so that the federated user identity can be used to sign in as the existing user account.   For example, if there is an existing user with a username and password, this API links that user to a federated user identity, so that when the federated user identity is used, the user signs in as the existing user account.   The maximum number of federated identities linked to a user is 5.   Because this API allows a user with an external federated identity to sign in as an existing user in the user pool, it is critical that it only be used with external identity providers and provider attributes that have been trusted by the application owner.  This action is enabled only for admin access and requires developer credentials.
     */
   def adminLinkProviderForUser(params: AdminLinkProviderForUserRequest): Request[AdminLinkProviderForUserResponse, AWSError] = js.native
   def adminLinkProviderForUser(
     params: AdminLinkProviderForUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminLinkProviderForUserResponse, Unit]
   ): Request[AdminLinkProviderForUserResponse, AWSError] = js.native
+  
   /**
     * Lists devices, as an administrator. Calling this action requires developer credentials.
     */
@@ -207,6 +220,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminListDevicesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminListDevicesResponse, Unit]
   ): Request[AdminListDevicesResponse, AWSError] = js.native
+  
   /**
     * Lists the groups that the user belongs to. Calling this action requires developer credentials.
     */
@@ -220,6 +234,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminListGroupsForUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminListGroupsForUserResponse, Unit]
   ): Request[AdminListGroupsForUserResponse, AWSError] = js.native
+  
   /**
     * Lists a history of user activity and any risks detected as part of Amazon Cognito advanced security.
     */
@@ -233,6 +248,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminListUserAuthEventsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminListUserAuthEventsResponse, Unit]
   ): Request[AdminListUserAuthEventsResponse, AWSError] = js.native
+  
   /**
     * Removes the specified user from the specified group. Calling this action requires developer credentials.
     */
@@ -246,6 +262,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminRemoveUserFromGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Resets the specified user's password in a user pool as an administrator. Works on any user. When a developer calls this API, the current password is invalidated, so it must be changed. If a user tries to sign in after the API is called, the app will get a PasswordResetRequiredException exception back and should direct the user down the flow to reset the password, which is the same as the forgot password flow. In addition, if the user pool has phone verification selected and a verified phone number exists for the user, or if email verification is selected and a verified email exists for the user, calling this API will also result in sending a message to the end user with the code to change their password. Calling this action requires developer credentials.
     */
@@ -259,6 +276,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminResetUserPasswordRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminResetUserPasswordResponse, Unit]
   ): Request[AdminResetUserPasswordResponse, AWSError] = js.native
+  
   /**
     * Responds to an authentication challenge, as an administrator. Calling this action requires developer credentials.
     */
@@ -272,6 +290,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminRespondToAuthChallengeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminRespondToAuthChallengeResponse, Unit]
   ): Request[AdminRespondToAuthChallengeResponse, AWSError] = js.native
+  
   /**
     * Sets the user's multi-factor authentication (MFA) preference, including which MFA options are enabled and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are enabled. If multiple options are enabled and no preference is set, a challenge to choose an MFA option will be returned during sign in.
     */
@@ -285,6 +304,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminSetUserMFAPreferenceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminSetUserMFAPreferenceResponse, Unit]
   ): Request[AdminSetUserMFAPreferenceResponse, AWSError] = js.native
+  
   /**
     * Sets the specified user's password in a user pool as an administrator. Works on any user.  The password can be temporary or permanent. If it is temporary, the user status will be placed into the FORCE_CHANGE_PASSWORD state. When the user next tries to sign in, the InitiateAuth/AdminInitiateAuth response will contain the NEW_PASSWORD_REQUIRED challenge. If the user does not sign in before it expires, the user will not be able to sign in and their password will need to be reset by an administrator.  Once the user has set a new password, or the password is permanent, the user status will be set to Confirmed.
     */
@@ -298,19 +318,21 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminSetUserPasswordRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminSetUserPasswordResponse, Unit]
   ): Request[AdminSetUserPasswordResponse, AWSError] = js.native
+  
   /**
-    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use the AdminSetUserMFAPreference action instead.
+    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use AdminSetUserMFAPreference instead.
     */
   def adminSetUserSettings(): Request[AdminSetUserSettingsResponse, AWSError] = js.native
   def adminSetUserSettings(callback: js.Function2[/* err */ AWSError, /* data */ AdminSetUserSettingsResponse, Unit]): Request[AdminSetUserSettingsResponse, AWSError] = js.native
   /**
-    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use the AdminSetUserMFAPreference action instead.
+    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use AdminSetUserMFAPreference instead.
     */
   def adminSetUserSettings(params: AdminSetUserSettingsRequest): Request[AdminSetUserSettingsResponse, AWSError] = js.native
   def adminSetUserSettings(
     params: AdminSetUserSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminSetUserSettingsResponse, Unit]
   ): Request[AdminSetUserSettingsResponse, AWSError] = js.native
+  
   /**
     * Provides feedback for an authentication event as to whether it was from a valid user. This feedback is used for improving the risk evaluation decision for the user pool as part of Amazon Cognito advanced security.
     */
@@ -324,6 +346,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminUpdateAuthEventFeedbackRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminUpdateAuthEventFeedbackResponse, Unit]
   ): Request[AdminUpdateAuthEventFeedbackResponse, AWSError] = js.native
+  
   /**
     * Updates the device status as an administrator. Calling this action requires developer credentials.
     */
@@ -337,6 +360,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminUpdateDeviceStatusRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminUpdateDeviceStatusResponse, Unit]
   ): Request[AdminUpdateDeviceStatusResponse, AWSError] = js.native
+  
   /**
     * Updates the specified user's attributes, including developer attributes, as an administrator. Works on any user. For custom attributes, you must prepend the custom: prefix to the attribute name. In addition to updating user attributes, this API can also be used to mark phone and email as verified. Calling this action requires developer credentials.
     */
@@ -350,6 +374,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminUpdateUserAttributesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminUpdateUserAttributesResponse, Unit]
   ): Request[AdminUpdateUserAttributesResponse, AWSError] = js.native
+  
   /**
     * Signs out users from all devices, as an administrator. It also invalidates all refresh tokens issued to a user. The user's current access and Id tokens remain valid until their expiry. Access and Id tokens expire one hour after they are issued. Calling this action requires developer credentials.
     */
@@ -363,6 +388,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AdminUserGlobalSignOutRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AdminUserGlobalSignOutResponse, Unit]
   ): Request[AdminUserGlobalSignOutResponse, AWSError] = js.native
+  
   /**
     * Returns a unique generated shared secret key code for the user account. The request takes an access token or a session string, but not both.
     */
@@ -376,6 +402,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: AssociateSoftwareTokenRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateSoftwareTokenResponse, Unit]
   ): Request[AssociateSoftwareTokenResponse, AWSError] = js.native
+  
   /**
     * Changes the password for a specified user in a user pool.
     */
@@ -389,6 +416,10 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ChangePasswordRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ChangePasswordResponse, Unit]
   ): Request[ChangePasswordResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_CognitoIdentityServiceProvider: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Confirms tracking of the device. This API call is the call that begins device tracking.
     */
@@ -402,6 +433,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ConfirmDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ConfirmDeviceResponse, Unit]
   ): Request[ConfirmDeviceResponse, AWSError] = js.native
+  
   /**
     * Allows a user to enter a confirmation code to reset a forgotten password.
     */
@@ -415,6 +447,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ConfirmForgotPasswordRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ConfirmForgotPasswordResponse, Unit]
   ): Request[ConfirmForgotPasswordResponse, AWSError] = js.native
+  
   /**
     * Confirms registration of a user and handles the existing alias from a previous user.
     */
@@ -428,6 +461,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ConfirmSignUpRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ConfirmSignUpResponse, Unit]
   ): Request[ConfirmSignUpResponse, AWSError] = js.native
+  
   /**
     * Creates a new group in the specified user pool. Calling this action requires developer credentials.
     */
@@ -441,6 +475,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: CreateGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateGroupResponse, Unit]
   ): Request[CreateGroupResponse, AWSError] = js.native
+  
   /**
     * Creates an identity provider for a user pool.
     */
@@ -454,6 +489,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: CreateIdentityProviderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateIdentityProviderResponse, Unit]
   ): Request[CreateIdentityProviderResponse, AWSError] = js.native
+  
   /**
     * Creates a new OAuth2.0 resource server and defines custom scopes in it.
     */
@@ -467,6 +503,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: CreateResourceServerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateResourceServerResponse, Unit]
   ): Request[CreateResourceServerResponse, AWSError] = js.native
+  
   /**
     * Creates the user import job.
     */
@@ -480,6 +517,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: CreateUserImportJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUserImportJobResponse, Unit]
   ): Request[CreateUserImportJobResponse, AWSError] = js.native
+  
   /**
     * Creates a new Amazon Cognito user pool and sets the password policy for the pool.
     */
@@ -493,6 +531,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: CreateUserPoolRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUserPoolResponse, Unit]
   ): Request[CreateUserPoolResponse, AWSError] = js.native
+  
   /**
     * Creates the user pool client.
     */
@@ -506,6 +545,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: CreateUserPoolClientRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUserPoolClientResponse, Unit]
   ): Request[CreateUserPoolClientResponse, AWSError] = js.native
+  
   /**
     * Creates a new domain for a user pool.
     */
@@ -519,6 +559,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: CreateUserPoolDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUserPoolDomainResponse, Unit]
   ): Request[CreateUserPoolDomainResponse, AWSError] = js.native
+  
   /**
     * Deletes a group. Currently only groups with no members can be deleted. Calling this action requires developer credentials.
     */
@@ -529,6 +570,7 @@ trait CognitoIdentityServiceProvider extends Service {
     */
   def deleteGroup(params: DeleteGroupRequest): Request[js.Object, AWSError] = js.native
   def deleteGroup(params: DeleteGroupRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes an identity provider for a user pool.
     */
@@ -542,6 +584,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: DeleteIdentityProviderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a resource server.
     */
@@ -555,6 +598,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: DeleteResourceServerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Allows a user to delete himself or herself.
     */
@@ -565,6 +609,7 @@ trait CognitoIdentityServiceProvider extends Service {
     */
   def deleteUser(params: DeleteUserRequest): Request[js.Object, AWSError] = js.native
   def deleteUser(params: DeleteUserRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the attributes for a user.
     */
@@ -578,6 +623,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: DeleteUserAttributesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteUserAttributesResponse, Unit]
   ): Request[DeleteUserAttributesResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified Amazon Cognito user pool.
     */
@@ -591,6 +637,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: DeleteUserPoolRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Allows the developer to delete the user pool client.
     */
@@ -604,6 +651,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: DeleteUserPoolClientRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a domain for a user pool.
     */
@@ -617,6 +665,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: DeleteUserPoolDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteUserPoolDomainResponse, Unit]
   ): Request[DeleteUserPoolDomainResponse, AWSError] = js.native
+  
   /**
     * Gets information about a specific identity provider.
     */
@@ -630,6 +679,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: DescribeIdentityProviderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeIdentityProviderResponse, Unit]
   ): Request[DescribeIdentityProviderResponse, AWSError] = js.native
+  
   /**
     * Describes a resource server.
     */
@@ -643,6 +693,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: DescribeResourceServerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeResourceServerResponse, Unit]
   ): Request[DescribeResourceServerResponse, AWSError] = js.native
+  
   /**
     * Describes the risk configuration.
     */
@@ -656,6 +707,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: DescribeRiskConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRiskConfigurationResponse, Unit]
   ): Request[DescribeRiskConfigurationResponse, AWSError] = js.native
+  
   /**
     * Describes the user import job.
     */
@@ -669,6 +721,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: DescribeUserImportJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeUserImportJobResponse, Unit]
   ): Request[DescribeUserImportJobResponse, AWSError] = js.native
+  
   /**
     * Returns the configuration information and metadata of the specified user pool.
     */
@@ -682,6 +735,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: DescribeUserPoolRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeUserPoolResponse, Unit]
   ): Request[DescribeUserPoolResponse, AWSError] = js.native
+  
   /**
     * Client method for returning the configuration information and metadata of the specified user pool app client.
     */
@@ -695,6 +749,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: DescribeUserPoolClientRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeUserPoolClientResponse, Unit]
   ): Request[DescribeUserPoolClientResponse, AWSError] = js.native
+  
   /**
     * Gets information about a domain.
     */
@@ -708,6 +763,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: DescribeUserPoolDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeUserPoolDomainResponse, Unit]
   ): Request[DescribeUserPoolDomainResponse, AWSError] = js.native
+  
   /**
     * Forgets the specified device.
     */
@@ -721,19 +777,21 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ForgetDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
-    * Calling this API causes a message to be sent to the end user with a confirmation code that is required to change the user's password. For the Username parameter, you can use the username or user alias. The method used to send the confirmation code is sent according to the specified AccountRecoverySetting. For more information, see Recovering User Accounts in the Amazon Cognito Developer Guide. If neither a verified phone number nor a verified email exists, an InvalidParameterException is thrown. To use the confirmation code for resetting the password, call .
+    * Calling this API causes a message to be sent to the end user with a confirmation code that is required to change the user's password. For the Username parameter, you can use the username or user alias. The method used to send the confirmation code is sent according to the specified AccountRecoverySetting. For more information, see Recovering User Accounts in the Amazon Cognito Developer Guide. If neither a verified phone number nor a verified email exists, an InvalidParameterException is thrown. To use the confirmation code for resetting the password, call ConfirmForgotPassword.
     */
   def forgotPassword(): Request[ForgotPasswordResponse, AWSError] = js.native
   def forgotPassword(callback: js.Function2[/* err */ AWSError, /* data */ ForgotPasswordResponse, Unit]): Request[ForgotPasswordResponse, AWSError] = js.native
   /**
-    * Calling this API causes a message to be sent to the end user with a confirmation code that is required to change the user's password. For the Username parameter, you can use the username or user alias. The method used to send the confirmation code is sent according to the specified AccountRecoverySetting. For more information, see Recovering User Accounts in the Amazon Cognito Developer Guide. If neither a verified phone number nor a verified email exists, an InvalidParameterException is thrown. To use the confirmation code for resetting the password, call .
+    * Calling this API causes a message to be sent to the end user with a confirmation code that is required to change the user's password. For the Username parameter, you can use the username or user alias. The method used to send the confirmation code is sent according to the specified AccountRecoverySetting. For more information, see Recovering User Accounts in the Amazon Cognito Developer Guide. If neither a verified phone number nor a verified email exists, an InvalidParameterException is thrown. To use the confirmation code for resetting the password, call ConfirmForgotPassword.
     */
   def forgotPassword(params: ForgotPasswordRequest): Request[ForgotPasswordResponse, AWSError] = js.native
   def forgotPassword(
     params: ForgotPasswordRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ForgotPasswordResponse, Unit]
   ): Request[ForgotPasswordResponse, AWSError] = js.native
+  
   /**
     * Gets the header information for the .csv file to be used as input for the user import job.
     */
@@ -747,6 +805,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: GetCSVHeaderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCSVHeaderResponse, Unit]
   ): Request[GetCSVHeaderResponse, AWSError] = js.native
+  
   /**
     * Gets the device.
     */
@@ -760,6 +819,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: GetDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeviceResponse, Unit]
   ): Request[GetDeviceResponse, AWSError] = js.native
+  
   /**
     * Gets a group. Calling this action requires developer credentials.
     */
@@ -773,6 +833,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: GetGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetGroupResponse, Unit]
   ): Request[GetGroupResponse, AWSError] = js.native
+  
   /**
     * Gets the specified identity provider.
     */
@@ -788,6 +849,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: GetIdentityProviderByIdentifierRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetIdentityProviderByIdentifierResponse, Unit]
   ): Request[GetIdentityProviderByIdentifierResponse, AWSError] = js.native
+  
   /**
     * This method takes a user pool ID, and returns the signing certificate.
     */
@@ -801,6 +863,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: GetSigningCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSigningCertificateResponse, Unit]
   ): Request[GetSigningCertificateResponse, AWSError] = js.native
+  
   /**
     * Gets the UI Customization information for a particular app client's app UI, if there is something set. If nothing is set for the particular client, but there is an existing pool level customization (app clientId will be ALL), then that is returned. If nothing is present, then an empty shape is returned.
     */
@@ -814,6 +877,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: GetUICustomizationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetUICustomizationResponse, Unit]
   ): Request[GetUICustomizationResponse, AWSError] = js.native
+  
   /**
     * Gets the user attributes and metadata for a user.
     */
@@ -827,6 +891,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: GetUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetUserResponse, Unit]
   ): Request[GetUserResponse, AWSError] = js.native
+  
   /**
     * Gets the user attribute verification code for the specified attribute name.
     */
@@ -842,6 +907,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: GetUserAttributeVerificationCodeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetUserAttributeVerificationCodeResponse, Unit]
   ): Request[GetUserAttributeVerificationCodeResponse, AWSError] = js.native
+  
   /**
     * Gets the user pool multi-factor authentication (MFA) configuration.
     */
@@ -855,6 +921,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: GetUserPoolMfaConfigRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetUserPoolMfaConfigResponse, Unit]
   ): Request[GetUserPoolMfaConfigResponse, AWSError] = js.native
+  
   /**
     * Signs out users from all devices. It also invalidates all refresh tokens issued to a user. The user's current access and Id tokens remain valid until their expiry. Access and Id tokens expire one hour after they are issued.
     */
@@ -868,6 +935,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: GlobalSignOutRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GlobalSignOutResponse, Unit]
   ): Request[GlobalSignOutResponse, AWSError] = js.native
+  
   /**
     * Initiates the authentication flow.
     */
@@ -881,6 +949,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: InitiateAuthRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ InitiateAuthResponse, Unit]
   ): Request[InitiateAuthResponse, AWSError] = js.native
+  
   /**
     * Lists the devices.
     */
@@ -894,6 +963,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ListDevicesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDevicesResponse, Unit]
   ): Request[ListDevicesResponse, AWSError] = js.native
+  
   /**
     * Lists the groups associated with a user pool. Calling this action requires developer credentials.
     */
@@ -907,6 +977,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ListGroupsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListGroupsResponse, Unit]
   ): Request[ListGroupsResponse, AWSError] = js.native
+  
   /**
     * Lists information about all identity providers for a user pool.
     */
@@ -920,6 +991,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ListIdentityProvidersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListIdentityProvidersResponse, Unit]
   ): Request[ListIdentityProvidersResponse, AWSError] = js.native
+  
   /**
     * Lists the resource servers for a user pool.
     */
@@ -933,6 +1005,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ListResourceServersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListResourceServersResponse, Unit]
   ): Request[ListResourceServersResponse, AWSError] = js.native
+  
   /**
     * Lists the tags that are assigned to an Amazon Cognito user pool. A tag is a label that you can apply to user pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria. You can use this action up to 10 times per second, per account.
     */
@@ -946,6 +1019,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Lists the user import jobs.
     */
@@ -959,6 +1033,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ListUserImportJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListUserImportJobsResponse, Unit]
   ): Request[ListUserImportJobsResponse, AWSError] = js.native
+  
   /**
     * Lists the clients that have been created for the specified user pool.
     */
@@ -972,6 +1047,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ListUserPoolClientsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListUserPoolClientsResponse, Unit]
   ): Request[ListUserPoolClientsResponse, AWSError] = js.native
+  
   /**
     * Lists the user pools associated with an AWS account.
     */
@@ -985,6 +1061,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ListUserPoolsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListUserPoolsResponse, Unit]
   ): Request[ListUserPoolsResponse, AWSError] = js.native
+  
   /**
     * Lists the users in the Amazon Cognito user pool.
     */
@@ -998,6 +1075,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ListUsersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListUsersResponse, Unit]
   ): Request[ListUsersResponse, AWSError] = js.native
+  
   /**
     * Lists the users in the specified group. Calling this action requires developer credentials.
     */
@@ -1011,6 +1089,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ListUsersInGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListUsersInGroupResponse, Unit]
   ): Request[ListUsersInGroupResponse, AWSError] = js.native
+  
   /**
     * Resends the confirmation (for confirmation of registration) to a specific user in the user pool.
     */
@@ -1024,6 +1103,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: ResendConfirmationCodeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ResendConfirmationCodeResponse, Unit]
   ): Request[ResendConfirmationCodeResponse, AWSError] = js.native
+  
   /**
     * Responds to the authentication challenge.
     */
@@ -1037,19 +1117,21 @@ trait CognitoIdentityServiceProvider extends Service {
     params: RespondToAuthChallengeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RespondToAuthChallengeResponse, Unit]
   ): Request[RespondToAuthChallengeResponse, AWSError] = js.native
+  
   /**
-    * Configures actions on detected risks. To delete the risk configuration for UserPoolId or ClientId, pass null values for all four configuration types. To enable Amazon Cognito advanced security features, update the user pool to include the UserPoolAddOns keyAdvancedSecurityMode. See .
+    * Configures actions on detected risks. To delete the risk configuration for UserPoolId or ClientId, pass null values for all four configuration types. To enable Amazon Cognito advanced security features, update the user pool to include the UserPoolAddOns keyAdvancedSecurityMode.
     */
   def setRiskConfiguration(): Request[SetRiskConfigurationResponse, AWSError] = js.native
   def setRiskConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ SetRiskConfigurationResponse, Unit]): Request[SetRiskConfigurationResponse, AWSError] = js.native
   /**
-    * Configures actions on detected risks. To delete the risk configuration for UserPoolId or ClientId, pass null values for all four configuration types. To enable Amazon Cognito advanced security features, update the user pool to include the UserPoolAddOns keyAdvancedSecurityMode. See .
+    * Configures actions on detected risks. To delete the risk configuration for UserPoolId or ClientId, pass null values for all four configuration types. To enable Amazon Cognito advanced security features, update the user pool to include the UserPoolAddOns keyAdvancedSecurityMode.
     */
   def setRiskConfiguration(params: SetRiskConfigurationRequest): Request[SetRiskConfigurationResponse, AWSError] = js.native
   def setRiskConfiguration(
     params: SetRiskConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SetRiskConfigurationResponse, Unit]
   ): Request[SetRiskConfigurationResponse, AWSError] = js.native
+  
   /**
     * Sets the UI customization information for a user pool's built-in app UI. You can specify app UI customization settings for a single client (with a specific clientId) or for all clients (by setting the clientId to ALL). If you specify ALL, the default configuration will be used for every client that has no UI customization set previously. If you specify UI customization settings for a particular client, it will no longer fall back to the ALL configuration.   To use this API, your user pool must have a domain associated with it. Otherwise, there is no place to host the app's pages, and the service will throw an error. 
     */
@@ -1063,6 +1145,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: SetUICustomizationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SetUICustomizationResponse, Unit]
   ): Request[SetUICustomizationResponse, AWSError] = js.native
+  
   /**
     * Set the user's multi-factor authentication (MFA) method preference, including which MFA factors are enabled and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are enabled. If multiple options are enabled and no preference is set, a challenge to choose an MFA option will be returned during sign in.
     */
@@ -1076,6 +1159,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: SetUserMFAPreferenceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SetUserMFAPreferenceResponse, Unit]
   ): Request[SetUserMFAPreferenceResponse, AWSError] = js.native
+  
   /**
     * Set the user pool multi-factor authentication (MFA) configuration.
     */
@@ -1089,19 +1173,21 @@ trait CognitoIdentityServiceProvider extends Service {
     params: SetUserPoolMfaConfigRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SetUserPoolMfaConfigResponse, Unit]
   ): Request[SetUserPoolMfaConfigResponse, AWSError] = js.native
+  
   /**
-    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use the SetUserMFAPreference action instead.
+    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use SetUserMFAPreference instead.
     */
   def setUserSettings(): Request[SetUserSettingsResponse, AWSError] = js.native
   def setUserSettings(callback: js.Function2[/* err */ AWSError, /* data */ SetUserSettingsResponse, Unit]): Request[SetUserSettingsResponse, AWSError] = js.native
   /**
-    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use the SetUserMFAPreference action instead.
+    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use SetUserMFAPreference instead.
     */
   def setUserSettings(params: SetUserSettingsRequest): Request[SetUserSettingsResponse, AWSError] = js.native
   def setUserSettings(
     params: SetUserSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SetUserSettingsResponse, Unit]
   ): Request[SetUserSettingsResponse, AWSError] = js.native
+  
   /**
     * Registers the user in the specified user pool and creates a user name, password, and user attributes.
     */
@@ -1112,6 +1198,7 @@ trait CognitoIdentityServiceProvider extends Service {
     */
   def signUp(params: SignUpRequest): Request[SignUpResponse, AWSError] = js.native
   def signUp(params: SignUpRequest, callback: js.Function2[/* err */ AWSError, /* data */ SignUpResponse, Unit]): Request[SignUpResponse, AWSError] = js.native
+  
   /**
     * Starts the user import.
     */
@@ -1125,6 +1212,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: StartUserImportJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartUserImportJobResponse, Unit]
   ): Request[StartUserImportJobResponse, AWSError] = js.native
+  
   /**
     * Stops the user import job.
     */
@@ -1138,6 +1226,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: StopUserImportJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopUserImportJobResponse, Unit]
   ): Request[StopUserImportJobResponse, AWSError] = js.native
+  
   /**
     * Assigns a set of tags to an Amazon Cognito user pool. A tag is a label that you can use to categorize and manage user pools in different ways, such as by purpose, owner, environment, or other criteria. Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of a user pool, one for testing and another for production, you might assign an Environment tag key to both user pools. The value of this key might be Test for one user pool and Production for the other. Tags are useful for cost tracking and access control. You can activate your tags so that they appear on the Billing and Cost Management console, where you can track the costs associated with your user pools. In an IAM policy, you can constrain permissions for user pools based on specific tags or tag values. You can use this action up to 5 times per second, per account. A user pool can have as many as 50 tags.
     */
@@ -1151,6 +1240,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Removes the specified tags from an Amazon Cognito user pool. You can use this action up to 5 times per second, per account
     */
@@ -1164,6 +1254,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Provides the feedback for an authentication event whether it was from a valid user or not. This feedback is used for improving the risk evaluation decision for the user pool as part of Amazon Cognito advanced security.
     */
@@ -1177,6 +1268,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: UpdateAuthEventFeedbackRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAuthEventFeedbackResponse, Unit]
   ): Request[UpdateAuthEventFeedbackResponse, AWSError] = js.native
+  
   /**
     * Updates the device status.
     */
@@ -1190,6 +1282,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: UpdateDeviceStatusRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDeviceStatusResponse, Unit]
   ): Request[UpdateDeviceStatusResponse, AWSError] = js.native
+  
   /**
     * Updates the specified group with the specified attributes. Calling this action requires developer credentials.  If you don't provide a value for an attribute, it will be set to the default value. 
     */
@@ -1203,6 +1296,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: UpdateGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateGroupResponse, Unit]
   ): Request[UpdateGroupResponse, AWSError] = js.native
+  
   /**
     * Updates identity provider information for a user pool.
     */
@@ -1216,6 +1310,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: UpdateIdentityProviderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateIdentityProviderResponse, Unit]
   ): Request[UpdateIdentityProviderResponse, AWSError] = js.native
+  
   /**
     * Updates the name and scopes of resource server. All other fields are read-only.  If you don't provide a value for an attribute, it will be set to the default value. 
     */
@@ -1229,6 +1324,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: UpdateResourceServerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourceServerResponse, Unit]
   ): Request[UpdateResourceServerResponse, AWSError] = js.native
+  
   /**
     * Allows a user to update a specific attribute (one at a time).
     */
@@ -1242,32 +1338,35 @@ trait CognitoIdentityServiceProvider extends Service {
     params: UpdateUserAttributesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserAttributesResponse, Unit]
   ): Request[UpdateUserAttributesResponse, AWSError] = js.native
+  
   /**
-    * Updates the specified user pool with the specified attributes. You can get a list of the current user pool settings with .  If you don't provide a value for an attribute, it will be set to the default value. 
+    * Updates the specified user pool with the specified attributes. You can get a list of the current user pool settings using DescribeUserPool.  If you don't provide a value for an attribute, it will be set to the default value. 
     */
   def updateUserPool(): Request[UpdateUserPoolResponse, AWSError] = js.native
   def updateUserPool(callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserPoolResponse, Unit]): Request[UpdateUserPoolResponse, AWSError] = js.native
   /**
-    * Updates the specified user pool with the specified attributes. You can get a list of the current user pool settings with .  If you don't provide a value for an attribute, it will be set to the default value. 
+    * Updates the specified user pool with the specified attributes. You can get a list of the current user pool settings using DescribeUserPool.  If you don't provide a value for an attribute, it will be set to the default value. 
     */
   def updateUserPool(params: UpdateUserPoolRequest): Request[UpdateUserPoolResponse, AWSError] = js.native
   def updateUserPool(
     params: UpdateUserPoolRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserPoolResponse, Unit]
   ): Request[UpdateUserPoolResponse, AWSError] = js.native
+  
   /**
-    * Updates the specified user pool app client with the specified attributes. You can get a list of the current user pool app client settings with .  If you don't provide a value for an attribute, it will be set to the default value. 
+    * Updates the specified user pool app client with the specified attributes. You can get a list of the current user pool app client settings using DescribeUserPoolClient.  If you don't provide a value for an attribute, it will be set to the default value. 
     */
   def updateUserPoolClient(): Request[UpdateUserPoolClientResponse, AWSError] = js.native
   def updateUserPoolClient(callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserPoolClientResponse, Unit]): Request[UpdateUserPoolClientResponse, AWSError] = js.native
   /**
-    * Updates the specified user pool app client with the specified attributes. You can get a list of the current user pool app client settings with .  If you don't provide a value for an attribute, it will be set to the default value. 
+    * Updates the specified user pool app client with the specified attributes. You can get a list of the current user pool app client settings using DescribeUserPoolClient.  If you don't provide a value for an attribute, it will be set to the default value. 
     */
   def updateUserPoolClient(params: UpdateUserPoolClientRequest): Request[UpdateUserPoolClientResponse, AWSError] = js.native
   def updateUserPoolClient(
     params: UpdateUserPoolClientRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserPoolClientResponse, Unit]
   ): Request[UpdateUserPoolClientResponse, AWSError] = js.native
+  
   /**
     * Updates the Secure Sockets Layer (SSL) certificate for the custom domain for your user pool. You can use this operation to provide the Amazon Resource Name (ARN) of a new certificate to Amazon Cognito. You cannot use it to change the domain for a user pool. A custom domain is used to host the Amazon Cognito hosted UI, which provides sign-up and sign-in pages for your application. When you set up a custom domain, you provide a certificate that you manage with AWS Certificate Manager (ACM). When necessary, you can use this operation to change the certificate that you applied to your custom domain. Usually, this is unnecessary following routine certificate renewal with ACM. When you renew your existing certificate in ACM, the ARN for your certificate remains the same, and your custom domain uses the new certificate automatically. However, if you replace your existing certificate with a new one, ACM gives the new certificate a new ARN. To apply the new certificate to your custom domain, you must provide this ARN to Amazon Cognito. When you add your new certificate in ACM, you must choose US East (N. Virginia) as the AWS Region. After you submit your request, Amazon Cognito requires up to 1 hour to distribute your new certificate to your custom domain. For more information about adding a custom domain to your user pool, see Using Your Own Domain for the Hosted UI.
     */
@@ -1281,6 +1380,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: UpdateUserPoolDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserPoolDomainResponse, Unit]
   ): Request[UpdateUserPoolDomainResponse, AWSError] = js.native
+  
   /**
     * Use this API to register a user's entered TOTP code and mark the user's software token MFA status as "verified" if successful. The request takes an access token or a session string, but not both.
     */
@@ -1294,6 +1394,7 @@ trait CognitoIdentityServiceProvider extends Service {
     params: VerifySoftwareTokenRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ VerifySoftwareTokenResponse, Unit]
   ): Request[VerifySoftwareTokenResponse, AWSError] = js.native
+  
   /**
     * Verifies the specified user attributes in the user pool.
     */
@@ -1308,4 +1409,3 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ VerifyUserAttributeResponse, Unit]
   ): Request[VerifyUserAttributeResponse, AWSError] = js.native
 }
-

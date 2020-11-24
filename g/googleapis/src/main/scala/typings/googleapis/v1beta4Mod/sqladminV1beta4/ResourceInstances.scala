@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sqladmin/v1beta4", "sqladmin_v1beta4.Resource$Instances")
 @js.native
 class ResourceInstances protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * sql.instances.addServerCa
     * @desc Add a new trusted Certificate Authority (CA) version for the
@@ -46,6 +46,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   def clone(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def clone(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def clone(params: ParamsResourceInstancesClone): GaxiosPromise[SchemaOperation] = js.native
@@ -61,6 +62,9 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * sql.instances.delete
     * @desc Deletes a Cloud SQL instance.
@@ -90,6 +94,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.instances.demoteMaster
     * @desc Demotes the stand-alone instance to be a Cloud SQL read replica for
@@ -121,6 +126,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.instances.export
     * @desc Exports data from a Cloud SQL instance to a Cloud Storage bucket as
@@ -152,6 +158,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.instances.failover
     * @desc Failover the instance to its failover replica instance.
@@ -182,6 +189,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.instances.get
     * @desc Retrieves a resource containing information about a Cloud SQL
@@ -212,6 +220,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDatabaseInstance]
   ): Unit = js.native
+  
   /**
     * sql.instances.import
     * @desc Imports data into a Cloud SQL instance from a SQL dump or CSV file in
@@ -243,6 +252,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.instances.insert
     * @desc Creates a new Cloud SQL instance.
@@ -272,6 +282,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.instances.list
     * @desc Lists instances under a given project in the alphabetical order of
@@ -304,6 +315,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstancesListResponse]
   ): Unit = js.native
+  
   /**
     * sql.instances.listServerCas
     * @desc Lists all of the trusted Certificate Authorities (CAs) for the
@@ -340,6 +352,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstancesListServerCasResponse]
   ): Unit = js.native
+  
   /**
     * sql.instances.patch
     * @desc Updates settings of a Cloud SQL instance. Caution: This is not a
@@ -373,6 +386,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.instances.promoteReplica
     * @desc Promotes the read replica instance to be a stand-alone Cloud SQL
@@ -403,6 +417,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.instances.resetSslConfig
     * @desc Deletes all client certificates and generates a new server SSL
@@ -433,6 +448,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.instances.restart
     * @desc Restarts a Cloud SQL instance.
@@ -462,6 +478,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.instances.restoreBackup
     * @desc Restores a backup of a Cloud SQL instance.
@@ -492,6 +509,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.instances.rotateServerCa
     * @desc Rotates the server certificate to one signed by the Certificate
@@ -523,6 +541,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.instances.startReplica
     * @desc Starts the replication in the read replica instance.
@@ -552,6 +571,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.instances.stopReplica
     * @desc Stops the replication in the read replica instance.
@@ -581,6 +601,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.instances.truncateLog
     * @desc Truncate MySQL general and slow query log tables
@@ -611,6 +632,7 @@ class ResourceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.instances.update
     * @desc Updates settings of a Cloud SQL instance. Caution: This is not a
@@ -644,4 +666,3 @@ class ResourceInstances protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

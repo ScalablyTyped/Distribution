@@ -2,10 +2,11 @@ package typings.arcgisJsApi.esri
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait websceneApplicationProperties extends Accessor {
+  
   /**
     * View-specific properties of application and UI elements.
     *
@@ -13,4 +14,3 @@ trait websceneApplicationProperties extends Accessor {
     */
   var viewing: Viewing = js.native
 }
-

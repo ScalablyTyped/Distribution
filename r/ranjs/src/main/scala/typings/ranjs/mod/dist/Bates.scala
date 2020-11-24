@@ -2,7 +2,7 @@ package typings.ranjs.mod.dist
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.Bates")
 @js.native
@@ -16,4 +16,3 @@ class Bates ()
   def this(n: Double, a: js.UndefOr[scala.Nothing], b: Double) = this()
   def this(n: Double, a: Double, b: Double) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.handsontable.mod.Handsontable
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The default validator aliases the table has built-in.
@@ -14,15 +14,17 @@ import scala.scalajs.js.annotation._
   - typings.handsontable.handsontableStrings.time
 */
 trait ValidatorType extends js.Object
-
 object ValidatorType {
+  
   @scala.inline
   def autocomplete: typings.handsontable.handsontableStrings.autocomplete = "autocomplete".asInstanceOf[typings.handsontable.handsontableStrings.autocomplete]
+  
   @scala.inline
   def date: typings.handsontable.handsontableStrings.date = "date".asInstanceOf[typings.handsontable.handsontableStrings.date]
+  
   @scala.inline
   def numeric: typings.handsontable.handsontableStrings.numeric = "numeric".asInstanceOf[typings.handsontable.handsontableStrings.numeric]
+  
   @scala.inline
   def time: typings.handsontable.handsontableStrings.time = "time".asInstanceOf[typings.handsontable.handsontableStrings.time]
 }
-

@@ -12,13 +12,10 @@ Petfinder API Javascript Library.
 | Keywords           | Petfinder, API, Pet, Dog, Cat, Luke, Angel, LukeAngel |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 403 |
+| # downloads        | 514 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/drlukeangel/Pet-Finder-API-Javascript-Library)
-- [Bugs](https://github.com/drlukeangel/Pet-Finder-API-Javascript-Library/issues)
-- [Repository](https://github.com/drlukeangel/Pet-Finder-API-Javascript-Library)
 - [Npm](https://www.npmjs.com/package/pet-finder-api)
     
 

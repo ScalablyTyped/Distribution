@@ -2,7 +2,7 @@ package typings.angular.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
 // LogService
@@ -11,20 +11,24 @@ import scala.scalajs.js.annotation._
 ///////////////////////////////////////////////////////////////////////////
 @js.native
 trait ILogService extends js.Object {
+  
+  def debug(args: js.Any*): Unit = js.native
   @JSName("debug")
   var debug_Original: ILogCall = js.native
+  
+  def error(args: js.Any*): Unit = js.native
   @JSName("error")
   var error_Original: ILogCall = js.native
+  
+  def info(args: js.Any*): Unit = js.native
   @JSName("info")
   var info_Original: ILogCall = js.native
+  
+  def log(args: js.Any*): Unit = js.native
   @JSName("log")
   var log_Original: ILogCall = js.native
+  
+  def warn(args: js.Any*): Unit = js.native
   @JSName("warn")
   var warn_Original: ILogCall = js.native
-  def debug(args: js.Any*): Unit = js.native
-  def error(args: js.Any*): Unit = js.native
-  def info(args: js.Any*): Unit = js.native
-  def log(args: js.Any*): Unit = js.native
-  def warn(args: js.Any*): Unit = js.native
 }
-

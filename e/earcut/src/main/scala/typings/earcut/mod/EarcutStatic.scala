@@ -4,12 +4,11 @@ import typings.earcut.anon.Dimensions
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EarcutStatic extends js.Object {
-  @JSName("default")
-  var default_Original: EarcutStatic = js.native
+  
   /**
     * Triangulate an outline.
     *
@@ -25,6 +24,7 @@ trait EarcutStatic extends js.Object {
   def apply(vertices: ArrayLike[Double], holes: js.UndefOr[scala.Nothing], dimensions: Double): js.Array[Double] = js.native
   def apply(vertices: ArrayLike[Double], holes: ArrayLike[Double]): js.Array[Double] = js.native
   def apply(vertices: ArrayLike[Double], holes: ArrayLike[Double], dimensions: Double): js.Array[Double] = js.native
+  
   /**
     * Triangulate an outline.
     *
@@ -40,6 +40,9 @@ trait EarcutStatic extends js.Object {
   def default(vertices: ArrayLike[Double], holes: js.UndefOr[scala.Nothing], dimensions: Double): js.Array[Double] = js.native
   def default(vertices: ArrayLike[Double], holes: ArrayLike[Double]): js.Array[Double] = js.native
   def default(vertices: ArrayLike[Double], holes: ArrayLike[Double], dimensions: Double): js.Array[Double] = js.native
+  @JSName("default")
+  var default_Original: EarcutStatic = js.native
+  
   def deviation(
     vertices: ArrayLike[Double],
     holes: js.UndefOr[scala.Nothing],
@@ -62,6 +65,7 @@ trait EarcutStatic extends js.Object {
     dimensions: Double,
     triangles: ArrayLike[Double]
   ): Double = js.native
+  
   /**
     * Transforms multi-dimensional array (e.g. GeoJSON Polygon) into the format expected by earcut.
     * @example Transforming GeoJSON data.
@@ -74,4 +78,3 @@ trait EarcutStatic extends js.Object {
     */
   def flatten(data: ArrayLike[ArrayLike[ArrayLike[Double]]]): Dimensions = js.native
 }
-

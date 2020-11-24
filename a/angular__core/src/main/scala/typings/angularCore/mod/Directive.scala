@@ -5,10 +5,11 @@ import org.scalablytyped.runtime.TopLevel
 import typings.angularCore.angularCoreBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Directive extends js.Object {
+  
   /**
     * Defines the name that can be used in the template to assign this directive to a variable.
     *
@@ -32,6 +33,7 @@ trait Directive extends js.Object {
     *
     */
   var exportAs: js.UndefOr[String] = js.native
+  
   /**
     * Maps class properties to host element bindings for properties,
     * attributes, and events, using a set of key-value pairs.
@@ -55,6 +57,7 @@ trait Directive extends js.Object {
     *
     */
   var host: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * Enumerates the set of data-bound input properties for a directive
     *
@@ -88,6 +91,7 @@ trait Directive extends js.Object {
     *
     */
   var inputs: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * When present, this directive/component is ignored by the AOT compiler.
     * It remains in distributed code, and the JIT compiler attempts to compile it
@@ -95,6 +99,7 @@ trait Directive extends js.Object {
     * To ensure the correct behavior, the app must import `@angular/compiler`.
     */
   var jit: js.UndefOr[`true`] = js.native
+  
   /**
     * Enumerates the set of event-bound output properties.
     *
@@ -136,12 +141,14 @@ trait Directive extends js.Object {
     *
     */
   var outputs: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Configures the [injector](guide/glossary#injector) of this
     * directive or component with a [token](guide/glossary#di-token)
     * that maps to a [provider](guide/glossary#provider) of a dependency.
     */
   var providers: js.UndefOr[js.Array[Provider]] = js.native
+  
   /**
     * Configures the queries that will be injected into the directive.
     *
@@ -179,6 +186,7 @@ trait Directive extends js.Object {
     * @Annotation
     */
   var queries: js.UndefOr[StringDictionary[js.Any]] = js.native
+  
   /**
     * The CSS selector that identifies this directive in a template
     * and triggers instantiation of the directive.
@@ -208,8 +216,6 @@ trait Directive extends js.Object {
     */
   var selector: js.UndefOr[String] = js.native
 }
-
 @JSImport("@angular/core", "Directive")
 @js.native
 object Directive extends TopLevel[DirectiveDecorator]
-

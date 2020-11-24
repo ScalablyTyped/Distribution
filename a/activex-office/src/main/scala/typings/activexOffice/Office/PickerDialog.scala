@@ -2,21 +2,28 @@ package typings.activexOffice.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PickerDialog extends js.Object {
+  
   val Application: js.Any = js.native
+  
+  def CreatePickerResults(): PickerResults = js.native
+  
   val Creator: Double = js.native
+  
   var DataHandlerId: String = js.native
+  
   @JSName("Office.PickerDialog_typekey")
   var OfficeDotPickerDialog_typekey: PickerDialog = js.native
+  
+  def Properties(Index: Double): PickerProperty = js.native
   @JSName("Properties")
   val Properties_Original: PickerProperties = js.native
-  var Title: String = js.native
-  def CreatePickerResults(): PickerResults = js.native
-  def Properties(Index: Double): PickerProperty = js.native
+  
   def Resolve(TokenText: String, duplicateDlgMode: Double): PickerResults = js.native
+  
   /**
     * @param IsMultiSelect [IsMultiSelect=true]
     * @param ExistingResults [ExistingResults=0]
@@ -25,5 +32,6 @@ trait PickerDialog extends js.Object {
   def Show(IsMultiSelect: js.UndefOr[scala.Nothing], ExistingResults: PickerResults): PickerResults = js.native
   def Show(IsMultiSelect: Boolean): PickerResults = js.native
   def Show(IsMultiSelect: Boolean, ExistingResults: PickerResults): PickerResults = js.native
+  
+  var Title: String = js.native
 }
-

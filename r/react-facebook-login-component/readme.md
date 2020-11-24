@@ -10,9 +10,9 @@ React Component that lets you instantly login through facebook platform
 | ------------------ | :-------------: |
 | Full name          | react-facebook-login-component |
 | Keywords           | React, Facebook, Login, Auth, oauth, component |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 23230 |
+| # downloads        | 25215 |
 | # stars            | 2 |
 
 ## Links

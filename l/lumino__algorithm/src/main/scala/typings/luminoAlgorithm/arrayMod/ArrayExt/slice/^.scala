@@ -3,11 +3,12 @@ package typings.luminoAlgorithm.arrayMod.ArrayExt.slice
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/array", "ArrayExt.slice")
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Create a slice of an array subject to an optional step.
     *
@@ -40,4 +41,3 @@ object ^ extends js.Object {
   def apply[T](array: ArrayLike[T]): js.Array[T] = js.native
   def apply[T](array: ArrayLike[T], options: IOptions): js.Array[T] = js.native
 }
-

@@ -6,7 +6,7 @@ import typings.angularCompiler.astMod.ParsedEventType
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/render3/r3_ast", "BoundEvent")
 @js.native
@@ -47,18 +47,23 @@ class BoundEvent protected () extends Node {
     sourceSpan: ParseSourceSpan,
     handlerSpan: ParseSourceSpan
   ) = this()
+  
   var handler: AST = js.native
+  
   var handlerSpan: ParseSourceSpan = js.native
+  
   var name: String = js.native
+  
   var phase: String | Null = js.native
+  
   var target: String | Null = js.native
+  
   var `type`: ParsedEventType = js.native
 }
-
 /* static members */
 @JSImport("@angular/compiler/src/render3/r3_ast", "BoundEvent")
 @js.native
 object BoundEvent extends js.Object {
+  
   def fromParsedEvent(event: ParsedEvent): BoundEvent = js.native
 }
-

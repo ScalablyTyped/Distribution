@@ -2,18 +2,17 @@ package typings.csstype.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VendorPropertiesFallback[TLength, TTime]
-  extends VendorLonghandPropertiesFallback[TLength, TTime]
-     with VendorShorthandPropertiesFallback[TLength, TTime]
-
+trait VendorPropertiesFallback[TLength]
+  extends VendorLonghandPropertiesFallback[TLength]
+     with VendorShorthandPropertiesFallback[TLength]
 object VendorPropertiesFallback {
+  
   @scala.inline
-  def apply[TLength, TTime](): VendorPropertiesFallback[TLength, TTime] = {
+  def apply[TLength](): VendorPropertiesFallback[TLength] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[VendorPropertiesFallback[TLength, TTime]]
+    __obj.asInstanceOf[VendorPropertiesFallback[TLength]]
   }
 }
-

@@ -56,16 +56,12 @@ import typings.std.Partial
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbx/components/navbar/navbar-item", "NavbarItem")
 @js.native
 object NavbarItem extends js.Object {
-  var Container: TypeofNavbarItemContainer = js.native
-  @JSName("$$typeof")
-  var DollarDollartypeof: js.Symbol = js.native
-  var defaultProps: AsElementType with (Partial[PickNavbarItemContainerPrActive with (Pick[_, String | Double | js.Symbol])]) = js.native
-  var displayName: js.UndefOr[String] = js.native
+  
   def apply[TAsComponent /* <: ElementType[_] */](
     props: `6`[TAsComponent] with PickNavbarItemContainerPrActive with (Pick[
       ComponentProps[TAsComponent], 
@@ -75,5 +71,13 @@ object NavbarItem extends js.Object {
       ]
     ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
   ): Element | Null = js.native
+  
+  var Container: TypeofNavbarItemContainer = js.native
+  
+  @JSName("$$typeof")
+  var DollarDollartypeof: js.Symbol = js.native
+  
+  var defaultProps: AsElementType with (Partial[PickNavbarItemContainerPrActive with (Pick[_, String | Double | js.Symbol])]) = js.native
+  
+  var displayName: js.UndefOr[String] = js.native
 }
-

@@ -6,7 +6,7 @@ import typings.babylonjs.spriteMapMod.ISpriteMapOptions
 import typings.babylonjs.textureMod.Texture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Sprites/index", "SpriteMap")
 @js.native
@@ -28,4 +28,3 @@ class SpriteMap protected ()
     scene: Scene
   ) = this()
 }
-

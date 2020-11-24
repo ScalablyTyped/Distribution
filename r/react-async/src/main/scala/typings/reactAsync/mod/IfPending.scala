@@ -5,7 +5,7 @@ import typings.reactAsync.anon.ChildrenInitial
 import typings.reactAsync.anon.Initial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Renders only while pending (promise is loading).
@@ -17,7 +17,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-async", "IfPending")
 @js.native
 object IfPending extends js.Object {
-  var propTypes: ChildrenInitial = js.native
+  
   def apply[T /* <: js.Object */](hasChildrenInitialState: Initial[T]): Element = js.native
+  
+  var propTypes: ChildrenInitial = js.native
 }
-

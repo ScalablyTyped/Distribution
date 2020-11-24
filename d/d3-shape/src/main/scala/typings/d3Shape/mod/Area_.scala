@@ -1,12 +1,15 @@
 package typings.d3Shape.mod
 
 import typings.std.CanvasRenderingContext2D
+import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Area_[Datum] extends js.Object {
+  
+  def apply(data: js.Array[Datum]): String | Null = js.native
   /**
     * Generates an area for the given array of data. Depending on this area generator’s associated curve,
     * the given input data may need to be sorted by x-value before being passed to the area generator.
@@ -16,7 +19,8 @@ trait Area_[Datum] extends js.Object {
     *
     * @param data Array of data elements.
     */
-  def apply(data: js.Array[Datum]): String | Null = js.native
+  def apply(data: Iterable[Datum]): String | Null = js.native
+  
   /**
     * Returns the current rendering context, which defaults to null.
     */
@@ -37,6 +41,7 @@ trait Area_[Datum] extends js.Object {
     * @param context The rendering context.
     */
   def context(context: CanvasRenderingContext2D): this.type = js.native
+  
   /**
     * Returns the current curve factory, which defaults to curveLinear.
     */
@@ -54,6 +59,7 @@ trait Area_[Datum] extends js.Object {
     */
   @JSName("curve")
   def curve_C_CurveFactory_C[C /* <: CurveFactory */](): C = js.native
+  
   /**
     * Returns the current defined accessor, which defaults to a function returning a constant boolean value of true.
     */
@@ -94,26 +100,31 @@ trait Area_[Datum] extends js.Object {
     * @param defined A boolean constant.
     */
   def defined(defined: Boolean): this.type = js.native
+  
   /**
     * Returns a new line generator that has this area generator’s current defined accessor, curve and context.
     * The line’s x-accessor is this area’s x0-accessor, and the line’s y-accessor is this area’s y0-accessor.
     */
   def lineX0(): Line_[Datum] = js.native
+  
   /**
     * Returns a new line generator that has this area generator’s current defined accessor, curve and context.
     * The line’s x-accessor is this area’s x1-accessor, and the line’s y-accessor is this area’s y0-accessor.
     */
   def lineX1(): Line_[Datum] = js.native
+  
   /**
     * Returns a new line generator that has this area generator’s current defined accessor, curve and context.
     * The line’s x-accessor is this area’s x0-accessor, and the line’s y-accessor is this area’s y0-accessor.
     */
   def lineY0(): Line_[Datum] = js.native
+  
   /**
     * Returns a new line generator that has this area generator’s current defined accessor, curve and context.
     * The line’s x-accessor is this area’s x0-accessor, and the line’s y-accessor is this area’s y1-accessor.
     */
   def lineY1(): Line_[Datum] = js.native
+  
   /**
     * Returns the current x0 accessor. The default x0 accessor is a function returning the first element of a
     * two-element array of numbers.
@@ -137,6 +148,7 @@ trait Area_[Datum] extends js.Object {
     * @param x A constant value to be used for x0.
     */
   def x(x: Double): this.type = js.native
+  
   /**
     * Returns the current x0 accessor. The default x0 accessor is a function returning the first element of a
     * two-element array of numbers.
@@ -158,6 +170,7 @@ trait Area_[Datum] extends js.Object {
     * @param x A constant value.
     */
   def x0(x: Double): this.type = js.native
+  
   /**
     * Returns the current x1 accessor, which defaults to null, indicating that the previously-computed x0 value should be reused for the x1 value.
     */
@@ -186,6 +199,7 @@ trait Area_[Datum] extends js.Object {
     * @param x null.
     */
   def x1(x: Null): this.type = js.native
+  
   /**
     * Returns the current y0 accessor. The default y0 accessor is a function returning a constant value of zero.
     */
@@ -208,6 +222,7 @@ trait Area_[Datum] extends js.Object {
     * @param y A constant value to be used for y0.
     */
   def y(y: Double): this.type = js.native
+  
   /**
     * Returns the current y0 accessor. The default y0 accessor is a function a constant value of zero.
     */
@@ -228,6 +243,7 @@ trait Area_[Datum] extends js.Object {
     * @param y A constant value.
     */
   def y0(y: Double): this.type = js.native
+  
   /**
     * Returns the current y1 accessor or null. The default y1 accessor is a function returning the second element of a
     * two-element array of numbers.
@@ -260,4 +276,3 @@ trait Area_[Datum] extends js.Object {
     */
   def y1(y: Null): this.type = js.native
 }
-

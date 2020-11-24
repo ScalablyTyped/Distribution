@@ -4,9 +4,43 @@ import typings.imageminWebp.mod.Metadata
 import typings.imageminWebp.mod.Preset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageminWebpStrings {
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def drawing: drawing = "drawing".asInstanceOf[drawing]
+  
+  @scala.inline
+  def exif: exif = "exif".asInstanceOf[exif]
+  
+  @scala.inline
+  def icc: icc = "icc".asInstanceOf[icc]
+  
+  @scala.inline
+  def icon: icon = "icon".asInstanceOf[icon]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def photo: photo = "photo".asInstanceOf[photo]
+  
+  @scala.inline
+  def picture: picture = "picture".asInstanceOf[picture]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def xmp: xmp = "xmp".asInstanceOf[xmp]
+  
   @js.native
   sealed trait all extends Metadata
   
@@ -39,28 +73,4 @@ object imageminWebpStrings {
   
   @js.native
   sealed trait xmp extends Metadata
-  
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def drawing: drawing = "drawing".asInstanceOf[drawing]
-  @scala.inline
-  def exif: exif = "exif".asInstanceOf[exif]
-  @scala.inline
-  def icc: icc = "icc".asInstanceOf[icc]
-  @scala.inline
-  def icon: icon = "icon".asInstanceOf[icon]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def photo: photo = "photo".asInstanceOf[photo]
-  @scala.inline
-  def picture: picture = "picture".asInstanceOf[picture]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def xmp: xmp = "xmp".asInstanceOf[xmp]
 }
-

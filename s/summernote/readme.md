@@ -10,9 +10,9 @@ Super simple WYSIWYG editor
 | ------------------ | :-------------: |
 | Full name          | summernote |
 | Keywords           | editor, WYSIWYG |
-| # releases         | 5 |
-| # dependents       | 39 |
-| # downloads        | 1243751 |
+| # releases         | 9 |
+| # dependents       | 48 |
+| # downloads        | 1949980 |
 | # stars            | 3 |
 
 ## Links

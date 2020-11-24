@@ -1,7 +1,7 @@
 
 # Scala.js typings for ow
 
-Typings are for version 0.15.1
+Typings are for version 0.17.0
 
 ## Library description:
 Function argument validation for humans
@@ -10,9 +10,9 @@ Function argument validation for humans
 | ------------------ | :-------------: |
 | Full name          | ow |
 | Keywords           | type, types, check, checking, guard, guards, assert, assertion, predicate, predicates, is, validate, validation, utility, util, typeof, instanceof, object |
-| # releases         | 20 |
-| # dependents       | 234 |
-| # downloads        | 6365501 |
+| # releases         | 17 |
+| # dependents       | 223 |
+| # downloads        | 9078245 |
 | # stars            | 1 |
 
 ## Links

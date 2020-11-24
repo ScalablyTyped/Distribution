@@ -3,7 +3,7 @@ package typings.pulumiCloud.httpServerMod
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/cloud/httpServer", "HttpServer")
 @js.native
@@ -18,4 +18,3 @@ class HttpServerCls protected () extends HttpServer {
   def this(name: String, createRequestListener: RequestListenerFactory) = this()
   def this(name: String, createRequestListener: RequestListenerFactory, opts: ResourceOptions) = this()
 }
-

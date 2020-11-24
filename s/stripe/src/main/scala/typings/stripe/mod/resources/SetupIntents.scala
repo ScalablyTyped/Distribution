@@ -14,11 +14,12 @@ import typings.stripe.mod.setupIntents.ISetupIntentRetrieveOptions
 import typings.stripe.mod.setupIntents.ISetupIntentUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.SetupIntents")
 @js.native
 class SetupIntents () extends StripeResource {
+  
   def cancel(intent: String): js.Promise[ISetupIntent] = js.native
   def cancel(intent: String, data: `1`): js.Promise[ISetupIntent] = js.native
   /**
@@ -36,6 +37,7 @@ class SetupIntents () extends StripeResource {
   def cancel(intent: String, options: HeaderOptions): js.Promise[ISetupIntent] = js.native
   def cancel(intent: String, options: HeaderOptions, response: IResponseFn[ISetupIntent]): js.Promise[ISetupIntent] = js.native
   def cancel(intent: String, response: IResponseFn[ISetupIntent]): js.Promise[ISetupIntent] = js.native
+  
   def confirm(intent: String): js.Promise[ISetupIntent] = js.native
   def confirm(intent: String, data: ISetupIntentConfirmOptions): js.Promise[ISetupIntent] = js.native
   /**
@@ -61,6 +63,7 @@ class SetupIntents () extends StripeResource {
   def confirm(intent: String, options: HeaderOptions): js.Promise[ISetupIntent] = js.native
   def confirm(intent: String, options: HeaderOptions, response: IResponseFn[ISetupIntent]): js.Promise[ISetupIntent] = js.native
   def confirm(intent: String, response: IResponseFn[ISetupIntent]): js.Promise[ISetupIntent] = js.native
+  
   def create(data: ISetupIntentCreationOptions): js.Promise[ISetupIntent] = js.native
   /**
     * Creates a SetupIntent object.
@@ -71,6 +74,7 @@ class SetupIntents () extends StripeResource {
   def create(data: ISetupIntentCreationOptions, options: HeaderOptions): js.Promise[ISetupIntent] = js.native
   def create(data: ISetupIntentCreationOptions, options: HeaderOptions, response: IResponseFn[ISetupIntent]): js.Promise[ISetupIntent] = js.native
   def create(data: ISetupIntentCreationOptions, response: IResponseFn[ISetupIntent]): js.Promise[ISetupIntent] = js.native
+  
   def list(): IListPromise[ISetupIntent] = js.native
   def list(data: ISetupIntentListOptions): IListPromise[ISetupIntent] = js.native
   /**
@@ -84,6 +88,7 @@ class SetupIntents () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[ISetupIntent] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[ISetupIntent]]): IListPromise[ISetupIntent] = js.native
   def list(response: IResponseFn[IList[ISetupIntent]]): IListPromise[ISetupIntent] = js.native
+  
   def retrieve(intent: String): js.Promise[ISetupIntent] = js.native
   def retrieve(intent: String, data: ISetupIntentRetrieveOptions): js.Promise[ISetupIntent] = js.native
   /**
@@ -106,6 +111,7 @@ class SetupIntents () extends StripeResource {
   def retrieve(intent: String, options: HeaderOptions): js.Promise[ISetupIntent] = js.native
   def retrieve(intent: String, options: HeaderOptions, response: IResponseFn[ISetupIntent]): js.Promise[ISetupIntent] = js.native
   def retrieve(intent: String, response: IResponseFn[ISetupIntent]): js.Promise[ISetupIntent] = js.native
+  
   def update(intent: String, data: ISetupIntentUpdateOptions): js.Promise[ISetupIntent] = js.native
   /**
     * Updates a SetupIntent object.
@@ -119,4 +125,3 @@ class SetupIntents () extends StripeResource {
   ): js.Promise[ISetupIntent] = js.native
   def update(intent: String, data: ISetupIntentUpdateOptions, response: IResponseFn[ISetupIntent]): js.Promise[ISetupIntent] = js.native
 }
-

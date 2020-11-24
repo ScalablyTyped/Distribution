@@ -10,9 +10,9 @@ A pure JavaScript implementation of Sass.
 | ------------------ | :-------------: |
 | Full name          | sass |
 | Keywords           | style, scss, sass, preprocessor, css |
-| # releases         | 84 |
-| # dependents       | 519 |
-| # downloads        | 30357516 |
+| # releases         | 62 |
+| # dependents       | 989 |
+| # downloads        | 84285956 |
 | # stars            | 21 |
 
 ## Links

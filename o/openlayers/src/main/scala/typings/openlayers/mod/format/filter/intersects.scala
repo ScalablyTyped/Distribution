@@ -3,11 +3,12 @@ package typings.openlayers.mod.format.filter
 import typings.openlayers.mod.geom.Geometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "format.filter.intersects")
 @js.native
 object intersects extends js.Object {
+  
   /**
     * Create a `<Intersects>` operator to test whether a geometry-valued property
     * intersects a given geometry.
@@ -22,4 +23,3 @@ object intersects extends js.Object {
   def apply(geometryName: String, geometry: Geometry): Intersects_ = js.native
   def apply(geometryName: String, geometry: Geometry, opt_srsName: String): Intersects_ = js.native
 }
-

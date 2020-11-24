@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Registrations")
 @js.native
 class ResourceRegistrations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * classroom.registrations.create
     * @desc Creates a `Registration`, causing Classroom to start sending
@@ -61,6 +63,7 @@ class ResourceRegistrations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRegistration]
   ): Unit = js.native
+  
   /**
     * classroom.registrations.delete
     * @desc Deletes a `Registration`, causing Classroom to stop sending
@@ -91,4 +94,3 @@ class ResourceRegistrations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
 }
-

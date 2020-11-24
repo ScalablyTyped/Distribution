@@ -7,91 +7,37 @@ import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/extractHighlightsPostProcess", JSImport.Namespace)
 @js.native
 object extractHighlightsPostProcessMod extends js.Object {
+  
   @js.native
   class ExtractHighlightsPostProcess protected () extends PostProcess {
-    def this(name: String, options: Double, camera: Nullable[Camera]) = this()
-    def this(name: String, options: PostProcessOptions, camera: Nullable[Camera]) = this()
-    def this(name: String, options: Double, camera: Nullable[Camera], samplingMode: Double) = this()
-    def this(name: String, options: PostProcessOptions, camera: Nullable[Camera], samplingMode: Double) = this()
-    def this(name: String, options: Double, camera: Nullable[Camera], samplingMode: Double, engine: Engine) = this()
     def this(
       name: String,
-      options: PostProcessOptions,
+      options: Double | PostProcessOptions,
       camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine
+      samplingMode: js.UndefOr[Double],
+      engine: js.UndefOr[Engine],
+      reusable: js.UndefOr[Boolean],
+      textureType: js.UndefOr[Double],
+      blockCompilation: js.UndefOr[Boolean]
     ) = this()
-    def this(
-      name: String,
-      options: Double,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean
-    ) = this()
-    def this(
-      name: String,
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean
-    ) = this()
-    def this(
-      name: String,
-      options: Double,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double
-    ) = this()
-    def this(
-      name: String,
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double
-    ) = this()
-    def this(
-      name: String,
-      options: Double,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double,
-      blockCompilation: Boolean
-    ) = this()
-    def this(
-      name: String,
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: Double,
-      engine: Engine,
-      reusable: Boolean,
-      textureType: Double,
-      blockCompilation: Boolean
-    ) = this()
+    
     /** @hidden */
     var _exposure: Double = js.native
+    
     /**
       * Post process which has the input texture to be used when performing highlight extraction
       * @hidden
       */
     var _inputPostProcess: Nullable[PostProcess] = js.native
+    
     /**
       * The luminance threshold, pixels below this value will be set to black.
       */
     var threshold: Double = js.native
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new Quat object.
@@ -13,54 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Quat extends js.Object {
-  /**
-    * The w component of the quaternion.
-    * @example
-    * var quat = new pc.Quat();
-    
-    // Get w
-    var w = quat.w;
-    
-    // Set w
-    quat.w = 0;
-    */
-  var w: Double = js.native
-  /**
-    * The x component of the quaternion.
-    * @example
-    * var quat = new pc.Quat();
-    
-    // Get x
-    var x = quat.x;
-    
-    // Set x
-    quat.x = 0;
-    */
-  var x: Double = js.native
-  /**
-    * The y component of the quaternion.
-    * @example
-    * var quat = new pc.Quat();
-    
-    // Get y
-    var y = quat.y;
-    
-    // Set y
-    quat.y = 0;
-    */
-  var y: Double = js.native
-  /**
-    * The z component of the quaternion.
-    * @example
-    * var quat = new pc.Quat();
-    
-    // Get z
-    var z = quat.z;
-    
-    // Set z
-    quat.z = 0;
-    */
-  var z: Double = js.native
+  
   /**
     * Copies the contents of a source quaternion to a destination quaternion.
     * @example
@@ -72,6 +25,7 @@ trait Quat extends js.Object {
     * @returns Self for chaining.
     */
   def copy(rhs: Quat): Quat = js.native
+  
   /**
     * Reports whether two quaternions are equal.
     * @example
@@ -82,6 +36,7 @@ trait Quat extends js.Object {
     * @returns True if the quaternions are equal and false otherwise.
     */
   def equals(rhs: Quat): Boolean = js.native
+  
   /**
     * Gets the rotation axis and angle for a given
     quaternion. If a quaternion is created with
@@ -101,6 +56,7 @@ trait Quat extends js.Object {
     * @returns Angle, in degrees, of the rotation.
     */
   def getAxisAngle(axis: Vec3): Double = js.native
+  
   /**
     * Converts the supplied quaternion to Euler angles.
     * @param [eulers] - The 3-dimensional vector to receive the Euler angles.
@@ -109,6 +65,7 @@ trait Quat extends js.Object {
     */
   def getEulerAngles(): Vec3 = js.native
   def getEulerAngles(eulers: Vec3): Vec3 = js.native
+  
   /**
     * Generates the inverse of the specified quaternion.
     * @example
@@ -120,6 +77,7 @@ trait Quat extends js.Object {
     * @returns Self for chaining.
     */
   def invert(): Quat = js.native
+  
   /**
     * Returns the magnitude of the specified quaternion.
     * @example
@@ -130,6 +88,7 @@ trait Quat extends js.Object {
     * @returns The magnitude of the specified quaternion.
     */
   def length(): Double = js.native
+  
   /**
     * Returns the magnitude squared of the specified quaternion.
     * @example
@@ -140,6 +99,7 @@ trait Quat extends js.Object {
     * @returns The magnitude of the specified quaternion.
     */
   def lengthSq(): Double = js.native
+  
   /**
     * Returns the result of multiplying the specified quaternions together.
     * @example
@@ -155,6 +115,7 @@ trait Quat extends js.Object {
     * @returns Self for chaining.
     */
   def mul(rhs: Quat): Quat = js.native
+  
   /**
     * Returns the result of multiplying the specified quaternions together.
     * @example
@@ -172,6 +133,7 @@ trait Quat extends js.Object {
     * @returns Self for chaining.
     */
   def mul2(lhs: Quat, rhs: Quat): Quat = js.native
+  
   /**
     * Returns the specified quaternion converted in place to a unit quaternion.
     * @example
@@ -184,6 +146,7 @@ trait Quat extends js.Object {
     * @returns The result of the normalization.
     */
   def normalize(): Quat = js.native
+  
   /**
     * Sets the specified quaternion to the supplied numerical values.
     * @example
@@ -199,6 +162,7 @@ trait Quat extends js.Object {
     * @returns Self for chaining.
     */
   def set(x: Double, y: Double, z: Double, w: Double): Quat = js.native
+  
   /**
     * Sets a quaternion from an angular rotation around an axis.
     * @example
@@ -209,6 +173,7 @@ trait Quat extends js.Object {
     * @returns Self for chaining.
     */
   def setFromAxisAngle(axis: Vec3, angle: Double): Quat = js.native
+  
   /**
     * Sets a quaternion from Euler angles specified in XYZ order.
     * @example
@@ -220,6 +185,7 @@ trait Quat extends js.Object {
     * @returns Self for chaining.
     */
   def setFromEulerAngles(ex: Double, ey: Double, ez: Double): Quat = js.native
+  
   /**
     * Converts the specified 4x4 matrix to a quaternion. Note that since
     a quaternion is purely a representation for orientation, only the translational part
@@ -234,6 +200,7 @@ trait Quat extends js.Object {
     * @returns Self for chaining.
     */
   def setFromMat4(m: Mat4): Quat = js.native
+  
   /**
     * Performs a spherical interpolation between two quaternions. The result of
     the interpolation is written to the quaternion calling the function.
@@ -253,6 +220,7 @@ trait Quat extends js.Object {
     * @returns Self for chaining.
     */
   def slerp(lhs: Quat, rhs: Quat, alpha: Double): Quat = js.native
+  
   /**
     * Transforms a 3-dimensional vector by the specified quaternion.
     * @example
@@ -269,5 +237,56 @@ trait Quat extends js.Object {
     */
   def transformVector(vec: Vec3): Vec3 = js.native
   def transformVector(vec: Vec3, res: Vec3): Vec3 = js.native
+  
+  /**
+    * The w component of the quaternion.
+    * @example
+    * var quat = new pc.Quat();
+    
+    // Get w
+    var w = quat.w;
+    
+    // Set w
+    quat.w = 0;
+    */
+  var w: Double = js.native
+  
+  /**
+    * The x component of the quaternion.
+    * @example
+    * var quat = new pc.Quat();
+    
+    // Get x
+    var x = quat.x;
+    
+    // Set x
+    quat.x = 0;
+    */
+  var x: Double = js.native
+  
+  /**
+    * The y component of the quaternion.
+    * @example
+    * var quat = new pc.Quat();
+    
+    // Get y
+    var y = quat.y;
+    
+    // Set y
+    quat.y = 0;
+    */
+  var y: Double = js.native
+  
+  /**
+    * The z component of the quaternion.
+    * @example
+    * var quat = new pc.Quat();
+    
+    // Get z
+    var z = quat.z;
+    
+    // Set z
+    quat.z = 0;
+    */
+  var z: Double = js.native
 }
-

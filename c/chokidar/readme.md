@@ -1,7 +1,7 @@
 
 # Scala.js typings for chokidar
 
-Typings are for version 3.4.1
+Typings are for version 3.4.3
 
 ## Library description:
 A neat wrapper around node.js fs.watch / fs.watchFile / fsevents.
@@ -10,9 +10,9 @@ A neat wrapper around node.js fs.watch / fs.watchFile / fsevents.
 | ------------------ | :-------------: |
 | Full name          | chokidar |
 | Keywords           | fs, watch, watchFile, watcher, watching, file, fsevents |
-| # releases         | 25 |
-| # dependents       | 4774 |
-| # downloads        | 633137275 |
+| # releases         | 24 |
+| # dependents       | 5608 |
+| # downloads        | 992965406 |
 | # stars            | 175 |
 
 ## Links

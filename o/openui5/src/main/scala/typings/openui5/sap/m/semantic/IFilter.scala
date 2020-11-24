@@ -2,7 +2,7 @@ package typings.openui5.sap.m.semantic
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *   Marker interface for controls which are suitable as items of the filter aggregation of
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IFilter extends js.Object
-

@@ -2,9 +2,40 @@ package typings.webpackBugsnagPlugins
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackBugsnagPluginsStrings {
+  
+  @scala.inline
+  def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]
+  
+  @scala.inline
+  def `bitbucket-server`: `bitbucket-server` = "bitbucket-server".asInstanceOf[`bitbucket-server`]
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def github: github = "github".asInstanceOf[github]
+  
+  @scala.inline
+  def `github-enterprise`: `github-enterprise` = "github-enterprise".asInstanceOf[`github-enterprise`]
+  
+  @scala.inline
+  def gitlab: gitlab = "gitlab".asInstanceOf[gitlab]
+  
+  @scala.inline
+  def `gitlab-onpremise`: `gitlab-onpremise` = "gitlab-onpremise".asInstanceOf[`gitlab-onpremise`]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  
   @js.native
   sealed trait bitbucket extends js.Object
   
@@ -34,26 +65,4 @@ object webpackBugsnagPluginsStrings {
   
   @js.native
   sealed trait warn extends js.Object
-  
-  @scala.inline
-  def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]
-  @scala.inline
-  def `bitbucket-server`: `bitbucket-server` = "bitbucket-server".asInstanceOf[`bitbucket-server`]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def github: github = "github".asInstanceOf[github]
-  @scala.inline
-  def `github-enterprise`: `github-enterprise` = "github-enterprise".asInstanceOf[`github-enterprise`]
-  @scala.inline
-  def gitlab: gitlab = "gitlab".asInstanceOf[gitlab]
-  @scala.inline
-  def `gitlab-onpremise`: `gitlab-onpremise` = "gitlab-onpremise".asInstanceOf[`gitlab-onpremise`]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
 }
-

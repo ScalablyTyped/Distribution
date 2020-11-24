@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.qldbsessionMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "QLDBSession")
 @js.native
@@ -14,4 +14,3 @@ class QLDBSession ()
   extends typings.awsSdk.allMod.QLDBSession {
   def this(options: ClientConfiguration) = this()
 }
-

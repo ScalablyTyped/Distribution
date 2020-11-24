@@ -7,25 +7,34 @@ import typings.angularCompiler.compileReflectorMod.CompileReflector
 import typings.angularCompiler.outputAstMod.Statement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_jit", JSImport.Namespace)
 @js.native
 object outputJitMod extends js.Object {
+  
   @js.native
   class JitEmitterVisitor protected () extends AbstractJsEmitterVisitor {
     def this(reflector: CompileReflector) = this()
+    
     var _emitReferenceToExternal: js.Any = js.native
+    
     var _evalArgNames: js.Any = js.native
+    
     var _evalArgValues: js.Any = js.native
+    
     var _evalExportedVars: js.Any = js.native
-    var reflector: js.Any = js.native
+    
     def createReturnStmt(ctx: EmitterVisitorContext): Unit = js.native
+    
     def getArgs(): StringDictionary[js.Any] = js.native
+    
+    var reflector: js.Any = js.native
   }
   
   @js.native
   class JitEvaluator () extends js.Object {
+    
     /**
       * Evaluate a piece of JIT generated code.
       * @param sourceUrl The URL of this generated code.
@@ -42,6 +51,7 @@ object outputJitMod extends js.Object {
       vars: StringDictionary[js.Any],
       createSourceMap: Boolean
     ): js.Any = js.native
+    
     /**
       *
       * @param sourceUrl The URL of the generated code.
@@ -57,6 +67,7 @@ object outputJitMod extends js.Object {
       reflector: CompileReflector,
       createSourceMaps: Boolean
     ): StringDictionary[js.Any] = js.native
+    
     /**
       * Execute a JIT generated function by calling it.
       *
@@ -69,6 +80,4 @@ object outputJitMod extends js.Object {
       */
     def executeFunction(fn: js.Function, args: js.Array[_]): js.Any = js.native
   }
-  
 }
-

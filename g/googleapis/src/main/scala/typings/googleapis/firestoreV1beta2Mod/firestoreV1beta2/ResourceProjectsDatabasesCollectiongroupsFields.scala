@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firestore/v1beta2", "firestore_v1beta2.Resource$Projects$Databases$Collectiongroups$Fields")
 @js.native
 class ResourceProjectsDatabasesCollectiongroupsFields protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * firestore.projects.databases.collectionGroups.fields.get
     * @desc Gets the metadata and configuration for a Field.
@@ -44,6 +46,7 @@ class ResourceProjectsDatabasesCollectiongroupsFields protected () extends js.Ob
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta2Field]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.collectionGroups.fields.list
     * @desc Lists the field configuration and metadata for this database.
@@ -82,6 +85,7 @@ class ResourceProjectsDatabasesCollectiongroupsFields protected () extends js.Ob
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta2ListFieldsResponse]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.collectionGroups.fields.patch
     * @desc Updates a field configuration. Currently, field updates apply only
@@ -125,4 +129,3 @@ class ResourceProjectsDatabasesCollectiongroupsFields protected () extends js.Ob
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
 }
-

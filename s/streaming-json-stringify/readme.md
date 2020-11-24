@@ -12,7 +12,7 @@ Streaming JSON.stringify()
 | Keywords           | stream, json, stringify |
 | # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 1201378 |
+| # downloads        | 2013552 |
 | # stars            | 1 |
 
 ## Links

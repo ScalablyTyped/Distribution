@@ -4,7 +4,7 @@ import typings.awsSdk.schemasMod.ClientConfiguration
 import typings.awsSdk.schemasMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "Schemas")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class Schemas () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

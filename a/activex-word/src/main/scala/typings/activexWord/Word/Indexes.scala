@@ -2,17 +2,11 @@ package typings.activexWord.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Indexes extends js.Object {
-  val Application: typings.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  var Format: WdIndexFormat = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.Indexes_typekey")
-  var WordDotIndexes_typekey: Indexes = js.native
+  
   def Add(
     Range: Range,
     HeadingSeparator: js.UndefOr[js.Any],
@@ -23,6 +17,7 @@ trait Indexes extends js.Object {
     SortBy: js.UndefOr[js.Any],
     IndexLanguage: js.UndefOr[js.Any]
   ): Index = js.native
+  
   def AddOld(Range: Range): Index = js.native
   def AddOld(
     Range: Range,
@@ -230,8 +225,19 @@ trait Indexes extends js.Object {
     NumberOfColumns: js.Any,
     AccentedLetters: js.Any
   ): Index = js.native
+  
+  val Application: typings.activexWord.Word.Application = js.native
+  
   def AutoMarkEntries(ConcordanceFileName: String): Unit = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
+  var Format: WdIndexFormat = js.native
+  
   def Item(Index: Double): Index = js.native
+  
   def MarkAllEntries(
     Range: Range,
     Entry: js.UndefOr[js.Any],
@@ -242,6 +248,7 @@ trait Indexes extends js.Object {
     Bold: js.UndefOr[js.Any],
     Italic: js.UndefOr[js.Any]
   ): Unit = js.native
+  
   def MarkEntry(
     Range: Range,
     Entry: js.UndefOr[js.Any],
@@ -253,5 +260,9 @@ trait Indexes extends js.Object {
     Italic: js.UndefOr[js.Any],
     Reading: js.UndefOr[js.Any]
   ): Field = js.native
+  
+  val Parent: js.Any = js.native
+  
+  @JSName("Word.Indexes_typekey")
+  var WordDotIndexes_typekey: Indexes = js.native
 }
-

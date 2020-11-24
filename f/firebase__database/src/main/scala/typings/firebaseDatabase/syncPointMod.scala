@@ -13,20 +13,15 @@ import typings.firebaseDatabase.writeTreeMod.WriteTreeRef
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/database/dist/src/core/SyncPoint", JSImport.Namespace)
 @js.native
 object syncPointMod extends js.Object {
+  
   @js.native
   class SyncPoint () extends js.Object {
-    /**
-      * The Views being tracked at this location in the tree, stored as a map where the key is a
-      * queryId and the value is the View for that query.
-      *
-      * NOTE: This list will be quite small (usually 1, but perhaps 2 or 3; any more is an odd use case).
-      */
-    val views: js.Any = js.native
+    
     def addEventRegistration(
       query: Query,
       eventRegistration: EventRegistration,
@@ -51,17 +46,24 @@ object syncPointMod extends js.Object {
       serverCache: Node,
       serverCacheComplete: Boolean
     ): js.Array[Event] = js.native
+    
     def applyOperation(operation: Operation, writesCache: WriteTreeRef): js.Array[Event] = js.native
     def applyOperation(operation: Operation, writesCache: WriteTreeRef, optCompleteServerCache: Node): js.Array[Event] = js.native
+    
     /**
       * @param path The path to the desired complete snapshot
       * @return A complete cache, if it exists
       */
     def getCompleteServerCache(path: Path): Node | Null = js.native
+    
     def getCompleteView(): View | Null = js.native
+    
     def getQueryViews(): js.Array[View] = js.native
+    
     def hasCompleteView(): Boolean = js.native
+    
     def isEmpty(): Boolean = js.native
+    
     /**
       * Remove event callback(s).  Return cancelEvents if a cancelError is specified.
       *
@@ -77,16 +79,24 @@ object syncPointMod extends js.Object {
     def removeEventRegistration(query: Query, eventRegistration: Null, cancelError: Error): Events = js.native
     def removeEventRegistration(query: Query, eventRegistration: EventRegistration): Events = js.native
     def removeEventRegistration(query: Query, eventRegistration: EventRegistration, cancelError: Error): Events = js.native
+    
     def viewExistsForQuery(query: Query): Boolean = js.native
+    
     def viewForQuery(query: Query): View | Null = js.native
+    
+    /**
+      * The Views being tracked at this location in the tree, stored as a map where the key is a
+      * queryId and the value is the View for that query.
+      *
+      * NOTE: This list will be quite small (usually 1, but perhaps 2 or 3; any more is an odd use case).
+      */
+    val views: js.Any = js.native
   }
-  
   /* static members */
   @js.native
   object SyncPoint extends js.Object {
+    
     def __referenceConstructor: ReferenceConstructor = js.native
     def __referenceConstructor_=(`val`: ReferenceConstructor): Unit = js.native
   }
-  
 }
-

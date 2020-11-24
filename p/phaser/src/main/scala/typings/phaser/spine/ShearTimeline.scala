@@ -2,12 +2,12 @@ package typings.phaser.spine
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ShearTimeline extends TranslateTimeline
-
 object ShearTimeline {
+  
   @scala.inline
   def apply(
     apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
@@ -27,4 +27,3 @@ object ShearTimeline {
     __obj.asInstanceOf[ShearTimeline]
   }
 }
-

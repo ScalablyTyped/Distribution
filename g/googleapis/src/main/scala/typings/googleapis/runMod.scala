@@ -12,24 +12,32 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/run", JSImport.Namespace)
 @js.native
 object runMod extends js.Object {
+  
   def run(options: Options): Run = js.native
   def run(options: typings.googleapis.runV1alpha1Mod.runV1alpha1.Options): typings.googleapis.runV1alpha1Mod.runV1alpha1.Run = js.native
   @JSName("run")
   def run_v1(version: v1): Run = js.native
   @JSName("run")
   def run_v1alpha1(version: v1alpha1): typings.googleapis.runV1alpha1Mod.runV1alpha1.Run = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Run {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v1
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Run]
+            ]
     
     @js.native
     class v1alpha1 protected ()
@@ -37,13 +45,6 @@ object runMod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    object v1
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Run]
-            ]
-    
     @js.native
     object v1alpha1
       extends TopLevel[
@@ -53,11 +54,11 @@ object runMod extends js.Object {
                 typings.googleapis.runV1alpha1Mod.runV1alpha1.Run
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -85,8 +86,5 @@ object runMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

@@ -4,13 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mitt.mittStrings.Asterisk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("mitt")
 @js.native
 object mitt extends js.Object {
+  
   @js.native
   trait Emitter extends js.Object {
+    
     /**
     		 * Invoke all handlers for the given type.
     		 * If present, `"*"` handlers are invoked prior to type-matched handlers.
@@ -22,6 +24,7 @@ object mitt extends js.Object {
     		 */
     def emit(`type`: String): Unit = js.native
     def emit(`type`: String, event: js.Any): Unit = js.native
+    
     /**
     		 * Function to call in response to the given event
     		 *
@@ -32,6 +35,7 @@ object mitt extends js.Object {
     		 */
     def off(`type`: String, handler: Handler): Unit = js.native
     def off(`type`: Asterisk, handler: WildcardHandler): Unit = js.native
+    
     /**
     		 * Register an event handler for the given type.
     		 *
@@ -45,7 +49,8 @@ object mitt extends js.Object {
   }
   
   type Handler = js.Function1[/* event */ js.UndefOr[js.Any], Unit]
+  
   type MittStatic = js.Function1[/* all */ js.UndefOr[StringDictionary[js.Array[Handler]]], Emitter]
+  
   type WildcardHandler = js.Function2[/* type */ js.UndefOr[String], /* event */ js.UndefOr[js.Any], Unit]
 }
-

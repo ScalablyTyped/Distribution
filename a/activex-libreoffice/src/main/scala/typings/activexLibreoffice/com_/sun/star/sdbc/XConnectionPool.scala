@@ -5,14 +5,14 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait XConnectionPool
   extends XDriverManager
      with XDriverAccess
-
 object XConnectionPool {
+  
   @scala.inline
   def apply(
     LoginTimeout: Double,
@@ -29,4 +29,3 @@ object XConnectionPool {
     __obj.asInstanceOf[XConnectionPool]
   }
 }
-

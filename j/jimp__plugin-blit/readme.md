@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-blit
 
-Typings are for version 0.14.0
+Typings are for version 0.16.1
 
 ## Library description:
 Blit an image.
@@ -10,9 +10,9 @@ Blit an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-blit |
 | Keywords           | - |
-| # releases         | 70 |
+| # releases         | 103 |
 | # dependents       | 1 |
-| # downloads        | 14412249 |
+| # downloads        | 32997253 |
 | # stars            | 0 |
 
 ## Links

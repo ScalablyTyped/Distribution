@@ -12,7 +12,7 @@ A low-level Symbol-based API for defining common collection behaviors.
 | Keywords           | - |
 | # releases         | 15 |
 | # dependents       | 9 |
-| # downloads        | 22562 |
+| # downloads        | 29613 |
 | # stars            | 0 |
 
 ## Links

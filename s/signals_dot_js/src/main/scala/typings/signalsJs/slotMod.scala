@@ -4,11 +4,12 @@ import typings.signalsJs.ioncesignalMod.IOnceSignal
 import typings.signalsJs.islotMod.ISlot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("signals.js/lib/org/osflash/signals/Slot", JSImport.Namespace)
 @js.native
 object slotMod extends js.Object {
+  
   @js.native
   class Slot protected () extends ISlot {
     /**
@@ -26,14 +27,19 @@ object slotMod extends js.Object {
     def this(listener: js.Function, signal: IOnceSignal, once: Boolean) = this()
     def this(listener: js.Function, signal: IOnceSignal, once: js.UndefOr[scala.Nothing], priority: Double) = this()
     def this(listener: js.Function, signal: IOnceSignal, once: Boolean, priority: Double) = this()
+    
     var _enabled: Boolean = js.native
+    
     var _listener: js.Function = js.native
+    
     var _once: Boolean = js.native
+    
     var _params: js.Array[_] = js.native
+    
     var _priority: Double = js.native
+    
     var _signal: IOnceSignal = js.native
+    
     /* protected */ def verifyListener(listener: js.Function): Unit = js.native
   }
-  
 }
-

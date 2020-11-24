@@ -3,10 +3,11 @@ package typings.uniApp
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Uni extends js.Object {
+  
   /**
     * 触发自定义事件，附加的参数会传递给事件监听器。
     *
@@ -20,6 +21,7 @@ trait Uni extends js.Object {
   def $emit(eventName: String): Unit = js.native
   @JSName("$emit")
   def $emit(eventName: String, param: js.Any): Unit = js.native
+  
   /**
     * 移除自定义事件监听器。如果没有指定事件名，则移除所有事件监听器。如果提供事件名，则移除该事件的所有监听器。如果提供了事件名和回调，则只移除这个回调的监听器。
     *
@@ -37,6 +39,7 @@ trait Uni extends js.Object {
   def $off(eventName: js.Array[_]): Unit = js.native
   @JSName("$off")
   def $off(eventName: js.Array[_], callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * 监听自定义事件。事件可以由 uni.$emit 触发。回调函数会接收 uni.$emit 传递的参数。
     *
@@ -50,6 +53,7 @@ trait Uni extends js.Object {
   def $on(eventName: String): Unit = js.native
   @JSName("$on")
   def $on(eventName: String, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * 监听一个自定义事件。事件只触发一次，在第一次触发之后移除事件监听器。
     *
@@ -63,6 +67,7 @@ trait Uni extends js.Object {
   def $once(eventName: String): Unit = js.native
   @JSName("$once")
   def $once(eventName: String, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * 手机通讯录联系人和联系方式的增加
     *
@@ -70,6 +75,7 @@ trait Uni extends js.Object {
     */
   def addPhoneContact(): Unit = js.native
   def addPhoneContact(options: AddPhoneContactOptions): Unit = js.native
+  
   /**
     * 将 ArrayBuffer 对象转成 Base64 字符串
     *
@@ -77,6 +83,7 @@ trait Uni extends js.Object {
     */
   def arrayBufferToBase64(): String = js.native
   def arrayBufferToBase64(arrayBuffer: ArrayBuffer): String = js.native
+  
   /**
     * 提前向用户发起授权请求
     *
@@ -84,6 +91,7 @@ trait Uni extends js.Object {
     */
   def authorize(): Unit = js.native
   def authorize(options: AuthorizeOptions): Unit = js.native
+  
   /**
     * 将 Base64 字符串转成 ArrayBuffer 对象
     *
@@ -91,6 +99,7 @@ trait Uni extends js.Object {
     */
   def base64ToArrayBuffer(): ArrayBuffer = js.native
   def base64ToArrayBuffer(base64: String): ArrayBuffer = js.native
+  
   /**
     * 判断uni-app的API，回调，参数，组件等是否在当前版本可用
     *
@@ -98,6 +107,7 @@ trait Uni extends js.Object {
     */
   def canIUse(): Boolean = js.native
   def canIUse(options: String): Boolean = js.native
+  
   /**
     * 描述 canvas 区域隐含的像素数据
     *
@@ -105,6 +115,7 @@ trait Uni extends js.Object {
     */
   def canvasGetImageData(): Unit = js.native
   def canvasGetImageData(options: CanvasGetImageDataOptions): Unit = js.native
+  
   /**
     * 将像素数据绘制到画布
     *
@@ -112,6 +123,7 @@ trait Uni extends js.Object {
     */
   def canvasPutImageData(): Unit = js.native
   def canvasPutImageData(options: CanvasPutImageDataOptions): Unit = js.native
+  
   /**
     * 把当前画布指定区域的内容导出生成指定大小的图片
     *
@@ -119,6 +131,7 @@ trait Uni extends js.Object {
     */
   def canvasToTempFilePath(): Unit = js.native
   def canvasToTempFilePath(options: CanvasToTempFilePathOptions): Unit = js.native
+  
   /**
     * 登录
     *
@@ -126,6 +139,7 @@ trait Uni extends js.Object {
     */
   def checkSession(): Unit = js.native
   def checkSession(options: CheckSessionOptions): Unit = js.native
+  
   /**
     * 获取用户收货地址。调起用户编辑收货地址原生界面，并在编辑完成后返回用户选择的地址，需要用户授权 scope.address
     *
@@ -133,6 +147,7 @@ trait Uni extends js.Object {
     */
   def chooseAddress(): Unit = js.native
   def chooseAddress(options: ChooseAddressOptions): Unit = js.native
+  
   /**
     * 从本地相册选择图片或使用相机拍照
     *
@@ -140,6 +155,7 @@ trait Uni extends js.Object {
     */
   def chooseImage(): Unit = js.native
   def chooseImage(options: ChooseImageOptions): Unit = js.native
+  
   /**
     * 选择用户的发票抬头，需要用户授权 scope.invoiceTitle
     *
@@ -147,6 +163,7 @@ trait Uni extends js.Object {
     */
   def chooseInvoiceTitle(): Unit = js.native
   def chooseInvoiceTitle(options: ChooseInvoiceTitleOptions): Unit = js.native
+  
   /**
     * 打开地图选择位置。
     *
@@ -154,6 +171,7 @@ trait Uni extends js.Object {
     */
   def chooseLocation(): Unit = js.native
   def chooseLocation(options: ChooseLocationOptions): Unit = js.native
+  
   /**
     * 拍摄视频或从手机相册中选视频，返回视频的临时文件路径。
     *
@@ -161,18 +179,21 @@ trait Uni extends js.Object {
     */
   def chooseVideo(): Unit = js.native
   def chooseVideo(options: ChooseVideoOptions): Unit = js.native
+  
   /**
     * 清理本地数据缓存
     *
     * 参考: [http://uniapp.dcloud.io/api/storage/storage?id=clearstorage](http://uniapp.dcloud.io/api/storage/storage?id=clearstorage)
     */
   def clearStorage(): Unit = js.native
+  
   /**
     * 同步清理本地数据缓存
     *
     * 参考: [http://uniapp.dcloud.io/api/storage/storage?id=clearstoragesync](http://uniapp.dcloud.io/api/storage/storage?id=clearstoragesync)
     */
   def clearStorageSync(): Unit = js.native
+  
   /**
     * 断开与低功耗蓝牙设备的连接
     *
@@ -180,6 +201,7 @@ trait Uni extends js.Object {
     */
   def closeBLEConnection(): Unit = js.native
   def closeBLEConnection(options: CloseBLEConnectionOptions): Unit = js.native
+  
   /**
     * 关闭蓝牙模块
     *
@@ -187,6 +209,7 @@ trait Uni extends js.Object {
     */
   def closeBluetoothAdapter(): Unit = js.native
   def closeBluetoothAdapter(options: CloseBluetoothAdapterOptions): Unit = js.native
+  
   /**
     * 关闭 WebSocket 连接
     *
@@ -194,6 +217,7 @@ trait Uni extends js.Object {
     */
   def closeSocket(): Unit = js.native
   def closeSocket(options: CloseSocketOptions): Unit = js.native
+  
   /**
     * 压缩图片
     *
@@ -201,6 +225,7 @@ trait Uni extends js.Object {
     */
   def compressImage(): Unit = js.native
   def compressImage(options: CompressImageOptions): Unit = js.native
+  
   /**
     * 创建一个 WebSocket 连接
     *
@@ -208,6 +233,7 @@ trait Uni extends js.Object {
     */
   def connectSocket(): SocketTask = js.native
   def connectSocket(options: ConnectSocketOption): SocketTask = js.native
+  
   /**
     * 创建一个动画实例
     *
@@ -215,6 +241,7 @@ trait Uni extends js.Object {
     */
   def createAnimation(): Animation = js.native
   def createAnimation(options: CreateAnimationOptions): Animation = js.native
+  
   /**
     * 连接低功耗蓝牙设备
     *
@@ -222,12 +249,14 @@ trait Uni extends js.Object {
     */
   def createBLEConnection(): Unit = js.native
   def createBLEConnection(options: CreateBLEConnectionOptions): Unit = js.native
+  
   /**
     * 创建并返回 camera 组件的上下文 cameraContext 对象
     *
     * 参考: [http://uniapp.dcloud.io/api/media/camera-context](http://uniapp.dcloud.io/api/media/camera-context)
     */
   def createCameraContext(): CameraContext = js.native
+  
   /**
     * 创建 canvas 绘图上下文
     *
@@ -237,12 +266,14 @@ trait Uni extends js.Object {
   def createCanvasContext(canvasId: js.UndefOr[scala.Nothing], componentInstance: js.Any): CanvasContext = js.native
   def createCanvasContext(canvasId: String): CanvasContext = js.native
   def createCanvasContext(canvasId: String, componentInstance: js.Any): CanvasContext = js.native
+  
   /**
     * 创建并返回 audio 上下文 audioContext 对象
     *
     * 参考: [http://uniapp.dcloud.io/api/media/audio-context?id=createinneraudiocontext](http://uniapp.dcloud.io/api/media/audio-context?id=createinneraudiocontext)
     */
   def createInnerAudioContext(): CreateInnerAudioContext = js.native
+  
   /**
     * 创建并返回一个 IntersectionObserver 对象实例
     *
@@ -250,6 +281,7 @@ trait Uni extends js.Object {
     */
   def createIntersectionObserver(): IntersectionObserver = js.native
   def createIntersectionObserver(options: CreateIntersectionObserverOptions): IntersectionObserver = js.native
+  
   /**
     * 创建并返回 map 上下文 mapContext 对象
     *
@@ -259,12 +291,14 @@ trait Uni extends js.Object {
   def createMapContext(mapId: js.UndefOr[scala.Nothing], currentComponent: js.Any): MapContext = js.native
   def createMapContext(mapId: String): MapContext = js.native
   def createMapContext(mapId: String, currentComponent: js.Any): MapContext = js.native
+  
   /**
     * 返回一个SelectorQuery对象实例
     *
     * 参考: [http://uniapp.dcloud.io/api/ui/nodes-info?id=createselectorquery](http://uniapp.dcloud.io/api/ui/nodes-info?id=createselectorquery)
     */
   def createSelectorQuery(): SelectorQuery = js.native
+  
   /**
     * 创建并返回 video 上下文 videoContext 对象
     *
@@ -274,6 +308,7 @@ trait Uni extends js.Object {
   def createVideoContext(videoId: js.UndefOr[scala.Nothing], currentComponent: js.Any): VideoContext = js.native
   def createVideoContext(videoId: String): VideoContext = js.native
   def createVideoContext(videoId: String, currentComponent: js.Any): VideoContext = js.native
+  
   /**
     * 下载文件
     *
@@ -281,6 +316,7 @@ trait Uni extends js.Object {
     */
   def downloadFile(): DownloadTask = js.native
   def downloadFile(options: DownloadFileOption): DownloadTask = js.native
+  
   /**
     * 获取蓝牙设备指定服务中所有特征值
     *
@@ -288,6 +324,7 @@ trait Uni extends js.Object {
     */
   def getBLEDeviceCharacteristics(): Unit = js.native
   def getBLEDeviceCharacteristics(options: GetBLEDeviceCharacteristicsOptions): Unit = js.native
+  
   /**
     * 获取蓝牙设备的所有服务
     *
@@ -295,12 +332,14 @@ trait Uni extends js.Object {
     */
   def getBLEDeviceServices(): Unit = js.native
   def getBLEDeviceServices(options: GetBLEDeviceServicesOptions): Unit = js.native
+  
   /**
     * 获取全局唯一的背景音频管理器 backgroundAudioManager
     *
     * 参考: [http://uniapp.dcloud.io/api/media/background-audio-manager?id=getbackgroundaudiomanager](http://uniapp.dcloud.io/api/media/background-audio-manager?id=getbackgroundaudiomanager)
     */
   def getBackgroundAudioManager(): BackgroundAudioManager = js.native
+  
   /**
     * 获取已搜索到的iBeacon设备
     *
@@ -308,6 +347,7 @@ trait Uni extends js.Object {
     */
   def getBeacons(): Unit = js.native
   def getBeacons(options: GetBeaconsOptions): Unit = js.native
+  
   /**
     * 获取本机蓝牙适配器状态
     *
@@ -315,6 +355,7 @@ trait Uni extends js.Object {
     */
   def getBluetoothAdapterState(): Unit = js.native
   def getBluetoothAdapterState(options: GetBluetoothAdapterStateOptions): Unit = js.native
+  
   /**
     * 获取已搜索到的蓝牙设备
     *
@@ -322,6 +363,7 @@ trait Uni extends js.Object {
     */
   def getBluetoothDevices(): Unit = js.native
   def getBluetoothDevices(options: GetBluetoothDevicesOptions): Unit = js.native
+  
   /**
     * 获得系统剪贴板的内容
     *
@@ -329,6 +371,7 @@ trait Uni extends js.Object {
     */
   def getClipboardData(): Unit = js.native
   def getClipboardData(options: GetClipboardDataOptions): Unit = js.native
+  
   /**
     * 根据uuid获取处于已连接的设备
     *
@@ -336,12 +379,14 @@ trait Uni extends js.Object {
     */
   def getConnectedBluetoothDevices(): Unit = js.native
   def getConnectedBluetoothDevices(options: GetConnectedBluetoothDevicesOptions): Unit = js.native
+  
   /**
     * 获取当前 subNVues 原生子窗体的实例
     *
     * 参考: [http://uniapp.dcloud.io/api/window/subNVues?id=app-getsubnvuebyid](http://uniapp.dcloud.io/api/window/subNVues?id=app-getsubnvuebyid)
     */
   def getCurrentSubNVue(): SubNVue = js.native
+  
   /**
     * 获取第三方平台自定义的数据字段
     *
@@ -349,17 +394,20 @@ trait Uni extends js.Object {
     */
   def getExtConfig(): GetExtConfigRes = js.native
   def getExtConfig(options: GetExtConfigOptions): GetExtConfigRes = js.native
+  
   /**
     * uni.getExtConfig() 的同步版本
     *
     * 参考: [http://uniapp.dcloud.io/api/other/get-extconfig?id=getextconfigsync](http://uniapp.dcloud.io/api/other/get-extconfig?id=getextconfigsync)
     */
   def getExtConfigSync(): GetExtConfigSyncRes = js.native
+  
   /**
     * 获取文件信息
     */
   def getFileInfo(): Unit = js.native
   def getFileInfo(options: GetFileInfoOptions): Unit = js.native
+  
   /**
     * 预览图片
     *
@@ -367,6 +415,7 @@ trait Uni extends js.Object {
     */
   def getImageInfo(): Unit = js.native
   def getImageInfo(options: GetImageInfoOptions): Unit = js.native
+  
   /**
     * 获取当前的地理位置、速度
     *
@@ -374,12 +423,14 @@ trait Uni extends js.Object {
     */
   def getLocation(): Unit = js.native
   def getLocation(options: GetLocationOptions): Unit = js.native
+  
   /**
     * 获取小程序下该菜单按钮的布局位置信息
     *
     * 参考: [http://uniapp.dcloud.io/api/ui/menuButton?id=getmenubuttonboundingclientrect](http://uniapp.dcloud.io/api/ui/menuButton?id=getmenubuttonboundingclientrect)
     */
   def getMenuButtonBoundingClientRect(): GetMenuButtonBoundingClientRectRes = js.native
+  
   /**
     * 获取网络类型
     *
@@ -387,6 +438,7 @@ trait Uni extends js.Object {
     */
   def getNetworkType(): Unit = js.native
   def getNetworkType(options: GetNetworkTypeOptions): Unit = js.native
+  
   /**
     * 获取服务供应商
     *
@@ -394,12 +446,14 @@ trait Uni extends js.Object {
     */
   def getProvider(): Unit = js.native
   def getProvider(options: GetProviderOptions): Unit = js.native
+  
   /**
     * 录音管理
     *
     * 参考: [http://uniapp.dcloud.io/api/media/record-manager?id=getrecordermanager](http://uniapp.dcloud.io/api/media/record-manager?id=getrecordermanager)
     */
   def getRecorderManager(): RecorderManager = js.native
+  
   /**
     * 获取本地文件的文件信息
     *
@@ -407,6 +461,7 @@ trait Uni extends js.Object {
     */
   def getSavedFileInfo(): Unit = js.native
   def getSavedFileInfo(options: GetSavedFileInfoOptions): Unit = js.native
+  
   /**
     * 获取本地已保存的文件列表
     *
@@ -414,6 +469,7 @@ trait Uni extends js.Object {
     */
   def getSavedFileList(): Unit = js.native
   def getSavedFileList(options: GetSavedFileListOptions): Unit = js.native
+  
   /**
     * 获取屏幕亮度
     *
@@ -421,6 +477,7 @@ trait Uni extends js.Object {
     */
   def getScreenBrightness(): Unit = js.native
   def getScreenBrightness(options: GetScreenBrightnessOptions): Unit = js.native
+  
   /**
     * 获取用户的当前设置
     *
@@ -428,6 +485,7 @@ trait Uni extends js.Object {
     */
   def getSetting(): Unit = js.native
   def getSetting(options: GetSettingOptions): Unit = js.native
+  
   /**
     * 从本地缓存中异步获取指定 key 对应的内容
     *
@@ -435,6 +493,7 @@ trait Uni extends js.Object {
     */
   def getStorage(): Unit = js.native
   def getStorage(options: GetStorageOptions): Unit = js.native
+  
   /**
     * 异步获取当前 storage 的相关信息
     *
@@ -442,12 +501,14 @@ trait Uni extends js.Object {
     */
   def getStorageInfo(): Unit = js.native
   def getStorageInfo(options: GetStorageInfoOptions): Unit = js.native
+  
   /**
     * 同步获取当前 storage 的相关信息
     *
     * 参考: [http://uniapp.dcloud.io/api/storage/storage?id=getstorageinfosync](http://uniapp.dcloud.io/api/storage/storage?id=getstorageinfosync)
     */
   def getStorageInfoSync(): GetStorageInfoSuccess = js.native
+  
   /**
     * 从本地缓存中同步获取指定 key 对应的内容
     *
@@ -455,6 +516,7 @@ trait Uni extends js.Object {
     */
   def getStorageSync(): js.Any = js.native
   def getStorageSync(key: String): js.Any = js.native
+  
   /**
     * 通过id 获取 subNVues 原生子窗体的实例
     *
@@ -462,6 +524,7 @@ trait Uni extends js.Object {
     */
   def getSubNVueById(): SubNVue = js.native
   def getSubNVueById(subNvueId: String): SubNVue = js.native
+  
   /**
     * 异步获取系统信息
     *
@@ -469,18 +532,21 @@ trait Uni extends js.Object {
     */
   def getSystemInfo(): Unit = js.native
   def getSystemInfo(options: GetSystemInfoOptions): Unit = js.native
+  
   /**
     * 同步获取系统信息
     *
     * 参考: [http://uniapp.dcloud.io/api/system/info?id=getsysteminfosync](http://uniapp.dcloud.io/api/system/info?id=getsysteminfosync)
     */
   def getSystemInfoSync(): GetSystemInfoResult = js.native
+  
   /**
     * 返回全局唯一的版本更新管理器对象： updateManager，用于管理小程序更新
     *
     * 参考: [http://uniapp.dcloud.io/api/other/update?id=getupdatemanager](http://uniapp.dcloud.io/api/other/update?id=getupdatemanager)
     */
   def getUpdateManager(): UpdateManager = js.native
+  
   /**
     * 获取用户信息
     *
@@ -488,24 +554,28 @@ trait Uni extends js.Object {
     */
   def getUserInfo(): Unit = js.native
   def getUserInfo(options: GetUserInfoOptions): Unit = js.native
+  
   /**
     * 隐藏软键盘
     *
     * 参考: [http://uniapp.dcloud.io/api/key?id=hidekeyboard](http://uniapp.dcloud.io/api/key?id=hidekeyboard)
     */
   def hideKeyboard(): Unit = js.native
+  
   /**
     * 隐藏 loading 提示框
     *
     * 参考: [http://uniapp.dcloud.io/api/ui/prompt?id=hideloading](http://uniapp.dcloud.io/api/ui/prompt?id=hideloading)
     */
   def hideLoading(): Unit = js.native
+  
   /**
     * 隐藏导航条加载动画
     *
     * 参考: [http://uniapp.dcloud.io/api/ui/navigationbar?id=hidenavigationbarloading](http://uniapp.dcloud.io/api/ui/navigationbar?id=hidenavigationbarloading)
     */
   def hideNavigationBarLoading(): Unit = js.native
+  
   /**
     * 隐藏分享按钮
     *
@@ -513,6 +583,7 @@ trait Uni extends js.Object {
     */
   def hideShareMenu(): Unit = js.native
   def hideShareMenu(options: HideShareMenuOptions): Unit = js.native
+  
   /**
     * 隐藏 tabBar
     *
@@ -520,6 +591,7 @@ trait Uni extends js.Object {
     */
   def hideTabBar(): Unit = js.native
   def hideTabBar(options: HideTabBarOptions): Unit = js.native
+  
   /**
     * 隐藏 tabBar 某一项的右上角的红点
     *
@@ -527,12 +599,14 @@ trait Uni extends js.Object {
     */
   def hideTabBarRedDot(): Unit = js.native
   def hideTabBarRedDot(options: HideTabBarRedDotOptions): Unit = js.native
+  
   /**
     * 隐藏消息提示框
     *
     * 参考: [http://uniapp.dcloud.io/api/ui/prompt?id=hidetoast](http://uniapp.dcloud.io/api/ui/prompt?id=hidetoast)
     */
   def hideToast(): Unit = js.native
+  
   /**
     * 动态加载网络字体
     *
@@ -540,6 +614,7 @@ trait Uni extends js.Object {
     */
   def loadFontFace(): Unit = js.native
   def loadFontFace(options: LoadFontFaceOptions): Unit = js.native
+  
   /**
     * 登录
     *
@@ -547,6 +622,7 @@ trait Uni extends js.Object {
     */
   def login(): Unit = js.native
   def login(options: LoginOptions): Unit = js.native
+  
   /**
     * 拨打电话
     *
@@ -554,6 +630,7 @@ trait Uni extends js.Object {
     */
   def makePhoneCall(): Unit = js.native
   def makePhoneCall(options: MakePhoneCallOptions): Unit = js.native
+  
   /**
     * 关闭当前页面，返回上一页面或多级页面
     *
@@ -561,6 +638,7 @@ trait Uni extends js.Object {
     */
   def navigateBack(): Unit = js.native
   def navigateBack(options: NavigateBackOptions): Unit = js.native
+  
   /**
     * 跳转回上一个小程序，只有当另一个小程序跳转到当前小程序时才会能调用成功
     *
@@ -568,6 +646,7 @@ trait Uni extends js.Object {
     */
   def navigateBackMiniProgram(): Unit = js.native
   def navigateBackMiniProgram(options: NavigateBackMiniProgramOptions): Unit = js.native
+  
   /**
     * 保留当前页面，跳转到应用内的某个页面
     *
@@ -575,6 +654,7 @@ trait Uni extends js.Object {
     */
   def navigateTo(): Unit = js.native
   def navigateTo(options: NavigateToOptions): Unit = js.native
+  
   /**
     * 调起客户端小程序设置界面，返回用户设置的操作结果
     *
@@ -582,6 +662,7 @@ trait Uni extends js.Object {
     */
   def navigateToMiniProgram(): Unit = js.native
   def navigateToMiniProgram(options: NavigateToMiniProgramOptions): Unit = js.native
+  
   /**
     * 启用低功耗蓝牙设备特征值变化时的notify功能，订阅特征值
     *
@@ -589,6 +670,7 @@ trait Uni extends js.Object {
     */
   def notifyBLECharacteristicValueChange(): Unit = js.native
   def notifyBLECharacteristicValueChange(options: NotifyBLECharacteristicValueChangeOptions): Unit = js.native
+  
   /**
     * 取消监听窗口尺寸变化事件
     *
@@ -596,6 +678,7 @@ trait Uni extends js.Object {
     */
   def offWindowResize(): Unit = js.native
   def offWindowResize(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * 监听加速度数据，频率：5次/秒，接口调用后会自动开始监听，可使用 uni.stopAccelerometer 停止监听
     *
@@ -603,6 +686,7 @@ trait Uni extends js.Object {
     */
   def onAccelerometerChange(): Unit = js.native
   def onAccelerometerChange(callback: js.Function1[/* result */ OnAccelerometerChangeSuccess, Unit]): Unit = js.native
+  
   /**
     * 监听低功耗蓝牙设备的特征值变化事件
     *
@@ -610,6 +694,7 @@ trait Uni extends js.Object {
     */
   def onBLECharacteristicValueChange(): Unit = js.native
   def onBLECharacteristicValueChange(callback: js.Function1[/* result */ OnBLECharacteristicValueChangeSuccess, Unit]): Unit = js.native
+  
   /**
     * 监听低功耗蓝牙设备连接状态变化事件
     *
@@ -617,6 +702,7 @@ trait Uni extends js.Object {
     */
   def onBLEConnectionStateChange(): Unit = js.native
   def onBLEConnectionStateChange(callback: js.Function1[/* result */ OnBLEConnectionStateChangeSuccess, Unit]): Unit = js.native
+  
   /**
     * 监听iBeacon服务状态变化
     *
@@ -624,6 +710,7 @@ trait Uni extends js.Object {
     */
   def onBeaconServiceChange(): Unit = js.native
   def onBeaconServiceChange(callback: js.Function1[/* result */ BeaconService, Unit]): Unit = js.native
+  
   /**
     * 监听iBeacon设备更新
     *
@@ -631,6 +718,7 @@ trait Uni extends js.Object {
     */
   def onBeaconUpdate(): Unit = js.native
   def onBeaconUpdate(callback: js.Function1[/* result */ GetBeaconsRes, Unit]): Unit = js.native
+  
   /**
     * 监听蓝牙适配器状态变化事件
     *
@@ -638,6 +726,7 @@ trait Uni extends js.Object {
     */
   def onBluetoothAdapterStateChange(): Unit = js.native
   def onBluetoothAdapterStateChange(callback: js.Function1[/* result */ OnBluetoothAdapterStateChangeResult, Unit]): Unit = js.native
+  
   /**
     * 监听搜索到新设备的事件
     *
@@ -645,6 +734,7 @@ trait Uni extends js.Object {
     */
   def onBluetoothDeviceFound(): Unit = js.native
   def onBluetoothDeviceFound(callback: js.Function1[/* result */ OnBluetoothDeviceFoundResult, Unit]): Unit = js.native
+  
   /**
     * 监听罗盘数据，频率：5次/秒，接口调用后会自动开始监听，可使用uni.stopCompass停止监听
     *
@@ -652,6 +742,7 @@ trait Uni extends js.Object {
     */
   def onCompassChange(): Unit = js.native
   def onCompassChange(callback: js.Function1[/* result */ OnCompassChangeSuccess, Unit]): Unit = js.native
+  
   /**
     * 监听陀螺仪数据变化事件
     *
@@ -659,6 +750,7 @@ trait Uni extends js.Object {
     */
   def onGyroscopeChange(): Unit = js.native
   def onGyroscopeChange(callback: js.Function1[/* result */ OnGyroscopeChangeSuccess, Unit]): Unit = js.native
+  
   /**
     * 监听键盘高度变化
     *
@@ -666,6 +758,7 @@ trait Uni extends js.Object {
     */
   def onKeyboardHeightChange(): Unit = js.native
   def onKeyboardHeightChange(callback: js.Function1[/* result */ OnKeyboardHeightChangeResult, Unit]): Unit = js.native
+  
   /**
     * 监听网络状态变化
     *
@@ -673,6 +766,7 @@ trait Uni extends js.Object {
     */
   def onNetworkStatusChange(): Unit = js.native
   def onNetworkStatusChange(callback: js.Function1[/* result */ OnNetworkStatusChangeSuccess, Unit]): Unit = js.native
+  
   /**
     * 监听WebSocket关闭
     *
@@ -680,6 +774,7 @@ trait Uni extends js.Object {
     */
   def onSocketClose(): Unit = js.native
   def onSocketClose(callback: js.Function1[/* result */ GeneralCallbackResult, Unit]): Unit = js.native
+  
   /**
     * 监听WebSocket错误
     *
@@ -687,6 +782,7 @@ trait Uni extends js.Object {
     */
   def onSocketError(): Unit = js.native
   def onSocketError(callback: js.Function1[/* result */ GeneralCallbackResult, Unit]): Unit = js.native
+  
   /**
     * 监听WebSocket接受到服务器的消息事件
     *
@@ -694,6 +790,7 @@ trait Uni extends js.Object {
     */
   def onSocketMessage(): Unit = js.native
   def onSocketMessage(callback: js.Function1[/* result */ OnSocketMessageCallbackResult, Unit]): Unit = js.native
+  
   /**
     * 监听WebSocket连接打开事件
     *
@@ -701,6 +798,7 @@ trait Uni extends js.Object {
     */
   def onSocketOpen(): Unit = js.native
   def onSocketOpen(options: js.Function1[/* result */ OnSocketOpenCallbackResult, Unit]): Unit = js.native
+  
   /**
     * 监听中间按钮的点击事件
     *
@@ -708,6 +806,7 @@ trait Uni extends js.Object {
     */
   def onTabBarMidButtonTap(): Unit = js.native
   def onTabBarMidButtonTap(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * 监听窗口尺寸变化事件
     *
@@ -715,6 +814,7 @@ trait Uni extends js.Object {
     */
   def onWindowResize(): Unit = js.native
   def onWindowResize(callback: js.Function1[/* result */ WindowResizeResult, Unit]): Unit = js.native
+  
   /**
     * 初始化蓝牙模块
     *
@@ -722,6 +822,7 @@ trait Uni extends js.Object {
     */
   def openBluetoothAdapter(): Unit = js.native
   def openBluetoothAdapter(options: OpenBluetoothAdapterOptions): Unit = js.native
+  
   /**
     * 新开页面打开文档，支持格式：doc, xls, ppt, pdf, docx, xlsx, pptx
     *
@@ -729,6 +830,7 @@ trait Uni extends js.Object {
     */
   def openDocument(): Unit = js.native
   def openDocument(options: OpenDocumentOptions): Unit = js.native
+  
   /**
     * 使用地图查看位置
     *
@@ -736,6 +838,7 @@ trait Uni extends js.Object {
     */
   def openLocation(): Unit = js.native
   def openLocation(options: OpenLocationOptions): Unit = js.native
+  
   /**
     * 调起客户端小程序设置界面，返回用户设置的操作结果
     *
@@ -743,6 +846,7 @@ trait Uni extends js.Object {
     */
   def openSetting(): Unit = js.native
   def openSetting(options: OpenSettingOptions): Unit = js.native
+  
   /**
     * 将页面滚动到目标位置
     *
@@ -750,6 +854,7 @@ trait Uni extends js.Object {
     */
   def pageScrollTo(): Unit = js.native
   def pageScrollTo(options: PageScrollToOptions): Unit = js.native
+  
   /**
     * 预览图片
     *
@@ -757,6 +862,7 @@ trait Uni extends js.Object {
     */
   def previewImage(): Unit = js.native
   def previewImage(options: PreviewImageOptions): Unit = js.native
+  
   /**
     * 关闭所有页面，打开到应用内的某个页面
     *
@@ -764,6 +870,7 @@ trait Uni extends js.Object {
     */
   def reLaunch(): Unit = js.native
   def reLaunch(options: ReLaunchOptions): Unit = js.native
+  
   /**
     * 读取低功耗蓝牙设备指定特征值的二进制数据值
     *
@@ -771,6 +878,7 @@ trait Uni extends js.Object {
     */
   def readBLECharacteristicValue(): Unit = js.native
   def readBLECharacteristicValue(options: ReadBLECharacteristicValueOptions): Unit = js.native
+  
   /**
     * 关闭当前页面，跳转到应用内的某个页面
     *
@@ -778,6 +886,7 @@ trait Uni extends js.Object {
     */
   def redirectTo(): Unit = js.native
   def redirectTo(options: RedirectToOptions): Unit = js.native
+  
   /**
     * 删除本地存储的文件
     *
@@ -785,6 +894,7 @@ trait Uni extends js.Object {
     */
   def removeSavedFile(): Unit = js.native
   def removeSavedFile(options: RemoveSavedFileOptions): Unit = js.native
+  
   /**
     * 从本地缓存中异步移除指定 key
     *
@@ -792,6 +902,7 @@ trait Uni extends js.Object {
     */
   def removeStorage(): Unit = js.native
   def removeStorage(options: RemoveStorageOptions): Unit = js.native
+  
   /**
     * 从本地缓存中同步移除指定 key
     *
@@ -799,6 +910,7 @@ trait Uni extends js.Object {
     */
   def removeStorageSync(): Unit = js.native
   def removeStorageSync(key: String): Unit = js.native
+  
   /**
     * 移除 tabBar 某一项右上角的文本
     *
@@ -806,6 +918,7 @@ trait Uni extends js.Object {
     */
   def removeTabBarBadge(): Unit = js.native
   def removeTabBarBadge(options: RemoveTabBarBadgeOptions): Unit = js.native
+  
   /**
     * 发起网络请求
     *
@@ -813,6 +926,7 @@ trait Uni extends js.Object {
     */
   def request(): RequestTask = js.native
   def request(options: RequestOptions): RequestTask = js.native
+  
   /**
     * 支付
     *
@@ -820,6 +934,7 @@ trait Uni extends js.Object {
     */
   def requestPayment(): Unit = js.native
   def requestPayment(options: RequestPaymentOptions): Unit = js.native
+  
   /**
     * 导入原生插件
     *
@@ -827,6 +942,7 @@ trait Uni extends js.Object {
     */
   def requireNativePlugin(): Unit = js.native
   def requireNativePlugin(moduleName: String): Unit = js.native
+  
   /**
     * 保存文件到本地
     *
@@ -834,6 +950,7 @@ trait Uni extends js.Object {
     */
   def saveFile(): Unit = js.native
   def saveFile(options: SaveFileOptions): Unit = js.native
+  
   /**
     * 保存图片到系统相册
     *
@@ -841,6 +958,7 @@ trait Uni extends js.Object {
     */
   def saveImageToPhotosAlbum(): Unit = js.native
   def saveImageToPhotosAlbum(options: SaveImageToPhotosAlbumOptions): Unit = js.native
+  
   /**
     * 保存视频到系统相册
     *
@@ -848,6 +966,7 @@ trait Uni extends js.Object {
     */
   def saveVideoToPhotosAlbum(): Unit = js.native
   def saveVideoToPhotosAlbum(options: SaveVideoToPhotosAlbumOptions): Unit = js.native
+  
   /**
     * 调用扫码界面，扫码成功后返回对应的结果
     *
@@ -855,6 +974,7 @@ trait Uni extends js.Object {
     */
   def scanCode(): Unit = js.native
   def scanCode(options: ScanCodeOptions): Unit = js.native
+  
   /**
     * 通过 WebSocket 连接发送数据
     *
@@ -862,6 +982,7 @@ trait Uni extends js.Object {
     */
   def sendSocketMessage(): Unit = js.native
   def sendSocketMessage(options: SendSocketMessageOptions): Unit = js.native
+  
   /**
     * 动态设置窗口的背景色
     *
@@ -869,6 +990,7 @@ trait Uni extends js.Object {
     */
   def setBackgroundColor(): Unit = js.native
   def setBackgroundColor(options: SetBackgroundColorOptions): Unit = js.native
+  
   /**
     * 动态设置窗口的背景色
     *
@@ -876,6 +998,7 @@ trait Uni extends js.Object {
     */
   def setBackgroundTextStyle(): Unit = js.native
   def setBackgroundTextStyle(options: SetBackgroundTextStyleOptions): Unit = js.native
+  
   /**
     * 设置系统剪贴板的内容
     *
@@ -883,6 +1006,7 @@ trait Uni extends js.Object {
     */
   def setClipboardData(): Unit = js.native
   def setClipboardData(options: SetClipboardDataOptions): Unit = js.native
+  
   /**
     * 设置是否打开调试开关。此开关对正式版也能生效
     *
@@ -890,6 +1014,7 @@ trait Uni extends js.Object {
     */
   def setEnableDebug(): Unit = js.native
   def setEnableDebug(options: SetEnableDebugOptions): Unit = js.native
+  
   /**
     * 设置是否保持常亮状态
     *
@@ -897,6 +1022,7 @@ trait Uni extends js.Object {
     */
   def setKeepScreenOn(): Unit = js.native
   def setKeepScreenOn(options: SetKeepScreenOnOptions): Unit = js.native
+  
   /**
     * 设置导航条颜色
     *
@@ -904,6 +1030,7 @@ trait Uni extends js.Object {
     */
   def setNavigationBarColor(): Unit = js.native
   def setNavigationBarColor(options: SetNavigationbarColorOptions): Unit = js.native
+  
   /**
     * 动态设置当前页面的标题
     *
@@ -911,6 +1038,7 @@ trait Uni extends js.Object {
     */
   def setNavigationBarTitle(): Unit = js.native
   def setNavigationBarTitle(options: SetNavigationBarTitleOptions): Unit = js.native
+  
   /**
     * 设置屏幕亮度
     *
@@ -918,6 +1046,7 @@ trait Uni extends js.Object {
     */
   def setScreenBrightness(): Unit = js.native
   def setScreenBrightness(options: SetScreenBrightnessOptions): Unit = js.native
+  
   /**
     * 将数据存储在本地缓存中指定的 key 中，会覆盖掉原来该 key 对应的内容，这是一个异步接口
     *
@@ -925,6 +1054,7 @@ trait Uni extends js.Object {
     */
   def setStorage(): Unit = js.native
   def setStorage(options: SetStorageOptions): Unit = js.native
+  
   /**
     * 将 data 存储在本地缓存中指定的 key 中，会覆盖掉原来该 key 对应的内容，这是一个同步接口
     *
@@ -934,6 +1064,7 @@ trait Uni extends js.Object {
   def setStorageSync(key: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def setStorageSync(key: String): Unit = js.native
   def setStorageSync(key: String, value: js.Any): Unit = js.native
+  
   /**
     * 为 tabBar 某一项的右上角添加文本
     *
@@ -941,6 +1072,7 @@ trait Uni extends js.Object {
     */
   def setTabBarBadge(): Unit = js.native
   def setTabBarBadge(options: SetTabBarBadgeOptions): Unit = js.native
+  
   /**
     * 动态设置 tabBar 某一项的内容
     *
@@ -948,6 +1080,7 @@ trait Uni extends js.Object {
     */
   def setTabBarItem(): Unit = js.native
   def setTabBarItem(options: SetTabBarItemOptions): Unit = js.native
+  
   /**
     * 动态设置 tabBar 的整体样式
     *
@@ -955,6 +1088,7 @@ trait Uni extends js.Object {
     */
   def setTabBarStyle(): Unit = js.native
   def setTabBarStyle(options: SetTabBarStyleOptions): Unit = js.native
+  
   /**
     * 分享
     *
@@ -962,6 +1096,7 @@ trait Uni extends js.Object {
     */
   def share(): Unit = js.native
   def share(options: ShareOptions): Unit = js.native
+  
   /**
     * 显示操作菜单
     *
@@ -969,6 +1104,7 @@ trait Uni extends js.Object {
     */
   def showActionSheet(): Unit = js.native
   def showActionSheet(options: ShowActionSheetOptions): Unit = js.native
+  
   /**
     * 显示 loading 提示框
     *
@@ -976,6 +1112,7 @@ trait Uni extends js.Object {
     */
   def showLoading(): Unit = js.native
   def showLoading(options: ShowLoadingOptions): Unit = js.native
+  
   /**
     * 显示模态弹窗
     *
@@ -983,12 +1120,14 @@ trait Uni extends js.Object {
     */
   def showModal(): Unit = js.native
   def showModal(options: ShowModalOptions): Unit = js.native
+  
   /**
     * 在当前页面显示导航条加载动画
     *
     * 参考: [http://uniapp.dcloud.io/api/ui/navigationbar?id=shownavigationbarloading](http://uniapp.dcloud.io/api/ui/navigationbar?id=shownavigationbarloading)
     */
   def showNavigationBarLoading(): Unit = js.native
+  
   /**
     * 显示 tabBar
     *
@@ -996,6 +1135,7 @@ trait Uni extends js.Object {
     */
   def showTabBar(): Unit = js.native
   def showTabBar(options: ShowTabBarOptions): Unit = js.native
+  
   /**
     * 显示 tabBar 某一项的右上角的红点
     *
@@ -1003,6 +1143,7 @@ trait Uni extends js.Object {
     */
   def showTabBarRedDot(): Unit = js.native
   def showTabBarRedDot(options: ShowTabBarRedDotOptions): Unit = js.native
+  
   /**
     * 显示消息提示框
     *
@@ -1010,6 +1151,7 @@ trait Uni extends js.Object {
     */
   def showToast(): Unit = js.native
   def showToast(options: ShowToastOptions): Unit = js.native
+  
   /**
     * 开始监听加速度数据
     *
@@ -1017,6 +1159,7 @@ trait Uni extends js.Object {
     */
   def startAccelerometer(): Unit = js.native
   def startAccelerometer(options: StartAccelerometerOptions): Unit = js.native
+  
   /**
     * 开始搜索附近的iBeacon设备
     *
@@ -1024,6 +1167,7 @@ trait Uni extends js.Object {
     */
   def startBeaconDiscovery(): Unit = js.native
   def startBeaconDiscovery(options: StartBeaconDiscoveryOptions): Unit = js.native
+  
   /**
     * 开始搜索附近的蓝牙设备
     *
@@ -1031,6 +1175,7 @@ trait Uni extends js.Object {
     */
   def startBluetoothDevicesDiscovery(): Unit = js.native
   def startBluetoothDevicesDiscovery(options: StartBluetoothDevicesDiscoveryOptions): Unit = js.native
+  
   /**
     * 开始监听罗盘数据
     *
@@ -1038,6 +1183,7 @@ trait Uni extends js.Object {
     */
   def startCompass(): Unit = js.native
   def startCompass(options: StartCompassOptions): Unit = js.native
+  
   /**
     * 开始监听陀螺仪数据
     *
@@ -1045,6 +1191,7 @@ trait Uni extends js.Object {
     */
   def startGyroscope(): Unit = js.native
   def startGyroscope(options: StartGyroscopeOptions): Unit = js.native
+  
   /**
     * 开始下拉刷新
     *
@@ -1052,6 +1199,7 @@ trait Uni extends js.Object {
     */
   def startPullDownRefresh(): Unit = js.native
   def startPullDownRefresh(options: StartPullDownRefreshOptions): Unit = js.native
+  
   /**
     * 停止监听加速度数据
     *
@@ -1059,6 +1207,7 @@ trait Uni extends js.Object {
     */
   def stopAccelerometer(): Unit = js.native
   def stopAccelerometer(options: StopAccelerometerOptions): Unit = js.native
+  
   /**
     * 停止搜索附近的iBeacon设备
     *
@@ -1066,6 +1215,7 @@ trait Uni extends js.Object {
     */
   def stopBeaconDiscovery(): Unit = js.native
   def stopBeaconDiscovery(options: StopBeaconDiscoveryOptions): Unit = js.native
+  
   /**
     * 停止搜寻附近的蓝牙外围设备
     *
@@ -1073,6 +1223,7 @@ trait Uni extends js.Object {
     */
   def stopBluetoothDevicesDiscovery(): Unit = js.native
   def stopBluetoothDevicesDiscovery(options: StopBluetoothDevicesDiscoveryOptions): Unit = js.native
+  
   /**
     * 停止监听罗盘数据
     *
@@ -1080,6 +1231,7 @@ trait Uni extends js.Object {
     */
   def stopCompass(): Unit = js.native
   def stopCompass(options: StopCompassOptions): Unit = js.native
+  
   /**
     * 停止监听陀螺仪数据
     *
@@ -1087,12 +1239,14 @@ trait Uni extends js.Object {
     */
   def stopGyroscope(): Unit = js.native
   def stopGyroscope(options: StopGyroscopeOptions): Unit = js.native
+  
   /**
     * 停止当前页面下拉刷新
     *
     * 参考: [http://uniapp.dcloud.io/api/ui/pulldown?id=stoppulldownrefresh](http://uniapp.dcloud.io/api/ui/pulldown?id=stoppulldownrefresh)
     */
   def stopPullDownRefresh(): Unit = js.native
+  
   /**
     * 跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面
     *
@@ -1100,6 +1254,7 @@ trait Uni extends js.Object {
     */
   def switchTab(): Unit = js.native
   def switchTab(options: SwitchTabOptions): Unit = js.native
+  
   /**
     * 上传文件
     *
@@ -1107,6 +1262,7 @@ trait Uni extends js.Object {
     */
   def uploadFile(): UploadTask = js.native
   def uploadFile(options: UploadFileOption): UploadTask = js.native
+  
   /**
     * upx 换算为 px
     *
@@ -1114,6 +1270,7 @@ trait Uni extends js.Object {
     */
   def upx2px(): Double = js.native
   def upx2px(upx: Double): Double = js.native
+  
   /**
     * 使手机发生较长时间的振动（400ms）
     *
@@ -1121,6 +1278,7 @@ trait Uni extends js.Object {
     */
   def vibrateLong(): Unit = js.native
   def vibrateLong(options: VibrateLongOptions): Unit = js.native
+  
   /**
     * 使手机发生较短时间的振动（15ms）
     *
@@ -1128,6 +1286,7 @@ trait Uni extends js.Object {
     */
   def vibrateShort(): Unit = js.native
   def vibrateShort(options: VibrateShortOptions): Unit = js.native
+  
   /**
     * 向低功耗蓝牙设备指定特征值写入二进制数据
     *
@@ -1136,4 +1295,3 @@ trait Uni extends js.Object {
   def writeBLECharacteristicValue(): Unit = js.native
   def writeBLECharacteristicValue(options: WriteBLECharacteristicValueOptions): Unit = js.native
 }
-

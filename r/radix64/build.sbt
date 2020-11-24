@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "radix64"
-version := "1.1-dt-20181127Z-ae88b6"
+version := "1.1-dt-20181127Z-475c5a"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

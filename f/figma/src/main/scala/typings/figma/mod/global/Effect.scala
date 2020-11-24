@@ -6,15 +6,15 @@ import typings.figma.figmaStrings.INNER_SHADOW
 import typings.figma.figmaStrings.LAYER_BLUR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.figma.mod.global.ShadowEffect
   - typings.figma.mod.global.BlurEffect
 */
 trait Effect extends js.Object
-
 object Effect {
+  
   @scala.inline
   def ShadowEffect(
     blendMode: BlendMode,
@@ -28,6 +28,7 @@ object Effect {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Effect]
   }
+  
   @scala.inline
   def BlurEffect(radius: Double, `type`: LAYER_BLUR | BACKGROUND_BLUR, visible: Boolean): Effect = {
     val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
@@ -35,4 +36,3 @@ object Effect {
     __obj.asInstanceOf[Effect]
   }
 }
-

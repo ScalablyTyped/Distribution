@@ -2,7 +2,7 @@ package typings.cesium.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line no-unnecessary-class
 @JSImport("cesium", "GetFeatureInfoFormat")
@@ -13,4 +13,3 @@ class GetFeatureInfoFormat protected () extends js.Object {
   def this(`type`: String, format: js.UndefOr[scala.Nothing], callback: js.Function1[/* res */ js.Any, _]) = this()
   def this(`type`: String, format: String, callback: js.Function1[/* res */ js.Any, _]) = this()
 }
-

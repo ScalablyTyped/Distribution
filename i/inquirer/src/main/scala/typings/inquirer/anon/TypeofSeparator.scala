@@ -5,12 +5,13 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.inquirer.separatorMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofSeparator
   extends Instantiable0[^]
      with Instantiable1[/* line */ String, ^] {
+  
   /**
     * Checks whether the specified `item` is not a separator.
     *
@@ -22,4 +23,3 @@ trait TypeofSeparator
     */
   def exclude(item: js.Any): Boolean = js.native
 }
-

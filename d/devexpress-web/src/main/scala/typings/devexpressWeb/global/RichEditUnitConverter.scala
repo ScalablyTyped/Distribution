@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains the method to convert different units of measurement.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class RichEditUnitConverter ()
   extends typings.devexpressWeb.RichEditUnitConverter
-

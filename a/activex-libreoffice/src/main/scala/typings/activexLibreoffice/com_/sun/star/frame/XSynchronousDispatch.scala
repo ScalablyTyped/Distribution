@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * additional interfaces for dispatch objects: allow to execute with return value
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XSynchronousDispatch extends XInterface {
+  
   /**
     * dispatches a URL synchronously and offers a return values
     *
@@ -26,8 +27,8 @@ trait XSynchronousDispatch extends XInterface {
     */
   def dispatchWithReturnValue(URL: URL, Arguments: SeqEquiv[PropertyValue]): js.Any = js.native
 }
-
 object XSynchronousDispatch {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -38,20 +39,23 @@ object XSynchronousDispatch {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), dispatchWithReturnValue = js.Any.fromFunction2(dispatchWithReturnValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XSynchronousDispatch]
   }
+  
   @scala.inline
   implicit class XSynchronousDispatchOps[Self <: XSynchronousDispatch] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDispatchWithReturnValue(value: (URL, SeqEquiv[PropertyValue]) => js.Any): Self = this.set("dispatchWithReturnValue", js.Any.fromFunction2(value))
   }
-  
 }
-

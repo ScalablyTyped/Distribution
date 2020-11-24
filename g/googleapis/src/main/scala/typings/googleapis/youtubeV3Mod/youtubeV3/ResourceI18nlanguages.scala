@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$I18nlanguages")
 @js.native
 class ResourceI18nlanguages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.i18nLanguages.list
     * @desc Returns a list of application languages that the YouTube website
@@ -47,4 +49,3 @@ class ResourceI18nlanguages protected () extends js.Object {
     callback: BodyResponseCallback[SchemaI18nLanguageListResponse]
   ): Unit = js.native
 }
-

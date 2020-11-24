@@ -33,40 +33,55 @@ import typings.colorConvert.conversionsMod.RGB_
 import typings.colorConvert.conversionsMod.XYZ_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined { readonly channels :1,  readonly labels :['ansi16'], readonly rgb (ansi16 : color-convert.color-convert/conversions.ANSI16): color-convert.color-convert/conversions.RGB} & color-convert.color-convert/route.ansi16 & {[ F in keyof color-convert.color-convert/route.ansi16 ]: {  raw :color-convert.color-convert/route.ansi16[F]}} */
 @js.native
 trait readonlychannels1readonlyAnsi256 extends js.Object {
+  
   var ansi256: `143` = js.native
-  var apple: `140` = js.native
-  val channels: `1` = js.native
-  var cmyk: `145` = js.native
-  var gray: `142` = js.native
-  var hcg: `146` = js.native
-  var hex: `150` = js.native
-  var hsl: `151` = js.native
-  var hsv: `148` = js.native
-  var hwb: `144` = js.native
-  var keyword: `141` = js.native
-  var lab: `152` = js.native
-  val labels: js.Array[ansi16] = js.native
-  var lch: `149` = js.native
-  var rgb: `139` = js.native
-  var xyz: `147` = js.native
   def ansi256(from: ANSI16_): ANSI256_ = js.native
+  
+  var apple: `140` = js.native
   def apple(from: ANSI16_): APPLE_ = js.native
+  
+  val channels: `1` = js.native
+  
+  var cmyk: `145` = js.native
   def cmyk(from: ANSI16_): CMYK_ = js.native
+  
+  var gray: `142` = js.native
   def gray(from: ANSI16_): GRAY_ = js.native
+  
+  var hcg: `146` = js.native
   def hcg(from: ANSI16_): HCG_ = js.native
+  
+  var hex: `150` = js.native
   def hex(from: ANSI16_): HEX_ = js.native
+  
+  var hsl: `151` = js.native
   def hsl(from: ANSI16_): HSL_ = js.native
+  
+  var hsv: `148` = js.native
   def hsv(from: ANSI16_): HSV_ = js.native
+  
+  var hwb: `144` = js.native
   def hwb(from: ANSI16_): HWB_ = js.native
+  
+  var keyword: `141` = js.native
   def keyword(from: ANSI16_): KEYWORD_ = js.native
+  
+  var lab: `152` = js.native
   def lab(from: ANSI16_): LAB_ = js.native
+  
+  val labels: js.Array[ansi16] = js.native
+  
+  var lch: `149` = js.native
   def lch(from: ANSI16_): LCH_ = js.native
+  
+  var rgb: `139` = js.native
   def rgb(ansi16: ANSI16_): RGB_ = js.native
+  
+  var xyz: `147` = js.native
   def xyz(from: ANSI16_): XYZ_ = js.native
 }
-

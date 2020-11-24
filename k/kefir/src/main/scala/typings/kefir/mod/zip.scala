@@ -2,11 +2,12 @@ package typings.kefir.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kefir", "zip")
 @js.native
 object zip extends js.Object {
+  
   def apply[T, S, U](obss: js.Array[Observable[T, S]]): Observable[U, S] = js.native
   def apply[T, S, U](
     obss: js.Array[Observable[T, S]],
@@ -20,4 +21,3 @@ object zip extends js.Object {
     combinator: js.Function1[/* repeated */ T, U]
   ): Observable[U, S] = js.native
 }
-

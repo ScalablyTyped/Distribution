@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Accounts$Alerts")
 @js.native
 class ResourceAccountsAlerts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adsense.accounts.alerts.delete
     * @desc Dismiss (delete) the specified alert from the specified publisher
@@ -43,6 +45,7 @@ class ResourceAccountsAlerts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * adsense.accounts.alerts.list
     * @desc List the alerts for the specified AdSense account.
@@ -73,4 +76,3 @@ class ResourceAccountsAlerts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAlerts]
   ): Unit = js.native
 }
-

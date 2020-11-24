@@ -42,7 +42,7 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is an extended grid control, which allows the user to customize some of its user interface's aspects. */
 @js.native
@@ -60,8 +60,8 @@ trait InteractionGridControl
      with XSelectionSupplier
      with XDispatchProviderInterception
      with XDispatch
-
 object InteractionGridControl {
+  
   @scala.inline
   def apply(
     AccessibleContext: XAccessibleContext,
@@ -151,4 +151,3 @@ object InteractionGridControl {
     __obj.asInstanceOf[InteractionGridControl]
   }
 }
-

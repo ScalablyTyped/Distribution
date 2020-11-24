@@ -2,14 +2,14 @@ package typings.playerframework.PlayerFramework
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ReadyState extends js.Object
-
 @JSGlobal("PlayerFramework.ReadyState")
 @js.native
 object ReadyState extends js.Object {
+  
   /**
     * The player has data for the current playback position, but not enough data to play the next frame.
     **/
@@ -39,6 +39,4 @@ object ReadyState extends js.Object {
     **/
   @js.native
   sealed trait nothing extends ReadyState
-  
 }
-

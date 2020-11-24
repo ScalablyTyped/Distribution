@@ -3,11 +3,12 @@ package typings.meteor.meteorMod.Meteor
 import typings.meteor.meteorMod.globalError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/meteor", "Meteor.loginWithMeetup")
 @js.native
 object loginWithMeetup extends js.Object {
+  
   def apply(): Unit = js.native
   def apply(
     options: js.UndefOr[scala.Nothing],
@@ -19,4 +20,3 @@ object loginWithMeetup extends js.Object {
     callback: js.Function1[/* error */ js.UndefOr[globalError | Error | TypedError], Unit]
   ): Unit = js.native
 }
-

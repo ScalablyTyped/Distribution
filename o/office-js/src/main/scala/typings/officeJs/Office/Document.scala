@@ -4,7 +4,7 @@ import typings.officeJs.officeJsStrings.edit
 import typings.officeJs.officeJsStrings.read
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An abstract class that represents the document the add-in is interacting with.
@@ -15,31 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Document extends js.Object {
-  /**
-    * Gets an object that provides access to the bindings defined in the document.
-    *
-    * @remarks
-    * 
-    * You don't instantiate the Document object directly in your script. To call members of the Document object to interact with the current 
-    * document or worksheet, use `Office.context.document` in your script.
-    */
-  var bindings: Bindings = js.native
-  /**
-    * Gets an object that represents the custom XML parts in the document.
-    */
-  var customXmlParts: CustomXmlParts = js.native
-  /**
-    * Gets the mode the document is in.
-    */
-  var mode: DocumentMode = js.native
-  /**
-    * Gets an object that represents the saved custom settings of the content or task pane add-in for the current document.
-    */
-  var settings: Settings = js.native
-  /**
-    * Gets the URL of the document that the host application currently has open. Returns null if the URL is unavailable.
-    */
-  var url: String = js.native
+  
   /**
     * Adds an event handler for a Document object event.
     *
@@ -74,6 +50,22 @@ trait Document extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
+  /**
+    * Gets an object that provides access to the bindings defined in the document.
+    *
+    * @remarks
+    * 
+    * You don't instantiate the Document object directly in your script. To call members of the Document object to interact with the current 
+    * document or worksheet, use `Office.context.document` in your script.
+    */
+  var bindings: Bindings = js.native
+  
+  /**
+    * Gets an object that represents the custom XML parts in the document.
+    */
+  var customXmlParts: CustomXmlParts = js.native
+  
   /**
     * Returns the state of the current view of the presentation (edit or read).
     *
@@ -97,6 +89,7 @@ trait Document extends js.Object {
   ): Unit = js.native
   def getActiveViewAsync(options: AsyncContextOptions): Unit = js.native
   def getActiveViewAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[edit | read], Unit]): Unit = js.native
+  
   /**
     * Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins on iPad, file slice is supported up to 65536 (64 KB). 
     * Note that specifying file slice size of above permitted limit will result in an "Internal Error" failure.
@@ -144,6 +137,7 @@ trait Document extends js.Object {
     options: GetFileOptions,
     callback: js.Function1[/* result */ AsyncResult[File], Unit]
   ): Unit = js.native
+  
   /**
     * Gets file properties of the current document.
     *
@@ -168,6 +162,7 @@ trait Document extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[FileProperties], Unit]
   ): Unit = js.native
+  
   /**
     * Project documents only. Get the maximum index of the collection of resources in the current project.
     * 
@@ -183,6 +178,7 @@ trait Document extends js.Object {
   def getMaxResourceIndexAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[Double], Unit]): Unit = js.native
   def getMaxResourceIndexAsync(options: AsyncContextOptions): Unit = js.native
   def getMaxResourceIndexAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[Double], Unit]): Unit = js.native
+  
   /**
     * Project documents only. Get the maximum index of the collection of tasks in the current project.
     * 
@@ -198,6 +194,7 @@ trait Document extends js.Object {
   def getMaxTaskIndexAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[Double], Unit]): Unit = js.native
   def getMaxTaskIndexAsync(options: AsyncContextOptions): Unit = js.native
   def getMaxTaskIndexAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[Double], Unit]): Unit = js.native
+  
   /**
     * Project documents only. Get Project field (Ex. ProjectWebAccessURL).
     * @param fieldId Project level fields.
@@ -218,6 +215,7 @@ trait Document extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[_], Unit]
   ): Unit = js.native
+  
   /**
     * Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
     * 
@@ -242,6 +240,7 @@ trait Document extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[String], Unit]
   ): Unit = js.native
+  
   /**
     * Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
     * @param resourceId Either a string or value of the Resource Id.
@@ -270,6 +269,7 @@ trait Document extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[String], Unit]
   ): Unit = js.native
+  
   /**
     * Reads the data contained in the current selection in the document.
     *
@@ -374,6 +374,7 @@ trait Document extends js.Object {
     options: GetSelectedDataOptions,
     callback: js.Function1[/* result */ AsyncResult[T], Unit]
   ): Unit = js.native
+  
   /**
     * Project documents only. Get the current selected Resource's Id.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -386,6 +387,7 @@ trait Document extends js.Object {
   def getSelectedResourceAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   def getSelectedResourceAsync(options: AsyncContextOptions): Unit = js.native
   def getSelectedResourceAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  
   /**
     * Project documents only. Get the current selected Task's Id.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -398,6 +400,7 @@ trait Document extends js.Object {
   def getSelectedTaskAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   def getSelectedTaskAsync(options: AsyncContextOptions): Unit = js.native
   def getSelectedTaskAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  
   /**
     * Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -412,6 +415,7 @@ trait Document extends js.Object {
   def getSelectedViewAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[_], Unit]): Unit = js.native
   def getSelectedViewAsync(options: AsyncContextOptions): Unit = js.native
   def getSelectedViewAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[_], Unit]): Unit = js.native
+  
   /**
     * Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.
     * @param taskId Either a string or value of the Task Id.
@@ -436,6 +440,7 @@ trait Document extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[_], Unit]
   ): Unit = js.native
+  
   /**
     * Project documents only. Get the GUID of the task that has the specified index in the task collection.
     * 
@@ -460,6 +465,7 @@ trait Document extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[String], Unit]
   ): Unit = js.native
+  
   /**
     * Project documents only. Get task field for provided task Id. (Ex. StartDate).
     * @param taskId Either a string or value of the Task Id.
@@ -484,6 +490,7 @@ trait Document extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[_], Unit]
   ): Unit = js.native
+  
   /**
     * Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -498,6 +505,7 @@ trait Document extends js.Object {
   def getWSSUrlAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[_], Unit]): Unit = js.native
   def getWSSUrlAsync(options: AsyncContextOptions): Unit = js.native
   def getWSSUrlAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[_], Unit]): Unit = js.native
+  
   /**
     * Goes to the specified object or location in the document.
     *
@@ -554,6 +562,12 @@ trait Document extends js.Object {
     options: GoToByIdOptions,
     callback: js.Function1[/* result */ AsyncResult[_], Unit]
   ): Unit = js.native
+  
+  /**
+    * Gets the mode the document is in.
+    */
+  var mode: DocumentMode = js.native
+  
   /**
     * Removes an event handler for the specified event type.
     *
@@ -578,6 +592,7 @@ trait Document extends js.Object {
     options: RemoveHandlerOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Project documents only. Set resource field for specified resource Id.
     * 
@@ -678,6 +693,7 @@ trait Document extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Writes the specified data into the current selection.
     *
@@ -915,6 +931,7 @@ trait Document extends js.Object {
     options: SetSelectedDataOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Project documents only. Set task field for specified task Id.
     * 
@@ -1015,5 +1032,14 @@ trait Document extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
+  /**
+    * Gets an object that represents the saved custom settings of the content or task pane add-in for the current document.
+    */
+  var settings: Settings = js.native
+  
+  /**
+    * Gets the URL of the document that the host application currently has open. Returns null if the URL is unavailable.
+    */
+  var url: String = js.native
 }
-

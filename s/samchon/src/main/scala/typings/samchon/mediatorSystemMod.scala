@@ -9,11 +9,12 @@ import typings.samchon.parallelSystemMod.ParallelSystem
 import typings.samchon.slaveSystemMod.SlaveSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/parallel/MediatorSystem", JSImport.Namespace)
 @js.native
 object mediatorSystemMod extends js.Object {
+  
   @js.native
   abstract class MediatorSystem protected () extends SlaveSystem {
     /**
@@ -28,18 +29,12 @@ object mediatorSystemMod extends js.Object {
       * @param systemArray The parent {@link ParallelSystemArrayMediator} object.
       */
     def this(systemArray: ParallelSystemArrayMediator[ParallelSystem]) = this()
+    
     /**
       * @hidden
       */
     var _Complete_history: js.Any = js.native
-    /**
-      * @hidden
-      */
-    var progress_list_ : js.Any = js.native
-    /**
-      * @hidden
-      */
-    var system_array_ : js.Any = js.native
+    
     /**
       * Get parent {@link ParallelSystemArrayMediator} or {@link DistributedSystemArrayMediator} object.
       */
@@ -54,6 +49,12 @@ object mediatorSystemMod extends js.Object {
       */
     @JSName("getSystemArray")
     def getSystemArray_SystemArray_ParallelSystemArrayParallelSystem_SystemArray[SystemArray /* <: ParallelSystemArray[ParallelSystem] */](): SystemArray = js.native
+    
+    /**
+      * @hidden
+      */
+    var progress_list_ : js.Any = js.native
+    
     /**
       * Start interaction.
       *
@@ -62,7 +63,10 @@ object mediatorSystemMod extends js.Object {
       * {@link MediatorSystem} object wil open a server accepting the **master**.
       */
     def start(): Unit = js.native
+    
+    /**
+      * @hidden
+      */
+    var system_array_ : js.Any = js.native
   }
-  
 }
-

@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BridgeDirection extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.BridgeDirection")
 @js.native
 object BridgeDirection extends js.Object {
+  
   //Used to set the direction of line bridges as bottom
   @js.native
   sealed trait Bottom extends BridgeDirection
@@ -25,6 +25,4 @@ object BridgeDirection extends js.Object {
   //Used to set the direction of line bridges as top
   @js.native
   sealed trait Top extends BridgeDirection
-  
 }
-

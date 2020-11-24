@@ -6,11 +6,12 @@ import typings.relayRuntime.relayRuntimeTypesMod.OperationType
 import typings.relayRuntime.relayStoreTypesMod.Environment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("relay-runtime/lib/query/fetchQuery", JSImport.Namespace)
 @js.native
 object fetchQueryMod extends js.Object {
+  
   @JSName("fetchQuery")
   def fetchQuery_variables[T /* <: OperationType */](
     environment: Environment,
@@ -29,4 +30,3 @@ object fetchQueryMod extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
   ] = js.native
 }
-

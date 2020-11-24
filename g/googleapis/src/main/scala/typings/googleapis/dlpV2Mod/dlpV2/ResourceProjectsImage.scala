@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Projects$Image")
 @js.native
 class ResourceProjectsImage protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dlp.projects.image.redact
     * @desc Redacts potentially sensitive info from an image. This method has
@@ -52,4 +54,3 @@ class ResourceProjectsImage protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2RedactImageResponse]
   ): Unit = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.chromeApps.chromeAppsStrings.Connected_
 import typings.chromeApps.chromeAppsStrings.Connecting_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.chromeApps.chromeAppsStrings.Connected_
@@ -12,13 +12,14 @@ import scala.scalajs.js.annotation._
   - typings.chromeApps.chromeAppsStrings.NotConnected
 */
 trait ConnectionStateType extends js.Object
-
 object ConnectionStateType {
+  
   @scala.inline
   def Connected: Connected_ = "Connected".asInstanceOf[Connected_]
+  
   @scala.inline
   def Connecting: Connecting_ = "Connecting".asInstanceOf[Connecting_]
+  
   @scala.inline
   def NotConnected: typings.chromeApps.chromeAppsStrings.NotConnected = "NotConnected".asInstanceOf[typings.chromeApps.chromeAppsStrings.NotConnected]
 }
-

@@ -3,14 +3,16 @@ package typings.ol
 import typings.ol.extentMod.Extent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/reproj/Image", JSImport.Namespace)
 @js.native
 object reprojImageMod extends js.Object {
+  
   @js.native
   trait ReprojImage
     extends typings.ol.imageBaseMod.default {
+    
     def getProjection(): typings.ol.projectionMod.default = js.native
   }
   
@@ -24,8 +26,16 @@ object reprojImageMod extends js.Object {
       pixelRatio: Double,
       getImageFunction: FunctionType
     ) = this()
+    def this(
+      sourceProj: typings.ol.projectionMod.default,
+      targetProj: typings.ol.projectionMod.default,
+      targetExtent: Extent,
+      targetResolution: Double,
+      pixelRatio: Double,
+      getImageFunction: FunctionType,
+      opt_contextOptions: js.Any
+    ) = this()
   }
   
   type FunctionType = js.Function3[/* p0 */ Extent, /* p1 */ Double, /* p2 */ Double, typings.ol.imageBaseMod.default]
 }
-

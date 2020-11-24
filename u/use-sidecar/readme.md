@@ -10,9 +10,9 @@ Sidecar code splitting utils
 | ------------------ | :-------------: |
 | Full name          | use-sidecar |
 | Keywords           | code spliting, react, sidecar |
-| # releases         | 10 |
+| # releases         | 11 |
 | # dependents       | 3 |
-| # downloads        | 1060794 |
+| # downloads        | 36489754 |
 | # stars            | 0 |
 
 ## Links

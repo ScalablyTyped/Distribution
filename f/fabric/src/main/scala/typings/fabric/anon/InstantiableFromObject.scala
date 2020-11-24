@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.fabric.fabricImplMod.IBlendImageFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableFromObject
@@ -15,10 +15,10 @@ trait InstantiableFromObject
   */
 Instantiable0[IBlendImageFilter]
      with Instantiable1[/* options */ Image, IBlendImageFilter] {
+  
   /**
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
   def fromObject(`object`: js.Any): IBlendImageFilter = js.native
 }
-

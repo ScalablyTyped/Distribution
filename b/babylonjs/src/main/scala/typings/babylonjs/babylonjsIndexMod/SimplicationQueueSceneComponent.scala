@@ -3,7 +3,7 @@ package typings.babylonjs.babylonjsIndexMod
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/index", "SimplicationQueueSceneComponent")
 @js.native
@@ -15,4 +15,3 @@ class SimplicationQueueSceneComponent protected ()
     */
   def this(scene: Scene) = this()
 }
-

@@ -11,7 +11,7 @@ import typings.chromeApps.chromeAppsStrings.selection_
 import typings.chromeApps.chromeAppsStrings.video_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The different contexts a menu can appear in.
@@ -29,25 +29,32 @@ import scala.scalajs.js.annotation._
   - typings.chromeApps.chromeAppsStrings.audio_
 */
 trait ContextType extends js.Object
-
 object ContextType {
+  
   @scala.inline
   def all: all__ = "all".asInstanceOf[all__]
+  
   @scala.inline
   def audio: audio_ = "audio".asInstanceOf[audio_]
+  
   @scala.inline
   def editable: editable_ = "editable".asInstanceOf[editable_]
+  
   @scala.inline
   def frame: frame_ = "frame".asInstanceOf[frame_]
+  
   @scala.inline
   def image: image_ = "image".asInstanceOf[image_]
+  
   @scala.inline
   def link: link_ = "link".asInstanceOf[link_]
+  
   @scala.inline
   def page: page_ = "page".asInstanceOf[page_]
+  
   @scala.inline
   def selection: selection_ = "selection".asInstanceOf[selection_]
+  
   @scala.inline
   def video: video_ = "video".asInstanceOf[video_]
 }
-

@@ -2,7 +2,7 @@ package typings.guacamoleClient.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "Client")
 @js.native
@@ -13,4 +13,3 @@ class Client protected ()
     */
   def this(tunnel: typings.guacamoleClient.webSocketTunnelMod.WebSocketTunnel) = this()
 }
-

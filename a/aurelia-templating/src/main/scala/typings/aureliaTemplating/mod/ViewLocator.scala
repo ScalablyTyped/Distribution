@@ -3,11 +3,12 @@ package typings.aureliaTemplating.mod
 import typings.aureliaMetadata.mod.Origin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ViewLocator")
 @js.native
 class ViewLocator () extends js.Object {
+  
   /**
     * Conventionally converts a view model origin to a view url.
     * Used by the ConventionalViewStrategy.
@@ -15,6 +16,7 @@ class ViewLocator () extends js.Object {
     * @return The view url.
     */
   def convertOriginToViewUrl(origin: Origin): String = js.native
+  
   /**
     * Creates a fallback View Strategy. Used when unable to locate a configured strategy.
     * The default implementation returns and instance of ConventionalViewStrategy.
@@ -22,6 +24,7 @@ class ViewLocator () extends js.Object {
     * @return The fallback ViewStrategy.
     */
   def createFallbackViewStrategy(origin: Origin): ViewStrategy_ = js.native
+  
   /**
     * Gets the view strategy for the value.
     * @param value The value to locate the view strategy for.
@@ -29,14 +32,13 @@ class ViewLocator () extends js.Object {
     */
   def getViewStrategy(value: js.Any): ViewStrategy_ = js.native
 }
-
 /* static members */
 @JSImport("aurelia-templating", "ViewLocator")
 @js.native
 object ViewLocator extends js.Object {
+  
   /**
     * The metadata key for storing/finding view strategies associated with an class/object.
     */
   var viewStrategyMetadataKey: js.Any = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.octreeBlockMod.IOctreeContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "OctreeBlock")
 @js.native
@@ -27,11 +27,11 @@ class OctreeBlock[T] protected ()
     creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.octreeBlockMod.OctreeBlock[T], Unit]
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/index", "OctreeBlock")
 @js.native
 object OctreeBlock extends js.Object {
+  
   /**
     * @hidden
     */
@@ -46,4 +46,3 @@ object OctreeBlock extends js.Object {
     creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.octreeBlockMod.OctreeBlock[T], Unit]
   ): Unit = js.native
 }
-

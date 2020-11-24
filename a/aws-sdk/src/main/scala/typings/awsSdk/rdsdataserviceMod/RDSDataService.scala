@@ -1,17 +1,16 @@
 package typings.awsSdk.rdsdataserviceMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RDSDataService extends Service {
-  @JSName("config")
-  var config_RDSDataService: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Runs a batch SQL statement over an array of data. You can run bulk update and insert operations for multiple records using a DML statement with different parameter sets. Bulk operations can provide a significant performance improvement over individual insert and update operations.  If a call isn't part of a transaction because it doesn't include the transactionID parameter, changes that result from the call are committed automatically. 
     */
@@ -25,6 +24,7 @@ trait RDSDataService extends Service {
     params: BatchExecuteStatementRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchExecuteStatementResponse, Unit]
   ): Request[BatchExecuteStatementResponse, AWSError] = js.native
+  
   /**
     * Starts a SQL transaction.  &lt;important&gt; &lt;p&gt;A transaction can run for a maximum of 24 hours. A transaction is terminated and rolled back automatically after 24 hours.&lt;/p&gt; &lt;p&gt;A transaction times out if no calls use its transaction ID in three minutes. If a transaction times out before it's committed, it's rolled back automatically.&lt;/p&gt; &lt;p&gt;DDL statements inside a transaction cause an implicit commit. We recommend that you run each DDL statement in a separate &lt;code&gt;ExecuteStatement&lt;/code&gt; call with &lt;code&gt;continueAfterTimeout&lt;/code&gt; enabled.&lt;/p&gt; &lt;/important&gt; 
     */
@@ -38,6 +38,7 @@ trait RDSDataService extends Service {
     params: BeginTransactionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BeginTransactionResponse, Unit]
   ): Request[BeginTransactionResponse, AWSError] = js.native
+  
   /**
     * Ends a SQL transaction started with the BeginTransaction operation and commits the changes.
     */
@@ -51,6 +52,10 @@ trait RDSDataService extends Service {
     params: CommitTransactionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CommitTransactionResponse, Unit]
   ): Request[CommitTransactionResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_RDSDataService: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Runs one or more SQL statements.  This operation is deprecated. Use the BatchExecuteStatement or ExecuteStatement operation. 
     */
@@ -64,6 +69,7 @@ trait RDSDataService extends Service {
     params: ExecuteSqlRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ExecuteSqlResponse, Unit]
   ): Request[ExecuteSqlResponse, AWSError] = js.native
+  
   /**
     * Runs a SQL statement against a database.  If a call isn't part of a transaction because it doesn't include the transactionID parameter, changes that result from the call are committed automatically.  The response size limit is 1 MB. If the call returns more than 1 MB of response data, the call is terminated.
     */
@@ -77,6 +83,7 @@ trait RDSDataService extends Service {
     params: ExecuteStatementRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ExecuteStatementResponse, Unit]
   ): Request[ExecuteStatementResponse, AWSError] = js.native
+  
   /**
     * Performs a rollback of a transaction. Rolling back a transaction cancels its changes.
     */
@@ -91,4 +98,3 @@ trait RDSDataService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RollbackTransactionResponse, Unit]
   ): Request[RollbackTransactionResponse, AWSError] = js.native
 }
-

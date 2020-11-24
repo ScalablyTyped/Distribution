@@ -10,9 +10,9 @@ Run multiple promise-returning & async functions with limited concurrency using 
 | ------------------ | :-------------: |
 | Full name          | tiny-async-pool |
 | Keywords           | race, concurrency, promise, async, es6, es7 |
-| # releases         | 8 |
-| # dependents       | 12 |
-| # downloads        | 566380 |
+| # releases         | 3 |
+| # dependents       | 33 |
+| # downloads        | 892084 |
 | # stars            | 1 |
 
 ## Links

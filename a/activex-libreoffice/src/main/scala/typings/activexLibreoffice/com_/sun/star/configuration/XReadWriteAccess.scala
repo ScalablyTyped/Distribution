@@ -8,15 +8,15 @@ import typings.activexLibreoffice.com_.sun.star.util.ChangesSet
 import typings.activexLibreoffice.com_.sun.star.util.XChangesBatch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait XReadWriteAccess
   extends XHierarchicalNameReplace
      with XChangesBatch
      with XHierarchicalPropertySetInfo
-
 object XReadWriteAccess {
+  
   @scala.inline
   def apply(
     PendingChanges: ChangesSet,
@@ -36,4 +36,3 @@ object XReadWriteAccess {
     __obj.asInstanceOf[XReadWriteAccess]
   }
 }
-

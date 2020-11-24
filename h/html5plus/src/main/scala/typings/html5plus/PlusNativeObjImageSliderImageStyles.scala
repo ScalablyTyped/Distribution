@@ -8,7 +8,7 @@ import typings.html5plus.html5plusStrings.right
 import typings.html5plus.html5plusStrings.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 图片轮播控件中图片项配置参数
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusNativeObjImageSliderImageStyles extends js.Object {
+  
   /**
     * 图片水平对齐方式
     * 仅在图片显示的宽度与图片轮播控件宽度不一致时有效，可取值：
@@ -32,6 +33,7 @@ trait PlusNativeObjImageSliderImageStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var align: js.UndefOr[left | center | right] = js.native
+  
   /**
     * 图片显示的高度
     * 可取值：
@@ -42,6 +44,7 @@ trait PlusNativeObjImageSliderImageStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var height: js.UndefOr[String] = js.native
+  
   /**
     * 图片地址
     * 支持本地地址（相对地址、绝对路径、RelativeURL、本地路径URL）；
@@ -50,6 +53,7 @@ trait PlusNativeObjImageSliderImageStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var src: js.UndefOr[String] = js.native
+  
   /**
     * 图片垂直对齐方式
     * 仅在图片显示的高度与图片轮播控件宽度不一致时有效，可取值：
@@ -64,6 +68,7 @@ trait PlusNativeObjImageSliderImageStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   var verticalAlign: js.UndefOr[top | middle | bottom] = js.native
+  
   /**
     * 图片显示的宽度
     * 可取值：
@@ -76,45 +81,57 @@ trait PlusNativeObjImageSliderImageStyles extends js.Object {
     */
   var width: js.UndefOr[String] = js.native
 }
-
 object PlusNativeObjImageSliderImageStyles {
+  
   @scala.inline
   def apply(): PlusNativeObjImageSliderImageStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeObjImageSliderImageStyles]
   }
+  
   @scala.inline
   implicit class PlusNativeObjImageSliderImageStylesOps[Self <: PlusNativeObjImageSliderImageStyles] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAlign(value: left | center | right): Self = this.set("align", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAlign: Self = this.set("align", js.undefined)
+    
     @scala.inline
     def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeight: Self = this.set("height", js.undefined)
+    
     @scala.inline
     def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSrc: Self = this.set("src", js.undefined)
+    
     @scala.inline
     def setVerticalAlign(value: top | middle | bottom): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    
     @scala.inline
     def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWidth: Self = this.set("width", js.undefined)
   }
-  
 }
-

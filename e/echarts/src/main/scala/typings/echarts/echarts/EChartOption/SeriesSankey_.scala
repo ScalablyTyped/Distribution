@@ -2,13 +2,13 @@ package typings.echarts.echarts.EChartOption
 
 import typings.echarts.anon.BorderRadius
 import typings.echarts.anon.BorderType
-import typings.echarts.anon.CurvenessOpacity
+import typings.echarts.anon.ColorCurveness
 import typings.echarts.anon.ItemStyleLabelLineStyle
 import typings.echarts.echarts.EChartOption.SeriesSankey.DataObject
 import typings.echarts.echarts.EChartOption.SeriesSankey.LinkObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * **Sankey Graphs**
@@ -44,6 +44,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SeriesSankey_ extends js.Object {
+  
   /**
     * Whether to enable animation.
     *
@@ -53,6 +54,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.animation
     */
   var animation: js.UndefOr[Boolean] = js.native
+  
   /**
     * Delay before updating the first animation, which supports callback
     * function for different data to have different animation effect.
@@ -69,6 +71,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Delay before updating animation, which supports callback function
     * for different data to have different animation effect.
@@ -85,6 +88,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
@@ -97,6 +101,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
@@ -109,6 +114,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
@@ -121,6 +127,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.native
+  
   /**
     * Easing method used for animation.
     *
@@ -130,6 +137,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.native
+  
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger than
@@ -141,6 +149,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.native
+  
   /**
     * Distance between sankey component and the bottom side of the
     * container.
@@ -154,6 +163,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.bottom
     */
   var bottom: js.UndefOr[Double | String] = js.native
+  
   /**
     * Data array of series, which can be a single data value, like:
     *
@@ -190,6 +200,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.data
     */
   var data: js.UndefOr[js.Array[(js.Array[Double | DataObject]) | DataObject | Double]] = js.native
+  
   /**
     * The drag-and-drop interaction of the node, which is enabled by
     * default.
@@ -203,6 +214,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.draggable
     */
   var draggable: js.UndefOr[Boolean] = js.native
+  
   /**
     * Equals to
     * [links](https://echarts.apache.org/en/option.html#series-sankey.links)
@@ -211,10 +223,12 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.edges
     */
   var edges: js.UndefOr[js.Array[_]] = js.native
+  
   /**
     * @see https://echarts.apache.org/en/option.html#series-sankey.emphasis
     */
   var emphasis: js.UndefOr[ItemStyleLabelLineStyle] = js.native
+  
   /**
     * Support when mouse hovering over a node or an edge, the adjacent
     * nodes and edges are also highlighted.
@@ -239,6 +253,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.focusNodeAdjacency
     */
   var focusNodeAdjacency: js.UndefOr[Boolean | String] = js.native
+  
   /**
     * Height of sankey component.
     *
@@ -246,6 +261,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.height
     */
   var height: js.UndefOr[Double | String] = js.native
+  
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -255,6 +271,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.id
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * The style of node rectangle in sankey graphs.
     *
@@ -262,6 +279,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.itemStyle
     */
   var itemStyle: js.UndefOr[BorderType] = js.native
+  
   /**
     * `label` describes the text label style in each rectangular node.
     *
@@ -269,6 +287,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.label
     */
   var label: js.UndefOr[BorderRadius] = js.native
+  
   /**
     * The iterations of layout, which is used to continuously optimize
     * the positions of nodes in graph, decreasing the overlapping between
@@ -285,6 +304,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.layoutIterations
     */
   var layoutIterations: js.UndefOr[Double] = js.native
+  
   /**
     * Distance between sankey component and the left side of the container.
     *
@@ -301,6 +321,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.left
     */
   var left: js.UndefOr[Double | String] = js.native
+  
   /**
     * The line style of sankey graph, in which
     * [lineStyle.color](https://echarts.apache.org/en/option.html#series-sankey.lineStyle.color)
@@ -311,7 +332,8 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.lineStyle
     */
-  var lineStyle: js.UndefOr[CurvenessOpacity] = js.native
+  var lineStyle: js.UndefOr[ColorCurveness] = js.native
+  
   /**
     * The links between nodes.
     * **Notes: The Sankey diagram theoretically only supports Directed
@@ -324,6 +346,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.links
     */
   var links: js.UndefOr[js.Array[LinkObject]] = js.native
+  
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -332,6 +355,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.name
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Alignment of nodes in the graph.
     *
@@ -342,6 +366,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.nodeAlign
     */
   var nodeAlign: js.UndefOr[String] = js.native
+  
   /**
     * The gap between any two rectangles in each column from the graph.
     *
@@ -351,6 +376,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.nodeGap
     */
   var nodeGap: js.UndefOr[Double] = js.native
+  
   /**
     * The node width of rectangle in graph.
     *
@@ -360,6 +386,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.nodeWidth
     */
   var nodeWidth: js.UndefOr[Double] = js.native
+  
   /**
     * Equals to
     * [data](https://echarts.apache.org/en/option.html#series-sankey.data)
@@ -368,6 +395,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.nodes
     */
   var nodes: js.UndefOr[js.Array[_]] = js.native
+  
   /**
     * The layout direction of the nodes in the Sankey diagram, which
     * can be horizontal from left to right or vertical from top to
@@ -380,6 +408,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.orient
     */
   var orient: js.UndefOr[String] = js.native
+  
   /**
     * Distance between sankey component and the right side of the container.
     *
@@ -392,6 +421,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.right
     */
   var right: js.UndefOr[Double | String] = js.native
+  
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to mouse
@@ -401,6 +431,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.silent
     */
   var silent: js.UndefOr[Boolean] = js.native
+  
   /**
     * tooltip settings in this series.
     *
@@ -408,6 +439,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.tooltip
     */
   var tooltip: js.UndefOr[BaseTooltip] = js.native
+  
   /**
     * Distance between sankey component and the top side of the container.
     *
@@ -424,12 +456,14 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.top
     */
   var top: js.UndefOr[Double | String] = js.native
+  
   /**
     * @default
     * "sankey"
     * @see https://echarts.apache.org/en/option.html#series-sankey.type
     */
   var `type`: js.UndefOr[String] = js.native
+  
   /**
     * Width of sankey component.
     *
@@ -437,6 +471,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.width
     */
   var width: js.UndefOr[Double | String] = js.native
+  
   /**
     * `z` value of all graghical elements in , which controls order
     * of drawing graphical components.
@@ -452,6 +487,7 @@ trait SeriesSankey_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.z
     */
   var z: js.UndefOr[Double] = js.native
+  
   /**
     * `zlevel` value of all graghical elements in .
     *
@@ -471,177 +507,255 @@ trait SeriesSankey_ extends js.Object {
     */
   var zlevel: js.UndefOr[Double] = js.native
 }
-
 object SeriesSankey_ {
+  
   @scala.inline
   def apply(): SeriesSankey_ = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesSankey_]
   }
+  
   @scala.inline
   implicit class SeriesSankey_Ops[Self <: SeriesSankey_] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimation: Self = this.set("animation", js.undefined)
+    
     @scala.inline
     def setAnimationDelay(value: js.Function | Double): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    
     @scala.inline
     def setAnimationDelayUpdate(value: js.Function | Double): Self = this.set("animationDelayUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDelayUpdate: Self = this.set("animationDelayUpdate", js.undefined)
+    
     @scala.inline
     def setAnimationDuration(value: js.Function | Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    
     @scala.inline
     def setAnimationDurationUpdate(value: js.Function | Double): Self = this.set("animationDurationUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDurationUpdate: Self = this.set("animationDurationUpdate", js.undefined)
+    
     @scala.inline
     def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    
     @scala.inline
     def setAnimationEasingUpdate(value: String): Self = this.set("animationEasingUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationEasingUpdate: Self = this.set("animationEasingUpdate", js.undefined)
+    
     @scala.inline
     def setAnimationThreshold(value: Double): Self = this.set("animationThreshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationThreshold: Self = this.set("animationThreshold", js.undefined)
+    
     @scala.inline
     def setBottom(value: Double | String): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBottom: Self = this.set("bottom", js.undefined)
+    
     @scala.inline
     def setDataVarargs(value: ((js.Array[Double | DataObject]) | DataObject | Double)*): Self = this.set("data", js.Array(value :_*))
+    
     @scala.inline
     def setData(value: js.Array[(js.Array[Double | DataObject]) | DataObject | Double]): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteData: Self = this.set("data", js.undefined)
+    
     @scala.inline
     def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDraggable: Self = this.set("draggable", js.undefined)
+    
     @scala.inline
     def setEdgesVarargs(value: js.Any*): Self = this.set("edges", js.Array(value :_*))
+    
     @scala.inline
     def setEdges(value: js.Array[_]): Self = this.set("edges", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEdges: Self = this.set("edges", js.undefined)
+    
     @scala.inline
     def setEmphasis(value: ItemStyleLabelLineStyle): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    
     @scala.inline
     def setFocusNodeAdjacency(value: Boolean | String): Self = this.set("focusNodeAdjacency", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFocusNodeAdjacency: Self = this.set("focusNodeAdjacency", js.undefined)
+    
     @scala.inline
     def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeight: Self = this.set("height", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setItemStyle(value: BorderType): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    
     @scala.inline
     def setLabel(value: BorderRadius): Self = this.set("label", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabel: Self = this.set("label", js.undefined)
+    
     @scala.inline
     def setLayoutIterations(value: Double): Self = this.set("layoutIterations", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLayoutIterations: Self = this.set("layoutIterations", js.undefined)
+    
     @scala.inline
     def setLeft(value: Double | String): Self = this.set("left", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLeft: Self = this.set("left", js.undefined)
+    
     @scala.inline
-    def setLineStyle(value: CurvenessOpacity): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    def setLineStyle(value: ColorCurveness): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    
     @scala.inline
     def setLinksVarargs(value: LinkObject*): Self = this.set("links", js.Array(value :_*))
+    
     @scala.inline
     def setLinks(value: js.Array[LinkObject]): Self = this.set("links", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLinks: Self = this.set("links", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setNodeAlign(value: String): Self = this.set("nodeAlign", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNodeAlign: Self = this.set("nodeAlign", js.undefined)
+    
     @scala.inline
     def setNodeGap(value: Double): Self = this.set("nodeGap", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNodeGap: Self = this.set("nodeGap", js.undefined)
+    
     @scala.inline
     def setNodeWidth(value: Double): Self = this.set("nodeWidth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNodeWidth: Self = this.set("nodeWidth", js.undefined)
+    
     @scala.inline
     def setNodesVarargs(value: js.Any*): Self = this.set("nodes", js.Array(value :_*))
+    
     @scala.inline
     def setNodes(value: js.Array[_]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNodes: Self = this.set("nodes", js.undefined)
+    
     @scala.inline
     def setOrient(value: String): Self = this.set("orient", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOrient: Self = this.set("orient", js.undefined)
+    
     @scala.inline
     def setRight(value: Double | String): Self = this.set("right", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRight: Self = this.set("right", js.undefined)
+    
     @scala.inline
     def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSilent: Self = this.set("silent", js.undefined)
+    
     @scala.inline
     def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    
     @scala.inline
     def setTop(value: Double | String): Self = this.set("top", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTop: Self = this.set("top", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
+    
     @scala.inline
     def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWidth: Self = this.set("width", js.undefined)
+    
     @scala.inline
     def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZ: Self = this.set("z", js.undefined)
+    
     @scala.inline
     def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZlevel: Self = this.set("zlevel", js.undefined)
   }
-  
 }
-

@@ -3,9 +3,34 @@ package typings.angularCompiler
 import typings.angularCompiler.outputAstMod.JSDocTagName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularCompilerStrings {
+  
+  @scala.inline
+  def desc: desc = "desc".asInstanceOf[desc]
+  
+  @scala.inline
+  def directiveInject: directiveInject = "directiveInject".asInstanceOf[directiveInject]
+  
+  @scala.inline
+  def id: id = "id".asInstanceOf[id]
+  
+  @scala.inline
+  def inject: inject = "inject".asInstanceOf[inject]
+  
+  @scala.inline
+  def invalid: invalid = "invalid".asInstanceOf[invalid]
+  
+  @scala.inline
+  def meaning: meaning = "meaning".asInstanceOf[meaning]
+  
+  @scala.inline
+  def ngtsc: ngtsc = "ngtsc".asInstanceOf[ngtsc]
+  
+  @scala.inline
+  def root: root = "root".asInstanceOf[root]
+  
   @js.native
   sealed trait desc extends JSDocTagName
   
@@ -29,22 +54,4 @@ object angularCompilerStrings {
   
   @js.native
   sealed trait root extends js.Object
-  
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
-  @scala.inline
-  def directiveInject: directiveInject = "directiveInject".asInstanceOf[directiveInject]
-  @scala.inline
-  def id: id = "id".asInstanceOf[id]
-  @scala.inline
-  def inject: inject = "inject".asInstanceOf[inject]
-  @scala.inline
-  def invalid: invalid = "invalid".asInstanceOf[invalid]
-  @scala.inline
-  def meaning: meaning = "meaning".asInstanceOf[meaning]
-  @scala.inline
-  def ngtsc: ngtsc = "ngtsc".asInstanceOf[ngtsc]
-  @scala.inline
-  def root: root = "root".asInstanceOf[root]
 }
-

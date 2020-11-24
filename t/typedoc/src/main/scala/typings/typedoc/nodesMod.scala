@@ -2,11 +2,12 @@ package typings.typedoc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc/dist/lib/converter/nodes", JSImport.Namespace)
 @js.native
 object nodesMod extends js.Object {
+  
   @js.native
   class AccessorConverter ()
     extends typings.typedoc.accessorMod.AccessorConverter
@@ -70,6 +71,4 @@ object nodesMod extends js.Object {
   @js.native
   class VariableStatementConverter ()
     extends typings.typedoc.variableStatementMod.VariableStatementConverter
-  
 }
-

@@ -6,15 +6,12 @@ import typings.winrtUwp.Windows.Storage.StorageFile
 import typings.winrtUwp.Windows.Storage.StorageFolder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents your app's future-access list (obtained from the static StorageApplicationPermissions.FutureAccessList property). By picking files and folders, your user grants your app permission to access items that might not be accessible otherwise. If you add these items to your future-access list then you'll retain that permission when your app wants to access those items again later. Items are stored in the future-access list as StorageFile and StorageFolder objects. */
 @js.native
 trait StorageItemAccessList extends js.Object {
-  /** Gets an object for retrieving storage items from the access list. */
-  var entries: AccessListEntryView = js.native
-  /** Gets the maximum number of storage items that the access list can contain. */
-  var maximumItemsAllowed: Double = js.native
+  
   /**
     * Adds a new storage item to the access list.
     * @param file The storage item to add.
@@ -28,6 +25,7 @@ trait StorageItemAccessList extends js.Object {
     * @return A token that the app can use later to retrieve the storage item.
     */
   def add(file: IStorageItem, metadata: String): String = js.native
+  
   /**
     * Adds a new storage item to the access list, or replaces the specified item if it already exists in the list.
     * @param token The token associated with the new storage item. If the access list already contains a storage item that has this token, the new item replaces the existing one.
@@ -41,20 +39,27 @@ trait StorageItemAccessList extends js.Object {
     * @param metadata Optional metadata to associate with the storage item.
     */
   def addOrReplace(token: String, file: IStorageItem, metadata: String): Unit = js.native
+  
   /**
     * Determines whether the app has access to the specified storage item in the access list.
     * @param file The storage item to check for access.
     * @return True if the app can access the storage item; otherwise false.
     */
   def checkAccess(file: IStorageItem): Boolean = js.native
+  
   /** Removes all storage items from the access list. */
   def clear(): Unit = js.native
+  
   /**
     * Determines whether the access list contains the specified storage item.
     * @param token The token of the storage item to look for.
     * @return True if the access list contains the specified storage item; false otherwise.
     */
   def containsItem(token: String): Boolean = js.native
+  
+  /** Gets an object for retrieving storage items from the access list. */
+  var entries: AccessListEntryView = js.native
+  
   /**
     * Retrieves the specified StorageFile from the list.
     * @param token The token of the StorageFile to retrieve.
@@ -68,6 +73,7 @@ trait StorageItemAccessList extends js.Object {
     * @return When this method completes successfully, it returns the StorageFile that is associated with the specified token.
     */
   def getFileAsync(token: String, options: AccessCacheOptions): IPromiseWithIAsyncOperation[StorageFile] = js.native
+  
   /**
     * Retrieves the specified StorageFolder from the list.
     * @param token The token of the StorageFolder to retrieve.
@@ -81,6 +87,7 @@ trait StorageItemAccessList extends js.Object {
     * @return When this method completes successfully, it returns the StorageFolder that is associated with the specified token.
     */
   def getFolderAsync(token: String, options: AccessCacheOptions): IPromiseWithIAsyncOperation[StorageFolder] = js.native
+  
   /**
     * Retrieves the specified item (like a file or folder) from the most recently used (MRU) list.
     * @param token The token of the item to retrieve.
@@ -94,10 +101,13 @@ trait StorageItemAccessList extends js.Object {
     * @return When this method completes successfully, it returns the item (type IStorageItem ) that is associated with the specified token.
     */
   def getItemAsync(token: String, options: AccessCacheOptions): IPromiseWithIAsyncOperation[IStorageItem] = js.native
+  
+  /** Gets the maximum number of storage items that the access list can contain. */
+  var maximumItemsAllowed: Double = js.native
+  
   /**
     * Removes the specified storage item from the access list.
     * @param token The token of the storage item to remove.
     */
   def remove(token: String): Unit = js.native
 }
-

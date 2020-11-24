@@ -2,9 +2,10 @@ package typings.babelTypes
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.babelTypes.mod.AnyTypeAnnotation_
     - typings.babelTypes.mod.ArgumentPlaceholder_
@@ -191,6 +192,7 @@ package object mod {
     - typings.babelTypes.mod.SpreadElement_
     - typings.babelTypes.mod.SpreadProperty
     - typings.babelTypes.mod.Statement
+    - typings.babelTypes.mod.StaticBlock_
     - typings.babelTypes.mod.StringLiteral_
     - typings.babelTypes.mod.StringLiteralTypeAnnotation_
     - typings.babelTypes.mod.StringTypeAnnotation_
@@ -225,6 +227,7 @@ package object mod {
     - typings.babelTypes.mod.TSInterfaceBody_
     - typings.babelTypes.mod.TSInterfaceDeclaration_
     - typings.babelTypes.mod.TSIntersectionType_
+    - typings.babelTypes.mod.TSIntrinsicKeyword_
     - typings.babelTypes.mod.TSLiteralType_
     - typings.babelTypes.mod.TSMappedType_
     - typings.babelTypes.mod.TSMethodSignature_
@@ -297,11 +300,17 @@ package object mod {
     - typings.babelTypes.mod.YieldExpression_
   */
   type Node = typings.babelTypes.mod._Node | typings.babelTypes.mod.NumberLiteral | typings.babelTypes.mod.RegexLiteral | typings.babelTypes.mod.RestProperty | typings.babelTypes.mod.SpreadProperty
+  
   type NumberLiteral = typings.babelTypes.mod.NumericLiteral_
+  
   type RegexLiteral = typings.babelTypes.mod.RegExpLiteral_
+  
   type RestProperty = typings.babelTypes.mod.RestElement_
+  
   type SpreadProperty = typings.babelTypes.mod.SpreadElement_
-  type TraversalAncestors = js.Array[typings.babelTypes.anon.Index]
+  
+  type TraversalAncestors = js.Array[typings.babelTypes.anon.Key]
+  
   type TraversalHandler[T] = js.ThisFunction3[
     /* this */ js.UndefOr[scala.Nothing], 
     /* node */ typings.babelTypes.mod.Node, 

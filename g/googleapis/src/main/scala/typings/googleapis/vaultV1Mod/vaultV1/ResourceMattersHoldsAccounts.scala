@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vault/v1", "vault_v1.Resource$Matters$Holds$Accounts")
 @js.native
 class ResourceMattersHoldsAccounts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * vault.matters.holds.accounts.create
     * @desc Adds a HeldAccount to a hold. Accounts can only be added to a hold
@@ -48,6 +50,7 @@ class ResourceMattersHoldsAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHeldAccount]
   ): Unit = js.native
+  
   /**
     * vault.matters.holds.accounts.delete
     * @desc Removes a HeldAccount from a hold. If this request leaves the hold
@@ -79,6 +82,7 @@ class ResourceMattersHoldsAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * vault.matters.holds.accounts.list
     * @desc Lists HeldAccounts for a hold. This will only list individually
@@ -115,4 +119,3 @@ class ResourceMattersHoldsAccounts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListHeldAccountsResponse]
   ): Unit = js.native
 }
-

@@ -12,7 +12,7 @@ Memorable passwords generator
 | Keywords           | password, generator |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 6449 |
+| # downloads        | 8065 |
 | # stars            | 2 |
 
 ## Links

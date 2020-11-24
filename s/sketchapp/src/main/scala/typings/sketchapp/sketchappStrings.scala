@@ -2,9 +2,166 @@ package typings.sketchapp
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sketchappStrings {
+  
+  @scala.inline
+  def MSImmutableForeignSymbol: MSImmutableForeignSymbol = "MSImmutableForeignSymbol".asInstanceOf[MSImmutableForeignSymbol]
+  
+  @scala.inline
+  def MSImmutableHotspotLayer: MSImmutableHotspotLayer = "MSImmutableHotspotLayer".asInstanceOf[MSImmutableHotspotLayer]
+  
+  @scala.inline
+  def MSImmutablePage: MSImmutablePage = "MSImmutablePage".asInstanceOf[MSImmutablePage]
+  
+  @scala.inline
+  def MSInnerShadow: MSInnerShadow = "MSInnerShadow".asInstanceOf[MSInnerShadow]
+  
+  @scala.inline
+  def MSJSONFileReference: MSJSONFileReference = "MSJSONFileReference".asInstanceOf[MSJSONFileReference]
+  
+  @scala.inline
+  def assetCollection: assetCollection = "assetCollection".asInstanceOf[assetCollection]
+  
+  @scala.inline
+  def attributedString: attributedString = "attributedString".asInstanceOf[attributedString]
+  
+  @scala.inline
+  def back: back = "back".asInstanceOf[back]
+  
+  @scala.inline
+  def border: border = "border".asInstanceOf[border]
+  
+  @scala.inline
+  def borderOptions: borderOptions = "borderOptions".asInstanceOf[borderOptions]
+  
+  @scala.inline
+  def color: color = "color".asInstanceOf[color]
+  
+  @scala.inline
+  def curvePoint: curvePoint = "curvePoint".asInstanceOf[curvePoint]
+  
+  @scala.inline
+  def documentData: documentData = "documentData".asInstanceOf[documentData]
+  
+  @scala.inline
+  def exportOptions: exportOptions = "exportOptions".asInstanceOf[exportOptions]
+  
+  @scala.inline
+  def fill: fill = "fill".asInstanceOf[fill]
+  
+  @scala.inline
+  def fontDescriptor: fontDescriptor = "fontDescriptor".asInstanceOf[fontDescriptor]
+  
+  @scala.inline
+  def gradient: gradient = "gradient".asInstanceOf[gradient]
+  
+  @scala.inline
+  def gradientStop: gradientStop = "gradientStop".asInstanceOf[gradientStop]
+  
+  @scala.inline
+  def graphicsContextSettings: graphicsContextSettings = "graphicsContextSettings".asInstanceOf[graphicsContextSettings]
+  
+  @scala.inline
+  def imageCollection: imageCollection = "imageCollection".asInstanceOf[imageCollection]
+  
+  @scala.inline
+  def imageData: imageData = "imageData".asInstanceOf[imageData]
+  
+  @scala.inline
+  def immutableFlowConnection: immutableFlowConnection = "immutableFlowConnection".asInstanceOf[immutableFlowConnection]
+  
+  @scala.inline
+  def jSONOriginalDataReference: jSONOriginalDataReference = "jSONOriginalDataReference".asInstanceOf[jSONOriginalDataReference]
+  
+  @scala.inline
+  def layoutGrid: layoutGrid = "layoutGrid".asInstanceOf[layoutGrid]
+  
+  @scala.inline
+  def oval: oval = "oval".asInstanceOf[oval]
+  
+  @scala.inline
+  def page: page = "page".asInstanceOf[page]
+  
+  @scala.inline
+  def paragraphStyle: paragraphStyle = "paragraphStyle".asInstanceOf[paragraphStyle]
+  
+  @scala.inline
+  def path: path = "path".asInstanceOf[path]
+  
+  @scala.inline
+  def rect: rect = "rect".asInstanceOf[rect]
+  
+  @scala.inline
+  def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
+  
+  @scala.inline
+  def rulerData: rulerData = "rulerData".asInstanceOf[rulerData]
+  
+  @scala.inline
+  def shadow: shadow = "shadow".asInstanceOf[shadow]
+  
+  @scala.inline
+  def shapePath: shapePath = "shapePath".asInstanceOf[shapePath]
+  
+  @scala.inline
+  def sharedStyle: sharedStyle = "sharedStyle".asInstanceOf[sharedStyle]
+  
+  @scala.inline
+  def sharedStyleContainer: sharedStyleContainer = "sharedStyleContainer".asInstanceOf[sharedStyleContainer]
+  
+  @scala.inline
+  def sharedTextStyleContainer: sharedTextStyleContainer = "sharedTextStyleContainer".asInstanceOf[sharedTextStyleContainer]
+  
+  @scala.inline
+  def simpleGrid: simpleGrid = "simpleGrid".asInstanceOf[simpleGrid]
+  
+  @scala.inline
+  def stringAttribute: stringAttribute = "stringAttribute".asInstanceOf[stringAttribute]
+  
+  @scala.inline
+  def style: style = "style".asInstanceOf[style]
+  
+  @scala.inline
+  def styleBlur: styleBlur = "styleBlur".asInstanceOf[styleBlur]
+  
+  @scala.inline
+  def styleBorder: styleBorder = "styleBorder".asInstanceOf[styleBorder]
+  
+  @scala.inline
+  def styleBorderOptions: styleBorderOptions = "styleBorderOptions".asInstanceOf[styleBorderOptions]
+  
+  @scala.inline
+  def styleColorControls: styleColorControls = "styleColorControls".asInstanceOf[styleColorControls]
+  
+  @scala.inline
+  def styleFill: styleFill = "styleFill".asInstanceOf[styleFill]
+  
+  @scala.inline
+  def styleReflection: styleReflection = "styleReflection".asInstanceOf[styleReflection]
+  
+  @scala.inline
+  def styleShadow: styleShadow = "styleShadow".asInstanceOf[styleShadow]
+  
+  @scala.inline
+  def symbolContainer: symbolContainer = "symbolContainer".asInstanceOf[symbolContainer]
+  
+  @scala.inline
+  def symbolInstance: symbolInstance = "symbolInstance".asInstanceOf[symbolInstance]
+  
+  @scala.inline
+  def symbolMaster: symbolMaster = "symbolMaster".asInstanceOf[symbolMaster]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
+  @scala.inline
+  def textStyle: textStyle = "textStyle".asInstanceOf[textStyle]
+  
+  @scala.inline
+  def triangle: triangle = "triangle".asInstanceOf[triangle]
+  
   @js.native
   sealed trait MSImmutableForeignSymbol extends js.Object
   
@@ -160,110 +317,4 @@ object sketchappStrings {
   
   @js.native
   sealed trait triangle extends js.Object
-  
-  @scala.inline
-  def MSImmutableForeignSymbol: MSImmutableForeignSymbol = "MSImmutableForeignSymbol".asInstanceOf[MSImmutableForeignSymbol]
-  @scala.inline
-  def MSImmutableHotspotLayer: MSImmutableHotspotLayer = "MSImmutableHotspotLayer".asInstanceOf[MSImmutableHotspotLayer]
-  @scala.inline
-  def MSImmutablePage: MSImmutablePage = "MSImmutablePage".asInstanceOf[MSImmutablePage]
-  @scala.inline
-  def MSInnerShadow: MSInnerShadow = "MSInnerShadow".asInstanceOf[MSInnerShadow]
-  @scala.inline
-  def MSJSONFileReference: MSJSONFileReference = "MSJSONFileReference".asInstanceOf[MSJSONFileReference]
-  @scala.inline
-  def assetCollection: assetCollection = "assetCollection".asInstanceOf[assetCollection]
-  @scala.inline
-  def attributedString: attributedString = "attributedString".asInstanceOf[attributedString]
-  @scala.inline
-  def back: back = "back".asInstanceOf[back]
-  @scala.inline
-  def border: border = "border".asInstanceOf[border]
-  @scala.inline
-  def borderOptions: borderOptions = "borderOptions".asInstanceOf[borderOptions]
-  @scala.inline
-  def color: color = "color".asInstanceOf[color]
-  @scala.inline
-  def curvePoint: curvePoint = "curvePoint".asInstanceOf[curvePoint]
-  @scala.inline
-  def documentData: documentData = "documentData".asInstanceOf[documentData]
-  @scala.inline
-  def exportOptions: exportOptions = "exportOptions".asInstanceOf[exportOptions]
-  @scala.inline
-  def fill: fill = "fill".asInstanceOf[fill]
-  @scala.inline
-  def fontDescriptor: fontDescriptor = "fontDescriptor".asInstanceOf[fontDescriptor]
-  @scala.inline
-  def gradient: gradient = "gradient".asInstanceOf[gradient]
-  @scala.inline
-  def gradientStop: gradientStop = "gradientStop".asInstanceOf[gradientStop]
-  @scala.inline
-  def graphicsContextSettings: graphicsContextSettings = "graphicsContextSettings".asInstanceOf[graphicsContextSettings]
-  @scala.inline
-  def imageCollection: imageCollection = "imageCollection".asInstanceOf[imageCollection]
-  @scala.inline
-  def imageData: imageData = "imageData".asInstanceOf[imageData]
-  @scala.inline
-  def immutableFlowConnection: immutableFlowConnection = "immutableFlowConnection".asInstanceOf[immutableFlowConnection]
-  @scala.inline
-  def jSONOriginalDataReference: jSONOriginalDataReference = "jSONOriginalDataReference".asInstanceOf[jSONOriginalDataReference]
-  @scala.inline
-  def layoutGrid: layoutGrid = "layoutGrid".asInstanceOf[layoutGrid]
-  @scala.inline
-  def oval: oval = "oval".asInstanceOf[oval]
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
-  @scala.inline
-  def paragraphStyle: paragraphStyle = "paragraphStyle".asInstanceOf[paragraphStyle]
-  @scala.inline
-  def path: path = "path".asInstanceOf[path]
-  @scala.inline
-  def rect: rect = "rect".asInstanceOf[rect]
-  @scala.inline
-  def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
-  @scala.inline
-  def rulerData: rulerData = "rulerData".asInstanceOf[rulerData]
-  @scala.inline
-  def shadow: shadow = "shadow".asInstanceOf[shadow]
-  @scala.inline
-  def shapePath: shapePath = "shapePath".asInstanceOf[shapePath]
-  @scala.inline
-  def sharedStyle: sharedStyle = "sharedStyle".asInstanceOf[sharedStyle]
-  @scala.inline
-  def sharedStyleContainer: sharedStyleContainer = "sharedStyleContainer".asInstanceOf[sharedStyleContainer]
-  @scala.inline
-  def sharedTextStyleContainer: sharedTextStyleContainer = "sharedTextStyleContainer".asInstanceOf[sharedTextStyleContainer]
-  @scala.inline
-  def simpleGrid: simpleGrid = "simpleGrid".asInstanceOf[simpleGrid]
-  @scala.inline
-  def stringAttribute: stringAttribute = "stringAttribute".asInstanceOf[stringAttribute]
-  @scala.inline
-  def style: style = "style".asInstanceOf[style]
-  @scala.inline
-  def styleBlur: styleBlur = "styleBlur".asInstanceOf[styleBlur]
-  @scala.inline
-  def styleBorder: styleBorder = "styleBorder".asInstanceOf[styleBorder]
-  @scala.inline
-  def styleBorderOptions: styleBorderOptions = "styleBorderOptions".asInstanceOf[styleBorderOptions]
-  @scala.inline
-  def styleColorControls: styleColorControls = "styleColorControls".asInstanceOf[styleColorControls]
-  @scala.inline
-  def styleFill: styleFill = "styleFill".asInstanceOf[styleFill]
-  @scala.inline
-  def styleReflection: styleReflection = "styleReflection".asInstanceOf[styleReflection]
-  @scala.inline
-  def styleShadow: styleShadow = "styleShadow".asInstanceOf[styleShadow]
-  @scala.inline
-  def symbolContainer: symbolContainer = "symbolContainer".asInstanceOf[symbolContainer]
-  @scala.inline
-  def symbolInstance: symbolInstance = "symbolInstance".asInstanceOf[symbolInstance]
-  @scala.inline
-  def symbolMaster: symbolMaster = "symbolMaster".asInstanceOf[symbolMaster]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def textStyle: textStyle = "textStyle".asInstanceOf[textStyle]
-  @scala.inline
-  def triangle: triangle = "triangle".asInstanceOf[triangle]
 }
-

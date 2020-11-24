@@ -9,13 +9,12 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLSpanElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6/components/Text", "Text")
+@JSImport("grommet/components/Text", "Text")
 @js.native
 object Text extends TopLevel[
       FC[
         TextProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], color])
       ]
     ]
-

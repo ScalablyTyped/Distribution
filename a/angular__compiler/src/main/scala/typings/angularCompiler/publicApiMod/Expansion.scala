@@ -3,7 +3,7 @@ package typings.angularCompiler.publicApiMod
 import typings.angularCompiler.i18nAstMod.I18nMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/public_api", "Expansion")
 @js.native
@@ -25,4 +25,3 @@ class Expansion protected ()
     i18n: I18nMeta
   ) = this()
 }
-

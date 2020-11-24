@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__line-ripple
 
-Typings are for version 7.0.0
+Typings are for version 8.0.0
 
 ## Library description:
 The Material Components for the web line-ripple component
@@ -10,9 +10,9 @@ The Material Components for the web line-ripple component
 | ------------------ | :-------------: |
 | Full name          | @material/line-ripple |
 | Keywords           | material components, material design, lineripple, line-ripple |
-| # releases         | 151 |
-| # dependents       | 28 |
-| # downloads        | 1629624 |
+| # releases         | 655 |
+| # dependents       | 36 |
+| # downloads        | 2694299 |
 | # stars            | 0 |
 
 ## Links

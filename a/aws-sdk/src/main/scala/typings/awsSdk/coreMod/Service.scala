@@ -3,7 +3,7 @@ package typings.awsSdk.coreMod
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/lib/core", "Service")
 @js.native
@@ -14,4 +14,3 @@ class Service ()
   extends typings.awsSdk.serviceMod.Service {
   def this(config: ServiceConfigurationOptions) = this()
 }
-

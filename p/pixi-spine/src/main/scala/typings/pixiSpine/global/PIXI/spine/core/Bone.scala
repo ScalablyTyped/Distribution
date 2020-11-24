@@ -2,7 +2,7 @@ package typings.pixiSpine.global.PIXI.spine.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PIXI.spine.core.Bone")
 @js.native
@@ -14,11 +14,10 @@ class Bone protected ()
     parent: typings.pixiSpine.PIXI.spine.core.Bone
   ) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.spine.core.Bone")
 @js.native
 object Bone extends js.Object {
+  
   var yDown: Boolean = js.native
 }
-

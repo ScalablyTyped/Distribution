@@ -2,7 +2,7 @@ package typings.openui5.global.sap.ui.model.analytics.odata4analytics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.analytics.odata4analytics.Parameterization")
 @js.native
@@ -20,4 +20,3 @@ class Parameterization protected ()
     oEntitySet: typings.openui5.sap.ui.model.analytics.odata4analytics.EntitySet
   ) = this()
 }
-

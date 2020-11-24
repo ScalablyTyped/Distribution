@@ -2,7 +2,7 @@ package typings.googlepay.google.payments.api
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Supported environment names to run Google Pay.
@@ -21,11 +21,11 @@ import scala.scalajs.js.annotation._
   - typings.googlepay.googlepayStrings.TEST
 */
 trait Environment extends js.Object
-
 object Environment {
+  
   @scala.inline
   def PRODUCTION: typings.googlepay.googlepayStrings.PRODUCTION = "PRODUCTION".asInstanceOf[typings.googlepay.googlepayStrings.PRODUCTION]
+  
   @scala.inline
   def TEST: typings.googlepay.googlepayStrings.TEST = "TEST".asInstanceOf[typings.googlepay.googlepayStrings.TEST]
 }
-

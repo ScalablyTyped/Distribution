@@ -1,7 +1,7 @@
 
 # Scala.js typings for pg-protocol
 
-Typings are for version 1.2.5
+Typings are for version 1.4.0
 
 ## Library description:
 The postgres client/server binary protocol, implemented in TypeScript
@@ -10,9 +10,9 @@ The postgres client/server binary protocol, implemented in TypeScript
 | ------------------ | :-------------: |
 | Full name          | pg-protocol |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 3453232 |
+| # releases         | 8 |
+| # dependents       | 2 |
+| # downloads        | 9046300 |
 | # stars            | 0 |
 
 ## Links

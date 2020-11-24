@@ -10,10 +10,10 @@ Dead simple Object schema validation
 | ------------------ | :-------------: |
 | Full name          | yup |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 441 |
-| # downloads        | 41360490 |
-| # stars            | 4 |
+| # releases         | 15 |
+| # dependents       | 881 |
+| # downloads        | 69896949 |
+| # stars            | 5 |
 
 ## Links
 - [Homepage](https://github.com/jquense/yup)

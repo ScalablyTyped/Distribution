@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest")
 @js.native
@@ -17,23 +17,26 @@ import scala.scalajs.js.annotation._
   */
 class TpReceiptAddDataRequest () extends ITpReceiptAddDataRequest {
   def this(properties: ITpReceiptAddDataRequest) = this()
+  
   /** TpReceiptAddDataRequest contextId. */
   @JSName("contextId")
   var contextId_TpReceiptAddDataRequest: String = js.native
+  
   /** TpReceiptAddDataRequest data. */
   @JSName("data")
   var data_TpReceiptAddDataRequest: Uint8Array = js.native
+  
   /**
     * Converts this TpReceiptAddDataRequest to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest")
 @js.native
 object TpReceiptAddDataRequest extends js.Object {
+  
   /**
     * Creates a new TpReceiptAddDataRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -41,6 +44,7 @@ object TpReceiptAddDataRequest extends js.Object {
     */
   def create(): TpReceiptAddDataRequest = js.native
   def create(properties: ITpReceiptAddDataRequest): TpReceiptAddDataRequest = js.native
+  
   /**
     * Decodes a TpReceiptAddDataRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -53,6 +57,7 @@ object TpReceiptAddDataRequest extends js.Object {
   def decode(reader: Reader, length: Double): TpReceiptAddDataRequest = js.native
   def decode(reader: Uint8Array): TpReceiptAddDataRequest = js.native
   def decode(reader: Uint8Array, length: Double): TpReceiptAddDataRequest = js.native
+  
   /**
     * Decodes a TpReceiptAddDataRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -62,6 +67,7 @@ object TpReceiptAddDataRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): TpReceiptAddDataRequest = js.native
   def decodeDelimited(reader: Uint8Array): TpReceiptAddDataRequest = js.native
+  
   /**
     * Encodes the specified TpReceiptAddDataRequest message. Does not implicitly {@link TpReceiptAddDataRequest.verify|verify} messages.
     * @param message TpReceiptAddDataRequest message or plain object to encode
@@ -70,6 +76,7 @@ object TpReceiptAddDataRequest extends js.Object {
     */
   def encode(message: ITpReceiptAddDataRequest): Writer = js.native
   def encode(message: ITpReceiptAddDataRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified TpReceiptAddDataRequest message, length delimited. Does not implicitly {@link TpReceiptAddDataRequest.verify|verify} messages.
     * @param message TpReceiptAddDataRequest message or plain object to encode
@@ -78,12 +85,14 @@ object TpReceiptAddDataRequest extends js.Object {
     */
   def encodeDelimited(message: ITpReceiptAddDataRequest): Writer = js.native
   def encodeDelimited(message: ITpReceiptAddDataRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a TpReceiptAddDataRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns TpReceiptAddDataRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): TpReceiptAddDataRequest = js.native
+  
   /**
     * Creates a plain object from a TpReceiptAddDataRequest message. Also converts values to other types if specified.
     * @param message TpReceiptAddDataRequest
@@ -92,6 +101,7 @@ object TpReceiptAddDataRequest extends js.Object {
     */
   def toObject(message: TpReceiptAddDataRequest): StringDictionary[js.Any] = js.native
   def toObject(message: TpReceiptAddDataRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a TpReceiptAddDataRequest message.
     * @param message Plain object to verify
@@ -99,4 +109,3 @@ object TpReceiptAddDataRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

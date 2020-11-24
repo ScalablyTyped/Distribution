@@ -2,7 +2,7 @@ package typings.seleniumWebdriver.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Indicates a navigation event caused the browser to generate a certificate
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 class InsecureCertificateError () extends WebDriverError {
   def this(message: String) = this()
 }
-

@@ -3,11 +3,12 @@ package typings.echarts.echartsMod
 import typings.echarts.echarts.MapObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("echarts/lib/echarts", "getMap")
 @js.native
 object getMap extends js.Object {
+  
   /**
     * Get a registed map.
     *
@@ -16,4 +17,3 @@ object getMap extends js.Object {
     */
   def apply(mapName: String): MapObj = js.native
 }
-

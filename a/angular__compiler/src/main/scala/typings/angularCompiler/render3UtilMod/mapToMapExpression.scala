@@ -5,11 +5,11 @@ import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.outputAstMod.LiteralMapExpr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/render3/util", "mapToMapExpression")
 @js.native
 object mapToMapExpression extends js.Object {
+  
   def apply(map: StringDictionary[js.UndefOr[Expression]]): LiteralMapExpr = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.angularCompiler.srcCompilerMod
 import typings.angularCompiler.outputAstMod.FnParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compiler", "ClassMethod")
 @js.native
@@ -74,4 +74,3 @@ class ClassMethod protected ()
     modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier]
   ) = this()
 }
-

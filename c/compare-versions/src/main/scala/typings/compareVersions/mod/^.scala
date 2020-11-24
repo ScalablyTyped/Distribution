@@ -5,11 +5,12 @@ import typings.compareVersions.compareVersionsNumbers.`0`
 import typings.compareVersions.compareVersionsNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("compare-versions", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Compare [semver](https://semver.org/) version strings to find greater, equal or lesser.
     * This library supports the full semver specification, including comparing versions with different number of digits like `1.0.0`, `1.0`, `1`, and pre-release versions like `1.0.0-alpha`.
@@ -18,6 +19,7 @@ object ^ extends js.Object {
     * @returns Numeric value compatible with the [Array.sort(fn) interface](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Parameters).
     */
   def apply(firstVersion: String, secondVersion: String): `1` | `0` | `-1` = js.native
+  
   /**
     * Compare [semver](https://semver.org/) version strings using the specified operator.
     * 
@@ -36,6 +38,7 @@ object ^ extends js.Object {
     * ```
     */
   def compare(firstVersion: String, secondVersion: String, operator: CompareOperator): Boolean = js.native
+  
   /**
     * Validate [semver](https://semver.org/) version strings.
     * 
@@ -51,4 +54,3 @@ object ^ extends js.Object {
     */
   def validate(version: String): Boolean = js.native
 }
-

@@ -3,10 +3,11 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFBuiltInPropertyDef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultPropertyDefOperationsAsync extends js.Object {
+  
   def AddPropertyDefAdmin(PropertyDefAdmin: IPropertyDefAdmin, ResetLastUsedValue: ITypedValue): Unit = js.native
   def AddPropertyDefAdmin(
     PropertyDefAdmin: IPropertyDefAdmin,
@@ -53,6 +54,7 @@ trait IVaultPropertyDefOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetBuiltInPropertyDef(PropertyDefType: MFBuiltInPropertyDef): Unit = js.native
   def GetBuiltInPropertyDef(
     PropertyDefType: MFBuiltInPropertyDef,
@@ -92,6 +94,7 @@ trait IVaultPropertyDefOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetPropertyDef(PropertyDef: Double): Unit = js.native
   def GetPropertyDef(
     PropertyDef: Double,
@@ -164,6 +167,7 @@ trait IVaultPropertyDefOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetPropertyDefAdmin(PropertyDef: Double): Unit = js.native
   def GetPropertyDefAdmin(
     PropertyDef: Double,
@@ -239,6 +243,7 @@ trait IVaultPropertyDefOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetPropertyDefIDByAlias(Alias: String): Unit = js.native
   def GetPropertyDefIDByAlias(
     Alias: String,
@@ -275,6 +280,7 @@ trait IVaultPropertyDefOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetPropertyDefIDByGUID(PropertyDefGUID: String): Unit = js.native
   def GetPropertyDefIDByGUID(
     PropertyDefGUID: String,
@@ -311,6 +317,7 @@ trait IVaultPropertyDefOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetPropertyDefs(): Unit = js.native
   def GetPropertyDefs(
     successCallback: js.UndefOr[scala.Nothing],
@@ -341,6 +348,7 @@ trait IVaultPropertyDefOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetPropertyDefsAdmin(): Unit = js.native
   def GetPropertyDefsAdmin(
     successCallback: js.UndefOr[scala.Nothing],
@@ -371,6 +379,7 @@ trait IVaultPropertyDefOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def Recalculate(PropertyDef: Double, RecalculateCurrentlyEmptyValuesOnly: Boolean): Unit = js.native
   def Recalculate(
     PropertyDef: Double,
@@ -463,6 +472,7 @@ trait IVaultPropertyDefOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RemovePropertyDefAdmin(
     PropertyDef: Double,
     CopyToAnotherPropertyDef: Boolean,
@@ -609,6 +619,7 @@ trait IVaultPropertyDefOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdatePropertyDefAdmin(PropertyDefAdmin: IPropertyDefAdmin, ResetLastUsedValue: ITypedValue): Unit = js.native
   def UpdatePropertyDefAdmin(
     PropertyDefAdmin: IPropertyDefAdmin,
@@ -655,6 +666,7 @@ trait IVaultPropertyDefOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdatePropertyDefWithAutomaticPermissionsAdmin(
     PropertyDefAdmin: IPropertyDefAdmin,
     ResetLastUsedValue: ITypedValue,
@@ -713,4 +725,3 @@ trait IVaultPropertyDefOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

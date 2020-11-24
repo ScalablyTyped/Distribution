@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Globalization.NumberFormatting
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RoundingAlgorithm extends js.Object
-
 /** Specifies the algorithm used to round numbers. */
 @JSGlobal("Windows.Globalization.NumberFormatting.RoundingAlgorithm")
 @js.native
 object RoundingAlgorithm extends js.Object {
+  
   /** No rounding is performed. */
   @js.native
   sealed trait none extends RoundingAlgorithm
@@ -54,6 +54,4 @@ object RoundingAlgorithm extends js.Object {
   /** Round towards infinity. (Return the smallest integer, increment, or significant digit which is not less than the input.) */
   @js.native
   sealed trait roundUp extends RoundingAlgorithm
-  
 }
-

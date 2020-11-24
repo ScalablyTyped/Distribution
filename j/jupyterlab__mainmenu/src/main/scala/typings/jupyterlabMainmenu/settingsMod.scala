@@ -5,11 +5,12 @@ import typings.jupyterlabMainmenu.labmenuMod.JupyterLabMenu
 import typings.luminoWidgets.menuMod.Menu.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/mainmenu/lib/settings", JSImport.Namespace)
 @js.native
 object settingsMod extends js.Object {
+  
   @js.native
   class SettingsMenu protected () extends JupyterLabMenu {
     /**
@@ -20,4 +21,3 @@ object settingsMod extends js.Object {
   
   type ISettingsMenu = IJupyterLabMenu
 }
-

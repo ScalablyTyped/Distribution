@@ -4,9 +4,130 @@ import typings.yaml.typesMod.Schema.Name
 import typings.yaml.typesMod.Schema.TagId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yamlStrings {
+  
+  @scala.inline
+  def `1Dot0`: `1Dot0` = "1.0".asInstanceOf[`1Dot0`]
+  
+  @scala.inline
+  def `1Dot1`: `1Dot1` = "1.1".asInstanceOf[`1Dot1`]
+  
+  @scala.inline
+  def `1Dot2`: `1Dot2` = "1.2".asInstanceOf[`1Dot2`]
+  
+  @scala.inline
+  def BIN: BIN = "BIN".asInstanceOf[BIN]
+  
+  @scala.inline
+  def CLIP: CLIP = "CLIP".asInstanceOf[CLIP]
+  
+  @scala.inline
+  def Colon: Colon = ":".asInstanceOf[Colon]
+  
+  @scala.inline
+  def Comma: Comma = ",".asInstanceOf[Comma]
+  
+  @scala.inline
+  def HEX: HEX = "HEX".asInstanceOf[HEX]
+  
+  @scala.inline
+  def KEEP: KEEP = "KEEP".asInstanceOf[KEEP]
+  
+  @scala.inline
+  def Leftcurlybracket: Leftcurlybracket = "{".asInstanceOf[Leftcurlybracket]
+  
+  @scala.inline
+  def OCT: OCT = "OCT".asInstanceOf[OCT]
+  
+  @scala.inline
+  def Questionmark: Questionmark = "?".asInstanceOf[Questionmark]
+  
+  @scala.inline
+  def Rightcurlybracket: Rightcurlybracket = "}".asInstanceOf[Rightcurlybracket]
+  
+  @scala.inline
+  def STRIP: STRIP = "STRIP".asInstanceOf[STRIP]
+  
+  @scala.inline
+  def TIME: TIME = "TIME".asInstanceOf[TIME]
+  
+  @scala.inline
+  def YAMLReferenceError: YAMLReferenceError = "YAMLReferenceError".asInstanceOf[YAMLReferenceError]
+  
+  @scala.inline
+  def YAMLSemanticError: YAMLSemanticError = "YAMLSemanticError".asInstanceOf[YAMLSemanticError]
+  
+  @scala.inline
+  def YAMLSyntaxError: YAMLSyntaxError = "YAMLSyntaxError".asInstanceOf[YAMLSyntaxError]
+  
+  @scala.inline
+  def YAMLWarning: YAMLWarning = "YAMLWarning".asInstanceOf[YAMLWarning]
+  
+  @scala.inline
+  def `[`: `[` = "[".asInstanceOf[`[`]
+  
+  @scala.inline
+  def `]`: `]` = "]".asInstanceOf[`]`]
+  
+  @scala.inline
+  def binary: binary = "binary".asInstanceOf[binary]
+  
+  @scala.inline
+  def bool: bool = "bool".asInstanceOf[bool]
+  
+  @scala.inline
+  def core: core = "core".asInstanceOf[core]
+  
+  @scala.inline
+  def failsafe: failsafe = "failsafe".asInstanceOf[failsafe]
+  
+  @scala.inline
+  def float: float = "float".asInstanceOf[float]
+  
+  @scala.inline
+  def floatExp: floatExp = "floatExp".asInstanceOf[floatExp]
+  
+  @scala.inline
+  def floatNaN: floatNaN = "floatNaN".asInstanceOf[floatNaN]
+  
+  @scala.inline
+  def floatTime: floatTime = "floatTime".asInstanceOf[floatTime]
+  
+  @scala.inline
+  def int: int = "int".asInstanceOf[int]
+  
+  @scala.inline
+  def intHex: intHex = "intHex".asInstanceOf[intHex]
+  
+  @scala.inline
+  def intOct: intOct = "intOct".asInstanceOf[intOct]
+  
+  @scala.inline
+  def intTime: intTime = "intTime".asInstanceOf[intTime]
+  
+  @scala.inline
+  def json: json = "json".asInstanceOf[json]
+  
+  @scala.inline
+  def `null`: `null` = "null".asInstanceOf[`null`]
+  
+  @scala.inline
+  def omap: omap = "omap".asInstanceOf[omap]
+  
+  @scala.inline
+  def pairs: pairs = "pairs".asInstanceOf[pairs]
+  
+  @scala.inline
+  def set: set = "set".asInstanceOf[set]
+  
+  @scala.inline
+  def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
+  
+  @scala.inline
+  def `yaml-1Dot1`: `yaml-1Dot1` = "yaml-1.1".asInstanceOf[`yaml-1Dot1`]
+  
   @js.native
   sealed trait `1Dot0` extends js.Object
   
@@ -126,86 +247,4 @@ object yamlStrings {
   
   @js.native
   sealed trait `yaml-1Dot1` extends Name
-  
-  @scala.inline
-  def `1Dot0`: `1Dot0` = "1.0".asInstanceOf[`1Dot0`]
-  @scala.inline
-  def `1Dot1`: `1Dot1` = "1.1".asInstanceOf[`1Dot1`]
-  @scala.inline
-  def `1Dot2`: `1Dot2` = "1.2".asInstanceOf[`1Dot2`]
-  @scala.inline
-  def BIN: BIN = "BIN".asInstanceOf[BIN]
-  @scala.inline
-  def CLIP: CLIP = "CLIP".asInstanceOf[CLIP]
-  @scala.inline
-  def Colon: Colon = ":".asInstanceOf[Colon]
-  @scala.inline
-  def Comma: Comma = ",".asInstanceOf[Comma]
-  @scala.inline
-  def HEX: HEX = "HEX".asInstanceOf[HEX]
-  @scala.inline
-  def KEEP: KEEP = "KEEP".asInstanceOf[KEEP]
-  @scala.inline
-  def Leftcurlybracket: Leftcurlybracket = "{".asInstanceOf[Leftcurlybracket]
-  @scala.inline
-  def OCT: OCT = "OCT".asInstanceOf[OCT]
-  @scala.inline
-  def Questionmark: Questionmark = "?".asInstanceOf[Questionmark]
-  @scala.inline
-  def Rightcurlybracket: Rightcurlybracket = "}".asInstanceOf[Rightcurlybracket]
-  @scala.inline
-  def STRIP: STRIP = "STRIP".asInstanceOf[STRIP]
-  @scala.inline
-  def TIME: TIME = "TIME".asInstanceOf[TIME]
-  @scala.inline
-  def YAMLReferenceError: YAMLReferenceError = "YAMLReferenceError".asInstanceOf[YAMLReferenceError]
-  @scala.inline
-  def YAMLSemanticError: YAMLSemanticError = "YAMLSemanticError".asInstanceOf[YAMLSemanticError]
-  @scala.inline
-  def YAMLSyntaxError: YAMLSyntaxError = "YAMLSyntaxError".asInstanceOf[YAMLSyntaxError]
-  @scala.inline
-  def YAMLWarning: YAMLWarning = "YAMLWarning".asInstanceOf[YAMLWarning]
-  @scala.inline
-  def `[`: `[` = "[".asInstanceOf[`[`]
-  @scala.inline
-  def `]`: `]` = "]".asInstanceOf[`]`]
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
-  @scala.inline
-  def bool: bool = "bool".asInstanceOf[bool]
-  @scala.inline
-  def core: core = "core".asInstanceOf[core]
-  @scala.inline
-  def failsafe: failsafe = "failsafe".asInstanceOf[failsafe]
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
-  @scala.inline
-  def floatExp: floatExp = "floatExp".asInstanceOf[floatExp]
-  @scala.inline
-  def floatNaN: floatNaN = "floatNaN".asInstanceOf[floatNaN]
-  @scala.inline
-  def floatTime: floatTime = "floatTime".asInstanceOf[floatTime]
-  @scala.inline
-  def int: int = "int".asInstanceOf[int]
-  @scala.inline
-  def intHex: intHex = "intHex".asInstanceOf[intHex]
-  @scala.inline
-  def intOct: intOct = "intOct".asInstanceOf[intOct]
-  @scala.inline
-  def intTime: intTime = "intTime".asInstanceOf[intTime]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def `null`: `null` = "null".asInstanceOf[`null`]
-  @scala.inline
-  def omap: omap = "omap".asInstanceOf[omap]
-  @scala.inline
-  def pairs: pairs = "pairs".asInstanceOf[pairs]
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
-  @scala.inline
-  def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
-  @scala.inline
-  def `yaml-1Dot1`: `yaml-1Dot1` = "yaml-1.1".asInstanceOf[`yaml-1Dot1`]
 }
-

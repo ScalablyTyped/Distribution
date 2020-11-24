@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The {@link AccessibleDrawDocumentView} service is implemented by views of Draw and Impress documents.
@@ -36,8 +36,8 @@ trait AccessibleDrawDocumentView
   extends XAccessible
      with XAccessibleContext
      with XAccessibleComponent
-
 object AccessibleDrawDocumentView {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -84,4 +84,3 @@ object AccessibleDrawDocumentView {
     __obj.asInstanceOf[AccessibleDrawDocumentView]
   }
 }
-

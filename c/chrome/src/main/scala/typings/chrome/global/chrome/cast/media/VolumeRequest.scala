@@ -3,7 +3,7 @@ package typings.chrome.global.chrome.cast.media
 import typings.chrome.chrome.cast.Volume
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.cast.media.VolumeRequest")
 @js.native
@@ -16,4 +16,3 @@ class VolumeRequest protected ()
     */
   def this(volume: Volume) = this()
 }
-

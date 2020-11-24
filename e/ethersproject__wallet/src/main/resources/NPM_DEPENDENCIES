@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ethersproject/wallet" : "5.0.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ethersproject/wallet" : "5.0.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

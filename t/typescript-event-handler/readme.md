@@ -12,7 +12,7 @@ Event handler written in Typescript.
 | Keywords           | Typescript, Events |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 523 |
+| # downloads        | 245 |
 | # stars            | 0 |
 
 ## Links

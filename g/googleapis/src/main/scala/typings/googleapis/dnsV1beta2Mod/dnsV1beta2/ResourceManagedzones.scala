@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dns/v1beta2", "dns_v1beta2.Resource$Managedzones")
 @js.native
 class ResourceManagedzones protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dns.managedZones.create
     * @alias dns.managedZones.create
@@ -42,6 +44,7 @@ class ResourceManagedzones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaManagedZone]
   ): Unit = js.native
+  
   /**
     * dns.managedZones.delete
     * @alias dns.managedZones.delete
@@ -71,6 +74,7 @@ class ResourceManagedzones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * dns.managedZones.get
     * @alias dns.managedZones.get
@@ -100,6 +104,7 @@ class ResourceManagedzones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaManagedZone]
   ): Unit = js.native
+  
   /**
     * dns.managedZones.list
     * @alias dns.managedZones.list
@@ -133,6 +138,7 @@ class ResourceManagedzones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaManagedZonesListResponse]
   ): Unit = js.native
+  
   /**
     * dns.managedZones.patch
     * @alias dns.managedZones.patch
@@ -163,6 +169,7 @@ class ResourceManagedzones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * dns.managedZones.update
     * @alias dns.managedZones.update
@@ -194,4 +201,3 @@ class ResourceManagedzones protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

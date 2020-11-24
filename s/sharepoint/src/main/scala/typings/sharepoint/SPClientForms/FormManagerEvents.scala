@@ -2,14 +2,14 @@ package typings.sharepoint.SPClientForms
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FormManagerEvents extends js.Object
-
 @JSGlobal("SPClientForms.FormManagerEvents")
 @js.native
 object FormManagerEvents extends js.Object {
+  
    // : 4,
   @js.native
   sealed trait Event_GetControlValueCallback extends FormManagerEvents
@@ -36,6 +36,4 @@ object FormManagerEvents extends js.Object {
    // : 6,
   @js.native
   sealed trait Event_RegisterControlValidator extends FormManagerEvents
-  
 }
-

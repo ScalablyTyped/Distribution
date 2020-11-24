@@ -11,8 +11,8 @@ Local storage persister for @pollyjs
 | Full name          | @pollyjs/persister-local-storage |
 | Keywords           | polly, pollyjs, record, replay, local-storage, persister |
 | # releases         | 19 |
-| # dependents       | 2 |
-| # downloads        | 60862 |
+| # dependents       | 3 |
+| # downloads        | 77284 |
 | # stars            | 0 |
 
 ## Links

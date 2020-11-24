@@ -2,10 +2,11 @@ package typings.immutable.Immutable
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OrderedSet[T] extends Set[T] {
+  
   /**
     * Returns a new OrderedSet with only the values for which the `predicate`
     * function returns true.
@@ -20,6 +21,7 @@ trait OrderedSet[T] extends Set[T] {
     predicate: js.Function3[/* value */ T, /* key */ T, /* iter */ this.type, /* is F */ Boolean],
     context: js.Any
   ): OrderedSet[F] = js.native
+  
   def zip(collections: (Collection[_, _])*): OrderedSet[_] = js.native
   /**
     * Returns an OrderedSet of the same type "zipped" with the provided
@@ -36,6 +38,7 @@ trait OrderedSet[T] extends Set[T] {
     */
   def zip[U](other: Collection[_, U]): OrderedSet[js.Tuple2[T, U]] = js.native
   def zip[U, V](other1: Collection[_, U], other2: Collection[_, V]): OrderedSet[js.Tuple3[T, U, V]] = js.native
+  
   def zipAll(collections: (Collection[_, _])*): OrderedSet[_] = js.native
   /**
     * Returns a OrderedSet of the same type "zipped" with the provided
@@ -56,6 +59,7 @@ trait OrderedSet[T] extends Set[T] {
     */
   def zipAll[U](other: Collection[_, U]): OrderedSet[js.Tuple2[T, U]] = js.native
   def zipAll[U, V](other1: Collection[_, U], other2: Collection[_, V]): OrderedSet[js.Tuple3[T, U, V]] = js.native
+  
   def zipWith[Z](zipper: js.Function1[/* repeated */ js.Any, Z], collections: (Collection[_, _])*): OrderedSet[Z] = js.native
   /**
     * Returns an OrderedSet of the same type "zipped" with the provided
@@ -70,4 +74,3 @@ trait OrderedSet[T] extends Set[T] {
     thirdCollection: Collection[_, V]
   ): OrderedSet[Z] = js.native
 }
-

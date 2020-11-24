@@ -3,11 +3,12 @@ package typings.openui5.global.sap.ui
 import typings.openui5.sap.ui.core.mvc.JSView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.jsview")
 @js.native
 object jsview extends js.Object {
+  
   /**
     * Defines or creates an instance of a JavaScript view.The behavior of this method depends on the
     * signature of the call and on the current context.<ul><li>View Definition <code>sap.ui.jsview(sId,
@@ -32,4 +33,3 @@ object jsview extends js.Object {
   //  Defines or creates an instance of a JavaScript view.
   def apply(vView: js.Any): JSView = js.native
 }
-

@@ -5,11 +5,12 @@ import typings.googleAuthLibrary.jwtclientMod.JWTOptions
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin", "auth")
 @js.native
 object auth extends TopLevel[AuthPlus] {
+  
   @js.native
   /**
     * Google Compute Engine service account credentials.
@@ -37,6 +38,4 @@ object auth extends TopLevel[AuthPlus] {
       */
     def this(options: JWTOptions) = this()
   }
-  
 }
-

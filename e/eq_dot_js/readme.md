@@ -10,8 +10,8 @@ Element queries, fast and light
 | Full name          | eq.js |
 | Keywords           | Element Queries, Responsive Web Design, JavaScript, RWD |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 16326 |
+| # dependents       | 3 |
+| # downloads        | 28666 |
 | # stars            | 1 |
 
 ## Links

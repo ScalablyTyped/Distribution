@@ -8,16 +8,16 @@ import typings.tstl.arrayReverseIteratorMod.ArrayReverseIterator
 import typings.tstl.icontainerMod.IContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon", "collections.DequeCollection")
 @js.native
 class DequeCollection[T] ()
   extends typings.ecol.dequeCollectionMod.DequeCollection[T]
-
 @JSImport("samchon", "collections.DequeCollection")
 @js.native
 object DequeCollection extends js.Object {
+  
   val Event: Instantiable3[
     /* type */ String, 
     /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* first */ js.Any, 
@@ -47,6 +47,7 @@ object DequeCollection extends js.Object {
       ]
     ]
   ] = js.native
+  
   val Iterator: Instantiable0[
     ArrayIterator[
       js.Object, 
@@ -66,6 +67,7 @@ object DequeCollection extends js.Object {
       ]
     ]
   ] = js.native
+  
   val ReverseIterator: Instantiable0[
     ArrayReverseIterator[
       js.Object, 
@@ -86,4 +88,3 @@ object DequeCollection extends js.Object {
     ]
   ] = js.native
 }
-

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "glob-base"
-version := "0.3-dt-20200515Z-e4fcc5"
+version := "0.3-dt-20200515Z-7b5150"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

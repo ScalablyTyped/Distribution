@@ -11,8 +11,8 @@ Return true if a file path is (or has) a dotfile. Returns false if the path is a
 | Full name          | is-dotfile |
 | Keywords           | detect, dot, dotfile, expression, file, filepath, find, fs, is, match, path, regex, regexp, regular |
 | # releases         | 0 |
-| # dependents       | 49 |
-| # downloads        | 236567608 |
+| # dependents       | 57 |
+| # downloads        | 183414260 |
 | # stars            | 2 |
 
 ## Links

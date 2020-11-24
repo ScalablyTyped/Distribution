@@ -2,13 +2,17 @@ package typings.igniteUi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IgTreeGridResizingMethods extends js.Object {
+  
   def changeGlobalLanguage(): Unit = js.native
+  
   def changeGlobalRegional(): Unit = js.native
+  
   def destroy(): Unit = js.native
+  
   /**
     * Resizes a column to a specified width in pixels, percents or auto if no width is specified.
     *
@@ -18,4 +22,3 @@ trait IgTreeGridResizingMethods extends js.Object {
   def resize(column: js.Object): Unit = js.native
   def resize(column: js.Object, width: js.Object): Unit = js.native
 }
-

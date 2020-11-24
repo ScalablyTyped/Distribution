@@ -2,7 +2,7 @@ package typings.openui5.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the controls which are suitable to shrink.This means the control should still look
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IShrinkable extends js.Object
-

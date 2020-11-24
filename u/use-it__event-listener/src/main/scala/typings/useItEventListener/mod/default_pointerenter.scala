@@ -7,11 +7,12 @@ import typings.std.Window
 import typings.useItEventListener.useItEventListenerStrings.pointerenter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@use-it/event-listener", JSImport.Default)
 @js.native
 object default_pointerenter extends js.Object {
+  
   def apply(eventName: pointerenter, handler: PointerEvent): Unit = js.native
   def apply(
     eventName: pointerenter,
@@ -44,4 +45,3 @@ object default_pointerenter extends js.Object {
   def apply(eventName: pointerenter, handler: PointerEvent, element: Window): Unit = js.native
   def apply(eventName: pointerenter, handler: PointerEvent, element: Window, options: Options): Unit = js.native
 }
-

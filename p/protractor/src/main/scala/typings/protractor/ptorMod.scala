@@ -23,57 +23,91 @@ import typings.seleniumWebdriver.mod.WebDriver
 import typings.seleniumWebdriver.mod.WebElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor/built/ptor", JSImport.Namespace)
 @js.native
 object ptorMod extends js.Object {
+  
   @js.native
   class Ptor () extends js.Object {
+    
+    @JSName("$")
+    def $(search: String): ElementFinder = js.native
+    
     var ActionSequence: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof webdriver.ActionSequence */ js.Any = js.native
+    
     var Browser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webdriver.IBrowser */ js.Any = js.native
+    
     var Builder: Instantiable0[typings.seleniumWebdriver.mod.Builder] = js.native
+    
     var Button: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webdriver.IButton */ js.Any = js.native
+    
     var By: ProtractorBy = js.native
+    
     var Capabilities: TypeofCapabilities = js.native
+    
     var Capability: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webdriver.ICapability */ js.Any = js.native
+    
     var Command: js.Any = js.native
+    
     var CommandName: js.Any = js.native
+    
+    @JSName("$$")
+    def DollarDollar(search: String): ElementArrayFinder = js.native
+    
     var ElementArrayFinder: js.Any = js.native
+    
     var ElementFinder: js.Any = js.native
+    
     var EventEmitter: Instantiable0[typings.seleniumWebdriver.mod.EventEmitter] = js.native
+    
     var ExpectedConditions: ProtractorExpectedConditions = js.native
+    
     var FileDetector: Instantiable0[typings.seleniumWebdriver.mod.FileDetector] = js.native
+    
     var Key: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webdriver.IKey */ js.Any = js.native
+    
     var ProtractorBrowser: js.Any = js.native
+    
     var ProtractorBy: js.Any = js.native
+    
     var ProtractorExpectedConditions: js.Any = js.native
+    
     var Session: Instantiable2[
         /* id */ String, 
         /* capabilities */ Capabilities, 
         typings.seleniumWebdriver.mod.Session
       ] = js.native
+    
     var WebDriver: TypeofWebDriver = js.native
+    
     var WebElement: TypeofWebElement = js.native
+    
     var WebElementPromise: Instantiable2[
         /* driver */ WebDriver, 
         /* el */ js.Promise[WebElement], 
         typings.seleniumWebdriver.mod.WebElementPromise
       ] = js.native
+    
     var browser: ProtractorBrowser = js.native
+    
     var by: ProtractorBy = js.native
+    
+    def element(locator: Locator): ElementFinder = js.native
     @JSName("element")
     var element_Original: ElementHelper = js.native
+    
     var error: Typeoferror = js.native
+    
     var logging: Typeoflogging = js.native
+    
     var promise: Typeofpromise = js.native
+    
     var until: Typeofuntil = js.native
+    
     var utils: Chrome = js.native
-    @JSName("$")
-    def $(search: String): ElementFinder = js.native
-    @JSName("$$")
-    def DollarDollar(search: String): ElementArrayFinder = js.native
-    def element(locator: Locator): ElementFinder = js.native
+    
     def wrapDriver(webdriver: WebDriver): ProtractorBrowser = js.native
     def wrapDriver(
       webdriver: WebDriver,
@@ -101,6 +135,7 @@ object ptorMod extends js.Object {
   
   @js.native
   object protractor extends TopLevel[Ptor] {
+    
     @js.native
     // region Constructors
     /**
@@ -146,8 +181,5 @@ object ptorMod extends js.Object {
         */
       def this(driver: WebDriver, el: js.Promise[WebElement]) = this()
     }
-    
   }
-  
 }
-

@@ -3,7 +3,7 @@ package typings.jsrsasign.mod.KJUR.asn1.x509
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * RDN (Relative Distinguished Name) ASN.1 structure class
@@ -36,11 +36,11 @@ class RDN ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.RDN {
   def this(params: StringParam) = this()
 }
-
 /* static members */
 @JSImport("jsrsasign", "KJUR.asn1.x509.RDN")
 @js.native
 object RDN extends js.Object {
+  
   /**
     * parse multi-valued RDN string and split into array of 'AttributeTypeAndValue'
     * @param s multi-valued string of RDN
@@ -57,4 +57,3 @@ object RDN extends js.Object {
     */
   def parseString(s: String): js.Array[String] = js.native
 }
-

@@ -10,9 +10,9 @@ Webpack block for style loader, file loader, url loader and friends.
 | ------------------ | :-------------: |
 | Full name          | @webpack-blocks/assets |
 | Keywords           | webpack, webpack-blocks |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 5 |
-| # downloads        | 128288 |
+| # downloads        | 114116 |
 | # stars            | 0 |
 
 ## Links

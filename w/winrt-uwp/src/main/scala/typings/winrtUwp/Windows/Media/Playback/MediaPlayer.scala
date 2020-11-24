@@ -22,77 +22,12 @@ import typings.winrtUwp.winrtUwpStrings.seekcompleted
 import typings.winrtUwp.winrtUwpStrings.volumechanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to media playback functionality such as play, pause, fast-forward, rewind, and volume. */
 @js.native
 trait MediaPlayer extends js.Object {
-  /** Gets or sets the type of audio that is currently being played. */
-  var audioCategory: MediaPlayerAudioCategory = js.native
-  /** Gets or sets a value that describes the primary usage of the device that is being used to play back audio. */
-  var audioDeviceType: MediaPlayerAudioDeviceType = js.native
-  /** Gets or sets a Boolean value indicating if playback automatically starts after the media is loaded. */
-  var autoPlay: Boolean = js.native
-  /** Gets the amount of buffering that is completed for the media content, expressed as a percentage. */
-  var bufferingProgress: Double = js.native
-  /** Gets a Boolean value indicating if the media can be paused. */
-  var canPause: Boolean = js.native
-  /** Gets a Boolean value indicating if the media supports seeking to a specific position. */
-  var canSeek: Boolean = js.native
-  /** Gets the current state of media playback. */
-  var currentState: MediaPlayerState = js.native
-  /** Gets or sets a Boolean value indicating if the media will playback in a repeating loop. */
-  var isLoopingEnabled: Boolean = js.native
-  /** Gets or sets a Boolean value indicating if the audio is muted. */
-  var isMuted: Boolean = js.native
-  /** Gets a Boolean value indicating if the content is protected by a digital rights management system. */
-  var isProtected: Boolean = js.native
-  /** Get the actual duration of the media without applying the PlaybackRate . */
-  var naturalDuration: Double = js.native
-  /** Occurs when buffering has finished. */
-  @JSName("onbufferingended")
-  var onbufferingended_Original: TypedEventHandler[MediaPlayer, _] = js.native
-  /** Occurs when buffering has started. */
-  @JSName("onbufferingstarted")
-  var onbufferingstarted_Original: TypedEventHandler[MediaPlayer, _] = js.native
-  /** Occurs when the state of the media player has changed. */
-  @JSName("oncurrentstatechanged")
-  var oncurrentstatechanged_Original: TypedEventHandler[MediaPlayer, _] = js.native
-  /** Occurs when the media has finished playback. */
-  @JSName("onmediaended")
-  var onmediaended_Original: TypedEventHandler[MediaPlayer, _] = js.native
-  /** Occurs when an error is encountered. */
-  @JSName("onmediafailed")
-  var onmediafailed_Original: TypedEventHandler[MediaPlayer, MediaPlayerFailedEventArgs] = js.native
-  /** Occurs when the media is opened. */
-  @JSName("onmediaopened")
-  var onmediaopened_Original: TypedEventHandler[MediaPlayer, _] = js.native
-  /** Occurs when the media playback rate has changed. */
-  @JSName("onmediaplayerratechanged")
-  var onmediaplayerratechanged_Original: TypedEventHandler[MediaPlayer, MediaPlayerRateChangedEventArgs] = js.native
-  /** Occurs when a media marker has been reached during playback. */
-  @JSName("onplaybackmediamarkerreached")
-  var onplaybackmediamarkerreached_Original: TypedEventHandler[MediaPlayer, PlaybackMediaMarkerReachedEventArgs] = js.native
-  /** Occurs when a seek operation has finished. */
-  @JSName("onseekcompleted")
-  var onseekcompleted_Original: TypedEventHandler[MediaPlayer, _] = js.native
-  /** Occurs when the volume of the audio has changed. */
-  @JSName("onvolumechanged")
-  var onvolumechanged_Original: TypedEventHandler[MediaPlayer, _] = js.native
-  /** Gets the collection of timeline markers for the media. */
-  var playbackMediaMarkers: PlaybackMediaMarkerSequence = js.native
-  /** Gets or sets the playback rate, expressed as a percentage. */
-  var playbackRate: Double = js.native
-  /** Gets or sets the playback position within the media. */
-  var position: Double = js.native
-  /** Gets or sets the content protection manager for the media. */
-  var protectionManager: MediaProtectionManager = js.native
-  /** Sets the playback source of the media player. */
-  var source: IMediaPlaybackSource = js.native
-  /** Gets an instance of the SystemMediaTransportControls class to enable user control of playback of the MediaPlayer and to allow the app to show information about the currently playing content in the system UI. */
-  var systemMediaTransportControls: SystemMediaTransportControls = js.native
-  /** Get or sets the audio volume for media playback. */
-  var volume: Double = js.native
+  
   /**
     * Adds an audio effect to the playback stream of the MediaPlayer .
     * @param activatableClassId The activatable class ID of the audio effect to add to the playback stream.
@@ -100,6 +35,7 @@ trait MediaPlayer extends js.Object {
     * @param configuration A property set containing configuration settings for the specified audio effect.
     */
   def addAudioEffect(activatableClassId: String, effectOptional: Boolean, configuration: IPropertySet): Unit = js.native
+  
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_bufferingended(`type`: bufferingended, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
@@ -127,32 +63,121 @@ trait MediaPlayer extends js.Object {
   def addEventListener_seekcompleted(`type`: seekcompleted, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_volumechanged(`type`: volumechanged, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  
+  /** Gets or sets the type of audio that is currently being played. */
+  var audioCategory: MediaPlayerAudioCategory = js.native
+  
+  /** Gets or sets a value that describes the primary usage of the device that is being used to play back audio. */
+  var audioDeviceType: MediaPlayerAudioDeviceType = js.native
+  
+  /** Gets or sets a Boolean value indicating if playback automatically starts after the media is loaded. */
+  var autoPlay: Boolean = js.native
+  
+  /** Gets the amount of buffering that is completed for the media content, expressed as a percentage. */
+  var bufferingProgress: Double = js.native
+  
+  /** Gets a Boolean value indicating if the media can be paused. */
+  var canPause: Boolean = js.native
+  
+  /** Gets a Boolean value indicating if the media supports seeking to a specific position. */
+  var canSeek: Boolean = js.native
+  
+  /** Gets the current state of media playback. */
+  var currentState: MediaPlayerState = js.native
+  
+  /** Gets or sets a Boolean value indicating if the media will playback in a repeating loop. */
+  var isLoopingEnabled: Boolean = js.native
+  
+  /** Gets or sets a Boolean value indicating if the audio is muted. */
+  var isMuted: Boolean = js.native
+  
+  /** Gets a Boolean value indicating if the content is protected by a digital rights management system. */
+  var isProtected: Boolean = js.native
+  
+  /** Get the actual duration of the media without applying the PlaybackRate . */
+  var naturalDuration: Double = js.native
+  
   /** Occurs when buffering has finished. */
   def onbufferingended(ev: js.Any with WinRTEvent[MediaPlayer]): Unit = js.native
+  /** Occurs when buffering has finished. */
+  @JSName("onbufferingended")
+  var onbufferingended_Original: TypedEventHandler[MediaPlayer, _] = js.native
+  
   /** Occurs when buffering has started. */
   def onbufferingstarted(ev: js.Any with WinRTEvent[MediaPlayer]): Unit = js.native
+  /** Occurs when buffering has started. */
+  @JSName("onbufferingstarted")
+  var onbufferingstarted_Original: TypedEventHandler[MediaPlayer, _] = js.native
+  
   /** Occurs when the state of the media player has changed. */
   def oncurrentstatechanged(ev: js.Any with WinRTEvent[MediaPlayer]): Unit = js.native
+  /** Occurs when the state of the media player has changed. */
+  @JSName("oncurrentstatechanged")
+  var oncurrentstatechanged_Original: TypedEventHandler[MediaPlayer, _] = js.native
+  
   /** Occurs when the media has finished playback. */
   def onmediaended(ev: js.Any with WinRTEvent[MediaPlayer]): Unit = js.native
+  /** Occurs when the media has finished playback. */
+  @JSName("onmediaended")
+  var onmediaended_Original: TypedEventHandler[MediaPlayer, _] = js.native
+  
   /** Occurs when an error is encountered. */
   def onmediafailed(ev: MediaPlayerFailedEventArgs with WinRTEvent[MediaPlayer]): Unit = js.native
+  /** Occurs when an error is encountered. */
+  @JSName("onmediafailed")
+  var onmediafailed_Original: TypedEventHandler[MediaPlayer, MediaPlayerFailedEventArgs] = js.native
+  
   /** Occurs when the media is opened. */
   def onmediaopened(ev: js.Any with WinRTEvent[MediaPlayer]): Unit = js.native
+  /** Occurs when the media is opened. */
+  @JSName("onmediaopened")
+  var onmediaopened_Original: TypedEventHandler[MediaPlayer, _] = js.native
+  
   /** Occurs when the media playback rate has changed. */
   def onmediaplayerratechanged(ev: MediaPlayerRateChangedEventArgs with WinRTEvent[MediaPlayer]): Unit = js.native
+  /** Occurs when the media playback rate has changed. */
+  @JSName("onmediaplayerratechanged")
+  var onmediaplayerratechanged_Original: TypedEventHandler[MediaPlayer, MediaPlayerRateChangedEventArgs] = js.native
+  
   /** Occurs when a media marker has been reached during playback. */
   def onplaybackmediamarkerreached(ev: PlaybackMediaMarkerReachedEventArgs with WinRTEvent[MediaPlayer]): Unit = js.native
+  /** Occurs when a media marker has been reached during playback. */
+  @JSName("onplaybackmediamarkerreached")
+  var onplaybackmediamarkerreached_Original: TypedEventHandler[MediaPlayer, PlaybackMediaMarkerReachedEventArgs] = js.native
+  
   /** Occurs when a seek operation has finished. */
   def onseekcompleted(ev: js.Any with WinRTEvent[MediaPlayer]): Unit = js.native
+  /** Occurs when a seek operation has finished. */
+  @JSName("onseekcompleted")
+  var onseekcompleted_Original: TypedEventHandler[MediaPlayer, _] = js.native
+  
   /** Occurs when the volume of the audio has changed. */
   def onvolumechanged(ev: js.Any with WinRTEvent[MediaPlayer]): Unit = js.native
+  /** Occurs when the volume of the audio has changed. */
+  @JSName("onvolumechanged")
+  var onvolumechanged_Original: TypedEventHandler[MediaPlayer, _] = js.native
+  
   /** Pauses media playback. */
   def pause(): Unit = js.native
+  
   /** Starts media playback. */
   def play(): Unit = js.native
+  
+  /** Gets the collection of timeline markers for the media. */
+  var playbackMediaMarkers: PlaybackMediaMarkerSequence = js.native
+  
+  /** Gets or sets the playback rate, expressed as a percentage. */
+  var playbackRate: Double = js.native
+  
+  /** Gets or sets the playback position within the media. */
+  var position: Double = js.native
+  
+  /** Gets or sets the content protection manager for the media. */
+  var protectionManager: MediaProtectionManager = js.native
+  
   /** Removes all effects from the playback stream of the MediaPlayer . */
   def removeAllEffects(): Unit = js.native
+  
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_bufferingended(`type`: bufferingended, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
@@ -180,25 +205,37 @@ trait MediaPlayer extends js.Object {
   def removeEventListener_seekcompleted(`type`: seekcompleted, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_volumechanged(`type`: volumechanged, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  
   /**
     * Set the media source to a file.
     * @param file The media source file.
     */
   def setFileSource(file: IStorageFile): Unit = js.native
+  
   /**
     * Sets the media source for playback.
     * @param source The media source for playback.
     */
   def setMediaSource(source: IMediaSource): Unit = js.native
+  
   /**
     * Sets the media source to a stream.
     * @param stream The media source stream.
     */
   def setStreamSource(stream: IRandomAccessStream): Unit = js.native
+  
   /**
     * Sets the path to the media.
     * @param value The path to the media.
     */
   def setUriSource(value: Uri): Unit = js.native
+  
+  /** Sets the playback source of the media player. */
+  var source: IMediaPlaybackSource = js.native
+  
+  /** Gets an instance of the SystemMediaTransportControls class to enable user control of playback of the MediaPlayer and to allow the app to show information about the currently playing content in the system UI. */
+  var systemMediaTransportControls: SystemMediaTransportControls = js.native
+  
+  /** Get or sets the audio volume for media playback. */
+  var volume: Double = js.native
 }
-

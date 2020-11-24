@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.codeactionsMod.codeactions.CodeAction
 import typings.mendixmodelsdk.codeactionsMod.codeactions.CodeActionParameter
@@ -12,15 +13,17 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.projectsMod.projects.FolderBase
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/javascriptactions", JSImport.Namespace)
 @js.native
 object javascriptactionsMod extends js.Object {
+  
   @js.native
   class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
@@ -29,11 +32,12 @@ object javascriptactionsMod extends js.Object {
   
   @js.native
   object javascriptactions extends js.Object {
+    
     /**
       * Interfaces and instance classes for types from the Mendix sub meta model `JavaScriptActions`.
       */
     /**
-      * See: {@link https://docs.mendix.com/refguide7/javascript-actions relevant section in reference guide}
+      * See: {@link https://docs.mendix.com/refguide/javascript-actions relevant section in reference guide}
       *
       * In version 8.0.0: removed experimental
       * In version 7.21.0: introduced
@@ -55,7 +59,7 @@ object javascriptactionsMod extends js.Object {
     trait INanoflowJavaScriptActionParameterType extends IParameterType
     
     /**
-      * See: {@link https://docs.mendix.com/refguide7/javascript-actions relevant section in reference guide}
+      * See: {@link https://docs.mendix.com/refguide/javascript-actions relevant section in reference guide}
       *
       * In version 8.0.0: removed experimental
       * In version 7.21.0: introduced
@@ -79,10 +83,23 @@ object javascriptactionsMod extends js.Object {
         isPartial: Boolean,
         container: IFolderBase
       ) = this()
-      @JSName("model")
-      var model_FJavaScriptAction: IModel = js.native
+      
       @JSName("containerAsFolderBase")
       def containerAsFolderBase_MJavaScriptAction: FolderBase = js.native
+    }
+    /* static members */
+    @js.native
+    object JavaScriptAction extends js.Object {
+      
+      /**
+        * Creates a new JavaScriptAction unit in the SDK and on the server.
+        * Expects one argument, the projects.IFolderBase in which this unit is contained.
+        */
+      def createIn(container: IFolderBase): JavaScriptAction = js.native
+      
+      var structureTypeName: String = js.native
+      
+      var versionInfo: StructureVersionInfo = js.native
     }
     
     /**
@@ -103,13 +120,27 @@ object javascriptactionsMod extends js.Object {
         structureTypeName: String,
         id: String,
         isPartial: Boolean,
-        unit: ModelUnit,
-        container: AbstractElement
+        unit: ModelUnit[IAbstractModel],
+        container: AbstractElement[IAbstractModel, Container]
       ) = this()
-      @JSName("model")
-      var model_FJavaScriptActionParameter: IModel = js.native
+      
       @JSName("containerAsCodeAction")
       def containerAsCodeAction_MJavaScriptActionParameter: CodeAction = js.native
+    }
+    /* static members */
+    @js.native
+    object JavaScriptActionParameter extends js.Object {
+      
+      /**
+        * Creates and returns a new JavaScriptActionParameter instance in the SDK and on the server.
+        * Expects one argument: the IModel object the instance will "live on".
+        * After creation, assign or add this instance to a property that accepts this kind of objects.
+        */
+      def create(model: IModel): JavaScriptActionParameter = js.native
+      
+      var structureTypeName: String = js.native
+      
+      var versionInfo: StructureVersionInfo = js.native
     }
     
     /**
@@ -128,54 +159,27 @@ object javascriptactionsMod extends js.Object {
         structureTypeName: String,
         id: String,
         isPartial: Boolean,
-        unit: ModelUnit,
-        container: AbstractElement
+        unit: ModelUnit[IAbstractModel],
+        container: AbstractElement[IAbstractModel, Container]
       ) = this()
-      @JSName("model")
-      var model_FNanoflowJavaScriptActionParameterType: IModel = js.native
+      
       @JSName("containerAsCodeActionParameter")
       def containerAsCodeActionParameter_MNanoflowJavaScriptActionParameterType: CodeActionParameter = js.native
     }
-    
-    /* static members */
-    @js.native
-    object JavaScriptAction extends js.Object {
-      var structureTypeName: String = js.native
-      var versionInfo: StructureVersionInfo = js.native
-      /**
-        * Creates a new JavaScriptAction unit in the SDK and on the server.
-        * Expects one argument, the projects.IFolderBase in which this unit is contained.
-        */
-      def createIn(container: IFolderBase): JavaScriptAction = js.native
-    }
-    
-    /* static members */
-    @js.native
-    object JavaScriptActionParameter extends js.Object {
-      var structureTypeName: String = js.native
-      var versionInfo: StructureVersionInfo = js.native
-      /**
-        * Creates and returns a new JavaScriptActionParameter instance in the SDK and on the server.
-        * Expects one argument: the IModel object the instance will "live on".
-        * After creation, assign or add this instance to a property that accepts this kind of objects.
-        */
-      def create(model: IModel): JavaScriptActionParameter = js.native
-    }
-    
     /* static members */
     @js.native
     object NanoflowJavaScriptActionParameterType extends js.Object {
-      var structureTypeName: String = js.native
-      var versionInfo: StructureVersionInfo = js.native
+      
       /**
         * Creates and returns a new NanoflowJavaScriptActionParameterType instance in the SDK and on the server.
         * Expects one argument: the IModel object the instance will "live on".
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       def create(model: IModel): NanoflowJavaScriptActionParameterType = js.native
+      
+      var structureTypeName: String = js.native
+      
+      var versionInfo: StructureVersionInfo = js.native
     }
-    
   }
-  
 }
-

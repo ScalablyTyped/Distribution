@@ -2,11 +2,12 @@ package typings.phaser.global.Phaser.Loader
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Loader.Events")
 @js.native
 object Events extends js.Object {
+  
   /**
     * The Loader Plugin Add File Event.
     * 
@@ -17,6 +18,7 @@ object Events extends js.Object {
     * If you add lots of files to a Loader from a `preload` method, it will dispatch this event for each one of them.
     */
   val ADD: js.Any = js.native
+  
   /**
     * The Loader Plugin Complete Event.
     * 
@@ -26,6 +28,7 @@ object Events extends js.Object {
     * Listen to it from a Scene using: `this.load.on('complete', listener)`.
     */
   val COMPLETE: js.Any = js.native
+  
   /**
     * The File Load Complete Event.
     * 
@@ -36,6 +39,7 @@ object Events extends js.Object {
     * You can also listen for the completion of a specific file. See the [FILE_KEY_COMPLETE]{@linkcode Phaser.Loader.Events#event:FILE_KEY_COMPLETE} event.
     */
   val FILE_COMPLETE: js.Any = js.native
+  
   /**
     * The File Load Complete Event.
     * 
@@ -71,6 +75,7 @@ object Events extends js.Object {
     * You can also listen for the generic completion of files. See the [FILE_COMPLETE]{@linkcode Phaser.Loader.Events#event:FILE_COMPLETE} event.
     */
   val FILE_KEY_COMPLETE: js.Any = js.native
+  
   /**
     * The File Load Event.
     * 
@@ -80,6 +85,7 @@ object Events extends js.Object {
     * Listen to it from a Scene using: `this.load.on('load', listener)`.
     */
   val FILE_LOAD: js.Any = js.native
+  
   /**
     * The File Load Error Event.
     * 
@@ -88,6 +94,7 @@ object Events extends js.Object {
     * Listen to it from a Scene using: `this.load.on('loaderror', listener)`.
     */
   val FILE_LOAD_ERROR: js.Any = js.native
+  
   /**
     * The File Load Progress Event.
     * 
@@ -97,6 +104,7 @@ object Events extends js.Object {
     * Listen to it from a Scene using: `this.load.on('fileprogress', listener)`.
     */
   val FILE_PROGRESS: js.Any = js.native
+  
   /**
     * The Loader Plugin Post Process Event.
     * 
@@ -109,6 +117,7 @@ object Events extends js.Object {
     * Listen to it from a Scene using: `this.load.on('postprocess', listener)`.
     */
   val POST_PROCESS: js.Any = js.native
+  
   /**
     * The Loader Plugin Progress Event.
     * 
@@ -117,6 +126,7 @@ object Events extends js.Object {
     * Listen to it from a Scene using: `this.load.on('progress', listener)`.
     */
   val PROGRESS: js.Any = js.native
+  
   /**
     * The Loader Plugin Start Event.
     * 
@@ -128,4 +138,3 @@ object Events extends js.Object {
     */
   val START: js.Any = js.native
 }
-

@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/toolresults/v1beta3", "toolresults_v1beta3.Resource$Projects$Histories")
 @js.native
 class ResourceProjectsHistories protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var executions: ResourceProjectsHistoriesExecutions = js.native
+  
   /**
     * toolresults.projects.histories.create
     * @desc Creates a History.  The returned History will have the id set.  May
@@ -48,6 +49,9 @@ class ResourceProjectsHistories protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHistory]
   ): Unit = js.native
+  
+  var executions: ResourceProjectsHistoriesExecutions = js.native
+  
   /**
     * toolresults.projects.histories.get
     * @desc Gets a History.  May return any of the following canonical error
@@ -80,6 +84,7 @@ class ResourceProjectsHistories protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHistory]
   ): Unit = js.native
+  
   /**
     * toolresults.projects.histories.list
     * @desc Lists Histories for a given Project.  The histories are sorted by
@@ -120,4 +125,3 @@ class ResourceProjectsHistories protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListHistoriesResponse]
   ): Unit = js.native
 }
-

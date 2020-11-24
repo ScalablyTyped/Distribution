@@ -6,7 +6,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This enumeration defines the style of a dash on a line. */
 /* Rewritten from type alias, can be one of: 
@@ -16,14 +16,16 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 */
 trait DashStyle extends js.Object
-
 object DashStyle {
+  
   /** the dash is a rectangle */
   @scala.inline
   def RECT: `0` = 0.asInstanceOf[`0`]
+  
   /** the dash is a rectangle, with the size of the dash given in relation to the length of the line */
   @scala.inline
   def RECTRELATIVE: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * the dash is a point
     *
@@ -33,8 +35,8 @@ object DashStyle {
     */
   @scala.inline
   def ROUND: `1` = 1.asInstanceOf[`1`]
+  
   /** the dash is a point, with the size of the dash given in relation to the length of the line */
   @scala.inline
   def ROUNDRELATIVE: `3` = 3.asInstanceOf[`3`]
 }
-

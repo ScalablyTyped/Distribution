@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to access all property values and to set them at once.
@@ -18,10 +18,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XPropertyAccess extends XInterface {
+  
   /** @returns a sequence of all property values within the object in a single call. */
   var PropertyValues: SafeArray[PropertyValue] = js.native
+  
   /** @returns a sequence of all property values within the object in a single call. */
   def getPropertyValues(): SafeArray[PropertyValue] = js.native
+  
   /**
     * sets the values of given properties.
     *
@@ -29,8 +32,8 @@ trait XPropertyAccess extends XInterface {
     */
   def setPropertyValues(aProps: SeqEquiv[PropertyValue]): Unit = js.native
 }
-
 object XPropertyAccess {
+  
   @scala.inline
   def apply(
     PropertyValues: SafeArray[PropertyValue],
@@ -43,24 +46,29 @@ object XPropertyAccess {
     val __obj = js.Dynamic.literal(PropertyValues = PropertyValues.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getPropertyValues = js.Any.fromFunction0(getPropertyValues), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setPropertyValues = js.Any.fromFunction1(setPropertyValues))
     __obj.asInstanceOf[XPropertyAccess]
   }
+  
   @scala.inline
   implicit class XPropertyAccessOps[Self <: XPropertyAccess] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setPropertyValues(value: SafeArray[PropertyValue]): Self = this.set("PropertyValues", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetPropertyValues(value: () => SafeArray[PropertyValue]): Self = this.set("getPropertyValues", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setSetPropertyValues(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("setPropertyValues", js.Any.fromFunction1(value))
   }
-  
 }
-

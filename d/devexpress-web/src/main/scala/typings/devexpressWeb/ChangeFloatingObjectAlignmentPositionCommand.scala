@@ -2,15 +2,15 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to modify a floating object's alignment position.
   */
 @js.native
 trait ChangeFloatingObjectAlignmentPositionCommand extends ChangeFloatingObjectPropertyCommandBase[FloatingObjectAlignmentPositionSettings]
-
 object ChangeFloatingObjectAlignmentPositionCommand {
+  
   @scala.inline
   def apply(
     execute: FloatingObjectAlignmentPositionSettings => Boolean,
@@ -20,4 +20,3 @@ object ChangeFloatingObjectAlignmentPositionCommand {
     __obj.asInstanceOf[ChangeFloatingObjectAlignmentPositionCommand]
   }
 }
-

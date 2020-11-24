@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1beta", "appengine_v1beta.Resource$Apps$Services")
 @js.native
 class ResourceAppsServices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var versions: ResourceAppsServicesVersions = js.native
+  
   /**
     * appengine.apps.services.delete
     * @desc Deletes the specified service and all enclosed versions.
@@ -43,6 +44,7 @@ class ResourceAppsServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * appengine.apps.services.get
     * @desc Gets the current configuration of the specified service.
@@ -72,6 +74,7 @@ class ResourceAppsServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaService]
   ): Unit = js.native
+  
   /**
     * appengine.apps.services.list
     * @desc Lists all the services in the application.
@@ -102,6 +105,7 @@ class ResourceAppsServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListServicesResponse]
   ): Unit = js.native
+  
   /**
     * appengine.apps.services.patch
     * @desc Updates the configuration of the specified service.
@@ -134,5 +138,6 @@ class ResourceAppsServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var versions: ResourceAppsServicesVersions = js.native
 }
-

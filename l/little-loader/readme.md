@@ -11,8 +11,8 @@ A lightweight, IE8+ JavaScript loader.
 | Full name          | little-loader |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 668675 |
+| # dependents       | 17 |
+| # downloads        | 957380 |
 | # stars            | 0 |
 
 ## Links

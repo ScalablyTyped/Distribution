@@ -2,12 +2,12 @@ package typings.winrt.Windows.Globalization.Fonts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LanguageFontGroup extends ILanguageFontGroup
-
 object LanguageFontGroup {
+  
   @scala.inline
   def apply(
     documentAlternate1Font: LanguageFont,
@@ -26,4 +26,3 @@ object LanguageFontGroup {
     __obj.asInstanceOf[LanguageFontGroup]
   }
 }
-

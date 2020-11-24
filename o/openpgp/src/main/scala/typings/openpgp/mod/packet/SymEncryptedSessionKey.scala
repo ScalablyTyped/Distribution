@@ -4,7 +4,7 @@ import typings.openpgp.mod.Integer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "packet.SymEncryptedSessionKey")
 @js.native
@@ -24,22 +24,26 @@ import scala.scalajs.js.annotation._
   * decrypt the message.
   */
 class SymEncryptedSessionKey () extends js.Object {
+  
   /**
     * Decrypts the session key
     * @param passphrase The passphrase in string form
     * @returns
     */
   def decrypt(passphrase: String): js.Promise[Boolean] = js.native
+  
   /**
     * Encrypts the session key
     * @param passphrase The passphrase in string form
     * @returns
     */
   def encrypt(passphrase: String): js.Promise[Boolean] = js.native
+  
   /**
     * Fix custom types after cloning
     */
   def postCloneTypeFix(): Unit = js.native
+  
   /**
     * Parsing function for a symmetric encrypted session key packet (tag 3).
     * @param input Payload of a tag 1 packet
@@ -50,4 +54,3 @@ class SymEncryptedSessionKey () extends js.Object {
     */
   def read(input: Uint8Array, position: Integer, len: Integer): SymEncryptedSessionKey = js.native
 }
-

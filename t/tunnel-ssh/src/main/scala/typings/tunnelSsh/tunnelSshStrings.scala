@@ -2,13 +2,12 @@ package typings.tunnelSsh
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tunnelSshStrings {
-  @js.native
-  sealed trait force extends js.Object
   
   @scala.inline
   def force: force = "force".asInstanceOf[force]
+  @js.native
+  sealed trait force extends js.Object
 }
-

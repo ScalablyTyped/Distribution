@@ -3,7 +3,7 @@ package typings.grpcGrpcJs.mod
 import typings.grpcGrpcJs.clientMod.ClientOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@grpc/grpc-js", "Client")
 @js.native
@@ -16,4 +16,3 @@ class Client protected ()
     options: ClientOptions
   ) = this()
 }
-

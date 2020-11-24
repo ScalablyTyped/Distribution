@@ -1,9 +1,10 @@
 package typings.parse.mod.global.Parse
 
 import typings.parse.anon.Latitude
+import typings.parse.mod.global.Parse.Schema._FieldType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new GeoPoint with any of the following forms:<br>
@@ -29,17 +30,23 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("Parse.GeoPoint")
 @js.native
-class GeoPoint () extends js.Object {
+class GeoPoint () extends _FieldType {
   def this(coords: js.Tuple2[Double, Double]) = this()
   def this(coords: Latitude) = this()
   def this(latitude: Double, longitude: Double) = this()
-  var latitude: Double = js.native
-  var longitude: Double = js.native
+  
   def current(): GeoPoint = js.native
   def current(options: SuccessFailureOptions): GeoPoint = js.native
+  
   def kilometersTo(point: GeoPoint): Double = js.native
+  
+  var latitude: Double = js.native
+  
+  var longitude: Double = js.native
+  
   def milesTo(point: GeoPoint): Double = js.native
+  
   def radiansTo(point: GeoPoint): Double = js.native
+  
   def toJSON(): js.Any = js.native
 }
-

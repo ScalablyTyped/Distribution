@@ -11,22 +11,24 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesManagement", JSImport.Namespace)
 @js.native
 object gamesManagementMod extends js.Object {
+  
   def gamesManagement(options: Options): Gamesmanagement = js.native
   @JSName("gamesManagement")
   def gamesManagement_v1management(version: v1management): Gamesmanagement = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1management protected () extends Gamesmanagement {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
     @js.native
     object v1management
       extends TopLevel[
@@ -36,11 +38,11 @@ object gamesManagementMod extends js.Object {
                 Gamesmanagement
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -68,8 +70,5 @@ object gamesManagementMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

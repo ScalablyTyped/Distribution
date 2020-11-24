@@ -6,7 +6,7 @@ import typings.std.Element
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "HtmlBehaviorResource")
 @js.native
@@ -14,11 +14,13 @@ import scala.scalajs.js.annotation._
   * Creates an instance of HtmlBehaviorResource.
   */
 class HtmlBehaviorResource () extends js.Object {
+  
   /**
     * Adds a binding expression to the component created by this resource.
     * @param behavior The binding expression.
     */
   def addChildBinding(behavior: js.Object): Unit = js.native
+  
   /**
     * Plugs into the compiler and enables custom processing of the node on which this behavior is located.
     * @param compiler The compiler that is currently compiling the view that this behavior exists within.
@@ -36,6 +38,7 @@ class HtmlBehaviorResource () extends js.Object {
     instruction: BehaviorInstruction,
     parentNode: Node
   ): Node = js.native
+  
   /**
     * Creates an instance of this behavior.
     * @param container The DI container to create the instance in.
@@ -72,6 +75,7 @@ class HtmlBehaviorResource () extends js.Object {
     element: Element,
     bindings: js.Array[Binding]
   ): Controller = js.native
+  
   /**
     * Provides an opportunity for the resource to initialize iteself.
     * @param container The dependency injection container from which the resource
@@ -79,6 +83,7 @@ class HtmlBehaviorResource () extends js.Object {
     * @param target The class to which this resource metadata is attached.
     */
   def initialize(container: Container, target: js.Function): Unit = js.native
+  
   /**
     * Enables the resource to asynchronously load additional resources.
     * @param container The dependency injection container from which the resource
@@ -131,6 +136,7 @@ class HtmlBehaviorResource () extends js.Object {
     viewStrategy: ViewStrategy_,
     transientView: Boolean
   ): js.Promise[HtmlBehaviorResource] = js.native
+  
   /**
     * Allows the resource to be registered in the view resources for the particular
     * view into which it was required.
@@ -141,11 +147,11 @@ class HtmlBehaviorResource () extends js.Object {
   def register(registry: ViewResources_): Unit = js.native
   def register(registry: ViewResources_, name: String): Unit = js.native
 }
-
 /* static members */
 @JSImport("aurelia-templating", "HtmlBehaviorResource")
 @js.native
 object HtmlBehaviorResource extends js.Object {
+  
   /**
     * Checks whether the provided name matches any naming conventions for HtmlBehaviorResource.
     * @param name The name of the potential resource.
@@ -154,4 +160,3 @@ object HtmlBehaviorResource extends js.Object {
   def convention(name: String): HtmlBehaviorResource = js.native
   def convention(name: String, existing: HtmlBehaviorResource): HtmlBehaviorResource = js.native
 }
-

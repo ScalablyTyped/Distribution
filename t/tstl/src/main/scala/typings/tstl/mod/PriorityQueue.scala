@@ -4,7 +4,7 @@ import typings.tstl.comparatorMod.Comparator
 import typings.tstl.iforwarditeratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl", "PriorityQueue")
 @js.native
@@ -39,4 +39,3 @@ class PriorityQueue[T] ()
     comp: Comparator[T, T]
   ) = this()
 }
-

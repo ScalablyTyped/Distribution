@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XServiceName
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is the base for {@link AddIn} services that supply functions which can be called by other components.
@@ -58,8 +58,8 @@ trait AddIn
   extends XAddIn
      with XServiceName
      with XCompatibilityNames
-
 object AddIn {
+  
   @scala.inline
   def apply(
     Locale: Locale,
@@ -83,4 +83,3 @@ object AddIn {
     __obj.asInstanceOf[AddIn]
   }
 }
-

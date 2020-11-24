@@ -11,7 +11,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/glue/classifier", "Classifier")
 @js.native
@@ -27,32 +27,37 @@ class Classifier protected () extends CustomResource {
   def this(name: String, args: ClassifierArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ClassifierArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * A classifier for Csv content. Defined below.
     */
   val csvClassifier: Output_[js.UndefOr[ClassifierCsvClassifier]] = js.native
+  
   /**
     * A classifier that uses grok patterns. Defined below.
     */
   val grokClassifier: Output_[js.UndefOr[ClassifierGrokClassifier]] = js.native
+  
   /**
     * A classifier for JSON content. Defined below.
     */
   val jsonClassifier: Output_[js.UndefOr[ClassifierJsonClassifier]] = js.native
+  
   /**
     * The name of the classifier.
     */
   val name: Output_[String] = js.native
+  
   /**
     * A classifier for XML content. Defined below.
     */
   val xmlClassifier: Output_[js.UndefOr[ClassifierXmlClassifier]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/glue/classifier", "Classifier")
 @js.native
 object Classifier extends js.Object {
+  
   /**
     * Get an existing Classifier resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -66,10 +71,10 @@ object Classifier extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Classifier = js.native
   def get(name: String, id: Input[ID], state: ClassifierState): Classifier = js.native
   def get(name: String, id: Input[ID], state: ClassifierState, opts: CustomResourceOptions): Classifier = js.native
+  
   /**
     * Returns true if the given object is an instance of Classifier.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/classifier.Classifier */ Boolean = js.native
 }
-

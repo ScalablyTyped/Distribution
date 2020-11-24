@@ -4,7 +4,7 @@ import typings.chromeApps.WebView.DialogController
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fired when the guest window attempts to open a modal dialog via window.alert, window.confirm, or window.prompt.
@@ -13,17 +13,19 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DialogEvent extends Event {
+  
   /**
     * An interface that can be used to respond to the guest's modal request.
     */
   var dialog: DialogController = js.native
+  
   /**
     * The text the guest attempted to display in the modal dialog.
     */
   var messageText: String = js.native
+  
   /**
     * The type of modal dialog requested by the guest.
     */
   var messageType: DialogMessageType = js.native
 }
-

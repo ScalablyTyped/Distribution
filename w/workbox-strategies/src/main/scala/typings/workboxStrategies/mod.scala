@@ -7,11 +7,12 @@ import typings.workboxStrategies.networkOnlyMod.NetworkOnlyOptions
 import typings.workboxStrategies.staleWhileRevalidateMod.StaleWhileRevalidateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("workbox-strategies", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class CacheFirst ()
     extends typings.workboxStrategies.cacheFirstMod.CacheFirst {
@@ -41,6 +42,4 @@ object mod extends js.Object {
     extends typings.workboxStrategies.staleWhileRevalidateMod.StaleWhileRevalidate {
     def this(options: StaleWhileRevalidateOptions) = this()
   }
-  
 }
-

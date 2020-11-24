@@ -6,14 +6,28 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/core/dist/types/components/ripple-effect/ripple-effect", JSImport.Namespace)
 @js.native
 object rippleEffectMod extends js.Object {
+  
   @js.native
   class RippleEffect () extends ComponentInterface {
+    
+    /**
+      * Adds the ripple effect to the parent element.
+      *
+      * @param x The horizontal coordinate of where the ripple should start.
+      * @param y The vertical coordinate of where the ripple should start.
+      */
+    def addRipple(x: Double, y: Double): js.Promise[js.Function0[Unit]] = js.native
+    
     var el: HTMLElement = js.native
+    
+    @JSName("render")
+    def render_MRippleEffect(): js.Any = js.native
+    
     /**
       * Sets the type of ripple-effect:
       *
@@ -24,17 +38,7 @@ object rippleEffectMod extends js.Object {
       * while surfaces for unbounded ripples should have it set to visible.
       */
     var `type`: bounded | unbounded = js.native
-    /**
-      * Adds the ripple effect to the parent element.
-      *
-      * @param x The horizontal coordinate of where the ripple should start.
-      * @param y The vertical coordinate of where the ripple should start.
-      */
-    def addRipple(x: Double, y: Double): js.Promise[js.Function0[Unit]] = js.native
-    @JSName("render")
-    def render_MRippleEffect(): js.Any = js.native
+    
     /* private */ def unbounded: js.Any = js.native
   }
-  
 }
-

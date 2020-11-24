@@ -5,7 +5,7 @@ import typings.mochaSugarFree.anon.OptionsfnSuiteFuncundefin
 import typings.mochaSugarFree.anon.OptionstitlestringfnSuite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * [bdd, tdd, qunit]
@@ -14,20 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SuiteFunction extends js.Object {
-  /**
-    * [bdd, tdd, qunit]
-    *
-    * Indicates this suite should be executed exclusively.
-    */
-  @JSName("only")
-  var only_Original: ExclusiveSuiteFunction = js.native
-  /**
-    * [bdd, tdd]
-    *
-    * Indicates this suite should not be executed.
-    */
-  @JSName("skip")
-  var skip_Original: PendingSuiteFunction = js.native
+  
   // tslint:disable-next-line: unified-signatures
   def apply(options: OptionstitlestringfnSuite): Suite_ = js.native
   def apply(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ = js.native
@@ -36,6 +23,7 @@ trait SuiteFunction extends js.Object {
   def apply(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
   def apply(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
   def apply(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
+  
   // tslint:disable-next-line: unified-signatures
   /**
     * [bdd, tdd, qunit]
@@ -54,6 +42,14 @@ trait SuiteFunction extends js.Object {
   def only(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
   def only(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
   def only(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
+  /**
+    * [bdd, tdd, qunit]
+    *
+    * Indicates this suite should be executed exclusively.
+    */
+  @JSName("only")
+  var only_Original: ExclusiveSuiteFunction = js.native
+  
   // tslint:disable-next-line: unified-signatures
   /**
     * [bdd, tdd]
@@ -72,5 +68,11 @@ trait SuiteFunction extends js.Object {
   def skip(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ | Unit = js.native
   def skip(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit = js.native
   def skip(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit = js.native
+  /**
+    * [bdd, tdd]
+    *
+    * Indicates this suite should not be executed.
+    */
+  @JSName("skip")
+  var skip_Original: PendingSuiteFunction = js.native
 }
-

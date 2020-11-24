@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChatMessageOperatorKind extends js.Object
-
 /** Specifies the message operator type. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageOperatorKind")
 @js.native
 object ChatMessageOperatorKind extends js.Object {
+  
   /** MMS message */
   @js.native
   sealed trait mms extends ChatMessageOperatorKind
@@ -26,6 +26,4 @@ object ChatMessageOperatorKind extends js.Object {
   /** The value hasn't been set. */
   @js.native
   sealed trait unspecified extends ChatMessageOperatorKind
-  
 }
-

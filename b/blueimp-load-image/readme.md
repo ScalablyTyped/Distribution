@@ -4,15 +4,15 @@
 Typings are for version 2.23
 
 ## Library description:
-JavaScript Load Image is a library to load images provided as File or Blob objects or via URL. It returns an optionally scaled and/or cropped HTML img or canvas element. It also provides methods to parse image meta data to extract IPTC and Exif tags as we
+JavaScript Load Image is a library to load images provided as File or Blob objects or via URL. It returns an optionally scaled, cropped or rotated HTML img or canvas element. It also provides methods to parse image metadata to extract IPTC and Exif tags a
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | blueimp-load-image |
-| Keywords           | javascript, load, loading, image, file, blob, url, scale, crop, img, canvas, meta, exif, iptc, thumbnail, resizing |
-| # releases         | 9 |
-| # dependents       | 61 |
-| # downloads        | 4048954 |
+| Keywords           | javascript, load, loading, image, file, blob, url, scale, crop, rotate, img, canvas, meta, exif, orientation, thumbnail, iptc |
+| # releases         | 33 |
+| # dependents       | 73 |
+| # downloads        | 8476218 |
 | # stars            | 12 |
 
 ## Links

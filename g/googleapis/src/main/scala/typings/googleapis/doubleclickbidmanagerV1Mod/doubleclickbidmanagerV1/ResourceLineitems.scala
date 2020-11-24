@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/doubleclickbidmanager/v1", "doubleclickbidmanager_v1.Resource$Lineitems")
 @js.native
 class ResourceLineitems protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * doubleclickbidmanager.lineitems.downloadlineitems
     * @desc Retrieves line items in CSV format. TrueView line items are not
@@ -45,6 +47,7 @@ class ResourceLineitems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDownloadLineItemsResponse]
   ): Unit = js.native
+  
   /**
     * doubleclickbidmanager.lineitems.uploadlineitems
     * @desc Uploads line items in CSV format. TrueView line items are not
@@ -78,4 +81,3 @@ class ResourceLineitems protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUploadLineItemsResponse]
   ): Unit = js.native
 }
-

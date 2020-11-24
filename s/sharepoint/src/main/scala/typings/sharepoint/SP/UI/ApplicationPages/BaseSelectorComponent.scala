@@ -3,12 +3,12 @@ package typings.sharepoint.SP.UI.ApplicationPages
 import typings.microsoftAjax.Sys.EventArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BaseSelectorComponent extends ISelectorComponent
-
 object BaseSelectorComponent {
+  
   @scala.inline
   def apply(
     get_callback: () => js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit],
@@ -25,4 +25,3 @@ object BaseSelectorComponent {
     __obj.asInstanceOf[BaseSelectorComponent]
   }
 }
-

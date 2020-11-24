@@ -11,8 +11,8 @@ Querystringify - Small, simple but powerful query string parser.
 | Full name          | querystringify |
 | Keywords           | query, string, query-string, querystring, qs, stringify, parse, decode, encode |
 | # releases         | 4 |
-| # dependents       | 94 |
-| # downloads        | 289544465 |
+| # dependents       | 123 |
+| # downloads        | 377157555 |
 | # stars            | 5 |
 
 ## Links

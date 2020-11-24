@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/factchecktools/v1alpha1", "factchecktools_v1alpha1.Resource$Pages")
 @js.native
 class ResourcePages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * factchecktools.pages.create
     * @desc Create `ClaimReview` markup on a page.
@@ -46,6 +48,7 @@ class ResourcePages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage]
   ): Unit = js.native
+  
   /**
     * factchecktools.pages.delete
     * @desc Delete all `ClaimReview` markup on a page.
@@ -74,6 +77,7 @@ class ResourcePages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
   /**
     * factchecktools.pages.get
     * @desc Get all `ClaimReview` markup on a page.
@@ -107,6 +111,7 @@ class ResourcePages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage]
   ): Unit = js.native
+  
   /**
     * factchecktools.pages.list
     * @desc List the `ClaimReview` markup pages for a specific URL or for an
@@ -145,6 +150,7 @@ class ResourcePages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse]
   ): Unit = js.native
+  
   /**
     * factchecktools.pages.update
     * @desc Update for all `ClaimReview` markup on a page  Note that this is a
@@ -183,4 +189,3 @@ class ResourcePages protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage]
   ): Unit = js.native
 }
-

@@ -12,7 +12,7 @@ import typings.jquery.jqueryStrings.resolved
 import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see \`{@link https://api.jquery.com/jquery.ajax/#jqXHR }\`
@@ -22,24 +22,12 @@ import scala.scalajs.js.annotation._
 /* Inlined parent std.Partial<std.Pick<std.XMLHttpRequest, 'responseXML'>> */
 @js.native
 trait jqXHR[TResolve] extends js.Object {
-  @JSName("abort")
-  var abort_Original: js.Function0[Unit] = js.native
-  @JSName("getAllResponseHeaders")
-  var getAllResponseHeaders_Original: js.Function0[String] = js.native
-  @JSName("getResponseHeader")
-  var getResponseHeader_Original: js.Function1[/* name */ String, String | Null] = js.native
-  @JSName("overrideMimeType")
-  var overrideMimeType_Original: js.Function1[/* mime */ String, Unit] = js.native
-  var readyState: Double = js.native
-  var responseJSON: js.UndefOr[js.Any] = js.native
-  var responseText: String = js.native
-  var responseXML: js.UndefOr[Document | Null] = js.native
-  @JSName("setRequestHeader")
-  var setRequestHeader_Original: js.Function2[/* name */ String, /* value */ String, Unit] = js.native
-  var status: Double = js.native
-  var statusText: String = js.native
+  
   def abort(): Unit = js.native
   def abort(statusText: String): Unit = js.native
+  @JSName("abort")
+  var abort_Original: js.Function0[Unit] = js.native
+  
   /**
     * Add handlers to be called when the Deferred object is either resolved or rejected.
     * @param alwaysCallback A function, or array of functions, that is called when the Deferred is resolved or rejected.
@@ -71,6 +59,7 @@ trait jqXHR[TResolve] extends js.Object {
       ]
     ])*
   ): this.type = js.native
+  
   // #endregion
   /**
     * Add handlers to be called when the Deferred object is rejected.
@@ -98,6 +87,7 @@ trait jqXHR[TResolve] extends js.Object {
       (PromiseBase[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF]) | Thenable[ARF] | ARF
     ]
   ): PromiseBase[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF] = js.native
+  
   /**
     * Add handlers to be called when the Deferred object is resolved.
     * @param doneCallback A function, or array of functions, that are called when the Deferred is resolved.
@@ -162,6 +152,7 @@ trait jqXHR[TResolve] extends js.Object {
     doneCallback: TypeOrArray[CallbackBase[TResolve, SuccessTextStatus, jqXHR[TResolve], scala.Nothing]],
     doneCallbacks: (TypeOrArray[CallbackBase[TResolve, SuccessTextStatus, jqXHR[TResolve], scala.Nothing]])*
   ): this.type = js.native
+  
   /**
     * Add handlers to be called when the Deferred object is rejected.
     * @param failCallback A function, or array of functions, that are called when the Deferred is rejected.
@@ -183,9 +174,19 @@ trait jqXHR[TResolve] extends js.Object {
     failCallback: TypeOrArray[CallbackBase[jqXHR[TResolve], ErrorTextStatus, String, scala.Nothing]],
     failCallbacks: (TypeOrArray[CallbackBase[jqXHR[TResolve], ErrorTextStatus, String, scala.Nothing]])*
   ): this.type = js.native
+  
   def getAllResponseHeaders(): String = js.native
+  @JSName("getAllResponseHeaders")
+  var getAllResponseHeaders_Original: js.Function0[String] = js.native
+  
   def getResponseHeader(name: String): String | Null = js.native
+  @JSName("getResponseHeader")
+  var getResponseHeader_Original: js.Function1[/* name */ String, String | Null] = js.native
+  
   def overrideMimeType(mime: String): Unit = js.native
+  @JSName("overrideMimeType")
+  var overrideMimeType_Original: js.Function1[/* mime */ String, Unit] = js.native
+  
   /**
     * Utility method to filter and/or chain Deferreds.
     * @param doneFilter An optional function that is called when the Deferred is resolved.
@@ -615,6 +616,7 @@ trait jqXHR[TResolve] extends js.Object {
     RJD | RJF | RJP, 
     RND | RNF | RNP
   ] = js.native
+  
   /**
     * Add handlers to be called when the Deferred object generates progress notifications.
     * @param progressCallback A function, or array of functions, to be called when the Deferred generates progress notifications.
@@ -627,6 +629,7 @@ trait jqXHR[TResolve] extends js.Object {
     progressCallback: TypeOrArray[CallbackBase[scala.Nothing, scala.Nothing, scala.Nothing, scala.Nothing]],
     progressCallbacks: (TypeOrArray[CallbackBase[scala.Nothing, scala.Nothing, scala.Nothing, scala.Nothing]])*
   ): this.type = js.native
+  
   /**
     * Return a Deferred's Promise object.
     * @see \`{@link https://api.jquery.com/deferred.promise/ }\`
@@ -702,14 +705,32 @@ trait jqXHR[TResolve] extends js.Object {
   ```
     */
   def promise[TTarget /* <: js.Object */](target: TTarget): this.type with TTarget = js.native
+  
+  var readyState: Double = js.native
+  
+  var responseJSON: js.UndefOr[js.Any] = js.native
+  
+  var responseText: String = js.native
+  
+  var responseXML: js.UndefOr[Document | Null] = js.native
+  
   def setRequestHeader(name: String, value: String): Unit = js.native
+  @JSName("setRequestHeader")
+  var setRequestHeader_Original: js.Function2[/* name */ String, /* value */ String, Unit] = js.native
+  
   /**
     * Determine the current state of a Deferred object.
     * @see \`{@link https://api.jquery.com/deferred.state/ }\`
     * @since 1.7
     */
   def state(): pending | resolved | rejected = js.native
+  
+  var status: Double = js.native
+  
   def statusCode(map: StatusCodeCallbacks[_]): Unit = js.native
+  
+  var statusText: String = js.native
+  
   /**
     * Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
     * @param doneFilter An optional function that is called when the Deferred is resolved.
@@ -1203,12 +1224,13 @@ trait jqXHR[TResolve] extends js.Object {
     RND | RNF | RNP
   ] = js.native
 }
-
 @JSGlobal("JQuery.jqXHR")
 @js.native
 object jqXHR extends js.Object {
+  
   type AlwaysCallback[TResolve, TjqXHR] = Callback3[TResolve | TjqXHR, TextStatus, TjqXHR | String]
+  
   type DoneCallback[TResolve, TjqXHR] = Callback3[TResolve, SuccessTextStatus, TjqXHR]
+  
   type FailCallback[TjqXHR] = Callback3[TjqXHR, ErrorTextStatus, String]
 }
-

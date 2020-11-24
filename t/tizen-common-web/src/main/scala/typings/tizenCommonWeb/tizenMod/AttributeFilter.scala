@@ -8,7 +8,7 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.FULLSTRING
 import typings.tizenCommonWeb.tizenCommonWebStrings.STARTSWITH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tizen-common-web/tizen", "AttributeFilter")
 @js.native
@@ -29,6 +29,7 @@ class AttributeFilter protected () extends AbstractFilter {
   def this(attributeName: String, matchFlag: FULLSTRING, matchValue: js.Any) = this()
   def this(attributeName: String, matchFlag: STARTSWITH, matchValue: js.Any) = this()
   def this(attributeName: String, matchFlag: FilterMatchFlag, matchValue: js.Any) = this()
+  
   /**
     * The name of the object attribute used for filtering.
     *
@@ -40,11 +41,13 @@ class AttributeFilter protected () extends AbstractFilter {
     * matches.
     */
   var attributeName: String = js.native
+  
   /**
     * The match flag used for attribute-based filtering.
     * By default, this attribute is set to "EXACTLY".
     */
   var matchFlag: FilterMatchFlag | EXACTLY | FULLSTRING | CONTAINS | STARTSWITH | ENDSWITH | EXISTS = js.native
+  
   /**
     * The value used for matching.
     * The filter will match if the attribute value matches the given matchValue.
@@ -53,4 +56,3 @@ class AttributeFilter protected () extends AbstractFilter {
     */
   var matchValue: js.Any = js.native
 }
-

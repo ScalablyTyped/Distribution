@@ -2,44 +2,104 @@ package typings.bluebirdRetry.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Options extends js.Object {
-  var args: js.UndefOr[js.Any] = js.undefined
-  var backoff: js.UndefOr[Double] = js.undefined
-  var context: js.UndefOr[js.Any] = js.undefined
-  var interval: js.UndefOr[Double] = js.undefined
-  var max_interval: js.UndefOr[Double] = js.undefined
-  var max_tries: js.UndefOr[Double] = js.undefined
-  var predicate: js.UndefOr[js.Any] = js.undefined
-  var throw_original: js.UndefOr[Boolean] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
+  
+  var args: js.UndefOr[js.Any] = js.native
+  
+  var backoff: js.UndefOr[Double] = js.native
+  
+  var context: js.UndefOr[js.Any] = js.native
+  
+  var interval: js.UndefOr[Double] = js.native
+  
+  var max_interval: js.UndefOr[Double] = js.native
+  
+  var max_tries: js.UndefOr[Double] = js.native
+  
+  var predicate: js.UndefOr[js.Any] = js.native
+  
+  var throw_original: js.UndefOr[Boolean] = js.native
+  
+  var timeout: js.UndefOr[Double] = js.native
 }
-
 object Options {
+  
   @scala.inline
-  def apply(
-    args: js.Any = null,
-    backoff: js.UndefOr[Double] = js.undefined,
-    context: js.Any = null,
-    interval: js.UndefOr[Double] = js.undefined,
-    max_interval: js.UndefOr[Double] = js.undefined,
-    max_tries: js.UndefOr[Double] = js.undefined,
-    predicate: js.Any = null,
-    throw_original: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (!js.isUndefined(backoff)) __obj.updateDynamic("backoff")(backoff.get.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max_interval)) __obj.updateDynamic("max_interval")(max_interval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max_tries)) __obj.updateDynamic("max_tries")(max_tries.get.asInstanceOf[js.Any])
-    if (predicate != null) __obj.updateDynamic("predicate")(predicate.asInstanceOf[js.Any])
-    if (!js.isUndefined(throw_original)) __obj.updateDynamic("throw_original")(throw_original.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setArgs(value: js.Any): Self = this.set("args", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    
+    @scala.inline
+    def setBackoff(value: Double): Self = this.set("backoff", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBackoff: Self = this.set("backoff", js.undefined)
+    
+    @scala.inline
+    def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    
+    @scala.inline
+    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    
+    @scala.inline
+    def setMax_interval(value: Double): Self = this.set("max_interval", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMax_interval: Self = this.set("max_interval", js.undefined)
+    
+    @scala.inline
+    def setMax_tries(value: Double): Self = this.set("max_tries", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMax_tries: Self = this.set("max_tries", js.undefined)
+    
+    @scala.inline
+    def setPredicate(value: js.Any): Self = this.set("predicate", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePredicate: Self = this.set("predicate", js.undefined)
+    
+    @scala.inline
+    def setThrow_original(value: Boolean): Self = this.set("throw_original", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteThrow_original: Self = this.set("throw_original", js.undefined)
+    
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
 }
-

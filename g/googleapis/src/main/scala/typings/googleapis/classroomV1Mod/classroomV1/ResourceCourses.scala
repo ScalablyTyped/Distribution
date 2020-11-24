@@ -6,19 +6,21 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Courses")
 @js.native
 class ResourceCourses protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var aliases: ResourceCoursesAliases = js.native
+  
   var announcements: ResourceCoursesAnnouncements = js.native
+  
   var context: APIRequestContext = js.native
+  
   var courseWork: ResourceCoursesCoursework = js.native
-  var students: ResourceCoursesStudents = js.native
-  var teachers: ResourceCoursesTeachers = js.native
-  var topics: ResourceCoursesTopics = js.native
+  
   /**
     * classroom.courses.create
     * @desc Creates a course.  The user specified in `ownerId` is the owner of
@@ -54,6 +56,7 @@ class ResourceCourses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCourse]
   ): Unit = js.native
+  
   /**
     * classroom.courses.delete
     * @desc Deletes a course.  This method returns the following error codes:
@@ -85,6 +88,7 @@ class ResourceCourses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * classroom.courses.get
     * @desc Returns a course.  This method returns the following error codes:
@@ -116,6 +120,7 @@ class ResourceCourses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCourse]
   ): Unit = js.native
+  
   /**
     * classroom.courses.list
     * @desc Returns a list of courses that the requesting user is permitted to
@@ -153,6 +158,7 @@ class ResourceCourses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListCoursesResponse]
   ): Unit = js.native
+  
   /**
     * classroom.courses.patch
     * @desc Updates one or more fields in a course.  This method returns the
@@ -189,6 +195,13 @@ class ResourceCourses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCourse]
   ): Unit = js.native
+  
+  var students: ResourceCoursesStudents = js.native
+  
+  var teachers: ResourceCoursesTeachers = js.native
+  
+  var topics: ResourceCoursesTopics = js.native
+  
   /**
     * classroom.courses.update
     * @desc Updates a course.  This method returns the following error codes:
@@ -223,4 +236,3 @@ class ResourceCourses protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCourse]
   ): Unit = js.native
 }
-

@@ -2,17 +2,17 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DataChangeType extends js.Object
-
 /**
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.DataChangeType")
 @js.native
 object DataChangeType extends js.Object {
+  
   /**
     * CellDeleted represents the data change event is triggered by deleting cells.
     * [Api set: ExcelApi 1.7]
@@ -76,6 +76,4 @@ object DataChangeType extends js.Object {
     */
   @js.native
   sealed trait unknown extends DataChangeType
-  
 }
-

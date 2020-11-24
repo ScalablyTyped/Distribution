@@ -3,7 +3,7 @@ package typings.cannon.mod
 import typings.cannon.CANNON.IConstraintOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cannon", "Constraint")
 @js.native
@@ -12,4 +12,3 @@ class Constraint protected ()
   def this(bodyA: typings.cannon.CANNON.Body, bodyB: typings.cannon.CANNON.Body) = this()
   def this(bodyA: typings.cannon.CANNON.Body, bodyB: typings.cannon.CANNON.Body, options: IConstraintOptions) = this()
 }
-

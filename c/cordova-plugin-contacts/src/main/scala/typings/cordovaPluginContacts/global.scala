@@ -12,11 +12,12 @@ import org.scalablytyped.runtime.Instantiable8
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   class Contact protected ()
     extends typings.cordovaPluginContacts.Contact {
@@ -38,6 +39,26 @@ object global extends js.Object {
       urls: js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactField]]
     ) = this()
   }
+  @js.native
+  object Contact
+    extends /** Constructor of Contact object */
+  Instantiable14[
+          /* id */ js.UndefOr[String], 
+          /* displayName */ js.UndefOr[String], 
+          /* name */ js.UndefOr[typings.cordovaPluginContacts.ContactName], 
+          /* nickname */ js.UndefOr[String], 
+          /* phoneNumbers */ js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactField]], 
+          /* emails */ js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactField]], 
+          /* addresses */ js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactAddress]], 
+          /* ims */ js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactField]], 
+          /* organizations */ js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactOrganization]], 
+          /* birthday */ js.UndefOr[Date], 
+          /* note */ js.UndefOr[String], 
+          /* photos */ js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactField]], 
+          /* categories */ js.UndefOr[typings.cordovaPluginContacts.ContactField], 
+          /* urls */ js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactField]], 
+          typings.cordovaPluginContacts.Contact
+        ]
   
   @js.native
   class ContactAddress protected ()
@@ -54,11 +75,43 @@ object global extends js.Object {
       country: js.UndefOr[String]
     ) = this()
   }
+  @js.native
+  object ContactAddress
+    extends /** Constructor of ContactAddress object */
+  Instantiable8[
+          /* pref */ js.UndefOr[Boolean], 
+          /* type */ js.UndefOr[String], 
+          /* formatted */ js.UndefOr[String], 
+          /* streetAddress */ js.UndefOr[String], 
+          /* locality */ js.UndefOr[String], 
+          /* region */ js.UndefOr[String], 
+          /* postalCode */ js.UndefOr[String], 
+          /* country */ js.UndefOr[String], 
+          typings.cordovaPluginContacts.ContactAddress
+        ]
   
   @js.native
   class ContactError protected ()
     extends typings.cordovaPluginContacts.ContactError {
     def this(code: Double) = this()
+  }
+  @js.native
+  object ContactError
+    extends Instantiable1[/* code */ Double, typings.cordovaPluginContacts.ContactError] {
+    
+    var INVALID_ARGUMENT_ERROR: Double = js.native
+    
+    var IO_ERROR: Double = js.native
+    
+    var NOT_SUPPORTED_ERROR: Double = js.native
+    
+    var PENDING_OPERATION_ERROR: Double = js.native
+    
+    var PERMISSION_DENIED_ERROR: Double = js.native
+    
+    var TIMEOUT_ERROR: Double = js.native
+    
+    var UNKNOWN_ERROR: Double = js.native
   }
   
   @js.native
@@ -73,6 +126,22 @@ object global extends js.Object {
     def this(`type`: String, value: js.UndefOr[scala.Nothing], pref: Boolean) = this()
     def this(`type`: String, value: String, pref: Boolean) = this()
   }
+  @js.native
+  object ContactField
+    extends /** Constructor for ContactField object */
+  Instantiable0[typings.cordovaPluginContacts.ContactField]
+       with Instantiable1[/* type */ String, typings.cordovaPluginContacts.ContactField]
+       with Instantiable2[
+          js.UndefOr[/* type */ String], 
+          /* value */ String, 
+          typings.cordovaPluginContacts.ContactField
+        ]
+       with Instantiable3[
+          js.UndefOr[/* type */ String], 
+          js.UndefOr[/* value */ String], 
+          /* pref */ Boolean, 
+          typings.cordovaPluginContacts.ContactField
+        ]
   
   @js.native
   /** Constructor for ContactFindOptions object */
@@ -90,6 +159,22 @@ object global extends js.Object {
     def this(filter: String, multiple: js.UndefOr[scala.Nothing], desiredFields: js.Array[ContactFieldType]) = this()
     def this(filter: String, multiple: Boolean, desiredFields: js.Array[ContactFieldType]) = this()
   }
+  @js.native
+  object ContactFindOptions
+    extends /** Constructor for ContactFindOptions object */
+  Instantiable0[typings.cordovaPluginContacts.ContactFindOptions]
+       with Instantiable1[/* filter */ String, typings.cordovaPluginContacts.ContactFindOptions]
+       with Instantiable2[
+          js.UndefOr[/* filter */ String], 
+          /* multiple */ Boolean, 
+          typings.cordovaPluginContacts.ContactFindOptions
+        ]
+       with Instantiable3[
+          js.UndefOr[/* filter */ String], 
+          js.UndefOr[/* multiple */ Boolean], 
+          /* desiredFields */ js.Array[ContactFieldType], 
+          typings.cordovaPluginContacts.ContactFindOptions
+        ]
   
   @js.native
   class ContactName protected ()
@@ -104,6 +189,18 @@ object global extends js.Object {
       honorificSuffix: js.UndefOr[String]
     ) = this()
   }
+  @js.native
+  object ContactName
+    extends /** Constructor for ContactName object */
+  Instantiable6[
+          /* formatted */ js.UndefOr[String], 
+          /* familyName */ js.UndefOr[String], 
+          /* givenName */ js.UndefOr[String], 
+          /* middleName */ js.UndefOr[String], 
+          /* honorificPrefix */ js.UndefOr[String], 
+          /* honorificSuffix */ js.UndefOr[String], 
+          typings.cordovaPluginContacts.ContactName
+        ]
   
   @js.native
   /** Constructor for ContactOrganization object */
@@ -227,102 +324,6 @@ object global extends js.Object {
     def this(pref: Boolean, `type`: String, name: String, department: js.UndefOr[scala.Nothing], title: String) = this()
     def this(pref: Boolean, `type`: String, name: String, department: String, title: String) = this()
   }
-  
-  @js.native
-  object Contact
-    extends /** Constructor of Contact object */
-  Instantiable14[
-          /* id */ js.UndefOr[String], 
-          /* displayName */ js.UndefOr[String], 
-          /* name */ js.UndefOr[typings.cordovaPluginContacts.ContactName], 
-          /* nickname */ js.UndefOr[String], 
-          /* phoneNumbers */ js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactField]], 
-          /* emails */ js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactField]], 
-          /* addresses */ js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactAddress]], 
-          /* ims */ js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactField]], 
-          /* organizations */ js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactOrganization]], 
-          /* birthday */ js.UndefOr[Date], 
-          /* note */ js.UndefOr[String], 
-          /* photos */ js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactField]], 
-          /* categories */ js.UndefOr[typings.cordovaPluginContacts.ContactField], 
-          /* urls */ js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactField]], 
-          typings.cordovaPluginContacts.Contact
-        ]
-  
-  @js.native
-  object ContactAddress
-    extends /** Constructor of ContactAddress object */
-  Instantiable8[
-          /* pref */ js.UndefOr[Boolean], 
-          /* type */ js.UndefOr[String], 
-          /* formatted */ js.UndefOr[String], 
-          /* streetAddress */ js.UndefOr[String], 
-          /* locality */ js.UndefOr[String], 
-          /* region */ js.UndefOr[String], 
-          /* postalCode */ js.UndefOr[String], 
-          /* country */ js.UndefOr[String], 
-          typings.cordovaPluginContacts.ContactAddress
-        ]
-  
-  @js.native
-  object ContactError
-    extends Instantiable1[/* code */ Double, typings.cordovaPluginContacts.ContactError] {
-    var INVALID_ARGUMENT_ERROR: Double = js.native
-    var IO_ERROR: Double = js.native
-    var NOT_SUPPORTED_ERROR: Double = js.native
-    var PENDING_OPERATION_ERROR: Double = js.native
-    var PERMISSION_DENIED_ERROR: Double = js.native
-    var TIMEOUT_ERROR: Double = js.native
-    var UNKNOWN_ERROR: Double = js.native
-  }
-  
-  @js.native
-  object ContactField
-    extends /** Constructor for ContactField object */
-  Instantiable0[typings.cordovaPluginContacts.ContactField]
-       with Instantiable1[/* type */ String, typings.cordovaPluginContacts.ContactField]
-       with Instantiable2[
-          js.UndefOr[/* type */ String], 
-          /* value */ String, 
-          typings.cordovaPluginContacts.ContactField
-        ]
-       with Instantiable3[
-          js.UndefOr[/* type */ String], 
-          js.UndefOr[/* value */ String], 
-          /* pref */ Boolean, 
-          typings.cordovaPluginContacts.ContactField
-        ]
-  
-  @js.native
-  object ContactFindOptions
-    extends /** Constructor for ContactFindOptions object */
-  Instantiable0[typings.cordovaPluginContacts.ContactFindOptions]
-       with Instantiable1[/* filter */ String, typings.cordovaPluginContacts.ContactFindOptions]
-       with Instantiable2[
-          js.UndefOr[/* filter */ String], 
-          /* multiple */ Boolean, 
-          typings.cordovaPluginContacts.ContactFindOptions
-        ]
-       with Instantiable3[
-          js.UndefOr[/* filter */ String], 
-          js.UndefOr[/* multiple */ Boolean], 
-          /* desiredFields */ js.Array[ContactFieldType], 
-          typings.cordovaPluginContacts.ContactFindOptions
-        ]
-  
-  @js.native
-  object ContactName
-    extends /** Constructor for ContactName object */
-  Instantiable6[
-          /* formatted */ js.UndefOr[String], 
-          /* familyName */ js.UndefOr[String], 
-          /* givenName */ js.UndefOr[String], 
-          /* middleName */ js.UndefOr[String], 
-          /* honorificPrefix */ js.UndefOr[String], 
-          /* honorificSuffix */ js.UndefOr[String], 
-          typings.cordovaPluginContacts.ContactName
-        ]
-  
   @js.native
   object ContactOrganization
     extends /** Constructor for ContactOrganization object */
@@ -354,6 +355,4 @@ object global extends js.Object {
           /* title */ String, 
           typings.cordovaPluginContacts.ContactOrganization
         ]
-  
 }
-

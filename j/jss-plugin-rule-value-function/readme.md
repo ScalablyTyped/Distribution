@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-rule-value-function
 
-Typings are for version 10.3.0
+Typings are for version 10.5.0
 
 ## Library description:
 JSS plugin for function value and rule syntax
@@ -10,9 +10,9 @@ JSS plugin for function value and rule syntax
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-rule-value-function |
 | Keywords           | jss, style, sheet, stylesheet, css, components, composable, css in js, css-in-js, dynamic, function, reactive, animation |
-| # releases         | 32 |
-| # dependents       | 12 |
-| # downloads        | 11384214 |
+| # releases         | 39 |
+| # dependents       | 13 |
+| # downloads        | 46880260 |
 | # stars            | 0 |
 
 ## Links

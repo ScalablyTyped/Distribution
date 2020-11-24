@@ -8,10 +8,11 @@ import typings.nightwatch.nightwatchStrings.server
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebDriverProtocolSessions extends js.Object {
+  
   /**
     * Get info about, delete or create a new session. Defaults to the current session.
     *
@@ -70,6 +71,7 @@ trait WebDriverProtocolSessions extends js.Object {
       Unit
     ]
   ): this.type = js.native
+  
   /**
     * Gets the text of the log type specified. To find out the available log types, use `.getLogTypes()`.
     *
@@ -87,6 +89,7 @@ trait WebDriverProtocolSessions extends js.Object {
     typeString: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* log */ js.Array[NightwatchLogEntry], Unit]
   ): this.type = js.native
+  
   /**
     * Gets an array of strings for which log types are available. This methods returns the entire WebDriver response, if you are only interested in the logs array, use `.getLogTypes()` instead.
     *
@@ -105,6 +108,7 @@ trait WebDriverProtocolSessions extends js.Object {
       Unit
     ]
   ): this.type = js.native
+  
   /**
     * Returns a list of the currently active sessions.
     *
@@ -123,6 +127,7 @@ trait WebDriverProtocolSessions extends js.Object {
       Unit
     ]
   ): this.type = js.native
+  
   /**
     * Query the server's current status.
     */
@@ -130,6 +135,7 @@ trait WebDriverProtocolSessions extends js.Object {
   def status(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Build], Unit]
   ): this.type = js.native
+  
   /**
     * Configure the amount of time that a particular type of operation can execute for before they are aborted and a |Timeout| error is returned to the client.
     *
@@ -146,6 +152,7 @@ trait WebDriverProtocolSessions extends js.Object {
     ms: Double,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Set the amount of time, in milliseconds, that asynchronous scripts executed by `.executeAsync` are permitted to run before they are aborted and a |Timeout| error is returned to the client.
     *
@@ -161,6 +168,7 @@ trait WebDriverProtocolSessions extends js.Object {
     ms: Double,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Set the amount of time the driver should wait when searching for elements. If this command is never sent, the driver will default to an implicit wait of 0ms.
     *
@@ -177,4 +185,3 @@ trait WebDriverProtocolSessions extends js.Object {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
 }
-

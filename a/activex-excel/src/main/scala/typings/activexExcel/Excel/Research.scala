@@ -2,16 +2,22 @@ package typings.activexExcel.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Research extends js.Object {
+  
   val Application: typings.activexExcel.Excel.Application = js.native
+  
   val Creator: XlCreator = js.native
+  
   @JSName("Excel.Research_typekey")
   var ExcelDotResearch_typekey: Research = js.native
-  val Parent: js.Any = js.native
+  
   def IsResearchService(ServiceID: String): Boolean = js.native
+  
+  val Parent: js.Any = js.native
+  
   def Query(ServiceID: String): js.Any = js.native
   def Query(
     ServiceID: String,
@@ -91,6 +97,6 @@ trait Research extends js.Object {
     UseSelection: Boolean,
     LaunchQuery: Boolean
   ): js.Any = js.native
+  
   def SetLanguagePair(LanguageFrom: Double, LanguageTo: Double): js.Any = js.native
 }
-

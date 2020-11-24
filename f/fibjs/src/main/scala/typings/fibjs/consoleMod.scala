@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -12,80 +12,122 @@ import scala.scalajs.js.annotation._
 @JSImport("console", JSImport.Namespace)
 @js.native
 object consoleMod extends js.Object {
+  
   @JSName("ALERT")
   val ALERT_ : /* 1 */ Double = js.native
+  
   @JSName("CRIT")
   val CRIT_ : /* 2 */ Double = js.native
+  
   @JSName("DEBUG")
   val DEBUG_ : /* 7 */ Double = js.native
+  
   @JSName("ERROR")
   val ERROR_ : /* 3 */ Double = js.native
+  
   val FATAL: /* 0 */ Double = js.native
+  
   @JSName("INFO")
   val INFO_ : /* 6 */ Double = js.native
+  
   @JSName("NOTICE")
   val NOTICE_ : /* 5 */ Double = js.native
+  
   val NOTSET: /* 10 */ Double = js.native
+  
   @JSName("PRINT")
   val PRINT_ : /* 9 */ Double = js.native
+  
   @JSName("WARN")
   val WARN_ : /* 4 */ Double = js.native
-  val height: Double = js.native
-  val loglevel: Double = js.native
-  val width: Double = js.native
+  
   def add(cfg: js.Array[_]): Unit = js.native
   def add(cfg: js.Object): Unit = js.native
   def add(`type`: String): Unit = js.native
+  
   def alert(args: js.Any*): Unit = js.native
   def alert(fmt: String, args: js.Any*): Unit = js.native
+  
   def assert(value: js.Any): Unit = js.native
   def assert(value: js.Any, msg: String): Unit = js.native
+  
   def clear(): Unit = js.native
+  
   def clickMouse(button: String): Unit = js.native
   def clickMouse(button: String, dbclick: Boolean): Unit = js.native
+  
   def crit(args: js.Any*): Unit = js.native
   def crit(fmt: String, args: js.Any*): Unit = js.native
+  
   def debug(args: js.Any*): Unit = js.native
   def debug(fmt: String, args: js.Any*): Unit = js.native
+  
   def dir(obj: js.Any): Unit = js.native
+  
   def error(args: js.Any*): Unit = js.native
   def error(fmt: String, args: js.Any*): Unit = js.native
+  
+  val height: Double = js.native
+  
   def hideCursor(): Unit = js.native
+  
   def info(args: js.Any*): Unit = js.native
   def info(fmt: String, args: js.Any*): Unit = js.native
+  
   def keyDown(key: String): Unit = js.native
   def keyDown(key: String, modifier: String): Unit = js.native
   def keyDown(key: String, modifier: js.Array[_]): Unit = js.native
+  
   def keyTap(key: String): Unit = js.native
   def keyTap(key: String, modifier: String): Unit = js.native
   def keyTap(key: String, modifier: js.Array[_]): Unit = js.native
+  
   def keyUp(key: String): Unit = js.native
   def keyUp(key: String, modifier: String): Unit = js.native
   def keyUp(key: String, modifier: js.Array[_]): Unit = js.native
+  
   def log(args: js.Any*): Unit = js.native
   def log(fmt: String, args: js.Any*): Unit = js.native
+  
+  val loglevel: Double = js.native
+  
   def mouseDown(button: String): Unit = js.native
+  
   def mouseUp(button: String): Unit = js.native
+  
   def moveMouse(x: Double, y: Double): Unit = js.native
+  
   def moveTo(row: Double, column: Double): Unit = js.native
+  
   def notice(args: js.Any*): Unit = js.native
   def notice(fmt: String, args: js.Any*): Unit = js.native
+  
   def print(args: js.Any*): Unit = js.native
   def print(fmt: String, args: js.Any*): Unit = js.native
+  
   def readLine(): String = js.native
   def readLine(msg: String): String = js.native
+  
   def reset(): Unit = js.native
+  
   def showCursor(): Unit = js.native
+  
   def time(): Unit = js.native
   def time(label: String): Unit = js.native
+  
   def timeElapse(): Unit = js.native
   def timeElapse(label: String): Unit = js.native
+  
   def timeEnd(): Unit = js.native
   def timeEnd(label: String): Unit = js.native
+  
   def trace(): Unit = js.native
   def trace(label: String): Unit = js.native
+  
   def typeString(text: String): Unit = js.native
+  
   def warn(args: js.Any*): Unit = js.native
   def warn(fmt: String, args: js.Any*): Unit = js.native
+  
+  val width: Double = js.native
 }
-

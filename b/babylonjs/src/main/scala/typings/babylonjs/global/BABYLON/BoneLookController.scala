@@ -3,7 +3,7 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.anon.AdjustRoll
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.BoneLookController")
 @js.native
@@ -40,13 +40,14 @@ class BoneLookController protected ()
     options: AdjustRoll
   ) = this()
 }
-
 /* static members */
 @JSGlobal("BABYLON.BoneLookController")
 @js.native
 object BoneLookController extends js.Object {
+  
   var _tmpMats: js.Any = js.native
+  
   var _tmpQuat: js.Any = js.native
+  
   var _tmpVecs: js.Any = js.native
 }
-

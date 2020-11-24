@@ -2,9 +2,10 @@ package typings.nodeZendesk.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object Users {
+  
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - js.Array[typings.nodeZendesk.mod.ZendeskID]

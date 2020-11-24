@@ -2,7 +2,7 @@ package typings.flux.dispatcherMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("flux/lib/Dispatcher", JSImport.Namespace)
 @js.native
@@ -17,4 +17,3 @@ import scala.scalajs.js.annotation._
   *     var typedDispatcher = new flux.Dispatcher<MyCustomActionType>()
   */
 class ^[TPayload] () extends Dispatcher[TPayload]
-

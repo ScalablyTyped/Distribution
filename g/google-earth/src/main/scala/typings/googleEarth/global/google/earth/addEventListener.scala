@@ -2,11 +2,12 @@ package typings.googleEarth.global.google.earth
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("google.earth.addEventListener")
 @js.native
 object addEventListener extends js.Object {
+  
   def apply(
     targetObject: js.Any,
     eventID: String,
@@ -19,4 +20,3 @@ object addEventListener extends js.Object {
     useCapture: Boolean
   ): Unit = js.native
 }
-

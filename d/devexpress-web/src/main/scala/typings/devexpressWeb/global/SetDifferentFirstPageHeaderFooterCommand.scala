@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change the header/footer edit mode, so it allows creation of a different header or footer for the first page of a document or section.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class SetDifferentFirstPageHeaderFooterCommand ()
   extends typings.devexpressWeb.SetDifferentFirstPageHeaderFooterCommand
-

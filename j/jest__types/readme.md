@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__types
 
-Typings are for version 24.9.0
+Typings are for version 26.6.2
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | @jest/types |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 52 |
-| # downloads        | 132752083 |
+| # releases         | 29 |
+| # dependents       | 73 |
+| # downloads        | 398053140 |
 | # stars            | 0 |
 
 ## Links

@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service is provided by documents to support Layers.
@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation._
 trait LayerManager
   extends XLayerManager
      with XNameAccess
-
 object LayerManager {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -41,4 +41,3 @@ object LayerManager {
     __obj.asInstanceOf[LayerManager]
   }
 }
-

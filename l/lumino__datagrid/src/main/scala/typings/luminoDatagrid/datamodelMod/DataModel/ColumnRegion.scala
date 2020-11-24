@@ -2,7 +2,7 @@ package typings.luminoDatagrid.datamodelMod.DataModel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A type alias for the data model column regions.
@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
   - typings.luminoDatagrid.luminoDatagridStrings.`row-header`
 */
 trait ColumnRegion extends js.Object
-
 object ColumnRegion {
+  
   @scala.inline
   def body: typings.luminoDatagrid.luminoDatagridStrings.body = "body".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.body]
+  
   @scala.inline
   def `row-header`: typings.luminoDatagrid.luminoDatagridStrings.`row-header` = "row-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`row-header`]
 }
-

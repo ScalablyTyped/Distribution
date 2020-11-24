@@ -2,11 +2,12 @@ package typings.sharepoint.global.SP.JsGrid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.JsGrid.Internal")
 @js.native
 object Internal extends js.Object {
+  
   @js.native
   class DiffTracker protected ()
     extends typings.sharepoint.SP.JsGrid.Internal.DiffTracker {
@@ -27,6 +28,4 @@ object Internal extends js.Object {
     extends typings.sharepoint.SP.JsGrid.Internal.PropertyUpdate {
     def this(data: js.Any, localized: String) = this()
   }
-  
 }
-

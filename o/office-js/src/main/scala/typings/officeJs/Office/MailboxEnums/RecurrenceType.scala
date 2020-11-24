@@ -2,11 +2,10 @@ package typings.officeJs.Office.MailboxEnums
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait RecurrenceType extends js.Object
-
 /**
   * Specifies the type of recurrence.
   * 
@@ -19,6 +18,7 @@ sealed trait RecurrenceType extends js.Object
 @JSGlobal("Office.MailboxEnums.RecurrenceType")
 @js.native
 object RecurrenceType extends js.Object {
+  
   /**
     * Daily.
     */
@@ -48,6 +48,4 @@ object RecurrenceType extends js.Object {
     */
   @js.native
   sealed trait Yearly extends RecurrenceType
-  
 }
-

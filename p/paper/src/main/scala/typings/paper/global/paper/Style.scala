@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * Style is used for changing the visual styles of items
@@ -27,4 +27,3 @@ class Style protected ()
     */
   def this(style: js.Object) = this()
 }
-

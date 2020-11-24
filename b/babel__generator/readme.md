@@ -10,14 +10,15 @@ Turns an AST into code.
 | ------------------ | :-------------: |
 | Full name          | @babel/generator |
 | Keywords           | - |
-| # releases         | 49 |
-| # dependents       | 466 |
-| # downloads        | 485969241 |
+| # releases         | 43 |
+| # dependents       | 670 |
+| # downloads        | 844079760 |
 | # stars            | 2 |
 
 ## Links
 - [Homepage](https://babeljs.io/)
 - [Bugs](https://github.com/babel/babel/issues)
+- [Repository](https://github.com/babel/babel)
 - [Npm](https://www.npmjs.com/package/%40babel%2Fgenerator)
     
 

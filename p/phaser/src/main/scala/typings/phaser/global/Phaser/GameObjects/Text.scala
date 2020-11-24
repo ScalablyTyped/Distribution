@@ -4,7 +4,7 @@ import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.GameObjects.Text.TextMetrics
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Text Game Object.
@@ -69,11 +69,11 @@ class Text protected ()
     style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle
   ) = this()
 }
-
 /* static members */
 @JSGlobal("Phaser.GameObjects.Text")
 @js.native
 object Text extends js.Object {
+  
   /**
     * Returns an object containing dimensions of the Text object.
     * @param text The Text object to calculate the size from.
@@ -81,10 +81,10 @@ object Text extends js.Object {
     * @param lines The lines of text to calculate the size from.
     */
   def GetTextSize(text: typings.phaser.Phaser.GameObjects.Text, size: TextMetrics, lines: js.Array[_]): js.Object = js.native
+  
   /**
     * Calculates the ascent, descent and fontSize of a given font style.
     * @param textStyle The TextStyle object to measure.
     */
   def MeasureText(textStyle: typings.phaser.Phaser.GameObjects.TextStyle): TextMetrics = js.native
 }
-

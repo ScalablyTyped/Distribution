@@ -2,10 +2,11 @@ package typings.trunk8
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     Creates a trunk8 instance with default options.
     @constructor
@@ -22,4 +23,3 @@ trait JQuery extends js.Object {
   def trunk8(method: String, value: String): js.Any = js.native
   def trunk8(options: Trunk8Options): js.Any = js.native
 }
-

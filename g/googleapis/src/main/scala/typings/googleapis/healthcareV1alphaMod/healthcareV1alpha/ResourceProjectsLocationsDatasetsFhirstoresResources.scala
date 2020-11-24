@@ -6,15 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha", "healthcare_v1alpha.Resource$Projects$Locations$Datasets$Fhirstores$Resources")
 @js.native
 class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var Patient: ResourceProjectsLocationsDatasetsFhirstoresResourcesPatient = js.native
+  
   var _history: ResourceProjectsLocationsDatasetsFhirstoresResourcesHistory = js.native
-  var context: APIRequestContext = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.resources._search
     * @desc Searches resources in the given FHIR store.  # Search Parameters
@@ -55,6 +57,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.resources.conditionalDeleteResource
     * @desc Deletes FHIR resources matching a search query. Note: unless
@@ -96,6 +99,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.resources.conditionalPatchResource
     * @desc Updates parts of a resource if the resource exists based on the
@@ -134,6 +138,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.resources.conditionalUpdateResource
     * @desc Updates the entire resource if the resource exists based on the
@@ -172,6 +177,9 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.resources.createResource
     * @desc Creates a FHIR resource.
@@ -209,6 +217,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.resources.delete
     * @desc Deletes a FHIR resource. Note: unless resource versioning is
@@ -244,6 +253,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.resources.delete$purge
     * @desc Deletes all the historical versions of a resource (excluding
@@ -289,6 +299,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.resources.get
     * @desc Gets a FHIR resource.
@@ -320,6 +331,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.resources.getMetadata
     * @desc Gets the capabilities statement for the store.
@@ -355,6 +367,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.resources.patch
     * @desc Updates part of an existing resource.
@@ -387,6 +400,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.resources.searchResources
     * @desc Searches resources in the given FHIR store.  # Search Parameters
@@ -430,6 +444,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.resources.update
     * @desc Updates the entire resource or creates a new resource with a client
@@ -465,4 +480,3 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
 }
-

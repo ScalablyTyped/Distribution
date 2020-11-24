@@ -6,10 +6,17 @@ import typings.plottable.interfacesMod.IRangeProjector
 import typings.plottable.scaleMod.Scale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IAccessorScaleBinding[D, R] extends js.Object {
+  
+  /**
+    * The (possibly upcasted to a function) user defined accessor.
+    *
+    * The first argument in `plot.x((d) => d.x, scale)`.
+    */
+  def accessor(datum: js.Any, index: Double, dataset: Dataset): js.Any = js.native
   /**
     * The (possibly upcasted to a function) user defined accessor.
     *
@@ -17,6 +24,7 @@ trait IAccessorScaleBinding[D, R] extends js.Object {
     */
   @JSName("accessor")
   var accessor_Original: IAccessor[_] = js.native
+  
   /**
     * Transforms the scaled result of the accessor.
     *
@@ -30,17 +38,11 @@ trait IAccessorScaleBinding[D, R] extends js.Object {
     * which, if present, will be applied to the scaled accessor result.
     * */
   var postScale: js.UndefOr[IRangeProjector[R]] = js.native
+  
   /**
     * The Scale that the accessor's result gets passed through.
     *
     * The second argument in `plot.x((d) => d.x, scale)`.
     */
   var scale: js.UndefOr[Scale[D, R]] = js.native
-  /**
-    * The (possibly upcasted to a function) user defined accessor.
-    *
-    * The first argument in `plot.x((d) => d.x, scale)`.
-    */
-  def accessor(datum: js.Any, index: Double, dataset: Dataset): js.Any = js.native
 }
-

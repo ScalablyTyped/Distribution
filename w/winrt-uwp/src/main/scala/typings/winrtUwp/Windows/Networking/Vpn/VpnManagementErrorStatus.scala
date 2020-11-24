@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.Vpn
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait VpnManagementErrorStatus extends js.Object
-
 /** Describes the known VPN management errors. */
 @JSGlobal("Windows.Networking.Vpn.VpnManagementErrorStatus")
 @js.native
 object VpnManagementErrorStatus extends js.Object {
+  
   /** Access is denied. */
   @js.native
   sealed trait accessDenied extends VpnManagementErrorStatus
@@ -34,6 +34,4 @@ object VpnManagementErrorStatus extends js.Object {
   /** The profile name is too long. */
   @js.native
   sealed trait profileNameTooLong extends VpnManagementErrorStatus
-  
 }
-

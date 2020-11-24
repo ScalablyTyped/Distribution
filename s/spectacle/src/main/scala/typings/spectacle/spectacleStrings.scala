@@ -3,9 +3,46 @@ package typings.spectacle
 import typings.spectacle.mod.TransitionEffect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spectacleStrings {
+  
+  @scala.inline
+  def arrows: arrows = "arrows".asInstanceOf[arrows]
+  
+  @scala.inline
+  def borderWidths: borderWidths = "borderWidths".asInstanceOf[borderWidths]
+  
+  @scala.inline
+  def colors: colors = "colors".asInstanceOf[colors]
+  
+  @scala.inline
+  def fade: fade = "fade".asInstanceOf[fade]
+  
+  @scala.inline
+  def fontSizes: fontSizes = "fontSizes".asInstanceOf[fontSizes]
+  
+  @scala.inline
+  def fontWeights: fontWeights = "fontWeights".asInstanceOf[fontWeights]
+  
+  @scala.inline
+  def letterSpacings: letterSpacings = "letterSpacings".asInstanceOf[letterSpacings]
+  
+  @scala.inline
+  def lineHeights: lineHeights = "lineHeights".asInstanceOf[lineHeights]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def radii: radii = "radii".asInstanceOf[radii]
+  
+  @scala.inline
+  def slide: slide = "slide".asInstanceOf[slide]
+  
+  @scala.inline
+  def space: space = "space".asInstanceOf[space]
+  
   @js.native
   sealed trait arrows extends js.Object
   
@@ -41,30 +78,4 @@ object spectacleStrings {
   
   @js.native
   sealed trait space extends js.Object
-  
-  @scala.inline
-  def arrows: arrows = "arrows".asInstanceOf[arrows]
-  @scala.inline
-  def borderWidths: borderWidths = "borderWidths".asInstanceOf[borderWidths]
-  @scala.inline
-  def colors: colors = "colors".asInstanceOf[colors]
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
-  @scala.inline
-  def fontSizes: fontSizes = "fontSizes".asInstanceOf[fontSizes]
-  @scala.inline
-  def fontWeights: fontWeights = "fontWeights".asInstanceOf[fontWeights]
-  @scala.inline
-  def letterSpacings: letterSpacings = "letterSpacings".asInstanceOf[letterSpacings]
-  @scala.inline
-  def lineHeights: lineHeights = "lineHeights".asInstanceOf[lineHeights]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def radii: radii = "radii".asInstanceOf[radii]
-  @scala.inline
-  def slide: slide = "slide".asInstanceOf[slide]
-  @scala.inline
-  def space: space = "space".asInstanceOf[space]
 }
-

@@ -6,10 +6,11 @@ import typings.sparkpost.mod.ResultsCallback
 import typings.sparkpost.mod.ResultsPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Search extends js.Object {
+  
   /**
     * Retrieves list of message events according to given params
     * @param parameters Query parameters
@@ -23,4 +24,3 @@ trait Search extends js.Object {
     */
   def search(parameters: MessageEventParameters, callback: ResultsCallback[js.Array[MessageEvent]]): Unit = js.native
 }
-

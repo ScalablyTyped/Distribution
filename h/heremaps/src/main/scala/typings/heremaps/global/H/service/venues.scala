@@ -4,11 +4,12 @@ import typings.heremaps.H.map.provider.ObjectProvider
 import typings.heremaps.H.service.venues.Service.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("H.service.venues")
 @js.native
 object venues extends js.Object {
+  
   /**
     * The class represents the building in the venue hiearachy (see H.service.venues.Venue) and holds floors that belong to the building.
     */
@@ -52,6 +53,25 @@ object venues extends js.Object {
   class Service ()
     extends typings.heremaps.H.service.venues.Service {
     def this(opt_options: Options) = this()
+  }
+  @js.native
+  object Service extends js.Object {
+    
+    /**
+      * The state types of the H.service.venues.Service. Possible states are:
+      */
+    @js.native
+    object State extends js.Object {
+      
+      @JSBracketAccess
+      def apply(value: Double): js.UndefOr[typings.heremaps.H.service.venues.Service.State with Double] = js.native
+      
+      /* 0 */ val ERROR: typings.heremaps.H.service.venues.Service.State.ERROR with Double = js.native
+      
+      /* 1 */ val INIT: typings.heremaps.H.service.venues.Service.State.INIT with Double = js.native
+      
+      /* 2 */ val READY: typings.heremaps.H.service.venues.Service.State.READY with Double = js.native
+    }
   }
   
   /**
@@ -106,22 +126,4 @@ object venues extends js.Object {
       */
     def this(provider: ObjectProvider, uid: String) = this()
   }
-  
-  @js.native
-  object Service extends js.Object {
-    /**
-      * The state types of the H.service.venues.Service. Possible states are:
-      */
-    @js.native
-    object State extends js.Object {
-      /* 0 */ val ERROR: typings.heremaps.H.service.venues.Service.State.ERROR with Double = js.native
-      /* 1 */ val INIT: typings.heremaps.H.service.venues.Service.State.INIT with Double = js.native
-      /* 2 */ val READY: typings.heremaps.H.service.venues.Service.State.READY with Double = js.native
-      @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.heremaps.H.service.venues.Service.State with Double] = js.native
-    }
-    
-  }
-  
 }
-

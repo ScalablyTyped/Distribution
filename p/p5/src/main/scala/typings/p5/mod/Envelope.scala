@@ -2,35 +2,11 @@ package typings.p5.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Envelope extends js.Object {
-  /**
-    *   Level once attack is complete.
-    */
-  var attackLevel: js.Any = js.native
-  /**
-    *   Time until envelope reaches attackLevel
-    */
-  var attackTime: js.Any = js.native
-  /**
-    *   Level after decay. The envelope will sustain here
-    *   until it is released.
-    */
-  var decayLevel: js.Any = js.native
-  /**
-    *   Time until envelope reaches decayLevel.
-    */
-  var decayTime: js.Any = js.native
-  /**
-    *   Level at the end of the release.
-    */
-  var releaseLevel: js.Any = js.native
-  /**
-    *   Duration of the release portion of the envelope.
-    */
-  var releaseTime: js.Any = js.native
+  
   /**
     *   Add a value to the p5.Oscillator's output
     *   amplitude, and return the oscillator. Calling this
@@ -41,6 +17,28 @@ trait Envelope extends js.Object {
     *   output
     */
   def add(number: Double): Envelope = js.native
+  
+  /**
+    *   Level once attack is complete.
+    */
+  var attackLevel: js.Any = js.native
+  
+  /**
+    *   Time until envelope reaches attackLevel
+    */
+  var attackTime: js.Any = js.native
+  
+  /**
+    *   Level after decay. The envelope will sustain here
+    *   until it is released.
+    */
+  var decayLevel: js.Any = js.native
+  
+  /**
+    *   Time until envelope reaches decayLevel.
+    */
+  var decayTime: js.Any = js.native
+  
   /**
     *   Multiply the p5.Envelope's output amplitude by a
     *   fixed value. Calling this method again will
@@ -50,6 +48,7 @@ trait Envelope extends js.Object {
     *   output
     */
   def mult(number: Double): Envelope = js.native
+  
   /**
     *   Play tells the envelope to start acting on a given
     *   input. If the input is a p5.sound object (i.e.
@@ -66,6 +65,7 @@ trait Envelope extends js.Object {
   def play(unit: js.Object, startTime: js.UndefOr[scala.Nothing], sustainTime: Double): Unit = js.native
   def play(unit: js.Object, startTime: Double): Unit = js.native
   def play(unit: js.Object, startTime: Double, sustainTime: Double): Unit = js.native
+  
   /**
     *   Exponentially ramp to a value using the first two
     *   values from setADSR(attackTime, decayTime) as
@@ -79,6 +79,17 @@ trait Envelope extends js.Object {
     */
   def ramp(unit: js.Object, secondsFromNow: Double, v: Double): Unit = js.native
   def ramp(unit: js.Object, secondsFromNow: Double, v: Double, v2: Double): Unit = js.native
+  
+  /**
+    *   Level at the end of the release.
+    */
+  var releaseLevel: js.Any = js.native
+  
+  /**
+    *   Duration of the release portion of the envelope.
+    */
+  var releaseTime: js.Any = js.native
+  
   /**
     *   Scale this envelope's amplitude values to a given
     *   range, and return the envelope. Calling this
@@ -92,6 +103,7 @@ trait Envelope extends js.Object {
     *   output
     */
   def scale(inMin: Double, inMax: Double, outMin: Double, outMax: Double): Envelope = js.native
+  
   /**
     *   Reset the envelope with a series of time/value
     *   pairs.
@@ -113,6 +125,7 @@ trait Envelope extends js.Object {
     releaseTime: Double,
     releaseLevel: Double
   ): Unit = js.native
+  
   /**
     *   Set values like a traditional  ADSR envelope .
     *   @param attackTime Time (in seconds before envelope
@@ -145,6 +158,7 @@ trait Envelope extends js.Object {
   def setADSR(attackTime: Double, decayTime: Double, susRatio: js.UndefOr[scala.Nothing], releaseTime: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double, releaseTime: Double): Unit = js.native
+  
   /**
     *   Set whether the envelope ramp is linear (default)
     *   or exponential. Exponential ramps can be useful
@@ -153,6 +167,7 @@ trait Envelope extends js.Object {
     *   @param isExp true is exponential, false is linear
     */
   def setExp(isExp: Boolean): Unit = js.native
+  
   /**
     *   Assign a parameter to be controlled by this
     *   envelope. If a p5.Sound object is given, then the
@@ -164,6 +179,7 @@ trait Envelope extends js.Object {
     */
   def setInput(): Unit = js.native
   def setInput(inputs: js.Object): Unit = js.native
+  
   /**
     *   Set max (attackLevel) and min (releaseLevel) of
     *   envelope.
@@ -171,6 +187,7 @@ trait Envelope extends js.Object {
     *   @param rLevel release level (defaults to 0)
     */
   def setRange(aLevel: Double, rLevel: Double): Unit = js.native
+  
   /**
     *   Trigger the Attack, and Decay portion of the
     *   Envelope. Similar to holding down a key on a
@@ -181,6 +198,7 @@ trait Envelope extends js.Object {
     *   @param secondsFromNow time from now (in seconds)
     */
   def triggerAttack(unit: js.Object, secondsFromNow: Double): Unit = js.native
+  
   /**
     *   Trigger the Release of the Envelope. This is
     *   similar to releasing the key on a piano and
@@ -191,4 +209,3 @@ trait Envelope extends js.Object {
     */
   def triggerRelease(unit: js.Object, secondsFromNow: Double): Unit = js.native
 }
-

@@ -11,8 +11,8 @@ WebDriver Proxy for testing rich clients. It block certain calls until Angular i
 | Full name          | blocking-proxy |
 | Keywords           | test, testing, webdriver, webdriverjs, selenium |
 | # releases         | 1 |
-| # dependents       | 9 |
-| # downloads        | 41530702 |
+| # dependents       | 13 |
+| # downloads        | 53255963 |
 | # stars            | 0 |
 
 ## Links

@@ -2,13 +2,14 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Definition of what a factory function should look like.
   */
 @js.native
 trait FactoryFn[T] extends js.Object {
+  
   /**
     * If no constructor to instantiate is provided, an instance of type T itself is created.
     */
@@ -19,4 +20,3 @@ trait FactoryFn[T] extends js.Object {
     */
   def apply[U /* <: T */](t: Type[U]): U = js.native
 }
-

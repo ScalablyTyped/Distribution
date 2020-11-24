@@ -10,9 +10,9 @@ Hypermedia API/HATEOAS client for Node.js and the browser
 | ------------------ | :-------------: |
 | Full name          | traverson |
 | Keywords           | JSON, REST, API, HATEOAS, hypertext, hypermedia, HAL |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 9 |
-| # downloads        | 191702 |
+| # downloads        | 151547 |
 | # stars            | 4 |
 
 ## Links

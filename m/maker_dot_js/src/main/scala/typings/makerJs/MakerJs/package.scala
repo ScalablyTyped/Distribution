@@ -2,9 +2,10 @@ package typings.makerJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object MakerJs {
+  
   /**
     * Callback to model.findChains() with resulting array of chains and unchained paths.
     */
@@ -14,18 +15,22 @@ package object MakerJs {
     /* layer */ java.lang.String, 
     scala.Unit
   ]
+  
   /**
     * Compare keys to see if they are equal.
     */
   type ICollectionKeyComparer[K] = js.Function2[/* a */ K, /* b */ K, scala.Boolean]
+  
   /**
     * A map of measurements.
     */
   type IMeasureMap = org.scalablytyped.runtime.StringDictionary[typings.makerJs.MakerJs.IMeasure]
+  
   /**
     * Model objects by id.
     */
   type IModelMap = org.scalablytyped.runtime.StringDictionary[typings.makerJs.MakerJs.IModel]
+  
   /**
     * Callback signature for model.walkPaths().
     */
@@ -35,6 +40,7 @@ package object MakerJs {
     /* pathContext */ typings.makerJs.MakerJs.IPath, 
     scala.Unit
   ]
+  
   /**
     * A map of functions which accept a path as a parameter.
     */
@@ -42,10 +48,12 @@ package object MakerJs {
     * Key is the type of a path, value is a function which accepts a path object as its parameter.
     */
   org.scalablytyped.runtime.StringDictionary[js.Function1[/* pathValue */ typings.makerJs.MakerJs.IPath, scala.Unit]]
+  
   /**
     * Path objects by id.
     */
   type IPathMap = org.scalablytyped.runtime.StringDictionary[typings.makerJs.MakerJs.IPath]
+  
   /**
     * A map of functions which accept a path and an origin point as parameters.
     */
@@ -61,6 +69,7 @@ package object MakerJs {
       scala.Unit
     ]
   ]
+  
   /**
     * An x-y point in a two-dimensional space.
     * Implemented as an array with 2 elements. The first element is x, the second element is y.
@@ -72,18 +81,22 @@ package object MakerJs {
     * ```
     */
   type IPoint = org.scalablytyped.runtime.NumberDictionary[scala.Double]
+  
   /**
     * Callback signature for model.walk().
     */
   type IWalkModelCallback = js.Function1[/* context */ typings.makerJs.MakerJs.IWalkModel, scala.Unit]
+  
   /**
     * Callback signature for model.walk(), which may return false to halt any further walking.
     */
   type IWalkModelCancellableCallback = js.Function1[/* context */ typings.makerJs.MakerJs.IWalkModel, scala.Boolean]
+  
   /**
     * Callback for returning a boolean from an IWalkPath.
     */
   type IWalkPathBooleanCallback = js.Function1[/* context */ typings.makerJs.MakerJs.IWalkPath, scala.Boolean]
+  
   /**
     * Callback signature for path in model.walk().
     */

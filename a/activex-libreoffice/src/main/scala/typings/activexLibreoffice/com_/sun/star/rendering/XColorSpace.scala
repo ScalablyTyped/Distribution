@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information how to interpret certain color data.
@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XColorSpace extends js.Object {
+  
   /**
     * Query the kind for each color component.
     *
@@ -33,6 +34,7 @@ trait XColorSpace extends js.Object {
     * **Remark**: For the standard RGB color space, ComponentTags consists of three elements, containing RGB_RED, RGB_GREEN and RGB_BLUE tags, respectively
     */
   val ComponentTags: SafeArray[Double] = js.native
+  
   /**
     * Query various optional properties from the color space.
     *
@@ -40,16 +42,19 @@ trait XColorSpace extends js.Object {
     * Whitepoint and Blackpoint. Background information for these is available [here]{@link url="http://en.wikipedia.org/wiki/Color_temperature"} .
     */
   val Properties: SafeArray[PropertyValue] = js.native
+  
   /**
     * Query rendering intent of this color space.
     * @returns a value from the {@link RenderingIntent} constant group.
     */
   val RenderingIntent: Double = js.native
+  
   /**
     * Query type of this color space.
     * @returns a value from the {@link ColorSpaceType} constant group.
     */
   val Type: Double = js.native
+  
   /**
     * Convert to color of another color space.
     * @param deviceColor Sequence of device color components. Is permitted to contain more than one device color element, therefore, batch conversion of multi
@@ -58,6 +63,7 @@ trait XColorSpace extends js.Object {
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format (e.g. if the number of compon
     */
   def convertColorSpace(deviceColor: SeqEquiv[ColorComponent], targetColorSpace: XColorSpace): SafeArray[ColorComponent] = js.native
+  
   /**
     * Convert sRGB color with linear alpha into this color space.
     *
@@ -67,6 +73,7 @@ trait XColorSpace extends js.Object {
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
   def convertFromARGB(rgbColor: SeqEquiv[ARGBColor]): SafeArray[ColorComponent] = js.native
+  
   /**
     * Convert premultiplied sRGB color with linear alpha into this color space.
     *
@@ -76,6 +83,7 @@ trait XColorSpace extends js.Object {
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
   def convertFromPARGB(rgbColor: SeqEquiv[ARGBColor]): SafeArray[ColorComponent] = js.native
+  
   /**
     * Convert sRGB color to a representation in this color space.
     *
@@ -85,6 +93,7 @@ trait XColorSpace extends js.Object {
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
   def convertFromRGB(rgbColor: SeqEquiv[RGBColor]): SafeArray[ColorComponent] = js.native
+  
   /**
     * Convert color value in this color space to sRGB color values, with linear alpha.
     *
@@ -94,6 +103,7 @@ trait XColorSpace extends js.Object {
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
   def convertToARGB(deviceColor: SeqEquiv[ColorComponent]): SafeArray[ARGBColor] = js.native
+  
   /**
     * Convert color value in this color space to premultiplied sRGB color values, with linear alpha.
     *
@@ -104,6 +114,7 @@ trait XColorSpace extends js.Object {
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
   def convertToPARGB(deviceColor: SeqEquiv[ColorComponent]): SafeArray[ARGBColor] = js.native
+  
   /**
     * Convert color value in this color space to sRGB color values.
     *
@@ -114,6 +125,7 @@ trait XColorSpace extends js.Object {
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
   def convertToRGB(deviceColor: SeqEquiv[ColorComponent]): SafeArray[RGBColor] = js.native
+  
   /**
     * Query the kind for each color component.
     *
@@ -128,6 +140,7 @@ trait XColorSpace extends js.Object {
     * **Remark**: For the standard RGB color space, ComponentTags consists of three elements, containing RGB_RED, RGB_GREEN and RGB_BLUE tags, respectively
     */
   def getComponentTags(): SafeArray[Double] = js.native
+  
   /**
     * Query various optional properties from the color space.
     *
@@ -135,19 +148,21 @@ trait XColorSpace extends js.Object {
     * Whitepoint and Blackpoint. Background information for these is available [here]{@link url="http://en.wikipedia.org/wiki/Color_temperature"} .
     */
   def getProperties(): SafeArray[PropertyValue] = js.native
+  
   /**
     * Query rendering intent of this color space.
     * @returns a value from the {@link RenderingIntent} constant group.
     */
   def getRenderingIntent(): Double = js.native
+  
   /**
     * Query type of this color space.
     * @returns a value from the {@link ColorSpaceType} constant group.
     */
   def getType(): Double = js.native
 }
-
 object XColorSpace {
+  
   @scala.inline
   def apply(
     ComponentTags: SafeArray[Double],
@@ -169,48 +184,65 @@ object XColorSpace {
     val __obj = js.Dynamic.literal(ComponentTags = ComponentTags.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], RenderingIntent = RenderingIntent.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], convertColorSpace = js.Any.fromFunction2(convertColorSpace), convertFromARGB = js.Any.fromFunction1(convertFromARGB), convertFromPARGB = js.Any.fromFunction1(convertFromPARGB), convertFromRGB = js.Any.fromFunction1(convertFromRGB), convertToARGB = js.Any.fromFunction1(convertToARGB), convertToPARGB = js.Any.fromFunction1(convertToPARGB), convertToRGB = js.Any.fromFunction1(convertToRGB), getComponentTags = js.Any.fromFunction0(getComponentTags), getProperties = js.Any.fromFunction0(getProperties), getRenderingIntent = js.Any.fromFunction0(getRenderingIntent), getType = js.Any.fromFunction0(getType))
     __obj.asInstanceOf[XColorSpace]
   }
+  
   @scala.inline
   implicit class XColorSpaceOps[Self <: XColorSpace] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setComponentTags(value: SafeArray[Double]): Self = this.set("ComponentTags", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setProperties(value: SafeArray[PropertyValue]): Self = this.set("Properties", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRenderingIntent(value: Double): Self = this.set("RenderingIntent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: Double): Self = this.set("Type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setConvertColorSpace(value: (SeqEquiv[ColorComponent], XColorSpace) => SafeArray[ColorComponent]): Self = this.set("convertColorSpace", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setConvertFromARGB(value: SeqEquiv[ARGBColor] => SafeArray[ColorComponent]): Self = this.set("convertFromARGB", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setConvertFromPARGB(value: SeqEquiv[ARGBColor] => SafeArray[ColorComponent]): Self = this.set("convertFromPARGB", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setConvertFromRGB(value: SeqEquiv[RGBColor] => SafeArray[ColorComponent]): Self = this.set("convertFromRGB", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setConvertToARGB(value: SeqEquiv[ColorComponent] => SafeArray[ARGBColor]): Self = this.set("convertToARGB", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setConvertToPARGB(value: SeqEquiv[ColorComponent] => SafeArray[ARGBColor]): Self = this.set("convertToPARGB", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setConvertToRGB(value: SeqEquiv[ColorComponent] => SafeArray[RGBColor]): Self = this.set("convertToRGB", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetComponentTags(value: () => SafeArray[Double]): Self = this.set("getComponentTags", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetProperties(value: () => SafeArray[PropertyValue]): Self = this.set("getProperties", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetRenderingIntent(value: () => Double): Self = this.set("getRenderingIntent", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetType(value: () => Double): Self = this.set("getType", js.Any.fromFunction0(value))
   }
-  
 }
-

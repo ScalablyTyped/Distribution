@@ -2,12 +2,12 @@ package typings.winrt.Windows.Storage.Provider
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CachedFileUpdaterUI extends ICachedFileUpdaterUI
-
 object CachedFileUpdaterUI {
+  
   @scala.inline
   def apply(
     onfileupdaterequested: js.Any,
@@ -20,4 +20,3 @@ object CachedFileUpdaterUI {
     __obj.asInstanceOf[CachedFileUpdaterUI]
   }
 }
-

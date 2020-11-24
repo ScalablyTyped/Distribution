@@ -2,17 +2,17 @@ package typings.heremaps.H.geo
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AltitudeContext extends js.Object
-
 /**
   * Contexts for altitudes to specify the contextual origin of an altitude's value
   */
 @JSGlobal("H.geo.AltitudeContext")
 @js.native
 object AltitudeContext extends js.Object {
+  
   /** Ground level */
   @js.native
   sealed trait GL extends AltitudeContext
@@ -40,6 +40,4 @@ object AltitudeContext extends js.Object {
   /** Ground level */
   @js.native
   sealed trait undefined extends AltitudeContext
-  
 }
-

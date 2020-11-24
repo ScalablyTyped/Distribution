@@ -1,7 +1,7 @@
 
 # Scala.js typings for cson-parser
 
-Typings are for version 4.0.5
+Typings are for version 4.0.6
 
 ## Library description:
 Safe parsing of CSON files
@@ -10,9 +10,9 @@ Safe parsing of CSON files
 | ------------------ | :-------------: |
 | Full name          | cson-parser |
 | Keywords           | cson, parser |
-| # releases         | 7 |
-| # dependents       | 45 |
-| # downloads        | 7137231 |
+| # releases         | 5 |
+| # dependents       | 47 |
+| # downloads        | 10539122 |
 | # stars            | 2 |
 
 ## Links

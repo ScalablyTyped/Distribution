@@ -2,7 +2,7 @@ package typings.babylonjs.physicsJointMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Physics/physicsJoint", "HingeJoint")
 @js.native
@@ -13,4 +13,3 @@ class HingeJoint protected () extends MotorEnabledJoint {
     */
   def this(jointData: PhysicsJointData) = this()
 }
-

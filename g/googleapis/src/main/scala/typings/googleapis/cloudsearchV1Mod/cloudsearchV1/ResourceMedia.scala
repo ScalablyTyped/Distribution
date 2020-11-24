@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Resource$Media")
 @js.native
 class ResourceMedia protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudsearch.media.upload
     * @desc Uploads media for indexing.  The upload endpoint supports direct
@@ -53,4 +55,3 @@ class ResourceMedia protected () extends js.Object {
     callback: BodyResponseCallback[SchemaMedia]
   ): Unit = js.native
 }
-

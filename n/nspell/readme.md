@@ -12,7 +12,7 @@ Hunspell compatible spell checker
 | Keywords           | spell, spellcheck, spellchecker, spell check, spell checker, check, spelling, myspell, hunspell |
 | # releases         | 3 |
 | # dependents       | 12 |
-| # downloads        | 381502 |
+| # downloads        | 405937 |
 | # stars            | 0 |
 
 ## Links

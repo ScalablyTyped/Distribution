@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__promisify
 
-Typings are for version 2.0.2
+Typings are for version 2.0.3
 
 ## Library description:
 A simple utility for promisifying functions and classes.
@@ -10,9 +10,9 @@ A simple utility for promisifying functions and classes.
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/promisify |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 22 |
-| # downloads        | 54873393 |
+| # releases         | 10 |
+| # dependents       | 24 |
+| # downloads        | 104537422 |
 | # stars            | 0 |
 
 ## Links

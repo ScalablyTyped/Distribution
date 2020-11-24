@@ -14,25 +14,31 @@ import typings.yandexMoneySdk.YandexMoneySDK.Wallet.RequestPaymentResult
 import typings.yandexMoneySdk.YandexMoneySDK.Wallet.SendAuthenticatedRequestParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Wallet extends js.Object {
+  
   def accountInfo(callback: ResponseCallback[AccountInfoResult]): Unit = js.native
+  
   def incomingTransferAccept(
     operation_id: String,
     protectionCode: String,
     callback: ResponseCallback[IncomingTransferAcceptResult]
   ): Unit = js.native
+  
   def incomingTransferReject(operation_id: String, callback: ResponseCallback[IncomingTransferRejectResult]): Unit = js.native
+  
   def operationDetails(operation_id: String, callback: ResponseCallback[OperationDetailsResult]): Unit = js.native
+  
   def operationHistory(options: OperationHistoryOptions, callback: ResponseCallback[OperationHistoryResult]): Unit = js.native
+  
   def processPayment(options: ProcessPaymentOptions, callback: ResponseCallback[ProcessPaymentResult]): Unit = js.native
+  
   def requestPayment(options: RequestPaymentOptions, callback: ResponseCallback[RequestPaymentResult]): Unit = js.native
+  
   def sendAuthenticatedRequest(params: SendAuthenticatedRequestParams, callback: ResponseCallback[_]): Unit = js.native
 }
-
 @JSImport("yandex-money-sdk", "Wallet")
 @js.native
 object Wallet extends TopLevel[WalletStatic]
-

@@ -2,29 +2,34 @@ package typings.googleapis.v3Mod.analyticsV3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for an Analytics profile filter link.
   */
 @js.native
 trait SchemaProfileFilterLink extends js.Object {
+  
   /**
     * Filter for this link.
     */
   var filterRef: js.UndefOr[SchemaFilterRef] = js.native
+  
   /**
     * Profile filter link ID.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * Resource type for Analytics filter.
     */
   var kind: js.UndefOr[String] = js.native
+  
   /**
     * View (Profile) for this link.
     */
   var profileRef: js.UndefOr[SchemaProfileRef] = js.native
+  
   /**
     * The rank of this profile filter link relative to the other filters linked
     * to the same profile. For readonly (i.e., list and get) operations, the
@@ -39,54 +44,69 @@ trait SchemaProfileFilterLink extends js.Object {
     * renumbered starting at 1.
     */
   var rank: js.UndefOr[Double] = js.native
+  
   /**
     * Link for this profile filter link.
     */
   var selfLink: js.UndefOr[String] = js.native
 }
-
 object SchemaProfileFilterLink {
+  
   @scala.inline
   def apply(): SchemaProfileFilterLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProfileFilterLink]
   }
+  
   @scala.inline
   implicit class SchemaProfileFilterLinkOps[Self <: SchemaProfileFilterLink] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFilterRef(value: SchemaFilterRef): Self = this.set("filterRef", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFilterRef: Self = this.set("filterRef", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKind: Self = this.set("kind", js.undefined)
+    
     @scala.inline
     def setProfileRef(value: SchemaProfileRef): Self = this.set("profileRef", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProfileRef: Self = this.set("profileRef", js.undefined)
+    
     @scala.inline
     def setRank(value: Double): Self = this.set("rank", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRank: Self = this.set("rank", js.undefined)
+    
     @scala.inline
     def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSelfLink: Self = this.set("selfLink", js.undefined)
   }
-  
 }
-

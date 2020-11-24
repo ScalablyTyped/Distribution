@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Accelerated Mobile Pages (AMP) URL API
@@ -28,7 +28,8 @@ import scala.scalajs.js.annotation._
 class Acceleratedmobilepageurl protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var ampUrls: ResourceAmpurls = js.native
+  
   var context: APIRequestContext = js.native
 }
-

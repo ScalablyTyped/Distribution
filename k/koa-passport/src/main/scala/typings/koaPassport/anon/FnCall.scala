@@ -3,10 +3,11 @@ package typings.koaPassport.anon
 import typings.node.httpMod.IncomingMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCall extends js.Object {
+  
   def apply[TUser, TID](
     fn: js.Function2[
       /* user */ TUser, 
@@ -23,4 +24,3 @@ trait FnCall extends js.Object {
     ]
   ): Unit = js.native
 }
-

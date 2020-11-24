@@ -11,8 +11,8 @@ Get installation path where the given package is installed. Works for globally a
 | Full name          | get-installed-path |
 | Keywords           | filepath, get, global, globally, install, installed, local, locally, npm, package, path, pkg, resolve |
 | # releases         | 1 |
-| # dependents       | 143 |
-| # downloads        | 2135469 |
+| # dependents       | 144 |
+| # downloads        | 2197022 |
 | # stars            | 0 |
 
 ## Links

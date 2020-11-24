@@ -3,7 +3,7 @@ package typings.babylonjs.gamepadsIndexMod
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Gamepads/index", "GamepadManager")
 @js.native
@@ -15,4 +15,3 @@ class GamepadManager ()
   extends typings.babylonjs.gamepadManagerMod.GamepadManager {
   def this(_scene: Scene) = this()
 }
-

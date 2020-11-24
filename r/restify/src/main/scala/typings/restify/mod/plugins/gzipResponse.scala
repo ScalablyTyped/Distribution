@@ -4,11 +4,12 @@ import typings.node.zlibMod.ZlibOptions
 import typings.restify.mod.RequestHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("restify", "plugins.gzipResponse")
 @js.native
 object gzipResponse extends js.Object {
+  
   /**
     * gzips the response if client send `accept-encoding: gzip`
     * @param options options to pass to gzlib
@@ -16,4 +17,3 @@ object gzipResponse extends js.Object {
   def apply(): RequestHandler = js.native
   def apply(options: ZlibOptions): RequestHandler = js.native
 }
-

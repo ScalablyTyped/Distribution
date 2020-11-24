@@ -11,8 +11,8 @@ An extensible static analysis linter for the TypeScript language
 | Full name          | tslint |
 | Keywords           | cli, typescript, linter |
 | # releases         | 19 |
-| # dependents       | 1813 |
-| # downloads        | 127929500 |
+| # dependents       | 2004 |
+| # downloads        | 160044234 |
 | # stars            | 69 |
 
 ## Links

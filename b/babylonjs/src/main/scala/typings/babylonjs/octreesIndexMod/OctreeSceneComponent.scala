@@ -3,7 +3,7 @@ package typings.babylonjs.octreesIndexMod
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Culling/Octrees/index", "OctreeSceneComponent")
 @js.native
@@ -15,4 +15,3 @@ class OctreeSceneComponent protected ()
     */
   def this(scene: Scene) = this()
 }
-

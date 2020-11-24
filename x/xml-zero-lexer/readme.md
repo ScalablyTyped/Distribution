@@ -12,7 +12,7 @@ Friendly and forgiving HTML5/XML5/JSX lexer/parser with lots of tests. Memory-ef
 | Keywords           | parser, lexer, tokenise, token, html, xml, jsx, react, markup |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 2577 |
+| # downloads        | 2659 |
 | # stars            | 0 |
 
 ## Links

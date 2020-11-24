@@ -3,7 +3,7 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.DeepImmutable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Curve3")
 @js.native
@@ -16,37 +16,12 @@ class Curve3 protected ()
     * @param points points which make up the curve
     */
   def this(points: js.Array[typings.babylonjs.BABYLON.Vector3]) = this()
-  /* CompleteClass */
-  override var _computeLength: js.Any = js.native
-  /* CompleteClass */
-  override var _length: js.Any = js.native
-  /* CompleteClass */
-  override var _points: js.Any = js.native
-  /**
-    * Returns a new instance of Curve3 object : var curve = curveA.continue(curveB);
-    * This new Curve3 is built by translating and sticking the curveB at the end of the curveA.
-    * curveA and curveB keep unchanged.
-    * @param curve the curve to continue from this curve
-    * @returns the newly constructed curve
-    */
-  /* CompleteClass */
-  override def continue(curve: DeepImmutable[typings.babylonjs.BABYLON.Curve3]): typings.babylonjs.BABYLON.Curve3 = js.native
-  /**
-    * @returns the Curve3 stored array of successive Vector3
-    */
-  /* CompleteClass */
-  override def getPoints(): js.Array[typings.babylonjs.BABYLON.Vector3] = js.native
-  /**
-    * @returns the computed length (float) of the curve.
-    */
-  /* CompleteClass */
-  override def length(): Double = js.native
 }
-
 /* static members */
 @JSGlobal("BABYLON.Curve3")
 @js.native
 object Curve3 extends js.Object {
+  
   /**
     * Returns a Curve3 object along a CatmullRom Spline curve :
     * @param points (array of Vector3) the points the spline must pass through. At least, four points required
@@ -60,6 +35,7 @@ object Curve3 extends js.Object {
     nbPoints: Double,
     closed: Boolean
   ): typings.babylonjs.BABYLON.Curve3 = js.native
+  
   /**
     * Returns a Curve3 object along a Cubic Bezier curve : https://doc.babylonjs.com/how_to/how_to_use_curve3#cubic-bezier-curve
     * @param v0 (Vector3) the origin point of the Cubic Bezier
@@ -76,6 +52,7 @@ object Curve3 extends js.Object {
     v3: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     nbPoints: Double
   ): typings.babylonjs.BABYLON.Curve3 = js.native
+  
   /**
     * Returns a Curve3 object along a Hermite Spline curve : https://doc.babylonjs.com/how_to/how_to_use_curve3#hermite-spline
     * @param p1 (Vector3) the origin point of the Hermite Spline
@@ -92,6 +69,7 @@ object Curve3 extends js.Object {
     t2: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     nbPoints: Double
   ): typings.babylonjs.BABYLON.Curve3 = js.native
+  
   /**
     * Returns a Curve3 object along a Quadratic Bezier curve : https://doc.babylonjs.com/how_to/how_to_use_curve3#quadratic-bezier-curve
     * @param v0 (Vector3) the origin point of the Quadratic Bezier
@@ -107,4 +85,3 @@ object Curve3 extends js.Object {
     nbPoints: Double
   ): typings.babylonjs.BABYLON.Curve3 = js.native
 }
-

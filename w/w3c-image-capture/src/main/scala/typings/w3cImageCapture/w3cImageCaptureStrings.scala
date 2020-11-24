@@ -2,9 +2,40 @@ package typings.w3cImageCapture
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object w3cImageCaptureStrings {
+  
+  @scala.inline
+  def always: always = "always".asInstanceOf[always]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def continuous: continuous = "continuous".asInstanceOf[continuous]
+  
+  @scala.inline
+  def controllable: controllable = "controllable".asInstanceOf[controllable]
+  
+  @scala.inline
+  def flash: flash = "flash".asInstanceOf[flash]
+  
+  @scala.inline
+  def manual: manual = "manual".asInstanceOf[manual]
+  
+  @scala.inline
+  def never: never = "never".asInstanceOf[never]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  
+  @scala.inline
+  def `single-shot`: `single-shot` = "single-shot".asInstanceOf[`single-shot`]
+  
   @js.native
   sealed trait always extends RedEyeReduction
   
@@ -34,26 +65,4 @@ object w3cImageCaptureStrings {
   
   @js.native
   sealed trait `single-shot` extends MeteringMode
-  
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def continuous: continuous = "continuous".asInstanceOf[continuous]
-  @scala.inline
-  def controllable: controllable = "controllable".asInstanceOf[controllable]
-  @scala.inline
-  def flash: flash = "flash".asInstanceOf[flash]
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def `single-shot`: `single-shot` = "single-shot".asInstanceOf[`single-shot`]
 }
-

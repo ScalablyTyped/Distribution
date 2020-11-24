@@ -2,12 +2,12 @@ package typings.winrt.Windows.Devices.Input
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MouseCapabilities extends IMouseCapabilities
-
 object MouseCapabilities {
+  
   @scala.inline
   def apply(
     horizontalWheelPresent: Double,
@@ -20,4 +20,3 @@ object MouseCapabilities {
     __obj.asInstanceOf[MouseCapabilities]
   }
 }
-

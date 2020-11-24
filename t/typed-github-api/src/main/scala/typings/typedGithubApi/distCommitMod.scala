@@ -11,18 +11,21 @@ import typings.typedGithubApi.interfacesCommitMod.GitFile
 import typings.typedGithubApi.repositoryRefMod.RepositoryRefClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typed-github-api/dist/commit", JSImport.Namespace)
 @js.native
 object distCommitMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.interfacesCommitMod.CommitRef because Already inherited
   - typings.typedGithubApi.interfacesCommitMod.CommitSummary because Already inherited
   - typings.typedGithubApi.interfacesCommitMod.Commit because var conflicts: author, committer, gitCommit, htmlUri, parents. Inlined changes, files */ @js.native
   class CommitClass protected () extends CommitSummaryClass {
     def this(repository: RepositoryRefClass, data: Commit) = this()
+    
     var changes: GitChanges = js.native
+    
     var files: js.Array[GitFile] = js.native
   }
   
@@ -39,6 +42,7 @@ object distCommitMod extends js.Object {
   - typings.typedGithubApi.interfacesCommitMod.GitCommit because var conflicts: author, committer, message. Inlined parents */ @js.native
   class GitCommitClass protected () extends GitCommitSummaryClass {
     def this(repository: RepositoryRefClass, data: GitCommit) = this()
+    
     var parents: js.Array[CommitRef] = js.native
   }
   
@@ -52,6 +56,4 @@ object distCommitMod extends js.Object {
       data: typings.typedGithubApi.commitMod.GitCommitSummary
     ) = this()
   }
-  
 }
-

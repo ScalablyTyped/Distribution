@@ -3,7 +3,7 @@ package typings.androiduix.global.android.graphics.drawable
 import typings.androiduix.android.graphics.drawable.ClipDrawable.ClipState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("android.graphics.drawable.ClipDrawable")
 @js.native
@@ -16,11 +16,15 @@ class ClipDrawable ()
     orientation: Double
   ) = this()
 }
-
 /* static members */
 @JSGlobal("android.graphics.drawable.ClipDrawable")
 @js.native
 object ClipDrawable extends js.Object {
+  
+  var HORIZONTAL: Double = js.native
+  
+  var VERTICAL: Double = js.native
+  
   @js.native
   class ClipState protected ()
     extends typings.androiduix.android.graphics.drawable.ClipDrawable.ClipState {
@@ -29,8 +33,4 @@ object ClipDrawable extends js.Object {
       owner: typings.androiduix.android.graphics.drawable.ClipDrawable
     ) = this()
   }
-  
-  var HORIZONTAL: Double = js.native
-  var VERTICAL: Double = js.native
 }
-

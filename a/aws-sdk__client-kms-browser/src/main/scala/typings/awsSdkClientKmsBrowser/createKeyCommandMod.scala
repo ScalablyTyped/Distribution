@@ -5,33 +5,29 @@ import typings.awsSdkClientKmsBrowser.kmsconfigurationMod.KMSResolvedConfigurati
 import typings.awsSdkClientKmsBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientKmsBrowser.typesCreateKeyInputMod.CreateKeyInput
 import typings.awsSdkClientKmsBrowser.typesCreateKeyOutputMod.CreateKeyOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kms-browser/commands/CreateKeyCommand", JSImport.Namespace)
 @js.native
 object createKeyCommandMod extends js.Object {
+  
   @js.native
   class CreateKeyCommand protected () extends Command[
           InputTypesUnion, 
           CreateKeyInput, 
           OutputTypesUnion, 
           CreateKeyOutput, 
-          KMSResolvedConfiguration, 
-          Blob
+          KMSResolvedConfiguration
         ] {
     def this(input: CreateKeyInput) = this()
-    val middlewareStack: MiddlewareStack[CreateKeyInput, CreateKeyOutput, Blob] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: KMSResolvedConfiguration
     ): Handler[CreateKeyInput, CreateKeyOutput] = js.native
   }
-  
 }
-

@@ -2,43 +2,51 @@ package typings.lscache
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LSCache extends js.Object {
+  
   /**
     * Sets whether to display warnings when an item is removed from the cache or not.
     */
   def enableWarnings(enabled: Boolean): Unit = js.native
+  
   /**
     * Flushes all lscache items and expiry markers without affecting rest of localStorage
     */
   def flush(): Unit = js.native
+  
   /**
     * Flushes expired lscache items and expiry markers without affecting rest of localStorage
     */
   def flushExpired(): Unit = js.native
+  
   /**
     * Retrieves specified value from localStorage, if not expired.
     * @param {string} key
     * @return {string|Object}
     */
   def get(key: String): js.Any = js.native
+  
   /**
     * @returns {number} The currently set number of milliseconds each time unit represents in
     *   the set() function's "time" argument.
     */
   def getExpiryMilliseconds(): Double = js.native
+  
   /**
     * Removes a value from localStorage.
     * Equivalent to 'delete' in memcache, but that's a keyword in JS.
     * @param {string} key
     */
   def remove(key: String): Unit = js.native
+  
   /**
     * Resets the string being appended to CACHE_PREFIX so lscache will use the default storage behavior.
     */
   def resetBucket(): Unit = js.native
+  
   /**
     * Stores the value in localStorage. Expires after specified number of minutes.
     * @param {string} key
@@ -48,11 +56,13 @@ trait LSCache extends js.Object {
     */
   def set(key: String, value: js.Any): Boolean = js.native
   def set(key: String, value: js.Any, time: Double): Boolean = js.native
+  
   /**
     * Appends CACHE_PREFIX so lscache will partition data in to different buckets.
     * @param {string} bucket
     */
   def setBucket(bucket: String): Unit = js.native
+  
   /**
     * Sets the number of milliseconds each time unit represents in the set() function's
     *   "time" argument.
@@ -64,6 +74,7 @@ trait LSCache extends js.Object {
     * @param {number} milliseconds
     */
   def setExpiryMilliseconds(milliseconds: Double): Unit = js.native
+  
   /**
     * Returns whether local storage is supported.
     * Currently exposed for testing purposes.
@@ -71,4 +82,3 @@ trait LSCache extends js.Object {
     */
   def supported(): Boolean = js.native
 }
-

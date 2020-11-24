@@ -11,8 +11,8 @@ The lodash method `_.hasIn` exported as a module.
 | Full name          | lodash.hasin |
 | Keywords           | lodash-modularized, hasin |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 603920 |
+| # dependents       | 14 |
+| # downloads        | 1079700 |
 | # stars            | 0 |
 
 ## Links

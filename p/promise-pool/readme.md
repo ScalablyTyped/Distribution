@@ -11,7 +11,7 @@ just another simple task pool based on promise (Q).
 | Keywords           | task, pool, promise, concurrency |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1053 |
+| # downloads        | 1329 |
 | # stars            | 0 |
 
 ## Links

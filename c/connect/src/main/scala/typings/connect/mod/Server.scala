@@ -4,14 +4,14 @@ import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Server extends EventEmitter {
-  var route: String = js.native
-  var stack: js.Array[ServerStackItem] = js.native
+  
   def apply(req: typings.node.httpMod.IncomingMessage, res: ServerResponse): Unit = js.native
   def apply(req: typings.node.httpMod.IncomingMessage, res: ServerResponse, next: js.Function): Unit = js.native
+  
   /**
     * Handle server requests, punting them down
     * the middleware stack.
@@ -19,6 +19,7 @@ trait Server extends EventEmitter {
     * @private
     */
   def handle(req: typings.node.httpMod.IncomingMessage, res: ServerResponse, next: js.Function): Unit = js.native
+  
   def listen(handle: js.Any): typings.node.httpMod.Server = js.native
   def listen(handle: js.Any, listeningListener: js.Function): typings.node.httpMod.Server = js.native
   def listen(path: String): typings.node.httpMod.Server = js.native
@@ -62,6 +63,11 @@ trait Server extends EventEmitter {
   def listen(port: Double, hostname: String, backlog: Double): typings.node.httpMod.Server = js.native
   def listen(port: Double, hostname: String, backlog: Double, callback: js.Function): typings.node.httpMod.Server = js.native
   def listen(port: Double, hostname: String, callback: js.Function): typings.node.httpMod.Server = js.native
+  
+  var route: String = js.native
+  
+  var stack: js.Array[ServerStackItem] = js.native
+  
   /**
     * Utilize the given middleware `handle` to the given `route`,
     * defaulting to _/_. This "route" is the mount-point for the
@@ -78,4 +84,3 @@ trait Server extends EventEmitter {
   def use(fn: HandleFunction): Server = js.native
   def use(route: String, fn: HandleFunction): Server = js.native
 }
-

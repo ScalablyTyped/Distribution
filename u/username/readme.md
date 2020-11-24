@@ -1,7 +1,7 @@
 
 # Scala.js typings for username
 
-Typings are for version v3.0.0
+Typings are for version 5.1.0
 
 ## Library description:
 Get the username of the current user
@@ -10,9 +10,9 @@ Get the username of the current user
 | ------------------ | :-------------: |
 | Full name          | username |
 | Keywords           | username, user, login, name, logname, lname, whoami, shell, env, environment, variable |
-| # releases         | 5 |
-| # dependents       | 159 |
-| # downloads        | 4403043 |
+| # releases         | 4 |
+| # dependents       | 169 |
+| # downloads        | 4613339 |
 | # stars            | 5 |
 
 ## Links
@@ -24,7 +24,7 @@ Get the username of the current user
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

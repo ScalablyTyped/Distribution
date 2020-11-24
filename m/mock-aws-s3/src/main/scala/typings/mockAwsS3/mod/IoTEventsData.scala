@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.ioteventsdataMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "IoTEventsData")
 @js.native
@@ -14,4 +14,3 @@ class IoTEventsData ()
   extends typings.awsSdk.mod.IoTEventsData {
   def this(options: ClientConfiguration) = this()
 }
-

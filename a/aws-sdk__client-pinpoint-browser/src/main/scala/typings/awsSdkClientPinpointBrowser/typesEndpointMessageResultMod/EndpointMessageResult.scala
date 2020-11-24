@@ -9,14 +9,16 @@ import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.TH
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.UNKNOWN_FAILURE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EndpointMessageResult extends js.Object {
+  
   /**
     * Address that endpoint message was delivered to.
     */
   var Address: js.UndefOr[String] = js.native
+  
   /**
     * The delivery status of the message. Possible values:
     *
@@ -47,68 +49,86 @@ trait EndpointMessageResult extends js.Object {
   var DeliveryStatus: js.UndefOr[
     SUCCESSFUL | THROTTLED | TEMPORARY_FAILURE | PERMANENT_FAILURE | UNKNOWN_FAILURE | OPT_OUT | DUPLICATE | String
   ] = js.native
+  
   /**
     * Unique message identifier associated with the message that was sent.
     */
   var MessageId: js.UndefOr[String] = js.native
+  
   /**
     * Downstream service status code.
     */
   var StatusCode: js.UndefOr[Double] = js.native
+  
   /**
     * Status message for message delivery.
     */
   var StatusMessage: js.UndefOr[String] = js.native
+  
   /**
     * If token was updated as part of delivery. (This is GCM Specific)
     */
   var UpdatedToken: js.UndefOr[String] = js.native
 }
-
 object EndpointMessageResult {
+  
   @scala.inline
   def apply(): EndpointMessageResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndpointMessageResult]
   }
+  
   @scala.inline
   implicit class EndpointMessageResultOps[Self <: EndpointMessageResult] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddress(value: String): Self = this.set("Address", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAddress: Self = this.set("Address", js.undefined)
+    
     @scala.inline
     def setDeliveryStatus(
       value: SUCCESSFUL | THROTTLED | TEMPORARY_FAILURE | PERMANENT_FAILURE | UNKNOWN_FAILURE | OPT_OUT | DUPLICATE | String
     ): Self = this.set("DeliveryStatus", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDeliveryStatus: Self = this.set("DeliveryStatus", js.undefined)
+    
     @scala.inline
     def setMessageId(value: String): Self = this.set("MessageId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMessageId: Self = this.set("MessageId", js.undefined)
+    
     @scala.inline
     def setStatusCode(value: Double): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStatusCode: Self = this.set("StatusCode", js.undefined)
+    
     @scala.inline
     def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    
     @scala.inline
     def setUpdatedToken(value: String): Self = this.set("UpdatedToken", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUpdatedToken: Self = this.set("UpdatedToken", js.undefined)
   }
-  
 }
-

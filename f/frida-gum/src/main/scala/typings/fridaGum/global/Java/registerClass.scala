@@ -4,11 +4,12 @@ import typings.fridaGum.Java.ClassSpec
 import typings.fridaGum.anon.Wrapper
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Java.registerClass")
 @js.native
 object registerClass extends js.Object {
+  
   /**
     * Creates a new Java class.
     *
@@ -16,4 +17,3 @@ object registerClass extends js.Object {
     */
   def apply(spec: ClassSpec): Wrapper = js.native
 }
-

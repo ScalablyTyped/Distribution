@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Targetvpngateways")
 @js.native
 class ResourceTargetvpngateways protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.targetVpnGateways.aggregatedList
     * @desc Retrieves an aggregated list of target VPN gateways.
@@ -115,6 +115,9 @@ class ResourceTargetvpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetVpnGatewayAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.targetVpnGateways.delete
     * @desc Deletes the specified target VPN gateway.
@@ -206,6 +209,7 @@ class ResourceTargetvpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetVpnGateways.get
     * @desc Returns the specified target VPN gateway. Gets a list of available
@@ -297,6 +301,7 @@ class ResourceTargetvpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetVpnGateway]
   ): Unit = js.native
+  
   /**
     * compute.targetVpnGateways.insert
     * @desc Creates a target VPN gateway in the specified project and region
@@ -389,6 +394,7 @@ class ResourceTargetvpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetVpnGateways.list
     * @desc Retrieves a list of target VPN gateways available to the specified
@@ -495,6 +501,7 @@ class ResourceTargetvpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetVpnGatewayList]
   ): Unit = js.native
+  
   /**
     * compute.targetVpnGateways.setLabels
     * @desc Sets the labels on a TargetVpnGateway. To learn more about labels,
@@ -528,6 +535,7 @@ class ResourceTargetvpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetVpnGateways.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -624,4 +632,3 @@ class ResourceTargetvpngateways protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

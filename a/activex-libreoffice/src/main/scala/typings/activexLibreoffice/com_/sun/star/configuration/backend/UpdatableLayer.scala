@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides read/write access to a configuration data layer.
@@ -19,8 +19,8 @@ import scala.scalajs.js.annotation._
 trait UpdatableLayer
   extends Layer
      with XUpdatableLayer
-
 object UpdatableLayer {
+  
   @scala.inline
   def apply(
     Timestamp: String,
@@ -38,4 +38,3 @@ object UpdatableLayer {
     __obj.asInstanceOf[UpdatableLayer]
   }
 }
-

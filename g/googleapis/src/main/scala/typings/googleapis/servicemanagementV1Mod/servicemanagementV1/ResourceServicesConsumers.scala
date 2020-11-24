@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicemanagement/v1", "servicemanagement_v1.Resource$Services$Consumers")
 @js.native
 class ResourceServicesConsumers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * servicemanagement.services.consumers.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -43,6 +45,7 @@ class ResourceServicesConsumers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.consumers.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -73,6 +76,7 @@ class ResourceServicesConsumers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.consumers.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -110,4 +114,3 @@ class ResourceServicesConsumers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

@@ -3,12 +3,13 @@ package typings.heremaps.global.H
 import typings.heremaps.H.math.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** math *****/
 @JSGlobal("H.math")
 @js.native
 object math extends js.Object {
+  
   /**
     * Class represents a 2-dimensional point, defined by x and y coordinates.
     * @property x {number} - The point's coordinate on X-axis.
@@ -23,6 +24,17 @@ object math extends js.Object {
       * @param y {number} - The point's coordinate on Y-axis.
       */
     def this(x: Double, y: Double) = this()
+  }
+  /* static members */
+  @js.native
+  object Point extends js.Object {
+    
+    /**
+      * This method creates a Point instance from a given IPoint object.
+      * @param iPoint {H.math.IPoint} - The IPoint object to use
+      * @returns {H.math.Point} - the created Point instance
+      */
+    def fromIPoint(iPoint: IPoint): typings.heremaps.H.math.Point = js.native
   }
   
   /**
@@ -40,6 +52,18 @@ object math extends js.Object {
       */
     def this(left: Double, top: Double, right: Double, bottom: Double) = this()
   }
+  /* static members */
+  @js.native
+  object Rect extends js.Object {
+    
+    /**
+      * To create a rectangle from a top-left and bottom-right point pair.
+      * @param topLeft {H.math.IPoint} - the top-left vertex of the rectanle
+      * @param bottomRight {H.math.IPoint} - the bottom-right vertex of the rectanle
+      * @returns {H.math.Rect} - returns the rectangular area defined by the top-left and bottom-right vertices
+      */
+    def fromPoints(topLeft: IPoint, bottomRight: IPoint): typings.heremaps.H.math.Rect = js.native
+  }
   
   /**
     * Class for representing sizes consisting of a width and height.
@@ -56,29 +80,4 @@ object math extends js.Object {
       */
     def this(width: Double, height: Double) = this()
   }
-  
-  /* static members */
-  @js.native
-  object Point extends js.Object {
-    /**
-      * This method creates a Point instance from a given IPoint object.
-      * @param iPoint {H.math.IPoint} - The IPoint object to use
-      * @returns {H.math.Point} - the created Point instance
-      */
-    def fromIPoint(iPoint: IPoint): typings.heremaps.H.math.Point = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Rect extends js.Object {
-    /**
-      * To create a rectangle from a top-left and bottom-right point pair.
-      * @param topLeft {H.math.IPoint} - the top-left vertex of the rectanle
-      * @param bottomRight {H.math.IPoint} - the bottom-right vertex of the rectanle
-      * @returns {H.math.Rect} - returns the rectangular area defined by the top-left and bottom-right vertices
-      */
-    def fromPoints(topLeft: IPoint, bottomRight: IPoint): typings.heremaps.H.math.Rect = js.native
-  }
-  
 }
-

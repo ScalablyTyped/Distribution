@@ -3,7 +3,7 @@ package typings.videoJs.videoCoreNovttMod.default
 import typings.videoJs.mod.videojs.ComponentOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "DurationDisplay")
 @js.native
@@ -20,4 +20,3 @@ class DurationDisplayCls protected ()
     */
   def this(player: typings.videoJs.mod.videojs.Player, options: ComponentOptions) = this()
 }
-

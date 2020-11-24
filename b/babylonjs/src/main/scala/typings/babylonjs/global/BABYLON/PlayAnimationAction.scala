@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PlayAnimationAction")
 @js.native
@@ -24,8 +24,15 @@ class PlayAnimationAction protected ()
     target: js.Any,
     from: Double,
     to: Double,
+    loop: js.UndefOr[scala.Nothing],
+    condition: typings.babylonjs.BABYLON.Condition
+  ) = this()
+  def this(
+    triggerOptions: js.Any,
+    target: js.Any,
+    from: Double,
+    to: Double,
     loop: Boolean,
     condition: typings.babylonjs.BABYLON.Condition
   ) = this()
 }
-

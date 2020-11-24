@@ -1,14 +1,15 @@
 package typings.officeUiFabricReact.contextualMenuClassNamesMod
 
+import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemStyles
-import typings.uifabricStyling.ithemeMod.ITheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenu.classNames", "getItemClassNames")
 @js.native
 object getItemClassNames extends js.Object {
+  
   def apply(
     theme: ITheme,
     disabled: Boolean,
@@ -24,4 +25,3 @@ object getItemClassNames extends js.Object {
     className: js.UndefOr[String]
   ): IContextualMenuItemStyles = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Rooms")
 @js.native
 class ResourceRooms protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * games.rooms.create
     * @desc Create a room. For internal use by the Games SDK only. Calling this
@@ -43,6 +45,7 @@ class ResourceRooms protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRoom]
   ): Unit = js.native
+  
   /**
     * games.rooms.decline
     * @desc Decline an invitation to join a room. For internal use by the Games
@@ -73,6 +76,7 @@ class ResourceRooms protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRoom]
   ): Unit = js.native
+  
   /**
     * games.rooms.dismiss
     * @desc Dismiss an invitation to join a room. For internal use by the Games
@@ -98,6 +102,7 @@ class ResourceRooms protected () extends js.Object {
   ): Unit = js.native
   def dismiss(params: ParamsResourceRoomsDismiss, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def dismiss(params: ParamsResourceRoomsDismiss, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * games.rooms.get
     * @desc Get the data for a room.
@@ -123,6 +128,7 @@ class ResourceRooms protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceRoomsGet, options: MethodOptions): GaxiosPromise[SchemaRoom] = js.native
   def get(params: ParamsResourceRoomsGet, options: MethodOptions, callback: BodyResponseCallback[SchemaRoom]): Unit = js.native
+  
   /**
     * games.rooms.join
     * @desc Join a room. For internal use by the Games SDK only. Calling this
@@ -154,6 +160,7 @@ class ResourceRooms protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRoom]
   ): Unit = js.native
+  
   /**
     * games.rooms.leave
     * @desc Leave a room. For internal use by the Games SDK only. Calling this
@@ -185,6 +192,7 @@ class ResourceRooms protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRoom]
   ): Unit = js.native
+  
   /**
     * games.rooms.list
     * @desc Returns invitations to join rooms.
@@ -215,6 +223,7 @@ class ResourceRooms protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRoomList]
   ): Unit = js.native
+  
   /**
     * games.rooms.reportStatus
     * @desc Updates sent by a client reporting the status of peers in a room.
@@ -248,4 +257,3 @@ class ResourceRooms protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRoomStatus]
   ): Unit = js.native
 }
-

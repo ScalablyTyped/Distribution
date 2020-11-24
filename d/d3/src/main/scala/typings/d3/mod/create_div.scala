@@ -5,11 +5,11 @@ import typings.d3Selection.mod.Selection_
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3", "create")
 @js.native
 object create_div extends js.Object {
+  
   def apply(name: div): Selection_[HTMLDivElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
 }
-

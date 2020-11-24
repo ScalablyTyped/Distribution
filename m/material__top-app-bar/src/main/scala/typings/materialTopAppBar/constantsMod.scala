@@ -2,11 +2,12 @@ package typings.materialTopAppBar
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/top-app-bar/constants", JSImport.Namespace)
 @js.native
 object constantsMod extends js.Object {
+  
   /**
     * @license
     * Copyright 2018 Google Inc.
@@ -31,27 +32,37 @@ object constantsMod extends js.Object {
     */
   @js.native
   object cssClasses extends js.Object {
+    
     var FIXED_CLASS: String = js.native
+    
     var FIXED_SCROLLED_CLASS: String = js.native
+    
     var SHORT_CLASS: String = js.native
+    
     var SHORT_COLLAPSED_CLASS: String = js.native
+    
     var SHORT_HAS_ACTION_ITEM_CLASS: String = js.native
   }
   
   @js.native
   object numbers extends js.Object {
+    
     var DEBOUNCE_THROTTLE_RESIZE_TIME_MS: Double = js.native
+    
     var MAX_TOP_APP_BAR_HEIGHT: Double = js.native
   }
   
   @js.native
   object strings extends js.Object {
+    
     var ACTION_ITEM_SELECTOR: String = js.native
+    
     var NAVIGATION_EVENT: String = js.native
+    
     var NAVIGATION_ICON_SELECTOR: String = js.native
+    
     var ROOT_SELECTOR: String = js.native
+    
     var TITLE_SELECTOR: String = js.native
   }
-  
 }
-

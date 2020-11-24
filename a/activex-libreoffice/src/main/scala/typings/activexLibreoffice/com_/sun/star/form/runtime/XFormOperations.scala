@@ -9,7 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XResultSetUpdate
 import typings.activexLibreoffice.com_.sun.star.sdbc.XRowSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * encapsulates operations on a database form.
@@ -35,6 +35,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XFormOperations extends XComponent {
+  
   /**
     * provides access to the form controller which the instance is operating on.
     *
@@ -42,8 +43,10 @@ trait XFormOperations extends XComponent {
     * some functionality will not be available. In particular, every feature which relies on the active control of the controller might be of limited use.
     */
   var Controller: XFormController = js.native
+  
   /** provides access to the cursor of the form the instance is operating on. */
   var Cursor: XRowSet = js.native
+  
   /**
     * denotes the instance which should be notified about features whose state might have changed.
     *
@@ -58,13 +61,16 @@ trait XFormOperations extends XComponent {
     * @see FormFeature
     */
   var FeatureInvalidation: XFeatureInvalidation = js.native
+  
   /** provides access to the update cursor of the form the instance is operating on. */
   var UpdateCursor: XResultSetUpdate = js.native
+  
   /**
     * commits the current control of our controller
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs
     */
   def commitCurrentControl(): Boolean = js.native
+  
   /**
     * commits the current record of the form
     * @param RecordInserted will be `TRUE` if a record has been inserted, i.e. the form was positioned on the insertion row.
@@ -72,6 +78,7 @@ trait XFormOperations extends XComponent {
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs
     */
   def commitCurrentRecord(RecordInserted: js.Array[Boolean]): Boolean = js.native
+  
   /**
     * executes the operation associated with the given feature
     * @param Feature the feature which is to be executed. Must be one of the {@link FormFeature} constants.
@@ -81,6 +88,7 @@ trait XFormOperations extends XComponent {
     * @throws com::sun::star::lang::WrappedTargetException if an exception is caught which is no {@link com.sun.star.uno.RuntimeException} and no {@link com.su
     */
   def execute(Feature: Double): Unit = js.native
+  
   /**
     * executes the operation associated with the given feature, with passing arguments for execution
     * @param Feature the feature which is to be executed. Must be one of the {@link FormFeature} constants.
@@ -91,6 +99,7 @@ trait XFormOperations extends XComponent {
     * @throws com::sun::star::lang::WrappedTargetException if an exception is caught which is no {@link com.sun.star.uno.RuntimeException} and no {@link com.su
     */
   def executeWithArguments(Feature: Double, Arguments: SeqEquiv[NamedValue]): Unit = js.native
+  
   /**
     * retrieves the current state of the given feature
     *
@@ -100,6 +109,7 @@ trait XFormOperations extends XComponent {
     * @param Feature the feature whose state is to be determined. Must be one of the {@link FormFeature} constants. ;  An invalid value here will be silently
     */
   def getState(Feature: Double): FeatureState = js.native
+  
   /**
     * determines whether a feature is currently enabled.
     *
@@ -107,6 +117,7 @@ trait XFormOperations extends XComponent {
     * @param Feature the feature whose state is to be determined. Must be one of the {@link FormFeature} constants. ;  An invalid value here will be silently
     */
   def isEnabled(Feature: Double): Boolean = js.native
+  
   /**
     * determines whether the form is currently positioned on the insertion row
     *
@@ -114,6 +125,7 @@ trait XFormOperations extends XComponent {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs obtaining the form property
     */
   def isInsertionRow(): Boolean = js.native
+  
   /**
     * determines whether the current row of the form is modified
     *
@@ -122,8 +134,8 @@ trait XFormOperations extends XComponent {
     */
   def isModifiedRow(): Boolean = js.native
 }
-
 object XFormOperations {
+  
   @scala.inline
   def apply(
     Controller: XFormController,
@@ -148,42 +160,56 @@ object XFormOperations {
     val __obj = js.Dynamic.literal(Controller = Controller.asInstanceOf[js.Any], Cursor = Cursor.asInstanceOf[js.Any], FeatureInvalidation = FeatureInvalidation.asInstanceOf[js.Any], UpdateCursor = UpdateCursor.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), commitCurrentControl = js.Any.fromFunction0(commitCurrentControl), commitCurrentRecord = js.Any.fromFunction1(commitCurrentRecord), dispose = js.Any.fromFunction0(dispose), execute = js.Any.fromFunction1(execute), executeWithArguments = js.Any.fromFunction2(executeWithArguments), getState = js.Any.fromFunction1(getState), isEnabled = js.Any.fromFunction1(isEnabled), isInsertionRow = js.Any.fromFunction0(isInsertionRow), isModifiedRow = js.Any.fromFunction0(isModifiedRow), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener))
     __obj.asInstanceOf[XFormOperations]
   }
+  
   @scala.inline
   implicit class XFormOperationsOps[Self <: XFormOperations] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setController(value: XFormController): Self = this.set("Controller", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCursor(value: XRowSet): Self = this.set("Cursor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFeatureInvalidation(value: XFeatureInvalidation): Self = this.set("FeatureInvalidation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUpdateCursor(value: XResultSetUpdate): Self = this.set("UpdateCursor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCommitCurrentControl(value: () => Boolean): Self = this.set("commitCurrentControl", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setCommitCurrentRecord(value: js.Array[Boolean] => Boolean): Self = this.set("commitCurrentRecord", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setExecute(value: Double => Unit): Self = this.set("execute", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setExecuteWithArguments(value: (Double, SeqEquiv[NamedValue]) => Unit): Self = this.set("executeWithArguments", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetState(value: Double => FeatureState): Self = this.set("getState", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsEnabled(value: Double => Boolean): Self = this.set("isEnabled", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsInsertionRow(value: () => Boolean): Self = this.set("isInsertionRow", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsModifiedRow(value: () => Boolean): Self = this.set("isModifiedRow", js.Any.fromFunction0(value))
   }
-  
 }
-

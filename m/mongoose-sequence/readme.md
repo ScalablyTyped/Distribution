@@ -11,8 +11,8 @@ Very generic autoincrement plugin for mongoose
 | Full name          | mongoose-sequence |
 | Keywords           | mongoose, autoincrement, sequence, seq |
 | # releases         | 7 |
-| # dependents       | 9 |
-| # downloads        | 139325 |
+| # dependents       | 17 |
+| # downloads        | 215469 |
 | # stars            | 5 |
 
 ## Links

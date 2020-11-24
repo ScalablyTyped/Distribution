@@ -5,7 +5,7 @@ import typings.heremaps.H.map.ICopyright
 import typings.heremaps.H.util.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Provider defines an object which works as a database for the map. Providers can exists in different forms they can implement client side object storage or they can request data from
@@ -17,11 +17,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Provider_ extends EventTarget {
-  var max: Double = js.native
-  var min: Double = js.native
-  var uid: String = js.native
-  var uri: String = js.native
+  
   def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native
+  
   /**
     * This method returns the copyrights of the provided content for a certain geographical area at a specified zoom level.
     * @param bounds {H.geo.Rect} - The bounding area for which to retrieve the copyright information
@@ -29,5 +27,12 @@ trait Provider_ extends EventTarget {
     * @returns {?Array<H.map.ICopyright>} - a list of copyright information objects for the provided area and zoom level
     */
   def getCopyrights(bounds: Rect, level: Double): js.Array[ICopyright] = js.native
+  
+  var max: Double = js.native
+  
+  var min: Double = js.native
+  
+  var uid: String = js.native
+  
+  var uri: String = js.native
 }
-

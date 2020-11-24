@@ -3,10 +3,11 @@ package typings.qlikVisualizationextensions.VisualizationAPI
 import typings.angular.mod.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVisualization extends js.Object {
+  
   /**
     * Create a new visualization on the fly based on a session object
     * and will not be persisted in the app.
@@ -36,6 +37,7 @@ trait IVisualization extends js.Object {
   def create(`type`: VisualizationType, cols: js.UndefOr[scala.Nothing], options: js.Any): IPromise[_] = js.native
   def create(`type`: VisualizationType, cols: js.Array[_]): IPromise[_] = js.native
   def create(`type`: VisualizationType, cols: js.Array[_], options: js.Any): IPromise[_] = js.native
+  
   /**
     * Gets an existing visualization.
     * @param id - Id for an existing visualization.
@@ -43,4 +45,3 @@ trait IVisualization extends js.Object {
     */
   def get(id: String): IPromise[_] = js.native
 }
-

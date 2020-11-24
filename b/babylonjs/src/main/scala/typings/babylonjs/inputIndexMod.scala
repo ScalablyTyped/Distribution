@@ -4,11 +4,23 @@ import typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBl
 import typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Node/Blocks/Input/index", JSImport.Namespace)
 @js.native
 object inputIndexMod extends js.Object {
+  
+  @js.native
+  object AnimatedInputBlockTypes extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes with Double] = js.native
+    
+    /* 0 */ val None: typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes.None with Double = js.native
+    
+    /* 1 */ val Time: typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes.Time with Double = js.native
+  }
+  
   @js.native
   class InputBlock protected ()
     extends typings.babylonjs.inputBlockMod.InputBlock {
@@ -20,16 +32,7 @@ object inputIndexMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, target: NodeMaterialBlockTargets) = this()
+    def this(name: String, target: js.UndefOr[scala.Nothing], `type`: NodeMaterialBlockConnectionPointTypes) = this()
     def this(name: String, target: NodeMaterialBlockTargets, `type`: NodeMaterialBlockConnectionPointTypes) = this()
   }
-  
-  @js.native
-  object AnimatedInputBlockTypes extends js.Object {
-    /* 0 */ val None: typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes.None with Double = js.native
-    /* 1 */ val Time: typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes.Time with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes with Double] = js.native
-  }
-  
 }
-

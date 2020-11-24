@@ -8,7 +8,7 @@ import typings.sawtoothSdk.protobufMod.IConsensusCancelBlockResponse
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ConsensusCancelBlockResponse")
 @js.native
@@ -20,11 +20,11 @@ class ConsensusCancelBlockResponse ()
   extends typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse {
   def this(properties: IConsensusCancelBlockResponse) = this()
 }
-
 /* static members */
 @JSImport("sawtooth-sdk", "protobuf.ConsensusCancelBlockResponse")
 @js.native
 object ConsensusCancelBlockResponse extends js.Object {
+  
   /**
     * Creates a new ConsensusCancelBlockResponse instance using the specified properties.
     * @param [properties] Properties to set
@@ -32,6 +32,7 @@ object ConsensusCancelBlockResponse extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse = js.native
   def create(properties: IConsensusCancelBlockResponse): typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse = js.native
+  
   /**
     * Decodes a ConsensusCancelBlockResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,6 +45,7 @@ object ConsensusCancelBlockResponse extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse = js.native
+  
   /**
     * Decodes a ConsensusCancelBlockResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -53,6 +55,7 @@ object ConsensusCancelBlockResponse extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse = js.native
+  
   /**
     * Encodes the specified ConsensusCancelBlockResponse message. Does not implicitly {@link ConsensusCancelBlockResponse.verify|verify} messages.
     * @param message ConsensusCancelBlockResponse message or plain object to encode
@@ -61,6 +64,7 @@ object ConsensusCancelBlockResponse extends js.Object {
     */
   def encode(message: IConsensusCancelBlockResponse): Writer = js.native
   def encode(message: IConsensusCancelBlockResponse, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ConsensusCancelBlockResponse message, length delimited. Does not implicitly {@link ConsensusCancelBlockResponse.verify|verify} messages.
     * @param message ConsensusCancelBlockResponse message or plain object to encode
@@ -69,12 +73,14 @@ object ConsensusCancelBlockResponse extends js.Object {
     */
   def encodeDelimited(message: IConsensusCancelBlockResponse): Writer = js.native
   def encodeDelimited(message: IConsensusCancelBlockResponse, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ConsensusCancelBlockResponse message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ConsensusCancelBlockResponse
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse = js.native
+  
   /**
     * Creates a plain object from a ConsensusCancelBlockResponse message. Also converts values to other types if specified.
     * @param message ConsensusCancelBlockResponse
@@ -83,24 +89,31 @@ object ConsensusCancelBlockResponse extends js.Object {
     */
   def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse): StringDictionary[js.Any] = js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ConsensusCancelBlockResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  
   /** Status enum. */
   @js.native
   object Status extends js.Object {
-    /* 2 */ val BAD_REQUEST: typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse.Status.BAD_REQUEST with Double = js.native
-    /* 5 */ val INVALID_STATE: typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse.Status.INVALID_STATE with Double = js.native
-    /* 4 */ val NOT_READY: typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse.Status.NOT_READY with Double = js.native
-    /* 1 */ val OK: typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse.Status.OK with Double = js.native
-    /* 3 */ val SERVICE_ERROR: typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse.Status.SERVICE_ERROR with Double = js.native
-    /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse.Status.STATUS_UNSET with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse.Status with Double] = js.native
+    
+    /* 2 */ val BAD_REQUEST: typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse.Status.BAD_REQUEST with Double = js.native
+    
+    /* 5 */ val INVALID_STATE: typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse.Status.INVALID_STATE with Double = js.native
+    
+    /* 4 */ val NOT_READY: typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse.Status.NOT_READY with Double = js.native
+    
+    /* 1 */ val OK: typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse.Status.OK with Double = js.native
+    
+    /* 3 */ val SERVICE_ERROR: typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse.Status.SERVICE_ERROR with Double = js.native
+    
+    /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.ConsensusCancelBlockResponse.Status.STATUS_UNSET with Double = js.native
   }
-  
 }
-

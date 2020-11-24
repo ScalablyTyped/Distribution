@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-geo
 
-Typings are for version 1.11
+Typings are for version 2.0
 
 ## Library description:
 Shapes and calculators for spherical coordinates.
@@ -10,9 +10,9 @@ Shapes and calculators for spherical coordinates.
 | ------------------ | :-------------: |
 | Full name          | d3-geo |
 | Keywords           | d3, d3-module, geo, maps, cartography |
-| # releases         | 12 |
-| # dependents       | 121 |
-| # downloads        | 29614327 |
+| # releases         | 13 |
+| # dependents       | 158 |
+| # downloads        | 48338662 |
 | # stars            | 0 |
 
 ## Links

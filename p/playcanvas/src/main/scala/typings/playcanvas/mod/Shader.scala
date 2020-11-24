@@ -3,7 +3,7 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.Attributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new shader object.
@@ -47,4 +47,3 @@ class Shader protected ()
   extends typings.playcanvas.pc.Shader {
   def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice, definition: Attributes) = this()
 }
-

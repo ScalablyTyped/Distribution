@@ -2,7 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A data view definition for visualizing chart data.
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line: no-empty-interface
 @js.native
 trait DataViewDefinition extends js.Object
-

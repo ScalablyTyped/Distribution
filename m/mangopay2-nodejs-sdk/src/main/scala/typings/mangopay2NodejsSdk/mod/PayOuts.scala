@@ -5,32 +5,12 @@ import typings.mangopay2NodejsSdk.mod.PayOut.PayOutData
 import typings.mangopay2NodejsSdk.mod.refund.RefundData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "PayOuts")
 @js.native
 class PayOuts () extends js.Object {
-  /**
-    * Create new pay-out
-    * @param payOut
-    * @param options
-    */
-  @JSName("create")
-  var create_Original: MethodOverload[CreatePayOut, PayOutData] = js.native
-  /**
-    * Gets list of Refunds of a PayOut
-    * @param payOutId
-    * @param options
-    */
-  @JSName("getRefunds")
-  var getRefunds_Original: MethodOverload[String, js.Array[RefundData]] = js.native
-  /**
-    * Get payout
-    * @param payOutId
-    * @param options
-    */
-  @JSName("get")
-  var get_Original: MethodOverload[String, PayOutData] = js.native
+  
   /**
     * Create new pay-out
     * @param payOut
@@ -66,6 +46,14 @@ class PayOuts () extends js.Object {
   def create(data: CreatePayOut, options: MethodOptionWithResponse): js.Promise[WithResponse[PayOutData]] = js.native
   def create(data: CreatePayOut, options: MethodOptionWithoutResponse): js.Promise[PayOutData] = js.native
   /**
+    * Create new pay-out
+    * @param payOut
+    * @param options
+    */
+  @JSName("create")
+  var create_Original: MethodOverload[CreatePayOut, PayOutData] = js.native
+  
+  /**
     * Get payout
     * @param payOutId
     * @param options
@@ -99,6 +87,7 @@ class PayOuts () extends js.Object {
     */
   def get(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[PayOutData]] = js.native
   def get(data: String, options: MethodOptionWithoutResponse): js.Promise[PayOutData] = js.native
+  
   /**
     * Gets list of Refunds of a PayOut
     * @param payOutId
@@ -133,5 +122,19 @@ class PayOuts () extends js.Object {
     */
   def getRefunds(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[RefundData]]] = js.native
   def getRefunds(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[RefundData]] = js.native
+  /**
+    * Gets list of Refunds of a PayOut
+    * @param payOutId
+    * @param options
+    */
+  @JSName("getRefunds")
+  var getRefunds_Original: MethodOverload[String, js.Array[RefundData]] = js.native
+  
+  /**
+    * Get payout
+    * @param payOutId
+    * @param options
+    */
+  @JSName("get")
+  var get_Original: MethodOverload[String, PayOutData] = js.native
 }
-

@@ -11,7 +11,7 @@ Physics plugin for Three.js
 | Keywords           | physijs, threejs |
 | # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 254 |
+| # downloads        | 973 |
 | # stars            | 0 |
 
 ## Links

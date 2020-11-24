@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/apigateway/documentationVersion", "DocumentationVersion")
 @js.native
@@ -21,24 +21,27 @@ class DocumentationVersion protected () extends CustomResource {
     */
   def this(name: String, args: DocumentationVersionArgs) = this()
   def this(name: String, args: DocumentationVersionArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The description of the API documentation version.
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The ID of the associated Rest API
     */
   val restApiId: Output_[String] = js.native
+  
   /**
     * The version identifier of the API documentation snapshot.
     */
   val version: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/apigateway/documentationVersion", "DocumentationVersion")
 @js.native
 object DocumentationVersion extends js.Object {
+  
   /**
     * Get an existing DocumentationVersion resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -52,10 +55,10 @@ object DocumentationVersion extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DocumentationVersion = js.native
   def get(name: String, id: Input[ID], state: DocumentationVersionState): DocumentationVersion = js.native
   def get(name: String, id: Input[ID], state: DocumentationVersionState, opts: CustomResourceOptions): DocumentationVersion = js.native
+  
   /**
     * Returns true if the given object is an instance of DocumentationVersion.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/documentationVersion.DocumentationVersion */ Boolean = js.native
 }
-

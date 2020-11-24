@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Projects$Deidentifytemplates")
 @js.native
 class ResourceProjectsDeidentifytemplates protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dlp.projects.deidentifyTemplates.create
     * @desc Creates a DeidentifyTemplate for re-using frequently used
@@ -47,6 +49,7 @@ class ResourceProjectsDeidentifytemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2DeidentifyTemplate]
   ): Unit = js.native
+  
   /**
     * dlp.projects.deidentifyTemplates.delete
     * @desc Deletes a DeidentifyTemplate. See
@@ -79,6 +82,7 @@ class ResourceProjectsDeidentifytemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
   /**
     * dlp.projects.deidentifyTemplates.get
     * @desc Gets a DeidentifyTemplate. See
@@ -111,6 +115,7 @@ class ResourceProjectsDeidentifytemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2DeidentifyTemplate]
   ): Unit = js.native
+  
   /**
     * dlp.projects.deidentifyTemplates.list
     * @desc Lists DeidentifyTemplates. See
@@ -146,6 +151,7 @@ class ResourceProjectsDeidentifytemplates protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2ListDeidentifyTemplatesResponse]
   ): Unit = js.native
+  
   /**
     * dlp.projects.deidentifyTemplates.patch
     * @desc Updates the DeidentifyTemplate. See
@@ -180,4 +186,3 @@ class ResourceProjectsDeidentifytemplates protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2DeidentifyTemplate]
   ): Unit = js.native
 }
-

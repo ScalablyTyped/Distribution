@@ -2,9 +2,46 @@ package typings.bootstrapSelect
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bootstrapSelectStrings {
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def deselectAll: deselectAll = "deselectAll".asInstanceOf[deselectAll]
+  
+  @scala.inline
+  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  
+  @scala.inline
+  def hide: hide = "hide".asInstanceOf[hide]
+  
+  @scala.inline
+  def mobile: mobile = "mobile".asInstanceOf[mobile]
+  
+  @scala.inline
+  def refresh: refresh = "refresh".asInstanceOf[refresh]
+  
+  @scala.inline
+  def render: render = "render".asInstanceOf[render]
+  
+  @scala.inline
+  def selectAll: selectAll = "selectAll".asInstanceOf[selectAll]
+  
+  @scala.inline
+  def setStyle: setStyle = "setStyle".asInstanceOf[setStyle]
+  
+  @scala.inline
+  def show: show = "show".asInstanceOf[show]
+  
+  @scala.inline
+  def toggle: toggle = "toggle".asInstanceOf[toggle]
+  
+  @scala.inline
+  def `val`: `val` = "val".asInstanceOf[`val`]
+  
   @js.native
   sealed trait auto extends js.Object
   
@@ -40,30 +77,4 @@ object bootstrapSelectStrings {
   
   @js.native
   sealed trait `val` extends MethodType
-  
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def deselectAll: deselectAll = "deselectAll".asInstanceOf[deselectAll]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def mobile: mobile = "mobile".asInstanceOf[mobile]
-  @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
-  @scala.inline
-  def render: render = "render".asInstanceOf[render]
-  @scala.inline
-  def selectAll: selectAll = "selectAll".asInstanceOf[selectAll]
-  @scala.inline
-  def setStyle: setStyle = "setStyle".asInstanceOf[setStyle]
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
-  @scala.inline
-  def toggle: toggle = "toggle".asInstanceOf[toggle]
-  @scala.inline
-  def `val`: `val` = "val".asInstanceOf[`val`]
 }
-

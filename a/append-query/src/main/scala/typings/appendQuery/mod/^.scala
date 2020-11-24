@@ -2,11 +2,12 @@ package typings.appendQuery.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("append-query", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * @param url a string URL to append to
     * @param query a string or object containing query params to append
@@ -16,4 +17,3 @@ object ^ extends js.Object {
   def apply(url: String, query: Query): String = js.native
   def apply(url: String, query: Query, options: Options): String = js.native
 }
-

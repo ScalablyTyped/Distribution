@@ -17,7 +17,7 @@ import typings.chromeApps.chrome.webViewRequest.SendMessageParams
 import typings.chromeApps.chrome.webViewRequest.SetRequestHeaderParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.webViewRequest
@@ -32,6 +32,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.webViewRequest")
 @js.native
 object webViewRequest extends js.Object {
+  
   /**
     * Adds a cookie to the request or overrides a cookie, in case another cookie of the same name exists already.
     * Note that it is preferred to use the Cookies API because this is computationally less expensive.
@@ -205,6 +206,4 @@ object webViewRequest extends js.Object {
     extends typings.chromeApps.chrome.webViewRequest.SetRequestHeader {
     def this(parameters: SetRequestHeaderParams) = this()
   }
-  
 }
-

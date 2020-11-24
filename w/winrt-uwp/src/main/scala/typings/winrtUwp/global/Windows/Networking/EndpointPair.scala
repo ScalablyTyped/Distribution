@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Networking
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the local endpoint and remote endpoint for a network connection used by network apps. */
 @JSGlobal("Windows.Networking.EndpointPair")
@@ -23,4 +23,3 @@ class EndpointPair protected ()
     remoteServiceName: String
   ) = this()
 }
-

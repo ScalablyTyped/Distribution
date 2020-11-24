@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__divider
 
-Typings are for version 2.1.2
+Typings are for version 2.4.2
 
 ## Library description:
 This package is used to create horizontal or vertical dividers in your application.
@@ -10,9 +10,9 @@ This package is used to create horizontal or vertical dividers in your applicati
 | ------------------ | :-------------: |
 | Full name          | @react-md/divider |
 | Keywords           | react-md, material design, react, divider, component, components |
-| # releases         | 22 |
+| # releases         | 35 |
 | # dependents       | 6 |
-| # downloads        | 4558 |
+| # downloads        | 12724 |
 | # stars            | 0 |
 
 ## Links

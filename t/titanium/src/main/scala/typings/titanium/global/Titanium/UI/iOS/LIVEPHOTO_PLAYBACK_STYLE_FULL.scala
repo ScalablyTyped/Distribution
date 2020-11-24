@@ -3,7 +3,7 @@ package typings.titanium.global.Titanium.UI.iOS
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Plays back the entire motion and sound content of the Live Photo, including transition
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Titanium.UI.iOS.LIVEPHOTO_PLAYBACK_STYLE_FULL")
 @js.native
 object LIVEPHOTO_PLAYBACK_STYLE_FULL extends TopLevel[Double]
-

@@ -12,7 +12,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies net diagrams.
@@ -24,8 +24,8 @@ trait NetDiagram
   extends Diagram
      with StackableDiagram
      with ChartAxisYSupplier
-
 object NetDiagram {
+  
   @scala.inline
   def apply(
     AutomaticPosition: Boolean,
@@ -92,4 +92,3 @@ object NetDiagram {
     __obj.asInstanceOf[NetDiagram]
   }
 }
-

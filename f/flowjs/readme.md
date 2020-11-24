@@ -12,7 +12,7 @@ asynchronous flow-control micro library
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 764 |
+| # downloads        | 1168 |
 | # stars            | 1 |
 
 ## Links

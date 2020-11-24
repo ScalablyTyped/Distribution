@@ -4,13 +4,13 @@ import typings.std.Event
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChangeEvent[T]
   extends typings.react.mod.ChangeEvent[T]
-
 object ChangeEvent {
+  
   @scala.inline
   def apply[T](
     bubbles: Boolean,
@@ -34,4 +34,3 @@ object ChangeEvent {
     __obj.asInstanceOf[ChangeEvent[T]]
   }
 }
-

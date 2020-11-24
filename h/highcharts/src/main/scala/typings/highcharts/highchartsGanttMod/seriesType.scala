@@ -4,11 +4,12 @@ import typings.highcharts.mod.Dictionary
 import typings.highcharts.mod.SeriesOptionsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts/highcharts-gantt", "seriesType")
 @js.native
 object seriesType extends js.Object {
+  
   def apply(`type`: String, parent: String, options: Dictionary[_]): typings.highcharts.mod.Series = js.native
   def apply(
     `type`: String,
@@ -42,4 +43,3 @@ object seriesType extends js.Object {
     pointProps: Dictionary[_]
   ): typings.highcharts.mod.Series = js.native
 }
-

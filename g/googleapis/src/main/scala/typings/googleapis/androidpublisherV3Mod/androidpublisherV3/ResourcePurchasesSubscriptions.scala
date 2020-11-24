@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v3", "androidpublisher_v3.Resource$Purchases$Subscriptions")
 @js.native
 class ResourcePurchasesSubscriptions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.purchases.subscriptions.cancel
     * @desc Cancels a user's subscription purchase. The subscription remains
@@ -44,6 +44,9 @@ class ResourcePurchasesSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.purchases.subscriptions.defer
     * @desc Defers a user's subscription purchase until a specified future
@@ -79,6 +82,7 @@ class ResourcePurchasesSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscriptionPurchasesDeferResponse]
   ): Unit = js.native
+  
   /**
     * androidpublisher.purchases.subscriptions.get
     * @desc Checks whether a user's subscription purchase is valid and returns
@@ -113,6 +117,7 @@ class ResourcePurchasesSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscriptionPurchase]
   ): Unit = js.native
+  
   /**
     * androidpublisher.purchases.subscriptions.refund
     * @desc Refunds a user's subscription purchase, but the subscription
@@ -144,6 +149,7 @@ class ResourcePurchasesSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * androidpublisher.purchases.subscriptions.revoke
     * @desc Refunds and immediately revokes a user's subscription purchase.
@@ -177,4 +183,3 @@ class ResourcePurchasesSubscriptions protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

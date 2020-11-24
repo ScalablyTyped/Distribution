@@ -11,11 +11,11 @@ import typings.rbx.rbxNumbers.`7`
 import typings.rbx.rbxNumbers.`8`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbx/grid/columns/column-group", "COLUMN_GROUP_DEFAULTS")
 @js.native
 object COLUMN_GROUP_DEFAULTS extends js.Object {
+  
   var gapSizes: js.Tuple9[`0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`] = js.native
 }
-

@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.videoJs.mod.videojs.AudioTrackMenuItemOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core", "AudioTrackMenuItem")
 @js.native
@@ -28,4 +28,3 @@ Instantiable1[
       /* options */ AudioTrackMenuItemOptions, 
       typings.videoJs.mod.videojs.AudioTrackMenuItem
     ]
-

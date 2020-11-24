@@ -9,7 +9,7 @@ import typings.sawtoothSdk.protobufMod.ConsensusSummarizeBlockResponse.Status
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "ConsensusSummarizeBlockResponse")
 @js.native
@@ -19,25 +19,25 @@ import scala.scalajs.js.annotation._
   */
 class ConsensusSummarizeBlockResponse () extends IConsensusSummarizeBlockResponse {
   def this(properties: IConsensusSummarizeBlockResponse) = this()
+  
   /** ConsensusSummarizeBlockResponse status. */
   @JSName("status")
   var status_ConsensusSummarizeBlockResponse: Status = js.native
+  
   /** ConsensusSummarizeBlockResponse summary. */
   @JSName("summary")
   var summary_ConsensusSummarizeBlockResponse: Uint8Array = js.native
+  
   /**
     * Converts this ConsensusSummarizeBlockResponse to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "ConsensusSummarizeBlockResponse")
 @js.native
 object ConsensusSummarizeBlockResponse extends js.Object {
-  @js.native
-  sealed trait Status extends js.Object
   
   /**
     * Creates a new ConsensusSummarizeBlockResponse instance using the specified properties.
@@ -46,6 +46,7 @@ object ConsensusSummarizeBlockResponse extends js.Object {
     */
   def create(): ConsensusSummarizeBlockResponse = js.native
   def create(properties: IConsensusSummarizeBlockResponse): ConsensusSummarizeBlockResponse = js.native
+  
   /**
     * Decodes a ConsensusSummarizeBlockResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -58,6 +59,7 @@ object ConsensusSummarizeBlockResponse extends js.Object {
   def decode(reader: Reader, length: Double): ConsensusSummarizeBlockResponse = js.native
   def decode(reader: Uint8Array): ConsensusSummarizeBlockResponse = js.native
   def decode(reader: Uint8Array, length: Double): ConsensusSummarizeBlockResponse = js.native
+  
   /**
     * Decodes a ConsensusSummarizeBlockResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -67,6 +69,7 @@ object ConsensusSummarizeBlockResponse extends js.Object {
     */
   def decodeDelimited(reader: Reader): ConsensusSummarizeBlockResponse = js.native
   def decodeDelimited(reader: Uint8Array): ConsensusSummarizeBlockResponse = js.native
+  
   /**
     * Encodes the specified ConsensusSummarizeBlockResponse message. Does not implicitly {@link ConsensusSummarizeBlockResponse.verify|verify} messages.
     * @param message ConsensusSummarizeBlockResponse message or plain object to encode
@@ -75,6 +78,7 @@ object ConsensusSummarizeBlockResponse extends js.Object {
     */
   def encode(message: IConsensusSummarizeBlockResponse): Writer = js.native
   def encode(message: IConsensusSummarizeBlockResponse, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ConsensusSummarizeBlockResponse message, length delimited. Does not implicitly {@link ConsensusSummarizeBlockResponse.verify|verify} messages.
     * @param message ConsensusSummarizeBlockResponse message or plain object to encode
@@ -83,12 +87,14 @@ object ConsensusSummarizeBlockResponse extends js.Object {
     */
   def encodeDelimited(message: IConsensusSummarizeBlockResponse): Writer = js.native
   def encodeDelimited(message: IConsensusSummarizeBlockResponse, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ConsensusSummarizeBlockResponse message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ConsensusSummarizeBlockResponse
     */
   def fromObject(`object`: StringDictionary[js.Any]): ConsensusSummarizeBlockResponse = js.native
+  
   /**
     * Creates a plain object from a ConsensusSummarizeBlockResponse message. Also converts values to other types if specified.
     * @param message ConsensusSummarizeBlockResponse
@@ -97,60 +103,56 @@ object ConsensusSummarizeBlockResponse extends js.Object {
     */
   def toObject(message: ConsensusSummarizeBlockResponse): StringDictionary[js.Any] = js.native
   def toObject(message: ConsensusSummarizeBlockResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ConsensusSummarizeBlockResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  
+  @js.native
+  sealed trait Status extends js.Object
   /** Status enum. */
   @js.native
   object Status extends js.Object {
-    @js.native
-    sealed trait BAD_REQUEST extends Status
-    
-    @js.native
-    sealed trait BLOCK_NOT_READY extends Status
-    
-    @js.native
-    sealed trait INVALID_STATE extends Status
-    
-    @js.native
-    sealed trait NOT_READY extends Status
-    
-    @js.native
-    sealed trait OK extends Status
-    
-    @js.native
-    sealed trait SERVICE_ERROR extends Status
-    
-    @js.native
-    sealed trait STATUS_UNSET extends Status
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Status with Double] = js.native
+    
+    @js.native
+    sealed trait BAD_REQUEST extends Status
     /* 2 */ @js.native
     object BAD_REQUEST extends TopLevel[BAD_REQUEST with Double]
     
+    @js.native
+    sealed trait BLOCK_NOT_READY extends Status
     /* 6 */ @js.native
     object BLOCK_NOT_READY extends TopLevel[BLOCK_NOT_READY with Double]
     
+    @js.native
+    sealed trait INVALID_STATE extends Status
     /* 5 */ @js.native
     object INVALID_STATE extends TopLevel[INVALID_STATE with Double]
     
+    @js.native
+    sealed trait NOT_READY extends Status
     /* 4 */ @js.native
     object NOT_READY extends TopLevel[NOT_READY with Double]
     
+    @js.native
+    sealed trait OK extends Status
     /* 1 */ @js.native
     object OK extends TopLevel[OK with Double]
     
+    @js.native
+    sealed trait SERVICE_ERROR extends Status
     /* 3 */ @js.native
     object SERVICE_ERROR extends TopLevel[SERVICE_ERROR with Double]
     
+    @js.native
+    sealed trait STATUS_UNSET extends Status
     /* 0 */ @js.native
     object STATUS_UNSET extends TopLevel[STATUS_UNSET with Double]
-    
   }
-  
 }
-

@@ -4,7 +4,7 @@ import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Scenes.Systems
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Scene Level Plugin is installed into every Scene and belongs to that Scene.
@@ -13,20 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ScenePlugin extends BasePlugin {
-  /**
-    * A reference to the Scene that has installed this plugin.
-    * Only set if it's a Scene Plugin, otherwise `null`.
-    * This property is only set when the plugin is instantiated and added to the Scene, not before.
-    * You can use it during the `boot` method.
-    */
-  var scene: Scene = js.native
-  /**
-    * A reference to the Scene Systems of the Scene that has installed this plugin.
-    * Only set if it's a Scene Plugin, otherwise `null`.
-    * This property is only set when the plugin is instantiated and added to the Scene, not before.
-    * You can use it during the `boot` method.
-    */
-  var systems: Systems = js.native
+  
   /**
     * This method is called when the Scene boots. It is only ever called once.
     * 
@@ -60,5 +47,20 @@ trait ScenePlugin extends BasePlugin {
     * ```
     */
   def boot(): Unit = js.native
+  
+  /**
+    * A reference to the Scene that has installed this plugin.
+    * Only set if it's a Scene Plugin, otherwise `null`.
+    * This property is only set when the plugin is instantiated and added to the Scene, not before.
+    * You can use it during the `boot` method.
+    */
+  var scene: Scene = js.native
+  
+  /**
+    * A reference to the Scene Systems of the Scene that has installed this plugin.
+    * Only set if it's a Scene Plugin, otherwise `null`.
+    * This property is only set when the plugin is instantiated and added to the Scene, not before.
+    * You can use it during the `boot` method.
+    */
+  var systems: Systems = js.native
 }
-

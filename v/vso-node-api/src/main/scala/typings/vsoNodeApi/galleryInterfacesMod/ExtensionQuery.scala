@@ -2,52 +2,62 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ExtensionQuery extends js.Object {
+  
   /**
     * When retrieving extensions with a query; frequently the caller only needs a small subset of the assets. The caller may specify a list of asset types that should be returned if the extension contains it. All other assets will not be returned.
     */
   var assetTypes: js.Array[String] = js.native
+  
   /**
     * Each filter is a unique query and will have matching set of extensions returned from the request. Each result will have the same index in the resulting array that the filter had in the incoming query.
     */
   var filters: js.Array[QueryFilter] = js.native
+  
   /**
     * The Flags are used to deterine which set of information the caller would like returned for the matched extensions.
     */
   var flags: ExtensionQueryFlags = js.native
 }
-
 object ExtensionQuery {
+  
   @scala.inline
   def apply(assetTypes: js.Array[String], filters: js.Array[QueryFilter], flags: ExtensionQueryFlags): ExtensionQuery = {
     val __obj = js.Dynamic.literal(assetTypes = assetTypes.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionQuery]
   }
+  
   @scala.inline
   implicit class ExtensionQueryOps[Self <: ExtensionQuery] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAssetTypesVarargs(value: String*): Self = this.set("assetTypes", js.Array(value :_*))
+    
     @scala.inline
     def setAssetTypes(value: js.Array[String]): Self = this.set("assetTypes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFiltersVarargs(value: QueryFilter*): Self = this.set("filters", js.Array(value :_*))
+    
     @scala.inline
     def setFilters(value: js.Array[QueryFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFlags(value: ExtensionQueryFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
   }
-  
 }
-

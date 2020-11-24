@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/spanner/v1", "spanner_v1.Resource$Projects$Instances$Databases$Operations")
 @js.native
 class ResourceProjectsInstancesDatabasesOperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * spanner.projects.instances.databases.operations.cancel
     * @desc Starts asynchronous cancellation on a long-running operation.  The
@@ -52,6 +52,9 @@ class ResourceProjectsInstancesDatabasesOperations protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * spanner.projects.instances.databases.operations.delete
     * @desc Deletes a long-running operation. This method indicates that the
@@ -86,6 +89,7 @@ class ResourceProjectsInstancesDatabasesOperations protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.operations.get
     * @desc Gets the latest state of a long-running operation.  Clients can use
@@ -119,6 +123,7 @@ class ResourceProjectsInstancesDatabasesOperations protected () extends js.Objec
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.operations.list
     * @desc Lists operations that match the specified filter in the request. If
@@ -162,4 +167,3 @@ class ResourceProjectsInstancesDatabasesOperations protected () extends js.Objec
     callback: BodyResponseCallback[SchemaListOperationsResponse]
   ): Unit = js.native
 }
-

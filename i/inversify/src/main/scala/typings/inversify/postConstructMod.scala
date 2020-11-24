@@ -3,11 +3,12 @@ package typings.inversify
 import typings.std.PropertyDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("inversify/dts/annotation/post_construct", JSImport.Namespace)
 @js.native
 object postConstructMod extends js.Object {
+  
   def postConstruct(): js.Function3[
     /* target */ js.Any, 
     /* propertyKey */ String, 
@@ -15,4 +16,3 @@ object postConstructMod extends js.Object {
     Unit
   ] = js.native
 }
-

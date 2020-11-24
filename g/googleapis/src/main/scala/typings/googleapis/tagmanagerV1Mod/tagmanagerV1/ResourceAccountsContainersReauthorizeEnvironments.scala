@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v1", "tagmanager_v1.Resource$Accounts$Containers$Reauthorize_environments")
 @js.native
 class ResourceAccountsContainersReauthorizeEnvironments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.containers.reauthorize_environments.update
     * @desc Re-generates the authorization code for a GTM Environment.
@@ -48,4 +50,3 @@ class ResourceAccountsContainersReauthorizeEnvironments protected () extends js.
     callback: BodyResponseCallback[SchemaEnvironment]
   ): Unit = js.native
 }
-

@@ -12,7 +12,7 @@ The lodash method `_.before` exported as a module.
 | Keywords           | lodash-modularized, before |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 134477 |
+| # downloads        | 136241 |
 | # stars            | 0 |
 
 ## Links

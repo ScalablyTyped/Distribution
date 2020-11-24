@@ -7,19 +7,43 @@ import typings.seleniumWebdriver.remoteMod.DriverService
 import typings.seleniumWebdriver.remoteMod.DriverService.Builder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver/edge", JSImport.Namespace)
 @js.native
 object edgeMod extends js.Object {
+  
+  def getDefaultService(): DriverService = js.native
+  
+  def setDefaultService(service: DriverService): Unit = js.native
+  
   @js.native
   class Driver () extends WebDriver {
+    
     /**
       * This function is a no-op as file detectors are not supported by this
       * implementation.
       * @override
       */
     def setFileDetector(): Unit = js.native
+  }
+  /* static members */
+  @js.native
+  object Driver extends js.Object {
+    
+    /**
+      * Creates a new browser session for Microsoft's Edge browser.
+      *
+      * @param {(capabilities.Capabilities|Options)=} opt_config The configuration
+      *     options.
+      * @param {remote.DriverService=} opt_service The session to use; will use
+      *     the {@linkplain #getDefaultService default service} by default.
+      * @return {!Driver} A new driver instance.
+      */
+    def createSession(): Driver = js.native
+    def createSession(opt_config: js.UndefOr[scala.Nothing], opt_service: DriverService): Driver = js.native
+    def createSession(opt_config: CreateSessionCapabilities): Driver = js.native
+    def createSession(opt_config: CreateSessionCapabilities, opt_service: DriverService): Driver = js.native
   }
   
   @js.native
@@ -36,26 +60,4 @@ object edgeMod extends js.Object {
   class ServiceBuilder () extends Builder {
     def this(opt_exe: String) = this()
   }
-  
-  def getDefaultService(): DriverService = js.native
-  def setDefaultService(service: DriverService): Unit = js.native
-  /* static members */
-  @js.native
-  object Driver extends js.Object {
-    /**
-      * Creates a new browser session for Microsoft's Edge browser.
-      *
-      * @param {(capabilities.Capabilities|Options)=} opt_config The configuration
-      *     options.
-      * @param {remote.DriverService=} opt_service The session to use; will use
-      *     the {@linkplain #getDefaultService default service} by default.
-      * @return {!Driver} A new driver instance.
-      */
-    def createSession(): Driver = js.native
-    def createSession(opt_config: js.UndefOr[scala.Nothing], opt_service: DriverService): Driver = js.native
-    def createSession(opt_config: CreateSessionCapabilities): Driver = js.native
-    def createSession(opt_config: CreateSessionCapabilities, opt_service: DriverService): Driver = js.native
-  }
-  
 }
-

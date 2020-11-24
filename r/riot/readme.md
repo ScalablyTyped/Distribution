@@ -1,7 +1,7 @@
 
 # Scala.js typings for riot
 
-Typings are for version 4.13.4
+Typings are for version 5.0.0
 
 ## Library description:
 Simple and elegant component-based UI library
@@ -10,9 +10,9 @@ Simple and elegant component-based UI library
 | ------------------ | :-------------: |
 | Full name          | riot |
 | Keywords           | custom tags, custom elements, web components, virtual dom, shadow dom, minimal, minimalist, client-side, framework, declarative, templating, template, data binding, mvc, model, view, controller, riotjs, riot.js |
-| # releases         | 102 |
-| # dependents       | 137 |
-| # downloads        | 637292 |
+| # releases         | 116 |
+| # dependents       | 143 |
+| # downloads        | 366504 |
 | # stars            | 27 |
 
 ## Links

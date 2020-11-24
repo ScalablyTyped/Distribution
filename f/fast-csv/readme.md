@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-csv
 
-Typings are for version 4.3.1
+Typings are for version 4.3.5
 
 ## Library description:
 CSV parser and writer
@@ -10,9 +10,9 @@ CSV parser and writer
 | ------------------ | :-------------: |
 | Full name          | fast-csv |
 | Keywords           | csv, parser, fast, writer, csv writer, CSV |
-| # releases         | 17 |
-| # dependents       | 260 |
-| # downloads        | 7055601 |
+| # releases         | 27 |
+| # dependents       | 297 |
+| # downloads        | 13094199 |
 | # stars            | 56 |
 
 ## Links

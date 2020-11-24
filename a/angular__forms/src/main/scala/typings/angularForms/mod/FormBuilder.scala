@@ -3,11 +3,12 @@ package typings.angularForms.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "FormBuilder")
 @js.native
 class FormBuilder () extends js.Object {
+  
   /**
     * Constructs a new `FormArray` from the given array of configurations,
     * validators and options.
@@ -64,6 +65,7 @@ class FormBuilder () extends js.Object {
     asyncValidator: js.Array[AsyncValidatorFn]
   ): FormArray = js.native
   def array(controlsConfig: js.Array[_], validatorOrOpts: ValidatorFn, asyncValidator: AsyncValidatorFn): FormArray = js.native
+  
   /**
     * @description
     * Construct a new `FormControl` with the given state, validators and options.
@@ -113,6 +115,7 @@ class FormBuilder () extends js.Object {
   def control(formState: js.Any, validatorOrOpts: ValidatorFn): FormControl = js.native
   def control(formState: js.Any, validatorOrOpts: ValidatorFn, asyncValidator: js.Array[AsyncValidatorFn]): FormControl = js.native
   def control(formState: js.Any, validatorOrOpts: ValidatorFn, asyncValidator: AsyncValidatorFn): FormControl = js.native
+  
   /**
     * @description
     * Construct a new `FormGroup` instance.
@@ -138,4 +141,3 @@ class FormBuilder () extends js.Object {
   def group(controlsConfig: StringDictionary[js.Any], options: StringDictionary[js.Any]): FormGroup = js.native
   def group(controlsConfig: StringDictionary[js.Any], options: AbstractControlOptions): FormGroup = js.native
 }
-

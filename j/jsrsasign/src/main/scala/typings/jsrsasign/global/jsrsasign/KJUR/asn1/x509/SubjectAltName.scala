@@ -3,7 +3,7 @@ package typings.jsrsasign.global.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.anon.ArrayParamUriParamcritica
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SubjectAltName ASN.1 structure class
@@ -39,4 +39,3 @@ class SubjectAltName ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.SubjectAltName {
   def this(params: ArrayParamUriParamcritica) = this()
 }
-

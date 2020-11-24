@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * User's customizable globals for overriding the default PIXI settings, such
@@ -19,4 +19,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.settings")
 @js.native
 object settings extends js.Object
-

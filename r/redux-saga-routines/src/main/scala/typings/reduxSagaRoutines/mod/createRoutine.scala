@@ -12,11 +12,12 @@ import typings.reduxSagaRoutines.anon.FAILURE_
 import typings.reduxSagaRoutines.anon.FULFILL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-saga-routines", "createRoutine")
 @js.native
 object createRoutine extends js.Object {
+  
   def apply[Payload](typePrefix: String): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[Payload], Action[js.UndefOr[Payload]]]] = js.native
   def apply[Meta](
     typePrefix: String,
@@ -273,4 +274,3 @@ object createRoutine extends js.Object {
     ]
   ] = js.native
 }
-

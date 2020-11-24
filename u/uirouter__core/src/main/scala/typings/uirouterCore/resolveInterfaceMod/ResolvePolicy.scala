@@ -2,10 +2,11 @@ package typings.uirouterCore.resolveInterfaceMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResolvePolicy extends js.Object {
+  
   /**
     * Determines the unwrapping behavior of asynchronous resolve values.
     *
@@ -44,6 +45,7 @@ trait ResolvePolicy extends js.Object {
     * ```
     */
   var async: js.UndefOr[PolicyAsync] = js.native
+  
   /**
     * Defines when a Resolvable is resolved (fetched) during a transition
     *
@@ -89,35 +91,42 @@ trait ResolvePolicy extends js.Object {
     */
   var when: js.UndefOr[PolicyWhen] = js.native
 }
-
 object ResolvePolicy {
+  
   @scala.inline
   def apply(): ResolvePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolvePolicy]
   }
+  
   @scala.inline
   implicit class ResolvePolicyOps[Self <: ResolvePolicy] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAsyncFunction1(value: /* data */ js.Any => js.Promise[js.Any]): Self = this.set("async", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setAsync(value: PolicyAsync): Self = this.set("async", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAsync: Self = this.set("async", js.undefined)
+    
     @scala.inline
     def setWhen(value: PolicyWhen): Self = this.set("when", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWhen: Self = this.set("when", js.undefined)
   }
-  
 }
-

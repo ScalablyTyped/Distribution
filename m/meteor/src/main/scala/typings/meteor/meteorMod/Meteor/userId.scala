@@ -2,11 +2,11 @@ package typings.meteor.meteorMod.Meteor
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/meteor", "Meteor.userId")
 @js.native
 object userId extends js.Object {
+  
   def apply(): String | Null = js.native
 }
-

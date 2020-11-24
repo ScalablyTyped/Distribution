@@ -7,48 +7,37 @@ import typings.babylonjs.anon.Arc
 import typings.babylonjs.anon.BInfo
 import typings.babylonjs.anon.BackUVs
 import typings.babylonjs.anon.Colors
-import typings.babylonjs.anon.Custom
 import typings.babylonjs.anon.DashNb
 import typings.babylonjs.anon.Depth
 import typings.babylonjs.anon.Diameter
-import typings.babylonjs.anon.Flat
+import typings.babylonjs.anon.FaceColors
 import typings.babylonjs.anon.FrontUVs
 import typings.babylonjs.anon.P
 import typings.babylonjs.anon.Precision
 import typings.babylonjs.anon.Radius
+import typings.babylonjs.anon.RadiusX
 import typings.babylonjs.anon.SideOrientation
 import typings.babylonjs.anon.Subdivisions
+import typings.babylonjs.capsuleBuilderMod.ICreateCapsuleOptions
 import typings.babylonjs.typesMod.FloatArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "VertexData")
 @js.native
 class VertexData ()
   extends typings.babylonjs.indexMod.VertexData
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "VertexData")
 @js.native
 object VertexData extends js.Object {
+  
   /**
     * Mesh side orientation : usually the internal or back surface
     */
   val BACKSIDE: Double = js.native
-  /**
-    * Mesh side orientation : by default, `FRONTSIDE`
-    */
-  val DEFAULTSIDE: Double = js.native
-  /**
-    * Mesh side orientation : both internal and external or front and back surfaces
-    */
-  val DOUBLESIDE: Double = js.native
-  /**
-    * Mesh side orientation : usually the external or front surface
-    */
-  val FRONTSIDE: Double = js.native
-  var _ExtractFrom: js.Any = js.native
+  
   /**
     * Compute normals for given positions and indices
     * @param positions an array of vertex positions, [...., x, y, z, ......]
@@ -69,6 +58,7 @@ object VertexData extends js.Object {
     */
   def ComputeNormals(positions: js.Any, indices: js.Any, normals: js.Any): Unit = js.native
   def ComputeNormals(positions: js.Any, indices: js.Any, normals: js.Any, options: BInfo): Unit = js.native
+  
   /**
     * Creates the VertexData for a box
     * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -84,6 +74,15 @@ object VertexData extends js.Object {
     * @returns the VertexData of the box
     */
   def CreateBox(options: Depth): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
+  /**
+    * Creates the VertexData for a Capsule, inspired from https://github.com/maximeq/three-js-capsule-geometry/blob/master/src/CapsuleBufferGeometry.js
+    * @param options an object used to set the following optional parameters for the capsule, required but can be empty
+    * @returns the VertexData of the Capsule
+    */
+  def CreateCapsule(): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreateCapsule(options: ICreateCapsuleOptions): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData for a cylinder, cone or prism
     * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -104,6 +103,7 @@ object VertexData extends js.Object {
     * @returns the VertexData of the cylinder, cone or prism
     */
   def CreateCylinder(options: Diameter): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Create the VertexData for a DashedLines
     * @param options an object used to set the following optional parameters for the DashedLines, required but can be empty
@@ -114,6 +114,7 @@ object VertexData extends js.Object {
     * @returns the VertexData for the DashedLines
     */
   def CreateDashedLines(options: DashNb): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData of the Disc or regular Polygon
     * @param options an object used to set the following optional parameters for the disc, required but can be empty
@@ -126,6 +127,7 @@ object VertexData extends js.Object {
     * @returns the VertexData of the box
     */
   def CreateDisc(options: Radius): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData for a Ground
     * @param options an object used to set the following optional parameters for the Ground, required but can be empty
@@ -135,6 +137,7 @@ object VertexData extends js.Object {
     * @returns the VertexData of the Ground
     */
   def CreateGround(options: Subdivisions): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData of the Ground designed from a heightmap
     * @param options an object used to set the following parameters for the Ground, required and provided by MeshBuilder.CreateGroundFromHeightMap
@@ -151,6 +154,7 @@ object VertexData extends js.Object {
     * @returns the VertexData of the Ground designed from a heightmap
     */
   def CreateGroundFromHeightMap(options: AlphaFilter): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData of the IcoSphere
     * @param options an object used to set the following optional parameters for the IcoSphere, required but can be empty
@@ -165,7 +169,8 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the IcoSphere
     */
-  def CreateIcoSphere(options: Flat): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreateIcoSphere(options: RadiusX): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData of the LineSystem
     * @param options an object used to set the following optional parameters for the LineSystem, required but can be empty
@@ -174,6 +179,7 @@ object VertexData extends js.Object {
     * @returns the VertexData of the LineSystem
     */
   def CreateLineSystem(options: Colors): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData for a Plane
     * @param options an object used to set the following optional parameters for the plane, required but can be empty
@@ -186,6 +192,7 @@ object VertexData extends js.Object {
     * @returns the VertexData of the box
     */
   def CreatePlane(options: SideOrientation): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData for an irregular Polygon in the XoZ plane using a mesh built by polygonTriangulation.build()
     * All parameters are provided by MeshBuilder.CreatePolygon as needed
@@ -195,9 +202,134 @@ object VertexData extends js.Object {
     * @param fColors an array of Color3 elements used to set different colors to the top, rings and bottom respectively
     * @param frontUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the front side, optional, default vector4 (0, 0, 1, 1)
     * @param backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
+    * @param wrap a boolean, default false, when true and fUVs used texture is wrapped around all sides, when false texture is applied side
     * @returns the VertexData of the Polygon
     */
   def CreatePolygon(polygon: typings.babylonjs.meshMod.Mesh, sideOrientation: Double): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.UndefOr[scala.Nothing],
+    fColors: js.UndefOr[scala.Nothing],
+    frontUVs: js.UndefOr[scala.Nothing],
+    backUVs: js.UndefOr[scala.Nothing],
+    wrap: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.UndefOr[scala.Nothing],
+    fColors: js.UndefOr[scala.Nothing],
+    frontUVs: js.UndefOr[scala.Nothing],
+    backUVs: typings.babylonjs.mathVectorMod.Vector4
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.UndefOr[scala.Nothing],
+    fColors: js.UndefOr[scala.Nothing],
+    frontUVs: js.UndefOr[scala.Nothing],
+    backUVs: typings.babylonjs.mathVectorMod.Vector4,
+    wrap: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.UndefOr[scala.Nothing],
+    fColors: js.UndefOr[scala.Nothing],
+    frontUVs: typings.babylonjs.mathVectorMod.Vector4
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.UndefOr[scala.Nothing],
+    fColors: js.UndefOr[scala.Nothing],
+    frontUVs: typings.babylonjs.mathVectorMod.Vector4,
+    backUVs: js.UndefOr[scala.Nothing],
+    wrap: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.UndefOr[scala.Nothing],
+    fColors: js.UndefOr[scala.Nothing],
+    frontUVs: typings.babylonjs.mathVectorMod.Vector4,
+    backUVs: typings.babylonjs.mathVectorMod.Vector4
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.UndefOr[scala.Nothing],
+    fColors: js.UndefOr[scala.Nothing],
+    frontUVs: typings.babylonjs.mathVectorMod.Vector4,
+    backUVs: typings.babylonjs.mathVectorMod.Vector4,
+    wrap: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.UndefOr[scala.Nothing],
+    fColors: js.Array[typings.babylonjs.mathColorMod.Color4]
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.UndefOr[scala.Nothing],
+    fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
+    frontUVs: js.UndefOr[scala.Nothing],
+    backUVs: js.UndefOr[scala.Nothing],
+    wrap: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.UndefOr[scala.Nothing],
+    fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
+    frontUVs: js.UndefOr[scala.Nothing],
+    backUVs: typings.babylonjs.mathVectorMod.Vector4
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.UndefOr[scala.Nothing],
+    fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
+    frontUVs: js.UndefOr[scala.Nothing],
+    backUVs: typings.babylonjs.mathVectorMod.Vector4,
+    wrap: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.UndefOr[scala.Nothing],
+    fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
+    frontUVs: typings.babylonjs.mathVectorMod.Vector4
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.UndefOr[scala.Nothing],
+    fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
+    frontUVs: typings.babylonjs.mathVectorMod.Vector4,
+    backUVs: js.UndefOr[scala.Nothing],
+    wrap: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.UndefOr[scala.Nothing],
+    fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
+    frontUVs: typings.babylonjs.mathVectorMod.Vector4,
+    backUVs: typings.babylonjs.mathVectorMod.Vector4
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.UndefOr[scala.Nothing],
+    fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
+    frontUVs: typings.babylonjs.mathVectorMod.Vector4,
+    backUVs: typings.babylonjs.mathVectorMod.Vector4,
+    wrap: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -207,7 +339,92 @@ object VertexData extends js.Object {
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
+    fColors: js.UndefOr[scala.Nothing],
+    frontUVs: js.UndefOr[scala.Nothing],
+    backUVs: js.UndefOr[scala.Nothing],
+    wrap: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
+    fColors: js.UndefOr[scala.Nothing],
+    frontUVs: js.UndefOr[scala.Nothing],
+    backUVs: typings.babylonjs.mathVectorMod.Vector4
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
+    fColors: js.UndefOr[scala.Nothing],
+    frontUVs: js.UndefOr[scala.Nothing],
+    backUVs: typings.babylonjs.mathVectorMod.Vector4,
+    wrap: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
+    fColors: js.UndefOr[scala.Nothing],
+    frontUVs: typings.babylonjs.mathVectorMod.Vector4
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
+    fColors: js.UndefOr[scala.Nothing],
+    frontUVs: typings.babylonjs.mathVectorMod.Vector4,
+    backUVs: js.UndefOr[scala.Nothing],
+    wrap: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
+    fColors: js.UndefOr[scala.Nothing],
+    frontUVs: typings.babylonjs.mathVectorMod.Vector4,
+    backUVs: typings.babylonjs.mathVectorMod.Vector4
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
+    fColors: js.UndefOr[scala.Nothing],
+    frontUVs: typings.babylonjs.mathVectorMod.Vector4,
+    backUVs: typings.babylonjs.mathVectorMod.Vector4,
+    wrap: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
     fColors: js.Array[typings.babylonjs.mathColorMod.Color4]
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
+    fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
+    frontUVs: js.UndefOr[scala.Nothing],
+    backUVs: js.UndefOr[scala.Nothing],
+    wrap: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
+    fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
+    frontUVs: js.UndefOr[scala.Nothing],
+    backUVs: typings.babylonjs.mathVectorMod.Vector4
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
+    fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
+    frontUVs: js.UndefOr[scala.Nothing],
+    backUVs: typings.babylonjs.mathVectorMod.Vector4,
+    wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
@@ -222,8 +439,27 @@ object VertexData extends js.Object {
     fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
     fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
     frontUVs: typings.babylonjs.mathVectorMod.Vector4,
+    backUVs: js.UndefOr[scala.Nothing],
+    wrap: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
+    fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
+    frontUVs: typings.babylonjs.mathVectorMod.Vector4,
     backUVs: typings.babylonjs.mathVectorMod.Vector4
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolygon(
+    polygon: typings.babylonjs.meshMod.Mesh,
+    sideOrientation: Double,
+    fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
+    fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
+    frontUVs: typings.babylonjs.mathVectorMod.Vector4,
+    backUVs: typings.babylonjs.mathVectorMod.Vector4,
+    wrap: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData for a Polyhedron
     * @param options an object used to set the following optional parameters for the polyhedron, required but can be empty
@@ -244,7 +480,8 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the Polyhedron
     */
-  def CreatePolyhedron(options: Custom): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def CreatePolyhedron(options: FaceColors): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData for a Ribbon
     * @param options an object used to set the following optional parameters for the ribbon, required but can be empty
@@ -261,6 +498,7 @@ object VertexData extends js.Object {
     * @returns the VertexData of the ribbon
     */
   def CreateRibbon(options: BackUVs): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData for an ellipsoid, defaults to a sphere
     * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -277,6 +515,7 @@ object VertexData extends js.Object {
     * @returns the VertexData of the ellipsoid
     */
   def CreateSphere(options: Arc): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData for a tiled box
     * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -287,6 +526,7 @@ object VertexData extends js.Object {
     * @returns the VertexData of the box
     */
   def CreateTiledBox(options: AlignHorizontal): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData for a TiledGround by subdividing the ground into tiles
     * @param options an object used to set the following optional parameters for the Ground, required but can be empty
@@ -299,6 +539,7 @@ object VertexData extends js.Object {
     * @returns the VertexData of the TiledGround
     */
   def CreateTiledGround(options: Precision): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData for a tiled plane
     * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -312,6 +553,7 @@ object VertexData extends js.Object {
     * @returns the VertexData of the tiled plane
     */
   def CreateTiledPlane(options: AlignVertical): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData for a torus
     * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -324,6 +566,7 @@ object VertexData extends js.Object {
     * @returns the VertexData of the torus
     */
   def CreateTorus(options: FrontUVs): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Creates the VertexData for a TorusKnot
     * @param options an object used to set the following optional parameters for the TorusKnot, required but can be empty
@@ -339,6 +582,17 @@ object VertexData extends js.Object {
     * @returns the VertexData of the Torus Knot
     */
   def CreateTorusKnot(options: P): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
+  /**
+    * Mesh side orientation : by default, `FRONTSIDE`
+    */
+  val DEFAULTSIDE: Double = js.native
+  
+  /**
+    * Mesh side orientation : both internal and external or front and back surfaces
+    */
+  val DOUBLESIDE: Double = js.native
+  
   /**
     * Extracts the vertexData from the geometry
     * @param geometry the geometry from which to extract the VertexData
@@ -347,8 +601,14 @@ object VertexData extends js.Object {
     * @returns the object VertexData associated to the passed mesh
     */
   def ExtractFromGeometry(geometry: typings.babylonjs.geometryMod.Geometry): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def ExtractFromGeometry(
+    geometry: typings.babylonjs.geometryMod.Geometry,
+    copyWhenShared: js.UndefOr[scala.Nothing],
+    forceCopy: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   def ExtractFromGeometry(geometry: typings.babylonjs.geometryMod.Geometry, copyWhenShared: Boolean): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   def ExtractFromGeometry(geometry: typings.babylonjs.geometryMod.Geometry, copyWhenShared: Boolean, forceCopy: Boolean): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
   /**
     * Extracts the vertexData from a mesh
     * @param mesh the mesh from which to extract the VertexData
@@ -357,14 +617,26 @@ object VertexData extends js.Object {
     * @returns the object VertexData associated to the passed mesh
     */
   def ExtractFromMesh(mesh: typings.babylonjs.meshMod.Mesh): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  def ExtractFromMesh(
+    mesh: typings.babylonjs.meshMod.Mesh,
+    copyWhenShared: js.UndefOr[scala.Nothing],
+    forceCopy: Boolean
+  ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   def ExtractFromMesh(mesh: typings.babylonjs.meshMod.Mesh, copyWhenShared: Boolean): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   def ExtractFromMesh(mesh: typings.babylonjs.meshMod.Mesh, copyWhenShared: Boolean, forceCopy: Boolean): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  
+  /**
+    * Mesh side orientation : usually the external or front surface
+    */
+  val FRONTSIDE: Double = js.native
+  
   /**
     * Applies VertexData created from the imported parameters to the geometry
     * @param parsedVertexData the parsed data from an imported file
     * @param geometry the geometry to apply the VertexData to
     */
   def ImportVertexData(parsedVertexData: js.Any, geometry: typings.babylonjs.geometryMod.Geometry): Unit = js.native
+  
   /** @hidden */
   def _ComputeSides(
     sideOrientation: Double,
@@ -372,6 +644,15 @@ object VertexData extends js.Object {
     indices: FloatArray,
     normals: FloatArray,
     uvs: FloatArray
+  ): Unit = js.native
+  def _ComputeSides(
+    sideOrientation: Double,
+    positions: FloatArray,
+    indices: FloatArray,
+    normals: FloatArray,
+    uvs: FloatArray,
+    frontUVs: js.UndefOr[scala.Nothing],
+    backUVs: typings.babylonjs.mathVectorMod.Vector4
   ): Unit = js.native
   def _ComputeSides(
     sideOrientation: Double,
@@ -390,5 +671,6 @@ object VertexData extends js.Object {
     frontUVs: typings.babylonjs.mathVectorMod.Vector4,
     backUVs: typings.babylonjs.mathVectorMod.Vector4
   ): Unit = js.native
+  
+  var _ExtractFrom: js.Any = js.native
 }
-

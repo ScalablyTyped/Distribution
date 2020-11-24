@@ -4,11 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows the generation of adapters from specific interfaces to the {@link XAllListener} interface. */
 @js.native
 trait XAllListenerAdapterService extends XInterface {
+  
   /**
     * creates a wrapper from the listener of type **xListenerType** to the {@link XAllListener} listener.
     *
@@ -16,8 +17,8 @@ trait XAllListenerAdapterService extends XInterface {
     */
   def createAllListerAdapter(xListenerType: `type`, xListener: XAllListener, aHelper: js.Any): XInterface = js.native
 }
-
 object XAllListenerAdapterService {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -28,20 +29,23 @@ object XAllListenerAdapterService {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createAllListerAdapter = js.Any.fromFunction3(createAllListerAdapter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XAllListenerAdapterService]
   }
+  
   @scala.inline
   implicit class XAllListenerAdapterServiceOps[Self <: XAllListenerAdapterService] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreateAllListerAdapter(value: (`type`, XAllListener, js.Any) => XInterface): Self = this.set("createAllListerAdapter", js.Any.fromFunction3(value))
   }
-  
 }
-

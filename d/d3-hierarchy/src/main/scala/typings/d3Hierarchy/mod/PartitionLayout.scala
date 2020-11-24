@@ -2,10 +2,11 @@ package typings.d3Hierarchy.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PartitionLayout[Datum] extends js.Object {
+  
   /**
     * Lays out the specified root hierarchy.
     * You must call `root.sum` before passing the hierarchy to the partition layout.
@@ -14,6 +15,7 @@ trait PartitionLayout[Datum] extends js.Object {
     * @param root The specified root hierarchy.
     */
   def apply(root: HierarchyNode[Datum]): HierarchyRectangularNode[Datum] = js.native
+  
   /**
     * Returns the current padding, which defaults to zero.
     */
@@ -25,6 +27,7 @@ trait PartitionLayout[Datum] extends js.Object {
     * @param padding The specified padding value.
     */
   def padding(padding: Double): this.type = js.native
+  
   /**
     * Returns the current rounding state, which defaults to false.
     */
@@ -35,6 +38,7 @@ trait PartitionLayout[Datum] extends js.Object {
     * @param round The specified boolean flag.
     */
   def round(round: Boolean): this.type = js.native
+  
   /**
     * Returns the current size, which defaults to [1, 1].
     */
@@ -46,4 +50,3 @@ trait PartitionLayout[Datum] extends js.Object {
     */
   def size(size: js.Tuple2[Double, Double]): this.type = js.native
 }
-

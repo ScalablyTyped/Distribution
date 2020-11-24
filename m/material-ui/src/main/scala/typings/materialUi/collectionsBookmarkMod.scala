@@ -4,11 +4,12 @@ import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("material-ui/svg-icons/image/collections-bookmark", JSImport.Namespace)
 @js.native
 object collectionsBookmarkMod extends js.Object {
+  
   @js.native
   class ImageCollectionsBookmark ()
     extends Component[SvgIconProps, js.Object, js.Any]
@@ -16,6 +17,4 @@ object collectionsBookmarkMod extends js.Object {
   @js.native
   class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
-  
 }
-

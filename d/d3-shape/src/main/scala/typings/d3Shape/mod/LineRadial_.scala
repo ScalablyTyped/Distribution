@@ -1,12 +1,15 @@
 package typings.d3Shape.mod
 
 import typings.std.CanvasRenderingContext2D
+import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LineRadial_[Datum] extends js.Object {
+  
+  def apply(data: js.Array[Datum]): String | Null = js.native
   /**
     * Generates a radial line for the given array of data. Depending on this radial line generator’s associated curve,
     * the given input data may need to be sorted by x-value before being passed to the line generator.
@@ -16,7 +19,8 @@ trait LineRadial_[Datum] extends js.Object {
     *
     * @param data Array of data elements.
     */
-  def apply(data: js.Array[Datum]): String | Null = js.native
+  def apply(data: Iterable[Datum]): String | Null = js.native
+  
   /**
     * Returns the current angle accessor function, which defaults to a function returning first element of a two-element array of numbers.
     */
@@ -39,6 +43,7 @@ trait LineRadial_[Datum] extends js.Object {
     * @param angle A constant angle value in radians, with 0 at -y (12 o’clock).
     */
   def angle(angle: Double): this.type = js.native
+  
   /**
     * Returns the current rendering context, which defaults to null.
     */
@@ -59,6 +64,7 @@ trait LineRadial_[Datum] extends js.Object {
     * @param context The rendering context.
     */
   def context(context: CanvasRenderingContext2D): this.type = js.native
+  
   /**
     * Returns the current curve factory, which defaults to curveLinear.
     */
@@ -79,6 +85,7 @@ trait LineRadial_[Datum] extends js.Object {
     */
   @JSName("curve")
   def curve_C_UnionCurveFactoryCurveFactoryLineOnly_C[C /* <: CurveFactory | CurveFactoryLineOnly */](): C = js.native
+  
   /**
     * Returns the current defined accessor, which defaults to a function returning a constant boolean value of true.
     */
@@ -120,6 +127,7 @@ trait LineRadial_[Datum] extends js.Object {
     * @param defined A boolean constant.
     */
   def defined(defined: Boolean): this.type = js.native
+  
   /**
     * Returns the current radius accessor function, which defaults to a function returning second element of a two-element array of numbers.
     */
@@ -143,4 +151,3 @@ trait LineRadial_[Datum] extends js.Object {
     */
   def radius(radius: Double): this.type = js.native
 }
-

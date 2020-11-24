@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Effects
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AudioEffectType extends js.Object
-
 /** Defines values for audio effect types. */
 @JSGlobal("Windows.Media.Effects.AudioEffectType")
 @js.native
 object AudioEffectType extends js.Object {
+  
   /** An acoustic echo cancellation effect. */
   @js.native
   sealed trait acousticEchoCancellation extends AudioEffectType
@@ -82,6 +82,4 @@ object AudioEffectType extends js.Object {
   /** A virtual surround sound effect. */
   @js.native
   sealed trait virtualSurround extends AudioEffectType
-  
 }
-

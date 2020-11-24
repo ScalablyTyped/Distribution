@@ -58,12 +58,11 @@ import typings.semanticUiCheckbox.semanticUiCheckboxStrings.verbose
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  @JSName("checkbox")
-  var checkbox_Original: Checkbox = js.native
+  
   def checkbox(): JQuery = js.native
   def checkbox(behavior: setting, name: beforeChecked, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
   def checkbox(
@@ -137,6 +136,8 @@ trait JQuery extends js.Object {
   def checkbox_ClassNameSettings(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
   @JSName("checkbox")
   def checkbox_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
+  @JSName("checkbox")
+  var checkbox_Original: Checkbox = js.native
   /**
     * Attach checkbox events to another element
     */
@@ -258,4 +259,3 @@ trait JQuery extends js.Object {
   @JSName("checkbox")
   def checkbox_uncheck(behavior: uncheck): JQuery = js.native
 }
-

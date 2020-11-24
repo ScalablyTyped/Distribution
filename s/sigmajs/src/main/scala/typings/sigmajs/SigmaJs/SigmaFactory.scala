@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SigmaFactory
@@ -14,11 +14,16 @@ trait SigmaFactory
       (/* container */ Element) | (/* configuration */ SigmaConfigs) | (/* container */ String), 
       Sigma
     ] {
+  
   var canvas: Canvas = js.native
+  
   var classes: Classes = js.native
+  
   var misc: Miscellaneous = js.native
+  
   var parsers: Parsers = js.native
+  
   var plugins: Plugins = js.native
+  
   var svg: SVG = js.native
 }
-

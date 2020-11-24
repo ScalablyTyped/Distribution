@@ -3,11 +3,12 @@ package typings.sindresorhusSlugify.mod
 import typings.sindresorhusSlugify.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@sindresorhus/slugify", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Slugify a string.
   	@param string - String to slugify.
@@ -26,6 +27,7 @@ object ^ extends js.Object {
   	*/
   def apply(string: String): String = js.native
   def apply(string: String, options: Options): String = js.native
+  
   /**
   	Returns a new instance of `slugify(string, options?)` with a counter to handle multiple occurences of the same string.
   	@param string - String to slugify.
@@ -53,4 +55,3 @@ object ^ extends js.Object {
   	*/
   def counter(): Call = js.native
 }
-

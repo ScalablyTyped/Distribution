@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 文件系统中的目录对象，用于管理特定的本地目录
@@ -11,36 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusIoDirectoryEntry extends js.Object {
-  /**
-    * 文件操作对象所属的文件系统对象，参考FileSystem
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var fileSystem: js.UndefOr[PlusIoFileSystem] = js.native
-  /**
-    * 目录操作对象的完整路径，文件系统的绝对路径
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var fullPath: js.UndefOr[String] = js.native
-  /**
-    * 操作对象是否为目录，DirectoryEntry对象固定其值为true
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var isDirectory: js.UndefOr[Boolean] = js.native
-  /**
-    * 操作对象的是否为文件，DirectoryEntry对象固定其值为false
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var isFile: js.UndefOr[Boolean] = js.native
-  /**
-    * 目录操作对象的名称，不包括路径
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
-    */
-  var name: js.UndefOr[String] = js.native
+  
   /**
     * 拷贝目录
     * 以下情况拷贝目录将会导致失败：
@@ -124,6 +95,7 @@ trait PlusIoDirectoryEntry extends js.Object {
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
   /**
     * 创建目录读取对象
     * 创建一个目录读取对象，用户读取目下的文件及子目录。
@@ -131,6 +103,21 @@ trait PlusIoDirectoryEntry extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def createReader(): PlusIoDirectoryReader = js.native
+  
+  /**
+    * 文件操作对象所属的文件系统对象，参考FileSystem
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var fileSystem: js.UndefOr[PlusIoFileSystem] = js.native
+  
+  /**
+    * 目录操作对象的完整路径，文件系统的绝对路径
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var fullPath: js.UndefOr[String] = js.native
+  
   /**
     * 创建或打开子目录
     * 创建或打开当前目录指定的目录。
@@ -206,6 +193,7 @@ trait PlusIoDirectoryEntry extends js.Object {
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
   /**
     * 创建或打开文件
     * 创建或打开当前目录下指定的文件。
@@ -281,6 +269,7 @@ trait PlusIoDirectoryEntry extends js.Object {
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
   /**
     * 获取目录的属性
     * 用于获取文件或目录的属性信息。
@@ -311,6 +300,7 @@ trait PlusIoDirectoryEntry extends js.Object {
     errorCB: js.Function1[/* result */ js.Any, Unit],
     recursive: Boolean
   ): Unit = js.native
+  
   /**
     * 获取目录所属的父目录
     * 获取父目录成功通过succesCB回调返回，失败则通过errorCB返回。
@@ -324,6 +314,21 @@ trait PlusIoDirectoryEntry extends js.Object {
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
+  /**
+    * 操作对象是否为目录，DirectoryEntry对象固定其值为true
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var isDirectory: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * 操作对象的是否为文件，DirectoryEntry对象固定其值为false
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var isFile: js.UndefOr[Boolean] = js.native
+  
   /**
     * 移动目录
     * 以下情况移动目录将会导致失败：
@@ -407,6 +412,14 @@ trait PlusIoDirectoryEntry extends js.Object {
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
+  /**
+    * 目录操作对象的名称，不包括路径
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var name: js.UndefOr[String] = js.native
+  
   /**
     * 删除目录
     * 以下情况删除目录将会导致失败：
@@ -423,6 +436,7 @@ trait PlusIoDirectoryEntry extends js.Object {
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
   /**
     * 递归删除目录
     * 删除目录将会删除其下的所有文件及子目录
@@ -438,18 +452,21 @@ trait PlusIoDirectoryEntry extends js.Object {
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  
   /**
     * 获取目录路径转换为本地路径URL地址
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def toLocalURL(): String = js.native
+  
   /**
     * 获取目录路径转换为网络路径URL地址
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def toRemoteURL(): String = js.native
+  
   /**
     * 获取目录路径转换为URL地址
     * 
@@ -457,4 +474,3 @@ trait PlusIoDirectoryEntry extends js.Object {
     */
   def toURL(): String = js.native
 }
-

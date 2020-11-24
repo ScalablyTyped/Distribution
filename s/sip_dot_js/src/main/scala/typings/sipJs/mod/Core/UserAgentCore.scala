@@ -4,7 +4,7 @@ import typings.sipJs.userAgentCoreConfigurationMod.UserAgentCoreConfiguration
 import typings.sipJs.userAgentCoreDelegateMod.UserAgentCoreDelegate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.UserAgentCore")
 @js.native
@@ -18,4 +18,3 @@ class UserAgentCore protected ()
   def this(configuration: UserAgentCoreConfiguration) = this()
   def this(configuration: UserAgentCoreConfiguration, delegate: UserAgentCoreDelegate) = this()
 }
-

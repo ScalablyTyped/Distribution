@@ -3,14 +3,17 @@ package typings.jexl
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jexl/Expression", JSImport.Namespace)
 @js.native
 object expressionMod extends js.Object {
+  
   @js.native
   trait Expression extends js.Object {
+    
     def _getAst(): js.Any = js.native
+    
     /**
       * Forces a compilation of the expression string that this Expression object
       * was constructed with. This function can be called multiple times; useful
@@ -18,6 +21,7 @@ object expressionMod extends js.Object {
       * @returns this Expression instance, for convenience
       */
     def compile(): Expression = js.native
+    
     /**
       * Asynchronously evaluates the expression within an optional context.
       * @param context A mapping of variables to values, which will be
@@ -26,6 +30,7 @@ object expressionMod extends js.Object {
       */
     def eval(): js.Promise[_] = js.native
     def eval(context: Context): js.Promise[_] = js.native
+    
     /**
       * Synchronously evaluates the expression within an optional context.
       * @param context A mapping of variables to values, which will be
@@ -44,4 +49,3 @@ object expressionMod extends js.Object {
   
   type Context = StringDictionary[js.Any]
 }
-

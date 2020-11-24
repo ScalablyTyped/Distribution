@@ -10,7 +10,7 @@ import typings.browserfs.indexedDBMod.IndexedDBFileSystemOptions
 import typings.browserfs.indexedDBMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofIndexedDB
@@ -22,12 +22,15 @@ trait TypeofIndexedDB
       /* deprecateMsg */ Boolean, 
       default
     ] {
-  val Name: String = js.native
-  val Options: FileSystemOptions = js.native
+  
   /**
     * Constructs an IndexedDB file system with the given options.
     */
   def Create(opts: IndexedDBFileSystemOptions, cb: BFSCallback[IndexedDBFileSystem]): Unit = js.native
+  
+  val Name: String = js.native
+  
+  val Options: FileSystemOptions = js.native
+  
   def isAvailable(): Boolean = js.native
 }
-

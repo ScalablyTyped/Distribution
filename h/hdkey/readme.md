@@ -11,8 +11,8 @@ Bitcoin BIP32 hierarchical deterministic keys
 | Full name          | hdkey |
 | Keywords           | bitcoin, bip32, bip, key, hierarchical, deterministic, crypto |
 | # releases         | 5 |
-| # dependents       | 136 |
-| # downloads        | 1877485 |
+| # dependents       | 191 |
+| # downloads        | 2430983 |
 | # stars            | 0 |
 
 ## Links

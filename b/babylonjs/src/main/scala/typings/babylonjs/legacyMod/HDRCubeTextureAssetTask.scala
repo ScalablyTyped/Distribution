@@ -2,7 +2,7 @@ package typings.babylonjs.legacyMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "HDRCubeTextureAssetTask")
 @js.native
@@ -66,11 +66,111 @@ class HDRCubeTextureAssetTask protected ()
     /**
     * Defines if mipmaps should not be generated (default is false)
     */
+  noMipmap: js.UndefOr[scala.Nothing],
+    /**
+    * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+    */
+  generateHarmonics: Boolean
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines the desired size (the more it increases the longer the generation will be)
+    */
+  size: Double,
+    /**
+    * Defines if mipmaps should not be generated (default is false)
+    */
   noMipmap: Boolean,
     /**
     * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
     */
   generateHarmonics: Boolean
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines the desired size (the more it increases the longer the generation will be)
+    */
+  size: Double,
+    /**
+    * Defines if mipmaps should not be generated (default is false)
+    */
+  noMipmap: js.UndefOr[scala.Nothing],
+    /**
+    * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+    */
+  generateHarmonics: js.UndefOr[scala.Nothing],
+    /**
+    * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
+    */
+  gammaSpace: Boolean
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines the desired size (the more it increases the longer the generation will be)
+    */
+  size: Double,
+    /**
+    * Defines if mipmaps should not be generated (default is false)
+    */
+  noMipmap: js.UndefOr[scala.Nothing],
+    /**
+    * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+    */
+  generateHarmonics: Boolean,
+    /**
+    * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
+    */
+  gammaSpace: Boolean
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines the desired size (the more it increases the longer the generation will be)
+    */
+  size: Double,
+    /**
+    * Defines if mipmaps should not be generated (default is false)
+    */
+  noMipmap: Boolean,
+    /**
+    * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+    */
+  generateHarmonics: js.UndefOr[scala.Nothing],
+    /**
+    * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
+    */
+  gammaSpace: Boolean
   ) = this()
   def this(
     /**
@@ -114,6 +214,216 @@ class HDRCubeTextureAssetTask protected ()
     /**
     * Defines if mipmaps should not be generated (default is false)
     */
+  noMipmap: js.UndefOr[scala.Nothing],
+    /**
+    * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+    */
+  generateHarmonics: js.UndefOr[scala.Nothing],
+    /**
+    * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
+    */
+  gammaSpace: js.UndefOr[scala.Nothing],
+    /**
+    * Internal Use Only
+    */
+  reserved: Boolean
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines the desired size (the more it increases the longer the generation will be)
+    */
+  size: Double,
+    /**
+    * Defines if mipmaps should not be generated (default is false)
+    */
+  noMipmap: js.UndefOr[scala.Nothing],
+    /**
+    * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+    */
+  generateHarmonics: js.UndefOr[scala.Nothing],
+    /**
+    * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
+    */
+  gammaSpace: Boolean,
+    /**
+    * Internal Use Only
+    */
+  reserved: Boolean
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines the desired size (the more it increases the longer the generation will be)
+    */
+  size: Double,
+    /**
+    * Defines if mipmaps should not be generated (default is false)
+    */
+  noMipmap: js.UndefOr[scala.Nothing],
+    /**
+    * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+    */
+  generateHarmonics: Boolean,
+    /**
+    * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
+    */
+  gammaSpace: js.UndefOr[scala.Nothing],
+    /**
+    * Internal Use Only
+    */
+  reserved: Boolean
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines the desired size (the more it increases the longer the generation will be)
+    */
+  size: Double,
+    /**
+    * Defines if mipmaps should not be generated (default is false)
+    */
+  noMipmap: js.UndefOr[scala.Nothing],
+    /**
+    * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+    */
+  generateHarmonics: Boolean,
+    /**
+    * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
+    */
+  gammaSpace: Boolean,
+    /**
+    * Internal Use Only
+    */
+  reserved: Boolean
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines the desired size (the more it increases the longer the generation will be)
+    */
+  size: Double,
+    /**
+    * Defines if mipmaps should not be generated (default is false)
+    */
+  noMipmap: Boolean,
+    /**
+    * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+    */
+  generateHarmonics: js.UndefOr[scala.Nothing],
+    /**
+    * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
+    */
+  gammaSpace: js.UndefOr[scala.Nothing],
+    /**
+    * Internal Use Only
+    */
+  reserved: Boolean
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines the desired size (the more it increases the longer the generation will be)
+    */
+  size: Double,
+    /**
+    * Defines if mipmaps should not be generated (default is false)
+    */
+  noMipmap: Boolean,
+    /**
+    * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+    */
+  generateHarmonics: js.UndefOr[scala.Nothing],
+    /**
+    * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
+    */
+  gammaSpace: Boolean,
+    /**
+    * Internal Use Only
+    */
+  reserved: Boolean
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines the desired size (the more it increases the longer the generation will be)
+    */
+  size: Double,
+    /**
+    * Defines if mipmaps should not be generated (default is false)
+    */
+  noMipmap: Boolean,
+    /**
+    * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
+    */
+  generateHarmonics: Boolean,
+    /**
+    * Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space) (default is false)
+    */
+  gammaSpace: js.UndefOr[scala.Nothing],
+    /**
+    * Internal Use Only
+    */
+  reserved: Boolean
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the location of the file to load
+    */
+  url: String,
+    /**
+    * Defines the desired size (the more it increases the longer the generation will be)
+    */
+  size: Double,
+    /**
+    * Defines if mipmaps should not be generated (default is false)
+    */
   noMipmap: Boolean,
     /**
     * Specifies whether you want to extract the polynomial harmonics during the generation process (default is true)
@@ -129,4 +439,3 @@ class HDRCubeTextureAssetTask protected ()
   reserved: Boolean
   ) = this()
 }
-

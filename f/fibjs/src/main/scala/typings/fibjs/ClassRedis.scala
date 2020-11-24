@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,17 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassRedis extends ClassObject {
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询和设置错误处理函数，当 sub 出现错误或者网络中断时回调，当回调发生后，本对象的一切 sub 都将中止
-    * 
-    * 
-    * 
-    * @type Function
-    */
-  var onsuberror: js.Function = js.native
+  
   /**
     * 
     * @brief 如果 key 已经存在并且是一个字符串，append 命令将 value 追加到 key 原来的值的末尾。如果 key 不存在，append 就简单地将给定 key 设为 value
@@ -32,6 +22,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def append(key: ClassBuffer, value: ClassBuffer): Double = js.native
+  
   /**
     * 
     * @brief 计算给定字符串中，被设置为 1 的比特位的数量
@@ -46,6 +37,7 @@ trait ClassRedis extends ClassObject {
   def bitcount(key: ClassBuffer, start: js.UndefOr[scala.Nothing], end: Double): Double = js.native
   def bitcount(key: ClassBuffer, start: Double): Double = js.native
   def bitcount(key: ClassBuffer, start: Double, end: Double): Double = js.native
+  
   /**
     * 
     * @brief 关闭当前数据库连接或事务
@@ -53,6 +45,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def close(): Unit = js.native
+  
   /**
     * 
     * @brief redis 基础命令方法
@@ -63,6 +56,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def command(cmd: String, args: js.Any*): js.Any = js.native
+  
   /**
     * 
     * @brief 将 key 所储存的值减去减量
@@ -74,6 +68,7 @@ trait ClassRedis extends ClassObject {
     */
   def decr(key: ClassBuffer): Double = js.native
   def decr(key: ClassBuffer, num: Double): Double = js.native
+  
   /**
     * 
     * @brief 删除给定的一个或多个 key，不存在的 key 会被忽略
@@ -92,6 +87,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def del(keys: js.Array[_]): Double = js.native
+  
   /**
     * 
     * @brief 序列化给定 key ，并返回被序列化的值，使用 restore 命令可以将这个值反序列化为 Redis 键
@@ -101,6 +97,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def dump(key: ClassBuffer): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 检查给定 key 是否存在
@@ -110,6 +107,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def exists(key: ClassBuffer): Boolean = js.native
+  
   /**
     * 
     * @brief 为给定 key 设置生存时间，当 key 过期时，它会被自动删除
@@ -120,6 +118,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def expire(key: ClassBuffer, ttl: Double): Boolean = js.native
+  
   /**
     * 
     * @brief 返回 key 所关联的字符串值，如果 key 不存在那么返回特殊值 Null
@@ -129,6 +128,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def get(key: ClassBuffer): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 对 key 所储存的字符串值，获取指定偏移量上的位(bit)
@@ -139,6 +139,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def getBit(key: ClassBuffer, offset: Double): Double = js.native
+  
   /**
     * 
     * @brief 获取指定 key 的 Hash 对象，此对象为包含指定 key 的客户端，只有调用其方法才会操作数据库
@@ -148,6 +149,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def getHash(key: ClassBuffer): ClassRedisHash = js.native
+  
   /**
     * 
     * @brief 获取指定 key 的 List 对象，此对象为包含指定 key 的客户端，只有调用其方法才会操作数据库
@@ -157,6 +159,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def getList(key: ClassBuffer): ClassRedisList = js.native
+  
   /**
     * 
     * @brief 返回 key 中字符串值的子字符串，字符串的截取范围由 start 和 end 两个偏移量决定(包括 start 和 end 在内)
@@ -168,6 +171,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def getRange(key: ClassBuffer, start: Double, end: Double): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 获取指定 key 的 Set 对象，此对象为包含指定 key 的客户端，只有调用其方法才会操作数据库
@@ -177,6 +181,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def getSet(key: ClassBuffer): ClassRedisSet = js.native
+  
   /**
     * 
     * @brief 获取指定 key 的 SortedSet 对象，此对象为包含指定 key 的客户端，只有调用其方法才会操作数据库
@@ -186,6 +191,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def getSortedSet(key: ClassBuffer): ClassRedisSortedSet = js.native
+  
   /**
     * 
     * @brief 将给定 key 的值设为 value ，并返回 key 的旧值(old value)
@@ -196,6 +202,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def getset(key: ClassBuffer, value: ClassBuffer): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 将 key 所储存的值加上增量
@@ -207,6 +214,7 @@ trait ClassRedis extends ClassObject {
     */
   def incr(key: ClassBuffer): Double = js.native
   def incr(key: ClassBuffer, num: Double): Double = js.native
+  
   /**
     * 
     * @brief 查找所有符合给定模式 pattern 的 key
@@ -216,6 +224,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def keys(pattern: String): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 返回所有(一个或多个)给定 key 的值。如果给定的 key 里面，有某个 key 不存在，那么这个 key 返回特殊值 nil 。
@@ -234,6 +243,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def mget(keys: js.Array[_]): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 同时设置一个或多个 key-value 对。如果某个给定 key 已经存在，那么 MSET 会用新值覆盖原来的旧值
@@ -250,6 +260,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def mset(kvs: js.Object): Unit = js.native
+  
   /**
     * 
     * @brief 同时设置一个或多个 key-value 对，当且仅当所有给定 key 都不存在
@@ -266,6 +277,19 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def msetNX(kvs: js.Object): Unit = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询和设置错误处理函数，当 sub 出现错误或者网络中断时回调，当回调发生后，本对象的一切 sub 都将中止
+    * 
+    * 
+    * 
+    * @type Function
+    */
+  var onsuberror: js.Function = js.native
+  
   /**
     * 
     * @brief 移除给定 key 的生存时间，将这个 key 从『易失的』(带生存时间 key )转换成『持久的』(一个不带生存时间、永不过期的 key)
@@ -275,6 +299,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def persist(key: ClassBuffer): Boolean = js.native
+  
   /**
     * 
     * @brief 订阅给定的一组频道模板的信息，当消息发生时自动调用相应的 func，同一频道同一函数只会回调一次
@@ -294,6 +319,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def psub(pattern: String, func: js.Function): Unit = js.native
+  
   /**
     * 
     * @brief 将信息 message 发送到指定的频道 channel
@@ -305,6 +331,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def pub(channel: ClassBuffer, message: ClassBuffer): Double = js.native
+  
   /**
     * 
     * @brief 将 key 改名为 newkey，当 key 和 newkey 相同，或者 key 不存在时，返回一个错误
@@ -314,6 +341,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def rename(key: ClassBuffer, newkey: ClassBuffer): Unit = js.native
+  
   /**
     * 
     * @brief 当且仅当 newkey 不存在时，将 key 改名为 newkey，当 key 不存在时，返回一个错误
@@ -324,6 +352,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def renameNX(key: ClassBuffer, newkey: ClassBuffer): Boolean = js.native
+  
   /**
     * 
     * @brief 反序列化给定的序列化值，并将它和给定的 key 关联
@@ -335,6 +364,7 @@ trait ClassRedis extends ClassObject {
     */
   def restore(key: ClassBuffer, data: ClassBuffer): Unit = js.native
   def restore(key: ClassBuffer, data: ClassBuffer, ttl: Double): Unit = js.native
+  
   /**
     * 
     * @brief 将字符串值 value 关联到 key，如果 key 已经持有其他值， SET 就覆写旧值，无视类型
@@ -346,6 +376,7 @@ trait ClassRedis extends ClassObject {
     */
   def set(key: ClassBuffer, value: ClassBuffer): Unit = js.native
   def set(key: ClassBuffer, value: ClassBuffer, ttl: Double): Unit = js.native
+  
   /**
     * 
     * @brief 对 key 所储存的字符串值，设置或清除指定偏移量上的位(bit)
@@ -357,6 +388,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def setBit(key: ClassBuffer, offset: Double, value: Double): Double = js.native
+  
   /**
     * 
     * @brief 将 key 的值设为 value ，当且仅当 key 不存在。若给定的 key 已经存在，则 SETNX 不做任何动作。
@@ -368,6 +400,7 @@ trait ClassRedis extends ClassObject {
     */
   def setNX(key: ClassBuffer, value: ClassBuffer): Unit = js.native
   def setNX(key: ClassBuffer, value: ClassBuffer, ttl: Double): Unit = js.native
+  
   /**
     * 
     * @brief 用 value 参数覆写给定 key 所储存的字符串值，从偏移量 offset 开始
@@ -379,6 +412,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def setRange(key: ClassBuffer, offset: Double, value: ClassBuffer): Double = js.native
+  
   /**
     * 
     * @brief 将 key 的值设为 value，只在键已经存在时，才对键进行设置操作。
@@ -390,6 +424,7 @@ trait ClassRedis extends ClassObject {
     */
   def setXX(key: ClassBuffer, value: ClassBuffer): Unit = js.native
   def setXX(key: ClassBuffer, value: ClassBuffer, ttl: Double): Unit = js.native
+  
   /**
     * 
     * @brief 返回 key 所储存的字符串值的长度。当 key 储存的不是字符串值时，返回一个错误
@@ -399,6 +434,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def strlen(key: ClassBuffer): Double = js.native
+  
   /**
     * 
     * @brief 订阅给定的一个频道的信息，当消息发生时自动调用 func，func 包含两个参数，依次为 channel 和 message，同一频道同一函数只会回调一次
@@ -418,6 +454,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def sub(map: js.Object): Unit = js.native
+  
   /**
     * 
     * @brief 返回给定 key 的剩余生存时间
@@ -427,6 +464,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def ttl(key: ClassBuffer): Double = js.native
+  
   /**
     * 
     * @brief 返回 key 所储存的值的类型
@@ -436,6 +474,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def `type`(key: ClassBuffer): String = js.native
+  
   /**
     * 
     * @brief 退订一组模板的频道的指定回调函数
@@ -473,6 +512,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def unpsub(patterns: js.Array[_]): Unit = js.native
+  
   /**
     * 
     * @brief 退订一组给定的频道的全部回调
@@ -511,4 +551,3 @@ trait ClassRedis extends ClassObject {
     */
   def unsub(map: js.Object): Unit = js.native
 }
-

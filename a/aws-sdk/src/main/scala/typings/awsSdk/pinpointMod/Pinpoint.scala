@@ -1,17 +1,19 @@
 package typings.awsSdk.pinpointMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Pinpoint extends Service {
+  
   @JSName("config")
   var config_Pinpoint: ConfigBase with ClientConfiguration = js.native
+  
   /**
     *  Creates an application.
     */
@@ -25,6 +27,7 @@ trait Pinpoint extends Service {
     params: CreateAppRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateAppResponse, Unit]
   ): Request[CreateAppResponse, AWSError] = js.native
+  
   /**
     * Creates a new campaign for an application or updates the settings of an existing campaign for an application.
     */
@@ -38,6 +41,7 @@ trait Pinpoint extends Service {
     params: CreateCampaignRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCampaignResponse, Unit]
   ): Request[CreateCampaignResponse, AWSError] = js.native
+  
   /**
     * Creates a message template for messages that are sent through the email channel.
     */
@@ -51,6 +55,7 @@ trait Pinpoint extends Service {
     params: CreateEmailTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEmailTemplateResponse, Unit]
   ): Request[CreateEmailTemplateResponse, AWSError] = js.native
+  
   /**
     * Creates an export job for an application.
     */
@@ -64,6 +69,7 @@ trait Pinpoint extends Service {
     params: CreateExportJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateExportJobResponse, Unit]
   ): Request[CreateExportJobResponse, AWSError] = js.native
+  
   /**
     * Creates an import job for an application.
     */
@@ -77,6 +83,7 @@ trait Pinpoint extends Service {
     params: CreateImportJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateImportJobResponse, Unit]
   ): Request[CreateImportJobResponse, AWSError] = js.native
+  
   /**
     * Creates a journey for an application.
     */
@@ -90,6 +97,7 @@ trait Pinpoint extends Service {
     params: CreateJourneyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateJourneyResponse, Unit]
   ): Request[CreateJourneyResponse, AWSError] = js.native
+  
   /**
     * Creates a message template for messages that are sent through a push notification channel.
     */
@@ -103,6 +111,7 @@ trait Pinpoint extends Service {
     params: CreatePushTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePushTemplateResponse, Unit]
   ): Request[CreatePushTemplateResponse, AWSError] = js.native
+  
   /**
     * Creates an Amazon Pinpoint configuration for a recommender model.
     */
@@ -118,6 +127,7 @@ trait Pinpoint extends Service {
     params: CreateRecommenderConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRecommenderConfigurationResponse, Unit]
   ): Request[CreateRecommenderConfigurationResponse, AWSError] = js.native
+  
   /**
     * Creates a new segment for an application or updates the configuration, dimension, and other settings for an existing segment that's associated with an application.
     */
@@ -131,6 +141,7 @@ trait Pinpoint extends Service {
     params: CreateSegmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSegmentResponse, Unit]
   ): Request[CreateSegmentResponse, AWSError] = js.native
+  
   /**
     * Creates a message template for messages that are sent through the SMS channel.
     */
@@ -144,6 +155,7 @@ trait Pinpoint extends Service {
     params: CreateSmsTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSmsTemplateResponse, Unit]
   ): Request[CreateSmsTemplateResponse, AWSError] = js.native
+  
   /**
     * Creates a message template for messages that are sent through the voice channel.
     */
@@ -157,6 +169,7 @@ trait Pinpoint extends Service {
     params: CreateVoiceTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateVoiceTemplateResponse, Unit]
   ): Request[CreateVoiceTemplateResponse, AWSError] = js.native
+  
   /**
     * Disables the ADM channel for an application and deletes any existing settings for the channel.
     */
@@ -170,6 +183,7 @@ trait Pinpoint extends Service {
     params: DeleteAdmChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAdmChannelResponse, Unit]
   ): Request[DeleteAdmChannelResponse, AWSError] = js.native
+  
   /**
     * Disables the APNs channel for an application and deletes any existing settings for the channel.
     */
@@ -183,6 +197,7 @@ trait Pinpoint extends Service {
     params: DeleteApnsChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteApnsChannelResponse, Unit]
   ): Request[DeleteApnsChannelResponse, AWSError] = js.native
+  
   /**
     * Disables the APNs sandbox channel for an application and deletes any existing settings for the channel.
     */
@@ -196,6 +211,7 @@ trait Pinpoint extends Service {
     params: DeleteApnsSandboxChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteApnsSandboxChannelResponse, Unit]
   ): Request[DeleteApnsSandboxChannelResponse, AWSError] = js.native
+  
   /**
     * Disables the APNs VoIP channel for an application and deletes any existing settings for the channel.
     */
@@ -209,6 +225,7 @@ trait Pinpoint extends Service {
     params: DeleteApnsVoipChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteApnsVoipChannelResponse, Unit]
   ): Request[DeleteApnsVoipChannelResponse, AWSError] = js.native
+  
   /**
     * Disables the APNs VoIP sandbox channel for an application and deletes any existing settings for the channel.
     */
@@ -222,6 +239,7 @@ trait Pinpoint extends Service {
     params: DeleteApnsVoipSandboxChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteApnsVoipSandboxChannelResponse, Unit]
   ): Request[DeleteApnsVoipSandboxChannelResponse, AWSError] = js.native
+  
   /**
     * Deletes an application.
     */
@@ -235,6 +253,7 @@ trait Pinpoint extends Service {
     params: DeleteAppRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAppResponse, Unit]
   ): Request[DeleteAppResponse, AWSError] = js.native
+  
   /**
     * Disables the Baidu channel for an application and deletes any existing settings for the channel.
     */
@@ -248,6 +267,7 @@ trait Pinpoint extends Service {
     params: DeleteBaiduChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteBaiduChannelResponse, Unit]
   ): Request[DeleteBaiduChannelResponse, AWSError] = js.native
+  
   /**
     * Deletes a campaign from an application.
     */
@@ -261,6 +281,7 @@ trait Pinpoint extends Service {
     params: DeleteCampaignRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteCampaignResponse, Unit]
   ): Request[DeleteCampaignResponse, AWSError] = js.native
+  
   /**
     * Disables the email channel for an application and deletes any existing settings for the channel.
     */
@@ -274,6 +295,7 @@ trait Pinpoint extends Service {
     params: DeleteEmailChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEmailChannelResponse, Unit]
   ): Request[DeleteEmailChannelResponse, AWSError] = js.native
+  
   /**
     * Deletes a message template for messages that were sent through the email channel.
     */
@@ -287,6 +309,7 @@ trait Pinpoint extends Service {
     params: DeleteEmailTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEmailTemplateResponse, Unit]
   ): Request[DeleteEmailTemplateResponse, AWSError] = js.native
+  
   /**
     * Deletes an endpoint from an application.
     */
@@ -300,6 +323,7 @@ trait Pinpoint extends Service {
     params: DeleteEndpointRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEndpointResponse, Unit]
   ): Request[DeleteEndpointResponse, AWSError] = js.native
+  
   /**
     * Deletes the event stream for an application.
     */
@@ -313,6 +337,7 @@ trait Pinpoint extends Service {
     params: DeleteEventStreamRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEventStreamResponse, Unit]
   ): Request[DeleteEventStreamResponse, AWSError] = js.native
+  
   /**
     * Disables the GCM channel for an application and deletes any existing settings for the channel.
     */
@@ -326,6 +351,7 @@ trait Pinpoint extends Service {
     params: DeleteGcmChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteGcmChannelResponse, Unit]
   ): Request[DeleteGcmChannelResponse, AWSError] = js.native
+  
   /**
     * Deletes a journey from an application.
     */
@@ -339,6 +365,7 @@ trait Pinpoint extends Service {
     params: DeleteJourneyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteJourneyResponse, Unit]
   ): Request[DeleteJourneyResponse, AWSError] = js.native
+  
   /**
     * Deletes a message template for messages that were sent through a push notification channel.
     */
@@ -352,6 +379,7 @@ trait Pinpoint extends Service {
     params: DeletePushTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePushTemplateResponse, Unit]
   ): Request[DeletePushTemplateResponse, AWSError] = js.native
+  
   /**
     * Deletes an Amazon Pinpoint configuration for a recommender model.
     */
@@ -367,6 +395,7 @@ trait Pinpoint extends Service {
     params: DeleteRecommenderConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRecommenderConfigurationResponse, Unit]
   ): Request[DeleteRecommenderConfigurationResponse, AWSError] = js.native
+  
   /**
     * Deletes a segment from an application.
     */
@@ -380,6 +409,7 @@ trait Pinpoint extends Service {
     params: DeleteSegmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteSegmentResponse, Unit]
   ): Request[DeleteSegmentResponse, AWSError] = js.native
+  
   /**
     * Disables the SMS channel for an application and deletes any existing settings for the channel.
     */
@@ -393,6 +423,7 @@ trait Pinpoint extends Service {
     params: DeleteSmsChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteSmsChannelResponse, Unit]
   ): Request[DeleteSmsChannelResponse, AWSError] = js.native
+  
   /**
     * Deletes a message template for messages that were sent through the SMS channel.
     */
@@ -406,6 +437,7 @@ trait Pinpoint extends Service {
     params: DeleteSmsTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteSmsTemplateResponse, Unit]
   ): Request[DeleteSmsTemplateResponse, AWSError] = js.native
+  
   /**
     * Deletes all the endpoints that are associated with a specific user ID.
     */
@@ -419,6 +451,7 @@ trait Pinpoint extends Service {
     params: DeleteUserEndpointsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteUserEndpointsResponse, Unit]
   ): Request[DeleteUserEndpointsResponse, AWSError] = js.native
+  
   /**
     * Disables the voice channel for an application and deletes any existing settings for the channel.
     */
@@ -432,6 +465,7 @@ trait Pinpoint extends Service {
     params: DeleteVoiceChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteVoiceChannelResponse, Unit]
   ): Request[DeleteVoiceChannelResponse, AWSError] = js.native
+  
   /**
     * Deletes a message template for messages that were sent through the voice channel.
     */
@@ -445,6 +479,7 @@ trait Pinpoint extends Service {
     params: DeleteVoiceTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteVoiceTemplateResponse, Unit]
   ): Request[DeleteVoiceTemplateResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of the ADM channel for an application.
     */
@@ -458,6 +493,7 @@ trait Pinpoint extends Service {
     params: GetAdmChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAdmChannelResponse, Unit]
   ): Request[GetAdmChannelResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of the APNs channel for an application.
     */
@@ -471,6 +507,7 @@ trait Pinpoint extends Service {
     params: GetApnsChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetApnsChannelResponse, Unit]
   ): Request[GetApnsChannelResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of the APNs sandbox channel for an application.
     */
@@ -484,6 +521,7 @@ trait Pinpoint extends Service {
     params: GetApnsSandboxChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetApnsSandboxChannelResponse, Unit]
   ): Request[GetApnsSandboxChannelResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of the APNs VoIP channel for an application.
     */
@@ -497,6 +535,7 @@ trait Pinpoint extends Service {
     params: GetApnsVoipChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetApnsVoipChannelResponse, Unit]
   ): Request[GetApnsVoipChannelResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of the APNs VoIP sandbox channel for an application.
     */
@@ -510,6 +549,7 @@ trait Pinpoint extends Service {
     params: GetApnsVoipSandboxChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetApnsVoipSandboxChannelResponse, Unit]
   ): Request[GetApnsVoipSandboxChannelResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about an application.
     */
@@ -520,6 +560,7 @@ trait Pinpoint extends Service {
     */
   def getApp(params: GetAppRequest): Request[GetAppResponse, AWSError] = js.native
   def getApp(params: GetAppRequest, callback: js.Function2[/* err */ AWSError, /* data */ GetAppResponse, Unit]): Request[GetAppResponse, AWSError] = js.native
+  
   /**
     * Retrieves (queries) pre-aggregated data for a standard metric that applies to an application.
     */
@@ -533,6 +574,7 @@ trait Pinpoint extends Service {
     params: GetApplicationDateRangeKpiRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetApplicationDateRangeKpiResponse, Unit]
   ): Request[GetApplicationDateRangeKpiResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the settings for an application.
     */
@@ -546,6 +588,7 @@ trait Pinpoint extends Service {
     params: GetApplicationSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetApplicationSettingsResponse, Unit]
   ): Request[GetApplicationSettingsResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about all the applications that are associated with your Amazon Pinpoint account.
     */
@@ -559,6 +602,7 @@ trait Pinpoint extends Service {
     params: GetAppsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAppsResponse, Unit]
   ): Request[GetAppsResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of the Baidu channel for an application.
     */
@@ -572,6 +616,7 @@ trait Pinpoint extends Service {
     params: GetBaiduChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetBaiduChannelResponse, Unit]
   ): Request[GetBaiduChannelResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status, configuration, and other settings for a campaign.
     */
@@ -585,6 +630,7 @@ trait Pinpoint extends Service {
     params: GetCampaignRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCampaignResponse, Unit]
   ): Request[GetCampaignResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about all the activities for a campaign.
     */
@@ -598,6 +644,7 @@ trait Pinpoint extends Service {
     params: GetCampaignActivitiesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCampaignActivitiesResponse, Unit]
   ): Request[GetCampaignActivitiesResponse, AWSError] = js.native
+  
   /**
     * Retrieves (queries) pre-aggregated data for a standard metric that applies to a campaign.
     */
@@ -611,6 +658,7 @@ trait Pinpoint extends Service {
     params: GetCampaignDateRangeKpiRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCampaignDateRangeKpiResponse, Unit]
   ): Request[GetCampaignDateRangeKpiResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status, configuration, and other settings for a specific version of a campaign.
     */
@@ -624,6 +672,7 @@ trait Pinpoint extends Service {
     params: GetCampaignVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCampaignVersionResponse, Unit]
   ): Request[GetCampaignVersionResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status, configuration, and other settings for all versions of a campaign.
     */
@@ -637,6 +686,7 @@ trait Pinpoint extends Service {
     params: GetCampaignVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCampaignVersionsResponse, Unit]
   ): Request[GetCampaignVersionsResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status, configuration, and other settings for all the campaigns that are associated with an application.
     */
@@ -650,6 +700,7 @@ trait Pinpoint extends Service {
     params: GetCampaignsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCampaignsResponse, Unit]
   ): Request[GetCampaignsResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the history and status of each channel for an application.
     */
@@ -663,6 +714,7 @@ trait Pinpoint extends Service {
     params: GetChannelsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetChannelsResponse, Unit]
   ): Request[GetChannelsResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of the email channel for an application.
     */
@@ -676,6 +728,7 @@ trait Pinpoint extends Service {
     params: GetEmailChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetEmailChannelResponse, Unit]
   ): Request[GetEmailChannelResponse, AWSError] = js.native
+  
   /**
     * Retrieves the content and settings of a message template for messages that are sent through the email channel.
     */
@@ -689,6 +742,7 @@ trait Pinpoint extends Service {
     params: GetEmailTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetEmailTemplateResponse, Unit]
   ): Request[GetEmailTemplateResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the settings and attributes of a specific endpoint for an application.
     */
@@ -702,6 +756,7 @@ trait Pinpoint extends Service {
     params: GetEndpointRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetEndpointResponse, Unit]
   ): Request[GetEndpointResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the event stream settings for an application.
     */
@@ -715,6 +770,7 @@ trait Pinpoint extends Service {
     params: GetEventStreamRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetEventStreamResponse, Unit]
   ): Request[GetEventStreamResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of a specific export job for an application.
     */
@@ -728,6 +784,7 @@ trait Pinpoint extends Service {
     params: GetExportJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetExportJobResponse, Unit]
   ): Request[GetExportJobResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of all the export jobs for an application.
     */
@@ -741,6 +798,7 @@ trait Pinpoint extends Service {
     params: GetExportJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetExportJobsResponse, Unit]
   ): Request[GetExportJobsResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of the GCM channel for an application.
     */
@@ -754,6 +812,7 @@ trait Pinpoint extends Service {
     params: GetGcmChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetGcmChannelResponse, Unit]
   ): Request[GetGcmChannelResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of a specific import job for an application.
     */
@@ -767,6 +826,7 @@ trait Pinpoint extends Service {
     params: GetImportJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetImportJobResponse, Unit]
   ): Request[GetImportJobResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of all the import jobs for an application.
     */
@@ -780,6 +840,7 @@ trait Pinpoint extends Service {
     params: GetImportJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetImportJobsResponse, Unit]
   ): Request[GetImportJobsResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status, configuration, and other settings for a journey.
     */
@@ -793,6 +854,7 @@ trait Pinpoint extends Service {
     params: GetJourneyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyResponse, Unit]
   ): Request[GetJourneyResponse, AWSError] = js.native
+  
   /**
     * Retrieves (queries) pre-aggregated data for a standard engagement metric that applies to a journey.
     */
@@ -806,6 +868,7 @@ trait Pinpoint extends Service {
     params: GetJourneyDateRangeKpiRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyDateRangeKpiResponse, Unit]
   ): Request[GetJourneyDateRangeKpiResponse, AWSError] = js.native
+  
   /**
     * Retrieves (queries) pre-aggregated data for a standard execution metric that applies to a journey activity.
     */
@@ -821,6 +884,7 @@ trait Pinpoint extends Service {
     params: GetJourneyExecutionActivityMetricsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyExecutionActivityMetricsResponse, Unit]
   ): Request[GetJourneyExecutionActivityMetricsResponse, AWSError] = js.native
+  
   /**
     * Retrieves (queries) pre-aggregated data for a standard execution metric that applies to a journey.
     */
@@ -834,6 +898,7 @@ trait Pinpoint extends Service {
     params: GetJourneyExecutionMetricsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyExecutionMetricsResponse, Unit]
   ): Request[GetJourneyExecutionMetricsResponse, AWSError] = js.native
+  
   /**
     * Retrieves the content and settings of a message template for messages that are sent through a push notification channel.
     */
@@ -847,6 +912,7 @@ trait Pinpoint extends Service {
     params: GetPushTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPushTemplateResponse, Unit]
   ): Request[GetPushTemplateResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about an Amazon Pinpoint configuration for a recommender model.
     */
@@ -860,6 +926,7 @@ trait Pinpoint extends Service {
     params: GetRecommenderConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRecommenderConfigurationResponse, Unit]
   ): Request[GetRecommenderConfigurationResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about all the recommender model configurations that are associated with your Amazon Pinpoint account.
     */
@@ -873,6 +940,7 @@ trait Pinpoint extends Service {
     params: GetRecommenderConfigurationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRecommenderConfigurationsResponse, Unit]
   ): Request[GetRecommenderConfigurationsResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the configuration, dimension, and other settings for a specific segment that's associated with an application.
     */
@@ -886,6 +954,7 @@ trait Pinpoint extends Service {
     params: GetSegmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSegmentResponse, Unit]
   ): Request[GetSegmentResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of the export jobs for a segment.
     */
@@ -899,6 +968,7 @@ trait Pinpoint extends Service {
     params: GetSegmentExportJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSegmentExportJobsResponse, Unit]
   ): Request[GetSegmentExportJobsResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of the import jobs for a segment.
     */
@@ -912,6 +982,7 @@ trait Pinpoint extends Service {
     params: GetSegmentImportJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSegmentImportJobsResponse, Unit]
   ): Request[GetSegmentImportJobsResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the configuration, dimension, and other settings for a specific version of a segment that's associated with an application.
     */
@@ -925,6 +996,7 @@ trait Pinpoint extends Service {
     params: GetSegmentVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSegmentVersionResponse, Unit]
   ): Request[GetSegmentVersionResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the configuration, dimension, and other settings for all the versions of a specific segment that's associated with an application.
     */
@@ -938,6 +1010,7 @@ trait Pinpoint extends Service {
     params: GetSegmentVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSegmentVersionsResponse, Unit]
   ): Request[GetSegmentVersionsResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the configuration, dimension, and other settings for all the segments that are associated with an application.
     */
@@ -951,6 +1024,7 @@ trait Pinpoint extends Service {
     params: GetSegmentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSegmentsResponse, Unit]
   ): Request[GetSegmentsResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of the SMS channel for an application.
     */
@@ -964,6 +1038,7 @@ trait Pinpoint extends Service {
     params: GetSmsChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSmsChannelResponse, Unit]
   ): Request[GetSmsChannelResponse, AWSError] = js.native
+  
   /**
     * Retrieves the content and settings of a message template for messages that are sent through the SMS channel.
     */
@@ -977,6 +1052,7 @@ trait Pinpoint extends Service {
     params: GetSmsTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSmsTemplateResponse, Unit]
   ): Request[GetSmsTemplateResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about all the endpoints that are associated with a specific user ID.
     */
@@ -990,6 +1066,7 @@ trait Pinpoint extends Service {
     params: GetUserEndpointsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetUserEndpointsResponse, Unit]
   ): Request[GetUserEndpointsResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status and settings of the voice channel for an application.
     */
@@ -1003,6 +1080,7 @@ trait Pinpoint extends Service {
     params: GetVoiceChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceChannelResponse, Unit]
   ): Request[GetVoiceChannelResponse, AWSError] = js.native
+  
   /**
     * Retrieves the content and settings of a message template for messages that are sent through the voice channel.
     */
@@ -1016,6 +1094,7 @@ trait Pinpoint extends Service {
     params: GetVoiceTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceTemplateResponse, Unit]
   ): Request[GetVoiceTemplateResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about the status, configuration, and other settings for all the journeys that are associated with an application.
     */
@@ -1029,6 +1108,7 @@ trait Pinpoint extends Service {
     params: ListJourneysRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListJourneysResponse, Unit]
   ): Request[ListJourneysResponse, AWSError] = js.native
+  
   /**
     * Retrieves all the tags (keys and values) that are associated with an application, campaign, message template, or segment.
     */
@@ -1042,6 +1122,7 @@ trait Pinpoint extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about all the versions of a specific message template.
     */
@@ -1055,6 +1136,7 @@ trait Pinpoint extends Service {
     params: ListTemplateVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTemplateVersionsResponse, Unit]
   ): Request[ListTemplateVersionsResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about all the message templates that are associated with your Amazon Pinpoint account.
     */
@@ -1068,6 +1150,7 @@ trait Pinpoint extends Service {
     params: ListTemplatesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTemplatesResponse, Unit]
   ): Request[ListTemplatesResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a phone number.
     */
@@ -1081,6 +1164,7 @@ trait Pinpoint extends Service {
     params: PhoneNumberValidateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PhoneNumberValidateResponse, Unit]
   ): Request[PhoneNumberValidateResponse, AWSError] = js.native
+  
   /**
     * Creates a new event stream for an application or updates the settings of an existing event stream for an application.
     */
@@ -1094,6 +1178,7 @@ trait Pinpoint extends Service {
     params: PutEventStreamRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutEventStreamResponse, Unit]
   ): Request[PutEventStreamResponse, AWSError] = js.native
+  
   /**
     * Creates a new event to record for endpoints, or creates or updates endpoint data that existing events are associated with.
     */
@@ -1107,6 +1192,7 @@ trait Pinpoint extends Service {
     params: PutEventsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutEventsResponse, Unit]
   ): Request[PutEventsResponse, AWSError] = js.native
+  
   /**
     * Removes one or more attributes, of the same attribute type, from all the endpoints that are associated with an application.
     */
@@ -1120,6 +1206,7 @@ trait Pinpoint extends Service {
     params: RemoveAttributesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RemoveAttributesResponse, Unit]
   ): Request[RemoveAttributesResponse, AWSError] = js.native
+  
   /**
     * Creates and sends a direct message.
     */
@@ -1133,6 +1220,7 @@ trait Pinpoint extends Service {
     params: SendMessagesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SendMessagesResponse, Unit]
   ): Request[SendMessagesResponse, AWSError] = js.native
+  
   /**
     * Creates and sends a message to a list of users.
     */
@@ -1146,6 +1234,7 @@ trait Pinpoint extends Service {
     params: SendUsersMessagesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SendUsersMessagesResponse, Unit]
   ): Request[SendUsersMessagesResponse, AWSError] = js.native
+  
   /**
     * Adds one or more tags (keys and values) to an application, campaign, message template, or segment.
     */
@@ -1156,6 +1245,7 @@ trait Pinpoint extends Service {
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Removes one or more tags (keys and values) from an application, campaign, message template, or segment.
     */
@@ -1169,6 +1259,7 @@ trait Pinpoint extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Enables the ADM channel for an application or updates the status and settings of the ADM channel for an application.
     */
@@ -1182,6 +1273,7 @@ trait Pinpoint extends Service {
     params: UpdateAdmChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAdmChannelResponse, Unit]
   ): Request[UpdateAdmChannelResponse, AWSError] = js.native
+  
   /**
     * Enables the APNs channel for an application or updates the status and settings of the APNs channel for an application.
     */
@@ -1195,6 +1287,7 @@ trait Pinpoint extends Service {
     params: UpdateApnsChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateApnsChannelResponse, Unit]
   ): Request[UpdateApnsChannelResponse, AWSError] = js.native
+  
   /**
     * Enables the APNs sandbox channel for an application or updates the status and settings of the APNs sandbox channel for an application.
     */
@@ -1208,6 +1301,7 @@ trait Pinpoint extends Service {
     params: UpdateApnsSandboxChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateApnsSandboxChannelResponse, Unit]
   ): Request[UpdateApnsSandboxChannelResponse, AWSError] = js.native
+  
   /**
     * Enables the APNs VoIP channel for an application or updates the status and settings of the APNs VoIP channel for an application.
     */
@@ -1221,6 +1315,7 @@ trait Pinpoint extends Service {
     params: UpdateApnsVoipChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateApnsVoipChannelResponse, Unit]
   ): Request[UpdateApnsVoipChannelResponse, AWSError] = js.native
+  
   /**
     * Enables the APNs VoIP sandbox channel for an application or updates the status and settings of the APNs VoIP sandbox channel for an application.
     */
@@ -1234,6 +1329,7 @@ trait Pinpoint extends Service {
     params: UpdateApnsVoipSandboxChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateApnsVoipSandboxChannelResponse, Unit]
   ): Request[UpdateApnsVoipSandboxChannelResponse, AWSError] = js.native
+  
   /**
     * Updates the settings for an application.
     */
@@ -1247,6 +1343,7 @@ trait Pinpoint extends Service {
     params: UpdateApplicationSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateApplicationSettingsResponse, Unit]
   ): Request[UpdateApplicationSettingsResponse, AWSError] = js.native
+  
   /**
     * Enables the Baidu channel for an application or updates the status and settings of the Baidu channel for an application.
     */
@@ -1260,6 +1357,7 @@ trait Pinpoint extends Service {
     params: UpdateBaiduChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateBaiduChannelResponse, Unit]
   ): Request[UpdateBaiduChannelResponse, AWSError] = js.native
+  
   /**
     * Updates the configuration and other settings for a campaign.
     */
@@ -1273,6 +1371,7 @@ trait Pinpoint extends Service {
     params: UpdateCampaignRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateCampaignResponse, Unit]
   ): Request[UpdateCampaignResponse, AWSError] = js.native
+  
   /**
     * Enables the email channel for an application or updates the status and settings of the email channel for an application.
     */
@@ -1286,6 +1385,7 @@ trait Pinpoint extends Service {
     params: UpdateEmailChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEmailChannelResponse, Unit]
   ): Request[UpdateEmailChannelResponse, AWSError] = js.native
+  
   /**
     * Updates an existing message template for messages that are sent through the email channel.
     */
@@ -1299,6 +1399,7 @@ trait Pinpoint extends Service {
     params: UpdateEmailTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEmailTemplateResponse, Unit]
   ): Request[UpdateEmailTemplateResponse, AWSError] = js.native
+  
   /**
     * Creates a new endpoint for an application or updates the settings and attributes of an existing endpoint for an application. You can also use this operation to define custom attributes for an endpoint. If an update includes one or more values for a custom attribute, Amazon Pinpoint replaces (overwrites) any existing values with the new values.
     */
@@ -1312,6 +1413,7 @@ trait Pinpoint extends Service {
     params: UpdateEndpointRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEndpointResponse, Unit]
   ): Request[UpdateEndpointResponse, AWSError] = js.native
+  
   /**
     * Creates a new batch of endpoints for an application or updates the settings and attributes of a batch of existing endpoints for an application. You can also use this operation to define custom attributes for a batch of endpoints. If an update includes one or more values for a custom attribute, Amazon Pinpoint replaces (overwrites) any existing values with the new values.
     */
@@ -1325,6 +1427,7 @@ trait Pinpoint extends Service {
     params: UpdateEndpointsBatchRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEndpointsBatchResponse, Unit]
   ): Request[UpdateEndpointsBatchResponse, AWSError] = js.native
+  
   /**
     * Enables the GCM channel for an application or updates the status and settings of the GCM channel for an application.
     */
@@ -1338,6 +1441,7 @@ trait Pinpoint extends Service {
     params: UpdateGcmChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateGcmChannelResponse, Unit]
   ): Request[UpdateGcmChannelResponse, AWSError] = js.native
+  
   /**
     * Updates the configuration and other settings for a journey.
     */
@@ -1351,6 +1455,7 @@ trait Pinpoint extends Service {
     params: UpdateJourneyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateJourneyResponse, Unit]
   ): Request[UpdateJourneyResponse, AWSError] = js.native
+  
   /**
     * Cancels (stops) an active journey.
     */
@@ -1364,6 +1469,7 @@ trait Pinpoint extends Service {
     params: UpdateJourneyStateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateJourneyStateResponse, Unit]
   ): Request[UpdateJourneyStateResponse, AWSError] = js.native
+  
   /**
     * Updates an existing message template for messages that are sent through a push notification channel.
     */
@@ -1377,6 +1483,7 @@ trait Pinpoint extends Service {
     params: UpdatePushTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePushTemplateResponse, Unit]
   ): Request[UpdatePushTemplateResponse, AWSError] = js.native
+  
   /**
     * Updates an Amazon Pinpoint configuration for a recommender model.
     */
@@ -1392,6 +1499,7 @@ trait Pinpoint extends Service {
     params: UpdateRecommenderConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRecommenderConfigurationResponse, Unit]
   ): Request[UpdateRecommenderConfigurationResponse, AWSError] = js.native
+  
   /**
     * Creates a new segment for an application or updates the configuration, dimension, and other settings for an existing segment that's associated with an application.
     */
@@ -1405,6 +1513,7 @@ trait Pinpoint extends Service {
     params: UpdateSegmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateSegmentResponse, Unit]
   ): Request[UpdateSegmentResponse, AWSError] = js.native
+  
   /**
     * Enables the SMS channel for an application or updates the status and settings of the SMS channel for an application.
     */
@@ -1418,6 +1527,7 @@ trait Pinpoint extends Service {
     params: UpdateSmsChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateSmsChannelResponse, Unit]
   ): Request[UpdateSmsChannelResponse, AWSError] = js.native
+  
   /**
     * Updates an existing message template for messages that are sent through the SMS channel.
     */
@@ -1431,6 +1541,7 @@ trait Pinpoint extends Service {
     params: UpdateSmsTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateSmsTemplateResponse, Unit]
   ): Request[UpdateSmsTemplateResponse, AWSError] = js.native
+  
   /**
     * Changes the status of a specific version of a message template to active.
     */
@@ -1444,6 +1555,7 @@ trait Pinpoint extends Service {
     params: UpdateTemplateActiveVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateTemplateActiveVersionResponse, Unit]
   ): Request[UpdateTemplateActiveVersionResponse, AWSError] = js.native
+  
   /**
     * Enables the voice channel for an application or updates the status and settings of the voice channel for an application.
     */
@@ -1457,6 +1569,7 @@ trait Pinpoint extends Service {
     params: UpdateVoiceChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateVoiceChannelResponse, Unit]
   ): Request[UpdateVoiceChannelResponse, AWSError] = js.native
+  
   /**
     * Updates an existing message template for messages that are sent through the voice channel.
     */
@@ -1471,4 +1584,3 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateVoiceTemplateResponse, Unit]
   ): Request[UpdateVoiceTemplateResponse, AWSError] = js.native
 }
-

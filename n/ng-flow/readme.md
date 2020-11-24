@@ -11,7 +11,7 @@ Flow.js html5 file upload extension on angular.js framework
 | Keywords           | flow.js, flow, resumable.js, resumable, angular, angular.js, angular-upload, file upload, upload |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 25417 |
+| # downloads        | 38544 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.qrcodeGenerator
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.qrcodeGenerator.qrcodeGeneratorStrings.Numeric
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.qrcodeGenerator.qrcodeGeneratorStrings.Kanji
 */
 trait Mode extends js.Object
-
 object Mode {
+  
   @scala.inline
   def Alphanumeric: typings.qrcodeGenerator.qrcodeGeneratorStrings.Alphanumeric = "Alphanumeric".asInstanceOf[typings.qrcodeGenerator.qrcodeGeneratorStrings.Alphanumeric]
+  
   @scala.inline
   def Byte: typings.qrcodeGenerator.qrcodeGeneratorStrings.Byte = "Byte".asInstanceOf[typings.qrcodeGenerator.qrcodeGeneratorStrings.Byte]
+  
   @scala.inline
   def Kanji: typings.qrcodeGenerator.qrcodeGeneratorStrings.Kanji = "Kanji".asInstanceOf[typings.qrcodeGenerator.qrcodeGeneratorStrings.Kanji]
+  
   @scala.inline
   def Numeric: typings.qrcodeGenerator.qrcodeGeneratorStrings.Numeric = "Numeric".asInstanceOf[typings.qrcodeGenerator.qrcodeGeneratorStrings.Numeric]
 }
-

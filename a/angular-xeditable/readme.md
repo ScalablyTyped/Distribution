@@ -10,9 +10,9 @@ Edit-in-place for angular.js
 | ------------------ | :-------------: |
 | Full name          | angular-xeditable |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 3 |
-| # downloads        | 582273 |
+| # downloads        | 618902 |
 | # stars            | 2 |
 
 ## Links

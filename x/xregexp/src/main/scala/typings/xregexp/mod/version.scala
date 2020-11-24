@@ -3,7 +3,7 @@ package typings.xregexp.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region constants
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSImport("xregexp", "version")
 @js.native
 object version extends TopLevel[String]
-

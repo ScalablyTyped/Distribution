@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-highlighter"
-version := "0.3-dt-20200227Z-72cbc0"
+version := "0.3-dt-20200227Z-3f97db"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

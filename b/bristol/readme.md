@@ -10,9 +10,9 @@ Insanely configurable logging for Node.js
 | ------------------ | :-------------: |
 | Full name          | bristol |
 | Keywords           | log, datatype, commoninfomodel, json |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 138497 |
+| # releases         | 0 |
+| # dependents       | 8 |
+| # downloads        | 181474 |
 | # stars            | 0 |
 
 ## Links

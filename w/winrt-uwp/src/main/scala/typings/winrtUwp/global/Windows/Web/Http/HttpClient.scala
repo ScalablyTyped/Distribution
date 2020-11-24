@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Web.Http
 import typings.winrtUwp.Windows.Web.Http.Filters.IHttpFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Sends HTTP requests and receives HTTP responses from a resource identified by a URI. */
 @JSGlobal("Windows.Web.Http.HttpClient")
@@ -17,4 +17,3 @@ class HttpClient ()
     */
   def this(filter: IHttpFilter) = this()
 }
-

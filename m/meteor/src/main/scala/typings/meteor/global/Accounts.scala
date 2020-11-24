@@ -17,15 +17,15 @@ import typings.meteor.anon.`0`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Accounts")
 @js.native
 object Accounts extends js.Object {
-  var emailTemplates: EmailTemplates = js.native
-  var urls: URLS = js.native
+  
   def addEmail(userId: String, newEmail: String): Unit = js.native
   def addEmail(userId: String, newEmail: String, verified: Boolean): Unit = js.native
+  
   /**
     *
     * Call a login method on the server.
@@ -54,12 +54,14 @@ object Accounts extends js.Object {
     *
     * */
   def callLoginMethod(options: LoginMethodOptions): Unit = js.native
+  
   def changePassword(oldPassword: String, newPassword: String): Unit = js.native
   def changePassword(
     oldPassword: String,
     newPassword: String,
     callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
   ): Unit = js.native
+  
   /**
     *
     * Check whether the provided password matches the bcrypt'ed password in
@@ -70,40 +72,61 @@ object Accounts extends js.Object {
     */
   @JSName("_checkPassword")
   def checkPassword(user: User, password: Password): typings.meteor.anon.Error = js.native
+  
   def config(options: AmbiguousErrorMessages): Unit = js.native
+  
   def createUser(options: typings.meteor.anon.Email): String = js.native
   def createUser(
     options: typings.meteor.anon.Email,
     callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
   ): String = js.native
+  
+  var emailTemplates: EmailTemplates = js.native
+  
   def findUserByEmail(email: String): js.UndefOr[User | Null] = js.native
+  
   def findUserByUsername(username: String): js.UndefOr[User | Null] = js.native
+  
   def forgotPassword(options: `0`): Unit = js.native
   def forgotPassword(
     options: `0`,
     callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
   ): Unit = js.native
+  
   @JSName("_hashPassword")
   def hashPassword(password: String): Algorithm = js.native
+  
   def loggingIn(): Boolean = js.native
+  
   def loginServicesConfigured(): Boolean = js.native
+  
   def logout(): Unit = js.native
   def logout(
     callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
   ): Unit = js.native
+  
   def logoutOtherClients(): Unit = js.native
   def logoutOtherClients(
     callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
   ): Unit = js.native
+  
   def onCreateUser(func: js.Function2[/* options */ Profile, /* user */ User, Unit]): Unit = js.native
+  
   def onEmailVerificationLink(callback: js.Function): Unit = js.native
+  
   def onEnrollmentLink(callback: js.Function): Unit = js.native
+  
   def onLogin(func: js.Function): Stop = js.native
+  
   def onLoginFailure(func: js.Function): Stop = js.native
+  
   def onLogout(func: js.Function): Unit = js.native
   def onLogout(func: js.Function1[/* options */ Connection, Unit]): Unit = js.native
+  
   def onPageLoadLogin(func: js.Function): Unit = js.native
+  
   def onResetPasswordLink(callback: js.Function): Unit = js.native
+  
   /**
     *
     * The main entry point for auth packages to hook in to login.
@@ -120,35 +143,49 @@ object Accounts extends js.Object {
     * - a login method result object
     **/
   def registerLoginHandler(name: String, handler: js.Function1[/* options */ js.Any, js.UndefOr[js.Object]]): Unit = js.native
+  
   def removeEmail(userId: String, email: String): Unit = js.native
+  
   def resetPassword(token: String, newPassword: String): Unit = js.native
   def resetPassword(
     token: String,
     newPassword: String,
     callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
   ): Unit = js.native
+  
   def sendEnrollmentEmail(userId: String): Unit = js.native
   def sendEnrollmentEmail(userId: String, email: String): Unit = js.native
+  
   def sendResetPasswordEmail(userId: String): Unit = js.native
   def sendResetPasswordEmail(userId: String, email: String): Unit = js.native
+  
   def sendVerificationEmail(userId: String): Unit = js.native
   def sendVerificationEmail(userId: String, email: String): Unit = js.native
+  
   def setPassword(userId: String, newPassword: String): Unit = js.native
   def setPassword(userId: String, newPassword: String, options: Logout): Unit = js.native
+  
   def setUsername(userId: String, newUsername: String): Unit = js.native
+  
+  var urls: URLS = js.native
+  
   def user(): User | Null = js.native
+  
   def userId(): String | Null = js.native
+  
   def validateLoginAttempt(func: js.Function): Stop = js.native
+  
   def validateNewUser(func: js.Function): Boolean = js.native
+  
   def verifyEmail(token: String): Unit = js.native
   def verifyEmail(
     token: String,
     callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
   ): Unit = js.native
+  
   @js.native
   object ui extends js.Object {
+    
     def config(options: ForceApprovalPrompt): Unit = js.native
   }
-  
 }
-

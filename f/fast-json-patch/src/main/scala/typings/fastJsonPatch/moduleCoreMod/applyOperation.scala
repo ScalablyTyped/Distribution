@@ -2,11 +2,12 @@ package typings.fastJsonPatch.moduleCoreMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fast-json-patch/module/core", "applyOperation")
 @js.native
 object applyOperation extends js.Object {
+  
   def apply[T](document: T, operation: Operation): OperationResult[T] = js.native
   def apply[T](
     document: T,
@@ -157,4 +158,3 @@ object applyOperation extends js.Object {
     index: Double
   ): OperationResult[T] = js.native
 }
-

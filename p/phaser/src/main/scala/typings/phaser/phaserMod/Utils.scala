@@ -4,11 +4,12 @@ import typings.phaser.integer
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phaser", "Utils")
 @js.native
 object Utils extends js.Object {
+  
   /**
     * A NOOP (No Operation) callback function.
     * 
@@ -16,8 +17,10 @@ object Utils extends js.Object {
     * than it is to just invoke an empty function.
     */
   def NOOP(): Unit = js.native
+  
   @js.native
   object Array extends js.Object {
+    
     /**
       * Adds the given item, or array of items, to the array.
       * 
@@ -87,6 +90,7 @@ object Utils extends js.Object {
     ): js.Array[_] = js.native
     def Add(array: js.Array[_], item: js.Array[_], limit: integer, callback: js.Function): js.Array[_] = js.native
     def Add(array: js.Array[_], item: js.Array[_], limit: integer, callback: js.Function, context: js.Object): js.Array[_] = js.native
+    
     /**
       * Adds the given item, or array of items, to the array starting at the index specified.
       * 
@@ -287,6 +291,7 @@ object Utils extends js.Object {
       callback: js.Function,
       context: js.Object
     ): js.Array[_] = js.native
+    
     /**
       * Moves the given element to the top of the array.
       * The array is modified in-place.
@@ -294,6 +299,7 @@ object Utils extends js.Object {
       * @param item The element to move.
       */
     def BringToTop(array: js.Array[_], item: js.Any): js.Any = js.native
+    
     /**
       * Returns the total number of elements in the array which have a property matching the given value.
       * @param array The array to search.
@@ -312,6 +318,7 @@ object Utils extends js.Object {
     ): integer = js.native
     def CountAllMatching(array: js.Array[_], property: String, value: js.Any, startIndex: integer): integer = js.native
     def CountAllMatching(array: js.Array[_], property: String, value: js.Any, startIndex: integer, endIndex: integer): integer = js.native
+    
     /**
       * Passes each element in the array to the given callback.
       * @param array The array to search.
@@ -320,6 +327,7 @@ object Utils extends js.Object {
       * @param args Additional arguments that will be passed to the callback, after the current array item.
       */
     def Each(array: js.Array[_], callback: js.Function, context: js.Object, args: js.Any*): js.Array[_] = js.native
+    
     /**
       * Passes each element in the array, between the start and end indexes, to the given callback.
       * @param array The array to search.
@@ -337,6 +345,7 @@ object Utils extends js.Object {
       endIndex: integer,
       args: js.Any*
     ): js.Array[_] = js.native
+    
     /**
       * Searches a pre-sorted array for the closet value to the given number.
       * 
@@ -348,6 +357,7 @@ object Utils extends js.Object {
       */
     def FindClosestInSorted(value: Double, array: js.Array[_]): Double | js.Any = js.native
     def FindClosestInSorted(value: Double, array: js.Array[_], key: String): Double | js.Any = js.native
+    
     /**
       * Returns all elements in the array.
       * 
@@ -427,6 +437,7 @@ object Utils extends js.Object {
     ): js.Array[_] = js.native
     def GetAll(array: js.Array[_], property: String, value: js.Any, startIndex: integer): js.Array[_] = js.native
     def GetAll(array: js.Array[_], property: String, value: js.Any, startIndex: integer, endIndex: integer): js.Array[_] = js.native
+    
     /**
       * Returns the first element in the array.
       * 
@@ -505,6 +516,7 @@ object Utils extends js.Object {
     ): js.Object = js.native
     def GetFirst(array: js.Array[_], property: String, value: js.Any, startIndex: integer): js.Object = js.native
     def GetFirst(array: js.Array[_], property: String, value: js.Any, startIndex: integer, endIndex: integer): js.Object = js.native
+    
     /**
       * Returns a Random element from the array.
       * @param array The array to select the random entry from.
@@ -515,6 +527,7 @@ object Utils extends js.Object {
     def GetRandom(array: js.Array[_], startIndex: js.UndefOr[scala.Nothing], length: integer): js.Any = js.native
     def GetRandom(array: js.Array[_], startIndex: integer): js.Any = js.native
     def GetRandom(array: js.Array[_], startIndex: integer, length: integer): js.Any = js.native
+    
     /**
       * Moves the given array element down one place in the array.
       * The array is modified in-place.
@@ -522,6 +535,7 @@ object Utils extends js.Object {
       * @param item The element to move down the array.
       */
     def MoveDown(array: js.Array[_], item: js.Any): js.Array[_] = js.native
+    
     /**
       * Moves an element in an array to a new position within the same array.
       * The array is modified in-place.
@@ -530,6 +544,7 @@ object Utils extends js.Object {
       * @param index The new index that the element will be moved to.
       */
     def MoveTo(array: js.Array[_], item: js.Any, index: integer): js.Any = js.native
+    
     /**
       * Moves the given array element up one place in the array.
       * The array is modified in-place.
@@ -537,6 +552,7 @@ object Utils extends js.Object {
       * @param item The element to move up the array.
       */
     def MoveUp(array: js.Array[_], item: js.Any): js.Array[_] = js.native
+    
     /**
       * Create an array representing the range of numbers (usually integers), between, and inclusive of,
       * the given `start` and `end` arguments. For example:
@@ -560,6 +576,7 @@ object Utils extends js.Object {
     def NumberArray(start: Double, end: Double, prefix: js.UndefOr[scala.Nothing], suffix: String): js.Array[Double | String] = js.native
     def NumberArray(start: Double, end: Double, prefix: String): js.Array[Double | String] = js.native
     def NumberArray(start: Double, end: Double, prefix: String, suffix: String): js.Array[Double | String] = js.native
+    
     /**
       * Create an array of numbers (positive and/or negative) progressing from `start`
       * up to but not including `end` by advancing by `step`.
@@ -580,6 +597,7 @@ object Utils extends js.Object {
     def NumberArrayStep(start: Double, end: js.UndefOr[scala.Nothing], step: Double): js.Array[Double] = js.native
     def NumberArrayStep(start: Double, end: Double): js.Array[Double] = js.native
     def NumberArrayStep(start: Double, end: Double, step: Double): js.Array[Double] = js.native
+    
     /**
       * A [Floyd-Rivest](https://en.wikipedia.org/wiki/Floyd%E2%80%93Rivest_algorithm) quick selection algorithm.
       * 
@@ -621,6 +639,7 @@ object Utils extends js.Object {
     ): Unit = js.native
     def QuickSelect(arr: js.Array[_], k: integer, left: integer, right: integer): Unit = js.native
     def QuickSelect(arr: js.Array[_], k: integer, left: integer, right: integer, compare: js.Function): Unit = js.native
+    
     /**
       * Creates an array populated with a range of values, based on the given arguments and configuration object.
       * 
@@ -657,6 +676,7 @@ object Utils extends js.Object {
       */
     def Range(a: js.Array[_], b: js.Array[_]): js.Array[_] = js.native
     def Range(a: js.Array[_], b: js.Array[_], options: js.Object): js.Array[_] = js.native
+    
     /**
       * Removes the given item, or array of items, from the array.
       * 
@@ -676,6 +696,7 @@ object Utils extends js.Object {
     def Remove(array: js.Array[_], item: js.Array[_], callback: js.UndefOr[scala.Nothing], context: js.Object): js.Any | js.Array[_] = js.native
     def Remove(array: js.Array[_], item: js.Array[_], callback: js.Function): js.Any | js.Array[_] = js.native
     def Remove(array: js.Array[_], item: js.Array[_], callback: js.Function, context: js.Object): js.Any | js.Array[_] = js.native
+    
     /**
       * Removes the item from the given position in the array.
       * 
@@ -691,6 +712,7 @@ object Utils extends js.Object {
     def RemoveAt(array: js.Array[_], index: integer, callback: js.UndefOr[scala.Nothing], context: js.Object): js.Any = js.native
     def RemoveAt(array: js.Array[_], index: integer, callback: js.Function): js.Any = js.native
     def RemoveAt(array: js.Array[_], index: integer, callback: js.Function, context: js.Object): js.Any = js.native
+    
     /**
       * Removes the item within the given range in the array.
       * 
@@ -719,6 +741,7 @@ object Utils extends js.Object {
       callback: js.Function,
       context: js.Object
     ): js.Array[_] = js.native
+    
     /**
       * Removes a random object from the given array and returns it.
       * Will return null if there are no array items that fall within the specified range or if there is no item for the randomly chosen index.
@@ -730,6 +753,7 @@ object Utils extends js.Object {
     def RemoveRandomElement(array: js.Array[_], start: js.UndefOr[scala.Nothing], length: integer): js.Object = js.native
     def RemoveRandomElement(array: js.Array[_], start: integer): js.Object = js.native
     def RemoveRandomElement(array: js.Array[_], start: integer, length: integer): js.Object = js.native
+    
     /**
       * Replaces an element of the array with the new element.
       * The new element cannot already be a member of the array.
@@ -739,6 +763,7 @@ object Utils extends js.Object {
       * @param newChild The element to be inserted into the array at the position of `oldChild`.
       */
     def Replace(array: js.Array[_], oldChild: js.Any, newChild: js.Any): Boolean = js.native
+    
     /**
       * Moves the element at the start of the array to the end, shifting all items in the process.
       * The "rotation" happens to the left.
@@ -747,6 +772,7 @@ object Utils extends js.Object {
       */
     def RotateLeft(array: js.Array[_]): js.Any = js.native
     def RotateLeft(array: js.Array[_], total: integer): js.Any = js.native
+    
     /**
       * Moves the element at the end of the array to the start, shifting all items in the process.
       * The "rotation" happens to the right.
@@ -755,6 +781,7 @@ object Utils extends js.Object {
       */
     def RotateRight(array: js.Array[_]): js.Any = js.native
     def RotateRight(array: js.Array[_], total: integer): js.Any = js.native
+    
     /**
       * Tests if the start and end indexes are a safe range for the given array.
       * @param array The array to check.
@@ -764,6 +791,7 @@ object Utils extends js.Object {
       */
     def SafeRange(array: js.Array[_], startIndex: integer, endIndex: integer): Boolean = js.native
     def SafeRange(array: js.Array[_], startIndex: integer, endIndex: integer, throwError: Boolean): Boolean = js.native
+    
     /**
       * Moves the given element to the bottom of the array.
       * The array is modified in-place.
@@ -771,6 +799,7 @@ object Utils extends js.Object {
       * @param item The element to move.
       */
     def SendToBack(array: js.Array[_], item: js.Any): js.Any = js.native
+    
     /**
       * Scans the array for elements with the given property. If found, the property is set to the `value`.
       * 
@@ -794,6 +823,7 @@ object Utils extends js.Object {
     ): js.Array[_] = js.native
     def SetAll(array: js.Array[_], property: String, value: js.Any, startIndex: integer): js.Array[_] = js.native
     def SetAll(array: js.Array[_], property: String, value: js.Any, startIndex: integer, endIndex: integer): js.Array[_] = js.native
+    
     /**
       * Shuffles the contents of the given array using the Fisher-Yates implementation.
       * 
@@ -801,6 +831,7 @@ object Utils extends js.Object {
       * @param array The array to shuffle. This array is modified in place.
       */
     def Shuffle[T](array: js.Array[T]): js.Array[T] = js.native
+    
     /**
       * Removes a single item from an array and returns it without creating gc, like the native splice does.
       * Based on code by Mike Reinstein.
@@ -808,6 +839,7 @@ object Utils extends js.Object {
       * @param index The index of the item which should be spliced.
       */
     def SpliceOne(array: js.Array[_], index: integer): js.Any = js.native
+    
     /**
       * A stable array sort, because `Array#sort()` is not guaranteed stable.
       * This is an implementation of merge sort, without recursion.
@@ -815,6 +847,7 @@ object Utils extends js.Object {
       * @param comp The comparison handler.
       */
     def StableSort(arr: js.Array[_], comp: js.Function): js.Array[_] = js.native
+    
     /**
       * Swaps the position of two elements in the given array.
       * The elements must exist in the same array.
@@ -824,8 +857,10 @@ object Utils extends js.Object {
       * @param item2 The second element to swap.
       */
     def Swap(array: js.Array[_], item1: js.Any, item2: js.Any): js.Array[_] = js.native
+    
     @js.native
     object Matrix extends js.Object {
+      
       /**
         * Checks if an array can be used as a matrix.
         * 
@@ -845,36 +880,42 @@ object Utils extends js.Object {
         */
       def CheckMatrix[T](): Boolean = js.native
       def CheckMatrix[T](matrix: js.Array[js.Array[T]]): Boolean = js.native
+      
       /**
         * Generates a string (which you can pass to console.log) from the given Array Matrix.
         * @param matrix A 2-dimensional array.
         */
       def MatrixToString[T](): String = js.native
       def MatrixToString[T](matrix: js.Array[js.Array[T]]): String = js.native
+      
       /**
         * Reverses the columns in the given Array Matrix.
         * @param matrix The array matrix to reverse the columns for.
         */
       def ReverseColumns[T](): js.Array[js.Array[T]] = js.native
       def ReverseColumns[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
+      
       /**
         * Reverses the rows in the given Array Matrix.
         * @param matrix The array matrix to reverse the rows for.
         */
       def ReverseRows[T](): js.Array[js.Array[T]] = js.native
       def ReverseRows[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
+      
       /**
         * Rotates the array matrix 180 degrees.
         * @param matrix The array to rotate.
         */
       def Rotate180[T](): js.Array[js.Array[T]] = js.native
       def Rotate180[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
+      
       /**
         * Rotates the array matrix to the left (or 90 degrees)
         * @param matrix The array to rotate.
         */
       def RotateLeft[T](): js.Array[js.Array[T]] = js.native
       def RotateLeft[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
+      
       /**
         * Rotates the array matrix based on the given rotation value.
         * 
@@ -891,12 +932,14 @@ object Utils extends js.Object {
       def RotateMatrix[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
       def RotateMatrix[T](matrix: js.Array[js.Array[T]], direction: String): js.Array[js.Array[T]] = js.native
       def RotateMatrix[T](matrix: js.Array[js.Array[T]], direction: Double): js.Array[js.Array[T]] = js.native
+      
       /**
         * Rotates the array matrix to the left (or -90 degrees)
         * @param matrix The array to rotate.
         */
       def RotateRight[T](): js.Array[js.Array[T]] = js.native
       def RotateRight[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
+      
       /**
         * Transposes the elements of the given matrix (array of arrays).
         * 
@@ -909,6 +952,7 @@ object Utils extends js.Object {
     
     @js.native
     object StableSortFunctions extends js.Object {
+      
       /**
         * Sort the input array and simply copy it back if the result isn't in the original array, which happens on an odd number of passes.
         * @param arr The input array.
@@ -916,11 +960,11 @@ object Utils extends js.Object {
         */
       def inplace(arr: js.Array[_], comp: js.Function): js.Array[_] = js.native
     }
-    
   }
   
   @js.native
   object Base64 extends js.Object {
+    
     /**
       * Converts an ArrayBuffer into a base64 string.
       * 
@@ -932,6 +976,7 @@ object Utils extends js.Object {
       */
     def ArrayBufferToBase64(arrayBuffer: ArrayBuffer): String = js.native
     def ArrayBufferToBase64(arrayBuffer: ArrayBuffer, mediaType: String): String = js.native
+    
     /**
       * Converts a base64 string, either with or without a data uri, into an Array Buffer.
       * @param base64 The base64 string to be decoded. Can optionally contain a data URI header, which will be stripped out prior to decoding.
@@ -941,16 +986,19 @@ object Utils extends js.Object {
   
   @js.native
   object Objects extends js.Object {
+    
     /**
       * Shallow Object Clone. Will not clone nested objects.
       * @param obj the object from which to clone
       */
     def Clone(obj: js.Object): js.Object = js.native
+    
     /**
       * This is a slightly modified version of http://api.jquery.com/jQuery.extend/
       * @param args The objects that will be mixed.
       */
     def Extend(args: js.Any*): js.Object = js.native
+    
     /**
       * Retrieves a value from an object. Allows for more advanced selection options, including:
       * 
@@ -985,6 +1033,7 @@ object Utils extends js.Object {
       * @param defaultValue The value to return if the `key` isn't found in the `source` object.
       */
     def GetAdvancedValue(source: js.Object, key: String, defaultValue: js.Any): js.Any = js.native
+    
     /**
       * Finds the key within the top level of the {@link source} object, or returns {@link defaultValue}
       * @param source The object to search
@@ -993,6 +1042,7 @@ object Utils extends js.Object {
       */
     def GetFastValue(source: js.Object, key: String): js.Any = js.native
     def GetFastValue(source: js.Object, key: String, defaultValue: js.Any): js.Any = js.native
+    
     /**
       * Retrieves and clamps a numerical value from an object.
       * @param source The object to retrieve the value from.
@@ -1002,6 +1052,7 @@ object Utils extends js.Object {
       * @param defaultValue The value to return if the property doesn't exist. It's also constrained to the given bounds.
       */
     def GetMinMaxValue(source: js.Object, key: String, min: Double, max: Double, defaultValue: Double): Double = js.native
+    
     /**
       * Retrieves a value from an object.
       * @param source The object to retrieve the value from.
@@ -1009,30 +1060,35 @@ object Utils extends js.Object {
       * @param defaultValue The value to return if the `key` isn't found in the `source` object.
       */
     def GetValue(source: js.Object, key: String, defaultValue: js.Any): js.Any = js.native
+    
     /**
       * Verifies that an object contains all requested keys
       * @param source an object on which to check for key existence
       * @param keys an array of keys to ensure the source object contains
       */
     def HasAll(source: js.Object, keys: js.Array[String]): Boolean = js.native
+    
     /**
       * Verifies that an object contains at least one of the requested keys
       * @param source an object on which to check for key existence
       * @param keys an array of keys to search the object for
       */
     def HasAny(source: js.Object, keys: js.Array[String]): Boolean = js.native
+    
     /**
       * Determine whether the source object has a property with the specified key.
       * @param source The source object to be checked.
       * @param key The property to check for within the object
       */
     def HasValue(source: js.Object, key: String): Boolean = js.native
+    
     /**
       * This is a slightly modified version of jQuery.isPlainObject.
       * A plain object is an object whose internal class property is [object Object].
       * @param obj The object to inspect.
       */
     def IsPlainObject(obj: js.Object): Boolean = js.native
+    
     /**
       * Creates a new Object using all values from obj1 and obj2.
       * If a value exists in both obj1 and obj2, the value in obj1 is used.
@@ -1043,6 +1099,7 @@ object Utils extends js.Object {
       * @param obj2 The second object.
       */
     def Merge(obj1: js.Object, obj2: js.Object): js.Object = js.native
+    
     /**
       * Creates a new Object using all values from obj1.
       * 
@@ -1051,6 +1108,7 @@ object Utils extends js.Object {
       * @param obj2 The second object to merge. Keys from this object which also exist in `obj1` will be copied to `obj1`.
       */
     def MergeRight(obj1: js.Object, obj2: js.Object): js.Object = js.native
+    
     /**
       * Returns a new object that only contains the `keys` that were found on the object provided.
       * If no `keys` are found, an empty object is returned.
@@ -1058,6 +1116,7 @@ object Utils extends js.Object {
       * @param keys An array of properties to retrieve from the provided object.
       */
     def Pick(`object`: js.Object, keys: js.Array[_]): js.Object = js.native
+    
     /**
       * Sets a value in an object, allowing for dot notation to control the depth of the property.
       * 
@@ -1086,6 +1145,7 @@ object Utils extends js.Object {
   
   @js.native
   object String extends js.Object {
+    
     /**
       * Takes a string and replaces instances of markers with values in the given array.
       * The markers take the form of `%1`, `%2`, etc. I.e.:
@@ -1095,6 +1155,7 @@ object Utils extends js.Object {
       * @param values An array containing values that will replace the markers. If no value exists an empty string is inserted instead.
       */
     def Format(string: java.lang.String, values: js.Array[_]): java.lang.String = js.native
+    
     /**
       * Takes the given string and pads it out, to the length required, using the character
       * specified. For example if you need a string to be 6 characters long, you can call:
@@ -1148,12 +1209,14 @@ object Utils extends js.Object {
     def Pad(str: Double, len: integer, pad: js.UndefOr[scala.Nothing], dir: integer): java.lang.String = js.native
     def Pad(str: Double, len: integer, pad: java.lang.String): java.lang.String = js.native
     def Pad(str: Double, len: integer, pad: java.lang.String, dir: integer): java.lang.String = js.native
+    
     /**
       * Takes the given string and reverses it, returning the reversed string.
       * For example if given the string `Atari 520ST` it would return `TS025 iratA`.
       * @param string The string to be reversed.
       */
     def Reverse(string: java.lang.String): java.lang.String = js.native
+    
     /**
       * Creates and returns an RFC4122 version 4 compliant UUID.
       * 
@@ -1161,12 +1224,11 @@ object Utils extends js.Object {
       * hexadecimal digit from 0 to f, and `y` is replaced with a random hexadecimal digit from 8 to b.
       */
     def UUID(): java.lang.String = js.native
+    
     /**
       * Capitalizes the first letter of a string if there is one.
       * @param str The string to capitalize.
       */
     def UppercaseFirst(str: java.lang.String): java.lang.String = js.native
   }
-  
 }
-

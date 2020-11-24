@@ -10,9 +10,223 @@ import typings.blessed.mod.Widgets.Types.TAlign
 import typings.blessed.mod.Widgets.Types.TMouseAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blessedStrings {
+  
+  @scala.inline
+  def action: action = "action".asInstanceOf[action]
+  
+  @scala.inline
+  def `add item`: `add item` = ("add item").asInstanceOf[`add item`]
+  
+  @scala.inline
+  def adopt: adopt = "adopt".asInstanceOf[adopt]
+  
+  @scala.inline
+  def ansi: ansi = "ansi".asInstanceOf[ansi]
+  
+  @scala.inline
+  def attach: attach = "attach".asInstanceOf[attach]
+  
+  @scala.inline
+  def bg: bg = "bg".asInstanceOf[bg]
+  
+  @scala.inline
+  def block: block = "block".asInstanceOf[block]
+  
+  @scala.inline
+  def blur: blur = "blur".asInstanceOf[blur]
+  
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @scala.inline
+  def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @scala.inline
+  def cd: cd = "cd".asInstanceOf[cd]
+  
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  
+  @scala.inline
+  def click: click = "click".asInstanceOf[click]
+  
+  @scala.inline
+  def complete: complete = "complete".asInstanceOf[complete]
+  
+  @scala.inline
+  def cpu: cpu = "cpu".asInstanceOf[cpu]
+  
+  @scala.inline
+  def `create item`: `create item` = ("create item").asInstanceOf[`create item`]
+  
+  @scala.inline
+  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  
+  @scala.inline
+  def detach: detach = "detach".asInstanceOf[detach]
+  
+  @scala.inline
+  def `element click`: `element click` = ("element click").asInstanceOf[`element click`]
+  
+  @scala.inline
+  def `element mouseout`: `element mouseout` = ("element mouseout").asInstanceOf[`element mouseout`]
+  
+  @scala.inline
+  def `element mouseover`: `element mouseover` = ("element mouseover").asInstanceOf[`element mouseover`]
+  
+  @scala.inline
+  def `element mouseup`: `element mouseup` = ("element mouseup").asInstanceOf[`element mouseup`]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def file: file = "file".asInstanceOf[file]
+  
+  @scala.inline
+  def focus: focus = "focus".asInstanceOf[focus]
+  
+  @scala.inline
+  def grid: grid = "grid".asInstanceOf[grid]
+  
+  @scala.inline
+  def hide: hide = "hide".asInstanceOf[hide]
+  
+  @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @scala.inline
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @scala.inline
+  def `inline-block`: `inline-block` = "inline-block".asInstanceOf[`inline-block`]
+  
+  @scala.inline
+  def `insert item`: `insert item` = ("insert item").asInstanceOf[`insert item`]
+  
+  @scala.inline
+  def keypress: keypress = "keypress".asInstanceOf[keypress]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def line: line = "line".asInstanceOf[line]
+  
+  @scala.inline
+  def mem: mem = "mem".asInstanceOf[mem]
+  
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  
+  @scala.inline
+  def mouse: mouse = "mouse".asInstanceOf[mouse]
+  
+  @scala.inline
+  def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
+  
+  @scala.inline
+  def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
+  
+  @scala.inline
+  def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
+  
+  @scala.inline
+  def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
+  
+  @scala.inline
+  def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
+  
+  @scala.inline
+  def mousewheel: mousewheel = "mousewheel".asInstanceOf[mousewheel]
+  
+  @scala.inline
+  def move: move = "move".asInstanceOf[move]
+  
+  @scala.inline
+  def overlay: overlay = "overlay".asInstanceOf[overlay]
+  
+  @scala.inline
+  def `parsed content`: `parsed content` = ("parsed content").asInstanceOf[`parsed content`]
+  
+  @scala.inline
+  def prerender: prerender = "prerender".asInstanceOf[prerender]
+  
+  @scala.inline
+  def press: press = "press".asInstanceOf[press]
+  
+  @scala.inline
+  def refresh: refresh = "refresh".asInstanceOf[refresh]
+  
+  @scala.inline
+  def remove: remove = "remove".asInstanceOf[remove]
+  
+  @scala.inline
+  def `remove item`: `remove item` = ("remove item").asInstanceOf[`remove item`]
+  
+  @scala.inline
+  def render: render = "render".asInstanceOf[render]
+  
+  @scala.inline
+  def reparent: reparent = "reparent".asInstanceOf[reparent]
+  
+  @scala.inline
+  def reset: reset = "reset".asInstanceOf[reset]
+  
+  @scala.inline
+  def resize: resize = "resize".asInstanceOf[resize]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  
+  @scala.inline
+  def `select item`: `select item` = ("select item").asInstanceOf[`select item`]
+  
+  @scala.inline
+  def `select tab`: `select tab` = ("select tab").asInstanceOf[`select tab`]
+  
+  @scala.inline
+  def `set content`: `set content` = ("set content").asInstanceOf[`set content`]
+  
+  @scala.inline
+  def `set items`: `set items` = ("set items").asInstanceOf[`set items`]
+  
+  @scala.inline
+  def show: show = "show".asInstanceOf[show]
+  
+  @scala.inline
+  def submit: submit = "submit".asInstanceOf[submit]
+  
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  
+  @scala.inline
+  def underline: underline = "underline".asInstanceOf[underline]
+  
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @scala.inline
+  def w3m: w3m = "w3m".asInstanceOf[w3m]
+  
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
+  
+  @scala.inline
+  def wheeldown: wheeldown = "wheeldown".asInstanceOf[wheeldown]
+  
+  @scala.inline
+  def wheelup: wheelup = "wheelup".asInstanceOf[wheelup]
+  
   @js.native
   sealed trait action
     extends ListElementEventType
@@ -235,148 +449,4 @@ object blessedStrings {
   
   @js.native
   sealed trait wheelup extends NodeMouseEventType
-  
-  @scala.inline
-  def action: action = "action".asInstanceOf[action]
-  @scala.inline
-  def `add item`: `add item` = ("add item").asInstanceOf[`add item`]
-  @scala.inline
-  def adopt: adopt = "adopt".asInstanceOf[adopt]
-  @scala.inline
-  def ansi: ansi = "ansi".asInstanceOf[ansi]
-  @scala.inline
-  def attach: attach = "attach".asInstanceOf[attach]
-  @scala.inline
-  def bg: bg = "bg".asInstanceOf[bg]
-  @scala.inline
-  def block: block = "block".asInstanceOf[block]
-  @scala.inline
-  def blur: blur = "blur".asInstanceOf[blur]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
-  @scala.inline
-  def cd: cd = "cd".asInstanceOf[cd]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
-  @scala.inline
-  def cpu: cpu = "cpu".asInstanceOf[cpu]
-  @scala.inline
-  def `create item`: `create item` = ("create item").asInstanceOf[`create item`]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def detach: detach = "detach".asInstanceOf[detach]
-  @scala.inline
-  def `element click`: `element click` = ("element click").asInstanceOf[`element click`]
-  @scala.inline
-  def `element mouseout`: `element mouseout` = ("element mouseout").asInstanceOf[`element mouseout`]
-  @scala.inline
-  def `element mouseover`: `element mouseover` = ("element mouseover").asInstanceOf[`element mouseover`]
-  @scala.inline
-  def `element mouseup`: `element mouseup` = ("element mouseup").asInstanceOf[`element mouseup`]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
-  @scala.inline
-  def grid: grid = "grid".asInstanceOf[grid]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def `inline-block`: `inline-block` = "inline-block".asInstanceOf[`inline-block`]
-  @scala.inline
-  def `insert item`: `insert item` = ("insert item").asInstanceOf[`insert item`]
-  @scala.inline
-  def keypress: keypress = "keypress".asInstanceOf[keypress]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
-  @scala.inline
-  def mem: mem = "mem".asInstanceOf[mem]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def mouse: mouse = "mouse".asInstanceOf[mouse]
-  @scala.inline
-  def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
-  @scala.inline
-  def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
-  @scala.inline
-  def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
-  @scala.inline
-  def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
-  @scala.inline
-  def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
-  @scala.inline
-  def mousewheel: mousewheel = "mousewheel".asInstanceOf[mousewheel]
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
-  @scala.inline
-  def overlay: overlay = "overlay".asInstanceOf[overlay]
-  @scala.inline
-  def `parsed content`: `parsed content` = ("parsed content").asInstanceOf[`parsed content`]
-  @scala.inline
-  def prerender: prerender = "prerender".asInstanceOf[prerender]
-  @scala.inline
-  def press: press = "press".asInstanceOf[press]
-  @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def `remove item`: `remove item` = ("remove item").asInstanceOf[`remove item`]
-  @scala.inline
-  def render: render = "render".asInstanceOf[render]
-  @scala.inline
-  def reparent: reparent = "reparent".asInstanceOf[reparent]
-  @scala.inline
-  def reset: reset = "reset".asInstanceOf[reset]
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def `select item`: `select item` = ("select item").asInstanceOf[`select item`]
-  @scala.inline
-  def `select tab`: `select tab` = ("select tab").asInstanceOf[`select tab`]
-  @scala.inline
-  def `set content`: `set content` = ("set content").asInstanceOf[`set content`]
-  @scala.inline
-  def `set items`: `set items` = ("set items").asInstanceOf[`set items`]
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
-  @scala.inline
-  def submit: submit = "submit".asInstanceOf[submit]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def underline: underline = "underline".asInstanceOf[underline]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def w3m: w3m = "w3m".asInstanceOf[w3m]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
-  @scala.inline
-  def wheeldown: wheeldown = "wheeldown".asInstanceOf[wheeldown]
-  @scala.inline
-  def wheelup: wheelup = "wheelup".asInstanceOf[wheelup]
 }
-

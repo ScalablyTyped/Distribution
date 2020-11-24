@@ -5,7 +5,7 @@ import typings.mangopay2NodejsSdk.mod.bankAccount.CreationDetails
 import typings.mangopay2NodejsSdk.mod.bankAccount.DataIntersection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.BankAccount")
 @js.native
@@ -14,4 +14,3 @@ class BankAccount protected ()
      with DataIntersection {
   def this(data: CreationDetails) = this()
 }
-

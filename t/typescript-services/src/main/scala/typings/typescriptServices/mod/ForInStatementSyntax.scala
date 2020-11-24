@@ -5,7 +5,7 @@ import typings.typescriptServices.TypeScript.IStatementSyntax
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "ForInStatementSyntax")
 @js.native
@@ -23,11 +23,11 @@ class ForInStatementSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("typescript-services", "ForInStatementSyntax")
 @js.native
 object ForInStatementSyntax extends js.Object {
+  
   def create(
     forKeyword: ISyntaxToken,
     openParenToken: ISyntaxToken,
@@ -36,6 +36,6 @@ object ForInStatementSyntax extends js.Object {
     closeParenToken: ISyntaxToken,
     statement: IStatementSyntax
   ): typings.typescriptServices.TypeScript.ForInStatementSyntax = js.native
+  
   def create1(expression: IExpressionSyntax, statement: IStatementSyntax): typings.typescriptServices.TypeScript.ForInStatementSyntax = js.native
 }
-

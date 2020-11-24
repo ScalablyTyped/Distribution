@@ -5,11 +5,12 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio", "validateExpressRequest")
 @js.native
 object validateExpressRequest extends js.Object {
+  
   def apply(request: Request_[ParamsDictionary, _, _, Query], authToken: String): Boolean = js.native
   def apply(
     request: Request_[ParamsDictionary, _, _, Query],
@@ -17,4 +18,3 @@ object validateExpressRequest extends js.Object {
     options: WebhookExpressOptions
   ): Boolean = js.native
 }
-

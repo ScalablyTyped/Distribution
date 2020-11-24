@@ -8,13 +8,15 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vso-node-api/TaskAgentApi", JSImport.Namespace)
 @js.native
 object taskAgentApiMod extends js.Object {
+  
   @js.native
   trait ITaskAgentApi extends ITaskAgentApiBase {
+    
     def uploadTaskDefinition(customHeaders: IHeaders, contentStream: ReadableStream, taskId: String, overwrite: Boolean): js.Promise[Unit] = js.native
   }
   
@@ -25,11 +27,17 @@ object taskAgentApiMod extends js.Object {
   class TaskAgentApi protected () extends TaskAgentApiBase {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
+    
     var _fallbackClient: js.Any = js.native
-    var _handlers: js.Any = js.native
-    var _options: js.Any = js.native
+    
     /* private */ def _getAccountUrl(collectionUrl: js.Any): js.Any = js.native
+    
     /* private */ def _getFallbackClient(baseUrl: js.Any): js.Any = js.native
+    
+    var _handlers: js.Any = js.native
+    
+    var _options: js.Any = js.native
+    
     /**
       * @param {NodeJS.ReadableStream} contentStream
       * @param {string} taskId
@@ -38,6 +46,4 @@ object taskAgentApiMod extends js.Object {
       */
     def uploadTaskDefinition(customHeaders: IHeaders, contentStream: ReadableStream, taskId: String, overwrite: Boolean): js.Promise[Unit] = js.native
   }
-  
 }
-

@@ -58,80 +58,108 @@ import typings.vscodeLanguageclient.vscodeLanguageclientStrings.workspaceSlashsy
 import typings.vscodeLanguageserverProtocol.protocolMod.InitializeResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient/lib/client", "BaseLanguageClient")
 @js.native
 abstract class BaseLanguageClient protected () extends js.Object {
   def this(id: String, name: String, clientOptions: LanguageClientOptions) = this()
+  
   var _c2p: js.Any = js.native
+  
   var _capabilities: js.Any = js.native
+  
   var _clientGetRootPath: js.Any = js.native
+  
   var _clientOptions: js.Any = js.native
+  
   var _connectionPromise: js.Any = js.native
+  
   var _diagnostics: js.Any = js.native
+  
   var _disposeOutputChannel: js.Any = js.native
+  
   val _dynamicFeatures: js.Any = js.native
+  
   val _features: js.Any = js.native
+  
   var _fileEventDelayer: js.Any = js.native
+  
   var _fileEvents: js.Any = js.native
+  
   var _id: js.Any = js.native
+  
   var _initializeResult: js.Any = js.native
+  
   var _listeners: js.Any = js.native
+  
   val _method2Message: js.Any = js.native
+  
   var _name: js.Any = js.native
+  
   var _onReady: js.Any = js.native
+  
   var _onReadyCallbacks: js.Any = js.native
+  
   var _onStop: js.Any = js.native
+  
   var _outputChannel: js.Any = js.native
+  
   var _p2c: js.Any = js.native
+  
   var _providers: js.Any = js.native
+  
   var _resolvedConnection: js.Any = js.native
+  
   var _state: js.Any = js.native
+  
   var _stateChangeEmitter: js.Any = js.native
+  
   var _syncedDocuments: js.Any = js.native
+  
   var _telemetryEmitter: js.Any = js.native
+  
   var _trace: js.Any = js.native
+  
   var _traceFormat: js.Any = js.native
+  
   var _traceOutputChannel: js.Any = js.native
+  
   var _tracer: js.Any = js.native
+  
   var cleanUp: js.Any = js.native
+  
   var cleanUpChannel: js.Any = js.native
-  var computeClientCapabilities: js.Any = js.native
-  var createConnection: js.Any = js.native
-  var data2String: js.Any = js.native
-  var doInitialize: js.Any = js.native
-  var fillInitializeParams: js.Any = js.native
-  var forceDocumentSync: js.Any = js.native
-  var getPublicState: js.Any = js.native
-  var handleApplyWorkspaceEdit: js.Any = js.native
-  var handleConnectionError: js.Any = js.native
-  var handleDiagnostics: js.Any = js.native
-  var handleRegistrationRequest: js.Any = js.native
-  var handleUnregistrationRequest: js.Any = js.native
-  var hookConfigurationChanged: js.Any = js.native
-  var hookFileEvents: js.Any = js.native
-  var initialize: js.Any = js.native
-  var initializeFeatures: js.Any = js.native
-  var isConnectionActive: js.Any = js.native
-  var logObjectTrace: js.Any = js.native
-  var logTrace: js.Any = js.native
-  var notifyFileEvent: js.Any = js.native
-  var refreshTrace: js.Any = js.native
-  var resolveConnection: js.Any = js.native
-  var setDiagnostics: js.Any = js.native
-  var showNotificationMessage: js.Any = js.native
+  
   def clientOptions: LanguageClientOptions = js.native
+  
   def code2ProtocolConverter: Converter = js.native
+  
+  var computeClientCapabilities: js.Any = js.native
+  
+  var createConnection: js.Any = js.native
+  
   def createDefaultErrorHandler(): ErrorHandler = js.native
+  
   /* protected */ def createMessageTransports(encoding: String): js.Promise[MessageTransports] = js.native
+  
+  var data2String: js.Any = js.native
+  
   def diagnostics: js.UndefOr[DiagnosticCollection] = js.native
+  
+  var doInitialize: js.Any = js.native
+  
   def error(message: String): Unit = js.native
   def error(message: String, data: js.UndefOr[scala.Nothing], showNotification: Boolean): Unit = js.native
   def error(message: String, data: js.Any): Unit = js.native
   def error(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
+  
+  var fillInitializeParams: js.Any = js.native
+  
+  var forceDocumentSync: js.Any = js.native
+  
   @JSName("getFeature")
-  def getFeature_textDocumentcodeAction(request: textDocumentSlashcodeAction): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[CodeActionProvider] = js.native
+  def getFeature_textDocumentcodeAction(request: textDocumentSlashcodeAction): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[CodeActionProvider[typings.vscode.mod.CodeAction]] = js.native
   @JSName("getFeature")
   def getFeature_textDocumentcompletion(request: textDocumentSlashcompletion): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[CompletionItemProvider[typings.vscode.mod.CompletionItem]] = js.native
   @JSName("getFeature")
@@ -187,16 +215,52 @@ abstract class BaseLanguageClient protected () extends js.Object {
   ]) = js.native
   @JSName("getFeature")
   def getFeature_workspacesymbol(request: workspaceSlashsymbol): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with WorkspaceProviderFeature[WorkspaceSymbolProvider[typings.vscode.mod.SymbolInformation]] = js.native
+  
+  var getPublicState: js.Any = js.native
+  
+  var handleApplyWorkspaceEdit: js.Any = js.native
+  
   /* protected */ def handleConnectionClosed(): Unit = js.native
+  
+  var handleConnectionError: js.Any = js.native
+  
+  var handleDiagnostics: js.Any = js.native
+  
+  var handleRegistrationRequest: js.Any = js.native
+  
+  var handleUnregistrationRequest: js.Any = js.native
+  
+  var hookConfigurationChanged: js.Any = js.native
+  
+  var hookFileEvents: js.Any = js.native
+  
   def info(message: String): Unit = js.native
   def info(message: String, data: js.UndefOr[scala.Nothing], showNotification: Boolean): Unit = js.native
   def info(message: String, data: js.Any): Unit = js.native
   def info(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
+  
+  var initialize: js.Any = js.native
+  
+  var initializeFeatures: js.Any = js.native
+  
   def initializeResult: js.UndefOr[InitializeResult[_]] = js.native
+  
+  var isConnectionActive: js.Any = js.native
+  
   def logFailedRequest(`type`: typings.vscodeJsonrpc.messagesMod.MessageType, error: js.Any): Unit = js.native
+  
+  var logObjectTrace: js.Any = js.native
+  
+  var logTrace: js.Any = js.native
+  
   def needsStart(): Boolean = js.native
+  
   def needsStop(): Boolean = js.native
+  
+  var notifyFileEvent: js.Any = js.native
+  
   def onDidChangeState: typings.vscodeJsonrpc.eventsMod.Event[StateChangeEvent] = js.native
+  
   def onNotification(method: String, handler: GenericNotificationHandler): Unit = js.native
   def onNotification[RO](
     `type`: typings.vscodeLanguageserverProtocol.mod.NotificationType0[RO],
@@ -206,6 +270,7 @@ abstract class BaseLanguageClient protected () extends js.Object {
     `type`: typings.vscodeLanguageserverProtocol.mod.NotificationType[P, RO],
     handler: NotificationHandler[P]
   ): Unit = js.native
+  
   def onProgress[P](
     `type`: typings.vscodeLanguageserverProtocol.mod.ProgressType[P],
     token: String,
@@ -216,7 +281,9 @@ abstract class BaseLanguageClient protected () extends js.Object {
     token: Double,
     handler: NotificationHandler[P]
   ): typings.vscode.mod.Disposable = js.native
+  
   def onReady(): js.Promise[Unit] = js.native
+  
   def onRequest[R, E](method: String, handler: GenericRequestHandler[R, E]): Unit = js.native
   def onRequest[R, E, RO](
     `type`: typings.vscodeLanguageserverProtocol.mod.RequestType0[R, E, RO],
@@ -226,20 +293,33 @@ abstract class BaseLanguageClient protected () extends js.Object {
     `type`: typings.vscodeLanguageserverProtocol.mod.RequestType[P, R, E, RO],
     handler: RequestHandler[P, R, E]
   ): Unit = js.native
+  
   def onTelemetry: typings.vscodeJsonrpc.eventsMod.Event[_] = js.native
+  
   def outputChannel: OutputChannel = js.native
+  
   def protocol2CodeConverter: typings.vscodeLanguageclient.protocolConverterMod.Converter = js.native
+  
+  var refreshTrace: js.Any = js.native
+  
   /* protected */ def registerBuiltinFeatures(): Unit = js.native
+  
   def registerFeature(feature: DynamicFeature[_]): Unit = js.native
   def registerFeature(feature: StaticFeature): Unit = js.native
+  
   def registerFeatures(features: js.Array[StaticFeature | DynamicFeature[_]]): Unit = js.native
+  
+  var resolveConnection: js.Any = js.native
+  
   def sendNotification(method: String): Unit = js.native
   def sendNotification(method: String, params: js.Any): Unit = js.native
   def sendNotification[RO](`type`: typings.vscodeLanguageserverProtocol.mod.NotificationType0[RO]): Unit = js.native
   def sendNotification[P, RO](`type`: typings.vscodeLanguageserverProtocol.mod.NotificationType[P, RO]): Unit = js.native
   def sendNotification[P, RO](`type`: typings.vscodeLanguageserverProtocol.mod.NotificationType[P, RO], params: P): Unit = js.native
+  
   def sendProgress[P](`type`: typings.vscodeLanguageserverProtocol.mod.ProgressType[P], token: String, value: P): Unit = js.native
   def sendProgress[P](`type`: typings.vscodeLanguageserverProtocol.mod.ProgressType[P], token: Double, value: P): Unit = js.native
+  
   def sendRequest[R](method: String): js.Promise[R] = js.native
   def sendRequest[R](method: String, param: js.Any): js.Promise[R] = js.native
   def sendRequest[R](method: String, param: js.Any, token: typings.vscode.mod.CancellationToken): js.Promise[R] = js.native
@@ -255,15 +335,24 @@ abstract class BaseLanguageClient protected () extends js.Object {
     params: P,
     token: typings.vscode.mod.CancellationToken
   ): js.Promise[R] = js.native
+  
+  var setDiagnostics: js.Any = js.native
+  
+  var showNotificationMessage: js.Any = js.native
+  
   def start(): typings.vscode.mod.Disposable = js.native
+  
   /* private */ def state: js.Any = js.native
   /* private */ def state_=(value: js.Any): Unit = js.native
+  
   def stop(): js.Promise[Unit] = js.native
+  
   def traceOutputChannel: OutputChannel = js.native
+  
   def trace_=(value: typings.vscodeJsonrpc.mod.Trace): Unit = js.native
+  
   def warn(message: String): Unit = js.native
   def warn(message: String, data: js.UndefOr[scala.Nothing], showNotification: Boolean): Unit = js.native
   def warn(message: String, data: js.Any): Unit = js.native
   def warn(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
 }
-

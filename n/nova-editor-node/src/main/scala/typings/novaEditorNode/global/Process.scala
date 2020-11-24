@@ -3,7 +3,7 @@ package typings.novaEditorNode.global
 import typings.novaEditorNode.anon.Cwd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/process/
 // This could be improved to split into automatic pipe and jsonrpc types with
@@ -16,4 +16,3 @@ class Process protected ()
   def this(command: String) = this()
   def this(command: String, options: Cwd) = this()
 }
-

@@ -11,8 +11,8 @@ Find the first config file matching a given name in the current directory or the
 | Full name          | find-config |
 | Keywords           | config, dot, rc, file, find, glob, xdg |
 | # releases         | 0 |
-| # dependents       | 131 |
-| # downloads        | 1820097 |
+| # dependents       | 142 |
+| # downloads        | 2493391 |
 | # stars            | 0 |
 
 ## Links

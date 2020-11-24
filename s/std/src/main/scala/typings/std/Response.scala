@@ -2,22 +2,30 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Fetch API interface represents the response to a request. */
 @js.native
 trait Response extends Body {
+  
   val headers: Headers = js.native
+  
   val ok: scala.Boolean = js.native
+  
   val redirected: scala.Boolean = js.native
+  
   val status: Double = js.native
+  
   val statusText: java.lang.String = js.native
+  
   val trailer: js.Promise[Headers] = js.native
+  
   val `type`: ResponseType = js.native
+  
   val url: java.lang.String = js.native
 }
-
 object Response {
+  
   @scala.inline
   def apply(
     arrayBuffer: () => js.Promise[ArrayBuffer],
@@ -39,34 +47,44 @@ object Response {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
+  
   @scala.inline
   implicit class ResponseOps[Self <: Response] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: java.lang.String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setHeaders(value: Headers): Self = this.set("headers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOk(value: scala.Boolean): Self = this.set("ok", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRedirected(value: scala.Boolean): Self = this.set("redirected", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStatusText(value: java.lang.String): Self = this.set("statusText", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTrailer(value: js.Promise[Headers]): Self = this.set("trailer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: ResponseType): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUrl(value: java.lang.String): Self = this.set("url", value.asInstanceOf[js.Any])
   }
-  
 }
-

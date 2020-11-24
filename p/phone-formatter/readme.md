@@ -10,9 +10,9 @@ Parse and format telephone numbers.
 | ------------------ | :-------------: |
 | Full name          | phone-formatter |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 270580 |
+| # downloads        | 333035 |
 | # stars            | 2 |
 
 ## Links

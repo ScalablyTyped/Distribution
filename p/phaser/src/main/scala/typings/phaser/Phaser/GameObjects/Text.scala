@@ -24,7 +24,7 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Text Game Object.
@@ -79,56 +79,7 @@ trait Text
      with Tint
      with Transform
      with Visible {
-  /**
-    * Whether to automatically round line positions.
-    */
-  var autoRound: Boolean = js.native
-  /**
-    * The canvas element that the text is rendered to.
-    */
-  var canvas: HTMLCanvasElement = js.native
-  /**
-    * The context of the canvas element that the text is rendered to.
-    */
-  var context: CanvasRenderingContext2D = js.native
-  /**
-    * Whether the text or its settings have changed and need updating.
-    */
-  var dirty: Boolean = js.native
-  /**
-    * The line spacing value.
-    * This value is added to the font height to calculate the overall line height.
-    * Only has an effect if this Text object contains multiple lines of text.
-    * 
-    * If you update this property directly, instead of using the `setLineSpacing` method, then
-    * be sure to call `updateText` after, or you won't see the change reflected in the Text object.
-    */
-  var lineSpacing: Double = js.native
-  /**
-    * Specify a padding value which is added to the line width and height when calculating the Text size.
-    * Allows you to add extra spacing if the browser is unable to accurately determine the true font dimensions.
-    */
-  var padding: js.Object = js.native
-  /**
-    * The renderer in use by this Text object.
-    */
-  var renderer: CanvasRenderer | WebGLRenderer = js.native
-  /**
-    * The Regular Expression that is used to split the text up into lines, in
-    * multi-line text. By default this is `/(?:\r\n|\r|\n)/`.
-    * You can change this RegExp to be anything else that you may need.
-    */
-  var splitRegExp: js.Object = js.native
-  /**
-    * The Text Style object.
-    * 
-    * Manages the style of this Text object.
-    */
-  var style: TextStyle = js.native
-  /**
-    * The text string being rendered by this Text Game Object.
-    */
-  var text: String = js.native
+  
   /**
     * Advanced wrapping algorithm that will wrap words as the line grows longer than its horizontal
     * bounds. Consecutive spaces will be collapsed and replaced with a single space. Lines will be
@@ -139,6 +90,12 @@ trait Text
     * @param wordWrapWidth The word wrap width.
     */
   def advancedWordWrap(text: String, context: CanvasRenderingContext2D, wordWrapWidth: Double): String = js.native
+  
+  /**
+    * Whether to automatically round line positions.
+    */
+  var autoRound: Boolean = js.native
+  
   /**
     * Greedy wrapping algorithm that will wrap words as the line grows longer than its horizontal
     * bounds. Spaces are not collapsed and whitespace is not trimmed.
@@ -147,30 +104,72 @@ trait Text
     * @param wordWrapWidth The word wrap width.
     */
   def basicWordWrap(text: String, context: CanvasRenderingContext2D, wordWrapWidth: Double): String = js.native
+  
+  /**
+    * The canvas element that the text is rendered to.
+    */
+  var canvas: HTMLCanvasElement = js.native
+  
+  /**
+    * The context of the canvas element that the text is rendered to.
+    */
+  var context: CanvasRenderingContext2D = js.native
+  
+  /**
+    * Whether the text or its settings have changed and need updating.
+    */
+  var dirty: Boolean = js.native
+  
   /**
     * Get the current text metrics.
     */
   def getTextMetrics(): TextMetrics = js.native
+  
   /**
     * Runs the given text through this Text objects word wrapping and returns the results as an
     * array, where each element of the array corresponds to a wrapped line of text.
     * @param text The text for which the wrapping will be calculated. If unspecified, the Text objects current text will be used.
     */
   def getWrappedText(text: String): js.Array[String] = js.native
+  
   /**
     * Initialize right to left text.
     */
   def initRTL(): Unit = js.native
+  
+  /**
+    * The line spacing value.
+    * This value is added to the font height to calculate the overall line height.
+    * Only has an effect if this Text object contains multiple lines of text.
+    * 
+    * If you update this property directly, instead of using the `setLineSpacing` method, then
+    * be sure to call `updateText` after, or you won't see the change reflected in the Text object.
+    */
+  var lineSpacing: Double = js.native
+  
+  /**
+    * Specify a padding value which is added to the line width and height when calculating the Text size.
+    * Allows you to add extra spacing if the browser is unable to accurately determine the true font dimensions.
+    */
+  var padding: js.Object = js.native
+  
   /**
     * Internal destroy handler, called as part of the destroy process.
     */
   /* protected */ def preDestroy(): Unit = js.native
+  
+  /**
+    * The renderer in use by this Text object.
+    */
+  var renderer: CanvasRenderer | WebGLRenderer = js.native
+  
   /**
     * Greedy wrapping algorithm that will wrap words as the line grows longer than its horizontal
     * bounds.
     * @param text The text to perform word wrap detection against.
     */
   def runWordWrap(text: String): String = js.native
+  
   /**
     * Set the alignment of the text in this Text object.
     * 
@@ -181,16 +180,19 @@ trait Text
     */
   def setAlign(): this.type = js.native
   def setAlign(align: String): this.type = js.native
+  
   /**
     * Set the background color.
     * @param color The background color.
     */
   def setBackgroundColor(color: String): this.type = js.native
+  
   /**
     * Set the text fill color.
     * @param color The text fill color.
     */
   def setColor(color: String): this.type = js.native
+  
   /**
     * Set the fill style to be used by the Text object.
     * 
@@ -202,6 +204,7 @@ trait Text
     */
   def setFill(color: String): this.type = js.native
   def setFill(color: js.Any): this.type = js.native
+  
   /**
     * Set a fixed width and height for the text.
     * 
@@ -210,6 +213,7 @@ trait Text
     * @param height The fixed height to set. `0` disables fixed height.
     */
   def setFixedSize(width: Double, height: Double): this.type = js.native
+  
   /**
     * Set the font.
     * 
@@ -234,6 +238,7 @@ trait Text
     * @param font The font family or font settings to set.
     */
   def setFont(font: String): this.type = js.native
+  
   /**
     * Set the font family.
     * 
@@ -253,16 +258,19 @@ trait Text
     * @param family The font family.
     */
   def setFontFamily(family: String): this.type = js.native
+  
   /**
     * Set the font size.
     * @param size The font size.
     */
   def setFontSize(size: Double): this.type = js.native
+  
   /**
     * Set the font style.
     * @param style The font style.
     */
   def setFontStyle(style: String): this.type = js.native
+  
   /**
     * Sets the line spacing value.
     * 
@@ -271,12 +279,14 @@ trait Text
     * @param value The amount to add to the font height to achieve the overall line height.
     */
   def setLineSpacing(value: Double): this.type = js.native
+  
   /**
     * Set the maximum number of lines to draw.
     * @param max The maximum number of lines to draw. Default 0.
     */
   def setMaxLines(): this.type = js.native
   def setMaxLines(max: integer): this.type = js.native
+  
   /**
     * Set the text padding.
     * 
@@ -290,6 +300,7 @@ trait Text
     */
   def setPadding(left: Double, top: Double, right: Double, bottom: Double): this.type = js.native
   def setPadding(left: TextPadding, top: Double, right: Double, bottom: Double): this.type = js.native
+  
   /**
     * Set the resolution used by this Text object.
     * 
@@ -303,6 +314,7 @@ trait Text
     * @param value The resolution for this Text object to use.
     */
   def setResolution(value: Double): this.type = js.native
+  
   /**
     * Set the shadow settings.
     * @param x The horizontal shadow offset. Default 0.
@@ -320,43 +332,51 @@ trait Text
     shadowStroke: js.UndefOr[Boolean],
     shadowFill: js.UndefOr[Boolean]
   ): this.type = js.native
+  
   /**
     * Set the shadow blur radius.
     * @param blur The shadow blur radius.
     */
   def setShadowBlur(blur: Double): this.type = js.native
+  
   /**
     * Set the shadow color.
     * @param color The shadow color.
     */
   def setShadowColor(color: String): this.type = js.native
+  
   /**
     * Enable or disable shadow fill.
     * @param enabled Whether shadow fill is enabled or not.
     */
   def setShadowFill(enabled: Boolean): this.type = js.native
+  
   /**
     * Set the shadow offset.
     * @param x The horizontal shadow offset.
     * @param y The vertical shadow offset.
     */
   def setShadowOffset(x: Double, y: Double): this.type = js.native
+  
   /**
     * Enable or disable shadow stroke.
     * @param enabled Whether shadow stroke is enabled or not.
     */
   def setShadowStroke(enabled: Boolean): this.type = js.native
+  
   /**
     * Set the stroke settings.
     * @param color The stroke color.
     * @param thickness The stroke thickness.
     */
   def setStroke(color: String, thickness: Double): this.type = js.native
+  
   /**
     * Set the text style.
     * @param style The style settings to set.
     */
   def setStyle(style: js.Object): this.type = js.native
+  
   /**
     * Set the text to display.
     * 
@@ -365,6 +385,7 @@ trait Text
     */
   def setText(value: String): this.type = js.native
   def setText(value: js.Array[String]): this.type = js.native
+  
   /**
     * Set a custom callback for wrapping lines. Pass in null to remove wrapping by callback.
     * @param callback A custom function that will be responsible for wrapping the
@@ -375,6 +396,7 @@ trait Text
     */
   def setWordWrapCallback(callback: TextStyleWordWrapCallback): this.type = js.native
   def setWordWrapCallback(callback: TextStyleWordWrapCallback, scope: js.Object): this.type = js.native
+  
   /**
     * Set the width (in pixels) to use for wrapping lines. Pass in null to remove wrapping by width.
     * @param width The maximum width of a line in pixels. Set to null to remove wrapping.
@@ -384,9 +406,28 @@ trait Text
     */
   def setWordWrapWidth(width: Double): this.type = js.native
   def setWordWrapWidth(width: Double, useAdvancedWrap: Boolean): this.type = js.native
+  
+  /**
+    * The Regular Expression that is used to split the text up into lines, in
+    * multi-line text. By default this is `/(?:\r\n|\r|\n)/`.
+    * You can change this RegExp to be anything else that you may need.
+    */
+  var splitRegExp: js.Object = js.native
+  
+  /**
+    * The Text Style object.
+    * 
+    * Manages the style of this Text object.
+    */
+  var style: TextStyle = js.native
+  
+  /**
+    * The text string being rendered by this Text Game Object.
+    */
+  var text: String = js.native
+  
   /**
     * Update the displayed text.
     */
   def updateText(): this.type = js.native
 }
-

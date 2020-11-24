@@ -7,11 +7,12 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("common-errors", "middleware")
 @js.native
 object middleware extends js.Object {
+  
   /**
     * Express middleware for preventing the web server from crashing when
     * an error is thrown from an asynchronous context. Any error that would
@@ -25,10 +26,10 @@ object middleware extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Express middleware that translates common errors into HTTP status
     * codes and messages.
     */
   def errorHandler(err: Error, req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], next: NextFunction): Unit = js.native
 }
-

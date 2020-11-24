@@ -5,27 +5,21 @@ import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoWidgets.mod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A minimal shell type for Jupyter front-end applications.
   */
 @js.native
 trait IShell extends Widget {
-  /**
-    * The focused widget in the application shell.
-    *
-    * #### Notes
-    * Different shell implementations have latitude to decide what "current"
-    * or "focused" mean, depending on their user interface characteristics.
-    */
-  val currentWidget: Widget | Null = js.native
+  
   /**
     * Activates a widget inside the application shell.
     *
     * @param id - The ID of the widget being activated.
     */
   def activateById(id: String): Unit = js.native
+  
   /**
     * Add a widget to the application shell.
     *
@@ -38,8 +32,19 @@ trait IShell extends Widget {
     * widget, as defined in the `DocumentRegistry`.
     */
   def add(widget: Widget): Unit = js.native
+  def add(widget: Widget, area: js.UndefOr[scala.Nothing], options: IOpenOptions): Unit = js.native
   def add(widget: Widget, area: String): Unit = js.native
   def add(widget: Widget, area: String, options: IOpenOptions): Unit = js.native
+  
+  /**
+    * The focused widget in the application shell.
+    *
+    * #### Notes
+    * Different shell implementations have latitude to decide what "current"
+    * or "focused" mean, depending on their user interface characteristics.
+    */
+  val currentWidget: Widget | Null = js.native
+  
   /**
     * Returns an iterator for the widgets inside the application shell.
     *
@@ -48,4 +53,3 @@ trait IShell extends Widget {
   def widgets(): IIterator[Widget] = js.native
   def widgets(area: String): IIterator[Widget] = js.native
 }
-

@@ -2,11 +2,11 @@ package typings.he.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Encode_ extends js.Object {
-  var options: EncodeOptions = js.native
+  
   /**
     * Encode a string of text
     *
@@ -21,5 +21,6 @@ trait Encode_ extends js.Object {
     */
   def apply(text: String): String = js.native
   def apply(text: String, options: EncodeOptions): String = js.native
+  
+  var options: EncodeOptions = js.native
 }
-

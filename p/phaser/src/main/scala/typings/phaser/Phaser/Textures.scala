@@ -23,11 +23,12 @@ import typings.std.Uint8ClampedArray
 import typings.std.WebGLTexture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Textures")
 @js.native
 object Textures extends js.Object {
+  
   /**
     * A Canvas Texture is a special kind of Texture that is backed by an HTML Canvas Element as its source.
     * 
@@ -49,43 +50,17 @@ object Textures extends js.Object {
     */
   @js.native
   trait CanvasTexture extends Texture {
+    
     /**
       * An ArrayBuffer the same size as the context ImageData.
       */
     var buffer: ArrayBuffer = js.native
+    
     /**
       * The source Canvas Element.
       */
     val canvas: HTMLCanvasElement = js.native
-    /**
-      * The 2D Canvas Rendering Context.
-      */
-    val context: CanvasRenderingContext2D = js.native
-    /**
-      * A Uint8ClampedArray view into the `buffer`.
-      * Use the `update` method to populate this when the canvas changes.
-      * Note that this is unavailable in some browsers, such as Epic Browser, due to their security restrictions.
-      */
-    var data: Uint8ClampedArray = js.native
-    /**
-      * The height of the Canvas.
-      * This property is read-only, if you wish to change it use the `setSize` method.
-      */
-    val height: integer = js.native
-    /**
-      * The context image data.
-      * Use the `update` method to populate this when the canvas changes.
-      */
-    var imageData: ImageData = js.native
-    /**
-      * An Uint32Array view into the `buffer`.
-      */
-    var pixels: Uint32Array = js.native
-    /**
-      * The width of the Canvas.
-      * This property is read-only, if you wish to change it use the `setSize` method.
-      */
-    val width: integer = js.native
+    
     /**
       * Clears the given region of this Canvas Texture, resetting it back to transparent.
       * If no region is given, the whole Canvas Texture is cleared.
@@ -115,6 +90,19 @@ object Textures extends js.Object {
     def clear(x: integer, y: integer, width: js.UndefOr[scala.Nothing], height: integer): CanvasTexture = js.native
     def clear(x: integer, y: integer, width: integer): CanvasTexture = js.native
     def clear(x: integer, y: integer, width: integer, height: integer): CanvasTexture = js.native
+    
+    /**
+      * The 2D Canvas Rendering Context.
+      */
+    val context: CanvasRenderingContext2D = js.native
+    
+    /**
+      * A Uint8ClampedArray view into the `buffer`.
+      * Use the `update` method to populate this when the canvas changes.
+      * Note that this is unavailable in some browsers, such as Epic Browser, due to their security restrictions.
+      */
+    var data: Uint8ClampedArray = js.native
+    
     def draw(x: integer, y: integer, source: HTMLCanvasElement): CanvasTexture = js.native
     /**
       * Draws the given Image or Canvas element to this CanvasTexture, then updates the internal
@@ -124,6 +112,7 @@ object Textures extends js.Object {
       * @param source The element to draw to this canvas.
       */
     def draw(x: integer, y: integer, source: HTMLImageElement): CanvasTexture = js.native
+    
     /**
       * Draws the given texture frame to this CanvasTexture, then updates the internal
       * ImageData buffer and arrays.
@@ -144,14 +133,17 @@ object Textures extends js.Object {
     def drawFrame(key: String, frame: integer, x: js.UndefOr[scala.Nothing], y: integer): CanvasTexture = js.native
     def drawFrame(key: String, frame: integer, x: integer): CanvasTexture = js.native
     def drawFrame(key: String, frame: integer, x: integer, y: integer): CanvasTexture = js.native
+    
     /**
       * Gets the Canvas Element.
       */
     def getCanvas(): HTMLCanvasElement = js.native
+    
     /**
       * Gets the 2D Canvas Rendering Context.
       */
     def getContext(): CanvasRenderingContext2D = js.native
+    
     /**
       * Gets an ImageData region from this CanvasTexture from the position and size specified.
       * You can write this back using `CanvasTexture.putData`, or manipulate it.
@@ -161,6 +153,7 @@ object Textures extends js.Object {
       * @param height The height of the rectangle from which the ImageData will be extracted. Positive values are down, and negative are up.
       */
     def getData(x: integer, y: integer, width: integer, height: integer): ImageData = js.native
+    
     /**
       * Returns the Image Data index for the given pixel in this CanvasTexture.
       * 
@@ -172,6 +165,7 @@ object Textures extends js.Object {
       * @param y The y coordinate of the pixel to get. Must lay within the dimensions of this CanvasTexture and be an integer.
       */
     def getIndex(x: integer, y: integer): integer = js.native
+    
     /**
       * Get the color of a specific pixel from this texture and store it in a Color object.
       * 
@@ -183,6 +177,7 @@ object Textures extends js.Object {
       */
     def getPixel(x: integer, y: integer): Color = js.native
     def getPixel(x: integer, y: integer, out: Color): Color = js.native
+    
     /**
       * Returns an array containing all of the pixels in the given region.
       * 
@@ -217,6 +212,24 @@ object Textures extends js.Object {
     def getPixels(x: integer, y: integer, width: js.UndefOr[scala.Nothing], height: integer): js.Array[js.Array[PixelConfig]] = js.native
     def getPixels(x: integer, y: integer, width: integer): js.Array[js.Array[PixelConfig]] = js.native
     def getPixels(x: integer, y: integer, width: integer, height: integer): js.Array[js.Array[PixelConfig]] = js.native
+    
+    /**
+      * The height of the Canvas.
+      * This property is read-only, if you wish to change it use the `setSize` method.
+      */
+    val height: integer = js.native
+    
+    /**
+      * The context image data.
+      * Use the `update` method to populate this when the canvas changes.
+      */
+    var imageData: ImageData = js.native
+    
+    /**
+      * An Uint32Array view into the `buffer`.
+      */
+    var pixels: Uint32Array = js.native
+    
     /**
       * Puts the ImageData into the context of this CanvasTexture at the given coordinates.
       * @param imageData The ImageData to put at the given location.
@@ -335,12 +348,14 @@ object Textures extends js.Object {
       dirtyWidth: integer,
       dirtyHeight: integer
     ): this.type = js.native
+    
     /**
       * This should be called manually if you are running under WebGL.
       * It will refresh the WebGLTexture from the Canvas source. Only call this if you know that the
       * canvas has changed, as there is a significant GPU texture allocation cost involved in doing so.
       */
     def refresh(): CanvasTexture = js.native
+    
     /**
       * Sets a pixel in the CanvasTexture to the given color and alpha values.
       * 
@@ -354,6 +369,7 @@ object Textures extends js.Object {
       */
     def setPixel(x: integer, y: integer, red: integer, green: integer, blue: integer): this.type = js.native
     def setPixel(x: integer, y: integer, red: integer, green: integer, blue: integer, alpha: integer): this.type = js.native
+    
     /**
       * Changes the size of this Canvas Texture.
       * @param width The new width of the Canvas.
@@ -361,6 +377,7 @@ object Textures extends js.Object {
       */
     def setSize(width: integer): CanvasTexture = js.native
     def setSize(width: integer, height: integer): CanvasTexture = js.native
+    
     /**
       * This re-creates the `imageData` from the current context.
       * It then re-builds the ArrayBuffer, the `data` Uint8ClampedArray reference and the `pixels` Int32Array.
@@ -368,16 +385,41 @@ object Textures extends js.Object {
       * Warning: This is a very expensive operation, so use it sparingly.
       */
     def update(): CanvasTexture = js.native
+    
+    /**
+      * The width of the Canvas.
+      * This property is read-only, if you wish to change it use the `setSize` method.
+      */
+    val width: integer = js.native
   }
   
   @js.native
   sealed trait FilterMode extends js.Object
+  /**
+    * Filter Types.
+    */
+  @js.native
+  object FilterMode extends js.Object {
+    
+    /**
+      * Linear filter type.
+      */
+    @js.native
+    sealed trait LINEAR extends FilterMode
+    
+    /**
+      * Nearest neighbor filter type.
+      */
+    @js.native
+    sealed trait NEAREST extends FilterMode
+  }
   
   /**
     * A Frame is a section of a Texture.
     */
   @js.native
   trait Frame extends js.Object {
+    
     /**
       * Over-rides the Renderer setting.
       * -1 = use Renderer Setting
@@ -385,87 +427,112 @@ object Textures extends js.Object {
       * 1 = Round
       */
     var autoRound: integer = js.native
+    
     /**
       * The Canvas drawImage data object.
       */
     val canvasData: js.Object = js.native
+    
     /**
       * The x center of this frame, floored.
       */
     var centerX: integer = js.native
+    
     /**
       * The y center of this frame, floored.
       */
     var centerY: integer = js.native
+    
     /**
       * Any Frame specific custom data can be stored here.
       */
     var customData: js.Object = js.native
+    
     /**
       * Does this Frame have a custom pivot point?
       */
     var customPivot: Boolean = js.native
+    
     /**
       * The height of the area in the source image to cut.
       */
     var cutHeight: integer = js.native
+    
     /**
       * The width of the area in the source image to cut.
       */
     var cutWidth: integer = js.native
+    
     /**
       * X position within the source image to cut from.
       */
     var cutX: integer = js.native
+    
     /**
       * Y position within the source image to cut from.
       */
     var cutY: integer = js.native
+    
+    /**
+      * Destroys this Frame by nulling its reference to the parent Texture and and data objects.
+      */
+    def destroy(): Unit = js.native
+    
     /**
       * A reference to the Texture Source WebGL Texture that this Frame is using.
       */
     var glTexture: WebGLTexture = js.native
+    
     /**
       * Half the height, floored.
       * Precalculated for the renderer.
       */
     var halfHeight: integer = js.native
+    
     /**
       * Half the width, floored.
       * Precalculated for the renderer.
       */
     var halfWidth: integer = js.native
+    
     /**
       * The rendering height of this Frame, taking trim into account.
       */
     var height: integer = js.native
+    
     /**
       * The name of this Frame.
       * The name is unique within the Texture.
       */
     var name: String = js.native
+    
     /**
       * The horizontal pivot point of this Frame.
       */
     var pivotX: Double = js.native
+    
     /**
       * The vertical pivot point of this Frame.
       */
     var pivotY: Double = js.native
+    
     /**
       * The radius of the Frame (derived from sqrt(w * w + h * h) / 2)
       */
     val radius: Double = js.native
+    
     /**
       * The height of the Frame in its un-trimmed, un-padded state, as prepared in the art package,
       * before being packed.
       */
     val realHeight: Double = js.native
+    
     /**
       * The width of the Frame in its un-trimmed, un-padded state, as prepared in the art package,
       * before being packed.
       */
     val realWidth: Double = js.native
+    
     /**
       * **CURRENTLY UNSUPPORTED**
       * 
@@ -474,54 +541,7 @@ object Textures extends js.Object {
       * It has nothing to do with Sprite rotation.
       */
     var rotated: Boolean = js.native
-    /**
-      * The TextureSource this Frame is part of.
-      */
-    var source: TextureSource = js.native
-    /**
-      * The index of the TextureSource in the Texture sources array.
-      */
-    var sourceIndex: integer = js.native
-    /**
-      * The Texture this Frame is a part of.
-      */
-    var texture: Texture = js.native
-    /**
-      * Is the Frame trimmed or not?
-      */
-    val trimmed: Boolean = js.native
-    /**
-      * WebGL UV u0 value.
-      */
-    var u0: Double = js.native
-    /**
-      * WebGL UV u1 value.
-      */
-    var u1: Double = js.native
-    /**
-      * WebGL UV v0 value.
-      */
-    var v0: Double = js.native
-    /**
-      * WebGL UV v1 value.
-      */
-    var v1: Double = js.native
-    /**
-      * The rendering width of this Frame, taking trim into account.
-      */
-    var width: integer = js.native
-    /**
-      * The X rendering offset of this Frame, taking trim into account.
-      */
-    var x: integer = js.native
-    /**
-      * The Y rendering offset of this Frame, taking trim into account.
-      */
-    var y: integer = js.native
-    /**
-      * Destroys this Frame by nulling its reference to the parent Texture and and data objects.
-      */
-    def destroy(): Unit = js.native
+    
     /**
       * Takes a crop data object and, based on the rectangular region given, calculates the
       * required UV coordinates in order to crop this Frame for WebGL and Canvas rendering.
@@ -545,6 +565,7 @@ object Textures extends js.Object {
       flipX: Boolean,
       flipY: Boolean
     ): js.Object = js.native
+    
     /**
       * Sets the width, height, x and y of this Frame.
       * 
@@ -559,6 +580,7 @@ object Textures extends js.Object {
     def setSize(width: integer, height: integer, x: js.UndefOr[scala.Nothing], y: integer): Frame = js.native
     def setSize(width: integer, height: integer, x: integer): Frame = js.native
     def setSize(width: integer, height: integer, x: integer, y: integer): Frame = js.native
+    
     /**
       * If the frame was trimmed when added to the Texture Atlas, this records the trim and source data.
       * @param actualWidth The width of the frame before being trimmed.
@@ -576,6 +598,37 @@ object Textures extends js.Object {
       destWidth: Double,
       destHeight: Double
     ): Frame = js.native
+    
+    /**
+      * The TextureSource this Frame is part of.
+      */
+    var source: TextureSource = js.native
+    
+    /**
+      * The index of the TextureSource in the Texture sources array.
+      */
+    var sourceIndex: integer = js.native
+    
+    /**
+      * The Texture this Frame is a part of.
+      */
+    var texture: Texture = js.native
+    
+    /**
+      * Is the Frame trimmed or not?
+      */
+    val trimmed: Boolean = js.native
+    
+    /**
+      * WebGL UV u0 value.
+      */
+    var u0: Double = js.native
+    
+    /**
+      * WebGL UV u1 value.
+      */
+    var u1: Double = js.native
+    
     /**
       * Takes a crop data object and recalculates the UVs based on the dimensions inside the crop object.
       * Called automatically by `setFrame`.
@@ -584,14 +637,41 @@ object Textures extends js.Object {
       * @param flipY Does the parent Game Object have flipY set?
       */
     def updateCropUVs(crop: js.Object, flipX: Boolean, flipY: Boolean): js.Object = js.native
+    
     /**
       * Updates the internal WebGL UV cache and the drawImage cache.
       */
     def updateUVs(): Frame = js.native
+    
     /**
       * Updates the internal WebGL UV cache.
       */
     def updateUVsInverted(): Frame = js.native
+    
+    /**
+      * WebGL UV v0 value.
+      */
+    var v0: Double = js.native
+    
+    /**
+      * WebGL UV v1 value.
+      */
+    var v1: Double = js.native
+    
+    /**
+      * The rendering width of this Frame, taking trim into account.
+      */
+    var width: integer = js.native
+    
+    /**
+      * The X rendering offset of this Frame, taking trim into account.
+      */
+    var x: integer = js.native
+    
+    /**
+      * The Y rendering offset of this Frame, taking trim into account.
+      */
+    var y: integer = js.native
   }
   
   /**
@@ -610,44 +690,7 @@ object Textures extends js.Object {
     */
   @js.native
   trait Texture extends js.Object {
-    /**
-      * Any additional data that was set in the source JSON (if any),
-      * or any extra data you'd like to store relating to this texture
-      */
-    var customData: js.Object = js.native
-    /**
-      * An array of TextureSource data instances.
-      * Used to store additional data images, such as normal maps or specular maps.
-      */
-    var dataSource: js.Array[_] = js.native
-    /**
-      * The name of the first frame of the Texture.
-      */
-    var firstFrame: String = js.native
-    /**
-      * The total number of Frames in this Texture, including the `__BASE` frame.
-      * 
-      * A Texture will always contain at least 1 frame because every Texture contains a `__BASE` frame by default,
-      * in addition to any extra frames that have been added to it, such as when parsing a Sprite Sheet or Texture Atlas.
-      */
-    var frameTotal: integer = js.native
-    /**
-      * A key-value object pair associating the unique Frame keys with the Frames objects.
-      */
-    var frames: js.Object = js.native
-    /**
-      * The unique string-based key of this Texture.
-      */
-    var key: String = js.native
-    /**
-      * A reference to the Texture Manager this Texture belongs to.
-      */
-    var manager: TextureManager = js.native
-    /**
-      * An array of TextureSource instances.
-      * These are unique to this Texture and contain the actual Image (or Canvas) data.
-      */
-    var source: js.Array[TextureSource] = js.native
+    
     def add(name: String, sourceIndex: integer, x: Double, y: Double, width: Double, height: Double): Frame = js.native
     /**
       * Adds a new Frame to this Texture.
@@ -663,10 +706,42 @@ object Textures extends js.Object {
       * @param height The height of this Frame.
       */
     def add(name: integer, sourceIndex: integer, x: Double, y: Double, width: Double, height: Double): Frame = js.native
+    
+    /**
+      * Any additional data that was set in the source JSON (if any),
+      * or any extra data you'd like to store relating to this texture
+      */
+    var customData: js.Object = js.native
+    
+    /**
+      * An array of TextureSource data instances.
+      * Used to store additional data images, such as normal maps or specular maps.
+      */
+    var dataSource: js.Array[_] = js.native
+    
     /**
       * Destroys this Texture and releases references to its sources and frames.
       */
     def destroy(): Unit = js.native
+    
+    /**
+      * The name of the first frame of the Texture.
+      */
+    var firstFrame: String = js.native
+    
+    /**
+      * The total number of Frames in this Texture, including the `__BASE` frame.
+      * 
+      * A Texture will always contain at least 1 frame because every Texture contains a `__BASE` frame by default,
+      * in addition to any extra frames that have been added to it, such as when parsing a Sprite Sheet or Texture Atlas.
+      */
+    var frameTotal: integer = js.native
+    
+    /**
+      * A key-value object pair associating the unique Frame keys with the Frames objects.
+      */
+    var frames: js.Object = js.native
+    
     /**
       * Gets a Frame from this Texture based on either the key or the index of the Frame.
       * 
@@ -678,6 +753,7 @@ object Textures extends js.Object {
     def get(): Frame = js.native
     def get(name: String): Frame = js.native
     def get(name: integer): Frame = js.native
+    
     /**
       * Given a Frame name, return the data source image it uses to render with.
       * You can use this to get the normal map for an image for example.
@@ -688,6 +764,7 @@ object Textures extends js.Object {
     def getDataSourceImage(): HTMLImageElement | HTMLCanvasElement = js.native
     def getDataSourceImage(name: String): HTMLImageElement | HTMLCanvasElement = js.native
     def getDataSourceImage(name: integer): HTMLImageElement | HTMLCanvasElement = js.native
+    
     /**
       * Returns an array with all of the names of the Frames in this Texture.
       * 
@@ -697,6 +774,7 @@ object Textures extends js.Object {
       */
     def getFrameNames(): js.Array[String] = js.native
     def getFrameNames(includeBase: Boolean): js.Array[String] = js.native
+    
     /**
       * Returns an array of all the Frames in the given TextureSource.
       * @param sourceIndex The index of the TextureSource to get the Frames from.
@@ -704,6 +782,7 @@ object Textures extends js.Object {
       */
     def getFramesFromTextureSource(sourceIndex: integer): js.Array[Frame] = js.native
     def getFramesFromTextureSource(sourceIndex: integer, includeBase: Boolean): js.Array[Frame] = js.native
+    
     /**
       * Given a Frame name, return the source image it uses to render with.
       * 
@@ -713,6 +792,7 @@ object Textures extends js.Object {
     def getSourceImage(): HTMLImageElement | HTMLCanvasElement | RenderTexture = js.native
     def getSourceImage(name: String): HTMLImageElement | HTMLCanvasElement | RenderTexture = js.native
     def getSourceImage(name: integer): HTMLImageElement | HTMLCanvasElement | RenderTexture = js.native
+    
     /**
       * Takes the given TextureSource and returns the index of it within this Texture.
       * If it's not in this Texture, it returns -1.
@@ -721,11 +801,23 @@ object Textures extends js.Object {
       * @param source The TextureSource to check.
       */
     def getTextureSourceIndex(source: TextureSource): integer = js.native
+    
     /**
       * Checks to see if a Frame matching the given key exists within this Texture.
       * @param name The key of the Frame to check for.
       */
     def has(name: String): Boolean = js.native
+    
+    /**
+      * The unique string-based key of this Texture.
+      */
+    var key: String = js.native
+    
+    /**
+      * A reference to the Texture Manager this Texture belongs to.
+      */
+    var manager: TextureManager = js.native
+    
     /**
       * Removes the given Frame from this Texture. The Frame is destroyed immediately.
       * 
@@ -734,6 +826,7 @@ object Textures extends js.Object {
       * @param name The key of the Frame to remove.
       */
     def remove(name: String): Boolean = js.native
+    
     def setDataSource(data: js.Array[HTMLCanvasElement | HTMLImageElement]): Unit = js.native
     def setDataSource(data: HTMLCanvasElement): Unit = js.native
     /**
@@ -744,6 +837,7 @@ object Textures extends js.Object {
       * @param data The source image.
       */
     def setDataSource(data: HTMLImageElement): Unit = js.native
+    
     /**
       * Sets the Filter Mode for this Texture.
       * 
@@ -755,6 +849,12 @@ object Textures extends js.Object {
       * @param filterMode The Filter Mode.
       */
     def setFilter(filterMode: FilterMode): Unit = js.native
+    
+    /**
+      * An array of TextureSource instances.
+      * These are unique to this Texture and contain the actual Image (or Canvas) data.
+      */
+    var source: js.Array[TextureSource] = js.native
   }
   
   /**
@@ -767,19 +867,7 @@ object Textures extends js.Object {
     */
   @js.native
   trait TextureManager extends EventEmitter {
-    /**
-      * The Game that this TextureManager belongs to.
-      */
-    var game: Game = js.native
-    /**
-      * An object that has all of textures that Texture Manager creates.
-      * Textures are assigned to keys so we can access to any texture that this object has directly by key value without iteration.
-      */
-    var list: js.Object = js.native
-    /**
-      * The name of this manager.
-      */
-    var name: String = js.native
+    
     /**
       * Adds a new Texture Atlas to this Texture Manager.
       * It can accept either JSON Array or JSON Hash formats, as exported by Texture Packer and similar software.
@@ -797,6 +885,7 @@ object Textures extends js.Object {
     ): Texture = js.native
     def addAtlas(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLCanvasElement): Texture = js.native
     def addAtlas(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLImageElement): Texture = js.native
+    
     def addAtlasJSONArray(key: String, source: js.Array[HTMLImageElement], data: js.Array[js.Object]): Texture = js.native
     def addAtlasJSONArray(
       key: String,
@@ -852,6 +941,7 @@ object Textures extends js.Object {
     ): Texture = js.native
     def addAtlasJSONArray(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLCanvasElement): Texture = js.native
     def addAtlasJSONArray(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLImageElement): Texture = js.native
+    
     /**
       * Adds a Texture Atlas to this Texture Manager.
       * The frame data of the atlas must be stored in an Object within the JSON.
@@ -870,6 +960,7 @@ object Textures extends js.Object {
     ): Texture = js.native
     def addAtlasJSONHash(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLCanvasElement): Texture = js.native
     def addAtlasJSONHash(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLImageElement): Texture = js.native
+    
     /**
       * Adds a Texture Atlas to this Texture Manager, where the atlas data is given
       * in the XML format.
@@ -887,12 +978,14 @@ object Textures extends js.Object {
     ): Texture = js.native
     def addAtlasXML(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLCanvasElement): Texture = js.native
     def addAtlasXML(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLImageElement): Texture = js.native
+    
     /**
       * Adds a new Texture to the Texture Manager created from the given Base64 encoded data.
       * @param key The unique string-based key of the Texture.
       * @param data The Base64 encoded data.
       */
     def addBase64(key: String, data: js.Any): this.type = js.native
+    
     /**
       * Creates a new Canvas Texture object from an existing Canvas element
       * and adds it to this Texture Manager, unless `skipCache` is true.
@@ -902,6 +995,7 @@ object Textures extends js.Object {
       */
     def addCanvas(key: String, source: HTMLCanvasElement): CanvasTexture = js.native
     def addCanvas(key: String, source: HTMLCanvasElement, skipCache: Boolean): CanvasTexture = js.native
+    
     /**
       * Takes a WebGL Texture and creates a Phaser Texture from it, which is added to the Texture Manager using the given key.
       * 
@@ -914,6 +1008,7 @@ object Textures extends js.Object {
       * @param height The new height of the Texture.
       */
     def addGLTexture(key: String, glTexture: WebGLTexture, width: Double, height: Double): Texture = js.native
+    
     /**
       * Adds a new Texture to the Texture Manager created from the given Image element.
       * @param key The unique string-based key of the Texture.
@@ -923,6 +1018,7 @@ object Textures extends js.Object {
     def addImage(key: String, source: HTMLImageElement): Texture = js.native
     def addImage(key: String, source: HTMLImageElement, dataSource: HTMLCanvasElement): Texture = js.native
     def addImage(key: String, source: HTMLImageElement, dataSource: HTMLImageElement): Texture = js.native
+    
     /**
       * Adds a Render Texture to the Texture Manager using the given key.
       * This allows you to then use the Render Texture as a normal texture for texture based Game Objects like Sprites.
@@ -930,6 +1026,7 @@ object Textures extends js.Object {
       * @param renderTexture The source Render Texture.
       */
     def addRenderTexture(key: String, renderTexture: RenderTexture): Texture = js.native
+    
     /**
       * Adds a Sprite Sheet to this Texture Manager.
       * 
@@ -940,6 +1037,7 @@ object Textures extends js.Object {
       * @param config The configuration object for this Sprite Sheet.
       */
     def addSpriteSheet(key: String, source: HTMLImageElement, config: SpriteSheetConfig): Texture = js.native
+    
     /**
       * Adds a Sprite Sheet to this Texture Manager, where the Sprite Sheet exists as a Frame within a Texture Atlas.
       * 
@@ -949,6 +1047,7 @@ object Textures extends js.Object {
       * @param config The configuration object for this Sprite Sheet.
       */
     def addSpriteSheetFromAtlas(key: String, config: SpriteSheetFromAtlasConfig): Texture = js.native
+    
     /**
       * Adds a Unity Texture Atlas to this Texture Manager.
       * The data must be in the form of a Unity YAML file.
@@ -966,12 +1065,14 @@ object Textures extends js.Object {
     ): Texture = js.native
     def addUnityAtlas(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLCanvasElement): Texture = js.native
     def addUnityAtlas(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLImageElement): Texture = js.native
+    
     /**
       * Checks the given texture key and throws a console.warn if the key is already in use, then returns false.
       * If you wish to avoid the console.warn then use `TextureManager.exists` instead.
       * @param key The texture key to check.
       */
     def checkKey(key: String): Boolean = js.native
+    
     /**
       * Takes a Texture key and Frame name and returns a clone of that Frame if found.
       * @param key The unique string-based key of the Texture.
@@ -979,6 +1080,7 @@ object Textures extends js.Object {
       */
     def cloneFrame(key: String, frame: String): Frame = js.native
     def cloneFrame(key: String, frame: integer): Frame = js.native
+    
     /**
       * Creates a new Texture using the given source and dimensions.
       * @param key The unique string-based key of the Texture.
@@ -987,6 +1089,7 @@ object Textures extends js.Object {
       * @param height The height of the Texture.
       */
     def create(key: String, source: HTMLImageElement, width: integer, height: integer): Texture = js.native
+    
     /**
       * Creates a new Texture using a blank Canvas element of the size given.
       * 
@@ -1000,6 +1103,7 @@ object Textures extends js.Object {
     def createCanvas(key: String, width: js.UndefOr[scala.Nothing], height: integer): CanvasTexture = js.native
     def createCanvas(key: String, width: integer): CanvasTexture = js.native
     def createCanvas(key: String, width: integer, height: integer): CanvasTexture = js.native
+    
     /**
       * Passes all Textures to the given callback.
       * @param callback The callback function to be sent the Textures.
@@ -1007,11 +1111,18 @@ object Textures extends js.Object {
       * @param args Additional arguments that will be passed to the callback, after the child.
       */
     def each(callback: EachTextureCallback, scope: js.Object, args: js.Any*): Unit = js.native
+    
     /**
       * Checks the given key to see if a Texture using it exists within this Texture Manager.
       * @param key The unique string-based key of the Texture.
       */
     def exists(key: String): Boolean = js.native
+    
+    /**
+      * The Game that this TextureManager belongs to.
+      */
+    var game: Game = js.native
+    
     /**
       * Creates a new Texture using the given config values.
       * 
@@ -1050,6 +1161,7 @@ object Textures extends js.Object {
       * @param config The configuration object needed to generate the texture.
       */
     def generate(key: String, config: GenerateTextureConfig): Texture = js.native
+    
     /**
       * Returns a Texture from the Texture Manager that matches the given key.
       * 
@@ -1062,6 +1174,7 @@ object Textures extends js.Object {
       */
     def get(key: String): Texture = js.native
     def get(key: Texture): Texture = js.native
+    
     /**
       * Gets an existing texture frame and converts it into a base64 encoded image and returns the base64 data.
       * 
@@ -1092,6 +1205,7 @@ object Textures extends js.Object {
     def getBase64(key: String, frame: integer, `type`: js.UndefOr[scala.Nothing], encoderOptions: Double): String = js.native
     def getBase64(key: String, frame: integer, `type`: String): String = js.native
     def getBase64(key: String, frame: integer, `type`: String, encoderOptions: Double): String = js.native
+    
     /**
       * Takes a Texture key and Frame name and returns a reference to that Frame, if found.
       * @param key The unique string-based key of the Texture.
@@ -1100,6 +1214,7 @@ object Textures extends js.Object {
     def getFrame(key: String): Frame = js.native
     def getFrame(key: String, frame: String): Frame = js.native
     def getFrame(key: String, frame: integer): Frame = js.native
+    
     /**
       * Given a Texture and an `x` and `y` coordinate this method will return a new
       * Color object that has been populated with the color and alpha values of the pixel
@@ -1112,6 +1227,7 @@ object Textures extends js.Object {
     def getPixel(x: integer, y: integer, key: String): Color = js.native
     def getPixel(x: integer, y: integer, key: String, frame: String): Color = js.native
     def getPixel(x: integer, y: integer, key: String, frame: integer): Color = js.native
+    
     /**
       * Given a Texture and an `x` and `y` coordinate this method will return a value between 0 and 255
       * corresponding to the alpha value of the pixel at that location in the Texture. If the coordinate
@@ -1124,11 +1240,24 @@ object Textures extends js.Object {
     def getPixelAlpha(x: integer, y: integer, key: String): integer = js.native
     def getPixelAlpha(x: integer, y: integer, key: String, frame: String): integer = js.native
     def getPixelAlpha(x: integer, y: integer, key: String, frame: integer): integer = js.native
+    
     /**
       * Returns an array with all of the keys of all Textures in this Texture Manager.
       * The output array will exclude the `__DEFAULT` and `__MISSING` keys.
       */
     def getTextureKeys(): js.Array[String] = js.native
+    
+    /**
+      * An object that has all of textures that Texture Manager creates.
+      * Textures are assigned to keys so we can access to any texture that this object has directly by key value without iteration.
+      */
+    var list: js.Object = js.native
+    
+    /**
+      * The name of this manager.
+      */
+    var name: String = js.native
+    
     /**
       * Removes a Texture from the Texture Manager and destroys it. This will immediately
       * clear all references to it from the Texture Manager, and if it has one, destroy its
@@ -1141,11 +1270,13 @@ object Textures extends js.Object {
       */
     def remove(key: String): TextureManager = js.native
     def remove(key: Texture): TextureManager = js.native
+    
     /**
       * Removes a key from the Texture Manager but does not destroy the Texture that was using the key.
       * @param key The key to remove from the texture list.
       */
     def removeKey(key: String): TextureManager = js.native
+    
     /**
       * Changes the key being used by a Texture to the new key provided.
       * 
@@ -1157,6 +1288,7 @@ object Textures extends js.Object {
       * @param newKey The new unique string-based key to use for the Texture.
       */
     def renameTexture(currentKey: String, newKey: String): Boolean = js.native
+    
     /**
       * Sets the given Game Objects `texture` and `frame` properties so that it uses
       * the Texture and Frame specified in the `key` and `frame` arguments to this method.
@@ -1178,87 +1310,88 @@ object Textures extends js.Object {
     */
   @js.native
   trait TextureSource extends js.Object {
+    
     /**
       * Currently un-used.
       */
     var compressionAlgorithm: integer = js.native
+    
+    /**
+      * Destroys this Texture Source and nulls the references.
+      */
+    def destroy(): Unit = js.native
+    
     /**
       * Sets the `UNPACK_FLIP_Y_WEBGL` flag the WebGL Texture uses during upload.
       */
     var flipY: Boolean = js.native
+    
     /**
       * The WebGL Texture of the source image. If this TextureSource is driven from a WebGLTexture
       * already, then this is a reference to that WebGLTexture.
       */
     var glTexture: WebGLTexture = js.native
+    
     /**
       * The height of the source image. If not specified in the constructor it will check
       * the `naturalHeight` and then `height` properties of the source image.
       */
     var height: integer = js.native
+    
     /**
       * The image data.
       * 
       * This is either an Image element, Canvas element or a Video Element.
       */
     var image: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement = js.native
-    /**
-      * Is the source image a Canvas Element?
-      */
-    var isCanvas: Boolean = js.native
-    /**
-      * Is the source image a WebGLTexture?
-      */
-    var isGLTexture: Boolean = js.native
-    /**
-      * Are the source image dimensions a power of two?
-      */
-    var isPowerOf2: Boolean = js.native
-    /**
-      * Is the source image a Render Texture?
-      */
-    var isRenderTexture: Boolean = js.native
-    /**
-      * Is the source image a Video Element?
-      */
-    var isVideo: Boolean = js.native
-    /**
-      * The Texture this TextureSource belongs to.
-      */
-    var renderer: CanvasRenderer | WebGLRenderer = js.native
-    /**
-      * The resolution of the source image.
-      */
-    var resolution: Double = js.native
-    /**
-      * The Scale Mode the image will use when rendering.
-      * Either Linear or Nearest.
-      */
-    var scaleMode: Double = js.native
-    /**
-      * The source of the image data.
-      * 
-      * This is either an Image Element, a Canvas Element, a Video Element, a RenderTexture or a WebGLTexture.
-      */
-    var source: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | RenderTexture | WebGLTexture = js.native
-    /**
-      * The Texture this TextureSource belongs to.
-      */
-    var texture: Texture = js.native
-    /**
-      * The width of the source image. If not specified in the constructor it will check
-      * the `naturalWidth` and then `width` properties of the source image.
-      */
-    var width: integer = js.native
-    /**
-      * Destroys this Texture Source and nulls the references.
-      */
-    def destroy(): Unit = js.native
+    
     /**
       * Creates a WebGL Texture, if required, and sets the Texture filter mode.
       * @param game A reference to the Phaser Game instance.
       */
     def init(game: Game): Unit = js.native
+    
+    /**
+      * Is the source image a Canvas Element?
+      */
+    var isCanvas: Boolean = js.native
+    
+    /**
+      * Is the source image a WebGLTexture?
+      */
+    var isGLTexture: Boolean = js.native
+    
+    /**
+      * Are the source image dimensions a power of two?
+      */
+    var isPowerOf2: Boolean = js.native
+    
+    /**
+      * Is the source image a Render Texture?
+      */
+    var isRenderTexture: Boolean = js.native
+    
+    /**
+      * Is the source image a Video Element?
+      */
+    var isVideo: Boolean = js.native
+    
+    /**
+      * The Texture this TextureSource belongs to.
+      */
+    var renderer: CanvasRenderer | WebGLRenderer = js.native
+    
+    /**
+      * The resolution of the source image.
+      */
+    var resolution: Double = js.native
+    
+    /**
+      * The Scale Mode the image will use when rendering.
+      * Either Linear or Nearest.
+      */
+    var scaleMode: Double = js.native
+    
     /**
       * Sets the Filter Mode for this Texture.
       * 
@@ -1268,37 +1401,36 @@ object Textures extends js.Object {
       * @param filterMode The Filter Mode.
       */
     def setFilter(filterMode: FilterMode): Unit = js.native
+    
     /**
       * Sets the `UNPACK_FLIP_Y_WEBGL` flag for the WebGL Texture during texture upload.
       * @param value Should the WebGL Texture be flipped on the Y axis on texture upload or not? Default true.
       */
     def setFlipY(): Unit = js.native
     def setFlipY(value: Boolean): Unit = js.native
+    
+    /**
+      * The source of the image data.
+      * 
+      * This is either an Image Element, a Canvas Element, a Video Element, a RenderTexture or a WebGLTexture.
+      */
+    var source: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | RenderTexture | WebGLTexture = js.native
+    
+    /**
+      * The Texture this TextureSource belongs to.
+      */
+    var texture: Texture = js.native
+    
     /**
       * If this TextureSource is backed by a Canvas and is running under WebGL,
       * it updates the WebGLTexture using the canvas data.
       */
     def update(): Unit = js.native
-  }
-  
-  /**
-    * Filter Types.
-    */
-  @js.native
-  object FilterMode extends js.Object {
-    /**
-      * Linear filter type.
-      */
-    @js.native
-    sealed trait LINEAR extends FilterMode
     
     /**
-      * Nearest neighbor filter type.
+      * The width of the source image. If not specified in the constructor it will check
+      * the `naturalWidth` and then `width` properties of the source image.
       */
-    @js.native
-    sealed trait NEAREST extends FilterMode
-    
+    var width: integer = js.native
   }
-  
 }
-

@@ -4,11 +4,12 @@ import typings.angularCompiler.metadataResolverMod.CompileMetadataResolver
 import typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/aot/compiler", "analyzeFileForInjectables")
 @js.native
 object analyzeFileForInjectables extends js.Object {
+  
   def apply(
     host: NgAnalyzeModulesHost,
     staticSymbolResolver: StaticSymbolResolver,
@@ -16,4 +17,3 @@ object analyzeFileForInjectables extends js.Object {
     fileName: String
   ): NgAnalyzedFileWithInjectables = js.native
 }
-

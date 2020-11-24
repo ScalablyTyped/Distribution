@@ -3,11 +3,12 @@ package typings.tensorflowTfjsLayers
 import typings.tensorflowTfjsLayers.containerMod.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-layers/dist/utils/layer_utils", JSImport.Namespace)
 @js.native
 object layerUtilsMod extends js.Object {
+  
   def printSummary(model: Container): Unit = js.native
   def printSummary(
     model: Container,
@@ -37,4 +38,3 @@ object layerUtilsMod extends js.Object {
     printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
   ): Unit = js.native
 }
-

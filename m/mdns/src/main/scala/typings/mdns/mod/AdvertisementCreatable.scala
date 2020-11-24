@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AdvertisementCreatable
@@ -23,4 +23,3 @@ trait AdvertisementCreatable
       /* callback */ js.Function2[/* error */ DnsSdError, /* service */ Service, Unit], 
       Advertisement
     ]
-

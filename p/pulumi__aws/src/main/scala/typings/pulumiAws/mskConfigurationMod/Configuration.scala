@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/msk/configuration", "Configuration")
 @js.native
@@ -21,36 +21,42 @@ class Configuration protected () extends CustomResource {
     */
   def this(name: String, args: ConfigurationArgs) = this()
   def this(name: String, args: ConfigurationArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * Amazon Resource Name (ARN) of the configuration.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * Description of the configuration.
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * List of Apache Kafka versions which can use this configuration.
     */
   val kafkaVersions: Output_[js.Array[String]] = js.native
+  
   /**
     * Latest revision of the configuration.
     */
   val latestRevision: Output_[Double] = js.native
+  
   /**
     * Name of the configuration.
     */
   val name: Output_[String] = js.native
+  
   /**
     * Contents of the server.properties file. Supported properties are documented in the [MSK Developer Guide](https://docs.aws.amazon.com/msk/latest/developerguide/msk-configuration-properties.html).
     */
   val serverProperties: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/msk/configuration", "Configuration")
 @js.native
 object Configuration extends js.Object {
+  
   /**
     * Get an existing Configuration resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -64,10 +70,10 @@ object Configuration extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Configuration = js.native
   def get(name: String, id: Input[ID], state: ConfigurationState): Configuration = js.native
   def get(name: String, id: Input[ID], state: ConfigurationState, opts: CustomResourceOptions): Configuration = js.native
+  
   /**
     * Returns true if the given object is an instance of Configuration.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/msk/configuration.Configuration */ Boolean = js.native
 }
-

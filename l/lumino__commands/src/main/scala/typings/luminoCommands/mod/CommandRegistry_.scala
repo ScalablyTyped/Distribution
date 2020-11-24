@@ -14,7 +14,7 @@ import typings.luminoVirtualdom.mod.VirtualElement.IRenderer
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/commands", "CommandRegistry")
 @js.native
@@ -22,67 +22,59 @@ import scala.scalajs.js.annotation._
   * Construct a new command registry.
   */
 class CommandRegistry_ () extends js.Object {
+  
   /**
     * Clear the internal pending state.
     */
   var _clearPendingState: js.Any = js.native
+  
   /**
     * Clear the pending timeout.
     */
   var _clearTimer: js.Any = js.native
+  
   var _commandChanged: js.Any = js.native
+  
   var _commandExecuted: js.Any = js.native
+  
   var _commands: js.Any = js.native
+  
   var _exactKeyMatch: js.Any = js.native
+  
   /**
     * Execute the command for the given key binding.
     *
     * If the command is missing or disabled, a warning will be logged.
     */
   var _executeKeyBinding: js.Any = js.native
+  
   var _keyBindingChanged: js.Any = js.native
+  
   var _keyBindings: js.Any = js.native
+  
   var _keydownEvents: js.Any = js.native
+  
   var _keystrokes: js.Any = js.native
+  
   /**
     * Handle the partial match timeout.
     */
   var _onPendingTimeout: js.Any = js.native
+  
   /**
     * Replay the keydown events which were suppressed.
     */
   var _replayKeydownEvents: js.Any = js.native
+  
   var _replaying: js.Any = js.native
+  
   /**
     * Start or restart the pending timeout.
     */
   var _startTimer: js.Any = js.native
+  
   var _timerID: js.Any = js.native
-  /**
-    * A signal emitted when a command has changed.
-    *
-    * #### Notes
-    * This signal is useful for visual representations of commands which
-    * need to refresh when the state of a relevant command has changed.
-    */
-  val commandChanged: ISignal[this.type, ICommandChangedArgs] = js.native
-  /**
-    * A signal emitted when a command has executed.
-    *
-    * #### Notes
-    * Care should be taken when consuming this signal. It is intended to
-    * be used largely for debugging and logging purposes. It should not
-    * be (ab)used for general purpose spying on command execution.
-    */
-  val commandExecuted: ISignal[this.type, ICommandExecutedArgs] = js.native
-  /**
-    * A signal emitted when a key binding is changed.
-    */
-  val keyBindingChanged: ISignal[this.type, IKeyBindingChangedArgs] = js.native
-  /**
-    * A read-only array of the key bindings in the registry.
-    */
-  val keyBindings: js.Array[IKeyBinding] = js.native
+  
   /**
     * Add a command to the registry.
     *
@@ -95,6 +87,7 @@ class CommandRegistry_ () extends js.Object {
     * @throws An error if the given `id` is already registered.
     */
   def addCommand(id: String, options: ICommandOptions): IDisposable = js.native
+  
   /**
     * Add a key binding to the registry.
     *
@@ -117,6 +110,7 @@ class CommandRegistry_ () extends js.Object {
     * is executed.
     */
   def addKeyBinding(options: IKeyBindingOptions): IDisposable = js.native
+  
   /**
     * Get the short form caption for a specific command.
     *
@@ -129,6 +123,7 @@ class CommandRegistry_ () extends js.Object {
     */
   def caption(id: String): String = js.native
   def caption(id: String, args: ReadonlyPartialJSONObject): String = js.native
+  
   /**
     * Get the extra class name for a specific command.
     *
@@ -141,6 +136,26 @@ class CommandRegistry_ () extends js.Object {
     */
   def className(id: String): String = js.native
   def className(id: String, args: ReadonlyPartialJSONObject): String = js.native
+  
+  /**
+    * A signal emitted when a command has changed.
+    *
+    * #### Notes
+    * This signal is useful for visual representations of commands which
+    * need to refresh when the state of a relevant command has changed.
+    */
+  val commandChanged: ISignal[this.type, ICommandChangedArgs] = js.native
+  
+  /**
+    * A signal emitted when a command has executed.
+    *
+    * #### Notes
+    * Care should be taken when consuming this signal. The command system is used
+    * by many components for many user actions. Handlers registered with this
+    * signal must return quickly to ensure the overall application remains responsive.
+    */
+  val commandExecuted: ISignal[this.type, ICommandExecutedArgs] = js.native
+  
   /**
     * Get the dataset for a specific command.
     *
@@ -153,6 +168,7 @@ class CommandRegistry_ () extends js.Object {
     */
   def dataset(id: String): Dataset = js.native
   def dataset(id: String, args: ReadonlyPartialJSONObject): Dataset = js.native
+  
   /**
     * Execute a specific command.
     *
@@ -168,6 +184,7 @@ class CommandRegistry_ () extends js.Object {
     */
   def execute(id: String): js.Promise[_] = js.native
   def execute(id: String, args: ReadonlyPartialJSONObject): js.Promise[_] = js.native
+  
   /**
     * Test whether a specific command is registered.
     *
@@ -176,6 +193,7 @@ class CommandRegistry_ () extends js.Object {
     * @returns `true` if the command is registered, `false` otherwise.
     */
   def hasCommand(id: String): Boolean = js.native
+  
   /**
     * Get the icon renderer for a specific command.
     *
@@ -193,6 +211,7 @@ class CommandRegistry_ () extends js.Object {
     */
   def icon(id: String): js.UndefOr[IRenderer | String] = js.native
   def icon(id: String, args: ReadonlyPartialJSONObject): js.UndefOr[IRenderer | String] = js.native
+  
   /**
     * Get the icon class for a specific command.
     *
@@ -205,6 +224,7 @@ class CommandRegistry_ () extends js.Object {
     */
   def iconClass(id: String): String = js.native
   def iconClass(id: String, args: ReadonlyPartialJSONObject): String = js.native
+  
   /**
     * Get the icon label for a specific command.
     *
@@ -217,6 +237,7 @@ class CommandRegistry_ () extends js.Object {
     */
   def iconLabel(id: String): String = js.native
   def iconLabel(id: String, args: ReadonlyPartialJSONObject): String = js.native
+  
   /**
     * Test whether a specific command is enabled.
     *
@@ -229,6 +250,7 @@ class CommandRegistry_ () extends js.Object {
     */
   def isEnabled(id: String): Boolean = js.native
   def isEnabled(id: String, args: ReadonlyPartialJSONObject): Boolean = js.native
+  
   /**
     * Test whether a specific command is toggled.
     *
@@ -241,6 +263,7 @@ class CommandRegistry_ () extends js.Object {
     */
   def isToggled(id: String): Boolean = js.native
   def isToggled(id: String, args: ReadonlyPartialJSONObject): Boolean = js.native
+  
   /**
     * Test whether a specific command is visible.
     *
@@ -253,6 +276,17 @@ class CommandRegistry_ () extends js.Object {
     */
   def isVisible(id: String): Boolean = js.native
   def isVisible(id: String, args: ReadonlyPartialJSONObject): Boolean = js.native
+  
+  /**
+    * A signal emitted when a key binding is changed.
+    */
+  val keyBindingChanged: ISignal[this.type, IKeyBindingChangedArgs] = js.native
+  
+  /**
+    * A read-only array of the key bindings in the registry.
+    */
+  val keyBindings: js.Array[IKeyBinding] = js.native
+  
   /**
     * Get the display label for a specific command.
     *
@@ -265,12 +299,14 @@ class CommandRegistry_ () extends js.Object {
     */
   def label(id: String): String = js.native
   def label(id: String, args: ReadonlyPartialJSONObject): String = js.native
+  
   /**
     * List the ids of the registered commands.
     *
     * @returns A new array of the registered command ids.
     */
   def listCommands(): js.Array[String] = js.native
+  
   /**
     * Get the mnemonic index for a specific command.
     *
@@ -283,6 +319,7 @@ class CommandRegistry_ () extends js.Object {
     */
   def mnemonic(id: String): Double = js.native
   def mnemonic(id: String, args: ReadonlyPartialJSONObject): Double = js.native
+  
   /**
     * Notify listeners that the state of a command has changed.
     *
@@ -300,6 +337,7 @@ class CommandRegistry_ () extends js.Object {
     */
   def notifyCommandChanged(): Unit = js.native
   def notifyCommandChanged(id: String): Unit = js.native
+  
   /**
     * Process a `'keydown'` event and invoke a matching key binding.
     *
@@ -318,6 +356,7 @@ class CommandRegistry_ () extends js.Object {
     * events will not invoke commands.
     */
   def processKeydownEvent(event: KeyboardEvent): Unit = js.native
+  
   /**
     * Get the usage help text for a specific command.
     *
@@ -331,4 +370,3 @@ class CommandRegistry_ () extends js.Object {
   def usage(id: String): String = js.native
   def usage(id: String, args: ReadonlyPartialJSONObject): String = js.native
 }
-

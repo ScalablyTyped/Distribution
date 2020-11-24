@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__grid-list
 
-Typings are for version 0.35
+Typings are for version 4.0.0
 
 ## Library description:
 The Material Components for the web grid list component
@@ -10,9 +10,9 @@ The Material Components for the web grid list component
 | ------------------ | :-------------: |
 | Full name          | @material/grid-list |
 | Keywords           | material components, material design, grid list |
-| # releases         | 156 |
-| # dependents       | 13 |
-| # downloads        | 1005532 |
+| # releases         | 158 |
+| # dependents       | 11 |
+| # downloads        | 980136 |
 | # stars            | 0 |
 
 ## Links
@@ -24,7 +24,7 @@ The Material Components for the web grid list component
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

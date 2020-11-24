@@ -2,7 +2,7 @@ package typings.ydnDb.global.ydn.db
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ydn.db.Key")
 @js.native
@@ -13,4 +13,3 @@ class Key protected ()
   def this(store_name: String, id: js.Any) = this()
   def this(store_name: String, id: js.Any, parent_key: typings.ydnDb.ydn.db.Key) = this()
 }
-

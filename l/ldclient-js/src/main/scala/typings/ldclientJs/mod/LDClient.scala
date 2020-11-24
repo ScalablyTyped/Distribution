@@ -3,10 +3,11 @@ package typings.ldclientJs.mod
 import typings.ldclientJsCommon.mod.LDClientBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LDClient extends LDClientBase {
+  
   /**
     * Allows you to wait until the client has received goals data from LaunchDarkly.
     *
@@ -25,4 +26,3 @@ trait LDClient extends LDClientBase {
     */
   def waitUntilGoalsReady(): js.Promise[Unit] = js.native
 }
-

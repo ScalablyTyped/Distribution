@@ -4,10 +4,11 @@ import typings.angularCore.angularCoreNumbers.`0`
 import typings.angularCore.angularCoreNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NodeCheckFn extends js.Object {
+  
   def apply(
     view: ViewData,
     nodeIndex: Double,
@@ -25,4 +26,3 @@ trait NodeCheckFn extends js.Object {
   ): js.Any = js.native
   def apply(view: ViewData, nodeIndex: Double, argStyle: `1`, values: js.Array[_]): js.Any = js.native
 }
-

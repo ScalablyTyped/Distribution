@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientScheduler.AppointmentDrag event.
@@ -18,4 +18,3 @@ class ASPxClientAppointmentDragEventArgs protected ()
     */
   def this(mouseEvent: js.Any, dragInformation: js.Array[typings.devexpressWeb.ASPxClientAppointmentDragInfo]) = this()
 }
-

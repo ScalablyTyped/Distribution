@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.allModelClassesMod.datatypes
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.appservicesMod.appservices.AppServiceAction
 import typings.mendixmodelsdk.appservicesMod.appservices.AppServiceActionParameter
 import typings.mendixmodelsdk.baseModelMod.IModel
@@ -19,11 +20,12 @@ import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterBase
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterObject
 import typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling
 import typings.mendixmodelsdk.restMod.rest.RestOperationParameter
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedParameter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * In version 7.9.0: introduced
@@ -37,23 +39,22 @@ class ListType protected ()
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datatypes.ListType")
 @js.native
 object ListType extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'parameterType' property
@@ -63,6 +64,7 @@ object ListType extends js.Object {
     *  7.9.0 and higher
     */
   def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'actionReturnType' property
@@ -72,6 +74,7 @@ object ListType extends js.Object {
     *  7.9.0 and higher
     */
   def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'type' property
@@ -81,6 +84,7 @@ object ListType extends js.Object {
     *  7.9.0 and higher
     */
   def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'variableType' property
@@ -90,6 +94,7 @@ object ListType extends js.Object {
     *  7.9.0 and higher
     */
   def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'columnType' property
@@ -99,6 +104,7 @@ object ListType extends js.Object {
     *  7.9.0 and higher
     */
   def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'parameterType' property
@@ -108,6 +114,7 @@ object ListType extends js.Object {
     *  7.9.0 and higher
     */
   def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'parameterType' property
@@ -117,6 +124,7 @@ object ListType extends js.Object {
     *  7.9.0 and higher
     */
   def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'parameterType' property
@@ -126,6 +134,7 @@ object ListType extends js.Object {
     *  7.16.0 and higher
     */
   def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'microflowReturnType' property
@@ -135,6 +144,7 @@ object ListType extends js.Object {
     *  7.9.0 and higher
     */
   def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'parameterType' property
@@ -144,6 +154,7 @@ object ListType extends js.Object {
     *  7.9.0 and higher
     */
   def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'variableType' property
@@ -153,6 +164,7 @@ object ListType extends js.Object {
     *  7.9.0 and higher
     */
   def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'operationReturnType' property
@@ -162,6 +174,7 @@ object ListType extends js.Object {
     *  7.9.0 and higher
     */
   def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'parameterType' property
@@ -171,6 +184,7 @@ object ListType extends js.Object {
     *  7.9.0 and higher
     */
   def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'type' property
@@ -180,6 +194,7 @@ object ListType extends js.Object {
     *  7.17.0 and higher
     */
   def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'variableType' property
@@ -189,6 +204,7 @@ object ListType extends js.Object {
     *  7.9.0 and higher
     */
   def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'type' property
@@ -198,5 +214,8 @@ object ListType extends js.Object {
     *  7.9.0 and higher
     */
   def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

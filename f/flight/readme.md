@@ -12,7 +12,7 @@ Simple flat file database
 | Keywords           | database, flat, file |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1206 |
+| # downloads        | 478 |
 | # stars            | 0 |
 
 ## Links

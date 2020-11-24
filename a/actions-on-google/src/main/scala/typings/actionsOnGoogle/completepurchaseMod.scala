@@ -6,11 +6,12 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3CompletePurchase
 import typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3CompletePurchaseValueSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/transaction/completepurchase", JSImport.Namespace)
 @js.native
 object completepurchaseMod extends js.Object {
+  
   @js.native
   /**
     * @param options The raw {@link GoogleActionsTransactionsV3CompletePurchaseValueSpec}
@@ -25,4 +26,3 @@ object completepurchaseMod extends js.Object {
   
   type CompletePurchaseArgument = GoogleActionsTransactionsV3CompletePurchaseValue
 }
-

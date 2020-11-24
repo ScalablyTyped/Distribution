@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.pagesMod.pages
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
 import typings.mendixmodelsdk.instancesMod.IList
@@ -10,12 +11,13 @@ import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayout
 import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayoutCallArgument
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.reportsMod.reports.ReportPane
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/header relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/header relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header")
 @js.native
@@ -25,43 +27,44 @@ class Header protected () extends Widget {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FHeader: IModel = js.native
+  
   /**
     * In version 7.15.0: deleted
     */
   def leftWidget: Widget | Null = js.native
   def leftWidget_=(newValue: Widget | Null): Unit = js.native
+  
   /**
     * In version 7.15.0: introduced
     */
   def leftWidgets: IList[Widget] = js.native
+  
   /**
     * In version 7.15.0: deleted
     */
   def rightWidget: Widget | Null = js.native
   def rightWidget_=(newValue: Widget | Null): Unit = js.native
+  
   /**
     * In version 7.15.0: introduced
     */
   def rightWidgets: IList[Widget] = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header")
 @js.native
 object Header extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -71,6 +74,7 @@ object Header extends js.Object {
     *  7.7.0 to 7.14.0
     */
   def createInBuildingBlockUnderWidget(container: BuildingBlock): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -80,6 +84,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInBuildingBlockUnderWidgets(container: BuildingBlock): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'footerWidget' property
@@ -89,6 +94,7 @@ object Header extends js.Object {
     *  6.7.0 to 7.14.0
     */
   def createInDataViewUnderFooterWidget(container: DataView): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'footerWidgets' property
@@ -98,6 +104,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInDataViewUnderFooterWidgets(container: DataView): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -107,6 +114,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInDataViewUnderWidget(container: DataView): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -116,6 +124,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInDataViewUnderWidgets(container: DataView): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -125,6 +134,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInDivContainerUnderWidget(container: DivContainer): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -134,6 +144,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInDivContainerUnderWidgets(container: DivContainer): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -143,6 +154,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInGroupBoxUnderWidget(container: GroupBox): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -152,6 +164,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInGroupBoxUnderWidgets(container: GroupBox): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'leftWidget' property
@@ -161,6 +174,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInHeaderUnderLeftWidget(container: Header): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'leftWidgets' property
@@ -170,6 +184,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInHeaderUnderLeftWidgets(container: Header): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'rightWidget' property
@@ -179,6 +194,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInHeaderUnderRightWidget(container: Header): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'rightWidgets' property
@@ -188,6 +204,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInHeaderUnderRightWidgets(container: Header): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -197,6 +214,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -206,6 +224,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -215,6 +234,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -224,6 +244,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -233,6 +254,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInLayoutUnderWidget(container: Layout): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -242,6 +264,7 @@ object Header extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInLayoutUnderWidgets(container: Layout): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -251,6 +274,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInListViewTemplateUnderWidget(container: ListViewTemplate): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -260,6 +284,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInListViewTemplateUnderWidgets(container: ListViewTemplate): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -269,6 +294,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInListViewUnderWidget(container: ListView): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -278,6 +304,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInListViewUnderWidgets(container: ListView): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -287,6 +314,7 @@ object Header extends js.Object {
     *  7.1.0 to 7.14.0
     */
   def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -296,6 +324,7 @@ object Header extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'sidebarWidgets' property
@@ -305,6 +334,7 @@ object Header extends js.Object {
     *  8.5.0 and higher
     */
   def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -314,6 +344,7 @@ object Header extends js.Object {
     *  8.0.0 and higher
     */
   def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'headerWidget' property
@@ -323,6 +354,7 @@ object Header extends js.Object {
     *  7.22.0 to 7.23.0
     */
   def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -332,6 +364,7 @@ object Header extends js.Object {
     *  7.21.0 to 7.23.0
     */
   def createInNativeLayoutUnderWidgets(container: NativeLayout): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -341,6 +374,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInNavigationListItemUnderWidget(container: NavigationListItem): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -350,6 +384,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInNavigationListItemUnderWidgets(container: NavigationListItem): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'parameterWidget' property
@@ -359,6 +394,7 @@ object Header extends js.Object {
     *  6.0.0 to 6.9.0
     */
   def createInReportPaneUnderParameterWidget(container: ReportPane): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'reportWidget' property
@@ -368,6 +404,7 @@ object Header extends js.Object {
     *  6.0.0 to 6.9.0
     */
   def createInReportPaneUnderReportWidget(container: ReportPane): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -377,6 +414,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -386,6 +424,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -395,6 +434,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInSnippetUnderWidget(container: Snippet): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -404,6 +444,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInSnippetUnderWidgets(container: Snippet): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'firstWidget' property
@@ -413,6 +454,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInSplitPaneUnderFirstWidget(container: SplitPane): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'firstWidgets' property
@@ -422,6 +464,7 @@ object Header extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInSplitPaneUnderFirstWidgets(container: SplitPane): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'secondWidget' property
@@ -431,6 +474,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInSplitPaneUnderSecondWidget(container: SplitPane): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'secondWidgets' property
@@ -440,6 +484,7 @@ object Header extends js.Object {
     *  7.15.0 to 7.23.0
     */
   def createInSplitPaneUnderSecondWidgets(container: SplitPane): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -449,6 +494,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInTabPageUnderWidget(container: TabPage): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -458,6 +504,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInTabPageUnderWidgets(container: TabPage): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -467,6 +514,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInTableCellUnderWidget(container: TableCell): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -476,6 +524,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInTableCellUnderWidgets(container: TableCell): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widget' property
@@ -485,6 +534,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -494,6 +544,7 @@ object Header extends js.Object {
     *  7.15.0 and higher
     */
   def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -503,6 +554,7 @@ object Header extends js.Object {
     *  6.0.0 to 7.14.0
     */
   def createInVerticalFlowUnderWidgets(container: VerticalFlow): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -512,6 +564,7 @@ object Header extends js.Object {
     *  8.0.0 and higher
     */
   def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): Header = js.native
+  
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
@@ -521,5 +574,8 @@ object Header extends js.Object {
     *  8.2.0 and higher
     */
   def createInWidgetValueUnderWidgets(container: WidgetValue): Header = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

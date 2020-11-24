@@ -6,12 +6,12 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SmsDeviceMessageStore extends ISmsDeviceMessageStore
-
 object SmsDeviceMessageStore {
+  
   @scala.inline
   def apply(
     deleteMessageAsync: Double => IAsyncAction,
@@ -24,4 +24,3 @@ object SmsDeviceMessageStore {
     __obj.asInstanceOf[SmsDeviceMessageStore]
   }
 }
-

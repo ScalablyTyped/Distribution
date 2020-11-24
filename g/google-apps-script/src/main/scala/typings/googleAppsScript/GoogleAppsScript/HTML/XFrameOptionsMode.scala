@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.HTML
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait XFrameOptionsMode extends js.Object
-
 /**
   * An enum representing the X-Frame-Options modes that can be used for client-side HtmlService scripts. These values can be accessed from HtmlService.XFrameOptionsMode,
   * and set by calling HtmlOutput.setXFrameOptionsMode(mode).
@@ -24,11 +23,10 @@ sealed trait XFrameOptionsMode extends js.Object
 @JSGlobal("GoogleAppsScript.HTML.XFrameOptionsMode")
 @js.native
 object XFrameOptionsMode extends js.Object {
+  
   @js.native
   sealed trait ALLOWALL extends XFrameOptionsMode
   
   @js.native
   sealed trait DEFAULT extends XFrameOptionsMode
-  
 }
-

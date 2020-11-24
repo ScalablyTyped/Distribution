@@ -6,13 +6,23 @@ import typings.std.SVGGElement
 import typings.std.SVGSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3-simple-slider", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def sliderBottom[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
+  
+  def sliderLeft[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
+  
+  def sliderRight[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
+  
+  def sliderTop[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
+  
   @js.native
   trait Slider[Domain] extends js.Object {
+    
     /**
       * Render the slider to the given _context_, which may be either a [selection](https://github.com/d3/d3-selection) of SVG containers (either SVG or G elements)
       * or a corresponding [transition](https://github.com/d3/d3-transition).
@@ -21,6 +31,7 @@ object mod extends js.Object {
       */
     def apply(context: Selection_[SVGGElement | SVGSVGElement, _, _, _]): Unit = js.native
     def apply(context: TransitionLike[SVGGElement | SVGSVGElement, _]): Unit = js.native
+    
     /**
       * Gets the current domain underlying the slider.
       */
@@ -31,6 +42,7 @@ object mod extends js.Object {
       * @param domain The domain to be used for slider generation.
       */
     def domain(domain: js.Tuple2[Double, Double]): this.type = js.native
+    
     /**
       * Returns the callback for the specified typenames, if any.
       * If multiple typenames are specified, the first matching callback is returned.
@@ -56,6 +68,7 @@ object mod extends js.Object {
       * @param types An event typename.
       */
     def on(typenames: String, callback: Null): this.type = js.native
+    
     /**
       * Returns the currently set tick format function, which defaults to null.
       */
@@ -75,6 +88,7 @@ object mod extends js.Object {
       * @param format null
       */
     def tickFormat(format: Null): this.type = js.native
+    
     /**
       * Returns the current tick values, which defaults to null.
       */
@@ -97,6 +111,7 @@ object mod extends js.Object {
       * @param values null
       */
     def tickValues(values: Null): this.type = js.native
+    
     def ticks(): js.Array[Double] = js.native
     /**
       * To generate twenty ticks:
@@ -112,6 +127,15 @@ object mod extends js.Object {
   
   @js.native
   trait SliderScale[Domain] extends js.Object {
+    
+    def apply(x: Domain): js.UndefOr[Double] = js.native
+    
+    def copy(): this.type = js.native
+    
+    def domain(): js.Array[Domain] = js.native
+    
+    def range(): js.Array[Double] = js.native
+    
     var tickFormat: js.UndefOr[
         js.Function2[
           /* count */ js.UndefOr[Double], 
@@ -119,18 +143,11 @@ object mod extends js.Object {
           js.Function1[/* d */ Double, String]
         ]
       ] = js.native
+    
     var ticks: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], js.Array[Domain]]] = js.native
-    def apply(x: Domain): js.UndefOr[Double] = js.native
-    def copy(): this.type = js.native
-    def domain(): js.Array[Domain] = js.native
-    def range(): js.Array[Double] = js.native
   }
   
-  def sliderBottom[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
-  def sliderLeft[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
-  def sliderRight[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
-  def sliderTop[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
   type SliderContainerElement = SVGSVGElement | SVGGElement
+  
   type SliderDomain = Double
 }
-

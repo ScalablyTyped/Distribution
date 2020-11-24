@@ -11,8 +11,8 @@ wake up on lan
 | Full name          | wol |
 | Keywords           | wol, wake, lan |
 | # releases         | 4 |
-| # dependents       | 9 |
-| # downloads        | 12833 |
+| # dependents       | 10 |
+| # downloads        | 17273 |
 | # stars            | 0 |
 
 ## Links

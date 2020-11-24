@@ -6,16 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataflow/v1b3", "dataflow_v1b3.Resource$Projects$Locations$Jobs")
 @js.native
 class ResourceProjectsLocationsJobs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var debug: ResourceProjectsLocationsJobsDebug = js.native
-  var messages: ResourceProjectsLocationsJobsMessages = js.native
-  var workItems: ResourceProjectsLocationsJobsWorkitems = js.native
+  
   /**
     * dataflow.projects.locations.jobs.create
     * @desc Creates a Cloud Dataflow job.  To create a job, we recommend using
@@ -52,6 +51,9 @@ class ResourceProjectsLocationsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
+  var debug: ResourceProjectsLocationsJobsDebug = js.native
+  
   /**
     * dataflow.projects.locations.jobs.get
     * @desc Gets the state of the specified Cloud Dataflow job.  To get the
@@ -88,6 +90,7 @@ class ResourceProjectsLocationsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * dataflow.projects.locations.jobs.getMetrics
     * @desc Request the job status.  To request the status of a job, we
@@ -127,6 +130,7 @@ class ResourceProjectsLocationsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJobMetrics]
   ): Unit = js.native
+  
   /**
     * dataflow.projects.locations.jobs.list
     * @desc List the jobs of a project.  To list the jobs of a project in a
@@ -169,6 +173,9 @@ class ResourceProjectsLocationsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListJobsResponse]
   ): Unit = js.native
+  
+  var messages: ResourceProjectsLocationsJobsMessages = js.native
+  
   /**
     * dataflow.projects.locations.jobs.snapshot
     * @desc Snapshot the state of a streaming job.
@@ -203,6 +210,7 @@ class ResourceProjectsLocationsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSnapshot]
   ): Unit = js.native
+  
   /**
     * dataflow.projects.locations.jobs.update
     * @desc Updates the state of an existing Cloud Dataflow job.  To update the
@@ -239,5 +247,6 @@ class ResourceProjectsLocationsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
+  var workItems: ResourceProjectsLocationsJobsWorkitems = js.native
 }
-

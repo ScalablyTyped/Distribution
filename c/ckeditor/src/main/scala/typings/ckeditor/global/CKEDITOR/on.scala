@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ckeditor.CKEDITOR.eventInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CKEDITOR.on")
 @js.native
 object on extends js.Object {
+  
   def apply(eventName: String, listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit]): Unit = js.native
   def apply(
     eventName: String,
@@ -56,4 +57,3 @@ object on extends js.Object {
     priority: Double
   ): Unit = js.native
 }
-

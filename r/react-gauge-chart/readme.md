@@ -11,8 +11,8 @@ React component for displaying a gauge chart, using D3.js
 | Full name          | react-gauge-chart |
 | Keywords           | visualization, react, gauge chart, speedometer |
 | # releases         | 16 |
-| # dependents       | 1 |
-| # downloads        | 48049 |
+| # dependents       | 2 |
+| # downloads        | 93382 |
 | # stars            | 0 |
 
 ## Links

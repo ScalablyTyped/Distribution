@@ -1,0 +1,157 @@
+package typings.typeorm.mongodbTypingsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait MapReduceOptions extends js.Object {
+  
+  /**
+    * Allow driver to bypass schema validation in MongoDB 3.2 or higher.
+    */
+  var bypassDocumentValidation: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * Finalize function.
+    */
+  @JSName("finalize")
+  var finalize_FMapReduceOptions: js.UndefOr[js.Function | String] = js.native
+  
+  /**
+    * It is possible to make the execution stay in JS. Provided in MongoDB > 2.0.X.
+    */
+  var jsMode: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * Keep temporary data.
+    */
+  var keeptemp: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * Number of objects to return from collection.
+    */
+  var limit: js.UndefOr[scala.Double] = js.native
+  
+  /**
+    * Sets the output target for the map reduce job.
+    * {inline:1} | {replace:'collectionName'} | {merge:'collectionName'} | {reduce:'collectionName'}.
+    */
+  var out: js.UndefOr[js.Object] = js.native
+  
+  /**
+    * Query filter object.
+    */
+  var query: js.UndefOr[js.Object] = js.native
+  
+  /**
+    * The preferred read preference (ReadPreference.PRIMARY, ReadPreference.PRIMARY_PREFERRED,
+    * ReadPreference.SECONDARY, ReadPreference.SECONDARY_PREFERRED, ReadPreference.NEAREST).
+    */
+  var readPreference: js.UndefOr[ReadPreference | String] = js.native
+  
+  /**
+    * Can pass in variables that can be access from map/reduce/finalize.
+    */
+  var scope: js.UndefOr[js.Object] = js.native
+  
+  /**
+    * Sorts the input objects using this key. Useful for optimization, like sorting by the emit key for fewer reduces.
+    */
+  var sort: js.UndefOr[js.Object] = js.native
+  
+  /**
+    * Provide statistics on job execution time.
+    */
+  var verbose: js.UndefOr[Boolean] = js.native
+}
+object MapReduceOptions {
+  
+  @scala.inline
+  def apply(): MapReduceOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[MapReduceOptions]
+  }
+  
+  @scala.inline
+  implicit class MapReduceOptionsOps[Self <: MapReduceOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setBypassDocumentValidation(value: Boolean): Self = this.set("bypassDocumentValidation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteBypassDocumentValidation: Self = this.set("bypassDocumentValidation", js.undefined)
+    
+    @scala.inline
+    def setFinalize(value: js.Function | String): Self = this.set("finalize", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteFinalize: Self = this.set("finalize", js.undefined)
+    
+    @scala.inline
+    def setJsMode(value: Boolean): Self = this.set("jsMode", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteJsMode: Self = this.set("jsMode", js.undefined)
+    
+    @scala.inline
+    def setKeeptemp(value: Boolean): Self = this.set("keeptemp", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteKeeptemp: Self = this.set("keeptemp", js.undefined)
+    
+    @scala.inline
+    def setLimit(value: scala.Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    
+    @scala.inline
+    def setOut(value: js.Object): Self = this.set("out", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteOut: Self = this.set("out", js.undefined)
+    
+    @scala.inline
+    def setQuery(value: js.Object): Self = this.set("query", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    
+    @scala.inline
+    def setReadPreference(value: ReadPreference | String): Self = this.set("readPreference", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
+    
+    @scala.inline
+    def setScope(value: js.Object): Self = this.set("scope", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+    
+    @scala.inline
+    def setSort(value: js.Object): Self = this.set("sort", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    
+    @scala.inline
+    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteVerbose: Self = this.set("verbose", js.undefined)
+  }
+}

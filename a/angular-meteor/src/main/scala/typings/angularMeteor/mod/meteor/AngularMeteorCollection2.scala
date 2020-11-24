@@ -3,7 +3,7 @@ package typings.angularMeteor.mod.meteor
 import typings.std.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object that connects a Meteor Collection to an AngularJS scope variable,
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AngularMeteorCollection2[T, U] extends Array[T] {
+  
   /**
     * @param [keys] - The keys of the object to remove from the Meteor Collection.
     *               - If nothing is passed, the method removes all the documents from the AngularMeteorCollection.
@@ -22,6 +23,7 @@ trait AngularMeteorCollection2[T, U] extends Array[T] {
   def remove(keys: String): Unit = js.native
   def remove(keys: js.Array[Double | String]): Unit = js.native
   def remove(keys: Double): Unit = js.native
+  
   /**
     * @param [docs] - The docs to save to the Meteor Collection.
     *               - If the docs parameter is empty, the method saves everything in the AngularMeteorCollection as is.
@@ -31,6 +33,7 @@ trait AngularMeteorCollection2[T, U] extends Array[T] {
   def save(): Unit = js.native
   def save(docs: U): Unit = js.native
   def save(docs: js.Array[U]): Unit = js.native
+  
   /**
     * A shorten (Syntactic sugar) function for the $meteor.subscribe function.
     * Takes only one parameter and not returns a promise like $meteor.subscribe does.
@@ -39,4 +42,3 @@ trait AngularMeteorCollection2[T, U] extends Array[T] {
     */
   def subscribe(subscriptionName: String): AngularMeteorCollection2[T, U] = js.native
 }
-

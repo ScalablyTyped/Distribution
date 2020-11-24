@@ -12,7 +12,7 @@ A powerful tooltip and menu component library for react.
 | Keywords           | tooltip, notification, menu, react, react-component |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 24051 |
+| # downloads        | 29878 |
 | # stars            | 0 |
 
 ## Links

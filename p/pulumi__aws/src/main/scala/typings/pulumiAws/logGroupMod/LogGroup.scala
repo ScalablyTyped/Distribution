@@ -14,7 +14,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/cloudwatch/logGroup", "LogGroup")
 @js.native
@@ -30,33 +30,29 @@ class LogGroup protected () extends CustomResource {
   def this(name: String, args: LogGroupArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: LogGroupArgs, opts: CustomResourceOptions) = this()
+  
   /**
-    * The Amazon Resource Name (ARN) specifying the log group.
+    * The Amazon Resource Name (ARN) specifying the log group. Any `:*` suffix added by the API, denoting all CloudWatch Log Streams under the CloudWatch Log Group, is removed for greater compatibility with other AWS services that do not accept the suffix.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The ARN of the KMS Key to use when encrypting log data. Please note, after the AWS KMS CMK is disassociated from the log group,
     * AWS CloudWatch Logs stops encrypting newly ingested data for the log group. All previously ingested data remains encrypted, and AWS CloudWatch Logs requires
     * permissions for the CMK whenever the encrypted data is requested.
     */
   val kmsKeyId: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The name of the log group. If omitted, this provider will assign a random, unique name.
     */
   val name: Output_[String] = js.native
+  
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
   val namePrefix: Output_[js.UndefOr[String]] = js.native
-  /**
-    * Specifies the number of days
-    * you want to retain log events in the specified log group.  Possible values are: 1, 3, 5, 7, 14, 30, 60, 90, 120, 150, 180, 365, 400, 545, 731, 1827, and 3653.
-    */
-  val retentionInDays: Output_[js.UndefOr[Double]] = js.native
-  /**
-    * A map of tags to assign to the resource.
-    */
-  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  
   /**
     * Creates a new subscription to events fired from this LogGroup to the callback provided,
     * along with options to control the behavior of the subscription.
@@ -79,6 +75,7 @@ class LogGroup protected () extends CustomResource {
     args: LogGroupEventSubscriptionArgs,
     opts: ComponentResourceOptions
   ): LogGroupEventSubscription = js.native
+  
   /**
     * Creates a new subscription to events fired from this LogGroup to the handler provided,
     * along with options to control the behavior of the subscription.
@@ -99,12 +96,24 @@ class LogGroup protected () extends CustomResource {
     args: LogGroupEventSubscriptionArgs,
     opts: ComponentResourceOptions
   ): LogGroupEventSubscription = js.native
+  
+  /**
+    * Specifies the number of days
+    * you want to retain log events in the specified log group.  Possible values are: 1, 3, 5, 7, 14, 30, 60, 90, 120, 150, 180, 365, 400, 545, 731, 1827, 3653, and 0.
+    * If you select 0, the events in the log group are always retained and never expire.
+    */
+  val retentionInDays: Output_[js.UndefOr[Double]] = js.native
+  
+  /**
+    * A map of tags to assign to the resource.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/cloudwatch/logGroup", "LogGroup")
 @js.native
 object LogGroup extends js.Object {
+  
   /**
     * Get an existing LogGroup resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -118,10 +127,10 @@ object LogGroup extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LogGroup = js.native
   def get(name: String, id: Input[ID], state: LogGroupState): LogGroup = js.native
   def get(name: String, id: Input[ID], state: LogGroupState, opts: CustomResourceOptions): LogGroup = js.native
+  
   /**
     * Returns true if the given object is an instance of LogGroup.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logGroup.LogGroup */ Boolean = js.native
 }
-

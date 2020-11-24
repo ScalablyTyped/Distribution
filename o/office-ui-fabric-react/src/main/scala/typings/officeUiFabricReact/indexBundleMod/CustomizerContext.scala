@@ -5,9 +5,8 @@ import typings.react.mod.Context
 import typings.uifabricUtilities.customizerContextMod.ICustomizerContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "CustomizerContext")
 @js.native
 object CustomizerContext extends TopLevel[Context[ICustomizerContext]]
-

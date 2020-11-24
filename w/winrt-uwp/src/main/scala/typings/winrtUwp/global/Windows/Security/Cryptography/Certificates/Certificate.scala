@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Security.Cryptography.Certificates
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a cryptography certificate. */
 @JSGlobal("Windows.Security.Cryptography.Certificates.Certificate")
@@ -16,4 +16,3 @@ class Certificate protected ()
     */
   def this(certBlob: IBuffer) = this()
 }
-

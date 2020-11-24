@@ -11,8 +11,8 @@ Memory Efficient Serialization Library
 | Full name          | flatbuffers |
 | Keywords           | flatbuffers |
 | # releases         | 6 |
-| # dependents       | 30 |
-| # downloads        | 473480 |
+| # dependents       | 41 |
+| # downloads        | 1411910 |
 | # stars            | 0 |
 
 ## Links

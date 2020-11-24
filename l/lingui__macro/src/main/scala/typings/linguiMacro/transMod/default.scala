@@ -3,10 +3,9 @@ package typings.linguiMacro.transMod
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lingui/macro/Trans", JSImport.Default)
 @js.native
 class default ()
   extends Component[TransPropsWithoutI18n, js.Object, js.Any]
-

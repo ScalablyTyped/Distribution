@@ -2,11 +2,10 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ConditionalTextOperator extends js.Object
-
 /**
   *
   * Represents the operator of the text conditional format type.
@@ -16,6 +15,7 @@ sealed trait ConditionalTextOperator extends js.Object
 @JSGlobal("Excel.ConditionalTextOperator")
 @js.native
 object ConditionalTextOperator extends js.Object {
+  
   @js.native
   sealed trait beginsWith extends ConditionalTextOperator
   
@@ -30,6 +30,4 @@ object ConditionalTextOperator extends js.Object {
   
   @js.native
   sealed trait notContains extends ConditionalTextOperator
-  
 }
-

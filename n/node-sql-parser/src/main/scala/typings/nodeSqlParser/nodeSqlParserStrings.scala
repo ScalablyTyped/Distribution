@@ -3,9 +3,64 @@ package typings.nodeSqlParser
 import typings.nodeSqlParser.typesMod.WhilteListCheckMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeSqlParserStrings {
+  
+  @scala.inline
+  def ASC: ASC = "ASC".asInstanceOf[ASC]
+  
+  @scala.inline
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  
+  @scala.inline
+  def DESC: DESC = "DESC".asInstanceOf[DESC]
+  
+  @scala.inline
+  def DISTINCT: DISTINCT = "DISTINCT".asInstanceOf[DISTINCT]
+  
+  @scala.inline
+  def aggr_func: aggr_func = "aggr_func".asInstanceOf[aggr_func]
+  
+  @scala.inline
+  def alter: alter = "alter".asInstanceOf[alter]
+  
+  @scala.inline
+  def column: column = "column".asInstanceOf[column]
+  
+  @scala.inline
+  def column_ref: column_ref = "column_ref".asInstanceOf[column_ref]
+  
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  
+  @scala.inline
+  def dual: dual = "dual".asInstanceOf[dual]
+  
+  @scala.inline
+  def expr_list: expr_list = "expr_list".asInstanceOf[expr_list]
+  
+  @scala.inline
+  def insert: insert = "insert".asInstanceOf[insert]
+  
+  @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
+  
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  
+  @scala.inline
+  def star: star = "star".asInstanceOf[star]
+  
+  @scala.inline
+  def table: table = "table".asInstanceOf[table]
+  
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  
+  @scala.inline
+  def use: use = "use".asInstanceOf[use]
+  
   @js.native
   sealed trait ASC extends js.Object
   
@@ -59,42 +114,4 @@ object nodeSqlParserStrings {
   
   @js.native
   sealed trait use extends js.Object
-  
-  @scala.inline
-  def ASC: ASC = "ASC".asInstanceOf[ASC]
-  @scala.inline
-  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
-  @scala.inline
-  def DESC: DESC = "DESC".asInstanceOf[DESC]
-  @scala.inline
-  def DISTINCT: DISTINCT = "DISTINCT".asInstanceOf[DISTINCT]
-  @scala.inline
-  def aggr_func: aggr_func = "aggr_func".asInstanceOf[aggr_func]
-  @scala.inline
-  def alter: alter = "alter".asInstanceOf[alter]
-  @scala.inline
-  def column: column = "column".asInstanceOf[column]
-  @scala.inline
-  def column_ref: column_ref = "column_ref".asInstanceOf[column_ref]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def dual: dual = "dual".asInstanceOf[dual]
-  @scala.inline
-  def expr_list: expr_list = "expr_list".asInstanceOf[expr_list]
-  @scala.inline
-  def insert: insert = "insert".asInstanceOf[insert]
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def star: star = "star".asInstanceOf[star]
-  @scala.inline
-  def table: table = "table".asInstanceOf[table]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
-  @scala.inline
-  def use: use = "use".asInstanceOf[use]
 }
-

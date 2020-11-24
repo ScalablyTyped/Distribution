@@ -10,13 +10,13 @@ Generate a slug – transliteration with a lot of options
 | ------------------ | :-------------: |
 | Full name          | speakingurl |
 | Keywords           | slug, slugify, speakingurl, transliteration, permalink, seo, url, nice url, static url, clean url, pretty url, nice looking url, user friendly url, seo friendly url |
-| # releases         | 1 |
-| # dependents       | 77 |
-| # downloads        | 2056207 |
+| # releases         | 0 |
+| # dependents       | 93 |
+| # downloads        | 2937359 |
 | # stars            | 20 |
 
 ## Links
-- [Homepage](http://pid.github.io/speakingurl/)
+- [Homepage](https://github.com/pid/speakingurl#readme)
 - [Bugs](https://github.com/pid/speakingurl/issues)
 - [Repository](https://github.com/pid/speakingurl)
 - [Npm](https://www.npmjs.com/package/speakingurl)

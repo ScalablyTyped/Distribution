@@ -3,7 +3,7 @@ package typings.semver.semverMod
 import typings.semver.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semver/classes/semver", JSImport.Namespace)
 @js.native
@@ -15,4 +15,3 @@ class ^ protected () extends SemVer {
   def this(version: SemVer, optionsOrLoose: Boolean) = this()
   def this(version: SemVer, optionsOrLoose: Options) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.vscode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Thenable is a common denominator between ES6 promises, Q, jquery.Deferred, WinJS.Promise,
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Thenable[T] extends js.Object {
+  
   /**
     * Attaches callbacks for the resolution and/or rejection of the Promise.
     * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -29,4 +30,3 @@ trait Thenable[T] extends js.Object {
     onrejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult] | Unit]
   ): Thenable[TResult] = js.native
 }
-

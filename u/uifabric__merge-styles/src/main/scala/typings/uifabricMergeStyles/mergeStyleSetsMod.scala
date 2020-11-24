@@ -8,11 +8,12 @@ import typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly
 import typings.uifabricMergeStyles.uifabricMergeStylesBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uifabric/merge-styles/lib/mergeStyleSets", JSImport.Namespace)
 @js.native
 object mergeStyleSetsMod extends js.Object {
+  
   @JSName("mergeCssSets")
   def mergeCssSets_false[TStyleSet](styleSets: js.Array[js.UndefOr[TStyleSet | `false` | Null]]): IProcessedStyleSet[TStyleSet] = js.native
   @JSName("mergeCssSets")
@@ -66,6 +67,7 @@ object mergeStyleSetsMod extends js.Object {
   ): IProcessedStyleSet[
     ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2] with ObjectOnly[TStyleSet3] with ObjectOnly[TStyleSet4]
   ] = js.native
+  
   def mergeStyleSets[TStyleSet](): IProcessedStyleSet[ObjectOnly[TStyleSet]] = js.native
   def mergeStyleSets[TStyleSet](styleSet: TStyleSet): IProcessedStyleSet[ObjectOnly[TStyleSet]] = js.native
   def mergeStyleSets[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
@@ -107,4 +109,3 @@ object mergeStyleSetsMod extends js.Object {
   @JSName("mergeStyleSets")
   def mergeStyleSets_false_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
 }
-

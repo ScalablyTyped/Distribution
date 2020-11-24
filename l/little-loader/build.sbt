@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "little-loader"
-version := "0.2-dt-20190624Z-293834"
+version := "0.2-dt-20190624Z-771208"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

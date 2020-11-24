@@ -2,13 +2,14 @@ package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for the ModifyAckDeadline method.
   */
 @js.native
 trait SchemaModifyAckDeadlineRequest extends js.Object {
+  
   /**
     * The new ack deadline with respect to the time this request was sent to
     * the Pub/Sub system. Must be &gt;= 0. For example, if the value is 10, the
@@ -17,59 +18,73 @@ trait SchemaModifyAckDeadlineRequest extends js.Object {
     * another pull request.
     */
   var ackDeadlineSeconds: js.UndefOr[Double] = js.native
+  
   /**
     * The acknowledgment ID. Either this or ack_ids must be populated, not
     * both.
     */
   var ackId: js.UndefOr[String] = js.native
+  
   /**
     * List of acknowledgment IDs. Either this field or ack_id should be
     * populated, not both.
     */
   var ackIds: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Next Index: 5 The name of the subscription from which messages are being
     * pulled.
     */
   var subscription: js.UndefOr[String] = js.native
 }
-
 object SchemaModifyAckDeadlineRequest {
+  
   @scala.inline
   def apply(): SchemaModifyAckDeadlineRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaModifyAckDeadlineRequest]
   }
+  
   @scala.inline
   implicit class SchemaModifyAckDeadlineRequestOps[Self <: SchemaModifyAckDeadlineRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAckDeadlineSeconds(value: Double): Self = this.set("ackDeadlineSeconds", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAckDeadlineSeconds: Self = this.set("ackDeadlineSeconds", js.undefined)
+    
     @scala.inline
     def setAckId(value: String): Self = this.set("ackId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAckId: Self = this.set("ackId", js.undefined)
+    
     @scala.inline
     def setAckIdsVarargs(value: String*): Self = this.set("ackIds", js.Array(value :_*))
+    
     @scala.inline
     def setAckIds(value: js.Array[String]): Self = this.set("ackIds", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAckIds: Self = this.set("ackIds", js.undefined)
+    
     @scala.inline
     def setSubscription(value: String): Self = this.set("subscription", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSubscription: Self = this.set("subscription", js.undefined)
   }
-  
 }
-

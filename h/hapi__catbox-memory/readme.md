@@ -11,8 +11,8 @@ Memory adapter for catbox
 | Full name          | @hapi/catbox-memory |
 | Keywords           | cache, catbox, memory |
 | # releases         | 6 |
-| # dependents       | 3 |
-| # downloads        | 3067932 |
+| # dependents       | 2 |
+| # downloads        | 10342824 |
 | # stars            | 0 |
 
 ## Links

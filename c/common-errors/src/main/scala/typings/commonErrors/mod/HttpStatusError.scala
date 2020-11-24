@@ -5,7 +5,7 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "HttpStatusError")
@@ -27,9 +27,9 @@ class HttpStatusError protected () extends js.Object {
   def this(status_code: Double) = this()
   def this(err: Error, req: Request_[ParamsDictionary, _, _, Query]) = this()
   def this(status_code: Double, message: String) = this()
+  
   /**
     * Status code for this error.
     */
   var statusCode: Double = js.native
 }
-

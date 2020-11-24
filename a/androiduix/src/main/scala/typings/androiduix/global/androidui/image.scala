@@ -4,11 +4,12 @@ import typings.androiduix.android.graphics.Paint
 import typings.androiduix.android.graphics.drawable.Drawable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("androidui.image")
 @js.native
 object image extends js.Object {
+  
   @js.native
   class ChangeImageSizeDrawable protected ()
     extends typings.androiduix.androidui.image.ChangeImageSizeDrawable {
@@ -32,6 +33,20 @@ object image extends js.Object {
     ) = this()
     def this(src: typings.androiduix.androidui.image.NetImage, paint: Paint, overrideImageRatio: Double) = this()
   }
+  @js.native
+  object NetDrawable extends js.Object {
+    
+    @js.native
+    object TileMode extends js.Object {
+      
+      @JSBracketAccess
+      def apply(value: Double): js.UndefOr[typings.androiduix.androidui.image.NetDrawable.TileMode with Double] = js.native
+      
+      /* 0 */ val DEFAULT: typings.androiduix.androidui.image.NetDrawable.TileMode.DEFAULT with Double = js.native
+      
+      /* 1 */ val REPEAT: typings.androiduix.androidui.image.NetDrawable.TileMode.REPEAT with Double = js.native
+    }
+  }
   
   @js.native
   class NetImage protected ()
@@ -43,24 +58,10 @@ object image extends js.Object {
   @js.native
   class NinePatchDrawable ()
     extends typings.androiduix.androidui.image.NinePatchDrawable
-  
-  @js.native
-  object NetDrawable extends js.Object {
-    @js.native
-    object TileMode extends js.Object {
-      /* 0 */ val DEFAULT: typings.androiduix.androidui.image.NetDrawable.TileMode.DEFAULT with Double = js.native
-      /* 1 */ val REPEAT: typings.androiduix.androidui.image.NetDrawable.TileMode.REPEAT with Double = js.native
-      @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.androiduix.androidui.image.NetDrawable.TileMode with Double] = js.native
-    }
-    
-  }
-  
   /* static members */
   @js.native
   object NinePatchDrawable extends js.Object {
+    
     var GlobalBorderInfoCache: js.Any = js.native
   }
-  
 }
-

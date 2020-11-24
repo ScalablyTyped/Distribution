@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Web.Http.Headers
 import typings.winrtUwp.anon.ChallengeHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents authentication information used in the Proxy-Authenticate and WWW-Authenticate HTTP header values. */
 @JSGlobal("Windows.Web.Http.Headers.HttpChallengeHeaderValue")
@@ -22,21 +22,21 @@ class HttpChallengeHeaderValue protected ()
     */
   def this(scheme: String, token: String) = this()
 }
-
 /* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpChallengeHeaderValue")
 @js.native
 object HttpChallengeHeaderValue extends js.Object {
+  
   /**
     * Converts a string to an HttpChallengeHeaderValue instance.
     * @param input A string that represents authentication header value information.
     * @return An HttpChallengeHeaderValue instance.
     */
   def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpChallengeHeaderValue = js.native
+  
   /**
     * Determines whether a string is valid HttpChallengeHeaderValue information.
     * @param input The string to validate.
     */
   def tryParse(input: String): ChallengeHeaderValue = js.native
 }
-

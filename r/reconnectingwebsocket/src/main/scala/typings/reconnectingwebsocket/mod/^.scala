@@ -2,7 +2,7 @@ package typings.reconnectingwebsocket.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This behaves like a `WebSocket` in every way, except if it fails to connect,
@@ -50,18 +50,21 @@ class ^ protected () extends ReconnectingWebSocket {
   def this(url: String, protocols: String, options: Options) = this()
   def this(url: String, protocols: js.Array[String], options: Options) = this()
 }
-
 @JSImport("reconnectingwebsocket", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var CLOSED: Double = js.native
-  var CLOSING: Double = js.native
-  var CONNECTING: Double = js.native
-  var OPEN: Double = js.native
+  
+  var CLOSED: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.WebSocket * / any['CLOSED'] */ js.Any = js.native
+  
+  var CLOSING: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.WebSocket * / any['CLOSING'] */ js.Any = js.native
+  
+  var CONNECTING: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.WebSocket * / any['CONNECTING'] */ js.Any = js.native
+  
+  var OPEN: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.WebSocket * / any['OPEN'] */ js.Any = js.native
+  
   /**
     * Whether all instances of ReconnectingWebSocket should log debug messages.
     * Setting this to true is the equivalent of setting all instances of ReconnectingWebSocket.debug to true.
     */
   var debugAll: Boolean = js.native
 }
-

@@ -7,13 +7,19 @@ import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.Stats
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("enhanced-resolve", "CachedInputFileSystem")
 @js.native
 class CachedInputFileSystem protected () extends js.Object {
   def this(fileSystem: AbstractInputFileSystem, duration: Double) = this()
+  
   var fileSystem: AbstractInputFileSystem = js.native
+  
+  def purge(): Unit = js.native
+  def purge(what: String): Unit = js.native
+  def purge(what: js.Array[String]): Unit = js.native
+  
   var readFile: js.UndefOr[
     js.Function2[
       /* path */ String, 
@@ -21,7 +27,9 @@ class CachedInputFileSystem protected () extends js.Object {
       Unit
     ]
   ] = js.native
+  
   var readFileSync: js.UndefOr[js.Function2[/* filename */ String, /* options */ js.UndefOr[Flag], Buffer]] = js.native
+  
   var readJson: js.UndefOr[
     js.Function2[
       /* path */ String, 
@@ -29,7 +37,9 @@ class CachedInputFileSystem protected () extends js.Object {
       Unit
     ]
   ] = js.native
+  
   var readJsonSync: js.UndefOr[js.Function1[/* path */ String, _]] = js.native
+  
   var readdir: js.UndefOr[
     js.Function2[
       /* path */ String, 
@@ -37,7 +47,9 @@ class CachedInputFileSystem protected () extends js.Object {
       Unit
     ]
   ] = js.native
+  
   var readdirSync: js.UndefOr[js.Function1[/* path */ String, js.Array[String]]] = js.native
+  
   var readlink: js.UndefOr[
     js.Function2[
       /* path */ String, 
@@ -45,7 +57,9 @@ class CachedInputFileSystem protected () extends js.Object {
       Unit
     ]
   ] = js.native
+  
   var readlinkSync: js.UndefOr[js.Function1[/* path */ String | Buffer, String]] = js.native
+  
   var stat: js.UndefOr[
     js.Function2[
       /* path */ String, 
@@ -53,9 +67,6 @@ class CachedInputFileSystem protected () extends js.Object {
       Unit
     ]
   ] = js.native
+  
   var statSync: js.UndefOr[js.Function1[/* path */ String | Buffer, Stats]] = js.native
-  def purge(): Unit = js.native
-  def purge(what: String): Unit = js.native
-  def purge(what: js.Array[String]): Unit = js.native
 }
-

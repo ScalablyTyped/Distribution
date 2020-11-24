@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/groupsmigration/v1", "groupsmigration_v1.Resource$Archive")
 @js.native
 class ResourceArchive protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * groupsmigration.archive.insert
     * @desc Inserts a new mail into the archive of the Google group.
@@ -45,4 +47,3 @@ class ResourceArchive protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGroups]
   ): Unit = js.native
 }
-

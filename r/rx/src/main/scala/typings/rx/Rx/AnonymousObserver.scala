@@ -2,12 +2,12 @@ package typings.rx.Rx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AnonymousObserver[T] extends Observer[T]
-
 object AnonymousObserver {
+  
   @scala.inline
   def apply[T](
     asObserver: () => Observer[T],
@@ -23,4 +23,3 @@ object AnonymousObserver {
     __obj.asInstanceOf[AnonymousObserver[T]]
   }
 }
-

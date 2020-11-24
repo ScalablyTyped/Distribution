@@ -11,14 +11,12 @@ The lodash method `_.truncate` exported as a module.
 | Full name          | lodash.truncate |
 | Keywords           | lodash-modularized, truncate |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 4385898 |
+| # dependents       | 28 |
+| # downloads        | 7382415 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
-- [Bugs](https://github.com/lodash/lodash/issues)
-- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.truncate)
     
 

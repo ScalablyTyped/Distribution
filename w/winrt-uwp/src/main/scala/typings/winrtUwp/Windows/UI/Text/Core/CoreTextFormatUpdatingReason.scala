@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Text.Core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CoreTextFormatUpdatingReason extends js.Object
-
 /** Defines constants that specify the set of state applied during text composition. */
 @JSGlobal("Windows.UI.Text.Core.CoreTextFormatUpdatingReason")
 @js.native
 object CoreTextFormatUpdatingReason extends js.Object {
+  
   /** The text is a converted composition string. */
   @js.native
   sealed trait compositionConverted extends CoreTextFormatUpdatingReason
@@ -30,6 +30,4 @@ object CoreTextFormatUpdatingReason extends js.Object {
   /** The reason for the format updating is unknown. */
   @js.native
   sealed trait none extends CoreTextFormatUpdatingReason
-  
 }
-

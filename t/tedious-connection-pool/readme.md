@@ -11,8 +11,8 @@ Connection Pool for tedious.
 | Full name          | tedious-connection-pool |
 | Keywords           | tedious, connection, pool |
 | # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 298861 |
+| # dependents       | 23 |
+| # downloads        | 210404 |
 | # stars            | 2 |
 
 ## Links

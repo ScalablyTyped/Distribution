@@ -11,8 +11,8 @@ Convert a camelcase or space-separated string to a dash-separated string. ~12 sl
 | Full name          | dashify |
 | Keywords           | dash, dashcase, dasherize, dashify, slug, slugify |
 | # releases         | 2 |
-| # dependents       | 85 |
-| # downloads        | 5689399 |
+| # dependents       | 96 |
+| # downloads        | 7335828 |
 | # stars            | 3 |
 
 ## Links

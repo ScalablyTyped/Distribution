@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Store
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FulfillmentResult extends js.Object
-
 /** Defines values used to indicate fulfillment status for a consumable in-app product. */
 @JSGlobal("Windows.ApplicationModel.Store.FulfillmentResult")
 @js.native
 object FulfillmentResult extends js.Object {
+  
   /** The specified transaction ID has been passed or the consumable in-app product has already been fulfilled. */
   @js.native
   sealed trait nothingToFulfill extends FulfillmentResult
@@ -30,6 +30,4 @@ object FulfillmentResult extends js.Object {
   /** The purchased consumable in-app product was fulfilled. */
   @js.native
   sealed trait succeeded extends FulfillmentResult
-  
 }
-

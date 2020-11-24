@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BarChartMediaInfoConstructor
@@ -15,6 +15,6 @@ trait BarChartMediaInfoConstructor
   */
 Instantiable0[BarChartMediaInfo]
      with Instantiable1[/* properties */ BarChartMediaInfoProperties, BarChartMediaInfo] {
+  
   def fromJSON(json: js.Any): BarChartMediaInfo = js.native
 }
-

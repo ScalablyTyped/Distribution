@@ -2,7 +2,7 @@ package typings.smartFoxServer.global.SFS2X.Requests.System
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.System.PrivateMessageRequest")
 @js.native
@@ -17,4 +17,3 @@ class PrivateMessageRequest protected ()
   def this(message: String, recipientId: Double) = this()
   def this(message: String, recipientId: Double, params: js.Object) = this()
 }
-

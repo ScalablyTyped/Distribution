@@ -3,7 +3,7 @@ package typings.highcharts.mod
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Class[T]
@@ -17,4 +17,3 @@ trait Class[T]
   * @return Class instance.
   */
 Instantiable1[/* args (repeated) */ js.Any, T]
-

@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a chart based on data in a table or spreadsheet.
@@ -20,8 +20,8 @@ trait TableChart
   extends XTableChart
      with XEmbeddedObjectSupplier
      with XNamed
-
 object TableChart {
+  
   @scala.inline
   def apply(
     EmbeddedObject: XComponent,
@@ -46,4 +46,3 @@ object TableChart {
     __obj.asInstanceOf[TableChart]
   }
 }
-

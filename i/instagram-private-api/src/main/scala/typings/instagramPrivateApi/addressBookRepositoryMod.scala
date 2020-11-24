@@ -8,17 +8,18 @@ import typings.instagramPrivateApi.repositoryMod.Repository
 import typings.instagramPrivateApi.statusResponseMod.StatusResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("instagram-private-api/dist/repositories/address-book.repository", JSImport.Namespace)
 @js.native
 object addressBookRepositoryMod extends js.Object {
+  
   @js.native
   class AddressBookRepository () extends Repository {
+    
     def acquireOwnerContacts(me: Firstname): js.Promise[StatusResponse] = js.native
+    
     def link(contacts: js.Array[Emailaddresses]): js.Promise[AddressBookRepositoryLinkResponseRootObject] = js.native
     def link(contacts: js.Array[Emailaddresses], module: IgAppModule): js.Promise[AddressBookRepositoryLinkResponseRootObject] = js.native
   }
-  
 }
-

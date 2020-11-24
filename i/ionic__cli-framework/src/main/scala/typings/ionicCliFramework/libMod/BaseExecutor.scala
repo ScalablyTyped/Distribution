@@ -8,7 +8,7 @@ import typings.ionicCliFramework.definitionsMod.INamespace
 import typings.ionicCliFramework.executorMod.BaseExecutorDeps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/cli-framework/lib", "BaseExecutor")
 @js.native
@@ -16,4 +16,3 @@ class BaseExecutor[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, 
   extends typings.ionicCliFramework.executorMod.BaseExecutor[C, N, M, I, O] {
   def this(hasNamespaceStdoutStderrColors: BaseExecutorDeps[C, N, M, I, O]) = this()
 }
-

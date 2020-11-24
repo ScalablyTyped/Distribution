@@ -4,7 +4,7 @@ import typings.node.httpMod.ClientRequestArgs
 import typings.node.urlMod.URL_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // WebSocket socket.
 @JSImport("ws", JSImport.Namespace)
@@ -33,13 +33,15 @@ class ^ protected () extends WebSocket {
   def this(address: URL_, protocols: js.Array[String], options: ClientRequestArgs) = this()
   def this(address: URL_, protocols: js.Array[String], options: ClientOptions) = this()
 }
-
 @JSImport("ws", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   var CLOSED: Double = js.native
+  
   var CLOSING: Double = js.native
+  
   var CONNECTING: Double = js.native
+  
   var OPEN: Double = js.native
 }
-

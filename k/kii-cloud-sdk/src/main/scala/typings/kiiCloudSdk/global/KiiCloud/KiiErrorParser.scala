@@ -4,7 +4,7 @@ import typings.kiiCloudSdk.KiiCloud.KiiError
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Parser for error string or error object returned by SDK.
@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class KiiErrorParser ()
   extends typings.kiiCloudSdk.KiiCloud.KiiErrorParser
-
 /* static members */
 @JSGlobal("KiiCloud.KiiErrorParser")
 @js.native
 object KiiErrorParser extends js.Object {
+  
   /**
     * Parse an error string or error object returned by SDK.
     *
@@ -44,4 +44,3 @@ object KiiErrorParser extends js.Object {
   def parse(error: String): KiiError = js.native
   def parse(error: Error): KiiError = js.native
 }
-

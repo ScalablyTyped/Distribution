@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/sns/smsPreferences", "SmsPreferences")
 @js.native
@@ -23,36 +23,42 @@ class SmsPreferences protected () extends CustomResource {
   def this(name: String, args: SmsPreferencesArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: SmsPreferencesArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * A string, such as your business brand, that is displayed as the sender on the receiving device.
     */
   val defaultSenderId: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The type of SMS message that you will send by default. Possible values are: Promotional, Transactional
     */
   val defaultSmsType: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The ARN of the IAM role that allows Amazon SNS to write logs about SMS deliveries in CloudWatch Logs.
     */
   val deliveryStatusIamRoleArn: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The percentage of successful SMS deliveries for which Amazon SNS will write logs in CloudWatch Logs. The value must be between 0 and 100.
     */
   val deliveryStatusSuccessSamplingRate: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The maximum amount in USD that you are willing to spend each month to send SMS messages.
     */
   val monthlySpendLimit: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * The name of the Amazon S3 bucket to receive daily SMS usage reports from Amazon SNS.
     */
   val usageReportS3Bucket: Output_[js.UndefOr[String]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/sns/smsPreferences", "SmsPreferences")
 @js.native
 object SmsPreferences extends js.Object {
+  
   /**
     * Get an existing SmsPreferences resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -66,10 +72,10 @@ object SmsPreferences extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SmsPreferences = js.native
   def get(name: String, id: Input[ID], state: SmsPreferencesState): SmsPreferences = js.native
   def get(name: String, id: Input[ID], state: SmsPreferencesState, opts: CustomResourceOptions): SmsPreferences = js.native
+  
   /**
     * Returns true if the given object is an instance of SmsPreferences.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/smsPreferences.SmsPreferences */ Boolean = js.native
 }
-

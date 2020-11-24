@@ -2,12 +2,14 @@ package typings.watsonDeveloperCloud.speechToTextV1Mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SpeechToTextV1
   extends typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.^ {
+  
   def recognize(params: js.Any, callback: js.Any): Unit | js.Promise[_] = js.native
+  
   /**
     * Use the recognize function with a single 2-way stream over websockets
     *
@@ -15,6 +17,7 @@ trait SpeechToTextV1
     * @return {RecognizeStream}
     */
   def recognizeUsingWebSocket(params: js.Any): typings.watsonDeveloperCloud.recognizeStreamMod.^ = js.native
+  
   /**
     * Waits while corpora analysis status is 'being_processes', fires callback once the status is 'analyzed'
     *
@@ -28,6 +31,7 @@ trait SpeechToTextV1
     * @param {Function} callback
     */
   def whenCorporaAnalyzed(params: js.Any, callback: js.Any): Unit = js.native
+  
   /**
     * Waits while a customization status is 'pending' or 'training', fires callback once the status is 'ready' or 'available'.
     *
@@ -43,4 +47,3 @@ trait SpeechToTextV1
     */
   def whenCustomizationReady(params: js.Any, callback: js.Any): Unit = js.native
 }
-

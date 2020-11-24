@@ -3,7 +3,7 @@ package typings.inquirer.bottomBarMod
 import typings.inquirer.mod.ui.BottomBarOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the bottom-bar UI.
@@ -19,4 +19,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends BottomBar {
   def this(options: BottomBarOptions) = this()
 }
-

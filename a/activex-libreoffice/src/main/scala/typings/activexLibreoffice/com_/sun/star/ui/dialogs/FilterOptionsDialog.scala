@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyAccess
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service enables a filter developer to register a dialog to query for user options before the filter operation is performed.
@@ -29,8 +29,8 @@ import scala.scalajs.js.annotation._
 trait FilterOptionsDialog
   extends XPropertyAccess
      with XExecutableDialog
-
 object FilterOptionsDialog {
+  
   @scala.inline
   def apply(
     PropertyValues: SafeArray[PropertyValue],
@@ -46,4 +46,3 @@ object FilterOptionsDialog {
     __obj.asInstanceOf[FilterOptionsDialog]
   }
 }
-

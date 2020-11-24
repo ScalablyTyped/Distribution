@@ -2,11 +2,12 @@ package typings.rxjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/operator/distinct", JSImport.Namespace)
 @js.native
 object operatorDistinctMod extends js.Object {
+  
   def distinct[T, K](): js.Any = js.native
   def distinct[T, K](
     keySelector: js.UndefOr[scala.Nothing],
@@ -18,4 +19,3 @@ object operatorDistinctMod extends js.Object {
     flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
   ): js.Any = js.native
 }
-

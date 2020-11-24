@@ -2,11 +2,12 @@ package typings.authenticator.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("authenticator", "generateTotpUri")
 @js.native
 object generateTotpUri extends js.Object {
+  
   def apply(
     formattedKey: String,
     accountName: String,
@@ -16,4 +17,3 @@ object generateTotpUri extends js.Object {
     period: Double
   ): String = js.native
 }
-

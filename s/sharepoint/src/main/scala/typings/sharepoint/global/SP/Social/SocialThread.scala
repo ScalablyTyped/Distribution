@@ -2,7 +2,7 @@ package typings.sharepoint.global.SP.Social
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies a thread that is stored on the server.
   The thread contains a root post and zero or more reply posts. */
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class SocialThread ()
   extends typings.sharepoint.SP.Social.SocialThread
-

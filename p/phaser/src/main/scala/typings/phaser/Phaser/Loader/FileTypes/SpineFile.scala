@@ -6,14 +6,15 @@ import typings.phaser.Phaser.Loader.MultiFile
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SpineFile extends MultiFile {
+  
   def addToCache(): js.Any = js.native
 }
-
 object SpineFile {
+  
   @scala.inline
   def apply(
     addToCache: () => js.Any,
@@ -37,20 +38,23 @@ object SpineFile {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpineFile]
   }
+  
   @scala.inline
   implicit class SpineFileOps[Self <: SpineFile] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddToCache(value: () => js.Any): Self = this.set("addToCache", js.Any.fromFunction0(value))
   }
-  
 }
-

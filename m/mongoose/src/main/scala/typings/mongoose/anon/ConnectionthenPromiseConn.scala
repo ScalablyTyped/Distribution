@@ -17,50 +17,27 @@ import typings.node.eventsMod.EventEmitterOptions
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined mongoose.mongoose.Connection & {  then :std.Promise<mongoose.mongoose.Connection>['then'],   catch :std.Promise<mongoose.mongoose.Connection>['catch']} */
 @js.native
 trait ConnectionthenPromiseConn extends js.Object {
-  @JSName("catch")
-  var catch_Original: FnCallOnrejected = js.native
-  /** A hash of the collections associated with this connection */
-  var collections: StringDictionary[Collection] = js.native
-  /** A hash of the global options that are associated with this connection */
-  var config: PickConnectionOptionsauto = js.native
-  /** The mongodb.Db instance, set when the connection is opened */
-  var db: Db = js.native
-  /** Connected host */
-  var host: String = js.native
-  /** A hash of models registered with this connection */
-  var models: StringDictionary[Model_[_, js.Object]] = js.native
-  /** Connected database name */
-  var name: String = js.native
-  /** Connected port number */
-  var port: Double = js.native
-  /**
-    * Connection ready state
-    * 0 = disconnected
-    * 1 = connected
-    * 2 = connecting
-    * 3 = disconnecting
-    * Each state change emits its associated event name.
-    */
-  var readyState: Double = js.native
-  /** mapping of ready states */
-  var states: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConnectionStates */ js.Any = js.native
-  @JSName("then")
-  var then_Original: FnCall = js.native
+  
   def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   def `catch`[TResult](): js.Promise[Connection_ | TResult] = js.native
   def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[Connection_ | TResult] = js.native
+  @JSName("catch")
+  var catch_Original: FnCallOnrejected = js.native
+  
   /** Closes the connection */
   def close(): js.Promise[Unit] = js.native
   def close(callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
   def close(force: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
   def close(force: Boolean): js.Promise[Unit] = js.native
   def close(force: Boolean, callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
+  
   /**
     * Retrieves a collection, creating it if not cached.
     * Not typically needed by applications. Just talk to your collection through your model.
@@ -69,6 +46,13 @@ trait ConnectionthenPromiseConn extends js.Object {
     */
   def collection(name: String): Collection = js.native
   def collection(name: String, options: js.Any): Collection = js.native
+  
+  /** A hash of the collections associated with this connection */
+  var collections: StringDictionary[Collection] = js.native
+  
+  /** A hash of the global options that are associated with this connection */
+  var config: PickConnectionOptionsauto = js.native
+  
   /** Helper for creating a collection */
   def createCollection[T](name: String): js.Promise[typings.mongodb.mod.Collection[T]] = js.native
   def createCollection[T](
@@ -85,6 +69,10 @@ trait ConnectionthenPromiseConn extends js.Object {
       Unit
     ]
   ): js.Promise[typings.mongodb.mod.Collection[T]] = js.native
+  
+  /** The mongodb.Db instance, set when the connection is opened */
+  var db: Db = js.native
+  
   /**
     * Removes the model named `name` from this connection, if it exists. You can
     * use this function to clean up any models you created in your tests to
@@ -95,20 +83,31 @@ trait ConnectionthenPromiseConn extends js.Object {
     */
   def deleteModel(name: String): Connection_ = js.native
   def deleteModel(name: RegExp): Connection_ = js.native
+  
   /** Helper for dropCollection() */
   def dropCollection(name: String): js.Promise[Unit] = js.native
   def dropCollection(name: String, callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
+  
   /** Helper for dropDatabase() */
   def dropDatabase(): js.Promise[_] = js.native
   def dropDatabase(callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[_] = js.native
+  
   def emit(event: String, args: js.Any*): Boolean = js.native
   def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
+  
   def eventNames(): js.Array[String | js.Symbol] = js.native
+  
   def getMaxListeners(): Double = js.native
-  def listenerCount(`type`: String): Double = js.native
-  def listenerCount(`type`: js.Symbol): Double = js.native
+  
+  /** Connected host */
+  var host: String = js.native
+  
+  def listenerCount(event: String): Double = js.native
+  def listenerCount(event: js.Symbol): Double = js.native
+  
   def listeners(event: String): js.Array[js.Function] = js.native
   def listeners(event: js.Symbol): js.Array[js.Function] = js.native
+  
   /**
     * Defines or retrieves a model.
     * When no collection argument is passed, Mongoose produces a collection name by passing
@@ -124,8 +123,10 @@ trait ConnectionthenPromiseConn extends js.Object {
   def model[T /* <: Document */](name: String, schema: js.UndefOr[scala.Nothing], collection: String): Model_[T, js.Object] = js.native
   def model[T /* <: Document */](name: String, schema: Schema[_]): Model_[T, js.Object] = js.native
   def model[T /* <: Document */](name: String, schema: Schema[_], collection: String): Model_[T, js.Object] = js.native
+  
   /** Returns an array of model names created on this connection. */
   def modelNames(): js.Array[String] = js.native
+  
   @JSName("model")
   def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](name: String): U = js.native
   @JSName("model")
@@ -134,12 +135,22 @@ trait ConnectionthenPromiseConn extends js.Object {
   def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](name: String, schema: Schema[_]): U = js.native
   @JSName("model")
   def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](name: String, schema: Schema[_], collection: String): U = js.native
+  
+  /** A hash of models registered with this connection */
+  var models: StringDictionary[Model_[_, js.Object]] = js.native
+  
+  /** Connected database name */
+  var name: String = js.native
+  
   def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   /**
     * Opens the connection to MongoDB.
     * @param uri mongodb connection string
@@ -158,19 +169,39 @@ trait ConnectionthenPromiseConn extends js.Object {
   ): Connection_ with Catch = js.native
   @JSName("openUri")
   def openUri_Promise(uri: String, options: ConnectionOptions): js.Promise[Connection_] = js.native
+  
+  /** Connected port number */
+  var port: Double = js.native
+  
   // Added in Node 6...
   def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   def rawListeners(event: String): js.Array[js.Function] = js.native
   def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
+  
+  /**
+    * Connection ready state
+    * 0 = disconnected
+    * 1 = connected
+    * 2 = connecting
+    * 3 = disconnecting
+    * Each state change emits its associated event name.
+    */
+  var readyState: Double = js.native
+  
   def removeAllListeners(): this.type = js.native
   def removeAllListeners(event: String): this.type = js.native
   def removeAllListeners(event: js.Symbol): this.type = js.native
+  
   def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  
   def setMaxListeners(n: Double): this.type = js.native
+  
   def startSession(): js.Promise[ClientSession] = js.native
   def startSession(
     options: js.UndefOr[scala.Nothing],
@@ -178,6 +209,10 @@ trait ConnectionthenPromiseConn extends js.Object {
   ): js.Promise[ClientSession] = js.native
   def startSession(options: SessionOptions): js.Promise[ClientSession] = js.native
   def startSession(options: SessionOptions, cb: js.Function2[/* err */ js.Any, /* session */ ClientSession, Unit]): js.Promise[ClientSession] = js.native
+  
+  /** mapping of ready states */
+  var states: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConnectionStates */ js.Any = js.native
+  
   def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     onfulfilled: js.UndefOr[scala.Nothing],
@@ -189,6 +224,9 @@ trait ConnectionthenPromiseConn extends js.Object {
     onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
   ): js.Promise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+  @JSName("then")
+  var then_Original: FnCall = js.native
+  
   /**
     * Switches to a different database using the same connection pool.
     * @param name The database name
@@ -198,4 +236,3 @@ trait ConnectionthenPromiseConn extends js.Object {
   def useDb(name: String): Connection_ = js.native
   def useDb(name: String, options: ConnectionUseDbOptions): Connection_ = js.native
 }
-

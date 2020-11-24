@@ -4,10 +4,11 @@ import typings.agGrid.anon.InstantiableAny
 import typings.agGrid.iComponentMod.IComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FrameworkComponentWrapper extends js.Object {
+  
   def wrap[A /* <: IComponent[_] */](frameworkComponent: InstantiableAny, methodList: js.Array[String]): A = js.native
   def wrap[A /* <: IComponent[_] */](
     frameworkComponent: InstantiableAny,
@@ -27,4 +28,3 @@ trait FrameworkComponentWrapper extends js.Object {
     componentName: String
   ): A = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.jupyterlabNotebook.widgetMod.Notebook.IContentFactory
 import typings.jupyterlabNotebook.widgetMod.Notebook.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/notebook", "Notebook")
 @js.native
@@ -15,10 +15,12 @@ class Notebook protected ()
     */
   def this(options: IOptions) = this()
 }
-
 @JSImport("@jupyterlab/notebook", "Notebook")
 @js.native
 object Notebook extends js.Object {
+  
+  val defaultContentFactory: IContentFactory = js.native
+  
   /**
     * The default implementation of a notebook content factory..
     *
@@ -29,13 +31,9 @@ object Notebook extends js.Object {
   @js.native
   class ContentFactory ()
     extends typings.jupyterlabNotebook.widgetMod.StaticNotebook.ContentFactory
-  
-  val defaultContentFactory: IContentFactory = js.native
   /**
     * A namespace for the notebook content factory.
     */
   @js.native
   object ContentFactory extends js.Object
-  
 }
-

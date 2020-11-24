@@ -3,21 +3,24 @@ package typings.screeps
 import typings.screeps.anon.Pos
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A flag. Flags can be used to mark particular spots in a room. Flags are visible to their owners only.
   */
 @js.native
 trait Flag extends RoomObject {
+  
   /**
     * Flag color. One of the `COLOR_*` constants.
     */
   var color: ColorConstant = js.native
+  
   /**
     * A shorthand to Memory.flags[flag.name]. You can use it for quick access the flag's specific memory data object.
     */
   var memory: FlagMemory = js.native
+  
   /**
     * Flag’s name.
     *
@@ -26,15 +29,18 @@ trait Flag extends RoomObject {
     * This name is a hash key to access the spawn via the `Game.flags` object. The maximum name length is 60 characters.
     */
   var name: String = js.native
-  /**
-    * Flag secondary color. One of the `COLOR_*` constants.
-    */
-  var secondaryColor: ColorConstant = js.native
+  
   /**
     * Remove the flag.
     * @returns Result Code: OK
     */
   def remove(): OK = js.native
+  
+  /**
+    * Flag secondary color. One of the `COLOR_*` constants.
+    */
+  var secondaryColor: ColorConstant = js.native
+  
   /**
     * Set new color of the flag.
     * @param color One of the following constants: COLOR_WHITE, COLOR_GREY, COLOR_RED, COLOR_PURPLE, COLOR_BLUE, COLOR_CYAN, COLOR_GREEN, COLOR_YELLOW, COLOR_ORANGE, COLOR_BROWN
@@ -43,6 +49,7 @@ trait Flag extends RoomObject {
     */
   def setColor(color: ColorConstant): OK | ERR_INVALID_ARGS = js.native
   def setColor(color: ColorConstant, secondaryColor: ColorConstant): OK | ERR_INVALID_ARGS = js.native
+  
   /**
     * Set new position of the flag.
     * @param pos Can be a RoomPosition object or any object containing RoomPosition.
@@ -58,4 +65,3 @@ trait Flag extends RoomObject {
     */
   def setPosition(x: Double, y: Double): OK | ERR_INVALID_ARGS = js.native
 }
-

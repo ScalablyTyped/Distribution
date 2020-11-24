@@ -5,19 +5,21 @@ import typings.materialTextfield.helperTextFoundationMod.MDCTextFieldHelperTextF
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/textfield/helper-text/component", JSImport.Namespace)
 @js.native
 object helperTextComponentMod extends js.Object {
+  
   @js.native
   class MDCTextFieldHelperText () extends MDCComponent[MDCTextFieldHelperTextFoundation] {
+    
     def foundationForTextField: MDCTextFieldHelperTextFoundation = js.native
   }
-  
   /* static members */
   @js.native
   object MDCTextFieldHelperText extends js.Object {
+    
     def attachTo(root: Element): MDCTextFieldHelperText = js.native
   }
   
@@ -27,4 +29,3 @@ object helperTextComponentMod extends js.Object {
     MDCTextFieldHelperText
   ]
 }
-

@@ -2,17 +2,17 @@ package typings.officeJsPreview.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait GoToType extends js.Object
-
 /**
   * Specifies the type of place or object to navigate to.
   */
 @JSGlobal("Office.GoToType")
 @js.native
 object GoToType extends js.Object {
+  
   /**
     * Goes to a binding object using the specified binding id.
     *
@@ -45,6 +45,4 @@ object GoToType extends js.Object {
     */
   @js.native
   sealed trait Slide extends GoToType
-  
 }
-

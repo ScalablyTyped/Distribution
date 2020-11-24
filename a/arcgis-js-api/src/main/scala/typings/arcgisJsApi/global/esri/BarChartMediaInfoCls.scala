@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.BarChartMediaInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.BarChartMediaInfo")
 @js.native
@@ -16,4 +16,3 @@ class BarChartMediaInfoCls ()
   extends typings.arcgisJsApi.esri.BarChartMediaInfo {
   def this(properties: BarChartMediaInfoProperties) = this()
 }
-

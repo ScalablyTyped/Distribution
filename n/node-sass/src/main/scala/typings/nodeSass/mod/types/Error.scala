@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.TopLevel
 import typings.nodeSass.mod._ImporterReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Error
   extends ReturnValue
      with _ImporterReturnType {
+  
   /**
     * This property doesn't exist, but its presence forces the typescript
     * compiler to properly type check this type. Without it, it seems to
@@ -18,8 +19,6 @@ trait Error
     */
   val ___SASS_ERROR___ : js.Symbol = js.native
 }
-
 @JSImport("node-sass", "types.Error")
 @js.native
 object Error extends TopLevel[ErrorConstructor]
-

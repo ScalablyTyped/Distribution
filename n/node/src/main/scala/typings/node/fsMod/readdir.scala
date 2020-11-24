@@ -10,11 +10,12 @@ import typings.node.anon.WithFileTypes
 import typings.node.nodeStrings.buffer_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs", "readdir")
 @js.native
 object readdir extends js.Object {
+  
   def apply(
     path: PathLike,
     callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
@@ -59,34 +60,4 @@ object readdir extends js.Object {
     options: buffer_,
     callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
   ): Unit = js.native
-  /**
-    * Asynchronous readdir(3) - read a directory.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
-    */
-  @JSName("__promisify__")
-  def promisify(path: PathLike): js.Promise[js.Array[String]] = js.native
-  @JSName("__promisify__")
-  def promisify(path: PathLike, options: BufferEncoding): js.Promise[js.Array[String]] = js.native
-  @JSName("__promisify__")
-  def promisify(path: PathLike, options: BaseEncodingOptionswithFi): js.Promise[js.Array[Buffer | String]] = js.native
-  /**
-    * Asynchronous readdir(3) - read a directory.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options If called with `withFileTypes: true` the result data will be an array of Dirent
-    */
-  @JSName("__promisify__")
-  def promisify(path: PathLike, options: BaseEncodingOptionswithFiEncoding): js.Promise[js.Array[Dirent]] = js.native
-  @JSName("__promisify__")
-  def promisify(path: PathLike, options: Encoding): js.Promise[js.Array[Buffer]] = js.native
-  @JSName("__promisify__")
-  def promisify(path: PathLike, options: WithFileTypes): js.Promise[js.Array[String]] = js.native
-  /**
-    * Asynchronous readdir(3) - read a directory.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
-    */
-  @JSName("__promisify__")
-  def promisify_buffer(path: PathLike, options: buffer_): js.Promise[js.Array[Buffer]] = js.native
 }
-

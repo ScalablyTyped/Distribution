@@ -11,8 +11,8 @@ EC cryptography
 | Full name          | elliptic |
 | Keywords           | EC, Elliptic, curve, Cryptography |
 | # releases         | 5 |
-| # dependents       | 906 |
-| # downloads        | 315451968 |
+| # dependents       | 1116 |
+| # downloads        | 451010086 |
 | # stars            | 15 |
 
 ## Links

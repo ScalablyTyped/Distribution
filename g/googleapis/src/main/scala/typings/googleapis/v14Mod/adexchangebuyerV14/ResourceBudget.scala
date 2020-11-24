@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.4", "adexchangebuyer_v1_4.Resource$Budget")
 @js.native
 class ResourceBudget protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer.budget.get
     * @desc Returns the budget information for the adgroup specified by the
@@ -43,6 +45,7 @@ class ResourceBudget protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBudget]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.budget.patch
     * @desc Updates the budget amount for the budget of the adgroup specified
@@ -75,6 +78,7 @@ class ResourceBudget protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBudget]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.budget.update
     * @desc Updates the budget amount for the budget of the adgroup specified
@@ -107,4 +111,3 @@ class ResourceBudget protected () extends js.Object {
     callback: BodyResponseCallback[SchemaBudget]
   ): Unit = js.native
 }
-

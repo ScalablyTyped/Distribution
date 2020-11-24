@@ -3,22 +3,32 @@ package typings.plottable
 import typings.plottable.guideLineLayerMod.GuideLineLayer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/components/dragLineLayer", JSImport.Namespace)
 @js.native
 object dragLineLayerMod extends js.Object {
+  
   @js.native
   class DragLineLayer[D] protected () extends GuideLineLayer[D] {
     def this(orientation: String) = this()
+    
     var _detectionEdge: js.Any = js.native
+    
     var _detectionRadius: js.Any = js.native
+    
     var _disconnectInteraction: js.Any = js.native
+    
     var _dragCallbacks: js.Any = js.native
+    
     var _dragEndCallbacks: js.Any = js.native
+    
     var _dragInteraction: js.Any = js.native
+    
     var _dragStartCallbacks: js.Any = js.native
+    
     var _enabled: js.Any = js.native
+    
     /**
       * Gets the detection radius of the drag line in pixels.
       */
@@ -30,6 +40,7 @@ object dragLineLayerMod extends js.Object {
       * @return {DragLineLayer<D>} The calling DragLineLayer.
       */
     def detectionRadius(detectionRadius: Double): this.type = js.native
+    
     /**
       * Gets whether the DragLineLayer is enabled.
       */
@@ -41,6 +52,7 @@ object dragLineLayerMod extends js.Object {
       * @return {DragLineLayer<D>} The calling DragLineLayer.
       */
     def enabled(enabled: Boolean): this.type = js.native
+    
     /**
       * Removes a callback that would be called during dragging.
       *
@@ -48,6 +60,7 @@ object dragLineLayerMod extends js.Object {
       * @returns {DragLineLayer<D>} The calling DragLineLayer.
       */
     def offDrag(callback: IDragLineCallback[D]): this.type = js.native
+    
     /**
       * Removes a callback that would be called when dragging ends.
       *
@@ -55,6 +68,7 @@ object dragLineLayerMod extends js.Object {
       * @returns {DragLineLayer<D>} The calling DragLineLayer.
       */
     def offDragEnd(callback: IDragLineCallback[D]): this.type = js.native
+    
     /**
       * Removes a callback that would be called when dragging starts.
       *
@@ -62,6 +76,7 @@ object dragLineLayerMod extends js.Object {
       * @returns {DragLineLayer<D>} The calling DragLineLayer.
       */
     def offDragStart(callback: IDragLineCallback[D]): this.type = js.native
+    
     /**
       * Sets a callback to be called during dragging.
       * The callback will be passed the calling DragLineLayer.
@@ -70,6 +85,7 @@ object dragLineLayerMod extends js.Object {
       * @returns {DragLineLayer<D>} The calling DragLineLayer.
       */
     def onDrag(callback: IDragLineCallback[D]): this.type = js.native
+    
     /**
       * Sets a callback to be called when dragging ends.
       * The callback will be passed the calling DragLineLayer.
@@ -78,6 +94,7 @@ object dragLineLayerMod extends js.Object {
       * @returns {DragLineLayer<D>} The calling DragLineLayer.
       */
     def onDragEnd(callback: IDragLineCallback[D]): this.type = js.native
+    
     /**
       * Sets the callback to be called when dragging starts.
       * The callback will be passed the calling DragLineLayer.
@@ -90,4 +107,3 @@ object dragLineLayerMod extends js.Object {
   
   type IDragLineCallback[D] = js.Function1[/* dragLineLayer */ DragLineLayer[D], Unit]
 }
-

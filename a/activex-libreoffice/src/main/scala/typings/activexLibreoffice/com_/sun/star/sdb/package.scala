@@ -2,13 +2,16 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object sdb {
+  
   /** specifies a column descriptor control. */
   type ColumnDescriptorControl = typings.activexLibreoffice.com_.sun.star.awt.UnoControl
+  
   /** @since LibreOffice 4.1 */
   type CommandDefinition = typings.activexLibreoffice.com_.sun.star.sdbcx.XRename
+  
   /**
     * implements a loader for various datasource-related user interface components.
     *
@@ -18,8 +21,10 @@ package object sdb {
     * @see com.sun.star.frame.Desktop
     */
   type ContentLoader = typings.activexLibreoffice.com_.sun.star.frame.FrameLoader
+  
   /** allows creating instances of the {@link DataAccessDescriptor} service. */
   type DataAccessDescriptorFactory = typings.activexLibreoffice.com_.sun.star.sdb.XDataAccessDescriptorFactory
+  
   /**
     * is the context for accessing datasource.
     *
@@ -28,6 +33,7 @@ package object sdb {
     * @see com.sun.star.sdb.DataSource
     */
   type DatabaseContext = typings.activexLibreoffice.com_.sun.star.sdb.XDatabaseContext
+  
   /**
     * describes a service which is able to handle database-related interactions.
     *
@@ -43,37 +49,44 @@ package object sdb {
     * information.
     */
   type DatabaseInteractionHandler = typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler2
+  
   /**
     * describes a container which provides access to database forms.
     * @see com.sun.star.sdb.DocumentDefinition
     */
   type Forms = typings.activexLibreoffice.com_.sun.star.sdb.DocumentContainer
+  
   /**
     * is a service for user interaction for databases.
     * @deprecated DeprecatedDo not use this service anymore. Instead, create a generic com::sun::star::task::InteractionHandler instance, and pass it your request.
     */
   type InteractionHandler = typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
+  
   /**
     * is a stored definition of a SQL "Select statement".
     *
     * It can be used, if there is a need to execute SQL statement more than once.
     */
   type QueryDefinition = typings.activexLibreoffice.com_.sun.star.sdb.XQueryDefinition
+  
   /**
     * This interface could be incomplete since I derived it from its sole place of use.
     * @since LibreOffice 4.1
     */
   type ReportDesign = typings.activexLibreoffice.com_.sun.star.frame.XController2
+  
   /**
     * describes a container which provides access to database reports.
     * @see com.sun.star.sdb.DocumentDefinition
     */
   type Reports = typings.activexLibreoffice.com_.sun.star.sdb.DocumentContainer
+  
   /**
     * is an exception fired whenever a row set operation was cancelled because of of a veto of an approved listener.
     * @see com.sun.star.sdb.XRowSetApproveListener
     */
   type RowSetVetoException = typings.activexLibreoffice.com_.sun.star.sdbc.SQLException
+  
   /** @since LibreOffice 4.1 */
   type TextConnectionSettings = typings.activexLibreoffice.com_.sun.star.sdb.XTextConnectionSettings
 }

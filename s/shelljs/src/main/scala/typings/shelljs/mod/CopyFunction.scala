@@ -2,10 +2,11 @@ package typings.shelljs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CopyFunction extends js.Object {
+  
   /**
     * Copies files. The wildcard `*` is accepted.
     *
@@ -32,4 +33,3 @@ trait CopyFunction extends js.Object {
   def apply(source: String, dest: String): ShellString = js.native
   def apply(source: js.Array[String], dest: String): ShellString = js.native
 }
-

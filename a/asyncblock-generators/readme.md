@@ -12,7 +12,7 @@ asyncblock without the fibers
 | Keywords           | fiber, fibers, coroutine, stop, go, green, red |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 4526 |
+| # downloads        | 1300 |
 | # stars            | 0 |
 
 ## Links

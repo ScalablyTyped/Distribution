@@ -4,7 +4,7 @@ import typings.msRest.mod.ServiceClientCredentials
 import typings.msRestAzure.mod.AzureServiceClientOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource/lib/management/managementGroupsClient", JSImport.Namespace)
 @js.native
@@ -51,4 +51,3 @@ class ^ protected () extends ManagementGroupsClient {
     options: AzureServiceClientOptions
   ) = this()
 }
-

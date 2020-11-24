@@ -10,9 +10,9 @@ Allows deep cloning of plain objects that contain primitives, nested plain objec
 | ------------------ | :-------------: |
 | Full name          | object-assign-deep |
 | Keywords           | object, assign, deep, extend, clone, copy, merge, object, array |
-| # releases         | 2 |
-| # dependents       | 72 |
-| # downloads        | 921196 |
+| # releases         | 0 |
+| # dependents       | 88 |
+| # downloads        | 1507980 |
 | # stars            | 2 |
 
 ## Links

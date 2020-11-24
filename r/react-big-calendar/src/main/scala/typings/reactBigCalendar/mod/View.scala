@@ -7,7 +7,7 @@ import typings.reactBigCalendar.reactBigCalendarStrings.week_
 import typings.reactBigCalendar.reactBigCalendarStrings.work_week_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactBigCalendar.reactBigCalendarStrings.month_
@@ -17,17 +17,20 @@ import scala.scalajs.js.annotation._
   - typings.reactBigCalendar.reactBigCalendarStrings.agenda_
 */
 trait View extends js.Object
-
 object View {
+  
   @scala.inline
   def agenda: agenda_ = "agenda".asInstanceOf[agenda_]
+  
   @scala.inline
   def day: day_ = "day".asInstanceOf[day_]
+  
   @scala.inline
   def month: month_ = "month".asInstanceOf[month_]
+  
   @scala.inline
   def week: week_ = "week".asInstanceOf[week_]
+  
   @scala.inline
   def work_week: work_week_ = "work_week".asInstanceOf[work_week_]
 }
-

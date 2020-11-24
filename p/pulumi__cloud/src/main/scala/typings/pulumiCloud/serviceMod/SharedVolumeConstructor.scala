@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SharedVolumeConstructor
@@ -17,4 +17,3 @@ trait SharedVolumeConstructor
   */
 Instantiable1[/* name */ String, SharedVolume]
      with Instantiable2[/* name */ String, /* opts */ ResourceOptions, SharedVolume]
-

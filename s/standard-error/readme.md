@@ -12,7 +12,7 @@ Tiny library that simplifies subclassing and inheriting from Error while keeping
 | Keywords           | error, exception |
 | # releases         | 0 |
 | # dependents       | 46 |
-| # downloads        | 1168988 |
+| # downloads        | 1551951 |
 | # stars            | 2 |
 
 ## Links

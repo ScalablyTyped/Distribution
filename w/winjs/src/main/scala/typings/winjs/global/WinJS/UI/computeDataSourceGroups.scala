@@ -4,11 +4,12 @@ import typings.winjs.WinJS.UI.IListDataSource
 import typings.winjs.WinJS.UI.IListGroupDataSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("WinJS.UI.computeDataSourceGroups")
 @js.native
 object computeDataSourceGroups extends js.Object {
+  
   //#endregion Objects
   //#region Functions
   /**
@@ -22,4 +23,3 @@ object computeDataSourceGroups extends js.Object {
   def apply[T](listDataSource: IListDataSource[T], groupKey: js.Function, groupData: js.Function): IListGroupDataSource[T] = js.native
   def apply[T](listDataSource: IListDataSource[T], groupKey: js.Function, groupData: js.Function, options: js.Any): IListGroupDataSource[T] = js.native
 }
-

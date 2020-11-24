@@ -2,15 +2,15 @@ package typings.typedGraphql.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DirectiveLocationEnum extends js.Object
-
 // type/directives.js
 @JSImport("graphql", "DirectiveLocationEnum")
 @js.native
 object DirectiveLocationEnum extends js.Object {
+  
   @js.native
   sealed trait FIELD extends DirectiveLocationEnum
   
@@ -31,6 +31,4 @@ object DirectiveLocationEnum extends js.Object {
   
   @js.native
   sealed trait SUBSCRIPTION extends DirectiveLocationEnum
-  
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Replies")
 @js.native
 class ResourceReplies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * drive.replies.delete
     * @desc Deletes a reply.
@@ -39,6 +41,7 @@ class ResourceReplies protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceRepliesDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceRepliesDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * drive.replies.get
     * @desc Gets a reply.
@@ -70,6 +73,7 @@ class ResourceReplies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommentReply]
   ): Unit = js.native
+  
   /**
     * drive.replies.insert
     * @desc Creates a new reply to the given comment.
@@ -100,6 +104,7 @@ class ResourceReplies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommentReply]
   ): Unit = js.native
+  
   /**
     * drive.replies.list
     * @desc Lists all of the replies to a comment.
@@ -132,6 +137,7 @@ class ResourceReplies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommentReplyList]
   ): Unit = js.native
+  
   /**
     * drive.replies.patch
     * @desc Updates an existing reply. This method supports patch semantics.
@@ -163,6 +169,7 @@ class ResourceReplies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommentReply]
   ): Unit = js.native
+  
   /**
     * drive.replies.update
     * @desc Updates an existing reply.
@@ -195,4 +202,3 @@ class ResourceReplies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCommentReply]
   ): Unit = js.native
 }
-

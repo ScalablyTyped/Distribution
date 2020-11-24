@@ -16,13 +16,26 @@ import typings.three.threeBooleans.`true`
 import typings.three.vector2Mod.Vector2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/textures/Texture", JSImport.Namespace)
 @js.native
 object textureMod extends js.Object {
+  
   @js.native
   class Texture protected () extends EventDispatcher {
+    /**
+    	 * @param [image]
+    	 * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+    	 * @param [wrapS=THREE.ClampToEdgeWrapping]
+    	 * @param [wrapT=THREE.ClampToEdgeWrapping]
+    	 * @param [magFilter=THREE.LinearFilter]
+    	 * @param [minFilter=THREE.LinearMipmapLinearFilter]
+    	 * @param [format=THREE.RGBAFormat]
+    	 * @param [type=THREE.UnsignedByteType]
+    	 * @param [anisotropy=1]
+    	 * @param [encoding=THREE.LinearEncoding]
+    	 */
     def this(
       image: js.UndefOr[HTMLImageElement | HTMLCanvasElement | HTMLVideoElement],
       mapping: js.UndefOr[Mapping],
@@ -35,52 +48,154 @@ object textureMod extends js.Object {
       anisotropy: js.UndefOr[Double],
       encoding: js.UndefOr[TextureEncoding]
     ) = this()
+    
+    /**
+    	 * @default 1
+    	 */
     var anisotropy: Double = js.native
+    
+    /**
+    	 * @default new THREE.Vector2( 0, 0 )
+    	 */
     var center: Vector2 = js.native
-    var encoding: TextureEncoding = js.native
-    var flipY: Boolean = js.native
-    var format: PixelFormat = js.native
-    var generateMipmaps: Boolean = js.native
-    var id: Double = js.native
-    var image: js.Any = js.native
-    var internalFormat: PixelFormatGPU | Null = js.native
-    val isTexture: `true` = js.native
-    var magFilter: TextureFilter = js.native
-     // ImageData[] for 2D textures and CubeTexture[] for cube textures;
-    var mapping: Mapping = js.native
-    var matrix: Matrix3 = js.native
-    var matrixAutoUpdate: Boolean = js.native
-    var minFilter: TextureFilter = js.native
-     // HTMLImageElement or ImageData or { width: number, height: number } in some children;
-    var mipmaps: js.Array[_] = js.native
-    var name: String = js.native
-    var needsUpdate: Boolean = js.native
-    var offset: Vector2 = js.native
-    var premultiplyAlpha: Boolean = js.native
-    var repeat: Vector2 = js.native
-    var rotation: Double = js.native
-    var sourceFile: String = js.native
-    var `type`: TextureDataType = js.native
-    var unpackAlignment: Double = js.native
-    var uuid: String = js.native
-    var version: Double = js.native
-    var wrapS: Wrapping = js.native
-    var wrapT: Wrapping = js.native
+    
     def copy(source: Texture): this.type = js.native
+    
     def dispose(): Unit = js.native
+    
+    /**
+    	 * @default THREE.LinearEncoding
+    	 */
+    var encoding: TextureEncoding = js.native
+    
+    /**
+    	 * @default true
+    	 */
+    var flipY: Boolean = js.native
+    
+    /**
+    	 * @default THREE.RGBAFormat
+    	 */
+    var format: PixelFormat = js.native
+    
+    /**
+    	 * @default true
+    	 */
+    var generateMipmaps: Boolean = js.native
+    
+    var id: Double = js.native
+    
+    /**
+    	 * @default THREE.Texture.DEFAULT_IMAGE
+    	 */
+    var image: js.Any = js.native
+    
+    var internalFormat: PixelFormatGPU | Null = js.native
+    
+    val isTexture: `true` = js.native
+    
+    /**
+    	 * @default THREE.LinearFilter
+    	 */
+    var magFilter: TextureFilter = js.native
+    
+     // ImageData[] for 2D textures and CubeTexture[] for cube textures;
+    /**
+    	 * @default THREE.Texture.DEFAULT_MAPPING
+    	 */
+    var mapping: Mapping = js.native
+    
+    /**
+    	 * @default new THREE.Matrix3()
+    	 */
+    var matrix: Matrix3 = js.native
+    
+    /**
+    	 * @default true
+    	 */
+    var matrixAutoUpdate: Boolean = js.native
+    
+    /**
+    	 * @default THREE.LinearMipmapLinearFilter
+    	 */
+    var minFilter: TextureFilter = js.native
+    
+     // HTMLImageElement or ImageData or { width: number, height: number } in some children;
+    /**
+    	 * @default []
+    	 */
+    var mipmaps: js.Array[_] = js.native
+    
+    /**
+    	 * @default ''
+    	 */
+    var name: String = js.native
+    
+    var needsUpdate: Boolean = js.native
+    
+    /**
+    	 * @default new THREE.Vector2( 0, 0 )
+    	 */
+    var offset: Vector2 = js.native
+    
     def onUpdate(): Unit = js.native
+    
+    /**
+    	 * @default false
+    	 */
+    var premultiplyAlpha: Boolean = js.native
+    
+    /**
+    	 * @default new THREE.Vector2( 1, 1 )
+    	 */
+    var repeat: Vector2 = js.native
+    
+    /**
+    	 * @default 0
+    	 */
+    var rotation: Double = js.native
+    
+    var sourceFile: String = js.native
+    
     def toJSON(meta: js.Any): js.Any = js.native
+    
     def transformUv(uv: Vector2): Vector2 = js.native
+    
+    /**
+    	 * @default THREE.UnsignedByteType
+    	 */
+    var `type`: TextureDataType = js.native
+    
+    /**
+    	 * @default 4
+    	 */
+    var unpackAlignment: Double = js.native
+    
     def updateMatrix(): Unit = js.native
+    
+    var uuid: String = js.native
+    
+    /**
+    	 * @default 0
+    	 */
+    var version: Double = js.native
+    
+    /**
+    	 * @default THREE.ClampToEdgeWrapping
+    	 */
+    var wrapS: Wrapping = js.native
+    
+    /**
+    	 * @default THREE.ClampToEdgeWrapping
+    	 */
+    var wrapT: Wrapping = js.native
   }
-  
-  var TextureIdCount: Double = js.native
   /* static members */
   @js.native
   object Texture extends js.Object {
+    
     var DEFAULT_IMAGE: js.Any = js.native
+    
     var DEFAULT_MAPPING: js.Any = js.native
   }
-  
 }
-

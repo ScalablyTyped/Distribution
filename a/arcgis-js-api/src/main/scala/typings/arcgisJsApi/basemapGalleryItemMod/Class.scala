@@ -4,11 +4,10 @@ import typings.arcgisJsApi.esri.BasemapGalleryItem
 import typings.arcgisJsApi.esri.BasemapGalleryItemProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/widgets/BasemapGallery/support/BasemapGalleryItem", JSImport.Namespace)
 @js.native
 class Class () extends BasemapGalleryItem {
   def this(properties: BasemapGalleryItemProperties) = this()
 }
-

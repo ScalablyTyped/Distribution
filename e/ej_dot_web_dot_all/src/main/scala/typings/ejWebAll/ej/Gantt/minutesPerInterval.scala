@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Gantt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait minutesPerInterval extends js.Object
-
 @JSGlobal("ej.Gantt.minutesPerInterval")
 @js.native
 object minutesPerInterval extends js.Object {
+  
   ///Sets the interval automatically according with schedule start and end date.
   @js.native
   sealed trait Auto extends minutesPerInterval
@@ -29,6 +29,4 @@ object minutesPerInterval extends js.Object {
   ///Sets thirty minute intervals per hour.
   @js.native
   sealed trait ThirtyMinutes extends minutesPerInterval
-  
 }
-

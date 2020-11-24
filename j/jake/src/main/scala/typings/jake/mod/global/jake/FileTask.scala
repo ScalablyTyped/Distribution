@@ -2,7 +2,7 @@ package typings.jake.mod.global.jake
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jake.FileTask")
 @js.native
@@ -41,4 +41,3 @@ class FileTask protected () extends Task {
     opts: FileTaskOptions
   ) = this()
 }
-

@@ -6,11 +6,12 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("echarts", "init")
 @js.native
 object init extends js.Object {
+  
   def apply(dom: HTMLCanvasElement): ECharts = js.native
   def apply(dom: HTMLCanvasElement, theme: js.UndefOr[scala.Nothing], opts: DevicePixelRatio): ECharts = js.native
   def apply(dom: HTMLCanvasElement, theme: String): ECharts = js.native
@@ -46,4 +47,3 @@ object init extends js.Object {
   def apply(dom: HTMLDivElement, theme: js.Object): ECharts = js.native
   def apply(dom: HTMLDivElement, theme: js.Object, opts: DevicePixelRatio): ECharts = js.native
 }
-

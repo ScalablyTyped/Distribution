@@ -10,10 +10,11 @@ import typings.angularCompiler.r3AstMod.Variable
 import typings.angularCompiler.t2ApiMod.DirectiveMeta
 import typings.angularCompiler.t2ApiMod.Target
 import typings.std.Map
+import typings.std.ReadonlySet
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "R3BoundTarget")
 @js.native
@@ -33,7 +34,7 @@ class R3BoundTarget[DirectiveT /* <: DirectiveMeta */] protected ()
     exprTargets: Map[typings.angularCompiler.astMod.AST, Reference | Variable],
     symbols: Map[Reference | Variable, Template],
     nestingLevel: Map[Template, Double],
+    templateEntities: Map[Template | Null, ReadonlySet[Reference | Variable]],
     usedPipes: Set[String]
   ) = this()
 }
-

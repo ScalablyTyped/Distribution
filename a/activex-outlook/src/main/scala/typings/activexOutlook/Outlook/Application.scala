@@ -12,35 +12,17 @@ import typings.activexOutlook.activexOutlookNumbers.`6`
 import typings.activexOutlook.activexOutlookNumbers.`7`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Application extends js.Object {
-  val AnswerWizard: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.AnswerWizard */ js.Any = js.native
-  val Application: typings.activexOutlook.Outlook.Application = js.native
-  val Assistance: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.IAssistance */ js.Any = js.native
-  val Assistant: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.Assistant */ js.Any = js.native
-  val COMAddIns: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.COMAddIns */ js.Any = js.native
-  val Class: OlObjectClass = js.native
-  val DefaultProfileName: String = js.native
-  val Explorers: typings.activexOutlook.Outlook.Explorers = js.native
-  var FeatureInstall: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.MsoFeatureInstall */ js.Any = js.native
-  val Inspectors: typings.activexOutlook.Outlook.Inspectors = js.native
-  val IsTrusted: Boolean = js.native
-  val LanguageSettings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.LanguageSettings */ js.Any = js.native
-  val Name: String = js.native
-  @JSName("Outlook.Application_typekey")
-  var OutlookDotApplication_typekey: typings.activexOutlook.Outlook.Application = js.native
-  val Parent: js.Any = js.native
-  val PickerDialog: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.PickerDialog */ js.Any = js.native
-  val ProductCode: String = js.native
-  val Reminders: typings.activexOutlook.Outlook.Reminders = js.native
-  val Session: NameSpace = js.native
-  val TimeZones: typings.activexOutlook.Outlook.TimeZones = js.native
-  val Version: String = js.native
+  
   def ActiveExplorer(): Explorer = js.native
+  
   def ActiveInspector(): Inspector = js.native
+  
   def ActiveWindow(): js.Any = js.native
+  
   def AdvancedSearch(Scope: String): Search = js.native
   def AdvancedSearch(
     Scope: String,
@@ -54,9 +36,24 @@ trait Application extends js.Object {
   def AdvancedSearch(Scope: String, Filter: js.Any, SearchSubFolders: js.UndefOr[scala.Nothing], Tag: js.Any): Search = js.native
   def AdvancedSearch(Scope: String, Filter: js.Any, SearchSubFolders: js.Any): Search = js.native
   def AdvancedSearch(Scope: String, Filter: js.Any, SearchSubFolders: js.Any, Tag: js.Any): Search = js.native
+  
+  val AnswerWizard: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.AnswerWizard */ js.Any = js.native
+  
+  val Application: typings.activexOutlook.Outlook.Application = js.native
+  
+  val Assistance: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.IAssistance */ js.Any = js.native
+  
+  val Assistant: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.Assistant */ js.Any = js.native
+  
+  val COMAddIns: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.COMAddIns */ js.Any = js.native
+  
+  val Class: OlObjectClass = js.native
+  
   def CopyFile(FilePath: String, DestFolderPath: String): js.Any = js.native
+  
   def CreateItemFromTemplate(TemplatePath: String): js.Any = js.native
   def CreateItemFromTemplate(TemplatePath: String, InFolder: js.Any): js.Any = js.native
+  
   @JSName("CreateItem")
   def CreateItem_0(ItemType: `0`): MailItem = js.native
   @JSName("CreateItem")
@@ -77,12 +74,49 @@ trait Application extends js.Object {
   def CreateItem_6(ItemType: `6`): PostItem = js.native
   @JSName("CreateItem")
   def CreateItem_7(ItemType: `7`): DistListItem = js.native
+  
   def CreateObject(ObjectName: String): js.Any = js.native
+  
+  val DefaultProfileName: String = js.native
+  
+  val Explorers: typings.activexOutlook.Outlook.Explorers = js.native
+  
+  var FeatureInstall: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.MsoFeatureInstall */ js.Any = js.native
+  
   def GetNamespace(Type: String): NameSpace = js.native
+  
   def GetNewNickNames(pvar: js.Any): Unit = js.native
+  
   def GetObjectReference(Item: js.Any, ReferenceType: OlReferenceType): js.Any = js.native
+  
+  val Inspectors: typings.activexOutlook.Outlook.Inspectors = js.native
+  
   def IsSearchSynchronous(LookInFolders: String): Boolean = js.native
+  
+  val IsTrusted: Boolean = js.native
+  
+  val LanguageSettings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.LanguageSettings */ js.Any = js.native
+  
+  val Name: String = js.native
+  
+  @JSName("Outlook.Application_typekey")
+  var OutlookDotApplication_typekey: typings.activexOutlook.Outlook.Application = js.native
+  
+  val Parent: js.Any = js.native
+  
+  val PickerDialog: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.PickerDialog */ js.Any = js.native
+  
+  val ProductCode: String = js.native
+  
   def Quit(): Unit = js.native
+  
   def RefreshFormRegionDefinition(RegionName: String): Unit = js.native
+  
+  val Reminders: typings.activexOutlook.Outlook.Reminders = js.native
+  
+  val Session: NameSpace = js.native
+  
+  val TimeZones: typings.activexOutlook.Outlook.TimeZones = js.native
+  
+  val Version: String = js.native
 }
-

@@ -2,13 +2,15 @@ package typings.blazorJavascriptInterop
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object DotNet extends js.Object {
+    
     /**
       * Invokes the specified .NET public method synchronously. Not all hosting scenarios support
       * synchronous invocation, so if possible use invokeMethodAsync instead.
@@ -19,6 +21,7 @@ object global extends js.Object {
       * @returns The result of the operation.
       */
     def invokeMethod[T](assemblyName: String, methodIdentifier: String, args: js.Any*): T = js.native
+    
     /**
       * Invokes the specified .NET public method asynchronously.
       *
@@ -29,6 +32,4 @@ object global extends js.Object {
       */
     def invokeMethodAsync[T](assemblyName: String, methodIdentifier: String, args: js.Any*): js.Promise[T] = js.native
   }
-  
 }
-

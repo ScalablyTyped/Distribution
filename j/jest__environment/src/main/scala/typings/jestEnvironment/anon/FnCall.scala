@@ -1,13 +1,14 @@
 package typings.jestEnvironment.anon
 
+import typings.jestTypes.globalMod.TestFn
+import typings.jestTypes.globalMod.TestName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCall extends js.Object {
-  def apply(): js.Array[_] = js.native
-  def apply(arrayLength: Double): js.Array[_] = js.native
-  def apply[T](items: T*): js.Array[T] = js.native
+  
+  def apply(testName: TestName, fn: TestFn): Unit = js.native
+  def apply(testName: TestName, fn: TestFn, timeout: Double): Unit = js.native
 }
-

@@ -6,11 +6,12 @@ import typings.std.HTMLDocument
 import typings.testingLibraryReact.testingLibraryReactBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@testing-library/react", "prettyDOM")
 @js.native
 object prettyDOM extends js.Object {
+  
   def apply(): String | `false` = js.native
   def apply(dom: js.UndefOr[scala.Nothing], maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): String | `false` = js.native
   def apply(dom: js.UndefOr[scala.Nothing], maxLength: Double): String | `false` = js.native
@@ -24,4 +25,3 @@ object prettyDOM extends js.Object {
   def apply(dom: HTMLDocument, maxLength: Double): String | `false` = js.native
   def apply(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.openpgp.mod.packet
 import typings.openpgp.mod.Integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "packet.Marker")
 @js.native
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   * Such a packet MUST be ignored when received.
   */
 class Marker () extends js.Object {
+  
   /**
     * Parsing function for a literal data packet (tag 10).
     * @param input Payload of a tag 10 packet
@@ -27,4 +28,3 @@ class Marker () extends js.Object {
     */
   def read(input: String, position: Integer, len: Integer): Marker = js.native
 }
-

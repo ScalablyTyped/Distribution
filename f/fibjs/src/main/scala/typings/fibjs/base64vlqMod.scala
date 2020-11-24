@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -12,8 +12,9 @@ import scala.scalajs.js.annotation._
 @JSImport("base64vlq", JSImport.Namespace)
 @js.native
 object base64vlqMod extends js.Object {
+  
   def decode(data: String): js.Array[_] = js.native
+  
   def encode(data: js.Array[_]): String = js.native
   def encode(data: Double): String = js.native
 }
-

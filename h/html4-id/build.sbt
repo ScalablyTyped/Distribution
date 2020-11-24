@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "html4-id"
-version := "1.0-dt-20200616Z-eadb21"
+version := "1.0-dt-20200616Z-9d56bb"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

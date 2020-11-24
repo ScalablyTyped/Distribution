@@ -4,13 +4,15 @@ import typings.findUp.mod.Match
 import typings.findUp.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
+    
     /**
     		Synchronously find a file or directory by walking up parent directories.
     		@param matcher - Called for each directory in the search. Return a path or `findUp.stop` to stop the search.
@@ -37,6 +39,7 @@ object anon extends js.Object {
     def apply(name: String, options: Options): js.UndefOr[String] = js.native
     def apply(name: js.Array[String]): js.UndefOr[String] = js.native
     def apply(name: js.Array[String], options: Options): js.UndefOr[String] = js.native
+    
     /**
     		Synchronously check if a path exists.
     		@param path - Path to the file or directory.
@@ -50,6 +53,4 @@ object anon extends js.Object {
     		*/
     def exists(path: String): Boolean = js.native
   }
-  
 }
-

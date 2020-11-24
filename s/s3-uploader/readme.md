@@ -11,7 +11,7 @@ Resize, rename, and upload images to AWS S3
 | Keywords           | aws, s3, imagemagic, image, resize, rename, upload, versions |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 39054 |
+| # downloads        | 35909 |
 | # stars            | 14 |
 
 ## Links

@@ -2,16 +2,27 @@ package typings.winrtUwp.global.Windows.ApplicationModel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** You can create an app that acts as the lock screen, allowing greater user personalization. You can develop novel unlock gestures and animations, and also display custom information or appearances for people. */
 @JSGlobal("Windows.ApplicationModel.LockScreen")
 @js.native
 object LockScreen extends js.Object {
+  
   /** Allows the lock screen app to request that the device unlocks, and allows the app to register to be notified when the device begins to unlock. */
   @js.native
   abstract class LockApplicationHost ()
     extends typings.winrtUwp.Windows.ApplicationModel.LockScreen.LockApplicationHost
+  /* static members */
+  @js.native
+  object LockApplicationHost extends js.Object {
+    
+    /**
+      * Gets a LockApplicationHost object.
+      * @return A LockApplicationHost object.
+      */
+    def getForCurrentView(): typings.winrtUwp.Windows.ApplicationModel.LockScreen.LockApplicationHost = js.native
+  }
   
   /** Represents a lock screen badge for an app. */
   @js.native
@@ -32,16 +43,4 @@ object LockScreen extends js.Object {
   @js.native
   abstract class LockScreenUnlockingEventArgs ()
     extends typings.winrtUwp.Windows.ApplicationModel.LockScreen.LockScreenUnlockingEventArgs
-  
-  /* static members */
-  @js.native
-  object LockApplicationHost extends js.Object {
-    /**
-      * Gets a LockApplicationHost object.
-      * @return A LockApplicationHost object.
-      */
-    def getForCurrentView(): typings.winrtUwp.Windows.ApplicationModel.LockScreen.LockApplicationHost = js.native
-  }
-  
 }
-

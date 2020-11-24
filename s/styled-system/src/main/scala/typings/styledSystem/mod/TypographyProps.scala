@@ -6,7 +6,7 @@ import typings.styledSystem.styledSystemStrings.letterSpacings
 import typings.styledSystem.styledSystemStrings.lineHeights
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypographyProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
@@ -17,12 +17,11 @@ trait TypographyProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
      with LetterSpacingProps[ThemeType, ThemeValue[letterSpacings, ThemeType, js.Any]]
      with FontStyleProps[ThemeType]
      with TextAlignProps[ThemeType]
-
 object TypographyProps {
+  
   @scala.inline
-  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](): TypographyProps[ThemeType] = {
+  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): TypographyProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TypographyProps[ThemeType]]
   }
 }
-

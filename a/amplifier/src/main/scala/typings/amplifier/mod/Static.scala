@@ -2,16 +2,11 @@ package typings.amplifier.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Static extends js.Object {
-  @JSName("request")
-  var request_Original: Request = js.native
-  @JSName("store")
-  var store_Original: Store = js.native
-  @JSName("subscribe")
-  var subscribe_Original: Subscribe = js.native
+  
   /***
     * Publish a message.
     * topic: The name of the message to publish.
@@ -21,6 +16,7 @@ trait Static extends js.Object {
     * Note that only one subscription can return false because doing so will prevent additional subscriptions from being invoked.
     */
   def publish(topic: String, args: js.Any*): Boolean = js.native
+  
   /***
     * Request a resource.
     * resourceId: Identifier string for the resource.
@@ -44,6 +40,9 @@ trait Static extends js.Object {
     *   error (optional): Function to invoke on error.
     */
   def request(settings: RequestSettings): js.Any = js.native
+  @JSName("request")
+  var request_Original: Request = js.native
+  
   /***
     * Gets a stored value based on the key of a hash of all stored values.
     */
@@ -58,6 +57,9 @@ trait Static extends js.Object {
     */
   def store(key: String, value: js.Any): Unit = js.native
   def store(key: String, value: js.Any, options: js.Any): Unit = js.native
+  @JSName("store")
+  var store_Original: Store = js.native
+  
   /***
     * Subscribe to a message.
     * topic: Name of the message to subscribe to.
@@ -75,6 +77,9 @@ trait Static extends js.Object {
     */
   def subscribe(topic: String, context: js.Any, callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
   def subscribe(topic: String, context: js.Any, callback: js.Function1[/* repeated */ js.Any, _], priority: Double): Unit = js.native
+  @JSName("subscribe")
+  var subscribe_Original: Subscribe = js.native
+  
   /***
     * Remove a subscription.
     * topic: The topic being unsubscribed from.
@@ -82,4 +87,3 @@ trait Static extends js.Object {
     */
   def unsubscribe(topic: String, callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
 }
-

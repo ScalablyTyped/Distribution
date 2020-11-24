@@ -2,7 +2,7 @@ package typings.elasticJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "RegexpQuery")
 @js.native
@@ -11,18 +11,22 @@ class RegexpQuery protected () extends Query {
     Matches documents that have fields matching a regular expression.
     */
   def this(field: String, value: String) = this()
+  
   /*
     The type of ejs object.  For internal use only.
     */
   def _type(): String = js.native
+  
   /*
     Sets the boost value of the Query.
     */
   def boost(boost: Double): RegexpQuery = js.native
+  
   /*
     The field to run the query against.
     */
   def field(f: String): RegexpQuery = js.native
+  
   /*
     The regex flags to use.  Valid flags are:
     INTERSECTION - Support for intersection notation
@@ -36,11 +40,13 @@ class RegexpQuery protected () extends Query {
     INTERSECTION|COMPLEMENT|EMPTY
     */
   def flags(f: String): RegexpQuery = js.native
+  
   /*
     The regex flags to use as a numeric value.  Advanced use only,
     it is probably better to stick with the flags option.
     */
   def flagsValue(v: String): RegexpQuery = js.native
+  
   /*
     Sets rewrite method.  Valid values are:
     constant_score_auto - tries to pick the best constant-score rewrite
@@ -61,14 +67,15 @@ class RegexpQuery protected () extends Query {
     This is an advanced option, use with care.
     */
   def rewrite(m: String): RegexpQuery = js.native
+  
   /*
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
   def toJSON(): js.Any = js.native
+  
   /*
     The regexp value.
     */
   def value(p: String): RegexpQuery = js.native
 }
-

@@ -2,23 +2,32 @@ package typings.yadda.portugueseMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Vocabulary
   extends typings.yadda.englishMod.Vocabulary {
+  
   var dada: String = js.native
+  
   var dadas: String = js.native
+  
   var dado: String = js.native
+  
   var dados: String = js.native
+  
   var entao: String = js.native
+  
   var quando: String = js.native
+  
   var se: String = js.native
+  
   var seja: String = js.native
+  
   var sejam: String = js.native
 }
-
 object Vocabulary {
+  
   @scala.inline
   def apply(
     _steps: js.Array[String],
@@ -45,36 +54,47 @@ object Vocabulary {
     __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vocabulary]
   }
+  
   @scala.inline
   implicit class VocabularyOps[Self <: Vocabulary] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDada(value: String): Self = this.set("dada", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDadas(value: String): Self = this.set("dadas", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDado(value: String): Self = this.set("dado", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDados(value: String): Self = this.set("dados", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEntao(value: String): Self = this.set("entao", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQuando(value: String): Self = this.set("quando", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSe(value: String): Self = this.set("se", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSeja(value: String): Self = this.set("seja", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSejam(value: String): Self = this.set("sejam", value.asInstanceOf[js.Any])
   }
-  
 }
-

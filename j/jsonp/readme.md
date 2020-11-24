@@ -10,9 +10,9 @@ A sane JSONP implementation.
 | ------------------ | :-------------: |
 | Full name          | jsonp |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 206 |
-| # downloads        | 6980319 |
+| # releases         | 0 |
+| # dependents       | 237 |
+| # downloads        | 9575934 |
 | # stars            | 17 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.typescriptServices.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "OutputFile")
 @js.native
@@ -22,4 +22,3 @@ class OutputFile protected ()
     sourceMapEntries: js.Array[typings.typescriptServices.TypeScript.SourceMapEntry]
   ) = this()
 }
-

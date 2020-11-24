@@ -5,7 +5,6 @@ import typings.devextreme.anon.BaseColorSet
 import typings.devextreme.anon.FileName
 import typings.devextreme.devextremeStrings.Bright
 import typings.devextreme.devextremeStrings.Carmine
-import typings.devextreme.devextremeStrings.Default
 import typings.devextreme.devextremeStrings.Material
 import typings.devextreme.devextremeStrings.Ocean
 import typings.devextreme.devextremeStrings.Office
@@ -22,29 +21,52 @@ import typings.devextreme.devextremeStrings.`Soft Pastel`
 import typings.devextreme.mod.DevExpress.DOMComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("devextreme", "viz")
 @js.native
 object ^ extends js.Object {
-  /** @name viz.currentPalette() */
+  
+  /**
+    * [descr:viz.currentPalette()]
+    */
   def currentPalette(): String = js.native
-  /** @name viz.currentPalette(paletteName) */
+  /**
+    * [descr:viz.currentPalette(paletteName)]
+    */
   def currentPalette(paletteName: String): Unit = js.native
-  /** @name viz.currentTheme() */
+  
+  /**
+    * [descr:viz.currentTheme()]
+    */
   def currentTheme(): String = js.native
-  /** @name viz.currentTheme(platform, colorScheme) */
+  /**
+    * [descr:viz.currentTheme(platform, colorScheme)]
+    */
   def currentTheme(platform: String, colorScheme: String): Unit = js.native
-  /** @name viz.currentTheme(theme) */
+  /**
+    * [descr:viz.currentTheme(theme)]
+    */
   def currentTheme(theme: String): Unit = js.native
-  /** @name viz.exportFromMarkup(markup, options) */
+  
+  /**
+    * [descr:viz.exportFromMarkup(markup, options)]
+    */
   def exportFromMarkup(markup: String, options: BackgroundColor): Unit = js.native
-  /** @name viz.exportWidgets(widgetInstances) */
+  
+  /**
+    * [descr:viz.exportWidgets(widgetInstances)]
+    */
   def exportWidgets(widgetInstances: js.Array[js.Array[DOMComponent]]): Unit = js.native
-  /** @name viz.exportWidgets(widgetInstances, options) */
+  /**
+    * [descr:viz.exportWidgets(widgetInstances, options)]
+    */
   def exportWidgets(widgetInstances: js.Array[js.Array[DOMComponent]], options: FileName): Unit = js.native
+  
   def generateColors(palette: js.Array[String], count: Double, options: BaseColorSet): js.Array[String] = js.native
-  /** @name viz.generateColors(palette, count, options) */
+  /**
+    * [descr:viz.generateColors(palette, count, options)]
+    */
   @JSName("generateColors")
   def generateColors_Bright(palette: Bright, count: Double, options: BaseColorSet): js.Array[String] = js.native
   @JSName("generateColors")
@@ -53,8 +75,6 @@ object ^ extends js.Object {
   def generateColors_DarkMoon(palette: `Dark Moon`, count: Double, options: BaseColorSet): js.Array[String] = js.native
   @JSName("generateColors")
   def generateColors_DarkViolet(palette: `Dark Violet`, count: Double, options: BaseColorSet): js.Array[String] = js.native
-  @JSName("generateColors")
-  def generateColors_Default(palette: Default, count: Double, options: BaseColorSet): js.Array[String] = js.native
   @JSName("generateColors")
   def generateColors_GreenMist(palette: `Green Mist`, count: Double, options: BaseColorSet): js.Array[String] = js.native
   @JSName("generateColors")
@@ -77,19 +97,39 @@ object ^ extends js.Object {
   def generateColors_Vintage(palette: Vintage, count: Double, options: BaseColorSet): js.Array[String] = js.native
   @JSName("generateColors")
   def generateColors_Violet(palette: Violet, count: Double, options: BaseColorSet): js.Array[String] = js.native
-  /** @name viz.getMarkup(widgetInstances) */
+  
+  /**
+    * [descr:viz.getMarkup(widgetInstances)]
+    */
   def getMarkup(widgetInstances: js.Array[DOMComponent]): String = js.native
-  /** @name viz.getPalette(paletteName) */
+  
+  /**
+    * [descr:viz.getPalette(paletteName)]
+    */
   def getPalette(paletteName: String): js.Any = js.native
-  /** @name viz.getTheme(theme) */
+  
+  /**
+    * [descr:viz.getTheme(theme)]
+    */
   def getTheme(theme: String): js.Any = js.native
-  /** @name viz.refreshPaths() */
+  
+  /**
+    * [descr:viz.refreshPaths()]
+    */
   def refreshPaths(): Unit = js.native
-  /** @name viz.refreshTheme() */
+  
+  /**
+    * [descr:viz.refreshTheme()]
+    */
   def refreshTheme(): Unit = js.native
-  /** @name viz.registerPalette(paletteName, palette) */
+  
+  /**
+    * [descr:viz.registerPalette(paletteName, palette)]
+    */
   def registerPalette(paletteName: String, palette: js.Any): Unit = js.native
-  /** @name viz.registerTheme(customTheme, baseTheme) */
+  
+  /**
+    * [descr:viz.registerTheme(customTheme, baseTheme)]
+    */
   def registerTheme(customTheme: js.Any, baseTheme: String): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ A CLI for webpack-plugin-serve, providing a premier webpack development server
 | ------------------ | :-------------: |
 | Full name          | webpack-serve |
 | Keywords           | development, devserver, serve, server, webpack |
-| # releases         | 34 |
-| # dependents       | 89 |
-| # downloads        | 2297191 |
+| # releases         | 9 |
+| # dependents       | 91 |
+| # downloads        | 1692677 |
 | # stars            | 1 |
 
 ## Links

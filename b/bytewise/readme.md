@@ -12,7 +12,7 @@ Binary serialization which sorts bytewise for arbirarily complex data structures
 | Keywords           | binary, sort, collation, serialization, leveldb, indexeddb |
 | # releases         | 0 |
 | # dependents       | 83 |
-| # downloads        | 1667673 |
+| # downloads        | 1744000 |
 | # stars            | 8 |
 
 ## Links

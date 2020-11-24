@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.StartScreen
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TileOptions extends js.Object
-
 @JSGlobal("Windows.UI.StartScreen.TileOptions")
 @js.native
 object TileOptions extends js.Object {
+  
   @js.native
   sealed trait copyOnDeployment extends TileOptions
   
@@ -21,6 +21,4 @@ object TileOptions extends js.Object {
   
   @js.native
   sealed trait showNameOnWideLogo extends TileOptions
-  
 }
-

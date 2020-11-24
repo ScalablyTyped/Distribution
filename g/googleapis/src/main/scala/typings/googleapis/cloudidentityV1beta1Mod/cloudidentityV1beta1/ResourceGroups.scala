@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudidentity/v1beta1", "cloudidentity_v1beta1.Resource$Groups")
 @js.native
 class ResourceGroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var memberships: ResourceGroupsMemberships = js.native
+  
   /**
     * cloudidentity.groups.create
     * @desc Creates a Group.
@@ -42,6 +43,7 @@ class ResourceGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudidentity.groups.delete
     * @desc Deletes a Group.
@@ -70,6 +72,7 @@ class ResourceGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudidentity.groups.get
     * @desc Retrieves a Group.
@@ -98,6 +101,7 @@ class ResourceGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroup]
   ): Unit = js.native
+  
   /**
     * cloudidentity.groups.lookup
     * @desc Looks up [resource
@@ -129,6 +133,9 @@ class ResourceGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLookupGroupNameResponse]
   ): Unit = js.native
+  
+  var memberships: ResourceGroupsMemberships = js.native
+  
   /**
     * cloudidentity.groups.patch
     * @desc Updates a Group.
@@ -159,6 +166,7 @@ class ResourceGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * cloudidentity.groups.search
     * @desc Searches for Groups.
@@ -191,4 +199,3 @@ class ResourceGroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSearchGroupsResponse]
   ): Unit = js.native
 }
-

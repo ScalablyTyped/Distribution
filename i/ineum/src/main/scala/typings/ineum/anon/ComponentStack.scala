@@ -1,34 +1,50 @@
 package typings.ineum.anon
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ComponentStack extends js.Object {
-  var componentStack: String = js.native
+  
+  var componentStack: js.UndefOr[String] = js.native
+  
+  var meta: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.native
 }
-
 object ComponentStack {
+  
   @scala.inline
-  def apply(componentStack: String): ComponentStack = {
-    val __obj = js.Dynamic.literal(componentStack = componentStack.asInstanceOf[js.Any])
+  def apply(): ComponentStack = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComponentStack]
   }
+  
   @scala.inline
   implicit class ComponentStackOps[Self <: ComponentStack] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setComponentStack(value: String): Self = this.set("componentStack", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteComponentStack: Self = this.set("componentStack", js.undefined)
+    
+    @scala.inline
+    def setMeta(value: StringDictionary[String | Double | Boolean]): Self = this.set("meta", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMeta: Self = this.set("meta", js.undefined)
   }
-  
 }
-

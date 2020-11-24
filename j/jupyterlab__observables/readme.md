@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__observables
 
-Typings are for version 3.1.0
+Typings are for version 3.2.5
 
 ## Library description:
 Data structures which may be observed for changes.
@@ -10,9 +10,9 @@ Data structures which may be observed for changes.
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/observables |
 | Keywords           | - |
-| # releases         | 55 |
-| # dependents       | 24 |
-| # downloads        | 1461694 |
+| # releases         | 92 |
+| # dependents       | 33 |
+| # downloads        | 2255294 |
 | # stars            | 0 |
 
 ## Links

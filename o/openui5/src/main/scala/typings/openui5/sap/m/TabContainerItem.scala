@@ -4,16 +4,18 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TabContainerItem extends Element {
+  
   /**
     * Adds some content to the aggregation <code>content</code>.
     * @param oContent the content to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addContent(oContent: Control): TabContainerItem = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>itemPropertyChanged</code> event of this
     * <code>sap.m.TabContainerItem</code>.When called, the context of the event handler (its
@@ -29,11 +31,13 @@ trait TabContainerItem extends Element {
     */
   def attachItemPropertyChanged(oData: js.Any, fnFunction: js.Any): TabContainerItem = js.native
   def attachItemPropertyChanged(oData: js.Any, fnFunction: js.Any, oListener: js.Any): TabContainerItem = js.native
+  
   /**
     * Destroys all the content in the aggregation <code>content</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyContent(): TabContainerItem = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>itemPropertyChanged</code> event of
     * this <code>sap.m.TabContainerItem</code>.The passed function and listener object must match the ones
@@ -43,6 +47,7 @@ trait TabContainerItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachItemPropertyChanged(fnFunction: js.Any, oListener: js.Any): TabContainerItem = js.native
+  
   /**
     * Fires event <code>itemPropertyChanged</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>itemChanged</code> of type <code>sap.m.TabContainerItem</code>The item
@@ -53,16 +58,19 @@ trait TabContainerItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireItemPropertyChanged(mArguments: js.Any): TabContainerItem = js.native
+  
   /**
     * Gets content of aggregation <code>content</code>.The content displayed for this item.
     */
   def getContent(): js.Array[Control] = js.native
+  
   /**
     * Gets current value of property <code>key</code>.Determines the name of the item. Can be used as
     * input for subsequent actions.
     * @returns Value of property <code>key</code>
     */
   def getKey(): String = js.native
+  
   /**
     * Gets current value of property <code>modified</code>.Shows if a control is edited (default is
     * false). Items that are marked as modified have a * symbol to indicate that they haven't been
@@ -70,12 +78,14 @@ trait TabContainerItem extends Element {
     * @returns Value of property <code>modified</code>
     */
   def getModified(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>name</code>.Determines the text to be displayed for the
     * item.Default value is <code></code>.
     * @returns Value of property <code>name</code>
     */
   def getName(): String = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation <code>content</code>.and
     * returns its index if found or -1 otherwise.
@@ -83,6 +93,7 @@ trait TabContainerItem extends Element {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfContent(oContent: Control): Double = js.native
+  
   /**
     * Inserts a content into the aggregation <code>content</code>.
     * @param oContent the content to insert; if empty, nothing is inserted
@@ -93,12 +104,14 @@ trait TabContainerItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertContent(oContent: Control, iIndex: Double): TabContainerItem = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>content</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllContent(): js.Array[Control] = js.native
+  
   def removeContent(vContent: String): Control = js.native
   /**
     * Removes a content from the aggregation <code>content</code>.
@@ -107,6 +120,7 @@ trait TabContainerItem extends Element {
     */
   def removeContent(vContent: Double): Control = js.native
   def removeContent(vContent: Control): Control = js.native
+  
   /**
     * Sets a new value for property <code>key</code>.Determines the name of the item. Can be used as input
     * for subsequent actions.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -115,6 +129,7 @@ trait TabContainerItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setKey(sKey: String): TabContainerItem = js.native
+  
   /**
     * Sets a new value for property <code>modified</code>.Shows if a control is edited (default is false).
     * Items that are marked as modified have a * symbol to indicate that they haven't been saved.When
@@ -124,6 +139,7 @@ trait TabContainerItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setModified(bModified: Boolean): TabContainerItem = js.native
+  
   /**
     * Sets a new value for property <code>name</code>.Determines the text to be displayed for the
     * item.When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -132,6 +148,7 @@ trait TabContainerItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setName(sName: String): TabContainerItem = js.native
+  
   def setProperty(sName: String, vValue: String, bSuppressInvalidation: Boolean): TabContainerItem = js.native
   /**
     * Overwrites the method in order to suppress invalidation for some properties.
@@ -142,4 +159,3 @@ trait TabContainerItem extends Element {
     */
   def setProperty(sName: String, vValue: Boolean, bSuppressInvalidation: Boolean): TabContainerItem = js.native
 }
-

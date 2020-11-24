@@ -10,9 +10,9 @@ Generic build of Mozilla's PDF.js library.
 | ------------------ | :-------------: |
 | Full name          | pdfjs-dist |
 | Keywords           | Mozilla, pdf, pdf.js |
-| # releases         | 92 |
-| # dependents       | 259 |
-| # downloads        | 10475737 |
+| # releases         | 8 |
+| # dependents       | 384 |
+| # downloads        | 20412176 |
 | # stars            | 27 |
 
 ## Links

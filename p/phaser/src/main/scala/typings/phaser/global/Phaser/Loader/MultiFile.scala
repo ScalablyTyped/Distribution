@@ -2,7 +2,7 @@ package typings.phaser.global.Phaser.Loader
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A MultiFile is a special kind of parent that contains two, or more, Files as children and looks after
@@ -28,4 +28,3 @@ class MultiFile protected ()
     files: js.Array[typings.phaser.Phaser.Loader.File]
   ) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.mongodb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "DBRef")
 @js.native
@@ -16,4 +16,3 @@ class DBRef protected ()
   def this(namespace: String, oid: typings.bson.mod.ObjectId) = this()
   def this(namespace: String, oid: typings.bson.mod.ObjectId, db: String) = this()
 }
-

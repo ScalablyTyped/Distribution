@@ -3,11 +3,12 @@ package typings.ensureError.mod
 import typings.ensureError.anon.ErrorWithStackError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ensure-error", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Ensures a value is a valid error by making it one if not.
   If `input` is an `Error`, any missing `Error` properties will be added.
@@ -27,4 +28,3 @@ object ^ extends js.Object {
   */
   def apply[T](input: T): IfAny[T, ErrorWithStackError, NonError | ErrorWithStack[T]] = js.native
 }
-

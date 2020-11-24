@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Rectangle object is an area defined by its position, as indicated by its top-left corner
@@ -36,11 +36,11 @@ class Rectangle ()
   def this(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
   def this(x: Double, y: Double, width: Double, height: Double) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.Rectangle")
 @js.native
 object Rectangle extends js.Object {
+  
   /**
     * A constant empty rectangle.
     *
@@ -51,4 +51,3 @@ object Rectangle extends js.Object {
     */
   var EMPTY: typings.pixiJs.PIXI.Rectangle = js.native
 }
-

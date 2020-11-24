@@ -10,9 +10,9 @@ btoa and atob (ie base64/base64url encoding and decoding) support for node.js or
 | ------------------ | :-------------: |
 | Full name          | b2a |
 | Keywords           | btoa, encode, decode, atob, base64, base64url, base64-url, unicode, 16-bit, 8-bit, homoglyphs |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 4 |
-| # downloads        | 78449 |
+| # downloads        | 135619 |
 | # stars            | 0 |
 
 ## Links

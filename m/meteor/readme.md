@@ -10,9 +10,9 @@ Meteor, the JavaScript App Platform
 | ------------------ | :-------------: |
 | Full name          | meteor |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 12379 |
+| # downloads        | 7212 |
 | # stars            | 51 |
 
 ## Links

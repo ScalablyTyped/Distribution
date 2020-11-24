@@ -12,7 +12,7 @@ Pretty datetime: `2014-01-09 06:46:01`
 | Keywords           | datetime, date-time, date, time, utc, iso, timezone, zone, timestamp |
 | # releases         | 3 |
 | # dependents       | 42 |
-| # downloads        | 22475445 |
+| # downloads        | 24168796 |
 | # stars            | 3 |
 
 ## Links

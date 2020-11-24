@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.daxMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.DAX")
 @js.native
@@ -14,4 +14,3 @@ class DAX ()
   extends typings.awsSdk.mod.DAX {
   def this(options: ClientConfiguration) = this()
 }
-

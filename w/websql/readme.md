@@ -9,9 +9,9 @@ WebSQL Database API, implemented for Node using sqlite3
 | ------------------ | :-------------: |
 | Full name          | websql |
 | Keywords           | websql, sql, opendatabase, sqlite, storage, sqlite3, database |
-| # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 146873 |
+| # releases         | 0 |
+| # dependents       | 16 |
+| # downloads        | 252918 |
 | # stars            | 3 |
 
 ## Links

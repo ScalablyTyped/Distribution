@@ -2,10 +2,11 @@ package typings.rxjsCompat.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallThisProjectConcurrent extends js.Object {
+  
   def apply[T, R](
     project: js.Function2[
       /* value */ T, 
@@ -22,4 +23,3 @@ trait FnCallThisProjectConcurrent extends js.Object {
     concurrent: Double
   ): js.Any = js.native
 }
-

@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Service of {@link XMLDocumentWrapper} */
 @js.native
 trait XMLDocumentWrapper
   extends XXMLDocumentWrapper
      with XInitialization
-
 object XMLDocumentWrapper {
+  
   @scala.inline
   def apply(
     CurrentElement: XXMLElementWrapper,
@@ -38,4 +38,3 @@ object XMLDocumentWrapper {
     __obj.asInstanceOf[XMLDocumentWrapper]
   }
 }
-

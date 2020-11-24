@@ -3,7 +3,7 @@ package typings.sipJs.apiMod
 import typings.sipJs.methodsMessageMod.IncomingMessageRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/api", "Message")
 @js.native
@@ -12,4 +12,3 @@ class Message protected ()
   /** @internal */
   def this(incomingMessageRequest: IncomingMessageRequest) = this()
 }
-

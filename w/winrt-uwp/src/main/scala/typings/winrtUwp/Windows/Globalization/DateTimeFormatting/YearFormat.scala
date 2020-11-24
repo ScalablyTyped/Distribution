@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Globalization.DateTimeFormatting
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait YearFormat extends js.Object
-
 /** Specifies the intended format for the year in a DateTimeFormatter object. */
 @JSGlobal("Windows.Globalization.DateTimeFormatting.YearFormat")
 @js.native
 object YearFormat extends js.Object {
+  
   /** Display an abbreviated version of the year (for example, "11" for Gregorian 2011). */
   @js.native
   sealed trait abbreviated extends YearFormat
@@ -26,6 +26,4 @@ object YearFormat extends js.Object {
   /** Do not display the year. */
   @js.native
   sealed trait none extends YearFormat
-  
 }
-

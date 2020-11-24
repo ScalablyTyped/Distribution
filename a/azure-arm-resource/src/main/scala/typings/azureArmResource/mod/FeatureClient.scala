@@ -5,11 +5,12 @@ import typings.msRestAzure.mod.AzureServiceClientOptions
 import typings.msRestAzure.mod.CloudErrorParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource", "FeatureClient")
 @js.native
 object FeatureClient extends js.Object {
+  
   @js.native
   class FeatureClient protected ()
     extends typings.azureArmResource.featureClientMod.FeatureClient {
@@ -57,6 +58,20 @@ object FeatureClient extends js.Object {
   }
   
   @js.native
+  object FeatureModels extends js.Object {
+    
+    @js.native
+    class BaseResource ()
+      extends typings.msRestAzure.mod.BaseResource
+    
+    @js.native
+    class CloudError protected ()
+      extends typings.azureArmResource.featureClientMod.FeatureModels.CloudError {
+      def this(parameters: CloudErrorParameters) = this()
+    }
+  }
+  
+  @js.native
   class default protected ()
     extends typings.azureArmResource.featureClientMod.default {
     /**
@@ -101,20 +116,4 @@ object FeatureClient extends js.Object {
       options: AzureServiceClientOptions
     ) = this()
   }
-  
-  @js.native
-  object FeatureModels extends js.Object {
-    @js.native
-    class BaseResource ()
-      extends typings.msRestAzure.mod.BaseResource
-    
-    @js.native
-    class CloudError protected ()
-      extends typings.azureArmResource.featureClientMod.FeatureModels.CloudError {
-      def this(parameters: CloudErrorParameters) = this()
-    }
-    
-  }
-  
 }
-

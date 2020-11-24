@@ -9,7 +9,7 @@ import typings.angularCore.mod.Renderer2
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "NgClass")
 @js.native
@@ -20,6 +20,7 @@ class NgClass protected () extends DoCheck {
     _ngEl: ElementRef[_],
     _renderer: Renderer2
   ) = this()
+  
   /**
     * Applies a collection of CSS classes to the DOM element.
     *
@@ -29,23 +30,36 @@ class NgClass protected () extends DoCheck {
     * for truthy and removed for falsy).
     */
   var _applyClasses: js.Any = js.native
+  
   var _applyIterableChanges: js.Any = js.native
+  
   var _applyKeyValueChanges: js.Any = js.native
+  
   var _initialClasses: js.Any = js.native
+  
   var _iterableDiffer: js.Any = js.native
+  
   var _iterableDiffers: js.Any = js.native
+  
   var _keyValueDiffer: js.Any = js.native
+  
   var _keyValueDiffers: js.Any = js.native
+  
   var _ngEl: js.Any = js.native
+  
   var _rawClass: js.Any = js.native
+  
   /**
     * Removes a collection of CSS classes from the DOM element. This is mostly useful for cleanup
     * purposes.
     */
   var _removeClasses: js.Any = js.native
+  
   var _renderer: js.Any = js.native
+  
   var _toggleClass: js.Any = js.native
+  
   def klass_=(value: String): Unit = js.native
+  
   def ngClass_=(value: String | js.Array[String] | Set[String] | StringDictionary[js.Any]): Unit = js.native
 }
-

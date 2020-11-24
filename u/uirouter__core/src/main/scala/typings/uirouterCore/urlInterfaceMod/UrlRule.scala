@@ -5,10 +5,11 @@ import typings.uirouterCore.stateInterfaceMod.TargetStateDef
 import typings.uirouterCore.stateMod.TargetState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UrlRule extends js.Object {
+  
   /**
     * The rule's ID.
     *
@@ -16,32 +17,10 @@ trait UrlRule extends js.Object {
     */
   @JSName("$id")
   var $id: Double = js.native
+  
   /** @internal */
   var _group: Double = js.native
-  /**
-    * This function is called if the rule matched, and was selected as the "best match".
-    * This function handles the rule match event.
-    *
-    * See [[UrlRuleHandlerFn]] for details
-    */
-  @JSName("handler")
-  var handler_Original: UrlRuleHandlerFn = js.native
-  /**
-    * This function should match the url and return the match details
-    *
-    * See [[UrlRuleMatchFn]] for details
-    */
-  @JSName("match")
-  var match_Original: UrlRuleMatchFn = js.native
-  /**
-    * The rule's priority (defaults to 0).
-    *
-    * This can be used to explicitly modify the rule's priority.
-    * Higher numbers are higher priority.
-    */
-  var priority: Double = js.native
-  /** The type of the rule */
-  var `type`: UrlRuleType = js.native
+  
   /**
     * This function is called if the rule matched, and was selected as the "best match".
     * This function handles the rule match event.
@@ -57,6 +36,15 @@ trait UrlRule extends js.Object {
   def handler(matchValue: js.Any, url: UrlParts): String | TargetState | TargetStateDef | Unit = js.native
   def handler(matchValue: js.Any, url: UrlParts, router: UIRouter): String | TargetState | TargetStateDef | Unit = js.native
   /**
+    * This function is called if the rule matched, and was selected as the "best match".
+    * This function handles the rule match event.
+    *
+    * See [[UrlRuleHandlerFn]] for details
+    */
+  @JSName("handler")
+  var handler_Original: UrlRuleHandlerFn = js.native
+  
+  /**
     * This function should match the url and return the match details
     *
     * See [[UrlRuleMatchFn]] for details
@@ -65,6 +53,7 @@ trait UrlRule extends js.Object {
   def `match`(url: js.UndefOr[scala.Nothing], router: UIRouter): js.Any = js.native
   def `match`(url: UrlParts): js.Any = js.native
   def `match`(url: UrlParts, router: UIRouter): js.Any = js.native
+  
   /**
     * The priority of a given match.
     *
@@ -75,5 +64,23 @@ trait UrlRule extends js.Object {
     * The rule with the highest `matchPriority` has its [[handler]] called.
     */
   def matchPriority(`match`: js.Any): Double = js.native
+  
+  /**
+    * This function should match the url and return the match details
+    *
+    * See [[UrlRuleMatchFn]] for details
+    */
+  @JSName("match")
+  var match_Original: UrlRuleMatchFn = js.native
+  
+  /**
+    * The rule's priority (defaults to 0).
+    *
+    * This can be used to explicitly modify the rule's priority.
+    * Higher numbers are higher priority.
+    */
+  var priority: Double = js.native
+  
+  /** The type of the rule */
+  var `type`: UrlRuleType = js.native
 }
-

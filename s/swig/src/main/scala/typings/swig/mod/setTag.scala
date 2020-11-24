@@ -3,11 +3,12 @@ package typings.swig.mod
 import typings.swig.mod.lexer.TYPES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("swig", "setTag")
 @js.native
 object setTag extends js.Object {
+  
   def apply(
     name: String,
     parse: js.Function7[
@@ -134,4 +135,3 @@ object setTag extends js.Object {
     blockLevel: Boolean
   ): Unit = js.native
 }
-

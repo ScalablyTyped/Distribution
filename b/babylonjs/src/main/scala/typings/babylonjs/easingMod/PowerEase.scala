@@ -2,7 +2,7 @@ package typings.babylonjs.easingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Animations/easing", "PowerEase")
 @js.native
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 class PowerEase () extends EasingFunction {
   def this(/** Defines the power of the function */
   power: Double) = this()
+  
   /** Defines the power of the function */
   var power: Double = js.native
 }
-

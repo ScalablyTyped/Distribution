@@ -3,11 +3,12 @@ package typings.fastCsvParse
 import typings.fastCsvParse.parserOptionsMod.ParserOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@fast-csv/parse/build/src/parser/column", JSImport.Namespace)
 @js.native
 object columnMod extends js.Object {
+  
   @js.native
   class ColumnFormatter protected ()
     extends typings.fastCsvParse.columnFormatterMod.ColumnFormatter {
@@ -31,6 +32,4 @@ object columnMod extends js.Object {
     extends typings.fastCsvParse.quotedColumnParserMod.QuotedColumnParser {
     def this(parserOptions: ParserOptions) = this()
   }
-  
 }
-

@@ -2,7 +2,7 @@ package typings.victory.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Vertical anchor type
@@ -13,13 +13,14 @@ import scala.scalajs.js.annotation._
   - typings.victory.victoryStrings.end
 */
 trait VerticalAnchorType extends js.Object
-
 object VerticalAnchorType {
+  
   @scala.inline
   def end: typings.victory.victoryStrings.end = "end".asInstanceOf[typings.victory.victoryStrings.end]
+  
   @scala.inline
   def middle: typings.victory.victoryStrings.middle = "middle".asInstanceOf[typings.victory.victoryStrings.middle]
+  
   @scala.inline
   def start: typings.victory.victoryStrings.start = "start".asInstanceOf[typings.victory.victoryStrings.start]
 }
-

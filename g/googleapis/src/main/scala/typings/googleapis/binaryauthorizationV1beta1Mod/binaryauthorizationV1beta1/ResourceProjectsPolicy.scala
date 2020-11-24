@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/binaryauthorization/v1beta1", "binaryauthorization_v1beta1.Resource$Projects$Policy")
 @js.native
 class ResourceProjectsPolicy protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * binaryauthorization.projects.policy.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -42,6 +44,7 @@ class ResourceProjectsPolicy protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaIamPolicy]
   ): Unit = js.native
+  
   /**
     * binaryauthorization.projects.policy.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -72,6 +75,7 @@ class ResourceProjectsPolicy protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaIamPolicy]
   ): Unit = js.native
+  
   /**
     * binaryauthorization.projects.policy.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -109,4 +113,3 @@ class ResourceProjectsPolicy protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

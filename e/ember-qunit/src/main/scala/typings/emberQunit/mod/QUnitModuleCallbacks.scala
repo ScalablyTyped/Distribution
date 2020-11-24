@@ -1,53 +1,74 @@
 package typings.emberQunit.mod
 
 import typings.emberTestHelpers.mod.ModuleCallbacks
-import typings.qunit.Assert
-import typings.qunit.Hooks
+import typings.qunit.mod.global.Assert
+import typings.qunit.mod.global.Hooks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait QUnitModuleCallbacks
   extends ModuleCallbacks
      with Hooks {
+  
   @JSName("afterTeardown")
-  var afterTeardown_QUnitModuleCallbacks: js.UndefOr[js.Function1[/* assert */ Assert, Unit]] = js.undefined
+  var afterTeardown_QUnitModuleCallbacks: js.UndefOr[js.Function1[/* assert */ Assert, Unit]] = js.native
+  
   @JSName("beforeSetup")
-  var beforeSetup_QUnitModuleCallbacks: js.UndefOr[js.Function1[/* assert */ Assert, Unit]] = js.undefined
+  var beforeSetup_QUnitModuleCallbacks: js.UndefOr[js.Function1[/* assert */ Assert, Unit]] = js.native
+  
   @JSName("setup")
-  var setup_QUnitModuleCallbacks: js.UndefOr[js.Function1[/* assert */ Assert, Unit]] = js.undefined
+  var setup_QUnitModuleCallbacks: js.UndefOr[js.Function1[/* assert */ Assert, Unit]] = js.native
+  
   @JSName("teardown")
-  var teardown_QUnitModuleCallbacks: js.UndefOr[js.Function1[/* assert */ Assert, Unit]] = js.undefined
+  var teardown_QUnitModuleCallbacks: js.UndefOr[js.Function1[/* assert */ Assert, Unit]] = js.native
 }
-
 object QUnitModuleCallbacks {
+  
   @scala.inline
-  def apply(
-    after: /* assert */ Assert => Unit | js.Promise[Unit] = null,
-    afterEach: /* assert */ Assert => Unit | js.Promise[Unit] = null,
-    afterTeardown: /* assert */ Assert => Unit = null,
-    before: /* assert */ Assert => Unit | js.Promise[Unit] = null,
-    beforeEach: /* assert */ Assert => Unit | js.Promise[Unit] = null,
-    beforeSetup: /* assert */ Assert => Unit = null,
-    integration: js.UndefOr[Boolean] = js.undefined,
-    needs: js.Array[String] = null,
-    setup: /* assert */ Assert => Unit = null,
-    teardown: /* assert */ Assert => Unit = null,
-    unit: js.UndefOr[Boolean] = js.undefined
-  ): QUnitModuleCallbacks = {
+  def apply(): QUnitModuleCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction1(after))
-    if (afterEach != null) __obj.updateDynamic("afterEach")(js.Any.fromFunction1(afterEach))
-    if (afterTeardown != null) __obj.updateDynamic("afterTeardown")(js.Any.fromFunction1(afterTeardown))
-    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
-    if (beforeEach != null) __obj.updateDynamic("beforeEach")(js.Any.fromFunction1(beforeEach))
-    if (beforeSetup != null) __obj.updateDynamic("beforeSetup")(js.Any.fromFunction1(beforeSetup))
-    if (!js.isUndefined(integration)) __obj.updateDynamic("integration")(integration.get.asInstanceOf[js.Any])
-    if (needs != null) __obj.updateDynamic("needs")(needs.asInstanceOf[js.Any])
-    if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction1(setup))
-    if (teardown != null) __obj.updateDynamic("teardown")(js.Any.fromFunction1(teardown))
-    if (!js.isUndefined(unit)) __obj.updateDynamic("unit")(unit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QUnitModuleCallbacks]
   }
+  
+  @scala.inline
+  implicit class QUnitModuleCallbacksOps[Self <: QUnitModuleCallbacks] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setAfterTeardown(value: /* assert */ Assert => Unit): Self = this.set("afterTeardown", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteAfterTeardown: Self = this.set("afterTeardown", js.undefined)
+    
+    @scala.inline
+    def setBeforeSetup(value: /* assert */ Assert => Unit): Self = this.set("beforeSetup", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteBeforeSetup: Self = this.set("beforeSetup", js.undefined)
+    
+    @scala.inline
+    def setSetup(value: /* assert */ Assert => Unit): Self = this.set("setup", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteSetup: Self = this.set("setup", js.undefined)
+    
+    @scala.inline
+    def setTeardown(value: /* assert */ Assert => Unit): Self = this.set("teardown", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def deleteTeardown: Self = this.set("teardown", js.undefined)
+  }
 }
-

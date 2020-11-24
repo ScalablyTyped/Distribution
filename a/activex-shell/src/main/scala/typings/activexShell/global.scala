@@ -2,13 +2,15 @@ package typings.activexShell
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object Shell32 extends js.Object {
+    
     /** FileSearchBand Class */
     @js.native
     class FileSearchBand protected ()
@@ -76,8 +78,5 @@ object global extends js.Object {
     @js.native
     class ShellWindows protected ()
       extends typings.activexShell.Shell32.ShellWindows
-    
   }
-  
 }
-

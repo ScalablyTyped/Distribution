@@ -12,7 +12,7 @@ Easily subclass errors
 | Keywords           | error, class, subclass, inheritance |
 | # releases         | 6 |
 | # dependents       | 10 |
-| # downloads        | 235702 |
+| # downloads        | 238615 |
 | # stars            | 0 |
 
 ## Links

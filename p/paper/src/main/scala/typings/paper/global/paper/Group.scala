@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * A Group is a collection of items. When you transform a Group, its
@@ -28,4 +28,3 @@ class Group ()
     */
   def this(`object`: js.Object) = this()
 }
-

@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.ColorRampProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.ColorRamp")
 @js.native
@@ -16,4 +16,3 @@ class ColorRampCls ()
   extends typings.arcgisJsApi.esri.ColorRamp {
   def this(properties: ColorRampProperties) = this()
 }
-

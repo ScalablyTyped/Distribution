@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/documentsearch-extension" : "2.1.2"
+      "@jupyterlab/documentsearch-extension" : "2.2.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/documentsearch-extension" : "2.1.2"
+      "@jupyterlab/documentsearch-extension" : "2.2.7"
     }
   ],
   "compile-devDependencies" : [

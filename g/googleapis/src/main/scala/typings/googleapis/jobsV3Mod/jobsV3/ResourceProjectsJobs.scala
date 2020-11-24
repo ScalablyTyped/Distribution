@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/jobs/v3", "jobs_v3.Resource$Projects$Jobs")
 @js.native
 class ResourceProjectsJobs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * jobs.projects.jobs.batchDelete
     * @desc Deletes a list of Jobs by filter.
@@ -42,6 +42,9 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * jobs.projects.jobs.create
     * @desc Creates a new job.  Typically, the job becomes searchable within 10
@@ -72,6 +75,7 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * jobs.projects.jobs.delete
     * @desc Deletes the specified job.  Typically, the job becomes unsearchable
@@ -101,6 +105,7 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * jobs.projects.jobs.get
     * @desc Retrieves the specified job, whose status is OPEN or recently
@@ -130,6 +135,7 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * jobs.projects.jobs.list
     * @desc Lists jobs by filter.
@@ -162,6 +168,7 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListJobsResponse]
   ): Unit = js.native
+  
   /**
     * jobs.projects.jobs.patch
     * @desc Updates specified job.  Typically, updated contents become visible
@@ -192,6 +199,7 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaJob]
   ): Unit = js.native
+  
   /**
     * jobs.projects.jobs.search
     * @desc Searches for jobs using the provided SearchJobsRequest.  This call
@@ -223,6 +231,7 @@ class ResourceProjectsJobs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSearchJobsResponse]
   ): Unit = js.native
+  
   /**
     * jobs.projects.jobs.searchForAlert
     * @desc Searches for jobs using the provided SearchJobsRequest.  This API
@@ -262,4 +271,3 @@ class ResourceProjectsJobs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSearchJobsResponse]
   ): Unit = js.native
 }
-

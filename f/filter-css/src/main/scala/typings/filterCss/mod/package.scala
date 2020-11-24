@@ -2,10 +2,12 @@ package typings.filterCss
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type Pattern = java.lang.String | typings.std.RegExp | typings.filterCss.mod.PatternFunction
+  
   /**
     * @param context The current matching context.
     * @param value The current value.

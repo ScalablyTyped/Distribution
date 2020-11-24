@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Concrete service of the meta service {@link Bridge} for iiop.
@@ -21,8 +21,8 @@ trait IiopBridge
   extends XInitialization
      with XBridge
      with XComponent
-
 object IiopBridge {
+  
   @scala.inline
   def apply(
     Description: String,
@@ -42,4 +42,3 @@ object IiopBridge {
     __obj.asInstanceOf[IiopBridge]
   }
 }
-

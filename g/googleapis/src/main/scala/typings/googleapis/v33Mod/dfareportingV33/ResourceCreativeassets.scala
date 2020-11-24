@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Creativeassets")
 @js.native
 class ResourceCreativeassets protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.creativeAssets.insert
     * @desc Inserts a new creative asset.
@@ -50,4 +52,3 @@ class ResourceCreativeassets protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCreativeAssetMetadata]
   ): Unit = js.native
 }
-

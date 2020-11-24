@@ -4,10 +4,11 @@ import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Matcher extends ManagedObject {
+  
   /**
     * Checks if the matcher is matching - will get an instance of sap.ui.Control as parameter.Should be
     * overwritten by subclasses
@@ -16,4 +17,3 @@ trait Matcher extends ManagedObject {
     */
   def isMatching(oControl: Control): Boolean = js.native
 }
-

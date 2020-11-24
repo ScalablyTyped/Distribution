@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides unified interface for {@link XMLOasisBasicExporter} and {@link XMLBasicExporter} services.
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 trait XXMLBasicExporter
   extends XExporter
      with XFilter
-
 object XXMLBasicExporter {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -31,4 +31,3 @@ object XXMLBasicExporter {
     __obj.asInstanceOf[XXMLBasicExporter]
   }
 }
-

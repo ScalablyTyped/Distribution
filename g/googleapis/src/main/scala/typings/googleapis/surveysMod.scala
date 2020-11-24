@@ -11,32 +11,34 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/surveys", JSImport.Namespace)
 @js.native
 object surveysMod extends js.Object {
+  
   def surveys(options: Options): Surveys = js.native
   @JSName("surveys")
   def surveys_v2(version: v2): Surveys = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v2 protected () extends Surveys {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
     @js.native
     object v2
       extends TopLevel[
               Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Surveys]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -64,8 +66,5 @@ object surveysMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

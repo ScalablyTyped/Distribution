@@ -2,7 +2,7 @@ package typings.microsoftAjax.Sys.WebForms
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Raised when an error occurs on the server.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PageRequestManagerServerErrorException extends js.Object
-

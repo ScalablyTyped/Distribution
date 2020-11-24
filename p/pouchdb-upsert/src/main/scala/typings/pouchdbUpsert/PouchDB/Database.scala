@@ -5,10 +5,11 @@ import typings.pouchdbCore.PouchDB.Core.Document
 import typings.pouchdbCore.PouchDB.Core.DocumentId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Database[Content /* <: js.Object */] extends js.Object {
+  
   /**
     * Put a new document with the given docId, if it doesn't already exist. Returns a Promise.
     *
@@ -28,6 +29,7 @@ trait Database[Content /* <: js.Object */] extends js.Object {
     * will return a Promise.
     */
   def putIfNotExists[Model](doc: Document[Content with Model], callback: Callback[UpsertResponse]): Unit = js.native
+  
   /**
     * Perform an upsert (update or insert) operation. Returns a Promise.
     *
@@ -54,4 +56,3 @@ trait Database[Content /* <: js.Object */] extends js.Object {
     callback: Callback[UpsertResponse]
   ): Unit = js.native
 }
-

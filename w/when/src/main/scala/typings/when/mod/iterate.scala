@@ -3,11 +3,12 @@ package typings.when.mod
 import typings.when.When.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("when", "iterate")
 @js.native
 object iterate extends js.Object {
+  
   /**
     * Generates a potentially infinite stream of promises by repeatedly calling f until predicate becomes true.
     * @memberOf when
@@ -29,4 +30,3 @@ object iterate extends js.Object {
     seed: Promise[U]
   ): Promise[U] = js.native
 }
-

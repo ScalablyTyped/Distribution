@@ -5,10 +5,10 @@ import typings.phaser.spine.PowOut
 import typings.phaser.spine.SwirlEffect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofSwirlEffect extends Instantiable1[/* radius */ Double, SwirlEffect] {
+  
   var interpolation: PowOut = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * A symbol item represents an instance of a symbol which has been
@@ -24,4 +24,3 @@ class SymbolItem protected ()
   def this(definition: typings.paper.paper.Item, point: typings.paper.paper.Point) = this()
   def this(definition: typings.paper.paper.SymbolDefinition, point: typings.paper.paper.Point) = this()
 }
-

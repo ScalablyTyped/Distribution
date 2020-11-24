@@ -3,9 +3,43 @@ package typings.phenomnomnominalTsquery
 import typings.phenomnomnominalTsquery.tsqueryTypesMod.TSQueryAttributeOperatorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object phenomnomnominalTsqueryStrings {
+  
+  @scala.inline
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
+  
+  @scala.inline
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
+  
+  @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
+  
+  @scala.inline
+  def every: every = "every".asInstanceOf[every]
+  
+  @scala.inline
+  def literal: literal = "literal".asInstanceOf[literal]
+  
+  @scala.inline
+  def regexp: regexp = "regexp".asInstanceOf[regexp]
+  
+  @scala.inline
+  def some: some = "some".asInstanceOf[some]
+  
+  @scala.inline
+  def `type`: `type` = "type".asInstanceOf[`type`]
+  
   @js.native
   sealed trait Equalssign extends js.Object
   
@@ -38,28 +72,4 @@ object phenomnomnominalTsqueryStrings {
   
   @js.native
   sealed trait `type` extends TSQueryAttributeOperatorType
-  
-  @scala.inline
-  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
-  @scala.inline
-  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
-  @scala.inline
-  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
-  @scala.inline
-  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
-  @scala.inline
-  def every: every = "every".asInstanceOf[every]
-  @scala.inline
-  def literal: literal = "literal".asInstanceOf[literal]
-  @scala.inline
-  def regexp: regexp = "regexp".asInstanceOf[regexp]
-  @scala.inline
-  def some: some = "some".asInstanceOf[some]
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
 }
-

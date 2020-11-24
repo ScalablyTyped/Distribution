@@ -12,18 +12,21 @@ import typings.devtoolsProtocol.mod.Protocol.Media.PlayerPropertiesChangedEvent
 import typings.devtoolsProtocol.mod.Protocol.Media.PlayersCreatedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MediaApi extends js.Object {
+  
   /**
     * Disables the Media domain.
     */
   def disable(): js.Promise[Unit] = js.native
+  
   /**
     * Enables the Media domain
     */
   def enable(): js.Promise[Unit] = js.native
+  
   /**
     * Send a list of any errors that need to be delivered.
     */
@@ -57,4 +60,3 @@ trait MediaApi extends js.Object {
   @JSName("on")
   def on_playersCreated(event: playersCreated, listener: js.Function1[/* params */ PlayersCreatedEvent, Unit]): Unit = js.native
 }
-

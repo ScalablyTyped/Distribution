@@ -3,17 +3,12 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.mod.event.EventData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Events")
 @js.native
 class Events () extends js.Object {
-  /**
-    * Get events
-    * @param options
-    */
-  @JSName("getAll")
-  var getAll_Original: NoArgMethodOverload[js.Array[EventData]] = js.native
+  
   /**
     * Get events
     * @param options
@@ -40,5 +35,10 @@ class Events () extends js.Object {
     */
   def getAll(options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[EventData]]] = js.native
   def getAll(options: MethodOptionWithoutResponse): js.Promise[js.Array[EventData]] = js.native
+  /**
+    * Get events
+    * @param options
+    */
+  @JSName("getAll")
+  var getAll_Original: NoArgMethodOverload[js.Array[EventData]] = js.native
 }
-

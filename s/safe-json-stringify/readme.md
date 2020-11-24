@@ -10,9 +10,9 @@ Prevent defined property getters from throwing errors
 | ------------------ | :-------------: |
 | Full name          | safe-json-stringify |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 79 |
-| # downloads        | 39100296 |
+| # releases         | 0 |
+| # dependents       | 96 |
+| # downloads        | 51563901 |
 | # stars            | 1 |
 
 ## Links

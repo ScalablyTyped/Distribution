@@ -2,11 +2,12 @@ package typings.materialSnackbar
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/snackbar/constants", JSImport.Namespace)
 @js.native
 object constantsMod extends js.Object {
+  
   /**
     * @license
     * Copyright 2018 Google Inc.
@@ -31,41 +32,60 @@ object constantsMod extends js.Object {
     */
   @js.native
   object cssClasses extends js.Object {
+    
     var CLOSING: String = js.native
+    
     var OPEN: String = js.native
+    
     var OPENING: String = js.native
   }
   
   @js.native
   object numbers extends js.Object {
+    
     /**
       * Number of milliseconds to wait between temporarily clearing the label text
       * in the DOM and subsequently restoring it. This is necessary to force IE 11
       * to pick up the `aria-live` content change and announce it to the user.
       */
     var ARIA_LIVE_DELAY_MS: Double = js.native
+    
     var DEFAULT_AUTO_DISMISS_TIMEOUT_MS: Double = js.native
+    
     var INDETERMINATE: Double = js.native
+    
     var MAX_AUTO_DISMISS_TIMEOUT_MS: Double = js.native
+    
     var MIN_AUTO_DISMISS_TIMEOUT_MS: Double = js.native
+    
     var SNACKBAR_ANIMATION_CLOSE_TIME_MS: Double = js.native
+    
     var SNACKBAR_ANIMATION_OPEN_TIME_MS: Double = js.native
   }
   
   @js.native
   object strings extends js.Object {
+    
     var ACTION_SELECTOR: String = js.native
+    
     var ARIA_LIVE_LABEL_TEXT_ATTR: String = js.native
+    
     var CLOSED_EVENT: String = js.native
+    
     var CLOSING_EVENT: String = js.native
+    
     var DISMISS_SELECTOR: String = js.native
+    
     var LABEL_SELECTOR: String = js.native
+    
     var OPENED_EVENT: String = js.native
+    
     var OPENING_EVENT: String = js.native
+    
     var REASON_ACTION: String = js.native
+    
     var REASON_DISMISS: String = js.native
+    
     var SURFACE_SELECTOR: String = js.native
   }
-  
 }
-

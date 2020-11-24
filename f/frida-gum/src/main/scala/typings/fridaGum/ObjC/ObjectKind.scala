@@ -2,7 +2,7 @@ package typings.fridaGum.ObjC
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * What kind of object an ObjC.Object represents.
@@ -13,13 +13,14 @@ import scala.scalajs.js.annotation._
   - typings.fridaGum.fridaGumStrings.`meta-class`
 */
 trait ObjectKind extends js.Object
-
 object ObjectKind {
+  
   @scala.inline
   def `class`: typings.fridaGum.fridaGumStrings.`class` = "class".asInstanceOf[typings.fridaGum.fridaGumStrings.`class`]
+  
   @scala.inline
   def instance: typings.fridaGum.fridaGumStrings.instance = "instance".asInstanceOf[typings.fridaGum.fridaGumStrings.instance]
+  
   @scala.inline
   def `meta-class`: typings.fridaGum.fridaGumStrings.`meta-class` = "meta-class".asInstanceOf[typings.fridaGum.fridaGumStrings.`meta-class`]
 }
-

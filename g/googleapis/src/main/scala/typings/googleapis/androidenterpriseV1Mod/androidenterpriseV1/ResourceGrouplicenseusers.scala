@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Grouplicenseusers")
 @js.native
 class ResourceGrouplicenseusers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.grouplicenseusers.list
     * @desc Retrieves the IDs of the users who have been granted entitlements
@@ -47,4 +49,3 @@ class ResourceGrouplicenseusers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGroupLicenseUsersListResponse]
   ): Unit = js.native
 }
-

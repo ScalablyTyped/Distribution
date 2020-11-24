@@ -2,10 +2,11 @@ package typings.d3Shape.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Pie_[This, Datum] extends js.Object {
+  
   /**
     * Generates a pie for the given array of data, returning an array of objects representing each datum’s arc angles.
     * Any additional arguments are arbitrary; they are simply propagated to the pie generator’s accessor functions along with the this object.
@@ -18,6 +19,7 @@ trait Pie_[This, Datum] extends js.Object {
     * @param data Array of data elements.
     */
   def apply(data: js.Array[Datum], args: js.Any*): js.Array[PieArcDatum[Datum]] = js.native
+  
   /**
     * Returns the current end angle accessor, which defaults to a function returning a constant 2*pi.
     */
@@ -53,6 +55,7 @@ trait Pie_[This, Datum] extends js.Object {
     * @param angle A constant angle.
     */
   def endAngle(angle: Double): this.type = js.native
+  
   /**
     * Returns the current pad angle accessor, which defaults to a function returning a constant zero.
     */
@@ -82,6 +85,7 @@ trait Pie_[This, Datum] extends js.Object {
     * @param angle A constant angle.
     */
   def padAngle(angle: Double): this.type = js.native
+  
   /**
     * Returns the current data comparator, which defaults to null.
     */
@@ -109,6 +113,7 @@ trait Pie_[This, Datum] extends js.Object {
     * @param comparator null, to set the pie generator to use the original input order or use the sortValues comparator, if any.
     */
   def sort(comparator: Null): this.type = js.native
+  
   /**
     * Returns the current value comparator, which defaults to descending value.
     */
@@ -136,6 +141,7 @@ trait Pie_[This, Datum] extends js.Object {
     * @param comparator null, to set the pie generator to use the original input order or use the data comparator, if any.
     */
   def sortValues(comparator: Null): this.type = js.native
+  
   /**
     * Returns the current start angle accessor, which defaults to a function returning a constant zero.
     */
@@ -168,6 +174,7 @@ trait Pie_[This, Datum] extends js.Object {
     * @param angle A constant angle.
     */
   def startAngle(angle: Double): this.type = js.native
+  
   /**
     * Returns the current value accessor, which defaults to a function returning the first argument passed into it.
     * The default value accessor assumes that the input data are numbers, or that they are coercible to numbers using valueOf.
@@ -191,4 +198,3 @@ trait Pie_[This, Datum] extends js.Object {
     */
   def value(value: Double): this.type = js.native
 }
-

@@ -7,11 +7,12 @@ import typings.tstl.uniqueSetMod.UniqueSet.Iterator
 import typings.tstl.uniqueSetMod.UniqueSet.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/internal/container/associative/UniqueTreeSet", JSImport.Namespace)
 @js.native
 object uniqueTreeSetMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
@@ -23,7 +24,9 @@ object uniqueTreeSetMod extends js.Object {
   - typings.tstl.iassociativecontainerMod.IAssociativeContainer because Already inherited
   - typings.tstl.itreecontainerMod.ITreeContainer because var conflicts: iterator. Inlined key_comp, value_comp, lower_bound, upper_bound, equal_range */ @js.native
   abstract class UniqueTreeSet[Key, Source /* <: UniqueTreeSet[Key, Source, IteratorT, ReverseT] */, IteratorT /* <: Iterator[Key, Source, IteratorT, ReverseT] */, ReverseT /* <: ReverseIterator[Key, Source, IteratorT, ReverseT] */] () extends UniqueSet[Key, Source, IteratorT, ReverseT] {
+    
     /* protected */ def _Key_eq(x: Key, y: Key): Boolean = js.native
+    
     /**
       * @inheritDoc
       */
@@ -34,6 +37,7 @@ object uniqueTreeSetMod extends js.Object {
       * @return Pair of {@link lower_bound} and {@link upper_bound}.
       */
     def equal_range(key: Key): Pair[IteratorT, IteratorT] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -43,6 +47,7 @@ object uniqueTreeSetMod extends js.Object {
       * @return The key comparison function.
       */
     def key_comp(): Comparator[Key, Key] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -53,6 +58,7 @@ object uniqueTreeSetMod extends js.Object {
       * @return Iterator to the first element equal or after to the key.
       */
     def lower_bound(key: Key): IteratorT = js.native
+    
     /**
       * @inheritDoc
       */
@@ -63,6 +69,7 @@ object uniqueTreeSetMod extends js.Object {
       * @return Iterator to the first element after the key.
       */
     def upper_bound(key: Key): IteratorT = js.native
+    
     /**
       * @inheritDoc
       */
@@ -73,6 +80,4 @@ object uniqueTreeSetMod extends js.Object {
       */
     def value_comp(): Comparator[Key, Key] = js.native
   }
-  
 }
-

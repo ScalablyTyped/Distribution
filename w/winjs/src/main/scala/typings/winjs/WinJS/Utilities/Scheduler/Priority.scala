@@ -2,11 +2,10 @@ package typings.winjs.WinJS.Utilities.Scheduler
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Priority extends js.Object
-
 //#region Enumerations
 /**
   * Represents a priority for a job managed by the Scheduler.
@@ -14,6 +13,7 @@ sealed trait Priority extends js.Object
 @JSGlobal("WinJS.Utilities.Scheduler.Priority")
 @js.native
 object Priority extends js.Object {
+  
   /**
     * A priority higher than the normal priority level.
     **/
@@ -55,6 +55,4 @@ object Priority extends js.Object {
     **/
   @js.native
   sealed trait normal extends Priority
-  
 }
-

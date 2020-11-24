@@ -4,13 +4,12 @@ import typings.instagramPrivateApi.accountRepositoryLoginErrorResponseMod.Accoun
 import typings.instagramPrivateApi.igResponseErrorMod.IgResponseError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("instagram-private-api/dist/errors/ig-login-two-factor-required.error", JSImport.Namespace)
 @js.native
 object igLoginTwoFactorRequiredErrorMod extends js.Object {
+  
   @js.native
   class IgLoginTwoFactorRequiredError () extends IgResponseError[AccountRepositoryLoginErrorResponse]
-  
 }
-

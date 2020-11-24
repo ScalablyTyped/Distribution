@@ -1,7 +1,7 @@
 
 # Scala.js typings for png-img
 
-Typings are for version 2.3
+Typings are for version 3.0
 
 ## Library description:
 PNG Image
@@ -11,8 +11,8 @@ PNG Image
 | Full name          | png-img |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 315296 |
+| # dependents       | 6 |
+| # downloads        | 437649 |
 | # stars            | 1 |
 
 ## Links

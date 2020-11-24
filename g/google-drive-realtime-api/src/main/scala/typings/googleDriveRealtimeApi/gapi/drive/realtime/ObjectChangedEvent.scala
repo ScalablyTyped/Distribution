@@ -3,7 +3,7 @@ package typings.googleDriveRealtimeApi.gapi.drive.realtime
 import org.scalablytyped.runtime.Instantiable8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObjectChangedEvent
@@ -24,7 +24,7 @@ Instantiable8[
       /* events */ js.Array[BaseModelEvent], 
       ObjectChangedEvent
     ] {
+  
   // The specific events that document the changes that occurred on the object.
   var events: js.Array[BaseModelEvent] = js.native
 }
-

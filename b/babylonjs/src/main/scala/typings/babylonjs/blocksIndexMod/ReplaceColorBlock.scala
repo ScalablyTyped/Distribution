@@ -2,7 +2,7 @@ package typings.babylonjs.blocksIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Node/Blocks/index", "ReplaceColorBlock")
 @js.native
@@ -14,4 +14,3 @@ class ReplaceColorBlock protected ()
     */
   def this(name: String) = this()
 }
-

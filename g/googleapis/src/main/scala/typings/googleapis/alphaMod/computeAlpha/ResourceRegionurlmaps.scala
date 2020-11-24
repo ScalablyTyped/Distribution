@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Regionurlmaps")
 @js.native
 class ResourceRegionurlmaps protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.regionUrlMaps.delete
     * @desc Deletes the specified UrlMap resource.
@@ -44,6 +46,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionUrlMaps.get
     * @desc Returns the specified UrlMap resource. Gets a list of available URL
@@ -75,6 +78,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUrlMap]
   ): Unit = js.native
+  
   /**
     * compute.regionUrlMaps.insert
     * @desc Creates a UrlMap resource in the specified project using the data
@@ -107,6 +111,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionUrlMaps.invalidateCache
     * @desc Initiates a cache invalidation operation, invalidating the
@@ -143,6 +148,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionUrlMaps.list
     * @desc Retrieves the list of UrlMap resources available to the specified
@@ -177,6 +183,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUrlMapList]
   ): Unit = js.native
+  
   /**
     * compute.regionUrlMaps.patch
     * @desc Patches the specified UrlMap resource with the data included in the
@@ -211,6 +218,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionUrlMaps.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -245,6 +253,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * compute.regionUrlMaps.update
     * @desc Updates the specified UrlMap resource with the data included in the
@@ -278,6 +287,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionUrlMaps.validate
     * @desc Runs static validation for the UrlMap. In particular, the tests of
@@ -315,4 +325,3 @@ class ResourceRegionurlmaps protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUrlMapsValidateResponse]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.mozillaReadability.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A standalone version of the readability library used for Firefox Reader View.
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Readability extends js.Object {
+  
   /**
     * Runs readability.
     *
@@ -38,27 +39,30 @@ trait Readability extends js.Object {
     */
   def parse(): ParseResult | Null = js.native
 }
-
 object Readability {
+  
   @scala.inline
   def apply(parse: () => ParseResult | Null): Readability = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction0(parse))
     __obj.asInstanceOf[Readability]
   }
+  
   @scala.inline
   implicit class ReadabilityOps[Self <: Readability] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setParse(value: () => ParseResult | Null): Self = this.set("parse", js.Any.fromFunction0(value))
   }
-  
 }
-

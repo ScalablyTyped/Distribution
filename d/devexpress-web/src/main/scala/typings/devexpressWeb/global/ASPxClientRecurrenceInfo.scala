@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information defining the occurrences of a recurring client appointment.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
   */
 class ASPxClientRecurrenceInfo ()
   extends typings.devexpressWeb.ASPxClientRecurrenceInfo
-

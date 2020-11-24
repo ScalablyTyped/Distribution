@@ -3,17 +3,12 @@ package typings.findUp
 import typings.findUp.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("find-up", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  /**
-  	Return this in a `matcher` function to stop the search and force `findUp` to immediately return `undefined`.
-  	*/
-  val stop: StopSymbol = js.native
-  @JSName("sync")
-  var sync_Original: Call = js.native
+  
   /**
   	Find a file or directory by walking up parent directories.
   	@param matcher - Called for each directory in the search. Return a path or `findUp.stop` to stop the search.
@@ -61,6 +56,7 @@ object mod extends js.Object {
   def apply(name: String, options: Options): js.Promise[js.UndefOr[String]] = js.native
   def apply(name: js.Array[String]): js.Promise[js.UndefOr[String]] = js.native
   def apply(name: js.Array[String], options: Options): js.Promise[js.UndefOr[String]] = js.native
+  
   /**
   	Check if a path exists.
   	@param path - Path to a file or directory.
@@ -75,6 +71,12 @@ object mod extends js.Object {
   	```
   	*/
   def exists(path: String): js.Promise[Boolean] = js.native
+  
+  /**
+  	Return this in a `matcher` function to stop the search and force `findUp` to immediately return `undefined`.
+  	*/
+  val stop: StopSymbol = js.native
+  
   /**
   		Synchronously find a file or directory by walking up parent directories.
   		@param matcher - Called for each directory in the search. Return a path or `findUp.stop` to stop the search.
@@ -101,8 +103,12 @@ object mod extends js.Object {
   def sync(name: String, options: Options): js.UndefOr[String] = js.native
   def sync(name: js.Array[String]): js.UndefOr[String] = js.native
   def sync(name: js.Array[String], options: Options): js.UndefOr[String] = js.native
+  @JSName("sync")
+  var sync_Original: Call = js.native
+  
   type Match = js.UndefOr[String | StopSymbol]
+  
   type Options = typings.locatePath.mod.Options
+  
   type StopSymbol = js.Symbol
 }
-

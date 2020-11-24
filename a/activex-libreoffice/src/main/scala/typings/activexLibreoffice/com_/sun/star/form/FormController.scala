@@ -24,7 +24,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is superseded by {@link com.sun.star.form.runtime.FormController} .
@@ -42,8 +42,8 @@ trait FormController
      with XSQLErrorBroadcaster
      with XRowSetApproveBroadcaster
      with XDatabaseParameterBroadcaster
-
 object FormController {
+  
   @scala.inline
   def apply(
     Container: XControlContainer,
@@ -91,4 +91,3 @@ object FormController {
     __obj.asInstanceOf[FormController]
   }
 }
-

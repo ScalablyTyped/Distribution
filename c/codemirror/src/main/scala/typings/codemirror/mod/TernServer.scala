@@ -31,25 +31,35 @@ import typings.tern.ternMod.TypeQuery
 import typings.tern.ternMod.TypeQueryResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TernServer extends js.Object {
-  val docs: StringDictionary[Changed] = js.native
-  val options: TernOptions = js.native
-  val server: Server = js.native
+  
   def addDoc(name: String, doc: Doc): typings.codemirror.anon.Doc = js.native
+  
   def complete(cm: Doc): Unit = js.native
+  
   def delDoc(id: String): Unit = js.native
   def delDoc(id: Doc): Unit = js.native
   def delDoc(id: Editor): Unit = js.native
+  
   def destroy(): Unit = js.native
+  
+  val docs: StringDictionary[Changed] = js.native
+  
   def hideDoc(id: String): Unit = js.native
   def hideDoc(id: Doc): Unit = js.native
   def hideDoc(id: Editor): Unit = js.native
+  
   def jumpBack(cm: Doc): Unit = js.native
+  
   def jumpToDef(cm: Doc): Unit = js.native
+  
+  val options: TernOptions = js.native
+  
   def rename(cm: Doc): Unit = js.native
+  
   def request(
     cm: Doc,
     query: CompletionsQuery,
@@ -163,23 +173,27 @@ trait TernServer extends js.Object {
     ],
     pos: Position
   ): Unit = js.native
+  
   def selectName(cm: Doc): Unit = js.native
+  
+  val server: Server = js.native
+  
   def showDocs(cm: Doc): Unit = js.native
   def showDocs(cm: Doc, pos: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def showDocs(cm: Doc, pos: Double): Unit = js.native
   def showDocs(cm: Doc, pos: Double, callback: js.Function): Unit = js.native
   def showDocs(cm: Doc, pos: Position): Unit = js.native
   def showDocs(cm: Doc, pos: Position, callback: js.Function): Unit = js.native
+  
   def showType(cm: Doc): Unit = js.native
   def showType(cm: Doc, pos: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def showType(cm: Doc, pos: Double): Unit = js.native
   def showType(cm: Doc, pos: Double, callback: js.Function): Unit = js.native
   def showType(cm: Doc, pos: Position): Unit = js.native
   def showType(cm: Doc, pos: Position, callback: js.Function): Unit = js.native
+  
   def updateArgHints(cm: Doc): Unit = js.native
 }
-
 @JSImport("codemirror", "TernServer")
 @js.native
 object TernServer extends TopLevel[TernConstructor]
-

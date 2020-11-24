@@ -6,7 +6,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The ShadeMode determines the quality of displaying the object. */
 /* Rewritten from type alias, can be one of: 
@@ -16,11 +16,12 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait ShadeMode extends js.Object
-
 object ShadeMode {
+  
   /** DRAFT is a special mode which uses a BSP tree and triangle subdivision for displaying. */
   @scala.inline
   def DRAFT: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * forces one normal per flat part.
     *
@@ -28,9 +29,11 @@ object ShadeMode {
     */
   @scala.inline
   def FLAT: `0` = 0.asInstanceOf[`0`]
+  
   /** With PHONG shading, the normal itself is interpolated to get more realistic colors and light reflections. */
   @scala.inline
   def PHONG: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * the point is smooth, the first derivation from the curve discussion view.
     *
@@ -39,4 +42,3 @@ object ShadeMode {
   @scala.inline
   def SMOOTH: `2` = 2.asInstanceOf[`2`]
 }
-

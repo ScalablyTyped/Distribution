@@ -3,11 +3,12 @@ package typings.opentracing.apiCompatibilityMod
 import typings.opentracing.mod.Tracer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("opentracing/lib/test/api_compatibility", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * A function that takes a tracer factory, and tests wheter the initialized tracer
     * fulfills Opentracing's api requirements.
@@ -20,4 +21,3 @@ object default extends js.Object {
   def apply(createTracer: js.Function0[Tracer]): Unit = js.native
   def apply(createTracer: js.Function0[Tracer], options: ApiCompatibilityChecksOptions): Unit = js.native
 }
-

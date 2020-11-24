@@ -1,7 +1,7 @@
 
 # Scala.js typings for ecmarkdown
 
-Typings are for version 5.1.2
+Typings are for version 6.0.0
 
 ## Library description:
 A compiler for "Ecmarkdown" algorithm shorthand into HTML.
@@ -10,9 +10,9 @@ A compiler for "Ecmarkdown" algorithm shorthand into HTML.
 | ------------------ | :-------------: |
 | Full name          | ecmarkdown |
 | Keywords           | ecmascript, javascript, specs, typography, markup, markdown, html, code |
-| # releases         | 1 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 5585 |
+| # downloads        | 7740 |
 | # stars            | 0 |
 
 ## Links

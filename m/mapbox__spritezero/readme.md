@@ -10,9 +10,9 @@ small opinionated sprites
 | ------------------ | :-------------: |
 | Full name          | @mapbox/spritezero |
 | Keywords           | sprite, images, icons, json |
-| # releases         | 13 |
-| # dependents       | 6 |
-| # downloads        | 27046 |
+| # releases         | 16 |
+| # dependents       | 9 |
+| # downloads        | 35290 |
 | # stars            | 0 |
 
 ## Links

@@ -2,20 +2,23 @@ package typings.datatablesNet.DataTables
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ColumnMethods
   extends CoreMethods
      with CommonColumnMethod {
+  
   /**
     * Get the data for the cells in the selected column.
     */
   def data(): Api = js.native
+  
   /**
     * Get the data source property for the selected column
     */
   def dataSrc(): Double | String | js.Function0[String] = js.native
+  
   /**
     * Get index information about the selected cell
     *
@@ -23,9 +26,9 @@ trait ColumnMethods
     */
   def index(): Double = js.native
   def index(t: String): Double = js.native
+  
   /**
     * Obtain the th / td nodes for the selected column
     */
   def nodes(): Api = js.native
 }
-

@@ -5,21 +5,23 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive ScriptEvents. */
 @js.native
 trait XScriptListener extends XEventListener {
+  
   /** gets called when a "vetoable event" occurs at the object. */
   def approveFiring(aEvent: ScriptEvent): js.Any = js.native
+  
   /**
     * gets called when an event takes place. For that a {@link ScriptEventDescriptor} is registered at and attached to an object by an {@link
     * XEventAttacherManager} .
     */
   def firing(aEvent: ScriptEvent): Unit = js.native
 }
-
 object XScriptListener {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -32,22 +34,26 @@ object XScriptListener {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), approveFiring = js.Any.fromFunction1(approveFiring), disposing = js.Any.fromFunction1(disposing), firing = js.Any.fromFunction1(firing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XScriptListener]
   }
+  
   @scala.inline
   implicit class XScriptListenerOps[Self <: XScriptListener] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setApproveFiring(value: ScriptEvent => js.Any): Self = this.set("approveFiring", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setFiring(value: ScriptEvent => Unit): Self = this.set("firing", js.Any.fromFunction1(value))
   }
-  
 }
-

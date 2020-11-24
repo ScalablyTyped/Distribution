@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassXmlDocumentType extends ClassXmlNode {
+  
   /**
     * class prop 
     *
@@ -17,6 +18,7 @@ trait ClassXmlDocumentType extends ClassXmlNode {
     * @type String
     */
   var name: String = js.native
+  
   /**
     * class prop 
     *
@@ -28,6 +30,7 @@ trait ClassXmlDocumentType extends ClassXmlNode {
     * @type String
     */
   var publicId: String = js.native
+  
   /**
     * class prop 
     *
@@ -40,4 +43,3 @@ trait ClassXmlDocumentType extends ClassXmlNode {
     */
   var systemId: String = js.native
 }
-

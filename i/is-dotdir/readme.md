@@ -11,8 +11,8 @@ Returns true if a path is a dot-directory.
 | Full name          | is-dotdir |
 | Keywords           | dotdir, is |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 531107 |
+| # dependents       | 3 |
+| # downloads        | 621396 |
 | # stars            | 0 |
 
 ## Links

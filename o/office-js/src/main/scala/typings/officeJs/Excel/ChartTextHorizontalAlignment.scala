@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartTextHorizontalAlignment extends js.Object
-
 /**
   *
   * Represents the horizontal alignment for the specified object.
@@ -16,6 +15,7 @@ sealed trait ChartTextHorizontalAlignment extends js.Object
 @JSGlobal("Excel.ChartTextHorizontalAlignment")
 @js.native
 object ChartTextHorizontalAlignment extends js.Object {
+  
   @js.native
   sealed trait center extends ChartTextHorizontalAlignment
   
@@ -30,6 +30,4 @@ object ChartTextHorizontalAlignment extends js.Object {
   
   @js.native
   sealed trait right extends ChartTextHorizontalAlignment
-  
 }
-

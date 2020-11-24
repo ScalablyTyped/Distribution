@@ -2,15 +2,13 @@ package typings.activexOffice.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Scripts extends js.Object {
-  val Application: js.Any = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
+  
   def apply(Index: js.Any): Script = js.native
+  
   /**
     * @param Location [Location=2]
     * @param Language [Language=2]
@@ -26,7 +24,16 @@ trait Scripts extends js.Object {
     Extended: js.UndefOr[String],
     ScriptText: js.UndefOr[String]
   ): Script = js.native
+  
+  val Application: js.Any = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
   def Delete(): Unit = js.native
+  
   def Item(Index: js.Any): Script = js.native
+  
+  val Parent: js.Any = js.native
 }
-

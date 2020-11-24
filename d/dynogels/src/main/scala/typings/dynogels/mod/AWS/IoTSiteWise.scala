@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.iotsitewiseMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.IoTSiteWise")
 @js.native
@@ -14,4 +14,3 @@ class IoTSiteWise ()
   extends typings.awsSdk.mod.IoTSiteWise {
   def this(options: ClientConfiguration) = this()
 }
-

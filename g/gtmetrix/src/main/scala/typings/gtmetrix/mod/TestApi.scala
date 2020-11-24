@@ -7,10 +7,11 @@ import typings.gtmetrix.anon.ReadonlyTestDetails
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TestApi extends js.Object {
+  
   def create(params: StringDictionary[js.Any]): js.Promise[ReadonlyTestBasicInfo] = js.native
   /**
     * Run a test.
@@ -20,6 +21,7 @@ trait TestApi extends js.Object {
     params: StringDictionary[js.Any],
     callback: js.Function2[/* error */ MetricsError, /* data */ ReadonlyTestBasicInfo, Unit]
   ): Unit = js.native
+  
   def get(testId: String): js.Promise[ReadonlyTestDetails] = js.native
   def get(
     testId: String,
@@ -56,4 +58,3 @@ trait TestApi extends js.Object {
     callback: js.Function2[/* error */ MetricsError, /* data */ ReadonlyTestDetails, Unit]
   ): Unit = js.native
 }
-

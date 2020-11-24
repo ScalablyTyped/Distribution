@@ -4,7 +4,7 @@ import typings.postmark.webhookMod.HttpAuth
 import typings.postmark.webhookMod.WebhookRequestTriggers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark/dist/client/models", "UpdateWebhookRequest")
 @js.native
@@ -66,4 +66,3 @@ class UpdateWebhookRequest ()
     httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header]
   ) = this()
 }
-

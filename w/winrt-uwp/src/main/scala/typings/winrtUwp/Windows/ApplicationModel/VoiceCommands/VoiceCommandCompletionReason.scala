@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.VoiceCommands
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait VoiceCommandCompletionReason extends js.Object
-
 /** Specifies the possible reasons the voice command completed. */
 @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason")
 @js.native
 object VoiceCommandCompletionReason extends js.Object {
+  
   /** The background app service requested that the app launch in the foreground with a call to RequestAppLaunchAsync . */
   @js.native
   sealed trait appLaunched extends VoiceCommandCompletionReason
@@ -38,6 +38,4 @@ object VoiceCommandCompletionReason extends js.Object {
   /** Unknown error. */
   @js.native
   sealed trait unknown extends VoiceCommandCompletionReason
-  
 }
-

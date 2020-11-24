@@ -2,14 +2,14 @@ package typings.playerframework.PlayerFramework
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait NetworkState extends js.Object
-
 @JSGlobal("PlayerFramework.NetworkState")
 @js.native
 object NetworkState extends js.Object {
+  
   /**
     * The player has not yet initialized any audio/video.
     **/
@@ -33,6 +33,4 @@ object NetworkState extends js.Object {
     **/
   @js.native
   sealed trait noSource extends NetworkState
-  
 }
-

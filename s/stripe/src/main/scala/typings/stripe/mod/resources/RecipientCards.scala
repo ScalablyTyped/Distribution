@@ -3,7 +3,7 @@ package typings.stripe.mod.resources
 import typings.stripe.mod.StripeResource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @deprecated
@@ -11,26 +11,30 @@ import scala.scalajs.js.annotation._
 @JSImport("stripe", "resources.RecipientCards")
 @js.native
 class RecipientCards () extends StripeResource {
+  
   /**
     * @deprecated
     */
   def create(): Unit = js.native
+  
   // options: IDataOptions
   /**
     * @deprecated
     */
   def del(id: String): Unit = js.native
+  
   /**
     * @deprecated
     */
   def list(): Unit = js.native
+  
   /**
     * @deprecated
     */
   def retrieve(id: String): Unit = js.native
+  
   /**
     * @deprecated
     */
   def update(id: String): Unit = js.native
 }
-

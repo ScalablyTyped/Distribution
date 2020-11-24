@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mobx-state-tree" : "4.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mobx-state-tree" : "4.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

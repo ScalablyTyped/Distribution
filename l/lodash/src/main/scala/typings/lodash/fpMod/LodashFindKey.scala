@@ -4,10 +4,11 @@ import typings.lodash.mod.ValueIteratee
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashFindKey extends LodashConvertible {
+trait LodashFindKey extends js.Object {
+  
   def apply[T](
     predicate: ValueIteratee[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
@@ -22,4 +23,3 @@ trait LodashFindKey extends LodashConvertible {
   def apply[T](predicate: __): LodashFindKey1x2[T] = js.native
   def apply[T](predicate: __, `object`: T): LodashFindKey1x2[T] = js.native
 }
-

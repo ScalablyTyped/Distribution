@@ -3,7 +3,7 @@ package typings.sipJs.mod
 import typings.sipJs.publisherOptionsMod.PublisherOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Publisher")
 @js.native
@@ -29,4 +29,3 @@ class Publisher protected ()
     options: PublisherOptions
   ) = this()
 }
-

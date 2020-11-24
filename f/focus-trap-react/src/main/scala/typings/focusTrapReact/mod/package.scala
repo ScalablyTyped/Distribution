@@ -2,8 +2,9 @@ package typings.focusTrapReact
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type FocusTrap = typings.react.mod.Component[typings.focusTrapReact.mod.Props, js.Object, js.Any]
 }

@@ -5,11 +5,12 @@ import typings.uirouterCore.paramsInterfaceMod.ParamTypeDefinition
 import typings.uirouterCore.uirouterCoreStrings.auto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/params/paramType", JSImport.Namespace)
 @js.native
 object paramTypeMod extends js.Object {
+  
   @js.native
   class ParamType protected () extends ParamTypeDefinition {
     /**
@@ -18,20 +19,7 @@ object paramTypeMod extends js.Object {
       * @returns a new ParamType object
       */
     def this(`def`: ParamTypeDefinition) = this()
-    /** @inheritdoc */
-    @JSName("dynamic")
-    var dynamic_ParamType: Boolean = js.native
-    /** @inheritdoc */
-    @JSName("inherit")
-    var inherit_ParamType: Boolean = js.native
-    /** The name/id of the parameter type */
-    var name: String = js.native
-    /** @inheritdoc */
-    @JSName("pattern")
-    var pattern_ParamType: RegExp = js.native
-    /** @inheritdoc */
-    @JSName("raw")
-    var raw_ParamType: Boolean = js.native
+    
     /**
       * Wraps an existing custom ParamType as an array of ParamType, depending on 'mode'.
       * e.g.:
@@ -46,12 +34,31 @@ object paramTypeMod extends js.Object {
     def $asArray(mode: Boolean, isSearch: Boolean): js.Any = js.native
     @JSName("$asArray")
     def $asArray_auto(mode: auto, isSearch: Boolean): js.Any = js.native
+    
     /** Given an encoded string, or a decoded object, returns a decoded object */
     @JSName("$normalize")
     def $normalize(`val`: js.Any): js.Any = js.native
+    
     @JSName("$subPattern")
     def $subPattern(): String = js.native
+    
+    /** @inheritdoc */
+    @JSName("dynamic")
+    var dynamic_ParamType: Boolean = js.native
+    
+    /** @inheritdoc */
+    @JSName("inherit")
+    var inherit_ParamType: Boolean = js.native
+    
+    /** The name/id of the parameter type */
+    var name: String = js.native
+    
+    /** @inheritdoc */
+    @JSName("pattern")
+    var pattern_ParamType: RegExp = js.native
+    
+    /** @inheritdoc */
+    @JSName("raw")
+    var raw_ParamType: Boolean = js.native
   }
-  
 }
-

@@ -3,11 +3,11 @@ package typings.antDesignIconsSvg
 import typings.antDesignIconsSvg.typesMod.IconDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-svg/es/asn/SignalFilled", JSImport.Namespace)
+@JSImport("@ant-design/icons-svg/lib/asn/SignalFilled", JSImport.Namespace)
 @js.native
 object signalFilledMod extends js.Object {
+  
   val default: IconDefinition = js.native
 }
-

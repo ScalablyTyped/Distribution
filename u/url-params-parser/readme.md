@@ -10,9 +10,9 @@ Url parser to extract named and query params
 | ------------------ | :-------------: |
 | Full name          | url-params-parser |
 | Keywords           | url, parser, pathname, named params, query params |
-| # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 5373 |
+| # releases         | 6 |
+| # dependents       | 3 |
+| # downloads        | 8567 |
 | # stars            | 0 |
 
 ## Links

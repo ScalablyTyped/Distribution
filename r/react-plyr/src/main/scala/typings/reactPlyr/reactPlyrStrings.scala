@@ -2,9 +2,22 @@ package typings.reactPlyr
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactPlyrStrings {
+  
+  @scala.inline
+  def audio: audio = "audio".asInstanceOf[audio]
+  
+  @scala.inline
+  def video: video = "video".asInstanceOf[video]
+  
+  @scala.inline
+  def vimeo: vimeo = "vimeo".asInstanceOf[vimeo]
+  
+  @scala.inline
+  def youtube: youtube = "youtube".asInstanceOf[youtube]
+  
   @js.native
   sealed trait audio extends js.Object
   
@@ -16,14 +29,4 @@ object reactPlyrStrings {
   
   @js.native
   sealed trait youtube extends js.Object
-  
-  @scala.inline
-  def audio: audio = "audio".asInstanceOf[audio]
-  @scala.inline
-  def video: video = "video".asInstanceOf[video]
-  @scala.inline
-  def vimeo: vimeo = "vimeo".asInstanceOf[vimeo]
-  @scala.inline
-  def youtube: youtube = "youtube".asInstanceOf[youtube]
 }
-

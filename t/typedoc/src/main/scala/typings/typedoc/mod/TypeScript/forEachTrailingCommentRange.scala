@@ -3,11 +3,12 @@ package typings.typedoc.mod.TypeScript
 import typings.typescript.mod.CommentKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.forEachTrailingCommentRange")
 @js.native
 object forEachTrailingCommentRange extends js.Object {
+  
   def apply[U](
     text: String,
     pos: Double,
@@ -33,4 +34,3 @@ object forEachTrailingCommentRange extends js.Object {
     state: T
   ): js.UndefOr[U] = js.native
 }
-

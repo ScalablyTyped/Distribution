@@ -4,7 +4,7 @@ import typings.perfectScrollbar.mod.PerfectScrollbar.Options
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("perfect-scrollbar", JSImport.Default)
 @js.native
@@ -14,4 +14,3 @@ class default protected () extends PerfectScrollbar {
   def this(element: String, options: Options) = this()
   def this(element: Element, options: Options) = this()
 }
-

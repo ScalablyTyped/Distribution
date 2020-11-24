@@ -7,7 +7,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** These enumeration values describe the formatting of a text paragraph. */
 /* Rewritten from type alias, can be one of: 
@@ -18,11 +18,12 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 */
 trait ParagraphAdjust extends js.Object
-
 object ParagraphAdjust {
+  
   /** adjusted to both borders / stretched, except for last line */
   @scala.inline
   def BLOCK: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * set the horizontal alignment to the center between the margins from the container object
     *
@@ -32,6 +33,7 @@ object ParagraphAdjust {
     */
   @scala.inline
   def CENTER: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * set the horizontal alignment to the left margin from the container object
     *
@@ -43,6 +45,7 @@ object ParagraphAdjust {
     */
   @scala.inline
   def LEFT: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * set the horizontal alignment to the right margin from the container object
     *
@@ -54,8 +57,8 @@ object ParagraphAdjust {
     */
   @scala.inline
   def RIGHT: `1` = 1.asInstanceOf[`1`]
+  
   /** adjusted to both borders / stretched, including last line */
   @scala.inline
   def STRETCH: `4` = 4.asInstanceOf[`4`]
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Perception
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PerceptionFrameSourcePropertyChangeStatus extends js.Object
-
 /** Indicates the status of a property change that an app requested of a frame source. */
 @JSGlobal("Windows.Devices.Perception.PerceptionFrameSourcePropertyChangeStatus")
 @js.native
 object PerceptionFrameSourcePropertyChangeStatus extends js.Object {
+  
   /** The requested property change was accepted by the frame source. */
   @js.native
   sealed trait accepted extends PerceptionFrameSourcePropertyChangeStatus
@@ -34,6 +34,4 @@ object PerceptionFrameSourcePropertyChangeStatus extends js.Object {
   /** The requested property change was not accepted because the value is not in a valid range. */
   @js.native
   sealed trait valueOutOfRange extends PerceptionFrameSourcePropertyChangeStatus
-  
 }
-

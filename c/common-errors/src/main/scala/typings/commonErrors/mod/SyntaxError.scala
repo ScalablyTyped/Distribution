@@ -2,7 +2,7 @@ package typings.commonErrors.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.SyntaxError * / any */ @JSImport("common-errors", "SyntaxError")
@@ -16,4 +16,3 @@ class SyntaxError protected () extends js.Object {
   def this(message: String) = this()
   def this(message: String, inner_error: Error) = this()
 }
-

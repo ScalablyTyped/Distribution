@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sqladmin/v1beta4", "sqladmin_v1beta4.Resource$Databases")
 @js.native
 class ResourceDatabases protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * sql.databases.delete
     * @desc Deletes a database from a Cloud SQL instance.
@@ -43,6 +45,7 @@ class ResourceDatabases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.databases.get
     * @desc Retrieves a resource containing information about a database inside
@@ -74,6 +77,7 @@ class ResourceDatabases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDatabase]
   ): Unit = js.native
+  
   /**
     * sql.databases.insert
     * @desc Inserts a resource containing information about a database inside a
@@ -105,6 +109,7 @@ class ResourceDatabases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.databases.list
     * @desc Lists databases in the specified Cloud SQL instance.
@@ -134,6 +139,7 @@ class ResourceDatabases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDatabasesListResponse]
   ): Unit = js.native
+  
   /**
     * sql.databases.patch
     * @desc Updates a resource containing information about a database inside a
@@ -166,6 +172,7 @@ class ResourceDatabases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * sql.databases.update
     * @desc Updates a resource containing information about a database inside a
@@ -199,4 +206,3 @@ class ResourceDatabases protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

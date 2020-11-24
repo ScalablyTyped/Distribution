@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Campaigncreativeassociations")
 @js.native
 class ResourceCampaigncreativeassociations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.campaignCreativeAssociations.insert
     * @desc Associates a creative with the specified campaign. This method
@@ -48,6 +50,7 @@ class ResourceCampaigncreativeassociations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCampaignCreativeAssociation]
   ): Unit = js.native
+  
   /**
     * dfareporting.campaignCreativeAssociations.list
     * @desc Retrieves the list of creative IDs associated with the specified
@@ -85,4 +88,3 @@ class ResourceCampaigncreativeassociations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCampaignCreativeAssociationsListResponse]
   ): Unit = js.native
 }
-

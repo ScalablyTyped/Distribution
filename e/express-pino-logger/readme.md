@@ -10,9 +10,9 @@ An express middleware to log with pino
 | ------------------ | :-------------: |
 | Full name          | express-pino-logger |
 | Keywords           | express, connect, http, logger, fast, pino |
-| # releases         | 3 |
-| # dependents       | 39 |
-| # downloads        | 1163533 |
+| # releases         | 2 |
+| # dependents       | 50 |
+| # downloads        | 2916379 |
 | # stars            | 6 |
 
 ## Links

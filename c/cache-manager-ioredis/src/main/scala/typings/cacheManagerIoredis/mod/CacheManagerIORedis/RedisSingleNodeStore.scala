@@ -5,12 +5,12 @@ import typings.ioredis.mod.Cluster
 import typings.ioredis.mod.Redis
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RedisSingleNodeStore extends RedisStore
-
 object RedisSingleNodeStore {
+  
   @scala.inline
   def apply(
     del: /* repeated */ js.Any => js.Promise[_],
@@ -27,4 +27,3 @@ object RedisSingleNodeStore {
     __obj.asInstanceOf[RedisSingleNodeStore]
   }
 }
-

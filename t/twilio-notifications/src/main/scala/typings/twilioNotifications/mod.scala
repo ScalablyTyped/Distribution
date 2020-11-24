@@ -3,11 +3,12 @@ package typings.twilioNotifications
 import typings.twilioNotifications.clientMod.Client
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio-notifications", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * @class
     * @alias Notifications
@@ -24,6 +25,4 @@ object mod extends js.Object {
     def this(token: String) = this()
     def this(token: String, options: js.Any) = this()
   }
-  
 }
-

@@ -12,7 +12,7 @@ The lodash method `_.xorBy` exported as a module.
 | Keywords           | lodash-modularized, xorby |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 2059991 |
+| # downloads        | 17269384 |
 | # stars            | 0 |
 
 ## Links

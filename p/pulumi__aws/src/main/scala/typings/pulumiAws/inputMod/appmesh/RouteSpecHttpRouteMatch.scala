@@ -3,63 +3,77 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RouteSpecHttpRouteMatch extends js.Object {
+  
   /**
     * The client request headers to match on.
     */
   var headers: js.UndefOr[Input[js.Array[Input[RouteSpecHttpRouteMatchHeader]]]] = js.native
+  
   /**
     * The client request header method to match on. Valid values: `GET`, `HEAD`, `POST`, `PUT`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`, `PATCH`.
     */
   var method: js.UndefOr[Input[String]] = js.native
+  
   /**
-    * Specifies the path with which to match requests.
+    * The value sent by the client must begin with the specified characters. Must be between 1 and 255 characters in length.
     * This parameter must always start with /, which by itself matches all requests to the virtual router service name.
     */
   var prefix: Input[String] = js.native
+  
   /**
     * The client request header scheme to match on. Valid values: `http`, `https`.
     */
   var scheme: js.UndefOr[Input[String]] = js.native
 }
-
 object RouteSpecHttpRouteMatch {
+  
   @scala.inline
   def apply(prefix: Input[String]): RouteSpecHttpRouteMatch = {
     val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecHttpRouteMatch]
   }
+  
   @scala.inline
   implicit class RouteSpecHttpRouteMatchOps[Self <: RouteSpecHttpRouteMatch] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setPrefix(value: Input[String]): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHeadersVarargs(value: Input[RouteSpecHttpRouteMatchHeader]*): Self = this.set("headers", js.Array(value :_*))
+    
     @scala.inline
     def setHeaders(value: Input[js.Array[Input[RouteSpecHttpRouteMatchHeader]]]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHeaders: Self = this.set("headers", js.undefined)
+    
     @scala.inline
     def setMethod(value: Input[String]): Self = this.set("method", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMethod: Self = this.set("method", js.undefined)
+    
     @scala.inline
     def setScheme(value: Input[String]): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteScheme: Self = this.set("scheme", js.undefined)
   }
-  
 }
-

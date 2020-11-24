@@ -174,36 +174,44 @@ import typings.std.stdStrings.view
 import typings.std.stdStrings.wbr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParentNode extends js.Object {
-  val childElementCount: Double = js.native
-  /**
-    * Returns the child elements.
-    */
-  val children: HTMLCollection = js.native
-  /**
-    * Returns the first child that is an element, and null otherwise.
-    */
-  val firstElementChild: Element | Null = js.native
-  /**
-    * Returns the last child that is an element, and null otherwise.
-    */
-  val lastElementChild: Element | Null = js.native
+  
   /**
     * Inserts nodes after the last child of node, while replacing strings in nodes with equivalent Text nodes.
     * 
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
     */
   def append(nodes: (Node | java.lang.String)*): Unit = js.native
+  
+  val childElementCount: Double = js.native
+  
+  /**
+    * Returns the child elements.
+    */
+  val children: HTMLCollection = js.native
+  
+  /**
+    * Returns the first child that is an element, and null otherwise.
+    */
+  val firstElementChild: Element | Null = js.native
+  
+  /**
+    * Returns the last child that is an element, and null otherwise.
+    */
+  val lastElementChild: Element | Null = js.native
+  
   /**
     * Inserts nodes before the first child of node, while replacing strings in nodes with equivalent Text nodes.
     * 
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
     */
   def prepend(nodes: (Node | java.lang.String)*): Unit = js.native
+  
   def querySelector[E /* <: Element */](selectors: java.lang.String): E | Null = js.native
+  
   def querySelectorAll[E /* <: Element */](selectors: java.lang.String): NodeListOf[E] = js.native
   /**
     * Returns all element descendants of node that match selectors.
@@ -552,6 +560,7 @@ trait ParentNode extends js.Object {
   def querySelectorAll_view(selectors: view): NodeListOf[SVGViewElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_wbr(selectors: wbr): NodeListOf[HTMLElement] = js.native
+  
   /**
     * Returns the first element that is a descendant of node that matches selectors.
     */
@@ -900,4 +909,3 @@ trait ParentNode extends js.Object {
   @JSName("querySelector")
   def querySelector_wbr(selectors: wbr): HTMLElement | Null = js.native
 }
-

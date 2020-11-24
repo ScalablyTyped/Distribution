@@ -6,17 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$Containers")
 @js.native
 class ResourceAccountsContainers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var environments: ResourceAccountsContainersEnvironments = js.native
-  var version_headers: ResourceAccountsContainersVersionHeaders = js.native
-  var versions: ResourceAccountsContainersVersions = js.native
-  var workspaces: ResourceAccountsContainersWorkspaces = js.native
+  
   /**
     * tagmanager.accounts.containers.create
     * @desc Creates a Container.
@@ -46,6 +44,7 @@ class ResourceAccountsContainers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContainer]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.delete
     * @desc Deletes a Container.
@@ -74,6 +73,9 @@ class ResourceAccountsContainers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
+  var environments: ResourceAccountsContainersEnvironments = js.native
+  
   /**
     * tagmanager.accounts.containers.get
     * @desc Gets a Container.
@@ -102,6 +104,7 @@ class ResourceAccountsContainers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContainer]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.list
     * @desc Lists all Containers that belongs to a GTM Account.
@@ -134,6 +137,7 @@ class ResourceAccountsContainers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListContainersResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.containers.update
     * @desc Updates a Container.
@@ -164,5 +168,10 @@ class ResourceAccountsContainers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContainer]
   ): Unit = js.native
+  
+  var version_headers: ResourceAccountsContainersVersionHeaders = js.native
+  
+  var versions: ResourceAccountsContainersVersions = js.native
+  
+  var workspaces: ResourceAccountsContainersWorkspaces = js.native
 }
-

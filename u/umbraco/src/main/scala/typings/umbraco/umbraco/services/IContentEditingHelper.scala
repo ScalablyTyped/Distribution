@@ -2,7 +2,7 @@ package typings.umbraco.umbraco.services
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IContentEditingHelper extends js.Object {
+  
   /**
     * @ngdoc method
     * @name umbraco.services.contentEditingHelper#getAllProps
@@ -22,6 +23,7 @@ trait IContentEditingHelper extends js.Object {
     * Returns all propertes contained for the content item (since the normal model has properties contained inside of tabs)
     */
   def getAllProps(content: js.Any): js.Any = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.contentEditingHelper#configureButtons
@@ -32,6 +34,7 @@ trait IContentEditingHelper extends js.Object {
     * Returns a letter array for buttons, with the primary one first based on content model, permissions and editor state
     */
   def getAllowedActions(content: js.Any, creating: js.Any): js.Array[String] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.contentEditingHelper#getButtonFromAction
@@ -44,6 +47,7 @@ trait IContentEditingHelper extends js.Object {
     * returns label, alias, action char and hot-key
     */
   def getButtonFromAction(ch: String): js.Any = js.native
+  
   /**
     * @ngdoc function
     * @name umbraco.services.contentEditingHelper#handleSaveError
@@ -54,6 +58,7 @@ trait IContentEditingHelper extends js.Object {
     * A function to handle what happens when we have validation issues from the server side
     */
   def handleSaveError(args: js.Any*): Unit = js.native
+  
   /**
     * @ngdoc function
     * @name umbraco.services.contentEditingHelper#handleSuccessfulSave
@@ -66,6 +71,7 @@ trait IContentEditingHelper extends js.Object {
     * when we're creating new content.
     */
   def handleSuccessfulSave(args: js.Any*): Unit = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.contentEditingHelper#reBindChangedProperties
@@ -76,6 +82,7 @@ trait IContentEditingHelper extends js.Object {
     * re-binds all changed property values to the origContent object from the savedContent object and returns an array of changed properties.
     */
   def reBindChangedProperties(origContent: js.Any, savedContent: js.Any): Unit = js.native
+  
   /**
     * @ngdoc function
     * @name umbraco.services.contentEditingHelper#redirectToCreatedContent
@@ -89,8 +96,8 @@ trait IContentEditingHelper extends js.Object {
     */
   def redirectToCreatedContent(id: Double, modelState: js.Any): Unit = js.native
 }
-
 object IContentEditingHelper {
+  
   @scala.inline
   def apply(
     getAllProps: js.Any => js.Any,
@@ -104,32 +111,41 @@ object IContentEditingHelper {
     val __obj = js.Dynamic.literal(getAllProps = js.Any.fromFunction1(getAllProps), getAllowedActions = js.Any.fromFunction2(getAllowedActions), getButtonFromAction = js.Any.fromFunction1(getButtonFromAction), handleSaveError = js.Any.fromFunction1(handleSaveError), handleSuccessfulSave = js.Any.fromFunction1(handleSuccessfulSave), reBindChangedProperties = js.Any.fromFunction2(reBindChangedProperties), redirectToCreatedContent = js.Any.fromFunction2(redirectToCreatedContent))
     __obj.asInstanceOf[IContentEditingHelper]
   }
+  
   @scala.inline
   implicit class IContentEditingHelperOps[Self <: IContentEditingHelper] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetAllProps(value: js.Any => js.Any): Self = this.set("getAllProps", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetAllowedActions(value: (js.Any, js.Any) => js.Array[String]): Self = this.set("getAllowedActions", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetButtonFromAction(value: String => js.Any): Self = this.set("getButtonFromAction", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setHandleSaveError(value: /* repeated */ js.Any => Unit): Self = this.set("handleSaveError", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setHandleSuccessfulSave(value: /* repeated */ js.Any => Unit): Self = this.set("handleSuccessfulSave", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setReBindChangedProperties(value: (js.Any, js.Any) => Unit): Self = this.set("reBindChangedProperties", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRedirectToCreatedContent(value: (Double, js.Any) => Unit): Self = this.set("redirectToCreatedContent", js.Any.fromFunction2(value))
   }
-  
 }
-

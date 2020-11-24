@@ -3,11 +3,12 @@ package typings.apidevtoolsJsonSchemaRefParser.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apidevtools/json-schema-ref-parser", "JSONParserErrorGroup")
 @js.native
 class JSONParserErrorGroup () extends Error {
+  
   /**
     * List of all errors
     *
@@ -16,6 +17,7 @@ class JSONParserErrorGroup () extends Error {
   val errors: js.Array[
     JSONParserError | InvalidPointerError | ResolverError | ParserError | MissingPointerError | UnmatchedParserError | UnmatchedResolverError
   ] = js.native
+  
   /**
     * The fields property is a `$RefParser` instance
     *
@@ -23,4 +25,3 @@ class JSONParserErrorGroup () extends Error {
     */
   val files: RefParser = js.native
 }
-

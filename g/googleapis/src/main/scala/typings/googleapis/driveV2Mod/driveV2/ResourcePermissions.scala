@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Permissions")
 @js.native
 class ResourcePermissions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * drive.permissions.delete
     * @desc Deletes a permission from a file or Team Drive.
@@ -44,6 +46,7 @@ class ResourcePermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * drive.permissions.get
     * @desc Gets a permission by ID.
@@ -75,6 +78,7 @@ class ResourcePermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPermission]
   ): Unit = js.native
+  
   /**
     * drive.permissions.getIdForEmail
     * @desc Returns the permission ID for an email address.
@@ -103,6 +107,7 @@ class ResourcePermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPermissionId]
   ): Unit = js.native
+  
   /**
     * drive.permissions.insert
     * @desc Inserts a permission for a file or Team Drive.
@@ -136,6 +141,7 @@ class ResourcePermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPermission]
   ): Unit = js.native
+  
   /**
     * drive.permissions.list
     * @desc Lists a file's or Team Drive's permissions.
@@ -168,6 +174,7 @@ class ResourcePermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPermissionList]
   ): Unit = js.native
+  
   /**
     * drive.permissions.patch
     * @desc Updates a permission using patch semantics.
@@ -202,6 +209,7 @@ class ResourcePermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPermission]
   ): Unit = js.native
+  
   /**
     * drive.permissions.update
     * @desc Updates a permission.
@@ -237,4 +245,3 @@ class ResourcePermissions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPermission]
   ): Unit = js.native
 }
-

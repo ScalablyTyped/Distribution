@@ -8,12 +8,11 @@ import typings.std.Element
 import typings.std.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
-  // Undocumented
-  var length: Double = js.native
+  
   /**
     * Adds the specified class(es) to each of the set of matched elements.
     *
@@ -21,6 +20,7 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/addClass/#addClass-className}
     */
   def addClass(className: String): this.type = js.native
+  
   def after(content1: String, content2: js.Any*): this.type = js.native
   def after(content1: js.Array[_], content2: js.Any*): this.type = js.native
   /**
@@ -41,6 +41,7 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/after/#after-function}
     */
   def after(func: js.Function2[/* index */ Double, /* html */ String, String | Element | this.type]): this.type = js.native
+  
   def append(content1: String, content2: js.Any*): this.type = js.native
   def append(content1: js.Array[_], content2: js.Any*): this.type = js.native
   /**
@@ -61,6 +62,7 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/append/#append-function}
     */
   def append(func: js.Function2[/* index */ Double, /* html */ String, String | Element | this.type]): this.type = js.native
+  
   /**
     * Set one or more attributes for the set of matched elements.
     *
@@ -86,6 +88,7 @@ trait JQuery extends js.Object {
     */
   @JSName("attr")
   def attr_String(attributeName: String): String = js.native
+  
   /**
     * Attach a handler to an event for the elements.
     *
@@ -109,24 +112,29 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/bind/#bind-events}
     */
   def bind(events: js.Any): this.type = js.native
+  
   /**
     * Get the children of each element in the set of matched elements, optionally filtered by a selector.
     *
     * @see {@link https://api.jquery.com/children/}
     */
   def children(): this.type = js.native
+  
   def clone(withDataAndEvents: js.UndefOr[scala.Nothing], deepWithDataAndEvents: Boolean): this.type = js.native
   def clone(withDataAndEvents: Boolean): this.type = js.native
   def clone(withDataAndEvents: Boolean, deepWithDataAndEvents: Boolean): this.type = js.native
+  
   /**
     * Get the children of each element in the set of matched elements, including text and comment nodes.
     * @see {@link https://api.jquery.com/contents/}
     */
   def contents(): this.type = js.native
+  
   // TODO: events, how to define?
   // $destroy
   def controller(): js.Any = js.native
   def controller(name: String): js.Any = js.native
+  
   /**
     * Set one or more CSS properties for the set of matched elements.
     *
@@ -166,6 +174,7 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/css/#css-propertyNames}
     */
   def css(propertyNames: js.Array[String]): js.Any = js.native
+  
   /**
     * Return the value at the named data store for the first element in the jQuery collection, as set by data(name, value) or by an HTML5 data-* attribute.
     * @see {@link https://api.jquery.com/data/#data}
@@ -193,6 +202,7 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/data/#data-obj}
     */
   def data(obj: StringDictionary[js.Any]): this.type = js.native
+  
   /**
     * Remove the set of matched elements from the DOM.
     *
@@ -201,11 +211,13 @@ trait JQuery extends js.Object {
     */
   def detach(): this.type = js.native
   def detach(selector: String): this.type = js.native
+  
   /**
     * Remove all child nodes of the set of matched elements from the DOM.
     * @see {@link https://api.jquery.com/empty/}
     */
   def empty(): this.type = js.native
+  
   /**
     * Reduce the set of matched elements to the one at the specified index.
     *
@@ -213,6 +225,7 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/eq/}
     */
   def eq(index: Double): this.type = js.native
+  
   def find(element: js.Any): this.type = js.native
   def find(obj: JQuery): this.type = js.native
   /**
@@ -222,6 +235,7 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/find/#find-selector}
     */
   def find(selector: String): this.type = js.native
+  
   /**
     * Determine whether any of the matched elements are assigned the given class.
     *
@@ -229,6 +243,7 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/hasClass/}
     */
   def hasClass(className: String): Boolean = js.native
+  
   /**
     * Get the HTML contents of the first element in the set of matched elements.
     * @see {@link https://api.jquery.com/html/#html}
@@ -248,11 +263,14 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/html/#html-htmlString}
     */
   def html(htmlString: String): this.type = js.native
+  
   def inheritedData(): js.Any = js.native
   def inheritedData(key: String): js.Any = js.native
   def inheritedData(key: String, value: js.Any): this.type = js.native
   def inheritedData(obj: StringDictionary[js.Any]): this.type = js.native
+  
   def injector(): IInjectorService = js.native
+  
   /**
     * Returns the `$scope` of the element.
     *
@@ -261,12 +279,17 @@ trait JQuery extends js.Object {
     * See https://docs.angularjs.org/guide/production#disabling-debug-data for more information.
     */
   def isolateScope[T /* <: IScope */](): T = js.native
+  
+  // Undocumented
+  var length: Double = js.native
+  
   /**
     * Get the immediately following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector.
     *
     * @see {@link https://api.jquery.com/next/}
     */
   def next(): this.type = js.native
+  
   /**
     * Remove an event handler.
     * @see {@link https://api.jquery.com/off/#off}
@@ -316,6 +339,7 @@ trait JQuery extends js.Object {
     */
   def off(events: StringDictionary[js.Any]): this.type = js.native
   def off(events: StringDictionary[js.Any], selector: String): this.type = js.native
+  
   /**
     * Attach an event handler function for one or more events to the selected elements.
     *
@@ -397,6 +421,7 @@ trait JQuery extends js.Object {
     selector: String,
     data: js.Any
   ): this.type = js.native
+  
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     *
@@ -451,12 +476,14 @@ trait JQuery extends js.Object {
   def one(events: StringDictionary[js.Any], selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
   def one(events: StringDictionary[js.Any], selector: String): this.type = js.native
   def one(events: StringDictionary[js.Any], selector: String, data: js.Any): this.type = js.native
+  
   /**
     * Get the parent of each element in the current set of matched elements, optionally filtered by a selector.
     *
     * @see {@link https://api.jquery.com/parent/}
     */
   def parent(): this.type = js.native
+  
   def prepend(content1: String, content2: js.Any*): this.type = js.native
   def prepend(content1: js.Array[_], content2: js.Any*): this.type = js.native
   /**
@@ -477,6 +504,7 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/prepend/#prepend-function}
     */
   def prepend(func: js.Function2[/* index */ Double, /* html */ String, String | Element | this.type]): this.type = js.native
+  
   /**
     * Set one or more properties for the set of matched elements.
     *
@@ -509,6 +537,7 @@ trait JQuery extends js.Object {
   def prop(propertyName: String, value: String): this.type = js.native
   def prop(propertyName: String, value: Boolean): this.type = js.native
   def prop(propertyName: String, value: Double): this.type = js.native
+  
   /**
     * Specify a function to execute when the DOM is fully loaded.
     *
@@ -516,6 +545,7 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/ready/}
     */
   def ready(handler: js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], _]): this.type = js.native
+  
   /**
     * Remove the set of matched elements from the DOM.
     *
@@ -524,6 +554,7 @@ trait JQuery extends js.Object {
     */
   def remove(): this.type = js.native
   def remove(selector: String): this.type = js.native
+  
   /**
     * Remove an attribute from each element in the set of matched elements.
     *
@@ -531,6 +562,7 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/removeAttr/}
     */
   def removeAttr(attributeName: String): this.type = js.native
+  
   /**
     * Remove a single class, multiple classes, or all classes from each element in the set of matched elements.
     *
@@ -539,6 +571,7 @@ trait JQuery extends js.Object {
     */
   def removeClass(): this.type = js.native
   def removeClass(className: String): this.type = js.native
+  
   /**
     * Remove all previously-stored piece of data.
     * @see {@link https://api.jquery.com/removeData/}
@@ -558,6 +591,7 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/removeData/#removeData-name}
     */
   def removeData(name: String): this.type = js.native
+  
   /**
     * Replace each element in the set of matched elements with the provided new content and return the set of elements that was removed.
     *
@@ -576,6 +610,7 @@ trait JQuery extends js.Object {
   def replaceWith(newContent: JQuery): this.type = js.native
   def replaceWith(newContent: Element): this.type = js.native
   def replaceWith(newContent: Text): this.type = js.native
+  
   /**
     * Returns the `$scope` of the element.
     *
@@ -584,6 +619,7 @@ trait JQuery extends js.Object {
     * See https://docs.angularjs.org/guide/production#disabling-debug-data for more information.
     */
   def scope[T /* <: IScope */](): T = js.native
+  
   /**
     * Get the combined text contents of each element in the set of matched elements, including their descendants.
     * @see {@link https://api.jquery.com/text/#text}
@@ -605,6 +641,7 @@ trait JQuery extends js.Object {
   def text(text: String): this.type = js.native
   def text(text: Boolean): this.type = js.native
   def text(text: Double): this.type = js.native
+  
   /**
     * Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.
     *
@@ -622,6 +659,7 @@ trait JQuery extends js.Object {
   def toggleClass(className: String): this.type = js.native
   def toggleClass(className: String, swtch: Boolean): this.type = js.native
   def toggleClass(swtch: Boolean): this.type = js.native
+  
   /**
     * Execute all handlers attached to an element for an event.
     *
@@ -638,6 +676,7 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/triggerHandler/#triggerHandler-event-extraParameters}
     */
   def triggerHandler(event: JQueryEventObject, extraParameters: js.Any*): js.Object = js.native
+  
   /**
     * Remove a previously-attached event handler from the elements.
     *
@@ -667,6 +706,7 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/unbind/#unbind-event}
     */
   def unbind(evt: js.Any): this.type = js.native
+  
   /**
     * Get the current value of the first element in the set of matched elements.
     * @see {@link https://api.jquery.com/val/#val}
@@ -688,6 +728,7 @@ trait JQuery extends js.Object {
   def `val`(value: String): this.type = js.native
   def `val`(value: js.Array[String]): this.type = js.native
   def `val`(value: Double): this.type = js.native
+  
   /**
     * Wrap an HTML structure around each element in the set of matched elements.
     *
@@ -705,4 +746,3 @@ trait JQuery extends js.Object {
   def wrap(wrappingElement: JQuery): this.type = js.native
   def wrap(wrappingElement: Element): this.type = js.native
 }
-

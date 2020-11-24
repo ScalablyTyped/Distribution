@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mkpath"
-version := "v0.1.0-dt-20200515Z-b4281f"
+version := "v0.1.0-dt-20201002Z-0adb39"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

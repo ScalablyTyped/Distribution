@@ -10,9 +10,9 @@ Google Dynamic DNS client update tool. Updates the DNS IP address to the current
 | ------------------ | :-------------: |
 | Full name          | google-ddns |
 | Keywords           | google, ddns, dynamic, dns, domain, domains, client, dynamic dns, google dynamic dns, google dynamic dns client, google ddns, google ddns client, google-dynamic-dns |
-| # releases         | 6 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 345 |
+| # downloads        | 533 |
 | # stars            | 0 |
 
 ## Links

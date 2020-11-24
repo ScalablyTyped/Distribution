@@ -2,11 +2,12 @@ package typings.materialTextfield
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/textfield/character-counter/constants", JSImport.Namespace)
 @js.native
 object constantsMod extends js.Object {
+  
   /**
     * @license
     * Copyright 2019 Google Inc.
@@ -31,13 +32,13 @@ object constantsMod extends js.Object {
     */
   @js.native
   object cssClasses extends js.Object {
+    
     var ROOT: String = js.native
   }
   
   @js.native
   object strings extends js.Object {
+    
     var ROOT_SELECTOR: String = js.native
   }
-  
 }
-

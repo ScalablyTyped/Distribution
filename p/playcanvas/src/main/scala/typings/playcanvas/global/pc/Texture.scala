@@ -3,7 +3,7 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.anon.AddressU
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new texture.
@@ -95,4 +95,3 @@ class Texture protected ()
   def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice) = this()
   def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice, options: AddressU) = this()
 }
-

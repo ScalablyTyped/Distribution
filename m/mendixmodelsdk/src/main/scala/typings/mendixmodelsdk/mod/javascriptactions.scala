@@ -1,16 +1,19 @@
 package typings.mendixmodelsdk.mod
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "javascriptactions")
 @js.native
 object javascriptactions extends js.Object {
+  
   /**
-    * See: {@link https://docs.mendix.com/refguide7/javascript-actions relevant section in reference guide}
+    * See: {@link https://docs.mendix.com/refguide/javascript-actions relevant section in reference guide}
     *
     * In version 8.0.0: removed experimental
     * In version 7.21.0: introduced
@@ -26,6 +29,20 @@ object javascriptactions extends js.Object {
       container: IFolderBase
     ) = this()
   }
+  /* static members */
+  @js.native
+  object JavaScriptAction extends js.Object {
+    
+    /**
+      * Creates a new JavaScriptAction unit in the SDK and on the server.
+      * Expects one argument, the projects.IFolderBase in which this unit is contained.
+      */
+    def createIn(container: IFolderBase): typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptAction = js.native
+    
+    var structureTypeName: String = js.native
+    
+    var versionInfo: typings.mendixmodelsdk.javascriptactionsMod.StructureVersionInfo = js.native
+  }
   
   /**
     * In version 8.0.0: removed experimental
@@ -39,9 +56,24 @@ object javascriptactions extends js.Object {
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit,
-      container: typings.mendixmodelsdk.internalMod.AbstractElement
+      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
+  }
+  /* static members */
+  @js.native
+  object JavaScriptActionParameter extends js.Object {
+    
+    /**
+      * Creates and returns a new JavaScriptActionParameter instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    def create(model: IModel): typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptActionParameter = js.native
+    
+    var structureTypeName: String = js.native
+    
+    var versionInfo: typings.mendixmodelsdk.javascriptactionsMod.StructureVersionInfo = js.native
   }
   
   /**
@@ -55,48 +87,23 @@ object javascriptactions extends js.Object {
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit,
-      container: typings.mendixmodelsdk.internalMod.AbstractElement
+      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
-  
-  /* static members */
-  @js.native
-  object JavaScriptAction extends js.Object {
-    var structureTypeName: String = js.native
-    var versionInfo: typings.mendixmodelsdk.javascriptactionsMod.StructureVersionInfo = js.native
-    /**
-      * Creates a new JavaScriptAction unit in the SDK and on the server.
-      * Expects one argument, the projects.IFolderBase in which this unit is contained.
-      */
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptAction = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object JavaScriptActionParameter extends js.Object {
-    var structureTypeName: String = js.native
-    var versionInfo: typings.mendixmodelsdk.javascriptactionsMod.StructureVersionInfo = js.native
-    /**
-      * Creates and returns a new JavaScriptActionParameter instance in the SDK and on the server.
-      * Expects one argument: the IModel object the instance will "live on".
-      * After creation, assign or add this instance to a property that accepts this kind of objects.
-      */
-    def create(model: IModel): typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptActionParameter = js.native
-  }
-  
   /* static members */
   @js.native
   object NanoflowJavaScriptActionParameterType extends js.Object {
-    var structureTypeName: String = js.native
-    var versionInfo: typings.mendixmodelsdk.javascriptactionsMod.StructureVersionInfo = js.native
+    
     /**
       * Creates and returns a new NanoflowJavaScriptActionParameterType instance in the SDK and on the server.
       * Expects one argument: the IModel object the instance will "live on".
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     def create(model: IModel): typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.NanoflowJavaScriptActionParameterType = js.native
+    
+    var structureTypeName: String = js.native
+    
+    var versionInfo: typings.mendixmodelsdk.javascriptactionsMod.StructureVersionInfo = js.native
   }
-  
 }
-

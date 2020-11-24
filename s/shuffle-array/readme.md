@@ -10,9 +10,9 @@ Randomize the order of the elements in a given array.
 | ------------------ | :-------------: |
 | Full name          | shuffle-array |
 | Keywords           | random, shuffle, array |
-| # releases         | 1 |
-| # dependents       | 60 |
-| # downloads        | 645458 |
+| # releases         | 0 |
+| # dependents       | 65 |
+| # downloads        | 1083456 |
 | # stars            | 8 |
 
 ## Links

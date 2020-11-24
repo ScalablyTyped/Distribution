@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.DigitalGauge
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CharacterType extends js.Object
-
 @JSGlobal("ej.datavisualization.DigitalGauge.CharacterType")
 @js.native
 object CharacterType extends js.Object {
+  
   //string
   @js.native
   sealed trait EightCrossEightDotMatrix extends CharacterType
@@ -29,6 +29,4 @@ object CharacterType extends js.Object {
   //string
   @js.native
   sealed trait SixteenSegment extends CharacterType
-  
 }
-

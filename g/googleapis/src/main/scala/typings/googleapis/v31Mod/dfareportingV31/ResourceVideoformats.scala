@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Videoformats")
 @js.native
 class ResourceVideoformats protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.videoFormats.get
     * @desc Gets one video format by ID.
@@ -42,6 +44,7 @@ class ResourceVideoformats protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVideoFormat]
   ): Unit = js.native
+  
   /**
     * dfareporting.videoFormats.list
     * @desc Lists available video formats.
@@ -74,4 +77,3 @@ class ResourceVideoformats protected () extends js.Object {
     callback: BodyResponseCallback[SchemaVideoFormatsListResponse]
   ): Unit = js.native
 }
-

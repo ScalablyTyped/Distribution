@@ -11,8 +11,8 @@ Escape XML
 | Full name          | xml-escape |
 | Keywords           | Escape, XML, Unesacpe, encoding, xml-escape |
 | # releases         | 0 |
-| # dependents       | 64 |
-| # downloads        | 6745521 |
+| # dependents       | 69 |
+| # downloads        | 6807139 |
 | # stars            | 5 |
 
 ## Links

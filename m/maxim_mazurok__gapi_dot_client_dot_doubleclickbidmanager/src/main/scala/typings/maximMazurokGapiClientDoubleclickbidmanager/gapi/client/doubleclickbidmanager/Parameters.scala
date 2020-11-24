@@ -1,0 +1,96 @@
+package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doubleclickbidmanager
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait Parameters extends js.Object {
+  
+  /** Filters used to match traffic data in your report. */
+  var filters: js.UndefOr[js.Array[FilterPair]] = js.native
+  
+  /** Data is grouped by the filters listed in this field. */
+  var groupBys: js.UndefOr[js.Array[String]] = js.native
+  
+  /** Deprecated. This field is no longer in use. */
+  var includeInviteData: js.UndefOr[Boolean] = js.native
+  
+  /** Metrics to include as columns in your report. */
+  var metrics: js.UndefOr[js.Array[String]] = js.native
+  
+  /** Additional query options. */
+  var options: js.UndefOr[Options] = js.native
+  
+  /** Report type. */
+  var `type`: js.UndefOr[String] = js.native
+}
+object Parameters {
+  
+  @scala.inline
+  def apply(): Parameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[Parameters]
+  }
+  
+  @scala.inline
+  implicit class ParametersOps[Self <: Parameters] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setFiltersVarargs(value: FilterPair*): Self = this.set("filters", js.Array(value :_*))
+    
+    @scala.inline
+    def setFilters(value: js.Array[FilterPair]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    
+    @scala.inline
+    def setGroupBysVarargs(value: String*): Self = this.set("groupBys", js.Array(value :_*))
+    
+    @scala.inline
+    def setGroupBys(value: js.Array[String]): Self = this.set("groupBys", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteGroupBys: Self = this.set("groupBys", js.undefined)
+    
+    @scala.inline
+    def setIncludeInviteData(value: Boolean): Self = this.set("includeInviteData", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIncludeInviteData: Self = this.set("includeInviteData", js.undefined)
+    
+    @scala.inline
+    def setMetricsVarargs(value: String*): Self = this.set("metrics", js.Array(value :_*))
+    
+    @scala.inline
+    def setMetrics(value: js.Array[String]): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    
+    @scala.inline
+    def setOptions(value: Options): Self = this.set("options", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+}

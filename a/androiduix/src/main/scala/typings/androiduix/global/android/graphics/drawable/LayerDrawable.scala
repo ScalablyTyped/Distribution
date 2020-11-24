@@ -3,7 +3,7 @@ package typings.androiduix.global.android.graphics.drawable
 import typings.androiduix.android.graphics.drawable.LayerDrawable.LayerState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("android.graphics.drawable.LayerDrawable")
 @js.native
@@ -12,10 +12,10 @@ class LayerDrawable protected ()
   def this(layers: js.Array[typings.androiduix.android.graphics.drawable.Drawable]) = this()
   def this(layers: js.Array[typings.androiduix.android.graphics.drawable.Drawable], state: LayerState) = this()
 }
-
 @JSGlobal("android.graphics.drawable.LayerDrawable")
 @js.native
 object LayerDrawable extends js.Object {
+  
   @js.native
   class ChildDrawable ()
     extends typings.androiduix.android.graphics.drawable.LayerDrawable.ChildDrawable
@@ -28,6 +28,4 @@ object LayerDrawable extends js.Object {
       owner: typings.androiduix.android.graphics.drawable.LayerDrawable
     ) = this()
   }
-  
 }
-

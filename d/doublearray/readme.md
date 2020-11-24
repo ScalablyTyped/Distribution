@@ -11,7 +11,7 @@ JavaScript implementation of Double-Array trie
 | Keywords           | trie |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 230779 |
+| # downloads        | 440597 |
 | # stars            | 0 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.firebaseUtil.errorsMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/util/dist/src/errors", "ErrorFactory")
 @js.native
@@ -11,12 +11,15 @@ class ErrorFactory[ErrorCode /* <: String */, ErrorParams /* <: /* import warnin
 {readonly [ K in ErrorCode ]:? @firebase/util.@firebase/util/dist/src/errors.ErrorData}
   */ typings.firebaseUtil.firebaseUtilStrings.ErrorFactory with TopLevel[js.Any] */] protected () extends js.Object {
   def this(service: String, serviceName: String, errors: ErrorMap[ErrorCode]) = this()
-  val errors: js.Any = js.native
-  val service: js.Any = js.native
-  val serviceName: js.Any = js.native
+  
   def create[K /* <: ErrorCode */](
     code: K,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type K extends keyof ErrorParams ? [ErrorParams[K]] : [] is not an array type */ data: js.Array[js.Any]
   ): FirebaseError = js.native
+  
+  val errors: js.Any = js.native
+  
+  val service: js.Any = js.native
+  
+  val serviceName: js.Any = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.fibjs.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_SslHandler")
 @js.native
@@ -44,4 +44,3 @@ class ClassSslHandler protected ()
     */
   def this(crt: typings.fibjs.ClassX509Cert, key: typings.fibjs.ClassPKey, hdlr: typings.fibjs.ClassHandler) = this()
 }
-

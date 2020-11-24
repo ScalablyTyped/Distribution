@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sourcerepo/v1", "sourcerepo_v1.Resource$Projects$Repos")
 @js.native
 class ResourceProjectsRepos protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * sourcerepo.projects.repos.create
     * @desc Creates a repo in the given project with the given name.  If the
@@ -43,6 +45,7 @@ class ResourceProjectsRepos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRepo]
   ): Unit = js.native
+  
   /**
     * sourcerepo.projects.repos.delete
     * @desc Deletes a repo.
@@ -71,6 +74,7 @@ class ResourceProjectsRepos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * sourcerepo.projects.repos.get
     * @desc Returns information about a repo.
@@ -99,6 +103,7 @@ class ResourceProjectsRepos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRepo]
   ): Unit = js.native
+  
   /**
     * sourcerepo.projects.repos.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -128,6 +133,7 @@ class ResourceProjectsRepos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * sourcerepo.projects.repos.list
     * @desc Returns all repos belonging to a project. The sizes of the repos
@@ -159,6 +165,7 @@ class ResourceProjectsRepos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListReposResponse]
   ): Unit = js.native
+  
   /**
     * sourcerepo.projects.repos.patch
     * @desc Updates information about a repo.
@@ -188,6 +195,7 @@ class ResourceProjectsRepos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRepo]
   ): Unit = js.native
+  
   /**
     * sourcerepo.projects.repos.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -218,6 +226,7 @@ class ResourceProjectsRepos protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * sourcerepo.projects.repos.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -253,4 +262,3 @@ class ResourceProjectsRepos protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

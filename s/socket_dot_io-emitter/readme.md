@@ -11,8 +11,8 @@ Typings are for version 3.1
 | Full name          | socket.io-emitter |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 570028 |
+| # dependents       | 22 |
+| # downloads        | 782473 |
 | # stars            | 7 |
 
 ## Links

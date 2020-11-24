@@ -4,20 +4,23 @@ import typings.react.mod.HTMLAttributes
 import typings.std.SVGSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SVGIconProps extends HTMLAttributes[SVGSVGElement] {
+  
   /**
     * Boolean if the icon should use the dense spec.
     */
   var dense: js.UndefOr[Boolean] = js.native
+  
   /**
     * Boolean if the SVG should gain the `focusable` attribute. This is disabled
     * by default since IE11 and Edge actually default this to true and keyboard's
     * will tab focus all SVGs.
     */
   var focusable: js.UndefOr[Boolean] = js.native
+  
   /**
     * This should be a link to a part of an SVG sprite map. So normally one of
     * the following:
@@ -31,6 +34,7 @@ trait SVGIconProps extends HTMLAttributes[SVGSVGElement] {
     * > details.
     */
   var use: js.UndefOr[String] = js.native
+  
   /**
     * The `viewBox` attribute allows you to specify that a given set of graphics
     * stretch to fit a particular container element.
@@ -50,51 +54,64 @@ trait SVGIconProps extends HTMLAttributes[SVGSVGElement] {
     * be worth `10px`.
     */
   var viewBox: js.UndefOr[String] = js.native
+  
   /**
     * An optional `xmlns` string to provide. The `use` prop will not work without
     * this prop defined.
     */
   var xmlns: js.UndefOr[String] = js.native
 }
-
 object SVGIconProps {
+  
   @scala.inline
   def apply(): SVGIconProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SVGIconProps]
   }
+  
   @scala.inline
   implicit class SVGIconPropsOps[Self <: SVGIconProps] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDense(value: Boolean): Self = this.set("dense", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDense: Self = this.set("dense", js.undefined)
+    
     @scala.inline
     def setFocusable(value: Boolean): Self = this.set("focusable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFocusable: Self = this.set("focusable", js.undefined)
+    
     @scala.inline
     def setUse(value: String): Self = this.set("use", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUse: Self = this.set("use", js.undefined)
+    
     @scala.inline
     def setViewBox(value: String): Self = this.set("viewBox", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteViewBox: Self = this.set("viewBox", js.undefined)
+    
     @scala.inline
     def setXmlns(value: String): Self = this.set("xmlns", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteXmlns: Self = this.set("xmlns", js.undefined)
   }
-  
 }
-

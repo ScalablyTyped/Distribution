@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "bip174" : "1.0.1"
+      "bip174" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "bip174" : "1.0.1"
+      "bip174" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

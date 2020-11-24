@@ -2,11 +2,12 @@ package typings.nodeAppleReceiptVerify.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-apple-receipt-verify", "validate")
 @js.native
 object validate extends js.Object {
+  
   def apply(options: ValidateOptions): js.Promise[js.Array[PurchasedProducts]] = js.native
   def apply(
     options: ValidateOptions,
@@ -17,4 +18,3 @@ object validate extends js.Object {
     ]
   ): Unit = js.native
 }
-

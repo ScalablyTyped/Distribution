@@ -10,9 +10,9 @@ Get the information of a npm package
 | ------------------ | :-------------: |
 | Full name          | package-info |
 | Keywords           | info, npm, package, package.json, current, module, npm, information, version, author |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 22 |
-| # downloads        | 26617 |
+| # downloads        | 15609 |
 | # stars            | 4 |
 
 ## Links

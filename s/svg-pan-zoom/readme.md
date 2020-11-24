@@ -11,8 +11,8 @@ JavaScript library for panning and zooming an SVG image from the mouse, touches 
 | Full name          | svg-pan-zoom |
 | Keywords           | svg, pan, zoom |
 | # releases         | 3 |
-| # dependents       | 20 |
-| # downloads        | 1223696 |
+| # dependents       | 28 |
+| # downloads        | 1742365 |
 | # stars            | 3 |
 
 ## Links

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Graphics.Display
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ResolutionScale extends js.Object
-
 /** Describes the scale factor of the immersive environment. The scale factor is determined by the operating system in response to high pixel density screens. */
 @JSGlobal("Windows.Graphics.Display.ResolutionScale")
 @js.native
 object ResolutionScale extends js.Object {
+  
   /** Specifies the scale of a display is invalid. */
   @js.native
   sealed trait invalid extends ResolutionScale
@@ -78,6 +78,4 @@ object ResolutionScale extends js.Object {
   /** Specifies the scale of a display as 500 percent. */
   @js.native
   sealed trait scale500Percent extends ResolutionScale
-  
 }
-

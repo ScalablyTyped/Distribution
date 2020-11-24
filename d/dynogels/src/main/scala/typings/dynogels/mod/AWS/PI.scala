@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.piMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.PI")
 @js.native
@@ -14,4 +14,3 @@ class PI ()
   extends typings.awsSdk.mod.PI {
   def this(options: ClientConfiguration) = this()
 }
-

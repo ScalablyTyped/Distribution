@@ -109,9 +109,808 @@ import typings.webix.mod.ui.viewEventName
 import typings.webix.mod.ui.windowEventName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webixStrings {
+  
+  @scala.inline
+  def onAfterAdd: onAfterAdd = "onAfterAdd".asInstanceOf[onAfterAdd]
+  
+  @scala.inline
+  def onAfterAreaAdd: onAfterAreaAdd = "onAfterAreaAdd".asInstanceOf[onAfterAreaAdd]
+  
+  @scala.inline
+  def onAfterAreaRemove: onAfterAreaRemove = "onAfterAreaRemove".asInstanceOf[onAfterAreaRemove]
+  
+  @scala.inline
+  def onAfterBack: onAfterBack = "onAfterBack".asInstanceOf[onAfterBack]
+  
+  @scala.inline
+  def onAfterBlockSelect: onAfterBlockSelect = "onAfterBlockSelect".asInstanceOf[onAfterBlockSelect]
+  
+  @scala.inline
+  def onAfterClose: onAfterClose = "onAfterClose".asInstanceOf[onAfterClose]
+  
+  @scala.inline
+  def onAfterCollapse: onAfterCollapse = "onAfterCollapse".asInstanceOf[onAfterCollapse]
+  
+  @scala.inline
+  def onAfterColumnDrop: onAfterColumnDrop = "onAfterColumnDrop".asInstanceOf[onAfterColumnDrop]
+  
+  @scala.inline
+  def onAfterColumnDropOrder: onAfterColumnDropOrder = "onAfterColumnDropOrder".asInstanceOf[onAfterColumnDropOrder]
+  
+  @scala.inline
+  def onAfterColumnHide: onAfterColumnHide = "onAfterColumnHide".asInstanceOf[onAfterColumnHide]
+  
+  @scala.inline
+  def onAfterColumnShow: onAfterColumnShow = "onAfterColumnShow".asInstanceOf[onAfterColumnShow]
+  
+  @scala.inline
+  def onAfterConditionSet: onAfterConditionSet = "onAfterConditionSet".asInstanceOf[onAfterConditionSet]
+  
+  @scala.inline
+  def onAfterContextMenu: onAfterContextMenu = "onAfterContextMenu".asInstanceOf[onAfterContextMenu]
+  
+  @scala.inline
+  def onAfterCopy: onAfterCopy = "onAfterCopy".asInstanceOf[onAfterCopy]
+  
+  @scala.inline
+  def onAfterCreateFolder: onAfterCreateFolder = "onAfterCreateFolder".asInstanceOf[onAfterCreateFolder]
+  
+  @scala.inline
+  def onAfterCursorChange: onAfterCursorChange = "onAfterCursorChange".asInstanceOf[onAfterCursorChange]
+  
+  @scala.inline
+  def onAfterDateSelect: onAfterDateSelect = "onAfterDateSelect".asInstanceOf[onAfterDateSelect]
+  
+  @scala.inline
+  def onAfterDelete: onAfterDelete = "onAfterDelete".asInstanceOf[onAfterDelete]
+  
+  @scala.inline
+  def onAfterDeleteFile: onAfterDeleteFile = "onAfterDeleteFile".asInstanceOf[onAfterDeleteFile]
+  
+  @scala.inline
+  def onAfterDrop: onAfterDrop = "onAfterDrop".asInstanceOf[onAfterDrop]
+  
+  @scala.inline
+  def onAfterDynParse: onAfterDynParse = "onAfterDynParse".asInstanceOf[onAfterDynParse]
+  
+  @scala.inline
+  def onAfterEditFile: onAfterEditFile = "onAfterEditFile".asInstanceOf[onAfterEditFile]
+  
+  @scala.inline
+  def onAfterEditStart: onAfterEditStart = "onAfterEditStart".asInstanceOf[onAfterEditStart]
+  
+  @scala.inline
+  def onAfterEditStop: onAfterEditStop = "onAfterEditStop".asInstanceOf[onAfterEditStop]
+  
+  @scala.inline
+  def onAfterEditorShow: onAfterEditorShow = "onAfterEditorShow".asInstanceOf[onAfterEditorShow]
+  
+  @scala.inline
+  def onAfterExpand: onAfterExpand = "onAfterExpand".asInstanceOf[onAfterExpand]
+  
+  @scala.inline
+  def onAfterFileAdd: onAfterFileAdd = "onAfterFileAdd".asInstanceOf[onAfterFileAdd]
+  
+  @scala.inline
+  def onAfterFileUpload: onAfterFileUpload = "onAfterFileUpload".asInstanceOf[onAfterFileUpload]
+  
+  @scala.inline
+  def onAfterFilter: onAfterFilter = "onAfterFilter".asInstanceOf[onAfterFilter]
+  
+  @scala.inline
+  def onAfterHideTree: onAfterHideTree = "onAfterHideTree".asInstanceOf[onAfterHideTree]
+  
+  @scala.inline
+  def onAfterLevelDown: onAfterLevelDown = "onAfterLevelDown".asInstanceOf[onAfterLevelDown]
+  
+  @scala.inline
+  def onAfterLevelUp: onAfterLevelUp = "onAfterLevelUp".asInstanceOf[onAfterLevelUp]
+  
+  @scala.inline
+  def onAfterLoad: onAfterLoad = "onAfterLoad".asInstanceOf[onAfterLoad]
+  
+  @scala.inline
+  def onAfterMarkCopy: onAfterMarkCopy = "onAfterMarkCopy".asInstanceOf[onAfterMarkCopy]
+  
+  @scala.inline
+  def onAfterMarkCut: onAfterMarkCut = "onAfterMarkCut".asInstanceOf[onAfterMarkCut]
+  
+  @scala.inline
+  def onAfterMenu: onAfterMenu = "onAfterMenu".asInstanceOf[onAfterMenu]
+  
+  @scala.inline
+  def onAfterModeChange: onAfterModeChange = "onAfterModeChange".asInstanceOf[onAfterModeChange]
+  
+  @scala.inline
+  def onAfterMonthChange: onAfterMonthChange = "onAfterMonthChange".asInstanceOf[onAfterMonthChange]
+  
+  @scala.inline
+  def onAfterOpen: onAfterOpen = "onAfterOpen".asInstanceOf[onAfterOpen]
+  
+  @scala.inline
+  def onAfterPageChange: onAfterPageChange = "onAfterPageChange".asInstanceOf[onAfterPageChange]
+  
+  @scala.inline
+  def onAfterPasteFile: onAfterPasteFile = "onAfterPasteFile".asInstanceOf[onAfterPasteFile]
+  
+  @scala.inline
+  def onAfterPathClick: onAfterPathClick = "onAfterPathClick".asInstanceOf[onAfterPathClick]
+  
+  @scala.inline
+  def onAfterPortletMove: onAfterPortletMove = "onAfterPortletMove".asInstanceOf[onAfterPortletMove]
+  
+  @scala.inline
+  def onAfterRangeChange: onAfterRangeChange = "onAfterRangeChange".asInstanceOf[onAfterRangeChange]
+  
+  @scala.inline
+  def onAfterRangeSet: onAfterRangeSet = "onAfterRangeSet".asInstanceOf[onAfterRangeSet]
+  
+  @scala.inline
+  def onAfterRender: onAfterRender = "onAfterRender".asInstanceOf[onAfterRender]
+  
+  @scala.inline
+  def onAfterRun: onAfterRun = "onAfterRun".asInstanceOf[onAfterRun]
+  
+  @scala.inline
+  def onAfterScroll: onAfterScroll = "onAfterScroll".asInstanceOf[onAfterScroll]
+  
+  @scala.inline
+  def onAfterSearch: onAfterSearch = "onAfterSearch".asInstanceOf[onAfterSearch]
+  
+  @scala.inline
+  def onAfterSelect: onAfterSelect = "onAfterSelect".asInstanceOf[onAfterSelect]
+  
+  @scala.inline
+  def onAfterSheetShow: onAfterSheetShow = "onAfterSheetShow".asInstanceOf[onAfterSheetShow]
+  
+  @scala.inline
+  def onAfterShowTree: onAfterShowTree = "onAfterShowTree".asInstanceOf[onAfterShowTree]
+  
+  @scala.inline
+  def onAfterSort: onAfterSort = "onAfterSort".asInstanceOf[onAfterSort]
+  
+  @scala.inline
+  def onAfterSpan: onAfterSpan = "onAfterSpan".asInstanceOf[onAfterSpan]
+  
+  @scala.inline
+  def onAfterSplit: onAfterSplit = "onAfterSplit".asInstanceOf[onAfterSplit]
+  
+  @scala.inline
+  def onAfterStart: onAfterStart = "onAfterStart".asInstanceOf[onAfterStart]
+  
+  @scala.inline
+  def onAfterStatusChange: onAfterStatusChange = "onAfterStatusChange".asInstanceOf[onAfterStatusChange]
+  
+  @scala.inline
+  def onAfterTabClick: onAfterTabClick = "onAfterTabClick".asInstanceOf[onAfterTabClick]
+  
+  @scala.inline
+  def onAfterUnSelect: onAfterUnSelect = "onAfterUnSelect".asInstanceOf[onAfterUnSelect]
+  
+  @scala.inline
+  def onAfterUploadDialog: onAfterUploadDialog = "onAfterUploadDialog".asInstanceOf[onAfterUploadDialog]
+  
+  @scala.inline
+  def onAfterValidation: onAfterValidation = "onAfterValidation".asInstanceOf[onAfterValidation]
+  
+  @scala.inline
+  def onAfterZoom: onAfterZoom = "onAfterZoom".asInstanceOf[onAfterZoom]
+  
+  @scala.inline
+  def onAreaDrag: onAreaDrag = "onAreaDrag".asInstanceOf[onAreaDrag]
+  
+  @scala.inline
+  def onAvatarClick: onAvatarClick = "onAvatarClick".asInstanceOf[onAvatarClick]
+  
+  @scala.inline
+  def onBeforeAdd: onBeforeAdd = "onBeforeAdd".asInstanceOf[onBeforeAdd]
+  
+  @scala.inline
+  def onBeforeApply: onBeforeApply = "onBeforeApply".asInstanceOf[onBeforeApply]
+  
+  @scala.inline
+  def onBeforeAreaAdd: onBeforeAreaAdd = "onBeforeAreaAdd".asInstanceOf[onBeforeAreaAdd]
+  
+  @scala.inline
+  def onBeforeAreaRemove: onBeforeAreaRemove = "onBeforeAreaRemove".asInstanceOf[onBeforeAreaRemove]
+  
+  @scala.inline
+  def onBeforeBack: onBeforeBack = "onBeforeBack".asInstanceOf[onBeforeBack]
+  
+  @scala.inline
+  def onBeforeBlockSelect: onBeforeBlockSelect = "onBeforeBlockSelect".asInstanceOf[onBeforeBlockSelect]
+  
+  @scala.inline
+  def onBeforeCancel: onBeforeCancel = "onBeforeCancel".asInstanceOf[onBeforeCancel]
+  
+  @scala.inline
+  def onBeforeClose: onBeforeClose = "onBeforeClose".asInstanceOf[onBeforeClose]
+  
+  @scala.inline
+  def onBeforeColumnDrag: onBeforeColumnDrag = "onBeforeColumnDrag".asInstanceOf[onBeforeColumnDrag]
+  
+  @scala.inline
+  def onBeforeColumnDrop: onBeforeColumnDrop = "onBeforeColumnDrop".asInstanceOf[onBeforeColumnDrop]
+  
+  @scala.inline
+  def onBeforeColumnDropOrder: onBeforeColumnDropOrder = "onBeforeColumnDropOrder".asInstanceOf[onBeforeColumnDropOrder]
+  
+  @scala.inline
+  def onBeforeColumnHide: onBeforeColumnHide = "onBeforeColumnHide".asInstanceOf[onBeforeColumnHide]
+  
+  @scala.inline
+  def onBeforeColumnShow: onBeforeColumnShow = "onBeforeColumnShow".asInstanceOf[onBeforeColumnShow]
+  
+  @scala.inline
+  def onBeforeCommentShow: onBeforeCommentShow = "onBeforeCommentShow".asInstanceOf[onBeforeCommentShow]
+  
+  @scala.inline
+  def onBeforeContextMenu: onBeforeContextMenu = "onBeforeContextMenu".asInstanceOf[onBeforeContextMenu]
+  
+  @scala.inline
+  def onBeforeCopy: onBeforeCopy = "onBeforeCopy".asInstanceOf[onBeforeCopy]
+  
+  @scala.inline
+  def onBeforeCreateFolder: onBeforeCreateFolder = "onBeforeCreateFolder".asInstanceOf[onBeforeCreateFolder]
+  
+  @scala.inline
+  def onBeforeCursorChange: onBeforeCursorChange = "onBeforeCursorChange".asInstanceOf[onBeforeCursorChange]
+  
+  @scala.inline
+  def onBeforeDateSelect: onBeforeDateSelect = "onBeforeDateSelect".asInstanceOf[onBeforeDateSelect]
+  
+  @scala.inline
+  def onBeforeDelete: onBeforeDelete = "onBeforeDelete".asInstanceOf[onBeforeDelete]
+  
+  @scala.inline
+  def onBeforeDeleteFile: onBeforeDeleteFile = "onBeforeDeleteFile".asInstanceOf[onBeforeDeleteFile]
+  
+  @scala.inline
+  def onBeforeDrag: onBeforeDrag = "onBeforeDrag".asInstanceOf[onBeforeDrag]
+  
+  @scala.inline
+  def onBeforeDragIn: onBeforeDragIn = "onBeforeDragIn".asInstanceOf[onBeforeDragIn]
+  
+  @scala.inline
+  def onBeforeDrop: onBeforeDrop = "onBeforeDrop".asInstanceOf[onBeforeDrop]
+  
+  @scala.inline
+  def onBeforeDropOut: onBeforeDropOut = "onBeforeDropOut".asInstanceOf[onBeforeDropOut]
+  
+  @scala.inline
+  def onBeforeDynLoad: onBeforeDynLoad = "onBeforeDynLoad".asInstanceOf[onBeforeDynLoad]
+  
+  @scala.inline
+  def onBeforeDynParse: onBeforeDynParse = "onBeforeDynParse".asInstanceOf[onBeforeDynParse]
+  
+  @scala.inline
+  def onBeforeEditFile: onBeforeEditFile = "onBeforeEditFile".asInstanceOf[onBeforeEditFile]
+  
+  @scala.inline
+  def onBeforeEditStart: onBeforeEditStart = "onBeforeEditStart".asInstanceOf[onBeforeEditStart]
+  
+  @scala.inline
+  def onBeforeEditStop: onBeforeEditStop = "onBeforeEditStop".asInstanceOf[onBeforeEditStop]
+  
+  @scala.inline
+  def onBeforeEditorAction: onBeforeEditorAction = "onBeforeEditorAction".asInstanceOf[onBeforeEditorAction]
+  
+  @scala.inline
+  def onBeforeEditorShow: onBeforeEditorShow = "onBeforeEditorShow".asInstanceOf[onBeforeEditorShow]
+  
+  @scala.inline
+  def onBeforeFileAdd: onBeforeFileAdd = "onBeforeFileAdd".asInstanceOf[onBeforeFileAdd]
+  
+  @scala.inline
+  def onBeforeFileUpload: onBeforeFileUpload = "onBeforeFileUpload".asInstanceOf[onBeforeFileUpload]
+  
+  @scala.inline
+  def onBeforeFilter: onBeforeFilter = "onBeforeFilter".asInstanceOf[onBeforeFilter]
+  
+  @scala.inline
+  def onBeforeHideTree: onBeforeHideTree = "onBeforeHideTree".asInstanceOf[onBeforeHideTree]
+  
+  @scala.inline
+  def onBeforeLevelDown: onBeforeLevelDown = "onBeforeLevelDown".asInstanceOf[onBeforeLevelDown]
+  
+  @scala.inline
+  def onBeforeLevelUp: onBeforeLevelUp = "onBeforeLevelUp".asInstanceOf[onBeforeLevelUp]
+  
+  @scala.inline
+  def onBeforeLoad: onBeforeLoad = "onBeforeLoad".asInstanceOf[onBeforeLoad]
+  
+  @scala.inline
+  def onBeforeMarkCopy: onBeforeMarkCopy = "onBeforeMarkCopy".asInstanceOf[onBeforeMarkCopy]
+  
+  @scala.inline
+  def onBeforeMarkCut: onBeforeMarkCut = "onBeforeMarkCut".asInstanceOf[onBeforeMarkCut]
+  
+  @scala.inline
+  def onBeforeMenu: onBeforeMenu = "onBeforeMenu".asInstanceOf[onBeforeMenu]
+  
+  @scala.inline
+  def onBeforeMenuAction: onBeforeMenuAction = "onBeforeMenuAction".asInstanceOf[onBeforeMenuAction]
+  
+  @scala.inline
+  def onBeforeModeChange: onBeforeModeChange = "onBeforeModeChange".asInstanceOf[onBeforeModeChange]
+  
+  @scala.inline
+  def onBeforeMonthChange: onBeforeMonthChange = "onBeforeMonthChange".asInstanceOf[onBeforeMonthChange]
+  
+  @scala.inline
+  def onBeforeOpen: onBeforeOpen = "onBeforeOpen".asInstanceOf[onBeforeOpen]
+  
+  @scala.inline
+  def onBeforePageChange: onBeforePageChange = "onBeforePageChange".asInstanceOf[onBeforePageChange]
+  
+  @scala.inline
+  def onBeforePasteFile: onBeforePasteFile = "onBeforePasteFile".asInstanceOf[onBeforePasteFile]
+  
+  @scala.inline
+  def onBeforePortletMove: onBeforePortletMove = "onBeforePortletMove".asInstanceOf[onBeforePortletMove]
+  
+  @scala.inline
+  def onBeforeRender: onBeforeRender = "onBeforeRender".asInstanceOf[onBeforeRender]
+  
+  @scala.inline
+  def onBeforeRequest: onBeforeRequest = "onBeforeRequest".asInstanceOf[onBeforeRequest]
+  
+  @scala.inline
+  def onBeforeRun: onBeforeRun = "onBeforeRun".asInstanceOf[onBeforeRun]
+  
+  @scala.inline
+  def onBeforeSearch: onBeforeSearch = "onBeforeSearch".asInstanceOf[onBeforeSearch]
+  
+  @scala.inline
+  def onBeforeSearchRequest: onBeforeSearchRequest = "onBeforeSearchRequest".asInstanceOf[onBeforeSearchRequest]
+  
+  @scala.inline
+  def onBeforeSelect: onBeforeSelect = "onBeforeSelect".asInstanceOf[onBeforeSelect]
+  
+  @scala.inline
+  def onBeforeSheetShow: onBeforeSheetShow = "onBeforeSheetShow".asInstanceOf[onBeforeSheetShow]
+  
+  @scala.inline
+  def onBeforeShow: onBeforeShow = "onBeforeShow".asInstanceOf[onBeforeShow]
+  
+  @scala.inline
+  def onBeforeShowTree: onBeforeShowTree = "onBeforeShowTree".asInstanceOf[onBeforeShowTree]
+  
+  @scala.inline
+  def onBeforeSort: onBeforeSort = "onBeforeSort".asInstanceOf[onBeforeSort]
+  
+  @scala.inline
+  def onBeforeSpan: onBeforeSpan = "onBeforeSpan".asInstanceOf[onBeforeSpan]
+  
+  @scala.inline
+  def onBeforeSplit: onBeforeSplit = "onBeforeSplit".asInstanceOf[onBeforeSplit]
+  
+  @scala.inline
+  def onBeforeStart: onBeforeStart = "onBeforeStart".asInstanceOf[onBeforeStart]
+  
+  @scala.inline
+  def onBeforeStatusChange: onBeforeStatusChange = "onBeforeStatusChange".asInstanceOf[onBeforeStatusChange]
+  
+  @scala.inline
+  def onBeforeTabClick: onBeforeTabClick = "onBeforeTabClick".asInstanceOf[onBeforeTabClick]
+  
+  @scala.inline
+  def onBeforeTabClose: onBeforeTabClose = "onBeforeTabClose".asInstanceOf[onBeforeTabClose]
+  
+  @scala.inline
+  def onBeforeUnSelect: onBeforeUnSelect = "onBeforeUnSelect".asInstanceOf[onBeforeUnSelect]
+  
+  @scala.inline
+  def onBeforeUploadDialog: onBeforeUploadDialog = "onBeforeUploadDialog".asInstanceOf[onBeforeUploadDialog]
+  
+  @scala.inline
+  def onBeforeValidate: onBeforeValidate = "onBeforeValidate".asInstanceOf[onBeforeValidate]
+  
+  @scala.inline
+  def onBeforeValueChange: onBeforeValueChange = "onBeforeValueChange".asInstanceOf[onBeforeValueChange]
+  
+  @scala.inline
+  def onBeforeZoom: onBeforeZoom = "onBeforeZoom".asInstanceOf[onBeforeZoom]
+  
+  @scala.inline
+  def onBindRequest: onBindRequest = "onBindRequest".asInstanceOf[onBindRequest]
+  
+  @scala.inline
+  def onBindUpdate: onBindUpdate = "onBindUpdate".asInstanceOf[onBindUpdate]
+  
+  @scala.inline
+  def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
+  
+  @scala.inline
+  def onCancel: onCancel = "onCancel".asInstanceOf[onCancel]
+  
+  @scala.inline
+  def onCellChange: onCellChange = "onCellChange".asInstanceOf[onCellChange]
+  
+  @scala.inline
+  def onChange: onChange = "onChange".asInstanceOf[onChange]
+  
+  @scala.inline
+  def onCheck: onCheck = "onCheck".asInstanceOf[onCheck]
+  
+  @scala.inline
+  def onCollectValues: onCollectValues = "onCollectValues".asInstanceOf[onCollectValues]
+  
+  @scala.inline
+  def onColumnGroupCollapse: onColumnGroupCollapse = "onColumnGroupCollapse".asInstanceOf[onColumnGroupCollapse]
+  
+  @scala.inline
+  def onColumnResize: onColumnResize = "onColumnResize".asInstanceOf[onColumnResize]
+  
+  @scala.inline
+  def onCommentHide: onCommentHide = "onCommentHide".asInstanceOf[onCommentHide]
+  
+  @scala.inline
+  def onComponentInit: onComponentInit = "onComponentInit".asInstanceOf[onComponentInit]
+  
+  @scala.inline
+  def onCopyError: onCopyError = "onCopyError".asInstanceOf[onCopyError]
+  
+  @scala.inline
+  def onDataParse: onDataParse = "onDataParse".asInstanceOf[onDataParse]
+  
+  @scala.inline
+  def onDataRequest: onDataRequest = "onDataRequest".asInstanceOf[onDataRequest]
+  
+  @scala.inline
+  def onDataSerialize: onDataSerialize = "onDataSerialize".asInstanceOf[onDataSerialize]
+  
+  @scala.inline
+  def onDataUpdate: onDataUpdate = "onDataUpdate".asInstanceOf[onDataUpdate]
+  
+  @scala.inline
+  def onDateClear: onDateClear = "onDateClear".asInstanceOf[onDateClear]
+  
+  @scala.inline
+  def onDateSelect: onDateSelect = "onDateSelect".asInstanceOf[onDateSelect]
+  
+  @scala.inline
+  def onDestruct: onDestruct = "onDestruct".asInstanceOf[onDestruct]
+  
+  @scala.inline
+  def onDocumentReady: onDocumentReady = "onDocumentReady".asInstanceOf[onDocumentReady]
+  
+  @scala.inline
+  def onDragOut: onDragOut = "onDragOut".asInstanceOf[onDragOut]
+  
+  @scala.inline
+  def onDynLoadError: onDynLoadError = "onDynLoadError".asInstanceOf[onDynLoadError]
+  
+  @scala.inline
+  def onEditorChange: onEditorChange = "onEditorChange".asInstanceOf[onEditorChange]
+  
+  @scala.inline
+  def onEnd: onEnd = "onEnd".asInstanceOf[onEnd]
+  
+  @scala.inline
+  def onEnter: onEnter = "onEnter".asInstanceOf[onEnter]
+  
+  @scala.inline
+  def onErrorResponse: onErrorResponse = "onErrorResponse".asInstanceOf[onErrorResponse]
+  
+  @scala.inline
+  def onFileUpload: onFileUpload = "onFileUpload".asInstanceOf[onFileUpload]
+  
+  @scala.inline
+  def onFileUploadError: onFileUploadError = "onFileUploadError".asInstanceOf[onFileUploadError]
+  
+  @scala.inline
+  def onFilterChange: onFilterChange = "onFilterChange".asInstanceOf[onFilterChange]
+  
+  @scala.inline
+  def onFilterCreate: onFilterCreate = "onFilterCreate".asInstanceOf[onFilterCreate]
+  
+  @scala.inline
+  def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
+  
+  @scala.inline
+  def onFolderSelect: onFolderSelect = "onFolderSelect".asInstanceOf[onFolderSelect]
+  
+  @scala.inline
+  def onHeaderClick: onHeaderClick = "onHeaderClick".asInstanceOf[onHeaderClick]
+  
+  @scala.inline
+  def onHeaderInit: onHeaderInit = "onHeaderInit".asInstanceOf[onHeaderInit]
+  
+  @scala.inline
+  def onHeatMapRender: onHeatMapRender = "onHeatMapRender".asInstanceOf[onHeatMapRender]
+  
+  @scala.inline
+  def onHide: onHide = "onHide".asInstanceOf[onHide]
+  
+  @scala.inline
+  def onHideSearchResults: onHideSearchResults = "onHideSearchResults".asInstanceOf[onHideSearchResults]
+  
+  @scala.inline
+  def onHistoryChange: onHistoryChange = "onHistoryChange".asInstanceOf[onHistoryChange]
+  
+  @scala.inline
+  def onItemCheck: onItemCheck = "onItemCheck".asInstanceOf[onItemCheck]
+  
+  @scala.inline
+  def onItemClick: onItemClick = "onItemClick".asInstanceOf[onItemClick]
+  
+  @scala.inline
+  def onItemDblClick: onItemDblClick = "onItemDblClick".asInstanceOf[onItemDblClick]
+  
+  @scala.inline
+  def onItemRename: onItemRename = "onItemRename".asInstanceOf[onItemRename]
+  
+  @scala.inline
+  def onItemRender: onItemRender = "onItemRender".asInstanceOf[onItemRender]
+  
+  @scala.inline
+  def onItemSelect: onItemSelect = "onItemSelect".asInstanceOf[onItemSelect]
+  
+  @scala.inline
+  def onKeyPress: onKeyPress = "onKeyPress".asInstanceOf[onKeyPress]
+  
+  @scala.inline
+  def onKeySelect: onKeySelect = "onKeySelect".asInstanceOf[onKeySelect]
+  
+  @scala.inline
+  def onLegendClick: onLegendClick = "onLegendClick".asInstanceOf[onLegendClick]
+  
+  @scala.inline
+  def onListAfterContextMenu: onListAfterContextMenu = "onListAfterContextMenu".asInstanceOf[onListAfterContextMenu]
+  
+  @scala.inline
+  def onListAfterDrop: onListAfterDrop = "onListAfterDrop".asInstanceOf[onListAfterDrop]
+  
+  @scala.inline
+  def onListAfterSelect: onListAfterSelect = "onListAfterSelect".asInstanceOf[onListAfterSelect]
+  
+  @scala.inline
+  def onListBeforeContextMenu: onListBeforeContextMenu = "onListBeforeContextMenu".asInstanceOf[onListBeforeContextMenu]
+  
+  @scala.inline
+  def onListBeforeDrag: onListBeforeDrag = "onListBeforeDrag".asInstanceOf[onListBeforeDrag]
+  
+  @scala.inline
+  def onListBeforeDragIn: onListBeforeDragIn = "onListBeforeDragIn".asInstanceOf[onListBeforeDragIn]
+  
+  @scala.inline
+  def onListBeforeDrop: onListBeforeDrop = "onListBeforeDrop".asInstanceOf[onListBeforeDrop]
+  
+  @scala.inline
+  def onListBeforeSelect: onListBeforeSelect = "onListBeforeSelect".asInstanceOf[onListBeforeSelect]
+  
+  @scala.inline
+  def onListIconClick: onListIconClick = "onListIconClick".asInstanceOf[onListIconClick]
+  
+  @scala.inline
+  def onListItemClick: onListItemClick = "onListItemClick".asInstanceOf[onListItemClick]
+  
+  @scala.inline
+  def onListItemDblClick: onListItemDblClick = "onListItemDblClick".asInstanceOf[onListItemDblClick]
+  
+  @scala.inline
+  def onLiveEdit: onLiveEdit = "onLiveEdit".asInstanceOf[onLiveEdit]
+  
+  @scala.inline
+  def onLoadError: onLoadError = "onLoadError".asInstanceOf[onLoadError]
+  
+  @scala.inline
+  def onLongTouch: onLongTouch = "onLongTouch".asInstanceOf[onLongTouch]
+  
+  @scala.inline
+  def onMapError: onMapError = "onMapError".asInstanceOf[onMapError]
+  
+  @scala.inline
+  def onMapReady: onMapReady = "onMapReady".asInstanceOf[onMapReady]
+  
+  @scala.inline
+  def onMathRefresh: onMathRefresh = "onMathRefresh".asInstanceOf[onMathRefresh]
+  
+  @scala.inline
+  def onMenuItemClick: onMenuItemClick = "onMenuItemClick".asInstanceOf[onMenuItemClick]
+  
+  @scala.inline
+  def onMouseMove: onMouseMove = "onMouseMove".asInstanceOf[onMouseMove]
+  
+  @scala.inline
+  def onMouseMoving: onMouseMoving = "onMouseMoving".asInstanceOf[onMouseMoving]
+  
+  @scala.inline
+  def onMouseOut: onMouseOut = "onMouseOut".asInstanceOf[onMouseOut]
+  
+  @scala.inline
+  def onMoveError: onMoveError = "onMoveError".asInstanceOf[onMoveError]
+  
+  @scala.inline
+  def onNext: onNext = "onNext".asInstanceOf[onNext]
+  
+  @scala.inline
+  def onOptionAdd: onOptionAdd = "onOptionAdd".asInstanceOf[onOptionAdd]
+  
+  @scala.inline
+  def onOptionRemove: onOptionRemove = "onOptionRemove".asInstanceOf[onOptionRemove]
+  
+  @scala.inline
+  def onPageRender: onPageRender = "onPageRender".asInstanceOf[onPageRender]
+  
+  @scala.inline
+  def onPartialRender: onPartialRender = "onPartialRender".asInstanceOf[onPartialRender]
+  
+  @scala.inline
+  def onPaste: onPaste = "onPaste".asInstanceOf[onPaste]
+  
+  @scala.inline
+  def onPathComplete: onPathComplete = "onPathComplete".asInstanceOf[onPathComplete]
+  
+  @scala.inline
+  def onPathLevel: onPathLevel = "onPathLevel".asInstanceOf[onPathLevel]
+  
+  @scala.inline
+  def onPopup: onPopup = "onPopup".asInstanceOf[onPopup]
+  
+  @scala.inline
+  def onPrevious: onPrevious = "onPrevious".asInstanceOf[onPrevious]
+  
+  @scala.inline
+  def onRegionClick: onRegionClick = "onRegionClick".asInstanceOf[onRegionClick]
+  
+  @scala.inline
+  def onReset: onReset = "onReset".asInstanceOf[onReset]
+  
+  @scala.inline
+  def onResize: onResize = "onResize".asInstanceOf[onResize]
+  
+  @scala.inline
+  def onResizeEnd: onResizeEnd = "onResizeEnd".asInstanceOf[onResizeEnd]
+  
+  @scala.inline
+  def onRowResize: onRowResize = "onRowResize".asInstanceOf[onRowResize]
+  
+  @scala.inline
+  def onScaleChange: onScaleChange = "onScaleChange".asInstanceOf[onScaleChange]
+  
+  @scala.inline
+  def onScroll: onScroll = "onScroll".asInstanceOf[onScroll]
+  
+  @scala.inline
+  def onScrollX: onScrollX = "onScrollX".asInstanceOf[onScrollX]
+  
+  @scala.inline
+  def onScrollY: onScrollY = "onScrollY".asInstanceOf[onScrollY]
+  
+  @scala.inline
+  def onSearchIconClick: onSearchIconClick = "onSearchIconClick".asInstanceOf[onSearchIconClick]
+  
+  @scala.inline
+  def onSectionAdd: onSectionAdd = "onSectionAdd".asInstanceOf[onSectionAdd]
+  
+  @scala.inline
+  def onSectionRemove: onSectionRemove = "onSectionRemove".asInstanceOf[onSectionRemove]
+  
+  @scala.inline
+  def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
+  
+  @scala.inline
+  def onSelectChange: onSelectChange = "onSelectChange".asInstanceOf[onSelectChange]
+  
+  @scala.inline
+  def onSheetAdd: onSheetAdd = "onSheetAdd".asInstanceOf[onSheetAdd]
+  
+  @scala.inline
+  def onSheetRemove: onSheetRemove = "onSheetRemove".asInstanceOf[onSheetRemove]
+  
+  @scala.inline
+  def onSheetRename: onSheetRename = "onSheetRename".asInstanceOf[onSheetRename]
+  
+  @scala.inline
+  def onShow: onShow = "onShow".asInstanceOf[onShow]
+  
+  @scala.inline
+  def onShowSearchResults: onShowSearchResults = "onShowSearchResults".asInstanceOf[onShowSearchResults]
+  
+  @scala.inline
+  def onSkip: onSkip = "onSkip".asInstanceOf[onSkip]
+  
+  @scala.inline
+  def onSliderDrag: onSliderDrag = "onSliderDrag".asInstanceOf[onSliderDrag]
+  
+  @scala.inline
+  def onStructureLoad: onStructureLoad = "onStructureLoad".asInstanceOf[onStructureLoad]
+  
+  @scala.inline
+  def onStructureUpdate: onStructureUpdate = "onStructureUpdate".asInstanceOf[onStructureUpdate]
+  
+  @scala.inline
+  def onStyleSet: onStyleSet = "onStyleSet".asInstanceOf[onStyleSet]
+  
+  @scala.inline
+  def onSubViewClose: onSubViewClose = "onSubViewClose".asInstanceOf[onSubViewClose]
+  
+  @scala.inline
+  def onSubViewCreate: onSubViewCreate = "onSubViewCreate".asInstanceOf[onSubViewCreate]
+  
+  @scala.inline
+  def onSubViewOpen: onSubViewOpen = "onSubViewOpen".asInstanceOf[onSubViewOpen]
+  
+  @scala.inline
+  def onSubViewRender: onSubViewRender = "onSubViewRender".asInstanceOf[onSubViewRender]
+  
+  @scala.inline
+  def onSubmit: onSubmit = "onSubmit".asInstanceOf[onSubmit]
+  
+  @scala.inline
+  def onSuccessResponse: onSuccessResponse = "onSuccessResponse".asInstanceOf[onSuccessResponse]
+  
+  @scala.inline
+  def onSwipeX: onSwipeX = "onSwipeX".asInstanceOf[onSwipeX]
+  
+  @scala.inline
+  def onSwipeY: onSwipeY = "onSwipeY".asInstanceOf[onSwipeY]
+  
+  @scala.inline
+  def onTabFocus: onTabFocus = "onTabFocus".asInstanceOf[onTabFocus]
+  
+  @scala.inline
+  def onTimedKeyPress: onTimedKeyPress = "onTimedKeyPress".asInstanceOf[onTimedKeyPress]
+  
+  @scala.inline
+  def onTodaySet: onTodaySet = "onTodaySet".asInstanceOf[onTodaySet]
+  
+  @scala.inline
+  def onTouchEnd: onTouchEnd = "onTouchEnd".asInstanceOf[onTouchEnd]
+  
+  @scala.inline
+  def onTouchMove: onTouchMove = "onTouchMove".asInstanceOf[onTouchMove]
+  
+  @scala.inline
+  def onTouchStart: onTouchStart = "onTouchStart".asInstanceOf[onTouchStart]
+  
+  @scala.inline
+  def onUploadComplete: onUploadComplete = "onUploadComplete".asInstanceOf[onUploadComplete]
+  
+  @scala.inline
+  def onUserMentioned: onUserMentioned = "onUserMentioned".asInstanceOf[onUserMentioned]
+  
+  @scala.inline
+  def onValidationError: onValidationError = "onValidationError".asInstanceOf[onValidationError]
+  
+  @scala.inline
+  def onValidationSuccess: onValidationSuccess = "onValidationSuccess".asInstanceOf[onValidationSuccess]
+  
+  @scala.inline
+  def onValueSuggest: onValueSuggest = "onValueSuggest".asInstanceOf[onValueSuggest]
+  
+  @scala.inline
+  def onValues: onValues = "onValues".asInstanceOf[onValues]
+  
+  @scala.inline
+  def onViewChange: onViewChange = "onViewChange".asInstanceOf[onViewChange]
+  
+  @scala.inline
+  def onViewInit: onViewInit = "onViewInit".asInstanceOf[onViewInit]
+  
+  @scala.inline
+  def onViewMove: onViewMove = "onViewMove".asInstanceOf[onViewMove]
+  
+  @scala.inline
+  def onViewMoveEnd: onViewMoveEnd = "onViewMoveEnd".asInstanceOf[onViewMoveEnd]
+  
+  @scala.inline
+  def onViewResize: onViewResize = "onViewResize".asInstanceOf[onViewResize]
+  
+  @scala.inline
+  def onViewShow: onViewShow = "onViewShow".asInstanceOf[onViewShow]
+  
+  @scala.inline
+  def onWebWorkerEnd: onWebWorkerEnd = "onWebWorkerEnd".asInstanceOf[onWebWorkerEnd]
+  
+  @scala.inline
+  def onWebWorkerStart: onWebWorkerStart = "onWebWorkerStart".asInstanceOf[onWebWorkerStart]
+  
   @js.native
   sealed trait onAfterAdd
     extends DataCollectionEventName
@@ -6057,538 +6856,4 @@ object webixStrings {
   sealed trait onWebWorkerStart
     extends pivotEventName
        with typings.webix.webix.ui.pivotEventName
-  
-  @scala.inline
-  def onAfterAdd: onAfterAdd = "onAfterAdd".asInstanceOf[onAfterAdd]
-  @scala.inline
-  def onAfterAreaAdd: onAfterAreaAdd = "onAfterAreaAdd".asInstanceOf[onAfterAreaAdd]
-  @scala.inline
-  def onAfterAreaRemove: onAfterAreaRemove = "onAfterAreaRemove".asInstanceOf[onAfterAreaRemove]
-  @scala.inline
-  def onAfterBack: onAfterBack = "onAfterBack".asInstanceOf[onAfterBack]
-  @scala.inline
-  def onAfterBlockSelect: onAfterBlockSelect = "onAfterBlockSelect".asInstanceOf[onAfterBlockSelect]
-  @scala.inline
-  def onAfterClose: onAfterClose = "onAfterClose".asInstanceOf[onAfterClose]
-  @scala.inline
-  def onAfterCollapse: onAfterCollapse = "onAfterCollapse".asInstanceOf[onAfterCollapse]
-  @scala.inline
-  def onAfterColumnDrop: onAfterColumnDrop = "onAfterColumnDrop".asInstanceOf[onAfterColumnDrop]
-  @scala.inline
-  def onAfterColumnDropOrder: onAfterColumnDropOrder = "onAfterColumnDropOrder".asInstanceOf[onAfterColumnDropOrder]
-  @scala.inline
-  def onAfterColumnHide: onAfterColumnHide = "onAfterColumnHide".asInstanceOf[onAfterColumnHide]
-  @scala.inline
-  def onAfterColumnShow: onAfterColumnShow = "onAfterColumnShow".asInstanceOf[onAfterColumnShow]
-  @scala.inline
-  def onAfterConditionSet: onAfterConditionSet = "onAfterConditionSet".asInstanceOf[onAfterConditionSet]
-  @scala.inline
-  def onAfterContextMenu: onAfterContextMenu = "onAfterContextMenu".asInstanceOf[onAfterContextMenu]
-  @scala.inline
-  def onAfterCopy: onAfterCopy = "onAfterCopy".asInstanceOf[onAfterCopy]
-  @scala.inline
-  def onAfterCreateFolder: onAfterCreateFolder = "onAfterCreateFolder".asInstanceOf[onAfterCreateFolder]
-  @scala.inline
-  def onAfterCursorChange: onAfterCursorChange = "onAfterCursorChange".asInstanceOf[onAfterCursorChange]
-  @scala.inline
-  def onAfterDateSelect: onAfterDateSelect = "onAfterDateSelect".asInstanceOf[onAfterDateSelect]
-  @scala.inline
-  def onAfterDelete: onAfterDelete = "onAfterDelete".asInstanceOf[onAfterDelete]
-  @scala.inline
-  def onAfterDeleteFile: onAfterDeleteFile = "onAfterDeleteFile".asInstanceOf[onAfterDeleteFile]
-  @scala.inline
-  def onAfterDrop: onAfterDrop = "onAfterDrop".asInstanceOf[onAfterDrop]
-  @scala.inline
-  def onAfterDynParse: onAfterDynParse = "onAfterDynParse".asInstanceOf[onAfterDynParse]
-  @scala.inline
-  def onAfterEditFile: onAfterEditFile = "onAfterEditFile".asInstanceOf[onAfterEditFile]
-  @scala.inline
-  def onAfterEditStart: onAfterEditStart = "onAfterEditStart".asInstanceOf[onAfterEditStart]
-  @scala.inline
-  def onAfterEditStop: onAfterEditStop = "onAfterEditStop".asInstanceOf[onAfterEditStop]
-  @scala.inline
-  def onAfterEditorShow: onAfterEditorShow = "onAfterEditorShow".asInstanceOf[onAfterEditorShow]
-  @scala.inline
-  def onAfterExpand: onAfterExpand = "onAfterExpand".asInstanceOf[onAfterExpand]
-  @scala.inline
-  def onAfterFileAdd: onAfterFileAdd = "onAfterFileAdd".asInstanceOf[onAfterFileAdd]
-  @scala.inline
-  def onAfterFileUpload: onAfterFileUpload = "onAfterFileUpload".asInstanceOf[onAfterFileUpload]
-  @scala.inline
-  def onAfterFilter: onAfterFilter = "onAfterFilter".asInstanceOf[onAfterFilter]
-  @scala.inline
-  def onAfterHideTree: onAfterHideTree = "onAfterHideTree".asInstanceOf[onAfterHideTree]
-  @scala.inline
-  def onAfterLevelDown: onAfterLevelDown = "onAfterLevelDown".asInstanceOf[onAfterLevelDown]
-  @scala.inline
-  def onAfterLevelUp: onAfterLevelUp = "onAfterLevelUp".asInstanceOf[onAfterLevelUp]
-  @scala.inline
-  def onAfterLoad: onAfterLoad = "onAfterLoad".asInstanceOf[onAfterLoad]
-  @scala.inline
-  def onAfterMarkCopy: onAfterMarkCopy = "onAfterMarkCopy".asInstanceOf[onAfterMarkCopy]
-  @scala.inline
-  def onAfterMarkCut: onAfterMarkCut = "onAfterMarkCut".asInstanceOf[onAfterMarkCut]
-  @scala.inline
-  def onAfterMenu: onAfterMenu = "onAfterMenu".asInstanceOf[onAfterMenu]
-  @scala.inline
-  def onAfterModeChange: onAfterModeChange = "onAfterModeChange".asInstanceOf[onAfterModeChange]
-  @scala.inline
-  def onAfterMonthChange: onAfterMonthChange = "onAfterMonthChange".asInstanceOf[onAfterMonthChange]
-  @scala.inline
-  def onAfterOpen: onAfterOpen = "onAfterOpen".asInstanceOf[onAfterOpen]
-  @scala.inline
-  def onAfterPageChange: onAfterPageChange = "onAfterPageChange".asInstanceOf[onAfterPageChange]
-  @scala.inline
-  def onAfterPasteFile: onAfterPasteFile = "onAfterPasteFile".asInstanceOf[onAfterPasteFile]
-  @scala.inline
-  def onAfterPathClick: onAfterPathClick = "onAfterPathClick".asInstanceOf[onAfterPathClick]
-  @scala.inline
-  def onAfterPortletMove: onAfterPortletMove = "onAfterPortletMove".asInstanceOf[onAfterPortletMove]
-  @scala.inline
-  def onAfterRangeChange: onAfterRangeChange = "onAfterRangeChange".asInstanceOf[onAfterRangeChange]
-  @scala.inline
-  def onAfterRangeSet: onAfterRangeSet = "onAfterRangeSet".asInstanceOf[onAfterRangeSet]
-  @scala.inline
-  def onAfterRender: onAfterRender = "onAfterRender".asInstanceOf[onAfterRender]
-  @scala.inline
-  def onAfterRun: onAfterRun = "onAfterRun".asInstanceOf[onAfterRun]
-  @scala.inline
-  def onAfterScroll: onAfterScroll = "onAfterScroll".asInstanceOf[onAfterScroll]
-  @scala.inline
-  def onAfterSearch: onAfterSearch = "onAfterSearch".asInstanceOf[onAfterSearch]
-  @scala.inline
-  def onAfterSelect: onAfterSelect = "onAfterSelect".asInstanceOf[onAfterSelect]
-  @scala.inline
-  def onAfterSheetShow: onAfterSheetShow = "onAfterSheetShow".asInstanceOf[onAfterSheetShow]
-  @scala.inline
-  def onAfterShowTree: onAfterShowTree = "onAfterShowTree".asInstanceOf[onAfterShowTree]
-  @scala.inline
-  def onAfterSort: onAfterSort = "onAfterSort".asInstanceOf[onAfterSort]
-  @scala.inline
-  def onAfterSpan: onAfterSpan = "onAfterSpan".asInstanceOf[onAfterSpan]
-  @scala.inline
-  def onAfterSplit: onAfterSplit = "onAfterSplit".asInstanceOf[onAfterSplit]
-  @scala.inline
-  def onAfterStart: onAfterStart = "onAfterStart".asInstanceOf[onAfterStart]
-  @scala.inline
-  def onAfterStatusChange: onAfterStatusChange = "onAfterStatusChange".asInstanceOf[onAfterStatusChange]
-  @scala.inline
-  def onAfterTabClick: onAfterTabClick = "onAfterTabClick".asInstanceOf[onAfterTabClick]
-  @scala.inline
-  def onAfterUnSelect: onAfterUnSelect = "onAfterUnSelect".asInstanceOf[onAfterUnSelect]
-  @scala.inline
-  def onAfterUploadDialog: onAfterUploadDialog = "onAfterUploadDialog".asInstanceOf[onAfterUploadDialog]
-  @scala.inline
-  def onAfterValidation: onAfterValidation = "onAfterValidation".asInstanceOf[onAfterValidation]
-  @scala.inline
-  def onAfterZoom: onAfterZoom = "onAfterZoom".asInstanceOf[onAfterZoom]
-  @scala.inline
-  def onAreaDrag: onAreaDrag = "onAreaDrag".asInstanceOf[onAreaDrag]
-  @scala.inline
-  def onAvatarClick: onAvatarClick = "onAvatarClick".asInstanceOf[onAvatarClick]
-  @scala.inline
-  def onBeforeAdd: onBeforeAdd = "onBeforeAdd".asInstanceOf[onBeforeAdd]
-  @scala.inline
-  def onBeforeApply: onBeforeApply = "onBeforeApply".asInstanceOf[onBeforeApply]
-  @scala.inline
-  def onBeforeAreaAdd: onBeforeAreaAdd = "onBeforeAreaAdd".asInstanceOf[onBeforeAreaAdd]
-  @scala.inline
-  def onBeforeAreaRemove: onBeforeAreaRemove = "onBeforeAreaRemove".asInstanceOf[onBeforeAreaRemove]
-  @scala.inline
-  def onBeforeBack: onBeforeBack = "onBeforeBack".asInstanceOf[onBeforeBack]
-  @scala.inline
-  def onBeforeBlockSelect: onBeforeBlockSelect = "onBeforeBlockSelect".asInstanceOf[onBeforeBlockSelect]
-  @scala.inline
-  def onBeforeCancel: onBeforeCancel = "onBeforeCancel".asInstanceOf[onBeforeCancel]
-  @scala.inline
-  def onBeforeClose: onBeforeClose = "onBeforeClose".asInstanceOf[onBeforeClose]
-  @scala.inline
-  def onBeforeColumnDrag: onBeforeColumnDrag = "onBeforeColumnDrag".asInstanceOf[onBeforeColumnDrag]
-  @scala.inline
-  def onBeforeColumnDrop: onBeforeColumnDrop = "onBeforeColumnDrop".asInstanceOf[onBeforeColumnDrop]
-  @scala.inline
-  def onBeforeColumnDropOrder: onBeforeColumnDropOrder = "onBeforeColumnDropOrder".asInstanceOf[onBeforeColumnDropOrder]
-  @scala.inline
-  def onBeforeColumnHide: onBeforeColumnHide = "onBeforeColumnHide".asInstanceOf[onBeforeColumnHide]
-  @scala.inline
-  def onBeforeColumnShow: onBeforeColumnShow = "onBeforeColumnShow".asInstanceOf[onBeforeColumnShow]
-  @scala.inline
-  def onBeforeCommentShow: onBeforeCommentShow = "onBeforeCommentShow".asInstanceOf[onBeforeCommentShow]
-  @scala.inline
-  def onBeforeContextMenu: onBeforeContextMenu = "onBeforeContextMenu".asInstanceOf[onBeforeContextMenu]
-  @scala.inline
-  def onBeforeCopy: onBeforeCopy = "onBeforeCopy".asInstanceOf[onBeforeCopy]
-  @scala.inline
-  def onBeforeCreateFolder: onBeforeCreateFolder = "onBeforeCreateFolder".asInstanceOf[onBeforeCreateFolder]
-  @scala.inline
-  def onBeforeCursorChange: onBeforeCursorChange = "onBeforeCursorChange".asInstanceOf[onBeforeCursorChange]
-  @scala.inline
-  def onBeforeDateSelect: onBeforeDateSelect = "onBeforeDateSelect".asInstanceOf[onBeforeDateSelect]
-  @scala.inline
-  def onBeforeDelete: onBeforeDelete = "onBeforeDelete".asInstanceOf[onBeforeDelete]
-  @scala.inline
-  def onBeforeDeleteFile: onBeforeDeleteFile = "onBeforeDeleteFile".asInstanceOf[onBeforeDeleteFile]
-  @scala.inline
-  def onBeforeDrag: onBeforeDrag = "onBeforeDrag".asInstanceOf[onBeforeDrag]
-  @scala.inline
-  def onBeforeDragIn: onBeforeDragIn = "onBeforeDragIn".asInstanceOf[onBeforeDragIn]
-  @scala.inline
-  def onBeforeDrop: onBeforeDrop = "onBeforeDrop".asInstanceOf[onBeforeDrop]
-  @scala.inline
-  def onBeforeDropOut: onBeforeDropOut = "onBeforeDropOut".asInstanceOf[onBeforeDropOut]
-  @scala.inline
-  def onBeforeDynLoad: onBeforeDynLoad = "onBeforeDynLoad".asInstanceOf[onBeforeDynLoad]
-  @scala.inline
-  def onBeforeDynParse: onBeforeDynParse = "onBeforeDynParse".asInstanceOf[onBeforeDynParse]
-  @scala.inline
-  def onBeforeEditFile: onBeforeEditFile = "onBeforeEditFile".asInstanceOf[onBeforeEditFile]
-  @scala.inline
-  def onBeforeEditStart: onBeforeEditStart = "onBeforeEditStart".asInstanceOf[onBeforeEditStart]
-  @scala.inline
-  def onBeforeEditStop: onBeforeEditStop = "onBeforeEditStop".asInstanceOf[onBeforeEditStop]
-  @scala.inline
-  def onBeforeEditorAction: onBeforeEditorAction = "onBeforeEditorAction".asInstanceOf[onBeforeEditorAction]
-  @scala.inline
-  def onBeforeEditorShow: onBeforeEditorShow = "onBeforeEditorShow".asInstanceOf[onBeforeEditorShow]
-  @scala.inline
-  def onBeforeFileAdd: onBeforeFileAdd = "onBeforeFileAdd".asInstanceOf[onBeforeFileAdd]
-  @scala.inline
-  def onBeforeFileUpload: onBeforeFileUpload = "onBeforeFileUpload".asInstanceOf[onBeforeFileUpload]
-  @scala.inline
-  def onBeforeFilter: onBeforeFilter = "onBeforeFilter".asInstanceOf[onBeforeFilter]
-  @scala.inline
-  def onBeforeHideTree: onBeforeHideTree = "onBeforeHideTree".asInstanceOf[onBeforeHideTree]
-  @scala.inline
-  def onBeforeLevelDown: onBeforeLevelDown = "onBeforeLevelDown".asInstanceOf[onBeforeLevelDown]
-  @scala.inline
-  def onBeforeLevelUp: onBeforeLevelUp = "onBeforeLevelUp".asInstanceOf[onBeforeLevelUp]
-  @scala.inline
-  def onBeforeLoad: onBeforeLoad = "onBeforeLoad".asInstanceOf[onBeforeLoad]
-  @scala.inline
-  def onBeforeMarkCopy: onBeforeMarkCopy = "onBeforeMarkCopy".asInstanceOf[onBeforeMarkCopy]
-  @scala.inline
-  def onBeforeMarkCut: onBeforeMarkCut = "onBeforeMarkCut".asInstanceOf[onBeforeMarkCut]
-  @scala.inline
-  def onBeforeMenu: onBeforeMenu = "onBeforeMenu".asInstanceOf[onBeforeMenu]
-  @scala.inline
-  def onBeforeMenuAction: onBeforeMenuAction = "onBeforeMenuAction".asInstanceOf[onBeforeMenuAction]
-  @scala.inline
-  def onBeforeModeChange: onBeforeModeChange = "onBeforeModeChange".asInstanceOf[onBeforeModeChange]
-  @scala.inline
-  def onBeforeMonthChange: onBeforeMonthChange = "onBeforeMonthChange".asInstanceOf[onBeforeMonthChange]
-  @scala.inline
-  def onBeforeOpen: onBeforeOpen = "onBeforeOpen".asInstanceOf[onBeforeOpen]
-  @scala.inline
-  def onBeforePageChange: onBeforePageChange = "onBeforePageChange".asInstanceOf[onBeforePageChange]
-  @scala.inline
-  def onBeforePasteFile: onBeforePasteFile = "onBeforePasteFile".asInstanceOf[onBeforePasteFile]
-  @scala.inline
-  def onBeforePortletMove: onBeforePortletMove = "onBeforePortletMove".asInstanceOf[onBeforePortletMove]
-  @scala.inline
-  def onBeforeRender: onBeforeRender = "onBeforeRender".asInstanceOf[onBeforeRender]
-  @scala.inline
-  def onBeforeRequest: onBeforeRequest = "onBeforeRequest".asInstanceOf[onBeforeRequest]
-  @scala.inline
-  def onBeforeRun: onBeforeRun = "onBeforeRun".asInstanceOf[onBeforeRun]
-  @scala.inline
-  def onBeforeSearch: onBeforeSearch = "onBeforeSearch".asInstanceOf[onBeforeSearch]
-  @scala.inline
-  def onBeforeSearchRequest: onBeforeSearchRequest = "onBeforeSearchRequest".asInstanceOf[onBeforeSearchRequest]
-  @scala.inline
-  def onBeforeSelect: onBeforeSelect = "onBeforeSelect".asInstanceOf[onBeforeSelect]
-  @scala.inline
-  def onBeforeSheetShow: onBeforeSheetShow = "onBeforeSheetShow".asInstanceOf[onBeforeSheetShow]
-  @scala.inline
-  def onBeforeShow: onBeforeShow = "onBeforeShow".asInstanceOf[onBeforeShow]
-  @scala.inline
-  def onBeforeShowTree: onBeforeShowTree = "onBeforeShowTree".asInstanceOf[onBeforeShowTree]
-  @scala.inline
-  def onBeforeSort: onBeforeSort = "onBeforeSort".asInstanceOf[onBeforeSort]
-  @scala.inline
-  def onBeforeSpan: onBeforeSpan = "onBeforeSpan".asInstanceOf[onBeforeSpan]
-  @scala.inline
-  def onBeforeSplit: onBeforeSplit = "onBeforeSplit".asInstanceOf[onBeforeSplit]
-  @scala.inline
-  def onBeforeStart: onBeforeStart = "onBeforeStart".asInstanceOf[onBeforeStart]
-  @scala.inline
-  def onBeforeStatusChange: onBeforeStatusChange = "onBeforeStatusChange".asInstanceOf[onBeforeStatusChange]
-  @scala.inline
-  def onBeforeTabClick: onBeforeTabClick = "onBeforeTabClick".asInstanceOf[onBeforeTabClick]
-  @scala.inline
-  def onBeforeTabClose: onBeforeTabClose = "onBeforeTabClose".asInstanceOf[onBeforeTabClose]
-  @scala.inline
-  def onBeforeUnSelect: onBeforeUnSelect = "onBeforeUnSelect".asInstanceOf[onBeforeUnSelect]
-  @scala.inline
-  def onBeforeUploadDialog: onBeforeUploadDialog = "onBeforeUploadDialog".asInstanceOf[onBeforeUploadDialog]
-  @scala.inline
-  def onBeforeValidate: onBeforeValidate = "onBeforeValidate".asInstanceOf[onBeforeValidate]
-  @scala.inline
-  def onBeforeValueChange: onBeforeValueChange = "onBeforeValueChange".asInstanceOf[onBeforeValueChange]
-  @scala.inline
-  def onBeforeZoom: onBeforeZoom = "onBeforeZoom".asInstanceOf[onBeforeZoom]
-  @scala.inline
-  def onBindRequest: onBindRequest = "onBindRequest".asInstanceOf[onBindRequest]
-  @scala.inline
-  def onBindUpdate: onBindUpdate = "onBindUpdate".asInstanceOf[onBindUpdate]
-  @scala.inline
-  def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
-  @scala.inline
-  def onCancel: onCancel = "onCancel".asInstanceOf[onCancel]
-  @scala.inline
-  def onCellChange: onCellChange = "onCellChange".asInstanceOf[onCellChange]
-  @scala.inline
-  def onChange: onChange = "onChange".asInstanceOf[onChange]
-  @scala.inline
-  def onCheck: onCheck = "onCheck".asInstanceOf[onCheck]
-  @scala.inline
-  def onCollectValues: onCollectValues = "onCollectValues".asInstanceOf[onCollectValues]
-  @scala.inline
-  def onColumnGroupCollapse: onColumnGroupCollapse = "onColumnGroupCollapse".asInstanceOf[onColumnGroupCollapse]
-  @scala.inline
-  def onColumnResize: onColumnResize = "onColumnResize".asInstanceOf[onColumnResize]
-  @scala.inline
-  def onCommentHide: onCommentHide = "onCommentHide".asInstanceOf[onCommentHide]
-  @scala.inline
-  def onComponentInit: onComponentInit = "onComponentInit".asInstanceOf[onComponentInit]
-  @scala.inline
-  def onCopyError: onCopyError = "onCopyError".asInstanceOf[onCopyError]
-  @scala.inline
-  def onDataParse: onDataParse = "onDataParse".asInstanceOf[onDataParse]
-  @scala.inline
-  def onDataRequest: onDataRequest = "onDataRequest".asInstanceOf[onDataRequest]
-  @scala.inline
-  def onDataSerialize: onDataSerialize = "onDataSerialize".asInstanceOf[onDataSerialize]
-  @scala.inline
-  def onDataUpdate: onDataUpdate = "onDataUpdate".asInstanceOf[onDataUpdate]
-  @scala.inline
-  def onDateClear: onDateClear = "onDateClear".asInstanceOf[onDateClear]
-  @scala.inline
-  def onDateSelect: onDateSelect = "onDateSelect".asInstanceOf[onDateSelect]
-  @scala.inline
-  def onDestruct: onDestruct = "onDestruct".asInstanceOf[onDestruct]
-  @scala.inline
-  def onDocumentReady: onDocumentReady = "onDocumentReady".asInstanceOf[onDocumentReady]
-  @scala.inline
-  def onDragOut: onDragOut = "onDragOut".asInstanceOf[onDragOut]
-  @scala.inline
-  def onDynLoadError: onDynLoadError = "onDynLoadError".asInstanceOf[onDynLoadError]
-  @scala.inline
-  def onEditorChange: onEditorChange = "onEditorChange".asInstanceOf[onEditorChange]
-  @scala.inline
-  def onEnd: onEnd = "onEnd".asInstanceOf[onEnd]
-  @scala.inline
-  def onEnter: onEnter = "onEnter".asInstanceOf[onEnter]
-  @scala.inline
-  def onErrorResponse: onErrorResponse = "onErrorResponse".asInstanceOf[onErrorResponse]
-  @scala.inline
-  def onFileUpload: onFileUpload = "onFileUpload".asInstanceOf[onFileUpload]
-  @scala.inline
-  def onFileUploadError: onFileUploadError = "onFileUploadError".asInstanceOf[onFileUploadError]
-  @scala.inline
-  def onFilterChange: onFilterChange = "onFilterChange".asInstanceOf[onFilterChange]
-  @scala.inline
-  def onFilterCreate: onFilterCreate = "onFilterCreate".asInstanceOf[onFilterCreate]
-  @scala.inline
-  def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
-  @scala.inline
-  def onFolderSelect: onFolderSelect = "onFolderSelect".asInstanceOf[onFolderSelect]
-  @scala.inline
-  def onHeaderClick: onHeaderClick = "onHeaderClick".asInstanceOf[onHeaderClick]
-  @scala.inline
-  def onHeaderInit: onHeaderInit = "onHeaderInit".asInstanceOf[onHeaderInit]
-  @scala.inline
-  def onHeatMapRender: onHeatMapRender = "onHeatMapRender".asInstanceOf[onHeatMapRender]
-  @scala.inline
-  def onHide: onHide = "onHide".asInstanceOf[onHide]
-  @scala.inline
-  def onHideSearchResults: onHideSearchResults = "onHideSearchResults".asInstanceOf[onHideSearchResults]
-  @scala.inline
-  def onHistoryChange: onHistoryChange = "onHistoryChange".asInstanceOf[onHistoryChange]
-  @scala.inline
-  def onItemCheck: onItemCheck = "onItemCheck".asInstanceOf[onItemCheck]
-  @scala.inline
-  def onItemClick: onItemClick = "onItemClick".asInstanceOf[onItemClick]
-  @scala.inline
-  def onItemDblClick: onItemDblClick = "onItemDblClick".asInstanceOf[onItemDblClick]
-  @scala.inline
-  def onItemRename: onItemRename = "onItemRename".asInstanceOf[onItemRename]
-  @scala.inline
-  def onItemRender: onItemRender = "onItemRender".asInstanceOf[onItemRender]
-  @scala.inline
-  def onItemSelect: onItemSelect = "onItemSelect".asInstanceOf[onItemSelect]
-  @scala.inline
-  def onKeyPress: onKeyPress = "onKeyPress".asInstanceOf[onKeyPress]
-  @scala.inline
-  def onKeySelect: onKeySelect = "onKeySelect".asInstanceOf[onKeySelect]
-  @scala.inline
-  def onLegendClick: onLegendClick = "onLegendClick".asInstanceOf[onLegendClick]
-  @scala.inline
-  def onListAfterContextMenu: onListAfterContextMenu = "onListAfterContextMenu".asInstanceOf[onListAfterContextMenu]
-  @scala.inline
-  def onListAfterDrop: onListAfterDrop = "onListAfterDrop".asInstanceOf[onListAfterDrop]
-  @scala.inline
-  def onListAfterSelect: onListAfterSelect = "onListAfterSelect".asInstanceOf[onListAfterSelect]
-  @scala.inline
-  def onListBeforeContextMenu: onListBeforeContextMenu = "onListBeforeContextMenu".asInstanceOf[onListBeforeContextMenu]
-  @scala.inline
-  def onListBeforeDrag: onListBeforeDrag = "onListBeforeDrag".asInstanceOf[onListBeforeDrag]
-  @scala.inline
-  def onListBeforeDragIn: onListBeforeDragIn = "onListBeforeDragIn".asInstanceOf[onListBeforeDragIn]
-  @scala.inline
-  def onListBeforeDrop: onListBeforeDrop = "onListBeforeDrop".asInstanceOf[onListBeforeDrop]
-  @scala.inline
-  def onListBeforeSelect: onListBeforeSelect = "onListBeforeSelect".asInstanceOf[onListBeforeSelect]
-  @scala.inline
-  def onListIconClick: onListIconClick = "onListIconClick".asInstanceOf[onListIconClick]
-  @scala.inline
-  def onListItemClick: onListItemClick = "onListItemClick".asInstanceOf[onListItemClick]
-  @scala.inline
-  def onListItemDblClick: onListItemDblClick = "onListItemDblClick".asInstanceOf[onListItemDblClick]
-  @scala.inline
-  def onLiveEdit: onLiveEdit = "onLiveEdit".asInstanceOf[onLiveEdit]
-  @scala.inline
-  def onLoadError: onLoadError = "onLoadError".asInstanceOf[onLoadError]
-  @scala.inline
-  def onLongTouch: onLongTouch = "onLongTouch".asInstanceOf[onLongTouch]
-  @scala.inline
-  def onMapError: onMapError = "onMapError".asInstanceOf[onMapError]
-  @scala.inline
-  def onMapReady: onMapReady = "onMapReady".asInstanceOf[onMapReady]
-  @scala.inline
-  def onMathRefresh: onMathRefresh = "onMathRefresh".asInstanceOf[onMathRefresh]
-  @scala.inline
-  def onMenuItemClick: onMenuItemClick = "onMenuItemClick".asInstanceOf[onMenuItemClick]
-  @scala.inline
-  def onMouseMove: onMouseMove = "onMouseMove".asInstanceOf[onMouseMove]
-  @scala.inline
-  def onMouseMoving: onMouseMoving = "onMouseMoving".asInstanceOf[onMouseMoving]
-  @scala.inline
-  def onMouseOut: onMouseOut = "onMouseOut".asInstanceOf[onMouseOut]
-  @scala.inline
-  def onMoveError: onMoveError = "onMoveError".asInstanceOf[onMoveError]
-  @scala.inline
-  def onNext: onNext = "onNext".asInstanceOf[onNext]
-  @scala.inline
-  def onOptionAdd: onOptionAdd = "onOptionAdd".asInstanceOf[onOptionAdd]
-  @scala.inline
-  def onOptionRemove: onOptionRemove = "onOptionRemove".asInstanceOf[onOptionRemove]
-  @scala.inline
-  def onPageRender: onPageRender = "onPageRender".asInstanceOf[onPageRender]
-  @scala.inline
-  def onPartialRender: onPartialRender = "onPartialRender".asInstanceOf[onPartialRender]
-  @scala.inline
-  def onPaste: onPaste = "onPaste".asInstanceOf[onPaste]
-  @scala.inline
-  def onPathComplete: onPathComplete = "onPathComplete".asInstanceOf[onPathComplete]
-  @scala.inline
-  def onPathLevel: onPathLevel = "onPathLevel".asInstanceOf[onPathLevel]
-  @scala.inline
-  def onPopup: onPopup = "onPopup".asInstanceOf[onPopup]
-  @scala.inline
-  def onPrevious: onPrevious = "onPrevious".asInstanceOf[onPrevious]
-  @scala.inline
-  def onRegionClick: onRegionClick = "onRegionClick".asInstanceOf[onRegionClick]
-  @scala.inline
-  def onReset: onReset = "onReset".asInstanceOf[onReset]
-  @scala.inline
-  def onResize: onResize = "onResize".asInstanceOf[onResize]
-  @scala.inline
-  def onResizeEnd: onResizeEnd = "onResizeEnd".asInstanceOf[onResizeEnd]
-  @scala.inline
-  def onRowResize: onRowResize = "onRowResize".asInstanceOf[onRowResize]
-  @scala.inline
-  def onScaleChange: onScaleChange = "onScaleChange".asInstanceOf[onScaleChange]
-  @scala.inline
-  def onScroll: onScroll = "onScroll".asInstanceOf[onScroll]
-  @scala.inline
-  def onScrollX: onScrollX = "onScrollX".asInstanceOf[onScrollX]
-  @scala.inline
-  def onScrollY: onScrollY = "onScrollY".asInstanceOf[onScrollY]
-  @scala.inline
-  def onSearchIconClick: onSearchIconClick = "onSearchIconClick".asInstanceOf[onSearchIconClick]
-  @scala.inline
-  def onSectionAdd: onSectionAdd = "onSectionAdd".asInstanceOf[onSectionAdd]
-  @scala.inline
-  def onSectionRemove: onSectionRemove = "onSectionRemove".asInstanceOf[onSectionRemove]
-  @scala.inline
-  def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
-  @scala.inline
-  def onSelectChange: onSelectChange = "onSelectChange".asInstanceOf[onSelectChange]
-  @scala.inline
-  def onSheetAdd: onSheetAdd = "onSheetAdd".asInstanceOf[onSheetAdd]
-  @scala.inline
-  def onSheetRemove: onSheetRemove = "onSheetRemove".asInstanceOf[onSheetRemove]
-  @scala.inline
-  def onSheetRename: onSheetRename = "onSheetRename".asInstanceOf[onSheetRename]
-  @scala.inline
-  def onShow: onShow = "onShow".asInstanceOf[onShow]
-  @scala.inline
-  def onShowSearchResults: onShowSearchResults = "onShowSearchResults".asInstanceOf[onShowSearchResults]
-  @scala.inline
-  def onSkip: onSkip = "onSkip".asInstanceOf[onSkip]
-  @scala.inline
-  def onSliderDrag: onSliderDrag = "onSliderDrag".asInstanceOf[onSliderDrag]
-  @scala.inline
-  def onStructureLoad: onStructureLoad = "onStructureLoad".asInstanceOf[onStructureLoad]
-  @scala.inline
-  def onStructureUpdate: onStructureUpdate = "onStructureUpdate".asInstanceOf[onStructureUpdate]
-  @scala.inline
-  def onStyleSet: onStyleSet = "onStyleSet".asInstanceOf[onStyleSet]
-  @scala.inline
-  def onSubViewClose: onSubViewClose = "onSubViewClose".asInstanceOf[onSubViewClose]
-  @scala.inline
-  def onSubViewCreate: onSubViewCreate = "onSubViewCreate".asInstanceOf[onSubViewCreate]
-  @scala.inline
-  def onSubViewOpen: onSubViewOpen = "onSubViewOpen".asInstanceOf[onSubViewOpen]
-  @scala.inline
-  def onSubViewRender: onSubViewRender = "onSubViewRender".asInstanceOf[onSubViewRender]
-  @scala.inline
-  def onSubmit: onSubmit = "onSubmit".asInstanceOf[onSubmit]
-  @scala.inline
-  def onSuccessResponse: onSuccessResponse = "onSuccessResponse".asInstanceOf[onSuccessResponse]
-  @scala.inline
-  def onSwipeX: onSwipeX = "onSwipeX".asInstanceOf[onSwipeX]
-  @scala.inline
-  def onSwipeY: onSwipeY = "onSwipeY".asInstanceOf[onSwipeY]
-  @scala.inline
-  def onTabFocus: onTabFocus = "onTabFocus".asInstanceOf[onTabFocus]
-  @scala.inline
-  def onTimedKeyPress: onTimedKeyPress = "onTimedKeyPress".asInstanceOf[onTimedKeyPress]
-  @scala.inline
-  def onTodaySet: onTodaySet = "onTodaySet".asInstanceOf[onTodaySet]
-  @scala.inline
-  def onTouchEnd: onTouchEnd = "onTouchEnd".asInstanceOf[onTouchEnd]
-  @scala.inline
-  def onTouchMove: onTouchMove = "onTouchMove".asInstanceOf[onTouchMove]
-  @scala.inline
-  def onTouchStart: onTouchStart = "onTouchStart".asInstanceOf[onTouchStart]
-  @scala.inline
-  def onUploadComplete: onUploadComplete = "onUploadComplete".asInstanceOf[onUploadComplete]
-  @scala.inline
-  def onUserMentioned: onUserMentioned = "onUserMentioned".asInstanceOf[onUserMentioned]
-  @scala.inline
-  def onValidationError: onValidationError = "onValidationError".asInstanceOf[onValidationError]
-  @scala.inline
-  def onValidationSuccess: onValidationSuccess = "onValidationSuccess".asInstanceOf[onValidationSuccess]
-  @scala.inline
-  def onValueSuggest: onValueSuggest = "onValueSuggest".asInstanceOf[onValueSuggest]
-  @scala.inline
-  def onValues: onValues = "onValues".asInstanceOf[onValues]
-  @scala.inline
-  def onViewChange: onViewChange = "onViewChange".asInstanceOf[onViewChange]
-  @scala.inline
-  def onViewInit: onViewInit = "onViewInit".asInstanceOf[onViewInit]
-  @scala.inline
-  def onViewMove: onViewMove = "onViewMove".asInstanceOf[onViewMove]
-  @scala.inline
-  def onViewMoveEnd: onViewMoveEnd = "onViewMoveEnd".asInstanceOf[onViewMoveEnd]
-  @scala.inline
-  def onViewResize: onViewResize = "onViewResize".asInstanceOf[onViewResize]
-  @scala.inline
-  def onViewShow: onViewShow = "onViewShow".asInstanceOf[onViewShow]
-  @scala.inline
-  def onWebWorkerEnd: onWebWorkerEnd = "onWebWorkerEnd".asInstanceOf[onWebWorkerEnd]
-  @scala.inline
-  def onWebWorkerStart: onWebWorkerStart = "onWebWorkerStart".asInstanceOf[onWebWorkerStart]
 }
-

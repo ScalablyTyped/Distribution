@@ -9,7 +9,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/s3/analyticsConfiguration", "AnalyticsConfiguration")
 @js.native
@@ -23,28 +23,32 @@ class AnalyticsConfiguration protected () extends CustomResource {
     */
   def this(name: String, args: AnalyticsConfigurationArgs) = this()
   def this(name: String, args: AnalyticsConfigurationArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The name of the bucket this analytics configuration is associated with.
     */
   val bucket: Output_[String] = js.native
+  
   /**
     * Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).
     */
   val filter: Output_[js.UndefOr[AnalyticsConfigurationFilter]] = js.native
+  
   /**
     * Unique identifier of the analytics configuration for the bucket.
     */
   val name: Output_[String] = js.native
+  
   /**
     * Configuration for the analytics data export (documented below).
     */
   val storageClassAnalysis: Output_[js.UndefOr[AnalyticsConfigurationStorageClassAnalysis]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/s3/analyticsConfiguration", "AnalyticsConfiguration")
 @js.native
 object AnalyticsConfiguration extends js.Object {
+  
   /**
     * Get an existing AnalyticsConfiguration resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -58,10 +62,10 @@ object AnalyticsConfiguration extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AnalyticsConfiguration = js.native
   def get(name: String, id: Input[ID], state: AnalyticsConfigurationState): AnalyticsConfiguration = js.native
   def get(name: String, id: Input[ID], state: AnalyticsConfigurationState, opts: CustomResourceOptions): AnalyticsConfiguration = js.native
+  
   /**
     * Returns true if the given object is an instance of AnalyticsConfiguration.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/analyticsConfiguration.AnalyticsConfiguration */ Boolean = js.native
 }
-

@@ -10,25 +10,27 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile/lib/modal/Modal", "ModalComponent")
 @js.native
 abstract class ModalComponent[P, S] ()
   extends Component[P, S, js.Any]
-
 /* static members */
 @JSImport("antd-mobile/lib/modal/Modal", "ModalComponent")
 @js.native
 object ModalComponent extends js.Object {
+  
   def alert(title: ReactNode, message: ReactNode): Close = js.native
   def alert(title: ReactNode, message: ReactNode, actions: js.UndefOr[scala.Nothing], platform: String): Close = js.native
   def alert(title: ReactNode, message: ReactNode, actions: js.Array[Action[CSSProperties]]): Close = js.native
   def alert(title: ReactNode, message: ReactNode, actions: js.Array[Action[CSSProperties]], platform: String): Close = js.native
+  
   def operation(): Close = js.native
   def operation(actions: js.UndefOr[scala.Nothing], platform: String): Close = js.native
   def operation(actions: js.Array[Action[CSSProperties]]): Close = js.native
   def operation(actions: js.Array[Action[CSSProperties]], platform: String): Close = js.native
+  
   def prompt(title: ReactNode, message: ReactNode, callbackOrActions: CallbackOrActions[CSSProperties]): Close = js.native
   def prompt(
     title: ReactNode,
@@ -309,4 +311,3 @@ object ModalComponent extends js.Object {
     platform: String
   ): Close = js.native
 }
-

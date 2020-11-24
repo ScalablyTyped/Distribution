@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used by the batcher to draw batches.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class BatchDrawCall ()
   extends typings.pixiJs.PIXI.BatchDrawCall
-

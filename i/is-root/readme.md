@@ -10,9 +10,9 @@ Check if the process is running as root user, for example, one started with `sud
 | ------------------ | :-------------: |
 | Full name          | is-root |
 | Keywords           | sudo, root, user, permissions, uid, process, posix |
-| # releases         | 3 |
-| # dependents       | 239 |
-| # downloads        | 119175754 |
+| # releases         | 2 |
+| # dependents       | 277 |
+| # downloads        | 176770762 |
 | # stars            | 4 |
 
 ## Links

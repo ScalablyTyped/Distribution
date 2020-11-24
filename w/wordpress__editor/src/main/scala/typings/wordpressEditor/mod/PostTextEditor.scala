@@ -5,9 +5,8 @@ import typings.react.mod.ComponentType
 import typings.wordpressEditor.postTextEditorMod.PostTextEditor.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/editor", "PostTextEditor")
 @js.native
 object PostTextEditor extends TopLevel[ComponentType[Props]]
-

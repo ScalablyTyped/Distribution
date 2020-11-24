@@ -16,10 +16,11 @@ import typings.bootstrapFilestyle.bootstrapFilestyleStrings.pushNameFiles
 import typings.bootstrapFilestyle.bootstrapFilestyleStrings.size
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   def filestyle(): JQuery = js.native
   def filestyle(options: FilestyleOptions): JQuery = js.native
   @JSName("filestyle")
@@ -51,4 +52,3 @@ trait JQuery extends js.Object {
   @JSName("filestyle")
   def filestyle_size(method: size, value: String): JQuery = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.protobufjs.minimalMod
 import typings.protobufjs.mod.RPCImpl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs/minimal", "rpc")
 @js.native
 object rpc extends js.Object {
+  
   /** An RPC service as returned by {@link Service#create}. */
   @js.native
   class Service protected ()
@@ -23,6 +24,4 @@ object rpc extends js.Object {
     def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
     def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
   }
-  
 }
-

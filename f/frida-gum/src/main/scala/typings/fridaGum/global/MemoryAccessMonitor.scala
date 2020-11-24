@@ -4,7 +4,7 @@ import typings.fridaGum.MemoryAccessCallbacks
 import typings.fridaGum.MemoryAccessRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Monitors one or more memory ranges for access, and notifies on the first
@@ -17,11 +17,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MemoryAccessMonitor")
 @js.native
 object MemoryAccessMonitor extends js.Object {
+  
   /**
     * Stops monitoring the remaining memory ranges passed to
     * `MemoryAccessMonitor.enable()`.
     */
   def disable(): Unit = js.native
+  
   def enable(ranges: js.Array[MemoryAccessRange], callbacks: MemoryAccessCallbacks): Unit = js.native
   /**
     * Starts monitoring one or more memory ranges for access, and notifies on
@@ -32,4 +34,3 @@ object MemoryAccessMonitor extends js.Object {
     */
   def enable(ranges: MemoryAccessRange, callbacks: MemoryAccessCallbacks): Unit = js.native
 }
-

@@ -1,17 +1,16 @@
 package typings.awsSdk.snowballMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Snowball extends Service {
-  @JSName("config")
-  var config_Snowball: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Cancels a cluster job. You can only cancel a cluster job while it's in the AwaitingQuorum status. You'll have at least an hour after creating a cluster job to cancel it.
     */
@@ -25,6 +24,7 @@ trait Snowball extends Service {
     params: CancelClusterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CancelClusterResult, Unit]
   ): Request[CancelClusterResult, AWSError] = js.native
+  
   /**
     * Cancels the specified job. You can only cancel a job before its JobState value changes to PreparingAppliance. Requesting the ListJobs or DescribeJob action returns a job's JobState as part of the response element data returned.
     */
@@ -38,19 +38,24 @@ trait Snowball extends Service {
     params: CancelJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CancelJobResult, Unit]
   ): Request[CancelJobResult, AWSError] = js.native
+  
+  @JSName("config")
+  var config_Snowball: ConfigBase with ClientConfiguration = js.native
+  
   /**
-    * Creates an address for a Snowball to be shipped to. In most regions, addresses are validated at the time of creation. The address you provide must be located within the serviceable area of your region. If the address is invalid or unsupported, then an exception is thrown.
+    * Creates an address for a Snow device to be shipped to. In most regions, addresses are validated at the time of creation. The address you provide must be located within the serviceable area of your region. If the address is invalid or unsupported, then an exception is thrown.
     */
   def createAddress(): Request[CreateAddressResult, AWSError] = js.native
   def createAddress(callback: js.Function2[/* err */ AWSError, /* data */ CreateAddressResult, Unit]): Request[CreateAddressResult, AWSError] = js.native
   /**
-    * Creates an address for a Snowball to be shipped to. In most regions, addresses are validated at the time of creation. The address you provide must be located within the serviceable area of your region. If the address is invalid or unsupported, then an exception is thrown.
+    * Creates an address for a Snow device to be shipped to. In most regions, addresses are validated at the time of creation. The address you provide must be located within the serviceable area of your region. If the address is invalid or unsupported, then an exception is thrown.
     */
   def createAddress(params: CreateAddressRequest): Request[CreateAddressResult, AWSError] = js.native
   def createAddress(
     params: CreateAddressRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateAddressResult, Unit]
   ): Request[CreateAddressResult, AWSError] = js.native
+  
   /**
     * Creates an empty cluster. Each cluster supports five nodes. You use the CreateJob action separately to create the jobs for each of these nodes. The cluster does not ship until these five node jobs have been created.
     */
@@ -64,19 +69,35 @@ trait Snowball extends Service {
     params: CreateClusterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateClusterResult, Unit]
   ): Request[CreateClusterResult, AWSError] = js.native
+  
   /**
-    * Creates a job to import or export data between Amazon S3 and your on-premises data center. Your AWS account must have the right trust policies and permissions in place to create a job for Snowball. If you're creating a job for a node in a cluster, you only need to provide the clusterId value; the other job attributes are inherited from the cluster. 
+    * Creates a job to import or export data between Amazon S3 and your on-premises data center. Your AWS account must have the right trust policies and permissions in place to create a job for a Snow device. If you're creating a job for a node in a cluster, you only need to provide the clusterId value; the other job attributes are inherited from the cluster. 
     */
   def createJob(): Request[CreateJobResult, AWSError] = js.native
   def createJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateJobResult, Unit]): Request[CreateJobResult, AWSError] = js.native
   /**
-    * Creates a job to import or export data between Amazon S3 and your on-premises data center. Your AWS account must have the right trust policies and permissions in place to create a job for Snowball. If you're creating a job for a node in a cluster, you only need to provide the clusterId value; the other job attributes are inherited from the cluster. 
+    * Creates a job to import or export data between Amazon S3 and your on-premises data center. Your AWS account must have the right trust policies and permissions in place to create a job for a Snow device. If you're creating a job for a node in a cluster, you only need to provide the clusterId value; the other job attributes are inherited from the cluster. 
     */
   def createJob(params: CreateJobRequest): Request[CreateJobResult, AWSError] = js.native
   def createJob(
     params: CreateJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateJobResult, Unit]
   ): Request[CreateJobResult, AWSError] = js.native
+  
+  /**
+    * Creates a shipping label that will be used to return the Snow device to AWS.
+    */
+  def createReturnShippingLabel(): Request[CreateReturnShippingLabelResult, AWSError] = js.native
+  def createReturnShippingLabel(callback: js.Function2[/* err */ AWSError, /* data */ CreateReturnShippingLabelResult, Unit]): Request[CreateReturnShippingLabelResult, AWSError] = js.native
+  /**
+    * Creates a shipping label that will be used to return the Snow device to AWS.
+    */
+  def createReturnShippingLabel(params: CreateReturnShippingLabelRequest): Request[CreateReturnShippingLabelResult, AWSError] = js.native
+  def createReturnShippingLabel(
+    params: CreateReturnShippingLabelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateReturnShippingLabelResult, Unit]
+  ): Request[CreateReturnShippingLabelResult, AWSError] = js.native
+  
   /**
     * Takes an AddressId and returns specific details about that address in the form of an Address object.
     */
@@ -90,6 +111,7 @@ trait Snowball extends Service {
     params: DescribeAddressRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAddressResult, Unit]
   ): Request[DescribeAddressResult, AWSError] = js.native
+  
   /**
     * Returns a specified number of ADDRESS objects. Calling this API in one of the US regions will return addresses from the list of all addresses associated with this account in all US regions.
     */
@@ -103,6 +125,7 @@ trait Snowball extends Service {
     params: DescribeAddressesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAddressesResult, Unit]
   ): Request[DescribeAddressesResult, AWSError] = js.native
+  
   /**
     * Returns information about a specific cluster including shipping information, cluster status, and other important metadata.
     */
@@ -116,6 +139,7 @@ trait Snowball extends Service {
     params: DescribeClusterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeClusterResult, Unit]
   ): Request[DescribeClusterResult, AWSError] = js.native
+  
   /**
     * Returns information about a specific job including shipping information, job status, and other important metadata. 
     */
@@ -129,45 +153,63 @@ trait Snowball extends Service {
     params: DescribeJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeJobResult, Unit]
   ): Request[DescribeJobResult, AWSError] = js.native
+  
   /**
-    * Returns a link to an Amazon S3 presigned URL for the manifest file associated with the specified JobId value. You can access the manifest file for up to 60 minutes after this request has been made. To access the manifest file after 60 minutes have passed, you'll have to make another call to the GetJobManifest action. The manifest is an encrypted file that you can download after your job enters the WithCustomer status. The manifest is decrypted by using the UnlockCode code value, when you pass both values to the Snowball through the Snowball client when the client is started for the first time. As a best practice, we recommend that you don't save a copy of an UnlockCode value in the same location as the manifest file for that job. Saving these separately helps prevent unauthorized parties from gaining access to the Snowball associated with that job. The credentials of a given job, including its manifest file and unlock code, expire 90 days after the job is created.
+    * Information on the shipping label of a Snow device that is being returned to AWS.
+    */
+  def describeReturnShippingLabel(): Request[DescribeReturnShippingLabelResult, AWSError] = js.native
+  def describeReturnShippingLabel(callback: js.Function2[/* err */ AWSError, /* data */ DescribeReturnShippingLabelResult, Unit]): Request[DescribeReturnShippingLabelResult, AWSError] = js.native
+  /**
+    * Information on the shipping label of a Snow device that is being returned to AWS.
+    */
+  def describeReturnShippingLabel(params: DescribeReturnShippingLabelRequest): Request[DescribeReturnShippingLabelResult, AWSError] = js.native
+  def describeReturnShippingLabel(
+    params: DescribeReturnShippingLabelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReturnShippingLabelResult, Unit]
+  ): Request[DescribeReturnShippingLabelResult, AWSError] = js.native
+  
+  /**
+    * Returns a link to an Amazon S3 presigned URL for the manifest file associated with the specified JobId value. You can access the manifest file for up to 60 minutes after this request has been made. To access the manifest file after 60 minutes have passed, you'll have to make another call to the GetJobManifest action. The manifest is an encrypted file that you can download after your job enters the WithCustomer status. The manifest is decrypted by using the UnlockCode code value, when you pass both values to the Snow device through the Snowball client when the client is started for the first time. As a best practice, we recommend that you don't save a copy of an UnlockCode value in the same location as the manifest file for that job. Saving these separately helps prevent unauthorized parties from gaining access to the Snow device associated with that job. The credentials of a given job, including its manifest file and unlock code, expire 90 days after the job is created.
     */
   def getJobManifest(): Request[GetJobManifestResult, AWSError] = js.native
   def getJobManifest(callback: js.Function2[/* err */ AWSError, /* data */ GetJobManifestResult, Unit]): Request[GetJobManifestResult, AWSError] = js.native
   /**
-    * Returns a link to an Amazon S3 presigned URL for the manifest file associated with the specified JobId value. You can access the manifest file for up to 60 minutes after this request has been made. To access the manifest file after 60 minutes have passed, you'll have to make another call to the GetJobManifest action. The manifest is an encrypted file that you can download after your job enters the WithCustomer status. The manifest is decrypted by using the UnlockCode code value, when you pass both values to the Snowball through the Snowball client when the client is started for the first time. As a best practice, we recommend that you don't save a copy of an UnlockCode value in the same location as the manifest file for that job. Saving these separately helps prevent unauthorized parties from gaining access to the Snowball associated with that job. The credentials of a given job, including its manifest file and unlock code, expire 90 days after the job is created.
+    * Returns a link to an Amazon S3 presigned URL for the manifest file associated with the specified JobId value. You can access the manifest file for up to 60 minutes after this request has been made. To access the manifest file after 60 minutes have passed, you'll have to make another call to the GetJobManifest action. The manifest is an encrypted file that you can download after your job enters the WithCustomer status. The manifest is decrypted by using the UnlockCode code value, when you pass both values to the Snow device through the Snowball client when the client is started for the first time. As a best practice, we recommend that you don't save a copy of an UnlockCode value in the same location as the manifest file for that job. Saving these separately helps prevent unauthorized parties from gaining access to the Snow device associated with that job. The credentials of a given job, including its manifest file and unlock code, expire 90 days after the job is created.
     */
   def getJobManifest(params: GetJobManifestRequest): Request[GetJobManifestResult, AWSError] = js.native
   def getJobManifest(
     params: GetJobManifestRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetJobManifestResult, Unit]
   ): Request[GetJobManifestResult, AWSError] = js.native
+  
   /**
-    * Returns the UnlockCode code value for the specified job. A particular UnlockCode value can be accessed for up to 90 days after the associated job has been created. The UnlockCode value is a 29-character code with 25 alphanumeric characters and 4 hyphens. This code is used to decrypt the manifest file when it is passed along with the manifest to the Snowball through the Snowball client when the client is started for the first time. As a best practice, we recommend that you don't save a copy of the UnlockCode in the same location as the manifest file for that job. Saving these separately helps prevent unauthorized parties from gaining access to the Snowball associated with that job.
+    * Returns the UnlockCode code value for the specified job. A particular UnlockCode value can be accessed for up to 90 days after the associated job has been created. The UnlockCode value is a 29-character code with 25 alphanumeric characters and 4 hyphens. This code is used to decrypt the manifest file when it is passed along with the manifest to the Snow device through the Snowball client when the client is started for the first time. As a best practice, we recommend that you don't save a copy of the UnlockCode in the same location as the manifest file for that job. Saving these separately helps prevent unauthorized parties from gaining access to the Snow device associated with that job.
     */
   def getJobUnlockCode(): Request[GetJobUnlockCodeResult, AWSError] = js.native
   def getJobUnlockCode(callback: js.Function2[/* err */ AWSError, /* data */ GetJobUnlockCodeResult, Unit]): Request[GetJobUnlockCodeResult, AWSError] = js.native
   /**
-    * Returns the UnlockCode code value for the specified job. A particular UnlockCode value can be accessed for up to 90 days after the associated job has been created. The UnlockCode value is a 29-character code with 25 alphanumeric characters and 4 hyphens. This code is used to decrypt the manifest file when it is passed along with the manifest to the Snowball through the Snowball client when the client is started for the first time. As a best practice, we recommend that you don't save a copy of the UnlockCode in the same location as the manifest file for that job. Saving these separately helps prevent unauthorized parties from gaining access to the Snowball associated with that job.
+    * Returns the UnlockCode code value for the specified job. A particular UnlockCode value can be accessed for up to 90 days after the associated job has been created. The UnlockCode value is a 29-character code with 25 alphanumeric characters and 4 hyphens. This code is used to decrypt the manifest file when it is passed along with the manifest to the Snow device through the Snowball client when the client is started for the first time. As a best practice, we recommend that you don't save a copy of the UnlockCode in the same location as the manifest file for that job. Saving these separately helps prevent unauthorized parties from gaining access to the Snow device associated with that job.
     */
   def getJobUnlockCode(params: GetJobUnlockCodeRequest): Request[GetJobUnlockCodeResult, AWSError] = js.native
   def getJobUnlockCode(
     params: GetJobUnlockCodeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetJobUnlockCodeResult, Unit]
   ): Request[GetJobUnlockCodeResult, AWSError] = js.native
+  
   /**
-    * Returns information about the Snowball service limit for your account, and also the number of Snowballs your account has in use. The default service limit for the number of Snowballs that you can have at one time is 1. If you want to increase your service limit, contact AWS Support.
+    * Returns information about the Snow Family service limit for your account, and also the number of Snow devices your account has in use. The default service limit for the number of Snow devices that you can have at one time is 1. If you want to increase your service limit, contact AWS Support.
     */
   def getSnowballUsage(): Request[GetSnowballUsageResult, AWSError] = js.native
   def getSnowballUsage(callback: js.Function2[/* err */ AWSError, /* data */ GetSnowballUsageResult, Unit]): Request[GetSnowballUsageResult, AWSError] = js.native
   /**
-    * Returns information about the Snowball service limit for your account, and also the number of Snowballs your account has in use. The default service limit for the number of Snowballs that you can have at one time is 1. If you want to increase your service limit, contact AWS Support.
+    * Returns information about the Snow Family service limit for your account, and also the number of Snow devices your account has in use. The default service limit for the number of Snow devices that you can have at one time is 1. If you want to increase your service limit, contact AWS Support.
     */
   def getSnowballUsage(params: GetSnowballUsageRequest): Request[GetSnowballUsageResult, AWSError] = js.native
   def getSnowballUsage(
     params: GetSnowballUsageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSnowballUsageResult, Unit]
   ): Request[GetSnowballUsageResult, AWSError] = js.native
+  
   /**
     * Returns an Amazon S3 presigned URL for an update file associated with a specified JobId.
     */
@@ -181,6 +223,7 @@ trait Snowball extends Service {
     params: GetSoftwareUpdatesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSoftwareUpdatesResult, Unit]
   ): Request[GetSoftwareUpdatesResult, AWSError] = js.native
+  
   /**
     * Returns an array of JobListEntry objects of the specified length. Each JobListEntry object is for a job in the specified cluster and contains a job's state, a job's ID, and other information.
     */
@@ -194,6 +237,7 @@ trait Snowball extends Service {
     params: ListClusterJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListClusterJobsResult, Unit]
   ): Request[ListClusterJobsResult, AWSError] = js.native
+  
   /**
     * Returns an array of ClusterListEntry objects of the specified length. Each ClusterListEntry object contains a cluster's state, a cluster's ID, and other important status information.
     */
@@ -207,19 +251,21 @@ trait Snowball extends Service {
     params: ListClustersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListClustersResult, Unit]
   ): Request[ListClustersResult, AWSError] = js.native
+  
   /**
-    * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on a Snowball Edge device. Currently, supported AMIs are based on the CentOS 7 (x86_64) - with Updates HVM, Ubuntu Server 14.04 LTS (HVM), and Ubuntu 16.04 LTS - Xenial (HVM) images, available on the AWS Marketplace.
+    * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on a Snow device. Currently, supported AMIs are based on the CentOS 7 (x86_64) - with Updates HVM, Ubuntu Server 14.04 LTS (HVM), and Ubuntu 16.04 LTS - Xenial (HVM) images, available on the AWS Marketplace.
     */
   def listCompatibleImages(): Request[ListCompatibleImagesResult, AWSError] = js.native
   def listCompatibleImages(callback: js.Function2[/* err */ AWSError, /* data */ ListCompatibleImagesResult, Unit]): Request[ListCompatibleImagesResult, AWSError] = js.native
   /**
-    * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on a Snowball Edge device. Currently, supported AMIs are based on the CentOS 7 (x86_64) - with Updates HVM, Ubuntu Server 14.04 LTS (HVM), and Ubuntu 16.04 LTS - Xenial (HVM) images, available on the AWS Marketplace.
+    * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on a Snow device. Currently, supported AMIs are based on the CentOS 7 (x86_64) - with Updates HVM, Ubuntu Server 14.04 LTS (HVM), and Ubuntu 16.04 LTS - Xenial (HVM) images, available on the AWS Marketplace.
     */
   def listCompatibleImages(params: ListCompatibleImagesRequest): Request[ListCompatibleImagesResult, AWSError] = js.native
   def listCompatibleImages(
     params: ListCompatibleImagesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListCompatibleImagesResult, Unit]
   ): Request[ListCompatibleImagesResult, AWSError] = js.native
+  
   /**
     * Returns an array of JobListEntry objects of the specified length. Each JobListEntry object contains a job's state, a job's ID, and a value that indicates whether the job is a job part, in the case of export jobs. Calling this API action in one of the US regions will return jobs from the list of all jobs associated with this account in all US regions.
     */
@@ -233,6 +279,7 @@ trait Snowball extends Service {
     params: ListJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListJobsResult, Unit]
   ): Request[ListJobsResult, AWSError] = js.native
+  
   /**
     * While a cluster's ClusterState value is in the AwaitingQuorum state, you can update some of the information associated with a cluster. Once the cluster changes to a different job state, usually 60 minutes after the cluster being created, this action is no longer available.
     */
@@ -246,6 +293,7 @@ trait Snowball extends Service {
     params: UpdateClusterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateClusterResult, Unit]
   ): Request[UpdateClusterResult, AWSError] = js.native
+  
   /**
     * While a job's JobState value is New, you can update some of the information associated with a job. Once the job changes to a different job state, usually within 60 minutes of the job being created, this action is no longer available.
     */
@@ -259,5 +307,18 @@ trait Snowball extends Service {
     params: UpdateJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateJobResult, Unit]
   ): Request[UpdateJobResult, AWSError] = js.native
+  
+  /**
+    * Updates the state when a the shipment states changes to a different state.
+    */
+  def updateJobShipmentState(): Request[UpdateJobShipmentStateResult, AWSError] = js.native
+  def updateJobShipmentState(callback: js.Function2[/* err */ AWSError, /* data */ UpdateJobShipmentStateResult, Unit]): Request[UpdateJobShipmentStateResult, AWSError] = js.native
+  /**
+    * Updates the state when a the shipment states changes to a different state.
+    */
+  def updateJobShipmentState(params: UpdateJobShipmentStateRequest): Request[UpdateJobShipmentStateResult, AWSError] = js.native
+  def updateJobShipmentState(
+    params: UpdateJobShipmentStateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateJobShipmentStateResult, Unit]
+  ): Request[UpdateJobShipmentStateResult, AWSError] = js.native
 }
-

@@ -4,15 +4,15 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Extension extends js.Object {
+  
   var definition: Definition = js.native
+  
   var initialProperties: InitialProperties = js.native
-  @JSName("paint")
-  var paint_Original: Paint = js.native
-  var support: js.UndefOr[Support] = js.native
+  
   def paint(
     $element: js.UndefOr[JQuery[HTMLElement]],
     layout: js.UndefOr[Layout],
@@ -25,5 +25,8 @@ trait Extension extends js.Object {
     qId: js.UndefOr[String],
     qSelectionInfo: js.UndefOr[Selectionobject]
   ): Unit = js.native
+  @JSName("paint")
+  var paint_Original: Paint = js.native
+  
+  var support: js.UndefOr[Support] = js.native
 }
-

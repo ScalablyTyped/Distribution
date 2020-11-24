@@ -2,7 +2,7 @@ package typings.preloadjs.global.createjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.ErrorEvent")
 @js.native
@@ -16,4 +16,3 @@ class ErrorEvent ()
   def this(title: String, message: js.UndefOr[scala.Nothing], data: js.Object) = this()
   def this(title: String, message: String, data: js.Object) = this()
 }
-

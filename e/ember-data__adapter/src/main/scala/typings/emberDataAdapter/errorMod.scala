@@ -2,11 +2,16 @@ package typings.emberDataAdapter
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ember-data/adapter/error", JSImport.Namespace)
 @js.native
 object errorMod extends js.Object {
+  
+  val errorsArrayToHash: js.Function1[/* errors */ js.Array[js.Any], js.Object] = js.native
+  
+  val errorsHashToArray: js.Function1[/* errors */ js.Object, js.Array[js.Any]] = js.native
+  
   /**
     * A `DS.AbortError` is used by an adapter to signal that a request to
     * the external API was aborted. For example, this can occur if the user
@@ -100,8 +105,4 @@ object errorMod extends js.Object {
   @js.native
   class default ()
     extends typings.emberObject.mod.default
-  
-  val errorsArrayToHash: js.Function1[/* errors */ js.Array[js.Any], js.Object] = js.native
-  val errorsHashToArray: js.Function1[/* errors */ js.Object, js.Array[js.Any]] = js.native
 }
-

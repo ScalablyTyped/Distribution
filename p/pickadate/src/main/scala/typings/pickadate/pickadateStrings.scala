@@ -2,9 +2,52 @@ package typings.pickadate
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickadateStrings {
+  
+  @scala.inline
+  def $node: $node = "$node".asInstanceOf[$node]
+  
+  @scala.inline
+  def $root: $root = "$root".asInstanceOf[$root]
+  
+  @scala.inline
+  def _hidden: _hidden = "_hidden".asInstanceOf[_hidden]
+  
+  @scala.inline
+  def disable: disable = "disable".asInstanceOf[disable]
+  
+  @scala.inline
+  def highlight: highlight = "highlight".asInstanceOf[highlight]
+  
+  @scala.inline
+  def id: id = "id".asInstanceOf[id]
+  
+  @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  
+  @scala.inline
+  def min: min = "min".asInstanceOf[min]
+  
+  @scala.inline
+  def open: open = "open".asInstanceOf[open]
+  
+  @scala.inline
+  def picker: picker = "picker".asInstanceOf[picker]
+  
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
+  @scala.inline
+  def value: value = "value".asInstanceOf[value]
+  
+  @scala.inline
+  def view: view = "view".asInstanceOf[view]
+  
   @js.native
   sealed trait $node extends js.Object
   
@@ -46,34 +89,4 @@ object pickadateStrings {
   
   @js.native
   sealed trait view extends js.Object
-  
-  @scala.inline
-  def $node: $node = "$node".asInstanceOf[$node]
-  @scala.inline
-  def $root: $root = "$root".asInstanceOf[$root]
-  @scala.inline
-  def _hidden: _hidden = "_hidden".asInstanceOf[_hidden]
-  @scala.inline
-  def disable: disable = "disable".asInstanceOf[disable]
-  @scala.inline
-  def highlight: highlight = "highlight".asInstanceOf[highlight]
-  @scala.inline
-  def id: id = "id".asInstanceOf[id]
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def picker: picker = "picker".asInstanceOf[picker]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
-  @scala.inline
-  def view: view = "view".asInstanceOf[view]
 }
-

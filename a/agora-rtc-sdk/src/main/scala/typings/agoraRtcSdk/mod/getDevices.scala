@@ -2,11 +2,12 @@ package typings.agoraRtcSdk.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("agora-rtc-sdk", "getDevices")
 @js.native
 object getDevices extends js.Object {
+  
   /**
     * Enumerates the media devices
     *
@@ -30,4 +31,3 @@ object getDevices extends js.Object {
     */
   def apply(callback: js.Function1[/* devices */ js.Array[MediaDeviceInfo], Unit]): Unit = js.native
 }
-

@@ -5,16 +5,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies an additional implementation for linked embedded object support. */
 @js.native
 trait XLinkageSupport extends XCommonEmbedPersist {
+  
   /**
     * returns the URL of the link object.
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state or is not a link
     */
   val LinkURL: String = js.native
+  
   /**
     * breaks the link and provides the object with a parent storage and a name for object's entry
     *
@@ -35,11 +37,13 @@ trait XLinkageSupport extends XCommonEmbedPersist {
     * @throws com::sun::star::uno::Exception in case of other problems
     */
   def breakLink(xStorage: XStorage, sEntryName: String): Unit = js.native
+  
   /**
     * returns the URL of the link object.
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state or is not a link
     */
   def getLinkURL(): String = js.native
+  
   /**
     * allows to detect whether the object is a linked one.
     *
@@ -50,8 +54,8 @@ trait XLinkageSupport extends XCommonEmbedPersist {
     */
   def isLink(): Boolean = js.native
 }
-
 object XLinkageSupport {
+  
   @scala.inline
   def apply(
     LinkURL: String,
@@ -68,26 +72,32 @@ object XLinkageSupport {
     val __obj = js.Dynamic.literal(LinkURL = LinkURL.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), breakLink = js.Any.fromFunction2(breakLink), getLinkURL = js.Any.fromFunction0(getLinkURL), isLink = js.Any.fromFunction0(isLink), isReadonly = js.Any.fromFunction0(isReadonly), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reload = js.Any.fromFunction2(reload), storeOwn = js.Any.fromFunction0(storeOwn))
     __obj.asInstanceOf[XLinkageSupport]
   }
+  
   @scala.inline
   implicit class XLinkageSupportOps[Self <: XLinkageSupport] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setLinkURL(value: String): Self = this.set("LinkURL", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setBreakLink(value: (XStorage, String) => Unit): Self = this.set("breakLink", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setGetLinkURL(value: () => String): Self = this.set("getLinkURL", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setIsLink(value: () => Boolean): Self = this.set("isLink", js.Any.fromFunction0(value))
   }
-  
 }
-

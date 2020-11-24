@@ -3,7 +3,7 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "PlaneDragGizmo")
 @js.native
@@ -22,8 +22,31 @@ class PlaneDragGizmo protected ()
   ) = this()
   def this(
     dragPlaneNormal: typings.babylonjs.mathVectorMod.Vector3,
+    color: js.UndefOr[scala.Nothing],
+    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+  ) = this()
+  def this(
+    dragPlaneNormal: typings.babylonjs.mathVectorMod.Vector3,
     color: typings.babylonjs.mathColorMod.Color3,
     gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+  ) = this()
+  def this(
+    dragPlaneNormal: typings.babylonjs.mathVectorMod.Vector3,
+    color: js.UndefOr[scala.Nothing],
+    gizmoLayer: js.UndefOr[scala.Nothing],
+    parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
+  ) = this()
+  def this(
+    dragPlaneNormal: typings.babylonjs.mathVectorMod.Vector3,
+    color: js.UndefOr[scala.Nothing],
+    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
+    parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
+  ) = this()
+  def this(
+    dragPlaneNormal: typings.babylonjs.mathVectorMod.Vector3,
+    color: typings.babylonjs.mathColorMod.Color3,
+    gizmoLayer: js.UndefOr[scala.Nothing],
+    parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
   ) = this()
   def this(
     dragPlaneNormal: typings.babylonjs.mathVectorMod.Vector3,
@@ -32,17 +55,14 @@ class PlaneDragGizmo protected ()
     parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/index", "PlaneDragGizmo")
 @js.native
 object PlaneDragGizmo extends js.Object {
-  /** @hidden */
-  def _CreateArrowInstance(scene: typings.babylonjs.sceneMod.Scene, arrow: typings.babylonjs.transformNodeMod.TransformNode): typings.babylonjs.transformNodeMod.TransformNode = js.native
+  
   /** @hidden */
   def _CreatePlane(
     scene: typings.babylonjs.sceneMod.Scene,
     material: typings.babylonjs.standardMaterialMod.StandardMaterial
   ): typings.babylonjs.transformNodeMod.TransformNode = js.native
 }
-

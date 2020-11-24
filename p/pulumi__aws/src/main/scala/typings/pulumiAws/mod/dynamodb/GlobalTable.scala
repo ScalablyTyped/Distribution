@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "dynamodb.GlobalTable")
 @js.native
@@ -23,11 +23,11 @@ class GlobalTable protected ()
   def this(name: String, args: GlobalTableArgs) = this()
   def this(name: String, args: GlobalTableArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "dynamodb.GlobalTable")
 @js.native
 object GlobalTable extends js.Object {
+  
   /**
     * Get an existing GlobalTable resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object GlobalTable extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.globalTableMod.GlobalTable = js.native
   def get(name: String, id: Input[ID], state: GlobalTableState): typings.pulumiAws.globalTableMod.GlobalTable = js.native
   def get(name: String, id: Input[ID], state: GlobalTableState, opts: CustomResourceOptions): typings.pulumiAws.globalTableMod.GlobalTable = js.native
+  
   /**
     * Returns true if the given object is an instance of GlobalTable.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/globalTable.GlobalTable */ Boolean = js.native
 }
-

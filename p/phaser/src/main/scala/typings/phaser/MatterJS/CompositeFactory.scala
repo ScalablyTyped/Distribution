@@ -2,10 +2,11 @@ package typings.phaser.MatterJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CompositeFactory extends js.Object {
+  
   /**
     * Generic add function. Adds one or many body(s), constraint(s) or a composite(s) to the given composite.
     * Triggers `beforeAdd` and `afterAdd` events on the `composite`.
@@ -17,6 +18,7 @@ trait CompositeFactory extends js.Object {
   def add(composite: CompositeType, `object`: BodyType): CompositeType = js.native
   def add(composite: CompositeType, `object`: CompositeType): CompositeType = js.native
   def add(composite: CompositeType, `object`: ConstraintType): CompositeType = js.native
+  
   /**
     * Returns all bodies in the given composite, including all bodies in its children, recursively.
     * @method allBodies
@@ -24,6 +26,7 @@ trait CompositeFactory extends js.Object {
     * @return {body[]} All the bodies
     */
   def allBodies(composite: CompositeType): js.Array[BodyType] = js.native
+  
   /**
     * Returns all composites in the given composite, including all composites in its children, recursively.
     * @method allComposites
@@ -31,6 +34,7 @@ trait CompositeFactory extends js.Object {
     * @return {composite[]} All the composites
     */
   def allComposites(composite: CompositeType): js.Array[CompositeType] = js.native
+  
   /**
     * Returns all constraints in the given composite, including all constraints in its children, recursively.
     * @method allConstraints
@@ -38,6 +42,7 @@ trait CompositeFactory extends js.Object {
     * @return {constraint[]} All the constraints
     */
   def allConstraints(composite: CompositeType): js.Array[ConstraintType] = js.native
+  
   /**
     * Removes all bodies, constraints and composites from the given composite.
     * Optionally clearing its children recursively.
@@ -48,6 +53,7 @@ trait CompositeFactory extends js.Object {
     */
   def clear(composite: CompositeType, keepStatic: Boolean): Unit = js.native
   def clear(composite: CompositeType, keepStatic: Boolean, deep: Boolean): Unit = js.native
+  
   /**
     * Creates a new composite. The options parameter is an object that specifies any properties you wish to override the defaults.
     * See the properites section below for detailed information on what you can pass via the `options` object.
@@ -57,6 +63,7 @@ trait CompositeFactory extends js.Object {
     */
   def create(): CompositeType = js.native
   def create(options: ICompositeDefinition): CompositeType = js.native
+  
   /**
     * Searches the composite recursively for an object matching the type and id supplied, null if not found.
     * @method get
@@ -66,6 +73,7 @@ trait CompositeFactory extends js.Object {
     * @return {object} The requested object, if found
     */
   def get(composite: CompositeType, id: Double, `type`: String): BodyType | CompositeType | ConstraintType = js.native
+  
   /**
     * Moves the given object(s) from compositeA to compositeB (equal to a remove followed by an add).
     * @method move
@@ -79,6 +87,7 @@ trait CompositeFactory extends js.Object {
     objects: js.Array[BodyType | CompositeType | ConstraintType],
     compositeB: CompositeType
   ): CompositeType = js.native
+  
   /**
     * Assigns new ids for all objects in the composite, recursively.
     * @method rebase
@@ -86,6 +95,7 @@ trait CompositeFactory extends js.Object {
     * @return {composite} Returns composite
     */
   def rebase(composite: CompositeType): CompositeType = js.native
+  
   /**
     * Generic remove function. Removes one or many body(s), constraint(s) or a composite(s) to the given composite.
     * Optionally searching its children recursively.
@@ -102,6 +112,7 @@ trait CompositeFactory extends js.Object {
   def remove(composite: CompositeType, `object`: CompositeType, deep: Boolean): CompositeType = js.native
   def remove(composite: CompositeType, `object`: ConstraintType): CompositeType = js.native
   def remove(composite: CompositeType, `object`: ConstraintType, deep: Boolean): CompositeType = js.native
+  
   /**
     * Rotates all children in the composite by a given angle about the given point, without imparting any angular velocity.
     * @method rotate
@@ -112,6 +123,7 @@ trait CompositeFactory extends js.Object {
     */
   def rotate(composite: CompositeType, rotation: Double, point: Vector): Unit = js.native
   def rotate(composite: CompositeType, rotation: Double, point: Vector, recursive: Boolean): Unit = js.native
+  
   /**
     * Scales all children in the composite, including updating physical properties (mass, area, axes, inertia), from a world-space point.
     * @method scale
@@ -123,6 +135,7 @@ trait CompositeFactory extends js.Object {
     */
   def scale(composite: CompositeType, scaleX: Double, scaleY: Double, point: Vector): Unit = js.native
   def scale(composite: CompositeType, scaleX: Double, scaleY: Double, point: Vector, recursive: Boolean): Unit = js.native
+  
   /**
     * Sets the composite's `isModified` flag.
     * If `updateParents` is true, all parents will be set (default: false).
@@ -142,6 +155,7 @@ trait CompositeFactory extends js.Object {
   ): Unit = js.native
   def setModified(composite: CompositeType, isModified: Boolean, updateParents: Boolean): Unit = js.native
   def setModified(composite: CompositeType, isModified: Boolean, updateParents: Boolean, updateChildren: Boolean): Unit = js.native
+  
   /**
     * Translates all children in the composite by a given vector relative to their current positions,
     * without imparting any velocity.
@@ -153,4 +167,3 @@ trait CompositeFactory extends js.Object {
   def translate(composite: CompositeType, translation: Vector): Unit = js.native
   def translate(composite: CompositeType, translation: Vector, recursive: Boolean): Unit = js.native
 }
-

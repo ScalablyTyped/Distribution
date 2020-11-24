@@ -7,7 +7,7 @@ import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import typings.jsrsasign.jsrsasign.RSAKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SubjectPublicKeyInfo ASN.1 structure class
@@ -30,7 +30,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SubjectPublicKeyInfo extends ASN1Object {
+  
   def getASN1Object(): DERSequence = js.native
+  
   def setPubKey(key: DSA): Unit = js.native
   def setPubKey(key: ECDSA): Unit = js.native
   /**
@@ -42,4 +44,3 @@ trait SubjectPublicKeyInfo extends ASN1Object {
     */
   def setPubKey(key: RSAKey): Unit = js.native
 }
-

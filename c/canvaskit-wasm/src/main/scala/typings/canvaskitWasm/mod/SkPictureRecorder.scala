@@ -2,18 +2,28 @@ package typings.canvaskitWasm.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkPictureRecorder extends SkObject[SkPictureRecorder] {
-  def beginRecording(rect: SkRect): SkCanvas = js.native
+trait SkPictureRecorder extends EmbindObject[SkPicture] {
+  
+  /**
+    * Returns a canvas on which to draw. When done drawing, call finishRecordingAsPicture()
+    *
+    * @param bounds - a rect to cull the results.
+    */
+  def beginRecording(bounds: InputRect): SkCanvas = js.native
+  
+  /**
+    * Returns the captured draw commands as a picture and invalidates the canvas returned earlier.
+    */
   def finishRecordingAsPicture(): SkPicture = js.native
 }
-
 object SkPictureRecorder {
+  
   @scala.inline
   def apply(
-    beginRecording: SkRect => SkCanvas,
+    beginRecording: InputRect => SkCanvas,
     delete: () => Unit,
     deleteAfter: () => Unit,
     finishRecordingAsPicture: () => SkPicture,
@@ -23,22 +33,26 @@ object SkPictureRecorder {
     val __obj = js.Dynamic.literal(beginRecording = js.Any.fromFunction1(beginRecording), delete = js.Any.fromFunction0(delete), deleteAfter = js.Any.fromFunction0(deleteAfter), finishRecordingAsPicture = js.Any.fromFunction0(finishRecordingAsPicture), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted))
     __obj.asInstanceOf[SkPictureRecorder]
   }
+  
   @scala.inline
   implicit class SkPictureRecorderOps[Self <: SkPictureRecorder] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
-    def setBeginRecording(value: SkRect => SkCanvas): Self = this.set("beginRecording", js.Any.fromFunction1(value))
+    def setBeginRecording(value: InputRect => SkCanvas): Self = this.set("beginRecording", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setFinishRecordingAsPicture(value: () => SkPicture): Self = this.set("finishRecordingAsPicture", js.Any.fromFunction0(value))
   }
-  
 }
-

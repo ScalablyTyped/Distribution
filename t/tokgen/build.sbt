@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tokgen"
-version := "1.0-dt-20180509Z-8ac3c2"
+version := "1.0-dt-20180509Z-5078a3"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

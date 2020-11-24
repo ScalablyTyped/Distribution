@@ -2,166 +2,220 @@ package typings.awsSdk.cloudformationMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UpdateStackInput extends js.Object {
+  
   /**
-    * In some cases, you must explicitly acknowledge that your stack template contains certain capabilities in order for AWS CloudFormation to update the stack.    CAPABILITY_IAM and CAPABILITY_NAMED_IAM  Some stack templates might include resources that can affect permissions in your AWS account; for example, by creating new AWS Identity and Access Management (IAM) users. For those stacks, you must explicitly acknowledge this by specifying one of these capabilities. The following IAM resources require you to specify either the CAPABILITY_IAM or CAPABILITY_NAMED_IAM capability.   If you have IAM resources, you can specify either capability.    If you have IAM resources with custom names, you must specify CAPABILITY_NAMED_IAM.    If you don't specify either of these capabilities, AWS CloudFormation returns an InsufficientCapabilities error.   If your stack template contains these resources, we recommend that you review all permissions associated with them and edit their permissions if necessary.     AWS::IAM::AccessKey      AWS::IAM::Group      AWS::IAM::InstanceProfile      AWS::IAM::Policy      AWS::IAM::Role      AWS::IAM::User      AWS::IAM::UserToGroupAddition    For more information, see Acknowledging IAM Resources in AWS CloudFormation Templates.    CAPABILITY_AUTO_EXPAND  Some template contain macros. Macros perform custom processing on templates; this can include simple actions like find-and-replace operations, all the way to extensive transformations of entire templates. Because of this, users typically create a change set from the processed template, so that they can review the changes resulting from the macros before actually updating the stack. If your stack template contains one or more macros, and you choose to update a stack directly from the processed template, without first reviewing the resulting changes in a change set, you must acknowledge this capability. This includes the AWS::Include and AWS::Serverless transforms, which are macros hosted by AWS CloudFormation. Change sets do not currently support nested stacks. If you want to update a stack from a stack template that contains macros and nested stacks, you must update the stack directly from the template using this capability.  You should only update stacks directly from a stack template that contains macros if you know what processing the macro performs. Each macro relies on an underlying Lambda service function for processing stack templates. Be aware that the Lambda function owner can update the function operation without AWS CloudFormation being notified.  For more information, see Using AWS CloudFormation Macros to Perform Custom Processing on Templates.  
+    * In some cases, you must explicitly acknowledge that your stack template contains certain capabilities in order for AWS CloudFormation to update the stack.    CAPABILITY_IAM and CAPABILITY_NAMED_IAM  Some stack templates might include resources that can affect permissions in your AWS account; for example, by creating new AWS Identity and Access Management (IAM) users. For those stacks, you must explicitly acknowledge this by specifying one of these capabilities. The following IAM resources require you to specify either the CAPABILITY_IAM or CAPABILITY_NAMED_IAM capability.   If you have IAM resources, you can specify either capability.    If you have IAM resources with custom names, you must specify CAPABILITY_NAMED_IAM.    If you don't specify either of these capabilities, AWS CloudFormation returns an InsufficientCapabilities error.   If your stack template contains these resources, we recommend that you review all permissions associated with them and edit their permissions if necessary.     AWS::IAM::AccessKey      AWS::IAM::Group      AWS::IAM::InstanceProfile      AWS::IAM::Policy      AWS::IAM::Role      AWS::IAM::User      AWS::IAM::UserToGroupAddition    For more information, see Acknowledging IAM Resources in AWS CloudFormation Templates.    CAPABILITY_AUTO_EXPAND  Some template contain macros. Macros perform custom processing on templates; this can include simple actions like find-and-replace operations, all the way to extensive transformations of entire templates. Because of this, users typically create a change set from the processed template, so that they can review the changes resulting from the macros before actually updating the stack. If your stack template contains one or more macros, and you choose to update a stack directly from the processed template, without first reviewing the resulting changes in a change set, you must acknowledge this capability. This includes the AWS::Include and AWS::Serverless transforms, which are macros hosted by AWS CloudFormation. If you want to update a stack from a stack template that contains macros and nested stacks, you must update the stack directly from the template using this capability.  You should only update stacks directly from a stack template that contains macros if you know what processing the macro performs. Each macro relies on an underlying Lambda service function for processing stack templates. Be aware that the Lambda function owner can update the function operation without AWS CloudFormation being notified.  For more information, see Using AWS CloudFormation Macros to Perform Custom Processing on Templates.  
     */
   var Capabilities: js.UndefOr[typings.awsSdk.cloudformationMod.Capabilities] = js.native
+  
   /**
     * A unique identifier for this UpdateStack request. Specify this token if you plan to retry requests so that AWS CloudFormation knows that you're not attempting to update a stack with the same name. You might retry UpdateStack requests to ensure that AWS CloudFormation successfully received them. All events triggered by a given stack operation are assigned the same client request token, which you can use to track operations. For example, if you execute a CreateStack operation with the token token1, then all the StackEvents generated by that operation will have ClientRequestToken set as token1. In the console, stack operations display the client request token on the Events tab. Stack operations that are initiated from the console use the token format Console-StackOperation-ID, which helps you easily identify the stack operation . For example, if you create a stack using the console, each stack event would be assigned the same token in the following format: Console-CreateStack-7f59c3cf-00d2-40c7-b2ff-e75db0987002. 
     */
   var ClientRequestToken: js.UndefOr[typings.awsSdk.cloudformationMod.ClientRequestToken] = js.native
+  
   /**
     * Amazon Simple Notification Service topic Amazon Resource Names (ARNs) that AWS CloudFormation associates with the stack. Specify an empty list to remove all notification topics.
     */
   var NotificationARNs: js.UndefOr[typings.awsSdk.cloudformationMod.NotificationARNs] = js.native
+  
   /**
     * A list of Parameter structures that specify input parameters for the stack. For more information, see the Parameter data type.
     */
   var Parameters: js.UndefOr[typings.awsSdk.cloudformationMod.Parameters] = js.native
+  
   /**
     * The template resource types that you have permissions to work with for this update stack action, such as AWS::EC2::Instance, AWS::EC2::*, or Custom::MyCustomInstance. If the list of resource types doesn't include a resource that you're updating, the stack update fails. By default, AWS CloudFormation grants permissions to all resource types. AWS Identity and Access Management (IAM) uses this parameter for AWS CloudFormation-specific condition keys in IAM policies. For more information, see Controlling Access with AWS Identity and Access Management.
     */
   var ResourceTypes: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceTypes] = js.native
+  
   /**
     * The Amazon Resource Name (ARN) of an AWS Identity and Access Management (IAM) role that AWS CloudFormation assumes to update the stack. AWS CloudFormation uses the role's credentials to make calls on your behalf. AWS CloudFormation always uses this role for all future operations on the stack. As long as users have permission to operate on the stack, AWS CloudFormation uses this role even if the users don't have permission to pass it. Ensure that the role grants least privilege. If you don't specify a value, AWS CloudFormation uses the role that was previously associated with the stack. If no role is available, AWS CloudFormation uses a temporary session that is generated from your user credentials.
     */
   var RoleARN: js.UndefOr[RoleARN_] = js.native
+  
   /**
     * The rollback triggers for AWS CloudFormation to monitor during stack creation and updating operations, and for the specified monitoring period afterwards.
     */
   var RollbackConfiguration: js.UndefOr[typings.awsSdk.cloudformationMod.RollbackConfiguration] = js.native
+  
   /**
     * The name or unique stack ID of the stack to update.
     */
   var StackName: typings.awsSdk.cloudformationMod.StackName = js.native
+  
   /**
     * Structure containing a new stack policy body. You can specify either the StackPolicyBody or the StackPolicyURL parameter, but not both. You might update the stack policy, for example, in order to protect a new resource that you created during a stack update. If you do not specify a stack policy, the current policy that is associated with the stack is unchanged.
     */
   var StackPolicyBody: js.UndefOr[typings.awsSdk.cloudformationMod.StackPolicyBody] = js.native
+  
   /**
     * Structure containing the temporary overriding stack policy body. You can specify either the StackPolicyDuringUpdateBody or the StackPolicyDuringUpdateURL parameter, but not both. If you want to update protected resources, specify a temporary overriding stack policy during this update. If you do not specify a stack policy, the current policy that is associated with the stack will be used.
     */
   var StackPolicyDuringUpdateBody: js.UndefOr[typings.awsSdk.cloudformationMod.StackPolicyDuringUpdateBody] = js.native
+  
   /**
     * Location of a file containing the temporary overriding stack policy. The URL must point to a policy (max size: 16KB) located in an S3 bucket in the same Region as the stack. You can specify either the StackPolicyDuringUpdateBody or the StackPolicyDuringUpdateURL parameter, but not both. If you want to update protected resources, specify a temporary overriding stack policy during this update. If you do not specify a stack policy, the current policy that is associated with the stack will be used.
     */
   var StackPolicyDuringUpdateURL: js.UndefOr[typings.awsSdk.cloudformationMod.StackPolicyDuringUpdateURL] = js.native
+  
   /**
     * Location of a file containing the updated stack policy. The URL must point to a policy (max size: 16KB) located in an S3 bucket in the same Region as the stack. You can specify either the StackPolicyBody or the StackPolicyURL parameter, but not both. You might update the stack policy, for example, in order to protect a new resource that you created during a stack update. If you do not specify a stack policy, the current policy that is associated with the stack is unchanged.
     */
   var StackPolicyURL: js.UndefOr[typings.awsSdk.cloudformationMod.StackPolicyURL] = js.native
+  
   /**
     * Key-value pairs to associate with this stack. AWS CloudFormation also propagates these tags to supported resources in the stack. You can specify a maximum number of 50 tags. If you don't specify this parameter, AWS CloudFormation doesn't modify the stack's tags. If you specify an empty value, AWS CloudFormation removes all associated tags.
     */
   var Tags: js.UndefOr[typings.awsSdk.cloudformationMod.Tags] = js.native
+  
   /**
     * Structure containing the template body with a minimum length of 1 byte and a maximum length of 51,200 bytes. (For more information, go to Template Anatomy in the AWS CloudFormation User Guide.) Conditional: You must specify only one of the following parameters: TemplateBody, TemplateURL, or set the UsePreviousTemplate to true.
     */
   var TemplateBody: js.UndefOr[typings.awsSdk.cloudformationMod.TemplateBody] = js.native
+  
   /**
     * Location of file containing the template body. The URL must point to a template that is located in an Amazon S3 bucket. For more information, go to Template Anatomy in the AWS CloudFormation User Guide. Conditional: You must specify only one of the following parameters: TemplateBody, TemplateURL, or set the UsePreviousTemplate to true.
     */
   var TemplateURL: js.UndefOr[typings.awsSdk.cloudformationMod.TemplateURL] = js.native
+  
   /**
     * Reuse the existing template that is associated with the stack that you are updating. Conditional: You must specify only one of the following parameters: TemplateBody, TemplateURL, or set the UsePreviousTemplate to true.
     */
   var UsePreviousTemplate: js.UndefOr[typings.awsSdk.cloudformationMod.UsePreviousTemplate] = js.native
 }
-
 object UpdateStackInput {
+  
   @scala.inline
   def apply(StackName: StackName): UpdateStackInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateStackInput]
   }
+  
   @scala.inline
   implicit class UpdateStackInputOps[Self <: UpdateStackInput] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setStackName(value: StackName): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCapabilitiesVarargs(value: Capability*): Self = this.set("Capabilities", js.Array(value :_*))
+    
     @scala.inline
     def setCapabilities(value: Capabilities): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCapabilities: Self = this.set("Capabilities", js.undefined)
+    
     @scala.inline
     def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    
     @scala.inline
     def setNotificationARNsVarargs(value: NotificationARN*): Self = this.set("NotificationARNs", js.Array(value :_*))
+    
     @scala.inline
     def setNotificationARNs(value: NotificationARNs): Self = this.set("NotificationARNs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNotificationARNs: Self = this.set("NotificationARNs", js.undefined)
+    
     @scala.inline
     def setParametersVarargs(value: Parameter*): Self = this.set("Parameters", js.Array(value :_*))
+    
     @scala.inline
     def setParameters(value: Parameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteParameters: Self = this.set("Parameters", js.undefined)
+    
     @scala.inline
     def setResourceTypesVarargs(value: ResourceType*): Self = this.set("ResourceTypes", js.Array(value :_*))
+    
     @scala.inline
     def setResourceTypes(value: ResourceTypes): Self = this.set("ResourceTypes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResourceTypes: Self = this.set("ResourceTypes", js.undefined)
+    
     @scala.inline
     def setRoleARN(value: RoleARN_): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    
     @scala.inline
     def setRollbackConfiguration(value: RollbackConfiguration): Self = this.set("RollbackConfiguration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRollbackConfiguration: Self = this.set("RollbackConfiguration", js.undefined)
+    
     @scala.inline
     def setStackPolicyBody(value: StackPolicyBody): Self = this.set("StackPolicyBody", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStackPolicyBody: Self = this.set("StackPolicyBody", js.undefined)
+    
     @scala.inline
     def setStackPolicyDuringUpdateBody(value: StackPolicyDuringUpdateBody): Self = this.set("StackPolicyDuringUpdateBody", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStackPolicyDuringUpdateBody: Self = this.set("StackPolicyDuringUpdateBody", js.undefined)
+    
     @scala.inline
     def setStackPolicyDuringUpdateURL(value: StackPolicyDuringUpdateURL): Self = this.set("StackPolicyDuringUpdateURL", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStackPolicyDuringUpdateURL: Self = this.set("StackPolicyDuringUpdateURL", js.undefined)
+    
     @scala.inline
     def setStackPolicyURL(value: StackPolicyURL): Self = this.set("StackPolicyURL", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStackPolicyURL: Self = this.set("StackPolicyURL", js.undefined)
+    
     @scala.inline
     def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    
     @scala.inline
     def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTags: Self = this.set("Tags", js.undefined)
+    
     @scala.inline
     def setTemplateBody(value: TemplateBody): Self = this.set("TemplateBody", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTemplateBody: Self = this.set("TemplateBody", js.undefined)
+    
     @scala.inline
     def setTemplateURL(value: TemplateURL): Self = this.set("TemplateURL", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTemplateURL: Self = this.set("TemplateURL", js.undefined)
+    
     @scala.inline
     def setUsePreviousTemplate(value: UsePreviousTemplate): Self = this.set("UsePreviousTemplate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUsePreviousTemplate: Self = this.set("UsePreviousTemplate", js.undefined)
   }
-  
 }
-

@@ -24,10 +24,11 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.WIFI_NETWORK
 import typings.tizenCommonWeb.tizenMod.ErrorCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SystemInfoManager extends js.Object {
+  
   /**
     * Adds a listener to allow tracking of changes in one or more values of a system property.
     *
@@ -57,6 +58,7 @@ trait SystemInfoManager extends js.Object {
     options: js.UndefOr[SystemInfoOptions],
     errorCallback: js.UndefOr[ErrorCallback]
   ): Double = js.native
+  
   /**
     * Adds a listener to allow tracking changes in one or more system properties.
     *
@@ -93,6 +95,7 @@ trait SystemInfoManager extends js.Object {
     options: js.UndefOr[SystemInfoOptions],
     errorCallback: js.UndefOr[ErrorCallback]
   ): Double = js.native
+  
   /**
     * Gets the amount of memory that is not in use (in bytes).
     *
@@ -102,6 +105,7 @@ trait SystemInfoManager extends js.Object {
     * @throw WebAPIException `UnknownError`.
     */
   def getAvailableMemory(): Double = js.native
+  
   /**
     * Gets the capabilities of the device.
     * The function must synchronously acquire the capabilities of the device.
@@ -112,6 +116,7 @@ trait SystemInfoManager extends js.Object {
     * @throw WebAPIException `UnknownError`
     */
   def getCapabilities(): SystemInfoDeviceCapability = js.native
+  
   /**
     * Gets a device capability related to a given key.
     *
@@ -125,6 +130,7 @@ trait SystemInfoManager extends js.Object {
     * @throw WebAPIException `UnknownError`
     */
   def getCapability(key: String): js.Any = js.native
+  
   /**
     * Gets the number of system property information provided for a particular system property.
     *
@@ -180,6 +186,7 @@ trait SystemInfoManager extends js.Object {
   def getCount_VIDEOSOURCE(property: VIDEOSOURCE): Double = js.native
   @JSName("getCount")
   def getCount_WIFINETWORK(property: WIFI_NETWORK): Double = js.native
+  
   /**
     * Gets the current value of a specified system property.
     *
@@ -206,6 +213,7 @@ trait SystemInfoManager extends js.Object {
     successCallback: SystemInfoPropertySuccessCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
+  
   /**
     * Gets the current values of a specified system property.
     * It is recommended that you check if a device provides one or more than one value for a particular system property via `getCount()`
@@ -398,6 +406,7 @@ trait SystemInfoManager extends js.Object {
     successCallback: SystemInfoPropertyArraySuccessCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
+  
   @JSName("getPropertyValue")
   def getPropertyValue_ADS(property: ADS, successCallback: SystemInfoPropertySuccessCallback): Unit = js.native
   @JSName("getPropertyValue")
@@ -538,6 +547,7 @@ trait SystemInfoManager extends js.Object {
     successCallback: SystemInfoPropertySuccessCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
+  
   /**
     * Gets the total amount of system memory (in bytes).
     *
@@ -547,6 +557,7 @@ trait SystemInfoManager extends js.Object {
     * @throw WebAPIException `UnknownError`.
     */
   def getTotalMemory(): Double = js.native
+  
   /**
     * Unsubscribes notifications for property changes.
     *
@@ -562,4 +573,3 @@ trait SystemInfoManager extends js.Object {
     */
   def removePropertyValueChangeListener(listenerId: Double): Unit = js.native
 }
-

@@ -2,14 +2,14 @@ package typings.playerframework.PlayerFramework
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TextTrackReadyState extends js.Object
-
 @JSGlobal("PlayerFramework.TextTrackReadyState")
 @js.native
 object TextTrackReadyState extends js.Object {
+  
   /**
     * The track failed to load.
     */
@@ -33,6 +33,4 @@ object TextTrackReadyState extends js.Object {
     */
   @js.native
   sealed trait none extends TextTrackReadyState
-  
 }
-

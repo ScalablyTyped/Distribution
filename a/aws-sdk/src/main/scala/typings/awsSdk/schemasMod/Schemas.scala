@@ -2,18 +2,20 @@ package typings.awsSdk.schemasMod
 
 import typings.awsSdk.anon.DescribeCodeBindingReques
 import typings.awsSdk.awsSdkStrings.codeBindingExists
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Schemas extends Service {
+  
   @JSName("config")
   var config_Schemas: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a discoverer.
     */
@@ -27,6 +29,7 @@ trait Schemas extends Service {
     params: CreateDiscovererRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDiscovererResponse, Unit]
   ): Request[CreateDiscovererResponse, AWSError] = js.native
+  
   /**
     * Creates a registry.
     */
@@ -40,6 +43,7 @@ trait Schemas extends Service {
     params: CreateRegistryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRegistryResponse, Unit]
   ): Request[CreateRegistryResponse, AWSError] = js.native
+  
   /**
     * Creates a schema definition. Inactive schemas will be deleted after two years.
     */
@@ -53,6 +57,7 @@ trait Schemas extends Service {
     params: CreateSchemaRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSchemaResponse, Unit]
   ): Request[CreateSchemaResponse, AWSError] = js.native
+  
   /**
     * Deletes a discoverer.
     */
@@ -66,6 +71,7 @@ trait Schemas extends Service {
     params: DeleteDiscovererRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a Registry.
     */
@@ -79,6 +85,7 @@ trait Schemas extends Service {
     params: DeleteRegistryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Delete the resource-based policy attached to the specified registry.
     */
@@ -92,6 +99,7 @@ trait Schemas extends Service {
     params: DeleteResourcePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Delete a schema definition.
     */
@@ -105,6 +113,7 @@ trait Schemas extends Service {
     params: DeleteSchemaRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Delete the schema version definition
     */
@@ -118,6 +127,7 @@ trait Schemas extends Service {
     params: DeleteSchemaVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Describe the code binding URI.
     */
@@ -131,6 +141,7 @@ trait Schemas extends Service {
     params: DescribeCodeBindingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCodeBindingResponse, Unit]
   ): Request[DescribeCodeBindingResponse, AWSError] = js.native
+  
   /**
     * Describes the discoverer.
     */
@@ -144,6 +155,7 @@ trait Schemas extends Service {
     params: DescribeDiscovererRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDiscovererResponse, Unit]
   ): Request[DescribeDiscovererResponse, AWSError] = js.native
+  
   /**
     * Describes the registry.
     */
@@ -157,6 +169,7 @@ trait Schemas extends Service {
     params: DescribeRegistryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRegistryResponse, Unit]
   ): Request[DescribeRegistryResponse, AWSError] = js.native
+  
   /**
     * Retrieve the schema definition.
     */
@@ -170,6 +183,21 @@ trait Schemas extends Service {
     params: DescribeSchemaRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSchemaResponse, Unit]
   ): Request[DescribeSchemaResponse, AWSError] = js.native
+  
+  /**
+    * 
+    */
+  def exportSchema(): Request[ExportSchemaResponse, AWSError] = js.native
+  def exportSchema(callback: js.Function2[/* err */ AWSError, /* data */ ExportSchemaResponse, Unit]): Request[ExportSchemaResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def exportSchema(params: ExportSchemaRequest): Request[ExportSchemaResponse, AWSError] = js.native
+  def exportSchema(
+    params: ExportSchemaRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ExportSchemaResponse, Unit]
+  ): Request[ExportSchemaResponse, AWSError] = js.native
+  
   /**
     * Get the code binding source URI.
     */
@@ -183,6 +211,7 @@ trait Schemas extends Service {
     params: GetCodeBindingSourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCodeBindingSourceResponse, Unit]
   ): Request[GetCodeBindingSourceResponse, AWSError] = js.native
+  
   /**
     * Get the discovered schema that was generated based on sampled events.
     */
@@ -196,6 +225,7 @@ trait Schemas extends Service {
     params: GetDiscoveredSchemaRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDiscoveredSchemaResponse, Unit]
   ): Request[GetDiscoveredSchemaResponse, AWSError] = js.native
+  
   /**
     * Retrieves the resource-based policy attached to a given registry.
     */
@@ -209,6 +239,7 @@ trait Schemas extends Service {
     params: GetResourcePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePolicyResponse, Unit]
   ): Request[GetResourcePolicyResponse, AWSError] = js.native
+  
   /**
     * List the discoverers.
     */
@@ -222,6 +253,7 @@ trait Schemas extends Service {
     params: ListDiscoverersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDiscoverersResponse, Unit]
   ): Request[ListDiscoverersResponse, AWSError] = js.native
+  
   /**
     * List the registries.
     */
@@ -235,6 +267,7 @@ trait Schemas extends Service {
     params: ListRegistriesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRegistriesResponse, Unit]
   ): Request[ListRegistriesResponse, AWSError] = js.native
+  
   /**
     * Provides a list of the schema versions and related information.
     */
@@ -248,6 +281,7 @@ trait Schemas extends Service {
     params: ListSchemaVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSchemaVersionsResponse, Unit]
   ): Request[ListSchemaVersionsResponse, AWSError] = js.native
+  
   /**
     * List the schemas.
     */
@@ -261,6 +295,7 @@ trait Schemas extends Service {
     params: ListSchemasRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSchemasResponse, Unit]
   ): Request[ListSchemasResponse, AWSError] = js.native
+  
   /**
     * Get tags for resource.
     */
@@ -274,6 +309,7 @@ trait Schemas extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Put code binding URI
     */
@@ -287,6 +323,7 @@ trait Schemas extends Service {
     params: PutCodeBindingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutCodeBindingResponse, Unit]
   ): Request[PutCodeBindingResponse, AWSError] = js.native
+  
   /**
     * The name of the policy.
     */
@@ -300,6 +337,7 @@ trait Schemas extends Service {
     params: PutResourcePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyResponse, Unit]
   ): Request[PutResourcePolicyResponse, AWSError] = js.native
+  
   /**
     * Search the schemas
     */
@@ -313,6 +351,7 @@ trait Schemas extends Service {
     params: SearchSchemasRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchSchemasResponse, Unit]
   ): Request[SearchSchemasResponse, AWSError] = js.native
+  
   /**
     * Starts the discoverer
     */
@@ -326,6 +365,7 @@ trait Schemas extends Service {
     params: StartDiscovererRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartDiscovererResponse, Unit]
   ): Request[StartDiscovererResponse, AWSError] = js.native
+  
   /**
     * Stops the discoverer
     */
@@ -339,6 +379,7 @@ trait Schemas extends Service {
     params: StopDiscovererRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopDiscovererResponse, Unit]
   ): Request[StopDiscovererResponse, AWSError] = js.native
+  
   /**
     * Add tags to a resource.
     */
@@ -349,6 +390,7 @@ trait Schemas extends Service {
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Removes tags from a resource.
     */
@@ -362,6 +404,7 @@ trait Schemas extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates the discoverer
     */
@@ -375,6 +418,7 @@ trait Schemas extends Service {
     params: UpdateDiscovererRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDiscovererResponse, Unit]
   ): Request[UpdateDiscovererResponse, AWSError] = js.native
+  
   /**
     * Updates a registry.
     */
@@ -388,6 +432,7 @@ trait Schemas extends Service {
     params: UpdateRegistryRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRegistryResponse, Unit]
   ): Request[UpdateRegistryResponse, AWSError] = js.native
+  
   /**
     * Updates the schema definition Inactive schemas will be deleted after two years.
     */
@@ -401,6 +446,7 @@ trait Schemas extends Service {
     params: UpdateSchemaRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateSchemaResponse, Unit]
   ): Request[UpdateSchemaResponse, AWSError] = js.native
+  
   /**
     * Waits for the codeBindingExists state by periodically calling the underlying Schemas.describeCodeBindingoperation every 2 seconds (at most 30 times). Wait until code binding is generated
     */
@@ -423,4 +469,3 @@ trait Schemas extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCodeBindingResponse, Unit]
   ): Request[DescribeCodeBindingResponse, AWSError] = js.native
 }
-

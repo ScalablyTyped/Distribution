@@ -10,9 +10,9 @@ Timers with near-infinite duration support
 | ------------------ | :-------------: |
 | Full name          | safe-timers |
 | Keywords           | setTimeout, setInterval, timer, timeout, interval, timers, timeouts, intervals |
-| # releases         | 1 |
-| # dependents       | 9 |
-| # downloads        | 286149 |
+| # releases         | 0 |
+| # dependents       | 13 |
+| # downloads        | 342781 |
 | # stars            | 0 |
 
 ## Links

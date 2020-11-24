@@ -11,8 +11,8 @@ destroy a stream if possible
 | Full name          | destroy |
 | Keywords           | stream, streams, destroy, cleanup, leak, fd |
 | # releases         | 0 |
-| # dependents       | 180 |
-| # downloads        | 414867731 |
+| # dependents       | 222 |
+| # downloads        | 573623044 |
 | # stars            | 4 |
 
 ## Links

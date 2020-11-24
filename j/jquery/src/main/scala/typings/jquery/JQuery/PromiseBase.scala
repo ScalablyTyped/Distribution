@@ -6,7 +6,7 @@ import typings.jquery.jqueryStrings.rejected
 import typings.jquery.jqueryStrings.resolved
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Type parameter guide
 // --------------------
@@ -28,6 +28,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PromiseBase[TR, TJ, TN, UR, UJ, UN, VR, VJ, VN, SR, SJ, SN] extends js.Object {
+  
   /**
     * Add handlers to be called when the Deferred object is either resolved or rejected.
     * @param alwaysCallback A function, or array of functions, that is called when the Deferred is resolved or rejected.
@@ -45,6 +46,7 @@ trait PromiseBase[TR, TJ, TN, UR, UJ, UN, VR, VJ, VN, SR, SJ, SN] extends js.Obj
     alwaysCallback: TypeOrArray[CallbackBase[TR | TJ, UR | UJ, VR | VJ, SR | SJ]],
     alwaysCallbacks: (TypeOrArray[CallbackBase[TR | TJ, UR | UJ, VR | VJ, SR | SJ]])*
   ): this.type = js.native
+  
   // #endregion
   /**
     * Add handlers to be called when the Deferred object is rejected.
@@ -72,6 +74,7 @@ trait PromiseBase[TR, TJ, TN, UR, UJ, UN, VR, VJ, VN, SR, SJ, SN] extends js.Obj
       (PromiseBase[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF]) | Thenable[ARF] | ARF
     ]
   ): PromiseBase[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF] = js.native
+  
   /**
     * Add handlers to be called when the Deferred object is resolved.
     * @param doneCallback A function, or array of functions, that are called when the Deferred is resolved.
@@ -136,6 +139,7 @@ trait PromiseBase[TR, TJ, TN, UR, UJ, UN, VR, VJ, VN, SR, SJ, SN] extends js.Obj
     doneCallback: TypeOrArray[CallbackBase[TR, UR, VR, SR]],
     doneCallbacks: (TypeOrArray[CallbackBase[TR, UR, VR, SR]])*
   ): this.type = js.native
+  
   /**
     * Add handlers to be called when the Deferred object is rejected.
     * @param failCallback A function, or array of functions, that are called when the Deferred is rejected.
@@ -157,6 +161,7 @@ trait PromiseBase[TR, TJ, TN, UR, UJ, UN, VR, VJ, VN, SR, SJ, SN] extends js.Obj
     failCallback: TypeOrArray[CallbackBase[TJ, UJ, VJ, SJ]],
     failCallbacks: (TypeOrArray[CallbackBase[TJ, UJ, VJ, SJ]])*
   ): this.type = js.native
+  
   /**
     * Utility method to filter and/or chain Deferreds.
     * @param doneFilter An optional function that is called when the Deferred is resolved.
@@ -586,6 +591,7 @@ trait PromiseBase[TR, TJ, TN, UR, UJ, UN, VR, VJ, VN, SR, SJ, SN] extends js.Obj
     RJD | RJF | RJP, 
     RND | RNF | RNP
   ] = js.native
+  
   /**
     * Add handlers to be called when the Deferred object generates progress notifications.
     * @param progressCallback A function, or array of functions, to be called when the Deferred generates progress notifications.
@@ -598,6 +604,7 @@ trait PromiseBase[TR, TJ, TN, UR, UJ, UN, VR, VJ, VN, SR, SJ, SN] extends js.Obj
     progressCallback: TypeOrArray[CallbackBase[TN, UN, VN, SN]],
     progressCallbacks: (TypeOrArray[CallbackBase[TN, UN, VN, SN]])*
   ): this.type = js.native
+  
   /**
     * Return a Deferred's Promise object.
     * @see \`{@link https://api.jquery.com/deferred.promise/ }\`
@@ -673,12 +680,14 @@ trait PromiseBase[TR, TJ, TN, UR, UJ, UN, VR, VJ, VN, SR, SJ, SN] extends js.Obj
   ```
     */
   def promise[TTarget /* <: js.Object */](target: TTarget): this.type with TTarget = js.native
+  
   /**
     * Determine the current state of a Deferred object.
     * @see \`{@link https://api.jquery.com/deferred.state/ }\`
     * @since 1.7
     */
   def state(): pending | resolved | rejected = js.native
+  
   /**
     * Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
     * @param doneFilter An optional function that is called when the Deferred is resolved.
@@ -1172,4 +1181,3 @@ trait PromiseBase[TR, TJ, TN, UR, UJ, UN, VR, VJ, VN, SR, SJ, SN] extends js.Obj
     RND | RNF | RNP
   ] = js.native
 }
-

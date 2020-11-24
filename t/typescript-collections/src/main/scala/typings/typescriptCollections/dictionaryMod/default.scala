@@ -2,7 +2,7 @@ package typings.typescriptCollections.dictionaryMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-collections/dist/lib/Dictionary", JSImport.Default)
 @js.native
@@ -27,4 +27,3 @@ import scala.scalajs.js.annotation._
 class default[K, V] () extends Dictionary[K, V] {
   def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
 }
-

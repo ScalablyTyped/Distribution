@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Slides
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DashStyle extends js.Object
-
 /**
   * The kinds of dashes with which linear geometry can be rendered. These values are based on the
   * "ST_PresetLineDashVal" simple type described in section 20.1.10.48 of "Office Open XML File
@@ -16,6 +15,7 @@ sealed trait DashStyle extends js.Object
 @JSGlobal("GoogleAppsScript.Slides.DashStyle")
 @js.native
 object DashStyle extends js.Object {
+  
   @js.native
   sealed trait DASH extends DashStyle
   
@@ -36,6 +36,4 @@ object DashStyle extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends DashStyle
-  
 }
-

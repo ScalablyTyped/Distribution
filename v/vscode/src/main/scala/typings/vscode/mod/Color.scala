@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Color")
 @js.native
@@ -16,21 +16,24 @@ class Color protected () extends js.Object {
     * @param alpha The alpha component.
     */
   def this(red: Double, green: Double, blue: Double, alpha: Double) = this()
+  
   /**
     * The alpha component of this color in the range [0-1].
     */
   val alpha: Double = js.native
+  
   /**
     * The blue component of this color in the range [0-1].
     */
   val blue: Double = js.native
+  
   /**
     * The green component of this color in the range [0-1].
     */
   val green: Double = js.native
+  
   /**
     * The red component of this color in the range [0-1].
     */
   val red: Double = js.native
 }
-

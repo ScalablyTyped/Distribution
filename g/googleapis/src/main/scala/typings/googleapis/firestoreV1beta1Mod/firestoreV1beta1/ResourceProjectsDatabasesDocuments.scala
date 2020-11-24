@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firestore/v1beta1", "firestore_v1beta1.Resource$Projects$Databases$Documents")
 @js.native
 class ResourceProjectsDatabasesDocuments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * firestore.projects.databases.documents.batchGet
     * @desc Gets multiple documents.  Documents returned by this method are not
@@ -46,6 +46,7 @@ class ResourceProjectsDatabasesDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchGetDocumentsResponse]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.documents.beginTransaction
     * @desc Starts a new transaction.
@@ -78,6 +79,7 @@ class ResourceProjectsDatabasesDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBeginTransactionResponse]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.documents.commit
     * @desc Commits a transaction, while optionally updating documents.
@@ -110,6 +112,9 @@ class ResourceProjectsDatabasesDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommitResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * firestore.projects.databases.documents.createDocument
     * @desc Creates a new document.
@@ -145,6 +150,7 @@ class ResourceProjectsDatabasesDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDocument]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.documents.delete
     * @desc Deletes a document.
@@ -178,6 +184,7 @@ class ResourceProjectsDatabasesDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.documents.get
     * @desc Gets a single document.
@@ -212,6 +219,7 @@ class ResourceProjectsDatabasesDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDocument]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.documents.list
     * @desc Lists documents.
@@ -251,6 +259,7 @@ class ResourceProjectsDatabasesDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListDocumentsResponse]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.documents.listCollectionIds
     * @desc Lists all the collection IDs underneath a document.
@@ -283,6 +292,7 @@ class ResourceProjectsDatabasesDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListCollectionIdsResponse]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.documents.listen
     * @desc Listens to changes.
@@ -315,6 +325,7 @@ class ResourceProjectsDatabasesDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListenResponse]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.documents.patch
     * @desc Updates or inserts a document.
@@ -351,6 +362,7 @@ class ResourceProjectsDatabasesDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDocument]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.documents.rollback
     * @desc Rolls back a transaction.
@@ -383,6 +395,7 @@ class ResourceProjectsDatabasesDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.documents.runQuery
     * @desc Runs a query.
@@ -415,6 +428,7 @@ class ResourceProjectsDatabasesDocuments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRunQueryResponse]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.documents.write
     * @desc Streams batches of document updates and deletes, in order.
@@ -448,4 +462,3 @@ class ResourceProjectsDatabasesDocuments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaWriteResponse]
   ): Unit = js.native
 }
-

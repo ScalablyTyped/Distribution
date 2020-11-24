@@ -5,11 +5,12 @@ import typings.samchon.sharedWorkerCommunicatorMod.SharedWorkerCommunicator
 import typings.std.MessagePort
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/protocol/communicator/client_driver/SharedWorkerClientDriver", JSImport.Namespace)
 @js.native
 object sharedWorkerClientDriverMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.samchon.iprotocolMod.IProtocol because Already inherited
   - typings.samchon.icommunicatorMod.ICommunicator because Already inherited
@@ -19,10 +20,7 @@ object sharedWorkerClientDriverMod extends js.Object {
       * Construct from a MessagePort object.
       */
     def this(port: MessagePort) = this()
-    /**
-      * @hidden
-      */
-    var listening_ : js.Any = js.native
+    
     /**
       * @inheritdoc
       */
@@ -37,7 +35,10 @@ object sharedWorkerClientDriverMod extends js.Object {
       *				   {@link IProtocol.replyData replyData()} as an {@link Invoke} object.
       */
     def listen(listener: IProtocol): Unit = js.native
+    
+    /**
+      * @hidden
+      */
+    var listening_ : js.Any = js.native
   }
-  
 }
-

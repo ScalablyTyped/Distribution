@@ -11,8 +11,8 @@ The Lodash method `_.template` exported as a module.
 | Full name          | lodash.template |
 | Keywords           | lodash-modularized, template |
 | # releases         | 2 |
-| # dependents       | 529 |
-| # downloads        | 252668277 |
+| # dependents       | 593 |
+| # downloads        | 313128310 |
 | # stars            | 7 |
 
 ## Links

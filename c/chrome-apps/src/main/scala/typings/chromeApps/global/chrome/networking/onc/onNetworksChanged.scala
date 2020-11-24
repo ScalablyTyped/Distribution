@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.chromeApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 // EVENTS
@@ -17,4 +17,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object onNetworksChanged
   extends TopLevel[Event[js.Function1[/* changes */ js.Array[String], Unit]]]
-

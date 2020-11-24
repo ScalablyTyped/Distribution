@@ -2,13 +2,13 @@ package typings.once.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Once extends OnceFn {
-  @JSName("strict")
-  var strict_Original: OnceFn = js.native
+  
   def proto(): Unit = js.native
+  
   def strict[R](f: js.Function0[R]): js.Function0[R] with FnProps[R] = js.native
   def strict[R](f: js.Function1[/* repeated */ js.Any, R]): (js.Function1[/* repeated */ js.Any, R]) with FnProps[R] = js.native
   def strict[T1, T2, R](f: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): (js.Function2[/* t1 */ T1, /* t2 */ T2, R]) with FnProps[R] = js.native
@@ -95,6 +95,7 @@ trait Once extends OnceFn {
     R
   ]) with FnProps[R] = js.native
   @JSName("strict")
+  var strict_Original: OnceFn = js.native
+  @JSName("strict")
   def strict_T1R[T1, R](f: js.Function1[/* t1 */ T1, R]): (js.Function1[/* t1 */ T1, R]) with FnProps[R] = js.native
 }
-

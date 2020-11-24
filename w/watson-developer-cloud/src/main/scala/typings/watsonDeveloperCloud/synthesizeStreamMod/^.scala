@@ -2,7 +2,7 @@ package typings.watsonDeveloperCloud.synthesizeStreamMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * pipe()-able Node.js Readable stream - accepts text in the constructor and emits binary audio data in its 'message' events
@@ -43,10 +43,9 @@ class ^ protected () extends SynthesizeStream {
     */
   def this(options: js.Any) = this()
 }
-
 @JSImport("watson-developer-cloud/lib/synthesize-stream", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   var WEBSOCKET_CONNECTION_ERROR: String = js.native
 }
-

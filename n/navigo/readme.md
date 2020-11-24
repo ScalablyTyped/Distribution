@@ -10,9 +10,9 @@ A simple vanilla JavaScript router with a fallback for older browsers
 | ------------------ | :-------------: |
 | Full name          | navigo |
 | Keywords           | router, vanilla, hash, history |
-| # releases         | 4 |
-| # dependents       | 19 |
-| # downloads        | 472130 |
+| # releases         | 0 |
+| # dependents       | 21 |
+| # downloads        | 519452 |
 | # stars            | 2 |
 
 ## Links

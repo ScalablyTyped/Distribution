@@ -11,8 +11,8 @@ Requires a module only if available and hides the require call from bundlers.
 | Full name          | @protobufjs/inquire |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 56286654 |
+| # dependents       | 36 |
+| # downloads        | 108733006 |
 | # stars            | 0 |
 
 ## Links

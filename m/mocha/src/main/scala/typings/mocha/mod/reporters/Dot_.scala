@@ -3,7 +3,7 @@ package typings.mocha.mod.reporters
 import typings.mocha.Mocha.reporters.Base
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Initialize a new `Dot` matrix test reporter.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSImport("mocha", "reporters.Dot")
 @js.native
 class Dot_ () extends Base
-

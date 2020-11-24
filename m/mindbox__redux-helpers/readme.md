@@ -12,7 +12,7 @@ Typed factories for your redux reducers and actions.
 | Keywords           | typescript, redux |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 898 |
+| # downloads        | 411 |
 | # stars            | 0 |
 
 ## Links

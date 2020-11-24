@@ -11,8 +11,8 @@ Split a string on the first occurance of a given separator
 | Full name          | split-on-first |
 | Keywords           | split, string, first, occurrence, separator, delimiter, text |
 | # releases         | 5 |
-| # dependents       | 6 |
-| # downloads        | 27242923 |
+| # dependents       | 11 |
+| # downloads        | 69281516 |
 | # stars            | 0 |
 
 ## Links

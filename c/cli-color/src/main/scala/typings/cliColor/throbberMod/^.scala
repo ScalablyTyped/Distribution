@@ -2,11 +2,12 @@ package typings.cliColor.throbberMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cli-color/throbber", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Writes throbber string to *write* function at given *interval*. Optionally throbber output can be formatted with given *format* function
     */
@@ -17,4 +18,3 @@ object ^ extends js.Object {
     format: js.Function1[/* throbber */ String, String]
   ): Throbber = js.native
 }
-

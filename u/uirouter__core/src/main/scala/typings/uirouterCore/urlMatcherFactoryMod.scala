@@ -11,34 +11,41 @@ import typings.uirouterCore.urlInterfaceMod.UrlMatcherCompileConfig
 import typings.uirouterCore.urlMatcherMod.UrlMatcher
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/url/urlMatcherFactory", JSImport.Namespace)
 @js.native
 object urlMatcherFactoryMod extends js.Object {
+  
   @js.native
   class ParamFactory protected () extends js.Object {
     def this(router: UIRouter) = this()
-    var router: js.Any = js.native
+    
     def fromConfig(id: String, `type`: ParamType, state: StateDeclaration): Param = js.native
+    
     def fromPath(id: String, `type`: ParamType, state: StateDeclaration): Param = js.native
+    
     def fromSearch(id: String, `type`: ParamType, state: StateDeclaration): Param = js.native
+    
+    var router: js.Any = js.native
   }
   
   @js.native
   class UrlMatcherFactory protected () extends js.Object {
     def this(/** @internal */ router: UIRouter) = this()
-    var Param: TypeofParam = js.native
-    var UrlMatcher: TypeofUrlMatcher = js.native
-    /** Creates a new [[Param]] for a given location (DefType) */
-    var paramFactory: ParamFactory = js.native
-    var router: js.Any = js.native
+    
     /** @internal */
     @JSName("$get")
     def $get(): this.type = js.native
+    
+    var Param: TypeofParam = js.native
+    
+    var UrlMatcher: TypeofUrlMatcher = js.native
+    
     /** @deprecated use [[UrlConfig.caseInsensitive]] */
     def caseInsensitive(): Boolean = js.native
     def caseInsensitive(value: Boolean): Boolean = js.native
+    
     /**
       * Creates a [[UrlMatcher]] for the specified pattern.
       *
@@ -48,10 +55,12 @@ object urlMatcherFactoryMod extends js.Object {
       */
     def compile(pattern: String): UrlMatcher = js.native
     def compile(pattern: String, config: UrlMatcherCompileConfig): UrlMatcher = js.native
+    
     /** @deprecated use [[UrlConfig.defaultSquashPolicy]] */
     def defaultSquashPolicy(): String | Boolean = js.native
     def defaultSquashPolicy(value: String): String | Boolean = js.native
     def defaultSquashPolicy(value: Boolean): String | Boolean = js.native
+    
     /**
       * Returns true if the specified object is a [[UrlMatcher]], or false otherwise.
       *
@@ -60,9 +69,16 @@ object urlMatcherFactoryMod extends js.Object {
       *          implementing all the same methods.
       */
     def isMatcher(`object`: js.Any): Boolean = js.native
+    
+    /** Creates a new [[Param]] for a given location (DefType) */
+    var paramFactory: ParamFactory = js.native
+    
+    var router: js.Any = js.native
+    
     /** @deprecated use [[UrlConfig.strictMode]] */
     def strictMode(): Boolean = js.native
     def strictMode(value: Boolean): Boolean = js.native
+    
     /** @deprecated use [[UrlConfig.type]] */
     def `type`(name: String): js.Any = js.native
     def `type`(
@@ -73,6 +89,4 @@ object urlMatcherFactoryMod extends js.Object {
     def `type`(name: String, definition: ParamTypeDefinition): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
   }
-  
 }
-

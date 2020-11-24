@@ -4,14 +4,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-retry", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var AbortError: Instantiable1[/* message */ String | Error, AbortErrorClass] = js.native
-  // TODO: remove this in the next major version
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pRetry */ js.Any = js.native
+  
   /**
   	Returns a `Promise` that is fulfilled when calling `input` returns a fulfilled promise. If calling `input` returns a rejected promise, `input` is called again until the max retries are reached, it then rejects with the last rejection reason.
   	It doesn't retry on `TypeError` as that's a user error.
@@ -47,5 +45,9 @@ object ^ extends js.Object {
   	*/
   def apply[T](input: js.Function1[/* attemptCount */ Double, js.Thenable[T] | T]): js.Promise[T] = js.native
   def apply[T](input: js.Function1[/* attemptCount */ Double, js.Thenable[T] | T], options: Options): js.Promise[T] = js.native
+  
+  var AbortError: Instantiable1[/* message */ String | Error, AbortErrorClass] = js.native
+  
+  // TODO: remove this in the next major version
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pRetry */ js.Any = js.native
 }
-

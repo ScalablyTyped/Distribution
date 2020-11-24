@@ -5,15 +5,15 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.yup.anon.Dictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MixedSchemaConstructor
   extends AnySchemaConstructor
      with // tslint:disable-next-line:no-unnecessary-generics
-Instantiable0[MixedSchema[js.Object]]
-     with Instantiable1[/* options */ Dictkey, MixedSchema[js.Object]] {
+Instantiable0[MixedSchema[js.Object, js.Object]]
+     with Instantiable1[/* options */ Dictkey, MixedSchema[js.Object, js.Object]] {
+  
   // tslint:disable-next-line:no-unnecessary-generics
-  def apply[T](): MixedSchema[T] = js.native
+  def apply[T, C](): MixedSchema[T, C] = js.native
 }
-

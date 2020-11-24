@@ -12,7 +12,7 @@ Implementation of the session storage in Apache Cassandra as express middleware.
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 14486 |
+| # downloads        | 14061 |
 | # stars            | 4 |
 
 ## Links

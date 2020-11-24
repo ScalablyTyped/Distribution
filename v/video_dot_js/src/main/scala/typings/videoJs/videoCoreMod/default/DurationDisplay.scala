@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.videoJs.mod.videojs.ComponentOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core", "DurationDisplay")
 @js.native
@@ -23,4 +23,3 @@ Instantiable2[
       /* options */ ComponentOptions, 
       typings.videoJs.mod.videojs.DurationDisplay
     ]
-

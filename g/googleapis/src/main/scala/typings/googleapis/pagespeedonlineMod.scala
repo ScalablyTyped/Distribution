@@ -14,11 +14,12 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/pagespeedonline", JSImport.Namespace)
 @js.native
 object pagespeedonlineMod extends js.Object {
+  
   def pagespeedonline(options: Options): Pagespeedonline = js.native
   def pagespeedonline(options: typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Options): typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Pagespeedonline = js.native
   def pagespeedonline(options: typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Options): typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Pagespeedonline = js.native
@@ -31,35 +32,15 @@ object pagespeedonlineMod extends js.Object {
   def pagespeedonline_v4(version: v4): typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Pagespeedonline = js.native
   @JSName("pagespeedonline")
   def pagespeedonline_v5(version: v5): typings.googleapis.v5Mod.pagespeedonlineV5.Pagespeedonline = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Pagespeedonline {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    class v2 protected ()
-      extends typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Pagespeedonline {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
-    @js.native
-    class v4 protected ()
-      extends typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Pagespeedonline {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
-    @js.native
-    class v5 protected ()
-      extends typings.googleapis.v5Mod.pagespeedonlineV5.Pagespeedonline {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    
     @js.native
     object v1
       extends TopLevel[
@@ -71,6 +52,12 @@ object pagespeedonlineMod extends js.Object {
             ]
     
     @js.native
+    class v2 protected ()
+      extends typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Pagespeedonline {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    @js.native
     object v2
       extends TopLevel[
               Instantiable2[
@@ -80,6 +67,12 @@ object pagespeedonlineMod extends js.Object {
               ]
             ]
     
+    @js.native
+    class v4 protected ()
+      extends typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Pagespeedonline {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
     @js.native
     object v4
       extends TopLevel[
@@ -91,6 +84,12 @@ object pagespeedonlineMod extends js.Object {
             ]
     
     @js.native
+    class v5 protected ()
+      extends typings.googleapis.v5Mod.pagespeedonlineV5.Pagespeedonline {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    @js.native
     object v5
       extends TopLevel[
               Instantiable2[
@@ -99,11 +98,11 @@ object pagespeedonlineMod extends js.Object {
                 typings.googleapis.v5Mod.pagespeedonlineV5.Pagespeedonline
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -131,8 +130,5 @@ object pagespeedonlineMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

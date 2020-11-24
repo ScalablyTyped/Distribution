@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pixiJs.anon.FontName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A BitmapText object will create a line or multiple lines of text using bitmap font.
@@ -37,11 +37,11 @@ class BitmapText protected ()
   extends typings.pixiJs.PIXI.BitmapText {
   def this(text: String, style: FontName) = this()
 }
-
 /* static members */
 @JSImport("pixi.js", "BitmapText")
 @js.native
 object BitmapText extends js.Object {
+  
   /**
     * Get the list of installed fonts.
     *
@@ -52,6 +52,7 @@ object BitmapText extends js.Object {
     * @member {Object.<string, PIXI.BitmapFont>}
     */
   val fonts: StringDictionary[typings.pixiJs.PIXI.BitmapFont] = js.native
+  
   /**
     * Register a bitmap font with data and a texture.
     *
@@ -61,4 +62,3 @@ object BitmapText extends js.Object {
     */
   def registerFont(): Unit = js.native
 }
-

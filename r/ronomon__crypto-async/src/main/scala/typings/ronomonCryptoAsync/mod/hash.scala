@@ -4,11 +4,12 @@ import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ronomon/crypto-async", "hash")
 @js.native
 object hash extends js.Object {
+  
   def apply(
     algorithm: String,
     source: Buffer,
@@ -24,4 +25,3 @@ object hash extends js.Object {
     cb: js.Function2[/* error */ js.UndefOr[Error], /* targetSize */ Double, Unit]
   ): Unit = js.native
 }
-

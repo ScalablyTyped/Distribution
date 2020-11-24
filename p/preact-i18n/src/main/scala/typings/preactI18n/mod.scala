@@ -10,11 +10,31 @@ import typings.preactI18n.anon.Fields
 import typings.preactI18n.anon.Scope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("preact-i18n", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def default(
+    Child: Component[
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ _
+    ]
+  ): VNode[js.Object] = js.native
+  def default(
+    Child: Component[
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ _
+    ],
+    options: Scope
+  ): VNode[js.Object] = js.native
+  
+  def withText[Props, Context](mapping: js.Object): js.Function1[
+    /* Child */ ComponentChild, 
+    Instantiable2[/* props */ js.UndefOr[Props], /* context */ js.UndefOr[Context], js.Any]
+  ] = js.native
+  
   @js.native
   class IntlProvider ()
     extends Component[
@@ -41,23 +61,4 @@ object mod extends js.Object {
           Fields, 
           /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ js.Any
         ]
-  
-  def default(
-    Child: Component[
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ _, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ _
-    ]
-  ): VNode[js.Object] = js.native
-  def default(
-    Child: Component[
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ _, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ _
-    ],
-    options: Scope
-  ): VNode[js.Object] = js.native
-  def withText[Props, Context](mapping: js.Object): js.Function1[
-    /* Child */ ComponentChild, 
-    Instantiable2[/* props */ js.UndefOr[Props], /* context */ js.UndefOr[Context], js.Any]
-  ] = js.native
 }
-

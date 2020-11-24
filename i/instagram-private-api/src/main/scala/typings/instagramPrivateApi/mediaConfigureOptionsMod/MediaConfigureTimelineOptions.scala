@@ -1,82 +1,114 @@
 package typings.instagramPrivateApi.mediaConfigureOptionsMod
 
-import typings.instagramPrivateApi.anon.Croporiginalsize
-import typings.instagramPrivateApi.anon.Sourceheight
-import typings.instagramPrivateApi.instagramPrivateApiStrings.`0`
-import typings.instagramPrivateApi.instagramPrivateApiStrings.`1`
 import typings.instagramPrivateApi.postingOptionsMod.PostingUsertags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait MediaConfigureTimelineOptions extends MediaConfigureOptions {
-  var camera_make: js.UndefOr[String] = js.undefined
-  var camera_model: js.UndefOr[String] = js.undefined
-  var caption: js.UndefOr[String] = js.undefined
-  var creation_logger_session_id: js.UndefOr[String] = js.undefined
-  var date_time_digitalized: js.UndefOr[String] = js.undefined
-  var date_time_original: js.UndefOr[String] = js.undefined
-  var device_id: js.UndefOr[String] = js.undefined
-  var location: js.UndefOr[MediaLocation | String] = js.undefined
-  var timezone_offset: js.UndefOr[String] = js.undefined
-  var usertags: js.UndefOr[PostingUsertags | String] = js.undefined
+  
+  var camera_make: js.UndefOr[String] = js.native
+  
+  var camera_model: js.UndefOr[String] = js.native
+  
+  var caption: js.UndefOr[String] = js.native
+  
+  var creation_logger_session_id: js.UndefOr[String] = js.native
+  
+  var date_time_digitalized: js.UndefOr[String] = js.native
+  
+  var date_time_original: js.UndefOr[String] = js.native
+  
+  var device_id: js.UndefOr[String] = js.native
+  
+  var location: js.UndefOr[MediaLocation | String] = js.native
+  
+  var timezone_offset: js.UndefOr[String] = js.native
+  
+  var usertags: js.UndefOr[PostingUsertags | String] = js.native
 }
-
 object MediaConfigureTimelineOptions {
+  
   @scala.inline
-  def apply(
-    upload_id: String,
-    camera_make: String = null,
-    camera_model: String = null,
-    caption: String = null,
-    creation_logger_session_id: String = null,
-    date_time_digitalized: String = null,
-    date_time_original: String = null,
-    device_id: String = null,
-    disable_comments: js.UndefOr[Boolean] = js.undefined,
-    edits: Croporiginalsize = null,
-    extra: Sourceheight = null,
-    geotag_enabled: `1` | `0` = null,
-    height: js.UndefOr[Double] = js.undefined,
-    location: MediaLocation | String = null,
-    media_folder: String = null,
-    media_latitude: String = null,
-    media_longitude: String = null,
-    posting_latitude: String = null,
-    posting_longitude: String = null,
-    scene_capture_type: String = null,
-    software: String = null,
-    source_type: String = null,
-    timezone_offset: String = null,
-    usertags: PostingUsertags | String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): MediaConfigureTimelineOptions = {
+  def apply(upload_id: String): MediaConfigureTimelineOptions = {
     val __obj = js.Dynamic.literal(upload_id = upload_id.asInstanceOf[js.Any])
-    if (camera_make != null) __obj.updateDynamic("camera_make")(camera_make.asInstanceOf[js.Any])
-    if (camera_model != null) __obj.updateDynamic("camera_model")(camera_model.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (creation_logger_session_id != null) __obj.updateDynamic("creation_logger_session_id")(creation_logger_session_id.asInstanceOf[js.Any])
-    if (date_time_digitalized != null) __obj.updateDynamic("date_time_digitalized")(date_time_digitalized.asInstanceOf[js.Any])
-    if (date_time_original != null) __obj.updateDynamic("date_time_original")(date_time_original.asInstanceOf[js.Any])
-    if (device_id != null) __obj.updateDynamic("device_id")(device_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_comments)) __obj.updateDynamic("disable_comments")(disable_comments.get.asInstanceOf[js.Any])
-    if (edits != null) __obj.updateDynamic("edits")(edits.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (geotag_enabled != null) __obj.updateDynamic("geotag_enabled")(geotag_enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (media_folder != null) __obj.updateDynamic("media_folder")(media_folder.asInstanceOf[js.Any])
-    if (media_latitude != null) __obj.updateDynamic("media_latitude")(media_latitude.asInstanceOf[js.Any])
-    if (media_longitude != null) __obj.updateDynamic("media_longitude")(media_longitude.asInstanceOf[js.Any])
-    if (posting_latitude != null) __obj.updateDynamic("posting_latitude")(posting_latitude.asInstanceOf[js.Any])
-    if (posting_longitude != null) __obj.updateDynamic("posting_longitude")(posting_longitude.asInstanceOf[js.Any])
-    if (scene_capture_type != null) __obj.updateDynamic("scene_capture_type")(scene_capture_type.asInstanceOf[js.Any])
-    if (software != null) __obj.updateDynamic("software")(software.asInstanceOf[js.Any])
-    if (source_type != null) __obj.updateDynamic("source_type")(source_type.asInstanceOf[js.Any])
-    if (timezone_offset != null) __obj.updateDynamic("timezone_offset")(timezone_offset.asInstanceOf[js.Any])
-    if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaConfigureTimelineOptions]
   }
+  
+  @scala.inline
+  implicit class MediaConfigureTimelineOptionsOps[Self <: MediaConfigureTimelineOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setCamera_make(value: String): Self = this.set("camera_make", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCamera_make: Self = this.set("camera_make", js.undefined)
+    
+    @scala.inline
+    def setCamera_model(value: String): Self = this.set("camera_model", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCamera_model: Self = this.set("camera_model", js.undefined)
+    
+    @scala.inline
+    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCaption: Self = this.set("caption", js.undefined)
+    
+    @scala.inline
+    def setCreation_logger_session_id(value: String): Self = this.set("creation_logger_session_id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteCreation_logger_session_id: Self = this.set("creation_logger_session_id", js.undefined)
+    
+    @scala.inline
+    def setDate_time_digitalized(value: String): Self = this.set("date_time_digitalized", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDate_time_digitalized: Self = this.set("date_time_digitalized", js.undefined)
+    
+    @scala.inline
+    def setDate_time_original(value: String): Self = this.set("date_time_original", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDate_time_original: Self = this.set("date_time_original", js.undefined)
+    
+    @scala.inline
+    def setDevice_id(value: String): Self = this.set("device_id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDevice_id: Self = this.set("device_id", js.undefined)
+    
+    @scala.inline
+    def setLocation(value: MediaLocation | String): Self = this.set("location", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    
+    @scala.inline
+    def setTimezone_offset(value: String): Self = this.set("timezone_offset", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTimezone_offset: Self = this.set("timezone_offset", js.undefined)
+    
+    @scala.inline
+    def setUsertags(value: PostingUsertags | String): Self = this.set("usertags", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUsertags: Self = this.set("usertags", js.undefined)
+  }
 }
-

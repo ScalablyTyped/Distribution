@@ -2,11 +2,12 @@ package typings.detectIndent.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("detect-indent", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Detect the indentation of code.
   @param string - A string of any kind of text.
@@ -30,4 +31,3 @@ object ^ extends js.Object {
   */
   def apply(string: String): Indent = js.native
 }
-

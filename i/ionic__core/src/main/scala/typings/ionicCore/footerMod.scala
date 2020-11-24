@@ -3,13 +3,18 @@ package typings.ionicCore
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/core/dist/types/components/footer/footer", JSImport.Namespace)
 @js.native
 object footerMod extends js.Object {
+  
   @js.native
   class Footer () extends ComponentInterface {
+    
+    @JSName("render")
+    def render_MFooter(): js.Any = js.native
+    
     /**
       * If `true`, the footer will be translucent.
       * Only applies when the mode is `"ios"` and the device supports
@@ -19,9 +24,5 @@ object footerMod extends js.Object {
       * attribute needs to be set on the content.
       */
     var translucent: Boolean = js.native
-    @JSName("render")
-    def render_MFooter(): js.Any = js.native
   }
-  
 }
-

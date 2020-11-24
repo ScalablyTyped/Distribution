@@ -3,7 +3,7 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.webXRPlaneDetectorMod.IWebXRPlaneDetectorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "WebXRPlaneDetector")
 @js.native
@@ -20,15 +20,16 @@ class WebXRPlaneDetector protected ()
     _options: IWebXRPlaneDetectorOptions
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "WebXRPlaneDetector")
 @js.native
 object WebXRPlaneDetector extends js.Object {
+  
   /**
     * The module's name
     */
   val Name: String = js.native
+  
   /**
     * The (Babylon) version of this module.
     * This is an integer representing the implementation version.
@@ -36,4 +37,3 @@ object WebXRPlaneDetector extends js.Object {
     */
   val Version: Double = js.native
 }
-

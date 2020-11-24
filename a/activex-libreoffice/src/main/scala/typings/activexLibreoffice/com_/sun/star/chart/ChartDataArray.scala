@@ -5,7 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * must be supported by each data source for charts, where you want to access the values directly.
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ChartDataArray extends XChartDataArray
-
 object ChartDataArray {
+  
   @scala.inline
   def apply(
     ColumnDescriptions: SafeArray[String],
@@ -40,4 +40,3 @@ object ChartDataArray {
     __obj.asInstanceOf[ChartDataArray]
   }
 }
-

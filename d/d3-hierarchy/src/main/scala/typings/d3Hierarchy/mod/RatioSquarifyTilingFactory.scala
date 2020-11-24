@@ -2,11 +2,13 @@ package typings.d3Hierarchy.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RatioSquarifyTilingFactory extends js.Object {
+  
   def apply(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+  
   /**
     * Specifies the desired aspect ratio of the generated rectangles.
     * Note that the orientation of the generated rectangles (tall or wide) is not implied by the ratio.
@@ -17,4 +19,3 @@ trait RatioSquarifyTilingFactory extends js.Object {
     */
   def ratio(ratio: Double): RatioSquarifyTilingFactory = js.native
 }
-

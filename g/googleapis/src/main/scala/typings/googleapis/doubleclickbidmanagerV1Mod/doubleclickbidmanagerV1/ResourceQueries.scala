@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/doubleclickbidmanager/v1", "doubleclickbidmanager_v1.Resource$Queries")
 @js.native
 class ResourceQueries protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * doubleclickbidmanager.queries.createquery
     * @desc Creates a query.
@@ -41,6 +43,7 @@ class ResourceQueries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaQuery]
   ): Unit = js.native
+  
   /**
     * doubleclickbidmanager.queries.deletequery
     * @desc Deletes a stored query as well as the associated stored reports.
@@ -69,6 +72,7 @@ class ResourceQueries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * doubleclickbidmanager.queries.getquery
     * @desc Retrieves a stored query.
@@ -97,6 +101,7 @@ class ResourceQueries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaQuery]
   ): Unit = js.native
+  
   /**
     * doubleclickbidmanager.queries.listqueries
     * @desc Retrieves stored queries.
@@ -127,6 +132,7 @@ class ResourceQueries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListQueriesResponse]
   ): Unit = js.native
+  
   /**
     * doubleclickbidmanager.queries.runquery
     * @desc Runs a stored query to generate a report.
@@ -157,4 +163,3 @@ class ResourceQueries protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

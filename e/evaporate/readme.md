@@ -12,7 +12,7 @@ Javascript library for browser to S3 multipart resumable uploads for browsers an
 | Keywords           | aws, amazon, S3, multipart, multi-part, uploads, browser, transfer, acceleration, signature version 4, v4, electron, ReadableFileStream, fs, stream, checksum, Content-MD5 |
 | # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 278535 |
+| # downloads        | 376222 |
 | # stars            | 1 |
 
 ## Links

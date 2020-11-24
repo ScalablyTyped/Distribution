@@ -4,9 +4,82 @@ import typings.meyda.mod.MeydaAudioFeature
 import typings.meyda.mod.MeydaWindowingFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object meydaStrings {
+  
+  @scala.inline
+  def amplitudeSpectrum: amplitudeSpectrum = "amplitudeSpectrum".asInstanceOf[amplitudeSpectrum]
+  
+  @scala.inline
+  def blackman: blackman = "blackman".asInstanceOf[blackman]
+  
+  @scala.inline
+  def buffer: buffer = "buffer".asInstanceOf[buffer]
+  
+  @scala.inline
+  def chroma: chroma = "chroma".asInstanceOf[chroma]
+  
+  @scala.inline
+  def complexSpectrum: complexSpectrum = "complexSpectrum".asInstanceOf[complexSpectrum]
+  
+  @scala.inline
+  def energy: energy = "energy".asInstanceOf[energy]
+  
+  @scala.inline
+  def hamming: hamming = "hamming".asInstanceOf[hamming]
+  
+  @scala.inline
+  def hanning: hanning = "hanning".asInstanceOf[hanning]
+  
+  @scala.inline
+  def loudness: loudness = "loudness".asInstanceOf[loudness]
+  
+  @scala.inline
+  def mfcc: mfcc = "mfcc".asInstanceOf[mfcc]
+  
+  @scala.inline
+  def perceptualSharpness: perceptualSharpness = "perceptualSharpness".asInstanceOf[perceptualSharpness]
+  
+  @scala.inline
+  def perceptualSpread: perceptualSpread = "perceptualSpread".asInstanceOf[perceptualSpread]
+  
+  @scala.inline
+  def powerSpectrum: powerSpectrum = "powerSpectrum".asInstanceOf[powerSpectrum]
+  
+  @scala.inline
+  def rms: rms = "rms".asInstanceOf[rms]
+  
+  @scala.inline
+  def sine: sine = "sine".asInstanceOf[sine]
+  
+  @scala.inline
+  def spectralCentroid: spectralCentroid = "spectralCentroid".asInstanceOf[spectralCentroid]
+  
+  @scala.inline
+  def spectralFlatness: spectralFlatness = "spectralFlatness".asInstanceOf[spectralFlatness]
+  
+  @scala.inline
+  def spectralFlux: spectralFlux = "spectralFlux".asInstanceOf[spectralFlux]
+  
+  @scala.inline
+  def spectralKurtosis: spectralKurtosis = "spectralKurtosis".asInstanceOf[spectralKurtosis]
+  
+  @scala.inline
+  def spectralRolloff: spectralRolloff = "spectralRolloff".asInstanceOf[spectralRolloff]
+  
+  @scala.inline
+  def spectralSkewness: spectralSkewness = "spectralSkewness".asInstanceOf[spectralSkewness]
+  
+  @scala.inline
+  def spectralSlope: spectralSlope = "spectralSlope".asInstanceOf[spectralSlope]
+  
+  @scala.inline
+  def spectralSpread: spectralSpread = "spectralSpread".asInstanceOf[spectralSpread]
+  
+  @scala.inline
+  def zcr: zcr = "zcr".asInstanceOf[zcr]
+  
   @js.native
   sealed trait amplitudeSpectrum extends MeydaAudioFeature
   
@@ -78,54 +151,4 @@ object meydaStrings {
   
   @js.native
   sealed trait zcr extends MeydaAudioFeature
-  
-  @scala.inline
-  def amplitudeSpectrum: amplitudeSpectrum = "amplitudeSpectrum".asInstanceOf[amplitudeSpectrum]
-  @scala.inline
-  def blackman: blackman = "blackman".asInstanceOf[blackman]
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
-  @scala.inline
-  def chroma: chroma = "chroma".asInstanceOf[chroma]
-  @scala.inline
-  def complexSpectrum: complexSpectrum = "complexSpectrum".asInstanceOf[complexSpectrum]
-  @scala.inline
-  def energy: energy = "energy".asInstanceOf[energy]
-  @scala.inline
-  def hamming: hamming = "hamming".asInstanceOf[hamming]
-  @scala.inline
-  def hanning: hanning = "hanning".asInstanceOf[hanning]
-  @scala.inline
-  def loudness: loudness = "loudness".asInstanceOf[loudness]
-  @scala.inline
-  def mfcc: mfcc = "mfcc".asInstanceOf[mfcc]
-  @scala.inline
-  def perceptualSharpness: perceptualSharpness = "perceptualSharpness".asInstanceOf[perceptualSharpness]
-  @scala.inline
-  def perceptualSpread: perceptualSpread = "perceptualSpread".asInstanceOf[perceptualSpread]
-  @scala.inline
-  def powerSpectrum: powerSpectrum = "powerSpectrum".asInstanceOf[powerSpectrum]
-  @scala.inline
-  def rms: rms = "rms".asInstanceOf[rms]
-  @scala.inline
-  def sine: sine = "sine".asInstanceOf[sine]
-  @scala.inline
-  def spectralCentroid: spectralCentroid = "spectralCentroid".asInstanceOf[spectralCentroid]
-  @scala.inline
-  def spectralFlatness: spectralFlatness = "spectralFlatness".asInstanceOf[spectralFlatness]
-  @scala.inline
-  def spectralFlux: spectralFlux = "spectralFlux".asInstanceOf[spectralFlux]
-  @scala.inline
-  def spectralKurtosis: spectralKurtosis = "spectralKurtosis".asInstanceOf[spectralKurtosis]
-  @scala.inline
-  def spectralRolloff: spectralRolloff = "spectralRolloff".asInstanceOf[spectralRolloff]
-  @scala.inline
-  def spectralSkewness: spectralSkewness = "spectralSkewness".asInstanceOf[spectralSkewness]
-  @scala.inline
-  def spectralSlope: spectralSlope = "spectralSlope".asInstanceOf[spectralSlope]
-  @scala.inline
-  def spectralSpread: spectralSpread = "spectralSpread".asInstanceOf[spectralSpread]
-  @scala.inline
-  def zcr: zcr = "zcr".asInstanceOf[zcr]
 }
-

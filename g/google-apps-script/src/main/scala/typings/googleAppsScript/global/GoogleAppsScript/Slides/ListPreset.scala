@@ -2,7 +2,7 @@ package typings.googleAppsScript.global.GoogleAppsScript.Slides
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Preset patterns of glyphs for lists in text.
@@ -48,22 +48,37 @@ import scala.scalajs.js.annotation._
 @JSGlobal("GoogleAppsScript.Slides.ListPreset")
 @js.native
 object ListPreset extends js.Object {
-  /* 5 */ val ARROW3D_CIRCLE_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.ARROW3D_CIRCLE_SQUARE with Double = js.native
-  /* 3 */ val ARROW_DIAMOND_DISC: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.ARROW_DIAMOND_DISC with Double = js.native
-  /* 2 */ val CHECKBOX: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.CHECKBOX with Double = js.native
-  /* 1 */ val DIAMONDX_ARROW3D_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.DIAMONDX_ARROW3D_SQUARE with Double = js.native
-  /* 7 */ val DIAMONDX_HOLLOWDIAMOND_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.DIAMONDX_HOLLOWDIAMOND_SQUARE with Double = js.native
-  /* 8 */ val DIAMOND_CIRCLE_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.DIAMOND_CIRCLE_SQUARE with Double = js.native
-  /* 9 */ val DIGIT_ALPHA_ROMAN: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.DIGIT_ALPHA_ROMAN with Double = js.native
-  /* 10 */ val DIGIT_ALPHA_ROMAN_PARENS: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.DIGIT_ALPHA_ROMAN_PARENS with Double = js.native
-  /* 11 */ val DIGIT_NESTED: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.DIGIT_NESTED with Double = js.native
-  /* 0 */ val DISC_CIRCLE_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.DISC_CIRCLE_SQUARE with Double = js.native
-  /* 6 */ val LEFTTRIANGLE_DIAMOND_DISC: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.LEFTTRIANGLE_DIAMOND_DISC with Double = js.native
-  /* 4 */ val STAR_CIRCLE_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.STAR_CIRCLE_SQUARE with Double = js.native
-  /* 12 */ val UPPERALPHA_ALPHA_ROMAN: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.UPPERALPHA_ALPHA_ROMAN with Double = js.native
-  /* 13 */ val UPPERROMAN_UPPERALPHA_DIGIT: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.UPPERROMAN_UPPERALPHA_DIGIT with Double = js.native
-  /* 14 */ val ZERODIGIT_ALPHA_ROMAN: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.ZERODIGIT_ALPHA_ROMAN with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset with Double] = js.native
+  
+  /* 5 */ val ARROW3D_CIRCLE_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.ARROW3D_CIRCLE_SQUARE with Double = js.native
+  
+  /* 3 */ val ARROW_DIAMOND_DISC: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.ARROW_DIAMOND_DISC with Double = js.native
+  
+  /* 2 */ val CHECKBOX: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.CHECKBOX with Double = js.native
+  
+  /* 1 */ val DIAMONDX_ARROW3D_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.DIAMONDX_ARROW3D_SQUARE with Double = js.native
+  
+  /* 7 */ val DIAMONDX_HOLLOWDIAMOND_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.DIAMONDX_HOLLOWDIAMOND_SQUARE with Double = js.native
+  
+  /* 8 */ val DIAMOND_CIRCLE_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.DIAMOND_CIRCLE_SQUARE with Double = js.native
+  
+  /* 9 */ val DIGIT_ALPHA_ROMAN: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.DIGIT_ALPHA_ROMAN with Double = js.native
+  
+  /* 10 */ val DIGIT_ALPHA_ROMAN_PARENS: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.DIGIT_ALPHA_ROMAN_PARENS with Double = js.native
+  
+  /* 11 */ val DIGIT_NESTED: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.DIGIT_NESTED with Double = js.native
+  
+  /* 0 */ val DISC_CIRCLE_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.DISC_CIRCLE_SQUARE with Double = js.native
+  
+  /* 6 */ val LEFTTRIANGLE_DIAMOND_DISC: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.LEFTTRIANGLE_DIAMOND_DISC with Double = js.native
+  
+  /* 4 */ val STAR_CIRCLE_SQUARE: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.STAR_CIRCLE_SQUARE with Double = js.native
+  
+  /* 12 */ val UPPERALPHA_ALPHA_ROMAN: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.UPPERALPHA_ALPHA_ROMAN with Double = js.native
+  
+  /* 13 */ val UPPERROMAN_UPPERALPHA_DIGIT: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.UPPERROMAN_UPPERALPHA_DIGIT with Double = js.native
+  
+  /* 14 */ val ZERODIGIT_ALPHA_ROMAN: typings.googleAppsScript.GoogleAppsScript.Slides.ListPreset.ZERODIGIT_ALPHA_ROMAN with Double = js.native
 }
-

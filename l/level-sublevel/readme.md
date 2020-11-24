@@ -9,9 +9,9 @@ partition levelup databases
 | ------------------ | :-------------: |
 | Full name          | level-sublevel |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 199 |
-| # downloads        | 2568755 |
+| # releases         | 1 |
+| # dependents       | 196 |
+| # downloads        | 3052298 |
 | # stars            | 13 |
 
 ## Links

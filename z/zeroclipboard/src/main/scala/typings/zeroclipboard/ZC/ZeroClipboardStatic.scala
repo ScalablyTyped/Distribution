@@ -22,34 +22,33 @@ import typings.zeroclipboard.zeroclipboardStrings.trustedDomains
 import typings.zeroclipboard.zeroclipboardStrings.zIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ZeroClipboardStatic
   extends ZeroClipboardCommon
      with Instantiable0[ZeroClipboardClient]
      with Instantiable1[(/* elements */ Element) | (/* elements */ List[Element]), ZeroClipboardClient] {
-  /**
-    * The version of the ZeroClipboard library being used, e.g. "2.0.0".
-    * @type {string}
-    */
-  var version: String = js.native
+  
   /**
     * Focus/"activate" the provided element by moving the Flash SWF object in front of it.
     * @param {Element} element
     * @deprecated: The preferred method to use is focus but the alias activate is available for backward compatibility's sake.
     */
   def activate(element: Element): Unit = js.native
+  
   /**
     * Return the currently "activated" element that the Flash SWF object is in front of it.
     * @return {HTMLElement} or {null}
     */
   def activeElement(): HTMLElement = js.native
+  
   /**
     * Blur/"deactivate" the currently focused/"activated" element, moving the Flash SWF object off the screen.
     * @since 2.1.0
     */
   def blur(): Unit = js.native
+  
   /**
     * Get a copy of the active configuration for ZeroClipboard.
     * @return {ZeroClipboardConfig}
@@ -99,27 +98,32 @@ trait ZeroClipboardStatic
   def config_trustedDomains(propName: trustedDomains): js.Array[String] = js.native
   @JSName("config")
   def config_zIndex(propName: zIndex): Double = js.native
+  
   /**
     * Create the Flash bridge SWF object.
     * IMPORTANT: This method should be considered private.
     * @private
     */
   def create(): Unit = js.native
+  
   /**
     * Blur/"deactivate" the currently focused/"activated" element, moving the Flash SWF object off the screen.
     * @deprecated: The preferred method to use is blur but the alias deactivate is available for backward compatibility's sake.
     */
   def deactivate(): Unit = js.native
+  
   /**
     * Emit the "destroy" event, remove all event handlers, and destroy the Flash bridge.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Focus/"activate" the provided element by moving the Flash SWF object in front of it.
     * @param {Element} element
     * @since 2.1.0
     */
   def focus(element: Element): Unit = js.native
+  
   /**
     * Indicates if Flash Player is definitely unusable (disabled, outdated, unavailable, or deactivated).
     * IMPORTANT: This method should be considered private.
@@ -127,10 +131,16 @@ trait ZeroClipboardStatic
     * @private
     */
   def isFlashUnusable(): Boolean = js.native
+  
   /**
     * Diagnostic method that describes the state of the browser, Flash Player, and ZeroClipboard.
     * @return {Object}
     */
   def state(): js.Object = js.native
+  
+  /**
+    * The version of the ZeroClipboard library being used, e.g. "2.0.0".
+    * @type {string}
+    */
+  var version: String = js.native
 }
-

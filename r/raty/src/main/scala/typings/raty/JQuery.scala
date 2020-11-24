@@ -10,10 +10,11 @@ import typings.raty.ratyStrings.score
 import typings.raty.ratyStrings.set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   def raty(): JQuery = js.native
   def raty(method: String, parameter: js.Any): js.Any = js.native
   def raty(options: JQueryRatyOptions): JQuery = js.native
@@ -36,4 +37,3 @@ trait JQuery extends js.Object {
   @JSName("raty")
   def raty_set(method: set, options: JQueryRatyOptions): Unit = js.native
 }
-

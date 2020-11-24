@@ -4,7 +4,7 @@ import typings.jsrsasign.jsrsasign.ECCPrivateKey
 import typings.jsrsasign.jsrsasign.RSAKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Signature class which is very similar to java.security.Signature class
@@ -72,6 +72,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Signature extends js.Object {
+  
   /**
     * Initialize this object for signing or verifying depends on key
     * @param key specifying public or private key as plain/encrypted PKCS#5/8 PEM file, certificate PEM or `RSAKey`, `KJUR.crypto.DSA` or `KJUR.crypto.ECDSA` object
@@ -110,6 +111,7 @@ trait Signature extends js.Object {
   def init(key: ECDSA, pass: String): Unit = js.native
   def init(key: RSAKey): Unit = js.native
   def init(key: RSAKey, pass: String): Unit = js.native
+  
   /**
     * set signature algorithm and provider
     * @param alg signature algorithm name
@@ -118,6 +120,7 @@ trait Signature extends js.Object {
     * md.setAlgAndProvider('SHA1withRSA', 'cryptojs/jsrsa');
     */
   def setAlgAndProvider(alg: String, prov: String): Unit = js.native
+  
   /**
     * Returns the signature bytes of all data updates as a hexadecimal string
     * @return the signature bytes as a hexadecimal string
@@ -125,6 +128,7 @@ trait Signature extends js.Object {
     * var hSigValue = sig.sign()
     */
   def sign(): String = js.native
+  
   /**
     * performs final update on the sign using hexadecimal string, then returns the signature bytes of all data updates as a hexadecimal string
     * @param hex hexadecimal string to final update
@@ -133,6 +137,7 @@ trait Signature extends js.Object {
     * var hSigValue = sig.signHex('1fdc33')
     */
   def signHex(hex: String): String = js.native
+  
   /**
     * performs final update on the sign using string, then returns the signature bytes of all data updates as a hexadecimal string
     * @param str string to final update
@@ -141,6 +146,7 @@ trait Signature extends js.Object {
     * var hSigValue = sig.signString('aaa')
     */
   def signString(str: String): String = js.native
+  
   /**
     * Updates the data to be signed or verified by a hexadecimal string
     * @param hex hexadecimal string to use for the update
@@ -148,6 +154,7 @@ trait Signature extends js.Object {
     * sig.updateHex('1f2f3f')
     */
   def updateHex(hex: String): Unit = js.native
+  
   /**
     * Updates the data to be signed or verified by a string
     * @param str string to use for the update
@@ -155,6 +162,7 @@ trait Signature extends js.Object {
     * sig.updateString('aaa')
     */
   def updateString(str: String): Unit = js.native
+  
   /**
     * verifies the passed-in signature.
     * @param hSigVal string to final update
@@ -164,4 +172,3 @@ trait Signature extends js.Object {
     */
   def verify(hSigVal: String): Boolean = js.native
 }
-

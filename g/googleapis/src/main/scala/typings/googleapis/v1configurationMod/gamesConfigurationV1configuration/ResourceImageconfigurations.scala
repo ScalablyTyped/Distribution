@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesConfiguration/v1configuration", "gamesConfiguration_v1configuration.Resource$Imageconfigurations")
 @js.native
 class ResourceImageconfigurations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gamesConfiguration.imageConfigurations.upload
     * @desc Uploads an image for a resource with the given ID and image type.
@@ -49,4 +51,3 @@ class ResourceImageconfigurations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaImageConfiguration]
   ): Unit = js.native
 }
-

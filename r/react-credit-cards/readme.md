@@ -10,9 +10,9 @@ Beautiful credit cards for your payment forms
 | ------------------ | :-------------: |
 | Full name          | react-credit-cards |
 | Keywords           | react, react-component, credit card, payment |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 379114 |
+| # releases         | 5 |
+| # dependents       | 8 |
+| # downloads        | 634298 |
 | # stars            | 2 |
 
 ## Links

@@ -21,10 +21,11 @@ import typings.typeahead.typeaheadStrings.typeaheadColonrender
 import typings.typeahead.typeaheadStrings.typeaheadColonselect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Remove an event handler.
     *
@@ -385,6 +386,7 @@ trait JQuery extends js.Object {
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
+  
   /**
     * Attach an event handler function for typeahead:active event to the selected elements.
     *
@@ -1009,6 +1011,7 @@ trait JQuery extends js.Object {
     selector: String,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
+  
   /**
     * Accommodates the val overload.
     *
@@ -1084,4 +1087,3 @@ trait JQuery extends js.Object {
   @JSName("typeahead")
   def typeahead_val(methodName: `val`, `val`: String): JQuery = js.native
 }
-

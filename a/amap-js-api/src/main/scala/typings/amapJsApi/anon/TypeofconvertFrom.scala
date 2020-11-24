@@ -5,10 +5,11 @@ import typings.amapJsApi.AMap.convertFrom.Result
 import typings.amapJsApi.AMap.convertFrom.SearchStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofconvertFrom extends js.Object {
+  
   def apply(
     lnglat: js.Array[LocationValue],
     `type`: Null,
@@ -36,4 +37,3 @@ trait TypeofconvertFrom extends js.Object {
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | Result, Unit]
   ): Unit = js.native
 }
-

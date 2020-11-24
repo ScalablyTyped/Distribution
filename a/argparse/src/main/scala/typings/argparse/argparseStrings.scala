@@ -2,13 +2,12 @@ package typings.argparse
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object argparseStrings {
-  @js.native
-  sealed trait ActionConstructorOptions extends js.Object
   
   @scala.inline
   def ActionConstructorOptions: ActionConstructorOptions = "ActionConstructorOptions".asInstanceOf[ActionConstructorOptions]
+  @js.native
+  sealed trait ActionConstructorOptions extends js.Object
 }
-

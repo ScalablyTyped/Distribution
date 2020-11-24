@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.computeoptimizerMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "ComputeOptimizer")
 @js.native
@@ -14,4 +14,3 @@ class ComputeOptimizer ()
   extends typings.awsSdk.allMod.ComputeOptimizer {
   def this(options: ClientConfiguration) = this()
 }
-

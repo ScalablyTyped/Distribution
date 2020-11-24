@@ -11,8 +11,8 @@ Cool, comfortable and easily customizable range slider with many options and ski
 | Full name          | ion-rangeslider |
 | Keywords           | jquery-plugin, ecosystem:jquery, jquery, form, input, range, slider, rangeslider, interface, diapason, ui, noui, skins |
 | # releases         | 3 |
-| # dependents       | 27 |
-| # downloads        | 1431640 |
+| # dependents       | 32 |
+| # downloads        | 1885482 |
 | # stars            | 6 |
 
 ## Links

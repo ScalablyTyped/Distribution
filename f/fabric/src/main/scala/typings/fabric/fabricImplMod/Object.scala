@@ -21,10 +21,11 @@ import typings.fabric.fabricStrings.tl
 import typings.fabric.fabricStrings.tr
 import typings.std.CanvasRenderingContext2D
 import typings.std.Event
+import typings.std.HTMLCanvasElement
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "Object")
 @js.native
@@ -33,7 +34,7 @@ class Object ()
      with IObjectOptions
      with IObjectAnimation[Object] {
   def this(options: IObjectOptions) = this()
-  var _controlsVisibility: Br = js.native
+  
   /**
     * @private
     * @param {CanvasRenderingContext2D} ctx Context to render on
@@ -44,6 +45,9 @@ class Object ()
   def _applyPatternGradientTransform(ctx: CanvasRenderingContext2D, filler: String): Unit = js.native
   def _applyPatternGradientTransform(ctx: CanvasRenderingContext2D, filler: Gradient): Unit = js.native
   def _applyPatternGradientTransform(ctx: CanvasRenderingContext2D, filler: Pattern): Unit = js.native
+  
+  var _controlsVisibility: Br = js.native
+  
   /**
     * Determines which corner has been clicked
     * @private
@@ -51,18 +55,21 @@ class Object ()
     * @return {String|Boolean} corner code (tl, tr, bl, br, etc.), or false if nothing is found
     */
   def _findTargetCorner(pointer: X): Boolean | bl | br | mb | ml | mr | mt | tl | tr | mtr = js.native
+  
   /**
     * Returns the instance of the control visibility set for this object.
     * @private
     * @returns {Object}
     */
   def _getControlsVisibility(): Mb = js.native
+  
   /**
     * Returns the top, left coordinates
     * @private
     * @return {fabric.Point}
     */
   def _getLeftTopCoords(): Point = js.native
+  
   /*
     * Calculate object dimensions from its properties
     * @private
@@ -70,6 +77,7 @@ class Object ()
     * @return {Object} .y height dimension
     */
   def _getNonTransformedDimensions(): X = js.native
+  
   /*
     * Calculate object bounding box dimensions from its properties scale, skew.
     * @private
@@ -80,37 +88,44 @@ class Object ()
   def _getTransformedDimensions(skewX: js.UndefOr[scala.Nothing], skewY: Double): X = js.native
   def _getTransformedDimensions(skewX: Double): X = js.native
   def _getTransformedDimensions(skewX: Double, skewY: Double): X = js.native
+  
   /**
     * @private
     * @param {CanvasRenderingContext2D} ctx Context to render on
     */
   def _removeShadow(ctx: CanvasRenderingContext2D): Unit = js.native
+  
   /**
     * @private
     * @param {CanvasRenderingContext2D} ctx Context to render on
     */
   def _render(ctx: CanvasRenderingContext2D): Unit = js.native
+  
   /**
     * @private
     * @param {CanvasRenderingContext2D} ctx Context to render on
     */
   def _renderFill(ctx: CanvasRenderingContext2D): Unit = js.native
+  
   /**
     * @private
     * @param {CanvasRenderingContext2D} ctx Context to render on
     */
   def _renderPaintInOrder(ctx: CanvasRenderingContext2D): Unit = js.native
+  
   /**
     * @param ctx
     * @private
     */
   def _renderStroke(ctx: CanvasRenderingContext2D): Unit = js.native
+  
   /**
     * @private
     * @param {String} key
     * @param {*} value
     */
   def _set(key: String, value: js.Any): Object = js.native
+  
   /**
     * @private
     * Sets line dash
@@ -124,10 +139,12 @@ class Object ()
     dashArray: js.Array[Double],
     alternative: js.Function1[/* ctx */ CanvasRenderingContext2D, Unit]
   ): Unit = js.native
+  
   /**
     * @param to One of 'left', 'center', 'right'
     */
   def adjustPosition(to: String): Unit = js.native
+  
   // functions from object stacking mixin
   // -----------------------------------------------------------------------------------------------------------------------------------
   /**
@@ -136,10 +153,12 @@ class Object ()
     */
   def bringForward(): Object = js.native
   def bringForward(intersecting: Boolean): Object = js.native
+  
   /**
     * Moves an object to the top of the stack of drawn objects
     */
   def bringToFront(): Object = js.native
+  
   /**
     * Calculate and returns the .coords of an object.
     * @return {Object} Object with tl, tr, br, bl ....
@@ -147,12 +166,14 @@ class Object ()
     */
   def calcCoords(): js.Any = js.native
   def calcCoords(absolute: Boolean): js.Any = js.native
+  
   /**
     * calculate transform matrix that represents the current transformations from the
     * object's properties, this matrix does not include the group transformation
     * @return {Array} transform matrix for the object
     */
   def calcOwnMatrix(): js.Array[_] = js.native
+  
   /**
     * calculate trasform Matrix that represent current transformation from
     * object properties.
@@ -161,21 +182,25 @@ class Object ()
     */
   def calcTransformMatrix(): js.Array[_] = js.native
   def calcTransformMatrix(skipGroup: Boolean): js.Array[_] = js.native
+  
   /**
     * Centers object vertically and horizontally on canvas to which is was added last
     * You might need to call `setCoords` on an object after centering, to update controls area.
     */
   def center(): Object = js.native
+  
   /**
     * Centers object horizontally on canvas to which it was added last.
     * You might need to call `setCoords` on an object after centering, to update controls area.
     */
   def centerH(): Object = js.native
+  
   /**
     * Centers object vertically on canvas to which it was added last.
     * You might need to call `setCoords` on an object after centering, to update controls area.
     */
   def centerV(): Object = js.native
+  
   /**
     * Clones an instance, using a callback method will work for every object.
     * @param callback Callback is invoked with a clone as a first argument
@@ -183,16 +208,19 @@ class Object ()
     */
   def clone(callback: js.Function): Unit = js.native
   def clone(callback: js.Function, propertiesToInclude: js.Array[String]): Unit = js.native
+  
   /**
     * Creates an instance of fabric.Image out of an object
     * @param callback callback, invoked with an instance as a first argument
     */
   def cloneAsImage(callback: js.Function): Object = js.native
   def cloneAsImage(callback: js.Function, options: IDataURLOptions): Object = js.native
+  
   /**
     * Returns complexity of an instance
     */
   def complexity(): Double = js.native
+  
   /**
     * Checks if point is inside the object
     * @param {fabric.Point} point Point to check against
@@ -214,6 +242,7 @@ class Object ()
   def containsPoint(point: Point, lines: js.Any, absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Boolean = js.native
   def containsPoint(point: Point, lines: js.Any, absolute: Boolean): Boolean = js.native
   def containsPoint(point: Point, lines: js.Any, absolute: Boolean, calculate: Boolean): Boolean = js.native
+  
   // functions from interactivity mixin
   // -----------------------------------------------------------------------------------------------------------------------------------
   /**
@@ -227,6 +256,7 @@ class Object ()
     */
   def drawBorders(ctx: CanvasRenderingContext2D): Object = js.native
   def drawBorders(ctx: CanvasRenderingContext2D, styleOverride: js.Any): Object = js.native
+  
   /**
     * Draws borders of an object's bounding box when it is inside a group.
     * Requires public properties: width, height
@@ -241,16 +271,19 @@ class Object ()
   def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: js.UndefOr[scala.Nothing], styleOverride: js.Any): Object = js.native
   def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: js.Any): Object = js.native
   def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: js.Any, styleOverride: js.Any): Object = js.native
+  
   /**
     * Paint the cached copy of the object on the target context.
     * @param {CanvasRenderingContext2D} ctx Context to render on
     */
   def drawCacheOnCanvas(ctx: CanvasRenderingContext2D): Unit = js.native
+  
   /**
     * Execute the drawing operation for an object clipPath
     * @param {CanvasRenderingContext2D} ctx Context to render on
     */
   def drawClipPathOnCache(ctx: CanvasRenderingContext2D): Unit = js.native
+  
   /**
     * Draws corners of an object's bounding box.
     * Requires public properties: width, height
@@ -262,6 +295,7 @@ class Object ()
     */
   def drawControls(ctx: CanvasRenderingContext2D): Object = js.native
   def drawControls(ctx: CanvasRenderingContext2D, styleOverride: js.Any): Object = js.native
+  
   /**
     * Draws corners of an object's bounding box.
     * Requires public properties: width, height
@@ -269,11 +303,13 @@ class Object ()
     * @param ctx Context to draw on
     */
   def drawCorners(context: CanvasRenderingContext2D): Object = js.native
+  
   /**
     * Execute the drawing operation for an object on a specified context
     * @param {CanvasRenderingContext2D} ctx Context to render on
     */
   def drawObject(ctx: CanvasRenderingContext2D): Unit = js.native
+  
   /**
     * Draws a colored layer behind the object, inside its selection borders.
     * Requires public options: padding, selectionBackgroundColor
@@ -284,17 +320,21 @@ class Object ()
     * @chainable
     */
   def drawSelectionBackground(ctx: CanvasRenderingContext2D): Object = js.native
+  
   def fire(eventName: String): Unit = js.native
   def fire(eventName: String, options: js.Any): Unit = js.native
+  
   /**
     * Same as straighten but with animation
     */
   def fxStraighten(callbacks: Callbacks): Object = js.native
+  
   /**
     * Basic getter
     * @param property Property name
     */
   def get[K /* <: /* keyof this */ String */](property: K): /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any = js.native
+  
   /**
     * Returns coordinates of object's bounding rectangle (left, top, width, height)
     * the box is intented as aligned to axis of canvas.
@@ -306,10 +346,12 @@ class Object ()
   def getBoundingRect(absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Top = js.native
   def getBoundingRect(absolute: Boolean): Top = js.native
   def getBoundingRect(absolute: Boolean, calculate: Boolean): Top = js.native
+  
   /**
     * Returns the real center coordinates of the object
     */
   def getCenterPoint(): Point = js.native
+  
   /**
     * return correct set of coordinates for intersection
     */
@@ -317,6 +359,7 @@ class Object ()
   def getCoords(absolute: js.UndefOr[scala.Nothing], calculate: Boolean): js.Any = js.native
   def getCoords(absolute: Boolean): js.Any = js.native
   def getCoords(absolute: Boolean, calculate: Boolean): js.Any = js.native
+  
   /**
     * Returns coordinates of a pointer relative to an object
     * @param e Event to operate upon
@@ -324,16 +367,19 @@ class Object ()
     */
   def getLocalPointer(e: Event): X = js.native
   def getLocalPointer(e: Event, pointer: X): X = js.native
+  
   /**
     * Return the object opacity counting also the group property
     * @return {Number}
     */
   def getObjectOpacity(): Double = js.native
+  
   /**
     * Return the object scale factor counting also the group scaling
     * @return {Object} object with scaleX and scaleY properties
     */
   def getObjectScaling(): ScaleX = js.native
+  
   /**
     * Returns the coordinates of the object as if it has a different origin
     * @param {String} originX Horizontal origin: 'left', 'center' or 'right'
@@ -341,28 +387,33 @@ class Object ()
     * @return {fabric.Point}
     */
   def getPointByOrigin(originX: String, originY: String): Point = js.native
+  
   /**
     * Returns height of an object bounding box counting transformations
     * before 2.0 it was named getHeight();
     * @return {Number} height value
     */
   def getScaledHeight(): Double = js.native
+  
   /**
     * Returns width of an object bounding box counting transformations
     * before 2.0 it was named getWidth();
     * @return {Number} width value
     */
   def getScaledWidth(): Double = js.native
+  
   /**
     * Returns id attribute for svg output
     * @return {String}
     */
   def getSvgCommons(): String = js.native
+  
   /**
     * Returns filter for svg shadow
     * @return {String}
     */
   def getSvgFilter(): String = js.native
+  
   /**
     * Returns styles-string for svg-export
     * @param {Object} style the object from which to retrieve style properties
@@ -371,6 +422,7 @@ class Object ()
     */
   def getSvgSpanStyles(style: js.Any): String = js.native
   def getSvgSpanStyles(style: js.Any, useWhiteSpace: Boolean): String = js.native
+  
   // functions from object svg export mixin
   // -----------------------------------------------------------------------------------------------------------------------------------
   /**
@@ -380,12 +432,14 @@ class Object ()
     */
   def getSvgStyles(): String = js.native
   def getSvgStyles(skipShadow: Boolean): String = js.native
+  
   /**
     * Returns text-decoration property for svg-export
     * @param {Object} style the object from which to retrieve style properties
     * @return {String}
     */
   def getSvgTextDecoration(style: js.Any): String = js.native
+  
   /**
     * Returns transform-string for svg-export
     * @param {Boolean} use the full transform or the single object one.
@@ -395,19 +449,23 @@ class Object ()
   def getSvgTransform(full: js.UndefOr[scala.Nothing], additionalTransform: String): String = js.native
   def getSvgTransform(full: Boolean): String = js.native
   def getSvgTransform(full: Boolean, additionalTransform: String): String = js.native
+  
   /**
     * Returns transform-string for svg-export from the transform matrix of single elements
     */
   def getSvgTransformMatrix(): String = js.native
+  
   /**
     * Return the object scale factor counting also the group scaling, zoom and retina
     * @return {Object} object with scaleX and scaleY properties
     */
   def getTotalObjectScaling(): ScaleX = js.native
+  
   /**
     * Retrieves viewportTransform from Object's canvas if possible
     */
   def getViewportTransform(): js.Array[_] = js.native
+  
   // functions from stateful mixin
   // -----------------------------------------------------------------------------------------------------------------------------------
   /**
@@ -416,8 +474,10 @@ class Object ()
     * @return {Boolean} true if instance' state has changed since `{@link fabric.Object#saveState}` was called
     */
   def hasStateChanged(propertySet: String): Boolean = js.native
+  
   def initialize(): Object = js.native
   def initialize(options: IObjectOptions): Object = js.native
+  
   /**
     * Checks if object intersects with another object
     * @param {Object} other Object to test
@@ -429,6 +489,7 @@ class Object ()
   def intersectsWithObject(other: Object, absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Boolean = js.native
   def intersectsWithObject(other: Object, absolute: Boolean): Boolean = js.native
   def intersectsWithObject(other: Object, absolute: Boolean, calculate: Boolean): Boolean = js.native
+  
   /**
     * Checks if object intersects with an area formed by 2 points
     * @param {Object} pointTL top-left point of area
@@ -441,6 +502,7 @@ class Object ()
   def intersectsWithRect(pointTL: js.Any, pointBR: js.Any, absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Boolean = js.native
   def intersectsWithRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean): Boolean = js.native
   def intersectsWithRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean, calculate: Boolean): Boolean = js.native
+  
   /**
     * Check if cache is dirty
     * @param {Boolean} skipCanvas skip canvas checks because this object is painted
@@ -448,6 +510,7 @@ class Object ()
     */
   def isCacheDirty(): Boolean = js.native
   def isCacheDirty(skipCanvas: Boolean): Boolean = js.native
+  
   /**
     * Checks if object is fully contained within area of another object
     * @param {Object} other Object to test
@@ -459,6 +522,7 @@ class Object ()
   def isContainedWithinObject(other: Object, absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Boolean = js.native
   def isContainedWithinObject(other: Object, absolute: Boolean): Boolean = js.native
   def isContainedWithinObject(other: Object, absolute: Boolean, calculate: Boolean): Boolean = js.native
+  
   /**
     * Checks if object is fully contained within area formed by 2 points
     * @param pointTL top-left point of area
@@ -468,11 +532,13 @@ class Object ()
   def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any, absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Boolean = js.native
   def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean): Boolean = js.native
   def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean, calculate: Boolean): Boolean = js.native
+  
   /**
     * Returns true if the specified control is visible, false otherwise.
     * @param controlName The name of the control. Possible values are 'tl', 'tr', 'br', 'bl', 'ml', 'mt', 'mr', 'mb', 'mtr'.
     */
   def isControlVisible(controlName: String): Boolean = js.native
+  
   /**
     * Checks if object is contained within the canvas with current viewportTransform
     * the check is done stopping at first point that appears on screen
@@ -481,6 +547,7 @@ class Object ()
     */
   def isOnScreen(): Boolean = js.native
   def isOnScreen(calculate: Boolean): Boolean = js.native
+  
   /**
     * Checks if object is partially contained within the canvas with current viewportTransform
     * @param {Boolean} [calculate] use coordinates of current position instead of .oCoords
@@ -488,16 +555,19 @@ class Object ()
     */
   def isPartiallyOnScreen(): Boolean = js.native
   def isPartiallyOnScreen(calculate: Boolean): Boolean = js.native
+  
   /**
     * Returns true if specified type is identical to the type of an instance
     * @param type Type to check against
     */
   def isType(`type`: String): Boolean = js.native
+  
   /**
     * Moves an object to specified level in stack of drawn objects
     * @param index New position of object
     */
   def moveTo(index: Double): Object = js.native
+  
   /**
     * When set to `true`, force the object to have its own cache, even if it is inside a group
     * it may be needed when your object behave in a particular way on the cache and always needs
@@ -507,27 +577,32 @@ class Object ()
     * @returns false
     */
   def needsItsOwnCache(): Boolean = js.native
+  
   /**
     * This callback function is called every time _discardActiveObject or _setActiveObject
     * try to to deselect this object. If the function returns true, the process is cancelled
     * @return {Boolean} true to cancel selection
     */
   def onDeselect(options: E): Boolean = js.native
+  
   /**
     * This callback function is called every time _discardActiveObject or _setActiveObject
     * try to to select this object. If the function returns true, the process is cancelled
     */
   def onSelect(options: `0`): Boolean = js.native
+  
   /**
     * Renders an object on a specified context
     * @param {CanvasRenderingContext2D} ctx Context to render on
     */
   def render(ctx: CanvasRenderingContext2D): Unit = js.native
+  
   /**
     * Sets "angle" of an instance
     * @param angle Angle value
     */
   def rotate(angle: Double): Object = js.native
+  
   /**
     * Saves state of an object
     * @param [options] Object with additional `stateProperties` array to include when saving state
@@ -535,34 +610,40 @@ class Object ()
     */
   def saveState(): Object = js.native
   def saveState(options: PropertySet): Object = js.native
+  
   /**
     * Scales an object (equally by x and y)
     * @param value Scale factor
     * @return thisArg
     */
   def scale(value: Double): Object = js.native
+  
   /**
     * Scales an object to a given height, with respect to bounding box (scaling by x/y equally)
     * @param value New height value
     */
   def scaleToHeight(value: Double): Object = js.native
   def scaleToHeight(value: Double, absolute: Boolean): Object = js.native
+  
   /**
     * Scales an object to a given width, with respect to bounding box (scaling by x/y equally)
     * @param value New width value
     */
   def scaleToWidth(value: Double): Object = js.native
   def scaleToWidth(value: Double, absolute: Boolean): Object = js.native
+  
   /**
     * Moves an object down in stack of drawn objects
     * @param [intersecting] If `true`, send object behind next lower intersecting object
     */
   def sendBackwards(): Object = js.native
   def sendBackwards(intersecting: Boolean): Object = js.native
+  
   /**
     * Moves an object to the bottom of the stack of drawn objects
     */
   def sendToBack(): Object = js.native
+  
   /**
     * Sets property to a given value.
     * When changing position/dimension -related properties (left, top, scale, angle, etc.) `set` does not update position of object's borders/controls.
@@ -588,28 +669,33 @@ class Object ()
       /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any
     ]
   ): Object = js.native
+  
   /**
     * Sets "angle" of an instance
     * @param angle Angle value
     */
   def setAngle(angle: Double): Object = js.native
+  
   /**
     * Sets "color" of an instance (alias of `set('fill', …)`)
     * @param color Color value
     */
   def setColor(color: String): Object = js.native
+  
   /**
     * Sets the visibility of the specified control.
     * @param controlName The name of the control. Possible values are 'tl', 'tr', 'br', 'bl', 'ml', 'mt', 'mr', 'mb', 'mtr'.
     * @param visible true to set the specified control visible, false otherwise
     */
   def setControlVisible(controlName: String, visible: Boolean): Object = js.native
+  
   /**
     * Sets the visibility state of object controls.
     * @param [options] Options object
     */
   def setControlsVisibility(): this.type = js.native
   def setControlsVisibility(options: Br): this.type = js.native
+  
   // functions from geometry mixin
   // -------------------------------------------------------------------------------------------------------------------------------
   /**
@@ -624,6 +710,7 @@ class Object ()
   def setCoords(ignoreZoom: js.UndefOr[scala.Nothing], skipAbsolute: Boolean): Object = js.native
   def setCoords(ignoreZoom: Boolean): Object = js.native
   def setCoords(ignoreZoom: Boolean, skipAbsolute: Boolean): Object = js.native
+  
   @JSName("setGradient")
   def setGradient_fill(property: fill): Object = js.native
   @JSName("setGradient")
@@ -638,6 +725,7 @@ class Object ()
   def setGradient_stroke(property: stroke): Object = js.native
   @JSName("setGradient")
   def setGradient_stroke(property: stroke, options: OGradientOptions): Object = js.native
+  
   /**
     * This callback function is called by the parent group of an object every
     * time a non-delegated property changes on the group. It is passed the key
@@ -645,6 +733,7 @@ class Object ()
     * Travis build error about unused variables.
     */
   def setOnGroup(): Unit = js.native
+  
   /**
     * Sets object's properties from options
     * @param [options] Options object
@@ -655,11 +744,13 @@ class Object ()
     * @param {Object} [options] Options object
     */
   def setOptions(options: IObjectOptions): Unit = js.native
+  
   /**
     * Sets pattern fill of an object
     * @param options Options object
     */
   def setPatternFill(options: IFillOptions, callback: js.Function): Object = js.native
+  
   /**
     * Sets the position of the object taking into consideration the object's origin
     * @param pos The new position of the object
@@ -667,6 +758,7 @@ class Object ()
     * @param originY Vertical origin: 'top', 'center' or 'bottom'
     */
   def setPositionByOrigin(pos: Point, originX: String, originY: String): Unit = js.native
+  
   /**
     * Sets shadow of an object
     * @param [options] Options object or string (e.g. "2px 2px 10px rgba(0,0,0,0.2)")
@@ -674,11 +766,13 @@ class Object ()
   def setShadow(): Object = js.native
   def setShadow(options: String): Object = js.native
   def setShadow(options: Shadow): Object = js.native
+  
   /**
     * Sets sourcePath of an object
     * @param value Value to set sourcePath to
     */
   def setSourcePath(value: String): Object = js.native
+  
   /**
     * Setups state of an object
     * @param {Object} [options] Object with additional `stateProperties` array to include when saving state
@@ -686,6 +780,7 @@ class Object ()
     */
   def setupState(): Object = js.native
   def setupState(options: js.Any): Object = js.native
+  
   /**
     * Decide if the object should cache or not. Create its own cache level
     * objectCaching is a global flag, wins over everything
@@ -695,12 +790,14 @@ class Object ()
     * @return {Boolean}
     */
   def shouldCache(): Boolean = js.native
+  
   // functions from object straightening mixin
   // -----------------------------------------------------------------------------------------------------------------------------------
   /**
     * Straightens an object (rotating it from current angle to one of 0, 90, 180, 270, etc. depending on which is closer)
     */
   def straighten(): Object = js.native
+  
   /**
     * Converts an object into a HTMLCanvas element
     * @param {Object} options Options object
@@ -712,10 +809,11 @@ class Object ()
     * @param {Boolean} [options.enableRetinaScaling] Enable retina scaling for clone image. Introduce in 1.6.4
     * @param {Boolean} [options.withoutTransform] Remove current object transform ( no scale , no angle, no flip, no skew ). Introduced in 2.3.4
     * @param {Boolean} [options.withoutShadow] Remove current object shadow. Introduced in 2.4.2
-    * @return {String} Returns a data: URL containing a representation of the object in the format specified by options.format
+    * @return {HTMLCanvasElement} Returns a new HTMLCanvasElement painted with the current canvas object
     */
-  def toCanvasElement(): String = js.native
-  def toCanvasElement(options: IDataURLOptions): String = js.native
+  def toCanvasElement(): HTMLCanvasElement = js.native
+  def toCanvasElement(options: IDataURLOptions): HTMLCanvasElement = js.native
+  
   /**
     * Returns svg clipPath representation of an instance
     * @param {Function} [reviver] Method for further parsing of svg representation.
@@ -723,23 +821,27 @@ class Object ()
     */
   def toClipPathSVG(): String = js.native
   def toClipPathSVG(reviver: js.Function): String = js.native
+  
   /**
     * Converts an object into a data-url-like string
     * @param options Options object
     */
   def toDataURL(options: IDataURLOptions): String = js.native
+  
   /**
     * Returns (dataless) object representation of an instance
     * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     */
   def toDatalessObject(): js.Any = js.native
   def toDatalessObject(propertiesToInclude: js.Array[String]): js.Any = js.native
+  
   /**
     * Returns a JSON representation of an instance
     * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     */
   def toJSON(): js.Any = js.native
   def toJSON(propertiesToInclude: js.Array[String]): js.Any = js.native
+  
   /**
     * Returns the point in local coordinates
     * @param point The point relative to the global coordinate system
@@ -747,12 +849,14 @@ class Object ()
     * @param originY Vertical origin: 'top', 'center' or 'bottom'
     */
   def toLocalPoint(point: Point, originX: String, originY: String): Point = js.native
+  
   /**
     * Returns an object representation of an instance
     * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     */
   def toObject(): js.Any = js.native
   def toObject(propertiesToInclude: js.Array[String]): js.Any = js.native
+  
   /**
     * Returns svg representation of an instance
     * @param {Function} [reviver] Method for further parsing of svg representation.
@@ -760,16 +864,19 @@ class Object ()
     */
   def toSVG(): String = js.native
   def toSVG(reviver: js.Function): String = js.native
+  
   /**
     * Toggles specified property from `true` to `false` or from `false` to `true`
     * @param property Property to toggle
     */
   def toggle(property: /* keyof this */ String): Object = js.native
+  
   /**
     * Transforms context when rendering an object
     * @param {CanvasRenderingContext2D} ctx Context
     */
   def transform(ctx: CanvasRenderingContext2D): Unit = js.native
+  
   // functions from object origin mixin
   // -----------------------------------------------------------------------------------------------------------------------------------
   /**
@@ -779,6 +886,7 @@ class Object ()
     * @param originY Vertical origin: 'top', 'center' or 'bottom'
     */
   def translateToCenterPoint(point: Point, originX: String, originY: String): Point = js.native
+  
   /**
     * Translates the coordinates from a set of origin to another (based on the object's dimensions)
     * @param {fabric.Point} point The point which corresponds to the originX and originY params
@@ -789,6 +897,7 @@ class Object ()
     * @return {fabric.Point}
     */
   def translateToGivenOrigin(pointL: Point, fromOriginX: String, fromOriginY: String, toOriginX: String, toOriginY: String): Point = js.native
+  
   /**
     * Translates the coordinates from center to origin coordinates (based on the object's dimensions)
     * @param center The point which corresponds to center of the object
@@ -796,6 +905,7 @@ class Object ()
     * @param originY Vertical origin: 'top', 'center' or 'bottom'
     */
   def translateToOriginPoint(center: Point, originX: String, originY: String): Point = js.native
+  
   /**
     * Centers object on current viewport of canvas to which it was added last.
     * You might need to call `setCoords` on an object after centering, to update controls area.
@@ -803,6 +913,7 @@ class Object ()
     * @chainable
     */
   def viewportCenter(): Object = js.native
+  
   /**
     * Centers object horizontally on current viewport of canvas to which it was added last.
     * You might need to call `setCoords` on an object after centering, to update controls area.
@@ -810,6 +921,7 @@ class Object ()
     * @chainable
     */
   def viewportCenterH(): Object = js.native
+  
   /**
     * Centers object vertically on current viewport of canvas to which it was added last.
     * You might need to call `setCoords` on an object after centering, to update controls area.
@@ -817,6 +929,7 @@ class Object ()
     * @chainable
     */
   def viewportCenterV(): Object = js.native
+  
   /**
     * Check if this object or a child object will cast a shadow
     * used by Group.shouldCache to know if child has a shadow recursively
@@ -824,15 +937,16 @@ class Object ()
     */
   def willDrawShadow(): Boolean = js.native
 }
-
 /* static members */
 @JSImport("fabric/fabric-impl", "Object")
 @js.native
 object Object extends js.Object {
+  
   /**
     * Defines the number of fraction digits to use when serializing object values.
     */
   var NUM_FRACTION_DIGITS: js.UndefOr[Double] = js.native
+  
   /**
     * Creates fabric Object instance
     * @param {string} Class name
@@ -847,4 +961,3 @@ object Object extends js.Object {
   def _fromObject(className: String, `object`: Object, callback: js.Function): Object = js.native
   def _fromObject(className: String, `object`: Object, callback: js.Function, extraParam: js.Any): Object = js.native
 }
-

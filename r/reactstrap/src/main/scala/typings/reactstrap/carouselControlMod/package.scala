@@ -2,8 +2,9 @@ package typings.reactstrap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object carouselControlMod {
-  type CarouselControl[T] = typings.react.mod.Component[typings.reactstrap.carouselControlMod.CarouselControlProps, js.Object, js.Any]
+  
+  type CarouselControl = typings.react.mod.Component[typings.reactstrap.carouselControlMod.CarouselControlProps, js.Object, js.Any]
 }

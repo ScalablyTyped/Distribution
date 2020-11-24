@@ -10,9 +10,9 @@ A lightweight JavaScript library that matches paths against registered routes.
 | ------------------ | :-------------: |
 | Full name          | route-recognizer |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 53 |
-| # downloads        | 5575401 |
+| # releases         | 0 |
+| # dependents       | 54 |
+| # downloads        | 7830014 |
 | # stars            | 1 |
 
 ## Links

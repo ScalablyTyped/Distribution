@@ -2,12 +2,12 @@ package typings.winrt.Windows.Graphics.Printing.OptionDetails
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PrintCustomTextOptionDetails extends IPrintCustomTextOptionDetails
-
 object PrintCustomTextOptionDetails {
+  
   @scala.inline
   def apply(
     displayName: String,
@@ -23,4 +23,3 @@ object PrintCustomTextOptionDetails {
     __obj.asInstanceOf[PrintCustomTextOptionDetails]
   }
 }
-

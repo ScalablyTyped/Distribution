@@ -6,13 +6,13 @@ import typings.winrt.Windows.Foundation.Collections.IMap
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MediaPropertySet
   extends IMap[String, js.Any]
-
 object MediaPropertySet {
+  
   @scala.inline
   def apply(
     clear: () => Unit,
@@ -28,4 +28,3 @@ object MediaPropertySet {
     __obj.asInstanceOf[MediaPropertySet]
   }
 }
-

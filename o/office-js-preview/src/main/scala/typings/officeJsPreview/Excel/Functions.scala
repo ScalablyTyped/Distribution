@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Functions extends ClientObject {
-  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-  @JSName("context")
-  var context_Functions: RequestContext = js.native
+  
   /**
     * Returns the absolute value of a number, a number without its sign.
     *
@@ -28,6 +26,7 @@ trait Functions extends ClientObject {
   def abs(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def abs(number: Range): FunctionResult[Double] = js.native
   def abs(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the accrued interest for a security that pays periodic interest.
     *
@@ -52,6 +51,7 @@ trait Functions extends ClientObject {
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]],
     calcMethod: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the accrued interest for a security that pays interest at maturity.
     *
@@ -70,6 +70,7 @@ trait Functions extends ClientObject {
     par: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the arccosine of a number, in radians in the range 0 to Pi. The arccosine is the angle whose cosine is Number.
     *
@@ -81,6 +82,7 @@ trait Functions extends ClientObject {
   def acos(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def acos(number: Range): FunctionResult[Double] = js.native
   def acos(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the inverse hyperbolic cosine of a number.
     *
@@ -92,6 +94,7 @@ trait Functions extends ClientObject {
   def acosh(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def acosh(number: Range): FunctionResult[Double] = js.native
   def acosh(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the arccotangent of a number, in radians in the range 0 to Pi.
     *
@@ -103,6 +106,7 @@ trait Functions extends ClientObject {
   def acot(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def acot(number: Range): FunctionResult[Double] = js.native
   def acot(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the inverse hyperbolic cotangent of a number.
     *
@@ -114,6 +118,7 @@ trait Functions extends ClientObject {
   def acoth(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def acoth(number: Range): FunctionResult[Double] = js.native
   def acoth(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the prorated linear depreciation of an asset for each accounting period.
     *
@@ -136,6 +141,7 @@ trait Functions extends ClientObject {
     rate: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the prorated linear depreciation of an asset for each accounting period.
     *
@@ -158,6 +164,7 @@ trait Functions extends ClientObject {
     rate: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Checks whether all arguments are TRUE, and returns TRUE if all arguments are TRUE.
     *
@@ -166,6 +173,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
     */
   def and(values: (Boolean | Range | RangeReference | FunctionResult[_])*): FunctionResult[Boolean] = js.native
+  
   /**
     * Converts a Roman numeral to Arabic.
     *
@@ -177,6 +185,7 @@ trait Functions extends ClientObject {
   def arabic(text: FunctionResult[_]): FunctionResult[Double] = js.native
   def arabic(text: Range): FunctionResult[Double] = js.native
   def arabic(text: RangeReference): FunctionResult[Double] = js.native
+  
   def areas(reference: FunctionResult[_]): FunctionResult[Double] = js.native
   /**
     * Returns the number of areas in a reference. An area is a range of contiguous cells or a single cell.
@@ -187,6 +196,7 @@ trait Functions extends ClientObject {
     */
   def areas(reference: Range): FunctionResult[Double] = js.native
   def areas(reference: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Changes full-width (double-byte) characters to half-width (single-byte) characters. Use with double-byte character sets (DBCS).
     *
@@ -198,6 +208,7 @@ trait Functions extends ClientObject {
   def asc(text: FunctionResult[_]): FunctionResult[String] = js.native
   def asc(text: Range): FunctionResult[String] = js.native
   def asc(text: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Returns the arcsine of a number in radians, in the range -Pi/2 to Pi/2.
     *
@@ -209,6 +220,7 @@ trait Functions extends ClientObject {
   def asin(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def asin(number: Range): FunctionResult[Double] = js.native
   def asin(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the inverse hyperbolic sine of a number.
     *
@@ -220,6 +232,7 @@ trait Functions extends ClientObject {
   def asinh(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def asinh(number: Range): FunctionResult[Double] = js.native
   def asinh(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the arctangent of a number in radians, in the range -Pi/2 to Pi/2.
     *
@@ -231,6 +244,7 @@ trait Functions extends ClientObject {
   def atan(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def atan(number: Range): FunctionResult[Double] = js.native
   def atan(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the arctangent of the specified x- and y- coordinates, in radians between -Pi and Pi, excluding -Pi.
     *
@@ -255,6 +269,7 @@ trait Functions extends ClientObject {
   def atan2(xNum: Range, yNum: FunctionResult[_]): FunctionResult[Double] = js.native
   def atan2(xNum: Range, yNum: Range): FunctionResult[Double] = js.native
   def atan2(xNum: Range, yNum: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the inverse hyperbolic tangent of a number.
     *
@@ -266,6 +281,7 @@ trait Functions extends ClientObject {
   def atanh(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def atanh(number: Range): FunctionResult[Double] = js.native
   def atanh(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the average of the absolute deviations of data points from their mean. Arguments can be numbers or names, arrays, or references that contain numbers.
     *
@@ -274,6 +290,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 arguments for which you want the average of the absolute deviations.
     */
   def aveDev(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the average (arithmetic mean) of its arguments, which can be numbers or names, arrays, or references that contain numbers.
     *
@@ -282,6 +299,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numeric arguments for which you want the average.
     */
   def average(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the average (arithmetic mean) of its arguments, evaluating text and FALSE in arguments as 0; TRUE evaluates as 1. Arguments can be numbers, names, arrays, or references.
     *
@@ -290,6 +308,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 arguments for which you want the average.
     */
   def averageA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Finds average(arithmetic mean) for the cells specified by a given condition or criteria.
     *
@@ -304,6 +323,7 @@ trait Functions extends ClientObject {
     criteria: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     averageRange: js.UndefOr[Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   def averageIfs(
     averageRange: FunctionResult[_],
     values: (Range | RangeReference | FunctionResult[_] | Double | String | Boolean)*
@@ -324,6 +344,7 @@ trait Functions extends ClientObject {
     averageRange: Range,
     values: (Range | RangeReference | FunctionResult[_] | Double | String | Boolean)*
   ): FunctionResult[Double] = js.native
+  
   /**
     * Converts a number to text (baht).
     *
@@ -335,6 +356,7 @@ trait Functions extends ClientObject {
   def bahtText(number: FunctionResult[_]): FunctionResult[String] = js.native
   def bahtText(number: Range): FunctionResult[String] = js.native
   def bahtText(number: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Converts a number into a text representation with the given radix (base).
     *
@@ -349,6 +371,7 @@ trait Functions extends ClientObject {
     radix: Double | Range | RangeReference | FunctionResult[_],
     minLength: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[String] = js.native
+  
   def besselI(x: String, n: String): FunctionResult[Double] = js.native
   def besselI(x: String, n: Boolean): FunctionResult[Double] = js.native
   def besselI(x: String, n: Double): FunctionResult[Double] = js.native
@@ -393,6 +416,7 @@ trait Functions extends ClientObject {
   def besselI(x: Range, n: FunctionResult[_]): FunctionResult[Double] = js.native
   def besselI(x: Range, n: Range): FunctionResult[Double] = js.native
   def besselI(x: Range, n: RangeReference): FunctionResult[Double] = js.native
+  
   def besselJ(x: String, n: String): FunctionResult[Double] = js.native
   def besselJ(x: String, n: Boolean): FunctionResult[Double] = js.native
   def besselJ(x: String, n: Double): FunctionResult[Double] = js.native
@@ -437,6 +461,7 @@ trait Functions extends ClientObject {
   def besselJ(x: Range, n: FunctionResult[_]): FunctionResult[Double] = js.native
   def besselJ(x: Range, n: Range): FunctionResult[Double] = js.native
   def besselJ(x: Range, n: RangeReference): FunctionResult[Double] = js.native
+  
   def besselK(x: String, n: String): FunctionResult[Double] = js.native
   def besselK(x: String, n: Boolean): FunctionResult[Double] = js.native
   def besselK(x: String, n: Double): FunctionResult[Double] = js.native
@@ -481,6 +506,7 @@ trait Functions extends ClientObject {
   def besselK(x: Range, n: FunctionResult[_]): FunctionResult[Double] = js.native
   def besselK(x: Range, n: Range): FunctionResult[Double] = js.native
   def besselK(x: Range, n: RangeReference): FunctionResult[Double] = js.native
+  
   def besselY(x: String, n: String): FunctionResult[Double] = js.native
   def besselY(x: String, n: Boolean): FunctionResult[Double] = js.native
   def besselY(x: String, n: Double): FunctionResult[Double] = js.native
@@ -525,6 +551,7 @@ trait Functions extends ClientObject {
   def besselY(x: Range, n: FunctionResult[_]): FunctionResult[Double] = js.native
   def besselY(x: Range, n: Range): FunctionResult[Double] = js.native
   def besselY(x: Range, n: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the beta probability distribution function.
     *
@@ -545,6 +572,7 @@ trait Functions extends ClientObject {
     A: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]],
     B: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the inverse of the cumulative beta probability density function (BETA.DIST).
     *
@@ -563,6 +591,7 @@ trait Functions extends ClientObject {
     A: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]],
     B: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   def bin2Dec(number: String): FunctionResult[Double] = js.native
   def bin2Dec(number: Boolean): FunctionResult[Double] = js.native
   /**
@@ -576,6 +605,7 @@ trait Functions extends ClientObject {
   def bin2Dec(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def bin2Dec(number: Range): FunctionResult[Double] = js.native
   def bin2Dec(number: RangeReference): FunctionResult[Double] = js.native
+  
   def bin2Hex(number: String): FunctionResult[Double] = js.native
   def bin2Hex(number: String, places: String): FunctionResult[Double] = js.native
   def bin2Hex(number: String, places: Boolean): FunctionResult[Double] = js.native
@@ -626,6 +656,7 @@ trait Functions extends ClientObject {
   def bin2Hex(number: Range, places: FunctionResult[_]): FunctionResult[Double] = js.native
   def bin2Hex(number: Range, places: Range): FunctionResult[Double] = js.native
   def bin2Hex(number: Range, places: RangeReference): FunctionResult[Double] = js.native
+  
   def bin2Oct(number: String): FunctionResult[Double] = js.native
   def bin2Oct(number: String, places: String): FunctionResult[Double] = js.native
   def bin2Oct(number: String, places: Boolean): FunctionResult[Double] = js.native
@@ -676,6 +707,7 @@ trait Functions extends ClientObject {
   def bin2Oct(number: Range, places: FunctionResult[_]): FunctionResult[Double] = js.native
   def bin2Oct(number: Range, places: Range): FunctionResult[Double] = js.native
   def bin2Oct(number: Range, places: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the individual term binomial distribution probability.
     *
@@ -692,6 +724,7 @@ trait Functions extends ClientObject {
     probabilityS: Double | Range | RangeReference | FunctionResult[_],
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the probability of a trial result using a binomial distribution.
     *
@@ -708,6 +741,7 @@ trait Functions extends ClientObject {
     numberS: Double | Range | RangeReference | FunctionResult[_],
     numberS2: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion value.
     *
@@ -722,6 +756,7 @@ trait Functions extends ClientObject {
     probabilityS: Double | Range | RangeReference | FunctionResult[_],
     alpha: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns a bitwise 'And' of two numbers.
     *
@@ -746,6 +781,7 @@ trait Functions extends ClientObject {
   def bitand(number1: Range, number2: FunctionResult[_]): FunctionResult[Double] = js.native
   def bitand(number1: Range, number2: Range): FunctionResult[Double] = js.native
   def bitand(number1: Range, number2: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns a number shifted left by shift_amount bits.
     *
@@ -770,6 +806,7 @@ trait Functions extends ClientObject {
   def bitlshift(number: Range, shiftAmount: FunctionResult[_]): FunctionResult[Double] = js.native
   def bitlshift(number: Range, shiftAmount: Range): FunctionResult[Double] = js.native
   def bitlshift(number: Range, shiftAmount: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns a bitwise 'Or' of two numbers.
     *
@@ -794,6 +831,7 @@ trait Functions extends ClientObject {
   def bitor(number1: Range, number2: FunctionResult[_]): FunctionResult[Double] = js.native
   def bitor(number1: Range, number2: Range): FunctionResult[Double] = js.native
   def bitor(number1: Range, number2: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns a number shifted right by shift_amount bits.
     *
@@ -818,6 +856,7 @@ trait Functions extends ClientObject {
   def bitrshift(number: Range, shiftAmount: FunctionResult[_]): FunctionResult[Double] = js.native
   def bitrshift(number: Range, shiftAmount: Range): FunctionResult[Double] = js.native
   def bitrshift(number: Range, shiftAmount: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns a bitwise 'Exclusive Or' of two numbers.
     *
@@ -842,6 +881,7 @@ trait Functions extends ClientObject {
   def bitxor(number1: Range, number2: FunctionResult[_]): FunctionResult[Double] = js.native
   def bitxor(number1: Range, number2: Range): FunctionResult[Double] = js.native
   def bitxor(number1: Range, number2: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Rounds a number up, to the nearest integer or to the nearest multiple of significance.
     *
@@ -856,6 +896,7 @@ trait Functions extends ClientObject {
     significance: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]],
     mode: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Rounds a number up, to the nearest integer or to the nearest multiple of significance.
     *
@@ -884,6 +925,7 @@ trait Functions extends ClientObject {
   def ceiling_Precise(number: Range, significance: FunctionResult[_]): FunctionResult[Double] = js.native
   def ceiling_Precise(number: Range, significance: Range): FunctionResult[Double] = js.native
   def ceiling_Precise(number: Range, significance: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the character specified by the code number from the character set for your computer.
     *
@@ -895,6 +937,7 @@ trait Functions extends ClientObject {
   def char(number: FunctionResult[_]): FunctionResult[String] = js.native
   def char(number: Range): FunctionResult[String] = js.native
   def char(number: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Returns the left-tailed probability of the chi-squared distribution.
     *
@@ -909,6 +952,7 @@ trait Functions extends ClientObject {
     degFreedom: Double | Range | RangeReference | FunctionResult[_],
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the right-tailed probability of the chi-squared distribution.
     *
@@ -933,6 +977,7 @@ trait Functions extends ClientObject {
   def chiSq_Dist_RT(x: Range, degFreedom: FunctionResult[_]): FunctionResult[Double] = js.native
   def chiSq_Dist_RT(x: Range, degFreedom: Range): FunctionResult[Double] = js.native
   def chiSq_Dist_RT(x: Range, degFreedom: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the inverse of the left-tailed probability of the chi-squared distribution.
     *
@@ -957,6 +1002,7 @@ trait Functions extends ClientObject {
   def chiSq_Inv(probability: Range, degFreedom: FunctionResult[_]): FunctionResult[Double] = js.native
   def chiSq_Inv(probability: Range, degFreedom: Range): FunctionResult[Double] = js.native
   def chiSq_Inv(probability: Range, degFreedom: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the inverse of the right-tailed probability of the chi-squared distribution.
     *
@@ -981,6 +1027,7 @@ trait Functions extends ClientObject {
   def chiSq_Inv_RT(probability: Range, degFreedom: FunctionResult[_]): FunctionResult[Double] = js.native
   def chiSq_Inv_RT(probability: Range, degFreedom: Range): FunctionResult[Double] = js.native
   def chiSq_Inv_RT(probability: Range, degFreedom: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Chooses a value or action to perform from a list of values, based on an index number.
     *
@@ -1002,6 +1049,7 @@ trait Functions extends ClientObject {
     values: (Range | Double | String | Boolean | RangeReference | FunctionResult[_])*
   ): FunctionResult[Double | String | Boolean] = js.native
   def choose(indexNum: Range, values: (Range | Double | String | Boolean | RangeReference | FunctionResult[_])*): FunctionResult[Double | String | Boolean] = js.native
+  
   /**
     * Removes all nonprintable characters from text.
     *
@@ -1013,6 +1061,7 @@ trait Functions extends ClientObject {
   def clean(text: FunctionResult[_]): FunctionResult[String] = js.native
   def clean(text: Range): FunctionResult[String] = js.native
   def clean(text: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Returns a numeric code for the first character in a text string, in the character set used by your computer.
     *
@@ -1024,6 +1073,7 @@ trait Functions extends ClientObject {
   def code(text: FunctionResult[_]): FunctionResult[Double] = js.native
   def code(text: Range): FunctionResult[Double] = js.native
   def code(text: RangeReference): FunctionResult[Double] = js.native
+  
   def columns(array: FunctionResult[_]): FunctionResult[Double] = js.native
   /**
     * Returns the number of columns in an array or reference.
@@ -1034,6 +1084,7 @@ trait Functions extends ClientObject {
     */
   def columns(array: Range): FunctionResult[Double] = js.native
   def columns(array: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number of combinations for a given number of items.
     *
@@ -1058,6 +1109,7 @@ trait Functions extends ClientObject {
   def combin(number: Range, numberChosen: FunctionResult[_]): FunctionResult[Double] = js.native
   def combin(number: Range, numberChosen: Range): FunctionResult[Double] = js.native
   def combin(number: Range, numberChosen: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number of combinations with repetitions for a given number of items.
     *
@@ -1082,6 +1134,7 @@ trait Functions extends ClientObject {
   def combina(number: Range, numberChosen: FunctionResult[_]): FunctionResult[Double] = js.native
   def combina(number: Range, numberChosen: Range): FunctionResult[Double] = js.native
   def combina(number: Range, numberChosen: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Converts real and imaginary coefficients into a complex number.
     *
@@ -1096,6 +1149,7 @@ trait Functions extends ClientObject {
     iNum: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     suffix: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Joins several text strings into one text string.
     *
@@ -1104,6 +1158,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 text strings to be joined into a single text string and can be text strings, numbers, or single-cell references.
     */
   def concatenate(values: (String | Range | RangeReference | FunctionResult[_])*): FunctionResult[String] = js.native
+  
   /**
     * Returns the confidence interval for a population mean, using a normal distribution.
     *
@@ -1118,6 +1173,7 @@ trait Functions extends ClientObject {
     standardDev: Double | Range | RangeReference | FunctionResult[_],
     size: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the confidence interval for a population mean, using a Student's T distribution.
     *
@@ -1132,6 +1188,11 @@ trait Functions extends ClientObject {
     standardDev: Double | Range | RangeReference | FunctionResult[_],
     size: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Functions: RequestContext = js.native
+  
   /**
     * Converts a number from one measurement system to another.
     *
@@ -1146,6 +1207,7 @@ trait Functions extends ClientObject {
     fromUnit: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     toUnit: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the cosine of an angle.
     *
@@ -1157,6 +1219,7 @@ trait Functions extends ClientObject {
   def cos(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def cos(number: Range): FunctionResult[Double] = js.native
   def cos(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the hyperbolic cosine of a number.
     *
@@ -1168,6 +1231,7 @@ trait Functions extends ClientObject {
   def cosh(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def cosh(number: Range): FunctionResult[Double] = js.native
   def cosh(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the cotangent of an angle.
     *
@@ -1179,6 +1243,7 @@ trait Functions extends ClientObject {
   def cot(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def cot(number: Range): FunctionResult[Double] = js.native
   def cot(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the hyperbolic cotangent of a number.
     *
@@ -1190,6 +1255,7 @@ trait Functions extends ClientObject {
   def coth(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def coth(number: Range): FunctionResult[Double] = js.native
   def coth(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Counts the number of cells in a range that contain numbers.
     *
@@ -1198,6 +1264,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 arguments that can contain or refer to a variety of different types of data, but only numbers are counted.
     */
   def count(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Counts the number of cells in a range that are not empty.
     *
@@ -1206,6 +1273,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 arguments representing the values and cells you want to count. Values can be any type of information.
     */
   def countA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   def countBlank(range: FunctionResult[_]): FunctionResult[Double] = js.native
   /**
     * Counts the number of empty cells in a specified range of cells.
@@ -1216,6 +1284,7 @@ trait Functions extends ClientObject {
     */
   def countBlank(range: Range): FunctionResult[Double] = js.native
   def countBlank(range: RangeReference): FunctionResult[Double] = js.native
+  
   def countIf(range: FunctionResult[_], criteria: String): FunctionResult[Double] = js.native
   def countIf(range: FunctionResult[_], criteria: Boolean): FunctionResult[Double] = js.native
   def countIf(range: FunctionResult[_], criteria: Double): FunctionResult[Double] = js.native
@@ -1242,6 +1311,7 @@ trait Functions extends ClientObject {
   def countIf(range: Range, criteria: FunctionResult[_]): FunctionResult[Double] = js.native
   def countIf(range: Range, criteria: Range): FunctionResult[Double] = js.native
   def countIf(range: Range, criteria: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Counts the number of cells specified by a given set of conditions or criteria.
     *
@@ -1250,6 +1320,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition in the form of a number, expression, or text that defines which cells will be counted.
     */
   def countIfs(values: (Range | RangeReference | FunctionResult[_] | Double | String | Boolean)*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number of days from the beginning of the coupon period to the settlement date.
     *
@@ -1266,6 +1337,7 @@ trait Functions extends ClientObject {
     frequency: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number of days in the coupon period that contains the settlement date.
     *
@@ -1282,6 +1354,7 @@ trait Functions extends ClientObject {
     frequency: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number of days from the settlement date to the next coupon date.
     *
@@ -1298,6 +1371,7 @@ trait Functions extends ClientObject {
     frequency: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the next coupon date after the settlement date.
     *
@@ -1314,6 +1388,7 @@ trait Functions extends ClientObject {
     frequency: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number of coupons payable between the settlement date and maturity date.
     *
@@ -1330,6 +1405,7 @@ trait Functions extends ClientObject {
     frequency: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the previous coupon date before the settlement date.
     *
@@ -1346,6 +1422,7 @@ trait Functions extends ClientObject {
     frequency: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the cosecant of an angle.
     *
@@ -1357,6 +1434,7 @@ trait Functions extends ClientObject {
   def csc(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def csc(number: Range): FunctionResult[Double] = js.native
   def csc(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the hyperbolic cosecant of an angle.
     *
@@ -1368,6 +1446,7 @@ trait Functions extends ClientObject {
   def csch(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def csch(number: Range): FunctionResult[Double] = js.native
   def csch(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the cumulative interest paid between two periods.
     *
@@ -1388,6 +1467,7 @@ trait Functions extends ClientObject {
     endPeriod: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     `type`: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the cumulative principal paid on a loan between two periods.
     *
@@ -1408,6 +1488,7 @@ trait Functions extends ClientObject {
     endPeriod: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     `type`: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number that represents the date in Microsoft Excel date-time code.
     *
@@ -1422,6 +1503,7 @@ trait Functions extends ClientObject {
     month: Double | Range | RangeReference | FunctionResult[_],
     day: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Converts a date in the form of text to a number that represents the date in Microsoft Excel date-time code.
     *
@@ -1434,6 +1516,7 @@ trait Functions extends ClientObject {
   def datevalue(dateText: FunctionResult[_]): FunctionResult[Double] = js.native
   def datevalue(dateText: Range): FunctionResult[Double] = js.native
   def datevalue(dateText: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Averages the values in a column in a list or database that match conditions you specify.
     *
@@ -1448,6 +1531,7 @@ trait Functions extends ClientObject {
     field: Double | String | Range | RangeReference | FunctionResult[_],
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the day of the month, a number from 1 to 31.
     *
@@ -1459,6 +1543,7 @@ trait Functions extends ClientObject {
   def day(serialNumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def day(serialNumber: Range): FunctionResult[Double] = js.native
   def day(serialNumber: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number of days between the two dates.
     *
@@ -1492,6 +1577,7 @@ trait Functions extends ClientObject {
   def days(endDate: Range, startDate: FunctionResult[_]): FunctionResult[Double] = js.native
   def days(endDate: Range, startDate: Range): FunctionResult[Double] = js.native
   def days(endDate: Range, startDate: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number of days between two dates based on a 360-day year (twelve 30-day months).
     *
@@ -1506,6 +1592,7 @@ trait Functions extends ClientObject {
     endDate: Double | Range | RangeReference | FunctionResult[_],
     method: js.UndefOr[Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the depreciation of an asset for a specified period using the fixed-declining balance method.
     *
@@ -1524,6 +1611,7 @@ trait Functions extends ClientObject {
     period: Double | Range | RangeReference | FunctionResult[_],
     month: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Changes half-width (single-byte) characters within a character string to full-width (double-byte) characters. Use with double-byte character sets (DBCS).
     *
@@ -1535,6 +1623,7 @@ trait Functions extends ClientObject {
   def dbcs(text: FunctionResult[_]): FunctionResult[String] = js.native
   def dbcs(text: Range): FunctionResult[String] = js.native
   def dbcs(text: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Counts the cells containing numbers in the field (column) of records in the database that match the conditions you specify.
     *
@@ -1549,6 +1638,7 @@ trait Functions extends ClientObject {
     field: Double | String | Range | RangeReference | FunctionResult[_],
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Counts nonblank cells in the field (column) of records in the database that match the conditions you specify.
     *
@@ -1563,6 +1653,7 @@ trait Functions extends ClientObject {
     field: Double | String | Range | RangeReference | FunctionResult[_],
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the depreciation of an asset for a specified period using the double-declining balance method or some other method you specify.
     *
@@ -1581,6 +1672,7 @@ trait Functions extends ClientObject {
     period: Double | Range | RangeReference | FunctionResult[_],
     factor: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   def dec2Bin(number: String): FunctionResult[Double] = js.native
   def dec2Bin(number: String, places: String): FunctionResult[Double] = js.native
   def dec2Bin(number: String, places: Boolean): FunctionResult[Double] = js.native
@@ -1631,6 +1723,7 @@ trait Functions extends ClientObject {
   def dec2Bin(number: Range, places: FunctionResult[_]): FunctionResult[Double] = js.native
   def dec2Bin(number: Range, places: Range): FunctionResult[Double] = js.native
   def dec2Bin(number: Range, places: RangeReference): FunctionResult[Double] = js.native
+  
   def dec2Hex(number: String): FunctionResult[Double] = js.native
   def dec2Hex(number: String, places: String): FunctionResult[Double] = js.native
   def dec2Hex(number: String, places: Boolean): FunctionResult[Double] = js.native
@@ -1681,6 +1774,7 @@ trait Functions extends ClientObject {
   def dec2Hex(number: Range, places: FunctionResult[_]): FunctionResult[Double] = js.native
   def dec2Hex(number: Range, places: Range): FunctionResult[Double] = js.native
   def dec2Hex(number: Range, places: RangeReference): FunctionResult[Double] = js.native
+  
   def dec2Oct(number: String): FunctionResult[Double] = js.native
   def dec2Oct(number: String, places: String): FunctionResult[Double] = js.native
   def dec2Oct(number: String, places: Boolean): FunctionResult[Double] = js.native
@@ -1731,6 +1825,7 @@ trait Functions extends ClientObject {
   def dec2Oct(number: Range, places: FunctionResult[_]): FunctionResult[Double] = js.native
   def dec2Oct(number: Range, places: Range): FunctionResult[Double] = js.native
   def dec2Oct(number: Range, places: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Converts a text representation of a number in a given base into a decimal number.
     *
@@ -1755,6 +1850,7 @@ trait Functions extends ClientObject {
   def decimal(number: Range, radix: FunctionResult[_]): FunctionResult[Double] = js.native
   def decimal(number: Range, radix: Range): FunctionResult[Double] = js.native
   def decimal(number: Range, radix: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Converts radians to degrees.
     *
@@ -1766,6 +1862,7 @@ trait Functions extends ClientObject {
   def degrees(angle: FunctionResult[_]): FunctionResult[Double] = js.native
   def degrees(angle: Range): FunctionResult[Double] = js.native
   def degrees(angle: RangeReference): FunctionResult[Double] = js.native
+  
   def delta(number1: String): FunctionResult[Double] = js.native
   def delta(number1: String, number2: String): FunctionResult[Double] = js.native
   def delta(number1: String, number2: Boolean): FunctionResult[Double] = js.native
@@ -1816,6 +1913,7 @@ trait Functions extends ClientObject {
   def delta(number1: Range, number2: FunctionResult[_]): FunctionResult[Double] = js.native
   def delta(number1: Range, number2: Range): FunctionResult[Double] = js.native
   def delta(number1: Range, number2: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the sum of squares of deviations of data points from their sample mean.
     *
@@ -1824,6 +1922,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 arguments, or an array or array reference, on which you want DEVSQ to calculate.
     */
   def devSq(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Extracts from a database a single record that matches the conditions you specify.
     *
@@ -1838,6 +1937,7 @@ trait Functions extends ClientObject {
     field: Double | String | Range | RangeReference | FunctionResult[_],
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double | Boolean | String] = js.native
+  
   /**
     * Returns the discount rate for a security.
     *
@@ -1856,6 +1956,7 @@ trait Functions extends ClientObject {
     redemption: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the largest number in the field (column) of records in the database that match the conditions you specify.
     *
@@ -1870,6 +1971,7 @@ trait Functions extends ClientObject {
     field: Double | String | Range | RangeReference | FunctionResult[_],
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the smallest number in the field (column) of records in the database that match the conditions you specify.
     *
@@ -1884,6 +1986,7 @@ trait Functions extends ClientObject {
     field: Double | String | Range | RangeReference | FunctionResult[_],
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Converts a number to text, using currency format.
     *
@@ -1912,6 +2015,7 @@ trait Functions extends ClientObject {
   def dollar(number: Range, decimals: FunctionResult[_]): FunctionResult[String] = js.native
   def dollar(number: Range, decimals: Range): FunctionResult[String] = js.native
   def dollar(number: Range, decimals: RangeReference): FunctionResult[String] = js.native
+  
   def dollarDe(fractionalDollar: String, fraction: String): FunctionResult[Double] = js.native
   def dollarDe(fractionalDollar: String, fraction: Boolean): FunctionResult[Double] = js.native
   def dollarDe(fractionalDollar: String, fraction: Double): FunctionResult[Double] = js.native
@@ -1956,6 +2060,7 @@ trait Functions extends ClientObject {
   def dollarDe(fractionalDollar: Range, fraction: FunctionResult[_]): FunctionResult[Double] = js.native
   def dollarDe(fractionalDollar: Range, fraction: Range): FunctionResult[Double] = js.native
   def dollarDe(fractionalDollar: Range, fraction: RangeReference): FunctionResult[Double] = js.native
+  
   def dollarFr(decimalDollar: String, fraction: String): FunctionResult[Double] = js.native
   def dollarFr(decimalDollar: String, fraction: Boolean): FunctionResult[Double] = js.native
   def dollarFr(decimalDollar: String, fraction: Double): FunctionResult[Double] = js.native
@@ -2000,6 +2105,7 @@ trait Functions extends ClientObject {
   def dollarFr(decimalDollar: Range, fraction: FunctionResult[_]): FunctionResult[Double] = js.native
   def dollarFr(decimalDollar: Range, fraction: Range): FunctionResult[Double] = js.native
   def dollarFr(decimalDollar: Range, fraction: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Multiplies the values in the field (column) of records in the database that match the conditions you specify.
     *
@@ -2014,6 +2120,7 @@ trait Functions extends ClientObject {
     field: Double | String | Range | RangeReference | FunctionResult[_],
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Estimates the standard deviation based on a sample from selected database entries.
     *
@@ -2028,6 +2135,7 @@ trait Functions extends ClientObject {
     field: Double | String | Range | RangeReference | FunctionResult[_],
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Calculates the standard deviation based on the entire population of selected database entries.
     *
@@ -2042,6 +2150,7 @@ trait Functions extends ClientObject {
     field: Double | String | Range | RangeReference | FunctionResult[_],
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Adds the numbers in the field (column) of records in the database that match the conditions you specify.
     *
@@ -2056,6 +2165,7 @@ trait Functions extends ClientObject {
     field: Double | String | Range | RangeReference | FunctionResult[_],
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the annual duration of a security with periodic interest payments.
     *
@@ -2076,6 +2186,7 @@ trait Functions extends ClientObject {
     frequency: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Estimates variance based on a sample from selected database entries.
     *
@@ -2090,6 +2201,7 @@ trait Functions extends ClientObject {
     field: Double | String | Range | RangeReference | FunctionResult[_],
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Calculates variance based on the entire population of selected database entries.
     *
@@ -2104,6 +2216,7 @@ trait Functions extends ClientObject {
     field: Double | String | Range | RangeReference | FunctionResult[_],
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Rounds a number up, to the nearest integer or to the nearest multiple of significance.
     *
@@ -2128,6 +2241,7 @@ trait Functions extends ClientObject {
   def ecma_Ceiling(number: Range, significance: FunctionResult[_]): FunctionResult[Double] = js.native
   def ecma_Ceiling(number: Range, significance: Range): FunctionResult[Double] = js.native
   def ecma_Ceiling(number: Range, significance: RangeReference): FunctionResult[Double] = js.native
+  
   def edate(startDate: String, months: String): FunctionResult[Double] = js.native
   def edate(startDate: String, months: Boolean): FunctionResult[Double] = js.native
   def edate(startDate: String, months: Double): FunctionResult[Double] = js.native
@@ -2172,6 +2286,7 @@ trait Functions extends ClientObject {
   def edate(startDate: Range, months: FunctionResult[_]): FunctionResult[Double] = js.native
   def edate(startDate: Range, months: Range): FunctionResult[Double] = js.native
   def edate(startDate: Range, months: RangeReference): FunctionResult[Double] = js.native
+  
   def effect(nominalRate: String, npery: String): FunctionResult[Double] = js.native
   def effect(nominalRate: String, npery: Boolean): FunctionResult[Double] = js.native
   def effect(nominalRate: String, npery: Double): FunctionResult[Double] = js.native
@@ -2216,6 +2331,7 @@ trait Functions extends ClientObject {
   def effect(nominalRate: Range, npery: FunctionResult[_]): FunctionResult[Double] = js.native
   def effect(nominalRate: Range, npery: Range): FunctionResult[Double] = js.native
   def effect(nominalRate: Range, npery: RangeReference): FunctionResult[Double] = js.native
+  
   def eoMonth(startDate: String, months: String): FunctionResult[Double] = js.native
   def eoMonth(startDate: String, months: Boolean): FunctionResult[Double] = js.native
   def eoMonth(startDate: String, months: Double): FunctionResult[Double] = js.native
@@ -2260,6 +2376,7 @@ trait Functions extends ClientObject {
   def eoMonth(startDate: Range, months: FunctionResult[_]): FunctionResult[Double] = js.native
   def eoMonth(startDate: Range, months: Range): FunctionResult[Double] = js.native
   def eoMonth(startDate: Range, months: RangeReference): FunctionResult[Double] = js.native
+  
   def erf(lowerLimit: String): FunctionResult[Double] = js.native
   def erf(lowerLimit: String, upperLimit: String): FunctionResult[Double] = js.native
   def erf(lowerLimit: String, upperLimit: Boolean): FunctionResult[Double] = js.native
@@ -2310,6 +2427,7 @@ trait Functions extends ClientObject {
   def erf(lowerLimit: Range, upperLimit: FunctionResult[_]): FunctionResult[Double] = js.native
   def erf(lowerLimit: Range, upperLimit: Range): FunctionResult[Double] = js.native
   def erf(lowerLimit: Range, upperLimit: RangeReference): FunctionResult[Double] = js.native
+  
   def erfC(x: String): FunctionResult[Double] = js.native
   def erfC(x: Boolean): FunctionResult[Double] = js.native
   /**
@@ -2323,6 +2441,7 @@ trait Functions extends ClientObject {
   def erfC(x: FunctionResult[_]): FunctionResult[Double] = js.native
   def erfC(x: Range): FunctionResult[Double] = js.native
   def erfC(x: RangeReference): FunctionResult[Double] = js.native
+  
   def erfC_Precise(X: String): FunctionResult[Double] = js.native
   def erfC_Precise(X: Boolean): FunctionResult[Double] = js.native
   /**
@@ -2336,6 +2455,7 @@ trait Functions extends ClientObject {
   def erfC_Precise(X: FunctionResult[_]): FunctionResult[Double] = js.native
   def erfC_Precise(X: Range): FunctionResult[Double] = js.native
   def erfC_Precise(X: RangeReference): FunctionResult[Double] = js.native
+  
   def erf_Precise(X: String): FunctionResult[Double] = js.native
   def erf_Precise(X: Boolean): FunctionResult[Double] = js.native
   /**
@@ -2349,6 +2469,7 @@ trait Functions extends ClientObject {
   def erf_Precise(X: FunctionResult[_]): FunctionResult[Double] = js.native
   def erf_Precise(X: Range): FunctionResult[Double] = js.native
   def erf_Precise(X: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns a number matching an error value.
     *
@@ -2362,6 +2483,7 @@ trait Functions extends ClientObject {
   def error_Type(errorVal: FunctionResult[_]): FunctionResult[Double] = js.native
   def error_Type(errorVal: Range): FunctionResult[Double] = js.native
   def error_Type(errorVal: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Rounds a positive number up and negative number down to the nearest even integer.
     *
@@ -2373,6 +2495,7 @@ trait Functions extends ClientObject {
   def even(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def even(number: Range): FunctionResult[Double] = js.native
   def even(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Checks whether two text strings are exactly the same, and returns TRUE or FALSE. EXACT is case-sensitive.
     *
@@ -2397,6 +2520,7 @@ trait Functions extends ClientObject {
   def exact(text1: Range, text2: FunctionResult[_]): FunctionResult[Boolean] = js.native
   def exact(text1: Range, text2: Range): FunctionResult[Boolean] = js.native
   def exact(text1: Range, text2: RangeReference): FunctionResult[Boolean] = js.native
+  
   /**
     * Returns e raised to the power of a given number.
     *
@@ -2408,6 +2532,7 @@ trait Functions extends ClientObject {
   def exp(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def exp(number: Range): FunctionResult[Double] = js.native
   def exp(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the exponential distribution.
     *
@@ -2422,6 +2547,7 @@ trait Functions extends ClientObject {
     lambda: Double | Range | RangeReference | FunctionResult[_],
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the (left-tailed) F probability distribution (degree of diversity) for two data sets.
     *
@@ -2438,6 +2564,7 @@ trait Functions extends ClientObject {
     degFreedom2: Double | Range | RangeReference | FunctionResult[_],
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the (right-tailed) F probability distribution (degree of diversity) for two data sets.
     *
@@ -2452,6 +2579,7 @@ trait Functions extends ClientObject {
     degFreedom1: Double | Range | RangeReference | FunctionResult[_],
     degFreedom2: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the inverse of the (left-tailed) F probability distribution: if p = F.DIST(x,...), then F.INV(p,...) = x.
     *
@@ -2466,6 +2594,7 @@ trait Functions extends ClientObject {
     degFreedom1: Double | Range | RangeReference | FunctionResult[_],
     degFreedom2: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the inverse of the (right-tailed) F probability distribution: if p = F.DIST.RT(x,...), then F.INV.RT(p,...) = x.
     *
@@ -2480,6 +2609,7 @@ trait Functions extends ClientObject {
     degFreedom1: Double | Range | RangeReference | FunctionResult[_],
     degFreedom2: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the factorial of a number, equal to 1*2*3*...* Number.
     *
@@ -2491,6 +2621,7 @@ trait Functions extends ClientObject {
   def fact(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def fact(number: Range): FunctionResult[Double] = js.native
   def fact(number: RangeReference): FunctionResult[Double] = js.native
+  
   def factDouble(number: String): FunctionResult[Double] = js.native
   def factDouble(number: Boolean): FunctionResult[Double] = js.native
   /**
@@ -2504,12 +2635,14 @@ trait Functions extends ClientObject {
   def factDouble(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def factDouble(number: Range): FunctionResult[Double] = js.native
   def factDouble(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the logical value FALSE.
     *
     * [Api set: ExcelApi 1.2]
     */
   def `false`(): FunctionResult[Boolean] = js.native
+  
   /**
     * Returns the starting position of one text string within another text string. FIND is case-sensitive.
     *
@@ -2524,6 +2657,7 @@ trait Functions extends ClientObject {
     withinText: String | Range | RangeReference | FunctionResult[_],
     startNum: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Finds the starting position of one text string within another text string. FINDB is case-sensitive. Use with double-byte character sets (DBCS).
     *
@@ -2538,6 +2672,7 @@ trait Functions extends ClientObject {
     withinText: String | Range | RangeReference | FunctionResult[_],
     startNum: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the Fisher transformation.
     *
@@ -2549,6 +2684,7 @@ trait Functions extends ClientObject {
   def fisher(x: FunctionResult[_]): FunctionResult[Double] = js.native
   def fisher(x: Range): FunctionResult[Double] = js.native
   def fisher(x: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the inverse of the Fisher transformation: if y = FISHER(x), then FISHERINV(y) = x.
     *
@@ -2560,6 +2696,7 @@ trait Functions extends ClientObject {
   def fisherInv(y: FunctionResult[_]): FunctionResult[Double] = js.native
   def fisherInv(y: Range): FunctionResult[Double] = js.native
   def fisherInv(y: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Rounds a number to the specified number of decimals and returns the result as text with or without commas.
     *
@@ -2574,6 +2711,7 @@ trait Functions extends ClientObject {
     decimals: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]],
     noCommas: js.UndefOr[Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[String] = js.native
+  
   /**
     * Rounds a number down, to the nearest integer or to the nearest multiple of significance.
     *
@@ -2588,6 +2726,7 @@ trait Functions extends ClientObject {
     significance: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]],
     mode: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Rounds a number down, to the nearest integer or to the nearest multiple of significance.
     *
@@ -2616,6 +2755,7 @@ trait Functions extends ClientObject {
   def floor_Precise(number: Range, significance: FunctionResult[_]): FunctionResult[Double] = js.native
   def floor_Precise(number: Range, significance: Range): FunctionResult[Double] = js.native
   def floor_Precise(number: Range, significance: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the future value of an investment based on periodic, constant payments and a constant interest rate.
     *
@@ -2634,6 +2774,7 @@ trait Functions extends ClientObject {
     pv: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]],
     `type`: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   def fvschedule(principal: String, schedule: String): FunctionResult[Double] = js.native
   def fvschedule(principal: String, schedule: Boolean): FunctionResult[Double] = js.native
   def fvschedule(principal: String, schedule: Double): FunctionResult[Double] = js.native
@@ -2678,6 +2819,7 @@ trait Functions extends ClientObject {
   def fvschedule(principal: Range, schedule: FunctionResult[_]): FunctionResult[Double] = js.native
   def fvschedule(principal: Range, schedule: Range): FunctionResult[Double] = js.native
   def fvschedule(principal: Range, schedule: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the Gamma function value.
     *
@@ -2689,6 +2831,7 @@ trait Functions extends ClientObject {
   def gamma(x: FunctionResult[_]): FunctionResult[Double] = js.native
   def gamma(x: Range): FunctionResult[Double] = js.native
   def gamma(x: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the natural logarithm of the gamma function.
     *
@@ -2700,6 +2843,7 @@ trait Functions extends ClientObject {
   def gammaLn(x: FunctionResult[_]): FunctionResult[Double] = js.native
   def gammaLn(x: Range): FunctionResult[Double] = js.native
   def gammaLn(x: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the natural logarithm of the gamma function.
     *
@@ -2711,6 +2855,7 @@ trait Functions extends ClientObject {
   def gammaLn_Precise(x: FunctionResult[_]): FunctionResult[Double] = js.native
   def gammaLn_Precise(x: Range): FunctionResult[Double] = js.native
   def gammaLn_Precise(x: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the gamma distribution.
     *
@@ -2727,6 +2872,7 @@ trait Functions extends ClientObject {
     beta: Double | Range | RangeReference | FunctionResult[_],
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the inverse of the gamma cumulative distribution: if p = GAMMA.DIST(x,...), then GAMMA.INV(p,...) = x.
     *
@@ -2741,6 +2887,7 @@ trait Functions extends ClientObject {
     alpha: Double | Range | RangeReference | FunctionResult[_],
     beta: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns 0.5 less than the standard normal cumulative distribution.
     *
@@ -2752,6 +2899,7 @@ trait Functions extends ClientObject {
   def gauss(x: FunctionResult[_]): FunctionResult[Double] = js.native
   def gauss(x: Range): FunctionResult[Double] = js.native
   def gauss(x: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the greatest common divisor.
     *
@@ -2760,6 +2908,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 values.
     */
   def gcd(values: (Double | String | Range | Boolean | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   def geStep(number: String): FunctionResult[Double] = js.native
   def geStep(number: String, step: String): FunctionResult[Double] = js.native
   def geStep(number: String, step: Boolean): FunctionResult[Double] = js.native
@@ -2810,6 +2959,7 @@ trait Functions extends ClientObject {
   def geStep(number: Range, step: FunctionResult[_]): FunctionResult[Double] = js.native
   def geStep(number: Range, step: Range): FunctionResult[Double] = js.native
   def geStep(number: Range, step: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the geometric mean of an array or range of positive numeric data.
     *
@@ -2818,6 +2968,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the mean.
     */
   def geoMean(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the harmonic mean of a data set of positive numbers: the reciprocal of the arithmetic mean of reciprocals.
     *
@@ -2826,6 +2977,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the harmonic mean.
     */
   def harMean(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   def hex2Bin(number: String): FunctionResult[Double] = js.native
   def hex2Bin(number: String, places: String): FunctionResult[Double] = js.native
   def hex2Bin(number: String, places: Boolean): FunctionResult[Double] = js.native
@@ -2876,6 +3028,7 @@ trait Functions extends ClientObject {
   def hex2Bin(number: Range, places: FunctionResult[_]): FunctionResult[Double] = js.native
   def hex2Bin(number: Range, places: Range): FunctionResult[Double] = js.native
   def hex2Bin(number: Range, places: RangeReference): FunctionResult[Double] = js.native
+  
   def hex2Dec(number: String): FunctionResult[Double] = js.native
   def hex2Dec(number: Boolean): FunctionResult[Double] = js.native
   /**
@@ -2889,6 +3042,7 @@ trait Functions extends ClientObject {
   def hex2Dec(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def hex2Dec(number: Range): FunctionResult[Double] = js.native
   def hex2Dec(number: RangeReference): FunctionResult[Double] = js.native
+  
   def hex2Oct(number: String): FunctionResult[Double] = js.native
   def hex2Oct(number: String, places: String): FunctionResult[Double] = js.native
   def hex2Oct(number: String, places: Boolean): FunctionResult[Double] = js.native
@@ -2939,6 +3093,7 @@ trait Functions extends ClientObject {
   def hex2Oct(number: Range, places: FunctionResult[_]): FunctionResult[Double] = js.native
   def hex2Oct(number: Range, places: Range): FunctionResult[Double] = js.native
   def hex2Oct(number: Range, places: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Looks for a value in the top row of a table or array of values and returns the value in the same column from a row you specify.
     *
@@ -2955,6 +3110,7 @@ trait Functions extends ClientObject {
     rowIndexNum: Range | Double | RangeReference | FunctionResult[_],
     rangeLookup: js.UndefOr[Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double | String | Boolean] = js.native
+  
   /**
     * Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).
     *
@@ -2966,6 +3122,7 @@ trait Functions extends ClientObject {
   def hour(serialNumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def hour(serialNumber: Range): FunctionResult[Double] = js.native
   def hour(serialNumber: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the hypergeometric distribution.
     *
@@ -2984,6 +3141,7 @@ trait Functions extends ClientObject {
     numberPop: Double | Range | RangeReference | FunctionResult[_],
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Creates a shortcut or jump that opens a document stored on your hard drive, a network server, or on the Internet.
     *
@@ -3020,6 +3178,7 @@ trait Functions extends ClientObject {
   def hyperlink(linkLocation: Range, friendlyName: FunctionResult[_]): FunctionResult[Double | String | Boolean] = js.native
   def hyperlink(linkLocation: Range, friendlyName: Range): FunctionResult[Double | String | Boolean] = js.native
   def hyperlink(linkLocation: Range, friendlyName: RangeReference): FunctionResult[Double | String | Boolean] = js.native
+  
   /**
     * Checks whether a condition is met, and returns one value if TRUE, and another value if FALSE.
     *
@@ -3034,6 +3193,7 @@ trait Functions extends ClientObject {
     valueIfTrue: js.UndefOr[Range | Double | String | Boolean | RangeReference | FunctionResult[_]],
     valueIfFalse: js.UndefOr[Range | Double | String | Boolean | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double | String | Boolean] = js.native
+  
   def imAbs(inumber: String): FunctionResult[Double] = js.native
   def imAbs(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3047,6 +3207,7 @@ trait Functions extends ClientObject {
   def imAbs(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imAbs(inumber: Range): FunctionResult[Double] = js.native
   def imAbs(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imArgument(inumber: String): FunctionResult[Double] = js.native
   def imArgument(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3060,6 +3221,7 @@ trait Functions extends ClientObject {
   def imArgument(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imArgument(inumber: Range): FunctionResult[Double] = js.native
   def imArgument(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imConjugate(inumber: String): FunctionResult[Double] = js.native
   def imConjugate(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3073,6 +3235,7 @@ trait Functions extends ClientObject {
   def imConjugate(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imConjugate(inumber: Range): FunctionResult[Double] = js.native
   def imConjugate(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imCos(inumber: String): FunctionResult[Double] = js.native
   def imCos(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3086,6 +3249,7 @@ trait Functions extends ClientObject {
   def imCos(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imCos(inumber: Range): FunctionResult[Double] = js.native
   def imCos(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imCosh(inumber: String): FunctionResult[Double] = js.native
   def imCosh(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3099,6 +3263,7 @@ trait Functions extends ClientObject {
   def imCosh(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imCosh(inumber: Range): FunctionResult[Double] = js.native
   def imCosh(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imCot(inumber: String): FunctionResult[Double] = js.native
   def imCot(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3112,6 +3277,7 @@ trait Functions extends ClientObject {
   def imCot(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imCot(inumber: Range): FunctionResult[Double] = js.native
   def imCot(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imCsc(inumber: String): FunctionResult[Double] = js.native
   def imCsc(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3125,6 +3291,7 @@ trait Functions extends ClientObject {
   def imCsc(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imCsc(inumber: Range): FunctionResult[Double] = js.native
   def imCsc(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imCsch(inumber: String): FunctionResult[Double] = js.native
   def imCsch(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3138,6 +3305,7 @@ trait Functions extends ClientObject {
   def imCsch(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imCsch(inumber: Range): FunctionResult[Double] = js.native
   def imCsch(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imDiv(inumber1: String, inumber2: String): FunctionResult[Double] = js.native
   def imDiv(inumber1: String, inumber2: Boolean): FunctionResult[Double] = js.native
   def imDiv(inumber1: String, inumber2: Double): FunctionResult[Double] = js.native
@@ -3182,6 +3350,7 @@ trait Functions extends ClientObject {
   def imDiv(inumber1: Range, inumber2: FunctionResult[_]): FunctionResult[Double] = js.native
   def imDiv(inumber1: Range, inumber2: Range): FunctionResult[Double] = js.native
   def imDiv(inumber1: Range, inumber2: RangeReference): FunctionResult[Double] = js.native
+  
   def imExp(inumber: String): FunctionResult[Double] = js.native
   def imExp(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3195,6 +3364,7 @@ trait Functions extends ClientObject {
   def imExp(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imExp(inumber: Range): FunctionResult[Double] = js.native
   def imExp(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imLn(inumber: String): FunctionResult[Double] = js.native
   def imLn(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3208,6 +3378,7 @@ trait Functions extends ClientObject {
   def imLn(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imLn(inumber: Range): FunctionResult[Double] = js.native
   def imLn(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imLog10(inumber: String): FunctionResult[Double] = js.native
   def imLog10(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3221,6 +3392,7 @@ trait Functions extends ClientObject {
   def imLog10(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imLog10(inumber: Range): FunctionResult[Double] = js.native
   def imLog10(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imLog2(inumber: String): FunctionResult[Double] = js.native
   def imLog2(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3234,6 +3406,7 @@ trait Functions extends ClientObject {
   def imLog2(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imLog2(inumber: Range): FunctionResult[Double] = js.native
   def imLog2(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imPower(inumber: String, number: String): FunctionResult[Double] = js.native
   def imPower(inumber: String, number: Boolean): FunctionResult[Double] = js.native
   def imPower(inumber: String, number: Double): FunctionResult[Double] = js.native
@@ -3278,6 +3451,7 @@ trait Functions extends ClientObject {
   def imPower(inumber: Range, number: FunctionResult[_]): FunctionResult[Double] = js.native
   def imPower(inumber: Range, number: Range): FunctionResult[Double] = js.native
   def imPower(inumber: Range, number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the product of 1 to 255 complex numbers.
     *
@@ -3286,6 +3460,7 @@ trait Functions extends ClientObject {
     * @param values Inumber1, Inumber2,... are from 1 to 255 complex numbers to multiply.
     */
   def imProduct(values: (Range | Double | String | Boolean | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   def imReal(inumber: String): FunctionResult[Double] = js.native
   def imReal(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3299,6 +3474,7 @@ trait Functions extends ClientObject {
   def imReal(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imReal(inumber: Range): FunctionResult[Double] = js.native
   def imReal(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imSec(inumber: String): FunctionResult[Double] = js.native
   def imSec(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3312,6 +3488,7 @@ trait Functions extends ClientObject {
   def imSec(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imSec(inumber: Range): FunctionResult[Double] = js.native
   def imSec(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imSech(inumber: String): FunctionResult[Double] = js.native
   def imSech(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3325,6 +3502,7 @@ trait Functions extends ClientObject {
   def imSech(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imSech(inumber: Range): FunctionResult[Double] = js.native
   def imSech(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imSin(inumber: String): FunctionResult[Double] = js.native
   def imSin(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3338,6 +3516,7 @@ trait Functions extends ClientObject {
   def imSin(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imSin(inumber: Range): FunctionResult[Double] = js.native
   def imSin(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imSinh(inumber: String): FunctionResult[Double] = js.native
   def imSinh(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3351,6 +3530,7 @@ trait Functions extends ClientObject {
   def imSinh(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imSinh(inumber: Range): FunctionResult[Double] = js.native
   def imSinh(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imSqrt(inumber: String): FunctionResult[Double] = js.native
   def imSqrt(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3364,6 +3544,7 @@ trait Functions extends ClientObject {
   def imSqrt(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imSqrt(inumber: Range): FunctionResult[Double] = js.native
   def imSqrt(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imSub(inumber1: String, inumber2: String): FunctionResult[Double] = js.native
   def imSub(inumber1: String, inumber2: Boolean): FunctionResult[Double] = js.native
   def imSub(inumber1: String, inumber2: Double): FunctionResult[Double] = js.native
@@ -3408,6 +3589,7 @@ trait Functions extends ClientObject {
   def imSub(inumber1: Range, inumber2: FunctionResult[_]): FunctionResult[Double] = js.native
   def imSub(inumber1: Range, inumber2: Range): FunctionResult[Double] = js.native
   def imSub(inumber1: Range, inumber2: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the sum of complex numbers.
     *
@@ -3416,6 +3598,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are from 1 to 255 complex numbers to add.
     */
   def imSum(values: (Range | Double | String | Boolean | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   def imTan(inumber: String): FunctionResult[Double] = js.native
   def imTan(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3429,6 +3612,7 @@ trait Functions extends ClientObject {
   def imTan(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imTan(inumber: Range): FunctionResult[Double] = js.native
   def imTan(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   def imaginary(inumber: String): FunctionResult[Double] = js.native
   def imaginary(inumber: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3442,6 +3626,7 @@ trait Functions extends ClientObject {
   def imaginary(inumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def imaginary(inumber: Range): FunctionResult[Double] = js.native
   def imaginary(inumber: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Rounds a number down to the nearest integer.
     *
@@ -3453,6 +3638,7 @@ trait Functions extends ClientObject {
   def int(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def int(number: Range): FunctionResult[Double] = js.native
   def int(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the interest rate for a fully invested security.
     *
@@ -3471,6 +3657,7 @@ trait Functions extends ClientObject {
     redemption: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the interest payment for a given period for an investment, based on periodic, constant payments and a constant interest rate.
     *
@@ -3491,6 +3678,7 @@ trait Functions extends ClientObject {
     fv: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]],
     `type`: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   def irr(values: FunctionResult[_]): FunctionResult[Double] = js.native
   def irr(values: FunctionResult[_], guess: Double): FunctionResult[Double] = js.native
   def irr(values: FunctionResult[_], guess: FunctionResult[_]): FunctionResult[Double] = js.native
@@ -3514,6 +3702,7 @@ trait Functions extends ClientObject {
   def irr(values: Range, guess: FunctionResult[_]): FunctionResult[Double] = js.native
   def irr(values: Range, guess: Range): FunctionResult[Double] = js.native
   def irr(values: Range, guess: RangeReference): FunctionResult[Double] = js.native
+  
   def isErr(value: String): FunctionResult[Boolean] = js.native
   def isErr(value: Boolean): FunctionResult[Boolean] = js.native
   /**
@@ -3527,6 +3716,7 @@ trait Functions extends ClientObject {
   def isErr(value: FunctionResult[_]): FunctionResult[Boolean] = js.native
   def isErr(value: Range): FunctionResult[Boolean] = js.native
   def isErr(value: RangeReference): FunctionResult[Boolean] = js.native
+  
   def isError(value: String): FunctionResult[Boolean] = js.native
   def isError(value: Boolean): FunctionResult[Boolean] = js.native
   /**
@@ -3540,6 +3730,7 @@ trait Functions extends ClientObject {
   def isError(value: FunctionResult[_]): FunctionResult[Boolean] = js.native
   def isError(value: Range): FunctionResult[Boolean] = js.native
   def isError(value: RangeReference): FunctionResult[Boolean] = js.native
+  
   def isEven(number: String): FunctionResult[Double] = js.native
   def isEven(number: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3553,6 +3744,7 @@ trait Functions extends ClientObject {
   def isEven(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def isEven(number: Range): FunctionResult[Double] = js.native
   def isEven(number: RangeReference): FunctionResult[Double] = js.native
+  
   def isFormula(reference: FunctionResult[_]): FunctionResult[Boolean] = js.native
   /**
     * Checks whether a reference is to a cell containing a formula, and returns TRUE or FALSE.
@@ -3563,6 +3755,7 @@ trait Functions extends ClientObject {
     */
   def isFormula(reference: Range): FunctionResult[Boolean] = js.native
   def isFormula(reference: RangeReference): FunctionResult[Boolean] = js.native
+  
   def isLogical(value: String): FunctionResult[Boolean] = js.native
   def isLogical(value: Boolean): FunctionResult[Boolean] = js.native
   /**
@@ -3576,6 +3769,7 @@ trait Functions extends ClientObject {
   def isLogical(value: FunctionResult[_]): FunctionResult[Boolean] = js.native
   def isLogical(value: Range): FunctionResult[Boolean] = js.native
   def isLogical(value: RangeReference): FunctionResult[Boolean] = js.native
+  
   def isNA(value: String): FunctionResult[Boolean] = js.native
   def isNA(value: Boolean): FunctionResult[Boolean] = js.native
   /**
@@ -3589,6 +3783,7 @@ trait Functions extends ClientObject {
   def isNA(value: FunctionResult[_]): FunctionResult[Boolean] = js.native
   def isNA(value: Range): FunctionResult[Boolean] = js.native
   def isNA(value: RangeReference): FunctionResult[Boolean] = js.native
+  
   def isNonText(value: String): FunctionResult[Boolean] = js.native
   def isNonText(value: Boolean): FunctionResult[Boolean] = js.native
   /**
@@ -3602,6 +3797,7 @@ trait Functions extends ClientObject {
   def isNonText(value: FunctionResult[_]): FunctionResult[Boolean] = js.native
   def isNonText(value: Range): FunctionResult[Boolean] = js.native
   def isNonText(value: RangeReference): FunctionResult[Boolean] = js.native
+  
   def isNumber(value: String): FunctionResult[Boolean] = js.native
   def isNumber(value: Boolean): FunctionResult[Boolean] = js.native
   /**
@@ -3615,6 +3811,7 @@ trait Functions extends ClientObject {
   def isNumber(value: FunctionResult[_]): FunctionResult[Boolean] = js.native
   def isNumber(value: Range): FunctionResult[Boolean] = js.native
   def isNumber(value: RangeReference): FunctionResult[Boolean] = js.native
+  
   def isOdd(number: String): FunctionResult[Double] = js.native
   def isOdd(number: Boolean): FunctionResult[Double] = js.native
   /**
@@ -3628,6 +3825,7 @@ trait Functions extends ClientObject {
   def isOdd(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def isOdd(number: Range): FunctionResult[Double] = js.native
   def isOdd(number: RangeReference): FunctionResult[Double] = js.native
+  
   def isText(value: String): FunctionResult[Boolean] = js.native
   def isText(value: Boolean): FunctionResult[Boolean] = js.native
   /**
@@ -3641,6 +3839,7 @@ trait Functions extends ClientObject {
   def isText(value: FunctionResult[_]): FunctionResult[Boolean] = js.native
   def isText(value: Range): FunctionResult[Boolean] = js.native
   def isText(value: RangeReference): FunctionResult[Boolean] = js.native
+  
   /**
     * Returns the ISO week number in the year for a given date.
     *
@@ -3652,6 +3851,7 @@ trait Functions extends ClientObject {
   def isoWeekNum(date: FunctionResult[_]): FunctionResult[Double] = js.native
   def isoWeekNum(date: Range): FunctionResult[Double] = js.native
   def isoWeekNum(date: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Rounds a number up, to the nearest integer or to the nearest multiple of significance.
     *
@@ -3680,6 +3880,7 @@ trait Functions extends ClientObject {
   def iso_Ceiling(number: Range, significance: FunctionResult[_]): FunctionResult[Double] = js.native
   def iso_Ceiling(number: Range, significance: Range): FunctionResult[Double] = js.native
   def iso_Ceiling(number: Range, significance: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the interest paid during a specific period of an investment.
     *
@@ -3696,6 +3897,7 @@ trait Functions extends ClientObject {
     nper: Double | Range | RangeReference | FunctionResult[_],
     pv: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   def isref(value: String): FunctionResult[Boolean] = js.native
   def isref(value: Boolean): FunctionResult[Boolean] = js.native
   def isref(value: Double): FunctionResult[Boolean] = js.native
@@ -3709,6 +3911,7 @@ trait Functions extends ClientObject {
     */
   def isref(value: Range): FunctionResult[Boolean] = js.native
   def isref(value: RangeReference): FunctionResult[Boolean] = js.native
+  
   /**
     * Returns the kurtosis of a data set.
     *
@@ -3717,6 +3920,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the kurtosis.
     */
   def kurt(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the k-th largest value in a data set. For example, the fifth largest number.
     *
@@ -3741,6 +3945,7 @@ trait Functions extends ClientObject {
   def large(array: Range, k: FunctionResult[_]): FunctionResult[Double] = js.native
   def large(array: Range, k: Range): FunctionResult[Double] = js.native
   def large(array: Range, k: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the least common multiple.
     *
@@ -3749,6 +3954,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 values for which you want the least common multiple.
     */
   def lcm(values: (Double | String | Range | Boolean | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the specified number of characters from the start of a text string.
     *
@@ -3777,6 +3983,7 @@ trait Functions extends ClientObject {
   def left(text: Range, numChars: FunctionResult[_]): FunctionResult[String] = js.native
   def left(text: Range, numChars: Range): FunctionResult[String] = js.native
   def left(text: Range, numChars: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Returns the specified number of characters from the start of a text string. Use with double-byte character sets (DBCS).
     *
@@ -3805,6 +4012,7 @@ trait Functions extends ClientObject {
   def leftb(text: Range, numBytes: FunctionResult[_]): FunctionResult[String] = js.native
   def leftb(text: Range, numBytes: Range): FunctionResult[String] = js.native
   def leftb(text: Range, numBytes: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Returns the number of characters in a text string.
     *
@@ -3816,6 +4024,7 @@ trait Functions extends ClientObject {
   def len(text: FunctionResult[_]): FunctionResult[Double] = js.native
   def len(text: Range): FunctionResult[Double] = js.native
   def len(text: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number of characters in a text string. Use with double-byte character sets (DBCS).
     *
@@ -3827,6 +4036,7 @@ trait Functions extends ClientObject {
   def lenb(text: FunctionResult[_]): FunctionResult[Double] = js.native
   def lenb(text: Range): FunctionResult[Double] = js.native
   def lenb(text: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the natural logarithm of a number.
     *
@@ -3838,6 +4048,7 @@ trait Functions extends ClientObject {
   def ln(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def ln(number: Range): FunctionResult[Double] = js.native
   def ln(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the logarithm of a number to the base you specify.
     *
@@ -3866,6 +4077,7 @@ trait Functions extends ClientObject {
   def log(number: Range, base: FunctionResult[_]): FunctionResult[Double] = js.native
   def log(number: Range, base: Range): FunctionResult[Double] = js.native
   def log(number: Range, base: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the base-10 logarithm of a number.
     *
@@ -3877,6 +4089,7 @@ trait Functions extends ClientObject {
   def log10(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def log10(number: Range): FunctionResult[Double] = js.native
   def log10(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the lognormal distribution of x, where ln(x) is normally distributed with parameters Mean and Standard_dev.
     *
@@ -3893,6 +4106,7 @@ trait Functions extends ClientObject {
     standardDev: Double | Range | RangeReference | FunctionResult[_],
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the inverse of the lognormal cumulative distribution function of x, where ln(x) is normally distributed with parameters Mean and Standard_dev.
     *
@@ -3907,6 +4121,7 @@ trait Functions extends ClientObject {
     mean: Double | Range | RangeReference | FunctionResult[_],
     standardDev: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Looks up a value either from a one-row or one-column range or from an array. Provided for backward compatibility.
     *
@@ -3921,6 +4136,7 @@ trait Functions extends ClientObject {
     lookupVector: Range | RangeReference | FunctionResult[_],
     resultVector: js.UndefOr[Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double | String | Boolean] = js.native
+  
   /**
     * Converts all letters in a text string to lowercase.
     *
@@ -3932,6 +4148,7 @@ trait Functions extends ClientObject {
   def lower(text: FunctionResult[_]): FunctionResult[String] = js.native
   def lower(text: Range): FunctionResult[String] = js.native
   def lower(text: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Returns the relative position of an item in an array that matches a specified value in a specified order.
     *
@@ -3946,6 +4163,7 @@ trait Functions extends ClientObject {
     lookupArray: Double | Range | RangeReference | FunctionResult[_],
     matchType: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the largest value in a set of values. Ignores logical values and text.
     *
@@ -3954,6 +4172,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the maximum.
     */
   def max(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the largest value in a set of values. Does not ignore logical values and text.
     *
@@ -3962,6 +4181,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the maximum.
     */
   def maxA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the Macauley modified duration for a security with an assumed par value of $100.
     *
@@ -3982,6 +4202,7 @@ trait Functions extends ClientObject {
     frequency: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the median, or the number in the middle of the set of given numbers.
     *
@@ -3990,6 +4211,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the median.
     */
   def median(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the characters from the middle of a text string, given a starting position and length.
     *
@@ -4004,6 +4226,7 @@ trait Functions extends ClientObject {
     startNum: Double | Range | RangeReference | FunctionResult[_],
     numChars: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[String] = js.native
+  
   /**
     * Returns characters from the middle of a text string, given a starting position and length. Use with double-byte character sets (DBCS).
     *
@@ -4018,6 +4241,7 @@ trait Functions extends ClientObject {
     startNum: Double | Range | RangeReference | FunctionResult[_],
     numBytes: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[String] = js.native
+  
   /**
     * Returns the smallest number in a set of values. Ignores logical values and text.
     *
@@ -4026,6 +4250,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the minimum.
     */
   def min(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the smallest value in a set of values. Does not ignore logical values and text.
     *
@@ -4034,6 +4259,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the minimum.
     */
   def minA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the minute, a number from 0 to 59.
     *
@@ -4045,6 +4271,7 @@ trait Functions extends ClientObject {
   def minute(serialNumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def minute(serialNumber: Range): FunctionResult[Double] = js.native
   def minute(serialNumber: RangeReference): FunctionResult[Double] = js.native
+  
   def mirr(values: FunctionResult[_], financeRate: Double, reinvestRate: Double): FunctionResult[Double] = js.native
   def mirr(values: FunctionResult[_], financeRate: Double, reinvestRate: FunctionResult[_]): FunctionResult[Double] = js.native
   def mirr(values: FunctionResult[_], financeRate: Double, reinvestRate: Range): FunctionResult[Double] = js.native
@@ -4102,6 +4329,7 @@ trait Functions extends ClientObject {
   def mirr(values: Range, financeRate: Range, reinvestRate: FunctionResult[_]): FunctionResult[Double] = js.native
   def mirr(values: Range, financeRate: Range, reinvestRate: Range): FunctionResult[Double] = js.native
   def mirr(values: Range, financeRate: Range, reinvestRate: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the remainder after a number is divided by a divisor.
     *
@@ -4126,6 +4354,7 @@ trait Functions extends ClientObject {
   def mod(number: Range, divisor: FunctionResult[_]): FunctionResult[Double] = js.native
   def mod(number: Range, divisor: Range): FunctionResult[Double] = js.native
   def mod(number: Range, divisor: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the month, a number from 1 (January) to 12 (December).
     *
@@ -4137,6 +4366,7 @@ trait Functions extends ClientObject {
   def month(serialNumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def month(serialNumber: Range): FunctionResult[Double] = js.native
   def month(serialNumber: RangeReference): FunctionResult[Double] = js.native
+  
   def mround(number: String, multiple: String): FunctionResult[Double] = js.native
   def mround(number: String, multiple: Boolean): FunctionResult[Double] = js.native
   def mround(number: String, multiple: Double): FunctionResult[Double] = js.native
@@ -4181,6 +4411,7 @@ trait Functions extends ClientObject {
   def mround(number: Range, multiple: FunctionResult[_]): FunctionResult[Double] = js.native
   def mround(number: Range, multiple: Range): FunctionResult[Double] = js.native
   def mround(number: Range, multiple: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the multinomial of a set of numbers.
     *
@@ -4189,6 +4420,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 values for which you want the multinomial.
     */
   def multiNomial(values: (Double | String | Range | Boolean | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   def n(value: String): FunctionResult[Double] = js.native
   def n(value: Boolean): FunctionResult[Double] = js.native
   /**
@@ -4202,12 +4434,14 @@ trait Functions extends ClientObject {
   def n(value: FunctionResult[_]): FunctionResult[Double] = js.native
   def n(value: Range): FunctionResult[Double] = js.native
   def n(value: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the error value #N/A (value not available).
     *
     * [Api set: ExcelApi 1.2]
     */
   def na(): FunctionResult[Double | String] = js.native
+  
   /**
     * Returns the negative binomial distribution, the probability that there will be Number_f failures before the Number_s-th success, with Probability_s probability of a success.
     *
@@ -4224,6 +4458,7 @@ trait Functions extends ClientObject {
     probabilityS: Double | Range | RangeReference | FunctionResult[_],
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number of whole workdays between two dates.
     *
@@ -4238,6 +4473,7 @@ trait Functions extends ClientObject {
     endDate: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     holidays: js.UndefOr[Double | String | Range | Boolean | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number of whole workdays between two dates with custom weekend parameters.
     *
@@ -4254,6 +4490,7 @@ trait Functions extends ClientObject {
     weekend: js.UndefOr[Double | String | Range | RangeReference | FunctionResult[_]],
     holidays: js.UndefOr[Double | String | Range | Boolean | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   def nominal(effectRate: String, npery: String): FunctionResult[Double] = js.native
   def nominal(effectRate: String, npery: Boolean): FunctionResult[Double] = js.native
   def nominal(effectRate: String, npery: Double): FunctionResult[Double] = js.native
@@ -4298,6 +4535,7 @@ trait Functions extends ClientObject {
   def nominal(effectRate: Range, npery: FunctionResult[_]): FunctionResult[Double] = js.native
   def nominal(effectRate: Range, npery: Range): FunctionResult[Double] = js.native
   def nominal(effectRate: Range, npery: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the normal distribution for the specified mean and standard deviation.
     *
@@ -4314,6 +4552,7 @@ trait Functions extends ClientObject {
     standardDev: Double | Range | RangeReference | FunctionResult[_],
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.
     *
@@ -4328,6 +4567,7 @@ trait Functions extends ClientObject {
     mean: Double | Range | RangeReference | FunctionResult[_],
     standardDev: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the standard normal distribution (has a mean of zero and a standard deviation of one).
     *
@@ -4352,6 +4592,7 @@ trait Functions extends ClientObject {
   def norm_S_Dist(z: Range, cumulative: FunctionResult[_]): FunctionResult[Double] = js.native
   def norm_S_Dist(z: Range, cumulative: Range): FunctionResult[Double] = js.native
   def norm_S_Dist(z: Range, cumulative: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the inverse of the standard normal cumulative distribution (has a mean of zero and a standard deviation of one).
     *
@@ -4363,6 +4604,7 @@ trait Functions extends ClientObject {
   def norm_S_Inv(probability: FunctionResult[_]): FunctionResult[Double] = js.native
   def norm_S_Inv(probability: Range): FunctionResult[Double] = js.native
   def norm_S_Inv(probability: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Changes FALSE to TRUE, or TRUE to FALSE.
     *
@@ -4374,12 +4616,14 @@ trait Functions extends ClientObject {
   def not(logical: FunctionResult[_]): FunctionResult[Boolean] = js.native
   def not(logical: Range): FunctionResult[Boolean] = js.native
   def not(logical: RangeReference): FunctionResult[Boolean] = js.native
+  
   /**
     * Returns the current date and time formatted as a date and time.
     *
     * [Api set: ExcelApi 1.2]
     */
   def now(): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.
     *
@@ -4398,6 +4642,7 @@ trait Functions extends ClientObject {
     fv: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]],
     `type`: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the net present value of an investment based on a discount rate and a series of future payments (negative values) and income (positive values).
     *
@@ -4410,6 +4655,7 @@ trait Functions extends ClientObject {
   def npv(rate: FunctionResult[_], values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   def npv(rate: RangeReference, values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   def npv(rate: Range, values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Converts text to number in a locale-independent manner.
     *
@@ -4424,6 +4670,7 @@ trait Functions extends ClientObject {
     decimalSeparator: js.UndefOr[String | Range | RangeReference | FunctionResult[_]],
     groupSeparator: js.UndefOr[String | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   def oct2Bin(number: String): FunctionResult[Double] = js.native
   def oct2Bin(number: String, places: String): FunctionResult[Double] = js.native
   def oct2Bin(number: String, places: Boolean): FunctionResult[Double] = js.native
@@ -4474,6 +4721,7 @@ trait Functions extends ClientObject {
   def oct2Bin(number: Range, places: FunctionResult[_]): FunctionResult[Double] = js.native
   def oct2Bin(number: Range, places: Range): FunctionResult[Double] = js.native
   def oct2Bin(number: Range, places: RangeReference): FunctionResult[Double] = js.native
+  
   def oct2Dec(number: String): FunctionResult[Double] = js.native
   def oct2Dec(number: Boolean): FunctionResult[Double] = js.native
   /**
@@ -4487,6 +4735,7 @@ trait Functions extends ClientObject {
   def oct2Dec(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def oct2Dec(number: Range): FunctionResult[Double] = js.native
   def oct2Dec(number: RangeReference): FunctionResult[Double] = js.native
+  
   def oct2Hex(number: String): FunctionResult[Double] = js.native
   def oct2Hex(number: String, places: String): FunctionResult[Double] = js.native
   def oct2Hex(number: String, places: Boolean): FunctionResult[Double] = js.native
@@ -4537,6 +4786,7 @@ trait Functions extends ClientObject {
   def oct2Hex(number: Range, places: FunctionResult[_]): FunctionResult[Double] = js.native
   def oct2Hex(number: Range, places: Range): FunctionResult[Double] = js.native
   def oct2Hex(number: Range, places: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Rounds a positive number up and negative number down to the nearest odd integer.
     *
@@ -4548,6 +4798,7 @@ trait Functions extends ClientObject {
   def odd(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def odd(number: Range): FunctionResult[Double] = js.native
   def odd(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the price per $100 face value of a security with an odd first period.
     *
@@ -4574,6 +4825,7 @@ trait Functions extends ClientObject {
     frequency: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the yield of a security with an odd first period.
     *
@@ -4600,6 +4852,7 @@ trait Functions extends ClientObject {
     frequency: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the price per $100 face value of a security with an odd last period.
     *
@@ -4624,6 +4877,7 @@ trait Functions extends ClientObject {
     frequency: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the yield of a security with an odd last period.
     *
@@ -4648,6 +4902,7 @@ trait Functions extends ClientObject {
     frequency: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Checks whether any of the arguments are TRUE, and returns TRUE or FALSE. Returns FALSE only if all arguments are FALSE.
     *
@@ -4656,6 +4911,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 conditions that you want to test that can be either TRUE or FALSE.
     */
   def or(values: (Boolean | Range | RangeReference | FunctionResult[_])*): FunctionResult[Boolean] = js.native
+  
   /**
     * Returns the number of periods required by an investment to reach a specified value.
     *
@@ -4670,6 +4926,7 @@ trait Functions extends ClientObject {
     pv: Double | Range | RangeReference | FunctionResult[_],
     fv: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, exclusive) of the data set.
     *
@@ -4684,6 +4941,7 @@ trait Functions extends ClientObject {
     x: Double | Range | RangeReference | FunctionResult[_],
     significance: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, inclusive) of the data set.
     *
@@ -4698,6 +4956,7 @@ trait Functions extends ClientObject {
     x: Double | Range | RangeReference | FunctionResult[_],
     significance: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the k-th percentile of values in a range, where k is in the range 0..1, exclusive.
     *
@@ -4722,6 +4981,7 @@ trait Functions extends ClientObject {
   def percentile_Exc(array: Range, k: FunctionResult[_]): FunctionResult[Double] = js.native
   def percentile_Exc(array: Range, k: Range): FunctionResult[Double] = js.native
   def percentile_Exc(array: Range, k: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the k-th percentile of values in a range, where k is in the range 0..1, inclusive.
     *
@@ -4746,6 +5006,7 @@ trait Functions extends ClientObject {
   def percentile_Inc(array: Range, k: FunctionResult[_]): FunctionResult[Double] = js.native
   def percentile_Inc(array: Range, k: Range): FunctionResult[Double] = js.native
   def percentile_Inc(array: Range, k: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number of permutations for a given number of objects that can be selected from the total objects.
     *
@@ -4770,6 +5031,7 @@ trait Functions extends ClientObject {
   def permut(number: Range, numberChosen: FunctionResult[_]): FunctionResult[Double] = js.native
   def permut(number: Range, numberChosen: Range): FunctionResult[Double] = js.native
   def permut(number: Range, numberChosen: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number of permutations for a given number of objects (with repetitions) that can be selected from the total objects.
     *
@@ -4794,6 +5056,7 @@ trait Functions extends ClientObject {
   def permutationa(number: Range, numberChosen: FunctionResult[_]): FunctionResult[Double] = js.native
   def permutationa(number: Range, numberChosen: Range): FunctionResult[Double] = js.native
   def permutationa(number: Range, numberChosen: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the value of the density function for a standard normal distribution.
     *
@@ -4805,12 +5068,14 @@ trait Functions extends ClientObject {
   def phi(x: FunctionResult[_]): FunctionResult[Double] = js.native
   def phi(x: Range): FunctionResult[Double] = js.native
   def phi(x: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the value of Pi, 3.14159265358979, accurate to 15 digits.
     *
     * [Api set: ExcelApi 1.2]
     */
   def pi(): FunctionResult[Double] = js.native
+  
   /**
     * Calculates the payment for a loan based on constant payments and a constant interest rate.
     *
@@ -4829,6 +5094,7 @@ trait Functions extends ClientObject {
     fv: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]],
     `type`: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the Poisson distribution.
     *
@@ -4843,6 +5109,7 @@ trait Functions extends ClientObject {
     mean: Double | Range | RangeReference | FunctionResult[_],
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the result of a number raised to a power.
     *
@@ -4867,6 +5134,7 @@ trait Functions extends ClientObject {
   def power(number: Range, power: FunctionResult[_]): FunctionResult[Double] = js.native
   def power(number: Range, power: Range): FunctionResult[Double] = js.native
   def power(number: Range, power: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the payment on the principal for a given investment based on periodic, constant payments and a constant interest rate.
     *
@@ -4887,6 +5155,7 @@ trait Functions extends ClientObject {
     fv: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]],
     `type`: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the price per $100 face value of a security that pays periodic interest.
     *
@@ -4909,6 +5178,7 @@ trait Functions extends ClientObject {
     frequency: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the price per $100 face value of a discounted security.
     *
@@ -4927,6 +5197,7 @@ trait Functions extends ClientObject {
     redemption: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the price per $100 face value of a security that pays interest at maturity.
     *
@@ -4947,6 +5218,7 @@ trait Functions extends ClientObject {
     yld: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Multiplies all the numbers given as arguments.
     *
@@ -4955,6 +5227,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numbers, logical values, or text representations of numbers that you want to multiply.
     */
   def product(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Converts a text string to proper case; the first letter in each word to uppercase, and all other letters to lowercase.
     *
@@ -4966,6 +5239,7 @@ trait Functions extends ClientObject {
   def proper(text: FunctionResult[_]): FunctionResult[String] = js.native
   def proper(text: Range): FunctionResult[String] = js.native
   def proper(text: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Returns the present value of an investment: the total amount that a series of future payments is worth now.
     *
@@ -4984,6 +5258,7 @@ trait Functions extends ClientObject {
     fv: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]],
     `type`: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the quartile of a data set, based on percentile values from 0..1, exclusive.
     *
@@ -5008,6 +5283,7 @@ trait Functions extends ClientObject {
   def quartile_Exc(array: Range, quart: FunctionResult[_]): FunctionResult[Double] = js.native
   def quartile_Exc(array: Range, quart: Range): FunctionResult[Double] = js.native
   def quartile_Exc(array: Range, quart: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the quartile of a data set, based on percentile values from 0..1, inclusive.
     *
@@ -5032,6 +5308,7 @@ trait Functions extends ClientObject {
   def quartile_Inc(array: Range, quart: FunctionResult[_]): FunctionResult[Double] = js.native
   def quartile_Inc(array: Range, quart: Range): FunctionResult[Double] = js.native
   def quartile_Inc(array: Range, quart: RangeReference): FunctionResult[Double] = js.native
+  
   def quotient(numerator: String, denominator: String): FunctionResult[Double] = js.native
   def quotient(numerator: String, denominator: Boolean): FunctionResult[Double] = js.native
   def quotient(numerator: String, denominator: Double): FunctionResult[Double] = js.native
@@ -5076,6 +5353,7 @@ trait Functions extends ClientObject {
   def quotient(numerator: Range, denominator: FunctionResult[_]): FunctionResult[Double] = js.native
   def quotient(numerator: Range, denominator: Range): FunctionResult[Double] = js.native
   def quotient(numerator: Range, denominator: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Converts degrees to radians.
     *
@@ -5087,12 +5365,14 @@ trait Functions extends ClientObject {
   def radians(angle: FunctionResult[_]): FunctionResult[Double] = js.native
   def radians(angle: Range): FunctionResult[Double] = js.native
   def radians(angle: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns a random number greater than or equal to 0 and less than 1, evenly distributed (changes on recalculation).
     *
     * [Api set: ExcelApi 1.2]
     */
   def rand(): FunctionResult[Double] = js.native
+  
   def randBetween(bottom: String, top: String): FunctionResult[Double] = js.native
   def randBetween(bottom: String, top: Boolean): FunctionResult[Double] = js.native
   def randBetween(bottom: String, top: Double): FunctionResult[Double] = js.native
@@ -5137,6 +5417,7 @@ trait Functions extends ClientObject {
   def randBetween(bottom: Range, top: FunctionResult[_]): FunctionResult[Double] = js.native
   def randBetween(bottom: Range, top: Range): FunctionResult[Double] = js.native
   def randBetween(bottom: Range, top: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the rank of a number in a list of numbers: its size relative to other values in the list; if more than one value has the same rank, the average rank is returned.
     *
@@ -5151,6 +5432,7 @@ trait Functions extends ClientObject {
     ref: Range | RangeReference | FunctionResult[_],
     order: js.UndefOr[Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the rank of a number in a list of numbers: its size relative to other values in the list; if more than one value has the same rank, the top rank of that set of values is returned.
     *
@@ -5165,6 +5447,7 @@ trait Functions extends ClientObject {
     ref: Range | RangeReference | FunctionResult[_],
     order: js.UndefOr[Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the interest rate per period of a loan or an investment. For example, use 6%/4 for quarterly payments at 6% APR.
     *
@@ -5185,6 +5468,7 @@ trait Functions extends ClientObject {
     `type`: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]],
     guess: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the amount received at maturity for a fully invested security.
     *
@@ -5203,6 +5487,7 @@ trait Functions extends ClientObject {
     discount: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Replaces part of a text string with a different text string.
     *
@@ -5219,6 +5504,7 @@ trait Functions extends ClientObject {
     numChars: Double | Range | RangeReference | FunctionResult[_],
     newText: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[String] = js.native
+  
   /**
     * Replaces part of a text string with a different text string. Use with double-byte character sets (DBCS).
     *
@@ -5235,6 +5521,7 @@ trait Functions extends ClientObject {
     numBytes: Double | Range | RangeReference | FunctionResult[_],
     newText: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[String] = js.native
+  
   /**
     * Repeats text a given number of times. Use REPT to fill a cell with a number of instances of a text string.
     *
@@ -5259,6 +5546,7 @@ trait Functions extends ClientObject {
   def rept(text: Range, numberTimes: FunctionResult[_]): FunctionResult[String] = js.native
   def rept(text: Range, numberTimes: Range): FunctionResult[String] = js.native
   def rept(text: Range, numberTimes: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Returns the specified number of characters from the end of a text string.
     *
@@ -5287,6 +5575,7 @@ trait Functions extends ClientObject {
   def right(text: Range, numChars: FunctionResult[_]): FunctionResult[String] = js.native
   def right(text: Range, numChars: Range): FunctionResult[String] = js.native
   def right(text: Range, numChars: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Returns the specified number of characters from the end of a text string. Use with double-byte character sets (DBCS).
     *
@@ -5315,6 +5604,7 @@ trait Functions extends ClientObject {
   def rightb(text: Range, numBytes: FunctionResult[_]): FunctionResult[String] = js.native
   def rightb(text: Range, numBytes: Range): FunctionResult[String] = js.native
   def rightb(text: Range, numBytes: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Converts an Arabic numeral to Roman, as text.
     *
@@ -5347,6 +5637,7 @@ trait Functions extends ClientObject {
   def roman(number: Range, form: FunctionResult[_]): FunctionResult[String] = js.native
   def roman(number: Range, form: Range): FunctionResult[String] = js.native
   def roman(number: Range, form: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Rounds a number to a specified number of digits.
     *
@@ -5371,6 +5662,7 @@ trait Functions extends ClientObject {
   def round(number: Range, numDigits: FunctionResult[_]): FunctionResult[Double] = js.native
   def round(number: Range, numDigits: Range): FunctionResult[Double] = js.native
   def round(number: Range, numDigits: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Rounds a number down, toward zero.
     *
@@ -5395,6 +5687,7 @@ trait Functions extends ClientObject {
   def roundDown(number: Range, numDigits: FunctionResult[_]): FunctionResult[Double] = js.native
   def roundDown(number: Range, numDigits: Range): FunctionResult[Double] = js.native
   def roundDown(number: Range, numDigits: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Rounds a number up, away from zero.
     *
@@ -5419,6 +5712,7 @@ trait Functions extends ClientObject {
   def roundUp(number: Range, numDigits: FunctionResult[_]): FunctionResult[Double] = js.native
   def roundUp(number: Range, numDigits: Range): FunctionResult[Double] = js.native
   def roundUp(number: Range, numDigits: RangeReference): FunctionResult[Double] = js.native
+  
   def rows(array: FunctionResult[_]): FunctionResult[Double] = js.native
   /**
     * Returns the number of rows in a reference or array.
@@ -5429,6 +5723,7 @@ trait Functions extends ClientObject {
     */
   def rows(array: Range): FunctionResult[Double] = js.native
   def rows(array: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns an equivalent interest rate for the growth of an investment.
     *
@@ -5443,6 +5738,7 @@ trait Functions extends ClientObject {
     pv: Double | Range | RangeReference | FunctionResult[_],
     fv: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the secant of an angle.
     *
@@ -5454,6 +5750,7 @@ trait Functions extends ClientObject {
   def sec(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def sec(number: Range): FunctionResult[Double] = js.native
   def sec(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the hyperbolic secant of an angle.
     *
@@ -5465,6 +5762,7 @@ trait Functions extends ClientObject {
   def sech(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def sech(number: Range): FunctionResult[Double] = js.native
   def sech(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the second, a number from 0 to 59.
     *
@@ -5476,6 +5774,7 @@ trait Functions extends ClientObject {
   def second(serialNumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def second(serialNumber: Range): FunctionResult[Double] = js.native
   def second(serialNumber: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the sum of a power series based on the formula.
     *
@@ -5492,6 +5791,7 @@ trait Functions extends ClientObject {
     m: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     coefficients: Range | String | Double | Boolean | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the sheet number of the referenced sheet.
     *
@@ -5504,6 +5804,7 @@ trait Functions extends ClientObject {
   def sheet(value: FunctionResult[_]): FunctionResult[Double] = js.native
   def sheet(value: Range): FunctionResult[Double] = js.native
   def sheet(value: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the number of sheets in a reference.
     *
@@ -5515,6 +5816,7 @@ trait Functions extends ClientObject {
   def sheets(reference: FunctionResult[_]): FunctionResult[Double] = js.native
   def sheets(reference: Range): FunctionResult[Double] = js.native
   def sheets(reference: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the sign of a number: 1 if the number is positive, zero if the number is zero, or -1 if the number is negative.
     *
@@ -5526,6 +5828,7 @@ trait Functions extends ClientObject {
   def sign(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def sign(number: Range): FunctionResult[Double] = js.native
   def sign(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the sine of an angle.
     *
@@ -5537,6 +5840,7 @@ trait Functions extends ClientObject {
   def sin(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def sin(number: Range): FunctionResult[Double] = js.native
   def sin(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the hyperbolic sine of a number.
     *
@@ -5548,6 +5852,7 @@ trait Functions extends ClientObject {
   def sinh(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def sinh(number: Range): FunctionResult[Double] = js.native
   def sinh(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the skewness of a distribution: a characterization of the degree of asymmetry of a distribution around its mean.
     *
@@ -5556,6 +5861,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the skewness.
     */
   def skew(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the skewness of a distribution based on a population: a characterization of the degree of asymmetry of a distribution around its mean.
     *
@@ -5564,6 +5870,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 254 numbers or names, arrays, or references that contain numbers for which you want the population skewness.
     */
   def skew_p(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the straight-line depreciation of an asset for one period.
     *
@@ -5578,6 +5885,7 @@ trait Functions extends ClientObject {
     salvage: Double | Range | RangeReference | FunctionResult[_],
     life: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the k-th smallest value in a data set. For example, the fifth smallest number.
     *
@@ -5602,6 +5910,7 @@ trait Functions extends ClientObject {
   def small(array: Range, k: FunctionResult[_]): FunctionResult[Double] = js.native
   def small(array: Range, k: Range): FunctionResult[Double] = js.native
   def small(array: Range, k: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the square root of a number.
     *
@@ -5613,6 +5922,7 @@ trait Functions extends ClientObject {
   def sqrt(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def sqrt(number: Range): FunctionResult[Double] = js.native
   def sqrt(number: RangeReference): FunctionResult[Double] = js.native
+  
   def sqrtPi(number: String): FunctionResult[Double] = js.native
   def sqrtPi(number: Boolean): FunctionResult[Double] = js.native
   /**
@@ -5626,6 +5936,7 @@ trait Functions extends ClientObject {
   def sqrtPi(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def sqrtPi(number: Range): FunctionResult[Double] = js.native
   def sqrtPi(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Estimates standard deviation based on a sample, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.
     *
@@ -5634,6 +5945,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 values corresponding to a sample of a population and can be values or names or references to values.
     */
   def stDevA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Calculates standard deviation based on an entire population, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.
     *
@@ -5642,6 +5954,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 values corresponding to a population and can be values, names, arrays, or references that contain values.
     */
   def stDevPA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Calculates standard deviation based on the entire population given as arguments (ignores logical values and text).
     *
@@ -5650,6 +5963,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numbers corresponding to a population and can be numbers or references that contain numbers.
     */
   def stDev_P(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Estimates standard deviation based on a sample (ignores logical values and text in the sample).
     *
@@ -5658,6 +5972,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numbers corresponding to a sample of a population and can be numbers or references that contain numbers.
     */
   def stDev_S(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Returns a normalized value from a distribution characterized by a mean and standard deviation.
     *
@@ -5672,6 +5987,7 @@ trait Functions extends ClientObject {
     mean: Double | Range | RangeReference | FunctionResult[_],
     standardDev: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Replaces existing text with new text in a text string.
     *
@@ -5688,6 +6004,7 @@ trait Functions extends ClientObject {
     newText: String | Range | RangeReference | FunctionResult[_],
     instanceNum: js.UndefOr[String | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[String] = js.native
+  
   /**
     * Returns a subtotal in a list or database.
     *
@@ -5700,6 +6017,7 @@ trait Functions extends ClientObject {
   def subtotal(functionNum: FunctionResult[_], values: (Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   def subtotal(functionNum: RangeReference, values: (Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   def subtotal(functionNum: Range, values: (Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Adds all the numbers in a range of cells.
     *
@@ -5708,6 +6026,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.
     */
   def sum(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Adds the cells specified by a given condition or criteria.
     *
@@ -5722,6 +6041,7 @@ trait Functions extends ClientObject {
     criteria: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     sumRange: js.UndefOr[Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   def sumIfs(
     sumRange: FunctionResult[_],
     values: (Range | RangeReference | FunctionResult[_] | Double | String | Boolean)*
@@ -5739,6 +6059,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition or criteria in the form of a number, expression, or text that defines which cells will be added.
     */
   def sumIfs(sumRange: Range, values: (Range | RangeReference | FunctionResult[_] | Double | String | Boolean)*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the sum of the squares of the arguments. The arguments can be numbers, arrays, names, or references to cells that contain numbers.
     *
@@ -5747,6 +6068,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numbers, arrays, names, or references to arrays for which you want the sum of the squares.
     */
   def sumSq(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the sum-of-years' digits depreciation of an asset for a specified period.
     *
@@ -5763,6 +6085,7 @@ trait Functions extends ClientObject {
     life: Double | Range | RangeReference | FunctionResult[_],
     per: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   def t(value: String): FunctionResult[String] = js.native
   def t(value: Boolean): FunctionResult[String] = js.native
   /**
@@ -5776,6 +6099,7 @@ trait Functions extends ClientObject {
   def t(value: FunctionResult[_]): FunctionResult[String] = js.native
   def t(value: Range): FunctionResult[String] = js.native
   def t(value: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Returns the left-tailed Student's t-distribution.
     *
@@ -5790,6 +6114,7 @@ trait Functions extends ClientObject {
     degFreedom: Double | Range | RangeReference | FunctionResult[_],
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the two-tailed Student's t-distribution.
     *
@@ -5814,6 +6139,7 @@ trait Functions extends ClientObject {
   def t_Dist_2T(x: Range, degFreedom: FunctionResult[_]): FunctionResult[Double] = js.native
   def t_Dist_2T(x: Range, degFreedom: Range): FunctionResult[Double] = js.native
   def t_Dist_2T(x: Range, degFreedom: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the right-tailed Student's t-distribution.
     *
@@ -5838,6 +6164,7 @@ trait Functions extends ClientObject {
   def t_Dist_RT(x: Range, degFreedom: FunctionResult[_]): FunctionResult[Double] = js.native
   def t_Dist_RT(x: Range, degFreedom: Range): FunctionResult[Double] = js.native
   def t_Dist_RT(x: Range, degFreedom: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the left-tailed inverse of the Student's t-distribution.
     *
@@ -5862,6 +6189,7 @@ trait Functions extends ClientObject {
   def t_Inv(probability: Range, degFreedom: FunctionResult[_]): FunctionResult[Double] = js.native
   def t_Inv(probability: Range, degFreedom: Range): FunctionResult[Double] = js.native
   def t_Inv(probability: Range, degFreedom: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the two-tailed inverse of the Student's t-distribution.
     *
@@ -5886,6 +6214,7 @@ trait Functions extends ClientObject {
   def t_Inv_2T(probability: Range, degFreedom: FunctionResult[_]): FunctionResult[Double] = js.native
   def t_Inv_2T(probability: Range, degFreedom: Range): FunctionResult[Double] = js.native
   def t_Inv_2T(probability: Range, degFreedom: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the tangent of an angle.
     *
@@ -5897,6 +6226,7 @@ trait Functions extends ClientObject {
   def tan(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def tan(number: Range): FunctionResult[Double] = js.native
   def tan(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the hyperbolic tangent of a number.
     *
@@ -5908,6 +6238,7 @@ trait Functions extends ClientObject {
   def tanh(number: FunctionResult[_]): FunctionResult[Double] = js.native
   def tanh(number: Range): FunctionResult[Double] = js.native
   def tanh(number: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the bond-equivalent yield for a treasury bill.
     *
@@ -5922,6 +6253,7 @@ trait Functions extends ClientObject {
     maturity: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     discount: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the price per $100 face value for a treasury bill.
     *
@@ -5936,6 +6268,7 @@ trait Functions extends ClientObject {
     maturity: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     discount: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the yield for a treasury bill.
     *
@@ -5950,6 +6283,7 @@ trait Functions extends ClientObject {
     maturity: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     pr: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   def text(value: String, formatText: String): FunctionResult[String] = js.native
   def text(value: String, formatText: FunctionResult[_]): FunctionResult[String] = js.native
   def text(value: String, formatText: Range): FunctionResult[String] = js.native
@@ -5982,6 +6316,7 @@ trait Functions extends ClientObject {
   def text(value: Range, formatText: FunctionResult[_]): FunctionResult[String] = js.native
   def text(value: Range, formatText: Range): FunctionResult[String] = js.native
   def text(value: Range, formatText: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Converts hours, minutes, and seconds given as numbers to an Excel serial number, formatted with a time format.
     *
@@ -5996,6 +6331,7 @@ trait Functions extends ClientObject {
     minute: Double | Range | RangeReference | FunctionResult[_],
     second: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Converts a text time to an Excel serial number for a time, a number from 0 (12:00:00 AM) to 0.999988426 (11:59:59 PM). Format the number with a time format after entering the formula.
     *
@@ -6008,17 +6344,20 @@ trait Functions extends ClientObject {
   def timevalue(timeText: FunctionResult[_]): FunctionResult[Double] = js.native
   def timevalue(timeText: Range): FunctionResult[Double] = js.native
   def timevalue(timeText: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.Functions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FunctionsData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): StringDictionary[String] = js.native
+  
   /**
     * Returns the current date formatted as a date.
     *
     * [Api set: ExcelApi 1.2]
     */
   def today(): FunctionResult[Double] = js.native
+  
   /**
     * Removes all spaces from a text string except for single spaces between words.
     *
@@ -6030,6 +6369,7 @@ trait Functions extends ClientObject {
   def trim(text: FunctionResult[_]): FunctionResult[String] = js.native
   def trim(text: Range): FunctionResult[String] = js.native
   def trim(text: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Returns the mean of the interior portion of a set of data values.
     *
@@ -6054,12 +6394,14 @@ trait Functions extends ClientObject {
   def trimMean(array: Range, percent: FunctionResult[_]): FunctionResult[Double] = js.native
   def trimMean(array: Range, percent: Range): FunctionResult[Double] = js.native
   def trimMean(array: Range, percent: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the logical value TRUE.
     *
     * [Api set: ExcelApi 1.2]
     */
   def `true`(): FunctionResult[Boolean] = js.native
+  
   /**
     * Truncates a number to an integer by removing the decimal, or fractional, part of the number.
     *
@@ -6088,6 +6430,7 @@ trait Functions extends ClientObject {
   def trunc(number: Range, numDigits: FunctionResult[_]): FunctionResult[Double] = js.native
   def trunc(number: Range, numDigits: Range): FunctionResult[Double] = js.native
   def trunc(number: Range, numDigits: RangeReference): FunctionResult[Double] = js.native
+  
   def `type`(value: String): FunctionResult[Double] = js.native
   /**
     * Returns an integer representing the data type of a value: number = 1; text = 2; logical value = 4; error value = 16; array = 64.
@@ -6101,6 +6444,7 @@ trait Functions extends ClientObject {
   def `type`(value: FunctionResult[_]): FunctionResult[Double] = js.native
   def `type`(value: Range): FunctionResult[Double] = js.native
   def `type`(value: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the Unicode character referenced by the given numeric value.
     *
@@ -6112,6 +6456,7 @@ trait Functions extends ClientObject {
   def unichar(number: FunctionResult[_]): FunctionResult[String] = js.native
   def unichar(number: Range): FunctionResult[String] = js.native
   def unichar(number: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Returns the number (code point) corresponding to the first character of the text.
     *
@@ -6123,6 +6468,7 @@ trait Functions extends ClientObject {
   def unicode(text: FunctionResult[_]): FunctionResult[Double] = js.native
   def unicode(text: Range): FunctionResult[Double] = js.native
   def unicode(text: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Converts a text string to all uppercase letters.
     *
@@ -6134,6 +6480,7 @@ trait Functions extends ClientObject {
   def upper(text: FunctionResult[_]): FunctionResult[String] = js.native
   def upper(text: Range): FunctionResult[String] = js.native
   def upper(text: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Converts a number to text, using currency format.
     *
@@ -6162,6 +6509,7 @@ trait Functions extends ClientObject {
   def usdollar(number: Range, decimals: FunctionResult[_]): FunctionResult[String] = js.native
   def usdollar(number: Range, decimals: Range): FunctionResult[String] = js.native
   def usdollar(number: Range, decimals: RangeReference): FunctionResult[String] = js.native
+  
   /**
     * Converts a text string that represents a number to a number.
     *
@@ -6175,6 +6523,7 @@ trait Functions extends ClientObject {
   def value(text: FunctionResult[_]): FunctionResult[Double] = js.native
   def value(text: Range): FunctionResult[Double] = js.native
   def value(text: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Estimates variance based on a sample, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.
     *
@@ -6183,6 +6532,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 value arguments corresponding to a sample of a population.
     */
   def varA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Calculates variance based on the entire population, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.
     *
@@ -6191,6 +6541,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 value arguments corresponding to a population.
     */
   def varPA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Calculates variance based on the entire population (ignores logical values and text in the population).
     *
@@ -6199,6 +6550,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a population.
     */
   def var_P(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Estimates variance based on a sample (ignores logical values and text in the sample).
     *
@@ -6207,6 +6559,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a sample of a population.
     */
   def var_S(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
+  
   /**
     * Returns the depreciation of an asset for any period you specify, including partial periods, using the double-declining balance method or some other method you specify.
     *
@@ -6229,6 +6582,7 @@ trait Functions extends ClientObject {
     factor: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]],
     noSwitch: js.UndefOr[Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Looks for a value in the leftmost column of a table, and then returns a value in the same row from a column you specify. By default, the table must be sorted in an ascending order.
     *
@@ -6245,6 +6599,7 @@ trait Functions extends ClientObject {
     colIndexNum: Range | Double | RangeReference | FunctionResult[_],
     rangeLookup: js.UndefOr[Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double | String | Boolean] = js.native
+  
   def weekNum(serialNumber: String): FunctionResult[Double] = js.native
   def weekNum(serialNumber: String, returnType: String): FunctionResult[Double] = js.native
   def weekNum(serialNumber: String, returnType: Boolean): FunctionResult[Double] = js.native
@@ -6295,6 +6650,7 @@ trait Functions extends ClientObject {
   def weekNum(serialNumber: Range, returnType: FunctionResult[_]): FunctionResult[Double] = js.native
   def weekNum(serialNumber: Range, returnType: Range): FunctionResult[Double] = js.native
   def weekNum(serialNumber: Range, returnType: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns a number from 1 to 7 identifying the day of the week of a date.
     *
@@ -6323,6 +6679,7 @@ trait Functions extends ClientObject {
   def weekday(serialNumber: Range, returnType: FunctionResult[_]): FunctionResult[Double] = js.native
   def weekday(serialNumber: Range, returnType: Range): FunctionResult[Double] = js.native
   def weekday(serialNumber: Range, returnType: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the Weibull distribution.
     *
@@ -6339,6 +6696,7 @@ trait Functions extends ClientObject {
     beta: Double | Range | RangeReference | FunctionResult[_],
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the serial number of the date before or after a specified number of workdays.
     *
@@ -6353,6 +6711,7 @@ trait Functions extends ClientObject {
     days: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     holidays: js.UndefOr[Double | String | Range | Boolean | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the serial number of the date before or after a specified number of workdays with custom weekend parameters.
     *
@@ -6369,6 +6728,7 @@ trait Functions extends ClientObject {
     weekend: js.UndefOr[Double | String | Range | RangeReference | FunctionResult[_]],
     holidays: js.UndefOr[Double | String | Range | Boolean | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the internal rate of return for a schedule of cash flows.
     *
@@ -6383,6 +6743,7 @@ trait Functions extends ClientObject {
     dates: Double | String | Range | Boolean | RangeReference | FunctionResult[_],
     guess: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the net present value for a schedule of cash flows.
     *
@@ -6397,6 +6758,7 @@ trait Functions extends ClientObject {
     values: Double | String | Range | Boolean | RangeReference | FunctionResult[_],
     dates: Double | String | Range | Boolean | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns a logical 'Exclusive Or' of all arguments.
     *
@@ -6405,6 +6767,7 @@ trait Functions extends ClientObject {
     * @param values List of parameters, whose elements are 1 to 254 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
     */
   def xor(values: (Boolean | Range | RangeReference | FunctionResult[_])*): FunctionResult[Boolean] = js.native
+  
   /**
     * Returns the year of a date, an integer in the range 1900 - 9999.
     *
@@ -6416,6 +6779,7 @@ trait Functions extends ClientObject {
   def year(serialNumber: FunctionResult[_]): FunctionResult[Double] = js.native
   def year(serialNumber: Range): FunctionResult[Double] = js.native
   def year(serialNumber: RangeReference): FunctionResult[Double] = js.native
+  
   /**
     * Returns the year fraction representing the number of whole days between start_date and end_date.
     *
@@ -6430,6 +6794,7 @@ trait Functions extends ClientObject {
     endDate: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the yield on a security that pays periodic interest.
     *
@@ -6452,6 +6817,7 @@ trait Functions extends ClientObject {
     frequency: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the annual yield for a discounted security. For example, a treasury bill.
     *
@@ -6470,6 +6836,7 @@ trait Functions extends ClientObject {
     redemption: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the annual yield of a security that pays interest at maturity.
     *
@@ -6490,6 +6857,7 @@ trait Functions extends ClientObject {
     pr: Double | String | Boolean | Range | RangeReference | FunctionResult[_],
     basis: js.UndefOr[Double | String | Boolean | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
+  
   /**
     * Returns the one-tailed P-value of a z-test.
     *
@@ -6505,4 +6873,3 @@ trait Functions extends ClientObject {
     sigma: js.UndefOr[Double | Range | RangeReference | FunctionResult[_]]
   ): FunctionResult[Double] = js.native
 }
-

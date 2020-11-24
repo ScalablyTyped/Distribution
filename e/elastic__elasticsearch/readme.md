@@ -1,7 +1,7 @@
 
 # Scala.js typings for elastic__elasticsearch
 
-Typings are for version 7.8.0
+Typings are for version 7.10.0
 
 ## Library description:
 The official Elasticsearch client for Node.js
@@ -10,9 +10,9 @@ The official Elasticsearch client for Node.js
 | ------------------ | :-------------: |
 | Full name          | @elastic/elasticsearch |
 | Keywords           | elasticsearch, elastic, kibana, mapping, REST, search, client, index |
-| # releases         | 40 |
-| # dependents       | 85 |
-| # downloads        | 1968281 |
+| # releases         | 57 |
+| # dependents       | 200 |
+| # downloads        | 9921532 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ A node.js NTLM client with support for NTLM and NTLMv2 authentication
 | Keywords           | ntlm, ntlmv2, client, authentication |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 8597 |
+| # downloads        | 13525 |
 | # stars            | 0 |
 
 ## Links

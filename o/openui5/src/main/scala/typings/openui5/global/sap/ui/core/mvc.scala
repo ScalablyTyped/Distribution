@@ -2,11 +2,12 @@ package typings.openui5.global.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.mvc")
 @js.native
 object mvc extends js.Object {
+  
   @js.native
   class Controller protected ()
     extends typings.openui5.sap.ui.core.mvc.Controller {
@@ -84,6 +85,33 @@ object mvc extends js.Object {
     def this(sId: String) = this()
     def this(sId: String, mSettings: js.Any) = this()
   }
+  @js.native
+  object View extends js.Object {
+    
+    /**
+      * Specifies possible view types
+      */
+    @js.native
+    object mvc extends js.Object {
+      
+      @js.native
+      object ViewType extends js.Object {
+        
+        @JSBracketAccess
+        def apply(value: Double): js.UndefOr[typings.openui5.sap.ui.core.mvc.View.mvc.ViewType with Double] = js.native
+        
+        /* 0 */ val HTML: typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.HTML with Double = js.native
+        
+        /* 1 */ val JS: typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.JS with Double = js.native
+        
+        /* 2 */ val JSON: typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.JSON with Double = js.native
+        
+        /* 3 */ val Template: typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.Template with Double = js.native
+        
+        /* 4 */ val XML: typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.XML with Double = js.native
+      }
+    }
+  }
   
   @js.native
   /**
@@ -110,44 +138,23 @@ object mvc extends js.Object {
     def this(sId: String) = this()
     def this(sId: String, mSettings: js.Any) = this()
   }
-  
-  @js.native
-  object View extends js.Object {
-    /**
-      * Specifies possible view types
-      */
-    @js.native
-    object mvc extends js.Object {
-      @js.native
-      object ViewType extends js.Object {
-        /* 0 */ val HTML: typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.HTML with Double = js.native
-        /* 1 */ val JS: typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.JS with Double = js.native
-        /* 2 */ val JSON: typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.JSON with Double = js.native
-        /* 3 */ val Template: typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.Template with Double = js.native
-        /* 4 */ val XML: typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.XML with Double = js.native
-        @JSBracketAccess
-        def apply(value: Double): js.UndefOr[typings.openui5.sap.ui.core.mvc.View.mvc.ViewType with Double] = js.native
-      }
-      
-    }
-    
-  }
-  
   @js.native
   object XMLView extends js.Object {
+    
     /**
       * Specifies the available preprocessor types for XMLViews
       */
     @js.native
     object PreprocessorType extends js.Object {
-      /* 0 */ val CONTROLS: typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType.CONTROLS with Double = js.native
-      /* 1 */ val VIEWXML: typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType.VIEWXML with Double = js.native
-      /* 2 */ val XML: typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType.XML with Double = js.native
+      
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType with Double] = js.native
+      
+      /* 0 */ val CONTROLS: typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType.CONTROLS with Double = js.native
+      
+      /* 1 */ val VIEWXML: typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType.VIEWXML with Double = js.native
+      
+      /* 2 */ val XML: typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType.XML with Double = js.native
     }
-    
   }
-  
 }
-

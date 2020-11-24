@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Bookshelves")
 @js.native
 class ResourceBookshelves protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var volumes: ResourceBookshelvesVolumes = js.native
+  
   /**
     * books.bookshelves.get
     * @desc Retrieves metadata for a specific bookshelf for the specified user.
@@ -44,6 +45,7 @@ class ResourceBookshelves protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBookshelf]
   ): Unit = js.native
+  
   /**
     * books.bookshelves.list
     * @desc Retrieves a list of public bookshelves for the specified user.
@@ -73,5 +75,6 @@ class ResourceBookshelves protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBookshelves]
   ): Unit = js.native
+  
+  var volumes: ResourceBookshelvesVolumes = js.native
 }
-

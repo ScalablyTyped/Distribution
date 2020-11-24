@@ -1,17 +1,19 @@
 package typings.awsSdk.augmentedairuntimeMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AugmentedAIRuntime extends Service {
+  
   @JSName("config")
   var config_AugmentedAIRuntime: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Deletes the specified human loop for a flow definition.
     */
@@ -25,6 +27,7 @@ trait AugmentedAIRuntime extends Service {
     params: DeleteHumanLoopRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteHumanLoopResponse, Unit]
   ): Request[DeleteHumanLoopResponse, AWSError] = js.native
+  
   /**
     * Returns information about the specified human loop.
     */
@@ -38,6 +41,7 @@ trait AugmentedAIRuntime extends Service {
     params: DescribeHumanLoopRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeHumanLoopResponse, Unit]
   ): Request[DescribeHumanLoopResponse, AWSError] = js.native
+  
   /**
     * Returns information about human loops, given the specified parameters. If a human loop was deleted, it will not be included.
     */
@@ -51,6 +55,7 @@ trait AugmentedAIRuntime extends Service {
     params: ListHumanLoopsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListHumanLoopsResponse, Unit]
   ): Request[ListHumanLoopsResponse, AWSError] = js.native
+  
   /**
     * Starts a human loop, provided that at least one activation condition is met.
     */
@@ -64,6 +69,7 @@ trait AugmentedAIRuntime extends Service {
     params: StartHumanLoopRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartHumanLoopResponse, Unit]
   ): Request[StartHumanLoopResponse, AWSError] = js.native
+  
   /**
     * Stops the specified human loop.
     */
@@ -78,4 +84,3 @@ trait AugmentedAIRuntime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StopHumanLoopResponse, Unit]
   ): Request[StopHumanLoopResponse, AWSError] = js.native
 }
-

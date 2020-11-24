@@ -1,29 +1,20 @@
 package typings.tensorflowTfjsCore.mod
 
-import typings.tensorflowTfjsCore.tensorMod.Tensor
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core", "spectral")
 @js.native
 object spectral extends js.Object {
-  val fft: js.Function1[
-    /* input */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-    Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ] = js.native
-  val ifft: js.Function1[
-    /* input */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-    Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ] = js.native
-  val irfft: js.Function1[
-    /* input */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-    Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ] = js.native
-  val rfft: js.Function2[
-    /* input */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
-    /* fftLength */ js.UndefOr[Double], 
-    Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ] = js.native
+  
+  def fft(input: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  
+  def ifft(input: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  
+  def irfft(input: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  
+  def rfft(input: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  def rfft(input: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], fftLength: Double): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
 }
-

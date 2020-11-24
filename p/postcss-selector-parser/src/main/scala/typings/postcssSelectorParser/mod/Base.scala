@@ -4,18 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.postcssSelectorParser.postcssSelectorParserStrings.`class`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String]] */] extends js.Object {
-  var parent: ParentType = js.native
-  var rawSpaceAfter: String = js.native
-  var rawSpaceBefore: String = js.native
-  var source: js.UndefOr[NodeSource] = js.native
-  var sourceIndex: Double = js.native
-  var spaces: Spaces = js.native
-  var `type`: typings.postcssSelectorParser.postcssSelectorParserStrings.tag | typings.postcssSelectorParser.postcssSelectorParserStrings.string | typings.postcssSelectorParser.postcssSelectorParserStrings.selector | typings.postcssSelectorParser.postcssSelectorParserStrings.root | typings.postcssSelectorParser.postcssSelectorParserStrings.pseudo | typings.postcssSelectorParser.postcssSelectorParserStrings.nesting | typings.postcssSelectorParser.postcssSelectorParserStrings.id | typings.postcssSelectorParser.postcssSelectorParserStrings.comment | typings.postcssSelectorParser.postcssSelectorParserStrings.combinator | `class` | typings.postcssSelectorParser.postcssSelectorParserStrings.attribute | typings.postcssSelectorParser.postcssSelectorParserStrings.universal = js.native
-  var value: Value = js.native
+trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */] extends js.Object {
+  
   /**
     * Some non-standard syntax doesn't follow normal escaping rules for css.
     * This allows non standard syntax to be appended to an existing property
@@ -26,7 +19,9 @@ trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Contai
     * @param {string} valueEscaped optional. the escaped value of the property.
     */
   def appendToPropertyAndEscape(name: String, value: js.Any, valueEscaped: String): Unit = js.native
+  
   def clone(opts: StringDictionary[js.Any]): Node = js.native
+  
   /**
     * Return whether this node includes the character at the position of the given line and column.
     * Returns undefined if the nodes lack sufficient source metadata to determine the position.
@@ -34,10 +29,21 @@ trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Contai
     * @param column 1-index based column number relative to the start of the selector.
     */
   def isAtPosition(line: Double, column: Double): js.UndefOr[Boolean] = js.native
+  
   def next(): Node = js.native
+  
+  var parent: ParentType = js.native
+  
   def prev(): Node = js.native
+  
+  var rawSpaceAfter: String = js.native
+  
+  var rawSpaceBefore: String = js.native
+  
   def remove(): Node = js.native
+  
   def replaceWith(nodes: Node*): Node = js.native
+  
   /**
     * Some non-standard syntax doesn't follow normal escaping rules for css,
     * this allows the escaped value to be specified directly, allowing illegal characters to be
@@ -47,6 +53,7 @@ trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Contai
     * @param valueEscaped optional. the escaped value of the property.
     */
   def setPropertyAndEscape(name: String, value: js.Any, valueEscaped: String): Unit = js.native
+  
   /**
     * When you want a value to passed through to CSS directly. This method
     * deletes the corresponding raw value causing the stringifier to fallback
@@ -55,11 +62,21 @@ trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Contai
     * @param value The value that is both escaped and unescaped.
     */
   def setPropertyWithoutEscape(name: String, value: js.Any): Unit = js.native
+  
+  var source: js.UndefOr[NodeSource] = js.native
+  
+  var sourceIndex: Double = js.native
+  
+  var spaces: Spaces = js.native
+  
+  var `type`: typings.postcssSelectorParser.postcssSelectorParserStrings.tag | typings.postcssSelectorParser.postcssSelectorParserStrings.string | typings.postcssSelectorParser.postcssSelectorParserStrings.selector | typings.postcssSelectorParser.postcssSelectorParserStrings.root | typings.postcssSelectorParser.postcssSelectorParserStrings.pseudo | typings.postcssSelectorParser.postcssSelectorParserStrings.nesting | typings.postcssSelectorParser.postcssSelectorParserStrings.id | typings.postcssSelectorParser.postcssSelectorParserStrings.comment | typings.postcssSelectorParser.postcssSelectorParserStrings.combinator | `class` | typings.postcssSelectorParser.postcssSelectorParserStrings.attribute | typings.postcssSelectorParser.postcssSelectorParserStrings.universal = js.native
+  
+  var value: Value = js.native
 }
-
 object Base {
+  
   @scala.inline
-  def apply[/* <: js.UndefOr[java.lang.String] */ Value, /* <: js.UndefOr[typings.postcssSelectorParser.mod.Container[java.lang.String]] */ ParentType](
+  def apply[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */](
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
     clone: StringDictionary[js.Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
@@ -81,56 +98,76 @@ object Base {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Base[Value, ParentType]]
   }
+  
   @scala.inline
-  implicit class BaseOps[Self <: Base[_, _], /* <: js.UndefOr[java.lang.String] */ Value, /* <: js.UndefOr[typings.postcssSelectorParser.mod.Container[java.lang.String]] */ ParentType] (val x: Self with (Base[Value, ParentType])) extends AnyVal {
+  implicit class BaseOps[Self <: Base[_, _], Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */] (val x: Self with (Base[Value, ParentType])) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAppendToPropertyAndEscape(value: (String, js.Any, String) => Unit): Self = this.set("appendToPropertyAndEscape", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setClone(value: StringDictionary[js.Any] => Node): Self = this.set("clone", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setIsAtPosition(value: (Double, Double) => js.UndefOr[Boolean]): Self = this.set("isAtPosition", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setNext(value: () => Node): Self = this.set("next", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setParent(value: ParentType): Self = this.set("parent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPrev(value: () => Node): Self = this.set("prev", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRawSpaceAfter(value: String): Self = this.set("rawSpaceAfter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRawSpaceBefore(value: String): Self = this.set("rawSpaceBefore", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRemove(value: () => Node): Self = this.set("remove", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setReplaceWith(value: /* repeated */ Node => Node): Self = this.set("replaceWith", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetPropertyAndEscape(value: (String, js.Any, String) => Unit): Self = this.set("setPropertyAndEscape", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setSetPropertyWithoutEscape(value: (String, js.Any) => Unit): Self = this.set("setPropertyWithoutEscape", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSourceIndex(value: Double): Self = this.set("sourceIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSpaces(value: Spaces): Self = this.set("spaces", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(
       value: typings.postcssSelectorParser.postcssSelectorParserStrings.tag | typings.postcssSelectorParser.postcssSelectorParserStrings.string | typings.postcssSelectorParser.postcssSelectorParserStrings.selector | typings.postcssSelectorParser.postcssSelectorParserStrings.root | typings.postcssSelectorParser.postcssSelectorParserStrings.pseudo | typings.postcssSelectorParser.postcssSelectorParserStrings.nesting | typings.postcssSelectorParser.postcssSelectorParserStrings.id | typings.postcssSelectorParser.postcssSelectorParserStrings.comment | typings.postcssSelectorParser.postcssSelectorParserStrings.combinator | `class` | typings.postcssSelectorParser.postcssSelectorParserStrings.attribute | typings.postcssSelectorParser.postcssSelectorParserStrings.universal
     ): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setValue(value: Value): Self = this.set("value", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSource(value: NodeSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSource: Self = this.set("source", js.undefined)
   }
-  
 }
-

@@ -4,11 +4,12 @@ import typings.std.File
 import typings.std.JSON
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "dxSurveyService")
 @js.native
 class dxSurveyService () extends js.Object {
+  
   def getResult(
     resultId: String,
     name: String,
@@ -20,6 +21,7 @@ class dxSurveyService () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def getSurveyJsonAndIsCompleted(
     surveyId: String,
     clientId: String,
@@ -31,20 +33,24 @@ class dxSurveyService () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def isCompleted(
     resultId: String,
     clientId: String,
     onIsCompleted: js.Function3[/* success */ Boolean, /* result */ String, /* response */ js.Any, Unit]
   ): Unit = js.native
+  
   def loadSurvey(
     surveyId: String,
     onLoad: js.Function3[/* success */ Boolean, /* result */ String, /* response */ js.Any, Unit]
   ): Unit = js.native
+  
   def sendFile(
     postId: String,
     file: File,
     onSendFile: js.Function2[/* success */ Boolean, /* response */ js.Any, Unit]
   ): Unit = js.native
+  
   def sendResult(
     postId: String,
     result: JSON,
@@ -71,11 +77,10 @@ class dxSurveyService () extends js.Object {
     isPartialCompleted: Boolean
   ): Unit = js.native
 }
-
 /* static members */
 @JSImport("survey-knockout", "dxSurveyService")
 @js.native
 object dxSurveyService extends js.Object {
+  
   var serviceUrl: String = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.showdown.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("showdown", "validateExtension")
 @js.native
 object validateExtension extends js.Object {
+  
   /**
     * Checks if the given `ext` is a valid showdown extension.
     *
@@ -16,4 +17,3 @@ object validateExtension extends js.Object {
   def apply(ext: js.Array[ShowdownExtension]): Boolean = js.native
   def apply(ext: ShowdownExtension): Boolean = js.native
 }
-

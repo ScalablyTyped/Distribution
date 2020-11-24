@@ -2,11 +2,18 @@ package typings.tstl
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/utility", JSImport.Namespace)
 @js.native
 object utilityMod extends js.Object {
+  
+  @JSName("is_node")
+  def isNode(): Boolean = js.native
+  
+  @JSName("make_pair")
+  def makePair[First, Second](first: First, second: Second): typings.tstl.pairMod.Pair[First, Second] = js.native
+  
   @js.native
   class Entry[Key, T] protected ()
     extends typings.tstl.entryMod.Entry[Key, T] {
@@ -30,10 +37,4 @@ object utilityMod extends js.Object {
       */
     def this(first: First, second: Second) = this()
   }
-  
-  @JSName("is_node")
-  def isNode(): Boolean = js.native
-  @JSName("make_pair")
-  def makePair[First, Second](first: First, second: Second): typings.tstl.pairMod.Pair[First, Second] = js.native
 }
-

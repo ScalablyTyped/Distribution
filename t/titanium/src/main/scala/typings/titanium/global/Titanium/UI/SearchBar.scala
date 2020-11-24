@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A specialized text field for entering search text.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class SearchBar ()
   extends typings.titanium.Titanium.UI.SearchBar
-

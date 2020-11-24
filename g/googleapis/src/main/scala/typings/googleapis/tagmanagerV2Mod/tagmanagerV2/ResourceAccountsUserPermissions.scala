@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$User_permissions")
 @js.native
 class ResourceAccountsUserPermissions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.user_permissions.create
     * @desc Creates a user's Account & Container access.
@@ -45,6 +47,7 @@ class ResourceAccountsUserPermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUserPermission]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.user_permissions.delete
     * @desc Removes a user from the account, revoking access to it and all of
@@ -74,6 +77,7 @@ class ResourceAccountsUserPermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.user_permissions.get
     * @desc Gets a user's Account & Container access.
@@ -105,6 +109,7 @@ class ResourceAccountsUserPermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUserPermission]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.user_permissions.list
     * @desc List all users that have access to the account along with Account
@@ -138,6 +143,7 @@ class ResourceAccountsUserPermissions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListUserPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * tagmanager.accounts.user_permissions.update
     * @desc Updates a user's Account & Container access.
@@ -171,4 +177,3 @@ class ResourceAccountsUserPermissions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUserPermission]
   ): Unit = js.native
 }
-

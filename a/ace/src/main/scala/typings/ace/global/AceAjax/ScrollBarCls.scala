@@ -3,7 +3,7 @@ package typings.ace.global.AceAjax
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AceAjax.ScrollBar")
 @js.native
@@ -15,4 +15,3 @@ class ScrollBarCls protected ()
     **/
   def this(parent: HTMLElement) = this()
 }
-

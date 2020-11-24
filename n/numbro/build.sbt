@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "numbro"
-version := "2.3.1-807e12"
+version := "2.3.2-522511"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

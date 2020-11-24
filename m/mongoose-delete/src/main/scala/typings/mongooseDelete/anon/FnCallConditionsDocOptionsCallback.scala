@@ -5,10 +5,11 @@ import typings.mongoose.mod.ModelUpdateOptions
 import typings.mongoose.mod.UpdateQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallConditionsDocOptionsCallback extends js.Object {
+  
   def apply(conditions: FilterQuery[_], doc: UpdateQuery[_]): Queryany = js.native
   def apply(
     conditions: FilterQuery[_],
@@ -23,4 +24,3 @@ trait FnCallConditionsDocOptionsCallback extends js.Object {
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
   ): Queryany = js.native
 }
-

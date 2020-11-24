@@ -12,7 +12,7 @@ Powerful LINQ engine for JavaScript
 | Keywords           | LINQ, Functional, Enumerable, Array, Arrays, Collections, String, Strings |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 5122 |
+| # downloads        | 2952 |
 | # stars            | 2 |
 
 ## Links

@@ -2,29 +2,64 @@ package typings.instagramPrivateApi.timelineFeedTypesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait TimelineFeedsOptions extends js.Object {
-  var latestStoryPk: js.UndefOr[String | Double] = js.undefined
-  var pushDisabled: js.UndefOr[Boolean] = js.undefined
-  var reason: js.UndefOr[TimelineFeedReason] = js.undefined
-  var recoveredFromCrash: js.UndefOr[String] = js.undefined
+  
+  var latestStoryPk: js.UndefOr[String | Double] = js.native
+  
+  var pushDisabled: js.UndefOr[Boolean] = js.native
+  
+  var reason: js.UndefOr[TimelineFeedReason] = js.native
+  
+  var recoveredFromCrash: js.UndefOr[String] = js.native
 }
-
 object TimelineFeedsOptions {
+  
   @scala.inline
-  def apply(
-    latestStoryPk: String | Double = null,
-    pushDisabled: js.UndefOr[Boolean] = js.undefined,
-    reason: TimelineFeedReason = null,
-    recoveredFromCrash: String = null
-  ): TimelineFeedsOptions = {
+  def apply(): TimelineFeedsOptions = {
     val __obj = js.Dynamic.literal()
-    if (latestStoryPk != null) __obj.updateDynamic("latestStoryPk")(latestStoryPk.asInstanceOf[js.Any])
-    if (!js.isUndefined(pushDisabled)) __obj.updateDynamic("pushDisabled")(pushDisabled.get.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (recoveredFromCrash != null) __obj.updateDynamic("recoveredFromCrash")(recoveredFromCrash.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineFeedsOptions]
   }
+  
+  @scala.inline
+  implicit class TimelineFeedsOptionsOps[Self <: TimelineFeedsOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setLatestStoryPk(value: String | Double): Self = this.set("latestStoryPk", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLatestStoryPk: Self = this.set("latestStoryPk", js.undefined)
+    
+    @scala.inline
+    def setPushDisabled(value: Boolean): Self = this.set("pushDisabled", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePushDisabled: Self = this.set("pushDisabled", js.undefined)
+    
+    @scala.inline
+    def setReason(value: TimelineFeedReason): Self = this.set("reason", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+    
+    @scala.inline
+    def setRecoveredFromCrash(value: String): Self = this.set("recoveredFromCrash", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRecoveredFromCrash: Self = this.set("recoveredFromCrash", js.undefined)
+  }
 }
-

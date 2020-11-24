@@ -2,7 +2,7 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Partial results from a streaming read or SQL query. Streaming reads and SQL
@@ -11,17 +11,20 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaPartialResultSet extends js.Object {
+  
   /**
     * If true, then the final value in values is chunked, and must be combined
     * with more values from subsequent `PartialResultSet`s to obtain a complete
     * field value.
     */
   var chunkedValue: js.UndefOr[Boolean] = js.native
+  
   /**
     * Metadata about the result set, such as row type information. Only present
     * in the first response.
     */
   var metadata: js.UndefOr[SchemaResultSetMetadata] = js.native
+  
   /**
     * Streaming calls might be interrupted for a variety of reasons, such as
     * TCP connection loss. If this occurs, the stream of results can be resumed
@@ -30,6 +33,7 @@ trait SchemaPartialResultSet extends js.Object {
     * token.
     */
   var resumeToken: js.UndefOr[String] = js.native
+  
   /**
     * Query plan and execution statistics for the statement that produced this
     * streaming result set. These can be requested by setting
@@ -38,6 +42,7 @@ trait SchemaPartialResultSet extends js.Object {
     * response for DML statements.
     */
   var stats: js.UndefOr[SchemaResultSetStats] = js.native
+  
   /**
     * A streamed result set consists of a stream of values, which might be
     * split into many `PartialResultSet` messages to accommodate large rows
@@ -88,47 +93,60 @@ trait SchemaPartialResultSet extends js.Object {
     */
   var values: js.UndefOr[js.Array[_]] = js.native
 }
-
 object SchemaPartialResultSet {
+  
   @scala.inline
   def apply(): SchemaPartialResultSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPartialResultSet]
   }
+  
   @scala.inline
   implicit class SchemaPartialResultSetOps[Self <: SchemaPartialResultSet] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setChunkedValue(value: Boolean): Self = this.set("chunkedValue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteChunkedValue: Self = this.set("chunkedValue", js.undefined)
+    
     @scala.inline
     def setMetadata(value: SchemaResultSetMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMetadata: Self = this.set("metadata", js.undefined)
+    
     @scala.inline
     def setResumeToken(value: String): Self = this.set("resumeToken", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResumeToken: Self = this.set("resumeToken", js.undefined)
+    
     @scala.inline
     def setStats(value: SchemaResultSetStats): Self = this.set("stats", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStats: Self = this.set("stats", js.undefined)
+    
     @scala.inline
     def setValuesVarargs(value: js.Any*): Self = this.set("values", js.Array(value :_*))
+    
     @scala.inline
     def setValues(value: js.Array[_]): Self = this.set("values", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteValues: Self = this.set("values", js.undefined)
   }
-  
 }
-

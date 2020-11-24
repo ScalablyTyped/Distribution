@@ -22,9 +22,109 @@ import typings.activexFaxcomexlib.FAXCOMEXLib.FAX_SMTP_AUTHENTICATION_TYPE_ENUM
 import typings.activexFaxcomexlib.FAXCOMEXLib.FaxConstants
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexFaxcomexlibNumbers {
+  
+  @scala.inline
+  def `0`: `0` = 0.asInstanceOf[`0`]
+  
+  @scala.inline
+  def `1`: `1` = 1.asInstanceOf[`1`]
+  
+  @scala.inline
+  def `10`: `10` = 10.asInstanceOf[`10`]
+  
+  @scala.inline
+  def `100`: `100` = 100.asInstanceOf[`100`]
+  
+  @scala.inline
+  def `1024`: `1024` = 1024.asInstanceOf[`1024`]
+  
+  @scala.inline
+  def `11`: `11` = 11.asInstanceOf[`11`]
+  
+  @scala.inline
+  def `12`: `12` = 12.asInstanceOf[`12`]
+  
+  @scala.inline
+  def `128`: `128` = 128.asInstanceOf[`128`]
+  
+  @scala.inline
+  def `13`: `13` = 13.asInstanceOf[`13`]
+  
+  @scala.inline
+  def `131072`: `131072` = 131072.asInstanceOf[`131072`]
+  
+  @scala.inline
+  def `14`: `14` = 14.asInstanceOf[`14`]
+  
+  @scala.inline
+  def `15`: `15` = 15.asInstanceOf[`15`]
+  
+  @scala.inline
+  def `16`: `16` = 16.asInstanceOf[`16`]
+  
+  @scala.inline
+  def `16777216`: `16777216` = 16777216.asInstanceOf[`16777216`]
+  
+  @scala.inline
+  def `17`: `17` = 17.asInstanceOf[`17`]
+  
+  @scala.inline
+  def `18`: `18` = 18.asInstanceOf[`18`]
+  
+  @scala.inline
+  def `19`: `19` = 19.asInstanceOf[`19`]
+  
+  @scala.inline
+  def `196608`: `196608` = 196608.asInstanceOf[`196608`]
+  
+  @scala.inline
+  def `2`: `2` = 2.asInstanceOf[`2`]
+  
+  @scala.inline
+  def `2048`: `2048` = 2048.asInstanceOf[`2048`]
+  
+  @scala.inline
+  def `256`: `256` = 256.asInstanceOf[`256`]
+  
+  @scala.inline
+  def `3`: `3` = 3.asInstanceOf[`3`]
+  
+  @scala.inline
+  def `32`: `32` = 32.asInstanceOf[`32`]
+  
+  @scala.inline
+  def `4`: `4` = 4.asInstanceOf[`4`]
+  
+  @scala.inline
+  def `5`: `5` = 5.asInstanceOf[`5`]
+  
+  @scala.inline
+  def `512`: `512` = 512.asInstanceOf[`512`]
+  
+  @scala.inline
+  def `59`: `59` = 59.asInstanceOf[`59`]
+  
+  @scala.inline
+  def `6`: `6` = 6.asInstanceOf[`6`]
+  
+  @scala.inline
+  def `64`: `64` = 64.asInstanceOf[`64`]
+  
+  @scala.inline
+  def `65536`: `65536` = 65536.asInstanceOf[`65536`]
+  
+  @scala.inline
+  def `7`: `7` = 7.asInstanceOf[`7`]
+  
+  @scala.inline
+  def `8`: `8` = 8.asInstanceOf[`8`]
+  
+  @scala.inline
+  def `9`: `9` = 9.asInstanceOf[`9`]
+  
   @js.native
   sealed trait `0`
     extends FAX_ACCOUNT_EVENTS_TYPE_ENUM
@@ -229,72 +329,4 @@ object activexFaxcomexlibNumbers {
   
   @js.native
   sealed trait `9` extends FAX_JOB_EXTENDED_STATUS_ENUM
-  
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
-  @scala.inline
-  def `10`: `10` = 10.asInstanceOf[`10`]
-  @scala.inline
-  def `100`: `100` = 100.asInstanceOf[`100`]
-  @scala.inline
-  def `1024`: `1024` = 1024.asInstanceOf[`1024`]
-  @scala.inline
-  def `11`: `11` = 11.asInstanceOf[`11`]
-  @scala.inline
-  def `12`: `12` = 12.asInstanceOf[`12`]
-  @scala.inline
-  def `128`: `128` = 128.asInstanceOf[`128`]
-  @scala.inline
-  def `13`: `13` = 13.asInstanceOf[`13`]
-  @scala.inline
-  def `131072`: `131072` = 131072.asInstanceOf[`131072`]
-  @scala.inline
-  def `14`: `14` = 14.asInstanceOf[`14`]
-  @scala.inline
-  def `15`: `15` = 15.asInstanceOf[`15`]
-  @scala.inline
-  def `16`: `16` = 16.asInstanceOf[`16`]
-  @scala.inline
-  def `16777216`: `16777216` = 16777216.asInstanceOf[`16777216`]
-  @scala.inline
-  def `17`: `17` = 17.asInstanceOf[`17`]
-  @scala.inline
-  def `18`: `18` = 18.asInstanceOf[`18`]
-  @scala.inline
-  def `19`: `19` = 19.asInstanceOf[`19`]
-  @scala.inline
-  def `196608`: `196608` = 196608.asInstanceOf[`196608`]
-  @scala.inline
-  def `2`: `2` = 2.asInstanceOf[`2`]
-  @scala.inline
-  def `2048`: `2048` = 2048.asInstanceOf[`2048`]
-  @scala.inline
-  def `256`: `256` = 256.asInstanceOf[`256`]
-  @scala.inline
-  def `3`: `3` = 3.asInstanceOf[`3`]
-  @scala.inline
-  def `32`: `32` = 32.asInstanceOf[`32`]
-  @scala.inline
-  def `4`: `4` = 4.asInstanceOf[`4`]
-  @scala.inline
-  def `5`: `5` = 5.asInstanceOf[`5`]
-  @scala.inline
-  def `512`: `512` = 512.asInstanceOf[`512`]
-  @scala.inline
-  def `59`: `59` = 59.asInstanceOf[`59`]
-  @scala.inline
-  def `6`: `6` = 6.asInstanceOf[`6`]
-  @scala.inline
-  def `64`: `64` = 64.asInstanceOf[`64`]
-  @scala.inline
-  def `65536`: `65536` = 65536.asInstanceOf[`65536`]
-  @scala.inline
-  def `7`: `7` = 7.asInstanceOf[`7`]
-  @scala.inline
-  def `8`: `8` = 8.asInstanceOf[`8`]
-  @scala.inline
-  def `9`: `9` = 9.asInstanceOf[`9`]
 }
-

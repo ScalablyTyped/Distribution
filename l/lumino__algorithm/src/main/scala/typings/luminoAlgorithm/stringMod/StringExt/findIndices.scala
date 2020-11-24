@@ -2,11 +2,12 @@ package typings.luminoAlgorithm.stringMod.StringExt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/string", "StringExt.findIndices")
 @js.native
 object findIndices extends js.Object {
+  
   /**
     * Find the indices of characters in a source text.
     *
@@ -30,4 +31,3 @@ object findIndices extends js.Object {
   def apply(source: String, query: String): js.Array[Double] | Null = js.native
   def apply(source: String, query: String, start: Double): js.Array[Double] | Null = js.native
 }
-

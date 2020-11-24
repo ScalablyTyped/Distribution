@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.jupyterlabDocregistry.anon.PartialIFileType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The default file types used by the document registry.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object defaultFileTypes
   extends TopLevel[js.Array[PartialIFileType]]
-

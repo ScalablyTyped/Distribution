@@ -10,9 +10,9 @@ Official client library for accessing the Onfleet API
 | ------------------ | :-------------: |
 | Full name          | @onfleet/node-onfleet |
 | Keywords           | node-onfleet |
-| # releases         | 8 |
+| # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 3309 |
+| # downloads        | 32289 |
 | # stars            | 0 |
 
 ## Links

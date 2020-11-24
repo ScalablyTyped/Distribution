@@ -1,12 +1,11 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.anon.HTMLAttributesidclassNameCheckedClassName
+import typings.reactOnsenui.anon.HTMLAttributesidclassNameAutoFocusChecked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-onsenui", "Switch")
 @js.native
 class Switch ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNameCheckedClassName, js.Any, js.Any]
-
+  extends typings.react.mod.Component[HTMLAttributesidclassNameAutoFocusChecked, js.Any, js.Any]

@@ -2,17 +2,17 @@ package typings.babylonjs.miscIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Misc/index", "DeepCopier")
 @js.native
 class DeepCopier ()
   extends typings.babylonjs.deepCopierMod.DeepCopier
-
 /* static members */
 @JSImport("babylonjs/Misc/index", "DeepCopier")
 @js.native
 object DeepCopier extends js.Object {
+  
   /**
     * Tries to copy an object by duplicating every property
     * @param source defines the source object
@@ -21,6 +21,12 @@ object DeepCopier extends js.Object {
     * @param mustCopyList defines a list of properties to copy (even if they start with _)
     */
   def DeepCopy(source: js.Any, destination: js.Any): Unit = js.native
+  def DeepCopy(
+    source: js.Any,
+    destination: js.Any,
+    doNotCopyList: js.UndefOr[scala.Nothing],
+    mustCopyList: js.Array[String]
+  ): Unit = js.native
   def DeepCopy(source: js.Any, destination: js.Any, doNotCopyList: js.Array[String]): Unit = js.native
   def DeepCopy(
     source: js.Any,
@@ -29,4 +35,3 @@ object DeepCopier extends js.Object {
     mustCopyList: js.Array[String]
   ): Unit = js.native
 }
-

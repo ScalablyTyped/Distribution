@@ -3,10 +3,11 @@ package typings.jquerySticky
 import typings.jquerySticky.jqueryStickyStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   /**
     * Initializer. options is optional.
     */
@@ -17,9 +18,9 @@ trait JQuery extends js.Object {
     */
   @JSName("sticky")
   def sticky_update(method: update): JQuery = js.native
+  
   /**
     * To unstick an object.
     */
   def unstick(): JQuery = js.native
 }
-

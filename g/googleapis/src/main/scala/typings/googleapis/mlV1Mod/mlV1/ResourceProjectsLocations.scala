@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/ml/v1", "ml_v1.Resource$Projects$Locations")
 @js.native
 class ResourceProjectsLocations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * ml.projects.locations.get
     * @desc Get the complete list of CMLE capabilities in a location, along
@@ -45,6 +47,7 @@ class ResourceProjectsLocations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudMlV1Location]
   ): Unit = js.native
+  
   /**
     * ml.projects.locations.list
     * @desc List all locations that provides at least one type of CMLE
@@ -80,4 +83,3 @@ class ResourceProjectsLocations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleCloudMlV1ListLocationsResponse]
   ): Unit = js.native
 }
-

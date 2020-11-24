@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.CurrentFolderChanged event.
@@ -18,4 +18,3 @@ class ASPxClientFileManagerCurrentFolderChangedEventArgs protected ()
     */
   def this(name: String, fullName: String) = this()
 }
-

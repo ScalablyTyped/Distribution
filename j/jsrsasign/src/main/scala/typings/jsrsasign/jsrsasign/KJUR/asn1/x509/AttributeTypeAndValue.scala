@@ -11,7 +11,7 @@ import typings.jsrsasign.jsrsasignStrings.tel
 import typings.jsrsasign.jsrsasignStrings.utf8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AttributeTypeAndValue ASN.1 structure class
@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AttributeTypeAndValue extends ASN1Object {
+  
   @JSName("getValueObj")
   def getValueObj_ia5(dsType: ia5, valueStr: String): DERIA5String = js.native
   @JSName("getValueObj")
@@ -30,7 +31,8 @@ trait AttributeTypeAndValue extends ASN1Object {
   def getValueObj_tel(dsType: tel, valueStr: String): DERTeletexString = js.native
   @JSName("getValueObj")
   def getValueObj_utf8(dsType: utf8, valueStr: String): DERUTF8String = js.native
+  
   def setByAttrTypeAndValueStr(shortAttrType: String, valueStr: String): Unit = js.native
+  
   def setByString(attrTypeAndValueStr: String): Unit = js.native
 }
-

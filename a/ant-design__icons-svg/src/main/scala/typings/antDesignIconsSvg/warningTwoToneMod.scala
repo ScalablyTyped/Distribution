@@ -3,11 +3,11 @@ package typings.antDesignIconsSvg
 import typings.antDesignIconsSvg.typesMod.IconDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-svg/es/asn/WarningTwoTone", JSImport.Namespace)
+@JSImport("@ant-design/icons-svg/lib/asn/WarningTwoTone", JSImport.Namespace)
 @js.native
 object warningTwoToneMod extends js.Object {
+  
   val default: IconDefinition = js.native
 }
-

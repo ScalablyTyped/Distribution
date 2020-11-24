@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudprivatecatalogproducer/v1beta1", "cloudprivatecatalogproducer_v1beta1.Resource$Catalogs$Associations")
 @js.native
 class ResourceCatalogsAssociations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.associations.create
     * @desc Creates an Association instance under a given Catalog.
@@ -45,6 +47,7 @@ class ResourceCatalogsAssociations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Association]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.associations.delete
     * @desc Deletes the given Association.
@@ -76,6 +79,7 @@ class ResourceCatalogsAssociations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.associations.get
     * @desc Returns the requested Association resource.
@@ -107,6 +111,7 @@ class ResourceCatalogsAssociations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Association]
   ): Unit = js.native
+  
   /**
     * cloudprivatecatalogproducer.catalogs.associations.list
     * @desc Lists all Association resources under a catalog.
@@ -143,4 +148,3 @@ class ResourceCatalogsAssociations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListAssociationsResponse]
   ): Unit = js.native
 }
-

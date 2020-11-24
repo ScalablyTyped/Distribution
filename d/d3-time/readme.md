@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-time
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 A calculator for humanity’s peculiar conventions of time.
@@ -11,8 +11,8 @@ A calculator for humanity’s peculiar conventions of time.
 | Full name          | d3-time |
 | Keywords           | d3, d3-module, time, interval, calendar |
 | # releases         | 5 |
-| # dependents       | 117 |
-| # downloads        | 45623830 |
+| # dependents       | 151 |
+| # downloads        | 69759118 |
 | # stars            | 1 |
 
 ## Links

@@ -5,7 +5,7 @@ import typings.ow.basePredicateMod.BasePredicate
 import typings.ow.predicateMod.Predicate
 import typings.ow.predicateMod.PredicateOptions
 import typings.std.ArrayBuffer
-import typings.std.DataView
+import typings.std.ArrayBufferLike
 import typings.std.Float32Array
 import typings.std.Float64Array
 import typings.std.Int16Array
@@ -13,6 +13,7 @@ import typings.std.Int32Array
 import typings.std.Int8Array
 import typings.std.Iterable
 import typings.std.RegExp
+import typings.std.SharedArrayBuffer
 import typings.std.Uint16Array
 import typings.std.Uint32Array
 import typings.std.Uint8Array
@@ -20,17 +21,25 @@ import typings.std.Uint8ClampedArray
 import typings.typeFest.basicMod.TypedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ow/dist/source/predicates", JSImport.Namespace)
 @js.native
 object predicatesMod extends js.Object {
+  
+  def default[T](`object`: T): T with Predicates = js.native
+  def default[T](`object`: T, options: PredicateOptions): T with Predicates = js.native
+  
   @js.native
   class AnyPredicate[T] protected ()
     extends typings.ow.anyMod.AnyPredicate[T] {
     def this(predicates: js.Array[BasePredicate[_]]) = this()
     def this(predicates: js.Array[BasePredicate[_]], options: PredicateOptions) = this()
   }
+  
+  @js.native
+  class ArrayBufferPredicate[T /* <: ArrayBufferLike */] ()
+    extends typings.ow.arrayBufferMod.ArrayBufferPredicate[T]
   
   @js.native
   /**
@@ -47,6 +56,15 @@ object predicatesMod extends js.Object {
     */
   class BooleanPredicate ()
     extends typings.ow.booleanMod.BooleanPredicate {
+    def this(options: PredicateOptions) = this()
+  }
+  
+  @js.native
+  /**
+    @hidden
+    */
+  class DataViewPredicate ()
+    extends typings.ow.dataViewMod.DataViewPredicate {
     def this(options: PredicateOptions) = this()
   }
   
@@ -97,138 +115,7 @@ object predicatesMod extends js.Object {
   
   @js.native
   trait Predicates extends js.Object {
-    /**
-      Test the value to be an array.
-      */
-    val array: typings.ow.arrayMod.ArrayPredicate[_] = js.native
-    /**
-      Test the value to be a ArrayBuffer.
-      */
-    val arrayBuffer: Predicate[ArrayBuffer] = js.native
-    /**
-      Test the value to be a boolean.
-      */
-    val boolean: typings.ow.booleanMod.BooleanPredicate = js.native
-    /**
-      Test the value to be a Buffer.
-      */
-    val buffer: Predicate[Buffer] = js.native
-    /**
-      Test the value to be a DataView.
-      */
-    val dataView: Predicate[DataView] = js.native
-    /**
-      Test the value to be a Date.
-      */
-    val date: typings.ow.dateMod.DatePredicate = js.native
-    /**
-      Test the value to be an Error.
-      */
-    val error: typings.ow.errorMod.ErrorPredicate = js.native
-    /**
-      Test the value to be a Float32Array.
-      */
-    val float32Array: Predicate[Float32Array] = js.native
-    /**
-      Test the value to be a Float64Array.
-      */
-    val float64Array: Predicate[Float64Array] = js.native
-    /**
-      Test the value to be a Function.
-      */
-    val function: Predicate[js.Function] = js.native
-    /**
-      Test the value to be a Int16Array.
-      */
-    val int16Array: Predicate[Int16Array] = js.native
-    /**
-      Test the value to be a Int32Array.
-      */
-    val int32Array: Predicate[Int32Array] = js.native
-    /**
-      Test the value to be a Int8Array.
-      */
-    val int8Array: Predicate[Int8Array] = js.native
-    /**
-      Test the value to be Iterable.
-      */
-    val iterable: Predicate[Iterable[_]] = js.native
-    /**
-      Test the value to be a Map.
-      */
-    val map: typings.ow.mapMod.MapPredicate[_, _] = js.native
-    /**
-      Test the value to be not a number.
-      */
-    val nan: Predicate[Double] = js.native
-    /**
-      Test the value to be null.
-      */
-    val `null`: Predicate[Null] = js.native
-    /**
-      Test the value to be null or undefined.
-      */
-    val nullOrUndefined: Predicate[js.UndefOr[Null]] = js.native
-    /**
-      Test the value to be a number.
-      */
-    val number: typings.ow.numberMod.NumberPredicate = js.native
-    /**
-      Test the value to be an object.
-      */
-    val `object`: typings.ow.objectMod.ObjectPredicate = js.native
-    /**
-      Test the value to be a Promise.
-      */
-    val promise: Predicate[js.Promise[_]] = js.native
-    /**
-      Test the value to be a RegExp.
-      */
-    val regExp: Predicate[RegExp] = js.native
-    /**
-      Test the value to be a Set.
-      */
-    val set: typings.ow.setMod.SetPredicate[_] = js.native
-    /**
-      Test the value to be a string.
-      */
-    val string: typings.ow.stringMod.StringPredicate = js.native
-    /**
-      Test the value to be a Symbol.
-      */
-    val symbol: Predicate[js.Symbol] = js.native
-    /**
-      Test the value to be a typed array.
-      */
-    val typedArray: Predicate[TypedArray] = js.native
-    /**
-      Test the value to be a Uint16Array.
-      */
-    val uint16Array: Predicate[Uint16Array] = js.native
-    /**
-      Test the value to be a Uint32Array.
-      */
-    val uint32Array: Predicate[Uint32Array] = js.native
-    /**
-      Test the value to be a Uint8Array.
-      */
-    val uint8Array: Predicate[Uint8Array] = js.native
-    /**
-      Test the value to be a Uint8ClampedArray.
-      */
-    val uint8ClampedArray: Predicate[Uint8ClampedArray] = js.native
-    /**
-      Test the value to be undefined.
-      */
-    val undefined: Predicate[js.UndefOr[scala.Nothing]] = js.native
-    /**
-      Test the value to be a WeakMap.
-      */
-    val weakMap: typings.ow.weakMapMod.WeakMapPredicate[js.Object] = js.native
-    /**
-      Test the value to be a WeakSet.
-      */
-    val weakSet: typings.ow.weakSetMod.WeakSetPredicate[js.Object] = js.native
+    
     def any(predicate: BasePredicate[_]*): typings.ow.anyMod.AnyPredicate[_] = js.native
     /**
       Test that the value matches at least one of the given predicates.
@@ -294,6 +181,176 @@ object predicatesMod extends js.Object {
       p9: BasePredicate[T9],
       p10: BasePredicate[T10]
     ): typings.ow.anyMod.AnyPredicate[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = js.native
+    
+    /**
+      Test the value to be an array.
+      */
+    val array: typings.ow.arrayMod.ArrayPredicate[_] = js.native
+    
+    /**
+      Test the value to be a ArrayBuffer.
+      */
+    val arrayBuffer: typings.ow.arrayBufferMod.ArrayBufferPredicate[ArrayBuffer] = js.native
+    
+    /**
+      Test the value to be a boolean.
+      */
+    val boolean: typings.ow.booleanMod.BooleanPredicate = js.native
+    
+    /**
+      Test the value to be a Buffer.
+      */
+    val buffer: Predicate[Buffer] = js.native
+    
+    /**
+      Test the value to be a DataView.
+      */
+    val dataView: typings.ow.dataViewMod.DataViewPredicate = js.native
+    
+    /**
+      Test the value to be a Date.
+      */
+    val date: typings.ow.dateMod.DatePredicate = js.native
+    
+    /**
+      Test the value to be an Error.
+      */
+    val error: typings.ow.errorMod.ErrorPredicate = js.native
+    
+    /**
+      Test the value to be a Float32Array.
+      */
+    val float32Array: typings.ow.typedArrayMod.TypedArrayPredicate[Float32Array] = js.native
+    
+    /**
+      Test the value to be a Float64Array.
+      */
+    val float64Array: typings.ow.typedArrayMod.TypedArrayPredicate[Float64Array] = js.native
+    
+    /**
+      Test the value to be a Function.
+      */
+    val function: Predicate[js.Function] = js.native
+    
+    /**
+      Test the value to be a Int16Array.
+      */
+    val int16Array: typings.ow.typedArrayMod.TypedArrayPredicate[Int16Array] = js.native
+    
+    /**
+      Test the value to be a Int32Array.
+      */
+    val int32Array: typings.ow.typedArrayMod.TypedArrayPredicate[Int32Array] = js.native
+    
+    /**
+      Test the value to be a Int8Array.
+      */
+    val int8Array: typings.ow.typedArrayMod.TypedArrayPredicate[Int8Array] = js.native
+    
+    /**
+      Test the value to be Iterable.
+      */
+    val iterable: Predicate[Iterable[_]] = js.native
+    
+    /**
+      Test the value to be a Map.
+      */
+    val map: typings.ow.mapMod.MapPredicate[_, _] = js.native
+    
+    /**
+      Test the value to be not a number.
+      */
+    val nan: Predicate[Double] = js.native
+    
+    /**
+      Test the value to be null.
+      */
+    val `null`: Predicate[Null] = js.native
+    
+    /**
+      Test the value to be null or undefined.
+      */
+    val nullOrUndefined: Predicate[js.UndefOr[Null]] = js.native
+    
+    /**
+      Test the value to be a number.
+      */
+    val number: typings.ow.numberMod.NumberPredicate = js.native
+    
+    /**
+      Test the value to be an object.
+      */
+    val `object`: typings.ow.objectMod.ObjectPredicate = js.native
+    
+    /**
+      Test the value to be a Promise.
+      */
+    val promise: Predicate[js.Promise[_]] = js.native
+    
+    /**
+      Test the value to be a RegExp.
+      */
+    val regExp: Predicate[RegExp] = js.native
+    
+    /**
+      Test the value to be a Set.
+      */
+    val set: typings.ow.setMod.SetPredicate[_] = js.native
+    
+    /**
+      Test the value to be a SharedArrayBuffer.
+      */
+    val sharedArrayBuffer: typings.ow.arrayBufferMod.ArrayBufferPredicate[SharedArrayBuffer] = js.native
+    
+    /**
+      Test the value to be a string.
+      */
+    val string: typings.ow.stringMod.StringPredicate = js.native
+    
+    /**
+      Test the value to be a Symbol.
+      */
+    val symbol: Predicate[js.Symbol] = js.native
+    
+    /**
+      Test the value to be a typed array.
+      */
+    val typedArray: typings.ow.typedArrayMod.TypedArrayPredicate[TypedArray] = js.native
+    
+    /**
+      Test the value to be a Uint16Array.
+      */
+    val uint16Array: typings.ow.typedArrayMod.TypedArrayPredicate[Uint16Array] = js.native
+    
+    /**
+      Test the value to be a Uint32Array.
+      */
+    val uint32Array: typings.ow.typedArrayMod.TypedArrayPredicate[Uint32Array] = js.native
+    
+    /**
+      Test the value to be a Uint8Array.
+      */
+    val uint8Array: typings.ow.typedArrayMod.TypedArrayPredicate[Uint8Array] = js.native
+    
+    /**
+      Test the value to be a Uint8ClampedArray.
+      */
+    val uint8ClampedArray: typings.ow.typedArrayMod.TypedArrayPredicate[Uint8ClampedArray] = js.native
+    
+    /**
+      Test the value to be undefined.
+      */
+    val undefined: Predicate[js.UndefOr[scala.Nothing]] = js.native
+    
+    /**
+      Test the value to be a WeakMap.
+      */
+    val weakMap: typings.ow.weakMapMod.WeakMapPredicate[js.Object] = js.native
+    
+    /**
+      Test the value to be a WeakSet.
+      */
+    val weakSet: typings.ow.weakSetMod.WeakSetPredicate[js.Object] = js.native
   }
   
   @js.native
@@ -315,6 +372,10 @@ object predicatesMod extends js.Object {
   }
   
   @js.native
+  class TypedArrayPredicate[T /* <: TypedArray */] ()
+    extends typings.ow.typedArrayMod.TypedArrayPredicate[T]
+  
+  @js.native
   /**
     @hidden
     */
@@ -331,8 +392,4 @@ object predicatesMod extends js.Object {
     extends typings.ow.weakSetMod.WeakSetPredicate[T] {
     def this(options: PredicateOptions) = this()
   }
-  
-  def default[T](`object`: T): T with Predicates = js.native
-  def default[T](`object`: T, options: PredicateOptions): T with Predicates = js.native
 }
-

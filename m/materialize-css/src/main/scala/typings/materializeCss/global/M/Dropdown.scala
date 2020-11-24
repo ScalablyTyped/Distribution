@@ -4,21 +4,22 @@ import typings.materializeCss.anon.PartialDropdownOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("M.Dropdown")
 @js.native
 class Dropdown ()
   extends typings.materializeCss.M.Dropdown
-
 /* static members */
 @JSGlobal("M.Dropdown")
 @js.native
 object Dropdown extends js.Object {
+  
   /**
     * Get Instance
     */
   def getInstance(elem: Element): typings.materializeCss.M.Dropdown = js.native
+  
   /**
     * Init Dropdowns
     */
@@ -35,4 +36,3 @@ object Dropdown extends js.Object {
   def init(els: Element): typings.materializeCss.M.Dropdown = js.native
   def init(els: Element, options: PartialDropdownOptions): typings.materializeCss.M.Dropdown = js.native
 }
-

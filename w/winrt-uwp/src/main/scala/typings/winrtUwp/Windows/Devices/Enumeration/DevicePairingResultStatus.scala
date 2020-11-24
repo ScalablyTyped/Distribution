@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Enumeration
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DevicePairingResultStatus extends js.Object
-
 /** The result of the pairing action with an Association Endpoint (AEP) device object. For more information about AEP objects, see DeviceInformationKind . */
 @JSGlobal("Windows.Devices.Enumeration.DevicePairingResultStatus")
 @js.native
 object DevicePairingResultStatus extends js.Object {
+  
   /** Your application does not have the appropriate permissions level to pair the device object. */
   @js.native
   sealed trait accessDenied extends DevicePairingResultStatus
@@ -90,6 +90,4 @@ object DevicePairingResultStatus extends js.Object {
   /** The device object indicated it cannot accept any more incoming connections. */
   @js.native
   sealed trait tooManyConnections extends DevicePairingResultStatus
-  
 }
-

@@ -2,9 +2,10 @@ package typings.hyphen
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /**
     * Asynchronous hyphenation function returning a promise for the hyphenated text.
     * @param text The text to be hyphenated.
@@ -16,6 +17,7 @@ package object mod {
     /* options */ js.UndefOr[typings.hyphen.anon.ReadonlyHyphenationOption], 
     js.Promise[java.lang.String]
   ]
+  
   /**
     * Synchronous hyphenation function returning the hyphenated text immediately.
     * @param text The text to be hyphenated.

@@ -2,7 +2,7 @@ package typings.officeJsPreview.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `CustomProperties` object represents custom properties that are specific to a particular item and specific to a mail add-in for Outlook.
@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CustomProperties extends js.Object {
+  
   /**
     * Returns the value of the specified custom property.
     *
@@ -34,6 +35,7 @@ trait CustomProperties extends js.Object {
     * @param name - The name of the custom property to be returned.
     */
   def get(name: String): js.Any = js.native
+  
   /**
     * Returns an object with all custom properties in a collection of name/value pairs. The following are equivalent.
     *
@@ -43,7 +45,7 @@ trait CustomProperties extends js.Object {
     *
     * You can iterate through the dictionary object to discover all `names` and `values`.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.9]
     *
     * @returns An object with all custom properties in a collection of name/value pairs.
     *
@@ -52,10 +54,9 @@ trait CustomProperties extends js.Object {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-    *
-    * @beta
     */
   def getAll(): js.Any = js.native
+  
   /**
     * Removes the specified property from the custom property collection.
     *
@@ -70,6 +71,7 @@ trait CustomProperties extends js.Object {
     * @param name - The `name` of the property to be removed.
     */
   def remove(name: String): Unit = js.native
+  
   /**
     * Saves item-specific custom properties to the server.
     *
@@ -96,6 +98,7 @@ trait CustomProperties extends js.Object {
   def saveAsync(callback: js.UndefOr[scala.Nothing], asyncContext: js.Any): Unit = js.native
   def saveAsync(callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def saveAsync(callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit], asyncContext: js.Any): Unit = js.native
+  
   /**
     * Sets the specified property to the specified value.
     *
@@ -116,4 +119,3 @@ trait CustomProperties extends js.Object {
     */
   def set(name: String, value: String): Unit = js.native
 }
-

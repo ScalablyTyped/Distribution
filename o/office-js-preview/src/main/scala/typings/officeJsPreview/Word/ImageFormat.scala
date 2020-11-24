@@ -2,17 +2,17 @@ package typings.officeJsPreview.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ImageFormat extends js.Object
-
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.ImageFormat")
 @js.native
 object ImageFormat extends js.Object {
+  
   @js.native
   sealed trait bmp extends ImageFormat
   
@@ -54,6 +54,4 @@ object ImageFormat extends js.Object {
   
   @js.native
   sealed trait wmf extends ImageFormat
-  
 }
-

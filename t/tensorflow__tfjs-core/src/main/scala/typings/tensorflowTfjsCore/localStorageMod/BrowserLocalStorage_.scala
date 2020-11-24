@@ -6,15 +6,17 @@ import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsCore.typesMod.SaveResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core/dist/io/local_storage", "BrowserLocalStorage")
 @js.native
 class BrowserLocalStorage_ protected () extends IOHandler {
   def this(modelPath: String) = this()
+  
   val LS: Storage = js.native
+  
   val keys: LocalStorageKeys = js.native
-  val modelPath: String = js.native
+  
   /**
     * Load a model from local storage.
     *
@@ -25,6 +27,9 @@ class BrowserLocalStorage_ protected () extends IOHandler {
     */
   @JSName("load")
   def load_MBrowserLocalStorage_(): js.Promise[ModelArtifacts] = js.native
+  
+  val modelPath: String = js.native
+  
   /**
     * Save model artifacts to browser local storage.
     *
@@ -37,11 +42,10 @@ class BrowserLocalStorage_ protected () extends IOHandler {
   @JSName("save")
   def save_MBrowserLocalStorage_(modelArtifacts: ModelArtifacts): js.Promise[SaveResult] = js.native
 }
-
 /* static members */
 @JSImport("@tensorflow/tfjs-core/dist/io/local_storage", "BrowserLocalStorage")
 @js.native
 object BrowserLocalStorage_ extends js.Object {
+  
   val URL_SCHEME: /* "localstorage://" */ String = js.native
 }
-

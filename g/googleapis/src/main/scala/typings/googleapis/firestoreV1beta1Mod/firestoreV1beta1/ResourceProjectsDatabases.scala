@@ -6,15 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firestore/v1beta1", "firestore_v1beta1.Resource$Projects$Databases")
 @js.native
 class ResourceProjectsDatabases protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   var documents: ResourceProjectsDatabasesDocuments = js.native
-  var indexes: ResourceProjectsDatabasesIndexes = js.native
+  
   /**
     * firestore.projects.databases.exportDocuments
     * @desc Exports a copy of all or a subset of documents from Google Cloud
@@ -54,6 +56,7 @@ class ResourceProjectsDatabases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.importDocuments
     * @desc Imports documents into Google Cloud Firestore. Existing documents
@@ -91,5 +94,6 @@ class ResourceProjectsDatabases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
+  var indexes: ResourceProjectsDatabasesIndexes = js.native
 }
-

@@ -2,15 +2,17 @@ package typings.reReselect.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("re-reselect", "createCachedSelector")
 @js.native
 object createCachedSelector extends js.Object {
+  
   /*
-    * Any number of uniform selectors
+    * Homogeneous selectors, array argument
     */
-  def apply[S, R, T](selectors: js.Array[Selector[S, R]], combiner: js.Function1[/* repeated */ R, T]): OutputCachedSelector[S, T, js.Function1[/* repeated */ R, T], js.Array[Selector[S, R]]] = js.native
+  /* one selector */
+  def apply[S, R1, T](selectors: js.Array[Selector[S, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = js.native
   /*
     * Heterogeneous selectors, parameter types
     */
@@ -1189,4 +1191,3 @@ object createCachedSelector extends js.Object {
     ]
   ] = js.native
 }
-

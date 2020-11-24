@@ -2,14 +2,14 @@ package typings.sharepoint.SP.JsGrid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UpdateSerializeMode extends js.Object
-
 @JSGlobal("SP.JsGrid.UpdateSerializeMode")
 @js.native
 object UpdateSerializeMode extends js.Object {
+  
    // 0,
   @js.native
   sealed trait Cancel extends UpdateSerializeMode
@@ -28,6 +28,4 @@ object UpdateSerializeMode extends js.Object {
    // 3,
   @js.native
   sealed trait PropLocalizedOnly extends UpdateSerializeMode
-  
 }
-

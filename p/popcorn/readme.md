@@ -12,7 +12,7 @@ Pop up made easy
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 342 |
+| # downloads        | 261 |
 | # stars            | 1 |
 
 ## Links

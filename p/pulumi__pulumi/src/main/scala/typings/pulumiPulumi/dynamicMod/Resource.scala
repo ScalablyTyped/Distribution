@@ -5,7 +5,7 @@ import typings.pulumiPulumi.resourceMod.CustomResource
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/pulumi/dynamic", "Resource")
 @js.native
@@ -22,4 +22,3 @@ abstract class Resource protected () extends CustomResource {
   def this(provider: ResourceProvider, name: String, props: Inputs) = this()
   def this(provider: ResourceProvider, name: String, props: Inputs, opts: CustomResourceOptions) = this()
 }
-

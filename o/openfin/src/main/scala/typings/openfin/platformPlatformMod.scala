@@ -17,17 +17,22 @@ import typings.openfin.viewViewMod.ViewCreationOptions
 import typings.openfin.windowWindowMod.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openfin/_v2/api/platform/platform", JSImport.Namespace)
 @js.native
 object platformPlatformMod extends js.Object {
+  
   @js.native
   class Platform protected () extends EmitterBase[PlatformEvents] {
     def this(identity: Identity, channel: Channel) = this()
+    
     var Application: typings.openfin.applicationMod.Application = js.native
+    
     var Layout: typings.openfin.layoutMod.default = js.native
+    
     var _channel: js.Any = js.native
+    
     def applySnapshot(requestedSnapshot: String): js.Promise[Platform] = js.native
     def applySnapshot(requestedSnapshot: String, options: ApplySnapshotOptions): js.Promise[Platform] = js.native
     /**
@@ -44,6 +49,7 @@ object platformPlatformMod extends js.Object {
       */
     def applySnapshot(requestedSnapshot: Snapshot): js.Promise[Platform] = js.native
     def applySnapshot(requestedSnapshot: Snapshot, options: ApplySnapshotOptions): js.Promise[Platform] = js.native
+    
     /**
       * Closes a specified view in a target window.
       * @param { Identity } viewIdentity View identity
@@ -51,6 +57,7 @@ object platformPlatformMod extends js.Object {
       * @tutorial Platform.closeView
       */
     def closeView(viewIdentity: Identity): js.Promise[Unit] = js.native
+    
     /**
       * Creates a new view and attaches it to a specified target window.
       * @param { View~options } viewOptions View creation options
@@ -60,6 +67,7 @@ object platformPlatformMod extends js.Object {
       */
     def createView(viewOptions: ViewCreationOptions): js.Promise[View] = js.native
     def createView(viewOptions: ViewCreationOptions, target: Identity): js.Promise[View] = js.native
+    
     /**
       * Creates a new Window.
       * @param { Window~options } options Window creation options
@@ -67,8 +75,10 @@ object platformPlatformMod extends js.Object {
       * @tutorial Platform.createWindow
       */
     def createWindow(options: PlatformWindowCreationOptions): js.Promise[Window with Identity] = js.native
+    
     def getClient(): js.Promise[ChannelClient] = js.native
     def getClient(identity: Identity): js.Promise[ChannelClient] = js.native
+    
     /**
       * Returns a snapshot of the platform in its current state.
       *
@@ -77,6 +87,7 @@ object platformPlatformMod extends js.Object {
       * @tutorial Platform.getSnapshot
       */
     def getSnapshot(): js.Promise[Snapshot] = js.native
+    
     /**
       * Get the context context of a host window that was previously set using {@link Platform#setWindowContext setWindowContext}.
       * The context will be saved in any platform snapshots.  Returns a promise that resolves to the context.
@@ -88,6 +99,7 @@ object platformPlatformMod extends js.Object {
       */
     def getWindowContext(): js.Promise[_] = js.native
     def getWindowContext(target: Identity): js.Promise[_] = js.native
+    
     /**
       * Retrieves a manifest by url and launches a legacy application manifest or snapshot into the platform.  Returns a promise that
       * resolves to the wrapped Platform.
@@ -99,13 +111,16 @@ object platformPlatformMod extends js.Object {
       * @experimental
       */
     def launchContentManifest(manifestUrl: String): js.Promise[Platform] = js.native
+    
     def launchLegacyManifest(manifestUrl: String): js.Promise[Platform] = js.native
+    
     /**
       * Closes current platform, all its windows, and their views.
       * @return { Promise<void> }
       * @tutorial Platform.quit
       */
     def quit(): js.Promise[Unit] = js.native
+    
     /**
       * Reparents a specified view in a new target window.
       * @param { Identity } viewIdentity View identity
@@ -114,6 +129,7 @@ object platformPlatformMod extends js.Object {
       * @tutorial Platform.reparentView
       */
     def reparentView(viewIdentity: Identity, target: Identity): js.Promise[View] = js.native
+    
     /**
       * Set the context of a host window. The context will be available to the window itself, and to its child Views. It will be saved in any platform snapshots.
       * It can be retrieved using {@link Platform#getWindowContext getWindowContext}.
@@ -132,9 +148,13 @@ object platformPlatformMod extends js.Object {
   
   @js.native
   trait PlatformModule extends Base {
+    
     var Layout: typings.openfin.layoutMod.default = js.native
+    
     var _channel: js.Any = js.native
+    
     var _initializer: js.Any = js.native
+    
     /**
       * Asynchronously returns a Platform object that represents the current platform.
       * @return {Promise.<Platform>}
@@ -142,6 +162,7 @@ object platformPlatformMod extends js.Object {
       * @static
       */
     def getCurrent(): js.Promise[Platform] = js.native
+    
     /**
       * Synchronously returns a Platform object that represents the current platform.
       * @return {Platform}
@@ -149,6 +170,7 @@ object platformPlatformMod extends js.Object {
       * @static
       */
     def getCurrentSync(): Platform = js.native
+    
     /**
       * Initializes a Platform. Must be called from the Provider when using a custom provider.
       * @param { InitPlatformOptions } [options] - platform options including a callback function that can be used to extend or replace
@@ -160,6 +182,7 @@ object platformPlatformMod extends js.Object {
       */
     def init(): js.Promise[_] = js.native
     def init(options: InitPlatformOptions): js.Promise[_] = js.native
+    
     /**
       * Creates and starts a Platform and returns a wrapped and running Platform instance. The wrapped Platform methods can
       * be used to launch content into the platform.  Promise will reject if the platform is already running.
@@ -169,6 +192,7 @@ object platformPlatformMod extends js.Object {
       * @static
       */
     def start(platformOptions: PlatformOptions): js.Promise[Platform] = js.native
+    
     /**
       * Retrieves platforms's manifest and returns a wrapped and running Platform.  If there is a snapshot in the manifest,
       * it will be launched into the platform.
@@ -180,6 +204,7 @@ object platformPlatformMod extends js.Object {
       */
     def startFromManifest(manifestUrl: String): js.Promise[Platform] = js.native
     def startFromManifest(manifestUrl: String, opts: RvmLaunchOptions): js.Promise[Platform] = js.native
+    
     /**
       * Asynchronously returns a Platform object that represents an existing platform.
       * @param { Identity } identity
@@ -188,6 +213,7 @@ object platformPlatformMod extends js.Object {
       * @static
       */
     def wrap(identity: Identity): js.Promise[Platform] = js.native
+    
     /**
       * Synchronously returns a Platform object that represents an existing platform.
       * @param { Identity } identity
@@ -202,6 +228,4 @@ object platformPlatformMod extends js.Object {
   class default protected () extends PlatformModule {
     def this(wire: typings.openfin.transportMod.default, channel: Channel) = this()
   }
-  
 }
-

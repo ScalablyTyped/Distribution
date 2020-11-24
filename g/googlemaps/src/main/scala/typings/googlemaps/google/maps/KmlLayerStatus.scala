@@ -2,14 +2,14 @@ package typings.googlemaps.google.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait KmlLayerStatus extends js.Object
-
 @JSGlobal("google.maps.KmlLayerStatus")
 @js.native
 object KmlLayerStatus extends js.Object {
+  
   @js.native
   sealed trait DOCUMENT_NOT_FOUND extends KmlLayerStatus
   
@@ -36,6 +36,4 @@ object KmlLayerStatus extends js.Object {
   
   @js.native
   sealed trait UNKNOWN extends KmlLayerStatus
-  
 }
-

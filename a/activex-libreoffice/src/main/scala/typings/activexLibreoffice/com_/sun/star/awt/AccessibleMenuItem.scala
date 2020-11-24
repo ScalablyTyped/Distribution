@@ -20,7 +20,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies accessibility support for a menu item.
@@ -34,8 +34,8 @@ trait AccessibleMenuItem
      with XAccessibleText
      with XAccessibleAction
      with XAccessibleValue
-
 object AccessibleMenuItem {
+  
   @scala.inline
   def apply(
     AccessibleActionCount: Double,
@@ -123,4 +123,3 @@ object AccessibleMenuItem {
     __obj.asInstanceOf[AccessibleMenuItem]
   }
 }
-

@@ -3,13 +3,14 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 import typings.ibmCloudSdkCore.mod.BaseService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IBM Watson&trade; Compare and Comply analyzes governing documents to provide details about critical aspects of the documents.
   */
 @js.native
 trait CompareComplyV1 extends BaseService {
+  
   /*************************
     * feedback
     ************************/
@@ -30,6 +31,7 @@ trait CompareComplyV1 extends BaseService {
     */
   def addFeedback(params: AddFeedbackParams): js.Promise[_] | Unit = js.native
   def addFeedback(params: AddFeedbackParams, callback: Callback[FeedbackReturn]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * elementClassification
     ************************/
@@ -51,6 +53,7 @@ trait CompareComplyV1 extends BaseService {
     */
   def classifyElements(params: ClassifyElementsParams): js.Promise[_] | Unit = js.native
   def classifyElements(params: ClassifyElementsParams, callback: Callback[ClassifyReturn]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * comparison
     ************************/
@@ -76,6 +79,7 @@ trait CompareComplyV1 extends BaseService {
     */
   def compareDocuments(params: CompareDocumentsParams): js.Promise[_] | Unit = js.native
   def compareDocuments(params: CompareDocumentsParams, callback: Callback[CompareReturn]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * hTMLConversion
     ************************/
@@ -98,6 +102,7 @@ trait CompareComplyV1 extends BaseService {
     */
   def convertToHtml(params: ConvertToHtmlParams): js.Promise[_] | Unit = js.native
   def convertToHtml(params: ConvertToHtmlParams, callback: Callback[HTMLReturn]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * batches
     ************************/
@@ -136,6 +141,7 @@ trait CompareComplyV1 extends BaseService {
     */
   def createBatch(params: CreateBatchParams): js.Promise[_] | Unit = js.native
   def createBatch(params: CreateBatchParams, callback: Callback[BatchStatus]): js.Promise[_] | Unit = js.native
+  
   /**
     * Delete a specified feedback entry.
     *
@@ -153,6 +159,7 @@ trait CompareComplyV1 extends BaseService {
     */
   def deleteFeedback(params: DeleteFeedbackParams): js.Promise[_] | Unit = js.native
   def deleteFeedback(params: DeleteFeedbackParams, callback: Callback[FeedbackDeleted]): js.Promise[_] | Unit = js.native
+  
   /*************************
     * tables
     ************************/
@@ -174,6 +181,7 @@ trait CompareComplyV1 extends BaseService {
     */
   def extractTables(params: ExtractTablesParams): js.Promise[_] | Unit = js.native
   def extractTables(params: ExtractTablesParams, callback: Callback[TableReturn]): js.Promise[_] | Unit = js.native
+  
   /**
     * Get information about a specific batch-processing job.
     *
@@ -187,6 +195,7 @@ trait CompareComplyV1 extends BaseService {
     */
   def getBatch(params: GetBatchParams): js.Promise[_] | Unit = js.native
   def getBatch(params: GetBatchParams, callback: Callback[BatchStatus]): js.Promise[_] | Unit = js.native
+  
   /**
     * List a specified feedback entry.
     *
@@ -204,6 +213,7 @@ trait CompareComplyV1 extends BaseService {
     */
   def getFeedback(params: GetFeedbackParams): js.Promise[_] | Unit = js.native
   def getFeedback(params: GetFeedbackParams, callback: Callback[GetFeedback]): js.Promise[_] | Unit = js.native
+  
   /**
     * List submitted batch-processing jobs.
     *
@@ -218,6 +228,7 @@ trait CompareComplyV1 extends BaseService {
   def listBatches(params: js.UndefOr[scala.Nothing], callback: Callback[Batches]): js.Promise[_] | Unit = js.native
   def listBatches(params: ListBatchesParams): js.Promise[_] | Unit = js.native
   def listBatches(params: ListBatchesParams, callback: Callback[Batches]): js.Promise[_] | Unit = js.native
+  
   /**
     * List the feedback in a document.
     *
@@ -271,6 +282,7 @@ trait CompareComplyV1 extends BaseService {
   def listFeedback(params: js.UndefOr[scala.Nothing], callback: Callback[FeedbackList]): js.Promise[_] | Unit = js.native
   def listFeedback(params: ListFeedbackParams): js.Promise[_] | Unit = js.native
   def listFeedback(params: ListFeedbackParams, callback: Callback[FeedbackList]): js.Promise[_] | Unit = js.native
+  
   /**
     * Update a pending or active batch-processing job.
     *
@@ -291,4 +303,3 @@ trait CompareComplyV1 extends BaseService {
   def updateBatch(params: UpdateBatchParams): js.Promise[_] | Unit = js.native
   def updateBatch(params: UpdateBatchParams, callback: Callback[BatchStatus]): js.Promise[_] | Unit = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.acornWalk.mod
 import typings.acorn.mod.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("acorn-walk", "fullAncestor")
 @js.native
 object fullAncestor extends js.Object {
+  
   def apply[TState](node: Node, callback: FullAncestorWalkerCallback[TState]): Unit = js.native
   def apply[TState](
     node: Node,
@@ -23,4 +24,3 @@ object fullAncestor extends js.Object {
     state: TState
   ): Unit = js.native
 }
-

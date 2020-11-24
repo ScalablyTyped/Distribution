@@ -2,7 +2,7 @@ package typings.hashmap.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hashmap", JSImport.Namespace)
 @js.native
@@ -24,4 +24,3 @@ class ^[TKey, TValue] () extends HashMap[TKey, TValue] {
     */
   def this(keysAndValues: (TKey | TValue)*) = this()
 }
-

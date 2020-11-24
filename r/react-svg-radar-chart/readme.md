@@ -10,9 +10,9 @@ A reusable radar chart in SVG.
 | ------------------ | :-------------: |
 | Full name          | react-svg-radar-chart |
 | Keywords           | svg, radar, chart, data, visualization, react |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 13291 |
+| # downloads        | 14598 |
 | # stars            | 0 |
 
 ## Links

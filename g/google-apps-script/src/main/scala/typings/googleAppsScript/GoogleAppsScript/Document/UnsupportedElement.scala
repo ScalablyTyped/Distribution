@@ -2,7 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An element representing a region that is unknown or cannot be affected by a script, such as a
@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait UnsupportedElement extends Element
-
 object UnsupportedElement {
+  
   @scala.inline
   def apply(
     asBody: () => Body,
@@ -49,4 +49,3 @@ object UnsupportedElement {
     __obj.asInstanceOf[UnsupportedElement]
   }
 }
-

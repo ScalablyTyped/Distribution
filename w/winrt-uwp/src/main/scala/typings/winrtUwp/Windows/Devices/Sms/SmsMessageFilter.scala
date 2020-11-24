@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Devices.Sms
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SmsMessageFilter extends js.Object
-
 /** This enumerated type specifies which messages in the device message store an operation is performed on. */
 @JSGlobal("Windows.Devices.Sms.SmsMessageFilter")
 @js.native
 object SmsMessageFilter extends js.Object {
+  
   /** All messages in the device message store. */
   @js.native
   sealed trait all extends SmsMessageFilter
@@ -30,6 +30,4 @@ object SmsMessageFilter extends js.Object {
   /** All unread received messages. */
   @js.native
   sealed trait unread extends SmsMessageFilter
-  
 }
-

@@ -3,11 +3,12 @@ package typings.phaser.global.Phaser.Math
 import typings.phaser.Phaser.Types.Math.Vector2Like
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Math.Angle")
 @js.native
 object Angle extends js.Object {
+  
   /**
     * Find the angle of a segment from (x1, y1) -> (x2, y2).
     * @param x1 The x coordinate of the first point.
@@ -16,6 +17,7 @@ object Angle extends js.Object {
     * @param y2 The y coordinate of the second point.
     */
   def Between(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+  
   /**
     * Find the angle of a segment from (point1.x, point1.y) -> (point2.x, point2.y).
     * 
@@ -24,6 +26,7 @@ object Angle extends js.Object {
     * @param point2 The second point.
     */
   def BetweenPoints(point1: Vector2Like, point2: Vector2Like): Double = js.native
+  
   /**
     * Find the angle of a segment from (point1.x, point1.y) -> (point2.x, point2.y).
     * 
@@ -33,6 +36,7 @@ object Angle extends js.Object {
     * @param point2 The second point.
     */
   def BetweenPointsY(point1: Vector2Like, point2: Vector2Like): Double = js.native
+  
   /**
     * Find the angle of a segment from (x1, y1) -> (x2, y2).
     * 
@@ -44,6 +48,7 @@ object Angle extends js.Object {
     * @param y2 The y coordinate of the second point.
     */
   def BetweenY(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+  
   /**
     * Takes an angle in Phasers default clockwise format and converts it so that
     * 0 is North, 90 is West, 180 is South and 270 is East,
@@ -59,24 +64,29 @@ object Angle extends js.Object {
     * @param angle The angle to convert, in radians.
     */
   def CounterClockwise(angle: Double): Double = js.native
+  
   /**
     * Normalize an angle to the [0, 2pi] range.
     * @param angle The angle to normalize, in radians.
     */
   def Normalize(angle: Double): Double = js.native
+  
   /**
     * Returns a random angle in the range [-pi, pi].
     */
   def Random(): Double = js.native
+  
   /**
     * Returns a random angle in the range [-180, 180].
     */
   def RandomDegrees(): Double = js.native
+  
   /**
     * Reverse the given angle.
     * @param angle The angle to reverse, in radians.
     */
   def Reverse(angle: Double): Double = js.native
+  
   /**
     * Rotates `currentAngle` towards `targetAngle`, taking the shortest rotation distance. The `lerp` argument is the amount to rotate by in this call.
     * @param currentAngle The current angle, in radians.
@@ -85,6 +95,7 @@ object Angle extends js.Object {
     */
   def RotateTo(currentAngle: Double, targetAngle: Double): Double = js.native
   def RotateTo(currentAngle: Double, targetAngle: Double, lerp: Double): Double = js.native
+  
   /**
     * Gets the shortest angle between `angle1` and `angle2`.
     * 
@@ -101,6 +112,7 @@ object Angle extends js.Object {
     * @param angle2 The second angle in the range -180 to 180.
     */
   def ShortestBetween(angle1: Double, angle2: Double): Double = js.native
+  
   /**
     * Wrap an angle.
     * 
@@ -108,6 +120,7 @@ object Angle extends js.Object {
     * @param angle The angle to wrap, in radians.
     */
   def Wrap(angle: Double): Double = js.native
+  
   /**
     * Wrap an angle in degrees.
     * 
@@ -116,4 +129,3 @@ object Angle extends js.Object {
     */
   def WrapDegrees(angle: Double): Double = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudiot/v1", "cloudiot_v1.Resource$Projects$Locations$Registries$Devices$States")
 @js.native
 class ResourceProjectsLocationsRegistriesDevicesStates protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * cloudiot.projects.locations.registries.devices.states.list
     * @desc Lists the last few versions of the device state in descending order
@@ -47,4 +49,3 @@ class ResourceProjectsLocationsRegistriesDevicesStates protected () extends js.O
     callback: BodyResponseCallback[SchemaListDeviceStatesResponse]
   ): Unit = js.native
 }
-

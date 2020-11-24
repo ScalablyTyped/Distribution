@@ -5,7 +5,7 @@ import typings.ol.olImageMod.LoadFunction
 import typings.ol.olImageMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol", "Image")
 @js.native
@@ -27,4 +27,3 @@ class Image protected () extends default {
     imageLoadFunction: LoadFunction
   ) = this()
 }
-

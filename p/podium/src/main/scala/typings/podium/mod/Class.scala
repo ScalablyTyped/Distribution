@@ -2,7 +2,7 @@ package typings.podium.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("podium", JSImport.Namespace)
 @js.native
@@ -14,4 +14,3 @@ class Class () extends Podium {
   def this(events: js.Array[Events]) = this()
   def this(events: Events) = this()
 }
-

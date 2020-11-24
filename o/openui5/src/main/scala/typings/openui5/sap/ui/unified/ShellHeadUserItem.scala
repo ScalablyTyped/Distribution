@@ -4,10 +4,11 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ShellHeadUserItem extends Element {
+  
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @param vAriaLabelledBy the ariaLabelledBy to add; if empty, nothing is inserted
@@ -15,6 +16,7 @@ trait ShellHeadUserItem extends Element {
     */
   def addAriaLabelledBy(vAriaLabelledBy: js.Any): ShellHeadUserItem = js.native
   def addAriaLabelledBy(vAriaLabelledBy: Control): ShellHeadUserItem = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>press</code> event of this
     * <code>sap.ui.unified.ShellHeadUserItem</code>.When called, the context of the event handler (its
@@ -30,6 +32,7 @@ trait ShellHeadUserItem extends Element {
     */
   def attachPress(oData: js.Any, fnFunction: js.Any): ShellHeadUserItem = js.native
   def attachPress(oData: js.Any, fnFunction: js.Any, oListener: js.Any): ShellHeadUserItem = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>press</code> event of this
     * <code>sap.ui.unified.ShellHeadUserItem</code>.The passed function and listener object must match the
@@ -39,23 +42,27 @@ trait ShellHeadUserItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachPress(fnFunction: js.Any, oListener: js.Any): ShellHeadUserItem = js.native
+  
   /**
     * Fires event <code>press</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def firePress(mArguments: js.Any): ShellHeadUserItem = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     */
   def getAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Gets current value of property <code>image</code>.An image of the user, normally an URI to a image
     * but also an icon from the sap.ui.core.IconPool is possible.
     * @returns Value of property <code>image</code>
     */
   def getImage(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>showPopupIndicator</code>.The user item is intended to be used
     * for user settings. Normally these settings are done via a Menu or Dialog.If this property is set to
@@ -65,17 +72,20 @@ trait ShellHeadUserItem extends Element {
     * @returns Value of property <code>showPopupIndicator</code>
     */
   def getShowPopupIndicator(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>username</code>.The name of the user.Default value is
     * <code></code>.
     * @returns Value of property <code>username</code>
     */
   def getUsername(): String = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaLabelledBy from the association named <code>ariaLabelledBy</code>.
@@ -84,6 +94,7 @@ trait ShellHeadUserItem extends Element {
     */
   def removeAriaLabelledBy(vAriaLabelledBy: Double): js.Any = js.native
   def removeAriaLabelledBy(vAriaLabelledBy: Control): js.Any = js.native
+  
   /**
     * Sets a new value for property <code>image</code>.An image of the user, normally an URI to a image
     * but also an icon from the sap.ui.core.IconPool is possible.When called with a value of
@@ -92,6 +103,7 @@ trait ShellHeadUserItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setImage(sImage: js.Any): ShellHeadUserItem = js.native
+  
   /**
     * Sets a new value for property <code>showPopupIndicator</code>.The user item is intended to be used
     * for user settings. Normally these settings are done via a Menu or Dialog.If this property is set to
@@ -103,6 +115,7 @@ trait ShellHeadUserItem extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowPopupIndicator(bShowPopupIndicator: Boolean): ShellHeadUserItem = js.native
+  
   /**
     * Sets a new value for property <code>username</code>.The name of the user.When called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -112,4 +125,3 @@ trait ShellHeadUserItem extends Element {
     */
   def setUsername(sUsername: String): ShellHeadUserItem = js.native
 }
-

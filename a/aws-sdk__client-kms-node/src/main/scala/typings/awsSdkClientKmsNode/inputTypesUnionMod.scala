@@ -2,11 +2,12 @@ package typings.awsSdkClientKmsNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kms-node/types/InputTypesUnion", JSImport.Namespace)
 @js.native
 object inputTypesUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientKmsNode.typesCancelKeyDeletionInputMod.CancelKeyDeletionInput
     - typings.awsSdkClientKmsNode.typesCreateAliasInputMod.CreateAliasInput
@@ -45,6 +46,4 @@ object inputTypesUnionMod extends js.Object {
     - typings.awsSdkClientKmsNode.typesUpdateKeyDescriptionInputMod.UpdateKeyDescriptionInput
   */
   trait InputTypesUnion extends js.Object
-  
 }
-

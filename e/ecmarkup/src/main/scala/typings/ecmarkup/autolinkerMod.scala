@@ -8,12 +8,14 @@ import typings.std.RegExp
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ecmarkup/lib/autolinker", JSImport.Namespace)
 @js.native
 object autolinkerMod extends js.Object {
+  
   val NO_CLAUSE_AUTOLINK: Set[String] = js.native
+  
   def autolink(
     node: Node,
     replacer: RegExp,
@@ -46,10 +48,11 @@ object autolinkerMod extends js.Object {
     currentId: Null,
     allowSameId: Boolean
   ): Unit = js.native
+  
   def replacerForNamespace(
     namespace: String,
     biblio: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Biblio */ js.Any
   ): js.Tuple2[RegExp, AutoLinkMap] = js.native
+  
   type AutoLinkMap = StringDictionary[BiblioEntry]
 }
-

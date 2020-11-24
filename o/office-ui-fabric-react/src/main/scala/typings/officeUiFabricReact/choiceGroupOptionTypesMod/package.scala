@@ -2,9 +2,10 @@ package typings.officeUiFabricReact
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object choiceGroupOptionTypesMod {
+  
   type OnChangeCallback = js.UndefOr[
     js.Function2[
       /* evt */ js.UndefOr[
@@ -14,6 +15,7 @@ package object choiceGroupOptionTypesMod {
       scala.Unit
     ]
   ]
+  
   type OnFocusCallback = js.UndefOr[
     js.Function2[
       /* ev */ js.UndefOr[

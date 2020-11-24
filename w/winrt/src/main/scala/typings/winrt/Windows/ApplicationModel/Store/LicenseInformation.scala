@@ -4,12 +4,12 @@ import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LicenseInformation extends ILicenseInformation
-
 object LicenseInformation {
+  
   @scala.inline
   def apply(
     expirationDate: Date,
@@ -22,4 +22,3 @@ object LicenseInformation {
     __obj.asInstanceOf[LicenseInformation]
   }
 }
-

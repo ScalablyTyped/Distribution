@@ -6,7 +6,7 @@ import typings.fastJsonPatch.helpersMod.JsonPatchErrorName
 import typings.fastJsonPatch.helpersMod.PatchError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fast-json-patch/commonjs/core", "JsonPatchError")
 @js.native
@@ -21,4 +21,3 @@ object JsonPatchError
         PatchError
       ]
     ]
-

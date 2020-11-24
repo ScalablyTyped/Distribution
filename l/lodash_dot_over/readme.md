@@ -11,13 +11,14 @@ The lodash method `_.over` exported as a module.
 | Full name          | lodash.over |
 | Keywords           | lodash-modularized, over |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 48153 |
+| # dependents       | 6 |
+| # downloads        | 83789 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
 - [Bugs](https://github.com/lodash/lodash/issues)
+- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.over)
     
 

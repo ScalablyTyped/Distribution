@@ -3,7 +3,7 @@ package typings.googleapis.betaMod.computeBeta
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A reserved address resource. (== resource_for beta.addresses ==) (==
@@ -12,38 +12,46 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaAddress extends js.Object {
+  
   /**
     * The static IP address represented by this resource.
     */
   var address: js.UndefOr[String] = js.native
+  
   /**
     * The type of address to reserve, either INTERNAL or EXTERNAL. If
     * unspecified, defaults to EXTERNAL.
     */
   var addressType: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
   var creationTimestamp: js.UndefOr[String] = js.native
+  
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * The IP Version that will be used by this address. Valid options are IPV4
     * or IPV6. This can only be specified for a global address.
     */
   var ipVersion: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Type of the resource. Always compute#address for addresses.
     */
   var kind: js.UndefOr[String] = js.native
+  
   /**
     * A fingerprint for the labels being applied to this Address, which is
     * essentially a hash of the labels set used for optimistic locking. The
@@ -54,12 +62,14 @@ trait SchemaAddress extends js.Object {
     * the latest fingerprint, make a get() request to retrieve an Address.
     */
   var labelFingerprint: js.UndefOr[String] = js.native
+  
   /**
     * Labels to apply to this Address resource. These can be later modified by
     * the setLabels method. Each label key/value must comply with RFC1035.
     * Label values may be empty.
     */
   var labels: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * Name of the resource. Provided by the client when the resource is
     * created. The name must be 1-63 characters long, and comply with RFC1035.
@@ -70,11 +80,13 @@ trait SchemaAddress extends js.Object {
     * dash.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * The URL of the network in which to reserve the address. This field can
     * only be used with INTERNAL type with VPC_PEERING purpose.
     */
   var network: js.UndefOr[String] = js.native
+  
   /**
     * This signifies the networking tier used for configuring this Address and
     * can only take the following values: PREMIUM, STANDARD. Global forwarding
@@ -85,14 +97,17 @@ trait SchemaAddress extends js.Object {
     * balancer.  If this field is not specified, it is assumed to be PREMIUM.
     */
   var networkTier: js.UndefOr[String] = js.native
+  
   /**
     * The prefix length if the resource reprensents an IP range.
     */
   var prefixLength: js.UndefOr[Double] = js.native
+  
   /**
     * The purpose of resource, only used with INTERNAL type.
     */
   var purpose: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] URL of the region where the regional address resides. This
     * field is not applicable to global addresses. You must specify this field
@@ -100,10 +115,12 @@ trait SchemaAddress extends js.Object {
     * body.
     */
   var region: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Server-defined URL for the resource.
     */
   var selfLink: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] The status of the address, which can be one of RESERVING,
     * RESERVED, or IN_USE. An address that is RESERVING is currently in the
@@ -112,6 +129,7 @@ trait SchemaAddress extends js.Object {
     * resource and is not available.
     */
   var status: js.UndefOr[String] = js.native
+  
   /**
     * The URL of the subnetwork in which to reserve the address. If an IP
     * address is specified, it must be within the subnetwork&#39;s IP range.
@@ -119,108 +137,150 @@ trait SchemaAddress extends js.Object {
     * GCE_ENDPOINT/DNS_RESOLVER purposes.
     */
   var subnetwork: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] The URLs of the resources that are using this address.
     */
   var users: js.UndefOr[js.Array[String]] = js.native
 }
-
 object SchemaAddress {
+  
   @scala.inline
   def apply(): SchemaAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAddress]
   }
+  
   @scala.inline
   implicit class SchemaAddressOps[Self <: SchemaAddress] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAddress: Self = this.set("address", js.undefined)
+    
     @scala.inline
     def setAddressType(value: String): Self = this.set("addressType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAddressType: Self = this.set("addressType", js.undefined)
+    
     @scala.inline
     def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setIpVersion(value: String): Self = this.set("ipVersion", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIpVersion: Self = this.set("ipVersion", js.undefined)
+    
     @scala.inline
     def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKind: Self = this.set("kind", js.undefined)
+    
     @scala.inline
     def setLabelFingerprint(value: String): Self = this.set("labelFingerprint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabelFingerprint: Self = this.set("labelFingerprint", js.undefined)
+    
     @scala.inline
     def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabels: Self = this.set("labels", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNetwork: Self = this.set("network", js.undefined)
+    
     @scala.inline
     def setNetworkTier(value: String): Self = this.set("networkTier", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNetworkTier: Self = this.set("networkTier", js.undefined)
+    
     @scala.inline
     def setPrefixLength(value: Double): Self = this.set("prefixLength", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePrefixLength: Self = this.set("prefixLength", js.undefined)
+    
     @scala.inline
     def setPurpose(value: String): Self = this.set("purpose", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePurpose: Self = this.set("purpose", js.undefined)
+    
     @scala.inline
     def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRegion: Self = this.set("region", js.undefined)
+    
     @scala.inline
     def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    
     @scala.inline
     def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStatus: Self = this.set("status", js.undefined)
+    
     @scala.inline
     def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    
     @scala.inline
     def setUsersVarargs(value: String*): Self = this.set("users", js.Array(value :_*))
+    
     @scala.inline
     def setUsers(value: js.Array[String]): Self = this.set("users", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUsers: Self = this.set("users", js.undefined)
   }
-  
 }
-

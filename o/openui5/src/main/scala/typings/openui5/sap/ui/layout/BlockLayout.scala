@@ -4,32 +4,37 @@ import typings.openui5.anon.TypeofBlockBackgroundType
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BlockLayout extends Control {
+  
   /**
     * Adds some content to the aggregation <code>content</code>.
     * @param oContent the content to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addContent(oContent: BlockLayoutRow): BlockLayout = js.native
+  
   /**
     * Destroys all the content in the aggregation <code>content</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyContent(): BlockLayout = js.native
+  
   /**
     * Gets current value of property <code>background</code>.Determines the background used for the
     * LayoutDefault value is <code>Default</code>.
     * @returns Value of property <code>background</code>
     */
   def getBackground(): TypeofBlockBackgroundType = js.native
+  
   /**
     * Gets content of aggregation <code>content</code>.The Rows to be included in the content of the
     * control
     */
   def getContent(): js.Array[BlockLayoutRow] = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.layout.BlockLayoutRow</code> in the aggregation
     * <code>content</code>.and returns its index if found or -1 otherwise.
@@ -37,6 +42,7 @@ trait BlockLayout extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfContent(oContent: BlockLayoutRow): Double = js.native
+  
   /**
     * Inserts a content into the aggregation <code>content</code>.
     * @param oContent the content to insert; if empty, nothing is inserted
@@ -47,12 +53,14 @@ trait BlockLayout extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertContent(oContent: BlockLayoutRow, iIndex: Double): BlockLayout = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>content</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllContent(): js.Array[BlockLayoutRow] = js.native
+  
   def removeContent(vContent: String): BlockLayoutRow = js.native
   /**
     * Removes a content from the aggregation <code>content</code>.
@@ -61,6 +69,7 @@ trait BlockLayout extends Control {
     */
   def removeContent(vContent: Double): BlockLayoutRow = js.native
   def removeContent(vContent: BlockLayoutRow): BlockLayoutRow = js.native
+  
   /**
     * Sets a new value for property <code>background</code>.Determines the background used for the
     * LayoutWhen called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -70,4 +79,3 @@ trait BlockLayout extends Control {
     */
   def setBackground(sBackground: TypeofBlockBackgroundType): BlockLayout = js.native
 }
-

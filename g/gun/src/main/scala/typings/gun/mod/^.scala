@@ -7,7 +7,7 @@ import typings.gun.mod.Gun.Constructor
 import typings.gun.mod.Gun.ConstructorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gun", JSImport.Namespace)
 @js.native
@@ -17,8 +17,6 @@ class ^[DataType] ()
   def this(options: js.Array[String]) = this()
   def this(options: ConstructorOptions) = this()
 }
-
 @JSImport("gun", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[Constructor]
-

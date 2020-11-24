@@ -11,7 +11,7 @@ import typings.twilioChat.paginatorMod.Paginator
 import typings.twilioChat.userdescriptorMod.UserDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Client is a starting point to access Twilio Programmable Chat functionality.
@@ -75,19 +75,15 @@ import scala.scalajs.js.annotation._
   * @property {('ascending'|'descending')} [order] - Sorting order. If not present, then default is <code>ascending</code>
   */
 class Client_ protected () extends EventEmitter {
+  
   var channels: js.Any = js.native
+  
   var channelsPromise: js.Any = js.native
+  
   var config: js.Any = js.native
+  
   var connectionState: ConnectionState = js.native
-  var fpaToken: js.Any = js.native
-  var initialize: js.Any = js.native
-  var options: js.Any = js.native
-  var parsePushNotification: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Client.parsePushNotification */ js.Any = js.native
-  var services: js.Any = js.native
-  var sessionPromise: js.Any = js.native
-  var subscribeToPushNotifications: js.Any = js.native
-  var unsubscribeFromPushNotifications: js.Any = js.native
-  val version: String = js.native
+  
   /**
     * Create a Channel on the server and subscribe to its events.
     * Default options are public Channel type with empty uniqueName and friendlyName.
@@ -96,18 +92,23 @@ class Client_ protected () extends EventEmitter {
     */
   def createChannel(): js.Promise[Channel] = js.native
   def createChannel(options: CreateChannelOptions): js.Promise[Channel] = js.native
+  
+  var fpaToken: js.Any = js.native
+  
   /**
     * Get a known Channel by its SID.
     * @param {String} channelSid - Channel sid
     * @returns {Promise<Channel>}
     */
   def getChannelBySid(channelSid: String): js.Promise[Channel] = js.native
+  
   /**
     * Get a known Channel by its unique identifier name.
     * @param {String} uniqueName - The unique identifier name of the Channel to get
     * @returns {Promise<Channel>}
     */
   def getChannelByUniqueName(uniqueName: String): js.Promise[Channel] = js.native
+  
   /**
     * Get array of Channels locally known to Client in provided sorting order.
     * Locally known channels are the ones created and/or joined during client runtime and currently logged in User subscribed Channels.
@@ -118,21 +119,25 @@ class Client_ protected () extends EventEmitter {
     */
   def getLocalChannels(): js.Promise[js.Array[Channel]] = js.native
   def getLocalChannels(sortingOptions: ChannelSortingOptions): js.Promise[js.Array[Channel]] = js.native
+  
   /**
     * Get the public channels directory content.
     * @returns {Promise<Paginator<ChannelDescriptor>>}
     */
   def getPublicChannelDescriptors(): js.Promise[Paginator[ChannelDescriptor]] = js.native
+  
   /**
     * Get the current list of all subscribed Channels.
     * @returns {Promise<Paginator<Channel>>}
     */
   def getSubscribedChannels(): js.Promise[Paginator[Channel]] = js.native
   def getSubscribedChannels(args: js.Any): js.Promise[Paginator[Channel]] = js.native
+  
   /**
     * @returns {Promise<Array<User>>} List of subscribed User objects
     */
   def getSubscribedUsers(): js.Promise[js.Array[typings.twilioChat.userMod.User]] = js.native
+  
   /**
     * Gets user for given identity, if it's in subscribed list - then return the user object from it,
     * if not - then subscribes and adds user to the subscribed list.
@@ -140,24 +145,39 @@ class Client_ protected () extends EventEmitter {
     * @returns {Promise<User>} Fully initialized user
     */
   def getUser(identity: String): js.Promise[typings.twilioChat.userMod.User] = js.native
+  
   /**
     * Get the User's (created by, joined or invited to) channels directory content.
     * @returns {Promise<Paginator<ChannelDescriptor>>}
     */
   def getUserChannelDescriptors(): js.Promise[Paginator[ChannelDescriptor]] = js.native
+  
   /**
     * Gets user descriptor for given identity.
     * @param {String} identity - Identity of User
     * @returns {Promise<UserDescriptor>} User descriptor
     */
   def getUserDescriptor(identity: String): js.Promise[UserDescriptor] = js.native
+  
   /**
     * Handle push notification payload parsing and emits event {@link Client#event:pushNotification} on this {@link Client} instance.
     * @param {Object} notificationPayload - Push notification payload
     * @returns {void|Error}
     */
   def handlePushNotification(notificationPayload: js.Any): js.Promise[Unit] = js.native
+  
+  var initialize: js.Any = js.native
+  
+  var options: js.Any = js.native
+  
+  var parsePushNotification: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Client.parsePushNotification */ js.Any = js.native
+  
   def reachabilityEnabled: Boolean = js.native
+  
+  var services: js.Any = js.native
+  
+  var sessionPromise: js.Any = js.native
+  
   /**
     * Registers for push notifications.
     * @param {Client#NotificationsChannelType} channelType - 'gcm', 'apn' and 'fcm' are supported
@@ -165,19 +185,27 @@ class Client_ protected () extends EventEmitter {
     * @returns {Promise<void>}
     */
   def setPushRegistrationId(channelType: NotificationsChannelType, registrationId: String): js.Promise[Unit] = js.native
+  
   /**
     * Gracefully shutting down library instance.
     * @public
     * @returns {Promise<void>}
     */
   def shutdown(): js.Promise[Unit] = js.native
+  
+  var subscribeToPushNotifications: js.Any = js.native
+  
   def token: String = js.native
+  
   /**
     * Unregisters from push notifications.
     * @param {Client#NotificationsChannelType} channelType - 'gcm', 'apn' and 'fcm' are supported
     * @returns {Promise<void>}
     */
   def unsetPushRegistrationId(channelType: NotificationsChannelType): js.Promise[Unit] = js.native
+  
+  var unsubscribeFromPushNotifications: js.Any = js.native
+  
   /**
     * Update the token used by the Client and re-register with Programmable Chat services.
     * @param {String} token - Access token
@@ -185,6 +213,8 @@ class Client_ protected () extends EventEmitter {
     * @returns {Promise<Client>}
     */
   def updateToken(token: String): js.Promise[Client] = js.native
+  
   def user: typings.twilioChat.userMod.User = js.native
+  
+  val version: String = js.native
 }
-

@@ -1,13 +1,13 @@
 package typings.reactRelay.relayEnvironmentProviderMod
 
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-relay/lib/relay-experimental/RelayEnvironmentProvider", "RelayEnvironmentProvider")
 @js.native
 object RelayEnvironmentProvider extends js.Object {
-  def apply(props: Props): Element = js.native
+  
+  def apply(props: Props): ReactElement = js.native
 }
-

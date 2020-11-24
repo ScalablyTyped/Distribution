@@ -2,7 +2,7 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait WorksheetSearchCriteria extends js.Object {
+  
   /**
     *
     * Specifies if the match needs to be complete or partial.
@@ -21,6 +22,7 @@ trait WorksheetSearchCriteria extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var completeMatch: js.UndefOr[Boolean] = js.native
+  
   /**
     *
     * Specifies if the match is case sensitive. Default is false (insensitive).
@@ -29,33 +31,39 @@ trait WorksheetSearchCriteria extends js.Object {
     */
   var matchCase: js.UndefOr[Boolean] = js.native
 }
-
 object WorksheetSearchCriteria {
+  
   @scala.inline
   def apply(): WorksheetSearchCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorksheetSearchCriteria]
   }
+  
   @scala.inline
   implicit class WorksheetSearchCriteriaOps[Self <: WorksheetSearchCriteria] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCompleteMatch(value: Boolean): Self = this.set("completeMatch", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCompleteMatch: Self = this.set("completeMatch", js.undefined)
+    
     @scala.inline
     def setMatchCase(value: Boolean): Self = this.set("matchCase", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMatchCase: Self = this.set("matchCase", js.undefined)
   }
-  
 }
-

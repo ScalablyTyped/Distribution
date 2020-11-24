@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interaction request handler that lets the user handle requests via GUI dialogs.
@@ -69,11 +69,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait InteractionHandler extends XInteractionHandler2 {
+  
   /**
     * Creates an instance.
     * @param parent denotes the parent window for any GUI dialogs the interaction handler pops up; may be null.
     */
   def createWithParent(parent: XWindow): Unit = js.native
+  
   /**
     * Creates an instance with an additional context.
     * @param parent denotes the parent window for any GUI dialogs the interaction handler pops up; may be null.
@@ -81,8 +83,8 @@ trait InteractionHandler extends XInteractionHandler2 {
     */
   def createWithParentAndContext(parent: XWindow, context: String): Unit = js.native
 }
-
 object InteractionHandler {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -96,22 +98,26 @@ object InteractionHandler {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createWithParent = js.Any.fromFunction1(createWithParent), createWithParentAndContext = js.Any.fromFunction2(createWithParentAndContext), handle = js.Any.fromFunction1(handle), handleInteractionRequest = js.Any.fromFunction1(handleInteractionRequest), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[InteractionHandler]
   }
+  
   @scala.inline
   implicit class InteractionHandlerOps[Self <: InteractionHandler] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCreateWithParent(value: XWindow => Unit): Self = this.set("createWithParent", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateWithParentAndContext(value: (XWindow, String) => Unit): Self = this.set("createWithParentAndContext", js.Any.fromFunction2(value))
   }
-  
 }
-

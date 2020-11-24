@@ -9,7 +9,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/apigatewayv2/domainName", "DomainName")
 @js.native
@@ -23,32 +23,37 @@ class DomainName protected () extends CustomResource {
     */
   def this(name: String, args: DomainNameArgs) = this()
   def this(name: String, args: DomainNameArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The [API mapping selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-mapping-selection-expressions) for the domain name.
     */
   val apiMappingSelectionExpression: Output_[String] = js.native
+  
   /**
     * The ARN of the domain name.
     */
   val arn: Output_[String] = js.native
+  
   /**
-    * The domain name.
+    * The domain name. Must be between 1 and 512 characters in length.
     */
   val domainName: Output_[String] = js.native
+  
   /**
     * The domain name configuration.
     */
   val domainNameConfiguration: Output_[DomainNameDomainNameConfiguration] = js.native
+  
   /**
     * A map of tags to assign to the domain name.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/apigatewayv2/domainName", "DomainName")
 @js.native
 object DomainName extends js.Object {
+  
   /**
     * Get an existing DomainName resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -62,10 +67,10 @@ object DomainName extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DomainName = js.native
   def get(name: String, id: Input[ID], state: DomainNameState): DomainName = js.native
   def get(name: String, id: Input[ID], state: DomainNameState, opts: CustomResourceOptions): DomainName = js.native
+  
   /**
     * Returns true if the given object is an instance of DomainName.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/domainName.DomainName */ Boolean = js.native
 }
-

@@ -3,16 +3,18 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FacetFilter extends Control {
+  
   /**
     * Adds some list to the aggregation <code>lists</code>.
     * @param oList the list to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addList(oList: FacetFilterList): FacetFilter = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>confirm</code> event of this
     * <code>sap.m.FacetFilter</code>.When called, the context of the event handler (its <code>this</code>)
@@ -27,6 +29,7 @@ trait FacetFilter extends Control {
     */
   def attachConfirm(oData: js.Any, fnFunction: js.Any): FacetFilter = js.native
   def attachConfirm(oData: js.Any, fnFunction: js.Any, oListener: js.Any): FacetFilter = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>reset</code> event of this
     * <code>sap.m.FacetFilter</code>.When called, the context of the event handler (its <code>this</code>)
@@ -42,11 +45,13 @@ trait FacetFilter extends Control {
     */
   def attachReset(oData: js.Any, fnFunction: js.Any): FacetFilter = js.native
   def attachReset(oData: js.Any, fnFunction: js.Any, oListener: js.Any): FacetFilter = js.native
+  
   /**
     * Destroys all the lists in the aggregation <code>lists</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyLists(): FacetFilter = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>confirm</code> event of this
     * <code>sap.m.FacetFilter</code>.The passed function and listener object must match the ones used for
@@ -56,6 +61,7 @@ trait FacetFilter extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachConfirm(fnFunction: js.Any, oListener: js.Any): FacetFilter = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>reset</code> event of this
     * <code>sap.m.FacetFilter</code>.The passed function and listener object must match the ones used for
@@ -65,24 +71,28 @@ trait FacetFilter extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachReset(fnFunction: js.Any, oListener: js.Any): FacetFilter = js.native
+  
   /**
     * Fires event <code>confirm</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireConfirm(mArguments: js.Any): FacetFilter = js.native
+  
   /**
     * Fires event <code>reset</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireReset(mArguments: js.Any): FacetFilter = js.native
+  
   /**
     * Gets current value of property <code>liveSearch</code>.Enables/disables live search on all search
     * fields except for the FacetFilterList search.Default value is <code>true</code>.
     * @returns Value of property <code>liveSearch</code>
     */
   def getLiveSearch(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showPersonalization</code>.If set to <code>true</code> and the
     * FacetFilter type is <code>Simple</code>, then the Add Facet icon will be displayed and each facet
@@ -91,6 +101,7 @@ trait FacetFilter extends Control {
     * @returns Value of property <code>showPersonalization</code>
     */
   def getShowPersonalization(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showPopoverOKButton</code>.If set to <code>true</code>, an OK
     * button is displayed for every FacetFilterList popover. This button allows the user to close the
@@ -99,18 +110,21 @@ trait FacetFilter extends Control {
     * @returns Value of property <code>showPopoverOKButton</code>
     */
   def getShowPopoverOKButton(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showReset</code>.Shows/hides the FacetFilter Reset
     * button.Default value is <code>true</code>.
     * @returns Value of property <code>showReset</code>
     */
   def getShowReset(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showSummaryBar</code>.Shows the summary bar instead of the
     * FacetFilter buttons bar when set to <code>true</code>.Default value is <code>false</code>.
     * @returns Value of property <code>showSummaryBar</code>
     */
   def getShowSummaryBar(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>type</code>.Defines the default appearance of the FacetFilter
     * on the device. Possible values are <code>Simple</code> (default) and <code>Light</code>.Default
@@ -118,6 +132,7 @@ trait FacetFilter extends Control {
     * @returns Value of property <code>type</code>
     */
   def getType(): FacetFilterType = js.native
+  
   /**
     * Checks for the provided <code>sap.m.FacetFilterList</code> in the aggregation <code>lists</code>.and
     * returns its index if found or -1 otherwise.
@@ -125,6 +140,7 @@ trait FacetFilter extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfList(oList: FacetFilterList): Double = js.native
+  
   /**
     * Inserts a list into the aggregation <code>lists</code>.
     * @param oList the list to insert; if empty, nothing is inserted
@@ -135,17 +151,20 @@ trait FacetFilter extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertList(oList: FacetFilterList, iIndex: Double): FacetFilter = js.native
+  
   /**
     * Opens the FacetFilter dialog.
     * @returns this pointer for chaining
     */
   def openFilterDialog(): FacetFilter = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>lists</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllLists(): js.Array[FacetFilterList] = js.native
+  
   /**
     * Sets a new value for property <code>showPersonalization</code>.If set to <code>true</code> and the
     * FacetFilter type is <code>Simple</code>, then the Add Facet icon will be displayed and each facet
@@ -156,6 +175,7 @@ trait FacetFilter extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowPersonalization(bShowPersonalization: Boolean): FacetFilter = js.native
+  
   /**
     * Sets a new value for property <code>showPopoverOKButton</code>.If set to <code>true</code>, an OK
     * button is displayed for every FacetFilterList popover. This button allows the user to close the
@@ -167,4 +187,3 @@ trait FacetFilter extends Control {
     */
   def setShowPopoverOKButton(bShowPopoverOKButton: Boolean): FacetFilter = js.native
 }
-

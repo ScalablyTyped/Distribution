@@ -7,7 +7,7 @@ import typings.ionicCliFramework.definitionsMod.NamespaceMapGetter
 import typings.ionicUtilsObject.mod.AliasedMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/cli-framework/lib", "NamespaceMap")
 @js.native
@@ -22,4 +22,3 @@ class NamespaceMap ()
         CommandMetadataOption
       ]
     ]
-

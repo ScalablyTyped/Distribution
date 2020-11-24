@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-playground-html
 
-Typings are for version 1.6.25
+Typings are for version 1.6.29
 
 ## Library description:
 GraphQL IDE for better development workflows (GraphQL Subscriptions, interactive docs & collaboration).
@@ -10,9 +10,9 @@ GraphQL IDE for better development workflows (GraphQL Subscriptions, interactive
 | ------------------ | :-------------: |
 | Full name          | graphql-playground-html |
 | Keywords           | graphql, graphiql, playground, graphcool |
-| # releases         | 21 |
-| # dependents       | 19 |
-| # downloads        | 12554250 |
+| # releases         | 23 |
+| # dependents       | 20 |
+| # downloads        | 23642324 |
 | # stars            | 0 |
 
 ## Links

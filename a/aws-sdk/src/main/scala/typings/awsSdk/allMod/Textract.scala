@@ -4,7 +4,7 @@ import typings.awsSdk.textractMod.ClientConfiguration
 import typings.awsSdk.textractMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "Textract")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class Textract () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

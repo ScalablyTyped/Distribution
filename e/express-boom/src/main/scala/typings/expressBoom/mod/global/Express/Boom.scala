@@ -5,10 +5,11 @@ import typings.expressBoom.anon.Message
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Boom extends js.Object {
+  
   /**
     * Respond a 422 Unprocessable Entity error
     * @param message optional message.
@@ -19,6 +20,7 @@ trait Boom extends js.Object {
   def badData[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def badData[Data](message: String): BoomError[Data] = js.native
   def badData[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 502 Bad Gateway error with your error message to the user
     * @param message optional message.
@@ -29,6 +31,7 @@ trait Boom extends js.Object {
   def badGateway[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def badGateway[Data](message: String): BoomError[Data] = js.native
   def badGateway[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   // 5xx
   /**
     * Respond a 500 Internal Server Error error
@@ -41,6 +44,7 @@ trait Boom extends js.Object {
   def badImplementation[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def badImplementation[Data](message: String): BoomError[Data] = js.native
   def badImplementation[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   // 4xx
   /**
     * Respond a 400 Bad Request error
@@ -52,6 +56,7 @@ trait Boom extends js.Object {
   def badRequest[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def badRequest[Data](message: String): BoomError[Data] = js.native
   def badRequest[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Decorates an error with the boom properties
     * @param error the error object to wrap. If error is already a boom object, it defaults to overriding the object with the new status code and message.
@@ -60,6 +65,7 @@ trait Boom extends js.Object {
     */
   def boomify(error: Error): BoomError[Null] = js.native
   def boomify(error: Error, options: Message): BoomError[Null] = js.native
+  
   /**
     * Respond a 408 Request Time-out error
     * @param message optional message.
@@ -70,6 +76,7 @@ trait Boom extends js.Object {
   def clientTimeout[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def clientTimeout[Data](message: String): BoomError[Data] = js.native
   def clientTimeout[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 409 Conflict error
     * @param message optional message.
@@ -80,10 +87,12 @@ trait Boom extends js.Object {
   def conflict[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def conflict[Data](message: String): BoomError[Data] = js.native
   def conflict[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   def create[Data](statusCode: Double): BoomError[Data] = js.native
   def create[Data](statusCode: Double, message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def create[Data](statusCode: Double, message: String): BoomError[Data] = js.native
   def create[Data](statusCode: Double, message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 413 Request Entity Too Large error
     * @param message optional message.
@@ -94,6 +103,7 @@ trait Boom extends js.Object {
   def entityTooLarge[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def entityTooLarge[Data](message: String): BoomError[Data] = js.native
   def entityTooLarge[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 417 Expectation Failed error
     * @param message optional message.
@@ -104,6 +114,7 @@ trait Boom extends js.Object {
   def expectationFailed[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def expectationFailed[Data](message: String): BoomError[Data] = js.native
   def expectationFailed[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 424 Failed Dependency error
     * @param message optional message.
@@ -114,6 +125,7 @@ trait Boom extends js.Object {
   def failedDependency[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def failedDependency[Data](message: String): BoomError[Data] = js.native
   def failedDependency[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 403 Forbidden error
     * @param message optional message.
@@ -124,6 +136,7 @@ trait Boom extends js.Object {
   def forbidden[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def forbidden[Data](message: String): BoomError[Data] = js.native
   def forbidden[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 504 Gateway Time-out error with your error message to the user
     * @param message optional message.
@@ -134,6 +147,7 @@ trait Boom extends js.Object {
   def gatewayTimeout[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def gatewayTimeout[Data](message: String): BoomError[Data] = js.native
   def gatewayTimeout[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 451 Unavailable For Legal Reasons error
     * @param message optional message.
@@ -144,6 +158,7 @@ trait Boom extends js.Object {
   def illegal[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def illegal[Data](message: String): BoomError[Data] = js.native
   def illegal[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 500 Internal Server Error error
     * Only 500 errors will hide your message from the end user. Your message is recorded in the server log.
@@ -155,6 +170,7 @@ trait Boom extends js.Object {
   def internal[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def internal[Data](message: String): BoomError[Data] = js.native
   def internal[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 411 Length Required error
     * @param message optional message.
@@ -165,6 +181,7 @@ trait Boom extends js.Object {
   def lengthRequired[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def lengthRequired[Data](message: String): BoomError[Data] = js.native
   def lengthRequired[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 423 Locked error
     * @param message optional message.
@@ -175,6 +192,7 @@ trait Boom extends js.Object {
   def locked[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def locked[Data](message: String): BoomError[Data] = js.native
   def locked[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 405 Method Not Allowed error
     * @param message optional message.
@@ -194,6 +212,7 @@ trait Boom extends js.Object {
   def methodNotAllowed[Data](message: String, data: Data, allow: js.Array[String]): BoomError[Data] = js.native
   def methodNotAllowed[Data](message: String, data: js.UndefOr[scala.Nothing], allow: String): BoomError[Data] = js.native
   def methodNotAllowed[Data](message: String, data: js.UndefOr[scala.Nothing], allow: js.Array[String]): BoomError[Data] = js.native
+  
   /**
     * Respond a 406 Not Acceptable error
     * @param message optional message.
@@ -204,6 +223,7 @@ trait Boom extends js.Object {
   def notAcceptable[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def notAcceptable[Data](message: String): BoomError[Data] = js.native
   def notAcceptable[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 404 Not Found error
     * @param message optional message.
@@ -214,6 +234,7 @@ trait Boom extends js.Object {
   def notFound[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def notFound[Data](message: String): BoomError[Data] = js.native
   def notFound[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 501 Not Implemented error with your error message to the user
     * @param message optional message.
@@ -224,6 +245,7 @@ trait Boom extends js.Object {
   def notImplemented[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def notImplemented[Data](message: String): BoomError[Data] = js.native
   def notImplemented[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 402 Payment Required error
     * @param message optional message.
@@ -234,6 +256,7 @@ trait Boom extends js.Object {
   def paymentRequired[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def paymentRequired[Data](message: String): BoomError[Data] = js.native
   def paymentRequired[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 412 Precondition Failed error
     * @param message optional message.
@@ -244,6 +267,7 @@ trait Boom extends js.Object {
   def preconditionFailed[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def preconditionFailed[Data](message: String): BoomError[Data] = js.native
   def preconditionFailed[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 428 Precondition Required error
     * @param message optional message.
@@ -254,6 +278,7 @@ trait Boom extends js.Object {
   def preconditionRequired[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def preconditionRequired[Data](message: String): BoomError[Data] = js.native
   def preconditionRequired[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 407 Proxy Authentication Required error
     * @param message optional message.
@@ -264,6 +289,7 @@ trait Boom extends js.Object {
   def proxyAuthRequired[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def proxyAuthRequired[Data](message: String): BoomError[Data] = js.native
   def proxyAuthRequired[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 416 Requested Range Not Satisfiable error
     * @param message optional message.
@@ -274,6 +300,7 @@ trait Boom extends js.Object {
   def rangeNotSatisfiable[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def rangeNotSatisfiable[Data](message: String): BoomError[Data] = js.native
   def rangeNotSatisfiable[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 410 Gone error
     * @param message optional message.
@@ -284,6 +311,7 @@ trait Boom extends js.Object {
   def resourceGone[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def resourceGone[Data](message: String): BoomError[Data] = js.native
   def resourceGone[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 503 Service Unavailable error with your error message to the user
     * @param message optional message.
@@ -294,6 +322,7 @@ trait Boom extends js.Object {
   def serverUnavailable[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def serverUnavailable[Data](message: String): BoomError[Data] = js.native
   def serverUnavailable[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 418 I'm a Teapot error
     * @param message optional message.
@@ -304,6 +333,7 @@ trait Boom extends js.Object {
   def teapot[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def teapot[Data](message: String): BoomError[Data] = js.native
   def teapot[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 429 Too Many Requests error
     * @param message optional message.
@@ -314,6 +344,7 @@ trait Boom extends js.Object {
   def tooManyRequests[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def tooManyRequests[Data](message: String): BoomError[Data] = js.native
   def tooManyRequests[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 401 Unauthorized error
     * @param message optional message.
@@ -353,6 +384,7 @@ trait Boom extends js.Object {
   def unauthorized(message: Null, scheme: String): BoomError[Null] = js.native
   def unauthorized(message: Null, scheme: String, attributes: String): BoomError[Null] = js.native
   def unauthorized(message: Null, scheme: String, attributes: StringDictionary[String]): BoomError[Null] = js.native
+  
   /**
     * Respond a 415 Unsupported Media Type error
     * @param message optional message.
@@ -363,6 +395,7 @@ trait Boom extends js.Object {
   def unsupportedMediaType[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def unsupportedMediaType[Data](message: String): BoomError[Data] = js.native
   def unsupportedMediaType[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   /**
     * Respond a 414 Request-URI Too Large error
     * @param message optional message.
@@ -373,10 +406,10 @@ trait Boom extends js.Object {
   def uriTooLong[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
   def uriTooLong[Data](message: String): BoomError[Data] = js.native
   def uriTooLong[Data](message: String, data: Data): BoomError[Data] = js.native
+  
   // Add boom's properties in here
   def wrap(error: Error): BoomError[Null] = js.native
   def wrap(error: Error, statusCode: js.UndefOr[scala.Nothing], message: String): BoomError[Null] = js.native
   def wrap(error: Error, statusCode: Double): BoomError[Null] = js.native
   def wrap(error: Error, statusCode: Double, message: String): BoomError[Null] = js.native
 }
-

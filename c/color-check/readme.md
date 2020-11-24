@@ -12,7 +12,7 @@ Color Check is a very tine library for checking your foreground and backgorunds 
 | Keywords           | WCAG, WCAG2, color, wcag, wcag2, snook, contrast, legibility |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 26052 |
+| # downloads        | 37831 |
 | # stars            | 0 |
 
 ## Links

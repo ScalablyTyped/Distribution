@@ -1,17 +1,16 @@
 package typings.awsSdk.greengrassMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Greengrass extends Service {
-  @JSName("config")
-  var config_Greengrass: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Associates a role with a group. Your Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
     */
@@ -25,6 +24,7 @@ trait Greengrass extends Service {
     params: AssociateRoleToGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateRoleToGroupResponse, Unit]
   ): Request[AssociateRoleToGroupResponse, AWSError] = js.native
+  
   /**
     * Associates a role with your account. AWS IoT Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
     */
@@ -38,6 +38,10 @@ trait Greengrass extends Service {
     params: AssociateServiceRoleToAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateServiceRoleToAccountResponse, Unit]
   ): Request[AssociateServiceRoleToAccountResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_Greengrass: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a connector definition. You may provide the initial version of the connector definition now or use ''CreateConnectorDefinitionVersion'' at a later time.
     */
@@ -51,6 +55,7 @@ trait Greengrass extends Service {
     params: CreateConnectorDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateConnectorDefinitionResponse, Unit]
   ): Request[CreateConnectorDefinitionResponse, AWSError] = js.native
+  
   /**
     * Creates a version of a connector definition which has already been defined.
     */
@@ -66,6 +71,7 @@ trait Greengrass extends Service {
     params: CreateConnectorDefinitionVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateConnectorDefinitionVersionResponse, Unit]
   ): Request[CreateConnectorDefinitionVersionResponse, AWSError] = js.native
+  
   /**
     * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. Greengrass groups must each contain exactly one Greengrass core.
     */
@@ -79,6 +85,7 @@ trait Greengrass extends Service {
     params: CreateCoreDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCoreDefinitionResponse, Unit]
   ): Request[CreateCoreDefinitionResponse, AWSError] = js.native
+  
   /**
     * Creates a version of a core definition that has already been defined. Greengrass groups must each contain exactly one Greengrass core.
     */
@@ -92,6 +99,7 @@ trait Greengrass extends Service {
     params: CreateCoreDefinitionVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCoreDefinitionVersionResponse, Unit]
   ): Request[CreateCoreDefinitionVersionResponse, AWSError] = js.native
+  
   /**
     * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
     */
@@ -105,6 +113,7 @@ trait Greengrass extends Service {
     params: CreateDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDeploymentResponse, Unit]
   ): Request[CreateDeploymentResponse, AWSError] = js.native
+  
   /**
     * Creates a device definition. You may provide the initial version of the device definition now or use ''CreateDeviceDefinitionVersion'' at a later time.
     */
@@ -118,6 +127,7 @@ trait Greengrass extends Service {
     params: CreateDeviceDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDeviceDefinitionResponse, Unit]
   ): Request[CreateDeviceDefinitionResponse, AWSError] = js.native
+  
   /**
     * Creates a version of a device definition that has already been defined.
     */
@@ -131,6 +141,7 @@ trait Greengrass extends Service {
     params: CreateDeviceDefinitionVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDeviceDefinitionVersionResponse, Unit]
   ): Request[CreateDeviceDefinitionVersionResponse, AWSError] = js.native
+  
   /**
     * Creates a Lambda function definition which contains a list of Lambda functions and their configurations to be used in a group. You can create an initial version of the definition by providing a list of Lambda functions and their configurations now, or use ''CreateFunctionDefinitionVersion'' later.
     */
@@ -144,6 +155,7 @@ trait Greengrass extends Service {
     params: CreateFunctionDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateFunctionDefinitionResponse, Unit]
   ): Request[CreateFunctionDefinitionResponse, AWSError] = js.native
+  
   /**
     * Creates a version of a Lambda function definition that has already been defined.
     */
@@ -159,6 +171,7 @@ trait Greengrass extends Service {
     params: CreateFunctionDefinitionVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateFunctionDefinitionVersionResponse, Unit]
   ): Request[CreateFunctionDefinitionVersionResponse, AWSError] = js.native
+  
   /**
     * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time. Tip: You can use the ''gg_group_setup'' package (https://github.com/awslabs/aws-greengrass-group-setup) as a library or command-line application to create and deploy Greengrass groups.
     */
@@ -172,6 +185,7 @@ trait Greengrass extends Service {
     params: CreateGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateGroupResponse, Unit]
   ): Request[CreateGroupResponse, AWSError] = js.native
+  
   /**
     * Creates a CA for the group. If a CA already exists, it will rotate the existing CA.
     */
@@ -187,6 +201,7 @@ trait Greengrass extends Service {
     params: CreateGroupCertificateAuthorityRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateGroupCertificateAuthorityResponse, Unit]
   ): Request[CreateGroupCertificateAuthorityResponse, AWSError] = js.native
+  
   /**
     * Creates a version of a group which has already been defined.
     */
@@ -200,6 +215,7 @@ trait Greengrass extends Service {
     params: CreateGroupVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateGroupVersionResponse, Unit]
   ): Request[CreateGroupVersionResponse, AWSError] = js.native
+  
   /**
     * Creates a logger definition. You may provide the initial version of the logger definition now or use ''CreateLoggerDefinitionVersion'' at a later time.
     */
@@ -213,6 +229,7 @@ trait Greengrass extends Service {
     params: CreateLoggerDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLoggerDefinitionResponse, Unit]
   ): Request[CreateLoggerDefinitionResponse, AWSError] = js.native
+  
   /**
     * Creates a version of a logger definition that has already been defined.
     */
@@ -226,6 +243,7 @@ trait Greengrass extends Service {
     params: CreateLoggerDefinitionVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLoggerDefinitionVersionResponse, Unit]
   ): Request[CreateLoggerDefinitionVersionResponse, AWSError] = js.native
+  
   /**
     * Creates a resource definition which contains a list of resources to be used in a group. You can create an initial version of the definition by providing a list of resources now, or use ''CreateResourceDefinitionVersion'' later.
     */
@@ -239,6 +257,7 @@ trait Greengrass extends Service {
     params: CreateResourceDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateResourceDefinitionResponse, Unit]
   ): Request[CreateResourceDefinitionResponse, AWSError] = js.native
+  
   /**
     * Creates a version of a resource definition that has already been defined.
     */
@@ -254,6 +273,7 @@ trait Greengrass extends Service {
     params: CreateResourceDefinitionVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateResourceDefinitionVersionResponse, Unit]
   ): Request[CreateResourceDefinitionVersionResponse, AWSError] = js.native
+  
   /**
     * Creates a software update for a core or group of cores (specified as an IoT thing group.) Use this to update the OTA Agent as well as the Greengrass core software. It makes use of the IoT Jobs feature which provides additional commands to manage a Greengrass core software update job.
     */
@@ -267,6 +287,7 @@ trait Greengrass extends Service {
     params: CreateSoftwareUpdateJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSoftwareUpdateJobResponse, Unit]
   ): Request[CreateSoftwareUpdateJobResponse, AWSError] = js.native
+  
   /**
     * Creates a subscription definition. You may provide the initial version of the subscription definition now or use ''CreateSubscriptionDefinitionVersion'' at a later time.
     */
@@ -280,6 +301,7 @@ trait Greengrass extends Service {
     params: CreateSubscriptionDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSubscriptionDefinitionResponse, Unit]
   ): Request[CreateSubscriptionDefinitionResponse, AWSError] = js.native
+  
   /**
     * Creates a version of a subscription definition which has already been defined.
     */
@@ -295,6 +317,7 @@ trait Greengrass extends Service {
     params: CreateSubscriptionDefinitionVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSubscriptionDefinitionVersionResponse, Unit]
   ): Request[CreateSubscriptionDefinitionVersionResponse, AWSError] = js.native
+  
   /**
     * Deletes a connector definition.
     */
@@ -308,6 +331,7 @@ trait Greengrass extends Service {
     params: DeleteConnectorDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteConnectorDefinitionResponse, Unit]
   ): Request[DeleteConnectorDefinitionResponse, AWSError] = js.native
+  
   /**
     * Deletes a core definition.
     */
@@ -321,6 +345,7 @@ trait Greengrass extends Service {
     params: DeleteCoreDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteCoreDefinitionResponse, Unit]
   ): Request[DeleteCoreDefinitionResponse, AWSError] = js.native
+  
   /**
     * Deletes a device definition.
     */
@@ -334,6 +359,7 @@ trait Greengrass extends Service {
     params: DeleteDeviceDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDeviceDefinitionResponse, Unit]
   ): Request[DeleteDeviceDefinitionResponse, AWSError] = js.native
+  
   /**
     * Deletes a Lambda function definition.
     */
@@ -347,6 +373,7 @@ trait Greengrass extends Service {
     params: DeleteFunctionDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteFunctionDefinitionResponse, Unit]
   ): Request[DeleteFunctionDefinitionResponse, AWSError] = js.native
+  
   /**
     * Deletes a group.
     */
@@ -360,6 +387,7 @@ trait Greengrass extends Service {
     params: DeleteGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteGroupResponse, Unit]
   ): Request[DeleteGroupResponse, AWSError] = js.native
+  
   /**
     * Deletes a logger definition.
     */
@@ -373,6 +401,7 @@ trait Greengrass extends Service {
     params: DeleteLoggerDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLoggerDefinitionResponse, Unit]
   ): Request[DeleteLoggerDefinitionResponse, AWSError] = js.native
+  
   /**
     * Deletes a resource definition.
     */
@@ -386,6 +415,7 @@ trait Greengrass extends Service {
     params: DeleteResourceDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourceDefinitionResponse, Unit]
   ): Request[DeleteResourceDefinitionResponse, AWSError] = js.native
+  
   /**
     * Deletes a subscription definition.
     */
@@ -399,6 +429,7 @@ trait Greengrass extends Service {
     params: DeleteSubscriptionDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteSubscriptionDefinitionResponse, Unit]
   ): Request[DeleteSubscriptionDefinitionResponse, AWSError] = js.native
+  
   /**
     * Disassociates the role from a group.
     */
@@ -412,6 +443,7 @@ trait Greengrass extends Service {
     params: DisassociateRoleFromGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateRoleFromGroupResponse, Unit]
   ): Request[DisassociateRoleFromGroupResponse, AWSError] = js.native
+  
   /**
     * Disassociates the service role from your account. Without a service role, deployments will not work.
     */
@@ -427,6 +459,7 @@ trait Greengrass extends Service {
     params: DisassociateServiceRoleFromAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateServiceRoleFromAccountResponse, Unit]
   ): Request[DisassociateServiceRoleFromAccountResponse, AWSError] = js.native
+  
   /**
     * Retrieves the role associated with a particular group.
     */
@@ -440,6 +473,7 @@ trait Greengrass extends Service {
     params: GetAssociatedRoleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAssociatedRoleResponse, Unit]
   ): Request[GetAssociatedRoleResponse, AWSError] = js.native
+  
   /**
     * Returns the status of a bulk deployment.
     */
@@ -453,6 +487,7 @@ trait Greengrass extends Service {
     params: GetBulkDeploymentStatusRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetBulkDeploymentStatusResponse, Unit]
   ): Request[GetBulkDeploymentStatusResponse, AWSError] = js.native
+  
   /**
     * Retrieves the connectivity information for a core.
     */
@@ -466,6 +501,7 @@ trait Greengrass extends Service {
     params: GetConnectivityInfoRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetConnectivityInfoResponse, Unit]
   ): Request[GetConnectivityInfoResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a connector definition.
     */
@@ -479,6 +515,7 @@ trait Greengrass extends Service {
     params: GetConnectorDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetConnectorDefinitionResponse, Unit]
   ): Request[GetConnectorDefinitionResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a connector definition version, including the connectors that the version contains. Connectors are prebuilt modules that interact with local infrastructure, device protocols, AWS, and other cloud services.
     */
@@ -492,6 +529,7 @@ trait Greengrass extends Service {
     params: GetConnectorDefinitionVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetConnectorDefinitionVersionResponse, Unit]
   ): Request[GetConnectorDefinitionVersionResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a core definition version.
     */
@@ -505,6 +543,7 @@ trait Greengrass extends Service {
     params: GetCoreDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCoreDefinitionResponse, Unit]
   ): Request[GetCoreDefinitionResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a core definition version.
     */
@@ -518,6 +557,7 @@ trait Greengrass extends Service {
     params: GetCoreDefinitionVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCoreDefinitionVersionResponse, Unit]
   ): Request[GetCoreDefinitionVersionResponse, AWSError] = js.native
+  
   /**
     * Returns the status of a deployment.
     */
@@ -531,6 +571,7 @@ trait Greengrass extends Service {
     params: GetDeploymentStatusRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeploymentStatusResponse, Unit]
   ): Request[GetDeploymentStatusResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a device definition.
     */
@@ -544,6 +585,7 @@ trait Greengrass extends Service {
     params: GetDeviceDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeviceDefinitionResponse, Unit]
   ): Request[GetDeviceDefinitionResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a device definition version.
     */
@@ -557,6 +599,7 @@ trait Greengrass extends Service {
     params: GetDeviceDefinitionVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeviceDefinitionVersionResponse, Unit]
   ): Request[GetDeviceDefinitionVersionResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a Lambda function definition, including its creation time and latest version.
     */
@@ -570,6 +613,7 @@ trait Greengrass extends Service {
     params: GetFunctionDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetFunctionDefinitionResponse, Unit]
   ): Request[GetFunctionDefinitionResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a Lambda function definition version, including which Lambda functions are included in the version and their configurations.
     */
@@ -583,6 +627,7 @@ trait Greengrass extends Service {
     params: GetFunctionDefinitionVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetFunctionDefinitionVersionResponse, Unit]
   ): Request[GetFunctionDefinitionVersionResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a group.
     */
@@ -596,6 +641,7 @@ trait Greengrass extends Service {
     params: GetGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetGroupResponse, Unit]
   ): Request[GetGroupResponse, AWSError] = js.native
+  
   /**
     * Retreives the CA associated with a group. Returns the public key of the CA.
     */
@@ -609,6 +655,7 @@ trait Greengrass extends Service {
     params: GetGroupCertificateAuthorityRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetGroupCertificateAuthorityResponse, Unit]
   ): Request[GetGroupCertificateAuthorityResponse, AWSError] = js.native
+  
   /**
     * Retrieves the current configuration for the CA used by the group.
     */
@@ -624,6 +671,7 @@ trait Greengrass extends Service {
     params: GetGroupCertificateConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetGroupCertificateConfigurationResponse, Unit]
   ): Request[GetGroupCertificateConfigurationResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a group version.
     */
@@ -637,6 +685,7 @@ trait Greengrass extends Service {
     params: GetGroupVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetGroupVersionResponse, Unit]
   ): Request[GetGroupVersionResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a logger definition.
     */
@@ -650,6 +699,7 @@ trait Greengrass extends Service {
     params: GetLoggerDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLoggerDefinitionResponse, Unit]
   ): Request[GetLoggerDefinitionResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a logger definition version.
     */
@@ -663,6 +713,7 @@ trait Greengrass extends Service {
     params: GetLoggerDefinitionVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLoggerDefinitionVersionResponse, Unit]
   ): Request[GetLoggerDefinitionVersionResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a resource definition, including its creation time and latest version.
     */
@@ -676,6 +727,7 @@ trait Greengrass extends Service {
     params: GetResourceDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetResourceDefinitionResponse, Unit]
   ): Request[GetResourceDefinitionResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a resource definition version, including which resources are included in the version.
     */
@@ -689,6 +741,7 @@ trait Greengrass extends Service {
     params: GetResourceDefinitionVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetResourceDefinitionVersionResponse, Unit]
   ): Request[GetResourceDefinitionVersionResponse, AWSError] = js.native
+  
   /**
     * Retrieves the service role that is attached to your account.
     */
@@ -702,6 +755,7 @@ trait Greengrass extends Service {
     params: GetServiceRoleForAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetServiceRoleForAccountResponse, Unit]
   ): Request[GetServiceRoleForAccountResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a subscription definition.
     */
@@ -715,6 +769,7 @@ trait Greengrass extends Service {
     params: GetSubscriptionDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSubscriptionDefinitionResponse, Unit]
   ): Request[GetSubscriptionDefinitionResponse, AWSError] = js.native
+  
   /**
     * Retrieves information about a subscription definition version.
     */
@@ -730,6 +785,21 @@ trait Greengrass extends Service {
     params: GetSubscriptionDefinitionVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSubscriptionDefinitionVersionResponse, Unit]
   ): Request[GetSubscriptionDefinitionVersionResponse, AWSError] = js.native
+  
+  /**
+    * Get the runtime configuration of a thing.
+    */
+  def getThingRuntimeConfiguration(): Request[GetThingRuntimeConfigurationResponse, AWSError] = js.native
+  def getThingRuntimeConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ GetThingRuntimeConfigurationResponse, Unit]): Request[GetThingRuntimeConfigurationResponse, AWSError] = js.native
+  /**
+    * Get the runtime configuration of a thing.
+    */
+  def getThingRuntimeConfiguration(params: GetThingRuntimeConfigurationRequest): Request[GetThingRuntimeConfigurationResponse, AWSError] = js.native
+  def getThingRuntimeConfiguration(
+    params: GetThingRuntimeConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetThingRuntimeConfigurationResponse, Unit]
+  ): Request[GetThingRuntimeConfigurationResponse, AWSError] = js.native
+  
   /**
     * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
     */
@@ -745,6 +815,7 @@ trait Greengrass extends Service {
     params: ListBulkDeploymentDetailedReportsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBulkDeploymentDetailedReportsResponse, Unit]
   ): Request[ListBulkDeploymentDetailedReportsResponse, AWSError] = js.native
+  
   /**
     * Returns a list of bulk deployments.
     */
@@ -758,6 +829,7 @@ trait Greengrass extends Service {
     params: ListBulkDeploymentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBulkDeploymentsResponse, Unit]
   ): Request[ListBulkDeploymentsResponse, AWSError] = js.native
+  
   /**
     * Lists the versions of a connector definition, which are containers for connectors. Connectors run on the Greengrass core and contain built-in integration with local infrastructure, device protocols, AWS, and other cloud services.
     */
@@ -773,6 +845,7 @@ trait Greengrass extends Service {
     params: ListConnectorDefinitionVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListConnectorDefinitionVersionsResponse, Unit]
   ): Request[ListConnectorDefinitionVersionsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of connector definitions.
     */
@@ -786,6 +859,7 @@ trait Greengrass extends Service {
     params: ListConnectorDefinitionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListConnectorDefinitionsResponse, Unit]
   ): Request[ListConnectorDefinitionsResponse, AWSError] = js.native
+  
   /**
     * Lists the versions of a core definition.
     */
@@ -799,6 +873,7 @@ trait Greengrass extends Service {
     params: ListCoreDefinitionVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListCoreDefinitionVersionsResponse, Unit]
   ): Request[ListCoreDefinitionVersionsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of core definitions.
     */
@@ -812,6 +887,7 @@ trait Greengrass extends Service {
     params: ListCoreDefinitionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListCoreDefinitionsResponse, Unit]
   ): Request[ListCoreDefinitionsResponse, AWSError] = js.native
+  
   /**
     * Returns a history of deployments for the group.
     */
@@ -825,6 +901,7 @@ trait Greengrass extends Service {
     params: ListDeploymentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDeploymentsResponse, Unit]
   ): Request[ListDeploymentsResponse, AWSError] = js.native
+  
   /**
     * Lists the versions of a device definition.
     */
@@ -838,6 +915,7 @@ trait Greengrass extends Service {
     params: ListDeviceDefinitionVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDeviceDefinitionVersionsResponse, Unit]
   ): Request[ListDeviceDefinitionVersionsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of device definitions.
     */
@@ -851,6 +929,7 @@ trait Greengrass extends Service {
     params: ListDeviceDefinitionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDeviceDefinitionsResponse, Unit]
   ): Request[ListDeviceDefinitionsResponse, AWSError] = js.native
+  
   /**
     * Lists the versions of a Lambda function definition.
     */
@@ -866,6 +945,7 @@ trait Greengrass extends Service {
     params: ListFunctionDefinitionVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListFunctionDefinitionVersionsResponse, Unit]
   ): Request[ListFunctionDefinitionVersionsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of Lambda function definitions.
     */
@@ -879,6 +959,7 @@ trait Greengrass extends Service {
     params: ListFunctionDefinitionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListFunctionDefinitionsResponse, Unit]
   ): Request[ListFunctionDefinitionsResponse, AWSError] = js.native
+  
   /**
     * Retrieves the current CAs for a group.
     */
@@ -894,6 +975,7 @@ trait Greengrass extends Service {
     params: ListGroupCertificateAuthoritiesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListGroupCertificateAuthoritiesResponse, Unit]
   ): Request[ListGroupCertificateAuthoritiesResponse, AWSError] = js.native
+  
   /**
     * Lists the versions of a group.
     */
@@ -907,6 +989,7 @@ trait Greengrass extends Service {
     params: ListGroupVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListGroupVersionsResponse, Unit]
   ): Request[ListGroupVersionsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of groups.
     */
@@ -920,6 +1003,7 @@ trait Greengrass extends Service {
     params: ListGroupsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListGroupsResponse, Unit]
   ): Request[ListGroupsResponse, AWSError] = js.native
+  
   /**
     * Lists the versions of a logger definition.
     */
@@ -933,6 +1017,7 @@ trait Greengrass extends Service {
     params: ListLoggerDefinitionVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListLoggerDefinitionVersionsResponse, Unit]
   ): Request[ListLoggerDefinitionVersionsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of logger definitions.
     */
@@ -946,6 +1031,7 @@ trait Greengrass extends Service {
     params: ListLoggerDefinitionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListLoggerDefinitionsResponse, Unit]
   ): Request[ListLoggerDefinitionsResponse, AWSError] = js.native
+  
   /**
     * Lists the versions of a resource definition.
     */
@@ -961,6 +1047,7 @@ trait Greengrass extends Service {
     params: ListResourceDefinitionVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListResourceDefinitionVersionsResponse, Unit]
   ): Request[ListResourceDefinitionVersionsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of resource definitions.
     */
@@ -974,6 +1061,7 @@ trait Greengrass extends Service {
     params: ListResourceDefinitionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListResourceDefinitionsResponse, Unit]
   ): Request[ListResourceDefinitionsResponse, AWSError] = js.native
+  
   /**
     * Lists the versions of a subscription definition.
     */
@@ -989,6 +1077,7 @@ trait Greengrass extends Service {
     params: ListSubscriptionDefinitionVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSubscriptionDefinitionVersionsResponse, Unit]
   ): Request[ListSubscriptionDefinitionVersionsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of subscription definitions.
     */
@@ -1002,6 +1091,7 @@ trait Greengrass extends Service {
     params: ListSubscriptionDefinitionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSubscriptionDefinitionsResponse, Unit]
   ): Request[ListSubscriptionDefinitionsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of resource tags for a resource arn.
     */
@@ -1015,6 +1105,7 @@ trait Greengrass extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Resets a group's deployments.
     */
@@ -1028,6 +1119,7 @@ trait Greengrass extends Service {
     params: ResetDeploymentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ResetDeploymentsResponse, Unit]
   ): Request[ResetDeploymentsResponse, AWSError] = js.native
+  
   /**
     * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
     */
@@ -1041,6 +1133,7 @@ trait Greengrass extends Service {
     params: StartBulkDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartBulkDeploymentResponse, Unit]
   ): Request[StartBulkDeploymentResponse, AWSError] = js.native
+  
   /**
     * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
     */
@@ -1054,6 +1147,7 @@ trait Greengrass extends Service {
     params: StopBulkDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopBulkDeploymentResponse, Unit]
   ): Request[StopBulkDeploymentResponse, AWSError] = js.native
+  
   /**
     * Adds tags to a Greengrass resource. Valid resources are 'Group', 'ConnectorDefinition', 'CoreDefinition', 'DeviceDefinition', 'FunctionDefinition', 'LoggerDefinition', 'SubscriptionDefinition', 'ResourceDefinition', and 'BulkDeployment'.
     */
@@ -1064,6 +1158,7 @@ trait Greengrass extends Service {
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Remove resource tags from a Greengrass Resource.
     */
@@ -1077,6 +1172,7 @@ trait Greengrass extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates the connectivity information for the core. Any devices that belong to the group which has this core will receive this information in order to find the location of the core and connect to it.
     */
@@ -1090,6 +1186,7 @@ trait Greengrass extends Service {
     params: UpdateConnectivityInfoRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateConnectivityInfoResponse, Unit]
   ): Request[UpdateConnectivityInfoResponse, AWSError] = js.native
+  
   /**
     * Updates a connector definition.
     */
@@ -1103,6 +1200,7 @@ trait Greengrass extends Service {
     params: UpdateConnectorDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateConnectorDefinitionResponse, Unit]
   ): Request[UpdateConnectorDefinitionResponse, AWSError] = js.native
+  
   /**
     * Updates a core definition.
     */
@@ -1116,6 +1214,7 @@ trait Greengrass extends Service {
     params: UpdateCoreDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateCoreDefinitionResponse, Unit]
   ): Request[UpdateCoreDefinitionResponse, AWSError] = js.native
+  
   /**
     * Updates a device definition.
     */
@@ -1129,6 +1228,7 @@ trait Greengrass extends Service {
     params: UpdateDeviceDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDeviceDefinitionResponse, Unit]
   ): Request[UpdateDeviceDefinitionResponse, AWSError] = js.native
+  
   /**
     * Updates a Lambda function definition.
     */
@@ -1142,6 +1242,7 @@ trait Greengrass extends Service {
     params: UpdateFunctionDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateFunctionDefinitionResponse, Unit]
   ): Request[UpdateFunctionDefinitionResponse, AWSError] = js.native
+  
   /**
     * Updates a group.
     */
@@ -1155,6 +1256,7 @@ trait Greengrass extends Service {
     params: UpdateGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateGroupResponse, Unit]
   ): Request[UpdateGroupResponse, AWSError] = js.native
+  
   /**
     * Updates the Certificate expiry time for a group.
     */
@@ -1170,6 +1272,7 @@ trait Greengrass extends Service {
     params: UpdateGroupCertificateConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateGroupCertificateConfigurationResponse, Unit]
   ): Request[UpdateGroupCertificateConfigurationResponse, AWSError] = js.native
+  
   /**
     * Updates a logger definition.
     */
@@ -1183,6 +1286,7 @@ trait Greengrass extends Service {
     params: UpdateLoggerDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateLoggerDefinitionResponse, Unit]
   ): Request[UpdateLoggerDefinitionResponse, AWSError] = js.native
+  
   /**
     * Updates a resource definition.
     */
@@ -1196,6 +1300,7 @@ trait Greengrass extends Service {
     params: UpdateResourceDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourceDefinitionResponse, Unit]
   ): Request[UpdateResourceDefinitionResponse, AWSError] = js.native
+  
   /**
     * Updates a subscription definition.
     */
@@ -1209,5 +1314,20 @@ trait Greengrass extends Service {
     params: UpdateSubscriptionDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateSubscriptionDefinitionResponse, Unit]
   ): Request[UpdateSubscriptionDefinitionResponse, AWSError] = js.native
+  
+  /**
+    * Updates the runtime configuration of a thing.
+    */
+  def updateThingRuntimeConfiguration(): Request[UpdateThingRuntimeConfigurationResponse, AWSError] = js.native
+  def updateThingRuntimeConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateThingRuntimeConfigurationResponse, Unit]
+  ): Request[UpdateThingRuntimeConfigurationResponse, AWSError] = js.native
+  /**
+    * Updates the runtime configuration of a thing.
+    */
+  def updateThingRuntimeConfiguration(params: UpdateThingRuntimeConfigurationRequest): Request[UpdateThingRuntimeConfigurationResponse, AWSError] = js.native
+  def updateThingRuntimeConfiguration(
+    params: UpdateThingRuntimeConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateThingRuntimeConfigurationResponse, Unit]
+  ): Request[UpdateThingRuntimeConfigurationResponse, AWSError] = js.native
 }
-

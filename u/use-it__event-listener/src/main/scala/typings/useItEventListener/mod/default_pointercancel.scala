@@ -7,11 +7,12 @@ import typings.std.Window
 import typings.useItEventListener.useItEventListenerStrings.pointercancel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@use-it/event-listener", JSImport.Default)
 @js.native
 object default_pointercancel extends js.Object {
+  
   def apply(eventName: pointercancel, handler: PointerEvent): Unit = js.native
   def apply(
     eventName: pointercancel,
@@ -44,4 +45,3 @@ object default_pointercancel extends js.Object {
   def apply(eventName: pointercancel, handler: PointerEvent, element: Window): Unit = js.native
   def apply(eventName: pointercancel, handler: PointerEvent, element: Window, options: Options): Unit = js.native
 }
-

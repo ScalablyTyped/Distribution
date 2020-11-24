@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Enterprises")
 @js.native
 class ResourceEnterprises protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.enterprises.acknowledgeNotificationSet
     * @desc Acknowledges notifications that were received from
@@ -43,6 +43,7 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * androidenterprise.enterprises.completeSignup
     * @desc Completes the signup flow, by specifying the Completion token and
@@ -74,6 +75,9 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnterprise]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.enterprises.createWebToken
     * @desc Returns a unique token to access an embeddable UI. To generate a
@@ -109,6 +113,7 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdministratorWebToken]
   ): Unit = js.native
+  
   /**
     * androidenterprise.enterprises.enroll
     * @desc Enrolls an enterprise with the calling EMM.
@@ -138,6 +143,7 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnterprise]
   ): Unit = js.native
+  
   /**
     * androidenterprise.enterprises.generateSignupUrl
     * @desc Generates a sign-up URL.
@@ -169,6 +175,7 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSignupInfo]
   ): Unit = js.native
+  
   /**
     * androidenterprise.enterprises.get
     * @desc Retrieves the name and domain of an enterprise.
@@ -197,6 +204,7 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnterprise]
   ): Unit = js.native
+  
   /**
     * androidenterprise.enterprises.getServiceAccount
     * @desc Returns a service account and credentials. The service account can
@@ -239,6 +247,7 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaServiceAccount]
   ): Unit = js.native
+  
   /**
     * androidenterprise.enterprises.getStoreLayout
     * @desc Returns the store layout for the enterprise. If the store layout
@@ -269,6 +278,7 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStoreLayout]
   ): Unit = js.native
+  
   /**
     * androidenterprise.enterprises.list
     * @desc Looks up an enterprise by domain name. This is only supported for
@@ -304,6 +314,7 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnterprisesListResponse]
   ): Unit = js.native
+  
   /**
     * androidenterprise.enterprises.pullNotificationSet
     * @desc Pulls and returns a notification set for the enterprises associated
@@ -348,6 +359,7 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNotificationSet]
   ): Unit = js.native
+  
   /**
     * androidenterprise.enterprises.sendTestPushNotification
     * @desc Sends a test notification to validate the EMM integration with the
@@ -380,6 +392,7 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnterprisesSendTestPushNotificationResponse]
   ): Unit = js.native
+  
   /**
     * androidenterprise.enterprises.setAccount
     * @desc Sets the account that will be used to authenticate to the API as
@@ -413,6 +426,7 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEnterpriseAccount]
   ): Unit = js.native
+  
   /**
     * androidenterprise.enterprises.setStoreLayout
     * @desc Sets the store layout for the enterprise. By default,
@@ -449,6 +463,7 @@ class ResourceEnterprises protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaStoreLayout]
   ): Unit = js.native
+  
   /**
     * androidenterprise.enterprises.unenroll
     * @desc Unenrolls an enterprise from the calling EMM.
@@ -478,4 +493,3 @@ class ResourceEnterprises protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

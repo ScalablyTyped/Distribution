@@ -2,10 +2,11 @@ package typings.aliApp.my
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NodesRef extends js.Object {
+  
   /**
     * 添加节点的布局位置的查询请求，相对于显示区域，以像素为单位。
     * 其功能类似于DOM的getBoundingClientRect。
@@ -17,6 +18,7 @@ trait NodesRef extends js.Object {
     */
   def boundingClientRect[T /* <: NodesRefRect | js.Array[NodesRefRect] */](): SelectorQuery = js.native
   def boundingClientRect[T /* <: NodesRefRect | js.Array[NodesRefRect] */](callback: js.Function1[/* rect */ T, Unit]): SelectorQuery = js.native
+  
   /**
     * 添加节点的滚动位置查询请求，以像素为单位。
     * 节点必须是scroll-view或者viewport。
@@ -27,4 +29,3 @@ trait NodesRef extends js.Object {
   def scrollOffset(): SelectorQuery = js.native
   def scrollOffset(callback: js.Function1[/* rect */ NodeRefOffset, Unit]): SelectorQuery = js.native
 }
-

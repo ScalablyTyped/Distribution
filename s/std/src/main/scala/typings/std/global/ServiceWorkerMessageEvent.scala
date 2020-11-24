@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.ServiceWorkerMessageEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ServiceWorkerMessageEvent")
 @js.native
@@ -14,7 +14,6 @@ class ServiceWorkerMessageEvent protected ()
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, eventInitDict: ServiceWorkerMessageEventInit) = this()
 }
-
 @JSGlobal("ServiceWorkerMessageEvent")
 @js.native
 object ServiceWorkerMessageEvent
@@ -24,4 +23,3 @@ object ServiceWorkerMessageEvent
       /* eventInitDict */ ServiceWorkerMessageEventInit, 
       typings.std.ServiceWorkerMessageEvent
     ]
-

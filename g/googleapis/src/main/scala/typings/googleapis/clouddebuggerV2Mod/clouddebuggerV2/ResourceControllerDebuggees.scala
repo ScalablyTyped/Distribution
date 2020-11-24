@@ -6,14 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouddebugger/v2", "clouddebugger_v2.Resource$Controller$Debuggees")
 @js.native
 class ResourceControllerDebuggees protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var breakpoints: ResourceControllerDebuggeesBreakpoints = js.native
+  
   var context: APIRequestContext = js.native
+  
   /**
     * clouddebugger.controller.debuggees.register
     * @desc Registers the debuggee with the controller service.  All agents
@@ -105,4 +108,3 @@ class ResourceControllerDebuggees protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRegisterDebuggeeResponse]
   ): Unit = js.native
 }
-

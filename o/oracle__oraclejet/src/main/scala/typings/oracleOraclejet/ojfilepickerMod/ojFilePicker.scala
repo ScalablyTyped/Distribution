@@ -4,7 +4,6 @@ import typings.oracleOraclejet.anon.Files
 import typings.oracleOraclejet.mod.JetElement
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.JetSetPropertyType
-import typings.oracleOraclejet.ojfilepickerMod.ojFilePicker.ojSelect
 import typings.oracleOraclejet.oracleOraclejetStrings.abort
 import typings.oracleOraclejet.oracleOraclejetStrings.accept
 import typings.oracleOraclejet.oracleOraclejetStrings.acceptChanged
@@ -63,6 +62,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.mouseout
 import typings.oracleOraclejet.oracleOraclejetStrings.mouseover
 import typings.oracleOraclejet.oracleOraclejetStrings.mouseup
 import typings.oracleOraclejet.oracleOraclejetStrings.multiple
+import typings.oracleOraclejet.oracleOraclejetStrings.ojSelect
 import typings.oracleOraclejet.oracleOraclejetStrings.paste
 import typings.oracleOraclejet.oracleOraclejetStrings.pause
 import typings.oracleOraclejet.oracleOraclejetStrings.play
@@ -127,17 +127,13 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojFilePicker extends JetElement[ojFilePickerSettableProperties] {
+  
   var accept: js.Array[String] | Null = js.native
-  var onAcceptChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String] | Null], _]) | Null = js.native
-  var onOjSelect: (js.Function1[/* event */ ojSelect, _]) | Null = js.native
-  var onSelectOnChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | click | drop | clickAndDrop], _]) | Null = js.native
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[multiple | single], _]) | Null = js.native
-  var selectOn: auto | click | drop | clickAndDrop = js.native
-  var selectionMode: multiple | single = js.native
+  
   def addEventListener(
     `type`: selectOnChanged,
     listener: js.ThisFunction1[
@@ -619,13 +615,21 @@ trait ojFilePicker extends JetElement[ojFilePickerSettableProperties] {
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojSelect(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojSelect,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojSelect, _]
+    `type`: ojSelect,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojfilepickerMod.ojFilePicker.ojSelect, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojSelect(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojSelect,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojSelect, _],
+    `type`: ojSelect,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojfilepickerMod.ojFilePicker.ojSelect, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -961,6 +965,7 @@ trait ojFilePicker extends JetElement[ojFilePickerSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_accept(property: accept): js.Array[String] | Null = js.native
@@ -968,7 +973,21 @@ trait ojFilePicker extends JetElement[ojFilePickerSettableProperties] {
   def getProperty_selectOn(property: selectOn): auto | click | drop | clickAndDrop = js.native
   @JSName("getProperty")
   def getProperty_selectionMode(property: selectionMode): multiple | single = js.native
+  
+  var onAcceptChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String] | Null], _]) | Null = js.native
+  
+  var onOjSelect: (js.Function1[/* event */ typings.oracleOraclejet.ojfilepickerMod.ojFilePicker.ojSelect, _]) | Null = js.native
+  
+  var onSelectOnChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | click | drop | clickAndDrop], _]) | Null = js.native
+  
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[multiple | single], _]) | Null = js.native
+  
+  var selectOn: auto | click | drop | clickAndDrop = js.native
+  
+  var selectionMode: multiple | single = js.native
+  
   def setProperties(properties: ojFilePickerSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: selectOn, value: auto): Unit = js.native
   def setProperty(property: selectOn, value: click): Unit = js.native
   def setProperty(property: selectOn, value: clickAndDrop): Unit = js.native
@@ -981,10 +1000,9 @@ trait ojFilePicker extends JetElement[ojFilePickerSettableProperties] {
   @JSName("setProperty")
   def setProperty_accept(property: accept, value: js.Array[String]): Unit = js.native
 }
-
 @JSImport("@oracle/oraclejet/ojfilepicker", "ojFilePicker")
 @js.native
 object ojFilePicker extends js.Object {
+  
   type ojSelect = CustomEvent[Files]
 }
-

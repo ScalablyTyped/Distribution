@@ -2,14 +2,14 @@ package typings.tableau.tableau
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ErrorCode extends js.Object
-
 @JSGlobal("tableau.ErrorCode")
 @js.native
 object ErrorCode extends js.Object {
+  
   /** The browser is not capable of supporting the Tableau JavaScript API. */
   @js.native
   sealed trait BROWSER_NOT_CAPABLE extends ErrorCode
@@ -148,6 +148,4 @@ object ErrorCode extends js.Object {
   /** A Viz object has already been created as a child of the parentElement specified in the Viz constructor. */
   @js.native
   sealed trait VIZ_ALREADY_IN_MANAGER extends ErrorCode
-  
 }
-

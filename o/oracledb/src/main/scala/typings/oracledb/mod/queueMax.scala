@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The maximum number of pending pool.getConnection() calls that can be queued.
@@ -20,4 +20,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "queueMax")
 @js.native
 object queueMax extends TopLevel[Double]
-

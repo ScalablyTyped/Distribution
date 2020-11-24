@@ -9,12 +9,14 @@ import typings.stompit.stompitStrings.connecting
 import typings.stompit.stompitStrings.error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ConnectFailover extends EventEmitter {
+  
   def addServer(config: String): Unit = js.native
   def addServer(config: ConnectOptions): Unit = js.native
+  
   def connect(
     callback: js.Function4[
       /* error */ Error | Null, 
@@ -24,7 +26,9 @@ trait ConnectFailover extends EventEmitter {
       Unit
     ]
   ): Abort = js.native
+  
   def getReconnectDelay(reconnects: Double): Double = js.native
+  
   @JSName("on")
   def on_connect(event: connect, listener: js.Function1[/* server */ ConnectState, Unit]): this.type = js.native
   @JSName("on")
@@ -32,4 +36,3 @@ trait ConnectFailover extends EventEmitter {
   @JSName("on")
   def on_error(event: error, listener: js.Function2[/* err */ ConnectError, /* server */ ConnectState, Unit]): this.type = js.native
 }
-

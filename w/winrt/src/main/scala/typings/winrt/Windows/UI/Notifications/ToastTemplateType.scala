@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.Notifications
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ToastTemplateType extends js.Object
-
 @JSGlobal("Windows.UI.Notifications.ToastTemplateType")
 @js.native
 object ToastTemplateType extends js.Object {
+  
   @js.native
   sealed trait toastImageAndText01 extends ToastTemplateType
   
@@ -33,6 +33,4 @@ object ToastTemplateType extends js.Object {
   
   @js.native
   sealed trait toastText04 extends ToastTemplateType
-  
 }
-

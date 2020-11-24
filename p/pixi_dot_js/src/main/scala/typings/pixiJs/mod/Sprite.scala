@@ -4,7 +4,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Sprite object is the base for all textured objects that are rendered to the screen
@@ -38,11 +38,11 @@ class Sprite ()
   extends typings.pixiJs.PIXI.Sprite {
   def this(texture: typings.pixiJs.PIXI.Texture) = this()
 }
-
 /* static members */
 @JSImport("pixi.js", "Sprite")
 @js.native
 object Sprite extends js.Object {
+  
   /**
     * Helper function that creates a new sprite based on the source you provide.
     * The source can be - frame id, image url, video url, canvas element, video element, base texture
@@ -61,4 +61,3 @@ object Sprite extends js.Object {
   def from(source: HTMLVideoElement): typings.pixiJs.PIXI.Sprite = js.native
   def from(source: HTMLVideoElement, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
 }
-

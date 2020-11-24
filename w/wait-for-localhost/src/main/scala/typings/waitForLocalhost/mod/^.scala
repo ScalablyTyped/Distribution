@@ -2,17 +2,12 @@ package typings.waitForLocalhost.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wait-for-localhost", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function waitForLocalhost(
-  // 	options?: waitForLocalhost.Options
-  // ): Promise<void>;
-  // export = waitForLocalhost;
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof waitForLocalhost */ js.Any = js.native
+  
   /**
   	Wait for localhost to be ready.
   	@example
@@ -26,5 +21,11 @@ object ^ extends js.Object {
   	 */
   def apply(): js.Promise[Unit] = js.native
   def apply(options: Options): js.Promise[Unit] = js.native
+  
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function waitForLocalhost(
+  // 	options?: waitForLocalhost.Options
+  // ): Promise<void>;
+  // export = waitForLocalhost;
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof waitForLocalhost */ js.Any = js.native
 }
-

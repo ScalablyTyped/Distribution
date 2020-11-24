@@ -2,14 +2,14 @@ package typings.novaEditorNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait IssueSeverity extends js.Object
-
 @JSGlobal("IssueSeverity")
 @js.native
 object IssueSeverity extends js.Object {
+  
   @js.native
   sealed trait Error extends IssueSeverity
   
@@ -21,6 +21,4 @@ object IssueSeverity extends js.Object {
   
   @js.native
   sealed trait Warning extends IssueSeverity
-  
 }
-

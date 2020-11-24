@@ -11,8 +11,8 @@ Convert a file path to a file url: `unicorn.jpg` → `file:///Users/sindresorhus
 | Full name          | file-url |
 | Keywords           | file, url, uri, path, scheme, slash |
 | # releases         | 2 |
-| # dependents       | 102 |
-| # downloads        | 3505068 |
+| # dependents       | 109 |
+| # downloads        | 3939201 |
 | # stars            | 3 |
 
 ## Links

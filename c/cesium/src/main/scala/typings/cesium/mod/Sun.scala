@@ -2,14 +2,17 @@ package typings.cesium.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Sun")
 @js.native
 class Sun () extends js.Object {
-  var glowFactor: Double = js.native
-  var show: Boolean = js.native
+  
   def destroy(): Unit = js.native
+  
+  var glowFactor: Double = js.native
+  
   def isDestroyed(): Boolean = js.native
+  
+  var show: Boolean = js.native
 }
-

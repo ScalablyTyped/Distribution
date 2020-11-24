@@ -23,11 +23,20 @@ import typings.angularCompiler.templateAstMod.TemplateAst
 import typings.angularCompiler.templateAstMod.TemplateAstVisitor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/template_parser/template_parser", JSImport.Namespace)
 @js.native
 object templateParserMod extends js.Object {
+  
+  def createElementCssSelector(elementName: String, attributes: js.Array[js.Tuple2[String, String]]): CssSelector = js.native
+  
+  def isEmptyExpression(ast: AST): Boolean = js.native
+  
+  def removeSummaryDuplicates[T /* <: TypeCompileTypeMetadata */](items: js.Array[T]): js.Array[T] = js.native
+  
+  def splitClasses(classAttrValue: String): js.Array[String] = js.native
+  
   @js.native
   class TemplateParseError protected () extends ParseError {
     def this(message: String, span: ParseSourceSpan, level: ParseErrorLevel) = this()
@@ -58,8 +67,11 @@ object templateParserMod extends js.Object {
       usedPipes: js.Array[CompilePipeSummary],
       errors: js.Array[ParseError]
     ) = this()
+    
     var errors: js.UndefOr[js.Array[ParseError]] = js.native
+    
     var templateAst: js.UndefOr[js.Array[TemplateAst]] = js.native
+    
     var usedPipes: js.UndefOr[js.Array[CompilePipeSummary]] = js.native
   }
   
@@ -83,17 +95,26 @@ object templateParserMod extends js.Object {
       _console: Console,
       transforms: js.Array[TemplateAstVisitor]
     ) = this()
+    
     var _config: js.Any = js.native
+    
     var _console: js.Any = js.native
+    
     var _exprParser: js.Any = js.native
+    
     var _htmlParser: js.Any = js.native
+    
     var _reflector: js.Any = js.native
+    
     var _schemaRegistry: js.Any = js.native
-    var transforms: js.Array[TemplateAstVisitor] = js.native
+    
     def expandHtml(htmlAstWithErrors: ParseTreeResult): ParseTreeResult = js.native
     def expandHtml(htmlAstWithErrors: ParseTreeResult, forced: Boolean): ParseTreeResult = js.native
+    
     def expressionParser: Parser = js.native
+    
     def getInterpolationConfig(component: CompileDirectiveMetadata): js.UndefOr[InterpolationConfig] = js.native
+    
     def parse(
       component: CompileDirectiveMetadata,
       template: String,
@@ -112,6 +133,9 @@ object templateParserMod extends js.Object {
       templateUrl: String,
       preserveWhitespaces: Boolean
     ): Pipes = js.native
+    
+    var transforms: js.Array[TemplateAstVisitor] = js.native
+    
     def tryParse(
       component: CompileDirectiveMetadata,
       template: String,
@@ -130,6 +154,7 @@ object templateParserMod extends js.Object {
       templateUrl: String,
       preserveWhitespaces: Boolean
     ): TemplateParseResult = js.native
+    
     def tryParseHtml(
       htmlAstWithErrors: ParseTreeResult,
       component: CompileDirectiveMetadata,
@@ -138,10 +163,4 @@ object templateParserMod extends js.Object {
       schemas: js.Array[SchemaMetadata]
     ): TemplateParseResult = js.native
   }
-  
-  def createElementCssSelector(elementName: String, attributes: js.Array[js.Tuple2[String, String]]): CssSelector = js.native
-  def isEmptyExpression(ast: AST): Boolean = js.native
-  def removeSummaryDuplicates[T /* <: TypeCompileTypeMetadata */](items: js.Array[T]): js.Array[T] = js.native
-  def splitClasses(classAttrValue: String): js.Array[String] = js.native
 }
-

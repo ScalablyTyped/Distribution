@@ -9,7 +9,7 @@ import typings.babelTypes.babelTypesStrings.method
 import typings.babelTypes.babelTypesStrings.set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.babelTypes.mod.ClassPrivateProperty_
@@ -17,14 +17,15 @@ import scala.scalajs.js.annotation._
   - typings.babelTypes.mod.PrivateName_
 */
 trait Private extends _Node
-
 object Private {
+  
   @scala.inline
-  def ClassPrivateProperty_(key: PrivateName_, `type`: ClassPrivateProperty): Private = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+  def ClassPrivateProperty_(key: PrivateName_, static: js.Any, `type`: ClassPrivateProperty): Private = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Private]
   }
+  
   @scala.inline
   def ClassPrivateMethod_(
     async: Boolean,
@@ -41,6 +42,7 @@ object Private {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Private]
   }
+  
   @scala.inline
   def PrivateName_(id: Identifier_, `type`: PrivateName): Private = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
@@ -48,4 +50,3 @@ object Private {
     __obj.asInstanceOf[Private]
   }
 }
-

@@ -2,7 +2,7 @@ package typings.mdns.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mdns", "Advertisement")
 @js.native
@@ -22,4 +22,3 @@ class AdvertisementCls protected () extends Advertisement {
     callback: js.Function2[/* error */ DnsSdError, /* service */ Service, Unit]
   ) = this()
 }
-

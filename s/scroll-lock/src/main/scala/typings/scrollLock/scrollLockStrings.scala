@@ -3,9 +3,25 @@ package typings.scrollLock
 import typings.scrollLock.mod.FillGapMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollLockStrings {
+  
+  @scala.inline
+  def margin: margin = "margin".asInstanceOf[margin]
+  
+  @scala.inline
+  def `max-width`: `max-width` = "max-width".asInstanceOf[`max-width`]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def padding: padding = "padding".asInstanceOf[padding]
+  
+  @scala.inline
+  def width: width = "width".asInstanceOf[width]
+  
   @js.native
   sealed trait margin extends FillGapMethod
   
@@ -20,16 +36,4 @@ object scrollLockStrings {
   
   @js.native
   sealed trait width extends FillGapMethod
-  
-  @scala.inline
-  def margin: margin = "margin".asInstanceOf[margin]
-  @scala.inline
-  def `max-width`: `max-width` = "max-width".asInstanceOf[`max-width`]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def padding: padding = "padding".asInstanceOf[padding]
-  @scala.inline
-  def width: width = "width".asInstanceOf[width]
 }
-

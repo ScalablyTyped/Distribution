@@ -7,11 +7,13 @@ import typings.pouchdbReplication.PouchDB.Replication.SyncResultComplete
 import typings.pouchdbReplication.anon.From
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Database[Content /* <: js.Object */] extends js.Object {
+  
   var replicate: From = js.native
+  
   /**
     * Sync data from src to target and target to src. This is a convenience method for bidirectional data replication.
     *
@@ -38,4 +40,3 @@ trait Database[Content /* <: js.Object */] extends js.Object {
   def sync[Content](remote: Database[Content], options: SyncOptions): Sync[Content] = js.native
   def sync[Content](remote: Database[Content], options: SyncOptions, callback: Callback[SyncResultComplete[Content]]): Sync[Content] = js.native
 }
-

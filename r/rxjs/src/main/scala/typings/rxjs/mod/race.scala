@@ -4,11 +4,12 @@ import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.typesMod.ObservableInput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs", "race")
 @js.native
 object race extends js.Object {
+  
   def apply(arg: js.Array[ObservableInput[_]]): Observable[js.Object] = js.native
   def apply(observables: ObservableInput[_]*): Observable[js.Object] = js.native
   def apply[A](a: ObservableInput[A]): Observable[A] = js.native
@@ -35,4 +36,3 @@ object race extends js.Object {
     e: ObservableInput[E]
   ): Observable[A | B | C | D | E] = js.native
 }
-

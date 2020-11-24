@@ -2,17 +2,17 @@ package typings.openui5.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FlexDirection extends js.Object
-
 /**
   * Available directions for flex layouts.
   */
 @JSGlobal("sap.m.FlexDirection")
 @js.native
 object FlexDirection extends js.Object {
+  
   @js.native
   sealed trait Column extends FlexDirection
   
@@ -27,6 +27,4 @@ object FlexDirection extends js.Object {
   
   @js.native
   sealed trait RowReverse extends FlexDirection
-  
 }
-

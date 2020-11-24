@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Spreadsheet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CFormatHighlightColor extends js.Object
-
 @JSGlobal("ej.Spreadsheet.CFormatHighlightColor")
 @js.native
 object CFormatHighlightColor extends js.Object {
+  
   ///Highlights green with dark green text color.
   @js.native
   sealed trait GreenFillwithDarkGreenText extends CFormatHighlightColor
@@ -29,6 +29,4 @@ object CFormatHighlightColor extends js.Object {
   ///Highlights yellow with dark yellow text color.
   @js.native
   sealed trait YellowFillwithDarkYellowText extends CFormatHighlightColor
-  
 }
-

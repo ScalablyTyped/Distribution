@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.fibers.futureMod.global.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FiberConstructor
@@ -20,6 +20,9 @@ trait FiberConstructor
   * may be restarted with another call to run().
   */
 Instantiable1[/* fn */ Function, Fiber] {
+  
+  def apply(fn: Function): Fiber = js.native
+  
   /**
     * `Fiber.current` will contain the currently-running Fiber. It will be
     * `undefined` if there is no fiber (i.e. the main stack of execution).
@@ -28,7 +31,7 @@ Instantiable1[/* fn */ Function, Fiber] {
     * `Fiber.current`.
     */
   val current: js.UndefOr[Fiber] = js.native
-  def apply(fn: Function): Fiber = js.native
+  
   /**
     * `Fiber.yield()` will halt execution of the current fiber and return control
     * back to original caller of run(). If an argument is supplied to yield(),
@@ -47,4 +50,3 @@ Instantiable1[/* fn */ Function, Fiber] {
   def `yield`[T, R](): T = js.native
   def `yield`[T, R](param: R): T = js.native
 }
-

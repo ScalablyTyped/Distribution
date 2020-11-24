@@ -2,10 +2,11 @@ package typings.datatablesNet.DataTables
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StaticRenderFunctions extends js.Object {
+  
   /**
     * Will format numeric data (defined by `columns.data`) for display, retaining the original unformatted data for sorting and filtering.
     *
@@ -25,9 +26,9 @@ trait StaticRenderFunctions extends js.Object {
   ): ObjectColumnRender = js.native
   def number(thousands: String, decimal: String, precision: Double, prefix: String): ObjectColumnRender = js.native
   def number(thousands: String, decimal: String, precision: Double, prefix: String, postfix: String): ObjectColumnRender = js.native
+  
   /**
     * Escape HTML to help prevent XSS attacks. It has no optional parameters.
     */
   def text(): ObjectColumnRender = js.native
 }
-

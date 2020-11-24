@@ -12,7 +12,7 @@ Helper functions for V8 coverage files.
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 4 |
-| # downloads        | 46534261 |
+| # downloads        | 65530375 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.ember.mod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class is used internally by Ember and Ember Data.
@@ -14,11 +14,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class OrderedSet ()
   extends typings.ember.mod.Ember.OrderedSet
-
 /* static members */
 @JSImport("ember", "OrderedSet")
 @js.native
 object OrderedSet extends js.Object {
+  
   def create(): typings.ember.mod.Ember.OrderedSet = js.native
 }
-

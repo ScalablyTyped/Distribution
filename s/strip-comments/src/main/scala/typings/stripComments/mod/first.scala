@@ -2,11 +2,12 @@ package typings.stripComments.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strip-comments", "first")
 @js.native
 object first extends js.Object {
+  
   /**
     * Strip the first comment from the given `input`. Or, if `opts.keepProtected` is true,
     * the first non-protected comment will be stripped.
@@ -22,4 +23,3 @@ object first extends js.Object {
   def apply(input: String): String = js.native
   def apply(input: String, options: Options): String = js.native
 }
-

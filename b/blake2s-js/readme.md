@@ -10,9 +10,9 @@ Pure JavaScript implementation of BLAKE2s cryptographic hash function.
 | ------------------ | :-------------: |
 | Full name          | blake2s-js |
 | Keywords           | blake2, blake2s, blake, hash, crypto, cryptographic |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 41530 |
+| # downloads        | 13736 |
 | # stars            | 1 |
 
 ## Links

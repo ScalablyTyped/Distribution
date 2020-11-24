@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicebroker/v1alpha1", "servicebroker_v1alpha1.Resource$Projects$Brokers$V2$Service_instances")
 @js.native
 class ResourceProjectsBrokersV2ServiceInstances protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var service_bindings: ResourceProjectsBrokersV2ServiceInstancesServiceBindings = js.native
+  
   /**
     * servicebroker.projects.brokers.v2.service_instances.create
     * @desc Provisions a service instance. If `request.accepts_incomplete` is
@@ -59,6 +60,7 @@ class ResourceProjectsBrokersV2ServiceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1CreateServiceInstanceResponse]
   ): Unit = js.native
+  
   /**
     * servicebroker.projects.brokers.v2.service_instances.delete
     * @desc Deprovisions a service instance. For synchronous/asynchronous
@@ -98,6 +100,7 @@ class ResourceProjectsBrokersV2ServiceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1DeleteServiceInstanceResponse]
   ): Unit = js.native
+  
   /**
     * servicebroker.projects.brokers.v2.service_instances.get
     * @desc Gets the given service instance from the system. This API is an
@@ -131,6 +134,7 @@ class ResourceProjectsBrokersV2ServiceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1ServiceInstance]
   ): Unit = js.native
+  
   /**
     * servicebroker.projects.brokers.v2.service_instances.getLast_operation
     * @desc Returns the state of the last operation for the service instance.
@@ -168,6 +172,7 @@ class ResourceProjectsBrokersV2ServiceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1Operation]
   ): Unit = js.native
+  
   /**
     * servicebroker.projects.brokers.v2.service_instances.patch
     * @desc Updates an existing service instance. See CreateServiceInstance for
@@ -205,5 +210,6 @@ class ResourceProjectsBrokersV2ServiceInstances protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1UpdateServiceInstanceResponse]
   ): Unit = js.native
+  
+  var service_bindings: ResourceProjectsBrokersV2ServiceInstancesServiceBindings = js.native
 }
-

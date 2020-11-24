@@ -2,7 +2,7 @@ package typings.ranjs.mod.dist
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.BetaBinomial")
 @js.native
@@ -16,4 +16,3 @@ class BetaBinomial ()
   def this(n: Double, alpha: js.UndefOr[scala.Nothing], beta: Double) = this()
   def this(n: Double, alpha: Double, beta: Double) = this()
 }
-

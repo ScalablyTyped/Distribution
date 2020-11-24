@@ -2,24 +2,15 @@ package typings.macosVersion
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
-    /**
-    	Whether the platform is macOS.
-    	@example
-    	```
-    	import macosVersion = require('macos-version');
-    	if (macosVersion.isMacOS) {
-    		console.log('macOS');
-    	}
-    	```
-    	*/
-    val isMacOS: Boolean = js.native
+    
     /**
     	@returns The macOS version or `undefined` if the platform is not macOS.
     	@example
@@ -30,6 +21,7 @@ object anon extends js.Object {
     	```
     	*/
     def apply(): js.UndefOr[String] = js.native
+    
     /**
     	Throws an error if the specified [semver range](https://github.com/npm/node-semver#ranges) does not match the macOS version.
     	@example
@@ -40,6 +32,7 @@ object anon extends js.Object {
     	```
     	*/
     def assert(semverRange: String): Unit = js.native
+    
     /**
     	Throws an error if the macOS version is not greater than or equal to the specified version.
     	_Prefer this over `.assert()` whenever possible as it outputs a more user-friendly error message._
@@ -51,6 +44,7 @@ object anon extends js.Object {
     	```
     	*/
     def assertGreaterThanOrEqualTo(version: String): Unit = js.native
+    
     /**
     	Throws an error if platform is not macOS.
     	@example
@@ -61,6 +55,7 @@ object anon extends js.Object {
     	```
     	*/
     def assertMacOS(): Unit = js.native
+    
     /**
     	@returns Whether the specified [semver range](https://github.com/npm/node-semver#ranges) matches the macOS version.
     	@example
@@ -71,6 +66,7 @@ object anon extends js.Object {
     	```
     	*/
     def is(semverRange: String): Boolean = js.native
+    
     /**
     	@returns Whether the macOS version is greater than or equal to the specified version.
     	@example
@@ -81,7 +77,17 @@ object anon extends js.Object {
     	```
     	*/
     def isGreaterThanOrEqualTo(version: String): Boolean = js.native
+    
+    /**
+    	Whether the platform is macOS.
+    	@example
+    	```
+    	import macosVersion = require('macos-version');
+    	if (macosVersion.isMacOS) {
+    		console.log('macOS');
+    	}
+    	```
+    	*/
+    val isMacOS: Boolean = js.native
   }
-  
 }
-

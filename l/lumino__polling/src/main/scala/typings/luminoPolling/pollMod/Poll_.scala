@@ -10,7 +10,7 @@ import typings.luminoSignaling.mod.ISignal
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/polling/types/poll", "Poll")
 @js.native
@@ -23,42 +23,40 @@ class Poll_[T, U, V /* <: String */] protected ()
     * @param options - The poll instantiation options.
     */
   def this(options: IOptions[T, U, V]) = this()
+  
   var _disposed: js.Any = js.native
+  
   /**
     * Execute a new poll factory promise or stand by if necessary.
     */
   var _execute: js.Any = js.native
+  
   var _factory: js.Any = js.native
+  
   var _frequency: js.Any = js.native
+  
   var _standby: js.Any = js.native
+  
   var _state: js.Any = js.native
+  
   var _tick: js.Any = js.native
+  
   var _ticked: js.Any = js.native
+  
   var _timeout: js.Any = js.native
+  
   /**
     * A signal emitted when the poll is disposed.
     */
   /* InferMemberOverrides */
   override val disposed: ISignal[this.type, Unit] = js.native
+  
   /**
     * Whether the poll is disposed.
     */
   /* InferMemberOverrides */
   override val isDisposed: Boolean = js.native
-  /**
-    * Indicates when the poll switches to standby.
-    */
-  var standby: Standby | (js.Function0[Boolean | Standby]) = js.native
-  /**
-    * A promise that resolves when the poll next ticks.
-    */
-  @JSName("tick")
-  val tick_Poll_ : js.Promise[this.type] = js.native
-  /**
-    * A signal emitted when the poll ticks and fires off a new request.
-    */
-  @JSName("ticked")
-  val ticked_Poll_ : ISignal[this.type, State[T, U, V]] = js.native
+  
   /**
     * Refreshes the poll. Schedules `refreshed` tick if necessary.
     *
@@ -70,6 +68,7 @@ class Poll_[T, U, V /* <: String */] protected ()
     * await the `poll.tick` promise: `await poll.refresh(); await poll.tick;`
     */
   def refresh(): js.Promise[Unit] = js.native
+  
   /**
     * Schedule the next poll tick.
     *
@@ -85,17 +84,35 @@ class Poll_[T, U, V /* <: String */] protected ()
     */
   def schedule(): js.Promise[Unit] = js.native
   def schedule(next: Partial[(State[T, U, V]) with (Cancel[T, U, V])]): js.Promise[Unit] = js.native
+  
+  /**
+    * Indicates when the poll switches to standby.
+    */
+  var standby: Standby | (js.Function0[Boolean | Standby]) = js.native
+  
   /**
     * Starts the poll. Schedules `started` tick if necessary.
     *
     * @returns A promise that resolves after tick is scheduled and never rejects.
     */
   def start(): js.Promise[Unit] = js.native
+  
   /**
     * Stops the poll. Schedules `stopped` tick if necessary.
     *
     * @returns A promise that resolves after tick is scheduled and never rejects.
     */
   def stop(): js.Promise[Unit] = js.native
+  
+  /**
+    * A promise that resolves when the poll next ticks.
+    */
+  @JSName("tick")
+  val tick_Poll_ : js.Promise[this.type] = js.native
+  
+  /**
+    * A signal emitted when the poll ticks and fires off a new request.
+    */
+  @JSName("ticked")
+  val ticked_Poll_ : ISignal[this.type, State[T, U, V]] = js.native
 }
-

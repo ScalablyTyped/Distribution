@@ -2,10 +2,9 @@ package typings.smartBuffer.mod
 
 import typings.node.Buffer
 import typings.node.BufferEncoding
-import typings.std.BigInt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("smart-buffer", "SmartBuffer")
 @js.native
@@ -16,14 +15,18 @@ import scala.scalajs.js.annotation._
   */
 class SmartBuffer () extends js.Object {
   def this(options: SmartBufferOptions) = this()
+  
   var _buff: js.Any = js.native
+  
   var _encoding: js.Any = js.native
+  
   /**
     * Ensures that the internal Buffer is large enough to write at least the given amount of data.
     *
     * @param minLength { Number } The minimum length of the data needs to be written.
     */
   var _ensureCapacity: js.Any = js.native
+  
   /**
     * Ensures that the internal Buffer is large enough to write data.
     *
@@ -31,6 +34,7 @@ class SmartBuffer () extends js.Object {
     * @param offset { Number } The offset of the data to be written (defaults to writeOffset).
     */
   var _ensureWriteable: js.Any = js.native
+  
   /**
     * Handles writing or insert of a Buffer.
     *
@@ -38,6 +42,7 @@ class SmartBuffer () extends js.Object {
     * @param offset { Number } The offset to write the Buffer to.
     */
   var _handleBuffer: js.Any = js.native
+  
   /**
     * Handles inserting and writing strings.
     *
@@ -47,6 +52,7 @@ class SmartBuffer () extends js.Object {
     * @param encoding { String } The BufferEncoding to use for writing strings (defaults to instance encoding).
     */
   var _handleString: js.Any = js.native
+  
   /**
     * Inserts a numeric number value based on the given offset and value.
     *
@@ -60,6 +66,7 @@ class SmartBuffer () extends js.Object {
     * @returns SmartBuffer this buffer
     */
   var _insertNumberValue: js.Any = js.native
+  
   /**
     * Reads a numeric number value using the provided function.
     *
@@ -72,7 +79,9 @@ class SmartBuffer () extends js.Object {
     * @returns { T } the number value
     */
   var _readNumberValue: js.Any = js.native
+  
   var _readOffset: js.Any = js.native
+  
   /**
     * Writes a numeric number value based on the given offset and value.
     *
@@ -86,7 +95,19 @@ class SmartBuffer () extends js.Object {
     * @returns SmartBuffer this buffer
     */
   var _writeNumberValue: js.Any = js.native
+  
   var _writeOffset: js.Any = js.native
+  
+  /**
+    * Clears the SmartBuffer instance to its original empty state.
+    */
+  def clear(): SmartBuffer = js.native
+  
+  /**
+    * Destroys the SmartBuffer instance.
+    */
+  def destroy(): SmartBuffer = js.native
+  
   /**
     * Gets the currently set string encoding of the SmartBuffer instance.
     *
@@ -98,6 +119,7 @@ class SmartBuffer () extends js.Object {
     * @param encoding { BufferEncoding } The string Buffer encoding to set.
     */
   var encoding: BufferEncoding = js.native
+  
   /**
     * Ensures that the internal Buffer is large enough to insert data.
     *
@@ -105,6 +127,7 @@ class SmartBuffer () extends js.Object {
     * @param offset { Number } The offset of the data to be written.
     */
   var ensureInsertable: js.Any = js.native
+  
   /**
     * Ensures that the internal Buffer is large enough to read data.
     *
@@ -112,43 +135,7 @@ class SmartBuffer () extends js.Object {
     * @param offset { Number } The offset of the data that needs to be read.
     */
   var ensureReadable: js.Any = js.native
-  /**
-    * Gets the underlying internal Buffer. (This includes unmanaged data in the Buffer)
-    *
-    * @return { Buffer } The Buffer value.
-    */
-  val internalBuffer: Buffer = js.native
-  var length: Double = js.native
-  /**
-    * Gets the current read offset value of the SmartBuffer instance.
-    *
-    * @return { Number }
-    */
-  /**
-    * Sets the read offset value of the SmartBuffer instance.
-    *
-    * @param offset { Number } - The offset value to set.
-    */
-  var readOffset: Double = js.native
-  /**
-    * Gets the current write offset value of the SmartBuffer instance.
-    *
-    * @return { Number }
-    */
-  /**
-    * Sets the write offset value of the SmartBuffer instance.
-    *
-    * @param offset { Number } - The offset value to set.
-    */
-  var writeOffset: Double = js.native
-  /**
-    * Clears the SmartBuffer instance to its original empty state.
-    */
-  def clear(): SmartBuffer = js.native
-  /**
-    * Destroys the SmartBuffer instance.
-    */
-  def destroy(): SmartBuffer = js.native
+  
   /**
     * Inserts a BigInt64BE value at the given offset value.
     *
@@ -157,7 +144,8 @@ class SmartBuffer () extends js.Object {
     *
     * @return this
     */
-  def insertBigInt64BE(value: BigInt, offset: Double): SmartBuffer = js.native
+  def insertBigInt64BE(value: js.BigInt, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts a Int64LE value at the given offset value.
     *
@@ -166,7 +154,8 @@ class SmartBuffer () extends js.Object {
     *
     * @return this
     */
-  def insertBigInt64LE(value: BigInt, offset: Double): SmartBuffer = js.native
+  def insertBigInt64LE(value: js.BigInt, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts a BigUInt64BE value at the given offset value.
     *
@@ -175,7 +164,8 @@ class SmartBuffer () extends js.Object {
     *
     * @return this
     */
-  def insertBigUInt64BE(value: BigInt, offset: Double): SmartBuffer = js.native
+  def insertBigUInt64BE(value: js.BigInt, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts a BigUInt64LE value at the given offset value.
     *
@@ -184,7 +174,8 @@ class SmartBuffer () extends js.Object {
     *
     * @return this
     */
-  def insertBigUInt64LE(value: BigInt, offset: Double): SmartBuffer = js.native
+  def insertBigUInt64LE(value: js.BigInt, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes a Buffer to the current write position.
     *
@@ -194,6 +185,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertBuffer(value: Buffer, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts a null-terminated Buffer.
     *
@@ -203,6 +195,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertBufferNT(value: Buffer, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts a DoubleBE value at the given offset value.
     *
@@ -212,6 +205,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertDoubleBE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts a DoubleLE value at the given offset value.
     *
@@ -221,6 +215,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertDoubleLE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts a FloatBE value at the given offset value.
     *
@@ -230,6 +225,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertFloatBE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts a FloatLE value at the given offset value.
     *
@@ -239,6 +235,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertFloatLE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts an Int16BE value at the given offset value.
     *
@@ -248,6 +245,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertInt16BE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts an Int16LE value at the given offset value.
     *
@@ -257,6 +255,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertInt16LE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts an Int32BE value at the given offset value.
     *
@@ -266,6 +265,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertInt32BE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts an Int32LE value at the given offset value.
     *
@@ -275,6 +275,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertInt32LE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts an Int8 value at the given offset value.
     *
@@ -284,6 +285,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertInt8(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts a String
     *
@@ -295,6 +297,7 @@ class SmartBuffer () extends js.Object {
     */
   def insertString(value: String, offset: Double): SmartBuffer = js.native
   def insertString(value: String, offset: Double, encoding: BufferEncoding): SmartBuffer = js.native
+  
   /**
     * Inserts a null-terminated String.
     *
@@ -306,6 +309,7 @@ class SmartBuffer () extends js.Object {
     */
   def insertStringNT(value: String, offset: Double): SmartBuffer = js.native
   def insertStringNT(value: String, offset: Double, encoding: BufferEncoding): SmartBuffer = js.native
+  
   /**
     * Inserts an UInt16BE value at the given offset value.
     *
@@ -315,6 +319,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertUInt16BE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts an UInt16LE value at the given offset value.
     *
@@ -324,6 +329,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertUInt16LE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts an UInt32BE value at the given offset value.
     *
@@ -333,6 +339,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertUInt32BE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts an UInt32LE value at the given offset value.
     *
@@ -342,6 +349,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertUInt32LE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Inserts an UInt8 value at the given offset value.
     *
@@ -351,38 +359,52 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def insertUInt8(value: Double, offset: Double): SmartBuffer = js.native
+  
+  /**
+    * Gets the underlying internal Buffer. (This includes unmanaged data in the Buffer)
+    *
+    * @return { Buffer } The Buffer value.
+    */
+  val internalBuffer: Buffer = js.native
+  
+  var length: Double = js.native
+  
   /**
     * Reads a BigInt64BE value from the current read position or an optionally provided offset.
     *
     * @param offset { Number } The offset to read data from (optional)
     * @return { BigInt }
     */
-  def readBigInt64BE(): BigInt = js.native
-  def readBigInt64BE(offset: Double): BigInt = js.native
+  def readBigInt64BE(): js.BigInt = js.native
+  def readBigInt64BE(offset: Double): js.BigInt = js.native
+  
   /**
     * Reads a BigInt64LE value from the current read position or an optionally provided offset.
     *
     * @param offset { Number } The offset to read data from (optional)
     * @return { BigInt }
     */
-  def readBigInt64LE(): BigInt = js.native
-  def readBigInt64LE(offset: Double): BigInt = js.native
+  def readBigInt64LE(): js.BigInt = js.native
+  def readBigInt64LE(offset: Double): js.BigInt = js.native
+  
   /**
     * Reads a BigUInt64BE value from the current read position or an optionally provided offset.
     *
     * @param offset { Number } The offset to read data from (optional)
     * @return { BigInt }
     */
-  def readBigUInt64BE(): BigInt = js.native
-  def readBigUInt64BE(offset: Double): BigInt = js.native
+  def readBigUInt64BE(): js.BigInt = js.native
+  def readBigUInt64BE(offset: Double): js.BigInt = js.native
+  
   /**
     * Reads a BigUInt64LE value from the current read position or an optionally provided offset.
     *
     * @param offset { Number } The offset to read data from (optional)
     * @return { BigInt }
     */
-  def readBigUInt64LE(): BigInt = js.native
-  def readBigUInt64LE(offset: Double): BigInt = js.native
+  def readBigUInt64LE(): js.BigInt = js.native
+  def readBigUInt64LE(offset: Double): js.BigInt = js.native
+  
   /**
     * Reads a Buffer from the internal read position.
     *
@@ -392,12 +414,14 @@ class SmartBuffer () extends js.Object {
     */
   def readBuffer(): Buffer = js.native
   def readBuffer(length: Double): Buffer = js.native
+  
   /**
     * Reads a null-terminated Buffer from the current read poisiton.
     *
     * @return { Buffer }
     */
   def readBufferNT(): Buffer = js.native
+  
   /**
     * Reads an DoublEBE value from the current read position or an optionally provided offset.
     *
@@ -406,6 +430,7 @@ class SmartBuffer () extends js.Object {
     */
   def readDoubleBE(): Double = js.native
   def readDoubleBE(offset: Double): Double = js.native
+  
   /**
     * Reads an DoubleLE value from the current read position or an optionally provided offset.
     *
@@ -414,6 +439,7 @@ class SmartBuffer () extends js.Object {
     */
   def readDoubleLE(): Double = js.native
   def readDoubleLE(offset: Double): Double = js.native
+  
   /**
     * Reads an FloatBE value from the current read position or an optionally provided offset.
     *
@@ -422,6 +448,7 @@ class SmartBuffer () extends js.Object {
     */
   def readFloatBE(): Double = js.native
   def readFloatBE(offset: Double): Double = js.native
+  
   /**
     * Reads an FloatLE value from the current read position or an optionally provided offset.
     *
@@ -430,6 +457,7 @@ class SmartBuffer () extends js.Object {
     */
   def readFloatLE(): Double = js.native
   def readFloatLE(offset: Double): Double = js.native
+  
   /**
     * Reads an Int16BE value from the current read position or an optionally provided offset.
     *
@@ -438,6 +466,7 @@ class SmartBuffer () extends js.Object {
     */
   def readInt16BE(): Double = js.native
   def readInt16BE(offset: Double): Double = js.native
+  
   /**
     * Reads an Int16LE value from the current read position or an optionally provided offset.
     *
@@ -446,6 +475,7 @@ class SmartBuffer () extends js.Object {
     */
   def readInt16LE(): Double = js.native
   def readInt16LE(offset: Double): Double = js.native
+  
   /**
     * Reads an Int32BE value from the current read position or an optionally provided offset.
     *
@@ -454,6 +484,7 @@ class SmartBuffer () extends js.Object {
     */
   def readInt32BE(): Double = js.native
   def readInt32BE(offset: Double): Double = js.native
+  
   /**
     * Reads an Int32LE value from the current read position or an optionally provided offset.
     *
@@ -462,6 +493,7 @@ class SmartBuffer () extends js.Object {
     */
   def readInt32LE(): Double = js.native
   def readInt32LE(offset: Double): Double = js.native
+  
   /**
     * Reads an Int8 value from the current read position or an optionally provided offset.
     *
@@ -470,6 +502,19 @@ class SmartBuffer () extends js.Object {
     */
   def readInt8(): Double = js.native
   def readInt8(offset: Double): Double = js.native
+  
+  /**
+    * Gets the current read offset value of the SmartBuffer instance.
+    *
+    * @return { Number }
+    */
+  /**
+    * Sets the read offset value of the SmartBuffer instance.
+    *
+    * @param offset { Number } - The offset value to set.
+    */
+  var readOffset: Double = js.native
+  
   /**
     * Reads a String from the current read position.
     *
@@ -485,6 +530,7 @@ class SmartBuffer () extends js.Object {
   def readString(arg1: Double, encoding: BufferEncoding): String = js.native
   def readString(arg1: BufferEncoding): String = js.native
   def readString(arg1: BufferEncoding, encoding: BufferEncoding): String = js.native
+  
   /**
     * Reads a null-terminated String from the current read position.
     *
@@ -494,6 +540,7 @@ class SmartBuffer () extends js.Object {
     */
   def readStringNT(): String = js.native
   def readStringNT(encoding: BufferEncoding): String = js.native
+  
   /**
     * Reads an UInt16BE value from the current read position or an optionally provided offset.
     *
@@ -502,6 +549,7 @@ class SmartBuffer () extends js.Object {
     */
   def readUInt16BE(): Double = js.native
   def readUInt16BE(offset: Double): Double = js.native
+  
   /**
     * Reads an UInt16LE value from the current read position or an optionally provided offset.
     *
@@ -510,6 +558,7 @@ class SmartBuffer () extends js.Object {
     */
   def readUInt16LE(): Double = js.native
   def readUInt16LE(offset: Double): Double = js.native
+  
   /**
     * Reads an UInt32BE value from the current read position or an optionally provided offset.
     *
@@ -518,6 +567,7 @@ class SmartBuffer () extends js.Object {
     */
   def readUInt32BE(): Double = js.native
   def readUInt32BE(offset: Double): Double = js.native
+  
   /**
     * Reads an UInt32LE value from the current read position or an optionally provided offset.
     *
@@ -526,6 +576,7 @@ class SmartBuffer () extends js.Object {
     */
   def readUInt32LE(): Double = js.native
   def readUInt32LE(offset: Double): Double = js.native
+  
   /**
     * Reads an UInt8 value from the current read position or an optionally provided offset.
     *
@@ -534,19 +585,23 @@ class SmartBuffer () extends js.Object {
     */
   def readUInt8(): Double = js.native
   def readUInt8(offset: Double): Double = js.native
+  
   /**
     * Gets the remaining data left to be read from the SmartBuffer instance.
     *
     * @return { Number }
     */
   def remaining(): Double = js.native
+  
   /**
     * Gets the value of the internal managed Buffer (Includes managed data only)
     *
     * @param { Buffer }
     */
   def toBuffer(): Buffer = js.native
+  
   def toString(encoding: BufferEncoding): String = js.native
+  
   /**
     * Writes a BigInt64BE value to the current write position (or at optional offset).
     *
@@ -555,8 +610,9 @@ class SmartBuffer () extends js.Object {
     *
     * @return this
     */
-  def writeBigInt64BE(value: BigInt): SmartBuffer = js.native
-  def writeBigInt64BE(value: BigInt, offset: Double): SmartBuffer = js.native
+  def writeBigInt64BE(value: js.BigInt): SmartBuffer = js.native
+  def writeBigInt64BE(value: js.BigInt, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes a BigInt64LE value to the current write position (or at optional offset).
     *
@@ -565,8 +621,9 @@ class SmartBuffer () extends js.Object {
     *
     * @return this
     */
-  def writeBigInt64LE(value: BigInt): SmartBuffer = js.native
-  def writeBigInt64LE(value: BigInt, offset: Double): SmartBuffer = js.native
+  def writeBigInt64LE(value: js.BigInt): SmartBuffer = js.native
+  def writeBigInt64LE(value: js.BigInt, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes a BigUInt64BE value to the current write position (or at optional offset).
     *
@@ -575,8 +632,9 @@ class SmartBuffer () extends js.Object {
     *
     * @return this
     */
-  def writeBigUInt64BE(value: BigInt): SmartBuffer = js.native
-  def writeBigUInt64BE(value: BigInt, offset: Double): SmartBuffer = js.native
+  def writeBigUInt64BE(value: js.BigInt): SmartBuffer = js.native
+  def writeBigUInt64BE(value: js.BigInt, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes a BigUInt64LE value to the current write position (or at optional offset).
     *
@@ -585,8 +643,9 @@ class SmartBuffer () extends js.Object {
     *
     * @return this
     */
-  def writeBigUInt64LE(value: BigInt): SmartBuffer = js.native
-  def writeBigUInt64LE(value: BigInt, offset: Double): SmartBuffer = js.native
+  def writeBigUInt64LE(value: js.BigInt): SmartBuffer = js.native
+  def writeBigUInt64LE(value: js.BigInt, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes a Buffer to the current write position.
     *
@@ -597,6 +656,7 @@ class SmartBuffer () extends js.Object {
     */
   def writeBuffer(value: Buffer): SmartBuffer = js.native
   def writeBuffer(value: Buffer, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes a null-terminated Buffer.
     *
@@ -607,6 +667,7 @@ class SmartBuffer () extends js.Object {
     */
   def writeBufferNT(value: Buffer): SmartBuffer = js.native
   def writeBufferNT(value: Buffer, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes a DoubleBE value to the current write position (or at optional offset).
     *
@@ -617,6 +678,7 @@ class SmartBuffer () extends js.Object {
     */
   def writeDoubleBE(value: Double): SmartBuffer = js.native
   def writeDoubleBE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes a DoubleLE value to the current write position (or at optional offset).
     *
@@ -627,6 +689,7 @@ class SmartBuffer () extends js.Object {
     */
   def writeDoubleLE(value: Double): SmartBuffer = js.native
   def writeDoubleLE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes a FloatBE value to the current write position (or at optional offset).
     *
@@ -637,6 +700,7 @@ class SmartBuffer () extends js.Object {
     */
   def writeFloatBE(value: Double): SmartBuffer = js.native
   def writeFloatBE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes a FloatLE value to the current write position (or at optional offset).
     *
@@ -647,6 +711,7 @@ class SmartBuffer () extends js.Object {
     */
   def writeFloatLE(value: Double): SmartBuffer = js.native
   def writeFloatLE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes an Int16BE value to the current write position (or at optional offset).
     *
@@ -657,6 +722,7 @@ class SmartBuffer () extends js.Object {
     */
   def writeInt16BE(value: Double): SmartBuffer = js.native
   def writeInt16BE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes an Int16LE value to the current write position (or at optional offset).
     *
@@ -667,6 +733,7 @@ class SmartBuffer () extends js.Object {
     */
   def writeInt16LE(value: Double): SmartBuffer = js.native
   def writeInt16LE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes an Int32BE value to the current write position (or at optional offset).
     *
@@ -677,6 +744,7 @@ class SmartBuffer () extends js.Object {
     */
   def writeInt32BE(value: Double): SmartBuffer = js.native
   def writeInt32BE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes an Int32LE value to the current write position (or at optional offset).
     *
@@ -687,6 +755,7 @@ class SmartBuffer () extends js.Object {
     */
   def writeInt32LE(value: Double): SmartBuffer = js.native
   def writeInt32LE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes an Int8 value to the current write position (or at optional offset).
     *
@@ -697,6 +766,19 @@ class SmartBuffer () extends js.Object {
     */
   def writeInt8(value: Double): SmartBuffer = js.native
   def writeInt8(value: Double, offset: Double): SmartBuffer = js.native
+  
+  /**
+    * Gets the current write offset value of the SmartBuffer instance.
+    *
+    * @return { Number }
+    */
+  /**
+    * Sets the write offset value of the SmartBuffer instance.
+    *
+    * @param offset { Number } - The offset value to set.
+    */
+  var writeOffset: Double = js.native
+  
   /**
     * Writes a String
     *
@@ -712,6 +794,7 @@ class SmartBuffer () extends js.Object {
   def writeString(value: String, arg2: Double, encoding: BufferEncoding): SmartBuffer = js.native
   def writeString(value: String, arg2: BufferEncoding): SmartBuffer = js.native
   def writeString(value: String, arg2: BufferEncoding, encoding: BufferEncoding): SmartBuffer = js.native
+  
   /**
     * Writes a null-terminated String.
     *
@@ -727,6 +810,7 @@ class SmartBuffer () extends js.Object {
   def writeStringNT(value: String, arg2: Double, encoding: BufferEncoding): SmartBuffer = js.native
   def writeStringNT(value: String, arg2: BufferEncoding): SmartBuffer = js.native
   def writeStringNT(value: String, arg2: BufferEncoding, encoding: BufferEncoding): SmartBuffer = js.native
+  
   /**
     * Writes an UInt16BE value to the current write position (or at optional offset).
     *
@@ -737,6 +821,7 @@ class SmartBuffer () extends js.Object {
     */
   def writeUInt16BE(value: Double): SmartBuffer = js.native
   def writeUInt16BE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes an UInt16LE value to the current write position (or at optional offset).
     *
@@ -747,6 +832,7 @@ class SmartBuffer () extends js.Object {
     */
   def writeUInt16LE(value: Double): SmartBuffer = js.native
   def writeUInt16LE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes an UInt32BE value to the current write position (or at optional offset).
     *
@@ -757,6 +843,7 @@ class SmartBuffer () extends js.Object {
     */
   def writeUInt32BE(value: Double): SmartBuffer = js.native
   def writeUInt32BE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes an UInt32LE value to the current write position (or at optional offset).
     *
@@ -767,6 +854,7 @@ class SmartBuffer () extends js.Object {
     */
   def writeUInt32LE(value: Double): SmartBuffer = js.native
   def writeUInt32LE(value: Double, offset: Double): SmartBuffer = js.native
+  
   /**
     * Writes an UInt8 value to the current write position (or at optional offset).
     *
@@ -778,11 +866,11 @@ class SmartBuffer () extends js.Object {
   def writeUInt8(value: Double): SmartBuffer = js.native
   def writeUInt8(value: Double, offset: Double): SmartBuffer = js.native
 }
-
 /* static members */
 @JSImport("smart-buffer", "SmartBuffer")
 @js.native
 object SmartBuffer extends js.Object {
+  
   /**
     * Creates a new SmartBuffer instance with the provided Buffer and optional encoding.
     *
@@ -793,12 +881,14 @@ object SmartBuffer extends js.Object {
     */
   def fromBuffer(buff: Buffer): SmartBuffer = js.native
   def fromBuffer(buff: Buffer, encoding: BufferEncoding): SmartBuffer = js.native
+  
   /**
     * Creates a new SmartBuffer instance with the provided SmartBufferOptions options.
     *
     * @param options { SmartBufferOptions } The options to use when creating the SmartBuffer instance.
     */
   def fromOptions(options: SmartBufferOptions): SmartBuffer = js.native
+  
   /**
     * Creates a new SmartBuffer instance with the provided internal Buffer size and optional encoding.
     *
@@ -809,9 +899,9 @@ object SmartBuffer extends js.Object {
     */
   def fromSize(size: Double): SmartBuffer = js.native
   def fromSize(size: Double, encoding: BufferEncoding): SmartBuffer = js.native
+  
   /**
     * Type checking function that determines if an object is a SmartBufferOptions object.
     */
   def isSmartBufferOptions(options: SmartBufferOptions): /* is smart-buffer.smart-buffer.SmartBufferOptions */ Boolean = js.native
 }
-

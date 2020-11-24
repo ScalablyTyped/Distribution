@@ -9,7 +9,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/rds/optionGroup", "OptionGroup")
 @js.native
@@ -23,44 +23,52 @@ class OptionGroup protected () extends CustomResource {
     */
   def this(name: String, args: OptionGroupArgs) = this()
   def this(name: String, args: OptionGroupArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of the db option group.
     */
   val arn: Output_[String] = js.native
+  
   /**
     * Specifies the name of the engine that this option group should be associated with.
     */
   val engineName: Output_[String] = js.native
+  
   /**
     * Specifies the major version of the engine that this option group should be associated with.
     */
   val majorEngineVersion: Output_[String] = js.native
+  
   /**
     * The Name of the setting.
     */
   val name: Output_[String] = js.native
+  
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`. Must be lowercase, to match as it is stored in AWS.
     */
   val namePrefix: Output_[String] = js.native
+  
   /**
     * The description of the option group. Defaults to "Managed by Pulumi".
     */
   val optionGroupDescription: Output_[String] = js.native
+  
   /**
     * A list of Options to apply.
     */
   val options: Output_[js.UndefOr[js.Array[OptionGroupOption]]] = js.native
+  
   /**
     * A map of tags to assign to the resource.
     */
   val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/rds/optionGroup", "OptionGroup")
 @js.native
 object OptionGroup extends js.Object {
+  
   /**
     * Get an existing OptionGroup resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -74,10 +82,10 @@ object OptionGroup extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): OptionGroup = js.native
   def get(name: String, id: Input[ID], state: OptionGroupState): OptionGroup = js.native
   def get(name: String, id: Input[ID], state: OptionGroupState, opts: CustomResourceOptions): OptionGroup = js.native
+  
   /**
     * Returns true if the given object is an instance of OptionGroup.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/optionGroup.OptionGroup */ Boolean = js.native
 }
-

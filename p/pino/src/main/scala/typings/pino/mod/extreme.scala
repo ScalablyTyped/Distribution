@@ -2,11 +2,12 @@ package typings.pino.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pino", "extreme")
 @js.native
 object extreme extends js.Object {
+  
   /**
     * Create an extreme mode destination. This yields an additional 60% performance boost.
     * There are trade-offs that should be understood before usage.
@@ -17,4 +18,3 @@ object extreme extends js.Object {
   def apply(fileDescriptor: String): typings.sonicBoom.mod.^ = js.native
   def apply(fileDescriptor: Double): typings.sonicBoom.mod.^ = js.native
 }
-

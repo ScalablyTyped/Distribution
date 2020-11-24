@@ -3,7 +3,7 @@ package typings.soap.nscontextMod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Scope for XML namespaces
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait NamespaceScope extends js.Object {
-  var namespaces: StringDictionary[INamespace] = js.native
-  var parent: NamespaceScope = js.native
+  
   def getNamespaceMapping(prefix: String): INamespace = js.native
+  
   /**
     * Look up the namespace URI by prefix
     * @param {String} prefix Namespace prefix
@@ -24,6 +24,7 @@ trait NamespaceScope extends js.Object {
     */
   def getNamespaceURI(prefix: String): String = js.native
   def getNamespaceURI(prefix: String, localOnly: Boolean): String = js.native
+  
   /**
     * Look up the namespace prefix by URI
     * @param {String} nsUri Namespace URI
@@ -32,5 +33,8 @@ trait NamespaceScope extends js.Object {
     */
   def getPrefix(nsUri: String): String = js.native
   def getPrefix(nsUri: String, localOnly: Boolean): String = js.native
+  
+  var namespaces: StringDictionary[INamespace] = js.native
+  
+  var parent: NamespaceScope = js.native
 }
-

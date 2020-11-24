@@ -2,15 +2,15 @@ package typings.estree.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.estree.mod.SimpleCallExpression
   - typings.estree.mod.MemberExpression
 */
 trait ChainElement extends js.Object
-
 object ChainElement {
+  
   @scala.inline
   def SimpleCallExpression(
     arguments: js.Array[Expression | SpreadElement],
@@ -22,6 +22,7 @@ object ChainElement {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChainElement]
   }
+  
   @scala.inline
   def MemberExpression(
     computed: Boolean,
@@ -36,4 +37,3 @@ object ChainElement {
     __obj.asInstanceOf[ChainElement]
   }
 }
-

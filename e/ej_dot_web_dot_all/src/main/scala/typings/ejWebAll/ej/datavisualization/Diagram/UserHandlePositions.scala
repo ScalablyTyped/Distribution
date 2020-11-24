@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UserHandlePositions extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.UserHandlePositions")
 @js.native
 object UserHandlePositions extends js.Object {
+  
   //Set the position of the userhandle as bottomcenter
   @js.native
   sealed trait BottomCenter extends UserHandlePositions
@@ -41,6 +41,4 @@ object UserHandlePositions extends js.Object {
   //Set the position of the userhandle as topright
   @js.native
   sealed trait TopRight extends UserHandlePositions
-  
 }
-

@@ -2,11 +2,12 @@ package typings.typedoc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc/dist/lib/converter/types", JSImport.Namespace)
 @js.native
 object typesMod extends js.Object {
+  
   @js.native
   class AliasConverter ()
     extends typings.typedoc.typesAliasMod.AliasConverter
@@ -42,6 +43,10 @@ object typesMod extends js.Object {
   @js.native
   class IntrinsicConverter ()
     extends typings.typedoc.intrinsicMod.IntrinsicConverter
+  
+  @js.native
+  class ParensConverter ()
+    extends typings.typedoc.parensMod.ParensConverter
   
   @js.native
   class PredicateConverter ()
@@ -82,6 +87,4 @@ object typesMod extends js.Object {
   @js.native
   class UnknownConverter ()
     extends typings.typedoc.unknownMod.UnknownConverter
-  
 }
-

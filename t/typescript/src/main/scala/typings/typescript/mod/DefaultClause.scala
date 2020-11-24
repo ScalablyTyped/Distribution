@@ -2,16 +2,18 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DefaultClause
   extends Node
      with CaseOrDefaultClause {
+  
   @JSName("kind")
-  var kind_DefaultClause: typings.typescript.mod.SyntaxKind.DefaultClause = js.native
+  val kind_DefaultClause: typings.typescript.mod.SyntaxKind.DefaultClause = js.native
+  
   @JSName("parent")
-  var parent_DefaultClause: CaseBlock = js.native
-  var statements: NodeArray[Statement] = js.native
+  val parent_DefaultClause: CaseBlock = js.native
+  
+  val statements: NodeArray[Statement] = js.native
 }
-

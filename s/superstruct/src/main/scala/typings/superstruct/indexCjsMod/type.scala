@@ -3,11 +3,12 @@ package typings.superstruct.indexCjsMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("superstruct/lib/index.cjs", "type")
 @js.native
 object `type` extends js.Object {
+  
   /**
     * Validate that a value matches a specific strutural interface, like the
     * structural typing that TypeScript uses.
@@ -19,4 +20,3 @@ object `type` extends js.Object {
     _
   ] = js.native
 }
-

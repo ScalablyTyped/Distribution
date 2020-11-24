@@ -3,7 +3,7 @@ package typings.openlayers.mod.style
 import typings.openlayers.mod.StyleImageOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -27,36 +27,42 @@ class Image protected () extends js.Object {
     * @api
     */
   def this(options: StyleImageOptions) = this()
+  
   /**
     * Get the symbolizer opacity.
     * @return Opacity.
     * @api
     */
   def getOpacity(): Double = js.native
+  
   /**
     * Determine whether the symbolizer rotates with the map.
     * @return Rotate with map.
     * @api
     */
   def getRotateWithView(): Boolean = js.native
+  
   /**
     * Get the symoblizer rotation.
     * @return Rotation.
     * @api
     */
   def getRotation(): Double = js.native
+  
   /**
     * Get the symbolizer scale.
     * @return Scale.
     * @api
     */
   def getScale(): Double = js.native
+  
   /**
     * Determine whether the symbolizer should be snapped to a pixel.
     * @return The symbolizer should snap to a pixel.
     * @api
     */
   def getSnapToPixel(): Boolean = js.native
+  
   /**
     * Set the opacity.
     *
@@ -64,6 +70,7 @@ class Image protected () extends js.Object {
     * @api
     */
   def setOpacity(opacity: Double): Unit = js.native
+  
   /**
     * Set the rotation.
     *
@@ -71,6 +78,7 @@ class Image protected () extends js.Object {
     * @api
     */
   def setRotation(rotation: Double): Unit = js.native
+  
   /**
     * Set the scale.
     *
@@ -79,4 +87,3 @@ class Image protected () extends js.Object {
     */
   def setScale(scale: Double): Unit = js.native
 }
-

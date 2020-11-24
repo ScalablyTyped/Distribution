@@ -2,10 +2,16 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "CircleGeometry")
 @js.native
+/**
+	 * @param [radius=1]
+	 * @param [segments=8]
+	 * @param [thetaStart=0]
+	 * @param [thetaLength=Math.PI * 2]
+	 */
 class CircleGeometry ()
   extends typings.three.geometriesMod.CircleGeometry {
   def this(radius: Double) = this()
@@ -44,4 +50,3 @@ class CircleGeometry ()
   def this(radius: Double, segments: Double, thetaStart: js.UndefOr[scala.Nothing], thetaLength: Double) = this()
   def this(radius: Double, segments: Double, thetaStart: Double, thetaLength: Double) = this()
 }
-

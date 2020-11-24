@@ -10,18 +10,25 @@ import typings.std.HTMLElement
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Context extends js.Object {
+  
   var androidUI: AndroidUI = js.native
-  var mLayoutInflater: js.Any = js.native
-  var mResources: js.Any = js.native
+  
   def getApplicationContext(): Application = js.native
+  
   def getLayoutInflater(): LayoutInflater = js.native
+  
   def getResources(): Resources = js.native
+  
   def getWindowManager(): WindowManager = js.native
+  
+  var mLayoutInflater: js.Any = js.native
+  
+  var mResources: js.Any = js.native
+  
   def obtainStyledAttributes(attrs: HTMLElement): TypedArray = js.native
   def obtainStyledAttributes(attrs: HTMLElement, defStyleAttr: Map[String, String]): TypedArray = js.native
 }
-

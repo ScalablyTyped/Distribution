@@ -2,7 +2,7 @@ package typings.ace.global.AceAjax
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AceAjax.UndoManager")
 @js.native
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   **/
 class UndoManagerCls ()
   extends typings.ace.AceAjax.UndoManager
-

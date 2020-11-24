@@ -3,11 +3,12 @@ package typings.phaser.global.Phaser
 import typings.phaser.Phaser.Events.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Data")
 @js.native
 object Data extends js.Object {
+  
   /**
     * The Data Manager Component features a means to store pieces of data specific to a Game Object, System or Plugin.
     * You can then search, query it, and retrieve the data. The parent must either extend EventEmitter,
@@ -42,6 +43,7 @@ object Data extends js.Object {
   
   @js.native
   object Events extends js.Object {
+    
     /**
       * The Change Data Event.
       * 
@@ -54,6 +56,7 @@ object Data extends js.Object {
       * To listen for the change of a specific item, use the `CHANGE_DATA_KEY_EVENT` event.
       */
     val CHANGE_DATA: js.Any = js.native
+    
     /**
       * The Change Data Key Event.
       * 
@@ -65,6 +68,7 @@ object Data extends js.Object {
       * then you can listen for `sprite.data.on('changedata-gold')`.
       */
     val CHANGE_DATA_KEY: js.Any = js.native
+    
     /**
       * The Remove Data Event.
       * 
@@ -74,6 +78,7 @@ object Data extends js.Object {
       * the removal of a data item on a Game Object you would use: `sprite.data.on('removedata', listener)`.
       */
     val REMOVE_DATA: js.Any = js.native
+    
     /**
       * The Set Data Event.
       * 
@@ -84,6 +89,4 @@ object Data extends js.Object {
       */
     val SET_DATA: js.Any = js.native
   }
-  
 }
-

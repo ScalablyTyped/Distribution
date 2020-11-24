@@ -10,9 +10,9 @@ Fast math typesetting for the web.
 | ------------------ | :-------------: |
 | Full name          | katex |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 249 |
-| # downloads        | 4684274 |
+| # releases         | 7 |
+| # dependents       | 324 |
+| # downloads        | 7410874 |
 | # stars            | 11 |
 
 ## Links

@@ -2,15 +2,15 @@ package typings.sharepoint.SP.Social
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SocialThreadAttributes extends js.Object
-
 /** Specifies properties of the thread. */
 @JSGlobal("SP.Social.SocialThreadAttributes")
 @js.native
 object SocialThreadAttributes extends js.Object {
+  
   @js.native
   sealed trait canLock extends SocialThreadAttributes
   
@@ -28,6 +28,4 @@ object SocialThreadAttributes extends js.Object {
   
   @js.native
   sealed trait replyLimitReached extends SocialThreadAttributes
-  
 }
-

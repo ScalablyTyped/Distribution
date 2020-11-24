@@ -11,9 +11,9 @@ A simple cron-like task scheduler for Node.js
 | Full name          | node-cron |
 | Keywords           | cron, scheduler, schedule, task, job |
 | # releases         | 5 |
-| # dependents       | 205 |
-| # downloads        | 3158059 |
-| # stars            | 48 |
+| # dependents       | 273 |
+| # downloads        | 4810414 |
+| # stars            | 49 |
 
 ## Links
 - [Homepage](https://github.com/merencia/node-cron)

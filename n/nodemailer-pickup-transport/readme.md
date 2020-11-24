@@ -12,7 +12,7 @@ Pickup transport for Nodemailer
 | Keywords           | Pickup, Nodemailer |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 80628 |
+| # downloads        | 76006 |
 | # stars            | 0 |
 
 ## Links

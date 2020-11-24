@@ -2,14 +2,14 @@ package typings.kiiCloudSdk.KiiCloud
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait KiiACLAction extends js.Object
-
 @JSGlobal("KiiCloud.KiiACLAction")
 @js.native
 object KiiACLAction extends js.Object {
+  
   @js.native
   sealed trait KiiACLBucketActionCreateObjects extends KiiACLAction
   
@@ -33,6 +33,4 @@ object KiiACLAction extends js.Object {
   
   @js.native
   sealed trait KiiACLSubscribeToTopic extends KiiACLAction
-  
 }
-

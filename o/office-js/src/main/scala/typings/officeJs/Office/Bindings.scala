@@ -2,17 +2,14 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the bindings the add-in has within the document.
   */
 @js.native
 trait Bindings extends js.Object {
-  /**
-    * Gets an {@link Office.Document} object that represents the document associated with this set of bindings.
-    */
-  var document: Document = js.native
+  
   /**
     * Creates a binding against a named object in the document.
     *
@@ -69,6 +66,7 @@ trait Bindings extends js.Object {
     options: AddBindingFromNamedItemOptions,
     callback: js.Function1[/* result */ AsyncResult[Binding], Unit]
   ): Unit = js.native
+  
   /**
     * Create a binding by prompting the user to make a selection on the document.
     *
@@ -98,6 +96,7 @@ trait Bindings extends js.Object {
     options: AddBindingFromPromptOptions,
     callback: js.Function1[/* result */ AsyncResult[Binding], Unit]
   ): Unit = js.native
+  
   /**
     * Create a binding based on the user's current selection.
     *
@@ -137,6 +136,12 @@ trait Bindings extends js.Object {
     options: AddBindingFromSelectionOptions,
     callback: js.Function1[/* result */ AsyncResult[Binding], Unit]
   ): Unit = js.native
+  
+  /**
+    * Gets an {@link Office.Document} object that represents the document associated with this set of bindings.
+    */
+  var document: Document = js.native
+  
   /**
     * Gets all bindings that were previously created.
     *
@@ -165,6 +170,7 @@ trait Bindings extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[js.Array[Binding]], Unit]
   ): Unit = js.native
+  
   /**
     * Retrieves a binding based on its Name
     *
@@ -198,6 +204,7 @@ trait Bindings extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Binding], Unit]
   ): Unit = js.native
+  
   /**
     * Removes the binding from the document
     *
@@ -231,4 +238,3 @@ trait Bindings extends js.Object {
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
 }
-

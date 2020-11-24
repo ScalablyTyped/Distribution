@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.TreeGrid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ToolbarItems extends js.Object
-
 @JSGlobal("ej.TreeGrid.ToolbarItems")
 @js.native
 object ToolbarItems extends js.Object {
+  
   ///Enables the add icon in toolbar
   @js.native
   sealed trait Add extends ToolbarItems
@@ -53,6 +53,4 @@ object ToolbarItems extends js.Object {
   ///Enables the update icon in toolbar
   @js.native
   sealed trait Update extends ToolbarItems
-  
 }
-

@@ -2,11 +2,12 @@ package typings.locale.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("locale", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * This module exports a function that can be used as Express/Connect
     * middleware. It takes one argument, a list of supported locales, and adds a
@@ -22,4 +23,3 @@ object ^ extends js.Object {
   def apply(supported: Locales): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = js.native
   def apply(supported: Locales, `def`: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = js.native
 }
-

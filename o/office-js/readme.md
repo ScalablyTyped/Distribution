@@ -12,7 +12,7 @@ Utility for office cloud services.
 | Keywords           | office, googleapps, office365, word, excel |
 | # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 2333 |
+| # downloads        | 4998 |
 | # stars            | 0 |
 
 ## Links

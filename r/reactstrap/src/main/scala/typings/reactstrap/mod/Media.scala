@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.mediaMod.MediaProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "Media")
+@JSImport("reactstrap/lib", "Media")
 @js.native
-class Media[T] ()
+class Media ()
   extends Component[MediaProps, js.Object, js.Any]
-

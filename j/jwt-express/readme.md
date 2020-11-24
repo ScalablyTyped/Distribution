@@ -12,7 +12,7 @@ Climb aboard the JWT Express and use JWTs in your Express app with ease!
 | Keywords           | jwt, json, token, express, session |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 15291 |
+| # downloads        | 14668 |
 | # stars            | 1 |
 
 ## Links

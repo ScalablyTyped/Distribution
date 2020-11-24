@@ -3,7 +3,7 @@ package typings.fabric.mod.fabric
 import typings.fabric.fabricImplMod.IGroupOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.Group")
 @js.native
@@ -30,11 +30,11 @@ class Group ()
     isAlreadyGrouped: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("fabric", "fabric.Group")
 @js.native
 object Group extends js.Object {
+  
   /**
     * Returns {@link fabric.Group} instance from an object representation
     * @param object Object to create a group from
@@ -42,4 +42,3 @@ object Group extends js.Object {
     */
   def fromObject(`object`: js.Any, callback: js.Function1[/* group */ this.type, _]): Unit = js.native
 }
-

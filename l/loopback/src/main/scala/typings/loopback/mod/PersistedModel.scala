@@ -12,7 +12,7 @@ import typings.loopback.anon.Where
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Extends Model with basic query and CRUD support
@@ -28,6 +28,7 @@ import scala.scalajs.js.annotation._
 @JSImport("loopback", "PersistedModel")
 @js.native
 class PersistedModel () extends Model {
+  
   /**
     * Deletes the model from persistence.
     * Triggers `destroy` hook (async) before and after destroying object.
@@ -39,21 +40,25 @@ class PersistedModel () extends Model {
     * @param {() => void} callback Callback function
     */
   def destroy(callback: CallbackWithoutResult): Unit = js.native
+  
   /**
     * Get the `id` value for the `PersistedModel`
     * @returns {*} The `id` valu
     */
   def getId(): js.Any = js.native
+  
   /**
     * Get the `id` property name of the constructor
     * @returns {string} The `id` property nam
     */
   def getIdName(): String = js.native
+  
   /**
     * Determine if the data model is new.
     * @returns {boolean} Returns true if the data model is new; false otherwise
     */
   def isNewRecord(): Boolean = js.native
+  
   /**
     * Reload object from persistence.  Requires `id` member of `object` to be able to call `find`.
     */
@@ -65,6 +70,7 @@ class PersistedModel () extends Model {
     * @param {any} instance Model instance
     */
   def reload[T](callback: CallbackWithResult[T]): Unit = js.native
+  
   /**
     * Replace attributes for a model instance and persist it into the datasource.
     * Performs validation before replacing
@@ -94,6 +100,7 @@ class PersistedModel () extends Model {
     * @param {any} instance Replaced instance
     */
   def replaceAttributes[T](data: js.Any, options: Validate, callback: CallbackWithResult[T]): Unit = js.native
+  
   /**
     * Save model instance. If the instance doesn't have an ID, then calls [create](#persistedmodelcreatedata-cb) instead.
     * Triggers: validate, save, update, or create.
@@ -124,6 +131,7 @@ class PersistedModel () extends Model {
     * @param {any} instance Model instance saved or created
     */
   def save[T](options: Throws, callback: CallbackWithResult[T]): Unit = js.native
+  
   /**
     * Set the correct `id` property for the `PersistedModel`. Uses the `setId` method if the model is attached to
     * connector that defines it.  Otherwise, uses the default lookup.
@@ -131,6 +139,7 @@ class PersistedModel () extends Model {
     * @param {*} val The `id` value. Will be converted to the type that the `id` property specifies
     */
   def setId(`val`: js.Any): Unit = js.native
+  
   /**
     * Update a single attribute.
     * Equivalent to `updateAttributes({name: 'value'}, cb)
@@ -148,6 +157,7 @@ class PersistedModel () extends Model {
     * @param {any} instance Updated instance
     */
   def updateAttribute[T](name: String, value: js.Any, callback: CallbackWithResult[T]): Unit = js.native
+  
   /**
     * Update set of attributes.  Performs validation before updating
     * Triggers: `validation`, `save` and `update` hooks
@@ -164,11 +174,11 @@ class PersistedModel () extends Model {
     */
   def updateAttributes[T](data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
 }
-
 /* static members */
 @JSImport("loopback", "PersistedModel")
 @js.native
 object PersistedModel extends js.Object {
+  
   /**
     * Apply an update list
     * **Note: this is not atomic*
@@ -185,6 +195,7 @@ object PersistedModel extends js.Object {
     * @param  {() => void} callback Callback function
     */
   def bulkUpdate(updates: js.Array[_], options: js.Any, callback: CallbackWithoutResult): Unit = js.native
+  
   /**
     * Get the changes to a model since the specified checkpoint. Provide a filter object
     * to reduce the number of results returned.
@@ -205,6 +216,7 @@ object PersistedModel extends js.Object {
     * @param {Array} changes An Array of [Change](#change) objects
     */
   def changes(since: Double, filter: js.Any, callback: CallbackWithResult[_]): Unit = js.native
+  
   /**
     * Create a checkpoint
     * @param  {() => void} callback
@@ -216,6 +228,7 @@ object PersistedModel extends js.Object {
     */
   @JSName("checkpoint")
   def checkpoint_Promise(): js.Promise[Unit] = js.native
+  
   /**
     * Return the number of records that match the optional "where" filter.
     * @param {any} [where] Optional where filter, like
@@ -243,6 +256,7 @@ object PersistedModel extends js.Object {
     * @param {number} count number of instances updated
     */
   def count(where: js.Any, callback: CallbackWithResult[Double]): Unit = js.native
+  
   /**
     * Create new instance of Model, and save to database
     * @param {any}|[{any}] data Optional data argument.  Can be either a single model instance or an Array of instances
@@ -260,6 +274,7 @@ object PersistedModel extends js.Object {
   def create[T](data: js.Any, callback: CallbackWithResult[T | js.Array[T] | Null]): Unit = js.native
   def create[T](data: js.Array[_]): js.Promise[T | js.Array[T] | Null] = js.native
   def create[T](data: js.Array[_], callback: CallbackWithResult[T | js.Array[T] | Null]): Unit = js.native
+  
   /**
     * Create a change stream. See here for more info http://loopback.io/doc/en/lb2/Realtime-server-sent-events.html
     * @param {any} options Only changes to models matching this where filter will be included in the ChangeStream.
@@ -272,6 +287,7 @@ object PersistedModel extends js.Object {
     * @param {() => void} callback
     */
   def createChangeStream(options: Where, callback: CallbackWithResult[_]): Unit = js.native
+  
   /**
     * Create an update list (for `Model.bulkUpdate()`) from a delta list
     * (result of `Change.diff()`)
@@ -285,6 +301,7 @@ object PersistedModel extends js.Object {
     * @param  {() => void} callback
     */
   def createUpdates(deltas: js.Array[_], callback: CallbackWithoutResult): Unit = js.native
+  
   /**
     * Get the current checkpoint ID
     * @returns {Promise<number>} resolves to currentCheckpointId
@@ -297,6 +314,7 @@ object PersistedModel extends js.Object {
     * @param {number} currentCheckpointId Current checkpoint ID
     */
   def currentCheckpoint(callback: CallbackWithResult[Double]): Unit = js.native
+  
   /**
     * Destroy all model instances that match the optional `where` specification
     * @param {any} [where] Optional where filter, like:
@@ -325,6 +343,7 @@ object PersistedModel extends js.Object {
     * @param {number} info.count number of instances (rows, documents) destroyed
     */
   def destroyAll(where: js.Any, callback: CallbackWithMultipleResults[_, Double]): Unit = js.native
+  
   /**
     * Destroy model instance with the specified ID.
     * @param {*} id The ID value of model instance to delete.
@@ -337,6 +356,7 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object)
     */
   def destroyById(id: js.Any, callback: CallbackWithoutResult): Unit = js.native
+  
   /**
     * Get a set of deltas and conflicts since the given checkpoint
     * See [Change.diff()](#change-diff) for details
@@ -354,10 +374,12 @@ object PersistedModel extends js.Object {
     * @param {any} result any with `deltas` and `conflicts` properties; see [Change.diff()](#change-diff) for details
     */
   def diff(since: Double, remoteChanges: js.Array[_], callback: CallbackWithResult[_]): Unit = js.native
+  
   /**
     * Enable the tracking of changes made to the model. Usually for replication.
     */
   def enableChangeTracking(): Unit = js.native
+  
   /**
     * Check whether a model instance exists in database
     * @param {id} id Identifier of object (primary key value)
@@ -371,6 +393,7 @@ object PersistedModel extends js.Object {
     * @param {boolean} exists True if the instance with the specified ID exists; false otherwise
     */
   def exists(id: js.Any, callback: CallbackWithResult[Boolean]): Unit = js.native
+  
   /**
     * Find all model instances that match `filter` specification.
     * See [Querying models](docs.strongloop.com/display/LB/Querying+models)
@@ -419,6 +442,7 @@ object PersistedModel extends js.Object {
     * @param {Array} models Model instances matching the filter, or null if none found
     */
   def find[T](filter: Fields, callback: CallbackWithResult[js.Array[T]]): Unit = js.native
+  
   /**
     * Find object by ID with an optional filter for include/fields
     * @param {*} id Primary key value
@@ -451,6 +475,7 @@ object PersistedModel extends js.Object {
     * @param {any} instance Model instance matching the specified ID or null if no instance matches
     */
   def findById[T](id: js.Any, filter: Include, callback: CallbackWithResult[T]): Unit = js.native
+  
   /**
     * Find one model instance that matches `filter` specification.
     * Same as `find`, but limited to one result;
@@ -506,6 +531,7 @@ object PersistedModel extends js.Object {
     * @param {Array} model First model instance that matches the filter or null if none found
     */
   def findOne[T](filter: Order, callback: CallbackWithResult[T]): Unit = js.native
+  
   /**
     * Finds one record matching the optional filter object. If not found, creates
     * the object using the data provided as second argument. In this sense it is
@@ -579,16 +605,19 @@ object PersistedModel extends js.Object {
     * @param {boolean} created True if the instance matching the `where` filter was created
     */
   def findOrCreate[T](data: js.Any, filter: Fields, callback: CallbackWithMultipleResults[T, Boolean]): Unit = js.native
+  
   /**
     * Get the `Change` model.
     * Throws an error if the change model is not correctly setup.
     */
   def getChangeModel(): Unit = js.native
+  
   /**
     * Get the `id` property name of the constructor
     * @returns {string} The `id` property nam
     */
   def getIdName(): String = js.native
+  
   /**
     * Get the source identifier for this model or dataSource
     */
@@ -600,12 +629,14 @@ object PersistedModel extends js.Object {
     * @param {string} sourceId Source identifier for the model or dataSource
     */
   def getSourceId(callback: CallbackWithResult[String]): Unit = js.native
+  
   /**
     * Handle a change error. Override this method in a subclassing model to customize
     * change error handling
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object)
     */
   def handleChangeError(err: Error): Unit = js.native
+  
   /**
     * Specify that a change to the model with the given ID has occurred
     * @param {*} id The ID of the model that has changed.
@@ -618,6 +649,7 @@ object PersistedModel extends js.Object {
     * @param {Error} er
     */
   def rectifyChange(id: js.Any, callback: CallbackWithoutResult): Unit = js.native
+  
   /**
     * Replace attributes for a model instance whose id is the first input
     * argument and persist it into the datasource.
@@ -653,6 +685,7 @@ object PersistedModel extends js.Object {
     * @param {any} instance Replaced instance
     */
   def replaceById[T](id: js.Any, data: js.Any, options: Validate, callback: CallbackWithResult[T]): Unit = js.native
+  
   /**
     * Replace or insert a model instance; replace existing record if one is found,
     * such that parameter `data.id` matches `id` of model instance; otherwise,
@@ -685,6 +718,7 @@ object PersistedModel extends js.Object {
     * @param {any} model Replaced model instance.
     */
   def replaceOrCreate[T](data: js.Any, options: Validate, callback: CallbackWithResult[T]): Unit = js.native
+  
   /**
     * Replicate changes since the given checkpoint to the given target model
     * @param  {number}   [since]  Since this checkpoint
@@ -845,6 +879,7 @@ object PersistedModel extends js.Object {
     optionsFilter: js.Any,
     callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
   ): js.Promise[Conflicts] | Unit = js.native
+  
   /**
     * Update multiple instances that match the where clause.
     *
@@ -929,6 +964,7 @@ object PersistedModel extends js.Object {
     *
     */
   def updateAll(where: js.Any, data: js.Any, callback: CallbackWithMultipleResults[_, Double]): Unit = js.native
+  
   /**
     * Update or insert a model instance
     * @param {any} data The model instance data to insert.
@@ -945,6 +981,7 @@ object PersistedModel extends js.Object {
     * @param {any} model Updated model instance
     */
   def upsert[T](data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
+  
   /**
     * Update or insert a model instance based on the search criteria.
     * If there is a single instance retrieved, update the retrieved model.
@@ -977,4 +1014,3 @@ object PersistedModel extends js.Object {
     */
   def upsertWithWhere[T](data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
 }
-

@@ -95,26 +95,33 @@ import typings.std.Element
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/base/component", JSImport.Namespace)
 @js.native
 object componentMod extends js.Object {
+  
   @js.native
   class MDCComponent[FoundationType /* <: MDCFoundation[js.Object] */] protected () extends js.Object {
     def this(root: Element, foundation: FoundationType, args: js.Any*) = this()
     def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
-    var foundation: FoundationType = js.native
-    var root: Element = js.native
+    
     def destroy(): Unit = js.native
+    
     /**
       * Fires a cross-browser-compatible custom event from the component root of the given type, with the given data.
       */
     def emit[T /* <: js.Object */](evtType: String, evtData: T): Unit = js.native
     def emit[T /* <: js.Object */](evtType: String, evtData: T, shouldBubble: Boolean): Unit = js.native
+    
+    var foundation: FoundationType = js.native
+    
     def getDefaultFoundation(): FoundationType = js.native
+    
     def initialSyncWithDOM(): Unit = js.native
+    
     def initialize(_args: js.Any*): Unit = js.native
+    
     def listen[E /* <: Event */](evtType: String, handler: CustomEventListener[E]): Unit = js.native
     def listen[E /* <: Event */](evtType: String, handler: CustomEventListener[E], options: Boolean): Unit = js.native
     def listen[E /* <: Event */](evtType: String, handler: CustomEventListener[E], options: AddEventListenerOptions): Unit = js.native
@@ -748,6 +755,9 @@ object componentMod extends js.Object {
     def listen_wheel(evtType: wheel, handler: SpecificEventListener[wheel], options: Boolean): Unit = js.native
     @JSName("listen")
     def listen_wheel(evtType: wheel, handler: SpecificEventListener[wheel], options: AddEventListenerOptions): Unit = js.native
+    
+    var root: Element = js.native
+    
     def unlisten[E /* <: Event */](evtType: String, handler: CustomEventListener[E]): Unit = js.native
     def unlisten[E /* <: Event */](evtType: String, handler: CustomEventListener[E], options: Boolean): Unit = js.native
     def unlisten[E /* <: Event */](evtType: String, handler: CustomEventListener[E], options: AddEventListenerOptions): Unit = js.native
@@ -1382,24 +1392,22 @@ object componentMod extends js.Object {
     @JSName("unlisten")
     def unlisten_wheel(evtType: wheel, handler: SpecificEventListener[wheel], options: AddEventListenerOptions): Unit = js.native
   }
+  /* static members */
+  @js.native
+  object MDCComponent extends js.Object {
+    
+    def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = js.native
+  }
   
   @js.native
   class default[FoundationType /* <: MDCFoundation[js.Object] */] protected () extends MDCComponent[FoundationType] {
     def this(root: Element, foundation: FoundationType, args: js.Any*) = this()
     def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
   }
-  
-  /* static members */
-  @js.native
-  object MDCComponent extends js.Object {
-    def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = js.native
-  }
-  
   /* static members */
   @js.native
   object default extends js.Object {
+    
     def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = js.native
   }
-  
 }
-

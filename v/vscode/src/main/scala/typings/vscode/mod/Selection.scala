@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Selection")
 @js.native
@@ -23,19 +23,21 @@ class Selection protected () extends Range {
     * @param activeCharacter A zero-based character value.
     */
   def this(anchorLine: Double, anchorCharacter: Double, activeLine: Double, activeCharacter: Double) = this()
+  
   /**
     * The position of the cursor.
     * This position might be before or after [anchor](#Selection.anchor).
     */
   var active: Position = js.native
+  
   /**
     * The position at which the selection starts.
     * This position might be before or after [active](#Selection.active).
     */
   var anchor: Position = js.native
+  
   /**
     * A selection is reversed if [active](#Selection.active).isBefore([anchor](#Selection.anchor)).
     */
   var isReversed: Boolean = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.grammarkdown.nodesMod.ProductionBody
 import typings.grammarkdown.tokensMod.ProductionSeperatorKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Production")
 @js.native
@@ -50,4 +50,3 @@ class Production protected ()
     body: ProductionBody
   ) = this()
 }
-

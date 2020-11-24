@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__rlp
 
-Typings are for version 5.0.2
+Typings are for version 5.0.5
 
 ## Library description:
 Recursive-Length Prefix (RLP) coder.
@@ -10,9 +10,9 @@ Recursive-Length Prefix (RLP) coder.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/rlp |
 | Keywords           | Ethereum, ethers, rlp |
-| # releases         | 17 |
-| # dependents       | 7 |
-| # downloads        | 193406 |
+| # releases         | 23 |
+| # dependents       | 17 |
+| # downloads        | 1728542 |
 | # stars            | 0 |
 
 ## Links

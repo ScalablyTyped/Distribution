@@ -10,9 +10,9 @@ Rating plugin for jQuery.
 | ------------------ | :-------------: |
 | Full name          | jquery.rateit |
 | Keywords           | rateit, npm |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 53052 |
+| # downloads        | 76978 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ ECIES implemented for Bitcore. fix to eos and easy to use
 | ------------------ | :-------------: |
 | Full name          | sic-ecies |
 | Keywords           | sic, ecc, ecies, crypto, cryptography, encryption |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 226 |
+| # downloads        | 580 |
 | # stars            | 0 |
 
 ## Links

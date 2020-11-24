@@ -29,43 +29,76 @@ import typings.std.Blob
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ComposeView extends js.Object {
-  var destroyed: Boolean = js.native
+  
   def addButton(buttonDescriptor: ComposeButtonDescriptor): Unit = js.native
+  
   def addComposeNotice(composeNoticeDescriptor: ComposeNoticeDescriptor): Unit = js.native
+  
   def addStatusBar(statusBarDescriptor: StatusBarDescriptor): StatusBarView = js.native
+  
   def attachFiles(files: js.Array[Blob]): js.Promise[Unit] = js.native
+  
   def attachInlineFiles(Files: js.Array[Blob]): js.Promise[Unit] = js.native
+  
   def close(): Unit = js.native
+  
+  var destroyed: Boolean = js.native
+  
   def getBccRecipients(): js.Array[Contact] = js.native
+  
   def getBodyElement(): HTMLElement = js.native
+  
   def getCcRecipients(): js.Array[Contact] = js.native
+  
   def getCurrentDraftID(): js.Promise[String | Null] = js.native
+  
   def getDraftID(): js.Promise[String] = js.native
+  
   def getFromContact(): Contact = js.native
+  
   def getFromContactChoices(): js.Array[Contact] = js.native
+  
   def getHTMLContent(): String = js.native
+  
   def getInitialMessageID(): String = js.native
+  
   def getMetadataFormElement(): HTMLElement = js.native
+  
   def getSelectedBodyHTML(): String = js.native
+  
   def getSelectedBodyText(): String = js.native
+  
   def getSubject(): String = js.native
+  
   def getTextContent(): String = js.native
+  
   def getThreadID(): String = js.native
+  
   def getToRecipients(): js.Array[Contact] = js.native
+  
   def insertHTMLIntoBodyAtCursor(html: String): HTMLElement = js.native
   def insertHTMLIntoBodyAtCursor(html: HTMLElement): HTMLElement = js.native
+  
   def insertLinkChipIntoBodyAtCursor(text: String, url: String, iconUrl: String): HTMLElement = js.native
+  
   def insertLinkIntoBodyAtCursor(text: String, url: String): HTMLElement = js.native
+  
   def insertTextIntoBodyAtCursor(text: String): Unit = js.native
+  
   def isForward(): Boolean = js.native
+  
   def isFullscreen(): Boolean = js.native
+  
   def isInlineReplyForm(): Boolean = js.native
+  
   def isMinimized(): Boolean = js.native
+  
   def isReply(): Boolean = js.native
+  
   @JSName("on")
   def on_bccContactAdded(name: bccContactAdded, cb: js.Function1[/* event */ typings.inboxsdk.anon.Contact, Unit]): Unit = js.native
   @JSName("on")
@@ -104,18 +137,29 @@ trait ComposeView extends js.Object {
   def on_toContactAdded(name: toContactAdded, cb: js.Function1[/* event */ typings.inboxsdk.anon.Contact, Unit]): Unit = js.native
   @JSName("on")
   def on_toContactRemoved(name: toContactRemoved, cb: js.Function1[/* event */ typings.inboxsdk.anon.Contact, Unit]): Unit = js.native
+  
   def popOut(): js.Promise[ComposeView] = js.native
+  
   def send(): Unit = js.native
   def send(options: SendOptions): Unit = js.native
+  
   def setBccRecipients(emails: js.Array[String]): Unit = js.native
+  
   def setBodyHTML(html: String): Unit = js.native
+  
   def setBodyText(text: String): Unit = js.native
+  
   def setCcRecipients(emails: js.Array[String]): Unit = js.native
+  
   def setFromEmail(email: String): Unit = js.native
+  
   def setFullscreen(minimized: Boolean): Unit = js.native
+  
   def setMinimized(minimized: Boolean): Unit = js.native
+  
   def setSubject(text: String): Unit = js.native
+  
   def setTitleBarColor(color: String): js.Function0[Unit] = js.native
+  
   def setToRecipients(emails: js.Array[String]): Unit = js.native
 }
-

@@ -15,11 +15,11 @@ import typings.semanticUiSite.semanticUiSiteStrings.siteNamespace
 import typings.semanticUiSite.semanticUiSiteStrings.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Site_ extends js.Object {
-  var settings: SiteSettings = js.native
+  
   def apply(): JQuery = js.native
   def apply(behavior: destroy): JQuery = js.native
   def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
@@ -41,5 +41,6 @@ trait Site_ extends js.Object {
   def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def apply(behavior: setting, value: SiteSettings): JQuery = js.native
   def apply(settings: SiteSettings): JQuery = js.native
+  
+  var settings: SiteSettings = js.native
 }
-

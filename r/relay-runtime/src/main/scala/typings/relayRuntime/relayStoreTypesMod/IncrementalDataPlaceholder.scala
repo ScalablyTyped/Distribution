@@ -8,15 +8,15 @@ import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.relayRuntime.relayStoreTypesMod.DeferPlaceholder
   - typings.relayRuntime.relayStoreTypesMod.StreamPlaceholder
 */
 trait IncrementalDataPlaceholder extends js.Object
-
 object IncrementalDataPlaceholder {
+  
   @scala.inline
   def DeferPlaceholder(
     data: PayloadData,
@@ -29,6 +29,7 @@ object IncrementalDataPlaceholder {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncrementalDataPlaceholder]
   }
+  
   @scala.inline
   def StreamPlaceholder(
     kind: stream_,
@@ -42,4 +43,3 @@ object IncrementalDataPlaceholder {
     __obj.asInstanceOf[IncrementalDataPlaceholder]
   }
 }
-

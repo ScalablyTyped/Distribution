@@ -2,7 +2,7 @@ package typings.jquery.JQuery
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 /**
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Event {
+  
   /**
     * The current DOM element within the event bubbling phase.
     * @see \`{@link https://api.jquery.com/event.currentTarget/ }\`
@@ -22,6 +23,7 @@ trait TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Ev
   ```
     */
   var currentTarget: TCurrentTarget = js.native
+  
   /**
     * An optional object of data passed to an event method when the current executing handler is bound.
     * @see \`{@link https://api.jquery.com/event.data/ }\`
@@ -65,6 +67,7 @@ trait TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Ev
   ```
     */
   var data: TData = js.native
+  
   /**
     * The element where the currently-called jQuery event handler was attached.
     * @see \`{@link https://api.jquery.com/event.delegateTarget/ }\`
@@ -77,6 +80,7 @@ trait TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Ev
   ```
     */
   var delegateTarget: TDelegateTarget = js.native
+  
   /**
     * The namespace specified when the event was triggered.
     * @see \`{@link https://api.jquery.com/event.namespace/ }\`
@@ -109,7 +113,9 @@ trait TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Ev
   ```
     */
   var namespace: js.UndefOr[String] = js.native
+  
   var originalEvent: js.UndefOr[typings.jquery.Event] = js.native
+  
   /**
     * The last value returned by an event handler that was triggered by this event, unless the value was undefined.
     * @see \`{@link https://api.jquery.com/event.result/ }\`
@@ -142,6 +148,7 @@ trait TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Ev
   ```
     */
   var result: js.UndefOr[js.Any] = js.native
+  
   /**
     * The DOM element that initiated the event.
     * @see \`{@link https://api.jquery.com/event.target/ }\`
@@ -222,8 +229,8 @@ trait TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Ev
     */
   var target: TTarget = js.native
 }
-
 object TriggeredEvent {
+  
   @scala.inline
   def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
     currentTarget: TCurrentTarget,
@@ -243,38 +250,50 @@ object TriggeredEvent {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
   }
+  
   @scala.inline
   implicit class TriggeredEventOps[Self <: TriggeredEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCurrentTarget(value: TCurrentTarget): Self = this.set("currentTarget", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setData(value: TData): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDelegateTarget(value: TDelegateTarget): Self = this.set("delegateTarget", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTarget(value: TTarget): Self = this.set("target", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNamespace: Self = this.set("namespace", js.undefined)
+    
     @scala.inline
     def setOriginalEvent(value: typings.jquery.Event): Self = this.set("originalEvent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOriginalEvent: Self = this.set("originalEvent", js.undefined)
+    
     @scala.inline
     def setResult(value: js.Any): Self = this.set("result", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResult: Self = this.set("result", js.undefined)
   }
-  
 }
-

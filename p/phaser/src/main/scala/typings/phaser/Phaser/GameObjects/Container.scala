@@ -13,7 +13,7 @@ import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Container Game Object.
@@ -64,128 +64,7 @@ trait Container
      with Mask
      with Transform
      with Visible {
-  /**
-    * Internal value to allow Containers to be used for input and physics.
-    * Do not change this value. It has no effect other than to break things.
-    */
-  val displayOriginX: Double = js.native
-  /**
-    * Internal value to allow Containers to be used for input and physics.
-    * Do not change this value. It has no effect other than to break things.
-    */
-  val displayOriginY: Double = js.native
-  /**
-    * Does this Container exclusively manage its children?
-    * 
-    * The default is `true` which means a child added to this Container cannot
-    * belong in another Container, which includes the Scene display list.
-    * 
-    * If you disable this then this Container will no longer exclusively manage its children.
-    * This allows you to create all kinds of interesting graphical effects, such as replicating
-    * Game Objects without reparenting them all over the Scene.
-    * However, doing so will prevent children from receiving any kind of input event or have
-    * their physics bodies work by default, as they're no longer a single entity on the
-    * display list, but are being replicated where-ever this Container is.
-    */
-  var exclusive: Boolean = js.native
-  /**
-    * Returns the first Game Object within the Container, or `null` if it is empty.
-    * 
-    * You can move the cursor by calling `Container.next` and `Container.previous`.
-    */
-  val first: GameObject = js.native
-  /**
-    * Returns the last Game Object within the Container, or `null` if it is empty.
-    * 
-    * You can move the cursor by calling `Container.next` and `Container.previous`.
-    */
-  val last: GameObject = js.native
-  /**
-    * The number of Game Objects inside this Container.
-    */
-  val length: integer = js.native
-  /**
-    * An array holding the children of this Container.
-    */
-  var list: js.Array[GameObject] = js.native
-  /**
-    * Internal Transform Matrix used for local space conversion.
-    */
-  var localTransform: TransformMatrix = js.native
-  /**
-    * Containers can have an optional maximum size. If set to anything above 0 it
-    * will constrict the addition of new Game Objects into the Container, capping off
-    * the maximum limit the Container can grow in size to.
-    */
-  var maxSize: integer = js.native
-  /**
-    * Returns the next Game Object within the Container, or `null` if it is empty.
-    * 
-    * You can move the cursor by calling `Container.next` and `Container.previous`.
-    */
-  val next: GameObject = js.native
-  /**
-    * Internal value to allow Containers to be used for input and physics.
-    * Do not change this value. It has no effect other than to break things.
-    */
-  val originX: Double = js.native
-  /**
-    * Internal value to allow Containers to be used for input and physics.
-    * Do not change this value. It has no effect other than to break things.
-    */
-  val originY: Double = js.native
-  /**
-    * The cursor position.
-    */
-  var position: integer = js.native
-  /**
-    * Returns the previous Game Object within the Container, or `null` if it is empty.
-    * 
-    * You can move the cursor by calling `Container.next` and `Container.previous`.
-    */
-  val previous: GameObject = js.native
-  /**
-    * The horizontal scroll factor of this Container.
-    * 
-    * The scroll factor controls the influence of the movement of a Camera upon this Container.
-    * 
-    * When a camera scrolls it will change the location at which this Container is rendered on-screen.
-    * It does not change the Containers actual position values.
-    * 
-    * For a Container, setting this value will only update the Container itself, not its children.
-    * If you wish to change the scrollFactor of the children as well, use the `setScrollFactor` method.
-    * 
-    * A value of 1 means it will move exactly in sync with a camera.
-    * A value of 0 means it will not move at all, even if the camera moves.
-    * Other values control the degree to which the camera movement is mapped to this Container.
-    * 
-    * Please be aware that scroll factor values other than 1 are not taken in to consideration when
-    * calculating physics collisions. Bodies always collide based on their world position, but changing
-    * the scroll factor is a visual adjustment to where the textures are rendered, which can offset
-    * them from physics bodies if not accounted for in your code.
-    */
-  var scrollFactorX: Double = js.native
-  /**
-    * The vertical scroll factor of this Container.
-    * 
-    * The scroll factor controls the influence of the movement of a Camera upon this Container.
-    * 
-    * When a camera scrolls it will change the location at which this Container is rendered on-screen.
-    * It does not change the Containers actual position values.
-    * 
-    * For a Container, setting this value will only update the Container itself, not its children.
-    * If you wish to change the scrollFactor of the children as well, use the `setScrollFactor` method.
-    * 
-    * A value of 1 means it will move exactly in sync with a camera.
-    * A value of 0 means it will not move at all, even if the camera moves.
-    * Other values control the degree to which the camera movement is mapped to this Container.
-    * 
-    * Please be aware that scroll factor values other than 1 are not taken in to consideration when
-    * calculating physics collisions. Bodies always collide based on their world position, but changing
-    * the scroll factor is a visual adjustment to where the textures are rendered, which can offset
-    * them from physics bodies if not accounted for in your code.
-    */
-  var scrollFactorY: Double = js.native
+  
   def add(child: js.Array[GameObject]): this.type = js.native
   /**
     * Adds the given Game Object, or array of Game Objects, to this Container.
@@ -194,6 +73,7 @@ trait Container
     * @param child The Game Object, or array of Game Objects, to add to the Container.
     */
   def add(child: GameObject): this.type = js.native
+  
   def addAt(child: js.Array[GameObject]): this.type = js.native
   def addAt(child: js.Array[GameObject], index: integer): this.type = js.native
   /**
@@ -207,12 +87,14 @@ trait Container
     */
   def addAt(child: GameObject): this.type = js.native
   def addAt(child: GameObject, index: integer): this.type = js.native
+  
   /**
     * Brings the given Game Object to the top of this Container.
     * This will cause it to render on-top of any other objects in the Container.
     * @param child The Game Object to bring to the top of the Container.
     */
   def bringToTop(child: GameObject): this.type = js.native
+  
   /**
     * Returns the total number of Game Objects in this Container that have a property
     * matching the given value.
@@ -229,6 +111,19 @@ trait Container
   def count(property: String, value: js.Any, startIndex: js.UndefOr[scala.Nothing], endIndex: integer): integer = js.native
   def count(property: String, value: js.Any, startIndex: integer): integer = js.native
   def count(property: String, value: js.Any, startIndex: integer, endIndex: integer): integer = js.native
+  
+  /**
+    * Internal value to allow Containers to be used for input and physics.
+    * Do not change this value. It has no effect other than to break things.
+    */
+  val displayOriginX: Double = js.native
+  
+  /**
+    * Internal value to allow Containers to be used for input and physics.
+    * Do not change this value. It has no effect other than to break things.
+    */
+  val displayOriginY: Double = js.native
+  
   def each(callback: js.Function, context: js.UndefOr[scala.Nothing], args: js.Any*): this.type = js.native
   /**
     * Passes all Game Objects in this Container to the given callback.
@@ -243,6 +138,22 @@ trait Container
     * @param args Additional arguments that will be passed to the callback, after the child.
     */
   def each(callback: js.Function, context: js.Object, args: js.Any*): this.type = js.native
+  
+  /**
+    * Does this Container exclusively manage its children?
+    * 
+    * The default is `true` which means a child added to this Container cannot
+    * belong in another Container, which includes the Scene display list.
+    * 
+    * If you disable this then this Container will no longer exclusively manage its children.
+    * This allows you to create all kinds of interesting graphical effects, such as replicating
+    * Game Objects without reparenting them all over the Scene.
+    * However, doing so will prevent children from receiving any kind of input event or have
+    * their physics bodies work by default, as they're no longer a single entity on the
+    * display list, but are being replicated where-ever this Container is.
+    */
+  var exclusive: Boolean = js.native
+  
   /**
     * Returns `true` if the given Game Object is a direct child of this Container.
     * 
@@ -250,6 +161,14 @@ trait Container
     * @param child The Game Object to check for within this Container.
     */
   def exists(child: GameObject): Boolean = js.native
+  
+  /**
+    * Returns the first Game Object within the Container, or `null` if it is empty.
+    * 
+    * You can move the cursor by calling `Container.next` and `Container.previous`.
+    */
+  val first: GameObject = js.native
+  
   /**
     * Returns all Game Objects in this Container.
     * 
@@ -305,11 +224,13 @@ trait Container
   def getAll(property: String, value: js.Any, startIndex: js.UndefOr[scala.Nothing], endIndex: integer): js.Array[GameObject] = js.native
   def getAll(property: String, value: js.Any, startIndex: integer): js.Array[GameObject] = js.native
   def getAll(property: String, value: js.Any, startIndex: integer, endIndex: integer): js.Array[GameObject] = js.native
+  
   /**
     * Returns the Game Object at the given position in this Container.
     * @param index The position to get the Game Object from.
     */
   def getAt(index: integer): GameObject = js.native
+  
   /**
     * Gets the bounds of this Container. It works by iterating all children of the Container,
     * getting their respective bounds, and then working out a min-max rectangle from that.
@@ -326,18 +247,21 @@ trait Container
     */
   def getBounds(): typings.phaser.Phaser.Geom.Rectangle = js.native
   def getBounds(output: typings.phaser.Phaser.Geom.Rectangle): typings.phaser.Phaser.Geom.Rectangle = js.native
+  
   /**
     * Returns the world transform matrix as used for Bounds checks.
     * 
     * The returned matrix is temporal and shouldn't be stored.
     */
   def getBoundsTransformMatrix(): TransformMatrix = js.native
+  
   /**
     * Searches for the first instance of a child with its `name` property matching the given argument.
     * Should more than one child have the same name only the first is returned.
     * @param name The name to search for.
     */
   def getByName(name: String): GameObject = js.native
+  
   /**
     * Gets the first Game Object in this Container.
     * 
@@ -356,11 +280,13 @@ trait Container
   def getFirst(property: String, value: js.Any, startIndex: js.UndefOr[scala.Nothing], endIndex: integer): GameObject = js.native
   def getFirst(property: String, value: js.Any, startIndex: integer): GameObject = js.native
   def getFirst(property: String, value: js.Any, startIndex: integer, endIndex: integer): GameObject = js.native
+  
   /**
     * Returns the index of the given Game Object in this Container.
     * @param child The Game Object to search for in this Container.
     */
   def getIndex(child: GameObject): integer = js.native
+  
   /**
     * Returns a random Game Object from this Container.
     * @param startIndex An optional start index. Default 0.
@@ -370,6 +296,7 @@ trait Container
   def getRandom(startIndex: js.UndefOr[scala.Nothing], length: integer): GameObject = js.native
   def getRandom(startIndex: integer): GameObject = js.native
   def getRandom(startIndex: integer, length: integer): GameObject = js.native
+  
   def iterate(callback: js.Function, context: js.UndefOr[scala.Nothing], args: js.Any*): this.type = js.native
   /**
     * Passes all Game Objects in this Container to the given callback.
@@ -381,11 +308,42 @@ trait Container
     * @param args Additional arguments that will be passed to the callback, after the child.
     */
   def iterate(callback: js.Function, context: js.Object, args: js.Any*): this.type = js.native
+  
+  /**
+    * Returns the last Game Object within the Container, or `null` if it is empty.
+    * 
+    * You can move the cursor by calling `Container.next` and `Container.previous`.
+    */
+  val last: GameObject = js.native
+  
+  /**
+    * The number of Game Objects inside this Container.
+    */
+  val length: integer = js.native
+  
+  /**
+    * An array holding the children of this Container.
+    */
+  var list: js.Array[GameObject] = js.native
+  
+  /**
+    * Internal Transform Matrix used for local space conversion.
+    */
+  var localTransform: TransformMatrix = js.native
+  
+  /**
+    * Containers can have an optional maximum size. If set to anything above 0 it
+    * will constrict the addition of new Game Objects into the Container, capping off
+    * the maximum limit the Container can grow in size to.
+    */
+  var maxSize: integer = js.native
+  
   /**
     * Moves the given Game Object down one place in this Container, unless it's already at the bottom.
     * @param child The Game Object to be moved in the Container.
     */
   def moveDown(child: GameObject): this.type = js.native
+  
   /**
     * Moves a Game Object to a new position within this Container.
     * 
@@ -397,11 +355,32 @@ trait Container
     * @param index The new position of the Game Object in this Container.
     */
   def moveTo(child: GameObject, index: integer): this.type = js.native
+  
   /**
     * Moves the given Game Object up one place in this Container, unless it's already at the top.
     * @param child The Game Object to be moved in the Container.
     */
   def moveUp(child: GameObject): this.type = js.native
+  
+  /**
+    * Returns the next Game Object within the Container, or `null` if it is empty.
+    * 
+    * You can move the cursor by calling `Container.next` and `Container.previous`.
+    */
+  val next: GameObject = js.native
+  
+  /**
+    * Internal value to allow Containers to be used for input and physics.
+    * Do not change this value. It has no effect other than to break things.
+    */
+  val originX: Double = js.native
+  
+  /**
+    * Internal value to allow Containers to be used for input and physics.
+    * Do not change this value. It has no effect other than to break things.
+    */
+  val originY: Double = js.native
+  
   /**
     * Takes a Point-like object, such as a Vector2, Geom.Point or object with public x and y properties,
     * and transforms it into the space of this Container, then returns it in the output object.
@@ -420,10 +399,24 @@ trait Container
   def pointToContainer(source: Vector2, output: js.Object): js.Object | Point | Vector2 = js.native
   def pointToContainer(source: Vector2, output: Point): js.Object | Point | Vector2 = js.native
   def pointToContainer(source: Vector2, output: Vector2): js.Object | Point | Vector2 = js.native
+  
+  /**
+    * The cursor position.
+    */
+  var position: integer = js.native
+  
   /**
     * Internal destroy handler, called as part of the destroy process.
     */
   /* protected */ def preDestroy(): Unit = js.native
+  
+  /**
+    * Returns the previous Game Object within the Container, or `null` if it is empty.
+    * 
+    * You can move the cursor by calling `Container.next` and `Container.previous`.
+    */
+  val previous: GameObject = js.native
+  
   def remove(child: js.Array[GameObject]): this.type = js.native
   def remove(child: js.Array[GameObject], destroyChild: Boolean): this.type = js.native
   /**
@@ -437,6 +430,7 @@ trait Container
     */
   def remove(child: GameObject): this.type = js.native
   def remove(child: GameObject, destroyChild: Boolean): this.type = js.native
+  
   /**
     * Removes all Game Objects from this Container.
     * 
@@ -445,6 +439,7 @@ trait Container
     */
   def removeAll(): this.type = js.native
   def removeAll(destroyChild: Boolean): this.type = js.native
+  
   /**
     * Removes the Game Object at the given position in this Container.
     * 
@@ -454,6 +449,7 @@ trait Container
     */
   def removeAt(index: integer): this.type = js.native
   def removeAt(index: integer, destroyChild: Boolean): this.type = js.native
+  
   /**
     * Removes the Game Objects between the given positions in this Container.
     * 
@@ -470,6 +466,7 @@ trait Container
   def removeBetween(startIndex: integer, endIndex: js.UndefOr[scala.Nothing], destroyChild: Boolean): this.type = js.native
   def removeBetween(startIndex: integer, endIndex: integer): this.type = js.native
   def removeBetween(startIndex: integer, endIndex: integer, destroyChild: Boolean): this.type = js.native
+  
   /**
     * Replaces a Game Object in this Container with the new Game Object.
     * The new Game Object cannot already be a child of this Container.
@@ -479,16 +476,63 @@ trait Container
     */
   def replace(oldChild: GameObject, newChild: GameObject): this.type = js.native
   def replace(oldChild: GameObject, newChild: GameObject, destroyChild: Boolean): this.type = js.native
+  
   /**
     * Reverses the order of all Game Objects in this Container.
     */
   def reverse(): this.type = js.native
+  
+  /**
+    * The horizontal scroll factor of this Container.
+    * 
+    * The scroll factor controls the influence of the movement of a Camera upon this Container.
+    * 
+    * When a camera scrolls it will change the location at which this Container is rendered on-screen.
+    * It does not change the Containers actual position values.
+    * 
+    * For a Container, setting this value will only update the Container itself, not its children.
+    * If you wish to change the scrollFactor of the children as well, use the `setScrollFactor` method.
+    * 
+    * A value of 1 means it will move exactly in sync with a camera.
+    * A value of 0 means it will not move at all, even if the camera moves.
+    * Other values control the degree to which the camera movement is mapped to this Container.
+    * 
+    * Please be aware that scroll factor values other than 1 are not taken in to consideration when
+    * calculating physics collisions. Bodies always collide based on their world position, but changing
+    * the scroll factor is a visual adjustment to where the textures are rendered, which can offset
+    * them from physics bodies if not accounted for in your code.
+    */
+  var scrollFactorX: Double = js.native
+  
+  /**
+    * The vertical scroll factor of this Container.
+    * 
+    * The scroll factor controls the influence of the movement of a Camera upon this Container.
+    * 
+    * When a camera scrolls it will change the location at which this Container is rendered on-screen.
+    * It does not change the Containers actual position values.
+    * 
+    * For a Container, setting this value will only update the Container itself, not its children.
+    * If you wish to change the scrollFactor of the children as well, use the `setScrollFactor` method.
+    * 
+    * A value of 1 means it will move exactly in sync with a camera.
+    * A value of 0 means it will not move at all, even if the camera moves.
+    * Other values control the degree to which the camera movement is mapped to this Container.
+    * 
+    * Please be aware that scroll factor values other than 1 are not taken in to consideration when
+    * calculating physics collisions. Bodies always collide based on their world position, but changing
+    * the scroll factor is a visual adjustment to where the textures are rendered, which can offset
+    * them from physics bodies if not accounted for in your code.
+    */
+  var scrollFactorY: Double = js.native
+  
   /**
     * Sends the given Game Object to the bottom of this Container.
     * This will cause it to render below any other objects in the Container.
     * @param child The Game Object to send to the bottom of the Container.
     */
   def sendToBack(child: GameObject): this.type = js.native
+  
   /**
     * Sets the property to the given value on all Game Objects in this Container.
     * 
@@ -504,6 +548,7 @@ trait Container
   def setAll(property: String, value: js.Any, startIndex: js.UndefOr[scala.Nothing], endIndex: integer): this.type = js.native
   def setAll(property: String, value: js.Any, startIndex: integer): this.type = js.native
   def setAll(property: String, value: js.Any, startIndex: integer, endIndex: integer): this.type = js.native
+  
   /**
     * Does this Container exclusively manage its children?
     * 
@@ -520,6 +565,7 @@ trait Container
     */
   def setExclusive(): this.type = js.native
   def setExclusive(value: Boolean): this.type = js.native
+  
   /**
     * Sets the scroll factor of this Container and optionally all of its children.
     * 
@@ -544,10 +590,12 @@ trait Container
   def setScrollFactor(x: Double, y: js.UndefOr[scala.Nothing], updateChildren: Boolean): this.type = js.native
   def setScrollFactor(x: Double, y: Double): this.type = js.native
   def setScrollFactor(x: Double, y: Double, updateChildren: Boolean): this.type = js.native
+  
   /**
     * Shuffles the all Game Objects in this Container using the Fisher-Yates implementation.
     */
   def shuffle(): this.type = js.native
+  
   /**
     * Sort the contents of this Container so the items are in order based on the given property.
     * For example: `sort('alpha')` would sort the elements based on the value of their `alpha` property.
@@ -556,6 +604,7 @@ trait Container
     */
   def sort(property: String): this.type = js.native
   def sort(property: String, handler: js.Function): this.type = js.native
+  
   /**
     * Swaps the position of two Game Objects in this Container.
     * Both Game Objects must belong to this Container.
@@ -564,4 +613,3 @@ trait Container
     */
   def swap(child1: GameObject, child2: GameObject): this.type = js.native
 }
-

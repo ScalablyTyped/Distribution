@@ -3,7 +3,7 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access and modify existing data source table. To create a new data source table on a new sheet,
@@ -51,15 +51,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DataSourceTable extends js.Object {
+  
   def forceRefreshData(): DataSourceTable = js.native
+  
   def getDataSource(): DataSource = js.native
+  
   def getRange(): Range = js.native
+  
   def getStatus(): DataExecutionStatus = js.native
+  
   def refreshData(): DataSourceTable = js.native
+  
   def waitForCompletion(timeoutInSeconds: Integer): DataExecutionStatus = js.native
 }
-
 object DataSourceTable {
+  
   @scala.inline
   def apply(
     forceRefreshData: () => DataSourceTable,
@@ -72,30 +78,38 @@ object DataSourceTable {
     val __obj = js.Dynamic.literal(forceRefreshData = js.Any.fromFunction0(forceRefreshData), getDataSource = js.Any.fromFunction0(getDataSource), getRange = js.Any.fromFunction0(getRange), getStatus = js.Any.fromFunction0(getStatus), refreshData = js.Any.fromFunction0(refreshData), waitForCompletion = js.Any.fromFunction1(waitForCompletion))
     __obj.asInstanceOf[DataSourceTable]
   }
+  
   @scala.inline
   implicit class DataSourceTableOps[Self <: DataSourceTable] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setForceRefreshData(value: () => DataSourceTable): Self = this.set("forceRefreshData", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetDataSource(value: () => DataSource): Self = this.set("getDataSource", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetRange(value: () => Range): Self = this.set("getRange", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setGetStatus(value: () => DataExecutionStatus): Self = this.set("getStatus", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRefreshData(value: () => DataSourceTable): Self = this.set("refreshData", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setWaitForCompletion(value: Integer => DataExecutionStatus): Self = this.set("waitForCompletion", js.Any.fromFunction1(value))
   }
-  
 }
-

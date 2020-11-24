@@ -6,11 +6,12 @@ import typings.knockout.knockoutStrings.replaceNode
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("knockout", "renderTemplate")
 @js.native
 object renderTemplate extends js.Object {
+  
   def apply(template: String): String = js.native
   def apply(template: js.Function0[String | Node]): String = js.native
   def apply(template: Node): String = js.native
@@ -48,4 +49,3 @@ object renderTemplate extends js.Object {
   def apply[T](template: Node, dataOrBindingContext: BindingContext[T]): String = js.native
   def apply[T](template: Node, dataOrBindingContext: BindingContext[T], options: TemplateOptions[T]): String = js.native
 }
-

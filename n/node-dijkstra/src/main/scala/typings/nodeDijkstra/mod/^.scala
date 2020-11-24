@@ -2,7 +2,7 @@ package typings.nodeDijkstra.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-dijkstra", JSImport.Namespace)
 @js.native
@@ -52,4 +52,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends Graph {
   def this(nodes: js.Array[_]) = this()
 }
-

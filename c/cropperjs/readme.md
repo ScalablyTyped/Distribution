@@ -1,7 +1,7 @@
 
 # Scala.js typings for cropperjs
 
-Typings are for version 1.5.7
+Typings are for version 1.5.9
 
 ## Library description:
 JavaScript image cropper.
@@ -10,9 +10,9 @@ JavaScript image cropper.
 | ------------------ | :-------------: |
 | Full name          | cropperjs |
 | Keywords           | image, crop, move, zoom, rotate, scale, cropper, cropper.js, cropping, processing, html, css, javascript, front-end, web |
-| # releases         | 22 |
-| # dependents       | 201 |
-| # downloads        | 4765528 |
+| # releases         | 13 |
+| # dependents       | 251 |
+| # downloads        | 8377363 |
 | # stars            | 23 |
 
 ## Links

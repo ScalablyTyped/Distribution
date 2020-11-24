@@ -10,9 +10,9 @@ Reduce multiple reducers into a single reducer
 | ------------------ | :-------------: |
 | Full name          | reduce-reducers |
 | Keywords           | reduce, reducers, redux |
-| # releases         | 13 |
-| # dependents       | 82 |
-| # downloads        | 14161439 |
+| # releases         | 6 |
+| # dependents       | 86 |
+| # downloads        | 17324419 |
 | # stars            | 1 |
 
 ## Links

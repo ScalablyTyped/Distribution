@@ -3,10 +3,11 @@ package typings.rxjsCompat.anon
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallThisDueScheduler extends js.Object {
+  
   def apply[T](due: Double): js.Any = js.native
   def apply[T](
     due: Double,
@@ -18,4 +19,3 @@ trait FnCallThisDueScheduler extends js.Object {
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
   ): js.Any = js.native
 }
-

@@ -2,14 +2,14 @@ package typings.winrt.Windows.Devices.Enumeration
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Panel extends js.Object
-
 @JSGlobal("Windows.Devices.Enumeration.Panel")
 @js.native
 object Panel extends js.Object {
+  
   @js.native
   sealed trait back extends Panel
   
@@ -30,6 +30,4 @@ object Panel extends js.Object {
   
   @js.native
   sealed trait unknown extends Panel
-  
 }
-

@@ -3,11 +3,11 @@ package typings.std
 import typings.std.stdStrings.error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AbstractWorker extends js.Object {
-  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]) | Null = js.native
+  
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   def addEventListener(
@@ -29,6 +29,9 @@ trait AbstractWorker extends js.Object {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]) | Null = js.native
+  
   def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   def removeEventListener(
@@ -51,4 +54,3 @@ trait AbstractWorker extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
 }
-

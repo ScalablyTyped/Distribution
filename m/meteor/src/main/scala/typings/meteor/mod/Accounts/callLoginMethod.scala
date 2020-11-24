@@ -2,11 +2,12 @@ package typings.meteor.mod.Accounts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/accounts-base", "Accounts.callLoginMethod")
 @js.native
 object callLoginMethod extends js.Object {
+  
   /**
     *
     * Call a login method on the server.
@@ -36,4 +37,3 @@ object callLoginMethod extends js.Object {
     * */
   def apply(options: LoginMethodOptions): Unit = js.native
 }
-

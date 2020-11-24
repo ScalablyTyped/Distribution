@@ -1,17 +1,19 @@
 package typings.awsSdk.appconfigMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AppConfig extends Service {
+  
   @JSName("config")
   var config_AppConfig: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * An application in AppConfig is a logical unit of code that provides capabilities for your customers. For example, an application can be a microservice that runs on Amazon EC2 instances, a mobile application installed by your users, a serverless application using Amazon API Gateway and AWS Lambda, or any system you run on behalf of others.
     */
@@ -25,6 +27,7 @@ trait AppConfig extends Service {
     params: CreateApplicationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Application, Unit]
   ): Request[Application, AWSError] = js.native
+  
   /**
     * Information that enables AppConfig to access the configuration source. Valid configuration sources include Systems Manager (SSM) documents, SSM Parameter Store parameters, and Amazon S3 objects. A configuration profile includes the following information.   The Uri location of the configuration data.   The AWS Identity and Access Management (IAM) role that provides access to the configuration data.   A validator for the configuration data. Available validators include either a JSON Schema or an AWS Lambda function.   For more information, see Create a Configuration and a Configuration Profile in the AWS AppConfig User Guide.
     */
@@ -38,6 +41,7 @@ trait AppConfig extends Service {
     params: CreateConfigurationProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ConfigurationProfile, Unit]
   ): Request[ConfigurationProfile, AWSError] = js.native
+  
   /**
     * A deployment strategy defines important criteria for rolling out your configuration to the designated targets. A deployment strategy includes: the overall duration required, a percentage of targets to receive the deployment during each interval, an algorithm that defines how percentage grows, and bake time.
     */
@@ -51,6 +55,7 @@ trait AppConfig extends Service {
     params: CreateDeploymentStrategyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeploymentStrategy, Unit]
   ): Request[DeploymentStrategy, AWSError] = js.native
+  
   /**
     * For each application, you define one or more environments. An environment is a logical deployment group of AppConfig targets, such as applications in a Beta or Production environment. You can also define environments for application subcomponents such as the Web, Mobile and Back-end components for your application. You can configure Amazon CloudWatch alarms for each environment. The system monitors alarms during a configuration deployment. If an alarm is triggered, the system rolls back the configuration.
     */
@@ -64,6 +69,7 @@ trait AppConfig extends Service {
     params: CreateEnvironmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Environment, Unit]
   ): Request[Environment, AWSError] = js.native
+  
   /**
     * Create a new configuration in the AppConfig configuration store.
     */
@@ -77,6 +83,7 @@ trait AppConfig extends Service {
     params: CreateHostedConfigurationVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ HostedConfigurationVersion, Unit]
   ): Request[HostedConfigurationVersion, AWSError] = js.native
+  
   /**
     * Delete an application. Deleting an application does not delete a configuration from a host.
     */
@@ -90,6 +97,7 @@ trait AppConfig extends Service {
     params: DeleteApplicationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Delete a configuration profile. Deleting a configuration profile does not delete a configuration from a host.
     */
@@ -103,6 +111,7 @@ trait AppConfig extends Service {
     params: DeleteConfigurationProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Delete a deployment strategy. Deleting a deployment strategy does not delete a configuration from a host.
     */
@@ -116,6 +125,7 @@ trait AppConfig extends Service {
     params: DeleteDeploymentStrategyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Delete an environment. Deleting an environment does not delete a configuration from a host.
     */
@@ -129,6 +139,7 @@ trait AppConfig extends Service {
     params: DeleteEnvironmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Delete a version of a configuration from the AppConfig configuration store.
     */
@@ -142,6 +153,7 @@ trait AppConfig extends Service {
     params: DeleteHostedConfigurationVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Retrieve information about an application.
     */
@@ -155,6 +167,7 @@ trait AppConfig extends Service {
     params: GetApplicationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Application, Unit]
   ): Request[Application, AWSError] = js.native
+  
   /**
     * Receive information about a configuration.  AWS AppConfig uses the value of the ClientConfigurationVersion parameter to identify the configuration version on your clients. If you don’t send ClientConfigurationVersion with each call to GetConfiguration, your clients receive the current configuration. You are charged each time your clients receive a configuration. To avoid excess charges, we recommend that you include the ClientConfigurationVersion value with every call to GetConfiguration. This value must be saved on your client. Subsequent calls to GetConfiguration must pass this value by using the ClientConfigurationVersion parameter.  
     */
@@ -168,6 +181,7 @@ trait AppConfig extends Service {
     params: GetConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Configuration, Unit]
   ): Request[Configuration, AWSError] = js.native
+  
   /**
     * Retrieve information about a configuration profile.
     */
@@ -181,6 +195,7 @@ trait AppConfig extends Service {
     params: GetConfigurationProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ConfigurationProfile, Unit]
   ): Request[ConfigurationProfile, AWSError] = js.native
+  
   /**
     * Retrieve information about a configuration deployment.
     */
@@ -194,6 +209,7 @@ trait AppConfig extends Service {
     params: GetDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Deployment, Unit]
   ): Request[Deployment, AWSError] = js.native
+  
   /**
     * Retrieve information about a deployment strategy. A deployment strategy defines important criteria for rolling out your configuration to the designated targets. A deployment strategy includes: the overall duration required, a percentage of targets to receive the deployment during each interval, an algorithm that defines how percentage grows, and bake time.
     */
@@ -207,6 +223,7 @@ trait AppConfig extends Service {
     params: GetDeploymentStrategyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeploymentStrategy, Unit]
   ): Request[DeploymentStrategy, AWSError] = js.native
+  
   /**
     * Retrieve information about an environment. An environment is a logical deployment group of AppConfig applications, such as applications in a Production environment or in an EU_Region environment. Each configuration deployment targets an environment. You can enable one or more Amazon CloudWatch alarms for an environment. If an alarm is triggered during a deployment, AppConfig roles back the configuration.
     */
@@ -220,6 +237,7 @@ trait AppConfig extends Service {
     params: GetEnvironmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Environment, Unit]
   ): Request[Environment, AWSError] = js.native
+  
   /**
     * Get information about a specific configuration version.
     */
@@ -233,6 +251,7 @@ trait AppConfig extends Service {
     params: GetHostedConfigurationVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ HostedConfigurationVersion, Unit]
   ): Request[HostedConfigurationVersion, AWSError] = js.native
+  
   /**
     * List all applications in your AWS account.
     */
@@ -246,6 +265,7 @@ trait AppConfig extends Service {
     params: ListApplicationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Applications, Unit]
   ): Request[Applications, AWSError] = js.native
+  
   /**
     * Lists the configuration profiles for an application.
     */
@@ -259,6 +279,7 @@ trait AppConfig extends Service {
     params: ListConfigurationProfilesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ConfigurationProfiles, Unit]
   ): Request[ConfigurationProfiles, AWSError] = js.native
+  
   /**
     * List deployment strategies.
     */
@@ -272,6 +293,7 @@ trait AppConfig extends Service {
     params: ListDeploymentStrategiesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeploymentStrategies, Unit]
   ): Request[DeploymentStrategies, AWSError] = js.native
+  
   /**
     * Lists the deployments for an environment.
     */
@@ -285,6 +307,7 @@ trait AppConfig extends Service {
     params: ListDeploymentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Deployments, Unit]
   ): Request[Deployments, AWSError] = js.native
+  
   /**
     * List the environments for an application.
     */
@@ -298,6 +321,7 @@ trait AppConfig extends Service {
     params: ListEnvironmentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Environments, Unit]
   ): Request[Environments, AWSError] = js.native
+  
   /**
     * View a list of configurations stored in the AppConfig configuration store by version.
     */
@@ -311,6 +335,7 @@ trait AppConfig extends Service {
     params: ListHostedConfigurationVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ HostedConfigurationVersions, Unit]
   ): Request[HostedConfigurationVersions, AWSError] = js.native
+  
   /**
     * Retrieves the list of key-value tags assigned to the resource.
     */
@@ -324,6 +349,7 @@ trait AppConfig extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ResourceTags, Unit]
   ): Request[ResourceTags, AWSError] = js.native
+  
   /**
     * Starts a deployment.
     */
@@ -337,6 +363,7 @@ trait AppConfig extends Service {
     params: StartDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Deployment, Unit]
   ): Request[Deployment, AWSError] = js.native
+  
   /**
     * Stops a deployment. This API action works only on deployments that have a status of DEPLOYING. This action moves the deployment to a status of ROLLED_BACK.
     */
@@ -350,6 +377,7 @@ trait AppConfig extends Service {
     params: StopDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Deployment, Unit]
   ): Request[Deployment, AWSError] = js.native
+  
   /**
     * Metadata to assign to an AppConfig resource. Tags help organize and categorize your AppConfig resources. Each tag consists of a key and an optional value, both of which you define. You can specify a maximum of 50 tags for a resource.
     */
@@ -360,6 +388,7 @@ trait AppConfig extends Service {
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a tag key and value from an AppConfig resource.
     */
@@ -373,6 +402,7 @@ trait AppConfig extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates an application.
     */
@@ -386,6 +416,7 @@ trait AppConfig extends Service {
     params: UpdateApplicationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Application, Unit]
   ): Request[Application, AWSError] = js.native
+  
   /**
     * Updates a configuration profile.
     */
@@ -399,6 +430,7 @@ trait AppConfig extends Service {
     params: UpdateConfigurationProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ConfigurationProfile, Unit]
   ): Request[ConfigurationProfile, AWSError] = js.native
+  
   /**
     * Updates a deployment strategy.
     */
@@ -412,6 +444,7 @@ trait AppConfig extends Service {
     params: UpdateDeploymentStrategyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeploymentStrategy, Unit]
   ): Request[DeploymentStrategy, AWSError] = js.native
+  
   /**
     * Updates an environment.
     */
@@ -425,6 +458,7 @@ trait AppConfig extends Service {
     params: UpdateEnvironmentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Environment, Unit]
   ): Request[Environment, AWSError] = js.native
+  
   /**
     * Uses the validators in a configuration profile to validate a configuration.
     */
@@ -439,4 +473,3 @@ trait AppConfig extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
 }
-

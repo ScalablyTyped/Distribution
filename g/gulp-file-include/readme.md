@@ -10,9 +10,9 @@ a gulp plugin for file include
 | ------------------ | :-------------: |
 | Full name          | gulp-file-include |
 | Keywords           | gulpplugin, file, include, replace, gulp, plugin |
-| # releases         | 5 |
-| # dependents       | 55 |
-| # downloads        | 343033 |
+| # releases         | 6 |
+| # dependents       | 62 |
+| # downloads        | 373739 |
 | # stars            | 92 |
 
 ## Links

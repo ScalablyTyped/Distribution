@@ -3,7 +3,7 @@ package typings.rxjs.internalCompatibilityMod
 import typings.rxjs.typesMod.PartialObserver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal-compatibility", "Subscriber")
 @js.native
@@ -59,11 +59,11 @@ class Subscriber[T] ()
     complete: js.Function0[Unit]
   ) = this()
 }
-
 /* static members */
 @JSImport("rxjs/internal-compatibility", "Subscriber")
 @js.native
 object Subscriber extends js.Object {
+  
   /**
     * A static factory for a Subscriber, given a (potentially partial) definition
     * of an Observer.
@@ -100,4 +100,3 @@ object Subscriber extends js.Object {
     complete: js.Function0[Unit]
   ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.webpackbar.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Elegant ProgressBar and Profiler for Webpack
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends WebpackBar {
   def this(options: Options) = this()
 }
-

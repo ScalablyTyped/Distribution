@@ -3,9 +3,22 @@ package typings.tileReduce
 import typings.tileReduce.TileReduce.Types
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tileReduceStrings {
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def map: map = "map".asInstanceOf[map]
+  
+  @scala.inline
+  def reduce: reduce = "reduce".asInstanceOf[reduce]
+  
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  
   @js.native
   sealed trait end extends Types
   
@@ -17,14 +30,4 @@ object tileReduceStrings {
   
   @js.native
   sealed trait start extends Types
-  
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def map: map = "map".asInstanceOf[map]
-  @scala.inline
-  def reduce: reduce = "reduce".asInstanceOf[reduce]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
 }
-

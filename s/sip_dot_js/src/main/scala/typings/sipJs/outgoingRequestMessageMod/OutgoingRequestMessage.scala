@@ -6,7 +6,7 @@ import typings.sipJs.grammarMod.NameAddrHeader
 import typings.sipJs.grammarMod.URI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/core/messages/outgoing-request-message", "OutgoingRequestMessage")
 @js.native
@@ -65,39 +65,52 @@ class OutgoingRequestMessage protected () extends js.Object {
     extraHeaders: js.Array[String],
     body: Body
   ) = this()
+  
   var body: js.UndefOr[typings.sipJs.anon.Body] = js.native
+  
   var branch: js.UndefOr[String] = js.native
+  
   val callId: String = js.native
+  
   var cseq: Double = js.native
+  
   var extraHeaders: js.Array[String] = js.native
+  
   val from: NameAddrHeader = js.native
+  
   val fromTag: String = js.native
+  
   val fromURI: URI = js.native
-  val headers: StringDictionary[js.Array[String]] = js.native
-  val method: String = js.native
-  var options: js.Any = js.native
-  val ruri: URI = js.native
-  val to: NameAddrHeader = js.native
-  val toTag: js.UndefOr[String] = js.native
-  val toURI: URI = js.native
+  
   /**
     * Get the value of the given header name at the given position.
     * @param name - header name
     * @returns Returns the specified header, undefined if header doesn't exist.
     */
   def getHeader(name: String): js.UndefOr[String] = js.native
+  
   /**
     * Get the header/s of the given name.
     * @param name - header name
     * @returns Array with all the headers of the specified name.
     */
   def getHeaders(name: String): js.Array[String] = js.native
+  
   /**
     * Verify the existence of the given header.
     * @param name - header name
     * @returns true if header with given name exists, false otherwise
     */
   def hasHeader(name: String): Boolean = js.native
+  
+  val headers: StringDictionary[js.Array[String]] = js.native
+  
+  val method: String = js.native
+  
+  var options: js.Any = js.native
+  
+  val ruri: URI = js.native
+  
   /**
     * Replace the the given header by the given value.
     * @param name - header name
@@ -105,6 +118,7 @@ class OutgoingRequestMessage protected () extends js.Object {
     */
   def setHeader(name: String, value: String): Unit = js.native
   def setHeader(name: String, value: js.Array[String]): Unit = js.native
+  
   /**
     * The Via header field indicates the transport used for the transaction
     * and identifies the location where the response is to be sent.  A Via
@@ -123,14 +137,20 @@ class OutgoingRequestMessage protected () extends js.Object {
     * @param transport - The sent protocol transport.
     */
   def setViaHeader(branch: String, transport: String): Unit = js.native
+  
+  val to: NameAddrHeader = js.native
+  
+  val toTag: js.UndefOr[String] = js.native
+  
+  val toURI: URI = js.native
 }
-
 /* static members */
 @JSImport("sip.js/lib/core/messages/outgoing-request-message", "OutgoingRequestMessage")
 @js.native
 object OutgoingRequestMessage extends js.Object {
+  
   /** Get a copy of the default options. */
   var getDefaultOptions: js.Any = js.native
+  
   var makeNameAddrHeader: js.Any = js.native
 }
-

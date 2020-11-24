@@ -3,7 +3,7 @@ package typings.protractor.mod.protractor
 import typings.seleniumWebdriver.mod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor", "protractor.EventEmitter")
 @js.native
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   * @constructor
   */
 class EventEmitterCls () extends EventEmitter
-

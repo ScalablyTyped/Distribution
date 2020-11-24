@@ -5,11 +5,12 @@ import typings.d3Selection.mod.Selection_
 import typings.std.SVGFEDiffuseLightingElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3", "create")
 @js.native
 object create_feDiffuseLighting extends js.Object {
+  
   def apply(name: feDiffuseLighting): Selection_[
     SVGFEDiffuseLightingElement, 
     js.UndefOr[scala.Nothing], 
@@ -17,4 +18,3 @@ object create_feDiffuseLighting extends js.Object {
     js.UndefOr[scala.Nothing]
   ] = js.native
 }
-

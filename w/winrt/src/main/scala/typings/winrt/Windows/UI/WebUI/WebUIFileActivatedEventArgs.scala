@@ -8,14 +8,14 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Storage.IStorageItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebUIFileActivatedEventArgs
   extends IFileActivatedEventArgs
      with IActivatedEventArgsDeferral
-
 object WebUIFileActivatedEventArgs {
+  
   @scala.inline
   def apply(
     activatedOperation: ActivatedOperation,
@@ -29,4 +29,3 @@ object WebUIFileActivatedEventArgs {
     __obj.asInstanceOf[WebUIFileActivatedEventArgs]
   }
 }
-

@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.ReportViewer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PaperSize extends js.Object
-
 @JSGlobal("ej.ReportViewer.PaperSize")
 @js.native
 object PaperSize extends js.Object {
+  
   ///Specifies the A3 as value in pageSettings.paperSize to get specified size.
   @js.native
   sealed trait A3 extends PaperSize
@@ -53,6 +53,4 @@ object PaperSize extends js.Object {
   ///Specifies the Tabloid as value in pageSettings.paperSize to get specified size.
   @js.native
   sealed trait Tabloid extends PaperSize
-  
 }
-

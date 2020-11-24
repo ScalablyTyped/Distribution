@@ -5,7 +5,7 @@ import typings.heremaps.H.service.Platform.DefaultLayersOptions
 import typings.heremaps.H.service.metaInfo.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Platform class represents central class from which all other service stubs are created. It also contains the shared settings to be passed to the individual service stubs, for example
@@ -13,12 +13,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Platform_ extends js.Object {
+  
   /**
     * Method attempts to configure object that implements H.service.IConfigurable
     * @param configurable {H.service.IConfigurable}
     * @returns {H.service.IConfigurable}
     */
   def configure(configurable: IConfigurable): IConfigurable = js.native
+  
   /**
     * This method creates a pre-configured set of HERE tile layers for convenient use with the map.
     * @param opt_tileSize {(H.service.Platform.DefaultLayersOptions | number)=} - When a number – optional tile size to be queried from the HERE Map Tile API, default is 256.
@@ -40,11 +42,13 @@ trait Platform_ extends js.Object {
     opt_style: js.UndefOr[String],
     opt_pois: js.UndefOr[String | Boolean]
   ): DefaultLayers = js.native
+  
   /**
     * This method returns the currently used base URL.
     * @returns {H.service.Url}
     */
   def getBaseUrl(): Url = js.native
+  
   /**
     * This method returns an instance of H.service.EnterpriseRoutingService to query the Enterprise Routing API.
     * @param opt_options {H.service.EnterpriseRoutingService.Options=}
@@ -52,6 +56,7 @@ trait Platform_ extends js.Object {
     */
   def getEnterpriseRoutingService(): EnterpriseRoutingService = js.native
   def getEnterpriseRoutingService(opt_options: Options): EnterpriseRoutingService = js.native
+  
   /**
     * This method returns an instance of H.service.GeocodingService to query the Geocoder API
     * @param opt_options {H.service.GeocodingService.Options=} - an optional set of options for the new geocoding service to connect to
@@ -59,6 +64,7 @@ trait Platform_ extends js.Object {
     */
   def getGeocodingService(): GeocodingService = js.native
   def getGeocodingService(opt_options: typings.heremaps.H.service.GeocodingService.Options): GeocodingService = js.native
+  
   /**
     * This method returns an instance of H.service.MapTileService to query the Map Tile API.
     * @param opt_options {H.service.MapTileService.Options=}
@@ -66,6 +72,7 @@ trait Platform_ extends js.Object {
     */
   def getMapTileService(): MapTileService = js.native
   def getMapTileService(opt_options: typings.heremaps.H.service.MapTileService.Options): MapTileService = js.native
+  
   /**
     * This method returns an instance of H.service.metaInfo.Service to query the Map Tile API Metainfo Tiles
     * @param opt_params {H.service.metaInfo.Service.Options=} - additional service parameters
@@ -73,11 +80,13 @@ trait Platform_ extends js.Object {
     */
   def getMetaInfoService(): Service = js.native
   def getMetaInfoService(opt_params: typings.heremaps.H.service.metaInfo.Service.Options): Service = js.native
+  
   /**
     * This method returns an instance of H.service.PlacesService to query the Places API.
     * @returns {H.service.PlacesService} - a new places service instance
     */
   def getPlacesService(): PlacesService = js.native
+  
   /**
     * This method returns an instance of H.service.RoutingService to query the Routing API.
     * @param opt_options {H.service.RoutingService.Options=}
@@ -85,12 +94,14 @@ trait Platform_ extends js.Object {
     */
   def getRoutingService(): RoutingService = js.native
   def getRoutingService(opt_options: typings.heremaps.H.service.RoutingService.Options): RoutingService = js.native
+  
   /**
     * This method returns an instance of {@link H.service.traffic.Service} to query the Traffic API Traffic Incident Data
     * @returns {H.service.traffic.Service} - a new places service instance
     */
   def getTrafficService(): typings.heremaps.H.service.traffic.Service = js.native
   def getTrafficService(opt_options: typings.heremaps.H.service.traffic.Service.Options): typings.heremaps.H.service.traffic.Service = js.native
+  
   /**
     * This method returns an instance of H.service.venues.Service to query the Venue Maps API
     * @param opt_params {H.service.venues.Service.Options=} - additional service parameters
@@ -98,20 +109,22 @@ trait Platform_ extends js.Object {
     */
   def getVenueService(): typings.heremaps.H.service.venues.Service = js.native
   def getVenueService(opt_params: typings.heremaps.H.service.venues.Service.Options): typings.heremaps.H.service.venues.Service = js.native
+  
   /**
     * This method modifies the base URL to be used when creating service stubs.
     * @param baseUrl {H.service.Url} - the new base URL to use
     */
   def setBaseUrl(baseUrl: Url): Unit = js.native
+  
   /**
     * This method configures whether to use the "customer integration testing" instance of the platform.
     * @param useCIT {boolean} - a boolean value indicating whether the CIT platform instance is to be used
     */
   def setUseCIT(useCIT: Boolean): Unit = js.native
+  
   /**
     * This method enables or disables HTTPS communication with the platform
     * @param useHTTPS {boolean} - a boolean value indicating whether to communicate with the platform via HTTPS
     */
   def setUseHTTPS(useHTTPS: Boolean): Unit = js.native
 }
-

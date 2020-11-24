@@ -4,14 +4,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-timeout", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var TimeoutError: Instantiable1[/* message */ js.UndefOr[String], TimeoutErrorClass] = js.native
-  // TODO: Remove this for the next major release
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTimeout */ js.Any = js.native
+  
   /**
   	Timeout a promise after a specified amount of time.
   	If you pass in a cancelable promise, specifically a promise with a `.cancel()` method, that method will be called when the `pTimeout` promise times out.
@@ -53,5 +51,9 @@ object ^ extends js.Object {
     milliseconds: Double,
     fallback: js.Function0[ReturnType | js.Promise[ReturnType]]
   ): js.Promise[ValueType | ReturnType] = js.native
+  
+  var TimeoutError: Instantiable1[/* message */ js.UndefOr[String], TimeoutErrorClass] = js.native
+  
+  // TODO: Remove this for the next major release
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTimeout */ js.Any = js.native
 }
-

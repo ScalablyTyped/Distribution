@@ -12,7 +12,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/events/v1beta1/event", "Event")
 @js.native
@@ -28,77 +28,94 @@ class Event protected () extends CustomResource {
   def this(name: String, args: EventArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: EventArgs, opts: CustomResourceOptions) = this()
+  
   /**
-    * What action was taken/failed regarding to the regarding object.
+    * action is what action was taken/failed regarding to the regarding object. It is machine-readable. This field can have at most 128 characters.
     */
   val action: Output_[String] = js.native
+  
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: Output_[eventsDotk8sDotioSlashv1beta1] = js.native
+  
   /**
-    * Deprecated field assuring backward compatibility with core.v1 Event type
+    * deprecatedCount is the deprecated field assuring backward compatibility with core.v1 Event type.
     */
   val deprecatedCount: Output_[Double] = js.native
+  
   /**
-    * Deprecated field assuring backward compatibility with core.v1 Event type
+    * deprecatedFirstTimestamp is the deprecated field assuring backward compatibility with core.v1 Event type.
     */
   val deprecatedFirstTimestamp: Output_[String] = js.native
+  
   /**
-    * Deprecated field assuring backward compatibility with core.v1 Event type
+    * deprecatedLastTimestamp is the deprecated field assuring backward compatibility with core.v1 Event type.
     */
   val deprecatedLastTimestamp: Output_[String] = js.native
+  
   /**
-    * Deprecated field assuring backward compatibility with core.v1 Event type
+    * deprecatedSource is the deprecated field assuring backward compatibility with core.v1 Event type.
     */
   val deprecatedSource: Output_[EventSource] = js.native
+  
   /**
-    * Required. Time when this Event was first observed.
+    * eventTime is the time when this Event was first observed. It is required.
     */
   val eventTime: Output_[String] = js.native
+  
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.Event] = js.native
+  
   val metadata: Output_[ObjectMeta] = js.native
+  
   /**
-    * Optional. A human-readable description of the status of this operation. Maximal length of the note is 1kB, but libraries should be prepared to handle values up to 64kB.
+    * note is a human-readable description of the status of this operation. Maximal length of the note is 1kB, but libraries should be prepared to handle values up to 64kB.
     */
   val note: Output_[String] = js.native
+  
   /**
-    * Why the action was taken.
+    * reason is why the action was taken. It is human-readable. This field can have at most 128 characters.
     */
   val reason: Output_[String] = js.native
+  
   /**
-    * The object this Event is about. In most cases it's an Object reporting controller implements. E.g. ReplicaSetController implements ReplicaSets and this event is emitted because it acts on some changes in a ReplicaSet object.
+    * regarding contains the object this Event is about. In most cases it's an Object reporting controller implements, e.g. ReplicaSetController implements ReplicaSets and this event is emitted because it acts on some changes in a ReplicaSet object.
     */
   val regarding: Output_[ObjectReference] = js.native
+  
   /**
-    * Optional secondary object for more complex actions. E.g. when regarding object triggers a creation or deletion of related object.
+    * related is the optional secondary object for more complex actions. E.g. when regarding object triggers a creation or deletion of related object.
     */
   val related: Output_[ObjectReference] = js.native
+  
   /**
-    * Name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`.
+    * reportingController is the name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`. This field cannot be empty for new Events.
     */
   val reportingController: Output_[String] = js.native
+  
   /**
-    * ID of the controller instance, e.g. `kubelet-xyzf`.
+    * reportingInstance is the ID of the controller instance, e.g. `kubelet-xyzf`. This field cannot be empty for new Events and it can have at most 128 characters.
     */
   val reportingInstance: Output_[String] = js.native
+  
   /**
-    * Data about the Event series this event represents or nil if it's a singleton Event.
+    * series is data about the Event series this event represents or nil if it's a singleton Event.
     */
   val series: Output_[EventSeries] = js.native
+  
   /**
-    * Type of this event (Normal, Warning), new types could be added in the future.
+    * type is the type of this event (Normal, Warning), new types could be added in the future. It is machine-readable.
     */
   val `type`: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/events/v1beta1/event", "Event")
 @js.native
 object Event extends js.Object {
+  
   /**
     * Get an existing Event resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -109,10 +126,10 @@ object Event extends js.Object {
     */
   def get(name: String, id: Input[ID]): Event = js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): Event = js.native
+  
   /**
     * Returns true if the given object is an instance of Event.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/events/v1beta1/event.Event */ Boolean = js.native
 }
-

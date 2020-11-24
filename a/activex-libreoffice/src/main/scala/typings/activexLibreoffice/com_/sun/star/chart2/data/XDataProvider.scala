@@ -8,11 +8,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An application that provides data for a chart must implement this interface. */
 @js.native
 trait XDataProvider extends XInterface {
+  
   /**
     * Returns a component that is able to change a given range representation to another one. This usually is a controller-component that uses the GUI to
     * allow a user to select a new range.
@@ -21,6 +22,7 @@ trait XDataProvider extends XInterface {
     * @returns The component for selecting a new range. It must support XComponent, in order to inform the receiver about its lifetime.
     */
   val RangeSelection: XRangeSelection = js.native
+  
   /**
     * creates a single data sequence for the given data range.
     * @param aRangeRepresentation is a string that can be interpreted by the component that implements this interface. The representation string is of a form
@@ -28,12 +30,15 @@ trait XDataProvider extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if the given range does not contain a valid range representation for a one-dimensional range of data.
     */
   def createDataSequenceByRangeRepresentation(aRangeRepresentation: String): XDataSequence = js.native
+  
   /**
     * If `TRUE` is returned, a call to createDataSequenceByRangeRepresentation with the same argument must return a valid {@link XDataSequence} object. If
     * `FALSE` is returned, createDataSequenceByRangeRepresentation throws an exception.
     */
   def createDataSequenceByRangeRepresentationPossible(aRangeRepresentation: String): Boolean = js.native
+  
   def createDataSequenceByValueArray(aRole: String, aValueArray: String): XDataSequence = js.native
+  
   /**
     * Creates a data source object that matches the given range representation string.
     *
@@ -43,11 +48,13 @@ trait XDataProvider extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException may be raised by the {@link XDataProvider} if it is unable to interpret the arguments passed in `a
     */
   def createDataSource(aArguments: SeqEquiv[PropertyValue]): XDataSource = js.native
+  
   /**
     * If `TRUE` is returned, a call to createDataSource with the same arguments must return a valid {@link XDataSequence} object. If `FALSE` is returned,
     * createDataSource throws an exception.
     */
   def createDataSourcePossible(aArguments: SeqEquiv[PropertyValue]): Boolean = js.native
+  
   /**
     * Tries to find out with what parameters the passed {@link DataSource} most probably was created.
     *
@@ -60,6 +67,7 @@ trait XDataProvider extends XInterface {
     * @returns Arguments that when being passed to {@link createDataSource()} should in an ideal case return the same data source as `xDataSource` .
     */
   def detectArguments(xDataSource: XDataSource): SafeArray[PropertyValue] = js.native
+  
   /**
     * Returns a component that is able to change a given range representation to another one. This usually is a controller-component that uses the GUI to
     * allow a user to select a new range.
@@ -69,8 +77,8 @@ trait XDataProvider extends XInterface {
     */
   def getRangeSelection(): XRangeSelection = js.native
 }
-
 object XDataProvider {
+  
   @scala.inline
   def apply(
     RangeSelection: XRangeSelection,
@@ -88,34 +96,44 @@ object XDataProvider {
     val __obj = js.Dynamic.literal(RangeSelection = RangeSelection.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), createDataSequenceByRangeRepresentation = js.Any.fromFunction1(createDataSequenceByRangeRepresentation), createDataSequenceByRangeRepresentationPossible = js.Any.fromFunction1(createDataSequenceByRangeRepresentationPossible), createDataSequenceByValueArray = js.Any.fromFunction2(createDataSequenceByValueArray), createDataSource = js.Any.fromFunction1(createDataSource), createDataSourcePossible = js.Any.fromFunction1(createDataSourcePossible), detectArguments = js.Any.fromFunction1(detectArguments), getRangeSelection = js.Any.fromFunction0(getRangeSelection), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XDataProvider]
   }
+  
   @scala.inline
   implicit class XDataProviderOps[Self <: XDataProvider] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setRangeSelection(value: XRangeSelection): Self = this.set("RangeSelection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCreateDataSequenceByRangeRepresentation(value: String => XDataSequence): Self = this.set("createDataSequenceByRangeRepresentation", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateDataSequenceByRangeRepresentationPossible(value: String => Boolean): Self = this.set("createDataSequenceByRangeRepresentationPossible", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateDataSequenceByValueArray(value: (String, String) => XDataSequence): Self = this.set("createDataSequenceByValueArray", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setCreateDataSource(value: SeqEquiv[PropertyValue] => XDataSource): Self = this.set("createDataSource", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setCreateDataSourcePossible(value: SeqEquiv[PropertyValue] => Boolean): Self = this.set("createDataSourcePossible", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setDetectArguments(value: XDataSource => SafeArray[PropertyValue]): Self = this.set("detectArguments", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetRangeSelection(value: () => XRangeSelection): Self = this.set("getRangeSelection", js.Any.fromFunction0(value))
   }
-  
 }
-

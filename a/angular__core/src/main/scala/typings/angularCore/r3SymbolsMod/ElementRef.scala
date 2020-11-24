@@ -2,7 +2,7 @@ package typings.angularCore.r3SymbolsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A wrapper around a native element inside of a View.
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ElementRef[T] extends js.Object {
+  
   /**
     * The underlying native element or `null` if direct access to native elements is not supported
     * (e.g. when the application runs in a web worker).
@@ -41,27 +42,30 @@ trait ElementRef[T] extends js.Object {
     */
   var nativeElement: T = js.native
 }
-
 object ElementRef {
+  
   @scala.inline
   def apply[T](nativeElement: T): ElementRef[T] = {
     val __obj = js.Dynamic.literal(nativeElement = nativeElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementRef[T]]
   }
+  
   @scala.inline
   implicit class ElementRefOps[Self <: ElementRef[_], T] (val x: Self with ElementRef[T]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setNativeElement(value: T): Self = this.set("nativeElement", value.asInstanceOf[js.Any])
   }
-  
 }
-

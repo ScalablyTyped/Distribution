@@ -12,7 +12,7 @@ Chai plugin for performing assertions on UUIDs
 | Keywords           | chai, plugin, uuid, expect, should, guid, chai-plugin, browser |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 357210 |
+| # downloads        | 582531 |
 | # stars            | 0 |
 
 ## Links

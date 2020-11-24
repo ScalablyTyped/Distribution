@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #endregion
@@ -48,6 +48,7 @@ jQuery( "body" ).trigger( e );
   */
 Instantiable1[/* event */ String, Event with js.Object]
      with Instantiable2[/* event */ String, /* properties */ js.Object, Event with js.Object] {
+  
   /**
     * The jQuery.Event constructor is exposed and can be used when calling trigger. The new operator is optional.
     *
@@ -74,4 +75,3 @@ Instantiable1[/* event */ String, Event with js.Object]
   def apply[T /* <: js.Object */](event: String): Event with T = js.native
   def apply[T /* <: js.Object */](event: String, properties: T): Event with T = js.native
 }
-

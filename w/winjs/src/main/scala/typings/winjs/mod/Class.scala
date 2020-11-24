@@ -2,7 +2,7 @@ package typings.winjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides helper functions for defining Classes.
@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("winjs", "Class")
 @js.native
 object Class extends js.Object {
+  
   //#region Functions
   /**
     * Defines a class using the given constructor and the specified instance members.
@@ -30,6 +31,7 @@ object Class extends js.Object {
   def define(constructor: js.Function, instanceMembers: js.UndefOr[scala.Nothing], staticMembers: js.Any): js.Any = js.native
   def define(constructor: js.Function, instanceMembers: js.Any): js.Any = js.native
   def define(constructor: js.Function, instanceMembers: js.Any, staticMembers: js.Any): js.Any = js.native
+  
   /**
     * Creates a sub-class based on the specified baseClass parameter, using prototype inheritance.
     * @param baseClass The type to inherit from.
@@ -47,6 +49,7 @@ object Class extends js.Object {
   ): js.Any = js.native
   def derive(baseClass: js.Any, constructor: js.Function, instanceMembers: js.Any): js.Any = js.native
   def derive(baseClass: js.Any, constructor: js.Function, instanceMembers: js.Any, staticMembers: js.Any): js.Any = js.native
+  
   /**
     * Defines a class using the given constructor and the union of the set of instance members specified by all the mixin objects. The mixin parameter list is of variable length. For more information, see Adding functionality with WinJS mixins.
     * @param constructor A constructor function that will be used to instantiate this class.
@@ -55,4 +58,3 @@ object Class extends js.Object {
     **/
   def mix(constructor: js.Function, mixin: js.Any*): js.Any = js.native
 }
-

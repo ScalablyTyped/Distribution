@@ -12,24 +12,32 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/oauth2", JSImport.Namespace)
 @js.native
 object oauth2Mod extends js.Object {
+  
   def oauth2(options: Options): Oauth2 = js.native
   def oauth2(options: typings.googleapis.oauth2V2Mod.oauth2V2.Options): typings.googleapis.oauth2V2Mod.oauth2V2.Oauth2 = js.native
   @JSName("oauth2")
   def oauth2_v1(version: v1): Oauth2 = js.native
   @JSName("oauth2")
   def oauth2_v2(version: v2): typings.googleapis.oauth2V2Mod.oauth2V2.Oauth2 = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Oauth2 {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @js.native
+    object v1
+      extends TopLevel[
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Oauth2]
+            ]
     
     @js.native
     class v2 protected ()
@@ -37,13 +45,6 @@ object oauth2Mod extends js.Object {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
-    @js.native
-    object v1
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Oauth2]
-            ]
-    
     @js.native
     object v2
       extends TopLevel[
@@ -53,11 +54,11 @@ object oauth2Mod extends js.Object {
                 typings.googleapis.oauth2V2Mod.oauth2V2.Oauth2
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -85,8 +86,5 @@ object oauth2Mod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

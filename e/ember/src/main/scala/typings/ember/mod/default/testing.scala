@@ -3,7 +3,7 @@ package typings.ember.mod.default
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This property indicates whether or not this application is currently in
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "testing")
 @js.native
 object testing extends TopLevel[Boolean]
-

@@ -4,10 +4,11 @@ import typings.std.Blob
 import typings.std.Float32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SoundFile extends js.Object {
+  
   /**
     *   Schedule events to trigger every time a
     *   MediaElement (audio/video) reaches a playback cue
@@ -34,17 +35,20 @@ trait SoundFile extends js.Object {
     */
   def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, _]): Double = js.native
   def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, _], value: js.Object): Double = js.native
+  
   /**
     *   Return the number of channels in a sound file. For
     *   example, Mono = 1, Stereo = 2.
     *   @return [channels]
     */
   def channels(): Double = js.native
+  
   /**
     *   Remove all of the callbacks that had originally
     *   been scheduled via the addCue method.
     */
   def clearCues(): Unit = js.native
+  
   /**
     *   Connects the output of a p5sound object to input
     *   of another p5.sound object. For example, you may
@@ -56,6 +60,7 @@ trait SoundFile extends js.Object {
     */
   def connect(): Unit = js.native
   def connect(`object`: js.Object): Unit = js.native
+  
   /**
     *   Return the current position of the p5.SoundFile
     *   playhead, in seconds. Time is relative to the
@@ -64,21 +69,25 @@ trait SoundFile extends js.Object {
     *   @return currentTime of the soundFile in seconds.
     */
   def currentTime(): Double = js.native
+  
   /**
     *   Disconnects the output of this p5sound object.
     */
   def disconnect(): Unit = js.native
+  
   /**
     *   Returns the duration of a sound file in seconds.
     *   @return The duration of the soundFile in seconds.
     */
   def duration(): Double = js.native
+  
   /**
     *   Return the number of samples in a sound file.
     *   Equal to sampleRate * duration.
     *   @return [sampleCount]
     */
   def frames(): Double = js.native
+  
   /**
     *   This method is useful for sending a SoundFile to a
     *   server. It returns the .wav-encoded audio data as
@@ -91,6 +100,7 @@ trait SoundFile extends js.Object {
     *   @return A file-like data object
     */
   def getBlob(): Blob = js.native
+  
   /**
     *   Returns the current stereo pan position (-1.0 to
     *   1.0)
@@ -99,6 +109,7 @@ trait SoundFile extends js.Object {
     *   (right). 0.0 is center and default.
     */
   def getPan(): Double = js.native
+  
   /**
     *   Returns an array of amplitude peaks in a
     *   p5.SoundFile that can be used to draw a static
@@ -115,26 +126,31 @@ trait SoundFile extends js.Object {
     */
   def getPeaks(): Float32Array = js.native
   def getPeaks(length: Double): Float32Array = js.native
+  
   /**
     *   Returns true if the sound file finished loading
     *   successfully.
     */
   def isLoaded(): Boolean = js.native
+  
   /**
     *   Returns 'true' if a p5.SoundFile is currently
     *   looping and playing, 'false' if not.
     */
   def isLooping(): Boolean = js.native
+  
   /**
     *   Returns true if a p5.SoundFile is paused, false if
     *   not (i.e. playing or stopped).
     */
   def isPaused(): Boolean = js.native
+  
   /**
     *   Returns true if a p5.SoundFile is playing, false
     *   if not (i.e. paused or stopped).
     */
   def isPlaying(): Boolean = js.native
+  
   /**
     *   Move the playhead of the song to a position, in
     *   seconds. Start timing and playback duration. If
@@ -145,6 +161,7 @@ trait SoundFile extends js.Object {
     *   @param duration duration in seconds.
     */
   def jump(cueTime: Double, duration: Double): Unit = js.native
+  
   /**
     *   loadSound() returns a new p5.SoundFile from a
     *   specified path. If called during preload(), the
@@ -240,6 +257,7 @@ trait SoundFile extends js.Object {
     errorCallback: js.Function1[/* repeated */ js.Any, _],
     whileLoading: js.Function1[/* repeated */ js.Any, _]
   ): SoundFile = js.native
+  
   /**
     *   Loop the p5.SoundFile. Accepts optional parameters
     *   to set the playback rate, playback volume,
@@ -395,6 +413,7 @@ trait SoundFile extends js.Object {
   ): Unit = js.native
   def loop(startTime: Double, rate: Double, amp: Double, cueLoopStart: Double): Unit = js.native
   def loop(startTime: Double, rate: Double, amp: Double, cueLoopStart: Double, duration: Double): Unit = js.native
+  
   /**
     *   Schedule an event to be called when the soundfile
     *   reaches the end of a buffer. If the soundfile is
@@ -405,6 +424,7 @@ trait SoundFile extends js.Object {
     *   soundfile has ended.
     */
   def onended(callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  
   /**
     *   Set the stereo panning of a p5.sound object to a
     *   floating point number between -1.0 (left) and 1.0
@@ -417,6 +437,7 @@ trait SoundFile extends js.Object {
   def pan(panValue: js.UndefOr[scala.Nothing], timeFromNow: Double): Unit = js.native
   def pan(panValue: Double): Unit = js.native
   def pan(panValue: Double, timeFromNow: Double): Unit = js.native
+  
   /**
     *   Pauses a file that is currently playing. If the
     *   file is not playing, then nothing will happen.
@@ -429,6 +450,7 @@ trait SoundFile extends js.Object {
     */
   def pause(): Unit = js.native
   def pause(startTime: Double): Unit = js.native
+  
   /**
     *   Play the p5.SoundFile
     *   @param [startTime] (optional) schedule playback to
@@ -583,6 +605,7 @@ trait SoundFile extends js.Object {
   ): Unit = js.native
   def play(startTime: Double, rate: Double, amp: Double, cueStart: Double): Unit = js.native
   def play(startTime: Double, rate: Double, amp: Double, cueStart: Double, duration: Double): Unit = js.native
+  
   /**
     *   p5.SoundFile has two play modes: restart and
     *   sustain. Play Mode determines what happens to a
@@ -596,6 +619,7 @@ trait SoundFile extends js.Object {
     *   @param str 'restart' or 'sustain' or 'untilDone'
     */
   def playMode(str: String): Unit = js.native
+  
   /**
     *   processPeaks returns an array of timestamps where
     *   it thinks there is a beat. This is an asynchronous
@@ -651,6 +675,7 @@ trait SoundFile extends js.Object {
     minThreshold: Double,
     minPeaks: Double
   ): js.Array[_] = js.native
+  
   /**
     *   Set the playback rate of a sound file. Will change
     *   the speed and the pitch. Values less than zero
@@ -661,22 +686,26 @@ trait SoundFile extends js.Object {
     */
   def rate(): Unit = js.native
   def rate(playbackRate: Double): Unit = js.native
+  
   /**
     *   Remove a callback based on its ID. The ID is
     *   returned by the addCue method.
     *   @param id ID of the cue, as returned by addCue
     */
   def removeCue(id: Double): Unit = js.native
+  
   /**
     *   Reverses the p5.SoundFile's buffer source.
     *   Playback must be handled separately (see example).
     */
   def reverseBuffer(): Unit = js.native
+  
   /**
     *   Return the sample rate of the sound file.
     *   @return [sampleRate]
     */
   def sampleRate(): Double = js.native
+  
   /**
     *   Save a p5.SoundFile as a .wav file. The browser
     *   will prompt the user to download the file to their
@@ -685,6 +714,7 @@ trait SoundFile extends js.Object {
     */
   def save(): Unit = js.native
   def save(fileName: String): Unit = js.native
+  
   /**
     *   Replace the current Audio Buffer with a new
     *   Buffer.
@@ -693,6 +723,7 @@ trait SoundFile extends js.Object {
     *   a mono source.
     */
   def setBuffer(buf: js.Array[_]): Unit = js.native
+  
   /**
     *   Set a p5.SoundFile's looping flag to true or
     *   false. If the sound is currently playing, this
@@ -701,6 +732,7 @@ trait SoundFile extends js.Object {
     *   @param Boolean set looping to true or false
     */
   def setLoop(Boolean: Boolean): Unit = js.native
+  
   /**
     *   Reset the source for this SoundFile to a new path
     *   (URL).
@@ -708,6 +740,7 @@ trait SoundFile extends js.Object {
     *   @param callback Callback
     */
   def setPath(path: String, callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  
   def setVolume(volume: js.Object): Unit = js.native
   def setVolume(volume: js.Object, rampTime: js.UndefOr[scala.Nothing], timeFromNow: Double): Unit = js.native
   def setVolume(volume: js.Object, rampTime: Double): Unit = js.native
@@ -732,6 +765,7 @@ trait SoundFile extends js.Object {
   def setVolume(volume: Double, rampTime: js.UndefOr[scala.Nothing], timeFromNow: Double): Unit = js.native
   def setVolume(volume: Double, rampTime: Double): Unit = js.native
   def setVolume(volume: Double, rampTime: Double, timeFromNow: Double): Unit = js.native
+  
   /**
     *   Stop soundfile playback.
     *   @param [startTime] (optional) schedule event to
@@ -740,4 +774,3 @@ trait SoundFile extends js.Object {
   def stop(): Unit = js.native
   def stop(startTime: Double): Unit = js.native
 }
-

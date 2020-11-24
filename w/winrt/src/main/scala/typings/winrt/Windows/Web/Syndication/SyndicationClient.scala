@@ -5,12 +5,12 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Security.Credentials.PasswordCredential
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SyndicationClient extends ISyndicationClient
-
 object SyndicationClient {
+  
   @scala.inline
   def apply(
     bypassCacheOnRetrieve: Boolean,
@@ -25,4 +25,3 @@ object SyndicationClient {
     __obj.asInstanceOf[SyndicationClient]
   }
 }
-

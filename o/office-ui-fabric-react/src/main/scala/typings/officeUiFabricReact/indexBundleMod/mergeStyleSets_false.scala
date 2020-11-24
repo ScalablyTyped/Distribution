@@ -7,11 +7,12 @@ import typings.uifabricMergeStyles.istylesetMod.IStyleSet
 import typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "mergeStyleSets")
 @js.native
 object mergeStyleSets_false extends js.Object {
+  
   def apply(styleSets: (js.UndefOr[IStyleSet[StringDictionary[_]] | `false` | Null])*): IProcessedStyleSet[_] = js.native
   def apply[TStyleSet](styleSet: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet]] = js.native
   def apply[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
@@ -33,4 +34,3 @@ object mergeStyleSets_false extends js.Object {
     ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2] with ObjectOnly[TStyleSet3] with ObjectOnly[TStyleSet4]
   ] = js.native
 }
-

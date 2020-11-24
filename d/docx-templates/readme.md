@@ -1,7 +1,7 @@
 
 # Scala.js typings for docx-templates
 
-Typings are for version 4.3.0
+Typings are for version 4.5.2
 
 ## Library description:
 Template-based docx report creation
@@ -10,9 +10,9 @@ Template-based docx report creation
 | ------------------ | :-------------: |
 | Full name          | docx-templates |
 | Keywords           | docx, office, word, ms-word, report, template |
-| # releases         | 21 |
+| # releases         | 19 |
 | # dependents       | 2 |
-| # downloads        | 62255 |
+| # downloads        | 120849 |
 | # stars            | 1 |
 
 ## Links

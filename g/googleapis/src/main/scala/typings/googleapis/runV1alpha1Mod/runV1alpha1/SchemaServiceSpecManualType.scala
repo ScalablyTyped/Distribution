@@ -2,7 +2,7 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ServiceSpecManualType contains the options for configuring a manual
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaServiceSpecManualType extends js.Object
-

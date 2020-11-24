@@ -2,10 +2,11 @@ package typings.d3Random.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RandomNumberGenerationSource extends js.Object {
+  
   /**
     * Returns the same type of function for generating random numbers but where the given random number
     * generator source is used as the source of randomness instead of Math.random.
@@ -17,27 +18,30 @@ trait RandomNumberGenerationSource extends js.Object {
     */
   def source(source: js.Function0[Double]): this.type = js.native
 }
-
 object RandomNumberGenerationSource {
+  
   @scala.inline
   def apply(source: js.Function0[Double] => RandomNumberGenerationSource): RandomNumberGenerationSource = {
     val __obj = js.Dynamic.literal(source = js.Any.fromFunction1(source))
     __obj.asInstanceOf[RandomNumberGenerationSource]
   }
+  
   @scala.inline
   implicit class RandomNumberGenerationSourceOps[Self <: RandomNumberGenerationSource] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSource(value: js.Function0[Double] => RandomNumberGenerationSource): Self = this.set("source", js.Any.fromFunction1(value))
   }
-  
 }
-

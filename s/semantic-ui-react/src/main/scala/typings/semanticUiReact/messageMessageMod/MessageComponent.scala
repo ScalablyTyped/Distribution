@@ -9,13 +9,16 @@ import typings.semanticUiReact.messageItemMod.MessageItemProps
 import typings.semanticUiReact.messageListMod.MessageListProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MessageComponent extends ComponentClass[MessageProps, ComponentState] {
+  
   var Content: StatelessComponent[MessageContentProps] = js.native
+  
   var Header: StatelessComponent[MessageHeaderProps] = js.native
+  
   var Item: StatelessComponent[MessageItemProps] = js.native
+  
   var List: StatelessComponent[MessageListProps] = js.native
 }
-

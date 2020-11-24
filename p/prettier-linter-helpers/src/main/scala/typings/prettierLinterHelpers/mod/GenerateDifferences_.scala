@@ -5,13 +5,11 @@ import typings.prettierLinterHelpers.prettierLinterHelpersStrings.insert
 import typings.prettierLinterHelpers.prettierLinterHelpersStrings.replace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GenerateDifferences_ extends js.Object {
-  var DELETE: delete = js.native
-  var INSERT: insert = js.native
-  var REPLACE: replace = js.native
+  
   /**
     * Generate results for differences between source code and formatted version.
     *
@@ -20,5 +18,10 @@ trait GenerateDifferences_ extends js.Object {
     * @returns An array containing { operation, offset, insertText, deleteText }
     */
   def apply(source: String, prettierSource: String): js.Array[Difference] = js.native
+  
+  var DELETE: delete = js.native
+  
+  var INSERT: insert = js.native
+  
+  var REPLACE: replace = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.mapbox.mod.global.L.mapbox
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("L.mapbox.styleLayer")
 @js.native
 object styleLayer extends js.Object {
+  
   // StyleLayer
   //////////////////////////////////////////////////////////////////////
   /**
@@ -15,4 +16,3 @@ object styleLayer extends js.Object {
   def apply(url: String): StyleLayer_ = js.native
   def apply(url: String, options: StyleLayerOptions): StyleLayer_ = js.native
 }
-

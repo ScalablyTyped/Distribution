@@ -12,7 +12,7 @@ Return dates and times in easily readable formats
 | Keywords           | date, time, human, humanize, relative, readable |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 33557 |
+| # downloads        | 51890 |
 | # stars            | 2 |
 
 ## Links

@@ -11,8 +11,8 @@ check if the event loop is blocked
 | Full name          | blocked |
 | Keywords           | block, event, loop, performance |
 | # releases         | 2 |
-| # dependents       | 20 |
-| # downloads        | 1459819 |
+| # dependents       | 23 |
+| # downloads        | 1978828 |
 | # stars            | 50 |
 
 ## Links

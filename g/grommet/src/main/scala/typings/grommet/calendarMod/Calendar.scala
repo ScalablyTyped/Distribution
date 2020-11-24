@@ -9,9 +9,9 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6/components/Calendar", "Calendar")
+@JSImport("grommet/components/Calendar", "Calendar")
 @js.native
 class Calendar protected ()
   extends Component[
@@ -25,8 +25,7 @@ class Calendar protected ()
     context: js.Any
   ) = this()
 }
-
-@JSImport("grommet/es6/components/Calendar", "Calendar")
+@JSImport("grommet/components/Calendar", "Calendar")
 @js.native
 object Calendar extends TopLevel[
       ComponentClass[
@@ -34,4 +33,3 @@ object Calendar extends TopLevel[
         ComponentState
       ]
     ]
-

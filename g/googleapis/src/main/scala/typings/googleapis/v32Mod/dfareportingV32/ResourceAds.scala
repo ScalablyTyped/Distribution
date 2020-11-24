@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Ads")
 @js.native
 class ResourceAds protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.ads.get
     * @desc Gets one ad by ID.
@@ -38,6 +40,7 @@ class ResourceAds protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceAdsGet, options: MethodOptions): GaxiosPromise[SchemaAd] = js.native
   def get(params: ParamsResourceAdsGet, options: MethodOptions, callback: BodyResponseCallback[SchemaAd]): Unit = js.native
+  
   /**
     * dfareporting.ads.insert
     * @desc Inserts a new ad.
@@ -63,6 +66,7 @@ class ResourceAds protected () extends js.Object {
   ): Unit = js.native
   def insert(params: ParamsResourceAdsInsert, options: MethodOptions): GaxiosPromise[SchemaAd] = js.native
   def insert(params: ParamsResourceAdsInsert, options: MethodOptions, callback: BodyResponseCallback[SchemaAd]): Unit = js.native
+  
   /**
     * dfareporting.ads.list
     * @desc Retrieves a list of ads, possibly filtered. This method supports
@@ -115,6 +119,7 @@ class ResourceAds protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdsListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.ads.patch
     * @desc Updates an existing ad. This method supports patch semantics.
@@ -141,6 +146,7 @@ class ResourceAds protected () extends js.Object {
   ): Unit = js.native
   def patch(params: ParamsResourceAdsPatch, options: MethodOptions): GaxiosPromise[SchemaAd] = js.native
   def patch(params: ParamsResourceAdsPatch, options: MethodOptions, callback: BodyResponseCallback[SchemaAd]): Unit = js.native
+  
   /**
     * dfareporting.ads.update
     * @desc Updates an existing ad.
@@ -167,4 +173,3 @@ class ResourceAds protected () extends js.Object {
   def update(params: ParamsResourceAdsUpdate, options: MethodOptions): GaxiosPromise[SchemaAd] = js.native
   def update(params: ParamsResourceAdsUpdate, options: MethodOptions, callback: BodyResponseCallback[SchemaAd]): Unit = js.native
 }
-

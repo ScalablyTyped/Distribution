@@ -3,11 +3,13 @@ package typings.winrtUwp.Windows.UI.ViewManagement
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ActivationViewSwitcher extends js.Object {
+  
   var isViewPresentedOnActivationVirtualDesktop: js.Any = js.native
+  
   /**
     * Shows the view in a new standalone window.
     * @param viewId The identifier for the view.
@@ -22,4 +24,3 @@ trait ActivationViewSwitcher extends js.Object {
     */
   def showAsStandaloneAsync(viewId: Double, sizePreference: ViewSizePreference): IPromiseWithIAsyncAction = js.native
 }
-

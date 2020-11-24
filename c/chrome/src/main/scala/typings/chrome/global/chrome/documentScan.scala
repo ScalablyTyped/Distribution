@@ -4,7 +4,7 @@ import typings.chrome.chrome.documentScan.DocumentScanCallbackArg
 import typings.chrome.chrome.documentScan.DocumentScanOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Document Scan
@@ -18,6 +18,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.documentScan")
 @js.native
 object documentScan extends js.Object {
+  
   def scan(options: DocumentScanOptions, callback: js.Function1[/* result */ DocumentScanCallbackArg, Unit]): Unit = js.native
 }
-

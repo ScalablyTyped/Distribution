@@ -8,30 +8,11 @@ import typings.activexExcel.activexExcelNumbers.`5`
 import typings.activexExcel.activexExcelNumbers.`6`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Validation extends js.Object {
-  val AlertStyle: Double = js.native
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val Creator: XlCreator = js.native
-  var ErrorMessage: String = js.native
-  var ErrorTitle: String = js.native
-  @JSName("Excel.Validation_typekey")
-  var ExcelDotValidation_typekey: Validation = js.native
-  val Formula1: String = js.native
-  val Formula2: String = js.native
-  var IMEMode: Double = js.native
-  var IgnoreBlank: Boolean = js.native
-  var InCellDropdown: Boolean = js.native
-  var InputMessage: String = js.native
-  var InputTitle: String = js.native
-  val Operator: Double = js.native
-  val Parent: js.Any = js.native
-  var ShowError: Boolean = js.native
-  var ShowInput: Boolean = js.native
-  val Type: Double = js.native
-  val Value: Boolean = js.native
+  
   def Add(): Unit = js.native
   def Add(
     Type: `1` | `4` | `2` | `6` | `5`,
@@ -91,7 +72,36 @@ trait Validation extends js.Object {
   def Add(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator, Formula1: String): Unit = js.native
   @JSName("Add")
   def Add_0(Type: `0`): Unit = js.native
+  
+  val AlertStyle: Double = js.native
+  
+  val Application: typings.activexExcel.Excel.Application = js.native
+  
+  val Creator: XlCreator = js.native
+  
   def Delete(): Unit = js.native
+  
+  var ErrorMessage: String = js.native
+  
+  var ErrorTitle: String = js.native
+  
+  @JSName("Excel.Validation_typekey")
+  var ExcelDotValidation_typekey: Validation = js.native
+  
+  val Formula1: String = js.native
+  
+  val Formula2: String = js.native
+  
+  var IMEMode: Double = js.native
+  
+  var IgnoreBlank: Boolean = js.native
+  
+  var InCellDropdown: Boolean = js.native
+  
+  var InputMessage: String = js.native
+  
+  var InputTitle: String = js.native
+  
   def Modify(): Unit = js.native
   def Modify(
     Type: `1` | `4` | `2` | `6` | `5`,
@@ -151,5 +161,16 @@ trait Validation extends js.Object {
   def Modify(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator, Formula1: String): Unit = js.native
   @JSName("Modify")
   def Modify_0(Type: `0`): Unit = js.native
+  
+  val Operator: Double = js.native
+  
+  val Parent: js.Any = js.native
+  
+  var ShowError: Boolean = js.native
+  
+  var ShowInput: Boolean = js.native
+  
+  val Type: Double = js.native
+  
+  val Value: Boolean = js.native
 }
-

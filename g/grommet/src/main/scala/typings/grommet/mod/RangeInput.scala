@@ -8,13 +8,12 @@ import typings.react.mod.InputHTMLAttributes
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "RangeInput")
+@JSImport("grommet", "RangeInput")
 @js.native
 object RangeInput extends TopLevel[
       FC[
         RangeInputProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement])
       ]
     ]
-

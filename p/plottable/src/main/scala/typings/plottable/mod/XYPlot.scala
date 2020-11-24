@@ -2,7 +2,7 @@ package typings.plottable.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable", "XYPlot")
 @js.native
@@ -15,12 +15,12 @@ import scala.scalajs.js.annotation._
   */
 class XYPlot[X, Y] ()
   extends typings.plottable.xyPlotMod.XYPlot[X, Y]
-
 /* static members */
 @JSImport("plottable", "XYPlot")
 @js.native
 object XYPlot extends js.Object {
+  
   var _X_KEY: String = js.native
+  
   var _Y_KEY: String = js.native
 }
-

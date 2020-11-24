@@ -2,11 +2,12 @@ package typings.baconjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("baconjs", "$")
 @js.native
 object _empty extends js.Object {
+  
   def asEventStream(eventName: String, selector: js.UndefOr[scala.Nothing], eventTransformer: js.Any): typings.baconjs.observableMod.EventStream[_] = js.native
   /**
     Creates an EventStream from events on a
@@ -24,9 +25,9 @@ object _empty extends js.Object {
     [init()](#_.aseventstream) as in `Bacon.$.init($)`.
     */
   def asEventStream(eventName: String, selector: String, eventTransformer: js.Any): typings.baconjs.observableMod.EventStream[_] = js.native
+  
   /**
     * Installs the [asEventStream](#_.aseventstream) to the given jQuery/Zepto object (the `$` object).
     */
   def init(jQuery: js.Any): Unit = js.native
 }
-

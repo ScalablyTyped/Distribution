@@ -11,8 +11,8 @@ Azure Table Storage session store for express-session
 | Full name          | connect-azuretables |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 6744 |
+| # dependents       | 1 |
+| # downloads        | 16002 |
 | # stars            | 1 |
 
 ## Links

@@ -8,17 +8,14 @@ import typings.nwJs.nwJsStrings.removed
 import typings.nwJs.nwJsStrings.thumbnailchanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This API behaves similar functions as Screen.chooseDesktopMedia. But it doesn"t have GUI.
   */
 @js.native
 trait DesktopCaptureMonitor extends EventEmitter {
-  /**
-    * Boolean of whether the DesktopCaptureMonitor is started.
-    */
-  var started: Boolean = js.native
+  
   def on(event: String, listener: js.Function): this.type = js.native
   /**
     * Emit when a new source was added.
@@ -97,12 +94,14 @@ trait DesktopCaptureMonitor extends EventEmitter {
     event: thumbnailchanged,
     listener: js.Function2[/* id */ js.UndefOr[String], /* thumbnail */ js.UndefOr[String], _]
   ): this.type = js.native
+  
   /**
     * Register and return a valid stream id passed into chromeMediaSourceId in getUserMedia constraints.
     *
     * @param id {string} valid stream id.
     */
   def registerStream(id: String): Unit = js.native
+  
   /**
     * The DesktopCaptureMonitor will start monitoring the system and trigger the the events.
     *
@@ -110,9 +109,14 @@ trait DesktopCaptureMonitor extends EventEmitter {
     * @param should_include_windows {boolean} Whether should include windows
     */
   def start(should_include_screens: Boolean, should_include_windows: Boolean): Unit = js.native
+  
+  /**
+    * Boolean of whether the DesktopCaptureMonitor is started.
+    */
+  var started: Boolean = js.native
+  
   /**
     * The DesktopCaptureMonitor will stop monitoring the system.
     */
   def stop(): Unit = js.native
 }
-

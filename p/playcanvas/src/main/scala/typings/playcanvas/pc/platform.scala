@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Global namespace that stores flags regarding platform environment and features support.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.platform")
 @js.native
 object platform extends js.Object
-

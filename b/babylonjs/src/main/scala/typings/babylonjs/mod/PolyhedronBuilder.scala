@@ -4,17 +4,17 @@ import typings.babylonjs.anon.FaceUV
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "PolyhedronBuilder")
 @js.native
 class PolyhedronBuilder ()
   extends typings.babylonjs.legacyMod.PolyhedronBuilder
-
 /* static members */
 @JSImport("babylonjs", "PolyhedronBuilder")
 @js.native
 object PolyhedronBuilder extends js.Object {
+  
   /**
     * Creates a polyhedron mesh
     * * The parameter `type` (positive integer, max 14, default 0) sets the polyhedron type to build among the 15 embbeded types. Please refer to the type sheet in the tutorial to choose the wanted type
@@ -37,4 +37,3 @@ object PolyhedronBuilder extends js.Object {
   def CreatePolyhedron(name: String, options: FaceUV): typings.babylonjs.meshMod.Mesh = js.native
   def CreatePolyhedron(name: String, options: FaceUV, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
 }
-

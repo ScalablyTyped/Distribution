@@ -11,8 +11,8 @@ Indent each line in a string
 | Full name          | indent-string |
 | Keywords           | indent, string, pad, align, line, text, each, every |
 | # releases         | 2 |
-| # dependents       | 348 |
-| # downloads        | 490532482 |
+| # dependents       | 421 |
+| # downloads        | 789990680 |
 | # stars            | 3 |
 
 ## Links

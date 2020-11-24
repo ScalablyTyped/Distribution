@@ -6,16 +6,21 @@ import typings.reactMdStates.typesMod.RipplesState
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ReturnValue[E /* <: HTMLElement */] extends js.Object {
-  var state: RipplesState = js.native
+  
   def cancel(): Unit = js.native
   def cancel(ease: Boolean): Unit = js.native
+  
   def create(event: RippleEvent[E]): Unit = js.native
+  
   def entered(ripple: RippleState): Unit = js.native
+  
   def release(event: RippleEvent[E]): Unit = js.native
+  
   def remove(ripple: RippleState): Unit = js.native
+  
+  var state: RipplesState = js.native
 }
-

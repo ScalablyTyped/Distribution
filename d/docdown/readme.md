@@ -10,9 +10,9 @@ A simple JSDoc to Markdown documentation generator.
 | ------------------ | :-------------: |
 | Full name          | docdown |
 | Keywords           | documentation, jsdoc, markdown |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 4 |
-| # downloads        | 19268 |
+| # downloads        | 16882 |
 | # stars            | 2 |
 
 ## Links

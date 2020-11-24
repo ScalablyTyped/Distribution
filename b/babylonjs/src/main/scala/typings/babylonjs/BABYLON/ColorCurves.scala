@@ -2,34 +2,65 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ColorCurves extends js.Object {
+  
   var _dirty: js.Any = js.native
+  
   var _globalCurve: js.Any = js.native
+  
   var _globalDensity: js.Any = js.native
+  
   var _globalExposure: js.Any = js.native
+  
   var _globalHue: js.Any = js.native
+  
   var _globalSaturation: js.Any = js.native
+  
   var _highlightsCurve: js.Any = js.native
+  
   var _highlightsDensity: js.Any = js.native
+  
   var _highlightsExposure: js.Any = js.native
+  
   var _highlightsHue: js.Any = js.native
+  
   var _highlightsSaturation: js.Any = js.native
+  
   var _midtonesCurve: js.Any = js.native
+  
   var _midtonesDensity: js.Any = js.native
+  
   var _midtonesExposure: js.Any = js.native
+  
   var _midtonesHue: js.Any = js.native
+  
   var _midtonesSaturation: js.Any = js.native
+  
   var _negativeCurve: js.Any = js.native
+  
   var _positiveCurve: js.Any = js.native
+  
   var _shadowsCurve: js.Any = js.native
+  
   var _shadowsDensity: js.Any = js.native
+  
   var _shadowsExposure: js.Any = js.native
+  
   var _shadowsHue: js.Any = js.native
+  
   var _shadowsSaturation: js.Any = js.native
+  
   var _tempColor: js.Any = js.native
+  
+  /**
+    * Returns the class name
+    * @returns The class name
+    */
+  def getClassName(): String = js.native
+  
   /**
     * Returns color grading data based on a hue, density, saturation and exposure value.
     * @param filterHue The hue of the color filter.
@@ -39,11 +70,7 @@ trait ColorCurves extends js.Object {
     * @param result The result data container.
     */
   var getColorGradingDataToRef: js.Any = js.native
-  /**
-    * Returns the class name
-    * @returns The class name
-    */
-  def getClassName(): String = js.native
+  
   /**
     * Gets the global Density value.
     * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
@@ -55,7 +82,8 @@ trait ColorCurves extends js.Object {
     * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
     * Values less than zero provide a filter of opposite hue.
     */
-  def globalDensity(value: Double): js.Any = js.native
+  def globalDensity_=(value: Double): Unit = js.native
+  
   /**
     * Gets the global Exposure value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
@@ -65,7 +93,8 @@ trait ColorCurves extends js.Object {
     * Sets the global Exposure value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
     */
-  def globalExposure(value: Double): js.Any = js.native
+  def globalExposure_=(value: Double): Unit = js.native
+  
   /**
     * Gets the global Hue value.
     * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
@@ -75,7 +104,8 @@ trait ColorCurves extends js.Object {
     * Sets the global Hue value.
     * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
     */
-  def globalHue(value: Double): js.Any = js.native
+  def globalHue_=(value: Double): Unit = js.native
+  
   /**
     * Gets the global Saturation value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.
@@ -85,7 +115,8 @@ trait ColorCurves extends js.Object {
     * Sets the global Saturation value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.
     */
-  def globalSaturation(value: Double): js.Any = js.native
+  def globalSaturation_=(value: Double): Unit = js.native
+  
   /**
     * Gets the highlights Density value.
     * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
@@ -97,7 +128,8 @@ trait ColorCurves extends js.Object {
     * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
     * Values less than zero provide a filter of opposite hue.
     */
-  def highlightsDensity(value: Double): js.Any = js.native
+  def highlightsDensity_=(value: Double): Unit = js.native
+  
   /**
     * Gets the highlights Exposure value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
@@ -107,7 +139,8 @@ trait ColorCurves extends js.Object {
     * Sets the highlights Exposure value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
     */
-  def highlightsExposure(value: Double): js.Any = js.native
+  def highlightsExposure_=(value: Double): Unit = js.native
+  
   /**
     * Gets the highlights Hue value.
     * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
@@ -117,7 +150,8 @@ trait ColorCurves extends js.Object {
     * Sets the highlights Hue value.
     * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
     */
-  def highlightsHue(value: Double): js.Any = js.native
+  def highlightsHue_=(value: Double): Unit = js.native
+  
   /**
     * Gets the highlights Saturation value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.
@@ -127,7 +161,8 @@ trait ColorCurves extends js.Object {
     * Sets the highlights Saturation value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.
     */
-  def highlightsSaturation(value: Double): js.Any = js.native
+  def highlightsSaturation_=(value: Double): Unit = js.native
+  
   /**
     * Gets the midtones Density value.
     * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
@@ -139,7 +174,8 @@ trait ColorCurves extends js.Object {
     * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
     * Values less than zero provide a filter of opposite hue.
     */
-  def midtonesDensity(value: Double): js.Any = js.native
+  def midtonesDensity_=(value: Double): Unit = js.native
+  
   /**
     * Gets the midtones Exposure value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
@@ -149,7 +185,8 @@ trait ColorCurves extends js.Object {
     * Sets the midtones Exposure value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
     */
-  def midtonesExposure(value: Double): js.Any = js.native
+  def midtonesExposure_=(value: Double): Unit = js.native
+  
   /**
     * Gets the midtones Hue value.
     * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
@@ -159,7 +196,8 @@ trait ColorCurves extends js.Object {
     * Sets the midtones Hue value.
     * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
     */
-  def midtonesHue(value: Double): js.Any = js.native
+  def midtonesHue_=(value: Double): Unit = js.native
+  
   /**
     * Gets the midtones Saturation value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.
@@ -169,12 +207,14 @@ trait ColorCurves extends js.Object {
     * Sets the midtones Saturation value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.
     */
-  def midtonesSaturation(value: Double): js.Any = js.native
+  def midtonesSaturation_=(value: Double): Unit = js.native
+  
   /**
     * Serializes the current color curve instance to a json representation.
     * @return a JSON representation
     */
   def serialize(): js.Any = js.native
+  
   /**
     * Gets the shadows Density value.
     * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
@@ -186,7 +226,8 @@ trait ColorCurves extends js.Object {
     * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
     * Values less than zero provide a filter of opposite hue.
     */
-  def shadowsDensity(value: Double): js.Any = js.native
+  def shadowsDensity_=(value: Double): Unit = js.native
+  
   /**
     * Gets the shadows Exposure value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
@@ -196,7 +237,8 @@ trait ColorCurves extends js.Object {
     * Sets the shadows Exposure value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
     */
-  def shadowsExposure(value: Double): js.Any = js.native
+  def shadowsExposure_=(value: Double): Unit = js.native
+  
   /**
     * Gets the shadows Hue value.
     * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
@@ -206,7 +248,8 @@ trait ColorCurves extends js.Object {
     * Sets the shadows Hue value.
     * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
     */
-  def shadowsHue(value: Double): js.Any = js.native
+  def shadowsHue_=(value: Double): Unit = js.native
+  
   /**
     * Gets the shadows Saturation value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.
@@ -216,6 +259,5 @@ trait ColorCurves extends js.Object {
     * Sets the shadows Saturation value.
     * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.
     */
-  def shadowsSaturation(value: Double): js.Any = js.native
+  def shadowsSaturation_=(value: Double): Unit = js.native
 }
-

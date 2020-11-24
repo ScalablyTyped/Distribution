@@ -4,11 +4,12 @@ import typings.esfxCancelable.distMod.Cancelable
 import typings.prex.cancellationMod.CancellationToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prex/out/lib/countdown", JSImport.Namespace)
 @js.native
 object countdownMod extends js.Object {
+  
   @js.native
   class CountdownEvent protected () extends js.Object {
     /**
@@ -17,9 +18,13 @@ object countdownMod extends js.Object {
       * @param initialCount The initial participant count.
       */
     def this(initialCount: Double) = this()
+    
     var _event: js.Any = js.native
+    
     var _initialCount: js.Any = js.native
+    
     var _remainingCount: js.Any = js.native
+    
     /**
       * Increments the event's current count by one or more.
       *
@@ -27,14 +32,17 @@ object countdownMod extends js.Object {
       */
     def add(): Unit = js.native
     def add(count: Double): Unit = js.native
+    
     /**
       * Gets the number of signals initially required to set the event.
       */
     def initialCount: Double = js.native
+    
     /**
       * Gets the number of remaining signals required to set the event.
       */
     def remainingCount: Double = js.native
+    
     /**
       * Resets the remaining and initial count to the specified value, or the initial count.
       *
@@ -42,6 +50,7 @@ object countdownMod extends js.Object {
       */
     def reset(): Unit = js.native
     def reset(count: Double): Unit = js.native
+    
     /**
       * Registers one or more signals with the CountdownEvent, decrementing the remaining count.
       *
@@ -49,9 +58,8 @@ object countdownMod extends js.Object {
       */
     def signal(): Boolean = js.native
     def signal(count: Double): Boolean = js.native
+    
     def wait(token: Cancelable): js.Promise[Unit] = js.native
     def wait(token: CancellationToken): js.Promise[Unit] = js.native
   }
-  
 }
-

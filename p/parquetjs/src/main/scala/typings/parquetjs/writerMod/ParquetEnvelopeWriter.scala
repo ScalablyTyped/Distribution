@@ -8,7 +8,7 @@ import typings.parquetjs.rowBufferInterfaceMod.RowBufferInterface
 import typings.parquetjs.schemaMod.ParquetSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("parquetjs/lib/writer", "ParquetEnvelopeWriter")
 @js.native
@@ -33,27 +33,39 @@ class ParquetEnvelopeWriter protected () extends js.Object {
     fileOffset: Double,
     opts: ParquetWriterOpts
   ) = this()
-  var offset: Double = js.native
-  var pageSize: Double = js.native
-  var rowCount: Double = js.native
-  var rowGroups: js.Array[Columns] = js.native
-  var schema: ParquetSchema = js.native
-  var useDataPageV2: Boolean = js.native
+  
   def close(): js.Promise[Unit] = js.native
+  
+  var offset: Double = js.native
+  
+  var pageSize: Double = js.native
+  
+  var rowCount: Double = js.native
+  
+  var rowGroups: js.Array[Columns] = js.native
+  
+  var schema: ParquetSchema = js.native
+  
   def setPageSize(cnt: Double): Unit = js.native
+  
+  var useDataPageV2: Boolean = js.native
+  
   def write(buf: Buffer): js.Promise[Unit] = js.native
+  
   def writeFooter(userMetadata: StringDictionary[String]): js.Promise[Unit] = js.native
+  
   def writeHeader(): js.Promise[Unit] = js.native
+  
   def writeRowGroup(records: RowBufferInterface): js.Promise[Unit] = js.native
+  
   def writeSection(buf: Buffer): js.Promise[Unit] = js.native
 }
-
 /* static members */
 @JSImport("parquetjs/lib/writer", "ParquetEnvelopeWriter")
 @js.native
 object ParquetEnvelopeWriter extends js.Object {
+  
   def openStream(schema: ParquetSchema, outputStream: WriteStream): js.Promise[ParquetEnvelopeWriter] = js.native
   def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: String): js.Promise[ParquetEnvelopeWriter] = js.native
   def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: ParquetWriterOpts): js.Promise[ParquetEnvelopeWriter] = js.native
 }
-

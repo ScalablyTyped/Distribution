@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Uploads")
 @js.native
 class ResourceManagementUploads protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.management.uploads.deleteUploadData
     * @desc Delete data associated with a previous upload.
@@ -44,6 +46,7 @@ class ResourceManagementUploads protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * analytics.management.uploads.get
     * @desc List uploads to which the user has access.
@@ -75,6 +78,7 @@ class ResourceManagementUploads protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUpload]
   ): Unit = js.native
+  
   /**
     * analytics.management.uploads.list
     * @desc List uploads to which the user has access.
@@ -107,6 +111,7 @@ class ResourceManagementUploads protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUploads]
   ): Unit = js.native
+  
   /**
     * analytics.management.uploads.uploadData
     * @desc Upload data for a custom data source.
@@ -141,4 +146,3 @@ class ResourceManagementUploads protected () extends js.Object {
     callback: BodyResponseCallback[SchemaUpload]
   ): Unit = js.native
 }
-

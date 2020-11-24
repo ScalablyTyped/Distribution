@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AppInstallState extends js.Object
-
 /** Defines the app install states that are returned by the InstallState property of the AppInstallStatus class. */
 @JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState")
 @js.native
 object AppInstallState extends js.Object {
+  
   /** The license is being acquired for the app. */
   @js.native
   sealed trait acquiringLicense extends AppInstallState
@@ -66,6 +66,4 @@ object AppInstallState extends js.Object {
   /** The app install is starting. */
   @js.native
   sealed trait starting extends AppInstallState
-  
 }
-

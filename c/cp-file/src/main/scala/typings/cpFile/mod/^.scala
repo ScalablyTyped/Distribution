@@ -2,11 +2,12 @@ package typings.cpFile.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cp-file", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Copy a file.
   	@param source - The file you want to copy.
@@ -23,6 +24,7 @@ object ^ extends js.Object {
   	*/
   def apply(source: String, destination: String): js.Promise[Unit] with ProgressEmitter = js.native
   def apply(source: String, destination: String, options: Options): js.Promise[Unit] with ProgressEmitter = js.native
+  
   /**
   	Copy a file synchronously.
   	@param source - The file you want to copy.
@@ -36,4 +38,3 @@ object ^ extends js.Object {
   def sync(source: String, destination: String): Unit = js.native
   def sync(source: String, destination: String, options: Options): Unit = js.native
 }
-

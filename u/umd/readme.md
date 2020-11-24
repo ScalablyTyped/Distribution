@@ -10,9 +10,9 @@ Universal Module Definition for use in automated build systems
 | ------------------ | :-------------: |
 | Full name          | umd |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 31 |
-| # downloads        | 25743668 |
+| # downloads        | 29685681 |
 | # stars            | 5 |
 
 ## Links

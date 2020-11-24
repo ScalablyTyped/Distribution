@@ -6,11 +6,11 @@ import typings.reactDnd.hooksApiMod.DragObjectWithType
 import typings.reactDnd.hooksApiMod.DragSourceHookSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-dnd/lib/hooks/useDrag", JSImport.Namespace)
 @js.native
 object useDragMod extends js.Object {
+  
   def useDrag[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps](spec: DragSourceHookSpec[DragObject, DropResult, CollectedProps]): js.Tuple3[CollectedProps, ConnectDragSource, ConnectDragPreview] = js.native
 }
-

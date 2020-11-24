@@ -10,9 +10,9 @@ Sumo Logic Javascript SDK for sending logs to a HTTP Source endpoint.
 | ------------------ | :-------------: |
 | Full name          | sumo-logger |
 | Keywords           | sumo-logger, jslogger, sumologic, logs, javascript |
-| # releases         | 46 |
+| # releases         | 30 |
 | # dependents       | 5 |
-| # downloads        | 197622 |
+| # downloads        | 625536 |
 | # stars            | 0 |
 
 ## Links

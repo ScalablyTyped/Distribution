@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsonata
 
-Typings are for version 1.8.3
+Typings are for version 1.8.4
 
 ## Library description:
 JSON query and transformation language
@@ -11,8 +11,8 @@ JSON query and transformation language
 | Full name          | jsonata |
 | Keywords           | JSON, query, transformation, transform, mapping, path |
 | # releases         | 13 |
-| # dependents       | 78 |
-| # downloads        | 6416645 |
+| # dependents       | 114 |
+| # downloads        | 18669788 |
 | # stars            | 4 |
 
 ## Links

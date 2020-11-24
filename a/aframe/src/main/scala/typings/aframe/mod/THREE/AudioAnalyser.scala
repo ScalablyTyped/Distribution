@@ -3,12 +3,15 @@ package typings.aframe.mod.THREE
 import typings.std.AudioNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aframe", "THREE.AudioAnalyser")
 @js.native
 class AudioAnalyser protected ()
   extends typings.three.mod.AudioAnalyser {
-  def this(audio: typings.three.audioMod.Audio[AudioNode], fftSize: Double) = this()
+  /**
+  	 * @param audio
+  	 * @param [fftSize=2048]
+  	 */
+  def this(audio: typings.three.audioMod.Audio[AudioNode]) = this()
 }
-

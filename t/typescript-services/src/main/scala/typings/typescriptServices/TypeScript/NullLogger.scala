@@ -2,12 +2,12 @@ package typings.typescriptServices.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NullLogger extends ILogger
-
 object NullLogger {
+  
   @scala.inline
   def apply(
     debug: () => Boolean,
@@ -21,4 +21,3 @@ object NullLogger {
     __obj.asInstanceOf[NullLogger]
   }
 }
-

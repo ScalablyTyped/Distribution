@@ -4,7 +4,7 @@ import typings.smartFoxServer.SFS2X.Entities.SFSRoom
 import typings.smartFoxServer.SFS2X.Entities.SFSUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.System.ObjectMessageRequest")
 @js.native
@@ -21,4 +21,3 @@ class ObjectMessageRequest protected ()
   def this(obj: js.Object, targetRoom: js.UndefOr[scala.Nothing], recipients: js.Array[SFSUser]) = this()
   def this(obj: js.Object, targetRoom: SFSRoom, recipients: js.Array[SFSUser]) = this()
 }
-

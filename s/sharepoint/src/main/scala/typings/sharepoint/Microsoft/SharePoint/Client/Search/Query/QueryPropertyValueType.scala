@@ -2,14 +2,14 @@ package typings.sharepoint.Microsoft.SharePoint.Client.Search.Query
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait QueryPropertyValueType extends js.Object
-
 @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType")
 @js.native
 object QueryPropertyValueType extends js.Object {
+  
   @js.native
   sealed trait booleanType extends QueryPropertyValueType
   
@@ -27,6 +27,4 @@ object QueryPropertyValueType extends js.Object {
   
   @js.native
   sealed trait unSupportedType extends QueryPropertyValueType
-  
 }
-

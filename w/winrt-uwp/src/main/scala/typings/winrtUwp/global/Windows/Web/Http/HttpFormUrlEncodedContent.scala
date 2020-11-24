@@ -4,7 +4,7 @@ import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides HTTP content that uses name/value data encoded with the application/x-www-form-urlencoded MIME type. */
 @JSGlobal("Windows.Web.Http.HttpFormUrlEncodedContent")
@@ -17,4 +17,3 @@ class HttpFormUrlEncodedContent protected ()
     */
   def this(content: IIterable[IKeyValuePair[_, _]]) = this()
 }
-

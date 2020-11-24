@@ -2,11 +2,12 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RunOptions
   extends typings.officeJs.OfficeExtension.RunOptions[Session] {
+  
   /**
     * Determines whether Excel will delay the batch request until the user exits cell edit mode.
     *
@@ -15,29 +16,33 @@ trait RunOptions
     */
   var delayForCellEdit: js.UndefOr[Boolean] = js.native
 }
-
 object RunOptions {
+  
   @scala.inline
   def apply(): RunOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunOptions]
   }
+  
   @scala.inline
   implicit class RunOptionsOps[Self <: RunOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDelayForCellEdit(value: Boolean): Self = this.set("delayForCellEdit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDelayForCellEdit: Self = this.set("delayForCellEdit", js.undefined)
   }
-  
 }
-

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.jupyterlabApputils.widgettrackerMod.WidgetTracker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The dialog widget tracker.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object tracker
   extends TopLevel[WidgetTracker[typings.jupyterlabApputils.dialogMod.Dialog[js.Any]]]
-

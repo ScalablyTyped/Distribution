@@ -2,15 +2,21 @@ package typings.mongodbMemoryServerCore
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb-memory-server-core/lib/util/resolve-config", JSImport.Namespace)
 @js.native
 object resolveConfigMod extends js.Object {
+  
   def default(variableName: String): js.UndefOr[String] = js.native
+  
+  def envToBool(): Boolean = js.native
   def envToBool(env: String): Boolean = js.native
-  def reInitializePackageJson(): Unit = js.native
-  def reInitializePackageJson(directory: String): Unit = js.native
+  
+  def findPackageJson(): Unit = js.native
+  def findPackageJson(directory: String): Unit = js.native
+  
+  val reInitializePackageJson: js.Function1[/* directory */ js.UndefOr[String], Unit] = js.native
+  
   def setDefaultValue(key: String, value: String): Unit = js.native
 }
-

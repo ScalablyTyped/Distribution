@@ -4,15 +4,15 @@
 Typings are for version 1.0
 
 ## Library description:
-math-random is an drop-in replacement for Math.random that uses cryptographically secure random number generation, where available. It works in both browser and node environments.
+math-random is an isomorphic, drop-in replacement for `Math.random` that uses cryptographically secure random number generation, where available
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | math-random |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 27 |
-| # downloads        | 205154993 |
+| # releases         | 6 |
+| # dependents       | 40 |
+| # downloads        | 165677619 |
 | # stars            | 0 |
 
 ## Links

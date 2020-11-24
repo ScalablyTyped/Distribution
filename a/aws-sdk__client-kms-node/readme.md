@@ -12,7 +12,7 @@ Node SDK for AWS Key Management Service
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 2 |
-| # downloads        | 1818 |
+| # downloads        | 6810 |
 | # stars            | 0 |
 
 ## Links

@@ -8,7 +8,7 @@ import typings.sawtoothSdk.protobufMod.IConsensusBlocksGetRequest
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ConsensusBlocksGetRequest")
 @js.native
@@ -20,11 +20,11 @@ class ConsensusBlocksGetRequest ()
   extends typings.sawtoothSdk.protobufMod.ConsensusBlocksGetRequest {
   def this(properties: IConsensusBlocksGetRequest) = this()
 }
-
 /* static members */
 @JSImport("sawtooth-sdk", "protobuf.ConsensusBlocksGetRequest")
 @js.native
 object ConsensusBlocksGetRequest extends js.Object {
+  
   /**
     * Creates a new ConsensusBlocksGetRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -32,6 +32,7 @@ object ConsensusBlocksGetRequest extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.ConsensusBlocksGetRequest = js.native
   def create(properties: IConsensusBlocksGetRequest): typings.sawtoothSdk.protobufMod.ConsensusBlocksGetRequest = js.native
+  
   /**
     * Decodes a ConsensusBlocksGetRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,6 +45,7 @@ object ConsensusBlocksGetRequest extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ConsensusBlocksGetRequest = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusBlocksGetRequest = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ConsensusBlocksGetRequest = js.native
+  
   /**
     * Decodes a ConsensusBlocksGetRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -53,6 +55,7 @@ object ConsensusBlocksGetRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusBlocksGetRequest = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusBlocksGetRequest = js.native
+  
   /**
     * Encodes the specified ConsensusBlocksGetRequest message. Does not implicitly {@link ConsensusBlocksGetRequest.verify|verify} messages.
     * @param message ConsensusBlocksGetRequest message or plain object to encode
@@ -61,6 +64,7 @@ object ConsensusBlocksGetRequest extends js.Object {
     */
   def encode(message: IConsensusBlocksGetRequest): Writer = js.native
   def encode(message: IConsensusBlocksGetRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ConsensusBlocksGetRequest message, length delimited. Does not implicitly {@link ConsensusBlocksGetRequest.verify|verify} messages.
     * @param message ConsensusBlocksGetRequest message or plain object to encode
@@ -69,12 +73,14 @@ object ConsensusBlocksGetRequest extends js.Object {
     */
   def encodeDelimited(message: IConsensusBlocksGetRequest): Writer = js.native
   def encodeDelimited(message: IConsensusBlocksGetRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ConsensusBlocksGetRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ConsensusBlocksGetRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ConsensusBlocksGetRequest = js.native
+  
   /**
     * Creates a plain object from a ConsensusBlocksGetRequest message. Also converts values to other types if specified.
     * @param message ConsensusBlocksGetRequest
@@ -83,6 +89,7 @@ object ConsensusBlocksGetRequest extends js.Object {
     */
   def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusBlocksGetRequest): StringDictionary[js.Any] = js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusBlocksGetRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ConsensusBlocksGetRequest message.
     * @param message Plain object to verify
@@ -90,4 +97,3 @@ object ConsensusBlocksGetRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

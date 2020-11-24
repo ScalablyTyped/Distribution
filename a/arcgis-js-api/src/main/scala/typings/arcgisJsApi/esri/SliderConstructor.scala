@@ -4,15 +4,14 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SliderConstructor
   extends /**
-  * A slider widget that can be used for filtering data, or gathering numeric input from a user. The slider can have multiple thumbs, and provides you with the ability to format labels and control user input.
+  * A slider widget that can be used for filtering data, or gathering numeric input from a user.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html)
   */
 Instantiable0[Slider]
      with Instantiable1[/* properties */ SliderProperties, Slider]
-

@@ -3,7 +3,7 @@ package typings.winrt.Windows.Globalization.NumberFormatting
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PermilleFormatter
@@ -11,8 +11,8 @@ trait PermilleFormatter
      with INumberFormatter
      with INumberFormatter2
      with INumberParser
-
 object PermilleFormatter {
+  
   @scala.inline
   def apply(
     format: Double => String,
@@ -36,4 +36,3 @@ object PermilleFormatter {
     __obj.asInstanceOf[PermilleFormatter]
   }
 }
-

@@ -5,7 +5,7 @@ import typings.rxjs.asyncActionMod.AsyncAction
 import typings.rxjs.asyncSchedulerMod.AsyncScheduler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/Rx", "VirtualTimeScheduler")
 @js.native
@@ -34,11 +34,10 @@ class VirtualTimeScheduler ()
     maxFrames: Double
   ) = this()
 }
-
 /* static members */
 @JSImport("rxjs/internal/Rx", "VirtualTimeScheduler")
 @js.native
 object VirtualTimeScheduler extends js.Object {
+  
   var frameTimeFactor: Double = js.native
 }
-

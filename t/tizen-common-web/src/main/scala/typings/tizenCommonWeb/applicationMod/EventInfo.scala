@@ -2,10 +2,11 @@ package typings.tizenCommonWeb.applicationMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EventInfo extends js.Object {
+  
   /**
     * The unique identifier of the application which is broadcasting an event.
     *
@@ -14,6 +15,7 @@ trait EventInfo extends js.Object {
     * System events do not require an application identifier to be specified. If one is specified, the event will be interpreted as an user event.
     */
   var appId: ApplicationId = js.native
+  
   /**
     * Name which describes the event.
     *
@@ -22,29 +24,33 @@ trait EventInfo extends js.Object {
     */
   var name: String = js.native
 }
-
 object EventInfo {
+  
   @scala.inline
   def apply(appId: ApplicationId, name: String): EventInfo = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventInfo]
   }
+  
   @scala.inline
   implicit class EventInfoOps[Self <: EventInfo] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAppId(value: ApplicationId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
   }
-  
 }
-

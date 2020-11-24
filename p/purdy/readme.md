@@ -10,9 +10,9 @@ Pretty print objects in real purdy colors. Allows clearer visualization of objec
 | ------------------ | :-------------: |
 | Full name          | purdy |
 | Keywords           | ansi, terminal, colors, pretty, print, color |
-| # releases         | 10 |
+| # releases         | 5 |
 | # dependents       | 19 |
-| # downloads        | 180821 |
+| # downloads        | 187657 |
 | # stars            | 21 |
 
 ## Links

@@ -2,13 +2,15 @@ package typings.materialTextfield
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/textfield/icon/constants", JSImport.Namespace)
 @js.native
 object iconConstantsMod extends js.Object {
+  
   @js.native
   object cssClasses extends js.Object {
+    
     var ROOT: String = js.native
   }
   
@@ -36,9 +38,9 @@ object iconConstantsMod extends js.Object {
     */
   @js.native
   object strings extends js.Object {
+    
     var ICON_EVENT: String = js.native
+    
     var ICON_ROLE: String = js.native
   }
-  
 }
-

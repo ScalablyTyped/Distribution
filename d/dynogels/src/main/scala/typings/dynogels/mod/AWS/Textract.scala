@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.textractMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.Textract")
 @js.native
@@ -14,4 +14,3 @@ class Textract ()
   extends typings.awsSdk.mod.Textract {
   def this(options: ClientConfiguration) = this()
 }
-

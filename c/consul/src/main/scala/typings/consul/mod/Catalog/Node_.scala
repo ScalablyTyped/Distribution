@@ -6,11 +6,13 @@ import typings.consul.mod.Consul
 import typings.consul.mod.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Node_ extends js.Object {
+  
   var consul: Consul = js.native
+  
   /**
     * Lists nodes in a given DC
     */
@@ -29,6 +31,7 @@ trait Node_ extends js.Object {
     * Lists nodes in a given DC
     */
   def list[TData](opts: ListOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Lists the services provided by a node
     */
@@ -46,4 +49,3 @@ trait Node_ extends js.Object {
     */
   def services[TData](opts: typings.consul.mod.Catalog.Node.ServicesOptions, callback: Callback[TData]): Unit = js.native
 }
-

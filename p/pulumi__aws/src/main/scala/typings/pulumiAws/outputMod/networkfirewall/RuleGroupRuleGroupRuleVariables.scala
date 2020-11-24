@@ -1,0 +1,61 @@
+package typings.pulumiAws.outputMod.networkfirewall
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait RuleGroupRuleGroupRuleVariables extends js.Object {
+  
+  /**
+    * Set of configuration blocks that define IP address information. See IP Sets below for details.
+    */
+  var ipSets: js.UndefOr[js.Array[RuleGroupRuleGroupRuleVariablesIpSet]] = js.native
+  
+  /**
+    * Set of configuration blocks that define port range information. See Port Sets below for details.
+    */
+  var portSets: js.UndefOr[js.Array[RuleGroupRuleGroupRuleVariablesPortSet]] = js.native
+}
+object RuleGroupRuleGroupRuleVariables {
+  
+  @scala.inline
+  def apply(): RuleGroupRuleGroupRuleVariables = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[RuleGroupRuleGroupRuleVariables]
+  }
+  
+  @scala.inline
+  implicit class RuleGroupRuleGroupRuleVariablesOps[Self <: RuleGroupRuleGroupRuleVariables] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setIpSetsVarargs(value: RuleGroupRuleGroupRuleVariablesIpSet*): Self = this.set("ipSets", js.Array(value :_*))
+    
+    @scala.inline
+    def setIpSets(value: js.Array[RuleGroupRuleGroupRuleVariablesIpSet]): Self = this.set("ipSets", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIpSets: Self = this.set("ipSets", js.undefined)
+    
+    @scala.inline
+    def setPortSetsVarargs(value: RuleGroupRuleGroupRuleVariablesPortSet*): Self = this.set("portSets", js.Array(value :_*))
+    
+    @scala.inline
+    def setPortSets(value: js.Array[RuleGroupRuleGroupRuleVariablesPortSet]): Self = this.set("portSets", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePortSets: Self = this.set("portSets", js.undefined)
+  }
+}

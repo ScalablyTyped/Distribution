@@ -2,11 +2,12 @@ package typings.node.netMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("net", "connect")
 @js.native
 object connect extends js.Object {
+  
   def apply(options: NetConnectOpts): Socket = js.native
   def apply(options: NetConnectOpts, connectionListener: js.Function0[Unit]): Socket = js.native
   def apply(path: String): Socket = js.native
@@ -16,4 +17,3 @@ object connect extends js.Object {
   def apply(port: Double, host: String): Socket = js.native
   def apply(port: Double, host: String, connectionListener: js.Function0[Unit]): Socket = js.native
 }
-

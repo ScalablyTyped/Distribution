@@ -4,7 +4,7 @@ import typings.pulumiKubernetes.yamlMod.CollectionComponentResource
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/kustomize/kustomize", "Directory")
 @js.native
@@ -19,4 +19,3 @@ class Directory protected () extends CollectionComponentResource {
   def this(name: String, config: DirectoryOpts) = this()
   def this(name: String, config: DirectoryOpts, opts: ComponentResourceOptions) = this()
 }
-

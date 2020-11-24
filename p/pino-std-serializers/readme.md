@@ -10,9 +10,9 @@ A collection of standard object serializers for Pino
 | ------------------ | :-------------: |
 | Full name          | pino-std-serializers |
 | Keywords           | pino, logging |
-| # releases         | 14 |
-| # dependents       | 10 |
-| # downloads        | 13061608 |
+| # releases         | 6 |
+| # dependents       | 15 |
+| # downloads        | 28045703 |
 | # stars            | 0 |
 
 ## Links

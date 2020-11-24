@@ -20,7 +20,7 @@ import typings.frctlFractal.frctlFractalStrings.version
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.frctlFractal.mod.fractal.core.mixins.Configurable because Inheritance from two classes. Inlined config, config, set, set, get, get */ @JSImport("@frctl/fractal", "WebTheme")
@@ -28,20 +28,28 @@ import scala.scalajs.js.annotation._
 class WebTheme protected () extends EventEmitter {
   def this(viewPaths: js.Array[String]) = this()
   def this(viewPaths: js.Array[String], options: WebThemeOptions) = this()
+  
   def addLoadPath(path: String): this.type = js.native
+  
   def addResolver(handle: String, resolvers: js.Any): this.type = js.native
+  
   def addRoute(path: String, opts: `0`): this.type = js.native
   def addRoute(path: String, opts: `0`, resolver: js.Any): this.type = js.native
+  
   def addStatic(path: String, mount: String): Unit = js.native
+  
   def config(): WebThemeOptions = js.native
   def config(config: WebThemeOptions): this.type = js.native
+  
   def errorView(): String = js.native
+  
   def get[K /* <: /* keyof T */ String */, V](path: K): js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
   ] = js.native
   def get[K /* <: /* keyof T */ String */, V](path: K, defaultValue: V): js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
   ] = js.native
+  
   @JSName("getOption")
   def getOption_favicon(key: favicon): js.UndefOr[String] = js.native
   @JSName("getOption")
@@ -66,19 +74,28 @@ class WebTheme protected () extends EventEmitter {
   def getOption_styles(key: styles): js.UndefOr[js.Array[String]] = js.native
   @JSName("getOption")
   def getOption_version(key: version): js.UndefOr[String] = js.native
+  
   def loadPaths(): js.Array[String] = js.native
+  
   def matchRoute(urlPath: String): Params | `false` = js.native
+  
   def options(): WebThemeOptions = js.native
   def options(value: WebThemeOptions): this.type = js.native
+  
   def redirectView(): String = js.native
+  
   def resolvers(): js.Any = js.native
+  
   def routes(): js.Array[_] = js.native
+  
   def set[K /* <: /* keyof T */ String */](path: K): this.type = js.native
   def set[K /* <: /* keyof T */ String */](
     path: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type = js.native
+  
   def setErrorView(view: String): Unit = js.native
+  
   @JSName("setOption")
   def setOption_favicon(key: favicon): this.type = js.native
   @JSName("setOption")
@@ -123,9 +140,11 @@ class WebTheme protected () extends EventEmitter {
   def setOption_version(key: version): this.type = js.native
   @JSName("setOption")
   def setOption_version(key: version, value: String): this.type = js.native
+  
   def setRedirectView(view: String): Unit = js.native
+  
   def static(): js.Array[Path] = js.native
+  
   def urlFromRoute(handle: String, params: js.Any): String | Null = js.native
   def urlFromRoute(handle: String, params: js.Any, noRedirect: Boolean): String | Null = js.native
 }
-

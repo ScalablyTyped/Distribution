@@ -10,9 +10,9 @@ simpler faster substitute for LRU
 | ------------------ | :-------------: |
 | Full name          | hashlru |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 28 |
-| # downloads        | 749272 |
+| # releases         | 2 |
+| # dependents       | 36 |
+| # downloads        | 1130213 |
 | # stars            | 4 |
 
 ## Links

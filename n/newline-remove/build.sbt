@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "newline-remove"
-version := "1.0-dt-20200515Z-4a25a3"
+version := "1.0-dt-20200515Z-4d00b6"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -12,7 +12,7 @@ javascript client for the modern neffos websocket framework
 | Keywords           | neffos, realtime, framework, websocket, events, iris |
 | # releases         | 27 |
 | # dependents       | 1 |
-| # downloads        | 2627 |
+| # downloads        | 3724 |
 | # stars            | 0 |
 
 ## Links

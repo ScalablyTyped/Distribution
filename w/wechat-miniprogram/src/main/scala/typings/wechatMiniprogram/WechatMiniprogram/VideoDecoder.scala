@@ -7,16 +7,18 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.start
 import typings.wechatMiniprogram.wechatMiniprogramStrings.stop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VideoDecoder extends js.Object {
+  
   /** [Object VideoDecoder.getFrameData()](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-decoder/VideoDecoder.getFrameData.html)
     *
     * 获取下一帧的解码数据
     *
     * 最低基础库： `2.11.0` */
   def getFrameData(): FrameDataOptions = js.native
+  
   /** [VideoDecoder.off(string eventName, function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-decoder/VideoDecoder.off.html)
     *
     * 取消监听录制事件。当对应事件触发时，该回调函数不再执行
@@ -25,6 +27,7 @@ trait VideoDecoder extends js.Object {
   def off(/** 事件名 */
   eventName: String, /** 事件触发时执行的回调函数 */
   callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  
   @JSName("on")
   def on_bufferchange(
     /** 事件名
@@ -100,12 +103,14 @@ trait VideoDecoder extends js.Object {
     /** 事件触发时执行的回调函数 */
   callback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
+  
   /** [VideoDecoder.remove()](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-decoder/VideoDecoder.remove.html)
     *
     * 移除解码器
     *
     * 最低基础库： `2.11.0` */
   def remove(): Unit = js.native
+  
   /** [VideoDecoder.seek(number position)](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-decoder/VideoDecoder.seek.html)
     *
     * 跳到某个时间点解码
@@ -113,12 +118,14 @@ trait VideoDecoder extends js.Object {
     * 最低基础库： `2.11.0` */
   def seek(/** 跳转的解码位置，单位 ms */
   position: Double): Unit = js.native
+  
   /** [VideoDecoder.start(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-decoder/VideoDecoder.start.html)
     *
     * 开始解码
     *
     * 最低基础库： `2.11.0` */
   def start(option: VideoDecoderStartOption): Unit = js.native
+  
   /** [VideoDecoder.stop()](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-decoder/VideoDecoder.stop.html)
     *
     * 停止解码
@@ -126,4 +133,3 @@ trait VideoDecoder extends js.Object {
     * 最低基础库： `2.11.0` */
   def stop(): Unit = js.native
 }
-

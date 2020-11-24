@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Videoabusereportreasons")
 @js.native
 class ResourceVideoabusereportreasons protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * youtube.videoAbuseReportReasons.list
     * @desc Returns a list of abuse reasons that can be used for reporting
@@ -47,4 +49,3 @@ class ResourceVideoabusereportreasons protected () extends js.Object {
     callback: BodyResponseCallback[SchemaVideoAbuseReportReasonListResponse]
   ): Unit = js.native
 }
-

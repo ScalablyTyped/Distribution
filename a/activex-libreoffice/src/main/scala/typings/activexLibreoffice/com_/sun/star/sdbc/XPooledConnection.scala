@@ -4,7 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * defines a pooled connection which can share a unused connection.
@@ -28,12 +28,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XPooledConnection extends XInterface {
+  
   /**
     * return the connection which is pooled
     * @returns the pooled {@link Connection} object
     * @throws SQLException if a database access error occurs.
     */
   val Connection: XConnection = js.native
+  
   /**
     * return the connection which is pooled
     * @returns the pooled {@link Connection} object
@@ -41,8 +43,8 @@ trait XPooledConnection extends XInterface {
     */
   def getConnection(): XConnection = js.native
 }
-
 object XPooledConnection {
+  
   @scala.inline
   def apply(
     Connection: XConnection,
@@ -54,22 +56,26 @@ object XPooledConnection {
     val __obj = js.Dynamic.literal(Connection = Connection.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getConnection = js.Any.fromFunction0(getConnection), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XPooledConnection]
   }
+  
   @scala.inline
   implicit class XPooledConnectionOps[Self <: XPooledConnection] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setConnection(value: XConnection): Self = this.set("Connection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetConnection(value: () => XConnection): Self = this.set("getConnection", js.Any.fromFunction0(value))
   }
-  
 }
-

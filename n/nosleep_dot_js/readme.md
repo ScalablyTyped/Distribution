@@ -10,9 +10,9 @@ Prevent display sleep and enable wake lock in any Android or iOS web browser
 | ------------------ | :-------------: |
 | Full name          | nosleep.js |
 | Keywords           | nosleep, wake lock, wakelock, screen, display, sleep |
-| # releases         | 3 |
-| # dependents       | 11 |
-| # downloads        | 404254 |
+| # releases         | 5 |
+| # dependents       | 14 |
+| # downloads        | 595291 |
 | # stars            | 1 |
 
 ## Links

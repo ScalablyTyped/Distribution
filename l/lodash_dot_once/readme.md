@@ -11,8 +11,8 @@ The lodash method `_.once` exported as a module.
 | Full name          | lodash.once |
 | Keywords           | lodash-modularized, once |
 | # releases         | 0 |
-| # dependents       | 76 |
-| # downloads        | 122351717 |
+| # dependents       | 82 |
+| # downloads        | 213833581 |
 | # stars            | 0 |
 
 ## Links

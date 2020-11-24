@@ -9,16 +9,35 @@ import typings.winrtUwp.Windows.Storage.StorageFile
 import typings.winrtUwp.Windows.UI.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for editing, previewing, and saving edited media clips. */
 @JSGlobal("Windows.Media.Editing")
 @js.native
 object Editing extends js.Object {
+  
   /** Represents a single audio track for accompanying a video clip. */
   @js.native
   abstract class BackgroundAudioTrack ()
     extends typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack
+  /* static members */
+  @js.native
+  object BackgroundAudioTrack extends js.Object {
+    
+    /**
+      * Creates a background audio track object with audio content copied from an embedded audio track object.
+      * @param embeddedAudioTrack An embedded audio track to use as the source audio for the background audio track.
+      * @return A new background audio track object containing audio content copied from the embedded audio track.
+      */
+    def createFromEmbeddedAudioTrack(embeddedAudioTrack: typings.winrtUwp.Windows.Media.Editing.EmbeddedAudioTrack): typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack = js.native
+    
+    /**
+      * Creates a background audio track from an audio file.
+      * @param file A StorageFile object representing the source audio file.
+      * @return A new background audio track object containing the contents of the audio file.
+      */
+    def createFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack] = js.native
+  }
   
   /** Represents an audio track embedded in the media clip. */
   @js.native
@@ -29,12 +48,58 @@ object Editing extends js.Object {
   @js.native
   abstract class MediaClip ()
     extends typings.winrtUwp.Windows.Media.Editing.MediaClip
+  /* static members */
+  @js.native
+  object MediaClip extends js.Object {
+    
+    /**
+      * Creates a solid color video clip that displays a single color for a specified length of time. Solid color video clips are typically used to create an explicit gap between video segments.
+      * @param color The color to display in the video clip.
+      * @param originalDuration How long to display the color in the video clip.
+      * @return A new media clip object containing the color-based video clip.
+      */
+    def createFromColor(color: Color, originalDuration: Double): typings.winrtUwp.Windows.Media.Editing.MediaClip = js.native
+    
+    /**
+      * Creates a video clip from a video file.
+      * @param file A StorageFile object representing the source video file.
+      * @return A new media clip object containing a video clip of the video file.
+      */
+    def createFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaClip] = js.native
+    
+    /**
+      * Creates a video clip that displays a single image for a specified length of time.
+      * @param file A StorageFile object representing the source image file.
+      * @param originalDuration How long to display the image in the video clip.
+      * @return A new media clip object containing the image-based video clip.
+      */
+    def createFromImageFileAsync(file: IStorageFile, originalDuration: Double): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaClip] = js.native
+    
+    /**
+      * Creates a video clip from a Direct3D surface.
+      * @param surface The Direct3D surface.
+      * @param originalDuration The initial duration of the created video clip.
+      * @return A new media clip object containing the video clip.
+      */
+    def createFromSurface(surface: IDirect3DSurface, originalDuration: Double): typings.winrtUwp.Windows.Media.Editing.MediaClip = js.native
+  }
   
   /** Represents a collection of media clips and background audio tracks. */
   @js.native
   /** Initializes a new instance of the MediaComposition class. */
   class MediaComposition ()
     extends typings.winrtUwp.Windows.Media.Editing.MediaComposition
+  /* static members */
+  @js.native
+  object MediaComposition extends js.Object {
+    
+    /**
+      * Asynchronously loads a MediaComposition from a StorageFile .
+      * @param file The file from which to load the MediaComposition .
+      * @return An async operation which can be used to track the success or failure of the operation.
+      */
+    def loadAsync(file: StorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaComposition] = js.native
+  }
   
   /** Represents an overlay that can be used in a media composition. */
   @js.native
@@ -66,83 +131,27 @@ object Editing extends js.Object {
     def this(compositorDefinition: IVideoCompositorDefinition) = this()
   }
   
-  /* static members */
-  @js.native
-  object BackgroundAudioTrack extends js.Object {
-    /**
-      * Creates a background audio track object with audio content copied from an embedded audio track object.
-      * @param embeddedAudioTrack An embedded audio track to use as the source audio for the background audio track.
-      * @return A new background audio track object containing audio content copied from the embedded audio track.
-      */
-    def createFromEmbeddedAudioTrack(embeddedAudioTrack: typings.winrtUwp.Windows.Media.Editing.EmbeddedAudioTrack): typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack = js.native
-    /**
-      * Creates a background audio track from an audio file.
-      * @param file A StorageFile object representing the source audio file.
-      * @return A new background audio track object containing the contents of the audio file.
-      */
-    def createFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack] = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object MediaClip extends js.Object {
-    /**
-      * Creates a solid color video clip that displays a single color for a specified length of time. Solid color video clips are typically used to create an explicit gap between video segments.
-      * @param color The color to display in the video clip.
-      * @param originalDuration How long to display the color in the video clip.
-      * @return A new media clip object containing the color-based video clip.
-      */
-    def createFromColor(color: Color, originalDuration: Double): typings.winrtUwp.Windows.Media.Editing.MediaClip = js.native
-    /**
-      * Creates a video clip from a video file.
-      * @param file A StorageFile object representing the source video file.
-      * @return A new media clip object containing a video clip of the video file.
-      */
-    def createFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaClip] = js.native
-    /**
-      * Creates a video clip that displays a single image for a specified length of time.
-      * @param file A StorageFile object representing the source image file.
-      * @param originalDuration How long to display the image in the video clip.
-      * @return A new media clip object containing the image-based video clip.
-      */
-    def createFromImageFileAsync(file: IStorageFile, originalDuration: Double): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaClip] = js.native
-    /**
-      * Creates a video clip from a Direct3D surface.
-      * @param surface The Direct3D surface.
-      * @param originalDuration The initial duration of the created video clip.
-      * @return A new media clip object containing the video clip.
-      */
-    def createFromSurface(surface: IDirect3DSurface, originalDuration: Double): typings.winrtUwp.Windows.Media.Editing.MediaClip = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object MediaComposition extends js.Object {
-    /**
-      * Asynchronously loads a MediaComposition from a StorageFile .
-      * @param file The file from which to load the MediaComposition .
-      * @return An async operation which can be used to track the success or failure of the operation.
-      */
-    def loadAsync(file: StorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaComposition] = js.native
-  }
-  
   /** Used to specify if media trimming should use a faster or a more precise algorithm during transcoding. */
   @js.native
   object MediaTrimmingPreference extends js.Object {
-    /* 0 */ val fast: typings.winrtUwp.Windows.Media.Editing.MediaTrimmingPreference.fast with Double = js.native
-    /* 1 */ val precise: typings.winrtUwp.Windows.Media.Editing.MediaTrimmingPreference.precise with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Editing.MediaTrimmingPreference with Double] = js.native
+    
+    /* 0 */ val fast: typings.winrtUwp.Windows.Media.Editing.MediaTrimmingPreference.fast with Double = js.native
+    
+    /* 1 */ val precise: typings.winrtUwp.Windows.Media.Editing.MediaTrimmingPreference.precise with Double = js.native
   }
   
   /** Used to specify the frame precision algorithm when retrieving a thumbnail. */
   @js.native
   object VideoFramePrecision extends js.Object {
-    /* 0 */ val nearestFrame: typings.winrtUwp.Windows.Media.Editing.VideoFramePrecision.nearestFrame with Double = js.native
-    /* 1 */ val nearestKeyFrame: typings.winrtUwp.Windows.Media.Editing.VideoFramePrecision.nearestKeyFrame with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Editing.VideoFramePrecision with Double] = js.native
+    
+    /* 0 */ val nearestFrame: typings.winrtUwp.Windows.Media.Editing.VideoFramePrecision.nearestFrame with Double = js.native
+    
+    /* 1 */ val nearestKeyFrame: typings.winrtUwp.Windows.Media.Editing.VideoFramePrecision.nearestKeyFrame with Double = js.native
   }
-  
 }
-

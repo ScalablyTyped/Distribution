@@ -4,17 +4,22 @@ import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.elementsMod.IElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * In version 7.17.0: added public
   */
 @js.native
 trait ILayoutCall extends IElement {
+  
   val containerAsLayout: ILayout = js.native
+  
   val containerAsPage: IPage = js.native
+  
   val containerAsPageTemplate: IPageTemplate = js.native
+  
   val containerAsWebLayoutContent: IWebLayoutContent = js.native
+  
   /**
     * This property is required and cannot be set to null.
     *
@@ -22,8 +27,9 @@ trait ILayoutCall extends IElement {
     * In version 7.17.0: added public
     */
   val layout: ILayout | Null = js.native
+  
   val layoutQualifiedName: String | Null = js.native
+  
   @JSName("model")
   val model_ILayoutCall: IModel = js.native
 }
-

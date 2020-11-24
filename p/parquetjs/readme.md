@@ -11,8 +11,8 @@ fully asynchronous, pure JavaScript implementation of the Parquet file format
 | Full name          | parquetjs |
 | Keywords           | dremel, parquet |
 | # releases         | 6 |
-| # dependents       | 3 |
-| # downloads        | 90127 |
+| # dependents       | 6 |
+| # downloads        | 312220 |
 | # stars            | 0 |
 
 ## Links

@@ -3,19 +3,26 @@ package typings.tarn
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tarn/dist/PromiseInspection", JSImport.Namespace)
 @js.native
 object promiseInspectionMod extends js.Object {
+  
   @js.native
   class PromiseInspection[T] protected () extends js.Object {
     def this(args: PromiseInspectionArgs[T]) = this()
+    
     var _error: Error | Unit = js.native
+    
     var _value: T | Unit = js.native
+    
     def isFulfilled(): Boolean = js.native
+    
     def isRejected(): Boolean = js.native
+    
     def reason(): Unit | Error = js.native
+    
     def value(): Unit | T = js.native
   }
   
@@ -24,6 +31,4 @@ object promiseInspectionMod extends js.Object {
     - typings.tarn.anon.Value[T]
   */
   trait PromiseInspectionArgs[T] extends js.Object
-  
 }
-

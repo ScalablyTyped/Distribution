@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/securitycenter/v1", "securitycenter_v1.Resource$Organizations$Sources$Findings")
 @js.native
 class ResourceOrganizationsSourcesFindings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * securitycenter.organizations.sources.findings.create
     * @desc Creates a finding. The corresponding source must exist for finding
@@ -47,6 +49,7 @@ class ResourceOrganizationsSourcesFindings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFinding]
   ): Unit = js.native
+  
   /**
     * securitycenter.organizations.sources.findings.group
     * @desc Filters an organization or source's findings and  groups them by
@@ -81,6 +84,7 @@ class ResourceOrganizationsSourcesFindings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroupFindingsResponse]
   ): Unit = js.native
+  
   /**
     * securitycenter.organizations.sources.findings.list
     * @desc Lists an organization or source's findings.  To list across all
@@ -121,6 +125,7 @@ class ResourceOrganizationsSourcesFindings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListFindingsResponse]
   ): Unit = js.native
+  
   /**
     * securitycenter.organizations.sources.findings.patch
     * @desc Creates or updates a finding. The corresponding source must exist
@@ -155,6 +160,7 @@ class ResourceOrganizationsSourcesFindings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFinding]
   ): Unit = js.native
+  
   /**
     * securitycenter.organizations.sources.findings.setState
     * @desc Updates the state of a finding.
@@ -187,6 +193,7 @@ class ResourceOrganizationsSourcesFindings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFinding]
   ): Unit = js.native
+  
   /**
     * securitycenter.organizations.sources.findings.updateSecurityMarks
     * @desc Updates security marks.
@@ -222,4 +229,3 @@ class ResourceOrganizationsSourcesFindings protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSecurityMarks]
   ): Unit = js.native
 }
-

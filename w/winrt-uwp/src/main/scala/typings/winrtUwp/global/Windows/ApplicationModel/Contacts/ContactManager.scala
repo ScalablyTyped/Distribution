@@ -7,22 +7,18 @@ import typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference
 import typings.winrtUwp.Windows.UI.Popups.Placement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a service that source apps can call to access contact data. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactManager")
 @js.native
 abstract class ContactManager ()
   extends typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactManager
-
 /* static members */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactManager")
 @js.native
 object ContactManager extends js.Object {
-  /** Gets or puts the display name order. */
-  var systemDisplayNameOrder: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactNameOrder = js.native
-  /** Gets or puts the sort order. */
-  var systemSortOrder: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactNameOrder = js.native
+  
   /**
     * Asynchronously converts a Contact to a vCard.
     * @param contact The Contact to convert.
@@ -36,28 +32,33 @@ object ContactManager extends js.Object {
     * @return A stream containing the vCard data.
     */
   def convertContactToVCardAsync(contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact, maxBytes: Double): IPromiseWithIAsyncOperation[RandomAccessStreamReference] = js.native
+  
   /**
     * Asynchronously converts a vCard to a Contact .
     * @param vCard A stream containing the vCard data.
     * @return The converted Contact .
     */
   def convertVCardToContactAsync(vCard: IRandomAccessStreamReference): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact] = js.native
+  
   /**
     * Gets a Boolean value indicating if the ShowContactCard method is supported on the current platform.
     * @return A Boolean value indicating if the ShowContactCard method is supported on the current platform.
     */
   def isShowContactCardSupported(): Boolean = js.native
+  
   /**
     * Gets a Boolean value indicating if the ShowDelayLoadedContactCard method is supported on the current platform.
     * @return A Boolean value indicating if the ShowDelayLoadedContactCard method is supported on the current platform.
     */
   def isShowDelayLoadedContactCardSupported(): Boolean = js.native
+  
   /**
     * Asynchronously requests access to the ContactAnnotationStore .
     * @param accessType Specifies the type of access request, app contact annotations or all annotations.
     * @return The requested ContactAnnotationStore .
     */
   def requestAnnotationStoreAsync(accessType: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactAnnotationStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactAnnotationStore] = js.native
+  
   /**
     * Retrieves a ContactStore object that enables searching or retrieving contacts on the device.
     * @return An asynchronous operation that returns a ContactStore object on successful completion.
@@ -69,6 +70,7 @@ object ContactManager extends js.Object {
     * @return An asynchronous operation that returns a ContactStore object on successful completion.
     */
   def requestStoreAsync(accessType: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactStore] = js.native
+  
   /**
     * Queries the operating system for a user’s contact and shows the contact data in a contact card.
     * @param contact The object that represents the contact that the app wants to display the contact card for.
@@ -99,6 +101,7 @@ object ContactManager extends js.Object {
     preferredPlacement: Placement,
     contactCardOptions: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactCardOptions
   ): Unit = js.native
+  
   /**
     * Shows a contact card that can be updated later if the contact does not exist in the user’s contact database.
     * @param contact The object that represents the contact that the app wants to display the contact card for.
@@ -125,6 +128,7 @@ object ContactManager extends js.Object {
     preferredPlacement: Placement,
     contactCardOptions: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactCardOptions
   ): typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactCardDelayedDataLoader = js.native
+  
   /**
     * Queries the operating system for a user’s contact and shows the contact data in a full contact card.
     * @param contact The object that represents the contact that the app wants to display the contact card for.
@@ -134,5 +138,10 @@ object ContactManager extends js.Object {
     contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact,
     fullContactCardOptions: typings.winrtUwp.Windows.ApplicationModel.Contacts.FullContactCardOptions
   ): Unit = js.native
+  
+  /** Gets or puts the display name order. */
+  var systemDisplayNameOrder: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactNameOrder = js.native
+  
+  /** Gets or puts the sort order. */
+  var systemSortOrder: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactNameOrder = js.native
 }
-

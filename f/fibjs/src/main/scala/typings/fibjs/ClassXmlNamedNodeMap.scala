@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,29 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassXmlNamedNodeMap extends ClassObject {
+  
+  /**
+    * 
+    * @brief 查询指定名称的属性
+    * @param name 指定要查询的名称
+    * @return 返回查询出的属性
+    * 
+    * 
+    * 
+    */
+  def getNamedItem(name: String): ClassXmlAttr = js.native
+  
+  /**
+    * 
+    * @brief 返回属性列表中处于指定的索引号的属性
+    * @param index 指定要查询的索引
+    * @return 指定索引号的属性
+    * 
+    * 
+    * 
+    */
+  def item(index: Double): ClassXmlAttr = js.native
+  
   /**
     * class prop 
     *
@@ -22,25 +45,4 @@ trait ClassXmlNamedNodeMap extends ClassObject {
     * @type Integer
     */
   var length: Double = js.native
-  /**
-    * 
-    * @brief 查询指定名称的属性
-    * @param name 指定要查询的名称
-    * @return 返回查询出的属性
-    * 
-    * 
-    * 
-    */
-  def getNamedItem(name: String): ClassXmlAttr = js.native
-  /**
-    * 
-    * @brief 返回属性列表中处于指定的索引号的属性
-    * @param index 指定要查询的索引
-    * @return 指定索引号的属性
-    * 
-    * 
-    * 
-    */
-  def item(index: Double): ClassXmlAttr = js.native
 }
-

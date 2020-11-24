@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/pubsub/v1beta2", "pubsub_v1beta2.Resource$Projects$Topics")
 @js.native
 class ResourceProjectsTopics protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var subscriptions: ResourceProjectsTopicsSubscriptions = js.native
+  
   /**
     * pubsub.projects.topics.create
     * @desc Creates the given topic with the given name.
@@ -43,6 +44,7 @@ class ResourceProjectsTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTopic]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.topics.delete
     * @desc Deletes the topic with the given name. Returns `NOT_FOUND` if the
@@ -76,6 +78,7 @@ class ResourceProjectsTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.topics.get
     * @desc Gets the configuration of a topic.
@@ -104,6 +107,7 @@ class ResourceProjectsTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTopic]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.topics.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -133,6 +137,7 @@ class ResourceProjectsTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.topics.list
     * @desc Lists matching topics.
@@ -163,6 +168,7 @@ class ResourceProjectsTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListTopicsResponse]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.topics.publish
     * @desc Adds one or more messages to the topic. Returns `NOT_FOUND` if the
@@ -194,6 +200,7 @@ class ResourceProjectsTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPublishResponse]
   ): Unit = js.native
+  
   /**
     * pubsub.projects.topics.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -224,6 +231,9 @@ class ResourceProjectsTopics protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
+  var subscriptions: ResourceProjectsTopicsSubscriptions = js.native
+  
   /**
     * pubsub.projects.topics.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -261,4 +271,3 @@ class ResourceProjectsTopics protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

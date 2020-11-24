@@ -11,8 +11,8 @@ Standard HTTP error class. Proper serialization, no bloat. Extensible.
 | Full name          | standard-http-error |
 | Keywords           | error, errors, http, exception |
 | # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 522231 |
+| # dependents       | 32 |
+| # downloads        | 866084 |
 | # stars            | 0 |
 
 ## Links

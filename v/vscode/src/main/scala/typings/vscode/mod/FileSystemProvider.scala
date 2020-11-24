@@ -8,10 +8,11 @@ import typings.vscode.anon.Overwrite
 import typings.vscode.anon.Recursive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FileSystemProvider extends js.Object {
+  
   /**
     * Copy files or folders. Implementing this function is optional but it will speedup
     * the copy operation.
@@ -32,6 +33,7 @@ trait FileSystemProvider extends js.Object {
       Unit | Thenable[Unit]
     ]
   ] = js.native
+  
   /**
     * Create a new directory (Note, that new files are created via `write`-calls).
     *
@@ -41,6 +43,7 @@ trait FileSystemProvider extends js.Object {
     * @throws [`NoPermissions`](#FileSystemError.NoPermissions) when permissions aren't sufficient.
     */
   def createDirectory(uri: Uri): Unit | Thenable[Unit] = js.native
+  
   /**
     * Delete a file.
     *
@@ -50,6 +53,7 @@ trait FileSystemProvider extends js.Object {
     * @throws [`NoPermissions`](#FileSystemError.NoPermissions) when permissions aren't sufficient.
     */
   def delete(uri: Uri, options: Recursive): Unit | Thenable[Unit] = js.native
+  
   /**
     * An event to signal that a resource has been created, changed, or deleted. This
     * event should fire for resources that are being [watched](#FileSystemProvider.watch)
@@ -72,6 +76,7 @@ trait FileSystemProvider extends js.Object {
     thisArgs: js.Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
+  
   /**
     * Retrieve all entries of a [directory](#FileType.Directory).
     *
@@ -80,6 +85,7 @@ trait FileSystemProvider extends js.Object {
     * @throws [`FileNotFound`](#FileSystemError.FileNotFound) when `uri` doesn't exist.
     */
   def readDirectory(uri: Uri): (js.Array[js.Tuple2[String, FileType]]) | (Thenable[js.Array[js.Tuple2[String, FileType]]]) = js.native
+  
   /**
     * Read the entire contents of a file.
     *
@@ -88,6 +94,7 @@ trait FileSystemProvider extends js.Object {
     * @throws [`FileNotFound`](#FileSystemError.FileNotFound) when `uri` doesn't exist.
     */
   def readFile(uri: Uri): Uint8Array | Thenable[Uint8Array] = js.native
+  
   /**
     * Rename a file or folder.
     *
@@ -100,6 +107,7 @@ trait FileSystemProvider extends js.Object {
     * @throws [`NoPermissions`](#FileSystemError.NoPermissions) when permissions aren't sufficient.
     */
   def rename(oldUri: Uri, newUri: Uri, options: Overwrite): Unit | Thenable[Unit] = js.native
+  
   /**
     * Retrieve metadata about a file.
     *
@@ -112,6 +120,7 @@ trait FileSystemProvider extends js.Object {
     * @throws [`FileNotFound`](#FileSystemError.FileNotFound) when `uri` doesn't exist.
     */
   def stat(uri: Uri): FileStat | Thenable[FileStat] = js.native
+  
   /**
     * Subscribe to events in the file or folder denoted by `uri`.
     *
@@ -124,6 +133,7 @@ trait FileSystemProvider extends js.Object {
     * @returns A disposable that tells the provider to stop watching the `uri`.
     */
   def watch(uri: Uri, options: Excludes): Disposable = js.native
+  
   /**
     * Write data to a file, replacing its entire contents.
     *
@@ -137,4 +147,3 @@ trait FileSystemProvider extends js.Object {
     */
   def writeFile(uri: Uri, content: Uint8Array, options: Create): Unit | Thenable[Unit] = js.native
 }
-

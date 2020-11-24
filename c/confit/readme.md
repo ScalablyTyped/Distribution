@@ -10,9 +10,9 @@ Environment-aware configuration.
 | ------------------ | :-------------: |
 | Full name          | confit |
 | Keywords           | application, config, configuration |
-| # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 151509 |
+| # releases         | 2 |
+| # dependents       | 23 |
+| # downloads        | 171649 |
 | # stars            | 2 |
 
 ## Links

@@ -12,7 +12,7 @@ A minimal oauth2-spec-based client utility for traveling through the OAuth2 Impl
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 23762 |
+| # downloads        | 2342 |
 | # stars            | 0 |
 
 ## Links

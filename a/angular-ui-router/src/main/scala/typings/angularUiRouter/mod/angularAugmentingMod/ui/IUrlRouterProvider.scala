@@ -5,10 +5,11 @@ import typings.angular.mod.global.Function
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IUrlRouterProvider extends IServiceProvider {
+  
   /**
     * Disables (or enables) deferring location change interception.
     *
@@ -18,11 +19,14 @@ trait IUrlRouterProvider extends IServiceProvider {
     */
   def deferIntercept(): Unit = js.native
   def deferIntercept(defer: Boolean): Unit = js.native
+  
   def otherwise(handler: js.Array[_]): IUrlRouterProvider = js.native
   def otherwise(handler: Function): IUrlRouterProvider = js.native
   def otherwise(path: String): IUrlRouterProvider = js.native
+  
   def rule(handler: js.Array[_]): IUrlRouterProvider = js.native
   def rule(handler: Function): IUrlRouterProvider = js.native
+  
   def when(whenPath: String, handler: js.Array[_]): IUrlRouterProvider = js.native
   def when(whenPath: String, handler: Function): IUrlRouterProvider = js.native
   def when(whenPath: String, toPath: String): IUrlRouterProvider = js.native
@@ -33,4 +37,3 @@ trait IUrlRouterProvider extends IServiceProvider {
   def when(whenPath: RegExp, handler: Function): IUrlRouterProvider = js.native
   def when(whenPath: RegExp, toPath: String): IUrlRouterProvider = js.native
 }
-

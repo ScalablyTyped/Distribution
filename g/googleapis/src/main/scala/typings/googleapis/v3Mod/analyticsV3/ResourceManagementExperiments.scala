@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Experiments")
 @js.native
 class ResourceManagementExperiments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * analytics.management.experiments.delete
     * @desc Delete an experiment.
@@ -44,6 +46,7 @@ class ResourceManagementExperiments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * analytics.management.experiments.get
     * @desc Returns an experiment to which the user has access.
@@ -75,6 +78,7 @@ class ResourceManagementExperiments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExperiment]
   ): Unit = js.native
+  
   /**
     * analytics.management.experiments.insert
     * @desc Create a new experiment.
@@ -109,6 +113,7 @@ class ResourceManagementExperiments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExperiment]
   ): Unit = js.native
+  
   /**
     * analytics.management.experiments.list
     * @desc Lists experiments to which the user has access.
@@ -141,6 +146,7 @@ class ResourceManagementExperiments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExperiments]
   ): Unit = js.native
+  
   /**
     * analytics.management.experiments.patch
     * @desc Update an existing experiment. This method supports patch
@@ -174,6 +180,7 @@ class ResourceManagementExperiments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExperiment]
   ): Unit = js.native
+  
   /**
     * analytics.management.experiments.update
     * @desc Update an existing experiment.
@@ -210,4 +217,3 @@ class ResourceManagementExperiments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaExperiment]
   ): Unit = js.native
 }
-

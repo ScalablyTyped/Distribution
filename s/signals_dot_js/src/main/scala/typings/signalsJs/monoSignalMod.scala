@@ -5,11 +5,12 @@ import typings.signalsJs.islotMod.ISlot
 import typings.signalsJs.slotMod.Slot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("signals.js/lib/org/osflash/signals/MonoSignal", JSImport.Namespace)
 @js.native
 object monoSignalMod extends js.Object {
+  
   @js.native
   class MonoSignal protected () extends ISignal {
     /**
@@ -24,11 +25,12 @@ object monoSignalMod extends js.Object {
       * but this constructor has logic to support super(valueClasses).
       */
     def this(valueClasses: js.Any*) = this()
+    
     var _valueClasses: js.Array[_] = js.native
-    var slot: Slot = js.native
+    
     /* protected */ def registerListener(listener: js.Function): ISlot = js.native
     /* protected */ def registerListener(listener: js.Function, once: Boolean): ISlot = js.native
+    
+    var slot: Slot = js.native
   }
-  
 }
-

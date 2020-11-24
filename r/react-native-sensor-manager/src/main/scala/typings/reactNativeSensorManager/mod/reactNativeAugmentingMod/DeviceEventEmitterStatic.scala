@@ -16,10 +16,11 @@ import typings.reactNativeSensorManager.reactNativeSensorManagerStrings.StepCoun
 import typings.reactNativeSensorManager.reactNativeSensorManagerStrings.Thermometer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DeviceEventEmitterStatic extends js.Object {
+  
   @JSName("addListener")
   def addListener_Accelerometer(event: Accelerometer, callback: js.Function1[/* data */ X, Unit]): js.Any = js.native
   @JSName("addListener")
@@ -37,4 +38,3 @@ trait DeviceEventEmitterStatic extends js.Object {
   @JSName("addListener")
   def addListener_Thermometer(event: Thermometer, callback: js.Function1[/* data */ Temp, Unit]): js.Any = js.native
 }
-

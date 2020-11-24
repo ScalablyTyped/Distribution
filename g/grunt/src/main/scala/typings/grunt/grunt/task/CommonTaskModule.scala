@@ -2,19 +2,21 @@ package typings.grunt.grunt.task
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * {@link http://gruntjs.com/api/grunt.task}
   */
 @js.native
 trait CommonTaskModule extends js.Object {
+  
   /**
     * Check with the name, if a task exists in the registered tasks.
     * @param name The task name to check.
     * @since 0.4.5
     */
   def exists(name: String): Boolean = js.native
+  
   def registerMultiTask(
     taskName: String,
     taskDescription: String,
@@ -32,6 +34,7 @@ trait CommonTaskModule extends js.Object {
     taskName: String,
     taskFunction: js.ThisFunction1[/* this */ IMultiTask[_], /* repeated */ js.Any, Unit]
   ): Unit = js.native
+  
   def registerTask(
     taskName: String,
     description: String,
@@ -55,6 +58,7 @@ trait CommonTaskModule extends js.Object {
     * The taskList argument must be an array of tasks.
     */
   def registerTask(taskName: String, taskList: js.Array[String]): Unit = js.native
+  
   /**
     * Rename a task. This might be useful if you want to override the default behavior of a task, while retaining the old name.
     * Note that if a task has been renamed, the this.name and this.nameArgs properties will change accordingly.
@@ -64,4 +68,3 @@ trait CommonTaskModule extends js.Object {
     */
   def renameTask(oldname: String, newname: String): Unit = js.native
 }
-

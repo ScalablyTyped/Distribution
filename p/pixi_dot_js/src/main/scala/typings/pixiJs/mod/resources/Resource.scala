@@ -2,7 +2,7 @@ package typings.pixiJs.mod.resources
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base resource class for textures that manages validation and uploading, depending on its type.
@@ -20,11 +20,11 @@ class Resource ()
   def this(width: js.UndefOr[scala.Nothing], height: Double) = this()
   def this(width: Double, height: Double) = this()
 }
-
 /* static members */
 @JSImport("pixi.js", "resources.Resource")
 @js.native
 object Resource extends js.Object {
+  
   /**
     * Abstract, used to auto-detect resource type
     *
@@ -34,4 +34,3 @@ object Resource extends js.Object {
     */
   def test(source: js.Any, extension: String): Unit = js.native
 }
-

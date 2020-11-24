@@ -2,14 +2,14 @@ package typings.winrt.Windows.Media.Capture
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MediaStreamType extends js.Object
-
 @JSGlobal("Windows.Media.Capture.MediaStreamType")
 @js.native
 object MediaStreamType extends js.Object {
+  
   @js.native
   sealed trait audio extends MediaStreamType
   
@@ -21,6 +21,4 @@ object MediaStreamType extends js.Object {
   
   @js.native
   sealed trait videoRecord extends MediaStreamType
-  
 }
-

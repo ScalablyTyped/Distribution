@@ -10,15 +10,15 @@ Bytesize Icons as React Components.
 | ------------------ | :-------------: |
 | Full name          | react-bytesize-icons |
 | Keywords           | bytesize, icons, icons, ui, react, components |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 2730 |
+| # downloads        | 4681 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/abdelhai/react-bytesize-icons#readme)
-- [Bugs](https://github.com/abdelhai/react-bytesize-icons/issues)
-- [Repository](https://github.com/abdelhai/react-bytesize-icons)
+- [Homepage](https://github.com/Kilian/react-bytesize-icons#readme)
+- [Bugs](https://github.com/Kilian/react-bytesize-icons/issues)
+- [Repository](https://github.com/Kilian/react-bytesize-icons)
 - [Npm](https://www.npmjs.com/package/react-bytesize-icons)
     
 

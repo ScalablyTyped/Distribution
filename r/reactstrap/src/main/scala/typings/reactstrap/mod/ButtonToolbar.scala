@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.buttonToolbarMod.ButtonToolbarProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "ButtonToolbar")
+@JSImport("reactstrap/lib", "ButtonToolbar")
 @js.native
-class ButtonToolbar[T] ()
+class ButtonToolbar ()
   extends Component[ButtonToolbarProps, js.Object, js.Any]
-

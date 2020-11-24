@@ -7,9 +7,73 @@ import typings.hoxy.mod.Phase
 import typings.hoxy.mod.ServeStrategy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hoxyStrings {
+  
+  @scala.inline
+  def $: $ = "$".asInstanceOf[$]
+  
+  @scala.inline
+  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  
+  @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
+  
+  @scala.inline
+  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
+  
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
+  
+  @scala.inline
+  def PUT: PUT = "PUT".asInstanceOf[PUT]
+  
+  @scala.inline
+  def buffer: buffer = "buffer".asInstanceOf[buffer]
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def json: json = "json".asInstanceOf[json]
+  
+  @scala.inline
+  def mirror: mirror = "mirror".asInstanceOf[mirror]
+  
+  @scala.inline
+  def overlay: overlay = "overlay".asInstanceOf[overlay]
+  
+  @scala.inline
+  def params: params = "params".asInstanceOf[params]
+  
+  @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
+  
+  @scala.inline
+  def request: request = "request".asInstanceOf[request]
+  
+  @scala.inline
+  def `request-sent`: `request-sent` = "request-sent".asInstanceOf[`request-sent`]
+  
+  @scala.inline
+  def response: response = "response".asInstanceOf[response]
+  
+  @scala.inline
+  def `response-sent`: `response-sent` = "response-sent".asInstanceOf[`response-sent`]
+  
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  
   @js.native
   sealed trait $ extends BodyParser
   
@@ -72,48 +136,4 @@ object hoxyStrings {
   
   @js.native
   sealed trait warn extends LogLevel
-  
-  @scala.inline
-  def $: $ = "$".asInstanceOf[$]
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def mirror: mirror = "mirror".asInstanceOf[mirror]
-  @scala.inline
-  def overlay: overlay = "overlay".asInstanceOf[overlay]
-  @scala.inline
-  def params: params = "params".asInstanceOf[params]
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
-  @scala.inline
-  def request: request = "request".asInstanceOf[request]
-  @scala.inline
-  def `request-sent`: `request-sent` = "request-sent".asInstanceOf[`request-sent`]
-  @scala.inline
-  def response: response = "response".asInstanceOf[response]
-  @scala.inline
-  def `response-sent`: `response-sent` = "response-sent".asInstanceOf[`response-sent`]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
 }
-

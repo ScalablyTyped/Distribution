@@ -4,7 +4,7 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.HexParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * base class for ASN.1 DER string classes
@@ -26,4 +26,3 @@ class DERAbstractString ()
   def this(params: HexParam) = this()
   def this(params: StringParam) = this()
 }
-

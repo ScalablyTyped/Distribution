@@ -11,8 +11,8 @@ Typings are for version 1.4
 | Full name          | shipit-utils |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 37 |
-| # downloads        | 260751 |
+| # dependents       | 38 |
+| # downloads        | 255697 |
 | # stars            | 0 |
 
 ## Links

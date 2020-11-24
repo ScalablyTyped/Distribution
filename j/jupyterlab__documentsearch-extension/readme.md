@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__documentsearch-extension
 
-Typings are for version 2.1.2
+Typings are for version 2.2.7
 
 ## Library description:
 Search document types
@@ -10,9 +10,9 @@ Search document types
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/documentsearch-extension |
 | Keywords           | - |
-| # releases         | 48 |
+| # releases         | 117 |
 | # dependents       | 1 |
-| # downloads        | 358448 |
+| # downloads        | 1292536 |
 | # stars            | 0 |
 
 ## Links

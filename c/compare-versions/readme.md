@@ -10,9 +10,9 @@ Compare semver version strings to find greater, equal or lesser.
 | ------------------ | :-------------: |
 | Full name          | compare-versions |
 | Keywords           | semver, version, compare, browser, node |
-| # releases         | 8 |
-| # dependents       | 327 |
-| # downloads        | 92990489 |
+| # releases         | 4 |
+| # dependents       | 477 |
+| # downloads        | 119937947 |
 | # stars            | 3 |
 
 ## Links

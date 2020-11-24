@@ -2,19 +2,21 @@ package typings.cordovaPluginCamera
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This plugin provides an API for taking pictures and for choosing images from the system's image library.
   */
 @js.native
 trait Camera extends js.Object {
+  
   /**
     * Removes intermediate photos taken by the camera from temporary storage.
     * @param onSuccess Success callback, that called when cleanup succeeds.
     * @param onError Error callback, that get an error message.
     */
   def cleanup(onSuccess: js.Function0[Unit], onError: js.Function1[/* message */ String, Unit]): Unit = js.native
+  
   /**
     * Takes a photo using the camera, or retrieves a photo from the device's image gallery.
     * @param cameraSuccess Success callback, that get the image
@@ -32,4 +34,3 @@ trait Camera extends js.Object {
     cameraOptions: CameraOptions
   ): Unit = js.native
 }
-

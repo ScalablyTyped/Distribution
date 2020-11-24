@@ -5,11 +5,12 @@ import typings.angularCompiler.compilerHostMod.AotCompilerHost
 import typings.angularCompiler.compilerOptionsMod.AotCompilerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "createAotCompiler")
 @js.native
 object createAotCompiler extends js.Object {
+  
   def apply(compilerHost: AotCompilerHost, options: AotCompilerOptions): Compiler = js.native
   def apply(
     compilerHost: AotCompilerHost,
@@ -17,4 +18,3 @@ object createAotCompiler extends js.Object {
     errorCollector: js.Function2[/* error */ js.Any, /* type */ js.UndefOr[js.Any], Unit]
   ): Compiler = js.native
 }
-

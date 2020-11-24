@@ -9,9 +9,88 @@ import typings.vueI18n.mod.VueI18n.LocaleMatcher
 import typings.vueI18n.mod.VueI18n.WarnHtmlInMessageLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vueI18nStrings {
+  
+  @scala.inline
+  def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]
+  
+  @scala.inline
+  def basic: basic = "basic".asInstanceOf[basic]
+  
+  @scala.inline
+  def `best-fit`: `best-fit` = "best-fit".asInstanceOf[`best-fit`]
+  
+  @scala.inline
+  def code: code = "code".asInstanceOf[code]
+  
+  @scala.inline
+  def currency: currency = "currency".asInstanceOf[currency]
+  
+  @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def fraction: fraction = "fraction".asInstanceOf[fraction]
+  
+  @scala.inline
+  def group: group = "group".asInstanceOf[group]
+  
+  @scala.inline
+  def infinity: infinity = "infinity".asInstanceOf[infinity]
+  
+  @scala.inline
+  def integer: integer = "integer".asInstanceOf[integer]
+  
+  @scala.inline
+  def literal: literal = "literal".asInstanceOf[literal]
+  
+  @scala.inline
+  def long: long = "long".asInstanceOf[long]
+  
+  @scala.inline
+  def lookup: lookup = "lookup".asInstanceOf[lookup]
+  
+  @scala.inline
+  def minusSign: minusSign = "minusSign".asInstanceOf[minusSign]
+  
+  @scala.inline
+  def name: name = "name".asInstanceOf[name]
+  
+  @scala.inline
+  def nan: nan = "nan".asInstanceOf[nan]
+  
+  @scala.inline
+  def narrow: narrow = "narrow".asInstanceOf[narrow]
+  
+  @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  
+  @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  
+  @scala.inline
+  def percent: percent = "percent".asInstanceOf[percent]
+  
+  @scala.inline
+  def percentSign: percentSign = "percentSign".asInstanceOf[percentSign]
+  
+  @scala.inline
+  def plusSign: plusSign = "plusSign".asInstanceOf[plusSign]
+  
+  @scala.inline
+  def short: short = "short".asInstanceOf[short]
+  
+  @scala.inline
+  def symbol: symbol = "symbol".asInstanceOf[symbol]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  
   @js.native
   sealed trait `2-digit` extends DateTimeDigital
   
@@ -91,58 +170,4 @@ object vueI18nStrings {
   
   @js.native
   sealed trait warn extends WarnHtmlInMessageLevel
-  
-  @scala.inline
-  def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]
-  @scala.inline
-  def basic: basic = "basic".asInstanceOf[basic]
-  @scala.inline
-  def `best-fit`: `best-fit` = "best-fit".asInstanceOf[`best-fit`]
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
-  @scala.inline
-  def currency: currency = "currency".asInstanceOf[currency]
-  @scala.inline
-  def decimal: decimal = "decimal".asInstanceOf[decimal]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fraction: fraction = "fraction".asInstanceOf[fraction]
-  @scala.inline
-  def group: group = "group".asInstanceOf[group]
-  @scala.inline
-  def infinity: infinity = "infinity".asInstanceOf[infinity]
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
-  @scala.inline
-  def literal: literal = "literal".asInstanceOf[literal]
-  @scala.inline
-  def long: long = "long".asInstanceOf[long]
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
-  @scala.inline
-  def minusSign: minusSign = "minusSign".asInstanceOf[minusSign]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def nan: nan = "nan".asInstanceOf[nan]
-  @scala.inline
-  def narrow: narrow = "narrow".asInstanceOf[narrow]
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def percent: percent = "percent".asInstanceOf[percent]
-  @scala.inline
-  def percentSign: percentSign = "percentSign".asInstanceOf[percentSign]
-  @scala.inline
-  def plusSign: plusSign = "plusSign".asInstanceOf[plusSign]
-  @scala.inline
-  def short: short = "short".asInstanceOf[short]
-  @scala.inline
-  def symbol: symbol = "symbol".asInstanceOf[symbol]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
 }
-

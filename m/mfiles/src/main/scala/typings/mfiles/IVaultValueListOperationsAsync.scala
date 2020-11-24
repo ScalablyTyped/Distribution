@@ -4,10 +4,11 @@ import typings.mfiles.MFiles.MFBuiltInValueList
 import typings.mfiles.MFiles.MFExternalDBRefreshType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultValueListOperationsAsync extends js.Object {
+  
   def AddValueListAdmin(ValueList: IObjectTypeAdmin): Unit = js.native
   def AddValueListAdmin(
     ValueList: IObjectTypeAdmin,
@@ -44,6 +45,7 @@ trait IVaultValueListOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetBuiltInValueList(BuiltInValueList: MFBuiltInValueList): Unit = js.native
   def GetBuiltInValueList(
     BuiltInValueList: MFBuiltInValueList,
@@ -83,6 +85,7 @@ trait IVaultValueListOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueList(ValueList: Double): Unit = js.native
   def GetValueList(
     ValueList: Double,
@@ -155,6 +158,7 @@ trait IVaultValueListOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueListAdmin(ValueListID: Double): Unit = js.native
   def GetValueListAdmin(
     ValueListID: Double,
@@ -230,6 +234,7 @@ trait IVaultValueListOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueListIDByAlias(Alias: String): Unit = js.native
   def GetValueListIDByAlias(
     Alias: String,
@@ -266,6 +271,7 @@ trait IVaultValueListOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueListIDByGUID(ValueListGUID: String): Unit = js.native
   def GetValueListIDByGUID(
     ValueListGUID: String,
@@ -302,6 +308,7 @@ trait IVaultValueListOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueLists(): Unit = js.native
   def GetValueLists(
     successCallback: js.UndefOr[scala.Nothing],
@@ -332,6 +339,7 @@ trait IVaultValueListOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueListsAdmin(): Unit = js.native
   def GetValueListsAdmin(
     successCallback: js.UndefOr[scala.Nothing],
@@ -362,6 +370,7 @@ trait IVaultValueListOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RefreshExternalValueList(ValueList: Double, RefreshType: MFExternalDBRefreshType): Unit = js.native
   def RefreshExternalValueList(
     ValueList: Double,
@@ -450,6 +459,7 @@ trait IVaultValueListOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RemoveValueListAdmin(ValueListID: Double): Unit = js.native
   def RemoveValueListAdmin(
     ValueListID: Double,
@@ -522,6 +532,7 @@ trait IVaultValueListOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateValueListAdmin(ValueList: IObjectTypeAdmin): Unit = js.native
   def UpdateValueListAdmin(
     ValueList: IObjectTypeAdmin,
@@ -558,6 +569,7 @@ trait IVaultValueListOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateValueListWithAutomaticPermissionsAdmin(ObjectType: IObjectTypeAdmin, AutomaticPermissionsForcedActive: Boolean): Unit = js.native
   def UpdateValueListWithAutomaticPermissionsAdmin(
     ObjectType: IObjectTypeAdmin,
@@ -605,4 +617,3 @@ trait IVaultValueListOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

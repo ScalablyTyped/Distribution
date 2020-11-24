@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "realm-network-transport" : "0.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "realm-network-transport" : "0.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

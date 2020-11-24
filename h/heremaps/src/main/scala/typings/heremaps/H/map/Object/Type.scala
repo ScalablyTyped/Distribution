@@ -2,17 +2,17 @@ package typings.heremaps.H.map.Object
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Type extends js.Object
-
 /**
   * The major types of map objects
   */
 @JSGlobal("H.map.Object.Type")
 @js.native
 object Type extends js.Object {
+  
   /** spatial object */
   @js.native
   sealed trait ANY extends Type
@@ -36,6 +36,4 @@ object Type extends js.Object {
   /** spatial object */
   @js.native
   sealed trait SPATIAL extends Type
-  
 }
-

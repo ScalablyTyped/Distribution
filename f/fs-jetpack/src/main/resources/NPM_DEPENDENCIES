@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fs-jetpack" : "4.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fs-jetpack" : "4.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

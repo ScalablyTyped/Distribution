@@ -10,9 +10,9 @@ Wait for localhost to be ready
 | ------------------ | :-------------: |
 | Full name          | wait-for-localhost |
 | Keywords           | wait, localhost, server, port, delay, sleep, ready |
-| # releases         | 9 |
+| # releases         | 6 |
 | # dependents       | 6 |
-| # downloads        | 67183 |
+| # downloads        | 99668 |
 | # stars            | 0 |
 
 ## Links

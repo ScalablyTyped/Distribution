@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Globalization
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes a region. This is usually a country, but may be a macroregion. */
 @JSGlobal("Windows.Globalization.GeographicRegion")
@@ -16,11 +16,11 @@ class GeographicRegion ()
     */
   def this(geographicRegionCode: String) = this()
 }
-
 /* static members */
 @JSGlobal("Windows.Globalization.GeographicRegion")
 @js.native
 object GeographicRegion extends js.Object {
+  
   /**
     * Determines whether a geographic region identifier is supported.
     * @param geographicRegionCode One of the ISO 3166-1 two-letter or three-letter codes that identify the country, or one of the three-digit UN-M49 codes that identify the geographical region.
@@ -28,4 +28,3 @@ object GeographicRegion extends js.Object {
     */
   def isSupported(geographicRegionCode: String): Boolean = js.native
 }
-

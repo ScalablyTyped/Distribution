@@ -2,11 +2,12 @@ package typings.cassandraDriver.mod.policies
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver", "policies.reconnection")
 @js.native
 object reconnection extends js.Object {
+  
   @js.native
   class ConstantReconnectionPolicy protected ()
     extends typings.cassandraDriver.policiesMod.policies.reconnection.ConstantReconnectionPolicy {
@@ -19,6 +20,4 @@ object reconnection extends js.Object {
     def this(baseDelay: Double, maxDelay: Double) = this()
     def this(baseDelay: Double, maxDelay: Double, startWithNoDelay: Boolean) = this()
   }
-  
 }
-

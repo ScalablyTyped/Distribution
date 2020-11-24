@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChatStoreChangedEventKind extends js.Object
-
 /** Specifies the type of change that occurred for a ChatMessageStoreChanged event. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatStoreChangedEventKind")
 @js.native
 object ChatStoreChangedEventKind extends js.Object {
+  
   /** A chat conversation has been deleted */
   @js.native
   sealed trait conversationDeleted extends ChatStoreChangedEventKind
@@ -42,6 +42,4 @@ object ChatStoreChangedEventKind extends js.Object {
   /** The chat store has been modified */
   @js.native
   sealed trait storeModified extends ChatStoreChangedEventKind
-  
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "asynciterator" : "3.0.0"
+      "asynciterator" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "asynciterator" : "3.0.0"
+      "asynciterator" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

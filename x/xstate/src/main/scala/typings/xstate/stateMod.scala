@@ -5,7 +5,7 @@ import typings.std.Pick
 import typings.std.Record
 import typings.xstate.actorMod.Actor
 import typings.xstate.anon.Context
-import typings.xstate.anon.Value
+import typings.xstate.anon.ContextTContext
 import typings.xstate.stateNodeMod.StateNode
 import typings.xstate.typesMod.ActionObject
 import typings.xstate.typesMod.ActivityMap
@@ -23,11 +23,21 @@ import typings.xstate.xstateStrings.configuration
 import typings.xstate.xstateStrings.transitions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xstate/lib/State", JSImport.Namespace)
 @js.native
 object stateMod extends js.Object {
+  
+  def bindActionToState[TC, TE /* <: EventObject */](action: ActionObject[TC, TE], state: State[TC, TE, _, Context[TC]]): ActionObject[TC, TE] = js.native
+  
+  def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: String): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = js.native
+  def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: js.Object): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = js.native
+  
+  def stateValuesEqual(): Boolean = js.native
+  def stateValuesEqual(a: js.UndefOr[StateValue], b: StateValue): Boolean = js.native
+  def stateValuesEqual(a: StateValue): Boolean = js.native
+  
   @js.native
   class State[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */] protected () extends js.Object {
     /**
@@ -43,10 +53,15 @@ object stateMod extends js.Object {
       * @param configuration
       */
     def this(config: StateConfig[TContext, TEvent]) = this()
+    
     var _event: Event[TEvent] = js.native
+    
     var _sessionid: String | Null = js.native
+    
     var actions: js.Array[ActionObject[TContext, TEvent]] = js.native
+    
     var activities: ActivityMap = js.native
+    
     /**
       * Indicates whether the state has changed from the previous state. A state is considered "changed" if:
       *
@@ -56,39 +71,47 @@ object stateMod extends js.Object {
       * An initial state (with no history) will return `undefined`.
       */
     var changed: js.UndefOr[Boolean] = js.native
+    
     /**
       * An object mapping actor IDs to spawned actors/invoked services.
       */
     var children: Record[String, Actor[_, AnyEventObject]] = js.native
+    
     /**
       * The enabled state nodes representative of the state value.
       */
-    var configuration: js.Array[StateNode[TContext, _, TEvent, _]] = js.native
+    var configuration: js.Array[StateNode[TContext, _, TEvent, ContextTContext[TContext]]] = js.native
+    
     var context: TContext = js.native
+    
     /**
       * Indicates whether the state is a final state.
       */
     var done: js.UndefOr[Boolean] = js.native
+    
     var event: TEvent = js.native
+    
     var events: js.Array[TEvent] = js.native
-    var history: js.UndefOr[State[TContext, TEvent, TStateSchema, Context[TContext]]] = js.native
+    
+    var history: js.UndefOr[State[TContext, TEvent, TStateSchema, TTypestate]] = js.native
+    
     var historyValue: js.UndefOr[HistoryValue] = js.native
-    var meta: js.Any = js.native
-    /**
-      * The next events that will cause a transition from the current state.
-      */
-    var nextEvents: js.Array[EventType] = js.native
-    /**
-      * The transition definitions that resulted in this state.
-      */
-    var transitions: js.Array[TransitionDefinition[TContext, TEvent]] = js.native
-    var value: StateValue = js.native
+    
     /**
       * Whether the current state value is a subset of the given parent state value.
       * @param parentStateValue
       */
     def matches[TSV /* <: /* import warning: importer.ImportType#apply Failed type conversion: TTypestate['value'] */ js.Any */](parentStateValue: TSV): Boolean = js.native
+    
+    var meta: js.Any = js.native
+    
+    /**
+      * The next events that will cause a transition from the current state.
+      */
+    var nextEvents: js.Array[EventType] = js.native
+    
     def toJSON(): Pick[this.type, Exclude[/* keyof this */ String, configuration | transitions]] = js.native
+    
     /**
       * Returns an array of all the string leaf state node paths.
       * @param stateValue
@@ -97,39 +120,40 @@ object stateMod extends js.Object {
     def toStrings(): js.Array[String] = js.native
     def toStrings(stateValue: js.UndefOr[StateValue], delimiter: String): js.Array[String] = js.native
     def toStrings(stateValue: StateValue): js.Array[String] = js.native
+    
+    /**
+      * The transition definitions that resulted in this state.
+      */
+    var transitions: js.Array[TransitionDefinition[TContext, TEvent]] = js.native
+    
+    var value: StateValue = js.native
   }
-  
-  def bindActionToState[TC, TE /* <: EventObject */](action: ActionObject[TC, TE], state: State[TC, TE, _, Value[TC]]): ActionObject[TC, TE] = js.native
-  def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: String): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = js.native
-  def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: js.Object): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = js.native
-  def stateValuesEqual(): Boolean = js.native
-  def stateValuesEqual(a: js.UndefOr[StateValue], b: StateValue): Boolean = js.native
-  def stateValuesEqual(a: StateValue): Boolean = js.native
   /* static members */
   @js.native
   object State extends js.Object {
+    
     /**
       * Creates a new State instance for the given `config`.
       * @param config The state config
       */
-    def create[TC, TE /* <: EventObject */](config: StateConfig[TC, TE]): State[TC, TE, _, Value[TC]] = js.native
+    def create[TC, TE /* <: EventObject */](config: StateConfig[TC, TE]): State[TC, TE, _, Context[TC]] = js.native
+    
     /**
       * Creates a new State instance for the given `stateValue` and `context`.
       * @param stateValue
       * @param context
       */
-    def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, _, Value[TC]]): State[TC, TE, _, Value[TC]] = js.native
-    def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, _, Value[TC]], context: TC): State[TC, TE, _, Value[TC]] = js.native
-    def from[TC, TE /* <: EventObject */](stateValue: StateValue): State[TC, TE, _, Value[TC]] = js.native
-    def from[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, _, Value[TC]] = js.native
+    def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, _, Context[TC]]): State[TC, TE, _, Context[TC]] = js.native
+    def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, _, Context[TC]], context: TC): State[TC, TE, _, Context[TC]] = js.native
+    def from[TC, TE /* <: EventObject */](stateValue: StateValue): State[TC, TE, _, Context[TC]] = js.native
+    def from[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, _, Context[TC]] = js.native
+    
     /**
       * Creates a new `State` instance for the given `stateValue` and `context` with no actions (side-effects).
       * @param stateValue
       * @param context
       */
-    def inert[TC, TE /* <: EventObject */](stateValue: State[TC, TE, _, Value[TC]], context: TC): State[TC, TE, _, Value[TC]] = js.native
-    def inert[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, _, Value[TC]] = js.native
+    def inert[TC, TE /* <: EventObject */](stateValue: State[TC, TE, _, Context[TC]], context: TC): State[TC, TE, _, Context[TC]] = js.native
+    def inert[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, _, Context[TC]] = js.native
   }
-  
 }
-

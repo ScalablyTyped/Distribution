@@ -5,11 +5,12 @@ import typings.phaser.Phaser.Types.Input.HitAreaCallback
 import typings.phaser.Phaser.Types.Input.InteractiveObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Input.CreateInteractiveObject")
 @js.native
 object CreateInteractiveObject extends js.Object {
+  
   /**
     * Creates a new Interactive Object.
     * 
@@ -22,4 +23,3 @@ object CreateInteractiveObject extends js.Object {
     */
   def apply(gameObject: GameObject, hitArea: js.Any, hitAreaCallback: HitAreaCallback): InteractiveObject = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.jointjs.mod.util
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "util.merge")
 @js.native
 object merge extends js.Object {
+  
   def apply(destinationObject: js.Object, sourceObject1: js.Object, sourceObject2: js.Object): js.Object = js.native
   def apply(
     destinationObject: js.Object,
@@ -49,4 +50,3 @@ object merge extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param sourceObjectsOptionalFinalCustomizer because its type SourceObjectsOptionalFinalCustomizer is not an array type */ sourceObjectsOptionalFinalCustomizer: SourceObjectsOptionalFinalCustomizer
   ): js.Object = js.native
 }
-

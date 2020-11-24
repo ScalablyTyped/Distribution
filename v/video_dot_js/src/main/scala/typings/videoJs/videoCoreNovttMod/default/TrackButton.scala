@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.videoJs.mod.videojs.TrackButtonOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "TrackButton")
 @js.native
@@ -23,7 +23,6 @@ class TrackButton protected ()
   def this(player: typings.videoJs.mod.videojs.Player) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: TrackButtonOptions) = this()
 }
-
 /**
   * The base class for buttons that toggle specific  track types (e.g. subtitles).
   */
@@ -48,4 +47,3 @@ Instantiable1[
       /* options */ TrackButtonOptions, 
       typings.videoJs.mod.videojs.MenuButton
     ]
-

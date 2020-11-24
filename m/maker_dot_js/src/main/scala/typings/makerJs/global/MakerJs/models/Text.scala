@@ -3,7 +3,7 @@ package typings.makerJs.global.MakerJs.models
 import typings.opentypeJs.mod.Font
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.models.Text")
 @js.native
@@ -52,4 +52,3 @@ class Text protected ()
     bezierAccuracy: Double
   ) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.qlikEngineapi.EngineAPI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * One of:
@@ -16,13 +16,14 @@ import scala.scalajs.js.annotation._
   - typings.qlikEngineapi.qlikEngineapiStrings.R
 */
 trait MTType extends js.Object
-
 object MTType {
+  
   @scala.inline
   def D: typings.qlikEngineapi.qlikEngineapiStrings.D = "D".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.D]
+  
   @scala.inline
   def N: typings.qlikEngineapi.qlikEngineapiStrings.N = "N".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.N]
+  
   @scala.inline
   def R: typings.qlikEngineapi.qlikEngineapiStrings.R = "R".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.R]
 }
-

@@ -3,7 +3,7 @@ package typings.screeps
 import typings.screeps.anon.Pos
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creeps are your units.
@@ -14,75 +14,7 @@ import scala.scalajs.js.annotation._
 trait Creep
   extends RoomObject
      with AnyCreep {
-  /**
-    * An array describing the creep's body.
-    */
-  var body: js.Array[BodyPartDefinition[BodyPartConstant]] = js.native
-  /**
-    * An object with the creep's cargo contents.
-    * @deprecated Is an alias for Creep.store
-    */
-  var carry: StoreDefinition = js.native
-  /**
-    * The total amount of resources the creep can carry.
-    * @deprecated alias for Creep.store.getCapacity
-    */
-  var carryCapacity: Double = js.native
-  /**
-    * The movement fatigue indicator. If it is greater than zero, the creep cannot move.
-    */
-  var fatigue: Double = js.native
-  /**
-    * The current amount of hit points of the creep.
-    */
-  var hits: Double = js.native
-  /**
-    * The maximum amount of hit points of the creep.
-    */
-  var hitsMax: Double = js.native
-  /**
-    * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
-    */
-  var id: Id[this.type] = js.native
-  /**
-    * A shorthand to `Memory.creeps[creep.name]`. You can use it for quick access the creep’s specific memory data object.
-    */
-  var memory: CreepMemory = js.native
-  /**
-    * Whether it is your creep or foe.
-    */
-  var my: Boolean = js.native
-  /**
-    * Creep’s name. You can choose the name while creating a new creep, and it cannot be changed later. This name is a hash key to access the creep via the `Game.creeps` object.
-    */
-  var name: String = js.native
-  /**
-    * An object with the creep’s owner info.
-    */
-  var owner: Owner = js.native
-  /**
-    * The link to the Room object. Always defined because creeps give visibility into the room they're in.
-    */
-  @JSName("room")
-  var room_Creep: Room = js.native
-  /**
-    * The text message that the creep was saying at the last tick.
-    */
-  var saying: String = js.native
-  /**
-    * Whether this creep is still being spawned.
-    */
-  var spawning: Boolean = js.native
-  /**
-    * A Store object that contains cargo of this creep.
-    */
-  var store: StoreDefinition = js.native
-  /**
-    * The remaining amount of game ticks after which the creep will die.
-    *
-    * Will be `undefined` if the creep is still spawning.
-    */
-  var ticksToLive: js.UndefOr[Double] = js.native
+  
   /**
     * Attack another creep or structure in a short-ranged attack. Needs the
     * ATTACK body part. If the target is inside a rampart, then the rampart is
@@ -96,6 +28,7 @@ trait Creep
     */
   def attack(target: AnyCreep): CreepActionReturnCode = js.native
   def attack(target: Structure[StructureConstant]): CreepActionReturnCode = js.native
+  
   /**
     * Decreases the controller's downgrade or reservation timer for 1 tick per
     * every 5 `CLAIM` body parts (so the creep must have at least 5x`CLAIM`).
@@ -106,6 +39,12 @@ trait Creep
     * @returns Result Code: OK, ERR_NOT_OWNER, ERR_BUSY, ERR_INVALID_TARGET, ERR_NOT_IN_RANGE, ERR_NO_BODYPART, ERR_TIRED
     */
   def attackController(target: StructureController): CreepActionReturnCode = js.native
+  
+  /**
+    * An array describing the creep's body.
+    */
+  var body: js.Array[BodyPartDefinition[BodyPartConstant]] = js.native
+  
   /**
     * Build a structure at the target construction site using carried energy.
     * Needs WORK and CARRY body parts.
@@ -116,12 +55,26 @@ trait Creep
     * @returns Result Code: OK, ERR_NOT_OWNER, ERR_BUSY, ERR_NOT_ENOUGH_RESOURCES, ERR_INVALID_TARGET, ERR_NOT_IN_RANGE, ERR_NO_BODYPART, ERR_RCL_NOT_ENOUGH
     */
   def build(target: ConstructionSite[BuildableStructureConstant]): CreepActionReturnCode | ERR_NOT_ENOUGH_RESOURCES | ERR_RCL_NOT_ENOUGH = js.native
+  
   /**
     * Cancel the order given during the current game tick.
     * @param methodName The name of a creep's method to be cancelled.
     * @returns Result Code: OK, ERR_NOT_FOUND
     */
   def cancelOrder(methodName: String): OK | ERR_NOT_FOUND = js.native
+  
+  /**
+    * An object with the creep's cargo contents.
+    * @deprecated Is an alias for Creep.store
+    */
+  var carry: StoreDefinition = js.native
+  
+  /**
+    * The total amount of resources the creep can carry.
+    * @deprecated alias for Creep.store.getCapacity
+    */
+  var carryCapacity: Double = js.native
+  
   /**
     * Requires the CLAIM body part.
     *
@@ -133,6 +86,7 @@ trait Creep
     * @returns Result Code: OK, ERR_NOT_OWNER, ERR_BUSY, ERR_INVALID_TARGET, ERR_FULL, ERR_NOT_IN_RANGE, ERR_NO_BODYPART, ERR_GCL_NOT_ENOUGH
     */
   def claimController(target: StructureController): CreepActionReturnCode | ERR_FULL | ERR_GCL_NOT_ENOUGH = js.native
+  
   /**
     * Dismantles any (even hostile) structure returning 50% of the energy spent on its repair.
     *
@@ -142,6 +96,7 @@ trait Creep
     * @param target The target structure.
     */
   def dismantle(target: Structure[StructureConstant]): CreepActionReturnCode = js.native
+  
   /**
     * Drop this resource on the ground.
     * @param resourceType One of the RESOURCE_* constants.
@@ -149,17 +104,25 @@ trait Creep
     */
   def drop(resourceType: ResourceConstant): OK | ERR_NOT_OWNER | ERR_BUSY | ERR_NOT_ENOUGH_RESOURCES = js.native
   def drop(resourceType: ResourceConstant, amount: Double): OK | ERR_NOT_OWNER | ERR_BUSY | ERR_NOT_ENOUGH_RESOURCES = js.native
+  
+  /**
+    * The movement fatigue indicator. If it is greater than zero, the creep cannot move.
+    */
+  var fatigue: Double = js.native
+  
   /**
     * Add one more available safe mode activation to a room controller. The creep has to be at adjacent square to the target room controller and have 1000 ghodium resource.
     * @param target The target room controller.
     * @returns Result Code: OK, ERR_NOT_OWNER, ERR_BUSY, ERR_NOT_ENOUGH_RESOURCES, ERR_INVALID_TARGET, ERR_NOT_IN_RANGE
     */
   def generateSafeMode(target: StructureController): CreepActionReturnCode = js.native
+  
   /**
     * Get the quantity of live body parts of the given type. Fully damaged parts do not count.
     * @param type A body part type, one of the following body part constants: MOVE, WORK, CARRY, ATTACK, RANGED_ATTACK, HEAL, TOUGH, CLAIM
     */
   def getActiveBodyparts(`type`: BodyPartConstant): Double = js.native
+  
   def harvest(target: Deposit): CreepActionReturnCode | ERR_NOT_FOUND | ERR_NOT_ENOUGH_RESOURCES = js.native
   def harvest(target: Mineral[MineralConstant]): CreepActionReturnCode | ERR_NOT_FOUND | ERR_NOT_ENOUGH_RESOURCES = js.native
   /**
@@ -173,6 +136,7 @@ trait Creep
     * @param target The source object to be harvested.
     */
   def harvest(target: Source): CreepActionReturnCode | ERR_NOT_FOUND | ERR_NOT_ENOUGH_RESOURCES = js.native
+  
   /**
     * Heal self or another creep. It will restore the target creep’s damaged body parts function and increase the hits counter.
     *
@@ -182,6 +146,27 @@ trait Creep
     * @param target The target creep object.
     */
   def heal(target: AnyCreep): CreepActionReturnCode = js.native
+  
+  /**
+    * The current amount of hit points of the creep.
+    */
+  var hits: Double = js.native
+  
+  /**
+    * The maximum amount of hit points of the creep.
+    */
+  var hitsMax: Double = js.native
+  
+  /**
+    * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
+    */
+  var id: Id[this.type] = js.native
+  
+  /**
+    * A shorthand to `Memory.creeps[creep.name]`. You can use it for quick access the creep’s specific memory data object.
+    */
+  var memory: CreepMemory = js.native
+  
   /**
     * Move the creep one square in the specified direction or towards a creep that is pulling it.
     *
@@ -190,12 +175,14 @@ trait Creep
     */
   def move(direction: DirectionConstant): CreepMoveReturnCode = js.native
   def move(target: Creep): OK | ERR_NOT_OWNER | ERR_BUSY | ERR_NOT_IN_RANGE | ERR_INVALID_ARGS = js.native
+  
   def moveByPath(path: String): CreepMoveReturnCode | ERR_NOT_FOUND | ERR_INVALID_ARGS = js.native
   /**
     * Move the creep using the specified predefined path. Needs the MOVE body part.
     * @param path A path value as returned from Room.findPath or RoomPosition.findPathTo methods. Both array form and serialized string form are accepted.
     */
   def moveByPath(path: js.Array[PathStep | RoomPosition]): CreepMoveReturnCode | ERR_NOT_FOUND | ERR_INVALID_ARGS = js.native
+  
   /**
     * Find the optimal path to the target within the same room and move to it.
     * A shorthand to consequent calls of pos.findPathTo() and move() methods.
@@ -221,16 +208,34 @@ trait Creep
     */
   def moveTo(x: Double, y: Double): CreepMoveReturnCode | ERR_NO_PATH | ERR_INVALID_TARGET = js.native
   def moveTo(x: Double, y: Double, opts: MoveToOpts): CreepMoveReturnCode | ERR_NO_PATH | ERR_INVALID_TARGET = js.native
+  
+  /**
+    * Whether it is your creep or foe.
+    */
+  var my: Boolean = js.native
+  
+  /**
+    * Creep’s name. You can choose the name while creating a new creep, and it cannot be changed later. This name is a hash key to access the creep via the `Game.creeps` object.
+    */
+  var name: String = js.native
+  
   /**
     * Toggle auto notification when the creep is under attack. The notification will be sent to your account email. Turned on by default.
     * @param enabled Whether to enable notification or disable.
     */
   def notifyWhenAttacked(enabled: Boolean): OK | ERR_NOT_OWNER | ERR_BUSY | ERR_INVALID_ARGS = js.native
+  
+  /**
+    * An object with the creep’s owner info.
+    */
+  var owner: Owner = js.native
+  
   /**
     * Pick up an item (a dropped piece of energy). Needs the CARRY body part. The target has to be at adjacent square to the creep or at the same square.
     * @param target The target object to be picked up.
     */
   def pickup(target: Resource[ResourceConstant]): CreepActionReturnCode | ERR_FULL = js.native
+  
   /**
     * Allow another creep to follow this creep. The fatigue generated for the target's move will be added to the creep instead of the target.
     *
@@ -238,6 +243,7 @@ trait Creep
     * @param target The target creep to be pulled.
     */
   def pull(target: Creep): OK | ERR_NOT_OWNER | ERR_BUSY | ERR_INVALID_TARGET | ERR_NOT_IN_RANGE | ERR_NO_BODYPART = js.native
+  
   /**
     * A ranged attack against another creep or structure.
     *
@@ -248,6 +254,7 @@ trait Creep
     */
   def rangedAttack(target: AnyCreep): CreepActionReturnCode = js.native
   def rangedAttack(target: Structure[StructureConstant]): CreepActionReturnCode = js.native
+  
   /**
     * Heal another creep at a distance.
     *
@@ -257,6 +264,7 @@ trait Creep
     * @param target The target creep object.
     */
   def rangedHeal(target: AnyCreep): CreepActionReturnCode = js.native
+  
   /**
     * A ranged attack against all hostile creeps or structures within 3 squares range.
     *
@@ -265,11 +273,13 @@ trait Creep
     * The attack power depends on the range to each target. Friendly units are not affected.
     */
   def rangedMassAttack(): OK | ERR_NOT_OWNER | ERR_BUSY | ERR_NO_BODYPART = js.native
+  
   /**
     * Repair a damaged structure using carried energy. Needs the WORK and CARRY body parts. The target has to be within 3 squares range of the creep.
     * @param target The target structure to be repaired.
     */
   def repair(target: Structure[StructureConstant]): CreepActionReturnCode | ERR_NOT_ENOUGH_RESOURCES = js.native
+  
   /**
     * Temporarily block a neutral controller from claiming by other players.
     *
@@ -282,6 +292,13 @@ trait Creep
     * @return Result code: OK, ERR_NOT_OWNER, ERR_BUSY, ERR_INVALID_TARGET, ERR_NOT_IN_RANGE, ERR_NO_BODYPART
     */
   def reserveController(target: StructureController): CreepActionReturnCode = js.native
+  
+  /**
+    * The link to the Room object. Always defined because creeps give visibility into the room they're in.
+    */
+  @JSName("room")
+  var room_Creep: Room = js.native
+  
   /**
     * Display a visual speech balloon above the creep with the specified message.
     *
@@ -293,6 +310,12 @@ trait Creep
     */
   def say(message: String): OK | ERR_NOT_OWNER | ERR_BUSY = js.native
   def say(message: String, toPublic: Boolean): OK | ERR_NOT_OWNER | ERR_BUSY = js.native
+  
+  /**
+    * The text message that the creep was saying at the last tick.
+    */
+  var saying: String = js.native
+  
   /**
     * Sign a controller with a random text visible to all players. This text will appear in the room UI, in the world map, and can be accessed via the API.
     * You can sign unowned and hostile controllers. The target has to be at adjacent square to the creep. Pass an empty string to remove the sign.
@@ -301,10 +324,29 @@ trait Creep
     * @returns Result Code: OK, ERR_BUSY, ERR_INVALID_TARGET, ERR_NOT_IN_RANGE
     */
   def signController(target: StructureController, text: String): OK | ERR_BUSY | ERR_INVALID_TARGET | ERR_NOT_IN_RANGE = js.native
+  
+  /**
+    * Whether this creep is still being spawned.
+    */
+  var spawning: Boolean = js.native
+  
+  /**
+    * A Store object that contains cargo of this creep.
+    */
+  var store: StoreDefinition = js.native
+  
   /**
     * Kill the creep immediately.
     */
   def suicide(): OK | ERR_NOT_OWNER | ERR_BUSY = js.native
+  
+  /**
+    * The remaining amount of game ticks after which the creep will die.
+    *
+    * Will be `undefined` if the creep is still spawning.
+    */
+  var ticksToLive: js.UndefOr[Double] = js.native
+  
   /**
     * Transfer resource from the creep to another object. The target has to be at adjacent square to the creep.
     * @param target The target object.
@@ -315,6 +357,7 @@ trait Creep
   def transfer(target: AnyCreep, resourceType: ResourceConstant, amount: Double): ScreepsReturnCode = js.native
   def transfer(target: Structure[StructureConstant], resourceType: ResourceConstant): ScreepsReturnCode = js.native
   def transfer(target: Structure[StructureConstant], resourceType: ResourceConstant, amount: Double): ScreepsReturnCode = js.native
+  
   /**
     * Upgrade your controller to the next level using carried energy.
     *
@@ -330,6 +373,7 @@ trait Creep
     * @param target The target controller object to be upgraded.
     */
   def upgradeController(target: StructureController): ScreepsReturnCode = js.native
+  
   def withdraw(target: Ruin, resourceType: ResourceConstant): ScreepsReturnCode = js.native
   def withdraw(target: Ruin, resourceType: ResourceConstant, amount: Double): ScreepsReturnCode = js.native
   /**
@@ -349,4 +393,3 @@ trait Creep
   def withdraw(target: Tombstone, resourceType: ResourceConstant): ScreepsReturnCode = js.native
   def withdraw(target: Tombstone, resourceType: ResourceConstant, amount: Double): ScreepsReturnCode = js.native
 }
-

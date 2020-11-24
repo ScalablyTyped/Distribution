@@ -2,10 +2,11 @@ package typings.cytoscape.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CoreStyle extends js.Object {
+  
   /**
     * Get the current style object.
     */
@@ -17,4 +18,3 @@ trait CoreStyle extends js.Object {
     */
   def style(sheet: Stylesheet): Stylesheet = js.native
 }
-

@@ -4,42 +4,49 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Priority
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NotificationListBase extends ListItemBase {
+  
   /**
     * Returns the sap.m.Image or the sap.ui.core.Control used in the NotificationListBase's author
     * picture.
     * @returns The notification author picture text
     */
   def _getAuthorImage(): Image | Control = js.native
+  
   /**
     * Returns the sap.m.Text control used in the NotificationListBase's author name.
     * @returns The notification author name text
     */
   def _getAuthorName(): Text = js.native
+  
   /**
     * Returns the sap.m.Text control used in the NotificationListBase's header title.
     * @returns The datetime control inside the Notification List Base control
     */
   def _getDateTimeText(): Text = js.native
+  
   /**
     * Returns the sap.m.Text control used in the NotificationListBase's header title.
     * @returns The title control inside the Notification List Base control
     */
   def _getHeaderTitle(): Text = js.native
+  
   /**
     * Returns the sap.m.OverflowToolbar control used in the NotificationListBase.
     * @returns The footer toolbar
     */
   def _getToolbar(): OverflowToolbar = js.native
+  
   /**
     * Adds some button to the aggregation <code>buttons</code>.
     * @param oButton the button to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addButton(oButton: Button): NotificationListBase = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>close</code> event of this
     * <code>sap.m.NotificationListBase</code>.When called, the context of the event handler (its
@@ -56,11 +63,13 @@ trait NotificationListBase extends ListItemBase {
     */
   def attachClose(oData: js.Any, fnFunction: js.Any): NotificationListBase = js.native
   def attachClose(oData: js.Any, fnFunction: js.Any, oListener: js.Any): NotificationListBase = js.native
+  
   /**
     * Destroys all the buttons in the aggregation <code>buttons</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyButtons(): NotificationListBase = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>close</code> event of this
     * <code>sap.m.NotificationListBase</code>.The passed function and listener object must match the ones
@@ -70,58 +79,68 @@ trait NotificationListBase extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachClose(fnFunction: js.Any, oListener: js.Any): NotificationListBase = js.native
+  
   /**
     * Fires event <code>close</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireClose(mArguments: js.Any): NotificationListBase = js.native
+  
   /**
     * Gets current value of property <code>authorName</code>.Determines the notification group's author
     * name.Default value is <code></code>.
     * @returns Value of property <code>authorName</code>
     */
   def getAuthorName(): String = js.native
+  
   /**
     * Gets current value of property <code>authorPicture</code>.Determines the URL of the notification
     * group's author picture.
     * @returns Value of property <code>authorPicture</code>
     */
   def getAuthorPicture(): js.Any = js.native
+  
   /**
     * Gets content of aggregation <code>buttons</code>.Action buttons.
     */
   def getButtons(): js.Array[Button] = js.native
+  
   /**
     * Gets current value of property <code>datetime</code>.Determines the due date of the
     * NotificationListItem.Default value is <code></code>.
     * @returns Value of property <code>datetime</code>
     */
   def getDatetime(): String = js.native
+  
   /**
     * Gets current value of property <code>priority</code>.Determines the priority of the
     * Notification.Default value is <code>None</code>.
     * @returns Value of property <code>priority</code>
     */
   def getPriority(): Priority = js.native
+  
   /**
     * Gets current value of property <code>showButtons</code>.Determines the action buttons
     * visibility.Default value is <code>true</code>.
     * @returns Value of property <code>showButtons</code>
     */
   def getShowButtons(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showCloseButton</code>.Determines the visibility of the close
     * button.Default value is <code>true</code>.
     * @returns Value of property <code>showCloseButton</code>
     */
   def getShowCloseButton(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>title</code>.Determines the title of the NotificationListBase
     * item.Default value is <code></code>.
     * @returns Value of property <code>title</code>
     */
   def getTitle(): String = js.native
+  
   /**
     * Checks for the provided <code>sap.m.Button</code> in the aggregation <code>buttons</code>.and
     * returns its index if found or -1 otherwise.
@@ -129,6 +148,7 @@ trait NotificationListBase extends ListItemBase {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfButton(oButton: Button): Double = js.native
+  
   /**
     * Inserts a button into the aggregation <code>buttons</code>.
     * @param oButton the button to insert; if empty, nothing is inserted
@@ -139,12 +159,14 @@ trait NotificationListBase extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertButton(oButton: Button, iIndex: Double): NotificationListBase = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>buttons</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllButtons(): js.Array[Button] = js.native
+  
   def removeButton(vButton: String): Button = js.native
   /**
     * Removes a button from the aggregation <code>buttons</code>.
@@ -153,6 +175,7 @@ trait NotificationListBase extends ListItemBase {
     */
   def removeButton(vButton: Double): Button = js.native
   def removeButton(vButton: Button): Button = js.native
+  
   /**
     * Sets a new value for property <code>authorName</code>.Determines the notification group's author
     * name.When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -161,6 +184,7 @@ trait NotificationListBase extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAuthorName(sAuthorName: String): NotificationListBase = js.native
+  
   /**
     * Sets a new value for property <code>authorPicture</code>.Determines the URL of the notification
     * group's author picture.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -169,6 +193,7 @@ trait NotificationListBase extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAuthorPicture(sAuthorPicture: js.Any): NotificationListBase = js.native
+  
   /**
     * Sets a new value for property <code>datetime</code>.Determines the due date of the
     * NotificationListItem.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -177,6 +202,7 @@ trait NotificationListBase extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDatetime(sDatetime: String): NotificationListBase = js.native
+  
   /**
     * Sets a new value for property <code>priority</code>.Determines the priority of the Notification.When
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -185,6 +211,7 @@ trait NotificationListBase extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setPriority(sPriority: Priority): NotificationListBase = js.native
+  
   /**
     * Sets a new value for property <code>showButtons</code>.Determines the action buttons visibility.When
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -193,6 +220,7 @@ trait NotificationListBase extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowButtons(bShowButtons: Boolean): NotificationListBase = js.native
+  
   /**
     * Sets a new value for property <code>showCloseButton</code>.Determines the visibility of the close
     * button.When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -201,6 +229,7 @@ trait NotificationListBase extends ListItemBase {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowCloseButton(bShowCloseButton: Boolean): NotificationListBase = js.native
+  
   /**
     * Sets a new value for property <code>title</code>.Determines the title of the NotificationListBase
     * item.When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -210,4 +239,3 @@ trait NotificationListBase extends ListItemBase {
     */
   def setTitle(sTitle: String): NotificationListBase = js.native
 }
-

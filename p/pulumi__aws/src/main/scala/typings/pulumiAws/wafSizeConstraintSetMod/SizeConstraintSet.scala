@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/waf/sizeConstraintSet", "SizeConstraintSet")
 @js.native
@@ -24,24 +24,27 @@ class SizeConstraintSet protected () extends CustomResource {
   def this(name: String, args: SizeConstraintSetArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: SizeConstraintSetArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * Amazon Resource Name (ARN)
     */
   val arn: Output_[String] = js.native
+  
   /**
     * The name or description of the Size Constraint Set.
     */
   val name: Output_[String] = js.native
+  
   /**
     * Specifies the parts of web requests that you want to inspect the size of.
     */
   val sizeConstraints: Output_[js.UndefOr[js.Array[SizeConstraintSetSizeConstraint]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/waf/sizeConstraintSet", "SizeConstraintSet")
 @js.native
 object SizeConstraintSet extends js.Object {
+  
   /**
     * Get an existing SizeConstraintSet resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -55,10 +58,10 @@ object SizeConstraintSet extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SizeConstraintSet = js.native
   def get(name: String, id: Input[ID], state: SizeConstraintSetState): SizeConstraintSet = js.native
   def get(name: String, id: Input[ID], state: SizeConstraintSetState, opts: CustomResourceOptions): SizeConstraintSet = js.native
+  
   /**
     * Returns true if the given object is an instance of SizeConstraintSet.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/sizeConstraintSet.SizeConstraintSet */ Boolean = js.native
 }
-

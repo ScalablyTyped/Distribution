@@ -10,11 +10,12 @@ import typings.makerJs.MakerJs.IPoint
 import typings.makerJs.MakerJs.IPointMatchOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.path")
 @js.native
 object path extends js.Object {
+  
   /**
     * Breaks a path in two. The supplied path will end at the supplied pointOfBreak,
     * a new path is returned which begins at the pointOfBreak and ends at the supplied path's initial end point.
@@ -25,12 +26,14 @@ object path extends js.Object {
     * @returns A new path of the same type, when path type is line or arc. Returns null for circle.
     */
   def breakAtPoint(pathToBreak: IPath, pointOfBreak: IPoint): IPath = js.native
+  
   /**
     * Center a path at [0, 0].
     *
     * @param pathToCenter The path to center.
     */
   def center(pathToCenter: IPath): IPath = js.native
+  
   /**
     * Create a clone of a path. This is faster than cloneObject.
     *
@@ -38,6 +41,7 @@ object path extends js.Object {
     * @returns Cloned path.
     */
   def clone(pathToClone: IPath): IPath = js.native
+  
   /**
     * Connect 2 lines at their slope intersection point.
     *
@@ -50,6 +54,7 @@ object path extends js.Object {
   def converge(lineA: IPathLine, lineB: IPathLine, useOriginA: js.UndefOr[scala.Nothing], useOriginB: Boolean): IPoint = js.native
   def converge(lineA: IPathLine, lineB: IPathLine, useOriginA: Boolean): IPoint = js.native
   def converge(lineA: IPathLine, lineB: IPathLine, useOriginA: Boolean, useOriginB: Boolean): IPoint = js.native
+  
   /**
     * Distort a path - scale x and y individually.
     *
@@ -59,6 +64,7 @@ object path extends js.Object {
     * @returns A new IModel (for circles and arcs) or IPath (for lines and bezier seeds).
     */
   def distort(pathToDistort: IPath, scaleX: Double, scaleY: Double): IModel | IPath = js.native
+  
   /**
     * Adds a round corner to the outside angle between 2 lines. The lines must meet at one point.
     *
@@ -68,6 +74,7 @@ object path extends js.Object {
     */
   def dogbone(lineA: IPathLine, lineB: IPathLine, filletRadius: Double): IPathArc = js.native
   def dogbone(lineA: IPathLine, lineB: IPathLine, filletRadius: Double, options: IPointMatchOptions): IPathArc = js.native
+  
   /**
     * Expand path by creating a model which surrounds it.
     *
@@ -78,6 +85,7 @@ object path extends js.Object {
     */
   def expand(pathToExpand: IPath, expansion: Double): IModel = js.native
   def expand(pathToExpand: IPath, expansion: Double, isolateCaps: Boolean): IModel = js.native
+  
   /**
     * Adds a round corner to the inside angle between 2 paths. The paths must meet at one point.
     *
@@ -89,6 +97,7 @@ object path extends js.Object {
     */
   def fillet(pathA: IPath, pathB: IPath, filletRadius: Double): IPathArc = js.native
   def fillet(pathA: IPath, pathB: IPath, filletRadius: Double, options: IPointMatchOptions): IPathArc = js.native
+  
   /**
     * Find the point(s) where 2 paths intersect.
     *
@@ -99,6 +108,7 @@ object path extends js.Object {
     */
   def intersection(path1: IPath, path2: IPath): IPathIntersection = js.native
   def intersection(path1: IPath, path2: IPath, options: IPathIntersectionOptions): IPathIntersection = js.native
+  
   /**
     * Create a clone of a path, mirrored on either or both x and y axes.
     *
@@ -108,6 +118,7 @@ object path extends js.Object {
     * @returns Mirrored path.
     */
   def mirror(pathToMirror: IPath, mirrorX: Boolean, mirrorY: Boolean): IPath = js.native
+  
   /**
     * Move a path to an absolute point.
     *
@@ -116,6 +127,7 @@ object path extends js.Object {
     * @returns The original path (for cascading).
     */
   def move(pathToMove: IPath, origin: IPoint): IPath = js.native
+  
   /**
     * Move a path's origin by a relative amount.
     *
@@ -126,6 +138,7 @@ object path extends js.Object {
     */
   def moveRelative(pathToMove: IPath, delta: IPoint): IPath = js.native
   def moveRelative(pathToMove: IPath, delta: IPoint, subtract: Boolean): IPath = js.native
+  
   /**
     * Move some paths relatively during a task execution, then unmove them.
     *
@@ -134,6 +147,7 @@ object path extends js.Object {
     * @param task The function to call while the paths are temporarily moved.
     */
   def moveTemporary(pathsToMove: js.Array[IPath], deltas: js.Array[IPoint], task: js.Function): Unit = js.native
+  
   /**
     * Rotate a path.
     *
@@ -144,6 +158,7 @@ object path extends js.Object {
     */
   def rotate(pathToRotate: IPath, angleInDegrees: Double): IPath = js.native
   def rotate(pathToRotate: IPath, angleInDegrees: Double, rotationOrigin: IPoint): IPath = js.native
+  
   /**
     * Scale a path.
     *
@@ -152,6 +167,7 @@ object path extends js.Object {
     * @returns The original path (for cascading).
     */
   def scale(pathToScale: IPath, scaleValue: Double): IPath = js.native
+  
   /**
     * Represent an arc using straight lines.
     *
@@ -169,6 +185,7 @@ object path extends js.Object {
   def straighten(arc: IPathArc, bevel: Boolean, prefix: js.UndefOr[scala.Nothing], close: Boolean): IModel = js.native
   def straighten(arc: IPathArc, bevel: Boolean, prefix: String): IModel = js.native
   def straighten(arc: IPathArc, bevel: Boolean, prefix: String, close: Boolean): IModel = js.native
+  
   /**
     * Get key points (a minimal a number of points) along a path.
     *
@@ -178,6 +195,7 @@ object path extends js.Object {
     */
   def toKeyPoints(pathContext: IPath): js.Array[IPoint] = js.native
   def toKeyPoints(pathContext: IPath, maxArcFacet: Double): js.Array[IPoint] = js.native
+  
   /**
     * Get points along a path.
     *
@@ -186,6 +204,7 @@ object path extends js.Object {
     * @returns Array of points which are on the path spread at a uniform interval.
     */
   def toPoints(pathContext: IPath, numberOfPoints: Double): js.Array[IPoint] = js.native
+  
   /**
     * Move a path so its bounding box begins at [0, 0].
     *
@@ -193,4 +212,3 @@ object path extends js.Object {
     */
   def zero(pathToZero: IPath): IPath = js.native
 }
-

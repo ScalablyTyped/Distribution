@@ -6,7 +6,7 @@ import typings.openlayers.mod.ProjectionLike
 import typings.openlayers.mod.olx.source.TileWMSOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -26,6 +26,7 @@ import scala.scalajs.js.annotation._
   */
 class TileWMS () extends TileImage {
   def this(opt_options: TileWMSOptions) = this()
+  
   /**
     * Return the GetFeatureInfo URL for the passed coordinate, resolution, and
     * projection. Return `undefined` if the GetFeatureInfo URL cannot be
@@ -41,6 +42,7 @@ class TileWMS () extends TileImage {
     * @api stable
     */
   def getGetFeatureInfoUrl(coordinate: Coordinate_, resolution: Double, projection: ProjectionLike, params: GlobalObject): String = js.native
+  
   /**
     * Get the user-provided params, i.e. those passed to the constructor through
     * the "params" option, and possibly updated using the updateParams method.
@@ -48,6 +50,7 @@ class TileWMS () extends TileImage {
     * @api stable
     */
   def getParams(): GlobalObject = js.native
+  
   /**
     * Update the user-provided params.
     * @param params Params.
@@ -55,4 +58,3 @@ class TileWMS () extends TileImage {
     */
   def updateParams(params: GlobalObject): Unit = js.native
 }
-

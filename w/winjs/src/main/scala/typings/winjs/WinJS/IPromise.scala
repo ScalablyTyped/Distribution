@@ -2,11 +2,13 @@ package typings.winjs.WinJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IPromise[T] extends js.Object {
+  
   def cancel(): Unit = js.native
+  
   def done[U](): Unit = js.native
   def done[U](
     onComplete: js.UndefOr[scala.Nothing],
@@ -31,6 +33,7 @@ trait IPromise[T] extends js.Object {
     onError: js.Function1[/* error */ js.Any, _],
     onProgress: js.Function1[/* progress */ js.Any, Unit]
   ): Unit = js.native
+  
   def `then`[U](): IPromise[U] = js.native
   def `then`[U](
     onComplete: js.UndefOr[scala.Nothing],
@@ -62,4 +65,3 @@ trait IPromise[T] extends js.Object {
     onProgress: js.Function1[/* progress */ js.Any, Unit]
   ): IPromise[U] = js.native
 }
-

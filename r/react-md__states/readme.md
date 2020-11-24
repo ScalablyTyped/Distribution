@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__states
 
-Typings are for version 2.1.2
+Typings are for version 2.4.2
 
 ## Library description:
 A package for adding the different focus, hover, selected, active, etc states to elements
@@ -10,9 +10,9 @@ A package for adding the different focus, hover, selected, active, etc states to
 | ------------------ | :-------------: |
 | Full name          | @react-md/states |
 | Keywords           | accessibility, a11y, react-md, keyboard, focus, selection |
-| # releases         | 23 |
+| # releases         | 36 |
 | # dependents       | 11 |
-| # downloads        | 6005 |
+| # downloads        | 15215 |
 | # stars            | 0 |
 
 ## Links

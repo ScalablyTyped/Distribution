@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.ioredis.anon.TypeofCommand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RedisStatic
@@ -24,8 +24,7 @@ trait RedisStatic
       /* options */ RedisOptions, 
       Redis
     ] {
-  var Cluster: ClusterStatic = js.native
-  var Command: TypeofCommand = js.native
+  
   def apply(): Redis = js.native
   def apply(host: js.UndefOr[scala.Nothing], options: RedisOptions): Redis = js.native
   def apply(host: String): Redis = js.native
@@ -38,5 +37,8 @@ trait RedisStatic
   def apply(port: Double, host: js.UndefOr[scala.Nothing], options: RedisOptions): Redis = js.native
   def apply(port: Double, host: String): Redis = js.native
   def apply(port: Double, host: String, options: RedisOptions): Redis = js.native
+  
+  var Cluster: ClusterStatic = js.native
+  
+  var Command: TypeofCommand = js.native
 }
-

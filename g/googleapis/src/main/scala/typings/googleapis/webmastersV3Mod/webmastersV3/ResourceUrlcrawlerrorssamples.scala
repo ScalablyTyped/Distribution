@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/webmasters/v3", "webmasters_v3.Resource$Urlcrawlerrorssamples")
 @js.native
 class ResourceUrlcrawlerrorssamples protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * webmasters.urlcrawlerrorssamples.get
     * @desc Retrieves details about crawl errors for a site's sample URL.
@@ -47,6 +49,7 @@ class ResourceUrlcrawlerrorssamples protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUrlCrawlErrorsSample]
   ): Unit = js.native
+  
   /**
     * webmasters.urlcrawlerrorssamples.list
     * @desc Lists a site's sample URLs for the specified crawl error category
@@ -81,6 +84,7 @@ class ResourceUrlcrawlerrorssamples protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaUrlCrawlErrorsSamplesListResponse]
   ): Unit = js.native
+  
   /**
     * webmasters.urlcrawlerrorssamples.markAsFixed
     * @desc Marks the provided site's sample URL as fixed, and removes it from
@@ -114,4 +118,3 @@ class ResourceUrlcrawlerrorssamples protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

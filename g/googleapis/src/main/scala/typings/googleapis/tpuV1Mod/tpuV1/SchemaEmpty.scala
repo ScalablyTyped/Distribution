@@ -2,7 +2,7 @@ package typings.googleapis.tpuV1Mod.tpuV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A generic empty message that you can re-use to avoid defining duplicated
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaEmpty extends js.Object
-

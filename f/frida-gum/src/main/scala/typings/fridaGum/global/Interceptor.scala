@@ -5,7 +5,7 @@ import typings.fridaGum.InvocationListenerCallbacks
 import typings.fridaGum.NativePointerValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Intercepts execution through inline hooking.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Interceptor")
 @js.native
 object Interceptor extends js.Object {
+  
   def attach(target: NativePointerValue, callbacksOrProbe: InstructionProbeCallback): typings.fridaGum.InvocationListener = js.native
   def attach(target: NativePointerValue, callbacksOrProbe: InstructionProbeCallback, data: NativePointerValue): typings.fridaGum.InvocationListener = js.native
   /**
@@ -31,14 +32,17 @@ object Interceptor extends js.Object {
     callbacksOrProbe: InvocationListenerCallbacks,
     data: NativePointerValue
   ): typings.fridaGum.InvocationListener = js.native
+  
   /**
     * Detaches all previously attached listeners.
     */
   def detachAll(): Unit = js.native
+  
   /**
     * Ensure any pending changes have been committed to memory.
     */
   def flush(): Unit = js.native
+  
   /**
     * Replaces function at `target` with implementation at `replacement`.
     *
@@ -52,9 +56,9 @@ object Interceptor extends js.Object {
     */
   def replace(target: NativePointerValue, replacement: NativePointerValue): Unit = js.native
   def replace(target: NativePointerValue, replacement: NativePointerValue, data: NativePointerValue): Unit = js.native
+  
   /**
     * Reverts the previously replaced function at `target`.
     */
   def revert(target: NativePointerValue): Unit = js.native
 }
-

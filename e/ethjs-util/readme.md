@@ -12,7 +12,7 @@ A simple set of Ethereum JS utilties.
 | Keywords           | ethereum, rpc, formatter, format, ethereum, encoding, decoding |
 | # releases         | 0 |
 | # dependents       | 61 |
-| # downloads        | 4305843 |
+| # downloads        | 4374050 |
 | # stars            | 0 |
 
 ## Links

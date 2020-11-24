@@ -3,7 +3,7 @@ package typings.chrome.global.chrome
 import typings.chrome.chrome.types.ChromeSetting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Accessibility Features
@@ -17,18 +17,30 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.accessibilityFeatures")
 @js.native
 object accessibilityFeatures extends js.Object {
+  
   var animationPolicy: ChromeSetting = js.native
+  
   var autoclick: ChromeSetting = js.native
+  
   var caretHighlight: ChromeSetting = js.native
+  
   var cursorHighlight: ChromeSetting = js.native
+  
   var focusHighlight: ChromeSetting = js.native
+  
   var highContrast: ChromeSetting = js.native
+  
   var largeCursor: ChromeSetting = js.native
+  
   var screenMagnifier: ChromeSetting = js.native
+  
   var selectToSpeak: ChromeSetting = js.native
+  
   var spokenFeedback: ChromeSetting = js.native
+  
   var stickyKeys: ChromeSetting = js.native
+  
   var switchAccess: ChromeSetting = js.native
+  
   var virtualKeyboard: ChromeSetting = js.native
 }
-

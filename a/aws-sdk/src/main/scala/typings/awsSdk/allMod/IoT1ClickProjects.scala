@@ -4,7 +4,7 @@ import typings.awsSdk.iot1clickprojectsMod.ClientConfiguration
 import typings.awsSdk.iot1clickprojectsMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "IoT1ClickProjects")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class IoT1ClickProjects () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

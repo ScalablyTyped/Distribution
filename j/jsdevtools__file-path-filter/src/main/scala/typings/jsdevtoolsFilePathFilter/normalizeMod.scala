@@ -6,11 +6,11 @@ import typings.jsdevtoolsFilePathFilter.typesMod.Filters
 import typings.jsdevtoolsFilePathFilter.typesMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jsdevtools/file-path-filter/lib/normalize", JSImport.Namespace)
 @js.native
 object normalizeMod extends js.Object {
+  
   def normalize(criteria: AnyFilter, opts: Options): Filters[js.Array[FilterFunction]] = js.native
 }
-

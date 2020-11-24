@@ -6,11 +6,11 @@ import typings.d3Selection.mod.Selection_
 import typings.d3Transition.mod.Transition_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Nvd3Element extends js.Object {
-  var dispatch: Dispatch_[js.Object] = js.native
+  
   def apply(
     selection: Selection_[
       _ | js.Array[_], 
@@ -29,7 +29,10 @@ trait Nvd3Element extends js.Object {
     ],
     args: js.Any*
   ): js.Any = js.native
+  
+  var dispatch: Dispatch_[js.Object] = js.native
+  
   def options(options: js.Any): this.type = js.native
+  
   def update(): Unit = js.native
 }
-

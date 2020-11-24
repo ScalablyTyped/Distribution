@@ -5,11 +5,12 @@ import typings.node.httpMod.ServerResponse
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("raven", "errorHandler")
 @js.native
 object errorHandler extends js.Object {
+  
   def apply(): js.Function4[
     /* e */ Error, 
     /* req */ IncomingMessage, 
@@ -18,4 +19,3 @@ object errorHandler extends js.Object {
     Unit
   ] = js.native
 }
-

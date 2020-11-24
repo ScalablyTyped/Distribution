@@ -10,7 +10,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/storage/v1alpha1/volumeAttachmentList", "VolumeAttachmentList")
 @js.native
@@ -26,28 +26,32 @@ class VolumeAttachmentList protected () extends CustomResource {
   def this(name: String, args: VolumeAttachmentListArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: VolumeAttachmentListArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: Output_[storageDotk8sDotioSlashv1alpha1] = js.native
+  
   /**
     * Items is the list of VolumeAttachments
     */
   val items: Output_[js.Array[VolumeAttachment]] = js.native
+  
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.VolumeAttachmentList] = js.native
+  
   /**
     * Standard list metadata More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: Output_[ListMeta] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/storage/v1alpha1/volumeAttachmentList", "VolumeAttachmentList")
 @js.native
 object VolumeAttachmentList extends js.Object {
+  
   /**
     * Get an existing VolumeAttachmentList resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -58,10 +62,10 @@ object VolumeAttachmentList extends js.Object {
     */
   def get(name: String, id: Input[ID]): VolumeAttachmentList = js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): VolumeAttachmentList = js.native
+  
   /**
     * Returns true if the given object is an instance of VolumeAttachmentList.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1alpha1/volumeAttachmentList.VolumeAttachmentList */ Boolean = js.native
 }
-

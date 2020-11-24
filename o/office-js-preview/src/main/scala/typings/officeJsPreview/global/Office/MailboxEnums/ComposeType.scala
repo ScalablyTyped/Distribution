@@ -2,7 +2,7 @@ package typings.officeJsPreview.global.Office.MailboxEnums
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Compose type.
@@ -18,10 +18,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Office.MailboxEnums.ComposeType")
 @js.native
 object ComposeType extends js.Object {
-  /* "forward" */ val Forward: typings.officeJsPreview.Office.MailboxEnums.ComposeType.Forward with String = js.native
-  /* "newMail" */ val NewMail: typings.officeJsPreview.Office.MailboxEnums.ComposeType.NewMail with String = js.native
-  /* "reply" */ val Reply: typings.officeJsPreview.Office.MailboxEnums.ComposeType.Reply with String = js.native
+  
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.Office.MailboxEnums.ComposeType with String] = js.native
+  
+  /* "forward" */ val Forward: typings.officeJsPreview.Office.MailboxEnums.ComposeType.Forward with String = js.native
+  
+  /* "newMail" */ val NewMail: typings.officeJsPreview.Office.MailboxEnums.ComposeType.NewMail with String = js.native
+  
+  /* "reply" */ val Reply: typings.officeJsPreview.Office.MailboxEnums.ComposeType.Reply with String = js.native
 }
-

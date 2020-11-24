@@ -2,11 +2,12 @@ package typings.validator
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("validator/lib/isRgbColor", JSImport.Namespace)
 @js.native
 object isRgbColorMod extends js.Object {
+  
   /**
     * Check if the string is a rgb or rgba color.
     *
@@ -15,4 +16,3 @@ object isRgbColorMod extends js.Object {
   def default(str: String): Boolean = js.native
   def default(str: String, includePercentValues: Boolean): Boolean = js.native
 }
-

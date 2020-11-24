@@ -4,7 +4,7 @@ import typings.awsSdk.cloudfrontMod.ClientConfiguration
 import typings.awsSdk.cloudfrontMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/browser_default", "CloudFront")
 @js.native
@@ -14,10 +14,10 @@ import scala.scalajs.js.annotation._
 class CloudFront () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-
 @JSImport("aws-sdk/clients/browser_default", "CloudFront")
 @js.native
 object CloudFront extends js.Object {
+  
   @js.native
   class Signer protected ()
     extends typings.awsSdk.cloudfrontMod.Signer {
@@ -29,6 +29,4 @@ object CloudFront extends js.Object {
       */
     def this(keyPairId: String, privateKey: String) = this()
   }
-  
 }
-

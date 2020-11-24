@@ -6,11 +6,11 @@ import typings.consul.mod.Health.ServiceOptions
 import typings.consul.mod.Health.StateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Health_ extends js.Object {
-  var consul: Consul = js.native
+  
   /**
     * Returns the checks of a service
     */
@@ -27,6 +27,9 @@ trait Health_ extends js.Object {
     * Returns the checks of a service
     */
   def checks[TData](service: String, callback: Callback[TData]): Unit = js.native
+  
+  var consul: Consul = js.native
+  
   /**
     * Returns the health info of a node
     */
@@ -43,6 +46,7 @@ trait Health_ extends js.Object {
     * Returns the health info of a node
     */
   def node[TData](opts: NodeOptions, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Returns the nodes and health info of a service
     */
@@ -59,6 +63,7 @@ trait Health_ extends js.Object {
     * Returns the nodes and health info of a service
     */
   def service[TData](service: String, callback: Callback[TData]): Unit = js.native
+  
   /**
     * Returns the checks in a given state
     */
@@ -76,4 +81,3 @@ trait Health_ extends js.Object {
     */
   def state[TData](state: String, callback: Callback[TData]): Unit = js.native
 }
-

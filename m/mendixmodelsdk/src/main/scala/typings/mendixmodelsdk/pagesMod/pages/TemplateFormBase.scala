@@ -1,13 +1,12 @@
 package typings.mendixmodelsdk.pagesMod.pages
 
-import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.projectsMod.projects.FolderBase
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * In version 7.7.0: introduced
@@ -32,39 +31,41 @@ abstract class TemplateFormBase protected () extends FormBase {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
-  /**
-    * In version 7.17.0: added public
-    */
-  @JSName("displayName")
-  val displayName_FTemplateFormBase: String = js.native
-  /**
-    * In version 7.17.0: introduced
-    */
-  @JSName("documentationUrl")
-  val documentationUrl_FTemplateFormBase: String = js.native
-  @JSName("model")
-  var model_FTemplateFormBase: IModel = js.native
+  
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MTemplateFormBase: FolderBase = js.native
+  
   /**
     * In version 7.17.0: added public
     */
   def displayName: String = js.native
   def displayName_=(newValue: String): Unit = js.native
   /**
+    * In version 7.17.0: added public
+    */
+  @JSName("displayName")
+  val displayName_FTemplateFormBase: String = js.native
+  
+  /**
     * In version 7.17.0: introduced
     */
   def documentationUrl: String = js.native
   def documentationUrl_=(newValue: String): Unit = js.native
+  /**
+    * In version 7.17.0: introduced
+    */
+  @JSName("documentationUrl")
+  val documentationUrl_FTemplateFormBase: String = js.native
+  
   def imageData: String | Null = js.native
   def imageData_=(newValue: String | Null): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateFormBase")
 @js.native
 object TemplateFormBase extends js.Object {
+  
   var structureTypeName: String = js.native
+  
   var versionInfo: StructureVersionInfo = js.native
 }
-

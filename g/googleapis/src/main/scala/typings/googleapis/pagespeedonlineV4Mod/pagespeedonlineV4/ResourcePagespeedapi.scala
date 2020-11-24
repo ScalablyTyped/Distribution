@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/pagespeedonline/v4", "pagespeedonline_v4.Resource$Pagespeedapi")
 @js.native
 class ResourcePagespeedapi protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * pagespeedonline.pagespeedapi.runpagespeed
     * @desc Runs PageSpeed analysis on the page at the specified URL, and
@@ -55,4 +57,3 @@ class ResourcePagespeedapi protected () extends js.Object {
     callback: BodyResponseCallback[SchemaPagespeedApiPagespeedResponseV4]
   ): Unit = js.native
 }
-

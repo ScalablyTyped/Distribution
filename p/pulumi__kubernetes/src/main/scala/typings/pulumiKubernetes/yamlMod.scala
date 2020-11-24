@@ -9,11 +9,15 @@ import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/yaml", JSImport.Namespace)
 @js.native
 object yamlMod extends js.Object {
+  
+  def parse(config: ConfigGroupOpts): Output_[StringDictionary[CustomResource]] = js.native
+  def parse(config: ConfigGroupOpts, opts: CustomResourceOptions): Output_[StringDictionary[CustomResource]] = js.native
+  
   @js.native
   abstract class CollectionComponentResource protected ()
     extends typings.pulumiKubernetes.yamlYamlMod.CollectionComponentResource {
@@ -50,8 +54,4 @@ object yamlMod extends js.Object {
     def this(name: String, config: ConfigGroupOpts) = this()
     def this(name: String, config: ConfigGroupOpts, opts: ComponentResourceOptions) = this()
   }
-  
-  def parse(config: ConfigGroupOpts): Output_[StringDictionary[CustomResource]] = js.native
-  def parse(config: ConfigGroupOpts, opts: CustomResourceOptions): Output_[StringDictionary[CustomResource]] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.behavior3.b3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Wait a few seconds.
@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Wait extends BaseNode
-
 object Wait {
+  
   @scala.inline
   def apply(
     _close: Tick => Unit,
@@ -30,4 +30,3 @@ object Wait {
     __obj.asInstanceOf[Wait]
   }
 }
-

@@ -6,11 +6,12 @@ import typings.rxjs.typesMod.OperatorFunction
 import typings.rxjs.typesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/merge", JSImport.Namespace)
 @js.native
 object operatorsMergeMod extends js.Object {
+  
   def merge[T](): MonoTypeOperatorFunction[T] = js.native
   def merge[T](concurrent: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def merge[T](concurrent: Double): MonoTypeOperatorFunction[T] = js.native
@@ -134,4 +135,3 @@ object operatorsMergeMod extends js.Object {
   @JSName("merge")
   def merge_TT2_OperatorFunction[T, T2](v2: ObservableInput[T2], scheduler: SchedulerLike): OperatorFunction[T, T | T2] = js.native
 }
-

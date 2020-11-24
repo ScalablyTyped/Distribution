@@ -7,7 +7,7 @@ import typings.mocha.mochaStrings.test
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Initialize a new `Test` with the given `title` and callback `fn`.
@@ -16,9 +16,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Test extends Runnable {
+  
    // added by reporters
   var err: js.UndefOr[Error] = js.native
+  
   var speed: js.UndefOr[slow | medium | fast] = js.native
+  
   var `type`: test = js.native
 }
-

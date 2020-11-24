@@ -6,7 +6,7 @@ import typings.webBluetooth.webBluetoothStrings.advertisementreceived
 import typings.webBluetooth.webBluetoothStrings.gattserverdisconnected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BluetoothDevice
@@ -14,11 +14,7 @@ trait BluetoothDevice
      with BluetoothDeviceEventHandlers
      with CharacteristicEventHandlers
      with ServiceEventHandlers {
-  val gatt: js.UndefOr[BluetoothRemoteGATTServer] = js.native
-  val id: String = js.native
-  val name: js.UndefOr[String] = js.native
-  val uuids: js.UndefOr[js.Array[String]] = js.native
-  val watchingAdvertisements: Boolean = js.native
+  
   @JSName("addEventListener")
   def addEventListener_advertisementreceived(`type`: advertisementreceived, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
@@ -38,7 +34,18 @@ trait BluetoothDevice
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  val gatt: js.UndefOr[BluetoothRemoteGATTServer] = js.native
+  
+  val id: String = js.native
+  
+  val name: js.UndefOr[String] = js.native
+  
   def unwatchAdvertisements(): Unit = js.native
+  
+  val uuids: js.UndefOr[js.Array[String]] = js.native
+  
   def watchAdvertisements(): js.Promise[Unit] = js.native
+  
+  val watchingAdvertisements: Boolean = js.native
 }
-

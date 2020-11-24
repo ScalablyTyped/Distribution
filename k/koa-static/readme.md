@@ -10,9 +10,9 @@ Static file serving middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-static |
 | Keywords           | koa, middleware, file, static, sendfile |
-| # releases         | 4 |
-| # dependents       | 1224 |
-| # downloads        | 6536468 |
+| # releases         | 1 |
+| # dependents       | 1441 |
+| # downloads        | 8785768 |
 | # stars            | 32 |
 
 ## Links

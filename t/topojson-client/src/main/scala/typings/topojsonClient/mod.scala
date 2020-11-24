@@ -17,12 +17,14 @@ import typings.topojsonSpecification.mod.Topology
 import typings.topojsonSpecification.mod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("topojson-client", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def bbox(topology: Topology[Objects[Properties]]): BBox = js.native
+  
   def feature[P](topology: Topology[Objects[Properties]], `object`: GeometryCollection[P]): FeatureCollection[GeometryObject, P] = js.native
   def feature[P](
     topology: Topology[Objects[Properties]],
@@ -34,14 +36,17 @@ object mod extends js.Object {
   def feature[P](topology: Topology[Objects[Properties]], `object`: MultiPolygon[P]): Feature[typings.geojson.mod.MultiPolygon, P] = js.native
   def feature[P](topology: Topology[Objects[Properties]], `object`: Point[P]): Feature[typings.geojson.mod.Point, P] = js.native
   def feature[P](topology: Topology[Objects[Properties]], `object`: Polygon[P]): Feature[typings.geojson.mod.Polygon, P] = js.native
+  
   def merge(
     topology: Topology[Objects[Properties]],
     objects: js.Array[Polygon[js.Object] | MultiPolygon[js.Object]]
   ): typings.geojson.mod.MultiPolygon = js.native
+  
   def mergeArcs(
     topology: Topology[Objects[Properties]],
     objects: js.Array[Polygon[js.Object] | MultiPolygon[js.Object]]
   ): MultiPolygon[js.Object] = js.native
+  
   def mesh(topology: Topology[Objects[Properties]]): typings.geojson.mod.MultiLineString = js.native
   def mesh(
     topology: Topology[Objects[Properties]],
@@ -65,6 +70,7 @@ object mod extends js.Object {
       Boolean
     ]
   ): typings.geojson.mod.MultiLineString = js.native
+  
   def meshArcs(topology: Topology[Objects[Properties]]): MultiLineString[js.Object] = js.native
   def meshArcs(
     topology: Topology[Objects[Properties]],
@@ -88,13 +94,17 @@ object mod extends js.Object {
       Boolean
     ]
   ): MultiLineString[js.Object] = js.native
+  
   def neighbors(objects: js.Array[typings.topojsonSpecification.mod.GeometryObject[js.Object]]): js.Array[js.Array[Double]] = js.native
+  
   def quantize[T /* <: Objects[js.Object] */](topology: Topology[T], transform: Double): Topology[T] = js.native
   def quantize[T /* <: Objects[js.Object] */](topology: Topology[T], transform: Transform): Topology[T] = js.native
+  
   def transform(): Transformer = js.native
   def transform(transform: Transform): Transformer = js.native
+  
   def untransform(): Transformer = js.native
   def untransform(transform: Transform): Transformer = js.native
+  
   type Transformer = js.Function2[/* point */ js.Array[Double], /* index */ js.UndefOr[Boolean], js.Array[Double]]
 }
-

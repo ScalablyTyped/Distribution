@@ -12,7 +12,7 @@ Binds a function to a specified context and arguments
 | Keywords           | bind, ponyfill, polyfill |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 771 |
+| # downloads        | 436 |
 | # stars            | 0 |
 
 ## Links

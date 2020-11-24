@@ -3,19 +3,14 @@ package typings.winjs.WinJS.UI
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides backwards navigation in the form of a button.
   **/
 @js.native
 trait BackButton extends js.Object {
-  //#endregion Methods
-  //#region Properties
-  /**
-    * Gets the HTML element that hosts this BackButton.
-    **/
-  var element: HTMLElement = js.native
+  
   //#endregion Constructors
   //#region Methods
   /**
@@ -26,6 +21,7 @@ trait BackButton extends js.Object {
     **/
   def addEventListener(eventName: String, eventHandler: js.Function): Unit = js.native
   def addEventListener(eventName: String, eventHandler: js.Function, useCapture: Boolean): Unit = js.native
+  
   /**
     * Raises an event of the specified type and with additional properties.
     * @param type The type (name) of the event.
@@ -33,14 +29,24 @@ trait BackButton extends js.Object {
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
   def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  
   /**
     * Releases resources held by this BackButton. Call this method when the BackButton is no longer needed. After calling this method, the BackButton becomes unusable.
     **/
   def dispose(): Unit = js.native
+  
+  //#endregion Methods
+  //#region Properties
+  /**
+    * Gets the HTML element that hosts this BackButton.
+    **/
+  var element: HTMLElement = js.native
+  
   /**
     * Checks the current navigation history and updates the value of the control's disabled attribute.
     **/
   def refresh(): Unit = js.native
+  
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param eventName The name of the event that the event handler is registered for.
@@ -50,4 +56,3 @@ trait BackButton extends js.Object {
   def removeEventListener(eventName: String, eventCallback: js.Function): Unit = js.native
   def removeEventListener(eventName: String, eventCallback: js.Function, useCapture: Boolean): Unit = js.native
 }
-

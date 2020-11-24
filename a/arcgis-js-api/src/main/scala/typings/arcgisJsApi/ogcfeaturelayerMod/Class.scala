@@ -4,7 +4,7 @@ import typings.arcgisJsApi.esri.OGCFeatureLayer
 import typings.arcgisJsApi.esri.OGCFeatureLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/layers/OGCFeatureLayer", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 class Class () extends OGCFeatureLayer {
   def this(properties: OGCFeatureLayerProperties) = this()
 }
-

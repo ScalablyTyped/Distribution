@@ -2,11 +2,12 @@ package typings.wordpressApiFetch.mod.Schema
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/api-fetch", "Schema.EmbedKeys")
 @js.native
 object EmbedKeys extends js.Object {
+  
   // prettier-ignore
   /* Rewritten from type alias, can be one of: 
     - typings.wordpressApiFetch.wordpressApiFetchStrings._embedded
@@ -176,6 +177,4 @@ object EmbedKeys extends js.Object {
   */
   trait User
     extends typings.wordpressApiFetch.mod.Schema.ViewKeys.User
-  
 }
-

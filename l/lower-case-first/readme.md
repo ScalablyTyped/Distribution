@@ -11,8 +11,8 @@ Transforms the string with only the first character in lower case
 | Full name          | lower-case-first |
 | Keywords           | lower, case, first, start, character |
 | # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 39877706 |
+| # dependents       | 12 |
+| # downloads        | 54722968 |
 | # stars            | 0 |
 
 ## Links

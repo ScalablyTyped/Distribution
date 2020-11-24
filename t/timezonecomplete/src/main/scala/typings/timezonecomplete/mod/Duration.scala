@@ -2,7 +2,7 @@ package typings.timezonecomplete.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("timezonecomplete", "Duration")
 @js.native
@@ -29,11 +29,11 @@ class Duration ()
   def this(s: String) = this()
   def this(amount: Double, unit: typings.timezonecomplete.basicsMod.TimeUnit) = this()
 }
-
 /* static members */
 @JSImport("timezonecomplete", "Duration")
 @js.native
 object Duration extends js.Object {
+  
   /**
     * Construct a time duration
     * @param amount Number of days (may be fractional or negative)
@@ -41,6 +41,7 @@ object Duration extends js.Object {
     * @throws timezonecomplete.Argument.Amount if n is not a finite number
     */
   def days(amount: Double): typings.timezonecomplete.durationMod.Duration = js.native
+  
   /**
     * Construct a time duration
     * @param amount Number of hours (may be fractional or negative)
@@ -48,6 +49,7 @@ object Duration extends js.Object {
     * @throws timezonecomplete.Argument.Amount if n is not a finite number
     */
   def hours(amount: Double): typings.timezonecomplete.durationMod.Duration = js.native
+  
   /**
     * Construct a time duration
     * @param amount Number of milliseconds (may be fractional or negative)
@@ -55,6 +57,7 @@ object Duration extends js.Object {
     * @throws timezonecomplete.Argument.Amount if n is not a finite number
     */
   def milliseconds(amount: Double): typings.timezonecomplete.durationMod.Duration = js.native
+  
   /**
     * Construct a time duration
     * @param amount Number of minutes (may be fractional or negative)
@@ -62,6 +65,7 @@ object Duration extends js.Object {
     * @throws timezonecomplete.Argument.Amount if n is not a finite number
     */
   def minutes(amount: Double): typings.timezonecomplete.durationMod.Duration = js.native
+  
   /**
     * Construct a time duration
     * @param amount Number of months (may be fractional or negative)
@@ -69,6 +73,7 @@ object Duration extends js.Object {
     * @throws timezonecomplete.Argument.Amount if n is not a finite number
     */
   def months(amount: Double): typings.timezonecomplete.durationMod.Duration = js.native
+  
   /**
     * Construct a time duration
     * @param amount Number of seconds (may be fractional or negative)
@@ -76,6 +81,7 @@ object Duration extends js.Object {
     * @throws timezonecomplete.Argument.Amount if n is not a finite number
     */
   def seconds(amount: Double): typings.timezonecomplete.durationMod.Duration = js.native
+  
   /**
     * Construct a time duration
     * @param amount Number of years (may be fractional or negative)
@@ -84,4 +90,3 @@ object Duration extends js.Object {
     */
   def years(amount: Double): typings.timezonecomplete.durationMod.Duration = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.meteorRoles.mod.Roles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/alanning:roles", "Roles.addUsersToRoles")
 @js.native
 object addUsersToRoles extends js.Object {
+  
   /**
     * Add users to roles. Will create roles as needed.
     *
@@ -51,4 +52,3 @@ object addUsersToRoles extends js.Object {
   def apply(user: js.Object, roles: js.Array[String]): Unit = js.native
   def apply(user: js.Object, roles: js.Array[String], group: String): Unit = js.native
 }
-

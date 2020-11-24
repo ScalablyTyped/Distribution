@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Teamdrives")
 @js.native
 class ResourceTeamdrives protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * drive.teamdrives.delete
     * @desc Permanently deletes a Team Drive for which the user is an
@@ -42,6 +44,7 @@ class ResourceTeamdrives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * drive.teamdrives.get
     * @desc Gets a Team Drive's metadata by ID.
@@ -71,6 +74,7 @@ class ResourceTeamdrives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTeamDrive]
   ): Unit = js.native
+  
   /**
     * drive.teamdrives.insert
     * @desc Creates a new Team Drive.
@@ -100,6 +104,7 @@ class ResourceTeamdrives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTeamDrive]
   ): Unit = js.native
+  
   /**
     * drive.teamdrives.list
     * @desc Lists the user's Team Drives.
@@ -131,6 +136,7 @@ class ResourceTeamdrives protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTeamDriveList]
   ): Unit = js.native
+  
   /**
     * drive.teamdrives.update
     * @desc Updates a Team Drive's metadata
@@ -162,4 +168,3 @@ class ResourceTeamdrives protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTeamDrive]
   ): Unit = js.native
 }
-

@@ -2,18 +2,21 @@ package typings.datatablesNet.DataTables
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AjaxMethodModel extends js.Object {
+  
   /**
     * Get the latest JSON data obtained from the last Ajax request DataTables made
     */
   def json(): js.Object = js.native
+  
   /**
     * Get the data submitted by DataTables to the server in the last Ajax request
     */
   def params(): js.Object = js.native
+  
   /**
     * Reload the table data from the Ajax data source.
     *
@@ -24,6 +27,7 @@ trait AjaxMethodModel extends js.Object {
   def reload(callback: js.UndefOr[scala.Nothing], resetPaging: Boolean): Api = js.native
   def reload(callback: js.Function1[/* json */ js.Any, Unit]): Api = js.native
   def reload(callback: js.Function1[/* json */ js.Any, Unit], resetPaging: Boolean): Api = js.native
+  
   /**
     * Reload the table data from the Ajax data source
     */
@@ -35,4 +39,3 @@ trait AjaxMethodModel extends js.Object {
     */
   def url(url: String): AjaxMethods = js.native
 }
-

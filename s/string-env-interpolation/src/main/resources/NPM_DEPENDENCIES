@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "string-env-interpolation" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "string-env-interpolation" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

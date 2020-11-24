@@ -9,20 +9,23 @@ import typings.chromeApps.chrome.events.Event
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofcertificateProvider extends js.Object {
+  
   /**
     * The types of errors that can be presented to the user through the requestPin function.
     * @enum
     */
   val PinRequestErrorType: INVALIDPIN = js.native
+  
   /**
     * The type of code being requested by the extension with requestPin function.
     * @enum
     */
   val PinRequestType: PIN = js.native
+  
   /**
     * This event fires every time the browser requests the current list of
     * certificates provided by this app. The app must call *reportCallback*
@@ -35,6 +38,7 @@ trait TypeofcertificateProvider extends js.Object {
       _
     ]
   ] = js.native
+  
   /**
     * This event fires every time the browser needs to sign
     * a message using a certificate provided by this app
@@ -52,6 +56,7 @@ trait TypeofcertificateProvider extends js.Object {
       _
     ]
   ] = js.native
+  
   /**
     * Requests the PIN from the user. Only one ongoing request at a time is
     * allowed. The requests issued while another flow is ongoing are rejected.
@@ -66,6 +71,7 @@ trait TypeofcertificateProvider extends js.Object {
     details: RequestPinDetails,
     callback: js.Function1[/* details */ js.UndefOr[PinResponseDetails], Unit]
   ): Unit = js.native
+  
   /**
     * @description Stops the pin request started by the *requestPin* function.
     * @param details Contains the details about the reason for stopping the request flow.
@@ -74,8 +80,8 @@ trait TypeofcertificateProvider extends js.Object {
     */
   def stopPinRequest(details: StopRequestPinDetails, callback: js.Function0[Unit]): Unit = js.native
 }
-
 object TypeofcertificateProvider {
+  
   @scala.inline
   def apply(
     PinRequestErrorType: INVALIDPIN,
@@ -100,21 +106,28 @@ object TypeofcertificateProvider {
     val __obj = js.Dynamic.literal(PinRequestErrorType = PinRequestErrorType.asInstanceOf[js.Any], PinRequestType = PinRequestType.asInstanceOf[js.Any], onCertificatesRequested = onCertificatesRequested.asInstanceOf[js.Any], onSignDigestRequested = onSignDigestRequested.asInstanceOf[js.Any], requestPin = js.Any.fromFunction2(requestPin), stopPinRequest = js.Any.fromFunction2(stopPinRequest))
     __obj.asInstanceOf[TypeofcertificateProvider]
   }
+  
   @scala.inline
   implicit class TypeofcertificateProviderOps[Self <: TypeofcertificateProvider] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setPinRequestErrorType(value: INVALIDPIN): Self = this.set("PinRequestErrorType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPinRequestType(value: PIN): Self = this.set("PinRequestType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOnCertificatesRequested(
       value: Event[
@@ -125,6 +138,7 @@ object TypeofcertificateProvider {
           ]
         ]
     ): Self = this.set("onCertificatesRequested", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOnSignDigestRequested(
       value: Event[
@@ -135,13 +149,13 @@ object TypeofcertificateProvider {
           ]
         ]
     ): Self = this.set("onSignDigestRequested", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRequestPin(
       value: (RequestPinDetails, js.Function1[/* details */ js.UndefOr[PinResponseDetails], Unit]) => Unit
     ): Self = this.set("requestPin", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setStopPinRequest(value: (StopRequestPinDetails, js.Function0[Unit]) => Unit): Self = this.set("stopPinRequest", js.Any.fromFunction2(value))
   }
-  
 }
-

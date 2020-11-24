@@ -1,18 +1,18 @@
 
 # Scala.js typings for testing-library__user-event
 
-Typings are for version 12.1.0
+Typings are for version 12.2.2
 
 ## Library description:
-Simulate user events for react-testing-library
+Fire events the same way the user does
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @testing-library/user-event |
 | Keywords           | react-testing-library, dom-testing-library, react, testing |
-| # releases         | 21 |
-| # dependents       | 140 |
-| # downloads        | 1212614 |
+| # releases         | 88 |
+| # dependents       | 1766 |
+| # downloads        | 26712019 |
 | # stars            | 0 |
 
 ## Links

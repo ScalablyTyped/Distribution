@@ -1,7 +1,7 @@
 
 # Scala.js typings for keycloak-js
 
-Typings are for version 11.0.0
+Typings are for version 11.0.3
 
 ## Library description:
 Keycloak Adapter
@@ -10,9 +10,9 @@ Keycloak Adapter
 | ------------------ | :-------------: |
 | Full name          | keycloak-js |
 | Keywords           | keycloak, sso, oauth, oauth2, authentication |
-| # releases         | 25 |
-| # dependents       | 64 |
-| # downloads        | 1540868 |
+| # releases         | 24 |
+| # dependents       | 76 |
+| # downloads        | 2839138 |
 | # stars            | 1 |
 
 ## Links

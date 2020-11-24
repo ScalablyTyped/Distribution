@@ -2,13 +2,14 @@ package typings.three.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "AmbientLight")
 @js.native
 /**
 	 * This creates a Ambientlight with a color.
 	 * @param color Numeric value of the RGB component of the color or a Color instance.
+	 * @param [intensity=1]
 	 */
 class AmbientLight ()
   extends typings.three.ambientLightMod.AmbientLight {
@@ -20,4 +21,3 @@ class AmbientLight ()
   def this(color: Double, intensity: Double) = this()
   def this(color: typings.three.colorMod.Color, intensity: Double) = this()
 }
-

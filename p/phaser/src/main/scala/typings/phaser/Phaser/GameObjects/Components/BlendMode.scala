@@ -3,7 +3,7 @@ package typings.phaser.Phaser.GameObjects.Components
 import typings.phaser.Phaser.BlendModes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods used for setting the blend mode of a Game Object.
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BlendMode extends js.Object {
+  
   /**
     * Sets the Blend Mode being used by this Game Object.
     * 
@@ -33,6 +34,7 @@ trait BlendMode extends js.Object {
     * are used.
     */
   var blendMode: BlendModes | String = js.native
+  
   /**
     * Sets the Blend Mode being used by this Game Object.
     * 
@@ -58,4 +60,3 @@ trait BlendMode extends js.Object {
   def setBlendMode(value: String): this.type = js.native
   def setBlendMode(value: BlendModes): this.type = js.native
 }
-

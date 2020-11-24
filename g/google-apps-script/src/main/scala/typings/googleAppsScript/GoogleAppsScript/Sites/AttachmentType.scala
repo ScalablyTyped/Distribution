@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Sites
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AttachmentType extends js.Object
-
 /**
   * A typesafe enum for sites attachment type.
   * A rebuilt
@@ -17,11 +16,10 @@ sealed trait AttachmentType extends js.Object
 @JSGlobal("GoogleAppsScript.Sites.AttachmentType")
 @js.native
 object AttachmentType extends js.Object {
+  
   @js.native
   sealed trait HOSTED extends AttachmentType
   
   @js.native
   sealed trait WEB extends AttachmentType
-  
 }
-

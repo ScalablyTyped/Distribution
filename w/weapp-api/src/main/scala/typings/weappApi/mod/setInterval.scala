@@ -2,11 +2,12 @@ package typings.weappApi.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("weapp-api", "setInterval")
 @js.native
 object setInterval extends js.Object {
+  
   /**
     * 设定一个定时器。按照指定的周期（以毫秒计）来执行注册的回调函数
     * @param callback
@@ -15,4 +16,3 @@ object setInterval extends js.Object {
     */
   def apply(callback: js.Any, delay: Double, rest: js.Any): Double = js.native
 }
-

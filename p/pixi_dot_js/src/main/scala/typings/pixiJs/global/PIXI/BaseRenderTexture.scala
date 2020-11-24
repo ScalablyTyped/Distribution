@@ -3,7 +3,7 @@ package typings.pixiJs.global.PIXI
 import typings.pixiJs.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A BaseRenderTexture is a special texture that allows any PixiJS display object to be rendered to it.
@@ -51,4 +51,3 @@ class BaseRenderTexture ()
   extends typings.pixiJs.PIXI.BaseRenderTexture {
   def this(options: Height) = this()
 }
-

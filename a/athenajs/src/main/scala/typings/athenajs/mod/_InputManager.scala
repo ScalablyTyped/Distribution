@@ -4,41 +4,39 @@ import typings.athenajs.anon.CTRL
 import typings.athenajs.anon.`32`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait _InputManager extends js.Object {
+  
   /**
     * A list of common keyCodes
     */
   var KEYS: CTRL = js.native
+  
   /**
     * List of common pad buttons
     */
   var PAD_BUTTONS: `32` = js.native
+  
   var axes: JSObject = js.native
+  
+  def clearEvents(): Unit = js.native
+  
   // virtual joystick instance
   var dPadJoystick: Null = js.native
+  
   var enabled: Boolean = js.native
+  
   var gamepadSupport: Boolean = js.native
-  var inputMode: String = js.native
-  var jPollInterval: Double = js.native
-  var keyCb: JSObject = js.native
-  var keyPressed: JSObject = js.native
-  var latches: JSObject = js.native
-  var newGamepadPollDelay: Double = js.native
-  /*recordedEvents: Array,*/
-  var pad: Null = js.native
-  var padPressed: JSObject = js.native
-  var playingEvents: Boolean = js.native
-  var playingPos: Double = js.native
-  var recording: Boolean = js.native
-  def clearEvents(): Unit = js.native
+  
   /**
     * Returns an object with the state of all keys
     */
   def getAllKeysStatus(): JSObject = js.native
+  
   def getKeyStatus(key: String, latch: Boolean): Boolean = js.native
+  
   /**
     * Initializes the InputManager with a reference to the game.
     *
@@ -47,15 +45,30 @@ trait _InputManager extends js.Object {
     *
     */
   def init(): Unit = js.native
+  
+  var inputMode: String = js.native
+  
   /**
     * Install callback that gets called when a key is pressed/released
     *
     */
   def installKeyCallback(key: String, event: String, callback: js.Function2[/* key */ String, /* event */ String, Unit]): Unit = js.native
+  
   def isKeyDown(key: String): Boolean = js.native
   def isKeyDown(key: String, latch: Boolean): Boolean = js.native
   def isKeyDown(key: Double): Boolean = js.native
   def isKeyDown(key: Double, latch: Boolean): Boolean = js.native
+  
+  var jPollInterval: Double = js.native
+  
+  var keyCb: JSObject = js.native
+  
+  var keyPressed: JSObject = js.native
+  
+  var latches: JSObject = js.native
+  
+  var newGamepadPollDelay: Double = js.native
+  
   /**
     * Sets next key states using recorded events
     *
@@ -63,11 +76,25 @@ trait _InputManager extends js.Object {
     * so that demo can be looped.
     */
   def nextRecordedEvents(): Unit = js.native
+  
+  /*recordedEvents: Array,*/
+  var pad: Null = js.native
+  
+  var padPressed: JSObject = js.native
+  
   /**
     * After events have been reccorded they can be played back using this method.
     */
   def playRecordedEvents(): Unit = js.native
+  
+  var playingEvents: Boolean = js.native
+  
+  var playingPos: Double = js.native
+  
+  var recording: Boolean = js.native
+  
   def removeKeyCallback(key: String, event: String, callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Saves current event state onto the recordedEvents stack
     */
@@ -76,13 +103,14 @@ trait _InputManager extends js.Object {
     *
     */
   def setInputMode(mode: String): Unit = js.native
+  
   /**
     * Starts recording input events. They are stored into `InputManager.recordedEvents`
     */
   def startRecordingEvents(): Unit = js.native
+  
   /**
     * Stops recording events.
     */
   def stopRecordingEvents(): Unit = js.native
 }
-

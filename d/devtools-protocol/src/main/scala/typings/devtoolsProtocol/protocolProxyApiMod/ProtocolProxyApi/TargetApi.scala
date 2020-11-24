@@ -37,44 +37,53 @@ import typings.devtoolsProtocol.mod.Protocol.Target.TargetDestroyedEvent
 import typings.devtoolsProtocol.mod.Protocol.Target.TargetInfoChangedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TargetApi extends js.Object {
+  
   /**
     * Activates (focuses) the target.
     */
   def activateTarget(params: ActivateTargetRequest): js.Promise[Unit] = js.native
+  
   /**
     * Attaches to the browser target, only uses flat sessionId mode.
     */
   def attachToBrowserTarget(): js.Promise[AttachToBrowserTargetResponse] = js.native
+  
   /**
     * Attaches to the target with given id.
     */
   def attachToTarget(params: AttachToTargetRequest): js.Promise[AttachToTargetResponse] = js.native
+  
   /**
     * Closes the target. If the target is a page that gets closed too.
     */
   def closeTarget(params: CloseTargetRequest): js.Promise[CloseTargetResponse] = js.native
+  
   /**
     * Creates a new empty BrowserContext. Similar to an incognito profile but you can have more than
     * one.
     */
   def createBrowserContext(params: CreateBrowserContextRequest): js.Promise[CreateBrowserContextResponse] = js.native
+  
   /**
     * Creates a new page.
     */
   def createTarget(params: CreateTargetRequest): js.Promise[CreateTargetResponse] = js.native
+  
   /**
     * Detaches session with given id.
     */
   def detachFromTarget(params: DetachFromTargetRequest): js.Promise[Unit] = js.native
+  
   /**
     * Deletes a BrowserContext. All the belonging pages will be closed without calling their
     * beforeunload hooks.
     */
   def disposeBrowserContext(params: DisposeBrowserContextRequest): js.Promise[Unit] = js.native
+  
   /**
     * Inject object to the target's main frame that provides a communication
     * channel with browser target.
@@ -86,18 +95,22 @@ trait TargetApi extends js.Object {
     * - `binding.onmessage = json => handleMessage(json)` - a callback that will be called for the protocol notifications and command responses.
     */
   def exposeDevToolsProtocol(params: ExposeDevToolsProtocolRequest): js.Promise[Unit] = js.native
+  
   /**
     * Returns all browser contexts created with `Target.createBrowserContext` method.
     */
   def getBrowserContexts(): js.Promise[GetBrowserContextsResponse] = js.native
+  
   /**
     * Returns information about a target.
     */
   def getTargetInfo(params: GetTargetInfoRequest): js.Promise[GetTargetInfoResponse] = js.native
+  
   /**
     * Retrieves a list of available targets.
     */
   def getTargets(): js.Promise[GetTargetsResponse] = js.native
+  
   /**
     * Issued when attached to target because of auto-attach or `attachToTarget` command.
     */
@@ -139,27 +152,30 @@ trait TargetApi extends js.Object {
     */
   @JSName("on")
   def on_targetInfoChanged(event: targetInfoChanged, listener: js.Function1[/* params */ TargetInfoChangedEvent, Unit]): Unit = js.native
+  
   /**
     * Sends protocol message over session with given id.
     * Consider using flat mode instead; see commands attachToTarget, setAutoAttach,
     * and crbug.com/991325.
     */
   def sendMessageToTarget(params: SendMessageToTargetRequest): js.Promise[Unit] = js.native
+  
   /**
     * Controls whether to automatically attach to new targets which are considered to be related to
     * this one. When turned on, attaches to all existing related targets as well. When turned off,
     * automatically detaches from all currently attached targets.
     */
   def setAutoAttach(params: SetAutoAttachRequest): js.Promise[Unit] = js.native
+  
   /**
     * Controls whether to discover available targets and notify via
     * `targetCreated/targetInfoChanged/targetDestroyed` events.
     */
   def setDiscoverTargets(params: SetDiscoverTargetsRequest): js.Promise[Unit] = js.native
+  
   /**
     * Enables target discovery for the specified locations, when `setDiscoverTargets` was set to
     * `true`.
     */
   def setRemoteLocations(params: SetRemoteLocationsRequest): js.Promise[Unit] = js.native
 }
-

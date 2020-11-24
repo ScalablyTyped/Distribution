@@ -2,14 +2,14 @@ package typings.sharepoint.CUI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DataQueryType extends js.Object
-
 @JSGlobal("CUI.DataQueryType")
 @js.native
 object DataQueryType extends js.Object {
+  
   @js.native
   sealed trait all extends DataQueryType
   
@@ -27,6 +27,4 @@ object DataQueryType extends js.Object {
   
   @js.native
   sealed trait root extends DataQueryType
-  
 }
-

@@ -10,9 +10,9 @@ Keccak sponge function family
 | ------------------ | :-------------: |
 | Full name          | keccak |
 | Keywords           | sha3, sha-3, keccak, shake |
-| # releases         | 4 |
-| # dependents       | 170 |
-| # downloads        | 4647238 |
+| # releases         | 5 |
+| # dependents       | 193 |
+| # downloads        | 6162506 |
 | # stars            | 2 |
 
 ## Links

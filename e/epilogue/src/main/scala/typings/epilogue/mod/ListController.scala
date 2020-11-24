@@ -35,16 +35,37 @@ import typings.sequelize.mod.DataTypeVirtual
 import typings.sequelize.mod.Sequelize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("epilogue", "ListController")
 @js.native
 class ListController () extends BaseController {
+  
   def _safeishParse(
     value: js.Any,
-    `type`: DataTypeAbstract | DataTypeString | DataTypeChar | DataTypeText | DataTypeNumber | DataTypeInteger | DataTypeBigInt | DataTypeFloat | DataTypeTime | DataTypeDate | DataTypeDateOnly | DataTypeBoolean | DataTypeNow | DataTypeBlob | DataTypeDecimal | DataTypeUUID | DataTypeUUIDv1 | DataTypeUUIDv4 | DataTypeHStore | DataTypeJSONType | DataTypeJSONB | DataTypeVirtual | DataTypeArray | DataTypeEnum | DataTypeRange | DataTypeReal | DataTypeDouble | DataTypeGeometry,
+    `type`: DataTypeAbstract | DataTypeBoolean | DataTypeDateOnly | DataTypeHStore | DataTypeJSONB | DataTypeJSONType | DataTypeNow | DataTypeTime,
     sequelize: Sequelize
   ): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeArray, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeBigInt, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeBlob, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeChar, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeDate, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeDecimal, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeDouble, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeEnum, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeFloat, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeGeometry, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeInteger, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeNumber, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeRange, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeReal, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeString, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeText, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeUUID, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeUUIDv1, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeUUIDv4, sequelize: Sequelize): js.Any = js.native
+  def _safeishParse(value: js.Any, `type`: DataTypeVirtual, sequelize: Sequelize): js.Any = js.native
+  
   def fetch(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], context: Context): js.Promise[js.Function0[Unit]] = js.native
 }
-

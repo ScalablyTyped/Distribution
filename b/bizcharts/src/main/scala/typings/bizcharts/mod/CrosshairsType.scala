@@ -2,7 +2,7 @@ package typings.bizcharts.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.bizcharts.bizchartsStrings.rect
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.bizcharts.bizchartsStrings.cross
 */
 trait CrosshairsType extends js.Object
-
 object CrosshairsType {
+  
   @scala.inline
   def cross: typings.bizcharts.bizchartsStrings.cross = "cross".asInstanceOf[typings.bizcharts.bizchartsStrings.cross]
+  
   @scala.inline
   def rect: typings.bizcharts.bizchartsStrings.rect = "rect".asInstanceOf[typings.bizcharts.bizchartsStrings.rect]
+  
   @scala.inline
   def x: typings.bizcharts.bizchartsStrings.x = "x".asInstanceOf[typings.bizcharts.bizchartsStrings.x]
+  
   @scala.inline
   def y: typings.bizcharts.bizchartsStrings.y = "y".asInstanceOf[typings.bizcharts.bizchartsStrings.y]
 }
-

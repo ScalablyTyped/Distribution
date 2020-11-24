@@ -10,15 +10,170 @@ import typings.intlMessageformat.formattersMod.Formats
 import typings.intlMessageformat.formattersMod.Formatters
 import typings.intlMessageformat.formattersMod.MessageFormatPart
 import typings.intlMessageformat.formattersMod.PrimitiveType
-import typings.intlMessageformatParser.mod.MessageFormatElement
+import typings.intlMessageformatParser.srcTypesMod.MessageFormatElement
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("intl-messageformat/lib", JSImport.Namespace)
 @js.native
 object libMod extends js.Object {
+  
+  def formatToParts[T](els: js.Array[MessageFormatElement], locales: String, formatters: Formatters, formats: Formats): js.Array[MessageFormatPart[T]] = js.native
+  def formatToParts[T](
+    els: js.Array[MessageFormatElement],
+    locales: String,
+    formatters: Formatters,
+    formats: Formats,
+    values: js.UndefOr[scala.Nothing],
+    currentPluralValue: js.UndefOr[scala.Nothing],
+    originalMessage: String
+  ): js.Array[MessageFormatPart[T]] = js.native
+  def formatToParts[T](
+    els: js.Array[MessageFormatElement],
+    locales: String,
+    formatters: Formatters,
+    formats: Formats,
+    values: js.UndefOr[scala.Nothing],
+    currentPluralValue: Double
+  ): js.Array[MessageFormatPart[T]] = js.native
+  def formatToParts[T](
+    els: js.Array[MessageFormatElement],
+    locales: String,
+    formatters: Formatters,
+    formats: Formats,
+    values: js.UndefOr[scala.Nothing],
+    currentPluralValue: Double,
+    originalMessage: String
+  ): js.Array[MessageFormatPart[T]] = js.native
+  def formatToParts[T](
+    els: js.Array[MessageFormatElement],
+    locales: String,
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[
+      String, 
+      PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
+    ]
+  ): js.Array[MessageFormatPart[T]] = js.native
+  def formatToParts[T](
+    els: js.Array[MessageFormatElement],
+    locales: String,
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[
+      String, 
+      PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
+    ],
+    currentPluralValue: js.UndefOr[scala.Nothing],
+    originalMessage: String
+  ): js.Array[MessageFormatPart[T]] = js.native
+  def formatToParts[T](
+    els: js.Array[MessageFormatElement],
+    locales: String,
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[
+      String, 
+      PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
+    ],
+    currentPluralValue: Double
+  ): js.Array[MessageFormatPart[T]] = js.native
+  def formatToParts[T](
+    els: js.Array[MessageFormatElement],
+    locales: String,
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[
+      String, 
+      PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
+    ],
+    currentPluralValue: Double,
+    originalMessage: String
+  ): js.Array[MessageFormatPart[T]] = js.native
+  def formatToParts[T](
+    els: js.Array[MessageFormatElement],
+    locales: js.Array[String],
+    formatters: Formatters,
+    formats: Formats
+  ): js.Array[MessageFormatPart[T]] = js.native
+  def formatToParts[T](
+    els: js.Array[MessageFormatElement],
+    locales: js.Array[String],
+    formatters: Formatters,
+    formats: Formats,
+    values: js.UndefOr[scala.Nothing],
+    currentPluralValue: js.UndefOr[scala.Nothing],
+    originalMessage: String
+  ): js.Array[MessageFormatPart[T]] = js.native
+  def formatToParts[T](
+    els: js.Array[MessageFormatElement],
+    locales: js.Array[String],
+    formatters: Formatters,
+    formats: Formats,
+    values: js.UndefOr[scala.Nothing],
+    currentPluralValue: Double
+  ): js.Array[MessageFormatPart[T]] = js.native
+  def formatToParts[T](
+    els: js.Array[MessageFormatElement],
+    locales: js.Array[String],
+    formatters: Formatters,
+    formats: Formats,
+    values: js.UndefOr[scala.Nothing],
+    currentPluralValue: Double,
+    originalMessage: String
+  ): js.Array[MessageFormatPart[T]] = js.native
+  def formatToParts[T](
+    els: js.Array[MessageFormatElement],
+    locales: js.Array[String],
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[
+      String, 
+      PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
+    ]
+  ): js.Array[MessageFormatPart[T]] = js.native
+  def formatToParts[T](
+    els: js.Array[MessageFormatElement],
+    locales: js.Array[String],
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[
+      String, 
+      PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
+    ],
+    currentPluralValue: js.UndefOr[scala.Nothing],
+    originalMessage: String
+  ): js.Array[MessageFormatPart[T]] = js.native
+  def formatToParts[T](
+    els: js.Array[MessageFormatElement],
+    locales: js.Array[String],
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[
+      String, 
+      PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
+    ],
+    currentPluralValue: Double
+  ): js.Array[MessageFormatPart[T]] = js.native
+  def formatToParts[T](
+    els: js.Array[MessageFormatElement],
+    locales: js.Array[String],
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[
+      String, 
+      PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
+    ],
+    currentPluralValue: Double,
+    originalMessage: String
+  ): js.Array[MessageFormatPart[T]] = js.native
+  
+  def isFormatXMLElementFn[T](el: T): /* is intl-messageformat.intl-messageformat/lib/src/formatters.FormatXMLElementFn<T, string | T | std.Array<string | T>> */ Boolean = js.native
+  def isFormatXMLElementFn[T](el: FormatXMLElementFn[T, String | T | (js.Array[String | T])]): /* is intl-messageformat.intl-messageformat/lib/src/formatters.FormatXMLElementFn<T, string | T | std.Array<string | T>> */ Boolean = js.native
+  def isFormatXMLElementFn[T](el: PrimitiveType): /* is intl-messageformat.intl-messageformat/lib/src/formatters.FormatXMLElementFn<T, string | T | std.Array<string | T>> */ Boolean = js.native
+  
   @js.native
   class FormatError protected ()
     extends typings.intlMessageformat.errorMod.FormatError {
@@ -106,6 +261,18 @@ object libMod extends js.Object {
       overrideFormats: PartialFormats,
       opts: Options
     ) = this()
+  }
+  /* static members */
+  @js.native
+  object IntlMessageFormat extends js.Object {
+    
+    var __parse: js.UndefOr[FnCall] = js.native
+    
+    def defaultLocale: String = js.native
+    
+    var formats: Date = js.native
+    
+    var memoizedDefaultLocale: js.Any = js.native
   }
   
   @js.native
@@ -210,176 +377,16 @@ object libMod extends js.Object {
       opts: Options
     ) = this()
   }
-  
-  def formatToParts[T](els: js.Array[MessageFormatElement], locales: String, formatters: Formatters, formats: Formats): js.Array[MessageFormatPart[T]] = js.native
-  def formatToParts[T](
-    els: js.Array[MessageFormatElement],
-    locales: String,
-    formatters: Formatters,
-    formats: Formats,
-    values: js.UndefOr[scala.Nothing],
-    currentPluralValue: js.UndefOr[scala.Nothing],
-    originalMessage: String
-  ): js.Array[MessageFormatPart[T]] = js.native
-  def formatToParts[T](
-    els: js.Array[MessageFormatElement],
-    locales: String,
-    formatters: Formatters,
-    formats: Formats,
-    values: js.UndefOr[scala.Nothing],
-    currentPluralValue: Double
-  ): js.Array[MessageFormatPart[T]] = js.native
-  def formatToParts[T](
-    els: js.Array[MessageFormatElement],
-    locales: String,
-    formatters: Formatters,
-    formats: Formats,
-    values: js.UndefOr[scala.Nothing],
-    currentPluralValue: Double,
-    originalMessage: String
-  ): js.Array[MessageFormatPart[T]] = js.native
-  def formatToParts[T](
-    els: js.Array[MessageFormatElement],
-    locales: String,
-    formatters: Formatters,
-    formats: Formats,
-    values: Record[
-      String, 
-      PrimitiveType | T | (FormatXMLElementFn[T, String | (js.Array[String | T])])
-    ]
-  ): js.Array[MessageFormatPart[T]] = js.native
-  def formatToParts[T](
-    els: js.Array[MessageFormatElement],
-    locales: String,
-    formatters: Formatters,
-    formats: Formats,
-    values: Record[
-      String, 
-      PrimitiveType | T | (FormatXMLElementFn[T, String | (js.Array[String | T])])
-    ],
-    currentPluralValue: js.UndefOr[scala.Nothing],
-    originalMessage: String
-  ): js.Array[MessageFormatPart[T]] = js.native
-  def formatToParts[T](
-    els: js.Array[MessageFormatElement],
-    locales: String,
-    formatters: Formatters,
-    formats: Formats,
-    values: Record[
-      String, 
-      PrimitiveType | T | (FormatXMLElementFn[T, String | (js.Array[String | T])])
-    ],
-    currentPluralValue: Double
-  ): js.Array[MessageFormatPart[T]] = js.native
-  def formatToParts[T](
-    els: js.Array[MessageFormatElement],
-    locales: String,
-    formatters: Formatters,
-    formats: Formats,
-    values: Record[
-      String, 
-      PrimitiveType | T | (FormatXMLElementFn[T, String | (js.Array[String | T])])
-    ],
-    currentPluralValue: Double,
-    originalMessage: String
-  ): js.Array[MessageFormatPart[T]] = js.native
-  def formatToParts[T](
-    els: js.Array[MessageFormatElement],
-    locales: js.Array[String],
-    formatters: Formatters,
-    formats: Formats
-  ): js.Array[MessageFormatPart[T]] = js.native
-  def formatToParts[T](
-    els: js.Array[MessageFormatElement],
-    locales: js.Array[String],
-    formatters: Formatters,
-    formats: Formats,
-    values: js.UndefOr[scala.Nothing],
-    currentPluralValue: js.UndefOr[scala.Nothing],
-    originalMessage: String
-  ): js.Array[MessageFormatPart[T]] = js.native
-  def formatToParts[T](
-    els: js.Array[MessageFormatElement],
-    locales: js.Array[String],
-    formatters: Formatters,
-    formats: Formats,
-    values: js.UndefOr[scala.Nothing],
-    currentPluralValue: Double
-  ): js.Array[MessageFormatPart[T]] = js.native
-  def formatToParts[T](
-    els: js.Array[MessageFormatElement],
-    locales: js.Array[String],
-    formatters: Formatters,
-    formats: Formats,
-    values: js.UndefOr[scala.Nothing],
-    currentPluralValue: Double,
-    originalMessage: String
-  ): js.Array[MessageFormatPart[T]] = js.native
-  def formatToParts[T](
-    els: js.Array[MessageFormatElement],
-    locales: js.Array[String],
-    formatters: Formatters,
-    formats: Formats,
-    values: Record[
-      String, 
-      PrimitiveType | T | (FormatXMLElementFn[T, String | (js.Array[String | T])])
-    ]
-  ): js.Array[MessageFormatPart[T]] = js.native
-  def formatToParts[T](
-    els: js.Array[MessageFormatElement],
-    locales: js.Array[String],
-    formatters: Formatters,
-    formats: Formats,
-    values: Record[
-      String, 
-      PrimitiveType | T | (FormatXMLElementFn[T, String | (js.Array[String | T])])
-    ],
-    currentPluralValue: js.UndefOr[scala.Nothing],
-    originalMessage: String
-  ): js.Array[MessageFormatPart[T]] = js.native
-  def formatToParts[T](
-    els: js.Array[MessageFormatElement],
-    locales: js.Array[String],
-    formatters: Formatters,
-    formats: Formats,
-    values: Record[
-      String, 
-      PrimitiveType | T | (FormatXMLElementFn[T, String | (js.Array[String | T])])
-    ],
-    currentPluralValue: Double
-  ): js.Array[MessageFormatPart[T]] = js.native
-  def formatToParts[T](
-    els: js.Array[MessageFormatElement],
-    locales: js.Array[String],
-    formatters: Formatters,
-    formats: Formats,
-    values: Record[
-      String, 
-      PrimitiveType | T | (FormatXMLElementFn[T, String | (js.Array[String | T])])
-    ],
-    currentPluralValue: Double,
-    originalMessage: String
-  ): js.Array[MessageFormatPart[T]] = js.native
-  def isFormatXMLElementFn[T](el: T): /* is intl-messageformat.intl-messageformat/lib/src/formatters.FormatXMLElementFn<T, string | std.Array<string | T>> */ Boolean = js.native
-  def isFormatXMLElementFn[T](el: FormatXMLElementFn[T, String | (js.Array[String | T])]): /* is intl-messageformat.intl-messageformat/lib/src/formatters.FormatXMLElementFn<T, string | std.Array<string | T>> */ Boolean = js.native
-  def isFormatXMLElementFn[T](el: PrimitiveType): /* is intl-messageformat.intl-messageformat/lib/src/formatters.FormatXMLElementFn<T, string | std.Array<string | T>> */ Boolean = js.native
-  /* static members */
-  @js.native
-  object IntlMessageFormat extends js.Object {
-    var __parse: js.UndefOr[FnCall] = js.native
-    var formats: Date = js.native
-    var memoizedDefaultLocale: js.Any = js.native
-    def defaultLocale: String = js.native
-  }
-  
   /* static members */
   @js.native
   object default extends js.Object {
+    
     var __parse: js.UndefOr[FnCall] = js.native
-    var formats: Date = js.native
-    var memoizedDefaultLocale: js.Any = js.native
+    
     def defaultLocale: String = js.native
+    
+    var formats: Date = js.native
+    
+    var memoizedDefaultLocale: js.Any = js.native
   }
-  
 }
-

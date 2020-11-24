@@ -10,9 +10,9 @@ An Implementation of ES Observables in Typescript
 | ------------------ | :-------------: |
 | Full name          | zen-observable-ts |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 22 |
-| # downloads        | 65219772 |
+| # releases         | 14 |
+| # dependents       | 29 |
+| # downloads        | 101406994 |
 | # stars            | 0 |
 
 ## Links

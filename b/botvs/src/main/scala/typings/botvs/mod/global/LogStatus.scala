@@ -2,11 +2,12 @@ package typings.botvs.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("LogStatus")
 @js.native
 object LogStatus extends js.Object {
+  
   /**
     * 此信息不保存到日志列表里, 只更新当前机器人的状态信息, 在日志上方显示, 可多次调用, 更新状态
     *
@@ -44,4 +45,3 @@ object LogStatus extends js.Object {
     */
   def apply(args: js.Any*): Unit = js.native
 }
-

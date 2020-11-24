@@ -2,11 +2,12 @@ package typings.weappApi.mod.wx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("weapp-api", "wx.connectSocket")
 @js.native
 object connectSocket extends js.Object {
+  
   /**
     * 创建一个 WebSocket 连接；
     * 一个微信小程序同时只能有一个 WebSocket 连接，
@@ -15,4 +16,3 @@ object connectSocket extends js.Object {
     */
   def apply(options: ConnectSocketOptions): Unit = js.native
 }
-

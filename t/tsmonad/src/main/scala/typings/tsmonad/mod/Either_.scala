@@ -2,7 +2,7 @@ package typings.tsmonad.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tsmonad", "Either")
 @js.native
@@ -13,12 +13,12 @@ class Either_[L, R] protected ()
   def this(`type`: typings.tsmonad.eitherMod.EitherType, l: L, r: R) = this()
   def this(`type`: typings.tsmonad.eitherMod.EitherType, l: js.UndefOr[scala.Nothing], r: R) = this()
 }
-
 /* static members */
 @JSImport("tsmonad", "Either")
 @js.native
 object Either_ extends js.Object {
+  
   def left[L, R](l: L): typings.tsmonad.eitherMod.Either_[L, R] = js.native
+  
   def right[L, R](r: R): typings.tsmonad.eitherMod.Either_[L, R] = js.native
 }
-

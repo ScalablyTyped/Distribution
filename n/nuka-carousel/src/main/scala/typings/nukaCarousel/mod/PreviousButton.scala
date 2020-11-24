@@ -1,12 +1,10 @@
 package typings.nukaCarousel.mod
 
-import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nuka-carousel", "PreviousButton")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.FunctionalComponent<PreviousButtonProps> * / any */ @JSImport("nuka-carousel", "PreviousButton")
 @js.native
-class PreviousButton ()
-  extends Component[PreviousButtonProps, js.Object, js.Any]
-
+class PreviousButton () extends js.Object

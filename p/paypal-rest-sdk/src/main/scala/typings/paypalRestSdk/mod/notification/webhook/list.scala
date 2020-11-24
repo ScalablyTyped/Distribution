@@ -5,11 +5,12 @@ import typings.paypalRestSdk.mod.CallbackFunction
 import typings.paypalRestSdk.mod.QueryParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paypal-rest-sdk", "notification.webhook.list")
 @js.native
 object list extends js.Object {
+  
   def apply(data: RequestOptions): Unit = js.native
   def apply(data: RequestOptions, config: js.UndefOr[scala.Nothing], cb: CallbackFunction[WebhookListResponse]): Unit = js.native
   def apply(data: RequestOptions, config: RequestOptions): Unit = js.native
@@ -53,4 +54,3 @@ object list extends js.Object {
     cb: CallbackFunction[WebhookListResponse]
   ): Unit = js.native
 }
-

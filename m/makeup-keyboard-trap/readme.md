@@ -10,15 +10,15 @@ Restricts keyboard tabindex to a single subtree in the DOM
 | ------------------ | :-------------: |
 | Full name          | makeup-keyboard-trap |
 | Keywords           | makeup, ebay, accessibility, a11y |
-| # releases         | 5 |
+| # releases         | 8 |
 | # dependents       | 2 |
-| # downloads        | 3189 |
+| # downloads        | 6900 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/makeup-js/makeup-keyboard-trap#readme)
-- [Bugs](https://github.com/makeup-js/makeup-keyboard-trap/issues)
-- [Repository](https://github.com/makeup-js/makeup-keyboard-trap)
+- [Homepage](https://github.com/makeup/makeup-js#readme)
+- [Bugs](https://github.com/makeup/makeup-js/issues)
+- [Repository](https://github.com/makeup/makeup-js)
 - [Npm](https://www.npmjs.com/package/makeup-keyboard-trap)
     
 

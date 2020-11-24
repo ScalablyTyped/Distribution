@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.Pair
 import typings.activexLibreoffice.com_.sun.star.beans.StringPair
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * serializes a DOM tree by generating FastSAX events.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XFastSAXSerializable extends js.Object {
+  
   /**
     * serializes an object (e.g. a DOM tree) that represents an XML document by generating fast SAX events.
     * @param handler the SAX event handler that should receive the generated events
@@ -28,8 +29,8 @@ trait XFastSAXSerializable extends js.Object {
     registerNamespaces: SeqEquiv[Pair[String, Double]]
   ): Unit = js.native
 }
-
 object XFastSAXSerializable {
+  
   @scala.inline
   def apply(
     fastSerialize: (XFastDocumentHandler, XFastTokenHandler, SeqEquiv[StringPair], SeqEquiv[Pair[String, Double]]) => Unit
@@ -37,22 +38,25 @@ object XFastSAXSerializable {
     val __obj = js.Dynamic.literal(fastSerialize = js.Any.fromFunction4(fastSerialize))
     __obj.asInstanceOf[XFastSAXSerializable]
   }
+  
   @scala.inline
   implicit class XFastSAXSerializableOps[Self <: XFastSAXSerializable] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFastSerialize(
       value: (XFastDocumentHandler, XFastTokenHandler, SeqEquiv[StringPair], SeqEquiv[Pair[String, Double]]) => Unit
     ): Self = this.set("fastSerialize", js.Any.fromFunction4(value))
   }
-  
 }
-

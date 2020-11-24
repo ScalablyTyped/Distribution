@@ -3,7 +3,7 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.CubeTexture")
 @js.native
@@ -13,7 +13,7 @@ class CubeTexture protected ()
     * Creates a cube texture to use with reflection for instance. It can be based upon dds or six images as well
     * as prefiltered data.
     * @param rootUrl defines the url of the texture or the root name of the six images
-    * @param scene defines the scene the texture is attached to
+    * @param null defines the scene or engine the texture is attached to
     * @param extensions defines the suffixes add to the picture name in case six images are in use like _px.jpg...
     * @param noMipmap defines if mipmaps should be created or not
     * @param files defines the six files to load for the different faces in that order: px, py, pz, nx, ny, nz
@@ -25,11 +25,12 @@ class CubeTexture protected ()
     * @param createPolynomials defines whether or not to create polynomial harmonics from the texture data if necessary
     * @param lodScale defines the scale applied to environment texture. This manages the range of LOD level used for IBL according to the roughness
     * @param lodOffset defines the offset applied to environment texture. This manages first LOD level used for IBL according to the roughness
+    * @param loaderOptions options to be passed to the loader
     * @return the cube texture
     */
   def this(
     rootUrl: String,
-    scene: typings.babylonjs.BABYLON.Scene,
+    sceneOrEngine: typings.babylonjs.BABYLON.Scene | typings.babylonjs.BABYLON.ThinEngine,
     extensions: js.UndefOr[Nullable[js.Array[String]]],
     noMipmap: js.UndefOr[Boolean],
     files: js.UndefOr[Nullable[js.Array[String]]],
@@ -44,19 +45,15 @@ class CubeTexture protected ()
     forcedExtension: js.UndefOr[js.Any],
     createPolynomials: js.UndefOr[Boolean],
     lodScale: js.UndefOr[Double],
-    lodOffset: js.UndefOr[Double]
+    lodOffset: js.UndefOr[Double],
+    loaderOptions: js.UndefOr[js.Any]
   ) = this()
-  /**
-    * Array of animations
-    */
-  /* CompleteClass */
-  override var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }
-
 /* static members */
 @JSGlobal("BABYLON.CubeTexture")
 @js.native
 object CubeTexture extends js.Object {
+  
   /**
     * Creates a cube texture from an array of image urls
     * @param files defines an array of image urls
@@ -66,6 +63,7 @@ object CubeTexture extends js.Object {
     */
   def CreateFromImages(files: js.Array[String], scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.CubeTexture = js.native
   def CreateFromImages(files: js.Array[String], scene: typings.babylonjs.BABYLON.Scene, noMipmap: Boolean): typings.babylonjs.BABYLON.CubeTexture = js.native
+  
   /**
     * Creates and return a texture created from prefilterd data by tools like IBL Baker or Lys.
     * @param url defines the url of the prefiltered texture
@@ -75,6 +73,12 @@ object CubeTexture extends js.Object {
     * @return the prefiltered texture
     */
   def CreateFromPrefilteredData(url: String, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.CubeTexture = js.native
+  def CreateFromPrefilteredData(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    forcedExtension: js.UndefOr[scala.Nothing],
+    createPolynomials: Boolean
+  ): typings.babylonjs.BABYLON.CubeTexture = js.native
   def CreateFromPrefilteredData(url: String, scene: typings.babylonjs.BABYLON.Scene, forcedExtension: js.Any): typings.babylonjs.BABYLON.CubeTexture = js.native
   def CreateFromPrefilteredData(
     url: String,
@@ -82,6 +86,7 @@ object CubeTexture extends js.Object {
     forcedExtension: js.Any,
     createPolynomials: Boolean
   ): typings.babylonjs.BABYLON.CubeTexture = js.native
+  
   /**
     * Parses text to create a cube texture
     * @param parsedTexture define the serialized text to read from
@@ -91,4 +96,3 @@ object CubeTexture extends js.Object {
     */
   def Parse(parsedTexture: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.CubeTexture = js.native
 }
-

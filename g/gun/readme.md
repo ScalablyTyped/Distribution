@@ -10,9 +10,9 @@ A realtime, decentralized, offline-first, graph data synchronization engine.
 | ------------------ | :-------------: |
 | Full name          | gun |
 | Keywords           | gun, gunDB, graph, document, key, value, relational, datastore, database, engine, realtime, decentralized, peer-to-peer, distributed, P2P, OSS, embedded, localstorage, S3 |
-| # releases         | 74 |
-| # dependents       | 63 |
-| # downloads        | 63995 |
+| # releases         | 49 |
+| # dependents       | 69 |
+| # downloads        | 59298 |
 | # stars            | 10 |
 
 ## Links

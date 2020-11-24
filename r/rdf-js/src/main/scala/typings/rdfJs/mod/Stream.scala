@@ -3,10 +3,11 @@ package typings.rdfJs.mod
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Stream[Q /* <: BaseQuad */] extends EventEmitter {
+  
   /**
     * This method pulls a quad out of the internal buffer and returns it.
     * If there is no quad available, then it will return null.
@@ -15,4 +16,3 @@ trait Stream[Q /* <: BaseQuad */] extends EventEmitter {
     */
   def read(): Q | Null = js.native
 }
-

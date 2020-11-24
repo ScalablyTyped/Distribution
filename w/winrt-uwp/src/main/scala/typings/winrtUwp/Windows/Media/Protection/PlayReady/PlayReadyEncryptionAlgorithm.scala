@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PlayReadyEncryptionAlgorithm extends js.Object
-
 /** Indicates the type of encryption algorithm specified in a PlayReady content header. */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm")
 @js.native
 object PlayReadyEncryptionAlgorithm extends js.Object {
+  
   /** AES-128 Counter-mode encryption. */
   @js.native
   sealed trait aes128Ctr extends PlayReadyEncryptionAlgorithm
@@ -26,6 +26,4 @@ object PlayReadyEncryptionAlgorithm extends js.Object {
   /** Content is not encrypted. */
   @js.native
   sealed trait unprotected extends PlayReadyEncryptionAlgorithm
-  
 }
-

@@ -10,9 +10,9 @@ A collection of decorators using lodash at it's core.
 | ------------------ | :-------------: |
 | Full name          | lodash-decorators |
 | Keywords           | lodash, decorators, ES7, ES2016, utility |
-| # releases         | 5 |
-| # dependents       | 144 |
-| # downloads        | 3917102 |
+| # releases         | 2 |
+| # dependents       | 167 |
+| # downloads        | 4202355 |
 | # stars            | 9 |
 
 ## Links

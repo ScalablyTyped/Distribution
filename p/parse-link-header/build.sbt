@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parse-link-header"
-version := "1.0-dt-20200515Z-646d48"
+version := "1.0-dt-20200515Z-f3370e"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

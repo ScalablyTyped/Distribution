@@ -2,7 +2,7 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create new AudioListenerComponent.
@@ -15,4 +15,3 @@ class AudioListenerComponent protected ()
   extends typings.playcanvas.pc.Component {
   def this(system: typings.playcanvas.pc.AudioListenerComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }
-

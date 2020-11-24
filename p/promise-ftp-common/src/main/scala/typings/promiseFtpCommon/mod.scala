@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("promise-ftp-common", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class FtpConnectionError () extends Error
   
@@ -35,60 +36,53 @@ object mod extends js.Object {
     def this(disconnectError: Error, connectError: js.UndefOr[scala.Nothing], onCwd: Boolean) = this()
     def this(disconnectError: Error, connectError: String, onCwd: Boolean) = this()
     def this(disconnectError: Error, connectError: Error, onCwd: Boolean) = this()
+    
     var connectError: String | Error = js.native
+    
     var disconnectError: String | Error = js.native
   }
   
   @js.native
   sealed trait STATUSES extends js.Object
-  
   @js.native
   object STATUSES extends js.Object {
-    @js.native
-    sealed trait CONNECTED extends STATUSES
-    
-    @js.native
-    sealed trait CONNECTING extends STATUSES
-    
-    @js.native
-    sealed trait DISCONNECTED extends STATUSES
-    
-    @js.native
-    sealed trait DISCONNECTING extends STATUSES
-    
-    @js.native
-    sealed trait LOGGING_OUT extends STATUSES
-    
-    @js.native
-    sealed trait NOT_YET_CONNECTED extends STATUSES
-    
-    @js.native
-    sealed trait RECONNECTING extends STATUSES
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[STATUSES with String] = js.native
+    
+    @js.native
+    sealed trait CONNECTED extends STATUSES
     /* "connected" */ @js.native
     object CONNECTED extends TopLevel[CONNECTED with String]
     
+    @js.native
+    sealed trait CONNECTING extends STATUSES
     /* "connecting" */ @js.native
     object CONNECTING extends TopLevel[CONNECTING with String]
     
+    @js.native
+    sealed trait DISCONNECTED extends STATUSES
     /* "disconnected" */ @js.native
     object DISCONNECTED extends TopLevel[DISCONNECTED with String]
     
+    @js.native
+    sealed trait DISCONNECTING extends STATUSES
     /* "disconnecting" */ @js.native
     object DISCONNECTING extends TopLevel[DISCONNECTING with String]
     
+    @js.native
+    sealed trait LOGGING_OUT extends STATUSES
     /* "logging out" */ @js.native
     object LOGGING_OUT extends TopLevel[LOGGING_OUT with String]
     
+    @js.native
+    sealed trait NOT_YET_CONNECTED extends STATUSES
     /* "not yet connected" */ @js.native
     object NOT_YET_CONNECTED extends TopLevel[NOT_YET_CONNECTED with String]
     
+    @js.native
+    sealed trait RECONNECTING extends STATUSES
     /* "reconnecting" */ @js.native
     object RECONNECTING extends TopLevel[RECONNECTING with String]
-    
   }
-  
 }
-

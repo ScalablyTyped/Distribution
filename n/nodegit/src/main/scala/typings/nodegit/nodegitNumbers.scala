@@ -1,5 +1,6 @@
 package typings.nodegit
 
+import typings.nodegit.applyMod.Apply.LOCATION
 import typings.nodegit.attrMod.Attr.STATES
 import typings.nodegit.branchMod.Branch.BRANCH
 import typings.nodegit.certMod.Cert.SSH
@@ -53,9 +54,301 @@ import typings.nodegit.treeEntryMod.TreeEntry.FILEMODE
 import typings.nodegit.treeMod.Tree.WALK_MODE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodegitNumbers {
+  
+  @scala.inline
+  def `-1`: `-1` = -1.asInstanceOf[`-1`]
+  
+  @scala.inline
+  def `-10`: `-10` = -10.asInstanceOf[`-10`]
+  
+  @scala.inline
+  def `-11`: `-11` = -11.asInstanceOf[`-11`]
+  
+  @scala.inline
+  def `-12`: `-12` = -12.asInstanceOf[`-12`]
+  
+  @scala.inline
+  def `-13`: `-13` = -13.asInstanceOf[`-13`]
+  
+  @scala.inline
+  def `-14`: `-14` = -14.asInstanceOf[`-14`]
+  
+  @scala.inline
+  def `-15`: `-15` = -15.asInstanceOf[`-15`]
+  
+  @scala.inline
+  def `-16`: `-16` = -16.asInstanceOf[`-16`]
+  
+  @scala.inline
+  def `-17`: `-17` = -17.asInstanceOf[`-17`]
+  
+  @scala.inline
+  def `-18`: `-18` = -18.asInstanceOf[`-18`]
+  
+  @scala.inline
+  def `-19`: `-19` = -19.asInstanceOf[`-19`]
+  
+  @scala.inline
+  def `-2`: `-2` = -2.asInstanceOf[`-2`]
+  
+  @scala.inline
+  def `-20`: `-20` = -20.asInstanceOf[`-20`]
+  
+  @scala.inline
+  def `-21`: `-21` = -21.asInstanceOf[`-21`]
+  
+  @scala.inline
+  def `-22`: `-22` = -22.asInstanceOf[`-22`]
+  
+  @scala.inline
+  def `-23`: `-23` = -23.asInstanceOf[`-23`]
+  
+  @scala.inline
+  def `-3`: `-3` = -3.asInstanceOf[`-3`]
+  
+  @scala.inline
+  def `-30`: `-30` = -30.asInstanceOf[`-30`]
+  
+  @scala.inline
+  def `-31`: `-31` = -31.asInstanceOf[`-31`]
+  
+  @scala.inline
+  def `-4`: `-4` = -4.asInstanceOf[`-4`]
+  
+  @scala.inline
+  def `-5`: `-5` = -5.asInstanceOf[`-5`]
+  
+  @scala.inline
+  def `-6`: `-6` = -6.asInstanceOf[`-6`]
+  
+  @scala.inline
+  def `-7`: `-7` = -7.asInstanceOf[`-7`]
+  
+  @scala.inline
+  def `-8`: `-8` = -8.asInstanceOf[`-8`]
+  
+  @scala.inline
+  def `-9`: `-9` = -9.asInstanceOf[`-9`]
+  
+  @scala.inline
+  def `0`: `0` = 0.asInstanceOf[`0`]
+  
+  @scala.inline
+  def `1`: `1` = 1.asInstanceOf[`1`]
+  
+  @scala.inline
+  def `10`: `10` = 10.asInstanceOf[`10`]
+  
+  @scala.inline
+  def `1024`: `1024` = 1024.asInstanceOf[`1024`]
+  
+  @scala.inline
+  def `1048576`: `1048576` = 1048576.asInstanceOf[`1048576`]
+  
+  @scala.inline
+  def `1073741824`: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
+  
+  @scala.inline
+  def `11`: `11` = 11.asInstanceOf[`11`]
+  
+  @scala.inline
+  def `12`: `12` = 12.asInstanceOf[`12`]
+  
+  @scala.inline
+  def `128`: `128` = 128.asInstanceOf[`128`]
+  
+  @scala.inline
+  def `13`: `13` = 13.asInstanceOf[`13`]
+  
+  @scala.inline
+  def `131072`: `131072` = 131072.asInstanceOf[`131072`]
+  
+  @scala.inline
+  def `14`: `14` = 14.asInstanceOf[`14`]
+  
+  @scala.inline
+  def `15`: `15` = 15.asInstanceOf[`15`]
+  
+  @scala.inline
+  def `16`: `16` = 16.asInstanceOf[`16`]
+  
+  @scala.inline
+  def `16384`: `16384` = 16384.asInstanceOf[`16384`]
+  
+  @scala.inline
+  def `16777216`: `16777216` = 16777216.asInstanceOf[`16777216`]
+  
+  @scala.inline
+  def `17`: `17` = 17.asInstanceOf[`17`]
+  
+  @scala.inline
+  def `18`: `18` = 18.asInstanceOf[`18`]
+  
+  @scala.inline
+  def `19`: `19` = 19.asInstanceOf[`19`]
+  
+  @scala.inline
+  def `2`: `2` = 2.asInstanceOf[`2`]
+  
+  @scala.inline
+  def `20`: `20` = 20.asInstanceOf[`20`]
+  
+  @scala.inline
+  def `2048`: `2048` = 2048.asInstanceOf[`2048`]
+  
+  @scala.inline
+  def `2097152`: `2097152` = 2097152.asInstanceOf[`2097152`]
+  
+  @scala.inline
+  def `21`: `21` = 21.asInstanceOf[`21`]
+  
+  @scala.inline
+  def `22`: `22` = 22.asInstanceOf[`22`]
+  
+  @scala.inline
+  def `23`: `23` = 23.asInstanceOf[`23`]
+  
+  @scala.inline
+  def `24`: `24` = 24.asInstanceOf[`24`]
+  
+  @scala.inline
+  def `24576`: `24576` = 24576.asInstanceOf[`24576`]
+  
+  @scala.inline
+  def `25`: `25` = 25.asInstanceOf[`25`]
+  
+  @scala.inline
+  def `255`: `255` = 255.asInstanceOf[`255`]
+  
+  @scala.inline
+  def `256`: `256` = 256.asInstanceOf[`256`]
+  
+  @scala.inline
+  def `26`: `26` = 26.asInstanceOf[`26`]
+  
+  @scala.inline
+  def `262144`: `262144` = 262144.asInstanceOf[`262144`]
+  
+  @scala.inline
+  def `268435456`: `268435456` = 268435456.asInstanceOf[`268435456`]
+  
+  @scala.inline
+  def `27`: `27` = 27.asInstanceOf[`27`]
+  
+  @scala.inline
+  def `28`: `28` = 28.asInstanceOf[`28`]
+  
+  @scala.inline
+  def `29`: `29` = 29.asInstanceOf[`29`]
+  
+  @scala.inline
+  def `3`: `3` = 3.asInstanceOf[`3`]
+  
+  @scala.inline
+  def `30`: `30` = 30.asInstanceOf[`30`]
+  
+  @scala.inline
+  def `32`: `32` = 32.asInstanceOf[`32`]
+  
+  @scala.inline
+  def `32768`: `32768` = 32768.asInstanceOf[`32768`]
+  
+  @scala.inline
+  def `33188`: `33188` = 33188.asInstanceOf[`33188`]
+  
+  @scala.inline
+  def `33261`: `33261` = 33261.asInstanceOf[`33261`]
+  
+  @scala.inline
+  def `33554432`: `33554432` = 33554432.asInstanceOf[`33554432`]
+  
+  @scala.inline
+  def `4`: `4` = 4.asInstanceOf[`4`]
+  
+  @scala.inline
+  def `4096`: `4096` = 4096.asInstanceOf[`4096`]
+  
+  @scala.inline
+  def `40960`: `40960` = 40960.asInstanceOf[`40960`]
+  
+  @scala.inline
+  def `4194304`: `4194304` = 4194304.asInstanceOf[`4194304`]
+  
+  @scala.inline
+  def `43`: `43` = 43.asInstanceOf[`43`]
+  
+  @scala.inline
+  def `45`: `45` = 45.asInstanceOf[`45`]
+  
+  @scala.inline
+  def `48`: `48` = 48.asInstanceOf[`48`]
+  
+  @scala.inline
+  def `5`: `5` = 5.asInstanceOf[`5`]
+  
+  @scala.inline
+  def `512`: `512` = 512.asInstanceOf[`512`]
+  
+  @scala.inline
+  def `524288`: `524288` = 524288.asInstanceOf[`524288`]
+  
+  @scala.inline
+  def `536870912`: `536870912` = 536870912.asInstanceOf[`536870912`]
+  
+  @scala.inline
+  def `57344`: `57344` = 57344.asInstanceOf[`57344`]
+  
+  @scala.inline
+  def `6`: `6` = 6.asInstanceOf[`6`]
+  
+  @scala.inline
+  def `60`: `60` = 60.asInstanceOf[`60`]
+  
+  @scala.inline
+  def `61`: `61` = 61.asInstanceOf[`61`]
+  
+  @scala.inline
+  def `62`: `62` = 62.asInstanceOf[`62`]
+  
+  @scala.inline
+  def `64`: `64` = 64.asInstanceOf[`64`]
+  
+  @scala.inline
+  def `65535`: `65535` = 65535.asInstanceOf[`65535`]
+  
+  @scala.inline
+  def `65536`: `65536` = 65536.asInstanceOf[`65536`]
+  
+  @scala.inline
+  def `66`: `66` = 66.asInstanceOf[`66`]
+  
+  @scala.inline
+  def `67108864`: `67108864` = 67108864.asInstanceOf[`67108864`]
+  
+  @scala.inline
+  def `7`: `7` = 7.asInstanceOf[`7`]
+  
+  @scala.inline
+  def `70`: `70` = 70.asInstanceOf[`70`]
+  
+  @scala.inline
+  def `72`: `72` = 72.asInstanceOf[`72`]
+  
+  @scala.inline
+  def `8`: `8` = 8.asInstanceOf[`8`]
+  
+  @scala.inline
+  def `8192`: `8192` = 8192.asInstanceOf[`8192`]
+  
+  @scala.inline
+  def `8388608`: `8388608` = 8388608.asInstanceOf[`8388608`]
+  
+  @scala.inline
+  def `9`: `9` = 9.asInstanceOf[`9`]
+  
   @js.native
   sealed trait `-1`
     extends CAP
@@ -160,6 +453,7 @@ object nodegitNumbers {
        with FLAGS
        with FORMAT_EMAIL_FLAGS
        with LOCAL
+       with LOCATION
        with MAP
        with MODE
        with NORMALIZE
@@ -214,6 +508,7 @@ object nodegitNumbers {
        with IGNORE
        with LEVEL
        with LOCAL
+       with LOCATION
        with MAP
        with MODE
        with typings.nodegit.revParseMod.Revparse.MODE
@@ -366,6 +661,7 @@ object nodegitNumbers {
        with IGNORE
        with LEVEL
        with LOCAL
+       with LOCATION
        with MAP
        with typings.nodegit.revParseMod.Revparse.MODE
        with NORMALIZE
@@ -708,200 +1004,4 @@ object nodegitNumbers {
     extends DELTA
        with ERROR
        with OPT
-  
-  @scala.inline
-  def `-1`: `-1` = -1.asInstanceOf[`-1`]
-  @scala.inline
-  def `-10`: `-10` = -10.asInstanceOf[`-10`]
-  @scala.inline
-  def `-11`: `-11` = -11.asInstanceOf[`-11`]
-  @scala.inline
-  def `-12`: `-12` = -12.asInstanceOf[`-12`]
-  @scala.inline
-  def `-13`: `-13` = -13.asInstanceOf[`-13`]
-  @scala.inline
-  def `-14`: `-14` = -14.asInstanceOf[`-14`]
-  @scala.inline
-  def `-15`: `-15` = -15.asInstanceOf[`-15`]
-  @scala.inline
-  def `-16`: `-16` = -16.asInstanceOf[`-16`]
-  @scala.inline
-  def `-17`: `-17` = -17.asInstanceOf[`-17`]
-  @scala.inline
-  def `-18`: `-18` = -18.asInstanceOf[`-18`]
-  @scala.inline
-  def `-19`: `-19` = -19.asInstanceOf[`-19`]
-  @scala.inline
-  def `-2`: `-2` = -2.asInstanceOf[`-2`]
-  @scala.inline
-  def `-20`: `-20` = -20.asInstanceOf[`-20`]
-  @scala.inline
-  def `-21`: `-21` = -21.asInstanceOf[`-21`]
-  @scala.inline
-  def `-22`: `-22` = -22.asInstanceOf[`-22`]
-  @scala.inline
-  def `-23`: `-23` = -23.asInstanceOf[`-23`]
-  @scala.inline
-  def `-3`: `-3` = -3.asInstanceOf[`-3`]
-  @scala.inline
-  def `-30`: `-30` = -30.asInstanceOf[`-30`]
-  @scala.inline
-  def `-31`: `-31` = -31.asInstanceOf[`-31`]
-  @scala.inline
-  def `-4`: `-4` = -4.asInstanceOf[`-4`]
-  @scala.inline
-  def `-5`: `-5` = -5.asInstanceOf[`-5`]
-  @scala.inline
-  def `-6`: `-6` = -6.asInstanceOf[`-6`]
-  @scala.inline
-  def `-7`: `-7` = -7.asInstanceOf[`-7`]
-  @scala.inline
-  def `-8`: `-8` = -8.asInstanceOf[`-8`]
-  @scala.inline
-  def `-9`: `-9` = -9.asInstanceOf[`-9`]
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
-  @scala.inline
-  def `10`: `10` = 10.asInstanceOf[`10`]
-  @scala.inline
-  def `1024`: `1024` = 1024.asInstanceOf[`1024`]
-  @scala.inline
-  def `1048576`: `1048576` = 1048576.asInstanceOf[`1048576`]
-  @scala.inline
-  def `1073741824`: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
-  @scala.inline
-  def `11`: `11` = 11.asInstanceOf[`11`]
-  @scala.inline
-  def `12`: `12` = 12.asInstanceOf[`12`]
-  @scala.inline
-  def `128`: `128` = 128.asInstanceOf[`128`]
-  @scala.inline
-  def `13`: `13` = 13.asInstanceOf[`13`]
-  @scala.inline
-  def `131072`: `131072` = 131072.asInstanceOf[`131072`]
-  @scala.inline
-  def `14`: `14` = 14.asInstanceOf[`14`]
-  @scala.inline
-  def `15`: `15` = 15.asInstanceOf[`15`]
-  @scala.inline
-  def `16`: `16` = 16.asInstanceOf[`16`]
-  @scala.inline
-  def `16384`: `16384` = 16384.asInstanceOf[`16384`]
-  @scala.inline
-  def `16777216`: `16777216` = 16777216.asInstanceOf[`16777216`]
-  @scala.inline
-  def `17`: `17` = 17.asInstanceOf[`17`]
-  @scala.inline
-  def `18`: `18` = 18.asInstanceOf[`18`]
-  @scala.inline
-  def `19`: `19` = 19.asInstanceOf[`19`]
-  @scala.inline
-  def `2`: `2` = 2.asInstanceOf[`2`]
-  @scala.inline
-  def `20`: `20` = 20.asInstanceOf[`20`]
-  @scala.inline
-  def `2048`: `2048` = 2048.asInstanceOf[`2048`]
-  @scala.inline
-  def `2097152`: `2097152` = 2097152.asInstanceOf[`2097152`]
-  @scala.inline
-  def `21`: `21` = 21.asInstanceOf[`21`]
-  @scala.inline
-  def `22`: `22` = 22.asInstanceOf[`22`]
-  @scala.inline
-  def `23`: `23` = 23.asInstanceOf[`23`]
-  @scala.inline
-  def `24`: `24` = 24.asInstanceOf[`24`]
-  @scala.inline
-  def `24576`: `24576` = 24576.asInstanceOf[`24576`]
-  @scala.inline
-  def `25`: `25` = 25.asInstanceOf[`25`]
-  @scala.inline
-  def `255`: `255` = 255.asInstanceOf[`255`]
-  @scala.inline
-  def `256`: `256` = 256.asInstanceOf[`256`]
-  @scala.inline
-  def `26`: `26` = 26.asInstanceOf[`26`]
-  @scala.inline
-  def `262144`: `262144` = 262144.asInstanceOf[`262144`]
-  @scala.inline
-  def `268435456`: `268435456` = 268435456.asInstanceOf[`268435456`]
-  @scala.inline
-  def `27`: `27` = 27.asInstanceOf[`27`]
-  @scala.inline
-  def `28`: `28` = 28.asInstanceOf[`28`]
-  @scala.inline
-  def `29`: `29` = 29.asInstanceOf[`29`]
-  @scala.inline
-  def `3`: `3` = 3.asInstanceOf[`3`]
-  @scala.inline
-  def `30`: `30` = 30.asInstanceOf[`30`]
-  @scala.inline
-  def `32`: `32` = 32.asInstanceOf[`32`]
-  @scala.inline
-  def `32768`: `32768` = 32768.asInstanceOf[`32768`]
-  @scala.inline
-  def `33188`: `33188` = 33188.asInstanceOf[`33188`]
-  @scala.inline
-  def `33261`: `33261` = 33261.asInstanceOf[`33261`]
-  @scala.inline
-  def `33554432`: `33554432` = 33554432.asInstanceOf[`33554432`]
-  @scala.inline
-  def `4`: `4` = 4.asInstanceOf[`4`]
-  @scala.inline
-  def `4096`: `4096` = 4096.asInstanceOf[`4096`]
-  @scala.inline
-  def `40960`: `40960` = 40960.asInstanceOf[`40960`]
-  @scala.inline
-  def `4194304`: `4194304` = 4194304.asInstanceOf[`4194304`]
-  @scala.inline
-  def `43`: `43` = 43.asInstanceOf[`43`]
-  @scala.inline
-  def `45`: `45` = 45.asInstanceOf[`45`]
-  @scala.inline
-  def `48`: `48` = 48.asInstanceOf[`48`]
-  @scala.inline
-  def `5`: `5` = 5.asInstanceOf[`5`]
-  @scala.inline
-  def `512`: `512` = 512.asInstanceOf[`512`]
-  @scala.inline
-  def `524288`: `524288` = 524288.asInstanceOf[`524288`]
-  @scala.inline
-  def `536870912`: `536870912` = 536870912.asInstanceOf[`536870912`]
-  @scala.inline
-  def `57344`: `57344` = 57344.asInstanceOf[`57344`]
-  @scala.inline
-  def `6`: `6` = 6.asInstanceOf[`6`]
-  @scala.inline
-  def `60`: `60` = 60.asInstanceOf[`60`]
-  @scala.inline
-  def `61`: `61` = 61.asInstanceOf[`61`]
-  @scala.inline
-  def `62`: `62` = 62.asInstanceOf[`62`]
-  @scala.inline
-  def `64`: `64` = 64.asInstanceOf[`64`]
-  @scala.inline
-  def `65535`: `65535` = 65535.asInstanceOf[`65535`]
-  @scala.inline
-  def `65536`: `65536` = 65536.asInstanceOf[`65536`]
-  @scala.inline
-  def `66`: `66` = 66.asInstanceOf[`66`]
-  @scala.inline
-  def `67108864`: `67108864` = 67108864.asInstanceOf[`67108864`]
-  @scala.inline
-  def `7`: `7` = 7.asInstanceOf[`7`]
-  @scala.inline
-  def `70`: `70` = 70.asInstanceOf[`70`]
-  @scala.inline
-  def `72`: `72` = 72.asInstanceOf[`72`]
-  @scala.inline
-  def `8`: `8` = 8.asInstanceOf[`8`]
-  @scala.inline
-  def `8192`: `8192` = 8192.asInstanceOf[`8192`]
-  @scala.inline
-  def `8388608`: `8388608` = 8388608.asInstanceOf[`8388608`]
-  @scala.inline
-  def `9`: `9` = 9.asInstanceOf[`9`]
 }
-

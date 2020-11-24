@@ -1,13 +1,12 @@
 package typings.awsSdkClientCognitoIdentityBrowser
 
-import typings.awsSdkTypes.protocolMod.OperationModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-cognito-identity-browser/model/UnlinkIdentity", JSImport.Namespace)
 @js.native
 object unlinkIdentityMod extends js.Object {
-  val UnlinkIdentity: OperationModel = js.native
+  
+  val UnlinkIdentity: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }
-

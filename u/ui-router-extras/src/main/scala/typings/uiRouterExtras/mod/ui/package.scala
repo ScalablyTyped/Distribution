@@ -2,9 +2,10 @@ package typings.uiRouterExtras.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object ui {
+  
   /**
     * `StateFactory` factories convert `FutureState` into a full UI-Router `state`, or `state` tree
     */
@@ -18,5 +19,6 @@ package object ui {
       ]
     ]
   ]
+  
   type IResolveFunction = typings.angular.mod.Injectable[js.Function1[/* repeated */ js.Any, typings.angular.mod.IPromise[js.Any]]]
 }

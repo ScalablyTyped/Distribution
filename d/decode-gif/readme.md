@@ -10,9 +10,9 @@ Decode the frames of a gif.
 | ------------------ | :-------------: |
 | Full name          | decode-gif |
 | Keywords           | gif, decode, array, items |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 132 |
+| # downloads        | 1182 |
 | # stars            | 0 |
 
 ## Links

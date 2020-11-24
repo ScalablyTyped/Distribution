@@ -4,12 +4,12 @@ import typings.agGrid.columnApiMod.ColumnApi
 import typings.agGrid.gridApiMod.GridApi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DragEvent extends AgGridEvent
-
 object DragEvent {
+  
   @scala.inline
   def apply(api: GridApi, columnApi: ColumnApi, `type`: String): DragEvent = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any])
@@ -17,4 +17,3 @@ object DragEvent {
     __obj.asInstanceOf[DragEvent]
   }
 }
-

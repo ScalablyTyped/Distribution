@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client events that are related to data validation (see ASPxClientEdit.Validate).
@@ -19,4 +19,3 @@ class ASPxClientEditValidationEventArgs protected ()
     */
   def this(value: String, errorText: String, isValid: Boolean) = this()
 }
-

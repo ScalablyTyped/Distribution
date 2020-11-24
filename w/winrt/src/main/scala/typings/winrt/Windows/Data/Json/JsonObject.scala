@@ -6,14 +6,14 @@ import typings.winrt.Windows.Foundation.Collections.IMap
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JsonObject
   extends IJsonObject
      with IMap[String, IJsonValue]
-
 object JsonObject {
+  
   @scala.inline
   def apply(
     clear: () => Unit,
@@ -43,4 +43,3 @@ object JsonObject {
     __obj.asInstanceOf[JsonObject]
   }
 }
-

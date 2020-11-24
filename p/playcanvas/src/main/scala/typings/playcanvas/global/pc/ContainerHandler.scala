@@ -3,7 +3,7 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.pc.ResourceHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Loads files that contain multiple resources. For example glTF files can contain
@@ -44,4 +44,3 @@ class ContainerHandler protected () extends ResourceHandler {
     defaultMaterial: typings.playcanvas.pc.StandardMaterial
   ) = this()
 }
-

@@ -4,9 +4,58 @@ import typings.logProcessErrors.mod.ExceptionType
 import typings.logProcessErrors.mod.LogLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logProcessErrorsStrings {
+  
+  @scala.inline
+  def ava: ava = "ava".asInstanceOf[ava]
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def jasmine: jasmine = "jasmine".asInstanceOf[jasmine]
+  
+  @scala.inline
+  def mocha: mocha = "mocha".asInstanceOf[mocha]
+  
+  @scala.inline
+  def multipleResolves: multipleResolves = "multipleResolves".asInstanceOf[multipleResolves]
+  
+  @scala.inline
+  def `node-tap`: `node-tap` = "node-tap".asInstanceOf[`node-tap`]
+  
+  @scala.inline
+  def rejectionHandled: rejectionHandled = "rejectionHandled".asInstanceOf[rejectionHandled]
+  
+  @scala.inline
+  def silent: silent = "silent".asInstanceOf[silent]
+  
+  @scala.inline
+  def tape: tape = "tape".asInstanceOf[tape]
+  
+  @scala.inline
+  def uncaughtException: uncaughtException = "uncaughtException".asInstanceOf[uncaughtException]
+  
+  @scala.inline
+  def unhandledRejection: unhandledRejection = "unhandledRejection".asInstanceOf[unhandledRejection]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
+  
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
+  
   @js.native
   sealed trait ava extends js.Object
   
@@ -54,38 +103,4 @@ object logProcessErrorsStrings {
   
   @js.native
   sealed trait warning extends ExceptionType
-  
-  @scala.inline
-  def ava: ava = "ava".asInstanceOf[ava]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def jasmine: jasmine = "jasmine".asInstanceOf[jasmine]
-  @scala.inline
-  def mocha: mocha = "mocha".asInstanceOf[mocha]
-  @scala.inline
-  def multipleResolves: multipleResolves = "multipleResolves".asInstanceOf[multipleResolves]
-  @scala.inline
-  def `node-tap`: `node-tap` = "node-tap".asInstanceOf[`node-tap`]
-  @scala.inline
-  def rejectionHandled: rejectionHandled = "rejectionHandled".asInstanceOf[rejectionHandled]
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
-  @scala.inline
-  def tape: tape = "tape".asInstanceOf[tape]
-  @scala.inline
-  def uncaughtException: uncaughtException = "uncaughtException".asInstanceOf[uncaughtException]
-  @scala.inline
-  def unhandledRejection: unhandledRejection = "unhandledRejection".asInstanceOf[unhandledRejection]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
 }
-

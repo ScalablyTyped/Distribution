@@ -2,10 +2,11 @@ package typings.fontfaceobserver
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FontFaceObserver_ extends js.Object {
+  
   /**
     * Starts observing the loading of the specified font. Immediately returns a new Promise that resolves when the font is available and rejected when the font is not available.
     * @param testString If your font doesn't contain latin characters you can pass a custom test string.
@@ -17,4 +18,3 @@ trait FontFaceObserver_ extends js.Object {
   def load(testString: String, timeout: Double): js.Promise[Unit] = js.native
   def load(testString: Null, timeout: Double): js.Promise[Unit] = js.native
 }
-

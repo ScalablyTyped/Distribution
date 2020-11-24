@@ -2,14 +2,14 @@ package typings.typescriptServices.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PullElementKind extends js.Object
-
 @JSGlobal("TypeScript.PullElementKind")
 @js.native
 object PullElementKind extends js.Object {
+  
   @js.native
   sealed trait AcceptableAlias extends PullElementKind
   
@@ -129,6 +129,4 @@ object PullElementKind extends js.Object {
   
   @js.native
   sealed trait WithBlock extends PullElementKind
-  
 }
-

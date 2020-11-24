@@ -1,17 +1,19 @@
 package typings.mendixmodelsdk.domainmodelsMod.domainmodels
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.commonMod.common.IPoint
 import typings.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/associations relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/associations relevant section in reference guide}
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
@@ -28,43 +30,48 @@ class Association protected () extends AssociationBase {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
+  
+  def child: Entity = js.native
+  
+  def childConnection: IPoint = js.native
+  def childConnection_=(newValue: IPoint): Unit = js.native
+  
+  def child_=(newValue: Entity): Unit = js.native
   /**
     * This property is required and cannot be set to null.
     */
   @JSName("child")
   val child_FAssociation: IEntity = js.native
-  @JSName("model")
-  var model_FAssociation: IModel = js.native
-  def child: Entity = js.native
-  def childConnection: IPoint = js.native
-  def childConnection_=(newValue: IPoint): Unit = js.native
-  def child_=(newValue: Entity): Unit = js.native
+  
   @JSName("containerAsDomainModel")
   def containerAsDomainModel_MAssociation: DomainModel = js.native
+  
   def parentConnection: IPoint = js.native
   def parentConnection_=(newValue: IPoint): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Association")
 @js.native
 object Association extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new Association instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): Association = js.native
+  
   /**
     * Creates and returns a new Association instance in the SDK and on the server.
     * The new Association will be automatically stored in the 'associations' property
     * of the parent DomainModel element passed as argument.
     */
   def createIn(container: DomainModel): Association = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

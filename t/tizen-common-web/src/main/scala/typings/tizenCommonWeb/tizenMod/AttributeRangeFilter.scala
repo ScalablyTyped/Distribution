@@ -2,7 +2,7 @@ package typings.tizenCommonWeb.tizenMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tizen-common-web/tizen", "AttributeRangeFilter")
 @js.native
@@ -11,6 +11,7 @@ class AttributeRangeFilter protected () extends AbstractFilter {
   def this(attributeName: String, initialValue: js.Any) = this()
   def this(attributeName: String, initialValue: js.UndefOr[scala.Nothing], endValue: js.Any) = this()
   def this(attributeName: String, initialValue: js.Any, endValue: js.Any) = this()
+  
   /**
     * The name of the object attribute used for filtering.
     *
@@ -21,15 +22,16 @@ class AttributeRangeFilter protected () extends AbstractFilter {
     * matches.
     */
   var attributeName: String = js.native
+  
   /**
     * Objects with an attribute that is strictly lower than or equal to `endValue` will match.
     * By default, this attribute is set to ***null***.
     */
   var endValue: js.Any = js.native
+  
   /**
     * Objects with an attribute that is greater than or equal to `initialValue` will match.
     * By default, this attribute is set to ***null***.
     */
   var initialValue: js.Any = js.native
 }
-

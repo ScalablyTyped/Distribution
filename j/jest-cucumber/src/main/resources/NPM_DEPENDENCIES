@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "jest-cucumber" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "jest-cucumber" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

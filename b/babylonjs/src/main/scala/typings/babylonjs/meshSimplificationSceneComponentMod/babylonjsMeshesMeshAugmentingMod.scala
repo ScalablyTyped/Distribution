@@ -4,14 +4,16 @@ import typings.babylonjs.meshSimplificationMod.ISimplificationSettings
 import typings.babylonjs.meshSimplificationMod.SimplificationType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("babylonjs/Meshes/mesh", JSImport.Namespace)
 @js.native
 object babylonjsMeshesMeshAugmentingMod extends js.Object {
+  
   @js.native
   trait Mesh extends js.Object {
+    
     /**
       * Simplify the mesh according to the given array of settings.
       * Function will return immediately and will simplify async
@@ -22,7 +24,30 @@ object babylonjsMeshesMeshAugmentingMod extends js.Object {
       * @returns the current mesh
       */
     def simplify(settings: js.Array[ISimplificationSettings]): Mesh = js.native
+    def simplify(
+      settings: js.Array[ISimplificationSettings],
+      parallelProcessing: js.UndefOr[scala.Nothing],
+      simplificationType: js.UndefOr[scala.Nothing],
+      successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
+    ): Mesh = js.native
+    def simplify(
+      settings: js.Array[ISimplificationSettings],
+      parallelProcessing: js.UndefOr[scala.Nothing],
+      simplificationType: SimplificationType
+    ): Mesh = js.native
+    def simplify(
+      settings: js.Array[ISimplificationSettings],
+      parallelProcessing: js.UndefOr[scala.Nothing],
+      simplificationType: SimplificationType,
+      successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
+    ): Mesh = js.native
     def simplify(settings: js.Array[ISimplificationSettings], parallelProcessing: Boolean): Mesh = js.native
+    def simplify(
+      settings: js.Array[ISimplificationSettings],
+      parallelProcessing: Boolean,
+      simplificationType: js.UndefOr[scala.Nothing],
+      successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
+    ): Mesh = js.native
     def simplify(
       settings: js.Array[ISimplificationSettings],
       parallelProcessing: Boolean,
@@ -35,6 +60,4 @@ object babylonjsMeshesMeshAugmentingMod extends js.Object {
       successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
     ): Mesh = js.native
   }
-  
 }
-

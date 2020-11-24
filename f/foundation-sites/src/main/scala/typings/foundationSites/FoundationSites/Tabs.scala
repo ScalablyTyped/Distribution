@@ -3,13 +3,14 @@ package typings.foundationSites.FoundationSites
 import typings.foundationSites.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://get.foundation/sites/docs/tabs.html#javascript-reference
 @js.native
 trait Tabs extends js.Object {
+  
   def destroy(): Unit = js.native
+  
   def selectTab(element: String): Unit = js.native
   def selectTab(element: JQuery): Unit = js.native
 }
-

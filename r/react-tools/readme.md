@@ -12,7 +12,7 @@ A set of complementary tools to React, including the JSX transformer.
 | Keywords           | react, jsx, transformer, view |
 | # releases         | 0 |
 | # dependents       | 177 |
-| # downloads        | 1524573 |
+| # downloads        | 1421273 |
 | # stars            | 57 |
 
 ## Links

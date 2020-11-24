@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/ml/v1", "ml_v1.Resource$Projects$Models$Versions")
 @js.native
 class ResourceProjectsModelsVersions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * ml.projects.models.versions.create
     * @desc Creates a new version of a model from a trained TensorFlow model.
@@ -51,6 +53,7 @@ class ResourceProjectsModelsVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * ml.projects.models.versions.delete
     * @desc Deletes a model version.  Each model can have multiple versions
@@ -85,6 +88,7 @@ class ResourceProjectsModelsVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * ml.projects.models.versions.get
     * @desc Gets information about a model version.  Models can have multiple
@@ -120,6 +124,7 @@ class ResourceProjectsModelsVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudMlV1Version]
   ): Unit = js.native
+  
   /**
     * ml.projects.models.versions.list
     * @desc Gets basic information about all the versions of a model.  If you
@@ -159,6 +164,7 @@ class ResourceProjectsModelsVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudMlV1ListVersionsResponse]
   ): Unit = js.native
+  
   /**
     * ml.projects.models.versions.patch
     * @desc Updates the specified Version resource.  Currently the only
@@ -193,6 +199,7 @@ class ResourceProjectsModelsVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * ml.projects.models.versions.setDefault
     * @desc Designates a version to be the default for the model.  The default
@@ -230,4 +237,3 @@ class ResourceProjectsModelsVersions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleCloudMlV1Version]
   ): Unit = js.native
 }
-

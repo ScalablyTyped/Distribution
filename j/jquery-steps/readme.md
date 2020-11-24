@@ -11,8 +11,8 @@ A powerful jQuery wizard plugin that supports accessibility and HTML5
 | Full name          | jquery-steps |
 | Keywords           | jQuery, Wizard, Tabs, Steps, Plugin |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 150393 |
+| # dependents       | 2 |
+| # downloads        | 241402 |
 | # stars            | 1 |
 
 ## Links

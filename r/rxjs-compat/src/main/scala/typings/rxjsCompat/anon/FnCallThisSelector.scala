@@ -2,10 +2,11 @@ package typings.rxjsCompat.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallThisSelector extends js.Object {
+  
   def apply[T, R](
     selector: js.Function2[
       /* err */ js.Any, 
@@ -14,4 +15,3 @@ trait FnCallThisSelector extends js.Object {
     ]
   ): js.Any = js.native
 }
-

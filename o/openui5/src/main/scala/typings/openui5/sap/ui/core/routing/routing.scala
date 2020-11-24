@@ -2,7 +2,7 @@ package typings.openui5.sap.ui.core.routing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enumaration for different HistoryDirections
@@ -10,11 +10,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("sap.ui.core.routing.routing")
 @js.native
 object routing extends js.Object {
-  @js.native
-  sealed trait HistoryDirection extends js.Object
   
   @js.native
+  sealed trait HistoryDirection extends js.Object
+  @js.native
   object HistoryDirection extends js.Object {
+    
     @js.native
     sealed trait Backwards extends HistoryDirection
     
@@ -26,8 +27,5 @@ object routing extends js.Object {
     
     @js.native
     sealed trait Unknown extends HistoryDirection
-    
   }
-  
 }
-

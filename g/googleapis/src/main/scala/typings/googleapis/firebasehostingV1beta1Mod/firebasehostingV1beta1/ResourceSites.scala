@@ -6,16 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebasehosting/v1beta1", "firebasehosting_v1beta1.Resource$Sites")
 @js.native
 class ResourceSites protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   var domains: ResourceSitesDomains = js.native
-  var releases: ResourceSitesReleases = js.native
-  var versions: ResourceSitesVersions = js.native
+  
   /**
     * firebasehosting.sites.getConfig
     * @desc Gets the Hosting metadata for a specific site.
@@ -44,6 +45,9 @@ class ResourceSites protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSiteConfig]
   ): Unit = js.native
+  
+  var releases: ResourceSitesReleases = js.native
+  
   /**
     * firebasehosting.sites.updateConfig
     * @desc Sets the Hosting metadata for a specific site.
@@ -74,5 +78,6 @@ class ResourceSites protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSiteConfig]
   ): Unit = js.native
+  
+  var versions: ResourceSitesVersions = js.native
 }
-

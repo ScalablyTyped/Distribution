@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "iam.ServiceLinkedRole")
 @js.native
@@ -23,11 +23,11 @@ class ServiceLinkedRole protected ()
   def this(name: String, args: ServiceLinkedRoleArgs) = this()
   def this(name: String, args: ServiceLinkedRoleArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "iam.ServiceLinkedRole")
 @js.native
 object ServiceLinkedRole extends js.Object {
+  
   /**
     * Get an existing ServiceLinkedRole resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object ServiceLinkedRole extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.serviceLinkedRoleMod.ServiceLinkedRole = js.native
   def get(name: String, id: Input[ID], state: ServiceLinkedRoleState): typings.pulumiAws.serviceLinkedRoleMod.ServiceLinkedRole = js.native
   def get(name: String, id: Input[ID], state: ServiceLinkedRoleState, opts: CustomResourceOptions): typings.pulumiAws.serviceLinkedRoleMod.ServiceLinkedRole = js.native
+  
   /**
     * Returns true if the given object is an instance of ServiceLinkedRole.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/serviceLinkedRole.ServiceLinkedRole */ Boolean = js.native
 }
-

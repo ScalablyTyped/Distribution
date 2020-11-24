@@ -4,9 +4,11 @@ import typings.std.Date
 import typings.tstl.isharedlockableMod.ISharedLockable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ISharedTimedLockable extends ISharedLockable {
+  
   /**
     * Tries to write lock the mutex until timeout.
     *
@@ -27,7 +29,8 @@ trait ISharedTimedLockable extends ISharedLockable {
     * @param ms The maximum miliseconds for waiting.
     * @return Whether succeeded to monopoly the mutex or not.
     */
-  def try_lock_for(ms: Double): js.Promise[Boolean]
+  def try_lock_for(ms: Double): js.Promise[Boolean] = js.native
+  
   /**
     * Tries to read lock the mutex until timeout.
     *
@@ -48,7 +51,8 @@ trait ISharedTimedLockable extends ISharedLockable {
     * @param ms The maximum miliseconds for waiting.
     * @return Whether succeeded to share the mutex or not.
     */
-  def try_lock_shared_for(ms: Double): js.Promise[Boolean]
+  def try_lock_shared_for(ms: Double): js.Promise[Boolean] = js.native
+  
   /**
     * Tries to read lock the mutex until time expiration.
     *
@@ -69,7 +73,8 @@ trait ISharedTimedLockable extends ISharedLockable {
     * @param at The maximum time point to wait.
     * @return Whether succeeded to share the mutex or not.
     */
-  def try_lock_shared_until(at: Date): js.Promise[Boolean]
+  def try_lock_shared_until(at: Date): js.Promise[Boolean] = js.native
+  
   /**
     * Tries to write lock the mutex until time expiration.
     *
@@ -90,10 +95,10 @@ trait ISharedTimedLockable extends ISharedLockable {
     * @param at The maximum time point to wait.
     * @return Whether succeeded to monopoly the mutex or not.
     */
-  def try_lock_until(at: Date): js.Promise[Boolean]
+  def try_lock_until(at: Date): js.Promise[Boolean] = js.native
 }
-
 object ISharedTimedLockable {
+  
   @scala.inline
   def apply(
     lock: () => js.Promise[Unit],
@@ -110,5 +115,32 @@ object ISharedTimedLockable {
     val __obj = js.Dynamic.literal(lock = js.Any.fromFunction0(lock), lock_shared = js.Any.fromFunction0(lock_shared), try_lock = js.Any.fromFunction0(try_lock), try_lock_for = js.Any.fromFunction1(try_lock_for), try_lock_shared = js.Any.fromFunction0(try_lock_shared), try_lock_shared_for = js.Any.fromFunction1(try_lock_shared_for), try_lock_shared_until = js.Any.fromFunction1(try_lock_shared_until), try_lock_until = js.Any.fromFunction1(try_lock_until), unlock = js.Any.fromFunction0(unlock), unlock_shared = js.Any.fromFunction0(unlock_shared))
     __obj.asInstanceOf[ISharedTimedLockable]
   }
+  
+  @scala.inline
+  implicit class ISharedTimedLockableOps[Self <: ISharedTimedLockable] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setTry_lock_for(value: Double => js.Promise[Boolean]): Self = this.set("try_lock_for", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setTry_lock_shared_for(value: Double => js.Promise[Boolean]): Self = this.set("try_lock_shared_for", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setTry_lock_shared_until(value: Date => js.Promise[Boolean]): Self = this.set("try_lock_shared_until", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setTry_lock_until(value: Date => js.Promise[Boolean]): Self = this.set("try_lock_until", js.Any.fromFunction1(value))
+  }
 }
-

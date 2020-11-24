@@ -2,7 +2,7 @@ package typings.xstyledSystem.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SystemProps
@@ -14,7 +14,7 @@ trait SystemProps
      with BackgroundRepeatProps
      with OpacityProps
      with OverflowProps
-     with TransitionProps
+     with TransitionProps[StyledSystemLength]
      with BorderProps[StyledSystemLength]
      with BorderTopProps[StyledSystemLength]
      with BorderTopColorProps
@@ -34,6 +34,8 @@ trait SystemProps
      with JustifyContentProps
      with JustifyItemsProps
      with FlexWrapProps
+     with FlexGrowProps
+     with FlexShrinkProps
      with FlexBasisProps[StyledSystemLength]
      with FlexDirectionProps
      with FlexProps[StyledSystemLength]
@@ -93,12 +95,11 @@ trait SystemProps
      with TextTransformProps
      with ColProps
      with RowProps
-
 object SystemProps {
+  
   @scala.inline
   def apply(): SystemProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SystemProps]
   }
 }
-

@@ -11,8 +11,8 @@ dot-object makes it possible to transform and read (JSON) objects using dot nota
 | Full name          | dot-object |
 | Keywords           | json, filter, transform, dot notation, dot |
 | # releases         | 9 |
-| # dependents       | 214 |
-| # downloads        | 2673464 |
+| # dependents       | 258 |
+| # downloads        | 4502774 |
 | # stars            | 13 |
 
 ## Links

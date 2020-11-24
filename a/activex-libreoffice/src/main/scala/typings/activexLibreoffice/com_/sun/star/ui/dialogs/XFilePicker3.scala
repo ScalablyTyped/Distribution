@@ -10,7 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XCancellable
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides unified interface for {@link FilePicker} service.
@@ -25,8 +25,8 @@ trait XFilePicker3
      with XFilterGroupManager
      with XCancellable
      with XComponent
-
 object XFilePicker3 {
+  
   @scala.inline
   def apply(
     AvailableHeight: Double,
@@ -71,4 +71,3 @@ object XFilePicker3 {
     __obj.asInstanceOf[XFilePicker3]
   }
 }
-

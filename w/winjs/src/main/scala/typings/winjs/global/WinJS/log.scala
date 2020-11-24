@@ -2,11 +2,12 @@ package typings.winjs.global.WinJS
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("WinJS.log")
 @js.native
 object log extends js.Object {
+  
   //#endregion Objects
   //#region Functions
   /**
@@ -24,4 +25,3 @@ object log extends js.Object {
   def apply(message: js.Function0[String], tags: String): Unit = js.native
   def apply(message: js.Function0[String], tags: String, `type`: String): Unit = js.native
 }
-

@@ -6,11 +6,12 @@ import typings.expressServeStaticCore.mod.Query
 import typings.expressSession.mod.SessionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("session-file-store", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(
     options: js.Function1[
       /* options */ js.UndefOr[SessionOptions], 
@@ -18,4 +19,3 @@ object ^ extends js.Object {
     ]
   ): FileStore = js.native
 }
-

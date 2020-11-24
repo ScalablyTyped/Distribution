@@ -10,7 +10,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.`unsafe-url`
 import typings.devtoolsProtocol.devtoolsProtocolStrings.origin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`unsafe-url`
@@ -23,23 +23,29 @@ import scala.scalajs.js.annotation._
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`strict-origin-when-cross-origin`
 */
 trait RequestReferrerPolicy extends js.Object
-
 object RequestReferrerPolicy {
+  
   @scala.inline
   def NoReferrer: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
+  
   @scala.inline
   def NoReferrerWhenDowngrade: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
+  
   @scala.inline
   def Origin: origin = "origin".asInstanceOf[origin]
+  
   @scala.inline
   def OriginWhenCrossOrigin: `origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[`origin-when-cross-origin`]
+  
   @scala.inline
   def SameOrigin: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
+  
   @scala.inline
   def StrictOrigin: `strict-origin` = "strict-origin".asInstanceOf[`strict-origin`]
+  
   @scala.inline
   def StrictOriginWhenCrossOrigin: `strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[`strict-origin-when-cross-origin`]
+  
   @scala.inline
   def UnsafeUrl: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
 }
-

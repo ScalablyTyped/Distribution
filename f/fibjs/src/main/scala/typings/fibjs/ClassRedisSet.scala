@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassRedisSet extends ClassObject {
+  
   /**
     * 
     * @brief 同时将多个 field-value (域-值)对设置到哈希表中，此命令会覆盖哈希表中已存在的域
@@ -29,6 +30,7 @@ trait ClassRedisSet extends ClassObject {
     * 
     */
   def add(members: js.Array[_]): Double = js.native
+  
   /**
     * 
     * @brief 判断 member 元素是否集合的成员
@@ -38,6 +40,7 @@ trait ClassRedisSet extends ClassObject {
     * 
     */
   def exists(member: ClassBuffer): Boolean = js.native
+  
   /**
     * 
     * @brief 返回集合中元素的数量
@@ -46,6 +49,7 @@ trait ClassRedisSet extends ClassObject {
     * 
     */
   def len(): Double = js.native
+  
   /**
     * 
     * @brief 返回集合中的所有成员
@@ -54,6 +58,7 @@ trait ClassRedisSet extends ClassObject {
     * 
     */
   def members(): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 移除并返回集合中的一个随机元素
@@ -62,6 +67,7 @@ trait ClassRedisSet extends ClassObject {
     * 
     */
   def pop(): ClassBuffer = js.native
+  
   /**
     * 
     * @brief 从集合中获取随机的一个元素
@@ -79,6 +85,7 @@ trait ClassRedisSet extends ClassObject {
     * 
     */
   def randMember(count: Double): js.Any = js.native
+  
   /**
     * 
     * @brief 移除集合中的一个或多个 member 元素
@@ -98,4 +105,3 @@ trait ClassRedisSet extends ClassObject {
     */
   def remove(members: js.Array[_]): Double = js.native
 }
-

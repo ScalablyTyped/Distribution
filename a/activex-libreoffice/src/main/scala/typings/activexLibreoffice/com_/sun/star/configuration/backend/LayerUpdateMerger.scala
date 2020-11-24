@@ -5,7 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * applies updates to a configuration layer.
@@ -19,8 +19,8 @@ import scala.scalajs.js.annotation._
 trait LayerUpdateMerger
   extends XUpdateHandler
      with XInitialization
-
 object LayerUpdateMerger {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -49,4 +49,3 @@ object LayerUpdateMerger {
     __obj.asInstanceOf[LayerUpdateMerger]
   }
 }
-

@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.mod.pages
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
 import typings.mendixmodelsdk.internalMod.AbstractElement
@@ -8,9 +9,10 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.menusMod.menus.MenuItem
 import typings.mendixmodelsdk.nativepagesMod.nativepages.BottomBarItem
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "pages.PageClientAction")
 @js.native
@@ -21,35 +23,36 @@ class PageClientAction protected ()
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
 /* static members */
 @JSImport("mendixmodelsdk", "pages.PageClientAction")
 @js.native
 object PageClientAction extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'action' property
     * of the parent ActionButton element passed as argument.
     */
   def createInActionButtonUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.ActionButton): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'action' property
     * of the parent ActionItem element passed as argument.
     */
   def createInActionItemUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.ActionItem): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'onChangeAction' property
@@ -59,6 +62,7 @@ object PageClientAction extends js.Object {
     *  7.13.0 and higher
     */
   def createInAssociationWidgetUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.AssociationWidget): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'onChangeAction' property
@@ -68,6 +72,7 @@ object PageClientAction extends js.Object {
     *  7.13.0 and higher
     */
   def createInAttributeWidgetUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'onEnterAction' property
@@ -77,6 +82,7 @@ object PageClientAction extends js.Object {
     *  7.13.0 and higher
     */
   def createInAttributeWidgetUnderOnEnterAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'onLeaveAction' property
@@ -86,15 +92,17 @@ object PageClientAction extends js.Object {
     *  7.13.0 and higher
     */
   def createInAttributeWidgetUnderOnLeaveAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'action' property
     * of the parent nativepages.BottomBarItem element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.0.0 and higher
+    *  8.0.0 to 8.14.0
     */
   def createInBottomBarItemUnderAction(container: BottomBarItem): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'action' property
@@ -104,6 +112,7 @@ object PageClientAction extends js.Object {
     *  6.0.0 to 6.6.0
     */
   def createInDataViewActionButtonUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.DataViewActionButton): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'onClickAction' property
@@ -113,6 +122,7 @@ object PageClientAction extends js.Object {
     *  8.3.0 and higher
     */
   def createInDivContainerUnderOnClickAction(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'clickAction' property
@@ -122,18 +132,21 @@ object PageClientAction extends js.Object {
     *  7.18.0 and higher
     */
   def createInDynamicImageViewerUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.DynamicImageViewer): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'action' property
     * of the parent GridActionButton element passed as argument.
     */
   def createInGridActionButtonUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.GridActionButton): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'clickAction' property
     * of the parent ListView element passed as argument.
     */
   def createInListViewUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'pullDownAction' property
@@ -143,12 +156,14 @@ object PageClientAction extends js.Object {
     *  8.0.0 and higher
     */
   def createInListViewUnderPullDownAction(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'action' property
     * of the parent menus.MenuItem element passed as argument.
     */
   def createInMenuItemUnderAction(container: MenuItem): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'onChangeAction' property
@@ -158,12 +173,14 @@ object PageClientAction extends js.Object {
     *  7.13.0 and higher
     */
   def createInReferenceSetSelectorUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSelector): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'clickAction' property
     * of the parent StaticImageViewer element passed as argument.
     */
   def createInStaticImageViewerUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'onEnterKeyPressAction' property
@@ -173,6 +190,7 @@ object PageClientAction extends js.Object {
     *  8.7.0 and higher
     */
   def createInTextBoxUnderOnEnterKeyPressAction(container: typings.mendixmodelsdk.pagesMod.pages.TextBox): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * The new PageClientAction will be automatically stored in the 'action' property
@@ -182,5 +200,8 @@ object PageClientAction extends js.Object {
     *  7.19.0 and higher
     */
   def createInWidgetValueUnderAction(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.PageClientAction = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

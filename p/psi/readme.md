@@ -12,7 +12,7 @@ PageSpeed Insights with reporting
 | Keywords           | pagespeed, insights, speed, page, website, measure, optimize, size |
 | # releases         | 2 |
 | # dependents       | 39 |
-| # downloads        | 272659 |
+| # downloads        | 264479 |
 | # stars            | 50 |
 
 ## Links

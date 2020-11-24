@@ -2,14 +2,14 @@ package typings.winrt.Windows.Storage.Search
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CommonFolderQuery extends js.Object
-
 @JSGlobal("Windows.Storage.Search.CommonFolderQuery")
 @js.native
 object CommonFolderQuery extends js.Object {
+  
   @js.native
   sealed trait defaultQuery extends CommonFolderQuery
   
@@ -48,6 +48,4 @@ object CommonFolderQuery extends js.Object {
   
   @js.native
   sealed trait groupByYear extends CommonFolderQuery
-  
 }
-

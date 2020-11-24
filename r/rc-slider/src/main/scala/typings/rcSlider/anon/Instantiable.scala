@@ -1,16 +1,24 @@
 package typings.rcSlider.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.Instantiable2
+import typings.rcSlider.createSliderWithTooltipMod.ComponentWrapperProps
+import typings.rcSlider.interfaceMod.GenericSliderProps
+import typings.react.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Instantiable
-  extends /* x */ StringDictionary[js.Any]
-     with Instantiable1[/* props */ js.Any, Dictx] {
-  var defaultProps: js.Any = js.native
-  var displayName: String = js.native
+trait Instantiable[Props /* <: GenericSliderProps */]
+  extends Instantiable1[/* props */ ComponentWrapperProps with Props, ComponentDidCatch[Props]]
+     with Instantiable2[
+      /* props */ ComponentWrapperProps with Props, 
+      /* context */ js.Any, 
+      ComponentDidCatch[Props]
+    ] {
+  
+  var contextType: js.UndefOr[Context[_]] = js.native
+  
+  var defaultProps: GetTooltipContainer = js.native
 }
-

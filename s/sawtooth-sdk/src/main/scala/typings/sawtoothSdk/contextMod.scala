@@ -3,14 +3,16 @@ package typings.sawtoothSdk
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/processor/context", JSImport.Namespace)
 @js.native
 object contextMod extends js.Object {
+  
   @js.native
   class Context protected () extends js.Object {
     def this(stream: js.Any, contextId: String) = this()
+    
     /**
       * Add a new event to the execution result for this transaction.
       *
@@ -25,6 +27,7 @@ object contextMod extends js.Object {
       */
     def addEvent(eventType: String, attributes: js.Array[js.Array[String]], data: Buffer): js.Promise[_] = js.native
     def addEvent(eventType: String, attributes: js.Array[js.Array[String]], data: Buffer, timeout: Double): js.Promise[_] = js.native
+    
     /**
       * Add a blob to the execution result for this transaction.
       *
@@ -33,6 +36,7 @@ object contextMod extends js.Object {
       */
     def addReceiptData(data: Buffer): js.Promise[_] = js.native
     def addReceiptData(data: Buffer, timeout: Double): js.Promise[_] = js.native
+    
     /**
       * deleteState requests that each of the provided addresses be
       * unset in validator state. A list of successfully deleted
@@ -44,6 +48,7 @@ object contextMod extends js.Object {
       */
     def deleteState(addresses: js.Array[String]): js.Promise[_] = js.native
     def deleteState(addresses: js.Array[String], timeout: Double): js.Promise[_] = js.native
+    
     /**
       * getState queries the validator state for data at each of the
       * addresses in the given list. The addresses that have been set are
@@ -55,6 +60,7 @@ object contextMod extends js.Object {
       */
     def getState(addresses: js.Array[String]): js.Promise[_] = js.native
     def getState(addresses: js.Array[String], timeout: Double): js.Promise[_] = js.native
+    
     /**
       * setState requests that each address in the provided dictionary
       * be set in validator state to its corresponding value. A list is
@@ -69,6 +75,4 @@ object contextMod extends js.Object {
     def setState(addressValuePairs: js.Object): js.Promise[_] = js.native
     def setState(addressValuePairs: js.Object, timeout: Double): js.Promise[_] = js.native
   }
-  
 }
-

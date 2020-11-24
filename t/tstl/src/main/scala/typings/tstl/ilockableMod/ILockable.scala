@@ -2,9 +2,11 @@ package typings.tstl.ilockableMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ILockable extends js.Object {
+  
   /**
     * Locks the mutex.
     *
@@ -17,7 +19,8 @@ trait ILockable extends js.Object {
     * Therefore, never forget to calling the {@link unlock} function or utilize the
     * {@link UniqueLock.lock} function instead to ensure the safety.
     */
-  def lock(): js.Promise[Unit]
+  def lock(): js.Promise[Unit] = js.native
+  
   /**
     * Tries to lock the mutex.
     *
@@ -34,7 +37,8 @@ trait ILockable extends js.Object {
     *
     * @return Whether succeeded to monopoly the mutex or not.
     */
-  def try_lock(): js.Promise[Boolean]
+  def try_lock(): js.Promise[Boolean] = js.native
+  
   /**
     * Unlocks the mutex.
     *
@@ -56,14 +60,38 @@ trait ILockable extends js.Object {
     *
     * @throw {@link DomainError} when no one is acquiring the {@link lock write lock}.
     */
-  def unlock(): js.Promise[Unit]
+  def unlock(): js.Promise[Unit] = js.native
 }
-
 object ILockable {
+  
   @scala.inline
   def apply(lock: () => js.Promise[Unit], try_lock: () => js.Promise[Boolean], unlock: () => js.Promise[Unit]): ILockable = {
     val __obj = js.Dynamic.literal(lock = js.Any.fromFunction0(lock), try_lock = js.Any.fromFunction0(try_lock), unlock = js.Any.fromFunction0(unlock))
     __obj.asInstanceOf[ILockable]
   }
+  
+  @scala.inline
+  implicit class ILockableOps[Self <: ILockable] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setLock(value: () => js.Promise[Unit]): Self = this.set("lock", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setTry_lock(value: () => js.Promise[Boolean]): Self = this.set("try_lock", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setUnlock(value: () => js.Promise[Unit]): Self = this.set("unlock", js.Any.fromFunction0(value))
+  }
 }
-

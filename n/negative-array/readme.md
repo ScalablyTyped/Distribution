@@ -12,7 +12,7 @@ Negative array index support `array[-1]` using ES2015 Proxy
 | Keywords           | array, negative, index, indice, reverse, proxy, proxies, es2015 |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 5254 |
+| # downloads        | 667 |
 | # stars            | 0 |
 
 ## Links

@@ -2,11 +2,12 @@ package typings.videoJs.mod.default
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js", "mergeOptions")
 @js.native
 object mergeOptions extends js.Object {
+  
   /**
     * Deep-merge one or more options objects, recursively merging **only** plain
     * object properties.
@@ -150,4 +151,3 @@ object mergeOptions extends js.Object {
     option6: F
   ): A with B with C with D with E with F = js.native
 }
-

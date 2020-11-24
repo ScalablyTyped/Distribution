@@ -2,17 +2,17 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FilterType extends js.Object
-
 /**
   * Specifies whether filtering from the host application is applied when the data is retrieved.
   */
 @JSGlobal("Office.FilterType")
 @js.native
 object FilterType extends js.Object {
+  
   /**
     * Return all data (not filtered by the host application).
     */
@@ -24,6 +24,4 @@ object FilterType extends js.Object {
     */
   @js.native
   sealed trait OnlyVisible extends FilterType
-  
 }
-

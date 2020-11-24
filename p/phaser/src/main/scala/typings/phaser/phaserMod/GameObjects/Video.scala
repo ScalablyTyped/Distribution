@@ -3,7 +3,7 @@ package typings.phaser.phaserMod.GameObjects
 import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Video Game Object.
@@ -69,4 +69,3 @@ class Video protected ()
   def this(scene: Scene, x: Double, y: Double) = this()
   def this(scene: Scene, x: Double, y: Double, key: String) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Frame buffer used by the BaseRenderTexture
@@ -16,4 +16,3 @@ class Framebuffer protected ()
   extends typings.pixiJs.PIXI.Framebuffer {
   def this(width: Double, height: Double) = this()
 }
-

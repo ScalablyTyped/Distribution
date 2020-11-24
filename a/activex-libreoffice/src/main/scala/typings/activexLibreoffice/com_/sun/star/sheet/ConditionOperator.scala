@@ -12,7 +12,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used to specify the type of {@link XSheetCondition} . */
 /* Rewritten from type alias, can be one of: 
@@ -28,17 +28,20 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait ConditionOperator extends js.Object
-
 object ConditionOperator {
+  
   /** the value has to be between the two specified values. */
   @scala.inline
   def BETWEEN: `7` = 7.asInstanceOf[`7`]
+  
   /** value has to be equal to the specified value. */
   @scala.inline
   def EQUAL: `1` = 1.asInstanceOf[`1`]
+  
   /** the specified formula has to give a non-zero result. */
   @scala.inline
   def FORMULA: `9` = 9.asInstanceOf[`9`]
+  
   /**
     * the value has to be greater than the specified value.
     *
@@ -46,6 +49,7 @@ object ConditionOperator {
     */
   @scala.inline
   def GREATER: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * the value has to be greater than or equal to the specified value.
     *
@@ -53,6 +57,7 @@ object ConditionOperator {
     */
   @scala.inline
   def GREATER_EQUAL: `4` = 4.asInstanceOf[`4`]
+  
   /**
     * the value has to be less than the specified value.
     *
@@ -60,6 +65,7 @@ object ConditionOperator {
     */
   @scala.inline
   def LESS: `5` = 5.asInstanceOf[`5`]
+  
   /**
     * the value has to be less than or equal to the specified value.
     *
@@ -67,6 +73,7 @@ object ConditionOperator {
     */
   @scala.inline
   def LESS_EQUAL: `6` = 6.asInstanceOf[`6`]
+  
   /**
     * no cells are moved.
     *
@@ -82,9 +89,11 @@ object ConditionOperator {
     */
   @scala.inline
   def NONE: `0` = 0.asInstanceOf[`0`]
+  
   /** the value has to be outside of the two specified values. */
   @scala.inline
   def NOT_BETWEEN: `8` = 8.asInstanceOf[`8`]
+  
   /**
     * the value must not be equal to the specified value.
     *
@@ -93,4 +102,3 @@ object ConditionOperator {
   @scala.inline
   def NOT_EQUAL: `2` = 2.asInstanceOf[`2`]
 }
-

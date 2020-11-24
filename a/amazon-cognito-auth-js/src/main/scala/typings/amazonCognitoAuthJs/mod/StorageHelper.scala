@@ -3,7 +3,7 @@ package typings.amazonCognitoAuthJs.mod
 import typings.std.Storage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("amazon-cognito-auth-js", "StorageHelper")
 @js.native
@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation._
   * @returns the storage
   */
 class StorageHelper () extends js.Object {
+  
   /**
     * This is used to return the storage
     * @returns the storage
     */
   def getStorage(): Storage = js.native
 }
-

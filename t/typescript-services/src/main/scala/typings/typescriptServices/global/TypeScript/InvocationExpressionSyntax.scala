@@ -3,7 +3,7 @@ package typings.typescriptServices.global.TypeScript
 import typings.typescriptServices.TypeScript.IMemberExpressionSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.InvocationExpressionSyntax")
 @js.native
@@ -15,11 +15,10 @@ class InvocationExpressionSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSGlobal("TypeScript.InvocationExpressionSyntax")
 @js.native
 object InvocationExpressionSyntax extends js.Object {
+  
   def create1(expression: IMemberExpressionSyntax): typings.typescriptServices.TypeScript.InvocationExpressionSyntax = js.native
 }
-

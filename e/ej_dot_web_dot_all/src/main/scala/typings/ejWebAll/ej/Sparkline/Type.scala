@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Sparkline
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Type extends js.Object
-
 @JSGlobal("ej.Sparkline.Type")
 @js.native
 object Type extends js.Object {
+  
   //string
   @js.native
   sealed trait Area extends Type
@@ -29,6 +29,4 @@ object Type extends js.Object {
   //string
   @js.native
   sealed trait WinLoss extends Type
-  
 }
-

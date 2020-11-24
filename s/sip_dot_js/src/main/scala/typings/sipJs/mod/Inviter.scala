@@ -3,7 +3,7 @@ package typings.sipJs.mod
 import typings.sipJs.inviterOptionsMod.InviterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Inviter")
 @js.native
@@ -22,4 +22,3 @@ class Inviter protected ()
     options: InviterOptions
   ) = this()
 }
-

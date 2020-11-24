@@ -11,8 +11,8 @@ Transform stream to read line-by-line and write a string
 | Full name          | readline-transform |
 | Keywords           | stream, transform, readline, byline |
 | # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 382124 |
+| # dependents       | 6 |
+| # downloads        | 1475538 |
 | # stars            | 0 |
 
 ## Links

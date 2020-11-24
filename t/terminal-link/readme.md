@@ -10,9 +10,9 @@ Create clickable links in the terminal
 | ------------------ | :-------------: |
 | Full name          | terminal-link |
 | Keywords           | link, hyperlink, url, ansi, escape, terminal, term, console, command-line |
-| # releases         | 9 |
-| # dependents       | 176 |
-| # downloads        | 1903537 |
+| # releases         | 6 |
+| # dependents       | 288 |
+| # downloads        | 69872318 |
 | # stars            | 0 |
 
 ## Links

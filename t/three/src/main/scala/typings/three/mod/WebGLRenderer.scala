@@ -3,7 +3,7 @@ package typings.three.mod
 import typings.three.webGLRendererMod.WebGLRendererParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "WebGLRenderer")
 @js.native
@@ -14,4 +14,3 @@ class WebGLRenderer ()
   extends typings.three.webGLRendererMod.WebGLRenderer {
   def this(parameters: WebGLRendererParameters) = this()
 }
-

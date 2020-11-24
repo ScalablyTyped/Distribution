@@ -1,41 +1,27 @@
 package typings.unlCore.mod
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait Direction extends js.Object
-
-@JSImport("unl-core", "Direction")
-@js.native
-object Direction extends js.Object {
-  @js.native
-  sealed trait East extends Direction
+/* Rewritten from type alias, can be one of: 
+  - typings.unlCore.unlCoreStrings.N
+  - typings.unlCore.unlCoreStrings.S
+  - typings.unlCore.unlCoreStrings.E
+  - typings.unlCore.unlCoreStrings.W
+*/
+trait Direction extends js.Object
+object Direction {
   
-  @js.native
-  sealed trait North extends Direction
+  @scala.inline
+  def E: typings.unlCore.unlCoreStrings.E = "E".asInstanceOf[typings.unlCore.unlCoreStrings.E]
   
-  @js.native
-  sealed trait South extends Direction
+  @scala.inline
+  def N: typings.unlCore.unlCoreStrings.N = "N".asInstanceOf[typings.unlCore.unlCoreStrings.N]
   
-  @js.native
-  sealed trait West extends Direction
+  @scala.inline
+  def S: typings.unlCore.unlCoreStrings.S = "S".asInstanceOf[typings.unlCore.unlCoreStrings.S]
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[Direction with String] = js.native
-  /* "E" */ @js.native
-  object East extends TopLevel[East with String]
-  
-  /* "N" */ @js.native
-  object North extends TopLevel[North with String]
-  
-  /* "S" */ @js.native
-  object South extends TopLevel[South with String]
-  
-  /* "W" */ @js.native
-  object West extends TopLevel[West with String]
-  
+  @scala.inline
+  def W: typings.unlCore.unlCoreStrings.W = "W".asInstanceOf[typings.unlCore.unlCoreStrings.W]
 }
-

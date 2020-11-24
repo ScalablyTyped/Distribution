@@ -2,11 +2,12 @@ package typings.showdown.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("showdown", "removeExtension")
 @js.native
 object removeExtension extends js.Object {
+  
   /**
     * Remove an extension.
     *
@@ -14,4 +15,3 @@ object removeExtension extends js.Object {
     */
   def apply(name: String): Unit = js.native
 }
-

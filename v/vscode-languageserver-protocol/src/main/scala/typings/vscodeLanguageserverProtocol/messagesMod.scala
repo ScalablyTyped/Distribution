@@ -7,11 +7,12 @@ import typings.vscodeJsonrpc.mod.RequestType
 import typings.vscodeJsonrpc.mod.RequestType0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver-protocol/lib/messages", JSImport.Namespace)
 @js.native
 object messagesMod extends js.Object {
+  
   @js.native
   class ProtocolNotificationType[P, RO] protected () extends NotificationType[P, RO] {
     def this(method: String) = this()
@@ -26,6 +27,7 @@ object messagesMod extends js.Object {
   - typings.vscodeJsonrpc.mod.ProgressType because Inheritance from two classes. Inlined __ */ @js.native
   class ProtocolRequestType[P, R, PR, E, RO] protected () extends RequestType[P, R, E, RO] {
     def this(method: String) = this()
+    
     val __ : js.UndefOr[js.Tuple2[PR, _EM]] = js.native
   }
   
@@ -33,8 +35,7 @@ object messagesMod extends js.Object {
   - typings.vscodeJsonrpc.mod.ProgressType because Inheritance from two classes. Inlined __ */ @js.native
   class ProtocolRequestType0[R, PR, E, RO] protected () extends RequestType0[R, E, RO] {
     def this(method: String) = this()
+    
     val __ : js.UndefOr[js.Tuple2[PR, _EM]] = js.native
   }
-  
 }
-

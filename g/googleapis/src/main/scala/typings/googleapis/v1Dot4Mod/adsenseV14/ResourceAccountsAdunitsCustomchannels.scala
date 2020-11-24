@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Accounts$Adunits$Customchannels")
 @js.native
 class ResourceAccountsAdunitsCustomchannels protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adsense.accounts.adunits.customchannels.list
     * @desc List all custom channels which the specified ad unit belongs to.
@@ -49,4 +51,3 @@ class ResourceAccountsAdunitsCustomchannels protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCustomChannels]
   ): Unit = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.jupyterlabRendermime.attachmentmodelMod.IAttachmentModel.IOptions
 import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/rendermime", "AttachmentModel")
 @js.native
@@ -16,10 +16,10 @@ class AttachmentModel protected ()
     */
   def this(options: IOptions) = this()
 }
-
 @JSImport("@jupyterlab/rendermime", "AttachmentModel")
 @js.native
 object AttachmentModel extends js.Object {
+  
   /**
     * Get the data for an attachment.
     *
@@ -29,4 +29,3 @@ object AttachmentModel extends js.Object {
     */
   def getData(bundle: IMimeBundle): PartialJSONObject = js.native
 }
-

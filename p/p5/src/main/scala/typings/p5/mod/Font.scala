@@ -2,14 +2,16 @@ package typings.p5.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Font extends js.Object {
+  
   /**
     *   Underlying opentype font implementation
     */
   var font: js.Any = js.native
+  
   /**
     *   Returns a tight bounding box for the given text
     *   string using this font (currently only supports
@@ -29,6 +31,7 @@ trait Font extends js.Object {
   def textBounds(line: String, x: Double, y: Double, fontSize: js.UndefOr[scala.Nothing], options: js.Object): js.Object = js.native
   def textBounds(line: String, x: Double, y: Double, fontSize: Double): js.Object = js.native
   def textBounds(line: String, x: Double, y: Double, fontSize: Double, options: js.Object): js.Object = js.native
+  
   /**
     *   Computes an array of points following the path for
     *   specified text
@@ -56,4 +59,3 @@ trait Font extends js.Object {
   def textToPoints(txt: String, x: Double, y: Double, fontSize: Double): js.Array[_] = js.native
   def textToPoints(txt: String, x: Double, y: Double, fontSize: Double, options: js.Object): js.Array[_] = js.native
 }
-

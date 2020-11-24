@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Spreadsheet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CustomCellType extends js.Object
-
 @JSGlobal("ej.Spreadsheet.CustomCellType")
 @js.native
 object CustomCellType extends js.Object {
+  
   ///To insert the Button in cell.
   @js.native
   sealed trait Button extends CustomCellType
@@ -25,6 +25,4 @@ object CustomCellType extends js.Object {
   ///To insert the Dropdownlist in cell.
   @js.native
   sealed trait DropDownList extends CustomCellType
-  
 }
-

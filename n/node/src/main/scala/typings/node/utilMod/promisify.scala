@@ -2,12 +2,12 @@ package typings.node.utilMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("util", "promisify")
 @js.native
 object promisify extends js.Object {
-  val custom: js.Symbol = js.native
+  
   def apply(fn: js.Function): js.Function = js.native
   def apply(fn: js.Function1[/* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]): js.Function0[js.Promise[Unit]] = js.native
   def apply[T1](
@@ -59,5 +59,6 @@ object promisify extends js.Object {
     /* arg5 */ T5, 
     js.Promise[Unit]
   ] = js.native
+  
+  val custom: js.Symbol = js.native
 }
-

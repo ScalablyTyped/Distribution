@@ -8,11 +8,12 @@ import typings.std.Error
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @wordpress/element.@wordpress/element.Component<{}, {}, any> & {  occurrence :number | undefined} */
 @js.native
 trait Componentanyoccurrencenum extends js.Object {
+  
   /**
     * Called immediately before mounting occurs, and before `Component#render`.
     * Avoid introducing any side-effects or subscriptions in this method.
@@ -27,6 +28,7 @@ trait Componentanyoccurrencenum extends js.Object {
     * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var UNSAFE_componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
+  
   /**
     * Called when the component may be receiving new props.
     * React may call this even if props have not changed, so be sure to compare new and existing
@@ -44,6 +46,7 @@ trait Componentanyoccurrencenum extends js.Object {
     * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var UNSAFE_componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ js.Object, /* nextContext */ js.Any, Unit]] = js.native
+  
   /**
     * Called immediately before rendering when new props or state is received. Not called for the initial render.
     *
@@ -61,15 +64,18 @@ trait Componentanyoccurrencenum extends js.Object {
   var UNSAFE_componentWillUpdate: js.UndefOr[
     js.Function3[/* nextProps */ js.Object, /* nextState */ js.Object, /* nextContext */ js.Any, Unit]
   ] = js.native
+  
   /**
     * Catches exceptions generated in descendant components. Unhandled exceptions will cause
     * the entire component tree to unmount.
     */
   var componentDidCatch: js.UndefOr[js.Function2[/* error */ Error, /* errorInfo */ ErrorInfo, Unit]] = js.native
+  
   /**
     * Called immediately after a component is mounted. Setting state here will trigger re-rendering.
     */
   var componentDidMount: js.UndefOr[js.Function0[Unit]] = js.native
+  
   /**
     * Called immediately after updating occurs. Not called for the initial render.
     *
@@ -83,6 +89,7 @@ trait Componentanyoccurrencenum extends js.Object {
       Unit
     ]
   ] = js.native
+  
   /**
     * Called immediately before mounting occurs, and before `Component#render`.
     * Avoid introducing any side-effects or subscriptions in this method.
@@ -95,6 +102,7 @@ trait Componentanyoccurrencenum extends js.Object {
     * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
+  
   /**
     * Called when the component may be receiving new props.
     * React may call this even if props have not changed, so be sure to compare new and existing
@@ -110,11 +118,13 @@ trait Componentanyoccurrencenum extends js.Object {
     * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ js.Object, /* nextContext */ js.Any, Unit]] = js.native
+  
   /**
     * Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as
     * cancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.
     */
   var componentWillUnmount: js.UndefOr[js.Function0[Unit]] = js.native
+  
   /**
     * Called immediately before rendering when new props or state is received. Not called for the initial render.
     *
@@ -130,6 +140,7 @@ trait Componentanyoccurrencenum extends js.Object {
   var componentWillUpdate: js.UndefOr[
     js.Function3[/* nextProps */ js.Object, /* nextState */ js.Object, /* nextContext */ js.Any, Unit]
   ] = js.native
+  
   /**
     * If using the new style context, re-declare this in your class to be the
     * `React.ContextType` of your `static contextType`.
@@ -147,6 +158,10 @@ trait Componentanyoccurrencenum extends js.Object {
     */
   // TODO (TypeScript 3.0): unknown
   var context: js.Any = js.native
+  
+  def forceUpdate(): Unit = js.native
+  def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Runs before React applies the result of `render` to the document, and
     * returns an object to be given to componentDidUpdate. Useful for saving
@@ -156,39 +171,24 @@ trait Componentanyoccurrencenum extends js.Object {
     * lifecycle events from running.
     */
   var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ js.Object, /* prevState */ js.Object, _ | Null]] = js.native
+  
   var occurrence: js.UndefOr[Double] = js.native
+  
   // React.Props<T> is now deprecated, which means that the `children`
   // property is not available on `P` by default, even though you can
   // always pass children as variadic arguments to `createElement`.
   // In the future, if we can define its call signature conditionally
   // on the existence of `children` in `P`, then we should remove this.
   val props: ReadonlyReadonlyChildren = js.native
+  
   /**
     * @deprecated
     * https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs
     */
   var refs: StringDictionary[ReactInstance] = js.native
-  /**
-    * Called to determine whether the change in props and state should trigger a re-render.
-    *
-    * `Component` always returns true.
-    * `PureComponent` implements a shallow comparison on props and state and returns true if any
-    * props or states have changed.
-    *
-    * If false is returned, `Component#render`, `componentWillUpdate`
-    * and `componentDidUpdate` will not be called.
-    */
-  var shouldComponentUpdate: js.UndefOr[
-    js.Function3[
-      /* nextProps */ js.Object, 
-      /* nextState */ js.Object, 
-      /* nextContext */ js.Any, 
-      Boolean
-    ]
-  ] = js.native
-  def forceUpdate(): Unit = js.native
-  def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
+  
   def render(): ReactNode = js.native
+  
   // We MUST keep setState() as a unified signature because it allows proper checking of the method return type.
   // See: https://github.com/DefinitelyTyped/DefinitelyTyped/issues/18365#issuecomment-351013257
   // Also, the ` | S` allows intellisense to not be dumbisense
@@ -213,5 +213,23 @@ trait Componentanyoccurrencenum extends js.Object {
   def setState[K /* <: /* keyof {} */ String */](state: Null, callback: js.Function0[Unit]): Unit = js.native
   def setState[K /* <: /* keyof {} */ String */](state: Pick[js.Object, K]): Unit = js.native
   def setState[K /* <: /* keyof {} */ String */](state: Pick[js.Object, K], callback: js.Function0[Unit]): Unit = js.native
+  
+  /**
+    * Called to determine whether the change in props and state should trigger a re-render.
+    *
+    * `Component` always returns true.
+    * `PureComponent` implements a shallow comparison on props and state and returns true if any
+    * props or states have changed.
+    *
+    * If false is returned, `Component#render`, `componentWillUpdate`
+    * and `componentDidUpdate` will not be called.
+    */
+  var shouldComponentUpdate: js.UndefOr[
+    js.Function3[
+      /* nextProps */ js.Object, 
+      /* nextState */ js.Object, 
+      /* nextContext */ js.Any, 
+      Boolean
+    ]
+  ] = js.native
 }
-

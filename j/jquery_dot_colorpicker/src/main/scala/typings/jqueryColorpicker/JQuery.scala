@@ -6,10 +6,11 @@ import typings.jqueryColorpicker.jqueryColorpickerStrings.open
 import typings.jqueryColorpicker.jqueryColorpickerStrings.setColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends js.Object {
+  
   def colorpicker(): JQuery = js.native
   def colorpicker(method: String): JQuery = js.native
   def colorpicker(method: String, params: js.Any*): JQuery = js.native
@@ -23,4 +24,3 @@ trait JQuery extends js.Object {
   @JSName("colorpicker")
   def colorpicker_setColor(method: setColor, color: js.Any): JQuery = js.native
 }
-

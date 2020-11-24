@@ -26,44 +26,74 @@ import typings.oracleOraclejet.oracleOraclejetStrings.touchStart
 import typings.oracleOraclejet.oracleOraclejetStrings.zoom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojThematicMapSettableProperties[K1, K2, K3, D1, D2, D3] extends dvtBaseComponentSettableProperties {
+  
   var animationDuration: Double = js.native
+  
   var animationOnDisplay: auto | none = js.native
+  
   var areaData: (DataProvider[K1, D1]) | Null = js.native
+  
   var as: String = js.native
+  
   var focusRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
+  
   var hiddenCategories: js.Array[String] = js.native
+  
   var highlightMatch: any | all = js.native
+  
   var highlightedCategories: js.Array[String] = js.native
+  
   var hoverBehavior: dim | none = js.native
+  
   var hoverRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
+  
   var initialZooming: auto | none = js.native
+  
   var isolatedItem: K1 = js.native
+  
   var labelDisplay: on | off | auto = js.native
+  
   var labelType: long | short = js.native
+  
   var linkData: (DataProvider[K2, D2]) | Null = js.native
+  
   var mapProvider: Geo = js.native
+  
   var markerData: (DataProvider[K3, D3]) | Null = js.native
+  
   var markerZoomBehavior: zoom | fixed = js.native
+  
   var maxZoom: Double = js.native
+  
   var panning: auto | none = js.native
+  
   var renderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
+  
   var selection: js.Array[K1 | K2 | K3] = js.native
+  
   var selectionMode: single | multiple | none = js.native
+  
   var selectionRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
+  
   var styleDefaults: AreaSvgStyle = js.native
+  
   var tooltip: `27`[K1, K2, K3, D1, D2, D3] = js.native
+  
   var tooltipDisplay: auto | labelAndShortDesc | none | shortDesc = js.native
+  
   var touchResponse: touchStart | auto = js.native
+  
   @JSName("translations")
   var translations_ojThematicMapSettableProperties: LabelAndValue = js.native
+  
   var zooming: auto | none = js.native
 }
-
 object ojThematicMapSettableProperties {
+  
   @scala.inline
   def apply[K1, K2, K3, D1, D2, D3](
     animationDuration: Double,
@@ -94,98 +124,140 @@ object ojThematicMapSettableProperties {
     val __obj = js.Dynamic.literal(animationDuration = animationDuration.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as.asInstanceOf[js.Any], hiddenCategories = hiddenCategories.asInstanceOf[js.Any], highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories.asInstanceOf[js.Any], hoverBehavior = hoverBehavior.asInstanceOf[js.Any], initialZooming = initialZooming.asInstanceOf[js.Any], isolatedItem = isolatedItem.asInstanceOf[js.Any], labelDisplay = labelDisplay.asInstanceOf[js.Any], labelType = labelType.asInstanceOf[js.Any], mapProvider = mapProvider.asInstanceOf[js.Any], markerZoomBehavior = markerZoomBehavior.asInstanceOf[js.Any], maxZoom = maxZoom.asInstanceOf[js.Any], panning = panning.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], styleDefaults = styleDefaults.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], tooltipDisplay = tooltipDisplay.asInstanceOf[js.Any], touchResponse = touchResponse.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], zooming = zooming.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojThematicMapSettableProperties[K1, K2, K3, D1, D2, D3]]
   }
+  
   @scala.inline
   implicit class ojThematicMapSettablePropertiesOps[Self <: ojThematicMapSettableProperties[_, _, _, _, _, _], K1, K2, K3, D1, D2, D3] (val x: Self with (ojThematicMapSettableProperties[K1, K2, K3, D1, D2, D3])) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAnimationOnDisplay(value: auto | none): Self = this.set("animationOnDisplay", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAs(value: String): Self = this.set("as", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHiddenCategoriesVarargs(value: String*): Self = this.set("hiddenCategories", js.Array(value :_*))
+    
     @scala.inline
     def setHiddenCategories(value: js.Array[String]): Self = this.set("hiddenCategories", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHighlightMatch(value: any | all): Self = this.set("highlightMatch", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHighlightedCategoriesVarargs(value: String*): Self = this.set("highlightedCategories", js.Array(value :_*))
+    
     @scala.inline
     def setHighlightedCategories(value: js.Array[String]): Self = this.set("highlightedCategories", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHoverBehavior(value: dim | none): Self = this.set("hoverBehavior", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setInitialZooming(value: auto | none): Self = this.set("initialZooming", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIsolatedItem(value: K1): Self = this.set("isolatedItem", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLabelDisplay(value: on | off | auto): Self = this.set("labelDisplay", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLabelType(value: long | short): Self = this.set("labelType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMapProvider(value: Geo): Self = this.set("mapProvider", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMarkerZoomBehavior(value: zoom | fixed): Self = this.set("markerZoomBehavior", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPanning(value: auto | none): Self = this.set("panning", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSelectionVarargs(value: (K1 | K2 | K3)*): Self = this.set("selection", js.Array(value :_*))
+    
     @scala.inline
     def setSelection(value: js.Array[K1 | K2 | K3]): Self = this.set("selection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSelectionMode(value: single | multiple | none): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStyleDefaults(value: AreaSvgStyle): Self = this.set("styleDefaults", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTooltip(value: `27`[K1, K2, K3, D1, D2, D3]): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTooltipDisplay(value: auto | labelAndShortDesc | none | shortDesc): Self = this.set("tooltipDisplay", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTouchResponse(value: touchStart | auto): Self = this.set("touchResponse", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTranslations(value: LabelAndValue): Self = this.set("translations", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setZooming(value: auto | none): Self = this.set("zooming", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAreaData(value: DataProvider[K1, D1]): Self = this.set("areaData", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAreaDataNull: Self = this.set("areaData", null)
+    
     @scala.inline
     def setFocusRenderer(value: /* context */ RendererContext[K1, K2, K3, D1, D2, D3] => InsertSVGElement | Unit): Self = this.set("focusRenderer", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setFocusRendererNull: Self = this.set("focusRenderer", null)
+    
     @scala.inline
     def setHoverRenderer(value: /* context */ RendererContext[K1, K2, K3, D1, D2, D3] => InsertSVGElement | Unit): Self = this.set("hoverRenderer", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setHoverRendererNull: Self = this.set("hoverRenderer", null)
+    
     @scala.inline
     def setLinkData(value: DataProvider[K2, D2]): Self = this.set("linkData", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLinkDataNull: Self = this.set("linkData", null)
+    
     @scala.inline
     def setMarkerData(value: DataProvider[K3, D3]): Self = this.set("markerData", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMarkerDataNull: Self = this.set("markerData", null)
+    
     @scala.inline
     def setRenderer(value: /* context */ RendererContext[K1, K2, K3, D1, D2, D3] => InsertSVGElement | Unit): Self = this.set("renderer", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRendererNull: Self = this.set("renderer", null)
+    
     @scala.inline
     def setSelectionRenderer(value: /* context */ RendererContext[K1, K2, K3, D1, D2, D3] => InsertSVGElement | Unit): Self = this.set("selectionRenderer", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSelectionRendererNull: Self = this.set("selectionRenderer", null)
   }
-  
 }
-

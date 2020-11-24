@@ -3,11 +3,12 @@ package typings.node.workerThreadsMod
 import typings.node.vmMod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("worker_threads", "moveMessagePortToContext")
 @js.native
 object moveMessagePortToContext extends js.Object {
+  
   /**
     * Transfer a `MessagePort` to a different `vm` Context. The original `port`
     * object will be rendered unusable, and the returned `MessagePort` instance will
@@ -24,4 +25,3 @@ object moveMessagePortToContext extends js.Object {
     */
   def apply(port: MessagePort, context: Context): MessagePort = js.native
 }
-

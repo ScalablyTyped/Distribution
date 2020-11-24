@@ -2,9 +2,10 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object data {
+  
   /**
     * a string that states in what way a {@link DataSequence} should be used. If this property is an empty string, no proposition about usage is made.
     *
@@ -43,16 +44,21 @@ package object data {
     * **values-max **: the maximum value of a series of values. In a stock-chart this would be the highest course that occurred during trading.
     */
   type DataSequenceRole = java.lang.String
+  
   /** describes a service that allows reading two-dimensional data in the form of a sequence of DataSequences. */
   type DataSink = typings.activexLibreoffice.com_.sun.star.chart2.data.XDataSink
+  
   /** describes a service that allows reading two-dimensional data in the form of a sequence of DataSequences. */
   type DataSource = typings.activexLibreoffice.com_.sun.star.chart2.data.XDataSource
+  
   /** describes a container for a sequence pair of value-sequences, one for a label and one for the associated data. */
   type LabeledDataSequence = typings.activexLibreoffice.com_.sun.star.chart2.data.XLabeledDataSequence2
+  
   /**
     * A selection change listener that is attached to a {@link XRangeHighlighter} in order to get notified about selection changes that affect range
     * highlighting.
     */
   type RangeHighlightListener = typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
+  
   type RangeHighlighter = typings.activexLibreoffice.com_.sun.star.chart2.data.XRangeHighlighter
 }

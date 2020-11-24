@@ -22,7 +22,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a set of properties to access the defaults of a drawing document
@@ -36,8 +36,8 @@ trait Defaults
      with ShadowProperties
      with ConnectorProperties
      with MeasureProperties
-
 object Defaults {
+  
   @scala.inline
   def apply(
     BorderDistance: Double,
@@ -281,4 +281,3 @@ object Defaults {
     __obj.asInstanceOf[Defaults]
   }
 }
-

@@ -10,9 +10,9 @@ Asynchronous HTTP microservices
 | ------------------ | :-------------: |
 | Full name          | micro |
 | Keywords           | micro, service, microservice, serverless, API |
-| # releases         | 15 |
-| # dependents       | 326 |
-| # downloads        | 2854748 |
+| # releases         | 6 |
+| # dependents       | 339 |
+| # downloads        | 3527593 |
 | # stars            | 47 |
 
 ## Links

@@ -12,7 +12,7 @@ A JavaScript utility to solve sudokus.
 | Keywords           | sudoku, puzzle, solver |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 391 |
+| # downloads        | 2713 |
 | # stars            | 0 |
 
 ## Links

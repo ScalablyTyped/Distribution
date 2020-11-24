@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PointColor extends js.Object
-
 @JSGlobal("BABYLON.PointColor")
 @js.native
 object PointColor extends js.Object {
+  
   /** color value */
   @js.native
   sealed trait Color extends PointColor
@@ -25,6 +25,4 @@ object PointColor extends js.Object {
   /** uv value */
   @js.native
   sealed trait UV extends PointColor
-  
 }
-

@@ -7,11 +7,12 @@ import typings.std.Parameters
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SagaMiddleware[C /* <: js.Object */]
   extends Middleware[js.Object, js.Any, Dispatch[AnyAction]] {
+  
   /**
     * Dynamically run `saga`. Can be used to run Sagas **only after** the
     * `applyMiddleware` phase.
@@ -55,6 +56,6 @@ trait SagaMiddleware[C /* <: js.Object */]
     saga: S,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<S> is not an array type */ args: Parameters[S]
   ): js.Any = js.native
+  
   def setContext(props: Partial[C]): Unit = js.native
 }
-

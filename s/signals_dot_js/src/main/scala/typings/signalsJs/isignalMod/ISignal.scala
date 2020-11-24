@@ -5,10 +5,11 @@ import typings.signalsJs.ioncesignalMod.IOnceSignal
 import typings.signalsJs.islotMod.ISlot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ISignal extends IOnceSignal {
+  
   /**
     * Subscribes a listener for the signal.
     * @param    listener A function with arguments
@@ -18,9 +19,7 @@ trait ISignal extends IOnceSignal {
     */
   def add(listener: js.Function): ISlot = js.native
 }
-
 @JSImport("signals.js/lib/org/osflash/signals/ISignal", "ISignal")
 @js.native
 object ISignal
   extends TopLevel[js.Symbol]
-

@@ -8,7 +8,7 @@ import typings.akamaiEdgeworkers.anon.Domain
 import typings.akamaiEdgeworkers.anon.ToUTCString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Query, add, and remove cookies.
@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cookies", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * Provides access to the Cookies header of a request, allowing the
     * addition, removal, or modification of cookie values.
@@ -42,34 +43,40 @@ object mod extends js.Object {
     def this(header: String, options: js.Object) = this()
     def this(header: js.Array[String], options: js.Object) = this()
     def this(header: Null, options: js.Object) = this()
+    
     /**
       * Adds a cookie.
       * @param name Name of the cookie
       * @param value Value of the cookie.
       */
     def add(name: String, value: String): Unit = js.native
+    
     /**
       * Removes all cookies with a given name.
       *
       * @param name Cookie name.
       */
     def delete(name: String): Unit = js.native
+    
     /**
       * Get the first instance of the cookie matching the given name.
       *
       * @param name Cookie name.
       */
     def get(name: String): js.UndefOr[String] = js.native
+    
     /**
       * Get all Instances of the cookie matching the given name.
       *
       * @param name cookie name.
       */
     def getAll(name: String): js.Array[String] = js.native
+    
     /**
       * Get all names of existing cookies held by this Cookies object.
       */
     def names(): js.Array[String] = js.native
+    
     /**
       * Returns the string representation to use when setting the Cookie
       * header, encoding values by default.
@@ -87,21 +94,29 @@ object mod extends js.Object {
     */
   class SetCookie () extends js.Object {
     def this(opts: Domain) = this()
+    
     var domain: String = js.native
+    
     var expires: ToUTCString = js.native
+    
     var httpOnly: Boolean = js.native
+    
     var maxAge: Double = js.native
+    
     var name: String = js.native
+    
     var path: String = js.native
+    
     var sameSite: Strict | Lax | None | `true` = js.native
+    
     var secure: Boolean = js.native
-    var value: String = js.native
+    
     /**
       * Returns the string representation to use when setting the Set-Cookie
       * header, encoding values by default.
       */
     def toHeader(): String = js.native
+    
+    var value: String = js.native
   }
-  
 }
-

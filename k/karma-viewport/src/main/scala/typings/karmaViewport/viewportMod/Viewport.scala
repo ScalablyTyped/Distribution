@@ -5,7 +5,7 @@ import typings.karmaViewport.anon.ReadonlyViewportConfigura
 import typings.std.HTMLIFrameElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("karma-viewport/dist/adapter/viewport", "Viewport")
 @js.native
@@ -19,14 +19,7 @@ class Viewport protected () extends js.Object {
     * @param parent - Initialization context
     */
   def this(config: ViewportConfiguration, parent: Window) = this()
-  /**
-    * Viewport configuration
-    */
-  var config: ReadonlyViewportConfigura = js.native
-  /**
-    * Viewport context
-    */
-  var context: HTMLIFrameElement = js.native
+  
   /**
     * Execute a callback for all breakpoints between the first and last given
     *
@@ -47,6 +40,17 @@ class Viewport protected () extends js.Object {
   def between[T /* <: js.Promise[_] */](first: String, last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
   @JSName("between")
   def between_T_Unit[T](first: String, last: String, cb: ViewportCallback[T]): Unit = js.native
+  
+  /**
+    * Viewport configuration
+    */
+  var config: ReadonlyViewportConfigura = js.native
+  
+  /**
+    * Viewport context
+    */
+  var context: HTMLIFrameElement = js.native
+  
   /**
     * Execute a callback for all breakpoints
     *
@@ -62,6 +66,7 @@ class Viewport protected () extends js.Object {
   def each[T /* <: js.Promise[_] */](cb: ViewportCallback[T]): js.Promise[Unit] = js.native
   @JSName("each")
   def each_T_Unit[T](cb: ViewportCallback[T]): Unit = js.native
+  
   /**
     * Execute a callback starting at the given breakpoint
     *
@@ -78,6 +83,7 @@ class Viewport protected () extends js.Object {
   def from[T /* <: js.Promise[_] */](first: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
   @JSName("from")
   def from_T_Unit[T](first: String, cb: ViewportCallback[T]): Unit = js.native
+  
   /**
     * Load and embed document into viewport
     *
@@ -87,6 +93,7 @@ class Viewport protected () extends js.Object {
     */
   def load(url: String): js.Promise[Unit] = js.native
   def load(url: String, cb: js.Function0[Unit]): js.Promise[Unit] = js.native
+  
   /**
     * Change viewport offset (scroll within iframe)
     *
@@ -95,10 +102,12 @@ class Viewport protected () extends js.Object {
     */
   def offset(x: Double): Unit = js.native
   def offset(x: Double, y: Double): Unit = js.native
+  
   /**
     * Reset viewport
     */
   def reset(): Unit = js.native
+  
   def set(breakpoint: String): Unit = js.native
   /**
     * Set viewport to width (and height) or breakpoint name
@@ -108,6 +117,7 @@ class Viewport protected () extends js.Object {
     */
   def set(width: Double): Unit = js.native
   def set(width: Double, height: Double): Unit = js.native
+  
   /**
     * Execute a callback ending at the given breakpoint
     *
@@ -125,4 +135,3 @@ class Viewport protected () extends js.Object {
   @JSName("to")
   def to_T_Unit[T](last: String, cb: ViewportCallback[T]): Unit = js.native
 }
-

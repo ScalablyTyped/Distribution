@@ -10,9 +10,9 @@ An SDK for making and publishing Stremio add-ons
 | ------------------ | :-------------: |
 | Full name          | stremio-addon-sdk |
 | Keywords           | stremio, addons, video, streaming |
-| # releases         | 30 |
+| # releases         | 20 |
 | # dependents       | 2 |
-| # downloads        | 4961 |
+| # downloads        | 3854 |
 | # stars            | 0 |
 
 ## Links

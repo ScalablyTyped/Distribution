@@ -4,29 +4,27 @@ import typings.typescriptCollections.utilMod.IEqualsFunction
 import typings.typescriptCollections.utilMod.ILoopFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-collections/dist/lib/Stack", JSImport.Namespace)
 @js.native
 object stackMod extends js.Object {
+  
   @js.native
   trait Stack[T] extends js.Object {
-    /**
-      * List containing the elements.
-      * @type collections.LinkedList
-      * @private
-      */
-    var list: js.Any = js.native
+    
     /**
       * Pushes an item onto the top of this stack.
       * @param {Object} elem the element to be pushed onto this stack.
       * @return {boolean} true if the element was pushed or false if it is undefined.
       */
     def add(elem: T): Boolean = js.native
+    
     /**
       * Removes all of the elements from this stack.
       */
     def clear(): Unit = js.native
+    
     /**
       * Returns true if this stack contains the specified element.
       * <p>If the elements inside this stack are
@@ -47,6 +45,7 @@ object stackMod extends js.Object {
       */
     def contains(elem: T): Boolean = js.native
     def contains(elem: T, equalsFunction: IEqualsFunction[T]): Boolean = js.native
+    
     /**
       * Executes the provided function once for each element present in this stack in
       * LIFO order.
@@ -55,12 +54,21 @@ object stackMod extends js.Object {
       * optionally return false.
       */
     def forEach(callback: ILoopFunction[T]): Unit = js.native
+    
     /**
       * Checks if this stack is empty.
       * @return {boolean} true if and only if this stack contains no items; false
       * otherwise.
       */
     def isEmpty(): Boolean = js.native
+    
+    /**
+      * List containing the elements.
+      * @type collections.LinkedList
+      * @private
+      */
+    var list: js.Any = js.native
+    
     /**
       * Looks at the object at the top of this stack without removing it from the
       * stack.
@@ -68,18 +76,21 @@ object stackMod extends js.Object {
       * stack is empty.
       */
     def peek(): js.UndefOr[T] = js.native
+    
     /**
       * Removes the object at the top of this stack and returns that object.
       * @return {*} the object at the top of this stack or undefined if the
       * stack is empty.
       */
     def pop(): js.UndefOr[T] = js.native
+    
     /**
       * Pushes an item onto the top of this stack.
       * @param {Object} elem the element to be pushed onto this stack.
       * @return {boolean} true if the element was pushed or false if it is undefined.
       */
     def push(elem: T): Boolean = js.native
+    
     /**
       * Returns the number of elements in this stack.
       * @return {number} the number of elements in this stack.
@@ -96,6 +107,4 @@ object stackMod extends js.Object {
     * @constructor
     */
   class default[T] () extends Stack[T]
-  
 }
-

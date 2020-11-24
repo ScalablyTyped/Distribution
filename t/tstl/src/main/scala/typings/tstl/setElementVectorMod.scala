@@ -8,11 +8,12 @@ import typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator
 import typings.tstl.vectorContainerMod.VectorContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/internal/container/associative/SetElementVector", JSImport.Namespace)
 @js.native
 object setElementVectorMod extends js.Object {
+  
   @js.native
   class SetElementVector[Key, Unique /* <: Boolean */, Source /* <: ITreeSet[Key, Unique, Source, Iterator[Key, Unique, Source], ReverseIterator[Key, Unique, Source]] */] protected () extends VectorContainer[
           Key, 
@@ -22,17 +23,18 @@ object setElementVectorMod extends js.Object {
           ReverseIterator[Key, Unique, Source]
         ] {
     def this(associative: Source) = this()
+    
     var associative_ : js.Any = js.native
   }
-  
   @js.native
   object SetElementVector extends js.Object {
+    
     /**
       * Iterator of set container storing elements in a vector.
       *
-      * @type Key Key type
-      * @type Unique Whether duplicated key is blocked or not
-      * @type Source Source container type
+      * @template Key Key type
+      * @template Unique Whether duplicated key is blocked or not
+      * @template Source Source container type
       *
       * @author Jeongho Nam - https://github.com/samchon
       */
@@ -50,9 +52,9 @@ object setElementVectorMod extends js.Object {
     /**
       * Reverse iterator of set container storing elements in a vector.
       *
-      * @type Key Key type
-      * @type Unique Whether duplicated key is blocked or not
-      * @type Source Source container type
+      * @template Key Key type
+      * @template Unique Whether duplicated key is blocked or not
+      * @template Source Source container type
       *
       * @author Jeongho Nam - https://github.com/samchon
       */
@@ -66,8 +68,5 @@ object setElementVectorMod extends js.Object {
               ReverseIterator[Key, Unique, Source], 
               Key
             ]
-    
   }
-  
 }
-

@@ -1,87 +1,102 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CameraInputsManager[TCamera /* <: Camera */] extends js.Object {
+  
   var _addCheckInputs: js.Any = js.native
-  /**
-    * Defines the list of inputs attahed to the camera.
-    */
-  var attached: CameraInputsMap[TCamera] = js.native
-  /**
-    * Defines the dom element the camera is collecting inputs from.
-    * This is null if the controls have not been attached.
-    */
-  var attachedElement: Nullable[HTMLElement] = js.native
-  /**
-    * Defined the camera the input manager belongs to.
-    */
-  var camera: TCamera = js.native
-  /**
-    * Defines whether event caught by the controls should call preventdefault() (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
-    */
-  var noPreventDefault: Boolean = js.native
+  
   /**
     * Add an input method to a camera
-    * @see http://doc.babylonjs.com/how_to/customizing_camera_inputs
+    * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
     * @param input camera input method
     */
   def add(input: ICameraInput[TCamera]): Unit = js.native
+  
   /**
     * Attach the current manager inputs controls to a specific dom element to listen the events from.
     * @param element Defines the dom element to collect the events from
     * @param noPreventDefault Defines whether event caught by the controls should call preventdefault() (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
     */
-  def attachElement(element: HTMLElement): Unit = js.native
-  def attachElement(element: HTMLElement, noPreventDefault: Boolean): Unit = js.native
+  def attachElement(): Unit = js.native
+  def attachElement(noPreventDefault: Boolean): Unit = js.native
+  
   /**
     * Attach the input controls to the currently attached dom element to listen the events from.
     * @param input Defines the input to attach
     */
   def attachInput(input: ICameraInput[TCamera]): Unit = js.native
+  
+  /**
+    * Defines the list of inputs attahed to the camera.
+    */
+  var attached: CameraInputsMap[TCamera] = js.native
+  
+  /**
+    * Defines the dom element the camera is collecting inputs from.
+    * This is null if the controls have not been attached.
+    */
+  var attachedToElement: Boolean = js.native
+  
+  /**
+    * Defined the camera the input manager belongs to.
+    */
+  var camera: TCamera = js.native
+  
   /**
     * Update the current camera state depending on the inputs that have been used this frame.
     * This is a dynamically created lambda to avoid the performance penalty of looping for inputs in the render loop.
     */
   def checkInputs(): Unit = js.native
+  
   /**
     * Remove all attached input methods from a camera
     */
   def clear(): Unit = js.native
+  
   /**
     * Detach the current manager inputs controls from a specific dom element.
     * @param element Defines the dom element to collect the events from
     * @param disconnect Defines whether the input should be removed from the current list of attached inputs
     */
-  def detachElement(element: HTMLElement): Unit = js.native
-  def detachElement(element: HTMLElement, disconnect: Boolean): Unit = js.native
+  def detachElement(): Unit = js.native
+  def detachElement(disconnect: Boolean): Unit = js.native
+  
+  /**
+    * Defines whether event caught by the controls should call preventdefault() (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
+    */
+  var noPreventDefault: Boolean = js.native
+  
   /**
     * Parses an input manager serialized JSON to restore the previous list of inputs
     * and states associated to a camera.
     * @param parsedCamera Defines the JSON to parse
     */
   def parse(parsedCamera: js.Any): Unit = js.native
+  
   /**
     * Rebuild the dynamic inputCheck function from the current list of
     * defined inputs in the manager.
     */
   def rebuildInputCheck(): Unit = js.native
+  
   /**
     * Remove a specific input method from a camera
     * example: camera.inputs.remove(camera.inputs.attached.mouse);
     * @param inputToRemove camera input method
     */
   def remove(inputToRemove: ICameraInput[TCamera]): Unit = js.native
+  
   /**
     * Remove a specific input type from a camera
     * example: camera.inputs.remove("ArcRotateCameraGamepadInput");
     * @param inputType the type of the input to remove
     */
   def removeByType(inputType: String): Unit = js.native
+  
   /**
     * Serialize the current input manager attached to a camera.
     * This ensures than once parsed,
@@ -90,4 +105,3 @@ trait CameraInputsManager[TCamera /* <: Camera */] extends js.Object {
     */
   def serialize(serializedCamera: js.Any): Unit = js.native
 }
-

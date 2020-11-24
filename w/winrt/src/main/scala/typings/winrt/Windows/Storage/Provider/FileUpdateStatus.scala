@@ -2,14 +2,14 @@ package typings.winrt.Windows.Storage.Provider
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FileUpdateStatus extends js.Object
-
 @JSGlobal("Windows.Storage.Provider.FileUpdateStatus")
 @js.native
 object FileUpdateStatus extends js.Object {
+  
   @js.native
   sealed trait complete extends FileUpdateStatus
   
@@ -27,6 +27,4 @@ object FileUpdateStatus extends js.Object {
   
   @js.native
   sealed trait userInputNeeded extends FileUpdateStatus
-  
 }
-

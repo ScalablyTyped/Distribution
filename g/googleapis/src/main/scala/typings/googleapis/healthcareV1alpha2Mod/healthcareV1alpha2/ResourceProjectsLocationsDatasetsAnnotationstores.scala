@@ -6,14 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha2", "healthcare_v1alpha2.Resource$Projects$Locations$Datasets$Annotationstores")
 @js.native
 class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var annotations: ResourceProjectsLocationsDatasetsAnnotationstoresAnnotations = js.native
+  
   var context: APIRequestContext = js.native
+  
   /**
     * healthcare.projects.locations.datasets.annotationStores.create
     * @desc Creates a new Annotation store within the parent dataset.
@@ -47,6 +50,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends js.
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnnotationStore]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.annotationStores.delete
     * @desc Deletes the specified Annotation store and removes all annotations
@@ -79,6 +83,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends js.
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.annotationStores.get
     * @desc Gets the specified Annotation store or returns NOT_FOUND if it does
@@ -111,6 +116,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends js.
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnnotationStore]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.annotationStores.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns NOT_FOUND
@@ -151,6 +157,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends js.
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.annotationStores.list
     * @desc Lists the Annotation stores in the given dataset for a source
@@ -186,6 +193,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends js.
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListAnnotationStoresResponse]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.annotationStores.patch
     * @desc Updates the specified Annotation store.
@@ -219,6 +227,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends js.
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAnnotationStore]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.annotationStores.setIamPolicy
     * @desc POLICIES Sets the access control policy for a resource. Replaces
@@ -257,6 +266,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends js.
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.annotationStores.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -297,4 +307,3 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends js.
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

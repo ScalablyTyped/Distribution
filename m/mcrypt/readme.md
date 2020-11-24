@@ -12,7 +12,7 @@ MCrypt bindings
 | Keywords           | mcrypt, crypto |
 | # releases         | 2 |
 | # dependents       | 13 |
-| # downloads        | 142676 |
+| # downloads        | 125438 |
 | # stars            | 4 |
 
 ## Links

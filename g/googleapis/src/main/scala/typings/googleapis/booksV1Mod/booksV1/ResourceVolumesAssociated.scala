@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Volumes$Associated")
 @js.native
 class ResourceVolumesAssociated protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * books.volumes.associated.list
     * @desc Return a list of associated books.
@@ -46,4 +48,3 @@ class ResourceVolumesAssociated protected () extends js.Object {
     callback: BodyResponseCallback[SchemaVolumes]
   ): Unit = js.native
 }
-

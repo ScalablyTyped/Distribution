@@ -4,11 +4,12 @@ import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("material-ui/svg-icons/action/picture-in-picture-alt", JSImport.Namespace)
 @js.native
 object pictureInPictureAltMod extends js.Object {
+  
   @js.native
   class ActionPictureInPictureAlt ()
     extends Component[SvgIconProps, js.Object, js.Any]
@@ -16,6 +17,4 @@ object pictureInPictureAltMod extends js.Object {
   @js.native
   class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
-  
 }
-

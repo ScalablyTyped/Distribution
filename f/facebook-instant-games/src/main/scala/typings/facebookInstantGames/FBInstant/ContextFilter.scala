@@ -2,7 +2,7 @@ package typings.facebookInstantGames.FBInstant
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A filter that may be applied to a Context Choose operation
@@ -16,13 +16,14 @@ import scala.scalajs.js.annotation._
   - typings.facebookInstantGames.facebookInstantGamesStrings.NEW_PLAYERS_ONLY
 */
 trait ContextFilter extends js.Object
-
 object ContextFilter {
+  
   @scala.inline
   def INCLUDE_EXISTING_CHALLENGES: typings.facebookInstantGames.facebookInstantGamesStrings.INCLUDE_EXISTING_CHALLENGES = "INCLUDE_EXISTING_CHALLENGES".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.INCLUDE_EXISTING_CHALLENGES]
+  
   @scala.inline
   def NEW_CONTEXT_ONLY: typings.facebookInstantGames.facebookInstantGamesStrings.NEW_CONTEXT_ONLY = "NEW_CONTEXT_ONLY".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.NEW_CONTEXT_ONLY]
+  
   @scala.inline
   def NEW_PLAYERS_ONLY: typings.facebookInstantGames.facebookInstantGamesStrings.NEW_PLAYERS_ONLY = "NEW_PLAYERS_ONLY".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.NEW_PLAYERS_ONLY]
 }
-

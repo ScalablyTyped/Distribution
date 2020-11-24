@@ -3,11 +3,12 @@ package typings.forkTsCheckerWebpackPlugin.typeScriptEmbeddedExtensionMod
 import typings.forkTsCheckerWebpackPlugin.typeScriptExtensionMod.TypeScriptExtension
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/extension/TypeScriptEmbeddedExtension", "createTypeScriptEmbeddedExtension")
 @js.native
 object createTypeScriptEmbeddedExtension extends js.Object {
+  
   /**
     * It handles most of the logic required to process embedded TypeScript code (like in Vue components or MDX)
     *
@@ -18,4 +19,3 @@ object createTypeScriptEmbeddedExtension extends js.Object {
     */
   def apply(hasEmbeddedExtensionsGetEmbeddedSource: TypeScriptEmbeddedExtensionHost): TypeScriptExtension = js.native
 }
-

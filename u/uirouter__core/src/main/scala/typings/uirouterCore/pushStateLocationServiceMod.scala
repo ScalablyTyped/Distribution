@@ -5,15 +5,18 @@ import typings.uirouterCore.coreservicesMod.LocationConfig
 import typings.uirouterCore.routerMod.UIRouter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/vanilla/pushStateLocationService", JSImport.Namespace)
 @js.native
 object pushStateLocationServiceMod extends js.Object {
+  
   @js.native
   class PushStateLocationService protected () extends BaseLocationServices {
     def this(router: UIRouter) = this()
+    
     var _config: LocationConfig = js.native
+    
     /**
       * Gets the base prefix without:
       * - trailing slash
@@ -32,6 +35,4 @@ object pushStateLocationServiceMod extends js.Object {
       */
     var _getBasePrefix: js.Any = js.native
   }
-  
 }
-

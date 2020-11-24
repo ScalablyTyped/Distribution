@@ -2,13 +2,15 @@ package typings.jsuri
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object jsuri extends js.Object {
+    
     @js.native
     /**
       * Creates a new Uri object
@@ -19,8 +21,5 @@ object global extends js.Object {
       extends typings.jsuri.jsuri.Uri {
       def this(str: String) = this()
     }
-    
   }
-  
 }
-

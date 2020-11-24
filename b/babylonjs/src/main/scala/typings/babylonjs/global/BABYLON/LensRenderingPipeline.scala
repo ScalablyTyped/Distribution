@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.LensRenderingPipeline")
 @js.native
@@ -40,8 +40,14 @@ class LensRenderingPipeline protected ()
     name: String,
     parameters: js.Any,
     scene: typings.babylonjs.BABYLON.Scene,
+    ratio: js.UndefOr[scala.Nothing],
+    cameras: js.Array[typings.babylonjs.BABYLON.Camera]
+  ) = this()
+  def this(
+    name: String,
+    parameters: js.Any,
+    scene: typings.babylonjs.BABYLON.Scene,
     ratio: Double,
     cameras: js.Array[typings.babylonjs.BABYLON.Camera]
   ) = this()
 }
-

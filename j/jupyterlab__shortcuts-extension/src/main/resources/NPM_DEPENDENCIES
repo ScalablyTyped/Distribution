@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/shortcuts-extension" : "2.1.2"
+      "@jupyterlab/shortcuts-extension" : "2.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/shortcuts-extension" : "2.1.2"
+      "@jupyterlab/shortcuts-extension" : "2.2.6"
     }
   ],
   "compile-devDependencies" : [

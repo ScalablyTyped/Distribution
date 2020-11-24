@@ -7,7 +7,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.TopItems
 import typings.officeJsPreview.officeJsPreviewStrings.TopPercent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ConditionalTopBottomRule extends js.Object {
+  
   /**
     *
     * The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks.
@@ -24,6 +25,7 @@ trait ConditionalTopBottomRule extends js.Object {
     * [Api set: ExcelApi 1.6]
     */
   var rank: Double = js.native
+  
   /**
     *
     * Format values based on the top or bottom rank.
@@ -32,8 +34,8 @@ trait ConditionalTopBottomRule extends js.Object {
     */
   var `type`: ConditionalTopBottomCriterionType | Invalid | TopItems | TopPercent | BottomItems | BottomPercent = js.native
 }
-
 object ConditionalTopBottomRule {
+  
   @scala.inline
   def apply(
     rank: Double,
@@ -43,24 +45,28 @@ object ConditionalTopBottomRule {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalTopBottomRule]
   }
+  
   @scala.inline
   implicit class ConditionalTopBottomRuleOps[Self <: ConditionalTopBottomRule] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setRank(value: Double): Self = this.set("rank", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(
       value: ConditionalTopBottomCriterionType | Invalid | TopItems | TopPercent | BottomItems | BottomPercent
     ): Self = this.set("type", value.asInstanceOf[js.Any])
   }
-  
 }
-

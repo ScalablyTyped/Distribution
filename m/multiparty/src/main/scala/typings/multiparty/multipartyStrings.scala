@@ -2,9 +2,25 @@ package typings.multiparty
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multipartyStrings {
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def field: field = "field".asInstanceOf[field]
+  
+  @scala.inline
+  def part: part = "part".asInstanceOf[part]
+  
+  @scala.inline
+  def progress: progress = "progress".asInstanceOf[progress]
+  
   @js.native
   sealed trait close extends js.Object
   
@@ -19,16 +35,4 @@ object multipartyStrings {
   
   @js.native
   sealed trait progress extends js.Object
-  
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def field: field = "field".asInstanceOf[field]
-  @scala.inline
-  def part: part = "part".asInstanceOf[part]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
 }
-

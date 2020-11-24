@@ -10,9 +10,9 @@ List of binary file extensions
 | ------------------ | :-------------: |
 | Full name          | binary-extensions |
 | Keywords           | binary, extensions, extension, file, json, list, array |
-| # releases         | 5 |
-| # dependents       | 60 |
-| # downloads        | 465444727 |
+| # releases         | 6 |
+| # dependents       | 82 |
+| # downloads        | 786325277 |
 | # stars            | 1 |
 
 ## Links

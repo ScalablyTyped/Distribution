@@ -7,20 +7,18 @@ import typings.semanticUiReact.searchSearchMod.SearchComponent
 import typings.semanticUiReact.searchSearchMod.SearchProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react/dist/commonjs/modules/Search", JSImport.Namespace)
 @js.native
 object searchMod extends js.Object {
+  
   @js.native
   class default protected ()
     extends Component[SearchProps, ComponentState, js.Any] {
     def this(props: SearchProps) = this()
     def this(props: SearchProps, context: js.Any) = this()
   }
-  
   @js.native
   object default extends TopLevel[SearchComponent]
-  
 }
-

@@ -3,7 +3,7 @@ package typings.officeUiFabricReact.mod
 import typings.officeUiFabricReact.overflowSetTypesMod.IOverflowSetProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "OverflowSetBase")
 @js.native
@@ -11,4 +11,3 @@ class OverflowSetBase protected ()
   extends typings.officeUiFabricReact.libOverflowSetMod.OverflowSetBase {
   def this(props: IOverflowSetProps) = this()
 }
-

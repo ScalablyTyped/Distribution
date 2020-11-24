@@ -4,7 +4,7 @@ import typings.jupyterlabCells.modelMod.ICodeCellModel
 import typings.jupyterlabCells.modelMod.IRawCellModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The default implementation of an `IModelFactory`.
@@ -16,10 +16,12 @@ import scala.scalajs.js.annotation._
   */
 class ModelFactory () extends js.Object {
   def this(options: IModelFactoryOptions) = this()
+  
   /**
     * The factory for output area models.
     */
   val codeCellContentFactory: typings.jupyterlabCells.modelMod.CodeCellModel.IContentFactory = js.native
+  
   /**
     * Create a new code cell.
     *
@@ -31,6 +33,7 @@ class ModelFactory () extends js.Object {
     *   `codeCellContentFactory` will be used.
     */
   def createCodeCell(options: typings.jupyterlabCells.modelMod.CodeCellModel.IOptions): ICodeCellModel = js.native
+  
   /**
     * Create a new raw cell.
     *
@@ -41,4 +44,3 @@ class ModelFactory () extends js.Object {
     */
   def createRawCell(options: typings.jupyterlabCells.modelMod.CellModel.IOptions): IRawCellModel = js.native
 }
-

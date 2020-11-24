@@ -10,9 +10,9 @@ dynamic json-schema validator
 | ------------------ | :-------------: |
 | Full name          | djv |
 | Keywords           | json-schema, json, schema, validator, validate |
-| # releases         | 9 |
-| # dependents       | 13 |
-| # downloads        | 170349 |
+| # releases         | 4 |
+| # dependents       | 17 |
+| # downloads        | 861887 |
 | # stars            | 4 |
 
 ## Links

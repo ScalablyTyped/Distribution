@@ -7,7 +7,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** These enumeration values are used to specify the alignment of the text range delimited by a tabulator. */
 /* Rewritten from type alias, can be one of: 
@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait TabAlign extends js.Object
-
 object TabAlign {
+  
   /**
     * set the horizontal alignment to the center between the margins from the container object
     *
@@ -29,12 +29,15 @@ object TabAlign {
     */
   @scala.inline
   def CENTER: `1` = 1.asInstanceOf[`1`]
+  
   /** The decimal point of the text range to the left of this tabulator is aligned to the position of this tabulator. */
   @scala.inline
   def DECIMAL: `3` = 3.asInstanceOf[`3`]
+  
   /** The default alignment for tabulators is applied. */
   @scala.inline
   def DEFAULT: `4` = 4.asInstanceOf[`4`]
+  
   /**
     * set the horizontal alignment to the left margin from the container object
     *
@@ -46,6 +49,7 @@ object TabAlign {
     */
   @scala.inline
   def LEFT: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * set the horizontal alignment to the right margin from the container object
     *
@@ -58,4 +62,3 @@ object TabAlign {
   @scala.inline
   def RIGHT: `2` = 2.asInstanceOf[`2`]
 }
-

@@ -12,7 +12,7 @@ Simple customizable component to create side menu
 | Keywords           | react-native, react-component, ios, sidebar |
 | # releases         | 0 |
 | # dependents       | 18 |
-| # downloads        | 316054 |
+| # downloads        | 343445 |
 | # stars            | 9 |
 
 ## Links

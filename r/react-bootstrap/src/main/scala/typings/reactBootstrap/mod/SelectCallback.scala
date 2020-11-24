@@ -7,11 +7,12 @@ import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SelectCallback
   extends EventHandler[js.Any] {
+  
   /**
     * @deprecated
     * This signature is a hack so can still derive from HTMLProps.
@@ -20,4 +21,3 @@ trait SelectCallback
   def apply(e: MouseEvent[js.Object, NativeMouseEvent]): Unit = js.native
   def apply(eventKey: js.Any, e: SyntheticEvent[js.Object, Event]): Unit = js.native
 }
-

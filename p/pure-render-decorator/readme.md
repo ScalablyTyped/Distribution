@@ -10,9 +10,9 @@ Makes React components pure.
 | ------------------ | :-------------: |
 | Full name          | pure-render-decorator |
 | Keywords           | react, pure, render, decorator |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 42 |
-| # downloads        | 346894 |
+| # downloads        | 263276 |
 | # stars            | 8 |
 
 ## Links

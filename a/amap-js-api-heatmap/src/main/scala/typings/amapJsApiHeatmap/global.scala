@@ -4,13 +4,15 @@ import typings.amapJsApi.AMap.Map
 import typings.amapJsApiHeatmap.AMap.Heatmap.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object AMap extends js.Object {
+    
     @js.native
     class Heatmap protected ()
       extends typings.amapJsApiHeatmap.AMap.Heatmap {
@@ -22,8 +24,5 @@ object global extends js.Object {
       def this(map: Map) = this()
       def this(map: Map, opts: Options) = this()
     }
-    
   }
-  
 }
-

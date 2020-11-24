@@ -2,7 +2,7 @@ package typings.phaser.Phaser.Types.Physics.Matter
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.phaser.MatterJS.BodyType
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
   - typings.phaser.Phaser.Physics.Matter.TileBody
 */
 trait MatterBody extends js.Object
-

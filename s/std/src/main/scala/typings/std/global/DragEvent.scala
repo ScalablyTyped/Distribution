@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.DragEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DragEvent")
 @js.native
@@ -14,7 +14,6 @@ class DragEvent protected ()
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, eventInitDict: DragEventInit) = this()
 }
-
 @JSGlobal("DragEvent")
 @js.native
 object DragEvent
@@ -24,4 +23,3 @@ object DragEvent
       /* eventInitDict */ DragEventInit, 
       typings.std.DragEvent
     ]
-

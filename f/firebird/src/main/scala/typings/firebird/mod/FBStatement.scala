@@ -2,7 +2,7 @@ package typings.firebird.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents prepared SQL query (returned by @see Connection.prepare() and @see Connection.prepareSync()).
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("firebird", "FBStatement")
 @js.native
 class FBStatement () extends FBResult {
+  
   /**
     * Asynchronously executes prepared statement with given parameters.
     *
@@ -24,14 +25,17 @@ class FBStatement () extends FBResult {
     * @param params parameters of prepared statement in the same order as in SQL and with appropriate types.
     */
   def exec(params: DataType*): Unit = js.native
+  
   /**
     * Same as @see exec but executes statement in context of given @see Transaction obejct.
     */
   def execInTrans(transaction: Transaction, params: DataType*): Unit = js.native
+  
   /**
     * Same as @see execSync but executes statement in context of given @see Transaction obejct.
     */
   def execInTransSync(transaction: Transaction, params: DataType*): Unit = js.native
+  
   /**
     * Synchronously executes prepared statement with given parameters.
     *
@@ -43,4 +47,3 @@ class FBStatement () extends FBResult {
     */
   def execSync(params: DataType*): Unit = js.native
 }
-

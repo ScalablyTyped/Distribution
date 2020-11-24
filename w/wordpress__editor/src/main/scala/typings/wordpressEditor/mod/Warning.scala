@@ -5,9 +5,8 @@ import typings.react.mod.ComponentType
 import typings.wordpressBlockEditor.warningMod.Warning.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/editor", "Warning")
 @js.native
 object Warning extends TopLevel[ComponentType[Props]]
-

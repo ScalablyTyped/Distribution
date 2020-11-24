@@ -2,10 +2,11 @@ package typings.gsap.gsap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BezierPlugin extends TweenPlugin {
+  
   def bezierThrough(values: js.Array[_]): js.Object = js.native
   def bezierThrough(
     values: js.Array[_],
@@ -197,7 +198,8 @@ trait BezierPlugin extends TweenPlugin {
     prepend: js.Object,
     calcDifs: Boolean
   ): js.Object = js.native
+  
   def cubicToQuadratic(a: Double, b: Double, c: Double, d: Double): js.Array[_] = js.native
+  
   def quadraticToCubic(a: Double, b: Double, c: Double): js.Object = js.native
 }
-

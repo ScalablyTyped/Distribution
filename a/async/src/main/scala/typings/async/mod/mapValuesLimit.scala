@@ -2,11 +2,12 @@ package typings.async.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("async", "mapValuesLimit")
 @js.native
 object mapValuesLimit extends js.Object {
+  
   def apply[T, R, E](
     obj: Dictionary[T],
     limit: Double,
@@ -19,4 +20,3 @@ object mapValuesLimit extends js.Object {
     callback: AsyncResultObjectCallback[R, E]
   ): Unit = js.native
 }
-

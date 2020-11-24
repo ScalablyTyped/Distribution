@@ -3,11 +3,12 @@ package typings.openui5.global.sap.ui
 import typings.openui5.sap.ui.core.mvc.Controller
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.controller")
 @js.native
 object controller extends js.Object {
+  
   /**
     * Defines a controller class or creates an instance of an already defined controller class.When a name
     * and a controller implementation object is given, a new controller classof the given name is created.
@@ -22,4 +23,3 @@ object controller extends js.Object {
   def apply(sName: String): Unit | Controller = js.native
   def apply(sName: String, oControllerImpl: js.Any): Unit | Controller = js.native
 }
-

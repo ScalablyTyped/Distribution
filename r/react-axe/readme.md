@@ -10,9 +10,9 @@ Dynamic accessibility analysis for React using axe-core
 | ------------------ | :-------------: |
 | Full name          | react-axe |
 | Keywords           | accessibility, a11y, lint, test |
-| # releases         | 8 |
-| # dependents       | 14 |
-| # downloads        | 1790375 |
+| # releases         | 30 |
+| # dependents       | 15 |
+| # downloads        | 3688663 |
 | # stars            | 1 |
 
 ## Links

@@ -4,11 +4,12 @@ import typings.node.NodeJS.ArrayBufferView
 import typings.node.NodeJS.ErrnoException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs", "readv")
 @js.native
 object readv extends js.Object {
+  
   def apply(
     fd: Double,
     buffers: js.Array[ArrayBufferView],
@@ -30,9 +31,4 @@ object readv extends js.Object {
       Unit
     ]
   ): Unit = js.native
-  @JSName("__promisify__")
-  def promisify(fd: Double, buffers: js.Array[ArrayBufferView]): js.Promise[ReadVResult] = js.native
-  @JSName("__promisify__")
-  def promisify(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): js.Promise[ReadVResult] = js.native
 }
-

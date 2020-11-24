@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByBatchIdRequest")
 @js.native
@@ -17,20 +17,22 @@ import scala.scalajs.js.annotation._
   */
 class ClientBlockGetByBatchIdRequest () extends IClientBlockGetByBatchIdRequest {
   def this(properties: IClientBlockGetByBatchIdRequest) = this()
+  
   /** ClientBlockGetByBatchIdRequest batchId. */
   @JSName("batchId")
   var batchId_ClientBlockGetByBatchIdRequest: String = js.native
+  
   /**
     * Converts this ClientBlockGetByBatchIdRequest to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByBatchIdRequest")
 @js.native
 object ClientBlockGetByBatchIdRequest extends js.Object {
+  
   /**
     * Creates a new ClientBlockGetByBatchIdRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -38,6 +40,7 @@ object ClientBlockGetByBatchIdRequest extends js.Object {
     */
   def create(): ClientBlockGetByBatchIdRequest = js.native
   def create(properties: IClientBlockGetByBatchIdRequest): ClientBlockGetByBatchIdRequest = js.native
+  
   /**
     * Decodes a ClientBlockGetByBatchIdRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -50,6 +53,7 @@ object ClientBlockGetByBatchIdRequest extends js.Object {
   def decode(reader: Reader, length: Double): ClientBlockGetByBatchIdRequest = js.native
   def decode(reader: Uint8Array): ClientBlockGetByBatchIdRequest = js.native
   def decode(reader: Uint8Array, length: Double): ClientBlockGetByBatchIdRequest = js.native
+  
   /**
     * Decodes a ClientBlockGetByBatchIdRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -59,6 +63,7 @@ object ClientBlockGetByBatchIdRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): ClientBlockGetByBatchIdRequest = js.native
   def decodeDelimited(reader: Uint8Array): ClientBlockGetByBatchIdRequest = js.native
+  
   /**
     * Encodes the specified ClientBlockGetByBatchIdRequest message. Does not implicitly {@link ClientBlockGetByBatchIdRequest.verify|verify} messages.
     * @param message ClientBlockGetByBatchIdRequest message or plain object to encode
@@ -67,6 +72,7 @@ object ClientBlockGetByBatchIdRequest extends js.Object {
     */
   def encode(message: IClientBlockGetByBatchIdRequest): Writer = js.native
   def encode(message: IClientBlockGetByBatchIdRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ClientBlockGetByBatchIdRequest message, length delimited. Does not implicitly {@link ClientBlockGetByBatchIdRequest.verify|verify} messages.
     * @param message ClientBlockGetByBatchIdRequest message or plain object to encode
@@ -75,12 +81,14 @@ object ClientBlockGetByBatchIdRequest extends js.Object {
     */
   def encodeDelimited(message: IClientBlockGetByBatchIdRequest): Writer = js.native
   def encodeDelimited(message: IClientBlockGetByBatchIdRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ClientBlockGetByBatchIdRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientBlockGetByBatchIdRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): ClientBlockGetByBatchIdRequest = js.native
+  
   /**
     * Creates a plain object from a ClientBlockGetByBatchIdRequest message. Also converts values to other types if specified.
     * @param message ClientBlockGetByBatchIdRequest
@@ -89,6 +97,7 @@ object ClientBlockGetByBatchIdRequest extends js.Object {
     */
   def toObject(message: ClientBlockGetByBatchIdRequest): StringDictionary[js.Any] = js.native
   def toObject(message: ClientBlockGetByBatchIdRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ClientBlockGetByBatchIdRequest message.
     * @param message Plain object to verify
@@ -96,4 +105,3 @@ object ClientBlockGetByBatchIdRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

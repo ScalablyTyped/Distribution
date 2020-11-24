@@ -10,11 +10,30 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.TransformOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("json2csv", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def parse[T](data: T): String = js.native
+  def parse[T](data: T, opts: Options[T]): String = js.native
+  def parse[T](data: js.Array[T]): String = js.native
+  def parse[T](data: js.Array[T], opts: Options[T]): String = js.native
+  
+  def parseAsync[T](data: T): js.Promise[String] = js.native
+  def parseAsync[T](data: T, opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions): js.Promise[String] = js.native
+  def parseAsync[T](data: T, opts: Options[T]): js.Promise[String] = js.native
+  def parseAsync[T](data: T, opts: Options[T], transformOpts: TransformOptions): js.Promise[String] = js.native
+  def parseAsync[T](data: js.Array[T]): js.Promise[String] = js.native
+  def parseAsync[T](data: js.Array[T], opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions): js.Promise[String] = js.native
+  def parseAsync[T](data: js.Array[T], opts: Options[T]): js.Promise[String] = js.native
+  def parseAsync[T](data: js.Array[T], opts: Options[T], transformOpts: TransformOptions): js.Promise[String] = js.native
+  def parseAsync[T](data: Readable): js.Promise[String] = js.native
+  def parseAsync[T](data: Readable, opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions): js.Promise[String] = js.native
+  def parseAsync[T](data: Readable, opts: Options[T]): js.Promise[String] = js.native
+  def parseAsync[T](data: Readable, opts: Options[T], transformOpts: TransformOptions): js.Promise[String] = js.native
+  
   @js.native
   class AsyncParser[T] () extends default[T] {
     def this(opts: Options[T]) = this()
@@ -34,29 +53,13 @@ object mod extends js.Object {
     def this(opts: Options[T], transformOpts: TransformOptions) = this()
   }
   
-  def parse[T](data: T): String = js.native
-  def parse[T](data: T, opts: Options[T]): String = js.native
-  def parse[T](data: js.Array[T]): String = js.native
-  def parse[T](data: js.Array[T], opts: Options[T]): String = js.native
-  def parseAsync[T](data: T): js.Promise[String] = js.native
-  def parseAsync[T](data: T, opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions): js.Promise[String] = js.native
-  def parseAsync[T](data: T, opts: Options[T]): js.Promise[String] = js.native
-  def parseAsync[T](data: T, opts: Options[T], transformOpts: TransformOptions): js.Promise[String] = js.native
-  def parseAsync[T](data: js.Array[T]): js.Promise[String] = js.native
-  def parseAsync[T](data: js.Array[T], opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions): js.Promise[String] = js.native
-  def parseAsync[T](data: js.Array[T], opts: Options[T]): js.Promise[String] = js.native
-  def parseAsync[T](data: js.Array[T], opts: Options[T], transformOpts: TransformOptions): js.Promise[String] = js.native
-  def parseAsync[T](data: Readable): js.Promise[String] = js.native
-  def parseAsync[T](data: Readable, opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions): js.Promise[String] = js.native
-  def parseAsync[T](data: Readable, opts: Options[T]): js.Promise[String] = js.native
-  def parseAsync[T](data: Readable, opts: Options[T], transformOpts: TransformOptions): js.Promise[String] = js.native
   @js.native
   object transforms extends js.Object {
+    
     def flatten(): Json2CsvTransform[_, _] = js.native
     def flatten(options: FlattenOptions): Json2CsvTransform[_, _] = js.native
+    
     def unwind(): Json2CsvTransform[_, js.Array[_]] = js.native
     def unwind(options: UnwindOptions): Json2CsvTransform[_, js.Array[_]] = js.native
   }
-  
 }
-

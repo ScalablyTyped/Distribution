@@ -10,9 +10,9 @@ Iterate all the data in a stream
 | ------------------ | :-------------: |
 | Full name          | stream-each |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 48 |
-| # downloads        | 242728628 |
+| # releases         | 0 |
+| # dependents       | 62 |
+| # downloads        | 377348796 |
 | # stars            | 2 |
 
 ## Links

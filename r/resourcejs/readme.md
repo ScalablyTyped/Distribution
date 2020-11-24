@@ -10,9 +10,9 @@ A simple Express library to reflect Mongoose models to a REST interface.
 | ------------------ | :-------------: |
 | Full name          | resourcejs |
 | Keywords           | Express, Mongoose, Node, MEAN |
-| # releases         | 35 |
+| # releases         | 25 |
 | # dependents       | 3 |
-| # downloads        | 31130 |
+| # downloads        | 59227 |
 | # stars            | 3 |
 
 ## Links

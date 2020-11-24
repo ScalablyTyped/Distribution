@@ -6,7 +6,7 @@ import typings.grpcGrpcJs.anon.PartialChannelOptions
 import typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServiceClientConstructor
@@ -17,4 +17,3 @@ trait ServiceClientConstructor
       /* options */ PartialChannelOptions, 
       ServiceClient
     ]
-

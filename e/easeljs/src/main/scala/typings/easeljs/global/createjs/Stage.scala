@@ -3,7 +3,7 @@ package typings.easeljs.global.createjs
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.Stage")
 @js.native
@@ -13,4 +13,3 @@ class Stage protected ()
   def this(canvas: js.Object) = this()
   def this(canvas: HTMLCanvasElement) = this()
 }
-

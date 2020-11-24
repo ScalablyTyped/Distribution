@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2.1", "content_v2_1.Resource$Accountstatuses")
 @js.native
 class ResourceAccountstatuses protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * content.accountstatuses.custombatch
     * @desc Retrieves multiple Merchant Center account statuses in a single
@@ -45,6 +47,7 @@ class ResourceAccountstatuses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountstatusesCustomBatchResponse]
   ): Unit = js.native
+  
   /**
     * content.accountstatuses.get
     * @desc Retrieves the status of a Merchant Center account. No
@@ -76,6 +79,7 @@ class ResourceAccountstatuses protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountStatus]
   ): Unit = js.native
+  
   /**
     * content.accountstatuses.list
     * @desc Lists the statuses of the sub-accounts in your Merchant Center
@@ -112,4 +116,3 @@ class ResourceAccountstatuses protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAccountstatusesListResponse]
   ): Unit = js.native
 }
-

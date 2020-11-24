@@ -8,7 +8,7 @@ import typings.sawtoothSdk.protobufMod.ITpProcessRequest
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.TpProcessRequest")
 @js.native
@@ -20,11 +20,11 @@ class TpProcessRequest ()
   extends typings.sawtoothSdk.protobufMod.TpProcessRequest {
   def this(properties: ITpProcessRequest) = this()
 }
-
 /* static members */
 @JSImport("sawtooth-sdk", "protobuf.TpProcessRequest")
 @js.native
 object TpProcessRequest extends js.Object {
+  
   /**
     * Creates a new TpProcessRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -32,6 +32,7 @@ object TpProcessRequest extends js.Object {
     */
   def create(): typings.sawtoothSdk.protobufMod.TpProcessRequest = js.native
   def create(properties: ITpProcessRequest): typings.sawtoothSdk.protobufMod.TpProcessRequest = js.native
+  
   /**
     * Decodes a TpProcessRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,6 +45,7 @@ object TpProcessRequest extends js.Object {
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.TpProcessRequest = js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.TpProcessRequest = js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.TpProcessRequest = js.native
+  
   /**
     * Decodes a TpProcessRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -53,6 +55,7 @@ object TpProcessRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.TpProcessRequest = js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.TpProcessRequest = js.native
+  
   /**
     * Encodes the specified TpProcessRequest message. Does not implicitly {@link TpProcessRequest.verify|verify} messages.
     * @param message TpProcessRequest message or plain object to encode
@@ -61,6 +64,7 @@ object TpProcessRequest extends js.Object {
     */
   def encode(message: ITpProcessRequest): Writer = js.native
   def encode(message: ITpProcessRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified TpProcessRequest message, length delimited. Does not implicitly {@link TpProcessRequest.verify|verify} messages.
     * @param message TpProcessRequest message or plain object to encode
@@ -69,12 +73,14 @@ object TpProcessRequest extends js.Object {
     */
   def encodeDelimited(message: ITpProcessRequest): Writer = js.native
   def encodeDelimited(message: ITpProcessRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a TpProcessRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns TpProcessRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.TpProcessRequest = js.native
+  
   /**
     * Creates a plain object from a TpProcessRequest message. Also converts values to other types if specified.
     * @param message TpProcessRequest
@@ -83,6 +89,7 @@ object TpProcessRequest extends js.Object {
     */
   def toObject(message: typings.sawtoothSdk.protobufMod.TpProcessRequest): StringDictionary[js.Any] = js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.TpProcessRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a TpProcessRequest message.
     * @param message Plain object to verify
@@ -90,4 +97,3 @@ object TpProcessRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

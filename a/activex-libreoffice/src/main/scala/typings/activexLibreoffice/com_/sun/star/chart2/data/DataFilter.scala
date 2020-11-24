@@ -5,7 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A filter gets some data and provides some data. The received data is typically (but not necessarily) different from the data that can be retrieved by
@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation._
 trait DataFilter
   extends XDataSink
      with XDataSource
-
 object DataFilter {
+  
   @scala.inline
   def apply(
     DataSequences: SafeArray[XLabeledDataSequence],
@@ -30,4 +30,3 @@ object DataFilter {
     __obj.asInstanceOf[DataFilter]
   }
 }
-

@@ -3,10 +3,11 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SchemaJobConfigurationQuery extends js.Object {
+  
   /**
     * [Optional] If true and query uses legacy SQL dialect, allows the query to
     * produce arbitrarily large result tables at a slight cost in performance.
@@ -16,12 +17,14 @@ trait SchemaJobConfigurationQuery extends js.Object {
     * response size.
     */
   var allowLargeResults: js.UndefOr[Boolean] = js.native
+  
   /**
     * [Beta] Clustering specification for the destination table. Must be
     * specified with time-based partitioning, data in the table will be first
     * partitioned and subsequently clustered.
     */
   var clustering: js.UndefOr[SchemaClustering] = js.native
+  
   /**
     * [Optional] Specifies whether the job is allowed to create new tables. The
     * following values are supported: CREATE_IF_NEEDED: If the table does not
@@ -31,16 +34,19 @@ trait SchemaJobConfigurationQuery extends js.Object {
     * append actions occur as one atomic update upon job completion.
     */
   var createDisposition: js.UndefOr[String] = js.native
+  
   /**
     * [Optional] Specifies the default dataset to use for unqualified table
     * names in the query. Note that this does not alter behavior of unqualified
     * dataset names.
     */
   var defaultDataset: js.UndefOr[SchemaDatasetReference] = js.native
+  
   /**
     * Custom encryption configuration (e.g., Cloud KMS keys).
     */
   var destinationEncryptionConfiguration: js.UndefOr[SchemaEncryptionConfiguration] = js.native
+  
   /**
     * [Optional] Describes the table where the query results should be stored.
     * If not present, a new table will be created to store the results. This
@@ -48,6 +54,7 @@ trait SchemaJobConfigurationQuery extends js.Object {
     * size.
     */
   var destinationTable: js.UndefOr[SchemaTableReference] = js.native
+  
   /**
     * [Optional] If true and query uses legacy SQL dialect, flattens all nested
     * and repeated fields in the query results. allowLargeResults must be true
@@ -55,47 +62,56 @@ trait SchemaJobConfigurationQuery extends js.Object {
     * and results are never flattened.
     */
   var flattenResults: js.UndefOr[Boolean] = js.native
+  
   /**
     * [Optional] Limits the billing tier for this job. Queries that have
     * resource usage beyond this tier will fail (without incurring a charge).
     * If unspecified, this will be set to your project default.
     */
   var maximumBillingTier: js.UndefOr[Double] = js.native
+  
   /**
     * [Optional] Limits the bytes billed for this job. Queries that will have
     * bytes billed beyond this limit will fail (without incurring a charge). If
     * unspecified, this will be set to your project default.
     */
   var maximumBytesBilled: js.UndefOr[String] = js.native
+  
   /**
     * Standard SQL only. Set to POSITIONAL to use positional (?) query
     * parameters or to NAMED to use named (@myparam) query parameters in this
     * query.
     */
   var parameterMode: js.UndefOr[String] = js.native
+  
   /**
     * [Deprecated] This property is deprecated.
     */
   var preserveNulls: js.UndefOr[Boolean] = js.native
+  
   /**
     * [Optional] Specifies a priority for the query. Possible values include
     * INTERACTIVE and BATCH. The default value is INTERACTIVE.
     */
   var priority: js.UndefOr[String] = js.native
+  
   /**
     * [Required] SQL query text to execute. The useLegacySql field can be used
     * to indicate whether the query uses legacy SQL or standard SQL.
     */
   var query: js.UndefOr[String] = js.native
+  
   /**
     * Query parameters for standard SQL queries.
     */
   var queryParameters: js.UndefOr[js.Array[SchemaQueryParameter]] = js.native
+  
   /**
     * [TrustedTester] Range partitioning specification for this table. Only one
     * of timePartitioning and rangePartitioning should be specified.
     */
   var rangePartitioning: js.UndefOr[SchemaRangePartitioning] = js.native
+  
   /**
     * Allows the schema of the destination table to be updated as a side effect
     * of the query job. Schema update options are supported in two cases: when
@@ -108,6 +124,7 @@ trait SchemaJobConfigurationQuery extends js.Object {
     * schema to nullable.
     */
   var schemaUpdateOptions: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * [Optional] If querying an external data source outside of BigQuery,
     * describes the data format, location and other properties of the data
@@ -115,11 +132,13 @@ trait SchemaJobConfigurationQuery extends js.Object {
     * as if it were a standard BigQuery table.
     */
   var tableDefinitions: js.UndefOr[StringDictionary[SchemaExternalDataConfiguration]] = js.native
+  
   /**
     * Time-based partitioning specification for the destination table. Only one
     * of timePartitioning and rangePartitioning should be specified.
     */
   var timePartitioning: js.UndefOr[SchemaTimePartitioning] = js.native
+  
   /**
     * Specifies whether to use BigQuery&#39;s legacy SQL dialect for this
     * query. The default value is true. If set to false, the query will use
@@ -129,6 +148,7 @@ trait SchemaJobConfigurationQuery extends js.Object {
     * flattenResults is false.
     */
   var useLegacySql: js.UndefOr[Boolean] = js.native
+  
   /**
     * [Optional] Whether to look for the result in the query cache. The query
     * cache is a best-effort cache that will be flushed whenever tables in the
@@ -137,10 +157,12 @@ trait SchemaJobConfigurationQuery extends js.Object {
     * true.
     */
   var useQueryCache: js.UndefOr[Boolean] = js.native
+  
   /**
     * Describes user-defined function resources used in the query.
     */
   var userDefinedFunctionResources: js.UndefOr[js.Array[SchemaUserDefinedFunctionResource]] = js.native
+  
   /**
     * [Optional] Specifies the action that occurs if the destination table
     * already exists. The following values are supported: WRITE_TRUNCATE: If
@@ -155,119 +177,168 @@ trait SchemaJobConfigurationQuery extends js.Object {
     */
   var writeDisposition: js.UndefOr[String] = js.native
 }
-
 object SchemaJobConfigurationQuery {
+  
   @scala.inline
   def apply(): SchemaJobConfigurationQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJobConfigurationQuery]
   }
+  
   @scala.inline
   implicit class SchemaJobConfigurationQueryOps[Self <: SchemaJobConfigurationQuery] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAllowLargeResults(value: Boolean): Self = this.set("allowLargeResults", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAllowLargeResults: Self = this.set("allowLargeResults", js.undefined)
+    
     @scala.inline
     def setClustering(value: SchemaClustering): Self = this.set("clustering", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteClustering: Self = this.set("clustering", js.undefined)
+    
     @scala.inline
     def setCreateDisposition(value: String): Self = this.set("createDisposition", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCreateDisposition: Self = this.set("createDisposition", js.undefined)
+    
     @scala.inline
     def setDefaultDataset(value: SchemaDatasetReference): Self = this.set("defaultDataset", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDefaultDataset: Self = this.set("defaultDataset", js.undefined)
+    
     @scala.inline
     def setDestinationEncryptionConfiguration(value: SchemaEncryptionConfiguration): Self = this.set("destinationEncryptionConfiguration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDestinationEncryptionConfiguration: Self = this.set("destinationEncryptionConfiguration", js.undefined)
+    
     @scala.inline
     def setDestinationTable(value: SchemaTableReference): Self = this.set("destinationTable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDestinationTable: Self = this.set("destinationTable", js.undefined)
+    
     @scala.inline
     def setFlattenResults(value: Boolean): Self = this.set("flattenResults", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFlattenResults: Self = this.set("flattenResults", js.undefined)
+    
     @scala.inline
     def setMaximumBillingTier(value: Double): Self = this.set("maximumBillingTier", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaximumBillingTier: Self = this.set("maximumBillingTier", js.undefined)
+    
     @scala.inline
     def setMaximumBytesBilled(value: String): Self = this.set("maximumBytesBilled", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaximumBytesBilled: Self = this.set("maximumBytesBilled", js.undefined)
+    
     @scala.inline
     def setParameterMode(value: String): Self = this.set("parameterMode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteParameterMode: Self = this.set("parameterMode", js.undefined)
+    
     @scala.inline
     def setPreserveNulls(value: Boolean): Self = this.set("preserveNulls", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePreserveNulls: Self = this.set("preserveNulls", js.undefined)
+    
     @scala.inline
     def setPriority(value: String): Self = this.set("priority", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePriority: Self = this.set("priority", js.undefined)
+    
     @scala.inline
     def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteQuery: Self = this.set("query", js.undefined)
+    
     @scala.inline
     def setQueryParametersVarargs(value: SchemaQueryParameter*): Self = this.set("queryParameters", js.Array(value :_*))
+    
     @scala.inline
     def setQueryParameters(value: js.Array[SchemaQueryParameter]): Self = this.set("queryParameters", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteQueryParameters: Self = this.set("queryParameters", js.undefined)
+    
     @scala.inline
     def setRangePartitioning(value: SchemaRangePartitioning): Self = this.set("rangePartitioning", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRangePartitioning: Self = this.set("rangePartitioning", js.undefined)
+    
     @scala.inline
     def setSchemaUpdateOptionsVarargs(value: String*): Self = this.set("schemaUpdateOptions", js.Array(value :_*))
+    
     @scala.inline
     def setSchemaUpdateOptions(value: js.Array[String]): Self = this.set("schemaUpdateOptions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSchemaUpdateOptions: Self = this.set("schemaUpdateOptions", js.undefined)
+    
     @scala.inline
     def setTableDefinitions(value: StringDictionary[SchemaExternalDataConfiguration]): Self = this.set("tableDefinitions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTableDefinitions: Self = this.set("tableDefinitions", js.undefined)
+    
     @scala.inline
     def setTimePartitioning(value: SchemaTimePartitioning): Self = this.set("timePartitioning", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTimePartitioning: Self = this.set("timePartitioning", js.undefined)
+    
     @scala.inline
     def setUseLegacySql(value: Boolean): Self = this.set("useLegacySql", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUseLegacySql: Self = this.set("useLegacySql", js.undefined)
+    
     @scala.inline
     def setUseQueryCache(value: Boolean): Self = this.set("useQueryCache", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUseQueryCache: Self = this.set("useQueryCache", js.undefined)
+    
     @scala.inline
     def setUserDefinedFunctionResourcesVarargs(value: SchemaUserDefinedFunctionResource*): Self = this.set("userDefinedFunctionResources", js.Array(value :_*))
+    
     @scala.inline
     def setUserDefinedFunctionResources(value: js.Array[SchemaUserDefinedFunctionResource]): Self = this.set("userDefinedFunctionResources", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUserDefinedFunctionResources: Self = this.set("userDefinedFunctionResources", js.undefined)
+    
     @scala.inline
     def setWriteDisposition(value: String): Self = this.set("writeDisposition", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWriteDisposition: Self = this.set("writeDisposition", js.undefined)
   }
-  
 }
-

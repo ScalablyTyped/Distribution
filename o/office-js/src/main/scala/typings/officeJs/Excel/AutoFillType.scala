@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AutoFillType extends js.Object
-
 /**
   *
   * The behavior types when AutoFill is used on a range in the workbook.
@@ -16,6 +15,7 @@ sealed trait AutoFillType extends js.Object
 @JSGlobal("Excel.AutoFillType")
 @js.native
 object AutoFillType extends js.Object {
+  
   /**
     * Populates the adjacent cells with data based on the selected data.
     *
@@ -99,6 +99,4 @@ object AutoFillType extends js.Object {
     */
   @js.native
   sealed trait linearTrend extends AutoFillType
-  
 }
-

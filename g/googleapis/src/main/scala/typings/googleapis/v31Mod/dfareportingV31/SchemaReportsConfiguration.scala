@@ -2,23 +2,26 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Reporting Configuration
   */
 @js.native
 trait SchemaReportsConfiguration extends js.Object {
+  
   /**
     * Whether the exposure to conversion report is enabled. This report shows
     * detailed pathway information on up to 10 of the most recent ad exposures
     * seen by a user before converting.
     */
   var exposureToConversionEnabled: js.UndefOr[Boolean] = js.native
+  
   /**
     * Default lookback windows for new advertisers in this account.
     */
   var lookbackConfiguration: js.UndefOr[SchemaLookbackConfiguration] = js.native
+  
   /**
     * Report generation time zone ID of this account. This is a required field
     * that can only be changed by a superuser. Acceptable values are:  -
@@ -35,37 +38,45 @@ trait SchemaReportsConfiguration extends js.Object {
     */
   var reportGenerationTimeZoneId: js.UndefOr[String] = js.native
 }
-
 object SchemaReportsConfiguration {
+  
   @scala.inline
   def apply(): SchemaReportsConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReportsConfiguration]
   }
+  
   @scala.inline
   implicit class SchemaReportsConfigurationOps[Self <: SchemaReportsConfiguration] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setExposureToConversionEnabled(value: Boolean): Self = this.set("exposureToConversionEnabled", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteExposureToConversionEnabled: Self = this.set("exposureToConversionEnabled", js.undefined)
+    
     @scala.inline
     def setLookbackConfiguration(value: SchemaLookbackConfiguration): Self = this.set("lookbackConfiguration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLookbackConfiguration: Self = this.set("lookbackConfiguration", js.undefined)
+    
     @scala.inline
     def setReportGenerationTimeZoneId(value: String): Self = this.set("reportGenerationTimeZoneId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteReportGenerationTimeZoneId: Self = this.set("reportGenerationTimeZoneId", js.undefined)
   }
-  
 }
-

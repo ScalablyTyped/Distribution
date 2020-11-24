@@ -4,7 +4,7 @@ import typings.angular.mod.IPromise
 import typings.umbraco.anon.Filter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -32,6 +32,7 @@ import scala.scalajs.js.annotation._
   **/
 @js.native
 trait IContentResource extends js.Object {
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#hasPermission
@@ -55,6 +56,7 @@ trait IContentResource extends js.Object {
     *
     */
   def checkPermission(permission: String, id: Double): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#copy
@@ -80,6 +82,7 @@ trait IContentResource extends js.Object {
     *
     */
   def copy(args: js.Any*): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#deleteById
@@ -101,6 +104,7 @@ trait IContentResource extends js.Object {
     *
     */
   def deleteById(id: Double): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#emptyRecycleBin
@@ -121,6 +125,7 @@ trait IContentResource extends js.Object {
     *
     */
   def emptyRecycleBin(): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#getById
@@ -143,6 +148,7 @@ trait IContentResource extends js.Object {
     *
     */
   def getById(id: Double): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#getByIds
@@ -165,6 +171,7 @@ trait IContentResource extends js.Object {
     *
     */
   def getByIds(ids: js.Array[Double]): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#getChildren
@@ -194,6 +201,7 @@ trait IContentResource extends js.Object {
     */
   def getChildren(parentId: Double): IPromise[IResourcePromise] = js.native
   def getChildren(parentId: Double, options: Filter): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#getNiceUrl
@@ -215,6 +223,7 @@ trait IContentResource extends js.Object {
     *
     */
   def getNiceUrl(id: Double): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#getScaffold
@@ -248,6 +257,7 @@ trait IContentResource extends js.Object {
     *
     */
   def getScaffold(parentId: Double, alias: String): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#move
@@ -272,6 +282,7 @@ trait IContentResource extends js.Object {
     *
     */
   def move(args: js.Any*): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#publish
@@ -301,6 +312,7 @@ trait IContentResource extends js.Object {
     *
     */
   def publish(content: IContentResource, isNew: Boolean, files: js.Array[_]): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#publishByid
@@ -322,6 +334,7 @@ trait IContentResource extends js.Object {
     *
     */
   def publishById(id: Double): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#save
@@ -351,6 +364,7 @@ trait IContentResource extends js.Object {
     *
     */
   def save(content: IContentResource, isNew: Boolean, files: js.Array[_]): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#sendToPublish
@@ -378,6 +392,7 @@ trait IContentResource extends js.Object {
     *
     */
   def sendToPublish(content: IContentResource, isNew: Boolean, files: js.Array[_]): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#sort
@@ -401,6 +416,7 @@ trait IContentResource extends js.Object {
     *
     */
   def sort(args: js.Any*): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#unPublish
@@ -424,4 +440,3 @@ trait IContentResource extends js.Object {
     */
   def unPublish(id: Double): IPromise[IResourcePromise] = js.native
 }
-

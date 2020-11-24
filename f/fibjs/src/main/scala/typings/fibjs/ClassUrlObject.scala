@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassUrlObject extends ClassObject {
+  
   /**
     * class prop
     *
@@ -22,6 +23,17 @@ trait ClassUrlObject extends ClassObject {
     * @type String
     */
   var auth: String = js.native
+  
+  /**
+    *
+    * @brief 使用指定的参数构造 UrlObject
+    * @param args 指定构造参数的字典对象，支持的字段有：protocol, slashes, username, password, hostname, port, pathname, query, hash
+    *
+    *
+    *
+    */
+  def format(args: js.Object): Unit = js.native
+  
   /**
     * class prop
     *
@@ -33,6 +45,7 @@ trait ClassUrlObject extends ClassObject {
     * @type String
     */
   var hash: String = js.native
+  
   /**
     * class prop
     *
@@ -44,6 +57,7 @@ trait ClassUrlObject extends ClassObject {
     * @type String
     */
   var host: String = js.native
+  
   /**
     * class prop
     *
@@ -55,6 +69,7 @@ trait ClassUrlObject extends ClassObject {
     * @type String
     */
   var hostname: String = js.native
+  
   /**
     * class prop
     *
@@ -66,114 +81,7 @@ trait ClassUrlObject extends ClassObject {
     * @type String
     */
   var href: String = js.native
-  /**
-    * class prop
-    *
-    *
-    * @brief 查询和设置当前 UrlObject 对象中的验证密码
-    *
-    *
-    *
-    * @type String
-    */
-  var password: String = js.native
-  /**
-    * class prop
-    *
-    *
-    * @brief 查询和设置当前 UrlObject 对象中的请求完整路径（含请求），由 pathname 和 query 组装而成
-    *
-    *
-    *
-    * @type String
-    */
-  var path: String = js.native
-  /**
-    * class prop
-    *
-    *
-    * @brief 查询和设置当前 UrlObject 对象中的路径
-    *
-    *
-    *
-    * @type String
-    */
-  var pathname: String = js.native
-  /**
-    * class prop
-    *
-    *
-    * @brief 查询和设置当前 UrlObject 对象中的端口号
-    *
-    *
-    *
-    * @type String
-    */
-  var port: String = js.native
-  /**
-    * class prop
-    *
-    *
-    * @brief 查询和设置当前 UrlObject 对象中的协议名称
-    *
-    *
-    *
-    * @type String
-    */
-  var protocol: String = js.native
-  /**
-    * class prop
-    *
-    *
-    * @brief 查询和设置当前 UrlObject 对象中的请求字符串（ 不含“?”）
-    *
-    *
-    *
-    * @type Value
-    */
-  var query: js.Any = js.native
-  /**
-    * class prop
-    *
-    *
-    * @brief 查询和设置当前 UrlObject 对象中的请求字符串（含“?”），等效于“?”+query
-    *
-    *
-    *
-    * @type String
-    */
-  var search: String = js.native
-  /**
-    * class prop
-    *
-    *
-    * @brief 查询和设置当前 UrlObject 对象是否包含双斜杠
-    *
-    *
-    *
-    * @type Boolean
-    */
-  var slashes: Boolean = js.native
-  /**
-    * class prop
-    *
-    *
-    * @brief 查询和设置当前 UrlObject 对象中的验证用户
-    *
-    *
-    *
-    * @type String
-    */
-  var username: String = js.native
-  /**
-    *
-    * @brief 使用指定的参数构造 UrlObject
-    * @param args 指定构造参数的字典对象，支持的字段有：protocol, slashes, username, password, hostname, port, pathname, query, hash
-    *
-    *
-    *
-    */
-  def format(args: js.Object): Unit = js.native
+  
   /**
     *
     * @brief 标准化路径
@@ -182,6 +90,7 @@ trait ClassUrlObject extends ClassObject {
     *
     */
   def normalize(): Unit = js.native
+  
   /**
     *
     * @brief 解析一个 url 字符串
@@ -196,6 +105,79 @@ trait ClassUrlObject extends ClassObject {
   def parse(url: String, parseQueryString: js.UndefOr[scala.Nothing], slashesDenoteHost: Boolean): Unit = js.native
   def parse(url: String, parseQueryString: Boolean): Unit = js.native
   def parse(url: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): Unit = js.native
+  
+  /**
+    * class prop
+    *
+    *
+    * @brief 查询和设置当前 UrlObject 对象中的验证密码
+    *
+    *
+    *
+    * @type String
+    */
+  var password: String = js.native
+  
+  /**
+    * class prop
+    *
+    *
+    * @brief 查询和设置当前 UrlObject 对象中的请求完整路径（含请求），由 pathname 和 query 组装而成
+    *
+    *
+    *
+    * @type String
+    */
+  var path: String = js.native
+  
+  /**
+    * class prop
+    *
+    *
+    * @brief 查询和设置当前 UrlObject 对象中的路径
+    *
+    *
+    *
+    * @type String
+    */
+  var pathname: String = js.native
+  
+  /**
+    * class prop
+    *
+    *
+    * @brief 查询和设置当前 UrlObject 对象中的端口号
+    *
+    *
+    *
+    * @type String
+    */
+  var port: String = js.native
+  
+  /**
+    * class prop
+    *
+    *
+    * @brief 查询和设置当前 UrlObject 对象中的协议名称
+    *
+    *
+    *
+    * @type String
+    */
+  var protocol: String = js.native
+  
+  /**
+    * class prop
+    *
+    *
+    * @brief 查询和设置当前 UrlObject 对象中的请求字符串（ 不含“?”）
+    *
+    *
+    *
+    * @type Value
+    */
+  var query: js.Any = js.native
+  
   /**
     *
     * @brief 重定位 url 路径，自动识别新路径为相对路径还是绝对路径
@@ -206,5 +188,40 @@ trait ClassUrlObject extends ClassObject {
     *
     */
   def resolve(url: String): ClassUrlObject = js.native
+  
+  /**
+    * class prop
+    *
+    *
+    * @brief 查询和设置当前 UrlObject 对象中的请求字符串（含“?”），等效于“?”+query
+    *
+    *
+    *
+    * @type String
+    */
+  var search: String = js.native
+  
+  /**
+    * class prop
+    *
+    *
+    * @brief 查询和设置当前 UrlObject 对象是否包含双斜杠
+    *
+    *
+    *
+    * @type Boolean
+    */
+  var slashes: Boolean = js.native
+  
+  /**
+    * class prop
+    *
+    *
+    * @brief 查询和设置当前 UrlObject 对象中的验证用户
+    *
+    *
+    *
+    * @type String
+    */
+  var username: String = js.native
 }
-

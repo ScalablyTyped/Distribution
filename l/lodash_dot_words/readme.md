@@ -12,7 +12,7 @@ The lodash method `_.words` exported as a module.
 | Keywords           | lodash-modularized, words |
 | # releases         | 0 |
 | # dependents       | 20 |
-| # downloads        | 5770837 |
+| # downloads        | 4650661 |
 | # stars            | 0 |
 
 ## Links

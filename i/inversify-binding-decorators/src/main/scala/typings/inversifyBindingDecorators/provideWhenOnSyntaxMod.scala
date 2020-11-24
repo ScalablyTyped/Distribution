@@ -4,16 +4,19 @@ import typings.inversifyBindingDecorators.interfacesMod.interfaces.ProvideOnSynt
 import typings.inversifyBindingDecorators.interfacesMod.interfaces.ProvideWhenSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("inversify-binding-decorators/dts/syntax/provide_when_on_syntax", JSImport.Namespace)
 @js.native
 object provideWhenOnSyntaxMod extends js.Object {
+  
   @js.native
   trait ProvideWhenOnSyntax[T]
     extends ProvideWhenSyntax[T]
        with ProvideOnSyntax[T] {
+    
     var _provideOnSyntax: js.Any = js.native
+    
     var _provideWhenSyntax: js.Any = js.native
   }
   
@@ -21,6 +24,4 @@ object provideWhenOnSyntaxMod extends js.Object {
   class default[T] protected () extends ProvideWhenOnSyntax[T] {
     def this(provideWhenSyntax: ProvideWhenSyntax[T], provideOnSyntax: ProvideOnSyntax[T]) = this()
   }
-  
 }
-

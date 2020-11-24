@@ -2,11 +2,12 @@ package typings.pinterestSdk.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pinterest-sdk", "request")
 @js.native
 object request extends js.Object {
+  
   def apply(path: String): Unit = js.native
   def apply(
     path: String,
@@ -25,4 +26,3 @@ object request extends js.Object {
   def apply(path: String, httpMethod: HttpMethod, data: PinData): Unit = js.native
   def apply(path: String, httpMethod: HttpMethod, data: PinData, callback: js.Function): Unit = js.native
 }
-

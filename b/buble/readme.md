@@ -10,9 +10,9 @@ The blazing fast, batteries-included ES2015 compiler
 | ------------------ | :-------------: |
 | Full name          | buble |
 | Keywords           | javascript, transpilation, compilation, esnext, es2015, es2017, es6, es7 |
-| # releases         | 10 |
-| # dependents       | 137 |
-| # downloads        | 13420461 |
+| # releases         | 7 |
+| # dependents       | 138 |
+| # downloads        | 19117787 |
 | # stars            | 17 |
 
 ## Links

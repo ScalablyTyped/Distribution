@@ -5,11 +5,12 @@ import typings.roads.mod.Road
 import typings.roadsServer.http2ServerMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roads-server", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @js.native
   class Http2Server protected () extends default {
     /**
@@ -36,6 +37,4 @@ object mod extends js.Object {
     def this(road: Road, error_handler: js.UndefOr[scala.Nothing], httpsOptions: ServerOptions) = this()
     def this(road: Road, error_handler: js.Function, httpsOptions: ServerOptions) = this()
   }
-  
 }
-

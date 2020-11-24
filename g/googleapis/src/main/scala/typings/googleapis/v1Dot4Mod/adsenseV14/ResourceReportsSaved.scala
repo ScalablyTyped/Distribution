@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Reports$Saved")
 @js.native
 class ResourceReportsSaved protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adsense.reports.saved.generate
     * @desc Generate an AdSense report based on the saved report ID sent in the
@@ -48,6 +50,7 @@ class ResourceReportsSaved protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdsenseReportsGenerateResponse]
   ): Unit = js.native
+  
   /**
     * adsense.reports.saved.list
     * @desc List all saved reports in this AdSense account.
@@ -78,4 +81,3 @@ class ResourceReportsSaved protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSavedReports]
   ): Unit = js.native
 }
-

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.officeJsPreview.Office.IPromiseConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Office.Promise")
 @js.native
@@ -22,11 +22,9 @@ class Promise[T] protected ()
         Unit
       ]) = this()
 }
-
 /** A Promise object. Promises can be chained via ".then", and errors can be caught via ".catch".
   * When a browser-provided native Promise implementation is available, Office.Promise will switch to use the native Promise instead.
   */
 @JSGlobal("Office.Promise")
 @js.native
 object Promise extends TopLevel[IPromiseConstructor]
-

@@ -6,11 +6,12 @@ import typings.tstl.iforwarditeratorMod.IForwardIterator
 import typings.tstl.ipointerMod.IPointer.ValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/module", "partial_sort_copy")
 @js.native
 object partialSortCopy extends js.Object {
+  
   def apply[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: General[IForwardIterator[ValueType[InputIterator], OutputIterator]] */](
     first: InputIterator,
     last: InputIterator,
@@ -25,4 +26,3 @@ object partialSortCopy extends js.Object {
     comp: Comparator[ValueType[InputIterator], ValueType[InputIterator]]
   ): OutputIterator = js.native
 }
-

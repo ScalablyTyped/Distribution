@@ -4,7 +4,7 @@ import typings.kendoUi.kendo.ui.DraggableOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.Draggable")
 @js.native
@@ -13,4 +13,3 @@ class Draggable protected ()
   def this(element: Element) = this()
   def this(element: Element, options: DraggableOptions) = this()
 }
-

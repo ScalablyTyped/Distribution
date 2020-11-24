@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LinkType extends js.Object
-
 /** Indicates the link type of a range of text. */
 @JSGlobal("Windows.UI.Text.LinkType")
 @js.native
 object LinkType extends js.Object {
+  
   /** A URI that is automatically recognized. */
   @js.native
   sealed trait autoLink extends LinkType
@@ -46,6 +46,4 @@ object LinkType extends js.Object {
   /** A mix of link and nonlink attributes. */
   @js.native
   sealed trait undefined extends LinkType
-  
 }
-

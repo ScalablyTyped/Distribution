@@ -7,7 +7,7 @@ import typings.miniprogramWxs.Array
 import typings.miniprogramWxs.Intl.NumberFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Intl.NumberFormat")
 @js.native
@@ -22,15 +22,16 @@ object NumberFormat
       /* options */ NumberFormatOptions, 
       typings.miniprogramWxs.Intl.NumberFormat
     ] {
+  
   def apply(): typings.miniprogramWxs.Intl.NumberFormat = js.native
   def apply(locales: js.UndefOr[scala.Nothing], options: NumberFormatOptions): typings.miniprogramWxs.Intl.NumberFormat = js.native
   def apply(locales: String): typings.miniprogramWxs.Intl.NumberFormat = js.native
   def apply(locales: String, options: NumberFormatOptions): typings.miniprogramWxs.Intl.NumberFormat = js.native
   def apply(locales: Array[String]): typings.miniprogramWxs.Intl.NumberFormat = js.native
   def apply(locales: Array[String], options: NumberFormatOptions): typings.miniprogramWxs.Intl.NumberFormat = js.native
+  
   def supportedLocalesOf(locales: String): Array[String] = js.native
   def supportedLocalesOf(locales: String, options: NumberFormatOptions): Array[String] = js.native
   def supportedLocalesOf(locales: Array[String]): Array[String] = js.native
   def supportedLocalesOf(locales: Array[String], options: NumberFormatOptions): Array[String] = js.native
 }
-

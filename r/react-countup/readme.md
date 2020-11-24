@@ -10,13 +10,13 @@ A React component wrapper around CountUp.js
 | ------------------ | :-------------: |
 | Full name          | react-countup |
 | Keywords           | react-component, react, react.js, countup, countup.js, counter, animation |
-| # releases         | 23 |
-| # dependents       | 40 |
-| # downloads        | 1915332 |
+| # releases         | 18 |
+| # dependents       | 48 |
+| # downloads        | 2888091 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://react-countup.now.sh/)
+- [Homepage](https://github.com/glennreyes/react-countup#readme)
 - [Bugs](https://github.com/glennreyes/react-countup/issues)
 - [Repository](https://github.com/glennreyes/react-countup)
 - [Npm](https://www.npmjs.com/package/react-countup)

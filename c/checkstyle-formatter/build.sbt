@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "checkstyle-formatter"
-version := "1.0-dt-20200515Z-4b4e24"
+version := "1.0-dt-20200515Z-0d2bc8"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

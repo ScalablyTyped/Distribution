@@ -3,7 +3,7 @@ package typings.videoJs.videoCoreNovttMod.default
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Register a Video.js plugin.
@@ -27,4 +27,3 @@ object registerPlugin
   extends TopLevel[
       /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugin */ js.Any
     ]
-

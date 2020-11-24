@@ -4,12 +4,12 @@ import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Tremolo extends Modifier
-
 object Tremolo {
+  
   @scala.inline
   def apply(
     alignSubNotesWithNote: (js.Array[Note], Note) => Unit,
@@ -35,4 +35,3 @@ object Tremolo {
     __obj.asInstanceOf[Tremolo]
   }
 }
-

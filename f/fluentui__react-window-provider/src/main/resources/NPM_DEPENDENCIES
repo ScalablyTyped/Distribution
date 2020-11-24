@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@fluentui/react-window-provider" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@fluentui/react-window-provider" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

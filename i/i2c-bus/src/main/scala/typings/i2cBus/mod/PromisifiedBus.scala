@@ -3,10 +3,11 @@ package typings.i2cBus.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PromisifiedBus extends js.Object {
+  
   /**
     * Return the Bus instance for this PromisifiedBus instance.
     *
@@ -14,6 +15,7 @@ trait PromisifiedBus extends js.Object {
     *     The Bus instance for this PromisifiedBus instance.
     */
   def bus(): I2CBus = js.native
+  
   /**
     * Asynchronous close.
     *
@@ -21,6 +23,7 @@ trait PromisifiedBus extends js.Object {
     *     A Promise that will be resolved with no arguments once the underlying resources have been released, or will be rejected if an error occurs while closing.
     */
   def close(): js.Promise[Unit] = js.native
+  
   /**
     * Asynchronous I2C device Id.
     *
@@ -30,6 +33,7 @@ trait PromisifiedBus extends js.Object {
     *     A Promise that will be resolved with an id object on success, or will be rejected if an error occurs. id is an object with the properties <code>manufacturer</code>, <code>product</code> and if known a human readable <code>name</code> for the associated manufacturer.
     */
   def deviceId(address: Double): js.Promise[I2CDeviceId] = js.native
+  
   /**
     * Determine functionality of the bus/adapter asynchronously.
     *
@@ -37,6 +41,7 @@ trait PromisifiedBus extends js.Object {
     *     A Promise that on success will be resolved with a frozen I2cFuncs object describing the functionality available. The returned Promise will be rejected if an error occurs. See also [I2C functionality](https://www.kernel.org/doc/Documentation/i2c/functionality).
     */
   def i2cFuncs(): js.Promise[I2CFuncs] = js.native
+  
   /**
     * Asynchronous plain I2C read.
     *
@@ -50,6 +55,7 @@ trait PromisifiedBus extends js.Object {
     *     A Promise that on success will be resolved with an object with a bytesRead property identifying the number of bytes read, and a buffer property that is a reference to the passed in buffer argument. The returned Promise will be rejected if an error occurs.
     */
   def i2cRead(address: Double, length: Double, buffer: Buffer): js.Promise[BytesRead] = js.native
+  
   /**
     * Asynchronous plain I2C write.
     *
@@ -63,6 +69,7 @@ trait PromisifiedBus extends js.Object {
     *     A Promise that on success will be resolved with an object with a bytesWritten property identifying the number of bytes written, and a buffer property that is a reference to the passed in buffer argument. The returned promise will be rejected if an error occurs.
     */
   def i2cWrite(address: Double, length: Double, buffer: Buffer): js.Promise[BytesWritten] = js.native
+  
   /**
     * Asynchronous SMBus read byte.
     *
@@ -74,6 +81,7 @@ trait PromisifiedBus extends js.Object {
     *     A Promise that will be resolved with a number representing the byte read on success, or will be rejected if an error occurs. byte is an unsigned integer in the range 0 to 255.
     */
   def readByte(address: Double, command: Double): js.Promise[Double] = js.native
+  
   /**
     * Asynchronous I2C block read (not defined by the SMBus specification).
     *
@@ -89,6 +97,7 @@ trait PromisifiedBus extends js.Object {
     *     A Promise that on success will be resolved with an object with a bytesRead property identifying the number of bytes read, and a buffer property that is a reference to the passed in buffer argument. The returned Promise will be rejected if an error occurs.
     */
   def readI2cBlock(address: Double, command: Double, length: Double, buffer: Buffer): js.Promise[BytesRead] = js.native
+  
   /**
     * Asynchronous SMBus read word.
     *
@@ -100,6 +109,7 @@ trait PromisifiedBus extends js.Object {
     *     A Promise that will be resolved with a number representing the word read on success, or will be rejected if an error occurs. word is an unsigned integer in the range 0 to 65535.
     */
   def readWord(address: Double, command: Double): js.Promise[Double] = js.native
+  
   /**
     * Asynchronous SMBus receive byte.
     *
@@ -109,6 +119,7 @@ trait PromisifiedBus extends js.Object {
     *     A Promise that will be resolved with a number representing the byte received on success, or will be rejected if an error occurs. byte is an unsigned integer in the range 0 to 255.
     */
   def receiveByte(address: Double): js.Promise[Double] = js.native
+  
   /**
     * Scans the I2C bus asynchronously for devices. The default address range 0x03 through 0x77 is the same as the default address range used by the <code>i2cdetect</code> command line tool.
     *
@@ -130,6 +141,7 @@ trait PromisifiedBus extends js.Object {
     *     A Promise that on success will be resolved with an array of numbers where each number represents the I2C address of a device which was detected. The returned Promise will be rejected if an error occurs.
     */
   def scan(startAddr: Double, endAddr: Double): js.Promise[js.Array[Double]] = js.native
+  
   /**
     * Asynchronous SMBus send byte.
     *
@@ -141,6 +153,7 @@ trait PromisifiedBus extends js.Object {
     *     A Promise that will be resolved with no arguments on success, or will be rejected if an error occurs.
     */
   def sendByte(address: Double, byte: Double): js.Promise[Unit] = js.native
+  
   /**
     * Asynchronous SMBus write byte.
     *
@@ -154,6 +167,7 @@ trait PromisifiedBus extends js.Object {
     *     A Promise that will be resolved with no arguments on success, or will be rejected if an error occurs.
     */
   def writeByte(address: Double, command: Double, byte: Double): js.Promise[Unit] = js.native
+  
   /**
     * Asynchronous I2C block write (not defined by the SMBus specification).
     *
@@ -169,6 +183,7 @@ trait PromisifiedBus extends js.Object {
     *     A Promise that on success will be resolved with an object with a bytesWritten property identifying the number of bytes written, and a buffer property that is a reference to the passed in buffer argument. The returned promise will be rejected if an error occurs.
     */
   def writeI2cBlock(address: Double, command: Double, length: Double, buffer: Buffer): js.Promise[BytesWritten] = js.native
+  
   /**
     * Asynchronous SMBus quick command.
     *
@@ -182,6 +197,7 @@ trait PromisifiedBus extends js.Object {
     *     A Promise that will be resolved with no arguments on success, or will be rejected if an error occurs.
     */
   def writeQuick(address: Double, command: Double, bit: Double): js.Promise[Unit] = js.native
+  
   /**
     * Asynchronous SMBus write word.
     *
@@ -196,4 +212,3 @@ trait PromisifiedBus extends js.Object {
     */
   def writeWord(address: Double, command: Double, word: Double): js.Promise[Unit] = js.native
 }
-

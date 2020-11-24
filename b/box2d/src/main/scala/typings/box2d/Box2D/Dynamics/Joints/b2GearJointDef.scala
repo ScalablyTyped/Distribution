@@ -3,25 +3,28 @@ package typings.box2d.Box2D.Dynamics.Joints
 import typings.box2d.Box2D.Dynamics.b2Body
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait b2GearJointDef extends b2JointDef {
+  
   /**
     * The first revolute/prismatic joint attached to the gear joint.
     **/
   var joint1: b2Joint = js.native
+  
   /**
     * The second revolute/prismatic joint attached to the gear joint.
     **/
   var joint2: b2Joint = js.native
+  
   /**
     * The gear ratio.
     **/
   var ratio: Double = js.native
 }
-
 object b2GearJointDef {
+  
   @scala.inline
   def apply(
     bodyA: b2Body,
@@ -37,24 +40,29 @@ object b2GearJointDef {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[b2GearJointDef]
   }
+  
   @scala.inline
   implicit class b2GearJointDefOps[Self <: b2GearJointDef] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setJoint1(value: b2Joint): Self = this.set("joint1", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setJoint2(value: b2Joint): Self = this.set("joint2", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRatio(value: Double): Self = this.set("ratio", value.asInstanceOf[js.Any])
   }
-  
 }
-

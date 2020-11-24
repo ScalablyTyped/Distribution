@@ -2,11 +2,12 @@ package typings.openui5.global.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.format")
 @js.native
 object format extends js.Object {
+  
   @js.native
   /**
     * Constructor for DateFormat - must not be used: To get a DateFormat instance, please use getInstance,
@@ -34,9 +35,9 @@ object format extends js.Object {
       */
     def this(oFormatOptions: js.Any) = this()
   }
-  
   @js.native
   object NumberFormat extends js.Object {
+    
     /**
       * Specifies a rounding behavior for numerical operations capable of discarding precision. Each
       * rounding mode in this object indicates how the leastsignificant returned digits of rounded result is
@@ -44,19 +45,25 @@ object format extends js.Object {
       */
     @js.native
     object RoundingMode extends js.Object {
-      /* 0 */ val AWAY_FROM_ZERO: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.AWAY_FROM_ZERO with Double = js.native
-      /* 1 */ val CEILING: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.CEILING with Double = js.native
-      /* 2 */ val FLOOR: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.FLOOR with Double = js.native
-      /* 3 */ val HALF_AWAY_FROM_ZERO: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.HALF_AWAY_FROM_ZERO with Double = js.native
-      /* 4 */ val HALF_CEILING: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.HALF_CEILING with Double = js.native
-      /* 5 */ val HALF_FLOOR: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.HALF_FLOOR with Double = js.native
-      /* 6 */ val HALF_TOWARDS_ZERO: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.HALF_TOWARDS_ZERO with Double = js.native
-      /* 7 */ val TOWARDS_ZERO: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.TOWARDS_ZERO with Double = js.native
+      
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode with Double] = js.native
+      
+      /* 0 */ val AWAY_FROM_ZERO: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.AWAY_FROM_ZERO with Double = js.native
+      
+      /* 1 */ val CEILING: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.CEILING with Double = js.native
+      
+      /* 2 */ val FLOOR: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.FLOOR with Double = js.native
+      
+      /* 3 */ val HALF_AWAY_FROM_ZERO: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.HALF_AWAY_FROM_ZERO with Double = js.native
+      
+      /* 4 */ val HALF_CEILING: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.HALF_CEILING with Double = js.native
+      
+      /* 5 */ val HALF_FLOOR: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.HALF_FLOOR with Double = js.native
+      
+      /* 6 */ val HALF_TOWARDS_ZERO: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.HALF_TOWARDS_ZERO with Double = js.native
+      
+      /* 7 */ val TOWARDS_ZERO: typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.TOWARDS_ZERO with Double = js.native
     }
-    
   }
-  
 }
-

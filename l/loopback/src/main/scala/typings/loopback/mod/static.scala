@@ -5,11 +5,12 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("loopback", "static")
 @js.native
 object static extends js.Object {
+  
   /**
     * Serve static assets of a LoopBack application
     * @param {string} root The root directory from which the static assets are to
@@ -22,4 +23,3 @@ object static extends js.Object {
   def apply(root: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(root: String, options: js.Any): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
-

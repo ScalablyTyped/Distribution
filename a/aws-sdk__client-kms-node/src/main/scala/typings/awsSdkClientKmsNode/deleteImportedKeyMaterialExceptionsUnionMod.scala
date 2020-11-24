@@ -2,11 +2,12 @@ package typings.awsSdkClientKmsNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kms-node/types/DeleteImportedKeyMaterialExceptionsUnion", JSImport.Namespace)
 @js.native
 object deleteImportedKeyMaterialExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientKmsNode.typesInvalidArnExceptionMod.InvalidArnException
     - typings.awsSdkClientKmsNode.typesUnsupportedOperationExceptionMod.UnsupportedOperationException
@@ -16,6 +17,4 @@ object deleteImportedKeyMaterialExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientKmsNode.typesKmsinvalidstateexceptionMod.KMSInvalidStateException
   */
   trait DeleteImportedKeyMaterialExceptionsUnion extends js.Object
-  
 }
-

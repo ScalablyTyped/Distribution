@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.AnimationRange")
 @js.native
@@ -22,14 +22,4 @@ class AnimationRange protected ()
     /**The ending frame of the animation*/
   to: Double
   ) = this()
-  /**The starting frame of the animation */
-  /* CompleteClass */
-  override var from: Double = js.native
-  /**The name of the animation range**/
-  /* CompleteClass */
-  override var name: String = js.native
-  /**The ending frame of the animation*/
-  /* CompleteClass */
-  override var to: Double = js.native
 }
-

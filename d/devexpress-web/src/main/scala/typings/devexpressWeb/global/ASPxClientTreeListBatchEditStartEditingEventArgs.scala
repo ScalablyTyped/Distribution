@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeList.BatchEditStartEditing event.
@@ -19,4 +19,3 @@ class ASPxClientTreeListBatchEditStartEditingEventArgs protected ()
     */
   def this(nodeKey: String, focusedColumn: typings.devexpressWeb.ASPxClientTreeListColumn, nodeValues: js.Any) = this()
 }
-

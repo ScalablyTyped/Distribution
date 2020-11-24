@@ -5,7 +5,7 @@ import typings.pulumiPulumi.outputMod.Output_
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/apiextensions/customResource", "CustomResource")
 @js.native
@@ -20,7 +20,9 @@ class CustomResource protected ()
     */
   def this(name: String, args: CustomResourceArgs) = this()
   def this(name: String, args: CustomResourceArgs, opts: CustomResourceOptions) = this()
+  
   val __inputs: js.Any = js.native
+  
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -28,6 +30,9 @@ class CustomResource protected ()
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */
   val apiVersion: Output_[String] = js.native
+  
+  def getInputs(): CustomResourceArgs = js.native
+  
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -35,18 +40,18 @@ class CustomResource protected ()
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
     */
   val kind: Output_[String] = js.native
+  
   /**
     * Standard object metadata; More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
     */
   val metadata: Output_[ObjectMeta] = js.native
-  def getInputs(): CustomResourceArgs = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/apiextensions/customResource", "CustomResource")
 @js.native
 object CustomResource extends js.Object {
+  
   /**
     * Get an existing CustomResource resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -56,4 +61,3 @@ object CustomResource extends js.Object {
     */
   def get(name: String, opts: CustomResourceGetOptions): CustomResource = js.native
 }
-

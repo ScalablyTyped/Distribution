@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The File {@link Content} Provider (FCP) implements a {@link ContentProvider} for the {@link UniversalContentBroker} (UCB).
@@ -23,8 +23,8 @@ trait FileContentProvider
      with XContentIdentifierFactory
      with XPropertySet
      with XFileIdentifierConverter
-
 object FileContentProvider {
+  
   @scala.inline
   def apply(
     PropertySetInfo: XPropertySetInfo,
@@ -49,4 +49,3 @@ object FileContentProvider {
     __obj.asInstanceOf[FileContentProvider]
   }
 }
-

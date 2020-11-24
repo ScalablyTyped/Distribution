@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1beta1", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Dicomstores$Studies$Series$Instances$Frames")
 @js.native
 class ResourceProjectsLocationsDatasetsDicomstoresStudiesSeriesInstancesFrames protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.studies.series.instances.frames.retrieveFrames
     * @desc RetrieveFrames returns instances associated with the given study,
@@ -53,6 +55,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresStudiesSeriesInstancesFrames p
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.dicomStores.studies.series.instances.frames.retrieveRendered
     * @desc RetrieveRenderedFrames returns instances associated with the given
@@ -95,4 +98,3 @@ class ResourceProjectsLocationsDatasetsDicomstoresStudiesSeriesInstancesFrames p
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
 }
-

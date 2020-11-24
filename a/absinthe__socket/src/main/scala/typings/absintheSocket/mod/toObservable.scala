@@ -3,11 +3,12 @@ package typings.absintheSocket.mod
 import typings.absintheSocket.anon.OnError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@absinthe/socket", "toObservable")
 @js.native
 object toObservable extends js.Object {
+  
   def apply[Variables](absintheSocket: AbsintheSocket[js.Object], notifier: Notifier[Variables, js.Object]): Observer[Variables, js.Object] = js.native
   def apply[Variables](
     absintheSocket: AbsintheSocket[js.Object],
@@ -15,4 +16,3 @@ object toObservable extends js.Object {
     observer: OnError[Variables]
   ): Observer[Variables, js.Object] = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/slides/v1", "slides_v1.Resource$Presentations$Pages")
 @js.native
 class ResourcePresentationsPages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * slides.presentations.pages.get
     * @desc Gets the latest version of the specified page in the presentation.
@@ -42,6 +44,7 @@ class ResourcePresentationsPages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPage]
   ): Unit = js.native
+  
   /**
     * slides.presentations.pages.getThumbnail
     * @desc Generates a thumbnail of the latest version of the specified page
@@ -80,4 +83,3 @@ class ResourcePresentationsPages protected () extends js.Object {
     callback: BodyResponseCallback[SchemaThumbnail]
   ): Unit = js.native
 }
-

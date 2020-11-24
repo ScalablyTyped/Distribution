@@ -2,7 +2,7 @@ package typings.osrm.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * matchings is an array of Route objects that assemble the trace.
@@ -14,10 +14,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MatchRoute extends Route {
+  
   var confidence: Double = js.native
 }
-
 object MatchRoute {
+  
   @scala.inline
   def apply(
     confidence: Double,
@@ -30,20 +31,23 @@ object MatchRoute {
     val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], legs = legs.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any], weight_name = weight_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchRoute]
   }
+  
   @scala.inline
   implicit class MatchRouteOps[Self <: MatchRoute] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
   }
-  
 }
-

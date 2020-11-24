@@ -1,7 +1,7 @@
 
 # Scala.js typings for multibase
 
-Typings are for version 0.6
+Typings are for version 3.1.0
 
 ## Library description:
 JavaScript implementation of the multibase specification
@@ -10,9 +10,9 @@ JavaScript implementation of the multibase specification
 | ------------------ | :-------------: |
 | Full name          | multibase |
 | Keywords           | IPFS, multiformats, multibase, encode, decode, formats |
-| # releases         | 3 |
-| # dependents       | 26 |
-| # downloads        | 930339 |
+| # releases         | 8 |
+| # dependents       | 61 |
+| # downloads        | 3811572 |
 | # stars            | 0 |
 
 ## Links
@@ -24,7 +24,7 @@ JavaScript implementation of the multibase specification
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

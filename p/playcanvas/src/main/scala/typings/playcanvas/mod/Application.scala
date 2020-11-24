@@ -4,7 +4,7 @@ import typings.playcanvas.anon.AssetPrefix
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new Application.
@@ -31,11 +31,11 @@ class Application protected ()
   extends typings.playcanvas.pc.Application {
   def this(canvas: Element, options: AssetPrefix) = this()
 }
-
 /* static members */
 @JSImport("playcanvas", "Application")
 @js.native
 object Application extends js.Object {
+  
   /**
     * Get the current application. In the case where there are multiple running
     * applications, the function can get an application based on a supplied canvas id. This
@@ -49,4 +49,3 @@ object Application extends js.Object {
   def getApplication(): js.UndefOr[typings.playcanvas.pc.Application] = js.native
   def getApplication(id: String): js.UndefOr[typings.playcanvas.pc.Application] = js.native
 }
-

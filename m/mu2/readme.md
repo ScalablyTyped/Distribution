@@ -9,9 +9,9 @@ A Mustache template engine for Node.js
 | ------------------ | :-------------: |
 | Full name          | mu2 |
 | Keywords           | template, mustache |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 63 |
-| # downloads        | 1396648 |
+| # downloads        | 1584751 |
 | # stars            | 1 |
 
 ## Links

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-browserstack-launcher"
-version := "1.6-dt-20200520Z-4f6481"
+version := "1.6-dt-20200520Z-8ce0f5"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

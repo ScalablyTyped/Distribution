@@ -1,7 +1,7 @@
 
 # Scala.js typings for telejson
 
-Typings are for version 3.3.0
+Typings are for version 5.1.0
 
 ## Library description:
 A library for teleporting rich data to another place.
@@ -10,9 +10,9 @@ A library for teleporting rich data to another place.
 | ------------------ | :-------------: |
 | Full name          | telejson |
 | Keywords           | JSON, cyclic, cyclical, date, function, parse, regex, stringify |
-| # releases         | 19 |
-| # dependents       | 4 |
-| # downloads        | 23485581 |
+| # releases         | 26 |
+| # dependents       | 6 |
+| # downloads        | 67853625 |
 | # stars            | 0 |
 
 ## Links

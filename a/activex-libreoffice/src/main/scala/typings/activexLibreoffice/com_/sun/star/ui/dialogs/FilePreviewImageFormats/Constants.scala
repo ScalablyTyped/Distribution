@@ -3,10 +3,10 @@ package typings.activexLibreoffice.com_.sun.star.ui.dialogs.FilePreviewImageForm
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Constants {
+  
   @scala.inline
   def BITMAP: `1` = 1.asInstanceOf[`1`]
 }
-

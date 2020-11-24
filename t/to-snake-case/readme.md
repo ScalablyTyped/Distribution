@@ -11,8 +11,8 @@ Convert a string to snake case.
 | Full name          | to-snake-case |
 | Keywords           | snake, case, snakecase, string |
 | # releases         | 0 |
-| # dependents       | 54 |
-| # downloads        | 6298637 |
+| # dependents       | 59 |
+| # downloads        | 10260447 |
 | # stars            | 0 |
 
 ## Links

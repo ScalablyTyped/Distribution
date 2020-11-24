@@ -2,10 +2,11 @@ package typings.d3Color.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LCHColorFactory extends js.Object {
+  
   def apply(color: ColorCommonInstance): HCLColor = js.native
   /**
     * Converts the provided color instance and returns an HCL color.
@@ -34,4 +35,3 @@ trait LCHColorFactory extends js.Object {
   def apply(l: Double, c: Double, h: Double): HCLColor = js.native
   def apply(l: Double, c: Double, h: Double, opacity: Double): HCLColor = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Globalforwardingrules")
 @js.native
 class ResourceGlobalforwardingrules protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.globalForwardingRules.delete
     * @desc Deletes the specified GlobalForwardingRule resource.
@@ -43,6 +45,7 @@ class ResourceGlobalforwardingrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.globalForwardingRules.get
     * @desc Returns the specified GlobalForwardingRule resource. Gets a list of
@@ -76,6 +79,7 @@ class ResourceGlobalforwardingrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaForwardingRule]
   ): Unit = js.native
+  
   /**
     * compute.globalForwardingRules.insert
     * @desc Creates a GlobalForwardingRule resource in the specified project
@@ -107,6 +111,7 @@ class ResourceGlobalforwardingrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.globalForwardingRules.list
     * @desc Retrieves a list of GlobalForwardingRule resources available to the
@@ -143,6 +148,7 @@ class ResourceGlobalforwardingrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaForwardingRuleList]
   ): Unit = js.native
+  
   /**
     * compute.globalForwardingRules.patch
     * @desc Updates the specified forwarding rule with the data included in the
@@ -177,6 +183,7 @@ class ResourceGlobalforwardingrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.globalForwardingRules.setLabels
     * @desc Sets the labels on the specified resource. To learn more about
@@ -211,6 +218,7 @@ class ResourceGlobalforwardingrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.globalForwardingRules.setTarget
     * @desc Changes target URL for the GlobalForwardingRule resource. The new
@@ -246,6 +254,7 @@ class ResourceGlobalforwardingrules protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.globalForwardingRules.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -280,4 +289,3 @@ class ResourceGlobalforwardingrules protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

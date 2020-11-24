@@ -10,9 +10,9 @@ a simple chai plugin for better array assertions
 | ------------------ | :-------------: |
 | Full name          | chai-arrays |
 | Keywords           | chai, chai-plugin, testing, assert, expect, Array |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 758858 |
+| # releases         | 2 |
+| # dependents       | 10 |
+| # downloads        | 1197960 |
 | # stars            | 1 |
 
 ## Links

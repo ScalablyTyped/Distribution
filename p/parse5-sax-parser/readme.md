@@ -10,9 +10,9 @@ Streaming SAX-style HTML parser.
 | ------------------ | :-------------: |
 | Full name          | parse5-sax-parser |
 | Keywords           | parse5, parser, stream, streaming, SAX |
-| # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 2507261 |
+| # releases         | 4 |
+| # dependents       | 18 |
+| # downloads        | 3644517 |
 | # stars            | 0 |
 
 ## Links

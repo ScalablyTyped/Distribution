@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "generate-password" : "1.5.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "generate-password" : "1.5.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

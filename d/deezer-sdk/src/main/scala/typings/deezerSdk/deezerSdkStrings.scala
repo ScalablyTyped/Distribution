@@ -9,9 +9,97 @@ import typings.deezerSdk.DeezerSdk.WidgetLayout
 import typings.deezerSdk.DeezerSdk.WidgetSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deezerSdkStrings {
+  
+  @scala.inline
+  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  
+  @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
+  
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
+  
+  @scala.inline
+  def artist: artist = "artist".asInstanceOf[artist]
+  
+  @scala.inline
+  def big: big = "big".asInstanceOf[big]
+  
+  @scala.inline
+  def classic: classic = "classic".asInstanceOf[classic]
+  
+  @scala.inline
+  def connected: connected = "connected".asInstanceOf[connected]
+  
+  @scala.inline
+  def current_track: current_track = "current_track".asInstanceOf[current_track]
+  
+  @scala.inline
+  def dark: dark = "dark".asInstanceOf[dark]
+  
+  @scala.inline
+  def light: light = "light".asInstanceOf[light]
+  
+  @scala.inline
+  def medium: medium = "medium".asInstanceOf[medium]
+  
+  @scala.inline
+  def mute_changed: mute_changed = "mute_changed".asInstanceOf[mute_changed]
+  
+  @scala.inline
+  def notConnected: notConnected = "notConnected".asInstanceOf[notConnected]
+  
+  @scala.inline
+  def not_authorized: not_authorized = "not_authorized".asInstanceOf[not_authorized]
+  
+  @scala.inline
+  def player_buffering: player_buffering = "player_buffering".asInstanceOf[player_buffering]
+  
+  @scala.inline
+  def player_loaded: player_loaded = "player_loaded".asInstanceOf[player_loaded]
+  
+  @scala.inline
+  def player_paused: player_paused = "player_paused".asInstanceOf[player_paused]
+  
+  @scala.inline
+  def player_play: player_play = "player_play".asInstanceOf[player_play]
+  
+  @scala.inline
+  def player_position: player_position = "player_position".asInstanceOf[player_position]
+  
+  @scala.inline
+  def radio: radio = "radio".asInstanceOf[radio]
+  
+  @scala.inline
+  def repeat_changed: repeat_changed = "repeat_changed".asInstanceOf[repeat_changed]
+  
+  @scala.inline
+  def shuffle_changed: shuffle_changed = "shuffle_changed".asInstanceOf[shuffle_changed]
+  
+  @scala.inline
+  def small: small = "small".asInstanceOf[small]
+  
+  @scala.inline
+  def square: square = "square".asInstanceOf[square]
+  
+  @scala.inline
+  def track_end: track_end = "track_end".asInstanceOf[track_end]
+  
+  @scala.inline
+  def tracklist_changed: tracklist_changed = "tracklist_changed".asInstanceOf[tracklist_changed]
+  
+  @scala.inline
+  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  
+  @scala.inline
+  def user: user = "user".asInstanceOf[user]
+  
+  @scala.inline
+  def volume_changed: volume_changed = "volume_changed".asInstanceOf[volume_changed]
+  
   @js.native
   sealed trait DELETE extends HttpMethod
   
@@ -98,64 +186,4 @@ object deezerSdkStrings {
   
   @js.native
   sealed trait volume_changed extends PlayerEvent
-  
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def artist: artist = "artist".asInstanceOf[artist]
-  @scala.inline
-  def big: big = "big".asInstanceOf[big]
-  @scala.inline
-  def classic: classic = "classic".asInstanceOf[classic]
-  @scala.inline
-  def connected: connected = "connected".asInstanceOf[connected]
-  @scala.inline
-  def current_track: current_track = "current_track".asInstanceOf[current_track]
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
-  @scala.inline
-  def mute_changed: mute_changed = "mute_changed".asInstanceOf[mute_changed]
-  @scala.inline
-  def notConnected: notConnected = "notConnected".asInstanceOf[notConnected]
-  @scala.inline
-  def not_authorized: not_authorized = "not_authorized".asInstanceOf[not_authorized]
-  @scala.inline
-  def player_buffering: player_buffering = "player_buffering".asInstanceOf[player_buffering]
-  @scala.inline
-  def player_loaded: player_loaded = "player_loaded".asInstanceOf[player_loaded]
-  @scala.inline
-  def player_paused: player_paused = "player_paused".asInstanceOf[player_paused]
-  @scala.inline
-  def player_play: player_play = "player_play".asInstanceOf[player_play]
-  @scala.inline
-  def player_position: player_position = "player_position".asInstanceOf[player_position]
-  @scala.inline
-  def radio: radio = "radio".asInstanceOf[radio]
-  @scala.inline
-  def repeat_changed: repeat_changed = "repeat_changed".asInstanceOf[repeat_changed]
-  @scala.inline
-  def shuffle_changed: shuffle_changed = "shuffle_changed".asInstanceOf[shuffle_changed]
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
-  @scala.inline
-  def track_end: track_end = "track_end".asInstanceOf[track_end]
-  @scala.inline
-  def tracklist_changed: tracklist_changed = "tracklist_changed".asInstanceOf[tracklist_changed]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
-  @scala.inline
-  def volume_changed: volume_changed = "volume_changed".asInstanceOf[volume_changed]
 }
-

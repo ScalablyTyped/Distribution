@@ -17,7 +17,7 @@ import typings.isLite.isLiteStrings.WeakMap
 import typings.isLite.isLiteStrings.WeakSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.isLite.isLiteStrings.Array
@@ -44,51 +44,71 @@ import scala.scalajs.js.annotation._
   - typings.isLite.isLiteStrings.WeakSet
 */
 trait Types extends js.Object
-
 object Types {
+  
   @scala.inline
   def array: Array = "Array".asInstanceOf[Array]
+  
   @scala.inline
   def asyncFunction: AsyncFunction = "AsyncFunction".asInstanceOf[AsyncFunction]
+  
   @scala.inline
   def bigint: typings.isLite.isLiteStrings.bigint = "bigint".asInstanceOf[typings.isLite.isLiteStrings.bigint]
+  
   @scala.inline
   def boolean: typings.isLite.isLiteStrings.boolean = "boolean".asInstanceOf[typings.isLite.isLiteStrings.boolean]
+  
   @scala.inline
   def date: Date = "Date".asInstanceOf[Date]
+  
   @scala.inline
   def error: Error = "Error".asInstanceOf[Error]
+  
   @scala.inline
   def function: Function = "Function".asInstanceOf[Function]
+  
   @scala.inline
   def generator: Generator = "Generator".asInstanceOf[Generator]
+  
   @scala.inline
   def generatorFunction: GeneratorFunction = "GeneratorFunction".asInstanceOf[GeneratorFunction]
+  
   @scala.inline
   def iterable: Iterable = "Iterable".asInstanceOf[Iterable]
+  
   @scala.inline
   def map: Map = "Map".asInstanceOf[Map]
+  
   @scala.inline
   def `null`: typings.isLite.isLiteStrings.`null` = "null".asInstanceOf[typings.isLite.isLiteStrings.`null`]
+  
   @scala.inline
   def number: typings.isLite.isLiteStrings.number = "number".asInstanceOf[typings.isLite.isLiteStrings.number]
+  
   @scala.inline
   def `object`: Object = "Object".asInstanceOf[Object]
+  
   @scala.inline
   def promise: Promise = "Promise".asInstanceOf[Promise]
+  
   @scala.inline
   def regExp: RegExp = "RegExp".asInstanceOf[RegExp]
+  
   @scala.inline
   def set: Set = "Set".asInstanceOf[Set]
+  
   @scala.inline
   def string: typings.isLite.isLiteStrings.string = "string".asInstanceOf[typings.isLite.isLiteStrings.string]
+  
   @scala.inline
   def symbol: typings.isLite.isLiteStrings.symbol = "symbol".asInstanceOf[typings.isLite.isLiteStrings.symbol]
+  
   @scala.inline
   def undefined: typings.isLite.isLiteStrings.undefined = "undefined".asInstanceOf[typings.isLite.isLiteStrings.undefined]
+  
   @scala.inline
   def weakMap: WeakMap = "WeakMap".asInstanceOf[WeakMap]
+  
   @scala.inline
   def weakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
 }
-

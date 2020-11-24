@@ -1,14 +1,13 @@
 package typings.awsSdkClientDynamodbBrowser
 
-import typings.awsSdkTypes.protocolMod.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-dynamodb-browser/model/_ReplicaGlobalSecondaryIndexSettingsUpdateList", JSImport.Namespace)
 @js.native
 object replicaGlobalSecondaryIndexSettingsUpdateListMod extends js.Object {
+  
   @JSName("_ReplicaGlobalSecondaryIndexSettingsUpdateList")
-  val ReplicaGlobalSecondaryIndexSettingsUpdateList: List = js.native
+  val ReplicaGlobalSecondaryIndexSettingsUpdateList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
 }
-

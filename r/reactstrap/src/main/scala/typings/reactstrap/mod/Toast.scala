@@ -4,10 +4,9 @@ import typings.react.mod.Component
 import typings.reactstrap.toastMod.ToastProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap", "Toast")
+@JSImport("reactstrap/lib", "Toast")
 @js.native
-class Toast[T] ()
+class Toast ()
   extends Component[ToastProps, js.Object, js.Any]
-

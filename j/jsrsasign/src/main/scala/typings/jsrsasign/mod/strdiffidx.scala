@@ -2,11 +2,12 @@ package typings.jsrsasign.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsrsasign", "strdiffidx")
 @js.native
 object strdiffidx extends js.Object {
+  
   /**
     * find index of string where two string differs
     * @param s1 string to compare
@@ -20,4 +21,3 @@ object strdiffidx extends js.Object {
     */
   def apply(s1: String, s2: String): Double = js.native
 }
-

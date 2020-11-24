@@ -12,7 +12,7 @@ Assert multiple checksums on a stream in parallel.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 139 |
+| # downloads        | 405 |
 | # stars            | 0 |
 
 ## Links

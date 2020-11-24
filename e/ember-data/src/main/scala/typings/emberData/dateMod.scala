@@ -3,11 +3,12 @@ package typings.emberData
 import typings.emberData.mod.DS.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ember-data/transforms/date", JSImport.Namespace)
 @js.native
 object dateMod extends js.Object {
+  
   /**
     * The `DS.DateTransform` class is used to serialize and deserialize
     * date attributes on Ember Data record objects. This transform is used
@@ -17,6 +18,4 @@ object dateMod extends js.Object {
     */
   @js.native
   class default () extends Transform
-  
 }
-

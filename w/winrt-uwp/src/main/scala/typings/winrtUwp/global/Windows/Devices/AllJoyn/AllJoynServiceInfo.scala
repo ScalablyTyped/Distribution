@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Devices.AllJoyn
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Exposes unique name and transport information for an advertising app. */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynServiceInfo")
@@ -17,4 +17,3 @@ class AllJoynServiceInfo protected ()
     */
   def this(uniqueName: String, objectPath: String, sessionPort: Double) = this()
 }
-

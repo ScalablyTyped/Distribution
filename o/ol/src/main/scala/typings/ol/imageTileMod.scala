@@ -9,14 +9,19 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/ImageTile", JSImport.Namespace)
 @js.native
 object imageTileMod extends js.Object {
+  
   @js.native
   trait ImageTile
     extends typings.ol.olTileMod.default {
+    
+    /**
+      * Get the HTML image element for this tile (may be a Canvas, Image, or Video).
+      */
     def getImage(): HTMLCanvasElement | HTMLImageElement | HTMLVideoElement = js.native
   }
   
@@ -38,6 +43,4 @@ object imageTileMod extends js.Object {
       opt_options: Options
     ) = this()
   }
-  
 }
-

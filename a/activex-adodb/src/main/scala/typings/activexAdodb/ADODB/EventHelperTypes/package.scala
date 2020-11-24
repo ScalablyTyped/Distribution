@@ -2,9 +2,10 @@ package typings.activexAdodb.ADODB
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object EventHelperTypes {
+  
   type ConnectionExecuteCompleteArgNames = js.Tuple6[
     typings.activexAdodb.activexAdodbStrings.RecordsAffected, 
     typings.activexAdodb.activexAdodbStrings.pError, 
@@ -13,6 +14,7 @@ package object EventHelperTypes {
     typings.activexAdodb.activexAdodbStrings.pRecordset, 
     typings.activexAdodb.activexAdodbStrings.pConnection
   ]
+  
   type ConnectionWillConnectArgNames = js.Tuple6[
     typings.activexAdodb.activexAdodbStrings.ConnectionString, 
     typings.activexAdodb.activexAdodbStrings.UserID, 
@@ -21,6 +23,7 @@ package object EventHelperTypes {
     typings.activexAdodb.activexAdodbStrings.adStatus, 
     typings.activexAdodb.activexAdodbStrings.pConnection
   ]
+  
   type ConnectionWillExecuteArgNames = js.Tuple8[
     typings.activexAdodb.activexAdodbStrings.Source, 
     typings.activexAdodb.activexAdodbStrings.CursorType, 

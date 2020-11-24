@@ -2,17 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait BorderStyle extends js.Object
-
 /**
   * Styles that can be set on a range using Range.setBorder(top, left, bottom, right, vertical, horizontal, color, style).
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.BorderStyle")
 @js.native
 object BorderStyle extends js.Object {
+  
   @js.native
   sealed trait DASHED extends BorderStyle
   
@@ -30,6 +30,4 @@ object BorderStyle extends js.Object {
   
   @js.native
   sealed trait SOLID_THICK extends BorderStyle
-  
 }
-

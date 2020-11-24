@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides unified interface for {@link FormattedString} service.
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
 trait XFormattedString2
   extends XPropertySet
      with XFormattedString
-
 object XFormattedString2 {
+  
   @scala.inline
   def apply(
     PropertySetInfo: XPropertySetInfo,
@@ -40,4 +40,3 @@ object XFormattedString2 {
     __obj.asInstanceOf[XFormattedString2]
   }
 }
-

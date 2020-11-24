@@ -11,8 +11,8 @@ Returns `true` if the path appears to be relative.
 | Full name          | is-relative |
 | Keywords           | absolute, check, file, filepath, is, normalize, path, path.relative, relative, resolve, slash, slashes, uri, url |
 | # releases         | 0 |
-| # dependents       | 78 |
-| # downloads        | 129619415 |
+| # dependents       | 81 |
+| # downloads        | 152535576 |
 | # stars            | 1 |
 
 ## Links

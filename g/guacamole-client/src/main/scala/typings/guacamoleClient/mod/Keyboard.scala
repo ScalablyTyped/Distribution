@@ -5,7 +5,7 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "Keyboard")
 @js.native
@@ -20,17 +20,17 @@ class Keyboard protected ()
   def this(element: HTMLDocument) = this()
   def this(element: HTMLElement) = this()
 }
-
 @JSImport("guacamole-client", "Keyboard")
 @js.native
 object Keyboard extends js.Object {
+  
   @js.native
   class ModifierState ()
     extends typings.guacamoleClient.keyboardMod.Keyboard.ModifierState
-  
   /* static members */
   @js.native
   object ModifierState extends js.Object {
+    
     /**
       * Returns the modifier state applicable to the keyboard event given.
       * @param event The keyboard event to read.
@@ -38,6 +38,4 @@ object Keyboard extends js.Object {
       */
     def fromKeyboardEvent(event: KeyboardEvent): typings.guacamoleClient.keyboardMod.Keyboard.ModifierState = js.native
   }
-  
 }
-

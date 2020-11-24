@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Series")
 @js.native
 class ResourceSeries protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var membership: ResourceSeriesMembership = js.native
+  
   /**
     * books.series.get
     * @desc Returns Series metadata for the given series ids.
@@ -42,5 +43,6 @@ class ResourceSeries protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSeries]
   ): Unit = js.native
+  
+  var membership: ResourceSeriesMembership = js.native
 }
-

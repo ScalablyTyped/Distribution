@@ -5,11 +5,12 @@ import typings.samchon.iclientdriverMod.IClientDriver
 import typings.samchon.parallelSystemMod.ParallelSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/distributed/DistributedSystem", JSImport.Namespace)
 @js.native
 object distributedSystemMod extends js.Object {
+  
   @js.native
   abstract class DistributedSystem protected () extends ParallelSystem {
     /**
@@ -25,10 +26,12 @@ object distributedSystemMod extends js.Object {
       * @param communicator A communicator communicates with remote, the external system.
       */
     def this(systemArray: DistributedSystemArray[DistributedSystem], communicator: IClientDriver) = this()
+    
     /**
       * @hidden
       */
     var _Compute_average_elapsed_time: js.Any = js.native
+    
     /**
       * Get manager of this object.
       *
@@ -37,6 +40,4 @@ object distributedSystemMod extends js.Object {
     @JSName("getSystemArray")
     def getSystemArray_SystemArray_DistributedSystemArrayDistributedSystem_SystemArray[SystemArray /* <: DistributedSystemArray[DistributedSystem] */](): SystemArray = js.native
   }
-  
 }
-

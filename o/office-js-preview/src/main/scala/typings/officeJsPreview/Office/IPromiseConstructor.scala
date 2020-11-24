@@ -3,7 +3,7 @@ package typings.officeJsPreview.Office
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // **Note**: this is a copy of the PromiseConstructor object from
 //     https://github.com/Microsoft/TypeScript/blob/master/lib/lib.es2015.promise.d.ts
@@ -26,6 +26,7 @@ Instantiable1[
       ], 
       js.Promise[js.Object]
     ] {
+  
   /**
     * Creates a Promise that is resolved with an array of results when all of the provided Promises
     * resolve, or rejected when any Promise is rejected.
@@ -161,6 +162,7 @@ Instantiable1[
       T10 | js.Thenable[T10]
     ]
   ): js.Promise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = js.native
+  
   /**
     * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
     * or rejected.
@@ -296,6 +298,7 @@ Instantiable1[
       T10 | js.Thenable[T10]
     ]
   ): js.Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = js.native
+  
   /**
     * Creates a new rejected promise for the provided reason.
     * @param reason The reason the promise was rejected.
@@ -309,6 +312,7 @@ Instantiable1[
     */
   @JSName("reject")
   def reject_T[T](reason: js.Any): js.Promise[T] = js.native
+  
   /**
     * Creates a new resolved promise.
     * @returns A resolved promise.
@@ -322,4 +326,3 @@ Instantiable1[
   def resolve[T](value: T): js.Promise[T] = js.native
   def resolve[T](value: js.Thenable[T]): js.Promise[T] = js.native
 }
-

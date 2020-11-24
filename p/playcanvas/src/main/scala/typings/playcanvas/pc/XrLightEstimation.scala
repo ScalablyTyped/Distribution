@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new XrLightEstimation. Note that this is created internally by the {@link pc.XrManager}.
@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XrLightEstimation extends EventHandler {
+  
   /**
     * True if estimated light information is available.
     * @example
@@ -22,26 +23,27 @@ trait XrLightEstimation extends EventHandler {
     * }
     */
   var available: Boolean = js.native
+  
   /**
     * Color of what is estimated to be the most prominent directional light. Or null if data is not available.
     */
   var color: Color | Null = js.native
-  /**
-    * Intensity of what is estimated to be the most prominent directional light. Or null if data is not available.
-    */
-  var intensity: Double | Null = js.native
-  /**
-    * Rotation of what is estimated to be the most prominent directional light. Or null if data is not available.
-    */
-  var rotation: Quat | Null = js.native
-  /**
-    * True if Light Estimation is supported. This information is available only during an active AR session.
-    */
-  var supported: Boolean = js.native
+  
   /**
     * End estimation of illumination data.
     */
   def end(): Unit = js.native
+  
+  /**
+    * Intensity of what is estimated to be the most prominent directional light. Or null if data is not available.
+    */
+  var intensity: Double | Null = js.native
+  
+  /**
+    * Rotation of what is estimated to be the most prominent directional light. Or null if data is not available.
+    */
+  var rotation: Quat | Null = js.native
+  
   /**
     * Start estimation of illimunation data.
     * Availability of such data will come later and an `available` event will be fired.
@@ -54,5 +56,9 @@ trait XrLightEstimation extends EventHandler {
     * });
     */
   def start(): Unit = js.native
+  
+  /**
+    * True if Light Estimation is supported. This information is available only during an active AR session.
+    */
+  var supported: Boolean = js.native
 }
-

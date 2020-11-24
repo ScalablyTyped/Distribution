@@ -2,7 +2,7 @@ package typings.atlassianCrowdClient.userMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atlassian-crowd-client/lib/models/user", JSImport.Namespace)
 @js.native
@@ -75,10 +75,9 @@ class ^ protected () extends User {
     attributes: js.Any
   ) = this()
 }
-
 @JSImport("atlassian-crowd-client/lib/models/user", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def fromCrowd(userObj: UserObj): User = js.native
 }
-

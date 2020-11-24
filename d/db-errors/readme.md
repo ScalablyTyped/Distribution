@@ -12,7 +12,7 @@ Unified node.js error API for mysql, postgres and sqlite3
 | Keywords           | mysql, postgres, postgresql, sqlite3, error, errors, error, handling, error, handler |
 | # releases         | 6 |
 | # dependents       | 4 |
-| # downloads        | 884164 |
+| # downloads        | 1362449 |
 | # stars            | 0 |
 
 ## Links

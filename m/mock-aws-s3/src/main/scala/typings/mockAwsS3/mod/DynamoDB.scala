@@ -8,7 +8,7 @@ import typings.awsSdk.dynamodbMod.AttributeValue
 import typings.awsSdk.dynamodbMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "DynamoDB")
 @js.native
@@ -19,13 +19,29 @@ class DynamoDB ()
   extends typings.awsSdk.mod.DynamoDB {
   def this(options: ClientConfiguration) = this()
 }
-
 @JSImport("mock-aws-s3", "DynamoDB")
 @js.native
 object DynamoDB extends js.Object {
+  
   @js.native
   class Converter ()
     extends typings.awsSdk.mod.DynamoDB.Converter
+  /* static members */
+  @js.native
+  object Converter extends js.Object {
+    
+    def input(data: js.Any): AttributeValue = js.native
+    def input(data: js.Any, options: ConverterOptions): AttributeValue = js.native
+    
+    def marshall(data: StringDictionary[js.Any]): AttributeMap = js.native
+    def marshall(data: StringDictionary[js.Any], options: ConverterOptions): AttributeMap = js.native
+    
+    def output(data: AttributeValue): js.Any = js.native
+    def output(data: AttributeValue, options: ConverterOptions): js.Any = js.native
+    
+    def unmarshall(data: AttributeMap): StringDictionary[js.Any] = js.native
+    def unmarshall(data: AttributeMap, options: ConverterOptions): StringDictionary[js.Any] = js.native
+  }
   
   @js.native
   /**
@@ -35,19 +51,4 @@ object DynamoDB extends js.Object {
     extends typings.awsSdk.mod.DynamoDB.DocumentClient {
     def this(options: DocumentClientOptions with ClientConfiguration) = this()
   }
-  
-  /* static members */
-  @js.native
-  object Converter extends js.Object {
-    def input(data: js.Any): AttributeValue = js.native
-    def input(data: js.Any, options: ConverterOptions): AttributeValue = js.native
-    def marshall(data: StringDictionary[js.Any]): AttributeMap = js.native
-    def marshall(data: StringDictionary[js.Any], options: ConverterOptions): AttributeMap = js.native
-    def output(data: AttributeValue): js.Any = js.native
-    def output(data: AttributeValue, options: ConverterOptions): js.Any = js.native
-    def unmarshall(data: AttributeMap): StringDictionary[js.Any] = js.native
-    def unmarshall(data: AttributeMap, options: ConverterOptions): StringDictionary[js.Any] = js.native
-  }
-  
 }
-

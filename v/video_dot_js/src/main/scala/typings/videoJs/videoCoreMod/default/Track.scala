@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.videoJs.mod.videojs.TrackOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core", "Track")
 @js.native
@@ -30,4 +30,3 @@ object Track
   */
 Instantiable0[typings.videoJs.mod.videojs.Track]
      with Instantiable1[/* options */ TrackOptions, typings.videoJs.mod.videojs.Track]
-

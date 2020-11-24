@@ -9,10 +9,11 @@ import typings.std.Error
 import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EggCoreBase[Config] extends ^[DefaultState, DefaultContext] {
+  
   /**
     * The current directory of application
     * @member {String}
@@ -20,53 +21,17 @@ trait EggCoreBase[Config] extends ^[DefaultState, DefaultContext] {
     * @since 1.0.0
     */
   var baseDir: String = js.native
-  /**
-    * The configuration of application
-    * @member {Config}
-    * @since 1.0.0
-    */
-  var config: Config = js.native
-  /**
-    * Alias to {@link https://npmjs.com/package/depd}
-    * @member {Function}
-    * @since 1.0.0
-    */
-  @JSName("deprecate")
-  var deprecate_Original: Deprecate = js.native
-  /**
-    * The loader instance, the default class is {@link EggLoader}.
-    * If you want define
-    * @member {EggLoader} EggCore#loader
-    * @since 1.0.0
-    */
-  var loader: EggLoader[this.type, Config] = js.native
-  /**
-    * The name of application
-    * @member {String}
-    * @see {@link EggAppInfo#name}
-    * @since 1.0.0
-    */
-  var name: String = js.native
-  /**
-    * Retrieve enabled plugins
-    * @member {Object}
-    * @since 1.0.0
-    */
-  var plugins: Plugins = js.native
-  /**
-    * Whether `application` or `agent`
-    * @member {String}
-    * @since 1.0.0
-    */
-  var `type`: EggType = js.native
+  
   /**
     * Register a function that will be called when app close
     */
   def beforeClose(fn: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Execute scope after loaded and before app start
     */
   def beforeStart(scope: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Close all, it wil close
     * - callbacks registered by beforeClose
@@ -79,12 +44,51 @@ trait EggCoreBase[Config] extends ^[DefaultState, DefaultContext] {
     * @since 1.0.0
     */
   def close(): js.Promise[_] = js.native
+  
+  /**
+    * The configuration of application
+    * @member {Config}
+    * @since 1.0.0
+    */
+  var config: Config = js.native
+  
   /**
     * Alias to {@link https://npmjs.com/package/depd}
     * @member {Function}
     * @since 1.0.0
     */
   def deprecate(message: String): Unit = js.native
+  /**
+    * Alias to {@link https://npmjs.com/package/depd}
+    * @member {Function}
+    * @since 1.0.0
+    */
+  @JSName("deprecate")
+  var deprecate_Original: Deprecate = js.native
+  
+  /**
+    * The loader instance, the default class is {@link EggLoader}.
+    * If you want define
+    * @member {EggLoader} EggCore#loader
+    * @since 1.0.0
+    */
+  var loader: EggLoader[this.type, Config, EggLoaderOptions] = js.native
+  
+  /**
+    * The name of application
+    * @member {String}
+    * @see {@link EggAppInfo#name}
+    * @since 1.0.0
+    */
+  var name: String = js.native
+  
+  /**
+    * Retrieve enabled plugins
+    * @member {Object}
+    * @since 1.0.0
+    */
+  var plugins: Plugins = js.native
+  
   /**
     * register an callback function that will be invoked when application is ready.
     * @see https://github.com/node-modules/ready
@@ -100,6 +104,7 @@ trait EggCoreBase[Config] extends ^[DefaultState, DefaultContext] {
     */
   def ready(): js.Any = js.native
   def ready(fn: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Any = js.native
+  
   /**
     * If a client starts asynchronously, you can register `readyCallback`,
     * then the application will wait for the callback to ready
@@ -120,6 +125,7 @@ trait EggCoreBase[Config] extends ^[DefaultState, DefaultContext] {
     */
   def readyCallback(name: String): js.Function0[Unit] = js.native
   def readyCallback(name: String, opts: IsWeakDep): js.Function0[Unit] = js.native
+  
   /**
     * Convert a generator function to a promisable one.
     *
@@ -137,6 +143,7 @@ trait EggCoreBase[Config] extends ^[DefaultState, DefaultContext] {
     * ```
     */
   def toAsyncFunction[T](fn: js.Function1[/* repeated */ js.Any, IterableIterator[T]]): js.Function1[/* repeated */ js.Any, js.Promise[T]] = js.native
+  
   /**
     * Convert an object with generator functions to a Promisable one.
     * @param  {Mixed} obj The inputted object.
@@ -152,5 +159,11 @@ trait EggCoreBase[Config] extends ^[DefaultState, DefaultContext] {
     * ```
     */
   def toPromise[T](obj: js.Any): js.Promise[T] = js.native
+  
+  /**
+    * Whether `application` or `agent`
+    * @member {String}
+    * @since 1.0.0
+    */
+  var `type`: EggType = js.native
 }
-

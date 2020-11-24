@@ -2,12 +2,12 @@ package typings.winrt.Windows.Networking.Connectivity
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ConnectionCost extends IConnectionCost
-
 object ConnectionCost {
+  
   @scala.inline
   def apply(
     approachingDataLimit: Boolean,
@@ -19,4 +19,3 @@ object ConnectionCost {
     __obj.asInstanceOf[ConnectionCost]
   }
 }
-

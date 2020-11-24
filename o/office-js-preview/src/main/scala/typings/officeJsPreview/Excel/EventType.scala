@@ -2,17 +2,17 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EventType extends js.Object
-
 /**
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.EventType")
 @js.native
 object EventType extends js.Object {
+  
   /**
     * AgaveVisualUpdate represents the type of an event that is associated with an agave visual, and carries a new data view following a data change
     *
@@ -231,6 +231,13 @@ object EventType extends js.Object {
   sealed trait worksheetFormatChanged extends EventType
   
   /**
+    * WorksheetFormulaChanged represents the type of event registered on a worksheet, and occurs when a formula is changed.
+    *
+    */
+  @js.native
+  sealed trait worksheetFormulaChanged extends EventType
+  
+  /**
     * WorksheetRowHiddenChanged represents the type of event registered on worksheet, and occurs when a row's hidden state is changed.
     *
     */
@@ -257,6 +264,4 @@ object EventType extends js.Object {
     */
   @js.native
   sealed trait worksheetSingleClicked extends EventType
-  
 }
-

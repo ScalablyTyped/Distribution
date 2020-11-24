@@ -10,13 +10,13 @@ zlib port to javascript - fast, modularized, with browser support
 | ------------------ | :-------------: |
 | Full name          | pako |
 | Keywords           | zlib, deflate, inflate, gzip |
-| # releases         | 5 |
-| # dependents       | 474 |
-| # downloads        | 402260924 |
+| # releases         | 9 |
+| # dependents       | 695 |
+| # downloads        | 592600436 |
 | # stars            | 26 |
 
 ## Links
-- [Homepage](https://github.com/nodeca/pako)
+- [Homepage](https://github.com/nodeca/pako#readme)
 - [Bugs](https://github.com/nodeca/pako/issues)
 - [Repository](https://github.com/nodeca/pako)
 - [Npm](https://www.npmjs.com/package/pako)

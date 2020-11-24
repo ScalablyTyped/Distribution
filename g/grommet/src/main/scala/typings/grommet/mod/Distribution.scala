@@ -10,9 +10,9 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "Distribution")
+@JSImport("grommet", "Distribution")
 @js.native
 class Distribution protected ()
   extends Component[
@@ -26,8 +26,7 @@ class Distribution protected ()
     context: js.Any
   ) = this()
 }
-
-@JSImport("grommet/es6", "Distribution")
+@JSImport("grommet", "Distribution")
 @js.native
 object Distribution extends TopLevel[
       ComponentClass[
@@ -35,4 +34,3 @@ object Distribution extends TopLevel[
         ComponentState
       ]
     ]
-

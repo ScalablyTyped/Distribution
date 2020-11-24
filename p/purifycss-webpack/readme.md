@@ -10,9 +10,9 @@ PurifyCSS for webpack
 | ------------------ | :-------------: |
 | Full name          | purifycss-webpack |
 | Keywords           | webpack, uncss, plugin, purify |
-| # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 495188 |
+| # releases         | 1 |
+| # dependents       | 28 |
+| # downloads        | 598893 |
 | # stars            | 3 |
 
 ## Links

@@ -2,10 +2,11 @@ package typings.rx.Rx
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BehaviorSubject[T] extends Subject[T] {
+  
   /**
     * Gets the current value or throws an exception.
     * Value is frozen after onCompleted is called.
@@ -15,4 +16,3 @@ trait BehaviorSubject[T] extends Subject[T] {
     */
   def getValue(): T = js.native
 }
-

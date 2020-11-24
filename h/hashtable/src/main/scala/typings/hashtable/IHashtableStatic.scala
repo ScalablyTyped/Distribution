@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IHashtableStatic
@@ -19,4 +19,3 @@ trait IHashtableStatic
       /* equals */ js.Function2[/* value1 */ js.Object, /* value2 */ js.Object, Boolean], 
       IHashtable[js.Object, js.Object]
     ]
-

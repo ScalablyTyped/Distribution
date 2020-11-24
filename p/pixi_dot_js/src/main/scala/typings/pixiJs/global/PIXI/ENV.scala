@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Different types of environments for WebGL.
@@ -19,10 +19,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.ENV")
 @js.native
 object ENV extends js.Object {
-  /* 1 */ val WEBGL: typings.pixiJs.PIXI.ENV.WEBGL with Double = js.native
-  /* 2 */ val WEBGL2: typings.pixiJs.PIXI.ENV.WEBGL2 with Double = js.native
-  /* 0 */ val WEBGL_LEGACY: typings.pixiJs.PIXI.ENV.WEBGL_LEGACY with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.ENV with Double] = js.native
+  
+  /* 1 */ val WEBGL: typings.pixiJs.PIXI.ENV.WEBGL with Double = js.native
+  
+  /* 2 */ val WEBGL2: typings.pixiJs.PIXI.ENV.WEBGL2 with Double = js.native
+  
+  /* 0 */ val WEBGL_LEGACY: typings.pixiJs.PIXI.ENV.WEBGL_LEGACY with Double = js.native
 }
-

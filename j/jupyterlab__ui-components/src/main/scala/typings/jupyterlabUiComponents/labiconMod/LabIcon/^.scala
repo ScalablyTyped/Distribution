@@ -7,14 +7,17 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/ui-components/lib/icon/labicon", "LabIcon")
 @js.native
 object ^ extends js.Object {
+  
   var _debug: js.Any = js.native
+  
   var _instances: js.Any = js.native
-  /***********
+  
+  /** *********
     * statics *
     ***********/
   /**
@@ -26,6 +29,7 @@ object ^ extends js.Object {
     * @returns the cleaned container
     */
   def remove(container: HTMLElement): HTMLElement = js.native
+  
   /**
     * Resolve an icon name or a {name, svgstr} pair into an
     * actual LabIcon.
@@ -36,6 +40,7 @@ object ^ extends js.Object {
     * @returns a LabIcon instance
     */
   def resolve(hasIcon: Icon): typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
   /**
     * Resolve an icon name or a {name, svgstr} pair into a DOM element.
     * If icon arg is undefined, the function will fall back to trying to render
@@ -58,6 +63,7 @@ object ^ extends js.Object {
     * @returns a DOM node with the resolved icon rendered into it
     */
   def resolveElement(hasIconIconClassFallbackProps: PartialIResolverPropsIPro): HTMLElement = js.native
+  
   /**
     * Resolve an icon name or a {name, svgstr} pair into a React component.
     * If icon arg is undefined, the function will fall back to trying to render
@@ -80,10 +86,12 @@ object ^ extends js.Object {
     * @returns a React component that will render the resolved icon
     */
   def resolveReact(hasIconIconClassFallbackProps: PartialIResolverPropsIRea): Element = js.native
+  
   /**
     * Resolve a {name, svgstr} pair into an actual svg node.
     */
   def resolveSvg(hasNameSvgstr: IIcon): HTMLElement | Null = js.native
+  
   /**
     * Toggle icon debug from off-to-on, or vice-versa.
     *
@@ -92,4 +100,3 @@ object ^ extends js.Object {
   def toggleDebug(): Unit = js.native
   def toggleDebug(debug: Boolean): Unit = js.native
 }
-

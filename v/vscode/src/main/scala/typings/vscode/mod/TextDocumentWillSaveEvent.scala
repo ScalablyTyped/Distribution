@@ -3,18 +3,21 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TextDocumentWillSaveEvent extends js.Object {
+  
   /**
     * The document that will be saved.
     */
   val document: TextDocument = js.native
+  
   /**
     * The reason why save was triggered.
     */
   val reason: TextDocumentSaveReason = js.native
+  
   /**
     * Allows to pause the event loop and to apply [pre-save-edits](#TextEdit).
     * Edits of subsequent calls to this function will be applied in order. The
@@ -44,4 +47,3 @@ trait TextDocumentWillSaveEvent extends js.Object {
     */
   def waitUntil(thenable: Thenable[_ | js.Array[TextEdit]]): Unit = js.native
 }
-

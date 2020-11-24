@@ -2,7 +2,7 @@ package typings.nodemailer.messageParserMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * MessageParser instance is a transform stream that separates message headers
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSImport("nodemailer/lib/dkim/message-parser", JSImport.Namespace)
 @js.native
 class ^ () extends MessageParser
-

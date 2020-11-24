@@ -2,14 +2,14 @@ package typings.chrome.chrome.cast
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SenderPlatform extends js.Object
-
 @JSGlobal("chrome.cast.SenderPlatform")
 @js.native
 object SenderPlatform extends js.Object {
+  
   @js.native
   sealed trait ANDROID extends SenderPlatform
   
@@ -18,6 +18,4 @@ object SenderPlatform extends js.Object {
   
   @js.native
   sealed trait IOS extends SenderPlatform
-  
 }
-

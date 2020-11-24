@@ -5,11 +5,14 @@ import typings.hdrHistogramJs.abstractHistogramMod.HistogramConstructor
 import typings.hdrHistogramJs.anon.HistogramConstr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hdr-histogram-js/HistogramLogReader", JSImport.Namespace)
 @js.native
 object histogramLogReaderMod extends js.Object {
+  
+  def listTags(content: String): js.Array[String] = js.native
+  
   /**
     * A histogram log reader.
     * <p>
@@ -53,13 +56,15 @@ object histogramLogReaderMod extends js.Object {
     */
   @js.native
   trait HistogramLogReader extends js.Object {
+    
     var baseTimeSec: Double = js.native
+    
     var currentLineIndex: Double = js.native
+    
     var histogramConstr: HistogramConstructor = js.native
+    
     var lines: js.Array[String] = js.native
-    var parseBaseTimeFromLine: js.Any = js.native
-    var parseStartTimeFromLine: js.Any = js.native
-    var startTimeSec: Double = js.native
+    
     /**
       * Read the next interval histogram from the log. Returns a Histogram object if
       * an interval line was found, or null if not.
@@ -71,6 +76,12 @@ object histogramLogReaderMod extends js.Object {
     def nextIntervalHistogram(rangeStartTimeSec: js.UndefOr[scala.Nothing], rangeEndTimeSec: Double): AbstractHistogram | Null = js.native
     def nextIntervalHistogram(rangeStartTimeSec: Double): AbstractHistogram | Null = js.native
     def nextIntervalHistogram(rangeStartTimeSec: Double, rangeEndTimeSec: Double): AbstractHistogram | Null = js.native
+    
+    var parseBaseTimeFromLine: js.Any = js.native
+    
+    var parseStartTimeFromLine: js.Any = js.native
+    
+    var startTimeSec: Double = js.native
   }
   
   /**
@@ -119,7 +130,4 @@ object histogramLogReaderMod extends js.Object {
     def this(logContent: String) = this()
     def this(logContent: String, options: HistogramConstr) = this()
   }
-  
-  def listTags(content: String): js.Array[String] = js.native
 }
-

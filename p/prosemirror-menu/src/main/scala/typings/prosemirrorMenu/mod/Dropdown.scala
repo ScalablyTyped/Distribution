@@ -6,7 +6,7 @@ import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorView.mod.EditorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-menu", "Dropdown")
 @js.native
@@ -31,9 +31,9 @@ class Dropdown[S /* <: Schema[_, _] */] protected () extends js.Object {
     */
   def this(content: js.Array[MenuElement[S]]) = this()
   def this(content: js.Array[MenuElement[S]], options: StringDictionary[js.Any]) = this()
+  
   /**
     * Render the dropdown menu and sub-items.
     */
   def render(view: EditorView[S]): Update[S] = js.native
 }
-

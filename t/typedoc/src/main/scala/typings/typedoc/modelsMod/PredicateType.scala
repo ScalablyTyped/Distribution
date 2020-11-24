@@ -2,7 +2,7 @@ package typings.typedoc.modelsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc/dist/lib/models", "PredicateType")
 @js.native
@@ -11,4 +11,3 @@ class PredicateType protected ()
   def this(name: String, asserts: Boolean) = this()
   def this(name: String, asserts: Boolean, targetType: typings.typedoc.typesAbstractMod.Type) = this()
 }
-

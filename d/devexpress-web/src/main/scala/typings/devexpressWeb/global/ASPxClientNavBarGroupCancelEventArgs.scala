@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for cancellable events which concern manipulations on groups.
@@ -18,4 +18,3 @@ class ASPxClientNavBarGroupCancelEventArgs protected ()
     */
   def this(processOnServer: Boolean, group: typings.devexpressWeb.ASPxClientNavBarGroup) = this()
 }
-

@@ -2,13 +2,14 @@ package typings.filesystem
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface represents a file on a file system.
   */
 @js.native
 trait FileEntry extends Entry {
+  
   /**
     * Creates a new FileWriter associated with the file that this FileEntry represents.
     * @param successCallback A callback that is called with the new FileWriter.
@@ -16,6 +17,7 @@ trait FileEntry extends Entry {
     */
   def createWriter(successCallback: FileWriterCallback): Unit = js.native
   def createWriter(successCallback: FileWriterCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Returns a File that represents the current state of the file that this FileEntry represents.
     * @param successCallback A callback that is called with the File.
@@ -24,4 +26,3 @@ trait FileEntry extends Entry {
   def file(successCallback: FileCallback): Unit = js.native
   def file(successCallback: FileCallback, errorCallback: ErrorCallback): Unit = js.native
 }
-

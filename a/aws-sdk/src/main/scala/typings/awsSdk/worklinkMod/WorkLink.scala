@@ -1,17 +1,16 @@
 package typings.awsSdk.worklinkMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WorkLink extends Service {
-  @JSName("config")
-  var config_WorkLink: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Specifies a domain to be associated to Amazon WorkLink.
     */
@@ -25,6 +24,7 @@ trait WorkLink extends Service {
     params: AssociateDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateDomainResponse, Unit]
   ): Request[AssociateDomainResponse, AWSError] = js.native
+  
   /**
     * Associates a website authorization provider with a specified fleet. This is used to authorize users against associated websites in the company network.
     */
@@ -40,6 +40,7 @@ trait WorkLink extends Service {
     params: AssociateWebsiteAuthorizationProviderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateWebsiteAuthorizationProviderResponse, Unit]
   ): Request[AssociateWebsiteAuthorizationProviderResponse, AWSError] = js.native
+  
   /**
     * Imports the root certificate of a certificate authority (CA) used to obtain TLS certificates used by associated websites within the company network.
     */
@@ -55,6 +56,10 @@ trait WorkLink extends Service {
     params: AssociateWebsiteCertificateAuthorityRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateWebsiteCertificateAuthorityResponse, Unit]
   ): Request[AssociateWebsiteCertificateAuthorityResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_WorkLink: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a fleet. A fleet consists of resources and the configuration that delivers associated websites to authorized users who download and set up the Amazon WorkLink app.
     */
@@ -68,6 +73,7 @@ trait WorkLink extends Service {
     params: CreateFleetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateFleetResponse, Unit]
   ): Request[CreateFleetResponse, AWSError] = js.native
+  
   /**
     * Deletes a fleet. Prevents users from accessing previously associated websites. 
     */
@@ -81,6 +87,7 @@ trait WorkLink extends Service {
     params: DeleteFleetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteFleetResponse, Unit]
   ): Request[DeleteFleetResponse, AWSError] = js.native
+  
   /**
     * Describes the configuration for delivering audit streams to the customer account.
     */
@@ -96,6 +103,7 @@ trait WorkLink extends Service {
     params: DescribeAuditStreamConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAuditStreamConfigurationResponse, Unit]
   ): Request[DescribeAuditStreamConfigurationResponse, AWSError] = js.native
+  
   /**
     * Describes the networking configuration to access the internal websites associated with the specified fleet.
     */
@@ -111,6 +119,7 @@ trait WorkLink extends Service {
     params: DescribeCompanyNetworkConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCompanyNetworkConfigurationResponse, Unit]
   ): Request[DescribeCompanyNetworkConfigurationResponse, AWSError] = js.native
+  
   /**
     * Provides information about a user's device.
     */
@@ -124,6 +133,7 @@ trait WorkLink extends Service {
     params: DescribeDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDeviceResponse, Unit]
   ): Request[DescribeDeviceResponse, AWSError] = js.native
+  
   /**
     * Describes the device policy configuration for the specified fleet.
     */
@@ -139,6 +149,7 @@ trait WorkLink extends Service {
     params: DescribeDevicePolicyConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDevicePolicyConfigurationResponse, Unit]
   ): Request[DescribeDevicePolicyConfigurationResponse, AWSError] = js.native
+  
   /**
     * Provides information about the domain.
     */
@@ -152,6 +163,7 @@ trait WorkLink extends Service {
     params: DescribeDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainResponse, Unit]
   ): Request[DescribeDomainResponse, AWSError] = js.native
+  
   /**
     * Provides basic information for the specified fleet, excluding identity provider, networking, and device configuration details.
     */
@@ -165,6 +177,7 @@ trait WorkLink extends Service {
     params: DescribeFleetMetadataRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetMetadataResponse, Unit]
   ): Request[DescribeFleetMetadataResponse, AWSError] = js.native
+  
   /**
     * Describes the identity provider configuration of the specified fleet.
     */
@@ -180,6 +193,7 @@ trait WorkLink extends Service {
     params: DescribeIdentityProviderConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeIdentityProviderConfigurationResponse, Unit]
   ): Request[DescribeIdentityProviderConfigurationResponse, AWSError] = js.native
+  
   /**
     * Provides information about the certificate authority.
     */
@@ -195,6 +209,7 @@ trait WorkLink extends Service {
     params: DescribeWebsiteCertificateAuthorityRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeWebsiteCertificateAuthorityResponse, Unit]
   ): Request[DescribeWebsiteCertificateAuthorityResponse, AWSError] = js.native
+  
   /**
     * Disassociates a domain from Amazon WorkLink. End users lose the ability to access the domain with Amazon WorkLink. 
     */
@@ -208,6 +223,7 @@ trait WorkLink extends Service {
     params: DisassociateDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateDomainResponse, Unit]
   ): Request[DisassociateDomainResponse, AWSError] = js.native
+  
   /**
     * Disassociates a website authorization provider from a specified fleet. After the disassociation, users can't load any associated websites that require this authorization provider.
     */
@@ -231,6 +247,7 @@ trait WorkLink extends Service {
       Unit
     ]
   ): Request[DisassociateWebsiteAuthorizationProviderResponse, AWSError] = js.native
+  
   /**
     * Removes a certificate authority (CA).
     */
@@ -246,6 +263,7 @@ trait WorkLink extends Service {
     params: DisassociateWebsiteCertificateAuthorityRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateWebsiteCertificateAuthorityResponse, Unit]
   ): Request[DisassociateWebsiteCertificateAuthorityResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of devices registered with the specified fleet.
     */
@@ -259,6 +277,7 @@ trait WorkLink extends Service {
     params: ListDevicesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDevicesResponse, Unit]
   ): Request[ListDevicesResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of domains associated to a specified fleet.
     */
@@ -272,6 +291,7 @@ trait WorkLink extends Service {
     params: ListDomainsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDomainsResponse, Unit]
   ): Request[ListDomainsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of fleets for the current account and Region.
     */
@@ -285,6 +305,7 @@ trait WorkLink extends Service {
     params: ListFleetsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListFleetsResponse, Unit]
   ): Request[ListFleetsResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of tags for the specified resource.
     */
@@ -298,6 +319,7 @@ trait WorkLink extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of website authorization providers associated with a specified fleet.
     */
@@ -313,6 +335,7 @@ trait WorkLink extends Service {
     params: ListWebsiteAuthorizationProvidersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListWebsiteAuthorizationProvidersResponse, Unit]
   ): Request[ListWebsiteAuthorizationProvidersResponse, AWSError] = js.native
+  
   /**
     * Retrieves a list of certificate authorities added for the current account and Region.
     */
@@ -328,6 +351,7 @@ trait WorkLink extends Service {
     params: ListWebsiteCertificateAuthoritiesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListWebsiteCertificateAuthoritiesResponse, Unit]
   ): Request[ListWebsiteCertificateAuthoritiesResponse, AWSError] = js.native
+  
   /**
     * Moves a domain to ACTIVE status if it was in the INACTIVE status.
     */
@@ -341,6 +365,7 @@ trait WorkLink extends Service {
     params: RestoreDomainAccessRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RestoreDomainAccessResponse, Unit]
   ): Request[RestoreDomainAccessResponse, AWSError] = js.native
+  
   /**
     * Moves a domain to INACTIVE status if it was in the ACTIVE status.
     */
@@ -354,6 +379,7 @@ trait WorkLink extends Service {
     params: RevokeDomainAccessRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RevokeDomainAccessResponse, Unit]
   ): Request[RevokeDomainAccessResponse, AWSError] = js.native
+  
   /**
     * Signs the user out from all of their devices. The user can sign in again if they have valid credentials.
     */
@@ -367,6 +393,7 @@ trait WorkLink extends Service {
     params: SignOutUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SignOutUserResponse, Unit]
   ): Request[SignOutUserResponse, AWSError] = js.native
+  
   /**
     * Adds or overwrites one or more tags for the specified resource, such as a fleet. Each tag consists of a key and an optional value. If a resource already has a tag with the same key, this operation updates its value.
     */
@@ -380,6 +407,7 @@ trait WorkLink extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Removes one or more tags from the specified resource.
     */
@@ -393,6 +421,7 @@ trait WorkLink extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates the audit stream configuration for the fleet.
     */
@@ -408,6 +437,7 @@ trait WorkLink extends Service {
     params: UpdateAuditStreamConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAuditStreamConfigurationResponse, Unit]
   ): Request[UpdateAuditStreamConfigurationResponse, AWSError] = js.native
+  
   /**
     * Updates the company network configuration for the fleet.
     */
@@ -423,6 +453,7 @@ trait WorkLink extends Service {
     params: UpdateCompanyNetworkConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateCompanyNetworkConfigurationResponse, Unit]
   ): Request[UpdateCompanyNetworkConfigurationResponse, AWSError] = js.native
+  
   /**
     * Updates the device policy configuration for the fleet.
     */
@@ -438,6 +469,7 @@ trait WorkLink extends Service {
     params: UpdateDevicePolicyConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDevicePolicyConfigurationResponse, Unit]
   ): Request[UpdateDevicePolicyConfigurationResponse, AWSError] = js.native
+  
   /**
     * Updates domain metadata, such as DisplayName.
     */
@@ -451,6 +483,7 @@ trait WorkLink extends Service {
     params: UpdateDomainMetadataRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainMetadataResponse, Unit]
   ): Request[UpdateDomainMetadataResponse, AWSError] = js.native
+  
   /**
     * Updates fleet metadata, such as DisplayName.
     */
@@ -464,6 +497,7 @@ trait WorkLink extends Service {
     params: UpdateFleetMetadataRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateFleetMetadataResponse, Unit]
   ): Request[UpdateFleetMetadataResponse, AWSError] = js.native
+  
   /**
     * Updates the identity provider configuration for the fleet.
     */
@@ -480,4 +514,3 @@ trait WorkLink extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateIdentityProviderConfigurationResponse, Unit]
   ): Request[UpdateIdentityProviderConfigurationResponse, AWSError] = js.native
 }
-

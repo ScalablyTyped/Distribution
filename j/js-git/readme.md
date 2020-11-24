@@ -11,8 +11,8 @@ Git Implemented in JavaScript
 | Full name          | js-git |
 | Keywords           | git, js-git |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 11790478 |
+| # dependents       | 21 |
+| # downloads        | 12121519 |
 | # stars            | 14 |
 
 ## Links

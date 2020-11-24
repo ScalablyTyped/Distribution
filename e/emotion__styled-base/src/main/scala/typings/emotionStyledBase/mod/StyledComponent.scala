@@ -351,12 +351,13 @@ import typings.std.SVGUseElement
 import typings.std.SVGViewElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StyledComponent[InnerProps, StyleProps, Theme /* <: js.Object */]
   extends ComponentSelector
      with FunctionComponent[InnerProps with (Omit[StyleProps, theme]) with `0`[Theme]] {
+  
   def withComponent[Tag /* <: ComponentType[_] */](tag: Tag): StyledComponent[PropsOf[Tag], StyleProps, Theme] = js.native
   /**
     * @desc this method is type-unsafe
@@ -964,4 +965,3 @@ trait StyledComponent[InnerProps, StyleProps, Theme /* <: js.Object */]
     Theme
   ] = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.luminoWidgets.widgetMod.Widget
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets/types/widget", "Widget.attach")
 @js.native
 object attach extends js.Object {
+  
   /**
     * Attach a widget to a host DOM node.
     *
@@ -28,4 +29,3 @@ object attach extends js.Object {
   def apply(widget: typings.luminoWidgets.widgetMod.Widget, host: HTMLElement): Unit = js.native
   def apply(widget: typings.luminoWidgets.widgetMod.Widget, host: HTMLElement, ref: HTMLElement): Unit = js.native
 }
-

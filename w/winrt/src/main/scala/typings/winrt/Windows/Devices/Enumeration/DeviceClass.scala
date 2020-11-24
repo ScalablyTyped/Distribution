@@ -2,14 +2,14 @@ package typings.winrt.Windows.Devices.Enumeration
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DeviceClass extends js.Object
-
 @JSGlobal("Windows.Devices.Enumeration.DeviceClass")
 @js.native
 object DeviceClass extends js.Object {
+  
   @js.native
   sealed trait all extends DeviceClass
   
@@ -24,6 +24,4 @@ object DeviceClass extends js.Object {
   
   @js.native
   sealed trait videoCapture extends DeviceClass
-  
 }
-

@@ -4,11 +4,11 @@ import typings.highcharts.mod.ExportingOptions
 import typings.highcharts.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Chart extends js.Object {
-  var fullscreen: Fullscreen = js.native
+  
   /**
     * Exporting module required. Submit an SVG version of the chart to a
     * server along with some parameters for conversion.
@@ -22,6 +22,9 @@ trait Chart extends js.Object {
     *        for export only.
     */
   def exportChart(exportingOptions: ExportingOptions, chartOptions: Options): Unit = js.native
+  
+  var fullscreen: Fullscreen = js.native
+  
   /**
     * Return the unfiltered innerHTML of the chart container. Used as hook
     * for plugins. In styled mode, it also takes care of inlining CSS style
@@ -30,6 +33,7 @@ trait Chart extends js.Object {
     * @return The unfiltered SVG of the chart.
     */
   def getChartHTML(): String = js.native
+  
   /**
     * Get the default file name used for exported charts. By default it
     * creates a file name based on the chart title.
@@ -37,6 +41,7 @@ trait Chart extends js.Object {
     * @return A file name without extension.
     */
   def getFilename(): String = js.native
+  
   /**
     * Return an SVG representation of the chart.
     *
@@ -53,6 +58,7 @@ trait Chart extends js.Object {
     */
   def getSVG(): String = js.native
   def getSVG(chartOptions: Options): String = js.native
+  
   /**
     * Exporting module required. Clears away other elements in the page and
     * prints the chart as it is displayed. By default, when the exporting
@@ -64,4 +70,3 @@ trait Chart extends js.Object {
     */
   def print(): Unit = js.native
 }
-

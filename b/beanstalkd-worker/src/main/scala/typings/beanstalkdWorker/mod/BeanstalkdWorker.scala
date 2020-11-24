@@ -3,20 +3,18 @@ package typings.beanstalkdWorker.mod
 import typings.beanstalkd.mod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BeanstalkdWorker extends js.Object {
-  var host: js.UndefOr[String] = js.native
-  var options: js.UndefOr[js.Object] = js.native
-  var port: js.UndefOr[Double] = js.native
-  var running: Boolean = js.native
+  
   /**
     * Create or reuse a connection to Beanstalkd with given id.
     *
     * @param id Id for the connection.
     */
   def connection(id: String): js.Promise[default] = js.native
+  
   /**
     * Wait for the given job on specifed tube to be done.
     * If provided, calls the `onPoll` handler on each check (500ms).
@@ -27,6 +25,7 @@ trait BeanstalkdWorker extends js.Object {
     */
   def done(tube: String, jobId: String): js.Promise[Unit] = js.native
   def done(tube: String, jobId: String, onPoll: JobPollHandler): js.Promise[Unit] = js.native
+  
   /**
     * Handle jobs from given Tube.
     *
@@ -36,6 +35,9 @@ trait BeanstalkdWorker extends js.Object {
     */
   def handle(tube: String, handler: TubeHandler): Unit = js.native
   def handle(tube: String, handler: TubeHandler, options: BeanstalkdHandleOptions): Unit = js.native
+  
+  var host: js.UndefOr[String] = js.native
+  
   /**
     * Creates a new Job representation.
     *
@@ -43,6 +45,13 @@ trait BeanstalkdWorker extends js.Object {
     * @param jobId The job id for the new job.
     */
   def job(tube: String, jobId: String): Job = js.native
+  
+  var options: js.UndefOr[js.Object] = js.native
+  
+  var port: js.UndefOr[Double] = js.native
+  
+  var running: Boolean = js.native
+  
   /**
     * Spawn a new Job on given Tube.
     *
@@ -52,20 +61,26 @@ trait BeanstalkdWorker extends js.Object {
     */
   def spawn(tube: String, payload: js.Object): js.Promise[Job] = js.native
   def spawn(tube: String, payload: js.Object, options: BeanstalkdSpawnOptions): js.Promise[Job] = js.native
+  
   /** Enable handlers and start processing jobs, make sure handlers are setup before calling start. */
   def start(): Unit = js.native
+  
   /** Start handling configured tubes. */
   def startTubes(): Unit = js.native
+  
   /** Stop the Worker process and all associated tubes. */
   def stop(): js.Promise[Unit] = js.native
+  
   /** Stop handling the configured tubes. */
   def stopTubes(): js.Promise[Unit] = js.native
+  
   /**
     * Get or create a Tube.
     *
     * @param name The Tube name to get or create.
     */
   def tube(name: String): Tube = js.native
+  
   /**
     * Checks if the given tube is currently working.
     *
@@ -73,4 +88,3 @@ trait BeanstalkdWorker extends js.Object {
     */
   def working(tube: String): Boolean = js.native
 }
-

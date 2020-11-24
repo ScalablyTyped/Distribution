@@ -7,7 +7,7 @@ import typings.semanticUiReact.popupPopupMod.PopupComponent
 import typings.semanticUiReact.popupPopupMod.PopupProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Popup")
 @js.native
@@ -16,8 +16,6 @@ class Popup protected ()
   def this(props: PopupProps) = this()
   def this(props: PopupProps, context: js.Any) = this()
 }
-
 @JSImport("semantic-ui-react", "Popup")
 @js.native
 object Popup extends TopLevel[PopupComponent]
-

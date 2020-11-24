@@ -3,7 +3,7 @@ package typings.jsClipper.global.ClipperLib
 import typings.jsClipper.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ClipperLib.PolyOffsetBuilder")
 @js.native
@@ -18,4 +18,3 @@ class PolyOffsetBuilder protected ()
     AutoFix: Boolean
   ) = this()
 }
-

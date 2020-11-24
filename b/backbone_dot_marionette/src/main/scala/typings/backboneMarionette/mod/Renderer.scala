@@ -2,11 +2,12 @@ package typings.backboneMarionette.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone.marionette", "Renderer")
 @js.native
 object Renderer extends js.Object {
+  
   /**
     *  This method returns a string containing the result of applying the
     * template using the data object as the context.
@@ -20,4 +21,3 @@ object Renderer extends js.Object {
     */
   def render(template: js.Any, data: js.Any): String = js.native
 }
-

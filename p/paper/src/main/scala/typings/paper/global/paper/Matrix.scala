@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * An affine transformation matrix performs a linear mapping from 2D
@@ -57,4 +57,3 @@ class Matrix ()
     */
   def this(a: Double, b: Double, c: Double, d: Double, tx: Double, ty: Double) = this()
 }
-

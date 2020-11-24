@@ -8,13 +8,12 @@ import typings.react.mod.TdHTMLAttributes
 import typings.std.HTMLTableDataCellElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6/components/TableCell", "TableCell")
+@JSImport("grommet/components/TableCell", "TableCell")
 @js.native
 object TableCell extends TopLevel[
       FC[
         TableCellProps with BoxTypes with (DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement])
       ]
     ]
-

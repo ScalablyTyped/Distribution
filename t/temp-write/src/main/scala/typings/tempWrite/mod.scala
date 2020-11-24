@@ -4,11 +4,12 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("temp-write", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
   	Write string/buffer/stream to a random temp file.
   	@param fileContent - Data to write to the temp file.
@@ -37,6 +38,7 @@ object mod extends js.Object {
   def apply(fileContent: Buffer, filePath: String): js.Promise[String] = js.native
   def apply(fileContent: ReadableStream): js.Promise[String] = js.native
   def apply(fileContent: ReadableStream, filePath: String): js.Promise[String] = js.native
+  
   /**
   	Synchronously write string/buffer/stream to a random temp file.
   	@param fileContent - Data to write to the temp file.
@@ -61,4 +63,3 @@ object mod extends js.Object {
   def sync(fileContent: Buffer): String = js.native
   def sync(fileContent: Buffer, filePath: String): String = js.native
 }
-

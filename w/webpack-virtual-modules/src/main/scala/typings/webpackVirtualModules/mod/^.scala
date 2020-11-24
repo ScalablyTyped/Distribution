@@ -3,7 +3,7 @@ package typings.webpackVirtualModules.mod
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Plugin that allows dynamic generation of in-memory virtual modules for JavaScript builds
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends VirtualModulesPlugin {
   def this(modules: Record[String, String]) = this()
 }
-

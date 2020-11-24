@@ -3,7 +3,7 @@ package typings.jupyterlabServices.mod
 import typings.jupyterlabServices.sessionManagerMod.SessionManager.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/services", "SessionManager")
 @js.native
@@ -16,4 +16,3 @@ class SessionManager protected ()
     */
   def this(options: IOptions) = this()
 }
-

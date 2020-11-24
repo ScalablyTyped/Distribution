@@ -1,21 +1,24 @@
 
 # Scala.js typings for aws-sdk__chunked-stream-reader-node
 
-Typings are for version 0.1.0-preview.1
+Typings are for version 1.0.0-rc.3
 
 ## Library description:
-Exports a streamReader function that accepts a readable stream, a function to call on each chunk, and a chunk size in bytes to buffer interally before calling the supplied function.
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/chunked-stream-reader-node/rc.svg)](https://www.npmjs.com/package/@aws-sdk/chunked-stream-reader-node) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/chunked-stream-reader-node.svg)](https://
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/chunked-stream-reader-node |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 315 |
+| # releases         | 21 |
+| # dependents       | 2 |
+| # downloads        | 1804 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/master/packages/chunked-stream-reader-node)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fchunked-stream-reader-node)
     
 

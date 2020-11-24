@@ -2,13 +2,15 @@ package typings.humanizeString
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
+    
     /**
     	Convert a camelized/dasherized/underscored string into a humanized one: `fooBar-Baz_Faz` → `Foo bar baz faz`.
     	@param text - The string to make human readable.
@@ -25,6 +27,4 @@ object anon extends js.Object {
     	*/
     def apply(text: String): String = js.native
   }
-  
 }
-

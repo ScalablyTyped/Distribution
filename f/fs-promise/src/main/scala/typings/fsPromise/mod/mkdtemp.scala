@@ -8,11 +8,12 @@ import typings.node.BufferEncoding
 import typings.node.NodeJS.ErrnoException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs-promise", "mkdtemp")
 @js.native
 object mkdtemp extends js.Object {
+  
   def apply(prefix: String): js.Promise[String] = js.native
   def apply(
     prefix: String,
@@ -59,4 +60,3 @@ object mkdtemp extends js.Object {
     callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]
   ): Unit = js.native
 }
-

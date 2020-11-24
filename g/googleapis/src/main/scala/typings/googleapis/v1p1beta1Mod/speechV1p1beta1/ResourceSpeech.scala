@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/speech/v1p1beta1", "speech_v1p1beta1.Resource$Speech")
 @js.native
 class ResourceSpeech protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * speech.speech.longrunningrecognize
     * @desc Performs asynchronous speech recognition: receive results via the
@@ -46,6 +48,7 @@ class ResourceSpeech protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * speech.speech.recognize
     * @desc Performs synchronous speech recognition: receive results after all
@@ -76,4 +79,3 @@ class ResourceSpeech protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRecognizeResponse]
   ): Unit = js.native
 }
-

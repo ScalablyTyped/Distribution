@@ -8,7 +8,7 @@ import typings.sequelize.anon.ArgsMsgString
 import typings.sequelize.anon.ArgsNumber
 import typings.sequelize.anon.ArgsString
 import typings.sequelize.anon.MsgString
-import typings.sequelize.anon.`0`
+import typings.sequelize.anon.`1`
 import typings.sequelize.sequelizeNumbers.`3`
 import typings.sequelize.sequelizeNumbers.`4`
 import typings.sequelize.sequelizeNumbers.`5`
@@ -16,7 +16,7 @@ import typings.sequelize.sequelizeStrings.all
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Model validations, allow you to specify format/content/inheritance validations for each attribute of the
@@ -27,6 +27,7 @@ import scala.scalajs.js.annotation._
   *
   * The validations are implemented by validator.js.
   */
+@js.native
 trait DefineValidateOptions
   extends /**
   * custom validations are also possible
@@ -44,212 +45,401 @@ trait DefineValidateOptions
   * @see https://github.com/Microsoft/TypeScript/issues/1889
   */
 /* name */ StringDictionary[js.Any] {
+  
   /**
     * force specific substrings
     */
-  var contains: js.UndefOr[String | MsgString] = js.undefined
+  var contains: js.UndefOr[String | MsgString] = js.native
+  
   /**
     * only allow a specific value
     */
   @JSName("equals")
-  var equals_FDefineValidateOptions: js.UndefOr[String | MsgString] = js.undefined
+  var equals_FDefineValidateOptions: js.UndefOr[String | MsgString] = js.native
+  
   /**
     * is: ["^[a-z]+$",'i'] // will only allow letters
     * is: /^[a-z]+$/i      // same as the previous example using real RegExp
     */
-  var is: js.UndefOr[String | (js.Array[String | RegExp]) | RegExp | Args] = js.undefined
+  var is: js.UndefOr[String | (js.Array[String | RegExp]) | RegExp | Args] = js.native
+  
   /**
     * only allow date strings after a specific date
     */
-  var isAfter: js.UndefOr[String | ArgsString] = js.undefined
+  var isAfter: js.UndefOr[String | ArgsString] = js.native
+  
   /**
     * will only allow letters
     */
-  var isAlpha: js.UndefOr[Boolean | MsgString] = js.undefined
+  var isAlpha: js.UndefOr[Boolean | MsgString] = js.native
+  
   /**
     * will only allow alphanumeric characters, so "_abc" will fail
     */
-  var isAlphanumeric: js.UndefOr[Boolean | MsgString] = js.undefined
+  var isAlphanumeric: js.UndefOr[Boolean | MsgString] = js.native
+  
   /**
     * only allow arrays
     */
-  var isArray: js.UndefOr[Boolean | ArgsBoolean] = js.undefined
+  var isArray: js.UndefOr[Boolean | ArgsBoolean] = js.native
+  
   /**
     * only allow date strings before a specific date
     */
-  var isBefore: js.UndefOr[String | ArgsString] = js.undefined
+  var isBefore: js.UndefOr[String | ArgsString] = js.native
+  
   /**
     * check for valid credit card numbers
     */
-  var isCreditCard: js.UndefOr[Boolean | ArgsBoolean] = js.undefined
+  var isCreditCard: js.UndefOr[Boolean | ArgsBoolean] = js.native
+  
   /**
     * only allow date strings
     */
-  var isDate: js.UndefOr[Boolean | ArgsBoolean] = js.undefined
+  var isDate: js.UndefOr[Boolean | ArgsBoolean] = js.native
+  
   /**
     * checks for any numbers
     */
-  var isDecimal: js.UndefOr[Boolean | MsgString] = js.undefined
+  var isDecimal: js.UndefOr[Boolean | MsgString] = js.native
+  
   /**
     * checks for email format (foo@bar.com)
     */
-  var isEmail: js.UndefOr[Boolean | MsgString] = js.undefined
+  var isEmail: js.UndefOr[Boolean | MsgString] = js.native
+  
   /**
     * checks for valid floating point numbers
     */
-  var isFloat: js.UndefOr[Boolean | MsgString] = js.undefined
+  var isFloat: js.UndefOr[Boolean | MsgString] = js.native
+  
   /**
     * checks for IPv4 (129.89.23.1) or IPv6 format
     */
-  var isIP: js.UndefOr[Boolean | MsgString] = js.undefined
+  var isIP: js.UndefOr[Boolean | MsgString] = js.native
+  
   /**
     * checks for IPv4 (129.89.23.1)
     */
-  var isIPv4: js.UndefOr[Boolean | MsgString] = js.undefined
+  var isIPv4: js.UndefOr[Boolean | MsgString] = js.native
+  
   /**
     * checks for IPv6 format
     */
-  var isIPv6: js.UndefOr[Boolean | MsgString] = js.undefined
+  var isIPv6: js.UndefOr[Boolean | MsgString] = js.native
+  
   /**
     * check the value is one of these
     */
-  var isIn: js.UndefOr[js.Array[js.Array[String]] | ArgsMsg] = js.undefined
+  var isIn: js.UndefOr[js.Array[js.Array[String]] | ArgsMsg] = js.native
+  
   /**
     * checks for valid integers
     */
-  var isInt: js.UndefOr[Boolean | MsgString] = js.undefined
+  var isInt: js.UndefOr[Boolean | MsgString] = js.native
+  
   /**
     * checks for lowercase
     */
-  var isLowercase: js.UndefOr[Boolean | MsgString] = js.undefined
+  var isLowercase: js.UndefOr[Boolean | MsgString] = js.native
+  
   /**
     * only allows null
     */
-  var isNull: js.UndefOr[Boolean | MsgString] = js.undefined
+  var isNull: js.UndefOr[Boolean | MsgString] = js.native
+  
   /**
     * will only allow numbers
     */
-  var isNumeric: js.UndefOr[Boolean | MsgString] = js.undefined
+  var isNumeric: js.UndefOr[Boolean | MsgString] = js.native
+  
   /**
     * only allow uuids
     */
   var isUUID: js.UndefOr[
     `3` | `4` | `5` | typings.sequelize.sequelizeStrings.`3` | typings.sequelize.sequelizeStrings.`4` | typings.sequelize.sequelizeStrings.`5` | all | ArgsNumber
-  ] = js.undefined
+  ] = js.native
+  
   /**
     * checks for uppercase
     */
-  var isUppercase: js.UndefOr[Boolean | MsgString] = js.undefined
+  var isUppercase: js.UndefOr[Boolean | MsgString] = js.native
+  
   /**
     * checks for url format (http://foo.com)
     */
-  var isUrl: js.UndefOr[Boolean | MsgString] = js.undefined
+  var isUrl: js.UndefOr[Boolean | MsgString] = js.native
+  
   /**
     * only allow values with length between 2 and 10
     */
-  var len: js.UndefOr[(js.Tuple2[Double, Double]) | `0`] = js.undefined
+  var len: js.UndefOr[(js.Tuple2[Double, Double]) | `1`] = js.native
+  
   /**
     * only allow values
     */
-  var max: js.UndefOr[Double | ArgsNumber] = js.undefined
+  var max: js.UndefOr[Double | ArgsNumber] = js.native
+  
   /**
     * only allow values >= 23
     */
-  var min: js.UndefOr[Double | ArgsNumber] = js.undefined
+  var min: js.UndefOr[Double | ArgsNumber] = js.native
+  
   /**
     * not: ["[a-z]",'i']  // will not allow letters
     */
-  var not: js.UndefOr[String | (js.Array[String | RegExp]) | RegExp | Args] = js.undefined
+  var not: js.UndefOr[String | (js.Array[String | RegExp]) | RegExp | Args] = js.native
+  
   /**
     * don't allow specific substrings
     */
-  var notContains: js.UndefOr[js.Array[String] | String | ArgsMsgString] = js.undefined
+  var notContains: js.UndefOr[js.Array[String] | String | ArgsMsgString] = js.native
+  
   /**
     * don't allow empty strings
     */
-  var notEmpty: js.UndefOr[Boolean | MsgString] = js.undefined
+  var notEmpty: js.UndefOr[Boolean | MsgString] = js.native
+  
   /**
     * check the value is not one of these
     */
-  var notIn: js.UndefOr[js.Array[js.Array[String]] | ArgsMsg] = js.undefined
+  var notIn: js.UndefOr[js.Array[js.Array[String]] | ArgsMsg] = js.native
+  
   /**
     * won't allow null
     */
-  var notNull: js.UndefOr[Boolean | MsgString] = js.undefined
+  var notNull: js.UndefOr[Boolean | MsgString] = js.native
 }
-
 object DefineValidateOptions {
+  
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    contains: String | MsgString = null,
-    equals: String | MsgString = null,
-    is: String | (js.Array[String | RegExp]) | RegExp | Args = null,
-    isAfter: String | ArgsString = null,
-    isAlpha: Boolean | MsgString = null,
-    isAlphanumeric: Boolean | MsgString = null,
-    isArray: Boolean | ArgsBoolean = null,
-    isBefore: String | ArgsString = null,
-    isCreditCard: Boolean | ArgsBoolean = null,
-    isDate: Boolean | ArgsBoolean = null,
-    isDecimal: Boolean | MsgString = null,
-    isEmail: Boolean | MsgString = null,
-    isFloat: Boolean | MsgString = null,
-    isIP: Boolean | MsgString = null,
-    isIPv4: Boolean | MsgString = null,
-    isIPv6: Boolean | MsgString = null,
-    isIn: js.Array[js.Array[String]] | ArgsMsg = null,
-    isInt: Boolean | MsgString = null,
-    isLowercase: Boolean | MsgString = null,
-    isNull: Boolean | MsgString = null,
-    isNumeric: Boolean | MsgString = null,
-    isUUID: `3` | `4` | `5` | typings.sequelize.sequelizeStrings.`3` | typings.sequelize.sequelizeStrings.`4` | typings.sequelize.sequelizeStrings.`5` | all | ArgsNumber = null,
-    isUppercase: Boolean | MsgString = null,
-    isUrl: Boolean | MsgString = null,
-    len: (js.Tuple2[Double, Double]) | `0` = null,
-    max: Double | ArgsNumber = null,
-    min: Double | ArgsNumber = null,
-    not: String | (js.Array[String | RegExp]) | RegExp | Args = null,
-    notContains: js.Array[String] | String | ArgsMsgString = null,
-    notEmpty: Boolean | MsgString = null,
-    notIn: js.Array[js.Array[String]] | ArgsMsg = null,
-    notNull: Boolean | MsgString = null
-  ): DefineValidateOptions = {
+  def apply(): DefineValidateOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (contains != null) __obj.updateDynamic("contains")(contains.asInstanceOf[js.Any])
-    if (equals != null) __obj.updateDynamic("equals")(equals.asInstanceOf[js.Any])
-    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
-    if (isAfter != null) __obj.updateDynamic("isAfter")(isAfter.asInstanceOf[js.Any])
-    if (isAlpha != null) __obj.updateDynamic("isAlpha")(isAlpha.asInstanceOf[js.Any])
-    if (isAlphanumeric != null) __obj.updateDynamic("isAlphanumeric")(isAlphanumeric.asInstanceOf[js.Any])
-    if (isArray != null) __obj.updateDynamic("isArray")(isArray.asInstanceOf[js.Any])
-    if (isBefore != null) __obj.updateDynamic("isBefore")(isBefore.asInstanceOf[js.Any])
-    if (isCreditCard != null) __obj.updateDynamic("isCreditCard")(isCreditCard.asInstanceOf[js.Any])
-    if (isDate != null) __obj.updateDynamic("isDate")(isDate.asInstanceOf[js.Any])
-    if (isDecimal != null) __obj.updateDynamic("isDecimal")(isDecimal.asInstanceOf[js.Any])
-    if (isEmail != null) __obj.updateDynamic("isEmail")(isEmail.asInstanceOf[js.Any])
-    if (isFloat != null) __obj.updateDynamic("isFloat")(isFloat.asInstanceOf[js.Any])
-    if (isIP != null) __obj.updateDynamic("isIP")(isIP.asInstanceOf[js.Any])
-    if (isIPv4 != null) __obj.updateDynamic("isIPv4")(isIPv4.asInstanceOf[js.Any])
-    if (isIPv6 != null) __obj.updateDynamic("isIPv6")(isIPv6.asInstanceOf[js.Any])
-    if (isIn != null) __obj.updateDynamic("isIn")(isIn.asInstanceOf[js.Any])
-    if (isInt != null) __obj.updateDynamic("isInt")(isInt.asInstanceOf[js.Any])
-    if (isLowercase != null) __obj.updateDynamic("isLowercase")(isLowercase.asInstanceOf[js.Any])
-    if (isNull != null) __obj.updateDynamic("isNull")(isNull.asInstanceOf[js.Any])
-    if (isNumeric != null) __obj.updateDynamic("isNumeric")(isNumeric.asInstanceOf[js.Any])
-    if (isUUID != null) __obj.updateDynamic("isUUID")(isUUID.asInstanceOf[js.Any])
-    if (isUppercase != null) __obj.updateDynamic("isUppercase")(isUppercase.asInstanceOf[js.Any])
-    if (isUrl != null) __obj.updateDynamic("isUrl")(isUrl.asInstanceOf[js.Any])
-    if (len != null) __obj.updateDynamic("len")(len.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (not != null) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
-    if (notContains != null) __obj.updateDynamic("notContains")(notContains.asInstanceOf[js.Any])
-    if (notEmpty != null) __obj.updateDynamic("notEmpty")(notEmpty.asInstanceOf[js.Any])
-    if (notIn != null) __obj.updateDynamic("notIn")(notIn.asInstanceOf[js.Any])
-    if (notNull != null) __obj.updateDynamic("notNull")(notNull.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineValidateOptions]
   }
+  
+  @scala.inline
+  implicit class DefineValidateOptionsOps[Self <: DefineValidateOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setContains(value: String | MsgString): Self = this.set("contains", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteContains: Self = this.set("contains", js.undefined)
+    
+    @scala.inline
+    def setEquals(value: String | MsgString): Self = this.set("equals", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteEquals: Self = this.set("equals", js.undefined)
+    
+    @scala.inline
+    def setIsVarargs(value: (String | RegExp)*): Self = this.set("is", js.Array(value :_*))
+    
+    @scala.inline
+    def setIs(value: String | (js.Array[String | RegExp]) | RegExp | Args): Self = this.set("is", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIs: Self = this.set("is", js.undefined)
+    
+    @scala.inline
+    def setIsAfter(value: String | ArgsString): Self = this.set("isAfter", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsAfter: Self = this.set("isAfter", js.undefined)
+    
+    @scala.inline
+    def setIsAlpha(value: Boolean | MsgString): Self = this.set("isAlpha", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsAlpha: Self = this.set("isAlpha", js.undefined)
+    
+    @scala.inline
+    def setIsAlphanumeric(value: Boolean | MsgString): Self = this.set("isAlphanumeric", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsAlphanumeric: Self = this.set("isAlphanumeric", js.undefined)
+    
+    @scala.inline
+    def setIsArray(value: Boolean | ArgsBoolean): Self = this.set("isArray", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsArray: Self = this.set("isArray", js.undefined)
+    
+    @scala.inline
+    def setIsBefore(value: String | ArgsString): Self = this.set("isBefore", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsBefore: Self = this.set("isBefore", js.undefined)
+    
+    @scala.inline
+    def setIsCreditCard(value: Boolean | ArgsBoolean): Self = this.set("isCreditCard", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsCreditCard: Self = this.set("isCreditCard", js.undefined)
+    
+    @scala.inline
+    def setIsDate(value: Boolean | ArgsBoolean): Self = this.set("isDate", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsDate: Self = this.set("isDate", js.undefined)
+    
+    @scala.inline
+    def setIsDecimal(value: Boolean | MsgString): Self = this.set("isDecimal", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsDecimal: Self = this.set("isDecimal", js.undefined)
+    
+    @scala.inline
+    def setIsEmail(value: Boolean | MsgString): Self = this.set("isEmail", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsEmail: Self = this.set("isEmail", js.undefined)
+    
+    @scala.inline
+    def setIsFloat(value: Boolean | MsgString): Self = this.set("isFloat", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsFloat: Self = this.set("isFloat", js.undefined)
+    
+    @scala.inline
+    def setIsIP(value: Boolean | MsgString): Self = this.set("isIP", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsIP: Self = this.set("isIP", js.undefined)
+    
+    @scala.inline
+    def setIsIPv4(value: Boolean | MsgString): Self = this.set("isIPv4", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsIPv4: Self = this.set("isIPv4", js.undefined)
+    
+    @scala.inline
+    def setIsIPv6(value: Boolean | MsgString): Self = this.set("isIPv6", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsIPv6: Self = this.set("isIPv6", js.undefined)
+    
+    @scala.inline
+    def setIsInVarargs(value: js.Array[String]*): Self = this.set("isIn", js.Array(value :_*))
+    
+    @scala.inline
+    def setIsIn(value: js.Array[js.Array[String]] | ArgsMsg): Self = this.set("isIn", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsIn: Self = this.set("isIn", js.undefined)
+    
+    @scala.inline
+    def setIsInt(value: Boolean | MsgString): Self = this.set("isInt", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsInt: Self = this.set("isInt", js.undefined)
+    
+    @scala.inline
+    def setIsLowercase(value: Boolean | MsgString): Self = this.set("isLowercase", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsLowercase: Self = this.set("isLowercase", js.undefined)
+    
+    @scala.inline
+    def setIsNull(value: Boolean | MsgString): Self = this.set("isNull", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsNull: Self = this.set("isNull", js.undefined)
+    
+    @scala.inline
+    def setIsNumeric(value: Boolean | MsgString): Self = this.set("isNumeric", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsNumeric: Self = this.set("isNumeric", js.undefined)
+    
+    @scala.inline
+    def setIsUUID(
+      value: `3` | `4` | `5` | typings.sequelize.sequelizeStrings.`3` | typings.sequelize.sequelizeStrings.`4` | typings.sequelize.sequelizeStrings.`5` | all | ArgsNumber
+    ): Self = this.set("isUUID", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsUUID: Self = this.set("isUUID", js.undefined)
+    
+    @scala.inline
+    def setIsUppercase(value: Boolean | MsgString): Self = this.set("isUppercase", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsUppercase: Self = this.set("isUppercase", js.undefined)
+    
+    @scala.inline
+    def setIsUrl(value: Boolean | MsgString): Self = this.set("isUrl", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIsUrl: Self = this.set("isUrl", js.undefined)
+    
+    @scala.inline
+    def setLen(value: (js.Tuple2[Double, Double]) | `1`): Self = this.set("len", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLen: Self = this.set("len", js.undefined)
+    
+    @scala.inline
+    def setMax(value: Double | ArgsNumber): Self = this.set("max", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    
+    @scala.inline
+    def setMin(value: Double | ArgsNumber): Self = this.set("min", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    
+    @scala.inline
+    def setNotVarargs(value: (String | RegExp)*): Self = this.set("not", js.Array(value :_*))
+    
+    @scala.inline
+    def setNot(value: String | (js.Array[String | RegExp]) | RegExp | Args): Self = this.set("not", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteNot: Self = this.set("not", js.undefined)
+    
+    @scala.inline
+    def setNotContainsVarargs(value: String*): Self = this.set("notContains", js.Array(value :_*))
+    
+    @scala.inline
+    def setNotContains(value: js.Array[String] | String | ArgsMsgString): Self = this.set("notContains", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteNotContains: Self = this.set("notContains", js.undefined)
+    
+    @scala.inline
+    def setNotEmpty(value: Boolean | MsgString): Self = this.set("notEmpty", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteNotEmpty: Self = this.set("notEmpty", js.undefined)
+    
+    @scala.inline
+    def setNotInVarargs(value: js.Array[String]*): Self = this.set("notIn", js.Array(value :_*))
+    
+    @scala.inline
+    def setNotIn(value: js.Array[js.Array[String]] | ArgsMsg): Self = this.set("notIn", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteNotIn: Self = this.set("notIn", js.undefined)
+    
+    @scala.inline
+    def setNotNull(value: Boolean | MsgString): Self = this.set("notNull", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteNotNull: Self = this.set("notNull", js.undefined)
+  }
 }
-

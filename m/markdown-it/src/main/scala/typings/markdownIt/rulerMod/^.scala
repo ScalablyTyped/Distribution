@@ -2,7 +2,7 @@ package typings.markdownIt.rulerMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * class Ruler
@@ -24,4 +24,3 @@ import scala.scalajs.js.annotation._
 @JSImport("markdown-it/lib/ruler", JSImport.Namespace)
 @js.native
 class ^[T] () extends Ruler[T]
-

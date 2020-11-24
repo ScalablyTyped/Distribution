@@ -5,7 +5,7 @@ import typings.timezonecomplete.datetimeMod.DateTime
 import typings.timezonecomplete.durationMod.Duration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("timezonecomplete/dist/lib/period", "Period")
 @js.native
@@ -64,6 +64,7 @@ class Period protected () extends js.Object {
   def this(reference: DateTime, amount: Double, unit: TimeUnit) = this()
   def this(reference: DateTime, interval: Duration, dst: PeriodDst) = this()
   def this(reference: DateTime, amount: Double, unit: TimeUnit, dst: PeriodDst) = this()
+  
   /**
     * Normalize the values where possible - not all values
     * are convertible into one another. Weeks are converted to days.
@@ -73,40 +74,48 @@ class Period protected () extends js.Object {
     * @throws nothing
     */
   var _calcInternalValues: js.Any = js.native
+  
   /**
     * Corrects the difference between _reference and _intReference.
     * @throws nothing
     */
   var _correctDay: js.Any = js.native
+  
   /**
     * DST handling
     */
   var _dst: js.Any = js.native
+  
   /**
     * Returns true if DST handling is relevant for us.
     * (i.e. if the reference time zone has DST)
     * @throws nothing
     */
   var _dstRelevant: js.Any = js.native
+  
   /**
     * Normalized internal DST handling. If DST handling is irrelevant
     * (because the reference time zone does not have DST)
     * then it is set to RegularInterval
     */
   var _intDst: js.Any = js.native
+  
   /**
     * Normalized interval
     */
   var _intInterval: js.Any = js.native
+  
   /**
     * Normalized reference date, has day-of-month <= 28 for Monthly
     * period, or for Yearly period if month is February
     */
   var _intReference: js.Any = js.native
+  
   /**
     * Interval
     */
   var _interval: js.Any = js.native
+  
   /**
     * If this._internalUnit in [Month, Year], normalizes the day-of-month
     * to <= 28.
@@ -114,24 +123,24 @@ class Period protected () extends js.Object {
     * @throws nothing
     */
   var _normalizeDay: js.Any = js.native
+  
   /**
     * Reference moment of period
     */
   var _reference: js.Any = js.native
-  /**
-    * Allow not using instanceof
-    */
-  var kind: String = js.native
+  
   /**
     * The amount of units of the interval
     * @throws nothing
     */
   def amount(): Double = js.native
+  
   /**
     * The dst handling mode
     * @throws nothing
     */
   def dst(): PeriodDst = js.native
+  
   /**
     * Returns true iff this period has the same effect as the given one.
     * i.e. a period of 24 hours is equal to one of 1 day if they have the same UTC reference moment
@@ -141,6 +150,7 @@ class Period protected () extends js.Object {
     * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
     */
   def equals(other: Period): Boolean = js.native
+  
   /**
     * The first occurrence of the period greater than
     * the given date. The given date need not be at a period boundary.
@@ -151,6 +161,7 @@ class Period protected () extends js.Object {
     * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
     */
   def findFirst(fromDate: DateTime): DateTime = js.native
+  
   /**
     * The last occurrence of the period less than
     * the given date. The given date need not be at a period boundary.
@@ -162,6 +173,7 @@ class Period protected () extends js.Object {
     * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
     */
   def findLast(from: DateTime): DateTime = js.native
+  
   /**
     * Returns the next timestamp in the period. The given timestamp must
     * be at a period boundary, otherwise the answer is incorrect.
@@ -175,6 +187,7 @@ class Period protected () extends js.Object {
     */
   def findNext(prev: DateTime): DateTime = js.native
   def findNext(prev: DateTime, count: Double): DateTime = js.native
+  
   /**
     * Returns the previous timestamp in the period. The given timestamp must
     * be at a period boundary, otherwise the answer is incorrect.
@@ -186,16 +199,19 @@ class Period protected () extends js.Object {
     */
   def findPrev(next: DateTime): DateTime = js.native
   def findPrev(next: DateTime, count: Double): DateTime = js.native
+  
   /**
     * Returns true iff this period was constructed with identical arguments to the other one.
     * @throws nothing
     */
   def identical(other: Period): Boolean = js.native
+  
   /**
     * The interval
     * @throws nothing
     */
   def interval(): Duration = js.native
+  
   /**
     * Checks whether the given date is on a period boundary
     * (expensive!)
@@ -203,16 +219,24 @@ class Period protected () extends js.Object {
     * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
     */
   def isBoundary(occurrence: DateTime): Boolean = js.native
+  
+  /**
+    * Allow not using instanceof
+    */
+  var kind: String = js.native
+  
   /**
     * The reference date
     * @throws nothing
     */
   def reference(): DateTime = js.native
+  
   /**
     * DEPRECATED: old name for the reference date
     * @throws nothing
     */
   def start(): DateTime = js.native
+  
   /**
     * Returns an ISO duration string e.g.
     * 2014-01-01T12:00:00.000+01:00/P1H
@@ -221,15 +245,16 @@ class Period protected () extends js.Object {
     * @throws nothing
     */
   def toIsoString(): String = js.native
+  
   /**
     * Returns a JSON-compatible representation of this period
     * @throws nothing
     */
   def toJson(): PeriodJson = js.native
+  
   /**
     * The unit of the interval
     * @throws nothing
     */
   def unit(): TimeUnit = js.native
 }
-

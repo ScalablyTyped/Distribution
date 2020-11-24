@@ -2,7 +2,7 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Redact a given value. For example, if used with an `InfoTypeTransformation`
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaGooglePrivacyDlpV2RedactConfig extends js.Object
-

@@ -10,9 +10,9 @@ Official Chartmogul API Node.js Client
 | ------------------ | :-------------: |
 | Full name          | chartmogul-node |
 | Keywords           | chartmogul, api |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 33459 |
+| # downloads        | 44200 |
 | # stars            | 0 |
 
 ## Links

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "configs-overload"
-version := "0.2-dt-20200515Z-2b4f20"
+version := "0.2-dt-20200515Z-9a9f00"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

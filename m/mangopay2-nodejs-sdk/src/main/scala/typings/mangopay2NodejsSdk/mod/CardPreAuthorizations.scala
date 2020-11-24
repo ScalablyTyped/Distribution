@@ -5,7 +5,7 @@ import typings.mangopay2NodejsSdk.mod.cardPreAuthorization.CreateCardPreAuthoriz
 import typings.mangopay2NodejsSdk.mod.cardPreAuthorization.UpdateCardPreAuthorization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The PreAuthorization Object ensures the solvency of a registered card for 7 days. The overall process is as follows:
@@ -23,26 +23,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mangopay2-nodejs-sdk", "CardPreAuthorizations")
 @js.native
 class CardPreAuthorizations () extends js.Object {
-  /**
-    * Create new pre-authorization
-    * @param cardPreAuthorization
-    * @param options
-    */
-  @JSName("create")
-  var create_Original: MethodOverload[CreateCardPreAuthorization, CardPreAuthorizationData] = js.native
-  /**
-    * Get data for Card pre-authorization
-    * @param cardPreAuthorizationId
-    * @param options
-    */
-  @JSName("get")
-  var get_Original: MethodOverload[String, CardPreAuthorizationData] = js.native
-  /**
-    * Update pre-authorization object (currently only supports cancellation)
-    * @param  cardPreAuthorization
-    */
-  @JSName("update")
-  var update_Original: MethodOverload[UpdateCardPreAuthorization, CardPreAuthorizationData] = js.native
+  
   /**
     * Create new pre-authorization
     * @param cardPreAuthorization
@@ -81,6 +62,14 @@ class CardPreAuthorizations () extends js.Object {
   def create(data: CreateCardPreAuthorization, options: MethodOptionWithResponse): js.Promise[WithResponse[CardPreAuthorizationData]] = js.native
   def create(data: CreateCardPreAuthorization, options: MethodOptionWithoutResponse): js.Promise[CardPreAuthorizationData] = js.native
   /**
+    * Create new pre-authorization
+    * @param cardPreAuthorization
+    * @param options
+    */
+  @JSName("create")
+  var create_Original: MethodOverload[CreateCardPreAuthorization, CardPreAuthorizationData] = js.native
+  
+  /**
     * Get data for Card pre-authorization
     * @param cardPreAuthorizationId
     * @param options
@@ -115,6 +104,14 @@ class CardPreAuthorizations () extends js.Object {
   def get(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[CardPreAuthorizationData]] = js.native
   def get(data: String, options: MethodOptionWithoutResponse): js.Promise[CardPreAuthorizationData] = js.native
   /**
+    * Get data for Card pre-authorization
+    * @param cardPreAuthorizationId
+    * @param options
+    */
+  @JSName("get")
+  var get_Original: MethodOverload[String, CardPreAuthorizationData] = js.native
+  
+  /**
     * Update pre-authorization object (currently only supports cancellation)
     * @param  cardPreAuthorization
     */
@@ -147,5 +144,10 @@ class CardPreAuthorizations () extends js.Object {
     */
   def update(data: UpdateCardPreAuthorization, options: MethodOptionWithResponse): js.Promise[WithResponse[CardPreAuthorizationData]] = js.native
   def update(data: UpdateCardPreAuthorization, options: MethodOptionWithoutResponse): js.Promise[CardPreAuthorizationData] = js.native
+  /**
+    * Update pre-authorization object (currently only supports cancellation)
+    * @param  cardPreAuthorization
+    */
+  @JSName("update")
+  var update_Original: MethodOverload[UpdateCardPreAuthorization, CardPreAuthorizationData] = js.native
 }
-

@@ -6,15 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/spanner/v1", "spanner_v1.Resource$Projects$Instances$Databases")
 @js.native
 class ResourceProjectsInstancesDatabases protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var operations: ResourceProjectsInstancesDatabasesOperations = js.native
-  var sessions: ResourceProjectsInstancesDatabasesSessions = js.native
+  
   /**
     * spanner.projects.instances.databases.create
     * @desc Creates a new Cloud Spanner database and starts to prepare it for
@@ -52,6 +52,7 @@ class ResourceProjectsInstancesDatabases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.dropDatabase
     * @desc Drops (aka deletes) a Cloud Spanner database.
@@ -83,6 +84,7 @@ class ResourceProjectsInstancesDatabases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.get
     * @desc Gets the state of a Cloud Spanner database.
@@ -114,6 +116,7 @@ class ResourceProjectsInstancesDatabases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDatabase]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.getDdl
     * @desc Returns the schema of a Cloud Spanner database as a list of
@@ -147,6 +150,7 @@ class ResourceProjectsInstancesDatabases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetDatabaseDdlResponse]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.getIamPolicy
     * @desc Gets the access control policy for a database resource. Returns an
@@ -182,6 +186,7 @@ class ResourceProjectsInstancesDatabases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.list
     * @desc Lists Cloud Spanner databases.
@@ -215,6 +220,11 @@ class ResourceProjectsInstancesDatabases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListDatabasesResponse]
   ): Unit = js.native
+  
+  var operations: ResourceProjectsInstancesDatabasesOperations = js.native
+  
+  var sessions: ResourceProjectsInstancesDatabasesSessions = js.native
+  
   /**
     * spanner.projects.instances.databases.setIamPolicy
     * @desc Sets the access control policy on a database resource. Replaces any
@@ -249,6 +259,7 @@ class ResourceProjectsInstancesDatabases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.testIamPermissions
     * @desc Returns permissions that the caller has on the specified database
@@ -285,6 +296,7 @@ class ResourceProjectsInstancesDatabases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * spanner.projects.instances.databases.updateDdl
     * @desc Updates the schema of a Cloud Spanner database by
@@ -323,4 +335,3 @@ class ResourceProjectsInstancesDatabases protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

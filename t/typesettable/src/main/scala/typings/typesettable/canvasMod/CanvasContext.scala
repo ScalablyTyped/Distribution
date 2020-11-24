@@ -5,7 +5,7 @@ import typings.typesettable.contextsMod.IPenFactoryContext
 import typings.typesettable.contextsMod.IRulerFactoryContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typesettable/build/src/contexts/canvas", "CanvasContext")
 @js.native
@@ -16,9 +16,12 @@ class CanvasContext protected ()
   def this(ctx: CanvasRenderingContext2D, lineHeight: Double) = this()
   def this(ctx: CanvasRenderingContext2D, lineHeight: js.UndefOr[scala.Nothing], style: ICanvasFontStyle) = this()
   def this(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle) = this()
-  var ctx: js.Any = js.native
-  var lineHeight: js.Any = js.native
-  var style: js.Any = js.native
+  
   /* private */ def createCanvasPen(ctx: js.Any): js.Any = js.native
+  
+  var ctx: js.Any = js.native
+  
+  var lineHeight: js.Any = js.native
+  
+  var style: js.Any = js.native
 }
-

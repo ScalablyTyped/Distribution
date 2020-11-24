@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Transform a string representation of React components before they are written to output.
@@ -15,4 +15,3 @@ import scala.scalajs.js.annotation._
 @JSImport("ink/build/components/Transform", JSImport.Default)
 @js.native
 object default extends TopLevel[FC[Props]]
-

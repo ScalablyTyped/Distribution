@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Wrapper around <Titanium.Blob> that implements the <Titanium.IOStream> interface.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class BlobStream ()
   extends typings.titanium.Titanium.BlobStream
-

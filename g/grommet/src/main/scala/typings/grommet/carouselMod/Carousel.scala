@@ -9,9 +9,9 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6/components/Carousel", "Carousel")
+@JSImport("grommet/components/Carousel", "Carousel")
 @js.native
 class Carousel protected ()
   extends Component[
@@ -25,8 +25,7 @@ class Carousel protected ()
     context: js.Any
   ) = this()
 }
-
-@JSImport("grommet/es6/components/Carousel", "Carousel")
+@JSImport("grommet/components/Carousel", "Carousel")
 @js.native
 object Carousel extends TopLevel[
       ComponentClass[
@@ -34,4 +33,3 @@ object Carousel extends TopLevel[
         ComponentState
       ]
     ]
-

@@ -5,7 +5,7 @@ import typings.xrm.xrmStrings.active
 import typings.xrm.xrmStrings.finished
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Status for {@link ProcessFlow.Process.getStatus Process.getStatus()}.
@@ -17,13 +17,14 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.finished
 */
 trait ProcessStatus extends js.Object
-
 object ProcessStatus {
+  
   @scala.inline
   def Aborted: aborted = "aborted".asInstanceOf[aborted]
+  
   @scala.inline
   def Active: active = "active".asInstanceOf[active]
+  
   @scala.inline
   def Finished: finished = "finished".asInstanceOf[finished]
 }
-

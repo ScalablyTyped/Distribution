@@ -10,9 +10,9 @@ Tiny currency string parser utility
 | ------------------ | :-------------: |
 | Full name          | parsecurrency |
 | Keywords           | money, currency, format, utility, finance, parse, unformat |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 23356 |
+| # releases         | 3 |
+| # dependents       | 2 |
+| # downloads        | 28808 |
 | # stars            | 1 |
 
 ## Links

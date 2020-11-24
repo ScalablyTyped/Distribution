@@ -2,7 +2,7 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ConfigurationSpec holds the desired state of the Configuration (from the
@@ -10,12 +10,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaConfigurationSpec extends js.Object {
+  
   /**
     * Deprecated and not currently populated by Cloud Run. See
     * metadata.generation instead, which is the sequence number containing the
     * latest generation of the desired state.  Read-only.
     */
   var generation: js.UndefOr[Double] = js.native
+  
   /**
     * RevisionTemplate holds the latest specification for the Revision to be
     * stamped out. The template references the container image, and may also
@@ -29,33 +31,39 @@ trait SchemaConfigurationSpec extends js.Object {
     */
   var revisionTemplate: js.UndefOr[SchemaRevisionTemplate] = js.native
 }
-
 object SchemaConfigurationSpec {
+  
   @scala.inline
   def apply(): SchemaConfigurationSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConfigurationSpec]
   }
+  
   @scala.inline
   implicit class SchemaConfigurationSpecOps[Self <: SchemaConfigurationSpec] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGeneration(value: Double): Self = this.set("generation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGeneration: Self = this.set("generation", js.undefined)
+    
     @scala.inline
     def setRevisionTemplate(value: SchemaRevisionTemplate): Self = this.set("revisionTemplate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRevisionTemplate: Self = this.set("revisionTemplate", js.undefined)
   }
-  
 }
-

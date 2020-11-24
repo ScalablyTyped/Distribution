@@ -8,7 +8,7 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.std.DOMPointInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SVGPoint")
 @js.native
@@ -35,7 +35,6 @@ class SVGPoint ()
   def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
 }
-
 @JSGlobal("SVGPoint")
 @js.native
 object SVGPoint
@@ -55,7 +54,7 @@ object SVGPoint
       /* w */ Double, 
       typings.std.DOMPoint
     ] {
+  
   def fromPoint(): typings.std.DOMPoint = js.native
   def fromPoint(other: DOMPointInit): typings.std.DOMPoint = js.native
 }
-

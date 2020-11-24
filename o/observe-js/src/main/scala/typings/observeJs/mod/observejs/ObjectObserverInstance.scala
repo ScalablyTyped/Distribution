@@ -2,10 +2,11 @@ package typings.observeJs.mod.observejs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObjectObserverInstance extends Observable {
+  
   def open(
     onChange: js.Function4[
       /* added */ Properties, 
@@ -16,4 +17,3 @@ trait ObjectObserverInstance extends Observable {
     ]
   ): Unit = js.native
 }
-

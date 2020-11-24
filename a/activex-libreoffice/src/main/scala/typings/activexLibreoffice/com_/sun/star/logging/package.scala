@@ -2,9 +2,10 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object logging {
+  
   /**
     * This singleton is intended to log the IO events related to loading/storing of documents.
     *
@@ -12,6 +13,7 @@ package object logging {
     * @since OOo 3.2
     */
   type DocumentIOLogRing = typings.activexLibreoffice.com_.sun.star.logging.XSimpleLogRing
+  
   /**
     * the global pool of named {@link XLogger} instances
     *

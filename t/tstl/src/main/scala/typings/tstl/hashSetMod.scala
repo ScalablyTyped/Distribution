@@ -13,11 +13,12 @@ import typings.tstl.tstlBooleans.`true`
 import typings.tstl.uniqueSetMod.UniqueSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/container/HashSet", JSImport.Namespace)
 @js.native
 object hashSetMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
@@ -65,6 +66,7 @@ object hashSetMod extends js.Object {
       first: IForwardIterator[Key, IForwardIterator[Key, _]],
       last: IForwardIterator[Key, IForwardIterator[Key, _]]
     ) = this()
+    def this(hash: js.UndefOr[scala.Nothing], equal: BinaryPredicator[Key, Key]) = this()
     def this(hash: Hasher[Key], equal: BinaryPredicator[Key, Key]) = this()
     def this(items: js.Array[Key], hash: Hasher[Key]) = this()
     def this(
@@ -72,24 +74,34 @@ object hashSetMod extends js.Object {
       last: IForwardIterator[Key, IForwardIterator[Key, _]],
       hash: Hasher[Key]
     ) = this()
+    def this(items: js.Array[Key], hash: js.UndefOr[scala.Nothing], equal: BinaryPredicator[Key, Key]) = this()
     def this(items: js.Array[Key], hash: Hasher[Key], equal: BinaryPredicator[Key, Key]) = this()
+    def this(
+      first: IForwardIterator[Key, IForwardIterator[Key, _]],
+      last: IForwardIterator[Key, IForwardIterator[Key, _]],
+      hash: js.UndefOr[scala.Nothing],
+      equal: BinaryPredicator[Key, Key]
+    ) = this()
     def this(
       first: IForwardIterator[Key, IForwardIterator[Key, _]],
       last: IForwardIterator[Key, IForwardIterator[Key, _]],
       hash: Hasher[Key],
       equal: BinaryPredicator[Key, Key]
     ) = this()
-    var buckets_ : js.Any = js.native
+    
     /* protected */ def _Handle_erase(
       first: Iterator[Key] | (typings.tstl.ihashsetMod.IHashSet.Iterator[Key, `true`, HashSet[Key]]),
       last: Iterator[Key] | (typings.tstl.ihashsetMod.IHashSet.Iterator[Key, `true`, HashSet[Key]])
     ): Unit = js.native
+    
     /* protected */ def _Handle_insert(
       first: Iterator[Key] | (typings.tstl.ihashsetMod.IHashSet.Iterator[Key, `true`, HashSet[Key]]),
       last: Iterator[Key] | (typings.tstl.ihashsetMod.IHashSet.Iterator[Key, `true`, HashSet[Key]])
     ): Unit = js.native
+    
     @JSName("_Insert_by_hint")
     /* protected */ def _Insert_by_hint_Iterator(hint: typings.tstl.ihashsetMod.IHashSet.Iterator[Key, `true`, HashSet[Key]], key: Key): typings.tstl.ihashsetMod.IHashSet.Iterator[Key, `true`, HashSet[Key]] = js.native
+    
     @JSName("_Insert_by_key")
     /* protected */ def _Insert_by_key_InsertRet(key: Key): InsertRet[
         Key, 
@@ -98,6 +110,7 @@ object hashSetMod extends js.Object {
         typings.tstl.ihashsetMod.IHashSet.Iterator[Key, `true`, HashSet[Key]], 
         typings.tstl.ihashsetMod.IHashSet.ReverseIterator[Key, `true`, HashSet[Key]]
       ] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -115,6 +128,7 @@ object hashSetMod extends js.Object {
       */
     @JSName("begin")
     def begin_Iterator(index: Double): typings.tstl.ihashsetMod.IHashSet.Iterator[Key, `true`, HashSet[Key]] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -125,6 +139,7 @@ object hashSetMod extends js.Object {
       * @return Index number.
       */
     def bucket(key: Key): Double = js.native
+    
     /**
       * @inheritDoc
       */
@@ -132,6 +147,7 @@ object hashSetMod extends js.Object {
       * Get number of buckets.
       */
     def bucket_count(): Double = js.native
+    
     /**
       * @inheritDoc
       */
@@ -142,6 +158,9 @@ object hashSetMod extends js.Object {
       * @return Size of the specific bucket.
       */
     def bucket_size(n: Double): Double = js.native
+    
+    var buckets_ : js.Any = js.native
+    
     /**
       * @inheritDoc
       */
@@ -159,11 +178,13 @@ object hashSetMod extends js.Object {
       */
     @JSName("end")
     def end_Iterator(index: Double): typings.tstl.ihashsetMod.IHashSet.Iterator[Key, `true`, HashSet[Key]] = js.native
+    
     /**
       * @inheritDoc
       */
     @JSName("find")
     def find_Iterator(key: Key): typings.tstl.ihashsetMod.IHashSet.Iterator[Key, `true`, HashSet[Key]] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -173,7 +194,9 @@ object hashSetMod extends js.Object {
       * @return The hash function.
       */
     def hash_function(): Hasher[Key] = js.native
+    
     def insert[InputIterator /* <: IForwardIterator[Key, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
+    
     /**
       * @inheritDoc
       */
@@ -183,6 +206,7 @@ object hashSetMod extends js.Object {
       * @return The key equality predicator.
       */
     def key_eq(): BinaryPredicator[Key, Key] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -192,6 +216,7 @@ object hashSetMod extends js.Object {
       * @return `this.size() / this.bucket_count()`
       */
     def load_factor(): Double = js.native
+    
     /**
       * @inheritDoc
       */
@@ -210,6 +235,7 @@ object hashSetMod extends js.Object {
       * @param z The new value to change.
       */
     def max_load_factor(z: Double): Unit = js.native
+    
     /**
       * @inheritDoc
       */
@@ -219,6 +245,7 @@ object hashSetMod extends js.Object {
       */
     @JSName("rbegin")
     def rbegin_ReverseIterator(): ReverseIterator[Key] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -228,6 +255,7 @@ object hashSetMod extends js.Object {
       * @param n The number to change.
       */
     def rehash(n: Double): Unit = js.native
+    
     /**
       * @inheritDoc
       */
@@ -237,6 +265,7 @@ object hashSetMod extends js.Object {
       */
     @JSName("rend")
     def rend_ReverseIterator(): ReverseIterator[Key] = js.native
+    
     /**
       * @inheritDoc
       */
@@ -247,9 +276,9 @@ object hashSetMod extends js.Object {
       */
     def reserve(n: Double): Unit = js.native
   }
-  
   @js.native
   object HashSet extends js.Object {
+    
     val Iterator: Instantiable0[
         typings.tstl.setElementListMod.SetElementList.Iterator[
           js.Object, 
@@ -267,6 +296,7 @@ object hashSetMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     val ReverseIterator: Instantiable0[
         typings.tstl.setElementListMod.SetElementList.ReverseIterator[
           js.Object, 
@@ -284,15 +314,15 @@ object hashSetMod extends js.Object {
           ]
         ]
       ] = js.native
+    
     /**
       * Iterator of {@link HashSet}
       */
     type Iterator[Key] = typings.tstl.setElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]]
+    
     /**
       * Reverse iterator of {@link HashSet}
       */
     type ReverseIterator[Key] = typings.tstl.setElementListMod.SetElementList.ReverseIterator[Key, `true`, HashSet[Key]]
   }
-  
 }
-

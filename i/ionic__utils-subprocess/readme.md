@@ -10,9 +10,9 @@ Subprocess utils for NodeJS
 | ------------------ | :-------------: |
 | Full name          | @ionic/utils-subprocess |
 | Keywords           | - |
-| # releases         | 22 |
-| # dependents       | 2 |
-| # downloads        | 2123548 |
+| # releases         | 35 |
+| # dependents       | 3 |
+| # downloads        | 3497900 |
 | # stars            | 0 |
 
 ## Links

@@ -6,11 +6,12 @@ import typings.materialUiCore.withMobileDialogWithMobileDialogMod.WithMobileDial
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/core", "withMobileDialog")
 @js.native
 object withMobileDialog extends js.Object {
+  
   def apply[P](): js.Function1[
     /* component */ ComponentType[P with InjectedProps with PartialWithWidth], 
     ComponentType[P with PartialWithWidth]
@@ -20,4 +21,3 @@ object withMobileDialog extends js.Object {
     ComponentType[P with PartialWithWidth]
   ] = js.native
 }
-

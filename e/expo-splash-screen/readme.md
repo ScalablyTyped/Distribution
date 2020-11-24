@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-splash-screen
 
-Typings are for version 0.5.0
+Typings are for version 0.6.2
 
 
 

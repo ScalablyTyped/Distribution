@@ -10,9 +10,9 @@ Publish to a gh-pages branch on GitHub (or any other branch on any other remote)
 | ------------------ | :-------------: |
 | Full name          | gh-pages |
 | Keywords           | git, gh-pages, github |
-| # releases         | 5 |
-| # dependents       | 447 |
-| # downloads        | 4925685 |
+| # releases         | 8 |
+| # dependents       | 549 |
+| # downloads        | 9273702 |
 | # stars            | 88 |
 
 ## Links

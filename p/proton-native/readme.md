@@ -10,13 +10,13 @@ React Native for the desktop, cross compatible
 | ------------------ | :-------------: |
 | Full name          | proton-native |
 | Keywords           | - |
-| # releases         | 35 |
+| # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 9435 |
+| # downloads        | 8101 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://proton-native.js.org)
+- [Homepage](https://github.com/kusti8/proton-native#readme)
 - [Bugs](https://github.com/kusti8/proton-native/issues)
 - [Repository](https://github.com/kusti8/proton-native)
 - [Npm](https://www.npmjs.com/package/proton-native)

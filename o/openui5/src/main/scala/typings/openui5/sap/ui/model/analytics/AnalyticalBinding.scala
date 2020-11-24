@@ -7,10 +7,11 @@ import typings.openui5.sap.ui.model.TreeBinding
 import typings.openui5.sap.ui.model.analytics.odata4analytics.QueryResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AnalyticalBinding extends TreeBinding {
+  
   /**
     * Sets filters for matching only a subset of the entities in the bound OData entity set.Invoking this
     * function resets the state of the binding. Subsequent data requests such as calls to
@@ -23,6 +24,7 @@ trait AnalyticalBinding extends TreeBinding {
   def filter(aFilter: js.Array[Filter]): AnalyticalBinding = js.native
   def filter(aFilter: Filter): AnalyticalBinding = js.native
   def filter(aFilter: Filter, sFilterType: TypeofFilterType): AnalyticalBinding = js.native
+  
   /**
     * Gets the analytical information for a column with a given name.
     * @param sColumnName the column name.
@@ -30,11 +32,13 @@ trait AnalyticalBinding extends TreeBinding {
     * explanation of the object structure
     */
   def getAnalyticalInfoForColumn(sColumnName: js.Any): js.Any = js.native
+  
   /**
     * Gets analytical metadata for the bound OData entity set.
     * @returns analytical metadata for the bound OData entity set
     */
   def getAnalyticalQueryResult(): QueryResult = js.native
+  
   /**
     * Gets details about the dimension properties included in the bound OData entity set.
     * @returns details for every dimension property addressed by its name. The details object provides
@@ -46,6 +50,7 @@ trait AnalyticalBinding extends TreeBinding {
     * updateAnalyticalInfo.
     */
   def getDimensionDetails(): js.Any = js.native
+  
   /**
     * Get a download URL with the specified format considering thesort/filter/custom parameters.The
     * download URL also takes into account the selected dimensions and measures,depending on the given
@@ -56,11 +61,13 @@ trait AnalyticalBinding extends TreeBinding {
     * @returns URL which can be used for downloading
     */
   def getDownloadUrl(sFormat: String): String = js.native
+  
   /**
     * Gets the names of the filterable properties in the bound OData entity set.
     * @returns names of properties that can be filtered.
     */
   def getFilterablePropertyNames(): js.Array[_] = js.native
+  
   /**
     * Gets a printable name for a group.The printable name follows the pattern is
     * <code>&lt;label&gt;:&lt;key-value&gt;[-&lt;text-value&gt;]</code>,where <code>label</code> is the
@@ -74,6 +81,7 @@ trait AnalyticalBinding extends TreeBinding {
     * @returns a printable name for the group.
     */
   def getGroupName(oContext: Context, iLevel: Double): String = js.native
+  
   /**
     * Gets the total number of contexts contained in a group, if known.For a given group, be aware that
     * the group size might vary over time. In principle, this can happen if thebound set of OData entities
@@ -89,6 +97,7 @@ trait AnalyticalBinding extends TreeBinding {
     * @returns The currently known group size, or -1, if not yet determined
     */
   def getGroupSize(oContext: Context, iLevel: Double): Double = js.native
+  
   /**
     * Gets details about the measure properties included in the bound OData entity set.
     * @returns details for every measure property addressed by its name. The details object provides these
@@ -98,6 +107,7 @@ trait AnalyticalBinding extends TreeBinding {
     * theAnalyticalBinding's consumer via call to function updateAnalyticalInfo.
     */
   def getMeasureDetails(): js.Any = js.native
+  
   /**
     * Gets child contexts for a specified parent context.Contexts are returned in a stable order imposed
     * by thedimension property that defines this aggregation level beneath the parent context: Either a
@@ -120,29 +130,34 @@ trait AnalyticalBinding extends TreeBinding {
     * numberOfExpandedLevels > 0, the array will be completely empty.
     */
   def getNodeContexts(mParameters: js.Any): js.Array[_] = js.native
+  
   /**
     * Gets the metadata of a property with a given name.
     * @param sPropertyName The property name.
     */
   def getProperty(sPropertyName: String): js.Any = js.native
+  
   /**
     * Gets the label of a property with a given name.
     * @param sPropertyName The property name.
     * @returns The heading maintained for this property or null if it does not exist.
     */
   def getPropertyHeading(sPropertyName: String): String = js.native
+  
   /**
     * Gets the label of a property with a given name.
     * @param sPropertyName The property name.
     * @returns The label maintained for this property or null if it does not exist.
     */
   def getPropertyLabel(sPropertyName: String): String = js.native
+  
   /**
     * Gets the quick info of a property with a given name.
     * @param sPropertyName The property name.
     * @returns The quick info maintained for this property or null if it does not exist.
     */
   def getPropertyQuickInfo(sPropertyName: String): String = js.native
+  
   /**
     * Gets the context for the root aggregation level representing the grand total for all bound measure
     * properties.The context is assigned to parent group ID <code>null</code>. If the binding is
@@ -162,11 +177,13 @@ trait AnalyticalBinding extends TreeBinding {
     * available.
     */
   def getRootContexts(mParameters: js.Any): js.Array[_] = js.native
+  
   /**
     * Gets the names of the sortable properties in the bound OData entity set.
     * @returns names of properties that can be used for sorting the result entities.
     */
   def getSortablePropertyNames(): js.Array[_] = js.native
+  
   /**
     * Gets the total number of entities in the bound OData entity set.Counting takes place at the lowest
     * aggregation level defined by the possible value combinations for the complete set ofdimension
@@ -175,6 +192,7 @@ trait AnalyticalBinding extends TreeBinding {
     * @returns the total number of addressed entities in the OData entity set
     */
   def getTotalSize(): Double = js.native
+  
   /**
     * Determines if the binding has the entries of a given aggregation level locally available.If so, no
     * further OData request is required to fetch any of them.
@@ -184,17 +202,20 @@ trait AnalyticalBinding extends TreeBinding {
     * whether all, some, or none of the entries are locally available.
     */
   def hasAvailableNodeContexts(oContext: Context, iLevel: Double): Boolean = js.native
+  
   /**
     * Determines if any of the properties included in the bound OData entity set is a measure property.
     * @returns true if and only one or more properties are measure properties.
     */
   def hasMeasures(): Boolean = js.native
+  
   /**
     * Determines if a given name refers to a measure property
     * @param sPropertyName The property name.
     * @returns true if and only if the bound OData entity set includes a measure property with this name.
     */
   def isMeasure(sPropertyName: String): Boolean = js.native
+  
   /**
     * Loads child contexts of multiple groups.
     * @param mGroupIdRanges specifies index ranges of child contexts to be loaded for multiple groups
@@ -202,6 +223,7 @@ trait AnalyticalBinding extends TreeBinding {
     * startIndex, length, threshold. For every group ID, the map holds an array of such range objects.
     */
   def loadGroups(mGroupIdRanges: js.Any): Unit = js.native
+  
   /**
     * Determines if the binding has been configured to provide a grand total for the selected measure
     * properties.
@@ -209,6 +231,7 @@ trait AnalyticalBinding extends TreeBinding {
     * measure properties.
     */
   def providesGrandTotal(): Boolean = js.native
+  
   /**
     * Updates the binding's structure with new analytical information.Analytical information is the
     * mapping of UI columns to properties in the bound OData entity set. Every column object containsthe
@@ -229,4 +252,3 @@ trait AnalyticalBinding extends TreeBinding {
     */
   def updateAnalyticalInfo(aColumns: js.Array[_]): Unit = js.native
 }
-

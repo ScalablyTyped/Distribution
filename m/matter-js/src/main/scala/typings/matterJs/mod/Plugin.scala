@@ -7,21 +7,25 @@ import typings.matterJs.anon.Name
 import typings.matterJs.anon.Uses
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Plugin")
 @js.native
 class Plugin () extends js.Object {
+  
   var `for`: js.UndefOr[String] = js.native
-  var name: String = js.native
-  var version: String = js.native
+  
   def install(): Unit = js.native
+  
+  var name: String = js.native
+  
+  var version: String = js.native
 }
-
 /* static members */
 @JSImport("matter-js", "Plugin")
 @js.native
 object Plugin extends js.Object {
+  
   /**
     * Recursively finds all of a module's dependencies and returns a flat dependency graph.
     * @method dependencies
@@ -30,6 +34,7 @@ object Plugin extends js.Object {
     */
   def dependencies(module: Dependency): js.UndefOr[StringDictionary[js.Array[String]] | String] = js.native
   def dependencies(module: Dependency, tracked: StringDictionary[js.Array[String]]): js.UndefOr[StringDictionary[js.Array[String]] | String] = js.native
+  
   /**
     * Parses a dependency string into its components.
     * The `dependency` is a string of the format `'module-name'` or `'module-name@version'`.
@@ -40,6 +45,7 @@ object Plugin extends js.Object {
     * @return {object} The dependency parsed into its components.
     */
   def dependencyParse(dependency: Dependency): Name = js.native
+  
   /**
     * Returns `true` if `plugin.for` is applicable to `module` by comparing against `module.name` and `module.version`.
     * If `plugin.for` is not specified then it is assumed to be applicable.
@@ -50,6 +56,7 @@ object Plugin extends js.Object {
     * @return {boolean} `true` if `plugin.for` is applicable to `module`, otherwise `false`.
     */
   def isFor(plugin: Plugin, module: Dict): Boolean = js.native
+  
   /**
     * Returns `true` if the object meets the minimum standard to be considered a plugin.
     * This means it must define the following properties:
@@ -61,6 +68,7 @@ object Plugin extends js.Object {
     * @return {boolean} `true` if the object can be considered a plugin otherwise `false`.
     */
   def isPlugin(obj: js.Object): Boolean = js.native
+  
   /**
     * Registers a plugin object so it can be resolved later by name.
     * @method register
@@ -68,6 +76,7 @@ object Plugin extends js.Object {
     * @return {object} The plugin.
     */
   def register(plugin: Plugin): Plugin = js.native
+  
   /**
     * Resolves a dependency to a plugin object from the registry if it exists.
     * The `dependency` may contain a version, but only the name matters when resolving.
@@ -76,6 +85,7 @@ object Plugin extends js.Object {
     * @return {object} The plugin if resolved, otherwise `undefined`.
     */
   def resolve(dependency: String): js.UndefOr[Plugin] = js.native
+  
   /**
     * Returns a pretty printed plugin name and version.
     * @method toString
@@ -84,6 +94,7 @@ object Plugin extends js.Object {
     */
   def toString(plugin: String): String = js.native
   def toString(plugin: Plugin): String = js.native
+  
   /**
     * Installs the plugins by calling `plugin.install` on each plugin specified in `plugins` if passed, otherwise `module.uses`.
     * For installing plugins on `Matter` see the convenience function `Matter.use`.
@@ -101,6 +112,7 @@ object Plugin extends js.Object {
     * @param [plugins=module.uses] {} The plugins to install on module (optional, defaults to `module.uses`).
     */
   def use(module: Uses, plugins: js.Array[Plugin | String]): Unit = js.native
+  
   /**
     * Parses a version string into its components.
     * Versions are strictly of the format `x.y.z` (as in [semver](http://semver.org/)).
@@ -116,6 +128,7 @@ object Plugin extends js.Object {
     * @return {object} The version range parsed into its components.
     */
   def versionParse(range: String): IsRange = js.native
+  
   /**
     * Returns `true` if `version` satisfies the given `range`.
     * See documentation for `Plugin.versionParse` for a description of the format.
@@ -127,4 +140,3 @@ object Plugin extends js.Object {
     */
   def versionSatisfies(version: String, range: String): Boolean = js.native
 }
-

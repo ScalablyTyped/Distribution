@@ -3,7 +3,7 @@ package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 import typings.winrtUwp.Windows.Foundation.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the information in a PlayReady content header. */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyContentHeader")
@@ -71,4 +71,3 @@ class PlayReadyContentHeader protected ()
     domainServiceId: String
   ) = this()
 }
-

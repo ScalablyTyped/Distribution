@@ -10,9 +10,9 @@ React component to animate elements on scroll with animate.css
 | ------------------ | :-------------: |
 | Full name          | react-animate-on-scroll |
 | Keywords           | reactScrollEffects, react, reactJS, react-component, animate, scroll, animation, reactAnimateOnScroll |
-| # releases         | 10 |
-| # dependents       | 6 |
-| # downloads        | 218232 |
+| # releases         | 0 |
+| # dependents       | 11 |
+| # downloads        | 424777 |
 | # stars            | 1 |
 
 ## Links

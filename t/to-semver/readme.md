@@ -10,9 +10,9 @@ Get an array of valid, sorted, and cleaned semver versions from an array of stri
 | ------------------ | :-------------: |
 | Full name          | to-semver |
 | Keywords           | semver, semantic, version, versions, versioning, list, array, clean, sort, cleaned, sorted, valid, validated, filter, filtered, git, tag, tags |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 55921 |
+| # releases         | 3 |
+| # dependents       | 6 |
+| # downloads        | 77405 |
 | # stars            | 0 |
 
 ## Links

@@ -2,11 +2,12 @@ package typings.botvs.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("IsVirtual")
 @js.native
 object IsVirtual extends js.Object {
+  
   /**
     * 判断是否是模拟回测
     *
@@ -16,4 +17,3 @@ object IsVirtual extends js.Object {
     */
   def apply(): Boolean = js.native
 }
-

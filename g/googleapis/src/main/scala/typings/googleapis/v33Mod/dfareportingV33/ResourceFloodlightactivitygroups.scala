@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Floodlightactivitygroups")
 @js.native
 class ResourceFloodlightactivitygroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.floodlightActivityGroups.get
     * @desc Gets one floodlight activity group by ID.
@@ -45,6 +47,7 @@ class ResourceFloodlightactivitygroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFloodlightActivityGroup]
   ): Unit = js.native
+  
   /**
     * dfareporting.floodlightActivityGroups.insert
     * @desc Inserts a new floodlight activity group.
@@ -77,6 +80,7 @@ class ResourceFloodlightactivitygroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFloodlightActivityGroup]
   ): Unit = js.native
+  
   /**
     * dfareporting.floodlightActivityGroups.list
     * @desc Retrieves a list of floodlight activity groups, possibly filtered.
@@ -118,6 +122,7 @@ class ResourceFloodlightactivitygroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFloodlightActivityGroupsListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.floodlightActivityGroups.patch
     * @desc Updates an existing floodlight activity group. This method supports
@@ -152,6 +157,7 @@ class ResourceFloodlightactivitygroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFloodlightActivityGroup]
   ): Unit = js.native
+  
   /**
     * dfareporting.floodlightActivityGroups.update
     * @desc Updates an existing floodlight activity group.
@@ -185,4 +191,3 @@ class ResourceFloodlightactivitygroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaFloodlightActivityGroup]
   ): Unit = js.native
 }
-

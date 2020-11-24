@@ -3,18 +3,20 @@ package typings.hoxy.mod
 import typings.node.streamMod.Writable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hoxy", "Proxy")
 @js.native
 class Proxy protected () extends js.Object {
   protected def this(opts: CreateServerOptions) = this()
+  
   /**
     * Stops proxy receiving requests. Finalizes and/or cleans up any
     * resources the proxy uses internally.
     */
   def close(): Unit = js.native
   def close(cb: PossibleErrorCallback): Unit = js.native
+  
   /**
     * This is the entry point for intercepting and operating on requests and responses.
     * This first example intercepts all requests:
@@ -32,6 +34,7 @@ class Proxy protected () extends js.Object {
     */
   def intercept(opts: String, handler: InterceptionHandler): Unit = js.native
   def intercept(opts: InterceptOptions, handler: InterceptionHandler): Unit = js.native
+  
   /**
     * Starts proxy listening on port. Returns itself.
     * A callback may be provided, to run when the proxy has started listening.
@@ -43,6 +46,7 @@ class Proxy protected () extends js.Object {
   def listen(port: Double, host: String, backlog: Double): this.type = js.native
   def listen(port: Double, host: String, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
   def listen(port: Double, host: String, callback: js.Function0[Unit]): this.type = js.native
+  
   /**
     * Deals with various logging events.
     *
@@ -68,6 +72,7 @@ class Proxy protected () extends js.Object {
   def log(levels: String): this.type = js.native
   def log(levels: String, cb: LoggerCallbackFunction): this.type = js.native
   def log(levels: String, cb: Writable): this.type = js.native
+  
   /**
     * Get/set proxy-level slow options. If options is provided, it's a setter.
     * If options is not provided, it's a getter.
@@ -75,4 +80,3 @@ class Proxy protected () extends js.Object {
     */
   def slow(opts: Slow): this.type = js.native
 }
-

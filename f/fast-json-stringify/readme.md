@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-json-stringify
 
-Typings are for version 1.15.2
+Typings are for version 2.2.10
 
 ## Library description:
 Stringify your JSON at max speed
@@ -11,8 +11,8 @@ Stringify your JSON at max speed
 | Full name          | fast-json-stringify |
 | Keywords           | json, stringify, schema, fast |
 | # releases         | 43 |
-| # dependents       | 40 |
-| # downloads        | 827210 |
+| # dependents       | 77 |
+| # downloads        | 6599523 |
 | # stars            | 6 |
 
 ## Links

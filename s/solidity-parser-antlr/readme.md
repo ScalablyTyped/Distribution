@@ -10,9 +10,9 @@ A Solidity parser built from a robust ANTLR 4 grammar
 | ------------------ | :-------------: |
 | Full name          | solidity-parser-antlr |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 54 |
-| # downloads        | 885525 |
+| # releases         | 15 |
+| # dependents       | 48 |
+| # downloads        | 1002005 |
 | # stars            | 0 |
 
 ## Links

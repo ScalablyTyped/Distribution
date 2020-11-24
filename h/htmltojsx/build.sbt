@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "htmltojsx"
-version := "0.0-unknown-dt-20200515Z-eda981"
+version := "0.0-unknown-dt-20201002Z-676ef5"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

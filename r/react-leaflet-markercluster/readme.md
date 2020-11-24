@@ -10,9 +10,9 @@ React wrapper of Leaflet.markercluster for react-laeflet
 | ------------------ | :-------------: |
 | Full name          | react-leaflet-markercluster |
 | Keywords           | react, leaflet, react-leaflet, markercluster, marker, cluster |
-| # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 411263 |
+| # releases         | 1 |
+| # dependents       | 13 |
+| # downloads        | 805144 |
 | # stars            | 0 |
 
 ## Links

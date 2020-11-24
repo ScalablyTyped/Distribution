@@ -6,15 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Reports")
 @js.native
 class ResourceReports protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var compatibleFields: ResourceReportsCompatiblefields = js.native
+  
   var context: APIRequestContext = js.native
-  var files: ResourceReportsFiles = js.native
+  
   /**
     * dfareporting.reports.delete
     * @desc Deletes a report by its ID.
@@ -40,6 +42,9 @@ class ResourceReports protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceReportsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceReportsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
+  var files: ResourceReportsFiles = js.native
+  
   /**
     * dfareporting.reports.get
     * @desc Retrieves a report by its ID.
@@ -69,6 +74,7 @@ class ResourceReports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReport]
   ): Unit = js.native
+  
   /**
     * dfareporting.reports.insert
     * @desc Creates a report.
@@ -98,6 +104,7 @@ class ResourceReports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReport]
   ): Unit = js.native
+  
   /**
     * dfareporting.reports.list
     * @desc Retrieves list of reports.
@@ -131,6 +138,7 @@ class ResourceReports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReportList]
   ): Unit = js.native
+  
   /**
     * dfareporting.reports.patch
     * @desc Updates a report. This method supports patch semantics.
@@ -161,6 +169,7 @@ class ResourceReports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaReport]
   ): Unit = js.native
+  
   /**
     * dfareporting.reports.run
     * @desc Runs a report.
@@ -191,6 +200,7 @@ class ResourceReports protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFile]
   ): Unit = js.native
+  
   /**
     * dfareporting.reports.update
     * @desc Updates a report.
@@ -222,4 +232,3 @@ class ResourceReports protected () extends js.Object {
     callback: BodyResponseCallback[SchemaReport]
   ): Unit = js.native
 }
-

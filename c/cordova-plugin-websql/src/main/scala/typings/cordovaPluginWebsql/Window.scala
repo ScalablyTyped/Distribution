@@ -2,10 +2,11 @@ package typings.cordovaPluginWebsql
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Window extends js.Object {
+  
   /**
     * Creates (opens, if exist) database with supplied parameters.
     * @param  name        Database name
@@ -23,4 +24,3 @@ trait Window extends js.Object {
     creationCallback: js.Function1[/* database */ Database, Unit]
   ): Database = js.native
 }
-

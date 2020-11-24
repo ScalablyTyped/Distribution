@@ -11,8 +11,8 @@ The lodash method `_.remove` exported as a module.
 | Full name          | lodash.remove |
 | Keywords           | lodash-modularized, remove |
 | # releases         | 0 |
-| # dependents       | 58 |
-| # downloads        | 1133473 |
+| # dependents       | 65 |
+| # downloads        | 1434807 |
 | # stars            | 0 |
 
 ## Links

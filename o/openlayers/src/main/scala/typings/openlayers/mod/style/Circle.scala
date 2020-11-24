@@ -4,7 +4,7 @@ import typings.openlayers.mod.olx.style.CircleOptions
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -24,12 +24,14 @@ import scala.scalajs.js.annotation._
   */
 class Circle () extends Image {
   def this(opt_options: CircleOptions) = this()
+  
   /**
     * Get the fill style for the circle.
     * @return Fill style.
     * @api
     */
   def getFill(): Fill = js.native
+  
   /**
     * Get the image used to render the circle.
     * @param pixelRatio Pixel ratio.
@@ -37,18 +39,21 @@ class Circle () extends Image {
     * @api
     */
   def getImage(pixelRatio: Double): HTMLCanvasElement = js.native
+  
   /**
     * Get the circle radius.
     * @return Radius.
     * @api
     */
   def getRadius(): Double = js.native
+  
   /**
     * Get the stroke style for the circle.
     * @return Stroke style.
     * @api
     */
   def getStroke(): Stroke = js.native
+  
   /**
     * Set the circle radius.
     *
@@ -57,4 +62,3 @@ class Circle () extends Image {
     */
   def setRadius(radius: Double): Unit = js.native
 }
-

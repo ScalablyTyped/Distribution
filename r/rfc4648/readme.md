@@ -11,8 +11,8 @@ Encoding and decoding for base64, base32, base16, and friends
 | Full name          | rfc4648 |
 | Keywords           | Uint8Array, base16, base32, base32hex, base64, base64url, hex |
 | # releases         | 5 |
-| # dependents       | 20 |
-| # downloads        | 100460 |
+| # dependents       | 33 |
+| # downloads        | 997603 |
 | # stars            | 0 |
 
 ## Links

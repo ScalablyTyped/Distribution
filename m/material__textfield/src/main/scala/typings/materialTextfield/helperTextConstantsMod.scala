@@ -2,11 +2,12 @@ package typings.materialTextfield
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material/textfield/helper-text/constants", JSImport.Namespace)
 @js.native
 object helperTextConstantsMod extends js.Object {
+  
   /**
     * @license
     * Copyright 2016 Google Inc.
@@ -31,17 +32,21 @@ object helperTextConstantsMod extends js.Object {
     */
   @js.native
   object cssClasses extends js.Object {
+    
     var HELPER_TEXT_PERSISTENT: String = js.native
+    
     var HELPER_TEXT_VALIDATION_MSG: String = js.native
+    
     var ROOT: String = js.native
   }
   
   @js.native
   object strings extends js.Object {
+    
     var ARIA_HIDDEN: String = js.native
+    
     var ROLE: String = js.native
+    
     var ROOT_SELECTOR: String = js.native
   }
-  
 }
-

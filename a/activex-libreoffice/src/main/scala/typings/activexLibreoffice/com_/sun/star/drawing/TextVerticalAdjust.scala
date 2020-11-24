@@ -6,7 +6,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This enumeration specifies the vertical position of text inside a shape in relation to the shape.
@@ -20,8 +20,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
 trait TextVerticalAdjust extends js.Object
-
 object TextVerticalAdjust {
+  
   /**
     * The text extends from the left to the right edge of the shape.
     *
@@ -29,6 +29,7 @@ object TextVerticalAdjust {
     */
   @scala.inline
   def BLOCK: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * the connection line leaves the connected object from the bottom,
     *
@@ -38,9 +39,11 @@ object TextVerticalAdjust {
     */
   @scala.inline
   def BOTTOM: `2` = 2.asInstanceOf[`2`]
+  
   /** The text is centered inside the shape. */
   @scala.inline
   def CENTER: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * the connection line leaves the connected object from the top,
     *
@@ -51,4 +54,3 @@ object TextVerticalAdjust {
   @scala.inline
   def TOP: `0` = 0.asInstanceOf[`0`]
 }
-

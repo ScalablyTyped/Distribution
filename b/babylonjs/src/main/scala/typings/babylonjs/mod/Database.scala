@@ -2,7 +2,7 @@ package typings.babylonjs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "Database")
 @js.native
@@ -21,19 +21,23 @@ class Database protected ()
     disableManifestCheck: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs", "Database")
 @js.native
 object Database extends js.Object {
+  
   /**
     * Gets a boolean indicating if Database storate is enabled (off by default)
     */
   var IDBStorageEnabled: Boolean = js.native
+  
   /** Gets a boolean indicating if the user agent supports blob storage (this value will be updated after creating the first Database object) */
   var IsUASupportingBlobStorage: js.Any = js.native
+  
   var _ParseURL: js.Any = js.native
+  
   var _ReturnFullUrlLocation: js.Any = js.native
+  
   /**
     * Validates if xhr data is correct
     * @param xhr defines the request to validate
@@ -42,4 +46,3 @@ object Database extends js.Object {
     */
   var _ValidateXHRData: js.Any = js.native
 }
-

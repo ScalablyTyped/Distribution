@@ -10,9 +10,9 @@ Simple session middleware for Express
 | ------------------ | :-------------: |
 | Full name          | express-session |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 2409 |
-| # downloads        | 33425185 |
+| # releases         | 6 |
+| # dependents       | 2649 |
+| # downloads        | 38962106 |
 | # stars            | 381 |
 
 ## Links

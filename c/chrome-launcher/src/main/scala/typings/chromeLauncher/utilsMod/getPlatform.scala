@@ -13,11 +13,11 @@ import typings.chromeLauncher.chromeLauncherStrings.win32
 import typings.chromeLauncher.chromeLauncherStrings.wsl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("chrome-launcher/dist/utils", "getPlatform")
 @js.native
 object getPlatform extends js.Object {
+  
   def apply(): aix | android | darwin | freebsd | linux | openbsd | sunos | win32 | cygwin | netbsd | wsl = js.native
 }
-

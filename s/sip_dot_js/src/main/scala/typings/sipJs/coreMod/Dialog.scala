@@ -3,7 +3,7 @@ package typings.sipJs.coreMod
 import typings.sipJs.dialogStateMod.DialogState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/core", "Dialog")
 @js.native
@@ -16,11 +16,11 @@ class Dialog protected ()
     */
   protected def this(core: typings.sipJs.userAgentCoreMod.UserAgentCore, dialogState: DialogState) = this()
 }
-
 /* static members */
 @JSImport("sip.js/lib/core", "Dialog")
 @js.native
 object Dialog extends js.Object {
+  
   /**
     * When a UAC receives a response that establishes a dialog, it
     * constructs the state of the dialog.  This state MUST be maintained
@@ -33,6 +33,7 @@ object Dialog extends js.Object {
     outgoingRequestMessage: typings.sipJs.messagesMod.OutgoingRequestMessage,
     incomingResponseMessage: typings.sipJs.messagesMod.IncomingResponseMessage
   ): DialogState = js.native
+  
   /**
     * The UAS then constructs the state of the dialog.  This state MUST be
     * maintained for the duration of the dialog.
@@ -47,4 +48,3 @@ object Dialog extends js.Object {
     early: Boolean
   ): DialogState = js.native
 }
-

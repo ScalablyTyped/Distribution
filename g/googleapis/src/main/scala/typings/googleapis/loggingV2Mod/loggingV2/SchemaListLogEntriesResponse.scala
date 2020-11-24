@@ -2,19 +2,21 @@ package typings.googleapis.loggingV2Mod.loggingV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result returned from ListLogEntries.
   */
 @js.native
 trait SchemaListLogEntriesResponse extends js.Object {
+  
   /**
     * A list of log entries. If entries is empty, nextPageToken may still be
     * returned, indicating that more entries may exist. See nextPageToken for
     * more information.
     */
   var entries: js.UndefOr[js.Array[SchemaLogEntry]] = js.native
+  
   /**
     * If there might be more results than those appearing in this response,
     * then nextPageToken is included. To get the next set of results, call this
@@ -28,35 +30,42 @@ trait SchemaListLogEntriesResponse extends js.Object {
     */
   var nextPageToken: js.UndefOr[String] = js.native
 }
-
 object SchemaListLogEntriesResponse {
+  
   @scala.inline
   def apply(): SchemaListLogEntriesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListLogEntriesResponse]
   }
+  
   @scala.inline
   implicit class SchemaListLogEntriesResponseOps[Self <: SchemaListLogEntriesResponse] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setEntriesVarargs(value: SchemaLogEntry*): Self = this.set("entries", js.Array(value :_*))
+    
     @scala.inline
     def setEntries(value: js.Array[SchemaLogEntry]): Self = this.set("entries", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEntries: Self = this.set("entries", js.undefined)
+    
     @scala.inline
     def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
   }
-  
 }
-

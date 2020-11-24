@@ -11,8 +11,8 @@ Optimized bcrypt in plain JavaScript with zero dependencies. Compatible to 'bcry
 | Full name          | bcryptjs |
 | Keywords           | bcrypt, password, auth, authentication, encryption, crypt, crypto |
 | # releases         | 1 |
-| # dependents       | 970 |
-| # downloads        | 24077749 |
+| # dependents       | 1172 |
+| # downloads        | 33105783 |
 | # stars            | 170 |
 
 ## Links

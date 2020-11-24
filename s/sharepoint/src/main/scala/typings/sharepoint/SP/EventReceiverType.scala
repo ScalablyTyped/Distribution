@@ -2,14 +2,14 @@ package typings.sharepoint.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait EventReceiverType extends js.Object
-
 @JSGlobal("SP.EventReceiverType")
 @js.native
 object EventReceiverType extends js.Object {
+  
   @js.native
   sealed trait appInstalled extends EventReceiverType
   
@@ -237,6 +237,4 @@ object EventReceiverType extends js.Object {
   
   @js.native
   sealed trait workflowStarting extends EventReceiverType
-  
 }
-

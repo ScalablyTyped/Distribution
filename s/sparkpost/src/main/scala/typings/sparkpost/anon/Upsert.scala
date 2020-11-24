@@ -8,10 +8,11 @@ import typings.sparkpost.mod.SupressionListEntry
 import typings.sparkpost.mod.SupressionSearchParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Upsert extends js.Object {
+  
   /**
     * Delete a recipient from the list by specifying the recipient’s email address in the URI path.
     *
@@ -25,6 +26,7 @@ trait Upsert extends js.Object {
     * @param email Recipient email address
     */
   def delete(email: String, callback: Callback[Unit]): Unit = js.native
+  
   /**
     * Retrieve an entry by recipient email.
     *
@@ -39,6 +41,7 @@ trait Upsert extends js.Object {
     * @returns void
     */
   def get(email: String, callback: ResultsCallback[js.Array[SupressionListEntry]]): Unit = js.native
+  
   /**
     * List all entries in your suppression list, filtered by an optional set of search parameters.
     *
@@ -60,6 +63,7 @@ trait Upsert extends js.Object {
     * @param callback The request callback with supression lists.
     */
   def list(parameters: SupressionSearchParameters, callback: ResultsCallback[js.Array[SupressionListEntry]]): Unit = js.native
+  
   def upsert(listEntries: js.Array[CreateSupressionListEntry]): ResultsPromise[Message] = js.native
   def upsert(listEntries: js.Array[CreateSupressionListEntry], callback: ResultsCallback[Message]): Unit = js.native
   /**
@@ -76,4 +80,3 @@ trait Upsert extends js.Object {
     */
   def upsert(listEntries: CreateSupressionListEntry, callback: ResultsCallback[Message]): Unit = js.native
 }
-

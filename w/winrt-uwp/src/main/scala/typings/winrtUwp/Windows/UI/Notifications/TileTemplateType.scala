@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Notifications
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait TileTemplateType extends js.Object
-
 /** Specifies the content template to use in a tile update. For a more detailed discussion of each tile, including an example of its XML coding, specifics on each template's image sizes, and use with different versions of the tile XML schema, see The tile template catalog. */
 @JSGlobal("Windows.UI.Notifications.TileTemplateType")
 @js.native
 object TileTemplateType extends js.Object {
+  
   /** Windows 8 (Version 1) name/Windows 8.1 fallback attribute value: TileSquareBlock */
   @js.native
   sealed trait tileSquare150x150Block extends TileTemplateType
@@ -514,6 +514,4 @@ object TileTemplateType extends js.Object {
   /** Windows only; not supported on Windows Phone 8.1 */
   @js.native
   sealed trait tileWideText11 extends TileTemplateType
-  
 }
-

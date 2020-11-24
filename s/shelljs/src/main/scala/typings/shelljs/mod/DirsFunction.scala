@@ -5,10 +5,11 @@ import typings.shelljs.shelljsStrings.`-N`
 import typings.shelljs.shelljsStrings.`-c`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DirsFunction extends js.Object {
+  
   /**
     * Displays the list of currently remembered directories.
     *
@@ -45,4 +46,3 @@ trait DirsFunction extends js.Object {
     */
   def apply(options: `-c`): ShellArray = js.native
 }
-

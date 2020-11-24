@@ -7,17 +7,18 @@ import typings.babylonjs.anon.Arc
 import typings.babylonjs.anon.BInfo
 import typings.babylonjs.anon.BackUVs
 import typings.babylonjs.anon.Colors
-import typings.babylonjs.anon.Custom
 import typings.babylonjs.anon.DashNb
 import typings.babylonjs.anon.Depth
 import typings.babylonjs.anon.Diameter
-import typings.babylonjs.anon.Flat
+import typings.babylonjs.anon.FaceColors
 import typings.babylonjs.anon.FrontUVs
 import typings.babylonjs.anon.P
 import typings.babylonjs.anon.Precision
 import typings.babylonjs.anon.Radius
+import typings.babylonjs.anon.RadiusX
 import typings.babylonjs.anon.SideOrientation
 import typings.babylonjs.anon.Subdivisions
+import typings.babylonjs.capsuleBuilderMod.ICreateCapsuleOptions
 import typings.babylonjs.geometryMod.Geometry
 import typings.babylonjs.mathColorMod.Color4
 import typings.babylonjs.mathVectorMod.Matrix
@@ -28,13 +29,15 @@ import typings.babylonjs.typesMod.IndicesArray
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/mesh.vertexData", JSImport.Namespace)
 @js.native
 object meshVertexDataMod extends js.Object {
+  
   @js.native
   trait IGetSetVerticesData extends js.Object {
+    
     /**
       * Returns an array of integers or a typed array (Int32Array, Uint32Array, Uint16Array) populated with the mesh indices.
       * @param copyWhenShared If true (default false) and and if the mesh geometry is shared among some other meshes, the returned array is a copy of the internal one.
@@ -42,8 +45,10 @@ object meshVertexDataMod extends js.Object {
       * @returns the indices array or an empty array if the mesh has no geometry
       */
     def getIndices(): Nullable[IndicesArray] = js.native
+    def getIndices(copyWhenShared: js.UndefOr[scala.Nothing], forceCopy: Boolean): Nullable[IndicesArray] = js.native
     def getIndices(copyWhenShared: Boolean): Nullable[IndicesArray] = js.native
     def getIndices(copyWhenShared: Boolean, forceCopy: Boolean): Nullable[IndicesArray] = js.native
+    
     /**
       * Gets a specific vertex data attached to this geometry. Float data is constructed if the vertex buffer data cannot be returned directly.
       * @param kind defines the data kind (Position, normal, etc...)
@@ -52,14 +57,17 @@ object meshVertexDataMod extends js.Object {
       * @returns a float array containing vertex data
       */
     def getVerticesData(kind: String): Nullable[FloatArray] = js.native
+    def getVerticesData(kind: String, copyWhenShared: js.UndefOr[scala.Nothing], forceCopy: Boolean): Nullable[FloatArray] = js.native
     def getVerticesData(kind: String, copyWhenShared: Boolean): Nullable[FloatArray] = js.native
     def getVerticesData(kind: String, copyWhenShared: Boolean, forceCopy: Boolean): Nullable[FloatArray] = js.native
+    
     /**
       * Gets a boolean indicating if specific vertex data is present
       * @param kind defines the vertex data kind to use
       * @returns true is data kind is present
       */
     def isVerticesDataPresent(kind: String): Boolean = js.native
+    
     /**
       * Creates a new index buffer
       * @param indices defines the indices to store in the index buffer
@@ -68,6 +76,7 @@ object meshVertexDataMod extends js.Object {
       */
     def setIndices(indices: IndicesArray, totalVertices: Nullable[Double]): Unit = js.native
     def setIndices(indices: IndicesArray, totalVertices: Nullable[Double], updatable: Boolean): Unit = js.native
+    
     /**
       * Set specific vertex data
       * @param kind defines the data kind (Position, normal, etc...)
@@ -76,6 +85,7 @@ object meshVertexDataMod extends js.Object {
       * @param stride defines the stride to use (0 by default). This value is deduced from the kind value if not specified
       */
     def setVerticesData(kind: String, data: FloatArray, updatable: Boolean): Unit = js.native
+    
     /**
       * Update a specific associated vertex buffer
       * @param kind defines which buffer to write to (positions, indices, normals, etc). Possible `kind` values :
@@ -96,76 +106,22 @@ object meshVertexDataMod extends js.Object {
       * @param makeItUnique defines if the geometry associated with the mesh must be cloned to make the change only for this mesh (and not all meshes associated with the same geometry)
       */
     def updateVerticesData(kind: String, data: FloatArray): Unit = js.native
+    def updateVerticesData(kind: String, data: FloatArray, updateExtends: js.UndefOr[scala.Nothing], makeItUnique: Boolean): Unit = js.native
     def updateVerticesData(kind: String, data: FloatArray, updateExtends: Boolean): Unit = js.native
     def updateVerticesData(kind: String, data: FloatArray, updateExtends: Boolean, makeItUnique: Boolean): Unit = js.native
   }
   
   @js.native
   class VertexData () extends js.Object {
+    
     var _applyTo: js.Any = js.native
+    
     var _mergeElement: js.Any = js.native
+    
     var _update: js.Any = js.native
+    
     var _validate: js.Any = js.native
-    /**
-      * An array of the r, g, b, a, color of each vertex  [...., r, g, b, a, .....]
-      */
-    var colors: Nullable[FloatArray] = js.native
-    /**
-      * An array of i, j, k the three vertex indices required for each triangular facet  [...., i, j, k .....]
-      */
-    var indices: Nullable[IndicesArray] = js.native
-    /**
-      * An array containing the list of indices to the array of matrices produced by bones, each vertex have up to 4 indices (8 if the matricesIndicesExtra is set).
-      */
-    var matricesIndices: Nullable[FloatArray] = js.native
-    /**
-      * An array extending the number of possible indices
-      */
-    var matricesIndicesExtra: Nullable[FloatArray] = js.native
-    /**
-      * An array containing the list of weights defining the weight of each indexed matrix in the final computation
-      */
-    var matricesWeights: Nullable[FloatArray] = js.native
-    /**
-      * An array extending the number of possible weights when the number of indices is extended
-      */
-    var matricesWeightsExtra: Nullable[FloatArray] = js.native
-    /**
-      * An array of the x, y, z normal vector of each vertex  [...., x, y, z, .....]
-      */
-    var normals: Nullable[FloatArray] = js.native
-    /**
-      * An array of the x, y, z position of each vertex  [...., x, y, z, .....]
-      */
-    var positions: Nullable[FloatArray] = js.native
-    /**
-      * An array of the x, y, z tangent vector of each vertex  [...., x, y, z, .....]
-      */
-    var tangents: Nullable[FloatArray] = js.native
-    /**
-      * An array of u,v which maps a texture image onto each vertex  [...., u, v, .....]
-      */
-    var uvs: Nullable[FloatArray] = js.native
-    /**
-      * A second array of u,v which maps a texture image onto each vertex  [...., u, v, .....]
-      */
-    var uvs2: Nullable[FloatArray] = js.native
-    /**
-      * A third array of u,v which maps a texture image onto each vertex  [...., u, v, .....]
-      */
-    var uvs3: Nullable[FloatArray] = js.native
-    /**
-      * A fourth array of u,v which maps a texture image onto each vertex  [...., u, v, .....]
-      */
-    var uvs4: Nullable[FloatArray] = js.native
-    /**
-      * A fifth array of u,v which maps a texture image onto each vertex  [...., u, v, .....]
-      */
-    var uvs5: Nullable[FloatArray] = js.native
-    /**
-      * A sixth array of u,v which maps a texture image onto each vertex  [...., u, v, .....]
-      */
-    var uvs6: Nullable[FloatArray] = js.native
+    
     /**
       * Associates the vertexData to the passed Geometry.
       * Sets it as updatable or not (default `false`)
@@ -175,6 +131,7 @@ object meshVertexDataMod extends js.Object {
       */
     def applyToGeometry(geometry: Geometry): VertexData = js.native
     def applyToGeometry(geometry: Geometry, updatable: Boolean): VertexData = js.native
+    
     /**
       * Associates the vertexData to the passed Mesh.
       * Sets it as updatable or not (default `false`)
@@ -184,6 +141,37 @@ object meshVertexDataMod extends js.Object {
       */
     def applyToMesh(mesh: Mesh): VertexData = js.native
     def applyToMesh(mesh: Mesh, updatable: Boolean): VertexData = js.native
+    
+    /**
+      * An array of the r, g, b, a, color of each vertex  [...., r, g, b, a, .....]
+      */
+    var colors: Nullable[FloatArray] = js.native
+    
+    /**
+      * An array of i, j, k the three vertex indices required for each triangular facet  [...., i, j, k .....]
+      */
+    var indices: Nullable[IndicesArray] = js.native
+    
+    /**
+      * An array containing the list of indices to the array of matrices produced by bones, each vertex have up to 4 indices (8 if the matricesIndicesExtra is set).
+      */
+    var matricesIndices: Nullable[FloatArray] = js.native
+    
+    /**
+      * An array extending the number of possible indices
+      */
+    var matricesIndicesExtra: Nullable[FloatArray] = js.native
+    
+    /**
+      * An array containing the list of weights defining the weight of each indexed matrix in the final computation
+      */
+    var matricesWeights: Nullable[FloatArray] = js.native
+    
+    /**
+      * An array extending the number of possible weights when the number of indices is extended
+      */
+    var matricesWeightsExtra: Nullable[FloatArray] = js.native
+    
     /**
       * Merges the passed VertexData into the current one
       * @param other the VertexData to be merged into the current one
@@ -192,23 +180,42 @@ object meshVertexDataMod extends js.Object {
       */
     def merge(other: VertexData): VertexData = js.native
     def merge(other: VertexData, use32BitsIndices: Boolean): VertexData = js.native
+    
+    /**
+      * An array of the x, y, z normal vector of each vertex  [...., x, y, z, .....]
+      */
+    var normals: Nullable[FloatArray] = js.native
+    
+    /**
+      * An array of the x, y, z position of each vertex  [...., x, y, z, .....]
+      */
+    var positions: Nullable[FloatArray] = js.native
+    
     /**
       * Serializes the VertexData
       * @returns a serialized object
       */
     def serialize(): js.Any = js.native
+    
     /**
       * Uses the passed data array to set the set the values for the specified kind of data
       * @param data a linear array of floating numbers
       * @param kind the type of data that is being set, eg positions, colors etc
       */
     def set(data: FloatArray, kind: String): Unit = js.native
+    
+    /**
+      * An array of the x, y, z tangent vector of each vertex  [...., x, y, z, .....]
+      */
+    var tangents: Nullable[FloatArray] = js.native
+    
     /**
       * Transforms each position and each normal of the vertexData according to the passed Matrix
       * @param matrix the transforming matrix
       * @returns the VertexData
       */
     def transform(matrix: Matrix): VertexData = js.native
+    
     /**
       * Updates the associated geometry
       * @param geometry the geometry to be updated
@@ -217,6 +224,7 @@ object meshVertexDataMod extends js.Object {
       * @returns VertexData.
       */
     def updateGeometry(geometry: Geometry): VertexData = js.native
+    
     /**
       * Updates the associated mesh
       * @param mesh the mesh to be updated
@@ -225,28 +233,46 @@ object meshVertexDataMod extends js.Object {
       * @returns VertexData
       */
     def updateMesh(mesh: Mesh): VertexData = js.native
+    
+    /**
+      * An array of u,v which maps a texture image onto each vertex  [...., u, v, .....]
+      */
+    var uvs: Nullable[FloatArray] = js.native
+    
+    /**
+      * A second array of u,v which maps a texture image onto each vertex  [...., u, v, .....]
+      */
+    var uvs2: Nullable[FloatArray] = js.native
+    
+    /**
+      * A third array of u,v which maps a texture image onto each vertex  [...., u, v, .....]
+      */
+    var uvs3: Nullable[FloatArray] = js.native
+    
+    /**
+      * A fourth array of u,v which maps a texture image onto each vertex  [...., u, v, .....]
+      */
+    var uvs4: Nullable[FloatArray] = js.native
+    
+    /**
+      * A fifth array of u,v which maps a texture image onto each vertex  [...., u, v, .....]
+      */
+    var uvs5: Nullable[FloatArray] = js.native
+    
+    /**
+      * A sixth array of u,v which maps a texture image onto each vertex  [...., u, v, .....]
+      */
+    var uvs6: Nullable[FloatArray] = js.native
   }
-  
   /* static members */
   @js.native
   object VertexData extends js.Object {
+    
     /**
       * Mesh side orientation : usually the internal or back surface
       */
     val BACKSIDE: Double = js.native
-    /**
-      * Mesh side orientation : by default, `FRONTSIDE`
-      */
-    val DEFAULTSIDE: Double = js.native
-    /**
-      * Mesh side orientation : both internal and external or front and back surfaces
-      */
-    val DOUBLESIDE: Double = js.native
-    /**
-      * Mesh side orientation : usually the external or front surface
-      */
-    val FRONTSIDE: Double = js.native
-    var _ExtractFrom: js.Any = js.native
+    
     /**
       * Compute normals for given positions and indices
       * @param positions an array of vertex positions, [...., x, y, z, ......]
@@ -267,6 +293,7 @@ object meshVertexDataMod extends js.Object {
       */
     def ComputeNormals(positions: js.Any, indices: js.Any, normals: js.Any): Unit = js.native
     def ComputeNormals(positions: js.Any, indices: js.Any, normals: js.Any, options: BInfo): Unit = js.native
+    
     /**
       * Creates the VertexData for a box
       * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -282,6 +309,15 @@ object meshVertexDataMod extends js.Object {
       * @returns the VertexData of the box
       */
     def CreateBox(options: Depth): VertexData = js.native
+    
+    /**
+      * Creates the VertexData for a Capsule, inspired from https://github.com/maximeq/three-js-capsule-geometry/blob/master/src/CapsuleBufferGeometry.js
+      * @param options an object used to set the following optional parameters for the capsule, required but can be empty
+      * @returns the VertexData of the Capsule
+      */
+    def CreateCapsule(): VertexData = js.native
+    def CreateCapsule(options: ICreateCapsuleOptions): VertexData = js.native
+    
     /**
       * Creates the VertexData for a cylinder, cone or prism
       * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -302,6 +338,7 @@ object meshVertexDataMod extends js.Object {
       * @returns the VertexData of the cylinder, cone or prism
       */
     def CreateCylinder(options: Diameter): VertexData = js.native
+    
     /**
       * Create the VertexData for a DashedLines
       * @param options an object used to set the following optional parameters for the DashedLines, required but can be empty
@@ -312,6 +349,7 @@ object meshVertexDataMod extends js.Object {
       * @returns the VertexData for the DashedLines
       */
     def CreateDashedLines(options: DashNb): VertexData = js.native
+    
     /**
       * Creates the VertexData of the Disc or regular Polygon
       * @param options an object used to set the following optional parameters for the disc, required but can be empty
@@ -324,6 +362,7 @@ object meshVertexDataMod extends js.Object {
       * @returns the VertexData of the box
       */
     def CreateDisc(options: Radius): VertexData = js.native
+    
     /**
       * Creates the VertexData for a Ground
       * @param options an object used to set the following optional parameters for the Ground, required but can be empty
@@ -333,6 +372,7 @@ object meshVertexDataMod extends js.Object {
       * @returns the VertexData of the Ground
       */
     def CreateGround(options: Subdivisions): VertexData = js.native
+    
     /**
       * Creates the VertexData of the Ground designed from a heightmap
       * @param options an object used to set the following parameters for the Ground, required and provided by MeshBuilder.CreateGroundFromHeightMap
@@ -349,6 +389,7 @@ object meshVertexDataMod extends js.Object {
       * @returns the VertexData of the Ground designed from a heightmap
       */
     def CreateGroundFromHeightMap(options: AlphaFilter): VertexData = js.native
+    
     /**
       * Creates the VertexData of the IcoSphere
       * @param options an object used to set the following optional parameters for the IcoSphere, required but can be empty
@@ -363,7 +404,8 @@ object meshVertexDataMod extends js.Object {
       * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
       * @returns the VertexData of the IcoSphere
       */
-    def CreateIcoSphere(options: Flat): VertexData = js.native
+    def CreateIcoSphere(options: RadiusX): VertexData = js.native
+    
     /**
       * Creates the VertexData of the LineSystem
       * @param options an object used to set the following optional parameters for the LineSystem, required but can be empty
@@ -372,6 +414,7 @@ object meshVertexDataMod extends js.Object {
       * @returns the VertexData of the LineSystem
       */
     def CreateLineSystem(options: Colors): VertexData = js.native
+    
     /**
       * Creates the VertexData for a Plane
       * @param options an object used to set the following optional parameters for the plane, required but can be empty
@@ -384,6 +427,7 @@ object meshVertexDataMod extends js.Object {
       * @returns the VertexData of the box
       */
     def CreatePlane(options: SideOrientation): VertexData = js.native
+    
     /**
       * Creates the VertexData for an irregular Polygon in the XoZ plane using a mesh built by polygonTriangulation.build()
       * All parameters are provided by MeshBuilder.CreatePolygon as needed
@@ -393,11 +437,216 @@ object meshVertexDataMod extends js.Object {
       * @param fColors an array of Color3 elements used to set different colors to the top, rings and bottom respectively
       * @param frontUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the front side, optional, default vector4 (0, 0, 1, 1)
       * @param backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
+      * @param wrap a boolean, default false, when true and fUVs used texture is wrapped around all sides, when false texture is applied side
       * @returns the VertexData of the Polygon
       */
     def CreatePolygon(polygon: Mesh, sideOrientation: Double): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.UndefOr[scala.Nothing],
+      fColors: js.UndefOr[scala.Nothing],
+      frontUVs: js.UndefOr[scala.Nothing],
+      backUVs: js.UndefOr[scala.Nothing],
+      wrap: Boolean
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.UndefOr[scala.Nothing],
+      fColors: js.UndefOr[scala.Nothing],
+      frontUVs: js.UndefOr[scala.Nothing],
+      backUVs: Vector4
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.UndefOr[scala.Nothing],
+      fColors: js.UndefOr[scala.Nothing],
+      frontUVs: js.UndefOr[scala.Nothing],
+      backUVs: Vector4,
+      wrap: Boolean
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.UndefOr[scala.Nothing],
+      fColors: js.UndefOr[scala.Nothing],
+      frontUVs: Vector4
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.UndefOr[scala.Nothing],
+      fColors: js.UndefOr[scala.Nothing],
+      frontUVs: Vector4,
+      backUVs: js.UndefOr[scala.Nothing],
+      wrap: Boolean
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.UndefOr[scala.Nothing],
+      fColors: js.UndefOr[scala.Nothing],
+      frontUVs: Vector4,
+      backUVs: Vector4
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.UndefOr[scala.Nothing],
+      fColors: js.UndefOr[scala.Nothing],
+      frontUVs: Vector4,
+      backUVs: Vector4,
+      wrap: Boolean
+    ): VertexData = js.native
+    def CreatePolygon(polygon: Mesh, sideOrientation: Double, fUV: js.UndefOr[scala.Nothing], fColors: js.Array[Color4]): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.UndefOr[scala.Nothing],
+      fColors: js.Array[Color4],
+      frontUVs: js.UndefOr[scala.Nothing],
+      backUVs: js.UndefOr[scala.Nothing],
+      wrap: Boolean
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.UndefOr[scala.Nothing],
+      fColors: js.Array[Color4],
+      frontUVs: js.UndefOr[scala.Nothing],
+      backUVs: Vector4
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.UndefOr[scala.Nothing],
+      fColors: js.Array[Color4],
+      frontUVs: js.UndefOr[scala.Nothing],
+      backUVs: Vector4,
+      wrap: Boolean
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.UndefOr[scala.Nothing],
+      fColors: js.Array[Color4],
+      frontUVs: Vector4
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.UndefOr[scala.Nothing],
+      fColors: js.Array[Color4],
+      frontUVs: Vector4,
+      backUVs: js.UndefOr[scala.Nothing],
+      wrap: Boolean
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.UndefOr[scala.Nothing],
+      fColors: js.Array[Color4],
+      frontUVs: Vector4,
+      backUVs: Vector4
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.UndefOr[scala.Nothing],
+      fColors: js.Array[Color4],
+      frontUVs: Vector4,
+      backUVs: Vector4,
+      wrap: Boolean
+    ): VertexData = js.native
     def CreatePolygon(polygon: Mesh, sideOrientation: Double, fUV: js.Array[Vector4]): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.Array[Vector4],
+      fColors: js.UndefOr[scala.Nothing],
+      frontUVs: js.UndefOr[scala.Nothing],
+      backUVs: js.UndefOr[scala.Nothing],
+      wrap: Boolean
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.Array[Vector4],
+      fColors: js.UndefOr[scala.Nothing],
+      frontUVs: js.UndefOr[scala.Nothing],
+      backUVs: Vector4
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.Array[Vector4],
+      fColors: js.UndefOr[scala.Nothing],
+      frontUVs: js.UndefOr[scala.Nothing],
+      backUVs: Vector4,
+      wrap: Boolean
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.Array[Vector4],
+      fColors: js.UndefOr[scala.Nothing],
+      frontUVs: Vector4
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.Array[Vector4],
+      fColors: js.UndefOr[scala.Nothing],
+      frontUVs: Vector4,
+      backUVs: js.UndefOr[scala.Nothing],
+      wrap: Boolean
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.Array[Vector4],
+      fColors: js.UndefOr[scala.Nothing],
+      frontUVs: Vector4,
+      backUVs: Vector4
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.Array[Vector4],
+      fColors: js.UndefOr[scala.Nothing],
+      frontUVs: Vector4,
+      backUVs: Vector4,
+      wrap: Boolean
+    ): VertexData = js.native
     def CreatePolygon(polygon: Mesh, sideOrientation: Double, fUV: js.Array[Vector4], fColors: js.Array[Color4]): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.Array[Vector4],
+      fColors: js.Array[Color4],
+      frontUVs: js.UndefOr[scala.Nothing],
+      backUVs: js.UndefOr[scala.Nothing],
+      wrap: Boolean
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.Array[Vector4],
+      fColors: js.Array[Color4],
+      frontUVs: js.UndefOr[scala.Nothing],
+      backUVs: Vector4
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.Array[Vector4],
+      fColors: js.Array[Color4],
+      frontUVs: js.UndefOr[scala.Nothing],
+      backUVs: Vector4,
+      wrap: Boolean
+    ): VertexData = js.native
     def CreatePolygon(
       polygon: Mesh,
       sideOrientation: Double,
@@ -411,8 +660,27 @@ object meshVertexDataMod extends js.Object {
       fUV: js.Array[Vector4],
       fColors: js.Array[Color4],
       frontUVs: Vector4,
+      backUVs: js.UndefOr[scala.Nothing],
+      wrap: Boolean
+    ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.Array[Vector4],
+      fColors: js.Array[Color4],
+      frontUVs: Vector4,
       backUVs: Vector4
     ): VertexData = js.native
+    def CreatePolygon(
+      polygon: Mesh,
+      sideOrientation: Double,
+      fUV: js.Array[Vector4],
+      fColors: js.Array[Color4],
+      frontUVs: Vector4,
+      backUVs: Vector4,
+      wrap: Boolean
+    ): VertexData = js.native
+    
     /**
       * Creates the VertexData for a Polyhedron
       * @param options an object used to set the following optional parameters for the polyhedron, required but can be empty
@@ -433,7 +701,8 @@ object meshVertexDataMod extends js.Object {
       * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
       * @returns the VertexData of the Polyhedron
       */
-    def CreatePolyhedron(options: Custom): VertexData = js.native
+    def CreatePolyhedron(options: FaceColors): VertexData = js.native
+    
     /**
       * Creates the VertexData for a Ribbon
       * @param options an object used to set the following optional parameters for the ribbon, required but can be empty
@@ -450,6 +719,7 @@ object meshVertexDataMod extends js.Object {
       * @returns the VertexData of the ribbon
       */
     def CreateRibbon(options: BackUVs): VertexData = js.native
+    
     /**
       * Creates the VertexData for an ellipsoid, defaults to a sphere
       * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -466,6 +736,7 @@ object meshVertexDataMod extends js.Object {
       * @returns the VertexData of the ellipsoid
       */
     def CreateSphere(options: Arc): VertexData = js.native
+    
     /**
       * Creates the VertexData for a tiled box
       * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -476,6 +747,7 @@ object meshVertexDataMod extends js.Object {
       * @returns the VertexData of the box
       */
     def CreateTiledBox(options: AlignHorizontal): VertexData = js.native
+    
     /**
       * Creates the VertexData for a TiledGround by subdividing the ground into tiles
       * @param options an object used to set the following optional parameters for the Ground, required but can be empty
@@ -488,6 +760,7 @@ object meshVertexDataMod extends js.Object {
       * @returns the VertexData of the TiledGround
       */
     def CreateTiledGround(options: Precision): VertexData = js.native
+    
     /**
       * Creates the VertexData for a tiled plane
       * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -501,6 +774,7 @@ object meshVertexDataMod extends js.Object {
       * @returns the VertexData of the tiled plane
       */
     def CreateTiledPlane(options: AlignVertical): VertexData = js.native
+    
     /**
       * Creates the VertexData for a torus
       * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -513,6 +787,7 @@ object meshVertexDataMod extends js.Object {
       * @returns the VertexData of the torus
       */
     def CreateTorus(options: FrontUVs): VertexData = js.native
+    
     /**
       * Creates the VertexData for a TorusKnot
       * @param options an object used to set the following optional parameters for the TorusKnot, required but can be empty
@@ -528,6 +803,17 @@ object meshVertexDataMod extends js.Object {
       * @returns the VertexData of the Torus Knot
       */
     def CreateTorusKnot(options: P): VertexData = js.native
+    
+    /**
+      * Mesh side orientation : by default, `FRONTSIDE`
+      */
+    val DEFAULTSIDE: Double = js.native
+    
+    /**
+      * Mesh side orientation : both internal and external or front and back surfaces
+      */
+    val DOUBLESIDE: Double = js.native
+    
     /**
       * Extracts the vertexData from the geometry
       * @param geometry the geometry from which to extract the VertexData
@@ -536,8 +822,10 @@ object meshVertexDataMod extends js.Object {
       * @returns the object VertexData associated to the passed mesh
       */
     def ExtractFromGeometry(geometry: Geometry): VertexData = js.native
+    def ExtractFromGeometry(geometry: Geometry, copyWhenShared: js.UndefOr[scala.Nothing], forceCopy: Boolean): VertexData = js.native
     def ExtractFromGeometry(geometry: Geometry, copyWhenShared: Boolean): VertexData = js.native
     def ExtractFromGeometry(geometry: Geometry, copyWhenShared: Boolean, forceCopy: Boolean): VertexData = js.native
+    
     /**
       * Extracts the vertexData from a mesh
       * @param mesh the mesh from which to extract the VertexData
@@ -546,14 +834,22 @@ object meshVertexDataMod extends js.Object {
       * @returns the object VertexData associated to the passed mesh
       */
     def ExtractFromMesh(mesh: Mesh): VertexData = js.native
+    def ExtractFromMesh(mesh: Mesh, copyWhenShared: js.UndefOr[scala.Nothing], forceCopy: Boolean): VertexData = js.native
     def ExtractFromMesh(mesh: Mesh, copyWhenShared: Boolean): VertexData = js.native
     def ExtractFromMesh(mesh: Mesh, copyWhenShared: Boolean, forceCopy: Boolean): VertexData = js.native
+    
+    /**
+      * Mesh side orientation : usually the external or front surface
+      */
+    val FRONTSIDE: Double = js.native
+    
     /**
       * Applies VertexData created from the imported parameters to the geometry
       * @param parsedVertexData the parsed data from an imported file
       * @param geometry the geometry to apply the VertexData to
       */
     def ImportVertexData(parsedVertexData: js.Any, geometry: Geometry): Unit = js.native
+    
     /** @hidden */
     def _ComputeSides(
       sideOrientation: Double,
@@ -561,6 +857,15 @@ object meshVertexDataMod extends js.Object {
       indices: FloatArray,
       normals: FloatArray,
       uvs: FloatArray
+    ): Unit = js.native
+    def _ComputeSides(
+      sideOrientation: Double,
+      positions: FloatArray,
+      indices: FloatArray,
+      normals: FloatArray,
+      uvs: FloatArray,
+      frontUVs: js.UndefOr[scala.Nothing],
+      backUVs: Vector4
     ): Unit = js.native
     def _ComputeSides(
       sideOrientation: Double,
@@ -579,7 +884,7 @@ object meshVertexDataMod extends js.Object {
       frontUVs: Vector4,
       backUVs: Vector4
     ): Unit = js.native
+    
+    var _ExtractFrom: js.Any = js.native
   }
-  
 }
-

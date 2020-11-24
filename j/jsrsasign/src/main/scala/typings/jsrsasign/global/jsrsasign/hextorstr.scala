@@ -2,11 +2,12 @@ package typings.jsrsasign.global.jsrsasign
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsrsasign.hextorstr")
 @js.native
 object hextorstr extends js.Object {
+  
   /**
     * convert a hexadecimal encoded string to raw string including non printable characters.
     * @param s hexadecimal encoded string
@@ -16,4 +17,3 @@ object hextorstr extends js.Object {
     */
   def apply(s: String): String = js.native
 }
-

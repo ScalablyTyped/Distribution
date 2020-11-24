@@ -2,59 +2,87 @@ package typings.reactNativeAuth0.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Email extends js.Object {
+  
   var email: String = js.native
+  
   var emailVerified: Boolean = js.native
+  
+  var familyName: String = js.native
+  
+  var givenName: String = js.native
+  
   var name: String = js.native
+  
   var nickname: String = js.native
+  
   var picture: String = js.native
+  
   var sub: String = js.native
+  
   var updatedAt: String = js.native
 }
-
 object Email {
+  
   @scala.inline
   def apply(
     email: String,
     emailVerified: Boolean,
+    familyName: String,
+    givenName: String,
     name: String,
     nickname: String,
     picture: String,
     sub: String,
     updatedAt: String
   ): Email = {
-    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], emailVerified = emailVerified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], emailVerified = emailVerified.asInstanceOf[js.Any], familyName = familyName.asInstanceOf[js.Any], givenName = givenName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Email]
   }
+  
   @scala.inline
   implicit class EmailOps[Self <: Email] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEmailVerified(value: Boolean): Self = this.set("emailVerified", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFamilyName(value: String): Self = this.set("familyName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGivenName(value: String): Self = this.set("givenName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNickname(value: String): Self = this.set("nickname", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPicture(value: String): Self = this.set("picture", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSub(value: String): Self = this.set("sub", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUpdatedAt(value: String): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
   }
-  
 }
-

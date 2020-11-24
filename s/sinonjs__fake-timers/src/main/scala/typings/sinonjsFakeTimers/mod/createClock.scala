@@ -3,11 +3,12 @@ package typings.sinonjsFakeTimers.mod
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@sinonjs/fake-timers", "createClock")
 @js.native
 object createClock extends js.Object {
+  
   def apply(): Clock = js.native
   def apply(now: js.UndefOr[scala.Nothing], loopLimit: Double): Clock = js.native
   def apply(now: Double): Clock = js.native
@@ -15,4 +16,3 @@ object createClock extends js.Object {
   def apply(now: Date): Clock = js.native
   def apply(now: Date, loopLimit: Double): Clock = js.native
 }
-

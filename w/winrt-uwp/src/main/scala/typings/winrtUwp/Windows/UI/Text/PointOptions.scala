@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Text
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PointOptions extends js.Object
-
 /** Defines options for specifying or retrieving a point. */
 @JSGlobal("Windows.UI.Text.PointOptions")
 @js.native
 object PointOptions extends js.Object {
+  
   /** Allow points outside of the client area. */
   @js.native
   sealed trait allowOffClient extends PointOptions
@@ -42,6 +42,4 @@ object PointOptions extends js.Object {
   /** Transform coordinates using a world transform supplied by the host app. */
   @js.native
   sealed trait transform extends PointOptions
-  
 }
-

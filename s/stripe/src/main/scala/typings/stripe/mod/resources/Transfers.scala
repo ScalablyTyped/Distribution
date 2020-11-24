@@ -17,15 +17,17 @@ import typings.stripe.mod.transfers.ITransferListOptions
 import typings.stripe.mod.transfers.ITransferUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Transfers")
 @js.native
 class Transfers () extends StripeResource {
+  
   def cancel(id: String): js.Promise[ITransfer] = js.native
   def cancel(id: String, options: HeaderOptions): js.Promise[ITransfer] = js.native
   def cancel(id: String, options: HeaderOptions, response: IResponseFn[ITransfer]): js.Promise[ITransfer] = js.native
   def cancel(id: String, response: IResponseFn[ITransfer]): js.Promise[ITransfer] = js.native
+  
   def create(data: ITransferCreationOptions): js.Promise[ITransfer] = js.native
   /**
     * To send funds from your Stripe account to a third-party recipient or to your own bank account, you create a new transfer
@@ -40,6 +42,7 @@ class Transfers () extends StripeResource {
   def create(data: ITransferCreationOptions, options: HeaderOptions): js.Promise[ITransfer] = js.native
   def create(data: ITransferCreationOptions, options: HeaderOptions, response: IResponseFn[ITransfer]): js.Promise[ITransfer] = js.native
   def create(data: ITransferCreationOptions, response: IResponseFn[ITransfer]): js.Promise[ITransfer] = js.native
+  
   def createReversal(transferId: String): js.Promise[IReversal] = js.native
   /**
     * When you create a new reversal, you must specify a transfer to create it on.
@@ -63,8 +66,10 @@ class Transfers () extends StripeResource {
   def createReversal(transferId: String, options: HeaderOptions): js.Promise[IReversal] = js.native
   def createReversal(transferId: String, options: HeaderOptions, response: IResponseFn[IReversal]): js.Promise[IReversal] = js.native
   def createReversal(transferId: String, response: IResponseFn[IReversal]): js.Promise[IReversal] = js.native
+  
    // TODO: Implement placeholder method
   def getMetadata(): Unit = js.native
+  
   def list(): IListPromise[ITransfer] = js.native
   def list(data: ITransferListOptions): IListPromise[ITransfer] = js.native
   /**
@@ -77,6 +82,7 @@ class Transfers () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[ITransfer] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[ITransfer]]): IListPromise[ITransfer] = js.native
   def list(response: IResponseFn[IList[ITransfer]]): IListPromise[ITransfer] = js.native
+  
   def listReversals(transferId: String): IListPromise[IReversal] = js.native
   def listReversals(transferId: String, data: IListOptions): IListPromise[IReversal] = js.native
   /**
@@ -95,11 +101,13 @@ class Transfers () extends StripeResource {
   def listReversals(transferId: String, options: HeaderOptions): IListPromise[IReversal] = js.native
   def listReversals(transferId: String, options: HeaderOptions, response: IResponseFn[IList[IReversal]]): IListPromise[IReversal] = js.native
   def listReversals(transferId: String, response: IResponseFn[IList[IReversal]]): IListPromise[IReversal] = js.native
+  
    // TODO: Not sure if this should be a list of balance transactions or charges.
   def listTransactions(): IListPromise[ICharge] = js.native
   def listTransactions(options: HeaderOptions): IListPromise[ICharge] = js.native
   def listTransactions(options: HeaderOptions, response: IResponseFn[IList[ICharge]]): IListPromise[ICharge] = js.native
   def listTransactions(response: IResponseFn[IList[ICharge]]): IListPromise[ICharge] = js.native
+  
   def retrieve(id: String): js.Promise[ITransfer] = js.native
   def retrieve(id: String, data: IDataOptions): js.Promise[ITransfer] = js.native
   /**
@@ -112,6 +120,7 @@ class Transfers () extends StripeResource {
   def retrieve(id: String, options: HeaderOptions): js.Promise[ITransfer] = js.native
   def retrieve(id: String, options: HeaderOptions, response: IResponseFn[ITransfer]): js.Promise[ITransfer] = js.native
   def retrieve(id: String, response: IResponseFn[ITransfer]): js.Promise[ITransfer] = js.native
+  
   def retrieveReversal(transferId: String, reversalId: String): js.Promise[IReversal] = js.native
   /**
     * By default, you can see the 10 most recent reversals stored directly on the transfer object, but you can also retrieve details about a
@@ -120,6 +129,7 @@ class Transfers () extends StripeResource {
   def retrieveReversal(transferId: String, reversalId: String, options: HeaderOptions): js.Promise[IReversal] = js.native
   def retrieveReversal(transferId: String, reversalId: String, options: HeaderOptions, response: IResponseFn[IReversal]): js.Promise[IReversal] = js.native
   def retrieveReversal(transferId: String, reversalId: String, response: IResponseFn[IReversal]): js.Promise[IReversal] = js.native
+  
   def reverse(id: String): js.Promise[IReversal] = js.native
    // TODO: Not sure if this should be a list of balance transactions or charges.
   /**
@@ -144,7 +154,9 @@ class Transfers () extends StripeResource {
   def reverse(id: String, options: HeaderOptions): js.Promise[IReversal] = js.native
   def reverse(id: String, options: HeaderOptions, response: IResponseFn[IReversal]): js.Promise[IReversal] = js.native
   def reverse(id: String, response: IResponseFn[IReversal]): js.Promise[IReversal] = js.native
+  
   def setMetadata(): Unit = js.native
+  
   def update(id: String, data: ITransferUpdateOptions): js.Promise[ITransfer] = js.native
   /**
     * Updates the specified transfer by setting the values of the parameters passed. Any parameters not provided will be left
@@ -155,6 +167,7 @@ class Transfers () extends StripeResource {
   def update(id: String, data: ITransferUpdateOptions, options: HeaderOptions): js.Promise[ITransfer] = js.native
   def update(id: String, data: ITransferUpdateOptions, options: HeaderOptions, response: IResponseFn[ITransfer]): js.Promise[ITransfer] = js.native
   def update(id: String, data: ITransferUpdateOptions, response: IResponseFn[ITransfer]): js.Promise[ITransfer] = js.native
+  
   def updateReversal(transferId: String, reversalId: String, data: IReversalUpdateOptions): js.Promise[IReversal] = js.native
   /**
     * Updates the specified reversal by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
@@ -176,4 +189,3 @@ class Transfers () extends StripeResource {
     response: IResponseFn[IReversal]
   ): js.Promise[IReversal] = js.native
 }
-

@@ -5,11 +5,12 @@ import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.httpMod.IncomingMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("charset", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * guess data charset from req.headers, xml, html content-type meta tag
     *
@@ -30,7 +31,6 @@ object mod extends js.Object {
     * @param peekSize max content peek size, default is 512
     * @return charset, lower case, e.g.: utf8, gbk, gb2312, .... If can\'t guess, return null
     */
-  // tslint:disable-next-line strict-export-declare-modifiers
   def apply(obj: String): String | Null = js.native
   def apply(obj: String, data: js.UndefOr[scala.Nothing], peekSize: Double): String | Null = js.native
   def apply(obj: String, data: Buffer): String | Null = js.native
@@ -44,4 +44,3 @@ object mod extends js.Object {
   def apply(obj: IncomingMessage, data: Buffer): String | Null = js.native
   def apply(obj: IncomingMessage, data: Buffer, peekSize: Double): String | Null = js.native
 }
-

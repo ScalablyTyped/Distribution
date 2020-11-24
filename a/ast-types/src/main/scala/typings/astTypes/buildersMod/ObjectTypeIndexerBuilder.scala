@@ -1,16 +1,17 @@
 package typings.astTypes.buildersMod
 
-import typings.astTypes.AnonCommentsIdKey
+import typings.astTypes.anon.IdKey
 import typings.astTypes.kindsMod.FlowTypeKind
 import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.namedTypesMod.namedTypes.ObjectTypeIndexer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObjectTypeIndexerBuilder extends js.Object {
+  
   def apply(id: IdentifierKind, key: FlowTypeKind, value: FlowTypeKind): ObjectTypeIndexer = js.native
-  def from(params: AnonCommentsIdKey): ObjectTypeIndexer = js.native
+  
+  def from(params: IdKey): ObjectTypeIndexer = js.native
 }
-

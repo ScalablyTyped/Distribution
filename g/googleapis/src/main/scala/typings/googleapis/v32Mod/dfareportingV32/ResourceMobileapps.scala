@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Mobileapps")
 @js.native
 class ResourceMobileapps protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.mobileApps.get
     * @desc Gets one mobile app by ID.
@@ -42,6 +44,7 @@ class ResourceMobileapps protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMobileApp]
   ): Unit = js.native
+  
   /**
     * dfareporting.mobileApps.list
     * @desc Retrieves list of available mobile apps.
@@ -76,4 +79,3 @@ class ResourceMobileapps protected () extends js.Object {
     callback: BodyResponseCallback[SchemaMobileAppsListResponse]
   ): Unit = js.native
 }
-

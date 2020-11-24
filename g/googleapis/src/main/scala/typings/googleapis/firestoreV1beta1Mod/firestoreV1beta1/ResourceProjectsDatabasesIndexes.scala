@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firestore/v1beta1", "firestore_v1beta1.Resource$Projects$Databases$Indexes")
 @js.native
 class ResourceProjectsDatabasesIndexes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * firestore.projects.databases.indexes.create
     * @desc Creates the specified index. A newly created index's initial state
@@ -53,6 +55,7 @@ class ResourceProjectsDatabasesIndexes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.indexes.delete
     * @desc Deletes an index.
@@ -81,6 +84,7 @@ class ResourceProjectsDatabasesIndexes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.indexes.get
     * @desc Gets an index.
@@ -112,6 +116,7 @@ class ResourceProjectsDatabasesIndexes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta1Index]
   ): Unit = js.native
+  
   /**
     * firestore.projects.databases.indexes.list
     * @desc Lists the indexes that match the specified filters.
@@ -147,4 +152,3 @@ class ResourceProjectsDatabasesIndexes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta1ListIndexesResponse]
   ): Unit = js.native
 }
-

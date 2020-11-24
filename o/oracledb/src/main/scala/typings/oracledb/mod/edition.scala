@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sets the name used for Edition-Based Redefinition by connections.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "edition")
 @js.native
 object edition extends TopLevel[String]
-

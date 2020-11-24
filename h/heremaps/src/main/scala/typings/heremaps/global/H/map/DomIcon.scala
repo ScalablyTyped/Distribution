@@ -4,7 +4,7 @@ import typings.heremaps.H.map.DomIcon.Options
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A visual representation of the H.map.DomMarker.
@@ -23,4 +23,3 @@ class DomIcon protected ()
   def this(element: String, opt_options: Options) = this()
   def this(element: Element, opt_options: Options) = this()
 }
-

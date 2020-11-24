@@ -3,28 +3,32 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UploadCollection extends Control {
+  
   /**
     * Adds some headerParameter to the aggregation <code>headerParameters</code>.
     * @param oHeaderParameter the headerParameter to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addHeaderParameter(oHeaderParameter: UploadCollectionParameter): UploadCollection = js.native
+  
   /**
     * Adds some item to the aggregation <code>items</code>.
     * @param oItem the item to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addItem(oItem: UploadCollectionItem): UploadCollection = js.native
+  
   /**
     * Adds some parameter to the aggregation <code>parameters</code>.
     * @param oParameter the parameter to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addParameter(oParameter: UploadCollectionParameter): UploadCollection = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>beforeUploadStarts</code> event of this
     * <code>sap.m.UploadCollection</code>.When called, the context of the event handler (its
@@ -40,6 +44,7 @@ trait UploadCollection extends Control {
     */
   def attachBeforeUploadStarts(oData: js.Any, fnFunction: js.Any): UploadCollection = js.native
   def attachBeforeUploadStarts(oData: js.Any, fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>change</code> event of this
     * <code>sap.m.UploadCollection</code>.When called, the context of the event handler (its
@@ -57,6 +62,7 @@ trait UploadCollection extends Control {
     */
   def attachChange(oData: js.Any, fnFunction: js.Any): UploadCollection = js.native
   def attachChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>fileDeleted</code> event of this
     * <code>sap.m.UploadCollection</code>.When called, the context of the event handler (its
@@ -72,6 +78,7 @@ trait UploadCollection extends Control {
     */
   def attachFileDeleted(oData: js.Any, fnFunction: js.Any): UploadCollection = js.native
   def attachFileDeleted(oData: js.Any, fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>fileRenamed</code> event of this
     * <code>sap.m.UploadCollection</code>.When called, the context of the event handler (its
@@ -87,6 +94,7 @@ trait UploadCollection extends Control {
     */
   def attachFileRenamed(oData: js.Any, fnFunction: js.Any): UploadCollection = js.native
   def attachFileRenamed(oData: js.Any, fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>fileSizeExceed</code> event of this
     * <code>sap.m.UploadCollection</code>.When called, the context of the event handler (its
@@ -103,6 +111,7 @@ trait UploadCollection extends Control {
     */
   def attachFileSizeExceed(oData: js.Any, fnFunction: js.Any): UploadCollection = js.native
   def attachFileSizeExceed(oData: js.Any, fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>filenameLengthExceed</code> event of
     * this <code>sap.m.UploadCollection</code>.When called, the context of the event handler (its
@@ -119,6 +128,7 @@ trait UploadCollection extends Control {
     */
   def attachFilenameLengthExceed(oData: js.Any, fnFunction: js.Any): UploadCollection = js.native
   def attachFilenameLengthExceed(oData: js.Any, fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>selectionChange</code> event of this
     * <code>sap.m.UploadCollection</code>.When called, the context of the event handler (its
@@ -135,6 +145,7 @@ trait UploadCollection extends Control {
     */
   def attachSelectionChange(oData: js.Any, fnFunction: js.Any): UploadCollection = js.native
   def attachSelectionChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>typeMissmatch</code> event of this
     * <code>sap.m.UploadCollection</code>.When called, the context of the event handler (its
@@ -151,6 +162,7 @@ trait UploadCollection extends Control {
     */
   def attachTypeMissmatch(oData: js.Any, fnFunction: js.Any): UploadCollection = js.native
   def attachTypeMissmatch(oData: js.Any, fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>uploadComplete</code> event of this
     * <code>sap.m.UploadCollection</code>.When called, the context of the event handler (its
@@ -166,6 +178,7 @@ trait UploadCollection extends Control {
     */
   def attachUploadComplete(oData: js.Any, fnFunction: js.Any): UploadCollection = js.native
   def attachUploadComplete(oData: js.Any, fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>uploadTerminated</code> event of this
     * <code>sap.m.UploadCollection</code>.When called, the context of the event handler (its
@@ -181,6 +194,7 @@ trait UploadCollection extends Control {
     */
   def attachUploadTerminated(oData: js.Any, fnFunction: js.Any): UploadCollection = js.native
   def attachUploadTerminated(oData: js.Any, fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Binds aggregation <code>items</code> to model data.See {@link
     * sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -189,27 +203,32 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def bindItems(oBindingInfo: js.Any): UploadCollection = js.native
+  
   /**
     * Destroys all the headerParameters in the aggregation <code>headerParameters</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyHeaderParameters(): UploadCollection = js.native
+  
   /**
     * Destroys all the items in the aggregation <code>items</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyItems(): UploadCollection = js.native
+  
   /**
     * Destroys all the parameters in the aggregation <code>parameters</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyParameters(): UploadCollection = js.native
+  
   /**
     * Destroys the toolbar in the aggregation <code>toolbar</code>.
     * @since 1.34
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyToolbar(): UploadCollection = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>beforeUploadStarts</code> event of
     * this <code>sap.m.UploadCollection</code>.The passed function and listener object must match the ones
@@ -219,6 +238,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachBeforeUploadStarts(fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>change</code> event of this
     * <code>sap.m.UploadCollection</code>.The passed function and listener object must match the ones used
@@ -228,6 +248,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachChange(fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>fileDeleted</code> event of this
     * <code>sap.m.UploadCollection</code>.The passed function and listener object must match the ones used
@@ -237,6 +258,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachFileDeleted(fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>fileRenamed</code> event of this
     * <code>sap.m.UploadCollection</code>.The passed function and listener object must match the ones used
@@ -246,6 +268,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachFileRenamed(fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>fileSizeExceed</code> event of this
     * <code>sap.m.UploadCollection</code>.The passed function and listener object must match the ones used
@@ -255,6 +278,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachFileSizeExceed(fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>filenameLengthExceed</code> event of
     * this <code>sap.m.UploadCollection</code>.The passed function and listener object must match the ones
@@ -264,6 +288,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachFilenameLengthExceed(fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>selectionChange</code> event of this
     * <code>sap.m.UploadCollection</code>.The passed function and listener object must match the ones used
@@ -274,6 +299,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSelectionChange(fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>typeMissmatch</code> event of this
     * <code>sap.m.UploadCollection</code>.The passed function and listener object must match the ones used
@@ -283,6 +309,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachTypeMissmatch(fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>uploadComplete</code> event of this
     * <code>sap.m.UploadCollection</code>.The passed function and listener object must match the ones used
@@ -292,6 +319,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachUploadComplete(fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>uploadTerminated</code> event of this
     * <code>sap.m.UploadCollection</code>.The passed function and listener object must match the ones used
@@ -301,6 +329,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachUploadTerminated(fnFunction: js.Any, oListener: js.Any): UploadCollection = js.native
+  
   /**
     * Downloads the given item.This function delegates to {sap.m.UploadCollectionItem.download}.
     * @since 1.36.0
@@ -309,6 +338,7 @@ trait UploadCollection extends Control {
     * @returns True if the download has started successfully. False if the download couldn't be started.
     */
   def downloadItem(uploadCollectionItem: UploadCollectionItem, askForLocation: Boolean): Boolean = js.native
+  
   /**
     * Fires event <code>beforeUploadStarts</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>fileName</code> of type <code>string</code>Specifies the name of the file
@@ -320,6 +350,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireBeforeUploadStarts(mArguments: js.Any): UploadCollection = js.native
+  
   /**
     * Fires event <code>change</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>documentId</code> of type <code>string</code>An unique Id of the attached
@@ -332,6 +363,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireChange(mArguments: js.Any): UploadCollection = js.native
+  
   /**
     * Fires event <code>fileDeleted</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>documentId</code> of type <code>string</code>An unique Id of the attached
@@ -342,6 +374,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireFileDeleted(mArguments: js.Any): UploadCollection = js.native
+  
   /**
     * Fires event <code>fileRenamed</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>documentId</code> of type <code>string</code>An unique Id of the attached
@@ -354,6 +387,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireFileRenamed(mArguments: js.Any): UploadCollection = js.native
+  
   /**
     * Fires event <code>fileSizeExceed</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>documentId</code> of type <code>string</code>An unique Id of the attached
@@ -367,6 +401,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireFileSizeExceed(mArguments: js.Any): UploadCollection = js.native
+  
   /**
     * Fires event <code>filenameLengthExceed</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>documentId</code> of type <code>string</code>An unique Id of the attached
@@ -378,6 +413,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireFilenameLengthExceed(mArguments: js.Any): UploadCollection = js.native
+  
   /**
     * Fires event <code>selectionChange</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>selectedItem</code> of type <code>sap.m.UploadCollectionItem</code>The item
@@ -392,6 +428,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSelectionChange(mArguments: js.Any): UploadCollection = js.native
+  
   /**
     * Fires event <code>typeMissmatch</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>documentId</code> of type <code>string</code>An unique Id of the attached
@@ -406,6 +443,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireTypeMissmatch(mArguments: js.Any): UploadCollection = js.native
+  
   /**
     * Fires event <code>uploadComplete</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>readyStateXHR</code> of type <code>string</code>Ready state XHR. This
@@ -429,6 +467,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireUploadComplete(mArguments: js.Any): UploadCollection = js.native
+  
   /**
     * Fires event <code>uploadTerminated</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>fileName</code> of type <code>string</code>Specifies the name of the file
@@ -439,6 +478,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireUploadTerminated(mArguments: js.Any): UploadCollection = js.native
+  
   /**
     * Gets current value of property <code>fileType</code>.Defines the allowed file types for the
     * upload.The chosen files will be checked against an array of file types.If at least one file does not
@@ -446,12 +486,14 @@ trait UploadCollection extends Control {
     * @returns Value of property <code>fileType</code>
     */
   def getFileType(): js.Array[String] = js.native
+  
   /**
     * Gets content of aggregation <code>headerParameters</code>.Specifies the header parameters for the
     * FileUploader that are submitted only with XHR requests.Header parameters are not supported by
     * Internet Explorer 8 and 9.
     */
   def getHeaderParameters(): js.Array[UploadCollectionParameter] = js.native
+  
   /**
     * Gets current value of property <code>instantUpload</code>.If false, no upload is triggered when a
     * file is selected. In addition, if a file was selected, a new FileUploader instance is created to
@@ -460,10 +502,12 @@ trait UploadCollection extends Control {
     * @returns Value of property <code>instantUpload</code>
     */
   def getInstantUpload(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>items</code>.Uploaded items.
     */
   def getItems(): js.Array[UploadCollectionItem] = js.native
+  
   /**
     * Gets current value of property <code>maximumFileSize</code>.Specifies a file size limit in megabytes
     * that prevents the upload if at least one file exceeds the limit.This property is not supported by
@@ -471,6 +515,7 @@ trait UploadCollection extends Control {
     * @returns Value of property <code>maximumFileSize</code>
     */
   def getMaximumFileSize(): Double = js.native
+  
   /**
     * Gets current value of property <code>maximumFilenameLength</code>.Specifies the maximum length of a
     * file name.If the maximum file name length is exceeded, the corresponding event
@@ -478,6 +523,7 @@ trait UploadCollection extends Control {
     * @returns Value of property <code>maximumFilenameLength</code>
     */
   def getMaximumFilenameLength(): Double = js.native
+  
   /**
     * Gets current value of property <code>mimeType</code>.Defines the allowed MIME types of files to be
     * uploaded.The chosen files will be checked against an array of MIME types.If at least one file does
@@ -486,6 +532,7 @@ trait UploadCollection extends Control {
     * @returns Value of property <code>mimeType</code>
     */
   def getMimeType(): js.Array[String] = js.native
+  
   /**
     * Gets current value of property <code>mode</code>.Defines the selection mode of the control (e.g.
     * None, SingleSelect, MultiSelect, SingleSelectLeft, SingleSelectMaster).Since the UploadCollection
@@ -497,6 +544,7 @@ trait UploadCollection extends Control {
     * @returns Value of property <code>mode</code>
     */
   def getMode(): ListMode = js.native
+  
   /**
     * Gets current value of property <code>multiple</code>.Lets the user select multiple files from the
     * same folder and then upload them.Internet Explorer 8 and 9 do not support this property.Please note
@@ -505,12 +553,14 @@ trait UploadCollection extends Control {
     * @returns Value of property <code>multiple</code>
     */
   def getMultiple(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>noDataText</code>.Allows you to set your own text for the 'No
     * data' label.
     * @returns Value of property <code>noDataText</code>
     */
   def getNoDataText(): String = js.native
+  
   /**
     * Gets current value of property <code>numberOfAttachmentsText</code>.Sets the title text in the
     * toolbar of the list of attachments.To show as well the number of attachments in brackets like the
@@ -521,11 +571,13 @@ trait UploadCollection extends Control {
     * @returns Value of property <code>numberOfAttachmentsText</code>
     */
   def getNumberOfAttachmentsText(): String = js.native
+  
   /**
     * Gets content of aggregation <code>parameters</code>.Specifies the parameters for the FileUploader
     * that are rendered as a hidden input field.
     */
   def getParameters(): js.Array[UploadCollectionParameter] = js.native
+  
   /**
     * Gets current value of property <code>sameFilenameAllowed</code>.Allows the user to use the same name
     * for a file when editing the file name. 'Same name' refers to an already existing file name in the
@@ -533,41 +585,48 @@ trait UploadCollection extends Control {
     * @returns Value of property <code>sameFilenameAllowed</code>
     */
   def getSameFilenameAllowed(): Boolean = js.native
+  
   /**
     * Returns selected UploadCollectionItem.
     * @since 1.34
     * @returns selected item
     */
   def getSelectedItem(): UploadCollectionItem = js.native
+  
   /**
     * Returns an array containing the selected UploadCollectionItems.
     * @since 1.34
     * @returns array with selected items
     */
   def getSelectedItems(): js.Array[UploadCollectionItem] = js.native
+  
   /**
     * Gets current value of property <code>showSeparators</code>.Defines whether separators are shown
     * between list items.Default value is <code>All</code>.
     * @returns Value of property <code>showSeparators</code>
     */
   def getShowSeparators(): ListSeparators = js.native
+  
   /**
     * Gets content of aggregation <code>toolbar</code>.Specifies the toolbar.
     * @since 1.34
     */
   def getToolbar(): OverflowToolbar = js.native
+  
   /**
     * Gets current value of property <code>uploadEnabled</code>.Enables the upload of a file.Default value
     * is <code>true</code>.
     * @returns Value of property <code>uploadEnabled</code>
     */
   def getUploadEnabled(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>uploadUrl</code>.Specifies the URL where the uploaded files
     * have to be stored.Default value is <code>../../../upload</code>.
     * @returns Value of property <code>uploadUrl</code>
     */
   def getUploadUrl(): String = js.native
+  
   /**
     * Checks for the provided <code>sap.m.UploadCollectionParameter</code> in the aggregation
     * <code>headerParameters</code>.and returns its index if found or -1 otherwise.
@@ -575,6 +634,7 @@ trait UploadCollection extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfHeaderParameter(oHeaderParameter: UploadCollectionParameter): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.m.UploadCollectionItem</code> in the aggregation
     * <code>items</code>.and returns its index if found or -1 otherwise.
@@ -582,6 +642,7 @@ trait UploadCollection extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfItem(oItem: UploadCollectionItem): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.m.UploadCollectionParameter</code> in the aggregation
     * <code>parameters</code>.and returns its index if found or -1 otherwise.
@@ -589,6 +650,7 @@ trait UploadCollection extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfParameter(oParameter: UploadCollectionParameter): Double = js.native
+  
   /**
     * Inserts a headerParameter into the aggregation <code>headerParameters</code>.
     * @param oHeaderParameter the headerParameter to insert; if empty, nothing is inserted
@@ -599,6 +661,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertHeaderParameter(oHeaderParameter: UploadCollectionParameter, iIndex: Double): UploadCollection = js.native
+  
   /**
     * Inserts a item into the aggregation <code>items</code>.
     * @param oItem the item to insert; if empty, nothing is inserted
@@ -609,6 +672,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertItem(oItem: UploadCollectionItem, iIndex: Double): UploadCollection = js.native
+  
   /**
     * Inserts a parameter into the aggregation <code>parameters</code>.
     * @param oParameter the parameter to insert; if empty, nothing is inserted
@@ -619,6 +683,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertParameter(oParameter: UploadCollectionParameter, iIndex: Double): UploadCollection = js.native
+  
   /**
     * Opens the FileUploader dialog. When an UploadCollectionItem is provided, this method can be used to
     * update a file with a new version.In this case, the upload progress can be sequenced using the
@@ -630,24 +695,28 @@ trait UploadCollection extends Control {
     * @returns To ensure method chaining, return the UploadCollection.
     */
   def openFileDialog(item: UploadCollectionItem): UploadCollection = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>headerParameters</code>.Additionally, it
     * unregisters them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllHeaderParameters(): js.Array[UploadCollectionParameter] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>items</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllItems(): js.Array[UploadCollectionItem] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>parameters</code>.Additionally, it unregisters
     * them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllParameters(): js.Array[UploadCollectionParameter] = js.native
+  
   def removeHeaderParameter(vHeaderParameter: String): UploadCollectionParameter = js.native
   /**
     * Removes a headerParameter from the aggregation <code>headerParameters</code>.
@@ -656,6 +725,7 @@ trait UploadCollection extends Control {
     */
   def removeHeaderParameter(vHeaderParameter: Double): UploadCollectionParameter = js.native
   def removeHeaderParameter(vHeaderParameter: UploadCollectionParameter): UploadCollectionParameter = js.native
+  
   def removeItem(vItem: String): UploadCollectionItem = js.native
   /**
     * Removes a item from the aggregation <code>items</code>.
@@ -664,6 +734,7 @@ trait UploadCollection extends Control {
     */
   def removeItem(vItem: Double): UploadCollectionItem = js.native
   def removeItem(vItem: UploadCollectionItem): UploadCollectionItem = js.native
+  
   def removeParameter(vParameter: String): UploadCollectionParameter = js.native
   /**
     * Removes a parameter from the aggregation <code>parameters</code>.
@@ -672,12 +743,14 @@ trait UploadCollection extends Control {
     */
   def removeParameter(vParameter: Double): UploadCollectionParameter = js.native
   def removeParameter(vParameter: UploadCollectionParameter): UploadCollectionParameter = js.native
+  
   /**
     * Select all items in "MultiSelection" mode.
     * @since 1.34
     * @returns The current UploadCollection
     */
   def selectAll(): UploadCollection = js.native
+  
   /**
     * Sets a new value for property <code>fileType</code>.Defines the allowed file types for the
     * upload.The chosen files will be checked against an array of file types.If at least one file does not
@@ -688,6 +761,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setFileType(sFileType: js.Array[String]): UploadCollection = js.native
+  
   /**
     * Sets a new value for property <code>instantUpload</code>.If false, no upload is triggered when a
     * file is selected. In addition, if a file was selected, a new FileUploader instance is created to
@@ -699,6 +773,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setInstantUpload(bInstantUpload: Boolean): UploadCollection = js.native
+  
   /**
     * Sets a new value for property <code>maximumFileSize</code>.Specifies a file size limit in megabytes
     * that prevents the upload if at least one file exceeds the limit.This property is not supported by
@@ -708,6 +783,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaximumFileSize(fMaximumFileSize: Double): UploadCollection = js.native
+  
   /**
     * Sets a new value for property <code>maximumFilenameLength</code>.Specifies the maximum length of a
     * file name.If the maximum file name length is exceeded, the corresponding event
@@ -717,6 +793,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaximumFilenameLength(iMaximumFilenameLength: Double): UploadCollection = js.native
+  
   /**
     * Sets a new value for property <code>mimeType</code>.Defines the allowed MIME types of files to be
     * uploaded.The chosen files will be checked against an array of MIME types.If at least one file does
@@ -727,6 +804,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMimeType(sMimeType: js.Array[String]): UploadCollection = js.native
+  
   /**
     * Sets a new value for property <code>mode</code>.Defines the selection mode of the control (e.g.
     * None, SingleSelect, MultiSelect, SingleSelectLeft, SingleSelectMaster).Since the UploadCollection
@@ -741,6 +819,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMode(sMode: ListMode): UploadCollection = js.native
+  
   /**
     * Sets a new value for property <code>multiple</code>.Lets the user select multiple files from the
     * same folder and then upload them.Internet Explorer 8 and 9 do not support this property.Please note
@@ -752,6 +831,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMultiple(bMultiple: Boolean): UploadCollection = js.native
+  
   /**
     * Sets a new value for property <code>noDataText</code>.Allows you to set your own text for the 'No
     * data' label.When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -760,6 +840,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNoDataText(sNoDataText: String): UploadCollection = js.native
+  
   /**
     * Sets a new value for property <code>numberOfAttachmentsText</code>.Sets the title text in the
     * toolbar of the list of attachments.To show as well the number of attachments in brackets like the
@@ -772,6 +853,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNumberOfAttachmentsText(sNumberOfAttachmentsText: String): UploadCollection = js.native
+  
   /**
     * Sets a new value for property <code>sameFilenameAllowed</code>.Allows the user to use the same name
     * for a file when editing the file name. 'Same name' refers to an already existing file name in the
@@ -781,6 +863,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSameFilenameAllowed(bSameFilenameAllowed: Boolean): UploadCollection = js.native
+  
   /**
     * Selects or deselects the given list item.
     * @since 1.34
@@ -789,6 +872,7 @@ trait UploadCollection extends Control {
     * @returns The current UploadCollection
     */
   def setSelectedItem(uploadCollectionItem: UploadCollectionItem, select: Boolean): UploadCollection = js.native
+  
   /**
     * Sets a UploadCollectionItem to be selected by id. In single mode, the method removes the previous
     * selection.
@@ -798,6 +882,7 @@ trait UploadCollection extends Control {
     * @returns The current UploadCollection
     */
   def setSelectedItemById(id: String, select: Boolean): UploadCollection = js.native
+  
   /**
     * Sets a new value for property <code>showSeparators</code>.Defines whether separators are shown
     * between list items.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -806,6 +891,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowSeparators(sShowSeparators: ListSeparators): UploadCollection = js.native
+  
   /**
     * Sets the aggregated <code>toolbar</code>.
     * @since 1.34
@@ -813,6 +899,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setToolbar(oToolbar: OverflowToolbar): UploadCollection = js.native
+  
   /**
     * Sets a new value for property <code>uploadEnabled</code>.Enables the upload of a file.When called
     * with a value of <code>null</code> or <code>undefined</code>, the default value of the property will
@@ -821,6 +908,7 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setUploadEnabled(bUploadEnabled: Boolean): UploadCollection = js.native
+  
   /**
     * Sets a new value for property <code>uploadUrl</code>.Specifies the URL where the uploaded files have
     * to be stored.When called with a value of <code>null</code> or <code>undefined</code>, the default
@@ -829,15 +917,16 @@ trait UploadCollection extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setUploadUrl(sUploadUrl: String): UploadCollection = js.native
+  
   /**
     * Unbinds aggregation <code>items</code> from model data.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def unbindItems(): UploadCollection = js.native
+  
   /**
     * Starts the upload for all selected files.
     * @since 1.30
     */
   def upload(): Unit = js.native
 }
-

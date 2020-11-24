@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "directconnect.LinkAggregationGroup")
 @js.native
@@ -23,11 +23,11 @@ class LinkAggregationGroup protected ()
   def this(name: String, args: LinkAggregationGroupArgs) = this()
   def this(name: String, args: LinkAggregationGroupArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "directconnect.LinkAggregationGroup")
 @js.native
 object LinkAggregationGroup extends js.Object {
+  
   /**
     * Get an existing LinkAggregationGroup resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object LinkAggregationGroup extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.linkAggregationGroupMod.LinkAggregationGroup = js.native
   def get(name: String, id: Input[ID], state: LinkAggregationGroupState): typings.pulumiAws.linkAggregationGroupMod.LinkAggregationGroup = js.native
   def get(name: String, id: Input[ID], state: LinkAggregationGroupState, opts: CustomResourceOptions): typings.pulumiAws.linkAggregationGroupMod.LinkAggregationGroup = js.native
+  
   /**
     * Returns true if the given object is an instance of LinkAggregationGroup.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/linkAggregationGroup.LinkAggregationGroup */ Boolean = js.native
 }
-

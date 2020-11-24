@@ -2,11 +2,12 @@ package typings.luminoAlgorithm.arrayMod.ArrayExt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/array", "ArrayExt.rotate")
 @js.native
 object rotate extends js.Object {
+  
   /**
     * Rotate the elements of an array in-place.
     *
@@ -47,4 +48,3 @@ object rotate extends js.Object {
   def apply[T](array: MutableArrayLike[T], delta: Double, start: Double): Unit = js.native
   def apply[T](array: MutableArrayLike[T], delta: Double, start: Double, stop: Double): Unit = js.native
 }
-

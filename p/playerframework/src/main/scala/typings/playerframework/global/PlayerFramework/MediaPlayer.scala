@@ -3,7 +3,7 @@ package typings.playerframework.global.PlayerFramework
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -15,4 +15,3 @@ class MediaPlayer protected ()
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-

@@ -4,12 +4,11 @@ import typings.angular.mod.IPromise
 import typings.uiGrid.anon.CanvasHeightChanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IGridCoreApi[TEntity] extends js.Object {
-  // Events
-  var on: CanvasHeightChanged[TEntity] = js.native
+  
   // Methods
   /**
     * adds a row header column to the grid
@@ -21,6 +20,7 @@ trait IGridCoreApi[TEntity] extends js.Object {
   def addRowHeaderColumn(column: IColumnDefOf[TEntity], order: js.UndefOr[scala.Nothing], stopColumnBuild: Boolean): Unit = js.native
   def addRowHeaderColumn(column: IColumnDefOf[TEntity], order: Double): Unit = js.native
   def addRowHeaderColumn(column: IColumnDefOf[TEntity], order: Double, stopColumnBuild: Boolean): Unit = js.native
+  
   /**
     * add items to the grid menu.  Used by features
     * to add their menu items if they are enabled, can also be used by
@@ -34,6 +34,7 @@ trait IGridCoreApi[TEntity] extends js.Object {
     * which is provided when you want to remove an item.  The id should be unique.
     */
   def addToGridMenu(grid: IGridInstanceOf[TEntity], items: js.Array[IMenuItem]): Unit = js.native
+  
   /**
     * Clears all filters and optionally refreshes the visible rows.
     * @param {boolean} [refreshRows=true] Defaults to true.
@@ -53,6 +54,7 @@ trait IGridCoreApi[TEntity] extends js.Object {
   def clearAllFilters(refreshRows: Boolean, clearConditions: js.UndefOr[scala.Nothing], clearFlags: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
   def clearAllFilters(refreshRows: Boolean, clearConditions: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
   def clearAllFilters(refreshRows: Boolean, clearConditions: Boolean, clearFlags: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
+  
   /**
     * Clears any override on visibility for the row so that it returns to
     * using normal filtering and other visibility calculations.
@@ -62,11 +64,13 @@ trait IGridCoreApi[TEntity] extends js.Object {
     * @param {TEntity} rowEntity gridOptions.data[] array instance
     */
   def clearRowInvisible(rowEntity: TEntity): Unit = js.native
+  
   /**
     * Returns all visible rows
     * @returns {Array<IGridRow>} an array of gridRow
     */
   def getVisibleRows(): js.Array[IGridRowOf[TEntity]] = js.native
+  
   /**
     * Trigger a grid resize, normally this would be picked
     * up by a watch on window size, but in some circumstances it is necessary
@@ -74,6 +78,7 @@ trait IGridCoreApi[TEntity] extends js.Object {
     * @returns {ng.IPromise<any>} promise that is resolved when render completes?
     */
   def handleWindowResize(): Unit = js.native
+  
   /**
     * Notify the grid that a data or config change has occurred,
     * where that change isn't something the grid was otherwise noticing.  This
@@ -85,14 +90,20 @@ trait IGridCoreApi[TEntity] extends js.Object {
     *        us which refreshes to fire.
     */
   def notifyDataChange(`type`: String): Unit = js.native
+  
+  // Events
+  var on: CanvasHeightChanged[TEntity] = js.native
+  
   /**
     * queues a grid refresh, a way of debouncing all the refreshes we might otherwise issue
     */
   def queueGridRefresh(): Unit = js.native
+  
   /**
     * queues a grid refreshCanvas, a way of debouncing all the refreshes we might otherwise issue
     */
   def queueRefresh(): Unit = js.native
+  
   /**
     * Refresh the rendered grid on screen.
     *
@@ -100,11 +111,13 @@ trait IGridCoreApi[TEntity] extends js.Object {
     */
   def refresh(): IPromise[_] = js.native
   def refresh(rowsAltered: Boolean): IPromise[_] = js.native
+  
   /**
     * Refresh the rendered rows on screen?  Note: not functional at present
     * @returns {ng.IPromise<any>} promise that is resolved when render completes?
     */
   def refreshRows(): IPromise[Boolean] = js.native
+  
   /**
     * Register a "columns processor" function. When the columns are updated,
     * the grid calls each registered "columns processor", which has a chance
@@ -122,6 +135,7 @@ trait IGridCoreApi[TEntity] extends js.Object {
     * selectable rows at 500, pagination at 900 (pagination will generally want to be last)
     */
   def registerColumnsProcessor(processorFunction: IColumnProcessor[TEntity], priority: Double): Unit = js.native
+  
   /**
     * Register a "rows processor" function. When the rows are updated,
     * the grid calls each registered "rows processor", which has a chance
@@ -139,6 +153,7 @@ trait IGridCoreApi[TEntity] extends js.Object {
     * selectable rows at 500, pagination at 900 (pagination will generally want to be last)
     */
   def registerRowsProcessor(rowProcessor: IRowProcessor[TEntity], priority: Double): Unit = js.native
+  
   /**
     * Scroll the grid such that the specified
     * row and column is in view
@@ -147,6 +162,7 @@ trait IGridCoreApi[TEntity] extends js.Object {
     * @returns {ng.IPromise<any>} a promise that is resolved after any scrolling is finished
     */
   def scrollTo(entity: TEntity, colDef: IColumnDefOf[TEntity]): Unit = js.native
+  
    /*A row entity can be anything?*/ /**
     * Scrolls the grid to make a certain row and column combo visible,
     * in the case that it is not completely visible on the screen already.
@@ -155,6 +171,7 @@ trait IGridCoreApi[TEntity] extends js.Object {
     * @returns {ng.IPromise<any>} a promise that is resolved when scrolling is complete
     */
   def scrollToIfNecessary(gridRow: IGridRowOf[TEntity], gridCol: IGridColumnOf[TEntity]): Unit = js.native
+  
   /**
     * A null handling method that can be used when building custom sort
     * functions
@@ -165,4 +182,3 @@ trait IGridCoreApi[TEntity] extends js.Object {
     */
   def sortHandleNulls(a: js.Any, b: js.Any): Double = js.native
 }
-

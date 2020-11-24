@@ -1,30 +1,39 @@
 package typings.astTypes.namedTypesMod.namedTypes
 
 import org.scalablytyped.runtime.TopLevel
+import typings.astTypes.kindsMod.CommentKind
 import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.kindsMod.NodeKind
 import typings.astTypes.kindsMod.PatternKind
 import typings.astTypes.kindsMod.PrintableKind
+import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.typesMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/namedTypes.namedTypes.Pattern, 'type'> ]: ast-types.ast-types/gen/namedTypes.namedTypes.Pattern[P]} */ trait PropertyPattern
+/* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Pattern, 'type'> */
+@js.native
+trait PropertyPattern
   extends ASTNode
      with NodeKind
      with PatternKind
      with PrintableKind {
-  var computed: js.UndefOr[Boolean] = js.undefined
-  var key: LiteralKind | IdentifierKind | ExpressionKind
-  var pattern: PatternKind
-  var `type`: typings.astTypes.astTypesStrings.PropertyPattern
+  
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  
+  var computed: js.UndefOr[Boolean] = js.native
+  
+  var key: LiteralKind | IdentifierKind | ExpressionKind = js.native
+  
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  
+  var pattern: PatternKind = js.native
+  
+  var `type`: typings.astTypes.astTypesStrings.PropertyPattern = js.native
 }
-
 @JSImport("ast-types/gen/namedTypes", "namedTypes.PropertyPattern")
 @js.native
 object PropertyPattern extends TopLevel[Type[PropertyPattern]]
-

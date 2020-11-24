@@ -2,12 +2,12 @@ package typings.winrt.Windows.Media.MediaProperties
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AudioEncodingProperties extends IAudioEncodingProperties
-
 object AudioEncodingProperties {
+  
   @scala.inline
   def apply(
     bitrate: Double,
@@ -23,4 +23,3 @@ object AudioEncodingProperties {
     __obj.asInstanceOf[AudioEncodingProperties]
   }
 }
-

@@ -11,7 +11,7 @@ import typings.jpm.jpmStrings.pageshow
 import typings.jpm.jpmStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Open, manipulate, and access tabs, and receive tab events
@@ -19,8 +19,11 @@ import scala.scalajs.js.annotation._
 @JSImport("sdk/tabs", JSImport.Namespace)
 @js.native
 object tabsMod extends js.Object {
+  
   val activeTab: Tab = js.native
+  
   val length: Double = js.native
+  
   @JSName("on")
   def on_activate(event: activate, handler: js.Function1[/* tab */ Tab, _]): Unit = js.native
   @JSName("on")
@@ -35,7 +38,7 @@ object tabsMod extends js.Object {
   def on_pageshow(event: pageshow, handler: js.Function1[/* tab */ Tab, _]): Unit = js.native
   @JSName("on")
   def on_ready(event: ready, handler: js.Function1[/* tab */ Tab, _]): Unit = js.native
+  
   def open(options: String): Unit = js.native
   def open(options: InBackground): Unit = js.native
 }
-

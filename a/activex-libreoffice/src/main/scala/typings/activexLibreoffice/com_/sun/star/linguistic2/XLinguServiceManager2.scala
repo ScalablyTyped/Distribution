@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the {@link LinguServiceManager} service to implement.
@@ -19,8 +19,8 @@ trait XLinguServiceManager2
   extends XLinguServiceManager
      with XAvailableLocales
      with XComponent
-
 object XLinguServiceManager2 {
+  
   @scala.inline
   def apply(
     Hyphenator: XHyphenator,
@@ -46,4 +46,3 @@ object XLinguServiceManager2 {
     __obj.asInstanceOf[XLinguServiceManager2]
   }
 }
-

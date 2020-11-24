@@ -5,12 +5,14 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StateStore extends js.Object {
+  
   def store(req: Request_[ParamsDictionary, _, _, Query], callback: StateStoreStoreCallback): Unit = js.native
   def store(req: Request_[ParamsDictionary, _, _, Query], meta: Metadata, callback: StateStoreStoreCallback): Unit = js.native
+  
   def verify(req: Request_[ParamsDictionary, _, _, Query], state: String, callback: StateStoreVerifyCallback): Unit = js.native
   def verify(
     req: Request_[ParamsDictionary, _, _, Query],
@@ -19,4 +21,3 @@ trait StateStore extends js.Object {
     callback: StateStoreVerifyCallback
   ): Unit = js.native
 }
-

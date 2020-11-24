@@ -4,9 +4,34 @@ import typings.luminoDragdrop.mod.DropAction
 import typings.luminoDragdrop.mod.SupportedActions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object luminoDragdropStrings {
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
+  
+  @scala.inline
+  def `copy-link`: `copy-link` = "copy-link".asInstanceOf[`copy-link`]
+  
+  @scala.inline
+  def `copy-move`: `copy-move` = "copy-move".asInstanceOf[`copy-move`]
+  
+  @scala.inline
+  def link: link = "link".asInstanceOf[link]
+  
+  @scala.inline
+  def `link-move`: `link-move` = "link-move".asInstanceOf[`link-move`]
+  
+  @scala.inline
+  def move: move = "move".asInstanceOf[move]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
   @js.native
   sealed trait all extends SupportedActions
   
@@ -38,22 +63,4 @@ object luminoDragdropStrings {
   sealed trait none
     extends DropAction
        with SupportedActions
-  
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def copy: copy = "copy".asInstanceOf[copy]
-  @scala.inline
-  def `copy-link`: `copy-link` = "copy-link".asInstanceOf[`copy-link`]
-  @scala.inline
-  def `copy-move`: `copy-move` = "copy-move".asInstanceOf[`copy-move`]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
-  @scala.inline
-  def `link-move`: `link-move` = "link-move".asInstanceOf[`link-move`]
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
 }
-

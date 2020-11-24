@@ -4,16 +4,18 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SelectDialog extends Control {
+  
   /**
     * Adds some item to the aggregation <code>items</code>.
     * @param oItem the item to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addItem(oItem: ListItemBase): SelectDialog = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>cancel</code> event of this
     * <code>sap.m.SelectDialog</code>.When called, the context of the event handler (its
@@ -29,6 +31,7 @@ trait SelectDialog extends Control {
     */
   def attachCancel(oData: js.Any, fnFunction: js.Any): SelectDialog = js.native
   def attachCancel(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SelectDialog = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>confirm</code> event of this
     * <code>sap.m.SelectDialog</code>.When called, the context of the event handler (its
@@ -45,6 +48,7 @@ trait SelectDialog extends Control {
     */
   def attachConfirm(oData: js.Any, fnFunction: js.Any): SelectDialog = js.native
   def attachConfirm(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SelectDialog = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>liveChange</code> event of this
     * <code>sap.m.SelectDialog</code>.When called, the context of the event handler (its
@@ -60,6 +64,7 @@ trait SelectDialog extends Control {
     */
   def attachLiveChange(oData: js.Any, fnFunction: js.Any): SelectDialog = js.native
   def attachLiveChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SelectDialog = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>search</code> event of this
     * <code>sap.m.SelectDialog</code>.When called, the context of the event handler (its
@@ -75,11 +80,13 @@ trait SelectDialog extends Control {
     */
   def attachSearch(oData: js.Any, fnFunction: js.Any): SelectDialog = js.native
   def attachSearch(oData: js.Any, fnFunction: js.Any, oListener: js.Any): SelectDialog = js.native
+  
   /**
     * Destroys all the items in the aggregation <code>items</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyItems(): SelectDialog = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>cancel</code> event of this
     * <code>sap.m.SelectDialog</code>.The passed function and listener object must match the ones used for
@@ -89,6 +96,7 @@ trait SelectDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachCancel(fnFunction: js.Any, oListener: js.Any): SelectDialog = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>confirm</code> event of this
     * <code>sap.m.SelectDialog</code>.The passed function and listener object must match the ones used for
@@ -98,6 +106,7 @@ trait SelectDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachConfirm(fnFunction: js.Any, oListener: js.Any): SelectDialog = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>liveChange</code> event of this
     * <code>sap.m.SelectDialog</code>.The passed function and listener object must match the ones used for
@@ -107,6 +116,7 @@ trait SelectDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachLiveChange(fnFunction: js.Any, oListener: js.Any): SelectDialog = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>search</code> event of this
     * <code>sap.m.SelectDialog</code>.The passed function and listener object must match the ones used for
@@ -116,12 +126,14 @@ trait SelectDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSearch(fnFunction: js.Any, oListener: js.Any): SelectDialog = js.native
+  
   /**
     * Fires event <code>cancel</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireCancel(mArguments: js.Any): SelectDialog = js.native
+  
   /**
     * Fires event <code>confirm</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>selectedItem</code> of type <code>sap.m.StandardListItem</code>Returns the
@@ -140,6 +152,7 @@ trait SelectDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireConfirm(mArguments: js.Any): SelectDialog = js.native
+  
   /**
     * Fires event <code>liveChange</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>value</code> of type <code>string</code>The value to search for, which can
@@ -150,6 +163,7 @@ trait SelectDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireLiveChange(mArguments: js.Any): SelectDialog = js.native
+  
   /**
     * Fires event <code>search</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>value</code> of type <code>string</code>The value entered in the
@@ -160,21 +174,25 @@ trait SelectDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSearch(mArguments: js.Any): SelectDialog = js.native
+  
   /**
     * Get the internal Dialog's contentHeight property {@link sap.m.Dialog}
     * @returns sHeight The content width of the internal dialog
     */
   def getContentHeight(): js.Any = js.native
+  
   /**
     * Get the internal Dialog's contentWidth property {@link sap.m.Dialog}
     * @returns sWidth The content width of the internal dialog
     */
   def getContentWidth(): js.Any = js.native
+  
   /**
     * Forward method to the inner dialog: getDomRef
     * @returns The Element's DOM Element sub DOM Element or null
     */
   def getDomRef(): Element = js.native
+  
   /**
     * Gets current value of property <code>growingThreshold</code>.Determines the number of items
     * initially displayed in the list. Also defines the number of items to be requested from the model for
@@ -182,22 +200,26 @@ trait SelectDialog extends Control {
     * @returns Value of property <code>growingThreshold</code>
     */
   def getGrowingThreshold(): Double = js.native
+  
   /**
     * Gets content of aggregation <code>items</code>.The items of the list shown in the search dialog. It
     * is recommended to use a StandardListItem for the dialog but other combinations are also possible.
     */
   def getItems(): js.Array[ListItemBase] = js.native
+  
   /**
     * Gets current value of property <code>multiSelect</code>.Determines if the user can select several
     * options from the listDefault value is <code>false</code>.
     * @returns Value of property <code>multiSelect</code>
     */
   def getMultiSelect(): Boolean = js.native
+  
   /**
     * Get the internal List's no data text property
     * @returns the current no data text
     */
   def getNoDataText(): String = js.native
+  
   /**
     * Gets current value of property <code>rememberSelections</code>.This flag controls whether the dialog
     * clears the selection after the confirm event has been fired. If the dialog needs to be opened
@@ -207,17 +229,20 @@ trait SelectDialog extends Control {
     * @returns Value of property <code>rememberSelections</code>
     */
   def getRememberSelections(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>title</code>.Determines the title text that appears in the
     * dialog header
     * @returns Value of property <code>title</code>
     */
   def getTitle(): String = js.native
+  
   /**
     * Forward method to the inner dialog: hasStyleClass
     * @returns true if the class is set, false otherwise
     */
   def hasStyleClass(): Boolean = js.native
+  
   /**
     * Checks for the provided <code>sap.m.ListItemBase</code> in the aggregation <code>items</code>.and
     * returns its index if found or -1 otherwise.
@@ -225,6 +250,7 @@ trait SelectDialog extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfItem(oItem: ListItemBase): Double = js.native
+  
   /**
     * Inserts a item into the aggregation <code>items</code>.
     * @param oItem the item to insert; if empty, nothing is inserted
@@ -235,18 +261,21 @@ trait SelectDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertItem(oItem: ListItemBase, iIndex: Double): SelectDialog = js.native
+  
   /**
     * Opens the internal dialog with a searchfield and a list.
     * @param sSearchValue A value for the search can be passed to match with the filter applied to the
     * list binding.
     */
   def open(sSearchValue: String): SelectDialog = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>items</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllItems(): js.Array[ListItemBase] = js.native
+  
   def removeItem(vItem: String): ListItemBase = js.native
   /**
     * Removes a item from the aggregation <code>items</code>.
@@ -255,41 +284,48 @@ trait SelectDialog extends Control {
     */
   def removeItem(vItem: Double): ListItemBase = js.native
   def removeItem(vItem: ListItemBase): ListItemBase = js.native
+  
   /**
     * Forward method to the inner dialog: removeStyleClass
     * @returns this pointer for chaining
     */
   def removeStyleClass(): SelectDialog = js.native
+  
   /**
     * Set the internal Dialog's contentHeight property {@link sap.m.Dialog}
     * @param sHeight The new content width value for the dialog
     * @returns this pointer for chaining
     */
   def setContentHeight(sHeight: js.Any): SelectDialog = js.native
+  
   /**
     * Set the internal Dialog's contentWidth property {@link sap.m.Dialog}
     * @param sWidth The new content width value for the dialog
     * @returns this pointer for chaining
     */
   def setContentWidth(sWidth: js.Any): SelectDialog = js.native
+  
   /**
     * Sets the growing threshold to the internal list
     * @param iValue Value for the list's growing threshold.
     * @returns this pointer for chaining
     */
   def setGrowingThreshold(iValue: Double): SelectDialog = js.native
+  
   /**
     * Enable/Disable multi selection mode.
     * @param bMulti Flag for multi selection mode
     * @returns this pointer for chaining
     */
   def setMultiSelect(bMulti: Boolean): SelectDialog = js.native
+  
   /**
     * Set the internal List's no data text property
     * @param sNoDataText The no data text for the list
     * @returns this pointer for chaining
     */
   def setNoDataText(sNoDataText: String): SelectDialog = js.native
+  
   /**
     * Sets a new value for property <code>rememberSelections</code>.This flag controls whether the dialog
     * clears the selection after the confirm event has been fired. If the dialog needs to be opened
@@ -301,16 +337,17 @@ trait SelectDialog extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setRememberSelections(bRememberSelections: Boolean): SelectDialog = js.native
+  
   /**
     * Set the title of the internal dialog
     * @param sTitle The title text for the dialog
     * @returns this pointer for chaining
     */
   def setTitle(sTitle: String): SelectDialog = js.native
+  
   /**
     * Forward method to the inner dialog: toggleStyleClass
     * @returns this pointer for chaining
     */
   def toggleStyleClass(): SelectDialog = js.native
 }
-

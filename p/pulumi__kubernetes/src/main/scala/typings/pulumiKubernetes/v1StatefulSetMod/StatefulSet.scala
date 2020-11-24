@@ -11,7 +11,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes/apps/v1/statefulSet", "StatefulSet")
 @js.native
@@ -27,29 +27,34 @@ class StatefulSet protected () extends CustomResource {
   def this(name: String, args: StatefulSetArgs) = this()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: StatefulSetArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
   val apiVersion: Output_[appsSlashv1] = js.native
+  
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val kind: Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.StatefulSet] = js.native
+  
   val metadata: Output_[ObjectMeta] = js.native
+  
   /**
     * Spec defines the desired identities of pods in this set.
     */
   val spec: Output_[StatefulSetSpec] = js.native
+  
   /**
     * Status is the current status of Pods in this StatefulSet. This data may be out of date by some window of time.
     */
   val status: Output_[StatefulSetStatus] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/kubernetes/apps/v1/statefulSet", "StatefulSet")
 @js.native
 object StatefulSet extends js.Object {
+  
   /**
     * Get an existing StatefulSet resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -60,10 +65,10 @@ object StatefulSet extends js.Object {
     */
   def get(name: String, id: Input[ID]): StatefulSet = js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): StatefulSet = js.native
+  
   /**
     * Returns true if the given object is an instance of StatefulSet.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/statefulSet.StatefulSet */ Boolean = js.native
 }
-

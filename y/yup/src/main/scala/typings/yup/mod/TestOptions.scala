@@ -3,11 +3,10 @@ package typings.yup.mod
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.yup.mod.NonExclusiveTestOptions[P]
-  - typings.yup.mod.ExclusiveTestOptions[P]
+  - typings.yup.mod.NonExclusiveTestOptions[P, C]
+  - typings.yup.mod.ExclusiveTestOptions[P, C]
 */
-trait TestOptions[P /* <: Record[String, _] */] extends js.Object
-
+trait TestOptions[P /* <: Record[String, _] */, C] extends js.Object

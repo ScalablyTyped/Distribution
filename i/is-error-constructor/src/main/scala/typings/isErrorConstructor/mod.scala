@@ -3,16 +3,12 @@ package typings.isErrorConstructor
 import typings.isErrorConstructor.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("is-error-constructor", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function isErrorConstructor(value: unknown): value is ErrorConstructor;
-  // export = isErrorConstructor;
-  @JSName("default")
-  var default_Original: Call = js.native
+  
   /**
   	Check if a value is an error constructor.
   	@example
@@ -31,6 +27,7 @@ object mod extends js.Object {
   	```
   	*/
   def apply(value: js.Any): /* is std.ErrorConstructor */ Boolean = js.native
+  
   /**
   	Check if a value is an error constructor.
   	@example
@@ -52,5 +49,9 @@ object mod extends js.Object {
   // declare function isErrorConstructor(value: unknown): value is ErrorConstructor;
   // export = isErrorConstructor;
   def default(value: js.Any): /* is std.ErrorConstructor */ Boolean = js.native
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function isErrorConstructor(value: unknown): value is ErrorConstructor;
+  // export = isErrorConstructor;
+  @JSName("default")
+  var default_Original: Call = js.native
 }
-

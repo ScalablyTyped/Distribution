@@ -2,10 +2,12 @@ package typings.postcssCustomProperties
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type CustomPropertiesPlugin = typings.postcss.mod.Plugin_[typings.postcssCustomProperties.mod.Options] with typings.postcssCustomProperties.anon.Process
+  
   /**
     * Sources where Custom Properties can be imported from or export to,
     * which might be CSS, JS, and JSON files, functions, and directly passed objects
@@ -14,6 +16,7 @@ package object mod {
     /* customProperties */ typings.postcssCustomProperties.mod.CustomPropertiesObject, 
     js.Any
   ]) | js.Promise[typings.postcssCustomProperties.mod.CustomPropertiesObject]
+  
   /**
     * Sources where Custom Properties can be imported from or export to,
     * which might be CSS, JS, and JSON files, functions, and directly passed objects

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Targetsslproxies")
 @js.native
 class ResourceTargetsslproxies protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.targetSslProxies.delete
     * @desc Deletes the specified TargetSslProxy resource.
@@ -43,6 +45,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetSslProxies.get
     * @desc Returns the specified TargetSslProxy resource. Gets a list of
@@ -73,6 +76,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetSslProxy]
   ): Unit = js.native
+  
   /**
     * compute.targetSslProxies.insert
     * @desc Creates a TargetSslProxy resource in the specified project using
@@ -104,6 +108,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetSslProxies.list
     * @desc Retrieves the list of TargetSslProxy resources available to the
@@ -140,6 +145,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTargetSslProxyList]
   ): Unit = js.native
+  
   /**
     * compute.targetSslProxies.setBackendService
     * @desc Changes the BackendService for TargetSslProxy.
@@ -174,6 +180,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetSslProxies.setProxyHeader
     * @desc Changes the ProxyHeaderType for TargetSslProxy.
@@ -208,6 +215,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetSslProxies.setSslCertificates
     * @desc Changes SslCertificates for TargetSslProxy.
@@ -242,6 +250,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetSslProxies.setSslPolicy
     * @desc Sets the SSL policy for TargetSslProxy. The SSL policy specifies
@@ -279,6 +288,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.targetSslProxies.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -313,4 +323,3 @@ class ResourceTargetsslproxies protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

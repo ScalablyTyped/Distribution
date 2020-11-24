@@ -2,11 +2,12 @@ package typings.openui5.global.sap.m
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.MessageToast")
 @js.native
 object MessageToast extends js.Object {
+  
   /**
     * Creates and displays a simple message toast notification message with the given text, and optionally
     * other options.The only mandatory parameter is <code>sMessage</code>.
@@ -17,4 +18,3 @@ object MessageToast extends js.Object {
   def show(sMessage: String): Unit = js.native
   def show(sMessage: String, mOptions: js.Any): Unit = js.native
 }
-

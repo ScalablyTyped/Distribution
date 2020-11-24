@@ -4,14 +4,11 @@ import typings.jquery.JQuery.Event
 import typings.jquery.JQueryXHR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PjaxStatic extends js.Object {
-  /**
-    * PJAX default settings.
-    */
-  var defaults: PjaxSettings = js.native
+  
   /**
     * Loads a URL with ajax, puts the response body inside a container, then pushState()'s the loaded URL.
     * Works just like $.ajax in that it accepts a jQuery ajax settings object (with keys like url, type, data, etc).
@@ -22,6 +19,7 @@ trait PjaxStatic extends js.Object {
     */
   def apply(): JQueryXHR = js.native
   def apply(options: PjaxSettings): JQueryXHR = js.native
+  
   /**
     * PJAX on click handler.
     * @param event A jQuery click event.
@@ -35,20 +33,29 @@ trait PjaxStatic extends js.Object {
   def click(event: Event, containerSelector: String): Unit = js.native
   def click(event: Event, containerSelector: String, options: PjaxSettings): Unit = js.native
   def click(event: Event, options: PjaxSettings): Unit = js.native
+  
+  /**
+    * PJAX default settings.
+    */
+  var defaults: PjaxSettings = js.native
+  
   /**
     * Disable pushState behavior.
     * This is the case when a browser doesn't support pushState. It is sometimes useful to disable pushState for debugging on a modern browser.
     */
   def disable(): Unit = js.native
+  
   /**
     * Install pjax functions on $.pjax to enable pushState behavior. Does nothing if already enabled.
     */
   def enable(): Unit = js.native
+  
   /**
     * Reload current page with pjax.
     */
   def reload(container: String): JQueryXHR = js.native
   def reload(container: String, options: PjaxSettings): JQueryXHR = js.native
+  
   /**
     * PJAX on form submit handler
     * @param event A jQuery click event.
@@ -63,4 +70,3 @@ trait PjaxStatic extends js.Object {
   def submit(event: Event, containerSelector: String, options: PjaxSettings): Unit = js.native
   def submit(event: Event, options: PjaxSettings): Unit = js.native
 }
-

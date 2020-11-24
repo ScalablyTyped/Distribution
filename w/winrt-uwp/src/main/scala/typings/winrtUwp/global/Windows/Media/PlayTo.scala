@@ -2,12 +2,13 @@ package typings.winrtUwp.global.Windows.Media
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supports the streaming of audio, video, and images to remote devices. */
 @JSGlobal("Windows.Media.PlayTo")
 @js.native
 object PlayTo extends js.Object {
+  
   /** Provides information about the CurrentTimeChangeRequested event. */
   @js.native
   abstract class CurrentTimeChangeRequestedEventArgs ()
@@ -23,10 +24,42 @@ object PlayTo extends js.Object {
   abstract class PlayToConnection ()
     extends typings.winrtUwp.Windows.Media.PlayTo.PlayToConnection
   
+  /** Describes an error on a Play To connection. */
+  @js.native
+  object PlayToConnectionError extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionError with Double] = js.native
+    
+    /* 2 */ val deviceError: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionError.deviceError with Double = js.native
+    
+    /* 3 */ val deviceLocked: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionError.deviceLocked with Double = js.native
+    
+    /* 1 */ val deviceNotResponding: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionError.deviceNotResponding with Double = js.native
+    
+    /* 0 */ val none: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionError.none with Double = js.native
+    
+    /* 4 */ val protectedPlaybackFailed: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionError.protectedPlaybackFailed with Double = js.native
+  }
+  
   /** Provides information about the Error event. */
   @js.native
   abstract class PlayToConnectionErrorEventArgs ()
     extends typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionErrorEventArgs
+  
+  /** Describes the status of a Play To connection. */
+  @js.native
+  object PlayToConnectionState extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionState with Double] = js.native
+    
+    /* 1 */ val connected: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionState.connected with Double = js.native
+    
+    /* 0 */ val disconnected: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionState.disconnected with Double = js.native
+    
+    /* 2 */ val rendering: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionState.rendering with Double = js.native
+  }
   
   /** Provides information about the StateChanged event. */
   @js.native
@@ -42,6 +75,19 @@ object PlayTo extends js.Object {
   @js.native
   abstract class PlayToManager ()
     extends typings.winrtUwp.Windows.Media.PlayTo.PlayToManager
+  /* static members */
+  @js.native
+  object PlayToManager extends js.Object {
+    
+    /**
+      * Gets the Play To manager for the current view.
+      * @return The Play To manager for the current view.
+      */
+    def getForCurrentView(): typings.winrtUwp.Windows.Media.PlayTo.PlayToManager = js.native
+    
+    /** Displays the Play To UI. */
+    def showPlayToUI(): Unit = js.native
+  }
   
   /** Represents a Play To target. */
   @js.native
@@ -88,40 +134,4 @@ object PlayTo extends js.Object {
   @js.native
   abstract class VolumeChangeRequestedEventArgs ()
     extends typings.winrtUwp.Windows.Media.PlayTo.VolumeChangeRequestedEventArgs
-  
-  /** Describes an error on a Play To connection. */
-  @js.native
-  object PlayToConnectionError extends js.Object {
-    /* 2 */ val deviceError: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionError.deviceError with Double = js.native
-    /* 3 */ val deviceLocked: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionError.deviceLocked with Double = js.native
-    /* 1 */ val deviceNotResponding: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionError.deviceNotResponding with Double = js.native
-    /* 0 */ val none: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionError.none with Double = js.native
-    /* 4 */ val protectedPlaybackFailed: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionError.protectedPlaybackFailed with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionError with Double] = js.native
-  }
-  
-  /** Describes the status of a Play To connection. */
-  @js.native
-  object PlayToConnectionState extends js.Object {
-    /* 1 */ val connected: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionState.connected with Double = js.native
-    /* 0 */ val disconnected: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionState.disconnected with Double = js.native
-    /* 2 */ val rendering: typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionState.rendering with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionState with Double] = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object PlayToManager extends js.Object {
-    /**
-      * Gets the Play To manager for the current view.
-      * @return The Play To manager for the current view.
-      */
-    def getForCurrentView(): typings.winrtUwp.Windows.Media.PlayTo.PlayToManager = js.native
-    /** Displays the Play To UI. */
-    def showPlayToUI(): Unit = js.native
-  }
-  
 }
-

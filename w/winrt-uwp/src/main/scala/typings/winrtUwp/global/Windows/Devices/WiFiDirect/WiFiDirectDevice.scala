@@ -3,18 +3,18 @@ package typings.winrtUwp.global.Windows.Devices.WiFiDirect
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages connections to associated Wi-Fi Direct devices. */
 @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectDevice")
 @js.native
 abstract class WiFiDirectDevice ()
   extends typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectDevice
-
 /* static members */
 @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectDevice")
 @js.native
 object WiFiDirectDevice extends js.Object {
+  
   /**
     * Creates an instance of the WiFiDirectDevice class for the specified device interface id.
     * @param deviceId The DeviceInformation Id of a Wi-Fi Direct device.
@@ -31,6 +31,7 @@ object WiFiDirectDevice extends js.Object {
     deviceId: String,
     connectionParameters: typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectConnectionParameters
   ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectDevice] = js.native
+  
   /**
     * Returns the class selection string that you can use to enumerate Wi-Fi Direct devices.
     * @return The class selection string that you can use to enumerate Wi-Fi Direct devices.
@@ -43,4 +44,3 @@ object WiFiDirectDevice extends js.Object {
     */
   def getDeviceSelector(`type`: typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectDeviceSelectorType): String = js.native
 }
-

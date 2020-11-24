@@ -11,22 +11,24 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouddebugger", JSImport.Namespace)
 @js.native
 object clouddebuggerMod extends js.Object {
+  
   def clouddebugger(options: Options): Clouddebugger = js.native
   @JSName("clouddebugger")
   def clouddebugger_v2(version: v2): Clouddebugger = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v2 protected () extends Clouddebugger {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
     @js.native
     object v2
       extends TopLevel[
@@ -36,11 +38,11 @@ object clouddebuggerMod extends js.Object {
                 Clouddebugger
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -68,8 +70,5 @@ object clouddebuggerMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

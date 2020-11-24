@@ -11,8 +11,8 @@ Wordwrap a string with ANSI escape codes
 | Full name          | wrap-ansi |
 | Keywords           | wrap, break, wordwrap, wordbreak, linewrap, ansi, styles, color, colour, colors, terminal, console, cli, string, tty, escape, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
 | # releases         | 7 |
-| # dependents       | 229 |
-| # downloads        | 618094353 |
+| # dependents       | 324 |
+| # downloads        | 1245129556 |
 | # stars            | 3 |
 
 ## Links

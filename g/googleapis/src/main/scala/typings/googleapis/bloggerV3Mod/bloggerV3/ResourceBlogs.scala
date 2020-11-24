@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/blogger/v3", "blogger_v3.Resource$Blogs")
 @js.native
 class ResourceBlogs protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * blogger.blogs.get
     * @desc Gets one blog by ID.
@@ -39,6 +41,7 @@ class ResourceBlogs protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceBlogsGet, options: MethodOptions): GaxiosPromise[SchemaBlog] = js.native
   def get(params: ParamsResourceBlogsGet, options: MethodOptions, callback: BodyResponseCallback[SchemaBlog]): Unit = js.native
+  
   /**
     * blogger.blogs.getByUrl
     * @desc Retrieve a Blog by URL.
@@ -68,6 +71,7 @@ class ResourceBlogs protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBlog]
   ): Unit = js.native
+  
   /**
     * blogger.blogs.listByUser
     * @desc Retrieves a list of blogs, possibly filtered.
@@ -101,4 +105,3 @@ class ResourceBlogs protected () extends js.Object {
     callback: BodyResponseCallback[SchemaBlogList]
   ): Unit = js.native
 }
-

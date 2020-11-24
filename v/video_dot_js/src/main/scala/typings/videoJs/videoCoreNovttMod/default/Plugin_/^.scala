@@ -9,7 +9,7 @@ import typings.videoJs.mod.videojs.Player
 import typings.videoJs.mod.videojs.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "Plugin")
 @js.native
@@ -25,7 +25,6 @@ class ^ protected () extends Plugin {
   def this(player: Player) = this()
   def this(player: Player, options: js.Any) = this()
 }
-
 @JSImport("video.js/dist/alt/video.core.novtt", "Plugin")
 @js.native
 object ^
@@ -40,11 +39,13 @@ object ^
   */
 Instantiable1[/* player */ Player, Plugin]) with (Instantiable2[/* player */ Player, /* options */ js.Any, Plugin])
     ] {
+  
   /**
     * The name of the base plugin class as it is registered.
     *
     */
   var BASE_PLUGIN_NAME: String = js.native
+  
   /**
     * De-register a Video.js plugin.
     *
@@ -52,6 +53,7 @@ Instantiable1[/* player */ Player, Plugin]) with (Instantiable2[/* player */ Pla
     *        The name of the plugin to be deregistered.
     */
   def deregisterPlugin(name: String): Unit = js.native
+  
   /**
     * Gets a plugin by name if it exists.
     *
@@ -61,6 +63,7 @@ Instantiable1[/* player */ Player, Plugin]) with (Instantiable2[/* player */ Pla
     * @return The plugin (or `undefined`).
     */
   def getPlugin(name: String): TypeofPlugin = js.native
+  
   /**
     * Gets a plugin's version, if available
     *
@@ -70,6 +73,7 @@ Instantiable1[/* player */ Player, Plugin]) with (Instantiable2[/* player */ Pla
     * @return The plugin's version or an empty string.
     */
   def getPluginVersion(name: String): String = js.native
+  
   /**
     * Gets an object containing multiple Video.js plugins.
     *
@@ -84,6 +88,7 @@ Instantiable1[/* player */ Player, Plugin]) with (Instantiable2[/* player */ Pla
     */
   def getPlugins(): StringDictionary[Plugin] = js.native
   def getPlugins(names: js.Array[String]): StringDictionary[Plugin] = js.native
+  
   /**
     * Determines if a plugin is a basic plugin (i.e. not a sub-class of `Plugin`).
     *
@@ -95,6 +100,7 @@ Instantiable1[/* player */ Player, Plugin]) with (Instantiable2[/* player */ Pla
     */
   def isBasic(plugin: String): Boolean = js.native
   def isBasic(plugin: js.Function0[_]): Boolean = js.native
+  
   def registerPlugin[T /* <: TypeofPlugin */](name: String, plugin: T): js.Function0[T] = js.native
   /**
     * Register a Video.js plugin.
@@ -112,4 +118,3 @@ Instantiable1[/* player */ Player, Plugin]) with (Instantiable2[/* player */ Pla
     */
   def registerPlugin[T, K](name: String, plugin: js.ThisFunction1[/* this */ Player, /* repeated */ K, T]): js.Function1[/* repeated */ K, T] = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.redshiftMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.Redshift")
 @js.native
@@ -14,4 +14,3 @@ class Redshift ()
   extends typings.awsSdk.mod.Redshift {
   def this(options: ClientConfiguration) = this()
 }
-

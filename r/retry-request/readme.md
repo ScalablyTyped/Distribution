@@ -1,7 +1,7 @@
 
 # Scala.js typings for retry-request
 
-Typings are for version 4.1.2
+Typings are for version 4.1.3
 
 ## Library description:
 Retry a request.
@@ -10,9 +10,9 @@ Retry a request.
 | ------------------ | :-------------: |
 | Full name          | retry-request |
 | Keywords           | request, retry, stream |
-| # releases         | 5 |
-| # dependents       | 16 |
-| # downloads        | 66821699 |
+| # releases         | 3 |
+| # dependents       | 18 |
+| # downloads        | 91921828 |
 | # stars            | 1 |
 
 ## Links

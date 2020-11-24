@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SubDocumentType extends js.Object
-
 /**
   * Lists values specifying the sub-document type.
   */
 @JSGlobal("SubDocumentType")
 @js.native
 object SubDocumentType extends js.Object {
+  
   /**
     * A footer.
     */
@@ -36,6 +36,4 @@ object SubDocumentType extends js.Object {
     */
   @js.native
   sealed trait TextBox extends SubDocumentType
-  
 }
-

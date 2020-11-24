@@ -1,18 +1,18 @@
 
 # Scala.js typings for unist-util-is
 
-Typings are for version 4.0.2
+Typings are for version 4.0.3
 
 ## Library description:
-Utility to check if a node passes a test
+unist utility to check if a node passes a test
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | unist-util-is |
-| Keywords           | unist, node, is, equal, test, type, util, utility |
-| # releases         | 6 |
-| # dependents       | 67 |
-| # downloads        | 73941543 |
+| Keywords           | unist, unist-util, util, utility, tree, node, is, equal, check, test, type |
+| # releases         | 5 |
+| # dependents       | 94 |
+| # downloads        | 151756437 |
 | # stars            | 1 |
 
 ## Links

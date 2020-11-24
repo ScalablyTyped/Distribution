@@ -10,11 +10,12 @@ import typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator
 import typings.tstl.vectorContainerMod.VectorContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/internal/container/associative/MapElementVector", JSImport.Namespace)
 @js.native
 object mapElementVectorMod extends js.Object {
+  
   @js.native
   class MapElementVector[Key, T, Unique /* <: Boolean */, Source /* <: ITreeMap[
     Key, 
@@ -31,18 +32,19 @@ object mapElementVectorMod extends js.Object {
           ReverseIterator[Key, T, Unique, Source]
         ] {
     def this(associative: Source) = this()
+    
     var associative_ : js.Any = js.native
   }
-  
   @js.native
   object MapElementVector extends js.Object {
+    
     /**
       * Iterator of map container storing elements in a vector.
       *
-      * @type Key Key type
-      * @type T Mapped type
-      * @type Unique Whether duplicated key is blocked or not
-      * @type Source Source container type
+      * @template Key Key type
+      * @template T Mapped type
+      * @template Unique Whether duplicated key is blocked or not
+      * @template Source Source container type
       *
       * @author Jeongho Nam - https://github.com/samchon
       */
@@ -63,20 +65,17 @@ object mapElementVectorMod extends js.Object {
               ReverseIterator[Key, T, Unique, Source], 
               IPair[Key, T]
             ] {
+      
+      /**
+        * @inheritDoc
+        */
+      def first: Key = js.native
       /**
         * The first, key element.
         */
       @JSName("first")
       val first_FIterator: Key = js.native
-      /**
-        * The second, stored element.
-        */
-      @JSName("second")
-      var second_FIterator: T = js.native
-      /**
-        * @inheritDoc
-        */
-      def first: Key = js.native
+      
       /**
         * @inheritDoc
         */
@@ -84,16 +83,21 @@ object mapElementVectorMod extends js.Object {
       /**
         * @inheritDoc
         */
-      def second(`val`: T): js.Any = js.native
+      def second_=(`val`: T): Unit = js.native
+      /**
+        * The second, stored element.
+        */
+      @JSName("second")
+      var second_FIterator: T = js.native
     }
     
     /**
       * Reverse iterator of map container storing elements in a vector.
       *
-      * @type Key Key type
-      * @type T Mapped type
-      * @type Unique Whether duplicated key is blocked or not
-      * @type Source Source container type
+      * @template Key Key type
+      * @template T Mapped type
+      * @template Unique Whether duplicated key is blocked or not
+      * @template Source Source container type
       *
       * @author Jeongho Nam - https://github.com/samchon
       */
@@ -114,20 +118,17 @@ object mapElementVectorMod extends js.Object {
               ReverseIterator[Key, T, Unique, Source], 
               IPair[Key, T]
             ] {
+      
+      /**
+        * @inheritDoc
+        */
+      def first: Key = js.native
       /**
         * The first, key element.
         */
       @JSName("first")
       val first_FReverseIterator: Key = js.native
-      /**
-        * The second, stored element.
-        */
-      @JSName("second")
-      var second_FReverseIterator: T = js.native
-      /**
-        * @inheritDoc
-        */
-      def first: Key = js.native
+      
       /**
         * @inheritDoc
         */
@@ -135,10 +136,12 @@ object mapElementVectorMod extends js.Object {
       /**
         * @inheritDoc
         */
-      def second(`val`: T): js.Any = js.native
+      def second_=(`val`: T): Unit = js.native
+      /**
+        * The second, stored element.
+        */
+      @JSName("second")
+      var second_FReverseIterator: T = js.native
     }
-    
   }
-  
 }
-

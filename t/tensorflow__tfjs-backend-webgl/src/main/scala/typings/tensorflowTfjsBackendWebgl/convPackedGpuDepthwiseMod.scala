@@ -4,11 +4,12 @@ import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import typings.tensorflowTfjsCore.convUtilMod.Conv2DInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-backend-webgl/dist/conv_packed_gpu_depthwise", JSImport.Namespace)
 @js.native
 object convPackedGpuDepthwiseMod extends js.Object {
+  
   @js.native
   class DepthwiseConvPacked2DProgram protected () extends GPGPUProgram {
     def this(convInfo: Conv2DInfo) = this()
@@ -34,11 +35,11 @@ object convPackedGpuDepthwiseMod extends js.Object {
       hasPreluActivation: Boolean
     ) = this()
     def this(convInfo: Conv2DInfo, addBias: Boolean, activation: String, hasPreluActivation: Boolean) = this()
+    
     @JSName("packedInputs")
     var packedInputs_DepthwiseConvPacked2DProgram: Boolean = js.native
+    
     @JSName("packedOutput")
     var packedOutput_DepthwiseConvPacked2DProgram: Boolean = js.native
   }
-  
 }
-

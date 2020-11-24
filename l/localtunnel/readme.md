@@ -10,9 +10,9 @@ Expose localhost to the world
 | ------------------ | :-------------: |
 | Full name          | localtunnel |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 136 |
-| # downloads        | 20287861 |
+| # releases         | 4 |
+| # dependents       | 141 |
+| # downloads        | 24012290 |
 | # stars            | 86 |
 
 ## Links

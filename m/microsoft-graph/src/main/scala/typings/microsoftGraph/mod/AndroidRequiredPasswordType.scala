@@ -2,7 +2,7 @@ package typings.microsoftGraph.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.deviceDefault
@@ -15,23 +15,29 @@ import scala.scalajs.js.annotation._
   - typings.microsoftGraph.microsoftGraphStrings.any
 */
 trait AndroidRequiredPasswordType extends js.Object
-
 object AndroidRequiredPasswordType {
+  
   @scala.inline
   def alphabetic: typings.microsoftGraph.microsoftGraphStrings.alphabetic = "alphabetic".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphabetic]
+  
   @scala.inline
   def alphanumeric: typings.microsoftGraph.microsoftGraphStrings.alphanumeric = "alphanumeric".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphanumeric]
+  
   @scala.inline
   def alphanumericWithSymbols: typings.microsoftGraph.microsoftGraphStrings.alphanumericWithSymbols = "alphanumericWithSymbols".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphanumericWithSymbols]
+  
   @scala.inline
   def any: typings.microsoftGraph.microsoftGraphStrings.any = "any".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.any]
+  
   @scala.inline
   def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
+  
   @scala.inline
   def lowSecurityBiometric: typings.microsoftGraph.microsoftGraphStrings.lowSecurityBiometric = "lowSecurityBiometric".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lowSecurityBiometric]
+  
   @scala.inline
   def numeric: typings.microsoftGraph.microsoftGraphStrings.numeric = "numeric".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.numeric]
+  
   @scala.inline
   def numericComplex: typings.microsoftGraph.microsoftGraphStrings.numericComplex = "numericComplex".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.numericComplex]
 }
-

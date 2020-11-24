@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new axis-aligned bounding box.
@@ -19,4 +19,3 @@ class BoundingBox ()
   def this(center: js.UndefOr[scala.Nothing], halfExtents: typings.playcanvas.pc.Vec3) = this()
   def this(center: typings.playcanvas.pc.Vec3, halfExtents: typings.playcanvas.pc.Vec3) = this()
 }
-

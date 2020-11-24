@@ -5,26 +5,31 @@ import typings.chromeApps.anon.Background
 import typings.chromeApps.chromeAppsNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InvalidManifest
   extends PartialManifest
      with Manifest {
+  
   /** Not for packaged apps */
   var browser_action: js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * Not for packaged apps
     * Only for extensions and legacy packaged apps
     */
   var chrome_url_overrides: js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * Not for packaged apps
     * Only for extensions and legacy packaged apps
     */
   var content_security_policy: js.UndefOr[scala.Nothing] = js.native
+  
   /** Not for packaged apps */
   var options_page: js.UndefOr[scala.Nothing] = js.native
+  
   //
   // Never types - should never exist
   // Are declared to prevent use since many
@@ -35,8 +40,8 @@ trait InvalidManifest
   /** Not for packaged apps */
   var options_ui: js.UndefOr[scala.Nothing] = js.native
 }
-
 object InvalidManifest {
+  
   @scala.inline
   def apply(
     app: Background,
@@ -49,4 +54,3 @@ object InvalidManifest {
     __obj.asInstanceOf[InvalidManifest]
   }
 }
-

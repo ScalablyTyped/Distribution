@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/runtimeconfig/v1beta1", "runtimeconfig_v1beta1.Resource$Projects$Configs$Operations")
 @js.native
 class ResourceProjectsConfigsOperations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * runtimeconfig.projects.configs.operations.get
     * @desc Gets the latest state of a long-running operation.  Clients can use
@@ -46,6 +48,7 @@ class ResourceProjectsConfigsOperations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * runtimeconfig.projects.configs.operations.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -83,4 +86,3 @@ class ResourceProjectsConfigsOperations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

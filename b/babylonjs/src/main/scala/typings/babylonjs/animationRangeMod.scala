@@ -2,11 +2,12 @@ package typings.babylonjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Animations/animationRange", JSImport.Namespace)
 @js.native
 object animationRangeMod extends js.Object {
+  
   @js.native
   class AnimationRange protected () extends js.Object {
     /**
@@ -23,13 +24,14 @@ object animationRangeMod extends js.Object {
       /**The ending frame of the animation*/
     to: Double
     ) = this()
+    
     /**The starting frame of the animation */
     var from: Double = js.native
+    
     /**The name of the animation range**/
     var name: String = js.native
+    
     /**The ending frame of the animation*/
     var to: Double = js.native
   }
-  
 }
-

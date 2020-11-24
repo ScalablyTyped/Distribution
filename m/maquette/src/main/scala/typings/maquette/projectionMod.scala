@@ -6,11 +6,12 @@ import typings.maquette.interfacesMod.VNode
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("maquette/dist/projection", JSImport.Namespace)
 @js.native
 object projectionMod extends js.Object {
+  
   var createDom: js.Function4[
     /* vnode */ VNode, 
     /* parentNode */ Node, 
@@ -18,8 +19,10 @@ object projectionMod extends js.Object {
     /* projectionOptions */ ProjectionOptions, 
     Unit
   ] = js.native
+  
   var createProjection: js.Function2[/* vnode */ VNode, /* projectionOptions */ ProjectionOptions, Projection] = js.native
+  
   var extend: js.Function2[/* base */ js.Any, /* overrides */ js.Any, js.Any] = js.native
+  
   var initPropertiesAndChildren: js.Function3[/* domNode */ Node, /* vnode */ VNode, /* projectionOptions */ ProjectionOptions, Unit] = js.native
 }
-

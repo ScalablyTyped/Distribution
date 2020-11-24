@@ -2,8 +2,7 @@ package typings.awsSdk.s3controlMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PutJobTaggingResult extends js.Object
-

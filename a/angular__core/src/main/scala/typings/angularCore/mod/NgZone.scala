@@ -3,38 +3,46 @@ package typings.angularCore.mod
 import typings.angularCore.anon.EnableLongStackTrace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "NgZone")
 @js.native
 class NgZone protected () extends js.Object {
   def this(hasEnableLongStackTraceShouldCoalesceEventChangeDetection: EnableLongStackTrace) = this()
+  
   val hasPendingMacrotasks: Boolean = js.native
+  
   val hasPendingMicrotasks: Boolean = js.native
+  
   /**
     * Whether there are no outstanding microtasks or macrotasks.
     */
   val isStable: Boolean = js.native
+  
   /**
     * Notifies that an error has been delivered.
     */
   val onError: EventEmitter[_] = js.native
+  
   /**
     * Notifies when there is no more microtasks enqueued in the current VM Turn.
     * This is a hint for Angular to do change detection, which may enqueue more microtasks.
     * For this reason this event can fire multiple times per VM Turn.
     */
   val onMicrotaskEmpty: EventEmitter[_] = js.native
+  
   /**
     * Notifies when the last `onMicrotaskEmpty` has run and there are no more microtasks, which
     * implies we are about to relinquish VM turn.
     * This event gets called just once.
     */
   val onStable: EventEmitter[_] = js.native
+  
   /**
     * Notifies when code enters Angular Zone. This gets fired first on VM Turn.
     */
   val onUnstable: EventEmitter[_] = js.native
+  
   /**
     * Executes the `fn` function synchronously within the Angular zone and returns value returned by
     * the function.
@@ -55,6 +63,7 @@ class NgZone protected () extends js.Object {
   ): T = js.native
   def run[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any): T = js.native
   def run[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: js.Array[_]): T = js.native
+  
   /**
     * Same as `run`, except that synchronous errors are caught and forwarded via `onError` and not
     * rethrown.
@@ -67,6 +76,7 @@ class NgZone protected () extends js.Object {
   ): T = js.native
   def runGuarded[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any): T = js.native
   def runGuarded[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: js.Array[_]): T = js.native
+  
   /**
     * Executes the `fn` function synchronously in Angular's parent zone and returns value returned by
     * the function.
@@ -81,6 +91,7 @@ class NgZone protected () extends js.Object {
     * Use {@link #run} to reenter the Angular zone and do work that updates the application model.
     */
   def runOutsideAngular[T](fn: js.Function1[/* repeated */ js.Any, T]): T = js.native
+  
   /**
     * Executes the `fn` function synchronously within the Angular zone as a task and returns value
     * returned by the function.
@@ -126,13 +137,14 @@ class NgZone protected () extends js.Object {
     name: String
   ): T = js.native
 }
-
 /* static members */
 @JSImport("@angular/core", "NgZone")
 @js.native
 object NgZone extends js.Object {
+  
   def assertInAngularZone(): Unit = js.native
+  
   def assertNotInAngularZone(): Unit = js.native
+  
   def isInAngularZone(): Boolean = js.native
 }
-

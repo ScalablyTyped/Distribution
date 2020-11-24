@@ -3,7 +3,7 @@ package typings.jupyterlabRendermime.mod
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/rendermime", "RenderedMarkdown")
 @js.native
@@ -16,4 +16,3 @@ class RenderedMarkdown protected ()
     */
   def this(options: IRendererOptions) = this()
 }
-

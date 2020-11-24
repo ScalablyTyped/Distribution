@@ -12,7 +12,7 @@ import typings.activexLibreoffice.com_.sun.star.ucb.XContentEventListener
 import typings.activexLibreoffice.com_.sun.star.ucb.XContentIdentifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
 @js.native
@@ -20,8 +20,8 @@ trait XQueryDefinition
   extends XPropertySet
      with XContent
      with XComponent
-
 object XQueryDefinition {
+  
   @scala.inline
   def apply(
     ContentType: String,
@@ -49,4 +49,3 @@ object XQueryDefinition {
     __obj.asInstanceOf[XQueryDefinition]
   }
 }
-

@@ -13,13 +13,13 @@ import typings.openfin.windowMod.WindowEvents
 import typings.openfin.windowOptionMod.WindowOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openfin/_v2/api/window/window", "_Window")
 @js.native
 class Window protected () extends WebContents[WindowEvents] {
   def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
-  var windowListFromNameList: js.Any = js.native
+  
   /**
     * Performs the specified window transitions.
     * @param {Transition} transitions - Describes the animations to perform. See the tutorial.
@@ -28,6 +28,7 @@ class Window protected () extends WebContents[WindowEvents] {
     * @tutorial Window.animate
     */
   def animate(transitions: Transition, options: TransitionOptions): js.Promise[Unit] = js.native
+  
   /**
     * Provides credentials to authentication requests
     * @param { string } userName userName to provide to the authentication challenge
@@ -36,24 +37,28 @@ class Window protected () extends WebContents[WindowEvents] {
     * @tutorial Window.authenticate
     */
   def authenticate(userName: String, password: String): js.Promise[Unit] = js.native
+  
   /**
     * Removes focus from the window.
     * @return {Promise.<void>}
     * @tutorial Window.blur
     */
   def blur(): js.Promise[Unit] = js.native
+  
   /**
     * Brings the window to the front of the window stack.
     * @return {Promise.<void>}
     * @tutorial Window.bringToFront
     */
   def bringToFront(): js.Promise[Unit] = js.native
+  
   /**
     * Centers the window on its current screen.
     * @return {Promise.<void>}
     * @tutorial Window.center
     */
   def center(): js.Promise[Unit] = js.native
+  
   /**
     * closes the window application
     * @param { boolean } [force = false] Close will be prevented from closing when force is false and
@@ -63,6 +68,7 @@ class Window protected () extends WebContents[WindowEvents] {
     */
   def close(): js.Promise[Unit] = js.native
   def close(force: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Adds a listener to the end of the listeners array for the specified event.
     * @param { string | symbol } eventType  - The type of the event.
@@ -267,27 +273,34 @@ class Window protected () extends WebContents[WindowEvents] {
     * @tutorial Window.getPrinters
     */
   def createWindow(options: WindowOption): js.Promise[Window] = js.native
+  
   def disableFrame(): js.Promise[Unit] = js.native
+  
   /**
     * Prevents a user from changing a window's size/position when using the window's frame.
     * @return {Promise.<void>}
     * @tutorial Window.disableUserMovement
     */
   def disableUserMovement(): js.Promise[Unit] = js.native
+  
   def enableFrame(): js.Promise[Unit] = js.native
+  
   /**
     * Re-enables user changes to a window's size/position when using the window's frame.
     * @return {Promise.<void>}
     * @tutorial Window.enableUserMovement
     */
   def enableUserMovement(): js.Promise[Unit] = js.native
+  
   /**
     * Flashes the window’s frame and taskbar icon until stopFlashing is called or until a focus event is fired.
     * @return {Promise.<void>}
     * @tutorial Window.flash
     */
   def flash(): js.Promise[Unit] = js.native
+  
   def focusedWebViewWasChanged(): js.Promise[Unit] = js.native
+  
   /**
     * Retrieves an array of frame info objects representing the main frame and any
     * iframes that are currently on the page.
@@ -295,12 +308,14 @@ class Window protected () extends WebContents[WindowEvents] {
     * @tutorial Window.getAllFrames
     */
   def getAllFrames(): js.Promise[js.Array[FrameInfo]] = js.native
+  
   /**
     * Gets the current bounds (top, bottom, right, left, width, height) of the window.
     * @return {Promise.<Bounds>}
     * @tutorial Window.getBounds
     */
   def getBounds(): js.Promise[Bounds] = js.native
+  
   /**
     * Retrieves window's attached views.
     * @experimental
@@ -308,6 +323,7 @@ class Window protected () extends WebContents[WindowEvents] {
     * @tutorial Window.getCurrentViews
     */
   def getCurrentViews(): js.Promise[js.Array[View]] = js.native
+  
   /**
     * Retrieves an array containing wrapped fin.Windows that are grouped with this window.
     * If a window is not in a group an empty array is returned. Please note that
@@ -316,12 +332,14 @@ class Window protected () extends WebContents[WindowEvents] {
     * @tutorial Window.getGroup
     */
   def getGroup(): js.Promise[js.Array[Window | ExternalWindow]] = js.native
+  
   /**
     * Gets an information object for the window.
     * @return {Promise.<WindowInfo>}
     * @tutorial Window.getInfo
     */
   def getInfo(): js.Promise[WindowInfo] = js.native
+  
   /**
     * Returns the native OS level Id.
     * In Windows, it will return the Windows [handle](https://docs.microsoft.com/en-us/windows/desktop/WinProg/windows-data-types#HWND).
@@ -329,24 +347,28 @@ class Window protected () extends WebContents[WindowEvents] {
     * @tutorial Window.getNativeId
     */
   def getNativeId(): js.Promise[String] = js.native
+  
   /**
     * Gets the current settings of the window.
     * @return {Promise.<any>}
     * @tutorial Window.getOptions
     */
   def getOptions(): js.Promise[_] = js.native
+  
   /**
     * Gets the parent application.
     * @return {Promise.<Application>}
     * @tutorial Window.getParentApplication
     */
   def getParentApplication(): js.Promise[Application] = js.native
+  
   /**
     * Gets the parent window.
     * @return {Promise.<_Window>}
     * @tutorial Window.getParentWindow
     */
   def getParentWindow(): js.Promise[Window] = js.native
+  
   /**
     * ***DEPRECATED - please use Window.capturePage.***
     * Gets a base64 encoded PNG image of the window or just part a of it.
@@ -357,36 +379,42 @@ class Window protected () extends WebContents[WindowEvents] {
     */
   def getSnapshot(): js.Promise[String] = js.native
   def getSnapshot(area: Area): js.Promise[String] = js.native
+  
   /**
     * Gets the current state ("minimized", "maximized", or "restored") of the window.
     * @return {Promise.<string>}
     * @tutorial Window.getState
     */
   def getState(): js.Promise[String] = js.native
+  
   /**
     * Gets the [Window Object](https://developer.mozilla.org/en-US/docs/Web/API/Window) previously getNativeWindow
     * @return {object}
     * @tutorial Window.getWebWindow
     */
   def getWebWindow(): typings.std.Window = js.native
+  
   /**
     * Hides the window.
     * @return {Promise.<void>}
     * @tutorial Window.hide
     */
   def hide(): js.Promise[Unit] = js.native
+  
   /**
     * Determines if the window is a main window.
     * @return {boolean}
     * @tutorial Window.isMainWindow
     */
   def isMainWindow(): Boolean = js.native
+  
   /**
     * Determines if the window is currently showing.
     * @return {Promise.<boolean>}
     * @tutorial Window.isShowing
     */
   def isShowing(): js.Promise[Boolean] = js.native
+  
   def joinGroup(target: ExternalWindow): js.Promise[Unit] = js.native
   /**
     * Joins the same window group as the specified window.
@@ -396,18 +424,21 @@ class Window protected () extends WebContents[WindowEvents] {
     * @tutorial Window.joinGroup
     */
   def joinGroup(target: Window): js.Promise[Unit] = js.native
+  
   /**
     * Leaves the current window group so that the window can be move independently of those in the group.
     * @return {Promise.<void>}
     * @tutorial Window.leaveGroup
     */
   def leaveGroup(): js.Promise[Unit] = js.native
+  
   /**
     * Maximizes the window
     * @return {Promise.<void>}
     * @tutorial Window.maximize
     */
   def maximize(): js.Promise[Unit] = js.native
+  
   def mergeGroups(target: ExternalWindow): js.Promise[Unit] = js.native
   /**
     * Merges the instance's window group with the same window group as the specified window
@@ -416,12 +447,14 @@ class Window protected () extends WebContents[WindowEvents] {
     * @tutorial Window.mergeGroups
     */
   def mergeGroups(target: Window): js.Promise[Unit] = js.native
+  
   /**
     * Minimizes the window.
     * @return {Promise.<void>}
     * @tutorial Window.minimize
     */
   def minimize(): js.Promise[Unit] = js.native
+  
   /**
     * Moves the window by a specified amount.
     * @param { number } deltaLeft The change in the left position of the window
@@ -432,6 +465,7 @@ class Window protected () extends WebContents[WindowEvents] {
     */
   def moveBy(deltaLeft: Double, deltaTop: Double): js.Promise[Unit] = js.native
   def moveBy(deltaLeft: Double, deltaTop: Double, options: WindowMovementOptions): js.Promise[Unit] = js.native
+  
   /**
     * Moves the window to a specified location.
     * @param { number } left The left position of the window
@@ -442,6 +476,7 @@ class Window protected () extends WebContents[WindowEvents] {
     */
   def moveTo(left: Double, top: Double): js.Promise[Unit] = js.native
   def moveTo(left: Double, top: Double, options: WindowMovementOptions): js.Promise[Unit] = js.native
+  
   /**
     * Resizes the window by a specified amount.
     * @param { number } deltaWidth The change in the width of the window
@@ -455,6 +490,7 @@ class Window protected () extends WebContents[WindowEvents] {
     */
   def resizeBy(deltaWidth: Double, deltaHeight: Double, anchor: AnchorType): js.Promise[Unit] = js.native
   def resizeBy(deltaWidth: Double, deltaHeight: Double, anchor: AnchorType, options: WindowMovementOptions): js.Promise[Unit] = js.native
+  
   /**
     * Resizes the window to the specified dimensions.
     * @param { number } width The change in the width of the window
@@ -468,18 +504,21 @@ class Window protected () extends WebContents[WindowEvents] {
     */
   def resizeTo(width: Double, height: Double, anchor: AnchorType): js.Promise[Unit] = js.native
   def resizeTo(width: Double, height: Double, anchor: AnchorType, options: WindowMovementOptions): js.Promise[Unit] = js.native
+  
   /**
     * Restores the window to its normal state (i.e., unminimized, unmaximized).
     * @return {Promise.<void>}
     * @tutorial Window.restore
     */
   def restore(): js.Promise[Unit] = js.native
+  
   /**
     * Will bring the window to the front of the entire stack and give it focus.
     * @return {Promise.<void>}
     * @tutorial Window.setAsForeground
     */
   def setAsForeground(): js.Promise[Unit] = js.native
+  
   /**
     * Sets the window's size and position.
     * @property { Bounds } bounds This is a * @type {string} name - name of the window.object that holds the propertys of
@@ -489,6 +528,7 @@ class Window protected () extends WebContents[WindowEvents] {
     */
   def setBounds(bounds: Bounds): js.Promise[Unit] = js.native
   def setBounds(bounds: Bounds, options: WindowMovementOptions): js.Promise[Unit] = js.native
+  
   /**
     * Shows the window if it is hidden.
     * @param { boolean } [force = false] Show will be prevented from showing when force is false and
@@ -498,6 +538,7 @@ class Window protected () extends WebContents[WindowEvents] {
     */
   def show(): js.Promise[Unit] = js.native
   def show(force: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Shows the window if it is hidden at the specified location.
     * If the toggle parameter is set to true, the window will
@@ -514,12 +555,14 @@ class Window protected () extends WebContents[WindowEvents] {
   def showAt(left: Double, top: Double, force: js.UndefOr[scala.Nothing], options: WindowMovementOptions): js.Promise[Unit] = js.native
   def showAt(left: Double, top: Double, force: Boolean): js.Promise[Unit] = js.native
   def showAt(left: Double, top: Double, force: Boolean, options: WindowMovementOptions): js.Promise[Unit] = js.native
+  
   /**
     * Stops the taskbar icon from flashing.
     * @return {Promise.<void>}
     * @tutorial Window.stopFlashing
     */
   def stopFlashing(): js.Promise[Unit] = js.native
+  
   /**
     * Shows the Chromium Developer Tools
     * @return {Promise.<void>}
@@ -533,5 +576,6 @@ class Window protected () extends WebContents[WindowEvents] {
     * @tutorial Window.updateOptions
     */
   def updateOptions(options: js.Any): js.Promise[Unit] = js.native
+  
+  var windowListFromNameList: js.Any = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__plugin-paginate-rest
 
-Typings are for version 2.3.0
+Typings are for version 2.6.0
 
 ## Library description:
 Octokit plugin to paginate REST API endpoint responses
@@ -10,9 +10,9 @@ Octokit plugin to paginate REST API endpoint responses
 | ------------------ | :-------------: |
 | Full name          | @octokit/plugin-paginate-rest |
 | Keywords           | github, api, sdk, toolkit |
-| # releases         | 7 |
-| # dependents       | 2 |
-| # downloads        | 389589 |
+| # releases         | 20 |
+| # dependents       | 12 |
+| # downloads        | 45840718 |
 | # stars            | 0 |
 
 ## Links

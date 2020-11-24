@@ -12,7 +12,7 @@ Resilient and performant in-memory cache for node.js
 | Keywords           | lru, cache, stale-while-revalidate, max-age, cache-control |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 336689 |
+| # downloads        | 687934 |
 | # stars            | 2 |
 
 ## Links

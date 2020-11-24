@@ -9,11 +9,12 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computePool2DInfo")
 @js.native
 object computePool2DInfo extends js.Object {
+  
   def apply(
     inShape: js.Tuple4[Double, Double, Double, Double],
     filterSize: (js.Tuple2[Double, Double]) | Double,
@@ -24,4 +25,3 @@ object computePool2DInfo extends js.Object {
     dataFormat: js.UndefOr[channelsFirst | channelsLast]
   ): Conv2DInfo = js.native
 }
-

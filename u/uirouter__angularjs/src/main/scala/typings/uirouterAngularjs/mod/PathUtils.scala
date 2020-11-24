@@ -5,17 +5,17 @@ import typings.uirouterCore.pathNodeMod.GetParamsFn
 import typings.uirouterCore.transitionInterfaceMod.TreeChanges
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "PathUtils")
 @js.native
 class PathUtils ()
   extends typings.uirouterCore.mod.PathUtils
-
 /* static members */
 @JSImport("@uirouter/angularjs", "PathUtils")
 @js.native
 object PathUtils extends js.Object {
+  
   /**
     * Creates ViewConfig objects and adds to nodes.
     *
@@ -26,12 +26,15 @@ object PathUtils extends js.Object {
     path: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     states: js.Array[typings.uirouterCore.stateObjectMod.StateObject]
   ): Unit = js.native
+  
   def buildPath(targetState: typings.uirouterCore.targetStateMod.TargetState): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
+  
   /** Given a fromPath: PathNode[] and a TargetState, builds a toPath: PathNode[] */
   def buildToPath(
     fromPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     targetState: typings.uirouterCore.targetStateMod.TargetState
   ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
+  
   /**
     * Returns true if two paths are identical.
     *
@@ -49,6 +52,7 @@ object PathUtils extends js.Object {
     pathB: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     paramsFn: GetParamsFn
   ): Boolean = js.native
+  
   /**
     * Given a fromPath and a toPath, returns a new to path which inherits parameters from the fromPath
     *
@@ -69,11 +73,13 @@ object PathUtils extends js.Object {
     toPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     toKeys: js.Array[String]
   ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
+  
   /** Given a PathNode[], create an TargetState */
   def makeTargetState(
     registry: typings.uirouterCore.stateMod.StateRegistry,
     path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]
   ): typings.uirouterCore.targetStateMod.TargetState = js.native
+  
   /**
     * Returns a new path which is: the subpath of the first path which matches the second path.
     *
@@ -98,9 +104,12 @@ object PathUtils extends js.Object {
     pathB: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     paramsFn: GetParamsFn
   ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
+  
   def nonDynamicParams(node: typings.uirouterCore.pathNodeMod.PathNode): js.Array[typings.uirouterCore.paramMod.Param] = js.native
+  
   /** Gets the raw parameter values from a path */
   def paramValues(path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]): js.Any = js.native
+  
   /**
     * Return a subpath of a path, which stops at the first matching node
     *
@@ -115,6 +124,7 @@ object PathUtils extends js.Object {
     path: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     predicate: Predicate[typings.uirouterCore.pathNodeMod.PathNode]
   ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
+  
   /**
     * Computes the tree changes (entering, exiting) between a fromPath and toPath.
     */
@@ -124,4 +134,3 @@ object PathUtils extends js.Object {
     reloadState: typings.uirouterCore.stateObjectMod.StateObject
   ): TreeChanges = js.native
 }
-

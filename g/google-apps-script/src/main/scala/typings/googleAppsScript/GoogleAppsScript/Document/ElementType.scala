@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ElementType extends js.Object
-
 /**
   * An enumeration of all the element types.
   *
@@ -21,6 +20,7 @@ sealed trait ElementType extends js.Object
 @JSGlobal("GoogleAppsScript.Document.ElementType")
 @js.native
 object ElementType extends js.Object {
+  
   @js.native
   sealed trait BODY_SECTION extends ElementType
   
@@ -89,6 +89,4 @@ object ElementType extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends ElementType
-  
 }
-

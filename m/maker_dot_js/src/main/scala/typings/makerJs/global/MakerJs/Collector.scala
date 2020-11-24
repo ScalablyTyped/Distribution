@@ -3,7 +3,7 @@ package typings.makerJs.global.MakerJs
 import typings.makerJs.MakerJs.ICollectionKeyComparer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Collects items that share a common key.
@@ -14,4 +14,3 @@ class Collector[K, T] ()
   extends typings.makerJs.MakerJs.Collector[K, T] {
   def this(comparer: ICollectionKeyComparer[K]) = this()
 }
-

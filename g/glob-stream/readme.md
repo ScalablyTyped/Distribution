@@ -12,7 +12,7 @@ A Readable Stream interface over node-glob.
 | Keywords           | glob, stream, gulp, readable, fs, files |
 | # releases         | 0 |
 | # dependents       | 95 |
-| # downloads        | 100613360 |
+| # downloads        | 102898106 |
 | # stars            | 9 |
 
 ## Links

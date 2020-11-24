@@ -3,14 +3,16 @@ package typings.ol
 import typings.ol.projMod.TransformFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/renderer/canvas/VectorLayer", JSImport.Namespace)
 @js.native
 object vectorLayerMod extends js.Object {
+  
   @js.native
   trait CanvasVectorLayerRenderer
     extends typings.ol.canvasLayerMod.default[typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]] {
+    
     def renderFeature(
       feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default],
       squaredTolerance: Double,
@@ -43,6 +45,4 @@ object vectorLayerMod extends js.Object {
   class default protected () extends CanvasVectorLayerRenderer {
     def this(vectorLayer: typings.ol.vectorMod.default) = this()
   }
-  
 }
-

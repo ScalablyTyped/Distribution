@@ -10,9 +10,9 @@ A human-friendly standard for Flux action objects
 | ------------------ | :-------------: |
 | Full name          | flux-standard-action |
 | Keywords           | flux, redux, actions, fsa |
-| # releases         | 7 |
-| # dependents       | 98 |
-| # downloads        | 5432610 |
+| # releases         | 4 |
+| # dependents       | 103 |
+| # downloads        | 5706559 |
 | # stars            | 2 |
 
 ## Links

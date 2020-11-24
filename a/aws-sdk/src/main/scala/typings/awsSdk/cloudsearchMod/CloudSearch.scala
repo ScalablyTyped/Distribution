@@ -1,17 +1,16 @@
 package typings.awsSdk.cloudsearchMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CloudSearch extends Service {
-  @JSName("config")
-  var config_CloudSearch: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Indexes the search suggestions. For more information, see Configuring Suggesters in the Amazon CloudSearch Developer Guide.
     */
@@ -25,6 +24,10 @@ trait CloudSearch extends Service {
     params: BuildSuggestersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BuildSuggestersResponse, Unit]
   ): Request[BuildSuggestersResponse, AWSError] = js.native
+  
+  @JSName("config")
+  var config_CloudSearch: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a new search domain. For more information, see Creating a Search Domain in the Amazon CloudSearch Developer Guide.
     */
@@ -38,6 +41,7 @@ trait CloudSearch extends Service {
     params: CreateDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainResponse, Unit]
   ): Request[CreateDomainResponse, AWSError] = js.native
+  
   /**
     * Configures an analysis scheme that can be applied to a text or text-array field to define language-specific text processing options. For more information, see Configuring Analysis Schemes in the Amazon CloudSearch Developer Guide.
     */
@@ -51,6 +55,7 @@ trait CloudSearch extends Service {
     params: DefineAnalysisSchemeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DefineAnalysisSchemeResponse, Unit]
   ): Request[DefineAnalysisSchemeResponse, AWSError] = js.native
+  
   /**
     * Configures an Expression for the search domain. Used to create new expressions and modify existing ones. If the expression exists, the new configuration replaces the old one. For more information, see Configuring Expressions in the Amazon CloudSearch Developer Guide.
     */
@@ -64,6 +69,7 @@ trait CloudSearch extends Service {
     params: DefineExpressionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DefineExpressionResponse, Unit]
   ): Request[DefineExpressionResponse, AWSError] = js.native
+  
   /**
     * Configures an IndexField for the search domain. Used to create new fields and modify existing ones. You must specify the name of the domain you are configuring and an index field configuration. The index field configuration specifies a unique name, the index field type, and the options you want to configure for the field. The options you can specify depend on the IndexFieldType. If the field exists, the new configuration replaces the old one. For more information, see Configuring Index Fields in the Amazon CloudSearch Developer Guide. 
     */
@@ -77,6 +83,7 @@ trait CloudSearch extends Service {
     params: DefineIndexFieldRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DefineIndexFieldResponse, Unit]
   ): Request[DefineIndexFieldResponse, AWSError] = js.native
+  
   /**
     * Configures a suggester for a domain. A suggester enables you to display possible matches before users finish typing their queries. When you configure a suggester, you must specify the name of the text field you want to search for possible matches and a unique name for the suggester. For more information, see Getting Search Suggestions in the Amazon CloudSearch Developer Guide.
     */
@@ -90,6 +97,7 @@ trait CloudSearch extends Service {
     params: DefineSuggesterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DefineSuggesterResponse, Unit]
   ): Request[DefineSuggesterResponse, AWSError] = js.native
+  
   /**
     * Deletes an analysis scheme. For more information, see Configuring Analysis Schemes in the Amazon CloudSearch Developer Guide. 
     */
@@ -103,6 +111,7 @@ trait CloudSearch extends Service {
     params: DeleteAnalysisSchemeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAnalysisSchemeResponse, Unit]
   ): Request[DeleteAnalysisSchemeResponse, AWSError] = js.native
+  
   /**
     * Permanently deletes a search domain and all of its data. Once a domain has been deleted, it cannot be recovered. For more information, see Deleting a Search Domain in the Amazon CloudSearch Developer Guide. 
     */
@@ -116,6 +125,7 @@ trait CloudSearch extends Service {
     params: DeleteDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainResponse, Unit]
   ): Request[DeleteDomainResponse, AWSError] = js.native
+  
   /**
     * Removes an Expression from the search domain. For more information, see Configuring Expressions in the Amazon CloudSearch Developer Guide.
     */
@@ -129,6 +139,7 @@ trait CloudSearch extends Service {
     params: DeleteExpressionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteExpressionResponse, Unit]
   ): Request[DeleteExpressionResponse, AWSError] = js.native
+  
   /**
     * Removes an IndexField from the search domain. For more information, see Configuring Index Fields in the Amazon CloudSearch Developer Guide.
     */
@@ -142,6 +153,7 @@ trait CloudSearch extends Service {
     params: DeleteIndexFieldRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteIndexFieldResponse, Unit]
   ): Request[DeleteIndexFieldResponse, AWSError] = js.native
+  
   /**
     * Deletes a suggester. For more information, see Getting Search Suggestions in the Amazon CloudSearch Developer Guide.
     */
@@ -155,6 +167,7 @@ trait CloudSearch extends Service {
     params: DeleteSuggesterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteSuggesterResponse, Unit]
   ): Request[DeleteSuggesterResponse, AWSError] = js.native
+  
   /**
     * Gets the analysis schemes configured for a domain. An analysis scheme defines language-specific text processing options for a text field. Can be limited to specific analysis schemes by name. By default, shows all analysis schemes and includes any pending changes to the configuration. Set the Deployed option to true to show the active configuration and exclude pending changes. For more information, see Configuring Analysis Schemes in the Amazon CloudSearch Developer Guide.
     */
@@ -168,6 +181,7 @@ trait CloudSearch extends Service {
     params: DescribeAnalysisSchemesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAnalysisSchemesResponse, Unit]
   ): Request[DescribeAnalysisSchemesResponse, AWSError] = js.native
+  
   /**
     * Gets the availability options configured for a domain. By default, shows the configuration with any pending changes. Set the Deployed option to true to show the active configuration and exclude pending changes. For more information, see Configuring Availability Options in the Amazon CloudSearch Developer Guide.
     */
@@ -181,6 +195,7 @@ trait CloudSearch extends Service {
     params: DescribeAvailabilityOptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAvailabilityOptionsResponse, Unit]
   ): Request[DescribeAvailabilityOptionsResponse, AWSError] = js.native
+  
   /**
     * Returns the domain's endpoint options, specifically whether all requests to the domain must arrive over HTTPS. For more information, see Configuring Domain Endpoint Options in the Amazon CloudSearch Developer Guide.
     */
@@ -194,6 +209,7 @@ trait CloudSearch extends Service {
     params: DescribeDomainEndpointOptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainEndpointOptionsResponse, Unit]
   ): Request[DescribeDomainEndpointOptionsResponse, AWSError] = js.native
+  
   /**
     * Gets information about the search domains owned by this account. Can be limited to specific domains. Shows all domains by default. To get the number of searchable documents in a domain, use the console or submit a matchall request to your domain's search endpoint: q=matchall&amp;amp;q.parser=structured&amp;amp;size=0. For more information, see Getting Information about a Search Domain in the Amazon CloudSearch Developer Guide.
     */
@@ -207,6 +223,7 @@ trait CloudSearch extends Service {
     params: DescribeDomainsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainsResponse, Unit]
   ): Request[DescribeDomainsResponse, AWSError] = js.native
+  
   /**
     * Gets the expressions configured for the search domain. Can be limited to specific expressions by name. By default, shows all expressions and includes any pending changes to the configuration. Set the Deployed option to true to show the active configuration and exclude pending changes. For more information, see Configuring Expressions in the Amazon CloudSearch Developer Guide.
     */
@@ -220,6 +237,7 @@ trait CloudSearch extends Service {
     params: DescribeExpressionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeExpressionsResponse, Unit]
   ): Request[DescribeExpressionsResponse, AWSError] = js.native
+  
   /**
     * Gets information about the index fields configured for the search domain. Can be limited to specific fields by name. By default, shows all fields and includes any pending changes to the configuration. Set the Deployed option to true to show the active configuration and exclude pending changes. For more information, see Getting Domain Information in the Amazon CloudSearch Developer Guide.
     */
@@ -233,6 +251,7 @@ trait CloudSearch extends Service {
     params: DescribeIndexFieldsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeIndexFieldsResponse, Unit]
   ): Request[DescribeIndexFieldsResponse, AWSError] = js.native
+  
   /**
     * Gets the scaling parameters configured for a domain. A domain's scaling parameters specify the desired search instance type and replication count. For more information, see Configuring Scaling Options in the Amazon CloudSearch Developer Guide.
     */
@@ -246,6 +265,7 @@ trait CloudSearch extends Service {
     params: DescribeScalingParametersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeScalingParametersResponse, Unit]
   ): Request[DescribeScalingParametersResponse, AWSError] = js.native
+  
   /**
     * Gets information about the access policies that control access to the domain's document and search endpoints. By default, shows the configuration with any pending changes. Set the Deployed option to true to show the active configuration and exclude pending changes. For more information, see Configuring Access for a Search Domain in the Amazon CloudSearch Developer Guide.
     */
@@ -259,6 +279,7 @@ trait CloudSearch extends Service {
     params: DescribeServiceAccessPoliciesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeServiceAccessPoliciesResponse, Unit]
   ): Request[DescribeServiceAccessPoliciesResponse, AWSError] = js.native
+  
   /**
     * Gets the suggesters configured for a domain. A suggester enables you to display possible matches before users finish typing their queries. Can be limited to specific suggesters by name. By default, shows all suggesters and includes any pending changes to the configuration. Set the Deployed option to true to show the active configuration and exclude pending changes. For more information, see Getting Search Suggestions in the Amazon CloudSearch Developer Guide.
     */
@@ -272,6 +293,7 @@ trait CloudSearch extends Service {
     params: DescribeSuggestersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSuggestersResponse, Unit]
   ): Request[DescribeSuggestersResponse, AWSError] = js.native
+  
   /**
     * Tells the search domain to start indexing its documents using the latest indexing options. This operation must be invoked to activate options whose OptionStatus is RequiresIndexDocuments.
     */
@@ -285,11 +307,13 @@ trait CloudSearch extends Service {
     params: IndexDocumentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ IndexDocumentsResponse, Unit]
   ): Request[IndexDocumentsResponse, AWSError] = js.native
+  
   /**
     * Lists all search domains owned by an account.
     */
   def listDomainNames(): Request[ListDomainNamesResponse, AWSError] = js.native
   def listDomainNames(callback: js.Function2[/* err */ AWSError, /* data */ ListDomainNamesResponse, Unit]): Request[ListDomainNamesResponse, AWSError] = js.native
+  
   /**
     * Configures the availability options for a domain. Enabling the Multi-AZ option expands an Amazon CloudSearch domain to an additional Availability Zone in the same Region to increase fault tolerance in the event of a service disruption. Changes to the Multi-AZ option can take about half an hour to become active. For more information, see Configuring Availability Options in the Amazon CloudSearch Developer Guide.
     */
@@ -303,6 +327,7 @@ trait CloudSearch extends Service {
     params: UpdateAvailabilityOptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAvailabilityOptionsResponse, Unit]
   ): Request[UpdateAvailabilityOptionsResponse, AWSError] = js.native
+  
   /**
     * Updates the domain's endpoint options, specifically whether all requests to the domain must arrive over HTTPS. For more information, see Configuring Domain Endpoint Options in the Amazon CloudSearch Developer Guide.
     */
@@ -316,6 +341,7 @@ trait CloudSearch extends Service {
     params: UpdateDomainEndpointOptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainEndpointOptionsResponse, Unit]
   ): Request[UpdateDomainEndpointOptionsResponse, AWSError] = js.native
+  
   /**
     * Configures scaling parameters for a domain. A domain's scaling parameters specify the desired search instance type and replication count. Amazon CloudSearch will still automatically scale your domain based on the volume of data and traffic, but not below the desired instance type and replication count. If the Multi-AZ option is enabled, these values control the resources used per Availability Zone. For more information, see Configuring Scaling Options in the Amazon CloudSearch Developer Guide. 
     */
@@ -329,6 +355,7 @@ trait CloudSearch extends Service {
     params: UpdateScalingParametersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateScalingParametersResponse, Unit]
   ): Request[UpdateScalingParametersResponse, AWSError] = js.native
+  
   /**
     * Configures the access rules that control access to the domain's document and search endpoints. For more information, see  Configuring Access for an Amazon CloudSearch Domain.
     */
@@ -343,4 +370,3 @@ trait CloudSearch extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateServiceAccessPoliciesResponse, Unit]
   ): Request[UpdateServiceAccessPoliciesResponse, AWSError] = js.native
 }
-

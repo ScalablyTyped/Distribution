@@ -12,11 +12,18 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "servicequotas")
 @js.native
 object servicequotas extends js.Object {
+  
+  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = js.native
+  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = js.native
+  
+  def getServiceQuota(args: GetServiceQuotaArgs): js.Promise[GetServiceQuotaResult] = js.native
+  def getServiceQuota(args: GetServiceQuotaArgs, opts: InvokeOptions): js.Promise[GetServiceQuotaResult] = js.native
+  
   @js.native
   class ServiceQuota protected ()
     extends typings.pulumiAws.servicequotasMod.ServiceQuota {
@@ -30,14 +37,10 @@ object servicequotas extends js.Object {
     def this(name: String, args: ServiceQuotaArgs) = this()
     def this(name: String, args: ServiceQuotaArgs, opts: CustomResourceOptions) = this()
   }
-  
-  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = js.native
-  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = js.native
-  def getServiceQuota(args: GetServiceQuotaArgs): js.Promise[GetServiceQuotaResult] = js.native
-  def getServiceQuota(args: GetServiceQuotaArgs, opts: InvokeOptions): js.Promise[GetServiceQuotaResult] = js.native
   /* static members */
   @js.native
   object ServiceQuota extends js.Object {
+    
     /**
       * Get an existing ServiceQuota resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -51,12 +54,11 @@ object servicequotas extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.serviceQuotaMod.ServiceQuota = js.native
     def get(name: String, id: Input[ID], state: ServiceQuotaState): typings.pulumiAws.serviceQuotaMod.ServiceQuota = js.native
     def get(name: String, id: Input[ID], state: ServiceQuotaState, opts: CustomResourceOptions): typings.pulumiAws.serviceQuotaMod.ServiceQuota = js.native
+    
     /**
       * Returns true if the given object is an instance of ServiceQuota.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicequotas/serviceQuota.ServiceQuota */ Boolean = js.native
   }
-  
 }
-

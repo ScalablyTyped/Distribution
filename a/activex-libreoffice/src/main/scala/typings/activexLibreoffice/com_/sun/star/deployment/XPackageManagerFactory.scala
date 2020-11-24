@@ -2,7 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.deployment
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The {@link XPackageManagerFactory} interface is used to obtain {@link XPackageManager} instances.
@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XPackageManagerFactory extends js.Object {
+  
   /**
     * Method to create (or reusing and already existing) {@link XPackageManager} object to add or remove UNO packages persistently.
     *
@@ -25,27 +26,30 @@ trait XPackageManagerFactory extends js.Object {
     */
   def getPackageManager(context: String): XPackageManager = js.native
 }
-
 object XPackageManagerFactory {
+  
   @scala.inline
   def apply(getPackageManager: String => XPackageManager): XPackageManagerFactory = {
     val __obj = js.Dynamic.literal(getPackageManager = js.Any.fromFunction1(getPackageManager))
     __obj.asInstanceOf[XPackageManagerFactory]
   }
+  
   @scala.inline
   implicit class XPackageManagerFactoryOps[Self <: XPackageManagerFactory] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetPackageManager(value: String => XPackageManager): Self = this.set("getPackageManager", js.Any.fromFunction1(value))
   }
-  
 }
-

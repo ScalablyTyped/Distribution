@@ -4,7 +4,7 @@ import typings.inquirer.mod.Answers
 import typings.node.readlineMod.Interface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a prompt which provides a message to confirm.
@@ -29,4 +29,3 @@ class ^[TQuestion /* <: Question */] protected () extends ConfirmPrompt[TQuestio
     */
   def this(questions: TQuestion, readLine: Interface, answers: Answers) = this()
 }
-

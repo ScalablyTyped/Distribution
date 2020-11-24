@@ -5,7 +5,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the appearance of the lines of a shape. */
 /* Rewritten from type alias, can be one of: 
@@ -14,11 +14,12 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait LineStyle extends js.Object
-
 object LineStyle {
+  
   /** the line use dashes. */
   @scala.inline
   def DASH: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * the area is not filled.
     *
@@ -34,6 +35,7 @@ object LineStyle {
     */
   @scala.inline
   def NONE: `0` = 0.asInstanceOf[`0`]
+  
   /**
     * use a solid color to fill the area.
     *
@@ -42,4 +44,3 @@ object LineStyle {
   @scala.inline
   def SOLID: `1` = 1.asInstanceOf[`1`]
 }
-

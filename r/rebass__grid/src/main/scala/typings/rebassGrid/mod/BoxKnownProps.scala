@@ -15,7 +15,7 @@ import typings.styledSystem.mod.ThemeValue
 import typings.styledSystem.mod.WidthProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BoxKnownProps
@@ -23,7 +23,7 @@ trait BoxKnownProps
      with SpaceProps[RequiredTheme, ThemeValue[space, RequiredTheme, js.Any]]
      with WidthProps[
       RequiredTheme, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.WidthProperty<TLengthStyledSystem> */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any
     ]
      with FontSizeProps[RequiredTheme, ThemeValue[fontSizes, RequiredTheme, js.Any]]
      with TextColorProps[RequiredTheme, ThemeValue[colors, RequiredTheme, js.Any]]
@@ -31,16 +31,15 @@ trait BoxKnownProps
      with OpacityProps[RequiredTheme]
      with typings.styledSystem.mod.FlexProps[
       RequiredTheme, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.FlexProperty<TLengthStyledSystem> */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any
     ]
      with OrderProps[RequiredTheme]
      with AlignSelfProps[RequiredTheme]
-
 object BoxKnownProps {
+  
   @scala.inline
   def apply(): BoxKnownProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BoxKnownProps]
   }
 }
-

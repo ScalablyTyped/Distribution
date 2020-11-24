@@ -7,7 +7,6 @@ import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponent
 import typings.oracleOraclejet.ojpictochartMod.ojPictoChart.ItemContext
 import typings.oracleOraclejet.ojpictochartMod.ojPictoChart.NodeContext
-import typings.oracleOraclejet.ojpictochartMod.ojPictoChart.ojDrill
 import typings.oracleOraclejet.oracleOraclejetStrings.all
 import typings.oracleOraclejet.oracleOraclejetStrings.alphaFade
 import typings.oracleOraclejet.oracleOraclejetStrings.animationDuration
@@ -49,6 +48,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.layoutOriginChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.multiple
 import typings.oracleOraclejet.oracleOraclejetStrings.none
 import typings.oracleOraclejet.oracleOraclejetStrings.off
+import typings.oracleOraclejet.oracleOraclejetStrings.ojDrill
 import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.popIn
 import typings.oracleOraclejet.oracleOraclejetStrings.rowCount
@@ -71,53 +71,11 @@ import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojPictoChart_[K, D] extends dvtBaseComponent[ojPictoChartSettableProperties[K, D]] {
-  var animationDuration: js.UndefOr[Double] = js.native
-  var animationOnDataChange: auto | none = js.native
-  var animationOnDisplay: auto | popIn | alphaFade | zoom | none = js.native
-  var as: String = js.native
-  var columnCount: Double | Null = js.native
-  var columnWidth: Double | Null = js.native
-  var data: (DataProvider[K, D]) | Null = js.native
-  var drilling: on | off = js.native
-  var hiddenCategories: js.Array[String] = js.native
-  var highlightMatch: any | all = js.native
-  var highlightedCategories: js.Array[String] = js.native
-  var hoverBehavior: dim | none = js.native
-  var hoverBehaviorDelay: Double = js.native
-  var layout: vertical | horizontal = js.native
-  var layoutOrigin: topEnd | bottomStart | bottomEnd | topStart = js.native
-  var onAnimationDurationChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
-  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | popIn | alphaFade | zoom | none], _]) | Null = js.native
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onColumnCountChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onColumnWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
-  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
-  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], _]) | Null = js.native
-  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
-  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
-  var onHoverBehaviorDelayChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onLayoutChanged: (js.Function1[/* event */ JetElementCustomEvent[vertical | horizontal], _]) | Null = js.native
-  var onLayoutOriginChanged: (js.Function1[/* event */ JetElementCustomEvent[topEnd | bottomStart | bottomEnd | topStart], _]) | Null = js.native
-  var onOjDrill: (js.Function1[/* event */ ojDrill, _]) | Null = js.native
-  var onRowCountChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onRowHeightChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], _]) | Null = js.native
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`16`[K]], _]) | Null = js.native
-  var rowCount: Double | Null = js.native
-  var rowHeight: Double | Null = js.native
-  var selection: js.Array[K] = js.native
-  var selectionMode: single | multiple | none = js.native
-  var tooltip: `16`[K] = js.native
-  @JSName("translations")
-  var translations_ojPictoChart_ : LabelAndValue = js.native
+  
   def addEventListener(
     `type`: animationOnDataChangeChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], _]
@@ -304,13 +262,21 @@ trait ojPictoChart_[K, D] extends dvtBaseComponent[ojPictoChartSettablePropertie
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojDrill(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojDrill,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojDrill, _]
+    `type`: ojDrill,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojpictochartMod.ojPictoChart.ojDrill, 
+      _
+    ]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojDrill(
-    `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojDrill,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ojDrill, _],
+    `type`: ojDrill,
+    listener: js.ThisFunction1[
+      /* this */ HTMLElement, 
+      /* ev */ typings.oracleOraclejet.ojpictochartMod.ojPictoChart.ojDrill, 
+      _
+    ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -357,9 +323,29 @@ trait ojPictoChart_[K, D] extends dvtBaseComponent[ojPictoChartSettablePropertie
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`16`[K]], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var animationDuration: js.UndefOr[Double] = js.native
+  
+  var animationOnDataChange: auto | none = js.native
+  
+  var animationOnDisplay: auto | popIn | alphaFade | zoom | none = js.native
+  
+  var as: String = js.native
+  
+  var columnCount: Double | Null = js.native
+  
+  var columnWidth: Double | Null = js.native
+  
+  var data: (DataProvider[K, D]) | Null = js.native
+  
+  var drilling: on | off = js.native
+  
   def getContextByNode(node: Element): NodeContext | Null = js.native
+  
   def getItem(index: Double): ItemContext[K] | Null = js.native
+  
   def getItemCount(): Double = js.native
+  
   @JSName("getProperty")
   def getProperty_animationDuration(property: animationDuration): js.UndefOr[Double] = js.native
   @JSName("getProperty")
@@ -400,7 +386,73 @@ trait ojPictoChart_[K, D] extends dvtBaseComponent[ojPictoChartSettablePropertie
   def getProperty_selectionMode(property: selectionMode): single | multiple | none = js.native
   @JSName("getProperty")
   def getProperty_tooltip(property: tooltip): `16`[K] = js.native
+  
+  var hiddenCategories: js.Array[String] = js.native
+  
+  var highlightMatch: any | all = js.native
+  
+  var highlightedCategories: js.Array[String] = js.native
+  
+  var hoverBehavior: dim | none = js.native
+  
+  var hoverBehaviorDelay: Double = js.native
+  
+  var layout: vertical | horizontal = js.native
+  
+  var layoutOrigin: topEnd | bottomStart | bottomEnd | topStart = js.native
+  
+  var onAnimationDurationChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Double]], _]) | Null = js.native
+  
+  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
+  
+  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | popIn | alphaFade | zoom | none], _]) | Null = js.native
+  
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onColumnCountChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onColumnWidthChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
+  
+  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
+  
+  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], _]) | Null = js.native
+  
+  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], _]) | Null = js.native
+  
+  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
+  
+  var onHoverBehaviorDelayChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onLayoutChanged: (js.Function1[/* event */ JetElementCustomEvent[vertical | horizontal], _]) | Null = js.native
+  
+  var onLayoutOriginChanged: (js.Function1[/* event */ JetElementCustomEvent[topEnd | bottomStart | bottomEnd | topStart], _]) | Null = js.native
+  
+  var onOjDrill: (js.Function1[/* event */ typings.oracleOraclejet.ojpictochartMod.ojPictoChart.ojDrill, _]) | Null = js.native
+  
+  var onRowCountChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onRowHeightChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], _]) | Null = js.native
+  
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
+  
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`16`[K]], _]) | Null = js.native
+  
+  var rowCount: Double | Null = js.native
+  
+  var rowHeight: Double | Null = js.native
+  
+  var selection: js.Array[K] = js.native
+  
+  var selectionMode: single | multiple | none = js.native
+  
   def setProperties(properties: ojPictoChartSettablePropertiesLenient[K, D]): Unit = js.native
+  
   def setProperty(property: animationOnDataChange, value: auto): Unit = js.native
   def setProperty(property: animationOnDataChange, value: none): Unit = js.native
   def setProperty(property: animationOnDisplay, value: alphaFade): Unit = js.native
@@ -461,5 +513,9 @@ trait ojPictoChart_[K, D] extends dvtBaseComponent[ojPictoChartSettablePropertie
   def setProperty_tooltip(property: tooltip, value: `16`[K]): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: LabelAndValue): Unit = js.native
+  
+  var tooltip: `16`[K] = js.native
+  
+  @JSName("translations")
+  var translations_ojPictoChart_ : LabelAndValue = js.native
 }
-

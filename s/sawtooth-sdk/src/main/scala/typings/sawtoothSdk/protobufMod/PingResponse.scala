@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "PingResponse")
 @js.native
@@ -17,17 +17,18 @@ import scala.scalajs.js.annotation._
   */
 class PingResponse () extends IPingResponse {
   def this(properties: IPingResponse) = this()
+  
   /**
     * Converts this PingResponse to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "PingResponse")
 @js.native
 object PingResponse extends js.Object {
+  
   /**
     * Creates a new PingResponse instance using the specified properties.
     * @param [properties] Properties to set
@@ -35,6 +36,7 @@ object PingResponse extends js.Object {
     */
   def create(): PingResponse = js.native
   def create(properties: IPingResponse): PingResponse = js.native
+  
   /**
     * Decodes a PingResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -47,6 +49,7 @@ object PingResponse extends js.Object {
   def decode(reader: Reader, length: Double): PingResponse = js.native
   def decode(reader: Uint8Array): PingResponse = js.native
   def decode(reader: Uint8Array, length: Double): PingResponse = js.native
+  
   /**
     * Decodes a PingResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -56,6 +59,7 @@ object PingResponse extends js.Object {
     */
   def decodeDelimited(reader: Reader): PingResponse = js.native
   def decodeDelimited(reader: Uint8Array): PingResponse = js.native
+  
   /**
     * Encodes the specified PingResponse message. Does not implicitly {@link PingResponse.verify|verify} messages.
     * @param message PingResponse message or plain object to encode
@@ -64,6 +68,7 @@ object PingResponse extends js.Object {
     */
   def encode(message: IPingResponse): Writer = js.native
   def encode(message: IPingResponse, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified PingResponse message, length delimited. Does not implicitly {@link PingResponse.verify|verify} messages.
     * @param message PingResponse message or plain object to encode
@@ -72,12 +77,14 @@ object PingResponse extends js.Object {
     */
   def encodeDelimited(message: IPingResponse): Writer = js.native
   def encodeDelimited(message: IPingResponse, writer: Writer): Writer = js.native
+  
   /**
     * Creates a PingResponse message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns PingResponse
     */
   def fromObject(`object`: StringDictionary[js.Any]): PingResponse = js.native
+  
   /**
     * Creates a plain object from a PingResponse message. Also converts values to other types if specified.
     * @param message PingResponse
@@ -86,6 +93,7 @@ object PingResponse extends js.Object {
     */
   def toObject(message: PingResponse): StringDictionary[js.Any] = js.native
   def toObject(message: PingResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a PingResponse message.
     * @param message Plain object to verify
@@ -93,4 +101,3 @@ object PingResponse extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

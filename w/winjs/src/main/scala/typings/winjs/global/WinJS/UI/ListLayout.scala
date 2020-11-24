@@ -2,7 +2,7 @@ package typings.winjs.global.WinJS.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a layout for the ListView in which items are arranged in a vertical list.
@@ -19,14 +19,13 @@ class ListLayout ()
   extends typings.winjs.WinJS.UI.ListLayout {
   def this(options: js.Any) = this()
 }
-
 /* static members */
 @JSGlobal("WinJS.UI.ListLayout")
 @js.native
 object ListLayout extends js.Object {
+  
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
   var supportedForProcessing: Boolean = js.native
 }
-

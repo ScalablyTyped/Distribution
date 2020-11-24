@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.servicenowLondon.ScopedGlideRecord
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("GlideRecordSecure")
 @js.native
@@ -19,8 +19,6 @@ class GlideRecordSecure protected () extends ScopedGlideRecord {
     */
   def this(tableName: String) = this()
 }
-
 @JSGlobal("GlideRecordSecure")
 @js.native
 object GlideRecordSecure extends TopLevel[ScopedGlideRecord]
-

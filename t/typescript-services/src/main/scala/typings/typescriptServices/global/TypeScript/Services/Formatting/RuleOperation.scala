@@ -2,21 +2,21 @@ package typings.typescriptServices.global.TypeScript.Services.Formatting
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.Services.Formatting.RuleOperation")
 @js.native
 class RuleOperation ()
   extends typings.typescriptServices.TypeScript.Services.Formatting.RuleOperation
-
 /* static members */
 @JSGlobal("TypeScript.Services.Formatting.RuleOperation")
 @js.native
 object RuleOperation extends js.Object {
+  
   def create1(action: typings.typescriptServices.TypeScript.Services.Formatting.RuleAction): typings.typescriptServices.TypeScript.Services.Formatting.RuleOperation = js.native
+  
   def create2(
     context: typings.typescriptServices.TypeScript.Services.Formatting.RuleOperationContext,
     action: typings.typescriptServices.TypeScript.Services.Formatting.RuleAction
   ): typings.typescriptServices.TypeScript.Services.Formatting.RuleOperation = js.native
 }
-

@@ -10,9 +10,9 @@ Webpack plugin for enabling Subresource Integrity
 | ------------------ | :-------------: |
 | Full name          | webpack-subresource-integrity |
 | Keywords           | webpack, plugin, sri, subresource, integrity, html-webpack-plugin |
-| # releases         | 15 |
-| # dependents       | 51 |
-| # downloads        | 40762332 |
+| # releases         | 13 |
+| # dependents       | 62 |
+| # downloads        | 58778895 |
 | # stars            | 5 |
 
 ## Links

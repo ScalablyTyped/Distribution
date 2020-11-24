@@ -8,25 +8,24 @@ import typings.winrtUwp.Windows.Networking.HostName
 import typings.winrtUwp.Windows.Networking.Sockets.SocketProtectionLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an instance of a service on a Bluetooth BR device. */
 @js.native
 trait RfcommDeviceService extends js.Object {
-  /** Gets the connection host name of the RFCOMM service instance, which is used to connect to the remote device. */
-  var connectionHostName: HostName = js.native
-  /** Gets the connection service name of the RFCOMM service instance, which is used to connect to the remote device. */
-  var connectionServiceName: String = js.native
-  /** Gets the BluetoothDevice object describing the device associated with the current RfcommDeviceService object. */
-  var device: BluetoothDevice = js.native
-  /** Gets the maximum SocketProtectionLevel supported by this RFCOMM service instance. */
-  var maxProtectionLevel: SocketProtectionLevel = js.native
-  /** Gets the current SocketProtectionLevel of the RFCOMM service instance. */
-  var protectionLevel: SocketProtectionLevel = js.native
-  /** Gets the RfcommServiceId of this RFCOMM service instance. */
-  var serviceId: RfcommServiceId = js.native
+  
   /** Closes the RFCOMM device. */
   def close(): Unit = js.native
+  
+  /** Gets the connection host name of the RFCOMM service instance, which is used to connect to the remote device. */
+  var connectionHostName: HostName = js.native
+  
+  /** Gets the connection service name of the RFCOMM service instance, which is used to connect to the remote device. */
+  var connectionServiceName: String = js.native
+  
+  /** Gets the BluetoothDevice object describing the device associated with the current RfcommDeviceService object. */
+  var device: BluetoothDevice = js.native
+  
   /**
     * Gets the cached SDP attributes of the RFCOMM service instance.
     * @return The SDP attributes of the RFCOMM service instance.
@@ -38,5 +37,13 @@ trait RfcommDeviceService extends js.Object {
     * @return The SDP attributes of the RFCOMM service instance.
     */
   def getSdpRawAttributesAsync(cacheMode: BluetoothCacheMode): IPromiseWithIAsyncOperation[IMapView[_, _]] = js.native
+  
+  /** Gets the maximum SocketProtectionLevel supported by this RFCOMM service instance. */
+  var maxProtectionLevel: SocketProtectionLevel = js.native
+  
+  /** Gets the current SocketProtectionLevel of the RFCOMM service instance. */
+  var protectionLevel: SocketProtectionLevel = js.native
+  
+  /** Gets the RfcommServiceId of this RFCOMM service instance. */
+  var serviceId: RfcommServiceId = js.native
 }
-

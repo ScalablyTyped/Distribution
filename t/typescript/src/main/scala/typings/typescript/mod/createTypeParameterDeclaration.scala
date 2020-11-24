@@ -2,11 +2,13 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createTypeParameterDeclaration")
 @js.native
 object createTypeParameterDeclaration extends js.Object {
+  
+  /** @deprecated Use `factory.createTypeParameterDeclaration` or the factory supplied by your transformation context instead. */
   def apply(name: java.lang.String): TypeParameterDeclaration = js.native
   def apply(name: java.lang.String, constraint: js.UndefOr[scala.Nothing], defaultType: TypeNode): TypeParameterDeclaration = js.native
   def apply(name: java.lang.String, constraint: TypeNode): TypeParameterDeclaration = js.native
@@ -16,4 +18,3 @@ object createTypeParameterDeclaration extends js.Object {
   def apply(name: Identifier, constraint: TypeNode): TypeParameterDeclaration = js.native
   def apply(name: Identifier, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = js.native
 }
-

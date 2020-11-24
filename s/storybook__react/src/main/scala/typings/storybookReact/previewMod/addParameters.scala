@@ -6,10 +6,9 @@ import typings.storybookAddons.typesMod.StoryApi
 import typings.storybookReact.typesMod.StoryFnReactReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/react/dist/client/preview", "addParameters")
 @js.native
 object addParameters
   extends TopLevel[js.Function1[/* parameter */ Parameters, StoryApi[StoryFnReactReturnType]]]
-

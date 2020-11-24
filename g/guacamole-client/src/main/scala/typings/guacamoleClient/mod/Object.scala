@@ -2,7 +2,7 @@ package typings.guacamoleClient.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "Object")
 @js.native
@@ -14,16 +14,17 @@ class Object protected ()
     */
   def this(client: typings.guacamoleClient.clientMod.Client, index: Double) = this()
 }
-
 /* static members */
 @JSImport("guacamole-client", "Object")
 @js.native
 object Object extends js.Object {
+  
   /**
     * The reserved name denoting the root stream of any object. The contents of
     * the root stream MUST be a JSON map of stream name to mimetype.
     */
   val ROOT_STREAM: String = js.native
+  
   /**
     * The mimetype of a stream containing JSON which maps available stream names
     * to their corresponding mimetype. The root stream of a Guacamole.Object MUST
@@ -31,4 +32,3 @@ object Object extends js.Object {
     */
   val STREAM_INDEX_MIMETYPE: String = js.native
 }
-

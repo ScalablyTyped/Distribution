@@ -4,7 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.form.component.DatabaseListBox
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service specifies a list box model which is data-aware and thus can be bound to a database field, and additionally supports binding to arbitrary
@@ -51,6 +51,7 @@ import scala.scalajs.js.annotation._
 trait BindableDatabaseListBox
   extends DatabaseListBox
      with XBindableValue {
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -58,4 +59,3 @@ trait BindableDatabaseListBox
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-

@@ -1,18 +1,17 @@
 package typings.googleCloudPreciseDate.mod
 
-import typings.std.BigInt
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/precise-date", "PreciseDate")
 @js.native
 class PreciseDate () extends Date {
   def this(preciseTime: String) = this()
+  def this(preciseTime: js.BigInt) = this()
   def this(preciseTime: DateTuple) = this()
   def this(preciseTime: ProtobufDate) = this()
-  def this(preciseTime: BigInt) = this()
   def this(time: Double) = this()
   def this(time: Date) = this()
   def this(
@@ -26,6 +25,7 @@ class PreciseDate () extends Date {
     microseconds: js.UndefOr[Double],
     nanoseconds: js.UndefOr[Double]
   ) = this()
+  
   /**
     * Returns the sub-second precision of the specified date. This will always be
     * a positive number.
@@ -35,6 +35,7 @@ class PreciseDate () extends Date {
     * @returns {number}
     */
   var _getNanos: js.Any = js.native
+  
   /**
     * Returns the total number of seconds in the specified date since Unix epoch.
     * Numbers representing < epoch will be negative.
@@ -44,8 +45,11 @@ class PreciseDate () extends Date {
     * @returns {number}
     */
   var _getSeconds: js.Any = js.native
+  
   var _micros: js.Any = js.native
+  
   var _nanos: js.Any = js.native
+  
   /**
     * Returns the specified date represented in nanoseconds according to
     * universal time.
@@ -64,7 +68,8 @@ class PreciseDate () extends Date {
     * console.log(date.getFullTime());
     * // expected output: 1549622069481145231n
     */
-  def getFullTime(): BigInt = js.native
+  def getFullTime(): js.BigInt = js.native
+  
   /**
     * Returns a string of the specified date represented in nanoseconds according
     * to universal time.
@@ -78,6 +83,7 @@ class PreciseDate () extends Date {
     * // expected output: "1549622069481145231"
     */
   def getFullTimeString(): String = js.native
+  
   /**
     * Returns the microseconds in the specified date according to universal time.
     *
@@ -90,6 +96,7 @@ class PreciseDate () extends Date {
     * // expected output: 145
     */
   def getMicroseconds(): Double = js.native
+  
   /**
     * Returns the nanoseconds in the specified date according to universal time.
     *
@@ -102,6 +109,7 @@ class PreciseDate () extends Date {
     * // expected output: 231
     */
   def getNanoseconds(): Double = js.native
+  
   /**
     * Sets the PreciseDate object to the time represented by a number of
     * nanoseconds since January 1, 1970, 00:00:00 UTC.
@@ -122,8 +130,9 @@ class PreciseDate () extends Date {
     * date.setFullTime(1549622069481145231n);
     */
   def setFullTime(time: String): String = js.native
+  def setFullTime(time: js.BigInt): String = js.native
   def setFullTime(time: Double): String = js.native
-  def setFullTime(time: BigInt): String = js.native
+  
   /**
     * Sets the microseconds for a specified date according to universal time.
     *
@@ -140,6 +149,7 @@ class PreciseDate () extends Date {
     * // expected output: 149
     */
   def setMicroseconds(micros: Double): String = js.native
+  
   /**
     * Sets the nanoseconds for a specified date according to universal time.
     *
@@ -156,6 +166,7 @@ class PreciseDate () extends Date {
     * // expected output: 231
     */
   def setNanoseconds(nanos: Double): String = js.native
+  
   /**
     * Returns an object representing the specified date according to universal
     * time.
@@ -171,6 +182,7 @@ class PreciseDate () extends Date {
     * // expected output: {seconds: 1549622069, nanos: 481145231}
     */
   def toStruct(): DateStruct = js.native
+  
   /**
     * Returns a tuple representing the specified date according to universal
     * time.
@@ -185,11 +197,11 @@ class PreciseDate () extends Date {
     */
   def toTuple(): DateTuple = js.native
 }
-
 /* static members */
 @JSImport("@google-cloud/precise-date", "PreciseDate")
 @js.native
 object PreciseDate extends js.Object {
+  
   /**
     * Accepts the same number parameters as the PreciseDate constructor, but
     * treats them as UTC. It returns a string that represents the number of
@@ -210,7 +222,8 @@ object PreciseDate extends js.Object {
     * const time = PreciseDate.fullUTC(2019, 1, 8, 10, 34, 29, 481, 145, 231);
     * console.log(time); // expected output: 1549622069481145231n
     */
-  def fullUTC(args: Double*): BigInt = js.native
+  def fullUTC(args: Double*): js.BigInt = js.native
+  
   /**
     * Accepts the same number parameters as the PreciseDate constructor, but
     * treats them as UTC. It returns a string that represents the number of
@@ -226,6 +239,7 @@ object PreciseDate extends js.Object {
     * 231); console.log(time); // expected output: '1549622069481145231'
     */
   def fullUTCString(args: Double*): String = js.native
+  
   /**
     * Parses a precise time.
     *
@@ -257,8 +271,7 @@ object PreciseDate extends js.Object {
     * console.log(time); // expected output: "1549622069481145231"
     */
   def parseFull(time: String): String = js.native
+  def parseFull(time: js.BigInt): String = js.native
   def parseFull(time: DateTuple): String = js.native
   def parseFull(time: ProtobufDate): String = js.native
-  def parseFull(time: BigInt): String = js.native
 }
-

@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * enhances the {@link Presentation} service to give access to a {@link XPresentation2} interface.
@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
 trait Presentation2
   extends Presentation
      with XPresentation2
-
 object Presentation2 {
+  
   @scala.inline
   def apply(
     AllowAnimations: Boolean,
@@ -57,4 +57,3 @@ object Presentation2 {
     __obj.asInstanceOf[Presentation2]
   }
 }
-

@@ -19,27 +19,27 @@ import typings.titanium.titaniumStrings.touchstart
 import typings.titanium.titaniumStrings.twofingertap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Popover is used to manage the presentation of content in a popover.
   */
 @js.native
 trait Popover extends View {
+  
+  @JSName("addEventListener")
+  def addEventListener_hide(name: hide, callback: js.ThisFunction1[/* this */ this.type, /* event */ PopoverHideEvent, Unit]): Unit = js.native
+  
   /**
     * Indicates the arrow direction of the popover.
     */
   var arrowDirection: Double = js.native
+  
   /**
     * View to use for the popover content. Must be set before calling the `show()` method.
     */
   var contentView: View = js.native
-  /**
-    * Passthrough views to use when the popover is shown.
-    */
-  var passthroughViews: js.Array[View] = js.native
-  @JSName("addEventListener")
-  def addEventListener_hide(name: hide, callback: js.ThisFunction1[/* this */ this.type, /* event */ PopoverHideEvent, Unit]): Unit = js.native
+  
   @JSName("fireEvent")
   def fireEvent_click(name: click, event: PopoverClickEvent): Unit = js.native
   @JSName("fireEvent")
@@ -72,41 +72,53 @@ trait Popover extends View {
   def fireEvent_touchstart(name: touchstart, event: PopoverTouchstartEvent): Unit = js.native
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: PopoverTwofingertapEvent): Unit = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.iPad.Popover.arrowDirection> property.
     * @deprecated Access <Titanium.UI.iPad.Popover.arrowDirection> instead.
     */
   def getArrowDirection(): Double = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.iPad.Popover.contentView> property.
     * @deprecated Access <Titanium.UI.iPad.Popover.contentView> instead.
     */
   def getContentView(): View = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.iPad.Popover.passthroughViews> property.
     * @deprecated Access <Titanium.UI.iPad.Popover.passthroughViews> instead.
     */
   def getPassthroughViews(): js.Array[View] = js.native
+  
+  /**
+    * Passthrough views to use when the popover is shown.
+    */
+  var passthroughViews: js.Array[View] = js.native
+  
   @JSName("removeEventListener")
   def removeEventListener_hide(name: hide, callback: js.ThisFunction1[/* this */ this.type, /* event */ PopoverHideEvent, Unit]): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.iPad.Popover.arrowDirection> property.
     * @deprecated Set the value using <Titanium.UI.iPad.Popover.arrowDirection> instead.
     */
   def setArrowDirection(arrowDirection: Double): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.iPad.Popover.contentView> property.
     * @deprecated Set the value using <Titanium.UI.iPad.Popover.contentView> instead.
     */
   def setContentView(contentView: View): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.iPad.Popover.passthroughViews> property.
     * @deprecated Set the value using <Titanium.UI.iPad.Popover.passthroughViews> instead.
     */
   def setPassthroughViews(passthroughViews: js.Array[View]): Unit = js.native
+  
   /**
     * Displays the popover.
     */
   def show(options: ShowPopoverParams): Unit = js.native
 }
-

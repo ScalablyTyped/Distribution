@@ -40,22 +40,14 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2Argument
 import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/argument/argument", "Arguments")
 @js.native
 /** @hidden */
 class Arguments () extends js.Object {
   def this(raw: js.Array[GoogleActionsV2Argument]) = this()
-  /** @public */
-  @JSName(js.Symbol.iterator)
-  var iterator: js.Function0[IterableIterator[GoogleActionsV2Argument]] = js.native
-  /** @public */
-  var parsed: Parsed = js.native
-  /** @public */
-  var raw: Raw = js.native
-  /** @public */
-  var status: Status = js.native
+  
   /** @public */
   def get(name: String): Argument = js.native
   @JSName("get")
@@ -121,5 +113,17 @@ class Arguments () extends js.Object {
   def get_TRANSACTIONREQUIREMENTSCHECKRESULT(name: TRANSACTION_REQUIREMENTS_CHECK_RESULT): js.UndefOr[TransactionRequirementsArgument] = js.native
   @JSName("get")
   def get_UPDATESUSERID(name: UPDATES_USER_ID): js.UndefOr[UpdatePermissionUserIdArgument] = js.native
+  
+  /** @public */
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[IterableIterator[GoogleActionsV2Argument]] = js.native
+  
+  /** @public */
+  var parsed: Parsed = js.native
+  
+  /** @public */
+  var raw: Raw = js.native
+  
+  /** @public */
+  var status: Status = js.native
 }
-

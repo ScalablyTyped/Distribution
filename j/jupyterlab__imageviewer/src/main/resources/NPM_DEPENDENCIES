@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/imageviewer" : "2.1.2"
+      "@jupyterlab/imageviewer" : "2.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/imageviewer" : "2.1.2"
+      "@jupyterlab/imageviewer" : "2.2.4"
     }
   ],
   "compile-devDependencies" : [

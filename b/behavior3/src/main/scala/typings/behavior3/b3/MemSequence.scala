@@ -2,7 +2,7 @@ package typings.behavior3.b3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * MemSequence is similar to Sequence node, but when a child returns a
@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MemSequence extends BaseNode
-
 object MemSequence {
+  
   @scala.inline
   def apply(
     _close: Tick => Unit,
@@ -33,4 +33,3 @@ object MemSequence {
     __obj.asInstanceOf[MemSequence]
   }
 }
-

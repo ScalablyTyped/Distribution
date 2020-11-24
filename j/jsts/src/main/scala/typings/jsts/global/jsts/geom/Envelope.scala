@@ -2,7 +2,7 @@ package typings.jsts.global.jsts.geom
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsts.geom.Envelope")
 @js.native
@@ -39,11 +39,11 @@ class Envelope protected ()
     */
   def this(x1: Double, x2: Double, y1: Double, y2: Double) = this()
 }
-
 /* static members */
 @JSGlobal("jsts.geom.Envelope")
 @js.native
 object Envelope extends js.Object {
+  
   /**
     * Test the point q to see whether it intersects the Envelope defined by p1-p2
     *
@@ -63,6 +63,7 @@ object Envelope extends js.Object {
     p2: typings.jsts.jsts.geom.Coordinate,
     q: typings.jsts.jsts.geom.Coordinate
   ): Boolean = js.native
+  
   /**
     * Test the envelope defined by p1-p2 for intersection with the envelope defined
     * by q1-q2
@@ -84,4 +85,3 @@ object Envelope extends js.Object {
     q2: typings.jsts.jsts.geom.Coordinate
   ): Boolean = js.native
 }
-

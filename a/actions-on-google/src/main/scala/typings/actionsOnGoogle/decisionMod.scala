@@ -6,11 +6,12 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3TransactionDecis
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionDecisionValueSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/transaction/decision", JSImport.Namespace)
 @js.native
 object decisionMod extends js.Object {
+  
   @js.native
   /**
     * @param options The raw {@link GoogleActionsV2TransactionDecisionValueSpec}
@@ -31,6 +32,4 @@ object decisionMod extends js.Object {
     - typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3TransactionDecisionValue
   */
   trait TransactionDecisionArgument extends js.Object
-  
 }
-

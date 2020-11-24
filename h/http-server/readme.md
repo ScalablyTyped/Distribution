@@ -10,9 +10,9 @@ A simple zero-configuration command-line http server
 | ------------------ | :-------------: |
 | Full name          | http-server |
 | Keywords           | cli, command, http, server |
-| # releases         | 3 |
-| # dependents       | 486 |
-| # downloads        | 11864171 |
+| # releases         | 5 |
+| # dependents       | 563 |
+| # downloads        | 16135447 |
 | # stars            | 520 |
 
 ## Links

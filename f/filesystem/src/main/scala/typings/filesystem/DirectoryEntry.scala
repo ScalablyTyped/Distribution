@@ -2,17 +2,19 @@ package typings.filesystem
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface represents a directory on a file system.
   */
 @js.native
 trait DirectoryEntry extends Entry {
+  
   /**
     * Creates a new DirectoryReader to read Entries from this Directory.
     */
   def createReader(): DirectoryReader = js.native
+  
   /**
     * Creates or looks up a directory.
     * @param path Either an absolute path or a relative path from this DirectoryEntry to the directory to be looked up or created. It is an error to attempt to create a directory whose immediate parent does not yet exist.
@@ -56,6 +58,7 @@ trait DirectoryEntry extends Entry {
     successCallback: DirectoryEntryCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
+  
   /**
     * Creates or looks up a file.
     * @param path Either an absolute path or a relative path from this DirectoryEntry to the file to be looked up or created. It is an error to attempt to create a file whose immediate parent does not yet exist.
@@ -93,6 +96,7 @@ trait DirectoryEntry extends Entry {
   ): Unit = js.native
   def getFile(path: String, options: Flags, successCallback: FileEntryCallback): Unit = js.native
   def getFile(path: String, options: Flags, successCallback: FileEntryCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Deletes a directory and all of its contents, if any. In the event of an error [e.g. trying to delete a directory that contains a file that cannot be removed], some of the contents of the directory may be deleted. It is an error to attempt to delete the root directory of a filesystem.
     * @param successCallback A callback that is called on success.
@@ -101,4 +105,3 @@ trait DirectoryEntry extends Entry {
   def removeRecursively(successCallback: VoidCallback): Unit = js.native
   def removeRecursively(successCallback: VoidCallback, errorCallback: ErrorCallback): Unit = js.native
 }
-

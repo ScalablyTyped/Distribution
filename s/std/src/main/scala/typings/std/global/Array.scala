@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.ArrayConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Array")
 @js.native
@@ -13,8 +13,6 @@ class Array[T] protected ()
   def this(arrayLength: Double) = this()
   def this(items: T*) = this()
 }
-
 @JSGlobal("Array")
 @js.native
 object Array extends TopLevel[ArrayConstructor]
-

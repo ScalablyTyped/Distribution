@@ -4,7 +4,7 @@ import typings.pixiJs.anon.CreateBitmap
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource type for HTMLImageElement.
@@ -21,11 +21,11 @@ class ImageResource protected ()
   def this(source: String, options: CreateBitmap) = this()
   def this(source: HTMLImageElement, options: CreateBitmap) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.resources.ImageResource")
 @js.native
 object ImageResource extends js.Object {
+  
   /**
     * Used to auto-detect the type of resource.
     *
@@ -36,4 +36,3 @@ object ImageResource extends js.Object {
   def test(source: String): Boolean = js.native
   def test(source: HTMLImageElement): Boolean = js.native
 }
-

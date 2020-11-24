@@ -3,7 +3,7 @@ package typings.oracledb.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The user-chosen Connection class value defines a logical name for connections.
@@ -23,4 +23,3 @@ import scala.scalajs.js.annotation._
 @JSImport("oracledb", "connectionClass")
 @js.native
 object connectionClass extends TopLevel[String]
-

@@ -6,11 +6,12 @@ import typings.rcTree.interfaceMod.DataNode
 import typings.rcTree.interfaceMod.GetKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-tree/es/utils/treeUtil", "convertDataToEntities")
 @js.native
 object convertDataToEntities extends js.Object {
+  
   def apply(dataNodes: js.Array[DataNode]): KeyEntities = js.native
   def apply(
     dataNodes: js.Array[DataNode],
@@ -34,4 +35,3 @@ object convertDataToEntities extends js.Object {
     externalGetKey: GetKey[DataNode]
   ): KeyEntities = js.native
 }
-

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Vpngateways")
 @js.native
 class ResourceVpngateways protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.vpnGateways.aggregatedList
     * @desc Retrieves an aggregated list of VPN gateways.
@@ -48,6 +48,9 @@ class ResourceVpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVpnGatewayAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.vpnGateways.delete
     * @desc Deletes the specified VPN gateway.
@@ -79,6 +82,7 @@ class ResourceVpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.vpnGateways.get
     * @desc Returns the specified VPN gateway. Gets a list of available VPN
@@ -110,6 +114,7 @@ class ResourceVpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVpnGateway]
   ): Unit = js.native
+  
   /**
     * compute.vpnGateways.getStatus
     * @desc Returns the status for the specified VPN gateway.
@@ -143,6 +148,7 @@ class ResourceVpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVpnGatewaysGetStatusResponse]
   ): Unit = js.native
+  
   /**
     * compute.vpnGateways.insert
     * @desc Creates a VPN gateway in the specified project and region using the
@@ -175,6 +181,7 @@ class ResourceVpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.vpnGateways.list
     * @desc Retrieves a list of VPN gateways available to the specified project
@@ -209,6 +216,7 @@ class ResourceVpngateways protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVpnGatewayList]
   ): Unit = js.native
+  
   /**
     * compute.vpnGateways.setLabels
     * @desc Sets the labels on a VpnGateway. To learn more about labels, read
@@ -243,4 +251,3 @@ class ResourceVpngateways protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

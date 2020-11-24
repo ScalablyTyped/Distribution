@@ -1,7 +1,7 @@
 
 # Scala.js typings for playcanvas
 
-Typings are for version 1.32.4
+Typings are for version 1.36.1
 
 ## Library description:
 PlayCanvas WebGL game engine
@@ -10,9 +10,9 @@ PlayCanvas WebGL game engine
 | ------------------ | :-------------: |
 | Full name          | playcanvas |
 | Keywords           | 3D, 2D, VR, WebGL, WebGL2, game, engine, HTML5, browser, typings |
-| # releases         | 12 |
-| # dependents       | 0 |
-| # downloads        | 1796 |
+| # releases         | 43 |
+| # dependents       | 1 |
+| # downloads        | 13900 |
 | # stars            | 0 |
 
 ## Links

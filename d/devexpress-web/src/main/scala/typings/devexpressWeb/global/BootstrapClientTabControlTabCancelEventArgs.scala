@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for cancellable events related to manipulations on tabs.
@@ -18,4 +18,3 @@ class BootstrapClientTabControlTabCancelEventArgs protected ()
     */
   def this(processOnServer: Boolean, tab: typings.devexpressWeb.BootstrapClientTab) = this()
 }
-

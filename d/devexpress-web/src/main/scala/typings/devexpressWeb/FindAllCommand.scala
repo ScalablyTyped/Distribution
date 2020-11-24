@@ -2,13 +2,14 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to find all matches of the specified text in the document.
   */
 @js.native
 trait FindAllCommand extends CommandWithSimpleStateBase {
+  
   /**
     * Executes the FindAllCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param text A string value specifying text to find.
@@ -19,4 +20,3 @@ trait FindAllCommand extends CommandWithSimpleStateBase {
   def execute(text: String, matchCase: Boolean, highlightResults: Boolean): Boolean = js.native
   def execute(text: String, matchCase: Boolean, highlightResults: Boolean, results: js.Array[Interval]): Boolean = js.native
 }
-

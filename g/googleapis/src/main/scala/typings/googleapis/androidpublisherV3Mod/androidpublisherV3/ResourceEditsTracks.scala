@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v3", "androidpublisher_v3.Resource$Edits$Tracks")
 @js.native
 class ResourceEditsTracks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidpublisher.edits.tracks.get
     * @desc Fetches the track configuration for the specified track type.
@@ -44,6 +46,7 @@ class ResourceEditsTracks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTrack]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.tracks.list
     * @desc Lists all the track configurations for this edit.
@@ -73,6 +76,7 @@ class ResourceEditsTracks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTracksListResponse]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.tracks.patch
     * @desc Updates the track configuration for the specified track type. When
@@ -107,6 +111,7 @@ class ResourceEditsTracks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTrack]
   ): Unit = js.native
+  
   /**
     * androidpublisher.edits.tracks.update
     * @desc Updates the track configuration for the specified track type. When
@@ -141,4 +146,3 @@ class ResourceEditsTracks protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTrack]
   ): Unit = js.native
 }
-

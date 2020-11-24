@@ -10,9 +10,9 @@ RFC-compliant UUID Generator for JavaScript
 | ------------------ | :-------------: |
 | Full name          | uuidjs |
 | Keywords           | library, uuid, guid, rfc, 4122, universally, globally, unique, identifier |
-| # releases         | 7 |
-| # dependents       | 15 |
-| # downloads        | 244748 |
+| # releases         | 9 |
+| # dependents       | 22 |
+| # downloads        | 318528 |
 | # stars            | 0 |
 
 ## Links

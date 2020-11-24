@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Regionhealthcheckservices")
 @js.native
 class ResourceRegionhealthcheckservices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.regionHealthCheckServices.delete
     * @desc Deletes the specified regional HealthCheckService.
@@ -47,6 +49,7 @@ class ResourceRegionhealthcheckservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionHealthCheckServices.get
     * @desc Returns the specified regional HealthCheckService resource.
@@ -80,6 +83,7 @@ class ResourceRegionhealthcheckservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHealthCheckService]
   ): Unit = js.native
+  
   /**
     * compute.regionHealthCheckServices.insert
     * @desc Creates a regional HealthCheckService resource in the specified
@@ -115,6 +119,7 @@ class ResourceRegionhealthcheckservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.regionHealthCheckServices.list
     * @desc Lists all the HealthCheckService resources that have been
@@ -152,6 +157,7 @@ class ResourceRegionhealthcheckservices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHealthCheckServicesList]
   ): Unit = js.native
+  
   /**
     * compute.regionHealthCheckServices.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -187,4 +193,3 @@ class ResourceRegionhealthcheckservices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

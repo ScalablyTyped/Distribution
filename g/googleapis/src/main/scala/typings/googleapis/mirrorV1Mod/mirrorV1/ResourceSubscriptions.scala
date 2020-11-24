@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/mirror/v1", "mirror_v1.Resource$Subscriptions")
 @js.native
 class ResourceSubscriptions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * mirror.subscriptions.delete
     * @desc Deletes a subscription.
@@ -41,6 +43,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * mirror.subscriptions.insert
     * @desc Creates a new subscription.
@@ -69,6 +72,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
+  
   /**
     * mirror.subscriptions.list
     * @desc Retrieves a list of subscriptions for the authenticated user and
@@ -100,6 +104,7 @@ class ResourceSubscriptions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscriptionsListResponse]
   ): Unit = js.native
+  
   /**
     * mirror.subscriptions.update
     * @desc Updates an existing subscription in place.
@@ -130,4 +135,3 @@ class ResourceSubscriptions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
 }
-

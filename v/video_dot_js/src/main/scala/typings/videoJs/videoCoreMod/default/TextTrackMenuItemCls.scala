@@ -3,7 +3,7 @@ package typings.videoJs.videoCoreMod.default
 import typings.videoJs.mod.videojs.TextTrackMenuItemOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core", "TextTrackMenuItem")
 @js.native
@@ -21,4 +21,3 @@ class TextTrackMenuItemCls protected ()
   def this(player: typings.videoJs.mod.videojs.Player) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: TextTrackMenuItemOptions) = this()
 }
-

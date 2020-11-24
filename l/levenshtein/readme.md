@@ -11,8 +11,8 @@ Javascript implementation of the L-diggity.
 | Full name          | levenshtein |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 68 |
-| # downloads        | 408311 |
+| # dependents       | 71 |
+| # downloads        | 521747 |
 | # stars            | 8 |
 
 ## Links

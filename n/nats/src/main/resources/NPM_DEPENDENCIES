@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "nats" : "1.4.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "nats" : "1.4.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

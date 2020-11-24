@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "humanparser"
-version := "1.1.1-dt-20200515Z-67c2d2"
+version := "1.1.1-dt-20201002Z-8ee493"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

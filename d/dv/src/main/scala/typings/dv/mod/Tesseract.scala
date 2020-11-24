@@ -20,7 +20,7 @@ import typings.dv.dvStrings.sparse_text_osd
 import typings.dv.dvStrings.unlv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dv", "Tesseract")
 @js.native
@@ -38,42 +38,37 @@ class Tesseract ()
     * Creates a Tesseract engine with the specified language and image.
     */
   def this(datapath: String, lang: String, image: Image) = this()
-  /**
-    * Accessor for the input image.
-    */
-  var image: Image = js.native
-  /**
-    * Accessor for the page segmentation mode.
-    */
-  var pageSegMode: osd_only | auto_osd | auto_only | auto | single_column | single_block_vert_text | single_block | single_line | single_word | circle_word | single_char | sparse_text | sparse_text_osd = js.native
-  /**
-    * Accessor for the rectangle that specifies a "visible" area on the image.
-    */
-  var rectangle: Rect = js.native
+  
   /**
     * Clears the tesseract image and its last results.
     */
   def clear(): Unit = js.native
+  
   /**
     * Clears all adaptive classifiers (use this when results vary during scanning).
     */
   def clearAdaptiveClassifier(): Unit = js.native
+  
   /**
     * Returns an array of objects, You can omit text information by setting recognize = false, which is considerably faster.
     */
   def findParagraphs(recognize: Boolean): js.Array[Paragaph] = js.native
+  
   /**
     * Returns an array of objects, You can omit text information by setting recognize = false, which is considerably faster.
     */
   def findRegions(recognize: Boolean): js.Array[Region] = js.native
+  
   /**
     * Returns an array of objects, You can omit text information by setting recognize = false, which is considerably faster.
     */
   def findSymbols(recognize: Boolean): js.Array[js.Symbol] = js.native
+  
   /**
     * Returns an array of objects, You can omit text information by setting recognize = false, which is considerably faster.
     */
   def findTextLines(recognize: Boolean): js.Array[Textline] = js.native
+  
   @JSName("findText")
   def findText_box(format: box, pageNumber: Double): String = js.native
   @JSName("findText")
@@ -89,13 +84,29 @@ class Tesseract ()
   def findText_unlv(format: unlv): String = js.native
   @JSName("findText")
   def findText_unlv(format: unlv, withConfidence: Boolean): String = js.native
+  
   /**
     * Returns an array of objects, You can omit text information by setting recognize = false, which is considerably faster.
     */
   def findWords(recognize: Boolean): js.Array[Word] = js.native
+  
+  /**
+    * Accessor for the input image.
+    */
+  var image: Image = js.native
+  
+  /**
+    * Accessor for the page segmentation mode.
+    */
+  var pageSegMode: osd_only | auto_osd | auto_only | auto | single_column | single_block_vert_text | single_block | single_line | single_word | circle_word | single_char | sparse_text | sparse_text_osd = js.native
+  
+  /**
+    * Accessor for the rectangle that specifies a "visible" area on the image.
+    */
+  var rectangle: Rect = js.native
+  
   /**
     * Returns the binarized image Tesseract uses for its recognition.
     */
   def thresholdImage(): Image = js.native
 }
-

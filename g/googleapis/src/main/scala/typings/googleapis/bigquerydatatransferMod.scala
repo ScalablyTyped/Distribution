@@ -11,22 +11,24 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquerydatatransfer", JSImport.Namespace)
 @js.native
 object bigquerydatatransferMod extends js.Object {
+  
   def bigquerydatatransfer(options: Options): Bigquerydatatransfer = js.native
   @JSName("bigquerydatatransfer")
   def bigquerydatatransfer_v1(version: v1): Bigquerydatatransfer = js.native
+  
   @js.native
   object VERSIONS extends js.Object {
+    
     @js.native
     class v1 protected () extends Bigquerydatatransfer {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
-    
     @js.native
     object v1
       extends TopLevel[
@@ -36,11 +38,11 @@ object bigquerydatatransferMod extends js.Object {
                 Bigquerydatatransfer
               ]
             ]
-    
   }
   
   @js.native
   object auth extends TopLevel[AuthPlus] {
+    
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -68,8 +70,5 @@ object bigquerydatatransferMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
-    
   }
-  
 }
-

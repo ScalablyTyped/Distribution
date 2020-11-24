@@ -3,11 +3,12 @@ package typings.durandal.compositionMod
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("durandal/composition", "addBindingHandler")
 @js.native
 object addBindingHandler extends js.Object {
+  
   def apply(name: String): Unit = js.native
   def apply(
     name: String,
@@ -42,4 +43,3 @@ object addBindingHandler extends js.Object {
     ]
   ): Unit = js.native
 }
-

@@ -31,7 +31,7 @@ import typings.lokijs.lokijsStrings.`shallow-recurse-objects`
 import typings.lokijs.lokijsStrings.shallow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Collection class that handles documents of same type
@@ -40,51 +40,16 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
+  
   var DynamicViews: js.Array[DynamicView[js.Object]] = js.native
-  var adaptiveBinaryIndices: Boolean = js.native
-  var autoupdate: Boolean = js.native
-  var binaryIndices: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof E ]: lokijs.BinaryIndex}
-    */ typings.lokijs.lokijsStrings.Collection with TopLevel[js.Any] = js.native
-  var cachedBinaryIndex: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof E ]: lokijs.BinaryIndex}
-    */ typings.lokijs.lokijsStrings.Collection with TopLevel[js.Any]) | Null = js.native
-  var cachedData: js.Array[E] | Null = js.native
-  var cachedIndex: js.Array[Double] | Null = js.native
-  var changes: js.Array[CollectionChange] = js.native
-  var cloneMethod: `parse-stringify` | `jquery-extend-deep` | shallow | `shallow-assign` | `shallow-recurse-objects` | Null = js.native
-  var cloneObjects: Boolean = js.native
-  /**
-    * a collection of objects recording the changes applied through a commmitStage
-    */
-  var commitLog: js.Array[Data] = js.native
-  var console: Error = js.native
-  var constraints: Exact[E] = js.native
-  var data: js.Array[E] = js.native
-  var dirty: Boolean = js.native
-  var disableChangesApi: Boolean = js.native
-  var disableDeltaChangesApi: Boolean = js.native
-  var idIndex: js.Array[Double] = js.native
-  var maxId: Double = js.native
-  var name: String = js.native
-  var objType: String = js.native
-  var serializableIndices: Boolean = js.native
-  /* ------ STAGING API -------- */
-  /**
-    * stages: a map of uniquely identified 'stages', which hold copies of objects to be
-    * manipulated without affecting the data in the original collection
-    */
-  var stages: StringDictionary[js.Any] = js.native
-  var transactional: Boolean = js.native
-  var transforms: StringDictionary[js.Array[Transform]] = js.native
-  var ttl: Age = js.native
-  var uniqueNames: js.Array[/* keyof E */ String] = js.native
+  
   /**
     * Adaptively insert a selected item to the index.
     * @param dataPosition : coll.data array index/position
     * @param binaryIndexName : index to search for dataPosition in
     */
   def adaptiveBinaryIndexInsert(dataPosition: Double, binaryIndexName: /* keyof E */ String): Unit = js.native
+  
   /**
     * Adaptively remove a selected item from the index.
     * @param dataPosition : coll.data array index/position
@@ -92,17 +57,23 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def adaptiveBinaryIndexRemove(dataPosition: Double, binaryIndexName: /* keyof E */ String): Unit = js.native
   def adaptiveBinaryIndexRemove(dataPosition: Double, binaryIndexName: /* keyof E */ String, removedFromIndexOnly: Boolean): Unit = js.native
+  
   /**
     * Adaptively update a selected item within an index.
     * @param dataPosition : coll.data array index/position
     * @param binaryIndexName : index to search for dataPosition in
     */
   def adaptiveBinaryIndexUpdate(dataPosition: Double, binaryIndexName: /* keyof E */ String): Unit = js.native
+  
+  var adaptiveBinaryIndices: Boolean = js.native
+  
   /**
     * Add object to collection
     */
   def add(obj: (E with LokiObj) | E): E with LokiObj = js.native
+  
   def addAutoUpdateObserver(obj: js.Any): Unit = js.native
+  
   /**
     * Add a dynamic view to the collection
     * @param name - name of dynamic view to add
@@ -120,6 +91,7 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def addDynamicView(name: String): DynamicView[E] = js.native
   def addDynamicView(name: String, options: PartialDynamicViewOptions): DynamicView[E] = js.native
+  
   /**
     * Adds a named collection transform to the collection
     * @param name - name to associate with transform
@@ -137,8 +109,12 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     * var results = users.chain('progeny').data();
     */
   def addTransform(name: String, transform: js.Array[Transform]): Unit = js.native
+  
   // async executor. This is only to enable callbacks at the end of the execution.
   def async(fun: js.Function0[Unit], callback: js.Function0[Unit]): Unit = js.native
+  
+  var autoupdate: Boolean = js.native
+  
   /**
     * Calculates the average numerical value of a property
     *
@@ -146,6 +122,11 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     * @returns average of property in all docs in the collection
     */
   def avg(field: String): Double = js.native
+  
+  var binaryIndices: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof E ]: lokijs.BinaryIndex}
+    */ typings.lokijs.lokijsStrings.Collection with TopLevel[js.Any] = js.native
+  
   /**
     * Retrieve doc by Unique index
     * @param field - name of uniquely indexed property to use when doing lookup
@@ -154,14 +135,26 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def by(field: /* keyof E */ String): js.Function1[/* value */ js.Any, js.UndefOr[E]] = js.native
   def by(field: /* keyof E */ String, value: js.Any): js.UndefOr[E] = js.native
+  
   def byExample(template: js.Object): AndArray = js.native
+  
   @JSName("by")
   def by_Union(field: /* keyof E */ String): js.UndefOr[E | (js.Function1[/* value */ js.Any, js.UndefOr[E]])] = js.native
+  
+  var cachedBinaryIndex: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof E ]: lokijs.BinaryIndex}
+    */ typings.lokijs.lokijsStrings.Collection with TopLevel[js.Any]) | Null = js.native
+  
+  var cachedData: js.Array[E] | Null = js.native
+  
+  var cachedIndex: js.Array[Double] | Null = js.native
+  
   /**
     * Internal method used for indexed $between.  Given a prop (index name), and a value
     * (which may or may not yet exist) this will find the final position of that upper range value.
     */
   def calculateRangeEnd(prop: /* keyof E */ String, `val`: js.Any): Double = js.native
+  
   /**
     * Internal method used for index maintenance and indexed searching.
     * Calculates the beginning of an index range for a given value.
@@ -178,6 +171,7 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def calculateRangeStart(prop: /* keyof E */ String, `val`: js.Any): Double = js.native
   def calculateRangeStart(prop: /* keyof E */ String, `val`: js.Any, adaptive: Boolean): Double = js.native
+  
   @JSName("calculateRange")
   def calculateRange_aeq(op: $aeq, prop: /* keyof E */ String, `val`: js.Any): js.Array[Double] = js.native
   @JSName("calculateRange")
@@ -206,6 +200,7 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
   def calculateRange_lt(op: $lt, prop: /* keyof E */ String, `val`: js.Any): js.Array[Double] = js.native
   @JSName("calculateRange")
   def calculateRange_lte(op: $lte, prop: /* keyof E */ String, `val`: js.Any): js.Array[Double] = js.native
+  
   /**
     * Chain method, used for beginning a series of chained find() and/or view() operations
     * on a collection.
@@ -220,6 +215,9 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
   def chain(transform: String, parameters: js.Object): Resultset[_] = js.native
   def chain(transform: js.Array[String | Transform]): Resultset[_] = js.native
   def chain(transform: js.Array[String | Transform], parameters: js.Object): Resultset[_] = js.native
+  
+  var changes: js.Array[CollectionChange] = js.native
+  
   /**
     * Perform checks to determine validity/consistency of all binary indices
     * @param [options] - optional configuration object
@@ -229,6 +227,7 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def checkAllIndexes(): js.Array[String] = js.native
   def checkAllIndexes(options: PartialCheckIndexOptions): js.Array[String] = js.native
+  
   /**
     * Perform checks to determine validity/consistency of a binary index
     * @param property - name of the binary-indexed property to check
@@ -239,6 +238,7 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def checkIndex(property: /* keyof E */ String): Boolean = js.native
   def checkIndex(property: /* keyof E */ String, options: PartialCheckIndexOptions): Boolean = js.native
+  
   /**
     * Empties the collection.
     * @param [options] - configure clear behavior
@@ -246,8 +246,19 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def clear(): Unit = js.native
   def clear(options: RemoveIndices): Unit = js.native
+  
+  var cloneMethod: `parse-stringify` | `jquery-extend-deep` | shallow | `shallow-assign` | `shallow-recurse-objects` | Null = js.native
+  
+  var cloneObjects: Boolean = js.native
+  
   /** commit the transation */
   def commit(): Unit = js.native
+  
+  /**
+    * a collection of objects recording the changes applied through a commmitStage
+    */
+  var commitLog: js.Array[Data] = js.native
+  
   /**
     * (Staging API) re-attach all objects to the original collection, so indexes and views can be rebuilt
     * then create a message to be inserted in the commitlog
@@ -255,12 +266,18 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     * @param message
     */
   def commitStage(stageName: String, message: String): Unit = js.native
+  
   /**
     * Will allow reconfiguring certain collection options.
     * @param [options.adaptiveBinaryIndices] - collection indices will be actively rebuilt rather than lazily
     */
   def configureOptions(): Unit = js.native
   def configureOptions(options: AdaptiveBinaryIndices): Unit = js.native
+  
+  var console: Error = js.native
+  
+  var constraints: Exact[E] = js.native
+  
   /**
     * Quickly determine number of documents in collection (or query)
     * @param [query] - (optional) query object to count results of
@@ -268,19 +285,31 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def count(): Double = js.native
   def count(query: LokiQuery[E with LokiObj]): Double = js.native
+  
+  var data: js.Array[E] = js.native
+  
+  var dirty: Boolean = js.native
+  
+  var disableChangesApi: Boolean = js.native
+  
+  var disableDeltaChangesApi: Boolean = js.native
+  
   /**
     * Ensure all binary indices
     */
   def ensureAllIndexes(): Unit = js.native
   def ensureAllIndexes(force: Boolean): Unit = js.native
+  
   /**
     * Rebuild idIndex
     */
   def ensureId(): Unit = js.native
+  
   /**
     * Rebuild idIndex async with callback - useful for background syncing with a remote server
     */
   def ensureIdAsync(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Ensure binary index on a certain field
     * @param property - name of property to create binary index on
@@ -288,7 +317,9 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def ensureIndex(property: /* keyof E */ String): Unit = js.native
   def ensureIndex(property: /* keyof E */ String, force: Boolean): Unit = js.native
+  
   def ensureUniqueIndex(field: /* keyof E */ String): UniqueIndex[E] = js.native
+  
   def eqJoin(joinData: js.Array[_], leftJoinProp: String, rightJoinProp: String): Resultset[_] = js.native
   def eqJoin(
     joinData: js.Array[_],
@@ -582,8 +613,11 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
     dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
+  
   def extract(field: String): js.Array[_] = js.native
+  
   def extractNumerical(field: String): js.Array[Double] = js.native
+  
   /**
     * Find method, api is similar to mongodb.
     * for more complex queries use [chain()]{@link Collection#chain} or [where()]{@link Collection#where}.
@@ -593,6 +627,7 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def find(): js.Array[E with LokiObj] = js.native
   def find(query: LokiQuery[E with LokiObj]): js.Array[E with LokiObj] = js.native
+  
   /**
     * Applies a 'mongo-like' find query object removes all documents which match that filter.
     *
@@ -600,6 +635,7 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def findAndRemove(): Unit = js.native
   def findAndRemove(filterObject: LokiQuery[E with LokiObj]): Unit = js.native
+  
   /**
     * Applies a 'mongo-like' find query object and passes all results to an update function.
     * For filter function querying you should migrate to [updateWhere()]{@link Collection#updateWhere}.
@@ -612,8 +648,11 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     updateFunction: js.Function1[/* obj */ E with LokiObj, _]
   ): Unit = js.native
   def findAndUpdate(filterObject: LokiQuery[E with LokiObj], updateFunction: js.Function1[/* obj */ E with LokiObj, _]): Unit = js.native
+  
   def findObject(template: js.Object): E | Null = js.native
+  
   def findObjects(template: js.Object): js.Array[E] = js.native
+  
   /**
     * Find one object by index property, by property equal to value
     * @param query - query object used to perform search with
@@ -621,16 +660,22 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def findOne(): (E with LokiObj) | Null = js.native
   def findOne(query: LokiQuery[E with LokiObj]): (E with LokiObj) | Null = js.native
+  
   /**
     * Find object by unindexed field by property equal to value,
     * simply iterates and returns the first element matching the query
     */
   def findOneUnindexed(prop: /* keyof E */ String, value: js.Any): (E with LokiObj) | Null = js.native
+  
   def flagBinaryIndexDirty(index: String): Unit = js.native
+  
   def flagBinaryIndexesDirty(): Unit = js.native
+  
   def flushChanges(): Unit = js.native
+  
   def get(id: Double): (E with LokiObj) | (js.Tuple2[E with LokiObj, Double]) | Null = js.native
   def get(id: Double, returnPosition: Boolean): (E with LokiObj) | (js.Tuple2[E with LokiObj, Double]) | Null = js.native
+  
   /**
     * Perform binary range lookup for the data[dataPosition][binaryIndexName] property value
     *    Since multiple documents may contain the same value (which the index is sorted on),
@@ -639,27 +684,35 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     * @param binaryIndexName : index to search for dataPosition in
     */
   def getBinaryIndexPosition(dataPosition: Double, binaryIndexName: /* keyof E */ String): Double | Null = js.native
+  
   def getChangeDelta(obj: js.Any): js.Any = js.native
   def getChangeDelta(obj: js.Any, old: js.Any): js.Any = js.native
+  
   def getChanges(): js.Array[CollectionChange] = js.native
+  
   /**
     * Look up dynamic view reference from within the collection
     * @param name - name of dynamic view to retrieve reference of
     * @returns A reference to the dynamic view with that name
     **/
   def getDynamicView(name: String): DynamicView[_] | Null = js.native
+  
   def getObjectDelta(oldObject: js.Any): js.Any = js.native
   def getObjectDelta(oldObject: js.Any, newObject: js.Any): js.Any = js.native
+  
   def getSequencedIndexValues(property: String): String = js.native
+  
   /**
     * (Staging API) create a stage and/or retrieve it
     */
   def getStage(name: String): js.Any = js.native
+  
   /**
     * Retrieves a named transform from the collection.
     * @param name - name of the transform to lookup.
     */
   def getTransform(name: String): js.Array[Transform] = js.native
+  
   /*---------------------+
     | Finding methods     |
     +----------------------*/
@@ -674,6 +727,9 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
   def get_Intersection(id: Double): E with LokiObj = js.native
   @JSName("get")
   def get_true(id: Double, returnPosition: `true`): js.Tuple2[E with LokiObj, Double] = js.native
+  
+  var idIndex: js.Array[Double] = js.native
+  
   /**
     * Adds object(s) to collection, ensure object(s) have meta properties, clone it if necessary, etc.
     * @param doc - the document (or array of documents) to be inserted
@@ -690,6 +746,7 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def insert(doc: E): js.UndefOr[E] = js.native
   def insert(doc: js.Array[E]): js.UndefOr[js.Array[E]] = js.native
+  
   /**
     * Adds a single object, ensures it has meta properties, clone it if necessary, etc.
     * @param doc - the document to be inserted
@@ -698,6 +755,7 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def insertOne(doc: E): js.UndefOr[E with LokiObj] = js.native
   def insertOne(doc: E, bulkInsert: Boolean): js.UndefOr[E with LokiObj] = js.native
+  
   /**
     * Map Reduce operation
     *
@@ -709,20 +767,35 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     mapFunction: js.Function3[/* value */ E, /* index */ Double, /* array */ js.Array[E], U],
     reduceFunction: js.Function1[/* ary */ js.Array[U], R]
   ): R = js.native
+  
   def max(field: String): Double = js.native
+  
+  var maxId: Double = js.native
+  
   def maxRecord(field: String): Index = js.native
+  
   /**
     * @param field - property name
     */
   def median(field: String): Double = js.native
+  
   def min(field: String): Double = js.native
+  
   def minRecord(field: String): Index = js.native
+  
   /**
     * @param field
     */
   def mode(field: String): js.UndefOr[String] = js.native
+  
+  var name: String = js.native
+  
   def no_op(): Unit = js.native
+  
+  var objType: String = js.native
+  
   def observerCallback(changes: js.Array[Object]): Unit = js.native
+  
   /*----------------------------+
     | INDEXING                    |
     +----------------------------*/
@@ -730,6 +803,7 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     * create a row filter that covers all documents in the collection
     */
   def prepareFullDocIndex(): js.Array[Double] = js.native
+  
   def remove(doc: E): E | Null = js.native
   def remove(doc: js.Array[Double | E]): E | Null | Unit = js.native
   /**
@@ -737,18 +811,23 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     * @param doc - document to remove from collection
     */
   def remove(doc: Double): E | Null = js.native
+  
   def removeAutoUpdateObserver(obj: js.Any): Unit = js.native
+  
   def removeDataOnly(): Unit = js.native
+  
   /**
     * Remove a dynamic view from the collection
     * @param name - name of dynamic view to remove
     **/
   def removeDynamicView(name: String): Unit = js.native
+  
   /**
     * Removes a named collection transform from the collection
     * @param name - name of collection transform to remove
     */
   def removeTransform(name: String): Unit = js.native
+  
   /**
     * Remove all documents matching supplied filter function.
     * For 'mongo-like' querying you should migrate to [findAndRemove()]{@link Collection#findAndRemove}.
@@ -756,44 +835,72 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def removeWhere(query: js.Function3[/* value */ E, /* index */ Double, /* array */ js.Array[E], Boolean]): Unit = js.native
   def removeWhere(query: LokiQuery[E with LokiObj]): Unit = js.native
+  
   @JSName("remove")
   def remove_Unit(doc: js.Array[Double | E]): Unit = js.native
+  
   /** roll back the transation */
   def rollback(): Unit = js.native
+  
+  var serializableIndices: Boolean = js.native
+  
   def setChangesApi(): Unit = js.native
   def setChangesApi(enabled: Boolean): Unit = js.native
+  
   /**
     * Updates or applies collection TTL settings.
     * @param age - age (in ms) to expire document from collection
     * @param interval - time (in ms) to clear collection of aged documents.
     */
   def setTTL(age: Double, interval: Double): Unit = js.native
+  
   /**
     * Updates a named collection transform to the collection
     * @param name - name to associate with transform
     * @param transform - a transformation object to save into collection
     */
   def setTransform(name: String, transform: js.Array[Transform]): Unit = js.native
+  
   /**
     * (Staging API) create a copy of an object and insert it into a stage
     */
   def stage[F /* <: E */](stageName: String, obj: F): F = js.native
+  
+  /* ------ STAGING API -------- */
+  /**
+    * stages: a map of uniquely identified 'stages', which hold copies of objects to be
+    * manipulated without affecting the data in the original collection
+    */
+  var stages: StringDictionary[js.Any] = js.native
+  
   /**
     * Transaction methods
     */
   /** start the transation */
   def startTransaction(): Unit = js.native
+  
   /**
     * Calculate standard deviation of a field
     * @param field
     */
   def stdDev(field: String): Double = js.native
+  
+  var transactional: Boolean = js.native
+  
+  var transforms: StringDictionary[js.Array[Transform]] = js.native
+  
+  var ttl: Age = js.native
+  
   /*----------------------------+
     | TTL daemon                  |
     +----------------------------*/
   def ttlDaemonFuncGen(): js.Function0[Unit] = js.native
+  
+  var uniqueNames: js.Array[/* keyof E */ String] = js.native
+  
   def update(doc: E): E | Unit = js.native
   def update(doc: js.Array[E]): E | Unit = js.native
+  
   /**
     * Applies a filter function and passes all results to an update function.
     *
@@ -804,6 +911,7 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     filterFunction: js.Function1[/* data */ E, Boolean],
     updateFunction: js.Function1[/* obj */ E with LokiObj, _]
   ): Unit = js.native
+  
   /**
     * Updates an object and notifies collection that the document has changed.
     * @param doc - document to update within the collection
@@ -812,6 +920,7 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
   def update_E(doc: E): E = js.native
   @JSName("update")
   def update_Unit(doc: js.Array[E]): Unit = js.native
+  
   /**
     * Query the collection by supplying a javascript filter function.
     * @example
@@ -824,4 +933,3 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     */
   def where(fun: js.Function1[/* data */ E, Boolean]): js.Array[E with LokiObj] = js.native
 }
-

@@ -37,7 +37,7 @@ import typings.activexOffice.activexOfficeNumbers.`5`
 import typings.activexOffice.activexOfficeNumbers.`6`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexOffice.activexOfficeNumbers.`32`
@@ -77,77 +77,110 @@ import scala.scalajs.js.annotation._
   - typings.activexOffice.activexOfficeNumbers.`22`
 */
 trait MsoAnimationType extends js.Object
-
 object MsoAnimationType {
+  
   @scala.inline
   def msoAnimationAppear: `32` = 32.asInstanceOf[`32`]
+  
   @scala.inline
   def msoAnimationBeginSpeaking: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def msoAnimationCharacterSuccessMajor: `6` = 6.asInstanceOf[`6`]
+  
   @scala.inline
   def msoAnimationCheckingSomething: `103` = 103.asInstanceOf[`103`]
+  
   @scala.inline
   def msoAnimationDisappear: `31` = 31.asInstanceOf[`31`]
+  
   @scala.inline
   def msoAnimationEmptyTrash: `116` = 116.asInstanceOf[`116`]
+  
   @scala.inline
   def msoAnimationGestureDown: `113` = 113.asInstanceOf[`113`]
+  
   @scala.inline
   def msoAnimationGestureLeft: `114` = 114.asInstanceOf[`114`]
+  
   @scala.inline
   def msoAnimationGestureRight: `19` = 19.asInstanceOf[`19`]
+  
   @scala.inline
   def msoAnimationGestureUp: `115` = 115.asInstanceOf[`115`]
+  
   @scala.inline
   def msoAnimationGetArtsy: `100` = 100.asInstanceOf[`100`]
+  
   @scala.inline
   def msoAnimationGetAttentionMajor: `11` = 11.asInstanceOf[`11`]
+  
   @scala.inline
   def msoAnimationGetAttentionMinor: `12` = 12.asInstanceOf[`12`]
+  
   @scala.inline
   def msoAnimationGetTechy: `101` = 101.asInstanceOf[`101`]
+  
   @scala.inline
   def msoAnimationGetWizardy: `102` = 102.asInstanceOf[`102`]
+  
   @scala.inline
   def msoAnimationGoodbye: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def msoAnimationGreeting: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def msoAnimationIdle: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def msoAnimationListensToComputer: `26` = 26.asInstanceOf[`26`]
+  
   @scala.inline
   def msoAnimationLookDown: `104` = 104.asInstanceOf[`104`]
+  
   @scala.inline
   def msoAnimationLookDownLeft: `105` = 105.asInstanceOf[`105`]
+  
   @scala.inline
   def msoAnimationLookDownRight: `106` = 106.asInstanceOf[`106`]
+  
   @scala.inline
   def msoAnimationLookLeft: `107` = 107.asInstanceOf[`107`]
+  
   @scala.inline
   def msoAnimationLookRight: `108` = 108.asInstanceOf[`108`]
+  
   @scala.inline
   def msoAnimationLookUp: `109` = 109.asInstanceOf[`109`]
+  
   @scala.inline
   def msoAnimationLookUpLeft: `110` = 110.asInstanceOf[`110`]
+  
   @scala.inline
   def msoAnimationLookUpRight: `111` = 111.asInstanceOf[`111`]
+  
   @scala.inline
   def msoAnimationPrinting: `18` = 18.asInstanceOf[`18`]
+  
   @scala.inline
   def msoAnimationRestPose: `5` = 5.asInstanceOf[`5`]
+  
   @scala.inline
   def msoAnimationSaving: `112` = 112.asInstanceOf[`112`]
+  
   @scala.inline
   def msoAnimationSearching: `13` = 13.asInstanceOf[`13`]
+  
   @scala.inline
   def msoAnimationSendingMail: `25` = 25.asInstanceOf[`25`]
+  
   @scala.inline
   def msoAnimationThinking: `24` = 24.asInstanceOf[`24`]
+  
   @scala.inline
   def msoAnimationWorkingAtSomething: `23` = 23.asInstanceOf[`23`]
+  
   @scala.inline
   def msoAnimationWritingNotingSomething: `22` = 22.asInstanceOf[`22`]
 }
-

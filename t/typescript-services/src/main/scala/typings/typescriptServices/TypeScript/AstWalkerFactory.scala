@@ -2,10 +2,11 @@ package typings.typescriptServices.TypeScript
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AstWalkerFactory extends js.Object {
+  
   def simpleWalk(ast: AST, pre: js.Function2[/* ast */ AST, /* state */ js.Any, Unit]): Unit = js.native
   def simpleWalk(
     ast: AST,
@@ -24,6 +25,7 @@ trait AstWalkerFactory extends js.Object {
     post: js.Function2[/* ast */ AST, /* state */ js.Any, Unit],
     state: js.Any
   ): Unit = js.native
+  
   def walk(ast: AST, pre: js.Function2[/* ast */ AST, /* walker */ IAstWalker, Unit]): Unit = js.native
   def walk(
     ast: AST,
@@ -43,4 +45,3 @@ trait AstWalkerFactory extends js.Object {
     state: js.Any
   ): Unit = js.native
 }
-

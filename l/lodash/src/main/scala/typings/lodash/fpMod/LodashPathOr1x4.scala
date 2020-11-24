@@ -4,10 +4,11 @@ import typings.lodash.mod.__
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashPathOr1x4[TObject] extends js.Object {
+  
   def apply[TDefault](defaultValue: TDefault): LodashPathOr1x5[TObject, TDefault] = js.native
   def apply[TKey /* <: /* keyof TObject */ String */](defaultValue: __, path: TKey): LodashPathOr1x6[TObject, TKey] = js.native
   def apply[TKey /* <: /* keyof TObject */ String */](defaultValue: __, path: js.Array[TKey]): LodashPathOr1x6[TObject, TKey] = js.native
@@ -35,4 +36,3 @@ trait LodashPathOr1x4[TObject] extends js.Object {
     js.UndefOr[scala.Nothing]
   ]) | TDefault = js.native
 }
-

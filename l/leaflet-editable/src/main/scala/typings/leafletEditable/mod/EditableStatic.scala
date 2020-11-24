@@ -3,7 +3,7 @@ package typings.leafletEditable.mod
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Make geometries editable in Leaflet.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait EditableStatic extends Instantiable2[/* map */ Map, /* options */ EditOptions, Editable]
-

@@ -2,14 +2,16 @@ package typings.activexLibreoffice.com_.sun.star
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object resource {
+  
   /**
     * is used to signal that a resource is missing.
     * @see XResourceBundle
     */
   type MissingResourceException = typings.activexLibreoffice.com_.sun.star.uno.RuntimeException
+  
   /**
     * describes a {@link XResourceBundleLoader} which provides access to the OpenOffice.org resource files.
     *
@@ -34,6 +36,7 @@ package object resource {
     * @since OOo 2.0.3
     */
   type OfficeResourceLoader = typings.activexLibreoffice.com_.sun.star.resource.XResourceBundleLoader
+  
   /** specifies a service providing access to a resource string table implementing the {@link com.sun.star.awt.XDialog} interface. */
   type StringResource = typings.activexLibreoffice.com_.sun.star.resource.XStringResourcePersistence
 }

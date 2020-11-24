@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Roleassignments")
 @js.native
 class ResourceRoleassignments protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.roleAssignments.delete
     * @desc Deletes a role assignment.
@@ -42,6 +44,7 @@ class ResourceRoleassignments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * directory.roleAssignments.get
     * @desc Retrieve a role assignment.
@@ -71,6 +74,7 @@ class ResourceRoleassignments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRoleAssignment]
   ): Unit = js.native
+  
   /**
     * directory.roleAssignments.insert
     * @desc Creates a role assignment.
@@ -100,6 +104,7 @@ class ResourceRoleassignments protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRoleAssignment]
   ): Unit = js.native
+  
   /**
     * directory.roleAssignments.list
     * @desc Retrieves a paginated list of all roleAssignments.
@@ -133,4 +138,3 @@ class ResourceRoleassignments protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRoleAssignments]
   ): Unit = js.native
 }
-

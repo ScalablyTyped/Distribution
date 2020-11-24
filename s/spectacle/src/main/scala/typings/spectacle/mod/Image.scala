@@ -8,7 +8,7 @@ import typings.styledSystem.mod.PositionProps
 import typings.styledSystem.mod.RequiredTheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("spectacle", "Image")
 @js.native
@@ -18,4 +18,3 @@ object Image
         ImgHTMLAttributes[js.Object] with LayoutProps[RequiredTheme] with PositionProps[RequiredTheme]
       ]
     ]
-

@@ -2,7 +2,7 @@ package typings.openlayers.mod.source.wms
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Available server types: `'carmentaserver'`, `'geoserver'`, `'mapserver'`,
@@ -16,15 +16,17 @@ import scala.scalajs.js.annotation._
   - typings.openlayers.openlayersStrings.qgis
 */
 trait ServerType extends js.Object
-
 object ServerType {
+  
   @scala.inline
   def carmentaserver: typings.openlayers.openlayersStrings.carmentaserver = "carmentaserver".asInstanceOf[typings.openlayers.openlayersStrings.carmentaserver]
+  
   @scala.inline
   def geoserver: typings.openlayers.openlayersStrings.geoserver = "geoserver".asInstanceOf[typings.openlayers.openlayersStrings.geoserver]
+  
   @scala.inline
   def mapserver: typings.openlayers.openlayersStrings.mapserver = "mapserver".asInstanceOf[typings.openlayers.openlayersStrings.mapserver]
+  
   @scala.inline
   def qgis: typings.openlayers.openlayersStrings.qgis = "qgis".asInstanceOf[typings.openlayers.openlayersStrings.qgis]
 }
-

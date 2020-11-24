@@ -2,7 +2,7 @@ package typings.googleAdwordsScripts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Ad
 @js.native
@@ -12,15 +12,24 @@ trait Ad
      with canBeEnabled
      with hasLabels
      with hasStats {
+  
   def asType(): AdViewSpace = js.native
+  
   def getApprovalStatus(): ApprovalStatus = js.native
+  
   def getDisapprovalReasons(): js.Array[String] = js.native
+  
   def getId(): Double = js.native
+  
   def getPolicyApprovalStatus(): PolicyApprovalStatus = js.native
+  
   def getPolicyTopics(): js.Array[PolicyTopic] = js.native
+  
   def getType(): AdType = js.native
+  
   def isType(): AdTypeSpace = js.native
+  
   def remove(): Unit = js.native
+  
   def urls(): AdUrls = js.native
 }
-

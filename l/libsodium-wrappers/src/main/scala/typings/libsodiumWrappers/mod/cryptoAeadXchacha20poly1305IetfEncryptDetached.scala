@@ -3,11 +3,12 @@ package typings.libsodiumWrappers.mod
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libsodium-wrappers", "crypto_aead_xchacha20poly1305_ietf_encrypt_detached")
 @js.native
 object cryptoAeadXchacha20poly1305IetfEncryptDetached extends js.Object {
+  
   def apply(
     message: String | Uint8Array,
     additional_data: String | Uint8Array | Null,
@@ -161,4 +162,3 @@ object cryptoAeadXchacha20poly1305IetfEncryptDetached extends js.Object {
     outputFormat: StringOutputFormat
   ): StringCryptoBox = js.native
 }
-

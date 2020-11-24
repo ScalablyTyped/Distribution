@@ -3,7 +3,7 @@ package typings.lunr.mod
 import typings.lunr.mod.Token.UpdateFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A token wraps a string representation of a token
@@ -17,7 +17,9 @@ class Token protected () extends js.Object {
     * @param [metadata={}] - Metadata associated with this token.
     */
   def this(str: String, metadata: js.Object) = this()
+  
   def clone(fn: UpdateFunction): Token = js.native
+  
   /**
     * Applies the given function to the wrapped string token.
     *
@@ -30,10 +32,10 @@ class Token protected () extends js.Object {
     */
   def update(fn: UpdateFunction): Token = js.native
 }
-
 @JSImport("lunr", "Token")
 @js.native
 object Token extends js.Object {
+  
   /**
     * A token update function is used when updating or optionally
     * when cloning a token.
@@ -43,4 +45,3 @@ object Token extends js.Object {
     */
   type UpdateFunction = js.Function2[/* str */ String, /* metadata */ js.Object, Unit]
 }
-

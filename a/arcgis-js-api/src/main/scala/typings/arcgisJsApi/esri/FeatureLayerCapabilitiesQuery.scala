@@ -4,133 +4,153 @@ import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FeatureLayerCapabilitiesQuery extends Object {
+  
   /**
     * The maximum number of records that will be returned for a given query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var maxRecordCount: Double = js.native
+  
   /**
-    * Indicates if the query operation supports a [cache hint](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#cacheHint). This is valid only for [hosted feature services](http://doc.arcgis.com/en/arcgis-online/share-maps/hosted-web-layers.htm).
+    * Indicates if the query operation supports a [cache hint](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#cacheHint).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsCacheHint: Boolean = js.native
+  
   /**
-    * Indicates if the geometry centroid associated with each polygon feature can be returned. This operation is only supported in ArcGIS Online hosted feature services.
+    * Indicates if the geometry centroid associated with each polygon feature can be returned.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsCentroid: Boolean = js.native
+  
   /**
-    * Indicates if the query operation supports `disjoint` [spatial relationship](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#spatialRelationship). This is valid only for [hosted feature services](http://doc.arcgis.com/en/arcgis-online/share-maps/hosted-web-layers.htm).
+    * Indicates if the query operation supports `disjoint` [spatial relationship](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#spatialRelationship).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsDisjointSpatialRelationship: Boolean = js.native
+  
   /**
     * Indicates if the layer's query operation supports a buffer distance for input geometries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsDistance: Boolean = js.native
+  
   /**
     * Indicates if the layer supports queries for distinct values based on fields specified in the [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#outFields).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsDistinct: Boolean = js.native
+  
   /**
-    * Indicates if the layer's query response includes the extent of features. At 10.3, this option is only available for hosted feature services. At 10.3.1, it is available for hosted and non-hosted feature services.
+    * Indicates if the layer's query response includes the extent of features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsExtent: Boolean = js.native
+  
   /**
-    * Indicates if the layer's query response contains geometry attributes, including shape area and length attributes. This operation is supported in ArcGIS Online hosted feature services created since December 2016 and ArcGIS Enterprise feature services since version 10.7.
+    * Indicates if the layer's query response contains geometry attributes, including shape area and length attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsGeometryProperties: Boolean = js.native
+  
   /**
-    * Indicates if the layer supports the [having](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#having) clause on the service. Requires an ArcGIS Server service 10.6.1 or greater.
+    * Indicates if the layer supports the [having](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#having) clause on the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsHavingClause: Boolean = js.native
+  
   /**
-    * Indicates if the layer supports historic moment query. Requires ArcGIS Server service 10.5 or greater.
+    * Indicates if the layer supports historic moment query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsHistoricMoment: Boolean = js.native
+  
   /**
-    * Indicates if features returned in the query response can be ordered by one or more fields. Requires an ArcGIS Server service 10.3 or greater.
+    * Indicates if features returned in the query response can be ordered by one or more fields.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsOrderBy: Boolean = js.native
+  
   /**
-    * Indicates if the query response supports pagination. Requires an ArcGIS Server service 10.3 or greater.
+    * Indicates if the query response supports pagination.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsPagination: Boolean = js.native
+  
   /**
-    * Indicates if the layer supports [percentile statisticType](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticType). Requires an ArcGIS Server service 10.7 or greater.
+    * Indicates if the layer supports [percentile statisticType](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticType).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsPercentileStatistics: Boolean = js.native
+  
   /**
-    * Indicates if the query operation supports the projection of geometries onto a virtual grid. Requires an ArcGIS Server service 10.6.1 or greater.
+    * Indicates if the query operation supports the projection of geometries onto a virtual grid.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsQuantization: Boolean = js.native
+  
   /**
-    * Indicates if the query operation supports quantization designed to be used in edit mode (highest resolution at the given spatial reference). Requires an ArcGIS Server service 10.6.1 or greater.
+    * Indicates if the query operation supports quantization designed to be used in edit mode (highest resolution at the given spatial reference).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsQuantizationEditMode: Boolean = js.native
+  
   /**
-    * Indicates if the query response includes the [query geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#queryGeometry). This is valid only for [hosted feature services](http://doc.arcgis.com/en/arcgis-online/share-maps/hosted-web-layers.htm).
+    * Indicates if the query response includes the [query geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#queryGeometry).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsQueryGeometry: Boolean = js.native
+  
   /**
     * Indicates if the number of features returned by the query operation can be controlled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsResultType: Boolean = js.native
+  
   /**
     * Indicates if the query operation supports SQL expressions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsSqlExpression: Boolean = js.native
+  
   /**
-    * Indicates if the query operation supports using standardized queries. Learn more about [standardized queries here](http://server.arcgis.com/en/server/latest/administer/linux/about-standardized-queries.htm).
+    * Indicates if the query operation supports using standardized queries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsStandardizedQueriesOnly: Boolean = js.native
+  
   /**
-    * Indicates if the layer supports field-based statistical functions. Requires ArcGIS Server service 10.1 or greater.
+    * Indicates if the layer supports field-based statistical functions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsStatistics: Boolean = js.native
 }
-
 object FeatureLayerCapabilitiesQuery {
+  
   @scala.inline
   def apply(
     constructor: js.Function,
@@ -160,58 +180,80 @@ object FeatureLayerCapabilitiesQuery {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxRecordCount = maxRecordCount.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsCacheHint = supportsCacheHint.asInstanceOf[js.Any], supportsCentroid = supportsCentroid.asInstanceOf[js.Any], supportsDisjointSpatialRelationship = supportsDisjointSpatialRelationship.asInstanceOf[js.Any], supportsDistance = supportsDistance.asInstanceOf[js.Any], supportsDistinct = supportsDistinct.asInstanceOf[js.Any], supportsExtent = supportsExtent.asInstanceOf[js.Any], supportsGeometryProperties = supportsGeometryProperties.asInstanceOf[js.Any], supportsHavingClause = supportsHavingClause.asInstanceOf[js.Any], supportsHistoricMoment = supportsHistoricMoment.asInstanceOf[js.Any], supportsOrderBy = supportsOrderBy.asInstanceOf[js.Any], supportsPagination = supportsPagination.asInstanceOf[js.Any], supportsPercentileStatistics = supportsPercentileStatistics.asInstanceOf[js.Any], supportsQuantization = supportsQuantization.asInstanceOf[js.Any], supportsQuantizationEditMode = supportsQuantizationEditMode.asInstanceOf[js.Any], supportsQueryGeometry = supportsQueryGeometry.asInstanceOf[js.Any], supportsResultType = supportsResultType.asInstanceOf[js.Any], supportsSqlExpression = supportsSqlExpression.asInstanceOf[js.Any], supportsStandardizedQueriesOnly = supportsStandardizedQueriesOnly.asInstanceOf[js.Any], supportsStatistics = supportsStatistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerCapabilitiesQuery]
   }
+  
   @scala.inline
   implicit class FeatureLayerCapabilitiesQueryOps[Self <: FeatureLayerCapabilitiesQuery] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setMaxRecordCount(value: Double): Self = this.set("maxRecordCount", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsCacheHint(value: Boolean): Self = this.set("supportsCacheHint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsCentroid(value: Boolean): Self = this.set("supportsCentroid", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsDisjointSpatialRelationship(value: Boolean): Self = this.set("supportsDisjointSpatialRelationship", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsDistance(value: Boolean): Self = this.set("supportsDistance", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsDistinct(value: Boolean): Self = this.set("supportsDistinct", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsExtent(value: Boolean): Self = this.set("supportsExtent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsGeometryProperties(value: Boolean): Self = this.set("supportsGeometryProperties", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsHavingClause(value: Boolean): Self = this.set("supportsHavingClause", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsHistoricMoment(value: Boolean): Self = this.set("supportsHistoricMoment", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsOrderBy(value: Boolean): Self = this.set("supportsOrderBy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsPagination(value: Boolean): Self = this.set("supportsPagination", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsPercentileStatistics(value: Boolean): Self = this.set("supportsPercentileStatistics", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsQuantization(value: Boolean): Self = this.set("supportsQuantization", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsQuantizationEditMode(value: Boolean): Self = this.set("supportsQuantizationEditMode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsQueryGeometry(value: Boolean): Self = this.set("supportsQueryGeometry", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsResultType(value: Boolean): Self = this.set("supportsResultType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsSqlExpression(value: Boolean): Self = this.set("supportsSqlExpression", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsStandardizedQueriesOnly(value: Boolean): Self = this.set("supportsStandardizedQueriesOnly", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSupportsStatistics(value: Boolean): Self = this.set("supportsStatistics", value.asInstanceOf[js.Any])
   }
-  
 }
-

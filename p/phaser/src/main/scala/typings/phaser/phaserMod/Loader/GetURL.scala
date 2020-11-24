@@ -2,11 +2,12 @@ package typings.phaser.phaserMod.Loader
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phaser", "Loader.GetURL")
 @js.native
 object GetURL extends js.Object {
+  
   /**
     * Given a File and a baseURL value this returns the URL the File will use to download from.
     * @param file The File object.
@@ -14,4 +15,3 @@ object GetURL extends js.Object {
     */
   def apply(file: typings.phaser.Phaser.Loader.File, baseURL: String): String = js.native
 }
-

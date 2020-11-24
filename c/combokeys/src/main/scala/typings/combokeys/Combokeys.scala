@@ -6,14 +6,15 @@ import typings.std.Event
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Combokeys")
 @js.native
 object Combokeys extends js.Object {
+  
   @js.native
   trait Combokeys extends js.Object {
-    var element: Element = js.native
+    
     /**
       * binds an event to Combokeys
       *
@@ -32,6 +33,7 @@ object Combokeys extends js.Object {
     def bind(keys: String, callback: js.Function1[/* event */ KeyboardEvent, Unit], action: String): Unit = js.native
     def bind(keys: js.Array[String], callback: js.Function1[/* event */ KeyboardEvent, Unit]): Unit = js.native
     def bind(keys: js.Array[String], callback: js.Function1[/* event */ KeyboardEvent, Unit], action: String): Unit = js.native
+    
     /**
       * binds multiple combinations to the same callback
       *
@@ -42,12 +44,16 @@ object Combokeys extends js.Object {
       */
     def bindMultiple(keys: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
     def bindMultiple(keys: js.Array[String], callback: js.Function0[Unit], action: String): Unit = js.native
+    
     /**
       * detach all listners from the bound element
       *
       * @return {void}
       */
     def detach(): Unit = js.native
+    
+    var element: Element = js.native
+    
     /**
       * resets the library back to its initial state. This is useful
       * if you want to clear out the current keyboard shortcuts and bind
@@ -56,6 +62,7 @@ object Combokeys extends js.Object {
       * @returns void
       */
     def reset(): Unit = js.native
+    
     /**
       * should we stop this event before firing off callbacks
       *
@@ -64,6 +71,7 @@ object Combokeys extends js.Object {
       * @return {boolean}
       */
     def stopCallback(e: Event, element: Element): Boolean = js.native
+    
     /**
       * triggers an event that has already been bound
       *
@@ -73,6 +81,7 @@ object Combokeys extends js.Object {
       */
     def trigger(keys: String): Unit = js.native
     def trigger(keys: String, action: String): Unit = js.native
+    
     /**
       * unbinds an event to Combokeys
       *
@@ -96,15 +105,15 @@ object Combokeys extends js.Object {
   @js.native
   trait CombokeysStatic
     extends Instantiable1[/* element */ Element, typings.combokeys.Combokeys.Combokeys] {
+    
     /**
       * all instances of Combokeys
       */
     var instances: js.Array[typings.combokeys.Combokeys.Combokeys] = js.native
+    
     /**
       * reset all instances
       */
     def reset(): Unit = js.native
   }
-  
 }
-

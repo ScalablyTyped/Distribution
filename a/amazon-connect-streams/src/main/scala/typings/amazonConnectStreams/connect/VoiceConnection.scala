@@ -3,7 +3,7 @@ package typings.amazonConnectStreams.connect
 import typings.amazonConnectStreams.connect.MediaType.SOFTPHONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The VoiceConnection API provides action methods (no event subscriptions) which can be called to manipulate the state of a particular voice connection within a contact.
@@ -13,11 +13,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait VoiceConnection extends BaseConnection {
+  
   /** Gets a `Promise` with the media controller associated with this connection. */
   def getMediaController(): js.Promise[_] = js.native
+  
   /** Returns the media info object associated with this connection. */
   def getMediaInfo(): VoiceMediaInfo = js.native
+  
   /** Returns the `MediaType` enum value: `"softphone"`. */
   def getMediaType(): SOFTPHONE = js.native
 }
-

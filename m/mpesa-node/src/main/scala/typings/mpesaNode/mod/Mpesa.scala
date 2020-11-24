@@ -3,10 +3,11 @@ package typings.mpesaNode.mod
 import typings.axios.mod.AxiosPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Mpesa extends js.Object {
+  
   def accountBalance(shortCode: String, idType: String, queueUrl: String, resultUrl: String): AxiosPromise[_] = js.native
   def accountBalance(
     shortCode: String,
@@ -61,6 +62,7 @@ trait Mpesa extends js.Object {
     initiator: String,
     commandId: String
   ): AxiosPromise[_] = js.native
+  
   def b2b(
     senderParty: String,
     receiverParty: String,
@@ -74,6 +76,7 @@ trait Mpesa extends js.Object {
     accountRef: js.UndefOr[String],
     remarks: js.UndefOr[String]
   ): AxiosPromise[_] = js.native
+  
   def b2c(senderParty: String, receiverParty: String, amount: Double, queueUrl: String, resultUrl: String): AxiosPromise[_] = js.native
   def b2c(
     senderParty: String,
@@ -229,6 +232,7 @@ trait Mpesa extends js.Object {
     remarks: String,
     occasion: String
   ): AxiosPromise[_] = js.native
+  
   def c2bRegister(confirmationUrl: String, validationUrl: String): AxiosPromise[_] = js.native
   def c2bRegister(
     confirmationUrl: String,
@@ -238,6 +242,7 @@ trait Mpesa extends js.Object {
   ): AxiosPromise[_] = js.native
   def c2bRegister(confirmationUrl: String, validationUrl: String, shortCode: String): AxiosPromise[_] = js.native
   def c2bRegister(confirmationUrl: String, validationUrl: String, shortCode: String, responseType: String): AxiosPromise[_] = js.native
+  
   def c2bSimulate(msisdn: String, amount: Double, billRefNumber: String): AxiosPromise[_] = js.native
   def c2bSimulate(
     msisdn: String,
@@ -248,6 +253,7 @@ trait Mpesa extends js.Object {
   ): AxiosPromise[_] = js.native
   def c2bSimulate(msisdn: String, amount: Double, billRefNumber: String, commandId: String): AxiosPromise[_] = js.native
   def c2bSimulate(msisdn: String, amount: Double, billRefNumber: String, commandId: String, shortCode: String): AxiosPromise[_] = js.native
+  
   def lipaNaMpesaOnline(senderMsisdn: String, amount: Double, callbackUrl: String, accountRef: String): AxiosPromise[_] = js.native
   def lipaNaMpesaOnline(
     senderMsisdn: String,
@@ -388,12 +394,15 @@ trait Mpesa extends js.Object {
     shortCode: String,
     passKey: String
   ): AxiosPromise[_] = js.native
+  
   def lipaNaMpesaQuery(checkoutRequestId: String): AxiosPromise[_] = js.native
   def lipaNaMpesaQuery(checkoutRequestId: String, shortCode: js.UndefOr[scala.Nothing], passKey: String): AxiosPromise[_] = js.native
   def lipaNaMpesaQuery(checkoutRequestId: String, shortCode: String): AxiosPromise[_] = js.native
   def lipaNaMpesaQuery(checkoutRequestId: String, shortCode: String, passKey: String): AxiosPromise[_] = js.native
+  
   def oAuth(consumerKey: String, consumerSecret: String): AxiosPromise[_] = js.native
   def oAuth(consumerKey: String, consumerSecret: String, baseURL: String): AxiosPromise[_] = js.native
+  
   def reversal(
     transactionId: String,
     amount: Double,
@@ -406,6 +415,7 @@ trait Mpesa extends js.Object {
     receiverIdType: js.UndefOr[String],
     commandId: js.UndefOr[String]
   ): AxiosPromise[_] = js.native
+  
   def transactionStatus(
     transactionId: String,
     amount: Double,
@@ -419,4 +429,3 @@ trait Mpesa extends js.Object {
     commandId: js.UndefOr[String]
   ): AxiosPromise[_] = js.native
 }
-

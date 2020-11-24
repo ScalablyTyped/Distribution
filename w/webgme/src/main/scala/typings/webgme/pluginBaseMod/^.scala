@@ -3,7 +3,7 @@ package typings.webgme.pluginBaseMod
 import typings.webgme.GmePlugin.PluginBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   The base plugin object from which all plugins should inherit.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSImport("plugin/PluginBase", JSImport.Namespace)
 @js.native
 class ^ () extends PluginBase
-

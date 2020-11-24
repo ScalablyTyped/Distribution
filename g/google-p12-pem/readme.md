@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-p12-pem
 
-Typings are for version 3.0.2
+Typings are for version 3.0.3
 
 ## Library description:
 Convert Google .p12 keys to .pem keys.
@@ -10,9 +10,9 @@ Convert Google .p12 keys to .pem keys.
 | ------------------ | :-------------: |
 | Full name          | google-p12-pem |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 5 |
-| # downloads        | 86771055 |
+| # releases         | 10 |
+| # dependents       | 6 |
+| # downloads        | 132385128 |
 | # stars            | 1 |
 
 ## Links

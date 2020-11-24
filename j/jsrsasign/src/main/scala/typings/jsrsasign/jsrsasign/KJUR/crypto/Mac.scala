@@ -1,8 +1,9 @@
 package typings.jsrsasign.jsrsasign.KJUR.crypto
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Mac(Message Authentication Code) class which is very similar to java.security.Mac class
@@ -39,12 +40,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Mac extends js.Object {
+  
   /**
     * completes hash calculation and returns hash result
     * @example
     * mac.digest()
     */
   def doFinal(): Unit = js.native
+  
   /**
     * performs final update on the digest using hexadecimal string,
     * then completes the digest computation
@@ -53,6 +56,7 @@ trait Mac extends js.Object {
     * mac.digestHex('0f2abd')
     */
   def doFinalHex(hex: String): Unit = js.native
+  
   /**
     * performs final update on the digest using string, then completes the digest computation
     * @param str string to final update
@@ -60,7 +64,9 @@ trait Mac extends js.Object {
     * mac.digestString('aaa')
     */
   def doFinalString(str: String): Unit = js.native
+  
   def setAlgAndProvider(alg: String, prov: String): Unit = js.native
+  
   /**
     * set password for Mac
     * @param pass password for Mac
@@ -97,6 +103,8 @@ trait Mac extends js.Object {
     * mac.setPassword({"b64u": "Mb-c3f_"});
     */
   def setPassword(pass: String): Unit = js.native
+  def setPassword(pass: StringDictionary[String]): Unit = js.native
+  
   /**
     * update digest by specified hexadecimal string
     * @param hex hexadecimal string to update
@@ -104,6 +112,7 @@ trait Mac extends js.Object {
     * mac.updateHex('0afe36');
     */
   def updateHex(hex: String): Unit = js.native
+  
   /**
     * update digest by specified string
     * @param str string to update
@@ -112,47 +121,3 @@ trait Mac extends js.Object {
     */
   def updateString(str: String): Unit = js.native
 }
-
-object Mac {
-  @scala.inline
-  def apply(
-    doFinal: () => Unit,
-    doFinalHex: String => Unit,
-    doFinalString: String => Unit,
-    setAlgAndProvider: (String, String) => Unit,
-    setPassword: String => Unit,
-    updateHex: String => Unit,
-    updateString: String => Unit
-  ): Mac = {
-    val __obj = js.Dynamic.literal(doFinal = js.Any.fromFunction0(doFinal), doFinalHex = js.Any.fromFunction1(doFinalHex), doFinalString = js.Any.fromFunction1(doFinalString), setAlgAndProvider = js.Any.fromFunction2(setAlgAndProvider), setPassword = js.Any.fromFunction1(setPassword), updateHex = js.Any.fromFunction1(updateHex), updateString = js.Any.fromFunction1(updateString))
-    __obj.asInstanceOf[Mac]
-  }
-  @scala.inline
-  implicit class MacOps[Self <: Mac] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setDoFinal(value: () => Unit): Self = this.set("doFinal", js.Any.fromFunction0(value))
-    @scala.inline
-    def setDoFinalHex(value: String => Unit): Self = this.set("doFinalHex", js.Any.fromFunction1(value))
-    @scala.inline
-    def setDoFinalString(value: String => Unit): Self = this.set("doFinalString", js.Any.fromFunction1(value))
-    @scala.inline
-    def setSetAlgAndProvider(value: (String, String) => Unit): Self = this.set("setAlgAndProvider", js.Any.fromFunction2(value))
-    @scala.inline
-    def setSetPassword(value: String => Unit): Self = this.set("setPassword", js.Any.fromFunction1(value))
-    @scala.inline
-    def setUpdateHex(value: String => Unit): Self = this.set("updateHex", js.Any.fromFunction1(value))
-    @scala.inline
-    def setUpdateString(value: String => Unit): Self = this.set("updateString", js.Any.fromFunction1(value))
-  }
-  
-}
-

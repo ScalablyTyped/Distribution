@@ -12,7 +12,7 @@ Handlebars Templates via Generators for Koa
 | Keywords           | koa, handlebars, template, view, render |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 51131 |
+| # downloads        | 79518 |
 | # stars            | 2 |
 
 ## Links

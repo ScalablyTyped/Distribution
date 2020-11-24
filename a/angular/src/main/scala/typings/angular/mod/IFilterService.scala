@@ -11,7 +11,7 @@ import typings.angular.angularStrings.orderBy
 import typings.angular.angularStrings.uppercase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * $filter - $filterProvider - service in module ng
@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IFilterService extends js.Object {
+  
   def apply(name: currency): IFilterCurrency = js.native
   def apply(name: date): IFilterDate = js.native
   def apply(name: filter): IFilterFilter = js.native
@@ -39,4 +40,3 @@ trait IFilterService extends js.Object {
     */
   def apply[T](name: String): T = js.native
 }
-

@@ -5,17 +5,14 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asynciterator", "AsyncIterator")
 @js.native
 /** Creates a new `AsyncIterator`. */
 class AsyncIterator[T] () extends EventEmitter {
   def this(initialState: Double) = this()
-  var _properties: js.UndefOr[StringDictionary[js.Any]] = js.native
-  var _propertyCallbacks: js.UndefOr[StringDictionary[js.Array[js.Function1[/* value */ _, Unit]]]] = js.native
-  var _readable: js.Any = js.native
-  var _state: Double = js.native
+  
   /**
     Changes the iterator to the given state if possible and necessary,
     possibly emitting events to signal that change.
@@ -27,6 +24,7 @@ class AsyncIterator[T] () extends EventEmitter {
     */
   /* protected */ def _changeState(newState: Double): Boolean = js.native
   /* protected */ def _changeState(newState: Double, eventAsync: Boolean): Boolean = js.native
+  
   /* protected */ def _destroy(cause: js.UndefOr[scala.Nothing], callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
   /**
     Called by {@link module:asynciterator.AsyncIterator#destroy}.
@@ -35,6 +33,7 @@ class AsyncIterator[T] () extends EventEmitter {
     @param {Function} callback A callback function with an optional error argument.
     */
   /* protected */ def _destroy(cause: Error, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+  
   /**
     Ends the iterator and cleans up.
     Should never be called before {@link module:asynciterator.AsyncIterator#close};
@@ -45,16 +44,27 @@ class AsyncIterator[T] () extends EventEmitter {
     */
   /* protected */ def _end(): Unit = js.native
   /* protected */ def _end(destroy: Boolean): Unit = js.native
+  
   /**
     Asynchronously calls `_end`.
     @protected
     */
   /* protected */ def _endAsync(): Unit = js.native
+  
+  var _properties: js.UndefOr[StringDictionary[js.Any]] = js.native
+  
+  var _propertyCallbacks: js.UndefOr[StringDictionary[js.Array[js.Function1[/* value */ _, Unit]]]] = js.native
+  
+  var _readable: js.Any = js.native
+  
+  var _state: Double = js.native
+  
   /**
     Generates details for a textual representation of the iterator.
     @protected
     */
   /* protected */ def _toStringDetails(): String = js.native
+  
   /**
     Appends the items after those of the current iterator.
     After this operation, only read the returned iterator instead of the current one.
@@ -63,6 +73,7 @@ class AsyncIterator[T] () extends EventEmitter {
     */
   def append(items: js.Array[T]): AsyncIterator[T] = js.native
   def append(items: AsyncIterator[T]): AsyncIterator[T] = js.native
+  
   /**
     Stops the iterator from generating new items.
     Already generated items or terminating items can still be emitted.
@@ -70,18 +81,21 @@ class AsyncIterator[T] () extends EventEmitter {
     @emits module:asynciterator.AsyncIterator.end
     */
   def close(): Unit = js.native
+  
   /**
     Gets whether the iterator has stopped generating new items.
     @type boolean
     @readonly
     */
   def closed: Boolean = js.native
+  
   /**
     Copies the given properties from the source iterator.
     @param {module:asynciterator.AsyncIterator} source The iterator to copy from
     @param {Array} propertyNames List of property names to copy
     */
   def copyProperties(source: AsyncIterator[_], propertyNames: js.Array[String]): Unit = js.native
+  
   /**
     Destroy the iterator and stop it from generating new items.
     This will not do anything if the iterator was already ended or destroyed.
@@ -95,12 +109,14 @@ class AsyncIterator[T] () extends EventEmitter {
     */
   def destroy(): Unit = js.native
   def destroy(cause: Error): Unit = js.native
+  
   /**
     Gets whether the iterator has been destroyed.
     @type boolean
     @readonly
     */
   def destroyed: Boolean = js.native
+  
   /**
     Gets whether the iterator will not emit anymore items,
     either due to being closed or due to being destroyed.
@@ -108,12 +124,14 @@ class AsyncIterator[T] () extends EventEmitter {
     @readonly
     */
   def done: Boolean = js.native
+  
   /**
     Gets whether the iterator has finished emitting items.
     @type boolean
     @readonly
     */
   def ended: Boolean = js.native
+  
   /**
     Return items from this iterator that match the filter.
     After this operation, only read the returned iterator instead of the current one.
@@ -123,6 +141,7 @@ class AsyncIterator[T] () extends EventEmitter {
     */
   def filter(filter: js.Function1[/* item */ T, Boolean]): AsyncIterator[T] = js.native
   def filter(filter: js.Function1[/* item */ T, Boolean], self: js.Any): AsyncIterator[T] = js.native
+  
   /**
     The iterator emits a `readable` event when it might have new items available
     after having had no items available right before this event.
@@ -151,11 +170,13 @@ class AsyncIterator[T] () extends EventEmitter {
     */
   def forEach(callback: js.Function1[/* item */ T, Unit]): Unit = js.native
   def forEach(callback: js.Function1[/* item */ T, Unit], self: js.Object): Unit = js.native
+  
   /**
     Retrieves all properties of the iterator.
     @returns {object} An object with property names as keys.
     */
   def getProperties(): StringDictionary[js.Any] = js.native
+  
   /**
     Retrieves the property with the given name from the iterator.
     If no callback is passed, it returns the value of the property
@@ -168,6 +189,7 @@ class AsyncIterator[T] () extends EventEmitter {
     */
   def getProperty[P](propertyName: String): js.UndefOr[P] = js.native
   def getProperty[P](propertyName: String, callback: js.Function1[/* value */ P, Unit]): js.UndefOr[P] = js.native
+  
   /**
     Maps items from this iterator using the given function.
     After this operation, only read the returned iterator instead of the current one.
@@ -177,6 +199,7 @@ class AsyncIterator[T] () extends EventEmitter {
     */
   def map[D](map: js.Function1[/* item */ T, D]): AsyncIterator[D] = js.native
   def map[D](map: js.Function1[/* item */ T, D], self: js.Any): AsyncIterator[D] = js.native
+  
   /**
     Prepends the items after those of the current iterator.
     After this operation, only read the returned iterator instead of the current one.
@@ -185,6 +208,7 @@ class AsyncIterator[T] () extends EventEmitter {
     */
   def prepend(items: js.Array[T]): AsyncIterator[T] = js.native
   def prepend(items: AsyncIterator[T]): AsyncIterator[T] = js.native
+  
   /**
     Limits the current iterator to the given range.
     The current iterator may not be read anymore until the returned iterator ends.
@@ -193,6 +217,7 @@ class AsyncIterator[T] () extends EventEmitter {
     @returns {module:asynciterator.AsyncIterator} A new iterator with items in the given range
     */
   def range(start: Double, end: Double): AsyncIterator[T] = js.native
+  
   /**
     Tries to read the next item from the iterator.
     This is the main method for reading the iterator in _on-demand mode_,
@@ -207,6 +232,7 @@ class AsyncIterator[T] () extends EventEmitter {
     @returns {object?} The next item, or `null` if none is available
     */
   def read(): T | Null = js.native
+  
   /**
     The `end` event is emitted after the last item of the iterator has been read.
     @event module:asynciterator.end
@@ -220,17 +246,20 @@ class AsyncIterator[T] () extends EventEmitter {
     */
   def readable: Boolean = js.native
   def readable_=(readable: Boolean): Unit = js.native
+  
   /**
     Sets all of the given properties.
     @param {object} properties Key/value pairs of properties to set
     */
   def setProperties(properties: StringDictionary[js.Any]): Unit = js.native
+  
   /**
     Sets the property with the given name to the value.
     @param {string} propertyName The name of the property to set
     @param {object?} value The new value of the property
     */
   def setProperty[P](propertyName: String, value: P): Unit = js.native
+  
   /**
     Skips the given number of items from the current iterator.
     The current iterator may not be read anymore until the returned iterator ends.
@@ -238,6 +267,7 @@ class AsyncIterator[T] () extends EventEmitter {
     @returns {module:asynciterator.AsyncIterator} A new iterator that skips the given number of items
     */
   def skip(offset: Double): AsyncIterator[T] = js.native
+  
   /**
     Surrounds items of the current iterator with the given items.
     After this operation, only read the returned iterator instead of the current one.
@@ -246,6 +276,7 @@ class AsyncIterator[T] () extends EventEmitter {
     @returns {module:asynciterator.AsyncIterator} A new iterator that appends and prepends items to this iterator
     */
   def surround(prepend: AsyncIteratorOrArray[T], append: AsyncIteratorOrArray[T]): AsyncIterator[T] = js.native
+  
   /**
     Limits the current iterator to the given number of items.
     The current iterator may not be read anymore until the returned iterator ends.
@@ -253,6 +284,7 @@ class AsyncIterator[T] () extends EventEmitter {
     @returns {module:asynciterator.AsyncIterator} A new iterator with at most the given number of items
     */
   def take(limit: Double): AsyncIterator[T] = js.native
+  
   /**
     Transforms items from this iterator.
     After this operation, only read the returned iterator instead of the current one.
@@ -271,4 +303,3 @@ class AsyncIterator[T] () extends EventEmitter {
     */
   def transform[D](options: TransformOptions[T, D]): AsyncIterator[D] = js.native
 }
-

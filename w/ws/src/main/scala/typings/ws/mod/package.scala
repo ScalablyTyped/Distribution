@@ -2,17 +2,20 @@ package typings.ws
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /**
     * CertMeta represents the accepted types for certificate & key data.
     */
   type CertMeta = java.lang.String | (js.Array[typings.node.Buffer | java.lang.String]) | typings.node.Buffer
+  
   /**
     * Data represents the message payload received over the WebSocket.
     */
   type Data = java.lang.String | typings.node.Buffer | typings.std.ArrayBuffer | js.Array[typings.node.Buffer]
+  
   /**
     * VerifyClientCallbackAsync is an asynchronous callback used to inspect the
     * incoming message. The return value (boolean) of the function determines
@@ -29,6 +32,7 @@ package object mod {
     ], 
     scala.Unit
   ]
+  
   /**
     * VerifyClientCallbackSync is a synchronous callback used to inspect the
     * incoming message. The return value (boolean) of the function determines

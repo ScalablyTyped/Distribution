@@ -1,0 +1,52 @@
+package typings.pulumiAws.outputMod.networkfirewall
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPort extends js.Object {
+  
+  /**
+    * The lower limit of the port range. This must be less than or equal to the `toPort`.
+    */
+  var fromPort: Double = js.native
+  
+  /**
+    * The upper limit of the port range. This must be greater than or equal to the `fromPort`.
+    */
+  var toPort: js.UndefOr[Double] = js.native
+}
+object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPort {
+  
+  @scala.inline
+  def apply(fromPort: Double): RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPort = {
+    val __obj = js.Dynamic.literal(fromPort = fromPort.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPort]
+  }
+  
+  @scala.inline
+  implicit class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPortOps[Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPort] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setFromPort(value: Double): Self = this.set("fromPort", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setToPort(value: Double): Self = this.set("toPort", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteToPort: Self = this.set("toPort", js.undefined)
+  }
+}

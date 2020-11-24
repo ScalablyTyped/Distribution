@@ -2,41 +2,71 @@ package typings.instagramPrivateApi.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait AcceptEncoding extends js.Object {
-  var `Accept-Encoding`: String
-  var `Accept-Language`: String
-  var Authorization: String
-  var Connection: String
-  var Host: String
-  var `User-Agent`: String
-  var `X-Ads-Opt-Out`: String
-  var `X-Bloks-Is-Layout-RTL`: String
-  var `X-Bloks-Version-Id`: String
-  var `X-CM-Bandwidth-KBPS`: String
-  var `X-CM-Latency`: String
-  var `X-FB-HTTP-Engine`: String
-  var `X-IG-Android-ID`: String
-  var `X-IG-App-ID`: String
-  var `X-IG-App-Locale`: String
-  var `X-IG-Bandwidth-Speed-KBPS`: String
-  var `X-IG-Bandwidth-TotalBytes-B`: String
-  var `X-IG-Bandwidth-TotalTime-MS`: String
-  var `X-IG-Capabilities`: String
-  var `X-IG-Connection-Speed`: String
-  var `X-IG-Connection-Type`: String
-  var `X-IG-Device-ID`: String
-  var `X-IG-Device-Locale`: String
-  var `X-IG-EU-DC-ENABLED`: String
-  var `X-IG-Extended-CDN-Thumbnail-Cache-Busting-Value`: String
-  var `X-IG-WWW-Claim`: String
-  var `X-MID`: String
-  var `X-Pigeon-Rawclienttime`: String
-  var `X-Pigeon-Session-Id`: String
+  
+  var `Accept-Encoding`: String = js.native
+  
+  var `Accept-Language`: String = js.native
+  
+  var Authorization: String = js.native
+  
+  var Connection: String = js.native
+  
+  var Host: String = js.native
+  
+  var `User-Agent`: String = js.native
+  
+  var `X-Ads-Opt-Out`: String = js.native
+  
+  var `X-Bloks-Is-Layout-RTL`: String = js.native
+  
+  var `X-Bloks-Version-Id`: String = js.native
+  
+  var `X-CM-Bandwidth-KBPS`: String = js.native
+  
+  var `X-CM-Latency`: String = js.native
+  
+  var `X-FB-HTTP-Engine`: String = js.native
+  
+  var `X-IG-Android-ID`: String = js.native
+  
+  var `X-IG-App-ID`: String = js.native
+  
+  var `X-IG-App-Locale`: String = js.native
+  
+  var `X-IG-Bandwidth-Speed-KBPS`: String = js.native
+  
+  var `X-IG-Bandwidth-TotalBytes-B`: String = js.native
+  
+  var `X-IG-Bandwidth-TotalTime-MS`: String = js.native
+  
+  var `X-IG-Capabilities`: String = js.native
+  
+  var `X-IG-Connection-Speed`: String = js.native
+  
+  var `X-IG-Connection-Type`: String = js.native
+  
+  var `X-IG-Device-ID`: String = js.native
+  
+  var `X-IG-Device-Locale`: String = js.native
+  
+  var `X-IG-EU-DC-ENABLED`: String = js.native
+  
+  var `X-IG-Extended-CDN-Thumbnail-Cache-Busting-Value`: String = js.native
+  
+  var `X-IG-WWW-Claim`: String = js.native
+  
+  var `X-MID`: String = js.native
+  
+  var `X-Pigeon-Rawclienttime`: String = js.native
+  
+  var `X-Pigeon-Session-Id`: String = js.native
 }
-
 object AcceptEncoding {
+  
   @scala.inline
   def apply(
     `Accept-Encoding`: String,
@@ -98,5 +128,107 @@ object AcceptEncoding {
     __obj.updateDynamic("X-Pigeon-Session-Id")(`X-Pigeon-Session-Id`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptEncoding]
   }
+  
+  @scala.inline
+  implicit class AcceptEncodingOps[Self <: AcceptEncoding] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def `setAccept-Encoding`(value: String): Self = this.set("Accept-Encoding", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setAccept-Language`(value: String): Self = this.set("Accept-Language", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAuthorization(value: String): Self = this.set("Authorization", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setConnection(value: String): Self = this.set("Connection", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHost(value: String): Self = this.set("Host", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setUser-Agent`(value: String): Self = this.set("User-Agent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-Ads-Opt-Out`(value: String): Self = this.set("X-Ads-Opt-Out", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-Bloks-Is-Layout-RTL`(value: String): Self = this.set("X-Bloks-Is-Layout-RTL", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-Bloks-Version-Id`(value: String): Self = this.set("X-Bloks-Version-Id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-CM-Bandwidth-KBPS`(value: String): Self = this.set("X-CM-Bandwidth-KBPS", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-CM-Latency`(value: String): Self = this.set("X-CM-Latency", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-FB-HTTP-Engine`(value: String): Self = this.set("X-FB-HTTP-Engine", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-IG-Android-ID`(value: String): Self = this.set("X-IG-Android-ID", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-IG-App-ID`(value: String): Self = this.set("X-IG-App-ID", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-IG-App-Locale`(value: String): Self = this.set("X-IG-App-Locale", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-IG-Bandwidth-Speed-KBPS`(value: String): Self = this.set("X-IG-Bandwidth-Speed-KBPS", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-IG-Bandwidth-TotalBytes-B`(value: String): Self = this.set("X-IG-Bandwidth-TotalBytes-B", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-IG-Bandwidth-TotalTime-MS`(value: String): Self = this.set("X-IG-Bandwidth-TotalTime-MS", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-IG-Capabilities`(value: String): Self = this.set("X-IG-Capabilities", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-IG-Connection-Speed`(value: String): Self = this.set("X-IG-Connection-Speed", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-IG-Connection-Type`(value: String): Self = this.set("X-IG-Connection-Type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-IG-Device-ID`(value: String): Self = this.set("X-IG-Device-ID", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-IG-Device-Locale`(value: String): Self = this.set("X-IG-Device-Locale", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-IG-EU-DC-ENABLED`(value: String): Self = this.set("X-IG-EU-DC-ENABLED", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-IG-Extended-CDN-Thumbnail-Cache-Busting-Value`(value: String): Self = this.set("X-IG-Extended-CDN-Thumbnail-Cache-Busting-Value", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-IG-WWW-Claim`(value: String): Self = this.set("X-IG-WWW-Claim", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-MID`(value: String): Self = this.set("X-MID", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-Pigeon-Rawclienttime`(value: String): Self = this.set("X-Pigeon-Rawclienttime", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-Pigeon-Session-Id`(value: String): Self = this.set("X-Pigeon-Session-Id", value.asInstanceOf[js.Any])
+  }
 }
-

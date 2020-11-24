@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/iam/v1", "iam_v1.Resource$Organizations$Roles")
 @js.native
 class ResourceOrganizationsRoles protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * iam.organizations.roles.create
     * @desc Creates a new Role.
@@ -42,6 +44,7 @@ class ResourceOrganizationsRoles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRole]
   ): Unit = js.native
+  
   /**
     * iam.organizations.roles.delete
     * @desc Soft deletes a role. The role is suspended and cannot be used to
@@ -76,6 +79,7 @@ class ResourceOrganizationsRoles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRole]
   ): Unit = js.native
+  
   /**
     * iam.organizations.roles.get
     * @desc Gets a Role definition.
@@ -104,6 +108,7 @@ class ResourceOrganizationsRoles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRole]
   ): Unit = js.native
+  
   /**
     * iam.organizations.roles.list
     * @desc Lists the Roles defined on a resource.
@@ -139,6 +144,7 @@ class ResourceOrganizationsRoles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListRolesResponse]
   ): Unit = js.native
+  
   /**
     * iam.organizations.roles.patch
     * @desc Updates a Role definition.
@@ -169,6 +175,7 @@ class ResourceOrganizationsRoles protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRole]
   ): Unit = js.native
+  
   /**
     * iam.organizations.roles.undelete
     * @desc Undelete a Role, bringing it back in its previous state.
@@ -199,4 +206,3 @@ class ResourceOrganizationsRoles protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRole]
   ): Unit = js.native
 }
-

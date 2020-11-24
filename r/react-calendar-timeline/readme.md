@@ -10,9 +10,9 @@ react calendar timeline
 | ------------------ | :-------------: |
 | Full name          | react-calendar-timeline |
 | Keywords           | react, reactjs, react-component, timeline |
-| # releases         | 82 |
+| # releases         | 54 |
 | # dependents       | 3 |
-| # downloads        | 295769 |
+| # downloads        | 618363 |
 | # stars            | 9 |
 
 ## Links

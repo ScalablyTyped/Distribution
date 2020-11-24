@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCardView.BatchEditConfirmShowing event.
@@ -17,4 +17,3 @@ class ASPxClientCardViewBatchEditConfirmShowingEventArgs protected ()
     */
   def this(requestTriggerID: String) = this()
 }
-

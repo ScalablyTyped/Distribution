@@ -11,8 +11,8 @@ HashMap Class for JavaScript
 | Full name          | hashmap |
 | Keywords           | hashmap, map, object, array, associative, javascript, nodejs, node, browser |
 | # releases         | 2 |
-| # dependents       | 92 |
-| # downloads        | 1035430 |
+| # dependents       | 97 |
+| # downloads        | 1321422 |
 | # stars            | 14 |
 
 ## Links

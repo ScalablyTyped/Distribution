@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "saucelabs" : "4.5.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "saucelabs" : "4.5.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

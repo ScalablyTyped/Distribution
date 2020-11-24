@@ -3,11 +3,12 @@ package typings.ms
 import typings.ms.anon.Long
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
   * Parse the given `value` and return milliseconds.
   *
@@ -18,4 +19,3 @@ object mod extends js.Object {
   def apply(value: Double): String = js.native
   def apply(value: Double, options: Long): String = js.native
 }
-

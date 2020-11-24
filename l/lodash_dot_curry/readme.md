@@ -11,8 +11,8 @@ The lodash method `_.curry` exported as a module.
 | Full name          | lodash.curry |
 | Keywords           | lodash-modularized, curry |
 | # releases         | 0 |
-| # dependents       | 129 |
-| # downloads        | 11468268 |
+| # dependents       | 140 |
+| # downloads        | 21202971 |
 | # stars            | 1 |
 
 ## Links

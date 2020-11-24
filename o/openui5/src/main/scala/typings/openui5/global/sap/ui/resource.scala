@@ -2,11 +2,12 @@ package typings.openui5.global.sap.ui
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.resource")
 @js.native
 object resource extends js.Object {
+  
   /**
     * Returns the URL of a resource that belongs to the given library and has the given relative location
     * within the library.This is mainly meant for static resources like images that are inside the
@@ -22,4 +23,3 @@ object resource extends js.Object {
     */
   def apply(sLibraryName: String, sResourcePath: String): String = js.native
 }
-

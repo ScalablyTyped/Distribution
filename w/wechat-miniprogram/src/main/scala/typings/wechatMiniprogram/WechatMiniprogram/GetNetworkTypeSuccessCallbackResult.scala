@@ -9,11 +9,13 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.unknown
 import typings.wechatMiniprogram.wechatMiniprogramStrings.wifi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GetNetworkTypeSuccessCallbackResult extends js.Object {
+  
   var errMsg: String = js.native
+  
   /** 网络类型
     *
     * 可选值：
@@ -26,29 +28,33 @@ trait GetNetworkTypeSuccessCallbackResult extends js.Object {
     * - 'none': 无网络; */
   var networkType: wifi | `2g` | `3g` | `4g` | `5g` | unknown | none = js.native
 }
-
 object GetNetworkTypeSuccessCallbackResult {
+  
   @scala.inline
   def apply(errMsg: String, networkType: wifi | `2g` | `3g` | `4g` | `5g` | unknown | none): GetNetworkTypeSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], networkType = networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNetworkTypeSuccessCallbackResult]
   }
+  
   @scala.inline
   implicit class GetNetworkTypeSuccessCallbackResultOps[Self <: GetNetworkTypeSuccessCallbackResult] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNetworkType(value: wifi | `2g` | `3g` | `4g` | `5g` | unknown | none): Self = this.set("networkType", value.asInstanceOf[js.Any])
   }
-  
 }
-

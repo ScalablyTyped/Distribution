@@ -2,50 +2,64 @@ package typings.arangodb.ArangoDB
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UpdateByExampleOptions extends js.Object {
+  
   var keepNull: js.UndefOr[Boolean] = js.native
+  
   var limit: js.UndefOr[Double] = js.native
+  
   var mergeObjects: js.UndefOr[Boolean] = js.native
+  
   var waitForSync: js.UndefOr[Boolean] = js.native
 }
-
 object UpdateByExampleOptions {
+  
   @scala.inline
   def apply(): UpdateByExampleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateByExampleOptions]
   }
+  
   @scala.inline
   implicit class UpdateByExampleOptionsOps[Self <: UpdateByExampleOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setKeepNull(value: Boolean): Self = this.set("keepNull", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKeepNull: Self = this.set("keepNull", js.undefined)
+    
     @scala.inline
     def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLimit: Self = this.set("limit", js.undefined)
+    
     @scala.inline
     def setMergeObjects(value: Boolean): Self = this.set("mergeObjects", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMergeObjects: Self = this.set("mergeObjects", js.undefined)
+    
     @scala.inline
     def setWaitForSync(value: Boolean): Self = this.set("waitForSync", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWaitForSync: Self = this.set("waitForSync", js.undefined)
   }
-  
 }
-

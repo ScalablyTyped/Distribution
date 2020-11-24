@@ -7,9 +7,175 @@ import typings.sharedb.sharedbMod.QueryEvent
 import typings.sharedb.sharedbMod.RequestAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sharedbStrings {
+  
+  @scala.inline
+  def afterSubmit: afterSubmit = "afterSubmit".asInstanceOf[afterSubmit]
+  
+  @scala.inline
+  def apply: apply = "apply".asInstanceOf[apply]
+  
+  @scala.inline
+  def `before op`: `before op` = ("before op").asInstanceOf[`before op`]
+  
+  @scala.inline
+  def bf: bf = "bf".asInstanceOf[bf]
+  
+  @scala.inline
+  def bs: bs = "bs".asInstanceOf[bs]
+  
+  @scala.inline
+  def bu: bu = "bu".asInstanceOf[bu]
+  
+  @scala.inline
+  def byTimestamp: byTimestamp = "byTimestamp".asInstanceOf[byTimestamp]
+  
+  @scala.inline
+  def byVersion: byVersion = "byVersion".asInstanceOf[byVersion]
+  
+  @scala.inline
+  def changed: changed = "changed".asInstanceOf[changed]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def commit: commit = "commit".asInstanceOf[commit]
+  
+  @scala.inline
+  def connect: connect = "connect".asInstanceOf[connect]
+  
+  @scala.inline
+  def create: create = "create".asInstanceOf[create]
+  
+  @scala.inline
+  def current: current = "current".asInstanceOf[current]
+  
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
+  
+  @scala.inline
+  def del: del = "del".asInstanceOf[del]
+  
+  @scala.inline
+  def doc: doc = "doc".asInstanceOf[doc]
+  
+  @scala.inline
+  def drain: drain = "drain".asInstanceOf[drain]
+  
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def extra: extra = "extra".asInstanceOf[extra]
+  
+  @scala.inline
+  def f: f = "f".asInstanceOf[f]
+  
+  @scala.inline
+  def finish: finish = "finish".asInstanceOf[finish]
+  
+  @scala.inline
+  def insert: insert = "insert".asInstanceOf[insert]
+  
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  
+  @scala.inline
+  def load: load = "load".asInstanceOf[load]
+  
+  @scala.inline
+  def move: move = "move".asInstanceOf[move]
+  
+  @scala.inline
+  def nf: nf = "nf".asInstanceOf[nf]
+  
+  @scala.inline
+  def `no write pending`: `no write pending` = ("no write pending").asInstanceOf[`no write pending`]
+  
+  @scala.inline
+  def `nothing pending`: `nothing pending` = ("nothing pending").asInstanceOf[`nothing pending`]
+  
+  @scala.inline
+  def nt: nt = "nt".asInstanceOf[nt]
+  
+  @scala.inline
+  def op: op = "op".asInstanceOf[op]
+  
+  @scala.inline
+  def `ot-json0`: `ot-json0` = "ot-json0".asInstanceOf[`ot-json0`]
+  
+  @scala.inline
+  def `ot-json1`: `ot-json1` = "ot-json1".asInstanceOf[`ot-json1`]
+  
+  @scala.inline
+  def `ot-text`: `ot-text` = "ot-text".asInstanceOf[`ot-text`]
+  
+  @scala.inline
+  def `ot-text-tp2`: `ot-text-tp2` = "ot-text-tp2".asInstanceOf[`ot-text-tp2`]
+  
+  @scala.inline
+  def pause: pause = "pause".asInstanceOf[pause]
+  
+  @scala.inline
+  def pipe: pipe = "pipe".asInstanceOf[pipe]
+  
+  @scala.inline
+  def qf: qf = "qf".asInstanceOf[qf]
+  
+  @scala.inline
+  def qs: qs = "qs".asInstanceOf[qs]
+  
+  @scala.inline
+  def qu: qu = "qu".asInstanceOf[qu]
+  
+  @scala.inline
+  def query: query = "query".asInstanceOf[query]
+  
+  @scala.inline
+  def readSnapshots: readSnapshots = "readSnapshots".asInstanceOf[readSnapshots]
+  
+  @scala.inline
+  def readable: readable = "readable".asInstanceOf[readable]
+  
+  @scala.inline
+  def ready: ready = "ready".asInstanceOf[ready]
+  
+  @scala.inline
+  def receive: receive = "receive".asInstanceOf[receive]
+  
+  @scala.inline
+  def remove: remove = "remove".asInstanceOf[remove]
+  
+  @scala.inline
+  def reply: reply = "reply".asInstanceOf[reply]
+  
+  @scala.inline
+  def resume: resume = "resume".asInstanceOf[resume]
+  
+  @scala.inline
+  def `rich-text`: `rich-text` = "rich-text".asInstanceOf[`rich-text`]
+  
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  
+  @scala.inline
+  def s: s = "s".asInstanceOf[s]
+  
+  @scala.inline
+  def submit: submit = "submit".asInstanceOf[submit]
+  
+  @scala.inline
+  def u: u = "u".asInstanceOf[u]
+  
+  @scala.inline
+  def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
+  
   @js.native
   sealed trait afterSubmit extends js.Object
   
@@ -178,116 +344,4 @@ object sharedbStrings {
   
   @js.native
   sealed trait unpipe extends js.Object
-  
-  @scala.inline
-  def afterSubmit: afterSubmit = "afterSubmit".asInstanceOf[afterSubmit]
-  @scala.inline
-  def apply: apply = "apply".asInstanceOf[apply]
-  @scala.inline
-  def `before op`: `before op` = ("before op").asInstanceOf[`before op`]
-  @scala.inline
-  def bf: bf = "bf".asInstanceOf[bf]
-  @scala.inline
-  def bs: bs = "bs".asInstanceOf[bs]
-  @scala.inline
-  def bu: bu = "bu".asInstanceOf[bu]
-  @scala.inline
-  def byTimestamp: byTimestamp = "byTimestamp".asInstanceOf[byTimestamp]
-  @scala.inline
-  def byVersion: byVersion = "byVersion".asInstanceOf[byVersion]
-  @scala.inline
-  def changed: changed = "changed".asInstanceOf[changed]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def commit: commit = "commit".asInstanceOf[commit]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
-  @scala.inline
-  def current: current = "current".asInstanceOf[current]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def del: del = "del".asInstanceOf[del]
-  @scala.inline
-  def doc: doc = "doc".asInstanceOf[doc]
-  @scala.inline
-  def drain: drain = "drain".asInstanceOf[drain]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def extra: extra = "extra".asInstanceOf[extra]
-  @scala.inline
-  def f: f = "f".asInstanceOf[f]
-  @scala.inline
-  def finish: finish = "finish".asInstanceOf[finish]
-  @scala.inline
-  def insert: insert = "insert".asInstanceOf[insert]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def load: load = "load".asInstanceOf[load]
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
-  @scala.inline
-  def nf: nf = "nf".asInstanceOf[nf]
-  @scala.inline
-  def `no write pending`: `no write pending` = ("no write pending").asInstanceOf[`no write pending`]
-  @scala.inline
-  def `nothing pending`: `nothing pending` = ("nothing pending").asInstanceOf[`nothing pending`]
-  @scala.inline
-  def nt: nt = "nt".asInstanceOf[nt]
-  @scala.inline
-  def op: op = "op".asInstanceOf[op]
-  @scala.inline
-  def `ot-json0`: `ot-json0` = "ot-json0".asInstanceOf[`ot-json0`]
-  @scala.inline
-  def `ot-json1`: `ot-json1` = "ot-json1".asInstanceOf[`ot-json1`]
-  @scala.inline
-  def `ot-text`: `ot-text` = "ot-text".asInstanceOf[`ot-text`]
-  @scala.inline
-  def `ot-text-tp2`: `ot-text-tp2` = "ot-text-tp2".asInstanceOf[`ot-text-tp2`]
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
-  @scala.inline
-  def pipe: pipe = "pipe".asInstanceOf[pipe]
-  @scala.inline
-  def qf: qf = "qf".asInstanceOf[qf]
-  @scala.inline
-  def qs: qs = "qs".asInstanceOf[qs]
-  @scala.inline
-  def qu: qu = "qu".asInstanceOf[qu]
-  @scala.inline
-  def query: query = "query".asInstanceOf[query]
-  @scala.inline
-  def readSnapshots: readSnapshots = "readSnapshots".asInstanceOf[readSnapshots]
-  @scala.inline
-  def readable: readable = "readable".asInstanceOf[readable]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def receive: receive = "receive".asInstanceOf[receive]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def reply: reply = "reply".asInstanceOf[reply]
-  @scala.inline
-  def resume: resume = "resume".asInstanceOf[resume]
-  @scala.inline
-  def `rich-text`: `rich-text` = "rich-text".asInstanceOf[`rich-text`]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
-  @scala.inline
-  def submit: submit = "submit".asInstanceOf[submit]
-  @scala.inline
-  def u: u = "u".asInstanceOf[u]
-  @scala.inline
-  def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
 }
-

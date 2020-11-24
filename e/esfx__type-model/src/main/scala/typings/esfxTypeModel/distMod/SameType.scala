@@ -2,7 +2,7 @@ package typings.esfxTypeModel.distMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.esfxTypeModel.esfxTypeModelBooleans.`false`
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
   - typings.esfxTypeModel.distMod.IsNever[B]
 */
 trait SameType[A, B] extends js.Object
-

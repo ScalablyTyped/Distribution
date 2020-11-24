@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidmanagement/v1", "androidmanagement_v1.Resource$Enterprises$Applications")
 @js.native
 class ResourceEnterprisesApplications protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidmanagement.enterprises.applications.get
     * @desc Gets info about an application.
@@ -46,4 +48,3 @@ class ResourceEnterprisesApplications protected () extends js.Object {
     callback: BodyResponseCallback[SchemaApplication]
   ): Unit = js.native
 }
-

@@ -4,21 +4,18 @@
 Typings are for version 0.4
 
 ## Library description:
-An ES5+ compatible utility to deep or shallow copy and merge objects.
+An utility to deeply clone objects.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | cloner |
-| Keywords           | ES5, ES6, ES2015, clone, copy, shallow, deep, merge, utility |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 32675 |
+| Keywords           | clone, object, deep, utility |
+| # releases         | 2 |
+| # dependents       | 4 |
+| # downloads        | 85184 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/WebReflection/cloner)
-- [Bugs](https://github.com/WebReflection/cloner/issues)
-- [Repository](https://github.com/WebReflection/cloner)
 - [Npm](https://www.npmjs.com/package/cloner)
     
 

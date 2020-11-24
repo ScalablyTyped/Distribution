@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/securityhub/member", "Member")
 @js.native
@@ -21,32 +21,37 @@ class Member protected () extends CustomResource {
     */
   def this(name: String, args: MemberArgs) = this()
   def this(name: String, args: MemberArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ID of the member AWS account.
     */
   val accountId: Output_[String] = js.native
+  
   /**
     * The email of the member AWS account.
     */
   val email: Output_[String] = js.native
+  
   /**
     * Boolean whether to invite the account to Security Hub as a member. Defaults to `false`.
     */
   val invite: Output_[js.UndefOr[Boolean]] = js.native
+  
   /**
     * The ID of the master Security Hub AWS account.
     */
   val masterId: Output_[String] = js.native
+  
   /**
     * The status of the member account relationship.
     */
   val memberStatus: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/securityhub/member", "Member")
 @js.native
 object Member extends js.Object {
+  
   /**
     * Get an existing Member resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -60,10 +65,10 @@ object Member extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Member = js.native
   def get(name: String, id: Input[ID], state: MemberState): Member = js.native
   def get(name: String, id: Input[ID], state: MemberState, opts: CustomResourceOptions): Member = js.native
+  
   /**
     * Returns true if the given object is an instance of Member.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/member.Member */ Boolean = js.native
 }
-

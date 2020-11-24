@@ -11,8 +11,8 @@ utility for working with polygons (arrays of vec2s)
 | Full name          | polygon |
 | Keywords           | polygon, vec2, geometry, 2d |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 23050 |
+| # dependents       | 15 |
+| # downloads        | 26744 |
 | # stars            | 1 |
 
 ## Links

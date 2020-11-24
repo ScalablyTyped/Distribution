@@ -10,9 +10,9 @@ React Native Mapview component for iOS + Android
 | ------------------ | :-------------: |
 | Full name          | react-native-maps |
 | Keywords           | react, react-native, react-component, map, mapview, google-maps, mapkit |
-| # releases         | 13 |
-| # dependents       | 48 |
-| # downloads        | 3802972 |
+| # releases         | 11 |
+| # dependents       | 69 |
+| # downloads        | 4571926 |
 | # stars            | 12 |
 
 ## Links

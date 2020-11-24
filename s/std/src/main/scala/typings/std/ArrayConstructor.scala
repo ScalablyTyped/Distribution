@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ArrayConstructor
@@ -13,11 +13,11 @@ trait ArrayConstructor
       (/* arrayLength */ Double) | (/* items (repeated) */ js.Object), 
       js.Array[js.Any | js.Object]
     ] {
-  @JSName(js.Symbol.species)
-  val species: ArrayConstructor = js.native
+  
   def apply(): js.Array[_] = js.native
   def apply(arrayLength: Double): js.Array[_] = js.native
   def apply[T](items: T*): js.Array[T] = js.native
+  
   /**
     * Creates an array from an array-like object.
     * @param arrayLike An array-like object to convert to an array.
@@ -44,11 +44,16 @@ trait ArrayConstructor
     */
   def from[T, U](iterable: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): js.Array[U] = js.native
   def from[T, U](iterable: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): js.Array[U] = js.native
-  def isArray(arg: js.Any): /* is std.Array<any> */ scala.Boolean = js.native
+  
+  def isArray[T](arg: T): scala.Boolean = js.native
+  def isArray[T](arg: js.Object): scala.Boolean = js.native
+  
   /**
     * Returns a new array from a set of elements.
     * @param items A set of elements to include in the new array object.
     */
   def of[T](items: T*): js.Array[T] = js.native
+  
+  @JSName(js.Symbol.species)
+  val species: ArrayConstructor = js.native
 }
-

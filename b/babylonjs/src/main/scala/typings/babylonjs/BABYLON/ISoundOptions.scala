@@ -2,104 +2,189 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ISoundOptions extends js.Object {
+  
   /**
     * Does the sound autoplay once loaded.
     */
-  var autoplay: js.UndefOr[Boolean] = js.undefined
+  var autoplay: js.UndefOr[Boolean] = js.native
+  
   /**
     * Define the distance attenuation model the sound will follow.
-    * @see http://doc.babylonjs.com/how_to/playing_sounds_and_music#creating-a-spatial-3d-sound
+    * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#creating-a-spatial-3d-sound
     */
-  var distanceModel: js.UndefOr[String] = js.undefined
+  var distanceModel: js.UndefOr[String] = js.native
+  
   /**
     * Defines an optional length (in seconds) inside the sound file
     */
-  var length: js.UndefOr[Double] = js.undefined
+  var length: js.UndefOr[Double] = js.native
+  
   /**
     * Does the sound loop after it finishes playing once.
     */
-  var loop: js.UndefOr[Boolean] = js.undefined
+  var loop: js.UndefOr[Boolean] = js.native
+  
   /**
     * Maximum distance to hear that sound
     */
-  var maxDistance: js.UndefOr[Double] = js.undefined
+  var maxDistance: js.UndefOr[Double] = js.native
+  
   /**
     * Defines an optional offset (in seconds) inside the sound file
     */
-  var offset: js.UndefOr[Double] = js.undefined
+  var offset: js.UndefOr[Double] = js.native
+  
   /**
     * Defines the playback speed (1 by default)
     */
-  var playbackRate: js.UndefOr[Double] = js.undefined
+  var playbackRate: js.UndefOr[Double] = js.native
+  
   /**
     * Define the reference distance the sound should be heard perfectly.
-    * @see http://doc.babylonjs.com/how_to/playing_sounds_and_music#creating-a-spatial-3d-sound
+    * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#creating-a-spatial-3d-sound
     */
-  var refDistance: js.UndefOr[Double] = js.undefined
+  var refDistance: js.UndefOr[Double] = js.native
+  
   /**
     * Define the roll off factor of spatial sounds.
-    * @see http://doc.babylonjs.com/how_to/playing_sounds_and_music#creating-a-spatial-3d-sound
+    * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#creating-a-spatial-3d-sound
     */
-  var rolloffFactor: js.UndefOr[Double] = js.undefined
+  var rolloffFactor: js.UndefOr[Double] = js.native
+  
   /**
     * If true, URLs will not be required to state the audio file codec to use.
     */
-  var skipCodecCheck: js.UndefOr[Boolean] = js.undefined
+  var skipCodecCheck: js.UndefOr[Boolean] = js.native
+  
   /**
     * Is it a spatial sound?
     */
-  var spatialSound: js.UndefOr[Boolean] = js.undefined
+  var spatialSound: js.UndefOr[Boolean] = js.native
+  
   /**
     * Defines if the sound is from a streaming source
     */
-  var streaming: js.UndefOr[Boolean] = js.undefined
+  var streaming: js.UndefOr[Boolean] = js.native
+  
   /**
     * Uses user defined attenuation function
     */
-  var useCustomAttenuation: js.UndefOr[Boolean] = js.undefined
+  var useCustomAttenuation: js.UndefOr[Boolean] = js.native
+  
   /**
     * Sound's volume
     */
-  var volume: js.UndefOr[Double] = js.undefined
+  var volume: js.UndefOr[Double] = js.native
 }
-
 object ISoundOptions {
+  
   @scala.inline
-  def apply(
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    distanceModel: String = null,
-    length: js.UndefOr[Double] = js.undefined,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    maxDistance: js.UndefOr[Double] = js.undefined,
-    offset: js.UndefOr[Double] = js.undefined,
-    playbackRate: js.UndefOr[Double] = js.undefined,
-    refDistance: js.UndefOr[Double] = js.undefined,
-    rolloffFactor: js.UndefOr[Double] = js.undefined,
-    skipCodecCheck: js.UndefOr[Boolean] = js.undefined,
-    spatialSound: js.UndefOr[Boolean] = js.undefined,
-    streaming: js.UndefOr[Boolean] = js.undefined,
-    useCustomAttenuation: js.UndefOr[Boolean] = js.undefined,
-    volume: js.UndefOr[Double] = js.undefined
-  ): ISoundOptions = {
+  def apply(): ISoundOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
-    if (distanceModel != null) __obj.updateDynamic("distanceModel")(distanceModel.asInstanceOf[js.Any])
-    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDistance)) __obj.updateDynamic("maxDistance")(maxDistance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(playbackRate)) __obj.updateDynamic("playbackRate")(playbackRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(refDistance)) __obj.updateDynamic("refDistance")(refDistance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rolloffFactor)) __obj.updateDynamic("rolloffFactor")(rolloffFactor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipCodecCheck)) __obj.updateDynamic("skipCodecCheck")(skipCodecCheck.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spatialSound)) __obj.updateDynamic("spatialSound")(spatialSound.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(streaming)) __obj.updateDynamic("streaming")(streaming.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCustomAttenuation)) __obj.updateDynamic("useCustomAttenuation")(useCustomAttenuation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISoundOptions]
   }
+  
+  @scala.inline
+  implicit class ISoundOptionsOps[Self <: ISoundOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    
+    @scala.inline
+    def setDistanceModel(value: String): Self = this.set("distanceModel", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDistanceModel: Self = this.set("distanceModel", js.undefined)
+    
+    @scala.inline
+    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLength: Self = this.set("length", js.undefined)
+    
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    
+    @scala.inline
+    def setMaxDistance(value: Double): Self = this.set("maxDistance", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMaxDistance: Self = this.set("maxDistance", js.undefined)
+    
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    
+    @scala.inline
+    def setPlaybackRate(value: Double): Self = this.set("playbackRate", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deletePlaybackRate: Self = this.set("playbackRate", js.undefined)
+    
+    @scala.inline
+    def setRefDistance(value: Double): Self = this.set("refDistance", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRefDistance: Self = this.set("refDistance", js.undefined)
+    
+    @scala.inline
+    def setRolloffFactor(value: Double): Self = this.set("rolloffFactor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteRolloffFactor: Self = this.set("rolloffFactor", js.undefined)
+    
+    @scala.inline
+    def setSkipCodecCheck(value: Boolean): Self = this.set("skipCodecCheck", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSkipCodecCheck: Self = this.set("skipCodecCheck", js.undefined)
+    
+    @scala.inline
+    def setSpatialSound(value: Boolean): Self = this.set("spatialSound", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSpatialSound: Self = this.set("spatialSound", js.undefined)
+    
+    @scala.inline
+    def setStreaming(value: Boolean): Self = this.set("streaming", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteStreaming: Self = this.set("streaming", js.undefined)
+    
+    @scala.inline
+    def setUseCustomAttenuation(value: Boolean): Self = this.set("useCustomAttenuation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUseCustomAttenuation: Self = this.set("useCustomAttenuation", js.undefined)
+    
+    @scala.inline
+    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteVolume: Self = this.set("volume", js.undefined)
+  }
 }
-

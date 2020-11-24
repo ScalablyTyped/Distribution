@@ -12,7 +12,7 @@ A readable async stream which can be iterated over using a for-await-of loop.
 | Keywords           | async, generator, stream, data, for-await-of |
 | # releases         | 17 |
 | # dependents       | 2 |
-| # downloads        | 1585 |
+| # downloads        | 1170 |
 | # stars            | 0 |
 
 ## Links

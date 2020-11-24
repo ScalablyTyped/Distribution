@@ -5,11 +5,11 @@ import typings.vscodeLanguageserverProtocol.protocolProgressMod.WorkDoneProgress
 import typings.vscodeLanguageserverProtocol.protocolProgressMod.WorkDoneProgressReport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver", "WorkDoneProgress")
 @js.native
 object WorkDoneProgress extends js.Object {
+  
   val `type`: typings.vscodeJsonrpc.mod.ProgressType[WorkDoneProgressBegin | WorkDoneProgressReport | WorkDoneProgressEnd] = js.native
 }
-

@@ -2,28 +2,33 @@ package typings.roxBrowser.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rox-browser", "overrides")
 @js.native
 object overrides extends js.Object {
+  
   /**
     * Clears all override values
     */
   def clearAllOverrides(): Unit = js.native
+  
   /**
     * Clears the override value from the flag (and the disk).
     *
     * https://support.rollout.io/docs/javascript-browser-api#section--rox-overrides-clearoverride-
     */
   def clearOverride(nameSpacedFlagName: String): Unit = js.native
+  
   def getOriginalValue(nameSpacedFlagName: String): String = js.native
+  
   /**
     * full flag name including namespace
     *
     * https://support.rollout.io/docs/javascript-browser-api#section--rox-overrides-hasoverride-
     */
   def hasOverride(nameSpacedFlagName: String): Boolean = js.native
+  
   /**
     * Sets an override value on a specific flag, this function accepts two parameters flag name (
     * full flag name including namespace) and desired value (from type String).
@@ -36,4 +41,3 @@ object overrides extends js.Object {
     */
   def setOverride(nameSpacedFlagName: String, value: String): Unit = js.native
 }
-

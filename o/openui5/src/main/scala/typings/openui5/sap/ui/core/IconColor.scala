@@ -2,17 +2,17 @@ package typings.openui5.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait IconColor extends js.Object
-
 /**
   * Semantic Colors of an icon.
   */
 @JSGlobal("sap.ui.core.IconColor")
 @js.native
 object IconColor extends js.Object {
+  
   @js.native
   sealed trait Critical extends IconColor
   
@@ -27,6 +27,4 @@ object IconColor extends js.Object {
   
   @js.native
   sealed trait Positive extends IconColor
-  
 }
-

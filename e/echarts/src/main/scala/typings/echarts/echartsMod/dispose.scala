@@ -5,11 +5,12 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("echarts/lib/echarts", "dispose")
 @js.native
 object dispose extends js.Object {
+  
   /**
     * Destroys chart instance, after which the instance cannot be used any
     *     more.
@@ -20,4 +21,3 @@ object dispose extends js.Object {
   def apply(target: HTMLCanvasElement): Unit = js.native
   def apply(target: HTMLDivElement): Unit = js.native
 }
-

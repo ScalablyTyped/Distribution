@@ -11,8 +11,8 @@ Encapsulated tokens (encrypted and mac'ed objects)
 | Full name          | iron |
 | Keywords           | authentication, encryption, data integrity |
 | # releases         | 3 |
-| # dependents       | 25 |
-| # downloads        | 10135653 |
+| # dependents       | 24 |
+| # downloads        | 8730334 |
 | # stars            | 10 |
 
 ## Links

@@ -2,7 +2,7 @@ package typings.reactFoundation.enumsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactFoundation.reactFoundationStrings.tiny
@@ -10,12 +10,13 @@ import scala.scalajs.js.annotation._
   - typings.reactFoundation.reactFoundationStrings.large
 */
 trait SwitchSizes extends js.Object
-
 @JSImport("react-foundation/enums", "SwitchSizes")
 @js.native
 object SwitchSizes extends js.Object {
+  
   var LARGE: ButtonSizes = js.native
+  
   var SMALL: ButtonSizes = js.native
+  
   var TINY: ButtonSizes = js.native
 }
-

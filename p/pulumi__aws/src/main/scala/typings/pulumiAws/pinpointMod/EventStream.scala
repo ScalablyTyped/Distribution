@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/pinpoint", "EventStream")
 @js.native
@@ -23,11 +23,11 @@ class EventStream protected ()
   def this(name: String, args: EventStreamArgs) = this()
   def this(name: String, args: EventStreamArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/pinpoint", "EventStream")
 @js.native
 object EventStream extends js.Object {
+  
   /**
     * Get an existing EventStream resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object EventStream extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.eventStreamMod.EventStream = js.native
   def get(name: String, id: Input[ID], state: EventStreamState): typings.pulumiAws.eventStreamMod.EventStream = js.native
   def get(name: String, id: Input[ID], state: EventStreamState, opts: CustomResourceOptions): typings.pulumiAws.eventStreamMod.EventStream = js.native
+  
   /**
     * Returns true if the given object is an instance of EventStream.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/eventStream.EventStream */ Boolean = js.native
 }
-

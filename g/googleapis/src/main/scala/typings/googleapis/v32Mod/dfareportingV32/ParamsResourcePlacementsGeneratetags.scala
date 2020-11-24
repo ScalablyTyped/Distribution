@@ -6,75 +6,94 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParamsResourcePlacementsGeneratetags extends StandardParameters {
+  
   /**
     * Auth client or API Key for the request
     */
   var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  
   /**
     * Generate placements belonging to this campaign. This is a required field.
     */
   var campaignId: js.UndefOr[String] = js.native
+  
   /**
     * Generate tags for these placements.
     */
   var placementIds: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * User profile ID associated with this request.
     */
   var profileId: js.UndefOr[String] = js.native
+  
   /**
     * Tag formats to generate for these placements.  Note:
     * PLACEMENT_TAG_STANDARD can only be generated for 1x1 placements.
     */
   var tagFormats: js.UndefOr[js.Array[String]] = js.native
 }
-
 object ParamsResourcePlacementsGeneratetags {
+  
   @scala.inline
   def apply(): ParamsResourcePlacementsGeneratetags = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePlacementsGeneratetags]
   }
+  
   @scala.inline
   implicit class ParamsResourcePlacementsGeneratetagsOps[Self <: ParamsResourcePlacementsGeneratetags] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAuth: Self = this.set("auth", js.undefined)
+    
     @scala.inline
     def setCampaignId(value: String): Self = this.set("campaignId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCampaignId: Self = this.set("campaignId", js.undefined)
+    
     @scala.inline
     def setPlacementIdsVarargs(value: String*): Self = this.set("placementIds", js.Array(value :_*))
+    
     @scala.inline
     def setPlacementIds(value: js.Array[String]): Self = this.set("placementIds", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePlacementIds: Self = this.set("placementIds", js.undefined)
+    
     @scala.inline
     def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProfileId: Self = this.set("profileId", js.undefined)
+    
     @scala.inline
     def setTagFormatsVarargs(value: String*): Self = this.set("tagFormats", js.Array(value :_*))
+    
     @scala.inline
     def setTagFormats(value: js.Array[String]): Self = this.set("tagFormats", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTagFormats: Self = this.set("tagFormats", js.undefined)
   }
-  
 }
-

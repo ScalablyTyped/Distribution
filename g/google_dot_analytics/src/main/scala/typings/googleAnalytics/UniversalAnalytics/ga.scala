@@ -15,12 +15,11 @@ import typings.googleAnalytics.googleAnalyticsStrings.social
 import typings.googleAnalytics.googleAnalyticsStrings.timing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ga extends js.Object {
-  var l: Double = js.native
-  var q: js.Array[_] = js.native
+  
   def apply(command: String, fields: js.Any*): Unit = js.native
   def apply(command: String, hitType: HitType, fields: js.Any*): Unit = js.native
   def apply(command: create, trackingId: String): Unit = js.native
@@ -126,14 +125,21 @@ trait ga extends js.Object {
   def apply(command: send, hitType: timing, fieldsObject: TimingCategory): Unit = js.native
   def apply(command: send, hitType: timing, timingCategory: String, timingVar: String, timingValue: Double): Unit = js.native
   def apply(readyCallback: js.Function1[/* defaultTracker */ js.UndefOr[Tracker], Unit]): Unit = js.native
+  
   def create(trackingId: String): Tracker = js.native
   def create(trackingId: String, cookieDomain: String): Tracker = js.native
   def create(trackingId: String, cookieDomain: String, fieldsObject: FieldsObject): Tracker = js.native
   def create(trackingId: String, cookieDomain: String, name: String): Tracker = js.native
   def create(trackingId: String, cookieDomain: String, name: String, fieldsObject: FieldsObject): Tracker = js.native
   def create(trackingId: String, fieldsObject: FieldsObject): Tracker = js.native
+  
   def getAll(): js.Array[Tracker] = js.native
+  
   def getByName(name: String): Tracker = js.native
+  
+  var l: Double = js.native
+  
+  var q: js.Array[_] = js.native
+  
   def remove(name: String): Unit = js.native
 }
-

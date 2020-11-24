@@ -10,9 +10,9 @@ Create and modify trie prefix structures, extract word lists including anagrams 
 | ------------------ | :-------------: |
 | Full name          | trie-prefix-tree |
 | Keywords           | javascript, trie, words |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 10509 |
+| # releases         | 2 |
+| # dependents       | 6 |
+| # downloads        | 51640 |
 | # stars            | 1 |
 
 ## Links

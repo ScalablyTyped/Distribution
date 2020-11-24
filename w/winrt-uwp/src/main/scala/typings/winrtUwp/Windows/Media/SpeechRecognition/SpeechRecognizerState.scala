@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.SpeechRecognition
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SpeechRecognizerState extends js.Object
-
 /** Specifies the state of the speech recognizer. */
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizerState")
 @js.native
 object SpeechRecognizerState extends js.Object {
+  
   /** Indicates that the speech recognizer is capturing (listening for) audio input from the user. */
   @js.native
   sealed trait capturing extends SpeechRecognizerState
@@ -38,6 +38,4 @@ object SpeechRecognizerState extends js.Object {
   /** Indicates that the speech recognizer has detected speech input on the audio stream. */
   @js.native
   sealed trait speechDetected extends SpeechRecognizerState
-  
 }
-

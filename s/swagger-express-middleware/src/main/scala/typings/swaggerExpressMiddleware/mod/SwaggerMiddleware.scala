@@ -7,40 +7,21 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SwaggerMiddleware extends js.Object {
+  
+  /**
+    * Handles CORS preflight requests and sets CORS headers for all requests according the Swagger API definition.
+    */
+  def CORS(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /**
     * Handles CORS preflight requests and sets CORS headers for all requests according the Swagger API definition.
     */
   @JSName("CORS")
   var CORS_Original: CORSSignature = js.native
-  /**
-    * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
-    */
-  @JSName("files")
-  var files_Original: FilesSignature = js.native
-  /**
-    * Annotates the HTTP request (the `req` object) with Swagger metadata.
-    * This middleware populates Request.swagger
-    */
-  @JSName("metadata")
-  var metadata_Original: MetadataSignature = js.native
-  /**
-    * Implements mock behavior for HTTP requests, based on the Swagger API.
-    */
-  @JSName("mock")
-  var mock_Original: MockSignature = js.native
-  /**
-    * Parses the HTTP request into typed values.
-    */
-  @JSName("parseRequest")
-  var parseRequest_Original: ParseRequestSignature = js.native
-  /**
-    * Handles CORS preflight requests and sets CORS headers for all requests according the Swagger API definition.
-    */
-  def CORS(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  
   /**
     * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
     */
@@ -85,12 +66,25 @@ trait SwaggerMiddleware extends js.Object {
   options: FilesOptions
   ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /**
+    * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
+    */
+  @JSName("files")
+  var files_Original: FilesSignature = js.native
+  
+  /**
     * Annotates the HTTP request (the `req` object) with Swagger metadata.
     * This middleware populates Request.swagger
     */
   def metadata(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def metadata(router: Application_): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def metadata(router: Router): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  /**
+    * Annotates the HTTP request (the `req` object) with Swagger metadata.
+    * This middleware populates Request.swagger
+    */
+  @JSName("metadata")
+  var metadata_Original: MetadataSignature = js.native
+  
   /**
     * Implements mock behavior for HTTP requests, based on the Swagger API.
     */
@@ -149,6 +143,12 @@ trait SwaggerMiddleware extends js.Object {
   datastore: js.Any
   ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /**
+    * Implements mock behavior for HTTP requests, based on the Swagger API.
+    */
+  @JSName("mock")
+  var mock_Original: MockSignature = js.native
+  
+  /**
     * Parses the HTTP request into typed values.
     */
   def parseRequest(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
@@ -196,9 +196,14 @@ trait SwaggerMiddleware extends js.Object {
   options: ParseRequestOptions
   ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /**
+    * Parses the HTTP request into typed values.
+    */
+  @JSName("parseRequest")
+  var parseRequest_Original: ParseRequestSignature = js.native
+  
+  /**
     * Validates the HTTP request against the Swagger API.
     * An error is sent downstream if the request is invalid for any reason.
     */
   def validateRequest(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
-

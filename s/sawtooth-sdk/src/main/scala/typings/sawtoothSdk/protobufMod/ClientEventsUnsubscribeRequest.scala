@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "ClientEventsUnsubscribeRequest")
 @js.native
@@ -17,17 +17,18 @@ import scala.scalajs.js.annotation._
   */
 class ClientEventsUnsubscribeRequest () extends IClientEventsUnsubscribeRequest {
   def this(properties: IClientEventsUnsubscribeRequest) = this()
+  
   /**
     * Converts this ClientEventsUnsubscribeRequest to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("sawtooth-sdk/protobuf", "ClientEventsUnsubscribeRequest")
 @js.native
 object ClientEventsUnsubscribeRequest extends js.Object {
+  
   /**
     * Creates a new ClientEventsUnsubscribeRequest instance using the specified properties.
     * @param [properties] Properties to set
@@ -35,6 +36,7 @@ object ClientEventsUnsubscribeRequest extends js.Object {
     */
   def create(): ClientEventsUnsubscribeRequest = js.native
   def create(properties: IClientEventsUnsubscribeRequest): ClientEventsUnsubscribeRequest = js.native
+  
   /**
     * Decodes a ClientEventsUnsubscribeRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -47,6 +49,7 @@ object ClientEventsUnsubscribeRequest extends js.Object {
   def decode(reader: Reader, length: Double): ClientEventsUnsubscribeRequest = js.native
   def decode(reader: Uint8Array): ClientEventsUnsubscribeRequest = js.native
   def decode(reader: Uint8Array, length: Double): ClientEventsUnsubscribeRequest = js.native
+  
   /**
     * Decodes a ClientEventsUnsubscribeRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -56,6 +59,7 @@ object ClientEventsUnsubscribeRequest extends js.Object {
     */
   def decodeDelimited(reader: Reader): ClientEventsUnsubscribeRequest = js.native
   def decodeDelimited(reader: Uint8Array): ClientEventsUnsubscribeRequest = js.native
+  
   /**
     * Encodes the specified ClientEventsUnsubscribeRequest message. Does not implicitly {@link ClientEventsUnsubscribeRequest.verify|verify} messages.
     * @param message ClientEventsUnsubscribeRequest message or plain object to encode
@@ -64,6 +68,7 @@ object ClientEventsUnsubscribeRequest extends js.Object {
     */
   def encode(message: IClientEventsUnsubscribeRequest): Writer = js.native
   def encode(message: IClientEventsUnsubscribeRequest, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified ClientEventsUnsubscribeRequest message, length delimited. Does not implicitly {@link ClientEventsUnsubscribeRequest.verify|verify} messages.
     * @param message ClientEventsUnsubscribeRequest message or plain object to encode
@@ -72,12 +77,14 @@ object ClientEventsUnsubscribeRequest extends js.Object {
     */
   def encodeDelimited(message: IClientEventsUnsubscribeRequest): Writer = js.native
   def encodeDelimited(message: IClientEventsUnsubscribeRequest, writer: Writer): Writer = js.native
+  
   /**
     * Creates a ClientEventsUnsubscribeRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientEventsUnsubscribeRequest
     */
   def fromObject(`object`: StringDictionary[js.Any]): ClientEventsUnsubscribeRequest = js.native
+  
   /**
     * Creates a plain object from a ClientEventsUnsubscribeRequest message. Also converts values to other types if specified.
     * @param message ClientEventsUnsubscribeRequest
@@ -86,6 +93,7 @@ object ClientEventsUnsubscribeRequest extends js.Object {
     */
   def toObject(message: ClientEventsUnsubscribeRequest): StringDictionary[js.Any] = js.native
   def toObject(message: ClientEventsUnsubscribeRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a ClientEventsUnsubscribeRequest message.
     * @param message Plain object to verify
@@ -93,4 +101,3 @@ object ClientEventsUnsubscribeRequest extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

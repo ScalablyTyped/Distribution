@@ -2,7 +2,7 @@ package typings.mongodb.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "Double")
 @js.native
@@ -13,4 +13,3 @@ class Double protected ()
     */
   def this(value: scala.Double) = this()
 }
-

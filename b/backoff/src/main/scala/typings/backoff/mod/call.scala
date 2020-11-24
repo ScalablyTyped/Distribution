@@ -2,11 +2,12 @@ package typings.backoff.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backoff", "call")
 @js.native
 object call extends js.Object {
+  
   def apply(wrappedFunction: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): FunctionCallAny = js.native
   def apply[E](
     wrappedFunction: js.Function1[/* cb */ js.Function1[/* err */ E, Unit], Unit],
@@ -166,4 +167,3 @@ object call extends js.Object {
     callback: js.Function4[/* error */ E, /* r1 */ R1, /* r2 */ R2, /* r3 */ R3, Unit]
   ): TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, R2, R3] = js.native
 }
-

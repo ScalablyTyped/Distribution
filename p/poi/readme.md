@@ -10,9 +10,9 @@ A zero-config bundler for JavaScript applications.
 | ------------------ | :-------------: |
 | Full name          | poi |
 | Keywords           | poi, webpack, zero-config, bundler, vue-cli, parcel, create-react-app, babel |
-| # releases         | 165 |
-| # dependents       | 13 |
-| # downloads        | 170802 |
+| # releases         | 99 |
+| # dependents       | 15 |
+| # downloads        | 98480 |
 | # stars            | 2 |
 
 ## Links

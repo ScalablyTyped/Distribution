@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ListViewDataSource
@@ -34,10 +34,11 @@ trait ListViewDataSource
   * - sectionHeaderHasChanged(prevSectionData, nextSectionData);
   */
 Instantiable1[/* onAsset */ DataSourceAssetCallback, ListViewDataSource] {
+  
   /**
     * Clones this `ListViewDataSource` with the specified `dataBlob` and
     * `rowIdentities`. The `dataBlob` is just an aribitrary blob of data. At
-    * construction an extractor to get the interesting informatoin was defined
+    * construction an extractor to get the interesting information was defined
     * (or the default was used).
     *
     * The `rowIdentities` is is a 2D array of identifiers for rows.
@@ -54,6 +55,7 @@ Instantiable1[/* onAsset */ DataSourceAssetCallback, ListViewDataSource] {
   def cloneWithRows(dataBlob: js.Array[_], rowIdentities: js.Array[String | Double]): ListViewDataSource = js.native
   def cloneWithRows(dataBlob: StringDictionary[js.Any]): ListViewDataSource = js.native
   def cloneWithRows(dataBlob: StringDictionary[js.Any], rowIdentities: js.Array[String | Double]): ListViewDataSource = js.native
+  
   /**
     * This performs the same function as the `cloneWithRows` function but here
     * you also specify what your `sectionIdentities` are. If you don't care
@@ -89,37 +91,45 @@ Instantiable1[/* onAsset */ DataSourceAssetCallback, ListViewDataSource] {
     sectionIdentities: js.Array[String | Double],
     rowIdentities: js.Array[js.Array[String | Double]]
   ): ListViewDataSource = js.native
+  
   def getRowAndSectionCount(): Double = js.native
+  
   def getRowCount(): Double = js.native
+  
   /**
     * Gets the data required to render the row.
     */
   def getRowData(sectionIndex: Double, rowIndex: Double): js.Any = js.native
+  
   /**
     * Gets the rowID at index provided if the dataSource arrays were flattened,
     * or null of out of range indexes.
     */
   def getRowIDForFlatIndex(index: Double): String = js.native
+  
   /**
     * Gets the data required to render the section header
     */
   def getSectionHeaderData(sectionIndex: Double): js.Any = js.native
+  
   /**
     * Gets the sectionID at index provided if the dataSource arrays were flattened,
     * or null for out of range indexes.
     */
   def getSectionIDForFlatIndex(index: Double): String = js.native
+  
   /**
     * Returns an array containing the number of rows in each section
     */
   def getSectionLengths(): js.Array[Double] = js.native
+  
   /**
     * Returns if the row is dirtied and needs to be rerendered
     */
   def rowShouldUpdate(sectionIndex: Double, rowIndex: Double): Boolean = js.native
+  
   /**
     * Returns if the section header is dirtied and needs to be rerendered
     */
   def sectionHeaderShouldUpdate(sectionIndex: Double): Boolean = js.native
 }
-

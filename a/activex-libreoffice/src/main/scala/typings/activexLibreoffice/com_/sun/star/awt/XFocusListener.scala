@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to receive keyboard focus events.
@@ -14,19 +14,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XFocusListener extends XEventListener {
+  
   /**
     * is invoked when a window gains the keyboard focus.
     * @see XActivateListener.windowActivated
     */
   def focusGained(e: FocusEvent): Unit = js.native
+  
   /**
     * is invoked when a window loses the keyboard focus.
     * @see XActivateListener.windowDeactivated
     */
   def focusLost(e: FocusEvent): Unit = js.native
 }
-
 object XFocusListener {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -39,22 +41,26 @@ object XFocusListener {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), focusGained = js.Any.fromFunction1(focusGained), focusLost = js.Any.fromFunction1(focusLost), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XFocusListener]
   }
+  
   @scala.inline
   implicit class XFocusListenerOps[Self <: XFocusListener] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setFocusGained(value: FocusEvent => Unit): Self = this.set("focusGained", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setFocusLost(value: FocusEvent => Unit): Self = this.set("focusLost", js.Any.fromFunction1(value))
   }
-  
 }
-

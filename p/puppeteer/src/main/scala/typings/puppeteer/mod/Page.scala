@@ -1,7 +1,7 @@
 package typings.puppeteer.mod
 
 import typings.node.Buffer
-import typings.node.eventsMod.EventEmitter
+import typings.puppeteer.anon.IsScreenUnlocked
 import typings.puppeteer.puppeteerStrings.close
 import typings.puppeteer.puppeteerStrings.console
 import typings.puppeteer.puppeteerStrings.dialog
@@ -23,58 +23,86 @@ import typings.puppeteer.puppeteerStrings.workerdestroyed
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Page
-  extends EventEmitter
-     with FrameBase {
+  extends FrameBase
+     with EventEmitter {
+  
   var accessibility: Accessibility = js.native
-  var coverage: Coverage = js.native
-  /** Returns the virtual keyboard. */
-  var keyboard: Keyboard = js.native
-  /** Gets the virtual mouse. */
-  var mouse: Mouse = js.native
-  /** Returns the virtual touchscreen object. */
-  var touchscreen: Touchscreen = js.native
-  /** Returns the tracing object. */
-  var tracing: Tracing = js.native
+  
   /**
     * Provide credentials for http authentication.
     * To disable authentication, pass `null`.
     */
   def authenticate(): js.Promise[Unit] = js.native
   def authenticate(credentials: AuthOptions): js.Promise[Unit] = js.native
+  
   /** Brings page to front (activates tab). */
   def bringToFront(): js.Promise[Unit] = js.native
+  
   /** Get the browser the page belongs to. */
   def browser(): Browser = js.native
+  
   /** Get the browser context that the page belongs to. */
   def browserContext(): BrowserContext = js.native
+  
   /** Closes the current page. */
   def close(): js.Promise[Unit] = js.native
   def close(options: PageCloseOptions): js.Promise[Unit] = js.native
+  
   /**
     * Gets the cookies.
     * If no URLs are specified, this method returns cookies for the current page URL.
     * If URLs are specified, only cookies for those URLs are returned.
     */
   def cookies(urls: String*): js.Promise[js.Array[Cookie]] = js.native
+  
+  var coverage: Coverage = js.native
+  
   /**
     * Deletes the specified cookies.
     */
   def deleteCookie(cookies: DeleteCookie*): js.Promise[Unit] = js.native
+  
   /** Emulates given device metrics and user agent. This method is a shortcut for `setUserAgent` and `setViewport`.  */
   def emulate(options: EmulateOptions): js.Promise[Unit] = js.native
+  
+  /**
+    * Emulates the idle state.
+    * If no arguments set, clears idle state emulation.
+    *
+    * @example
+    * ```js
+    * // set idle emulation
+    * await page.emulateIdleState({isUserActive: true, isScreenUnlocked: false});
+    *
+    * // do some checks here
+    * ...
+    *
+    * // clear idle emulation
+    * await page.emulateIdleState();
+    * ```
+    *
+    * @param overrides Mock idle state. If not set, clears idle overrides
+    * @param isUserActive Mock isUserActive
+    * @param isScreenUnlocked Mock isScreenUnlocked
+    */
+  def emulateIdleState(): js.Promise[Unit] = js.native
+  def emulateIdleState(overrides: IsScreenUnlocked): js.Promise[Unit] = js.native
+  
   /**
     * Given an array of media feature objects, emulates CSS media features on the page.
     * Passing null resets all.
     */
   def emulateMediaFeatures(): js.Promise[Unit] = js.native
   def emulateMediaFeatures(features: js.Array[MediaFeature]): js.Promise[Unit] = js.native
+  
   /** Emulates the media. */
   def emulateMediaType(): js.Promise[Unit] = js.native
   def emulateMediaType(mediaType: MediaType): js.Promise[Unit] = js.native
+  
   /**
     * Changes the timezone of the page.
     * See ICU’s [metaZones.txt](https://cs.chromium.org/chromium/src/third_party/icu/source/data/misc/metaZones.txt?rcl=faee8bc70570192d82d2978a71e2a615788597d1) for a list of supported timezone IDs.
@@ -82,6 +110,7 @@ trait Page
     */
   def emulateTimezone(): js.Promise[Unit] = js.native
   def emulateTimezone(tz: String): js.Promise[Unit] = js.native
+  
   /**
     * Adds a function which would be invoked in one of the following scenarios: whenever the page is navigated; whenever the child frame is attached or navigated.
     * The function is invoked after the document was created but before any of its scripts were run. This is useful to amend JavaScript environment, e.g. to seed Math.random.
@@ -89,6 +118,7 @@ trait Page
     * @param args The arguments to pass to the `fn`.
     */
   def evaluateOnNewDocument(fn: EvaluateFn[_], args: SerializableOrJSHandle*): js.Promise[Unit] = js.native
+  
   /**
     * The method adds a function called name on the page's `window` object.
     * When called, the function executes `puppeteerFunction` in node.js and returns a
@@ -97,26 +127,44 @@ trait Page
     * @param fn Callback function which will be called in Puppeteer's context.
     */
   def exposeFunction(name: String, puppeteerFunction: js.Function1[/* repeated */ js.Any, _]): js.Promise[Unit] = js.native
+  
   /** An array of all frames attached to the page. */
   def frames(): js.Array[Frame] = js.native
+  
   /**
     * Navigate to the previous page in history.
     * @param options The navigation parameters.
     */
   def goBack(): js.Promise[Response | Null] = js.native
   def goBack(options: NavigationOptions): js.Promise[Response | Null] = js.native
+  
   /**
     * Navigate to the next page in history.
     * @param options The navigation parameters.
     */
   def goForward(): js.Promise[Response | Null] = js.native
   def goForward(options: NavigationOptions): js.Promise[Response | Null] = js.native
+  
   /** Indicates that the page has been closed. */
   def isClosed(): Boolean = js.native
+  
+  /**
+    * @returns `true` if the page has JavaScript enabled, `false` otherwise.
+    */
+  def isJavaScriptEnabled(): Boolean = js.native
+  
+  /** Returns the virtual keyboard. */
+  var keyboard: Keyboard = js.native
+  
   /** Page is guaranteed to have a main frame which persists during navigation's. */
   def mainFrame(): Frame = js.native
+  
   /** Gets the page metrics. */
   def metrics(): js.Promise[Metrics] = js.native
+  
+  /** Gets the virtual mouse. */
+  var mouse: Mouse = js.native
+  
   /**
     * Adds the listener function to the end of the listeners array for the event named `eventName`.
     * No checks are made to see if the listener has already been added. Multiple calls passing the same combination of
@@ -172,6 +220,7 @@ trait Page
   def on_workercreated(eventName: workercreated, handler: js.Function2[/* e */ Worker, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_workerdestroyed(eventName: workerdestroyed, handler: js.Function2[/* e */ Worker, /* repeated */ js.Any, Unit]): this.type = js.native
+  
   /**
     * Adds a one time listener function for the event named `eventName`.
     * The next time `eventName` is triggered, this listener is removed and then invoked.
@@ -226,6 +275,7 @@ trait Page
   def once_workercreated(eventName: workercreated, handler: js.Function2[/* e */ Worker, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("once")
   def once_workerdestroyed(eventName: workerdestroyed, handler: js.Function2[/* e */ Worker, /* repeated */ js.Any, Unit]): this.type = js.native
+  
   /**
     * Generates a PDF of the page with `print` css media.
     * To generate a pdf with `screen` media, call `page.emulateMedia('screen')` before calling `page.pdf()`:
@@ -233,17 +283,20 @@ trait Page
     */
   def pdf(): js.Promise[Buffer] = js.native
   def pdf(options: PDFOptions): js.Promise[Buffer] = js.native
+  
   /**
     * The method iterates JavaScript heap and finds all the objects with the given prototype.
     * @param prototypeHandle A handle to the object prototype.
     */
   def queryObjects(prototypeHandle: JSHandle[_]): js.Promise[JSHandle[_]] = js.native
+  
   /**
     * Reloads the current page.
     * @param options The navigation parameters.
     */
   def reload(): js.Promise[Response] = js.native
   def reload(options: NavigationOptions): js.Promise[Response] = js.native
+  
   /**
     * Captures a screenshot of the page.
     * @param options The screenshot options.
@@ -252,6 +305,7 @@ trait Page
   def screenshot(options: Base64ScreenShotOptions): js.Promise[String] = js.native
   def screenshot(options: BinaryScreenShotOptions): js.Promise[Buffer] = js.native
   def screenshot(options: ScreenshotOptions): js.Promise[String | Buffer] = js.native
+  
   /**
     * Toggles bypassing page's Content-Security-Policy.
     * NOTE CSP bypassing happens at the moment of CSP initialization rather then evaluation.
@@ -259,17 +313,20 @@ trait Page
     * @param enabled sets bypassing of page's Content-Security-Policy.
     */
   def setBypassCSP(enabled: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Determines whether cache is enabled on the page.
     * @param [enabled=true] Whether or not to enable cache on the page.
     */
   def setCacheEnabled(): js.Promise[Unit] = js.native
   def setCacheEnabled(enabled: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Sets the cookies on the page.
     * @param cookies The cookies to set.
     */
   def setCookie(cookies: SetCookie*): js.Promise[Unit] = js.native
+  
   /**
     * This setting will change the default maximum navigation time of 30 seconds for the following methods:
     * - `page.goto`
@@ -279,6 +336,7 @@ trait Page
     * - `page.waitForNavigation`
     */
   def setDefaultNavigationTimeout(timeout: Double): Unit = js.native
+  
   /**
     * This setting will change the default maximum time for the following methods and related shortcuts:
     * - `page.goBack`
@@ -297,44 +355,60 @@ trait Page
     * NOTE page.setDefaultNavigationTimeout takes priority over page.setDefaultTimeout
     */
   def setDefaultTimeout(timeout: Double): Unit = js.native
+  
   /**
     * The extra HTTP headers will be sent with every request the page initiates.
     * @param headers An object containing additional http headers to be sent with every request. All header values must be strings.
     */
   def setExtraHTTPHeaders(headers: Headers): js.Promise[Unit] = js.native
+  
   /**
     * Sets the page's geolocation.
     */
   def setGeolocation(options: GeoOptions): js.Promise[Unit] = js.native
+  
   /**
     * Determines whether JavaScript is enabled on the page.
     * @param enable Whether or not to enable JavaScript on the page.
     */
   def setJavaScriptEnabled(enabled: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Determines whether the offline mode is enabled.
     * @param enabled When `true`, enables the offline mode for the page.
     */
   def setOfflineMode(enabled: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Determines whether the request interception is enabled.
     * @param enabled When `true` the methods `request.abort`, `request.continue` and `request.respond` must be used.
     */
   def setRequestInterception(enabled: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Specifies the User-Agent used in this page.
     * @param userAgent The user-agent to be used in the page.
     */
   def setUserAgent(userAgent: String): js.Promise[Unit] = js.native
+  
   /**
     * Sets the viewport of the page.
     * @param viewport The viewport parameters.
     */
   def setViewport(viewport: Viewport): js.Promise[Unit] = js.native
+  
   /** @returns The target this page was created from */
   def target(): Target = js.native
+  
+  /** Returns the virtual touchscreen object. */
+  var touchscreen: Touchscreen = js.native
+  
+  /** Returns the tracing object. */
+  var tracing: Tracing = js.native
+  
   /** Gets the page viewport. */
   def viewport(): Viewport = js.native
+  
   /**
     * In non-headless Chromium, this method results in the native file picker dialog not showing up for the user.
     * This method is typically coupled with an action that triggers file choosing.
@@ -342,15 +416,17 @@ trait Page
     */
   def waitForFileChooser(): js.Promise[FileChooser] = js.native
   def waitForFileChooser(options: Timeoutable): js.Promise[FileChooser] = js.native
+  
   def waitForRequest(urlOrPredicate: String): js.Promise[Request] = js.native
   def waitForRequest(urlOrPredicate: String, options: Timeoutable): js.Promise[Request] = js.native
   def waitForRequest(urlOrPredicate: js.Function1[/* req */ Request, Boolean]): js.Promise[Request] = js.native
   def waitForRequest(urlOrPredicate: js.Function1[/* req */ Request, Boolean], options: Timeoutable): js.Promise[Request] = js.native
+  
   def waitForResponse(urlOrPredicate: String): js.Promise[Response] = js.native
   def waitForResponse(urlOrPredicate: String, options: Timeoutable): js.Promise[Response] = js.native
   def waitForResponse(urlOrPredicate: js.Function1[/* res */ Response, Boolean]): js.Promise[Response] = js.native
   def waitForResponse(urlOrPredicate: js.Function1[/* res */ Response, Boolean], options: Timeoutable): js.Promise[Response] = js.native
+  
   /** This method returns all of the dedicated WebWorkers associated with the page. */
   def workers(): js.Array[Worker] = js.native
 }
-

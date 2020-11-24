@@ -5,7 +5,7 @@ import typings.typescriptServices.TypeScript.ISyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.ImportDeclarationSyntax")
 @js.native
@@ -21,11 +21,11 @@ class ImportDeclarationSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSGlobal("TypeScript.ImportDeclarationSyntax")
 @js.native
 object ImportDeclarationSyntax extends js.Object {
+  
   def create(
     importKeyword: ISyntaxToken,
     identifier: ISyntaxToken,
@@ -33,6 +33,6 @@ object ImportDeclarationSyntax extends js.Object {
     moduleReference: IModuleReferenceSyntax,
     semicolonToken: ISyntaxToken
   ): typings.typescriptServices.TypeScript.ImportDeclarationSyntax = js.native
+  
   def create1(identifier: ISyntaxToken, moduleReference: IModuleReferenceSyntax): typings.typescriptServices.TypeScript.ImportDeclarationSyntax = js.native
 }
-

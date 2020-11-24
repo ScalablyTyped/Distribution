@@ -11,8 +11,8 @@ Convert JS object to JSON Schema
 | Full name          | to-json-schema |
 | Keywords           | JSON, schema, JSON schema, jsonschema, converter, convert |
 | # releases         | 6 |
-| # dependents       | 5 |
-| # downloads        | 43254 |
+| # dependents       | 15 |
+| # downloads        | 142083 |
 | # stars            | 0 |
 
 ## Links

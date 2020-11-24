@@ -3,11 +3,12 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.anon.TypeofScriptType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("pc.registerScript")
 @js.native
 object registerScript extends js.Object {
+  
   /**
     * Register a existing class type as a Script Type to {@link pc.ScriptRegistry}.
     * Useful when defining a ES6 script class that extends {@link pc.ScriptType} (see example).
@@ -45,4 +46,3 @@ object registerScript extends js.Object {
   def apply(script: TypeofScriptType, name: String): Unit = js.native
   def apply(script: TypeofScriptType, name: String, app: typings.playcanvas.pc.Application): Unit = js.native
 }
-

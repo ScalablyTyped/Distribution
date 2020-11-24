@@ -12,7 +12,7 @@ TypeScript port of AS3 Signals.
 | Keywords           | Signals, TypeScript |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 3643 |
+| # downloads        | 2446 |
 | # stars            | 0 |
 
 ## Links

@@ -2,14 +2,14 @@ package typings.googlemaps.google.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait GeocoderStatus extends js.Object
-
 @JSGlobal("google.maps.GeocoderStatus")
 @js.native
 object GeocoderStatus extends js.Object {
+  
   @js.native
   sealed trait ERROR extends GeocoderStatus
   
@@ -30,6 +30,4 @@ object GeocoderStatus extends js.Object {
   
   @js.native
   sealed trait ZERO_RESULTS extends GeocoderStatus
-  
 }
-

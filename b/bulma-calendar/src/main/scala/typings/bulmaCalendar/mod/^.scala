@@ -3,7 +3,7 @@ package typings.bulmaCalendar.mod
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bulma-calendar", JSImport.Namespace)
 @js.native
@@ -14,10 +14,10 @@ class ^ protected () extends bulmaCalendar {
   def this(selector: String, options: Options) = this()
   def this(selector: HTMLElement, options: Options) = this()
 }
-
 @JSImport("bulma-calendar", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def attach(): js.Array[bulmaCalendar] = js.native
   def attach(selector: js.UndefOr[scala.Nothing], options: Options): js.Array[bulmaCalendar] = js.native
   def attach(selector: String): js.Array[bulmaCalendar] = js.native
@@ -25,4 +25,3 @@ object ^ extends js.Object {
   def attach(selector: HTMLElement): js.Array[bulmaCalendar] = js.native
   def attach(selector: HTMLElement, options: Options): js.Array[bulmaCalendar] = js.native
 }
-

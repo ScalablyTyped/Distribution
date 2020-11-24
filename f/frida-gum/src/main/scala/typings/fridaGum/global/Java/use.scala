@@ -4,11 +4,12 @@ import typings.fridaGum.Java.Members
 import typings.fridaGum.Java.Wrapper
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Java.use")
 @js.native
 object use extends js.Object {
+  
   /**
     * Dynamically generates a JavaScript wrapper for `className` that you can
     * instantiate objects from by calling `$new()` on to invoke a constructor.
@@ -24,4 +25,3 @@ object use extends js.Object {
     */
   def apply[T /* <: Members[T] */](className: String): Wrapper[T] = js.native
 }
-

@@ -2,14 +2,14 @@ package typings.winrt.Windows.UI.Core.AnimationMetrics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AnimationEffectTarget extends js.Object
-
 @JSGlobal("Windows.UI.Core.AnimationMetrics.AnimationEffectTarget")
 @js.native
 object AnimationEffectTarget extends js.Object {
+  
   @js.native
   sealed trait added extends AnimationEffectTarget
   
@@ -69,6 +69,4 @@ object AnimationEffectTarget extends js.Object {
   
   @js.native
   sealed trait tapped extends AnimationEffectTarget
-  
 }
-

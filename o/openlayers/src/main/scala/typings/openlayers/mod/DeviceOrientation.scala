@@ -3,7 +3,7 @@ package typings.openlayers.mod
 import typings.openlayers.mod.olx.DeviceOrientationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "DeviceOrientation")
 @js.native
@@ -62,6 +62,7 @@ import scala.scalajs.js.annotation._
   */
 class DeviceOrientation () extends Object {
   def this(opt_options: DeviceOrientationOptions) = this()
+  
   /**
     * Rotation around the device z-axis (in radians).
     * @return The euler angle in radians of the device from the
@@ -70,6 +71,7 @@ class DeviceOrientation () extends Object {
     * @api
     */
   def getAlpha(): Double = js.native
+  
   /**
     * Rotation around the device x-axis (in radians).
     * @return The euler angle in radians of the device from the
@@ -78,6 +80,7 @@ class DeviceOrientation () extends Object {
     * @api
     */
   def getBeta(): Double = js.native
+  
   /**
     * Rotation around the device y-axis (in radians).
     * @return The euler angle in radians of the device from the
@@ -86,6 +89,7 @@ class DeviceOrientation () extends Object {
     * @api
     */
   def getGamma(): Double = js.native
+  
   /**
     * The heading of the device relative to north (in radians).
     * @return The heading of the device relative to north, in
@@ -94,6 +98,7 @@ class DeviceOrientation () extends Object {
     * @api
     */
   def getHeading(): Double = js.native
+  
   /**
     * Determine if orientation is being tracked.
     * @return Changes in device orientation are being tracked.
@@ -101,6 +106,7 @@ class DeviceOrientation () extends Object {
     * @api
     */
   def getTracking(): Boolean = js.native
+  
   /**
     * Enable or disable tracking of device orientation events.
     * @param tracking The status of tracking changes to alpha, beta and
@@ -110,4 +116,3 @@ class DeviceOrientation () extends Object {
     */
   def setTracking(tracking: Boolean): Unit = js.native
 }
-

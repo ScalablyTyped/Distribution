@@ -2,11 +2,10 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MASK_TYPES extends js.Object
-
 /**
   * Constants for mask implementations.
   * We use `type` suffix because it leads to very different behaviours
@@ -23,6 +22,7 @@ sealed trait MASK_TYPES extends js.Object
 @JSGlobal("PIXI.MASK_TYPES")
 @js.native
 object MASK_TYPES extends js.Object {
+  
   @js.native
   sealed trait NONE extends MASK_TYPES
   
@@ -34,6 +34,4 @@ object MASK_TYPES extends js.Object {
   
   @js.native
   sealed trait STENCIL extends MASK_TYPES
-  
 }
-

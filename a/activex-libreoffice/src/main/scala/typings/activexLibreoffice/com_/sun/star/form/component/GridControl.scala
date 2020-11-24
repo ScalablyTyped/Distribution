@@ -13,7 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a model for a control which can display form data in a table-like way.
@@ -39,12 +39,14 @@ trait GridControl
      with XGridColumnFactory
      with XSelectionSupplier
      with XReset {
+  
   /**
     * returns the border style of the control.
     *
     * `; 0: No border; 1: 3D border; 2: simple border; `
     */
   var Border: Double = js.native
+  
   /**
     * specifies the color of the border, if present
     *
@@ -52,10 +54,13 @@ trait GridControl
     * @since OOo 2.0
     */
   var BorderColor: Double = js.native
+  
   /** determines whether the control is enabled or disabled. */
   var Enabled: Boolean = js.native
+  
   /** contains the font attributes of the text in the control. */
   var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
+  
   /**
     * specifies the height of a row of the grid.
     *
@@ -63,10 +68,13 @@ trait GridControl
     * @see GridControl.FontDescriptor
     */
   var RowHeight: Double = js.native
+  
   /** determines whether the control can be reached by the tabulator key. */
   var Tabstop: Boolean = js.native
+  
   /** specifies the text color (RGB) of the control. */
   var TextColor: Color = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -74,4 +82,3 @@ trait GridControl
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-

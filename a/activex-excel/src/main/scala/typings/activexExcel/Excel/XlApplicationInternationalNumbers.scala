@@ -10,7 +10,7 @@ import typings.activexExcel.activexExcelNumbers.`31`
 import typings.activexExcel.activexExcelNumbers.`32`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexExcel.activexExcelNumbers.`1`
@@ -23,23 +23,29 @@ import scala.scalajs.js.annotation._
   - typings.activexExcel.activexExcelNumbers.`31`
 */
 trait XlApplicationInternationalNumbers extends XlApplicationInternational
-
 object XlApplicationInternationalNumbers {
+  
   @scala.inline
   def xlCountryCode: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def xlCountrySetting: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def xlCurrencyDigits: `27` = 27.asInstanceOf[`27`]
+  
   @scala.inline
   def xlCurrencyNegative: `28` = 28.asInstanceOf[`28`]
+  
   @scala.inline
   def xlDateOrder: `32` = 32.asInstanceOf[`32`]
+  
   @scala.inline
   def xlMonthNameChars: `30` = 30.asInstanceOf[`30`]
+  
   @scala.inline
   def xlNoncurrencyDigits: `29` = 29.asInstanceOf[`29`]
+  
   @scala.inline
   def xlWeekdayNameChars: `31` = 31.asInstanceOf[`31`]
 }
-

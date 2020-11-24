@@ -31,7 +31,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.UpperLetter
 import typings.officeJsPreview.officeJsPreviewStrings.UpperRoman
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -41,37 +41,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait List extends ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_List: RequestContext = js.native
-  /**
-    *
-    * Gets the list's id.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val id: Double = js.native
-  /**
-    *
-    * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val levelExistences: js.Array[Boolean] = js.native
-  /**
-    *
-    * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val levelTypes: js.Array[ListLevelType] = js.native
-  /**
-    *
-    * Gets paragraphs in the list. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val paragraphs: ParagraphCollection = js.native
+  
   /**
     * Gets the font of the bullet, number, or picture at the specified level in the list.
     *
@@ -81,6 +55,7 @@ trait List extends ClientObject {
     * @param level Required. The level in the list.
     */
   def getLevelFont(level: Double): Font = js.native
+  
   /**
     * Gets the paragraphs that occur at the specified level in the list.
     *
@@ -89,6 +64,7 @@ trait List extends ClientObject {
     * @param level Required. The level in the list.
     */
   def getLevelParagraphs(level: Double): ParagraphCollection = js.native
+  
   /**
     * Gets the base64 encoded string representation of the picture at the specified level in the list.
     *
@@ -98,6 +74,7 @@ trait List extends ClientObject {
     * @param level Required. The level in the list.
     */
   def getLevelPicture(level: Double): ClientResult[String] = js.native
+  
   /**
     * Gets the bullet, number, or picture at the specified level as a string.
     *
@@ -106,6 +83,15 @@ trait List extends ClientObject {
     * @param level Required. The level in the list.
     */
   def getLevelString(level: Double): ClientResult[String] = js.native
+  
+  /**
+    *
+    * Gets the list's id.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val id: Double = js.native
+  
   /**
     * Inserts a paragraph at the specified location.
     *
@@ -133,6 +119,23 @@ trait List extends ClientObject {
   def insertParagraph_Replace(paragraphText: String, insertLocation: Replace): Paragraph = js.native
   @JSName("insertParagraph")
   def insertParagraph_Start(paragraphText: String, insertLocation: Start): Paragraph = js.native
+  
+  /**
+    *
+    * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val levelExistences: js.Array[Boolean] = js.native
+  
+  /**
+    *
+    * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val levelTypes: js.Array[ListLevelType] = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -143,6 +146,15 @@ trait List extends ClientObject {
   def load(propertyNamesAndPaths: Expand): List = js.native
   def load(propertyNames: String): List = js.native
   def load(propertyNames: js.Array[String]): List = js.native
+  
+  /**
+    *
+    * Gets paragraphs in the list. Read-only.
+    *
+    * [Api set: WordApi 1.3]
+    */
+  val paragraphs: ParagraphCollection = js.native
+  
   /**
     * Resets the font of the bullet, number, or picture at the specified level in the list.
     *
@@ -154,6 +166,7 @@ trait List extends ClientObject {
     */
   def resetLevelFont(level: Double): Unit = js.native
   def resetLevelFont(level: Double, resetFontName: Boolean): Unit = js.native
+  
   /**
     * Sets the alignment of the bullet, number, or picture at the specified level in the list.
     *
@@ -183,6 +196,7 @@ trait List extends ClientObject {
   def setLevelAlignment_Right(level: Double, alignment: Right): Unit = js.native
   @JSName("setLevelAlignment")
   def setLevelAlignment_Unknown(level: Double, alignment: Unknown_): Unit = js.native
+  
   /**
     * Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
     *
@@ -263,6 +277,7 @@ trait List extends ClientObject {
   def setLevelBullet_Square(level: Double, listBullet: Square, charCode: Double): Unit = js.native
   @JSName("setLevelBullet")
   def setLevelBullet_Square(level: Double, listBullet: Square, charCode: Double, fontName: String): Unit = js.native
+  
   /**
     * Sets the two indents of the specified level in the list.
     *
@@ -273,6 +288,7 @@ trait List extends ClientObject {
     * @param bulletNumberPictureIndent Required. The relative indent, in points, of the bullet, number, or picture. It is the same as paragraph first line indent.
     */
   def setLevelIndents(level: Double, textIndent: Double, bulletNumberPictureIndent: Double): Unit = js.native
+  
   /**
     * Sets the numbering format at the specified level in the list.
     *
@@ -317,6 +333,7 @@ trait List extends ClientObject {
   def setLevelNumbering_UpperRoman(level: Double, listNumbering: UpperRoman): Unit = js.native
   @JSName("setLevelNumbering")
   def setLevelNumbering_UpperRoman(level: Double, listNumbering: UpperRoman, formatString: js.Array[String | Double]): Unit = js.native
+  
   /**
     * Sets the picture at the specified level in the list.
     *
@@ -328,6 +345,7 @@ trait List extends ClientObject {
     */
   def setLevelPicture(level: Double): Unit = js.native
   def setLevelPicture(level: Double, base64EncodedImage: String): Unit = js.native
+  
   /**
     * Sets the starting number at the specified level in the list. Default value is 1.
     *
@@ -337,18 +355,20 @@ trait List extends ClientObject {
     * @param startingNumber Required. The number to start with.
     */
   def setLevelStartingNumber(level: Double, startingNumber: Double): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Word.List object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): ListData = js.native
+  
   /**
     * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): List = js.native
+  
   /**
     * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): List = js.native
 }
-

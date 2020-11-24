@@ -2,9 +2,10 @@ package typings.emotionSerialize
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /* Rewritten from type alias, can be one of: 
     - scala.Null
     - js.UndefOr[scala.Nothing]
@@ -20,7 +21,9 @@ package object mod {
   type CSSInterpolation = js.UndefOr[
     typings.emotionSerialize.mod._CSSInterpolation | scala.Null | scala.Boolean | scala.Double | java.lang.String | typings.emotionSerialize.mod.Keyframes | typings.emotionUtils.mod.SerializedStyles
   ]
-  type CSSProperties = typings.csstype.mod.PropertiesFallback[scala.Double | java.lang.String, java.lang.String with js.Object]
+  
+  type CSSProperties = typings.csstype.mod.PropertiesFallback[scala.Double | java.lang.String]
+  
   /* Rewritten from type alias, can be one of: 
     - scala.Null
     - js.UndefOr[scala.Nothing]
@@ -46,5 +49,6 @@ package object mod {
       typings.emotionSerialize.mod.FunctionInterpolation[MP]
     ]) | scala.Null | scala.Boolean | scala.Double | java.lang.String | typings.emotionSerialize.mod.Keyframes | typings.emotionUtils.mod.SerializedStyles
   ]
+  
   type Keyframes = typings.emotionSerialize.anon.Anim with java.lang.String
 }

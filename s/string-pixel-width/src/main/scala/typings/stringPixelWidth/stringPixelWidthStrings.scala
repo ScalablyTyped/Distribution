@@ -2,9 +2,52 @@ package typings.stringPixelWidth
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringPixelWidthStrings {
+  
+  @scala.inline
+  def `andale mono`: `andale mono` = ("andale mono").asInstanceOf[`andale mono`]
+  
+  @scala.inline
+  def arial: arial = "arial".asInstanceOf[arial]
+  
+  @scala.inline
+  def avenir: avenir = "avenir".asInstanceOf[avenir]
+  
+  @scala.inline
+  def `avenir next`: `avenir next` = ("avenir next").asInstanceOf[`avenir next`]
+  
+  @scala.inline
+  def `comic sans ms`: `comic sans ms` = ("comic sans ms").asInstanceOf[`comic sans ms`]
+  
+  @scala.inline
+  def `courier new`: `courier new` = ("courier new").asInstanceOf[`courier new`]
+  
+  @scala.inline
+  def georgia: georgia = "georgia".asInstanceOf[georgia]
+  
+  @scala.inline
+  def impact: impact = "impact".asInstanceOf[impact]
+  
+  @scala.inline
+  def `open sans`: `open sans` = ("open sans").asInstanceOf[`open sans`]
+  
+  @scala.inline
+  def tahoma: tahoma = "tahoma".asInstanceOf[tahoma]
+  
+  @scala.inline
+  def `times new roman`: `times new roman` = ("times new roman").asInstanceOf[`times new roman`]
+  
+  @scala.inline
+  def `trebuchet ms`: `trebuchet ms` = ("trebuchet ms").asInstanceOf[`trebuchet ms`]
+  
+  @scala.inline
+  def verdana: verdana = "verdana".asInstanceOf[verdana]
+  
+  @scala.inline
+  def webdings: webdings = "webdings".asInstanceOf[webdings]
+  
   @js.native
   sealed trait `andale mono` extends js.Object
   
@@ -46,34 +89,4 @@ object stringPixelWidthStrings {
   
   @js.native
   sealed trait webdings extends js.Object
-  
-  @scala.inline
-  def `andale mono`: `andale mono` = ("andale mono").asInstanceOf[`andale mono`]
-  @scala.inline
-  def arial: arial = "arial".asInstanceOf[arial]
-  @scala.inline
-  def avenir: avenir = "avenir".asInstanceOf[avenir]
-  @scala.inline
-  def `avenir next`: `avenir next` = ("avenir next").asInstanceOf[`avenir next`]
-  @scala.inline
-  def `comic sans ms`: `comic sans ms` = ("comic sans ms").asInstanceOf[`comic sans ms`]
-  @scala.inline
-  def `courier new`: `courier new` = ("courier new").asInstanceOf[`courier new`]
-  @scala.inline
-  def georgia: georgia = "georgia".asInstanceOf[georgia]
-  @scala.inline
-  def impact: impact = "impact".asInstanceOf[impact]
-  @scala.inline
-  def `open sans`: `open sans` = ("open sans").asInstanceOf[`open sans`]
-  @scala.inline
-  def tahoma: tahoma = "tahoma".asInstanceOf[tahoma]
-  @scala.inline
-  def `times new roman`: `times new roman` = ("times new roman").asInstanceOf[`times new roman`]
-  @scala.inline
-  def `trebuchet ms`: `trebuchet ms` = ("trebuchet ms").asInstanceOf[`trebuchet ms`]
-  @scala.inline
-  def verdana: verdana = "verdana".asInstanceOf[verdana]
-  @scala.inline
-  def webdings: webdings = "webdings".asInstanceOf[webdings]
 }
-

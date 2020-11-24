@@ -3,11 +3,12 @@ package typings.cacache.enMod.get
 import typings.cacache.cacacheBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cacache/en", "get.hasContent")
 @js.native
 object hasContent extends js.Object {
+  
   /**
     * Looks up a Subresource Integrity hash in the cache. If content exists
     * for this `integrity`, it will return an object, with the specific single
@@ -17,4 +18,3 @@ object hasContent extends js.Object {
     */
   def apply(cachePath: String, hash: String): js.Promise[HasContentObject | `false`] = js.native
 }
-

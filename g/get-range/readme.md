@@ -11,8 +11,8 @@ Lazy number range generator
 | Full name          | get-range |
 | Keywords           | range, xrange, generator, generate, iterator, iterable, iterate, gen, get, number, numbers |
 | # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 897 |
+| # dependents       | 2 |
+| # downloads        | 223 |
 | # stars            | 1 |
 
 ## Links

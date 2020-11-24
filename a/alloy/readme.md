@@ -10,9 +10,9 @@ Appcelerator Titanium MVC Framework
 | ------------------ | :-------------: |
 | Full name          | alloy |
 | Keywords           | appcelerator, titanium, alloy, mobile, ios, iphone, android, html5, appc-client |
-| # releases         | 24 |
+| # releases         | 20 |
 | # dependents       | 6 |
-| # downloads        | 22540 |
+| # downloads        | 12677 |
 | # stars            | 7 |
 
 ## Links

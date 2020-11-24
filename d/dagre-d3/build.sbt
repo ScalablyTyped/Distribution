@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "dagre-d3"
-version := "0.4-dt-20200226Z-172676"
+version := "0.6-dt-20201118Z-2024ee"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "d3-selection" % "1.4-dt-20200707Z-7b7f3a",
-  "org.scalablytyped" %%% "d3-transition" % "1.1-dt-20200515Z-06118c",
-  "org.scalablytyped" %%% "dagre" % "0.7-dt-20200507Z-c0eded",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "d3-selection" % "2.0-dt-20201002Z-789400",
+  "org.scalablytyped" %%% "dagre" % "0.7-dt-20200507Z-85d516",
+  "org.scalablytyped" %%% "graphlib" % "2.1.1-dt-20201002Z-3ccb8f",
+  "org.scalablytyped" %%% "std" % "4.1-c651d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

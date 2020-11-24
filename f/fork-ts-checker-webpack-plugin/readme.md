@@ -1,7 +1,7 @@
 
 # Scala.js typings for fork-ts-checker-webpack-plugin
 
-Typings are for version 5.0.13
+Typings are for version 6.0.3
 
 ## Library description:
 Runs typescript type checker and linter on separate process.
@@ -9,10 +9,10 @@ Runs typescript type checker and linter on separate process.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | fork-ts-checker-webpack-plugin |
-| Keywords           | awesome-typescript-loader, checker, fast, fork, increment, linter, plugin, speed, ts-loader, type, typescript, webpack, webpack-plugin |
-| # releases         | 69 |
-| # dependents       | 589 |
-| # downloads        | 75828625 |
+| Keywords           | fast, fork, linter, webpack, plugin, ts-loader, typescript, webpack |
+| # releases         | 114 |
+| # dependents       | 783 |
+| # downloads        | 228864237 |
 | # stars            | 3 |
 
 ## Links

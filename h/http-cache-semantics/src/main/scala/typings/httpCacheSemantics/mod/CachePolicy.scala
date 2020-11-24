@@ -2,10 +2,11 @@ package typings.httpCacheSemantics.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CachePolicy extends js.Object {
+  
   /**
     * Returns updated, filtered set of response headers to return to clients receiving the cached response.
     * This function is necessary, because proxies MUST always remove hop-by-hop headers (such as `TE` and `Connection`)
@@ -15,10 +16,12 @@ trait CachePolicy extends js.Object {
     * cachedResponse.headers = cachePolicy.responseHeaders(cachedResponse);
     */
   def responseHeaders(): Headers = js.native
+  
   /**
     * Use this method to update the cache after receiving a new response from the origin server.
     */
   def revalidatedPolicy(revalidationRequest: Request, revalidationResponse: Response): RevalidationPolicy = js.native
+  
   /**
     * Returns updated, filtered set of request headers to send to the origin server to check if the cached
     * response can be reused. These headers allow the origin server to return status 304 indicating the
@@ -30,6 +33,7 @@ trait CachePolicy extends js.Object {
     * updateRequest.headers = cachePolicy.revalidationHeaders(updateRequest);
     */
   def revalidationHeaders(newRequest: Request): Headers = js.native
+  
   /**
     * This is the most important method. Use this method to check whether the cached response is still fresh
     * in the context of the new request.
@@ -42,11 +46,13 @@ trait CachePolicy extends js.Object {
     * or may require to be refreshed first (see `revalidationHeaders()`).
     */
   def satisfiesWithoutRevalidation(newRequest: Request): Boolean = js.native
+  
   /**
     * Returns `true` if the response can be stored in a cache.
     * If it's `false` then you MUST NOT store either the request or the response.
     */
   def storable(): Boolean = js.native
+  
   /**
     * Returns approximate time in milliseconds until the response becomes stale (i.e. not fresh).
     *
@@ -55,14 +61,15 @@ trait CachePolicy extends js.Object {
     * `satisfiesWithoutRevalidation()`.
     */
   def timeToLive(): Double = js.native
+  
   /**
     * Chances are you'll want to store the `CachePolicy` object along with the cached response.
     * `obj = policy.toObject()` gives a plain JSON-serializable object.
     */
   def toObject(): CachePolicyObject = js.native
 }
-
 object CachePolicy {
+  
   @scala.inline
   def apply(
     responseHeaders: () => Headers,
@@ -76,32 +83,41 @@ object CachePolicy {
     val __obj = js.Dynamic.literal(responseHeaders = js.Any.fromFunction0(responseHeaders), revalidatedPolicy = js.Any.fromFunction2(revalidatedPolicy), revalidationHeaders = js.Any.fromFunction1(revalidationHeaders), satisfiesWithoutRevalidation = js.Any.fromFunction1(satisfiesWithoutRevalidation), storable = js.Any.fromFunction0(storable), timeToLive = js.Any.fromFunction0(timeToLive), toObject = js.Any.fromFunction0(toObject))
     __obj.asInstanceOf[CachePolicy]
   }
+  
   @scala.inline
   implicit class CachePolicyOps[Self <: CachePolicy] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setResponseHeaders(value: () => Headers): Self = this.set("responseHeaders", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRevalidatedPolicy(value: (Request, Response) => RevalidationPolicy): Self = this.set("revalidatedPolicy", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRevalidationHeaders(value: Request => Headers): Self = this.set("revalidationHeaders", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSatisfiesWithoutRevalidation(value: Request => Boolean): Self = this.set("satisfiesWithoutRevalidation", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setStorable(value: () => Boolean): Self = this.set("storable", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setTimeToLive(value: () => Double): Self = this.set("timeToLive", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setToObject(value: () => CachePolicyObject): Self = this.set("toObject", js.Any.fromFunction0(value))
   }
-  
 }
-

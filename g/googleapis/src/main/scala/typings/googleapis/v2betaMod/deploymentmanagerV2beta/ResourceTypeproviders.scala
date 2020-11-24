@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/deploymentmanager/v2beta", "deploymentmanager_v2beta.Resource$Typeproviders")
 @js.native
 class ResourceTypeproviders protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * deploymentmanager.typeProviders.delete
     * @desc Deletes a type provider.
@@ -42,6 +44,7 @@ class ResourceTypeproviders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.typeProviders.get
     * @desc Gets information about a specific type provider.
@@ -71,6 +74,7 @@ class ResourceTypeproviders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTypeProvider]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.typeProviders.getType
     * @desc Gets a type info for a type provided by a TypeProvider.
@@ -101,6 +105,7 @@ class ResourceTypeproviders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTypeInfo]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.typeProviders.insert
     * @desc Creates a type provider.
@@ -130,6 +135,7 @@ class ResourceTypeproviders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.typeProviders.list
     * @desc Lists all resource type providers for Deployment Manager.
@@ -165,6 +171,7 @@ class ResourceTypeproviders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTypeProvidersListResponse]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.typeProviders.listTypes
     * @desc Lists all the type info for a TypeProvider.
@@ -201,6 +208,7 @@ class ResourceTypeproviders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTypeProvidersListTypesResponse]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.typeProviders.patch
     * @desc Updates a type provider. This method supports patch semantics.
@@ -231,6 +239,7 @@ class ResourceTypeproviders protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * deploymentmanager.typeProviders.update
     * @desc Updates a type provider.
@@ -262,4 +271,3 @@ class ResourceTypeproviders protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

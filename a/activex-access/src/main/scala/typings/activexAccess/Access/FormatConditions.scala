@@ -4,14 +4,13 @@ import typings.activexAccess.activexAccessNumbers.`0`
 import typings.activexAccess.activexAccessNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FormatConditions extends js.Object {
-  val Application: typings.activexAccess.Access.Application = js.native
-  val Count: Double = js.native
-  val Parent: js.Any = js.native
+  
   def apply(Index: Double): FormatCondition = js.native
+  
   /** @param Operator [Operator=0] */
   def Add(Type: AcFormatConditionType): FormatCondition = js.native
   def Add(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: String): FormatCondition = js.native
@@ -65,8 +64,16 @@ trait FormatConditions extends js.Object {
   def Add_1(Type: `1`, Operator: js.UndefOr[scala.Nothing], Expression1: Boolean): FormatCondition = js.native
   @JSName("Add")
   def Add_1(Type: `1`, Operator: js.UndefOr[scala.Nothing], Expression1: Double): FormatCondition = js.native
+  
+  val Application: typings.activexAccess.Access.Application = js.native
+  
+  val Count: Double = js.native
+  
   def Delete(): Unit = js.native
+  
   def IsMemberSafe(dispid: Double): Boolean = js.native
+  
   def Item(Index: Double): FormatCondition = js.native
+  
+  val Parent: js.Any = js.native
 }
-

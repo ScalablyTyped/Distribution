@@ -2,11 +2,12 @@ package typings.phaser.phaserMod.Math
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("phaser", "Math.Snap")
 @js.native
 object Snap extends js.Object {
+  
   /**
     * Snap a value to nearest grid slice, using ceil.
     * 
@@ -21,6 +22,7 @@ object Snap extends js.Object {
   def Ceil(value: Double, gap: Double, start: js.UndefOr[scala.Nothing], divide: Boolean): Double = js.native
   def Ceil(value: Double, gap: Double, start: Double): Double = js.native
   def Ceil(value: Double, gap: Double, start: Double, divide: Boolean): Double = js.native
+  
   /**
     * Snap a value to nearest grid slice, using floor.
     * 
@@ -35,6 +37,7 @@ object Snap extends js.Object {
   def Floor(value: Double, gap: Double, start: js.UndefOr[scala.Nothing], divide: Boolean): Double = js.native
   def Floor(value: Double, gap: Double, start: Double): Double = js.native
   def Floor(value: Double, gap: Double, start: Double, divide: Boolean): Double = js.native
+  
   /**
     * Snap a value to nearest grid slice, using rounding.
     * 
@@ -49,4 +52,3 @@ object Snap extends js.Object {
   def To(value: Double, gap: Double, start: Double): Double = js.native
   def To(value: Double, gap: Double, start: Double, divide: Boolean): Double = js.native
 }
-

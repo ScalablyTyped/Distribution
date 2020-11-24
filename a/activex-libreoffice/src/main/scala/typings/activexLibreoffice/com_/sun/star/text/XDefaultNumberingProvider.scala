@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to default {@link com.sun.star.text.NumberingRules} according to a given locale information.
@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XDefaultNumberingProvider extends XInterface {
+  
   /**
     * provides access to outline numberings according to a given {@link com.sun.star.lang.Locale} .
     *
@@ -27,6 +28,7 @@ trait XDefaultNumberingProvider extends XInterface {
     * @see com.sun.star.lang.Locale
     */
   def getDefaultContinuousNumberingLevels(aLocale: Locale): SafeArray[PropertyValues] = js.native
+  
   /**
     * provides access to outline numberings according to a given {@link com.sun.star.lang.Locale} .
     *
@@ -35,8 +37,8 @@ trait XDefaultNumberingProvider extends XInterface {
     */
   def getDefaultOutlineNumberings(aLocale: Locale): SafeArray[XIndexAccess] = js.native
 }
-
 object XDefaultNumberingProvider {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -48,22 +50,26 @@ object XDefaultNumberingProvider {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDefaultContinuousNumberingLevels = js.Any.fromFunction1(getDefaultContinuousNumberingLevels), getDefaultOutlineNumberings = js.Any.fromFunction1(getDefaultOutlineNumberings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XDefaultNumberingProvider]
   }
+  
   @scala.inline
   implicit class XDefaultNumberingProviderOps[Self <: XDefaultNumberingProvider] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetDefaultContinuousNumberingLevels(value: Locale => SafeArray[PropertyValues]): Self = this.set("getDefaultContinuousNumberingLevels", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetDefaultOutlineNumberings(value: Locale => SafeArray[XIndexAccess]): Self = this.set("getDefaultOutlineNumberings", js.Any.fromFunction1(value))
   }
-  
 }
-

@@ -10,9 +10,9 @@ A common tooling library used by the googleapis npm module. You probably don't w
 | ------------------ | :-------------: |
 | Full name          | googleapis-common |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 6 |
-| # downloads        | 8363026 |
+| # releases         | 31 |
+| # dependents       | 11 |
+| # downloads        | 19539521 |
 | # stars            | 0 |
 
 ## Links

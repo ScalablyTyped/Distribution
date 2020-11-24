@@ -2,11 +2,12 @@ package typings.playerframework.global.PlayerFramework
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PlayerFramework.Plugins")
 @js.native
 object Plugins extends js.Object {
+  
   @js.native
   class AudioSelectorPlugin ()
     extends typings.playerframework.PlayerFramework.Plugins.AudioSelectorPlugin
@@ -61,6 +62,4 @@ object Plugins extends js.Object {
   @js.native
   class TrackingPluginBase ()
     extends typings.playerframework.PlayerFramework.Plugins.TrackingPluginBase
-  
 }
-

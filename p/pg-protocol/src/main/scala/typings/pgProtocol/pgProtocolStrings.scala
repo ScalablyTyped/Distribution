@@ -4,9 +4,100 @@ import typings.pgProtocol.messagesMod.MessageName
 import typings.pgProtocol.messagesMod.Mode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pgProtocolStrings {
+  
+  @scala.inline
+  def P: P = "P".asInstanceOf[P]
+  
+  @scala.inline
+  def S: S = "S".asInstanceOf[S]
+  
+  @scala.inline
+  def authenticationCleartextPassword: authenticationCleartextPassword = "authenticationCleartextPassword".asInstanceOf[authenticationCleartextPassword]
+  
+  @scala.inline
+  def authenticationMD5Password: authenticationMD5Password = "authenticationMD5Password".asInstanceOf[authenticationMD5Password]
+  
+  @scala.inline
+  def authenticationOk: authenticationOk = "authenticationOk".asInstanceOf[authenticationOk]
+  
+  @scala.inline
+  def authenticationSASL: authenticationSASL = "authenticationSASL".asInstanceOf[authenticationSASL]
+  
+  @scala.inline
+  def authenticationSASLContinue: authenticationSASLContinue = "authenticationSASLContinue".asInstanceOf[authenticationSASLContinue]
+  
+  @scala.inline
+  def authenticationSASLFinal: authenticationSASLFinal = "authenticationSASLFinal".asInstanceOf[authenticationSASLFinal]
+  
+  @scala.inline
+  def backendKeyData: backendKeyData = "backendKeyData".asInstanceOf[backendKeyData]
+  
+  @scala.inline
+  def binary: binary = "binary".asInstanceOf[binary]
+  
+  @scala.inline
+  def bindComplete: bindComplete = "bindComplete".asInstanceOf[bindComplete]
+  
+  @scala.inline
+  def closeComplete: closeComplete = "closeComplete".asInstanceOf[closeComplete]
+  
+  @scala.inline
+  def commandComplete: commandComplete = "commandComplete".asInstanceOf[commandComplete]
+  
+  @scala.inline
+  def copyData: copyData = "copyData".asInstanceOf[copyData]
+  
+  @scala.inline
+  def copyDone: copyDone = "copyDone".asInstanceOf[copyDone]
+  
+  @scala.inline
+  def copyInResponse: copyInResponse = "copyInResponse".asInstanceOf[copyInResponse]
+  
+  @scala.inline
+  def copyOutResponse: copyOutResponse = "copyOutResponse".asInstanceOf[copyOutResponse]
+  
+  @scala.inline
+  def dataRow: dataRow = "dataRow".asInstanceOf[dataRow]
+  
+  @scala.inline
+  def emptyQuery: emptyQuery = "emptyQuery".asInstanceOf[emptyQuery]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def noData: noData = "noData".asInstanceOf[noData]
+  
+  @scala.inline
+  def notice: notice = "notice".asInstanceOf[notice]
+  
+  @scala.inline
+  def notification: notification = "notification".asInstanceOf[notification]
+  
+  @scala.inline
+  def parameterStatus: parameterStatus = "parameterStatus".asInstanceOf[parameterStatus]
+  
+  @scala.inline
+  def parseComplete: parseComplete = "parseComplete".asInstanceOf[parseComplete]
+  
+  @scala.inline
+  def portalSuspended: portalSuspended = "portalSuspended".asInstanceOf[portalSuspended]
+  
+  @scala.inline
+  def readyForQuery: readyForQuery = "readyForQuery".asInstanceOf[readyForQuery]
+  
+  @scala.inline
+  def replicationStart: replicationStart = "replicationStart".asInstanceOf[replicationStart]
+  
+  @scala.inline
+  def rowDescription: rowDescription = "rowDescription".asInstanceOf[rowDescription]
+  
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  
   @js.native
   sealed trait P extends js.Object
   
@@ -96,66 +187,4 @@ object pgProtocolStrings {
   
   @js.native
   sealed trait text extends Mode
-  
-  @scala.inline
-  def P: P = "P".asInstanceOf[P]
-  @scala.inline
-  def S: S = "S".asInstanceOf[S]
-  @scala.inline
-  def authenticationCleartextPassword: authenticationCleartextPassword = "authenticationCleartextPassword".asInstanceOf[authenticationCleartextPassword]
-  @scala.inline
-  def authenticationMD5Password: authenticationMD5Password = "authenticationMD5Password".asInstanceOf[authenticationMD5Password]
-  @scala.inline
-  def authenticationOk: authenticationOk = "authenticationOk".asInstanceOf[authenticationOk]
-  @scala.inline
-  def authenticationSASL: authenticationSASL = "authenticationSASL".asInstanceOf[authenticationSASL]
-  @scala.inline
-  def authenticationSASLContinue: authenticationSASLContinue = "authenticationSASLContinue".asInstanceOf[authenticationSASLContinue]
-  @scala.inline
-  def authenticationSASLFinal: authenticationSASLFinal = "authenticationSASLFinal".asInstanceOf[authenticationSASLFinal]
-  @scala.inline
-  def backendKeyData: backendKeyData = "backendKeyData".asInstanceOf[backendKeyData]
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
-  @scala.inline
-  def bindComplete: bindComplete = "bindComplete".asInstanceOf[bindComplete]
-  @scala.inline
-  def closeComplete: closeComplete = "closeComplete".asInstanceOf[closeComplete]
-  @scala.inline
-  def commandComplete: commandComplete = "commandComplete".asInstanceOf[commandComplete]
-  @scala.inline
-  def copyData: copyData = "copyData".asInstanceOf[copyData]
-  @scala.inline
-  def copyDone: copyDone = "copyDone".asInstanceOf[copyDone]
-  @scala.inline
-  def copyInResponse: copyInResponse = "copyInResponse".asInstanceOf[copyInResponse]
-  @scala.inline
-  def copyOutResponse: copyOutResponse = "copyOutResponse".asInstanceOf[copyOutResponse]
-  @scala.inline
-  def dataRow: dataRow = "dataRow".asInstanceOf[dataRow]
-  @scala.inline
-  def emptyQuery: emptyQuery = "emptyQuery".asInstanceOf[emptyQuery]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def noData: noData = "noData".asInstanceOf[noData]
-  @scala.inline
-  def notice: notice = "notice".asInstanceOf[notice]
-  @scala.inline
-  def notification: notification = "notification".asInstanceOf[notification]
-  @scala.inline
-  def parameterStatus: parameterStatus = "parameterStatus".asInstanceOf[parameterStatus]
-  @scala.inline
-  def parseComplete: parseComplete = "parseComplete".asInstanceOf[parseComplete]
-  @scala.inline
-  def portalSuspended: portalSuspended = "portalSuspended".asInstanceOf[portalSuspended]
-  @scala.inline
-  def readyForQuery: readyForQuery = "readyForQuery".asInstanceOf[readyForQuery]
-  @scala.inline
-  def replicationStart: replicationStart = "replicationStart".asInstanceOf[replicationStart]
-  @scala.inline
-  def rowDescription: rowDescription = "rowDescription".asInstanceOf[rowDescription]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
 }
-

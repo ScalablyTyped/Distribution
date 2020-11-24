@@ -5,7 +5,7 @@ import typings.chromeApps.chrome.printerProvider.PrinterCapabilities
 import typings.chromeApps.chrome.printerProvider.PrinterInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.printerProvider
@@ -23,6 +23,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.printerProvider")
 @js.native
 object printerProvider extends js.Object {
+  
   /** Event fired when print manager requests printer capabilities. */
   val onGetCapabilityRequested: typings.chromeApps.chrome.events.Event[
     js.Function2[
@@ -31,6 +32,7 @@ object printerProvider extends js.Object {
       Unit
     ]
   ] = js.native
+  
   /** Event fired when print manager requests printers provided by extensions. */
   val onGetPrintersRequested: typings.chromeApps.chrome.events.Event[
     js.Function1[
@@ -38,6 +40,7 @@ object printerProvider extends js.Object {
       Unit
     ]
   ] = js.native
+  
   /**
     * Event fired when print manager requests information about a USB device that may be a printer.
     * Note: An application should not rely on this event being fired more than once per device. If a connected device is supported it should be returned in the onGetPrintersRequested event.
@@ -50,6 +53,7 @@ object printerProvider extends js.Object {
       Unit
     ]
   ] = js.native
+  
   /** Event fired when print manager requests printing. */
   val onPrintRequested: typings.chromeApps.chrome.events.Event[
     js.Function2[
@@ -59,4 +63,3 @@ object printerProvider extends js.Object {
     ]
   ] = js.native
 }
-

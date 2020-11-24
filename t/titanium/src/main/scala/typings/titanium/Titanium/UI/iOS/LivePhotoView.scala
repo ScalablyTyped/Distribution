@@ -19,21 +19,14 @@ import typings.titanium.titaniumStrings.touchstart
 import typings.titanium.titaniumStrings.twofingertap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A view to display a <Titanium.UI.iOS.LivePhoto> object introduced in iOS 9.1.
   */
 @js.native
 trait LivePhotoView extends View {
-  /**
-    * The Live Photo displayed in the view.
-    */
-  var livePhoto: LivePhoto = js.native
-  /**
-    * A Boolean value that determines whether the view plays the audio content of its Live Photo.
-    */
-  var muted: Boolean = js.native
+  
   @JSName("addEventListener")
   def addEventListener_start(
     name: start,
@@ -44,6 +37,7 @@ trait LivePhotoView extends View {
     name: stop,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ LivePhotoViewStopEvent, Unit]
   ): Unit = js.native
+  
   @JSName("fireEvent")
   def fireEvent_click(name: click, event: LivePhotoViewClickEvent): Unit = js.native
   @JSName("fireEvent")
@@ -80,16 +74,29 @@ trait LivePhotoView extends View {
   def fireEvent_touchstart(name: touchstart, event: LivePhotoViewTouchstartEvent): Unit = js.native
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: LivePhotoViewTwofingertapEvent): Unit = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.iOS.LivePhotoView.livePhoto> property.
     * @deprecated Access <Titanium.UI.iOS.LivePhotoView.livePhoto> instead.
     */
   def getLivePhoto(): LivePhoto = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.iOS.LivePhotoView.muted> property.
     * @deprecated Access <Titanium.UI.iOS.LivePhotoView.muted> instead.
     */
   def getMuted(): Boolean = js.native
+  
+  /**
+    * The Live Photo displayed in the view.
+    */
+  var livePhoto: LivePhoto = js.native
+  
+  /**
+    * A Boolean value that determines whether the view plays the audio content of its Live Photo.
+    */
+  var muted: Boolean = js.native
+  
   @JSName("removeEventListener")
   def removeEventListener_start(
     name: start,
@@ -100,23 +107,26 @@ trait LivePhotoView extends View {
     name: stop,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ LivePhotoViewStopEvent, Unit]
   ): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.iOS.LivePhotoView.livePhoto> property.
     * @deprecated Set the value using <Titanium.UI.iOS.LivePhotoView.livePhoto> instead.
     */
   def setLivePhoto(livePhoto: LivePhoto): Unit = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.iOS.LivePhotoView.muted> property.
     * @deprecated Set the value using <Titanium.UI.iOS.LivePhotoView.muted> instead.
     */
   def setMuted(muted: Boolean): Unit = js.native
+  
   /**
     * Begins playback of Live Photo content in the view.
     */
   def startPlaybackWithStyle(playbackStyle: Double): Unit = js.native
+  
   /**
     * Ends playback of Live Photo content in the view.
     */
   def stopPlayback(): Unit = js.native
 }
-

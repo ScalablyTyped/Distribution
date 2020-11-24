@@ -2,7 +2,7 @@ package typings.jszip.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jszip", JSImport.Namespace)
 @js.native
@@ -20,4 +20,3 @@ class Class () extends JSZip {
   def this(data: InputFileFormat) = this()
   def this(data: js.UndefOr[InputFileFormat], options: JSZipLoadOptions) = this()
 }
-

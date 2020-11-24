@@ -2,7 +2,7 @@ package typings.makerJs.global.MakerJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * String-based enumeration of unit types: imperial, metric or otherwise.
@@ -13,10 +13,14 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MakerJs.unitType")
 @js.native
 object unitType extends js.Object {
+  
   var Centimeter: String = js.native
+  
   var Foot: String = js.native
+  
   var Inch: String = js.native
+  
   var Meter: String = js.native
+  
   var Millimeter: String = js.native
 }
-

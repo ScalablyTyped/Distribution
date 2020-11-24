@@ -5,33 +5,29 @@ import typings.awsSdkClientLambdaNode.lambdaConfigurationMod.LambdaResolvedConfi
 import typings.awsSdkClientLambdaNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientLambdaNode.typesGetFunctionInputMod.GetFunctionInput
 import typings.awsSdkClientLambdaNode.typesGetFunctionOutputMod.GetFunctionOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-lambda-node/commands/GetFunctionCommand", JSImport.Namespace)
 @js.native
 object getFunctionCommandMod extends js.Object {
+  
   @js.native
   class GetFunctionCommand protected () extends Command[
           InputTypesUnion, 
           GetFunctionInput, 
           OutputTypesUnion, 
           GetFunctionOutput, 
-          LambdaResolvedConfiguration, 
-          Readable
+          LambdaResolvedConfiguration
         ] {
     def this(input: GetFunctionInput) = this()
-    val middlewareStack: MiddlewareStack[GetFunctionInput, GetFunctionOutput, Readable] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: LambdaResolvedConfiguration
     ): Handler[GetFunctionInput, GetFunctionOutput] = js.native
   }
-  
 }
-

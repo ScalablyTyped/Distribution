@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/groupssettings/v1", "groupssettings_v1.Resource$Groups")
 @js.native
 class ResourceGroups protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * groupsSettings.groups.get
     * @desc Gets one resource by id.
@@ -41,6 +43,7 @@ class ResourceGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroups]
   ): Unit = js.native
+  
   /**
     * groupsSettings.groups.patch
     * @desc Updates an existing resource. This method supports patch semantics.
@@ -70,6 +73,7 @@ class ResourceGroups protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroups]
   ): Unit = js.native
+  
   /**
     * groupsSettings.groups.update
     * @desc Updates an existing resource.
@@ -100,4 +104,3 @@ class ResourceGroups protected () extends js.Object {
     callback: BodyResponseCallback[SchemaGroups]
   ): Unit = js.native
 }
-

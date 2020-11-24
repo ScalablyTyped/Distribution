@@ -11,24 +11,33 @@ import typings.activexExcel.activexExcelNumbers.`6`
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Workbooks extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val Count: Double = js.native
-  val Creator: XlCreator = js.native
-  val Parent: js.Any = js.native
+  
   def apply(Index: String): Workbook = js.native
   def apply(Index: Double): Workbook = js.native
+  
   def Add(): Workbook = js.native
   def Add(Template: String): Workbook = js.native
   def Add(Template: XlWBATemplate): Workbook = js.native
+  
+  val Application: typings.activexExcel.Excel.Application = js.native
+  
   def CanCheckOut(Filename: String): Boolean = js.native
+  
   def CheckOut(Filename: String): Unit = js.native
+  
   def Close(): Unit = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: XlCreator = js.native
+  
   def Item(Index: String): Workbook = js.native
   def Item(Index: Double): Workbook = js.native
+  
   def Open(
     Filename: String,
     UpdateLinks: js.UndefOr[`0` | `3`],
@@ -46,6 +55,7 @@ trait Workbooks extends js.Object {
     Local: js.UndefOr[Boolean],
     CorruptLoad: js.UndefOr[XlCorruptLoad]
   ): Workbook = js.native
+  
   def OpenDatabase(Filename: String): Workbook = js.native
   def OpenDatabase(
     Filename: String,
@@ -125,6 +135,7 @@ trait Workbooks extends js.Object {
     BackgroundQuery: Boolean,
     ImportDataAs: XlImportDataAs
   ): Workbook = js.native
+  
   /** @param TextQualifier [TextQualifier=1] */
   def OpenText(
     Filename: String,
@@ -189,13 +200,18 @@ trait Workbooks extends js.Object {
     TrailingMinusNumbers: js.UndefOr[Boolean],
     Local: js.UndefOr[Boolean]
   ): Unit = js.native
+  
   def OpenXML(Filename: String): Workbook = js.native
   def OpenXML(Filename: String, Stylesheets: js.UndefOr[scala.Nothing], LoadOption: XlXmlLoadOption): Workbook = js.native
   def OpenXML(Filename: String, Stylesheets: String): Workbook = js.native
   def OpenXML(Filename: String, Stylesheets: String, LoadOption: XlXmlLoadOption): Workbook = js.native
   def OpenXML(Filename: String, Stylesheets: SafeArray[String]): Workbook = js.native
   def OpenXML(Filename: String, Stylesheets: SafeArray[String], LoadOption: XlXmlLoadOption): Workbook = js.native
+  
+  val Parent: js.Any = js.native
+  
   def _Default(Index: js.Any): Workbook = js.native
+  
   def _Open(
     Filename: String,
     UpdateLinks: js.UndefOr[js.Any],
@@ -211,6 +227,7 @@ trait Workbooks extends js.Object {
     Converter: js.UndefOr[js.Any],
     AddToMru: js.UndefOr[js.Any]
   ): Workbook = js.native
+  
   /** @param TextQualifier [TextQualifier=1] */
   def _OpenText(
     Filename: String,
@@ -230,8 +247,10 @@ trait Workbooks extends js.Object {
     DecimalSeparator: js.UndefOr[js.Any],
     ThousandsSeparator: js.UndefOr[js.Any]
   ): Unit = js.native
+  
   def _OpenXML(Filename: String): Workbook = js.native
   def _OpenXML(Filename: String, Stylesheets: js.Any): Workbook = js.native
+  
   /** @param TextQualifier [TextQualifier=1] */
   def __OpenText(
     Filename: String,
@@ -250,4 +269,3 @@ trait Workbooks extends js.Object {
     TextVisualLayout: js.UndefOr[js.Any]
   ): Unit = js.native
 }
-

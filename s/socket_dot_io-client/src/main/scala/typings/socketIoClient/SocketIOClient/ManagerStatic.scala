@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Manager static interface
@@ -16,6 +16,7 @@ trait ManagerStatic
   */
 Instantiable1[(/* opts */ ConnectOpts) | (/* uri */ String), Manager]
      with Instantiable2[/* uri */ String, /* opts */ ConnectOpts, Manager] {
+  
   /**
     * Creates a new Manager with the default URI (window host)
     * @param opts Any connection options that we want to use (and pass to engine.io)
@@ -30,4 +31,3 @@ Instantiable1[(/* opts */ ConnectOpts) | (/* uri */ String), Manager]
   def apply(uri: String): Manager = js.native
   def apply(uri: String, opts: ConnectOpts): Manager = js.native
 }
-

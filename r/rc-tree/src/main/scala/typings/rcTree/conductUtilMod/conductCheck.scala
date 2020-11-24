@@ -8,11 +8,12 @@ import typings.rcTree.interfaceMod.Key
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-tree/es/utils/conductUtil", "conductCheck")
 @js.native
 object conductCheck extends js.Object {
+  
   def apply(keyList: js.Array[Key], checked: HalfCheckedKeys, keyEntities: Record[Key, DataEntity]): ConductReturnType = js.native
   def apply(
     keyList: js.Array[Key],
@@ -21,4 +22,3 @@ object conductCheck extends js.Object {
     getCheckDisabled: GetCheckDisabled[DataNode]
   ): ConductReturnType = js.native
 }
-

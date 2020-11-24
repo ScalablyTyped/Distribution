@@ -12,7 +12,7 @@ This package provides AWS SDK for JavaScript middleware that applies a checksum 
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 2 |
-| # downloads        | 5401 |
+| # downloads        | 32811 |
 | # stars            | 0 |
 
 ## Links

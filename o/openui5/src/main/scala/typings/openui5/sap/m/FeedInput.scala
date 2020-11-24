@@ -4,10 +4,11 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.TooltipBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FeedInput extends Control {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>post</code> event of this
     * <code>sap.m.FeedInput</code>.When called, the context of the event handler (its <code>this</code>)
@@ -23,6 +24,7 @@ trait FeedInput extends Control {
     */
   def attachPost(oData: js.Any, fnFunction: js.Any): FeedInput = js.native
   def attachPost(oData: js.Any, fnFunction: js.Any, oListener: js.Any): FeedInput = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>post</code> event of this
     * <code>sap.m.FeedInput</code>.The passed function and listener object must match the ones used for
@@ -32,6 +34,7 @@ trait FeedInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachPost(fnFunction: js.Any, oListener: js.Any): FeedInput = js.native
+  
   /**
     * Fires event <code>post</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>value</code> of type <code>string</code>The value of the feed input before
@@ -40,6 +43,7 @@ trait FeedInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def firePost(mArguments: js.Any): FeedInput = js.native
+  
   /**
     * Gets current value of property <code>ariaLabelForPicture</code>.Text for Picture which will be read
     * by screenreader.If a new ariaLabelForPicture is set, any previously set ariaLabelForPicture is
@@ -48,6 +52,7 @@ trait FeedInput extends Control {
     * @returns Value of property <code>ariaLabelForPicture</code>
     */
   def getAriaLabelForPicture(): String = js.native
+  
   /**
     * Gets current value of property <code>buttonTooltip</code>.Sets a new tooltip for Submit button. The
     * tooltip can either be a simple string (which in most cases will be rendered as the title attribute
@@ -58,18 +63,21 @@ trait FeedInput extends Control {
     * @returns Value of property <code>buttonTooltip</code>
     */
   def getButtonTooltip(): TooltipBase = js.native
+  
   /**
     * Gets current value of property <code>enabled</code>.Set this flag to "false" to disable both text
     * input and post button.Default value is <code>true</code>.
     * @returns Value of property <code>enabled</code>
     */
   def getEnabled(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>icon</code>.Icon to be displayed as a graphical element within
     * the feed input. This can be an image or an icon from the icon font.
     * @returns Value of property <code>icon</code>
     */
   def getIcon(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>iconDensityAware</code>.Some mobile devices support higher
     * resolution images while others do not. Therefore, you should provide image resources for all
@@ -82,6 +90,7 @@ trait FeedInput extends Control {
     * @returns Value of property <code>iconDensityAware</code>
     */
   def getIconDensityAware(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>maxLength</code>.The maximum length (the maximum number of
     * characters) for the feed input's value. By default this is not limited.Default value is
@@ -89,6 +98,7 @@ trait FeedInput extends Control {
     * @returns Value of property <code>maxLength</code>
     */
   def getMaxLength(): Double = js.native
+  
   /**
     * Gets current value of property <code>placeholder</code>.The placeholder text shown in the input area
     * as long as the user has not entered any text value.Default value is <code>Post something
@@ -96,6 +106,7 @@ trait FeedInput extends Control {
     * @returns Value of property <code>placeholder</code>
     */
   def getPlaceholder(): String = js.native
+  
   /**
     * Gets current value of property <code>showIcon</code>.If set to "true" (default), icons will be
     * displayed. In case no icon is provided the standard placeholder will be displayed. if set to "false"
@@ -103,12 +114,14 @@ trait FeedInput extends Control {
     * @returns Value of property <code>showIcon</code>
     */
   def getShowIcon(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>value</code>.The text value of the feed input. As long as the
     * user has not entered any text the post button is disabled
     * @returns Value of property <code>value</code>
     */
   def getValue(): String = js.native
+  
   /**
     * Sets a new value for property <code>ariaLabelForPicture</code>.Text for Picture which will be read
     * by screenreader.If a new ariaLabelForPicture is set, any previously set ariaLabelForPicture is
@@ -119,6 +132,7 @@ trait FeedInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setAriaLabelForPicture(sAriaLabelForPicture: String): FeedInput = js.native
+  
   /**
     * Sets a new value for property <code>buttonTooltip</code>.Sets a new tooltip for Submit button. The
     * tooltip can either be a simple string (which in most cases will be rendered as the title attribute
@@ -131,6 +145,7 @@ trait FeedInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setButtonTooltip(sButtonTooltip: TooltipBase): FeedInput = js.native
+  
   /**
     * Sets a new value for property <code>enabled</code>.Set this flag to "false" to disable both text
     * input and post button.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -139,6 +154,7 @@ trait FeedInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEnabled(bEnabled: Boolean): FeedInput = js.native
+  
   /**
     * Sets a new value for property <code>icon</code>.Icon to be displayed as a graphical element within
     * the feed input. This can be an image or an icon from the icon font.When called with a value of
@@ -147,6 +163,7 @@ trait FeedInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIcon(sIcon: js.Any): FeedInput = js.native
+  
   /**
     * Sets a new value for property <code>iconDensityAware</code>.Some mobile devices support higher
     * resolution images while others do not. Therefore, you should provide image resources for all
@@ -161,6 +178,7 @@ trait FeedInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIconDensityAware(bIconDensityAware: Boolean): FeedInput = js.native
+  
   /**
     * Sets a new value for property <code>maxLength</code>.The maximum length (the maximum number of
     * characters) for the feed input's value. By default this is not limited.When called with a value of
@@ -170,6 +188,7 @@ trait FeedInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setMaxLength(iMaxLength: Double): FeedInput = js.native
+  
   /**
     * Sets a new value for property <code>placeholder</code>.The placeholder text shown in the input area
     * as long as the user has not entered any text value.When called with a value of <code>null</code> or
@@ -179,6 +198,7 @@ trait FeedInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setPlaceholder(sPlaceholder: String): FeedInput = js.native
+  
   /**
     * Sets a new value for property <code>showIcon</code>.If set to "true" (default), icons will be
     * displayed. In case no icon is provided the standard placeholder will be displayed. if set to "false"
@@ -188,6 +208,7 @@ trait FeedInput extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setShowIcon(bShowIcon: Boolean): FeedInput = js.native
+  
   /**
     * Sets a new value for property <code>value</code>.The text value of the feed input. As long as the
     * user has not entered any text the post button is disabledWhen called with a value of
@@ -197,4 +218,3 @@ trait FeedInput extends Control {
     */
   def setValue(sValue: String): FeedInput = js.native
 }
-

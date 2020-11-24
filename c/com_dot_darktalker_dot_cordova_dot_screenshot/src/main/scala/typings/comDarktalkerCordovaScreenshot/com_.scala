@@ -3,19 +3,24 @@ package typings.comDarktalkerCordovaScreenshot
 import typings.comDarktalkerCordovaScreenshot.anon.FilePath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("com")
 @js.native
 object com_ extends js.Object {
+  
   @js.native
   object darktalker extends js.Object {
+    
     @js.native
     object cordova extends js.Object {
+      
       @js.native
       object screenshot extends js.Object {
+        
         @js.native
         trait Plugin extends js.Object {
+          
           /**
             * Takes a screenshot and provides it trough data URI as JPG. No data are saved in the device.
             *
@@ -37,6 +42,7 @@ object com_ extends js.Object {
                     ],
             quality: Double
           ): Unit = js.native
+          
           /**
             * Takes a screenshot, saves it to device as JPG and provides a path to the file.
             *
@@ -85,12 +91,7 @@ object com_ extends js.Object {
             filename: String
           ): Unit = js.native
         }
-        
       }
-      
     }
-    
   }
-  
 }
-

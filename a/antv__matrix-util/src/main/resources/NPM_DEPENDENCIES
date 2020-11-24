@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@antv/matrix-util" : "3.1.0-beta.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@antv/matrix-util" : "3.1.0-beta.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -131,23 +131,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojMessages_ extends JetElement[ojMessagesSettableProperties] {
-  var display: general | notification = js.native
-  var displayOptions: DisplayOptions = js.native
-  var messages: js.Array[Message] | Null | (DataProvider[_, Message]) = js.native
-  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[general | notification], _]) | Null = js.native
-  var onDisplayOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[DisplayOptions], _]) | Null = js.native
-  var onMessagesChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[js.Array[Message] | Null | (DataProvider[_, Message])], 
-    _
-  ]) | Null = js.native
-  var onPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[Position | Null], _]) | Null = js.native
-  var onTranslationsChanged: (js.Function1[/* event */ JetElementCustomEvent[AriaLiveRegion], _]) | Null = js.native
-  var position: Position | Null = js.native
-  var translations: AriaLiveRegion = js.native
+  
   def addEventListener(
     `type`: displayChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[general | notification], _]
@@ -984,9 +972,16 @@ trait ojMessages_ extends JetElement[ojMessagesSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
   def close(message: Message): Unit = js.native
+  
   def closeAll(): Unit = js.native
   def closeAll(closeFilter: js.Function1[/* message */ Message, Boolean]): Unit = js.native
+  
+  var display: general | notification = js.native
+  
+  var displayOptions: DisplayOptions = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_display(property: display): general | notification = js.native
@@ -998,7 +993,26 @@ trait ojMessages_ extends JetElement[ojMessagesSettableProperties] {
   def getProperty_position(property: position): Position | Null = js.native
   @JSName("getProperty")
   def getProperty_translations(property: translations): AriaLiveRegion = js.native
+  
+  var messages: js.Array[Message] | Null | (DataProvider[_, Message]) = js.native
+  
+  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[general | notification], _]) | Null = js.native
+  
+  var onDisplayOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[DisplayOptions], _]) | Null = js.native
+  
+  var onMessagesChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[js.Array[Message] | Null | (DataProvider[_, Message])], 
+    _
+  ]) | Null = js.native
+  
+  var onPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[Position | Null], _]) | Null = js.native
+  
+  var onTranslationsChanged: (js.Function1[/* event */ JetElementCustomEvent[AriaLiveRegion], _]) | Null = js.native
+  
+  var position: Position | Null = js.native
+  
   def setProperties(properties: ojMessagesSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: display, value: general): Unit = js.native
   def setProperty(property: display, value: notification): Unit = js.native
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojMessagesSettableProperties]): Unit = js.native
@@ -1016,5 +1030,6 @@ trait ojMessages_ extends JetElement[ojMessagesSettableProperties] {
   def setProperty_position(property: position, value: Position): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: AriaLiveRegion): Unit = js.native
+  
+  var translations: AriaLiveRegion = js.native
 }
-

@@ -5,11 +5,12 @@ import typings.jquery.JQuery.jqXHR
 import typings.tablesorter.tablesorterConfigurationStoreMod.TablesorterConfigurationStore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tablesorter/Paging/AjaxErrorHandler", JSImport.Namespace)
 @js.native
 object ajaxErrorHandlerMod extends js.Object {
+  
   type AjaxErrorHandler[TElement] = js.Function4[
     /* config */ TablesorterConfigurationStore[TElement], 
     /* request */ jqXHR[js.Any], 
@@ -18,4 +19,3 @@ object ajaxErrorHandlerMod extends js.Object {
     String
   ]
 }
-

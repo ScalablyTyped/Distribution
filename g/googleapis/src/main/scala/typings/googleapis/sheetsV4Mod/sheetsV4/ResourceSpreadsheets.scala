@@ -6,16 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sheets/v4", "sheets_v4.Resource$Spreadsheets")
 @js.native
 class ResourceSpreadsheets protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
-  var developerMetadata: ResourceSpreadsheetsDevelopermetadata = js.native
-  var sheets: ResourceSpreadsheetsSheets = js.native
-  var values: ResourceSpreadsheetsValues = js.native
+  
   /**
     * sheets.spreadsheets.batchUpdate
     * @desc Applies one or more updates to the spreadsheet.  Each request is
@@ -119,6 +116,9 @@ class ResourceSpreadsheets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBatchUpdateSpreadsheetResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * sheets.spreadsheets.create
     * @desc Creates a spreadsheet, returning the newly created spreadsheet.
@@ -197,6 +197,9 @@ class ResourceSpreadsheets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSpreadsheet]
   ): Unit = js.native
+  
+  var developerMetadata: ResourceSpreadsheetsDevelopermetadata = js.native
+  
   /**
     * sheets.spreadsheets.get
     * @desc Returns the spreadsheet at the given ID. The caller must specify
@@ -296,6 +299,7 @@ class ResourceSpreadsheets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSpreadsheet]
   ): Unit = js.native
+  
   /**
     * sheets.spreadsheets.getByDataFilter
     * @desc Returns the spreadsheet at the given ID. The caller must specify
@@ -401,5 +405,8 @@ class ResourceSpreadsheets protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSpreadsheet]
   ): Unit = js.native
+  
+  var sheets: ResourceSpreadsheetsSheets = js.native
+  
+  var values: ResourceSpreadsheetsValues = js.native
 }
-

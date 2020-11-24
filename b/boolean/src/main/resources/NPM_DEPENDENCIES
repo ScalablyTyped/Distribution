@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "boolean" : "3.0.1"
+      "boolean" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "boolean" : "3.0.1"
+      "boolean" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for match-sorter
 
-Typings are for version 4.0
+Typings are for version 5.0
 
 ## Library description:
 Simple, expected, and deterministic best-match sorting of an array in JavaScript
@@ -11,8 +11,8 @@ Simple, expected, and deterministic best-match sorting of an array in JavaScript
 | Full name          | match-sorter |
 | Keywords           | autocomplete, filter list, sort, advanced sort, user intuitive sort |
 | # releases         | 12 |
-| # dependents       | 85 |
-| # downloads        | 4165495 |
+| # dependents       | 124 |
+| # downloads        | 9477550 |
 | # stars            | 10 |
 
 ## Links

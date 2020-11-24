@@ -4,7 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * manages one, or more, complete sets of configuration data for administrative purposes and serves as a factory for objects that provide access to
@@ -28,4 +28,3 @@ import scala.scalajs.js.annotation._
 trait AdministrationProvider
   extends XMultiServiceFactory
      with XComponent
-

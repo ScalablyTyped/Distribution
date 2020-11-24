@@ -3,7 +3,7 @@ package typings.twilioChat.mod
 import typings.twilioChat.mod.Client.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Client is a starting point to access Twilio Programmable Chat functionality.
@@ -67,17 +67,15 @@ import scala.scalajs.js.annotation._
   * @property {('ascending'|'descending')} [order] - Sorting order. If not present, then default is <code>ascending</code>
   */
 class default protected () extends Client
-
 /* static members */
 @JSImport("twilio-chat", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   var compareChannelsByLastMessage: js.Any = js.native
+  
   var compareChannelsByStringProperty: js.Any = js.native
-  var parsePushNotificationChatData: js.Any = js.native
-  val supportedPushChannels: js.Any = js.native
-  val supportedPushDataFields: js.Any = js.native
-  val version: String = js.native
+  
   /**
     * Factory method to create Chat client instance.
     *
@@ -87,11 +85,19 @@ object default extends js.Object {
     */
   def create(token: String): js.Promise[Client] = js.native
   def create(token: String, options: Options): js.Promise[Client] = js.native
+  
   /**
     * Static method for push notification payload parsing. Returns parsed push as {@link PushNotification} object
     * @param {Object} notificationPayload - Push notification payload
     * @returns {PushNotification|Error}
     */
   def parsePushNotification(notificationPayload: js.Any): typings.twilioChat.pushnotificationMod.PushNotification = js.native
+  
+  var parsePushNotificationChatData: js.Any = js.native
+  
+  val supportedPushChannels: js.Any = js.native
+  
+  val supportedPushDataFields: js.Any = js.native
+  
+  val version: String = js.native
 }
-

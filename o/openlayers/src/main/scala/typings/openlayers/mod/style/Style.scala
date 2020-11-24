@@ -5,7 +5,7 @@ import typings.openlayers.mod.geom.Geometry
 import typings.openlayers.mod.olx.style.StyleOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -31,12 +31,14 @@ import scala.scalajs.js.annotation._
   */
 class Style () extends js.Object {
   def this(opt_options: StyleOptions) = this()
+  
   /**
     * Get the fill style.
     * @return Fill style.
     * @api
     */
   def getFill(): Fill = js.native
+  
   /**
     * Get the geometry to be rendered.
     * @return Feature property or geometry or function that returns the geometry that will
@@ -44,6 +46,7 @@ class Style () extends js.Object {
     * @api
     */
   def getGeometry(): String | Geometry | StyleGeometryFunction = js.native
+  
   /**
     * Get the function used to generate a geometry for rendering.
     * @return Function that is called with a feature
@@ -51,36 +54,42 @@ class Style () extends js.Object {
     * @api
     */
   def getGeometryFunction(): StyleGeometryFunction = js.native
+  
   /**
     * Get the image style.
     * @return Image style.
     * @api
     */
   def getImage(): Image = js.native
+  
   /**
     * Get the stroke style.
     * @return Stroke style.
     * @api
     */
   def getStroke(): Stroke = js.native
+  
   /**
     * Get the text style.
     * @return Text style.
     * @api
     */
   def getText(): Text = js.native
+  
   /**
     * Get the z-index for the style.
     * @return ZIndex.
     * @api
     */
   def getZIndex(): Double = js.native
+  
   /**
     * Set the fill style.
     * @param fill Fill style.
     * @api
     */
   def setFill(fill: Fill): Unit = js.native
+  
   /**
     * Set a geometry that is rendered instead of the feature's geometry.
     *
@@ -92,24 +101,28 @@ class Style () extends js.Object {
   def setGeometry(geometry: String): Unit = js.native
   def setGeometry(geometry: StyleGeometryFunction): Unit = js.native
   def setGeometry(geometry: Geometry): Unit = js.native
+  
   /**
     * Set the image style.
     * @param image Image style.
     * @api
     */
   def setImage(image: Image): Unit = js.native
+  
   /**
     * Set the stroke style.
     * @param stroke Stroke style.
     * @api
     */
   def setStroke(stroke: Stroke): Unit = js.native
+  
   /**
     * Set the text style.
     * @param text Text style.
     * @api
     */
   def setText(text: Text): Unit = js.native
+  
   /**
     * Set the z-index.
     *
@@ -118,4 +131,3 @@ class Style () extends js.Object {
     */
   def setZIndex(zIndex: Double): Unit = js.native
 }
-

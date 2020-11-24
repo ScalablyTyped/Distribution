@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v2", "remotebuildexecution_v2.Resource$Actionresults")
 @js.native
 class ResourceActionresults protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * remotebuildexecution.actionResults.get
     * @desc Retrieve a cached execution result.  Errors:  * `NOT_FOUND`: The
@@ -47,6 +49,7 @@ class ResourceActionresults protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2ActionResult]
   ): Unit = js.native
+  
   /**
     * remotebuildexecution.actionResults.update
     * @desc Upload a new execution result.  In order to allow the server to
@@ -90,4 +93,3 @@ class ResourceActionresults protected () extends js.Object {
     callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2ActionResult]
   ): Unit = js.native
 }
-

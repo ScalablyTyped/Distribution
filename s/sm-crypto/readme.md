@@ -10,9 +10,9 @@ sm-crypto
 | ------------------ | :-------------: |
 | Full name          | sm-crypto |
 | Keywords           | sm, js, crypto |
-| # releases         | 7 |
-| # dependents       | 2 |
-| # downloads        | 2268 |
+| # releases         | 10 |
+| # dependents       | 10 |
+| # downloads        | 6295 |
 | # stars            | 0 |
 
 ## Links

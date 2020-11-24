@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Notifications")
 @js.native
 class ResourceNotifications protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.notifications.delete
     * @desc Deletes a notification
@@ -42,6 +44,7 @@ class ResourceNotifications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * directory.notifications.get
     * @desc Retrieves a notification.
@@ -71,6 +74,7 @@ class ResourceNotifications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNotification]
   ): Unit = js.native
+  
   /**
     * directory.notifications.list
     * @desc Retrieves a list of notifications.
@@ -102,6 +106,7 @@ class ResourceNotifications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNotifications]
   ): Unit = js.native
+  
   /**
     * directory.notifications.patch
     * @desc Updates a notification. This method supports patch semantics.
@@ -132,6 +137,7 @@ class ResourceNotifications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNotification]
   ): Unit = js.native
+  
   /**
     * directory.notifications.update
     * @desc Updates a notification.
@@ -163,4 +169,3 @@ class ResourceNotifications protected () extends js.Object {
     callback: BodyResponseCallback[SchemaNotification]
   ): Unit = js.native
 }
-

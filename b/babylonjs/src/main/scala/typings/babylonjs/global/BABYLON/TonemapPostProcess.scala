@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.TonemapPostProcess")
 @js.native
@@ -39,8 +39,47 @@ class TonemapPostProcess protected ()
     /** Defines the required exposure adjustement */
   exposureAdjustment: Double,
     camera: typings.babylonjs.BABYLON.Camera,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.BABYLON.Engine
+  ) = this()
+  def this(
+    name: String,
+    _operator: typings.babylonjs.BABYLON.TonemappingOperator,
+    /** Defines the required exposure adjustement */
+  exposureAdjustment: Double,
+    camera: typings.babylonjs.BABYLON.Camera,
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine
+  ) = this()
+  def this(
+    name: String,
+    _operator: typings.babylonjs.BABYLON.TonemappingOperator,
+    /** Defines the required exposure adjustement */
+  exposureAdjustment: Double,
+    camera: typings.babylonjs.BABYLON.Camera,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: js.UndefOr[scala.Nothing],
+    textureFormat: Double
+  ) = this()
+  def this(
+    name: String,
+    _operator: typings.babylonjs.BABYLON.TonemappingOperator,
+    /** Defines the required exposure adjustement */
+  exposureAdjustment: Double,
+    camera: typings.babylonjs.BABYLON.Camera,
+    samplingMode: js.UndefOr[scala.Nothing],
+    engine: typings.babylonjs.BABYLON.Engine,
+    textureFormat: Double
+  ) = this()
+  def this(
+    name: String,
+    _operator: typings.babylonjs.BABYLON.TonemappingOperator,
+    /** Defines the required exposure adjustement */
+  exposureAdjustment: Double,
+    camera: typings.babylonjs.BABYLON.Camera,
+    samplingMode: Double,
+    engine: js.UndefOr[scala.Nothing],
+    textureFormat: Double
   ) = this()
   def this(
     name: String,
@@ -53,4 +92,3 @@ class TonemapPostProcess protected ()
     textureFormat: Double
   ) = this()
 }
-

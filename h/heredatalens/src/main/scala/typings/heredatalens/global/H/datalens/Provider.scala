@@ -4,7 +4,7 @@ import typings.heredatalens.H.datalens.Service.Data
 import typings.heremaps.H.map.provider.Provider.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Providers define interfaces for layers to access data.
@@ -24,4 +24,3 @@ class Provider ()
   def this(data: js.UndefOr[scala.Nothing], options: Options) = this()
   def this(data: Data, options: Options) = this()
 }
-

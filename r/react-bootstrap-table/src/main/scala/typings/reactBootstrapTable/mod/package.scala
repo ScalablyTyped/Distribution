@@ -2,12 +2,16 @@ package typings.reactBootstrapTable
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type CustomAttrs = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
+  
   type EditCheckboxOptionValue = java.lang.String
+  
   type EditSelectOptionValue = js.Array[scala.Double | java.lang.String | typings.reactBootstrapTable.anon.Value]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.reactBootstrapTable.mod.TextFilter
     - typings.reactBootstrapTable.mod.SelectFilter
@@ -17,7 +21,9 @@ package object mod {
     - typings.reactBootstrapTable.mod.CustomFilter[js.Any, js.Any]
   */
   type Filter = typings.reactBootstrapTable.mod._Filter | (typings.reactBootstrapTable.mod.CustomFilter[js.Any, js.Any])
+  
   type FilterData[CustomFilterValue /* <: js.Object */] = org.scalablytyped.runtime.StringDictionary[typings.reactBootstrapTable.mod.FilterValue | CustomFilterValue]
+  
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - scala.Double
@@ -26,6 +32,8 @@ package object mod {
     - typings.reactBootstrapTable.mod.NumberFilterValue
   */
   type FilterValueData = typings.reactBootstrapTable.mod._FilterValueData | (js.Array[scala.Double | java.lang.String]) | java.lang.String | scala.Double
+  
   type SelectFilterOptionsType = (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]) with (org.scalablytyped.runtime.NumberDictionary[java.lang.String | scala.Double | scala.Boolean])
+  
   type SizePerPageList = js.Array[scala.Double | typings.reactBootstrapTable.anon.Text]
 }

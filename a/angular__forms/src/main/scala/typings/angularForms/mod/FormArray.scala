@@ -3,7 +3,7 @@ package typings.angularForms.mod
 import typings.angularForms.anon.EmitEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "FormArray")
 @js.native
@@ -71,14 +71,16 @@ class FormArray protected () extends AbstractControl {
     validatorOrOpts: ValidatorFn,
     asyncValidator: AsyncValidatorFn
   ) = this()
+  
   var _registerControl: js.Any = js.native
-  var controls: js.Array[AbstractControl] = js.native
+  
   /**
     * Get the `AbstractControl` at the given `index` in the array.
     *
     * @param index Index in the array to retrieve the control
     */
   def at(index: Double): AbstractControl = js.native
+  
   /**
     * Remove all controls in the `FormArray`.
     *
@@ -110,6 +112,9 @@ class FormArray protected () extends AbstractControl {
     * ```
     */
   def clear(): Unit = js.native
+  
+  var controls: js.Array[AbstractControl] = js.native
+  
   /**
     * The aggregate value of the array, including any disabled controls.
     *
@@ -117,6 +122,7 @@ class FormArray protected () extends AbstractControl {
     * For enabled controls only, the `value` property is the best way to get the value of the array.
     */
   def getRawValue(): js.Array[_] = js.native
+  
   /**
     * Insert a new `AbstractControl` at the given `index` in the array.
     *
@@ -124,10 +130,12 @@ class FormArray protected () extends AbstractControl {
     * @param control Form control to be inserted
     */
   def insert(index: Double, control: AbstractControl): Unit = js.native
+  
   /**
     * Length of the control array.
     */
   def length: Double = js.native
+  
   /**
     * Patches the value of the `FormArray`. It accepts an array that matches the
     * structure of the control, and does its best to match the values to the correct
@@ -164,20 +172,24 @@ class FormArray protected () extends AbstractControl {
     */
   def patchValue(value: js.Array[_]): Unit = js.native
   def patchValue(value: js.Array[_], options: EmitEvent): Unit = js.native
+  
   /**
     * Insert a new `AbstractControl` at the end of the array.
     *
     * @param control Form control to be inserted
     */
   def push(control: AbstractControl): Unit = js.native
+  
   /**
     * Remove the control at the given `index` in the array.
     *
     * @param index Index in the array to remove the control
     */
   def removeAt(index: Double): Unit = js.native
+  
   def reset(value: js.UndefOr[scala.Nothing], options: EmitEvent): Unit = js.native
   def reset(value: js.Any, options: EmitEvent): Unit = js.native
+  
   /**
     * Replace an existing control.
     *
@@ -185,6 +197,7 @@ class FormArray protected () extends AbstractControl {
     * @param control The `AbstractControl` control to replace the existing control
     */
   def setControl(index: Double, control: AbstractControl): Unit = js.native
+  
   /**
     * Sets the value of the `FormArray`. It accepts an array that matches
     * the structure of the control.
@@ -223,4 +236,3 @@ class FormArray protected () extends AbstractControl {
   def setValue(value: js.Array[_]): Unit = js.native
   def setValue(value: js.Array[_], options: EmitEvent): Unit = js.native
 }
-

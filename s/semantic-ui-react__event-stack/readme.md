@@ -11,8 +11,8 @@ Typings are for version 3.1.1
 | Full name          | @semantic-ui-react/event-stack |
 | Keywords           | - |
 | # releases         | 10 |
-| # dependents       | 6 |
-| # downloads        | 4196828 |
+| # dependents       | 13 |
+| # downloads        | 6168400 |
 | # stars            | 0 |
 
 ## Links

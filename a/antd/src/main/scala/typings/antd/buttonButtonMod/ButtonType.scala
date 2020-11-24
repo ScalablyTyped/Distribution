@@ -2,7 +2,7 @@ package typings.antd.buttonButtonMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.antd.antdStrings.default
@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   - typings.antd.antdStrings.ghost
   - typings.antd.antdStrings.dashed
   - typings.antd.antdStrings.link
-  - typings.antd.antdStrings.text
+  - typings.antd.antdStrings.text_
 */
 trait ButtonType extends LegacyButtonType
-

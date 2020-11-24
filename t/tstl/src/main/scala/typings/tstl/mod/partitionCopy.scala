@@ -6,11 +6,12 @@ import typings.tstl.unaryPredicatorMod.UnaryPredicator
 import typings.tstl.writeonlyMod.Writeonly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl", "partition_copy")
 @js.native
 object partitionCopy extends js.Object {
+  
   def apply[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator1 /* <: Writeonly[IForwardIterator[ValueType[InputIterator], OutputIterator1]] */, OutputIterator2 /* <: Writeonly[IForwardIterator[ValueType[InputIterator], OutputIterator2]] */](
     first: InputIterator,
     last: InputIterator,
@@ -19,4 +20,3 @@ object partitionCopy extends js.Object {
     pred: UnaryPredicator[ValueType[InputIterator]]
   ): typings.tstl.pairMod.Pair[OutputIterator1, OutputIterator2] = js.native
 }
-

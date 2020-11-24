@@ -2,7 +2,7 @@ package typings.microsoftGraph.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.onPremises
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.microsoftGraph.microsoftGraphStrings.dedicated
 */
 trait DeviceManagementExchangeConnectorType extends js.Object
-
 object DeviceManagementExchangeConnectorType {
+  
   @scala.inline
   def dedicated: typings.microsoftGraph.microsoftGraphStrings.dedicated = "dedicated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.dedicated]
+  
   @scala.inline
   def hosted: typings.microsoftGraph.microsoftGraphStrings.hosted = "hosted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hosted]
+  
   @scala.inline
   def onPremises: typings.microsoftGraph.microsoftGraphStrings.onPremises = "onPremises".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.onPremises]
+  
   @scala.inline
   def serviceToService: typings.microsoftGraph.microsoftGraphStrings.serviceToService = "serviceToService".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.serviceToService]
 }
-

@@ -2,14 +2,14 @@ package typings.reactDataGrid.AdazzleReactDataGrid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SCROLL_DIRECTION extends js.Object
-
 @JSGlobal("AdazzleReactDataGrid.SCROLL_DIRECTION")
 @js.native
 object SCROLL_DIRECTION extends js.Object {
+  
   @js.native
   sealed trait DOWN extends SCROLL_DIRECTION
   
@@ -24,6 +24,4 @@ object SCROLL_DIRECTION extends js.Object {
   
   @js.native
   sealed trait UP extends SCROLL_DIRECTION
-  
 }
-

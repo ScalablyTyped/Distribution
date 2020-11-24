@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/texttospeech/v1beta1", "texttospeech_v1beta1.Resource$Text")
 @js.native
 class ResourceText protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * texttospeech.text.synthesize
     * @desc Synthesizes speech synchronously: receive results after all text
@@ -46,4 +48,3 @@ class ResourceText protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSynthesizeSpeechResponse]
   ): Unit = js.native
 }
-

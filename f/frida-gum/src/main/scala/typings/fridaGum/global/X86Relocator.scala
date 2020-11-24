@@ -3,7 +3,7 @@ package typings.fridaGum.global
 import typings.fridaGum.NativePointerValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Relocates machine code for x86.
@@ -23,4 +23,3 @@ class X86Relocator protected ()
     */
   def this(inputCode: NativePointerValue, output: typings.fridaGum.X86Writer) = this()
 }
-

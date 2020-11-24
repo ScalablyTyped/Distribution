@@ -6,11 +6,12 @@ import typings.node.cryptoMod.ScryptOptions
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mz/crypto", "scrypt")
 @js.native
 object scrypt extends js.Object {
+  
   def apply(
     password: BinaryLike,
     salt: BinaryLike,
@@ -25,4 +26,3 @@ object scrypt extends js.Object {
     callback: js.Function2[/* err */ Error | Null, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
 }
-

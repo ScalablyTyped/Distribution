@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Security.Authentication.Web.Core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait WebTokenRequestStatus extends js.Object
-
 /** Represents the status of a web token request. */
 @JSGlobal("Windows.Security.Authentication.Web.Core.WebTokenRequestStatus")
 @js.native
 object WebTokenRequestStatus extends js.Object {
+  
   /** The account provider was not available. */
   @js.native
   sealed trait accountProviderNotAvailable extends WebTokenRequestStatus
@@ -34,6 +34,4 @@ object WebTokenRequestStatus extends js.Object {
   /** User interaction is required to complete the request. This option is only applicable to requests made with GetTokenSilentlyAsync . If this status is returned, repeat the request with RequestTokenAsync . */
   @js.native
   sealed trait userInteractionRequired extends WebTokenRequestStatus
-  
 }
-

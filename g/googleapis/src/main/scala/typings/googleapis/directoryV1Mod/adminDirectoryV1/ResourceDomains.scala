@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Domains")
 @js.native
 class ResourceDomains protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * directory.domains.delete
     * @desc Deletes a domain of the customer.
@@ -38,6 +40,7 @@ class ResourceDomains protected () extends js.Object {
   ): Unit = js.native
   def delete(params: ParamsResourceDomainsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceDomainsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * directory.domains.get
     * @desc Retrieves a domain of the customer.
@@ -67,6 +70,7 @@ class ResourceDomains protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDomains]
   ): Unit = js.native
+  
   /**
     * directory.domains.insert
     * @desc Inserts a domain of the customer.
@@ -96,6 +100,7 @@ class ResourceDomains protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDomains]
   ): Unit = js.native
+  
   /**
     * directory.domains.list
     * @desc Lists the domains of the customer.
@@ -125,4 +130,3 @@ class ResourceDomains protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDomains2]
   ): Unit = js.native
 }
-

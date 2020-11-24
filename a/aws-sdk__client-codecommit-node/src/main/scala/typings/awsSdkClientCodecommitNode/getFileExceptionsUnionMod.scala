@@ -2,11 +2,12 @@ package typings.awsSdkClientCodecommitNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-codecommit-node/types/GetFileExceptionsUnion", JSImport.Namespace)
 @js.native
 object getFileExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientCodecommitNode.typesRepositoryNameRequiredExceptionMod.RepositoryNameRequiredException
     - typings.awsSdkClientCodecommitNode.typesInvalidRepositoryNameExceptionMod.InvalidRepositoryNameException
@@ -24,6 +25,4 @@ object getFileExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientCodecommitNode.typesFileTooLargeExceptionMod.FileTooLargeException
   */
   trait GetFileExceptionsUnion extends js.Object
-  
 }
-

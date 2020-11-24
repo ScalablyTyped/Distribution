@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-relative-path"
-version := "2.0-dt-20200303Z-44fa69"
+version := "2.0-dt-20200303Z-2cd97d"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

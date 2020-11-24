@@ -4,13 +4,14 @@ import typings.microsoftAjax.Sys.Component
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides the base class for all all ASP.NET AJAX client controls.
   */
 @js.native
 trait Control extends Component {
+  
   //#endregion
   //#region Methods
   /**
@@ -20,6 +21,7 @@ trait Control extends Component {
     *          A string that contains the name of the CSS class to add.
     */
   def addCssClass(className: String): Unit = js.native
+  
   //#endregion
   //#region Properties
   /**
@@ -27,6 +29,7 @@ trait Control extends Component {
     * @return The DOM element that the current Control object is associated with.
     */
   def get_element(): HTMLElement = js.native
+  
   /**
     * Called when an event is raised by the raiseBubbleEvent method.
     *
@@ -42,6 +45,7 @@ trait Control extends Component {
     *      false in all cases.
     */
   def onBubbleEvent(source: js.Any, args: js.Any): Boolean = js.native
+  
   /**
     * Calls the onBubbleEvent method of the parent control.
     *
@@ -56,6 +60,7 @@ trait Control extends Component {
     *          The event arguments.
     */
   def raiseBubbleEvent(source: js.Any, args: js.Any): Unit = js.native
+  
   /**
     * Removes a CSS class from the HTML Document Object Model (DOM) element that the control is attached to.
     * Use the removeCssClass method to remove a CSS class from a control. If the CSS class has already been removed from the control, removeCssClass makes no changes to the control.
@@ -64,6 +69,7 @@ trait Control extends Component {
     *          A string that contains the name of the CSS class to remove.
     */
   def removeCssClass(className: String): Unit = js.native
+  
   /**
     * Toggles a CSS class of the HTML Document Object Model (DOM) element that the control is attached to.
     * @param className
@@ -71,8 +77,8 @@ trait Control extends Component {
     */
   def toggleCssClass(className: String): Unit = js.native
 }
-
 object Control {
+  
   @scala.inline
   def apply(
     addCssClass: String => Unit,
@@ -100,30 +106,38 @@ object Control {
     val __obj = js.Dynamic.literal(addCssClass = js.Any.fromFunction1(addCssClass), add_disposing = js.Any.fromFunction1(add_disposing), add_propertyChanged = js.Any.fromFunction1(add_propertyChanged), beginUpdate = js.Any.fromFunction0(beginUpdate), dispose = js.Any.fromFunction0(dispose), endUpdate = js.Any.fromFunction0(endUpdate), get_element = js.Any.fromFunction0(get_element), get_events = js.Any.fromFunction0(get_events), get_id = js.Any.fromFunction0(get_id), get_isInitialized = js.Any.fromFunction0(get_isInitialized), get_isUpdating = js.Any.fromFunction0(get_isUpdating), initialize = js.Any.fromFunction0(initialize), onBubbleEvent = js.Any.fromFunction2(onBubbleEvent), raiseBubbleEvent = js.Any.fromFunction2(raiseBubbleEvent), raisePropertyChanged = js.Any.fromFunction1(raisePropertyChanged), removeCssClass = js.Any.fromFunction1(removeCssClass), remove_disposing = js.Any.fromFunction1(remove_disposing), remove_propertyChanged = js.Any.fromFunction1(remove_propertyChanged), set_id = js.Any.fromFunction1(set_id), toggleCssClass = js.Any.fromFunction1(toggleCssClass), updated = js.Any.fromFunction0(updated))
     __obj.asInstanceOf[Control]
   }
+  
   @scala.inline
   implicit class ControlOps[Self <: Control] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAddCssClass(value: String => Unit): Self = this.set("addCssClass", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGet_element(value: () => HTMLElement): Self = this.set("get_element", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setOnBubbleEvent(value: (js.Any, js.Any) => Boolean): Self = this.set("onBubbleEvent", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRaiseBubbleEvent(value: (js.Any, js.Any) => Unit): Self = this.set("raiseBubbleEvent", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRemoveCssClass(value: String => Unit): Self = this.set("removeCssClass", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setToggleCssClass(value: String => Unit): Self = this.set("toggleCssClass", js.Any.fromFunction1(value))
   }
-  
 }
-

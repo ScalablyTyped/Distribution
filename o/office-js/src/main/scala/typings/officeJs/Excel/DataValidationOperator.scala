@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait DataValidationOperator extends js.Object
-
 /**
   *
   * Represents Data validation operator enum.
@@ -16,6 +15,7 @@ sealed trait DataValidationOperator extends js.Object
 @JSGlobal("Excel.DataValidationOperator")
 @js.native
 object DataValidationOperator extends js.Object {
+  
   @js.native
   sealed trait between extends DataValidationOperator
   
@@ -39,6 +39,4 @@ object DataValidationOperator extends js.Object {
   
   @js.native
   sealed trait notEqualTo extends DataValidationOperator
-  
 }
-

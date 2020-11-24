@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new Color object.
@@ -17,22 +17,17 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Color extends js.Object {
+  
   /**
     * The alpha component of the color.
     */
   var a: Double = js.native
+  
   /**
     * The blue component of the color.
     */
   var b: Double = js.native
-  /**
-    * The green component of the color.
-    */
-  var g: Double = js.native
-  /**
-    * The red component of the color.
-    */
-  var r: Double = js.native
+  
   /**
     * Copies the contents of a source color to a destination color.
     * @example
@@ -46,6 +41,7 @@ trait Color extends js.Object {
     * @returns Self for chaining.
     */
   def copy(rhs: Color): Color = js.native
+  
   /**
     * Reports whether two colors are equal.
     * @example
@@ -56,6 +52,7 @@ trait Color extends js.Object {
     * @returns True if the colors are equal and false otherwise.
     */
   def equals(rhs: Color): Boolean = js.native
+  
   /**
     * Set the values of the color from a string representation '#11223344' or '#112233'.
     * @param hex - A string representation in the format '#RRGGBBAA' or '#RRGGBB'. Where RR, GG, BB, AA are red, green, blue and alpha values.
@@ -63,6 +60,12 @@ trait Color extends js.Object {
     * @returns Self for chaining.
     */
   def fromString(hex: String): Color = js.native
+  
+  /**
+    * The green component of the color.
+    */
+  var g: Double = js.native
+  
   /**
     * Returns the result of a linear interpolation between two specified colors.
     * @example
@@ -81,6 +84,12 @@ trait Color extends js.Object {
     * @returns Self for chaining.
     */
   def lerp(lhs: Color, rhs: Color, alpha: Double): Color = js.native
+  
+  /**
+    * The red component of the color.
+    */
+  var r: Double = js.native
+  
   /**
     * Assign values to the color components, including alpha.
     * @param r - The value for red (0-1).
@@ -91,6 +100,7 @@ trait Color extends js.Object {
     */
   def set(r: Double, g: Double, b: Double): Color = js.native
   def set(r: Double, g: Double, b: Double, a: Double): Color = js.native
+  
   /**
     * Converts the color to string form. The format is '#RRGGBBAA', where
     * RR, GG, BB, AA are the red, green, blue and alpha values. When the alpha value is not
@@ -104,4 +114,3 @@ trait Color extends js.Object {
     */
   def toString(alpha: Boolean): String = js.native
 }
-

@@ -11,8 +11,8 @@ Automatically start your server once Webpack's build completes.
 | Full name          | start-server-webpack-plugin |
 | Keywords           | webpack, server, start, watch, restart, express |
 | # releases         | 0 |
-| # dependents       | 73 |
-| # downloads        | 1310298 |
+| # dependents       | 82 |
+| # downloads        | 1617316 |
 | # stars            | 0 |
 
 ## Links

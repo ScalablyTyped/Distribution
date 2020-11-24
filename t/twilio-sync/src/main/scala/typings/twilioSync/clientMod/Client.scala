@@ -9,7 +9,7 @@ import typings.twilioSync.syncmapMod.SyncMap
 import typings.twilioSync.syncstreamMod.SyncStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class Client
@@ -34,30 +34,29 @@ import scala.scalajs.js.annotation._
 class Client protected () extends EventEmitter {
   def this(fpaToken: String) = this()
   def this(fpaToken: String, options: js.Any) = this()
+  
   var _createDocument: js.Any = js.native
+  
   var _createList: js.Any = js.native
+  
   var _createMap: js.Any = js.native
+  
   var _createStream: js.Any = js.native
+  
   var _get: js.Any = js.native
+  
   var _getDocument: js.Any = js.native
+  
   var _getList: js.Any = js.native
+  
   var _getLiveQuery: js.Any = js.native
+  
   var _getMap: js.Any = js.native
+  
   var _getStream: js.Any = js.native
-  /**
-    * Returns promise which resolves when library is correctly initialized
-    * Or throws if initialization is impossible
-    * @private
-    */
-  var ensureReady: js.Any = js.native
-  val entities: js.Any = js.native
-  var getCached: js.Any = js.native
-  var localStorageId: js.Any = js.native
-  var readRootFromSessionCache: js.Any = js.native
-  var removeFromCacheAndSession: js.Any = js.native
-  val services: js.Any = js.native
-  var storeRootInSessionCache: js.Any = js.native
+  
   def connectionState: ConnectionState = js.native
+  
   /**
     * Read or create a Sync Document.
     * @param {String | Client#OpenOptions} [arg] One of:
@@ -82,6 +81,18 @@ class Client protected () extends EventEmitter {
   def document(): js.Promise[SyncDocument] = js.native
   def document(arg: String): js.Promise[SyncDocument] = js.native
   def document(arg: OpenDocumentOptions): js.Promise[SyncDocument] = js.native
+  
+  /**
+    * Returns promise which resolves when library is correctly initialized
+    * Or throws if initialization is impossible
+    * @private
+    */
+  var ensureReady: js.Any = js.native
+  
+  val entities: js.Any = js.native
+  
+  var getCached: js.Any = js.native
+  
   /**
     * For Flex customers only. Creates a query object that can be used to issue one-time queries repeatedly
     * against the target index.
@@ -101,6 +112,7 @@ class Client protected () extends EventEmitter {
     *    });
     */
   def instantQuery(indexName: String): js.Promise[InstantQuery] = js.native
+  
   /**
     * Read or create a Sync List.
     * @param {String | Client#OpenOptions} [arg] One of:
@@ -125,6 +137,7 @@ class Client protected () extends EventEmitter {
   def list(): js.Promise[SyncList] = js.native
   def list(arg: String): js.Promise[SyncList] = js.native
   def list(arg: OpenListOptions): js.Promise[SyncList] = js.native
+  
   /**
     * For Flex customers only. Establishes a long-running query against Flex data wherein the returned
     * result set is updated whenever new (or updated) records match the given expression. Updated results
@@ -152,6 +165,9 @@ class Client protected () extends EventEmitter {
     *     });
     */
   def liveQuery(indexName: String, queryExpression: String): js.Promise[LiveQuery] = js.native
+  
+  var localStorageId: js.Any = js.native
+  
   /**
     * Read or create a Sync Map.
     * @param {String | Client#OpenOptions} [arg] One of:
@@ -176,6 +192,13 @@ class Client protected () extends EventEmitter {
   def map(): js.Promise[SyncMap] = js.native
   def map(arg: String): js.Promise[SyncMap] = js.native
   def map(arg: OpenMapOptions): js.Promise[SyncMap] = js.native
+  
+  var readRootFromSessionCache: js.Any = js.native
+  
+  var removeFromCacheAndSession: js.Any = js.native
+  
+  val services: js.Any = js.native
+  
   /**
     * Gracefully shutdown the libray
     * Currently it is not properly implemented and being used only in tests
@@ -183,6 +206,9 @@ class Client protected () extends EventEmitter {
     * @private
     */
   def shutdown(): js.Promise[Unit] = js.native
+  
+  var storeRootInSessionCache: js.Any = js.native
+  
   /**
     * Read or create a Sync Message Stream.
     * @param {String | Client#OpenOptions} [arg] One of:
@@ -208,6 +234,7 @@ class Client protected () extends EventEmitter {
   def stream(): js.Promise[SyncStream] = js.native
   def stream(arg: String): js.Promise[SyncStream] = js.native
   def stream(arg: OpenStreamOptions): js.Promise[SyncStream] = js.native
+  
   /**
     * Set new authentication token.
     * @param {String} token New token to set.
@@ -216,11 +243,11 @@ class Client protected () extends EventEmitter {
     */
   def updateToken(token: String): js.Promise[Unit] = js.native
 }
-
 /* static members */
 @JSImport("twilio-sync/lib/client", "Client")
 @js.native
 object Client extends js.Object {
+  
   /**
     * Current version of Sync client.
     * @name Client#version
@@ -229,4 +256,3 @@ object Client extends js.Object {
     */
   def version: js.Any = js.native
 }
-

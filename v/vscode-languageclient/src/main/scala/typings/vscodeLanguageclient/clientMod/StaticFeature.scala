@@ -5,22 +5,25 @@ import typings.vscodeLanguageserverProtocol.protocolMod.InitializeParams
 import typings.vscodeLanguageserverProtocol.protocolMod.ServerCapabilities
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StaticFeature extends js.Object {
-  /**
-    * Called to fill the initialize params.
-    *
-    * @params the initialize params.
-    */
-  var fillInitializeParams: js.UndefOr[js.Function1[/* params */ InitializeParams, Unit]] = js.native
+  
   /**
     * Called to fill in the client capabilities this feature implements.
     *
     * @param capabilities The client capabilities to fill.
     */
   def fillClientCapabilities(capabilities: ClientCapabilities): Unit = js.native
+  
+  /**
+    * Called to fill the initialize params.
+    *
+    * @params the initialize params.
+    */
+  var fillInitializeParams: js.UndefOr[js.Function1[/* params */ InitializeParams, Unit]] = js.native
+  
   /**
     * Initialize the feature. This method is called on a feature instance
     * when the client has successfully received the initialize request from
@@ -37,4 +40,3 @@ trait StaticFeature extends js.Object {
     documentSelector: typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector
   ): Unit = js.native
 }
-

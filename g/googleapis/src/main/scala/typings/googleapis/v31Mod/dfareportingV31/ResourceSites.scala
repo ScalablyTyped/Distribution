@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Sites")
 @js.native
 class ResourceSites protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.sites.get
     * @desc Gets one site by ID.
@@ -38,6 +40,7 @@ class ResourceSites protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceSitesGet, options: MethodOptions): GaxiosPromise[SchemaSite] = js.native
   def get(params: ParamsResourceSitesGet, options: MethodOptions, callback: BodyResponseCallback[SchemaSite]): Unit = js.native
+  
   /**
     * dfareporting.sites.insert
     * @desc Inserts a new site.
@@ -67,6 +70,7 @@ class ResourceSites protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSite]
   ): Unit = js.native
+  
   /**
     * dfareporting.sites.list
     * @desc Retrieves a list of sites, possibly filtered. This method supports
@@ -111,6 +115,7 @@ class ResourceSites protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSitesListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.sites.patch
     * @desc Updates an existing site. This method supports patch semantics.
@@ -141,6 +146,7 @@ class ResourceSites protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSite]
   ): Unit = js.native
+  
   /**
     * dfareporting.sites.update
     * @desc Updates an existing site.
@@ -171,4 +177,3 @@ class ResourceSites protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSite]
   ): Unit = js.native
 }
-

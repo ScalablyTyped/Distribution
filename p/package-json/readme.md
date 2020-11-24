@@ -10,9 +10,9 @@ Get metadata of a package from the npm registry
 | ------------------ | :-------------: |
 | Full name          | package-json |
 | Keywords           | npm, registry, package, pkg, package.json, json, module, scope, scoped |
-| # releases         | 8 |
-| # dependents       | 212 |
-| # downloads        | 201918630 |
+| # releases         | 7 |
+| # dependents       | 256 |
+| # downloads        | 298752857 |
 | # stars            | 9 |
 
 ## Links

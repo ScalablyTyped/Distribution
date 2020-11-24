@@ -2,7 +2,7 @@ package typings.ndnJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ndn-js", "MemoryContentCache")
 @js.native
@@ -11,4 +11,3 @@ class MemoryContentCache protected ()
   def this(face: typings.ndnJs.faceMod.Face) = this()
   def this(face: typings.ndnJs.faceMod.Face, cleanupIntervalMilliseconds: Double) = this()
 }
-

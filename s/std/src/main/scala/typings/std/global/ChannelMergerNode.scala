@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.ChannelMergerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ChannelMergerNode")
 @js.native
@@ -14,7 +14,6 @@ class ChannelMergerNode protected ()
   def this(context: typings.std.BaseAudioContext) = this()
   def this(context: typings.std.BaseAudioContext, options: ChannelMergerOptions) = this()
 }
-
 @JSGlobal("ChannelMergerNode")
 @js.native
 object ChannelMergerNode
@@ -24,4 +23,3 @@ object ChannelMergerNode
       /* options */ ChannelMergerOptions, 
       typings.std.ChannelMergerNode
     ]
-

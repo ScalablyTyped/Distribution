@@ -24,7 +24,7 @@ import typings.long.mod.Long
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs/light", "MapField")
 @js.native
@@ -40,7 +40,13 @@ class MapField protected ()
     * @param [comment] Comment associated with this field
     */
   def this(name: String, id: Double, keyType: String, `type`: String) = this()
-  def this(name: String, id: Double, keyType: String, `type`: String, options: StringDictionary[js.Any]) = this()
+  def this(
+    name: String,
+    id: Double,
+    keyType: String,
+    `type`: String,
+    options: StringDictionary[js.UndefOr[js.Any]]
+  ) = this()
   def this(
     name: String,
     id: Double,
@@ -54,15 +60,15 @@ class MapField protected ()
     id: Double,
     keyType: String,
     `type`: String,
-    options: StringDictionary[js.Any],
+    options: StringDictionary[js.UndefOr[js.Any]],
     comment: String
   ) = this()
 }
-
 /* static members */
 @JSImport("@apollo/protobufjs/light", "MapField")
 @js.native
 object MapField extends js.Object {
+  
   /**
     * Map field decorator (TypeScript).
     * @param fieldId Field id
@@ -77,6 +83,7 @@ object MapField extends js.Object {
     fieldKeyType: int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | bool | string,
     fieldValueType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | bool | string | bytes | js.Object | Constructor[js.Object]
   ): FieldDecorator = js.native
+  
   /**
     * Constructs a map field from a map field descriptor.
     * @param name Field name
@@ -86,4 +93,3 @@ object MapField extends js.Object {
     */
   def fromJSON(name: String, json: IMapField): typings.apolloProtobufjs.mod.MapField = js.native
 }
-

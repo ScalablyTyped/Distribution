@@ -5,21 +5,25 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region RoleEnvironment
 @js.native
 trait RoleEnvironmentInterface extends EventEmitter {
+  
   var EnvironmentVariables: Dictkey = js.native
+  
   var VersionEndpointFixedPath: String = js.native
-  var clientId: String = js.native
-  var incorrectCallbackErr: String = js.native
+  
   /**
     * Clears the status of the role instance.
     * An instance may indicate that it has completed communicating status by calling this method.
     */
   def clearStatus(callback: ErrorCallback): Unit = js.native
+  
+  var clientId: String = js.native
+  
   /**
     * Retrieves the settings in the service configuration file.
     *
@@ -29,37 +33,46 @@ trait RoleEnvironmentInterface extends EventEmitter {
     * and [Service Configuration Schema](http://msdn.microsoft.com/en-us/library/windowsazure/ee758710.aspx).
     */
   def getConfigurationSettings(callback: SimpleCallback[Dictionary[String]]): Unit = js.native
+  
   /**
     * Returns a RoleInstance object that represents the role instance
     * in which this code is currently executing.
     */
   def getCurrentRoleInstance(callback: SimpleCallback[RoleInstance]): Unit = js.native
+  
   /**
     * Returns the deployment ID that uniquely identifies the deployment in
     * which this role instance is running.
     */
   def getDeploymentId(callback: SimpleCallback[String]): Unit = js.native
+  
   /**
     * Retrieves the set of named local storage resources, along with the path.
     * For example, the DiagnosticStore resource which is defined for every role
     * provides a location for runtime diagnostics and logs.
     */
   def getLocalResources(callback: SimpleCallback[Dictionary[RoleLocalResource]]): Unit = js.native
+  
   /**
     * Returns the set of Role objects defined for your service.
     * Roles are defined in the service definition file.
     */
   def getRoles(callback: SimpleCallback[Dictionary[Role]]): Unit = js.native
+  
+  var incorrectCallbackErr: String = js.native
+  
   /**
     * Indicates whether the role instance is running in the Microsoft Azure
     * environment.  It is good practice to enclose any code that uses
     * service runtime in the isAvailable callback.
     */
   def isAvailable(callback: SimpleCallback[Boolean]): Unit = js.native
+  
   /**
     * Indicates whether the role instance is running in the development fabric.
     */
   def isEmulated(callback: SimpleCallback[Boolean]): Unit = js.native
+  
   /**
     * Requests that the current role instance be stopped and restarted.
     *
@@ -71,6 +84,7 @@ trait RoleEnvironmentInterface extends EventEmitter {
     * prepare the instance to be recycled.
     */
   def requestRecycle(callback: ErrorCallback): Unit = js.native
+  
   /**
     * Sets the status of the role instance.
     *
@@ -80,4 +94,3 @@ trait RoleEnvironmentInterface extends EventEmitter {
     */
   def setStatus(roleInstanceStatus: String, expirationUtc: Date, callback: ErrorCallback): Unit = js.native
 }
-

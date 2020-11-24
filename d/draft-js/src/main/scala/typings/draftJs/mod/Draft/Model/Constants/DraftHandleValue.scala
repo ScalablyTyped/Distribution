@@ -2,7 +2,7 @@ package typings.draftJs.mod.Draft.Model.Constants
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A type that allows us to avoid returning boolean values
@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
   - typings.draftJs.draftJsStrings.`not-handled`
 */
 trait DraftHandleValue extends js.Object
-
 object DraftHandleValue {
+  
   @scala.inline
   def handled: typings.draftJs.draftJsStrings.handled = "handled".asInstanceOf[typings.draftJs.draftJsStrings.handled]
+  
   @scala.inline
   def `not-handled`: typings.draftJs.draftJsStrings.`not-handled` = "not-handled".asInstanceOf[typings.draftJs.draftJsStrings.`not-handled`]
 }
-

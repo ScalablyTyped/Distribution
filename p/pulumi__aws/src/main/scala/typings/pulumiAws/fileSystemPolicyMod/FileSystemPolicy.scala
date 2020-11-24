@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/efs/fileSystemPolicy", "FileSystemPolicy")
 @js.native
@@ -21,20 +21,22 @@ class FileSystemPolicy protected () extends CustomResource {
     */
   def this(name: String, args: FileSystemPolicyArgs) = this()
   def this(name: String, args: FileSystemPolicyArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ID of the EFS file system.
     */
   val fileSystemId: Output_[String] = js.native
+  
   /**
     * The JSON formatted file system policy for the EFS file system. see [Docs](https://docs.aws.amazon.com/efs/latest/ug/access-control-overview.html#access-control-manage-access-intro-resource-policies) for more info.
     */
   val policy: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/efs/fileSystemPolicy", "FileSystemPolicy")
 @js.native
 object FileSystemPolicy extends js.Object {
+  
   /**
     * Get an existing FileSystemPolicy resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -48,10 +50,10 @@ object FileSystemPolicy extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): FileSystemPolicy = js.native
   def get(name: String, id: Input[ID], state: FileSystemPolicyState): FileSystemPolicy = js.native
   def get(name: String, id: Input[ID], state: FileSystemPolicyState, opts: CustomResourceOptions): FileSystemPolicy = js.native
+  
   /**
     * Returns true if the given object is an instance of FileSystemPolicy.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystemPolicy.FileSystemPolicy */ Boolean = js.native
 }
-

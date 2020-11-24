@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Events")
 @js.native
 class ResourceEvents protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * games.events.listByPlayer
     * @desc Returns a list showing the current progress on events in this
@@ -47,6 +49,7 @@ class ResourceEvents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPlayerEventListResponse]
   ): Unit = js.native
+  
   /**
     * games.events.listDefinitions
     * @desc Returns a list of the event definitions in this application.
@@ -80,6 +83,7 @@ class ResourceEvents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEventDefinitionListResponse]
   ): Unit = js.native
+  
   /**
     * games.events.record
     * @desc Records a batch of changes to the number of times events have
@@ -111,4 +115,3 @@ class ResourceEvents protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEventUpdateResponse]
   ): Unit = js.native
 }
-

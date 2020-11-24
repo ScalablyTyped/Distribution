@@ -2,11 +2,12 @@ package typings.tsconfigPaths.tsconfigLoaderMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tsconfig-paths/lib/tsconfig-loader", "loadTsconfig")
 @js.native
 object loadTsconfig extends js.Object {
+  
   def apply(configFilePath: String): js.UndefOr[Tsconfig] = js.native
   def apply(
     configFilePath: String,
@@ -20,4 +21,3 @@ object loadTsconfig extends js.Object {
     readFileSync: js.Function1[/* filename */ String, String]
   ): js.UndefOr[Tsconfig] = js.native
 }
-

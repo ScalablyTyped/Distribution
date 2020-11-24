@@ -3,22 +3,12 @@ package typings.pFilter
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-filter", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function pFilter<ValueType>(
-  // 	input: Iterable<ValueType | PromiseLike<ValueType>>,
-  // 	filterer: (
-  // 		element: ValueType,
-  // 		index: number
-  // 	) => boolean | PromiseLike<boolean>,
-  // 	options?: pFilter.Options
-  // ): Promise<ValueType[]>;
-  // export = pFilter;
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pFilter */ js.Any = js.native
+  
   /**
   	Filter promises concurrently.
   	@param input - Iterated over concurrently in the `filterer` function.
@@ -53,6 +43,18 @@ object mod extends js.Object {
     filterer: js.Function2[/* element */ ValueType, /* index */ Double, Boolean | js.Thenable[Boolean]],
     options: Options
   ): js.Promise[js.Array[ValueType]] = js.native
+  
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function pFilter<ValueType>(
+  // 	input: Iterable<ValueType | PromiseLike<ValueType>>,
+  // 	filterer: (
+  // 		element: ValueType,
+  // 		index: number
+  // 	) => boolean | PromiseLike<boolean>,
+  // 	options?: pFilter.Options
+  // ): Promise<ValueType[]>;
+  // export = pFilter;
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pFilter */ js.Any = js.native
+  
   type Options = typings.pMap.mod.Options
 }
-

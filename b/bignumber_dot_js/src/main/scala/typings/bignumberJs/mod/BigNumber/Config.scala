@@ -2,11 +2,12 @@ package typings.bignumberJs.mod.BigNumber
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** See `BigNumber.config` (alias `BigNumber.set`) and `BigNumber.clone`. */
 @js.native
 trait Config extends js.Object {
+  
   /**
     * The alphabet used for base conversion. The length of the alphabet corresponds to the maximum
     * value of the base argument that can be passed to the BigNumber constructor or `toString`.
@@ -26,6 +27,7 @@ trait Config extends js.Object {
     * ```
     */
   var ALPHABET: js.UndefOr[String] = js.native
+  
   /**
     * A boolean: `true` or `false`. Default value: `false`.
     *
@@ -52,6 +54,7 @@ trait Config extends js.Object {
     * ```
     */
   var CRYPTO: js.UndefOr[Boolean] = js.native
+  
   /**
     * An integer, 0 to 1e+9. Default value: 20.
     *
@@ -65,6 +68,7 @@ trait Config extends js.Object {
     * ```
     */
   var DECIMAL_PLACES: js.UndefOr[Double] = js.native
+  
   /**
     * An integer, 0 to 1e+9, or an array, [-1e+9 to 0, 0 to 1e+9].
     * Default value: `[-7, 20]`.
@@ -104,6 +108,7 @@ trait Config extends js.Object {
     * notation.
     */
   var EXPONENTIAL_AT: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.native
+  
   /**
     * An object including any number of the properties shown below.
     *
@@ -141,6 +146,7 @@ trait Config extends js.Object {
     * ```
     */
   var FORMAT: js.UndefOr[Format] = js.native
+  
   /**
     * An integer, 0, 1, 3, 6 or 9. Default value: `BigNumber.ROUND_DOWN` (1).
     *
@@ -174,6 +180,7 @@ trait Config extends js.Object {
     * ```
     */
   var MODULO_MODE: js.UndefOr[ModuloMode] = js.native
+  
   /**
     * An integer, 0 to 1e+9. Default value: 0.
     *
@@ -189,6 +196,7 @@ trait Config extends js.Object {
     * ```
     */
   var POW_PRECISION: js.UndefOr[Double] = js.native
+  
   /**
     * An integer, magnitude 1 to 1e+9, or an array, [-1e+9 to -1, 1 to 1e+9].
     * Default value: `[-1e+9, 1e+9]`.
@@ -223,6 +231,7 @@ trait Config extends js.Object {
     * The smallest possible magnitude of a non-zero BigNumber is 1e-1000000000.
     */
   var RANGE: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.native
+  
   /**
     * An integer, 0 to 8. Default value: `BigNumber.ROUND_HALF_UP` (4).
     *
@@ -239,61 +248,81 @@ trait Config extends js.Object {
     */
   var ROUNDING_MODE: js.UndefOr[RoundingMode] = js.native
 }
-
 object Config {
+  
   @scala.inline
   def apply(): Config = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Config]
   }
+  
   @scala.inline
   implicit class ConfigOps[Self <: Config] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setALPHABET(value: String): Self = this.set("ALPHABET", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteALPHABET: Self = this.set("ALPHABET", js.undefined)
+    
     @scala.inline
     def setCRYPTO(value: Boolean): Self = this.set("CRYPTO", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCRYPTO: Self = this.set("CRYPTO", js.undefined)
+    
     @scala.inline
     def setDECIMAL_PLACES(value: Double): Self = this.set("DECIMAL_PLACES", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDECIMAL_PLACES: Self = this.set("DECIMAL_PLACES", js.undefined)
+    
     @scala.inline
     def setEXPONENTIAL_AT(value: Double | (js.Tuple2[Double, Double])): Self = this.set("EXPONENTIAL_AT", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEXPONENTIAL_AT: Self = this.set("EXPONENTIAL_AT", js.undefined)
+    
     @scala.inline
     def setFORMAT(value: Format): Self = this.set("FORMAT", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFORMAT: Self = this.set("FORMAT", js.undefined)
+    
     @scala.inline
     def setMODULO_MODE(value: ModuloMode): Self = this.set("MODULO_MODE", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMODULO_MODE: Self = this.set("MODULO_MODE", js.undefined)
+    
     @scala.inline
     def setPOW_PRECISION(value: Double): Self = this.set("POW_PRECISION", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePOW_PRECISION: Self = this.set("POW_PRECISION", js.undefined)
+    
     @scala.inline
     def setRANGE(value: Double | (js.Tuple2[Double, Double])): Self = this.set("RANGE", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRANGE: Self = this.set("RANGE", js.undefined)
+    
     @scala.inline
     def setROUNDING_MODE(value: RoundingMode): Self = this.set("ROUNDING_MODE", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteROUNDING_MODE: Self = this.set("ROUNDING_MODE", js.undefined)
   }
-  
 }
-

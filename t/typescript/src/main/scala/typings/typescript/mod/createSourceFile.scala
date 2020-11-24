@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createSourceFile")
 @js.native
 object createSourceFile extends js.Object {
+  
   def apply(fileName: java.lang.String, sourceText: java.lang.String, languageVersion: ScriptTarget): SourceFile = js.native
   def apply(
     fileName: java.lang.String,
@@ -29,4 +30,3 @@ object createSourceFile extends js.Object {
     scriptKind: ScriptKind
   ): SourceFile = js.native
 }
-

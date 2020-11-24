@@ -2,13 +2,14 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A transformation of a field of the document.
   */
 @js.native
 trait SchemaFieldTransform extends js.Object {
+  
   /**
     * Append the given elements in order if they are not already present in the
     * current field value. If the field is not an array, or if the field does
@@ -19,11 +20,13 @@ trait SchemaFieldTransform extends js.Object {
     * considered.  The corresponding transform_result will be the null value.
     */
   var appendMissingElements: js.UndefOr[SchemaArrayValue] = js.native
+  
   /**
     * The path of the field. See Document.fields for the field path syntax
     * reference.
     */
   var fieldPath: js.UndefOr[String] = js.native
+  
   /**
     * Adds the given value to the field&#39;s current value.  This must be an
     * integer or a double value. If the field is not an integer or double, or
@@ -35,6 +38,7 @@ trait SchemaFieldTransform extends js.Object {
     * the largest magnitude positive/negative integer.
     */
   var increment: js.UndefOr[SchemaValue] = js.native
+  
   /**
     * Sets the field to the maximum of its current value and the given value.
     * This must be an integer or a double value. If the field is not an integer
@@ -48,6 +52,7 @@ trait SchemaFieldTransform extends js.Object {
     * numeric value x and NaN is NaN.
     */
   var maximum: js.UndefOr[SchemaValue] = js.native
+  
   /**
     * Sets the field to the minimum of its current value and the given value.
     * This must be an integer or a double value. If the field is not an integer
@@ -61,6 +66,7 @@ trait SchemaFieldTransform extends js.Object {
     * numeric value x and NaN is NaN.
     */
   var minimum: js.UndefOr[SchemaValue] = js.native
+  
   /**
     * Remove all of the given elements from the array in the field. If the
     * field is not an array, or if the field does not yet exist, it is set to
@@ -71,58 +77,75 @@ trait SchemaFieldTransform extends js.Object {
     * transform_result will be the null value.
     */
   var removeAllFromArray: js.UndefOr[SchemaArrayValue] = js.native
+  
   /**
     * Sets the field to the given server value.
     */
   var setToServerValue: js.UndefOr[String] = js.native
 }
-
 object SchemaFieldTransform {
+  
   @scala.inline
   def apply(): SchemaFieldTransform = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFieldTransform]
   }
+  
   @scala.inline
   implicit class SchemaFieldTransformOps[Self <: SchemaFieldTransform] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAppendMissingElements(value: SchemaArrayValue): Self = this.set("appendMissingElements", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAppendMissingElements: Self = this.set("appendMissingElements", js.undefined)
+    
     @scala.inline
     def setFieldPath(value: String): Self = this.set("fieldPath", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFieldPath: Self = this.set("fieldPath", js.undefined)
+    
     @scala.inline
     def setIncrement(value: SchemaValue): Self = this.set("increment", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIncrement: Self = this.set("increment", js.undefined)
+    
     @scala.inline
     def setMaximum(value: SchemaValue): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMaximum: Self = this.set("maximum", js.undefined)
+    
     @scala.inline
     def setMinimum(value: SchemaValue): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMinimum: Self = this.set("minimum", js.undefined)
+    
     @scala.inline
     def setRemoveAllFromArray(value: SchemaArrayValue): Self = this.set("removeAllFromArray", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRemoveAllFromArray: Self = this.set("removeAllFromArray", js.undefined)
+    
     @scala.inline
     def setSetToServerValue(value: String): Self = this.set("setToServerValue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSetToServerValue: Self = this.set("setToServerValue", js.undefined)
   }
-  
 }
-

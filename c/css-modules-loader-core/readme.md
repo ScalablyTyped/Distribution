@@ -11,8 +11,8 @@ A loader-agnostic CSS Modules implementation, based on PostCSS
 | Full name          | css-modules-loader-core |
 | Keywords           | css-modules, postcss, loader |
 | # releases         | 0 |
-| # dependents       | 64 |
-| # downloads        | 10971836 |
+| # dependents       | 71 |
+| # downloads        | 18737359 |
 | # stars            | 0 |
 
 ## Links

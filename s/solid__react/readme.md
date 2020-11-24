@@ -10,9 +10,9 @@ Efficiently build Solid apps and components with React
 | ------------------ | :-------------: |
 | Full name          | @solid/react |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 3 |
-| # downloads        | 3347 |
+| # releases         | 19 |
+| # dependents       | 4 |
+| # downloads        | 6282 |
 | # stars            | 0 |
 
 ## Links

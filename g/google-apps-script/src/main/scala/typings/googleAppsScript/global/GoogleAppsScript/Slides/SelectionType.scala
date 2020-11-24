@@ -2,7 +2,7 @@ package typings.googleAppsScript.global.GoogleAppsScript.Slides
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Type of Selection.
@@ -16,14 +16,21 @@ import scala.scalajs.js.annotation._
 @JSGlobal("GoogleAppsScript.Slides.SelectionType")
 @js.native
 object SelectionType extends js.Object {
-  /* 6 */ val CURRENT_PAGE: typings.googleAppsScript.GoogleAppsScript.Slides.SelectionType.CURRENT_PAGE with Double = js.native
-  /* 1 */ val NONE: typings.googleAppsScript.GoogleAppsScript.Slides.SelectionType.NONE with Double = js.native
-  /* 4 */ val PAGE: typings.googleAppsScript.GoogleAppsScript.Slides.SelectionType.PAGE with Double = js.native
-  /* 5 */ val PAGE_ELEMENT: typings.googleAppsScript.GoogleAppsScript.Slides.SelectionType.PAGE_ELEMENT with Double = js.native
-  /* 3 */ val TABLE_CELL: typings.googleAppsScript.GoogleAppsScript.Slides.SelectionType.TABLE_CELL with Double = js.native
-  /* 2 */ val TEXT: typings.googleAppsScript.GoogleAppsScript.Slides.SelectionType.TEXT with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleAppsScript.GoogleAppsScript.Slides.SelectionType.UNSUPPORTED with Double = js.native
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.SelectionType with Double] = js.native
+  
+  /* 6 */ val CURRENT_PAGE: typings.googleAppsScript.GoogleAppsScript.Slides.SelectionType.CURRENT_PAGE with Double = js.native
+  
+  /* 1 */ val NONE: typings.googleAppsScript.GoogleAppsScript.Slides.SelectionType.NONE with Double = js.native
+  
+  /* 4 */ val PAGE: typings.googleAppsScript.GoogleAppsScript.Slides.SelectionType.PAGE with Double = js.native
+  
+  /* 5 */ val PAGE_ELEMENT: typings.googleAppsScript.GoogleAppsScript.Slides.SelectionType.PAGE_ELEMENT with Double = js.native
+  
+  /* 3 */ val TABLE_CELL: typings.googleAppsScript.GoogleAppsScript.Slides.SelectionType.TABLE_CELL with Double = js.native
+  
+  /* 2 */ val TEXT: typings.googleAppsScript.GoogleAppsScript.Slides.SelectionType.TEXT with Double = js.native
+  
+  /* 0 */ val UNSUPPORTED: typings.googleAppsScript.GoogleAppsScript.Slides.SelectionType.UNSUPPORTED with Double = js.native
 }
-

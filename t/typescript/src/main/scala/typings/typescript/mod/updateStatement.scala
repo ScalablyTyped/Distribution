@@ -1,15 +1,13 @@
 package typings.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @deprecated Use `updateExpressionStatement` instead.  */
 @JSImport("typescript", "updateStatement")
 @js.native
-object updateStatement
-  extends TopLevel[
-      js.Function2[/* node */ ExpressionStatement, /* expression */ Expression, ExpressionStatement]
-    ]
-
+object updateStatement extends js.Object {
+  
+  /** @deprecated Use `factory.updateExpressionStatement` or the factory supplied by your transformation context instead. */
+  def apply(node: ExpressionStatement, expression: Expression): ExpressionStatement = js.native
+}

@@ -29,131 +29,22 @@ import typings.std.Exclude
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Range extends js.Object {
-  var AddIndent: Boolean = js.native
-  val AllowEdit: Boolean = js.native
-  val Application: typings.activexExcel.Excel.Application = js.native
-  @JSName("Areas")
-  val Areas_Original: Areas = js.native
-  @JSName("Borders")
-  val Borders_Original: Borders = js.native
-  @JSName("Cells")
-  val Cells_Original: Range = js.native
-  val Column: Double = js.native
-  var ColumnWidth: Double | Null = js.native
-  @JSName("Columns")
-  val Columns_Original: Range = js.native
-  val Comment: typings.activexExcel.Excel.Comment = js.native
-  val Count: Double = js.native
-  val CountLarge: Double = js.native
-  val Creator: XlCreator = js.native
-  @JSName("CurrentArray")
-  val CurrentArray_Original: Range = js.native
-  @JSName("CurrentRegion")
-  val CurrentRegion_Original: Range = js.native
-  @JSName("Dependents")
-  val Dependents_Original: Range = js.native
-  @JSName("DirectDependents")
-  val DirectDependents_Original: Range = js.native
-  @JSName("DirectPrecedents")
-  val DirectPrecedents_Original: Range = js.native
-  val DisplayFormat: typings.activexExcel.Excel.DisplayFormat = js.native
-  @JSName("EntireColumn")
-  val EntireColumn_Original: Range = js.native
-  @JSName("EntireRow")
-  val EntireRow_Original: Range = js.native
-  @JSName("Errors")
-  val Errors_Original: Errors = js.native
-  val Font: typings.activexExcel.Excel.Font = js.native
-  @JSName("FormatConditions")
-  val FormatConditions_Original: FormatConditions = js.native
-  var Formula: String | SafeArray[String] = js.native
-  var FormulaArray: String | SafeArray[String] | Null = js.native
-  var FormulaHidden: Boolean | Null = js.native
-  var FormulaLabel: XlFormulaLabel = js.native
-  var FormulaLocal: String | SafeArray[String] = js.native
-  var FormulaR1C1: String | SafeArray[String] = js.native
-  var FormulaR1C1Local: String | SafeArray[String] = js.native
-  val HasArray: Boolean = js.native
-  val HasFormula: Boolean | Null = js.native
-  var Height: Double = js.native
-  var Hidden: Boolean = js.native
-  var HorizontalAlignment: HorizontalAlignments = js.native
-  @JSName("Hyperlinks")
-  val Hyperlinks_Original: Hyperlinks = js.native
-  var ID: String = js.native
-  var IndentLevel: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` = js.native
-  val Interior: typings.activexExcel.Excel.Interior = js.native
-  val Left: Double = js.native
-  val ListHeaderRows: Double = js.native
-  val ListObject: typings.activexExcel.Excel.ListObject = js.native
-  val LocationInTable: XlLocationInTable = js.native
-  var Locked: Boolean | Null = js.native
-  val MDX: String = js.native
-  @JSName("MergeArea")
-  val MergeArea_Original: Range = js.native
-  var MergeCells: Boolean = js.native
-  var Name: String | typings.activexExcel.Excel.Name = js.native
-  @JSName("Next")
-  val Next_Original: Range = js.native
-  var NumberFormat: String | Null = js.native
-  var NumberFormatLocal: String | Null = js.native
-  var Orientation: Double | XlOrientation = js.native
-  var OutlineLevel: Double = js.native
-  var PageBreak: Double = js.native
-  val Parent: js.Any = js.native
-  val Phonetic: typings.activexExcel.Excel.Phonetic = js.native
-  @JSName("Phonetics")
-  val Phonetics_Original: Phonetics = js.native
-  val PivotCell: typings.activexExcel.Excel.PivotCell = js.native
-  val PivotField: typings.activexExcel.Excel.PivotField = js.native
-  val PivotItem: typings.activexExcel.Excel.PivotItem = js.native
-  val PivotTable: typings.activexExcel.Excel.PivotTable = js.native
-  @JSName("Precedents")
-  val Precedents_Original: Range = js.native
-  val PrefixCharacter: Apostrophe | Quotationmark | ^  | Backslash | _empty = js.native
-  @JSName("Previous")
-  val Previous_Original: Range = js.native
-  val QueryTable: typings.activexExcel.Excel.QueryTable = js.native
-  var ReadingOrder: Double = js.native
-  val Row: Double = js.native
-  var RowHeight: Double | Null = js.native
-  @JSName("Rows")
-  val Rows_Original: Range = js.native
-  @JSName("ServerActions")
-  val ServerActions_Original: Actions = js.native
-  var ShowDetail: js.Any = js.native
-  var ShrinkToFit: Boolean | Null = js.native
-  @JSName("SmartTags")
-  val SmartTags_Original: SmartTags = js.native
-  val SoundNote: typings.activexExcel.Excel.SoundNote = js.native
-  @JSName("SparklineGroups")
-  val SparklineGroups_Original: SparklineGroups = js.native
-  var Style: typings.activexExcel.Excel.Style = js.native
-  val Summary: Boolean = js.native
-  val Text: String = js.native
-  val Top: Double = js.native
-  var UseStandardHeight: Boolean | Null = js.native
-  var UseStandardWidth: Boolean | Null = js.native
-  val Validation: typings.activexExcel.Excel.Validation = js.native
-  var Value2: js.Any = js.native
-  // tslint:disable-next-line: ban-types
-  @JSName("Value")
-  var Value_Original: (Exclude[_, js.Function]) with (js.Function1[/* RangeValueDataType */ js.UndefOr[XlRangeValueDataType], _]) = js.native
-  var VerticalAlignment: VerticalAlignments = js.native
-  val Width: Double = js.native
-  val Worksheet: typings.activexExcel.Excel.Worksheet = js.native
-  var WrapText: Boolean | Null = js.native
-  val XPath: typings.activexExcel.Excel.XPath = js.native
+  
   def apply(Address: String): Range = js.native
   def apply(RowIndex: Double): Range = js.native
   def apply(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  
   def Activate(): js.Any = js.native
+  
   def AddComment(): typings.activexExcel.Excel.Comment = js.native
   def AddComment(Text: String): typings.activexExcel.Excel.Comment = js.native
+  
+  var AddIndent: Boolean = js.native
+  
   /** @param ReferenceStyle [ReferenceStyle=1] */
   def Address(): String = js.native
   def Address(
@@ -322,6 +213,7 @@ trait Range extends js.Object {
     External: Boolean,
     RelativeTo: Range
   ): String = js.native
+  
   /** @param ReferenceStyle [ReferenceStyle=1] */
   def AddressLocal(): String = js.native
   def AddressLocal(
@@ -490,6 +382,7 @@ trait Range extends js.Object {
     External: Boolean,
     RelativeTo: Range
   ): String = js.native
+  
   def AdvancedFilter(Action: XlFilterAction): js.Any = js.native
   def AdvancedFilter(
     Action: XlFilterAction,
@@ -525,7 +418,13 @@ trait Range extends js.Object {
   def AdvancedFilter_2(Action: `2`, CriteriaRange: Range, CopyToRange: Range): js.Any = js.native
   @JSName("AdvancedFilter")
   def AdvancedFilter_2(Action: `2`, CriteriaRange: Range, CopyToRange: Range, Unique: Boolean): js.Any = js.native
+  
   def AllocateChanges(): Unit = js.native
+  
+  val AllowEdit: Boolean = js.native
+  
+  val Application: typings.activexExcel.Excel.Application = js.native
+  
   /** @param Order [Order=1] */
   def ApplyNames(
     Names: js.UndefOr[SafeArray[String]],
@@ -536,12 +435,19 @@ trait Range extends js.Object {
     Order: js.UndefOr[XlApplyNamesOrder],
     AppendLast: js.UndefOr[Boolean]
   ): js.Any = js.native
+  
   def ApplyOutlineStyles(): js.Any = js.native
+  
   def Areas(Index: Double): Range = js.native
+  @JSName("Areas")
+  val Areas_Original: Areas = js.native
+  
   def AutoComplete(String: String): String = js.native
+  
   /** @param Type [Type=0] */
   def AutoFill(Destination: Range): js.Any = js.native
   def AutoFill(Destination: Range, Type: XlAutoFillType): js.Any = js.native
+  
   /** @param Operator [Operator=1] */
   def AutoFilter(Field: Double, Criteria1: String): js.Any = js.native
   def AutoFilter(
@@ -575,7 +481,9 @@ trait Range extends js.Object {
     Criteria2: String,
     VisibleDropDown: Boolean
   ): js.Any = js.native
+  
   def AutoFit(): js.Any = js.native
+  
   /** @param Format [Format=1] */
   def AutoFormat(
     Format: js.UndefOr[XlRangeAutoFormat],
@@ -586,7 +494,9 @@ trait Range extends js.Object {
     Pattern: js.UndefOr[js.Any],
     Width: js.UndefOr[js.Any]
   ): js.Any = js.native
+  
   def AutoOutline(): js.Any = js.native
+  
   /**
     * @param Weight [Weight=2]
     * @param ColorIndex [ColorIndex=-4105]
@@ -861,16 +771,26 @@ trait Range extends js.Object {
     Color: Double,
     ThemeColor: XlThemeColor
   ): js.Any = js.native
+  
   def Borders(Index: XlBordersIndex): Border = js.native
+  @JSName("Borders")
+  val Borders_Original: Borders = js.native
+  
   def Calculate(): js.Any = js.native
+  
   def CalculateRowMajorOrder(): js.Any = js.native
+  
   def Cells(Address: String): Range = js.native
   def Cells(RowIndex: Double): Range = js.native
   def Cells(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("Cells")
+  val Cells_Original: Range = js.native
+  
   def Characters(): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: js.UndefOr[scala.Nothing], Length: Double): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: Double): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: Double, Length: Double): typings.activexExcel.Excel.Characters = js.native
+  
   def CheckSpelling(): js.Any = js.native
   def CheckSpelling(
     CustomDictionary: js.UndefOr[scala.Nothing],
@@ -931,17 +851,35 @@ trait Range extends js.Object {
     AlwaysSuggest: Boolean,
     SpellLang: MsoLanguageID
   ): js.Any = js.native
+  
   def Clear(): js.Any = js.native
+  
   def ClearComments(): Unit = js.native
+  
   def ClearContents(): js.Any = js.native
+  
   def ClearFormats(): js.Any = js.native
+  
   def ClearHyperlinks(): Unit = js.native
+  
   def ClearNotes(): js.Any = js.native
+  
   def ClearOutline(): js.Any = js.native
+  
+  val Column: Double = js.native
+  
   def ColumnDifferences(Comparison: Range): Range = js.native
+  
+  var ColumnWidth: Double | Null = js.native
+  
   def Columns(Address: String): Range = js.native
   def Columns(RowIndex: Double): Range = js.native
   def Columns(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("Columns")
+  val Columns_Original: Range = js.native
+  
+  val Comment: typings.activexExcel.Excel.Comment = js.native
+  
   def Consolidate(): js.Any = js.native
   def Consolidate(
     Sources: js.UndefOr[scala.Nothing],
@@ -1110,8 +1048,10 @@ trait Range extends js.Object {
     LeftColumn: Boolean,
     CreateLinks: Boolean
   ): js.Any = js.native
+  
   def Copy(): js.Any = js.native
   def Copy(Destination: Range): js.Any = js.native
+  
   def CopyFromRecordset(Data: Recordset): Double = js.native
   def CopyFromRecordset(Data: Recordset, MaxRows: js.UndefOr[scala.Nothing], MaxColumns: Double): Double = js.native
   def CopyFromRecordset(Data: Recordset, MaxRows: Double): Double = js.native
@@ -1120,6 +1060,7 @@ trait Range extends js.Object {
   def CopyFromRecordset(Data: typings.activexDao.DAO.Recordset, MaxRows: js.UndefOr[scala.Nothing], MaxColumns: Double): Double = js.native
   def CopyFromRecordset(Data: typings.activexDao.DAO.Recordset, MaxRows: Double): Double = js.native
   def CopyFromRecordset(Data: typings.activexDao.DAO.Recordset, MaxRows: Double, MaxColumns: Double): Double = js.native
+  
   /**
     * @param Appearance [Appearance=1]
     * @param Format [Format=-4147]
@@ -1128,6 +1069,11 @@ trait Range extends js.Object {
   def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: XlCopyPictureFormat): js.Any = js.native
   def CopyPicture(Appearance: XlPictureAppearance): js.Any = js.native
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): js.Any = js.native
+  
+  val Count: Double = js.native
+  
+  val CountLarge: Double = js.native
+  
   def CreateNames(): js.Any = js.native
   def CreateNames(
     Top: js.UndefOr[scala.Nothing],
@@ -1149,6 +1095,7 @@ trait Range extends js.Object {
   def CreateNames(Top: Boolean, Left: Boolean, Bottom: js.UndefOr[scala.Nothing], Right: Boolean): js.Any = js.native
   def CreateNames(Top: Boolean, Left: Boolean, Bottom: Boolean): js.Any = js.native
   def CreateNames(Top: Boolean, Left: Boolean, Bottom: Boolean, Right: Boolean): js.Any = js.native
+  
   /** @param Appearance [Appearance=1] */
   def CreatePublisher(Edition: js.Any): js.Any = js.native
   def CreatePublisher(
@@ -1352,14 +1299,24 @@ trait Range extends js.Object {
     ContainsRTF: js.Any,
     ContainsVALU: js.Any
   ): js.Any = js.native
+  
+  val Creator: XlCreator = js.native
+  
   def CurrentArray(Address: String): Range = js.native
   def CurrentArray(RowIndex: Double): Range = js.native
   def CurrentArray(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("CurrentArray")
+  val CurrentArray_Original: Range = js.native
+  
   def CurrentRegion(Address: String): Range = js.native
   def CurrentRegion(RowIndex: Double): Range = js.native
   def CurrentRegion(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("CurrentRegion")
+  val CurrentRegion_Original: Range = js.native
+  
   def Cut(): js.Any = js.native
   def Cut(Destination: Range): js.Any = js.native
+  
   /**
     * @param Type [Type=-4132]
     * @param Date [Date=1]
@@ -1551,20 +1508,36 @@ trait Range extends js.Object {
     Stop: Double,
     Trend: Boolean
   ): js.Any = js.native
+  
   def Delete(): js.Any = js.native
   def Delete(Shift: XlDeleteShiftDirection): js.Any = js.native
+  
   def Dependents(Address: String): Range = js.native
   def Dependents(RowIndex: Double): Range = js.native
   def Dependents(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("Dependents")
+  val Dependents_Original: Range = js.native
+  
   def DialogBox(): Double | `false` = js.native
+  
   def DirectDependents(Address: String): Range = js.native
   def DirectDependents(RowIndex: Double): Range = js.native
   def DirectDependents(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("DirectDependents")
+  val DirectDependents_Original: Range = js.native
+  
   def DirectPrecedents(Address: String): Range = js.native
   def DirectPrecedents(RowIndex: Double): Range = js.native
   def DirectPrecedents(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("DirectPrecedents")
+  val DirectPrecedents_Original: Range = js.native
+  
   def Dirty(): Unit = js.native
+  
   def DiscardChanges(): Unit = js.native
+  
+  val DisplayFormat: typings.activexExcel.Excel.DisplayFormat = js.native
+  
   /**
     * @param Appearance [Appearance=1]
     * @param ChartSize [ChartSize=1]
@@ -1629,15 +1602,26 @@ trait Range extends js.Object {
     ChartSize: XlPictureAppearance,
     Format: js.Any
   ): js.Any = js.native
+  
   def End(Direction: XlDirection): Range = js.native
+  
   def EntireColumn(Address: String): Range = js.native
   def EntireColumn(RowIndex: Double): Range = js.native
   def EntireColumn(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("EntireColumn")
+  val EntireColumn_Original: Range = js.native
+  
   def EntireRow(Address: String): Range = js.native
   def EntireRow(RowIndex: Double): Range = js.native
   def EntireRow(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("EntireRow")
+  val EntireRow_Original: Range = js.native
+  
   def Errors(Index: Double): Error = js.native
   def Errors(Index: XlErrorChecks): Error = js.native
+  @JSName("Errors")
+  val Errors_Original: Errors = js.native
+  
   def ExportAsFixedFormat(
     Type: XlFixedFormatType,
     Filename: js.UndefOr[String],
@@ -1649,10 +1633,15 @@ trait Range extends js.Object {
     OpenAfterPublish: js.UndefOr[Boolean],
     FixedFormatExtClassPtr: js.UndefOr[js.Any]
   ): Unit = js.native
+  
   def FillDown(): js.Any = js.native
+  
   def FillLeft(): js.Any = js.native
+  
   def FillRight(): js.Any = js.native
+  
   def FillUp(): js.Any = js.native
+  
   /** @param SearchDirection [SearchDirection=1] */
   def Find(
     What: js.Any,
@@ -1665,14 +1654,38 @@ trait Range extends js.Object {
     MatchByte: js.UndefOr[Boolean],
     SearchFormat: js.UndefOr[js.Any]
   ): Range = js.native
+  
   def FindNext(): Range = js.native
   def FindNext(After: js.Any): Range = js.native
+  
   def FindPrevious(): Range = js.native
   def FindPrevious(After: js.Any): Range = js.native
+  
+  val Font: typings.activexExcel.Excel.Font = js.native
+  
   def FormatConditions(Index: String): FormatCondition = js.native
   def FormatConditions(Index: Double): FormatCondition = js.native
+  @JSName("FormatConditions")
+  val FormatConditions_Original: FormatConditions = js.native
+  
+  var Formula: String | SafeArray[String] = js.native
+  
+  var FormulaArray: String | SafeArray[String] | Null = js.native
+  
+  var FormulaHidden: Boolean | Null = js.native
+  
+  var FormulaLabel: XlFormulaLabel = js.native
+  
+  var FormulaLocal: String | SafeArray[String] = js.native
+  
+  var FormulaR1C1: String | SafeArray[String] = js.native
+  
+  var FormulaR1C1Local: String | SafeArray[String] = js.native
+  
   def FunctionWizard(): js.Any = js.native
+  
   def GoalSeek(Goal: js.Any, ChangingCell: Range): Boolean = js.native
+  
   def Group(): js.Any = js.native
   def Group(
     Start: js.UndefOr[scala.Nothing],
@@ -1709,23 +1722,68 @@ trait Range extends js.Object {
   def Group(Start: js.Any, End: js.Any, By: js.UndefOr[scala.Nothing], Periods: SafeArray[Boolean]): js.Any = js.native
   def Group(Start: js.Any, End: js.Any, By: Double): js.Any = js.native
   def Group(Start: js.Any, End: js.Any, By: Double, Periods: SafeArray[Boolean]): js.Any = js.native
+  
+  val HasArray: Boolean = js.native
+  
+  val HasFormula: Boolean | Null = js.native
+  
+  var Height: Double = js.native
+  
+  var Hidden: Boolean = js.native
+  
+  var HorizontalAlignment: HorizontalAlignments = js.native
+  
   def Hyperlinks(Index: String): Hyperlink = js.native
   def Hyperlinks(Index: Double): Hyperlink = js.native
+  @JSName("Hyperlinks")
+  val Hyperlinks_Original: Hyperlinks = js.native
+  
+  var ID: String = js.native
+  
+  var IndentLevel: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` = js.native
+  
   def Insert(): js.Any = js.native
   def Insert(Shift: js.UndefOr[scala.Nothing], CopyOrigin: js.Any): js.Any = js.native
   def Insert(Shift: XlInsertShiftDirection): js.Any = js.native
   def Insert(Shift: XlInsertShiftDirection, CopyOrigin: js.Any): js.Any = js.native
+  
   def InsertIndent(InsertAmount: Double): Unit = js.native
+  
+  val Interior: typings.activexExcel.Excel.Interior = js.native
+  
   def Item(Address: String): Range = js.native
   def Item(RowIndex: Double): Range = js.native
   def Item(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  
   def Justify(): js.Any = js.native
+  
+  val Left: Double = js.native
+  
+  val ListHeaderRows: Double = js.native
+  
   def ListNames(): js.Any = js.native
+  
+  val ListObject: typings.activexExcel.Excel.ListObject = js.native
+  
+  val LocationInTable: XlLocationInTable = js.native
+  
+  var Locked: Boolean | Null = js.native
+  
+  val MDX: String = js.native
+  
   def Merge(): Unit = js.native
   def Merge(Across: Boolean): Unit = js.native
+  
   def MergeArea(Address: String): Range = js.native
   def MergeArea(RowIndex: Double): Range = js.native
   def MergeArea(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("MergeArea")
+  val MergeArea_Original: Range = js.native
+  
+  var MergeCells: Boolean = js.native
+  
+  var Name: String | typings.activexExcel.Excel.Name = js.native
+  
   def NavigateArrow(): js.Any = js.native
   def NavigateArrow(
     TowardPrecedent: js.UndefOr[scala.Nothing],
@@ -1738,9 +1796,13 @@ trait Range extends js.Object {
   def NavigateArrow(TowardPrecedent: Boolean, ArrowNumber: js.UndefOr[scala.Nothing], LinkNumber: Double): js.Any = js.native
   def NavigateArrow(TowardPrecedent: Boolean, ArrowNumber: Double): js.Any = js.native
   def NavigateArrow(TowardPrecedent: Boolean, ArrowNumber: Double, LinkNumber: Double): js.Any = js.native
+  
   def Next(Address: String): Range = js.native
   def Next(RowIndex: Double): Range = js.native
   def Next(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("Next")
+  val Next_Original: Range = js.native
+  
   def NoteText(): String = js.native
   def NoteText(Text: js.UndefOr[scala.Nothing], Start: js.UndefOr[scala.Nothing], Length: Double): String = js.native
   def NoteText(Text: js.UndefOr[scala.Nothing], Start: Double): String = js.native
@@ -1749,14 +1811,29 @@ trait Range extends js.Object {
   def NoteText(Text: String, Start: js.UndefOr[scala.Nothing], Length: Double): String = js.native
   def NoteText(Text: String, Start: Double): String = js.native
   def NoteText(Text: String, Start: Double, Length: Double): String = js.native
+  
+  var NumberFormat: String | Null = js.native
+  
+  var NumberFormatLocal: String | Null = js.native
+  
   def Offset(): Range = js.native
   def Offset(RowOffset: js.UndefOr[scala.Nothing], ColumnOffset: Double): Range = js.native
   def Offset(RowOffset: Double): Range = js.native
   def Offset(RowOffset: Double, ColumnOffset: Double): Range = js.native
+  
+  var Orientation: Double | XlOrientation = js.native
+  
+  var OutlineLevel: Double = js.native
+  
+  var PageBreak: Double = js.native
+  
+  val Parent: js.Any = js.native
+  
   def Parse(): js.Any = js.native
   def Parse(ParseLine: js.UndefOr[scala.Nothing], Destination: Range): js.Any = js.native
   def Parse(ParseLine: String): js.Any = js.native
   def Parse(ParseLine: String, Destination: Range): js.Any = js.native
+  
   /**
     * @param Paste [Paste=-4104]
     * @param Operation [Operation=-4142]
@@ -1807,13 +1884,35 @@ trait Range extends js.Object {
   ): js.Any = js.native
   def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Boolean): js.Any = js.native
   def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Boolean, Transpose: Boolean): js.Any = js.native
+  
+  val Phonetic: typings.activexExcel.Excel.Phonetic = js.native
+  
   def Phonetics(Index: Double): typings.activexExcel.Excel.Phonetic = js.native
+  @JSName("Phonetics")
+  val Phonetics_Original: Phonetics = js.native
+  
+  val PivotCell: typings.activexExcel.Excel.PivotCell = js.native
+  
+  val PivotField: typings.activexExcel.Excel.PivotField = js.native
+  
+  val PivotItem: typings.activexExcel.Excel.PivotItem = js.native
+  
+  val PivotTable: typings.activexExcel.Excel.PivotTable = js.native
+  
   def Precedents(Address: String): Range = js.native
   def Precedents(RowIndex: Double): Range = js.native
   def Precedents(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("Precedents")
+  val Precedents_Original: Range = js.native
+  
+  val PrefixCharacter: Apostrophe | Quotationmark | ^  | Backslash | _empty = js.native
+  
   def Previous(Address: String): Range = js.native
   def Previous(RowIndex: Double): Range = js.native
   def Previous(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("Previous")
+  val Previous_Original: Range = js.native
+  
   def PrintOut[T /* <: js.UndefOr[Boolean] */](
     From: js.UndefOr[Double],
     To: js.UndefOr[Double],
@@ -1824,18 +1923,27 @@ trait Range extends js.Object {
     Collate: js.UndefOr[Boolean],
     PrToFileName: js.UndefOr[PrintToFileName[T]]
   ): js.Any = js.native
+  
   def PrintPreview(): js.Any = js.native
   def PrintPreview(EnableChanges: Boolean): js.Any = js.native
+  
+  val QueryTable: typings.activexExcel.Excel.QueryTable = js.native
+  
   def Range(Cell1: String): typings.activexExcel.Excel.Range = js.native
   def Range(Cell1: String, Cell2: String): typings.activexExcel.Excel.Range = js.native
   def Range(Cell1: String, Cell2: typings.activexExcel.Excel.Range): typings.activexExcel.Excel.Range = js.native
   def Range(Cell1: typings.activexExcel.Excel.Range): typings.activexExcel.Excel.Range = js.native
   def Range(Cell1: typings.activexExcel.Excel.Range, Cell2: String): typings.activexExcel.Excel.Range = js.native
   def Range(Cell1: typings.activexExcel.Excel.Range, Cell2: typings.activexExcel.Excel.Range): typings.activexExcel.Excel.Range = js.native
+  
+  var ReadingOrder: Double = js.native
+  
   /** @param Header [Header=2] */
   def RemoveDuplicates(Columns: SafeArray[Double]): Unit = js.native
   def RemoveDuplicates(Columns: SafeArray[Double], Header: XlYesNoGuess): Unit = js.native
+  
   def RemoveSubtotal(): js.Any = js.native
+  
   def Replace(
     What: String,
     Replacement: String,
@@ -1846,14 +1954,24 @@ trait Range extends js.Object {
     SearchFormat: js.UndefOr[Boolean],
     ReplaceFormat: js.UndefOr[Boolean]
   ): Boolean = js.native
+  
   def Resize(): Range = js.native
   def Resize(RowSize: js.UndefOr[scala.Nothing], ColumnSize: Double): Range = js.native
   def Resize(RowSize: Double): Range = js.native
   def Resize(RowSize: Double, ColumnSize: Double): Range = js.native
+  
+  val Row: Double = js.native
+  
   def RowDifferences(Comparison: Range): Range = js.native
+  
+  var RowHeight: Double | Null = js.native
+  
   def Rows(Address: String): Range = js.native
   def Rows(RowIndex: Double): Range = js.native
   def Rows(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("Rows")
+  val Rows_Original: Range = js.native
+  
   def Run(
     Arg1: js.UndefOr[js.Any],
     Arg2: js.UndefOr[js.Any],
@@ -1886,17 +2004,34 @@ trait Range extends js.Object {
     Arg29: js.UndefOr[js.Any],
     Arg30: js.UndefOr[js.Any]
   ): js.Any = js.native
+  
   def Select(): js.Any = js.native
+  
   def ServerActions(Index: String): Action = js.native
   def ServerActions(Index: Double): Action = js.native
+  @JSName("ServerActions")
+  val ServerActions_Original: Actions = js.native
+  
   def SetPhonetic(): Unit = js.native
+  
   def Show(): js.Any = js.native
+  
   def ShowDependents(): js.Any = js.native
   def ShowDependents(Remove: Boolean): js.Any = js.native
+  
+  var ShowDetail: js.Any = js.native
+  
   def ShowErrors(): js.Any = js.native
+  
   def ShowPrecedents(): js.Any = js.native
   def ShowPrecedents(Remove: Boolean): js.Any = js.native
+  
+  var ShrinkToFit: Boolean | Null = js.native
+  
   def SmartTags(Index: js.Any): SmartTag = js.native
+  @JSName("SmartTags")
+  val SmartTags_Original: SmartTags = js.native
+  
   /**
     * @param Order1 [Order1=1]
     * @param Order2 [Order2=1]
@@ -1925,6 +2060,7 @@ trait Range extends js.Object {
     DataOption2: js.UndefOr[XlSortDataOption],
     DataOption3: js.UndefOr[XlSortDataOption]
   ): js.Any = js.native
+  
   /**
     * @param SortMethod [SortMethod=1]
     * @param Order1 [Order1=1]
@@ -1953,11 +2089,18 @@ trait Range extends js.Object {
     DataOption2: js.UndefOr[XlSortDataOption],
     DataOption3: js.UndefOr[XlSortDataOption]
   ): js.Any = js.native
+  
+  val SoundNote: typings.activexExcel.Excel.SoundNote = js.native
+  
   def SparklineGroups(Index: Double): SparklineGroup = js.native
+  @JSName("SparklineGroups")
+  val SparklineGroups_Original: SparklineGroups = js.native
+  
   def Speak(): Unit = js.native
   def Speak(SpeakDirection: js.UndefOr[scala.Nothing], SpeakFormulas: Boolean): Unit = js.native
   def Speak(SpeakDirection: XlSpeakDirection): Unit = js.native
   def Speak(SpeakDirection: XlSpeakDirection, SpeakFormulas: Boolean): Unit = js.native
+  
   def SpecialCells(Type: XlCellType): Range = js.native
   @JSName("SpecialCells")
   def SpecialCells_2(Type: `2`): Range = js.native
@@ -1967,9 +2110,13 @@ trait Range extends js.Object {
   def SpecialCells_4123(Type: `-4123`): Range = js.native
   @JSName("SpecialCells")
   def SpecialCells_4123(Type: `-4123`, Value: XlSpecialCellsValue): Range = js.native
+  
+  var Style: typings.activexExcel.Excel.Style = js.native
+  
   /** @param Format [Format=-4158] */
   def SubscribeTo(Edition: String): js.Any = js.native
   def SubscribeTo(Edition: String, Format: XlSubscribeToFormat): js.Any = js.native
+  
   /** @param SummaryBelowData [SummaryBelowData=1] */
   def Subtotal(
     GroupBy: Double,
@@ -1986,10 +2133,16 @@ trait Range extends js.Object {
     PageBreaks: Boolean,
     SummaryBelowData: XlSummaryRow
   ): js.Any = js.native
+  
+  val Summary: Boolean = js.native
+  
   def Table(): js.Any = js.native
   def Table(RowInput: js.UndefOr[scala.Nothing], ColumnInput: Range): js.Any = js.native
   def Table(RowInput: Range): js.Any = js.native
   def Table(RowInput: Range, ColumnInput: Range): js.Any = js.native
+  
+  val Text: String = js.native
+  
   /**
     * @param DataType [DataType=1]
     * @param TextQualifier [TextQualifier=1]
@@ -2010,11 +2163,39 @@ trait Range extends js.Object {
     ThousandsSeparator: js.UndefOr[String],
     TrailingMinusNumbers: js.UndefOr[js.Any]
   ): js.Any = js.native
+  
+  val Top: Double = js.native
+  
   def UnMerge(): Unit = js.native
+  
   def Ungroup(): js.Any = js.native
+  
+  var UseStandardHeight: Boolean | Null = js.native
+  
+  var UseStandardWidth: Boolean | Null = js.native
+  
+  val Validation: typings.activexExcel.Excel.Validation = js.native
+  
   // tslint:disable-next-line: ban-types
   def Value(): js.Any = js.native
   def Value(RangeValueDataType: XlRangeValueDataType): js.Any = js.native
+  
+  var Value2: js.Any = js.native
+  
+  // tslint:disable-next-line: ban-types
+  @JSName("Value")
+  var Value_Original: (Exclude[_, js.Function]) with (js.Function1[/* RangeValueDataType */ js.UndefOr[XlRangeValueDataType], _]) = js.native
+  
+  var VerticalAlignment: VerticalAlignments = js.native
+  
+  val Width: Double = js.native
+  
+  val Worksheet: typings.activexExcel.Excel.Worksheet = js.native
+  
+  var WrapText: Boolean | Null = js.native
+  
+  val XPath: typings.activexExcel.Excel.XPath = js.native
+  
   /**
     * @param Weight [Weight=2]
     * @param ColorIndex [ColorIndex=-4105]
@@ -2032,10 +2213,12 @@ trait Range extends js.Object {
   def _BorderAround(LineStyle: js.Any, Weight: XlBorderWeight, ColorIndex: js.UndefOr[scala.Nothing], Color: js.Any): js.Any = js.native
   def _BorderAround(LineStyle: js.Any, Weight: XlBorderWeight, ColorIndex: XlColorIndex): js.Any = js.native
   def _BorderAround(LineStyle: js.Any, Weight: XlBorderWeight, ColorIndex: XlColorIndex, Color: js.Any): js.Any = js.native
+  
   def _Default(): js.Any = js.native
   def _Default(RowIndex: js.UndefOr[scala.Nothing], ColumnIndex: js.Any): js.Any = js.native
   def _Default(RowIndex: js.Any): js.Any = js.native
   def _Default(RowIndex: js.Any, ColumnIndex: js.Any): js.Any = js.native
+  
   /**
     * @param Paste [Paste=-4104]
     * @param Operation [Operation=-4142]
@@ -2086,6 +2269,7 @@ trait Range extends js.Object {
   ): js.Any = js.native
   def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: js.Any): js.Any = js.native
   def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: js.Any, Transpose: js.Any): js.Any = js.native
+  
   def _PrintOut(
     From: js.UndefOr[js.Any],
     To: js.UndefOr[js.Any],
@@ -2096,6 +2280,7 @@ trait Range extends js.Object {
     Collate: js.UndefOr[js.Any],
     PrToFileName: js.UndefOr[js.Any]
   ): js.Any = js.native
+  
   def __PrintOut(
     From: js.UndefOr[js.Any],
     To: js.UndefOr[js.Any],
@@ -2106,4 +2291,3 @@ trait Range extends js.Object {
     Collate: js.UndefOr[js.Any]
   ): js.Any = js.native
 }
-

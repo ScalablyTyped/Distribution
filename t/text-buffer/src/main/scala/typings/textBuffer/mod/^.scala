@@ -6,7 +6,7 @@ import typings.textBuffer.mod.global.TextBuffer.TextBuffer
 import typings.textBuffer.mod.global.TextBuffer.TextBufferStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("text-buffer", JSImport.Namespace)
 @js.native
@@ -16,8 +16,6 @@ class ^ () extends TextBuffer {
   /** Create a new buffer with the given starting text. */
   def this(text: String) = this()
 }
-
 @JSImport("text-buffer", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[TextBufferStatic]
-

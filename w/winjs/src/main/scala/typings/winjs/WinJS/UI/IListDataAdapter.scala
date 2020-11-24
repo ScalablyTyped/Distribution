@@ -3,19 +3,14 @@ package typings.winjs.WinJS.UI
 import typings.winjs.WinJS.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Accesses data for an IListDataSource.
   **/
 @js.native
 trait IListDataAdapter[T] extends js.Object {
-  //#endregion Methods
-  //#region Properties
-  /**
-    * Gets or sets a value that specifies whether to use an object's identity to determine if an item has changed.
-    **/
-  var compareByIdentity: Boolean = js.native
+  
   //#region Methods
   /**
     * Overwrites the data of the specified item.
@@ -25,11 +20,20 @@ trait IListDataAdapter[T] extends js.Object {
     * @returns A Promise that returns null or undefined when the operation completes.
     **/
   def change(key: String, newData: T, indexHint: Double): Promise[Unit] = js.native
+  
+  //#endregion Methods
+  //#region Properties
+  /**
+    * Gets or sets a value that specifies whether to use an object's identity to determine if an item has changed.
+    **/
+  var compareByIdentity: Boolean = js.native
+  
   /**
     * Gets the number of items in the IListDataAdapter object's data source.
     * @returns A Promise that contains the number of items the IListDataAdapter contains, or an approximate value if the actual number is unknown.
     **/
   def getCount(): Promise[Double] = js.native
+  
   /**
     * Inserts the specified data after the specified item.
     * @param key A key that can be used to retrieve the new data.
@@ -39,6 +43,7 @@ trait IListDataAdapter[T] extends js.Object {
     * @returns A Promise that contains the IItem that was added or an EditError if an error was encountered.
     **/
   def insertAfter(key: String, data: T, previousKey: String, previousIndexHint: Double): Promise[IItem[T]] = js.native
+  
   /**
     * Adds the specified key and data to the end of the IListDataAdapter object's data source.
     * @param key A key that can be used to retrieve the new data.
@@ -46,6 +51,7 @@ trait IListDataAdapter[T] extends js.Object {
     * @returns A Promise that contains the IItem that was added or an EditError if an error was encountered.
     **/
   def insertAtEnd(key: String, data: T): Promise[IItem[T]] = js.native
+  
   /**
     * Adds the specified key and data to the beginning of the IListDataAdapter object's data source.
     * @param key A key that can be used to retrieve the new data.
@@ -53,6 +59,7 @@ trait IListDataAdapter[T] extends js.Object {
     * @returns A Promise that contains the IItem that was added or an EditError if an error was encountered.
     **/
   def insertAtStart(key: String, data: T): Promise[IItem[T]] = js.native
+  
   /**
     * Inserts the specified data before the specified item.
     * @param key A key that can be used to retrieve the new data.
@@ -62,12 +69,14 @@ trait IListDataAdapter[T] extends js.Object {
     * @returns A Promise that contains the IItem that was added or an EditError if an error was encountered.
     **/
   def insertBefore(key: String, data: T, nextKey: String, nextIndexHint: Double): Promise[IItem[T]] = js.native
+  
   /**
     * Returns a string representation of the specified item that can be used for comparisons.
     * @param item The item for which to generate a signature.
     * @returns The signature representation of the specified item.
     **/
   def itemSignature(item: IItem[T]): String = js.native
+  
   /**
     * Retrieves the item that matches the specified description and also retrieves the specified number of items before and after the matched item.
     * @param description A description of the item to locate.
@@ -76,12 +85,14 @@ trait IListDataAdapter[T] extends js.Object {
     * @returns A Promise that provides an IFetchResult that contains the selected items or a FetchError if an error was encountered.
     **/
   def itemsFromDescription(description: String, countBefore: Double, countAfter: Double): Promise[IFetchResult[T]] = js.native
+  
   /**
     * Retrieves the specified number of items from the end of the IListDataAdapter object's data source.
     * @param count The number of items to retrieve.
     * @returns A Promise that provides an IFetchResult that contains the selected items or a FetchError if an error was encountered.
     **/
   def itemsFromEnd(count: Double): Promise[IFetchResult[T]] = js.native
+  
   /**
     * Retrieves the item at the specified index and also retrieves the specified number of items before and after the selected item.
     * @param index The index of the item to retrieve.
@@ -90,6 +101,7 @@ trait IListDataAdapter[T] extends js.Object {
     * @returns A Promise that provides an IFetchResult that contains the selected items or a FetchError if an error was encountered.
     **/
   def itemsFromIndex(index: Double, countBefore: Double, countAfter: Double): Promise[IFetchResult[T]] = js.native
+  
   /**
     * Retrieves the item that has the specified key and also retrieves the specified number of items before and after the selected item.
     * @param key The key of the item to retrieve.
@@ -98,12 +110,14 @@ trait IListDataAdapter[T] extends js.Object {
     * @returns A Promise that provides an IFetchResult that contains the selected items or a FetchError if an error was encountered.
     **/
   def itemsFromKey(key: String, countBefore: Double, countAfter: Double): Promise[IFetchResult[T]] = js.native
+  
   /**
     * Retrieves the specified number of items from the beginning of the IListDataAdapter object's data source.
     * @param count The number of items to retrieve.
     * @returns A Promise that provides an IFetchResult that contains the selected items or a FetchError if an error was encountered.
     **/
   def itemsFromStart(count: Double): Promise[IFetchResult[T]] = js.native
+  
   /**
     * Moves the specified item to just after another item.
     * @param key A key of the item to move.
@@ -113,6 +127,7 @@ trait IListDataAdapter[T] extends js.Object {
     * @returns A Promise that contains the IItem that was added or an EditError if an error was encountered.
     **/
   def moveAfter(key: String, previousKey: js.Any, indexHint: String, previousIndexHint: Double): Promise[IItem[T]] = js.native
+  
   /**
     * Moves the specified item to just before another item.
     * @param key A key of the item to move.
@@ -122,6 +137,7 @@ trait IListDataAdapter[T] extends js.Object {
     * @returns A Promise that contains the IItem that was added or an EditError if an error was encountered.
     **/
   def moveBefore(key: String, nextKey: js.Any, indexHint: String, nextIndexHint: Double): Promise[IItem[T]] = js.native
+  
   /**
     * Moves the specified item to the end of the IListDataAdapter object's data source.
     * @param key The key for the item to move.
@@ -129,6 +145,7 @@ trait IListDataAdapter[T] extends js.Object {
     * @returns A Promise that contains the IItem that was added or an EditError if an error was encountered.
     **/
   def moveToEnd(key: String, indexHint: Double): Promise[IItem[T]] = js.native
+  
   /**
     * Moves the specified item to the beginning of the IListDataAdapter object's data source.
     * @param key The key for the item to move.
@@ -136,6 +153,7 @@ trait IListDataAdapter[T] extends js.Object {
     * @returns A Promise that contains the IItem that was added or an EditError if an error was encountered.
     **/
   def moveToStart(key: String, indexHint: Double): Promise[IItem[T]] = js.native
+  
   /**
     * Removes the specified item from the IListDataAdapter object's data source.
     * @param key The key of the item to remove.
@@ -144,14 +162,15 @@ trait IListDataAdapter[T] extends js.Object {
     * @returns A Promise that returns null or undefined when the operation completes.
     **/
   def remove(key: String, data: T, indexHint: Double): Promise[Unit] = js.native
+  
   /**
     * Registers a notification handler. The IListDataAdapter uses the handler to notify listening objects when its data changes.
     * @param notificationHandler The notification handler that the IListDataAdapter will use to provide change notifications. .
     **/
   def setNotificationHandler(notificationHandler: IListDataNotificationHandler[T]): Unit = js.native
 }
-
 object IListDataAdapter {
+  
   @scala.inline
   def apply[T](
     change: (String, T, Double) => Promise[Unit],
@@ -177,56 +196,77 @@ object IListDataAdapter {
     val __obj = js.Dynamic.literal(change = js.Any.fromFunction3(change), compareByIdentity = compareByIdentity.asInstanceOf[js.Any], getCount = js.Any.fromFunction0(getCount), insertAfter = js.Any.fromFunction4(insertAfter), insertAtEnd = js.Any.fromFunction2(insertAtEnd), insertAtStart = js.Any.fromFunction2(insertAtStart), insertBefore = js.Any.fromFunction4(insertBefore), itemSignature = js.Any.fromFunction1(itemSignature), itemsFromDescription = js.Any.fromFunction3(itemsFromDescription), itemsFromEnd = js.Any.fromFunction1(itemsFromEnd), itemsFromIndex = js.Any.fromFunction3(itemsFromIndex), itemsFromKey = js.Any.fromFunction3(itemsFromKey), itemsFromStart = js.Any.fromFunction1(itemsFromStart), moveAfter = js.Any.fromFunction4(moveAfter), moveBefore = js.Any.fromFunction4(moveBefore), moveToEnd = js.Any.fromFunction2(moveToEnd), moveToStart = js.Any.fromFunction2(moveToStart), remove = js.Any.fromFunction3(remove), setNotificationHandler = js.Any.fromFunction1(setNotificationHandler))
     __obj.asInstanceOf[IListDataAdapter[T]]
   }
+  
   @scala.inline
   implicit class IListDataAdapterOps[Self <: IListDataAdapter[_], T] (val x: Self with IListDataAdapter[T]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setChange(value: (String, T, Double) => Promise[Unit]): Self = this.set("change", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setCompareByIdentity(value: Boolean): Self = this.set("compareByIdentity", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGetCount(value: () => Promise[Double]): Self = this.set("getCount", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setInsertAfter(value: (String, T, String, Double) => Promise[IItem[T]]): Self = this.set("insertAfter", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setInsertAtEnd(value: (String, T) => Promise[IItem[T]]): Self = this.set("insertAtEnd", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setInsertAtStart(value: (String, T) => Promise[IItem[T]]): Self = this.set("insertAtStart", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setInsertBefore(value: (String, T, String, Double) => Promise[IItem[T]]): Self = this.set("insertBefore", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setItemSignature(value: IItem[T] => String): Self = this.set("itemSignature", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setItemsFromDescription(value: (String, Double, Double) => Promise[IFetchResult[T]]): Self = this.set("itemsFromDescription", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setItemsFromEnd(value: Double => Promise[IFetchResult[T]]): Self = this.set("itemsFromEnd", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setItemsFromIndex(value: (Double, Double, Double) => Promise[IFetchResult[T]]): Self = this.set("itemsFromIndex", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setItemsFromKey(value: (String, Double, Double) => Promise[IFetchResult[T]]): Self = this.set("itemsFromKey", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setItemsFromStart(value: Double => Promise[IFetchResult[T]]): Self = this.set("itemsFromStart", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setMoveAfter(value: (String, js.Any, String, Double) => Promise[IItem[T]]): Self = this.set("moveAfter", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setMoveBefore(value: (String, js.Any, String, Double) => Promise[IItem[T]]): Self = this.set("moveBefore", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setMoveToEnd(value: (String, Double) => Promise[IItem[T]]): Self = this.set("moveToEnd", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setMoveToStart(value: (String, Double) => Promise[IItem[T]]): Self = this.set("moveToStart", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setRemove(value: (String, T, Double) => Promise[Unit]): Self = this.set("remove", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setSetNotificationHandler(value: IListDataNotificationHandler[T] => Unit): Self = this.set("setNotificationHandler", js.Any.fromFunction1(value))
   }
-  
 }
-

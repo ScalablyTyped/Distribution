@@ -2,10 +2,11 @@ package typings.angularStorage.mod.angularAugmentingMod.a0.storage
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IStoreService extends INamespacedStoreService {
+  
   /**
     * Returns a namespaced store
     *
@@ -19,4 +20,3 @@ trait IStoreService extends INamespacedStoreService {
   def getNamespacedStore(namespace: String, storage: String): INamespacedStoreService = js.native
   def getNamespacedStore(namespace: String, storage: String, delimiter: String): INamespacedStoreService = js.native
 }
-

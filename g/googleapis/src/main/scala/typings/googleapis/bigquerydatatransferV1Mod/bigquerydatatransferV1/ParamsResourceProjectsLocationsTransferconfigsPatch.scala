@@ -6,14 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParamsResourceProjectsLocationsTransferconfigsPatch extends StandardParameters {
+  
   /**
     * Auth client or API Key for the request
     */
   var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  
   /**
     * Optional OAuth2 authorization code to use with this transfer
     * configuration. If it is provided, the transfer configuration will be
@@ -31,6 +33,7 @@ trait ParamsResourceProjectsLocationsTransferconfigsPatch extends StandardParame
     * paste it in the application.
     */
   var authorizationCode: js.UndefOr[String] = js.native
+  
   /**
     * The resource name of the transfer config. Transfer config names have the
     * form of
@@ -41,14 +44,17 @@ trait ParamsResourceProjectsLocationsTransferconfigsPatch extends StandardParame
     * guaranteed or required, will be generated for config_id.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Request body metadata
     */
   var requestBody: js.UndefOr[SchemaTransferConfig] = js.native
+  
   /**
     * Required list of fields to be updated in this request.
     */
   var updateMask: js.UndefOr[String] = js.native
+  
   /**
     * Optional version info. If users want to find a very recent access token,
     * that is, immediately after approving access, users have to set the
@@ -59,49 +65,63 @@ trait ParamsResourceProjectsLocationsTransferconfigsPatch extends StandardParame
     */
   var versionInfo: js.UndefOr[String] = js.native
 }
-
 object ParamsResourceProjectsLocationsTransferconfigsPatch {
+  
   @scala.inline
   def apply(): ParamsResourceProjectsLocationsTransferconfigsPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsLocationsTransferconfigsPatch]
   }
+  
   @scala.inline
   implicit class ParamsResourceProjectsLocationsTransferconfigsPatchOps[Self <: ParamsResourceProjectsLocationsTransferconfigsPatch] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAuth: Self = this.set("auth", js.undefined)
+    
     @scala.inline
     def setAuthorizationCode(value: String): Self = this.set("authorizationCode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAuthorizationCode: Self = this.set("authorizationCode", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setRequestBody(value: SchemaTransferConfig): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    
     @scala.inline
     def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
+    
     @scala.inline
     def setVersionInfo(value: String): Self = this.set("versionInfo", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteVersionInfo: Self = this.set("versionInfo", js.undefined)
   }
-  
 }
-

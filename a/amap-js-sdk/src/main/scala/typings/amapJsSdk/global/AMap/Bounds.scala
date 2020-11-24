@@ -2,7 +2,7 @@ package typings.amapJsSdk.global.AMap
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 地物对象的经纬度矩形范围
@@ -18,4 +18,3 @@ class Bounds protected ()
     */
   def this(southWest: typings.amapJsSdk.AMap.LngLat, northEast: typings.amapJsSdk.AMap.LngLat) = this()
 }
-

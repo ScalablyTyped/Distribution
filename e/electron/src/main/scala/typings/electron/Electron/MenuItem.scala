@@ -48,31 +48,47 @@ import typings.electron.electronStrings.zoomIn
 import typings.electron.electronStrings.zoomOut
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MenuItem extends js.Object {
+  
   var accelerator: js.UndefOr[Accelerator] = js.native
+  
   var checked: Boolean = js.native
+  
   var click: js.Function = js.native
+  
   var commandId: Double = js.native
+  
   var enabled: Boolean = js.native
+  
   var icon: js.UndefOr[NativeImage_ | String] = js.native
+  
   var id: String = js.native
+  
   var label: String = js.native
+  
   var menu: Menu = js.native
+  
   var registerAccelerator: Boolean = js.native
+  
   var role: js.UndefOr[
     undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
   ] = js.native
+  
   var sublabel: String = js.native
+  
   var submenu: js.UndefOr[Menu] = js.native
+  
   var toolTip: String = js.native
+  
   var `type`: normal | separator | submenu | checkbox | radio = js.native
+  
   var visible: Boolean = js.native
 }
-
 object MenuItem {
+  
   @scala.inline
   def apply(
     checked: Boolean,
@@ -92,60 +108,82 @@ object MenuItem {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItem]
   }
+  
   @scala.inline
   implicit class MenuItemOps[Self <: MenuItem] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClick(value: js.Function): Self = this.set("click", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCommandId(value: Double): Self = this.set("commandId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMenu(value: Menu): Self = this.set("menu", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRegisterAccelerator(value: Boolean): Self = this.set("registerAccelerator", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSublabel(value: String): Self = this.set("sublabel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setToolTip(value: String): Self = this.set("toolTip", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: normal | separator | submenu | checkbox | radio): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAccelerator(value: Accelerator): Self = this.set("accelerator", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAccelerator: Self = this.set("accelerator", js.undefined)
+    
     @scala.inline
     def setIcon(value: NativeImage_ | String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIcon: Self = this.set("icon", js.undefined)
+    
     @scala.inline
     def setRole(
       value: undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
     ): Self = this.set("role", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRole: Self = this.set("role", js.undefined)
+    
     @scala.inline
     def setSubmenu(value: Menu): Self = this.set("submenu", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSubmenu: Self = this.set("submenu", js.undefined)
   }
-  
 }
-

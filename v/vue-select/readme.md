@@ -10,9 +10,9 @@ Everything you wish the HTML <select> element could do, wrapped up into a lightw
 | ------------------ | :-------------: |
 | Full name          | vue-select |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 56 |
-| # downloads        | 2332018 |
+| # releases         | 38 |
+| # dependents       | 106 |
+| # downloads        | 4103636 |
 | # stars            | 2 |
 
 ## Links

@@ -10,12 +10,13 @@ import typings.electron.Electron.WebContents_
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofBrowserWindow
   extends Instantiable0[BrowserWindow]
      with Instantiable1[/* options */ BrowserWindowConstructorOptions, BrowserWindow] {
+  
   /**
     * Adds DevTools extension located at `path`, and returns extension's name.
     *
@@ -35,6 +36,7 @@ trait TypeofBrowserWindow
     * @deprecated
     */
   def addDevToolsExtension(path: String): Unit = js.native
+  
   /**
     * Adds Chrome extension located at `path`, and returns extension's name.
     *
@@ -49,24 +51,29 @@ trait TypeofBrowserWindow
     * @deprecated
     */
   def addExtension(path: String): Unit = js.native
+  
   /**
     * The window that owns the given `browserView`. If the given view is not attached
     * to any window, returns `null`.
     */
   def fromBrowserView(browserView: BrowserView): BrowserWindow | Null = js.native
+  
   /**
     * The window with the given `id`.
     */
-  def fromId(id: Double): BrowserWindow = js.native
+  def fromId(id: Double): BrowserWindow | Null = js.native
+  
   /**
     * The window that owns the given `webContents` or `null` if the contents are not
     * owned by a window.
     */
   def fromWebContents(webContents: WebContents_): BrowserWindow | Null = js.native
+  
   /**
     * An array of all opened browser windows.
     */
   def getAllWindows(): js.Array[BrowserWindow] = js.native
+  
   /**
     * The keys are the extension names and each value is an Object containing `name`
     * and `version` properties.
@@ -81,6 +88,7 @@ trait TypeofBrowserWindow
     * @deprecated
     */
   def getDevToolsExtensions(): Record[String, ExtensionInfo] = js.native
+  
   /**
     * The keys are the extension names and each value is an Object containing `name`
     * and `version` properties.
@@ -93,10 +101,12 @@ trait TypeofBrowserWindow
     * @deprecated
     */
   def getExtensions(): Record[String, ExtensionInfo] = js.native
+  
   /**
     * The window that is focused in this application, otherwise returns `null`.
     */
   def getFocusedWindow(): BrowserWindow | Null = js.native
+  
   /**
     * Remove a DevTools extension by name.
     *
@@ -109,6 +119,7 @@ trait TypeofBrowserWindow
     * @deprecated
     */
   def removeDevToolsExtension(name: String): Unit = js.native
+  
   /**
     * Remove a Chrome extension by name.
     *
@@ -122,4 +133,3 @@ trait TypeofBrowserWindow
     */
   def removeExtension(name: String): Unit = js.native
 }
-

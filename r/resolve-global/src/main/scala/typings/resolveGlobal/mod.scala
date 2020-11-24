@@ -2,11 +2,12 @@ package typings.resolveGlobal
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("resolve-global", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
   	Resolve the path of a globally installed module.
   	@param moduleId - What you would use in `require()`.
@@ -20,6 +21,7 @@ object mod extends js.Object {
   	```
   	*/
   def apply(moduleId: String): String = js.native
+  
   /**
   	Resolve the path of a globally installed module.
   	@param moduleId - What you would use in `require()`.
@@ -27,4 +29,3 @@ object mod extends js.Object {
   	*/
   def silent(moduleId: String): js.UndefOr[String] = js.native
 }
-

@@ -1,13 +1,12 @@
 package typings.awsSdkClientGlacierNode
 
-import typings.awsSdkTypes.protocolMod.OperationModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-glacier-node/model/DeleteVaultAccessPolicy", JSImport.Namespace)
 @js.native
 object deleteVaultAccessPolicyMod extends js.Object {
-  val DeleteVaultAccessPolicy: OperationModel = js.native
+  
+  val DeleteVaultAccessPolicy: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }
-

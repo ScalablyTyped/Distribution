@@ -2,7 +2,7 @@ package typings.go.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * If a Placeholder is in the visual tree of a Group, it represents the area of all of the member Parts of that Group.
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   * The only common initialize of a Placeholder is to set its .padding.
   */
 class Placeholder () extends GraphObject {
+  
   /**Gets or sets the padding as a Margin (or number for a uniform Margin) around the members of the Group or around the Adornment.adornedObject GraphObject.*/
   var padding: MarginLike = js.native
 }
-

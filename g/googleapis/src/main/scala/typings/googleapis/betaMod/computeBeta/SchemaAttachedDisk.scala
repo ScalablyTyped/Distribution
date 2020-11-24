@@ -2,23 +2,26 @@ package typings.googleapis.betaMod.computeBeta
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An instance-attached disk resource.
   */
 @js.native
 trait SchemaAttachedDisk extends js.Object {
+  
   /**
     * Specifies whether the disk will be auto-deleted when the instance is
     * deleted (but not when the disk is detached from the instance).
     */
   var autoDelete: js.UndefOr[Boolean] = js.native
+  
   /**
     * Indicates that this is a boot disk. The virtual machine will use the
     * first partition of the disk for its root filesystem.
     */
   var boot: js.UndefOr[Boolean] = js.native
+  
   /**
     * Specifies a unique device name of your choice that is reflected into the
     * /dev/disk/by-id/google-* tree of a Linux operating system running within
@@ -29,6 +32,7 @@ trait SchemaAttachedDisk extends js.Object {
     * This field is only applicable for persistent disks.
     */
   var deviceName: js.UndefOr[String] = js.native
+  
   /**
     * Encrypts or decrypts a disk using a customer-supplied encryption key.  If
     * you are creating a new disk, this field encrypts the new disk using an
@@ -46,18 +50,21 @@ trait SchemaAttachedDisk extends js.Object {
     * managed instance group.
     */
   var diskEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  
   /**
     * A list of features to enable on the guest operating system. Applicable
     * only for bootable images. Read  Enabling guest operating system features
     * to see a list of available options.
     */
   var guestOsFeatures: js.UndefOr[js.Array[SchemaGuestOsFeature]] = js.native
+  
   /**
     * [Output Only] A zero-based index to this disk, where 0 is reserved for
     * the boot disk. If you have many disks attached to an instance, each disk
     * would have a unique index number.
     */
   var index: js.UndefOr[Double] = js.native
+  
   /**
     * [Input Only] Specifies the parameters for a new disk that will be created
     * alongside the new instance. Use initialization parameters to create boot
@@ -66,6 +73,7 @@ trait SchemaAttachedDisk extends js.Object {
     * the other, but not both.
     */
   var initializeParams: js.UndefOr[SchemaAttachedDiskInitializeParams] = js.native
+  
   /**
     * Specifies the disk interface to use for attaching this disk, which is
     * either SCSI or NVME. The default is SCSI. Persistent disks must always
@@ -75,20 +83,24 @@ trait SchemaAttachedDisk extends js.Object {
     * performance.
     */
   var interface: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Type of the resource. Always compute#attachedDisk for
     * attached disks.
     */
   var kind: js.UndefOr[String] = js.native
+  
   /**
     * [Output Only] Any valid publicly visible licenses.
     */
   var licenses: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * The mode in which to attach this disk, either READ_WRITE or READ_ONLY. If
     * not specified, the default is to attach the disk in READ_WRITE mode.
     */
   var mode: js.UndefOr[String] = js.native
+  
   /**
     * Specifies a valid partial or full URL to an existing Persistent Disk
     * resource. When creating a new instance, one of
@@ -99,87 +111,118 @@ trait SchemaAttachedDisk extends js.Object {
     * the disk.
     */
   var source: js.UndefOr[String] = js.native
+  
   /**
     * Specifies the type of the disk, either SCRATCH or PERSISTENT. If not
     * specified, the default is PERSISTENT.
     */
   var `type`: js.UndefOr[String] = js.native
 }
-
 object SchemaAttachedDisk {
+  
   @scala.inline
   def apply(): SchemaAttachedDisk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAttachedDisk]
   }
+  
   @scala.inline
   implicit class SchemaAttachedDiskOps[Self <: SchemaAttachedDisk] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAutoDelete(value: Boolean): Self = this.set("autoDelete", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAutoDelete: Self = this.set("autoDelete", js.undefined)
+    
     @scala.inline
     def setBoot(value: Boolean): Self = this.set("boot", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBoot: Self = this.set("boot", js.undefined)
+    
     @scala.inline
     def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDeviceName: Self = this.set("deviceName", js.undefined)
+    
     @scala.inline
     def setDiskEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("diskEncryptionKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDiskEncryptionKey: Self = this.set("diskEncryptionKey", js.undefined)
+    
     @scala.inline
     def setGuestOsFeaturesVarargs(value: SchemaGuestOsFeature*): Self = this.set("guestOsFeatures", js.Array(value :_*))
+    
     @scala.inline
     def setGuestOsFeatures(value: js.Array[SchemaGuestOsFeature]): Self = this.set("guestOsFeatures", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGuestOsFeatures: Self = this.set("guestOsFeatures", js.undefined)
+    
     @scala.inline
     def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIndex: Self = this.set("index", js.undefined)
+    
     @scala.inline
     def setInitializeParams(value: SchemaAttachedDiskInitializeParams): Self = this.set("initializeParams", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInitializeParams: Self = this.set("initializeParams", js.undefined)
+    
     @scala.inline
     def setInterface(value: String): Self = this.set("interface", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInterface: Self = this.set("interface", js.undefined)
+    
     @scala.inline
     def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteKind: Self = this.set("kind", js.undefined)
+    
     @scala.inline
     def setLicensesVarargs(value: String*): Self = this.set("licenses", js.Array(value :_*))
+    
     @scala.inline
     def setLicenses(value: js.Array[String]): Self = this.set("licenses", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLicenses: Self = this.set("licenses", js.undefined)
+    
     @scala.inline
     def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMode: Self = this.set("mode", js.undefined)
+    
     @scala.inline
     def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSource: Self = this.set("source", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }
-  
 }
-

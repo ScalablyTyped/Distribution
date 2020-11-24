@@ -3,7 +3,7 @@ package typings.playcanvas.global.pc
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Unbounded - represents a tracking space where the user is expected to move freely around their
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.XRSPACE_UNBOUNDED")
 @js.native
 object XRSPACE_UNBOUNDED extends TopLevel[String]
-

@@ -22,11 +22,26 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/efs", JSImport.Namespace)
 @js.native
 object efsMod extends js.Object {
+  
+  def getAccessPoint(args: GetAccessPointArgs): js.Promise[GetAccessPointResult] = js.native
+  def getAccessPoint(args: GetAccessPointArgs, opts: InvokeOptions): js.Promise[GetAccessPointResult] = js.native
+  
+  def getAccessPoints(args: GetAccessPointsArgs): js.Promise[GetAccessPointsResult] = js.native
+  def getAccessPoints(args: GetAccessPointsArgs, opts: InvokeOptions): js.Promise[GetAccessPointsResult] = js.native
+  
+  def getFileSystem(): js.Promise[GetFileSystemResult] = js.native
+  def getFileSystem(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetFileSystemResult] = js.native
+  def getFileSystem(args: GetFileSystemArgs): js.Promise[GetFileSystemResult] = js.native
+  def getFileSystem(args: GetFileSystemArgs, opts: InvokeOptions): js.Promise[GetFileSystemResult] = js.native
+  
+  def getMountTarget(args: GetMountTargetArgs): js.Promise[GetMountTargetResult] = js.native
+  def getMountTarget(args: GetMountTargetArgs, opts: InvokeOptions): js.Promise[GetMountTargetResult] = js.native
+  
   @js.native
   class AccessPoint protected ()
     extends typings.pulumiAws.accessPointMod.AccessPoint {
@@ -39,6 +54,30 @@ object efsMod extends js.Object {
       */
     def this(name: String, args: AccessPointArgs) = this()
     def this(name: String, args: AccessPointArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object AccessPoint extends js.Object {
+    
+    /**
+      * Get an existing AccessPoint resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.accessPointMod.AccessPoint = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.accessPointMod.AccessPoint = js.native
+    def get(name: String, id: Input[ID], state: AccessPointState): typings.pulumiAws.accessPointMod.AccessPoint = js.native
+    def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): typings.pulumiAws.accessPointMod.AccessPoint = js.native
+    
+    /**
+      * Returns true if the given object is an instance of AccessPoint.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/accessPoint.AccessPoint */ Boolean = js.native
   }
   
   @js.native
@@ -56,6 +95,30 @@ object efsMod extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: FileSystemArgs, opts: CustomResourceOptions) = this()
   }
+  /* static members */
+  @js.native
+  object FileSystem extends js.Object {
+    
+    /**
+      * Get an existing FileSystem resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.fileSystemMod.FileSystem = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.fileSystemMod.FileSystem = js.native
+    def get(name: String, id: Input[ID], state: FileSystemState): typings.pulumiAws.fileSystemMod.FileSystem = js.native
+    def get(name: String, id: Input[ID], state: FileSystemState, opts: CustomResourceOptions): typings.pulumiAws.fileSystemMod.FileSystem = js.native
+    
+    /**
+      * Returns true if the given object is an instance of FileSystem.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystem.FileSystem */ Boolean = js.native
+  }
   
   @js.native
   class FileSystemPolicy protected ()
@@ -69,6 +132,30 @@ object efsMod extends js.Object {
       */
     def this(name: String, args: FileSystemPolicyArgs) = this()
     def this(name: String, args: FileSystemPolicyArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  @js.native
+  object FileSystemPolicy extends js.Object {
+    
+    /**
+      * Get an existing FileSystemPolicy resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = js.native
+    def get(name: String, id: Input[ID], state: FileSystemPolicyState): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = js.native
+    def get(name: String, id: Input[ID], state: FileSystemPolicyState, opts: CustomResourceOptions): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = js.native
+    
+    /**
+      * Returns true if the given object is an instance of FileSystemPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystemPolicy.FileSystemPolicy */ Boolean = js.native
   }
   
   @js.native
@@ -84,89 +171,10 @@ object efsMod extends js.Object {
     def this(name: String, args: MountTargetArgs) = this()
     def this(name: String, args: MountTargetArgs, opts: CustomResourceOptions) = this()
   }
-  
-  def getAccessPoint(args: GetAccessPointArgs): js.Promise[GetAccessPointResult] = js.native
-  def getAccessPoint(args: GetAccessPointArgs, opts: InvokeOptions): js.Promise[GetAccessPointResult] = js.native
-  def getAccessPoints(args: GetAccessPointsArgs): js.Promise[GetAccessPointsResult] = js.native
-  def getAccessPoints(args: GetAccessPointsArgs, opts: InvokeOptions): js.Promise[GetAccessPointsResult] = js.native
-  def getFileSystem(): js.Promise[GetFileSystemResult] = js.native
-  def getFileSystem(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetFileSystemResult] = js.native
-  def getFileSystem(args: GetFileSystemArgs): js.Promise[GetFileSystemResult] = js.native
-  def getFileSystem(args: GetFileSystemArgs, opts: InvokeOptions): js.Promise[GetFileSystemResult] = js.native
-  def getMountTarget(args: GetMountTargetArgs): js.Promise[GetMountTargetResult] = js.native
-  def getMountTarget(args: GetMountTargetArgs, opts: InvokeOptions): js.Promise[GetMountTargetResult] = js.native
-  /* static members */
-  @js.native
-  object AccessPoint extends js.Object {
-    /**
-      * Get an existing AccessPoint resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.accessPointMod.AccessPoint = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.accessPointMod.AccessPoint = js.native
-    def get(name: String, id: Input[ID], state: AccessPointState): typings.pulumiAws.accessPointMod.AccessPoint = js.native
-    def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): typings.pulumiAws.accessPointMod.AccessPoint = js.native
-    /**
-      * Returns true if the given object is an instance of AccessPoint.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/accessPoint.AccessPoint */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object FileSystem extends js.Object {
-    /**
-      * Get an existing FileSystem resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.fileSystemMod.FileSystem = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.fileSystemMod.FileSystem = js.native
-    def get(name: String, id: Input[ID], state: FileSystemState): typings.pulumiAws.fileSystemMod.FileSystem = js.native
-    def get(name: String, id: Input[ID], state: FileSystemState, opts: CustomResourceOptions): typings.pulumiAws.fileSystemMod.FileSystem = js.native
-    /**
-      * Returns true if the given object is an instance of FileSystem.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystem.FileSystem */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object FileSystemPolicy extends js.Object {
-    /**
-      * Get an existing FileSystemPolicy resource's state with the given name, ID, and optional extra
-      * properties used to qualify the lookup.
-      *
-      * @param name The _unique_ name of the resulting resource.
-      * @param id The _unique_ provider ID of the resource to lookup.
-      * @param state Any extra arguments used during the lookup.
-      * @param opts Optional settings to control the behavior of the CustomResource.
-      */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = js.native
-    def get(name: String, id: Input[ID], state: FileSystemPolicyState): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = js.native
-    def get(name: String, id: Input[ID], state: FileSystemPolicyState, opts: CustomResourceOptions): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = js.native
-    /**
-      * Returns true if the given object is an instance of FileSystemPolicy.  This is designed to work even
-      * when multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystemPolicy.FileSystemPolicy */ Boolean = js.native
-  }
-  
   /* static members */
   @js.native
   object MountTarget extends js.Object {
+    
     /**
       * Get an existing MountTarget resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -180,12 +188,11 @@ object efsMod extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.mountTargetMod.MountTarget = js.native
     def get(name: String, id: Input[ID], state: MountTargetState): typings.pulumiAws.mountTargetMod.MountTarget = js.native
     def get(name: String, id: Input[ID], state: MountTargetState, opts: CustomResourceOptions): typings.pulumiAws.mountTargetMod.MountTarget = js.native
+    
     /**
       * Returns true if the given object is an instance of MountTarget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/mountTarget.MountTarget */ Boolean = js.native
   }
-  
 }
-

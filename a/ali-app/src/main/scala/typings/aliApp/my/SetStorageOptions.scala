@@ -2,40 +2,46 @@ package typings.aliApp.my
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region 缓存 https://docs.alipay.com/mini/api/storage
 @js.native
 trait SetStorageOptions
   extends BaseOptions[js.Any, js.Any] {
+  
   /** 需要存储的内容 */
   var data: js.Any = js.native
+  
   /** 本地缓存中的指定的 key */
   var key: String = js.native
 }
-
 object SetStorageOptions {
+  
   @scala.inline
   def apply(data: js.Any, key: String): SetStorageOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetStorageOptions]
   }
+  
   @scala.inline
   implicit class SetStorageOptionsOps[Self <: SetStorageOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
   }
-  
 }
-

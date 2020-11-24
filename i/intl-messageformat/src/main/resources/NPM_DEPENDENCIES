@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "intl-messageformat" : "9.2.0"
+      "intl-messageformat" : "9.3.19"
     }
   ],
   "test-dependencies" : [
     {
-      "intl-messageformat" : "9.2.0"
+      "intl-messageformat" : "9.3.19"
     }
   ],
   "compile-devDependencies" : [

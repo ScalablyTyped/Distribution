@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enumerates PlayReady secure stop service requests. */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadySecureStopIterable")
@@ -15,4 +15,3 @@ class PlayReadySecureStopIterable protected ()
     */
   def this(publisherCertBytes: js.Array[Double]) = this()
 }
-

@@ -3,7 +3,7 @@ package typings.titanium.global.Titanium.UI
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Use a picker with a countdown timer appearance, showing hours and minutes.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Titanium.UI.PICKER_TYPE_COUNT_DOWN_TIMER")
 @js.native
 object PICKER_TYPE_COUNT_DOWN_TIMER extends TopLevel[Double]
-

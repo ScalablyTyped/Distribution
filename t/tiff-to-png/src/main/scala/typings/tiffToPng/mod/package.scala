@@ -2,9 +2,10 @@ package typings.tiffToPng
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   /**
     * The complete callback will be called when the conversion of the final TIFF has finished.
     */
@@ -13,6 +14,7 @@ package object mod {
     /* total */ js.UndefOr[scala.Double], 
     scala.Unit
   ]
+  
   /**
     * The complete callback will be called when the conversion of the final TIFF has finished.
     */

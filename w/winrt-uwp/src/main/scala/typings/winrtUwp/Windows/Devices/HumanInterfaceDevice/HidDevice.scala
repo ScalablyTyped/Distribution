@@ -8,32 +8,22 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.inputreportreceived
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a top-level collection and the corresponding device. */
 @js.native
 trait HidDevice extends js.Object {
-  /** Establishes an event listener which handles input reports issued by the device. */
-  @JSName("oninputreportreceived")
-  var oninputreportreceived_Original: TypedEventHandler[HidDevice, HidInputReportReceivedEventArgs] = js.native
-  /** Gets the product identifier for the given HID device. */
-  var productId: Double = js.native
-  /** Gets the usage identifier for the given HID device. */
-  var usageId: Double = js.native
-  /** Gets the usage page of the top-level collection. */
-  var usagePage: Double = js.native
-  /** Gets the vendor identifier for the given HID device. */
-  var vendorId: Double = js.native
-  /** Gets the version, or revision, number for the given HID device. */
-  var version: Double = js.native
+  
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_inputreportreceived(
     `type`: inputreportreceived,
     listener: TypedEventHandler[HidDevice, HidInputReportReceivedEventArgs]
   ): Unit = js.native
+  
   /** Closes the connection between the host and the given HID device. */
   def close(): Unit = js.native
+  
   /**
     * Creates the only, or default, feature report that the host will send to the device.
     * @return A HidFeatureReport object.
@@ -45,6 +35,7 @@ trait HidDevice extends js.Object {
     * @return A HidFeatureReport object.
     */
   def createFeatureReport(reportId: Double): HidFeatureReport = js.native
+  
   /**
     * Creates the only, or default, output report that the host will send to the device.
     * @return A HidOutputReport object.
@@ -56,6 +47,7 @@ trait HidDevice extends js.Object {
     * @return A HidOutputReport object.
     */
   def createOutputReport(reportId: Double): HidOutputReport = js.native
+  
   /**
     * Retrieves the descriptions of the boolean controls for the given HID device.
     * @param reportType Specifies the type of report for which the control descriptions are requested.
@@ -64,6 +56,7 @@ trait HidDevice extends js.Object {
     * @return A vector of HidBooleanControlDescription objects.
     */
   def getBooleanControlDescriptions(reportType: HidReportType, usagePage: Double, usageId: Double): IVectorView[HidBooleanControlDescription] = js.native
+  
   /**
     * Asynchronously retrieves the first, or default, feature report from the given HID device.
     * @return A HidFeatureReport object.
@@ -75,6 +68,7 @@ trait HidDevice extends js.Object {
     * @return A HidFeatureReport object.
     */
   def getFeatureReportAsync(reportId: Double): IPromiseWithIAsyncOperation[HidFeatureReport] = js.native
+  
   /**
     * Asynchronously retrieves the default, or first, input report from the given HID device.
     * @return A HidInputReport object.
@@ -86,6 +80,7 @@ trait HidDevice extends js.Object {
     * @return A HidInputReport object.
     */
   def getInputReportAsync(reportId: Double): IPromiseWithIAsyncOperation[HidInputReport] = js.native
+  
   /**
     * Retrieves the descriptions of the numeric controls for the given HID device.
     * @param reportType Specifies the type of report for which the control descriptions are requested.
@@ -94,25 +89,46 @@ trait HidDevice extends js.Object {
     * @return A vector of HidNumericControlDescription objects.
     */
   def getNumericControlDescriptions(reportType: HidReportType, usagePage: Double, usageId: Double): IVectorView[HidNumericControlDescription] = js.native
+  
   /** Establishes an event listener which handles input reports issued by the device. */
   def oninputreportreceived(ev: HidInputReportReceivedEventArgs with WinRTEvent[HidDevice]): Unit = js.native
+  /** Establishes an event listener which handles input reports issued by the device. */
+  @JSName("oninputreportreceived")
+  var oninputreportreceived_Original: TypedEventHandler[HidDevice, HidInputReportReceivedEventArgs] = js.native
+  
+  /** Gets the product identifier for the given HID device. */
+  var productId: Double = js.native
+  
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_inputreportreceived(
     `type`: inputreportreceived,
     listener: TypedEventHandler[HidDevice, HidInputReportReceivedEventArgs]
   ): Unit = js.native
+  
   /**
     * Sends an feature report asynchronously from the host to the device.
     * @param featureReport The feature report which the host sends to the device.
     * @return The result of the asynchronous operation.
     */
   def sendFeatureReportAsync(featureReport: HidFeatureReport): IPromiseWithIAsyncOperation[Double] = js.native
+  
   /**
     * Sends an output report asynchronously from the host to the device.
     * @param outputReport The output report which the host sends to the device.
     * @return Specifies the count of bytes written to the device.
     */
   def sendOutputReportAsync(outputReport: HidOutputReport): IPromiseWithIAsyncOperation[Double] = js.native
+  
+  /** Gets the usage identifier for the given HID device. */
+  var usageId: Double = js.native
+  
+  /** Gets the usage page of the top-level collection. */
+  var usagePage: Double = js.native
+  
+  /** Gets the vendor identifier for the given HID device. */
+  var vendorId: Double = js.native
+  
+  /** Gets the version, or revision, number for the given HID device. */
+  var version: Double = js.native
 }
-

@@ -12,7 +12,7 @@ A library that detects browser compatibility and prompts website users to upgrad
 | Keywords           | obsolete, obsolete-web |
 | # releases         | 20 |
 | # dependents       | 1 |
-| # downloads        | 41277 |
+| # downloads        | 48762 |
 | # stars            | 0 |
 
 ## Links

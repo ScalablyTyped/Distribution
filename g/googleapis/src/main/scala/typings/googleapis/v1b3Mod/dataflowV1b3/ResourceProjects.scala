@@ -6,16 +6,21 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataflow/v1b3", "dataflow_v1b3.Resource$Projects")
 @js.native
 class ResourceProjects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   var jobs: ResourceProjectsJobs = js.native
+  
   var locations: ResourceProjectsLocations = js.native
+  
   var templates: ResourceProjectsTemplates = js.native
+  
   /**
     * dataflow.projects.workerMessages
     * @desc Send a worker_message to the service.
@@ -49,4 +54,3 @@ class ResourceProjects protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSendWorkerMessagesResponse]
   ): Unit = js.native
 }
-

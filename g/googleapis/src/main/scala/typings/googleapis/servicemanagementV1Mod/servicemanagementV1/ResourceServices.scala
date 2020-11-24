@@ -6,16 +6,19 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicemanagement/v1", "servicemanagement_v1.Resource$Services")
 @js.native
 class ResourceServices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var configs: ResourceServicesConfigs = js.native
+  
   var consumers: ResourceServicesConsumers = js.native
+  
   var context: APIRequestContext = js.native
-  var rollouts: ResourceServicesRollouts = js.native
+  
   /**
     * servicemanagement.services.create
     * @desc Creates a new managed service. Please note one producer project can
@@ -45,6 +48,7 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.delete
     * @desc Deletes a managed service. This method will change the service to
@@ -77,6 +81,7 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.disable
     * @desc Disables a service for a project, so it can no longer be be used
@@ -109,6 +114,7 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.enable
     * @desc Enables a service for a project, so it can be used for the project.
@@ -140,6 +146,7 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.generateConfigReport
     * @desc Generates and returns a report (errors, warnings and changes from
@@ -180,6 +187,7 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGenerateConfigReportResponse]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.get
     * @desc Gets a managed service. Authentication is required unless the
@@ -209,6 +217,7 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaManagedService]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.getConfig
     * @desc Gets a service configuration (version) for a managed service.
@@ -239,6 +248,7 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaService]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -269,6 +279,7 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.list
     * @desc Lists managed services.  Returns all public services. For
@@ -305,6 +316,9 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListServicesResponse]
   ): Unit = js.native
+  
+  var rollouts: ResourceServicesRollouts = js.native
+  
   /**
     * servicemanagement.services.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -335,6 +349,7 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -371,6 +386,7 @@ class ResourceServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
+  
   /**
     * servicemanagement.services.undelete
     * @desc Revives a previously deleted managed service. The method restores
@@ -403,4 +419,3 @@ class ResourceServices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.reactBootstrapTableNext.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.filter
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.cellEdit
 */
 trait TableChangeType extends js.Object
-
 object TableChangeType {
+  
   @scala.inline
   def cellEdit: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.cellEdit = "cellEdit".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.cellEdit]
+  
   @scala.inline
   def filter: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.filter = "filter".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.filter]
+  
   @scala.inline
   def pagination: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.pagination = "pagination".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.pagination]
+  
   @scala.inline
   def sort: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.sort = "sort".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.sort]
 }
-

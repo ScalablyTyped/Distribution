@@ -8,7 +8,7 @@ import typings.tstl.iforwarditeratorMod.IForwardIterator
 import typings.tstl.setContainerMod.SetContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/module", "HashMultiSet")
 @js.native
@@ -47,6 +47,7 @@ class HashMultiSet[Key] ()
     first: IForwardIterator[Key, IForwardIterator[Key, _]],
     last: IForwardIterator[Key, IForwardIterator[Key, _]]
   ) = this()
+  def this(hash: js.UndefOr[scala.Nothing], equal: BinaryPredicator[Key, Key]) = this()
   def this(hash: Hasher[Key], equal: BinaryPredicator[Key, Key]) = this()
   def this(items: js.Array[Key], hash: Hasher[Key]) = this()
   def this(
@@ -54,7 +55,14 @@ class HashMultiSet[Key] ()
     last: IForwardIterator[Key, IForwardIterator[Key, _]],
     hash: Hasher[Key]
   ) = this()
+  def this(items: js.Array[Key], hash: js.UndefOr[scala.Nothing], equal: BinaryPredicator[Key, Key]) = this()
   def this(items: js.Array[Key], hash: Hasher[Key], equal: BinaryPredicator[Key, Key]) = this()
+  def this(
+    first: IForwardIterator[Key, IForwardIterator[Key, _]],
+    last: IForwardIterator[Key, IForwardIterator[Key, _]],
+    hash: js.UndefOr[scala.Nothing],
+    equal: BinaryPredicator[Key, Key]
+  ) = this()
   def this(
     first: IForwardIterator[Key, IForwardIterator[Key, _]],
     last: IForwardIterator[Key, IForwardIterator[Key, _]],
@@ -62,10 +70,10 @@ class HashMultiSet[Key] ()
     equal: BinaryPredicator[Key, Key]
   ) = this()
 }
-
 @JSImport("tstl/module", "HashMultiSet")
 @js.native
 object HashMultiSet extends js.Object {
+  
   val Iterator: Instantiable0[
     typings.tstl.setElementListMod.SetElementList.Iterator[
       js.Object, 
@@ -83,6 +91,7 @@ object HashMultiSet extends js.Object {
       ]
     ]
   ] = js.native
+  
   val ReverseIterator: Instantiable0[
     typings.tstl.setElementListMod.SetElementList.ReverseIterator[
       js.Object, 
@@ -101,4 +110,3 @@ object HashMultiSet extends js.Object {
     ]
   ] = js.native
 }
-

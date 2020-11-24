@@ -3,7 +3,7 @@ package typings.officeJs.Office
 import typings.officeJs.anon.Cells
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a binding in two dimensions of rows and columns, optionally with headers.
@@ -18,32 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TableBinding extends Binding {
-  /**
-    * Gets the number of columns in the TableBinding, as an integer value.
-    */
-  var columnCount: Double = js.native
-  /**
-    * True, if the table has headers; otherwise false.
-    */
-  var hasHeaders: Boolean = js.native
-  /**
-    * Gets the number of rows in the TableBinding, as an integer value.
-    *
-    * @remarks
-    * 
-    * When you insert an empty table by selecting a single row in Excel 2013 and Excel on the web (using Table on the Insert tab), both Office host 
-    * applications create a single row of headers followed by a single blank row. However, if your add-in's script creates a binding for this 
-    * newly inserted table (for example, by using the {@link Office.Bindings}.addFromSelectionAsync method), and then checks the value of the 
-    * rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or Excel on the web.
-    * 
-    * - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
-    *
-    * - In Excel on the web, rowCount will return 1 (the blank row following the headers is counted).
-    *
-    * You can work around this difference in your script by checking if rowCount == 1, and if so, then checking if the row contains all empty 
-    * strings.
-    */
-  var rowCount: Double = js.native
+  
   def addColumnsAsync(tableData: js.Array[js.Array[_]]): Unit = js.native
   def addColumnsAsync(tableData: js.Array[js.Array[_]], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def addColumnsAsync(
@@ -96,6 +71,7 @@ trait TableBinding extends Binding {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   def addRowsAsync(rows: js.Array[js.Array[_]]): Unit = js.native
   def addRowsAsync(rows: js.Array[js.Array[_]], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def addRowsAsync(
@@ -145,6 +121,7 @@ trait TableBinding extends Binding {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Clears formatting on the bound table.
     *
@@ -160,6 +137,12 @@ trait TableBinding extends Binding {
   def clearFormatsAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def clearFormatsAsync(options: AsyncContextOptions): Unit = js.native
   def clearFormatsAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  
+  /**
+    * Gets the number of columns in the TableBinding, as an integer value.
+    */
+  var columnCount: Double = js.native
+  
   /**
     * Deletes all non-header rows and their values in the table, shifting appropriately for the host application.
     *
@@ -175,6 +158,7 @@ trait TableBinding extends Binding {
   def deleteAllDataValuesAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def deleteAllDataValuesAsync(options: AsyncContextOptions): Unit = js.native
   def deleteAllDataValuesAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  
   /**
     * Gets the formatting on specified items in the table.
     * 
@@ -308,6 +292,31 @@ trait TableBinding extends Binding {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
+  
+  /**
+    * True, if the table has headers; otherwise false.
+    */
+  var hasHeaders: Boolean = js.native
+  
+  /**
+    * Gets the number of rows in the TableBinding, as an integer value.
+    *
+    * @remarks
+    * 
+    * When you insert an empty table by selecting a single row in Excel 2013 and Excel on the web (using Table on the Insert tab), both Office host 
+    * applications create a single row of headers followed by a single blank row. However, if your add-in's script creates a binding for this 
+    * newly inserted table (for example, by using the {@link Office.Bindings}.addFromSelectionAsync method), and then checks the value of the 
+    * rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or Excel on the web.
+    * 
+    * - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
+    *
+    * - In Excel on the web, rowCount will return 1 (the blank row following the headers is counted).
+    *
+    * You can work around this difference in your script by checking if rowCount == 1, and if so, then checking if the row contains all empty 
+    * strings.
+    */
+  var rowCount: Double = js.native
+  
   /**
     * Sets formatting on specified items and data in the table.
     *
@@ -419,6 +428,7 @@ trait TableBinding extends Binding {
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  
   /**
     * Updates table formatting options on the bound table.
     *
@@ -470,4 +480,3 @@ trait TableBinding extends Binding {
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.devexpressWeb.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events which concern manipulations on menu items.
@@ -17,4 +17,3 @@ class ASPxClientMenuItemEventArgs protected ()
     */
   def this(item: typings.devexpressWeb.ASPxClientMenuItem) = this()
 }
-

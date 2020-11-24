@@ -2,9 +2,106 @@ package typings.got
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gotStrings {
+  
+  @scala.inline
+  def CancelError: CancelError = "CancelError".asInstanceOf[CancelError]
+  
+  @scala.inline
+  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  
+  @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
+  
+  @scala.inline
+  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  
+  @scala.inline
+  def HTTPError: HTTPError = "HTTPError".asInstanceOf[HTTPError]
+  
+  @scala.inline
+  def MaxRedirectsError: MaxRedirectsError = "MaxRedirectsError".asInstanceOf[MaxRedirectsError]
+  
+  @scala.inline
+  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
+  
+  @scala.inline
+  def PUT: PUT = "PUT".asInstanceOf[PUT]
+  
+  @scala.inline
+  def ParseError: ParseError = "ParseError".asInstanceOf[ParseError]
+  
+  @scala.inline
+  def ReadError: ReadError = "ReadError".asInstanceOf[ReadError]
+  
+  @scala.inline
+  def RequestError: RequestError = "RequestError".asInstanceOf[RequestError]
+  
+  @scala.inline
+  def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
+  
+  @scala.inline
+  def TimeoutError: TimeoutError = "TimeoutError".asInstanceOf[TimeoutError]
+  
+  @scala.inline
+  def UnsupportedProtocolError: UnsupportedProtocolError = "UnsupportedProtocolError".asInstanceOf[UnsupportedProtocolError]
+  
+  @scala.inline
+  def connect: connect = "connect".asInstanceOf[connect]
+  
+  @scala.inline
+  def delete_ : delete_ = "delete".asInstanceOf[delete_]
+  
+  @scala.inline
+  def downloadProgress: downloadProgress = "downloadProgress".asInstanceOf[downloadProgress]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def get_ : get_ = "get".asInstanceOf[get_]
+  
+  @scala.inline
+  def head_ : head_ = "head".asInstanceOf[head_]
+  
+  @scala.inline
+  def lookup: lookup = "lookup".asInstanceOf[lookup]
+  
+  @scala.inline
+  def patch: patch = "patch".asInstanceOf[patch]
+  
+  @scala.inline
+  def post_ : post_ = "post".asInstanceOf[post_]
+  
+  @scala.inline
+  def put_ : put_ = "put".asInstanceOf[put_]
+  
+  @scala.inline
+  def redirect: redirect = "redirect".asInstanceOf[redirect]
+  
+  @scala.inline
+  def request: request = "request".asInstanceOf[request]
+  
+  @scala.inline
+  def response: response = "response".asInstanceOf[response]
+  
+  @scala.inline
+  def secureConnect: secureConnect = "secureConnect".asInstanceOf[secureConnect]
+  
+  @scala.inline
+  def send: send = "send".asInstanceOf[send]
+  
+  @scala.inline
+  def socket: socket = "socket".asInstanceOf[socket]
+  
+  @scala.inline
+  def uploadProgress: uploadProgress = "uploadProgress".asInstanceOf[uploadProgress]
+  
   @js.native
   sealed trait CancelError extends js.Object
   
@@ -100,70 +197,4 @@ object gotStrings {
   
   @js.native
   sealed trait uploadProgress extends js.Object
-  
-  @scala.inline
-  def CancelError: CancelError = "CancelError".asInstanceOf[CancelError]
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
-  @scala.inline
-  def HTTPError: HTTPError = "HTTPError".asInstanceOf[HTTPError]
-  @scala.inline
-  def MaxRedirectsError: MaxRedirectsError = "MaxRedirectsError".asInstanceOf[MaxRedirectsError]
-  @scala.inline
-  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def ParseError: ParseError = "ParseError".asInstanceOf[ParseError]
-  @scala.inline
-  def ReadError: ReadError = "ReadError".asInstanceOf[ReadError]
-  @scala.inline
-  def RequestError: RequestError = "RequestError".asInstanceOf[RequestError]
-  @scala.inline
-  def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
-  @scala.inline
-  def TimeoutError: TimeoutError = "TimeoutError".asInstanceOf[TimeoutError]
-  @scala.inline
-  def UnsupportedProtocolError: UnsupportedProtocolError = "UnsupportedProtocolError".asInstanceOf[UnsupportedProtocolError]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def delete_ : delete_ = "delete".asInstanceOf[delete_]
-  @scala.inline
-  def downloadProgress: downloadProgress = "downloadProgress".asInstanceOf[downloadProgress]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def get_ : get_ = "get".asInstanceOf[get_]
-  @scala.inline
-  def head_ : head_ = "head".asInstanceOf[head_]
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
-  @scala.inline
-  def patch: patch = "patch".asInstanceOf[patch]
-  @scala.inline
-  def post_ : post_ = "post".asInstanceOf[post_]
-  @scala.inline
-  def put_ : put_ = "put".asInstanceOf[put_]
-  @scala.inline
-  def redirect: redirect = "redirect".asInstanceOf[redirect]
-  @scala.inline
-  def request: request = "request".asInstanceOf[request]
-  @scala.inline
-  def response: response = "response".asInstanceOf[response]
-  @scala.inline
-  def secureConnect: secureConnect = "secureConnect".asInstanceOf[secureConnect]
-  @scala.inline
-  def send: send = "send".asInstanceOf[send]
-  @scala.inline
-  def socket: socket = "socket".asInstanceOf[socket]
-  @scala.inline
-  def uploadProgress: uploadProgress = "uploadProgress".asInstanceOf[uploadProgress]
 }
-

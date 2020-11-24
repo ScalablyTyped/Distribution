@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.UI.Input
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PointerUpdateKind extends js.Object
-
 /** Specifies the types of pointer updates that are supported by an application. */
 @JSGlobal("Windows.UI.Input.PointerUpdateKind")
 @js.native
 object PointerUpdateKind extends js.Object {
+  
   /** Left button pressed. */
   @js.native
   sealed trait leftButtonPressed extends PointerUpdateKind
@@ -54,6 +54,4 @@ object PointerUpdateKind extends js.Object {
   /** XBUTTON2 released. */
   @js.native
   sealed trait xbutton2Released extends PointerUpdateKind
-  
 }
-

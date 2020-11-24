@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait FloatingObjectVerticalPositionType extends js.Object
-
 /**
   * Lists values specifying to what element the vertical position of a floating object is relative.
   */
 @JSGlobal("FloatingObjectVerticalPositionType")
 @js.native
 object FloatingObjectVerticalPositionType extends js.Object {
+  
   /**
     * Relative to bottom margin.
     */
@@ -60,6 +60,4 @@ object FloatingObjectVerticalPositionType extends js.Object {
     */
   @js.native
   sealed trait TopMargin extends FloatingObjectVerticalPositionType
-  
 }
-

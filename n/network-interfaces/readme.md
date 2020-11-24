@@ -10,9 +10,9 @@ Utility functions for dealing with network interfaces and IP addresses in Node.j
 | ------------------ | :-------------: |
 | Full name          | network-interfaces |
 | Keywords           | interface, interfaces, network, ip |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 3934 |
+| # downloads        | 13987 |
 | # stars            | 0 |
 
 ## Links

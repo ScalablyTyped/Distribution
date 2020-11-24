@@ -2,17 +2,17 @@ package typings.nodegit.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodegit", "Reset")
 @js.native
 class Reset ()
   extends typings.nodegit.resetMod.Reset
-
 /* static members */
 @JSImport("nodegit", "Reset")
 @js.native
 object Reset extends js.Object {
+  
   def default(
     repo: typings.nodegit.repositoryMod.Repository,
     target: typings.nodegit.commitMod.Commit,
@@ -46,6 +46,7 @@ object Reset extends js.Object {
     target: typings.nodegit.tagMod.Tag,
     pathspecs: typings.nodegit.strArrayMod.Strarray
   ): js.Promise[Double] = js.native
+  
   /**
     * Sets the current head to the specified commit oid and optionally resets the index and working tree to match.
     * This behaves like reset but takes an annotated commit, which lets you specify which extended sha syntax string was specified by a user, allowing for more exact reflog messages.
@@ -57,6 +58,7 @@ object Reset extends js.Object {
     resetType: Double,
     checkoutOpts: typings.nodegit.checkoutOptionsMod.CheckoutOptions
   ): Double = js.native
+  
   /**
     * Look up a refs's commit.
     */
@@ -73,4 +75,3 @@ object Reset extends js.Object {
     checkoutOpts: typings.nodegit.checkoutOptionsMod.CheckoutOptions
   ): js.Promise[Double] = js.native
 }
-

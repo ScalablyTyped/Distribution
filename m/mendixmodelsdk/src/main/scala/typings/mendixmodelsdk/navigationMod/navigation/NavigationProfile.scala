@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.navigationMod.navigation
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.imagesMod.images.IImage
 import typings.mendixmodelsdk.instancesMod.IList
@@ -9,10 +10,11 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.menusMod.menus.MenuItemCollection
 import typings.mendixmodelsdk.navigationMod.StructureVersionInfo
 import typings.mendixmodelsdk.pagesMod.pages.PageSettings
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * In version 7.2.0: added public
@@ -32,75 +34,87 @@ class NavigationProfile protected () extends NavigationProfileBase {
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  @JSName("model")
-  var model_FNavigationProfile: IModel = js.native
+  
   /**
     * In version 8.12.0: introduced
     */
   def appIcon: IImage | Null = js.native
+  
   def appIconQualifiedName: String | Null = js.native
+  
   def appIcon_=(newValue: IImage | Null): Unit = js.native
+  
   /**
     * In version 8.12.0: introduced
     */
   def appTitle: Text = js.native
   def appTitle_=(newValue: Text): Unit = js.native
+  
   /**
     * In version 8.12.0: deleted
     */
   def applicationTitle: String = js.native
   def applicationTitle_=(newValue: String): Unit = js.native
+  
   @JSName("containerAsNavigationDocument")
   def containerAsNavigationDocument_MNavigationProfile: NavigationDocument = js.native
+  
   /**
     * In version 7.2.0: deleted
     */
   def enabled: Boolean = js.native
   def enabled_=(newValue: Boolean): Unit = js.native
+  
   def homePage: HomePage = js.native
   def homePage_=(newValue: HomePage): Unit = js.native
+  
   /**
     * In version 7.2.0: introduced
     */
   def kind: ProfileKind = js.native
   def kind_=(newValue: ProfileKind): Unit = js.native
+  
   /**
     * In version 7.0.2: introduced
     */
   def loginPageSettings: PageSettings = js.native
   def loginPageSettings_=(newValue: PageSettings): Unit = js.native
+  
   def menuItemCollection: MenuItemCollection = js.native
   def menuItemCollection_=(newValue: MenuItemCollection): Unit = js.native
+  
   /**
     * In version 7.2.0: deleted
     * In version 7.0.2: introduced
     */
   def offlineEnabled: Boolean = js.native
+  
   /**
     * In version 7.0.0: deleted
     * In version 6.10.4: introduced
     */
   def offlineEnabled6: Boolean = js.native
   def offlineEnabled6_=(newValue: Boolean): Unit = js.native
+  
   def offlineEnabled_=(newValue: Boolean): Unit = js.native
+  
   def roleBasedHomePages: IList[RoleBasedHomePage] = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/navigation", "navigation.NavigationProfile")
 @js.native
 object NavigationProfile extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new NavigationProfile instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): NavigationProfile = js.native
+  
   /**
     * Creates and returns a new NavigationProfile instance in the SDK and on the server.
     * The new NavigationProfile will be automatically stored in the 'profiles' property
@@ -110,6 +124,7 @@ object NavigationProfile extends js.Object {
     *  7.2.0 and higher
     */
   def createIn(container: NavigationDocument): NavigationProfile = js.native
+  
   /**
     * Creates and returns a new NavigationProfile instance in the SDK and on the server.
     * The new NavigationProfile will be automatically stored in the 'desktopProfile' property
@@ -119,6 +134,7 @@ object NavigationProfile extends js.Object {
     *  6.0.0 to 7.1.0
     */
   def createInNavigationDocumentUnderDesktopProfile(container: NavigationDocument): NavigationProfile = js.native
+  
   /**
     * Creates and returns a new NavigationProfile instance in the SDK and on the server.
     * The new NavigationProfile will be automatically stored in the 'hybridPhoneProfile' property
@@ -128,6 +144,7 @@ object NavigationProfile extends js.Object {
     *  7.0.2 to 7.1.0
     */
   def createInNavigationDocumentUnderHybridPhoneProfile(container: NavigationDocument): NavigationProfile = js.native
+  
   /**
     * Creates and returns a new NavigationProfile instance in the SDK and on the server.
     * The new NavigationProfile will be automatically stored in the 'hybridPhoneProfile6' property
@@ -137,6 +154,7 @@ object NavigationProfile extends js.Object {
     *  6.10.4 to 6.10.4
     */
   def createInNavigationDocumentUnderHybridPhoneProfile6(container: NavigationDocument): NavigationProfile = js.native
+  
   /**
     * Creates and returns a new NavigationProfile instance in the SDK and on the server.
     * The new NavigationProfile will be automatically stored in the 'hybridTabletProfile' property
@@ -146,6 +164,7 @@ object NavigationProfile extends js.Object {
     *  7.0.2 to 7.1.0
     */
   def createInNavigationDocumentUnderHybridTabletProfile(container: NavigationDocument): NavigationProfile = js.native
+  
   /**
     * Creates and returns a new NavigationProfile instance in the SDK and on the server.
     * The new NavigationProfile will be automatically stored in the 'hybridTabletProfile6' property
@@ -155,6 +174,7 @@ object NavigationProfile extends js.Object {
     *  6.10.4 to 6.10.4
     */
   def createInNavigationDocumentUnderHybridTabletProfile6(container: NavigationDocument): NavigationProfile = js.native
+  
   /**
     * Creates and returns a new NavigationProfile instance in the SDK and on the server.
     * The new NavigationProfile will be automatically stored in the 'offlinePhoneProfile' property
@@ -164,6 +184,7 @@ object NavigationProfile extends js.Object {
     *  6.0.0 to 7.0.1
     */
   def createInNavigationDocumentUnderOfflinePhoneProfile(container: NavigationDocument): NavigationProfile = js.native
+  
   /**
     * Creates and returns a new NavigationProfile instance in the SDK and on the server.
     * The new NavigationProfile will be automatically stored in the 'phoneProfile' property
@@ -173,6 +194,7 @@ object NavigationProfile extends js.Object {
     *  6.0.0 to 7.1.0
     */
   def createInNavigationDocumentUnderPhoneProfile(container: NavigationDocument): NavigationProfile = js.native
+  
   /**
     * Creates and returns a new NavigationProfile instance in the SDK and on the server.
     * The new NavigationProfile will be automatically stored in the 'profiles' property
@@ -182,6 +204,7 @@ object NavigationProfile extends js.Object {
     *  7.2.0 and higher
     */
   def createInNavigationDocumentUnderProfiles(container: NavigationDocument): NavigationProfile = js.native
+  
   /**
     * Creates and returns a new NavigationProfile instance in the SDK and on the server.
     * The new NavigationProfile will be automatically stored in the 'tabletProfile' property
@@ -191,5 +214,8 @@ object NavigationProfile extends js.Object {
     *  6.0.0 to 7.1.0
     */
   def createInNavigationDocumentUnderTabletProfile(container: NavigationDocument): NavigationProfile = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

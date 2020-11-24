@@ -14,7 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service is supported by all components that are contained in the view of a chart document that are controlled by the chart. Shapes added by a
@@ -32,8 +32,8 @@ trait AccessibleChartElement
   extends XAccessibleExtendedComponent
      with XAccessible
      with XAccessibleContext
-
 object AccessibleChartElement {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -86,4 +86,3 @@ object AccessibleChartElement {
     __obj.asInstanceOf[AccessibleChartElement]
   }
 }
-

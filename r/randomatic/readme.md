@@ -10,9 +10,9 @@ Generate randomized strings of a specified length using simple character sequenc
 | ------------------ | :-------------: |
 | Full name          | randomatic |
 | Keywords           | alpha, alpha-numeric, alphanumeric, characters, chars, generate, generate-password, numeric, password, rand, random, randomatic, randomize, randomized |
-| # releases         | 3 |
-| # dependents       | 164 |
-| # downloads        | 200405416 |
+| # releases         | 2 |
+| # dependents       | 165 |
+| # downloads        | 192666972 |
 | # stars            | 19 |
 
 ## Links

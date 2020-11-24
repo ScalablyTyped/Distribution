@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Subaccounts")
 @js.native
 class ResourceSubaccounts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dfareporting.subaccounts.get
     * @desc Gets one subaccount by ID.
@@ -42,6 +44,7 @@ class ResourceSubaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubaccount]
   ): Unit = js.native
+  
   /**
     * dfareporting.subaccounts.insert
     * @desc Inserts a new subaccount.
@@ -71,6 +74,7 @@ class ResourceSubaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubaccount]
   ): Unit = js.native
+  
   /**
     * dfareporting.subaccounts.list
     * @desc Gets a list of subaccounts, possibly filtered. This method supports
@@ -109,6 +113,7 @@ class ResourceSubaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubaccountsListResponse]
   ): Unit = js.native
+  
   /**
     * dfareporting.subaccounts.patch
     * @desc Updates an existing subaccount. This method supports patch
@@ -140,6 +145,7 @@ class ResourceSubaccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubaccount]
   ): Unit = js.native
+  
   /**
     * dfareporting.subaccounts.update
     * @desc Updates an existing subaccount.
@@ -170,4 +176,3 @@ class ResourceSubaccounts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaSubaccount]
   ): Unit = js.native
 }
-

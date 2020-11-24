@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A pc.Sprite is contains references to one or more frames of a {@link pc.TextureAtlas}.
@@ -34,22 +34,32 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Sprite extends EventHandler {
+  
   /**
     * The texture atlas.
     */
   var atlas: TextureAtlas = js.native
+  
+  /**
+    * Free up the meshes created by the sprite.
+    */
+  def destroy(): Unit = js.native
+  
   /**
     * The keys of the frames in the sprite atlas that this sprite is using.
     */
   var frameKeys: js.Array[String] = js.native
+  
   /**
     * An array that contains a mesh for each frame.
     */
   var meshes: js.Array[Mesh] = js.native
+  
   /**
     * The number of pixels that map to one PlayCanvas unit.
     */
   var pixelsPerUnit: Double = js.native
+  
   /**
     * The rendering mode of the sprite. Can be:
     
@@ -58,9 +68,4 @@ trait Sprite extends EventHandler {
     * {@link pc.SPRITE_RENDERMODE_TILED}
     */
   var renderMode: Double = js.native
-  /**
-    * Free up the meshes created by the sprite.
-    */
-  def destroy(): Unit = js.native
 }
-

@@ -10,9 +10,9 @@ Transform stream that gunzips its input if it is gzipped and just echoes it if n
 | ------------------ | :-------------: |
 | Full name          | gunzip-maybe |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 163 |
-| # downloads        | 2896378 |
+| # releases         | 2 |
+| # dependents       | 180 |
+| # downloads        | 5934222 |
 | # stars            | 1 |
 
 ## Links

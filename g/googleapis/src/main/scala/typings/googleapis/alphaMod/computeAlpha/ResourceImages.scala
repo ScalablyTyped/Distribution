@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Images")
 @js.native
 class ResourceImages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.images.delete
     * @desc Deletes the specified image.
@@ -43,6 +45,7 @@ class ResourceImages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.images.deprecate
     * @desc Sets the deprecation status of an image.  If an empty request body
@@ -75,6 +78,7 @@ class ResourceImages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.images.get
     * @desc Returns the specified image. Gets a list of available images by
@@ -105,6 +109,7 @@ class ResourceImages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaImage]
   ): Unit = js.native
+  
   /**
     * compute.images.getFromFamily
     * @desc Returns the latest image that is part of an image family and is not
@@ -135,6 +140,7 @@ class ResourceImages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaImage]
   ): Unit = js.native
+  
   /**
     * compute.images.getIamPolicy
     * @desc Gets the access control policy for a resource. May be empty if no
@@ -165,6 +171,7 @@ class ResourceImages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.images.insert
     * @desc Creates an image in the specified project using the data included
@@ -197,6 +204,7 @@ class ResourceImages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.images.list
     * @desc Retrieves the list of custom images available to the specified
@@ -234,6 +242,7 @@ class ResourceImages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaImageList]
   ): Unit = js.native
+  
   /**
     * compute.images.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -265,6 +274,7 @@ class ResourceImages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * compute.images.setLabels
     * @desc Sets the labels on an image. To learn more about labels, read the
@@ -296,6 +306,7 @@ class ResourceImages protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.images.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -330,4 +341,3 @@ class ResourceImages protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

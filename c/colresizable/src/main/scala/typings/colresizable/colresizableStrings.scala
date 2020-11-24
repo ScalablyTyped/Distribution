@@ -2,9 +2,19 @@ package typings.colresizable
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colresizableStrings {
+  
+  @scala.inline
+  def fit: fit = "fit".asInstanceOf[fit]
+  
+  @scala.inline
+  def flex: flex = "flex".asInstanceOf[flex]
+  
+  @scala.inline
+  def overflow: overflow = "overflow".asInstanceOf[overflow]
+  
   @js.native
   sealed trait fit extends js.Object
   
@@ -13,12 +23,4 @@ object colresizableStrings {
   
   @js.native
   sealed trait overflow extends js.Object
-  
-  @scala.inline
-  def fit: fit = "fit".asInstanceOf[fit]
-  @scala.inline
-  def flex: flex = "flex".asInstanceOf[flex]
-  @scala.inline
-  def overflow: overflow = "overflow".asInstanceOf[overflow]
 }
-

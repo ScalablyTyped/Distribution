@@ -6,17 +6,18 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/Builders/boxBuilder", JSImport.Namespace)
 @js.native
 object boxBuilderMod extends js.Object {
+  
   @js.native
   class BoxBuilder () extends js.Object
-  
   /* static members */
   @js.native
   object BoxBuilder extends js.Object {
+    
     /**
       * Creates a box mesh
       * * The parameter `size` sets the size (float) of each box side (default 1)
@@ -35,6 +36,4 @@ object boxBuilderMod extends js.Object {
     def CreateBox(name: String, options: BottomBaseAt): Mesh = js.native
     def CreateBox(name: String, options: BottomBaseAt, scene: Nullable[Scene]): Mesh = js.native
   }
-  
 }
-

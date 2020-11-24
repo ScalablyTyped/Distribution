@@ -2,11 +2,12 @@ package typings.awsSdkClientGlacierNode
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-glacier-node/types/InitiateJobExceptionsUnion", JSImport.Namespace)
 @js.native
 object initiateJobExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientGlacierNode.typesResourceNotFoundExceptionMod.ResourceNotFoundException
     - typings.awsSdkClientGlacierNode.typesPolicyEnforcedExceptionMod.PolicyEnforcedException
@@ -16,6 +17,4 @@ object initiateJobExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientGlacierNode.typesServiceUnavailableExceptionMod.ServiceUnavailableException
   */
   trait InitiateJobExceptionsUnion extends js.Object
-  
 }
-

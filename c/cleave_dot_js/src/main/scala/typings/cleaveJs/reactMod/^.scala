@@ -7,7 +7,7 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cleave.js/react", JSImport.Namespace)
 @js.native
@@ -16,8 +16,6 @@ class ^ protected ()
   def this(props: Props) = this()
   def this(props: Props, context: js.Any) = this()
 }
-
 @JSImport("cleave.js/react", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[ComponentClass[Props, ComponentState]]
-

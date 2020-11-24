@@ -7,11 +7,12 @@ import typings.samchon.invokeMod.Invoke
 import typings.samchon.iprotocolMod.IProtocol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/distributed/DistributedProcess", JSImport.Namespace)
 @js.native
 object distributedProcessMod extends js.Object {
+  
   @js.native
   abstract class DistributedProcess protected ()
     extends Entity
@@ -22,42 +23,17 @@ object distributedProcessMod extends js.Object {
       * @param systemArray The parent {@link DistributedSystemArray} object.
       */
     def this(systemArray: DistributedSystemArray[DistributedSystem]) = this()
+    
     /**
       * @hidden
       */
     var _Complete_history: js.Any = js.native
+    
     /**
       * @hidden
       */
     var _Compute_average_elapsed_time: js.Any = js.native
-    /**
-      * @hidden
-      */
-    var enforced_ : js.Any = js.native
-    /**
-      * @hidden
-      */
-    var history_list_ : js.Any = js.native
-    /**
-      * A name, represents and identifies this {@link DistributedProcess process}.
-      *
-      * This {@link name} is an identifier represents this {@link DistributedProcess process}. This {@link name} is
-      * used in {@link DistributedSystemArray.getProcess} and {@link DistributedSystemArray.getProcess}, as a key elements.
-      * Thus, this {@link name} should be unique in its parent {@link DistributedSystemArray} object.
-      */
-    var name: String = js.native
-    /**
-      * @hidden
-      */
-    var progress_list_ : js.Any = js.native
-    /**
-      * @hidden
-      */
-    var resource: js.Any = js.native
-    /**
-      * @hidden
-      */
-    var system_array_ : js.Any = js.native
+    
     /**
       * Enforce resource index.
       *
@@ -84,10 +60,17 @@ object distributedProcessMod extends js.Object {
       * @param val New resource index to be fixed.
       */
     def enforceResource(`val`: Double): Unit = js.native
+    
+    /**
+      * @hidden
+      */
+    var enforced_ : js.Any = js.native
+    
     /**
       * Get name, who represents and identifies this process.
       */
     def getName(): String = js.native
+    
     /**
       * Get resource index.
       *
@@ -111,6 +94,7 @@ object distributedProcessMod extends js.Object {
       * @return Resource index.
       */
     def getResource(): Double = js.native
+    
     /**
       * Get parent {@link DistributedSystemArray} object.
       *
@@ -124,24 +108,31 @@ object distributedProcessMod extends js.Object {
       */
     @JSName("getSystemArray")
     def getSystemArray_SystemArray_DistributedSystemArrayDistributedSystem_SystemArray[SystemArray /* <: DistributedSystemArray[DistributedSystem] */](): SystemArray = js.native
+    
     /**
-      * Sending message.
-      *
-      * Sends message to related system or shifts the responsibility to chain.
-      *
-      * @param invoke Invoke message to send
+      * @hidden
       */
-    /* CompleteClass */
-    override def replyData(invoke: Invoke): Unit = js.native
+    var history_list_ : js.Any = js.native
+    
     /**
-      * Handling replied message.
+      * A name, represents and identifies this {@link DistributedProcess process}.
       *
-      * Handles replied message or shifts the responsibility to chain.
-      *
-      * @param invoke An {@link Invoke} message has received.
+      * This {@link name} is an identifier represents this {@link DistributedProcess process}. This {@link name} is
+      * used in {@link DistributedSystemArray.getProcess} and {@link DistributedSystemArray.getProcess}, as a key elements.
+      * Thus, this {@link name} should be unique in its parent {@link DistributedSystemArray} object.
       */
-    /* CompleteClass */
-    override def sendData(invoke: Invoke): Unit = js.native
+    var name: String = js.native
+    
+    /**
+      * @hidden
+      */
+    var progress_list_ : js.Any = js.native
+    
+    /**
+      * @hidden
+      */
+    var resource: js.Any = js.native
+    
     /**
       * Send an {@link Invoke} message.
       *
@@ -159,6 +150,7 @@ object distributedProcessMod extends js.Object {
       * @return The most idle {@link DistributedSystem} object who may send the {@link Invoke} message.
       */
     def sendData(invoke: Invoke, weight: Double): DistributedSystem = js.native
+    
     /**
       * Set resource index.
       *
@@ -183,7 +175,10 @@ object distributedProcessMod extends js.Object {
       * @param val New resource index, but can be revaluated.
       */
     def setResource(`val`: Double): Unit = js.native
+    
+    /**
+      * @hidden
+      */
+    var system_array_ : js.Any = js.native
   }
-  
 }
-

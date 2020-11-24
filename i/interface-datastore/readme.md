@@ -1,7 +1,7 @@
 
 # Scala.js typings for interface-datastore
 
-Typings are for version 0.8
+Typings are for version 1.0
 
 ## Library description:
 datastore interface
@@ -10,9 +10,9 @@ datastore interface
 | ------------------ | :-------------: |
 | Full name          | interface-datastore |
 | Keywords           | interface, key-value, ipfs, datastore |
-| # releases         | 5 |
-| # dependents       | 33 |
-| # downloads        | 241110 |
+| # releases         | 14 |
+| # dependents       | 41 |
+| # downloads        | 542063 |
 | # stars            | 0 |
 
 ## Links

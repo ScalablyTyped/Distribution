@@ -6,15 +6,19 @@ import typings.xmlCore.mod.XmlCollection
 import typings.xmlCore.mod.XmlObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xadesjs/build/types/xml/certificate_values", JSImport.Namespace)
 @js.native
 object certificateValuesMod extends js.Object {
+  
   @js.native
   class CertificateValues () extends XmlObject {
+    
     var EncapsulatedX509Certificates: EncapsulatedX509CertificateCollection = js.native
+    
     var Id: String = js.native
+    
     var OtherCertificates: OtherCertificateCollection = js.native
   }
   
@@ -29,6 +33,4 @@ object certificateValuesMod extends js.Object {
   
   @js.native
   class OtherCertificateCollection () extends XmlCollection[OtherCertificate]
-  
 }
-

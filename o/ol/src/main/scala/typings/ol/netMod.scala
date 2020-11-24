@@ -2,11 +2,12 @@ package typings.ol
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/net", JSImport.Namespace)
 @js.native
 object netMod extends js.Object {
+  
   def jsonp(url: String, callback: js.Function0[Unit]): Unit = js.native
   def jsonp(
     url: String,
@@ -22,4 +23,3 @@ object netMod extends js.Object {
     opt_callbackParam: String
   ): Unit = js.native
 }
-

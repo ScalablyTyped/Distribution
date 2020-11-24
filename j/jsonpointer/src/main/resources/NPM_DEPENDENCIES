@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "jsonpointer" : "4.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "jsonpointer" : "4.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

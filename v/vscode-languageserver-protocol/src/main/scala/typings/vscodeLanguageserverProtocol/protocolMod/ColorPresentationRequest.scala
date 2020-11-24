@@ -5,11 +5,12 @@ import typings.vscodeLanguageserverProtocol.protocolColorProviderMod.ColorPresen
 import typings.vscodeLanguageserverTypes.mod.ColorPresentation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver-protocol/lib/protocol", "ColorPresentationRequest")
 @js.native
 object ColorPresentationRequest extends js.Object {
+  
   val `type`: ProtocolRequestType[
     ColorPresentationParams, 
     js.Array[ColorPresentation], 
@@ -18,4 +19,3 @@ object ColorPresentationRequest extends js.Object {
     WorkDoneProgressOptions with TextDocumentRegistrationOptions
   ] = js.native
 }
-

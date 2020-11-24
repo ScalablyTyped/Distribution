@@ -2,7 +2,7 @@ package typings.xrm.Xrm.Url
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Navigation Bar Display options for Xrm.Url.FormOpenParameters.navbar, Xrm.Url.ViewOpenParameters.navbar, and Xrm.Utility.FormOpenParameters.navbar.
@@ -14,13 +14,14 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.on
 */
 trait NavBarDisplay extends js.Object
-
 object NavBarDisplay {
+  
   @scala.inline
   def entity: typings.xrm.xrmStrings.entity = "entity".asInstanceOf[typings.xrm.xrmStrings.entity]
+  
   @scala.inline
   def off: typings.xrm.xrmStrings.off = "off".asInstanceOf[typings.xrm.xrmStrings.off]
+  
   @scala.inline
   def on: typings.xrm.xrmStrings.on = "on".asInstanceOf[typings.xrm.xrmStrings.on]
 }
-

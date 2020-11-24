@@ -6,7 +6,7 @@ import typings.std.DeviceMotionEventInit
 import typings.std.PermissionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DeviceMotionEvent")
 @js.native
@@ -15,7 +15,6 @@ class DeviceMotionEvent protected ()
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, eventInitDict: DeviceMotionEventInit) = this()
 }
-
 @JSGlobal("DeviceMotionEvent")
 @js.native
 object DeviceMotionEvent
@@ -25,6 +24,6 @@ object DeviceMotionEvent
       /* eventInitDict */ DeviceMotionEventInit, 
       typings.std.DeviceMotionEvent
     ] {
+  
   def requestPermission(): js.Promise[PermissionState] = js.native
 }
-

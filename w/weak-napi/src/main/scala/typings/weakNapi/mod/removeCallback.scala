@@ -3,11 +3,12 @@ package typings.weakNapi.mod
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("weak-napi", "removeCallback")
 @js.native
 object removeCallback extends js.Object {
+  
   /**
     * Removes callback from the Array of callback functions that will be invoked before the Object gets garbage collected.
     * @param ref weak reference object
@@ -15,4 +16,3 @@ object removeCallback extends js.Object {
     */
   def apply(ref: WeakRef[_], callback: js.Function0[Unit]): EventEmitter = js.native
 }
-

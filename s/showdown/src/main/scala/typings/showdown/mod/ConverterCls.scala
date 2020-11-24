@@ -2,7 +2,7 @@ package typings.showdown.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("showdown", "Converter")
 @js.native
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 class ConverterCls () extends Converter {
   def this(converterOptions: ConverterOptions) = this()
 }
-

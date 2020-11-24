@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for the {@link UnoControlDialog} service. This service actually implements a whole whack of interfaces. This is the just the subset that
@@ -20,8 +20,8 @@ trait XUnoControlDialog
      with XWindow
      with XTopWindow
      with XDialog2
-
 object XUnoControlDialog {
+  
   @scala.inline
   def apply(
     Context: XInterface,
@@ -85,4 +85,3 @@ object XUnoControlDialog {
     __obj.asInstanceOf[XUnoControlDialog]
   }
 }
-

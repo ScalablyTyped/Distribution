@@ -4,7 +4,7 @@ import typings.openlayers.mod.olx.FrameState
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "MapBrowserEvent")
 @js.native
@@ -30,11 +30,13 @@ class MapBrowserEvent protected () extends MapEvent {
     opt_frameState: FrameState
   ) = this()
   def this(`type`: String, map: Map, browserEvent: Event, opt_dragging: Boolean, opt_frameState: FrameState) = this()
+  
   /**
     * The coordinate of the original browser event.
     * @api stable
     */
   var coordinate: Coordinate_ = js.native
+  
   /**
     * Indicates if the map is currently being dragged. Only set for
     * `POINTERDRAG` and `POINTERMOVE` events. Default is `false`.
@@ -42,16 +44,17 @@ class MapBrowserEvent protected () extends MapEvent {
     * @api stable
     */
   var dragging: Boolean = js.native
+  
   /**
     * The original browser event.
     * @const
     * @api stable
     */
   var originalEvent: Event = js.native
+  
   /**
     * The pixel of the original browser event.
     * @api stable
     */
   var pixel: Pixel = js.native
 }
-

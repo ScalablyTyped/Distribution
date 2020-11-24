@@ -5,30 +5,45 @@ import typings.react.mod.ValidationMap
 import typings.react.mod.Validator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Unfortunately this copy-paste must happen -- I can't just take PropTypes and programmatically
 // define a version that intersects in the Deprecatable interface into the keys.
 @js.native
 trait DeprecatablePropTypes extends js.Object {
+  
   var any: Requireable[_] with Deprecatable[_] = js.native
+  
   var array: Requireable[_] with Deprecatable[_] = js.native
-  var bool: Requireable[_] with Deprecatable[_] = js.native
-  var element: Requireable[_] with Deprecatable[_] = js.native
-  var func: Requireable[_] with Deprecatable[_] = js.native
-  var node: Requireable[_] with Deprecatable[_] = js.native
-  var number: Requireable[_] with Deprecatable[_] = js.native
-  var `object`: Requireable[_] with Deprecatable[_] = js.native
-  var string: Requireable[_] with Deprecatable[_] = js.native
+  
   def arrayOf(`type`: Validator[_]): Requireable[_] with Deprecatable[_] = js.native
+  
+  var bool: Requireable[_] with Deprecatable[_] = js.native
+  
+  var element: Requireable[_] with Deprecatable[_] = js.native
+  
+  var func: Requireable[_] with Deprecatable[_] = js.native
+  
   def instanceOf(expectedClass: js.Object): Requireable[_] with Deprecatable[_] = js.native
+  
+  var node: Requireable[_] with Deprecatable[_] = js.native
+  
+  var number: Requireable[_] with Deprecatable[_] = js.native
+  
+  var `object`: Requireable[_] with Deprecatable[_] = js.native
+  
   def objectOf(`type`: Validator[_]): Requireable[_] with Deprecatable[_] = js.native
+  
   def oneOf(types: js.Array[_]): Requireable[_] with Deprecatable[_] = js.native
+  
   def oneOfType(types: js.Array[Validator[_]]): Requireable[_] with Deprecatable[_] = js.native
+  
   def shape(`type`: ValidationMap[_]): Requireable[_] with Deprecatable[_] = js.native
+  
+  var string: Requireable[_] with Deprecatable[_] = js.native
 }
-
 object DeprecatablePropTypes {
+  
   @scala.inline
   def apply(
     any: Requireable[_] with Deprecatable[_],
@@ -51,48 +66,65 @@ object DeprecatablePropTypes {
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeprecatablePropTypes]
   }
+  
   @scala.inline
   implicit class DeprecatablePropTypesOps[Self <: DeprecatablePropTypes] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAny(value: Requireable[_] with Deprecatable[_]): Self = this.set("any", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setArray(value: Requireable[_] with Deprecatable[_]): Self = this.set("array", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setArrayOf(value: Validator[_] => Requireable[_] with Deprecatable[_]): Self = this.set("arrayOf", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setBool(value: Requireable[_] with Deprecatable[_]): Self = this.set("bool", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setElement(value: Requireable[_] with Deprecatable[_]): Self = this.set("element", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFunc(value: Requireable[_] with Deprecatable[_]): Self = this.set("func", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setInstanceOf(value: js.Object => Requireable[_] with Deprecatable[_]): Self = this.set("instanceOf", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setNode(value: Requireable[_] with Deprecatable[_]): Self = this.set("node", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNumber(value: Requireable[_] with Deprecatable[_]): Self = this.set("number", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setObject(value: Requireable[_] with Deprecatable[_]): Self = this.set("object", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setObjectOf(value: Validator[_] => Requireable[_] with Deprecatable[_]): Self = this.set("objectOf", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setOneOf(value: js.Array[_] => Requireable[_] with Deprecatable[_]): Self = this.set("oneOf", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setOneOfType(value: js.Array[Validator[_]] => Requireable[_] with Deprecatable[_]): Self = this.set("oneOfType", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setShape(value: ValidationMap[_] => Requireable[_] with Deprecatable[_]): Self = this.set("shape", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setString(value: Requireable[_] with Deprecatable[_]): Self = this.set("string", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -13,25 +13,29 @@ import typings.iotaLibJs.anon.Trytes
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 // iota.api
 //
 @js.native
 trait IotaApi extends IriApi {
+  
   def broadcastAndStore(trytes: js.Array[String]): Unit = js.native
   def broadcastAndStore(
     trytes: js.Array[String],
     callback: js.Function2[/* error */ Error, /* response */ js.Object, Unit]
   ): Unit = js.native
+  
   def broadcastBundle(transactionHash: String): Unit = js.native
   def broadcastBundle(transactionHash: String, callback: js.Function2[/* error */ Error, /* response */ js.Object, Unit]): Unit = js.native
+  
   def findTransactionObjects(searchValues: Addresses): Unit = js.native
   def findTransactionObjects(
     searchValues: Addresses,
     callback: js.Function2[/* error */ Error, /* transactions */ js.Array[TransactionObject], Unit]
   ): Unit = js.native
+  
   def getAccountData(seed: String): Unit = js.native
   def getAccountData(
     seed: String,
@@ -44,11 +48,13 @@ trait IotaApi extends IriApi {
     options: typings.iotaLibJs.anon.Security,
     callback: js.Function2[/* error */ Error, /* response */ Balance, Unit]
   ): Unit = js.native
+  
   def getBundle(transactionHash: String): Unit = js.native
   def getBundle(
     transactionHash: String,
     callback: js.Function2[/* error */ Error, /* bundle */ js.Array[TransactionObject], Unit]
   ): Unit = js.native
+  
   def getInputs(seed: String): Unit = js.native
   def getInputs(
     seed: String,
@@ -57,11 +63,13 @@ trait IotaApi extends IriApi {
   ): Unit = js.native
   def getInputs(seed: String, options: End): Unit = js.native
   def getInputs(seed: String, options: End, callback: js.Function2[/* error */ Error, /* response */ Inputs, Unit]): Unit = js.native
+  
   def getLatestInclusion(hashes: js.Array[String]): Unit = js.native
   def getLatestInclusion(
     hashes: js.Array[String],
     callback: js.Function2[/* error */ Error, /* states */ js.Array[Boolean], Unit]
   ): Unit = js.native
+  
   def getNewAddress(seed: String): Unit = js.native
   def getNewAddress(
     seed: String,
@@ -74,11 +82,13 @@ trait IotaApi extends IriApi {
     options: Checksum,
     callback: js.Function2[/* error */ Error, /* response */ String | js.Array[String], Unit]
   ): Unit = js.native
+  
   def getTransactionsObjects(hashes: js.Array[String]): Unit = js.native
   def getTransactionsObjects(
     hashes: js.Array[String],
     callback: js.Function2[/* error */ Error, /* transactions */ js.Array[TransactionObject], Unit]
   ): Unit = js.native
+  
   def getTransfers(seed: String): Unit = js.native
   def getTransfers(
     seed: String,
@@ -91,6 +101,7 @@ trait IotaApi extends IriApi {
     options: InclusionStates,
     callback: js.Function2[/* error */ Error, /* transfers */ js.Array[js.Array[TransactionObject]], Unit]
   ): Unit = js.native
+  
   def isReattachable(address: String): Unit = js.native
   def isReattachable(
     address: String,
@@ -101,6 +112,7 @@ trait IotaApi extends IriApi {
     address: js.Array[String],
     callback: js.Function2[/* error */ Error, /* response */ Boolean | js.Array[Boolean], Unit]
   ): Unit = js.native
+  
   def prepareTransfers(seed: String, transfers: js.Array[TransferObject]): Unit = js.native
   def prepareTransfers(
     seed: String,
@@ -115,6 +127,7 @@ trait IotaApi extends IriApi {
     options: Address,
     callback: js.Function2[/* error */ Error, /* response */ Trytes, Unit]
   ): Unit = js.native
+  
   def replayBundle(transactionHash: String, depth: Double, minWeightMagnitude: Double): Unit = js.native
   def replayBundle(
     transactionHash: String,
@@ -122,6 +135,7 @@ trait IotaApi extends IriApi {
     minWeightMagnitude: Double,
     callback: js.Function2[/* error */ Error, /* response */ js.Object, Unit]
   ): Unit = js.native
+  
   def sendTransfer(seed: String, depth: Double, minWeightMagnitude: Double, transfers: js.Array[TransferObject]): Unit = js.native
   def sendTransfer(
     seed: String,
@@ -146,6 +160,7 @@ trait IotaApi extends IriApi {
     options: AddressInputs,
     callback: js.Function2[/* error */ Error, /* response */ InputsArray, Unit]
   ): Unit = js.native
+  
   def sendTrytes(trytes: js.Array[String], depth: Double, minWeightMagnitude: Double): Unit = js.native
   def sendTrytes(
     trytes: js.Array[String],
@@ -154,4 +169,3 @@ trait IotaApi extends IriApi {
     callback: js.Function2[/* error */ Error, /* response */ InputsArray, Unit]
   ): Unit = js.native
 }
-

@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MobileBroadbandUiccAppOperationStatus extends js.Object
-
 /** Describes the status of an operation on a UICC application. */
 @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus")
 @js.native
 object MobileBroadbandUiccAppOperationStatus extends js.Object {
+  
   /** Operation failed due to an access condition not being met. */
   @js.native
   sealed trait accessConditionNotHeld extends MobileBroadbandUiccAppOperationStatus
@@ -26,6 +26,4 @@ object MobileBroadbandUiccAppOperationStatus extends js.Object {
   /** Operation failed because the UICC was busy. */
   @js.native
   sealed trait uiccBusy extends MobileBroadbandUiccAppOperationStatus
-  
 }
-

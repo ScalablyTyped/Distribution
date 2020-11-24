@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Resource$Shippingsettings")
 @js.native
 class ResourceShippingsettings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * content.shippingsettings.custombatch
     * @desc Retrieves and updates the shipping settings of multiple accounts in
@@ -46,6 +48,7 @@ class ResourceShippingsettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaShippingsettingsCustomBatchResponse]
   ): Unit = js.native
+  
   /**
     * content.shippingsettings.get
     * @desc Retrieves the shipping settings of the account.
@@ -75,6 +78,7 @@ class ResourceShippingsettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaShippingSettings]
   ): Unit = js.native
+  
   /**
     * content.shippingsettings.getsupportedcarriers
     * @desc Retrieves supported carriers and carrier services for an account.
@@ -106,6 +110,7 @@ class ResourceShippingsettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaShippingsettingsGetSupportedCarriersResponse]
   ): Unit = js.native
+  
   /**
     * content.shippingsettings.getsupportedholidays
     * @desc Retrieves supported holidays for an account.
@@ -137,6 +142,7 @@ class ResourceShippingsettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaShippingsettingsGetSupportedHolidaysResponse]
   ): Unit = js.native
+  
   /**
     * content.shippingsettings.list
     * @desc Lists the shipping settings of the sub-accounts in your Merchant
@@ -171,6 +177,7 @@ class ResourceShippingsettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaShippingsettingsListResponse]
   ): Unit = js.native
+  
   /**
     * content.shippingsettings.patch
     * @desc Updates the shipping settings of the account. This method supports
@@ -206,6 +213,7 @@ class ResourceShippingsettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaShippingSettings]
   ): Unit = js.native
+  
   /**
     * content.shippingsettings.update
     * @desc Updates the shipping settings of the account.
@@ -241,4 +249,3 @@ class ResourceShippingsettings protected () extends js.Object {
     callback: BodyResponseCallback[SchemaShippingSettings]
   ): Unit = js.native
 }
-

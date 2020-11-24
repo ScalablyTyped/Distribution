@@ -2,11 +2,12 @@ package typings.jupyterlabApputils.dialogMod.Dialog
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/apputils/lib/dialog", "Dialog.flush")
 @js.native
 object flush extends js.Object {
+  
   /**
     * Disposes all dialog instances.
     *
@@ -16,4 +17,3 @@ object flush extends js.Object {
     */
   def apply(): Unit = js.native
 }
-

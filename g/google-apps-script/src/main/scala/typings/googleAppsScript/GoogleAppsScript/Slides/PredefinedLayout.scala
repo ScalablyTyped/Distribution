@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Slides
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PredefinedLayout extends js.Object
-
 /**
   * Predefined layouts. These are commonly found layouts in presentations. However, there is no
   * guarantee that these layouts are present in the current master as they could have been deleted or
@@ -15,6 +14,7 @@ sealed trait PredefinedLayout extends js.Object
 @JSGlobal("GoogleAppsScript.Slides.PredefinedLayout")
 @js.native
 object PredefinedLayout extends js.Object {
+  
   @js.native
   sealed trait BIG_NUMBER extends PredefinedLayout
   
@@ -50,6 +50,4 @@ object PredefinedLayout extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends PredefinedLayout
-  
 }
-

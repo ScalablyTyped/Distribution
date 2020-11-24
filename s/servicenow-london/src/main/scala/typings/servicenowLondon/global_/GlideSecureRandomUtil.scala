@@ -2,11 +2,12 @@ package typings.servicenowLondon.global_
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("GlideSecureRandomUtil")
 @js.native
 object GlideSecureRandomUtil extends js.Object {
+  
   /**
     * Generates a pseudo-random integer.
     *
@@ -16,6 +17,7 @@ object GlideSecureRandomUtil extends js.Object {
     * gs.info(GlideSecureRandomUtil.getSecureRandomInt());
     */
   def getSecureRandomInt(): Double = js.native
+  
   /**
     * Generates a pseudo-random integer between 0 (inclusive) and the bound (exclusive) value that
     * you pass into the method.
@@ -27,6 +29,7 @@ object GlideSecureRandomUtil extends js.Object {
     * gs.info(GlideSecureRandomUtil.getSecureRandomIntBound(100));
     */
   def getSecureRandomIntBound(bound: Double): Double = js.native
+  
   /**
     * Generates pseudo-random long value.
     *
@@ -36,6 +39,7 @@ object GlideSecureRandomUtil extends js.Object {
     * gs.info(GlideSecureRandomUtil.getSecureRandomLong());
     */
   def getSecureRandomLong(): Double = js.native
+  
   /**
     * Generates a random alpha-numeric String with the specified length.
     *
@@ -47,4 +51,3 @@ object GlideSecureRandomUtil extends js.Object {
     */
   def getSecureRandomString(length: Double): String = js.native
 }
-

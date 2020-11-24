@@ -14,27 +14,32 @@ import typings.ionicCliFramework.mod.BaseCommand
 import typings.ionicCliFramework.mod.TaskChain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ionic/lib/command", JSImport.Namespace)
 @js.native
 object commandMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.ionicCliFramework.definitionsMod.ICommand because var conflicts: namespace. Inlined 
   - typings.ionic.definitionsMod.ICommand because var conflicts: namespace. Inlined env, project, execute */ @js.native
   abstract class Command protected () extends BaseCommand[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
     def this(namespace: INamespace) = this()
+    
+    def createTaskChain(): TaskChain = js.native
+    
+    def env: IonicEnvironment = js.native
     @JSName("env")
     val env_FCommand: IonicEnvironment = js.native
+    
+    def execute(inputs: CommandLineInputs, options: CommandLineOptions, runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
+    
+    def getCleanInputsForTelemetry(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[js.Array[String]] = js.native
+    
+    def project: js.UndefOr[IProject] = js.native
     @JSName("project")
     val project_FCommand: js.UndefOr[IProject] = js.native
+    
     val taskChains: js.Array[TaskChain] = js.native
-    def createTaskChain(): TaskChain = js.native
-    def env: IonicEnvironment = js.native
-    def execute(inputs: CommandLineInputs, options: CommandLineOptions, runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
-    def getCleanInputsForTelemetry(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[js.Array[String]] = js.native
-    def project: js.UndefOr[IProject] = js.native
   }
-  
 }
-

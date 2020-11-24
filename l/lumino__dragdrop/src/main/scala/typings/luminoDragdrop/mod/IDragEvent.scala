@@ -4,10 +4,11 @@ import typings.luminoCoreutils.mod.MimeData
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IDragEvent extends MouseEvent {
+  
   /**
     * The drop action supported or taken by the drop target.
     *
@@ -21,6 +22,7 @@ trait IDragEvent extends MouseEvent {
     * reported back to the drag initiator.
     */
   var dropAction: DropAction = js.native
+  
   /**
     * The mime data associated with the event.
     *
@@ -29,6 +31,7 @@ trait IDragEvent extends MouseEvent {
     * should use this data to determine if they can handle the drop.
     */
   val mimeData: MimeData = js.native
+  
   /**
     * The drop action proposed by the drag initiator.
     *
@@ -38,6 +41,7 @@ trait IDragEvent extends MouseEvent {
     * it all possible.
     */
   val proposedAction: DropAction = js.native
+  
   /**
     * The source object of the drag, as provided by the drag initiator.
     *
@@ -47,6 +51,7 @@ trait IDragEvent extends MouseEvent {
     * if given by the drag initiator, otherwise it will be `null`.
     */
   val source: js.Any = js.native
+  
   /**
     * The drop actions supported by the drag initiator.
     *
@@ -56,4 +61,3 @@ trait IDragEvent extends MouseEvent {
     */
   val supportedActions: SupportedActions = js.native
 }
-

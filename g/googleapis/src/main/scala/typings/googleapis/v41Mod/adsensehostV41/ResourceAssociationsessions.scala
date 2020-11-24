@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsensehost/v4.1", "adsensehost_v4_1.Resource$Associationsessions")
 @js.native
 class ResourceAssociationsessions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adsensehost.associationsessions.start
     * @desc Create an association session for initiating an association with an
@@ -48,6 +50,7 @@ class ResourceAssociationsessions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAssociationSession]
   ): Unit = js.native
+  
   /**
     * adsensehost.associationsessions.verify
     * @desc Verify an association session after the association callback
@@ -81,4 +84,3 @@ class ResourceAssociationsessions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAssociationSession]
   ): Unit = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Google+ Domains API
@@ -27,12 +27,18 @@ import scala.scalajs.js.annotation._
 class Plusdomains protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var activities: ResourceActivities = js.native
+  
   var audiences: ResourceAudiences = js.native
+  
   var circles: ResourceCircles = js.native
+  
   var comments: ResourceComments = js.native
+  
   var context: APIRequestContext = js.native
+  
   var media: ResourceMedia = js.native
+  
   var people: ResourcePeople = js.native
 }
-

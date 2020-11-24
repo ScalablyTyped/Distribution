@@ -10,9 +10,9 @@ Parse, Resolve, and Dereference JSON Schema $ref pointers
 | ------------------ | :-------------: |
 | Full name          | json-schema-ref-parser |
 | Keywords           | json, schema, jsonschema, json-schema, json-pointer, $ref, dereference, resolve |
-| # releases         | 23 |
-| # dependents       | 245 |
-| # downloads        | 28644355 |
+| # releases         | 20 |
+| # dependents       | 295 |
+| # downloads        | 46216912 |
 | # stars            | 5 |
 
 ## Links

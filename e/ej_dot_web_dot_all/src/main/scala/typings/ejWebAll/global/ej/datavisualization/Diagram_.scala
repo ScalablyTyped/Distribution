@@ -5,7 +5,7 @@ import typings.ejWebAll.ej.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.datavisualization.Diagram")
 @js.native
@@ -16,4 +16,3 @@ class Diagram_ protected ()
   def this(element: JQuery, options: Model) = this()
   def this(element: Element, options: Model) = this()
 }
-

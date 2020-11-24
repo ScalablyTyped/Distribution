@@ -2,7 +2,7 @@ package typings.openui5.global.sap.ui.model
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.SelectionModel")
 @js.native
@@ -15,4 +15,3 @@ class SelectionModel protected ()
     */
   def this(iSelectionMode: Double) = this()
 }
-

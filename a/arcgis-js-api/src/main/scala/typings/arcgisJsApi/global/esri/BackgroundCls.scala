@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.BackgroundProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.Background")
 @js.native
@@ -16,4 +16,3 @@ class BackgroundCls ()
   extends typings.arcgisJsApi.esri.Background {
   def this(properties: BackgroundProperties) = this()
 }
-

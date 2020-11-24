@@ -2,7 +2,7 @@ package typings.progress.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Flexible ascii progress bar.
@@ -35,4 +35,3 @@ class ^ protected () extends ProgressBar {
     */
   def this(format: String, total: Double) = this()
 }
-

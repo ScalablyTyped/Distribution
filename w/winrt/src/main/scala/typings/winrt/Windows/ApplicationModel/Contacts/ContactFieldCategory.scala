@@ -2,14 +2,14 @@ package typings.winrt.Windows.ApplicationModel.Contacts
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ContactFieldCategory extends js.Object
-
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactFieldCategory")
 @js.native
 object ContactFieldCategory extends js.Object {
+  
   @js.native
   sealed trait home extends ContactFieldCategory
   
@@ -24,6 +24,4 @@ object ContactFieldCategory extends js.Object {
   
   @js.native
   sealed trait work extends ContactFieldCategory
-  
 }
-

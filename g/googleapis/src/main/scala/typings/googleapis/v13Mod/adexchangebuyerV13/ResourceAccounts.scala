@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.3", "adexchangebuyer_v1_3.Resource$Accounts")
 @js.native
 class ResourceAccounts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer.accounts.get
     * @desc Gets one account by ID.
@@ -41,6 +43,7 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccount]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.accounts.list
     * @desc Retrieves the authenticated user's list of accounts.
@@ -68,6 +71,7 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountsList]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.accounts.patch
     * @desc Updates an existing account. This method supports patch semantics.
@@ -97,6 +101,7 @@ class ResourceAccounts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccount]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.accounts.update
     * @desc Updates an existing account.
@@ -127,4 +132,3 @@ class ResourceAccounts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAccount]
   ): Unit = js.native
 }
-

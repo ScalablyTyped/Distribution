@@ -5,7 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the {@link PasswordContainer} service to implement.
@@ -16,8 +16,8 @@ trait XPasswordContainer2
   extends XMasterPasswordHandling2
      with XPasswordContainer
      with XUrlContainer
-
 object XPasswordContainer2 {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -48,4 +48,3 @@ object XPasswordContainer2 {
     __obj.asInstanceOf[XPasswordContainer2]
   }
 }
-

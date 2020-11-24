@@ -2,13 +2,14 @@ package typings.voximplantWebsdk.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Client class used to control platform functions. Can't be instantiatied directly (singleton), please use VoxImplant.getInstance to get the class instance
   */
 @js.native
 trait Client extends js.Object {
+  
   /**
     *    Register handler for specified event
     *
@@ -23,6 +24,7 @@ trait Client extends js.Object {
     eventName: IMEvents,
     eventHandler: js.Function1[/* eventObject */ VoxImplantEvent | VoxImplantIMEvent, _]
   ): Unit = js.native
+  
   /**
     *    Add roster item (IM)
     *
@@ -32,6 +34,7 @@ trait Client extends js.Object {
     */
   def addRosterItem(user_id: String, name: String): Unit = js.native
   def addRosterItem(user_id: String, name: String, group: String): Unit = js.native
+  
   /**
     *    Add roster item group (IM)
     *
@@ -39,6 +42,7 @@ trait Client extends js.Object {
     *    @param group Group name
     */
   def addRosterItemGroup(user_id: String, group: String): Unit = js.native
+  
   /**
     *    Enable microphone/camera if micRequired in VoxImplant.Config was set to false (WebRTC mode only)
     *
@@ -49,14 +53,17 @@ trait Client extends js.Object {
   def attachRecordingDevice(successCallback: js.UndefOr[scala.Nothing], failedCallback: js.Function0[_]): Unit = js.native
   def attachRecordingDevice(successCallback: js.Function0[_]): Unit = js.native
   def attachRecordingDevice(successCallback: js.Function0[_], failedCallback: js.Function0[_]): Unit = js.native
+  
   /**
     *    Get a list of all currently available audio playback devices
     */
   def audioOutputs(): js.Array[AudioOutputInfo] = js.native
+  
   /**
     *    Get a list of all currently available audio sources / microphones
     */
   def audioSources(): js.Array[AudioSourceInfo] = js.native
+  
   /**
     *    Ban user from the chat room
     *
@@ -66,6 +73,7 @@ trait Client extends js.Object {
     */
   def banChatRoomUser(room: String, user_id: String): Unit = js.native
   def banChatRoomUser(room: String, user_id: String, reason: String): Unit = js.native
+  
   /**
     *    Create call
     *
@@ -87,18 +95,22 @@ trait Client extends js.Object {
   def call(number: String, useVideo: Boolean, customData: js.UndefOr[scala.Nothing], extraHeaders: js.Object): Call = js.native
   def call(number: String, useVideo: Boolean, customData: String): Call = js.native
   def call(number: String, useVideo: Boolean, customData: String, extraHeaders: js.Object): Call = js.native
+  
   /**
     *    Get current config
     */
   def config(): Config = js.native
+  
   /**
     *    Connect to VoxImplant Cloud
     */
   def connect(): Unit = js.native
+  
   /**
     *    Check if connected to VoxImplant Cloud
     */
   def connected(): Boolean = js.native
+  
   /**
     *    Create multi-user chat room and join it
     *
@@ -109,6 +121,7 @@ trait Client extends js.Object {
   def createChatRoom(pass: js.UndefOr[scala.Nothing], users: js.Array[String]): String = js.native
   def createChatRoom(pass: String): String = js.native
   def createChatRoom(pass: String, users: js.Array[String]): String = js.native
+  
   /**
     *    Decline invitation to join chat room
     *
@@ -118,14 +131,17 @@ trait Client extends js.Object {
     */
   def declineChatRoomInvite(room: String, user_id: String): Unit = js.native
   def declineChatRoomInvite(room: String, user_id: String, reason: String): Unit = js.native
+  
   /**
     *    Disable microphone/camera if micRequired in VoxImplant.Config was set to false (WebRTC mode only)
     */
   def detachRecordingDevice(): Unit = js.native
+  
   /**
     *    Disconnect from VoxImplant Cloud
     */
   def disconnect(): Unit = js.native
+  
   /**
     *    Edit message in the chat room
     *
@@ -134,6 +150,7 @@ trait Client extends js.Object {
     *    @param msg New message content
     */
   def editChatRoomMessage(room: String, message_id: String, msg: String): Unit = js.native
+  
   /**
     *    Edit message sent to user
     *
@@ -142,6 +159,7 @@ trait Client extends js.Object {
     *    @param msg New message content
     */
   def editInstantMessage(room: String, message_id: String, msg: String): Unit = js.native
+  
   /**
     *    Get chat room history
     *
@@ -163,6 +181,7 @@ trait Client extends js.Object {
   def getChatRoomHistory(room: String, message_id: String, direction: js.UndefOr[scala.Nothing], count: Double): Unit = js.native
   def getChatRoomHistory(room: String, message_id: String, direction: Boolean): Unit = js.native
   def getChatRoomHistory(room: String, message_id: String, direction: Boolean, count: Double): Unit = js.native
+  
   /**
     *    Get messages in a conversation with particular use
     *
@@ -184,6 +203,7 @@ trait Client extends js.Object {
   def getInstantMessagingHistory(user_id: String, message_id: String, direction: js.UndefOr[scala.Nothing], count: Double): Unit = js.native
   def getInstantMessagingHistory(user_id: String, message_id: String, direction: Boolean): Unit = js.native
   def getInstantMessagingHistory(user_id: String, message_id: String, direction: Boolean, count: Double): Unit = js.native
+  
   /**
     *    Initialize SDK. SDKReady event will be dispatched after succesful SDK initialization. SDK can't be used until it's initialized
     *
@@ -191,6 +211,7 @@ trait Client extends js.Object {
     */
   def init(): Unit = js.native
   def init(config: Config): Unit = js.native
+  
   /**
     *    Invite user to join chat room
     *
@@ -200,10 +221,12 @@ trait Client extends js.Object {
     */
   def inviteToChatRoom(room: String, user_id: String): Unit = js.native
   def inviteToChatRoom(room: String, user_id: String, reason: String): Unit = js.native
+  
   /**
     *    Check if WebRTC support is available
     */
   def isRTCsupported(): Boolean = js.native
+  
   /**
     *    Join multi-user chat room
     *
@@ -212,6 +235,7 @@ trait Client extends js.Object {
     */
   def joinChatRoom(room: String): Unit = js.native
   def joinChatRoom(room: String, pass: String): Unit = js.native
+  
   /**
     *    Leave multi-user chat room
     *
@@ -220,6 +244,7 @@ trait Client extends js.Object {
     */
   def leaveChatRoom(room: String): Unit = js.native
   def leaveChatRoom(room: String, msg: String): Unit = js.native
+  
   /**
     *    Login into application
     *
@@ -229,6 +254,7 @@ trait Client extends js.Object {
     */
   def login(username: String, password: String): Unit = js.native
   def login(username: String, password: String, options: LoginOptions): Unit = js.native
+  
   /**
     *    Login into application using 'code' auth method
     *
@@ -238,6 +264,7 @@ trait Client extends js.Object {
     */
   def loginWithCode(username: String, code: String): Unit = js.native
   def loginWithCode(username: String, code: String, options: LoginOptions): Unit = js.native
+  
   /**
     *    Login into application using 'onetimekey' auth method
     *
@@ -247,6 +274,7 @@ trait Client extends js.Object {
     */
   def loginWithOneTimeKey(username: String, hash: String): Unit = js.native
   def loginWithOneTimeKey(username: String, hash: String, options: LoginOptions): Unit = js.native
+  
   /**
     *    Move roster item group (IM)
     *
@@ -255,6 +283,7 @@ trait Client extends js.Object {
     *    @param groupDst Group name (destination)
     */
   def moveRosterItemGroup(user_id: String, groupSrc: String, groupDst: String): Unit = js.native
+  
   /**
     *    Play ToneScript using WebAudio API
     *
@@ -263,6 +292,7 @@ trait Client extends js.Object {
     */
   def playToneScript(script: String): Unit = js.native
   def playToneScript(script: String, loop: Boolean): Unit = js.native
+  
   /**
     *    Remove roster item group (IM)
     *
@@ -270,6 +300,7 @@ trait Client extends js.Object {
     *    @param group Group name
     */
   def remoteRosterItemGroup(user_id: String, group: String): Unit = js.native
+  
   /**
     *    Remove message in the chat room
     *
@@ -277,6 +308,7 @@ trait Client extends js.Object {
     *    @param message_id Message id
     */
   def removeChatRoomMessage(room: String, message_id: String): Unit = js.native
+  
   /**
     *    Remove user from the chat room
     *
@@ -286,6 +318,7 @@ trait Client extends js.Object {
     */
   def removeChatRoomUser(room: String, user_id: String): Unit = js.native
   def removeChatRoomUser(room: String, user_id: String, reason: String): Unit = js.native
+  
   /**
     *    Remove handler for specified event
     *
@@ -294,6 +327,7 @@ trait Client extends js.Object {
     */
   def removeEventListener(eventName: Events, eventHandler: js.Function0[_]): Unit = js.native
   def removeEventListener(eventName: IMEvents, eventHandler: js.Function0[_]): Unit = js.native
+  
   /**
     *    Remove message sent to user
     *
@@ -301,12 +335,14 @@ trait Client extends js.Object {
     *    @param message_id Message id
     */
   def removeInstantMessage(user_id: String, message_id: String): Unit = js.native
+  
   /**
     *    Remove roster item (IM)
     *
     *    @param user_id User id
     */
   def removeRosterItem(user_id: String): Unit = js.native
+  
   /**
     *    Rename roster item (IM)
     *
@@ -314,12 +350,14 @@ trait Client extends js.Object {
     *    @param name New display name
     */
   def renameRosterItem(user_id: String, name: String): Unit = js.native
+  
   /**
     *    Request a key for 'onetimekey' auth method. Server will send the key in AuthResult event with code 302
     *
     *    @param username
     */
   def requestOneTimeLoginKey(username: String): Unit = js.native
+  
   /**
     *    Send message to chat room
     *
@@ -327,6 +365,7 @@ trait Client extends js.Object {
     *    @param msg Message for other participants
     */
   def sendChatRoomMessage(room: String, msg: String): String = js.native
+  
   /**
     *    Send message to user (IM)
     *
@@ -334,12 +373,14 @@ trait Client extends js.Object {
     *    @param content Message content
     */
   def sendInstantMessage(user_id: String, content: String): String = js.native
+  
   /**
     *    Start/stop sending local video to remote party/parties
     *
     *    @param flag Start/stop - true/false
     */
   def sendVideo(flag: Boolean): Unit = js.native
+  
   /**
     *    Set active call
     *
@@ -347,6 +388,7 @@ trait Client extends js.Object {
     *    @param active If true make call active, otherwise make call inactive
     */
   def setCallActive(call: Call, active: Boolean): Unit = js.native
+  
   /**
     *    Set chat room session state info
     *
@@ -354,6 +396,7 @@ trait Client extends js.Object {
     *    @param status Chat session status
     */
   def setChatRoomState(room: String, status: ChatStateType): Unit = js.native
+  
   /**
     *    Set new chat room subject
     *
@@ -361,6 +404,7 @@ trait Client extends js.Object {
     *    @param subject New subject
     */
   def setChatRoomSubject(room: String, subject: String): Unit = js.native
+  
   /**
     *    Set chat session state info
     *
@@ -368,6 +412,7 @@ trait Client extends js.Object {
     *    @param status Chat session status. See VoxImplant.ChatStateType enum
     */
   def setChatState(user_id: String, status: ChatStateType): Unit = js.native
+  
   /**
     *    Set local video position
     *
@@ -375,6 +420,7 @@ trait Client extends js.Object {
     *    @param y Vertical position (px)
     */
   def setLocalVideoPosition(x: Double, y: Double): Unit = js.native
+  
   /**
     *    Set local video size
     *
@@ -382,6 +428,7 @@ trait Client extends js.Object {
     *    @param height Height in pixels
     */
   def setLocalVideoSize(width: Double, height: Double): Unit = js.native
+  
   /**
     *    Set local video size
     *
@@ -390,12 +437,14 @@ trait Client extends js.Object {
     *    @param message_id Message id(s)
     */
   def setMessageStatus(user_id: String, `type`: MessageEventType, message_id: js.Array[String]): Unit = js.native
+  
   /**
     *    Set ACD status
     *
     *    @param status Presence status string, see VoxImplant.OperatorACDStatuses
     */
   def setOperatorACDStatus(status: OperatorACDStatuses): Unit = js.native
+  
   /**
     *    Set presence
     *
@@ -403,18 +452,21 @@ trait Client extends js.Object {
     *    @param msg Presence text message
     */
   def setPresenceStatus(status: UserStatuses, msg: String): Unit = js.native
+  
   /**
     *    Set background color of flash app (only for Flash mode)
     *
     *    @param color Color in web format (i.e. #000000 for black)
     */
   def setSwfColor(color: String): Unit = js.native
+  
   /**
     *    Set bandwidth limit for video calls. Currently supported by Chrome/Chromium. The limit will be applied for the next call. (WebRTC mode only)
     *
     *    @param bandwidth Bandwidth limit in kilobits per second (kbps)
     */
   def setVideoBandwidth(bandwidth: Double): Unit = js.native
+  
   def setVideoSettings(settings: FlashVideoSettings): Unit = js.native
   def setVideoSettings(
     settings: FlashVideoSettings,
@@ -438,6 +490,7 @@ trait Client extends js.Object {
   ): Unit = js.native
   def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[_]): Unit = js.native
   def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[_], failedCallback: js.Function0[_]): Unit = js.native
+  
   /**
     *    Show flash settings panel
     *
@@ -445,16 +498,19 @@ trait Client extends js.Object {
     */
   def showFlashSettingsPanel(): Unit = js.native
   def showFlashSettingsPanel(panel: String): Unit = js.native
+  
   /**
     *    Show/hide local video
     *
     *    @param flag Show/hide - true/false
     */
   def showLocalVideo(flag: Boolean): Unit = js.native
+  
   /**
     *    Stop playing ToneScript using WebAudio API
     */
   def stopPlayback(): Unit = js.native
+  
   /**
     *    Transfer call, depending on the result VoxImplant.CallEvents.TransferComplete or VoxImplant.CallEvents.TransferFailed event will be dispatched
     *
@@ -462,6 +518,7 @@ trait Client extends js.Object {
     *    @param call2 Call where call1 will be transferred
     */
   def transferCall(call1: Call, call2: Call): Unit = js.native
+  
   /**
     *    Remove a ban on a user in the chat room
     *
@@ -471,6 +528,7 @@ trait Client extends js.Object {
     */
   def unbanChatRoomUser(room: String, user_id: String): Unit = js.native
   def unbanChatRoomUser(room: String, user_id: String, reason: String): Unit = js.native
+  
   def useAudioSource(id: String): Unit = js.native
   def useAudioSource(id: String, successCallback: js.UndefOr[scala.Nothing], failedCallback: js.Function0[_]): Unit = js.native
   def useAudioSource(id: String, successCallback: js.Function0[_]): Unit = js.native
@@ -486,6 +544,7 @@ trait Client extends js.Object {
   def useAudioSource(id: Double, successCallback: js.UndefOr[scala.Nothing], failedCallback: js.Function0[_]): Unit = js.native
   def useAudioSource(id: Double, successCallback: js.Function0[_]): Unit = js.native
   def useAudioSource(id: Double, successCallback: js.Function0[_], failedCallback: js.Function0[_]): Unit = js.native
+  
   def useVideoSource(id: String): Unit = js.native
   def useVideoSource(id: String, successCallback: js.UndefOr[scala.Nothing], failedCallback: js.Function0[_]): Unit = js.native
   def useVideoSource(id: String, successCallback: js.Function0[_]): Unit = js.native
@@ -501,9 +560,9 @@ trait Client extends js.Object {
   def useVideoSource(id: Double, successCallback: js.UndefOr[scala.Nothing], failedCallback: js.Function0[_]): Unit = js.native
   def useVideoSource(id: Double, successCallback: js.Function0[_]): Unit = js.native
   def useVideoSource(id: Double, successCallback: js.Function0[_], failedCallback: js.Function0[_]): Unit = js.native
+  
   /**
     *    Get a list of all currently available video sources / cameras
     */
   def videoSources(): js.Array[VideoSourceInfo] = js.native
 }
-

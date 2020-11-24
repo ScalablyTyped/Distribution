@@ -11,8 +11,8 @@ Webpack plugin to generate a custom JSON asset
 | Full name          | generate-json-webpack-plugin |
 | Keywords           | webpack |
 | # releases         | 3 |
-| # dependents       | 14 |
-| # downloads        | 429693 |
+| # dependents       | 15 |
+| # downloads        | 655607 |
 | # stars            | 1 |
 
 ## Links

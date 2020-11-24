@@ -8,7 +8,7 @@ import typings.plottable.plotMod.Plot
 import typings.plottable.scaleMod.Scale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/plots/piePlot", "Pie")
 @js.native
@@ -16,19 +16,33 @@ import scala.scalajs.js.annotation._
   * @constructor
   */
 class Pie () extends Plot {
-  var _endAngle: js.Any = js.native
-  var _endAngles: js.Any = js.native
-  var _labelFormatter: js.Any = js.native
-  var _labelsEnabled: js.Any = js.native
-  var _startAngle: js.Any = js.native
-  var _startAngles: js.Any = js.native
-  var _strokeDrawers: js.Any = js.native
+  
   /* protected */ def _createDrawer(): ProxyDrawer = js.native
+  
   /* private */ def _drawLabels(): js.Any = js.native
+  
+  var _endAngle: js.Any = js.native
+  
+  var _endAngles: js.Any = js.native
+  
   /* private */ def _generateStrokeDrawSteps(): js.Any = js.native
+  
+  var _labelFormatter: js.Any = js.native
+  
+  var _labelsEnabled: js.Any = js.native
+  
   /* private */ def _pieCenter(): js.Any = js.native
+  
   /* private */ def _sliceIndexForPoint(p: js.Any): js.Any = js.native
+  
+  var _startAngle: js.Any = js.native
+  
+  var _startAngles: js.Any = js.native
+  
+  var _strokeDrawers: js.Any = js.native
+  
   /* private */ def _updatePieAngles(): js.Any = js.native
+  
   /**
     * Gets the end angle of the Pie Plot.
     *
@@ -42,6 +56,7 @@ class Pie () extends Plot {
     * @returns {Pie} The calling Pie Plot.
     */
   def endAngle(angle: Double): this.type = js.native
+  
   /**
     * Sets the inner radius to a constant number or the result of an Accessor<number>.
     *
@@ -64,6 +79,7 @@ class Pie () extends Plot {
     */
   def innerRadius[R](innerRadius: R, scale: Scale[R, Double]): js.Any = js.native
   def innerRadius[R](innerRadius: IAccessor[R], scale: Scale[R, Double]): js.Any = js.native
+  
   /**
     * Gets the Formatter for the labels.
     */
@@ -77,6 +93,7 @@ class Pie () extends Plot {
     * @returns {Pie} The calling Pie Plot.
     */
   def labelFormatter(formatter: DatumFormatter): this.type = js.native
+  
   /**
     * Get whether slice labels are enabled.
     *
@@ -90,6 +107,7 @@ class Pie () extends Plot {
     * @returns {Pie} The calling Pie Plot.
     */
   def labelsEnabled(enabled: Boolean): this.type = js.native
+  
   /**
     * Sets the outer radius to a constant number or the result of an Accessor<number>.
     *
@@ -112,6 +130,7 @@ class Pie () extends Plot {
     */
   def outerRadius[R](outerRadius: R, scale: Scale[R, Double]): this.type = js.native
   def outerRadius[R](outerRadius: IAccessor[R], scale: Scale[R, Double]): this.type = js.native
+  
   /**
     * Sets the sector value to a constant number or the result of an Accessor<number>.
     *
@@ -134,6 +153,7 @@ class Pie () extends Plot {
     */
   def sectorValue[S](sectorValue: S, scale: Scale[S, Double]): this.type = js.native
   def sectorValue[S](sectorValue: IAccessor[S], scale: Scale[S, Double]): this.type = js.native
+  
   /**
     * Gets the start angle of the Pie Plot
     *
@@ -148,14 +168,16 @@ class Pie () extends Plot {
     */
   def startAngle(angle: Double): this.type = js.native
 }
-
 /* static members */
 @JSImport("plottable/build/src/plots/piePlot", "Pie")
 @js.native
 object Pie extends js.Object {
+  
   var _INNER_RADIUS_KEY: js.Any = js.native
+  
   var _OUTER_RADIUS_KEY: js.Any = js.native
+  
   var _SECTOR_VALUE_KEY: js.Any = js.native
+  
   /* protected */ def _isValidData(value: js.Any): Boolean = js.native
 }
-

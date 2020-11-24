@@ -11,8 +11,8 @@ Isomorphic router for JavaScript web applications
 | Full name          | universal-router |
 | Keywords           | isomorphic, universal, router, routing, routes, route |
 | # releases         | 9 |
-| # dependents       | 29 |
-| # downloads        | 666353 |
+| # dependents       | 37 |
+| # downloads        | 821295 |
 | # stars            | 8 |
 
 ## Links

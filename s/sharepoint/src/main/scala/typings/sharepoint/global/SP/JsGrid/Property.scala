@@ -3,17 +3,17 @@ package typings.sharepoint.global.SP.JsGrid
 import typings.sharepoint.SP.JsGrid.IPropertyBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.JsGrid.Property")
 @js.native
 class Property ()
   extends typings.sharepoint.SP.JsGrid.Property
-
 /* static members */
 @JSGlobal("SP.JsGrid.Property")
 @js.native
 object Property extends js.Object {
+  
   def MakeProperty(
     dataValue: js.Any,
     localizedValue: String,
@@ -21,7 +21,7 @@ object Property extends js.Object {
     bHasLocalizedValue: Boolean,
     propType: js.Any
   ): IPropertyBase = js.native
+  
   def MakePropertyFromGridField(gridField: js.Any, dataValue: js.Any, localizedVal: String): IPropertyBase = js.native
   def MakePropertyFromGridField(gridField: js.Any, dataValue: js.Any, localizedVal: String, optPropType: js.Any): IPropertyBase = js.native
 }
-

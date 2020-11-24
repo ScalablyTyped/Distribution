@@ -2,11 +2,12 @@ package typings.seen.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "Viewports")
 @js.native
 object Viewports extends js.Object {
+  
   def center(): Viewport = js.native
   def center(
     width: js.UndefOr[scala.Nothing],
@@ -28,6 +29,7 @@ object Viewports extends js.Object {
   def center(width: Double, height: Double, x: js.UndefOr[scala.Nothing], y: Double): Viewport = js.native
   def center(width: Double, height: Double, x: Double): Viewport = js.native
   def center(width: Double, height: Double, x: Double, y: Double): Viewport = js.native
+  
   def origin(): Viewport = js.native
   def origin(
     width: js.UndefOr[scala.Nothing],
@@ -50,4 +52,3 @@ object Viewports extends js.Object {
   def origin(width: Double, height: Double, x: Double): Viewport = js.native
   def origin(width: Double, height: Double, x: Double, y: Double): Viewport = js.native
 }
-

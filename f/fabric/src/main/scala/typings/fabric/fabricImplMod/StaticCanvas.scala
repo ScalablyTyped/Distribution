@@ -10,7 +10,7 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "StaticCanvas")
 @js.native
@@ -30,8 +30,9 @@ class StaticCanvas ()
   def this(element: String, options: ICanvasOptions) = this()
   def this(element: Null, options: ICanvasOptions) = this()
   def this(element: HTMLCanvasElement, options: ICanvasOptions) = this()
+  
   var _activeObject: js.UndefOr[Object | Group] = js.native
-  var freeDrawingBrush: FreeDrawingBrush = js.native
+  
   /**
     * Pan viewport so as to place point at top left corner of canvas
     * @param {fabric.Point} point to move to
@@ -39,6 +40,7 @@ class StaticCanvas ()
     * @chainable
     */
   def absolutePan(point: Point): Canvas = js.native
+  
   /**
     * Moves an object or a selection up in stack of drawn objects
     * An optional paramter, intersecting allowes to move the object in front
@@ -52,6 +54,7 @@ class StaticCanvas ()
     */
   def bringForward(`object`: Object): Canvas = js.native
   def bringForward(`object`: Object, intersecting: Boolean): Canvas = js.native
+  
   /**
     * Moves an object or the objects of a multiple selection
     * to the top of the stack of drawn objects
@@ -60,6 +63,7 @@ class StaticCanvas ()
     * @chainable
     */
   def bringToFront(`object`: Object): Canvas = js.native
+  
   /**
     * Calculates canvas element offset relative to the document
     * This method is also attached as "resize" event handler of window
@@ -67,6 +71,7 @@ class StaticCanvas ()
     * @chainable
     */
   def calcOffset(): Canvas = js.native
+  
   /**
     * Calculate the position of the 4 corner of canvas with current viewportTransform.
     * helps to determinate when an object is in the current rendering viewport using
@@ -75,6 +80,7 @@ class StaticCanvas ()
     * @chainable
     */
   def calcViewportBoundaries(): Bl = js.native
+  
   /**
     * Centers object vertically and horizontally in the canvas
     * @param {fabric.Object} object Object to center vertically and horizontally
@@ -82,12 +88,14 @@ class StaticCanvas ()
     * @chainable
     */
   def centerObject(`object`: Object): Canvas = js.native
+  
   /**
     * Centers object horizontally in the canvas
     * @param {fabric.Object} object Object to center horizontally
     * @return {fabric.Canvas} thisArg
     */
   def centerObjectH(`object`: Object): Canvas = js.native
+  
   /**
     * Centers object vertically in the canvas
     * @param {fabric.Object} object Object to center vertically
@@ -95,21 +103,25 @@ class StaticCanvas ()
     * @chainable
     */
   def centerObjectV(`object`: Object): Canvas = js.native
+  
   /**
     * Clears all contexts (background, main, top) of an instance
     * @return {fabric.Canvas} thisArg
     * @chainable
     */
   def clear(): Canvas = js.native
+  
   /**
     * Clears specified context of canvas element
     * @param ctx Context to clear
     * @chainable
     */
   def clearContext(ctx: CanvasRenderingContext2D): Canvas = js.native
+  
   def clone(callback: js.UndefOr[scala.Nothing], properties: js.Array[String]): Unit = js.native
   def clone(callback: js.Any): Unit = js.native
   def clone(callback: js.Any, properties: js.Array[String]): Unit = js.native
+  
   /**
     * Clones canvas instance without cloning existing data.
     * This essentially copies canvas dimensions, clipping properties, etc.
@@ -118,6 +130,7 @@ class StaticCanvas ()
     */
   def cloneWithoutData(): Unit = js.native
   def cloneWithoutData(callback: js.Any): Unit = js.native
+  
   /**
     * Creates markup containing SVG font faces,
     * font URLs for font faces must be collected by developers
@@ -126,56 +139,69 @@ class StaticCanvas ()
     * @return {String}
     */
   def createSVGFontFacesMarkup(objects: js.Array[_]): String = js.native
+  
   /**
     * Creates markup containing SVG referenced elements like patterns, gradients etc.
     * @return {String}
     */
   def createSVGRefElementsMarkup(): String = js.native
+  
   /**
     * Clears a canvas element and dispose objects
     * @return {fabric.Canvas} thisArg
     * @chainable     */
   def dispose(): Canvas = js.native
+  
   /**
     * Paint the cached clipPath on the lowerCanvasEl
     * @param {CanvasRenderingContext2D} ctx Context to render on
     */
   def drawClipPathOnCanvas(ctx: CanvasRenderingContext2D): Unit = js.native
+  
+  var freeDrawingBrush: FreeDrawingBrush = js.native
+  
   /**
     * Returns coordinates of a center of canvas.
     * Returned value is an object with top and left properties
     * @return {Object} object with "top" and "left" number values
     */
   def getCenter(): Left = js.native
+  
   /**
     * Returns context of canvas where objects are drawn
     * @return {CanvasRenderingContext2D}
     */
   def getContext(): CanvasRenderingContext2D = js.native
+  
   /**
     * Returns <canvas> element corresponding to this instance
     * @return {HTMLCanvasElement}
     */
   def getElement(): HTMLCanvasElement = js.native
+  
   /**
     * Returns canvas height (in px)
     * @return {Number}
     */
   def getHeight(): Double = js.native
+  
   /**
     * Calculate the point in canvas that correspond to the center of actual viewport.
     * @return {fabric.Point} vpCenter, viewport center
     */
   def getVpCenter(): Point = js.native
+  
   /**
     * Returns canvas width (in px)
     * @return {Number}
     */
   def getWidth(): Double = js.native
+  
   /**
     * Returns canvas zoom level
     */
   def getZoom(): Double = js.native
+  
   /**
     * Populates canvas with data from the specified dataless JSON.
     * JSON format must conform to the one of {@link fabric.Canvas#toDatalessJSON}
@@ -191,6 +217,7 @@ class StaticCanvas ()
     */
   def loadFromDatalessJSON(json: js.Any, callback: js.Function): Canvas = js.native
   def loadFromDatalessJSON(json: js.Any, callback: js.Function, reviver: js.Function): Canvas = js.native
+  
   /**
     * Populates canvas with data from the specified JSON.
     * JSON format must conform to the one of {@link fabric.Canvas#toJSON}
@@ -203,6 +230,7 @@ class StaticCanvas ()
     */
   def loadFromJSON(json: js.Any, callback: js.Function): Canvas = js.native
   def loadFromJSON(json: js.Any, callback: js.Function, reviver: js.Function): Canvas = js.native
+  
   /**
     * Moves an object to specified level in stack of drawn objects
     * @param {fabric.Object} object Object to send
@@ -211,6 +239,7 @@ class StaticCanvas ()
     * @chainable
     */
   def moveTo(`object`: Object, index: Double): Canvas = js.native
+  
   /**
     * Pans viewpoint relatively
     * @param {fabric.Point} point (position vector) to move by
@@ -218,12 +247,14 @@ class StaticCanvas ()
     * @chainable
     */
   def relativePan(point: Point): Canvas = js.native
+  
   /**
     * Renders the canvas
     * @return {fabric.Canvas} instance
     * @chainable
     */
   def renderAll(): Canvas = js.native
+  
   /**
     * Function created to be instance bound at initialization
     * used in requestAnimationFrame rendering
@@ -235,6 +266,7 @@ class StaticCanvas ()
     * @chainable
     */
   def renderAndReset(): Canvas = js.native
+  
   /**
     * Renders background, objects, overlay and controls.
     * @param {CanvasRenderingContext2D} ctx
@@ -243,6 +275,7 @@ class StaticCanvas ()
     * @chainable
     */
   def renderCanvas(ctx: CanvasRenderingContext2D, objects: js.Array[Object]): Canvas = js.native
+  
   /**
     * Append a renderAll request to next animation frame.
     * unless one is already in progress, in that case nothing is done
@@ -251,6 +284,7 @@ class StaticCanvas ()
     * @chainable
     */
   def requestRenderAll(): Canvas = js.native
+  
   /**
     * Moves an object or a selection down in stack of drawn objects
     * An optional paramter, intersecting allowes to move the object in behind
@@ -264,6 +298,7 @@ class StaticCanvas ()
     */
   def sendBackwards(`object`: Object): Canvas = js.native
   def sendBackwards(`object`: Object, intersecting: Boolean): Canvas = js.native
+  
   /**
     * Moves an object or the objects of a multiple selection
     * to the bottom of the stack of drawn objects
@@ -272,6 +307,7 @@ class StaticCanvas ()
     * @chainable
     */
   def sendToBack(`object`: Object): Canvas = js.native
+  
   /**
     * Sets {@link fabric.StaticCanvas#backgroundColor|background color} for this canvas
     * @param {(String|fabric.Pattern)} backgroundColor Color or pattern to set background color to
@@ -282,6 +318,7 @@ class StaticCanvas ()
   def setBackgroundColor(backgroundColor: String, callback: js.Function): Canvas = js.native
   def setBackgroundColor(backgroundColor: Gradient, callback: js.Function): Canvas = js.native
   def setBackgroundColor(backgroundColor: Pattern, callback: js.Function): Canvas = js.native
+  
   def setBackgroundImage(image: String, callback: js.Function): Canvas = js.native
   def setBackgroundImage(image: String, callback: js.Function, options: IImageOptions): Canvas = js.native
   /**
@@ -294,6 +331,7 @@ class StaticCanvas ()
     */
   def setBackgroundImage(image: Image, callback: js.Function): Canvas = js.native
   def setBackgroundImage(image: Image, callback: js.Function, options: IImageOptions): Canvas = js.native
+  
   /**
     * Sets dimensions (width, height) of this canvas instance. when options.cssOnly flag active you should also supply the unit of measure (px/%/em)
     * @param        dimensions                    Object with width/height properties
@@ -303,6 +341,7 @@ class StaticCanvas ()
     */
   def setDimensions(dimensions: ICanvasDimensions): Canvas = js.native
   def setDimensions(dimensions: ICanvasDimensions, options: ICanvasDimensionsOptions): Canvas = js.native
+  
   def setHeight(value: String): Canvas = js.native
   def setHeight(value: String, options: ICanvasDimensionsOptions): Canvas = js.native
   /**
@@ -314,6 +353,7 @@ class StaticCanvas ()
     */
   def setHeight(value: Double): Canvas = js.native
   def setHeight(value: Double, options: ICanvasDimensionsOptions): Canvas = js.native
+  
   /**
     * Sets {@link fabric.StaticCanvas#overlayColor|foreground color} for this canvas
     * @param {(String|fabric.Pattern)} overlayColor Color or pattern to set foreground color to
@@ -323,6 +363,7 @@ class StaticCanvas ()
     */
   def setOverlayColor(overlayColor: String, callback: js.Function): Canvas = js.native
   def setOverlayColor(overlayColor: Pattern, callback: js.Function): Canvas = js.native
+  
   def setOverlayImage(image: String, callback: js.Function): Canvas = js.native
   def setOverlayImage(image: String, callback: js.Function, options: IImageOptions): Canvas = js.native
   /**
@@ -335,6 +376,7 @@ class StaticCanvas ()
     */
   def setOverlayImage(image: Image, callback: js.Function): Canvas = js.native
   def setOverlayImage(image: Image, callback: js.Function, options: IImageOptions): Canvas = js.native
+  
   /**
     * Sets viewport transform of this canvas instance
     * @param {Array} vpt the transform in the form of context.transform
@@ -342,6 +384,7 @@ class StaticCanvas ()
     * @chainable
     */
   def setViewportTransform(vpt: js.Array[Double]): Canvas = js.native
+  
   def setWidth(value: String): Canvas = js.native
   def setWidth(value: String, options: ICanvasDimensionsOptions): Canvas = js.native
   /**
@@ -353,6 +396,7 @@ class StaticCanvas ()
     */
   def setWidth(value: Double): Canvas = js.native
   def setWidth(value: Double, options: ICanvasDimensionsOptions): Canvas = js.native
+  
   /**
     * Sets zoom level of this canvas instance
     * @param {Number} value to set zoom to, less than 1 zooms out
@@ -360,6 +404,7 @@ class StaticCanvas ()
     * @chainable
     */
   def setZoom(value: Double): Canvas = js.native
+  
   /**
     * Straightens object, then rerenders canvas
     * @param {fabric.Object} object Object to straighten
@@ -367,12 +412,14 @@ class StaticCanvas ()
     * @chainable
     */
   def straightenObject(`object`: Object): Canvas = js.native
+  
   /**
     * Exports canvas element to a dataurl image. Note that when multiplier is used, cropping is scaled appropriately
     * @param [options] Options object
     */
   def toDataURL(): String = js.native
   def toDataURL(options: IDataURLOptions): String = js.native
+  
   /**
     * Returs dataless JSON representation of canvas
     * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
@@ -380,6 +427,7 @@ class StaticCanvas ()
     */
   def toDatalessJSON(): String = js.native
   def toDatalessJSON(propertiesToInclude: js.Array[String]): String = js.native
+  
   /**
     * Returns dataless object representation of canvas
     * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
@@ -387,6 +435,7 @@ class StaticCanvas ()
     */
   def toDatalessObject(): js.Any = js.native
   def toDatalessObject(propertiesToInclude: js.Array[String]): js.Any = js.native
+  
   /**
     * Returns JSON representation of canvas
     * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
@@ -394,6 +443,7 @@ class StaticCanvas ()
     */
   def toJSON(): String = js.native
   def toJSON(propertiesToInclude: js.Array[String]): String = js.native
+  
   /**
     * Returns object representation of canvas
     * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
@@ -401,6 +451,7 @@ class StaticCanvas ()
     */
   def toObject(): js.Any = js.native
   def toObject(propertiesToInclude: js.Array[String]): js.Any = js.native
+  
   /**
     * Returns SVG representation of canvas
     * @param [options] Options object for SVG output
@@ -411,6 +462,7 @@ class StaticCanvas ()
   def toSVG(options: js.UndefOr[scala.Nothing], reviver: js.Function): String = js.native
   def toSVG(options: IToSVGOptions): String = js.native
   def toSVG(options: IToSVGOptions, reviver: js.Function): String = js.native
+  
   /**
     * Centers object vertically and horizontally in the viewport
     * @param {fabric.Object} object Object to center vertically and horizontally
@@ -418,6 +470,7 @@ class StaticCanvas ()
     * @chainable
     */
   def viewportCenterObject(`object`: Object): Canvas = js.native
+  
   /**
     * Centers object horizontally in the viewport, object.top is unchanged
     * @param {fabric.Object} object Object to center vertically and horizontally
@@ -425,6 +478,7 @@ class StaticCanvas ()
     * @chainable
     */
   def viewportCenterObjectH(`object`: Object): Canvas = js.native
+  
   /**
     * Centers object Vertically in the viewport, object.top is unchanged
     * @param {fabric.Object} object Object to center vertically and horizontally
@@ -432,6 +486,7 @@ class StaticCanvas ()
     * @chainable
     */
   def viewportCenterObjectV(`object`: Object): Canvas = js.native
+  
   /**
     * Sets zoom level of this canvas instance, zoom centered around point
     * @param {fabric.Point} point to zoom with respect to
@@ -441,17 +496,18 @@ class StaticCanvas ()
     */
   def zoomToPoint(point: Point, value: Double): Canvas = js.native
 }
-
 /* static members */
 @JSImport("fabric/fabric-impl", "StaticCanvas")
 @js.native
 object StaticCanvas extends js.Object {
+  
   /**
     * @static
     * @type String
     * @default
     */
   var EMPTY_JSON: String = js.native
+  
   /**
     * Provides a way to check support of some of the canvas methods
     * (either those of HTMLCanvasElement itself, or rendering context)
@@ -469,6 +525,7 @@ object StaticCanvas extends js.Object {
   def supports_toDataURL(methodName: toDataURL): Boolean = js.native
   @JSName("supports")
   def supports_toDataURLWithQuality(methodName: toDataURLWithQuality): Boolean = js.native
+  
   /**
     * Returns JSON representation of canvas
     * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
@@ -476,4 +533,3 @@ object StaticCanvas extends js.Object {
   def toJSON(): String = js.native
   def toJSON(propertiesToInclude: js.Array[String]): String = js.native
 }
-

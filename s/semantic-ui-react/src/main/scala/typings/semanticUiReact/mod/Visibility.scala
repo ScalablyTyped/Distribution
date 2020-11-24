@@ -7,7 +7,7 @@ import typings.react.mod.ComponentState
 import typings.semanticUiReact.visibilityVisibilityMod.VisibilityProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Visibility")
 @js.native
@@ -16,8 +16,6 @@ class Visibility protected ()
   def this(props: VisibilityProps) = this()
   def this(props: VisibilityProps, context: js.Any) = this()
 }
-
 @JSImport("semantic-ui-react", "Visibility")
 @js.native
 object Visibility extends TopLevel[ComponentClass[VisibilityProps, ComponentState]]
-

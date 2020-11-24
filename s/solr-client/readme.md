@@ -12,7 +12,7 @@ A Solr client library for indexing, adding, deleting, committing, optimizing and
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 32 |
-| # downloads        | 521254 |
+| # downloads        | 627363 |
 | # stars            | 13 |
 
 ## Links

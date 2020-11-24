@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Routes")
 @js.native
 class ResourceRoutes protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.routes.delete
     * @desc Deletes the specified Route resource.
@@ -99,6 +101,7 @@ class ResourceRoutes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.routes.get
     * @desc Returns the specified Route resource. Gets a list of available
@@ -185,6 +188,7 @@ class ResourceRoutes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRoute]
   ): Unit = js.native
+  
   /**
     * compute.routes.insert
     * @desc Creates a Route resource in the specified project using the data
@@ -273,6 +277,7 @@ class ResourceRoutes protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.routes.list
     * @desc Retrieves the list of Route resources available to the specified
@@ -373,4 +378,3 @@ class ResourceRoutes protected () extends js.Object {
     callback: BodyResponseCallback[SchemaRouteList]
   ): Unit = js.native
 }
-

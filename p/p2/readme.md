@@ -11,8 +11,8 @@ A JavaScript 2D physics engine.
 | Full name          | p2 |
 | Keywords           | p2.js, p2, physics, engine, 2d |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 21250 |
+| # dependents       | 16 |
+| # downloads        | 19998 |
 | # stars            | 3 |
 
 ## Links

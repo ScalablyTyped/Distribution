@@ -3,7 +3,7 @@ package typings.seleniumWebdriver.ieMod
 import typings.seleniumWebdriver.remoteMod.DriverService.Builder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver/ie", "ServiceBuilder")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class ServiceBuilder () extends Builder {
   def this(opt_exe: String) = this()
 }
-

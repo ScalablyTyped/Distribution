@@ -3,11 +3,12 @@ package typings.strophe.mod.Strophe
 import typings.std.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strophe", "Strophe.xmlTextNode")
 @js.native
 object xmlTextNode extends js.Object {
+  
   /** Function: xmlTextNode
     *  Creates an XML DOM text node.
     *
@@ -21,4 +22,3 @@ object xmlTextNode extends js.Object {
     */
   def apply(text: String): Text = js.native
 }
-

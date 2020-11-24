@@ -3,7 +3,7 @@ package typings.baidumapWebSdk.global.BMap
 import typings.baidumapWebSdk.BMap.WalkingRouteOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BMap.WalkingRoute")
 @js.native
@@ -16,4 +16,3 @@ class WalkingRoute protected ()
   def this(location: typings.baidumapWebSdk.BMap.Map, opts: WalkingRouteOptions) = this()
   def this(location: typings.baidumapWebSdk.BMap.Point, opts: WalkingRouteOptions) = this()
 }
-

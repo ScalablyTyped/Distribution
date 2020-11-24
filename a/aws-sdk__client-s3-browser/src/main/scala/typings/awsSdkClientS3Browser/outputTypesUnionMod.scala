@@ -5,11 +5,12 @@ import typings.awsSdkClientS3Browser.typesGetObjectTorrentOutputMod.GetObjectTor
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-s3-browser/types/OutputTypesUnion", JSImport.Namespace)
 @js.native
 object outputTypesUnionMod extends js.Object {
+  
   trait _OutputTypesUnion extends js.Object
   
   /* Rewritten from type alias, can be one of: 
@@ -94,4 +95,3 @@ object outputTypesUnionMod extends js.Object {
   */
   type OutputTypesUnion = _OutputTypesUnion | GetObjectOutput[Blob] | GetObjectTorrentOutput[Blob]
 }
-

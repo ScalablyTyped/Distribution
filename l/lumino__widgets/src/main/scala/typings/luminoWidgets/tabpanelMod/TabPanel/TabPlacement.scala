@@ -2,7 +2,7 @@ package typings.luminoWidgets.tabpanelMod.TabPanel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A type alias for tab placement in a tab bar.
@@ -14,15 +14,17 @@ import scala.scalajs.js.annotation._
   - typings.luminoWidgets.luminoWidgetsStrings.bottom
 */
 trait TabPlacement extends js.Object
-
 object TabPlacement {
+  
   @scala.inline
   def bottom: typings.luminoWidgets.luminoWidgetsStrings.bottom = "bottom".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.bottom]
+  
   @scala.inline
   def left: typings.luminoWidgets.luminoWidgetsStrings.left = "left".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.left]
+  
   @scala.inline
   def right: typings.luminoWidgets.luminoWidgetsStrings.right = "right".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.right]
+  
   @scala.inline
   def top: typings.luminoWidgets.luminoWidgetsStrings.top = "top".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.top]
 }
-

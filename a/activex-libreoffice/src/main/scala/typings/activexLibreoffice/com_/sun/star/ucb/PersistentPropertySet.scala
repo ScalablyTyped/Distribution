@@ -12,7 +12,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service contains the interfaces to implement by objects returned by {@link XPropertySetRegistry.openPropertySet()} . */
 @js.native
@@ -21,8 +21,8 @@ trait PersistentPropertySet
      with XNamed
      with XPropertyContainer
      with XPropertyAccess
-
 object PersistentPropertySet {
+  
   @scala.inline
   def apply(
     Key: String,
@@ -53,4 +53,3 @@ object PersistentPropertySet {
     __obj.asInstanceOf[PersistentPropertySet]
   }
 }
-

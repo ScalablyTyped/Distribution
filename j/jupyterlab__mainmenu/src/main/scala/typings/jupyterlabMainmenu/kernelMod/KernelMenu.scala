@@ -7,7 +7,7 @@ import typings.luminoWidgets.mod.Widget
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.luminoDisposable.mod.IDisposable because Already inherited
@@ -19,9 +19,9 @@ class KernelMenu protected () extends JupyterLabMenu {
     * Construct the kernel menu.
     */
   def this(options: IOptions) = this()
+  
   /**
     * A set storing IKernelUsers for the Kernel menu.
     */
   val kernelUsers: Set[IKernelUser[Widget]] = js.native
 }
-

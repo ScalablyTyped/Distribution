@@ -2,7 +2,7 @@ package typings.loginWithAmazonSdkBrowser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base interface that contains common members to an `authorize` request (whether for token or code).
@@ -10,22 +10,22 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AuthorizeRequestBase[T /* <: AuthorizeRequest */] extends js.Object {
+  
   /**
     * A short error code indicating why the authorization failed.
     */
   var error: js.UndefOr[AuthorizeRequestErrorType] = js.native
+  
   /**
     * A human-readable description of the error.
     */
   var error_description: js.UndefOr[String] = js.native
+  
   /**
     * A URI for a web page with more information on the error.
     */
   var error_uri: js.UndefOr[String] = js.native
-  /**
-    * The current status of the request.
-    */
-  var status: AuthorizeRequestStatus = js.native
+  
   /**
     * Registers a callback function or sets a redirect URI to call when the
     * authorization request is complete. If this function is called after the
@@ -38,5 +38,9 @@ trait AuthorizeRequestBase[T /* <: AuthorizeRequest */] extends js.Object {
     */
   def onComplete(next: String): Unit = js.native
   def onComplete(next: NextCallback[T]): Unit = js.native
+  
+  /**
+    * The current status of the request.
+    */
+  var status: AuthorizeRequestStatus = js.native
 }
-

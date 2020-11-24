@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassXmlAttr extends ClassObject {
+  
   /**
     * class prop 
     *
@@ -22,6 +23,7 @@ trait ClassXmlAttr extends ClassObject {
     * @type String
     */
   var localName: String = js.native
+  
   /**
     * class prop 
     *
@@ -33,6 +35,7 @@ trait ClassXmlAttr extends ClassObject {
     * @type String
     */
   var name: String = js.native
+  
   /**
     * class prop 
     *
@@ -44,6 +47,7 @@ trait ClassXmlAttr extends ClassObject {
     * @type String
     */
   var namespaceURI: String = js.native
+  
   /**
     * class prop 
     *
@@ -55,6 +59,7 @@ trait ClassXmlAttr extends ClassObject {
     * @type String
     */
   var nodeName: String = js.native
+  
   /**
     * class prop 
     *
@@ -66,6 +71,7 @@ trait ClassXmlAttr extends ClassObject {
     * @type String
     */
   var nodeValue: String = js.native
+  
   /**
     * class prop 
     *
@@ -77,6 +83,7 @@ trait ClassXmlAttr extends ClassObject {
     * @type String
     */
   var prefix: String = js.native
+  
   /**
     * class prop 
     *
@@ -89,4 +96,3 @@ trait ClassXmlAttr extends ClassObject {
     */
   var value: String = js.native
 }
-

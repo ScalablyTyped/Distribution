@@ -5,11 +5,12 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("next-server/dist/server/send-html", JSImport.Namespace)
 @js.native
 object sendHtmlMod extends js.Object {
+  
   def sendHTML(
     req: IncomingMessage,
     res: ServerResponse,
@@ -17,4 +18,3 @@ object sendHtmlMod extends js.Object {
     hasGenerateEtagsPoweredByHeader: GenerateEtags
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassFiber extends ClassObject {
+  
   /**
     * class prop 
     *
@@ -21,6 +22,7 @@ trait ClassFiber extends ClassObject {
     * @type Fiber
     */
   var caller: ClassFiber = js.native
+  
   /**
     * class prop 
     *
@@ -31,6 +33,15 @@ trait ClassFiber extends ClassObject {
     * @type Long
     */
   var id: Double = js.native
+  
+  /**
+    * 
+    * @brief 等待纤程结束
+    * 
+    * 
+    */
+  def join(): Unit = js.native
+  
   /**
     * class prop 
     *
@@ -41,12 +52,4 @@ trait ClassFiber extends ClassObject {
     * @type String
     */
   var stack: String = js.native
-  /**
-    * 
-    * @brief 等待纤程结束
-    * 
-    * 
-    */
-  def join(): Unit = js.native
 }
-

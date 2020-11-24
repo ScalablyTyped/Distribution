@@ -4,7 +4,7 @@ import typings.std.Date
 import typings.strange.mod.Range
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create an interval tree node.
@@ -21,12 +21,16 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RangeTree[T /* <: Date | Double | String */] extends js.Object {
+  
   /**
     * Ranges of current tree node.
     */
   var keys: js.Array[Range[T]] = js.native
+  
   var left: RangeTree[T] | Null = js.native
+  
   var right: RangeTree[T] | Null = js.native
+  
   /**
     * Search for ranges that include the given value or, given a range, intersect
     * with it.
@@ -43,4 +47,3 @@ trait RangeTree[T /* <: Date | Double | String */] extends js.Object {
   def search(valueOrRange: T): js.Array[Range[T]] = js.native
   def search(valueOrRange: Range[T]): js.Array[Range[T]] = js.native
 }
-

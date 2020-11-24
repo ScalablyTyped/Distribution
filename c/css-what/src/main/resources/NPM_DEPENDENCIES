@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "css-what" : "3.4.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "css-what" : "3.4.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -2,28 +2,32 @@ package typings.servicenowLondon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ScopedGlideElement extends js.Object {
+  
   /**
     * Determines if the user's role permits the creation of new records in this field.
     *
     * @returns True if the field can be created, false otherwise.
     */
   def canCreate(): Boolean = js.native
+  
   /**
     * Indicates whether the user's role permits them to read the associated GlideRecord.
     *
     * @returns True if the field can be read, false otherwise.
     */
   def canRead(): Boolean = js.native
+  
   /**
     * Determines whether the user's role permits them to write to the associated GlideRecord.
     *
     * @returns True if the user can write to the field, false otherwise.
     */
   def canWrite(): Boolean = js.native
+  
   /**
     * Determines if the current field has been modified. This functionality is available for all
     * available data types, except Journal fields.
@@ -45,6 +49,7 @@ trait ScopedGlideElement extends js.Object {
     * }
     */
   def changes(): Boolean = js.native
+  
   /**
     * Determines if the previous value of the current field matches the specified object.
     *
@@ -63,6 +68,7 @@ trait ScopedGlideElement extends js.Object {
     * }
     */
   def changesFrom(o: js.Any): Boolean = js.native
+  
   /**
     * Determines if the new value of a field, after a change, matches the specified object.
     *
@@ -79,6 +85,7 @@ trait ScopedGlideElement extends js.Object {
     * }
     */
   def changesTo(o: js.Any): Boolean = js.native
+  
   /**
     * Returns the value of the specified attribute from the dictionary.
     *
@@ -100,6 +107,7 @@ trait ScopedGlideElement extends js.Object {
     * }
     */
   def getAttribute(attributeName: String): String = js.native
+  
   /**
     * Returns the Boolean value of the specified attribute from the dictionary.
     *
@@ -109,6 +117,7 @@ trait ScopedGlideElement extends js.Object {
     * @returns Boolean value of the attribute. Returns false if the attribute does not exist.
     */
   def getBooleanAttribute(attributeName: String): Boolean = js.native
+  
   /**
     * Returns the choice label for the current choice.
     *
@@ -125,6 +134,7 @@ trait ScopedGlideElement extends js.Object {
     * // 1 - High
     */
   def getChoiceValue(): String = js.native
+  
   /**
     * Generates a choice list for a field.
     *
@@ -142,6 +152,7 @@ trait ScopedGlideElement extends js.Object {
     */
   def getChoices(): js.Array[_] = js.native
   def getChoices(dependent: String): js.Array[_] = js.native
+  
   /**
     * Returns the clear text value for Password (2 way encrypted) fields in scoped
     * applications.
@@ -160,6 +171,7 @@ trait ScopedGlideElement extends js.Object {
     * gs.info(decrypted);
     */
   def getDecryptedValue(): String = js.native
+  
   /**
     * Gets the formatted display value of the field.
     *
@@ -174,6 +186,7 @@ trait ScopedGlideElement extends js.Object {
     */
   def getDisplayValue(): String = js.native
   def getDisplayValue(maxCharacters: Double): String = js.native
+  
   /**
     * Returns the field's element descriptor.
     *
@@ -187,12 +200,14 @@ trait ScopedGlideElement extends js.Object {
     * var ed = field.getED();
     */
   def getED(): ScopedElementDescriptor = js.native
+  
   /**
     * Returns the phone number in international format.
     *
     * @returns The phone number in international format.
     */
   def getGlobalDisplayValue(): js.Any = js.native
+  
   /**
     * Returns the HTML value of a field.
     *
@@ -207,6 +222,7 @@ trait ScopedGlideElement extends js.Object {
     */
   def getHTMLValue(): String = js.native
   def getHTMLValue(maxChars: Double): String = js.native
+  
   /**
     * Returns either the most recent journal entry or all journal entries.
     *
@@ -228,6 +244,7 @@ trait ScopedGlideElement extends js.Object {
     *   gs.print(na[i]);
     */
   def getJournalEntry(mostRecent: Double): String = js.native
+  
   /**
     * Returns the object label.
     *
@@ -261,12 +278,14 @@ trait ScopedGlideElement extends js.Object {
     * }
     */
   def getLabel(): String = js.native
+  
   /**
     * Returns the name of the field.
     *
     * @returns Field name
     */
   def getName(): String = js.native
+  
   /**
     * Returns a GlideRecord object for a given reference element.
     *
@@ -285,6 +304,7 @@ trait ScopedGlideElement extends js.Object {
     * }
     */
   def getRefRecord(): ScopedGlideRecord = js.native
+  
   /**
     * Gets the table name for a reference element.
     *
@@ -300,6 +320,7 @@ trait ScopedGlideElement extends js.Object {
     * }
     */
   def getReferenceTable(): String = js.native
+  
   /**
     * Returns the name of the table on which the field resides.
     *
@@ -332,6 +353,7 @@ trait ScopedGlideElement extends js.Object {
     * }
     */
   def getTableName(): String = js.native
+  
   /**
     * Determines if a field is null.
     *
@@ -344,6 +366,7 @@ trait ScopedGlideElement extends js.Object {
     * gs.info(glideRecord.state.nil());
     */
   def nil(): Boolean = js.native
+  
   /**
     * Sets the value of a date/time element to the specified number of milliseconds since
     * January 1, 1970 00:00:00 GMT.
@@ -356,6 +379,7 @@ trait ScopedGlideElement extends js.Object {
     * gr.opened_at.setDateNumericValue(10000);
     */
   def setDateNumericValue(milliseconds: Double): Unit = js.native
+  
   /**
     * Sets the display value of the field.
     *
@@ -371,6 +395,7 @@ trait ScopedGlideElement extends js.Object {
     * gs.info(glideRecord.urgency);
     */
   def setDisplayValue(value: js.Object): Unit = js.native
+  
   /**
     * Adds an error message. Available in Fuji patch 3.
     *
@@ -384,6 +409,7 @@ trait ScopedGlideElement extends js.Object {
     * glideRecord.short_description.setError('Error text');
     */
   def setError(errorMessage: String): Unit = js.native
+  
   /**
     * Sets the field to the specified phone number.
     *
@@ -395,6 +421,7 @@ trait ScopedGlideElement extends js.Object {
     * @returns True if the value was set.
     */
   def setPhoneNumber(phoneNumber: js.Any, strict: Boolean): Boolean = js.native
+  
   /**
     * Sets the value of a field.
     *
@@ -410,4 +437,3 @@ trait ScopedGlideElement extends js.Object {
     */
   def setValue(value: js.Any): Unit = js.native
 }
-

@@ -69,7 +69,7 @@ import typings.agoraRtcSdk.anon.Video
 import typings.agoraRtcSdk.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Client interface provides major functions for a voice/video call, such as joining a channel and publishing a stream.
@@ -78,6 +78,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Client extends js.Object {
+  
   /**
     * Injects an Online Media Stream to a Live Broadcast
     *
@@ -100,6 +101,7 @@ trait Client extends js.Object {
     * @param config Configuration of the inject stream, see {@link InjectStreamConfig} for details.
     */
   def addInjectStreamUrl(url: String, config: InjectStreamConfig): Unit = js.native
+  
   /**
     * Configures the CDN Live Streaming
     *
@@ -135,6 +137,7 @@ trait Client extends js.Object {
     *                     ASCII characters only, and the string length must be greater than 0 and less than 256 bytes.
     */
   def configPublisher(width: Double, height: Double, framerate: Double, bitrate: Double, publisherUrl: String): Unit = js.native
+  
   /**
     * Disables Dual Streams
     *
@@ -156,6 +159,7 @@ trait Client extends js.Object {
   def disableDualStream(onSuccess: js.UndefOr[scala.Nothing], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   def disableDualStream(onSuccess: js.Function0[Unit]): Unit = js.native
   def disableDualStream(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
+  
   /**
     * Enables Volume Indicator
     *
@@ -177,6 +181,7 @@ trait Client extends js.Object {
     * ```
     */
   def enableAudioVolumeIndicator(): Unit = js.native
+  
   /**
     * Enables Dual Stream
     *
@@ -216,6 +221,7 @@ trait Client extends js.Object {
   def enableDualStream(onSuccess: js.UndefOr[scala.Nothing], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   def enableDualStream(onSuccess: js.Function0[Unit]): Unit = js.native
   def enableDualStream(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
+  
   /**
     * Enumerates Video Input Devices
     *
@@ -224,6 +230,7 @@ trait Client extends js.Object {
     * If this method succeeds, the SDK returns a list of video input devices in an array of [[MediaDeviceInfo]] objects.
     */
   def getCameras(callback: js.Function1[/* devices */ js.Array[MediaDeviceInfo], Unit]): Unit = js.native
+  
   /**
     * Gets the Connection State
     *
@@ -241,6 +248,7 @@ trait Client extends js.Object {
     * - `DISCONNECTING`: The SDK is disconnecting from Agora's edge server. The SDK enters this state when calling [[Client.leave]].
     */
   def getConnectionState(): String = js.native
+  
   /**
     * Retrieves the Audio Statistics of the Local Stream
     *
@@ -269,6 +277,7 @@ trait Client extends js.Object {
     * ```
     */
   def getLocalAudioStats(callback: js.Function1[/* stats */ LocalAudioStatsMap, Unit]): Unit = js.native
+  
   /**
     * Retrieves the Video Statistics of the Local Stream
     *
@@ -303,6 +312,7 @@ trait Client extends js.Object {
     * ```
     */
   def getLocalVideoStats(callback: js.Function1[/* stats */ LocalVideoStatsMap, Unit]): Unit = js.native
+  
   /**
     * Gets the Statistics of the System Network
     *
@@ -328,6 +338,7 @@ trait Client extends js.Object {
     * ```
     */
   def getNetworkStats(callback: js.Function1[/* stats */ NetworkStats, Unit]): Unit = js.native
+  
   /**
     * Enumerates Audio Output Devices
     *
@@ -340,6 +351,7 @@ trait Client extends js.Object {
     * Only Chrome 49 or later supports this function.
     */
   def getPlayoutDevices(callback: js.Function1[/* devices */ js.Array[MediaDeviceInfo], Unit]): Unit = js.native
+  
   /**
     * Enumerates Audio Input Devices
     *
@@ -348,6 +360,7 @@ trait Client extends js.Object {
     * If this method succeeds, the SDK returns a list of audio input devices in an array of [[MediaDeviceInfo]] objects.
     */
   def getRecordingDevices(callback: js.Function1[/* devices */ js.Array[MediaDeviceInfo], Unit]): Unit = js.native
+  
   /**
     * Retrieves the Audio Statistics of the Remote Stream
     *
@@ -379,6 +392,7 @@ trait Client extends js.Object {
     * ```
     */
   def getRemoteAudioStats(callback: js.Function1[/* stats */ RemoteAudioStatsMap, Unit]): Unit = js.native
+  
   /**
     * Retrieves the Video Statistics of the Remote Stream
     *
@@ -414,6 +428,7 @@ trait Client extends js.Object {
     *
     */
   def getRemoteVideoStats(callback: js.Function1[/* stats */ RemoteVideoStatsMap, Unit]): Unit = js.native
+  
   /**
     * Gets the Statistics of the Session
     *
@@ -440,6 +455,7 @@ trait Client extends js.Object {
     * ```
     */
   def getSessionStats(callback: js.Function1[/* stats */ SessionStats, Unit]): Unit = js.native
+  
   /**
     * Gets the Statistics of the System
     *
@@ -462,6 +478,7 @@ trait Client extends js.Object {
     * ```
     */
   def getSystemStats(callback: js.Function1[/* stats */ SystemStats, Unit]): Unit = js.native
+  
   /**
     * Gets the Statistics of the Transmission
     *
@@ -485,6 +502,7 @@ trait Client extends js.Object {
     * ```
     */
   def getTransportStats(callback: js.Function1[/* stats */ TransportStats, Unit]): Unit = js.native
+  
   /**
     * Initializes a Client Object
     *
@@ -513,6 +531,7 @@ trait Client extends js.Object {
   ): Unit = js.native
   def init(appId: String, onSuccess: js.Function0[Unit]): Unit = js.native
   def init(appId: String, onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
+  
   /**
     * Joins an AgoraRTC Channel
     *
@@ -685,6 +704,7 @@ trait Client extends js.Object {
     onSuccess: js.Function1[/* uid */ Double | String, Unit],
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
+  
   /**
     * Leaves an AgoraRTC Channel
     *
@@ -714,6 +734,7 @@ trait Client extends js.Object {
   def leave(onSuccess: js.UndefOr[scala.Nothing], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   def leave(onSuccess: js.Function0[Unit]): Unit = js.native
   def leave(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
+  
   /**
     * Unbinds Events
     *
@@ -732,6 +753,7 @@ trait Client extends js.Object {
     * ```
     */
   def off(eventType: String, callback: js.Any): Unit = js.native
+  
   /**
     * **DEPRECATED** from 3.0.2. Use `Client.on("volume-indicator")` instead.
     *
@@ -1375,6 +1397,7 @@ trait Client extends js.Object {
     */
   @JSName("on")
   def on_volumeindicator(event: `volume-indicator`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Publishes a Local Stream
     *
@@ -1404,6 +1427,7 @@ trait Client extends js.Object {
     */
   def publish(stream: Stream): Unit = js.native
   def publish(stream: Stream, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
+  
   /**
     * Removes the Injected Stream
     *
@@ -1411,6 +1435,7 @@ trait Client extends js.Object {
     * @param url URL address of the live streaming. ASCII characters only, and the string length must be greater that 0 and less than 256 bytes.
     */
   def removeInjectStreamUrl(url: String): Unit = js.native
+  
   /**
     * Renews the Channel Key
     *
@@ -1428,6 +1453,7 @@ trait Client extends js.Object {
   def renewChannelKey(key: String, onSuccess: js.UndefOr[scala.Nothing], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   def renewChannelKey(key: String, onSuccess: js.Function0[Unit]): Unit = js.native
   def renewChannelKey(key: String, onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
+  
   /**
     * Renews the Token
     *
@@ -1439,6 +1465,7 @@ trait Client extends js.Object {
     * @param token Specifies the renewed Token.
     */
   def renewToken(token: String): Unit = js.native
+  
   /**
     * Sends metadata.
     *
@@ -1455,6 +1482,7 @@ trait Client extends js.Object {
     * @param callback The result of sending metadata.
     */
   def sendMetadata(data: String, callback: js.Function1[/* err */ Null | String, Unit]): Unit = js.native
+  
   /**
     * Sets the role of the user.
     *
@@ -1503,6 +1531,7 @@ trait Client extends js.Object {
   def setClientRole_host(role: host): Unit = js.native
   @JSName("setClientRole")
   def setClientRole_host(role: host, callback: js.Function1[/* err */ js.UndefOr[String | Null], Unit]): Unit = js.native
+  
   @JSName("setEncryptionMode")
   def setEncryptionMode_aes128ecb(encryptionMode: `aes-128-ecb`): Unit = js.native
   /**
@@ -1528,6 +1557,7 @@ trait Client extends js.Object {
   def setEncryptionMode_aes128xts(encryptionMode: `aes-128-xts`): Unit = js.native
   @JSName("setEncryptionMode")
   def setEncryptionMode_aes256xts(encryptionMode: `aes-256-xts`): Unit = js.native
+  
   /**
     * Enables Built-in Encryption
     *
@@ -1544,6 +1574,7 @@ trait Client extends js.Object {
     * @param password The encryption password. ASCII characters only, and the string length must be greater than 0 and less than 256 bytes.
     */
   def setEncryptionSecret(password: String): Unit = js.native
+  
   /**
     * Sets Live Transcoding
     *
@@ -1558,6 +1589,7 @@ trait Client extends js.Object {
     * @param coding Transcoding settings, see {@link LiveTranscoding} for details.
     */
   def setLiveTranscoding(coding: LiveTranscoding): Unit = js.native
+  
   /**
     * Sets the video profile of the low-quality video stream
     *
@@ -1579,6 +1611,7 @@ trait Client extends js.Object {
     * @param param The video profile of the low-quality video stream.
     */
   def setLowStreamParameter(param: Bitrate): Unit = js.native
+  
   /**
     * Deploys a Proxy Server
     *
@@ -1596,6 +1629,7 @@ trait Client extends js.Object {
     */
   def setProxyServer(): Unit = js.native
   def setProxyServer(proxyServer: String): Unit = js.native
+  
   /**
     * Sets the stream type of a remote stream
     *
@@ -1627,6 +1661,7 @@ trait Client extends js.Object {
   def setRemoteVideoStreamType_0(stream: Stream, streamType: typings.agoraRtcSdk.agoraRtcSdkNumbers.`0`): Unit = js.native
   @JSName("setRemoteVideoStreamType")
   def setRemoteVideoStreamType_1(stream: Stream, streamType: `1`): Unit = js.native
+  
   /**
     * Sets Stream Fallback Option
     *
@@ -1660,6 +1695,7 @@ trait Client extends js.Object {
   def setStreamFallbackOption_1(stream: Stream, fallbackType: `1`): Unit = js.native
   @JSName("setStreamFallbackOption")
   def setStreamFallbackOption_2(stream: Stream, fallbackType: `2`): Unit = js.native
+  
   /**
     * Deploys the TURN Server
     *
@@ -1675,6 +1711,7 @@ trait Client extends js.Object {
     */
   def setTurnServer(): Unit = js.native
   def setTurnServer(turnServer: js.Array[Forceturn]): Unit = js.native
+  
   /**
     * Starts relaying media streams across channels.
     *
@@ -1717,6 +1754,7 @@ trait Client extends js.Object {
     config: ChannelMediaRelayConfiguration,
     callback: js.Function1[/* err */ Null | ChannelMediaError, Unit]
   ): Unit = js.native
+  
   /**
     * Starts a Live Stream
     *
@@ -1740,6 +1778,7 @@ trait Client extends js.Object {
     */
   def startLiveStreaming(url: String): Unit = js.native
   def startLiveStreaming(url: String, enableTranscoding: Boolean): Unit = js.native
+  
   /**
     * Enables Cloud Proxy
     *
@@ -1748,6 +1787,7 @@ trait Client extends js.Object {
     * To use the cloud proxy service, some extra settings are needed, see [Use Cloud Proxy](https://docs.agora.io/en/Interactive%20Broadcast/cloud_proxy_web?platform=Web) for details.
     */
   def startProxyServer(): Unit = js.native
+  
   /**
     * Stops the media stream relay.
     *
@@ -1781,6 +1821,7 @@ trait Client extends js.Object {
     * ```
     */
   def stopChannelMediaRelay(callback: js.Function1[/* err */ Null | ChannelMediaError, Unit]): Unit = js.native
+  
   /**
     * Stops Live Streaming
     *
@@ -1789,6 +1830,7 @@ trait Client extends js.Object {
     * @param url URL address of the live streaming. ASCII characters only, and the string length must be greater than 0 and less than 256 bytes.
     */
   def stopLiveStreaming(url: String): Unit = js.native
+  
   /**
     * Disables Cloud Proxy
     *
@@ -1797,6 +1839,7 @@ trait Client extends js.Object {
     * This method disables all proxy settings, including those set by [[setProxyServer]] and [[setTurnServer]].
     */
   def stopProxyServer(): Unit = js.native
+  
   /**
     * Subscribes to a Remote Stream
     *
@@ -1848,6 +1891,7 @@ trait Client extends js.Object {
   ): Unit = js.native
   def subscribe(stream: Stream, options: Video): Unit = js.native
   def subscribe(stream: Stream, options: Video, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
+  
   /**
     * Unpublishes the Local Stream
     *
@@ -1875,6 +1919,7 @@ trait Client extends js.Object {
     */
   def unpublish(stream: Stream): Unit = js.native
   def unpublish(stream: Stream, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
+  
   /**
     * Unsubscribes from the Remote Stream
     *
@@ -1897,6 +1942,7 @@ trait Client extends js.Object {
     */
   def unsubscribe(stream: Stream): Unit = js.native
   def unsubscribe(stream: Stream, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
+  
   /**
     * Updates the channels for media stream relay.
     *
@@ -1937,4 +1983,3 @@ trait Client extends js.Object {
     callback: js.Function1[/* err */ Null | ChannelMediaError, Unit]
   ): Unit = js.native
 }
-

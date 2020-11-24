@@ -16,7 +16,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The accessible view of an inactive embedded object. If an embedded object gets active, the active document gets an accessible object tree of its own.
@@ -30,8 +30,8 @@ trait AccessibleTextEmbeddedObject
      with XAccessibleComponent
      with XAccessibleImage
      with XAccessibleEventBroadcaster
-
 object AccessibleTextEmbeddedObject {
+  
   @scala.inline
   def apply(
     AccessibleChildCount: Double,
@@ -84,4 +84,3 @@ object AccessibleTextEmbeddedObject {
     __obj.asInstanceOf[AccessibleTextEmbeddedObject]
   }
 }
-

@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.dataviz.ui.ChartOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofChart
   extends Instantiable1[/* element */ Element, Chart]
      with Instantiable2[/* element */ Element, /* options */ ChartOptions, Chart] {
-  var fn: Chart = js.native
+  
   def extend(proto: js.Object): Chart = js.native
+  
+  var fn: Chart = js.native
 }
-

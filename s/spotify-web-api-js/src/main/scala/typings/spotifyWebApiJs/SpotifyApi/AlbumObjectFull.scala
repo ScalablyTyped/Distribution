@@ -3,7 +3,7 @@ package typings.spotifyWebApiJs.SpotifyApi
 import typings.spotifyWebApiJs.spotifyWebApiJsStrings.album
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 // Objects from the Object Models of the Spotify Web Api, ordered alphabetically.
@@ -15,17 +15,25 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AlbumObjectFull extends AlbumObjectSimplified {
+  
   var artists: js.Array[ArtistObjectSimplified] = js.native
+  
   var copyrights: js.Array[CopyrightObject] = js.native
+  
   var external_ids: ExternalIdObject = js.native
+  
   var genres: js.Array[String] = js.native
+  
   var popularity: Double = js.native
+  
   var release_date: String = js.native
+  
   var release_date_precision: String = js.native
+  
   var tracks: PagingObject[TrackObjectSimplified] = js.native
 }
-
 object AlbumObjectFull {
+  
   @scala.inline
   def apply(
     album_type: String,
@@ -49,40 +57,53 @@ object AlbumObjectFull {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlbumObjectFull]
   }
+  
   @scala.inline
   implicit class AlbumObjectFullOps[Self <: AlbumObjectFull] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setArtistsVarargs(value: ArtistObjectSimplified*): Self = this.set("artists", js.Array(value :_*))
+    
     @scala.inline
     def setArtists(value: js.Array[ArtistObjectSimplified]): Self = this.set("artists", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCopyrightsVarargs(value: CopyrightObject*): Self = this.set("copyrights", js.Array(value :_*))
+    
     @scala.inline
     def setCopyrights(value: js.Array[CopyrightObject]): Self = this.set("copyrights", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExternal_ids(value: ExternalIdObject): Self = this.set("external_ids", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGenresVarargs(value: String*): Self = this.set("genres", js.Array(value :_*))
+    
     @scala.inline
     def setGenres(value: js.Array[String]): Self = this.set("genres", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPopularity(value: Double): Self = this.set("popularity", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRelease_date(value: String): Self = this.set("release_date", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRelease_date_precision(value: String): Self = this.set("release_date_precision", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTracks(value: PagingObject[TrackObjectSimplified]): Self = this.set("tracks", value.asInstanceOf[js.Any])
   }
-  
 }
-

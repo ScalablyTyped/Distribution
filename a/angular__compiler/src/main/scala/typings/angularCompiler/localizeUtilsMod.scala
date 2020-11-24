@@ -8,12 +8,13 @@ import typings.angularCompiler.outputAstMod.ReadVarExpr
 import typings.angularCompiler.outputAstMod.Statement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/render3/view/i18n/localize_utils", JSImport.Namespace)
 @js.native
 object localizeUtilsMod extends js.Object {
+  
   def createLocalizeStatements(variable: ReadVarExpr, message: Message, params: StringDictionary[Expression]): js.Array[Statement] = js.native
+  
   def serializeI18nMessageForLocalize(message: Message): MessageParts = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha", "healthcare_v1alpha.Resource$Projects$Locations$Datasets$Fhirstores$Securitylabels")
 @js.native
 class ResourceProjectsLocationsDatasetsFhirstoresSecuritylabels protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.securityLabels.getIamPolicy
     * @desc Gets the access control policy for a FHIR store or security label
@@ -54,6 +56,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresSecuritylabels protected () ext
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.securityLabels.setIamPolicy
     * @desc Sets the access control policy for a FHIR store or security label
@@ -95,4 +98,3 @@ class ResourceProjectsLocationsDatasetsFhirstoresSecuritylabels protected () ext
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
 }
-

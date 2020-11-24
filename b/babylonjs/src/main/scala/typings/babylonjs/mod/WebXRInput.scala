@@ -3,7 +3,7 @@ package typings.babylonjs.mod
 import typings.babylonjs.webXRInputMod.IWebXRInputOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "WebXRInput")
 @js.native
@@ -37,4 +37,3 @@ class WebXRInput protected ()
     options: IWebXRInputOptions
   ) = this()
 }
-

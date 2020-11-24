@@ -7,7 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Line. */
 @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line")
@@ -18,23 +18,26 @@ import scala.scalajs.js.annotation._
   */
 class Line () extends ILine {
   def this(properties: ILine) = this()
+  
   /** Line functionId. */
   @JSName("functionId")
   var functionId_Line: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  
   /** Line line. */
   @JSName("line")
   var line_Line: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  
   /**
     * Converts this Line to JSON.
     * @returns JSON object
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-
 /* static members */
 @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line")
 @js.native
 object Line extends js.Object {
+  
   /**
     * Creates a new Line instance using the specified properties.
     * @param [properties] Properties to set
@@ -42,6 +45,7 @@ object Line extends js.Object {
     */
   def create(): Line = js.native
   def create(properties: ILine): Line = js.native
+  
   /**
     * Decodes a Line message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -54,6 +58,7 @@ object Line extends js.Object {
   def decode(reader: Reader, length: Double): Line = js.native
   def decode(reader: Uint8Array): Line = js.native
   def decode(reader: Uint8Array, length: Double): Line = js.native
+  
   /**
     * Decodes a Line message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -63,6 +68,7 @@ object Line extends js.Object {
     */
   def decodeDelimited(reader: Reader): Line = js.native
   def decodeDelimited(reader: Uint8Array): Line = js.native
+  
   /**
     * Encodes the specified Line message. Does not implicitly {@link perftools.profiles.Line.verify|verify} messages.
     * @param message Line message or plain object to encode
@@ -71,6 +77,7 @@ object Line extends js.Object {
     */
   def encode(message: ILine): Writer = js.native
   def encode(message: ILine, writer: Writer): Writer = js.native
+  
   /**
     * Encodes the specified Line message, length delimited. Does not implicitly {@link perftools.profiles.Line.verify|verify} messages.
     * @param message Line message or plain object to encode
@@ -79,12 +86,14 @@ object Line extends js.Object {
     */
   def encodeDelimited(message: ILine): Writer = js.native
   def encodeDelimited(message: ILine, writer: Writer): Writer = js.native
+  
   /**
     * Creates a Line message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns Line
     */
   def fromObject(`object`: StringDictionary[js.Any]): Line = js.native
+  
   /**
     * Creates a plain object from a Line message. Also converts values to other types if specified.
     * @param message Line
@@ -93,6 +102,7 @@ object Line extends js.Object {
     */
   def toObject(message: Line): StringDictionary[js.Any] = js.native
   def toObject(message: Line, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
   /**
     * Verifies a Line message.
     * @param message Plain object to verify
@@ -100,4 +110,3 @@ object Line extends js.Object {
     */
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }
-

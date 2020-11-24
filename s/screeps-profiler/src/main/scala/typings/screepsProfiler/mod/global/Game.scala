@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.screepsProfiler.mod.ScreepsGameProfiler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * screeps-profiler extends the Game interface with itself
@@ -12,10 +12,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Game extends js.Object {
+  
   var profiler: ScreepsGameProfiler = js.native
 }
-
 @JSGlobal("Game")
 @js.native
 object Game extends TopLevel[Game]
-

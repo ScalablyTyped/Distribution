@@ -2,11 +2,12 @@ package typings.phaser.global.Phaser.Math
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Math.Linear")
 @js.native
 object Linear extends js.Object {
+  
   /**
     * Calculates a linear (interpolation) value over t.
     * @param p0 The first point.
@@ -15,4 +16,3 @@ object Linear extends js.Object {
     */
   def apply(p0: Double, p1: Double, t: Double): Double = js.native
 }
-

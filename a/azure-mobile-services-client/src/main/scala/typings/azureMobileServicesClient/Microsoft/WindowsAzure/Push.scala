@@ -2,10 +2,11 @@ package typings.azureMobileServicesClient.Microsoft.WindowsAzure
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Push extends js.Object {
+  
   /**
     * Register a push channel with the Mobile Apps backend to start receiving notifications.
     *
@@ -52,6 +53,7 @@ trait Push extends js.Object {
     secondaryTiles: js.Any,
     callback: js.Function2[/* error */ js.Any, /* results */ js.Any, Unit]
   ): Unit = js.native
+  
   /**
     * Invokes the specified custom api and returns a response object.
     *
@@ -61,4 +63,3 @@ trait Push extends js.Object {
   def unregister(pushChannel: String): Unit = js.native
   def unregister(pushChannel: String, callback: js.Function2[/* error */ js.Any, /* results */ js.Any, Unit]): Unit = js.native
 }
-

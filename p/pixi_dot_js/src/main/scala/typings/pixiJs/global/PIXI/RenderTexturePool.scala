@@ -3,7 +3,7 @@ package typings.pixiJs.global.PIXI
 import typings.pixiJs.anon.ScaleMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Experimental!
@@ -23,11 +23,11 @@ class RenderTexturePool ()
   extends typings.pixiJs.PIXI.RenderTexturePool {
   def this(textureOptions: ScaleMode) = this()
 }
-
 /* static members */
 @JSGlobal("PIXI.RenderTexturePool")
 @js.native
 object RenderTexturePool extends js.Object {
+  
   /**
     * Key that is used to store fullscreen renderTextures in a pool
     *
@@ -36,4 +36,3 @@ object RenderTexturePool extends js.Object {
     */
   val SCREEN_KEY: String = js.native
 }
-

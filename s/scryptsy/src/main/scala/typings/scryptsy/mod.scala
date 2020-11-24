@@ -4,11 +4,12 @@ import typings.node.Buffer
 import typings.scryptsy.anon.Current
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("scryptsy", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply(key: String, salt: String, N: Double, r: Double, p: Double, dkLen: Double): Buffer = js.native
   def apply(
     key: String,
@@ -50,4 +51,3 @@ object mod extends js.Object {
     progressCallback: js.Function1[/* status */ Current, Unit]
   ): Buffer = js.native
 }
-

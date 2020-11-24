@@ -11,8 +11,8 @@ The fastest and smallest JavaScript polygon triangulation library for your WebGL
 | Full name          | earcut |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 123 |
-| # downloads        | 10588452 |
+| # dependents       | 159 |
+| # downloads        | 19118859 |
 | # stars            | 5 |
 
 ## Links

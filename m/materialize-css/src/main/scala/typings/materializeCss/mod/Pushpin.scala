@@ -4,21 +4,22 @@ import typings.materializeCss.anon.PartialPushpinOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("materialize-css", "Pushpin")
 @js.native
 class Pushpin ()
   extends typings.materializeCss.M.Pushpin
-
 /* static members */
 @JSImport("materialize-css", "Pushpin")
 @js.native
 object Pushpin extends js.Object {
+  
   /**
     * Get Instance
     */
   def getInstance(elem: Element): typings.materializeCss.M.Pushpin = js.native
+  
   /**
     * Init Pushpins
     */
@@ -35,4 +36,3 @@ object Pushpin extends js.Object {
   def init(els: Element): typings.materializeCss.M.Pushpin = js.native
   def init(els: Element, options: PartialPushpinOptions): typings.materializeCss.M.Pushpin = js.native
 }
-

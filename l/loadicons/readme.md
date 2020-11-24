@@ -12,7 +12,7 @@ Load SVG icon sprites safely and asynchronously
 | Keywords           | svg, sprite |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 2630 |
+| # downloads        | 4229 |
 | # stars            | 0 |
 
 ## Links

@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Tweens.Tween
 import typings.phaser.Phaser.Types.GameObjects.PathFollower.PathConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A PathFollower Game Object.
@@ -23,32 +23,37 @@ import scala.scalajs.js.annotation._
 trait PathFollower
   extends Sprite
      with typings.phaser.Phaser.GameObjects.Components.PathFollower {
+  
   /**
     * Settings for the PathFollower.
     */
   var pathConfig: PathConfig = js.native
+  
   /**
     * The distance the follower has traveled from the previous point to the current one, at the last update.
     */
   var pathDelta: Vector2 = js.native
+  
   /**
     * An additional vector to add to the PathFollowers position, allowing you to offset it from the
     * Path coordinates.
     */
   var pathOffset: Vector2 = js.native
+  
   /**
     * If the PathFollower is rotating to match the Path (@see Phaser.GameObjects.PathFollower#rotateToPath)
     * this value is added to the rotation value. This allows you to rotate objects to a path but control
     * the angle of the rotation as well.
     */
   var pathRotationOffset: Double = js.native
+  
   /**
     * The Tween used for following the Path.
     */
   var pathTween: Tween = js.native
+  
   /**
     * A Vector2 that stores the current point of the path the follower is on.
     */
   var pathVector: Vector2 = js.native
 }
-

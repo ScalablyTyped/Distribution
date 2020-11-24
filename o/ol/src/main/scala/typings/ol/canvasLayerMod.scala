@@ -8,21 +8,25 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/renderer/canvas/Layer", JSImport.Namespace)
 @js.native
 object canvasLayerMod extends js.Object {
+  
   @js.native
   trait CanvasLayerRenderer[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */]
     extends typings.ol.rendererLayerMod.default[typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]] {
-    var container: HTMLElement = js.native
-    var context: CanvasRenderingContext2D = js.native
-    var inversePixelTransform: Transform = js.native
-    var pixelTransform: Transform = js.native
-    var renderedResolution: Double = js.native
+    
     /* protected */ def clip(context: CanvasRenderingContext2D, frameState: FrameState, extent: Extent): Unit = js.native
+    
     /* protected */ def clipUnrotated(context: CanvasRenderingContext2D, frameState: FrameState, extent: Extent): Unit = js.native
+    
+    var container: HTMLElement = js.native
+    
+    /**
+      * Creates a transform for rendering to an element that will be rotated after rendering.
+      */
     /* protected */ def getRenderTransform(
       center: Coordinate,
       resolution: Double,
@@ -32,8 +36,34 @@ object canvasLayerMod extends js.Object {
       height: Double,
       offsetX: Double
     ): Transform = js.native
+    
+    /**
+      * The transform for viewport CSS pixels to rendered pixels.  This transform must
+      * be set when rendering a frame and may be used by other functions after rendering.
+      */
+    var inversePixelTransform: Transform = js.native
+    
+    /**
+      * The transform for rendered pixels to viewport CSS pixels.  This transform must
+      * be set when rendering a frame and may be used by other functions after rendering.
+      */
+    var pixelTransform: Transform = js.native
+    
     /* protected */ def postRender(context: CanvasRenderingContext2D, frameState: FrameState): Unit = js.native
+    
     /* protected */ def preRender(context: CanvasRenderingContext2D, frameState: FrameState): Unit = js.native
+    
+    var renderedResolution: Double = js.native
+    
+    /**
+      * A temporary transform.  The values in this transform should only be used in a
+      * function that sets the values.
+      */
+    var tempTransform: Transform = js.native
+    
+    /**
+      * Get a rendering container from an existing target, if compatible.
+      */
     def useContainer(target: HTMLElement, transform: String, opacity: Double): Unit = js.native
   }
   
@@ -41,6 +71,4 @@ object canvasLayerMod extends js.Object {
   abstract class default[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */] protected () extends CanvasLayerRenderer[LayerType] {
     def this(layer: LayerType) = this()
   }
-  
 }
-

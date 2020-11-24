@@ -10,12 +10,15 @@ HTML assertions for Chai.
 | ------------------ | :-------------: |
 | Full name          | chai-html |
 | Keywords           | chai, html, test, assert, assertion |
-| # releases         | 7 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 242141 |
+| # downloads        | 486325 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/i-like-robots/chai-html)
+- [Bugs](https://github.com/i-like-robots/chai-html/issues)
+- [Repository](https://github.com/i-like-robots/chai-html)
 - [Npm](https://www.npmjs.com/package/chai-html)
     
 

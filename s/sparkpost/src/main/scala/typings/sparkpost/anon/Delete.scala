@@ -10,10 +10,11 @@ import typings.sparkpost.mod.ResultsPromise
 import typings.sparkpost.mod.UpdateRecipientList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Delete extends js.Object {
+  
   /**
     * Create a recipient list by providing a recipient list object as the POST request body.
     * At a minimum, the “recipients” array is required, which must contain a valid “address”.
@@ -32,6 +33,7 @@ trait Delete extends js.Object {
     * @param callback The request callback with metadata results
     */
   def create(options: CreateRecipientList, callback: ResultsCallback[RecipientListMetadata]): Unit = js.native
+  
   /**
     * Permanently delete the specified recipient list.
     *
@@ -46,6 +48,7 @@ trait Delete extends js.Object {
     * @param callback The request callback
     */
   def delete(id: String, callback: Callback[Unit]): Unit = js.native
+  
   /**
     * Retrieve details about a specified recipient list by specifying its id in the URI path.
     * To retrieve the recipients contained in a list, the show_recipients parameter must be set to true.
@@ -67,6 +70,7 @@ trait Delete extends js.Object {
     * @param specifies whether to retrieve the recipients. Defaults to false
     */
   def get(id: String, options: Showrecipients, callback: Callback[RecipientListWithRecipients]): Unit = js.native
+  
   /**
     * List a summary of all recipient lists. The recipients for each list are not included in the results.
     * To retrieve recipient details, use the [Retrieve a Recipient List endpoint]{@link https://developers.sparkpost.com/api/recipient-lists.html#recipient-lists-retrieve-get},
@@ -83,6 +87,7 @@ trait Delete extends js.Object {
     * @param callback The request callback with RecipientList results array
     */
   def list(callback: ResultsCallback[js.Array[RecipientList]]): Unit = js.native
+  
   /**
     * Update an existing recipient list by specifying its ID in the URI path and use a recipient list object as the PUT request body.
     * Use the num_rcpt_errors parameter to limit the number of recipient errors returned.
@@ -100,4 +105,3 @@ trait Delete extends js.Object {
     */
   def update(id: String, options: UpdateRecipientList, callback: ResultsCallback[RecipientListMetadata]): Unit = js.native
 }
-

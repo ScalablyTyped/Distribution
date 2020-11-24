@@ -4,11 +4,12 @@ import typings.samchon.iserverMod.IServer
 import typings.samchon.serverMod.Server
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/protocol/server/base/ServerBase", JSImport.Namespace)
 @js.native
 object serverBaseMod extends js.Object {
+  
   @js.native
   class ServerBase protected () extends Server {
     /**
@@ -17,11 +18,10 @@ object serverBaseMod extends js.Object {
       * @param hooker A hooker throwing responsibility of server's role.
       */
     def this(hooker: IServer) = this()
+    
     /**
       * @hidden
       */
     var hooker_ : js.Any = js.native
   }
-  
 }
-

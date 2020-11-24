@@ -2,15 +2,15 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change a floating object's absolute size.
   */
 @js.native
 trait ChangeFloatingObjectAbsoluteSizeCommand extends ChangeFloatingObjectPropertyCommandBase[FloatingObjectAbsoluteSizeSettings]
-
 object ChangeFloatingObjectAbsoluteSizeCommand {
+  
   @scala.inline
   def apply(
     execute: FloatingObjectAbsoluteSizeSettings => Boolean,
@@ -20,4 +20,3 @@ object ChangeFloatingObjectAbsoluteSizeCommand {
     __obj.asInstanceOf[ChangeFloatingObjectAbsoluteSizeCommand]
   }
 }
-

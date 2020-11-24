@@ -12,7 +12,7 @@ Removes boilerplate of tracking when an async function is running for MobX.
 | Keywords           | async, mobx, state, loading, promise |
 | # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 29661 |
+| # downloads        | 49056 |
 | # stars            | 0 |
 
 ## Links

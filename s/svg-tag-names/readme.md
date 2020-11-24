@@ -11,8 +11,8 @@ List of known SVG tag names
 | Full name          | svg-tag-names |
 | Keywords           | svg, tag, name, element, tagname, w3c |
 | # releases         | 4 |
-| # dependents       | 15 |
-| # downloads        | 8316426 |
+| # dependents       | 14 |
+| # downloads        | 9386953 |
 | # stars            | 0 |
 
 ## Links

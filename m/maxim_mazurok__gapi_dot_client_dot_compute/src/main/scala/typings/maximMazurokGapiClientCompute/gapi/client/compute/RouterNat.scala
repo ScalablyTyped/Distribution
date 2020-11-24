@@ -1,0 +1,175 @@
+package typings.maximMazurokGapiClientCompute.gapi.client.compute
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait RouterNat extends js.Object {
+  
+  /**
+    * A list of URLs of the IP resources to be drained. These IPs must be valid static external IPs that have been assigned to the NAT. These IPs should be used for updating/patching a
+    * NAT only.
+    */
+  var drainNatIps: js.UndefOr[js.Array[String]] = js.native
+  
+  var enableEndpointIndependentMapping: js.UndefOr[Boolean] = js.native
+  
+  /** Timeout (in seconds) for ICMP connections. Defaults to 30s if not set. */
+  var icmpIdleTimeoutSec: js.UndefOr[Double] = js.native
+  
+  /** Configure logging on this NAT. */
+  var logConfig: js.UndefOr[RouterNatLogConfig] = js.native
+  
+  /**
+    * Minimum number of ports allocated to a VM from this NAT config. If not set, a default number of ports is allocated to a VM. This is rounded up to the nearest power of 2. For
+    * example, if the value of this field is 50, at least 64 ports are allocated to a VM.
+    */
+  var minPortsPerVm: js.UndefOr[Double] = js.native
+  
+  /** Unique name of this Nat service. The name must be 1-63 characters long and comply with RFC1035. */
+  var name: js.UndefOr[String] = js.native
+  
+  /**
+    * Specify the NatIpAllocateOption, which can take one of the following values:
+    * - MANUAL_ONLY: Uses only Nat IP addresses provided by customers. When there are not enough specified Nat IPs, the Nat service fails for new VMs.
+    * - AUTO_ONLY: Nat IPs are allocated by Google Cloud Platform; customers can't specify any Nat IPs. When choosing AUTO_ONLY, then nat_ip should be empty.
+    */
+  var natIpAllocateOption: js.UndefOr[String] = js.native
+  
+  /** A list of URLs of the IP resources used for this Nat service. These IP addresses must be valid static external IP addresses assigned to the project. */
+  var natIps: js.UndefOr[js.Array[String]] = js.native
+  
+  /**
+    * Specify the Nat option, which can take one of the following values:
+    * - ALL_SUBNETWORKS_ALL_IP_RANGES: All of the IP ranges in every Subnetwork are allowed to Nat.
+    * - ALL_SUBNETWORKS_ALL_PRIMARY_IP_RANGES: All of the primary IP ranges in every Subnetwork are allowed to Nat.
+    * - LIST_OF_SUBNETWORKS: A list of Subnetworks are allowed to Nat (specified in the field subnetwork below) The default is SUBNETWORK_IP_RANGE_TO_NAT_OPTION_UNSPECIFIED. Note that if
+    * this field contains ALL_SUBNETWORKS_ALL_IP_RANGES or ALL_SUBNETWORKS_ALL_PRIMARY_IP_RANGES, then there should not be any other Router.Nat section in any Router for this network in
+    * this region.
+    */
+  var sourceSubnetworkIpRangesToNat: js.UndefOr[String] = js.native
+  
+  /** A list of Subnetwork resources whose traffic should be translated by NAT Gateway. It is used only when LIST_OF_SUBNETWORKS is selected for the SubnetworkIpRangeToNatOption above. */
+  var subnetworks: js.UndefOr[js.Array[RouterNatSubnetworkToNat]] = js.native
+  
+  /** Timeout (in seconds) for TCP established connections. Defaults to 1200s if not set. */
+  var tcpEstablishedIdleTimeoutSec: js.UndefOr[Double] = js.native
+  
+  /** Timeout (in seconds) for TCP transitory connections. Defaults to 30s if not set. */
+  var tcpTransitoryIdleTimeoutSec: js.UndefOr[Double] = js.native
+  
+  /** Timeout (in seconds) for UDP connections. Defaults to 30s if not set. */
+  var udpIdleTimeoutSec: js.UndefOr[Double] = js.native
+}
+object RouterNat {
+  
+  @scala.inline
+  def apply(): RouterNat = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[RouterNat]
+  }
+  
+  @scala.inline
+  implicit class RouterNatOps[Self <: RouterNat] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setDrainNatIpsVarargs(value: String*): Self = this.set("drainNatIps", js.Array(value :_*))
+    
+    @scala.inline
+    def setDrainNatIps(value: js.Array[String]): Self = this.set("drainNatIps", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDrainNatIps: Self = this.set("drainNatIps", js.undefined)
+    
+    @scala.inline
+    def setEnableEndpointIndependentMapping(value: Boolean): Self = this.set("enableEndpointIndependentMapping", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteEnableEndpointIndependentMapping: Self = this.set("enableEndpointIndependentMapping", js.undefined)
+    
+    @scala.inline
+    def setIcmpIdleTimeoutSec(value: Double): Self = this.set("icmpIdleTimeoutSec", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteIcmpIdleTimeoutSec: Self = this.set("icmpIdleTimeoutSec", js.undefined)
+    
+    @scala.inline
+    def setLogConfig(value: RouterNatLogConfig): Self = this.set("logConfig", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteLogConfig: Self = this.set("logConfig", js.undefined)
+    
+    @scala.inline
+    def setMinPortsPerVm(value: Double): Self = this.set("minPortsPerVm", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteMinPortsPerVm: Self = this.set("minPortsPerVm", js.undefined)
+    
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    
+    @scala.inline
+    def setNatIpAllocateOption(value: String): Self = this.set("natIpAllocateOption", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteNatIpAllocateOption: Self = this.set("natIpAllocateOption", js.undefined)
+    
+    @scala.inline
+    def setNatIpsVarargs(value: String*): Self = this.set("natIps", js.Array(value :_*))
+    
+    @scala.inline
+    def setNatIps(value: js.Array[String]): Self = this.set("natIps", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteNatIps: Self = this.set("natIps", js.undefined)
+    
+    @scala.inline
+    def setSourceSubnetworkIpRangesToNat(value: String): Self = this.set("sourceSubnetworkIpRangesToNat", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSourceSubnetworkIpRangesToNat: Self = this.set("sourceSubnetworkIpRangesToNat", js.undefined)
+    
+    @scala.inline
+    def setSubnetworksVarargs(value: RouterNatSubnetworkToNat*): Self = this.set("subnetworks", js.Array(value :_*))
+    
+    @scala.inline
+    def setSubnetworks(value: js.Array[RouterNatSubnetworkToNat]): Self = this.set("subnetworks", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSubnetworks: Self = this.set("subnetworks", js.undefined)
+    
+    @scala.inline
+    def setTcpEstablishedIdleTimeoutSec(value: Double): Self = this.set("tcpEstablishedIdleTimeoutSec", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTcpEstablishedIdleTimeoutSec: Self = this.set("tcpEstablishedIdleTimeoutSec", js.undefined)
+    
+    @scala.inline
+    def setTcpTransitoryIdleTimeoutSec(value: Double): Self = this.set("tcpTransitoryIdleTimeoutSec", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTcpTransitoryIdleTimeoutSec: Self = this.set("tcpTransitoryIdleTimeoutSec", js.undefined)
+    
+    @scala.inline
+    def setUdpIdleTimeoutSec(value: Double): Self = this.set("udpIdleTimeoutSec", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUdpIdleTimeoutSec: Self = this.set("udpIdleTimeoutSec", js.undefined)
+  }
+}

@@ -7,11 +7,12 @@ import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.Program
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.createProgram")
 @js.native
 object createProgram extends js.Object {
+  
   def apply(createProgramOptions: CreateProgramOptions): Program = js.native
   def apply(rootNames: js.Array[String], options: CompilerOptions): Program = js.native
   def apply(
@@ -51,4 +52,3 @@ object createProgram extends js.Object {
     configFileParsingDiagnostics: js.Array[Diagnostic]
   ): Program = js.native
 }
-

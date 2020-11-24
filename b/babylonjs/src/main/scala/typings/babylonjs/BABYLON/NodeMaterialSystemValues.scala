@@ -2,14 +2,14 @@ package typings.babylonjs.BABYLON
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait NodeMaterialSystemValues extends js.Object
-
 @JSGlobal("BABYLON.NodeMaterialSystemValues")
 @js.native
 object NodeMaterialSystemValues extends js.Object {
+  
   /** CameraPosition */
   @js.native
   sealed trait CameraPosition extends NodeMaterialSystemValues
@@ -45,6 +45,4 @@ object NodeMaterialSystemValues extends js.Object {
   /** WorldViewProjection */
   @js.native
   sealed trait WorldViewProjection extends NodeMaterialSystemValues
-  
 }
-

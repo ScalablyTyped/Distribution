@@ -1,17 +1,19 @@
 package typings.awsSdk.dlmMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DLM extends Service {
+  
   @JSName("config")
   var config_DLM: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates a policy to manage the lifecycle of the specified AWS resources. You can create up to 100 lifecycle policies.
     */
@@ -25,6 +27,7 @@ trait DLM extends Service {
     params: CreateLifecyclePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLifecyclePolicyResponse, Unit]
   ): Request[CreateLifecyclePolicyResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified lifecycle policy and halts the automated operations that the policy specified.
     */
@@ -38,6 +41,7 @@ trait DLM extends Service {
     params: DeleteLifecyclePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLifecyclePolicyResponse, Unit]
   ): Request[DeleteLifecyclePolicyResponse, AWSError] = js.native
+  
   /**
     * Gets summary information about all or the specified data lifecycle policies. To get complete information about a policy, use GetLifecyclePolicy.
     */
@@ -51,6 +55,7 @@ trait DLM extends Service {
     params: GetLifecyclePoliciesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLifecyclePoliciesResponse, Unit]
   ): Request[GetLifecyclePoliciesResponse, AWSError] = js.native
+  
   /**
     * Gets detailed information about the specified lifecycle policy.
     */
@@ -64,6 +69,7 @@ trait DLM extends Service {
     params: GetLifecyclePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLifecyclePolicyResponse, Unit]
   ): Request[GetLifecyclePolicyResponse, AWSError] = js.native
+  
   /**
     * Lists the tags for the specified resource.
     */
@@ -77,6 +83,7 @@ trait DLM extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
   /**
     * Adds the specified tags to the specified resource.
     */
@@ -90,6 +97,7 @@ trait DLM extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
   /**
     * Removes the specified tags from the specified resource.
     */
@@ -103,6 +111,7 @@ trait DLM extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
   /**
     * Updates the specified lifecycle policy.
     */
@@ -117,4 +126,3 @@ trait DLM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateLifecyclePolicyResponse, Unit]
   ): Request[UpdateLifecyclePolicyResponse, AWSError] = js.native
 }
-

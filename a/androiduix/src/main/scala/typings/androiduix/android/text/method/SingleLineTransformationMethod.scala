@@ -4,12 +4,12 @@ import typings.androiduix.android.graphics.Rect
 import typings.androiduix.android.view.View
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SingleLineTransformationMethod extends ReplacementTransformationMethod
-
 object SingleLineTransformationMethod {
+  
   @scala.inline
   def apply(
     getOriginal: () => js.Array[String],
@@ -21,4 +21,3 @@ object SingleLineTransformationMethod {
     __obj.asInstanceOf[SingleLineTransformationMethod]
   }
 }
-

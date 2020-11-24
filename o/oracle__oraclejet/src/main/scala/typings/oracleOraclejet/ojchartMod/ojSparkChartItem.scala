@@ -147,46 +147,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojSparkChartItem extends JetElement[ojSparkChartItemSettableProperties] {
-  var borderColor: String = js.native
-  var color: String = js.native
-  var date: String = js.native
-  var high: Double | Null = js.native
-  var low: Double | Null = js.native
-  var markerDisplayed: off | on = js.native
-  var markerShape: js.UndefOr[
-    auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String
-  ] = js.native
-  var markerSize: Double = js.native
-  var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onDateChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onHighChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onLowChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var onMarkerDisplayedChanged: (js.Function1[/* event */ JetElementCustomEvent[off | on], _]) | Null = js.native
-  var onMarkerShapeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      js.UndefOr[
-        auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String
-      ]
-    ], 
-    _
-  ]) | Null = js.native
-  var onMarkerSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onSvgStyleChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojchart.ojSparkChartItem['svgStyle'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
-  var svgClassName: String = js.native
-  var svgStyle: js.Object = js.native
-  var value: Double | Null = js.native
+  
   def addEventListener(
     `type`: markerDisplayedChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[off | on], _]
@@ -1105,6 +1070,13 @@ trait ojSparkChartItem extends JetElement[ojSparkChartItemSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var borderColor: String = js.native
+  
+  var color: String = js.native
+  
+  var date: String = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_borderColor(property: borderColor): String = js.native
@@ -1130,7 +1102,55 @@ trait ojSparkChartItem extends JetElement[ojSparkChartItemSettableProperties] {
   def getProperty_svgStyle(property: svgStyle): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojchart.ojSparkChartItem['svgStyle'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_value(property: value): Double | Null = js.native
+  
+  var high: Double | Null = js.native
+  
+  var low: Double | Null = js.native
+  
+  var markerDisplayed: off | on = js.native
+  
+  var markerShape: js.UndefOr[
+    auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String
+  ] = js.native
+  
+  var markerSize: Double = js.native
+  
+  var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onDateChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onHighChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onLowChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
+  var onMarkerDisplayedChanged: (js.Function1[/* event */ JetElementCustomEvent[off | on], _]) | Null = js.native
+  
+  var onMarkerShapeChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      js.UndefOr[
+        auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String
+      ]
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onMarkerSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
+  
+  var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
+  
+  var onSvgStyleChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojchart.ojSparkChartItem['svgStyle'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
+  var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
+  
   def setProperties(properties: ojSparkChartItemSettablePropertiesLenient): Unit = js.native
+  
   def setProperty(property: markerDisplayed, value: off): Unit = js.native
   def setProperty(property: markerDisplayed, value: on): Unit = js.native
   def setProperty(property: markerShape, value: auto): Unit = js.native
@@ -1171,5 +1191,10 @@ trait ojSparkChartItem extends JetElement[ojSparkChartItemSettableProperties] {
   def setProperty_value(property: value): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value, value: Double): Unit = js.native
+  
+  var svgClassName: String = js.native
+  
+  var svgStyle: js.Object = js.native
+  
+  var value: Double | Null = js.native
 }
-

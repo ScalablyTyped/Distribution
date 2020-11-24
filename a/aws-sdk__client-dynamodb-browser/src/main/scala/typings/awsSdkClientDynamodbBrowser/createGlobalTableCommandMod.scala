@@ -5,33 +5,29 @@ import typings.awsSdkClientDynamodbBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientDynamodbBrowser.typesCreateGlobalTableInputMod.CreateGlobalTableInput
 import typings.awsSdkClientDynamodbBrowser.typesCreateGlobalTableOutputMod.CreateGlobalTableOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-dynamodb-browser/commands/CreateGlobalTableCommand", JSImport.Namespace)
 @js.native
 object createGlobalTableCommandMod extends js.Object {
+  
   @js.native
   class CreateGlobalTableCommand protected () extends Command[
           InputTypesUnion, 
           CreateGlobalTableInput, 
           OutputTypesUnion, 
           CreateGlobalTableOutput, 
-          DynamoDBResolvedConfiguration, 
-          Blob
+          DynamoDBResolvedConfiguration
         ] {
     def this(input: CreateGlobalTableInput) = this()
-    val middlewareStack: MiddlewareStack[CreateGlobalTableInput, CreateGlobalTableOutput, Blob] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[CreateGlobalTableInput, CreateGlobalTableOutput] = js.native
   }
-  
 }
-

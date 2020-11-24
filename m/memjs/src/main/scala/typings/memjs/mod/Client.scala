@@ -9,7 +9,7 @@ import typings.std.Error
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("memjs", "Client")
 @js.native
@@ -21,7 +21,7 @@ class Client protected () extends js.Object {
     */
   def this(servers: String) = this()
   def this(servers: String, options: ClientOptions) = this()
-  var servers: js.Array[String] = js.native
+  
   /**
     * ADD
     *
@@ -54,6 +54,7 @@ class Client protected () extends js.Object {
     options: Expires,
     callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
   ): Unit = js.native
+  
   /**
     * APPEND
     *
@@ -78,12 +79,14 @@ class Client protected () extends js.Object {
     value: Buffer,
     callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
   ): Unit = js.native
+  
   /**
     * CLOSE
     *
     * Closes (abruptly) connections to all the servers.
     */
   def close(): Unit = js.native
+  
   /**
     * DECREMENT
     *
@@ -114,6 +117,7 @@ class Client protected () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * DELETE
     *
@@ -128,6 +132,7 @@ class Client protected () extends js.Object {
     */
   def delete(key: String): js.Promise[Boolean] = js.native
   def delete(key: String, callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]): Unit = js.native
+  
   /**
     * FLUSH
     *
@@ -142,6 +147,7 @@ class Client protected () extends js.Object {
     */
   def flush(): js.Promise[Record[String, Boolean]] = js.native
   def flush(callback: js.Function2[/* err */ Error | Null, /* results */ Record[String, Boolean], Unit]): Unit = js.native
+  
   /**
     * GET
     *
@@ -161,6 +167,7 @@ class Client protected () extends js.Object {
     key: String,
     callback: js.Function3[/* err */ Error | Null, /* value */ Buffer | Null, /* flags */ Buffer | Null, Unit]
   ): Unit = js.native
+  
   /**
     * INCREMENT
     *
@@ -191,6 +198,7 @@ class Client protected () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Perform a generic single response operation (get, set etc) on a server
     * serv: the server to perform the operation on
@@ -221,6 +229,7 @@ class Client protected () extends js.Object {
     callback: js.Function2[/* err */ Error | Null, /* repeated */ js.Any, Unit],
     retries: Double
   ): Unit = js.native
+  
   /**
     * PREPEND
     *
@@ -245,6 +254,7 @@ class Client protected () extends js.Object {
     value: Buffer,
     callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
   ): Unit = js.native
+  
   /**
     * QUIT
     *
@@ -254,6 +264,7 @@ class Client protected () extends js.Object {
     * connection before the retries complete.
     */
   def quit(): Unit = js.native
+  
   /**
     * REPLACE
     *
@@ -286,6 +297,7 @@ class Client protected () extends js.Object {
     options: Expires,
     callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
   ): Unit = js.native
+  
   /**
     * RESET_STATS
     *
@@ -309,11 +321,15 @@ class Client protected () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Chooses the server to talk to by hashing the given key.
     * @param key
     */
   def server(key: String): String = js.native
+  
+  var servers: js.Array[String] = js.native
+  
   /**
     * SET
     *
@@ -345,6 +361,7 @@ class Client protected () extends js.Object {
     options: Expires,
     callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
   ): Unit = js.native
+  
   /**
     * STATS
     *
@@ -366,6 +383,7 @@ class Client protected () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * STATS_WITH_KEY
     *
@@ -389,6 +407,7 @@ class Client protected () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * TOUCH
     *
@@ -408,11 +427,11 @@ class Client protected () extends js.Object {
     callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
   ): Unit = js.native
 }
-
 /* static members */
 @JSImport("memjs", "Client")
 @js.native
 object Client extends js.Object {
+  
   /**
     * Creates a new client given an optional config string and optional hash of
     * options. The config string should be of the form:
@@ -455,4 +474,3 @@ object Client extends js.Object {
   def create(serversStr: String): Client = js.native
   def create(serversStr: String, options: ClientOptions): Client = js.native
 }
-

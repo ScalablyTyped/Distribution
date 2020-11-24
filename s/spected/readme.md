@@ -12,7 +12,7 @@ Validation Library
 | Keywords           | Validation, Deeply Nested Validation Rules, Forms |
 | # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 92708 |
+| # downloads        | 66480 |
 | # stars            | 0 |
 
 ## Links

@@ -2,10 +2,11 @@ package typings.datatablesNet.DataTables
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RowsMethodsModel extends js.Object {
+  
   /**
     * Select all rows
     *
@@ -21,6 +22,7 @@ trait RowsMethodsModel extends js.Object {
     */
   def apply(rowSelector: js.Any): RowsMethods = js.native
   def apply(rowSelector: js.Any, modifier: ObjectSelectorModifier): RowsMethods = js.native
+  
   /**
     * Add new rows to the table using the data given
     *
@@ -28,4 +30,3 @@ trait RowsMethodsModel extends js.Object {
     */
   def add(data: js.Array[_]): Api = js.native
 }
-

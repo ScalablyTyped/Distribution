@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v1", "tagmanager_v1.Resource$Accounts$Containers$Folders$Entities")
 @js.native
 class ResourceAccountsContainersFoldersEntities protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * tagmanager.accounts.containers.folders.entities.list
     * @desc List all entities in a GTM Folder.
@@ -47,4 +49,3 @@ class ResourceAccountsContainersFoldersEntities protected () extends js.Object {
     callback: BodyResponseCallback[SchemaFolderEntities]
   ): Unit = js.native
 }
-

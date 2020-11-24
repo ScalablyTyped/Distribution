@@ -1,17 +1,19 @@
 package typings.awsSdk.apigatewaymanagementapiMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ApiGatewayManagementApi extends Service {
+  
   @JSName("config")
   var config_ApiGatewayManagementApi: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Delete the connection with the provided id.
     */
@@ -25,6 +27,7 @@ trait ApiGatewayManagementApi extends Service {
     params: DeleteConnectionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Get information about the connection with the provided id.
     */
@@ -38,6 +41,7 @@ trait ApiGatewayManagementApi extends Service {
     params: GetConnectionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetConnectionResponse, Unit]
   ): Request[GetConnectionResponse, AWSError] = js.native
+  
   /**
     * Sends the provided data to the specified connection.
     */
@@ -52,4 +56,3 @@ trait ApiGatewayManagementApi extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
 }
-

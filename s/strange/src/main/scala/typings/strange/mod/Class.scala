@@ -2,7 +2,7 @@ package typings.strange.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strange", JSImport.Namespace)
 @js.native
@@ -28,4 +28,3 @@ class Class[T /* <: Endpoint */] ()
   def this(begin: Null, end: js.UndefOr[scala.Nothing], bounds: Bounds) = this()
   def this(begin: Null, end: Null, bounds: Bounds) = this()
 }
-

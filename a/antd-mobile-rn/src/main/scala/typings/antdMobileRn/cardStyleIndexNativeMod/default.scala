@@ -13,21 +13,31 @@ import typings.antdMobileRn.anon.PaddingBottom
 import typings.antdMobileRn.anon.PaddingHorizontal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn/lib/card/style/index.native", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   var body: BorderTopWidth = js.native
+  
   var card: PaddingBottom = js.native
+  
   var footerContent: ColorFlexFontSize = js.native
+  
   var footerExtra: ColorFontSize = js.native
+  
   var footerWrap: PaddingHorizontal = js.native
+  
   var full: BorderLeftWidth = js.native
+  
   var headerContent: ColorFlex = js.native
+  
   var headerExtra: FlexFontSize = js.native
+  
   var headerImage: MarginRight = js.native
+  
   var headerTitle: Flex = js.native
+  
   var headerWrap: MarginLeft = js.native
 }
-

@@ -2,10 +2,11 @@ package typings.fabric.fabricImplMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IUtilClass extends js.Object {
+  
   /**
     * Helper for creation of "classes".
     * @param [properties] Properties shared by all instances of this class
@@ -22,4 +23,3 @@ trait IUtilClass extends js.Object {
   def createClass(parent: js.Function, properties: js.Any): js.Any = js.native
   def createClass(properties: js.Any): js.Any = js.native
 }
-

@@ -1,18 +1,18 @@
 
 # Scala.js typings for argparse
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
-Very powerful CLI arguments parser. Native port of argparse - python's options parsing library
+CLI arguments parser. Native port of python's argparse.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | argparse |
 | Keywords           | cli, parser, argparse, option, args |
-| # releases         | 2 |
-| # dependents       | 867 |
-| # downloads        | 499658029 |
+| # releases         | 1 |
+| # dependents       | 1002 |
+| # downloads        | 647436599 |
 | # stars            | 21 |
 
 ## Links

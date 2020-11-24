@@ -5,9 +5,8 @@ import typings.officeUiFabricReact.textTypesMod.ITextProps
 import typings.uifabricFoundation.libIcomponentMod.IViewComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "TextView")
 @js.native
 object TextView extends TopLevel[IViewComponent[ITextProps]]
-

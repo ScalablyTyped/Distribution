@@ -2,15 +2,21 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportAssignment extends DeclarationStatement {
-  var expression: Expression = js.native
-  var isExportEquals: js.UndefOr[Boolean] = js.native
+trait ExportAssignment
+  extends DeclarationStatement
+     with JSDocContainer
+     with _HasJSDoc {
+  
+  val expression: Expression = js.native
+  
+  val isExportEquals: js.UndefOr[Boolean] = js.native
+  
   @JSName("kind")
-  var kind_ExportAssignment: typings.typescript.mod.SyntaxKind.ExportAssignment = js.native
+  val kind_ExportAssignment: typings.typescript.mod.SyntaxKind.ExportAssignment = js.native
+  
   @JSName("parent")
-  var parent_ExportAssignment: SourceFile = js.native
+  val parent_ExportAssignment: SourceFile = js.native
 }
-

@@ -6,11 +6,12 @@ import typings.plottable.interfacesMod.IAccessor
 import typings.plottable.xyPlotMod.XYPlot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/plots/segmentPlot", JSImport.Namespace)
 @js.native
 object segmentPlotMod extends js.Object {
+  
   @js.native
   /**
     * A Segment Plot displays line segments based on the data.
@@ -18,10 +19,15 @@ object segmentPlotMod extends js.Object {
     * @constructor
     */
   class Segment[X, Y] () extends XYPlot[X, Y] {
+    
     /* protected */ def _createDrawer(): ProxyDrawer = js.native
+    
     /* private */ def _entitiesIntersecting(xRange: js.Any, yRange: js.Any): js.Any = js.native
+    
     /* private */ def _lineIntersectsBox(entity: js.Any, xRange: js.Any, yRange: js.Any, attrToProjector: js.Any): js.Any = js.native
+    
     /* private */ def _lineIntersectsSegment(point1: js.Any, point2: js.Any, point3: js.Any, point4: js.Any): js.Any = js.native
+    
     /**
       * Gets the AccessorScaleBinding for X2
       */
@@ -36,6 +42,7 @@ object segmentPlotMod extends js.Object {
       */
     def x2(x2: Double): this.type = js.native
     def x2(x2: IAccessor[Double | X]): this.type = js.native
+    
     /**
       * Gets the AccessorScaleBinding for Y2.
       */
@@ -51,13 +58,12 @@ object segmentPlotMod extends js.Object {
     def y2(y2: Double): this.type = js.native
     def y2(y2: IAccessor[Double | Y]): this.type = js.native
   }
-  
   /* static members */
   @js.native
   object Segment extends js.Object {
+    
     var _X2_KEY: js.Any = js.native
+    
     var _Y2_KEY: js.Any = js.native
   }
-  
 }
-

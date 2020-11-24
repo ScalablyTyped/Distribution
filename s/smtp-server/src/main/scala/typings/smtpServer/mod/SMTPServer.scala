@@ -13,29 +13,30 @@ import typings.std.Map
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("smtp-server", "SMTPServer")
 @js.native
 class SMTPServer () extends EventEmitter {
   def this(options: SMTPServerOptions) = this()
-  var connections: Set[_] = js.native
-  var logger: Logger = js.native
-  var options: SMTPServerOptions = js.native
-  var secureContext: Map[String, SecureContext] = js.native
-  var server: Server = js.native
+  
   @JSName("addListener")
   def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  
    // tslint:disable-line unified-signatures
   /** Closes the server */
   def close(): Unit = js.native
   def close(callback: js.Function0[Unit]): Unit = js.native
+  
+  var connections: Set[_] = js.native
+  
   @JSName("emit")
   def emit_close(event: close): Boolean = js.native
   @JSName("emit")
   def emit_error(event: error, err: Error): Boolean = js.native
+  
   /** Start listening on selected port and interface */
   def listen(): Server = js.native
   def listen(handle: js.Any): Server = js.native
@@ -116,18 +117,24 @@ class SMTPServer () extends EventEmitter {
   def listen(port: Double, listeningListener: js.Function0[Unit]): Server = js.native
   @JSName("listen")
   def listen_Server(path: String): Server = js.native
+  
   @JSName("listenerCount")
   def listenerCount_close(event: close): Double = js.native
   @JSName("listenerCount")
   def listenerCount_error(event: error): Double = js.native
+  
   @JSName("listeners")
   def listeners_close(event: close): js.Array[js.Function0[Unit]] = js.native
   @JSName("listeners")
   def listeners_error(event: error): js.Array[js.Function1[/* err */ Error, Unit]] = js.native
+  
+  var logger: Logger = js.native
+  
   @JSName("off")
   def off_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("off")
   def off_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  
   /** Authentication handler. Override this */
   def onAuth(
     auth: SMTPServerAuthentication,
@@ -138,56 +145,74 @@ class SMTPServer () extends EventEmitter {
       Unit
     ]
   ): Unit = js.native
+  
   /** Override this */
   def onClose(session: SMTPServerSession, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  
   /** Override this */
   def onConnect(session: SMTPServerSession, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  
   /** Override this */
   def onData(
     stream: SMTPServerDataStream,
     session: SMTPServerSession,
     callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
   ): Unit = js.native
+  
   /** Override this */
   def onMailFrom(
     address: SMTPServerAddress,
     session: SMTPServerSession,
     callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
   ): Unit = js.native
+  
   /** Override this */
   def onRcptTo(
     address: SMTPServerAddress,
     session: SMTPServerSession,
     callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
   ): Unit = js.native
+  
   @JSName("on")
   def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  
   @JSName("once")
   def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
   def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  
+  var options: SMTPServerOptions = js.native
+  
   @JSName("prependListener")
   def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  
   @JSName("rawListeners")
   def rawListeners_close(event: close): js.Array[js.Function0[Unit]] = js.native
   @JSName("rawListeners")
   def rawListeners_error(event: error): js.Array[js.Function1[/* err */ Error, Unit]] = js.native
+  
   @JSName("removeAllListener")
   def removeAllListener_close(event: close): this.type = js.native
   @JSName("removeAllListener")
   def removeAllListener_error(event: error): this.type = js.native
+  
   @JSName("removeListener")
   def removeListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  
+  var secureContext: Map[String, SecureContext] = js.native
+  
+  var server: Server = js.native
+  
   def updateSecureContext(options: TlsOptions): Unit = js.native
 }
-

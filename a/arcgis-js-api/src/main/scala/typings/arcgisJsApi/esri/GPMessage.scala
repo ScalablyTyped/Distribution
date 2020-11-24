@@ -10,18 +10,20 @@ import typings.arcgisJsApi.arcgisJsApiStrings.informative
 import typings.arcgisJsApi.arcgisJsApiStrings.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GPMessage
   extends Accessor
      with JSONSupport {
+  
   /**
     * The geoprocessing message.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-GPMessage.html#description)
     */
   var description: String = js.native
+  
   /**
     * The geoprocessing message type.
     *
@@ -29,4 +31,3 @@ trait GPMessage
     */
   var `type`: informative | `process-definition` | `process-start` | `process-stop` | warning | error | empty | abort = js.native
 }
-

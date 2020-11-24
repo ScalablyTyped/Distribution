@@ -2,9 +2,49 @@ package typings.webpackEnv
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackEnvStrings {
+  
+  @scala.inline
+  def `accept-errored`: `accept-errored` = "accept-errored".asInstanceOf[`accept-errored`]
+  
+  @scala.inline
+  def accepted: accepted = "accepted".asInstanceOf[accepted]
+  
+  @scala.inline
+  def declined: declined = "declined".asInstanceOf[declined]
+  
+  @scala.inline
+  def disposed: disposed = "disposed".asInstanceOf[disposed]
+  
+  @scala.inline
+  def eager: eager = "eager".asInstanceOf[eager]
+  
+  @scala.inline
+  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  
+  @scala.inline
+  def `lazy-once`: `lazy-once` = "lazy-once".asInstanceOf[`lazy-once`]
+  
+  @scala.inline
+  def `self-accept-error-handler-errored`: `self-accept-error-handler-errored` = "self-accept-error-handler-errored".asInstanceOf[`self-accept-error-handler-errored`]
+  
+  @scala.inline
+  def `self-accept-errored`: `self-accept-errored` = "self-accept-errored".asInstanceOf[`self-accept-errored`]
+  
+  @scala.inline
+  def `self-declined`: `self-declined` = "self-declined".asInstanceOf[`self-declined`]
+  
+  @scala.inline
+  def sync: sync = "sync".asInstanceOf[sync]
+  
+  @scala.inline
+  def unaccepted: unaccepted = "unaccepted".asInstanceOf[unaccepted]
+  
+  @scala.inline
+  def weak: weak = "weak".asInstanceOf[weak]
+  
   @js.native
   sealed trait `accept-errored` extends js.Object
   
@@ -43,32 +83,4 @@ object webpackEnvStrings {
   
   @js.native
   sealed trait weak extends js.Object
-  
-  @scala.inline
-  def `accept-errored`: `accept-errored` = "accept-errored".asInstanceOf[`accept-errored`]
-  @scala.inline
-  def accepted: accepted = "accepted".asInstanceOf[accepted]
-  @scala.inline
-  def declined: declined = "declined".asInstanceOf[declined]
-  @scala.inline
-  def disposed: disposed = "disposed".asInstanceOf[disposed]
-  @scala.inline
-  def eager: eager = "eager".asInstanceOf[eager]
-  @scala.inline
-  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
-  @scala.inline
-  def `lazy-once`: `lazy-once` = "lazy-once".asInstanceOf[`lazy-once`]
-  @scala.inline
-  def `self-accept-error-handler-errored`: `self-accept-error-handler-errored` = "self-accept-error-handler-errored".asInstanceOf[`self-accept-error-handler-errored`]
-  @scala.inline
-  def `self-accept-errored`: `self-accept-errored` = "self-accept-errored".asInstanceOf[`self-accept-errored`]
-  @scala.inline
-  def `self-declined`: `self-declined` = "self-declined".asInstanceOf[`self-declined`]
-  @scala.inline
-  def sync: sync = "sync".asInstanceOf[sync]
-  @scala.inline
-  def unaccepted: unaccepted = "unaccepted".asInstanceOf[unaccepted]
-  @scala.inline
-  def weak: weak = "weak".asInstanceOf[weak]
 }
-

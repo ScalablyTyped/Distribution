@@ -3,7 +3,7 @@ package typings.awsSdk.mod
 import typings.awsSdk.appconfigMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "AppConfig")
 @js.native
@@ -14,4 +14,3 @@ class AppConfig ()
   extends typings.awsSdk.allMod.AppConfig {
   def this(options: ClientConfiguration) = this()
 }
-

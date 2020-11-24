@@ -2,11 +2,12 @@ package typings.jsrsasign.global.jsrsasign
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsrsasign.readFileHexByBin")
 @js.native
 object readFileHexByBin extends js.Object {
+  
   /**
     * read binary file and return file contents as hexadecimal string
     * @param binFile file name to be read
@@ -16,4 +17,3 @@ object readFileHexByBin extends js.Object {
     */
   def apply(binFile: String): String = js.native
 }
-

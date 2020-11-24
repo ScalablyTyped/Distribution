@@ -9,14 +9,14 @@ Cordova Splashscreen Plugin
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-splashscreen |
-| Keywords           | cordova, splashscreen, ecosystem:cordova, cordova-android, cordova-ios, cordova-windows |
-| # releases         | 2 |
-| # dependents       | 65 |
-| # downloads        | 3073585 |
+| Keywords           | cordova, splashscreen, ecosystem:cordova, cordova-android, cordova-windows, cordova-browser |
+| # releases         | 4 |
+| # dependents       | 67 |
+| # downloads        | 3179879 |
 | # stars            | 17 |
 
 ## Links
-- [Homepage](https://cordova.apache.org/)
+- [Homepage](https://github.com/apache/cordova-plugin-splashscreen#readme)
 - [Bugs](https://github.com/apache/cordova-plugin-splashscreen/issues)
 - [Repository](https://github.com/apache/cordova-plugin-splashscreen)
 - [Npm](https://www.npmjs.com/package/cordova-plugin-splashscreen)

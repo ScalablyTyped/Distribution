@@ -2,13 +2,14 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for google.bigtable.admin.v2.BigtableTableAdmin.CreateTable
   */
 @js.native
 trait SchemaCreateTableRequest extends js.Object {
+  
   /**
     * The optional list of row keys that will be used to initially split the
     * table into several tablets (tablets are similar to HBase regions). Given
@@ -26,49 +27,60 @@ trait SchemaCreateTableRequest extends js.Object {
     * =&gt; {&quot;other&quot;, &quot;zz&quot;}.`
     */
   var initialSplits: js.UndefOr[js.Array[SchemaSplit]] = js.native
+  
   /**
     * The Table to create.
     */
   var table: js.UndefOr[SchemaTable] = js.native
+  
   /**
     * The name by which the new table should be referred to within the parent
     * instance, e.g., `foobar` rather than `&lt;parent&gt;/tables/foobar`.
     */
   var tableId: js.UndefOr[String] = js.native
 }
-
 object SchemaCreateTableRequest {
+  
   @scala.inline
   def apply(): SchemaCreateTableRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateTableRequest]
   }
+  
   @scala.inline
   implicit class SchemaCreateTableRequestOps[Self <: SchemaCreateTableRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setInitialSplitsVarargs(value: SchemaSplit*): Self = this.set("initialSplits", js.Array(value :_*))
+    
     @scala.inline
     def setInitialSplits(value: js.Array[SchemaSplit]): Self = this.set("initialSplits", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInitialSplits: Self = this.set("initialSplits", js.undefined)
+    
     @scala.inline
     def setTable(value: SchemaTable): Self = this.set("table", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTable: Self = this.set("table", js.undefined)
+    
     @scala.inline
     def setTableId(value: String): Self = this.set("tableId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTableId: Self = this.set("tableId", js.undefined)
   }
-  
 }
-

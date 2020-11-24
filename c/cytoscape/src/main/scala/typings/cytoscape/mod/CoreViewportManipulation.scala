@@ -4,13 +4,14 @@ import typings.cytoscape.anon.H
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#core/viewport-manipulation
   */
 @js.native
 trait CoreViewportManipulation extends js.Object {
+  
   /**
     * Get whether nodes are automatically locked
     * (i.e. if true, nodes are locked despite their individual state).
@@ -25,6 +26,7 @@ trait CoreViewportManipulation extends js.Object {
     * @param bool A truthy value enables autolocking; a falsey value disables it.
     */
   def autolock(bool: Boolean): this.type = js.native
+  
   /**
     * Get whether nodes are automatically ungrabified
     * (i.e. if true, nodes are ungrabbale despite their individual state).
@@ -39,6 +41,7 @@ trait CoreViewportManipulation extends js.Object {
     * @param bool A truthy value enables autolocking; a falsey value disables it.
     */
   def autoungrabify(bool: Boolean): this.type = js.native
+  
   /**
     * Get whether nodes are automatically unselectified
     * (i.e. if true, nodes are unselectable despite their individual state).
@@ -53,6 +56,7 @@ trait CoreViewportManipulation extends js.Object {
     * @param bool A truthy value enables autolocking; a falsey value disables it.
     */
   def autounselectify(bool: Boolean): this.type = js.native
+  
   /**
     * Get whether box selection is enabled.
     * If enabled, the user must hold left-click to initiate panning.
@@ -67,6 +71,7 @@ trait CoreViewportManipulation extends js.Object {
     * @param bool A truthy value enables box selection; a falsey value disables it.
     */
   def boxSelectionEnabled(bool: Boolean): this.type = js.native
+  
   /**
     * Pan the graph to the centre of a collection.
     *
@@ -74,6 +79,7 @@ trait CoreViewportManipulation extends js.Object {
     */
   def center(): this.type = js.native
   def center(eles: CollectionArgument): this.type = js.native
+  
   /**
     * Pan the graph to the centre of a collection.
     *
@@ -81,11 +87,13 @@ trait CoreViewportManipulation extends js.Object {
     */
   def centre(): this.type = js.native
   def centre(eles: CollectionArgument): this.type = js.native
+  
   /**
     * Get the HTML DOM element in which the graph is visualised.
     * A null value is returned if the Core is headless.
     */
   def container(): HTMLElement | Null = js.native
+  
   /**
     * Get the extent of the viewport, a bounding box in model
     * coordinates that lets you know what model
@@ -93,6 +101,7 @@ trait CoreViewportManipulation extends js.Object {
     * http://js.cytoscape.org/#cy.extent
     */
   def extent(): H = js.native
+  
   /**
     * Pan and zooms the graph to fit to a collection.
     * http://js.cytoscape.org/#cy.fit
@@ -103,6 +112,7 @@ trait CoreViewportManipulation extends js.Object {
   def fit(): this.type = js.native
   def fit(eles: js.UndefOr[CollectionArgument], padding: Double): this.type = js.native
   def fit(eles: CollectionArgument): this.type = js.native
+  
   /**
     * Force the renderer to redraw (i.e. draw a new frame).
     *
@@ -112,12 +122,15 @@ trait CoreViewportManipulation extends js.Object {
     * http://js.cytoscape.org/#cy.forceRender
     */
   def forceRender(): this.type = js.native
+  
   /**
     * Get the on-screen height of the viewport in pixels.
     * http://js.cytoscape.org/#cy.height
     */
   def height(): Double = js.native
+  
   def invalidateDimensions(): this.type = js.native
+  
   /**
     * Get the maximum zoom level.
     * http://js.cytoscape.org/#cy.maxZoom
@@ -130,6 +143,7 @@ trait CoreViewportManipulation extends js.Object {
     * @param zoom The new maximum zoom level to use.
     */
   def maxZoom(zoom: Double): this.type = js.native
+  
   /**
     * Get the minimum zoom level.
     * http://js.cytoscape.org/#cy.minZoom
@@ -142,12 +156,14 @@ trait CoreViewportManipulation extends js.Object {
     * @param zoom The new minimum zoom level to use.
     */
   def minZoom(zoom: Double): this.type = js.native
+  
   /**
     * Get the panning position of the graph.
     * http://js.cytoscape.org/#cy.pan
     */
   def pan(): Position = js.native
   def pan(renderedPosition: Position): this.type = js.native
+  
   /**
     * Relatively pan the graph by a specified rendered position vector.
     * http://js.cytoscape.org/#cy.panBy
@@ -155,6 +171,7 @@ trait CoreViewportManipulation extends js.Object {
     * @param renderedPosition The rendered position vector to pan the graph by.
     */
   def panBy(renderedPosition: Position): this.type = js.native
+  
   /**
     * Set the panning position of the graph.
     * http://js.cytoscape.org/#cy.pan
@@ -163,6 +180,7 @@ trait CoreViewportManipulation extends js.Object {
     */
   @JSName("pan")
   def pan_This(): this.type = js.native
+  
   /**
     * Get whether panning is enabled.
     * If cy.boxSelectionEnabled() === true, then the user
@@ -177,11 +195,13 @@ trait CoreViewportManipulation extends js.Object {
     * @param bool A truthy value enables panning; a falsey value disables it.
     */
   def panningEnabled(bool: Boolean): this.type = js.native
+  
   /**
     * Reset the graph to the default zoom level and panning position.
     * http://js.cytoscape.org/#cy.reset
     */
   def reset(): this.type = js.native
+  
   /**
     * Force the renderer to recalculate the viewport bounds.
     *
@@ -196,6 +216,7 @@ trait CoreViewportManipulation extends js.Object {
     * http://js.cytoscape.org/#cy.resize
     */
   def resize(): this.type = js.native
+  
   /**
     * Get whether panning by user events (e.g. dragging the graph background) is enabled. If cy.boxSelectionEnabled() === true, then the user must taphold to initiate panning.
     * http://js.cytoscape.org/#cy.userPanningEnabled
@@ -208,6 +229,7 @@ trait CoreViewportManipulation extends js.Object {
     * @param bool A truthy value enables user panning; a falsey value disables it.
     */
   def userPanningEnabled(bool: Boolean): this.type = js.native
+  
   /**
     * Get or set whether zooming by user events get if no parameter provided
     * (e.g. mouse wheel, pinch-to-zoom) is enabled.
@@ -224,6 +246,7 @@ trait CoreViewportManipulation extends js.Object {
     */
   @JSName("userZoomingEnabled")
   def userZoomingEnabled_Boolean(): Boolean = js.native
+  
   /**
     * Set the viewport state (pan & zoom) in one call.
     * http://js.cytoscape.org/#cy.viewport
@@ -232,11 +255,13 @@ trait CoreViewportManipulation extends js.Object {
     * @param pan The pan to set (a rendered position).
     */
   def viewport(zoom: Double, pan: Position): this.type = js.native
+  
   /**
     * Get the on-screen width of the viewport in pixels.
     * http://js.cytoscape.org/#cy.width
     */
   def width(): Double = js.native
+  
   /**
     * Set the zoom level.
     * http://js.cytoscape.org/#cy.zoom
@@ -253,6 +278,7 @@ trait CoreViewportManipulation extends js.Object {
     */
   @JSName("zoom")
   def zoom_Double(): Double = js.native
+  
   /**
     * Set or get whether zooming is enabled. Get if no parameter provided.
     * http://js.cytoscape.org/#cy.zoomingEnabled
@@ -262,4 +288,3 @@ trait CoreViewportManipulation extends js.Object {
   def zoomingEnabled(): this.type = js.native
   def zoomingEnabled(bool: Boolean): this.type = js.native
 }
-

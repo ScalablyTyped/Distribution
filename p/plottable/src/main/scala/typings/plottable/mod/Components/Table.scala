@@ -3,7 +3,7 @@ package typings.plottable.mod.Components
 import typings.plottable.componentMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable", "Components.Table")
 @js.native
@@ -23,13 +23,14 @@ class Table ()
   extends typings.plottable.componentsMod.Table {
   def this(rows: js.Array[js.Array[js.UndefOr[Component | Null]]]) = this()
 }
-
 /* static members */
 @JSImport("plottable", "Components.Table")
 @js.native
 object Table extends js.Object {
+  
   /* private */ def _calcComponentWeights(setWeights: js.Any, componentGroups: js.Any, fixityAccessor: js.Any): js.Any = js.native
+  
   /* private */ def _calcProportionalSpace(weights: js.Any, freeSpace: js.Any): js.Any = js.native
+  
   /* private */ def _fixedSpace(componentGroup: js.Any, fixityAccessor: js.Any): js.Any = js.native
 }
-

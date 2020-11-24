@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "notifyjs-browser"
-version := "0.0-unknown-dt-20200515Z-1692e9"
+version := "0.0-unknown-dt-20201002Z-1eeb1f"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

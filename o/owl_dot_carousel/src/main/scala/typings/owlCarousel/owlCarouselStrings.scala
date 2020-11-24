@@ -4,9 +4,88 @@ import typings.owlCarousel.OwlCarousel.OnEvent
 import typings.owlCarousel.OwlCarousel.TriggerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object owlCarouselStrings {
+  
+  @scala.inline
+  def addDotowlDotcarousel: addDotowlDotcarousel = "add.owl.carousel".asInstanceOf[addDotowlDotcarousel]
+  
+  @scala.inline
+  def changeDotowlDotcarousel: changeDotowlDotcarousel = "change.owl.carousel".asInstanceOf[changeDotowlDotcarousel]
+  
+  @scala.inline
+  def changedDotowlDotcarousel: changedDotowlDotcarousel = "changed.owl.carousel".asInstanceOf[changedDotowlDotcarousel]
+  
+  @scala.inline
+  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  
+  @scala.inline
+  def destroyDotowlDotcarousel: destroyDotowlDotcarousel = "destroy.owl.carousel".asInstanceOf[destroyDotowlDotcarousel]
+  
+  @scala.inline
+  def dragDotowlDotcarousel: dragDotowlDotcarousel = "drag.owl.carousel".asInstanceOf[dragDotowlDotcarousel]
+  
+  @scala.inline
+  def draggedDotowlDotcarousel: draggedDotowlDotcarousel = "dragged.owl.carousel".asInstanceOf[draggedDotowlDotcarousel]
+  
+  @scala.inline
+  def initializeDotowlDotcarousel: initializeDotowlDotcarousel = "initialize.owl.carousel".asInstanceOf[initializeDotowlDotcarousel]
+  
+  @scala.inline
+  def initializedDotowlDotcarousel: initializedDotowlDotcarousel = "initialized.owl.carousel".asInstanceOf[initializedDotowlDotcarousel]
+  
+  @scala.inline
+  def loadDotowlDotlazy: loadDotowlDotlazy = "load.owl.lazy".asInstanceOf[loadDotowlDotlazy]
+  
+  @scala.inline
+  def loadedDotowlDotlazy: loadedDotowlDotlazy = "loaded.owl.lazy".asInstanceOf[loadedDotowlDotlazy]
+  
+  @scala.inline
+  def nextDotowlDotcarousel: nextDotowlDotcarousel = "next.owl.carousel".asInstanceOf[nextDotowlDotcarousel]
+  
+  @scala.inline
+  def playDotowlDotautoplay: playDotowlDotautoplay = "play.owl.autoplay".asInstanceOf[playDotowlDotautoplay]
+  
+  @scala.inline
+  def playDotowlDotvideo: playDotowlDotvideo = "play.owl.video".asInstanceOf[playDotowlDotvideo]
+  
+  @scala.inline
+  def prevDotowlDotcarousel: prevDotowlDotcarousel = "prev.owl.carousel".asInstanceOf[prevDotowlDotcarousel]
+  
+  @scala.inline
+  def refreshDotowlDotcarousel: refreshDotowlDotcarousel = "refresh.owl.carousel".asInstanceOf[refreshDotowlDotcarousel]
+  
+  @scala.inline
+  def refreshedDotowlDotcarousel: refreshedDotowlDotcarousel = "refreshed.owl.carousel".asInstanceOf[refreshedDotowlDotcarousel]
+  
+  @scala.inline
+  def removeDotowlDotcarousel: removeDotowlDotcarousel = "remove.owl.carousel".asInstanceOf[removeDotowlDotcarousel]
+  
+  @scala.inline
+  def replaceDotowlDotcarousel: replaceDotowlDotcarousel = "replace.owl.carousel".asInstanceOf[replaceDotowlDotcarousel]
+  
+  @scala.inline
+  def resizeDotowlDotcarousel: resizeDotowlDotcarousel = "resize.owl.carousel".asInstanceOf[resizeDotowlDotcarousel]
+  
+  @scala.inline
+  def resizedDotowlDotcarousel: resizedDotowlDotcarousel = "resized.owl.carousel".asInstanceOf[resizedDotowlDotcarousel]
+  
+  @scala.inline
+  def stopDotowlDotautoplay: stopDotowlDotautoplay = "stop.owl.autoplay".asInstanceOf[stopDotowlDotautoplay]
+  
+  @scala.inline
+  def stopDotowlDotvideo: stopDotowlDotvideo = "stop.owl.video".asInstanceOf[stopDotowlDotvideo]
+  
+  @scala.inline
+  def toDotowlDotcarousel: toDotowlDotcarousel = "to.owl.carousel".asInstanceOf[toDotowlDotcarousel]
+  
+  @scala.inline
+  def translateDotowlDotcarousel: translateDotowlDotcarousel = "translate.owl.carousel".asInstanceOf[translateDotowlDotcarousel]
+  
+  @scala.inline
+  def translatedDotowlDotcarousel: translatedDotowlDotcarousel = "translated.owl.carousel".asInstanceOf[translatedDotowlDotcarousel]
+  
   @js.native
   sealed trait addDotowlDotcarousel extends TriggerEvent
   
@@ -86,58 +165,4 @@ object owlCarouselStrings {
   
   @js.native
   sealed trait translatedDotowlDotcarousel extends OnEvent
-  
-  @scala.inline
-  def addDotowlDotcarousel: addDotowlDotcarousel = "add.owl.carousel".asInstanceOf[addDotowlDotcarousel]
-  @scala.inline
-  def changeDotowlDotcarousel: changeDotowlDotcarousel = "change.owl.carousel".asInstanceOf[changeDotowlDotcarousel]
-  @scala.inline
-  def changedDotowlDotcarousel: changedDotowlDotcarousel = "changed.owl.carousel".asInstanceOf[changedDotowlDotcarousel]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def destroyDotowlDotcarousel: destroyDotowlDotcarousel = "destroy.owl.carousel".asInstanceOf[destroyDotowlDotcarousel]
-  @scala.inline
-  def dragDotowlDotcarousel: dragDotowlDotcarousel = "drag.owl.carousel".asInstanceOf[dragDotowlDotcarousel]
-  @scala.inline
-  def draggedDotowlDotcarousel: draggedDotowlDotcarousel = "dragged.owl.carousel".asInstanceOf[draggedDotowlDotcarousel]
-  @scala.inline
-  def initializeDotowlDotcarousel: initializeDotowlDotcarousel = "initialize.owl.carousel".asInstanceOf[initializeDotowlDotcarousel]
-  @scala.inline
-  def initializedDotowlDotcarousel: initializedDotowlDotcarousel = "initialized.owl.carousel".asInstanceOf[initializedDotowlDotcarousel]
-  @scala.inline
-  def loadDotowlDotlazy: loadDotowlDotlazy = "load.owl.lazy".asInstanceOf[loadDotowlDotlazy]
-  @scala.inline
-  def loadedDotowlDotlazy: loadedDotowlDotlazy = "loaded.owl.lazy".asInstanceOf[loadedDotowlDotlazy]
-  @scala.inline
-  def nextDotowlDotcarousel: nextDotowlDotcarousel = "next.owl.carousel".asInstanceOf[nextDotowlDotcarousel]
-  @scala.inline
-  def playDotowlDotautoplay: playDotowlDotautoplay = "play.owl.autoplay".asInstanceOf[playDotowlDotautoplay]
-  @scala.inline
-  def playDotowlDotvideo: playDotowlDotvideo = "play.owl.video".asInstanceOf[playDotowlDotvideo]
-  @scala.inline
-  def prevDotowlDotcarousel: prevDotowlDotcarousel = "prev.owl.carousel".asInstanceOf[prevDotowlDotcarousel]
-  @scala.inline
-  def refreshDotowlDotcarousel: refreshDotowlDotcarousel = "refresh.owl.carousel".asInstanceOf[refreshDotowlDotcarousel]
-  @scala.inline
-  def refreshedDotowlDotcarousel: refreshedDotowlDotcarousel = "refreshed.owl.carousel".asInstanceOf[refreshedDotowlDotcarousel]
-  @scala.inline
-  def removeDotowlDotcarousel: removeDotowlDotcarousel = "remove.owl.carousel".asInstanceOf[removeDotowlDotcarousel]
-  @scala.inline
-  def replaceDotowlDotcarousel: replaceDotowlDotcarousel = "replace.owl.carousel".asInstanceOf[replaceDotowlDotcarousel]
-  @scala.inline
-  def resizeDotowlDotcarousel: resizeDotowlDotcarousel = "resize.owl.carousel".asInstanceOf[resizeDotowlDotcarousel]
-  @scala.inline
-  def resizedDotowlDotcarousel: resizedDotowlDotcarousel = "resized.owl.carousel".asInstanceOf[resizedDotowlDotcarousel]
-  @scala.inline
-  def stopDotowlDotautoplay: stopDotowlDotautoplay = "stop.owl.autoplay".asInstanceOf[stopDotowlDotautoplay]
-  @scala.inline
-  def stopDotowlDotvideo: stopDotowlDotvideo = "stop.owl.video".asInstanceOf[stopDotowlDotvideo]
-  @scala.inline
-  def toDotowlDotcarousel: toDotowlDotcarousel = "to.owl.carousel".asInstanceOf[toDotowlDotcarousel]
-  @scala.inline
-  def translateDotowlDotcarousel: translateDotowlDotcarousel = "translate.owl.carousel".asInstanceOf[translateDotowlDotcarousel]
-  @scala.inline
-  def translatedDotowlDotcarousel: translatedDotowlDotcarousel = "translated.owl.carousel".asInstanceOf[translatedDotowlDotcarousel]
 }
-

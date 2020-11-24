@@ -1,7 +1,7 @@
 
 # Scala.js typings for query-string
 
-Typings are for version 6.13.1
+Typings are for version 6.13.7
 
 ## Library description:
 Parse and stringify URL query strings
@@ -10,9 +10,9 @@ Parse and stringify URL query strings
 | ------------------ | :-------------: |
 | Full name          | query-string |
 | Keywords           | browser, querystring, query, string, qs, param, parameter, url, parse, stringify, encode, decode, searchparams |
-| # releases         | 18 |
-| # dependents       | 2587 |
-| # downloads        | 303828724 |
+| # releases         | 22 |
+| # dependents       | 3237 |
+| # downloads        | 504959225 |
 | # stars            | 98 |
 
 ## Links

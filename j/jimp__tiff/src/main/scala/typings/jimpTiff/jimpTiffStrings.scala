@@ -2,13 +2,12 @@ package typings.jimpTiff
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jimpTiffStrings {
-  @js.native
-  sealed trait imageSlashtiff extends js.Object
   
   @scala.inline
   def imageSlashtiff: imageSlashtiff = "image/tiff".asInstanceOf[imageSlashtiff]
+  @js.native
+  sealed trait imageSlashtiff extends js.Object
 }
-

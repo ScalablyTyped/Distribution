@@ -5,15 +5,15 @@ import typings.sauronjs.componentMod.ComponentParameters
 import typings.sauronjs.componentMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait TypeofComponent extends Instantiable1[/* params */ ComponentParameters, ^] {
+    
     var _index: Double = js.native
   }
-  
 }
-

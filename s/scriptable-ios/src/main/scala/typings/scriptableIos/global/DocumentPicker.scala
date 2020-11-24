@@ -2,7 +2,7 @@ package typings.scriptableIos.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Presents a document picker._
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DocumentPicker")
 @js.native
 object DocumentPicker extends js.Object {
+  
   /**
     * _Exports a file to a document._
     *
@@ -19,6 +20,7 @@ object DocumentPicker extends js.Object {
     * @see https://docs.scriptable.app/documentpicker/#export
     */
   def export(path: String): js.Promise[js.Array[String]] = js.native
+  
   /**
     * _Exports data._
     *
@@ -29,6 +31,7 @@ object DocumentPicker extends js.Object {
     */
   def exportData(data: typings.scriptableIos.Data): js.Promise[js.Array[String]] = js.native
   def exportData(data: typings.scriptableIos.Data, name: String): js.Promise[js.Array[String]] = js.native
+  
   /**
     * _Exports an image._
     *
@@ -39,6 +42,7 @@ object DocumentPicker extends js.Object {
     */
   def exportImage(image: typings.scriptableIos.Image): js.Promise[js.Array[String]] = js.native
   def exportImage(image: typings.scriptableIos.Image, name: String): js.Promise[js.Array[String]] = js.native
+  
   /**
     * _Exports a string to a document._
     *
@@ -49,6 +53,7 @@ object DocumentPicker extends js.Object {
     */
   def exportString(content: String): js.Promise[js.Array[String]] = js.native
   def exportString(content: String, name: String): js.Promise[js.Array[String]] = js.native
+  
   /**
     * _Opens a document._
     *
@@ -61,6 +66,7 @@ object DocumentPicker extends js.Object {
     */
   def open(): js.Promise[js.Array[String]] = js.native
   def open(types: js.Array[String]): js.Promise[js.Array[String]] = js.native
+  
   /**
     * _Opens a file of any file type._
     *
@@ -70,6 +76,7 @@ object DocumentPicker extends js.Object {
     * @see https://docs.scriptable.app/documentpicker/#openfile
     */
   def openFile(): js.Promise[String] = js.native
+  
   /**
     * _Opens a folder._
     *
@@ -80,4 +87,3 @@ object DocumentPicker extends js.Object {
     */
   def openFolder(): js.Promise[String] = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.babylonjs.XRInputSource
 import typings.babylonjs.webXRAbstractMotionControllerMod.IMotionControllerProfile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "WebXRProfiledMotionController")
 @js.native
@@ -17,4 +17,3 @@ class WebXRProfiledMotionController protected ()
     _repositoryUrl: String
   ) = this()
 }
-

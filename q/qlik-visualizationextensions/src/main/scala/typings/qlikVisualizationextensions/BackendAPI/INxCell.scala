@@ -2,18 +2,21 @@ package typings.qlikVisualizationextensions.BackendAPI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait INxCell extends js.Object {
+  
   /**
     * Attribute dimensions values.
     */
   var qAttrDims: INxAttributeDimValues = js.native
+  
   /**
     * Attribute expression values.
     */
   var qAttrExps: INxAttributeExpressionValues = js.native
+  
   /**
     * Rank number of the value, starting from 0.
     * If the element number is a negative number, it means that the returned value is not an element number.
@@ -24,26 +27,31 @@ trait INxCell extends js.Object {
     *       # -4: the cell is empty. Applies to pivot tables.
     */
   var qElemNumber: Double = js.native
+  
   /**
     * Frequency of the value.
     * This parameter is optional.
     */
   var qFrequency: String = js.native
+  
   /**
     * Search hits.
     * The search hits are highlighted.
     * This parameter is optional.
     */
   var qHighlightRanges: INxHighlightRanges = js.native
+  
   /**
     * Is set to true, if qText and qNum are empty.
     * This parameter is optional. The default value is false.
     */
   var qIsEmpty: Boolean = js.native
+  
   /**
     * Is set to true if the value is Null.
     */
   var qIsNull: Boolean = js.native
+  
   /**
     * Is set to true if the cell belongs to the group Others.
     * Dimension values can be set as Others depending on what has been defined in OtherTotalSpecProp.
@@ -51,17 +59,20 @@ trait INxCell extends js.Object {
     * Not applicable to list objects.
     */
   var qIsOtherCell: Boolean = js.native
+  
   /**
     * Is set to true if a total is displayed in the cell.
     * This parameter is optional. The default value is false.
     * Not applicable to list objects.
     */
   var qIsTotalCell: Boolean = js.native
+  
   /**
     * A value.
     * This parameter is optional.
     */
   var qNum: js.UndefOr[Double] = js.native
+  
   /**
     * State of the value.
     * The default state for a measure is L.
@@ -75,14 +86,15 @@ trait INxCell extends js.Object {
     * XL for eXcluded Locked
     */
   var qState: StateType = js.native
+  
   /**
     * Some text.
     * This parameter is optional.
     */
   var qText: js.UndefOr[String] = js.native
 }
-
 object INxCell {
+  
   @scala.inline
   def apply(
     qAttrDims: INxAttributeDimValues,
@@ -99,46 +111,62 @@ object INxCell {
     val __obj = js.Dynamic.literal(qAttrDims = qAttrDims.asInstanceOf[js.Any], qAttrExps = qAttrExps.asInstanceOf[js.Any], qElemNumber = qElemNumber.asInstanceOf[js.Any], qFrequency = qFrequency.asInstanceOf[js.Any], qHighlightRanges = qHighlightRanges.asInstanceOf[js.Any], qIsEmpty = qIsEmpty.asInstanceOf[js.Any], qIsNull = qIsNull.asInstanceOf[js.Any], qIsOtherCell = qIsOtherCell.asInstanceOf[js.Any], qIsTotalCell = qIsTotalCell.asInstanceOf[js.Any], qState = qState.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxCell]
   }
+  
   @scala.inline
   implicit class INxCellOps[Self <: INxCell] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setQAttrDims(value: INxAttributeDimValues): Self = this.set("qAttrDims", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQAttrExps(value: INxAttributeExpressionValues): Self = this.set("qAttrExps", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQElemNumber(value: Double): Self = this.set("qElemNumber", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQFrequency(value: String): Self = this.set("qFrequency", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQHighlightRanges(value: INxHighlightRanges): Self = this.set("qHighlightRanges", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQIsEmpty(value: Boolean): Self = this.set("qIsEmpty", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQIsNull(value: Boolean): Self = this.set("qIsNull", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQIsOtherCell(value: Boolean): Self = this.set("qIsOtherCell", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQIsTotalCell(value: Boolean): Self = this.set("qIsTotalCell", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQState(value: StateType): Self = this.set("qState", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setQNum(value: Double): Self = this.set("qNum", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteQNum: Self = this.set("qNum", js.undefined)
+    
     @scala.inline
     def setQText(value: String): Self = this.set("qText", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteQText: Self = this.set("qText", js.undefined)
   }
-  
 }
-

@@ -12,7 +12,7 @@ A beanstalkd client for Node.js with promises
 | Keywords           | beanstalkd |
 | # releases         | 3 |
 | # dependents       | 4 |
-| # downloads        | 15394 |
+| # downloads        | 15616 |
 | # stars            | 0 |
 
 ## Links

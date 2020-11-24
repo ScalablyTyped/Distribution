@@ -2,7 +2,7 @@ package typings.babylonjs.gamepadsIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Gamepads/index", "WebVRController")
 @js.native
@@ -14,4 +14,3 @@ abstract class WebVRController protected ()
     */
   def this(vrGamepad: js.Any) = this()
 }
-

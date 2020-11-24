@@ -2,11 +2,12 @@ package typings.wordpressDeprecated.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/deprecated", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * Logs a message to notify developers about a deprecated feature.
     *
@@ -30,4 +31,3 @@ object default extends js.Object {
   def apply(feature: String): Unit = js.native
   def apply(feature: String, options: DeprecatedOptions): Unit = js.native
 }
-

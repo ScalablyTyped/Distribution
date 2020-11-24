@@ -10,9 +10,9 @@ React Mobile Picker Component(web and react-native)
 | ------------------ | :-------------: |
 | Full name          | rmc-picker |
 | Keywords           | react, react-component, react-m-picker, m-picker |
-| # releases         | 7 |
-| # dependents       | 76 |
-| # downloads        | 745338 |
+| # releases         | 6 |
+| # dependents       | 79 |
+| # downloads        | 1005344 |
 | # stars            | 2 |
 
 ## Links

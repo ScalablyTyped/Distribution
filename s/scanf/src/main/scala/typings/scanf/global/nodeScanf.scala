@@ -8,16 +8,18 @@ import typings.scanf.scanfStrings.Percentsigns
 import typings.scanf.scanfStrings.Percentsignx
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__node_scanf")
 @js.native
 object nodeScanf extends js.Object {
+  
   /* ------------------------------------------------------------
   		SSCANF - FROM SOURCE STRING
   	------------------------------------------------------------ */
   @js.native
   object scanf extends js.Object {
+    
     /**
     	 * <p> Reads formatted data from stdin. </p>
     	 * 
@@ -95,6 +97,7 @@ object nodeScanf extends js.Object {
     	 * @return A hex.
     	 */
     def apply(format: Percentsignx): Double = js.native
+    
     /**
     		 * <p> Reads formatted data from string. </p>
     		 * 
@@ -191,6 +194,4 @@ object nodeScanf extends js.Object {
     @JSName("sscanf")
     def sscanf_x(source: String, format: Percentsignx): Double = js.native
   }
-  
 }
-

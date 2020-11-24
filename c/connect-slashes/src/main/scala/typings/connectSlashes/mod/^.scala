@@ -5,11 +5,12 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("connect-slashes", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * @see https://github.com/avinoamr/connect-slashes#usage
     */
@@ -18,4 +19,3 @@ object ^ extends js.Object {
   def apply(addTrailingSlashes: Boolean): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(addTrailingSlashes: Boolean, options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
-

@@ -2,12 +2,16 @@ package typings.angularRouter
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type Data = org.scalablytyped.runtime.StringDictionary[js.Any]
+  
   type DeprecatedLoadChildren = java.lang.String
+  
   type DetachedRouteHandle = js.Object
+  
   /**
     * Error handler that is invoked when a navigation error occurs.
     *
@@ -18,15 +22,21 @@ package object mod {
     * @publicApi
     */
   type ErrorHandler = js.Function1[/* error */ js.Any, js.Any]
+  
   type LoadChildren = typings.angularRouter.mod.LoadChildrenCallback | typings.angularRouter.mod.DeprecatedLoadChildren
+  
   type LoadChildrenCallback = js.Function0[
     typings.angularCore.mod.Type[js.Any] | typings.angularCore.mod.NgModuleFactory[js.Any] | typings.rxjs.mod.Observable_[typings.angularCore.mod.Type[js.Any]] | (js.Promise[
       typings.angularCore.mod.NgModuleFactory[js.Any] | typings.angularCore.mod.Type[js.Any] | js.Any
     ])
   ]
+  
   type Params = org.scalablytyped.runtime.StringDictionary[js.Any]
+  
   type ResolveData = org.scalablytyped.runtime.StringDictionary[js.Any]
+  
   type Routes = js.Array[typings.angularRouter.mod.Route]
+  
   /* Rewritten from type alias, can be one of: 
     - typings.angularRouter.angularRouterStrings.pathParamsChange
     - typings.angularRouter.angularRouterStrings.pathParamsOrQueryParamsChange
@@ -43,6 +53,7 @@ package object mod {
     /* to */ typings.angularRouter.mod.ActivatedRouteSnapshot, 
     scala.Boolean
   ])
+  
   type UrlMatcher = js.Function3[
     /* segments */ js.Array[typings.angularRouter.mod.UrlSegment], 
     /* group */ typings.angularRouter.mod.UrlSegmentGroup, 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-isnumeric"
-version := "1.1-dt-20200407Z-6a3838"
+version := "1.1-dt-20200407Z-8a8d4c"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

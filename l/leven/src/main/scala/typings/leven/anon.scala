@@ -2,13 +2,15 @@ package typings.leven
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait Call extends js.Object {
+    
     /**
     	Measure the difference between two strings.
     	@example
@@ -20,6 +22,4 @@ object anon extends js.Object {
     	*/
     def apply(left: String, right: String): Double = js.native
   }
-  
 }
-

@@ -43,10 +43,11 @@ import typings.luminoDisposable.mod.IObservableDisposable
 import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IKernelConnection_ extends IObservableDisposable {
+  
   /**
     * A signal emitted when any kernel message is sent or received.
     *
@@ -55,6 +56,7 @@ trait IKernelConnection_ extends IObservableDisposable {
     * message should be treated as read-only.
     */
   var anyMessage: ISignal[this.type, IAnyMessageArgs] = js.native
+  
   /**
     * The client unique id.
     *
@@ -62,80 +64,19 @@ trait IKernelConnection_ extends IObservableDisposable {
     * This should be unique for a particular kernel connection object.
     */
   val clientId: String = js.native
+  
+  def clone(options: PickIOptionsclientIdusern): IKernelConnection = js.native
+  
   /**
     * The current connection status of the kernel.
     */
   val connectionStatus: ConnectionStatus = js.native
+  
   /**
     * A signal emitted when the kernel connection status changes.
     */
   var connectionStatusChanged: ISignal[this.type, ConnectionStatus] = js.native
-  /**
-    * Whether the kernel connection handles comm messages.
-    *
-    * #### Notes
-    * The comm message protocol currently has implicit assumptions that only
-    * one kernel connection is handling comm messages. This option allows a
-    * kernel connection to opt out of handling comms.
-    *
-    * See https://github.com/jupyter/jupyter_client/issues/263
-    */
-  var handleComms: Boolean = js.native
-  /**
-    * The id of the server-side kernel.
-    */
-  val id: String = js.native
-  /**
-    * The kernel info
-    *
-    * #### Notes
-    * This promise only resolves at startup, and is not refreshed on every
-    * restart.
-    */
-  val info: js.Promise[IInfoReply] = js.native
-  /**
-    * A signal emitted after an iopub kernel message is handled.
-    */
-  var iopubMessage: ISignal[this.type, IIOPubMessage[IOPubMessageType]] = js.native
-  /**
-    * The kernel model, for convenience.
-    */
-  val model: IModel = js.native
-  /**
-    * The name of the server-side kernel.
-    */
-  val name: String = js.native
-  /**
-    * The server settings for the kernel.
-    */
-  val serverSettings: ISettings = js.native
-  /**
-    * Get the kernel spec.
-    *
-    * @returns A promise that resolves with the kernel spec for this kernel.
-    *
-    * #### Notes
-    * This may make a server request to retrieve the spec.
-    */
-  val spec: js.Promise[js.UndefOr[ISpecModel]] = js.native
-  /**
-    * The current status of the kernel.
-    */
-  val status: Status = js.native
-  /**
-    * A signal emitted when the kernel status changes.
-    */
-  var statusChanged: ISignal[this.type, Status] = js.native
-  /**
-    * A signal emitted for unhandled non-iopub kernel messages that claimed to
-    * be responses for messages we sent using this kernel object.
-    */
-  var unhandledMessage: ISignal[this.type, IMessage[MessageType]] = js.native
-  /**
-    * The client username.
-    */
-  val username: String = js.native
-  def clone(options: PickIOptionsclientIdusern): IKernelConnection = js.native
+  
   /**
     * Create a new comm.
     *
@@ -147,10 +88,38 @@ trait IKernelConnection_ extends IObservableDisposable {
     */
   def createComm(targetName: String): IComm = js.native
   def createComm(targetName: String, commId: String): IComm = js.native
+  
+  /**
+    * Whether the kernel connection handles comm messages.
+    *
+    * #### Notes
+    * The comm message protocol currently has implicit assumptions that only
+    * one kernel connection is handling comm messages. This option allows a
+    * kernel connection to opt out of handling comms.
+    *
+    * See https://github.com/jupyter/jupyter_client/issues/263
+    */
+  var handleComms: Boolean = js.native
+  
   /**
     * Check if a comm exists.
     */
   def hasComm(commId: String): Boolean = js.native
+  
+  /**
+    * The id of the server-side kernel.
+    */
+  val id: String = js.native
+  
+  /**
+    * The kernel info
+    *
+    * #### Notes
+    * This promise only resolves at startup, and is not refreshed on every
+    * restart.
+    */
+  val info: js.Promise[IInfoReply] = js.native
+  
   /**
     * Interrupt a kernel.
     *
@@ -167,6 +136,22 @@ trait IKernelConnection_ extends IObservableDisposable {
     * request fails or the response is invalid.
     */
   def interrupt(): js.Promise[Unit] = js.native
+  
+  /**
+    * A signal emitted after an iopub kernel message is handled.
+    */
+  var iopubMessage: ISignal[this.type, IIOPubMessage[IOPubMessageType]] = js.native
+  
+  /**
+    * The kernel model, for convenience.
+    */
+  val model: IModel = js.native
+  
+  /**
+    * The name of the server-side kernel.
+    */
+  val name: String = js.native
+  
   /**
     * Reconnect to a disconnected kernel.
     *
@@ -177,6 +162,7 @@ trait IKernelConnection_ extends IObservableDisposable {
     * perform an HTTP request to the server or restart the kernel.
     */
   def reconnect(): js.Promise[Unit] = js.native
+  
   /**
     * Register a comm target handler.
     *
@@ -197,6 +183,7 @@ trait IKernelConnection_ extends IObservableDisposable {
     targetName: String,
     callback: js.Function2[/* comm */ IComm, /* msg */ ICommOpenMsg[iopub | shell], Unit | js.Thenable[Unit]]
   ): Unit = js.native
+  
   /**
     * Register an IOPub message hook.
     *
@@ -221,6 +208,7 @@ trait IKernelConnection_ extends IObservableDisposable {
     msgId: String,
     hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]
   ): Unit = js.native
+  
   /**
     * Remove a comm target handler.
     *
@@ -235,6 +223,7 @@ trait IKernelConnection_ extends IObservableDisposable {
     targetName: String,
     callback: js.Function2[/* comm */ IComm, /* msg */ ICommOpenMsg[iopub | shell], Unit | js.Thenable[Unit]]
   ): Unit = js.native
+  
   /**
     * Remove an IOPub message hook.
     *
@@ -247,6 +236,7 @@ trait IKernelConnection_ extends IObservableDisposable {
     msgId: String,
     hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]
   ): Unit = js.native
+  
   /**
     * Send a `comm_info_request` message.
     *
@@ -261,6 +251,7 @@ trait IKernelConnection_ extends IObservableDisposable {
     * received and validated.
     */
   def requestCommInfo(content: Targetname): js.Promise[ICommInfoReplyMsg] = js.native
+  
   /**
     * Send a `complete_request` message.
     *
@@ -275,6 +266,7 @@ trait IKernelConnection_ extends IObservableDisposable {
     * received and validated.
     */
   def requestComplete(content: Code): js.Promise[ICompleteReplyMsg] = js.native
+  
   /**
     * Send an experimental `debug_request` message.
     *
@@ -293,6 +285,7 @@ trait IKernelConnection_ extends IObservableDisposable {
     */
   def requestDebug(content: Arguments): IControlFuture[IDebugRequestMsg, IDebugReplyMsg] = js.native
   def requestDebug(content: Arguments, disposeOnDone: Boolean): IControlFuture[IDebugRequestMsg, IDebugReplyMsg] = js.native
+  
   /**
     * Send an `execute_request` message.
     *
@@ -315,8 +308,10 @@ trait IKernelConnection_ extends IObservableDisposable {
     * **See also:** [[IExecuteReply]]
     */
   def requestExecute(content: Allowstdin): IShellFuture[IExecuteRequestMsg, IExecuteReplyMsg] = js.native
+  def requestExecute(content: Allowstdin, disposeOnDone: js.UndefOr[scala.Nothing], metadata: JSONObject): IShellFuture[IExecuteRequestMsg, IExecuteReplyMsg] = js.native
   def requestExecute(content: Allowstdin, disposeOnDone: Boolean): IShellFuture[IExecuteRequestMsg, IExecuteReplyMsg] = js.native
   def requestExecute(content: Allowstdin, disposeOnDone: Boolean, metadata: JSONObject): IShellFuture[IExecuteRequestMsg, IExecuteReplyMsg] = js.native
+  
   /**
     * Send a `history_request` message.
     *
@@ -333,6 +328,7 @@ trait IKernelConnection_ extends IObservableDisposable {
   def requestHistory(content: IHistoryRequestRange): js.Promise[IHistoryReplyMsg] = js.native
   def requestHistory(content: IHistoryRequestSearch): js.Promise[IHistoryReplyMsg] = js.native
   def requestHistory(content: IHistoryRequestTail): js.Promise[IHistoryReplyMsg] = js.native
+  
   /**
     * Send an `inspect_request` message.
     *
@@ -347,6 +343,7 @@ trait IKernelConnection_ extends IObservableDisposable {
     * received and validated.
     */
   def requestInspect(content: Cursorpos): js.Promise[IInspectReplyMsg] = js.native
+  
   /**
     * Send an `is_complete_request` message.
     *
@@ -361,6 +358,7 @@ trait IKernelConnection_ extends IObservableDisposable {
     * received and validated.
     */
   def requestIsComplete(content: CodeString): js.Promise[IIsCompleteReplyMsg] = js.native
+  
   /**
     * Send a `kernel_info_request` message.
     *
@@ -375,6 +373,7 @@ trait IKernelConnection_ extends IObservableDisposable {
     * received and validated.
     */
   def requestKernelInfo(): js.Promise[js.UndefOr[IInfoReplyMsg]] = js.native
+  
   /**
     * Restart a kernel.
     *
@@ -391,9 +390,12 @@ trait IKernelConnection_ extends IObservableDisposable {
     * request fails or the response is invalid.
     */
   def restart(): js.Promise[Unit] = js.native
+  
   def sendControlMessage[T /* <: ControlMessageType */](msg: IControlMessage[T]): IControlFuture[IControlMessage[T], IControlMessage[ControlMessageType]] = js.native
+  def sendControlMessage[T /* <: ControlMessageType */](msg: IControlMessage[T], expectReply: js.UndefOr[scala.Nothing], disposeOnDone: Boolean): IControlFuture[IControlMessage[T], IControlMessage[ControlMessageType]] = js.native
   def sendControlMessage[T /* <: ControlMessageType */](msg: IControlMessage[T], expectReply: Boolean): IControlFuture[IControlMessage[T], IControlMessage[ControlMessageType]] = js.native
   def sendControlMessage[T /* <: ControlMessageType */](msg: IControlMessage[T], expectReply: Boolean, disposeOnDone: Boolean): IControlFuture[IControlMessage[T], IControlMessage[ControlMessageType]] = js.native
+  
   /**
     * Send an `input_reply` message.
     *
@@ -403,6 +405,7 @@ trait IKernelConnection_ extends IObservableDisposable {
     * See [Messaging in Jupyter](https://jupyter-client.readthedocs.io/en/latest/messaging.html#messages-on-the-stdin-router-dealer-sockets).
     */
   def sendInputReply(content: ReplyContent[IInputReply]): Unit = js.native
+  
   /**
     * Send a shell message to the kernel.
     *
@@ -433,8 +436,15 @@ trait IKernelConnection_ extends IObservableDisposable {
     * If the kernel status is `'dead'`, this will throw an error.
     */
   def sendShellMessage[T /* <: ShellMessageType */](msg: IShellMessage[T]): IShellFuture[IShellMessage[T], IShellMessage[ShellMessageType]] = js.native
+  def sendShellMessage[T /* <: ShellMessageType */](msg: IShellMessage[T], expectReply: js.UndefOr[scala.Nothing], disposeOnDone: Boolean): IShellFuture[IShellMessage[T], IShellMessage[ShellMessageType]] = js.native
   def sendShellMessage[T /* <: ShellMessageType */](msg: IShellMessage[T], expectReply: Boolean): IShellFuture[IShellMessage[T], IShellMessage[ShellMessageType]] = js.native
   def sendShellMessage[T /* <: ShellMessageType */](msg: IShellMessage[T], expectReply: Boolean, disposeOnDone: Boolean): IShellFuture[IShellMessage[T], IShellMessage[ShellMessageType]] = js.native
+  
+  /**
+    * The server settings for the kernel.
+    */
+  val serverSettings: ISettings = js.native
+  
   /**
     * Shutdown a kernel.
     *
@@ -451,5 +461,35 @@ trait IKernelConnection_ extends IObservableDisposable {
     * request fails, or the response is invalid.
     */
   def shutdown(): js.Promise[Unit] = js.native
+  
+  /**
+    * Get the kernel spec.
+    *
+    * @returns A promise that resolves with the kernel spec for this kernel.
+    *
+    * #### Notes
+    * This may make a server request to retrieve the spec.
+    */
+  val spec: js.Promise[js.UndefOr[ISpecModel]] = js.native
+  
+  /**
+    * The current status of the kernel.
+    */
+  val status: Status = js.native
+  
+  /**
+    * A signal emitted when the kernel status changes.
+    */
+  var statusChanged: ISignal[this.type, Status] = js.native
+  
+  /**
+    * A signal emitted for unhandled non-iopub kernel messages that claimed to
+    * be responses for messages we sent using this kernel object.
+    */
+  var unhandledMessage: ISignal[this.type, IMessage[MessageType]] = js.native
+  
+  /**
+    * The client username.
+    */
+  val username: String = js.native
 }
-

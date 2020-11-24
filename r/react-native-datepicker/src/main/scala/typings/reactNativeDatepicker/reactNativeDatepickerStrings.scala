@@ -2,9 +2,28 @@ package typings.reactNativeDatepicker
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeDatepickerStrings {
+  
+  @scala.inline
+  def calendar: calendar = "calendar".asInstanceOf[calendar]
+  
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  
+  @scala.inline
+  def datetime: datetime = "datetime".asInstanceOf[datetime]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def spinner: spinner = "spinner".asInstanceOf[spinner]
+  
+  @scala.inline
+  def time: time = "time".asInstanceOf[time]
+  
   @js.native
   sealed trait calendar extends js.Object
   
@@ -22,18 +41,4 @@ object reactNativeDatepickerStrings {
   
   @js.native
   sealed trait time extends js.Object
-  
-  @scala.inline
-  def calendar: calendar = "calendar".asInstanceOf[calendar]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def datetime: datetime = "datetime".asInstanceOf[datetime]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def spinner: spinner = "spinner".asInstanceOf[spinner]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
 }
-

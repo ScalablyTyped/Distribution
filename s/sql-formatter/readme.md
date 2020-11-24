@@ -10,9 +10,9 @@ Formats whitespaces in a SQL query to make it more readable
 | ------------------ | :-------------: |
 | Full name          | sql-formatter |
 | Keywords           | sql, formatter, format, n1ql, whitespaces |
-| # releases         | 8 |
-| # dependents       | 35 |
-| # downloads        | 697276 |
+| # releases         | 3 |
+| # dependents       | 63 |
+| # downloads        | 1312718 |
 | # stars            | 0 |
 
 ## Links

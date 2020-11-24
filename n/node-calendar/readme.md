@@ -10,9 +10,9 @@ A fairly straightforward port of the Python calendar package with extensions whe
 | ------------------ | :-------------: |
 | Full name          | node-calendar |
 | Keywords           | calendar, python, year, month, day, locale, isleap, leapdays, monthrange, setlocale, noconflict, timegm, weekday, getfirstweekday, setfirstweekday, iterweekdays, itermonthdates, itermonthdays, itermonthdays2, monthdatescalendar, monthdayscalendar, monthdays2calendar, yeardatescalendar, yeardayscalendar, yeardays2calendar |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 13317 |
+| # downloads        | 11651 |
 | # stars            | 6 |
 
 ## Links

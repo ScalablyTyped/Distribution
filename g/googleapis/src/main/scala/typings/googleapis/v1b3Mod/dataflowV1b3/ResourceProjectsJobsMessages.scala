@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataflow/v1b3", "dataflow_v1b3.Resource$Projects$Jobs$Messages")
 @js.native
 class ResourceProjectsJobsMessages protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dataflow.projects.jobs.messages.list
     * @desc Request the job status.  To request the status of a job, we
@@ -57,4 +59,3 @@ class ResourceProjectsJobsMessages protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListJobMessagesResponse]
   ): Unit = js.native
 }
-

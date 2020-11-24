@@ -12,7 +12,7 @@ Create a lazy promise that defers execution until it's awaited or when `.then()`
 | Keywords           | promise, lazy, defer, deferred, then, catch, fulfilled, async, function, await, promises, bluebird |
 | # releases         | 3 |
 | # dependents       | 21 |
-| # downloads        | 7044521 |
+| # downloads        | 5189994 |
 | # stars            | 1 |
 
 ## Links

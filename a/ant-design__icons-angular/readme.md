@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__icons-angular
 
-Typings are for version 9.0.1
+Typings are for version 10.2.0
 
 ## Library description:
 <h1 align="center"> Ant Design Icons for Angular </h1>
@@ -10,9 +10,9 @@ Typings are for version 9.0.1
 | ------------------ | :-------------: |
 | Full name          | @ant-design/icons-angular |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 23 |
-| # downloads        | 651327 |
+| # releases         | 26 |
+| # dependents       | 33 |
+| # downloads        | 1177679 |
 | # stars            | 0 |
 
 ## Links

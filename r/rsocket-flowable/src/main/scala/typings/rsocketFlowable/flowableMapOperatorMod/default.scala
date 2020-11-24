@@ -2,7 +2,7 @@ package typings.rsocketFlowable.flowableMapOperatorMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rsocket-flowable/FlowableMapOperator", JSImport.Default)
 @js.native
@@ -12,4 +12,3 @@ class default[T, R] protected () extends FlowableMapOperator[T, R] {
     fn: js.Function1[/* t */ T, R]
   ) = this()
 }
-

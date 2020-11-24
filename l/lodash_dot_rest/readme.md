@@ -11,8 +11,8 @@ The lodash method `_.rest` exported as a module.
 | Full name          | lodash.rest |
 | Keywords           | lodash-modularized, rest |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 7882712 |
+| # dependents       | 14 |
+| # downloads        | 6455531 |
 | # stars            | 0 |
 
 ## Links

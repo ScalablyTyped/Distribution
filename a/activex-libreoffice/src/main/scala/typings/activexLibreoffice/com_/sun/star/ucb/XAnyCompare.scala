@@ -4,11 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** compares two `any` s. */
 @js.native
 trait XAnyCompare extends XInterface {
+  
   /**
     * allows comparison of two `any` s.
     * @param Any1 is the first compare value
@@ -17,8 +18,8 @@ trait XAnyCompare extends XInterface {
     */
   def compare(Any1: js.Any, Any2: js.Any): Double = js.native
 }
-
 object XAnyCompare {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -29,20 +30,23 @@ object XAnyCompare {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), compare = js.Any.fromFunction2(compare), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XAnyCompare]
   }
+  
   @scala.inline
   implicit class XAnyCompareOps[Self <: XAnyCompare] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCompare(value: (js.Any, js.Any) => Double): Self = this.set("compare", js.Any.fromFunction2(value))
   }
-  
 }
-

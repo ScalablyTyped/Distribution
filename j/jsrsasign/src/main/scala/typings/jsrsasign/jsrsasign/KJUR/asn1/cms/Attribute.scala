@@ -3,7 +3,7 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.cms
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Attribute class for base of CMS attribute
@@ -19,8 +19,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Attribute extends ASN1Object
-
 object Attribute {
+  
   @scala.inline
   def apply(
     getEncodedHex: () => String,
@@ -37,4 +37,3 @@ object Attribute {
     __obj.asInstanceOf[Attribute]
   }
 }
-

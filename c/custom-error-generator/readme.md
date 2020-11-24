@@ -11,8 +11,8 @@ Custom errors and exceptions in Node.js
 | Full name          | custom-error-generator |
 | Keywords           | error, errors, error factory, custom error |
 | # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 156487 |
+| # dependents       | 28 |
+| # downloads        | 142495 |
 | # stars            | 5 |
 
 ## Links

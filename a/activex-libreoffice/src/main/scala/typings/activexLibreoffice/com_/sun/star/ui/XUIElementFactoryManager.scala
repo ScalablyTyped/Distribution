@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the new-style service {@link XUIElementFactoryManager} .
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 trait XUIElementFactoryManager
   extends XUIElementFactory
      with XUIElementFactoryRegistration
-
 object XUIElementFactoryManager {
+  
   @scala.inline
   def apply(
     RegisteredFactories: SafeArray[SafeArray[PropertyValue]],
@@ -34,4 +34,3 @@ object XUIElementFactoryManager {
     __obj.asInstanceOf[XUIElementFactoryManager]
   }
 }
-

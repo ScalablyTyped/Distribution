@@ -1,7 +1,7 @@
 
 # Scala.js typings for table
 
-Typings are for version 5.0
+Typings are for version 6.0
 
 ## Library description:
 Formats data into a string table.
@@ -11,8 +11,8 @@ Formats data into a string table.
 | Full name          | table |
 | Keywords           | ascii, text, table, align, ansi |
 | # releases         | 22 |
-| # dependents       | 418 |
-| # downloads        | 382262456 |
+| # dependents       | 587 |
+| # downloads        | 545711126 |
 | # stars            | 22 |
 
 ## Links

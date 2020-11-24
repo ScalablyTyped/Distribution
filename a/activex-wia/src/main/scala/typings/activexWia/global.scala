@@ -2,13 +2,15 @@ package typings.activexWia
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
   @js.native
   object WIA extends js.Object {
+    
     /**
       * The CommonDialog control is an invisible-at-runtime control that contains all the methods that display a User Interface. A CommonDialog control can be
       * created using "WIA.CommonDialog" in a call to CreateObject or by dropping a CommonDialog on a form.
@@ -100,8 +102,5 @@ object global extends js.Object {
     @js.native
     class Rational protected ()
       extends typings.activexWia.WIA.Rational
-    
   }
-  
 }
-

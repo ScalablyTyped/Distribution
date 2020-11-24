@@ -3,7 +3,7 @@ package typings.node.replMod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Indicates a recoverable error that a `REPLServer` can use to support multi-line input.
@@ -14,6 +14,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Recoverable protected () extends Error {
   def this(err: Error) = this()
+  
   var err: Error = js.native
 }
-

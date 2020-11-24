@@ -223,10 +223,11 @@ import typings.activexOutlook.anon.ViewView
 import typings.activexOutlook.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ActiveXObject extends js.Object {
+  
   def on(
     obj: AccountSelector,
     event: SelectedAccountChange,
@@ -4634,4 +4635,3 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ js.Object, Unit]
   ): Unit = js.native
 }
-

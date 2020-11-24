@@ -4,21 +4,21 @@
 Typings are for version 1.3
 
 ## Library description:
-Cropper as React components
+Cropper as React Component
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-cropper |
-| Keywords           | react, react-component, cropper, image |
-| # releases         | 3 |
-| # dependents       | 61 |
-| # downloads        | 1671840 |
+| Keywords           | react, react-component, cropper, image, cropperjs |
+| # releases         | 9 |
+| # dependents       | 85 |
+| # downloads        | 2207078 |
 | # stars            | 3 |
 
 ## Links
-- [Homepage](http://roadmanfong.github.io/react-cropper/)
-- [Bugs](https://github.com/roadmanfong/react-cropper/issues)
-- [Repository](https://github.com/roadmanfong/react-cropper)
+- [Homepage](https://github.com/react-cropper/react-cropper/)
+- [Bugs](https://github.com/react-cropper/react-cropper/issues)
+- [Repository](https://github.com/react-cropper/react-cropper)
 - [Npm](https://www.npmjs.com/package/react-cropper)
     
 

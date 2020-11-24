@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.form.FormComponent
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service specifies the model of a hidden control.
@@ -17,8 +17,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait HiddenControl extends FormComponent {
+  
   /** specifies the value of the component. */
   var HiddenValue: String = js.native
+  
   def getPropertyValues(aPropertyNames: SeqEquiv[String]): SafeArray[_] = js.native
 }
-

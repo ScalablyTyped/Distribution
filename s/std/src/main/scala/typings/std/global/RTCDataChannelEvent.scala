@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.RTCDataChannelEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("RTCDataChannelEvent")
 @js.native
@@ -12,7 +12,6 @@ class RTCDataChannelEvent protected ()
   extends typings.std.RTCDataChannelEvent {
   def this(`type`: java.lang.String, eventInitDict: RTCDataChannelEventInit) = this()
 }
-
 @JSGlobal("RTCDataChannelEvent")
 @js.native
 object RTCDataChannelEvent
@@ -21,4 +20,3 @@ object RTCDataChannelEvent
       /* eventInitDict */ RTCDataChannelEventInit, 
       typings.std.RTCDataChannelEvent
     ]
-

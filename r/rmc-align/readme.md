@@ -12,7 +12,7 @@ react align ui component for mobile
 | Keywords           | react, react-component, react-align, align, mobile align |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 584452 |
+| # downloads        | 831337 |
 | # stars            | 0 |
 
 ## Links

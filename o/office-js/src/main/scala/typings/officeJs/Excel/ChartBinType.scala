@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ChartBinType extends js.Object
-
 /**
   *
   * Specifies the bin's type of a histogram chart or pareto chart series.
@@ -16,6 +15,7 @@ sealed trait ChartBinType extends js.Object
 @JSGlobal("Excel.ChartBinType")
 @js.native
 object ChartBinType extends js.Object {
+  
   @js.native
   sealed trait auto extends ChartBinType
   
@@ -27,6 +27,4 @@ object ChartBinType extends js.Object {
   
   @js.native
   sealed trait category extends ChartBinType
-  
 }
-

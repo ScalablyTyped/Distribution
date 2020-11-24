@@ -2,7 +2,7 @@ package typings.plottable.plotsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/plots", "StackedBar")
 @js.native
@@ -20,11 +20,10 @@ class StackedBar[X, Y] ()
   extends typings.plottable.stackedBarPlotMod.StackedBar[X, Y] {
   def this(orientation: typings.plottable.barPlotMod.BarOrientation) = this()
 }
-
 /* static members */
 @JSImport("plottable/build/src/plots", "StackedBar")
 @js.native
 object StackedBar extends js.Object {
+  
   var _EXTREMA_LABEL_MARGIN_FROM_BAR: Double = js.native
 }
-

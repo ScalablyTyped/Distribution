@@ -7,7 +7,7 @@ import typings.xrm.xrmNumbers.`3`
 import typings.xrm.xrmNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enumeration of grid control context resolutions.
@@ -20,17 +20,20 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmNumbers.`4`
 */
 trait GridControlContext extends js.Object
-
 object GridControlContext {
+  
   @scala.inline
   def FormContextRelated: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def FormContextUnrelated: `3` = 3.asInstanceOf[`3`]
+  
   @scala.inline
   def RibbonContextForm: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def RibbonContextListing: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def Unknown: `0` = 0.asInstanceOf[`0`]
 }
-

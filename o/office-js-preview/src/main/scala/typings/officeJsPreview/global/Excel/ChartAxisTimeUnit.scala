@@ -2,7 +2,7 @@ package typings.officeJsPreview.global.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -13,10 +13,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.ChartAxisTimeUnit")
 @js.native
 object ChartAxisTimeUnit extends js.Object {
-  /* "Days" */ val days: typings.officeJsPreview.Excel.ChartAxisTimeUnit.days with String = js.native
-  /* "Months" */ val months: typings.officeJsPreview.Excel.ChartAxisTimeUnit.months with String = js.native
-  /* "Years" */ val years: typings.officeJsPreview.Excel.ChartAxisTimeUnit.years with String = js.native
+  
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ChartAxisTimeUnit with String] = js.native
+  
+  /* "Days" */ val days: typings.officeJsPreview.Excel.ChartAxisTimeUnit.days with String = js.native
+  
+  /* "Months" */ val months: typings.officeJsPreview.Excel.ChartAxisTimeUnit.months with String = js.native
+  
+  /* "Years" */ val years: typings.officeJsPreview.Excel.ChartAxisTimeUnit.years with String = js.native
 }
-

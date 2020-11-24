@@ -10,9 +10,9 @@ A Datepicker Component For Vue2
 | ------------------ | :-------------: |
 | Full name          | vue2-datepicker |
 | Keywords           | vue, calendar, datepicker, datetimepicker |
-| # releases         | 61 |
-| # dependents       | 20 |
-| # downloads        | 846031 |
+| # releases         | 41 |
+| # dependents       | 41 |
+| # downloads        | 1736251 |
 | # stars            | 1 |
 
 ## Links

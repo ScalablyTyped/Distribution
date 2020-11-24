@@ -10,9 +10,9 @@ Secure random numbers of any size in any base
 | ------------------ | :-------------: |
 | Full name          | csprng |
 | Keywords           | crypto, math, random, security |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 17 |
-| # downloads        | 4970348 |
+| # downloads        | 7494695 |
 | # stars            | 2 |
 
 ## Links

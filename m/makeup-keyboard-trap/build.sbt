@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "makeup-keyboard-trap"
-version := "0.1-dt-20181022Z-2de85c"
+version := "0.1-dt-20181022Z-af0a09"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -3,7 +3,7 @@ package typings.box2d.global.Box2D.Collision
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Box2D.Collision.b2RayCastInput")
 @js.native
@@ -23,4 +23,3 @@ class b2RayCastInput ()
   def this(p1: b2Vec2, p2: js.UndefOr[scala.Nothing], maxFraction: Double) = this()
   def this(p1: b2Vec2, p2: b2Vec2, maxFraction: Double) = this()
 }
-

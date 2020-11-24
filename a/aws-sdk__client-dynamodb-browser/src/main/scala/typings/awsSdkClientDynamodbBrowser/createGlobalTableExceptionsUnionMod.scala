@@ -2,11 +2,12 @@ package typings.awsSdkClientDynamodbBrowser
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-dynamodb-browser/types/CreateGlobalTableExceptionsUnion", JSImport.Namespace)
 @js.native
 object createGlobalTableExceptionsUnionMod extends js.Object {
+  
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientDynamodbBrowser.typesLimitExceededExceptionMod.LimitExceededException
     - typings.awsSdkClientDynamodbBrowser.typesInternalServerErrorMod.InternalServerError
@@ -14,6 +15,4 @@ object createGlobalTableExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientDynamodbBrowser.typesTableNotFoundExceptionMod.TableNotFoundException
   */
   trait CreateGlobalTableExceptionsUnion extends js.Object
-  
 }
-

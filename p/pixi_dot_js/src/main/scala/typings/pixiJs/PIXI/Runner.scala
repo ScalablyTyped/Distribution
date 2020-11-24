@@ -2,7 +2,7 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Runner is a highly performant and simple alternative to signals. Best used in situations
@@ -51,20 +51,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Runner extends js.Object {
-  /**
-    * `true` if there are no this Runner contains no listeners
-    *
-    * @member {boolean}
-    * @readonly
-    */
-  val empty: Boolean = js.native
-  /**
-    * The name of the runner.
-    *
-    * @member {string}
-    * @readonly
-    */
-  val name: String = js.native
+  
   /**
     * Add a listener to the Runner
     *
@@ -86,15 +73,18 @@ trait Runner extends js.Object {
     * @return {PIXI.Runner}
     */
   def add(item: js.Any): Runner = js.native
+  
   /**
     * Check to see if the listener is already in the Runner
     * @param {any} item - The listener that you would like to check.
     */
   def contains(item: js.Any): Unit = js.native
+  
   /**
     * Remove all references, don't use after this.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Alias for `emit`
     * @memberof PIXI.Runner#
@@ -102,23 +92,43 @@ trait Runner extends js.Object {
     * @see PIXI.Runner#emit
     */
   def dispatch(): Unit = js.native
+  
   /**
     * Dispatch/Broadcast Runner to all listeners added to the queue.
     * @param {...any} params - optional parameters to pass to each listener
     * @return {PIXI.Runner}
     */
   def emit(params: js.Any*): Runner = js.native
+  
+  /**
+    * `true` if there are no this Runner contains no listeners
+    *
+    * @member {boolean}
+    * @readonly
+    */
+  val empty: Boolean = js.native
+  
+  /**
+    * The name of the runner.
+    *
+    * @member {string}
+    * @readonly
+    */
+  val name: String = js.native
+  
   /**
     * Remove a single listener from the dispatch queue.
     * @param {any} item - The listenr that you would like to remove.
     * @return {PIXI.Runner}
     */
   def remove(item: js.Any): Runner = js.native
+  
   /**
     * Remove all listeners from the Runner
     * @return {PIXI.Runner}
     */
   def removeAll(): Runner = js.native
+  
   /**
     * Alias for `emit`
     * @memberof PIXI.Runner#
@@ -127,8 +137,8 @@ trait Runner extends js.Object {
     */
   def run(): Unit = js.native
 }
-
 object Runner {
+  
   @scala.inline
   def apply(
     add: js.Any => Runner,
@@ -145,38 +155,50 @@ object Runner {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), contains = js.Any.fromFunction1(contains), destroy = js.Any.fromFunction0(destroy), dispatch = js.Any.fromFunction0(dispatch), emit = js.Any.fromFunction1(emit), empty = empty.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll), run = js.Any.fromFunction0(run))
     __obj.asInstanceOf[Runner]
   }
+  
   @scala.inline
   implicit class RunnerOps[Self <: Runner] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAdd(value: js.Any => Runner): Self = this.set("add", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setContains(value: js.Any => Unit): Self = this.set("contains", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setDispatch(value: () => Unit): Self = this.set("dispatch", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setEmit(value: /* repeated */ js.Any => Runner): Self = this.set("emit", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setEmpty(value: Boolean): Self = this.set("empty", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRemove(value: js.Any => Runner): Self = this.set("remove", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setRemoveAll(value: () => Runner): Self = this.set("removeAll", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setRun(value: () => Unit): Self = this.set("run", js.Any.fromFunction0(value))
   }
-  
 }
-

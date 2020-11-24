@@ -5,12 +5,13 @@ import typings.node.Buffer
 import typings.qIo.Qio.Reader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait QioBufferReader extends Instantiable0[Reader] {
+  
   def join(buffers: js.Array[Buffer]): Buffer = js.native
+  
   def read(stream: Reader): Buffer = js.native
   def read(stream: Reader, charset: String): String = js.native
 }
-

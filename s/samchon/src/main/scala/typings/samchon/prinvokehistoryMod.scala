@@ -4,11 +4,12 @@ import typings.samchon.invokeHistoryMod.InvokeHistory
 import typings.samchon.invokeMod.Invoke
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/templates/parallel/PRInvokeHistory", JSImport.Namespace)
 @js.native
 object prinvokehistoryMod extends js.Object {
+  
   @js.native
   /**
     * Default Constructor.
@@ -20,18 +21,17 @@ object prinvokehistoryMod extends js.Object {
       * @param invoke An {@link Invoke} message requesting a *parallel process*.
       */
     def this(invoke: Invoke) = this()
-    /**
-      * @hidden
-      */
-    var first: js.Any = js.native
-    /**
-      * @hidden
-      */
-    var last: js.Any = js.native
+    
     /**
       * Compute number of allocated pieces.
       */
     def computeSize(): Double = js.native
+    
+    /**
+      * @hidden
+      */
+    var first: js.Any = js.native
+    
     /**
       * Get initial piece's index.
       *
@@ -40,6 +40,7 @@ object prinvokehistoryMod extends js.Object {
       * @return The initial index.
       */
     def getFirst(): Double = js.native
+    
     /**
       * Get final piece's index.
       *
@@ -50,7 +51,10 @@ object prinvokehistoryMod extends js.Object {
       * @return The final index.
       */
     def getLast(): Double = js.native
+    
+    /**
+      * @hidden
+      */
+    var last: js.Any = js.native
   }
-  
 }
-

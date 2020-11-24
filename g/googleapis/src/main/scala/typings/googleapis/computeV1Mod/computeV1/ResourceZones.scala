@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Zones")
 @js.native
 class ResourceZones protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.zones.get
     * @desc Returns the specified Zone resource. Gets a list of available zones
@@ -95,6 +97,7 @@ class ResourceZones protected () extends js.Object {
   ): Unit = js.native
   def get(params: ParamsResourceZonesGet, options: MethodOptions): GaxiosPromise[SchemaZone] = js.native
   def get(params: ParamsResourceZonesGet, options: MethodOptions, callback: BodyResponseCallback[SchemaZone]): Unit = js.native
+  
   /**
     * compute.zones.list
     * @desc Retrieves the list of Zone resources available to the specified
@@ -195,4 +198,3 @@ class ResourceZones protected () extends js.Object {
     callback: BodyResponseCallback[SchemaZoneList]
   ): Unit = js.native
 }
-

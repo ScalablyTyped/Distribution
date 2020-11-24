@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.chromeApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fired when the list of devices has changed or any device state properties have changed.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object onDeviceStateListChanged
   extends TopLevel[Event[js.Function0[Unit]]]
-

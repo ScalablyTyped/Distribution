@@ -5,7 +5,7 @@ import typings.mochaSugarFree.anon.Optionsasyncfalseundefine
 import typings.mochaSugarFree.anon.OptionsasynctruefnTestCas
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * [bdd, tdd, qunit]
@@ -16,20 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TestFunction extends js.Object {
-  /**
-    * [bdd, tdd, qunit]
-    *
-    * Indicates this test should be executed exclusively.
-    */
-  @JSName("only")
-  var only_Original: ExclusiveTestFunction = js.native
-  /**
-    * [bdd, tdd, qunit]
-    *
-    * Indicates this test should not be executed.
-    */
-  @JSName("skip")
-  var skip_Original: PendingTestFunction = js.native
+  
   def apply(fn: TestCase): Test_ = js.native
   // tslint:disable-next-line: unified-signatures
   def apply(options: Optionsasyncfalseundefine): Test_ = js.native
@@ -42,6 +29,7 @@ trait TestFunction extends js.Object {
   def apply(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
   def apply(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
   def apply(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+  
   /**
     * [bdd, tdd, qunit]
     *
@@ -87,6 +75,14 @@ trait TestFunction extends js.Object {
   /**
     * [bdd, tdd, qunit]
     *
+    * Indicates this test should be executed exclusively.
+    */
+  @JSName("only")
+  var only_Original: ExclusiveTestFunction = js.native
+  
+  /**
+    * [bdd, tdd, qunit]
+    *
     * Indicates this test should not be executed.
     */
   def skip(fn: TestCase): Test_ = js.native
@@ -126,5 +122,11 @@ trait TestFunction extends js.Object {
     */
   def skip(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
   def skip(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+  /**
+    * [bdd, tdd, qunit]
+    *
+    * Indicates this test should not be executed.
+    */
+  @JSName("skip")
+  var skip_Original: PendingTestFunction = js.native
 }
-

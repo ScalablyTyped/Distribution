@@ -6,11 +6,14 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitlab/dist/types/core/infrastructure/Utils", JSImport.Namespace)
 @js.native
 object utilsMod extends js.Object {
+  
+  def bundler[T /* <: StringDictionary[Constructor] */, P /* <: /* keyof T */ String */](services: T): Bundle[T, P] = js.native
+  
   @js.native
   trait Bundle[T /* <: StringDictionary[Constructor] */, P /* <: /* keyof T */ String */]
     extends Instantiable0[Mapper[T, P]]
@@ -20,9 +23,7 @@ object utilsMod extends js.Object {
   trait Constructor
     extends Instantiable1[/* args */ js.Any, js.Any]
   
-  def bundler[T /* <: StringDictionary[Constructor] */, P /* <: /* keyof T */ String */](services: T): Bundle[T, P] = js.native
   type Mapper[T /* <: StringDictionary[Constructor] */, P /* <: /* keyof T */ String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in P ]: std.InstanceType<T[name]>}
     */ typings.gitlab.gitlabStrings.Mapper with TopLevel[T]
 }
-

@@ -5,7 +5,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents an overlay, which offers a bitmap that covers a geographical reactangular area on the map.
@@ -27,4 +27,3 @@ class Overlay protected ()
   def this(bounds: typings.heremaps.H.geo.Rect, bitmap: HTMLCanvasElement, opt_options: Options) = this()
   def this(bounds: typings.heremaps.H.geo.Rect, bitmap: HTMLImageElement, opt_options: Options) = this()
 }
-

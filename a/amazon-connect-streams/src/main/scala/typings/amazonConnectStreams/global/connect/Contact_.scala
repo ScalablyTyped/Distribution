@@ -3,7 +3,7 @@ package typings.amazonConnectStreams.global.connect
 import typings.amazonConnectStreams.connect.Contact
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Contact API provides event subscription methods and action methods which can be called on behalf of a specific contact.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("connect.Contact")
 @js.native
 class Contact_ () extends Contact
-

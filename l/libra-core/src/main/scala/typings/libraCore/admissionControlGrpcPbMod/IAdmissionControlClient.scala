@@ -10,10 +10,11 @@ import typings.libraCore.getWithProofPbMod.UpdateToLatestLedgerRequest
 import typings.libraCore.getWithProofPbMod.UpdateToLatestLedgerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IAdmissionControlClient extends js.Object {
+  
   def submitTransaction(
     request: SubmitTransactionRequest,
     callback: js.Function2[/* error */ ServiceError | Null, /* response */ SubmitTransactionResponse, Unit]
@@ -29,6 +30,7 @@ trait IAdmissionControlClient extends js.Object {
     options: PartialCallOptions,
     callback: js.Function2[/* error */ ServiceError | Null, /* response */ SubmitTransactionResponse, Unit]
   ): ClientUnaryCall = js.native
+  
   def updateToLatestLedger(
     request: UpdateToLatestLedgerRequest,
     callback: js.Function2[/* error */ ServiceError | Null, /* response */ UpdateToLatestLedgerResponse, Unit]
@@ -45,4 +47,3 @@ trait IAdmissionControlClient extends js.Object {
     callback: js.Function2[/* error */ ServiceError | Null, /* response */ UpdateToLatestLedgerResponse, Unit]
   ): ClientUnaryCall = js.native
 }
-

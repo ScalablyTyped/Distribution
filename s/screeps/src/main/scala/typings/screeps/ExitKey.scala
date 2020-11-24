@@ -2,7 +2,7 @@ package typings.screeps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.screeps.screepsStrings.`1`
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.screeps.screepsStrings.`7`
 */
 trait ExitKey extends js.Object
-
 object ExitKey {
+  
   @scala.inline
   def `1`: typings.screeps.screepsStrings.`1` = "1".asInstanceOf[typings.screeps.screepsStrings.`1`]
+  
   @scala.inline
   def `3`: typings.screeps.screepsStrings.`3` = "3".asInstanceOf[typings.screeps.screepsStrings.`3`]
+  
   @scala.inline
   def `5`: typings.screeps.screepsStrings.`5` = "5".asInstanceOf[typings.screeps.screepsStrings.`5`]
+  
   @scala.inline
   def `7`: typings.screeps.screepsStrings.`7` = "7".asInstanceOf[typings.screeps.screepsStrings.`7`]
 }
-

@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PortVisibility extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.PortVisibility")
 @js.native
 object PortVisibility extends js.Object {
+  
   //Port gets visible when connect connector to node
   @js.native
   sealed trait Connect extends PortVisibility
@@ -29,6 +29,4 @@ object PortVisibility extends js.Object {
   //Set the port visibility as Visible
   @js.native
   sealed trait Visible extends PortVisibility
-  
 }
-

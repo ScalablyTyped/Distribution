@@ -31,7 +31,7 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is the default controller implementation for OpenOffice.org's database application. */
 @js.native
@@ -45,8 +45,8 @@ trait DefaultViewController
      with XTitle
      with XTitleChangeBroadcaster
      with XDatabaseDocumentUI
-
 object DefaultViewController {
+  
   @scala.inline
   def apply(
     ActiveConnection: XConnection,
@@ -103,4 +103,3 @@ object DefaultViewController {
     __obj.asInstanceOf[DefaultViewController]
   }
 }
-

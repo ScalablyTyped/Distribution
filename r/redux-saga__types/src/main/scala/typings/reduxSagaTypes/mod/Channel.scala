@@ -2,15 +2,17 @@ package typings.reduxSagaTypes.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Channel[T] extends js.Object {
+  
   /**
     * Closes the channel which means no more puts will be allowed. All pending
     * takers will be invoked with `END`.
     */
   def close(): Unit = js.native
+  
   /**
     * Used to extract all buffered messages from the channel. The flush is
     * resolved using the following rules
@@ -20,6 +22,7 @@ trait Channel[T] extends js.Object {
     * - Otherwise `callback` is invoked with all buffered messages.
     */
   def flush(cb: js.Function1[/* items */ js.Array[T] | END, Unit]): Unit = js.native
+  
   /**
     * Used to put message on the buffer. The put will be handled using the
     * following rules
@@ -31,6 +34,7 @@ trait Channel[T] extends js.Object {
     */
   def put(message: T): Unit = js.native
   def put(message: END): Unit = js.native
+  
   /**
     * Used to register a taker. The take is resolved using the following rules
     *
@@ -43,4 +47,3 @@ trait Channel[T] extends js.Object {
     */
   def take(cb: js.Function1[/* message */ T | END, Unit]): Unit = js.native
 }
-

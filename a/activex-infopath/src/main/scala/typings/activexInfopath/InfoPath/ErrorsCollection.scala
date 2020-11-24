@@ -3,13 +3,11 @@ package typings.activexInfopath.InfoPath
 import typings.activexAdodb.ADODB.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ErrorsCollection extends js.Object {
-  val Count: Double = js.native
-  @JSName("InfoPath.ErrorsCollection_typekey")
-  var InfoPathDotErrorsCollection_typekey: ErrorsCollection = js.native
+  
   /**
     * @param string [bstrDetailedErrorMessage='']
     * @param number [lErrorCode=0]
@@ -68,8 +66,15 @@ trait ErrorsCollection extends js.Object {
     lErrorCode: Double,
     bstrType: String
   ): Error = js.native
+  
+  val Count: Double = js.native
+  
   def Delete(varNode: js.Any, bstrConditionName: String): Unit = js.native
+  
   def DeleteAll(): Unit = js.native
+  
+  @JSName("InfoPath.ErrorsCollection_typekey")
+  var InfoPathDotErrorsCollection_typekey: ErrorsCollection = js.native
+  
   def Item(index: Double): Error = js.native
 }
-

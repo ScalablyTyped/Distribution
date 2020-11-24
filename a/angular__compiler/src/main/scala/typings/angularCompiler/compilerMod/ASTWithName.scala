@@ -2,7 +2,7 @@ package typings.angularCompiler.compilerMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "ASTWithName")
 @js.native
@@ -14,4 +14,3 @@ abstract class ASTWithName protected ()
     nameSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan
   ) = this()
 }
-

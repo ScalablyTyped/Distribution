@@ -2,9 +2,10 @@ package typings.hapiAuthBasic
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type Validate = js.Function4[
     /* request */ typings.hapi.mod.Request, 
     /* username */ java.lang.String, 

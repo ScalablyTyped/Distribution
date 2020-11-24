@@ -11,8 +11,8 @@ Cordova File Transfer Plugin
 | Full name          | cordova-plugin-file-transfer |
 | Keywords           | cordova, file, transfer, ecosystem:cordova, cordova-android, cordova-amazon-fireos, cordova-ubuntu, cordova-blackberry10, cordova-ios, cordova-wp7, cordova-wp8, cordova-windows8, cordova-windows, cordova-firefoxos, cordova-browser |
 | # releases         | 1 |
-| # dependents       | 20 |
-| # downloads        | 1129452 |
+| # dependents       | 24 |
+| # downloads        | 1039363 |
 | # stars            | 15 |
 
 ## Links

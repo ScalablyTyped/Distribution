@@ -10,9 +10,9 @@ encodeURIComponent with charset
 | ------------------ | :-------------: |
 | Full name          | urlencode |
 | Keywords           | urlencode, urldecode, encodeURIComponent, decodeURIComponent, querystring, parse |
-| # releases         | 1 |
-| # dependents       | 330 |
-| # downloads        | 1323851 |
+| # releases         | 0 |
+| # dependents       | 384 |
+| # downloads        | 7157838 |
 | # stars            | 11 |
 
 ## Links

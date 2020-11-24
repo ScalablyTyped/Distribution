@@ -3,7 +3,7 @@ package typings.ixJs.Ix
 import org.scalablytyped.runtime.Instantiable3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EnumeratorStatic
@@ -13,7 +13,7 @@ trait EnumeratorStatic
       /* dispose */ js.Function0[Unit], 
       Enumerator[js.Object]
     ] {
+  
   def create[T](moveNext: js.Function0[Boolean], getCurrent: js.Function0[T]): Enumerator[T] = js.native
   def create[T](moveNext: js.Function0[Boolean], getCurrent: js.Function0[T], dispose: js.Function0[Unit]): Enumerator[T] = js.native
 }
-

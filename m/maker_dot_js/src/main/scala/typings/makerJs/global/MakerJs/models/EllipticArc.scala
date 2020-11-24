@@ -3,7 +3,7 @@ package typings.makerJs.global.MakerJs.models
 import typings.makerJs.MakerJs.IPathArc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MakerJs.models.EllipticArc")
 @js.native
@@ -30,4 +30,3 @@ class EllipticArc protected ()
   def this(startAngle: Double, endAngle: Double, radiusX: Double, radiusY: Double) = this()
   def this(startAngle: Double, endAngle: Double, radiusX: Double, radiusY: Double, accuracy: Double) = this()
 }
-

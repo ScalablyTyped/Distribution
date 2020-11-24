@@ -4,20 +4,29 @@ import typings.plottable.componentMod.Component
 import typings.plottable.interfacesMod.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/interactions/interaction", JSImport.Namespace)
 @js.native
 object interactionMod extends js.Object {
+  
   @js.native
   class Interaction () extends js.Object {
-    var _anchorCallback: js.Any = js.native
-    var _componentAttachedTo: Component = js.native
-    var _enabled: js.Any = js.native
-    var _isAnchored: js.Any = js.native
+    
     /* protected */ def _anchor(component: Component): Unit = js.native
+    
+    var _anchorCallback: js.Any = js.native
+    
+    var _componentAttachedTo: Component = js.native
+    
     /* private */ def _connect(): js.Any = js.native
+    
     /* private */ def _disconnect(): js.Any = js.native
+    
+    var _enabled: js.Any = js.native
+    
+    var _isAnchored: js.Any = js.native
+    
     /**
       * Checks whether a Component-coordinate-space Point is inside the Component.
       *
@@ -25,6 +34,7 @@ object interactionMod extends js.Object {
       * @return {boolean} Whether or not the point is inside the Component.
       */
     /* protected */ def _isInsideComponent(p: Point): Boolean = js.native
+    
     /**
       * Translates an <svg>-coordinate-space point to Component-space coordinates.
       *
@@ -32,7 +42,9 @@ object interactionMod extends js.Object {
       * @return {Point} The same location in Component-space coordinates.
       */
     /* protected */ def _translateToComponentSpace(p: Point): Point = js.native
+    
     /* protected */ def _unanchor(): Unit = js.native
+    
     /**
       * Attaches this Interaction to a Component.
       * If the Interaction was already attached to a Component, it first detaches itself from the old Component.
@@ -41,6 +53,7 @@ object interactionMod extends js.Object {
       * @returns {Interaction} The calling Interaction.
       */
     def attachTo(component: Component): this.type = js.native
+    
     /**
       * Detaches this Interaction from whatever component it was attached to.
       * This Interaction can be reused.
@@ -48,10 +61,12 @@ object interactionMod extends js.Object {
       * @returns {Interaction} The calling Interaction.
       */
     def detach(): this.type = js.native
+    
     /**
       * @deprecated renamed to .detach().
       */
     def detachFrom(_component: Component): this.type = js.native
+    
     /**
       * Gets whether this Interaction is enabled.
       */
@@ -64,6 +79,4 @@ object interactionMod extends js.Object {
       */
     def enabled(enabled: Boolean): this.type = js.native
   }
-  
 }
-

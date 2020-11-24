@@ -3,19 +3,12 @@ package typings.pReduce
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-reduce", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function pReduce<ValueType, ReducedValueType = ValueType>(
-  // 	input: Iterable<PromiseLike<ValueType> | ValueType>,
-  // 	reducer: pReduce.ReducerFunction<ValueType, ReducedValueType>,
-  // 	initialValue?: ReducedValueType
-  // ): Promise<ReducedValueType>;
-  // export = pReduce;
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pReduce */ js.Any = js.native
+  
   /**
   	Reduce a list of values using promises into a promise for a value.
   	@param input - Iterated over serially in the `reducer` function.
@@ -51,6 +44,16 @@ object mod extends js.Object {
     reducer: ReducerFunction[ValueType, ReducedValueType],
     initialValue: ReducedValueType
   ): js.Promise[ReducedValueType] = js.native
+  
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function pReduce<ValueType, ReducedValueType = ValueType>(
+  // 	input: Iterable<PromiseLike<ValueType> | ValueType>,
+  // 	reducer: pReduce.ReducerFunction<ValueType, ReducedValueType>,
+  // 	initialValue?: ReducedValueType
+  // ): Promise<ReducedValueType>;
+  // export = pReduce;
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pReduce */ js.Any = js.native
+  
   type ReducerFunction[ValueType, ReducedValueType] = js.Function3[
     /* previousValue */ ReducedValueType, 
     /* currentValue */ ValueType, 
@@ -58,4 +61,3 @@ object mod extends js.Object {
     js.Thenable[ReducedValueType] | ReducedValueType
   ]
 }
-

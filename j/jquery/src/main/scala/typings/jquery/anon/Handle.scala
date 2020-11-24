@@ -4,10 +4,11 @@ import typings.jquery.JQuery.TriggeredEvent
 import typings.jquery.JQuery._SpecialEventHook
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Handle[TTarget, TData] extends _SpecialEventHook[TTarget, TData] {
+  
   /**
     * jQuery calls a handle hook when the event has occurred and jQuery would normally call the user's event handler specified by `.on()` or another event binding method. If the hook exists, jQuery calls it _instead_ of that event handler, passing it the event and any data passed from `.trigger()` if it was not a native event. The `this` keyword is the DOM element being handled, and `event.handleObj` property has the detailed event information.
     *
@@ -16,8 +17,8 @@ trait Handle[TTarget, TData] extends _SpecialEventHook[TTarget, TData] {
     */
   def handle(event: (TriggeredEvent[TTarget, TData, _, _]) with (HandleObj[TTarget, TData]), data: TData*): Unit = js.native
 }
-
 object Handle {
+  
   @scala.inline
   def apply[TTarget, TData](
     handle: ((TriggeredEvent[TTarget, TData, _, _]) with (HandleObj[TTarget, TData]), /* repeated */ TData) => Unit
@@ -25,22 +26,25 @@ object Handle {
     val __obj = js.Dynamic.literal(handle = js.Any.fromFunction2(handle))
     __obj.asInstanceOf[Handle[TTarget, TData]]
   }
+  
   @scala.inline
   implicit class HandleOps[Self <: Handle[_, _], TTarget, TData] (val x: Self with (Handle[TTarget, TData])) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setHandle(
       value: ((TriggeredEvent[TTarget, TData, _, _]) with (HandleObj[TTarget, TData]), /* repeated */ TData) => Unit
     ): Self = this.set("handle", js.Any.fromFunction2(value))
   }
-  
 }
-

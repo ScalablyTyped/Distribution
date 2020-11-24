@@ -7,18 +7,17 @@ import typings.std.ReadonlySet
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/cli-framework/lib", "Logger")
 @js.native
 class Logger_ () extends Logger {
   def this(hasLevelHandlers: LoggerOptions) = this()
 }
-
 /* static members */
 @JSImport("@ionic/cli-framework/lib", "Logger")
 @js.native
 object Logger_ extends js.Object {
+  
   def cloneHandlers(handlers: ReadonlySet[LoggerHandler]): Set[LoggerHandler] = js.native
 }
-

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsensehost/v4.1", "adsensehost_v4_1.Resource$Adclients")
 @js.native
 class ResourceAdclients protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adsensehost.adclients.get
     * @desc Get information about one of the ad clients in the Host AdSense
@@ -42,6 +44,7 @@ class ResourceAdclients protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdClient]
   ): Unit = js.native
+  
   /**
     * adsensehost.adclients.list
     * @desc List all host ad clients in this AdSense account.
@@ -72,4 +75,3 @@ class ResourceAdclients protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAdClients]
   ): Unit = js.native
 }
-

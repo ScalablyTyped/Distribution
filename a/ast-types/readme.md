@@ -1,7 +1,7 @@
 
 # Scala.js typings for ast-types
 
-Typings are for version 0.13.2
+Typings are for version 0.14.2
 
 ## Library description:
 Esprima-compatible implementation of the Mozilla JS Parser API
@@ -10,9 +10,9 @@ Esprima-compatible implementation of the Mozilla JS Parser API
 | ------------------ | :-------------: |
 | Full name          | ast-types |
 | Keywords           | ast, abstract syntax tree, hierarchy, mozilla, spidermonkey, parser api, esprima, types, type system, type checking, dynamic types, parsing, transformation, syntax |
-| # releases         | 18 |
-| # dependents       | 163 |
-| # downloads        | 252240078 |
+| # releases         | 14 |
+| # dependents       | 192 |
+| # downloads        | 378713318 |
 | # stars            | 6 |
 
 ## Links

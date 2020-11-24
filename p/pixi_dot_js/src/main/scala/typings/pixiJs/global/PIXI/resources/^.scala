@@ -2,11 +2,12 @@ package typings.pixiJs.global.PIXI.resources
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PIXI.resources")
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Collection of installed resource types, class must extend {@link PIXI.resources.Resource}.
     * @example
@@ -35,4 +36,3 @@ object ^ extends js.Object {
     */
   var INSTALLED: js.Array[js.Any] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Web.Http
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a set of properties and methods to manage an HTTP cookie. */
 @JSGlobal("Windows.Web.Http.HttpCookie")
@@ -17,4 +17,3 @@ class HttpCookie protected ()
     */
   def this(name: String, domain: String, path: String) = this()
 }
-

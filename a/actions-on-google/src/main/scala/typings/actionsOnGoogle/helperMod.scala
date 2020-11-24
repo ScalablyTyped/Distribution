@@ -23,11 +23,14 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionDecisionValueSpec
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionRequirementsCheckSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", JSImport.Namespace)
 @js.native
 object helperMod extends js.Object {
+  
+  def convert(items: OptionItems[String | OptionItem]): js.Array[ApiOptionItem] = js.native
+  
   @js.native
   class Carousel protected ()
     extends typings.actionsOnGoogle.optionMod.Carousel {
@@ -207,7 +210,4 @@ object helperMod extends js.Object {
       */
     def this(options: UpdatePermissionOptions) = this()
   }
-  
-  def convert(items: OptionItems[String | OptionItem]): js.Array[ApiOptionItem] = js.native
 }
-

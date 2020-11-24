@@ -2,7 +2,7 @@ package typings.windowsScriptHost
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides access to the named command-line arguments
@@ -11,10 +11,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait WshNamed extends js.Object {
-  var Length: Double = js.native
+  
   def apply(name: String): String = js.native
+  
   def Count(): Double = js.native
+  
   def Exists(Key: String): Boolean = js.native
+  
   def Item(name: String): String = js.native
+  
+  var Length: Double = js.native
 }
-

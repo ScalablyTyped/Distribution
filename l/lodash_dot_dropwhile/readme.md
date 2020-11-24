@@ -12,7 +12,7 @@ The lodash method `_.dropWhile` exported as a module.
 | Keywords           | lodash-modularized, dropwhile |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 3092 |
+| # downloads        | 3602 |
 | # stars            | 0 |
 
 ## Links

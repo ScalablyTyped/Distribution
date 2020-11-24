@@ -26,7 +26,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service is for a closed Bezier shape. */
 @js.native
@@ -39,8 +39,8 @@ trait ClosedBezierShape
      with TextProperties
      with ShadowProperties
      with RotationDescriptor
-
 object ClosedBezierShape {
+  
   @scala.inline
   def apply(
     End: XTextRange,
@@ -157,4 +157,3 @@ object ClosedBezierShape {
     __obj.asInstanceOf[ClosedBezierShape]
   }
 }
-

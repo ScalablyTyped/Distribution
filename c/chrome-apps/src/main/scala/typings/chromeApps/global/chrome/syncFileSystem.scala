@@ -37,7 +37,7 @@ import typings.filesystem.FileSystem
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.syncFileSystem
@@ -58,14 +58,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.syncFileSystem")
 @js.native
 object syncFileSystem extends js.Object {
-  /** Fired when a file has been updated by the background sync service. */
-  val onFileStatusChanged: typings.chromeApps.chrome.events.Event[js.Function1[/* detail */ FileStatusChangedDetail, Unit]] = js.native
-  /**
-    * Fired when an error or other status change has happened in the sync backend
-    * (for example, when the sync is temporarily disabled due to network or authentication error).
-    * @see ServiceStatus
-    */
-  val onServiceStatusChanged: typings.chromeApps.chrome.events.Event[js.Function1[/* detail */ State, Unit]] = js.native
+  
   /**
     * Gets the current conflict resolution policy.
     * @see ConflictResolutionPolicy
@@ -83,6 +76,7 @@ object syncFileSystem extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Returns the FileStatus for the given fileEntry.
     * Note that 'conflicting' state only happens when
@@ -103,11 +97,13 @@ object syncFileSystem extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /** Returns each FileStatus for the given fileEntry array. Typically called with the result from dirReader.readEntries(). */
   def getFileStatuses(
     fileEntries: js.Array[FileEntry],
     callback: js.Function1[/* status */ js.Array[FileStatusInfo], Unit]
   ): Unit = js.native
+  
   /**
     * Returns the current sync backend status.
     * @since Chrome 31.
@@ -127,12 +123,24 @@ object syncFileSystem extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Returns the current usage and quota in bytes for the 'syncable' file storage for the app.
     * @param fileSystem
     * @param callback
     */
   def getUsageAndQuota(fileSystem: FileSystem, callback: js.Function1[/* info */ QuotaBytes, Unit]): Unit = js.native
+  
+  /** Fired when a file has been updated by the background sync service. */
+  val onFileStatusChanged: typings.chromeApps.chrome.events.Event[js.Function1[/* detail */ FileStatusChangedDetail, Unit]] = js.native
+  
+  /**
+    * Fired when an error or other status change has happened in the sync backend
+    * (for example, when the sync is temporarily disabled due to network or authentication error).
+    * @see ServiceStatus
+    */
+  val onServiceStatusChanged: typings.chromeApps.chrome.events.Event[js.Function1[/* detail */ State, Unit]] = js.native
+  
   /**
     * Returns a syncable filesystem backed by Google Drive.
     * The returned DOMFileSystem instance can be operated on
@@ -148,6 +156,7 @@ object syncFileSystem extends js.Object {
     * @param callback A callback type for requestFileSystem.
     */
   def requestFileSystem(callback: js.Function1[/* fileSystem */ FileSystem, Unit]): Unit = js.native
+  
   /**
     * Sets the default conflict resolution policy for the 'syncable' file storage
     * for the app. By default it is set to 'last_write_win'. When conflict resolution
@@ -179,9 +188,12 @@ object syncFileSystem extends js.Object {
     ],
     callback: js.Function0[Unit]
   ): Unit = js.native
+  
   @js.native
   object ConflictResolutionPolicy extends js.Object {
+    
     var LAST_WRITE_WIN: last_write_win_ = js.native
+    
     var MANUAL: manual__ = js.native
   }
   
@@ -196,8 +208,11 @@ object syncFileSystem extends js.Object {
     */
   @js.native
   object FileStatus extends js.Object {
+    
     var CONFLICTING: conflicting_ = js.native
+    
     var PENDING: pending_ = js.native
+    
     var SYNCED: synced_ = js.native
   }
   
@@ -216,25 +231,33 @@ object syncFileSystem extends js.Object {
     */
   @js.native
   object ServiceStatus extends js.Object {
+    
     var AUTHENTICATION_REQUIRED: authentication_required_ = js.native
+    
     var DISABLED: disabled__ = js.native
+    
     var INITIALIZING: initializing_ = js.native
+    
     var RUNNING: running_ = js.native
+    
     var TEMPORARY_UNAVAILABLE: temporary_unavailable_ = js.native
   }
   
   @js.native
   object SyncAction extends js.Object {
+    
     var ADDED: added_ = js.native
+    
     var DELETED: deleted_ = js.native
+    
     var UPDATED: updated_ = js.native
   }
   
   @js.native
   object SyncDirection extends js.Object {
+    
     var LOCAL_TO_REMOTE: local_to_remote_ = js.native
+    
     var REMOTE_TO_LOCAL: remote_to_local_ = js.native
   }
-  
 }
-

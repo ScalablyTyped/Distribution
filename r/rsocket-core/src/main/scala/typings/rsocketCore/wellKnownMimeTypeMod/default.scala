@@ -2,18 +2,18 @@ package typings.rsocketCore.wellKnownMimeTypeMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rsocket-core/WellKnownMimeType", JSImport.Default)
 @js.native
 class default protected () extends WellKnownMimeType {
   def this(str: String, identifier: Double) = this()
 }
-
 /* static members */
 @JSImport("rsocket-core/WellKnownMimeType", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   /**
     * Find the {@link WellKnownMimeType} for the given identifier (as an {@code int}). Valid
     * identifiers are defined to be integers between 0 and 127, inclusive. Identifiers outside of
@@ -29,6 +29,7 @@ object default extends js.Object {
     *     is merely reserved but unknown to this implementation.
     */
   def fromIdentifier(id: Double): WellKnownMimeType = js.native
+  
   /**
     * Find the {@link WellKnownMimeType} for the given {@link String} representation. If the
     * representation is {@code null} or doesn't match a {@link WellKnownMimeType}, the {@link
@@ -39,4 +40,3 @@ object default extends js.Object {
     */
   def fromString(mimeType: String): WellKnownMimeType = js.native
 }
-

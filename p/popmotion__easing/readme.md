@@ -10,9 +10,9 @@ Easing functions, modifiers and generators compatible with most animation librar
 | ------------------ | :-------------: |
 | Full name          | @popmotion/easing |
 | Keywords           | animation, ux, ui, popmotion, canvas animation, dom animation, dom, physics, interaction, interface |
-| # releases         | 5 |
-| # dependents       | 14 |
-| # downloads        | 4191807 |
+| # releases         | 2 |
+| # dependents       | 13 |
+| # downloads        | 7987809 |
 | # stars            | 0 |
 
 ## Links

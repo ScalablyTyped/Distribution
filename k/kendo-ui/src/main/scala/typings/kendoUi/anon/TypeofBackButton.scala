@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.mobile.ui.BackButtonOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofBackButton
   extends Instantiable1[/* element */ Element, BackButton]
      with Instantiable2[/* element */ Element, /* options */ BackButtonOptions, BackButton] {
-  var fn: BackButton = js.native
+  
   def extend(proto: js.Object): BackButton = js.native
+  
+  var fn: BackButton = js.native
 }
-

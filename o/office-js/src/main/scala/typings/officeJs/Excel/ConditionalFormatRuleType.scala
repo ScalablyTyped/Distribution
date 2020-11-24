@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ConditionalFormatRuleType extends js.Object
-
 /**
   *
   * Represents the types of conditional format values.
@@ -16,6 +15,7 @@ sealed trait ConditionalFormatRuleType extends js.Object
 @JSGlobal("Excel.ConditionalFormatRuleType")
 @js.native
 object ConditionalFormatRuleType extends js.Object {
+  
   @js.native
   sealed trait automatic extends ConditionalFormatRuleType
   
@@ -39,6 +39,4 @@ object ConditionalFormatRuleType extends js.Object {
   
   @js.native
   sealed trait percentile extends ConditionalFormatRuleType
-  
 }
-

@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Security.Credentials
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Identifies an account from a web account provider. */
 @JSGlobal("Windows.Security.Credentials.WebAccount")
@@ -21,4 +21,3 @@ class WebAccount protected ()
     state: typings.winrtUwp.Windows.Security.Credentials.WebAccountState
   ) = this()
 }
-

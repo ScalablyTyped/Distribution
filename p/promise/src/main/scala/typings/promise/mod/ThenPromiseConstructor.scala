@@ -3,7 +3,7 @@ package typings.promise.mod
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ThenPromiseConstructor
@@ -21,6 +21,7 @@ Instantiable1[
       ], 
       ThenPromise[js.Object]
     ] {
+  
   /**
     * Creates a ThenPromise that is resolved with an array of results when all of the provided Promises
     * resolve, or rejected when any ThenPromise is rejected.
@@ -154,9 +155,12 @@ Instantiable1[
       T10 | Thenable[T10]
     ]
   ): ThenPromise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = js.native
+  
   // Extensions specific to then/promise
   def denodeify(fn: js.Function): js.Function1[/* repeated */ js.Any, ThenPromise[_]] = js.native
+  
   def nodeify(fn: js.Function): js.Function = js.native
+  
   /**
     * Creates a ThenPromise that is resolved or rejected when any of the provided Promises are resolved
     * or rejected.
@@ -290,6 +294,7 @@ Instantiable1[
       T10 | Thenable[T10]
     ]
   ): ThenPromise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = js.native
+  
   /**
     * Creates a new rejected promise for the provided reason.
     * @param reason The reason the promise was rejected.
@@ -303,6 +308,7 @@ Instantiable1[
     */
   @JSName("reject")
   def reject_T[T](reason: js.Any): ThenPromise[T] = js.native
+  
   /**
     * Creates a new resolved promise .
     * @returns A resolved promise.
@@ -316,4 +322,3 @@ Instantiable1[
   def resolve[T](value: T): ThenPromise[T] = js.native
   def resolve[T](value: Thenable[T]): ThenPromise[T] = js.native
 }
-

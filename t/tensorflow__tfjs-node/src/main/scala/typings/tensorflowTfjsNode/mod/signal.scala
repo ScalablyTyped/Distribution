@@ -1,31 +1,44 @@
 package typings.tensorflowTfjsNode.mod
 
-import typings.tensorflowTfjsCore.tensorMod.Tensor
-import typings.tensorflowTfjsCore.tensorMod.Tensor1D
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
+import typings.tensorflowTfjsCore.distTypesMod.Rank.R1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-node", "signal")
 @js.native
 object signal extends js.Object {
-  val frame: js.Function5[
-    /* signal */ Tensor1D, 
-    /* frameLength */ Double, 
-    /* frameStep */ Double, 
-    /* padEnd */ js.UndefOr[Boolean], 
-    /* padValue */ js.UndefOr[Double], 
-    Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ] = js.native
-  val hammingWindow: js.Function1[/* windowLength */ Double, Tensor1D] = js.native
-  val hannWindow: js.Function1[/* windowLength */ Double, Tensor1D] = js.native
-  val stft: js.Function5[
-    /* signal */ Tensor1D, 
-    /* frameLength */ Double, 
-    /* frameStep */ Double, 
-    /* fftLength */ js.UndefOr[Double], 
-    /* windowFn */ js.UndefOr[js.Function1[/* length */ Double, Tensor1D]], 
-    Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ] = js.native
+  
+  def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  def frame(
+    signal: Tensor[R1],
+    frameLength: Double,
+    frameStep: Double,
+    padEnd: js.UndefOr[scala.Nothing],
+    padValue: Double
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double, padEnd: Boolean): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double, padEnd: Boolean, padValue: Double): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  
+  def hammingWindow(windowLength: Double): Tensor[R1] = js.native
+  
+  def hannWindow(windowLength: Double): Tensor[R1] = js.native
+  
+  def stft(signal: Tensor[R1], frameLength: Double, frameStep: Double): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  def stft(
+    signal: Tensor[R1],
+    frameLength: Double,
+    frameStep: Double,
+    fftLength: js.UndefOr[scala.Nothing],
+    windowFn: js.Function1[/* length */ Double, Tensor[R1]]
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  def stft(signal: Tensor[R1], frameLength: Double, frameStep: Double, fftLength: Double): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
+  def stft(
+    signal: Tensor[R1],
+    frameLength: Double,
+    frameStep: Double,
+    fftLength: Double,
+    windowFn: js.Function1[/* length */ Double, Tensor[R1]]
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = js.native
 }
-

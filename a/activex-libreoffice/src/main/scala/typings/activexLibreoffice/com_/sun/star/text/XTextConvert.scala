@@ -7,11 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.sequence
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows converting selections of text to frames or tables. */
 @js.native
 trait XTextConvert extends XInterface {
+  
   /**
     * converts the paragraphs marked in TableRanges into a table.
     * @param TableRanges contains the {@link TextRange} interfaces of the paragraphs, cells and rows of the table. The inner sequence contains the start and e
@@ -26,6 +27,7 @@ trait XTextConvert extends XInterface {
     RowProperties: SeqEquiv[PropertyValues],
     TableProperties: PropertyValues
   ): XTextTable = js.native
+  
   /**
     * moves the paragraphs from Start to End into a text frame.
     * @param Start start position of frame content
@@ -35,8 +37,8 @@ trait XTextConvert extends XInterface {
     */
   def convertToTextFrame(Start: XTextRange, End: XTextRange, FrameProperties: PropertyValues): XTextContent = js.native
 }
-
 object XTextConvert {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -48,24 +50,28 @@ object XTextConvert {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), convertToTable = js.Any.fromFunction4(convertToTable), convertToTextFrame = js.Any.fromFunction3(convertToTextFrame), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XTextConvert]
   }
+  
   @scala.inline
   implicit class XTextConvertOps[Self <: XTextConvert] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setConvertToTable(
       value: (SeqEquiv[SeqEquiv[sequence[XTextRange]]], SeqEquiv[SeqEquiv[PropertyValues]], SeqEquiv[PropertyValues], PropertyValues) => XTextTable
     ): Self = this.set("convertToTable", js.Any.fromFunction4(value))
+    
     @scala.inline
     def setConvertToTextFrame(value: (XTextRange, XTextRange, PropertyValues) => XTextContent): Self = this.set("convertToTextFrame", js.Any.fromFunction3(value))
   }
-  
 }
-

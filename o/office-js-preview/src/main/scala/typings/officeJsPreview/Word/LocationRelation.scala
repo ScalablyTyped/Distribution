@@ -2,17 +2,17 @@ package typings.officeJsPreview.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LocationRelation extends js.Object
-
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.LocationRelation")
 @js.native
 object LocationRelation extends js.Object {
+  
   /**
     * Indicates that this instance occurs after, and is adjacent to, the range.
     *
@@ -110,6 +110,4 @@ object LocationRelation extends js.Object {
     */
   @js.native
   sealed trait unrelated extends LocationRelation
-  
 }
-

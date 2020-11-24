@@ -12,7 +12,7 @@ Nice, downward compatible, touchable, jQuery dial
 | Keywords           | jquery, knob, dial |
 | # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 868281 |
+| # downloads        | 969699 |
 | # stars            | 3 |
 
 ## Links

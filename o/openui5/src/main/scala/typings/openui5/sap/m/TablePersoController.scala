@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.base.ManagedObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TablePersoController extends ManagedObject {
+  
   /**
     * Activates the controller, i.e. tries to retrieve existing persistedpersonalizations, creates a
     * TablePersoDialog for the associatedtable and attaches a close handler to apply the personalizations
@@ -23,6 +24,7 @@ trait TablePersoController extends ManagedObject {
     * @returns the TablePersoController instance.
     */
   def activate(): TablePersoController = js.native
+  
   /**
     * Adds some table into the association <code>tables</code>.
     * @param vTable the tables to add; if empty, nothing is inserted
@@ -30,11 +32,13 @@ trait TablePersoController extends ManagedObject {
     */
   def addTable(vTable: js.Any): TablePersoController = js.native
   def addTable(vTable: Table): TablePersoController = js.native
+  
   /**
     * Applies the personalizations by getting the existing personalizationsand adjusting to the table.
     * @param oTable the table to be personalized.
     */
   def applyPersonalizations(oTable: Table): Unit = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>personalizationsDone</code> event of
     * this <code>sap.m.TablePersoController</code>.When called, the context of the event handler (its
@@ -49,11 +53,13 @@ trait TablePersoController extends ManagedObject {
     */
   def attachPersonalizationsDone(oData: js.Any, fnFunction: js.Any): TablePersoController = js.native
   def attachPersonalizationsDone(oData: js.Any, fnFunction: js.Any, oListener: js.Any): TablePersoController = js.native
+  
   /**
     * Destroys the persoService in the aggregation <code>persoService</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyPersoService(): TablePersoController = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>personalizationsDone</code> event of
     * this <code>sap.m.TablePersoController</code>.The passed function and listener object must match the
@@ -63,56 +69,67 @@ trait TablePersoController extends ManagedObject {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachPersonalizationsDone(fnFunction: js.Any, oListener: js.Any): TablePersoController = js.native
+  
   /**
     * Do some clean up: remove event delegates, etc
     */
   def exit(): Unit = js.native
+  
   /**
     * Fires event <code>personalizationsDone</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def firePersonalizationsDone(mArguments: js.Any): TablePersoController = js.native
+  
   /**
     * Gets current value of property <code>componentName</code>.Available options for the text direction
     * are LTR and RTL. By default the control inherits the text direction from its parent control.
     * @returns Value of property <code>componentName</code>
     */
   def getComponentName(): String = js.native
+  
   /**
     * Gets current value of property <code>contentHeight</code>.Default value is <code>20rem</code>.
     * @returns Value of property <code>contentHeight</code>
     */
   def getContentHeight(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>contentWidth</code>.
     * @returns Value of property <code>contentWidth</code>
     */
   def getContentWidth(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>hasGrouping</code>.Default value is <code>false</code>.
     * @returns Value of property <code>hasGrouping</code>
     */
   def getHasGrouping(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>persoService</code>.
     */
   def getPersoService(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>showResetAll</code>.Default value is <code>true</code>.
     * @returns Value of property <code>showResetAll</code>
     */
   def getShowResetAll(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>showSelectAll</code>.Default value is <code>true</code>.
     * @returns Value of property <code>showSelectAll</code>
     */
   def getShowSelectAll(): Boolean = js.native
+  
   /**
     * ID of the element which is the current target of the association <code>table</code>, or
     * <code>null</code>.
     */
   def getTable(): js.Any = js.native
+  
   /**
     * Returns a  _tablePersoDialog instance if available. It can be NULL ifthe controller has not been
     * activated yet.This function makes a private aggregate publicly accessable. This isnecessary for
@@ -121,20 +138,24 @@ trait TablePersoController extends ManagedObject {
     * @returns the TablePersoDialog instance.
     */
   def getTablePersoDialog(): TablePersoDialog = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>tables</code>.
     */
   def getTables(): js.Array[_] = js.native
+  
   /**
     * Initializes the TablePersoController instance after creation.
     */
   def init(): Unit = js.native
+  
   /**
     * Opens the TablePersoDialog, stores the personalized settings on close,modifies the table columns,
     * and sends them to the persistence service
     */
   def openDialog(): Unit = js.native
+  
   /**
     * Refresh the personalizations: reloads the personalization information from the table persoprovider,
     * applies it to the controller's table and updates the controller's table perso dialog.Use case for a
@@ -142,11 +163,13 @@ trait TablePersoController extends ManagedObject {
     * after personalization has been activated.
     */
   def refresh(): Unit = js.native
+  
   /**
     * Removes all the controls in the association named <code>tables</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllTables(): js.Array[_] = js.native
+  
   def removeTable(vTable: js.Any): js.Any = js.native
   /**
     * Removes an table from the association named <code>tables</code>.
@@ -155,10 +178,12 @@ trait TablePersoController extends ManagedObject {
     */
   def removeTable(vTable: Double): js.Any = js.native
   def removeTable(vTable: Table): js.Any = js.native
+  
   /**
     * Persist the personalizations
     */
   def savePersonalizations(): Unit = js.native
+  
   /**
     * Using this method, the first part of tablePerso persistence ids can beprovided, in case the table's
     * app does not provide that part itself.If a component name is set using this method, it will be used,
@@ -167,42 +192,49 @@ trait TablePersoController extends ManagedObject {
     * @returns the TablePersoController instance.
     */
   def setComponentName(sCompName: String): TablePersoController = js.native
+  
   /**
     * Reflector for the controller's 'contentHeight' property.
     * @param sHeight the new height of the TablePersoDialog.
     * @returns the TablePersoController instance.
     */
   def setContentHeight(sHeight: js.Any): TablePersoController = js.native
+  
   /**
     * Reflector for the controller's 'contentWidth' property.
     * @param sWidth the new width of the tablePersoDialog
     * @returns the TablePersoController instance.
     */
   def setContentWidth(sWidth: js.Any): TablePersoController = js.native
+  
   /**
     * Reflector for the controller's 'hasGrouping' property.
     * @param bHasGrouping is the tablePersoDialog displayed in grouping mode or not.
     * @returns the TablePersoController instance.
     */
   def setHasGrouping(bHasGrouping: Boolean): TablePersoController = js.native
+  
   /**
     * Sets the aggregated <code>persoService</code>.
     * @param oPersoService The persoService to set
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setPersoService(oPersoService: js.Any): TablePersoController = js.native
+  
   /**
     * Reflector for the controller's 'showResetAll' property.
     * @param bShowResetAll is the tablePersoDialog's 'UndoPersonalization' button displayed or not.
     * @returns the TablePersoController instance.
     */
   def setShowResetAll(bShowResetAll: Boolean): TablePersoController = js.native
+  
   /**
     * Reflector for the controller's 'showSelectAll' property.
     * @param bShowSelectAll is the tablePersoDialog's 'Display All' checkbox displayed or not.
     * @returns the TablePersoController instance.
     */
   def setShowSelectAll(bShowSelectAll: Boolean): TablePersoController = js.native
+  
   /**
     * Sets the associated <code>table</code>.
     * @param oTable ID of an element which becomes the new target of this table association;
@@ -212,4 +244,3 @@ trait TablePersoController extends ManagedObject {
   def setTable(oTable: js.Any): TablePersoController = js.native
   def setTable(oTable: Table): TablePersoController = js.native
 }
-

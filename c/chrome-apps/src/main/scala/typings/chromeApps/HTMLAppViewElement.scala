@@ -2,7 +2,7 @@ package typings.chromeApps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////
 // AppView Tag //
@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait HTMLAppViewElement extends HTMLElement {
+  
   /**
     * Requests another app to be embedded.
     * @param app The extension id of the app to be embedded.
@@ -30,4 +31,3 @@ trait HTMLAppViewElement extends HTMLElement {
   def connect(app: String, data: js.Any): Unit = js.native
   def connect(app: String, data: js.Any, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
 }
-

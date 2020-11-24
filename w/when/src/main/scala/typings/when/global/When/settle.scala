@@ -4,11 +4,12 @@ import typings.when.When.Descriptor
 import typings.when.When.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("When.settle")
 @js.native
 object settle extends js.Object {
+  
   /**
     * Returns a promise for an array containing the same number of elements as the input array.
     * Each element is a descriptor object describing of the outcome of the corresponding element in the input.
@@ -22,4 +23,3 @@ object settle extends js.Object {
     */
   def apply[T](promisesOrValues: js.Array[_]): Promise[js.Array[Descriptor[T]]] = js.native
 }
-

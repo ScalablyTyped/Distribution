@@ -6,15 +6,16 @@ import typings.lodash.mod.NumericDictionary
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashMapValues extends LodashConvertible {
+trait LodashMapValues extends js.Object {
+  
   def apply(iteratee: String): LodashMapValues6x1 = js.native
   def apply(iteratee: js.Object): LodashMapValues3x1 = js.native
-  def apply[T](callbackOrIterateeOrIterateeOrIteratee: __): LodashMapValues1x2[T] = js.native
   def apply[T](callbackOrIterateeOrIterateeOrIteratee: __, obj: Dictionary[T]): LodashMapValues1x2[T] = js.native
   def apply[T](callbackOrIterateeOrIterateeOrIteratee: __, obj: NumericDictionary[T]): LodashMapValues1x2[T] = js.native
+  def apply[T /* <: js.Object */](callbackOrIterateeOrIteratee: __): LodashMapValues2x2[T] = js.native
   def apply[T /* <: js.Object */](callbackOrIterateeOrIteratee: __, obj: T): LodashMapValues2x2[T] = js.native
   def apply[T /* <: js.Object */](iteratee: String, obj: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
@@ -45,7 +46,9 @@ trait LodashMapValues extends LodashConvertible {
     */ typings.lodash.lodashStrings.LodashMapValues with TopLevel[js.Any] = js.native
   def apply[T, TResult](callback: js.Function1[/* value */ T, TResult], obj: Dictionary[T]): Dictionary[TResult] = js.native
   def apply[T, TResult](callback: js.Function1[/* value */ T, TResult], obj: NumericDictionary[T]): Dictionary[TResult] = js.native
-  def apply[T, TKey /* <: /* keyof T */ String */](iteratee: TKey): LodashMapValues5x1[T, TKey] = js.native
+  def apply[T, TKey /* <: /* keyof T */ String */](iteratee: TKey): Dictionary[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
+  ] = js.native
   def apply[T, TKey /* <: /* keyof T */ String */](iteratee: TKey, obj: Dictionary[T]): Dictionary[
     /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
   ] = js.native
@@ -53,4 +56,3 @@ trait LodashMapValues extends LodashConvertible {
     /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
   ] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.coinbase.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.coinbase.coinbaseStrings.pending
@@ -14,21 +14,26 @@ import scala.scalajs.js.annotation._
   - typings.coinbase.coinbaseStrings.waiting_for_clearing
 */
 trait TransactionStatus extends js.Object
-
 object TransactionStatus {
+  
   @scala.inline
   def canceled: typings.coinbase.coinbaseStrings.canceled = "canceled".asInstanceOf[typings.coinbase.coinbaseStrings.canceled]
+  
   @scala.inline
   def completed: typings.coinbase.coinbaseStrings.completed = "completed".asInstanceOf[typings.coinbase.coinbaseStrings.completed]
+  
   @scala.inline
   def expired: typings.coinbase.coinbaseStrings.expired = "expired".asInstanceOf[typings.coinbase.coinbaseStrings.expired]
+  
   @scala.inline
   def failed: typings.coinbase.coinbaseStrings.failed = "failed".asInstanceOf[typings.coinbase.coinbaseStrings.failed]
+  
   @scala.inline
   def pending: typings.coinbase.coinbaseStrings.pending = "pending".asInstanceOf[typings.coinbase.coinbaseStrings.pending]
+  
   @scala.inline
   def waiting_for_clearing: typings.coinbase.coinbaseStrings.waiting_for_clearing = "waiting_for_clearing".asInstanceOf[typings.coinbase.coinbaseStrings.waiting_for_clearing]
+  
   @scala.inline
   def waiting_for_signature: typings.coinbase.coinbaseStrings.waiting_for_signature = "waiting_for_signature".asInstanceOf[typings.coinbase.coinbaseStrings.waiting_for_signature]
 }
-

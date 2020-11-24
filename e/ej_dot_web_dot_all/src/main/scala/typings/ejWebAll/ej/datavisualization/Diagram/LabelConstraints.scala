@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Diagram
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait LabelConstraints extends js.Object
-
 @JSGlobal("ej.datavisualization.Diagram.LabelConstraints")
 @js.native
 object LabelConstraints extends js.Object {
+  
   //Enables all label constraints
   @js.native
   sealed trait All extends LabelConstraints
@@ -33,6 +33,4 @@ object LabelConstraints extends js.Object {
   //Enables label to be selected
   @js.native
   sealed trait Selectable extends LabelConstraints
-  
 }
-

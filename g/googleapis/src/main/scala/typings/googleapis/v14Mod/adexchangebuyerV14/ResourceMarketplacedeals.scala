@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.4", "adexchangebuyer_v1_4.Resource$Marketplacedeals")
 @js.native
 class ResourceMarketplacedeals protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer.marketplacedeals.delete
     * @desc Delete the specified deals from the proposal
@@ -45,6 +47,7 @@ class ResourceMarketplacedeals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeleteOrderDealsResponse]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.marketplacedeals.insert
     * @desc Add new deals for the specified proposal
@@ -77,6 +80,7 @@ class ResourceMarketplacedeals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAddOrderDealsResponse]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.marketplacedeals.list
     * @desc List all the deals for a given proposal
@@ -109,6 +113,7 @@ class ResourceMarketplacedeals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetOrderDealsResponse]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer.marketplacedeals.update
     * @desc Replaces all the deals in the proposal with the passed in deals
@@ -142,4 +147,3 @@ class ResourceMarketplacedeals protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEditAllOrderDealsResponse]
   ): Unit = js.native
 }
-

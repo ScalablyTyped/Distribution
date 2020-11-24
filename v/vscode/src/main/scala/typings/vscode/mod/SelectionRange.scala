@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "SelectionRange")
 @js.native
@@ -15,13 +15,14 @@ class SelectionRange protected () extends js.Object {
     */
   def this(range: Range) = this()
   def this(range: Range, parent: SelectionRange) = this()
+  
   /**
     * The parent selection range containing this range.
     */
   var parent: js.UndefOr[SelectionRange] = js.native
+  
   /**
     * The [range](#Range) of this selection range.
     */
   var range: Range = js.native
 }
-

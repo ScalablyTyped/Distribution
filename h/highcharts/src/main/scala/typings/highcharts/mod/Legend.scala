@@ -2,7 +2,7 @@ package typings.highcharts.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Legend")
 @js.native
@@ -19,31 +19,33 @@ class Legend protected () extends js.Object {
     *        Legend options.
     */
   def this(chart: Chart_, options: LegendOptions) = this()
+  
   /**
     * All items for the legend, which is an array of series for most series and
     * an array of points for pie series and its derivatives.
     */
   val allItems: js.Array[Point | Series] = js.native
+  
   /**
     * SVG element of the legend box.
     */
   val box: SVGElement = js.native
+  
   /**
     * Chart of this legend.
     */
   val chart: Chart_ = js.native
+  
   /**
     * SVG group of the legend.
     */
   val group: SVGElement = js.native
+  
   /**
     * Legend options.
     */
   val options: LegendOptions = js.native
-  /**
-    * SVG element of the legend title.
-    */
-  val title: SVGElement = js.native
+  
   /**
     * Set the legend item text.
     *
@@ -52,6 +54,12 @@ class Legend protected () extends js.Object {
     */
   def setText(item: Point): Unit = js.native
   def setText(item: Series): Unit = js.native
+  
+  /**
+    * SVG element of the legend title.
+    */
+  val title: SVGElement = js.native
+  
   /**
     * Update the legend with new options. Equivalent to running `chart.update`
     * with a legend configuration option.
@@ -69,4 +77,3 @@ class Legend protected () extends js.Object {
   def update(options: LegendOptions): Unit = js.native
   def update(options: LegendOptions, redraw: Boolean): Unit = js.native
 }
-

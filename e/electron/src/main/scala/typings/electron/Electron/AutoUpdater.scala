@@ -11,10 +11,11 @@ import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AutoUpdater extends EventEmitter {
+  
   @JSName("addListener")
   def addListener_beforequitforupdate(event: `before-quit-for-update`, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -37,16 +38,19 @@ trait AutoUpdater extends EventEmitter {
   ): this.type = js.native
   @JSName("addListener")
   def addListener_updatenotavailable(event: `update-not-available`, listener: js.Function): this.type = js.native
+  
   /**
     * Asks the server whether there is an update. You must call `setFeedURL` before
     * using this API.
     */
   def checkForUpdates(): Unit = js.native
+  
   /**
     * The current update feed URL.
     */
   def getFeedURL(): String = js.native
-  // Docs: http://electronjs.org/docs/api/auto-updater
+  
+  // Docs: https://electronjs.org/docs/api/auto-updater
   /**
     * This event is emitted after a user calls `quitAndInstall()`.
     *
@@ -98,6 +102,7 @@ trait AutoUpdater extends EventEmitter {
     */
   @JSName("on")
   def on_updatenotavailable(event: `update-not-available`, listener: js.Function): this.type = js.native
+  
   @JSName("once")
   def once_beforequitforupdate(event: `before-quit-for-update`, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -120,6 +125,7 @@ trait AutoUpdater extends EventEmitter {
   ): this.type = js.native
   @JSName("once")
   def once_updatenotavailable(event: `update-not-available`, listener: js.Function): this.type = js.native
+  
   /**
     * Restarts the app and installs the update after it has been downloaded. It should
     * only be called after `update-downloaded` has been emitted.
@@ -133,6 +139,7 @@ trait AutoUpdater extends EventEmitter {
     * application starts.
     */
   def quitAndInstall(): Unit = js.native
+  
   @JSName("removeListener")
   def removeListener_beforequitforupdate(event: `before-quit-for-update`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -155,9 +162,9 @@ trait AutoUpdater extends EventEmitter {
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_updatenotavailable(event: `update-not-available`, listener: js.Function): this.type = js.native
+  
   /**
     * Sets the `url` and initialize the auto updater.
     */
   def setFeedURL(options: FeedURLOptions): Unit = js.native
 }
-

@@ -5,33 +5,29 @@ import typings.awsSdkClientCognitoIdentityBrowser.inputTypesUnionMod.InputTypesU
 import typings.awsSdkClientCognitoIdentityBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientCognitoIdentityBrowser.typesGetIdInputMod.GetIdInput
 import typings.awsSdkClientCognitoIdentityBrowser.typesGetIdOutputMod.GetIdOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-cognito-identity-browser/commands/GetIdCommand", JSImport.Namespace)
 @js.native
 object getIdCommandMod extends js.Object {
+  
   @js.native
   class GetIdCommand protected () extends Command[
           InputTypesUnion, 
           GetIdInput, 
           OutputTypesUnion, 
           GetIdOutput, 
-          CognitoIdentityResolvedConfiguration, 
-          Blob
+          CognitoIdentityResolvedConfiguration
         ] {
     def this(input: GetIdInput) = this()
-    val middlewareStack: MiddlewareStack[GetIdInput, GetIdOutput, Blob] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: CognitoIdentityResolvedConfiguration
     ): Handler[GetIdInput, GetIdOutput] = js.native
   }
-  
 }
-

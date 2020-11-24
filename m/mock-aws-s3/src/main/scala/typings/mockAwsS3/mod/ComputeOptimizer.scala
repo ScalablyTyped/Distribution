@@ -3,7 +3,7 @@ package typings.mockAwsS3.mod
 import typings.awsSdk.computeoptimizerMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "ComputeOptimizer")
 @js.native
@@ -14,4 +14,3 @@ class ComputeOptimizer ()
   extends typings.awsSdk.mod.ComputeOptimizer {
   def this(options: ClientConfiguration) = this()
 }
-

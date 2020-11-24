@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.ui.AutoCompleteOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofAutoComplete
   extends Instantiable1[/* element */ Element, AutoComplete]
      with Instantiable2[/* element */ Element, /* options */ AutoCompleteOptions, AutoComplete] {
-  var fn: AutoComplete = js.native
+  
   def extend(proto: js.Object): AutoComplete = js.native
+  
+  var fn: AutoComplete = js.native
 }
-

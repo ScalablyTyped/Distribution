@@ -2,7 +2,7 @@ package typings.bardjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Module for bardjs functions
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("bard")
 @js.native
 object bard extends js.Object
-

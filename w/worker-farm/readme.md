@@ -10,9 +10,9 @@ Distribute processing tasks to child processes with an über-simple API and bake
 | ------------------ | :-------------: |
 | Full name          | worker-farm |
 | Keywords           | worker, child, processing, farm |
-| # releases         | 5 |
-| # dependents       | 167 |
-| # downloads        | 276686704 |
+| # releases         | 2 |
+| # dependents       | 182 |
+| # downloads        | 385276135 |
 | # stars            | 36 |
 
 ## Links

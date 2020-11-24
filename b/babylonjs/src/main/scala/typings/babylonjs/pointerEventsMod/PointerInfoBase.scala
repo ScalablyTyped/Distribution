@@ -4,7 +4,7 @@ import typings.std.MouseWheelEvent
 import typings.std.PointerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Events/pointerEvents", "PointerInfoBase")
 @js.native
@@ -34,13 +34,14 @@ class PointerInfoBase protected () extends js.Object {
     */
   event: PointerEvent
   ) = this()
+  
   /**
     * Defines the related dom event
     */
   var event: PointerEvent | MouseWheelEvent = js.native
+  
   /**
     * Defines the type of event (PointerEventTypes)
     */
   var `type`: Double = js.native
 }
-

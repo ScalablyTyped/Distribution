@@ -2,14 +2,14 @@ package typings.bingmaps.Microsoft.Maps.SpatialMath
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait AreaUnits extends js.Object
-
 @JSGlobal("Microsoft.Maps.SpatialMath.AreaUnits")
 @js.native
 object AreaUnits extends js.Object {
+  
   /** Area in Acres */
   @js.native
   sealed trait Acres extends AreaUnits
@@ -37,6 +37,4 @@ object AreaUnits extends js.Object {
   /** Area in square Yards */
   @js.native
   sealed trait SquareYards extends AreaUnits
-  
 }
-

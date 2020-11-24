@@ -2,11 +2,12 @@ package typings.ol
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ol/format/filter/During", JSImport.Namespace)
 @js.native
 object duringMod extends js.Object {
+  
   @js.native
   class default protected ()
     extends typings.ol.comparisonMod.default {
@@ -15,4 +16,3 @@ object duringMod extends js.Object {
   
   type During = typings.ol.comparisonMod.default
 }
-

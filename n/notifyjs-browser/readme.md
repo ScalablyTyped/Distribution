@@ -10,8 +10,8 @@ Notify.js =====
 | Full name          | notifyjs-browser |
 | Keywords           | notify, notification, prompt, popup, jquery-plugin |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 80334 |
+| # dependents       | 4 |
+| # downloads        | 98813 |
 | # stars            | 0 |
 
 ## Links

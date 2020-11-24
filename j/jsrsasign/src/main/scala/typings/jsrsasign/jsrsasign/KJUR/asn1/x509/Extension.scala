@@ -3,7 +3,7 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * base Extension ASN.1 structure class
@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Extension extends ASN1Object
-
 object Extension {
+  
   @scala.inline
   def apply(
     getEncodedHex: () => String,
@@ -36,4 +36,3 @@ object Extension {
     __obj.asInstanceOf[Extension]
   }
 }
-

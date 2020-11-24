@@ -2,16 +2,21 @@ package typings.sylvester
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sylvester")
 @js.native
 object Sylvester extends js.Object {
+  
   @js.native
   trait LineStatic extends js.Object {
+    
     var X: Line = js.native
+    
     var Y: Line = js.native
+    
     var Z: Line = js.native
+    
     /**
       * Constructor function.
       *
@@ -26,6 +31,7 @@ object Sylvester extends js.Object {
   
   @js.native
   trait MatrixStatic extends js.Object {
+    
     /**
       * Diagonal matrix - all off-diagonal elements are zero
       *
@@ -34,12 +40,14 @@ object Sylvester extends js.Object {
     def Diagonal(elements: js.Array[js.Array[Double] | Double]): Matrix = js.native
     def Diagonal(elements: Matrix): Matrix = js.native
     def Diagonal(elements: Vector): Matrix = js.native
+    
     /**
       * Identity matrix of size n.
       *
       * @param {number} n The size.
       */
     def I(n: Double): Matrix = js.native
+    
     /**
       * Random matrix of n rows, m columns.
       *
@@ -47,6 +55,7 @@ object Sylvester extends js.Object {
       * @param {number} m The number of columns.
       */
     def Random(n: Double, m: Double): Matrix = js.native
+    
     /**
       * Rotation matrix about some axis. If no axis is supplied, assume we're after a 2D transform.
       *
@@ -55,9 +64,13 @@ object Sylvester extends js.Object {
       */
     def Rotation(theta: Double): Matrix = js.native
     def Rotation(theta: Double, a: Vector): Matrix = js.native
+    
     def RotationX(t: Double): Matrix = js.native
+    
     def RotationY(t: Double): Matrix = js.native
+    
     def RotationZ(t: Double): Matrix = js.native
+    
     /**
       * Matrix filled with zeros.
       *
@@ -65,6 +78,7 @@ object Sylvester extends js.Object {
       * @param {number} m The number of columns.
       */
     def Zero(n: Double, m: Double): Matrix = js.native
+    
     /**
       * Constructor function.
       *
@@ -77,10 +91,15 @@ object Sylvester extends js.Object {
   
   @js.native
   trait PlaneStatic extends js.Object {
+    
     var XY: Plane = js.native
+    
     var YX: Plane = js.native
+    
     var YZ: Plane = js.native
+    
     var ZX: Plane = js.native
+    
     /**
       * Constructor function.
       */
@@ -103,27 +122,31 @@ object Sylvester extends js.Object {
   
   @js.native
   trait VectorStatic extends js.Object {
-    var i: Vector = js.native
-    var j: Vector = js.native
-    var k: Vector = js.native
+    
     /**
       * Random vector of size n.
       *
       * @param {number} n The vector size.
       */
     def Random(n: Double): Vector = js.native
+    
     /**
       * Vector filled with zeros.
       *
       * @param {number} n The vector size.
       */
     def Zero(n: Double): Vector = js.native
+    
     def create(elements: js.Array[Double]): Vector = js.native
     /**
       * Constructor function.
       */
     def create(elements: Vector): Vector = js.native
+    
+    var i: Vector = js.native
+    
+    var j: Vector = js.native
+    
+    var k: Vector = js.native
   }
-  
 }
-

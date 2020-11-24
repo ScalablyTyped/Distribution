@@ -4,7 +4,7 @@ import typings.playcanvas.anon.Enabled
 import typings.playcanvas.anon.TypeofScriptType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The ScriptComponent allows you to extend the functionality of an Entity by attaching your own Script Types defined in JavaScript files
@@ -15,10 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ScriptComponent extends Component {
-  /**
-    * An array of all script instances attached to an entity. This Array shall not be modified by developer.
-    */
-  var scripts: js.Array[ScriptType] = js.native
+  
   /**
     * Create a script instance and attach to an entity script component.
     * @example
@@ -41,6 +38,7 @@ trait ScriptComponent extends Component {
   def create(nameOrType: String, args: Enabled): ScriptType = js.native
   def create(nameOrType: TypeofScriptType): ScriptType = js.native
   def create(nameOrType: TypeofScriptType, args: Enabled): ScriptType = js.native
+  
   /**
     * Destroy the script instance that is attached to an entity.
     * @example
@@ -50,6 +48,7 @@ trait ScriptComponent extends Component {
     */
   def destroy(nameOrType: String): Boolean = js.native
   def destroy(nameOrType: TypeofScriptType): Boolean = js.native
+  
   /**
     * Get a script instance (if attached).
     * @example
@@ -59,6 +58,7 @@ trait ScriptComponent extends Component {
     */
   def get(nameOrType: String): ScriptType | Null = js.native
   def get(nameOrType: TypeofScriptType): ScriptType | Null = js.native
+  
   /**
     * Detect if script is attached to an entity.
     * @example
@@ -70,6 +70,7 @@ trait ScriptComponent extends Component {
     */
   def has(nameOrType: String): Boolean = js.native
   def has(nameOrType: TypeofScriptType): Boolean = js.native
+  
   /**
     * Move script instance to different position to alter update order of scripts within entity.
     * @example
@@ -80,5 +81,9 @@ trait ScriptComponent extends Component {
     */
   def move(nameOrType: String, ind: Double): Boolean = js.native
   def move(nameOrType: TypeofScriptType, ind: Double): Boolean = js.native
+  
+  /**
+    * An array of all script instances attached to an entity. This Array shall not be modified by developer.
+    */
+  var scripts: js.Array[ScriptType] = js.native
 }
-

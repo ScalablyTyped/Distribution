@@ -2,7 +2,7 @@ package typings.documentdbServer
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The __ object can be used as a shortcut to the Collection and Context objects.
@@ -11,9 +11,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IObject extends ICollection {
+  
   /** Alias for getContext().getRequest() */
   var request: IRequest = js.native
+  
   /** Alias for getContext().getResponse() */
   var response: IResponse = js.native
 }
-

@@ -5,11 +5,12 @@ import typings.react.mod.ReactNode
 import typings.reactNativeElements.anon.bottomnumberundefinedleft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-elements", "withBadge")
 @js.native
 object withBadge extends js.Object {
+  
   def apply(): js.Function1[/* WrappedComponent */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
   def apply(
     /**
@@ -40,4 +41,3 @@ object withBadge extends js.Object {
     */
   value: ReactNode): js.Function1[/* WrappedComponent */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
 }
-

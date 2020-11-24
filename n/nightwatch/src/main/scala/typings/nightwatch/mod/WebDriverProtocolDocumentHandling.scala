@@ -2,10 +2,11 @@ package typings.nightwatch.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebDriverProtocolDocumentHandling extends js.Object {
+  
   def execute[T](body: String): this.type = js.native
   def execute[T](
     body: String,
@@ -54,6 +55,7 @@ trait WebDriverProtocolDocumentHandling extends js.Object {
     args: js.Array[_],
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
   ): this.type = js.native
+  
   def executeAsync[T](script: String): this.type = js.native
   def executeAsync[T](
     script: String,
@@ -109,6 +111,7 @@ trait WebDriverProtocolDocumentHandling extends js.Object {
     args: js.Array[_],
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
   ): this.type = js.native
+  
   /**
     * Returns a string serialisation of the DOM of the current page.
     */
@@ -117,4 +120,3 @@ trait WebDriverProtocolDocumentHandling extends js.Object {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
 }
-

@@ -8,7 +8,7 @@ import typings.videoJs.mod.VideoJsPlayer
 import typings.videoJs.mod.videojs.PlayerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js", "Player")
 @js.native
@@ -24,7 +24,6 @@ class ^ protected () extends VideoJsPlayer {
   def this(player: typings.videoJs.mod.videojs.Player) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: PlayerOptions) = this()
 }
-
 @JSImport("video.js", "Player")
 @js.native
 object ^
@@ -46,6 +45,7 @@ Instantiable1[
         typings.videoJs.mod.videojs.Player
       ])
     ] {
+  
   /**
     * Gets tag settings
     *
@@ -57,4 +57,3 @@ Instantiable1[
     */
   def getTagSettings(tag: Element): js.Any = js.native
 }
-

@@ -7,15 +7,12 @@ import typings.winrtUwp.Windows.Graphics.Imaging.BitmapSize
 import typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Detects faces in a SoftwareBitmap . */
 @js.native
 trait FaceDetector extends js.Object {
-  /** Gets or sets the maximum detectable face size, in pixels. */
-  var maxDetectableFaceSize: BitmapSize = js.native
-  /** Gets or sets the minimum detectable face size, in pixels. */
-  var minDetectableFaceSize: BitmapSize = js.native
+  
   /**
     * Asynchronously detects faces in the provided SoftwareBitmap .
     * @param image The image data to be processed for face detection.
@@ -29,5 +26,10 @@ trait FaceDetector extends js.Object {
     * @return An asynchronous operation that returns a list of DetectedFace objects upon successful completion.
     */
   def detectFacesAsync(image: SoftwareBitmap, searchArea: BitmapBounds): IPromiseWithIAsyncOperation[IVector[_]] = js.native
+  
+  /** Gets or sets the maximum detectable face size, in pixels. */
+  var maxDetectableFaceSize: BitmapSize = js.native
+  
+  /** Gets or sets the minimum detectable face size, in pixels. */
+  var minDetectableFaceSize: BitmapSize = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Buffer is a mutable, resizable container for raw data.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class Buffer ()
   extends typings.titanium.Titanium.Buffer
-

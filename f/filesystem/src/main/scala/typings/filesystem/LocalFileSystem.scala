@@ -2,18 +2,21 @@ package typings.filesystem
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LocalFileSystem extends js.Object {
+  
   /**
     * Used for storage that should not be removed by the user agent without application or user permission.
     */
   var PERSISTENT: Double = js.native
+  
   /**
     * Used for storage with no guarantee of persistence.
     */
   var TEMPORARY: Double = js.native
+  
   /**
     * Requests a filesystem in which to store application data.
     * @param type Whether the filesystem requested should be persistent, as defined above. Use one of TEMPORARY or PERSISTENT.
@@ -23,6 +26,7 @@ trait LocalFileSystem extends js.Object {
     */
   def requestFileSystem(`type`: Double, size: Double, successCallback: FileSystemCallback): Unit = js.native
   def requestFileSystem(`type`: Double, size: Double, successCallback: FileSystemCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * Allows the user to look up the Entry for a file or directory referred to by a local URL.
     * @param url A URL referring to a local file in a filesystem accessable via this API.
@@ -31,10 +35,10 @@ trait LocalFileSystem extends js.Object {
     */
   def resolveLocalFileSystemURL(url: String, successCallback: EntryCallback): Unit = js.native
   def resolveLocalFileSystemURL(url: String, successCallback: EntryCallback, errorCallback: ErrorCallback): Unit = js.native
+  
   /**
     * see requestFileSystem.
     */
   def webkitRequestFileSystem(`type`: Double, size: Double, successCallback: FileSystemCallback): Unit = js.native
   def webkitRequestFileSystem(`type`: Double, size: Double, successCallback: FileSystemCallback, errorCallback: ErrorCallback): Unit = js.native
 }
-

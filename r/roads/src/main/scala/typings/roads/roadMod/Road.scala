@@ -2,11 +2,11 @@ package typings.roads.roadMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Road extends js.Object {
-  var _request_chain: js.Array[Middleware] = js.native
+  
   /* protected */ def _buildNext(
     request_method: String,
     path: String,
@@ -46,6 +46,7 @@ trait Road extends js.Object {
     request_headers: js.Object,
     context: Context
   ): ResponseMiddleware = js.native
+  
   /**
     * Execute a resource method, and ensure that a promise is always returned
     *
@@ -53,6 +54,9 @@ trait Road extends js.Object {
     * @returns {Promise<Response>}
     */
   /* protected */ def _executeRoute(route: ResponseMiddleware): js.Promise[typings.roads.responseMod.default] = js.native
+  
+  var _request_chain: js.Array[Middleware] = js.native
+  
   /**
     *
     * Execute the resource method associated with the request parameters.
@@ -69,6 +73,7 @@ trait Road extends js.Object {
   def request(method: String, url: String, body: js.UndefOr[scala.Nothing], headers: js.Object): js.Promise[typings.roads.responseMod.default] = js.native
   def request(method: String, url: String, body: String): js.Promise[typings.roads.responseMod.default] = js.native
   def request(method: String, url: String, body: String, headers: js.Object): js.Promise[typings.roads.responseMod.default] = js.native
+  
   /**
     * Add one or many custom functions to be executed along with every request.
     *
@@ -98,4 +103,3 @@ trait Road extends js.Object {
     */
   def use(fn: Middleware): Road = js.native
 }
-

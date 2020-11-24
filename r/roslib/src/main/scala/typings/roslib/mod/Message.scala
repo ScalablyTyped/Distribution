@@ -2,7 +2,7 @@ package typings.roslib.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roslib", "Message")
 @js.native
@@ -15,4 +15,3 @@ class Message protected () extends js.Object {
     */
   def this(values: js.Any) = this()
 }
-

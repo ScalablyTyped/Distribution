@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesManagement/v1management", "gamesManagement_v1management.Resource$Events")
 @js.native
 class ResourceEvents protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gamesManagement.events.reset
     * @desc Resets all player progress on the event with the given ID for the
@@ -40,6 +42,7 @@ class ResourceEvents protected () extends js.Object {
   ): Unit = js.native
   def reset(params: ParamsResourceEventsReset, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def reset(params: ParamsResourceEventsReset, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * gamesManagement.events.resetAll
     * @desc Resets all player progress on all events for the currently
@@ -66,6 +69,7 @@ class ResourceEvents protected () extends js.Object {
   ): Unit = js.native
   def resetAll(params: ParamsResourceEventsResetall, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def resetAll(params: ParamsResourceEventsResetall, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * gamesManagement.events.resetAllForAllPlayers
     * @desc Resets all draft events for all players. This method is only
@@ -95,6 +99,7 @@ class ResourceEvents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gamesManagement.events.resetForAllPlayers
     * @desc Resets the event with the given ID for all players. This method is
@@ -125,6 +130,7 @@ class ResourceEvents protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gamesManagement.events.resetMultipleForAllPlayers
     * @desc Resets events with the given IDs for all players. This method is
@@ -157,4 +163,3 @@ class ResourceEvents protected () extends js.Object {
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/top-app-bar" : "7.0.0"
+      "@material/top-app-bar" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/top-app-bar" : "7.0.0"
+      "@material/top-app-bar" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

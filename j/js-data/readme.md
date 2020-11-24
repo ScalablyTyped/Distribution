@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-data
 
-Typings are for version 4.0.0-beta.4
+Typings are for version 3.0.9
 
 ## Library description:
 Robust, framework-agnostic in-memory data store.
@@ -12,7 +12,7 @@ Robust, framework-agnostic in-memory data store.
 | Keywords           | orm, odm, model, schema, rest, datastore, store, database, adapter, http, localstorage |
 | # releases         | 9 |
 | # dependents       | 37 |
-| # downloads        | 619780 |
+| # downloads        | 577590 |
 | # stars            | 3 |
 
 ## Links

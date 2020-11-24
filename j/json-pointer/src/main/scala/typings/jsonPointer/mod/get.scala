@@ -2,11 +2,12 @@ package typings.jsonPointer.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("json-pointer", "get")
 @js.native
 object get extends js.Object {
+  
   /**
     *  Wrap an object with accessors
     */
@@ -15,4 +16,3 @@ object get extends js.Object {
     */
   def apply(`object`: js.Object, pointer: String): js.Any = js.native
 }
-

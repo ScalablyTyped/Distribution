@@ -4,7 +4,7 @@ import typings.heredatalens.H.datalens.ObjectLayer.StyleState
 import typings.heremaps.H.map.Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Presents data as points or spatial map objects with data-driven styles and client-side clustering.
@@ -15,10 +15,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ObjectLayer_
   extends typings.heremaps.H.map.layer.ObjectLayer {
+  
   /**
     * Force re-rendering of the layer. In the case where the callbacks passed to the layer options are not pure functions, you can call this method to force re-rendering.
     */
   def redraw(): Unit = js.native
+  
   /**
     * Recalculates the style and applies it to the map object based on the new StyleState
     * @param object - Map object
@@ -26,4 +28,3 @@ trait ObjectLayer_
     */
   def updateObjectStyle(any: Object, state: StyleState): Unit = js.native
 }
-

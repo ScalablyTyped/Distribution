@@ -2,11 +2,12 @@ package typings.parseFullName.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("parse-full-name", "parseFullName")
 @js.native
 object parseFullName extends js.Object {
+  
   def apply(nameToParse: String): Name = js.native
   def apply(
     nameToParse: String,
@@ -87,4 +88,3 @@ object parseFullName extends js.Object {
     useLongLists: Boolean
   ): Name = js.native
 }
-

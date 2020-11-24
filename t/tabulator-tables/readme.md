@@ -1,7 +1,7 @@
 
 # Scala.js typings for tabulator-tables
 
-Typings are for version 4.7
+Typings are for version 4.8
 
 ## Library description:
 Interactive table generation JavaScript library
@@ -10,9 +10,9 @@ Interactive table generation JavaScript library
 | ------------------ | :-------------: |
 | Full name          | tabulator-tables |
 | Keywords           | table, grid, datagrid, tabulator, editable, cookie, sort, format, resizable, list, scrollable, ajax, json, widget, jquery, react, angular, vue |
-| # releases         | 31 |
-| # dependents       | 4 |
-| # downloads        | 300839 |
+| # releases         | 36 |
+| # dependents       | 13 |
+| # downloads        | 663793 |
 | # stars            | 0 |
 
 ## Links

@@ -10,15 +10,14 @@ babel plugin (not loader) for webpack
 | ------------------ | :-------------: |
 | Full name          | babel-webpack-plugin |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 52019 |
+| # downloads        | 79382 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/simlrh/babel-webpack-plugin#readme)
-- [Bugs](https://github.com/simlrh/babel-webpack-plugin/issues)
-- [Repository](https://github.com/simlrh/babel-webpack-plugin)
+- [Homepage](https://example.com)
+- [Bugs](https://example.com)
 - [Npm](https://www.npmjs.com/package/babel-webpack-plugin)
     
 

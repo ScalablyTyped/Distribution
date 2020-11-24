@@ -2,7 +2,7 @@ package typings.paper.global.paper
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The Segment object represents the points of a path through which its
@@ -60,4 +60,3 @@ class Segment ()
     handleOut: typings.paper.paper.Point
   ) = this()
 }
-

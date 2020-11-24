@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Courses$Aliases")
 @js.native
 class ResourceCoursesAliases protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * classroom.courses.aliases.create
     * @desc Creates an alias for a course.  This method returns the following
@@ -48,6 +50,7 @@ class ResourceCoursesAliases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCourseAlias]
   ): Unit = js.native
+  
   /**
     * classroom.courses.aliases.delete
     * @desc Deletes an alias of a course.  This method returns the following
@@ -82,6 +85,7 @@ class ResourceCoursesAliases protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * classroom.courses.aliases.list
     * @desc Returns a list of aliases for a course.  This method returns the
@@ -119,4 +123,3 @@ class ResourceCoursesAliases protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListCourseAliasesResponse]
   ): Unit = js.native
 }
-

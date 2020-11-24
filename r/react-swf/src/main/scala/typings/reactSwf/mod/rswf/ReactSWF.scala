@@ -4,11 +4,12 @@ import typings.react.mod.Component
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ReactSWF
   extends Component[Props, State, js.Any] {
+  
   /**
     * Returns the Flash Player object DOM node.
     * Should be prefered over `React.findDOMNode`.
@@ -16,4 +17,3 @@ trait ReactSWF
     */
   def getFPDOMNode(): Node = js.native
 }
-

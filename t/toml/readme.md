@@ -11,8 +11,8 @@ TOML parser for Node.js (parses TOML spec v0.4.0)
 | Full name          | toml |
 | Keywords           | toml, parser |
 | # releases         | 5 |
-| # dependents       | 360 |
-| # downloads        | 16789685 |
+| # dependents       | 416 |
+| # downloads        | 23628795 |
 | # stars            | 8 |
 
 ## Links

@@ -10,9 +10,9 @@ Redux store with injectable reducers for use with bundle splitting, large apps, 
 | ------------------ | :-------------: |
 | Full name          | redux-injectable-store |
 | Keywords           | redex, reducer, react, mobx |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 5685 |
+| # downloads        | 3445 |
 | # stars            | 0 |
 
 ## Links

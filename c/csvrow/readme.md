@@ -12,7 +12,7 @@ parse a CSV row string
 | Keywords           | csv, parse |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 4057 |
+| # downloads        | 9381 |
 | # stars            | 1 |
 
 ## Links

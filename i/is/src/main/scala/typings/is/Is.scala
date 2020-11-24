@@ -18,17 +18,22 @@ import typings.is.isStrings.usZipCode
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Is extends IsStatic {
+  
   var all: IsStaticApi = js.native
+  
   var any: IsStaticApi = js.native
+  
   var not: IsStatic = js.native
+  
   /**
     * Change namespace of library to prevent name collisions.
     */
   def setNamespace(): Is = js.native
+  
   /**
     * Override RegExps if you think they suck.
     */
@@ -109,4 +114,3 @@ trait Is extends IsStatic {
   @JSName("setRegexp")
   def setRegexp_usZipCode(value: RegExp, regexp: usZipCode): Boolean = js.native
 }
-

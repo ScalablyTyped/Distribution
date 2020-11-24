@@ -4,7 +4,7 @@ import typings.arcgisJsApi.esri.TrackViewModel
 import typings.arcgisJsApi.esri.TrackViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("esri/widgets/Track/TrackViewModel", JSImport.Namespace)
 @js.native
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 class Class () extends TrackViewModel {
   def this(properties: TrackViewModelProperties) = this()
 }
-

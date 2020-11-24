@@ -5,11 +5,11 @@ import typings.cathoQuantum.anon.`6`
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@catho/quantum/Card/Media", JSImport.Namespace)
 @js.native
 object mediaMod extends js.Object {
+  
   type Media = ComponentType[ClassName] with `6`
 }
-

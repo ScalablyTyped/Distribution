@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * simplifies the composing of single select statements.
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XSingleSelectQueryComposer extends XSingleSelectQueryAnalyzer {
+  
   /**
     * sets a new elementary query for the composer
     *
@@ -45,6 +46,7 @@ trait XSingleSelectQueryComposer extends XSingleSelectQueryAnalyzer {
     * XSingleSelectQueryAnalyzer.setQuery()} .
     */
   var ElementaryQuery: String = js.native
+  
   /**
     * appends a new filter condition by a {@link com.sun.star.sdb.DataColumn} providing the name and the value for the filter. The value property must be
     * supported by the {@link com.sun.star.sdb.DataColumn} .
@@ -54,12 +56,14 @@ trait XSingleSelectQueryComposer extends XSingleSelectQueryAnalyzer {
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
   def appendFilterByColumn(column: XPropertySet, andCriteria: Boolean, filterOperator: Double): Unit = js.native
+  
   /**
     * appends an additional part to the group criteria of the select statement. The column must be a {@link com.sun.star.sdbcx.Column} .
     * @param column the column which is used to create a group part
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
   def appendGroupByColumn(column: XPropertySet): Unit = js.native
+  
   /**
     * appends a new HAVING filter condition by a {@link com.sun.star.sdb.DataColumn} providing the name and the value for the filter.
     * @param column the column which is used to create a filter
@@ -68,6 +72,7 @@ trait XSingleSelectQueryComposer extends XSingleSelectQueryAnalyzer {
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
   def appendHavingClauseByColumn(column: XPropertySet, andCriteria: Boolean, filterOperator: Double): Unit = js.native
+  
   /**
     * appends an additional part to the sort order criteria of the select statement. The column must be a {@link com.sun.star.sdbcx.Column} .
     * @param column the column which is used to create a order part
@@ -75,36 +80,42 @@ trait XSingleSelectQueryComposer extends XSingleSelectQueryAnalyzer {
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
   def appendOrderByColumn(column: XPropertySet, ascending: Boolean): Unit = js.native
+  
   /**
     * makes it possible to set a filter condition for the query.
     * @param filter the filter to set
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs or the statement isn't valid or the statement isn't parsable.
     */
   def setFilter(filter: String): Unit = js.native
+  
   /**
     * makes it possible to set a group for the query.
     * @param group the group part to set
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs or the statement isn't valid or the statement isn't parsable.
     */
   def setGroup(group: String): Unit = js.native
+  
   /**
     * makes it possible to set a HAVING filter condition for the query.
     * @param filter the filter to set
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs or the statement isn't valid or the statement isn't parsable.
     */
   def setHavingClause(filter: String): Unit = js.native
+  
   /**
     * makes it possible to set a sort condition for the query.
     * @param order the order part to set
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs or the order isn't valid or the statement isn't parsable.
     */
   def setOrder(order: String): Unit = js.native
+  
   /**
     * appends a new set of filter criteria which is split into levels.
     * @param filter The filter criteria is split into levels. Each level represents the OR criteria. Within each level, the filters are provided as an AND cri
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
   def setStructuredFilter(filter: SeqEquiv[SeqEquiv[PropertyValue]]): Unit = js.native
+  
   /**
     * appends a new set of HAVING filter criteria which is split into levels.
     * @param filter The HAVING filter criteria is split into levels. Each level represents the OR criteria. Within each level, the filters are provided as an
@@ -112,8 +123,8 @@ trait XSingleSelectQueryComposer extends XSingleSelectQueryAnalyzer {
     */
   def setStructuredHavingClause(filter: SeqEquiv[SeqEquiv[PropertyValue]]): Unit = js.native
 }
-
 object XSingleSelectQueryComposer {
+  
   @scala.inline
   def apply(
     ElementaryQuery: String,
@@ -156,40 +167,53 @@ object XSingleSelectQueryComposer {
     val __obj = js.Dynamic.literal(ElementaryQuery = ElementaryQuery.asInstanceOf[js.Any], Filter = Filter.asInstanceOf[js.Any], Group = Group.asInstanceOf[js.Any], GroupColumns = GroupColumns.asInstanceOf[js.Any], HavingClause = HavingClause.asInstanceOf[js.Any], Order = Order.asInstanceOf[js.Any], OrderColumns = OrderColumns.asInstanceOf[js.Any], Query = Query.asInstanceOf[js.Any], QueryWithSubstitution = QueryWithSubstitution.asInstanceOf[js.Any], StructuredFilter = StructuredFilter.asInstanceOf[js.Any], StructuredHavingClause = StructuredHavingClause.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), appendFilterByColumn = js.Any.fromFunction3(appendFilterByColumn), appendGroupByColumn = js.Any.fromFunction1(appendGroupByColumn), appendHavingClauseByColumn = js.Any.fromFunction3(appendHavingClauseByColumn), appendOrderByColumn = js.Any.fromFunction2(appendOrderByColumn), getFilter = js.Any.fromFunction0(getFilter), getGroup = js.Any.fromFunction0(getGroup), getGroupColumns = js.Any.fromFunction0(getGroupColumns), getHavingClause = js.Any.fromFunction0(getHavingClause), getOrder = js.Any.fromFunction0(getOrder), getOrderColumns = js.Any.fromFunction0(getOrderColumns), getQuery = js.Any.fromFunction0(getQuery), getQueryWithSubstitution = js.Any.fromFunction0(getQueryWithSubstitution), getStructuredFilter = js.Any.fromFunction0(getStructuredFilter), getStructuredHavingClause = js.Any.fromFunction0(getStructuredHavingClause), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCommand = js.Any.fromFunction2(setCommand), setFilter = js.Any.fromFunction1(setFilter), setGroup = js.Any.fromFunction1(setGroup), setHavingClause = js.Any.fromFunction1(setHavingClause), setOrder = js.Any.fromFunction1(setOrder), setQuery = js.Any.fromFunction1(setQuery), setStructuredFilter = js.Any.fromFunction1(setStructuredFilter), setStructuredHavingClause = js.Any.fromFunction1(setStructuredHavingClause))
     __obj.asInstanceOf[XSingleSelectQueryComposer]
   }
+  
   @scala.inline
   implicit class XSingleSelectQueryComposerOps[Self <: XSingleSelectQueryComposer] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setElementaryQuery(value: String): Self = this.set("ElementaryQuery", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAppendFilterByColumn(value: (XPropertySet, Boolean, Double) => Unit): Self = this.set("appendFilterByColumn", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setAppendGroupByColumn(value: XPropertySet => Unit): Self = this.set("appendGroupByColumn", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setAppendHavingClauseByColumn(value: (XPropertySet, Boolean, Double) => Unit): Self = this.set("appendHavingClauseByColumn", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setAppendOrderByColumn(value: (XPropertySet, Boolean) => Unit): Self = this.set("appendOrderByColumn", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSetFilter(value: String => Unit): Self = this.set("setFilter", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetGroup(value: String => Unit): Self = this.set("setGroup", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetHavingClause(value: String => Unit): Self = this.set("setHavingClause", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetOrder(value: String => Unit): Self = this.set("setOrder", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetStructuredFilter(value: SeqEquiv[SeqEquiv[PropertyValue]] => Unit): Self = this.set("setStructuredFilter", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setSetStructuredHavingClause(value: SeqEquiv[SeqEquiv[PropertyValue]] => Unit): Self = this.set("setStructuredHavingClause", js.Any.fromFunction1(value))
   }
-  
 }
-

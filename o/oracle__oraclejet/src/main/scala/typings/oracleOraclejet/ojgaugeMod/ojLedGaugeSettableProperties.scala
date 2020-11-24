@@ -23,28 +23,43 @@ import typings.oracleOraclejet.oracleOraclejetStrings.star
 import typings.oracleOraclejet.oracleOraclejetStrings.triangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojLedGaugeSettableProperties extends dvtBaseGaugeSettableProperties {
+  
   var borderColor: String = js.native
+  
   var color: String = js.native
+  
   var label: Text = js.native
+  
   var max: Double = js.native
+  
   var metricLabel: TextType = js.native
+  
   var min: Double = js.native
+  
   var rotation: `90` | `180` | `270` | `0` = js.native
+  
   var size: Double = js.native
+  
   var svgClassName: String = js.native
+  
   var svgStyle: js.Object = js.native
+  
   var thresholds: js.Array[Threshold] = js.native
+  
   var tooltip: `10` = js.native
+  
   var `type`: arrow | diamond | square | rectangle | triangle | star | human | circle = js.native
+  
   var value: Double | Null = js.native
+  
   var visualEffects: none | auto = js.native
 }
-
 object ojLedGaugeSettableProperties {
+  
   @scala.inline
   def apply(
     borderColor: String,
@@ -68,52 +83,71 @@ object ojLedGaugeSettableProperties {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojLedGaugeSettableProperties]
   }
+  
   @scala.inline
   implicit class ojLedGaugeSettablePropertiesOps[Self <: ojLedGaugeSettableProperties] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLabel(value: Text): Self = this.set("label", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMetricLabel(value: TextType): Self = this.set("metricLabel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setRotation(value: `90` | `180` | `270` | `0`): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSvgClassName(value: String): Self = this.set("svgClassName", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSvgStyle(value: js.Object): Self = this.set("svgStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setThresholdsVarargs(value: Threshold*): Self = this.set("thresholds", js.Array(value :_*))
+    
     @scala.inline
     def setThresholds(value: js.Array[Threshold]): Self = this.set("thresholds", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTooltip(value: `10`): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: arrow | diamond | square | rectangle | triangle | star | human | circle): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setVisualEffects(value: none | auto): Self = this.set("visualEffects", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setValueNull: Self = this.set("value", null)
   }
-  
 }
-

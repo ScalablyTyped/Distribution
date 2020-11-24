@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MailMergeExportRange extends js.Object
-
 /**
   * Lists values that specify the range for mail-merge document export.
   */
 @JSGlobal("MailMergeExportRange")
 @js.native
 object MailMergeExportRange extends js.Object {
+  
   /**
     * Specifies that all data source records will be included into the exported merged document.
     */
@@ -30,6 +30,4 @@ object MailMergeExportRange extends js.Object {
     */
   @js.native
   sealed trait Range extends MailMergeExportRange
-  
 }
-

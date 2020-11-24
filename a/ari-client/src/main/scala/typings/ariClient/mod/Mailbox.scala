@@ -4,22 +4,11 @@ import typings.ariClient.anon.OldMessages
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Mailbox extends Resource {
-  /**
-    * Name of the mailbox.
-    */
-  var name: String = js.native
-  /**
-    * Count of new messages in the mailbox.
-    */
-  var new_messages: Double = js.native
-  /**
-    * Count of old messages in the mailbox.
-    */
-  var old_messages: Double = js.native
+  
   /**
     * Destroy a mailbox.
     */
@@ -28,6 +17,7 @@ trait Mailbox extends Resource {
     * Destroy a mailbox.
     */
   def delete(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  
   /**
     * Retrieve the current state of a mailbox.
     */
@@ -36,6 +26,7 @@ trait Mailbox extends Resource {
     * Retrieve the current state of a mailbox.
     */
   def get(callback: js.Function2[/* err */ Error, /* mailbox */ this.type, Unit]): Unit = js.native
+  
   /**
     * List all mailboxes.
     */
@@ -44,6 +35,22 @@ trait Mailbox extends Resource {
     * List all mailboxes.
     */
   def list(callback: js.Function2[/* err */ Error, /* mailboxs */ js.Array[this.type], Unit]): Unit = js.native
+  
+  /**
+    * Name of the mailbox.
+    */
+  var name: String = js.native
+  
+  /**
+    * Count of new messages in the mailbox.
+    */
+  var new_messages: Double = js.native
+  
+  /**
+    * Count of old messages in the mailbox.
+    */
+  var old_messages: Double = js.native
+  
   /**
     * Change the state of a mailbox. (Note - implicitly creates the mailbox).
     *
@@ -59,4 +66,3 @@ trait Mailbox extends Resource {
     */
   def update(params: OldMessages, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }
-

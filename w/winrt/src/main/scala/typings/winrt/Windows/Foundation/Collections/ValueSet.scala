@@ -2,13 +2,13 @@ package typings.winrt.Windows.Foundation.Collections
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ValueSet
   extends IObservableMap[String, js.Any]
-
 object ValueSet {
+  
   @scala.inline
   def apply(
     clear: () => Unit,
@@ -25,4 +25,3 @@ object ValueSet {
     __obj.asInstanceOf[ValueSet]
   }
 }
-

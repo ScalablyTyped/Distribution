@@ -11,7 +11,7 @@ import typings.phaser.integer
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Scale Manager handles the scaling, resizing and alignment of the game canvas.
@@ -109,10 +109,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ScaleManager extends EventEmitter {
+  
   /**
     * Internal flag set when the game zoom factor is modified.
     */
   val _resetZoom: Boolean = js.native
+  
   /**
     * Automatically center the canvas within the parent? The different centering modes are:
     * 
@@ -125,12 +127,14 @@ trait ScaleManager extends EventEmitter {
     * that has a size set, or the canvas parent is the document.body.
     */
   var autoCenter: CenterType = js.native
+  
   /**
     * If set, the canvas sizes will be automatically passed through Math.floor.
     * This results in rounded pixel display values, which is important for performance on legacy
     * and low powered devices, but at the cost of not achieving a 'perfect' fit in some browser windows.
     */
   var autoRound: Boolean = js.native
+  
   /**
     * The Base Size component.
     * 
@@ -138,41 +142,56 @@ trait ScaleManager extends EventEmitter {
     * (but not the CSS style)
     */
   var baseSize: Size = js.native
+  
+  /**
+    * The Boot handler is called by Phaser.Game when it first starts up.
+    * The renderer is available by now and the canvas has been added to the DOM.
+    */
+  /* protected */ def boot(): Unit = js.native
+  
   /**
     * A reference to the HTML Canvas Element that Phaser uses to render the game.
     */
   var canvas: HTMLCanvasElement = js.native
+  
   /**
     * The DOM bounds of the canvas element.
     */
   var canvasBounds: Rectangle = js.native
+  
   /**
     * The dirty state of the Scale Manager.
     * Set if there is a change between the parent size and the current size.
     */
   var dirty: Boolean = js.native
+  
   /**
     * The scale factor between the baseSize and the canvasBounds.
     */
   var displayScale: Vector2 = js.native
+  
   /**
     * The Display Size component.
     * 
     * The size used for the canvas style, factoring in the scale mode, parent and other values.
     */
   var displaySize: Size = js.native
+  
   /**
     * A reference to the Device.Fullscreen object.
     */
   var fullscreen: Fullscreen = js.native
+  
   /**
     * The DOM Element which is sent into fullscreen mode.
     */
   var fullscreenTarget: js.Any = js.native
+  
   /**
     * A reference to the Phaser.Game instance.
     */
   val game: Game = js.native
+  
   /**
     * The Game Size component.
     * 
@@ -180,119 +199,68 @@ trait ScaleManager extends EventEmitter {
     * as used for world bounds, cameras, etc
     */
   var gameSize: Size = js.native
-  /**
-    * The game height.
-    * 
-    * This is typically the size given in the game configuration.
-    */
-  val height: Double = js.native
-  /**
-    * Is the browser currently in fullscreen mode or not?
-    */
-  val isFullscreen: Boolean = js.native
-  /**
-    * Are the game dimensions landscape? (i.e. wider than they are tall)
-    * 
-    * This is different to the device itself being in a landscape orientation.
-    */
-  val isGameLandscape: Boolean = js.native
-  /**
-    * Are the game dimensions portrait? (i.e. taller than they are wide)
-    * 
-    * This is different to the device itself being in a portrait orientation.
-    */
-  val isGamePortrait: Boolean = js.native
-  /**
-    * Is the device in a landscape orientation as reported by the Orientation API?
-    * This value is usually only available on mobile devices.
-    */
-  val isLandscape: Boolean = js.native
-  /**
-    * Is the device in a portrait orientation as reported by the Orientation API?
-    * This value is usually only available on mobile devices.
-    */
-  val isPortrait: Boolean = js.native
-  /**
-    * The current device orientation.
-    * 
-    * Orientation events are dispatched via the Device Orientation API, typically only on mobile browsers.
-    */
-  var orientation: OrientationType = js.native
-  /**
-    * The parent object of the Canvas. Often a div, or the browser window, or nothing in non-browser environments.
-    * 
-    * This is set in the Game Config as the `parent` property. If undefined (or just not present), it will default
-    * to use the document body. If specifically set to `null` Phaser will ignore all parent operations.
-    */
-  var parent: js.Any = js.native
-  /**
-    * Is the parent element the browser window?
-    */
-  var parentIsWindow: Boolean = js.native
-  /**
-    * The Parent Size component.
-    */
-  var parentSize: Size = js.native
-  /**
-    * How many milliseconds should elapse before checking if the browser size has changed?
-    * 
-    * Most modern browsers dispatch a 'resize' event, which the Scale Manager will listen for.
-    * However, older browsers fail to do this, or do it consistently, so we fall back to a
-    * more traditional 'size check' based on a time interval. You can control how often it is
-    * checked here.
-    */
-  var resizeInterval: integer = js.native
-  /**
-    * The canvas resolution.
-    * 
-    * This is hard-coded to a value of 1 in the 3.16 release of Phaser and will be enabled at a later date.
-    */
-  var resolution: Double = js.native
-  /**
-    * The game scale mode.
-    */
-  var scaleMode: ScaleModeType = js.native
-  /**
-    * The game width.
-    * 
-    * This is typically the size given in the game configuration.
-    */
-  val width: Double = js.native
-  /**
-    * The game zoom factor.
-    * 
-    * This value allows you to multiply your games base size by the given zoom factor.
-    * This is then used when calculating the display size, even in `NONE` situations.
-    * If you don't want Phaser to touch the canvas style at all, this value should be 1.
-    * 
-    * Can also be set to `MAX_ZOOM` in which case the zoom value will be derived based
-    * on the game size and available space within the parent.
-    */
-  var zoom: Double = js.native
-  /**
-    * The Boot handler is called by Phaser.Game when it first starts up.
-    * The renderer is available by now and the canvas has been added to the DOM.
-    */
-  /* protected */ def boot(): Unit = js.native
+  
   /**
     * An internal method that gets the target element that is used when entering fullscreen mode.
     */
   def getFullscreenTarget(): js.Object = js.native
+  
   /**
     * Calculates and returns the largest possible zoom factor, based on the current
     * parent and game sizes. If the parent has no dimensions (i.e. an unstyled div),
     * or is smaller than the un-zoomed game, then this will return a value of 1 (no zoom)
     */
   def getMaxZoom(): integer = js.native
+  
   /**
     * Determines the parent element of the game canvas, if any, based on the game configuration.
     * @param config The Game configuration object.
     */
   def getParent(config: GameConfig): Unit = js.native
+  
   /**
     * Calculates the size of the parent bounds and updates the `parentSize` component, if the canvas has a dom parent.
     */
   def getParentBounds(): Boolean = js.native
+  
+  /**
+    * The game height.
+    * 
+    * This is typically the size given in the game configuration.
+    */
+  val height: Double = js.native
+  
+  /**
+    * Is the browser currently in fullscreen mode or not?
+    */
+  val isFullscreen: Boolean = js.native
+  
+  /**
+    * Are the game dimensions landscape? (i.e. wider than they are tall)
+    * 
+    * This is different to the device itself being in a landscape orientation.
+    */
+  val isGameLandscape: Boolean = js.native
+  
+  /**
+    * Are the game dimensions portrait? (i.e. taller than they are wide)
+    * 
+    * This is different to the device itself being in a portrait orientation.
+    */
+  val isGamePortrait: Boolean = js.native
+  
+  /**
+    * Is the device in a landscape orientation as reported by the Orientation API?
+    * This value is usually only available on mobile devices.
+    */
+  val isLandscape: Boolean = js.native
+  
+  /**
+    * Is the device in a portrait orientation as reported by the Orientation API?
+    * This value is usually only available on mobile devices.
+    */
+  val isPortrait: Boolean = js.native
+  
   /**
     * Attempts to lock the orientation of the web browser using the Screen Orientation API.
     * 
@@ -301,23 +269,53 @@ trait ScaleManager extends EventEmitter {
     * @param orientation The orientation you'd like to lock the browser in. Should be an API string such as 'landscape', 'landscape-primary', 'portrait', etc.
     */
   def lockOrientation(orientation: String): Boolean = js.native
+  
   /**
     * Triggered when a fullscreenchange event is dispatched by the DOM.
     */
   def onFullScreenChange(): Unit = js.native
+  
   /**
     * Triggered when a fullscreenerror event is dispatched by the DOM.
     */
   def onFullScreenError(): Unit = js.native
+  
+  /**
+    * The current device orientation.
+    * 
+    * Orientation events are dispatched via the Device Orientation API, typically only on mobile browsers.
+    */
+  var orientation: OrientationType = js.native
+  
+  /**
+    * The parent object of the Canvas. Often a div, or the browser window, or nothing in non-browser environments.
+    * 
+    * This is set in the Game Config as the `parent` property. If undefined (or just not present), it will default
+    * to use the document body. If specifically set to `null` Phaser will ignore all parent operations.
+    */
+  var parent: js.Any = js.native
+  
+  /**
+    * Is the parent element the browser window?
+    */
+  var parentIsWindow: Boolean = js.native
+  
+  /**
+    * The Parent Size component.
+    */
+  var parentSize: Size = js.native
+  
   /**
     * Parses the game configuration to set-up the scale defaults.
     * @param config The Game configuration object.
     */
   /* protected */ def parseConfig(config: GameConfig): Unit = js.native
+  
   /**
     * Called _before_ the canvas object is created and added to the DOM.
     */
   /* protected */ def preBoot(): Unit = js.native
+  
   /**
     * Refreshes the internal scale values, bounds sizes and orientation checks.
     * 
@@ -332,10 +330,12 @@ trait ScaleManager extends EventEmitter {
   def refresh(previousWidth: js.UndefOr[scala.Nothing], previousHeight: Double): this.type = js.native
   def refresh(previousWidth: Double): this.type = js.native
   def refresh(previousWidth: Double, previousHeight: Double): this.type = js.native
+  
   /**
     * Removes the fullscreen target that was added to the DOM.
     */
   def removeFullscreenTarget(): Unit = js.native
+  
   /**
     * Call this to modify the size of the Phaser canvas element directly.
     * You should only use this if you are using the `NONE` scale mode,
@@ -359,6 +359,29 @@ trait ScaleManager extends EventEmitter {
     * @param height The new height of the game.
     */
   def resize(width: Double, height: Double): this.type = js.native
+  
+  /**
+    * How many milliseconds should elapse before checking if the browser size has changed?
+    * 
+    * Most modern browsers dispatch a 'resize' event, which the Scale Manager will listen for.
+    * However, older browsers fail to do this, or do it consistently, so we fall back to a
+    * more traditional 'size check' based on a time interval. You can control how often it is
+    * checked here.
+    */
+  var resizeInterval: integer = js.native
+  
+  /**
+    * The canvas resolution.
+    * 
+    * This is hard-coded to a value of 1 in the 3.16 release of Phaser and will be enabled at a later date.
+    */
+  var resolution: Double = js.native
+  
+  /**
+    * The game scale mode.
+    */
+  var scaleMode: ScaleModeType = js.native
+  
   /**
     * This method will set a new size for your game.
     * 
@@ -369,10 +392,12 @@ trait ScaleManager extends EventEmitter {
     * @param height The new height of the game.
     */
   def setGameSize(width: Double, height: Double): this.type = js.native
+  
   /**
     * Sets the zoom to be the maximum possible based on the _current_ parent size.
     */
   def setMaxZoom(): this.type = js.native
+  
   /**
     * This method will set the size of the Parent Size component, which is used in scaling
     * and centering calculations. You only need to call this method if you have explicitly
@@ -382,11 +407,13 @@ trait ScaleManager extends EventEmitter {
     * @param height The new height of the parent.
     */
   def setParentSize(width: Double, height: Double): this.type = js.native
+  
   /**
     * Sets the zoom value of the Scale Manager.
     * @param value The new zoom value of the game.
     */
   def setZoom(value: integer): this.type = js.native
+  
   /**
     * Sends a request to the browser to ask it to go in to full screen mode, using the {@link https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API Fullscreen API}.
     * 
@@ -414,10 +441,12 @@ trait ScaleManager extends EventEmitter {
     */
   def startFullscreen(): Unit = js.native
   def startFullscreen(fullscreenOptions: js.Object): Unit = js.native
+  
   /**
     * An internal method that starts the different DOM event listeners running.
     */
   def startListeners(): Unit = js.native
+  
   /**
     * Internal method, called automatically by the game step.
     * Monitors the elapsed time and resize interval to see if a parent bounds check needs to take place.
@@ -425,14 +454,17 @@ trait ScaleManager extends EventEmitter {
     * @param delta The delta value since the last frame. This is smoothed to avoid delta spikes by the TimeStep class.
     */
   def step(time: Double, delta: Double): Unit = js.native
+  
   /**
     * Calling this method will cancel fullscreen mode, if the browser has entered it.
     */
   def stopFullscreen(): Unit = js.native
+  
   /**
     * Stops all DOM event listeners.
     */
   def stopListeners(): Unit = js.native
+  
   /**
     * Toggles the fullscreen mode. If already in fullscreen, calling this will cancel it.
     * If not in fullscreen, this will request the browser to enter fullscreen mode.
@@ -446,21 +478,25 @@ trait ScaleManager extends EventEmitter {
     */
   def toggleFullscreen(): Unit = js.native
   def toggleFullscreen(fullscreenOptions: js.Object): Unit = js.native
+  
   /**
     * Transforms the pageX value into the scaled coordinate space of the Scale Manager.
     * @param pageX The DOM pageX value.
     */
   def transformX(pageX: Double): Double = js.native
+  
   /**
     * Transforms the pageY value into the scaled coordinate space of the Scale Manager.
     * @param pageY The DOM pageY value.
     */
   def transformY(pageY: Double): Double = js.native
+  
   /**
     * Updates the `canvasBounds` rectangle to match the bounding client rectangle of the
     * canvas element being used to track input events.
     */
   def updateBounds(): Unit = js.native
+  
   /**
     * Calculates and updates the canvas CSS style in order to center it within the
     * bounds of its parent. If you have explicitly set parent to be `null` in your
@@ -475,15 +511,35 @@ trait ScaleManager extends EventEmitter {
     * `autoCenter` property in your game config, or make sure it is set to `NO_CENTER`.
     */
   def updateCenter(): Unit = js.native
+  
   /**
     * Internal method that checks the current screen orientation, only if the internal check flag is set.
     * 
     * If the orientation has changed it updates the orientation property and then dispatches the orientation change event.
     */
   def updateOrientation(): Unit = js.native
+  
   /**
     * Internal method that manages updating the size components based on the scale mode.
     */
   def updateScale(): Unit = js.native
+  
+  /**
+    * The game width.
+    * 
+    * This is typically the size given in the game configuration.
+    */
+  val width: Double = js.native
+  
+  /**
+    * The game zoom factor.
+    * 
+    * This value allows you to multiply your games base size by the given zoom factor.
+    * This is then used when calculating the display size, even in `NONE` situations.
+    * If you don't want Phaser to touch the canvas style at all, this value should be 1.
+    * 
+    * Can also be set to `MAX_ZOOM` in which case the zoom value will be derived based
+    * on the game size and available space within the parent.
+    */
+  var zoom: Double = js.native
 }
-

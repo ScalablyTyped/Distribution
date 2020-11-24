@@ -2,11 +2,12 @@ package typings.diff.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("diff", "structuredPatch")
 @js.native
 object structuredPatch extends js.Object {
+  
   def apply(oldFileName: String, newFileName: String, oldStr: String, newStr: String): ParsedDiff = js.native
   def apply(
     oldFileName: String,
@@ -62,4 +63,3 @@ object structuredPatch extends js.Object {
     options: PatchOptions
   ): ParsedDiff = js.native
 }
-

@@ -3,7 +3,7 @@ package typings.angularAnimate.mod.angularAugmentingMod.animate
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AnimateProvider
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IAnimateProvider extends js.Object {
+  
   /**
     * Gets and/or sets the CSS class expression that is checked when performing an animation.
     *
@@ -19,6 +20,7 @@ trait IAnimateProvider extends js.Object {
     */
   def classNameFilter(): RegExp = js.native
   def classNameFilter(expression: RegExp): RegExp = js.native
+  
   /**
     * Registers a new injectable animation factory function.
     *
@@ -27,4 +29,3 @@ trait IAnimateProvider extends js.Object {
     */
   def register(name: String, factory: IAnimateFactory): Unit = js.native
 }
-

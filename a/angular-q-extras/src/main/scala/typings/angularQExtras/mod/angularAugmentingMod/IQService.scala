@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.TopLevel
 import typings.angular.mod.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line interface-name
 @js.native
 trait IQService extends js.Object {
+  
   def allSettled[T](
     promises: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: T[K] | angular.angular.IPromise<T[K]>}
@@ -152,7 +153,8 @@ trait IQService extends js.Object {
       PromiseValue[T10]
     ]
   ] = js.native
+  
   def isFulfilledState(promise: PromiseValue[_]): Boolean = js.native
+  
   def isRejectedState(promise: PromiseValue[_]): Boolean = js.native
 }
-

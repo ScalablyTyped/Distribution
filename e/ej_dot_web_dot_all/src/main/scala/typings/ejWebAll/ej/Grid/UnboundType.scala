@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Grid
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UnboundType extends js.Object
-
 @JSGlobal("ej.Grid.UnboundType")
 @js.native
 object UnboundType extends js.Object {
+  
   ///Unbound type is cancel.
   @js.native
   sealed trait Cancel extends UnboundType
@@ -25,6 +25,4 @@ object UnboundType extends js.Object {
   ///Unbound type is save.
   @js.native
   sealed trait Save extends UnboundType
-  
 }
-

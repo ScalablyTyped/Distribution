@@ -3,7 +3,7 @@ package typings.cote.mod
 import typings.socketIo.mod.Server
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cote", "Sockend")
 @js.native
@@ -30,4 +30,3 @@ class Sockend protected () extends Component {
   discoveryOptions: DiscoveryOptions
   ) = this()
 }
-

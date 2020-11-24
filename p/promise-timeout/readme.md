@@ -10,9 +10,9 @@ Simple timeouts for promises
 | ------------------ | :-------------: |
 | Full name          | promise-timeout |
 | Keywords           | promise, timeout |
-| # releases         | 3 |
-| # dependents       | 48 |
-| # downloads        | 2078459 |
+| # releases         | 0 |
+| # dependents       | 58 |
+| # downloads        | 998517 |
 | # stars            | 2 |
 
 ## Links

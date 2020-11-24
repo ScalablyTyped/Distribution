@@ -3,13 +3,15 @@ package typings.oclazyload.mod
 import typings.oclazyload.oc.IModuleConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("angular", JSImport.Namespace)
 @js.native
 object angularAugmentingMod extends js.Object {
+  
   @js.native
   trait IAngularStatic extends js.Object {
+    
     /**
       * The angular.module is a global place for creating, registering and retrieving Angular modules. All modules (angular core or 3rd party) that should be available to an application must be registered using this mechanism.
       *
@@ -24,6 +26,4 @@ object angularAugmentingMod extends js.Object {
     def module(name: String, requires: js.Array[String | IModuleConfig]): js.Any = js.native
     def module(name: String, requires: js.Array[String | IModuleConfig], configFn: js.Function): js.Any = js.native
   }
-  
 }
-

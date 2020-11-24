@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.Tile
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ImagePosition extends js.Object
-
 @JSGlobal("ej.Tile.ImagePosition")
 @js.native
 object ImagePosition extends js.Object {
+  
   ///To set the bottom center position of tile image
   @js.native
   sealed trait BottomCenter extends ImagePosition
@@ -49,6 +49,4 @@ object ImagePosition extends js.Object {
   ///To set the topright position of tile image
   @js.native
   sealed trait TopRight extends ImagePosition
-  
 }
-

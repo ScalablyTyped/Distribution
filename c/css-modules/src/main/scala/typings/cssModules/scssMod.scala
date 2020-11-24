@@ -1,12 +1,10 @@
 package typings.cssModules
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("*.scss", JSImport.Namespace)
 @js.native
-object scssMod extends js.Object {
-  val default: SelectorNode with Stringifyable = js.native
-}
-
+object scssMod extends TopLevel[CSSModule]

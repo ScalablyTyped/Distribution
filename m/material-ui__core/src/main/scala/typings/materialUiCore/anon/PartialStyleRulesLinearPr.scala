@@ -3,121 +3,177 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/LinearProgress.LinearProgressClassKey>> */
 @js.native
 trait PartialStyleRulesLinearPr extends js.Object {
+  
   var bar: js.UndefOr[CSSProperties] = js.native
+  
   var bar1Buffer: js.UndefOr[CSSProperties] = js.native
+  
   var bar1Determinate: js.UndefOr[CSSProperties] = js.native
+  
   var bar1Indeterminate: js.UndefOr[CSSProperties] = js.native
+  
   var bar2Buffer: js.UndefOr[CSSProperties] = js.native
+  
   var bar2Indeterminate: js.UndefOr[CSSProperties] = js.native
+  
   var barColorPrimary: js.UndefOr[CSSProperties] = js.native
+  
   var barColorSecondary: js.UndefOr[CSSProperties] = js.native
+  
   var buffer: js.UndefOr[CSSProperties] = js.native
+  
   var colorPrimary: js.UndefOr[CSSProperties] = js.native
+  
   var colorSecondary: js.UndefOr[CSSProperties] = js.native
+  
   var dashed: js.UndefOr[CSSProperties] = js.native
+  
   var dashedColorPrimary: js.UndefOr[CSSProperties] = js.native
+  
   var dashedColorSecondary: js.UndefOr[CSSProperties] = js.native
+  
   var determinate: js.UndefOr[CSSProperties] = js.native
+  
   var indeterminate: js.UndefOr[CSSProperties] = js.native
+  
   var query: js.UndefOr[CSSProperties] = js.native
+  
   var root: js.UndefOr[CSSProperties] = js.native
 }
-
 object PartialStyleRulesLinearPr {
+  
   @scala.inline
   def apply(): PartialStyleRulesLinearPr = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesLinearPr]
   }
+  
   @scala.inline
   implicit class PartialStyleRulesLinearPrOps[Self <: PartialStyleRulesLinearPr] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBar(value: CSSProperties): Self = this.set("bar", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBar: Self = this.set("bar", js.undefined)
+    
     @scala.inline
     def setBar1Buffer(value: CSSProperties): Self = this.set("bar1Buffer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBar1Buffer: Self = this.set("bar1Buffer", js.undefined)
+    
     @scala.inline
     def setBar1Determinate(value: CSSProperties): Self = this.set("bar1Determinate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBar1Determinate: Self = this.set("bar1Determinate", js.undefined)
+    
     @scala.inline
     def setBar1Indeterminate(value: CSSProperties): Self = this.set("bar1Indeterminate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBar1Indeterminate: Self = this.set("bar1Indeterminate", js.undefined)
+    
     @scala.inline
     def setBar2Buffer(value: CSSProperties): Self = this.set("bar2Buffer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBar2Buffer: Self = this.set("bar2Buffer", js.undefined)
+    
     @scala.inline
     def setBar2Indeterminate(value: CSSProperties): Self = this.set("bar2Indeterminate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBar2Indeterminate: Self = this.set("bar2Indeterminate", js.undefined)
+    
     @scala.inline
     def setBarColorPrimary(value: CSSProperties): Self = this.set("barColorPrimary", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBarColorPrimary: Self = this.set("barColorPrimary", js.undefined)
+    
     @scala.inline
     def setBarColorSecondary(value: CSSProperties): Self = this.set("barColorSecondary", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBarColorSecondary: Self = this.set("barColorSecondary", js.undefined)
+    
     @scala.inline
     def setBuffer(value: CSSProperties): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteBuffer: Self = this.set("buffer", js.undefined)
+    
     @scala.inline
     def setColorPrimary(value: CSSProperties): Self = this.set("colorPrimary", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteColorPrimary: Self = this.set("colorPrimary", js.undefined)
+    
     @scala.inline
     def setColorSecondary(value: CSSProperties): Self = this.set("colorSecondary", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteColorSecondary: Self = this.set("colorSecondary", js.undefined)
+    
     @scala.inline
     def setDashed(value: CSSProperties): Self = this.set("dashed", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDashed: Self = this.set("dashed", js.undefined)
+    
     @scala.inline
     def setDashedColorPrimary(value: CSSProperties): Self = this.set("dashedColorPrimary", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDashedColorPrimary: Self = this.set("dashedColorPrimary", js.undefined)
+    
     @scala.inline
     def setDashedColorSecondary(value: CSSProperties): Self = this.set("dashedColorSecondary", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDashedColorSecondary: Self = this.set("dashedColorSecondary", js.undefined)
+    
     @scala.inline
     def setDeterminate(value: CSSProperties): Self = this.set("determinate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDeterminate: Self = this.set("determinate", js.undefined)
+    
     @scala.inline
     def setIndeterminate(value: CSSProperties): Self = this.set("indeterminate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIndeterminate: Self = this.set("indeterminate", js.undefined)
+    
     @scala.inline
     def setQuery(value: CSSProperties): Self = this.set("query", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteQuery: Self = this.set("query", js.undefined)
+    
     @scala.inline
     def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRoot: Self = this.set("root", js.undefined)
   }
-  
 }
-

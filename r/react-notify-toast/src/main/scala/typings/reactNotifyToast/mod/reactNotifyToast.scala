@@ -6,12 +6,15 @@ import typings.reactNotifyToast.reactNotifyToastStrings.success
 import typings.reactNotifyToast.reactNotifyToastStrings.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait reactNotifyToast extends js.Object {
+  
   def createShowQueue(): reactNotifyToast = js.native
+  
   def hide(): Unit = js.native
+  
   def show(text: String): Unit = js.native
   def show(
     text: String,
@@ -54,4 +57,3 @@ trait reactNotifyToast extends js.Object {
   @JSName("show")
   def show_warning(text: String, `type`: warning, timeout: Double, color: reactNotifyToastColor): Unit = js.native
 }
-

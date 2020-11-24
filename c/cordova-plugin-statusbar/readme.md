@@ -11,8 +11,8 @@ Cordova StatusBar Plugin
 | Full name          | cordova-plugin-statusbar |
 | Keywords           | cordova, statusbar, ecosystem:cordova, cordova-android, cordova-ios, cordova-wp7, cordova-wp8, cordova-windows |
 | # releases         | 2 |
-| # dependents       | 48 |
-| # downloads        | 2724705 |
+| # dependents       | 51 |
+| # downloads        | 2904054 |
 | # stars            | 23 |
 
 ## Links

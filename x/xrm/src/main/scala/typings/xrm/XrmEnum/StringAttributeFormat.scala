@@ -8,7 +8,7 @@ import typings.xrm.xrmStrings.tickersymbol
 import typings.xrm.xrmStrings.url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: String attribute formats for Attributes.Attribute.getFormat(), used by {@link Attributes.StringAttribute StringAttribute}.
@@ -23,19 +23,23 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.url
 */
 trait StringAttributeFormat extends js.Object
-
 object StringAttributeFormat {
+  
   @scala.inline
   def Email: email = "email".asInstanceOf[email]
+  
   @scala.inline
   def Phone: phone = "phone".asInstanceOf[phone]
+  
   @scala.inline
   def Text: text = "text".asInstanceOf[text]
+  
   @scala.inline
   def TextArea: textarea = "textarea".asInstanceOf[textarea]
+  
   @scala.inline
   def TickerSymbol: tickersymbol = "tickersymbol".asInstanceOf[tickersymbol]
+  
   @scala.inline
   def URL: url = "url".asInstanceOf[url]
 }
-

@@ -3,9 +3,40 @@ package typings.googleCloudDatastore
 import typings.googleCloudDatastore.queryMod.QueryFilterOperator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googleCloudDatastoreStrings {
+  
+  @scala.inline
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
+  
+  @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
+  
+  @scala.inline
+  def MORE_RESULTS_AFTER_CURSOR: MORE_RESULTS_AFTER_CURSOR = "MORE_RESULTS_AFTER_CURSOR".asInstanceOf[MORE_RESULTS_AFTER_CURSOR]
+  
+  @scala.inline
+  def MORE_RESULTS_AFTER_LIMIT: MORE_RESULTS_AFTER_LIMIT = "MORE_RESULTS_AFTER_LIMIT".asInstanceOf[MORE_RESULTS_AFTER_LIMIT]
+  
+  @scala.inline
+  def NO_MORE_RESULTS: NO_MORE_RESULTS = "NO_MORE_RESULTS".asInstanceOf[NO_MORE_RESULTS]
+  
+  @scala.inline
+  def eventual: eventual = "eventual".asInstanceOf[eventual]
+  
+  @scala.inline
+  def strong: strong = "strong".asInstanceOf[strong]
+  
   @js.native
   sealed trait Equalssign extends QueryFilterOperator
   
@@ -35,26 +66,4 @@ object googleCloudDatastoreStrings {
   
   @js.native
   sealed trait strong extends js.Object
-  
-  @scala.inline
-  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
-  @scala.inline
-  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
-  @scala.inline
-  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
-  @scala.inline
-  def MORE_RESULTS_AFTER_CURSOR: MORE_RESULTS_AFTER_CURSOR = "MORE_RESULTS_AFTER_CURSOR".asInstanceOf[MORE_RESULTS_AFTER_CURSOR]
-  @scala.inline
-  def MORE_RESULTS_AFTER_LIMIT: MORE_RESULTS_AFTER_LIMIT = "MORE_RESULTS_AFTER_LIMIT".asInstanceOf[MORE_RESULTS_AFTER_LIMIT]
-  @scala.inline
-  def NO_MORE_RESULTS: NO_MORE_RESULTS = "NO_MORE_RESULTS".asInstanceOf[NO_MORE_RESULTS]
-  @scala.inline
-  def eventual: eventual = "eventual".asInstanceOf[eventual]
-  @scala.inline
-  def strong: strong = "strong".asInstanceOf[strong]
 }
-

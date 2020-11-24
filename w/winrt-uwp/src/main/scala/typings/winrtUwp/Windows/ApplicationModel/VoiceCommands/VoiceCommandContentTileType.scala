@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.VoiceCommands
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait VoiceCommandContentTileType extends js.Object
-
 /** The layout template used to display a content tile on the Cortana canvas. */
 @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType")
 @js.native
 object VoiceCommandContentTileType extends js.Object {
+  
   /** Only item title. */
   @js.native
   sealed trait titleOnly extends VoiceCommandContentTileType
@@ -42,6 +42,4 @@ object VoiceCommandContentTileType extends js.Object {
   /** Item title with up to three lines of text. */
   @js.native
   sealed trait titleWithText extends VoiceCommandContentTileType
-  
 }
-

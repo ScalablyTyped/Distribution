@@ -10,120 +10,11 @@ import typings.mochaSugarFree.anon.OptionstitlestringfnSuite
 import typings.mochaSugarFree.mochaSugarFreeStrings.bdd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BDD extends BaseInterface {
-  /**
-    * [bdd]
-    *
-    * Execute after each test case.
-    *
-    * @see https://mochajs.org/api/global.html#afterEach
-    */
-  @JSName("afterEach")
-  var afterEach_Original: HookFunction = js.native
-  /**
-    * [bdd]
-    *
-    * Execute after running tests.
-    *
-    * @see https://mochajs.org/api/global.html#after
-    */
-  @JSName("after")
-  var after_Original: HookFunction = js.native
-  /**
-    * [bdd]
-    *
-    * Execute before each test case.
-    *
-    * @see https://mochajs.org/api/global.html#beforeEach
-    */
-  @JSName("beforeEach")
-  var beforeEach_Original: HookFunction = js.native
-  /**
-    * [bdd]
-    *
-    * Execute before running tests.
-    *
-    * @see https://mochajs.org/api/global.html#before
-    */
-  @JSName("before")
-  var before_Original: HookFunction = js.native
-  /**
-    * [bdd]
-    *
-    * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
-    */
-  @JSName("context")
-  var context_Original: SuiteFunction = js.native
-  /**
-    * [bdd]
-    *
-    * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
-    */
-  @JSName("describe")
-  var describe_Original: SuiteFunction = js.native
-  @JSName("detectedInterface")
-  var detectedInterface_BDD: bdd = js.native
-  /**
-    * [bdd]
-    *
-    * Describe a specification or test-case with the given `title` and callback `fn` acting as a thunk.
-    *
-    * The name of the function is used as the name of the test if `title` is not supplied.
-    */
-  @JSName("it")
-  var it_Original: TestFunction = js.native
-  /**
-    * [bdd]
-    *
-    * Describe a specification or test-case with the given `title` and callback `fn` acting as a thunk.
-    *
-    * The name of the function is used as the name of the test if `title` is not supplied.
-    */
-  @JSName("specify")
-  var specify_Original: TestFunction = js.native
-  /**
-    * [bdd]
-    *
-    * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
-    *
-    * Indicates this suite should not be executed.
-    */
-  @JSName("xcontext")
-  var xcontext_Original: PendingSuiteFunction = js.native
-  /**
-    * [bdd]
-    *
-    * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
-    *
-    * Indicates this suite should not be executed.
-    */
-  @JSName("xdescribe")
-  var xdescribe_Original: PendingSuiteFunction = js.native
-  /**
-    * [bdd]
-    *
-    * Describe a specification or test-case with the given `title` and callback `fn` acting as a thunk.
-    *
-    * The name of the function is used as the name of the test if `title` is not supplied.
-    *
-    * Indicates this test should not be executed.
-    */
-  @JSName("xit")
-  var xit_Original: PendingTestFunction = js.native
-  /**
-    * [bdd]
-    *
-    * Describe a specification or test-case with the given `title` and callback `fn` acting as a thunk.
-    *
-    * The name of the function is used as the name of the test if `title` is not supplied.
-    *
-    * Indicates this test should not be executed.
-    */
-  @JSName("xspecify")
-  var xspecify_Original: PendingTestFunction = js.native
+  
   /**
     * [bdd]
     *
@@ -142,6 +33,7 @@ trait BDD extends BaseInterface {
     */
   def after(options: OptionsfnHookFuncundefine): Unit = js.native
   def after(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+  
   /**
     * [bdd]
     *
@@ -163,6 +55,26 @@ trait BDD extends BaseInterface {
   /**
     * [bdd]
     *
+    * Execute after each test case.
+    *
+    * @see https://mochajs.org/api/global.html#afterEach
+    */
+  @JSName("afterEach")
+  var afterEach_Original: HookFunction = js.native
+  
+  /**
+    * [bdd]
+    *
+    * Execute after running tests.
+    *
+    * @see https://mochajs.org/api/global.html#after
+    */
+  @JSName("after")
+  var after_Original: HookFunction = js.native
+  
+  /**
+    * [bdd]
+    *
     * Execute before running tests.
     *
     * @see https://mochajs.org/api/global.html#before
@@ -178,6 +90,7 @@ trait BDD extends BaseInterface {
     */
   def before(options: OptionsfnHookFuncundefine): Unit = js.native
   def before(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+  
   /**
     * [bdd]
     *
@@ -196,6 +109,26 @@ trait BDD extends BaseInterface {
     */
   def beforeEach(options: OptionsfnHookFuncundefine): Unit = js.native
   def beforeEach(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
+  /**
+    * [bdd]
+    *
+    * Execute before each test case.
+    *
+    * @see https://mochajs.org/api/global.html#beforeEach
+    */
+  @JSName("beforeEach")
+  var beforeEach_Original: HookFunction = js.native
+  
+  /**
+    * [bdd]
+    *
+    * Execute before running tests.
+    *
+    * @see https://mochajs.org/api/global.html#before
+    */
+  @JSName("before")
+  var before_Original: HookFunction = js.native
+  
   // tslint:disable-next-line: unified-signatures
   /**
     * [bdd]
@@ -214,6 +147,14 @@ trait BDD extends BaseInterface {
   def context(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
   def context(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
   def context(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
+  /**
+    * [bdd]
+    *
+    * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
+    */
+  @JSName("context")
+  var context_Original: SuiteFunction = js.native
+  
   // tslint:disable-next-line: unified-signatures
   /**
     * [bdd]
@@ -232,6 +173,17 @@ trait BDD extends BaseInterface {
   def describe(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
   def describe(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
   def describe(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
+  /**
+    * [bdd]
+    *
+    * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
+    */
+  @JSName("describe")
+  var describe_Original: SuiteFunction = js.native
+  
+  @JSName("detectedInterface")
+  var detectedInterface_BDD: bdd = js.native
+  
   /**
     * [bdd]
     *
@@ -293,6 +245,16 @@ trait BDD extends BaseInterface {
     *
     * The name of the function is used as the name of the test if `title` is not supplied.
     */
+  @JSName("it")
+  var it_Original: TestFunction = js.native
+  
+  /**
+    * [bdd]
+    *
+    * Describe a specification or test-case with the given `title` and callback `fn` acting as a thunk.
+    *
+    * The name of the function is used as the name of the test if `title` is not supplied.
+    */
   def specify(fn: TestCase): Test_ = js.native
   // tslint:disable-next-line: unified-signatures
   /**
@@ -340,6 +302,16 @@ trait BDD extends BaseInterface {
     */
   def specify(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
   def specify(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+  /**
+    * [bdd]
+    *
+    * Describe a specification or test-case with the given `title` and callback `fn` acting as a thunk.
+    *
+    * The name of the function is used as the name of the test if `title` is not supplied.
+    */
+  @JSName("specify")
+  var specify_Original: TestFunction = js.native
+  
   // tslint:disable-next-line: unified-signatures
   /**
     * [bdd]
@@ -362,6 +334,16 @@ trait BDD extends BaseInterface {
   def xcontext(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ | Unit = js.native
   def xcontext(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit = js.native
   def xcontext(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit = js.native
+  /**
+    * [bdd]
+    *
+    * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
+    *
+    * Indicates this suite should not be executed.
+    */
+  @JSName("xcontext")
+  var xcontext_Original: PendingSuiteFunction = js.native
+  
   // tslint:disable-next-line: unified-signatures
   /**
     * [bdd]
@@ -384,6 +366,16 @@ trait BDD extends BaseInterface {
   def xdescribe(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ | Unit = js.native
   def xdescribe(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit = js.native
   def xdescribe(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit = js.native
+  /**
+    * [bdd]
+    *
+    * Describe a "suite" with the given `title` and callback `fn` containing nested suites.
+    *
+    * Indicates this suite should not be executed.
+    */
+  @JSName("xdescribe")
+  var xdescribe_Original: PendingSuiteFunction = js.native
+  
   /**
     * [bdd]
     *
@@ -459,6 +451,18 @@ trait BDD extends BaseInterface {
     *
     * Indicates this test should not be executed.
     */
+  @JSName("xit")
+  var xit_Original: PendingTestFunction = js.native
+  
+  /**
+    * [bdd]
+    *
+    * Describe a specification or test-case with the given `title` and callback `fn` acting as a thunk.
+    *
+    * The name of the function is used as the name of the test if `title` is not supplied.
+    *
+    * Indicates this test should not be executed.
+    */
   def xspecify(fn: TestCase): Test_ = js.native
   // tslint:disable-next-line: unified-signatures
   /**
@@ -516,5 +520,15 @@ trait BDD extends BaseInterface {
     */
   def xspecify(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
   def xspecify(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
+  /**
+    * [bdd]
+    *
+    * Describe a specification or test-case with the given `title` and callback `fn` acting as a thunk.
+    *
+    * The name of the function is used as the name of the test if `title` is not supplied.
+    *
+    * Indicates this test should not be executed.
+    */
+  @JSName("xspecify")
+  var xspecify_Original: PendingTestFunction = js.native
 }
-

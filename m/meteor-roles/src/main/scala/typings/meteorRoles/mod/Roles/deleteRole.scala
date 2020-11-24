@@ -2,11 +2,12 @@ package typings.meteorRoles.mod.Roles
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("meteor/alanning:roles", "Roles.deleteRole")
 @js.native
 object deleteRole extends js.Object {
+  
   /**
     * Delete an existing role.  Will throw "Role in use" error if any users
     * are currently assigned to the target role.
@@ -16,4 +17,3 @@ object deleteRole extends js.Object {
     */
   def apply(role: String): Unit = js.native
 }
-

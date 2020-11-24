@@ -4,7 +4,7 @@ import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base class that all Game Objects extend.
@@ -22,14 +22,13 @@ class GameObject protected ()
     */
   def this(scene: Scene, `type`: String) = this()
 }
-
 /* static members */
 @JSImport("phaser", "GameObjects.GameObject")
 @js.native
 object GameObject extends js.Object {
+  
   /**
     * The bitmask that `GameObject.renderFlags` is compared against to determine if the Game Object will render or not.
     */
   val RENDER_MASK: integer = js.native
 }
-

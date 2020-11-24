@@ -2,14 +2,14 @@ package typings.minappEnv.DB
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait UPDATE_COMMANDS_LITERAL extends js.Object
-
 @JSGlobal("DB.UPDATE_COMMANDS_LITERAL")
 @js.native
 object UPDATE_COMMANDS_LITERAL extends js.Object {
+  
   @js.native
   sealed trait INC extends UPDATE_COMMANDS_LITERAL
   
@@ -33,6 +33,4 @@ object UPDATE_COMMANDS_LITERAL extends js.Object {
   
   @js.native
   sealed trait UNSHIFT extends UPDATE_COMMANDS_LITERAL
-  
 }
-

@@ -7,11 +7,12 @@ import typings.ionicCore.viewControllerMod.ViewController
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/core/dist/types/components/nav-link/nav-link-utils", JSImport.Namespace)
 @js.native
 object navLinkUtilsMod extends js.Object {
+  
   def navLink(el: HTMLElement, routerDirection: RouterDirection): js.Promise[Boolean] = js.native
   def navLink(
     el: HTMLElement,
@@ -138,4 +139,3 @@ object navLinkUtilsMod extends js.Object {
     routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = js.native
 }
-

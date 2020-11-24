@@ -11,8 +11,8 @@ Clones a value, recursively extracting File, Blob and ReactNativeFile instances 
 | Full name          | extract-files |
 | Keywords           | extract, file, files, File, FileList, Blob, react, native, esm, mjs |
 | # releases         | 9 |
-| # dependents       | 31 |
-| # downloads        | 7740390 |
+| # dependents       | 40 |
+| # downloads        | 23618938 |
 | # stars            | 0 |
 
 ## Links

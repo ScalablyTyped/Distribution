@@ -1,7 +1,7 @@
 
 # Scala.js typings for plotly_dot_js
 
-Typings are for version 1.50
+Typings are for version 1.54
 
 ## Library description:
 The open source javascript graphing library that powers plotly
@@ -10,9 +10,9 @@ The open source javascript graphing library that powers plotly
 | ------------------ | :-------------: |
 | Full name          | plotly.js |
 | Keywords           | graphing, plotting, data, visualization, plotly |
-| # releases         | 67 |
-| # dependents       | 60 |
-| # downloads        | 2173726 |
+| # releases         | 60 |
+| # dependents       | 82 |
+| # downloads        | 3067591 |
 | # stars            | 13 |
 
 ## Links

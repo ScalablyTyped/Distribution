@@ -10,7 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.style.VerticalAlignment
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies the control model for a clickable button which is part of a form component hierarchy.
@@ -30,18 +30,23 @@ trait CommandButton
   extends FormControlModel
      with XImageProducerSupplier
      with XReset {
+  
   /**
     * specifies the horizontal alignment of the text in the control.
     *
     * `; 0: left; 1: center; 2: right; `
     */
   var Align: Double = js.native
+  
   /** specifies the background color (RGB) of the control. */
   var BackgroundColor: Color = js.native
+  
   /** describes the action to be executed by the button when pressed. */
   var ButtonType: FormButtonType = js.native
+  
   /** specifies that the button is the default button on the document. */
   var DefaultButton: Boolean = js.native
+  
   /**
     * specifies the default toggle state for the button, used when it is reset.
     *
@@ -52,8 +57,10 @@ trait CommandButton
     * must be present.
     */
   var DefaultState: Boolean = js.native
+  
   /** determines whether the control is enabled or disabled. */
   var Enabled: Boolean = js.native
+  
   /**
     * specifies whether the button control should grab the focus when clicked.
     *
@@ -62,12 +69,16 @@ trait CommandButton
     * @since OOo 2.0
     */
   var FocusOnClick: Boolean = js.native
+  
   /** specifies the font attributes of the text in the control. */
   var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
+  
   /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
   var FontEmphasisMark: Double = js.native
+  
   /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
   var FontRelief: Double = js.native
+  
   /**
     * specifies a graphic to be displayed at the button
     *
@@ -77,12 +88,16 @@ trait CommandButton
     * @since OOo 2.1
     */
   var Graphic: XGraphic = js.native
+  
   /** specifies the help text of the control. */
   var HelpText: String = js.native
+  
   /** specifies the help URL of the control. */
   var HelpURL: String = js.native
+  
   /** specifies the alignment of the image inside the button as {@link ImageAlign} value. */
   var ImageAlign: Double = js.native
+  
   /**
     * specifies the position of the image, if any, relative to the text, if any
     *
@@ -92,22 +107,28 @@ trait CommandButton
     * match.
     */
   var ImagePosition: Double = js.native
+  
   /**
     * specifies an URL to an image to use for the button.
     * @see Graphic
     */
   var ImageURL: String = js.native
+  
   /** specifies the label of the control. */
   var Label: String = js.native
+  
   /**
     * specifies that the text may be displayed on more than one line.
     * @since OOo 2.0
     */
   var MultiLine: Boolean = js.native
+  
   /** specifies that the control will be printed with the document. */
   var Printable: Boolean = js.native
+  
   /** specifies the default action of the button as PushButtonType value. */
   var PushButtonType: Double = js.native
+  
   /**
     * specifies whether the control should show repeating behavior.
     *
@@ -116,6 +137,7 @@ trait CommandButton
     * @since OOo 2.0
     */
   var Repeat: Boolean = js.native
+  
   /**
     * specifies the mouse repeat delay, in milliseconds.
     *
@@ -125,6 +147,7 @@ trait CommandButton
     * @since OOo 2.0
     */
   var RepeatDelay: Double = js.native
+  
   /**
     * specifies the state of the control.
     *
@@ -134,8 +157,10 @@ trait CommandButton
     * @see Toggle
     */
   var State: Double = js.native
+  
   /** specifies that the control can be reached with the TAB key. */
   var Tabstop: Boolean = js.native
+  
   /**
     * describes the frame, where to open the document specified by the TargetURL.
     *
@@ -144,6 +169,7 @@ trait CommandButton
     * As always, there is a number of target names which have a special meaning, and force a special {@link com.sun.star.frame.Frame} to be used.
     */
   var TargetFrame: String = js.native
+  
   /**
     * specifies the URL, which should be opened if the button was clicked.
     *
@@ -151,10 +177,13 @@ trait CommandButton
     * @see com.sun.star.form.FormButtonType
     */
   var TargetURL: String = js.native
+  
   /** specifies the text color (RGB) of the control. */
   var TextColor: Color = js.native
+  
   /** specifies the text line color (RGB) of the control. */
   var TextLineColor: Color = js.native
+  
   /**
     * specifies whether the button should toggle on a single operation.
     *
@@ -165,11 +194,13 @@ trait CommandButton
     * @since OOo 2.0
     */
   var Toggle: Boolean = js.native
+  
   /**
     * specifies the vertical alignment of the text in the control.
     * @since OOo 2.0
     */
   var VerticalAlign: VerticalAlignment = js.native
+  
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
@@ -177,4 +208,3 @@ trait CommandButton
   /* InferMemberOverrides */
   override def getPropertySetInfo(): XPropertySetInfo = js.native
 }
-

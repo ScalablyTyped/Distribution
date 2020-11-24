@@ -54,17 +54,24 @@ import typings.rbx.rbxStrings.white
 import typings.rbx.rbxStrings.widescreen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rbx/base/helpers/variables", "DEFAULTS")
 @js.native
 object DEFAULTS extends js.Object {
+  
   var badgeSizes: js.Tuple3[small, medium, large] = js.native
+  
   var breakpoints: js.Tuple6[mobile, tablet, desktop, widescreen, fullhd, touch] = js.native
+  
   var breakpointsLimited: js.Tuple3[mobile, fullhd, touch] = js.native
+  
   var colors: js.Tuple10[primary, success, info, warning, danger, light, dark, white, black, link] = js.native
+  
   var displays: js.Tuple5[block, flex, `inline`, `inline-block`, `inline-flex`] = js.native
+  
   var floatPulledAlignments: js.Tuple2[left, right] = js.native
+  
   var shades: js.Tuple9[
     `black-bis`, 
     `black-ter`, 
@@ -76,10 +83,14 @@ object DEFAULTS extends js.Object {
     `white-ter`, 
     `white-bis`
   ] = js.native
+  
   var textAlignments: js.Tuple4[centered, justified, left, right] = js.native
+  
   var textSizes: js.Tuple7[`1`, `2`, `3`, `4`, `5`, `6`, `7`] = js.native
+  
   var textTransforms: js.Tuple3[capitalized, lowercase, uppercase] = js.native
+  
   var textWeights: js.Tuple5[light, medium, normal, semibold, bold] = js.native
+  
   var tooltipPositions: js.Tuple4[top, right, bottom, left] = js.native
 }
-

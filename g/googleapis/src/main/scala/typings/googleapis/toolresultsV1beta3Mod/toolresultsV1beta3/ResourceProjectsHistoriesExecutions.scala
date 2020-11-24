@@ -6,15 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/toolresults/v1beta3", "toolresults_v1beta3.Resource$Projects$Histories$Executions")
 @js.native
 class ResourceProjectsHistoriesExecutions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var clusters: ResourceProjectsHistoriesExecutionsClusters = js.native
+  
   var context: APIRequestContext = js.native
-  var steps: ResourceProjectsHistoriesExecutionsSteps = js.native
+  
   /**
     * toolresults.projects.histories.executions.create
     * @desc Creates an Execution.  The returned Execution will have the id set.
@@ -53,6 +55,7 @@ class ResourceProjectsHistoriesExecutions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExecution]
   ): Unit = js.native
+  
   /**
     * toolresults.projects.histories.executions.get
     * @desc Gets an Execution.  May return any of the following canonical error
@@ -89,6 +92,7 @@ class ResourceProjectsHistoriesExecutions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExecution]
   ): Unit = js.native
+  
   /**
     * toolresults.projects.histories.executions.list
     * @desc Lists Executions for a given History.  The executions are sorted by
@@ -128,6 +132,7 @@ class ResourceProjectsHistoriesExecutions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListExecutionsResponse]
   ): Unit = js.native
+  
   /**
     * toolresults.projects.histories.executions.patch
     * @desc Updates an existing Execution with the supplied partial entity. May
@@ -168,5 +173,6 @@ class ResourceProjectsHistoriesExecutions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExecution]
   ): Unit = js.native
+  
+  var steps: ResourceProjectsHistoriesExecutionsSteps = js.native
 }
-

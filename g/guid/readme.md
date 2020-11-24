@@ -11,8 +11,8 @@ A Guid generator and validator.
 | Full name          | guid |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 122 |
-| # downloads        | 686441 |
+| # dependents       | 125 |
+| # downloads        | 694576 |
 | # stars            | 12 |
 
 ## Links

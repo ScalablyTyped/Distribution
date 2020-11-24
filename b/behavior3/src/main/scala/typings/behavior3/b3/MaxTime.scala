@@ -2,7 +2,7 @@ package typings.behavior3.b3
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The MaxTime decorator limits the maximum time the node child can execute.
@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MaxTime extends BaseNode
-
 object MaxTime {
+  
   @scala.inline
   def apply(
     _close: Tick => Unit,
@@ -33,4 +33,3 @@ object MaxTime {
     __obj.asInstanceOf[MaxTime]
   }
 }
-

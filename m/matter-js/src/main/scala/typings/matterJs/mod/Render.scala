@@ -5,11 +5,12 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Render")
 @js.native
 class Render () extends js.Object {
+  
   /**
     * A `Bounds` object that specifies the drawing view region.
     * Rendering will be automatically transformed and scaled to fit within the canvas size (`render.options.width` and `render.options.height`).
@@ -20,6 +21,7 @@ class Render () extends js.Object {
     * @type bounds
     */
   var bounds: Bounds = js.native
+  
   /**
     * The canvas element to render to. If not specified, one will be created if `render.element` has been specified.
     *
@@ -28,6 +30,7 @@ class Render () extends js.Object {
     * @default null
     */
   var canvas: HTMLCanvasElement = js.native
+  
   /**
     * The 2d rendering context from the `render.canvas` element.
     *
@@ -35,6 +38,7 @@ class Render () extends js.Object {
     * @type CanvasRenderingContext2D
     */
   var context: CanvasRenderingContext2D = js.native
+  
   /**
     * A back-reference to the `Matter.Render` module.
     *
@@ -42,6 +46,7 @@ class Render () extends js.Object {
     * @type render
     */
   var controller: js.Any = js.native
+  
   /**
     * A reference to the element where the canvas is to be inserted (if `render.canvas` has not been specified)
     *
@@ -50,6 +55,7 @@ class Render () extends js.Object {
     * @default null
     */
   var element: HTMLElement = js.native
+  
   /**
     * The configuration options of the renderer.
     *
@@ -57,6 +63,7 @@ class Render () extends js.Object {
     * @type {}
     */
   var options: IRendererOptions = js.native
+  
   /**
     * The sprite texture cache.
     *
@@ -65,11 +72,11 @@ class Render () extends js.Object {
     */
   var textures: js.Any = js.native
 }
-
 /* static members */
 @JSImport("matter-js", "Render")
 @js.native
 object Render extends js.Object {
+  
   /**
     * Creates a new renderer. The options parameter is an object that specifies any properties you wish to override the defaults.
     * All properties have default values, and many are pre-calculated automatically based on other properties.
@@ -79,12 +86,14 @@ object Render extends js.Object {
     * @return {render} A new renderer
     */
   def create(options: IRenderDefinition): Render = js.native
+  
   /**
     * Continuously updates the render canvas on the `requestAnimationFrame` event.
     * @method run
     * @param {render} render
     */
   def run(render: Render): Unit = js.native
+  
   /**
     * Sets the pixel ratio of the renderer and updates the canvas.
     * To automatically detect the correct ratio, pass the string `'auto'` for `pixelRatio`.
@@ -93,12 +102,14 @@ object Render extends js.Object {
     * @param {number} pixelRatio
     */
   def setPixelRatio(render: Render, pixelRatio: Double): Unit = js.native
+  
   /**
     * Ends execution of `Render.run` on the given `render`, by canceling the animation frame request event loop.
     * @method stop
     * @param {render} render
     */
   def stop(render: Render): Unit = js.native
+  
   /**
     * Renders the given `engine`'s `Matter.World` object.
     * This is the entry point for all rendering and should be called every time the scene changes.
@@ -107,4 +118,3 @@ object Render extends js.Object {
     */
   def world(render: Render): Unit = js.native
 }
-

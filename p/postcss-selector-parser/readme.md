@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-selector-parser
 
-Typings are for version 6.0.2
+Typings are for version 6.0.4
 
 ## Library description:
 > Selector parser with built in methods for working with selector strings.
@@ -11,8 +11,8 @@ Typings are for version 6.0.2
 | Full name          | postcss-selector-parser |
 | Keywords           | - |
 | # releases         | 7 |
-| # dependents       | 379 |
-| # downloads        | 886455194 |
+| # dependents       | 395 |
+| # downloads        | 1011013548 |
 | # stars            | 2 |
 
 ## Links

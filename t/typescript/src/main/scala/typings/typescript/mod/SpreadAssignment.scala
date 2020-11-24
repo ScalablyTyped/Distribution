@@ -2,20 +2,22 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SpreadAssignment
   extends ObjectLiteralElement
      with JSDocContainer
+     with ObjectBindingOrAssignmentElement
      with ObjectLiteralElementLike
-     with _BindingOrAssignmentElement
      with _BindingOrAssignmentElementRestIndicator
      with _HasJSDoc {
-  var expression: Expression = js.native
+  
+  val expression: Expression = js.native
+  
   @JSName("kind")
-  var kind_SpreadAssignment: typings.typescript.mod.SyntaxKind.SpreadAssignment = js.native
+  val kind_SpreadAssignment: typings.typescript.mod.SyntaxKind.SpreadAssignment = js.native
+  
   @JSName("parent")
-  var parent_SpreadAssignment: ObjectLiteralExpression = js.native
+  val parent_SpreadAssignment: ObjectLiteralExpression = js.native
 }
-

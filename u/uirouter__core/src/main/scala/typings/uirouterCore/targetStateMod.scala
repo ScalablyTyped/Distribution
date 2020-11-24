@@ -9,11 +9,12 @@ import typings.uirouterCore.stateRegistryMod.StateRegistry
 import typings.uirouterCore.transitionInterfaceMod.TransitionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/state/targetState", JSImport.Namespace)
 @js.native
 object targetStateMod extends js.Object {
+  
   @js.native
   class TargetState protected () extends _RedirectToResult {
     /**
@@ -44,30 +45,45 @@ object targetStateMod extends js.Object {
       _params: RawParams,
       _options: TransitionOptions
     ) = this()
-    var _definition: js.Any = js.native
-    var _identifier: js.Any = js.native
-    var _options: js.Any = js.native
-    var _params: js.Any = js.native
-    var _stateRegistry: js.Any = js.native
+    
     /** The internal state object (if it was found) */
     @JSName("$state")
     def $state(): StateObject = js.native
+    
+    var _definition: js.Any = js.native
+    
+    var _identifier: js.Any = js.native
+    
+    var _options: js.Any = js.native
+    
+    var _params: js.Any = js.native
+    
+    var _stateRegistry: js.Any = js.native
+    
     /** If the object is invalid, returns the reason why */
     def error(): String = js.native
+    
     /** True if the target state was found */
     def exists(): Boolean = js.native
+    
     /** The identifier used when creating this TargetState */
     def identifier(): StateOrName = js.native
+    
     /** The name of the state this object targets */
     def name(): String = js.native
+    
     /** The target options */
     def options(): TransitionOptions = js.native
+    
     /** The target parameter values */
     def params(): RawParams = js.native
+    
     /** The internal state declaration (if it was found) */
     def state(): StateDeclaration = js.native
+    
     /** True if the object is valid */
     def valid(): Boolean = js.native
+    
     /**
       * Returns a copy of this TargetState, using the specified Transition Options.
       *
@@ -77,6 +93,7 @@ object targetStateMod extends js.Object {
       */
     def withOptions(options: TransitionOptions): TargetState = js.native
     def withOptions(options: TransitionOptions, replace: Boolean): TargetState = js.native
+    
     /**
       * Returns a copy of this TargetState, using the specified parameter values.
       *
@@ -86,6 +103,7 @@ object targetStateMod extends js.Object {
       */
     def withParams(params: RawParams): TargetState = js.native
     def withParams(params: RawParams, replace: Boolean): TargetState = js.native
+    
     /**
       * Returns a copy of this TargetState which targets a different state.
       * The new TargetState has the same parameter values and transition options.
@@ -94,13 +112,11 @@ object targetStateMod extends js.Object {
       */
     def withState(state: StateOrName): TargetState = js.native
   }
-  
   /* static members */
   @js.native
   object TargetState extends js.Object {
+    
     /** Returns true if the object has a state property that might be a state or state name */
     def isDef(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean = js.native
   }
-  
 }
-

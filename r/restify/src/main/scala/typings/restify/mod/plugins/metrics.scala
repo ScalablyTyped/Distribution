@@ -3,11 +3,12 @@ package typings.restify.mod.plugins
 import typings.restify.anon.Server
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("restify", "plugins.metrics")
 @js.native
 object metrics extends js.Object {
+  
   /**
     * Listens to the server's after event and emits information about that request (5.x compatible only).
     *
@@ -20,4 +21,3 @@ object metrics extends js.Object {
     */
   def apply(opts: Server, callback: MetricsCallback): js.Function1[/* repeated */ js.Any, Unit] = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.apidevtoolsJsonSchemaRefParser.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is the default export of JSON Schema $Ref Parser. You can creates instances of this class using new $RefParser(), or you can just call its static methods.
@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation._
 @JSImport("@apidevtools/json-schema-ref-parser", JSImport.Namespace)
 @js.native
 class ^ () extends RefParser
-
 @JSImport("@apidevtools/json-schema-ref-parser", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def bundle(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = js.native
   def bundle(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = js.native
   def bundle(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
@@ -39,6 +39,7 @@ object ^ extends js.Object {
   def bundle(schema: JSONSchema, callback: SchemaCallback): Unit = js.native
   def bundle(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
   def bundle(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = js.native
+  
   def dereference(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = js.native
   def dereference(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = js.native
   def dereference(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
@@ -62,6 +63,7 @@ object ^ extends js.Object {
   def dereference(schema: JSONSchema, callback: SchemaCallback): Unit = js.native
   def dereference(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
   def dereference(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = js.native
+  
   def parse(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = js.native
   def parse(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = js.native
   def parse(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
@@ -85,6 +87,7 @@ object ^ extends js.Object {
   def parse(schema: JSONSchema, callback: SchemaCallback): Unit = js.native
   def parse(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
   def parse(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = js.native
+  
   def resolve(baseUrl: String, schema: String, options: Options): js.Promise[Refs] = js.native
   def resolve(baseUrl: String, schema: String, options: Options, callback: RefsCallback): Unit = js.native
   def resolve(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[Refs] = js.native
@@ -109,4 +112,3 @@ object ^ extends js.Object {
   def resolve(schema: JSONSchema, options: Options): js.Promise[Refs] = js.native
   def resolve(schema: JSONSchema, options: Options, callback: RefsCallback): Unit = js.native
 }
-

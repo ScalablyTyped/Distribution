@@ -2,11 +2,12 @@ package typings.openui5.global.sap.ui.unified
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.unified.calendar")
 @js.native
 object calendar extends js.Object {
+  
   @js.native
   class DatesRow protected ()
     extends typings.openui5.sap.ui.unified.calendar.DatesRow {
@@ -113,6 +114,4 @@ object calendar extends js.Object {
     def this(sId: String) = this()
     def this(sId: String, mSettings: js.Any) = this()
   }
-  
 }
-

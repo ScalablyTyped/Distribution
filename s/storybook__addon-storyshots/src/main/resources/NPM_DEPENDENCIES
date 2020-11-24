@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/addon-storyshots" : "5.3.19"
+      "@storybook/addon-storyshots" : "6.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/addon-storyshots" : "5.3.19"
+      "@storybook/addon-storyshots" : "6.1.2"
     }
   ],
   "compile-devDependencies" : [

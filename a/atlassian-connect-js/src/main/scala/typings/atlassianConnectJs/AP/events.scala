@@ -2,7 +2,7 @@ package typings.atlassianConnectJs.AP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Events module provides a mechanism for emitting and receiving events.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("AP.events")
 @js.native
 object events extends js.Object
-

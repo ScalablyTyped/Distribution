@@ -3,7 +3,7 @@ package typings.stormReactDiagrams.mod
 import typings.stormReactDiagrams.baseEntityMod.BaseListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("storm-react-diagrams", "BaseEntity")
 @js.native
@@ -11,4 +11,3 @@ class BaseEntity[T /* <: BaseListener[_] */] ()
   extends typings.stormReactDiagrams.baseEntityMod.BaseEntity[T] {
   def this(id: String) = this()
 }
-

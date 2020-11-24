@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dns/v2beta1", "dns_v2beta1.Resource$Managedzones")
 @js.native
 class ResourceManagedzones protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * dns.managedZones.create
     * @example
@@ -99,6 +101,7 @@ class ResourceManagedzones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaManagedZone]
   ): Unit = js.native
+  
   /**
     * dns.managedZones.delete
     * @example
@@ -185,6 +188,7 @@ class ResourceManagedzones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * dns.managedZones.get
     * @example
@@ -271,6 +275,7 @@ class ResourceManagedzones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaManagedZone]
   ): Unit = js.native
+  
   /**
     * dns.managedZones.list
     * @example
@@ -371,6 +376,7 @@ class ResourceManagedzones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaManagedZonesListResponse]
   ): Unit = js.native
+  
   /**
     * dns.managedZones.patch
     * @example
@@ -464,6 +470,7 @@ class ResourceManagedzones protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * dns.managedZones.update
     * @example
@@ -558,4 +565,3 @@ class ResourceManagedzones protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

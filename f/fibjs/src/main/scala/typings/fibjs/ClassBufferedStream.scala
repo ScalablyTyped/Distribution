@@ -2,10 +2,11 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClassBufferedStream extends ClassStream {
+  
   /**
     * class prop 
     *
@@ -16,6 +17,7 @@ trait ClassBufferedStream extends ClassStream {
     * @type String
     */
   var EOL: String = js.native
+  
   /**
     * class prop 
     *
@@ -26,16 +28,7 @@ trait ClassBufferedStream extends ClassStream {
     * @type String
     */
   var charset: String = js.native
-  /**
-    * class prop 
-    *
-    * 
-    * @brief 查询创建缓存对象时的流对象
-    * 
-    * @readonly
-    * @type Stream
-    */
-  var stream: ClassStream = js.native
+  
   /**
     * 
     * @brief 读取一行文本，行结尾标识基于 EOL 属性的设置，缺省时，posix:\"\\n\"；windows:\"\\r\\n\"
@@ -47,6 +40,7 @@ trait ClassBufferedStream extends ClassStream {
     */
   def readLine(): String = js.native
   def readLine(maxlen: Double): String = js.native
+  
   /**
     * 
     * @brief 以数组方式读取一组文本行，行结尾标识基于 EOL 属性的设置，缺省时，posix:\"\\n\"；windows:\"\\r\\n\"
@@ -58,6 +52,7 @@ trait ClassBufferedStream extends ClassStream {
     */
   def readLines(): js.Array[_] = js.native
   def readLines(maxlines: Double): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 读取指定字符的文本
@@ -68,6 +63,7 @@ trait ClassBufferedStream extends ClassStream {
     * @async
     */
   def readText(size: Double): String = js.native
+  
   /**
     * 
     * @brief 读取一个文本字符串，以指定的字节为结尾
@@ -80,6 +76,18 @@ trait ClassBufferedStream extends ClassStream {
     */
   def readUntil(mk: String): String = js.native
   def readUntil(mk: String, maxlen: Double): String = js.native
+  
+  /**
+    * class prop 
+    *
+    * 
+    * @brief 查询创建缓存对象时的流对象
+    * 
+    * @readonly
+    * @type Stream
+    */
+  var stream: ClassStream = js.native
+  
   /**
     * 
     * @brief 写入一个字符串，并写入换行符
@@ -89,6 +97,7 @@ trait ClassBufferedStream extends ClassStream {
     * @async
     */
   def writeLine(txt: String): Unit = js.native
+  
   /**
     * 
     * @brief 写入一个字符串
@@ -99,4 +108,3 @@ trait ClassBufferedStream extends ClassStream {
     */
   def writeText(txt: String): Unit = js.native
 }
-

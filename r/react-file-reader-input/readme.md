@@ -10,9 +10,9 @@ React file input component for complete control over styling and abstraction fro
 | ------------------ | :-------------: |
 | Full name          | react-file-reader-input |
 | Keywords           | react, file, input, reader, component, react-component, filereader, file-reader, fake |
-| # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 221412 |
+| # releases         | 0 |
+| # dependents       | 11 |
+| # downloads        | 260597 |
 | # stars            | 0 |
 
 ## Links

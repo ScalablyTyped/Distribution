@@ -11,11 +11,12 @@ import typings.msRestAzure.mod.AzureServiceClientOptions
 import typings.msRestAzure.mod.CloudErrorParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource/lib/feature/featureClient", JSImport.Namespace)
 @js.native
 object featureClientMod extends js.Object {
+  
   @js.native
   class FeatureClient protected () extends AzureServiceClient {
     /**
@@ -59,14 +60,18 @@ object featureClientMod extends js.Object {
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
+    
     var acceptLanguage: String = js.native
+    
     var apiVersion: String = js.native
+    
     var credentials: ServiceClientCredentials = js.native
+    
     // Operation groups
     var features: Features = js.native
+    
     var generateClientRequestId: Boolean = js.native
-    var longRunningOperationRetryTimeout: Double = js.native
-    var subscriptionId: String = js.native
+    
     /**
       * Lists all of the available Microsoft.Features REST API operations.
       *
@@ -101,6 +106,7 @@ object featureClientMod extends js.Object {
     def listOperations(callback: ServiceCallback[OperationListResult]): Unit = js.native
     def listOperations(options: CustomHeaders): js.Promise[OperationListResult] = js.native
     def listOperations(options: CustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
+    
     /**
       * Lists all of the available Microsoft.Features REST API operations.
       *
@@ -138,6 +144,7 @@ object featureClientMod extends js.Object {
     def listOperationsNext(nextPageLink: String, callback: ServiceCallback[OperationListResult]): Unit = js.native
     def listOperationsNext(nextPageLink: String, options: CustomHeaders): js.Promise[OperationListResult] = js.native
     def listOperationsNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
+    
     /**
       * Lists all of the available Microsoft.Features REST API operations.
       *
@@ -157,6 +164,7 @@ object featureClientMod extends js.Object {
       */
     def listOperationsNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
     def listOperationsNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
+    
     /**
       * Lists all of the available Microsoft.Features REST API operations.
       *
@@ -173,6 +181,24 @@ object featureClientMod extends js.Object {
       */
     def listOperationsWithHttpOperationResponse(): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
     def listOperationsWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
+    
+    var longRunningOperationRetryTimeout: Double = js.native
+    
+    var subscriptionId: String = js.native
+  }
+  
+  @js.native
+  object FeatureModels extends js.Object {
+    
+    @js.native
+    class BaseResource ()
+      extends typings.msRestAzure.mod.BaseResource
+    
+    @js.native
+    class CloudError protected ()
+      extends typings.azureArmResource.modelsMod.CloudError {
+      def this(parameters: CloudErrorParameters) = this()
+    }
   }
   
   @js.native
@@ -219,20 +245,4 @@ object featureClientMod extends js.Object {
       options: AzureServiceClientOptions
     ) = this()
   }
-  
-  @js.native
-  object FeatureModels extends js.Object {
-    @js.native
-    class BaseResource ()
-      extends typings.msRestAzure.mod.BaseResource
-    
-    @js.native
-    class CloudError protected ()
-      extends typings.azureArmResource.modelsMod.CloudError {
-      def this(parameters: CloudErrorParameters) = this()
-    }
-    
-  }
-  
 }
-

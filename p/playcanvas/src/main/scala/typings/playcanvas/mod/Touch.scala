@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new Touch object from the browser Touch.
@@ -19,4 +19,3 @@ class Touch protected ()
   extends typings.playcanvas.pc.Touch {
   def this(touch: typings.playcanvas.pc.Touch) = this()
 }
-

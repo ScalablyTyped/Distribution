@@ -2,7 +2,7 @@ package typings.phaser.Phaser.Physics.Matter
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a body using the supplied physics data, as provided by a JSON file.
@@ -45,4 +45,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Phaser.Physics.Matter.PhysicsJSONParser")
 @js.native
 object PhysicsJSONParser extends js.Object
-

@@ -4,12 +4,12 @@ import typings.std.Date
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ToastNotification extends IToastNotification
-
 object ToastNotification {
+  
   @scala.inline
   def apply(
     content: XmlDocument,
@@ -22,4 +22,3 @@ object ToastNotification {
     __obj.asInstanceOf[ToastNotification]
   }
 }
-

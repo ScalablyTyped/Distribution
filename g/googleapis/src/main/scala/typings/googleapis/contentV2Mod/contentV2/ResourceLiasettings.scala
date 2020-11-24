@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Resource$Liasettings")
 @js.native
 class ResourceLiasettings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * content.liasettings.custombatch
     * @desc Retrieves and/or updates the LIA settings of multiple accounts in a
@@ -46,6 +48,7 @@ class ResourceLiasettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsCustomBatchResponse]
   ): Unit = js.native
+  
   /**
     * content.liasettings.get
     * @desc Retrieves the LIA settings of the account.
@@ -75,6 +78,7 @@ class ResourceLiasettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiaSettings]
   ): Unit = js.native
+  
   /**
     * content.liasettings.getaccessiblegmbaccounts
     * @desc Retrieves the list of accessible Google My Business accounts.
@@ -107,6 +111,7 @@ class ResourceLiasettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsGetAccessibleGmbAccountsResponse]
   ): Unit = js.native
+  
   /**
     * content.liasettings.list
     * @desc Lists the LIA settings of the sub-accounts in your Merchant Center
@@ -141,6 +146,7 @@ class ResourceLiasettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsListResponse]
   ): Unit = js.native
+  
   /**
     * content.liasettings.listposdataproviders
     * @desc Retrieves the list of POS data providers that have active settings
@@ -172,6 +178,7 @@ class ResourceLiasettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsListPosDataProvidersResponse]
   ): Unit = js.native
+  
   /**
     * content.liasettings.patch
     * @desc Updates the LIA settings of the account. This method supports patch
@@ -204,6 +211,7 @@ class ResourceLiasettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiaSettings]
   ): Unit = js.native
+  
   /**
     * content.liasettings.requestgmbaccess
     * @desc Requests access to a specified Google My Business account.
@@ -237,6 +245,7 @@ class ResourceLiasettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsRequestGmbAccessResponse]
   ): Unit = js.native
+  
   /**
     * content.liasettings.requestinventoryverification
     * @desc Requests inventory validation for the specified country.
@@ -270,6 +279,7 @@ class ResourceLiasettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsRequestInventoryVerificationResponse]
   ): Unit = js.native
+  
   /**
     * content.liasettings.setinventoryverificationcontact
     * @desc Sets the inventory verification contract for the specified country.
@@ -306,6 +316,7 @@ class ResourceLiasettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsSetInventoryVerificationContactResponse]
   ): Unit = js.native
+  
   /**
     * content.liasettings.setposdataprovider
     * @desc Sets the POS data provider for the specified country.
@@ -341,6 +352,7 @@ class ResourceLiasettings protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsSetPosDataProviderResponse]
   ): Unit = js.native
+  
   /**
     * content.liasettings.update
     * @desc Updates the LIA settings of the account.
@@ -373,4 +385,3 @@ class ResourceLiasettings protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLiaSettings]
   ): Unit = js.native
 }
-

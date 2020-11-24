@@ -1,24 +1,27 @@
 package typings.electron.Electron
 
 import typings.electron.electronStrings.`console-message`
-import typings.node.eventsMod.global.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServiceWorkers extends EventEmitter {
+  
   @JSName("addListener")
   def addListener_consolemessage(
     event: `console-message`,
     listener: js.Function2[/* event */ Event, /* messageDetails */ MessageDetails, Unit]
   ): this.type = js.native
+  
   /**
     * A ServiceWorkerInfo object where the keys are the service worker version ID and
     * the values are the information about that service worker.
     */
   def getAllRunning(): Record[Double, ServiceWorkerInfo] = js.native
+  
   /**
     * Information about this service worker
     *
@@ -26,7 +29,8 @@ trait ServiceWorkers extends EventEmitter {
     * exception.
     */
   def getFromVersionID(versionId: Double): ServiceWorkerInfo = js.native
-  // Docs: http://electronjs.org/docs/api/service-workers
+  
+  // Docs: https://electronjs.org/docs/api/service-workers
   /**
     * Emitted when a service worker logs something to the console.
     */
@@ -35,15 +39,16 @@ trait ServiceWorkers extends EventEmitter {
     event: `console-message`,
     listener: js.Function2[/* event */ Event, /* messageDetails */ MessageDetails, Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_consolemessage(
     event: `console-message`,
     listener: js.Function2[/* event */ Event, /* messageDetails */ MessageDetails, Unit]
   ): this.type = js.native
+  
   @JSName("removeListener")
   def removeListener_consolemessage(
     event: `console-message`,
     listener: js.Function2[/* event */ Event, /* messageDetails */ MessageDetails, Unit]
   ): this.type = js.native
 }
-

@@ -5,7 +5,7 @@ import typings.aureliaLoader.mod.Loader
 import typings.aureliaLoader.mod.TemplateRegistryEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ViewEngine")
 @js.native
@@ -25,12 +25,14 @@ class ViewEngine protected () extends js.Object {
     moduleAnalyzer: ModuleAnalyzer,
     appResources: ViewResources_
   ) = this()
+  
   /**
     * Adds a resource plugin to the resource loading pipeline.
     * @param extension The file extension to match in require elements.
     * @param implementation The plugin implementation that handles the resource type.
     */
   def addResourcePlugin(extension: String, implementation: js.Object): Unit = js.native
+  
   /**
     * Loads a view model as a resource.
     * @param moduleImport The module to import.
@@ -38,6 +40,7 @@ class ViewEngine protected () extends js.Object {
     * @return A promise for the ResourceDescription.
     */
   def importViewModelResource(moduleImport: String, moduleMember: String): js.Promise[ResourceDescription] = js.native
+  
   /**
     * Imports the specified resources with the specified names into the view resources object.
     * @param moduleIds The modules to load.
@@ -67,6 +70,7 @@ class ViewEngine protected () extends js.Object {
     compileInstruction: ViewCompileInstruction,
     loadContext: ResourceLoadContext
   ): js.Promise[ViewResources_] = js.native
+  
   /**
     * Loads all the resources specified by the registry entry.
     * @param registryEntry The template registry entry to load the resources for.
@@ -111,6 +115,7 @@ class ViewEngine protected () extends js.Object {
     loadContext: ResourceLoadContext,
     target: js.Any
   ): js.Promise[ViewResources_] = js.native
+  
   /**
     * Loads and compiles a ViewFactory from a url or template registry entry.
     * @param urlOrRegistryEntry A url or template registry entry to generate the view factory for.
@@ -192,15 +197,15 @@ class ViewEngine protected () extends js.Object {
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
 }
-
 /* static members */
 @JSImport("aurelia-templating", "ViewEngine")
 @js.native
 object ViewEngine extends js.Object {
+  
+  def inject(): js.Any = js.native
+  
   /**
     * The metadata key for storing requires declared in a ViewModel.
     */
   var viewModelRequireMetadataKey: js.Any = js.native
-  def inject(): js.Any = js.native
 }
-

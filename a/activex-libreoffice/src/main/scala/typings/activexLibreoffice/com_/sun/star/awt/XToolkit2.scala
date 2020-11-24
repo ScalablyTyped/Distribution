@@ -10,7 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the new-style service {@link Toolkit} to implement.
@@ -24,8 +24,8 @@ trait XToolkit2
      with XMessageBoxFactory
      with XExtendedToolkit
      with XReschedule
-
 object XToolkit2 {
+  
   @scala.inline
   def apply(
     ActiveTopWindow: XTopWindow,
@@ -64,4 +64,3 @@ object XToolkit2 {
     __obj.asInstanceOf[XToolkit2]
   }
 }
-

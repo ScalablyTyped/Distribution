@@ -10,9 +10,9 @@ Optional peer dependencies
 | ------------------ | :-------------: |
 | Full name          | codependency |
 | Keywords           | peer, dependency, dependencies, require, module, semver |
-| # releases         | 2 |
-| # dependents       | 26 |
-| # downloads        | 1243841 |
+| # releases         | 0 |
+| # dependents       | 28 |
+| # downloads        | 1739186 |
 | # stars            | 2 |
 
 ## Links

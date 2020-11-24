@@ -11,8 +11,8 @@ Typings are for version 1.1
 | Full name          | ip |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 1570 |
-| # downloads        | 286201831 |
+| # dependents       | 1753 |
+| # downloads        | 386077823 |
 | # stars            | 54 |
 
 ## Links

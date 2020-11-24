@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1beta1", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Fhirstores$Fhir$Observation")
 @js.native
 class ResourceProjectsLocationsDatasetsFhirstoresFhirObservation protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * healthcare.projects.locations.datasets.fhirStores.fhir.Observation.get$lastn
     * @desc Get N most recent observations for patient, grouped by code that
@@ -58,4 +60,3 @@ class ResourceProjectsLocationsDatasetsFhirstoresFhirObservation protected () ex
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
 }
-

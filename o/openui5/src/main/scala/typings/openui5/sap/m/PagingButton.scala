@@ -3,10 +3,11 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PagingButton extends Control {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>positionChange</code> event of this
     * <code>sap.m.PagingButton</code>.When called, the context of the event handler (its
@@ -21,6 +22,7 @@ trait PagingButton extends Control {
     */
   def attachPositionChange(oData: js.Any, fnFunction: js.Any): PagingButton = js.native
   def attachPositionChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): PagingButton = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>positionChange</code> event of this
     * <code>sap.m.PagingButton</code>.The passed function and listener object must match the ones used for
@@ -30,6 +32,7 @@ trait PagingButton extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachPositionChange(fnFunction: js.Any, oListener: js.Any): PagingButton = js.native
+  
   /**
     * Fires event <code>positionChange</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>newPosition</code> of type <code>int</code>The number of the new
@@ -39,6 +42,7 @@ trait PagingButton extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def firePositionChange(mArguments: js.Any): PagingButton = js.native
+  
   /**
     * Gets current value of property <code>count</code>.Determines the total count of items/entities that
     * the control navigates through.The minimum number of items/entities is 1.Default value is
@@ -46,6 +50,7 @@ trait PagingButton extends Control {
     * @returns Value of property <code>count</code>
     */
   def getCount(): Double = js.native
+  
   /**
     * Gets current value of property <code>nextButtonTooltip</code>.Determines the tooltip of the next
     * button.Default value is <code></code>.
@@ -53,6 +58,7 @@ trait PagingButton extends Control {
     * @returns Value of property <code>nextButtonTooltip</code>
     */
   def getNextButtonTooltip(): String = js.native
+  
   /**
     * Gets current value of property <code>position</code>.Determines the current position in the
     * items/entities that the control navigates through.Starting (minimum) number is 1.Default value is
@@ -60,6 +66,7 @@ trait PagingButton extends Control {
     * @returns Value of property <code>position</code>
     */
   def getPosition(): Double = js.native
+  
   /**
     * Gets current value of property <code>previousButtonTooltip</code>.Determines the tooltip of the
     * previous button.Default value is <code></code>.
@@ -68,4 +75,3 @@ trait PagingButton extends Control {
     */
   def getPreviousButtonTooltip(): String = js.native
 }
-

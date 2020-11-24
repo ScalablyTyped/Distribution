@@ -6,11 +6,22 @@ import typings.prex.cancellationMod.VSCodeCancellationTokenLike
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prex", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  def delay(msec: Double): js.Promise[Unit] = js.native
+  def delay(token: Cancelable, msec: Double): js.Promise[Unit] = js.native
+  def delay(token: typings.prex.cancellationMod.CancellationToken, msec: Double): js.Promise[Unit] = js.native
+  def delay[T](msec: Double, value: T): js.Promise[T] = js.native
+  def delay[T](msec: Double, value: js.Thenable[T]): js.Promise[T] = js.native
+  def delay[T](token: Cancelable, msec: Double, value: T): js.Promise[T] = js.native
+  def delay[T](token: Cancelable, msec: Double, value: js.Thenable[T]): js.Promise[T] = js.native
+  def delay[T](token: typings.prex.cancellationMod.CancellationToken, msec: Double, value: T): js.Promise[T] = js.native
+  def delay[T](token: typings.prex.cancellationMod.CancellationToken, msec: Double, value: js.Thenable[T]): js.Promise[T] = js.native
+  
   @js.native
   /**
     * Initializes a new instance of the AsyncProducerConsumerQueue class.
@@ -80,6 +91,40 @@ object mod extends js.Object {
   @js.native
   class CancellationToken ()
     extends typings.prex.cancellationMod.CancellationToken
+  /* static members */
+  @js.native
+  object CancellationToken extends js.Object {
+    
+    /**
+      * Returns a CancellationToken that becomes canceled when **all** of the provided tokens are canceled.
+      * @param tokens An iterable of CancellationToken objects.
+      */
+    def all(tokens: Iterable[typings.prex.cancellationMod.CancellationToken | Cancelable]): typings.prex.cancellationMod.CancellationToken = js.native
+    
+    /**
+      * A token that is already canceled.
+      */
+    val canceled: typings.prex.cancellationMod.CancellationToken = js.native
+    
+    def from(cancelable: Cancelable): typings.prex.cancellationMod.CancellationToken = js.native
+    def from(cancelable: AbortSignalLike): typings.prex.cancellationMod.CancellationToken = js.native
+    /**
+      * Adapts a CancellationToken-like primitive from a different library.
+      */
+    def from(cancelable: typings.prex.cancellationMod.CancellationToken): typings.prex.cancellationMod.CancellationToken = js.native
+    def from(cancelable: VSCodeCancellationTokenLike): typings.prex.cancellationMod.CancellationToken = js.native
+    
+    /**
+      * A token which will never be canceled.
+      */
+    val none: typings.prex.cancellationMod.CancellationToken = js.native
+    
+    /**
+      * Returns a CancellationToken that becomes canceled when **any** of the provided tokens are canceled.
+      * @param tokens An iterable of CancellationToken objects.
+      */
+    def race(tokens: Iterable[typings.prex.cancellationMod.CancellationToken | Cancelable]): typings.prex.cancellationMod.CancellationToken = js.native
+  }
   
   @js.native
   class CancellationTokenCountdown ()
@@ -147,45 +192,4 @@ object mod extends js.Object {
     def this(initialCount: Double) = this()
     def this(initialCount: Double, maxCount: Double) = this()
   }
-  
-  def delay(msec: Double): js.Promise[Unit] = js.native
-  def delay(token: Cancelable, msec: Double): js.Promise[Unit] = js.native
-  def delay(token: typings.prex.cancellationMod.CancellationToken, msec: Double): js.Promise[Unit] = js.native
-  def delay[T](msec: Double, value: T): js.Promise[T] = js.native
-  def delay[T](msec: Double, value: js.Thenable[T]): js.Promise[T] = js.native
-  def delay[T](token: Cancelable, msec: Double, value: T): js.Promise[T] = js.native
-  def delay[T](token: Cancelable, msec: Double, value: js.Thenable[T]): js.Promise[T] = js.native
-  def delay[T](token: typings.prex.cancellationMod.CancellationToken, msec: Double, value: T): js.Promise[T] = js.native
-  def delay[T](token: typings.prex.cancellationMod.CancellationToken, msec: Double, value: js.Thenable[T]): js.Promise[T] = js.native
-  /* static members */
-  @js.native
-  object CancellationToken extends js.Object {
-    /**
-      * A token that is already canceled.
-      */
-    val canceled: typings.prex.cancellationMod.CancellationToken = js.native
-    /**
-      * A token which will never be canceled.
-      */
-    val none: typings.prex.cancellationMod.CancellationToken = js.native
-    /**
-      * Returns a CancellationToken that becomes canceled when **all** of the provided tokens are canceled.
-      * @param tokens An iterable of CancellationToken objects.
-      */
-    def all(tokens: Iterable[typings.prex.cancellationMod.CancellationToken | Cancelable]): typings.prex.cancellationMod.CancellationToken = js.native
-    def from(cancelable: Cancelable): typings.prex.cancellationMod.CancellationToken = js.native
-    def from(cancelable: AbortSignalLike): typings.prex.cancellationMod.CancellationToken = js.native
-    /**
-      * Adapts a CancellationToken-like primitive from a different library.
-      */
-    def from(cancelable: typings.prex.cancellationMod.CancellationToken): typings.prex.cancellationMod.CancellationToken = js.native
-    def from(cancelable: VSCodeCancellationTokenLike): typings.prex.cancellationMod.CancellationToken = js.native
-    /**
-      * Returns a CancellationToken that becomes canceled when **any** of the provided tokens are canceled.
-      * @param tokens An iterable of CancellationToken objects.
-      */
-    def race(tokens: Iterable[typings.prex.cancellationMod.CancellationToken | Cancelable]): typings.prex.cancellationMod.CancellationToken = js.native
-  }
-  
 }
-

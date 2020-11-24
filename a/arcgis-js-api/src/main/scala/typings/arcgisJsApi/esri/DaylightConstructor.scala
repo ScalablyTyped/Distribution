@@ -4,15 +4,14 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DaylightConstructor
   extends /**
-  * The daylight widget can be used to manipulate the time and date and to toggle shadows in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). When changing the time and date, the position of the sun and the stars gets updated accordingly, changing the lighting and the shadows in the scene. This widget modifies the `date` and `directShadowsEnabled` properties of [SceneView.environment.lighting](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment).
+  * The daylight widget can be used to manipulate the time and date and to toggle shadows in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html)
   */
 Instantiable0[Daylight]
      with Instantiable1[/* properties */ DaylightProperties, Daylight]
-

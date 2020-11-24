@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@antv/g-math" : "0.1.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@antv/g-math" : "0.1.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

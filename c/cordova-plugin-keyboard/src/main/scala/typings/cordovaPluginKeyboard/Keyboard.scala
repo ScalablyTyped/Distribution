@@ -2,10 +2,11 @@ package typings.cordovaPluginKeyboard
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Keyboard extends js.Object {
+  
   /**
     * Specifies whenether content of page would be autoamtically scrolled to the top of the page when keyboard is hiding.
     *
@@ -22,24 +23,7 @@ trait Keyboard extends js.Object {
     *
     */
   var automaticScrollToTopOnHiding: Boolean = js.native
-  // Properties
-  /**
-    * Determine if the keyboard is visible.
-    *
-    * Read this property to determine if the keyboard is visible.
-    *
-    * Supported Platforms:
-    *  - iOS
-    *
-    * Example:
-    * <code>
-    * if (Keyboard.isVisible) {
-    * // do something
-    * }
-    * </code>
-    *
-    */
-  var isVisible: Boolean = js.native
+  
   /**
     * Disable scrolling when the the WebView is shrunk.
     *
@@ -59,6 +43,7 @@ trait Keyboard extends js.Object {
     */
   def disableScrollingInShrinkView(disable: Boolean): Unit = js.native
   def disableScrollingInShrinkView(disable: Boolean, successCallback: js.Function1[/* currentValue */ js.Any, Unit]): Unit = js.native
+  
   /**
     * Hide the keyboard
     *
@@ -74,6 +59,7 @@ trait Keyboard extends js.Object {
     * </code>
     */
   def hide(): Unit = js.native
+  
   /**
     * Hide the keyboard toolbar.
     *
@@ -95,13 +81,37 @@ trait Keyboard extends js.Object {
     */
   def hideFormAccessoryBar(hide: Boolean): Unit = js.native
   def hideFormAccessoryBar(hide: Boolean, successCallback: js.Function1[/* currentValue */ js.Any, Unit]): Unit = js.native
+  
+  // Properties
+  /**
+    * Determine if the keyboard is visible.
+    *
+    * Read this property to determine if the keyboard is visible.
+    *
+    * Supported Platforms:
+    *  - iOS
+    *
+    * Example:
+    * <code>
+    * if (Keyboard.isVisible) {
+    * // do something
+    * }
+    * </code>
+    *
+    */
+  var isVisible: Boolean = js.native
+  
   def onhide(): Unit = js.native
+  
   def onhiding(): Unit = js.native
+  
   /**
     * Deprecated Events
     */
   def onshow(): Unit = js.native
+  
   def onshowing(): Unit = js.native
+  
   /**
     * Show the keyboard
     *
@@ -116,6 +126,7 @@ trait Keyboard extends js.Object {
     * </code>
     */
   def show(): Unit = js.native
+  
   // Methods
   /**
     * Shrink the WebView when the keyboard comes up.
@@ -141,4 +152,3 @@ trait Keyboard extends js.Object {
   def shrinkView(shrink: Boolean): Unit = js.native
   def shrinkView(shrink: Boolean, successCallback: js.Function1[/* currentValue */ js.Any, Unit]): Unit = js.native
 }
-

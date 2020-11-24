@@ -4,44 +4,51 @@ import typings.openui5.sap.ui.core.Element
 import typings.openui5.sap.ui.unified.CalendarAppointment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PlanningCalendarRow extends Element {
+  
   /**
     * Adds some appointment to the aggregation <code>appointments</code>.
     * @param oAppointment the appointment to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addAppointment(oAppointment: CalendarAppointment): PlanningCalendarRow = js.native
+  
   /**
     * Adds some intervalHeader to the aggregation <code>intervalHeaders</code>.
     * @param oIntervalHeader the intervalHeader to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addIntervalHeader(oIntervalHeader: CalendarAppointment): PlanningCalendarRow = js.native
+  
   /**
     * Destroys all the appointments in the aggregation <code>appointments</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyAppointments(): PlanningCalendarRow = js.native
+  
   /**
     * Destroys all the intervalHeaders in the aggregation <code>intervalHeaders</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyIntervalHeaders(): PlanningCalendarRow = js.native
+  
   /**
     * Gets content of aggregation <code>appointments</code>.Appointments to be displayed in the row.
     * Appointments outside the visible time frame are not rendered.<b>Note:</b> For performance reasons
     * only appointments in the visible time range or nearby should be assigned.
     */
   def getAppointments(): js.Array[CalendarAppointment] = js.native
+  
   /**
     * Gets current value of property <code>icon</code>.Icon of the header (e.g. picture of the person)URI
     * of an image or an icon registered in sap.ui.core.IconPool.
     * @returns Value of property <code>icon</code>
     */
   def getIcon(): js.Any = js.native
+  
   /**
     * Gets content of aggregation <code>intervalHeaders</code>.Appointments to be displayed in the top of
     * the intervals. The <code>intervalHeaders</code> are used to visualizepublic holidays and similar
@@ -51,11 +58,13 @@ trait PlanningCalendarRow extends Element {
     * should be assigned.
     */
   def getIntervalHeaders(): js.Array[CalendarAppointment] = js.native
+  
   /**
     * Gets current value of property <code>key</code>.Can be used as an identifier of the row
     * @returns Value of property <code>key</code>
     */
   def getKey(): String = js.native
+  
   /**
     * Gets current value of property <code>nonWorkingDays</code>.If set, the provided weekdays are
     * displayed as non-working days.Valid values inside the array are 0 to 6. (other values will just be
@@ -65,6 +74,7 @@ trait PlanningCalendarRow extends Element {
     * @returns Value of property <code>nonWorkingDays</code>
     */
   def getNonWorkingDays(): Double = js.native
+  
   /**
     * Gets current value of property <code>nonWorkingHours</code>.If set, the provided hours are displayed
     * as non-working hours.Valid values inside the array are 0 to 23. (other values will just be
@@ -73,6 +83,7 @@ trait PlanningCalendarRow extends Element {
     * @returns Value of property <code>nonWorkingHours</code>
     */
   def getNonWorkingHours(): Double = js.native
+  
   /**
     * Gets current value of property <code>selected</code>.Defines the selected state of the
     * <code>PlanningCalendarRow</code>.<b>Note:</b> Binding the <code>selected</code> property in single
@@ -81,16 +92,19 @@ trait PlanningCalendarRow extends Element {
     * @returns Value of property <code>selected</code>
     */
   def getSelected(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>text</code>.Text of the header (e.g. department of the person)
     * @returns Value of property <code>text</code>
     */
   def getText(): String = js.native
+  
   /**
     * Gets current value of property <code>title</code>.Title of the header (e.g. name of the person)
     * @returns Value of property <code>title</code>
     */
   def getTitle(): String = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.unified.CalendarAppointment</code> in the aggregation
     * <code>appointments</code>.and returns its index if found or -1 otherwise.
@@ -98,6 +112,7 @@ trait PlanningCalendarRow extends Element {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfAppointment(oAppointment: CalendarAppointment): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.unified.CalendarAppointment</code> in the aggregation
     * <code>intervalHeaders</code>.and returns its index if found or -1 otherwise.
@@ -105,6 +120,7 @@ trait PlanningCalendarRow extends Element {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfIntervalHeader(oIntervalHeader: CalendarAppointment): Double = js.native
+  
   /**
     * Inserts a appointment into the aggregation <code>appointments</code>.
     * @param oAppointment the appointment to insert; if empty, nothing is inserted
@@ -115,6 +131,7 @@ trait PlanningCalendarRow extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertAppointment(oAppointment: CalendarAppointment, iIndex: Double): PlanningCalendarRow = js.native
+  
   /**
     * Inserts a intervalHeader into the aggregation <code>intervalHeaders</code>.
     * @param oIntervalHeader the intervalHeader to insert; if empty, nothing is inserted
@@ -125,18 +142,21 @@ trait PlanningCalendarRow extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertIntervalHeader(oIntervalHeader: CalendarAppointment, iIndex: Double): PlanningCalendarRow = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>appointments</code>.Additionally, it unregisters
     * them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAppointments(): js.Array[CalendarAppointment] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>intervalHeaders</code>.Additionally, it
     * unregisters them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllIntervalHeaders(): js.Array[CalendarAppointment] = js.native
+  
   def removeAppointment(vAppointment: String): CalendarAppointment = js.native
   /**
     * Removes a appointment from the aggregation <code>appointments</code>.
@@ -145,6 +165,7 @@ trait PlanningCalendarRow extends Element {
     */
   def removeAppointment(vAppointment: Double): CalendarAppointment = js.native
   def removeAppointment(vAppointment: CalendarAppointment): CalendarAppointment = js.native
+  
   def removeIntervalHeader(vIntervalHeader: String): CalendarAppointment = js.native
   /**
     * Removes a intervalHeader from the aggregation <code>intervalHeaders</code>.
@@ -153,6 +174,7 @@ trait PlanningCalendarRow extends Element {
     */
   def removeIntervalHeader(vIntervalHeader: Double): CalendarAppointment = js.native
   def removeIntervalHeader(vIntervalHeader: CalendarAppointment): CalendarAppointment = js.native
+  
   /**
     * Sets a new value for property <code>icon</code>.Icon of the header (e.g. picture of the person)URI
     * of an image or an icon registered in sap.ui.core.IconPool.When called with a value of
@@ -161,6 +183,7 @@ trait PlanningCalendarRow extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setIcon(sIcon: js.Any): PlanningCalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>key</code>.Can be used as an identifier of the rowWhen called
     * with a value of <code>null</code> or <code>undefined</code>, the default value of the property will
@@ -169,6 +192,7 @@ trait PlanningCalendarRow extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setKey(sKey: String): PlanningCalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>nonWorkingDays</code>.If set, the provided weekdays are
     * displayed as non-working days.Valid values inside the array are 0 to 6. (other values will just be
@@ -180,6 +204,7 @@ trait PlanningCalendarRow extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNonWorkingDays(sNonWorkingDays: Double): PlanningCalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>nonWorkingHours</code>.If set, the provided hours are displayed
     * as non-working hours.Valid values inside the array are 0 to 23. (other values will just be
@@ -190,6 +215,7 @@ trait PlanningCalendarRow extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setNonWorkingHours(sNonWorkingHours: Double): PlanningCalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>selected</code>.Defines the selected state of the
     * <code>PlanningCalendarRow</code>.<b>Note:</b> Binding the <code>selected</code> property in single
@@ -200,6 +226,7 @@ trait PlanningCalendarRow extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSelected(bSelected: Boolean): PlanningCalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>text</code>.Text of the header (e.g. department of the
     * person)When called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -208,6 +235,7 @@ trait PlanningCalendarRow extends Element {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setText(sText: String): PlanningCalendarRow = js.native
+  
   /**
     * Sets a new value for property <code>title</code>.Title of the header (e.g. name of the person)When
     * called with a value of <code>null</code> or <code>undefined</code>, the default value of the
@@ -217,4 +245,3 @@ trait PlanningCalendarRow extends Element {
     */
   def setTitle(sTitle: String): PlanningCalendarRow = js.native
 }
-

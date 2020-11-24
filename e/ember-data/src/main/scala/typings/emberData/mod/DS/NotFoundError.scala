@@ -3,7 +3,7 @@ package typings.emberData.mod.DS
 import typings.emberObject.mod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `DS.NotFoundError` equates to a HTTP `404 Not Found` response status.
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "DS.NotFoundError")
 @js.native
 class NotFoundError () extends default
-

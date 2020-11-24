@@ -10,9 +10,9 @@ Takes human readable filesystem size strings and gives you an int representing t
 | ------------------ | :-------------: |
 | Full name          | filesize-parser |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 34 |
-| # downloads        | 180427 |
+| # releases         | 0 |
+| # dependents       | 37 |
+| # downloads        | 257622 |
 | # stars            | 1 |
 
 ## Links

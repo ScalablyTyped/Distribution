@@ -2,11 +2,12 @@ package typings.luminoAlgorithm.arrayMod.ArrayExt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/array", "ArrayExt.removeAllWhere")
 @js.native
 object removeAllWhere extends js.Object {
+  
   /**
     * Remove all occurrences of values which match a predicate.
     *
@@ -63,4 +64,3 @@ object removeAllWhere extends js.Object {
     stop: Double
   ): Double = js.native
 }
-

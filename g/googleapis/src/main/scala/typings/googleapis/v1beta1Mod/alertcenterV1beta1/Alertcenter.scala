@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * G Suite Alert Center API
@@ -27,8 +27,10 @@ import scala.scalajs.js.annotation._
 class Alertcenter protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var alerts: ResourceAlerts = js.native
+  
   var context: APIRequestContext = js.native
+  
   var v1beta1: ResourceV1beta1 = js.native
 }
-

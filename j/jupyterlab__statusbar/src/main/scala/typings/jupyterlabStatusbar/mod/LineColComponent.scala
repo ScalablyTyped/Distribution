@@ -2,7 +2,7 @@ package typings.jupyterlabStatusbar.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A namespace for LineColComponent.
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/statusbar", "LineColComponent")
 @js.native
 object LineColComponent extends js.Object
-

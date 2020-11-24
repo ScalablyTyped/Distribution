@@ -3,7 +3,7 @@ package typings.typesettable.mod
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typesettable", "HtmlContext")
 @js.native
@@ -20,4 +20,3 @@ class HtmlContext protected ()
   def this(element: HTMLElement, className: js.UndefOr[scala.Nothing], addTitle: Boolean) = this()
   def this(element: HTMLElement, className: String, addTitle: Boolean) = this()
 }
-

@@ -4,11 +4,12 @@ import typings.moment.mod.Moment
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cron", "job")
 @js.native
 object job extends js.Object {
+  
   def apply(
     cronTime: String | Date | Moment,
     onTick: js.Function0[Unit],
@@ -22,4 +23,3 @@ object job extends js.Object {
   ): CronJob = js.native
   def apply(options: CronJobParameters): CronJob = js.native
 }
-

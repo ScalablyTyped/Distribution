@@ -7,11 +7,12 @@ import typings.expressServeStaticCore.mod.Query
 import typings.expressSession.mod.SessionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("connect-mongodb-session", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(
     fn: js.Function1[
       /* options */ js.UndefOr[SessionOptions], 
@@ -19,4 +20,3 @@ object ^ extends js.Object {
     ]
   ): MongoDBStore = js.native
 }
-

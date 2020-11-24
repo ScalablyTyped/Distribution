@@ -4,15 +4,15 @@
 Typings are for version 2.0
 
 ## Library description:
-Another file store for tough-cookie module
+A JSON file store for tough-cookie module
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | tough-cookie-file-store |
-| Keywords           | cookie, cookies, cookiejar, file, store |
-| # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 71954 |
+| Keywords           | HTTP, cookie, cookies, set-cookie, cookiejar, jar, RFC6265, RFC2965, store, file, json |
+| # releases         | 4 |
+| # dependents       | 33 |
+| # downloads        | 96562 |
 | # stars            | 0 |
 
 ## Links

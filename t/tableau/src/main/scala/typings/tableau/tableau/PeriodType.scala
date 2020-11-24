@@ -2,14 +2,14 @@ package typings.tableau.tableau
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PeriodType extends js.Object
-
 @JSGlobal("tableau.PeriodType")
 @js.native
 object PeriodType extends js.Object {
+  
   @js.native
   sealed trait DAYS extends PeriodType
   
@@ -33,6 +33,4 @@ object PeriodType extends js.Object {
   
   @js.native
   sealed trait YEARS extends PeriodType
-  
 }
-

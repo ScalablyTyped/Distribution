@@ -3,7 +3,7 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.AMap.BezierCurve.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.BezierCurve")
 @js.native
@@ -15,4 +15,3 @@ class BezierCurve[ExtraData] protected ()
     */
   def this(options: Options[ExtraData]) = this()
 }
-

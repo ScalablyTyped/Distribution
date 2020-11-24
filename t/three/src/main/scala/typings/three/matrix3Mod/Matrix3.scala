@@ -5,7 +5,7 @@ import typings.three.matrix4Mod.Matrix4
 import typings.three.vector3Mod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/math/Matrix3", "Matrix3")
 @js.native
@@ -13,13 +13,18 @@ import scala.scalajs.js.annotation._
 	 * Creates an identity matrix.
 	 */
 class Matrix3 () extends Matrix {
+  
   def copy(m: Matrix3): this.type = js.native
+  
   def equals(matrix: Matrix3): Boolean = js.native
+  
   def extractBasis(xAxis: Vector3, yAxis: Vector3, zAxis: Vector3): Matrix3 = js.native
+  
   /**
   	 * @deprecated Use {@link Matrix3#toArray .toArray()} instead.
   	 */
   def flattenToArrayOffset(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+  
   /**
   	 * Sets the values of this matrix from the provided array.
   	 * @param array the source array.
@@ -34,29 +39,39 @@ class Matrix3 () extends Matrix {
   	 */
   def fromArray(array: ArrayLike[Double]): Matrix3 = js.native
   def fromArray(array: ArrayLike[Double], offset: Double): Matrix3 = js.native
+  
   def getInverse(matrix: Matrix3): Matrix3 = js.native
   def getInverse(matrix: Matrix4): Matrix3 = js.native
   def getInverse(matrix: Matrix4, throwOnDegenerate: Boolean): Matrix3 = js.native
+  
   def getNormalMatrix(matrix4: Matrix4): Matrix3 = js.native
+  
   /**
   	 * Multiplies this matrix by m.
   	 */
   def multiply(m: Matrix3): Matrix3 = js.native
+  
   /**
   	 * Sets this matrix to a x b.
   	 */
   def multiplyMatrices(a: Matrix3, b: Matrix3): Matrix3 = js.native
+  
   /**
   	 * @deprecated Use {@link Vector3.applyMatrix3 vector.applyMatrix3( matrix )} instead.
   	 */
   def multiplyVector3(vector: Vector3): js.Any = js.native
+  
   /**
   	 * @deprecated This method has been removed completely.
   	 */
   def multiplyVector3Array(a: js.Any): js.Any = js.native
+  
   def premultiply(m: Matrix3): Matrix3 = js.native
+  
   def rotate(theta: Double): Matrix3 = js.native
+  
   def scale(sx: Double, sy: Double): Matrix3 = js.native
+  
   def set(
     n11: Double,
     n12: Double,
@@ -68,8 +83,11 @@ class Matrix3 () extends Matrix {
     n32: Double,
     n33: Double
   ): Matrix3 = js.native
+  
   def setFromMatrix4(m: Matrix4): Matrix3 = js.native
+  
   def setUvTransform(tx: Double, ty: Double, sx: Double, sy: Double, rotation: Double, cx: Double, cy: Double): Matrix3 = js.native
+  
   /**
   	 * Copies he values of this matrix into the provided array-like.
   	 * @param array array-like to store the matrix to.
@@ -92,10 +110,11 @@ class Matrix3 () extends Matrix {
   def toArray_Array(): js.Array[Double] = js.native
   @JSName("toArray")
   def toArray_Array(array: js.UndefOr[scala.Nothing], offset: Double): js.Array[Double] = js.native
+  
   def translate(tx: Double, ty: Double): Matrix3 = js.native
+  
   /**
   	 * Transposes this matrix into the supplied array r, and returns itself.
   	 */
   def transposeIntoArray(r: js.Array[Double]): Matrix3 = js.native
 }
-

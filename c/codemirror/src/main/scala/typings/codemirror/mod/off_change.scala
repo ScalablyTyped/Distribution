@@ -3,11 +3,12 @@ package typings.codemirror.mod
 import typings.codemirror.codemirrorStrings.change
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("codemirror", "off")
 @js.native
 object off_change extends js.Object {
+  
   def apply(
     doc: Doc,
     eventName: change,
@@ -19,4 +20,3 @@ object off_change extends js.Object {
     handler: js.Function2[/* line */ LineHandle, /* changeObj */ EditorChange, Unit]
   ): Unit = js.native
 }
-

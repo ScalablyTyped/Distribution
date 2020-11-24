@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.autoscalingMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.AutoScaling")
 @js.native
@@ -14,4 +14,3 @@ class AutoScaling ()
   extends typings.awsSdk.mod.AutoScaling {
   def this(options: ClientConfiguration) = this()
 }
-

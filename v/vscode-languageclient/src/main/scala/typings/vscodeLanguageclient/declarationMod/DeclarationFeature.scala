@@ -7,11 +7,10 @@ import typings.vscodeLanguageserverProtocol.protocolDeclarationMod.DeclarationOp
 import typings.vscodeLanguageserverProtocol.protocolDeclarationMod.DeclarationRegistrationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient/lib/declaration", "DeclarationFeature")
 @js.native
 class DeclarationFeature protected () extends TextDocumentFeature[Boolean | DeclarationOptions, DeclarationRegistrationOptions, DeclarationProvider] {
   def this(client: BaseLanguageClient) = this()
 }
-

@@ -3,10 +3,11 @@ package typings.openui5.sap.ui.layout
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DynamicSideContent extends Control {
+  
   /**
     * Adds a control to the main content area.Only the main content part in the aggregation is
     * re-rendered.
@@ -14,6 +15,7 @@ trait DynamicSideContent extends Control {
     * @returns this pointer for chaining
     */
   def addMainContent(oControl: js.Any): js.Any = js.native
+  
   /**
     * Adds a control to the side content area.Only the side content part in the aggregation is
     * re-rendered.
@@ -21,6 +23,7 @@ trait DynamicSideContent extends Control {
     * @returns this pointer for chaining
     */
   def addSideContent(oControl: js.Any): js.Any = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>breakpointChanged</code> event of this
     * <code>sap.ui.layout.DynamicSideContent</code>.When called, the context of the event handler (its
@@ -37,16 +40,19 @@ trait DynamicSideContent extends Control {
     */
   def attachBreakpointChanged(oData: js.Any, fnFunction: js.Any): DynamicSideContent = js.native
   def attachBreakpointChanged(oData: js.Any, fnFunction: js.Any, oListener: js.Any): DynamicSideContent = js.native
+  
   /**
     * Destroys all the mainContent in the aggregation <code>mainContent</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyMainContent(): DynamicSideContent = js.native
+  
   /**
     * Destroys all the sideContent in the aggregation <code>sideContent</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroySideContent(): DynamicSideContent = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>breakpointChanged</code> event of this
     * <code>sap.ui.layout.DynamicSideContent</code>.The passed function and listener object must match the
@@ -57,6 +63,7 @@ trait DynamicSideContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachBreakpointChanged(fnFunction: js.Any, oListener: js.Any): DynamicSideContent = js.native
+  
   /**
     * Fires event <code>breakpointChanged</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>currentBreakpoint</code> of type <code>string</code></li></ul>
@@ -65,6 +72,7 @@ trait DynamicSideContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireBreakpointChanged(mArguments: js.Any): DynamicSideContent = js.native
+  
   /**
     * Gets current value of property <code>containerQuery</code>.If set to TRUE, then not the media Query
     * (device screen size) but the size of the container, surrounding the control, defines the current
@@ -72,11 +80,13 @@ trait DynamicSideContent extends Control {
     * @returns Value of property <code>containerQuery</code>
     */
   def getContainerQuery(): Boolean = js.native
+  
   /**
     * Returns the breakpoint for the current state of the control.
     * @returns currentBreakpoint
     */
   def getCurrentBreakpoint(): String = js.native
+  
   /**
     * Gets current value of property <code>equalSplit</code>.Defines whether the control is in equal split
     * mode. In this mode, the side and the main contenttake 50:50 percent of the container on all screen
@@ -85,30 +95,36 @@ trait DynamicSideContent extends Control {
     * @returns Value of property <code>equalSplit</code>
     */
   def getEqualSplit(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>mainContent</code>.Main content controls.
     */
   def getMainContent(): js.Array[Control] = js.native
+  
   /**
     * Gets the value of showMainContent property.
     * @returns Side content visibility state
     */
   def getShowMainContent(): Boolean = js.native
+  
   /**
     * Gets the value of showSideContent property.
     * @returns Side content visibility state
     */
   def getShowSideContent(): Boolean = js.native
+  
   /**
     * Gets content of aggregation <code>sideContent</code>.Side content controls.
     */
   def getSideContent(): js.Array[Control] = js.native
+  
   /**
     * Gets current value of property <code>sideContentFallDown</code>.Determines on which breakpoints the
     * side content falls down below the main content.Default value is <code>OnMinimumWidth</code>.
     * @returns Value of property <code>sideContentFallDown</code>
     */
   def getSideContentFallDown(): SideContentFallDown = js.native
+  
   /**
     * Gets current value of property <code>sideContentPosition</code>.Determines whether the side content
     * is on the left or on the right side of the main content.Default value is <code>End</code>.
@@ -116,12 +132,14 @@ trait DynamicSideContent extends Control {
     * @returns Value of property <code>sideContentPosition</code>
     */
   def getSideContentPosition(): SideContentPosition = js.native
+  
   /**
     * Gets current value of property <code>sideContentVisibility</code>.Determines on which breakpoints
     * the side content is visible.Default value is <code>ShowAboveS</code>.
     * @returns Value of property <code>sideContentVisibility</code>
     */
   def getSideContentVisibility(): SideContentVisibility = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation
     * <code>mainContent</code>.and returns its index if found or -1 otherwise.
@@ -129,6 +147,7 @@ trait DynamicSideContent extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfMainContent(oMainContent: Control): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation
     * <code>sideContent</code>.and returns its index if found or -1 otherwise.
@@ -136,6 +155,7 @@ trait DynamicSideContent extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfSideContent(oSideContent: Control): Double = js.native
+  
   /**
     * Inserts a mainContent into the aggregation <code>mainContent</code>.
     * @param oMainContent the mainContent to insert; if empty, nothing is inserted
@@ -146,6 +166,7 @@ trait DynamicSideContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertMainContent(oMainContent: Control, iIndex: Double): DynamicSideContent = js.native
+  
   /**
     * Inserts a sideContent into the aggregation <code>sideContent</code>.
     * @param oSideContent the sideContent to insert; if empty, nothing is inserted
@@ -156,18 +177,21 @@ trait DynamicSideContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertSideContent(oSideContent: Control, iIndex: Double): DynamicSideContent = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>mainContent</code>.Additionally, it unregisters
     * them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllMainContent(): js.Array[Control] = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>sideContent</code>.Additionally, it unregisters
     * them from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllSideContent(): js.Array[Control] = js.native
+  
   def removeMainContent(vMainContent: String): Control = js.native
   /**
     * Removes a mainContent from the aggregation <code>mainContent</code>.
@@ -176,6 +200,7 @@ trait DynamicSideContent extends Control {
     */
   def removeMainContent(vMainContent: Double): Control = js.native
   def removeMainContent(vMainContent: Control): Control = js.native
+  
   def removeSideContent(vSideContent: String): Control = js.native
   /**
     * Removes a sideContent from the aggregation <code>sideContent</code>.
@@ -184,6 +209,7 @@ trait DynamicSideContent extends Control {
     */
   def removeSideContent(vSideContent: Double): Control = js.native
   def removeSideContent(vSideContent: Control): Control = js.native
+  
   /**
     * Sets a new value for property <code>containerQuery</code>.If set to TRUE, then not the media Query
     * (device screen size) but the size of the container, surrounding the control, defines the current
@@ -193,12 +219,14 @@ trait DynamicSideContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setContainerQuery(bContainerQuery: Boolean): DynamicSideContent = js.native
+  
   /**
     * Sets or unsets the page in equalSplit mode.
     * @param bState Determines if the page is set to equalSplit mode
     * @returns this pointer for chaining
     */
   def setEqualSplit(bState: Boolean): js.Any = js.native
+  
   /**
     * Sets the showMainContent property.
     * @param bVisible Determines if the main content part is visible
@@ -206,6 +234,7 @@ trait DynamicSideContent extends Control {
     * @returns this pointer for chaining
     */
   def setShowMainContent(bVisible: Boolean, bSuppressVisualUpdate: Boolean): js.Any = js.native
+  
   /**
     * Sets the showSideContent property.
     * @param bVisible Determines if the side content part is visible
@@ -213,6 +242,7 @@ trait DynamicSideContent extends Control {
     * @returns this pointer for chaining
     */
   def setShowSideContent(bVisible: Boolean, bSuppressVisualUpdate: Boolean): js.Any = js.native
+  
   /**
     * Sets a new value for property <code>sideContentFallDown</code>.Determines on which breakpoints the
     * side content falls down below the main content.When called with a value of <code>null</code> or
@@ -222,6 +252,7 @@ trait DynamicSideContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSideContentFallDown(sSideContentFallDown: SideContentFallDown): DynamicSideContent = js.native
+  
   /**
     * Sets a new value for property <code>sideContentPosition</code>.Determines whether the side content
     * is on the left or on the right side of the main content.When called with a value of
@@ -232,6 +263,7 @@ trait DynamicSideContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSideContentPosition(sSideContentPosition: SideContentPosition): DynamicSideContent = js.native
+  
   /**
     * Sets a new value for property <code>sideContentVisibility</code>.Determines on which breakpoints the
     * side content is visible.When called with a value of <code>null</code> or <code>undefined</code>, the
@@ -240,6 +272,7 @@ trait DynamicSideContent extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setSideContentVisibility(sSideContentVisibility: SideContentVisibility): DynamicSideContent = js.native
+  
   /**
     * Used for the toggle button functionality.When the control is on a phone screen size only, one
     * control area is visible.This helper method is used to implement a button/switch for changingbetween
@@ -248,4 +281,3 @@ trait DynamicSideContent extends Control {
     */
   def toggle(): js.Any = js.native
 }
-

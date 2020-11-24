@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * structure representing a dictionary-list event.
@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DictionaryListEvent extends EventObject {
+  
   /**
     * list of accumulated dictionary events.
     *
@@ -28,6 +29,7 @@ trait DictionaryListEvent extends EventObject {
     * @see com.sun.star.linguistic2.DictionaryEvent
     */
   var aDictionaryEvents: SafeArray[DictionaryEvent] = js.native
+  
   /**
     * the combined type of the accumulated events.
     *
@@ -36,29 +38,33 @@ trait DictionaryListEvent extends EventObject {
     */
   var nCondensedEvent: Double = js.native
 }
-
 object DictionaryListEvent {
+  
   @scala.inline
   def apply(Source: XInterface, aDictionaryEvents: SafeArray[DictionaryEvent], nCondensedEvent: Double): DictionaryListEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], aDictionaryEvents = aDictionaryEvents.asInstanceOf[js.Any], nCondensedEvent = nCondensedEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictionaryListEvent]
   }
+  
   @scala.inline
   implicit class DictionaryListEventOps[Self <: DictionaryListEvent] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setADictionaryEvents(value: SafeArray[DictionaryEvent]): Self = this.set("aDictionaryEvents", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNCondensedEvent(value: Double): Self = this.set("nCondensedEvent", value.asInstanceOf[js.Any])
   }
-  
 }
-

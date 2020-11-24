@@ -10,10 +10,10 @@ JavaScript implementations of network transports, cryptography, ciphers, PKI, me
 | ------------------ | :-------------: |
 | Full name          | node-forge |
 | Keywords           | aes, asn, asn.1, cbc, crypto, cryptography, csr, des, gcm, hmac, http, https, md5, network, pkcs, pki, prng, rc2, rsa, sha1, sha256, sha384, sha512, ssh, tls, x.509, x509 |
-| # releases         | 14 |
-| # dependents       | 652 |
-| # downloads        | 332458465 |
-| # stars            | 35 |
+| # releases         | 8 |
+| # dependents       | 802 |
+| # downloads        | 479365522 |
+| # stars            | 36 |
 
 ## Links
 - [Homepage](https://github.com/digitalbazaar/forge)

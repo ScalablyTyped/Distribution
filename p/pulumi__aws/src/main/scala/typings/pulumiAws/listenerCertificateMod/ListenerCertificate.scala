@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/alb/listenerCertificate", "ListenerCertificate")
 @js.native
@@ -21,20 +21,22 @@ class ListenerCertificate protected () extends CustomResource {
     */
   def this(name: String, args: ListenerCertificateArgs) = this()
   def this(name: String, args: ListenerCertificateArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The ARN of the certificate to attach to the listener.
     */
   val certificateArn: Output_[String] = js.native
+  
   /**
     * The ARN of the listener to which to attach the certificate.
     */
   val listenerArn: Output_[String] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/alb/listenerCertificate", "ListenerCertificate")
 @js.native
 object ListenerCertificate extends js.Object {
+  
   /**
     * Get an existing ListenerCertificate resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -48,10 +50,10 @@ object ListenerCertificate extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ListenerCertificate = js.native
   def get(name: String, id: Input[ID], state: ListenerCertificateState): ListenerCertificate = js.native
   def get(name: String, id: Input[ID], state: ListenerCertificateState, opts: CustomResourceOptions): ListenerCertificate = js.native
+  
   /**
     * Returns true if the given object is an instance of ListenerCertificate.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/alb/listenerCertificate.ListenerCertificate */ Boolean = js.native
 }
-

@@ -10,14 +10,18 @@ import typings.phaser.spine.SpacingMode
 import typings.phaser.spine.TransformMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofSkeletonJson extends Instantiable1[/* attachmentLoader */ AttachmentLoader, SkeletonJson] {
+  
   def blendModeFromString(str: String): BlendMode = js.native
+  
   def positionModeFromString(str: String): PositionMode = js.native
+  
   def rotateModeFromString(str: String): RotateMode = js.native
+  
   def spacingModeFromString(str: String): SpacingMode = js.native
+  
   def transformModeFromString(str: String): TransformMode = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.lunr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * lunr.Pipelines maintain an ordered list of functions to be applied to all
@@ -34,6 +34,7 @@ import scala.scalajs.js.annotation._
 @JSImport("lunr", "Pipeline")
 @js.native
 class Pipeline () extends js.Object {
+  
   /**
     * Adds new functions to the end of the pipeline.
     *
@@ -42,6 +43,7 @@ class Pipeline () extends js.Object {
     * @param functions - Any number of functions to add to the pipeline.
     */
   def add(functions: PipelineFunction*): Unit = js.native
+  
   /**
     * Adds a single function after a function that already exists in the
     * pipeline.
@@ -52,6 +54,7 @@ class Pipeline () extends js.Object {
     * @param newFn - The new function to add to the pipeline.
     */
   def after(existingFn: PipelineFunction, newFn: PipelineFunction): Unit = js.native
+  
   /**
     * Adds a single function before a function that already exists in the
     * pipeline.
@@ -62,17 +65,20 @@ class Pipeline () extends js.Object {
     * @param newFn - The new function to add to the pipeline.
     */
   def before(existingFn: PipelineFunction, newFn: PipelineFunction): Unit = js.native
+  
   /**
     * Removes a function from the pipeline.
     *
     * @param fn The function to remove from the pipeline.
     */
   def remove(fn: PipelineFunction): Unit = js.native
+  
   /**
     * Resets the pipeline by removing any existing processors.
     *
     */
   def reset(): Unit = js.native
+  
   /**
     * Runs the current list of functions that make up the pipeline against the
     * passed tokens.
@@ -80,6 +86,7 @@ class Pipeline () extends js.Object {
     * @param tokens The tokens to run through the pipeline.
     */
   def run(tokens: js.Array[Token]): js.Array[Token] = js.native
+  
   /**
     * Convenience method for passing a string through a pipeline and getting
     * strings out. This method takes care of wrapping the passed string in a
@@ -88,6 +95,7 @@ class Pipeline () extends js.Object {
     * @param str - The string to pass through the pipeline.
     */
   def runString(str: String): js.Array[String] = js.native
+  
   /**
     * Returns a representation of the pipeline ready for serialisation.
     *
@@ -96,11 +104,11 @@ class Pipeline () extends js.Object {
     */
   def toJSON(): js.Array[PipelineFunction] = js.native
 }
-
 /* static members */
 @JSImport("lunr", "Pipeline")
 @js.native
 object Pipeline extends js.Object {
+  
   /**
     * Loads a previously serialised pipeline.
     *
@@ -111,6 +119,7 @@ object Pipeline extends js.Object {
     * @param serialised - The serialised pipeline to load.
     */
   def load(serialised: js.Object): Pipeline = js.native
+  
   /**
     * Register a function with the pipeline.
     *
@@ -125,4 +134,3 @@ object Pipeline extends js.Object {
     */
   def registerFunction(fn: PipelineFunction, label: String): Unit = js.native
 }
-

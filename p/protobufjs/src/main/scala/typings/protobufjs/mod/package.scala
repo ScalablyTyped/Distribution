@@ -2,10 +2,12 @@ package typings.protobufjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
   type Buffer = typings.std.Uint8Array
+  
   /**
     * Appends code to the function's body or finishes generation.
     * @param [formatStringOrScope] Format string or, to finish the function, an object of additional scope variables, if any
@@ -18,11 +20,13 @@ package object mod {
     /* repeated */ js.Any, 
     (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias protobufjs.protobufjs.Codegen */ js.Object) | js.Function
   ]
+  
   /**
     * Event listener as used by {@link util.EventEmitter}.
     * @param args Arguments
     */
   type EventEmitterListener = js.Function1[/* repeated */ js.Any, scala.Unit]
+  
   /**
     * Node-style callback as used by {@link util.fetch}.
     * @param error Error, if any, otherwise `null`
@@ -33,12 +37,14 @@ package object mod {
     /* contents */ js.UndefOr[java.lang.String], 
     scala.Unit
   ]
+  
   /**
     * Decorator function as returned by {@link Field.d} and {@link MapField.d} (TypeScript).
     * @param prototype Target prototype
     * @param fieldName Field name
     */
   type FieldDecorator = js.Function2[/* prototype */ js.Object, /* fieldName */ java.lang.String, scala.Unit]
+  
   /**
     * A node-style callback as used by {@link load} and {@link Root#load}.
     * @param error Error, if any, otherwise `null`
@@ -49,28 +55,33 @@ package object mod {
     /* root */ js.UndefOr[typings.protobufjs.mod.Root], 
     scala.Unit
   ]
+  
   /**
     * Decorator function as returned by {@link OneOf.d} (TypeScript).
     * @param prototype Target prototype
     * @param oneofName OneOf name
     */
   type OneOfDecorator = js.Function2[/* prototype */ js.Object, /* oneofName */ java.lang.String, scala.Unit]
+  
   /**
     * A OneOf getter as returned by {@link util.oneOfGetter}.
     * @returns Set field name, if any
     */
   type OneOfGetter = js.Function0[js.UndefOr[java.lang.String]]
+  
   /**
     * A OneOf setter as returned by {@link util.oneOfSetter}.
     * @param value Field name
     */
   type OneOfSetter = js.Function1[/* value */ js.UndefOr[java.lang.String], scala.Unit]
+  
   /**
     * An allocator as used by {@link util.pool}.
     * @param size Buffer size
     * @returns Buffer
     */
   type PoolAllocator = js.Function1[/* size */ scala.Double, typings.std.Uint8Array]
+  
   /**
     * A slicer as used by {@link util.pool}.
     * @param start Start offset
@@ -83,10 +94,12 @@ package object mod {
     /* end */ scala.Double, 
     typings.std.Uint8Array
   ]
+  
   /** Properties type. */
   type Properties[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P]}
     */ typings.protobufjs.protobufjsStrings.Properties with org.scalablytyped.runtime.TopLevel[T]
+  
   /**
     * RPC implementation passed to {@link Service#create} performing a service request on network level, i.e. by utilizing http requests or websockets.
     * @param method Reflected or static method being called
@@ -102,6 +115,7 @@ package object mod {
     /* callback */ typings.protobufjs.mod.RPCImplCallback, 
     scala.Unit
   ]
+  
   /**
     * Node-style callback as used by {@link RPCImpl}.
     * @param error Error, if any, otherwise `null`
@@ -112,27 +126,32 @@ package object mod {
     /* response */ js.UndefOr[typings.std.Uint8Array | scala.Null], 
     scala.Unit
   ]
+  
   /**
     * Gets the comment on the previous line or, alternatively, the line comment on the specified line.
     * @param [line] Line number
     * @returns Comment text or `null` if none
     */
   type TokenizerHandleCmnt = js.Function1[/* line */ js.UndefOr[scala.Double], java.lang.String | scala.Null]
+  
   /**
     * Gets the next token and advances.
     * @returns Next token or `null` on eof
     */
   type TokenizerHandleNext = js.Function0[java.lang.String | scala.Null]
+  
   /**
     * Peeks for the next token.
     * @returns Next token or `null` on eof
     */
   type TokenizerHandlePeek = js.Function0[java.lang.String | scala.Null]
+  
   /**
     * Pushes a token back to the stack.
     * @param token Token
     */
   type TokenizerHandlePush = js.Function1[/* token */ java.lang.String, scala.Unit]
+  
   /**
     * Skips the next token.
     * @param expected Expected token
@@ -145,11 +164,13 @@ package object mod {
     /* optional */ js.UndefOr[scala.Boolean], 
     scala.Boolean
   ]
+  
   /**
     * Decorator function as returned by {@link Type.d} (TypeScript).
     * @param target Target constructor
     */
   type TypeDecorator[T /* <: typings.protobufjs.mod.Message[T] */] = js.Function1[/* target */ typings.protobufjs.mod.Constructor[T], scala.Unit]
+  
   /**
     * From object converter part of an {@link IWrapper}.
     * @param object Plain object
@@ -160,6 +181,7 @@ package object mod {
     /* object */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     typings.protobufjs.mod.Message[js.Object]
   ]
+  
   /**
     * To object converter part of an {@link IWrapper}.
     * @param message Message instance
@@ -172,6 +194,7 @@ package object mod {
     /* options */ js.UndefOr[typings.protobufjs.mod.IConversionOptions], 
     org.scalablytyped.runtime.StringDictionary[js.Any]
   ]
+  
   /**
     * Callback as used by {@link util.asPromise}.
     * @param error Error, if any

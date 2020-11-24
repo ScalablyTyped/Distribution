@@ -5,13 +5,13 @@ import typings.androiduix.androidui.attr.AttrBinder
 import typings.androiduix.androidui.attr.AttrBinder.ClassBinderMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LayoutParams
   extends typings.androiduix.android.widget.LinearLayout.LayoutParams
-
 object LayoutParams {
+  
   @scala.inline
   def apply(
     _attrBinder: js.Any,
@@ -39,4 +39,3 @@ object LayoutParams {
     __obj.asInstanceOf[LayoutParams]
   }
 }
-

@@ -2,12 +2,12 @@ package typings.winrt.Windows.Devices.Sensors
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Accelerometer extends IAccelerometer
-
 object Accelerometer {
+  
   @scala.inline
   def apply(
     getCurrentReading: () => AccelerometerReading,
@@ -20,4 +20,3 @@ object Accelerometer {
     __obj.asInstanceOf[Accelerometer]
   }
 }
-

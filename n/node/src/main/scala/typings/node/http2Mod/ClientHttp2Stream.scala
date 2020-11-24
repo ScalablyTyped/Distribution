@@ -6,10 +6,11 @@ import typings.node.nodeStrings.push
 import typings.node.nodeStrings.response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClientHttp2Stream extends Http2Stream {
+  
   @JSName("addListener")
   def addListener_continue(event: continue, listener: js.Function0[js.Object]): this.type = js.native
   @JSName("addListener")
@@ -32,6 +33,7 @@ trait ClientHttp2Stream extends Http2Stream {
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("emit")
   def emit_continue(event: continue): Boolean = js.native
   @JSName("emit")
@@ -40,6 +42,7 @@ trait ClientHttp2Stream extends Http2Stream {
   def emit_push(event: push, headers: IncomingHttpHeaders, flags: Double): Boolean = js.native
   @JSName("emit")
   def emit_response(event: response, headers: IncomingHttpHeaders with IncomingHttpStatusHeader, flags: Double): Boolean = js.native
+  
   @JSName("on")
   def on_continue(event: continue, listener: js.Function0[js.Object]): this.type = js.native
   @JSName("on")
@@ -62,6 +65,7 @@ trait ClientHttp2Stream extends Http2Stream {
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("once")
   def once_continue(event: continue, listener: js.Function0[js.Object]): this.type = js.native
   @JSName("once")
@@ -84,6 +88,7 @@ trait ClientHttp2Stream extends Http2Stream {
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("prependListener")
   def prependListener_continue(event: continue, listener: js.Function0[js.Object]): this.type = js.native
   @JSName("prependListener")
@@ -106,6 +111,7 @@ trait ClientHttp2Stream extends Http2Stream {
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_continue(event: continue, listener: js.Function0[js.Object]): this.type = js.native
   @JSName("prependOnceListener")
@@ -129,4 +135,3 @@ trait ClientHttp2Stream extends Http2Stream {
     ]
   ): this.type = js.native
 }
-

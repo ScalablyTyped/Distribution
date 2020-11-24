@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicebroker/v1alpha1", "servicebroker_v1alpha1.Resource$Projects$Brokers$V2$Service_instances$Service_bindings")
 @js.native
 class ResourceProjectsBrokersV2ServiceInstancesServiceBindings protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * servicebroker.projects.brokers.v2.service_instances.service_bindings.create
     * @desc CreateBinding generates a service binding to an existing service
@@ -53,6 +55,7 @@ class ResourceProjectsBrokersV2ServiceInstancesServiceBindings protected () exte
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1CreateBindingResponse]
   ): Unit = js.native
+  
   /**
     * servicebroker.projects.brokers.v2.service_instances.service_bindings.delete
     * @desc Unbinds from a service instance. For synchronous/asynchronous
@@ -95,6 +98,7 @@ class ResourceProjectsBrokersV2ServiceInstancesServiceBindings protected () exte
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1DeleteBindingResponse]
   ): Unit = js.native
+  
   /**
     * servicebroker.projects.brokers.v2.service_instances.service_bindings.get
     * @desc GetBinding returns the binding information.
@@ -131,6 +135,7 @@ class ResourceProjectsBrokersV2ServiceInstancesServiceBindings protected () exte
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1GetBindingResponse]
   ): Unit = js.native
+  
   /**
     * servicebroker.projects.brokers.v2.service_instances.service_bindings.getLast_operation
     * @desc Returns the state of the last operation for the binding. Only last
@@ -173,4 +178,3 @@ class ResourceProjectsBrokersV2ServiceInstancesServiceBindings protected () exte
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1Operation]
   ): Unit = js.native
 }
-

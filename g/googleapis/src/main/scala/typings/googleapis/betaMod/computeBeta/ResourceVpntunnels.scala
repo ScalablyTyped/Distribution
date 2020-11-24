@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Vpntunnels")
 @js.native
 class ResourceVpntunnels protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * compute.vpnTunnels.aggregatedList
     * @desc Retrieves an aggregated list of VPN tunnels.
@@ -115,6 +115,9 @@ class ResourceVpntunnels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVpnTunnelAggregatedList]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * compute.vpnTunnels.delete
     * @desc Deletes the specified VpnTunnel resource.
@@ -205,6 +208,7 @@ class ResourceVpntunnels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.vpnTunnels.get
     * @desc Returns the specified VpnTunnel resource. Gets a list of available
@@ -295,6 +299,7 @@ class ResourceVpntunnels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVpnTunnel]
   ): Unit = js.native
+  
   /**
     * compute.vpnTunnels.insert
     * @desc Creates a VpnTunnel resource in the specified project and region
@@ -387,6 +392,7 @@ class ResourceVpntunnels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.vpnTunnels.list
     * @desc Retrieves a list of VpnTunnel resources contained in the specified
@@ -490,6 +496,7 @@ class ResourceVpntunnels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVpnTunnelList]
   ): Unit = js.native
+  
   /**
     * compute.vpnTunnels.setLabels
     * @desc Sets the labels on a VpnTunnel. To learn more about labels, read
@@ -523,6 +530,7 @@ class ResourceVpntunnels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.vpnTunnels.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -619,4 +627,3 @@ class ResourceVpntunnels protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

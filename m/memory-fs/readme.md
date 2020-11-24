@@ -11,8 +11,8 @@ A simple in-memory filesystem. Holds data in a javascript object.
 | Full name          | memory-fs |
 | Keywords           | fs, memory |
 | # releases         | 2 |
-| # dependents       | 565 |
-| # downloads        | 341126972 |
+| # dependents       | 642 |
+| # downloads        | 619382344 |
 | # stars            | 19 |
 
 ## Links

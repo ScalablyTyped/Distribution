@@ -12,7 +12,7 @@ Micro service to read, write and save JWT headers
 | Keywords           | jwt |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 56084 |
+| # downloads        | 43370 |
 | # stars            | 0 |
 
 ## Links

@@ -22,35 +22,12 @@ import typings.std.Element
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map Maps JavaScript API} */
 @js.native
 trait Map[E /* <: Element */] extends MVCObject {
-  /**
-    * Additional controls to attach to the map.
-    * To add a control to the map, add the control's `<div>` to the {@link MVCArray} corresponding to the {@link ControlPosition} where it should be rendered.
-    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.controls Maps JavaScript API}
-    */
-  var controls: js.Array[MVCArray[Node]] = js.native
-  /**
-    * An instance of {@link Data}, bound to the map.
-    * Add features to this Data object to conveniently display them on this map.
-    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.data Maps JavaScript API}
-    */
-  var data: Data = js.native
-  /**
-    * A registry of {@link MapType} instances by string ID.
-    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.mapTypes Maps JavaScript API}
-    */
-  var mapTypes: MapTypeRegistry = js.native
-  /**
-    * Additional map types to overlay.
-    * Overlay map types will display on top of the base map they are attached to, in the order in which they appear in the
-    * `overlayMapTypes` array (overlays with higher index values are displayed in front of overlays with lower index values).
-    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.overlayMapTypes Maps JavaScript API}
-    */
-  var overlayMapTypes: MVCArray[MapType] = js.native
+  
   /**
     * @see {@link MapHandlerMap#bounds_changed bounds_changed} event
     * @see {@link MapHandlerMap#center_changed center_changed} event
@@ -71,42 +48,25 @@ trait Map[E /* <: Element */] extends MVCObject {
     * @see {@link MapHandlerMap#tilt_changed tilt_changed} event
     * @see {@link MapHandlerMap#zoom_changed zoom_changed} event
     */
-  @JSName("addListener")
-  def addListener_boundschanged(eventName: bounds_changed, handler: MVCEventHandler[this.type, js.Array[js.Any]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_centerchanged(eventName: center_changed, handler: MVCEventHandler[this.type, js.Array[js.Any]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_click(eventName: click, handler: MVCEventHandler[this.type, js.Array[MouseEvent | IconMouseEvent]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_dblclick(eventName: dblclick, handler: MVCEventHandler[this.type, js.Array[MouseEvent]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_drag(eventName: drag, handler: MVCEventHandler[this.type, js.Array[js.Any]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_dragend(eventName: dragend, handler: MVCEventHandler[this.type, js.Array[js.Any]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_dragstart(eventName: dragstart, handler: MVCEventHandler[this.type, js.Array[js.Any]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_headingchanged(eventName: heading_changed, handler: MVCEventHandler[this.type, js.Array[js.Any]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_idle(eventName: idle, handler: MVCEventHandler[this.type, js.Array[js.Any]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_maptypeidchanged(eventName: maptypeid_changed, handler: MVCEventHandler[this.type, js.Array[js.Any]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_mousemove(eventName: mousemove, handler: MVCEventHandler[this.type, js.Array[MouseEvent]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_mouseout(eventName: mouseout, handler: MVCEventHandler[this.type, js.Array[MouseEvent]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_mouseover(eventName: mouseover, handler: MVCEventHandler[this.type, js.Array[MouseEvent]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_projectionchanged(eventName: projection_changed, handler: MVCEventHandler[this.type, js.Array[js.Any]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_rightclick(eventName: rightclick, handler: MVCEventHandler[this.type, js.Array[MouseEvent]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_tilesloaded(eventName: tilesloaded, handler: MVCEventHandler[this.type, js.Array[js.Any]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_tiltchanged(eventName: tilt_changed, handler: MVCEventHandler[this.type, js.Array[js.Any]]): MapsEventListener = js.native
-  @JSName("addListener")
-  def addListener_zoomchanged(eventName: zoom_changed, handler: MVCEventHandler[this.type, js.Array[js.Any]]): MapsEventListener = js.native
+  def addListener[N /* <: /* keyof googlemaps.google.maps.MapHandlerMap<this> */ bounds_changed | center_changed | click | dblclick | drag | dragend | dragstart | heading_changed | idle | maptypeid_changed | mousemove | mouseout | mouseover | projection_changed | rightclick | tilesloaded | tilt_changed | zoom_changed */](
+    eventName: N,
+    handler: /* import warning: importer.ImportType#apply Failed type conversion: googlemaps.google.maps.MapHandlerMap<this>[N] */ js.Any
+  ): MapsEventListener = js.native
+  
+  /**
+    * Additional controls to attach to the map.
+    * To add a control to the map, add the control's `<div>` to the {@link MVCArray} corresponding to the {@link ControlPosition} where it should be rendered.
+    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.controls Maps JavaScript API}
+    */
+  var controls: js.Array[MVCArray[Node]] = js.native
+  
+  /**
+    * An instance of {@link Data}, bound to the map.
+    * Add features to this Data object to conveniently display them on this map.
+    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.data Maps JavaScript API}
+    */
+  var data: Data = js.native
+  
   /**
     * Sets the viewport to contain the given bounds.
     * Note: When the map is set to `display: none`, the `fitBounds` function reads the map's size as 0x0, and therefore does not do anything.
@@ -125,6 +85,7 @@ trait Map[E /* <: Element */] extends MVCObject {
   def fitBounds(bounds: LatLngBoundsLiteral, padding: Padding): Unit = js.native
   def fitBounds(bounds: LatLngBounds, padding: Double): Unit = js.native
   def fitBounds(bounds: LatLngBounds, padding: Padding): Unit = js.native
+  
   /**
     * Returns the lat/lng bounds of the current viewport.
     * If more than one copy of the world is visible, the bounds range in longitude from -180 to 180 degrees inclusive.
@@ -136,6 +97,7 @@ trait Map[E /* <: Element */] extends MVCObject {
     * @see {@link panToBounds}
     */
   def getBounds(): js.UndefOr[LatLngBounds | Null] = js.native
+  
   /**
     * Returns the position displayed at the center of the map.
     * Note that this {@link LatLng} object is not wrapped.
@@ -146,6 +108,7 @@ trait Map[E /* <: Element */] extends MVCObject {
     * @see {@link setCenter}
     */
   def getCenter(): LatLng = js.native
+  
   /**
     * Returns the clickability of the map icons.
     * A map icon represents a point of interest, also known as a POI.
@@ -155,8 +118,10 @@ trait Map[E /* <: Element */] extends MVCObject {
     * @see {@link setClickableIcons}
     */
   def getClickableIcons(): Boolean = js.native
+  
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.getDiv Maps JavaScript API} */
   def getDiv(): E = js.native
+  
   /**
     * Returns the compass heading of aerial imagery.
     * The heading value is measured in degrees (clockwise) from cardinal direction North.
@@ -166,6 +131,7 @@ trait Map[E /* <: Element */] extends MVCObject {
     * @see {@link setHeading}
     */
   def getHeading(): Double = js.native
+  
   /**
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.getMapTypeId Maps JavaScript API}
     * @see {@link MapOptions#mapTypeId}
@@ -175,12 +141,14 @@ trait Map[E /* <: Element */] extends MVCObject {
     * @see {@link overlayMapTypes}
     */
   def getMapTypeId(): MapTypeId = js.native
+  
   /**
     * If the map is not yet initialized (i.e. the mapType is still `null`) then the result is `null`.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.getProjection Maps JavaScript API}
     * @see {@link MapHandlerMap#projection_changed projection_changed} event
     */
   def getProjection(): Projection | Null = js.native
+  
   /**
     * Returns the default {@link StreetViewPanorama} bound to the map, which may be a default panorama embedded within the map, or the panorama set using {@link setStreetView}().
     * Changes to the map's {@link MapOptions#streetViewControl streetViewControl} will be reflected in the display of such a bound panorama.
@@ -189,6 +157,7 @@ trait Map[E /* <: Element */] extends MVCObject {
     * @see {@link setStreetView}
     */
   def getStreetView(): StreetViewPanorama = js.native
+  
   /**
     * Returns the current angle of incidence of the map, in degrees from the viewport plane to the map plane.
     * The result will be 0 for imagery taken directly overhead or 45 for 45° imagery.
@@ -200,6 +169,7 @@ trait Map[E /* <: Element */] extends MVCObject {
     * @see {@link setTilt}
     */
   def getTilt(): Double = js.native
+  
   /**
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.getZoom Maps JavaScript API}
     * @see {@link MapOptions#zoom}
@@ -208,6 +178,21 @@ trait Map[E /* <: Element */] extends MVCObject {
     * @see {@link setZoom}
     */
   def getZoom(): Double = js.native
+  
+  /**
+    * A registry of {@link MapType} instances by string ID.
+    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.mapTypes Maps JavaScript API}
+    */
+  var mapTypes: MapTypeRegistry = js.native
+  
+  /**
+    * Additional map types to overlay.
+    * Overlay map types will display on top of the base map they are attached to, in the order in which they appear in the
+    * `overlayMapTypes` array (overlays with higher index values are displayed in front of overlays with lower index values).
+    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.overlayMapTypes Maps JavaScript API}
+    */
+  var overlayMapTypes: MVCArray[MapType] = js.native
+  
   /**
     * Changes the center of the map by the given distance in pixels.
     * If the distance is less than both the width and height of the map, the transition will be smoothly animated.
@@ -218,6 +203,7 @@ trait Map[E /* <: Element */] extends MVCObject {
     * @see {@link setCenter}
     */
   def panBy(x: Double, y: Double): Unit = js.native
+  
   /**
     * Changes the center of the map to the given {@link LatLng}.
     * If the change is less than both the width and height of the map, the transition will be smoothly animated.
@@ -228,6 +214,7 @@ trait Map[E /* <: Element */] extends MVCObject {
     */
   def panTo(latLng: LatLng): Unit = js.native
   def panTo(latLng: LatLngLiteral): Unit = js.native
+  
   /**
     * Pans the map by the minimum amount necessary to contain the given {@link LatLngBounds}.
     * It makes no guarantee where on the map the bounds will be,
@@ -243,6 +230,7 @@ trait Map[E /* <: Element */] extends MVCObject {
   def panToBounds(latLngBounds: LatLngBoundsLiteral, padding: Padding): Unit = js.native
   def panToBounds(latLngBounds: LatLngBounds, padding: Double): Unit = js.native
   def panToBounds(latLngBounds: LatLngBounds, padding: Padding): Unit = js.native
+  
   /**
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.setCenter Maps JavaScript API}
     * @see {@link MapOptions#center}
@@ -255,6 +243,7 @@ trait Map[E /* <: Element */] extends MVCObject {
     */
   def setCenter(latlng: LatLng): Unit = js.native
   def setCenter(latlng: LatLngLiteral): Unit = js.native
+  
   /**
     * Controls whether the map icons are clickable or not. A map icon represents a point of interest, also known as a POI.
     * To disable the clickability of map icons, pass a value of `false` to this method.
@@ -263,6 +252,7 @@ trait Map[E /* <: Element */] extends MVCObject {
     * @see {@link getClickableIcons}
     */
   def setClickableIcons(clickable: Boolean): Unit = js.native
+  
   /**
     * Sets the compass heading for aerial imagery measured in degrees from cardinal direction North.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.setHeading Maps JavaScript API}
@@ -271,6 +261,7 @@ trait Map[E /* <: Element */] extends MVCObject {
     * @see {@link getHeading}
     */
   def setHeading(heading: Double): Unit = js.native
+  
   def setMapTypeId(mapTypeId: String): Unit = js.native
   /**
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.setMapTypeId Maps JavaScript API}
@@ -281,8 +272,10 @@ trait Map[E /* <: Element */] extends MVCObject {
     * @see {@link overlayMapTypes}
     */
   def setMapTypeId(mapTypeId: MapTypeId): Unit = js.native
+  
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.setOptions Maps JavaScript API} */
   def setOptions(options: MapOptions): Unit = js.native
+  
   /**
     * Binds a {@link StreetViewPanorama} to the map.
     * This panorama overrides the default {@link StreetViewPanorama}, allowing the map to bind to an external panorama outside of the map.
@@ -293,6 +286,7 @@ trait Map[E /* <: Element */] extends MVCObject {
     */
   def setStreetView(): Unit = js.native
   def setStreetView(panorama: StreetViewPanorama): Unit = js.native
+  
   /**
     * Controls the automatic switching behavior for the angle of incidence of the map.
     * The only allowed values are `0` and `45`.
@@ -308,6 +302,7 @@ trait Map[E /* <: Element */] extends MVCObject {
     * @see {@link getTilt}
     */
   def setTilt(tilt: Double): Unit = js.native
+  
   /**
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.setZoom Maps JavaScript API}
     * @see {@link MapOptions#zoom}
@@ -318,4 +313,3 @@ trait Map[E /* <: Element */] extends MVCObject {
     */
   def setZoom(zoom: Double): Unit = js.native
 }
-

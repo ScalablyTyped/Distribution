@@ -2,13 +2,14 @@ package typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options customizing the data transfer schedule.
   */
 @js.native
 trait SchemaScheduleOptions extends js.Object {
+  
   /**
     * If true, automatic scheduling of data transfer runs for this
     * configuration will be disabled. The runs can be started on ad-hoc basis
@@ -16,6 +17,7 @@ trait SchemaScheduleOptions extends js.Object {
     * the TransferConfig.schedule field will be ignored.
     */
   var disableAutoScheduling: js.UndefOr[Boolean] = js.native
+  
   /**
     * Defines time to stop scheduling transfer runs. A transfer run cannot be
     * scheduled at or after the end time. The end time can be changed at any
@@ -23,6 +25,7 @@ trait SchemaScheduleOptions extends js.Object {
     * limited by this option.
     */
   var endTime: js.UndefOr[String] = js.native
+  
   /**
     * Specifies time to start scheduling transfer runs. The first run will be
     * scheduled at or after the start time according to a recurrence pattern
@@ -32,37 +35,45 @@ trait SchemaScheduleOptions extends js.Object {
     */
   var startTime: js.UndefOr[String] = js.native
 }
-
 object SchemaScheduleOptions {
+  
   @scala.inline
   def apply(): SchemaScheduleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaScheduleOptions]
   }
+  
   @scala.inline
   implicit class SchemaScheduleOptionsOps[Self <: SchemaScheduleOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDisableAutoScheduling(value: Boolean): Self = this.set("disableAutoScheduling", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDisableAutoScheduling: Self = this.set("disableAutoScheduling", js.undefined)
+    
     @scala.inline
     def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEndTime: Self = this.set("endTime", js.undefined)
+    
     @scala.inline
     def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteStartTime: Self = this.set("startTime", js.undefined)
   }
-  
 }
-

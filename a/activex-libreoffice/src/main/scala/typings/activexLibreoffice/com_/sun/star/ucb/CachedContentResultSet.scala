@@ -20,7 +20,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used on client side to access a {@link ContentResultSet} remote optimized.
@@ -32,8 +32,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CachedContentResultSet extends ContentResultSet
-
 object CachedContentResultSet {
+  
   @scala.inline
   def apply(
     CursorName: String,
@@ -136,4 +136,3 @@ object CachedContentResultSet {
     __obj.asInstanceOf[CachedContentResultSet]
   }
 }
-

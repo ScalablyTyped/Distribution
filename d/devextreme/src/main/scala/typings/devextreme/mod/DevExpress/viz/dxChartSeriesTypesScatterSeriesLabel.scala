@@ -2,17 +2,18 @@ package typings.devextreme.mod.DevExpress.viz
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @name dxChartSeriesTypes.ScatterSeries.label */
+/**
+  * [descr:dxChartSeriesTypes.ScatterSeries.label]
+  */
 @js.native
 trait dxChartSeriesTypesScatterSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
-
 object dxChartSeriesTypesScatterSeriesLabel {
+  
   @scala.inline
   def apply(): dxChartSeriesTypesScatterSeriesLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[dxChartSeriesTypesScatterSeriesLabel]
   }
 }
-

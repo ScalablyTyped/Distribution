@@ -2,7 +2,7 @@ package typings.babylonjs.indexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "RefractionTexture")
 @js.native
@@ -20,4 +20,3 @@ class RefractionTexture protected ()
   def this(name: String, size: Double, scene: typings.babylonjs.sceneMod.Scene) = this()
   def this(name: String, size: Double, scene: typings.babylonjs.sceneMod.Scene, generateMipMaps: Boolean) = this()
 }
-

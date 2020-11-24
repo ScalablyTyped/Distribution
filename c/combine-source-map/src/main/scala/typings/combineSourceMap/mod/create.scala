@@ -2,11 +2,12 @@ package typings.combineSourceMap.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("combine-source-map", "create")
 @js.native
 object create extends js.Object {
+  
   /**
     * Create a source map combiner that accepts multiple files, offsets them and then combines them into one source map.
     * @param file optional name of the generated file
@@ -18,4 +19,3 @@ object create extends js.Object {
   def apply(file: String): Combiner = js.native
   def apply(file: String, sourceRoot: String): Combiner = js.native
 }
-

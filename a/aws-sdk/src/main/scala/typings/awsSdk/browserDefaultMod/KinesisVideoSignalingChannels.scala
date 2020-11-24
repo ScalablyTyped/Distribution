@@ -4,7 +4,7 @@ import typings.awsSdk.kinesisvideosignalingchannelsMod.ClientConfiguration
 import typings.awsSdk.kinesisvideosignalingchannelsMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/browser_default", "KinesisVideoSignalingChannels")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class KinesisVideoSignalingChannels () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -10,11 +10,14 @@ import typings.ngTable.ngTableSettingsMod.ISettings
 import typings.ngTable.ngTableSettingsMod.NgTableSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ng-table/src/core", JSImport.Namespace)
 @js.native
 object coreMod extends js.Object {
+  
+  val ngTableCoreModule: IModule = js.native
+  
   @js.native
   class NgTableDefaultGetDataProvider ()
     extends typings.ngTable.dataMod.NgTableDefaultGetDataProvider
@@ -23,6 +26,13 @@ object coreMod extends js.Object {
   class NgTableEventsChannel protected ()
     extends typings.ngTable.ngTableEventsChannelMod.NgTableEventsChannel {
     def this($rootScope: IRootScopeService) = this()
+  }
+  /* static members */
+  @js.native
+  object NgTableEventsChannel extends js.Object {
+    
+    @JSName("$inject")
+    var $inject: js.Array[String] = js.native
   }
   
   @js.native
@@ -34,25 +44,16 @@ object coreMod extends js.Object {
     def this(baseParameters: Boolean, baseSettings: ISettings[T]) = this()
     def this(baseParameters: IParamValues[T], baseSettings: ISettings[T]) = this()
   }
-  
-  val ngTableCoreModule: IModule = js.native
-  /* static members */
-  @js.native
-  object NgTableEventsChannel extends js.Object {
-    @JSName("$inject")
-    var $inject: js.Array[String] = js.native
-  }
-  
   /* static members */
   @js.native
   object NgTableParams extends js.Object {
+    
     @JSName("$log")
     var $log: js.Any = js.native
+    
     @JSName("$q")
     var $q: js.Any = js.native
-    var ngTableDefaults: js.Any = js.native
-    var ngTableEventsChannel: js.Any = js.native
-    var ngTableSettings: js.Any = js.native
+    
     def init(
       $q: IQService,
       $log: ILogService,
@@ -60,7 +61,11 @@ object coreMod extends js.Object {
       ngTableEventsChannel: typings.ngTable.ngTableEventsChannelMod.NgTableEventsChannel,
       ngTableSettings: NgTableSettings
     ): Unit = js.native
+    
+    var ngTableDefaults: js.Any = js.native
+    
+    var ngTableEventsChannel: js.Any = js.native
+    
+    var ngTableSettings: js.Any = js.native
   }
-  
 }
-

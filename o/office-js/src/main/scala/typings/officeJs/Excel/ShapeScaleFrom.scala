@@ -2,11 +2,10 @@ package typings.officeJs.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ShapeScaleFrom extends js.Object
-
 /**
   *
   * Specifies which part of the shape retains its position when the shape is scaled.
@@ -16,6 +15,7 @@ sealed trait ShapeScaleFrom extends js.Object
 @JSGlobal("Excel.ShapeScaleFrom")
 @js.native
 object ShapeScaleFrom extends js.Object {
+  
   @js.native
   sealed trait scaleFromBottomRight extends ShapeScaleFrom
   
@@ -24,6 +24,4 @@ object ShapeScaleFrom extends js.Object {
   
   @js.native
   sealed trait scaleFromTopLeft extends ShapeScaleFrom
-  
 }
-

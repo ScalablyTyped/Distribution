@@ -1,12 +1,13 @@
 package typings.storybookApi.mod
 
+import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/api", "Consumer")
 @js.native
-class Consumer protected () extends ManagerConsumer {
-  def this(props: ConsumerProps[SubState, Combo]) = this()
+object Consumer extends js.Object {
+  
+  def apply[P](hasFilterChildren: ManagerConsumerProps[P]): ReactElement = js.native
 }
-

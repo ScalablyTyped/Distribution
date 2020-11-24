@@ -12,7 +12,7 @@ http client request wrapper
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 48 |
-| # downloads        | 630228 |
+| # downloads        | 669107 |
 | # stars            | 0 |
 
 ## Links

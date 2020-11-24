@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new Vec4 object.
@@ -46,18 +46,18 @@ class Vec4 ()
   def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
 }
-
 /* static members */
 @JSImport("playcanvas", "Vec4")
 @js.native
 object Vec4 extends js.Object {
+  
   /**
     * A constant vector set to [1, 1, 1, 1].
     */
   val ONE: typings.playcanvas.pc.Vec4 = js.native
+  
   /**
     * A constant vector set to [0, 0, 0, 0].
     */
   val ZERO: typings.playcanvas.pc.Vec4 = js.native
 }
-

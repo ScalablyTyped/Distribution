@@ -3,11 +3,12 @@ package typings.xmlbuilder.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmlbuilder", "create")
 @js.native
 object create extends js.Object {
+  
   /**
     * Creates a new XML document and returns the root element node.
     * 
@@ -82,4 +83,3 @@ object create extends js.Object {
     options: CreateOptions
   ): XMLElement = js.native
 }
-

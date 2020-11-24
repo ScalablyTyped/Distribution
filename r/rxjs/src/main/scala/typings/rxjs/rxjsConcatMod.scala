@@ -2,11 +2,12 @@ package typings.rxjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/operators/concat", JSImport.Namespace)
 @js.native
 object rxjsConcatMod extends js.Object {
+  
   def concat[T](): js.Any = js.native
   def concat[T](
     observables: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any)*
@@ -79,4 +80,3 @@ object rxjsConcatMod extends js.Object {
     v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any
   ): js.Any = js.native
 }
-

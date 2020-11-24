@@ -10,9 +10,9 @@ Parses a link header and returns paging information for each contained link.
 | ------------------ | :-------------: |
 | Full name          | parse-link-header |
 | Keywords           | parse, link, header, weblink, web, link, rel |
-| # releases         | 1 |
-| # dependents       | 153 |
-| # downloads        | 6639599 |
+| # releases         | 0 |
+| # dependents       | 169 |
+| # downloads        | 12310580 |
 | # stars            | 9 |
 
 ## Links

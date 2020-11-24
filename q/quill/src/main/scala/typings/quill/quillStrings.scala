@@ -3,9 +3,28 @@ package typings.quill
 import typings.quill.mod.Sources
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object quillStrings {
+  
+  @scala.inline
+  def api: api = "api".asInstanceOf[api]
+  
+  @scala.inline
+  def `editor-change`: `editor-change` = "editor-change".asInstanceOf[`editor-change`]
+  
+  @scala.inline
+  def `selection-change`: `selection-change` = "selection-change".asInstanceOf[`selection-change`]
+  
+  @scala.inline
+  def silent: silent = "silent".asInstanceOf[silent]
+  
+  @scala.inline
+  def `text-change`: `text-change` = "text-change".asInstanceOf[`text-change`]
+  
+  @scala.inline
+  def user: user = "user".asInstanceOf[user]
+  
   @js.native
   sealed trait api extends Sources
   
@@ -23,18 +42,4 @@ object quillStrings {
   
   @js.native
   sealed trait user extends Sources
-  
-  @scala.inline
-  def api: api = "api".asInstanceOf[api]
-  @scala.inline
-  def `editor-change`: `editor-change` = "editor-change".asInstanceOf[`editor-change`]
-  @scala.inline
-  def `selection-change`: `selection-change` = "selection-change".asInstanceOf[`selection-change`]
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
-  @scala.inline
-  def `text-change`: `text-change` = "text-change".asInstanceOf[`text-change`]
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
 }
-

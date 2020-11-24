@@ -5,12 +5,13 @@ import typings.d3Selection.mod.ValueFn
 import typings.d3SelectionMulti.d3SelectionMultiStrings.important
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("d3-selection", JSImport.Namespace)
 @js.native
 object d3SelectionAugmentingMod extends js.Object {
+  
   /**
     * A D3 Selection of elements.
     *
@@ -21,6 +22,7 @@ object d3SelectionAugmentingMod extends js.Object {
     */
   @js.native
   trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, PDatum] extends js.Object {
+    
     /**
       * Derive a map of attributes to be set on the selection.
       *
@@ -33,6 +35,7 @@ object d3SelectionAugmentingMod extends js.Object {
       * @param attrs An object used as a map of attribute names to set
       */
     def attrs(attrs: ValueMap[GElement, Datum]): this.type = js.native
+    
     /**
       * Derive a map of object properties to be set on the selection's node(s).
       *
@@ -45,6 +48,7 @@ object d3SelectionAugmentingMod extends js.Object {
       * @param props An object used as a map of object properties to be set.
       */
     def properties(props: ValueMap[GElement, Datum]): this.type = js.native
+    
     /**
       * Derive a map of style properties to be set on the selection.
       *
@@ -64,6 +68,4 @@ object d3SelectionAugmentingMod extends js.Object {
     @JSName("styles")
     def styles_important(style: ValueMap[GElement, Datum], priority: important): this.type = js.native
   }
-  
 }
-

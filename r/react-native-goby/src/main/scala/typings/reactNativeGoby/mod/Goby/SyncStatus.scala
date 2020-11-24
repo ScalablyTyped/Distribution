@@ -2,17 +2,17 @@ package typings.reactNativeGoby.mod.Goby
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SyncStatus extends js.Object
-
 /**
   * Indicates the current status of a sync operation.
   */
 @JSImport("react-native-goby", "Goby.SyncStatus")
 @js.native
 object SyncStatus extends js.Object {
+  
   /**
     * An update is available, and a confirmation dialog was shown
     * to the end user. (This is only applicable when the updateDialog is used)
@@ -70,6 +70,4 @@ object SyncStatus extends js.Object {
     */
   @js.native
   sealed trait UP_TO_DATE extends SyncStatus
-  
 }
-

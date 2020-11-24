@@ -6,11 +6,12 @@ import typings.emojiMart.sharedPropsMod.PickerProps
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("emoji-mart/dist-es/components", JSImport.Namespace)
 @js.native
 object componentsMod extends js.Object {
+  
   @js.native
   class Category ()
     extends Component[Props, js.Object, js.Any]
@@ -22,6 +23,4 @@ object componentsMod extends js.Object {
   @js.native
   class Picker ()
     extends Component[PickerProps, js.Object, js.Any]
-  
 }
-

@@ -2,13 +2,11 @@ package typings.firefoxWebextBrowser.browser.webNavigation
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* webNavigation types */
 /**
-  * Cause of the navigation. The same transition types as defined in the history API are used. These are the same
-  * transition types as defined in the history API except with `"start_page"` in place of `"auto_toplevel"` (for
-  * backwards compatibility).
+  * Cause of the navigation. The same transition types as defined in the history API are used. These are the same transition types as defined in the history API except with `"start_page"` in place of `"auto_toplevel"` (for backwards compatibility).
   */
 /* Rewritten from type alias, can be one of: 
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link
@@ -24,29 +22,38 @@ import scala.scalajs.js.annotation._
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword_generated
 */
 trait TransitionType extends js.Object
-
 object TransitionType {
+  
   @scala.inline
   def auto_bookmark: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_bookmark = "auto_bookmark".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_bookmark]
+  
   @scala.inline
   def auto_subframe: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_subframe = "auto_subframe".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_subframe]
+  
   @scala.inline
   def form_submit: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.form_submit = "form_submit".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.form_submit]
+  
   @scala.inline
   def generated: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.generated = "generated".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.generated]
+  
   @scala.inline
   def keyword: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword = "keyword".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword]
+  
   @scala.inline
   def keyword_generated: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword_generated = "keyword_generated".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword_generated]
+  
   @scala.inline
   def link: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link = "link".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link]
+  
   @scala.inline
   def manual_subframe: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual_subframe = "manual_subframe".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual_subframe]
+  
   @scala.inline
   def reload: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reload = "reload".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reload]
+  
   @scala.inline
   def start_page: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.start_page = "start_page".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.start_page]
+  
   @scala.inline
   def typed: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.typed = "typed".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.typed]
 }
-

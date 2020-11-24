@@ -7,11 +7,12 @@ import typings.angular.mod.IDirective
 import typings.angular.mod.IScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ng-table/src/browser/ngTableSelectFilterDs.directive", "ngTableSelectFilterDs")
 @js.native
 object ngTableSelectFilterDs extends js.Object {
+  
   /**
     * Takes the array returned by $column.filterData and makes it available as `$selectData` on the `$scope`.
     *
@@ -22,4 +23,3 @@ object ngTableSelectFilterDs extends js.Object {
     */
   def apply(): IDirective[IScope, JQLite, IAttributes, IController] = js.native
 }
-

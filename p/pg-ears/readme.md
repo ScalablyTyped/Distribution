@@ -10,9 +10,9 @@ Resilient Postgres listen client
 | ------------------ | :-------------: |
 | Full name          | pg-ears |
 | Keywords           | pg, postgres, listen, subscribe, notify |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 617 |
+| # downloads        | 798 |
 | # stars            | 0 |
 
 ## Links

@@ -1,28 +1,13 @@
 package typings.grammarkdown.mod
 
-import typings.grammarkdown.hostMod.AsyncHostOptions
+import typings.grammarkdown.nodeMod.NodeAsyncHostOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "AsyncHost")
 @js.native
 class AsyncHost ()
-  extends typings.grammarkdown.hostMod.AsyncHost {
-  def this(hasReadFileWriteFileBaseOptions: AsyncHostOptions) = this()
+  extends typings.grammarkdown.nodeMod.NodeAsyncHost {
+  def this(options: NodeAsyncHostOptions) = this()
 }
-
-/* static members */
-@JSImport("grammarkdown", "AsyncHost")
-@js.native
-object AsyncHost extends js.Object {
-  def forFile(content: String): typings.grammarkdown.hostMod.AsyncSingleFileHost = js.native
-  def forFile(
-    content: String,
-    file: js.UndefOr[scala.Nothing],
-    hostFallback: typings.grammarkdown.hostMod.AsyncHost
-  ): typings.grammarkdown.hostMod.AsyncSingleFileHost = js.native
-  def forFile(content: String, file: String): typings.grammarkdown.hostMod.AsyncSingleFileHost = js.native
-  def forFile(content: String, file: String, hostFallback: typings.grammarkdown.hostMod.AsyncHost): typings.grammarkdown.hostMod.AsyncSingleFileHost = js.native
-}
-

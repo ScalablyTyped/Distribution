@@ -7,7 +7,7 @@ import typings.activexAdodb.activexAdodbNumbers.`2`
 import typings.activexAdodb.activexAdodbNumbers.`512`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexAdodb.activexAdodbNumbers.`0`
@@ -17,17 +17,20 @@ import scala.scalajs.js.annotation._
   - typings.activexAdodb.activexAdodbNumbers.`1024`
 */
 trait PropertyAttributesEnum extends js.Object
-
 object PropertyAttributesEnum {
+  
   @scala.inline
   def adPropNotSupported: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def adPropOptional: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def adPropRead: `512` = 512.asInstanceOf[`512`]
+  
   @scala.inline
   def adPropRequired: `1` = 1.asInstanceOf[`1`]
+  
   @scala.inline
   def adPropWrite: `1024` = 1024.asInstanceOf[`1024`]
 }
-

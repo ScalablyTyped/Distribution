@@ -5,11 +5,11 @@ import typings.std.Node
 import typings.wordpressDom.wordpressDomStrings.a
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/dom", "replaceTag")
 @js.native
 object replaceTag_a extends js.Object {
+  
   def apply(node: Node, tagName: a): HTMLAnchorElement = js.native
 }
-

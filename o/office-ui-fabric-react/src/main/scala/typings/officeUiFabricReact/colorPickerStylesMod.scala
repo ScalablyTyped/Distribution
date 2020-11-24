@@ -4,11 +4,11 @@ import typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerStyleProps
 import typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerStyles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorPicker.styles", JSImport.Namespace)
 @js.native
 object colorPickerStylesMod extends js.Object {
+  
   def getStyles(props: IColorPickerStyleProps): IColorPickerStyles = js.native
 }
-

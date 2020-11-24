@@ -12,7 +12,7 @@ Resize/rename images for responsive designs.
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 17344 |
+| # downloads        | 16103 |
 | # stars            | 1 |
 
 ## Links

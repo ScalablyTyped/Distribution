@@ -9,7 +9,7 @@ import typings.echarts.anon.`8`
 import typings.echarts.echarts.EChartOption.SeriesScatter.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Scatter (bubble) chart . The scatter chart in
@@ -38,6 +38,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SeriesScatter_ extends js.Object {
+  
   /**
     * Whether to enable animation.
     *
@@ -47,6 +48,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.animation
     */
   var animation: js.UndefOr[Boolean] = js.native
+  
   /**
     * Delay before updating the first animation, which supports callback
     * function for different data to have different animation effect.
@@ -63,6 +65,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Delay before updating animation, which supports callback function
     * for different data to have different animation effect.
@@ -79,6 +82,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
@@ -91,6 +95,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
@@ -103,6 +108,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.native
+  
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
@@ -115,6 +121,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.native
+  
   /**
     * Easing method used for animation.
     *
@@ -124,6 +131,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.native
+  
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger than
@@ -135,6 +143,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.native
+  
   /**
     * Index of
     * [calendar coordinates](https://echarts.apache.org/en/option.html#calendar)
@@ -145,6 +154,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.calendarIndex
     */
   var calendarIndex: js.UndefOr[Double] = js.native
+  
   /**
     * The coordinate used in the series, whose options are:
     *
@@ -175,6 +185,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.coordinateSystem
     */
   var coordinateSystem: js.UndefOr[String] = js.native
+  
   /**
     * The mouse style when mouse hovers on an element, the same as
     * `cursor` property in `CSS`.
@@ -185,6 +196,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.cursor
     */
   var cursor: js.UndefOr[String] = js.native
+  
   /**
     * Data array of series, which can be in the following forms:
     *
@@ -322,6 +334,7 @@ trait SeriesScatter_ extends js.Object {
       (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
     ]
   ] = js.native
+  
   /**
     * If
     * [series.data](https://echarts.apache.org/en/option.html#series.data)
@@ -334,6 +347,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.datasetIndex
     */
   var datasetIndex: js.UndefOr[Double] = js.native
+  
   /**
     * `dimensions` can be used to define dimension info for `series.data`
     * or `dataset.source`.
@@ -382,10 +396,12 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.dimensions
     */
   var dimensions: js.UndefOr[js.Array[_]] = js.native
+  
   /**
     * @see https://echarts.apache.org/en/option.html#series-scatter.emphasis
     */
   var emphasis: js.UndefOr[`8`] = js.native
+  
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -423,6 +439,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.encode
     */
   var encode: js.UndefOr[js.Object] = js.native
+  
   /**
     * Index of
     * [geographic coordinate](https://echarts.apache.org/en/option.html#geo)
@@ -433,6 +450,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.geoIndex
     */
   var geoIndex: js.UndefOr[Double] = js.native
+  
   /**
     * Whether to enable the animation effect when mouse is on the symbol.
     *
@@ -440,6 +458,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.hoverAnimation
     */
   var hoverAnimation: js.UndefOr[Boolean] = js.native
+  
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -449,6 +468,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.id
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * Graphic style of , `emphasis` is the style when it is highlighted,
     * like being hovered by mouse, or highlighted via legend connect.
@@ -457,6 +477,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.itemStyle
     */
   var itemStyle: js.UndefOr[ShadowOffsetY] = js.native
+  
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -469,6 +490,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.label
     */
   var label: js.UndefOr[BorderRadius] = js.native
+  
   /**
     * Whether to enable the optimization of large-scale data.
     * It could be set when large data causes performance problem.
@@ -483,6 +505,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.large
     */
   var large: js.UndefOr[Boolean] = js.native
+  
   /**
     * The threshold enabling the drawing optimization.
     *
@@ -492,6 +515,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.largeThreshold
     */
   var largeThreshold: js.UndefOr[Double] = js.native
+  
   /**
     * Whether to enable highlighting chart when
     * [legend](https://echarts.apache.org/en/option.html#legend)
@@ -503,6 +527,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.legendHoverLink
     */
   var legendHoverLink: js.UndefOr[Boolean] = js.native
+  
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -511,6 +536,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.markArea
     */
   var markArea: js.UndefOr[AnimationDelayUpdate] = js.native
+  
   /**
     * Use a line in the chart to illustrate.
     *
@@ -518,6 +544,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.markLine
     */
   var markLine: js.UndefOr[AnimationDelay] = js.native
+  
   /**
     * Mark point in a chart.
     *
@@ -525,6 +552,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint
     */
   var markPoint: js.UndefOr[AnimationDuration] = js.native
+  
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -536,6 +564,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.name
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Index of
     * [polar coordinate](https://echarts.apache.org/en/option.html#polar)
@@ -546,6 +575,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.polarIndex
     */
   var polarIndex: js.UndefOr[Double] = js.native
+  
   /**
     * `progressive` specifies the amount of graphic elements that can
     * be rendered within a frame (about 16ms) if "progressive rendering"
@@ -563,6 +593,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.progressive
     */
   var progressive: js.UndefOr[Double] = js.native
+  
   /**
     * If current data amount is over the threshold, "progressive rendering"
     * is enabled.
@@ -573,6 +604,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.progressiveThreshold
     */
   var progressiveThreshold: js.UndefOr[Double] = js.native
+  
   /**
     * When
     * [dataset](https://echarts.apache.org/en/option.html#dataset)
@@ -595,6 +627,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.seriesLayoutBy
     */
   var seriesLayoutBy: js.UndefOr[String] = js.native
+  
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to mouse
@@ -604,6 +637,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.silent
     */
   var silent: js.UndefOr[Boolean] = js.native
+  
   /**
     * Symbol of .
     *
@@ -645,6 +679,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.symbol
     */
   var symbol: js.UndefOr[String] = js.native
+  
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
@@ -652,6 +687,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.native
+  
   /**
     * Offset of symbol relative to original position.
     * By default, symbol will be put in the center position of data.
@@ -673,6 +709,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.native
+  
   /**
     * Rotate degree of symbol.
     * Note that when `symbol` is set to be `'arrow'` in `markLine`,
@@ -683,6 +720,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.native
+  
   /**
     * symbol size.
     * It can be set to single numbers like `10`, or use an array to
@@ -709,6 +747,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.native
+  
   /**
     * tooltip settings in this series.
     *
@@ -716,12 +755,14 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.tooltip
     */
   var tooltip: js.UndefOr[BaseTooltip] = js.native
+  
   /**
     * @default
     * "scatter"
     * @see https://echarts.apache.org/en/option.html#series-scatter.type
     */
   var `type`: js.UndefOr[String] = js.native
+  
   /**
     * Index of
     * [x axis](https://echarts.apache.org/en/option.html#xAxis)
@@ -731,6 +772,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.xAxisIndex
     */
   var xAxisIndex: js.UndefOr[Double] = js.native
+  
   /**
     * Index of
     * [y axis](https://echarts.apache.org/en/option.html#yAxis)
@@ -740,6 +782,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.yAxisIndex
     */
   var yAxisIndex: js.UndefOr[Double] = js.native
+  
   /**
     * `z` value of all graghical elements in scatter chart, which controls
     * order of drawing graphical components.
@@ -755,6 +798,7 @@ trait SeriesScatter_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-scatter.z
     */
   var z: js.UndefOr[Double] = js.native
+  
   /**
     * `zlevel` value of all graghical elements in scatter chart.
     *
@@ -774,213 +818,307 @@ trait SeriesScatter_ extends js.Object {
     */
   var zlevel: js.UndefOr[Double] = js.native
 }
-
 object SeriesScatter_ {
+  
   @scala.inline
   def apply(): SeriesScatter_ = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesScatter_]
   }
+  
   @scala.inline
   implicit class SeriesScatter_Ops[Self <: SeriesScatter_] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimation: Self = this.set("animation", js.undefined)
+    
     @scala.inline
     def setAnimationDelay(value: js.Function | Double): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    
     @scala.inline
     def setAnimationDelayUpdate(value: js.Function | Double): Self = this.set("animationDelayUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDelayUpdate: Self = this.set("animationDelayUpdate", js.undefined)
+    
     @scala.inline
     def setAnimationDuration(value: js.Function | Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    
     @scala.inline
     def setAnimationDurationUpdate(value: js.Function | Double): Self = this.set("animationDurationUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationDurationUpdate: Self = this.set("animationDurationUpdate", js.undefined)
+    
     @scala.inline
     def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    
     @scala.inline
     def setAnimationEasingUpdate(value: String): Self = this.set("animationEasingUpdate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationEasingUpdate: Self = this.set("animationEasingUpdate", js.undefined)
+    
     @scala.inline
     def setAnimationThreshold(value: Double): Self = this.set("animationThreshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAnimationThreshold: Self = this.set("animationThreshold", js.undefined)
+    
     @scala.inline
     def setCalendarIndex(value: Double): Self = this.set("calendarIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCalendarIndex: Self = this.set("calendarIndex", js.undefined)
+    
     @scala.inline
     def setCoordinateSystem(value: String): Self = this.set("coordinateSystem", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCoordinateSystem: Self = this.set("coordinateSystem", js.undefined)
+    
     @scala.inline
     def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCursor: Self = this.set("cursor", js.undefined)
+    
     @scala.inline
     def setDataVarargs(value: ((js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit)*): Self = this.set("data", js.Array(value :_*))
+    
     @scala.inline
     def setData(
       value: js.Array[
           (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
         ]
     ): Self = this.set("data", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteData: Self = this.set("data", js.undefined)
+    
     @scala.inline
     def setDatasetIndex(value: Double): Self = this.set("datasetIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDatasetIndex: Self = this.set("datasetIndex", js.undefined)
+    
     @scala.inline
     def setDimensionsVarargs(value: js.Any*): Self = this.set("dimensions", js.Array(value :_*))
+    
     @scala.inline
     def setDimensions(value: js.Array[_]): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    
     @scala.inline
     def setEmphasis(value: `8`): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    
     @scala.inline
     def setEncode(value: js.Object): Self = this.set("encode", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEncode: Self = this.set("encode", js.undefined)
+    
     @scala.inline
     def setGeoIndex(value: Double): Self = this.set("geoIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteGeoIndex: Self = this.set("geoIndex", js.undefined)
+    
     @scala.inline
     def setHoverAnimation(value: Boolean): Self = this.set("hoverAnimation", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHoverAnimation: Self = this.set("hoverAnimation", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setItemStyle(value: ShadowOffsetY): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    
     @scala.inline
     def setLabel(value: BorderRadius): Self = this.set("label", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabel: Self = this.set("label", js.undefined)
+    
     @scala.inline
     def setLarge(value: Boolean): Self = this.set("large", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLarge: Self = this.set("large", js.undefined)
+    
     @scala.inline
     def setLargeThreshold(value: Double): Self = this.set("largeThreshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLargeThreshold: Self = this.set("largeThreshold", js.undefined)
+    
     @scala.inline
     def setLegendHoverLink(value: Boolean): Self = this.set("legendHoverLink", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLegendHoverLink: Self = this.set("legendHoverLink", js.undefined)
+    
     @scala.inline
     def setMarkArea(value: AnimationDelayUpdate): Self = this.set("markArea", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMarkArea: Self = this.set("markArea", js.undefined)
+    
     @scala.inline
     def setMarkLine(value: AnimationDelay): Self = this.set("markLine", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMarkLine: Self = this.set("markLine", js.undefined)
+    
     @scala.inline
     def setMarkPoint(value: AnimationDuration): Self = this.set("markPoint", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMarkPoint: Self = this.set("markPoint", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setPolarIndex(value: Double): Self = this.set("polarIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePolarIndex: Self = this.set("polarIndex", js.undefined)
+    
     @scala.inline
     def setProgressive(value: Double): Self = this.set("progressive", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProgressive: Self = this.set("progressive", js.undefined)
+    
     @scala.inline
     def setProgressiveThreshold(value: Double): Self = this.set("progressiveThreshold", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteProgressiveThreshold: Self = this.set("progressiveThreshold", js.undefined)
+    
     @scala.inline
     def setSeriesLayoutBy(value: String): Self = this.set("seriesLayoutBy", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSeriesLayoutBy: Self = this.set("seriesLayoutBy", js.undefined)
+    
     @scala.inline
     def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSilent: Self = this.set("silent", js.undefined)
+    
     @scala.inline
     def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSymbol: Self = this.set("symbol", js.undefined)
+    
     @scala.inline
     def setSymbolKeepAspect(value: Boolean): Self = this.set("symbolKeepAspect", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSymbolKeepAspect: Self = this.set("symbolKeepAspect", js.undefined)
+    
     @scala.inline
     def setSymbolOffsetVarargs(value: js.Any*): Self = this.set("symbolOffset", js.Array(value :_*))
+    
     @scala.inline
     def setSymbolOffset(value: js.Array[_]): Self = this.set("symbolOffset", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSymbolOffset: Self = this.set("symbolOffset", js.undefined)
+    
     @scala.inline
     def setSymbolRotate(value: Double): Self = this.set("symbolRotate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSymbolRotate: Self = this.set("symbolRotate", js.undefined)
+    
     @scala.inline
     def setSymbolSizeVarargs(value: js.Any*): Self = this.set("symbolSize", js.Array(value :_*))
+    
     @scala.inline
     def setSymbolSize(value: js.Array[_] | js.Function | Double): Self = this.set("symbolSize", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSymbolSize: Self = this.set("symbolSize", js.undefined)
+    
     @scala.inline
     def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
+    
     @scala.inline
     def setXAxisIndex(value: Double): Self = this.set("xAxisIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteXAxisIndex: Self = this.set("xAxisIndex", js.undefined)
+    
     @scala.inline
     def setYAxisIndex(value: Double): Self = this.set("yAxisIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteYAxisIndex: Self = this.set("yAxisIndex", js.undefined)
+    
     @scala.inline
     def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZ: Self = this.set("z", js.undefined)
+    
     @scala.inline
     def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteZlevel: Self = this.set("zlevel", js.undefined)
   }
-  
 }
-

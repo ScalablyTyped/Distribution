@@ -3,7 +3,7 @@ package typings.naverWhale.whale.webRequest
 import typings.chrome.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebRequestBodyEvent
@@ -13,6 +13,7 @@ trait WebRequestBodyEvent
         typings.chrome.chrome.webRequest.BlockingResponse | Unit
       ]
     ] {
+  
   def addListener(
     callback: js.Function1[
       /* details */ typings.chrome.chrome.webRequest.WebRequestBodyDetails, 
@@ -37,4 +38,3 @@ trait WebRequestBodyEvent
     opt_extraInfoSpec: js.Array[String]
   ): Unit = js.native
 }
-

@@ -4,7 +4,7 @@ import typings.actionsOnGoogle.richMod._RichResponseItem
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2SimpleResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/simple", "SimpleResponse")
 @js.native
@@ -18,4 +18,3 @@ class SimpleResponse protected ()
     */
   def this(options: SimpleResponseOptions) = this()
 }
-

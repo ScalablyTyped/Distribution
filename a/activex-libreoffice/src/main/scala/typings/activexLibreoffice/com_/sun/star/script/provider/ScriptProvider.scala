@@ -8,7 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.script.browse.XBrowseNode
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service providers a means to browse and execute scripts. */
 @js.native
@@ -16,8 +16,8 @@ trait ScriptProvider
   extends XBrowseNode
      with XInvocation
      with XScriptProvider
-
 object ScriptProvider {
+  
   @scala.inline
   def apply(
     ChildNodes: SafeArray[XBrowseNode],
@@ -43,4 +43,3 @@ object ScriptProvider {
     __obj.asInstanceOf[ScriptProvider]
   }
 }
-

@@ -2,21 +2,20 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CommentChangeType extends js.Object
-
 /**
   *
   * Represents how the comments in the event were changed.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.12]
   */
 @JSGlobal("Excel.CommentChangeType")
 @js.native
 object CommentChangeType extends js.Object {
+  
   /**
     * Comments were edited.
     *
@@ -58,6 +57,4 @@ object CommentChangeType extends js.Object {
     */
   @js.native
   sealed trait replyEdited extends CommentChangeType
-  
 }
-

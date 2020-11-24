@@ -12,7 +12,7 @@ Convert a C expression to an array of postfix terms
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 430590 |
+| # downloads        | 734775 |
 | # stars            | 0 |
 
 ## Links

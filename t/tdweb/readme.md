@@ -10,9 +10,9 @@ Javascript interface for TDLib (telegram library)
 | ------------------ | :-------------: |
 | Full name          | tdweb |
 | Keywords           | telegram |
-| # releases         | 6 |
+| # releases         | 9 |
 | # dependents       | 3 |
-| # downloads        | 2434 |
+| # downloads        | 7664 |
 | # stars            | 0 |
 
 ## Links

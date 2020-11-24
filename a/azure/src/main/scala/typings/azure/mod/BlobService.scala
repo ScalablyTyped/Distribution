@@ -6,7 +6,7 @@ import typings.node.streamMod.Stream
 import typings.node.streamMod.Writable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "BlobService")
 @js.native
@@ -48,9 +48,9 @@ class BlobService () extends StorageServiceClient {
     sasToken: String
   ) = this()
   def this(storageAccount: String, storageAccessKey: String, host: String, sasToken: String) = this()
+  
   var SpeedSummary: Instantiable1[/* name */ String, typings.azure.mod.SpeedSummary] = js.native
-  var parallelOperationThreadCount: Double = js.native
-  var singleBlobPutThresholdInBytes: Double = js.native
+  
   /**
     * Creates a read-only snapshot of a blob.
     */
@@ -62,6 +62,7 @@ class BlobService () extends StorageServiceClient {
     options: LeaseIdOptions,
     callback: StorageCallbackVoid
   ): Unit = js.native
+  
   //#endregion
   //#region Lease Methods
   /**
@@ -71,6 +72,7 @@ class BlobService () extends StorageServiceClient {
     */
   def acquireLease(container: String, blob: String, callback: StorageCallback[LeaseResult]): Unit = js.native
   def acquireLease(container: String, blob: String, options: LeaseOptions, callback: StorageCallback[LeaseResult]): Unit = js.native
+  
   /**
     * Breaks the lease but ensures that another client cannot acquire a new lease until the current lease period has expired.
     * If container and blob are specified, breaks the blob lease.
@@ -84,6 +86,7 @@ class BlobService () extends StorageServiceClient {
     options: BreakLeaseOptions,
     callback: StorageCallback[LeaseResult]
   ): Unit = js.native
+  
   /**
     * Clears a range of pages.
     */
@@ -102,6 +105,7 @@ class BlobService () extends StorageServiceClient {
     options: LeaseAccessConditionsOptions,
     callback: StorageCallbackVoid
   ): Unit = js.native
+  
   /**
     * Writes a blob by specifying the list of block IDs that make up the blob.
     * In order to be written as part of a blob, a block must have been successfully written to the server in a prior
@@ -115,6 +119,7 @@ class BlobService () extends StorageServiceClient {
     options: CreateBlockOptions,
     callback: StorageCallback[BlockList]
   ): Unit = js.native
+  
   /**
     * Starts to copy a blob to a destination within the storage account. The Copy Blob operation copies the entire committed blob.
     */
@@ -131,6 +136,7 @@ class BlobService () extends StorageServiceClient {
     options: CopyBlobOptions,
     callback: StorageCallback[BlobResult]
   ): Unit = js.native
+  
   /**
     * Uploads a blob.
     */
@@ -142,6 +148,7 @@ class BlobService () extends StorageServiceClient {
     options: UploadBlockBlobOptions,
     callback: StorageCallback[String]
   ): Writable = js.native
+  
   /**
     * Creates a new block to be committed as part of a blob.
     */
@@ -162,6 +169,7 @@ class BlobService () extends StorageServiceClient {
     options: CreateBlockOptions,
     callback: StorageCallbackVoid
   ): Unit = js.native
+  
   /**
     * Creates a new block to be committed as part of a blob.
     */
@@ -174,6 +182,7 @@ class BlobService () extends StorageServiceClient {
     options: CreateBlockOptions,
     callback: StorageCallbackVoid
   ): Unit = js.native
+  
   /**
     * Updates a page blob from a stream.
     */
@@ -194,6 +203,7 @@ class BlobService () extends StorageServiceClient {
     options: CreatePagesOptions,
     callback: StorageCallback[BlobResult]
   ): Unit = js.native
+  
   /**
     * Updates a page blob from a text string.
     */
@@ -214,11 +224,13 @@ class BlobService () extends StorageServiceClient {
     options: CreatePagesOptions,
     callback: StorageCallback[BlobResult]
   ): Unit = js.native
+  
   /**
     * Creates a read-only snapshot of a blob.
     */
   def createBlobSnapshot(container: String, blob: String, callback: StorageCallback[String]): Unit = js.native
   def createBlobSnapshot(container: String, blob: String, options: BlobSnapshotOptions, callback: StorageCallback[String]): Unit = js.native
+  
   def createBlockBlobFromFile(container: String, blob: String, localFileName: String, callback: StorageCallback[BlobResult]): SpeedSummary = js.native
   def createBlockBlobFromFile(
     container: String,
@@ -227,6 +239,7 @@ class BlobService () extends StorageServiceClient {
     options: UploadBlockBlobOptions,
     callback: StorageCallback[BlobResult]
   ): SpeedSummary = js.native
+  
   def createBlockBlobFromStream(
     container: String,
     blob: String,
@@ -242,6 +255,7 @@ class BlobService () extends StorageServiceClient {
     options: UploadBlockBlobOptions,
     callback: StorageCallback[BlobResult]
   ): SpeedSummary = js.native
+  
   /**
     * Uploads a block blob from a text string.
     */
@@ -253,17 +267,20 @@ class BlobService () extends StorageServiceClient {
     options: UploadBlockBlobOptions,
     callback: StorageCallback[BlobResult]
   ): SpeedSummary = js.native
+  
   /**
     * Creates a new container under the specified account.
     * If a container with the same name already exists, the operation fails.
     */
   def createContainer(container: String, callback: StorageCallback[ContainerResult]): Unit = js.native
   def createContainer(container: String, options: CreateContainerOptions, callback: StorageCallback[ContainerResult]): Unit = js.native
+  
   /**
     * Creates a new container under the specified account if the container does not exists.
     */
   def createContainerIfNotExists(container: String, callback: StorageCallback[Boolean]): Unit = js.native
   def createContainerIfNotExists(container: String, options: CreateContainerOptions, callback: StorageCallback[Boolean]): Unit = js.native
+  
   //#endregion
   //#region Page Blob Methods
   /**
@@ -277,6 +294,7 @@ class BlobService () extends StorageServiceClient {
     options: SetBlobPropertiesOptions,
     callback: StorageCallbackVoid
   ): Unit = js.native
+  
   /**
     * Marks the specified blob or snapshot for deletion. The blob is later deleted during garbage collection.
     * If a blob has snapshots, you must delete them when deleting the blob. Using the deleteSnapshots option, you can choose either to delete both the blob and its snapshots,
@@ -286,25 +304,30 @@ class BlobService () extends StorageServiceClient {
     */
   def deleteBlob(container: String, blob: String, callback: StorageCallback[Boolean]): Unit = js.native
   def deleteBlob(container: String, blob: String, options: DeleteBlobOptions, callback: StorageCallback[Boolean]): Unit = js.native
+  
   /**
     * Marks the specified container for deletion.
     * The container and any blobs contained within it are later deleted during garbage collection.
     */
   def deleteContainer(container: String, callback: StorageCallbackVoid): Unit = js.native
   def deleteContainer(container: String, options: LeaseIdOptions, callback: StorageCallbackVoid): Unit = js.native
+  
   /**
     * Generate a random block id prefix.
     */
   def generateBlockIdPrefix(): String = js.native
+  
   /**
     * Retrieves a shared access signature token.
     */
   def generateSharedAccessSignature(container: String, blob: String, sharedAccessPolicy: SharedAccessPolicy): SharedAccessSignatureResult = js.native
+  
   /**
     * Provides a stream to read from a blob.
     */
   def getBlob(container: String, blob: String, callback: StorageCallback[BlobResult]): Readable = js.native
   def getBlob(container: String, blob: String, options: ReadBlobOptions, callback: StorageCallback[BlobResult]): Readable = js.native
+  
   /**
     * Returns all user-defined metadata, standard HTTP properties, and system properties for the blob.
     * It does not return or modify the content of the blob.
@@ -316,6 +339,7 @@ class BlobService () extends StorageServiceClient {
     options: GetBlobPropertiesOptions,
     callback: StorageCallback[BlobResult]
   ): Unit = js.native
+  
   /**
     * Downloads a blob into a file.
     */
@@ -327,6 +351,7 @@ class BlobService () extends StorageServiceClient {
     options: ReadBlobOptions,
     callback: StorageCallback[BlobResult]
   ): Unit = js.native
+  
   /**
     * Downloads a blob into a stream.
     */
@@ -338,21 +363,25 @@ class BlobService () extends StorageServiceClient {
     options: ReadBlobOptions,
     callback: StorageCallback[BlobResult]
   ): Unit = js.native
+  
   /**
     * Downloads a blob into a text string.
     */
   def getBlobToText(container: String, blob: String, callback: GetBlobToTextCallback): Unit = js.native
   def getBlobToText(container: String, blob: String, options: ReadBlobOptions, callback: GetBlobToTextCallback): Unit = js.native
+  
   /**
     * Retrieves a blob or container URL.
     */
   def getBlobUrl(container: String): String = js.native
   def getBlobUrl(container: String, blob: String): String = js.native
   def getBlobUrl(container: String, blob: String, sharedAccessPolicy: SharedAccessPolicy): String = js.native
+  
   /**
     * Get a block id according to prefix and block number.
     */
   def getBlockId(prefix: String, number: Double): String = js.native
+  
   /**
     * Gets the container's ACL.
     */
@@ -362,6 +391,7 @@ class BlobService () extends StorageServiceClient {
     options: GetContainerPropertiesOptions,
     callback: StorageCallback[ContainerResult]
   ): Unit = js.native
+  
   /**
     * Returns all user-defined metadata for the container.
     */
@@ -371,6 +401,7 @@ class BlobService () extends StorageServiceClient {
     options: GetContainerPropertiesOptions,
     callback: StorageCallback[ContainerResult]
   ): Unit = js.native
+  
   /**
     * Retrieves a container and its properties from a specified account.
     */
@@ -380,6 +411,7 @@ class BlobService () extends StorageServiceClient {
     options: GetContainerPropertiesOptions,
     callback: StorageCallback[ContainerResult]
   ): Unit = js.native
+  
   //#endregion
   //#region Service Methods
   /**
@@ -387,6 +419,7 @@ class BlobService () extends StorageServiceClient {
     */
   def getServiceProperties(callback: StorageServicePropertiesCallback): Unit = js.native
   def getServiceProperties(options: TimeoutIntervalOptions, callback: StorageServicePropertiesCallback): Unit = js.native
+  
   /**
     * Retrieves the list of blocks that have been uploaded as part of a block blob.
     */
@@ -398,6 +431,7 @@ class BlobService () extends StorageServiceClient {
     options: GetBlobPropertiesOptions,
     callback: StorageCallback[BlockList]
   ): Unit = js.native
+  
   /**
     * Lists page ranges.
     * Lists all of the page ranges by default, or only the page ranges over a specific range of bytes if rangeStart and rangeEnd are specified.
@@ -409,6 +443,7 @@ class BlobService () extends StorageServiceClient {
     options: PageRangeOptions,
     callback: StorageCallback[js.Array[PageRange]]
   ): Unit = js.native
+  
   //#endregion
   //#region Blob Methods
   /**
@@ -416,6 +451,7 @@ class BlobService () extends StorageServiceClient {
     */
   def listBlobs(container: String, callback: ListBlobsCallback): Unit = js.native
   def listBlobs(container: String, options: ListBlobsOptions, callback: ListBlobsCallback): Unit = js.native
+  
   //#endregion
   //#region Containers Methods
   /**
@@ -423,6 +459,9 @@ class BlobService () extends StorageServiceClient {
     */
   def listContainers(callback: ListContainersCallback): Unit = js.native
   def listContainers(options: ListContainersOptions, callback: ListContainersCallback): Unit = js.native
+  
+  var parallelOperationThreadCount: Double = js.native
+  
   //#endregion
   //#region Block Blob Methods
   /**
@@ -436,6 +475,7 @@ class BlobService () extends StorageServiceClient {
     options: UploadBlockBlobOptions,
     callback: StorageCallback[BlobResult]
   ): SpeedSummary = js.native
+  
   /**
     * Uploads a block blob from a stream.
     */
@@ -454,6 +494,7 @@ class BlobService () extends StorageServiceClient {
     options: UploadBlockBlobOptions,
     callback: StorageCallback[BlobResult]
   ): SpeedSummary = js.native
+  
   /**
     * Releases the lease.
     * If container and blob are specified, releases the blob lease.
@@ -467,6 +508,7 @@ class BlobService () extends StorageServiceClient {
     options: AccessConditionsOptions,
     callback: StorageCallback[LeaseResult]
   ): Unit = js.native
+  
   /**
     * Renews an existing lease.
     * If container and blob are specified, renews the blob lease.
@@ -480,6 +522,7 @@ class BlobService () extends StorageServiceClient {
     options: AccessConditionsOptions,
     callback: StorageCallback[LeaseResult]
   ): Unit = js.native
+  
   /**
     * Resizes a page blob.
     */
@@ -491,6 +534,7 @@ class BlobService () extends StorageServiceClient {
     options: LeaseAccessConditionsOptions,
     callback: StorageCallback[BlobResult]
   ): Unit = js.native
+  
   /**
     * Sets user-defined metadata for the specified blob or snapshot as one or more name-value pairs
     * It does not return or modify the content of the blob.
@@ -503,6 +547,7 @@ class BlobService () extends StorageServiceClient {
     options: GetBlobPropertiesOptions,
     callback: StorageCallback[BlobResult]
   ): Unit = js.native
+  
   /**
     * Sets user-defined properties for the specified blob or snapshot.
     * It does not return or modify the content of the blob.
@@ -514,6 +559,7 @@ class BlobService () extends StorageServiceClient {
     options: SetBlobPropertiesOptions,
     callback: StorageCallback[BlobResult]
   ): Unit = js.native
+  
   /**
     * Updates the container's ACL.
     */
@@ -524,6 +570,7 @@ class BlobService () extends StorageServiceClient {
     options: StorageAclOptions,
     callback: StorageCallback[ContainerResult]
   ): Unit = js.native
+  
   /**
     * Sets the container's metadata.
     */
@@ -534,6 +581,7 @@ class BlobService () extends StorageServiceClient {
     options: AccessConditionsOptions,
     callback: StorageCallback[ContainerResult]
   ): Unit = js.native
+  
   /**
     * Sets the page blob's sequence number.
     */
@@ -552,6 +600,7 @@ class BlobService () extends StorageServiceClient {
     options: AccessConditionsOptions,
     callback: StorageCallback[BlobResult]
   ): Unit = js.native
+  
   /**
     * Sets the properties of a storage account's Blob service, including Azure Storage Analytics.
     * You can also use this operation to set the default request version for all incoming requests that do not have a version specified.
@@ -562,5 +611,6 @@ class BlobService () extends StorageServiceClient {
     options: TimeoutIntervalOptions,
     callback: StorageCallbackVoid
   ): Unit = js.native
+  
+  var singleBlobPutThresholdInBytes: Double = js.native
 }
-

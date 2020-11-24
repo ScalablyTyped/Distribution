@@ -4,11 +4,12 @@ import typings.smoothScrollbar.anon.PartialScrollToOptionsCallback
 import typings.smoothScrollbar.scrollbarMod.Scrollbar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("smooth-scrollbar/scrolling/scroll-to", JSImport.Namespace)
 @js.native
 object scrollToMod extends js.Object {
+  
   def scrollTo(scrollbar: Scrollbar, x: Double, y: Double): Unit = js.native
   def scrollTo(
     scrollbar: Scrollbar,
@@ -26,4 +27,3 @@ object scrollToMod extends js.Object {
     hasEasingCallback: PartialScrollToOptionsCallback
   ): Unit = js.native
 }
-

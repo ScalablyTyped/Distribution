@@ -12,7 +12,7 @@ provide a library like chess.js but for tic tac toe.. you can make your own GUI
 | Keywords           | tic, tac, toe, move, generation, tic-tac-toe |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 994 |
+| # downloads        | 977 |
 | # stars            | 0 |
 
 ## Links

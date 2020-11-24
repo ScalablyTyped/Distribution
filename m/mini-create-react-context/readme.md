@@ -1,7 +1,7 @@
 
 # Scala.js typings for mini-create-react-context
 
-Typings are for version 0.3.2
+Typings are for version 0.3.3
 
 ## Library description:
 Smaller Polyfill for the proposed React context API
@@ -10,9 +10,9 @@ Smaller Polyfill for the proposed React context API
 | ------------------ | :-------------: |
 | Full name          | mini-create-react-context |
 | Keywords           | react, context, contextTypes, polyfill, ponyfill |
-| # releases         | 6 |
-| # dependents       | 6 |
-| # downloads        | 23952327 |
+| # releases         | 7 |
+| # dependents       | 8 |
+| # downloads        | 87085798 |
 | # stars            | 0 |
 
 ## Links

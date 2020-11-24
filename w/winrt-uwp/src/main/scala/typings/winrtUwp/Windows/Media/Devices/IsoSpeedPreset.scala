@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait IsoSpeedPreset extends js.Object
-
 /** Defines the possible values for ISO speed presets. */
 @JSGlobal("Windows.Media.Devices.IsoSpeedPreset")
 @js.native
 object IsoSpeedPreset extends js.Object {
+  
   /** The film speed is automatically set. */
   @js.native
   sealed trait auto extends IsoSpeedPreset
@@ -58,6 +58,4 @@ object IsoSpeedPreset extends js.Object {
   /** The film speed is set to 800 ISO. */
   @js.native
   sealed trait iso800 extends IsoSpeedPreset
-  
 }
-

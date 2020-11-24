@@ -2,11 +2,12 @@ package typings.browserResolve.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("browser-resolve", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Resolve a module path and call cb(err, path)
     *
@@ -23,4 +24,3 @@ object ^ extends js.Object {
     */
   def apply(id: String, opts: AsyncOpts, cb: Callback): Unit = js.native
 }
-

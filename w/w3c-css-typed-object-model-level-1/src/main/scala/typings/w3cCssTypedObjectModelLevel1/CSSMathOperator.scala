@@ -2,14 +2,14 @@ package typings.w3cCssTypedObjectModelLevel1
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait CSSMathOperator extends js.Object
-
 @JSGlobal("CSSMathOperator")
 @js.native
 object CSSMathOperator extends js.Object {
+  
   @js.native
   sealed trait clamp extends CSSMathOperator
   
@@ -30,6 +30,4 @@ object CSSMathOperator extends js.Object {
   
   @js.native
   sealed trait sum extends CSSMathOperator
-  
 }
-

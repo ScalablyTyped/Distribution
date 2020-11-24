@@ -7,7 +7,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** used to specify where a field in a data pilot table is laid out. */
 /* Rewritten from type alias, can be one of: 
@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
 trait DataPilotFieldOrientation extends js.Object
-
 object DataPilotFieldOrientation {
+  
   /**
     * the field is used as a column field.
     *
@@ -29,15 +29,19 @@ object DataPilotFieldOrientation {
     */
   @scala.inline
   def COLUMN: `1` = 1.asInstanceOf[`1`]
+  
   /** the field is used as a data field. */
   @scala.inline
   def DATA: `4` = 4.asInstanceOf[`4`]
+  
   /** the field is not used in the table. */
   @scala.inline
   def HIDDEN: `0` = 0.asInstanceOf[`0`]
+  
   /** the field is used as a page field. */
   @scala.inline
   def PAGE: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * the field is used as a row field.
     *
@@ -48,4 +52,3 @@ object DataPilotFieldOrientation {
   @scala.inline
   def ROW: `2` = 2.asInstanceOf[`2`]
 }
-

@@ -2,33 +2,11 @@ package typings.activexOffice.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CustomXMLNode extends js.Object {
-  val Application: js.Any = js.native
-  @JSName("Attributes")
-  val Attributes_Original: CustomXMLNodes = js.native
-  val BaseName: String = js.native
-  @JSName("ChildNodes")
-  val ChildNodes_Original: CustomXMLNodes = js.native
-  val Creator: Double = js.native
-  val FirstChild: CustomXMLNode = js.native
-  val LastChild: CustomXMLNode = js.native
-  val NamespaceURI: String = js.native
-  val NextSibling: CustomXMLNode = js.native
-  val NodeType: MsoCustomXMLNodeType = js.native
-  var NodeValue: String = js.native
-  @JSName("Office.CustomXMLNode_typekey")
-  var OfficeDotCustomXMLNode_typekey: CustomXMLNode = js.native
-  val OwnerDocument: js.Any = js.native
-  val OwnerPart: CustomXMLPart = js.native
-  val Parent: js.Any = js.native
-  val ParentNode: CustomXMLNode = js.native
-  val PreviousSibling: CustomXMLNode = js.native
-  var Text: String = js.native
-  val XML: String = js.native
-  val XPath: String = js.native
+  
   /**
     * @param Name [Name='']
     * @param NamespaceURI [NamespaceURI='']
@@ -85,11 +63,29 @@ trait CustomXMLNode extends js.Object {
   def AppendChildNode(Name: String, NamespaceURI: String, NodeType: js.UndefOr[scala.Nothing], NodeValue: String): Unit = js.native
   def AppendChildNode(Name: String, NamespaceURI: String, NodeType: MsoCustomXMLNodeType): Unit = js.native
   def AppendChildNode(Name: String, NamespaceURI: String, NodeType: MsoCustomXMLNodeType, NodeValue: String): Unit = js.native
+  
   def AppendChildSubtree(XML: String): Unit = js.native
+  
+  val Application: js.Any = js.native
+  
   def Attributes(Index: Double): CustomXMLNode = js.native
+  @JSName("Attributes")
+  val Attributes_Original: CustomXMLNodes = js.native
+  
+  val BaseName: String = js.native
+  
   def ChildNodes(Index: Double): CustomXMLNode = js.native
+  @JSName("ChildNodes")
+  val ChildNodes_Original: CustomXMLNodes = js.native
+  
+  val Creator: Double = js.native
+  
   def Delete(): Unit = js.native
+  
+  val FirstChild: CustomXMLNode = js.native
+  
   def HasChildNodes(): Boolean = js.native
+  
   /**
     * @param Name [Name='']
     * @param NamespaceURI [NamespaceURI='']
@@ -259,10 +255,36 @@ trait CustomXMLNode extends js.Object {
     NodeValue: String,
     NextSibling: CustomXMLNode
   ): Unit = js.native
+  
   /** @param NextSibling [NextSibling=0] */
   def InsertSubtreeBefore(XML: String): Unit = js.native
   def InsertSubtreeBefore(XML: String, NextSibling: CustomXMLNode): Unit = js.native
+  
+  val LastChild: CustomXMLNode = js.native
+  
+  val NamespaceURI: String = js.native
+  
+  val NextSibling: CustomXMLNode = js.native
+  
+  val NodeType: MsoCustomXMLNodeType = js.native
+  
+  var NodeValue: String = js.native
+  
+  @JSName("Office.CustomXMLNode_typekey")
+  var OfficeDotCustomXMLNode_typekey: CustomXMLNode = js.native
+  
+  val OwnerDocument: js.Any = js.native
+  
+  val OwnerPart: CustomXMLPart = js.native
+  
+  val Parent: js.Any = js.native
+  
+  val ParentNode: CustomXMLNode = js.native
+  
+  val PreviousSibling: CustomXMLNode = js.native
+  
   def RemoveChild(Child: CustomXMLNode): Unit = js.native
+  
   /**
     * @param Name [Name='']
     * @param NamespaceURI [NamespaceURI='']
@@ -348,8 +370,16 @@ trait CustomXMLNode extends js.Object {
     NodeType: MsoCustomXMLNodeType,
     NodeValue: String
   ): Unit = js.native
+  
   def ReplaceChildSubtree(XML: String, OldNode: CustomXMLNode): Unit = js.native
+  
   def SelectNodes(XPath: String): CustomXMLNodes = js.native
+  
   def SelectSingleNode(XPath: String): CustomXMLNode = js.native
+  
+  var Text: String = js.native
+  
+  val XML: String = js.native
+  
+  val XPath: String = js.native
 }
-

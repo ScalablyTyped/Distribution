@@ -2,7 +2,7 @@ package typings.aliApp.my
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.aliApp.aliAppStrings.tap
@@ -13,19 +13,23 @@ import scala.scalajs.js.annotation._
   - typings.aliApp.aliAppStrings.touchforcechange
 */
 trait TouchEventType extends js.Object
-
 object TouchEventType {
+  
   @scala.inline
   def tap: typings.aliApp.aliAppStrings.tap = "tap".asInstanceOf[typings.aliApp.aliAppStrings.tap]
+  
   @scala.inline
   def touchcancel: typings.aliApp.aliAppStrings.touchcancel = "touchcancel".asInstanceOf[typings.aliApp.aliAppStrings.touchcancel]
+  
   @scala.inline
   def touchend: typings.aliApp.aliAppStrings.touchend = "touchend".asInstanceOf[typings.aliApp.aliAppStrings.touchend]
+  
   @scala.inline
   def touchforcechange: typings.aliApp.aliAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typings.aliApp.aliAppStrings.touchforcechange]
+  
   @scala.inline
   def touchmove: typings.aliApp.aliAppStrings.touchmove = "touchmove".asInstanceOf[typings.aliApp.aliAppStrings.touchmove]
+  
   @scala.inline
   def touchstart: typings.aliApp.aliAppStrings.touchstart = "touchstart".asInstanceOf[typings.aliApp.aliAppStrings.touchstart]
 }
-

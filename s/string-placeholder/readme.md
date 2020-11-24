@@ -11,8 +11,8 @@ Replaces placeholders from string templates.
 | Full name          | string-placeholder |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 22831 |
+| # dependents       | 3 |
+| # downloads        | 30583 |
 | # stars            | 0 |
 
 ## Links

@@ -3,11 +3,12 @@ package typings.postcssLoadConfig.mod
 import typings.cosmiconfig.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postcss-load-config", "sync")
 @js.native
 object sync extends js.Object {
+  
   def apply(): Result = js.native
   def apply(ctx: js.UndefOr[scala.Nothing], path: js.UndefOr[scala.Nothing], options: Options): Result = js.native
   def apply(ctx: js.UndefOr[scala.Nothing], path: String): Result = js.native
@@ -17,4 +18,3 @@ object sync extends js.Object {
   def apply(ctx: ConfigContext, path: String): Result = js.native
   def apply(ctx: ConfigContext, path: String, options: Options): Result = js.native
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-native-community/viewpager" : "1.1.7"
+      "@react-native-community/viewpager" : "4.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-native-community/viewpager" : "1.1.7"
+      "@react-native-community/viewpager" : "4.2.0"
     }
   ],
   "compile-devDependencies" : [

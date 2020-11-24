@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.jose.mod.JSONWebKeySet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeOfGenericClient[TClient /* <: Client */]
@@ -18,4 +18,3 @@ trait TypeOfGenericClient[TClient /* <: Client */]
       /* options */ ClientOptions, 
       TClient
     ]
-

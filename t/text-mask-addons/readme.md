@@ -10,9 +10,9 @@ Addons for Text Mask https://github.com/text-mask/text-mask
 | ------------------ | :-------------: |
 | Full name          | text-mask-addons |
 | Keywords           | text mask, input mask, string mask, input formatting, text formatting, string formatting |
-| # releases         | 2 |
-| # dependents       | 339 |
-| # downloads        | 6029646 |
+| # releases         | 0 |
+| # dependents       | 393 |
+| # downloads        | 7558742 |
 | # stars            | 2 |
 
 ## Links

@@ -2,12 +2,12 @@ package typings.reachTooltip.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TooltipPopupProps extends BaseTooltipProps
-
 object TooltipPopupProps {
+  
   @scala.inline
   def apply(BaseTooltipProps: BaseTooltipProps): TooltipPopupProps = {
     val __obj = js.Dynamic.literal()
@@ -15,4 +15,3 @@ object TooltipPopupProps {
     __obj.asInstanceOf[TooltipPopupProps]
   }
 }
-

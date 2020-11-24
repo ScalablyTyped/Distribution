@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/playcustomapp/v1", "playcustomapp_v1.Resource$Accounts$Customapps")
 @js.native
 class ResourceAccountsCustomapps protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * playcustomapp.accounts.customApps.create
     * @desc Create and publish a new custom app.
@@ -46,4 +48,3 @@ class ResourceAccountsCustomapps protected () extends js.Object {
     callback: BodyResponseCallback[SchemaCustomApp]
   ): Unit = js.native
 }
-

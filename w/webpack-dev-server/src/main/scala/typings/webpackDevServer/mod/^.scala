@@ -2,7 +2,7 @@ package typings.webpackDevServer.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webpack-dev-server", JSImport.Namespace)
 @js.native
@@ -13,10 +13,10 @@ class ^ protected () extends WebpackDevServer {
     config: Configuration
   ) = this()
 }
-
 @JSImport("webpack-dev-server", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def addDevServerEntrypoints(
     webpackOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any,
     config: Configuration
@@ -40,4 +40,3 @@ object ^ extends js.Object {
     listeningApp: ListeningApp
   ): Unit = js.native
 }
-

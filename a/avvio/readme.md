@@ -10,9 +10,9 @@ Asynchronous bootstrapping of Node applications
 | ------------------ | :-------------: |
 | Full name          | avvio |
 | Keywords           | async, boot, delayed, open |
-| # releases         | 25 |
-| # dependents       | 9 |
-| # downloads        | 2248005 |
+| # releases         | 29 |
+| # dependents       | 10 |
+| # downloads        | 4749109 |
 | # stars            | 4 |
 
 ## Links

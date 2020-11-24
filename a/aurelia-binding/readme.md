@@ -10,9 +10,9 @@ A modern databinding library for JavaScript and HTML.
 | ------------------ | :-------------: |
 | Full name          | aurelia-binding |
 | Keywords           | aurelia, binding, databinding |
-| # releases         | 21 |
-| # dependents       | 71 |
-| # downloads        | 619289 |
+| # releases         | 12 |
+| # dependents       | 76 |
+| # downloads        | 650481 |
 | # stars            | 0 |
 
 ## Links

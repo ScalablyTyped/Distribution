@@ -4,7 +4,7 @@ import typings.smartFoxServer.SFS2X.Entities.Data.Vec3D
 import typings.smartFoxServer.SFS2X.Entities.MMORoom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region MMO
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SFS2X.Requests.MMO")
 @js.native
 object MMO extends js.Object {
+  
   @js.native
   class MMORoomSettings protected ()
     extends typings.smartFoxServer.SFS2X.Requests.MMO.MMORoomSettings {
@@ -44,6 +45,4 @@ object MMO extends js.Object {
     def this(pos: Vec3D) = this()
     def this(pos: Vec3D, targetRoom: MMORoom) = this()
   }
-  
 }
-

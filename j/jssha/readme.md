@@ -4,15 +4,15 @@
 Typings are for version 2.0
 
 ## Library description:
-jsSHA is a JavaScript implementation of the complete Secure Hash Standard family (SHA-1, SHA-224, SHA3-224, SHA-256, SHA3-256, SHA-384, SHA3-384, SHA-512, SHA3-512, SHAKE128, and SHAKE256) as well as HMAC
+jsSHA implements the complete Secure Hash Standard (SHA) family (SHA-1, SHA-224/256/384/512, SHA3-224/256/384/512, SHAKE128/256, cSHAKE128/256, and KMAC128/256) with HMAC
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | jssha |
-| Keywords           | SHA-1, SHA-224, SHA3-224, SHA-256, SHA3-256, SHA-384, SHA3-384, SHA-512, SHA3-512, SHAKE-128, SHAKE-256, SHAKE128, SHAKE256, SHA1, SHA224, SHA256, SHA384, SHA512, SHA-2, SHA2, SHA-3, SHA3, SHAKE, HMAC, hash |
-| # releases         | 0 |
-| # dependents       | 242 |
-| # downloads        | 5654439 |
+| Keywords           | SHA-1, SHA-224, SHA3-224, SHA-256, SHA3-256, SHA-384, SHA3-384, SHA-512, SHA3-512, SHAKE-128, SHAKE-256, SHAKE128, SHAKE256, cSHAKE128, cSHAKE256, KMAC128, KMAC256, SHA1, SHA224, SHA256, SHA384, SHA512, SHA-2, SHA2, SHA-3, SHA3, SHAKE, cSHAKE, cSHAKE-128, cSHAKE-256, HMAC, KMAC, KMAC-128, KMAC-256, hash, cryptography |
+| # releases         | 9 |
+| # dependents       | 274 |
+| # downloads        | 11427128 |
 | # stars            | 5 |
 
 ## Links

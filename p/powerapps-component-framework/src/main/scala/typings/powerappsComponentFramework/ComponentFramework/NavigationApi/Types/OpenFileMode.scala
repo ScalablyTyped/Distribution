@@ -2,7 +2,7 @@ package typings.powerappsComponentFramework.ComponentFramework.NavigationApi.Typ
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options for openFile mode.
@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
   - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2`
 */
 trait OpenFileMode extends js.Object
-
 object OpenFileMode {
+  
   @scala.inline
   def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
+  
   @scala.inline
   def `2`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2` = 2.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2`]
 }
-

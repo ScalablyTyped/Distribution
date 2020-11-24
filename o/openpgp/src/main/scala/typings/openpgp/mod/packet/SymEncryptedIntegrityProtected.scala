@@ -3,7 +3,7 @@ package typings.openpgp.mod.packet
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "packet.SymEncryptedIntegrityProtected")
 @js.native
@@ -17,16 +17,7 @@ import scala.scalajs.js.annotation._
   * packet.
   */
 class SymEncryptedIntegrityProtected () extends js.Object {
-  /**
-    * The encrypted payload.
-    */
-  var encrypted: js.Any = js.native
-  /**
-    * If after decrypting the packet this is set to true,
-    * a modification has been detected and thus the contents
-    * should be discarded.
-    */
-  var modification: Boolean = js.native
+  
   /**
     * Decrypts the encrypted data contained in the packet.
     * @param sessionKeyAlgorithm The selected symmetric encryption algorithm to be used e.g. 'aes128'
@@ -35,6 +26,7 @@ class SymEncryptedIntegrityProtected () extends js.Object {
     * @returns
     */
   def decrypt(sessionKeyAlgorithm: String, key: Uint8Array, streaming: Boolean): js.Promise[Boolean] = js.native
+  
   /**
     * Encrypt the payload in the packet.
     * @param sessionKeyAlgorithm The selected symmetric encryption algorithm to be used e.g. 'aes128'
@@ -43,5 +35,16 @@ class SymEncryptedIntegrityProtected () extends js.Object {
     * @returns
     */
   def encrypt(sessionKeyAlgorithm: String, key: Uint8Array, streaming: Boolean): js.Promise[Boolean] = js.native
+  
+  /**
+    * The encrypted payload.
+    */
+  var encrypted: js.Any = js.native
+  
+  /**
+    * If after decrypting the packet this is set to true,
+    * a modification has been detected and thus the contents
+    * should be discarded.
+    */
+  var modification: Boolean = js.native
 }
-

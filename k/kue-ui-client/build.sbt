@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "kue-ui-client"
-version := "1.2-dt-20191002Z-ccdbc1"
+version := "1.2-dt-20191002Z-1ecb5a"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

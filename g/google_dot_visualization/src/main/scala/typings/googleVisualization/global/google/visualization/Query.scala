@@ -3,7 +3,7 @@ package typings.googleVisualization.global.google.visualization
 import typings.googleVisualization.google.visualization.QueryOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("google.visualization.Query")
 @js.native
@@ -12,4 +12,3 @@ class Query protected ()
   def this(dataSourceUrl: String) = this()
   def this(dataSourceUrl: String, options: QueryOptions) = this()
 }
-

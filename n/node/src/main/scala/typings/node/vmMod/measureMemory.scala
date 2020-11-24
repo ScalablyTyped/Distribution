@@ -2,11 +2,12 @@ package typings.node.vmMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vm", "measureMemory")
 @js.native
 object measureMemory extends js.Object {
+  
   /**
     * Measure the memory known to V8 and used by the current execution context or a specified context.
     *
@@ -25,4 +26,3 @@ object measureMemory extends js.Object {
   def apply(): js.Promise[MemoryMeasurement] = js.native
   def apply(options: MeasureMemoryOptions): js.Promise[MemoryMeasurement] = js.native
 }
-

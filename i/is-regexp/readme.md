@@ -10,9 +10,9 @@ Check if a value is a regular expression
 | ------------------ | :-------------: |
 | Full name          | is-regexp |
 | Keywords           | regex, regexp, regular, expression, regular expression, re, check, type, is |
-| # releases         | 3 |
-| # dependents       | 35 |
-| # downloads        | 148759973 |
+| # releases         | 2 |
+| # dependents       | 49 |
+| # downloads        | 244258748 |
 | # stars            | 1 |
 
 ## Links

@@ -4,7 +4,7 @@ import typings.playcanvas.anon.UseMouse
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create a new pc.ElementInput instance.
@@ -21,4 +21,3 @@ class ElementInput protected ()
   def this(domElement: Element) = this()
   def this(domElement: Element, options: UseMouse) = this()
 }
-

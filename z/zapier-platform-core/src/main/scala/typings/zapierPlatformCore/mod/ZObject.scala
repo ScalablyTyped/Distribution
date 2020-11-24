@@ -11,21 +11,30 @@ import typings.zapierPlatformCore.anon.HttpRequestOptionsurlstri
 import typings.zapierPlatformCore.anon.Parse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ZObject extends js.Object {
+  
   var JSON: Parse = js.native
+  
   var console: Console = js.native
+  
   var cursor: Get = js.native
+  
+  def dehydrate[T](func: js.Function2[/* z */ ZObject, /* bundle */ Bundle[T], _], inputData: js.Object): String = js.native
+  
+  def dehydrateFile[T](func: js.Function2[/* z */ ZObject, /* bundle */ Bundle[T], _], inputData: js.Object): String = js.native
   @JSName("dehydrateFile")
   var dehydrateFile_Original: DehydrateFunc = js.native
+  
   @JSName("dehydrate")
   var dehydrate_Original: DehydrateFunc = js.native
+  
   var errors: Error = js.native
-  def dehydrate[T](func: js.Function2[/* z */ ZObject, /* bundle */ Bundle[T], _], inputData: js.Object): String = js.native
-  def dehydrateFile[T](func: js.Function2[/* z */ ZObject, /* bundle */ Bundle[T], _], inputData: js.Object): String = js.native
+  
   def generateCallbackUrl(): String = js.native
+  
   /**
     * Easily hash data using node's crypto package
     * @param algorithm probably 'sha256', see [this](https://nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm_options) for more options
@@ -37,11 +46,13 @@ trait ZObject extends js.Object {
   def hash(algorithm: String, data: String, encoding: js.UndefOr[scala.Nothing], input_encoding: String): String = js.native
   def hash(algorithm: String, data: String, encoding: String): String = js.native
   def hash(algorithm: String, data: String, encoding: String, input_encoding: String): String = js.native
+  
   def request(options: HttpRequestOptionsrawtrueAgent): js.Promise[RawHttpResponse] = js.native
   def request(options: HttpRequestOptionsurlstri): js.Promise[HttpResponse] = js.native
   def request(url: String): js.Promise[HttpResponse] = js.native
   def request(url: String, options: HttpRequestOptionsrawtrue): js.Promise[RawHttpResponse] = js.native
   def request(url: String, options: HttpRequestOptions): js.Promise[HttpResponse] = js.native
+  
   /**
     * turns a file or request into a file into a publicly accessible url
     */
@@ -99,4 +110,3 @@ trait ZObject extends js.Object {
   def stashFile(input: ReadableStream, knownLength: Double, filename: String): String = js.native
   def stashFile(input: ReadableStream, knownLength: Double, filename: String, contentType: String): String = js.native
 }
-

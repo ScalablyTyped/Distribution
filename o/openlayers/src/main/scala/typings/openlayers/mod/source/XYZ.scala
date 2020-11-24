@@ -3,7 +3,7 @@ package typings.openlayers.mod.source
 import typings.openlayers.mod.olx.source.XYZOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -50,4 +50,3 @@ import scala.scalajs.js.annotation._
 class XYZ () extends TileImage {
   def this(opt_options: XYZOptions) = this()
 }
-

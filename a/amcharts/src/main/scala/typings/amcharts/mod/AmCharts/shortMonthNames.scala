@@ -3,7 +3,7 @@ package typings.amcharts.mod.AmCharts
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Array of short versions of month names, used when formatting dates (if categoryAxis.parseDates is set to true)
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 object shortMonthNames
   extends TopLevel[js.Array[String]]
-

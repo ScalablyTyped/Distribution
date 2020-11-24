@@ -11,12 +11,11 @@ A general purpose library for building credit card forms, validating inputs and 
 | Keywords           | payment, cc, card |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 522403 |
+| # downloads        | 709860 |
 | # stars            | 1 |
 
 ## Links
 - [Homepage](https://github.com/stripe/jquery.payment#readme)
-- [Bugs](https://github.com/stripe/jquery.payment/issues)
 - [Repository](https://github.com/stripe/jquery.payment)
 - [Npm](https://www.npmjs.com/package/jquery.payment)
     

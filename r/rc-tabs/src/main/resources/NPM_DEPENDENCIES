@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-tabs" : "11.5.6"
+      "rc-tabs" : "11.7.1"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-tabs" : "11.5.6"
+      "rc-tabs" : "11.7.1"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "object-mapper"
-version := "6.2-dt-20200522Z-dcdc31"
+version := "6.2-dt-20200522Z-5e56d5"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

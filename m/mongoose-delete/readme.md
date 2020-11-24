@@ -12,7 +12,7 @@ Mongoose soft delete plugin
 | Keywords           | mongoose, soft, delete, delete, remove, plugin |
 | # releases         | 3 |
 | # dependents       | 19 |
-| # downloads        | 270189 |
+| # downloads        | 436839 |
 | # stars            | 15 |
 
 ## Links

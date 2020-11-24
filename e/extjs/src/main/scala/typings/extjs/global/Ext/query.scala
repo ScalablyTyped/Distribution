@@ -3,11 +3,12 @@ package typings.extjs.global.Ext
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.query")
 @js.native
 object query extends js.Object {
+  
   def apply(): typings.extjs.Ext.Array = js.native
   def apply(
     path: js.UndefOr[scala.Nothing],
@@ -45,4 +46,3 @@ object query extends js.Object {
   def apply(path: java.lang.String, root: HTMLElement, `type`: java.lang.String): typings.extjs.Ext.Array = js.native
   def apply(path: java.lang.String, root: HTMLElement, `type`: java.lang.String, single: Boolean): typings.extjs.Ext.Array = js.native
 }
-

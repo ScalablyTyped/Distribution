@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@sideway/pinpoint" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@sideway/pinpoint" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

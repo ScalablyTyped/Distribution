@@ -5,15 +5,15 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.webXRInputSourceMod.IWebXRControllerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/XR/index", "WebXRInputSource")
 @js.native
 class WebXRInputSource protected ()
   extends typings.babylonjs.webXRInputSourceMod.WebXRInputSource {
   /**
-    * Creates the controller
-    * @see https://doc.babylonjs.com/how_to/webxr
+    * Creates the input source object
+    * @see https://doc.babylonjs.com/how_to/webxr_controllers_support
     * @param _scene the scene which the controller should be associated to
     * @param inputSource the underlying input source for the controller
     * @param _options options for this controller creation
@@ -27,4 +27,3 @@ class WebXRInputSource protected ()
     _options: IWebXRControllerOptions
   ) = this()
 }
-

@@ -10,15 +10,15 @@ Typings are for version 2.8
 | ------------------ | :-------------: |
 | Full name          | ltx |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 85 |
-| # downloads        | 1130830 |
+| # releases         | 7 |
+| # dependents       | 90 |
+| # downloads        | 1504424 |
 | # stars            | 3 |
 
 ## Links
-- [Homepage](http://github.com/node-xmpp/ltx)
-- [Bugs](http://github.com/node-xmpp/ltx/issues)
-- [Repository](https://github.com/node-xmpp/ltx)
+- [Homepage](http://github.com/xmppjs/ltx)
+- [Bugs](http://github.com/xmppjs/ltx/issues)
+- [Repository](https://github.com/xmppjs/ltx)
 - [Npm](https://www.npmjs.com/package/ltx)
     
 

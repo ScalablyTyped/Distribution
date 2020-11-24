@@ -3,12 +3,12 @@ package typings.winrt.Windows.UI.Input.Inking
 import typings.winrt.Windows.Foundation.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InkStrokeRenderingSegment extends IInkStrokeRenderingSegment
-
 object InkStrokeRenderingSegment {
+  
   @scala.inline
   def apply(
     bezierControlPoint1: Point,
@@ -23,4 +23,3 @@ object InkStrokeRenderingSegment {
     __obj.asInstanceOf[InkStrokeRenderingSegment]
   }
 }
-

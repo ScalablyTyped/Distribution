@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Bidders$Filtersets$Filteredbids$Details")
 @js.native
 class ResourceBiddersFiltersetsFilteredbidsDetails protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer2.bidders.filterSets.filteredBids.details.list
     * @desc List all details associated with a specific reason for which bids
@@ -49,4 +51,3 @@ class ResourceBiddersFiltersetsFilteredbidsDetails protected () extends js.Objec
     callback: BodyResponseCallback[SchemaListCreativeStatusBreakdownByDetailResponse]
   ): Unit = js.native
 }
-

@@ -1,29 +1,19 @@
 package typings.unlCore.mod
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait ElevationType extends js.Object
-
-@JSImport("unl-core", "ElevationType")
-@js.native
-object ElevationType extends js.Object {
-  @js.native
-  sealed trait floor extends ElevationType
+/* Rewritten from type alias, can be one of: 
+  - typings.unlCore.unlCoreStrings.floor
+  - typings.unlCore.unlCoreStrings.heightincm
+*/
+trait ElevationType extends js.Object
+object ElevationType {
   
-  @js.native
-  sealed trait heightincm extends ElevationType
+  @scala.inline
+  def floor: typings.unlCore.unlCoreStrings.floor = "floor".asInstanceOf[typings.unlCore.unlCoreStrings.floor]
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ElevationType with String] = js.native
-  /* "floor" */ @js.native
-  object floor extends TopLevel[floor with String]
-  
-  /* "heightincm" */ @js.native
-  object heightincm extends TopLevel[heightincm with String]
-  
+  @scala.inline
+  def heightincm: typings.unlCore.unlCoreStrings.heightincm = "heightincm".asInstanceOf[typings.unlCore.unlCoreStrings.heightincm]
 }
-

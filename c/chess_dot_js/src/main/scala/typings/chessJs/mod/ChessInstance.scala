@@ -23,45 +23,60 @@ import typings.chessJs.chessJsStrings.r
 import typings.chessJs.chessJsStrings.w
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChessInstance extends js.Object {
+  
   /** The string that represents a Bishop */
   val BISHOP: b = js.native
+  
   /** The string that represents the Black color side */
   val BLACK: b = js.native
+  
   /** Flags used to build flag strings for moves */
   val FLAGS: BIGPAWN = js.native
+  
   /** The string that represents a King */
   val KING: k = js.native
+  
   /** The string that represents a Knight */
   val KNIGHT: n = js.native
+  
   /** The string that represents a Pawn */
   val PAWN: p = js.native
+  
   /** The string that represents a Queen */
   val QUEEN: q = js.native
+  
   /** The string that represents a Rook */
   val ROOK: r = js.native
+  
   /** A list of all the squares in the game, from "a1" to "h8" */
   val SQUARES: js.Array[js.Any] = js.native
+  
   /** The string that represents the White color side */
   val WHITE: w = js.native
+  
   /**
     * Returns a string containing an ASCII diagram of the current position.
     * @returns A string containing an ASCII diagram of the current position.
     */
   def ascii(): String = js.native
+  
   def board(): js.Array[js.Array[Color | Null]] = js.native
+  
   /**
     * Clears the board of all pieces.
     */
   def clear(): Unit = js.native
+  
   /**
     * Returns the FEN string for the current position.
     * @returns the FEN string for the current position.
     */
   def fen(): String = js.native
+  
   /**
     * Returns true if the game has ended via checkmate, stalemate, draw,
     * threefold repetition, or insufficient material.
@@ -71,6 +86,7 @@ trait ChessInstance extends js.Object {
     * false.
     */
   def game_over(): Boolean = js.native
+  
   /**
     * Returns the piece on the square
     * @param square the square to get the piece on.
@@ -78,6 +94,7 @@ trait ChessInstance extends js.Object {
     * square. Otherwise a piece object.
     */
   def get(square: Square): Piece | Null = js.native
+  
   /**
     * Allows header information to be added to PGN output.
     * Any number of key/value pairs can be passed to .header(), with each
@@ -86,6 +103,7 @@ trait ChessInstance extends js.Object {
     * @returns The current header information after storing any values.
     */
   def header(args: String*): StringDictionary[js.UndefOr[String]] = js.native
+  
   /**
     * Returns a list containing the moves of the current game.
     * Options is an optional parameter which may contain a 'verbose' flag.
@@ -106,16 +124,19 @@ trait ChessInstance extends js.Object {
     */
   def history(options: `1`): js.Array[Move] = js.native
   def history(options: `2`): js.Array[Move | String] = js.native
+  
   /**
     * Returns true or false if the side to move is in check.
     * @returns true or false if the side to move is in check.
     */
   def in_check(): Boolean = js.native
+  
   /**
     * Returns true or false if the side to move has been checkmated.
     * @returns true or false if the side to move has been checkmated.
     */
   def in_checkmate(): Boolean = js.native
+  
   /**
     * Returns true or false if the game is drawn (50-move rule or
     * insufficient material).
@@ -123,11 +144,13 @@ trait ChessInstance extends js.Object {
     * insufficient material).
     */
   def in_draw(): Boolean = js.native
+  
   /**
     * Returns true or false if the side to move has been stalemated.
     * @returns true or false if the side to move has been stalemated.
     */
   def in_stalemate(): Boolean = js.native
+  
   /**
     * Returns true or false if the current board position has occurred three
     * or more times.
@@ -135,6 +158,7 @@ trait ChessInstance extends js.Object {
     * or more times.
     */
   def in_threefold_repetition(): Boolean = js.native
+  
   /**
     * Returns true if the game is drawn due to insufficient material
     * (K vs. K, K vs. KB, or K vs. KN); otherwise false.
@@ -142,6 +166,7 @@ trait ChessInstance extends js.Object {
     * (K vs. K, K vs. KB, or K vs. KN); otherwise false.
     */
   def insufficient_material(): Boolean = js.native
+  
   /**
     * The board is cleared, and the FEN string is loaded.
     * Returns true if the position was successfully loaded, otherwise false
@@ -150,6 +175,7 @@ trait ChessInstance extends js.Object {
     * false
     */
   def load(fen: String): Boolean = js.native
+  
   /**
     * Load the moves of a game stored in Portable Game Notation.
     * @param pgn the pgn should be a string in Portable Game Notation.
@@ -160,6 +186,7 @@ trait ChessInstance extends js.Object {
     */
   def load_pgn(pgn: String): Boolean = js.native
   def load_pgn(pgn: String, options: Newlinechar): Boolean = js.native
+  
   /**
     * Attempts to make a move on the board, returning a move object if the
     * move was legal, otherwise null.
@@ -180,6 +207,7 @@ trait ChessInstance extends js.Object {
   def move(move: String, options: Sloppy): Move | Null = js.native
   def move(move: ShortMove): Move | Null = js.native
   def move(move: ShortMove, options: Sloppy): Move | Null = js.native
+  
   /**
     * Returns a list of legal moves from the current position.
     * The function takes an optional parameter which controls the
@@ -202,6 +230,7 @@ trait ChessInstance extends js.Object {
   def moves(options: typings.chessJs.anon.Square): js.Array[Move] = js.native
   def moves(options: SquareVerbose): js.Array[Move | String] = js.native
   def moves(options: Verbose): js.Array[String] = js.native
+  
   /**
     * Returns the game in PGN format.
     * Options is an optional parameter which may include max width and/or a
@@ -212,6 +241,7 @@ trait ChessInstance extends js.Object {
     */
   def pgn(): String = js.native
   def pgn(options: Maxwidth): String = js.native
+  
   /**
     * Place a piece on the square where piece is an object with the form
     * { type: ..., color: ... }.
@@ -223,6 +253,7 @@ trait ChessInstance extends js.Object {
     * board remains unchanged and false is returned.
     */
   def put(piece: Piece, square: Square): Boolean = js.native
+  
   /**
     * Remove and return the piece on square.
     * @param square the square to remove the piece from, e.g. "b6"
@@ -230,10 +261,12 @@ trait ChessInstance extends js.Object {
     * removed piece's type and color.
     */
   def remove(square: Square): Piece | Null = js.native
+  
   /**
     * Reset the board to the initial starting position.
     */
   def reset(): Unit = js.native
+  
   /**
     * Returns the color of the square ('light' or 'dark').
     * @param square the square to check if it is light or dark.
@@ -251,17 +284,20 @@ trait ChessInstance extends js.Object {
     * not a valid square.
     */
   def square_color(square: Square): light | dark = js.native
+  
   /**
     * Returns the current side to move.
     * @returns "b" if Black is the side to move, otherwise "w" for White.
     */
   def turn(): b | w = js.native
+  
   /**
     * Take back the last half-move, returning a move object if successful,
     * otherwise null.
     * @returns the move object that was undone if successful, otherwise null.
     */
   def undo(): Move | Null = js.native
+  
   /**
     * Returns a validation object specifying validity or the errors found
     * within the FEN string.
@@ -269,4 +305,3 @@ trait ChessInstance extends js.Object {
     */
   def validate_fen(fen: String): Error = js.native
 }
-

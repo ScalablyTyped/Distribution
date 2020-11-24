@@ -2,16 +2,18 @@ package typings.uiGrid.mod.saveState
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IGridOptions extends js.Object {
+  
   /**
     * Save the current filter state for each column
     * Defaults to true
     * @default true
     */
   var saveFilter: js.UndefOr[Boolean] = js.native
+  
   /**
     * Save the current focused cell. On returning to this focused cell we'll also scroll.
     * This option is preferred to the saveScroll option, so is set to true by default.
@@ -29,12 +31,14 @@ trait IGridOptions extends js.Object {
     * @default true
     */
   var saveFocus: js.UndefOr[Boolean] = js.native
+  
   /**
     * Save the grouping configuration. If set to true and the grouping feature is not enabled then does
     * nothing. Defaults to true
     * @default true
     */
   var saveGrouping: js.UndefOr[Boolean] = js.native
+  
   /**
     * Save the grouping row expanded states.
     * If set to true and the grouping feature is not enabled then does nothing.
@@ -45,6 +49,7 @@ trait IGridOptions extends js.Object {
     * @default false
     */
   var saveGroupingExpandedStates: js.UndefOr[Boolean] = js.native
+  
   /**
     * Restore the current column order.
     * Note that unless you've provided the user with some way to reorder their columns
@@ -53,12 +58,14 @@ trait IGridOptions extends js.Object {
     * @default true
     */
   var saveOrder: js.UndefOr[Boolean] = js.native
+  
   /**
     * Save pinning state for columns.
     * Defaults to true
     * @default true
     */
   var savePinning: js.UndefOr[Boolean] = js.native
+  
   /**
     * A function that can be called, passing in a rowEntity, and that will return a unique id for that row.
     * This might simply return the id field from that row (if you have one),
@@ -70,6 +77,7 @@ trait IGridOptions extends js.Object {
     * @default undefined
     */
   var saveRowIdentity: js.UndefOr[Boolean] = js.native
+  
   /**
     * Save the current scroll position.
     * Note that this is saved as the percentage of the grid scrolled -
@@ -84,6 +92,7 @@ trait IGridOptions extends js.Object {
     * @default false
     */
   var saveScroll: js.UndefOr[Boolean] = js.native
+  
   /**
     * Save the currently selected rows.
     * If the saveRowIdentity callback is defined, then it will save the id of the row and select that.
@@ -96,6 +105,7 @@ trait IGridOptions extends js.Object {
     * @default true
     */
   var saveSelection: js.UndefOr[Boolean] = js.native
+  
   /**
     * Save the current sort state for each column
     * Defaults to true
@@ -103,6 +113,7 @@ trait IGridOptions extends js.Object {
     * @default true
     */
   var saveSort: js.UndefOr[Boolean] = js.native
+  
   /**
     * Save the treeView configuration. If set to true and the treeView feature is not enabled then does
     * nothing.
@@ -110,12 +121,14 @@ trait IGridOptions extends js.Object {
     * @default true;
     */
   var saveTreeView: js.UndefOr[Boolean] = js.native
+  
   /**
     * Save whether or not columns are visible
     * Defaults to true
     * @default true
     */
   var saveVisible: js.UndefOr[Boolean] = js.native
+  
   /**
     * Save the current column widths.
     * Note that unless you've provided the user with some way to resize their columns
@@ -125,77 +138,105 @@ trait IGridOptions extends js.Object {
     */
   var saveWidths: js.UndefOr[Boolean] = js.native
 }
-
 object IGridOptions {
+  
   @scala.inline
   def apply(): IGridOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGridOptions]
   }
+  
   @scala.inline
   implicit class IGridOptionsOps[Self <: IGridOptions] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSaveFilter(value: Boolean): Self = this.set("saveFilter", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSaveFilter: Self = this.set("saveFilter", js.undefined)
+    
     @scala.inline
     def setSaveFocus(value: Boolean): Self = this.set("saveFocus", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSaveFocus: Self = this.set("saveFocus", js.undefined)
+    
     @scala.inline
     def setSaveGrouping(value: Boolean): Self = this.set("saveGrouping", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSaveGrouping: Self = this.set("saveGrouping", js.undefined)
+    
     @scala.inline
     def setSaveGroupingExpandedStates(value: Boolean): Self = this.set("saveGroupingExpandedStates", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSaveGroupingExpandedStates: Self = this.set("saveGroupingExpandedStates", js.undefined)
+    
     @scala.inline
     def setSaveOrder(value: Boolean): Self = this.set("saveOrder", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSaveOrder: Self = this.set("saveOrder", js.undefined)
+    
     @scala.inline
     def setSavePinning(value: Boolean): Self = this.set("savePinning", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSavePinning: Self = this.set("savePinning", js.undefined)
+    
     @scala.inline
     def setSaveRowIdentity(value: Boolean): Self = this.set("saveRowIdentity", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSaveRowIdentity: Self = this.set("saveRowIdentity", js.undefined)
+    
     @scala.inline
     def setSaveScroll(value: Boolean): Self = this.set("saveScroll", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSaveScroll: Self = this.set("saveScroll", js.undefined)
+    
     @scala.inline
     def setSaveSelection(value: Boolean): Self = this.set("saveSelection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSaveSelection: Self = this.set("saveSelection", js.undefined)
+    
     @scala.inline
     def setSaveSort(value: Boolean): Self = this.set("saveSort", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSaveSort: Self = this.set("saveSort", js.undefined)
+    
     @scala.inline
     def setSaveTreeView(value: Boolean): Self = this.set("saveTreeView", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSaveTreeView: Self = this.set("saveTreeView", js.undefined)
+    
     @scala.inline
     def setSaveVisible(value: Boolean): Self = this.set("saveVisible", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSaveVisible: Self = this.set("saveVisible", js.undefined)
+    
     @scala.inline
     def setSaveWidths(value: Boolean): Self = this.set("saveWidths", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSaveWidths: Self = this.set("saveWidths", js.undefined)
   }
-  
 }
-

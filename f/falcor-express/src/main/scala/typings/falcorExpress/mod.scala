@@ -8,11 +8,12 @@ import typings.expressServeStaticCore.mod.Query
 import typings.falcor.mod.DataSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("falcor-express", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def dataSourceRoute(
     getDataSource: js.Function2[
       /* req */ Request_[ParamsDictionary, _, _, Query], 
@@ -21,4 +22,3 @@ object mod extends js.Object {
     ]
   ): Handler = js.native
 }
-

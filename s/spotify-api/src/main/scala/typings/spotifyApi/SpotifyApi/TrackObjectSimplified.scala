@@ -3,7 +3,7 @@ package typings.spotifyApi.SpotifyApi
 import typings.spotifyApi.spotifyApiStrings.track
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Simplified Track Object
@@ -11,58 +11,71 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TrackObjectSimplified extends js.Object {
+  
   /**
     * The artists who performed the track.
     */
   var artists: js.Array[ArtistObjectSimplified] = js.native
+  
   /**
     * A list of the countries in which the track can be played,
     * identified by their [ISO 3166-1 alpha-2 code](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
     */
   var available_markets: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * The disc number (usually `1` unless the album consists of more than one disc).
     */
   var disc_number: Double = js.native
+  
   /**
     * The track length in milliseconds.
     */
   var duration_ms: Double = js.native
+  
   /**
     * Whether or not the track has explicit lyrics (`true` = yes it does; `false` = no it does not OR unknown).
     */
   var explicit: Boolean = js.native
+  
   /**
     * Known external URLs for this track.
     */
   var external_urls: ExternalUrlObject = js.native
+  
   /**
     * A link to the Web API endpoint providing full details of the track.
     */
   var href: String = js.native
+  
   /**
     * The [Spotify ID](https://developer.spotify.com/documentation/web-api/#spotify-uris-and-ids) for the track.
     */
   var id: String = js.native
+  
   /**
     * Part of the response when [Track Relinking](https://developer.spotify.com/documentation/general/guides/track-relinking-guide/) is applied.
     * If `true`, the track is playable in the given market. Otherwise, `false`.
     */
   var is_playable: js.UndefOr[Boolean] = js.native
+  
   /**
     * Part of the response when [Track Relinking](https://developer.spotify.com/documentation/general/guides/track-relinking-guide/) is applied,
     * and the requested track has been replaced with different track.
     * The track in the `linked_from` object contains information about the originally requested track.
     */
   var linked_from: js.UndefOr[TrackLinkObject] = js.native
+  
   /**
     * The name of the track.
     */
   var name: String = js.native
+  
   /**
     * A link to a 30 second preview (MP3 format) of the track. Can be null
     */
   var preview_url: String | Null = js.native
+  
   /**
     * Part of the response when [Track Relinking](https://developer.spotify.com/documentation/general/guides/track-relinking-guide/) is applied,
     * the original track is not available in the given market, and Spotify did not have any tracks to relink it with.
@@ -70,21 +83,24 @@ trait TrackObjectSimplified extends js.Object {
     * why the track is not available: `"restrictions" : {"reason" : "market"}`.
     */
   var restrictions: js.UndefOr[RestrictionsObject] = js.native
+  
   /**
     * The number of the track. If an album has several discs, the track number is the number on the specified disc.
     */
   var track_number: Double = js.native
+  
   /**
     * The object type: “track”.
     */
   var `type`: track = js.native
+  
   /**
     * The [Spotify URI](https://developer.spotify.com/documentation/web-api/#spotify-uris-and-ids) for the track.
     */
   var uri: String = js.native
 }
-
 object TrackObjectSimplified {
+  
   @scala.inline
   def apply(
     artists: js.Array[ArtistObjectSimplified],
@@ -103,64 +119,89 @@ object TrackObjectSimplified {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackObjectSimplified]
   }
+  
   @scala.inline
   implicit class TrackObjectSimplifiedOps[Self <: TrackObjectSimplified] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setArtistsVarargs(value: ArtistObjectSimplified*): Self = this.set("artists", js.Array(value :_*))
+    
     @scala.inline
     def setArtists(value: js.Array[ArtistObjectSimplified]): Self = this.set("artists", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDisc_number(value: Double): Self = this.set("disc_number", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDuration_ms(value: Double): Self = this.set("duration_ms", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExplicit(value: Boolean): Self = this.set("explicit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExternal_urls(value: ExternalUrlObject): Self = this.set("external_urls", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTrack_number(value: Double): Self = this.set("track_number", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: track): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAvailable_marketsVarargs(value: String*): Self = this.set("available_markets", js.Array(value :_*))
+    
     @scala.inline
     def setAvailable_markets(value: js.Array[String]): Self = this.set("available_markets", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAvailable_markets: Self = this.set("available_markets", js.undefined)
+    
     @scala.inline
     def setIs_playable(value: Boolean): Self = this.set("is_playable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIs_playable: Self = this.set("is_playable", js.undefined)
+    
     @scala.inline
     def setLinked_from(value: TrackLinkObject): Self = this.set("linked_from", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLinked_from: Self = this.set("linked_from", js.undefined)
+    
     @scala.inline
     def setPreview_url(value: String): Self = this.set("preview_url", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPreview_urlNull: Self = this.set("preview_url", null)
+    
     @scala.inline
     def setRestrictions(value: RestrictionsObject): Self = this.set("restrictions", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRestrictions: Self = this.set("restrictions", js.undefined)
   }
-  
 }
-

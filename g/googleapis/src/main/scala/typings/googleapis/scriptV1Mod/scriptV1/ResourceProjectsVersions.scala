@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/script/v1", "script_v1.Resource$Projects$Versions")
 @js.native
 class ResourceProjectsVersions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * script.projects.versions.create
     * @desc Creates a new immutable version using the current code, with a
@@ -43,6 +45,7 @@ class ResourceProjectsVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVersion]
   ): Unit = js.native
+  
   /**
     * script.projects.versions.get
     * @desc Gets a version of a script project.
@@ -72,6 +75,7 @@ class ResourceProjectsVersions protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVersion]
   ): Unit = js.native
+  
   /**
     * script.projects.versions.list
     * @desc List the versions of a script project.
@@ -106,4 +110,3 @@ class ResourceProjectsVersions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListVersionsResponse]
   ): Unit = js.native
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/radio" : "7.0.0"
+      "@material/radio" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/radio" : "7.0.0"
+      "@material/radio" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

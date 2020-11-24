@@ -2,13 +2,14 @@ package typings.heremaps.H.service
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interface represents an object, that can be configured credentials, settings etc. by H.service.Platform
   */
 @js.native
 trait IConfigurable extends js.Object {
+  
   /**
     * This methods receive configuration parameters from the platform, that can be used by the object implementing the interface.
     * @param appId {string} - The application ID to identify the client against the platform (mandatory to provide)
@@ -22,4 +23,3 @@ trait IConfigurable extends js.Object {
   def configure(appId: String, appCode: String, useHTTPS: Boolean, useCIT: Boolean): IConfigurable = js.native
   def configure(appId: String, appCode: String, useHTTPS: Boolean, useCIT: Boolean, opt_baseUrl: Url): IConfigurable = js.native
 }
-

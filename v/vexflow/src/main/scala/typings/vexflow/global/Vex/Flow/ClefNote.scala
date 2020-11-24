@@ -2,7 +2,7 @@ package typings.vexflow.global.Vex.Flow
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Vex.Flow.ClefNote")
 @js.native
@@ -13,4 +13,3 @@ class ClefNote protected ()
   def this(clef: String, size: js.UndefOr[scala.Nothing], annotation: String) = this()
   def this(clef: String, size: String, annotation: String) = this()
 }
-

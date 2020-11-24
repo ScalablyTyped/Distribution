@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Resource$Accounttax")
 @js.native
 class ResourceAccounttax protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * content.accounttax.custombatch
     * @desc Retrieves and updates tax settings of multiple accounts in a single
@@ -46,6 +48,7 @@ class ResourceAccounttax protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccounttaxCustomBatchResponse]
   ): Unit = js.native
+  
   /**
     * content.accounttax.get
     * @desc Retrieves the tax settings of the account.
@@ -75,6 +78,7 @@ class ResourceAccounttax protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountTax]
   ): Unit = js.native
+  
   /**
     * content.accounttax.list
     * @desc Lists the tax settings of the sub-accounts in your Merchant Center
@@ -106,6 +110,7 @@ class ResourceAccounttax protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccounttaxListResponse]
   ): Unit = js.native
+  
   /**
     * content.accounttax.patch
     * @desc Updates the tax settings of the account. This method supports patch
@@ -138,6 +143,7 @@ class ResourceAccounttax protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAccountTax]
   ): Unit = js.native
+  
   /**
     * content.accounttax.update
     * @desc Updates the tax settings of the account.
@@ -170,4 +176,3 @@ class ResourceAccounttax protected () extends js.Object {
     callback: BodyResponseCallback[SchemaAccountTax]
   ): Unit = js.native
 }
-

@@ -2,14 +2,16 @@ package typings.screepsProfiler.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ScreepsProfilerStatic extends js.Object {
+  
   /**
     * This line monkey patches the global prototypes. Should be called before and outside your main loop.
     */
   def enable(): Unit = js.native
+  
   /**
     * Register a class to be profiled. Each of the functions on this class will be replaced with
     * a profiler wrapper
@@ -18,6 +20,7 @@ trait ScreepsProfilerStatic extends js.Object {
     */
   // tslint:disable-next-line ban-types
   def registerClass(constructor: js.Function, className: String): Unit = js.native
+  
   /**
     * Wraps a function for profiling, returns the wrapped function.
     *
@@ -32,11 +35,13 @@ trait ScreepsProfilerStatic extends js.Object {
   // tslint:disable-next-line ban-types
   def registerFN(fn: js.Function): js.Function = js.native
   def registerFN(fn: js.Function, fnName: String): js.Function = js.native
+  
   /**
     * Each of the functions on this object will be replaced with a profiler wrapper.
     * @param objectName - Name of the object, a label used in output
     */
   def registerObject(`object`: js.Any, objectName: String): Unit = js.native
+  
   /**
     * Wrap your main loop with this function.
     *
@@ -45,4 +50,3 @@ trait ScreepsProfilerStatic extends js.Object {
   // tslint:disable-next-line ban-types
   def wrap(callback: js.Function): js.Function = js.native
 }
-

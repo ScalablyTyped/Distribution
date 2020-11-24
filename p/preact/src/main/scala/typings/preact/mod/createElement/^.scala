@@ -11,11 +11,12 @@ import typings.std.Record
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("preact", "createElement")
 @js.native
 object ^ extends js.Object {
+  
   //
   // Preact createElement
   // -----------------------------------
@@ -28,4 +29,3 @@ object ^ extends js.Object {
   def apply[P](`type`: ComponentType[P], props: Attributes with P, children: ComponentChildren*): VNode[_] = js.native
   def apply[P](`type`: ComponentType[P], props: Null, children: ComponentChildren*): VNode[_] = js.native
 }
-

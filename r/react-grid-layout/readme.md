@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-grid-layout
 
-Typings are for version 0.17
+Typings are for version 1.1
 
 ## Library description:
 A draggable and resizable grid layout with responsive breakpoints, for React.
@@ -10,9 +10,9 @@ A draggable and resizable grid layout with responsive breakpoints, for React.
 | ------------------ | :-------------: |
 | Full name          | react-grid-layout |
 | Keywords           | react, grid, drag, draggable, resize, resizable, fluid, responsive |
-| # releases         | 7 |
-| # dependents       | 110 |
-| # downloads        | 3282486 |
+| # releases         | 9 |
+| # dependents       | 165 |
+| # downloads        | 5632477 |
 | # stars            | 19 |
 
 ## Links

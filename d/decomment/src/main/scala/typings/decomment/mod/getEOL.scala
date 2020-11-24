@@ -2,11 +2,12 @@ package typings.decomment.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("decomment", "getEOL")
 @js.native
 object getEOL extends js.Object {
+  
   /**
     * Returns End-of-Line string used within the text, based on the occurrence frequency:
     * - \n - for Unix-encoded text
@@ -14,4 +15,3 @@ object getEOL extends js.Object {
     */
   def apply(text: String): String = js.native
 }
-

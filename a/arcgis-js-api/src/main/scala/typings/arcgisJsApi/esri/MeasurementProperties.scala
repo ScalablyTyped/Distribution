@@ -25,18 +25,18 @@ import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MeasurementProperties extends WidgetProperties {
+  
   /**
-    * Specifies the current measurement tool to display. Setting its value to `area` activates the area measurement tool and it works for both [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) and [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). To measure distance in a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) set the property to `distance` and in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) set it to `direct-line`. If this property is not set, the widget will not be displayed.
+    * Specifies the current measurement tool to display.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html#activeTool)
-    *
-    * @default null
     */
   var activeTool: js.UndefOr[area | distance | `direct-line`] = js.native
+  
   /**
     * Unit system (imperial, metric) or specific unit used for displaying the area values.
     *
@@ -45,6 +45,7 @@ trait MeasurementProperties extends WidgetProperties {
   var areaUnit: js.UndefOr[
     metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
   ] = js.native
+  
   /**
     * Unit system (imperial, metric) or specific unit used for displaying the distance values.
     *
@@ -53,62 +54,76 @@ trait MeasurementProperties extends WidgetProperties {
   var linearUnit: js.UndefOr[
     metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
   ] = js.native
+  
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html#view)
     */
   var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  
   /**
-    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [MeasurementViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement-MeasurementViewModel.html) class to access all properties and methods on the widget.
+    * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html#viewModel)
     */
   var viewModel: js.UndefOr[MeasurementViewModelProperties] = js.native
 }
-
 object MeasurementProperties {
+  
   @scala.inline
   def apply(): MeasurementProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeasurementProperties]
   }
+  
   @scala.inline
   implicit class MeasurementPropertiesOps[Self <: MeasurementProperties] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setActiveTool(value: area | distance | `direct-line`): Self = this.set("activeTool", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteActiveTool: Self = this.set("activeTool", js.undefined)
+    
     @scala.inline
     def setAreaUnit(
       value: metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
     ): Self = this.set("areaUnit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAreaUnit: Self = this.set("areaUnit", js.undefined)
+    
     @scala.inline
     def setLinearUnit(
       value: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
     ): Self = this.set("linearUnit", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLinearUnit: Self = this.set("linearUnit", js.undefined)
+    
     @scala.inline
     def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteView: Self = this.set("view", js.undefined)
+    
     @scala.inline
     def setViewModel(value: MeasurementViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteViewModel: Self = this.set("viewModel", js.undefined)
   }
-  
 }
-

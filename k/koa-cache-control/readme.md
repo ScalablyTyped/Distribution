@@ -12,7 +12,7 @@ Middleware for meddling with Cache-Control headers
 | Keywords           | Koa, cache, cache-control, no-cache |
 | # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 117286 |
+| # downloads        | 169427 |
 | # stars            | 0 |
 
 ## Links

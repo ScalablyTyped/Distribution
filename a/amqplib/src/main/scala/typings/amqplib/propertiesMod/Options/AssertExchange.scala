@@ -2,32 +2,72 @@ package typings.amqplib.propertiesMod.Options
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait AssertExchange extends js.Object {
-  var alternateExchange: js.UndefOr[String] = js.undefined
-  var arguments: js.UndefOr[js.Any] = js.undefined
-  var autoDelete: js.UndefOr[Boolean] = js.undefined
-  var durable: js.UndefOr[Boolean] = js.undefined
-  var internal: js.UndefOr[Boolean] = js.undefined
+  
+  var alternateExchange: js.UndefOr[String] = js.native
+  
+  var arguments: js.UndefOr[js.Any] = js.native
+  
+  var autoDelete: js.UndefOr[Boolean] = js.native
+  
+  var durable: js.UndefOr[Boolean] = js.native
+  
+  var internal: js.UndefOr[Boolean] = js.native
 }
-
 object AssertExchange {
+  
   @scala.inline
-  def apply(
-    alternateExchange: String = null,
-    arguments: js.Any = null,
-    autoDelete: js.UndefOr[Boolean] = js.undefined,
-    durable: js.UndefOr[Boolean] = js.undefined,
-    internal: js.UndefOr[Boolean] = js.undefined
-  ): AssertExchange = {
+  def apply(): AssertExchange = {
     val __obj = js.Dynamic.literal()
-    if (alternateExchange != null) __obj.updateDynamic("alternateExchange")(alternateExchange.asInstanceOf[js.Any])
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(durable)) __obj.updateDynamic("durable")(durable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssertExchange]
   }
+  
+  @scala.inline
+  implicit class AssertExchangeOps[Self <: AssertExchange] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setAlternateExchange(value: String): Self = this.set("alternateExchange", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAlternateExchange: Self = this.set("alternateExchange", js.undefined)
+    
+    @scala.inline
+    def setArguments(value: js.Any): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteArguments: Self = this.set("arguments", js.undefined)
+    
+    @scala.inline
+    def setAutoDelete(value: Boolean): Self = this.set("autoDelete", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAutoDelete: Self = this.set("autoDelete", js.undefined)
+    
+    @scala.inline
+    def setDurable(value: Boolean): Self = this.set("durable", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDurable: Self = this.set("durable", js.undefined)
+    
+    @scala.inline
+    def setInternal(value: Boolean): Self = this.set("internal", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteInternal: Self = this.set("internal", js.undefined)
+  }
 }
-

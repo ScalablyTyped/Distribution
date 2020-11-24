@@ -3,7 +3,7 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "ReflectionProbe")
 @js.native
@@ -35,15 +35,23 @@ class ReflectionProbe protected ()
   name: String,
     size: Double,
     scene: typings.babylonjs.sceneMod.Scene,
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    useFloat: Boolean
+  ) = this()
+  def this(
+    /** defines the name of the probe */
+  name: String,
+    size: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
     generateMipMaps: Boolean,
     useFloat: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Legacy/legacy", "ReflectionProbe")
 @js.native
 object ReflectionProbe extends js.Object {
+  
   /**
     * Parse the JSON representation of a reflection probe in order to recreate the reflection probe in the given scene.
     * @param parsedReflectionProbe Define the JSON representation of the reflection probe
@@ -53,4 +61,3 @@ object ReflectionProbe extends js.Object {
     */
   def Parse(parsedReflectionProbe: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.reflectionProbeMod.ReflectionProbe] = js.native
 }
-

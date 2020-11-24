@@ -10,9 +10,9 @@ a storage lib which support sessionStorage and localStorage with the same api
 | ------------------ | :-------------: |
 | Full name          | good-storage |
 | Keywords           | store, html5 |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 28596 |
+| # releases         | 3 |
+| # dependents       | 11 |
+| # downloads        | 38546 |
 | # stars            | 0 |
 
 ## Links

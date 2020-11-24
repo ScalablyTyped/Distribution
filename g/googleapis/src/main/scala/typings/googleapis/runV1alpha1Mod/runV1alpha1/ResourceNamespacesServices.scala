@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/run/v1alpha1", "run_v1alpha1.Resource$Namespaces$Services")
 @js.native
 class ResourceNamespacesServices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * run.namespaces.services.create
     * @desc Rpc to create a service.
@@ -42,6 +44,7 @@ class ResourceNamespacesServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaService]
   ): Unit = js.native
+  
   /**
     * run.namespaces.services.delete
     * @desc Rpc to delete a service. This will cause the Service to stop
@@ -76,6 +79,7 @@ class ResourceNamespacesServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * run.namespaces.services.get
     * @desc Rpc to get information about a service.
@@ -104,6 +108,7 @@ class ResourceNamespacesServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaService]
   ): Unit = js.native
+  
   /**
     * run.namespaces.services.list
     * @desc Rpc to list services.
@@ -142,6 +147,7 @@ class ResourceNamespacesServices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListServicesResponse]
   ): Unit = js.native
+  
   /**
     * run.namespaces.services.replaceService
     * @desc Rpc to replace a service.  Only the spec and metadata labels and
@@ -179,4 +185,3 @@ class ResourceNamespacesServices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaService]
   ): Unit = js.native
 }
-

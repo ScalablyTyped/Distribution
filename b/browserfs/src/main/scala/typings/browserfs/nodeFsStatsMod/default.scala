@@ -4,7 +4,7 @@ import typings.node.Buffer
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("browserfs/dist/node/core/node_fs_stats", JSImport.Default)
 @js.native
@@ -91,11 +91,10 @@ class default protected () extends Stats {
   ) = this()
   def this(itemType: FileType, size: Double, mode: Double, atime: Date, mtime: Date, ctime: Date) = this()
 }
-
 /* static members */
 @JSImport("browserfs/dist/node/core/node_fs_stats", JSImport.Default)
 @js.native
 object default extends js.Object {
+  
   def fromBuffer(buffer: Buffer): Stats = js.native
 }
-

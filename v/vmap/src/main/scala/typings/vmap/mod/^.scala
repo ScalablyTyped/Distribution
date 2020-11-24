@@ -3,7 +3,7 @@ package typings.vmap.mod
 import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * VMAP parser
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 class ^ protected () extends VMAP {
   def this(xml: Document) = this()
 }
-

@@ -10,9 +10,9 @@ A tool for generating the text version of an html email.
 | ------------------ | :-------------: |
 | Full name          | textversionjs |
 | Keywords           | email, html, text, version, plaintext |
-| # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 101001 |
+| # releases         | 0 |
+| # dependents       | 5 |
+| # downloads        | 145775 |
 | # stars            | 0 |
 
 ## Links

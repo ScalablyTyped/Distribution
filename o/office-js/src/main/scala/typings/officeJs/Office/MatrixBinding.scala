@@ -2,7 +2,7 @@ package typings.officeJs.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a binding in two dimensions of rows and columns.
@@ -13,13 +13,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MatrixBinding extends Binding {
+  
   /**
     * Gets the number of columns in the matrix data structure, as an integer value.
     */
   var columnCount: Double = js.native
+  
   /**
     * Gets the number of rows in the matrix data structure, as an integer value.
     */
   var rowCount: Double = js.native
 }
-

@@ -4,11 +4,12 @@ import typings.ionicCore.gestureMod.Gesture
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/core/dist/types/utils/gesture/swipe-back", JSImport.Namespace)
 @js.native
 object swipeBackMod extends js.Object {
+  
   def createSwipeBackGesture(
     el: HTMLElement,
     canStartHandler: js.Function0[Boolean],
@@ -17,4 +18,3 @@ object swipeBackMod extends js.Object {
     onEndHandler: js.Function3[/* shouldComplete */ Boolean, /* step */ Double, /* dur */ Double, Unit]
   ): Gesture = js.native
 }
-

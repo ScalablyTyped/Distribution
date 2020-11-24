@@ -5,7 +5,7 @@ import typings.fabric.fabricImplMod.IPolylineOptions
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.Polyline")
 @js.native
@@ -20,15 +20,16 @@ class Polyline protected ()
   def this(points: js.Array[X]) = this()
   def this(points: js.Array[X], options: IPolylineOptions) = this()
 }
-
 /* static members */
 @JSImport("fabric", "fabric.Polyline")
 @js.native
 object Polyline extends js.Object {
+  
   /**
     * List of attribute names to account for when parsing SVG element (used by `fabric.Polygon.fromElement`)
     */
   var ATTRIBUTE_NAMES: js.Array[String] = js.native
+  
   /**
     * Returns Polyline  instance from an SVG element
     * @param element Element to parse
@@ -36,10 +37,10 @@ object Polyline extends js.Object {
     */
   def fromElement(element: SVGElement): typings.fabric.fabricImplMod.Polyline = js.native
   def fromElement(element: SVGElement, options: IPolylineOptions): typings.fabric.fabricImplMod.Polyline = js.native
+  
   /**
     * Returns fabric.Polyline instance from an object representation
     * @param object Object to create an instance from
     */
   def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Polyline = js.native
 }
-

@@ -10,9 +10,9 @@ A simple js wrapper for the Openstack APIs
 | ------------------ | :-------------: |
 | Full name          | openstack-wrapper |
 | Keywords           | openstack, keystone, nova, neutron, glance |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 8509 |
+| # downloads        | 7901 |
 | # stars            | 2 |
 
 ## Links

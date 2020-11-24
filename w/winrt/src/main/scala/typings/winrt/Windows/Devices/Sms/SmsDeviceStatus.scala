@@ -2,14 +2,14 @@ package typings.winrt.Windows.Devices.Sms
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SmsDeviceStatus extends js.Object
-
 @JSGlobal("Windows.Devices.Sms.SmsDeviceStatus")
 @js.native
 object SmsDeviceStatus extends js.Object {
+  
   @js.native
   sealed trait badSim extends SmsDeviceStatus
   
@@ -33,6 +33,4 @@ object SmsDeviceStatus extends js.Object {
   
   @js.native
   sealed trait subscriptionNotActivated extends SmsDeviceStatus
-  
 }
-

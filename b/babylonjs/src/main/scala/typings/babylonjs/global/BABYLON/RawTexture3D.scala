@@ -1,10 +1,9 @@
 package typings.babylonjs.global.BABYLON
 
-import typings.babylonjs.BABYLON.Nullable
 import typings.std.ArrayBufferView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RawTexture3D")
 @js.native
@@ -50,8 +49,55 @@ class RawTexture3D protected ()
     /** Gets or sets the texture format to use */
   format: Double,
     scene: typings.babylonjs.BABYLON.Scene,
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: Boolean
+  ) = this()
+  def this(
+    data: ArrayBufferView,
+    width: Double,
+    height: Double,
+    depth: Double,
+    /** Gets or sets the texture format to use */
+  format: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
     generateMipMaps: Boolean,
     invertY: Boolean
+  ) = this()
+  def this(
+    data: ArrayBufferView,
+    width: Double,
+    height: Double,
+    depth: Double,
+    /** Gets or sets the texture format to use */
+  format: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: Double
+  ) = this()
+  def this(
+    data: ArrayBufferView,
+    width: Double,
+    height: Double,
+    depth: Double,
+    /** Gets or sets the texture format to use */
+  format: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: Boolean,
+    samplingMode: Double
+  ) = this()
+  def this(
+    data: ArrayBufferView,
+    width: Double,
+    height: Double,
+    depth: Double,
+    /** Gets or sets the texture format to use */
+  format: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    generateMipMaps: Boolean,
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: Double
   ) = this()
   def this(
     data: ArrayBufferView,
@@ -73,15 +119,100 @@ class RawTexture3D protected ()
     /** Gets or sets the texture format to use */
   format: Double,
     scene: typings.babylonjs.BABYLON.Scene,
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: js.UndefOr[scala.Nothing],
+    textureType: Double
+  ) = this()
+  def this(
+    data: ArrayBufferView,
+    width: Double,
+    height: Double,
+    depth: Double,
+    /** Gets or sets the texture format to use */
+  format: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
+    textureType: Double
+  ) = this()
+  def this(
+    data: ArrayBufferView,
+    width: Double,
+    height: Double,
+    depth: Double,
+    /** Gets or sets the texture format to use */
+  format: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: Boolean,
+    samplingMode: js.UndefOr[scala.Nothing],
+    textureType: Double
+  ) = this()
+  def this(
+    data: ArrayBufferView,
+    width: Double,
+    height: Double,
+    depth: Double,
+    /** Gets or sets the texture format to use */
+  format: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    generateMipMaps: js.UndefOr[scala.Nothing],
+    invertY: Boolean,
+    samplingMode: Double,
+    textureType: Double
+  ) = this()
+  def this(
+    data: ArrayBufferView,
+    width: Double,
+    height: Double,
+    depth: Double,
+    /** Gets or sets the texture format to use */
+  format: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    generateMipMaps: Boolean,
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: js.UndefOr[scala.Nothing],
+    textureType: Double
+  ) = this()
+  def this(
+    data: ArrayBufferView,
+    width: Double,
+    height: Double,
+    depth: Double,
+    /** Gets or sets the texture format to use */
+  format: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    generateMipMaps: Boolean,
+    invertY: js.UndefOr[scala.Nothing],
+    samplingMode: Double,
+    textureType: Double
+  ) = this()
+  def this(
+    data: ArrayBufferView,
+    width: Double,
+    height: Double,
+    depth: Double,
+    /** Gets or sets the texture format to use */
+  format: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
+    generateMipMaps: Boolean,
+    invertY: Boolean,
+    samplingMode: js.UndefOr[scala.Nothing],
+    textureType: Double
+  ) = this()
+  def this(
+    data: ArrayBufferView,
+    width: Double,
+    height: Double,
+    depth: Double,
+    /** Gets or sets the texture format to use */
+  format: Double,
+    scene: typings.babylonjs.BABYLON.Scene,
     generateMipMaps: Boolean,
     invertY: Boolean,
     samplingMode: Double,
     textureType: Double
   ) = this()
-  /**
-    * Array of animations
-    */
-  /* CompleteClass */
-  override var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
 }
-

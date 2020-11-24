@@ -1,13 +1,12 @@
 package typings.dayjs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dayjs.mod.PluginFunc
+import typings.dayjs.esmMod.PluginFunc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dayjs/plugin/badMutable", JSImport.Namespace)
+@JSImport("dayjs/esm/plugin/badMutable", JSImport.Namespace)
 @js.native
 object badMutableMod
   extends TopLevel[PluginFunc[js.Any]]
-

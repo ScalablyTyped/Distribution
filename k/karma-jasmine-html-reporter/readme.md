@@ -10,9 +10,9 @@ A Karma plugin. Dynamically displays tests results at debug.html page
 | ------------------ | :-------------: |
 | Full name          | karma-jasmine-html-reporter |
 | Keywords           | karma-plugin, karma-reporter, html |
-| # releases         | 12 |
-| # dependents       | 67 |
-| # downloads        | 40169274 |
+| # releases         | 9 |
+| # dependents       | 78 |
+| # downloads        | 50144193 |
 | # stars            | 4 |
 
 ## Links

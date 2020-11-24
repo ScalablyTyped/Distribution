@@ -2,7 +2,7 @@ package typings.reactResponsive.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactResponsive.reactResponsiveStrings.all
@@ -18,4 +18,3 @@ import scala.scalajs.js.annotation._
   - typings.reactResponsive.reactResponsiveStrings.embossed
 */
 trait MediaQueryType extends js.Object
-

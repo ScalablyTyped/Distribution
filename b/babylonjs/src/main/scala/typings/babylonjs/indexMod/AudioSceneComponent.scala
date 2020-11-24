@@ -2,7 +2,7 @@ package typings.babylonjs.indexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "AudioSceneComponent")
 @js.native
@@ -14,4 +14,12 @@ class AudioSceneComponent protected ()
     */
   def this(scene: typings.babylonjs.sceneMod.Scene) = this()
 }
-
+/* static members */
+@JSImport("babylonjs/index", "AudioSceneComponent")
+@js.native
+object AudioSceneComponent extends js.Object {
+  
+  var _CameraDirectionLH: js.Any = js.native
+  
+  var _CameraDirectionRH: js.Any = js.native
+}

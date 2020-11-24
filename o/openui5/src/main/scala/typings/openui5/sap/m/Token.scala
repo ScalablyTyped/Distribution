@@ -4,10 +4,11 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.TextDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Token extends Control {
+  
   /**
     * Adds some ariaDescribedBy into the association <code>ariaDescribedBy</code>.
     * @param vAriaDescribedBy the ariaDescribedBy to add; if empty, nothing is inserted
@@ -15,6 +16,7 @@ trait Token extends Control {
     */
   def addAriaDescribedBy(vAriaDescribedBy: js.Any): Token = js.native
   def addAriaDescribedBy(vAriaDescribedBy: Control): Token = js.native
+  
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
     * @param vAriaLabelledBy the ariaLabelledBy to add; if empty, nothing is inserted
@@ -22,6 +24,7 @@ trait Token extends Control {
     */
   def addAriaLabelledBy(vAriaLabelledBy: js.Any): Token = js.native
   def addAriaLabelledBy(vAriaLabelledBy: Control): Token = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>delete</code> event of this
     * <code>sap.m.Token</code>.When called, the context of the event handler (its <code>this</code>) will
@@ -36,6 +39,7 @@ trait Token extends Control {
     */
   def attachDelete(oData: js.Any, fnFunction: js.Any): Token = js.native
   def attachDelete(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Token = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>press</code> event of this
     * <code>sap.m.Token</code>.When called, the context of the event handler (its <code>this</code>) will
@@ -50,6 +54,7 @@ trait Token extends Control {
     */
   def attachPress(oData: js.Any, fnFunction: js.Any): Token = js.native
   def attachPress(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Token = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>select</code> event of this
     * <code>sap.m.Token</code>.When called, the context of the event handler (its <code>this</code>) will
@@ -64,6 +69,7 @@ trait Token extends Control {
     */
   def attachSelect(oData: js.Any, fnFunction: js.Any): Token = js.native
   def attachSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Token = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>delete</code> event of this
     * <code>sap.m.Token</code>.The passed function and listener object must match the ones used for event
@@ -73,6 +79,7 @@ trait Token extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachDelete(fnFunction: js.Any, oListener: js.Any): Token = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>press</code> event of this
     * <code>sap.m.Token</code>.The passed function and listener object must match the ones used for event
@@ -82,6 +89,7 @@ trait Token extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachPress(fnFunction: js.Any, oListener: js.Any): Token = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>select</code> event of this
     * <code>sap.m.Token</code>.The passed function and listener object must match the ones used for event
@@ -91,57 +99,67 @@ trait Token extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachSelect(fnFunction: js.Any, oListener: js.Any): Token = js.native
+  
   /**
     * Fires event <code>delete</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireDelete(mArguments: js.Any): Token = js.native
+  
   /**
     * Fires event <code>press</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def firePress(mArguments: js.Any): Token = js.native
+  
   /**
     * Fires event <code>select</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireSelect(mArguments: js.Any): Token = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaDescribedBy</code>.
     */
   def getAriaDescribedBy(): js.Array[_] = js.native
+  
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     */
   def getAriaLabelledBy(): js.Array[_] = js.native
+  
   /**
     * Gets current value of property <code>editable</code>.Indicates the editable status of the token. If
     * it is set to <code>true</code>, token displays a delete icon.Default value is <code>true</code>.
     * @returns Value of property <code>editable</code>
     */
   def getEditable(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>key</code>.Key of the token.Default value is <code></code>.
     * @returns Value of property <code>key</code>
     */
   def getKey(): String = js.native
+  
   /**
     * Gets current value of property <code>selected</code>.Indicates the current selection status of the
     * token.Default value is <code>false</code>.
     * @returns Value of property <code>selected</code>
     */
   def getSelected(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>text</code>.Displayed text of the token.Default value is
     * <code></code>.
     * @returns Value of property <code>text</code>
     */
   def getText(): String = js.native
+  
   /**
     * Gets current value of property <code>textDirection</code>.This property specifies the text
     * directionality with enumerated options. By default, the control inherits text direction from the
@@ -150,16 +168,19 @@ trait Token extends Control {
     * @returns Value of property <code>textDirection</code>
     */
   def getTextDirection(): TextDirection = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaDescribedBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaDescribedBy(): js.Array[_] = js.native
+  
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  
   def removeAriaDescribedBy(vAriaDescribedBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaDescribedBy from the association named <code>ariaDescribedBy</code>.
@@ -168,6 +189,7 @@ trait Token extends Control {
     */
   def removeAriaDescribedBy(vAriaDescribedBy: Double): js.Any = js.native
   def removeAriaDescribedBy(vAriaDescribedBy: Control): js.Any = js.native
+  
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**
     * Removes an ariaLabelledBy from the association named <code>ariaLabelledBy</code>.
@@ -176,6 +198,7 @@ trait Token extends Control {
     */
   def removeAriaLabelledBy(vAriaLabelledBy: Double): js.Any = js.native
   def removeAriaLabelledBy(vAriaLabelledBy: Control): js.Any = js.native
+  
   /**
     * Sets a new value for property <code>editable</code>.Indicates the editable status of the token. If
     * it is set to <code>true</code>, token displays a delete icon.When called with a value of
@@ -185,6 +208,7 @@ trait Token extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setEditable(bEditable: Boolean): Token = js.native
+  
   /**
     * Sets a new value for property <code>key</code>.Key of the token.When called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -193,6 +217,7 @@ trait Token extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setKey(sKey: String): Token = js.native
+  
   /**
     * Sets a new value for property <code>text</code>.Displayed text of the token.When called with a value
     * of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -201,6 +226,7 @@ trait Token extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setText(sText: String): Token = js.native
+  
   /**
     * Sets a new value for property <code>textDirection</code>.This property specifies the text
     * directionality with enumerated options. By default, the control inherits text direction from the
@@ -212,4 +238,3 @@ trait Token extends Control {
     */
   def setTextDirection(sTextDirection: TextDirection): Token = js.native
 }
-

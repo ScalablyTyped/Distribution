@@ -2,10 +2,11 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SchemaBigtableColumnFamily extends js.Object {
+  
   /**
     * [Optional] Lists of columns that should be exposed as individual fields
     * as opposed to a list of (column name, value) pairs. All columns whose
@@ -13,6 +14,7 @@ trait SchemaBigtableColumnFamily extends js.Object {
     * columns can be accessed as a list through .Column field.
     */
   var columns: js.UndefOr[js.Array[SchemaBigtableColumn]] = js.native
+  
   /**
     * [Optional] The encoding of the values when the type is not STRING.
     * Acceptable encoding values are: TEXT - indicates values are alphanumeric
@@ -22,10 +24,12 @@ trait SchemaBigtableColumnFamily extends js.Object {
     * encoding for it.
     */
   var encoding: js.UndefOr[String] = js.native
+  
   /**
     * Identifier of the column family.
     */
   var familyId: js.UndefOr[String] = js.native
+  
   /**
     * [Optional] If this is set only the latest version of value are exposed
     * for all columns in this column family. This can be overridden for a
@@ -33,6 +37,7 @@ trait SchemaBigtableColumnFamily extends js.Object {
     * specifying a different setting for that column.
     */
   var onlyReadLatest: js.UndefOr[Boolean] = js.native
+  
   /**
     * [Optional] The type to convert the value in cells of this column family.
     * The values are expected to be encoded using HBase Bytes.toBytes function
@@ -43,47 +48,60 @@ trait SchemaBigtableColumnFamily extends js.Object {
     */
   var `type`: js.UndefOr[String] = js.native
 }
-
 object SchemaBigtableColumnFamily {
+  
   @scala.inline
   def apply(): SchemaBigtableColumnFamily = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBigtableColumnFamily]
   }
+  
   @scala.inline
   implicit class SchemaBigtableColumnFamilyOps[Self <: SchemaBigtableColumnFamily] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setColumnsVarargs(value: SchemaBigtableColumn*): Self = this.set("columns", js.Array(value :_*))
+    
     @scala.inline
     def setColumns(value: js.Array[SchemaBigtableColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteColumns: Self = this.set("columns", js.undefined)
+    
     @scala.inline
     def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEncoding: Self = this.set("encoding", js.undefined)
+    
     @scala.inline
     def setFamilyId(value: String): Self = this.set("familyId", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFamilyId: Self = this.set("familyId", js.undefined)
+    
     @scala.inline
     def setOnlyReadLatest(value: Boolean): Self = this.set("onlyReadLatest", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOnlyReadLatest: Self = this.set("onlyReadLatest", js.undefined)
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }
-  
 }
-

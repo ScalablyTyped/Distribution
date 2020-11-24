@@ -2,13 +2,12 @@ package typings.azureKustoData
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object azureKustoDataStrings {
-  @js.native
-  sealed trait KustoResultRow extends js.Object
   
   @scala.inline
   def KustoResultRow: KustoResultRow = "KustoResultRow".asInstanceOf[KustoResultRow]
+  @js.native
+  sealed trait KustoResultRow extends js.Object
 }
-

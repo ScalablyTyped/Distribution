@@ -11,24 +11,24 @@ import typings.getos.getosStrings.sunos
 import typings.getos.getosStrings.win32
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.getos.mod.OtherOs
   - typings.getos.mod.LinuxOs
 */
 trait Os extends js.Object
-
 object Os {
+  
   @scala.inline
   def OtherOs(os: aix | android | darwin | freebsd | openbsd | sunos | win32 | cygwin): Os = {
     val __obj = js.Dynamic.literal(os = os.asInstanceOf[js.Any])
     __obj.asInstanceOf[Os]
   }
+  
   @scala.inline
   def LinuxOs(dist: String, os: linux, release: String): Os = {
     val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
     __obj.asInstanceOf[Os]
   }
 }
-

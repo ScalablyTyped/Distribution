@@ -3,11 +3,12 @@ package typings.dargs.mod
 import typings.dargs.anon.Dictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dargs", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Reverse [`minimist`](https://github.com/substack/minimist). Convert an object of options into an array of command-line arguments.
   @param object - Object to convert to command-line arguments.
@@ -71,4 +72,3 @@ object ^ extends js.Object {
   def apply(`object`: Dictkey): js.Array[String] = js.native
   def apply(`object`: Dictkey, options: Options): js.Array[String] = js.native
 }
-

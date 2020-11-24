@@ -10,9 +10,9 @@ A pure and powerful JavaScript DigiByte library.
 | ------------------ | :-------------: |
 | Full name          | digibyte |
 | Keywords           | bitcoin, digibyte, transaction, address, p2p, ecies, cryptocurrency, blockchain, payment, bip21, bip32, bip37, bip69, bip70, multisig |
-| # releases         | 19 |
-| # dependents       | 10 |
-| # downloads        | 2085 |
+| # releases         | 12 |
+| # dependents       | 12 |
+| # downloads        | 1454 |
 | # stars            | 0 |
 
 ## Links

@@ -7,11 +7,12 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("express-useragent", "express")
 @js.native
 object express extends js.Object {
+  
   def apply(): js.Function3[
     /* req */ Request_[ParamsDictionary, _, _, Query], 
     /* res */ Response_[_], 
@@ -19,4 +20,3 @@ object express extends js.Object {
     Unit
   ] = js.native
 }
-

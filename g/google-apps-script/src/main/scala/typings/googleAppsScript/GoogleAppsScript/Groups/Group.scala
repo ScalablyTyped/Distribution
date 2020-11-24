@@ -3,7 +3,7 @@ package typings.googleAppsScript.GoogleAppsScript.Groups
 import typings.googleAppsScript.GoogleAppsScript.Base.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A group object whose members and those members' roles within the group can be queried.
@@ -24,15 +24,21 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Group extends js.Object {
+  
   def getEmail(): String = js.native
+  
   def getGroups(): js.Array[Group] = js.native
+  
   def getRole(email: String): Role = js.native
   def getRole(user: User): Role = js.native
+  
   def getRoles(users: js.Array[User]): js.Array[Role] = js.native
+  
   def getUsers(): js.Array[User] = js.native
+  
   def hasGroup(email: String): Boolean = js.native
   def hasGroup(group: Group): Boolean = js.native
+  
   def hasUser(email: String): Boolean = js.native
   def hasUser(user: User): Boolean = js.native
 }
-

@@ -9,10 +9,10 @@ A custom build of Stylis
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @emotion/stylis |
-| Keywords           | - |
-| # releases         | 22 |
-| # dependents       | 11 |
-| # downloads        | 83914985 |
+| Keywords           | styles, emotion, react, css, css-in-js |
+| # releases         | 4 |
+| # dependents       | 22 |
+| # downloads        | 174116830 |
 | # stars            | 0 |
 
 ## Links

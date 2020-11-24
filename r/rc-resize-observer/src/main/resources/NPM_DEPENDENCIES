@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-resize-observer" : "0.2.3"
+      "rc-resize-observer" : "0.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-resize-observer" : "0.2.3"
+      "rc-resize-observer" : "0.2.6"
     }
   ],
   "compile-devDependencies" : [

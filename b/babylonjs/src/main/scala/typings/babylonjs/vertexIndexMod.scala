@@ -2,11 +2,12 @@ package typings.babylonjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Node/Blocks/Vertex/index", JSImport.Namespace)
 @js.native
 object vertexIndexMod extends js.Object {
+  
   @js.native
   class BonesBlock protected ()
     extends typings.babylonjs.bonesBlockMod.BonesBlock {
@@ -56,6 +57,4 @@ object vertexIndexMod extends js.Object {
       */
     def this(name: String) = this()
   }
-  
 }
-

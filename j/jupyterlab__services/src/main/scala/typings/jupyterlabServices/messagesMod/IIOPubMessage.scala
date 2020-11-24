@@ -21,32 +21,48 @@ import typings.jupyterlabServices.anon.TransientDisplayidString
 import typings.jupyterlabServices.anon.Wait
 import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
 import typings.luminoCoreutils.jsonMod.JSONObject
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait IIOPubMessage[T /* <: IOPubMessageType */] extends IMessage[T] {
+  
   @JSName("channel")
-  var channel_IIOPubMessage: iopub
+  var channel_IIOPubMessage: iopub = js.native
 }
-
 object IIOPubMessage {
+  
   @scala.inline
-  def apply[/* <: typings.jupyterlabServices.messagesMod.IOPubMessageType */ T](
+  def apply[T /* <: IOPubMessageType */](
     channel: iopub,
     content: Wait | Commid | (ReplyContent[
       ICommInfoReply | ICompleteReply | IHistoryReply | IInfoReply | IInputReply | IInspectReply | IIsCompleteReplyIncomplete | IIsCompleteReplyOther
     ]) | Targetname | Data | Code | Metadata | Ename | Executioncount | (ReplyContent[IExecuteReply] with IExecuteCount) | Allowstdin | Transient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | Password | Cursorpos | CodeString | Executionstate | Name | ((/* import warning: importer.ImportType#apply Failed type conversion: @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IDisplayDataMsg['content'] */ js.Any) with TransientDisplayidString) | Arguments | Body | Event,
     header: IHeader[T],
     metadata: JSONObject,
-    parent_header: IHeader[MessageType] | js.Object,
-    buffers: js.Array[ArrayBuffer | ArrayBufferView] = null
+    parent_header: IHeader[MessageType] | js.Object
   ): IIOPubMessage[T] = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    if (buffers != null) __obj.updateDynamic("buffers")(buffers.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIOPubMessage[T]]
   }
+  
+  @scala.inline
+  implicit class IIOPubMessageOps[Self <: IIOPubMessage[_], T /* <: IOPubMessageType */] (val x: Self with IIOPubMessage[T]) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setChannel(value: iopub): Self = this.set("channel", value.asInstanceOf[js.Any])
+  }
 }
-

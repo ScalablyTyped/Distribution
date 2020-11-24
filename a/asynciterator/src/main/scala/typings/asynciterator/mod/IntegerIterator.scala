@@ -3,7 +3,7 @@ package typings.asynciterator.mod
 import typings.asynciterator.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asynciterator", "IntegerIterator")
 @js.native
@@ -16,8 +16,10 @@ import scala.scalajs.js.annotation._
   */
 class IntegerIterator () extends AsyncIterator[Double] {
   def this(hasStartStepEnd: End) = this()
+  
   var _last: js.Any = js.native
+  
   var _next: js.Any = js.native
+  
   var _step: js.Any = js.native
 }
-

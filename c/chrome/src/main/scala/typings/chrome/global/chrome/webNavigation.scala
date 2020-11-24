@@ -12,7 +12,7 @@ import typings.chrome.chrome.webNavigation.WebNavigationSourceEvent
 import typings.chrome.chrome.webNavigation.WebNavigationTransitionalEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Web Navigation
@@ -25,19 +25,29 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.webNavigation")
 @js.native
 object webNavigation extends js.Object {
-  var onBeforeNavigate: WebNavigationParentedEvent = js.native
-  var onCommitted: WebNavigationTransitionalEvent = js.native
-  var onCompleted: WebNavigationFramedEvent = js.native
-  var onCreatedNavigationTarget: WebNavigationSourceEvent = js.native
-  var onDOMContentLoaded: WebNavigationFramedEvent = js.native
-  var onErrorOccurred: WebNavigationFramedErrorEvent = js.native
-  var onHistoryStateUpdated: WebNavigationTransitionalEvent = js.native
-  var onReferenceFragmentUpdated: WebNavigationTransitionalEvent = js.native
-  var onTabReplaced: WebNavigationReplacementEvent = js.native
+  
   def getAllFrames(
     details: GetAllFrameDetails,
     callback: js.Function1[/* details */ js.Array[GetAllFrameResultDetails] | Null, Unit]
   ): Unit = js.native
+  
   def getFrame(details: GetFrameDetails, callback: js.Function1[/* details */ GetFrameResultDetails | Null, Unit]): Unit = js.native
+  
+  var onBeforeNavigate: WebNavigationParentedEvent = js.native
+  
+  var onCommitted: WebNavigationTransitionalEvent = js.native
+  
+  var onCompleted: WebNavigationFramedEvent = js.native
+  
+  var onCreatedNavigationTarget: WebNavigationSourceEvent = js.native
+  
+  var onDOMContentLoaded: WebNavigationFramedEvent = js.native
+  
+  var onErrorOccurred: WebNavigationFramedErrorEvent = js.native
+  
+  var onHistoryStateUpdated: WebNavigationTransitionalEvent = js.native
+  
+  var onReferenceFragmentUpdated: WebNavigationTransitionalEvent = js.native
+  
+  var onTabReplaced: WebNavigationReplacementEvent = js.native
 }
-

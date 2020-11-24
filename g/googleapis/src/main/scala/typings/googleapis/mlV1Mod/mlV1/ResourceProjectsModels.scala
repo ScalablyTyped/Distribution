@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/ml/v1", "ml_v1.Resource$Projects$Models")
 @js.native
 class ResourceProjectsModels protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var versions: ResourceProjectsModelsVersions = js.native
+  
   /**
     * ml.projects.models.create
     * @desc Creates a model which will later contain one or more versions.  You
@@ -49,6 +50,7 @@ class ResourceProjectsModels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudMlV1Model]
   ): Unit = js.native
+  
   /**
     * ml.projects.models.delete
     * @desc Deletes a model.  You can only delete a model if there are no
@@ -82,6 +84,7 @@ class ResourceProjectsModels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * ml.projects.models.get
     * @desc Gets information about a model, including its name, the description
@@ -115,6 +118,7 @@ class ResourceProjectsModels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudMlV1Model]
   ): Unit = js.native
+  
   /**
     * ml.projects.models.getIamPolicy
     * @desc Gets the access control policy for a resource. Returns an empty
@@ -147,6 +151,7 @@ class ResourceProjectsModels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleIamV1Policy]
   ): Unit = js.native
+  
   /**
     * ml.projects.models.list
     * @desc Lists the models in a project.  Each project can contain multiple
@@ -184,6 +189,7 @@ class ResourceProjectsModels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudMlV1ListModelsResponse]
   ): Unit = js.native
+  
   /**
     * ml.projects.models.patch
     * @desc Updates a specific model resource.  Currently the only supported
@@ -218,6 +224,7 @@ class ResourceProjectsModels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  
   /**
     * ml.projects.models.setIamPolicy
     * @desc Sets the access control policy on the specified resource. Replaces
@@ -251,6 +258,7 @@ class ResourceProjectsModels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleIamV1Policy]
   ): Unit = js.native
+  
   /**
     * ml.projects.models.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource. If
@@ -287,5 +295,6 @@ class ResourceProjectsModels protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleIamV1TestIamPermissionsResponse]
   ): Unit = js.native
+  
+  var versions: ResourceProjectsModelsVersions = js.native
 }
-

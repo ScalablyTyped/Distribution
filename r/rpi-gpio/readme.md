@@ -10,9 +10,9 @@ Control Raspberry Pi GPIO pins with node.js
 | ------------------ | :-------------: |
 | Full name          | rpi-gpio |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 50 |
-| # downloads        | 51004 |
+| # releases         | 10 |
+| # dependents       | 52 |
+| # downloads        | 48794 |
 | # stars            | 36 |
 
 ## Links

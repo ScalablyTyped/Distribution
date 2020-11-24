@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-image" : "4.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-image" : "4.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

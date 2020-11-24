@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Settings$Filters")
 @js.native
 class ResourceUsersSettingsFilters protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gmail.users.settings.filters.create
     * @desc Creates a filter.
@@ -42,6 +44,7 @@ class ResourceUsersSettingsFilters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFilter]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.filters.delete
     * @desc Deletes a filter.
@@ -71,6 +74,7 @@ class ResourceUsersSettingsFilters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.filters.get
     * @desc Gets a filter.
@@ -100,6 +104,7 @@ class ResourceUsersSettingsFilters protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaFilter]
   ): Unit = js.native
+  
   /**
     * gmail.users.settings.filters.list
     * @desc Lists the message filters of a Gmail user.
@@ -132,4 +137,3 @@ class ResourceUsersSettingsFilters protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListFiltersResponse]
   ): Unit = js.native
 }
-

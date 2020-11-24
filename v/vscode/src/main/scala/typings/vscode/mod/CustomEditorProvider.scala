@@ -3,31 +3,11 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEditorProvider[T] {
-  /**
-    * Signal that an edit has occurred inside a custom editor.
-    *
-    * This event must be fired by your extension whenever an edit happens in a custom editor. An edit can be
-    * anything from changing some text, to cropping an image, to reordering a list. Your extension is free to
-    * define what an edit is and what data is stored on each edit.
-    *
-    * Firing `onDidChange` causes VS Code to mark the editors as being dirty. This is cleared when the user either
-    * saves or reverts the file.
-    *
-    * Editors that support undo/redo must fire a `CustomDocumentEditEvent` whenever an edit happens. This allows
-    * users to undo and redo the edit using VS Code's standard VS Code keyboard shortcuts. VS Code will also mark
-    * the editor as no longer being dirty if the user undoes all edits to the last saved state.
-    *
-    * Editors that support editing but cannot use VS Code's standard undo/redo mechanism must fire a `CustomDocumentContentChangeEvent`.
-    * The only way for a user to clear the dirty state of an editor that does not support undo/redo is to either
-    * `save` or `revert` the file.
-    *
-    * An editor should only ever fire `CustomDocumentEditEvent` events, or only ever fire `CustomDocumentContentChangeEvent` events.
-    */
-  val onDidChangeCustomDocument: Event[CustomDocumentContentChangeEvent[T] | CustomDocumentEditEvent[T]] = js.native
+  
   /**
     * Back up a dirty custom document.
     *
@@ -50,6 +30,29 @@ trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEdit
     * than cancelling it to ensure that VS Code has some valid backup.
     */
   def backupCustomDocument(document: T, context: CustomDocumentBackupContext, cancellation: CancellationToken): Thenable[CustomDocumentBackup] = js.native
+  
+  /**
+    * Signal that an edit has occurred inside a custom editor.
+    *
+    * This event must be fired by your extension whenever an edit happens in a custom editor. An edit can be
+    * anything from changing some text, to cropping an image, to reordering a list. Your extension is free to
+    * define what an edit is and what data is stored on each edit.
+    *
+    * Firing `onDidChange` causes VS Code to mark the editors as being dirty. This is cleared when the user either
+    * saves or reverts the file.
+    *
+    * Editors that support undo/redo must fire a `CustomDocumentEditEvent` whenever an edit happens. This allows
+    * users to undo and redo the edit using VS Code's standard VS Code keyboard shortcuts. VS Code will also mark
+    * the editor as no longer being dirty if the user undoes all edits to the last saved state.
+    *
+    * Editors that support editing but cannot use VS Code's standard undo/redo mechanism must fire a `CustomDocumentContentChangeEvent`.
+    * The only way for a user to clear the dirty state of an editor that does not support undo/redo is to either
+    * `save` or `revert` the file.
+    *
+    * An editor should only ever fire `CustomDocumentEditEvent` events, or only ever fire `CustomDocumentContentChangeEvent` events.
+    */
+  val onDidChangeCustomDocument: Event[CustomDocumentContentChangeEvent[T] | CustomDocumentEditEvent[T]] = js.native
+  
   /**
     * Revert a custom document to its last saved state.
     *
@@ -66,6 +69,7 @@ trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEdit
     * @return Thenable signaling that the change has completed.
     */
   def revertCustomDocument(document: T, cancellation: CancellationToken): Thenable[Unit] = js.native
+  
   /**
     * Save a custom document.
     *
@@ -82,6 +86,7 @@ trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEdit
     * @return Thenable signaling that saving has completed.
     */
   def saveCustomDocument(document: T, cancellation: CancellationToken): Thenable[Unit] = js.native
+  
   /**
     * Save a custom document to a different location.
     *
@@ -98,10 +103,10 @@ trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEdit
     */
   def saveCustomDocumentAs(document: T, destination: Uri, cancellation: CancellationToken): Thenable[Unit] = js.native
 }
-
 object CustomEditorProvider {
+  
   @scala.inline
-  def apply[/* <: typings.vscode.mod.CustomDocument */ T](
+  def apply[T /* <: CustomDocument */](
     backupCustomDocument: (T, CustomDocumentBackupContext, CancellationToken) => Thenable[CustomDocumentBackup],
     onDidChangeCustomDocument: (/* listener */ js.Function1[CustomDocumentContentChangeEvent[T] | CustomDocumentEditEvent[T], js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable,
     openCustomDocument: (Uri, CustomDocumentOpenContext, CancellationToken) => Thenable[T] | T,
@@ -113,30 +118,37 @@ object CustomEditorProvider {
     val __obj = js.Dynamic.literal(backupCustomDocument = js.Any.fromFunction3(backupCustomDocument), onDidChangeCustomDocument = js.Any.fromFunction3(onDidChangeCustomDocument), openCustomDocument = js.Any.fromFunction3(openCustomDocument), resolveCustomEditor = js.Any.fromFunction3(resolveCustomEditor), revertCustomDocument = js.Any.fromFunction2(revertCustomDocument), saveCustomDocument = js.Any.fromFunction2(saveCustomDocument), saveCustomDocumentAs = js.Any.fromFunction3(saveCustomDocumentAs))
     __obj.asInstanceOf[CustomEditorProvider[T]]
   }
+  
   @scala.inline
-  implicit class CustomEditorProviderOps[Self <: CustomEditorProvider[_], /* <: typings.vscode.mod.CustomDocument */ T] (val x: Self with CustomEditorProvider[T]) extends AnyVal {
+  implicit class CustomEditorProviderOps[Self <: CustomEditorProvider[_], T /* <: CustomDocument */] (val x: Self with CustomEditorProvider[T]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setBackupCustomDocument(value: (T, CustomDocumentBackupContext, CancellationToken) => Thenable[CustomDocumentBackup]): Self = this.set("backupCustomDocument", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setOnDidChangeCustomDocument(
       value: (/* listener */ js.Function1[CustomDocumentContentChangeEvent[T] | CustomDocumentEditEvent[T], js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
     ): Self = this.set("onDidChangeCustomDocument", js.Any.fromFunction3(value))
+    
     @scala.inline
     def setRevertCustomDocument(value: (T, CancellationToken) => Thenable[Unit]): Self = this.set("revertCustomDocument", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSaveCustomDocument(value: (T, CancellationToken) => Thenable[Unit]): Self = this.set("saveCustomDocument", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setSaveCustomDocumentAs(value: (T, Uri, CancellationToken) => Thenable[Unit]): Self = this.set("saveCustomDocumentAs", js.Any.fromFunction3(value))
   }
-  
 }
-

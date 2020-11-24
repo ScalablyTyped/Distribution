@@ -11,8 +11,8 @@ HTTP proxying for the masses
 | Full name          | http-proxy |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 1491 |
-| # downloads        | 288568211 |
+| # dependents       | 1638 |
+| # downloads        | 393730255 |
 | # stars            | 181 |
 
 ## Links

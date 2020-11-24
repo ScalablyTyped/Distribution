@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Groups
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Role extends js.Object
-
 /**
   * Possible roles of a user within a group, such as owner or ordinary member. Users subscribed to a
   * group have exactly one role within the context of that group.
@@ -17,6 +16,7 @@ sealed trait Role extends js.Object
 @JSGlobal("GoogleAppsScript.Groups.Role")
 @js.native
 object Role extends js.Object {
+  
   @js.native
   sealed trait INVITED extends Role
   
@@ -31,6 +31,4 @@ object Role extends js.Object {
   
   @js.native
   sealed trait PENDING extends Role
-  
 }
-

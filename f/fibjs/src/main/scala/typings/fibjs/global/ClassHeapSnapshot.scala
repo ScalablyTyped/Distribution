@@ -2,7 +2,7 @@ package typings.fibjs.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class ClassHeapSnapshot ()
   extends typings.fibjs.ClassHeapSnapshot
-

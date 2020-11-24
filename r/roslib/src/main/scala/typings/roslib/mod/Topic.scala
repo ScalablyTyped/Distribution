@@ -3,7 +3,7 @@ package typings.roslib.mod
 import typings.roslib.anon.Compression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roslib", "Topic")
 @js.native
@@ -27,20 +27,25 @@ class Topic protected () extends js.Object {
     *   * queue_length - the queue length at bridge side used when subscribing (defaults to 0, no queueing).
     */
   def this(options: Compression) = this()
-  // getter
-  var messageType: String = js.native
-  // getter
-  var name: String = js.native
+  
   /**
     * Registers as a publisher for the topic.
     */
   def advertise(): Unit = js.native
+  
+  // getter
+  var messageType: String = js.native
+  
+  // getter
+  var name: String = js.native
+  
   /**
     * Publish the message.
     *
     * @param message - A ROSLIB.Message object.
     */
   def publish(message: Message): Unit = js.native
+  
   /**
     * Every time a message is published for the given topic, the callback
     * will be called with the message object.
@@ -49,10 +54,12 @@ class Topic protected () extends js.Object {
     *   * message - the published message
     */
   def subscribe(callback: js.Function1[/* message */ Message, Unit]): Unit = js.native
+  
   /**
     * Unregisters as a publisher for the topic.
     */
   def unadvertise(): Unit = js.native
+  
   /**
     * Unregisters as a subscriber for the topic. Unsubscribing stop remove
     * all subscribe callbacks. To remove a call back, you must explicitly
@@ -65,4 +72,3 @@ class Topic protected () extends js.Object {
   def unsubscribe(): Unit = js.native
   def unsubscribe(callback: js.Function1[/* callback */ js.Function1[/* message */ Message, Unit], Unit]): Unit = js.native
 }
-

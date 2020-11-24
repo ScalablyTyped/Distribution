@@ -11,26 +11,12 @@ import typings.activexIwshruntimelibrary.activexIwshruntimelibraryStrings.Volati
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Shell Object */
 @js.native
 trait WshShell extends js.Object {
-  var CurrentDirectory: String = js.native
-  /**
-    * Note that **Environment** doesn't actually return a callable object; the call is only usable in the context of the **Environment** property. The following:
-    *
-    *     let env = new ActiveXObject('WScript.Shell').Environment;
-    *     WScript.Echo(env('System'));
-    *
-    * will return an empty string, unless there is an environment variable named `System`
-    */
-  @JSName("Environment")
-  var Environment_Original: WshEnvironment with (js.Function1[/* Type */ System | User | Process | Volatile, WshEnvironment]) = js.native
-  @JSName("IWshRuntimeLibrary.WshShell_typekey")
-  var IWshRuntimeLibraryDotWshShell_typekey: WshShell = js.native
-  @JSName("SpecialFolders")
-  val SpecialFolders_Original: WshCollection = js.native
+  
   /**
     * Activates an application window
     * @param App Title of application as it appears in the title bar, or the process ID
@@ -53,6 +39,7 @@ trait WshShell extends js.Object {
   def AppActivate(App: String, Wait: js.Any): Boolean = js.native
   def AppActivate(App: Double): Boolean = js.native
   def AppActivate(App: Double, Wait: js.Any): Boolean = js.native
+  
   /**
     * Creates a shortcut
     * @param PathLink Path where the shortcut should be created
@@ -60,6 +47,9 @@ trait WshShell extends js.Object {
     * The shortcut object exists in memory until you save it to disk with the **Save** method.
     */
   def CreateShortcut(PathLink: String): WshShortcut | WshURLShortcut = js.native
+  
+  var CurrentDirectory: String = js.native
+  
   /**
     * Note that **Environment** doesn't actually return a callable object; the call is only usable in the context of the **Environment** property. The following:
     *
@@ -69,6 +59,16 @@ trait WshShell extends js.Object {
     * will return an empty string, unless there is an environment variable named `System`
     */
   def Environment(Name: String): String = js.native
+  /**
+    * Note that **Environment** doesn't actually return a callable object; the call is only usable in the context of the **Environment** property. The following:
+    *
+    *     let env = new ActiveXObject('WScript.Shell').Environment;
+    *     WScript.Echo(env('System'));
+    *
+    * will return an empty string, unless there is an environment variable named `System`
+    */
+  @JSName("Environment")
+  var Environment_Original: WshEnvironment with (js.Function1[/* Type */ System | User | Process | Volatile, WshEnvironment]) = js.native
   @JSName("Environment")
   def Environment_Process(Type: Process): WshEnvironment = js.native
   /**
@@ -85,11 +85,18 @@ trait WshShell extends js.Object {
   def Environment_User(Type: User): WshEnvironment = js.native
   @JSName("Environment")
   def Environment_Volatile(Type: Volatile): WshEnvironment = js.native
+  
   def Exec(Command: String): WshExec = js.native
+  
   def ExpandEnvironmentStrings(Src: String): String = js.native
+  
+  @JSName("IWshRuntimeLibrary.WshShell_typekey")
+  var IWshRuntimeLibraryDotWshShell_typekey: WshShell = js.native
+  
   /** @param string [Target=''] Name of the computer system where the event should be logged; default is the local computer system */
   def LogEvent(Type: EventType, Message: String): Boolean = js.native
   def LogEvent(Type: EventType, Message: String, Target: String): Boolean = js.native
+  
   def Popup(Text: String): PopupSelection = js.native
   def Popup(
     Text: String,
@@ -121,7 +128,9 @@ trait WshShell extends js.Object {
   def Popup(Text: String, SecondsToWait: Double, Title: String, Type: ButtonType): PopupSelection = js.native
   def Popup(Text: String, SecondsToWait: Double, Title: String, Type: IconType): PopupSelection = js.native
   def Popup(Text: String, SecondsToWait: Double, Title: String, Type: PopupType): PopupSelection = js.native
+  
   def RegDelete(Name: String): Unit = js.native
+  
   /**
     * Returns the value of a key or value-name from the registry
     * @param Name Key (ends with a final `\`) or value-name (doesn't end with a final `\`)
@@ -135,6 +144,7 @@ trait WshShell extends js.Object {
     * * **REG_MULTI_SZ** -- an array of srings, as a COM SafeArray
     */
   def RegRead(Name: String): String | Double | (SafeArray[Double | String]) = js.native
+  
   /**
     * Creates a new key, adds another value-name to an existing key and assigns it a value, or changes the value of an existing value-name
     * @param Name Key (ends with a final `\`) or value-name (doesn't end with a final `\`)
@@ -152,6 +162,7 @@ trait WshShell extends js.Object {
   def RegWrite_REGEXPANDSZ(Name: String, Value: js.Any, Type: REG_EXPAND_SZ): Unit = js.native
   @JSName("RegWrite")
   def RegWrite_REGSZ(Name: String, Value: js.Any, Type: REG_SZ): Unit = js.native
+  
   /**
     * Runs a program in a new process.
     * @param Command Command-line, including any parameters you want to pass to the executable file.
@@ -184,8 +195,11 @@ trait WshShell extends js.Object {
   def Run(Command: String, WindowStyle: js.UndefOr[scala.Nothing], WaitOnReturn: Boolean): Double = js.native
   def Run(Command: String, WindowStyle: WindowStyle): Double = js.native
   def Run(Command: String, WindowStyle: WindowStyle, WaitOnReturn: Boolean): Double = js.native
+  
   def SendKeys(Keys: String): Unit = js.native
   def SendKeys(Keys: String, Wait: Boolean): Unit = js.native
+  
   def SpecialFolders(Index: js.Any): js.Any = js.native
+  @JSName("SpecialFolders")
+  val SpecialFolders_Original: WshCollection = js.native
 }
-

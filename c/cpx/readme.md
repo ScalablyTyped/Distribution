@@ -10,9 +10,9 @@ Copy file globs, watching for changes.
 | ------------------ | :-------------: |
 | Full name          | cpx |
 | Keywords           | cp, cli, tool, commandline, sync, rsync, watch, observe, copy, dir, directory, directories, file, files |
-| # releases         | 1 |
-| # dependents       | 161 |
-| # downloads        | 12099056 |
+| # releases         | 0 |
+| # dependents       | 202 |
+| # downloads        | 12792387 |
 | # stars            | 22 |
 
 ## Links

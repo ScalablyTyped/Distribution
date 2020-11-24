@@ -10,9 +10,9 @@ Fetch a Windows process tree fast
 | ------------------ | :-------------: |
 | Full name          | windows-process-tree |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 2 |
-| # downloads        | 177543 |
+| # releases         | 3 |
+| # dependents       | 3 |
+| # downloads        | 539227 |
 | # stars            | 1 |
 
 ## Links

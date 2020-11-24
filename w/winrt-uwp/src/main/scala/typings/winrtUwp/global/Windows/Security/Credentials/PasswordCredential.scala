@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Security.Credentials
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the password credential store. */
 @JSGlobal("Windows.Security.Credentials.PasswordCredential")
@@ -18,4 +18,3 @@ class PasswordCredential ()
     */
   def this(resource: String, userName: String, password: String) = this()
 }
-

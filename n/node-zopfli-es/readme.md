@@ -11,8 +11,8 @@ Bindings for Zopfli compressing lib. Compress gzip files 5% better than gzip.
 | Full name          | node-zopfli-es |
 | Keywords           | zopfli, zlib, compress, gzip, deflate, es6, node-addon-api |
 | # releases         | 8 |
-| # dependents       | 9 |
-| # downloads        | 238777 |
+| # dependents       | 10 |
+| # downloads        | 389077 |
 | # stars            | 0 |
 
 ## Links

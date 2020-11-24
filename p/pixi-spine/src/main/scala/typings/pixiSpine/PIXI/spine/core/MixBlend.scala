@@ -2,14 +2,14 @@ package typings.pixiSpine.PIXI.spine.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MixBlend extends js.Object
-
 @JSGlobal("PIXI.spine.core.MixBlend")
 @js.native
 object MixBlend extends js.Object {
+  
   @js.native
   sealed trait add extends MixBlend
   
@@ -21,6 +21,4 @@ object MixBlend extends js.Object {
   
   @js.native
   sealed trait setup extends MixBlend
-  
 }
-

@@ -3,7 +3,7 @@ package typings.openui5.global.sap.ui.model.odata
 import typings.openui5.sap.ui.model.Model
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.odata.ODataContextBinding")
 @js.native
@@ -19,4 +19,3 @@ abstract class ODataContextBinding protected ()
   def this(oModel: Model, sPath: String, oContext: js.Any) = this()
   def this(oModel: Model, sPath: String, oContext: js.Any, mParameters: js.Any) = this()
 }
-

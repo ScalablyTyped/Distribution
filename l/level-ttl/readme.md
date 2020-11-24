@@ -12,7 +12,7 @@ Adds a 'ttl' option to LevelUP for puts and batches
 | Keywords           | leveldb, levelup, level, ttl, whoa dude! |
 | # releases         | 1 |
 | # dependents       | 29 |
-| # downloads        | 12123 |
+| # downloads        | 17746 |
 | # stars            | 3 |
 
 ## Links

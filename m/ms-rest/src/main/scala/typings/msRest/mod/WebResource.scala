@@ -5,41 +5,34 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest", "WebResource")
 @js.native
 class WebResource () extends js.Object {
+  
   /**
     * @property {any} [body] The request body
     */
   var body: js.UndefOr[js.Any] = js.native
+  
   /**
     * @property {any} [formData] Formdata parameters.
     */
   var formData: js.UndefOr[js.Any] = js.native
+  
   /**
     * Access to raw request headers for requests. Useful when you need to set a header
     * on every request (like in a credential object) where the prepare method does
     * far too much work.
     */
   var headers: StringDictionary[String] = js.native
+  
   /**
     * @property {string} method The request method
     */
   var method: HttpMethods = js.native
-  /**
-    * @property {any} [query] Query parameters
-    */
-  var query: js.UndefOr[StringDictionary[js.Any]] = js.native
-  /**
-    * @property {boolean} rawResponse Indicates whether the client should give back the response as-is. (Useful for streaming scenarios).
-    */
-  var rawResponse: js.UndefOr[Boolean] = js.native
-  /**
-    * @property {string} url The request url
-    */
-  var url: String = js.native
+  
   /**
     * Hook up the given input stream to a destination output stream if the WebResource method
     * requires a request body and a body is not already set.
@@ -50,6 +43,7 @@ class WebResource () extends js.Object {
     * @return destStream
     */
   def pipeInput(inputStream: Readable, destStream: Writable): Writable = js.native
+  
   /**
     * Prepares the request.
     *
@@ -107,6 +101,22 @@ class WebResource () extends js.Object {
   def prepare(): WebResource = js.native
   def prepare(options: PathTemplateBasedRequestPrepareOptions): WebResource = js.native
   def prepare(options: UrlBasedRequestPrepareOptions): WebResource = js.native
+  
+  /**
+    * @property {any} [query] Query parameters
+    */
+  var query: js.UndefOr[StringDictionary[js.Any]] = js.native
+  
+  /**
+    * @property {boolean} rawResponse Indicates whether the client should give back the response as-is. (Useful for streaming scenarios).
+    */
+  var rawResponse: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * @property {string} url The request url
+    */
+  var url: String = js.native
+  
   /**
     * Validates that the required properties such as method, url, headers['Content-Type'],
     * headers['accept-language'] are defined. It will throw an error if one of the above
@@ -114,4 +124,3 @@ class WebResource () extends js.Object {
     */
   def validateRequestProperties(): Unit = js.native
 }
-

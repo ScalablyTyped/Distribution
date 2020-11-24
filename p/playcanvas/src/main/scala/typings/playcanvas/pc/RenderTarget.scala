@@ -2,7 +2,7 @@ package typings.playcanvas.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new render target. A color buffer or a depth buffer must be set.
@@ -43,35 +43,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RenderTarget extends js.Object {
+  
   /**
     * Color buffer set up on the render target.
     */
   val colorBuffer: Texture = js.native
-  /**
-    * Depth buffer set up on the render target. Only available, if depthBuffer was set in constructor.
-    * Not available, if depth property was used instead.
-    */
-  val depthBuffer: Texture = js.native
-  /**
-    * If the render target is bound to a cubemap, this property
-    * specifies which face of the cubemap is rendered to. Can be:
-    *
-    * * {@link pc.CUBEFACE_POSX}
-    * * {@link pc.CUBEFACE_NEGX}
-    * * {@link pc.CUBEFACE_POSY}
-    * * {@link pc.CUBEFACE_NEGY}
-    * * {@link pc.CUBEFACE_POSZ}
-    * * {@link pc.CUBEFACE_NEGZ}
-    */
-  val face: Double = js.native
-  /**
-    * Height of the render target in pixels.
-    */
-  val height: Double = js.native
-  /**
-    * Width of the render target in pixels.
-    */
-  val width: Double = js.native
+  
   /**
     * Copies color and/or depth contents of source render target to this one. Formats, sizes and anti-aliasing samples must match.
     * Depth buffer can only be copied on WebGL 2.0.
@@ -84,10 +61,36 @@ trait RenderTarget extends js.Object {
   def copy(source: RenderTarget, color: js.UndefOr[scala.Nothing], depth: Boolean): Boolean = js.native
   def copy(source: RenderTarget, color: Boolean): Boolean = js.native
   def copy(source: RenderTarget, color: Boolean, depth: Boolean): Boolean = js.native
+  
+  /**
+    * Depth buffer set up on the render target. Only available, if depthBuffer was set in constructor.
+    * Not available, if depth property was used instead.
+    */
+  val depthBuffer: Texture = js.native
+  
   /**
     * Frees resources associated with this render target.
     */
   def destroy(): Unit = js.native
+  
+  /**
+    * If the render target is bound to a cubemap, this property
+    * specifies which face of the cubemap is rendered to. Can be:
+    *
+    * * {@link pc.CUBEFACE_POSX}
+    * * {@link pc.CUBEFACE_NEGX}
+    * * {@link pc.CUBEFACE_POSY}
+    * * {@link pc.CUBEFACE_NEGY}
+    * * {@link pc.CUBEFACE_POSZ}
+    * * {@link pc.CUBEFACE_NEGZ}
+    */
+  val face: Double = js.native
+  
+  /**
+    * Height of the render target in pixels.
+    */
+  val height: Double = js.native
+  
   /**
     * If samples > 1, resolves the anti-aliased render target (WebGL2 only).
     * When you're rendering to an anti-aliased render target, pixels aren't written directly to the readable texture.
@@ -100,5 +103,9 @@ trait RenderTarget extends js.Object {
     * @param depth - Resolve depth buffer.
     */
   def resolve(color: Boolean, depth: Boolean): Unit = js.native
+  
+  /**
+    * Width of the render target in pixels.
+    */
+  val width: Double = js.native
 }
-

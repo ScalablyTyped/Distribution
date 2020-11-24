@@ -3,13 +3,14 @@ package typings.relayRuntime.relayObservableMod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("relay-runtime/lib/network/RelayObservable", "RelayObservable")
 @js.native
 class RelayObservable[T] protected () extends Subscribable[T] {
   // Use RelayObservable.create(source);
   protected def this(source: scala.Nothing) = this()
+  
   /**
     * Similar to promise.catch(), observable.catch() handles error events, and
     * provides an alternative observable to use in it's place.
@@ -18,12 +19,14 @@ class RelayObservable[T] protected () extends Subscribable[T] {
     * on the resulting Observable.
     */
   def `catch`[U](fn: js.Function1[/* error */ Error, RelayObservable[U]]): RelayObservable[T | U] = js.native
+  
   /**
     * Returns a new Observable which first yields values from this Observable,
     * then yields values from the next Observable. This is useful for chaining
     * together Observables of finite length.
     */
   def concat[U](next: RelayObservable[U]): RelayObservable[T | U] = js.native
+  
   /**
     * Returns a new Observable which returns the same values as this one, but
     * modified so that the provided Observer is called to perform a side-effects
@@ -36,6 +39,7 @@ class RelayObservable[T] protected () extends Subscribable[T] {
     * side-effects such as logging or performance monitoring.
     */
   def `do`(observer: Observer[T]): RelayObservable[T] = js.native
+  
   /**
     * Returns a new Observable which returns the same values as this one, but
     * modified so that the finally callback is performed after completion,
@@ -44,6 +48,7 @@ class RelayObservable[T] protected () extends Subscribable[T] {
     * This is useful for cleanup such as resource finalization.
     */
   def `finally`(fn: js.Function0[_]): RelayObservable[T] = js.native
+  
   /**
     * Returns a new Observable which is identical to this one, unless this
     * Observable completes before yielding any values, in which case the new
@@ -55,17 +60,20 @@ class RelayObservable[T] protected () extends Subscribable[T] {
     * which should be tried in order, i.e. from a cache before a network.
     */
   def ifEmpty[U](alternate: RelayObservable[U]): RelayObservable[T | U] = js.native
+  
   /**
     * Returns a new Observerable where each value has been transformed by
     * the mapping function.
     */
   def map[U](fn: js.Function1[/* value */ T, U]): RelayObservable[U] = js.native
+  
   /**
     * Returns a new Observable where each value is replaced with a new Observable
     * by the mapping function, the results of which returned as a single
     * merged Observable.
     */
   def mergeMap[U](fn: js.Function1[/* value */ T, ObservableFromValue[U]]): RelayObservable[U] = js.native
+  
   /**
     * Returns a new Observable which first mirrors this Observable, then when it
     * completes, waits for `pollInterval` milliseconds before re-subscribing to
@@ -74,23 +82,26 @@ class RelayObservable[T] protected () extends Subscribable[T] {
     * The returned Observable never completes.
     */
   def poll(pollInterval: Double): RelayObservable[T] = js.native
+  
   /**
     * Returns a Promise which resolves when this Observable yields a first value
     * or when it completes with no value.
     */
   def toPromise(): js.Promise[js.UndefOr[T]] = js.native
 }
-
 /* static members */
 @JSImport("relay-runtime/lib/network/RelayObservable", "RelayObservable")
 @js.native
 object RelayObservable extends js.Object {
+  
   def create[V](source: Source[V]): RelayObservable[V] = js.native
+  
   /**
     * Accepts various kinds of data sources, and always returns a RelayObservable
     * useful for accepting the result of a user-provided FetchFunction.
     */
   def from[V](obj: ObservableFromValue[V]): RelayObservable[V] = js.native
+  
   /**
     * When an emitted error event is not handled by an Observer, it is reported
     * to the host environment (what the ESObservable spec refers to as
@@ -118,4 +129,3 @@ object RelayObservable extends js.Object {
     */
   def onUnhandledError(callback: js.Function2[/* error */ Error, /* isUncaughtThrownError */ Boolean, Unit]): Unit = js.native
 }
-

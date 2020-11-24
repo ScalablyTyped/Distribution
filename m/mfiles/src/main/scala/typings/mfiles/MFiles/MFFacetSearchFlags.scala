@@ -9,7 +9,7 @@ import typings.mfiles.mfilesNumbers.`64`
 import typings.mfiles.mfilesNumbers.`8`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.mfiles.mfilesNumbers.`0`
@@ -21,21 +21,26 @@ import scala.scalajs.js.annotation._
   - typings.mfiles.mfilesNumbers.`64`
 */
 trait MFFacetSearchFlags extends js.Object
-
 object MFFacetSearchFlags {
+  
   @scala.inline
   def AscendingOrder: `32` = 32.asInstanceOf[`32`]
+  
   @scala.inline
   def IgnoreFacetGroupPermissions: `4` = 4.asInstanceOf[`4`]
+  
   @scala.inline
   def IgnoreFacetValuePermissions: `8` = 8.asInstanceOf[`8`]
+  
   @scala.inline
   def IgnoreSearchPermissions: `2` = 2.asInstanceOf[`2`]
+  
   @scala.inline
   def None: `0` = 0.asInstanceOf[`0`]
+  
   @scala.inline
   def OverrideByConfiguration: `64` = 64.asInstanceOf[`64`]
+  
   @scala.inline
   def SortFacetValues: `16` = 16.asInstanceOf[`16`]
 }
-

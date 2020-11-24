@@ -2,10 +2,11 @@ package typings.promise.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Thenable[T] extends js.Object {
+  
   /**
     * Attaches callbacks for the resolution and/or rejection of the ThenPromise.
     * @param onfulfilled The callback to execute when the ThenPromise is resolved.
@@ -24,4 +25,3 @@ trait Thenable[T] extends js.Object {
   ): Thenable[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]): Thenable[TResult1 | TResult2] = js.native
 }
-

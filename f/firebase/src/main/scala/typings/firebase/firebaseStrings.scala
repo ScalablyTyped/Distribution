@@ -1,71 +1,355 @@
 package typings.firebase
 
-import typings.firebase.mod.analytics.EventNameString
-import typings.firebase.mod.database.EventType
-import typings.firebase.mod.firestore.DocumentChangeType
-import typings.firebase.mod.firestore.FirestoreErrorCode
-import typings.firebase.mod.firestore.OrderByDirection
-import typings.firebase.mod.firestore.WhereFilterOp
-import typings.firebase.mod.functions.FunctionsErrorCode
-import typings.firebase.mod.remoteConfig.FetchStatus
-import typings.firebase.mod.remoteConfig.LogLevel
-import typings.firebase.mod.remoteConfig.ValueSource
+import typings.firebase.mod.default.analytics.EventNameString
+import typings.firebase.mod.default.firestore.DocumentChangeType
+import typings.firebase.mod.default.firestore.FirestoreErrorCode
+import typings.firebase.mod.default.firestore.OrderByDirection
+import typings.firebase.mod.default.firestore.WhereFilterOp
+import typings.firebase.mod.default.functions.FunctionsErrorCode
+import typings.firebase.mod.default.remoteConfig.FetchStatus
+import typings.firebase.mod.default.remoteConfig.LogLevel
+import typings.firebase.mod.default.remoteConfig.ValueSource
+import typings.firebase.mod.firebase.database.EventType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firebaseStrings {
-  @js.native
-  sealed trait EqualssignEqualssign extends WhereFilterOp
+  
+  @scala.inline
+  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
+  
+  @scala.inline
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
+  
+  @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
+  
+  @scala.inline
+  def aborted: aborted = "aborted".asInstanceOf[aborted]
+  
+  @scala.inline
+  def add_payment_info: add_payment_info = "add_payment_info".asInstanceOf[add_payment_info]
+  
+  @scala.inline
+  def add_shipping_info: add_shipping_info = "add_shipping_info".asInstanceOf[add_shipping_info]
+  
+  @scala.inline
+  def add_to_cart: add_to_cart = "add_to_cart".asInstanceOf[add_to_cart]
+  
+  @scala.inline
+  def add_to_wishlist: add_to_wishlist = "add_to_wishlist".asInstanceOf[add_to_wishlist]
+  
+  @scala.inline
+  def added: added = "added".asInstanceOf[added]
+  
+  @scala.inline
+  def `already-exists`: `already-exists` = "already-exists".asInstanceOf[`already-exists`]
+  
+  @scala.inline
+  def `array-contains`: `array-contains` = "array-contains".asInstanceOf[`array-contains`]
+  
+  @scala.inline
+  def `array-contains-any`: `array-contains-any` = "array-contains-any".asInstanceOf[`array-contains-any`]
+  
+  @scala.inline
+  def asc: asc = "asc".asInstanceOf[asc]
+  
+  @scala.inline
+  def begin_checkout: begin_checkout = "begin_checkout".asInstanceOf[begin_checkout]
+  
+  @scala.inline
+  def cache: cache = "cache".asInstanceOf[cache]
+  
+  @scala.inline
+  def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
+  
+  @scala.inline
+  def checkout_progress: checkout_progress = "checkout_progress".asInstanceOf[checkout_progress]
+  
+  @scala.inline
+  def child_added: child_added = "child_added".asInstanceOf[child_added]
+  
+  @scala.inline
+  def child_changed: child_changed = "child_changed".asInstanceOf[child_changed]
+  
+  @scala.inline
+  def child_moved: child_moved = "child_moved".asInstanceOf[child_moved]
+  
+  @scala.inline
+  def child_removed: child_removed = "child_removed".asInstanceOf[child_removed]
+  
+  @scala.inline
+  def `data-loss`: `data-loss` = "data-loss".asInstanceOf[`data-loss`]
+  
+  @scala.inline
+  def `deadline-exceeded`: `deadline-exceeded` = "deadline-exceeded".asInstanceOf[`deadline-exceeded`]
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  
+  @scala.inline
+  def desc: desc = "desc".asInstanceOf[desc]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def estimate: estimate = "estimate".asInstanceOf[estimate]
+  
+  @scala.inline
+  def exception: exception = "exception".asInstanceOf[exception]
+  
+  @scala.inline
+  def `failed-precondition`: `failed-precondition` = "failed-precondition".asInstanceOf[`failed-precondition`]
+  
+  @scala.inline
+  def failure: failure = "failure".asInstanceOf[failure]
+  
+  @scala.inline
+  def generate_lead: generate_lead = "generate_lead".asInstanceOf[generate_lead]
+  
+  @scala.inline
+  def in: in = "in".asInstanceOf[in]
+  
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  
+  @scala.inline
+  def internal: internal = "internal".asInstanceOf[internal]
+  
+  @scala.inline
+  def `invalid-argument`: `invalid-argument` = "invalid-argument".asInstanceOf[`invalid-argument`]
+  
+  @scala.inline
+  def login: login = "login".asInstanceOf[login]
+  
+  @scala.inline
+  def modified: modified = "modified".asInstanceOf[modified]
+  
+  @scala.inline
+  def `no-fetch-yet`: `no-fetch-yet` = "no-fetch-yet".asInstanceOf[`no-fetch-yet`]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
+  @scala.inline
+  def `not-found`: `not-found` = "not-found".asInstanceOf[`not-found`]
+  
+  @scala.inline
+  def `not-in`: `not-in` = "not-in".asInstanceOf[`not-in`]
+  
+  @scala.inline
+  def ok: ok = "ok".asInstanceOf[ok]
+  
+  @scala.inline
+  def `out-of-range`: `out-of-range` = "out-of-range".asInstanceOf[`out-of-range`]
+  
+  @scala.inline
+  def page_view: page_view = "page_view".asInstanceOf[page_view]
+  
+  @scala.inline
+  def `permission-denied`: `permission-denied` = "permission-denied".asInstanceOf[`permission-denied`]
+  
+  @scala.inline
+  def previous: previous = "previous".asInstanceOf[previous]
+  
+  @scala.inline
+  def purchase: purchase = "purchase".asInstanceOf[purchase]
+  
+  @scala.inline
+  def refund: refund = "refund".asInstanceOf[refund]
+  
+  @scala.inline
+  def remote: remote = "remote".asInstanceOf[remote]
+  
+  @scala.inline
+  def remove_from_cart: remove_from_cart = "remove_from_cart".asInstanceOf[remove_from_cart]
+  
+  @scala.inline
+  def removed: removed = "removed".asInstanceOf[removed]
+  
+  @scala.inline
+  def `resource-exhausted`: `resource-exhausted` = "resource-exhausted".asInstanceOf[`resource-exhausted`]
+  
+  @scala.inline
+  def screen_view: screen_view = "screen_view".asInstanceOf[screen_view]
+  
+  @scala.inline
+  def search: search = "search".asInstanceOf[search]
+  
+  @scala.inline
+  def select_content: select_content = "select_content".asInstanceOf[select_content]
+  
+  @scala.inline
+  def select_item: select_item = "select_item".asInstanceOf[select_item]
+  
+  @scala.inline
+  def select_promotion: select_promotion = "select_promotion".asInstanceOf[select_promotion]
+  
+  @scala.inline
+  def server: server = "server".asInstanceOf[server]
+  
+  @scala.inline
+  def set_checkout_option: set_checkout_option = "set_checkout_option".asInstanceOf[set_checkout_option]
+  
+  @scala.inline
+  def share: share = "share".asInstanceOf[share]
+  
+  @scala.inline
+  def sign_up: sign_up = "sign_up".asInstanceOf[sign_up]
+  
+  @scala.inline
+  def silent: silent = "silent".asInstanceOf[silent]
+  
+  @scala.inline
+  def static: static = "static".asInstanceOf[static]
+  
+  @scala.inline
+  def success: success = "success".asInstanceOf[success]
+  
+  @scala.inline
+  def throttle: throttle = "throttle".asInstanceOf[throttle]
+  
+  @scala.inline
+  def timing_complete: timing_complete = "timing_complete".asInstanceOf[timing_complete]
+  
+  @scala.inline
+  def unauthenticated: unauthenticated = "unauthenticated".asInstanceOf[unauthenticated]
+  
+  @scala.inline
+  def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
+  
+  @scala.inline
+  def unimplemented: unimplemented = "unimplemented".asInstanceOf[unimplemented]
+  
+  @scala.inline
+  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  
+  @scala.inline
+  def value: value = "value".asInstanceOf[value]
+  
+  @scala.inline
+  def verbose: verbose = "verbose".asInstanceOf[verbose]
+  
+  @scala.inline
+  def view_cart: view_cart = "view_cart".asInstanceOf[view_cart]
+  
+  @scala.inline
+  def view_item: view_item = "view_item".asInstanceOf[view_item]
+  
+  @scala.inline
+  def view_item_list: view_item_list = "view_item_list".asInstanceOf[view_item_list]
+  
+  @scala.inline
+  def view_promotion: view_promotion = "view_promotion".asInstanceOf[view_promotion]
+  
+  @scala.inline
+  def view_search_results: view_search_results = "view_search_results".asInstanceOf[view_search_results]
+  
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
-  sealed trait Greaterthansign extends WhereFilterOp
+  sealed trait EqualssignEqualssign
+    extends WhereFilterOp
+       with typings.firebase.mod.firebase.firestore.WhereFilterOp
   
   @js.native
-  sealed trait GreaterthansignEqualssign extends WhereFilterOp
+  sealed trait ExclamationmarkEqualssign
+    extends WhereFilterOp
+       with typings.firebase.mod.firebase.firestore.WhereFilterOp
   
   @js.native
-  sealed trait Lessthansign extends WhereFilterOp
+  sealed trait Greaterthansign
+    extends WhereFilterOp
+       with typings.firebase.mod.firebase.firestore.WhereFilterOp
   
   @js.native
-  sealed trait LessthansignEqualssign extends WhereFilterOp
+  sealed trait GreaterthansignEqualssign
+    extends WhereFilterOp
+       with typings.firebase.mod.firebase.firestore.WhereFilterOp
+  
+  @js.native
+  sealed trait Lessthansign
+    extends WhereFilterOp
+       with typings.firebase.mod.firebase.firestore.WhereFilterOp
+  
+  @js.native
+  sealed trait LessthansignEqualssign
+    extends WhereFilterOp
+       with typings.firebase.mod.firebase.firestore.WhereFilterOp
   
   @js.native
   sealed trait aborted
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
-  sealed trait add_payment_info extends EventNameString
+  sealed trait add_payment_info
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait add_shipping_info extends EventNameString
+  sealed trait add_shipping_info
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait add_to_cart extends EventNameString
+  sealed trait add_to_cart
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait add_to_wishlist extends EventNameString
+  sealed trait add_to_wishlist
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait added extends DocumentChangeType
+  sealed trait added
+    extends DocumentChangeType
+       with typings.firebase.mod.firebase.firestore.DocumentChangeType
   
   @js.native
   sealed trait `already-exists`
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
-  sealed trait `array-contains` extends WhereFilterOp
+  sealed trait `array-contains`
+    extends WhereFilterOp
+       with typings.firebase.mod.firebase.firestore.WhereFilterOp
   
   @js.native
-  sealed trait `array-contains-any` extends WhereFilterOp
+  sealed trait `array-contains-any`
+    extends WhereFilterOp
+       with typings.firebase.mod.firebase.firestore.WhereFilterOp
   
   @js.native
-  sealed trait asc extends OrderByDirection
+  sealed trait asc
+    extends OrderByDirection
+       with typings.firebase.mod.firebase.firestore.OrderByDirection
   
   @js.native
-  sealed trait begin_checkout extends EventNameString
+  sealed trait begin_checkout
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
   sealed trait cache extends js.Object
@@ -73,10 +357,14 @@ object firebaseStrings {
   @js.native
   sealed trait cancelled
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
-  sealed trait checkout_progress extends EventNameString
+  sealed trait checkout_progress
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
   sealed trait child_added extends EventType
@@ -93,73 +381,105 @@ object firebaseStrings {
   @js.native
   sealed trait `data-loss`
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
   sealed trait `deadline-exceeded`
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
   sealed trait debug
     extends LogLevel
-       with typings.firebase.mod.LogLevel
-       with typings.firebase.mod.firestore.LogLevel
+       with typings.firebase.mod.default.firestore.LogLevel
+       with typings.firebase.mod.firebase.remoteConfig.LogLevel
+       with typings.firebase.mod.firebase.LogLevel
+       with typings.firebase.mod.firebase.firestore.LogLevel
   
   @js.native
-  sealed trait default extends ValueSource
+  sealed trait default
+    extends ValueSource
+       with typings.firebase.mod.firebase.remoteConfig.ValueSource
   
   @js.native
-  sealed trait desc extends OrderByDirection
+  sealed trait desc
+    extends OrderByDirection
+       with typings.firebase.mod.firebase.firestore.OrderByDirection
   
   @js.native
   sealed trait error
     extends LogLevel
-       with typings.firebase.mod.LogLevel
-       with typings.firebase.mod.firestore.LogLevel
+       with typings.firebase.mod.default.firestore.LogLevel
+       with typings.firebase.mod.firebase.remoteConfig.LogLevel
+       with typings.firebase.mod.firebase.LogLevel
+       with typings.firebase.mod.firebase.firestore.LogLevel
   
   @js.native
   sealed trait estimate extends js.Object
   
   @js.native
-  sealed trait exception extends EventNameString
+  sealed trait exception
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
   sealed trait `failed-precondition`
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
-  sealed trait failure extends FetchStatus
+  sealed trait failure
+    extends FetchStatus
+       with typings.firebase.mod.firebase.remoteConfig.FetchStatus
   
   @js.native
-  sealed trait generate_lead extends EventNameString
+  sealed trait generate_lead
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait in extends WhereFilterOp
+  sealed trait in
+    extends WhereFilterOp
+       with typings.firebase.mod.firebase.firestore.WhereFilterOp
   
   @js.native
   sealed trait info
-    extends typings.firebase.mod.LogLevel
+    extends typings.firebase.mod.firebase.LogLevel
   
   @js.native
   sealed trait internal
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
   sealed trait `invalid-argument`
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
-  sealed trait login extends EventNameString
+  sealed trait login
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait modified extends DocumentChangeType
+  sealed trait modified
+    extends DocumentChangeType
+       with typings.firebase.mod.firebase.firestore.DocumentChangeType
   
   @js.native
-  sealed trait `no-fetch-yet` extends FetchStatus
+  sealed trait `no-fetch-yet`
+    extends FetchStatus
+       with typings.firebase.mod.firebase.remoteConfig.FetchStatus
   
   @js.native
   sealed trait none extends js.Object
@@ -167,297 +487,206 @@ object firebaseStrings {
   @js.native
   sealed trait `not-found`
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
-  sealed trait ok extends FunctionsErrorCode
+  sealed trait `not-in`
+    extends WhereFilterOp
+       with typings.firebase.mod.firebase.firestore.WhereFilterOp
+  
+  @js.native
+  sealed trait ok
+    extends FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
   sealed trait `out-of-range`
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
-  sealed trait page_view extends EventNameString
+  sealed trait page_view
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
   sealed trait `permission-denied`
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
   sealed trait previous extends js.Object
   
   @js.native
-  sealed trait purchase extends EventNameString
+  sealed trait purchase
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait refund extends EventNameString
+  sealed trait refund
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait remote extends ValueSource
+  sealed trait remote
+    extends ValueSource
+       with typings.firebase.mod.firebase.remoteConfig.ValueSource
   
   @js.native
-  sealed trait remove_from_cart extends EventNameString
+  sealed trait remove_from_cart
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait removed extends DocumentChangeType
+  sealed trait removed
+    extends DocumentChangeType
+       with typings.firebase.mod.firebase.firestore.DocumentChangeType
   
   @js.native
   sealed trait `resource-exhausted`
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
-  sealed trait screen_view extends EventNameString
+  sealed trait screen_view
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait search extends EventNameString
+  sealed trait search
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait select_content extends EventNameString
+  sealed trait select_content
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait select_item extends EventNameString
+  sealed trait select_item
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait select_promotion extends EventNameString
+  sealed trait select_promotion
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
   sealed trait server extends js.Object
   
   @js.native
-  sealed trait set_checkout_option extends EventNameString
+  sealed trait set_checkout_option
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait share extends EventNameString
+  sealed trait share
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait sign_up extends EventNameString
+  sealed trait sign_up
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
   sealed trait silent
     extends LogLevel
-       with typings.firebase.mod.LogLevel
-       with typings.firebase.mod.firestore.LogLevel
+       with typings.firebase.mod.default.firestore.LogLevel
+       with typings.firebase.mod.firebase.remoteConfig.LogLevel
+       with typings.firebase.mod.firebase.LogLevel
+       with typings.firebase.mod.firebase.firestore.LogLevel
   
   @js.native
-  sealed trait static extends ValueSource
+  sealed trait static
+    extends ValueSource
+       with typings.firebase.mod.firebase.remoteConfig.ValueSource
   
   @js.native
-  sealed trait success extends FetchStatus
+  sealed trait success
+    extends FetchStatus
+       with typings.firebase.mod.firebase.remoteConfig.FetchStatus
   
   @js.native
-  sealed trait throttle extends FetchStatus
+  sealed trait throttle
+    extends FetchStatus
+       with typings.firebase.mod.firebase.remoteConfig.FetchStatus
   
   @js.native
-  sealed trait timing_complete extends EventNameString
+  sealed trait timing_complete
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
   sealed trait unauthenticated
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
   sealed trait unavailable
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
   sealed trait unimplemented
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
   sealed trait unknown
     extends FirestoreErrorCode
+       with typings.firebase.mod.firebase.firestore.FirestoreErrorCode
        with FunctionsErrorCode
+       with typings.firebase.mod.firebase.functions.FunctionsErrorCode
   
   @js.native
   sealed trait value extends EventType
   
   @js.native
   sealed trait verbose
-    extends typings.firebase.mod.LogLevel
+    extends typings.firebase.mod.firebase.LogLevel
   
   @js.native
-  sealed trait view_cart extends EventNameString
+  sealed trait view_cart
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait view_item extends EventNameString
+  sealed trait view_item
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait view_item_list extends EventNameString
+  sealed trait view_item_list
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait view_promotion extends EventNameString
+  sealed trait view_promotion
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
-  sealed trait view_search_results extends EventNameString
+  sealed trait view_search_results
+    extends EventNameString
+       with typings.firebase.mod.firebase.analytics.EventNameString
   
   @js.native
   sealed trait warn
-    extends typings.firebase.mod.LogLevel
-  
-  @scala.inline
-  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
-  @scala.inline
-  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
-  @scala.inline
-  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
-  @scala.inline
-  def aborted: aborted = "aborted".asInstanceOf[aborted]
-  @scala.inline
-  def add_payment_info: add_payment_info = "add_payment_info".asInstanceOf[add_payment_info]
-  @scala.inline
-  def add_shipping_info: add_shipping_info = "add_shipping_info".asInstanceOf[add_shipping_info]
-  @scala.inline
-  def add_to_cart: add_to_cart = "add_to_cart".asInstanceOf[add_to_cart]
-  @scala.inline
-  def add_to_wishlist: add_to_wishlist = "add_to_wishlist".asInstanceOf[add_to_wishlist]
-  @scala.inline
-  def added: added = "added".asInstanceOf[added]
-  @scala.inline
-  def `already-exists`: `already-exists` = "already-exists".asInstanceOf[`already-exists`]
-  @scala.inline
-  def `array-contains`: `array-contains` = "array-contains".asInstanceOf[`array-contains`]
-  @scala.inline
-  def `array-contains-any`: `array-contains-any` = "array-contains-any".asInstanceOf[`array-contains-any`]
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
-  @scala.inline
-  def begin_checkout: begin_checkout = "begin_checkout".asInstanceOf[begin_checkout]
-  @scala.inline
-  def cache: cache = "cache".asInstanceOf[cache]
-  @scala.inline
-  def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
-  @scala.inline
-  def checkout_progress: checkout_progress = "checkout_progress".asInstanceOf[checkout_progress]
-  @scala.inline
-  def child_added: child_added = "child_added".asInstanceOf[child_added]
-  @scala.inline
-  def child_changed: child_changed = "child_changed".asInstanceOf[child_changed]
-  @scala.inline
-  def child_moved: child_moved = "child_moved".asInstanceOf[child_moved]
-  @scala.inline
-  def child_removed: child_removed = "child_removed".asInstanceOf[child_removed]
-  @scala.inline
-  def `data-loss`: `data-loss` = "data-loss".asInstanceOf[`data-loss`]
-  @scala.inline
-  def `deadline-exceeded`: `deadline-exceeded` = "deadline-exceeded".asInstanceOf[`deadline-exceeded`]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def estimate: estimate = "estimate".asInstanceOf[estimate]
-  @scala.inline
-  def exception: exception = "exception".asInstanceOf[exception]
-  @scala.inline
-  def `failed-precondition`: `failed-precondition` = "failed-precondition".asInstanceOf[`failed-precondition`]
-  @scala.inline
-  def failure: failure = "failure".asInstanceOf[failure]
-  @scala.inline
-  def generate_lead: generate_lead = "generate_lead".asInstanceOf[generate_lead]
-  @scala.inline
-  def in: in = "in".asInstanceOf[in]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def internal: internal = "internal".asInstanceOf[internal]
-  @scala.inline
-  def `invalid-argument`: `invalid-argument` = "invalid-argument".asInstanceOf[`invalid-argument`]
-  @scala.inline
-  def login: login = "login".asInstanceOf[login]
-  @scala.inline
-  def modified: modified = "modified".asInstanceOf[modified]
-  @scala.inline
-  def `no-fetch-yet`: `no-fetch-yet` = "no-fetch-yet".asInstanceOf[`no-fetch-yet`]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def `not-found`: `not-found` = "not-found".asInstanceOf[`not-found`]
-  @scala.inline
-  def ok: ok = "ok".asInstanceOf[ok]
-  @scala.inline
-  def `out-of-range`: `out-of-range` = "out-of-range".asInstanceOf[`out-of-range`]
-  @scala.inline
-  def page_view: page_view = "page_view".asInstanceOf[page_view]
-  @scala.inline
-  def `permission-denied`: `permission-denied` = "permission-denied".asInstanceOf[`permission-denied`]
-  @scala.inline
-  def previous: previous = "previous".asInstanceOf[previous]
-  @scala.inline
-  def purchase: purchase = "purchase".asInstanceOf[purchase]
-  @scala.inline
-  def refund: refund = "refund".asInstanceOf[refund]
-  @scala.inline
-  def remote: remote = "remote".asInstanceOf[remote]
-  @scala.inline
-  def remove_from_cart: remove_from_cart = "remove_from_cart".asInstanceOf[remove_from_cart]
-  @scala.inline
-  def removed: removed = "removed".asInstanceOf[removed]
-  @scala.inline
-  def `resource-exhausted`: `resource-exhausted` = "resource-exhausted".asInstanceOf[`resource-exhausted`]
-  @scala.inline
-  def screen_view: screen_view = "screen_view".asInstanceOf[screen_view]
-  @scala.inline
-  def search: search = "search".asInstanceOf[search]
-  @scala.inline
-  def select_content: select_content = "select_content".asInstanceOf[select_content]
-  @scala.inline
-  def select_item: select_item = "select_item".asInstanceOf[select_item]
-  @scala.inline
-  def select_promotion: select_promotion = "select_promotion".asInstanceOf[select_promotion]
-  @scala.inline
-  def server: server = "server".asInstanceOf[server]
-  @scala.inline
-  def set_checkout_option: set_checkout_option = "set_checkout_option".asInstanceOf[set_checkout_option]
-  @scala.inline
-  def share: share = "share".asInstanceOf[share]
-  @scala.inline
-  def sign_up: sign_up = "sign_up".asInstanceOf[sign_up]
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
-  @scala.inline
-  def static: static = "static".asInstanceOf[static]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
-  def throttle: throttle = "throttle".asInstanceOf[throttle]
-  @scala.inline
-  def timing_complete: timing_complete = "timing_complete".asInstanceOf[timing_complete]
-  @scala.inline
-  def unauthenticated: unauthenticated = "unauthenticated".asInstanceOf[unauthenticated]
-  @scala.inline
-  def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
-  @scala.inline
-  def unimplemented: unimplemented = "unimplemented".asInstanceOf[unimplemented]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
-  @scala.inline
-  def verbose: verbose = "verbose".asInstanceOf[verbose]
-  @scala.inline
-  def view_cart: view_cart = "view_cart".asInstanceOf[view_cart]
-  @scala.inline
-  def view_item: view_item = "view_item".asInstanceOf[view_item]
-  @scala.inline
-  def view_item_list: view_item_list = "view_item_list".asInstanceOf[view_item_list]
-  @scala.inline
-  def view_promotion: view_promotion = "view_promotion".asInstanceOf[view_promotion]
-  @scala.inline
-  def view_search_results: view_search_results = "view_search_results".asInstanceOf[view_search_results]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+    extends typings.firebase.mod.firebase.LogLevel
 }
-

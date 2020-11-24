@@ -3,15 +3,15 @@ package typings.pLazy.mod
 import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-lazy", JSImport.Namespace)
 @js.native
 class ^[ValueType] () extends Promise[ValueType]
-
 @JSImport("p-lazy", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Create a `PLazy` promise from a promise-returning or async function.
   	@example
@@ -30,4 +30,3 @@ object ^ extends js.Object {
   	*/
   def from[ValueType](fn: js.Function0[ValueType | js.Thenable[ValueType]]): PLazy[ValueType] = js.native
 }
-

@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/digitalassetlinks/v1", "digitalassetlinks_v1.Resource$Assetlinks")
 @js.native
 class ResourceAssetlinks protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * digitalassetlinks.assetlinks.check
     * @desc Determines whether the specified (directional) relationship exists
@@ -65,5 +65,6 @@ class ResourceAssetlinks protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCheckResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
 }
-

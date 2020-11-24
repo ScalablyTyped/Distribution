@@ -10,9 +10,9 @@ Webpack stats plugin
 | ------------------ | :-------------: |
 | Full name          | webpack-stats-plugin |
 | Keywords           | webpack |
-| # releases         | 4 |
-| # dependents       | 104 |
-| # downloads        | 17689826 |
+| # releases         | 3 |
+| # dependents       | 103 |
+| # downloads        | 19039641 |
 | # stars            | 4 |
 
 ## Links

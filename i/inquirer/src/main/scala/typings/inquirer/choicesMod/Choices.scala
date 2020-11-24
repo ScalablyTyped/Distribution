@@ -3,7 +3,7 @@ package typings.inquirer.choicesMod
 import typings.inquirer.mod.Answers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection of multiple `Choice`-objects.
@@ -13,22 +13,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Choices[T /* <: Answers */] extends js.Object {
+  
   /**
     * The unfiltered choices.
     */
   var choices: js.Array[DistinctChoice[T]] = js.native
-  /**
-    * The number of choices.
-    */
-  var length: Double = js.native
-  /**
-    * The selectable choices.
-    */
-  var realChoices: js.Array[RealChoice[T]] = js.native
-  /**
-    * The number of selectable choices.
-    */
-  var realLength: Double = js.native
+  
   /**
     * Returns the elements of an array that meet the condition specified in a callback function.
     *
@@ -62,6 +52,7 @@ trait Choices[T /* <: Answers */] extends js.Object {
     ],
     thisArg: js.Any
   ): js.Array[TElement] = js.native
+  
   /**
     * Returns the value of the first element in the array where predicate is true, and `undefined` otherwise.
     *
@@ -93,6 +84,7 @@ trait Choices[T /* <: Answers */] extends js.Object {
     ],
     thisArg: js.Any
   ): typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^  = js.native
+  
   /**
     * Performs the specified action for each element in an array.
     *
@@ -123,6 +115,7 @@ trait Choices[T /* <: Answers */] extends js.Object {
     ],
     thisArg: js.Any
   ): Unit = js.native
+  
   /**
     * Gets the item at the specified index.
     *
@@ -133,6 +126,7 @@ trait Choices[T /* <: Answers */] extends js.Object {
     * The item at the specified index.
     */
   def get(index: Double): DistinctChoice[T] = js.native
+  
   /**
     * Gets the choice at the specified index.
     *
@@ -143,6 +137,7 @@ trait Choices[T /* <: Answers */] extends js.Object {
     * The choice at the specified index.
     */
   def getChoice(index: Double): RealChoice[T] = js.native
+  
   /**
     * Returns the index of the first occurrence of a value in an array.
     *
@@ -161,6 +156,12 @@ trait Choices[T /* <: Answers */] extends js.Object {
   def indexOf(searchElement: typings.inquirer.choiceMod.^[T], fromIndex: Double): Double = js.native
   def indexOf(searchElement: typings.inquirer.separatorMod.^): Double = js.native
   def indexOf(searchElement: typings.inquirer.separatorMod.^, fromIndex: Double): Double = js.native
+  
+  /**
+    * The number of choices.
+    */
+  var length: Double = js.native
+  
   /**
     * Retrieves the specified `property` from all choices.
     *
@@ -179,6 +180,7 @@ trait Choices[T /* <: Answers */] extends js.Object {
   def pluck[TProperty /* <: ChoiceProperty[T] */](property: ChoiceProperty[T]): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer/lib/objects/choices.RealChoice<T> & {[key: string] : undefined}[TProperty] */ js.Any
   ] = js.native
+  
   /**
     * Appends new elements to an array, and returns the new length of the array.
     *
@@ -189,6 +191,17 @@ trait Choices[T /* <: Answers */] extends js.Object {
     * The new length of the array.
     */
   def push(items: (typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^ )*): Double = js.native
+  
+  /**
+    * The selectable choices.
+    */
+  var realChoices: js.Array[RealChoice[T]] = js.native
+  
+  /**
+    * The number of selectable choices.
+    */
+  var realLength: Double = js.native
+  
   /**
     * Gets all choices which apply to the where-clause.
     *
@@ -200,4 +213,3 @@ trait Choices[T /* <: Answers */] extends js.Object {
     */
   def where(whereClause: js.Object): js.Array[RealChoice[T]] = js.native
 }
-

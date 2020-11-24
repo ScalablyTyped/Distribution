@@ -2,10 +2,11 @@ package typings.jsspecJsspec.JSSpec
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Context extends js.Object {
+  
   /**
     * Create a new context with the `title` and defined in `fn`.
     */
@@ -16,4 +17,3 @@ trait Context extends js.Object {
     */
   def apply(title: String, options: ContextOptions, fn: Func): Unit = js.native
 }
-

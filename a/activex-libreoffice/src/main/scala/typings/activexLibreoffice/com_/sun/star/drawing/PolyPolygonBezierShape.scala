@@ -26,7 +26,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service specifies a poly-polygon Bezier shape. */
 @js.native
@@ -39,8 +39,8 @@ trait PolyPolygonBezierShape
      with TextProperties
      with ShadowProperties
      with RotationDescriptor
-
 object PolyPolygonBezierShape {
+  
   @scala.inline
   def apply(
     End: XTextRange,
@@ -157,4 +157,3 @@ object PolyPolygonBezierShape {
     __obj.asInstanceOf[PolyPolygonBezierShape]
   }
 }
-

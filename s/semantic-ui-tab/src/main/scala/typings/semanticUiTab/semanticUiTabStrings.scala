@@ -2,9 +2,151 @@ package typings.semanticUiTab
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object semanticUiTabStrings {
+  
+  @scala.inline
+  def DOM: DOM = "DOM".asInstanceOf[DOM]
+  
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  
+  @scala.inline
+  def alwaysRefresh: alwaysRefresh = "alwaysRefresh".asInstanceOf[alwaysRefresh]
+  
+  @scala.inline
+  def apiSettings: apiSettings = "apiSettings".asInstanceOf[apiSettings]
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  
+  @scala.inline
+  def cache: cache = "cache".asInstanceOf[cache]
+  
+  @scala.inline
+  def `cache add`: `cache add` = ("cache add").asInstanceOf[`cache add`]
+  
+  @scala.inline
+  def `cache read`: `cache read` = ("cache read").asInstanceOf[`cache read`]
+  
+  @scala.inline
+  def `cache remove`: `cache remove` = ("cache remove").asInstanceOf[`cache remove`]
+  
+  @scala.inline
+  def cacheType: cacheType = "cacheType".asInstanceOf[cacheType]
+  
+  @scala.inline
+  def `change tab`: `change tab` = ("change tab").asInstanceOf[`change tab`]
+  
+  @scala.inline
+  def childrenOnly: childrenOnly = "childrenOnly".asInstanceOf[childrenOnly]
+  
+  @scala.inline
+  def className: className = "className".asInstanceOf[className]
+  
+  @scala.inline
+  def context: context = "context".asInstanceOf[context]
+  
+  @scala.inline
+  def deactivate: deactivate = "deactivate".asInstanceOf[deactivate]
+  
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
+  
+  @scala.inline
+  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def evaluateScripts: evaluateScripts = "evaluateScripts".asInstanceOf[evaluateScripts]
+  
+  @scala.inline
+  def `get path`: `get path` = ("get path").asInstanceOf[`get path`]
+  
+  @scala.inline
+  def hash: hash = "hash".asInstanceOf[hash]
+  
+  @scala.inline
+  def history: history = "history".asInstanceOf[history]
+  
+  @scala.inline
+  def historyType: historyType = "historyType".asInstanceOf[historyType]
+  
+  @scala.inline
+  def html: html = "html".asInstanceOf[html]
+  
+  @scala.inline
+  def ignoreFirstLoad: ignoreFirstLoad = "ignoreFirstLoad".asInstanceOf[ignoreFirstLoad]
+  
+  @scala.inline
+  def `is tab`: `is tab` = ("is tab").asInstanceOf[`is tab`]
+  
+  @scala.inline
+  def loadOnce: loadOnce = "loadOnce".asInstanceOf[loadOnce]
+  
+  @scala.inline
+  def maxDepth: maxDepth = "maxDepth".asInstanceOf[maxDepth]
+  
+  @scala.inline
+  def metadata: metadata = "metadata".asInstanceOf[metadata]
+  
+  @scala.inline
+  def name: name = "name".asInstanceOf[name]
+  
+  @scala.inline
+  def namespace: namespace = "namespace".asInstanceOf[namespace]
+  
+  @scala.inline
+  def onFirstLoad: onFirstLoad = "onFirstLoad".asInstanceOf[onFirstLoad]
+  
+  @scala.inline
+  def onLoad: onLoad = "onLoad".asInstanceOf[onLoad]
+  
+  @scala.inline
+  def onRequest: onRequest = "onRequest".asInstanceOf[onRequest]
+  
+  @scala.inline
+  def onVisible: onVisible = "onVisible".asInstanceOf[onVisible]
+  
+  @scala.inline
+  def once: once = "once".asInstanceOf[once]
+  
+  @scala.inline
+  def path: path = "path".asInstanceOf[path]
+  
+  @scala.inline
+  def performance: performance = "performance".asInstanceOf[performance]
+  
+  @scala.inline
+  def response: response = "response".asInstanceOf[response]
+  
+  @scala.inline
+  def selector: selector = "selector".asInstanceOf[selector]
+  
+  @scala.inline
+  def `set state`: `set state` = ("set state").asInstanceOf[`set state`]
+  
+  @scala.inline
+  def setting: setting = "setting".asInstanceOf[setting]
+  
+  @scala.inline
+  def siblings: siblings = "siblings".asInstanceOf[siblings]
+  
+  @scala.inline
+  def silent: silent = "silent".asInstanceOf[silent]
+  
+  @scala.inline
+  def state: state = "state".asInstanceOf[state]
+  
+  @scala.inline
+  def templates: templates = "templates".asInstanceOf[templates]
+  
+  @scala.inline
+  def verbose: verbose = "verbose".asInstanceOf[verbose]
+  
   @js.native
   sealed trait DOM extends js.Object
   
@@ -145,100 +287,4 @@ object semanticUiTabStrings {
   
   @js.native
   sealed trait verbose extends js.Object
-  
-  @scala.inline
-  def DOM: DOM = "DOM".asInstanceOf[DOM]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def alwaysRefresh: alwaysRefresh = "alwaysRefresh".asInstanceOf[alwaysRefresh]
-  @scala.inline
-  def apiSettings: apiSettings = "apiSettings".asInstanceOf[apiSettings]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def cache: cache = "cache".asInstanceOf[cache]
-  @scala.inline
-  def `cache add`: `cache add` = ("cache add").asInstanceOf[`cache add`]
-  @scala.inline
-  def `cache read`: `cache read` = ("cache read").asInstanceOf[`cache read`]
-  @scala.inline
-  def `cache remove`: `cache remove` = ("cache remove").asInstanceOf[`cache remove`]
-  @scala.inline
-  def cacheType: cacheType = "cacheType".asInstanceOf[cacheType]
-  @scala.inline
-  def `change tab`: `change tab` = ("change tab").asInstanceOf[`change tab`]
-  @scala.inline
-  def childrenOnly: childrenOnly = "childrenOnly".asInstanceOf[childrenOnly]
-  @scala.inline
-  def className: className = "className".asInstanceOf[className]
-  @scala.inline
-  def context: context = "context".asInstanceOf[context]
-  @scala.inline
-  def deactivate: deactivate = "deactivate".asInstanceOf[deactivate]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def evaluateScripts: evaluateScripts = "evaluateScripts".asInstanceOf[evaluateScripts]
-  @scala.inline
-  def `get path`: `get path` = ("get path").asInstanceOf[`get path`]
-  @scala.inline
-  def hash: hash = "hash".asInstanceOf[hash]
-  @scala.inline
-  def history: history = "history".asInstanceOf[history]
-  @scala.inline
-  def historyType: historyType = "historyType".asInstanceOf[historyType]
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
-  @scala.inline
-  def ignoreFirstLoad: ignoreFirstLoad = "ignoreFirstLoad".asInstanceOf[ignoreFirstLoad]
-  @scala.inline
-  def `is tab`: `is tab` = ("is tab").asInstanceOf[`is tab`]
-  @scala.inline
-  def loadOnce: loadOnce = "loadOnce".asInstanceOf[loadOnce]
-  @scala.inline
-  def maxDepth: maxDepth = "maxDepth".asInstanceOf[maxDepth]
-  @scala.inline
-  def metadata: metadata = "metadata".asInstanceOf[metadata]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def namespace: namespace = "namespace".asInstanceOf[namespace]
-  @scala.inline
-  def onFirstLoad: onFirstLoad = "onFirstLoad".asInstanceOf[onFirstLoad]
-  @scala.inline
-  def onLoad: onLoad = "onLoad".asInstanceOf[onLoad]
-  @scala.inline
-  def onRequest: onRequest = "onRequest".asInstanceOf[onRequest]
-  @scala.inline
-  def onVisible: onVisible = "onVisible".asInstanceOf[onVisible]
-  @scala.inline
-  def once: once = "once".asInstanceOf[once]
-  @scala.inline
-  def path: path = "path".asInstanceOf[path]
-  @scala.inline
-  def performance: performance = "performance".asInstanceOf[performance]
-  @scala.inline
-  def response: response = "response".asInstanceOf[response]
-  @scala.inline
-  def selector: selector = "selector".asInstanceOf[selector]
-  @scala.inline
-  def `set state`: `set state` = ("set state").asInstanceOf[`set state`]
-  @scala.inline
-  def setting: setting = "setting".asInstanceOf[setting]
-  @scala.inline
-  def siblings: siblings = "siblings".asInstanceOf[siblings]
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
-  @scala.inline
-  def state: state = "state".asInstanceOf[state]
-  @scala.inline
-  def templates: templates = "templates".asInstanceOf[templates]
-  @scala.inline
-  def verbose: verbose = "verbose".asInstanceOf[verbose]
 }
-

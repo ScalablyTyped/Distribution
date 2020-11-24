@@ -2,11 +2,10 @@ package typings.pixiJs.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SCALE_MODES extends js.Object
-
 /**
   * The scale modes that are supported by pixi.
   *
@@ -23,11 +22,10 @@ sealed trait SCALE_MODES extends js.Object
 @JSGlobal("PIXI.SCALE_MODES")
 @js.native
 object SCALE_MODES extends js.Object {
+  
   @js.native
   sealed trait LINEAR extends SCALE_MODES
   
   @js.native
   sealed trait NEAREST extends SCALE_MODES
-  
 }
-

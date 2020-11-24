@@ -2,11 +2,12 @@ package typings.terminalKit.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("terminal-kit", "getParentTerminalInfo")
 @js.native
 object getParentTerminalInfo extends js.Object {
+  
   def apply(
     callback: js.Function4[
       /* error */ js.Any, 
@@ -17,4 +18,3 @@ object getParentTerminalInfo extends js.Object {
     ]
   ): Unit = js.native
 }
-

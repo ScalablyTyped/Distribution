@@ -6,25 +6,29 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParamsResourceCaptionsDownload extends StandardParameters {
+  
   /**
     * Auth client or API Key for the request
     */
   var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  
   /**
     * The id parameter identifies the caption track that is being retrieved.
     * The value is a caption track ID as identified by the id property in a
     * caption resource.
     */
   var id: js.UndefOr[String] = js.native
+  
   /**
     * ID of the Google+ Page for the channel that the request is be on behalf
     * of
     */
   var onBehalfOf: js.UndefOr[String] = js.native
+  
   /**
     * Note: This parameter is intended exclusively for YouTube content
     * partners.  The onBehalfOfContentOwner parameter indicates that the
@@ -38,12 +42,14 @@ trait ParamsResourceCaptionsDownload extends StandardParameters {
     * linked to the specified YouTube content owner.
     */
   var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  
   /**
     * The tfmt parameter specifies that the caption track should be returned in
     * a specific format. If the parameter is not included in the request, the
     * track is returned in its original format.
     */
   var tfmt: js.UndefOr[String] = js.native
+  
   /**
     * The tlang parameter specifies that the API response should return a
     * translation of the specified caption track. The parameter value is an ISO
@@ -53,49 +59,63 @@ trait ParamsResourceCaptionsDownload extends StandardParameters {
     */
   var tlang: js.UndefOr[String] = js.native
 }
-
 object ParamsResourceCaptionsDownload {
+  
   @scala.inline
   def apply(): ParamsResourceCaptionsDownload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCaptionsDownload]
   }
+  
   @scala.inline
   implicit class ParamsResourceCaptionsDownloadOps[Self <: ParamsResourceCaptionsDownload] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAuth: Self = this.set("auth", js.undefined)
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
+    
     @scala.inline
     def setOnBehalfOf(value: String): Self = this.set("onBehalfOf", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOnBehalfOf: Self = this.set("onBehalfOf", js.undefined)
+    
     @scala.inline
     def setOnBehalfOfContentOwner(value: String): Self = this.set("onBehalfOfContentOwner", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOnBehalfOfContentOwner: Self = this.set("onBehalfOfContentOwner", js.undefined)
+    
     @scala.inline
     def setTfmt(value: String): Self = this.set("tfmt", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTfmt: Self = this.set("tfmt", js.undefined)
+    
     @scala.inline
     def setTlang(value: String): Self = this.set("tlang", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteTlang: Self = this.set("tlang", js.undefined)
   }
-  
 }
-

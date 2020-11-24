@@ -3,7 +3,7 @@ package typings.angularCompiler.outputAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "ConditionalExpr")
 @js.native
@@ -76,8 +76,10 @@ class ConditionalExpr protected () extends Expression {
     `type`: Type,
     sourceSpan: ParseSourceSpan
   ) = this()
+  
   var condition: Expression = js.native
+  
   var falseCase: Expression | Null = js.native
+  
   var trueCase: Expression = js.native
 }
-

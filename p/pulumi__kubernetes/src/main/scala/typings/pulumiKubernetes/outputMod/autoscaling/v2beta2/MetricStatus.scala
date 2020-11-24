@@ -2,36 +2,41 @@ package typings.pulumiKubernetes.outputMod.autoscaling.v2beta2
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * MetricStatus describes the last-read state of a single metric.
   */
 @js.native
 trait MetricStatus extends js.Object {
+  
   /**
     * external refers to a global metric that is not associated with any Kubernetes object. It allows autoscaling based on information coming from components running outside of cluster (for example length of queue in cloud messaging service, or QPS from loadbalancer running outside of cluster).
     */
   var external: ExternalMetricStatus = js.native
+  
   /**
     * object refers to a metric describing a single kubernetes object (for example, hits-per-second on an Ingress object).
     */
   var `object`: ObjectMetricStatus = js.native
+  
   /**
     * pods refers to a metric describing each pod in the current scale target (for example, transactions-processed-per-second).  The values will be averaged together before being compared to the target value.
     */
   var pods: PodsMetricStatus = js.native
+  
   /**
     * resource refers to a resource metric (such as those specified in requests and limits) known to Kubernetes describing each pod in the current scale target (e.g. CPU or memory). Such metrics are built in to Kubernetes, and have special scaling options on top of those available to normal per-pod metrics using the "pods" source.
     */
   var resource: ResourceMetricStatus = js.native
+  
   /**
     * type is the type of metric source.  It will be one of "Object", "Pods" or "Resource", each corresponds to a matching field in the object.
     */
   var `type`: String = js.native
 }
-
 object MetricStatus {
+  
   @scala.inline
   def apply(
     external: ExternalMetricStatus,
@@ -45,28 +50,35 @@ object MetricStatus {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricStatus]
   }
+  
   @scala.inline
   implicit class MetricStatusOps[Self <: MetricStatus] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setExternal(value: ExternalMetricStatus): Self = this.set("external", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setObject(value: ObjectMetricStatus): Self = this.set("object", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPods(value: PodsMetricStatus): Self = this.set("pods", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setResource(value: ResourceMetricStatus): Self = this.set("resource", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -5,16 +5,18 @@ import typings.xdomain.xdomainStrings.timeout
 import typings.xdomain.xdomainStrings.warn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IXDomain extends js.Object {
+  
   var cookies: XDomainCookies = js.native
+  
   /**
     * When true, XDomain will log actions to console
     */
   var debug: Boolean = js.native
-  var origin: String = js.native
+  
   /**
     * Will initialize as a slave
     *
@@ -26,6 +28,7 @@ trait IXDomain extends js.Object {
     * @param masterObj
     */
   def masters(masterObj: js.Object): Unit = js.native
+  
   /**
     * event may be log, warn or timeout. When listening for log and warn events, handler with contain the message as
     * the first parameter. The timeout event fires when an iframe exeeds the xdomain.timeout time limit.
@@ -38,6 +41,9 @@ trait IXDomain extends js.Object {
   def on_timeout(event: timeout, handler: js.Function1[/* message */ js.UndefOr[String], _]): Unit = js.native
   @JSName("on")
   def on_warn(event: warn, handler: js.Function1[/* message */ js.UndefOr[String], _]): Unit = js.native
+  
+  var origin: String = js.native
+  
   /**
     * Will initialize as a master
     *
@@ -48,4 +54,3 @@ trait IXDomain extends js.Object {
     */
   def slaves(slaveObj: js.Object): Unit = js.native
 }
-

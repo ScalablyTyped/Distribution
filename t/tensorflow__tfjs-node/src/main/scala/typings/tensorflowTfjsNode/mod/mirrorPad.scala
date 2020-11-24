@@ -1,0 +1,19 @@
+package typings.tensorflowTfjsNode.mod
+
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
+import typings.tensorflowTfjsCore.distTypesMod.TensorLike
+import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.reflect
+import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.symmetric
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("@tensorflow/tfjs-node", "mirrorPad")
+@js.native
+object mirrorPad extends js.Object {
+  
+  def apply[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T, paddings: js.Array[js.Tuple2[Double, Double]], mode: reflect): T = js.native
+  def apply[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T, paddings: js.Array[js.Tuple2[Double, Double]], mode: symmetric): T = js.native
+  def apply[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, paddings: js.Array[js.Tuple2[Double, Double]], mode: reflect): T = js.native
+  def apply[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, paddings: js.Array[js.Tuple2[Double, Double]], mode: symmetric): T = js.native
+}

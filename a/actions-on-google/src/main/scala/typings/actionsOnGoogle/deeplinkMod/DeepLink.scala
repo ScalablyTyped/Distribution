@@ -5,7 +5,7 @@ import typings.actionsOnGoogle.helperHelperMod.Helper
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2LinkValueSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/deeplink", "DeepLink")
 @js.native
@@ -17,4 +17,3 @@ class DeepLink protected () extends Helper[actionsDotintentDotLINK, GoogleAction
     */
   def this(options: DeepLinkOptions) = this()
 }
-

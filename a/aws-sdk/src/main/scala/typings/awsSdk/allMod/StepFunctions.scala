@@ -4,7 +4,7 @@ import typings.awsSdk.stepfunctionsMod.ClientConfiguration
 import typings.awsSdk.stepfunctionsMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "StepFunctions")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class StepFunctions () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

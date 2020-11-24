@@ -2,11 +2,12 @@ package typings.openlayers.mod.proj
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "proj.setProj4")
 @js.native
 object setProj4 extends js.Object {
+  
   /**
     * Register proj4. If not explicitly registered, it will be assumed that
     * proj4js will be loaded in the global namespace. For example in a
@@ -21,4 +22,3 @@ object setProj4 extends js.Object {
     */
   def apply(proj4: js.Any): Unit = js.native
 }
-

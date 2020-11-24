@@ -7,13 +7,14 @@ import typings.kendoUi.kendo.ui.TooltipOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofTooltip
   extends Instantiable1[/* element */ Element, Tooltip]
      with Instantiable2[/* element */ Element, /* options */ TooltipOptions, Tooltip] {
-  var fn: Tooltip = js.native
+  
   def extend(proto: js.Object): Tooltip = js.native
+  
+  var fn: Tooltip = js.native
 }
-

@@ -3,15 +3,18 @@ package typings.mz.mod.crypto
 import typings.node.Buffer
 import typings.node.NodeJS.ArrayBufferView
 import typings.node.cryptoMod.KeyLike
+import typings.node.cryptoMod.SignKeyObjectInput
 import typings.node.cryptoMod.SignPrivateKeyInput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mz", "crypto.sign")
 @js.native
 object sign extends js.Object {
+  
   def apply(algorithm: js.UndefOr[scala.Nothing], data: ArrayBufferView, key: KeyLike): Buffer = js.native
+  def apply(algorithm: js.UndefOr[scala.Nothing], data: ArrayBufferView, key: SignKeyObjectInput): Buffer = js.native
   def apply(algorithm: js.UndefOr[scala.Nothing], data: ArrayBufferView, key: SignPrivateKeyInput): Buffer = js.native
   /**
     * Calculates and returns the signature for `data` using the given private key and
@@ -22,8 +25,9 @@ object sign extends js.Object {
     * passed to [`crypto.createPrivateKey()`][].
     */
   def apply(algorithm: String, data: ArrayBufferView, key: KeyLike): Buffer = js.native
+  def apply(algorithm: String, data: ArrayBufferView, key: SignKeyObjectInput): Buffer = js.native
   def apply(algorithm: String, data: ArrayBufferView, key: SignPrivateKeyInput): Buffer = js.native
   def apply(algorithm: Null, data: ArrayBufferView, key: KeyLike): Buffer = js.native
+  def apply(algorithm: Null, data: ArrayBufferView, key: SignKeyObjectInput): Buffer = js.native
   def apply(algorithm: Null, data: ArrayBufferView, key: SignPrivateKeyInput): Buffer = js.native
 }
-

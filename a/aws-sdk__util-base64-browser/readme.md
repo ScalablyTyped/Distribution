@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-base64-browser
 
-Typings are for version 0.1.0-preview.1
+Typings are for version 1.0.0-rc.3
 
 ## Library description:
 A pure JS Base64 <-> UInt8Array converter
@@ -10,9 +10,9 @@ A pure JS Base64 <-> UInt8Array converter
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-base64-browser |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 372 |
-| # downloads        | 5305 |
+| # releases         | 14 |
+| # dependents       | 412 |
+| # downloads        | 1567863 |
 | # stars            | 0 |
 
 ## Links

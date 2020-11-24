@@ -5,7 +5,7 @@ import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Google Play Developer API
@@ -27,11 +27,16 @@ import scala.scalajs.js.annotation._
 class Androidpublisher protected () extends js.Object {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
   var context: APIRequestContext = js.native
+  
   var edits: ResourceEdits = js.native
+  
   var inappproducts: ResourceInappproducts = js.native
+  
   var orders: ResourceOrders = js.native
+  
   var purchases: ResourcePurchases = js.native
+  
   var reviews: ResourceReviews = js.native
 }
-

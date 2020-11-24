@@ -17,7 +17,7 @@ import typings.titanium.titaniumStrings.touchstart
 import typings.titanium.titaniumStrings.twofingertap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A <Titanium.UI.iOS.BlurView> object gives you an easy way implement some complex visual effects.
@@ -29,10 +29,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BlurView extends View {
+  
   /**
     * The effect you provide for the view.
     */
   var effect: Double = js.native
+  
   @JSName("fireEvent")
   def fireEvent_click(name: click, event: BlurViewClickEvent): Unit = js.native
   @JSName("fireEvent")
@@ -61,15 +63,16 @@ trait BlurView extends View {
   def fireEvent_touchstart(name: touchstart, event: BlurViewTouchstartEvent): Unit = js.native
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: BlurViewTwofingertapEvent): Unit = js.native
+  
   /**
     * Gets the value of the <Titanium.UI.iOS.BlurView.effect> property.
     * @deprecated Access <Titanium.UI.iOS.BlurView.effect> instead.
     */
   def getEffect(): Double = js.native
+  
   /**
     * Sets the value of the <Titanium.UI.iOS.BlurView.effect> property.
     * @deprecated Set the value using <Titanium.UI.iOS.BlurView.effect> instead.
     */
   def setEffect(effect: Double): Unit = js.native
 }
-

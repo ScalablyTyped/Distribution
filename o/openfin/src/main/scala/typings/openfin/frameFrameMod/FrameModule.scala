@@ -4,10 +4,11 @@ import typings.openfin.baseMod.Base
 import typings.openfin.identityMod.Identity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FrameModule extends Base {
+  
   /**
     * Asynchronously returns a reference to the current frame
     * @return {Promise.<_Frame>}
@@ -15,6 +16,7 @@ trait FrameModule extends Base {
     * @static
     */
   def getCurrent(): js.Promise[Frame] = js.native
+  
   /**
     * Synchronously returns a reference to the current frame
     * @return {_Frame}
@@ -22,6 +24,7 @@ trait FrameModule extends Base {
     * @static
     */
   def getCurrentSync(): Frame = js.native
+  
   /**
     * Asynchronously returns a reference to the specified frame. The frame does not have to exist
     * @param {Identity} identity - the identity of the frame you want to wrap
@@ -30,6 +33,7 @@ trait FrameModule extends Base {
     * @static
     */
   def wrap(identity: Identity): js.Promise[Frame] = js.native
+  
   /**
     * Synchronously returns a reference to the specified frame. The frame does not have to exist
     * @param {Identity} identity - the identity of the frame you want to wrap
@@ -39,4 +43,3 @@ trait FrameModule extends Base {
     */
   def wrapSync(identity: Identity): Frame = js.native
 }
-

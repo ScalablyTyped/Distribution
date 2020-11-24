@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.std.OfflineAudioContextOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("OfflineAudioContext")
 @js.native
@@ -14,7 +14,6 @@ class OfflineAudioContext protected ()
   def this(contextOptions: OfflineAudioContextOptions) = this()
   def this(numberOfChannels: Double, length: Double, sampleRate: Double) = this()
 }
-
 @JSGlobal("OfflineAudioContext")
 @js.native
 object OfflineAudioContext
@@ -25,4 +24,3 @@ object OfflineAudioContext
       /* sampleRate */ Double, 
       typings.std.OfflineAudioContext
     ]
-

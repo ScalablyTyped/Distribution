@@ -4,29 +4,35 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/domutils/types/platform", JSImport.Namespace)
 @js.native
 object platformMod extends js.Object {
+  
   @js.native
   object Platform extends js.Object {
+    
     /**
       * A flag indicating whether the browser is Edge.
       */
     val IS_EDGE: Boolean = js.native
+    
     /**
       * A flag indicating whether the browser is IE.
       */
     val IS_IE: Boolean = js.native
+    
     /**
       * A flag indicating whether the platform is Mac.
       */
     val IS_MAC: Boolean = js.native
+    
     /**
       * A flag indicating whether the platform is Windows.
       */
     val IS_WIN: Boolean = js.native
+    
     /**
       * Test whether the `accel` key is pressed.
       *
@@ -41,6 +47,4 @@ object platformMod extends js.Object {
     def accelKey(event: KeyboardEvent): Boolean = js.native
     def accelKey(event: MouseEvent): Boolean = js.native
   }
-  
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mini-create-react-context" : "0.3.2"
+      "mini-create-react-context" : "0.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "mini-create-react-context" : "0.3.2"
+      "mini-create-react-context" : "0.3.3"
     }
   ],
   "compile-devDependencies" : [

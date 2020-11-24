@@ -13,7 +13,7 @@ import typings.chromeApps.chromeAppsStrings.window_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region chrome.desktopCapture
@@ -28,11 +28,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.desktopCapture")
 @js.native
 object desktopCapture extends js.Object {
+  
   /**
     * Hides desktop media picker dialog shown by chooseDesktopMedia().
     * @param desktopMediaRequestId Id returned by chooseDesktopMedia()
     */
   def cancelChooseDesktopMedia(desktopMediaRequestId: integer): Unit = js.native
+  
   /**
     * Shows desktop media picker UI with the specified set of sources.
     * @param sources Set of sources that should be shown to the user.
@@ -54,13 +56,16 @@ object desktopCapture extends js.Object {
     ],
     callback: js.Function1[/* streamId */ String, Unit]
   ): integer = js.native
+  
   @js.native
   object DesktopCaptureSourceType extends js.Object {
+    
     var AUDIO: audio_ = js.native
+    
     var SCREEN: screen_ = js.native
+    
     var TAB: tab_ = js.native
+    
     var WINDOW: window_ = js.native
   }
-  
 }
-

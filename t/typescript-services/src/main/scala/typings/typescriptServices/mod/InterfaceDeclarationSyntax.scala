@@ -4,7 +4,7 @@ import typings.typescriptServices.TypeScript.ISyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "InterfaceDeclarationSyntax")
 @js.native
@@ -20,16 +20,16 @@ class InterfaceDeclarationSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-
 /* static members */
 @JSImport("typescript-services", "InterfaceDeclarationSyntax")
 @js.native
 object InterfaceDeclarationSyntax extends js.Object {
+  
   def create(
     interfaceKeyword: ISyntaxToken,
     identifier: ISyntaxToken,
     body: typings.typescriptServices.TypeScript.ObjectTypeSyntax
   ): typings.typescriptServices.TypeScript.InterfaceDeclarationSyntax = js.native
+  
   def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.InterfaceDeclarationSyntax = js.native
 }
-

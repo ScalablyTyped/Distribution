@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Event class that mimics native DOM events.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class InteractionEvent ()
   extends typings.pixiJs.PIXI.InteractionEvent
-

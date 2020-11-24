@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Accounts$Proposals")
 @js.native
 class ResourceAccountsProposals protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer2.accounts.proposals.accept
     * @desc Mark the proposal as accepted at the given revision number. If the
@@ -46,6 +46,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProposal]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.proposals.addNote
     * @desc Create a new note and attach it to the proposal. The note is
@@ -78,6 +79,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNote]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.proposals.cancelNegotiation
     * @desc Cancel an ongoing negotiation on a proposal. This does not cancel
@@ -113,6 +115,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProposal]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.proposals.completeSetup
     * @desc Update the given proposal to indicate that setup has been
@@ -152,6 +155,9 @@ class ResourceAccountsProposals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProposal]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer2.accounts.proposals.create
     * @desc Create the given proposal. Each created proposal and any deals it
@@ -182,6 +188,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProposal]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.proposals.get
     * @desc Gets a proposal given its ID. The proposal is returned at its head
@@ -212,6 +219,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProposal]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.proposals.list
     * @desc List proposals. A filter expression (PQL query) may be specified to
@@ -252,6 +260,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListProposalsResponse]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.proposals.pause
     * @desc Update the given proposal to pause serving. This method will set
@@ -286,6 +295,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProposal]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.proposals.resume
     * @desc Update the given proposal to resume serving. This method will set
@@ -321,6 +331,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProposal]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.proposals.update
     * @desc Update the given proposal at the client known revision number. If
@@ -361,4 +372,3 @@ class ResourceAccountsProposals protected () extends js.Object {
     callback: BodyResponseCallback[SchemaProposal]
   ): Unit = js.native
 }
-

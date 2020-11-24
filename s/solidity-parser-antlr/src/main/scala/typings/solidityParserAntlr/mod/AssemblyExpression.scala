@@ -2,15 +2,15 @@ package typings.solidityParserAntlr.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.solidityParserAntlr.mod.AssemblyCall
   - typings.solidityParserAntlr.mod.AssemblyLiteral
 */
 trait AssemblyExpression extends AssemblyItem
-
 object AssemblyExpression {
+  
   @scala.inline
   def AssemblyCall(
     arguments: js.Array[AssemblyExpression],
@@ -21,6 +21,7 @@ object AssemblyExpression {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyExpression]
   }
+  
   @scala.inline
   def AssemblyLiteral(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLiteral): AssemblyExpression = {
     val __obj = js.Dynamic.literal()
@@ -28,4 +29,3 @@ object AssemblyExpression {
     __obj.asInstanceOf[AssemblyExpression]
   }
 }
-

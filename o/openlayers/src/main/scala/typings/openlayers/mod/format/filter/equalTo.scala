@@ -2,11 +2,12 @@ package typings.openlayers.mod.format.filter
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "format.filter.equalTo")
 @js.native
 object equalTo extends js.Object {
+  
   /**
     * Creates a `<PropertyIsEqualTo>` comparison operator.
     *
@@ -21,4 +22,3 @@ object equalTo extends js.Object {
   def apply(propertyName: String, expression: Double): EqualTo_ = js.native
   def apply(propertyName: String, expression: Double, opt_matchCase: Boolean): EqualTo_ = js.native
 }
-

@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("double-ended-queue", JSImport.Namespace)
 @js.native
@@ -26,4 +26,3 @@ Instantiable0[Deque[js.Object]]) with (/**
   */
 Instantiable1[/* capacity */ Double, Deque[js.Object]])
     ]
-

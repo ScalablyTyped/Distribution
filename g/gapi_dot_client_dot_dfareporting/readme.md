@@ -1,7 +1,7 @@
 
 # Scala.js typings for gapi_dot_client_dot_dfareporting
 
-Typings are for version 2.8
+Typings are for version 3.4
 
 
 

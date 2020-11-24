@@ -3,11 +3,12 @@ package typings.chromeApps.global.chrome.fileSystemProvider
 import typings.chromeApps.chrome.fileSystemProvider.FileSystemInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.fileSystemProvider.get")
 @js.native
 object get extends js.Object {
+  
   /**
     * Returns information about a file system with the passed fileSystemId.
     * @since Chrome 42.
@@ -15,4 +16,3 @@ object get extends js.Object {
     */
   def apply(fileSystemId: String, callback: js.Function1[/* fileSystem */ FileSystemInfo, Unit]): Unit = js.native
 }
-

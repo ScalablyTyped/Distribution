@@ -4,7 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The implementation of an output stream and an input stream.
@@ -19,8 +19,8 @@ import scala.scalajs.js.annotation._
 trait XPipe
   extends XOutputStream
      with XInputStream
-
 object XPipe {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -39,4 +39,3 @@ object XPipe {
     __obj.asInstanceOf[XPipe]
   }
 }
-

@@ -2,12 +2,12 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EmailHtmlSubscriptionChannel extends SubscriptionChannelWithAddress
-
 object EmailHtmlSubscriptionChannel {
+  
   @scala.inline
   def apply(address: String, `type`: String, useCustomAddress: Boolean): EmailHtmlSubscriptionChannel = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], useCustomAddress = useCustomAddress.asInstanceOf[js.Any])
@@ -15,4 +15,3 @@ object EmailHtmlSubscriptionChannel {
     __obj.asInstanceOf[EmailHtmlSubscriptionChannel]
   }
 }
-

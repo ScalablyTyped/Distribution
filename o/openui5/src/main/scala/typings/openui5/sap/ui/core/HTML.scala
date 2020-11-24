@@ -2,10 +2,11 @@ package typings.openui5.sap.ui.core
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HTML extends Control {
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterRendering</code> event of this
     * <code>sap.ui.core.HTML</code>.When called, the context of the event handler (its <code>this</code>)
@@ -22,6 +23,7 @@ trait HTML extends Control {
     */
   def attachAfterRendering(oData: js.Any, fnFunction: js.Any): HTML = js.native
   def attachAfterRendering(oData: js.Any, fnFunction: js.Any, oListener: js.Any): HTML = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>afterRendering</code> event of this
     * <code>sap.ui.core.HTML</code>.The passed function and listener object must match the ones used for
@@ -31,6 +33,7 @@ trait HTML extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAfterRendering(fnFunction: js.Any, oListener: js.Any): HTML = js.native
+  
   /**
     * Fires event <code>afterRendering</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>isPreservedDOM</code> of type <code>boolean</code>Whether the current DOM
@@ -40,6 +43,7 @@ trait HTML extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAfterRendering(mArguments: js.Any): HTML = js.native
+  
   /**
     * Gets current value of property <code>content</code>.HTML content to be displayed, defined as a
     * string.The content is converted to DOM nodes with a call to <code>new jQuery(content)</code>, so
@@ -55,6 +59,7 @@ trait HTML extends Control {
     * @returns Value of property <code>content</code>
     */
   def getContent(): String = js.native
+  
   /**
     * Gets current value of property <code>preferDOM</code>.Whether existing DOM content is preferred over
     * the given content string.There are two scenarios where this flag is relevant (when set to
@@ -68,6 +73,7 @@ trait HTML extends Control {
     * @returns Value of property <code>preferDOM</code>
     */
   def getPreferDOM(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>sanitizeContent</code>.Whether to run the HTML sanitizer once
     * the content (HTML markup) is applied or not.To configure allowed URLs please use the whitelist API
@@ -75,6 +81,7 @@ trait HTML extends Control {
     * @returns Value of property <code>sanitizeContent</code>
     */
   def getSanitizeContent(): Boolean = js.native
+  
   /**
     * Sets a new value for property <code>content</code>.HTML content to be displayed, defined as a
     * string.The content is converted to DOM nodes with a call to <code>new jQuery(content)</code>, so
@@ -93,6 +100,7 @@ trait HTML extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setContent(sContent: String): HTML = js.native
+  
   /**
     * Sets some new DOM content for this HTML control. The content will replace the existing contentafter
     * the next rendering. Properties are not modified, but preferDOM should be set to true.
@@ -100,6 +108,7 @@ trait HTML extends Control {
     * @returns <code>this</code> to facilitate method chaining
     */
   def setDOMContent(oDom: Element): HTML = js.native
+  
   /**
     * Sets a new value for property <code>preferDOM</code>.Whether existing DOM content is preferred over
     * the given content string.There are two scenarios where this flag is relevant (when set to
@@ -116,6 +125,7 @@ trait HTML extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setPreferDOM(bPreferDOM: Boolean): HTML = js.native
+  
   /**
     * Sets a new value for property <code>sanitizeContent</code>.Whether to run the HTML sanitizer once
     * the content (HTML markup) is applied or not.To configure allowed URLs please use the whitelist API
@@ -127,4 +137,3 @@ trait HTML extends Control {
     */
   def setSanitizeContent(bSanitizeContent: Boolean): HTML = js.native
 }
-

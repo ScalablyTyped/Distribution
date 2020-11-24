@@ -2,11 +2,12 @@ package typings.knockout.mod.components
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("knockout", "components.get")
 @js.native
 object get extends js.Object {
+  
   def apply(
     componentName: String,
     callback: js.Function2[
@@ -16,4 +17,3 @@ object get extends js.Object {
     ]
   ): String = js.native
 }
-

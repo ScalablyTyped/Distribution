@@ -6,11 +6,14 @@ import typings.notyf.notyfMod.default
 import typings.notyf.notyfOptionsMod.INotyfOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("notyf", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
+  val DEFAULT_OPTIONS: INotyfOptions = js.native
+  
   @js.native
   class Notyf () extends default {
     def this(opts: PartialINotyfOptions) = this()
@@ -21,6 +24,28 @@ object mod extends js.Object {
     extends typings.notyf.notyfModelsMod.NotyfArray[T]
   
   @js.native
+  object NotyfArrayEvent extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.notyf.notyfModelsMod.NotyfArrayEvent with Double] = js.native
+    
+    /* 0 */ val Add: typings.notyf.notyfModelsMod.NotyfArrayEvent.Add with Double = js.native
+    
+    /* 1 */ val Remove: typings.notyf.notyfModelsMod.NotyfArrayEvent.Remove with Double = js.native
+  }
+  
+  @js.native
+  object NotyfEvent extends js.Object {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.notyf.notyfOptionsMod.NotyfEvent with String] = js.native
+    
+    /* "click" */ val Click: typings.notyf.notyfOptionsMod.NotyfEvent.Click with String = js.native
+    
+    /* "dismiss" */ val Dismiss: typings.notyf.notyfOptionsMod.NotyfEvent.Dismiss with String = js.native
+  }
+  
+  @js.native
   class NotyfNotification protected ()
     extends typings.notyf.notyfModelsMod.NotyfNotification {
     def this(options: DeepPartialINotyfNotifica) = this()
@@ -29,23 +54,4 @@ object mod extends js.Object {
   @js.native
   class NotyfView ()
     extends typings.notyf.notyfViewMod.NotyfView
-  
-  val DEFAULT_OPTIONS: INotyfOptions = js.native
-  @js.native
-  object NotyfArrayEvent extends js.Object {
-    /* 0 */ val Add: typings.notyf.notyfModelsMod.NotyfArrayEvent.Add with Double = js.native
-    /* 1 */ val Remove: typings.notyf.notyfModelsMod.NotyfArrayEvent.Remove with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.notyf.notyfModelsMod.NotyfArrayEvent with Double] = js.native
-  }
-  
-  @js.native
-  object NotyfEvent extends js.Object {
-    /* "click" */ val Click: typings.notyf.notyfOptionsMod.NotyfEvent.Click with String = js.native
-    /* "dismiss" */ val Dismiss: typings.notyf.notyfOptionsMod.NotyfEvent.Dismiss with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.notyf.notyfOptionsMod.NotyfEvent with String] = js.native
-  }
-  
 }
-

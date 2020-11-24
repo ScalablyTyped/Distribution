@@ -3,7 +3,7 @@ package typings.mapbox.mod.global.L.mapbox
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// MAP OBJECT /////////////////////////////
@@ -13,4 +13,3 @@ import scala.scalajs.js.annotation._
 @JSGlobal("L.mapbox.accessToken")
 @js.native
 object accessToken extends TopLevel[String]
-

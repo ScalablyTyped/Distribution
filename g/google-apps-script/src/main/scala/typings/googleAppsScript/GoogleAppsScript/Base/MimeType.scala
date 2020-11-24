@@ -2,11 +2,10 @@ package typings.googleAppsScript.GoogleAppsScript.Base
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait MimeType extends js.Object
-
 /**
   * An enumeration that provides access to MIME-type declarations without typing the strings
   * explicitly. Methods that expect a MIME type rendered as a string (for example,
@@ -30,6 +29,7 @@ sealed trait MimeType extends js.Object
 @JSGlobal("GoogleAppsScript.Base.MimeType")
 @js.native
 object MimeType extends js.Object {
+  
   @js.native
   sealed trait BMP extends MimeType
   
@@ -122,6 +122,4 @@ object MimeType extends js.Object {
   
   @js.native
   sealed trait ZIP extends MimeType
-  
 }
-

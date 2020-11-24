@@ -11,16 +11,21 @@ import typings.popperJs.mod.Popper.Placement
 import typings.popperJs.mod.Popper.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components/popover/popperUtils", JSImport.Namespace)
 @js.native
 object popperUtilsMod extends js.Object {
+  
   val arrowOffsetModifier: ModifierFn = js.native
+  
   def getAlignment(placement: Placement): center | left | right = js.native
+  
   def getOppositePosition(side: Position): left | right | bottom | top = js.native
+  
   def getPosition(placement: Placement): left | right | bottom | top = js.native
+  
   def getTransformOrigin(data: Data): String = js.native
+  
   def isVerticalPosition(side: Position): Boolean = js.native
 }
-

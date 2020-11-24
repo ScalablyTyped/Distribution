@@ -2,9 +2,28 @@ package typings.busboy
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object busboyStrings {
+  
+  @scala.inline
+  def field: field = "field".asInstanceOf[field]
+  
+  @scala.inline
+  def fieldsLimit: fieldsLimit = "fieldsLimit".asInstanceOf[fieldsLimit]
+  
+  @scala.inline
+  def file: file = "file".asInstanceOf[file]
+  
+  @scala.inline
+  def filesLimit: filesLimit = "filesLimit".asInstanceOf[filesLimit]
+  
+  @scala.inline
+  def finish: finish = "finish".asInstanceOf[finish]
+  
+  @scala.inline
+  def partsLimit: partsLimit = "partsLimit".asInstanceOf[partsLimit]
+  
   @js.native
   sealed trait field extends js.Object
   
@@ -22,18 +41,4 @@ object busboyStrings {
   
   @js.native
   sealed trait partsLimit extends js.Object
-  
-  @scala.inline
-  def field: field = "field".asInstanceOf[field]
-  @scala.inline
-  def fieldsLimit: fieldsLimit = "fieldsLimit".asInstanceOf[fieldsLimit]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def filesLimit: filesLimit = "filesLimit".asInstanceOf[filesLimit]
-  @scala.inline
-  def finish: finish = "finish".asInstanceOf[finish]
-  @scala.inline
-  def partsLimit: partsLimit = "partsLimit".asInstanceOf[partsLimit]
 }
-

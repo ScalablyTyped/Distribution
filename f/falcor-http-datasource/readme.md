@@ -12,7 +12,7 @@ This package contains falcor components for use in browsers.
 | Keywords           | Falcor, Browser |
 | # releases         | 1 |
 | # dependents       | 10 |
-| # downloads        | 34427 |
+| # downloads        | 26840 |
 | # stars            | 1 |
 
 ## Links

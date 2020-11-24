@@ -2,17 +2,17 @@ package typings.officeJsPreview.Word
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait Style extends js.Object
-
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.Style")
 @js.native
 object Style extends js.Object {
+  
   @js.native
   sealed trait bibliography extends Style
   
@@ -504,6 +504,4 @@ object Style extends js.Object {
     */
   @js.native
   sealed trait tocHeading extends Style
-  
 }
-

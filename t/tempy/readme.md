@@ -1,7 +1,7 @@
 
 # Scala.js typings for tempy
 
-Typings are for version 0.6.0
+Typings are for version 1.0.0
 
 ## Library description:
 Get a random temporary file or directory path
@@ -9,10 +9,10 @@ Get a random temporary file or directory path
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | tempy |
-| Keywords           | temp, temporary, path, file, directory, folder, tempfile, tempdir, tmpdir, tmpfile, random, unique, uniq |
-| # releases         | 2 |
-| # dependents       | 215 |
-| # downloads        | 6731127 |
+| Keywords           | temp, temporary, path, file, directory, folder, tempfile, tempdir, tmpdir, tmpfile, random, unique |
+| # releases         | 5 |
+| # dependents       | 315 |
+| # downloads        | 23740318 |
 | # stars            | 7 |
 
 ## Links

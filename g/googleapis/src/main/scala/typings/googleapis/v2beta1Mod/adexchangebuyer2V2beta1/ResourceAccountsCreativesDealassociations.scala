@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Accounts$Creatives$Dealassociations")
 @js.native
 class ResourceAccountsCreativesDealassociations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer2.accounts.creatives.dealAssociations.add
     * @desc Associate an existing deal with a creative.
@@ -46,6 +46,9 @@ class ResourceAccountsCreativesDealassociations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer2.accounts.creatives.dealAssociations.list
     * @desc List all creative-deal associations.
@@ -81,6 +84,7 @@ class ResourceAccountsCreativesDealassociations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListDealAssociationsResponse]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.creatives.dealAssociations.remove
     * @desc Remove the association between a deal and a creative.
@@ -115,4 +119,3 @@ class ResourceAccountsCreativesDealassociations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
 }
-

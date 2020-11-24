@@ -1,7 +1,7 @@
 
 # Scala.js typings for cross-fetch
 
-Typings are for version 2.2.2
+Typings are for version 3.0.6
 
 ## Library description:
 Universal WHATWG Fetch API for Node, Browsers and React Native
@@ -9,10 +9,10 @@ Universal WHATWG Fetch API for Node, Browsers and React Native
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | cross-fetch |
-| Keywords           | fetch, isomorphic, universal, node, react, native, browser, ponyfill, whatwg, xhr, ajax |
-| # releases         | 13 |
-| # dependents       | 696 |
-| # downloads        | 55791187 |
+| Keywords           | fetch, http, url, promise, async, await, isomorphic, universal, node, react, native, browser, ponyfill, whatwg, xhr, ajax |
+| # releases         | 7 |
+| # dependents       | 1055 |
+| # downloads        | 117965101 |
 | # stars            | 7 |
 
 ## Links

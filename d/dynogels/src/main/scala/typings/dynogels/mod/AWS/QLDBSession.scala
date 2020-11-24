@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.qldbsessionMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.QLDBSession")
 @js.native
@@ -14,4 +14,3 @@ class QLDBSession ()
   extends typings.awsSdk.mod.QLDBSession {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -10,9 +10,9 @@ Storybook Component Story Format (CSF) utilities
 | ------------------ | :-------------: |
 | Full name          | @storybook/csf |
 | Keywords           | storybook, component story format, csf, stories |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 41698 |
+| # releases         | 4 |
+| # dependents       | 13 |
+| # downloads        | 35695239 |
 | # stars            | 0 |
 
 ## Links

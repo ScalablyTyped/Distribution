@@ -3,7 +3,7 @@ package typings.fridaGum.global
 import typings.fridaGum.CSymbols
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Compiles C source code to machine code, straight to memory.
@@ -44,4 +44,3 @@ class CModule protected ()
   def this(source: String) = this()
   def this(source: String, symbols: CSymbols) = this()
 }
-

@@ -10,9 +10,9 @@ A node.js SSDP client and server library.
 | ------------------ | :-------------: |
 | Full name          | node-ssdp |
 | Keywords           | ssdp, multicast, media, device, upnp, chromecast, iot |
-| # releases         | 3 |
-| # dependents       | 101 |
-| # downloads        | 300149 |
+| # releases         | 0 |
+| # dependents       | 115 |
+| # downloads        | 348097 |
 | # stars            | 8 |
 
 ## Links

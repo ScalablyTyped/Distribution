@@ -2,7 +2,7 @@ package typings.vscode.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a custom document used by a [`CustomEditorProvider`](#CustomEditorProvider).
@@ -12,10 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CustomDocument extends js.Object {
-  /**
-    * The associated uri for this document.
-    */
-  val uri: Uri = js.native
+  
   /**
     * Dispose of the custom document.
     *
@@ -23,30 +20,39 @@ trait CustomDocument extends js.Object {
     * all editors associated with the document have been closed.)
     */
   def dispose(): Unit = js.native
+  
+  /**
+    * The associated uri for this document.
+    */
+  val uri: Uri = js.native
 }
-
 object CustomDocument {
+  
   @scala.inline
   def apply(dispose: () => Unit, uri: Uri): CustomDocument = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomDocument]
   }
+  
   @scala.inline
   implicit class CustomDocumentOps[Self <: CustomDocument] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    
     @scala.inline
     def setUri(value: Uri): Self = this.set("uri", value.asInstanceOf[js.Any])
   }
-  
 }
-

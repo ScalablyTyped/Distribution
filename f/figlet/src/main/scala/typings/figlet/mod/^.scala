@@ -3,11 +3,12 @@ package typings.figlet.mod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("figlet", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   def apply(txt: String, cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]): Unit = js.native
   def apply(
     txt: String,
@@ -30,4 +31,3 @@ object ^ extends js.Object {
     cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
   ): Unit = js.native
 }
-

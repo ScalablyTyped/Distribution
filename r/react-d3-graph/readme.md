@@ -10,9 +10,9 @@ React component to build interactive and configurable graphs with d3 effortlessl
 | ------------------ | :-------------: |
 | Full name          | react-d3-graph |
 | Keywords           | d3-visualization, d3js, graphs, javascript, networks, react, social-network-analysis, social-network-graph, visualization |
-| # releases         | 15 |
+| # releases         | 12 |
 | # dependents       | 3 |
-| # downloads        | 80952 |
+| # downloads        | 221840 |
 | # stars            | 0 |
 
 ## Links

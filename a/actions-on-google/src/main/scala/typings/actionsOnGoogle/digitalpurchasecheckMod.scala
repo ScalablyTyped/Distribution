@@ -6,11 +6,12 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3DigitalPurchaseC
 import typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3DigitalPurchaseCheckSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/transaction/digitalpurchasecheck", JSImport.Namespace)
 @js.native
 object digitalpurchasecheckMod extends js.Object {
+  
   @js.native
   /**
     * @param options The raw {@link GoogleActionsTransactionsV3DigitalPurchaseCheckSpec}
@@ -25,4 +26,3 @@ object digitalpurchasecheckMod extends js.Object {
   
   type DigitalPurchaseCheckArgument = GoogleActionsTransactionsV3DigitalPurchaseCheckResult
 }
-

@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "s3.BucketObject")
 @js.native
@@ -23,11 +23,11 @@ class BucketObject protected ()
   def this(name: String, args: BucketObjectArgs) = this()
   def this(name: String, args: BucketObjectArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "s3.BucketObject")
 @js.native
 object BucketObject extends js.Object {
+  
   /**
     * Get an existing BucketObject resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -41,10 +41,10 @@ object BucketObject extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.bucketObjectMod.BucketObject = js.native
   def get(name: String, id: Input[ID], state: BucketObjectState): typings.pulumiAws.bucketObjectMod.BucketObject = js.native
   def get(name: String, id: Input[ID], state: BucketObjectState, opts: CustomResourceOptions): typings.pulumiAws.bucketObjectMod.BucketObject = js.native
+  
   /**
     * Returns true if the given object is an instance of BucketObject.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketObject.BucketObject */ Boolean = js.native
 }
-

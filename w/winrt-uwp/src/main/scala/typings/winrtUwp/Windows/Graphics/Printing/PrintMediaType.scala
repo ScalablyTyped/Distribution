@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Graphics.Printing
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PrintMediaType extends js.Object
-
 /** Specifies the media types for the printed output. */
 @JSGlobal("Windows.Graphics.Printing.PrintMediaType")
 @js.native
 object PrintMediaType extends js.Object {
+  
   /** The Archival media type. */
   @js.native
   sealed trait archival extends PrintMediaType
@@ -138,6 +138,4 @@ object PrintMediaType extends js.Object {
   /** The TShirtTransfer media type. */
   @js.native
   sealed trait tshirtTransfer extends PrintMediaType
-  
 }
-

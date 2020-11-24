@@ -11,8 +11,8 @@ A simple mock for requestAnimationFrame testing with fake timers.
 | Full name          | mock-raf |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 139487 |
+| # dependents       | 2 |
+| # downloads        | 170270 |
 | # stars            | 0 |
 
 ## Links

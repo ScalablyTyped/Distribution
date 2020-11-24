@@ -2,7 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An element representing a function separator in a mathematical Equation. An EquationFunctionArgumentSeparator cannot contain any other element. For more information on
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait EquationFunctionArgumentSeparator extends Element
-
 object EquationFunctionArgumentSeparator {
+  
   @scala.inline
   def apply(
     asBody: () => Body,
@@ -50,4 +50,3 @@ object EquationFunctionArgumentSeparator {
     __obj.asInstanceOf[EquationFunctionArgumentSeparator]
   }
 }
-

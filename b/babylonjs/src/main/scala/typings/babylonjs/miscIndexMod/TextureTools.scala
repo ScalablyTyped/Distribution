@@ -3,17 +3,17 @@ package typings.babylonjs.miscIndexMod
 import typings.babylonjs.textureMod.Texture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Misc/index", "TextureTools")
 @js.native
 class TextureTools ()
   extends typings.babylonjs.textureToolsMod.TextureTools
-
 /* static members */
 @JSImport("babylonjs/Misc/index", "TextureTools")
 @js.native
 object TextureTools extends js.Object {
+  
   /**
     * Uses the GPU to create a copy texture rescaled at a given size
     * @param texture Texture to copy from
@@ -25,4 +25,3 @@ object TextureTools extends js.Object {
   def CreateResizedCopy(texture: Texture, width: Double, height: Double): Texture = js.native
   def CreateResizedCopy(texture: Texture, width: Double, height: Double, useBilinearMode: Boolean): Texture = js.native
 }
-

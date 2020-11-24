@@ -3,7 +3,7 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.webXRControllerTeleportationMod.IWebXRTeleportationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "WebXRMotionControllerTeleportation")
 @js.native
@@ -19,15 +19,16 @@ class WebXRMotionControllerTeleportation protected ()
     _options: IWebXRTeleportationOptions
   ) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/index", "WebXRMotionControllerTeleportation")
 @js.native
 object WebXRMotionControllerTeleportation extends js.Object {
+  
   /**
     * The module's name
     */
   val Name: String = js.native
+  
   /**
     * The (Babylon) version of this module.
     * This is an integer representing the implementation version.
@@ -35,4 +36,3 @@ object WebXRMotionControllerTeleportation extends js.Object {
     */
   val Version: Double = js.native
 }
-

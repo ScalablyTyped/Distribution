@@ -9,16 +9,21 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MessageOptions")
 @js.native
 object ^ extends js.Object {
-  var extensions: NumberDictionary[ExtensionFieldInfo[Message]] = js.native
-  var extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
+  
   def deserializeBinary(bytes: Uint8Array): typings.googleProtobuf.descriptorPbMod.MessageOptions = js.native
+  
   def deserializeBinaryFromReader(message: typings.googleProtobuf.descriptorPbMod.MessageOptions, reader: BinaryReader): typings.googleProtobuf.descriptorPbMod.MessageOptions = js.native
+  
+  var extensions: NumberDictionary[ExtensionFieldInfo[Message]] = js.native
+  
+  var extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
+  
   def serializeBinaryToWriter(message: typings.googleProtobuf.descriptorPbMod.MessageOptions, writer: BinaryWriter): Unit = js.native
+  
   def toObject(includeInstance: Boolean, msg: typings.googleProtobuf.descriptorPbMod.MessageOptions): AsObject = js.native
 }
-

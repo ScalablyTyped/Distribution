@@ -1,12 +1,14 @@
 package typings.finalFormSetFieldTouched
 
+import typings.finalForm.mod.Mutator
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("final-form-set-field-touched", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  val default: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Mutator */ js.Any = js.native
+  
+  val default: Mutator[js.Object, Partial[js.Object]] = js.native
 }
-

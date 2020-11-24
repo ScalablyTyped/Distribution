@@ -5,14 +5,25 @@ import typings.std.Error
 import typings.tar.anon.ListOptionsFileOptionssyn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tar", "t")
 @js.native
 object t extends js.Object {
+  
   def apply(): Writable = js.native
   def apply(options: ListOptions with FileOptions): js.Promise[Unit] = js.native
+  def apply(
+    options: ListOptions with FileOptions,
+    fileList: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+  ): Writable = js.native
   def apply(options: ListOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
+  def apply(
+    options: ListOptions with FileOptions,
+    fileList: js.Array[String],
+    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+  ): Writable = js.native
   def apply(
     options: js.UndefOr[scala.Nothing],
     fileList: js.UndefOr[scala.Nothing],
@@ -26,15 +37,4 @@ object t extends js.Object {
   ): Writable = js.native
   def apply(options: ListOptionsFileOptionssyn): Unit = js.native
   def apply(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = js.native
-  def apply(
-    options: ListOptions,
-    fileList: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Writable = js.native
-  def apply(
-    options: ListOptions,
-    fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Writable = js.native
 }
-

@@ -13,11 +13,12 @@ import typings.phaser.Phaser.Types.Input.HitAreaCallback
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Phaser.Actions")
 @js.native
 object Actions extends js.Object {
+  
   /**
     * Takes an array of Game Objects, or any objects that have public `x` and `y` properties, and aligns them next to each other.
     * 
@@ -31,6 +32,7 @@ object Actions extends js.Object {
   def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
   def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Double): G = js.native
   def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Double, offsetY: Double): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have a public `angle` property,
     * and then adds the given value to each of their `angle` properties.
@@ -58,6 +60,7 @@ object Actions extends js.Object {
   def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of objects and passes each of them to the given callback.
     * @param items The array of items to be updated by this action.
@@ -65,6 +68,7 @@ object Actions extends js.Object {
     * @param context The scope in which the callback will be invoked.
     */
   def Call[G /* <: js.Array[GameObject] */](items: G, callback: CallCallback, context: js.Any): G = js.native
+  
   /**
     * Takes an array of objects and returns the first element in the array that has properties which match
     * all of those specified in the `compare` object. For example, if the compare object was: `{ scaleX: 0.5, alpha: 1 }`
@@ -77,6 +81,7 @@ object Actions extends js.Object {
     */
   def GetFirst[G /* <: js.Array[GameObject] */](items: G, compare: js.Object): js.Object | GameObject = js.native
   def GetFirst[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: integer): js.Object | GameObject = js.native
+  
   /**
     * Takes an array of objects and returns the last element in the array that has properties which match
     * all of those specified in the `compare` object. For example, if the compare object was: `{ scaleX: 0.5, alpha: 1 }`
@@ -89,6 +94,7 @@ object Actions extends js.Object {
     */
   def GetLast[G /* <: js.Array[GameObject] */](items: G, compare: js.Object): js.Object | GameObject = js.native
   def GetLast[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: integer): js.Object | GameObject = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have public `x` and `y` properties,
     * and then aligns them based on the grid configuration given to this action.
@@ -96,6 +102,7 @@ object Actions extends js.Object {
     * @param options The GridAlign Configuration object.
     */
   def GridAlign[G /* <: js.Array[GameObject] */](items: G, options: GridAlignConfig): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have a public `alpha` property,
     * and then adds the given value to each of their `alpha` properties.
@@ -123,6 +130,7 @@ object Actions extends js.Object {
   def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have a public `x` property,
     * and then adds the given value to each of their `x` properties.
@@ -150,6 +158,7 @@ object Actions extends js.Object {
   def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have public `x` and `y` properties,
     * and then adds the given value to each of them.
@@ -345,6 +354,7 @@ object Actions extends js.Object {
   ): G = js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer): G = js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have a public `y` property,
     * and then adds the given value to each of their `y` properties.
@@ -372,6 +382,7 @@ object Actions extends js.Object {
   def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects and positions them on evenly spaced points around the perimeter of a Circle.
     * 
@@ -385,6 +396,7 @@ object Actions extends js.Object {
   def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle, startAngle: js.UndefOr[scala.Nothing], endAngle: Double): G = js.native
   def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle, startAngle: Double): G = js.native
   def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle, startAngle: Double, endAngle: Double): G = js.native
+  
   /**
     * Takes an array of Game Objects and positions them on evenly spaced points around the perimeter of an Ellipse.
     * 
@@ -398,12 +410,14 @@ object Actions extends js.Object {
   def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse, startAngle: js.UndefOr[scala.Nothing], endAngle: Double): G = js.native
   def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse, startAngle: Double): G = js.native
   def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse, startAngle: Double, endAngle: Double): G = js.native
+  
   /**
     * Positions an array of Game Objects on evenly spaced points of a Line.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     * @param line The Line to position the Game Objects on.
     */
   def PlaceOnLine[G /* <: js.Array[GameObject] */](items: G, line: Line): G = js.native
+  
   /**
     * Takes an array of Game Objects and positions them on evenly spaced points around the perimeter of a Rectangle.
     * 
@@ -415,6 +429,7 @@ object Actions extends js.Object {
     */
   def PlaceOnRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle): G = js.native
   def PlaceOnRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle, shift: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects and positions them on evenly spaced points around the edges of a Triangle.
     * 
@@ -425,6 +440,7 @@ object Actions extends js.Object {
     */
   def PlaceOnTriangle[G /* <: js.Array[GameObject] */](items: G, triangle: Triangle): G = js.native
   def PlaceOnTriangle[G /* <: js.Array[GameObject] */](items: G, triangle: Triangle, stepRate: Double): G = js.native
+  
   /**
     * Play an animation with the given key, starting at the given startFrame on all Game Objects in items.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
@@ -434,6 +450,7 @@ object Actions extends js.Object {
   def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String): G = js.native
   def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String, startFrame: String): G = js.native
   def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String, startFrame: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have a public property as defined in `key`,
     * and then adds the given value to it.
@@ -477,6 +494,7 @@ object Actions extends js.Object {
   ): G = js.native
   def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer): G = js.native
   def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have a public property as defined in `key`,
     * and then sets it to the given value.
@@ -520,6 +538,7 @@ object Actions extends js.Object {
   ): G = js.native
   def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer): G = js.native
   def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects and positions them at random locations within the Circle.
     * 
@@ -528,6 +547,7 @@ object Actions extends js.Object {
     * @param circle The Circle to position the Game Objects within.
     */
   def RandomCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle): G = js.native
+  
   /**
     * Takes an array of Game Objects and positions them at random locations within the Ellipse.
     * 
@@ -536,6 +556,7 @@ object Actions extends js.Object {
     * @param ellipse The Ellipse to position the Game Objects within.
     */
   def RandomEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse): G = js.native
+  
   /**
     * Takes an array of Game Objects and positions them at random locations on the Line.
     * 
@@ -544,12 +565,14 @@ object Actions extends js.Object {
     * @param line The Line to position the Game Objects randomly on.
     */
   def RandomLine[G /* <: js.Array[GameObject] */](items: G, line: Line): G = js.native
+  
   /**
     * Takes an array of Game Objects and positions them at random locations within the Rectangle.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     * @param rect The Rectangle to position the Game Objects within.
     */
   def RandomRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle): G = js.native
+  
   /**
     * Takes an array of Game Objects and positions them at random locations within the Triangle.
     * 
@@ -558,6 +581,7 @@ object Actions extends js.Object {
     * @param triangle The Triangle to position the Game Objects within.
     */
   def RandomTriangle[G /* <: js.Array[GameObject] */](items: G, triangle: Triangle): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have a public `rotation` property,
     * and then adds the given value to each of their `rotation` properties.
@@ -585,6 +609,7 @@ object Actions extends js.Object {
   def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Rotates each item around the given point by the given angle.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
@@ -592,6 +617,7 @@ object Actions extends js.Object {
     * @param angle The angle to rotate by, in radians.
     */
   def RotateAround[G /* <: js.Array[GameObject] */](items: G, point: js.Object, angle: Double): G = js.native
+  
   /**
     * Rotates an array of Game Objects around a point by the given angle and distance.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
@@ -600,6 +626,7 @@ object Actions extends js.Object {
     * @param distance The distance from the point of rotation in pixels.
     */
   def RotateAroundDistance[G /* <: js.Array[GameObject] */](items: G, point: js.Object, angle: Double, distance: Double): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have a public `scaleX` property,
     * and then adds the given value to each of their `scaleX` properties.
@@ -627,6 +654,7 @@ object Actions extends js.Object {
   def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have public `scaleX` and `scaleY` properties,
     * and then adds the given value to each of them.
@@ -857,6 +885,7 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have a public `scaleY` property,
     * and then adds the given value to each of their `scaleY` properties.
@@ -884,6 +913,7 @@ object Actions extends js.Object {
   def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public property `alpha`
     * and then sets it to the given value.
@@ -911,6 +941,7 @@ object Actions extends js.Object {
   def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public property `blendMode`
     * and then sets it to the given value.
@@ -927,6 +958,7 @@ object Actions extends js.Object {
   def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: integer): G = js.native
   def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public property `depth`
     * and then sets it to the given value.
@@ -954,6 +986,7 @@ object Actions extends js.Object {
   def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Passes all provided Game Objects to the Input Manager to enable them for input with identical areas and callbacks.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
@@ -961,6 +994,7 @@ object Actions extends js.Object {
     * @param hitAreaCallback A callback to be invoked when the Game Object is interacted with. If you provide a shape you must also provide a callback.
     */
   def SetHitArea[G /* <: js.Array[GameObject] */](items: G, hitArea: js.Any, hitAreaCallback: HitAreaCallback): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public properties `originX` and `originY`
     * and then sets them to the given values.
@@ -1191,6 +1225,7 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public property `rotation`
     * and then sets it to the given value.
@@ -1218,6 +1253,7 @@ object Actions extends js.Object {
   def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public properties `scaleX` and `scaleY`
     * and then sets them to the given values.
@@ -1448,6 +1484,7 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public property `scaleX`
     * and then sets it to the given value.
@@ -1475,6 +1512,7 @@ object Actions extends js.Object {
   def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public property `scaleY`
     * and then sets it to the given value.
@@ -1502,6 +1540,7 @@ object Actions extends js.Object {
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public properties `scrollFactorX` and `scrollFactorY`
     * and then sets them to the given values.
@@ -1751,6 +1790,7 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public property `scrollFactorX`
     * and then sets it to the given value.
@@ -1778,6 +1818,7 @@ object Actions extends js.Object {
   def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public property `scrollFactorY`
     * and then sets it to the given value.
@@ -1805,6 +1846,7 @@ object Actions extends js.Object {
   def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public method setTint() and then updates it to the given value(s). You can specify tint color per corner or provide only one color value for `topLeft` parameter, in which case whole item will be tinted with that color.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
@@ -1839,6 +1881,7 @@ object Actions extends js.Object {
   ): G = js.native
   def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Double, bottomLeft: Double): G = js.native
   def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public property `visible`
     * and then sets it to the given value.
@@ -1853,6 +1896,7 @@ object Actions extends js.Object {
   def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: integer): G = js.native
   def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public property `x`
     * and then sets it to the given value.
@@ -1880,6 +1924,7 @@ object Actions extends js.Object {
   def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public properties `x` and `y`
     * and then sets them to the given values.
@@ -2075,6 +2120,7 @@ object Actions extends js.Object {
   ): G = js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer): G = js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Takes an array of Game Objects, or any objects that have the public property `y`
     * and then sets it to the given value.
@@ -2102,6 +2148,7 @@ object Actions extends js.Object {
   def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  
   /**
     * Iterate through the items array changing the position of each element to be that of the element that came before
     * it in the array (or after it if direction = 1)
@@ -2119,11 +2166,13 @@ object Actions extends js.Object {
   def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: js.UndefOr[scala.Nothing], output: O): O = js.native
   def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: integer): O = js.native
   def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: integer, output: O): O = js.native
+  
   /**
     * Shuffles the array in place. The shuffled array is both modified and returned.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     */
   def Shuffle[G /* <: js.Array[GameObject] */](items: G): G = js.native
+  
   /**
     * Smoothstep is a sigmoid-like interpolation and clamping function.
     * 
@@ -2136,6 +2185,7 @@ object Actions extends js.Object {
     */
   def SmoothStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double): G = js.native
   def SmoothStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double, inc: Boolean): G = js.native
+  
   /**
     * Smootherstep is a sigmoid-like interpolation and clamping function.
     * 
@@ -2148,6 +2198,7 @@ object Actions extends js.Object {
     */
   def SmootherStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double): G = js.native
   def SmootherStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double, inc: Boolean): G = js.native
+  
   /**
     * Takes an array of Game Objects and then modifies their `property` so the value equals, or is incremented, by the
     * calculated spread value.
@@ -2167,12 +2218,14 @@ object Actions extends js.Object {
     */
   def Spread[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double): G = js.native
   def Spread[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double, inc: Boolean): G = js.native
+  
   /**
     * Takes an array of Game Objects and toggles the visibility of each one.
     * Those previously `visible = false` will become `visible = true`, and vice versa.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     */
   def ToggleVisible[G /* <: js.Array[GameObject] */](items: G): G = js.native
+  
   /**
     * Wrap each item's coordinates within a rectangle's area.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
@@ -2182,4 +2235,3 @@ object Actions extends js.Object {
   def WrapInRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle): G = js.native
   def WrapInRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle, padding: Double): G = js.native
 }
-

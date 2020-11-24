@@ -6,14 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Resource$Debug$Datasources$Items")
 @js.native
 class ResourceDebugDatasourcesItems protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
-  var unmappedids: ResourceDebugDatasourcesItemsUnmappedids = js.native
+  
   /**
     * cloudsearch.debug.datasources.items.checkAccess
     * @desc Checks whether an item is accessible by specified principal.
@@ -47,6 +46,9 @@ class ResourceDebugDatasourcesItems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCheckAccessResponse]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * cloudsearch.debug.datasources.items.searchByViewUrl
     * @desc Fetches the item whose viewUrl exactly matches that of the URL
@@ -80,5 +82,6 @@ class ResourceDebugDatasourcesItems protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSearchItemsByViewUrlResponse]
   ): Unit = js.native
+  
+  var unmappedids: ResourceDebugDatasourcesItemsUnmappedids = js.native
 }
-

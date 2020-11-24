@@ -10,10 +10,10 @@ Blazing fast and accurate glob matcher written in JavaScript, with no dependenci
 | ------------------ | :-------------: |
 | Full name          | picomatch |
 | Keywords           | glob, match, picomatch |
-| # releases         | 22 |
-| # dependents       | 53 |
-| # downloads        | 221586295 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 111 |
+| # downloads        | 548076181 |
+| # stars            | 1 |
 
 ## Links
 - [Homepage](https://github.com/micromatch/picomatch)

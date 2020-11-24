@@ -12,7 +12,7 @@ Pluggable browser scroll management
 | Keywords           | scroll |
 | # releases         | 6 |
 | # dependents       | 52 |
-| # downloads        | 16021063 |
+| # downloads        | 15765042 |
 | # stars            | 8 |
 
 ## Links

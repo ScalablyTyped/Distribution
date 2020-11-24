@@ -9,12 +9,11 @@ import typings.select2.select2Strings.destroy
 import typings.select2.select2Strings.open
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Select2Plugin[TElement] extends js.Object {
-  var amd: Require = js.native
-  var defaults: Reset = js.native
+  
   def apply(): JQuery[TElement] = js.native
   /**
     * Closes the dropdown
@@ -34,5 +33,8 @@ trait Select2Plugin[TElement] extends js.Object {
   def apply(method: open): JQuery[TElement] = js.native
   // tslint:disable-next-line:no-unnecessary-generics
   def apply[Result, RemoteResult](options: Options[Result, RemoteResult]): JQuery[TElement] = js.native
+  
+  var amd: Require = js.native
+  
+  var defaults: Reset = js.native
 }
-

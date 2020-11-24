@@ -2,12 +2,13 @@ package typings.winrtUwp.global.Windows.Devices.Bluetooth
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides class describing trigger details for Bluetooth triggers. */
 @JSGlobal("Windows.Devices.Bluetooth.Background")
 @js.native
 object Background extends js.Object {
+  
   /** Provides information about a BluetoothLEAdvertisementPublisher trigger. */
   @js.native
   abstract class BluetoothLEAdvertisementPublisherTriggerDetails ()
@@ -37,6 +38,4 @@ object Background extends js.Object {
   @js.native
   abstract class RfcommOutboundConnectionInformation ()
     extends typings.winrtUwp.Windows.Devices.Bluetooth.Background.RfcommOutboundConnectionInformation
-  
 }
-

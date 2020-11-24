@@ -2,7 +2,7 @@ package typings.xrm.Xrm.Controls
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constants to use with the addNotification method of form controls
@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.RECOMMENDATION
 */
 trait NotificationLevel extends js.Object
-
 object NotificationLevel {
+  
   @scala.inline
   def ERROR: typings.xrm.xrmStrings.ERROR = "ERROR".asInstanceOf[typings.xrm.xrmStrings.ERROR]
+  
   @scala.inline
   def RECOMMENDATION: typings.xrm.xrmStrings.RECOMMENDATION = "RECOMMENDATION".asInstanceOf[typings.xrm.xrmStrings.RECOMMENDATION]
 }
-

@@ -2,7 +2,7 @@ package typings.protractor.mod.error
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The coordinates provided to an interactions operation are invalid.
@@ -13,4 +13,3 @@ class InvalidCoordinatesError ()
   extends typings.seleniumWebdriver.mod.error.InvalidCoordinatesError {
   def this(message: String) = this()
 }
-

@@ -3,11 +3,12 @@ package typings.requireDirectory.mod
 import typings.node.NodeModule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("require-directory", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * @description function for requiring directory content as hash of modules
     * @param m module for which has will be created
@@ -22,4 +23,3 @@ object ^ extends js.Object {
   def apply[T, U](m: NodeModule, path: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = js.native
   def apply[T, U](m: NodeModule, path: RequireDirectoryOptions[T, U], options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = js.native
 }
-

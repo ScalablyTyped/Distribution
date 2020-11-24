@@ -5,7 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Handles access to layered data stored in a repository.
@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait XBackend extends XInterface {
+  
   /**
     * creates an update handler for the owner entity layer for a component.
     * @param aComponent component whose data will be updated
@@ -30,6 +31,7 @@ trait XBackend extends XInterface {
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
   def getOwnUpdateHandler(aComponent: String): XUpdateHandler = js.native
+  
   /**
     * creates an update handler on an entity's layer for a component.
     * @param aComponent component whose data will be updated
@@ -41,6 +43,7 @@ trait XBackend extends XInterface {
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
   def getUpdateHandler(aComponent: String, aEntity: String): XUpdateHandler = js.native
+  
   /**
     * retrieves the layers associated to an entity for a component.
     * @param aComponent component whose data will be accessed
@@ -51,6 +54,7 @@ trait XBackend extends XInterface {
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
   def listLayers(aComponent: String, aEntity: String): SafeArray[XLayer] = js.native
+  
   /**
     * retrieves the layers associated to the owner entity for a component.
     * @param aComponent component whose data will be accessed
@@ -61,8 +65,8 @@ trait XBackend extends XInterface {
     */
   def listOwnLayers(aComponent: String): SafeArray[XLayer] = js.native
 }
-
 object XBackend {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -76,26 +80,32 @@ object XBackend {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getOwnUpdateHandler = js.Any.fromFunction1(getOwnUpdateHandler), getUpdateHandler = js.Any.fromFunction2(getUpdateHandler), listLayers = js.Any.fromFunction2(listLayers), listOwnLayers = js.Any.fromFunction1(listOwnLayers), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XBackend]
   }
+  
   @scala.inline
   implicit class XBackendOps[Self <: XBackend] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setGetOwnUpdateHandler(value: String => XUpdateHandler): Self = this.set("getOwnUpdateHandler", js.Any.fromFunction1(value))
+    
     @scala.inline
     def setGetUpdateHandler(value: (String, String) => XUpdateHandler): Self = this.set("getUpdateHandler", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setListLayers(value: (String, String) => SafeArray[XLayer]): Self = this.set("listLayers", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setListOwnLayers(value: String => SafeArray[XLayer]): Self = this.set("listOwnLayers", js.Any.fromFunction1(value))
   }
-  
 }
-

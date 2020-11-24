@@ -3,14 +3,11 @@ package typings.objectsToCsv.mod
 import typings.objectsToCsv.anon.AllColumns
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObjectsToCsv extends js.Object {
-  /**
-    * Holds data to be converted.
-    */
-  var data: js.Array[js.Object] = js.native
+  
   /**
     * Private method to run the actual conversion of array of objects to CSV data.
     * @param data Data to be converted.
@@ -23,6 +20,12 @@ trait ObjectsToCsv extends js.Object {
   def convert(data: js.Array[js.Object], header: js.UndefOr[scala.Nothing], allColumns: Boolean): js.Promise[String] = js.native
   def convert(data: js.Array[js.Object], header: Boolean): js.Promise[String] = js.native
   def convert(data: js.Array[js.Object], header: Boolean, allColumns: Boolean): js.Promise[String] = js.native
+  
+  /**
+    * Holds data to be converted.
+    */
+  var data: js.Array[js.Object] = js.native
+  
   /**
     * Saves the CSV file to the specified file.
     * @param filename The path and filename of the new CSV file.
@@ -34,8 +37,8 @@ trait ObjectsToCsv extends js.Object {
     */
   def toDisk(filename: String): js.Promise[String] = js.native
   def toDisk(filename: String, options: AllColumns): js.Promise[String] = js.native
+  
   def toString(header: js.UndefOr[scala.Nothing], allColumns: Boolean): js.Promise[String] = js.native
   def toString(header: Boolean): js.Promise[String] = js.native
   def toString(header: Boolean, allColumns: Boolean): js.Promise[String] = js.native
 }
-

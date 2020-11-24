@@ -2,7 +2,7 @@ package typings.babylonjs.particlesIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Particles/index", "DepthSortedParticle")
 @js.native
@@ -12,6 +12,5 @@ class DepthSortedParticle protected ()
     * Creates a new sorted particle
     * @param materialIndex
     */
-  def this(ind: Double, indLength: Double, materialIndex: Double) = this()
+  def this(idx: Double, ind: Double, indLength: Double, materialIndex: Double) = this()
 }
-

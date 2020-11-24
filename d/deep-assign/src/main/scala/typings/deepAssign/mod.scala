@@ -2,11 +2,12 @@ package typings.deepAssign
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("deep-assign", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   /**
     * Deeply assigns all the properties of the source objects to the
     * target object
@@ -73,4 +74,3 @@ object mod extends js.Object {
     */
   def apply[T, U, V, W, X, Y, Z](target: T, source1: U, source2: V, source3: W, source4: X, source5: Y, source6: Z): T with U with V with W with X with Y with Z = js.native
 }
-

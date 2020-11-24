@@ -3,11 +3,12 @@ package typings.ibmOpenapiValidator.mod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ibm-openapi-validator", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * OpenAPI document validator
     * @param openApiDoc - OpenAPI document object
@@ -17,4 +18,3 @@ object ^ extends js.Object {
   def apply(openApiDoc: StringDictionary[js.Any]): js.Promise[validatorResult] = js.native
   def apply(openApiDoc: StringDictionary[js.Any], defaultMode: validatorParameterDefaultMode): js.Promise[validatorResult] = js.native
 }
-

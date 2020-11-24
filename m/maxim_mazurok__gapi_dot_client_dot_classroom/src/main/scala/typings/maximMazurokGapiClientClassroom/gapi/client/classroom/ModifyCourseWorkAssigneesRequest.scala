@@ -1,0 +1,51 @@
+package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait ModifyCourseWorkAssigneesRequest extends js.Object {
+  
+  /** Mode of the coursework describing whether it will be assigned to all students or specified individual students. */
+  var assigneeMode: js.UndefOr[String] = js.native
+  
+  /** Set which students are assigned or not assigned to the coursework. Must be specified only when `assigneeMode` is `INDIVIDUAL_STUDENTS`. */
+  var modifyIndividualStudentsOptions: js.UndefOr[ModifyIndividualStudentsOptions] = js.native
+}
+object ModifyCourseWorkAssigneesRequest {
+  
+  @scala.inline
+  def apply(): ModifyCourseWorkAssigneesRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ModifyCourseWorkAssigneesRequest]
+  }
+  
+  @scala.inline
+  implicit class ModifyCourseWorkAssigneesRequestOps[Self <: ModifyCourseWorkAssigneesRequest] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setAssigneeMode(value: String): Self = this.set("assigneeMode", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteAssigneeMode: Self = this.set("assigneeMode", js.undefined)
+    
+    @scala.inline
+    def setModifyIndividualStudentsOptions(value: ModifyIndividualStudentsOptions): Self = this.set("modifyIndividualStudentsOptions", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteModifyIndividualStudentsOptions: Self = this.set("modifyIndividualStudentsOptions", js.undefined)
+  }
+}

@@ -5,11 +5,12 @@ import typings.tstl.errorCodeMod.ErrorCode
 import typings.tstl.runtimeErrorMod.RuntimeError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/exception/SystemError", JSImport.Namespace)
 @js.native
 object systemErrorMod extends js.Object {
+  
   @js.native
   class SystemError protected () extends RuntimeError {
     /**
@@ -29,14 +30,14 @@ object systemErrorMod extends js.Object {
       */
     def this(`val`: Double, category: ErrorCategory) = this()
     def this(`val`: Double, category: ErrorCategory, message: String) = this()
-    var code_ : ErrorCode = js.native
+    
     /**
       * Get error code.
       *
       * @return The error code.
       */
     def code(): ErrorCode = js.native
+    
+    var code_ : ErrorCode = js.native
   }
-  
 }
-

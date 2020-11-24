@@ -6,7 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a collection of label ranges in a spreadsheet document.
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
 trait LabelRanges
   extends XLabelRanges
      with XEnumerationAccess
-
 object LabelRanges {
+  
   @scala.inline
   def apply(
     Count: Double,
@@ -38,4 +38,3 @@ object LabelRanges {
     __obj.asInstanceOf[LabelRanges]
   }
 }
-

@@ -10,11 +10,16 @@ import typings.pgTypes.mod.TypeId
 import typings.pgTypes.mod.TypesBuiltins
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("promise-pg", "raw")
 @js.native
 object raw extends js.Object {
+  
+  val defaults: Defaults_ with typings.pg.mod.ClientConfig = js.native
+  
+  val native: TypeofPg | Null = js.native
+  
   @js.native
   class Client ()
     extends typings.pg.mod.Client {
@@ -60,17 +65,17 @@ object raw extends js.Object {
     def this(queryTextOrConfig: typings.pg.mod.QueryConfig[I], values: I) = this()
   }
   
-  val defaults: Defaults_ with typings.pg.mod.ClientConfig = js.native
-  val native: TypeofPg | Null = js.native
   @js.native
   object types extends js.Object {
-    val builtins: TypesBuiltins = js.native
+    
     def arrayParser(source: String, transform: js.Function1[/* entry */ js.Any, _]): js.Array[_] = js.native
+    
+    val builtins: TypesBuiltins = js.native
+    
     def getTypeParser(id: TypeId): js.Any = js.native
     def getTypeParser(id: TypeId, format: TypeFormat): js.Any = js.native
+    
     def setTypeParser(id: TypeId, format: TypeFormat, parseFn: js.Function1[/* value */ String, _]): Unit = js.native
     def setTypeParser(id: TypeId, parseFn: js.Function1[/* value */ String, _]): Unit = js.native
   }
-  
 }
-

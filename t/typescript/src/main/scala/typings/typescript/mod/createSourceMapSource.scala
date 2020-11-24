@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createSourceMapSource")
 @js.native
 object createSourceMapSource extends js.Object {
+  
   /**
     * Create an external source map source file reference
     */
@@ -17,4 +18,3 @@ object createSourceMapSource extends js.Object {
     skipTrivia: js.Function1[/* pos */ Double, Double]
   ): SourceMapSource = js.native
 }
-

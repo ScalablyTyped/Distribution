@@ -5,33 +5,23 @@ import typings.awsSdkClientKmsNode.kmsconfigurationMod.KMSResolvedConfiguration
 import typings.awsSdkClientKmsNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientKmsNode.typesEncryptInputMod.EncryptInput
 import typings.awsSdkClientKmsNode.typesEncryptOutputMod.EncryptOutput
-import typings.awsSdkMiddlewareStack.mod.MiddlewareStack
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
-import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-kms-node/commands/EncryptCommand", JSImport.Namespace)
 @js.native
 object encryptCommandMod extends js.Object {
+  
   @js.native
-  class EncryptCommand protected () extends Command[
-          InputTypesUnion, 
-          EncryptInput, 
-          OutputTypesUnion, 
-          EncryptOutput, 
-          KMSResolvedConfiguration, 
-          Readable
-        ] {
+  class EncryptCommand protected () extends Command[InputTypesUnion, EncryptInput, OutputTypesUnion, EncryptOutput, KMSResolvedConfiguration] {
     def this(input: EncryptInput) = this()
-    val middlewareStack: MiddlewareStack[EncryptInput, EncryptOutput, Readable] = js.native
+    
     def resolveMiddleware(
-      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: KMSResolvedConfiguration
     ): Handler[EncryptInput, EncryptOutput] = js.native
   }
-  
 }
-

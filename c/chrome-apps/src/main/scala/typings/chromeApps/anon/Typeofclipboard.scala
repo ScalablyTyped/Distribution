@@ -6,12 +6,14 @@ import typings.chromeApps.chrome.events.Event
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Typeofclipboard extends js.Object {
+  
   /** @enum */
   val DataItemType: TEXTHTML = js.native
+  
   /**
     * **Dev channel only.**
     * Fired when clipboard data changes.
@@ -20,6 +22,7 @@ trait Typeofclipboard extends js.Object {
     * clipboard data is available by calling document.execCommand('paste').
     */
   val onClipboardDataChanged: Event[js.Function0[Unit]] = js.native
+  
   /**
     * **Dev channel only.**
     * Sets image data to clipboard
@@ -46,4 +49,3 @@ trait Typeofclipboard extends js.Object {
     callback: js.Function0[Unit]
   ): Unit = js.native
 }
-

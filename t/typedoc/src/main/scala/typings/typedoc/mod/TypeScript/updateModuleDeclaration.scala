@@ -1,17 +1,21 @@
 package typings.typedoc.mod.TypeScript
 
 import typings.typescript.mod.Decorator
+import typings.typescript.mod.Identifier
+import typings.typescript.mod.JSDocNamespaceDeclaration
 import typings.typescript.mod.Modifier
-import typings.typescript.mod.ModuleBody
+import typings.typescript.mod.ModuleBlock
 import typings.typescript.mod.ModuleDeclaration
 import typings.typescript.mod.ModuleName
+import typings.typescript.mod.NamespaceDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.updateModuleDeclaration")
 @js.native
 object updateModuleDeclaration extends js.Object {
+  
   def apply(
     node: ModuleDeclaration,
     decorators: js.UndefOr[scala.Nothing],
@@ -23,7 +27,28 @@ object updateModuleDeclaration extends js.Object {
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: ModuleName,
-    body: ModuleBody
+    body: Identifier
+  ): ModuleDeclaration = js.native
+  def apply(
+    node: ModuleDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: ModuleName,
+    body: JSDocNamespaceDeclaration
+  ): ModuleDeclaration = js.native
+  def apply(
+    node: ModuleDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: ModuleName,
+    body: ModuleBlock
+  ): ModuleDeclaration = js.native
+  def apply(
+    node: ModuleDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: ModuleName,
+    body: NamespaceDeclaration
   ): ModuleDeclaration = js.native
   def apply(
     node: ModuleDeclaration,
@@ -36,7 +61,28 @@ object updateModuleDeclaration extends js.Object {
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.Array[Modifier],
     name: ModuleName,
-    body: ModuleBody
+    body: Identifier
+  ): ModuleDeclaration = js.native
+  def apply(
+    node: ModuleDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    name: ModuleName,
+    body: JSDocNamespaceDeclaration
+  ): ModuleDeclaration = js.native
+  def apply(
+    node: ModuleDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    name: ModuleName,
+    body: ModuleBlock
+  ): ModuleDeclaration = js.native
+  def apply(
+    node: ModuleDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    name: ModuleName,
+    body: NamespaceDeclaration
   ): ModuleDeclaration = js.native
   def apply(
     node: ModuleDeclaration,
@@ -49,8 +95,30 @@ object updateModuleDeclaration extends js.Object {
     decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: ModuleName,
-    body: ModuleBody
+    body: Identifier
   ): ModuleDeclaration = js.native
+  def apply(
+    node: ModuleDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: ModuleName,
+    body: JSDocNamespaceDeclaration
+  ): ModuleDeclaration = js.native
+  def apply(
+    node: ModuleDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: ModuleName,
+    body: ModuleBlock
+  ): ModuleDeclaration = js.native
+  def apply(
+    node: ModuleDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: ModuleName,
+    body: NamespaceDeclaration
+  ): ModuleDeclaration = js.native
+  /** @deprecated Use `factory.updateModuleDeclaration` or the factory supplied by your transformation context instead. */
   def apply(
     node: ModuleDeclaration,
     decorators: js.Array[Decorator],
@@ -62,7 +130,27 @@ object updateModuleDeclaration extends js.Object {
     decorators: js.Array[Decorator],
     modifiers: js.Array[Modifier],
     name: ModuleName,
-    body: ModuleBody
+    body: Identifier
+  ): ModuleDeclaration = js.native
+  def apply(
+    node: ModuleDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: ModuleName,
+    body: JSDocNamespaceDeclaration
+  ): ModuleDeclaration = js.native
+  def apply(
+    node: ModuleDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: ModuleName,
+    body: ModuleBlock
+  ): ModuleDeclaration = js.native
+  def apply(
+    node: ModuleDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: ModuleName,
+    body: NamespaceDeclaration
   ): ModuleDeclaration = js.native
 }
-

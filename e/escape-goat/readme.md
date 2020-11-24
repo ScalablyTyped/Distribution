@@ -10,9 +10,9 @@ Escape a string for use in HTML or the inverse
 | ------------------ | :-------------: |
 | Full name          | escape-goat |
 | Keywords           | escape, unescape, html, entity, entities, escaping, sanitize, sanitization, utility, template, attribute, value, interpolate, xss, goat, 🐐 |
-| # releases         | 3 |
-| # dependents       | 25 |
-| # downloads        | 782278 |
+| # releases         | 5 |
+| # dependents       | 50 |
+| # downloads        | 36322299 |
 | # stars            | 0 |
 
 ## Links

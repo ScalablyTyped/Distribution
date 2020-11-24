@@ -6,7 +6,7 @@ import typings.backoff.backoffStrings.ready
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backoff", "Backoff")
 @js.native
@@ -18,6 +18,7 @@ class Backoff protected () extends EventEmitter {
     * @param strategy: the backoff strategy to use
     */
   def this(strategy: BackoffStrategy) = this()
+  
   /**
     * Emitted when a backoff operation is started. Signals to the client how long
     * the next backoff delay will be.
@@ -49,6 +50,7 @@ class Backoff protected () extends EventEmitter {
     */
   @JSName("addListener")
   def addListener_ready(event: ready, listener: js.Function2[/* number */ Double, /* delay */ Double, Unit]): this.type = js.native
+  
   /**
     * Starts a backoff operation. If provided, the error parameter will be emitted
     * as the last argument of the `backoff` and `fail` events to let the listeners
@@ -62,6 +64,7 @@ class Backoff protected () extends EventEmitter {
     */
   def backoff(): Unit = js.native
   def backoff(error: js.Any): Unit = js.native
+  
   @JSName("emit")
   def emit_backoff(event: backoff, number: Double, delay: Double): Boolean = js.native
   @JSName("emit")
@@ -72,6 +75,7 @@ class Backoff protected () extends EventEmitter {
   def emit_fail(event: fail, error: js.Any): Boolean = js.native
   @JSName("emit")
   def emit_ready(event: ready, number: Double, delay: Double): Boolean = js.native
+  
   /**
     * Sets a limit on the maximum number of backoffs that can be performed before
     * a fail event gets emitted and the backoff instance is reset. By default, there
@@ -81,12 +85,14 @@ class Backoff protected () extends EventEmitter {
     * emitted, must be greater than 0
     */
   def failAfter(numberOfBackoffs: Double): Unit = js.native
+  
   @JSName("listenerCount")
   def listenerCount_backoff(`type`: backoff): Double = js.native
   @JSName("listenerCount")
   def listenerCount_fail(`type`: fail): Double = js.native
   @JSName("listenerCount")
   def listenerCount_ready(`type`: ready): Double = js.native
+  
   @JSName("listeners")
   def listeners_backoff(event: backoff): js.Array[
     js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[_], Unit]
@@ -95,6 +101,7 @@ class Backoff protected () extends EventEmitter {
   def listeners_fail(event: fail): js.Array[js.Function1[/* error */ js.UndefOr[_], Unit]] = js.native
   @JSName("listeners")
   def listeners_ready(event: ready): js.Array[js.Function2[/* number */ Double, /* delay */ Double, Unit]] = js.native
+  
   @JSName("on")
   def on_backoff(
     event: backoff,
@@ -104,6 +111,7 @@ class Backoff protected () extends EventEmitter {
   def on_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): this.type = js.native
   @JSName("on")
   def on_ready(event: ready, listener: js.Function2[/* number */ Double, /* delay */ Double, Unit]): this.type = js.native
+  
   @JSName("once")
   def once_backoff(
     event: backoff,
@@ -113,6 +121,7 @@ class Backoff protected () extends EventEmitter {
   def once_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): this.type = js.native
   @JSName("once")
   def once_ready(event: ready, listener: js.Function2[/* number */ Double, /* delay */ Double, Unit]): this.type = js.native
+  
   @JSName("prependListener")
   def prependListener_backoff(
     event: backoff,
@@ -122,6 +131,7 @@ class Backoff protected () extends EventEmitter {
   def prependListener_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_ready(event: ready, listener: js.Function2[/* number */ Double, /* delay */ Double, Unit]): this.type = js.native
+  
   @JSName("prependOnceListener")
   def prependOnceListener_backoff(
     event: backoff,
@@ -131,12 +141,14 @@ class Backoff protected () extends EventEmitter {
   def prependOnceListener_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_ready(event: ready, listener: js.Function2[/* number */ Double, /* delay */ Double, Unit]): this.type = js.native
+  
   @JSName("removeAllListeners")
   def removeAllListeners_backoff(event: backoff): this.type = js.native
   @JSName("removeAllListeners")
   def removeAllListeners_fail(event: fail): this.type = js.native
   @JSName("removeAllListeners")
   def removeAllListeners_ready(event: ready): this.type = js.native
+  
   @JSName("removeListener")
   def removeListener_backoff(
     event: backoff,
@@ -146,6 +158,7 @@ class Backoff protected () extends EventEmitter {
   def removeListener_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_ready(event: ready, listener: js.Function2[/* number */ Double, /* delay */ Double, Unit]): this.type = js.native
+  
   /**
     * Resets the backoff delay to the initial backoff delay and stop any backoff
     * operation in progress. After reset, a backoff instance can and should be
@@ -157,4 +170,3 @@ class Backoff protected () extends EventEmitter {
     */
   def reset(): Unit = js.native
 }
-

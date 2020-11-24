@@ -3,10 +3,11 @@ package typings.openui5.sap.ui.core.routing
 import typings.openui5.sap.ui.base.EventProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Route extends EventProvider {
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'matched' event of this
     * <code>sap.ui.core.routing.Route</code>.<br/>
@@ -19,6 +20,7 @@ trait Route extends EventProvider {
     */
   def attachMatched(oData: js.Any, fnFunction: js.Any): Route = js.native
   def attachMatched(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Route = js.native
+  
   /**
     * Attach event-handler <code>fnFunction</code> to the 'patternMatched' event of this
     * <code>sap.ui.core.routing.Route</code>.<br/>
@@ -31,11 +33,13 @@ trait Route extends EventProvider {
     */
   def attachPatternMatched(oData: js.Any, fnFunction: js.Any): Route = js.native
   def attachPatternMatched(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Route = js.native
+  
   /**
     * Destroys a route
     * @returns this for chaining.
     */
   def destroy(): Route = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'matched' event of this
     * <code>sap.ui.core.routing.Route</code>.<br/>The passed function and listener object must match the
@@ -46,6 +50,7 @@ trait Route extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def detachMatched(fnFunction: js.Any, oListener: js.Any): Route = js.native
+  
   /**
     * Detach event-handler <code>fnFunction</code> from the 'patternMatched' event of this
     * <code>sap.ui.core.routing.Route</code>.<br/>The passed function and listener object must match the
@@ -56,11 +61,13 @@ trait Route extends EventProvider {
     * @returns <code>this</code> to allow method chaining
     */
   def detachPatternMatched(fnFunction: js.Any, oListener: js.Any): Route = js.native
+  
   /**
     * Return the pattern of the route. If there are multiple patterns, the first pattern is returned
     * @returns the routes pattern
     */
   def getPattern(): String = js.native
+  
   /**
     * Returns the URL for the route and replaces the placeholders with the values in oParameters
     * @param oParameters Parameters for the route
@@ -68,4 +75,3 @@ trait Route extends EventProvider {
     */
   def getURL(oParameters: js.Any): String = js.native
 }
-

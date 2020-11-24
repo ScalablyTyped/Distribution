@@ -2,7 +2,7 @@ package typings.subsume.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("subsume", JSImport.Namespace)
 @js.native
@@ -32,15 +32,16 @@ import scala.scalajs.js.annotation._
 class ^ () extends Subsume {
   def this(id: String) = this()
 }
-
 @JSImport("subsume", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Extract embedded data with a specific `id` out of `text`.
   	Useful when `text` comes from an external source.
   	*/
   def parse(string: String, id: String): ParseResult = js.native
+  
   /**
   	Extract embedded data corresponding to all IDs in `idArray`, if specified. Otherwise it will extract embedded data for all top-level IDs.
   	@returns An object with a Map with an entry for each parsed ID, and a rest string for what remains after all the required IDs have been parsed, as seen below:
@@ -63,4 +64,3 @@ object ^ extends js.Object {
   def parseAll(string: String): ParseResults = js.native
   def parseAll(string: String, idArray: js.Array[String]): ParseResults = js.native
 }
-

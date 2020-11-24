@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vision/v1", "vision_v1.Resource$Projects$Locations$Products")
 @js.native
 class ResourceProjectsLocationsProducts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var referenceImages: ResourceProjectsLocationsProductsReferenceimages = js.native
+  
   /**
     * vision.projects.locations.products.create
     * @desc Creates and returns a new product resource.  Possible errors:  *
@@ -51,6 +52,7 @@ class ResourceProjectsLocationsProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProduct]
   ): Unit = js.native
+  
   /**
     * vision.projects.locations.products.delete
     * @desc Permanently deletes a product and its reference images.  Metadata
@@ -83,6 +85,7 @@ class ResourceProjectsLocationsProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * vision.projects.locations.products.get
     * @desc Gets information associated with a Product.  Possible errors:  *
@@ -112,6 +115,7 @@ class ResourceProjectsLocationsProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProduct]
   ): Unit = js.native
+  
   /**
     * vision.projects.locations.products.list
     * @desc Lists products in an unspecified order.  Possible errors:  *
@@ -146,6 +150,7 @@ class ResourceProjectsLocationsProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListProductsResponse]
   ): Unit = js.native
+  
   /**
     * vision.projects.locations.products.patch
     * @desc Makes changes to a Product resource. Only the `display_name`,
@@ -187,5 +192,6 @@ class ResourceProjectsLocationsProducts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProduct]
   ): Unit = js.native
+  
+  var referenceImages: ResourceProjectsLocationsProductsReferenceimages = js.native
 }
-

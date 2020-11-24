@@ -2,11 +2,12 @@ package typings.openlayers.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "easing")
 @js.native
 object easing extends js.Object {
+  
   /**
     * Start slow and speed up.
     * @param t Input between 0 and 1.
@@ -14,6 +15,7 @@ object easing extends js.Object {
     * @api
     */
   def easeIn(t: Double): Double = js.native
+  
   /**
     * Start fast and slow down.
     * @param t Input between 0 and 1.
@@ -21,6 +23,7 @@ object easing extends js.Object {
     * @api
     */
   def easeOut(t: Double): Double = js.native
+  
   /**
     * Start slow, speed up, and then slow down again.
     * @param t Input between 0 and 1.
@@ -28,6 +31,7 @@ object easing extends js.Object {
     * @api
     */
   def inAndOut(t: Double): Double = js.native
+  
   /**
     * Maintain a constant speed over time.
     * @param t Input between 0 and 1.
@@ -35,6 +39,7 @@ object easing extends js.Object {
     * @api
     */
   def linear(t: Double): Double = js.native
+  
   /**
     * Start slow, speed up, and at the very end slow down again.  This has the
     * same general behavior as {@link ol.easing.inAndOut}, but the final slowdown
@@ -45,4 +50,3 @@ object easing extends js.Object {
     */
   def upAndDown(t: Double): Double = js.native
 }
-

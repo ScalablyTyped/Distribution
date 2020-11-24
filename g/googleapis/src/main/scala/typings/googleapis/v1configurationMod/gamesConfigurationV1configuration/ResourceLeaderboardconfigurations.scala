@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesConfiguration/v1configuration", "gamesConfiguration_v1configuration.Resource$Leaderboardconfigurations")
 @js.native
 class ResourceLeaderboardconfigurations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gamesConfiguration.leaderboardConfigurations.delete
     * @desc Delete the leaderboard configuration with the given ID.
@@ -41,6 +43,7 @@ class ResourceLeaderboardconfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gamesConfiguration.leaderboardConfigurations.get
     * @desc Retrieves the metadata of the leaderboard configuration with the
@@ -73,6 +76,7 @@ class ResourceLeaderboardconfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLeaderboardConfiguration]
   ): Unit = js.native
+  
   /**
     * gamesConfiguration.leaderboardConfigurations.insert
     * @desc Insert a new leaderboard configuration in this application.
@@ -105,6 +109,7 @@ class ResourceLeaderboardconfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLeaderboardConfiguration]
   ): Unit = js.native
+  
   /**
     * gamesConfiguration.leaderboardConfigurations.list
     * @desc Returns a list of the leaderboard configurations in this
@@ -139,6 +144,7 @@ class ResourceLeaderboardconfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLeaderboardConfigurationListResponse]
   ): Unit = js.native
+  
   /**
     * gamesConfiguration.leaderboardConfigurations.patch
     * @desc Update the metadata of the leaderboard configuration with the given
@@ -172,6 +178,7 @@ class ResourceLeaderboardconfigurations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLeaderboardConfiguration]
   ): Unit = js.native
+  
   /**
     * gamesConfiguration.leaderboardConfigurations.update
     * @desc Update the metadata of the leaderboard configuration with the given
@@ -206,4 +213,3 @@ class ResourceLeaderboardconfigurations protected () extends js.Object {
     callback: BodyResponseCallback[SchemaLeaderboardConfiguration]
   ): Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.sumoLogger.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * You must have an HTTP source created in your Sumo Logic account to use this SDK.
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class ^ protected () extends SumoLogger {
   def this(options: SumoLoggerOptions) = this()
 }
-

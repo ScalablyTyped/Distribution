@@ -3,7 +3,7 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.FeatureLayerViewProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.FeatureLayerView")
 @js.native
@@ -16,4 +16,3 @@ class FeatureLayerViewCls ()
   extends typings.arcgisJsApi.esri.FeatureLayerView {
   def this(properties: FeatureLayerViewProperties) = this()
 }
-

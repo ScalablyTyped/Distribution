@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebasehosting/v1beta1", "firebasehosting_v1beta1.Resource$Sites$Domains")
 @js.native
 class ResourceSitesDomains protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * firebasehosting.sites.domains.create
     * @desc Creates a domain mapping on the specified site.
@@ -42,6 +44,7 @@ class ResourceSitesDomains protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDomain]
   ): Unit = js.native
+  
   /**
     * firebasehosting.sites.domains.delete
     * @desc Deletes the existing domain mapping on the specified site.
@@ -70,6 +73,7 @@ class ResourceSitesDomains protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  
   /**
     * firebasehosting.sites.domains.get
     * @desc Gets a domain mapping on the specified site.
@@ -98,6 +102,7 @@ class ResourceSitesDomains protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDomain]
   ): Unit = js.native
+  
   /**
     * firebasehosting.sites.domains.list
     * @desc Lists the domains for the specified site.
@@ -128,6 +133,7 @@ class ResourceSitesDomains protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListDomainsResponse]
   ): Unit = js.native
+  
   /**
     * firebasehosting.sites.domains.update
     * @desc Updates the specified domain mapping, creating the mapping as if it
@@ -159,4 +165,3 @@ class ResourceSitesDomains protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDomain]
   ): Unit = js.native
 }
-

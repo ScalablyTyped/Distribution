@@ -2,15 +2,15 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxRadioButton control.
   */
 @js.native
 trait ASPxClientRadioButton extends ASPxClientCheckBox
-
 object ASPxClientRadioButton {
+  
   @scala.inline
   def apply(
     AdjustControl: () => Unit,
@@ -59,4 +59,3 @@ object ASPxClientRadioButton {
     __obj.asInstanceOf[ASPxClientRadioButton]
   }
 }
-

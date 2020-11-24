@@ -12,7 +12,7 @@ Return a normally-distributed random variate.
 | Keywords           | normally, distributed, variate, random, randomly, randomize, chance, test, dice, mock |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 5136 |
+| # downloads        | 13703 |
 | # stars            | 0 |
 
 ## Links

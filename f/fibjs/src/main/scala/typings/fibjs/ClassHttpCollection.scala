@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClassHttpCollection extends ClassObject {
+  
   /**
     * 
     * @brief 添加一个键值数据，添加数据并不修改已存在的键值的数据
@@ -30,6 +31,7 @@ trait ClassHttpCollection extends ClassObject {
     * 
     */
   def add(name: String, value: js.Any): Unit = js.native
+  
   /**
     * 
     * @brief 查询指定键值的全部值
@@ -40,6 +42,7 @@ trait ClassHttpCollection extends ClassObject {
     * 
     */
   def all(name: String): js.Array[_] = js.native
+  
   /**
     * 
     * @brief 清除容器数据
@@ -47,6 +50,7 @@ trait ClassHttpCollection extends ClassObject {
     * 
     */
   def clear(): Unit = js.native
+  
   /**
     * 
     * @brief 查询指定键值的第一个值
@@ -57,6 +61,7 @@ trait ClassHttpCollection extends ClassObject {
     * 
     */
   def first(name: String): js.Any = js.native
+  
   /**
     * 
     * @brief 检查容器内是否存在指定键值的数据
@@ -67,6 +72,7 @@ trait ClassHttpCollection extends ClassObject {
     * 
     */
   def has(name: String): Boolean = js.native
+  
   /**
     * 
     * @brief 删除指定键值的全部值
@@ -76,6 +82,7 @@ trait ClassHttpCollection extends ClassObject {
     * 
     */
   def remove(name: String): Unit = js.native
+  
   /**
     * 
     * @brief 设定一个键值数据，设定数据将修改键值所对应的第一个数值，并清除相同键值的其余数据
@@ -96,4 +103,3 @@ trait ClassHttpCollection extends ClassObject {
     */
   def set(name: String, value: js.Any): Unit = js.native
 }
-

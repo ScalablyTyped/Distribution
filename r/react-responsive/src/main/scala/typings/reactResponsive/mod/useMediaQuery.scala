@@ -3,11 +3,12 @@ package typings.reactResponsive.mod
 import typings.reactResponsive.anon.PartialMediaQueryAllQueryAll
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-responsive", "useMediaQuery")
 @js.native
 object useMediaQuery extends js.Object {
+  
   def apply(settings: PartialMediaQueryAllQueryAll): Boolean = js.native
   def apply(
     settings: PartialMediaQueryAllQueryAll,
@@ -21,4 +22,3 @@ object useMediaQuery extends js.Object {
     callback: js.Function1[/* matches */ Boolean, Unit]
   ): Boolean = js.native
 }
-

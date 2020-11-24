@@ -12,7 +12,7 @@ A simple parser for Git diffs
 | Keywords           | git, diff, patch, parse |
 | # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 2848 |
+| # downloads        | 6310 |
 | # stars            | 0 |
 
 ## Links

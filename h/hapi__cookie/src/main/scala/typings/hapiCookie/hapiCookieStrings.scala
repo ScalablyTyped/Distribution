@@ -2,9 +2,28 @@ package typings.hapiCookie
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hapiCookieStrings {
+  
+  @scala.inline
+  def base64: base64 = "base64".asInstanceOf[base64]
+  
+  @scala.inline
+  def base64json: base64json = "base64json".asInstanceOf[base64json]
+  
+  @scala.inline
+  def cookie: cookie = "cookie".asInstanceOf[cookie]
+  
+  @scala.inline
+  def form: form = "form".asInstanceOf[form]
+  
+  @scala.inline
+  def iron: iron = "iron".asInstanceOf[iron]
+  
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  
   @js.native
   sealed trait base64 extends js.Object
   
@@ -22,18 +41,4 @@ object hapiCookieStrings {
   
   @js.native
   sealed trait none extends js.Object
-  
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def base64json: base64json = "base64json".asInstanceOf[base64json]
-  @scala.inline
-  def cookie: cookie = "cookie".asInstanceOf[cookie]
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
-  @scala.inline
-  def iron: iron = "iron".asInstanceOf[iron]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
 }
-

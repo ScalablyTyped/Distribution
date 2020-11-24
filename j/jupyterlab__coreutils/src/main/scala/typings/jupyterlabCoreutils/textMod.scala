@@ -2,13 +2,15 @@ package typings.jupyterlabCoreutils
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/coreutils/lib/text", JSImport.Namespace)
 @js.native
 object textMod extends js.Object {
+  
   @js.native
   object Text extends js.Object {
+    
     /**
       * Given a 'snake-case', 'snake_case', 'snake:case', or
       * 'snake case' string, will return the camel case version: 'snakeCase'.
@@ -22,6 +24,7 @@ object textMod extends js.Object {
       */
     def camelCase(str: String): String = js.native
     def camelCase(str: String, upper: Boolean): String = js.native
+    
     /**
       * Convert a unicode character offset to a javascript string index.
       *
@@ -32,6 +35,7 @@ object textMod extends js.Object {
       * @returns The js-native index
       */
     def charIndexToJsIndex(charIdx: Double, text: String): Double = js.native
+    
     /**
       * Convert a javascript string index into a unicode character offset
       *
@@ -42,6 +46,7 @@ object textMod extends js.Object {
       * @returns The unicode character offset
       */
     def jsIndexToCharIndex(jsIdx: Double, text: String): Double = js.native
+    
     /**
       * Given a string, title case the words in the string.
       *
@@ -51,6 +56,4 @@ object textMod extends js.Object {
       */
     def titleCase(str: String): String = js.native
   }
-  
 }
-

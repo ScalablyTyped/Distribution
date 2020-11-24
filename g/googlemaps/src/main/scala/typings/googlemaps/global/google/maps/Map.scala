@@ -4,7 +4,7 @@ import typings.googlemaps.google.maps.MapOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map Maps JavaScript API} */
 @JSGlobal("google.maps.Map")
@@ -18,4 +18,3 @@ class Map[E /* <: Element */] protected ()
   def this(mapDiv: E) = this()
   def this(mapDiv: E, opts: MapOptions) = this()
 }
-

@@ -11,11 +11,12 @@ import typings.typescript.mod.TsConfigSourceFile
 import typings.typescript.mod.WatchOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.parseJsonSourceFileConfigFileContent")
 @js.native
 object parseJsonSourceFileConfigFileContent extends js.Object {
+  
   def apply(
     sourceFile: TsConfigSourceFile,
     host: ParseConfigHost,
@@ -28,4 +29,3 @@ object parseJsonSourceFileConfigFileContent extends js.Object {
     existingWatchOptions: js.UndefOr[WatchOptions]
   ): ParsedCommandLine = js.native
 }
-

@@ -2,11 +2,12 @@ package typings.parse.mod.global.Parse.Cloud
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Parse.Cloud.startJob")
 @js.native
 object startJob extends js.Object {
+  
   /**
     * Starts a given cloud job, which will process asynchronously.
     * @param jobName The function name.
@@ -15,4 +16,3 @@ object startJob extends js.Object {
     */
   def apply(jobName: String, data: js.Any): js.Promise[String] = js.native
 }
-

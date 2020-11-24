@@ -118,19 +118,11 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ojOption extends JetElement[ojOptionSettableProperties] {
-  var disabled: Boolean = js.native
-  var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
-  var onValueChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[
-      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any
-    ], 
-    _
-  ]) | Null = js.native
-  var value: js.Any = js.native
+  
   def addEventListener(
     `type`: valueChanged,
     listener: js.ThisFunction1[
@@ -938,17 +930,33 @@ trait ojOption extends JetElement[ojOptionSettableProperties] {
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var disabled: Boolean = js.native
+  
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_disabled(property: disabled): Boolean = js.native
   @JSName("getProperty")
   def getProperty_value(property: value): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any = js.native
+  
+  var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
+  
+  var onValueChanged: (js.Function1[
+    /* event */ JetElementCustomEvent[
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any
+    ], 
+    _
+  ]) | Null = js.native
+  
   def refresh(): Unit = js.native
+  
   def setProperties(properties: ojOptionSettablePropertiesLenient): Unit = js.native
+  
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojOptionSettableProperties]): Unit = js.native
   @JSName("setProperty")
   def setProperty_disabled(property: disabled, value: Boolean): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value, value: js.Any): Unit = js.native
+  
+  var value: js.Any = js.native
 }
-

@@ -5,11 +5,12 @@ import typings.winrt.Windows.Storage.FileProperties.ThumbnailOptions
 import typings.winrt.Windows.Storage.Search.IStorageQueryResultBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Storage.BulkAccess")
 @js.native
 object BulkAccess extends js.Object {
+  
   @js.native
   class FileInformation ()
     extends typings.winrt.Windows.Storage.BulkAccess.FileInformation
@@ -37,6 +38,4 @@ object BulkAccess extends js.Object {
   @js.native
   class FolderInformation ()
     extends typings.winrt.Windows.Storage.BulkAccess.FolderInformation
-  
 }
-

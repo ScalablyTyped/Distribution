@@ -2,7 +2,7 @@ package typings.babylonjs.gamepadsIndexMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Gamepads/index", "DaydreamController")
 @js.native
@@ -14,22 +14,23 @@ class DaydreamController protected ()
     */
   def this(vrGamepad: js.Any) = this()
 }
-
 /* static members */
 @JSImport("babylonjs/Gamepads/index", "DaydreamController")
 @js.native
 object DaydreamController extends js.Object {
+  
   /**
     * Gamepad Id prefix used to identify Daydream Controller.
     */
   val GAMEPAD_ID_PREFIX: String = js.native
+  
   /**
     * Base Url for the controller model.
     */
   var MODEL_BASE_URL: String = js.native
+  
   /**
     * File name for the controller model.
     */
   var MODEL_FILENAME: String = js.native
 }
-

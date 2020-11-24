@@ -3,7 +3,7 @@ package typings.roslib.mod
 import typings.roslib.anon.AngularThres
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("roslib", "TFClient")
 @js.native
@@ -24,21 +24,25 @@ class TFClient protected () extends js.Object {
     *   * repubServiceName (optional) - the name of the republish_tfs service (non groovy compatibility mode only) default: '/republish_tfs'
     */
   def this(options: AngularThres) = this()
+  
   /**
     * Unsubscribe and unadvertise all topics associated with this TFClient.
     */
   def dispose(): Unit = js.native
+  
   /**
     * Process the service response and subscribe to the tf republisher topic.
     *
     * @param response - the service response containing the topic name
     */
   def processResponse(response: js.Any): Unit = js.native
+  
   /**
     * Process the incoming TF message and send them out using the callback functions
     * @param tf - the TF message from the server
     */
   def processTfArray(tf: js.Any): Unit = js.native
+  
   /**
     * Subscribe to the given TF frame.
     * @param frameId - the TF frame to subscribe to
@@ -46,6 +50,7 @@ class TFClient protected () extends js.Object {
     *  * transform - the transform data
     */
   def subscribe(frameId: String, callback: js.Function1[/* transform */ Transform, Unit]): Unit = js.native
+  
   /**
     * Unsubscribe from the given TF frame.
     *
@@ -54,9 +59,9 @@ class TFClient protected () extends js.Object {
     */
   def unsubscribe(frameId: String): Unit = js.native
   def unsubscribe(frameId: String, callback: js.Function1[/* transform */ Transform, Unit]): Unit = js.native
+  
   /**
     * Create and send a new goal (or service request) to the tf2_web_republisher based on the current list of TFs.
     */
   def updateGoal(): Unit = js.native
 }
-

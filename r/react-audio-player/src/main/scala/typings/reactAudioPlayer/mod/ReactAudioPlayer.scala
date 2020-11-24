@@ -4,14 +4,17 @@ import typings.react.mod.Component
 import typings.std.HTMLAudioElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ReactAudioPlayer
   extends Component[ReactAudioPlayerProps, js.Any, js.Any] {
+  
   var audioEl: HTMLAudioElement = js.native
+  
   def clearListenTrack(): Unit = js.native
+  
   def setListenTrack(): Unit = js.native
+  
   def updateVolume(volume: Double): Unit = js.native
 }
-

@@ -3,11 +3,12 @@ package typings.needle.mod
 import typings.needle.mod.core.NeedleReadonlyHttpVerbs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("needle", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Calling needle() directly returns a Promise.
     *
@@ -35,4 +36,3 @@ object ^ extends js.Object {
   def apply(method: NeedleReadonlyHttpVerbs, url: String): js.Promise[typings.needle.mod.core.NeedleResponse] = js.native
   def apply(method: NeedleReadonlyHttpVerbs, url: String, options: typings.needle.mod.core.NeedleOptions): js.Promise[typings.needle.mod.core.NeedleResponse] = js.native
 }
-

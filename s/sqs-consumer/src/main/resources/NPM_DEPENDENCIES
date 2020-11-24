@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sqs-consumer" : "5.4.0"
+      "sqs-consumer" : "5.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "sqs-consumer" : "5.4.0"
+      "sqs-consumer" : "5.5.0"
     }
   ],
   "compile-devDependencies" : [

@@ -10,9 +10,9 @@ Is this value a JS regex? Works cross-realm/iframe, and despite ES6 @@toStringTa
 | ------------------ | :-------------: |
 | Full name          | is-regex |
 | Keywords           | regex, regexp, is, regular expression, regular, expression |
-| # releases         | 2 |
-| # dependents       | 89 |
-| # downloads        | 639715621 |
+| # releases         | 4 |
+| # dependents       | 93 |
+| # downloads        | 681494459 |
 | # stars            | 2 |
 
 ## Links

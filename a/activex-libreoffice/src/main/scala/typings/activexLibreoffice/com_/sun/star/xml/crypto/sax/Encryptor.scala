@@ -5,7 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Service of {@link Encryptor} */
 @js.native
@@ -17,8 +17,8 @@ trait Encryptor
      with XKeyCollector
      with XMissionTaker
      with XInitialization
-
 object Encryptor {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -38,4 +38,3 @@ object Encryptor {
     __obj.asInstanceOf[Encryptor]
   }
 }
-

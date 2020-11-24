@@ -12,14 +12,17 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("is-typedarray", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   def apply(candidate: js.Any): /* is is-typedarray.is-typedarray.TypedArray */ Boolean = js.native
+  
   def loose(candidate: js.Any): /* is is-typedarray.is-typedarray.TypedArray */ Boolean = js.native
+  
   def strict(candidate: js.Any): /* is is-typedarray.is-typedarray.TypedArray */ Boolean = js.native
+  
   type TypedArray = Int8Array | Int16Array | Int32Array | Uint8Array | Uint8ClampedArray | Uint16Array | Uint32Array | Float32Array | Float64Array | Buffer
 }
-

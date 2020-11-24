@@ -3,11 +3,12 @@ package typings.balancedMatch.mod
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("balanced-match", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     *
     * For the first non-nested matching pair of a and b in str, return an object with those keys:
@@ -26,4 +27,3 @@ object ^ extends js.Object {
   def apply(a: RegExp, b: String, str: String): Output | Unit = js.native
   def apply(a: RegExp, b: RegExp, str: String): Output | Unit = js.native
 }
-

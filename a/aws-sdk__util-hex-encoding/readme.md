@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-hex-encoding
 
-Typings are for version 0.1.0-preview.1
+Typings are for version 1.0.0-rc.3
 
 ## Library description:
 Converts binary buffers to and from lowercase hexadecimal encoding
@@ -10,12 +10,15 @@ Converts binary buffers to and from lowercase hexadecimal encoding
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-hex-encoding |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 5 |
-| # downloads        | 950023 |
+| # releases         | 20 |
+| # dependents       | 9 |
+| # downloads        | 6811056 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/master/packages/util-hex-encoding)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Futil-hex-encoding)
     
 

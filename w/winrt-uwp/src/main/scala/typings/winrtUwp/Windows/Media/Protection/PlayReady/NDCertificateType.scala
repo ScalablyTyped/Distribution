@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait NDCertificateType extends js.Object
-
 /** Indicates the type and purpose of a PlayReady-ND transmitter license. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDCertificateType")
 @js.native
 object NDCertificateType extends js.Object {
+  
   /** A leaf level certificate for a PlayReady client. */
   @js.native
   sealed trait application extends NDCertificateType
@@ -62,6 +62,4 @@ object NDCertificateType extends js.Object {
   /** An unknown certificate type. Apps should never use this value. */
   @js.native
   sealed trait unknown extends NDCertificateType
-  
 }
-

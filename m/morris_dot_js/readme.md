@@ -11,8 +11,8 @@ Easy, pretty charts
 | Full name          | morris.js |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 936416 |
+| # dependents       | 17 |
+| # downloads        | 1044369 |
 | # stars            | 1 |
 
 ## Links

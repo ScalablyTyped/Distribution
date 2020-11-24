@@ -2,7 +2,7 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Binding data (flyweight) for a particular node that is shared between all templates
@@ -17,9 +17,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TNode extends js.Object {
+  
   /**
-    * Attributes associated with an element. We need to store attributes to support various use-cases
-    * (attribute injection, content projection with selectors, directives matching).
+    * Attributes associated with an element. We need to store attributes to support various
+    * use-cases (attribute injection, content projection with selectors, directives matching).
     * Attributes are stored statically because reading them from the DOM would be way too slow for
     * content projection and queries.
     *
@@ -32,6 +33,7 @@ trait TNode extends js.Object {
     * namespaces, attributes extracted from bindings and outputs).
     */
   var attrs: TAttributes | Null = js.native
+  
   /**
     * First child of the current node.
     *
@@ -39,6 +41,7 @@ trait TNode extends js.Object {
     * For embedded view nodes, the child will be in their child view.
     */
   var child: TNode | Null = js.native
+  
   /**
     * Stores the head/tail index of the class bindings.
     *
@@ -53,6 +56,7 @@ trait TNode extends js.Object {
     * inserted so that they can be sorted in priority order.
     */
   var classBindings: TStylingRange = js.native
+  
   /**
     * A collection of all class static values for an element (including from host).
     *
@@ -63,26 +67,36 @@ trait TNode extends js.Object {
     *   (e.g. `@Directive({host: {class: "SOME_CLASS" } }`)
     */
   var classes: String | Null = js.native
+  
   /**
     * A collection of all class static values for an element excluding host sources.
     *
     * Populated when there are one or more initial classes on an element
     * (e.g. `<div class="SOME_CLASS">`)
     * Must be stored separately from `tNode.classes` to facilitate setting directive
-    * inputs that shadow the `class` property. If we used `tNode.classes` as is for shadowed inputs,
-    * we would feed host classes back into directives as "inputs". If we used `tNode.attrs`, we would
-    * have to concatenate the attributes on every template pass. Instead, we process once on first
-    * create pass and store here.
+    * inputs that shadow the `class` property. If we used `tNode.classes` as is for shadowed
+    * inputs, we would feed host classes back into directives as "inputs". If we used
+    * `tNode.attrs`, we would have to concatenate the attributes on every template pass. Instead,
+    * we process once on first create pass and store here.
     */
   var classesWithoutHost: String | Null = js.native
+  
   /**
     * Stores final exclusive index of the directives.
+    *
+    * The area right behind the `directiveStart-directiveEnd` range is used to allocate the
+    * `HostBindingFunction` `vars` (or null if no bindings.) Therefore `directiveEnd` is used to set
+    * `LFrame.bindingRootIndex` before `HostBindingFunction` is executed.
     */
   var directiveEnd: Double = js.native
+  
   /**
     * Stores starting index of the directives.
+    *
+    * NOTE: The first directive is always component (if present).
     */
   var directiveStart: Double = js.native
+  
   /**
     * Stores the last directive which had a styling instruction.
     *
@@ -92,18 +106,21 @@ trait TNode extends js.Object {
     *
     * Valid values are:
     * - `-1` No `hostBindings` instruction has executed.
-    * - `directiveStart <= directiveStylingLast < directiveEnd`: Points to the `DirectiveDef` of the
-    *   last styling instruction which executed in the `hostBindings`.
+    * - `directiveStart <= directiveStylingLast < directiveEnd`: Points to the `DirectiveDef` of
+    * the last styling instruction which executed in the `hostBindings`.
     *
     * This data is needed so that styling instructions know which static styling data needs to be
     * collected from the `DirectiveDef.hostAttrs`. A styling instruction needs to collect all data
     * since last styling instruction.
     */
   var directiveStylingLast: Double = js.native
+  
   /**
-    * Stores if Node isComponent, isProjected, hasContentQuery, hasClassInput and hasStyleInput etc.
+    * Stores if Node isComponent, isProjected, hasContentQuery, hasClassInput and hasStyleInput
+    * etc.
     */
   var flags: TNodeFlags = js.native
+  
   /**
     * Index of the TNode in TView.data and corresponding native element in LView.
     *
@@ -113,27 +130,85 @@ trait TNode extends js.Object {
     * If index is -1, this is a dynamically created container node or embedded view node.
     */
   var index: Double = js.native
+  
   /** Information about input properties that need to be set once from attribute data. */
   var initialInputs: js.UndefOr[InitialInputData | Null] = js.native
+  
   /**
     * The index of the closest injector in this node's LView.
     *
     * If the index === -1, there is no injector on this node or any ancestor node in this view.
     *
-    * If the index !== -1, it is the index of this node's injector OR the index of a parent injector
-    * in the same view. We pass the parent injector index down the node tree of a view so it's
-    * possible to find the parent injector without walking a potentially deep node tree. Injector
-    * indices are not set across view boundaries because there could be multiple component hosts.
+    * If the index !== -1, it is the index of this node's injector OR the index of a parent
+    * injector in the same view. We pass the parent injector index down the node tree of a view so
+    * it's possible to find the parent injector without walking a potentially deep node tree.
+    * Injector indices are not set across view boundaries because there could be multiple component
+    * hosts.
     *
     * If tNode.injectorIndex === tNode.parent.injectorIndex, then the index belongs to a parent
     * injector.
     */
   var injectorIndex: Double = js.native
+  
   /**
     * Input data for all directives on this node. `null` means that there are no directives with
     * inputs on this node.
     */
   var inputs: PropertyAliases | Null = js.native
+  
+  /**
+    * Insert before existing DOM node index.
+    *
+    * When DOM nodes are being inserted, normally they are being appended as they are created.
+    * Under i18n case, the translated text nodes are created ahead of time as part of the
+    * `ɵɵi18nStart` instruction which means that this `TNode` can't just be appended and instead
+    * needs to be inserted using `insertBeforeIndex` semantics.
+    *
+    * Additionally sometimes it is necessary to insert new text nodes as a child of this `TNode`. In
+    * such a case the value stores an array of text nodes to insert.
+    *
+    * Example:
+    * ```
+    * <div i18n>
+    *   Hello <span>World</span>!
+    * </div>
+    * ```
+    * In the above example the `ɵɵi18nStart` instruction can create `Hello `, `World` and `!` text
+    * nodes. It can also insert `Hello ` and `!` text node as a child of `<div>`, but it can't
+    * insert `World` because the `<span>` node has not yet been created. In such a case the
+    * `<span>` `TNode` will have an array which will direct the `<span>` to not only insert
+    * itself in front of `!` but also to insert the `World` (created by `ɵɵi18nStart`) into
+    * `<span>` itself.
+    *
+    * Pseudo code:
+    * ```
+    *   if (insertBeforeIndex === null) {
+    *     // append as normal
+    *   } else if (Array.isArray(insertBeforeIndex)) {
+    *     // First insert current `TNode` at correct location
+    *     const currentNode = lView[this.index];
+    *     parentNode.insertBefore(currentNode, lView[this.insertBeforeIndex[0]]);
+    *     // Now append all of the children
+    *     for(let i=1; i<this.insertBeforeIndex; i++) {
+    *       currentNode.appendChild(lView[this.insertBeforeIndex[i]]);
+    *     }
+    *   } else {
+    *     parentNode.insertBefore(lView[this.index], lView[this.insertBeforeIndex])
+    *   }
+    * ```
+    * - null: Append as normal using `parentNode.appendChild`
+    * - `number`: Append using
+    *      `parentNode.insertBefore(lView[this.index], lView[this.insertBeforeIndex])`
+    *
+    * *Initialization*
+    *
+    * Because `ɵɵi18nStart` executes before nodes are created, on `TView.firstCreatePass` it is not
+    * possible for `ɵɵi18nStart` to set the `insertBeforeIndex` value as the corresponding `TNode`
+    * has not yet been created. For this reason the `ɵɵi18nStart` creates a `TNodeType.Placeholder`
+    * `TNode` at that location. See `TNodeType.Placeholder` for more information.
+    */
+  var insertBeforeIndex: InsertBeforeIndex = js.native
+  
   /**
     * A set of local names under which a given element is exported in a template and
     * visible to queries. An entry in this array can be created for different reasons:
@@ -152,6 +227,7 @@ trait TNode extends js.Object {
     * - `<div #foo #bar="directiveExportAs">` => `["foo", -1, "bar", directiveIdx]`
     */
   var localNames: (js.Array[String | Double]) | Null = js.native
+  
   /**
     * Same as `TNode.attrs` but contains merged data across all directive host bindings.
     *
@@ -164,16 +240,19 @@ trait TNode extends js.Object {
     * - Template `TNode.attrs` associated with the current `TNode`.
     */
   var mergedAttrs: TAttributes | Null = js.native
+  
   /**
     * The next sibling node. Necessary so we can propagate through the root nodes of a view
     * to insert them or remove them from the DOM.
     */
   var next: TNode | Null = js.native
+  
   /**
     * Output data for all directives on this node. `null` means that there are no directives with
     * outputs on this node.
     */
   var outputs: PropertyAliases | Null = js.native
+  
   /**
     * Parent node (in the same view only).
     *
@@ -188,7 +267,8 @@ trait TNode extends js.Object {
     *
     * If this is an inline view node (V), the parent will be its container.
     */
-  var parent: ɵangularPackagesCoreCoreBf | TContainerNode | Null = js.native
+  var parent: ɵangularPackagesCoreCoreBh | TContainerNode | Null = js.native
+  
   /**
     * List of projected TNodes for a given component host element OR index into the said nodes.
     *
@@ -214,8 +294,8 @@ trait TNode extends js.Object {
     *    - `projection` size is equal to the number of projections `<ng-content>`. The size of
     *      `c1` will be `1` because `<child>` has only one `<ng-content>`.
     * - we store `projection` with the host (`c1`, `c2`) rather than the `<ng-content>` (`cont1`)
-    *   because the same component (`<child>`) can be used in multiple locations (`c1`, `c2`) and as
-    *   a result have different set of nodes to project.
+    *   because the same component (`<child>`) can be used in multiple locations (`c1`, `c2`) and
+    * as a result have different set of nodes to project.
     * - without `projection` it would be difficult to efficiently traverse nodes to be projected.
     *
     * If `typeof projection == 'number'` then `TNode` is a `<ng-content>` element:
@@ -229,18 +309,21 @@ trait TNode extends js.Object {
     * projectable nodes during dynamic component creation.
     */
   var projection: (js.Array[TNode | js.Array[RNode]]) | Double | Null = js.native
+  
   /**
-    * The next projected sibling. Since in Angular content projection works on the node-by-node basis
-    * the act of projecting nodes might change nodes relationship at the insertion point (target
-    * view). At the same time we need to keep initial relationship between nodes as expressed in
-    * content view.
+    * The next projected sibling. Since in Angular content projection works on the node-by-node
+    * basis the act of projecting nodes might change nodes relationship at the insertion point
+    * (target view). At the same time we need to keep initial relationship between nodes as
+    * expressed in content view.
     */
   var projectionNext: TNode | Null = js.native
+  
   /**
-    * Stores indexes of property bindings. This field is only set in the ngDevMode and holds indexes
-    * of property bindings so TestBed can get bound property metadata for a given node.
+    * Stores indexes of property bindings. This field is only set in the ngDevMode and holds
+    * indexes of property bindings so TestBed can get bound property metadata for a given node.
     */
   var propertyBindings: js.Array[Double] | Null = js.native
+  
   /**
     * This number stores two values using its bits:
     *
@@ -248,6 +331,7 @@ trait TNode extends js.Object {
     * - the count of view providers from the component on this node (last 16 bits)
     */
   var providerIndexes: TNodeProviderIndexes = js.native
+  
   /**
     * A `KeyValueArray` version of residual `classes`.
     *
@@ -258,12 +342,13 @@ trait TNode extends js.Object {
     * - `KeyValueArray`: parsed version of `classes`.
     */
   var residualClasses: js.UndefOr[KeyValueArray[_] | Null] = js.native
+  
   /**
     * A `KeyValueArray` version of residual `styles`.
     *
     * When there are styling instructions than each instruction stores the static styling
-    * which is of lower priority than itself. This means that there may be a higher priority styling
-    * than the instruction.
+    * which is of lower priority than itself. This means that there may be a higher priority
+    * styling than the instruction.
     *
     * Imagine:
     * ```
@@ -286,6 +371,7 @@ trait TNode extends js.Object {
     * - `KeyValueArray`: parsed version of `styles`.
     */
   var residualStyles: js.UndefOr[KeyValueArray[_] | Null] = js.native
+  
   /**
     * Stores the head/tail index of the class bindings.
     *
@@ -300,6 +386,7 @@ trait TNode extends js.Object {
     * inserted so that they can be sorted in priority order.
     */
   var styleBindings: TStylingRange = js.native
+  
   /**
     * A collection of all `style` static values for an element (including from host).
     *
@@ -310,6 +397,7 @@ trait TNode extends js.Object {
     *   (e.g. `@Directive({host: {style: "width:200px;" } }`)
     */
   var styles: String | Null = js.native
+  
   /**
     * A collection of all `style` static values for an element excluding host sources.
     *
@@ -317,11 +405,12 @@ trait TNode extends js.Object {
     * (e.g. `<div style="width:200px;">`)
     * Must be stored separately from `tNode.styles` to facilitate setting directive
     * inputs that shadow the `style` property. If we used `tNode.styles` as is for shadowed inputs,
-    * we would feed host styles back into directives as "inputs". If we used `tNode.attrs`, we would
-    * have to concatenate the attributes on every template pass. Instead, we process once on first
-    * create pass and store here.
+    * we would feed host styles back into directives as "inputs". If we used `tNode.attrs`, we
+    * would have to concatenate the attributes on every template pass. Instead, we process once on
+    * first create pass and store here.
     */
   var stylesWithoutHost: String | Null = js.native
+  
   /**
     * The TView or TViews attached to this node.
     *
@@ -343,13 +432,21 @@ trait TNode extends js.Object {
     * If this TNode corresponds to an element, tViews will be null .
     */
   var tViews: TView | js.Array[TView] | Null = js.native
-  /** The tag name associated with this node. */
-  var tagName: String | Null = js.native
+  
   /** The type of the TNode. See TNodeType. */
   var `type`: TNodeType = js.native
+  
+  /**
+    * The value name associated with this node.
+    * if type:
+    *   `TNodeType.Text`: text value
+    *   `TNodeType.Element`: tag name
+    *   `TNodeType.ICUContainer`: `TIcu`
+    */
+  var value: js.Any = js.native
 }
-
 object TNode {
+  
   @scala.inline
   def apply(
     classBindings: TStylingRange,
@@ -361,144 +458,213 @@ object TNode {
     injectorIndex: Double,
     providerIndexes: TNodeProviderIndexes,
     styleBindings: TStylingRange,
-    `type`: TNodeType
+    `type`: TNodeType,
+    value: js.Any
   ): TNode = {
-    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TNode]
   }
+  
   @scala.inline
   implicit class TNodeOps[Self <: TNode] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setClassBindings(value: TStylingRange): Self = this.set("classBindings", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDirectiveEnd(value: Double): Self = this.set("directiveEnd", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDirectiveStart(value: Double): Self = this.set("directiveStart", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDirectiveStylingLast(value: Double): Self = this.set("directiveStylingLast", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFlags(value: TNodeFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setInjectorIndex(value: Double): Self = this.set("injectorIndex", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setProviderIndexes(value: TNodeProviderIndexes): Self = this.set("providerIndexes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStyleBindings(value: TStylingRange): Self = this.set("styleBindings", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: TNodeType): Self = this.set("type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = this.set("attrs", js.Array(value :_*))
+    
     @scala.inline
     def setAttrs(value: TAttributes): Self = this.set("attrs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAttrsNull: Self = this.set("attrs", null)
+    
     @scala.inline
     def setChild(value: TNode): Self = this.set("child", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setChildNull: Self = this.set("child", null)
+    
     @scala.inline
     def setClasses(value: String): Self = this.set("classes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClassesNull: Self = this.set("classes", null)
+    
     @scala.inline
     def setClassesWithoutHost(value: String): Self = this.set("classesWithoutHost", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClassesWithoutHostNull: Self = this.set("classesWithoutHost", null)
+    
     @scala.inline
     def setInitialInputsVarargs(value: (InitialInputs | Null)*): Self = this.set("initialInputs", js.Array(value :_*))
+    
     @scala.inline
     def setInitialInputs(value: InitialInputData): Self = this.set("initialInputs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteInitialInputs: Self = this.set("initialInputs", js.undefined)
+    
     @scala.inline
     def setInitialInputsNull: Self = this.set("initialInputs", null)
+    
     @scala.inline
     def setInputs(value: PropertyAliases): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setInputsNull: Self = this.set("inputs", null)
+    
+    @scala.inline
+    def setInsertBeforeIndexVarargs(value: Double*): Self = this.set("insertBeforeIndex", js.Array(value :_*))
+    
+    @scala.inline
+    def setInsertBeforeIndex(value: InsertBeforeIndex): Self = this.set("insertBeforeIndex", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setInsertBeforeIndexNull: Self = this.set("insertBeforeIndex", null)
+    
     @scala.inline
     def setLocalNamesVarargs(value: (String | Double)*): Self = this.set("localNames", js.Array(value :_*))
+    
     @scala.inline
     def setLocalNames(value: js.Array[String | Double]): Self = this.set("localNames", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLocalNamesNull: Self = this.set("localNames", null)
+    
     @scala.inline
     def setMergedAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = this.set("mergedAttrs", js.Array(value :_*))
+    
     @scala.inline
     def setMergedAttrs(value: TAttributes): Self = this.set("mergedAttrs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMergedAttrsNull: Self = this.set("mergedAttrs", null)
+    
     @scala.inline
     def setNext(value: TNode): Self = this.set("next", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setNextNull: Self = this.set("next", null)
+    
     @scala.inline
     def setOutputs(value: PropertyAliases): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOutputsNull: Self = this.set("outputs", null)
+    
     @scala.inline
-    def setParent(value: ɵangularPackagesCoreCoreBf | TContainerNode): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setParent(value: ɵangularPackagesCoreCoreBh | TContainerNode): Self = this.set("parent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParentNull: Self = this.set("parent", null)
+    
     @scala.inline
     def setProjectionVarargs(value: (TNode | js.Array[RNode])*): Self = this.set("projection", js.Array(value :_*))
+    
     @scala.inline
     def setProjection(value: (js.Array[TNode | js.Array[RNode]]) | Double): Self = this.set("projection", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setProjectionNull: Self = this.set("projection", null)
+    
     @scala.inline
     def setProjectionNext(value: TNode): Self = this.set("projectionNext", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setProjectionNextNull: Self = this.set("projectionNext", null)
+    
     @scala.inline
     def setPropertyBindingsVarargs(value: Double*): Self = this.set("propertyBindings", js.Array(value :_*))
+    
     @scala.inline
     def setPropertyBindings(value: js.Array[Double]): Self = this.set("propertyBindings", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPropertyBindingsNull: Self = this.set("propertyBindings", null)
+    
     @scala.inline
     def setResidualClasses(value: KeyValueArray[_]): Self = this.set("residualClasses", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResidualClasses: Self = this.set("residualClasses", js.undefined)
+    
     @scala.inline
     def setResidualClassesNull: Self = this.set("residualClasses", null)
+    
     @scala.inline
     def setResidualStyles(value: KeyValueArray[_]): Self = this.set("residualStyles", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteResidualStyles: Self = this.set("residualStyles", js.undefined)
+    
     @scala.inline
     def setResidualStylesNull: Self = this.set("residualStyles", null)
+    
     @scala.inline
     def setStyles(value: String): Self = this.set("styles", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStylesNull: Self = this.set("styles", null)
+    
     @scala.inline
     def setStylesWithoutHost(value: String): Self = this.set("stylesWithoutHost", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setStylesWithoutHostNull: Self = this.set("stylesWithoutHost", null)
+    
     @scala.inline
     def setTViewsVarargs(value: TView*): Self = this.set("tViews", js.Array(value :_*))
+    
     @scala.inline
     def setTViews(value: TView | js.Array[TView]): Self = this.set("tViews", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTViewsNull: Self = this.set("tViews", null)
-    @scala.inline
-    def setTagName(value: String): Self = this.set("tagName", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setTagNameNull: Self = this.set("tagName", null)
   }
-  
 }
-

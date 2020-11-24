@@ -9,14 +9,17 @@ import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AMQPExchange extends EventEmitter {
+  
   def bind(sourceExchange: String, routingKey: String): Unit = js.native
   def bind(sourceExchange: String, routingKey: String, callback: Callback[Unit]): Unit = js.native
+  
   def bind_headers(exchange: String, routing: String): Unit = js.native
   def bind_headers(exchange: String, routing: String, callback: Callback[Unit]): Unit = js.native
+  
   /**
     * ifUnused default: true
     *
@@ -27,6 +30,7 @@ trait AMQPExchange extends EventEmitter {
     * If the exchange has queue bindings the server does not delete it but raises a channel exception instead
     */
   def destroy(ifUnused: Boolean): Unit = js.native
+  
   @JSName("on")
   def on_ack(event: ack, callback: Callback[Unit]): this.type = js.native
   @JSName("on")
@@ -37,6 +41,7 @@ trait AMQPExchange extends EventEmitter {
   def on_exchangeUnbindOk(event: exchangeUnbindOk, callback: Callback[Unit]): this.type = js.native
   @JSName("on")
   def on_open(event: open, callback: Callback[Unit]): this.type = js.native
+  
   def publish(
     routingKey: String,
     message: js.Object,
@@ -61,7 +66,7 @@ trait AMQPExchange extends EventEmitter {
     options: ExchangePublishOptions,
     callback: js.Function2[/* err */ js.UndefOr[Boolean], /* msg */ js.UndefOr[String], Unit]
   ): Unit = js.native
+  
   def unbind(sourceExchange: String, routingKey: String): Unit = js.native
   def unbind(sourceExchange: String, routingKey: String, callback: Callback[Unit]): Unit = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__is-shallow-equal
 
-Typings are for version 2.1.0
+Typings are for version 2.3.0
 
 ## Library description:
 Test for shallow equality between two objects or arrays.
@@ -9,10 +9,10 @@ Test for shallow equality between two objects or arrays.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/is-shallow-equal |
-| Keywords           | wordpress, shallow, shallow-equal, shallowequal |
-| # releases         | 17 |
-| # dependents       | 11 |
-| # downloads        | 187566 |
+| Keywords           | wordpress, gutenberg, shallow, shallow-equal, shallowequal |
+| # releases         | 13 |
+| # dependents       | 15 |
+| # downloads        | 682683 |
 | # stars            | 0 |
 
 ## Links

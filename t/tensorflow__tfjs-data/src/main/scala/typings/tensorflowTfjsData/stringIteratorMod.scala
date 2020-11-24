@@ -3,13 +3,15 @@ package typings.tensorflowTfjsData
 import typings.tensorflowTfjsData.lazyIteratorMod.LazyIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-data/dist/iterators/string_iterator", JSImport.Namespace)
 @js.native
 object stringIteratorMod extends js.Object {
+  
   @js.native
   abstract class StringIterator () extends LazyIterator[String] {
+    
     /**
       * Splits a string stream on a given separator.
       *
@@ -30,6 +32,4 @@ object stringIteratorMod extends js.Object {
       */
     def split(separator: String): StringIterator = js.native
   }
-  
 }
-

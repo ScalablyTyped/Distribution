@@ -2,7 +2,7 @@ package typings.ranjs.mod.dist
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.QExponential")
 @js.native
@@ -12,4 +12,3 @@ class QExponential ()
   def this(q: js.UndefOr[scala.Nothing], lambda: Double) = this()
   def this(q: Double, lambda: Double) = this()
 }
-

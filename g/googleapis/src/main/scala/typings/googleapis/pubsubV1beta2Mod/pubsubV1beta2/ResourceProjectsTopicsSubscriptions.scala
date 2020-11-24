@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/pubsub/v1beta2", "pubsub_v1beta2.Resource$Projects$Topics$Subscriptions")
 @js.native
 class ResourceProjectsTopicsSubscriptions protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * pubsub.projects.topics.subscriptions.list
     * @desc Lists the name of the subscriptions for this topic.
@@ -47,4 +49,3 @@ class ResourceProjectsTopicsSubscriptions protected () extends js.Object {
     callback: BodyResponseCallback[SchemaListTopicSubscriptionsResponse]
   ): Unit = js.native
 }
-

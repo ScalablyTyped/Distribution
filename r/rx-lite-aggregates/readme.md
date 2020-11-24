@@ -11,8 +11,8 @@ Lightweight library with aggregate functions for composing asynchronous and even
 | Full name          | rx-lite-aggregates |
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 133324919 |
+| # dependents       | 32 |
+| # downloads        | 126121516 |
 | # stars            | 1 |
 
 ## Links

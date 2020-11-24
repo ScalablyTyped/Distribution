@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.ApplicationModel.Wallet
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait WalletBarcodeSymbology extends js.Object
-
 /** Represents the barcode symbology types that are supported for a WalletItem . */
 @JSGlobal("Windows.ApplicationModel.Wallet.WalletBarcodeSymbology")
 @js.native
 object WalletBarcodeSymbology extends js.Object {
+  
   /** Uses the Aztec barcode symbology. */
   @js.native
   sealed trait aztec extends WalletBarcodeSymbology
@@ -58,6 +58,4 @@ object WalletBarcodeSymbology extends js.Object {
   /** Uses the UPC-E barcode symbology. */
   @js.native
   sealed trait upce extends WalletBarcodeSymbology
-  
 }
-

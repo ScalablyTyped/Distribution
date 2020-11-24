@@ -8,21 +8,22 @@ import typings.uirouterCore.viewInterfaceMod.ViewConfig
 import typings.uirouterCore.viewInterfaceMod.ViewContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core/lib/view", JSImport.Namespace)
 @js.native
 object viewMod extends js.Object {
+  
   @js.native
   class ViewService protected ()
     extends typings.uirouterCore.viewViewMod.ViewService {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
   }
-  
   /* static members */
   @js.native
   object ViewService extends js.Object {
+    
     /**
       * Given a ui-view and a ViewConfig, determines if they "match".
       *
@@ -81,6 +82,7 @@ object viewMod extends js.Object {
       * @internal
       */
     def matches(uiViewsByFqn: TypedMap[ActiveUIView], uiView: ActiveUIView): js.Function1[/* viewConfig */ ViewConfig, Boolean] = js.native
+    
     /**
       * Normalizes a view's name from a state.views configuration block.
       *
@@ -95,6 +97,4 @@ object viewMod extends js.Object {
     def normalizeUIViewTarget(context: ViewContext): UiViewContextAnchor = js.native
     def normalizeUIViewTarget(context: ViewContext, rawViewName: String): UiViewContextAnchor = js.native
   }
-  
 }
-

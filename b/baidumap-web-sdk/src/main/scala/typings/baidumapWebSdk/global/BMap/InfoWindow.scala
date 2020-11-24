@@ -4,7 +4,7 @@ import typings.baidumapWebSdk.BMap.InfoWindowOptions
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BMap.InfoWindow")
 @js.native
@@ -15,4 +15,3 @@ class InfoWindow protected ()
   def this(content: String, opts: InfoWindowOptions) = this()
   def this(content: HTMLElement, opts: InfoWindowOptions) = this()
 }
-

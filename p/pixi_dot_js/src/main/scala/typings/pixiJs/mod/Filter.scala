@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Filter is a special type of WebGL shader that is applied to the screen.
@@ -152,11 +152,11 @@ class Filter ()
   def this(vertexSrc: String, fragmentSrc: js.UndefOr[scala.Nothing], uniforms: js.Any) = this()
   def this(vertexSrc: String, fragmentSrc: String, uniforms: js.Any) = this()
 }
-
 /* static members */
 @JSImport("pixi.js", "Filter")
 @js.native
 object Filter extends js.Object {
+  
   /**
     * The default fragment shader source
     *
@@ -165,6 +165,7 @@ object Filter extends js.Object {
     * @constant
     */
   val defaultFragmentSrc: String = js.native
+  
   /**
     * The default vertex shader source
     *
@@ -174,4 +175,3 @@ object Filter extends js.Object {
     */
   val defaultVertexSrc: String = js.native
 }
-

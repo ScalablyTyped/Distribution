@@ -12,7 +12,7 @@ Benchmark your event loop
 | Keywords           | benchmark, event, loop |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 324769 |
+| # downloads        | 611580 |
 | # stars            | 1 |
 
 ## Links

@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2", "TransitGatewayPeeringAttachmentAccepter")
 @js.native
@@ -23,11 +23,11 @@ class TransitGatewayPeeringAttachmentAccepter protected ()
   def this(name: String, args: TransitGatewayPeeringAttachmentAccepterArgs) = this()
   def this(name: String, args: TransitGatewayPeeringAttachmentAccepterArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws/ec2", "TransitGatewayPeeringAttachmentAccepter")
 @js.native
 object TransitGatewayPeeringAttachmentAccepter extends js.Object {
+  
   /**
     * Get an existing TransitGatewayPeeringAttachmentAccepter resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -46,10 +46,10 @@ object TransitGatewayPeeringAttachmentAccepter extends js.Object {
     state: TransitGatewayPeeringAttachmentAccepterState,
     opts: CustomResourceOptions
   ): typings.pulumiAws.transitGatewayPeeringAttachmentAccepterMod.TransitGatewayPeeringAttachmentAccepter = js.native
+  
   /**
     * Returns true if the given object is an instance of TransitGatewayPeeringAttachmentAccepter.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/transitGatewayPeeringAttachmentAccepter.TransitGatewayPeeringAttachmentAccepter */ Boolean = js.native
 }
-

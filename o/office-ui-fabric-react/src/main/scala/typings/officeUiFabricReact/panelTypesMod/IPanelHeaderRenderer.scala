@@ -4,10 +4,11 @@ import typings.react.mod.global.JSX.Element
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IPanelHeaderRenderer extends IRenderFunction[IPanelProps] {
+  
   /**
     * @param props - Props given to the panel
     * @param defaultRender - Default header renderer. If using this renderer in code that does not
@@ -24,4 +25,3 @@ trait IPanelHeaderRenderer extends IRenderFunction[IPanelProps] {
   def apply(props: IPanelProps, defaultRender: IPanelHeaderRenderer): Element | Null = js.native
   def apply(props: IPanelProps, defaultRender: IPanelHeaderRenderer, headerTextId: String): Element | Null = js.native
 }
-

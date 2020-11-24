@@ -4,7 +4,7 @@ import typings.awsSdk.applicationautoscalingMod.ClientConfiguration
 import typings.awsSdk.applicationautoscalingMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/browser_default", "ApplicationAutoScaling")
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class ApplicationAutoScaling () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-

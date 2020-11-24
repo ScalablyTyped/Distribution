@@ -2,11 +2,12 @@ package typings.prettyMs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pretty-ms", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   Convert milliseconds to a human readable string: `1337000000` → `15d 11h 23m 20s`.
   @param milliseconds - Milliseconds to humanize.
@@ -39,4 +40,3 @@ object ^ extends js.Object {
   def apply(milliseconds: Double): String = js.native
   def apply(milliseconds: Double, options: Options): String = js.native
 }
-

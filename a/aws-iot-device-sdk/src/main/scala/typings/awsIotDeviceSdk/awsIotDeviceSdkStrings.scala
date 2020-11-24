@@ -2,9 +2,64 @@ package typings.awsIotDeviceSdk
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object awsIotDeviceSdkStrings {
+  
+  @scala.inline
+  def accepted: accepted = "accepted".asInstanceOf[accepted]
+  
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  
+  @scala.inline
+  def connect: connect = "connect".asInstanceOf[connect]
+  
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  
+  @scala.inline
+  def delta: delta = "delta".asInstanceOf[delta]
+  
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  
+  @scala.inline
+  def foreignStateChange: foreignStateChange = "foreignStateChange".asInstanceOf[foreignStateChange]
+  
+  @scala.inline
+  def message: message = "message".asInstanceOf[message]
+  
+  @scala.inline
+  def mqtts: mqtts = "mqtts".asInstanceOf[mqtts]
+  
+  @scala.inline
+  def newest: newest = "newest".asInstanceOf[newest]
+  
+  @scala.inline
+  def offline: offline = "offline".asInstanceOf[offline]
+  
+  @scala.inline
+  def oldest: oldest = "oldest".asInstanceOf[oldest]
+  
+  @scala.inline
+  def reconnect: reconnect = "reconnect".asInstanceOf[reconnect]
+  
+  @scala.inline
+  def rejected: rejected = "rejected".asInstanceOf[rejected]
+  
+  @scala.inline
+  def status: status = "status".asInstanceOf[status]
+  
+  @scala.inline
+  def timeout: timeout = "timeout".asInstanceOf[timeout]
+  
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  
+  @scala.inline
+  def wss: wss = "wss".asInstanceOf[wss]
+  
   @js.native
   sealed trait accepted extends js.Object
   
@@ -58,42 +113,4 @@ object awsIotDeviceSdkStrings {
   
   @js.native
   sealed trait wss extends js.Object
-  
-  @scala.inline
-  def accepted: accepted = "accepted".asInstanceOf[accepted]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def delta: delta = "delta".asInstanceOf[delta]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def foreignStateChange: foreignStateChange = "foreignStateChange".asInstanceOf[foreignStateChange]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def mqtts: mqtts = "mqtts".asInstanceOf[mqtts]
-  @scala.inline
-  def newest: newest = "newest".asInstanceOf[newest]
-  @scala.inline
-  def offline: offline = "offline".asInstanceOf[offline]
-  @scala.inline
-  def oldest: oldest = "oldest".asInstanceOf[oldest]
-  @scala.inline
-  def reconnect: reconnect = "reconnect".asInstanceOf[reconnect]
-  @scala.inline
-  def rejected: rejected = "rejected".asInstanceOf[rejected]
-  @scala.inline
-  def status: status = "status".asInstanceOf[status]
-  @scala.inline
-  def timeout: timeout = "timeout".asInstanceOf[timeout]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
-  @scala.inline
-  def wss: wss = "wss".asInstanceOf[wss]
 }
-

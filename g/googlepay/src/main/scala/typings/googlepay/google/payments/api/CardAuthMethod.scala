@@ -2,7 +2,7 @@ package typings.googlepay.google.payments.api
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Card authentication method enum string.
@@ -46,11 +46,11 @@ import scala.scalajs.js.annotation._
   - typings.googlepay.googlepayStrings.CRYPTOGRAM_3DS
 */
 trait CardAuthMethod extends js.Object
-
 object CardAuthMethod {
+  
   @scala.inline
   def CRYPTOGRAM_3DS: typings.googlepay.googlepayStrings.CRYPTOGRAM_3DS = "CRYPTOGRAM_3DS".asInstanceOf[typings.googlepay.googlepayStrings.CRYPTOGRAM_3DS]
+  
   @scala.inline
   def PAN_ONLY: typings.googlepay.googlepayStrings.PAN_ONLY = "PAN_ONLY".asInstanceOf[typings.googlepay.googlepayStrings.PAN_ONLY]
 }
-

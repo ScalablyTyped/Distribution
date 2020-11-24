@@ -13,12 +13,13 @@ import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import typings.winrtUwp.Windows.Web.Http.HttpCookie
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains classes for managing web accounts and authentication requests as an online identity provider. */
 @JSGlobal("Windows.Security.Authentication.Web.Provider")
 @js.native
 object Provider extends js.Object {
+  
   /** Represents the client view for a web account. Use this to control what information about an account from a provider is available to the client. */
   @js.native
   class WebAccountClientView protected ()
@@ -38,81 +39,28 @@ object Provider extends js.Object {
     def this(viewType: WebAccountClientViewType, applicationCallbackUri: Uri, accountPairwiseId: String) = this()
   }
   
-  /** Provides methods for managing web accounts. */
-  @js.native
-  abstract class WebAccountManager ()
-    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountManager
-  
-  /** Represents an add account operation. */
-  @js.native
-  abstract class WebAccountProviderAddAccountOperation ()
-    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderAddAccountOperation
-  
-  /** Represents a delete account operation. */
-  @js.native
-  abstract class WebAccountProviderDeleteAccountOperation ()
-    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderDeleteAccountOperation
-  
-  /** Represents a get token silently operation. */
-  @js.native
-  abstract class WebAccountProviderGetTokenSilentOperation ()
-    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderGetTokenSilentOperation
-  
-  /** Represents a manage account operation. */
-  @js.native
-  abstract class WebAccountProviderManageAccountOperation ()
-    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderManageAccountOperation
-  
-  /** Represents a request token operation. */
-  @js.native
-  abstract class WebAccountProviderRequestTokenOperation ()
-    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderRequestTokenOperation
-  
-  /** Represents a retrieve cookies operation made by a web account provider. */
-  @js.native
-  abstract class WebAccountProviderRetrieveCookiesOperation ()
-    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderRetrieveCookiesOperation
-  
-  /** Represents a sign out account operation made by a web account provider. */
-  @js.native
-  abstract class WebAccountProviderSignOutAccountOperation ()
-    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderSignOutAccountOperation
-  
-  /** Provides information about a web account provider trigger. */
-  @js.native
-  abstract class WebAccountProviderTriggerDetails ()
-    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderTriggerDetails
-  
-  /** Represents a request for a token from a client to a provider. */
-  @js.native
-  abstract class WebProviderTokenRequest ()
-    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebProviderTokenRequest
-  
-  /** Represents a web provider token response. */
-  @js.native
-  class WebProviderTokenResponse protected ()
-    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebProviderTokenResponse {
-    /**
-      * Creates a new instance of the WebProviderTokenResponse class.
-      * @param webTokenResponse The web token response from the client.
-      */
-    def this(webTokenResponse: WebTokenResponse) = this()
-  }
-  
   /** Represents the levels of information about a web account shown to the client. */
   @js.native
   object WebAccountClientViewType extends js.Object {
-    /* 1 */ val idAndProperties: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountClientViewType.idAndProperties with Double = js.native
-    /* 0 */ val idOnly: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountClientViewType.idOnly with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
         typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountClientViewType with Double
       ] = js.native
+    
+    /* 1 */ val idAndProperties: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountClientViewType.idAndProperties with Double = js.native
+    
+    /* 0 */ val idOnly: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountClientViewType.idOnly with Double = js.native
   }
   
+  /** Provides methods for managing web accounts. */
+  @js.native
+  abstract class WebAccountManager ()
+    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountManager
   /* static members */
   @js.native
   object WebAccountManager extends js.Object {
+    
     /**
       * Adds a new web account asynchronously with three inputs.
       * @param webAccountId The Id for the web account.
@@ -135,6 +83,7 @@ object Provider extends js.Object {
       props: IMapView[String, String],
       scope: WebAccountScope
     ): IPromiseWithIAsyncOperation[WebAccount] = js.native
+    
     /**
       * Clears the view for a web account.
       * @param webAccount The web account to clear the view for.
@@ -142,35 +91,41 @@ object Provider extends js.Object {
       * @return This method does not return a value.
       */
     def clearViewAsync(webAccount: WebAccount, applicationCallbackUri: Uri): IPromiseWithIAsyncAction = js.native
+    
     /**
       * Clears a web account picture asynchronously.
       * @param webAccount The web account to clear the picture from.
       * @return This method does not return a value.
       */
     def clearWebAccountPictureAsync(webAccount: WebAccount): IPromiseWithIAsyncAction = js.native
+    
     /**
       * Deletes a web account asynchronously.
       * @param webAccount The WebAccount to delete.
       * @return This method does not return a value.
       */
     def deleteWebAccountAsync(webAccount: WebAccount): IPromiseWithIAsyncAction = js.native
+    
     /**
       * Finds all provider web accounts asynchronously.
       * @return When this method completes, it returns all provider web accounts.
       */
     def findAllProviderWebAccountsAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+    
     /**
       * Gets the scope of the web account.
       * @param webAccount The web account to get scope for.
       * @return The scope of the web account.
       */
     def getScope(webAccount: WebAccount): WebAccountScope = js.native
+    
     /**
       * Gets the views for a web account asynchronously.
       * @param webAccount The web account to get views for.
       * @return When this method completes, it returns the views for the web account.
       */
     def getViewsAsync(webAccount: WebAccount): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+    
     /**
       * Pulls cookies asynchronously. Use this to enable single sign-on in an app after a user has entered their credentials into a web browser.
       * @param uriString The Uri to pull cookies from.
@@ -178,6 +133,7 @@ object Provider extends js.Object {
       * @return This method does not return a value.
       */
     def pullCookiesAsync(uriString: String, callerPFN: String): IPromiseWithIAsyncAction = js.native
+    
     /**
       * Pushes cookies asynchronously. Use this to enable single sign-on for a web account in a browser after the user has entered their credentials into the app.
       * @param uri The Uri to push the cookies to.
@@ -185,6 +141,7 @@ object Provider extends js.Object {
       * @return This method does not return a value.
       */
     def pushCookiesAsync(uri: Uri, cookies: IVectorView[HttpCookie]): IPromiseWithIAsyncAction = js.native
+    
     /**
       * Sets the scope of a web account asynchronously.
       * @param webAccount The web account to set scope for.
@@ -192,6 +149,7 @@ object Provider extends js.Object {
       * @return This method does not return a value.
       */
     def setScopeAsync(webAccount: WebAccount, scope: WebAccountScope): IPromiseWithIAsyncAction = js.native
+    
     /**
       * Sets the view for a web account asynchronously.
       * @param webAccount The web account to set the view for.
@@ -202,6 +160,7 @@ object Provider extends js.Object {
       webAccount: WebAccount,
       view: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountClientView
     ): IPromiseWithIAsyncAction = js.native
+    
     /**
       * Sets the picture of a web account asynchronously.
       * @param webAccount The web account to set the picture for.
@@ -209,6 +168,7 @@ object Provider extends js.Object {
       * @return This method does not return a value.
       */
     def setWebAccountPictureAsync(webAccount: WebAccount, webAccountPicture: IRandomAccessStream): IPromiseWithIAsyncAction = js.native
+    
     /**
       * Updates the properties of a web account asynchronously.
       * @param webAccount The web account to update.
@@ -219,43 +179,111 @@ object Provider extends js.Object {
     def updateWebAccountPropertiesAsync(webAccount: WebAccount, webAccountUserName: String, additionalProperties: IMapView[String, String]): IPromiseWithIAsyncAction = js.native
   }
   
+  /** Represents an add account operation. */
+  @js.native
+  abstract class WebAccountProviderAddAccountOperation ()
+    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderAddAccountOperation
+  
+  /** Represents a delete account operation. */
+  @js.native
+  abstract class WebAccountProviderDeleteAccountOperation ()
+    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderDeleteAccountOperation
+  
+  /** Represents a get token silently operation. */
+  @js.native
+  abstract class WebAccountProviderGetTokenSilentOperation ()
+    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderGetTokenSilentOperation
+  
+  /** Represents a manage account operation. */
+  @js.native
+  abstract class WebAccountProviderManageAccountOperation ()
+    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderManageAccountOperation
+  
   /** Represents different operations a web account provider can perform. Use this to determine what operation to perform when the provider is activated. */
   @js.native
   object WebAccountProviderOperationKind extends js.Object {
-    /* 2 */ val addAccount: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.addAccount with Double = js.native
-    /* 4 */ val deleteAccount: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.deleteAccount with Double = js.native
-    /* 1 */ val getTokenSilently: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.getTokenSilently with Double = js.native
-    /* 3 */ val manageAccount: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.manageAccount with Double = js.native
-    /* 0 */ val requestToken: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.requestToken with Double = js.native
-    /* 5 */ val retrieveCookies: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.retrieveCookies with Double = js.native
-    /* 6 */ val signOutAccount: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.signOutAccount with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
         typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind with Double
       ] = js.native
+    
+    /* 2 */ val addAccount: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.addAccount with Double = js.native
+    
+    /* 4 */ val deleteAccount: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.deleteAccount with Double = js.native
+    
+    /* 1 */ val getTokenSilently: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.getTokenSilently with Double = js.native
+    
+    /* 3 */ val manageAccount: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.manageAccount with Double = js.native
+    
+    /* 0 */ val requestToken: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.requestToken with Double = js.native
+    
+    /* 5 */ val retrieveCookies: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.retrieveCookies with Double = js.native
+    
+    /* 6 */ val signOutAccount: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.signOutAccount with Double = js.native
   }
+  
+  /** Represents a request token operation. */
+  @js.native
+  abstract class WebAccountProviderRequestTokenOperation ()
+    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderRequestTokenOperation
+  
+  /** Represents a retrieve cookies operation made by a web account provider. */
+  @js.native
+  abstract class WebAccountProviderRetrieveCookiesOperation ()
+    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderRetrieveCookiesOperation
+  
+  /** Represents a sign out account operation made by a web account provider. */
+  @js.native
+  abstract class WebAccountProviderSignOutAccountOperation ()
+    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderSignOutAccountOperation
+  
+  /** Provides information about a web account provider trigger. */
+  @js.native
+  abstract class WebAccountProviderTriggerDetails ()
+    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderTriggerDetails
   
   /** Represents the scope of a web account. */
   @js.native
   object WebAccountScope extends js.Object {
-    /* 1 */ val perApplication: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountScope.perApplication with Double = js.native
-    /* 0 */ val perUser: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountScope.perUser with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
         typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountScope with Double
       ] = js.native
+    
+    /* 1 */ val perApplication: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountScope.perApplication with Double = js.native
+    
+    /* 0 */ val perUser: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountScope.perUser with Double = js.native
   }
   
   /** Represents web account selection options. Use this to support the use of multiple web accounts in an app, where user might choose to log in with an existing account or add a new account. */
   @js.native
   object WebAccountSelectionOptions extends js.Object {
-    /* 0 */ val default: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountSelectionOptions.default with Double = js.native
-    /* 1 */ val `new`: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountSelectionOptions.`new` with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
         typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountSelectionOptions with Double
       ] = js.native
+    
+    /* 0 */ val default: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountSelectionOptions.default with Double = js.native
+    
+    /* 1 */ val `new`: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountSelectionOptions.`new` with Double = js.native
   }
   
+  /** Represents a request for a token from a client to a provider. */
+  @js.native
+  abstract class WebProviderTokenRequest ()
+    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebProviderTokenRequest
+  
+  /** Represents a web provider token response. */
+  @js.native
+  class WebProviderTokenResponse protected ()
+    extends typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebProviderTokenResponse {
+    /**
+      * Creates a new instance of the WebProviderTokenResponse class.
+      * @param webTokenResponse The web token response from the client.
+      */
+    def this(webTokenResponse: WebTokenResponse) = this()
+  }
 }
-

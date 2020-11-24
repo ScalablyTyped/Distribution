@@ -1,14 +1,17 @@
 package typings.tensorflowTfjsBackendWebgl
 
-import typings.tensorflowTfjsBackendWebgl.backendWebglMod.MathBackendWebGL
+import typings.tensorflowTfjsBackendWebgl.anon.AttrsReshapeAttrs
+import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-webgl/dist/kernel_utils/reshape", JSImport.Namespace)
+@JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/Reshape", JSImport.Namespace)
 @js.native
 object reshapeMod extends js.Object {
-  def reshape(x: TensorInfo, afterShape: js.Array[Double], backend: MathBackendWebGL): TensorInfo = js.native
+  
+  def reshape(args: AttrsReshapeAttrs): TensorInfo = js.native
+  
+  val reshapeConfig: KernelConfig = js.native
 }
-

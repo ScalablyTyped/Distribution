@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IPaths
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The default JupyterLab application paths.
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/application/lib/lab", "JupyterLab.defaultPaths")
 @js.native
 object defaultPaths extends TopLevel[IPaths]
-

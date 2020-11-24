@@ -4,7 +4,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An indication used in a {@link com.sun.star.ucb.RemoteContentProviderChangeEvent} to specify whether a remote content provider has been added to or
@@ -17,13 +17,13 @@ import scala.scalajs.js.annotation._
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
 trait RemoteContentProviderChangeAction extends js.Object
-
 object RemoteContentProviderChangeAction {
+  
   /** The indicator that a remote content provider has been added. */
   @scala.inline
   def ADDED: `0` = 0.asInstanceOf[`0`]
+  
   /** The indicator that a remote content provider has been removed. */
   @scala.inline
   def REMOVED: `1` = 1.asInstanceOf[`1`]
 }
-

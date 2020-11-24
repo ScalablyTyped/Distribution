@@ -3,7 +3,7 @@ package typings.twilioSync.mapitemMod
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
@@ -21,21 +21,30 @@ class MapItem protected () extends js.Object {
     * @constructor
     */
   def this(descriptor: MapItemDescriptor) = this()
-  val descriptor: js.Any = js.native
+  
   def dateExpires: String = js.native
+  
   def dateUpdated: Date = js.native
+  
+  val descriptor: js.Any = js.native
+  
   def key: String = js.native
+  
   def lastEventId: Double = js.native
+  
   def revision: String = js.native
+  
   /**
     * @private
     */
   def update(eventId: Double, revision: String, value: js.Object, dateUpdated: Date): MapItem = js.native
+  
   /**
     * @private
     */
   def updateDateExpires(dateExpires: String): Unit = js.native
+  
   def uri: String = js.native
+  
   def value: js.Object = js.native
 }
-

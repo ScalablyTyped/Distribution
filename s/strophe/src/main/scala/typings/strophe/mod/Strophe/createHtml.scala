@@ -3,11 +3,12 @@ package typings.strophe.mod.Strophe
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("strophe", "Strophe.createHtml")
 @js.native
 object createHtml extends js.Object {
+  
   /** Function: createHtml
     *  Copy an HTML DOM element into an XML DOM.
     *
@@ -22,4 +23,3 @@ object createHtml extends js.Object {
     */
   def apply(elem: Element): Element = js.native
 }
-

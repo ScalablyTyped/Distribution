@@ -10,9 +10,9 @@ Get random Star Wars names
 | ------------------ | :-------------: |
 | Full name          | starwars-names |
 | Keywords           | random, star, wars |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 56079 |
+| # downloads        | 47793 |
 | # stars            | 4 |
 
 ## Links

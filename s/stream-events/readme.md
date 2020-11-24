@@ -10,9 +10,9 @@ Get an event when you're being sent data or asked for it.
 | ------------------ | :-------------: |
 | Full name          | stream-events |
 | Keywords           | stream, events, read, write, duplexify, lazy-stream |
-| # releases         | 4 |
-| # dependents       | 19 |
-| # downloads        | 51702846 |
+| # releases         | 2 |
+| # dependents       | 20 |
+| # downloads        | 79313655 |
 | # stars            | 1 |
 
 ## Links

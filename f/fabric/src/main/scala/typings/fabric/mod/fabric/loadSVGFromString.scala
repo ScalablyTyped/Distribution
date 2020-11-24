@@ -2,11 +2,12 @@ package typings.fabric.mod.fabric
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.loadSVGFromString")
 @js.native
 object loadSVGFromString extends js.Object {
+  
   def apply(
     string: String,
     callback: js.Function2[
@@ -25,4 +26,3 @@ object loadSVGFromString extends js.Object {
     reviver: js.Function
   ): Unit = js.native
 }
-

@@ -8,13 +8,15 @@ import typings.node.anon.`3`
 import typings.node.fsMod.PathLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
+  
   @js.native
   trait FnCall extends js.Object {
+    
     def apply(path: Double): String | Buffer = js.native
     def apply(path: Double, options: BufferEncoding): String = js.native
     def apply(path: Double, options: BaseEncodingOptionsflagst): String | Buffer = js.native
@@ -26,6 +28,4 @@ object anon extends js.Object {
     def apply(path: PathLike, options: EncodingBufferEncoding): String = js.native
     def apply(path: PathLike, options: `3`): Buffer = js.native
   }
-  
 }
-

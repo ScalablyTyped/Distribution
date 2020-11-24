@@ -2,11 +2,12 @@ package typings.extjs.global.Ext
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.on")
 @js.native
 object on extends js.Object {
+  
   def apply(): js.Any = js.native
   def apply(
     eventName: js.UndefOr[scala.Nothing],
@@ -44,4 +45,3 @@ object on extends js.Object {
   def apply(eventName: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
   def apply(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
 }
-

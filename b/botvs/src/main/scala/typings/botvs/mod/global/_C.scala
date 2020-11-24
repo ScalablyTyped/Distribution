@@ -2,11 +2,12 @@ package typings.botvs.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("_C")
 @js.native
 object _C extends js.Object {
+  
   /**
     * 重试函数, 会一直调用指定函数到成功返回(函数返回null或者false会重试),
     * 比如_C(exchange.GetTicker), 默认重试间隔为3秒, 可以调用_CDelay函数来控制重试间隔
@@ -18,4 +19,3 @@ object _C extends js.Object {
     */
   def apply[T](func: js.Function1[/* repeated */ js.Any, T], args: js.Any*): T = js.native
 }
-

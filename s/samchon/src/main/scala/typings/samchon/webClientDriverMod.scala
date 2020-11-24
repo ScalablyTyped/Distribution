@@ -4,11 +4,12 @@ import typings.samchon.iprotocolMod.IProtocol
 import typings.samchon.webCommunicatorMod.WebCommunicator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/protocol/communicator/client_driver/WebClientDriver", JSImport.Namespace)
 @js.native
 object webClientDriverMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.samchon.iprotocolMod.IProtocol because Already inherited
   - typings.samchon.icommunicatorMod.ICommunicator because Already inherited
@@ -22,26 +23,17 @@ object webClientDriverMod extends js.Object {
       * @param session_id Session ID, an identifier of the remote client.
       */
     def this(connection: js.Any, path: String, session_id: String) = this()
-    /**
-      * @hidden
-      */
-    var listening_ : js.Any = js.native
-    /**
-      * @hidden
-      */
-    var path_ : js.Any = js.native
-    /**
-      * @hidden
-      */
-    var session_id_ : js.Any = js.native
+    
     /**
       * Get requested path.
       */
     def getPath(): String = js.native
+    
     /**
       * Get session ID, an identifier of the remote client.
       */
     def getSessionID(): String = js.native
+    
     /**
       * @inheritdoc
       */
@@ -56,7 +48,20 @@ object webClientDriverMod extends js.Object {
       *				   {@link IProtocol.replyData replyData()} as an {@link Invoke} object.
       */
     def listen(listener: IProtocol): Unit = js.native
+    
+    /**
+      * @hidden
+      */
+    var listening_ : js.Any = js.native
+    
+    /**
+      * @hidden
+      */
+    var path_ : js.Any = js.native
+    
+    /**
+      * @hidden
+      */
+    var session_id_ : js.Any = js.native
   }
-  
 }
-

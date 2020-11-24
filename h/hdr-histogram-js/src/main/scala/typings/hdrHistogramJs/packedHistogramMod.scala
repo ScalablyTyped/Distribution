@@ -4,11 +4,12 @@ import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
 import typings.hdrHistogramJs.packedArrayMod.PackedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hdr-histogram-js/PackedHistogram", JSImport.Namespace)
 @js.native
 object packedHistogramMod extends js.Object {
+  
   /**
     * <h3>A High Dynamic Range (HDR) Histogram that uses a packed internal representation</h3>
     * <p>
@@ -39,7 +40,9 @@ object packedHistogramMod extends js.Object {
     */
   @js.native
   trait PackedHistogram extends AbstractHistogram {
+    
     var packedCounts: PackedArray = js.native
+    
     var totalCount: Double = js.native
   }
   
@@ -79,6 +82,4 @@ object packedHistogramMod extends js.Object {
       numberOfSignificantValueDigits: Double
     ) = this()
   }
-  
 }
-

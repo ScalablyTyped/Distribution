@@ -6,15 +6,17 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/container/v1beta1", "container_v1beta1.Resource$Projects$Locations")
 @js.native
 class ResourceProjectsLocations protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var clusters: ResourceProjectsLocationsClusters = js.native
+  
   var context: APIRequestContext = js.native
-  var operations: ResourceProjectsLocationsOperations = js.native
+  
   /**
     * container.projects.locations.getServerConfig
     * @desc Returns configuration info about the Kubernetes Engine service.
@@ -48,6 +50,7 @@ class ResourceProjectsLocations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaServerConfig]
   ): Unit = js.native
+  
   /**
     * container.projects.locations.list
     * @desc Used to fetch locations that offer GKE.
@@ -79,5 +82,6 @@ class ResourceProjectsLocations protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListLocationsResponse]
   ): Unit = js.native
+  
+  var operations: ResourceProjectsLocationsOperations = js.native
 }
-

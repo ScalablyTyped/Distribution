@@ -4,7 +4,7 @@ import typings.mocha.Mocha.Suite
 import typings.mocha.Mocha.SuiteConstants
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion Suite "post-require" event
 // #region Suite untyped events
@@ -38,12 +38,13 @@ class Suite_ protected () extends Suite {
   def this(title: String) = this()
   def this(title: String, parentContext: typings.mocha.Mocha.Context) = this()
 }
-
 /* static members */
 @JSGlobal("Mocha.Suite")
 @js.native
 object Suite_ extends js.Object {
+  
   val constants: SuiteConstants = js.native
+  
   /**
     * Create a new `Suite` with the given `title` and parent `Suite`. When a suite
     * with the same title is already present, that suite is returned to provide
@@ -53,4 +54,3 @@ object Suite_ extends js.Object {
     */
   def create(parent: Suite, title: String): Suite = js.native
 }
-

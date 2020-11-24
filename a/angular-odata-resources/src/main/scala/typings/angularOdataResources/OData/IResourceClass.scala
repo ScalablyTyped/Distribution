@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Baseclass for everyresource with default actions.
 // If you define your new actions for the resource, you will need
@@ -27,6 +27,7 @@ import scala.scalajs.js.annotation._
 trait IResourceClass[T]
   extends Instantiable0[IResource[T]]
      with Instantiable1[/* dataOrParams */ js.Any, IResource[T]] {
+  
   def delete(): IResource[T] = js.native
   def delete(params: js.Object): IResource[T] = js.native
   def delete(params: js.Object, data: js.Object): IResource[T] = js.native
@@ -37,6 +38,7 @@ trait IResourceClass[T]
   def delete(params: js.Object, success: js.Function, error: js.Function): IResource[T] = js.native
   def delete(success: js.Function): IResource[T] = js.native
   def delete(success: js.Function, error: js.Function): IResource[T] = js.native
+  
   def get(): IResource[T] = js.native
   def get(params: js.Object): IResource[T] = js.native
   def get(params: js.Object, data: js.Object): IResource[T] = js.native
@@ -47,7 +49,9 @@ trait IResourceClass[T]
   def get(params: js.Object, success: js.Function, error: js.Function): IResource[T] = js.native
   def get(success: js.Function): IResource[T] = js.native
   def get(success: js.Function, error: js.Function): IResource[T] = js.native
+  
   def odata(): Provider[T] = js.native
+  
   def query(): IResourceArray[T] = js.native
   def query(params: js.Object): IResourceArray[T] = js.native
   def query(params: js.Object, data: js.Object): IResourceArray[T] = js.native
@@ -58,6 +62,7 @@ trait IResourceClass[T]
   def query(params: js.Object, success: js.Function, error: js.Function): IResourceArray[T] = js.native
   def query(success: js.Function): IResourceArray[T] = js.native
   def query(success: js.Function, error: js.Function): IResourceArray[T] = js.native
+  
   def remove(): IResource[T] = js.native
   def remove(params: js.Object): IResource[T] = js.native
   def remove(params: js.Object, data: js.Object): IResource[T] = js.native
@@ -68,6 +73,7 @@ trait IResourceClass[T]
   def remove(params: js.Object, success: js.Function, error: js.Function): IResource[T] = js.native
   def remove(success: js.Function): IResource[T] = js.native
   def remove(success: js.Function, error: js.Function): IResource[T] = js.native
+  
   def save(): IResource[T] = js.native
   def save(data: js.Object): IResource[T] = js.native
   def save(data: js.Object, success: js.Function): IResource[T] = js.native
@@ -78,6 +84,7 @@ trait IResourceClass[T]
   def save(params: js.Object, data: js.Object, success: js.Function, error: js.Function): IResource[T] = js.native
   def save(success: js.Function): IResource[T] = js.native
   def save(success: js.Function, error: js.Function): IResource[T] = js.native
+  
   def update(): IResource[T] = js.native
   def update(data: js.Object): IResource[T] = js.native
   def update(data: js.Object, success: js.Function): IResource[T] = js.native
@@ -89,4 +96,3 @@ trait IResourceClass[T]
   def update(success: js.Function): IResource[T] = js.native
   def update(success: js.Function, error: js.Function): IResource[T] = js.native
 }
-

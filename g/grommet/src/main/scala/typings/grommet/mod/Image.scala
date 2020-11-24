@@ -8,13 +8,12 @@ import typings.react.mod.ImgHTMLAttributes
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grommet/es6", "Image")
+@JSImport("grommet", "Image")
 @js.native
 object Image extends TopLevel[
       FC[
         ImageProps with (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement])
       ]
     ]
-

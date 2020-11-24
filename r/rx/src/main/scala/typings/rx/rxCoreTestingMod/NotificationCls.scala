@@ -2,7 +2,7 @@ package typings.rx.rxCoreTestingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rx.core.testing", "Notification")
 @js.native
@@ -17,4 +17,3 @@ class NotificationCls[T] protected ()
     toString: js.Any
   ) = this()
 }
-

@@ -3,10 +3,11 @@ package typings.wakeOnLan.mod
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Wol extends js.Object {
+  
   /**
     * Creates a buffer with a magic packet for the given MAC address.
     *
@@ -14,6 +15,7 @@ trait Wol extends js.Object {
     * @return {Buffer} the magic packet
     */
   def createMagicPacket(macAddress: String): Buffer = js.native
+  
   /**
     * Send a sequence of Wake-on-LAN magic packets to the given MAC address.
     *
@@ -37,4 +39,3 @@ trait Wol extends js.Object {
   def wake(macAddress: String, opts: WakeOptions): Unit = js.native
   def wake(macAddress: String, opts: WakeOptions, callback: js.Function): Unit = js.native
 }
-

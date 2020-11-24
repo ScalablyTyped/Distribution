@@ -43,45 +43,15 @@ import typings.tablesorter.triggerCallbackHandlerMod.TriggerCallbackHandler
 import typings.tablesorter.widgetMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tablesorter/Tablesorter", JSImport.Namespace)
 @js.native
 object tablesorterMod extends js.Object {
+  
   @js.native
   trait Tablesorter[TElement] extends js.Object {
-    /**
-      * The default settings.
-      */
-    var defaults: TablesorterConfiguration[TElement] = js.native
-    /**
-      * Provides methods for the `filter`-widget.
-      */
-    var filter: FilterStatic[TElement] = js.native
-    /**
-      * Provides methods for creating filter-controls.
-      */
-    var filterFormatter: FilterFormatter = js.native
-    /**
-      * The custom instance-methods added to the tablesorter.
-      */
-    var instanceMethods: StringDictionary[js.Function0[_]] = js.native
-    /**
-      * The localized text for the tablesorter.
-      */
-    var language: Locale = js.native
-    /**
-      * The parsers of the tablesorter.
-      */
-    var parsers: js.Array[Parser[TElement]] = js.native
-    /**
-      * The settings of the themes.
-      */
-    var themes: ThemeCollection = js.native
-    /**
-      * The widgets of the tablesorter.
-      */
-    var widgets: js.Array[Widget[TElement]] = js.native
+    
     def addHeaderResizeEvent(table: TElement, disable: Boolean): Unit = js.native
     def addHeaderResizeEvent(table: TElement, disable: Boolean, options: HeaderResizeOptions): Unit = js.native
     /**
@@ -98,6 +68,7 @@ object tablesorterMod extends js.Object {
       */
     def addHeaderResizeEvent(table: JQuery[TElement], disable: Boolean): Unit = js.native
     def addHeaderResizeEvent(table: JQuery[TElement], disable: Boolean, options: HeaderResizeOptions): Unit = js.native
+    
     /**
       * Adds instance-methods to the tablesorter.
       *
@@ -105,6 +76,7 @@ object tablesorterMod extends js.Object {
       * The methods to add.
       */
     def addInstanceMethods(methods: StringDictionary[js.Function0[_]]): Unit = js.native
+    
     /**
       * Adds a parser to the tablesorter.
       *
@@ -112,6 +84,7 @@ object tablesorterMod extends js.Object {
       * The parser to add.
       */
     def addParser(parser: Parser[TElement]): Unit = js.native
+    
     def addRows(config: TablesorterConfigurationStore[TElement], rows: String, resort: js.Array[SortDefinition]): Unit = js.native
     def addRows(
       config: TablesorterConfigurationStore[TElement],
@@ -159,6 +132,7 @@ object tablesorterMod extends js.Object {
       resort: Boolean,
       callback: TriggerCallbackHandler[TElement]
     ): Unit = js.native
+    
     /**
       * Adds a widget to the tablesorter.
       *
@@ -166,6 +140,7 @@ object tablesorterMod extends js.Object {
       * The widget to add.
       */
     def addWidget(widget: Widget[TElement]): Unit = js.native
+    
     /**
       * Adds all cached table-rows back into the table.
       *
@@ -173,6 +148,7 @@ object tablesorterMod extends js.Object {
       * The configuration of the table-sorter.
       */
     def appendCache(config: TablesorterConfigurationStore[TElement]): Unit = js.native
+    
     def applyWidget(table: TElement): Unit = js.native
     def applyWidget(table: TElement, initialize: js.UndefOr[scala.Nothing], callback: TriggerCallbackHandler[TElement]): Unit = js.native
     def applyWidget(table: TElement, initialize: Boolean): Unit = js.native
@@ -197,6 +173,7 @@ object tablesorterMod extends js.Object {
     ): Unit = js.native
     def applyWidget(table: JQuery[TElement], initialize: Boolean): Unit = js.native
     def applyWidget(table: JQuery[TElement], initialize: Boolean, callback: TriggerCallbackHandler[TElement]): Unit = js.native
+    
     def applyWidgetId(table: TElement, id: String): Unit = js.native
     /**
       * Applies the widget to the specified `table`.
@@ -208,6 +185,7 @@ object tablesorterMod extends js.Object {
       * The id of the widget to apply.
       */
     def applyWidgetId(table: JQuery[TElement], id: String): Unit = js.native
+    
     def bindEvents(table: TElement, elements: JQuery[HTMLElement]): Unit = js.native
     /**
       * Binds the header-events to the specified `elements`.
@@ -219,6 +197,7 @@ object tablesorterMod extends js.Object {
       * The jQuery-object containing the elements to bind the header-events to.
       */
     def bindEvents(table: JQuery[TElement], elements: JQuery[HTMLElement]): Unit = js.native
+    
     def clearTableBody(table: TElement): Unit = js.native
     /**
       * Clears all table-bodies inside the specified `table`.
@@ -227,6 +206,7 @@ object tablesorterMod extends js.Object {
       * The table which is being processed.
       */
     def clearTableBody(table: JQuery[TElement]): Unit = js.native
+    
     /**
       * Re-calculates the `data-column`-attribute of the cells inside the rows.
       *
@@ -240,6 +220,12 @@ object tablesorterMod extends js.Object {
       */
     def computeColumnIndex(rows: JQuery[HTMLElement]): Unit = js.native
     def computeColumnIndex(rows: JQuery[HTMLElement], config: TablesorterConfigurationStore[TElement]): Unit = js.native
+    
+    /**
+      * The default settings.
+      */
+    var defaults: TablesorterConfiguration[TElement] = js.native
+    
     def destroy(table: TElement): Unit = js.native
     def destroy(
       table: TElement,
@@ -268,6 +254,17 @@ object tablesorterMod extends js.Object {
     ): Unit = js.native
     def destroy(table: JQuery[TElement], removeClasses: Boolean): Unit = js.native
     def destroy(table: JQuery[TElement], removeClasses: Boolean, callback: TriggerCallbackHandler[TElement]): Unit = js.native
+    
+    /**
+      * Provides methods for the `filter`-widget.
+      */
+    var filter: FilterStatic[TElement] = js.native
+    
+    /**
+      * Provides methods for creating filter-controls.
+      */
+    var filterFormatter: FilterFormatter = js.native
+    
     def fixColumnWidth(table: TElement): Unit = js.native
     /**
       * Adds a `colgroup`-element to the specified `table`.
@@ -276,6 +273,7 @@ object tablesorterMod extends js.Object {
       * The table to add the fixed columns to.
       */
     def fixColumnWidth(table: JQuery[TElement]): Unit = js.native
+    
     def formatFloat(text: String, table: TElement): Unit = js.native
     /**
       * Formats a text containing a number according to the correct format.
@@ -287,6 +285,7 @@ object tablesorterMod extends js.Object {
       * The table which is being processed.
       */
     def formatFloat(text: String, table: JQuery[TElement]): Unit = js.native
+    
     def getColumnData[T](table: TElement, `object`: MappedSettings[T], key: String): T = js.native
     def getColumnData[T](table: TElement, `object`: MappedSettings[T], key: Double): T = js.native
     /**
@@ -306,6 +305,7 @@ object tablesorterMod extends js.Object {
       */
     def getColumnData[T](table: JQuery[TElement], `object`: MappedSettings[T], key: String): T = js.native
     def getColumnData[T](table: JQuery[TElement], `object`: MappedSettings[T], key: Double): T = js.native
+    
     def getColumnText(table: TElement, column: Double): ParsedData = js.native
     def getColumnText(
       table: TElement,
@@ -514,6 +514,7 @@ object tablesorterMod extends js.Object {
       callback: js.Function1[/* cell */ ParsedCell, Unit],
       rowFilter: JQuery[HTMLElement]
     ): ParsedData = js.native
+    
     @JSName("getData")
     def getData_dateFormat(header: HTMLElement, headerConfig: TablesorterHeading, option: dateFormat): js.UndefOr[String] = js.native
     @JSName("getData")
@@ -565,6 +566,7 @@ object tablesorterMod extends js.Object {
     def getData_string(header: HTMLElement, headerConfig: TablesorterHeading, option: string): js.UndefOr[StringSorting] = js.native
     @JSName("getData")
     def getData_string(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: string): js.UndefOr[StringSorting] = js.native
+    
     def getFilters(table: TElement): js.Array[String] = js.native
     def getFilters(table: TElement, cached: Boolean): js.Array[String] = js.native
     /**
@@ -578,6 +580,7 @@ object tablesorterMod extends js.Object {
       */
     def getFilters(table: JQuery[TElement]): js.Array[String] = js.native
     def getFilters(table: JQuery[TElement], cached: Boolean): js.Array[String] = js.native
+    
     /**
       * Gets a parser of the tablesorter.
       *
@@ -588,6 +591,7 @@ object tablesorterMod extends js.Object {
       * The parser with the specified `id`.
       */
     def getParserById(id: String): Parser[TElement] = js.native
+    
     /**
       * Gets a widget of the tablesorter.
       *
@@ -598,6 +602,7 @@ object tablesorterMod extends js.Object {
       * The widget with the specified `id`.
       */
     def getWidgetById(id: String): Widget[TElement] = js.native
+    
     def hasWidget(table: TElement, id: String): Boolean = js.native
     /**
       * Verifies whether the specified `table` has a widget with the specified `id`.
@@ -612,6 +617,12 @@ object tablesorterMod extends js.Object {
       * A value indicating whether a widget with the specified `id` is loaded for the specified `table`.
       */
     def hasWidget(table: JQuery[TElement], id: String): Boolean = js.native
+    
+    /**
+      * The custom instance-methods added to the tablesorter.
+      */
+    var instanceMethods: StringDictionary[js.Function0[_]] = js.native
+    
     /**
       * Verifies whether the specified `text` is a digit.
       *
@@ -622,6 +633,7 @@ object tablesorterMod extends js.Object {
       * A value indicating whether the specified `text` is a digit.
       */
     def isDigit(text: String): Boolean = js.native
+    
     def isProcessing(table: TElement, state: Boolean): Unit = js.native
     def isProcessing(table: TElement, state: Boolean, headers: JQuery[HTMLElement]): Unit = js.native
     /**
@@ -638,6 +650,7 @@ object tablesorterMod extends js.Object {
       */
     def isProcessing(table: JQuery[TElement], state: Boolean): Unit = js.native
     def isProcessing(table: JQuery[TElement], state: Boolean, headers: JQuery[HTMLElement]): Unit = js.native
+    
     /**
       * Checks whether a `SortDefinition` for the specified `column` exists.
       *
@@ -651,6 +664,17 @@ object tablesorterMod extends js.Object {
       * A value indicating whether a `SortDefinition` for the specified `column` exists.
       */
     def isValueInArray(value: Double, array: js.Array[js.Tuple2[Double, _]]): Boolean = js.native
+    
+    /**
+      * The localized text for the tablesorter.
+      */
+    var language: Locale = js.native
+    
+    /**
+      * The parsers of the tablesorter.
+      */
+    var parsers: js.Array[Parser[TElement]] = js.native
+    
     def processTbody(table: TElement, tbody: JQuery[HTMLElement]): Unit = js.native
     def processTbody(table: JQuery[TElement], tbody: JQuery[HTMLElement]): Unit = js.native
     @JSName("processTbody")
@@ -673,6 +697,7 @@ object tablesorterMod extends js.Object {
       */
     @JSName("processTbody")
     def processTbody_true(table: JQuery[TElement], tbody: JQuery[HTMLElement], detach: `true`): JQuery[HTMLElement] = js.native
+    
     def refreshWidgets(table: TElement): Unit = js.native
     def refreshWidgets(table: TElement, removeAll: js.UndefOr[scala.Nothing], reapply: Boolean): Unit = js.native
     def refreshWidgets(table: TElement, removeAll: Boolean): Unit = js.native
@@ -693,6 +718,7 @@ object tablesorterMod extends js.Object {
     def refreshWidgets(table: JQuery[TElement], removeAll: js.UndefOr[scala.Nothing], reapply: Boolean): Unit = js.native
     def refreshWidgets(table: JQuery[TElement], removeAll: Boolean): Unit = js.native
     def refreshWidgets(table: JQuery[TElement], removeAll: Boolean, reapply: Boolean): Unit = js.native
+    
     def removeWidget(table: TElement, id: String): Unit = js.native
     def removeWidget(table: TElement, id: String, refreshing: Boolean): Unit = js.native
     def removeWidget(table: TElement, id: js.Array[String]): Unit = js.native
@@ -717,6 +743,7 @@ object tablesorterMod extends js.Object {
     def removeWidget(table: JQuery[TElement], id: js.Array[String], refreshing: Boolean): Unit = js.native
     def removeWidget(table: JQuery[TElement], id: Boolean): Unit = js.native
     def removeWidget(table: JQuery[TElement], id: Boolean, refreshing: Boolean): Unit = js.native
+    
     /**
       * Replaces all accent characters in the `text`.
       *
@@ -727,6 +754,7 @@ object tablesorterMod extends js.Object {
       * The processed text.
       */
     def replaceAccents(text: String): String = js.native
+    
     def resizableReset(table: TElement): Unit = js.native
     def resizableReset(table: TElement, keepLocalSettings: Boolean): Unit = js.native
     /**
@@ -740,6 +768,7 @@ object tablesorterMod extends js.Object {
       */
     def resizableReset(table: JQuery[TElement]): Unit = js.native
     def resizableReset(table: JQuery[TElement], keepLocalSettings: Boolean): Unit = js.native
+    
     def restoreHeaders(table: TElement): Unit = js.native
     /**
       * Restores the headers of a table.
@@ -748,6 +777,7 @@ object tablesorterMod extends js.Object {
       * The table to process.
       */
     def restoreHeaders(table: JQuery[TElement]): Unit = js.native
+    
     def setFilters(table: TElement, filter: js.Array[String]): Unit = js.native
     def setFilters(table: TElement, filter: js.Array[String], apply: Boolean): Unit = js.native
     /**
@@ -764,6 +794,7 @@ object tablesorterMod extends js.Object {
       */
     def setFilters(table: JQuery[TElement], filter: js.Array[String]): Unit = js.native
     def setFilters(table: JQuery[TElement], filter: js.Array[String], apply: Boolean): Unit = js.native
+    
     def showError(table: TElement, request: String, settings: JQueryAjaxSettings, message: String): Unit = js.native
     def showError(table: TElement, request: jqXHR[_], settings: JQueryAjaxSettings, message: String): Unit = js.native
     /**
@@ -783,6 +814,7 @@ object tablesorterMod extends js.Object {
       */
     def showError(table: JQuery[TElement], request: String, settings: JQueryAjaxSettings, message: String): Unit = js.native
     def showError(table: JQuery[TElement], request: jqXHR[_], settings: JQueryAjaxSettings, message: String): Unit = js.native
+    
     /**
       * Compares two strings and returns a value indicating whether one is less than, equal to or greater than the other.
       *
@@ -808,6 +840,7 @@ object tablesorterMod extends js.Object {
       *   - If greater than 0, `x` is greater than `y`.
       */
     def sortNatural(x: String, y: String): Double = js.native
+    
     /**
       * Applies a sort to the table.
       *
@@ -829,6 +862,7 @@ object tablesorterMod extends js.Object {
       sort: js.Array[SortDefinition | RelativeSortDefinition],
       callback: TriggerCallbackHandler[TElement]
     ): Unit = js.native
+    
     /**
       * Resets the sorting.
       *
@@ -840,6 +874,7 @@ object tablesorterMod extends js.Object {
       */
     def sortReset(config: TablesorterConfigurationStore[TElement]): Unit = js.native
     def sortReset(config: TablesorterConfigurationStore[TElement], callback: TriggerCallbackHandler[TElement]): Unit = js.native
+    
     /**
       * Compares two strings and returns a value indicating whether one is less than, equal to or greater than the other.
       *
@@ -865,6 +900,7 @@ object tablesorterMod extends js.Object {
       *   - If greater than 0, `x` is greater than `y`.
       */
     def sortText(x: String, y: String): Double = js.native
+    
     def storage(table: TElement, key: String): js.Any = js.native
     def storage(table: TElement, key: String, value: js.UndefOr[scala.Nothing], options: StorageConfiguration): js.Any = js.native
     def storage(table: TElement, key: String, value: js.Any): Unit = js.native
@@ -910,6 +946,12 @@ object tablesorterMod extends js.Object {
     def storage(table: JQuery[TElement], key: String, value: js.Any): Unit = js.native
     def storage(table: JQuery[TElement], key: String, value: js.Any, options: StorageConfiguration): Unit = js.native
     def storage(table: JQuery[TElement], key: String, value: Null, options: StorageConfiguration): js.Any = js.native
+    
+    /**
+      * The settings of the themes.
+      */
+    var themes: ThemeCollection = js.native
+    
     /**
       * Updates the data of the table-body.
       *
@@ -937,6 +979,7 @@ object tablesorterMod extends js.Object {
       sorting: Boolean,
       callback: TriggerCallbackHandler[TElement]
     ): Unit = js.native
+    
     /**
       * Updates the data of the whole table.
       *
@@ -967,6 +1010,7 @@ object tablesorterMod extends js.Object {
       sorting: Boolean,
       callback: TriggerCallbackHandler[TElement]
     ): Unit = js.native
+    
     /**
       * Updates the cache and optionally adds new `tbody`s.
       *
@@ -991,6 +1035,7 @@ object tablesorterMod extends js.Object {
       callback: TriggerCallbackHandler[TElement],
       tbodies: JQuery[HTMLElement]
     ): Unit = js.native
+    
     /**
       * Updates the cell of the table.
       *
@@ -1031,6 +1076,7 @@ object tablesorterMod extends js.Object {
       sorting: Boolean,
       callback: TriggerCallbackHandler[TElement]
     ): Unit = js.native
+    
     /**
       * Updates the table-headers.
       *
@@ -1042,6 +1088,7 @@ object tablesorterMod extends js.Object {
       */
     def updateHeaders(config: TablesorterConfigurationStore[TElement]): Unit = js.native
     def updateHeaders(config: TablesorterConfigurationStore[TElement], callback: TriggerCallbackHandler[TElement]): Unit = js.native
+    
     /**
       * Updates the data of the table-body.
       *
@@ -1069,7 +1116,10 @@ object tablesorterMod extends js.Object {
       sorting: Boolean,
       callback: TriggerCallbackHandler[TElement]
     ): Unit = js.native
+    
+    /**
+      * The widgets of the tablesorter.
+      */
+    var widgets: js.Array[Widget[TElement]] = js.native
   }
-  
 }
-

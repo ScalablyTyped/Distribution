@@ -2,9 +2,34 @@ package typings.qrcodeGenerator
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object qrcodeGeneratorStrings {
+  
+  @scala.inline
+  def Alphanumeric: Alphanumeric = "Alphanumeric".asInstanceOf[Alphanumeric]
+  
+  @scala.inline
+  def Byte: Byte = "Byte".asInstanceOf[Byte]
+  
+  @scala.inline
+  def H: H = "H".asInstanceOf[H]
+  
+  @scala.inline
+  def Kanji: Kanji = "Kanji".asInstanceOf[Kanji]
+  
+  @scala.inline
+  def L: L = "L".asInstanceOf[L]
+  
+  @scala.inline
+  def M: M = "M".asInstanceOf[M]
+  
+  @scala.inline
+  def Numeric: Numeric = "Numeric".asInstanceOf[Numeric]
+  
+  @scala.inline
+  def Q: Q = "Q".asInstanceOf[Q]
+  
   @js.native
   sealed trait Alphanumeric extends Mode
   
@@ -28,22 +53,4 @@ object qrcodeGeneratorStrings {
   
   @js.native
   sealed trait Q extends ErrorCorrectionLevel
-  
-  @scala.inline
-  def Alphanumeric: Alphanumeric = "Alphanumeric".asInstanceOf[Alphanumeric]
-  @scala.inline
-  def Byte: Byte = "Byte".asInstanceOf[Byte]
-  @scala.inline
-  def H: H = "H".asInstanceOf[H]
-  @scala.inline
-  def Kanji: Kanji = "Kanji".asInstanceOf[Kanji]
-  @scala.inline
-  def L: L = "L".asInstanceOf[L]
-  @scala.inline
-  def M: M = "M".asInstanceOf[M]
-  @scala.inline
-  def Numeric: Numeric = "Numeric".asInstanceOf[Numeric]
-  @scala.inline
-  def Q: Q = "Q".asInstanceOf[Q]
 }
-

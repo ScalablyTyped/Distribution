@@ -6,42 +6,97 @@ import typings.instagramPrivateApi.anon.Sourceheight
 import typings.instagramPrivateApi.postingOptionsMod.PostingUsertags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait MediaConfigureSidecarItem extends js.Object {
-  var caption: js.UndefOr[Null] = js.undefined
-  var device: js.UndefOr[Androidversion | String] = js.undefined
-  var edits: js.UndefOr[Cropcenter | String] = js.undefined
-  var extra: js.UndefOr[Sourceheight | String] = js.undefined
-  var height: Double
-  var source_type: js.UndefOr[String] = js.undefined
-  var timezone_offset: js.UndefOr[String] = js.undefined
-  var upload_id: String
-  var usertags: js.UndefOr[PostingUsertags | String] = js.undefined
-  var width: Double
+  
+  var caption: js.UndefOr[Null] = js.native
+  
+  var device: js.UndefOr[Androidversion | String] = js.native
+  
+  var edits: js.UndefOr[Cropcenter | String] = js.native
+  
+  var extra: js.UndefOr[Sourceheight | String] = js.native
+  
+  var height: Double = js.native
+  
+  var source_type: js.UndefOr[String] = js.native
+  
+  var timezone_offset: js.UndefOr[String] = js.native
+  
+  var upload_id: String = js.native
+  
+  var usertags: js.UndefOr[PostingUsertags | String] = js.native
+  
+  var width: Double = js.native
 }
-
 object MediaConfigureSidecarItem {
+  
   @scala.inline
-  def apply(
-    height: Double,
-    upload_id: String,
-    width: Double,
-    device: Androidversion | String = null,
-    edits: Cropcenter | String = null,
-    extra: Sourceheight | String = null,
-    source_type: String = null,
-    timezone_offset: String = null,
-    usertags: PostingUsertags | String = null
-  ): MediaConfigureSidecarItem = {
+  def apply(height: Double, upload_id: String, width: Double): MediaConfigureSidecarItem = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], upload_id = upload_id.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
-    if (edits != null) __obj.updateDynamic("edits")(edits.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (source_type != null) __obj.updateDynamic("source_type")(source_type.asInstanceOf[js.Any])
-    if (timezone_offset != null) __obj.updateDynamic("timezone_offset")(timezone_offset.asInstanceOf[js.Any])
-    if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaConfigureSidecarItem]
   }
+  
+  @scala.inline
+  implicit class MediaConfigureSidecarItemOps[Self <: MediaConfigureSidecarItem] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
+    }
+    
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUpload_id(value: String): Self = this.set("upload_id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDevice(value: Androidversion | String): Self = this.set("device", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteDevice: Self = this.set("device", js.undefined)
+    
+    @scala.inline
+    def setEdits(value: Cropcenter | String): Self = this.set("edits", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteEdits: Self = this.set("edits", js.undefined)
+    
+    @scala.inline
+    def setExtra(value: Sourceheight | String): Self = this.set("extra", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteExtra: Self = this.set("extra", js.undefined)
+    
+    @scala.inline
+    def setSource_type(value: String): Self = this.set("source_type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteSource_type: Self = this.set("source_type", js.undefined)
+    
+    @scala.inline
+    def setTimezone_offset(value: String): Self = this.set("timezone_offset", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteTimezone_offset: Self = this.set("timezone_offset", js.undefined)
+    
+    @scala.inline
+    def setUsertags(value: PostingUsertags | String): Self = this.set("usertags", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def deleteUsertags: Self = this.set("usertags", js.undefined)
+  }
 }
-

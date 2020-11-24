@@ -5,7 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides a filtered version of a configuration data {@link Layer} .
@@ -19,8 +19,8 @@ import scala.scalajs.js.annotation._
 trait LayerFilter
   extends XLayer
      with XInitialization
-
 object LayerFilter {
+  
   @scala.inline
   def apply(
     acquire: () => Unit,
@@ -33,4 +33,3 @@ object LayerFilter {
     __obj.asInstanceOf[LayerFilter]
   }
 }
-

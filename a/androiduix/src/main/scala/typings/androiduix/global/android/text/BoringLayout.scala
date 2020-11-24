@@ -6,7 +6,7 @@ import typings.androiduix.android.text.TextDirectionHeuristic
 import typings.androiduix.android.text.TextUtils.TruncateAt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("android.text.BoringLayout")
 @js.native
@@ -58,17 +58,13 @@ class BoringLayout protected ()
     ellipsizedWidth: Double
   ) = this()
 }
-
 /* static members */
 @JSGlobal("android.text.BoringLayout")
 @js.native
 object BoringLayout extends js.Object {
-  @js.native
-  class Metrics ()
-    extends typings.androiduix.android.text.BoringLayout.Metrics
   
   var FIRST_RIGHT_TO_LEFT: js.Any = js.native
-  var sTemp: js.Any = js.native
+  
   def isBoring(text: String, paint: typings.androiduix.android.text.TextPaint): typings.androiduix.android.text.BoringLayout.Metrics = js.native
   def isBoring(
     text: String,
@@ -83,6 +79,7 @@ object BoringLayout extends js.Object {
     textDir: TextDirectionHeuristic,
     metrics: typings.androiduix.android.text.BoringLayout.Metrics
   ): typings.androiduix.android.text.BoringLayout.Metrics = js.native
+  
   def make(
     source: String,
     paint: typings.androiduix.android.text.TextPaint,
@@ -128,5 +125,10 @@ object BoringLayout extends js.Object {
     ellipsize: TruncateAt,
     ellipsizedWidth: Double
   ): typings.androiduix.android.text.BoringLayout = js.native
+  
+  var sTemp: js.Any = js.native
+  
+  @js.native
+  class Metrics ()
+    extends typings.androiduix.android.text.BoringLayout.Metrics
 }
-

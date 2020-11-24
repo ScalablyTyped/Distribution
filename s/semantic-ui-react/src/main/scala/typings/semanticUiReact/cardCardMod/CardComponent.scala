@@ -10,14 +10,18 @@ import typings.semanticUiReact.cardHeaderMod.CardHeaderProps
 import typings.semanticUiReact.cardMetaMod.CardMetaProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CardComponent extends ComponentClass[CardProps, ComponentState] {
+  
   var Content: StatelessComponent[CardContentProps] = js.native
+  
   var Description: StatelessComponent[CardDescriptionProps] = js.native
+  
   var Group: StatelessComponent[CardGroupProps] = js.native
+  
   var Header: StatelessComponent[CardHeaderProps] = js.native
+  
   var Meta: StatelessComponent[CardMetaProps] = js.native
 }
-

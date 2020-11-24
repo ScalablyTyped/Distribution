@@ -12,7 +12,7 @@ Calculate when HTTP responses expire from the cache headers
 | Keywords           | calculate, HTTP, response, expires, expire, expirey, cache, headers, pure |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 10462 |
+| # downloads        | 9386 |
 | # stars            | 1 |
 
 ## Links

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/nbformat" : "2.2.0"
+      "@jupyterlab/nbformat" : "2.2.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/nbformat" : "2.2.0"
+      "@jupyterlab/nbformat" : "2.2.5"
     }
   ],
   "compile-devDependencies" : [

@@ -8,7 +8,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/apigatewayv2/deployment", "Deployment")
 @js.native
@@ -22,28 +22,32 @@ class Deployment protected () extends CustomResource {
     */
   def this(name: String, args: DeploymentArgs) = this()
   def this(name: String, args: DeploymentArgs, opts: CustomResourceOptions) = this()
+  
   /**
     * The API identifier.
     */
   val apiId: Output_[String] = js.native
+  
   /**
     * Whether the deployment was automatically released.
     */
   val autoDeployed: Output_[Boolean] = js.native
+  
   /**
-    * The description for the deployment resource.
+    * The description for the deployment resource. Must be less than or equal to 1024 characters in length.
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  
   /**
     * A map of arbitrary keys and values that, when changed, will trigger a redeployment.
     */
   val triggers: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
-
 /* static members */
 @JSImport("@pulumi/aws/apigatewayv2/deployment", "Deployment")
 @js.native
 object Deployment extends js.Object {
+  
   /**
     * Get an existing Deployment resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -57,10 +61,10 @@ object Deployment extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Deployment = js.native
   def get(name: String, id: Input[ID], state: DeploymentState): Deployment = js.native
   def get(name: String, id: Input[ID], state: DeploymentState, opts: CustomResourceOptions): Deployment = js.native
+  
   /**
     * Returns true if the given object is an instance of Deployment.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/deployment.Deployment */ Boolean = js.native
 }
-

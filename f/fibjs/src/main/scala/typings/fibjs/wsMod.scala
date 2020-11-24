@@ -2,7 +2,7 @@ package typings.fibjs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
@@ -12,22 +12,32 @@ import scala.scalajs.js.annotation._
 @JSImport("ws", JSImport.Namespace)
 @js.native
 object wsMod extends js.Object {
+  
+  val BINARY: /* 2 */ Double = js.native
+  
+  val CLOSE: /* 8 */ Double = js.native
+  
+  val CLOSED: /* 3 */ Double = js.native
+  
+  val CLOSING: /* 2 */ Double = js.native
+  
+  val CONNECTING: /* 0 */ Double = js.native
+  
+  val CONTINUE: /* 0 */ Double = js.native
+  
+  val OPEN: /* 1 */ Double = js.native
+  
+  val PING: /* 9 */ Double = js.native
+  
+  val PONG: /* 10 */ Double = js.native
+  
+  val TEXT: /* 1 */ Double = js.native
+  
+  def upgrade(accept: js.Function): ClassHandler = js.native
+  
   @js.native
   class Message () extends ClassWebSocketMessage
   
   @js.native
   class Socket () extends ClassWebSocket
-  
-  val BINARY: /* 2 */ Double = js.native
-  val CLOSE: /* 8 */ Double = js.native
-  val CLOSED: /* 3 */ Double = js.native
-  val CLOSING: /* 2 */ Double = js.native
-  val CONNECTING: /* 0 */ Double = js.native
-  val CONTINUE: /* 0 */ Double = js.native
-  val OPEN: /* 1 */ Double = js.native
-  val PING: /* 9 */ Double = js.native
-  val PONG: /* 10 */ Double = js.native
-  val TEXT: /* 1 */ Double = js.native
-  def upgrade(accept: js.Function): ClassHandler = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.coreJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #############################################################################################
 // ECMAScript Proposal
@@ -14,8 +14,11 @@ import scala.scalajs.js.annotation._
 // #############################################################################################
 @js.native
 trait Array[T] extends js.Object {
+  
   val lastIndex: Double = js.native
+  
   var lastItem: T = js.native
+  
   /**
     * Non-standard.
     */
@@ -38,4 +41,3 @@ trait Array[T] extends js.Object {
     callbackfn: js.Function4[/* memo */ U, /* value */ T, /* index */ Double, /* array */ Array[T], Unit]
   ): U = js.native
 }
-

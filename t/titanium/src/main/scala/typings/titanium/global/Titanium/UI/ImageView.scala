@@ -2,7 +2,7 @@ package typings.titanium.global.Titanium.UI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A view to display a single image or series of animated images.
@@ -11,4 +11,3 @@ import scala.scalajs.js.annotation._
 @js.native
 class ImageView ()
   extends typings.titanium.Titanium.UI.ImageView
-

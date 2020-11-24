@@ -7,7 +7,7 @@ import typings.heremaps.H.map.provider.TileProvider
 import typings.heremaps.H.math.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * BaseTileLayer encapsulates funcitonailty that is common to all layers that deliver tiles, such as H.map.layer.TileLayer. The functionality includes geo bounding box to grid
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BaseTileLayer extends Layer {
+  
   /**
     * This method cancels a previously requested tile.
     * @param x {number} - tile row position
@@ -22,6 +23,7 @@ trait BaseTileLayer extends Layer {
     * @param z {number} - zoom level
     */
   def cancelTile(x: Double, y: Double, z: Double): Unit = js.native
+  
   /**
     * This method transforms a geo-rectangle to geometrical projected rectangle at the current projection zoom level or at provided zoom level
     * @param geoRect {H.geo.Rect} - geo bounds to be projected
@@ -30,11 +32,13 @@ trait BaseTileLayer extends Layer {
     */
   def geoRectToRect(geoRect: Rect): typings.heremaps.H.math.Rect = js.native
   def geoRectToRect(geoRect: Rect, opt_zoom: Double): typings.heremaps.H.math.Rect = js.native
+  
   /**
     * This method returns the provider which feeds this layer with data.
     * @returns {H.map.provider.TileProvider} - this layer's provider
     */
   def getProvider(): TileProvider = js.native
+  
   /**
     * This method requests tiles from the data source (provider). It can return a set of tiles which are currently loaded. All tiles which are not yet loaded will be included in response
     * as soon as they will be available during subsequent calls.
@@ -52,6 +56,7 @@ trait BaseTileLayer extends Layer {
     cacheOnly: Boolean,
     prioCenter: Point
   ): Response = js.native
+  
   /**
     * This method returns tile grid for a bounding rectangle
     * @param rectBounds {H.math.Rect} - projected rect bounds which coorespond to geo bounding box
@@ -59,6 +64,7 @@ trait BaseTileLayer extends Layer {
     * @returns {H.math.Rect} - rectangle which represents the tile grid bounds
     */
   def getTileBounds(rectBounds: typings.heremaps.H.math.Rect, zoom: Double): typings.heremaps.H.math.Rect = js.native
+  
   /**
     * This method requests a single tile according to tile coordinates. It returns either a Tile object if it is already loaded or undefined and starts loading the tile
     * @param x {number} - tile row position
@@ -69,4 +75,3 @@ trait BaseTileLayer extends Layer {
     */
   def requestTile(x: Double, y: Double, z: Double, cacheOnly: Boolean): Tile | Unit = js.native
 }
-

@@ -2,7 +2,7 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The File object contains info about a user's files in SkyDrive. The Live
@@ -14,66 +14,81 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IFile extends js.Object {
+  
   /**
     * The time, in ISO 8601 format, that the client machine updated the
     * file last.
     */
   var client_updated_time: String = js.native
+  
   /**
     * The number of comments that are associated with the file.
     */
   var comments_count: Double = js.native
+  
   /**
     * A value that indicates whether comments are enabled for the file. If
     * comments can be made, this value is true; otherwise, it is false.
     */
   var comments_enabled: Boolean = js.native
+  
   /**
     * The time, in ISO 8601 format, at which the file was created.
     */
   var created_time: String = js.native
+  
   /**
     * A description of the file, or null if no description is specified.
     */
   var description: String = js.native
+  
   /**
     * Info about the user who uploaded the file.
     */
   var from: IUserInfo = js.native
+  
   /**
     * The File object's ID.
     */
   var id: String = js.native
+  
   /**
     * A value that indicates whether this file can be embedded. If this
     * file can be embedded, this value is true; otherwise, it is false.
     */
   var is_embeddable: Boolean = js.native
+  
   /**
     * A URL to view the item on SkyDrive.
     */
   var link: String = js.native
+  
   /**
     * The name of the file.
     */
   var name: String = js.native
+  
   /**
     * The ID of the folder the file is currently stored in.
     */
   var parent_id: String = js.native
+  
   /**
     * Object that contains permission info.
     */
   var shared_with: ISharedWith = js.native
+  
   /**
     * The size, in bytes, of the file.
     */
   var size: Double = js.native
+  
   /**
     * Sorts the items to specify the following criteria: updated, name,
     * size, or default.
     */
   var sort_by: String = js.native
+  
   /**
     * The URL to use to download the file from SkyDrive.
     * Warning: This value is not persistent. Use it immediately after
@@ -82,16 +97,19 @@ trait IFile extends js.Object {
     * OneNote notebook.
     */
   var source: String = js.native
+  
   /**
     * The type of object; in this case, "file".
     * Note: If the file is a Office OneNote notebook, the type structure is
     * set to "notebook".
     */
   var `type`: String = js.native
+  
   /**
     * The time, in ISO 8601 format, that the system updated the file last.
     */
   var updated_time: String = js.native
+  
   /**
     * The URL to upload file content hosted in SkyDrive.
     * Note: This structure is not available if the file is an Microsoft
@@ -99,8 +117,8 @@ trait IFile extends js.Object {
     */
   var upload_location: String = js.native
 }
-
 object IFile {
+  
   @scala.inline
   def apply(
     client_updated_time: String,
@@ -126,54 +144,74 @@ object IFile {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFile]
   }
+  
   @scala.inline
   implicit class IFileOps[Self <: IFile] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setClient_updated_time(value: String): Self = this.set("client_updated_time", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setComments_count(value: Double): Self = this.set("comments_count", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setComments_enabled(value: Boolean): Self = this.set("comments_enabled", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCreated_time(value: String): Self = this.set("created_time", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFrom(value: IUserInfo): Self = this.set("from", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIs_embeddable(value: Boolean): Self = this.set("is_embeddable", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParent_id(value: String): Self = this.set("parent_id", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setShared_with(value: ISharedWith): Self = this.set("shared_with", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSort_by(value: String): Self = this.set("sort_by", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUpdated_time(value: String): Self = this.set("updated_time", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setUpload_location(value: String): Self = this.set("upload_location", value.asInstanceOf[js.Any])
   }
-  
 }
-

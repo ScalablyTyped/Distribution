@@ -6,14 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/securitycenter/v1beta1", "securitycenter_v1beta1.Resource$Organizations$Sources")
 @js.native
 class ResourceOrganizationsSources protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
-  var findings: ResourceOrganizationsSourcesFindings = js.native
+  
   /**
     * securitycenter.organizations.sources.create
     * @desc Creates a source.
@@ -43,6 +44,9 @@ class ResourceOrganizationsSources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSource]
   ): Unit = js.native
+  
+  var findings: ResourceOrganizationsSourcesFindings = js.native
+  
   /**
     * securitycenter.organizations.sources.get
     * @desc Gets a source.
@@ -71,6 +75,7 @@ class ResourceOrganizationsSources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSource]
   ): Unit = js.native
+  
   /**
     * securitycenter.organizations.sources.getIamPolicy
     * @desc Gets the access control policy on the specified Source.
@@ -103,6 +108,7 @@ class ResourceOrganizationsSources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * securitycenter.organizations.sources.list
     * @desc Lists all sources belonging to an organization.
@@ -136,6 +142,7 @@ class ResourceOrganizationsSources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListSourcesResponse]
   ): Unit = js.native
+  
   /**
     * securitycenter.organizations.sources.patch
     * @desc Updates a source.
@@ -166,6 +173,7 @@ class ResourceOrganizationsSources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSource]
   ): Unit = js.native
+  
   /**
     * securitycenter.organizations.sources.setIamPolicy
     * @desc Sets the access control policy on the specified Source.
@@ -198,6 +206,7 @@ class ResourceOrganizationsSources protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
+  
   /**
     * securitycenter.organizations.sources.testIamPermissions
     * @desc Returns the permissions that a caller has on the specified source.
@@ -231,4 +240,3 @@ class ResourceOrganizationsSources protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
 }
-

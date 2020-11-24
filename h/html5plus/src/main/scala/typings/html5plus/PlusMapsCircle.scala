@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 地图上显示的圆圈对象
@@ -12,12 +12,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusMapsCircle extends js.Object {
+  
   /**
     * 获取圆圈中心点的坐标
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def getCenter(): PlusMapsPoint = js.native
+  
   /**
     * 获取圆圈的填充颜色
     * 如果填充颜色为无色，则返回空字符串。
@@ -25,36 +27,42 @@ trait PlusMapsCircle extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def getFillColor(): String = js.native
+  
   /**
     * 获取圆圈填充色的透明度
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def getFillOpacity(): Double = js.native
+  
   /**
     * 获取圆圈边框的线条宽度
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def getLineWidth(): Double = js.native
+  
   /**
     * 获取圆圈的半径
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def getRadius(): Double = js.native
+  
   /**
     * 获取圆圈的边框颜色
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def getStrokeColor(): String = js.native
+  
   /**
     * 获取圆圈边框的透明度
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def getStrokeOpacity(): Double = js.native
+  
   /**
     * 设置圆圈中心点的经纬度坐标
     * 该方法设置将导致地图中的圆圈立即更新。
@@ -63,6 +71,7 @@ trait PlusMapsCircle extends js.Object {
     */
   def setCenter(): Unit = js.native
   def setCenter(point: PlusMapsPoint): Unit = js.native
+  
   /**
     * 设置圆圈的填充颜色
     * 圆圈默认的圆圈填充颜色为无色，该方法设置将导致地图中的圆圈立即更新。
@@ -71,6 +80,7 @@ trait PlusMapsCircle extends js.Object {
     */
   def setFillColor(): Unit = js.native
   def setFillColor(color: String): Unit = js.native
+  
   /**
     * 设置圆圈填充颜色的透明度
     * 圆圈默认值为不透明。
@@ -80,6 +90,7 @@ trait PlusMapsCircle extends js.Object {
     */
   def setFillOpacity(): Unit = js.native
   def setFillOpacity(opacity: Double): Unit = js.native
+  
   /**
     * 设置圆圈边框的线条宽度
     * 圆圈边框的默认值为5。
@@ -89,6 +100,7 @@ trait PlusMapsCircle extends js.Object {
     */
   def setLineWidth(): Unit = js.native
   def setLineWidth(width: Double): Unit = js.native
+  
   /**
     * 设置圆圈的半径，单位为米
     * 该方法设置将导致地图中的圆圈立即更新。
@@ -97,6 +109,7 @@ trait PlusMapsCircle extends js.Object {
     */
   def setRadius(): Unit = js.native
   def setRadius(radius: Double): Unit = js.native
+  
   /**
     * 设置圆圈的边框颜色
     * 圆圈默认的圆圈边框颜色为黑色"#000000"，该方法设置将导致地图中的圆圈立即更新。
@@ -105,6 +118,7 @@ trait PlusMapsCircle extends js.Object {
     */
   def setStrokeColor(): Unit = js.native
   def setStrokeColor(color: String): Unit = js.native
+  
   /**
     * 设置圆圈的边框颜色
     * 圆圈默认值为不透明。
@@ -115,4 +129,3 @@ trait PlusMapsCircle extends js.Object {
   def setStrokeOpacity(): Unit = js.native
   def setStrokeOpacity(opacity: Double): Unit = js.native
 }
-

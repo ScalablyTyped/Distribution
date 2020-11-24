@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__components
 
-Typings are for version 9.0
+Typings are for version 9.8
 
 ## Library description:
 UI components for WordPress.
@@ -9,15 +9,16 @@ UI components for WordPress.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/components |
-| Keywords           | wordpress, components |
-| # releases         | 48 |
-| # dependents       | 20 |
-| # downloads        | 237913 |
+| Keywords           | wordpress, gutenberg, components |
+| # releases         | 65 |
+| # dependents       | 29 |
+| # downloads        | 808404 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/components/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
+- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fcomponents)
     
 

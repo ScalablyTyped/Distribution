@@ -2,7 +2,7 @@ package typings.postmark.mod.Models
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "Models.TemplateValidationOptions")
 @js.native
@@ -18,4 +18,3 @@ class TemplateValidationOptions protected ()
     InlineCssForHtmlTestRender: js.UndefOr[Boolean]
   ) = this()
 }
-

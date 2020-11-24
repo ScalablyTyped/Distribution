@@ -5,11 +5,12 @@ import typings.awsSdkClientGlacierNode.typesUploadMultipartPartInputMod.UploadMu
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-glacier-node/types/InputTypesUnion", JSImport.Namespace)
 @js.native
 object inputTypesUnionMod extends js.Object {
+  
   trait _InputTypesUnion extends js.Object
   
   /* Rewritten from type alias, can be one of: 
@@ -49,4 +50,3 @@ object inputTypesUnionMod extends js.Object {
   */
   type InputTypesUnion = _InputTypesUnion | UploadArchiveInput[Readable] | UploadMultipartPartInput[Readable]
 }
-

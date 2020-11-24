@@ -2,19 +2,21 @@ package typings.matterJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Vector")
 @js.native
 class Vector () extends js.Object {
+  
   var x: Double = js.native
+  
   var y: Double = js.native
 }
-
 /* static members */
 @JSImport("matter-js", "Vector")
 @js.native
 object Vector extends js.Object {
+  
   /**
     * Adds the two vectors.
     * @method add
@@ -25,6 +27,7 @@ object Vector extends js.Object {
     */
   def add(vectorA: Vector, vectorB: Vector): Vector = js.native
   def add(vectorA: Vector, vectorB: Vector, output: Vector): Vector = js.native
+  
   /**
     * Returns the angle in radians between the two vectors relative to the x-axis.
     * @method angle
@@ -33,6 +36,7 @@ object Vector extends js.Object {
     * @return {number} The angle in radians
     */
   def angle(vectorA: Vector, vectorB: Vector): Double = js.native
+  
   /**
     * Returns a new vector with `x` and `y` copied from the given `vector`.
     * @method clone
@@ -40,6 +44,7 @@ object Vector extends js.Object {
     * @return {vector} A new cloned vector
     */
   def clone(vector: Vector): Vector = js.native
+  
   /**
     * Creates a new vector.
     * @method create
@@ -51,6 +56,7 @@ object Vector extends js.Object {
   def create(x: js.UndefOr[scala.Nothing], y: Double): Vector = js.native
   def create(x: Double): Vector = js.native
   def create(x: Double, y: Double): Vector = js.native
+  
   /**
     * Returns the cross-product of two vectors.
     * @method cross
@@ -59,6 +65,7 @@ object Vector extends js.Object {
     * @return {number} The cross product of the two vectors
     */
   def cross(vectorA: Vector, vectorB: Vector): Double = js.native
+  
   /**
     * Returns the cross-product of three vectors.
     * @method cross3
@@ -68,6 +75,7 @@ object Vector extends js.Object {
     * @return {number} The cross product of the three vectors
     */
   def cross3(vectorA: Vector, vectorB: Vector, vectorC: Vector): Double = js.native
+  
   /**
     * Divides a vector and a scalar.
     * @method div
@@ -76,6 +84,7 @@ object Vector extends js.Object {
     * @return {vector} A new vector divided by scalar
     */
   def div(vector: Vector, scalar: Double): Vector = js.native
+  
   /**
     * Returns the dot-product of two vectors.
     * @method dot
@@ -84,6 +93,7 @@ object Vector extends js.Object {
     * @return {number} The dot product of the two vectors
     */
   def dot(vectorA: Vector, vectorB: Vector): Double = js.native
+  
   /**
     * Returns the magnitude (length) of a vector.
     * @method magnitude
@@ -91,6 +101,7 @@ object Vector extends js.Object {
     * @return {number} The magnitude of the vector
     */
   def magnitude(vector: Vector): Double = js.native
+  
   /**
     * Returns the magnitude (length) of a vector (therefore saving a `sqrt` operation).
     * @method magnitudeSquared
@@ -98,6 +109,7 @@ object Vector extends js.Object {
     * @return {number} The squared magnitude of the vector
     */
   def magnitudeSquared(vector: Vector): Double = js.native
+  
   /**
     * Multiplies a vector and a scalar.
     * @method mult
@@ -106,6 +118,7 @@ object Vector extends js.Object {
     * @return {vector} A new vector multiplied by scalar
     */
   def mult(vector: Vector, scalar: Double): Vector = js.native
+  
   /**
     * Negates both components of a vector such that it points in the opposite direction.
     * @method neg
@@ -113,6 +126,7 @@ object Vector extends js.Object {
     * @return {vector} The negated vector
     */
   def neg(vector: Vector): Vector = js.native
+  
   /**
     * Normalises a vector (such that its magnitude is `1`).
     * @method normalise
@@ -120,6 +134,7 @@ object Vector extends js.Object {
     * @return {vector} A new vector normalised
     */
   def normalise(vector: Vector): Vector = js.native
+  
   /**
     * Returns the perpendicular vector. Set `negate` to true for the perpendicular in the opposite direction.
     * @method perp
@@ -129,6 +144,7 @@ object Vector extends js.Object {
     */
   def perp(vector: Vector): Vector = js.native
   def perp(vector: Vector, negate: Boolean): Vector = js.native
+  
   /**
     * Rotates the vector about (0, 0) by specified angle.
     * @method rotate
@@ -137,6 +153,7 @@ object Vector extends js.Object {
     * @return {vector} A new vector rotated about (0, 0)
     */
   def rotate(vector: Vector, angle: Double): Vector = js.native
+  
   /**
     * Rotates the vector about a specified point by specified angle.
     * @method rotateAbout
@@ -148,6 +165,7 @@ object Vector extends js.Object {
     */
   def rotateAbout(vector: Vector, angle: Double, point: Vector): Vector = js.native
   def rotateAbout(vector: Vector, angle: Double, point: Vector, output: Vector): Vector = js.native
+  
   /**
     * Subtracts the two vectors.
     * @method sub
@@ -159,4 +177,3 @@ object Vector extends js.Object {
   def sub(vectorA: Vector, vectorB: Vector): Vector = js.native
   def sub(vectorA: Vector, vectorB: Vector, optional: Vector): Vector = js.native
 }
-

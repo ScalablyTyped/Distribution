@@ -4,11 +4,12 @@ import typings.samchon.communicatorMod.Communicator
 import typings.samchon.iprotocolMod.IProtocol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("samchon/protocol/communicator/server_connector/ServerConnector", JSImport.Namespace)
 @js.native
 object serverConnectorMod extends js.Object {
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.samchon.iprotocolMod.IProtocol because Already inherited
   - typings.samchon.icommunicatorMod.ICommunicator because Already inherited
@@ -21,18 +22,17 @@ object serverConnectorMod extends js.Object {
       *				   {@link IProtocol.replyData replyData()} as an {@link Invoke} object.
       */
     def this(listener: IProtocol) = this()
+    
     /**
       * @hidden
       */
     var _Handle_connect: js.Any = js.native
+    
     /**
       * @hidden
       */
     var _Send_dummy_packet_repeatedly: js.Any = js.native
-    /**
-      * @inheritdoc
-      */
-    var onConnect: js.Function = js.native
+    
     /**
       * @inheritdoc
       */
@@ -56,7 +56,10 @@ object serverConnectorMod extends js.Object {
       * @param port The port number to connect to.
       */
     def connect(ip: String, port: Double): Unit = js.native
+    
+    /**
+      * @inheritdoc
+      */
+    var onConnect: js.Function = js.native
   }
-  
 }
-

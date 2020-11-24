@@ -1,7 +1,7 @@
 
 # Scala.js typings for uk_dot_co_dot_workingedge_dot_phonegap_dot_plugin_dot_launchnavigator
 
-Typings are for version 5.0.4
+Typings are for version 5.0.5
 
 ## Library description:
 Cordova/Phonegap plugin to navigate to a destination using native navigation apps on Android, iOS, and Windows
@@ -10,9 +10,9 @@ Cordova/Phonegap plugin to navigate to a destination using native navigation app
 | ------------------ | :-------------: |
 | Full name          | uk.co.workingedge.phonegap.plugin.launchnavigator |
 | Keywords           | ecosystem:cordova, cordova, phonegap, ios, android, windows, navigation, navigator |
-| # releases         | 12 |
+| # releases         | 5 |
 | # dependents       | 3 |
-| # downloads        | 349572 |
+| # downloads        | 435214 |
 | # stars            | 1 |
 
 ## Links

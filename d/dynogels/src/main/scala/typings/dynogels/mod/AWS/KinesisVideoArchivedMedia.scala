@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.kinesisvideoarchivedmediaMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.KinesisVideoArchivedMedia")
 @js.native
@@ -14,4 +14,3 @@ class KinesisVideoArchivedMedia ()
   extends typings.awsSdk.mod.KinesisVideoArchivedMedia {
   def this(options: ClientConfiguration) = this()
 }
-

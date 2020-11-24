@@ -8,7 +8,7 @@ import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -18,29 +18,18 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TableStyle extends ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_TableStyle: RequestContext = js.native
-  /**
-    *
-    * Gets the name of the TableStyle.
-    *
-    * [Api set: ExcelApi 1.10]
-    */
-  var name: String = js.native
-  /**
-    *
-    * Specifies if this TableStyle object is read-only.
-    *
-    * [Api set: ExcelApi 1.10]
-    */
-  val readOnly: Boolean = js.native
+  
   /**
     * Deletes the TableStyle.
     *
     * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
+  
   /**
     * Creates a duplicate of this TableStyle with copies of all the style elements.
     *
@@ -48,6 +37,7 @@ trait TableStyle extends ClientObject {
     * @returns The new TableStyle object that has been duplicated from this TableStyle.
     */
   def duplicate(): TableStyle = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -58,6 +48,23 @@ trait TableStyle extends ClientObject {
   def load(propertyNamesAndPaths: Expand): TableStyle = js.native
   def load(propertyNames: String): TableStyle = js.native
   def load(propertyNames: js.Array[String]): TableStyle = js.native
+  
+  /**
+    *
+    * Gets the name of the TableStyle.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  var name: String = js.native
+  
+  /**
+    *
+    * Specifies if this TableStyle object is read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  val readOnly: Boolean = js.native
+  
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks
@@ -73,10 +80,10 @@ trait TableStyle extends ClientObject {
   def set(properties: TableStyleUpdateData, options: UpdateOptions): Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: TableStyle): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.TableStyle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableStyleData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): TableStyleData = js.native
 }
-

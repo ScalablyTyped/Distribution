@@ -23,7 +23,7 @@ import typings.screeps.screepsStrings.terminal
 import typings.screeps.screepsStrings.tower
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("OBSTACLE_OBJECT_TYPES")
 @js.native
@@ -52,4 +52,3 @@ object OBSTACLE_OBJECT_TYPES
         invaderCore
       ]
     ]
-

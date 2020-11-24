@@ -1,18 +1,19 @@
 package typings.tensorflowTfjsLayers.poolingMod
 
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
+import typings.tensorflowTfjsCore.distTensorMod.Tensor5D
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.tensorMod.Tensor
-import typings.tensorflowTfjsCore.tensorMod.Tensor5D
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataFormat
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PaddingMode
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PoolMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
 @js.native
 object pool3d extends js.Object {
+  
   def apply(x: Tensor5D, poolSize: js.Tuple3[Double, Double, Double]): Tensor[Rank] = js.native
   def apply(
     x: Tensor5D,
@@ -124,4 +125,3 @@ object pool3d extends js.Object {
     poolMode: PoolMode
   ): Tensor[Rank] = js.native
 }
-

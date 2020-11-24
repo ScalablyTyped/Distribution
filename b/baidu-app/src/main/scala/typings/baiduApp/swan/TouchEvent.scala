@@ -3,17 +3,19 @@ package typings.baiduApp.swan
 import typings.baiduApp.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TouchEvent[T /* <: TouchEventType */] extends BaseEvent[T, X] {
+  
   var changedTouches: js.Array[Touch] = js.native
+  
   var touches: js.Array[Touch] = js.native
 }
-
 object TouchEvent {
+  
   @scala.inline
-  def apply[/* <: typings.baiduApp.swan.TouchEventType */ T](
+  def apply[T /* <: TouchEventType */](
     changedTouches: js.Array[Touch],
     currentTarget: EventTarget,
     detail: X,
@@ -26,26 +28,32 @@ object TouchEvent {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchEvent[T]]
   }
+  
   @scala.inline
-  implicit class TouchEventOps[Self <: TouchEvent[_], /* <: typings.baiduApp.swan.TouchEventType */ T] (val x: Self with TouchEvent[T]) extends AnyVal {
+  implicit class TouchEventOps[Self <: TouchEvent[_], T /* <: TouchEventType */] (val x: Self with TouchEvent[T]) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setChangedTouchesVarargs(value: Touch*): Self = this.set("changedTouches", js.Array(value :_*))
+    
     @scala.inline
     def setChangedTouches(value: js.Array[Touch]): Self = this.set("changedTouches", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTouchesVarargs(value: Touch*): Self = this.set("touches", js.Array(value :_*))
+    
     @scala.inline
     def setTouches(value: js.Array[Touch]): Self = this.set("touches", value.asInstanceOf[js.Any])
   }
-  
 }
-

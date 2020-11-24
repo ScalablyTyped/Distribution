@@ -4,11 +4,12 @@ import typings.typescript.mod.ErrorCallback
 import typings.typescript.mod.Scanner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.createScanner")
 @js.native
 object createScanner extends js.Object {
+  
   def apply(languageVersion: typings.typescript.mod.ScriptTarget, skipTrivia: Boolean): Scanner = js.native
   def apply(
     languageVersion: typings.typescript.mod.ScriptTarget,
@@ -264,4 +265,3 @@ object createScanner extends js.Object {
     length: Double
   ): Scanner = js.native
 }
-

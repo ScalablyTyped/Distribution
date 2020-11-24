@@ -2,10 +2,11 @@ package typings.angularToasty.toasty
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IToastyService extends js.Object {
+  
   /**
     * Create a toast with the given options and type.
     * @param options
@@ -19,12 +20,14 @@ trait IToastyService extends js.Object {
     */
   def apply(title: String): Unit = js.native
   def apply(title: Double): Unit = js.native
+  
   /**
     * Clear toast(s).
     * @param id Optional ID to clear a specific toast.
     */
   def clear(): Unit = js.native
   def clear(id: Double): Unit = js.native
+  
   /**
     * Create a default toast with the given options.
     * @param options
@@ -36,6 +39,7 @@ trait IToastyService extends js.Object {
     */
   def default(title: String): Unit = js.native
   def default(title: Double): Unit = js.native
+  
   /**
     * Create an error toast with the given options.
     * @param options
@@ -47,10 +51,12 @@ trait IToastyService extends js.Object {
     */
   def error(title: String): Unit = js.native
   def error(title: Double): Unit = js.native
+  
   /**
     * Get the global config.
     */
   def getGlobalConfig(): IGlobalConfig = js.native
+  
   /**
     * Create an info toast with the given options.
     * @param options
@@ -62,6 +68,7 @@ trait IToastyService extends js.Object {
     */
   def info(title: String): Unit = js.native
   def info(title: Double): Unit = js.native
+  
   /**
     * Create a success toast with the given options.
     * @param options
@@ -73,6 +80,7 @@ trait IToastyService extends js.Object {
     */
   def success(title: String): Unit = js.native
   def success(title: Double): Unit = js.native
+  
   /**
     * Create a wait toast with the given options.
     * @param options
@@ -84,6 +92,7 @@ trait IToastyService extends js.Object {
     */
   def wait(title: String): Unit = js.native
   def wait(title: Double): Unit = js.native
+  
   /**
     * Create a warning toast with the given options.
     * @param options
@@ -96,4 +105,3 @@ trait IToastyService extends js.Object {
   def warning(title: String): Unit = js.native
   def warning(title: Double): Unit = js.native
 }
-

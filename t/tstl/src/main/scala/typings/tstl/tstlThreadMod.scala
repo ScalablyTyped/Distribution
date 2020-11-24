@@ -16,11 +16,23 @@ import typings.tstl.itimedlockableMod.ITimedLockable
 import typings.tstl.sharedLockMod.SharedLock.Closure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tstl/thread", JSImport.Namespace)
 @js.native
 object tstlThreadMod extends js.Object {
+  
+  def lock(items: PickILockablelock*): js.Promise[Unit] = js.native
+  
+  @JSName("sleep_for")
+  def sleepFor(ms: Double): js.Promise[Unit] = js.native
+  
+  @JSName("sleep_until")
+  def sleepUntil(at: Date): js.Promise[Unit] = js.native
+  
+  @JSName("try_lock")
+  def tryLock(items: PickILockabletrylock*): js.Promise[Double] = js.native
+  
   @js.native
   class Barrier protected ()
     extends typings.tstl.barrierMod.Barrier {
@@ -67,6 +79,36 @@ object tstlThreadMod extends js.Object {
       */
     def this(max: Max) = this()
   }
+  @js.native
+  object Semaphore extends js.Object {
+    
+    /**
+      * Capsules a {@link Semaphore} to be suitable for the {@link UniqueLock}.
+      *
+      * @param semaphore Target semaphore to capsule.
+      * @return Lockable instance suitable for the {@link UniqueLock}
+      */
+    @JSName("get_lockable")
+    def getLockable[SemaphoreT /* <: PickSemaphorenumberacquir */](semaphore: SemaphoreT): ITimedLockable = js.native
+  }
+  
+  @js.native
+  class SharedLock ()
+    extends typings.tstl.sharedLockMod.SharedLock
+  @js.native
+  object SharedLock extends js.Object {
+    
+    def lock[Mutex /* <: PickISharedLockablelocksh */](mutex: Mutex, closure: Closure): js.Promise[Unit] = js.native
+    
+    @JSName("try_lock")
+    def tryLock[Mutex /* <: PickISharedLockabletryloc */](mutex: Mutex, closure: Closure): js.Promise[Boolean] = js.native
+    
+    @JSName("try_lock_for")
+    def tryLockFor[Mutex /* <: PickISharedTimedLockablet */](mutex: Mutex, ms: Double, closure: Closure): js.Promise[Boolean] = js.native
+    
+    @JSName("try_lock_until")
+    def tryLockUntil[Mutex /* <: PickISharedTimedLockabletTrylockshareduntil */](mutex: Mutex, at: Date, closure: Closure): js.Promise[Boolean] = js.native
+  }
   
   @js.native
   /**
@@ -102,46 +144,21 @@ object tstlThreadMod extends js.Object {
   class TimedMutex ()
     extends typings.tstl.timedMutexMod.TimedMutex
   
-  def lock(items: PickILockablelock*): js.Promise[Unit] = js.native
-  @JSName("sleep_for")
-  def sleepFor(ms: Double): js.Promise[Unit] = js.native
-  @JSName("sleep_until")
-  def sleepUntil(at: Date): js.Promise[Unit] = js.native
-  @JSName("try_lock")
-  def tryLock(items: PickILockabletrylock*): js.Promise[Double] = js.native
   @js.native
-  object Semaphore extends js.Object {
-    /**
-      * Capsules a {@link Semaphore} to be suitable for the {@link UniqueLock}.
-      *
-      * @param semaphore Target semaphore to capsule.
-      * @return Lockable instance suitable for the {@link UniqueLock}
-      */
-    @JSName("get_lockable")
-    def getLockable[SemaphoreT /* <: PickSemaphorenumberacquir */](semaphore: SemaphoreT): ITimedLockable = js.native
-  }
-  
-  @js.native
-  object SharedLock extends js.Object {
-    def lock[Mutex /* <: PickISharedLockablelocksh */](mutex: Mutex, closure: Closure): js.Promise[Unit] = js.native
-    @JSName("try_lock")
-    def tryLock[Mutex /* <: PickISharedLockabletryloc */](mutex: Mutex, closure: Closure): js.Promise[Boolean] = js.native
-    @JSName("try_lock_for")
-    def tryLockFor[Mutex /* <: PickISharedTimedLockablet */](mutex: Mutex, ms: Double, closure: Closure): js.Promise[Boolean] = js.native
-    @JSName("try_lock_until")
-    def tryLockUntil[Mutex /* <: PickISharedTimedLockabletTrylockshareduntil */](mutex: Mutex, at: Date, closure: Closure): js.Promise[Boolean] = js.native
-  }
-  
+  class UniqueLock ()
+    extends typings.tstl.uniqueLockMod.UniqueLock
   @js.native
   object UniqueLock extends js.Object {
+    
     def lock[Mutex /* <: PickILockablelockunlock */](mutex: Mutex, closure: typings.tstl.uniqueLockMod.UniqueLock.Closure): js.Promise[Unit] = js.native
+    
     @JSName("try_lock")
     def tryLock[Mutex /* <: PickILockabletrylockunloc */](mutex: Mutex, closure: typings.tstl.uniqueLockMod.UniqueLock.Closure): js.Promise[Boolean] = js.native
+    
     @JSName("try_lock_for")
     def tryLockFor[Mutex /* <: PickITimedLockabletrylock */](mutex: Mutex, ms: Double, closure: typings.tstl.uniqueLockMod.UniqueLock.Closure): js.Promise[Boolean] = js.native
+    
     @JSName("try_lock_until")
     def tryLockUntil[Mutex /* <: PickITimedLockabletrylockTrylockuntil */](mutex: Mutex, at: Date, closure: typings.tstl.uniqueLockMod.UniqueLock.Closure): js.Promise[Boolean] = js.native
   }
-  
 }
-

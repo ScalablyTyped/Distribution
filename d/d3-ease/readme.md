@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-ease
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Easing functions for smooth animation.
@@ -10,9 +10,9 @@ Easing functions for smooth animation.
 | ------------------ | :-------------: |
 | Full name          | d3-ease |
 | Keywords           | d3, d3-module, ease, easing, animation, transition |
-| # releases         | 4 |
-| # dependents       | 159 |
-| # downloads        | 30367655 |
+| # releases         | 5 |
+| # dependents       | 202 |
+| # downloads        | 48010051 |
 | # stars            | 3 |
 
 ## Links

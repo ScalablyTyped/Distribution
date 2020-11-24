@@ -4,15 +4,19 @@ import typings.rxjs.innerSubscriberMod.InnerSubscriber
 import typings.rxjs.subscriberMod.Subscriber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/OuterSubscriber", JSImport.Namespace)
 @js.native
 object outerSubscriberMod extends js.Object {
+  
   @js.native
   class OuterSubscriber[T, R] () extends Subscriber[T] {
+    
     def notifyComplete(innerSub: InnerSubscriber[T, R]): Unit = js.native
+    
     def notifyError(error: js.Any, innerSub: InnerSubscriber[T, R]): Unit = js.native
+    
     def notifyNext(
       outerValue: T,
       innerValue: R,
@@ -21,6 +25,4 @@ object outerSubscriberMod extends js.Object {
       innerSub: InnerSubscriber[T, R]
     ): Unit = js.native
   }
-  
 }
-

@@ -2,11 +2,12 @@ package typings.botvs.mod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Mail")
 @js.native
 object Mail extends js.Object {
+  
   /**
     * 发送邮件函数
     *
@@ -30,4 +31,3 @@ object Mail extends js.Object {
     body: String
   ): Boolean = js.native
 }
-

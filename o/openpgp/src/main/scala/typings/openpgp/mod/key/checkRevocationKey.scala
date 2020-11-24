@@ -4,11 +4,12 @@ import typings.openpgp.mod.`type`.keyid.Keyid
 import typings.openpgp.mod.packet.Signature
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "key.checkRevocationKey")
 @js.native
 object checkRevocationKey extends js.Object {
+  
   /**
     * Check if signature has revocation key sub packet (not supported by OpenPGP.js)
     * and throw error if found
@@ -17,4 +18,3 @@ object checkRevocationKey extends js.Object {
     */
   def apply(signature: Signature, keyId: Keyid): Unit = js.native
 }
-

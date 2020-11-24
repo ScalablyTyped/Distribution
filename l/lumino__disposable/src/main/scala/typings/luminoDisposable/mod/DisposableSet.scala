@@ -3,7 +3,7 @@ package typings.luminoDisposable.mod
 import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/disposable", "DisposableSet")
 @js.native
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation._
   * Construct a new disposable set.
   */
 class DisposableSet () extends IDisposable {
+  
   var _isDisposed: js.Any = js.native
+  
   var _items: js.Any = js.native
+  
   /**
     * Add a disposable item to the set.
     *
@@ -22,10 +25,12 @@ class DisposableSet () extends IDisposable {
     * If the item is already contained in the set, this is a no-op.
     */
   def add(item: IDisposable): Unit = js.native
+  
   /**
     * Remove all items from the set.
     */
   def clear(): Unit = js.native
+  
   /**
     * Test whether the set contains a specific item.
     *
@@ -34,6 +39,7 @@ class DisposableSet () extends IDisposable {
     * @returns `true` if the set contains the item, `false` otherwise.
     */
   def contains(item: IDisposable): Boolean = js.native
+  
   /**
     * Remove a disposable item from the set.
     *
@@ -44,10 +50,10 @@ class DisposableSet () extends IDisposable {
     */
   def remove(item: IDisposable): Unit = js.native
 }
-
 @JSImport("@lumino/disposable", "DisposableSet")
 @js.native
 object DisposableSet extends js.Object {
+  
   /**
     * Create a disposable set from an iterable of items.
     *
@@ -57,4 +63,3 @@ object DisposableSet extends js.Object {
     */
   def from(items: IterableOrArrayLike[IDisposable]): DisposableSet = js.native
 }
-

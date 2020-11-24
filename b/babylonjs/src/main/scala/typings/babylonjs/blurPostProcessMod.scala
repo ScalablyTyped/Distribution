@@ -6,14 +6,16 @@ import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.mathVectorMod.Vector2
 import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/PostProcesses/blurPostProcess", JSImport.Namespace)
 @js.native
 object blurPostProcessMod extends js.Object {
+  
   @js.native
   class BlurPostProcess protected () extends PostProcess {
     /**
@@ -31,10 +33,9 @@ object blurPostProcessMod extends js.Object {
       */
     def this(
       name: String,
-      /** The direction in which to blur the image. */
-    direction: Vector2,
+      direction: Vector2,
       kernel: Double,
-      options: Double,
+      options: Double | PostProcessOptions,
       camera: Nullable[Camera],
       samplingMode: js.UndefOr[Double],
       engine: js.UndefOr[Engine],
@@ -43,33 +44,14 @@ object blurPostProcessMod extends js.Object {
       defines: js.UndefOr[String],
       blockCompilation: js.UndefOr[Boolean]
     ) = this()
-    def this(
-      name: String,
-      /** The direction in which to blur the image. */
-    direction: Vector2,
-      kernel: Double,
-      options: PostProcessOptions,
-      camera: Nullable[Camera],
-      samplingMode: js.UndefOr[Double],
-      engine: js.UndefOr[Engine],
-      reusable: js.UndefOr[Boolean],
-      textureType: js.UndefOr[Double],
-      defines: js.UndefOr[String],
-      blockCompilation: js.UndefOr[Boolean]
-    ) = this()
-    var _idealKernel: Double = js.native
-    var _kernel: Double = js.native
-    var _packedFloat: Boolean = js.native
-    var _staticDefines: js.Any = js.native
-    var blockCompilation: js.Any = js.native
-    /** The direction in which to blur the image. */
-    var direction: Vector2 = js.native
+    
     /**
       * Calculates the value of a Gaussian distribution with sigma 3 at a given point.
       * @param x The point on the Gaussian distribution to sample.
       * @return the value of the Gaussian function at x.
       */
     /* protected */ def _gaussianWeight(x: Double): Double = js.native
+    
     /**
       * Generates a string that can be used as a floating point number in GLSL.
       * @param x Value to print.
@@ -78,6 +60,11 @@ object blurPostProcessMod extends js.Object {
       */
     /* protected */ def _glslFloat(x: Double): String = js.native
     /* protected */ def _glslFloat(x: Double, decimalFigures: Double): String = js.native
+    
+    var _idealKernel: Double = js.native
+    
+    var _kernel: Double = js.native
+    
     /**
       * Best kernels are odd numbers that when divided by 2, their integer part is even, so 5, 9 or 13.
       * Other odd kernels optimize correctly but require proportionally more samples, even kernels are
@@ -88,12 +75,27 @@ object blurPostProcessMod extends js.Object {
       * @return Nearest best kernel.
       */
     /* protected */ def _nearestBestKernel(idealKernel: Double): Double = js.native
+    
+    var _packedFloat: Boolean = js.native
+    
+    var _staticDefines: js.Any = js.native
+    
     /* protected */ def _updateParameters(): Unit = js.native
+    /* protected */ def _updateParameters(
+      onCompiled: js.UndefOr[scala.Nothing],
+      onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
+    ): Unit = js.native
     /* protected */ def _updateParameters(onCompiled: js.Function1[/* effect */ Effect, Unit]): Unit = js.native
     /* protected */ def _updateParameters(
       onCompiled: js.Function1[/* effect */ Effect, Unit],
       onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
     ): Unit = js.native
+    
+    var blockCompilation: js.Any = js.native
+    
+    /** The direction in which to blur the image. */
+    var direction: Vector2 = js.native
+    
     /**
       * Gets the length in pixels of the blur sample region
       */
@@ -101,7 +103,8 @@ object blurPostProcessMod extends js.Object {
     /**
       * Sets the length in pixels of the blur sample region
       */
-    def kernel(v: Double): js.Any = js.native
+    def kernel_=(v: Double): Unit = js.native
+    
     /**
       * Gets wether or not the blur is unpacking/repacking floats
       */
@@ -109,8 +112,31 @@ object blurPostProcessMod extends js.Object {
     /**
       * Sets wether or not the blur needs to unpack/repack floats
       */
-    def packedFloat(v: Boolean): js.Any = js.native
+    def packedFloat_=(v: Boolean): Unit = js.native
+    
+    /**
+      * Updates the effect with the current post process compile time values and recompiles the shader.
+      * @param defines Define statements that should be added at the beginning of the shader. (default: null)
+      * @param uniforms Set of uniform variables that will be passed to the shader. (default: null)
+      * @param samplers Set of Texture2D variables that will be passed to the shader. (default: null)
+      * @param indexParameters The index parameters to be used for babylons include syntax "#include<kernelBlurVaryingDeclaration>[0..varyingCount]". (default: undefined) See usage in babylon.blurPostProcess.ts and kernelBlur.vertex.fx
+      * @param onCompiled Called when the shader has been compiled.
+      * @param onError Called if there is an error when compiling a shader.
+      */
+    def updateEffect(
+      defines: js.UndefOr[Nullable[String]],
+      uniforms: js.UndefOr[Nullable[js.Array[String]]],
+      samplers: js.UndefOr[Nullable[js.Array[String]]],
+      indexParameters: js.UndefOr[js.Any],
+      onCompiled: js.UndefOr[js.Function1[/* effect */ Effect, Unit]],
+      onError: js.UndefOr[js.Function2[/* effect */ Effect, /* errors */ String, Unit]]
+    ): Unit = js.native
   }
-  
+  /* static members */
+  @js.native
+  object BlurPostProcess extends js.Object {
+    
+    /** @hidden */
+    def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[BlurPostProcess] = js.native
+  }
 }
-

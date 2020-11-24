@@ -10,9 +10,9 @@ Knockout makes it easier to create rich, responsive UIs with JavaScript
 | ------------------ | :-------------: |
 | Full name          | knockout |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 255 |
-| # downloads        | 1378530 |
+| # releases         | 4 |
+| # dependents       | 291 |
+| # downloads        | 1885649 |
 | # stars            | 21 |
 
 ## Links

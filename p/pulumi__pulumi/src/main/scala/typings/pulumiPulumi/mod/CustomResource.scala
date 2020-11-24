@@ -4,7 +4,7 @@ import typings.pulumiPulumi.outputMod.Inputs
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/pulumi", "CustomResource")
 @js.native
@@ -22,21 +22,37 @@ abstract class CustomResource protected ()
     * @param name The _unique_ name of the resource.
     * @param props The arguments to use to populate the new resource.
     * @param opts A bag of options that control this resource's behavior.
+    * @param dependency True if this is a synthetic resource used internally for dependency tracking.
     */
   def this(t: String, name: String) = this()
   def this(t: String, name: String, props: Inputs) = this()
   def this(t: String, name: String, props: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(t: String, name: String, props: Inputs, opts: CustomResourceOptions) = this()
+  def this(
+    t: String,
+    name: String,
+    props: js.UndefOr[scala.Nothing],
+    opts: js.UndefOr[scala.Nothing],
+    dependency: Boolean
+  ) = this()
+  def this(
+    t: String,
+    name: String,
+    props: js.UndefOr[scala.Nothing],
+    opts: CustomResourceOptions,
+    dependency: Boolean
+  ) = this()
+  def this(t: String, name: String, props: Inputs, opts: js.UndefOr[scala.Nothing], dependency: Boolean) = this()
+  def this(t: String, name: String, props: Inputs, opts: CustomResourceOptions, dependency: Boolean) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/pulumi", "CustomResource")
 @js.native
 object CustomResource extends js.Object {
+  
   /**
     * Returns true if the given object is an instance of CustomResource.  This is designed to work even when
     * multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.CustomResource */ Boolean = js.native
 }
-

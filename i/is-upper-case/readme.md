@@ -11,8 +11,8 @@ Returns `true` if the string is upper case only.
 | Full name          | is-upper-case |
 | Keywords           | is, upper, case, check, boolean |
 | # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 40916309 |
+| # dependents       | 5 |
+| # downloads        | 54894337 |
 | # stars            | 1 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.kmsMod.ClientConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.KMS")
 @js.native
@@ -14,4 +14,3 @@ class KMS ()
   extends typings.awsSdk.mod.KMS {
   def this(options: ClientConfiguration) = this()
 }
-

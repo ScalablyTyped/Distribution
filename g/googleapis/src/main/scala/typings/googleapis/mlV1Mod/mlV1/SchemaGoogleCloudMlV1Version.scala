@@ -3,7 +3,7 @@ package typings.googleapis.mlV1Mod.mlV1
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a version of the model.  Each version is a trained model
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SchemaGoogleCloudMlV1Version extends js.Object {
+  
   /**
     * Automatically scale the number of nodes used to serve the model in
     * response to increases and decreases in traffic. Care should be taken to
@@ -22,10 +23,12 @@ trait SchemaGoogleCloudMlV1Version extends js.Object {
     * start seeing increases in latency and 429 response codes.
     */
   var autoScaling: js.UndefOr[SchemaGoogleCloudMlV1AutoScaling] = js.native
+  
   /**
     * Output only. The time the version was created.
     */
   var createTime: js.UndefOr[String] = js.native
+  
   /**
     * Required. The Google Cloud Storage location of the trained model used to
     * create the version. See the [guide to model
@@ -38,14 +41,17 @@ trait SchemaGoogleCloudMlV1Version extends js.Object {
     * model files can&#39;t exceed 1000.
     */
   var deploymentUri: js.UndefOr[String] = js.native
+  
   /**
     * Optional. The description specified for the version when it was created.
     */
   var description: js.UndefOr[String] = js.native
+  
   /**
     * Output only. The details of a failure or a cancellation.
     */
   var errorMessage: js.UndefOr[String] = js.native
+  
   /**
     * `etag` is used for optimistic concurrency control as a way to help
     * prevent simultaneous updates of a model from overwriting each other. It
@@ -56,6 +62,7 @@ trait SchemaGoogleCloudMlV1Version extends js.Object {
     * to ensure that their change will be applied to the model as intended.
     */
   var etag: js.UndefOr[String] = js.native
+  
   /**
     * Optional. The machine learning framework Cloud ML Engine uses to train
     * this version of the model. Valid values are `TENSORFLOW`, `SCIKIT_LEARN`,
@@ -65,6 +72,7 @@ trait SchemaGoogleCloudMlV1Version extends js.Object {
     * of the model to 1.4 or greater.
     */
   var framework: js.UndefOr[String] = js.native
+  
   /**
     * Output only. If true, this version will be used to handle prediction
     * requests that do not specify a version.  You can change the default
@@ -72,6 +80,7 @@ trait SchemaGoogleCloudMlV1Version extends js.Object {
     * [projects.methods.versions.setDefault](/ml-engine/reference/rest/v1/projects.models.versions/setDefault).
     */
   var isDefault: js.UndefOr[Boolean] = js.native
+  
   /**
     * Optional. One or more labels that you can add, to organize your model
     * versions. Each label is a key-value pair, where both the key and the
@@ -81,10 +90,12 @@ trait SchemaGoogleCloudMlV1Version extends js.Object {
     * labels&lt;/a&gt;.
     */
   var labels: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * Output only. The time the version was last used for prediction.
     */
   var lastUseTime: js.UndefOr[String] = js.native
+  
   /**
     * Optional. The type of machine on which to serve the model. Currently only
     * applies to online prediction service. &lt;dl&gt;
@@ -97,6 +108,7 @@ trait SchemaGoogleCloudMlV1Version extends js.Object {
     * &lt;/dd&gt; &lt;/dl&gt;
     */
   var machineType: js.UndefOr[String] = js.native
+  
   /**
     * Manually select the number of nodes to use for serving the model. You
     * should generally use `auto_scaling` with an appropriate `min_nodes`
@@ -106,11 +118,13 @@ trait SchemaGoogleCloudMlV1Version extends js.Object {
     * number of nodes.
     */
   var manualScaling: js.UndefOr[SchemaGoogleCloudMlV1ManualScaling] = js.native
+  
   /**
     * Required.The name specified for the version when it was created.  The
     * version name must be unique within the model it is created in.
     */
   var name: js.UndefOr[String] = js.native
+  
   /**
     * Optional. The version of Python used in prediction. If not set, the
     * default version is &#39;2.7&#39;. Python &#39;3.5&#39; is available when
@@ -118,6 +132,7 @@ trait SchemaGoogleCloudMlV1Version extends js.Object {
     * works with all supported runtime versions.
     */
   var pythonVersion: js.UndefOr[String] = js.native
+  
   /**
     * Optional. The Cloud ML Engine runtime version to use for this deployment.
     * If not set, Cloud ML Engine uses the default stable version, 1.0. For
@@ -126,94 +141,129 @@ trait SchemaGoogleCloudMlV1Version extends js.Object {
     * versions](/ml-engine/docs/versioning).
     */
   var runtimeVersion: js.UndefOr[String] = js.native
+  
   /**
     * Output only. The state of a version.
     */
   var state: js.UndefOr[String] = js.native
 }
-
 object SchemaGoogleCloudMlV1Version {
+  
   @scala.inline
   def apply(): SchemaGoogleCloudMlV1Version = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudMlV1Version]
   }
+  
   @scala.inline
   implicit class SchemaGoogleCloudMlV1VersionOps[Self <: SchemaGoogleCloudMlV1Version] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAutoScaling(value: SchemaGoogleCloudMlV1AutoScaling): Self = this.set("autoScaling", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAutoScaling: Self = this.set("autoScaling", js.undefined)
+    
     @scala.inline
     def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    
     @scala.inline
     def setDeploymentUri(value: String): Self = this.set("deploymentUri", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDeploymentUri: Self = this.set("deploymentUri", js.undefined)
+    
     @scala.inline
     def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDescription: Self = this.set("description", js.undefined)
+    
     @scala.inline
     def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    
     @scala.inline
     def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEtag: Self = this.set("etag", js.undefined)
+    
     @scala.inline
     def setFramework(value: String): Self = this.set("framework", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteFramework: Self = this.set("framework", js.undefined)
+    
     @scala.inline
     def setIsDefault(value: Boolean): Self = this.set("isDefault", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIsDefault: Self = this.set("isDefault", js.undefined)
+    
     @scala.inline
     def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLabels: Self = this.set("labels", js.undefined)
+    
     @scala.inline
     def setLastUseTime(value: String): Self = this.set("lastUseTime", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteLastUseTime: Self = this.set("lastUseTime", js.undefined)
+    
     @scala.inline
     def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteMachineType: Self = this.set("machineType", js.undefined)
+    
     @scala.inline
     def setManualScaling(value: SchemaGoogleCloudMlV1ManualScaling): Self = this.set("manualScaling", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteManualScaling: Self = this.set("manualScaling", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
+    
     @scala.inline
     def setPythonVersion(value: String): Self = this.set("pythonVersion", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deletePythonVersion: Self = this.set("pythonVersion", js.undefined)
+    
     @scala.inline
     def setRuntimeVersion(value: String): Self = this.set("runtimeVersion", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRuntimeVersion: Self = this.set("runtimeVersion", js.undefined)
+    
     @scala.inline
     def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteState: Self = this.set("state", js.undefined)
   }
-  
 }
-

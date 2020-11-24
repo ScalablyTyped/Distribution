@@ -2,10 +2,11 @@ package typings.servicenowLondon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GlideScopedEvaluator extends js.Object {
+  
   /**
     * Evaluates a script from a GlideRecord field.
     *
@@ -38,6 +39,7 @@ trait GlideScopedEvaluator extends js.Object {
   def evaluateScript(grObj: ScopedGlideRecord, scriptField: js.UndefOr[scala.Nothing], variables: js.Object): js.Any = js.native
   def evaluateScript(grObj: ScopedGlideRecord, scriptField: String): js.Any = js.native
   def evaluateScript(grObj: ScopedGlideRecord, scriptField: String, variables: js.Object): js.Any = js.native
+  
   /**
     * Returns a variable from a GlideScopedEvaluator object.
     *
@@ -64,6 +66,7 @@ trait GlideScopedEvaluator extends js.Object {
     * }
     */
   def getVariable(name: String): js.Any = js.native
+  
   /**
     * Puts a variable into the GlideScopedEvaluator object. These variables are available to
     * the script that this GlideScopedEvaluator object runs.
@@ -92,4 +95,3 @@ trait GlideScopedEvaluator extends js.Object {
     */
   def putVariable(name: String, value: js.Any): Unit = js.native
 }
-

@@ -10,10 +10,10 @@ Easily exclude node_modules in Webpack bundle
 | ------------------ | :-------------: |
 | Full name          | webpack-node-externals |
 | Keywords           | webpack, node_modules, node, bundle, externals |
-| # releases         | 4 |
-| # dependents       | 890 |
-| # downloads        | 28457929 |
-| # stars            | 30 |
+| # releases         | 6 |
+| # dependents       | 1046 |
+| # downloads        | 45111290 |
+| # stars            | 31 |
 
 ## Links
 - [Homepage](https://github.com/liady/webpack-node-externals)

@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Devices")
 @js.native
 class ResourceDevices protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * androidenterprise.devices.get
     * @desc Retrieves the details of a device.
@@ -43,6 +45,7 @@ class ResourceDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDevice]
   ): Unit = js.native
+  
   /**
     * androidenterprise.devices.getState
     * @desc Retrieves whether a device's access to Google services is enabled
@@ -77,6 +80,7 @@ class ResourceDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeviceState]
   ): Unit = js.native
+  
   /**
     * androidenterprise.devices.list
     * @desc Retrieves the IDs of all of a user's devices.
@@ -106,6 +110,7 @@ class ResourceDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDevicesListResponse]
   ): Unit = js.native
+  
   /**
     * androidenterprise.devices.patch
     * @desc Updates the device policy. This method supports patch semantics.
@@ -138,6 +143,7 @@ class ResourceDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDevice]
   ): Unit = js.native
+  
   /**
     * androidenterprise.devices.setState
     * @desc Sets whether a device's access to Google services is enabled or
@@ -173,6 +179,7 @@ class ResourceDevices protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeviceState]
   ): Unit = js.native
+  
   /**
     * androidenterprise.devices.update
     * @desc Updates the device policy
@@ -206,4 +213,3 @@ class ResourceDevices protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDevice]
   ): Unit = js.native
 }
-

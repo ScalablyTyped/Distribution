@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.domainmodelsMod.domainmodels
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
 import typings.mendixmodelsdk.elementsMod.IByNameReferrable
@@ -7,42 +8,77 @@ import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
+import typings.mendixmodelsdk.structuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/attributes relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/attributes relevant section in reference guide}
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAttribute because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsEntity, name, `type`, value */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Attribute")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAttribute because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsEntity, name, `type`, value, capabilities */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Attribute")
 @js.native
 class Attribute protected ()
-  extends Element
+  extends Element[IModel]
      with IByNameReferrable {
   def this(
     model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
+  
+  /**
+    * In version 8.13.0: introduced
+    */
+  def capabilities: AttributeCapabilities = js.native
+  def capabilities_=(newValue: AttributeCapabilities): Unit = js.native
+  /**
+    * This property is required and cannot be set to null.
+    *
+    * In version 8.13.0: introduced
+    */
+  @JSName("capabilities")
+  val capabilities_FAttribute: IAttributeCapabilities = js.native
+  
+  def containerAsEntity: Entity = js.native
   @JSName("containerAsEntity")
   val containerAsEntity_FAttribute: IEntity = js.native
-  @JSName("model")
-  var model_FAttribute: IModel = js.native
+  
+  def dataStorageGuid: String = js.native
+  def dataStorageGuid_=(newValue: String): Unit = js.native
+  
+  def documentation: String = js.native
+  def documentation_=(newValue: String): Unit = js.native
+  
+  def name: String = js.native
+  def name_=(newValue: String): Unit = js.native
   @JSName("name")
   val name_FAttribute: String = js.native
+  
+  @JSName("qualifiedName")
+  def qualifiedName_MAttribute: String | Null = js.native
+  
+  def `type`: AttributeType = js.native
+  def type_=(newValue: AttributeType): Unit = js.native
   /**
     * This property is required and cannot be set to null.
     */
   @JSName("type")
   val type_FAttribute: IAttributeType = js.native
+  
+  /**
+    * In version 6.6.0: added public
+    */
+  def value: ValueType = js.native
+  def value_=(newValue: ValueType): Unit = js.native
   /**
     * This property is required and cannot be set to null.
     *
@@ -50,41 +86,27 @@ class Attribute protected ()
     */
   @JSName("value")
   val value_FAttribute: IValueType = js.native
-  def containerAsEntity: Entity = js.native
-  def dataStorageGuid: String = js.native
-  def dataStorageGuid_=(newValue: String): Unit = js.native
-  def documentation: String = js.native
-  def documentation_=(newValue: String): Unit = js.native
-  def name: String = js.native
-  def name_=(newValue: String): Unit = js.native
-  @JSName("qualifiedName")
-  def qualifiedName_MAttribute: String | Null = js.native
-  def `type`: AttributeType = js.native
-  def type_=(newValue: AttributeType): Unit = js.native
-  /**
-    * In version 6.6.0: added public
-    */
-  def value: ValueType = js.native
-  def value_=(newValue: ValueType): Unit = js.native
 }
-
 /* static members */
 @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Attribute")
 @js.native
 object Attribute extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+  
   /**
     * Creates and returns a new Attribute instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): Attribute = js.native
+  
   /**
     * Creates and returns a new Attribute instance in the SDK and on the server.
     * The new Attribute will be automatically stored in the 'attributes' property
     * of the parent Entity element passed as argument.
     */
   def createIn(container: Entity): Attribute = js.native
+  
+  var structureTypeName: String = js.native
+  
+  var versionInfo: StructureVersionInfo = js.native
 }
-

@@ -10,9 +10,9 @@ Consistent checksum calculation of JSON objects.
 | ------------------ | :-------------: |
 | Full name          | jsum |
 | Keywords           | JSON, checksum, hash |
-| # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 49459 |
+| # releases         | 0 |
+| # dependents       | 5 |
+| # downloads        | 106812 |
 | # stars            | 1 |
 
 ## Links

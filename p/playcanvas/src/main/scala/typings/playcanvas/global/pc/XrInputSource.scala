@@ -2,7 +2,7 @@ package typings.playcanvas.global.pc
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents XR input source, which is any input mechanism which allows the user to perform targeted actions in the same virtual space as the viewer. Example XR input sources include, but are not limited to, handheld controllers, optically tracked hands, and gaze-based input methods that operate on the viewer's pose.
@@ -20,13 +20,14 @@ import scala.scalajs.js.annotation._
   * * {@link pc.XRHAND_RIGHT}: Right - indicates that input source is meant to be held in right hand.
   * @property profiles - List of input profile names indicating both the prefered visual representation and behavior of the input source.
   * @property grip - If input source can be held, then it will have node with its world transformation, that can be used to position and rotate virtual joystics based on it.
+  * @property hand - If input source is a tracked hand, then it will point to {@link pc.XrHand} otherwise it is null.
   * @property gamepad - If input source has buttons, triggers, thumbstick or touchpad, then this object provides access to its states.
   * @property selecting - True if input source is in active primary action between selectstart and selectend events.
   * @property elementInput - Set to true to allow input source to interact with Element components. Defaults to true.
   * @property elementEntity - If {@link pc.XrInputSource#elementInput} is true, this property will hold entity with Element component at which this input source is hovering, or null if not hovering over any element.
   * @property hitTestSources - list of active {@link pc.XrHitTestSource} created by this input source.
   * @param manager - WebXR Manager.
-  * @param xrInputSource - XRInputSource object that is created by WebXR API.
+  * @param xrInputSource - [XRInputSource]{@link https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource} object that is created by WebXR API.
   */
 @JSGlobal("pc.XrInputSource")
 @js.native
@@ -34,4 +35,3 @@ class XrInputSource protected ()
   extends typings.playcanvas.pc.XrInputSource {
   def this(manager: typings.playcanvas.pc.XrManager, xrInputSource: js.Any) = this()
 }
-

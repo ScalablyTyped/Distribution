@@ -2,11 +2,12 @@ package typings.del.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("del", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
   	Delete files and directories using glob patterns.
   	Note that glob patterns can only contain forward-slashes, not backward-slashes. Windows file paths can use backward-slashes as long as the path does not contain any glob-like characters, otherwise use `path.posix.join()` instead of `path.join()`.
@@ -28,6 +29,7 @@ object ^ extends js.Object {
   def apply(patterns: String, options: Options): js.Promise[js.Array[String]] = js.native
   def apply(patterns: js.Array[String]): js.Promise[js.Array[String]] = js.native
   def apply(patterns: js.Array[String], options: Options): js.Promise[js.Array[String]] = js.native
+  
   /**
   	Synchronously delete files and directories using glob patterns.
   	Note that glob patterns can only contain forward-slashes, not backward-slashes. Windows file paths can use backward-slashes as long as the path does not contain any glob-like characters, otherwise use `path.posix.join()` instead of `path.join()`.
@@ -42,4 +44,3 @@ object ^ extends js.Object {
   def sync(patterns: js.Array[String]): js.Array[String] = js.native
   def sync(patterns: js.Array[String], options: Options): js.Array[String] = js.native
 }
-

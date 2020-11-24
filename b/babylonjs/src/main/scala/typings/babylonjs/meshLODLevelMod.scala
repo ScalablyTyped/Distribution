@@ -4,11 +4,12 @@ import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Meshes/meshLODLevel", JSImport.Namespace)
 @js.native
 object meshLODLevelMod extends js.Object {
+  
   @js.native
   class MeshLODLevel protected () extends js.Object {
     /**
@@ -22,11 +23,11 @@ object meshLODLevelMod extends js.Object {
       /** Defines the mesh to use to render this level */
     mesh: Nullable[Mesh]
     ) = this()
+    
     /** Defines the distance where this level should start being displayed */
     var distance: Double = js.native
+    
     /** Defines the mesh to use to render this level */
     var mesh: Nullable[Mesh] = js.native
   }
-  
 }
-

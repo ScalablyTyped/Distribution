@@ -4,26 +4,38 @@ import typings.activexOffice.Office.GlowFormat
 import typings.activexOffice.Office.SoftEdgeFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChartFormat extends js.Object {
+  
   val Application: typings.activexExcel.Excel.Application = js.native
+  
   val Creator: XlCreator = js.native
+  
   @JSName("Excel.ChartFormat_typekey")
   var ExcelDotChartFormat_typekey: ChartFormat = js.native
+  
   val Fill: FillFormat = js.native
+  
   val Glow: GlowFormat = js.native
+  
   val Line: LineFormat = js.native
+  
   val Parent: js.Any = js.native
+  
   val PictureFormat: typings.activexExcel.Excel.PictureFormat = js.native
+  
   val Shadow: ShadowFormat = js.native
+  
   val SoftEdge: SoftEdgeFormat = js.native
+  
   val TextFrame2: typings.activexExcel.Excel.TextFrame2 = js.native
+  
   val ThreeD: ThreeDFormat = js.native
 }
-
 object ChartFormat {
+  
   @scala.inline
   def apply(
     Application: Application,
@@ -43,42 +55,56 @@ object ChartFormat {
     __obj.updateDynamic("Excel.ChartFormat_typekey")(ExcelDotChartFormat_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartFormat]
   }
+  
   @scala.inline
   implicit class ChartFormatOps[Self <: ChartFormat] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setExcelDotChartFormat_typekey(value: ChartFormat): Self = this.set("Excel.ChartFormat_typekey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFill(value: FillFormat): Self = this.set("Fill", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setGlow(value: GlowFormat): Self = this.set("Glow", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setLine(value: LineFormat): Self = this.set("Line", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPictureFormat(value: PictureFormat): Self = this.set("PictureFormat", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setShadow(value: ShadowFormat): Self = this.set("Shadow", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSoftEdge(value: SoftEdgeFormat): Self = this.set("SoftEdge", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTextFrame2(value: TextFrame2): Self = this.set("TextFrame2", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setThreeD(value: ThreeDFormat): Self = this.set("ThreeD", value.asInstanceOf[js.Any])
   }
-  
 }
-

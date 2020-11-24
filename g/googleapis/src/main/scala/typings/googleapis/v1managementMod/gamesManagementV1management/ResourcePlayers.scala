@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesManagement/v1management", "gamesManagement_v1management.Resource$Players")
 @js.native
 class ResourcePlayers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gamesManagement.players.hide
     * @desc Hide the given player's leaderboard scores from the given
@@ -40,6 +42,7 @@ class ResourcePlayers protected () extends js.Object {
   ): Unit = js.native
   def hide(params: ParamsResourcePlayersHide, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def hide(params: ParamsResourcePlayersHide, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  
   /**
     * gamesManagement.players.unhide
     * @desc Unhide the given player's leaderboard scores from the given
@@ -68,4 +71,3 @@ class ResourcePlayers protected () extends js.Object {
   def unhide(params: ParamsResourcePlayersUnhide, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def unhide(params: ParamsResourcePlayersUnhide, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
 }
-

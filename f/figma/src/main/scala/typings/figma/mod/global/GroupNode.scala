@@ -3,7 +3,7 @@ package typings.figma.mod.global
 import typings.figma.figmaStrings.GROUP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GroupNode
@@ -16,6 +16,6 @@ trait GroupNode
      with BlendMixin
      with LayoutMixin
      with ExportMixin {
+  
   val `type`: GROUP = js.native
 }
-

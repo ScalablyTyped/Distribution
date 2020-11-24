@@ -11,8 +11,8 @@ Build, display, and solve algebraic equations.
 | Full name          | algebra.js |
 | Keywords           | algebra, math, fractions, equations, expressions, latex |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 12959 |
+| # dependents       | 12 |
+| # downloads        | 22173 |
 | # stars            | 5 |
 
 ## Links

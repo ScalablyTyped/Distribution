@@ -11,8 +11,8 @@ Tools to convert ArcGIS JSON geometries to GeoJSON geometries and vica-versa.
 | Full name          | arcgis-to-geojson-utils |
 | Keywords           | arcgis, convert, geo, geojson, geometry |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 15095 |
+| # dependents       | 4 |
+| # downloads        | 12715 |
 | # stars            | 1 |
 
 ## Links

@@ -6,12 +6,12 @@ import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.Collections.IObservableMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResourceQualifierObservableMap extends IObservableMap[String, String]
-
 object ResourceQualifierObservableMap {
+  
   @scala.inline
   def apply(
     clear: () => Unit,
@@ -28,4 +28,3 @@ object ResourceQualifierObservableMap {
     __obj.asInstanceOf[ResourceQualifierObservableMap]
   }
 }
-

@@ -2,7 +2,7 @@ package typings.feedme.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("feedme", JSImport.Namespace)
 @js.native
@@ -14,4 +14,3 @@ import scala.scalajs.js.annotation._
 class ^ () extends FeedMe {
   def this(buffer: Boolean) = this()
 }
-

@@ -2,11 +2,12 @@ package typings.luminoAlgorithm.arrayMod.ArrayExt
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/algorithm/types/array", "ArrayExt.reverse")
 @js.native
 object reverse extends js.Object {
+  
   /**
     * Reverse an array in-place.
     *
@@ -41,4 +42,3 @@ object reverse extends js.Object {
   def apply[T](array: MutableArrayLike[T], start: Double): Unit = js.native
   def apply[T](array: MutableArrayLike[T], start: Double, stop: Double): Unit = js.native
 }
-

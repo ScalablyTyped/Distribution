@@ -13,18 +13,11 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IComm extends IDisposable {
-  /**
-    * The unique id for the comm channel.
-    */
-  val commId: String = js.native
-  /**
-    * The target name for the comm channel.
-    */
-  val targetName: String = js.native
+  
   /**
     * Close the comm.
     *
@@ -41,9 +34,24 @@ trait IComm extends IDisposable {
     * This is a no-op if the comm is already closed.
     */
   def close(): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+  def close(
+    data: js.UndefOr[JSONValue],
+    metadata: js.UndefOr[scala.Nothing],
+    buffers: js.Array[ArrayBuffer | ArrayBufferView]
+  ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+  def close(data: js.UndefOr[JSONValue], metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+  def close(
+    data: js.UndefOr[JSONValue],
+    metadata: JSONObject,
+    buffers: js.Array[ArrayBuffer | ArrayBufferView]
+  ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
   def close(data: JSONValue): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-  def close(data: JSONValue, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-  def close(data: JSONValue, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+  
+  /**
+    * The unique id for the comm channel.
+    */
+  val commId: String = js.native
+  
   /**
     * Callback for a comm close event.
     *
@@ -54,6 +62,7 @@ trait IComm extends IDisposable {
     * resolved.
     */
   def onClose(msg: ICommCloseMsg[iopub | shell]): Unit | js.Thenable[Unit] = js.native
+  
   /**
     * Callback for a comm message received event.
     *
@@ -62,6 +71,7 @@ trait IComm extends IDisposable {
     * until the promise is resolved.
     */
   def onMsg(msg: ICommMsgMsg[iopub | shell]): Unit | js.Thenable[Unit] = js.native
+  
   /**
     * Open a comm with optional data and metadata.
     *
@@ -75,9 +85,19 @@ trait IComm extends IDisposable {
     * This sends a `comm_open` message to the server.
     */
   def open(): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+  def open(
+    data: js.UndefOr[JSONValue],
+    metadata: js.UndefOr[scala.Nothing],
+    buffers: js.Array[ArrayBuffer | ArrayBufferView]
+  ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+  def open(data: js.UndefOr[JSONValue], metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+  def open(
+    data: js.UndefOr[JSONValue],
+    metadata: JSONObject,
+    buffers: js.Array[ArrayBuffer | ArrayBufferView]
+  ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
   def open(data: JSONValue): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-  def open(data: JSONValue, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
-  def open(data: JSONValue, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+  
   /**
     * Send a `comm_msg` message to the kernel.
     *
@@ -95,7 +115,25 @@ trait IComm extends IDisposable {
     * This is a no-op if the comm has been closed.
     */
   def send(data: JSONValue): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+  def send(
+    data: JSONValue,
+    metadata: js.UndefOr[scala.Nothing],
+    buffers: js.UndefOr[scala.Nothing],
+    disposeOnDone: Boolean
+  ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+  def send(
+    data: JSONValue,
+    metadata: js.UndefOr[scala.Nothing],
+    buffers: js.Array[ArrayBuffer | ArrayBufferView]
+  ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+  def send(
+    data: JSONValue,
+    metadata: js.UndefOr[scala.Nothing],
+    buffers: js.Array[ArrayBuffer | ArrayBufferView],
+    disposeOnDone: Boolean
+  ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
   def send(data: JSONValue, metadata: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+  def send(data: JSONValue, metadata: JSONObject, buffers: js.UndefOr[scala.Nothing], disposeOnDone: Boolean): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
   def send(data: JSONValue, metadata: JSONObject, buffers: js.Array[ArrayBuffer | ArrayBufferView]): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
   def send(
     data: JSONValue,
@@ -103,5 +141,9 @@ trait IComm extends IDisposable {
     buffers: js.Array[ArrayBuffer | ArrayBufferView],
     disposeOnDone: Boolean
   ): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
+  
+  /**
+    * The target name for the comm channel.
+    */
+  val targetName: String = js.native
 }
-

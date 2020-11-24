@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fork-ts-checker-webpack-plugin" : "5.0.13"
+      "fork-ts-checker-webpack-plugin" : "6.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "fork-ts-checker-webpack-plugin" : "5.0.13"
+      "fork-ts-checker-webpack-plugin" : "6.0.3"
     }
   ],
   "compile-devDependencies" : [

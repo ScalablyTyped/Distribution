@@ -3,7 +3,7 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.AMap.LocationValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.Bounds")
 @js.native
@@ -29,4 +29,3 @@ class Bounds ()
     */
   def this(southWestLng: Double, southWestLat: Double, northEastLng: Double, northEastLat: Double) = this()
 }
-

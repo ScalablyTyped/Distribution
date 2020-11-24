@@ -2,10 +2,11 @@ package typings.p5.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PeakDetect extends js.Object {
+  
   /**
     *   onPeak accepts two arguments: a function to call
     *   when a peak is detected. The value of the peak,
@@ -17,6 +18,7 @@ trait PeakDetect extends js.Object {
     */
   def onPeak(callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
   def onPeak(callback: js.Function1[/* repeated */ js.Any, _], `val`: js.Object): Unit = js.native
+  
   /**
     *   The update method is run in the draw loop. Accepts
     *   an FFT object. You must call .analyze() on the FFT
@@ -26,4 +28,3 @@ trait PeakDetect extends js.Object {
     */
   def update(fftObject: FFT): Unit = js.native
 }
-

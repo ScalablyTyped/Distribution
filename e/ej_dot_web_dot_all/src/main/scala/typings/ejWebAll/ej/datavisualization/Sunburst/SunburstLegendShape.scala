@@ -2,14 +2,14 @@ package typings.ejWebAll.ej.datavisualization.Sunburst
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SunburstLegendShape extends js.Object
-
 @JSGlobal("ej.datavisualization.Sunburst.SunburstLegendShape")
 @js.native
 object SunburstLegendShape extends js.Object {
+  
   //string
   @js.native
   sealed trait Circle extends SunburstLegendShape
@@ -33,6 +33,4 @@ object SunburstLegendShape extends js.Object {
   //string
   @js.native
   sealed trait Triangle extends SunburstLegendShape
-  
 }
-

@@ -2,18 +2,18 @@ package typings.jsoneditor.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.jsoneditor.jsoneditorStrings.field
   - typings.jsoneditor.jsoneditorStrings.value
 */
 trait AutoCompleteElementType extends js.Object
-
 object AutoCompleteElementType {
+  
   @scala.inline
   def field: typings.jsoneditor.jsoneditorStrings.field = "field".asInstanceOf[typings.jsoneditor.jsoneditorStrings.field]
+  
   @scala.inline
   def value: typings.jsoneditor.jsoneditorStrings.value = "value".asInstanceOf[typings.jsoneditor.jsoneditorStrings.value]
 }
-

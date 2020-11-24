@@ -2,7 +2,7 @@ package typings.officeJsPreview.Office
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `SeriesTime` object provides methods to get and set the dates and times of appointments in a recurring series and get the dates and times
@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait SeriesTime extends js.Object {
+  
   /**
     * Gets the duration in minutes of a usual instance in a recurring appointment series.
     *
@@ -30,6 +31,7 @@ trait SeriesTime extends js.Object {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   def getDuration(): Double = js.native
+  
   /**
     * Gets the end date of a recurrence pattern in the following
     * {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} date format: "YYYY-MM-DD".
@@ -43,6 +45,7 @@ trait SeriesTime extends js.Object {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   def getEndDate(): String = js.native
+  
   /**
     * Gets the end time of a usual appointment or meeting request instance of a recurrence pattern in whichever time zone that the user or
     * add-in set the recurrence pattern using the following {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} format:
@@ -57,6 +60,7 @@ trait SeriesTime extends js.Object {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   def getEndTime(): String = js.native
+  
   /**
     * Gets the start date of a recurrence pattern in the following
     * {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} date format: "YYYY-MM-DD".
@@ -70,6 +74,7 @@ trait SeriesTime extends js.Object {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   def getStartDate(): String = js.native
+  
   /**
     * Gets the start time of a usual appointment instance of a recurrence pattern in whichever time zone that the user/add-in set the
     * recurrence pattern using the following {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} format: "THH:mm:ss:mmm".
@@ -83,6 +88,7 @@ trait SeriesTime extends js.Object {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   def getStartTime(): String = js.native
+  
   /**
     * Sets the duration of all appointments in a recurrence pattern. This will also change the end time of the recurrence pattern.
     *
@@ -97,6 +103,7 @@ trait SeriesTime extends js.Object {
     * @param minutes - The length of the appointment in minutes.
     */
   def setDuration(minutes: Double): Unit = js.native
+  
   /**
     * Sets the end date of a recurring appointment series.
     *
@@ -128,6 +135,7 @@ trait SeriesTime extends js.Object {
     * @param day - The day value of the end date.
     */
   def setEndDate(year: Double, month: Double, day: Double): Unit = js.native
+  
   /**
     * Sets the start date of a recurring appointment series.
     *
@@ -159,6 +167,7 @@ trait SeriesTime extends js.Object {
     * @param day - The day value of the start date.
     */
   def setStartDate(year: Double, month: Double, day: Double): Unit = js.native
+  
   /**
     * Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence pattern is set
     * (the item's time zone is used by default).
@@ -191,4 +200,3 @@ trait SeriesTime extends js.Object {
     */
   def setStartTime(time: String): Unit = js.native
 }
-

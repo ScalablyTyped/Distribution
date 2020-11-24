@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createInputFiles")
 @js.native
 object createInputFiles extends js.Object {
+  
   def apply(javascriptText: java.lang.String, declarationText: java.lang.String): InputFiles = js.native
   def apply(
     javascriptText: java.lang.String,
@@ -176,4 +177,3 @@ object createInputFiles extends js.Object {
     buildInfoPath: java.lang.String
   ): InputFiles = js.native
 }
-

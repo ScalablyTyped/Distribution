@@ -24,17 +24,17 @@ import typings.phaser.phaserStrings.sleepStart
 import typings.phaser.phaserStrings.tick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MatterJS.Events")
 @js.native
 class Events ()
   extends typings.phaser.MatterJS.Events
-
 /* static members */
 @JSGlobal("MatterJS.Events")
 @js.native
 object Events extends js.Object {
+  
   /**
     * Removes the given event callback. If no callback, clears all callbacks in eventNames. If no eventNames, clears all events.
     *
@@ -43,6 +43,7 @@ object Events extends js.Object {
     * @param callback
     */
   def off(obj: js.Any, eventName: String, callback: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
+  
   def on(obj: js.Any, name: String, callback: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
   /**
     * Fired when a call to `Composite.add` is made, after objects have been added.
@@ -279,6 +280,7 @@ object Events extends js.Object {
     name: tick,
     callback: js.Function1[/* e */ IEventTimestamped[typings.phaser.MatterJS.Runner], Unit]
   ): Unit = js.native
+  
   /**
     * Fires all the callbacks subscribed to the given object's eventName, in the order they subscribed, if any.
     *
@@ -289,4 +291,3 @@ object Events extends js.Object {
   def trigger(`object`: js.Any, eventNames: String): Unit = js.native
   def trigger(`object`: js.Any, eventNames: String, event: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
 }
-

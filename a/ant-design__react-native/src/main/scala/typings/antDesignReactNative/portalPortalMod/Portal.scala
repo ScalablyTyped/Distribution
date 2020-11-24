@@ -3,7 +3,7 @@ package typings.antDesignReactNative.portalPortalMod
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Portal allows to render a component at a different place in the parent tree.
@@ -30,4 +30,3 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Portal
   extends Component[PortalProps, js.Object, js.Any]
-

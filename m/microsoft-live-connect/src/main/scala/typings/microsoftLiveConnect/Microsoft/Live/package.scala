@@ -2,9 +2,10 @@ package typings.microsoftLiveConnect.Microsoft
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object Live {
+  
   /**
     * The Permissions object contains a list of scopes, showing those scopes to
     * which the user has consented. The response body contains a JSON object

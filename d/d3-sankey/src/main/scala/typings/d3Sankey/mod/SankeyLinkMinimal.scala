@@ -2,14 +2,16 @@ package typings.d3Sankey.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SankeyLinkMinimal[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] extends js.Object {
+  
   /**
     * Link's zero-based index within the array of links calculated by Sankey layout generator.
     */
   var index: js.UndefOr[Double] = js.native
+  
   /**
     * Link's source node. For convenience, when initializing a Sankey layout using the default node id accessor,
     * source may be the zero-based index of the corresponding node in the nodes array
@@ -20,6 +22,7 @@ trait SankeyLinkMinimal[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPro
     * the numeric index will be replaced with the corresponding source node object.
     */
   var source: Double | String | (SankeyNode[N, L]) = js.native
+  
   /**
     * Link's target node. For convenience, when initializing a Sankey layout using the default node id accessor,
     * target may be the zero-based index of the corresponding node in the nodes array
@@ -30,27 +33,31 @@ trait SankeyLinkMinimal[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPro
     * the numeric index will be replaced with the corresponding target node object.
     */
   var target: Double | String | (SankeyNode[N, L]) = js.native
+  
   /**
     * Link's numeric value
     */
   var value: Double = js.native
+  
   /**
     * Link's width (proportional to its value) calculated by Sankey layout generator.
     */
   var width: js.UndefOr[Double] = js.native
+  
   /**
     * Link's vertical starting position (at source node) calculated by Sankey layout generator.
     */
   var y0: js.UndefOr[Double] = js.native
+  
   /**
     * Link's vertical end position (at target node) calculated by Sankey layout generator.
     */
   var y1: js.UndefOr[Double] = js.native
 }
-
 object SankeyLinkMinimal {
+  
   @scala.inline
-  def apply[/* <: typings.d3Sankey.mod.SankeyExtraProperties */ N, /* <: typings.d3Sankey.mod.SankeyExtraProperties */ L](
+  def apply[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](
     source: Double | String | (SankeyNode[N, L]),
     target: Double | String | (SankeyNode[N, L]),
     value: Double
@@ -58,40 +65,53 @@ object SankeyLinkMinimal {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SankeyLinkMinimal[N, L]]
   }
+  
   @scala.inline
-  implicit class SankeyLinkMinimalOps[Self <: SankeyLinkMinimal[_, _], /* <: typings.d3Sankey.mod.SankeyExtraProperties */ N, /* <: typings.d3Sankey.mod.SankeyExtraProperties */ L] (val x: Self with (SankeyLinkMinimal[N, L])) extends AnyVal {
+  implicit class SankeyLinkMinimalOps[Self <: SankeyLinkMinimal[_, _], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] (val x: Self with (SankeyLinkMinimal[N, L])) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setSource(value: Double | String | (SankeyNode[N, L])): Self = this.set("source", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTarget(value: Double | String | (SankeyNode[N, L])): Self = this.set("target", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIndex: Self = this.set("index", js.undefined)
+    
     @scala.inline
     def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteWidth: Self = this.set("width", js.undefined)
+    
     @scala.inline
     def setY0(value: Double): Self = this.set("y0", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteY0: Self = this.set("y0", js.undefined)
+    
     @scala.inline
     def setY1(value: Double): Self = this.set("y1", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteY1: Self = this.set("y1", js.undefined)
   }
-  
 }
-

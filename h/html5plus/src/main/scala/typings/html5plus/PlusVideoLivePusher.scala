@@ -2,7 +2,7 @@ package typings.html5plus
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 直播推流控件对象
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PlusVideoLivePusher extends js.Object {
+  
   /**
     * 监听直播推流控件事件
     * 向直播推流控件添加事件监听器，当指定的事件发生时，将触发listener函数的执行。 
@@ -35,6 +36,7 @@ trait PlusVideoLivePusher extends js.Object {
     listener: js.Function1[/* result */ js.Any, Unit],
     capture: Boolean
   ): Unit = js.native
+  
   /**
     * 关闭直播推流控件
     * 关闭操作将释放控件所有资源，不再可用。
@@ -42,6 +44,7 @@ trait PlusVideoLivePusher extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
   def close(): Unit = js.native
+  
   /**
     * 暂停推流
     * 如果未处于推流状态，则操作无效。
@@ -49,6 +52,7 @@ trait PlusVideoLivePusher extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
   def pause(): Unit = js.native
+  
   /**
     * 预览摄像头采集数据
     * 调用摄像头采集图像数据，并在推流控件中预览（此时不会向服务器推流，需调用start方法才开始推流）。
@@ -57,6 +61,7 @@ trait PlusVideoLivePusher extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
   def preview(): Unit = js.native
+  
   /**
     * 恢复推流
     * 如果未处于暂停状态，则操作无效。
@@ -64,6 +69,7 @@ trait PlusVideoLivePusher extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
   def resume(): Unit = js.native
+  
   /**
     * 设置直播推流控件参数（将废弃，使用setStyles）
     * 用于动态更新直播推流控件的配置选项。
@@ -73,6 +79,7 @@ trait PlusVideoLivePusher extends js.Object {
     */
   def setOptions(): Unit = js.native
   def setOptions(options: PlusVideoLivePusherStyles): Unit = js.native
+  
   /**
     * 设置直播推流控件参数
     * 用于动态更新直播推流控件的配置参数。
@@ -82,6 +89,7 @@ trait PlusVideoLivePusher extends js.Object {
     */
   def setStyles(): Unit = js.native
   def setStyles(styles: PlusVideoLivePusherStyles): Unit = js.native
+  
   /**
     * 快照
     * 
@@ -91,6 +99,7 @@ trait PlusVideoLivePusher extends js.Object {
   def snapshot(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function0[Unit]): Unit = js.native
   def snapshot(successCB: js.Function0[Unit]): Unit = js.native
   def snapshot(successCB: js.Function0[Unit], errorCB: js.Function0[Unit]): Unit = js.native
+  
   /**
     * 开始推流
     * 如果已经处于推流状态，则操作无效。
@@ -101,6 +110,7 @@ trait PlusVideoLivePusher extends js.Object {
   def start(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function0[Unit]): Unit = js.native
   def start(successCB: js.Function0[Unit]): Unit = js.native
   def start(successCB: js.Function0[Unit], errorCB: js.Function0[Unit]): Unit = js.native
+  
   /**
     * 停止推流
     * 如果未处于推流状态，则操作无效。
@@ -109,6 +119,7 @@ trait PlusVideoLivePusher extends js.Object {
     */
   def stop(): Unit = js.native
   def stop(options: js.Any): Unit = js.native
+  
   /**
     * 切换前后摄像头
     * 
@@ -116,4 +127,3 @@ trait PlusVideoLivePusher extends js.Object {
     */
   def switchCamera(): Unit = js.native
 }
-

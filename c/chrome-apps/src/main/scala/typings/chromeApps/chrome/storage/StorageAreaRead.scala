@@ -4,10 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.chromeApps.chrome.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StorageAreaRead extends js.Object {
+  
   /**
     * Gets one or more items from storage.
     * @param callback Callback with storage items, or on failure (in which case runtime.lastError will be set).
@@ -25,6 +26,7 @@ trait StorageAreaRead extends js.Object {
   def get(keys: js.Array[String], callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
   def get(keys: js.Object, callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
   def get(keys: Null, callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
+  
   /**
     * Gets the amount of space (in bytes) being used by one or more items.
     * @param callback Callback with the amount of space being used by storage, or on failure (in which case runtime.lastError will be set).
@@ -41,4 +43,3 @@ trait StorageAreaRead extends js.Object {
   def getBytesInUse(keys: js.Array[String], callback: js.Function1[/* bytesInUse */ integer, Unit]): Unit = js.native
   def getBytesInUse(keys: Null, callback: js.Function1[/* bytesInUse */ integer, Unit]): Unit = js.native
 }
-

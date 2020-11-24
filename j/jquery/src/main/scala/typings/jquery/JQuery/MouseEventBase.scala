@@ -6,41 +6,53 @@ import typings.std.EventTarget
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // region MouseEvent
 // #region MouseEvent
 @js.native
 trait MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  
   // MouseEvent, KeyboardEvent, TouchEvent
   @JSName("altKey")
   var altKey_MouseEventBase: Boolean = js.native
+  
   // MouseEvent
   @JSName("button")
   var button_MouseEventBase: Double = js.native
+  
   @JSName("buttons")
   var buttons_MouseEventBase: Double = js.native
+  
   // TouchEvent
   @JSName("changedTouches")
   var changedTouches_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   /** @deprecated */
   @JSName("charCode")
   var charCode_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   // KeyboardEvent
   /** @deprecated */
   @JSName("char")
   var char_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("clientX")
   var clientX_MouseEventBase: Double = js.native
+  
   @JSName("clientY")
   var clientY_MouseEventBase: Double = js.native
+  
   @JSName("ctrlKey")
   var ctrlKey_MouseEventBase: Boolean = js.native
+  
   /** @deprecated */
   @JSName("keyCode")
   var keyCode_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("key")
   var key_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * Indicates whether the META key was pressed when the event fired.
     * @see \`{@link https://api.jquery.com/event.metaKey/ }\`
@@ -79,12 +91,16 @@ trait MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
     */
   @JSName("metaKey")
   var metaKey_MouseEventBase: Boolean = js.native
+  
   @JSName("offsetX")
   var offsetX_MouseEventBase: Double = js.native
+  
   @JSName("offsetY")
   var offsetY_MouseEventBase: Double = js.native
+  
   @JSName("originalEvent")
   var originalEvent_MouseEventBase: js.UndefOr[MouseEvent] = js.native
+  
   /**
     * The mouse position relative to the left edge of the document.
     * @see \`{@link https://api.jquery.com/event.pageX/ }\`
@@ -122,6 +138,7 @@ trait MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
     */
   @JSName("pageX")
   var pageX_MouseEventBase: Double = js.native
+  
   /**
     * The mouse position relative to the top edge of the document.
     * @see \`{@link https://api.jquery.com/event.pageY/ }\`
@@ -159,11 +176,14 @@ trait MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
     */
   @JSName("pageY")
   var pageY_MouseEventBase: Double = js.native
+  
   // PointerEvent
   @JSName("pointerId")
   var pointerId_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   @JSName("pointerType")
   var pointerType_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   /**
     * The other DOM element involved in the event, if any.
     * @see \`{@link https://api.jquery.com/event.relatedTarget/ }\`
@@ -176,19 +196,26 @@ trait MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   ```
     */
   var relatedTarget: js.UndefOr[EventTarget | Null] = js.native
+  
   @JSName("screenX")
   var screenX_MouseEventBase: Double = js.native
+  
   @JSName("screenY")
   var screenY_MouseEventBase: Double = js.native
+  
   @JSName("shiftKey")
   var shiftKey_MouseEventBase: Boolean = js.native
+  
   @JSName("targetTouches")
   var targetTouches_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   /** @deprecated */
   @JSName("toElement")
   var toElement_MouseEventBase: Element = js.native
+  
   @JSName("touches")
   var touches_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+  
   // MouseEvent, KeyboardEvent
   /**
     * For key or mouse events, this property indicates the specific key or button that was pressed.
@@ -245,8 +272,8 @@ trait MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   @JSName("which")
   var which_MouseEventBase: Double = js.native
 }
-
 object MouseEventBase {
+  
   @scala.inline
   def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
     altKey: Boolean,
@@ -287,60 +314,83 @@ object MouseEventBase {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
   }
+  
   @scala.inline
   implicit class MouseEventBaseOps[Self <: MouseEventBase[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAltKey(value: Boolean): Self = this.set("altKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setButton(value: Double): Self = this.set("button", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setButtons(value: Double): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClientX(value: Double): Self = this.set("clientX", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setClientY(value: Double): Self = this.set("clientY", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCtrlKey(value: Boolean): Self = this.set("ctrlKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setMetaKey(value: Boolean): Self = this.set("metaKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPageX(value: Double): Self = this.set("pageX", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPageY(value: Double): Self = this.set("pageY", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setScreenX(value: Double): Self = this.set("screenX", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setScreenY(value: Double): Self = this.set("screenY", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setShiftKey(value: Boolean): Self = this.set("shiftKey", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setToElement(value: Element): Self = this.set("toElement", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setWhich(value: Double): Self = this.set("which", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setOriginalEvent(value: MouseEvent): Self = this.set("originalEvent", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteOriginalEvent: Self = this.set("originalEvent", js.undefined)
+    
     @scala.inline
     def setRelatedTarget(value: EventTarget): Self = this.set("relatedTarget", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteRelatedTarget: Self = this.set("relatedTarget", js.undefined)
+    
     @scala.inline
     def setRelatedTargetNull: Self = this.set("relatedTarget", null)
   }
-  
 }
-

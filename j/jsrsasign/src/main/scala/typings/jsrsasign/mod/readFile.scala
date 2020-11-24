@@ -2,11 +2,12 @@ package typings.jsrsasign.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsrsasign", "readFile")
 @js.native
 object readFile extends js.Object {
+  
   /**
     * read file and return file contents
     * @param binFile file name to be read
@@ -16,4 +17,3 @@ object readFile extends js.Object {
     */
   def apply(binFile: String): String = js.native
 }
-

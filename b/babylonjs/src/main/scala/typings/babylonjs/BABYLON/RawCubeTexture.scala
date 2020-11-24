@@ -3,10 +3,11 @@ package typings.babylonjs.BABYLON
 import typings.std.ArrayBufferView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RawCubeTexture extends CubeTexture {
+  
   /**
     * Updates the raw cube texture.
     * @param data defines the data to store
@@ -24,6 +25,7 @@ trait RawCubeTexture extends CubeTexture {
     invertY: Boolean,
     compression: Nullable[String]
   ): Unit = js.native
+  
   /**
     * Updates a raw cube texture with RGBD encoded data.
     * @param data defines the array of data [mipmap][face] to use to create each face
@@ -33,17 +35,22 @@ trait RawCubeTexture extends CubeTexture {
     * @returns a promsie that resolves when the operation is complete
     */
   def updateRGBDAsync(data: js.Array[js.Array[ArrayBufferView]]): js.Promise[Unit] = js.native
-  def updateRGBDAsync(data: js.Array[js.Array[ArrayBufferView]], sphericalPolynomial: Nullable[SphericalPolynomial]): js.Promise[Unit] = js.native
   def updateRGBDAsync(
     data: js.Array[js.Array[ArrayBufferView]],
-    sphericalPolynomial: Nullable[SphericalPolynomial],
+    sphericalPolynomial: js.UndefOr[Nullable[SphericalPolynomial]],
+    lodScale: js.UndefOr[scala.Nothing],
+    lodOffset: Double
+  ): js.Promise[Unit] = js.native
+  def updateRGBDAsync(
+    data: js.Array[js.Array[ArrayBufferView]],
+    sphericalPolynomial: js.UndefOr[Nullable[SphericalPolynomial]],
     lodScale: Double
   ): js.Promise[Unit] = js.native
   def updateRGBDAsync(
     data: js.Array[js.Array[ArrayBufferView]],
-    sphericalPolynomial: Nullable[SphericalPolynomial],
+    sphericalPolynomial: js.UndefOr[Nullable[SphericalPolynomial]],
     lodScale: Double,
     lodOffset: Double
   ): js.Promise[Unit] = js.native
+  def updateRGBDAsync(data: js.Array[js.Array[ArrayBufferView]], sphericalPolynomial: Nullable[SphericalPolynomial]): js.Promise[Unit] = js.native
 }
-

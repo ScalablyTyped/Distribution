@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__dom
 
-Typings are for version 7.0.0
+Typings are for version 8.0.0
 
 ## Library description:
 DOM manipulation utilities for Material Components for the web
@@ -10,9 +10,9 @@ DOM manipulation utilities for Material Components for the web
 | ------------------ | :-------------: |
 | Full name          | @material/dom |
 | Keywords           | - |
-| # releases         | 139 |
-| # dependents       | 43 |
-| # downloads        | 1739788 |
+| # releases         | 655 |
+| # dependents       | 65 |
+| # downloads        | 3984043 |
 | # stars            | 0 |
 
 ## Links

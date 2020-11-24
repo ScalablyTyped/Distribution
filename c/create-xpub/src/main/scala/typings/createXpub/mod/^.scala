@@ -2,11 +2,12 @@ package typings.createXpub.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("create-xpub", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Creates a Base58 encoded extended public key (xpub) for use in a
     * [BIP32 hierarchical deterministic wallet](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki).
@@ -18,4 +19,3 @@ object ^ extends js.Object {
     */
   def apply(options: Options): String = js.native
 }
-

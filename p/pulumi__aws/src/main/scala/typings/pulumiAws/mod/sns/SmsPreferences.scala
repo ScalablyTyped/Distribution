@@ -7,7 +7,7 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "sns.SmsPreferences")
 @js.native
@@ -25,11 +25,11 @@ class SmsPreferences protected ()
   def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: SmsPreferencesArgs, opts: CustomResourceOptions) = this()
 }
-
 /* static members */
 @JSImport("@pulumi/aws", "sns.SmsPreferences")
 @js.native
 object SmsPreferences extends js.Object {
+  
   /**
     * Get an existing SmsPreferences resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -43,10 +43,10 @@ object SmsPreferences extends js.Object {
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.smsPreferencesMod.SmsPreferences = js.native
   def get(name: String, id: Input[ID], state: SmsPreferencesState): typings.pulumiAws.smsPreferencesMod.SmsPreferences = js.native
   def get(name: String, id: Input[ID], state: SmsPreferencesState, opts: CustomResourceOptions): typings.pulumiAws.smsPreferencesMod.SmsPreferences = js.native
+  
   /**
     * Returns true if the given object is an instance of SmsPreferences.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/smsPreferences.SmsPreferences */ Boolean = js.native
 }
-

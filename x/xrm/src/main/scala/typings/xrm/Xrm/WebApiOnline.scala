@@ -3,7 +3,7 @@ package typings.xrm.Xrm
 import typings.xrm.Xrm.Async.PromiseLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the Xrm.WebApi.online API
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait WebApiOnline extends WebApiOffline {
+  
   /**
     * Execute a single action, function, or CRUD operation.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/execute External Link: execute (Client API reference)}
@@ -38,6 +39,7 @@ trait WebApiOnline extends WebApiOffline {
     *   - typeName: String. The fully qualified name of the parameter type.
     */
   def execute(request: js.Any): PromiseLike[ExecuteResponse] = js.native
+  
   /**
     * Execute a collection of action, function, or CRUD operations.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/executemultiple External Link: executeMultiple (Client API reference)}
@@ -52,4 +54,3 @@ trait WebApiOnline extends WebApiOffline {
     */
   def executeMultiple(request: js.Array[_]): PromiseLike[js.Array[ExecuteResponse]] = js.native
 }
-

@@ -3,11 +3,14 @@ package typings.paypalCordovaPlugin
 import typings.paypalCordovaPlugin.PayPalCordovaPlugin.PayPalMobileStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobalScope
 @js.native
 object global extends js.Object {
+  
+  var PayPalMobile: PayPalMobileStatic = js.native
+  
   @js.native
   /**
     * @param options A set of options to use. Any options not specified will assume default values.
@@ -16,6 +19,11 @@ object global extends js.Object {
     extends typings.paypalCordovaPlugin.PayPalConfiguration {
     def this(options: PayPalConfigurationOptions) = this()
   }
+  
+  //#endregion
+  //#region cdv-plugin-paypal-mobile-sdk.js
+  @js.native
+  object PayPalCordovaPlugin extends js.Object
   
   @js.native
   class PayPalItem protected ()
@@ -95,12 +103,4 @@ object global extends js.Object {
       countryCode: String
     ) = this()
   }
-  
-  var PayPalMobile: PayPalMobileStatic = js.native
-  //#endregion
-  //#region cdv-plugin-paypal-mobile-sdk.js
-  @js.native
-  object PayPalCordovaPlugin extends js.Object
-  
 }
-

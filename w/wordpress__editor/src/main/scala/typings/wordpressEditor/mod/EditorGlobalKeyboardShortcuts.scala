@@ -5,9 +5,8 @@ import typings.react.mod.ComponentType
 import typings.wordpressEditor.visualEditorShortcutsMod.VisualEditorGlobalKeyboardShortcuts.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@wordpress/editor", "EditorGlobalKeyboardShortcuts")
 @js.native
 object EditorGlobalKeyboardShortcuts extends TopLevel[ComponentType[Props]]
-

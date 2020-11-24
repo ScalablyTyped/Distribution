@@ -3,10 +3,11 @@ package typings.nightwatch.mod
 import typings.nightwatch.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebDriverProtocolElementLocation extends js.Object {
+  
   /**
     * Determine an element's location on the page. The point (0, 0) refers to the upper-left corner of the page.
     *
@@ -17,6 +18,7 @@ trait WebDriverProtocolElementLocation extends js.Object {
     id: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[X], Unit]
   ): this.type = js.native
+  
   /**
     * Determine an element's location on the screen once it has been scrolled into view.
     */
@@ -26,4 +28,3 @@ trait WebDriverProtocolElementLocation extends js.Object {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[X], Unit]
   ): this.type = js.native
 }
-

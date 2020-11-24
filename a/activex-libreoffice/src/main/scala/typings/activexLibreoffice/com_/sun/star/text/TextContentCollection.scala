@@ -7,7 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Objects of this type are collections of text contents of the same type.
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
 trait TextContentCollection
   extends XNameAccess
      with XContainer
-
 object TextContentCollection {
+  
   @scala.inline
   def apply(
     ElementNames: SafeArray[String],
@@ -38,4 +38,3 @@ object TextContentCollection {
     __obj.asInstanceOf[TextContentCollection]
   }
 }
-

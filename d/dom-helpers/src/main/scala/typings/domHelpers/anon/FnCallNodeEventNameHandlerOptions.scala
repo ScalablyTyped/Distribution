@@ -97,10 +97,11 @@ import typings.std.AddEventListenerOptions
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallNodeEventNameHandlerOptions extends js.Object {
+  
   def apply(node: HTMLElement, eventName: abort, handler: TaggedEventHandler[abort]): Unit = js.native
   def apply(node: HTMLElement, eventName: abort, handler: TaggedEventHandler[abort], options: Boolean): Unit = js.native
   def apply(
@@ -1012,4 +1013,3 @@ trait FnCallNodeEventNameHandlerOptions extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
 }
-

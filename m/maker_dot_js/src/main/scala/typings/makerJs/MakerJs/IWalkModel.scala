@@ -2,7 +2,7 @@ package typings.makerJs.MakerJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A model reference in a walk.
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 trait IWalkModel
   extends IRefModelInModel
      with IRouteOffset
-
 object IWalkModel {
+  
   @scala.inline
   def apply(
     childId: String,
@@ -27,4 +27,3 @@ object IWalkModel {
     __obj.asInstanceOf[IWalkModel]
   }
 }
-

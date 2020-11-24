@@ -7,11 +7,12 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/fms", JSImport.Namespace)
 @js.native
 object fmsMod extends js.Object {
+  
   @js.native
   class AdminAccount protected ()
     extends typings.pulumiAws.adminAccountMod.AdminAccount {
@@ -27,10 +28,10 @@ object fmsMod extends js.Object {
     def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: AdminAccountArgs, opts: CustomResourceOptions) = this()
   }
-  
   /* static members */
   @js.native
   object AdminAccount extends js.Object {
+    
     /**
       * Get an existing AdminAccount resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -44,12 +45,11 @@ object fmsMod extends js.Object {
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.adminAccountMod.AdminAccount = js.native
     def get(name: String, id: Input[ID], state: AdminAccountState): typings.pulumiAws.adminAccountMod.AdminAccount = js.native
     def get(name: String, id: Input[ID], state: AdminAccountState, opts: CustomResourceOptions): typings.pulumiAws.adminAccountMod.AdminAccount = js.native
+    
     /**
       * Returns true if the given object is an instance of AdminAccount.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/fms/adminAccount.AdminAccount */ Boolean = js.native
   }
-  
 }
-

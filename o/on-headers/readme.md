@@ -11,8 +11,8 @@ Execute a listener when a response is about to write headers
 | Full name          | on-headers |
 | Keywords           | event, headers, http, onheaders |
 | # releases         | 2 |
-| # dependents       | 343 |
-| # downloads        | 303915349 |
+| # dependents       | 379 |
+| # downloads        | 409433801 |
 | # stars            | 7 |
 
 ## Links

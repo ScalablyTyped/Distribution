@@ -9,11 +9,11 @@ import typings.wiiu.wiiuStrings.wiiu_imageview_error
 import typings.wiiu.wiiuStrings.wiiu_imageview_start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Window extends js.Object {
-  var wiiu: Typeofwiiu = js.native
+  
   @JSName("addEventListener")
   def addEventListener_wiiuimageviewchangecontent(`type`: wiiu_imageview_change_content, listener: js.Function1[/* ev */ CustomEvent[_], _]): Unit = js.native
   @JSName("addEventListener")
@@ -54,5 +54,6 @@ trait Window extends js.Object {
     listener: js.Function1[/* ev */ CustomEvent[_], _],
     useCapture: Boolean
   ): Unit = js.native
+  
+  var wiiu: Typeofwiiu = js.native
 }
-

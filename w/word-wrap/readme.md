@@ -11,8 +11,8 @@ Wrap words to a specified length.
 | Full name          | word-wrap |
 | Keywords           | break, carriage, line, new-line, newline, return, soft, text, word, word-wrap, words, wrap |
 | # releases         | 0 |
-| # dependents       | 378 |
-| # downloads        | 50512405 |
+| # dependents       | 463 |
+| # downloads        | 317831398 |
 | # stars            | 5 |
 
 ## Links

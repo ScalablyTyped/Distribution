@@ -10,9 +10,9 @@ Blazing-fast binary parser builder
 | ------------------ | :-------------: |
 | Full name          | binary-parser |
 | Keywords           | binary, parser, decode, unpack, struct, buffer, bit |
-| # releases         | 6 |
-| # dependents       | 70 |
-| # downloads        | 115259 |
+| # releases         | 7 |
+| # dependents       | 78 |
+| # downloads        | 148352 |
 | # stars            | 5 |
 
 ## Links

@@ -5,13 +5,13 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.TypeError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeErrorConstructor
   extends Instantiable0[TypeError]
      with Instantiable1[/* message */ java.lang.String, TypeError] {
+  
   def apply(): TypeError = js.native
   def apply(message: java.lang.String): TypeError = js.native
 }
-

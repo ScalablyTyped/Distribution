@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_memoize"
-version := "4.1-dt-20200515Z-6bb569"
+version := "4.1-dt-20200515Z-fdc4ec"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

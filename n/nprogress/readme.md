@@ -10,9 +10,9 @@ Simple slim progress bars
 | ------------------ | :-------------: |
 | Full name          | nprogress |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 545 |
-| # downloads        | 8460442 |
+| # releases         | 3 |
+| # dependents       | 840 |
+| # downloads        | 12024408 |
 | # stars            | 28 |
 
 ## Links

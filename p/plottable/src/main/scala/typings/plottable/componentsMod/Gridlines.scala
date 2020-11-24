@@ -3,7 +3,7 @@ package typings.plottable.componentsMod
 import typings.plottable.scaleMod.Scale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable/build/src/components", "Gridlines")
 @js.native
@@ -18,4 +18,3 @@ class Gridlines ()
   def this(xScale: Null, yScale: Scale[_, _]) = this()
   def this(xScale: Scale[_, _], yScale: Scale[_, _]) = this()
 }
-

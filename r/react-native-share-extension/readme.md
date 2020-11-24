@@ -12,7 +12,7 @@ share extension using react-native for both ios and android
 | Keywords           | react-component, react-native, share-extension |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 16933 |
+| # downloads        | 11335 |
 | # stars            | 0 |
 
 ## Links

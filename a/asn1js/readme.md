@@ -1,6 +1,7 @@
 
 # Scala.js typings for asn1js
 
+Typings are for version 2.0
 
 ## Library description:
 asn1js is a pure JavaScript library implementing this standard. ASN.1 is the basis of all X.509 related data structures and numerous other protocols used on the web
@@ -9,9 +10,9 @@ asn1js is a pure JavaScript library implementing this standard. ASN.1 is the bas
 | ------------------ | :-------------: |
 | Full name          | asn1js |
 | Keywords           | asn1, parser, asn.1, ber, der, sequence, set, bitstring, octetstring, utctime, utf8string, bmpstring, universalstring, generalizedtime |
-| # releases         | 11 |
-| # dependents       | 38 |
-| # downloads        | 659380 |
+| # releases         | 5 |
+| # dependents       | 73 |
+| # downloads        | 1434527 |
 | # stars            | 2 |
 
 ## Links

@@ -5,36 +5,42 @@ import typings.openui5.sap.ui.core.HorizontalAlign
 import typings.openui5.sap.ui.core.TitleLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BlockLayoutCell extends Control {
+  
   /**
     * Adds some content to the aggregation <code>content</code>.
     * @param oContent the content to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addContent(oContent: Control): BlockLayoutCell = js.native
+  
   /**
     * Destroys all the content in the aggregation <code>content</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyContent(): BlockLayoutCell = js.native
+  
   /**
     * Gets content of aggregation <code>content</code>.The content to be included inside the cell
     */
   def getContent(): js.Array[Control] = js.native
+  
   /**
     * Gets current value of property <code>title</code>.Defines the title of the cell
     * @returns Value of property <code>title</code>
     */
   def getTitle(): String = js.native
+  
   /**
     * Gets current value of property <code>titleAlignment</code>.Defines the alignment of the cell
     * titleDefault value is <code>Begin</code>.
     * @returns Value of property <code>titleAlignment</code>
     */
   def getTitleAlignment(): HorizontalAlign = js.native
+  
   /**
     * Gets current value of property <code>titleLevel</code>.Defines the aria level of the titleThis
     * information is e.g. used by assistive technologies like screenreaders to create a hierarchical site
@@ -42,6 +48,7 @@ trait BlockLayoutCell extends Control {
     * @returns Value of property <code>titleLevel</code>
     */
   def getTitleLevel(): TitleLevel = js.native
+  
   /**
     * Gets current value of property <code>width</code>.Defines the width of the cell. Depending on the
     * context of the cell - whether it's in scrollable,or non scrollable row, this property is interpreted
@@ -57,6 +64,7 @@ trait BlockLayoutCell extends Control {
     * @returns Value of property <code>width</code>
     */
   def getWidth(): Double = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation <code>content</code>.and
     * returns its index if found or -1 otherwise.
@@ -64,6 +72,7 @@ trait BlockLayoutCell extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfContent(oContent: Control): Double = js.native
+  
   /**
     * Inserts a content into the aggregation <code>content</code>.
     * @param oContent the content to insert; if empty, nothing is inserted
@@ -74,12 +83,14 @@ trait BlockLayoutCell extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertContent(oContent: Control, iIndex: Double): BlockLayoutCell = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>content</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllContent(): js.Array[Control] = js.native
+  
   def removeContent(vContent: String): Control = js.native
   /**
     * Removes a content from the aggregation <code>content</code>.
@@ -88,6 +99,7 @@ trait BlockLayoutCell extends Control {
     */
   def removeContent(vContent: Double): Control = js.native
   def removeContent(vContent: Control): Control = js.native
+  
   /**
     * Sets a new value for property <code>title</code>.Defines the title of the cellWhen called with a
     * value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -96,6 +108,7 @@ trait BlockLayoutCell extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTitle(sTitle: String): BlockLayoutCell = js.native
+  
   /**
     * Sets a new value for property <code>titleAlignment</code>.Defines the alignment of the cell
     * titleWhen called with a value of <code>null</code> or <code>undefined</code>, the default value of
@@ -104,6 +117,7 @@ trait BlockLayoutCell extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setTitleAlignment(sTitleAlignment: HorizontalAlign): BlockLayoutCell = js.native
+  
   /**
     * Sets a new value for property <code>titleLevel</code>.Defines the aria level of the titleThis
     * information is e.g. used by assistive technologies like screenreaders to create a hierarchical site
@@ -114,4 +128,3 @@ trait BlockLayoutCell extends Control {
     */
   def setTitleLevel(sTitleLevel: TitleLevel): BlockLayoutCell = js.native
 }
-

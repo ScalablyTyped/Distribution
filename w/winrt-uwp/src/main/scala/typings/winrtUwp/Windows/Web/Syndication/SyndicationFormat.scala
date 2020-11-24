@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.Web.Syndication
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait SyndicationFormat extends js.Object
-
 /** Specifies the syndication formats supported by the API. */
 @JSGlobal("Windows.Web.Syndication.SyndicationFormat")
 @js.native
 object SyndicationFormat extends js.Object {
+  
   /** The API supports the Atom 0.3 format. */
   @js.native
   sealed trait atom03 extends SyndicationFormat
@@ -34,6 +34,4 @@ object SyndicationFormat extends js.Object {
   /** The API supports the RSS 2.0 format. */
   @js.native
   sealed trait rss20 extends SyndicationFormat
-  
 }
-

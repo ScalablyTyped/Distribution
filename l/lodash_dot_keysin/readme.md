@@ -12,7 +12,7 @@ The lodash method `_.keysIn` exported as a module.
 | Keywords           | lodash-modularized, keysin |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 17118453 |
+| # downloads        | 14882482 |
 | # stars            | 0 |
 
 ## Links

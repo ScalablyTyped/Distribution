@@ -2,39 +2,13 @@ package typings.redux.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Store[S, A /* <: Action[_] */] extends js.Object {
-  /**
-    * Dispatches an action. It is the only way to trigger a state change.
-    *
-    * The `reducer` function, used to create the store, will be called with the
-    * current state tree and the given `action`. Its return value will be
-    * considered the **next** state of the tree, and the change listeners will
-    * be notified.
-    *
-    * The base implementation only supports plain object actions. If you want
-    * to dispatch a Promise, an Observable, a thunk, or something else, you
-    * need to wrap your store creating function into the corresponding
-    * middleware. For example, see the documentation for the `redux-thunk`
-    * package. Even the middleware will eventually dispatch plain object
-    * actions using this method.
-    *
-    * @param action A plain object representing “what changed”. It is a good
-    *   idea to keep actions serializable so you can record and replay user
-    *   sessions, or use the time travelling `redux-devtools`. An action must
-    *   have a `type` property which may not be `undefined`. It is a good idea
-    *   to use string constants for action types.
-    *
-    * @returns For convenience, the same action object you dispatched.
-    *
-    * Note that, if you use a custom middleware, it may wrap `dispatch()` to
-    * return something else (for example, a Promise you can await).
-    */
-  @JSName("dispatch")
-  var dispatch_Original: Dispatch[A] = js.native
+  
   def apply(): Observable[S] = js.native
+  
   /**
     * Dispatches an action. It is the only way to trigger a state change.
     *
@@ -63,11 +37,41 @@ trait Store[S, A /* <: Action[_] */] extends js.Object {
     */
   def dispatch[T /* <: A */](action: T): T = js.native
   /**
+    * Dispatches an action. It is the only way to trigger a state change.
+    *
+    * The `reducer` function, used to create the store, will be called with the
+    * current state tree and the given `action`. Its return value will be
+    * considered the **next** state of the tree, and the change listeners will
+    * be notified.
+    *
+    * The base implementation only supports plain object actions. If you want
+    * to dispatch a Promise, an Observable, a thunk, or something else, you
+    * need to wrap your store creating function into the corresponding
+    * middleware. For example, see the documentation for the `redux-thunk`
+    * package. Even the middleware will eventually dispatch plain object
+    * actions using this method.
+    *
+    * @param action A plain object representing “what changed”. It is a good
+    *   idea to keep actions serializable so you can record and replay user
+    *   sessions, or use the time travelling `redux-devtools`. An action must
+    *   have a `type` property which may not be `undefined`. It is a good idea
+    *   to use string constants for action types.
+    *
+    * @returns For convenience, the same action object you dispatched.
+    *
+    * Note that, if you use a custom middleware, it may wrap `dispatch()` to
+    * return something else (for example, a Promise you can await).
+    */
+  @JSName("dispatch")
+  var dispatch_Original: Dispatch[A] = js.native
+  
+  /**
     * Reads the state tree managed by the store.
     *
     * @returns The current state tree of your application.
     */
   def getState(): S = js.native
+  
   /**
     * Replaces the reducer currently used by the store to calculate the state.
     *
@@ -78,6 +82,7 @@ trait Store[S, A /* <: Action[_] */] extends js.Object {
     * @param nextReducer The reducer for the store to use instead.
     */
   def replaceReducer(nextReducer: Reducer[S, A]): /* import warning: importer.ImportType#apply Failed type conversion: void[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.observable * / any] */ js.Any = js.native
+  
   /**
     * Adds a change listener. It will be called any time an action is
     * dispatched, and some part of the state tree may potentially have changed.
@@ -104,4 +109,3 @@ trait Store[S, A /* <: Action[_] */] extends js.Object {
     */
   def subscribe(listener: js.Function0[Unit]): Unsubscribe = js.native
 }
-

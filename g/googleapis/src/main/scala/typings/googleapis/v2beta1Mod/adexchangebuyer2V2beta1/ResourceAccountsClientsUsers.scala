@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Accounts$Clients$Users")
 @js.native
 class ResourceAccountsClientsUsers protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * adexchangebuyer2.accounts.clients.users.get
     * @desc Retrieves an existing client user.
@@ -43,6 +45,7 @@ class ResourceAccountsClientsUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaClientUser]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.clients.users.list
     * @desc Lists all the known client users for a specified sponsor buyer
@@ -78,6 +81,7 @@ class ResourceAccountsClientsUsers protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListClientUsersResponse]
   ): Unit = js.native
+  
   /**
     * adexchangebuyer2.accounts.clients.users.update
     * @desc Updates an existing client user. Only the user status can be
@@ -111,4 +115,3 @@ class ResourceAccountsClientsUsers protected () extends js.Object {
     callback: BodyResponseCallback[SchemaClientUser]
   ): Unit = js.native
 }
-

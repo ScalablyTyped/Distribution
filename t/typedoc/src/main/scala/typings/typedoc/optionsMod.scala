@@ -47,31 +47,11 @@ import typings.typedoc.typedocStrings.tsconfig
 import typings.typedoc.typedocStrings.version
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc/dist/lib/utils/options", JSImport.Namespace)
 @js.native
 object optionsMod extends js.Object {
-  @js.native
-  class ArgumentsReader protected ()
-    extends typings.typedoc.readersMod.ArgumentsReader {
-    def this(priority: Double) = this()
-    def this(priority: Double, args: js.Array[String]) = this()
-  }
-  
-  @js.native
-  class Options protected ()
-    extends typings.typedoc.optionsOptionsMod.Options {
-    def this(logger: Logger) = this()
-  }
-  
-  @js.native
-  class TSConfigReader ()
-    extends typings.typedoc.tsconfigMod.TSConfigReader
-  
-  @js.native
-  class TypeDocReader ()
-    extends typings.typedoc.typedocMod.TypeDocReader
   
   def BindOption(name: NeverIfInternal[String]): js.Function2[/* target */ Application | typings.typedoc.anon.Options, /* key */ PropertyKey, Unit] = js.native
   @JSName("BindOption")
@@ -308,41 +288,77 @@ object optionsMod extends js.Object {
     /* key */ PropertyKey, 
     Unit
   ] = js.native
+  
+  @js.native
+  class ArgumentsReader protected ()
+    extends typings.typedoc.readersMod.ArgumentsReader {
+    def this(priority: Double) = this()
+    def this(priority: Double, args: js.Array[String]) = this()
+  }
+  
+  @js.native
+  class Options protected ()
+    extends typings.typedoc.optionsOptionsMod.Options {
+    def this(logger: Logger) = this()
+  }
+  
   @js.native
   object ParameterHint extends js.Object {
-    /* 1 */ val Directory: typings.typedoc.optionsDeclarationMod.ParameterHint.Directory with Double = js.native
-    /* 0 */ val File: typings.typedoc.optionsDeclarationMod.ParameterHint.File with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.typedoc.optionsDeclarationMod.ParameterHint with Double] = js.native
+    
+    /* 1 */ val Directory: typings.typedoc.optionsDeclarationMod.ParameterHint.Directory with Double = js.native
+    
+    /* 0 */ val File: typings.typedoc.optionsDeclarationMod.ParameterHint.File with Double = js.native
   }
   
   @js.native
   object ParameterScope extends js.Object {
-    /* 0 */ val TypeDoc: typings.typedoc.optionsDeclarationMod.ParameterScope.TypeDoc with Double = js.native
-    /* 1 */ val TypeScript: typings.typedoc.optionsDeclarationMod.ParameterScope.TypeScript with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.typedoc.optionsDeclarationMod.ParameterScope with Double] = js.native
+    
+    /* 0 */ val TypeDoc: typings.typedoc.optionsDeclarationMod.ParameterScope.TypeDoc with Double = js.native
+    
+    /* 1 */ val TypeScript: typings.typedoc.optionsDeclarationMod.ParameterScope.TypeScript with Double = js.native
   }
   
   @js.native
   object ParameterType extends js.Object {
-    /* 5 */ val Array: typings.typedoc.optionsDeclarationMod.ParameterType.Array with Double = js.native
-    /* 2 */ val Boolean: typings.typedoc.optionsDeclarationMod.ParameterType.Boolean with Double = js.native
-    /* 3 */ val Map: typings.typedoc.optionsDeclarationMod.ParameterType.Map with Double = js.native
-    /* 4 */ val Mixed: typings.typedoc.optionsDeclarationMod.ParameterType.Mixed with Double = js.native
-    /* 1 */ val Number: typings.typedoc.optionsDeclarationMod.ParameterType.Number with Double = js.native
-    /* 0 */ val String: typings.typedoc.optionsDeclarationMod.ParameterType.String with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.typedoc.optionsDeclarationMod.ParameterType with Double] = js.native
+    
+    /* 5 */ val Array: typings.typedoc.optionsDeclarationMod.ParameterType.Array with Double = js.native
+    
+    /* 2 */ val Boolean: typings.typedoc.optionsDeclarationMod.ParameterType.Boolean with Double = js.native
+    
+    /* 3 */ val Map: typings.typedoc.optionsDeclarationMod.ParameterType.Map with Double = js.native
+    
+    /* 4 */ val Mixed: typings.typedoc.optionsDeclarationMod.ParameterType.Mixed with Double = js.native
+    
+    /* 1 */ val Number: typings.typedoc.optionsDeclarationMod.ParameterType.Number with Double = js.native
+    
+    /* 0 */ val String: typings.typedoc.optionsDeclarationMod.ParameterType.String with Double = js.native
   }
   
   @js.native
   object SourceFileMode extends js.Object {
-    /* 0 */ val File: typings.typedoc.optionsDeclarationMod.SourceFileMode.File with Double = js.native
-    /* 1 */ val Modules: typings.typedoc.optionsDeclarationMod.SourceFileMode.Modules with Double = js.native
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.typedoc.optionsDeclarationMod.SourceFileMode with Double] = js.native
+    
+    /* 0 */ val File: typings.typedoc.optionsDeclarationMod.SourceFileMode.File with Double = js.native
+    
+    /* 1 */ val Modules: typings.typedoc.optionsDeclarationMod.SourceFileMode.Modules with Double = js.native
   }
   
+  @js.native
+  class TSConfigReader ()
+    extends typings.typedoc.tsconfigMod.TSConfigReader
+  
+  @js.native
+  class TypeDocReader ()
+    extends typings.typedoc.typedocMod.TypeDocReader
 }
-

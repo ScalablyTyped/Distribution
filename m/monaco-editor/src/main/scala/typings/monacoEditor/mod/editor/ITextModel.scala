@@ -7,27 +7,27 @@ import typings.monacoEditor.mod.Position
 import typings.monacoEditor.mod.Range
 import typings.monacoEditor.mod.Selection
 import typings.monacoEditor.mod.Uri
+import typings.monacoEditor.monacoEditorBooleans.`false`
+import typings.monacoEditor.monacoEditorBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ITextModel extends IEditorModel {
-  /**
-    * A unique identifier associated with this model.
-    */
-  val id: String = js.native
-  /**
-    * Gets the resource associated with this editor model.
-    */
-  val uri: Uri = js.native
+  
   /**
     * Edit the model without adding the edits to the undo stack.
     * This can have dire consequences on the undo stack! See @pushEditOperations for the preferred way.
     * @param operations The edit operations.
-    * @return The inverse edit operations, that, when applied, will bring the model back to the previous state.
+    * @return If desired, the inverse edit operations, that, when applied, will bring the model back to the previous state.
     */
-  def applyEdits(operations: js.Array[IIdentifiedSingleEditOperation]): js.Array[IIdentifiedSingleEditOperation] = js.native
+  def applyEdits(operations: js.Array[IIdentifiedSingleEditOperation]): Unit = js.native
+  @JSName("applyEdits")
+  def applyEdits_false(operations: js.Array[IIdentifiedSingleEditOperation], computeUndoEdits: `false`): Unit = js.native
+  @JSName("applyEdits")
+  def applyEdits_true(operations: js.Array[IIdentifiedSingleEditOperation], computeUndoEdits: `true`): js.Array[IValidEditOperation] = js.native
+  
   /**
     * Perform a minimum amount of operations, in order to transform the decorations
     * identified by `oldDecorations` to the decorations described by `newDecorations`
@@ -40,15 +40,18 @@ trait ITextModel extends IEditorModel {
     */
   def deltaDecorations(oldDecorations: js.Array[String], newDecorations: js.Array[IModelDeltaDecoration]): js.Array[String] = js.native
   def deltaDecorations(oldDecorations: js.Array[String], newDecorations: js.Array[IModelDeltaDecoration], ownerId: Double): js.Array[String] = js.native
+  
   /**
     * Detect the indentation options for this model from its content.
     */
   def detectIndentation(defaultInsertSpaces: Boolean, defaultTabSize: Double): Unit = js.native
+  
   /**
     * Destroy this model. This will unbind the model from the mode
     * and make all necessary clean-up to release this object to the GC.
     */
   def dispose(): Unit = js.native
+  
   /**
     * Search the model.
     * @param searchString The string used to search. If it is a regular expression, set `isRegex` to true.
@@ -94,10 +97,44 @@ trait ITextModel extends IEditorModel {
     captureMatches: Boolean,
     limitResultCount: Double
   ): js.Array[FindMatch] = js.native
+  def findMatches(
+    searchString: String,
+    searchScope: js.Array[IRange],
+    isRegex: Boolean,
+    matchCase: Boolean,
+    wordSeparators: String,
+    captureMatches: Boolean
+  ): js.Array[FindMatch] = js.native
+  def findMatches(
+    searchString: String,
+    searchScope: js.Array[IRange],
+    isRegex: Boolean,
+    matchCase: Boolean,
+    wordSeparators: String,
+    captureMatches: Boolean,
+    limitResultCount: Double
+  ): js.Array[FindMatch] = js.native
+  def findMatches(
+    searchString: String,
+    searchScope: js.Array[IRange],
+    isRegex: Boolean,
+    matchCase: Boolean,
+    wordSeparators: Null,
+    captureMatches: Boolean
+  ): js.Array[FindMatch] = js.native
+  def findMatches(
+    searchString: String,
+    searchScope: js.Array[IRange],
+    isRegex: Boolean,
+    matchCase: Boolean,
+    wordSeparators: Null,
+    captureMatches: Boolean,
+    limitResultCount: Double
+  ): js.Array[FindMatch] = js.native
   /**
     * Search the model.
     * @param searchString The string used to search. If it is a regular expression, set `isRegex` to true.
-    * @param searchScope Limit the searching to only search inside this range.
+    * @param searchScope Limit the searching to only search inside these ranges.
     * @param isRegex Used to indicate that `searchString` is a regular expression.
     * @param matchCase Force the matching to match lower/upper case exactly.
     * @param wordSeparators Force the matching to match entire words only. Pass null otherwise.
@@ -139,6 +176,7 @@ trait ITextModel extends IEditorModel {
     captureMatches: Boolean,
     limitResultCount: Double
   ): js.Array[FindMatch] = js.native
+  
   /**
     * Search the model for the next match. Loops to the beginning of the model if needed.
     * @param searchString The string used to search. If it is a regular expression, set `isRegex` to true.
@@ -165,6 +203,7 @@ trait ITextModel extends IEditorModel {
     wordSeparators: Null,
     captureMatches: Boolean
   ): FindMatch | Null = js.native
+  
   /**
     * Search the model for the previous match. Loops to the end of the model if needed.
     * @param searchString The string used to search. If it is a regular expression, set `isRegex` to true.
@@ -191,6 +230,7 @@ trait ITextModel extends IEditorModel {
     wordSeparators: Null,
     captureMatches: Boolean
   ): FindMatch | Null = js.native
+  
   /**
     * Gets all the decorations as an array.
     * @param ownerId If set, it will ignore decorations belonging to other owners.
@@ -200,29 +240,34 @@ trait ITextModel extends IEditorModel {
   def getAllDecorations(ownerId: js.UndefOr[scala.Nothing], filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
   def getAllDecorations(ownerId: Double): js.Array[IModelDecoration] = js.native
   def getAllDecorations(ownerId: Double, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
+  
   /**
     * Get the alternative version id of the model.
     * This alternative version id is not always incremented,
     * it will return the same values in the case of undo-redo.
     */
   def getAlternativeVersionId(): Double = js.native
+  
   /**
     * Get the character count of text in a certain range.
     * @param range The range describing what text length to get.
     */
   def getCharacterCountInRange(range: IRange): Double = js.native
+  
   /**
     * Get the options associated with a decoration.
     * @param id The decoration id.
     * @return The decoration options or null if the decoration was not found.
     */
   def getDecorationOptions(id: String): IModelDecorationOptions | Null = js.native
+  
   /**
     * Get the range associated with a decoration.
     * @param id The decoration id.
     * @return The decoration range or null if the decoration was not found.
     */
   def getDecorationRange(id: String): Range | Null = js.native
+  
   /**
     * Gets all the decorations in a range as an array. Only `startLineNumber` and `endLineNumber` from `range` are used for filtering.
     * So for now it returns all the decorations on the same line as `range`.
@@ -235,23 +280,28 @@ trait ITextModel extends IEditorModel {
   def getDecorationsInRange(range: IRange, ownerId: js.UndefOr[scala.Nothing], filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
   def getDecorationsInRange(range: IRange, ownerId: Double): js.Array[IModelDecoration] = js.native
   def getDecorationsInRange(range: IRange, ownerId: Double, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
+  
   /**
     * Get the end of line sequence predominantly used in the text buffer.
     * @return EOL char sequence (e.g.: '\n' or '\r\n').
     */
   def getEOL(): String = js.native
+  
   /**
     * Get a range covering the entire model
     */
   def getFullModelRange(): Range = js.native
+  
   /**
     * Get the text for a certain line.
     */
   def getLineContent(lineNumber: Double): String = js.native
+  
   /**
     * Get the number of lines in the model.
     */
   def getLineCount(): Double = js.native
+  
   /**
     * Gets all the decorations for the line `lineNumber` as an array.
     * @param lineNumber The line number
@@ -263,32 +313,39 @@ trait ITextModel extends IEditorModel {
   def getLineDecorations(lineNumber: Double, ownerId: js.UndefOr[scala.Nothing], filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
   def getLineDecorations(lineNumber: Double, ownerId: Double): js.Array[IModelDecoration] = js.native
   def getLineDecorations(lineNumber: Double, ownerId: Double, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
+  
   /**
     * Returns the column before the first non whitespace character for line at `lineNumber`.
     * Returns 0 if line is empty or contains only whitespace.
     */
   def getLineFirstNonWhitespaceColumn(lineNumber: Double): Double = js.native
+  
   /**
     * Returns the column after the last non whitespace character for line at `lineNumber`.
     * Returns 0 if line is empty or contains only whitespace.
     */
   def getLineLastNonWhitespaceColumn(lineNumber: Double): Double = js.native
+  
   /**
     * Get the text length for a certain line.
     */
   def getLineLength(lineNumber: Double): Double = js.native
+  
   /**
     * Get the maximum legal column for line at `lineNumber`
     */
   def getLineMaxColumn(lineNumber: Double): Double = js.native
+  
   /**
     * Get the minimum legal column for line at `lineNumber`
     */
   def getLineMinColumn(lineNumber: Double): Double = js.native
+  
   /**
     * Get the text for all lines.
     */
   def getLinesContent(): js.Array[String] = js.native
+  
   /**
     * Gets all the decorations for the lines between `startLineNumber` and `endLineNumber` as an array.
     * @param startLineNumber The start line number
@@ -306,10 +363,12 @@ trait ITextModel extends IEditorModel {
   ): js.Array[IModelDecoration] = js.native
   def getLinesDecorations(startLineNumber: Double, endLineNumber: Double, ownerId: Double): js.Array[IModelDecoration] = js.native
   def getLinesDecorations(startLineNumber: Double, endLineNumber: Double, ownerId: Double, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
+  
   /**
     * Get the language associated with this model.
     */
   def getModeId(): String = js.native
+  
   /**
     * Converts the position to a zero-based offset.
     *
@@ -319,10 +378,12 @@ trait ITextModel extends IEditorModel {
     * @return A valid zero-based offset.
     */
   def getOffsetAt(position: IPosition): Double = js.native
+  
   /**
     * Get the resolved options for this model.
     */
   def getOptions(): TextModelResolvedOptions = js.native
+  
   /**
     * Gets all the decorations that should be rendered in the overview ruler as an array.
     * @param ownerId If set, it will ignore decorations belonging to other owners.
@@ -332,6 +393,7 @@ trait ITextModel extends IEditorModel {
   def getOverviewRulerDecorations(ownerId: js.UndefOr[scala.Nothing], filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
   def getOverviewRulerDecorations(ownerId: Double): js.Array[IModelDecoration] = js.native
   def getOverviewRulerDecorations(ownerId: Double, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
+  
   /**
     * Converts a zero-based offset to a position.
     *
@@ -339,6 +401,7 @@ trait ITextModel extends IEditorModel {
     * @return A valid [position](#Position).
     */
   def getPositionAt(offset: Double): Position = js.native
+  
   /**
     * Get the text stored in this model.
     * @param eol The end of line character preference. Defaults to `EndOfLinePreference.TextDefined`.
@@ -349,6 +412,7 @@ trait ITextModel extends IEditorModel {
   def getValue(eol: js.UndefOr[scala.Nothing], preserveBOM: Boolean): String = js.native
   def getValue(eol: EndOfLinePreference): String = js.native
   def getValue(eol: EndOfLinePreference, preserveBOM: Boolean): String = js.native
+  
   /**
     * Get the text in a certain range.
     * @param range The range describing what text to get.
@@ -357,6 +421,7 @@ trait ITextModel extends IEditorModel {
     */
   def getValueInRange(range: IRange): String = js.native
   def getValueInRange(range: IRange, eol: EndOfLinePreference): String = js.native
+  
   /**
     * Get the length of the text stored in this model.
     */
@@ -364,34 +429,45 @@ trait ITextModel extends IEditorModel {
   def getValueLength(eol: js.UndefOr[scala.Nothing], preserveBOM: Boolean): Double = js.native
   def getValueLength(eol: EndOfLinePreference): Double = js.native
   def getValueLength(eol: EndOfLinePreference, preserveBOM: Boolean): Double = js.native
+  
   /**
     * Get the length of text in a certain range.
     * @param range The range describing what text length to get.
     * @return The text length.
     */
   def getValueLengthInRange(range: IRange): Double = js.native
+  
   /**
     * Get the current version id of the model.
     * Anytime a change happens to the model (even undo/redo),
     * the version id is incremented.
     */
   def getVersionId(): Double = js.native
+  
   /**
     * Get the word under or besides `position`.
     * @param position The position to look for a word.
     * @return The word under or besides `position`. Might be null.
     */
   def getWordAtPosition(position: IPosition): IWordAtPosition | Null = js.native
+  
   /**
     * Get the word under or besides `position` trimmed to `position`.column
     * @param position The position to look for a word.
     * @return The word under or besides `position`. Will never be null.
     */
   def getWordUntilPosition(position: IPosition): IWordAtPosition = js.native
+  
+  /**
+    * A unique identifier associated with this model.
+    */
+  val id: String = js.native
+  
   /**
     * Returns if the model was disposed or not.
     */
   def isDisposed(): Boolean = js.native
+  
   /**
     * Advances the given position by the given offset (negative offsets are also accepted)
     * and returns it as a new valid position.
@@ -403,45 +479,54 @@ trait ITextModel extends IEditorModel {
     * line terminator, throws an exception.
     */
   def modifyPosition(position: IPosition, offset: Double): Position = js.native
+  
   /**
     * Normalize a string containing whitespace according to indentation rules (converts to spaces or to tabs).
     */
   def normalizeIndentation(str: String): String = js.native
+  
   /**
     * An event emitted when the contents of the model have changed.
     * @event
     */
   def onDidChangeContent(listener: js.Function1[/* e */ IModelContentChangedEvent, Unit]): IDisposable = js.native
+  
   /**
     * An event emitted when decorations of the model have changed.
     * @event
     */
   def onDidChangeDecorations(listener: js.Function1[/* e */ IModelDecorationsChangedEvent, Unit]): IDisposable = js.native
+  
   /**
     * An event emitted when the language associated with the model has changed.
     * @event
     */
   def onDidChangeLanguage(listener: js.Function1[/* e */ IModelLanguageChangedEvent, Unit]): IDisposable = js.native
+  
   /**
     * An event emitted when the language configuration associated with the model has changed.
     * @event
     */
   def onDidChangeLanguageConfiguration(listener: js.Function1[/* e */ IModelLanguageConfigurationChangedEvent, Unit]): IDisposable = js.native
+  
   /**
     * An event emitted when the model options have changed.
     * @event
     */
   def onDidChangeOptions(listener: js.Function1[/* e */ IModelOptionsChangedEvent, Unit]): IDisposable = js.native
+  
   /**
     * An event emitted right before disposing the model.
     * @event
     */
   def onWillDispose(listener: js.Function0[Unit]): IDisposable = js.native
+  
   /**
     * Change the end of line sequence. This is the preferred way of
     * changing the eol sequence. This will land on the undo stack.
     */
   def pushEOL(eol: EndOfLineSequence): Unit = js.native
+  
   /**
     * Push edit operations, basically editing the model. This is the preferred way
     * of editing the model. The edit operations will land on the undo stack.
@@ -455,32 +540,47 @@ trait ITextModel extends IEditorModel {
     editOperations: js.Array[IIdentifiedSingleEditOperation],
     cursorStateComputer: ICursorStateComputer
   ): js.Array[Selection] | Null = js.native
+  def pushEditOperations(
+    beforeCursorState: Null,
+    editOperations: js.Array[IIdentifiedSingleEditOperation],
+    cursorStateComputer: ICursorStateComputer
+  ): js.Array[Selection] | Null = js.native
+  
   /**
     * Push a stack element onto the undo stack. This acts as an undo/redo point.
     * The idea is to use `pushEditOperations` to edit the model and then to
     * `pushStackElement` to create an undo/redo stop point.
     */
   def pushStackElement(): Unit = js.native
+  
   /**
     * Change the end of line sequence without recording in the undo stack.
     * This can have dire consequences on the undo stack! See @pushEOL for the preferred way.
     */
   def setEOL(eol: EndOfLineSequence): Unit = js.native
+  
   /**
     * Replace the entire text buffer value contained in this model.
     */
   def setValue(newValue: String): Unit = js.native
+  
   /**
     * Change the options of this model.
     */
   def updateOptions(newOpts: ITextModelUpdateOptions): Unit = js.native
+  
+  /**
+    * Gets the resource associated with this editor model.
+    */
+  val uri: Uri = js.native
+  
   /**
     * Create a valid position,
     */
   def validatePosition(position: IPosition): Position = js.native
+  
   /**
     * Create a valid range.
     */
   def validateRange(range: IRange): Range = js.native
 }
-

@@ -10,9 +10,9 @@ Speed-optimized BitSet implementation for modern browsers and JavaScript engines
 | ------------------ | :-------------: |
 | Full name          | fastbitset |
 | Keywords           | bitmap, bitset, performance |
-| # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 3415 |
+| # releases         | 2 |
+| # dependents       | 3 |
+| # downloads        | 4314 |
 | # stars            | 1 |
 
 ## Links

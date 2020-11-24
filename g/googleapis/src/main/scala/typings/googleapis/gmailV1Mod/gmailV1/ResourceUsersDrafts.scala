@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Drafts")
 @js.native
 class ResourceUsersDrafts protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * gmail.users.drafts.create
     * @desc Creates a new draft with the DRAFT label.
@@ -45,6 +47,7 @@ class ResourceUsersDrafts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDraft]
   ): Unit = js.native
+  
   /**
     * gmail.users.drafts.delete
     * @desc Immediately and permanently deletes the specified draft. Does not
@@ -75,6 +78,7 @@ class ResourceUsersDrafts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  
   /**
     * gmail.users.drafts.get
     * @desc Gets the specified draft.
@@ -105,6 +109,7 @@ class ResourceUsersDrafts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDraft]
   ): Unit = js.native
+  
   /**
     * gmail.users.drafts.list
     * @desc Lists the drafts in the user's mailbox.
@@ -137,6 +142,7 @@ class ResourceUsersDrafts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListDraftsResponse]
   ): Unit = js.native
+  
   /**
     * gmail.users.drafts.send
     * @desc Sends the specified, existing draft to the recipients in the To,
@@ -170,6 +176,7 @@ class ResourceUsersDrafts protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMessage]
   ): Unit = js.native
+  
   /**
     * gmail.users.drafts.update
     * @desc Replaces a draft's content.
@@ -204,4 +211,3 @@ class ResourceUsersDrafts protected () extends js.Object {
     callback: BodyResponseCallback[SchemaDraft]
   ): Unit = js.native
 }
-

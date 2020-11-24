@@ -2,7 +2,7 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "Directive")
 @js.native
@@ -12,4 +12,3 @@ import scala.scalajs.js.annotation._
 class DirectiveCls () extends Directive {
   def this(obj: Directive) = this()
 }
-

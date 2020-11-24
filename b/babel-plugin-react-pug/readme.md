@@ -10,9 +10,9 @@ Convert Pug into React function calls.
 | ------------------ | :-------------: |
 | Full name          | babel-plugin-react-pug |
 | Keywords           | pug, react, babel-plugin |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1728 |
+| # downloads        | 949 |
 | # stars            | 1 |
 
 ## Links

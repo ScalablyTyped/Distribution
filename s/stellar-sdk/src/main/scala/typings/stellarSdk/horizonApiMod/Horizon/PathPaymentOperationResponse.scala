@@ -6,7 +6,7 @@ import typings.stellarSdk.anon.Assetcode
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.pathPayment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PathPaymentOperationResponse
@@ -14,21 +14,33 @@ trait PathPaymentOperationResponse
       pathPayment, 
       typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.pathPayment
     ] {
+  
   var amount: String = js.native
+  
   var asset_code: js.UndefOr[String] = js.native
+  
   var asset_issuer: js.UndefOr[String] = js.native
+  
   var asset_type: AssetType = js.native
+  
   var from: String = js.native
+  
   var path: js.Array[Assetcode] = js.native
+  
   var source_amount: String = js.native
+  
   var source_asset_code: js.UndefOr[String] = js.native
+  
   var source_asset_issuer: js.UndefOr[String] = js.native
+  
   var source_asset_type: AssetType = js.native
+  
   var source_max: String = js.native
+  
   var to: String = js.native
 }
-
 object PathPaymentOperationResponse {
+  
   @scala.inline
   def apply(
     _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -54,52 +66,71 @@ object PathPaymentOperationResponse {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathPaymentOperationResponse]
   }
+  
   @scala.inline
   implicit class PathPaymentOperationResponseOps[Self <: PathPaymentOperationResponse] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAsset_type(value: AssetType): Self = this.set("asset_type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setPathVarargs(value: Assetcode*): Self = this.set("path", js.Array(value :_*))
+    
     @scala.inline
     def setPath(value: js.Array[Assetcode]): Self = this.set("path", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSource_amount(value: String): Self = this.set("source_amount", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSource_asset_type(value: AssetType): Self = this.set("source_asset_type", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setSource_max(value: String): Self = this.set("source_max", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setAsset_code(value: String): Self = this.set("asset_code", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAsset_code: Self = this.set("asset_code", js.undefined)
+    
     @scala.inline
     def setAsset_issuer(value: String): Self = this.set("asset_issuer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteAsset_issuer: Self = this.set("asset_issuer", js.undefined)
+    
     @scala.inline
     def setSource_asset_code(value: String): Self = this.set("source_asset_code", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSource_asset_code: Self = this.set("source_asset_code", js.undefined)
+    
     @scala.inline
     def setSource_asset_issuer(value: String): Self = this.set("source_asset_issuer", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteSource_asset_issuer: Self = this.set("source_asset_issuer", js.undefined)
   }
-  
 }
-

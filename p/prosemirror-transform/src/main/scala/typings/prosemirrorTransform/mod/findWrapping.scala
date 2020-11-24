@@ -7,11 +7,12 @@ import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorTransform.anon.Attrs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-transform", "findWrapping")
 @js.native
 object findWrapping extends js.Object {
+  
   def apply[S /* <: Schema[_, _] */](range: NodeRange[S], nodeType: NodeType[S]): js.UndefOr[js.Array[Attrs[S]] | Null] = js.native
   def apply[S /* <: Schema[_, _] */](
     range: NodeRange[S],
@@ -27,4 +28,3 @@ object findWrapping extends js.Object {
     innerRange: NodeRange[S]
   ): js.UndefOr[js.Array[Attrs[S]] | Null] = js.native
 }
-

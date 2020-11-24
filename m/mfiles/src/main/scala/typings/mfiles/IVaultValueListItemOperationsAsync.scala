@@ -6,10 +6,11 @@ import typings.mfiles.MFiles.MFBuiltInValueList
 import typings.mfiles.MFiles.MFExternalDBRefreshType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IVaultValueListItemOperationsAsync extends js.Object {
+  
   def AddValueListItem(ValueList: Double, ValueListItem: IValueListItem, AdministrativeOperation: Boolean): Unit = js.native
   def AddValueListItem(
     ValueList: Double,
@@ -116,6 +117,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ChangeAutomaticPermissionsToACL(
     ValueList: Double,
     ValueListItemID: Double,
@@ -278,6 +280,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ChangeAutomaticPermissionsToItemsOwnPermissions(
     ValueList: Double,
     ValueListItemID: Double,
@@ -408,6 +411,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ChangeAutomaticPermissionsToNamedACL(
     ValueList: Double,
     ValueListItemID: Double,
@@ -554,6 +558,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ChangePermissionsToACL(ValueList: Double, ValueListItemID: Double, AccessControlList: IAccessControlList): Unit = js.native
   def ChangePermissionsToACL(
     ValueList: Double,
@@ -660,6 +665,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ChangePermissionsToNamedACL(ValueList: Double, ValueListItemID: Double, NamedACL: Double): Unit = js.native
   def ChangePermissionsToNamedACL(
     ValueList: Double,
@@ -761,6 +767,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def ClearAutomaticPermissions(ValueList: Double, ValueListItemID: Double): Unit = js.native
   def ClearAutomaticPermissions(
     ValueList: Double,
@@ -845,6 +852,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueListItemByDisplayID(ValueList: Double, ValueListItemDisplayID: String): Unit = js.native
   def GetValueListItemByDisplayID(
     ValueList: Double,
@@ -937,6 +945,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueListItemByDisplayIDEx(ValueList: Double, ValueListItemDisplayID: String, ReplaceCurrentUserWithCallersIdentity: Boolean): Unit = js.native
   def GetValueListItemByDisplayIDEx(
     ValueList: Double,
@@ -1047,6 +1056,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueListItemByGUID(
     ValueList: Double,
     ItemGUID: String,
@@ -1177,6 +1187,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueListItemByID(ValueList: Double, ValueListItemID: Double): Unit = js.native
   def GetValueListItemByID(
     ValueList: Double,
@@ -1269,6 +1280,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueListItemByIDEx(ValueList: Double, ValueListItemID: Double, ReplaceCurrentUserWithCallersIdentity: Boolean): Unit = js.native
   def GetValueListItemByIDEx(
     ValueList: Double,
@@ -1379,6 +1391,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueListItemIDByGUID(ValueList: Double, ItemGUID: String, AllowDeletedItems: Boolean): Unit = js.native
   def GetValueListItemIDByGUID(
     ValueList: Double,
@@ -1485,6 +1498,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueListItems(
     ValueList: Double,
     UpdateFromServer: Boolean,
@@ -1599,6 +1613,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueListItemsEx(
     ValueList: Double,
     UpdateFromServer: Boolean,
@@ -1729,6 +1744,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueListItemsEx2(
     ValueList: Double,
     UpdateFromServer: Boolean,
@@ -2021,6 +2037,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def GetValueListItemsWithPermissions(
     ValueList: Double,
     UpdateFromServer: Boolean,
@@ -2313,6 +2330,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def RemoveValueListItem(ValueList: Double, Item: Double): Unit = js.native
   def RemoveValueListItem(
     ValueList: Double,
@@ -2397,6 +2415,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def SearchForValueListItemsEx(
     ValueList: Double,
     SearchConditions: ISearchConditions,
@@ -2543,6 +2562,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def SearchForValueListItemsEx2(
     ValueList: Double,
     SearchConditions: ISearchConditions,
@@ -2899,6 +2919,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def SearchForValueListItemsWithPermissions(
     ValueList: Double,
     SearchConditions: ISearchConditions,
@@ -3255,6 +3276,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UndeleteValueListItem(ValueList: Double, ValueListItemID: Double): Unit = js.native
   def UndeleteValueListItem(
     ValueList: Double,
@@ -3339,6 +3361,7 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  
   def UpdateValueListItem(ValueListItem: IValueListItem): Unit = js.native
   def UpdateValueListItem(
     ValueListItem: IValueListItem,
@@ -3376,4 +3399,3 @@ trait IVaultValueListItemOperationsAsync extends js.Object {
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

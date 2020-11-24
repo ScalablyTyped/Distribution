@@ -9,11 +9,12 @@ import typings.styledComponents.styledComponentsMod.InterpolationFunction
 import typings.styledComponents.styledComponentsMod.ThemedStyledProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@xstyled/styled-components", "createGlobalStyle")
 @js.native
 object createGlobalStyle extends js.Object {
+  
   def apply[P /* <: js.Object */](first: TemplateStringsArray, interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*): GlobalStyleComponent[P, DefaultTheme] = js.native
   def apply[P /* <: js.Object */](first: CSSObject, interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*): GlobalStyleComponent[P, DefaultTheme] = js.native
   def apply[P /* <: js.Object */](
@@ -21,4 +22,3 @@ object createGlobalStyle extends js.Object {
     interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*
   ): GlobalStyleComponent[P, DefaultTheme] = js.native
 }
-

@@ -6,7 +6,7 @@ import typings.ace.AceAjax.IEditSession
 import typings.ace.AceAjax.TextMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AceAjax.EditSession")
 @js.native
@@ -22,7 +22,6 @@ class EditSession protected () extends IEditSession {
   def this(text: String, mode: TextMode) = this()
   def this(text: js.Array[String], mode: String) = this()
 }
-
 @JSGlobal("AceAjax.EditSession")
 @js.native
 object EditSession
@@ -37,4 +36,3 @@ Instantiable1[(/* text */ js.Array[String]) | (/* text */ String), IEditSession]
       (/* mode */ String) | (/* mode */ TextMode), 
       IEditSession
     ]
-

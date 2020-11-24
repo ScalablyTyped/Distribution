@@ -1,17 +1,19 @@
 package typings.awsSdk.serverlessapplicationrepositoryMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServerlessApplicationRepository extends Service {
+  
   @JSName("config")
   var config_ServerlessApplicationRepository: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Creates an application, optionally including an AWS SAM file to create the first application version in the same call.
     */
@@ -25,6 +27,7 @@ trait ServerlessApplicationRepository extends Service {
     params: CreateApplicationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateApplicationResponse, Unit]
   ): Request[CreateApplicationResponse, AWSError] = js.native
+  
   /**
     * Creates an application version.
     */
@@ -38,6 +41,7 @@ trait ServerlessApplicationRepository extends Service {
     params: CreateApplicationVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateApplicationVersionResponse, Unit]
   ): Request[CreateApplicationVersionResponse, AWSError] = js.native
+  
   /**
     * Creates an AWS CloudFormation change set for the given application.
     */
@@ -51,6 +55,7 @@ trait ServerlessApplicationRepository extends Service {
     params: CreateCloudFormationChangeSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCloudFormationChangeSetResponse, Unit]
   ): Request[CreateCloudFormationChangeSetResponse, AWSError] = js.native
+  
   /**
     * Creates an AWS CloudFormation template.
     */
@@ -64,6 +69,7 @@ trait ServerlessApplicationRepository extends Service {
     params: CreateCloudFormationTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCloudFormationTemplateResponse, Unit]
   ): Request[CreateCloudFormationTemplateResponse, AWSError] = js.native
+  
   /**
     * Deletes the specified application.
     */
@@ -77,6 +83,7 @@ trait ServerlessApplicationRepository extends Service {
     params: DeleteApplicationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Gets the specified application.
     */
@@ -90,6 +97,7 @@ trait ServerlessApplicationRepository extends Service {
     params: GetApplicationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetApplicationResponse, Unit]
   ): Request[GetApplicationResponse, AWSError] = js.native
+  
   /**
     * Retrieves the policy for the application.
     */
@@ -103,6 +111,7 @@ trait ServerlessApplicationRepository extends Service {
     params: GetApplicationPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetApplicationPolicyResponse, Unit]
   ): Request[GetApplicationPolicyResponse, AWSError] = js.native
+  
   /**
     * Gets the specified AWS CloudFormation template.
     */
@@ -116,6 +125,7 @@ trait ServerlessApplicationRepository extends Service {
     params: GetCloudFormationTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCloudFormationTemplateResponse, Unit]
   ): Request[GetCloudFormationTemplateResponse, AWSError] = js.native
+  
   /**
     * Retrieves the list of applications nested in the containing application.
     */
@@ -129,6 +139,7 @@ trait ServerlessApplicationRepository extends Service {
     params: ListApplicationDependenciesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListApplicationDependenciesResponse, Unit]
   ): Request[ListApplicationDependenciesResponse, AWSError] = js.native
+  
   /**
     * Lists versions for the specified application.
     */
@@ -142,6 +153,7 @@ trait ServerlessApplicationRepository extends Service {
     params: ListApplicationVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListApplicationVersionsResponse, Unit]
   ): Request[ListApplicationVersionsResponse, AWSError] = js.native
+  
   /**
     * Lists applications owned by the requester.
     */
@@ -155,6 +167,7 @@ trait ServerlessApplicationRepository extends Service {
     params: ListApplicationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListApplicationsResponse, Unit]
   ): Request[ListApplicationsResponse, AWSError] = js.native
+  
   /**
     * Sets the permission policy for an application. For the list of actions supported for this operation, see
     Application 
@@ -174,6 +187,7 @@ trait ServerlessApplicationRepository extends Service {
     params: PutApplicationPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutApplicationPolicyResponse, Unit]
   ): Request[PutApplicationPolicyResponse, AWSError] = js.native
+  
   /**
     * Unshares an application from an AWS Organization.This operation can be called only from the organization's master account.
     */
@@ -187,6 +201,7 @@ trait ServerlessApplicationRepository extends Service {
     params: UnshareApplicationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Updates the specified application.
     */
@@ -201,4 +216,3 @@ trait ServerlessApplicationRepository extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateApplicationResponse, Unit]
   ): Request[UpdateApplicationResponse, AWSError] = js.native
 }
-

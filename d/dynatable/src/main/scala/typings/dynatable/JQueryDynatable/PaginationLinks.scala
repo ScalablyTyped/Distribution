@@ -2,12 +2,14 @@ package typings.dynatable.JQueryDynatable
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PaginationLinks extends js.Object {
+  
   /** Insert the pagination links inside the page */
   def attach(): Unit = js.native
+  
   /**
     * Generate a string containing the html of a pagination link
     *
@@ -20,14 +22,17 @@ trait PaginationLinks extends js.Object {
     */
   def buildLink(page: Double, label: String, linkClass: String, conditional: Boolean, conditionalClass: String): String = js.native
   def buildLink(page: Double, label: Double, linkClass: String, conditional: Boolean, conditionalClass: String): String = js.native
+  
   /**
     * Build the `<ul>` and creates the event listeners
     *
     * @return A string containing html markup
     */
   def create(): String = js.native
+  
   /** Call the attach method */
   def init(): Unit = js.native
+  
   /**
     * Check if the paginate feature is enabled in `settings.features`
     *
@@ -35,4 +40,3 @@ trait PaginationLinks extends js.Object {
     */
   def initOnLoad(): Boolean = js.native
 }
-

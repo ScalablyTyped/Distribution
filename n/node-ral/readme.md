@@ -12,7 +12,7 @@ a rpc client for node
 | Keywords           | rpc, ral, fis |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 9211 |
+| # downloads        | 8302 |
 | # stars            | 1 |
 
 ## Links

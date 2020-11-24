@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Interconnects")
 @js.native
 class ResourceInterconnects protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * compute.interconnects.delete
     * @desc Deletes the specified interconnect.
@@ -99,6 +101,7 @@ class ResourceInterconnects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.interconnects.get
     * @desc Returns the specified interconnect. Get a list of available
@@ -185,6 +188,7 @@ class ResourceInterconnects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInterconnect]
   ): Unit = js.native
+  
   /**
     * compute.interconnects.getDiagnostics
     * @desc Returns the interconnectDiagnostics for the specified interconnect.
@@ -217,6 +221,7 @@ class ResourceInterconnects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInterconnectsGetDiagnosticsResponse]
   ): Unit = js.native
+  
   /**
     * compute.interconnects.insert
     * @desc Creates a Interconnect in the specified project using the data
@@ -305,6 +310,7 @@ class ResourceInterconnects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.interconnects.list
     * @desc Retrieves the list of interconnect available to the specified
@@ -404,6 +410,7 @@ class ResourceInterconnects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInterconnectList]
   ): Unit = js.native
+  
   /**
     * compute.interconnects.patch
     * @desc Updates the specified interconnect with the data included in the
@@ -499,6 +506,7 @@ class ResourceInterconnects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.interconnects.setLabels
     * @desc Sets the labels on an Interconnect. To learn more about labels,
@@ -530,6 +538,7 @@ class ResourceInterconnects protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * compute.interconnects.testIamPermissions
     * @desc Returns permissions that a caller has on the specified resource.
@@ -622,4 +631,3 @@ class ResourceInterconnects protected () extends js.Object {
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for formatjs__intl-datetimeformat
 
-Typings are for version 2.3.0
+Typings are for version 3.0.0
 
 ## Library description:
 Intl.DateTimeFormat polyfill
@@ -10,9 +10,9 @@ Intl.DateTimeFormat polyfill
 | ------------------ | :-------------: |
 | Full name          | @formatjs/intl-datetimeformat |
 | Keywords           | i18n, intl, polyfill, datetimeformat, formatjs |
-| # releases         | 23 |
-| # dependents       | 3 |
-| # downloads        | 441147 |
+| # releases         | 35 |
+| # dependents       | 4 |
+| # downloads        | 1156008 |
 | # stars            | 0 |
 
 ## Links

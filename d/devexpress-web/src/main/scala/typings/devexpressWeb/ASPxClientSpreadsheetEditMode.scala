@@ -2,17 +2,17 @@ package typings.devexpressWeb
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ASPxClientSpreadsheetEditMode extends js.Object
-
 /**
   * Lists values identifying a type of the element currently being edited in the Spreadsheet control.
   */
 @JSGlobal("ASPxClientSpreadsheetEditMode")
 @js.native
 object ASPxClientSpreadsheetEditMode extends js.Object {
+  
   /**
     * Specifies that the element currently being edited is the spreadsheet cell.
     */
@@ -30,6 +30,4 @@ object ASPxClientSpreadsheetEditMode extends js.Object {
     */
   @js.native
   sealed trait None extends ASPxClientSpreadsheetEditMode
-  
 }
-

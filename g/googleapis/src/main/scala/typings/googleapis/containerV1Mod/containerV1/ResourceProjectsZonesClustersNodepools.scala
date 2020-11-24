@@ -6,13 +6,13 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/container/v1", "container_v1.Resource$Projects$Zones$Clusters$Nodepools")
 @js.native
 class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
   def this(context: APIRequestContext) = this()
-  var context: APIRequestContext = js.native
+  
   /**
     * container.projects.zones.clusters.nodePools.autoscaling
     * @desc Sets the autoscaling settings for a specific node pool.
@@ -115,6 +115,9 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
+  var context: APIRequestContext = js.native
+  
   /**
     * container.projects.zones.clusters.nodePools.create
     * @desc Creates a node pool for a cluster.
@@ -214,6 +217,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.nodePools.delete
     * @desc Deletes a node pool from a cluster.
@@ -313,6 +317,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.nodePools.get
     * @desc Retrieves the node pool requested.
@@ -412,6 +417,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNodePool]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.nodePools.list
     * @desc Lists the node pools for a cluster.
@@ -507,6 +513,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListNodePoolsResponse]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.nodePools.rollback
     * @desc Roll back the previously Aborted or Failed NodePool upgrade. This
@@ -610,6 +617,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.nodePools.setManagement
     * @desc Sets the NodeManagement options for a node pool.
@@ -712,6 +720,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.nodePools.setSize
     * @desc Sets the size for a specific node pool.
@@ -814,6 +823,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  
   /**
     * container.projects.zones.clusters.nodePools.update
     * @desc Updates the version and/or image type for a specific node pool.
@@ -917,4 +927,3 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
 }
-

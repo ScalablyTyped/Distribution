@@ -10,9 +10,9 @@ Dead simple navigation tabs for React Router
 | ------------------ | :-------------: |
 | Full name          | react-router-tabs |
 | Keywords           | router-tabs, routed-tabs, nav-tab, react-tabs, tab-component, tab, tabs, tabbed, navigation, component, react, router |
-| # releases         | 6 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 92594 |
+| # downloads        | 130847 |
 | # stars            | 1 |
 
 ## Links

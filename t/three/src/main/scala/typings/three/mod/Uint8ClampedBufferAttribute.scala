@@ -5,7 +5,7 @@ import typings.std.ArrayLike
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Uint8ClampedBufferAttribute")
 @js.native
@@ -20,4 +20,3 @@ class Uint8ClampedBufferAttribute protected ()
   def this(array: ArrayLike[Double], itemSize: Double, normalized: Boolean) = this()
   def this(array: Iterable[Double], itemSize: Double, normalized: Boolean) = this()
 }
-

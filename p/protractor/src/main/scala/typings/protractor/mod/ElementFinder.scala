@@ -3,7 +3,7 @@ package typings.protractor.mod
 import typings.protractor.locatorsMod.Locator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor", "ElementFinder")
 @js.native
@@ -14,11 +14,11 @@ class ElementFinder protected ()
     elementArrayFinder: typings.protractor.elementMod.ElementArrayFinder
   ) = this()
 }
-
 /* static members */
 @JSImport("protractor", "ElementFinder")
 @js.native
 object ElementFinder extends js.Object {
+  
   def fromWebElement_(
     browser: typings.protractor.browserMod.ProtractorBrowser,
     webElem: typings.seleniumWebdriver.mod.WebElement
@@ -29,4 +29,3 @@ object ElementFinder extends js.Object {
     locator: Locator
   ): typings.protractor.elementMod.ElementFinder = js.native
 }
-

@@ -1,14 +1,15 @@
 package typings.mendixmodelsdk.internalMod
 
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.unitsMod.IStructuralUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/sdk/internal", "AbstractUnit")
 @js.native
-abstract class AbstractUnit protected ()
-  extends typings.mendixmodelsdk.unitsMod.AbstractUnit {
+abstract class AbstractUnit[TModel /* <: IAbstractModel */] protected ()
+  extends typings.mendixmodelsdk.unitsMod.AbstractUnit[TModel] {
   def this(
     model: typings.mendixmodelsdk.abstractModelMod.AbstractModel,
     structureTypeName: String,
@@ -17,4 +18,3 @@ abstract class AbstractUnit protected ()
     container: IStructuralUnit
   ) = this()
 }
-

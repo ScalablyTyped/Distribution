@@ -7,22 +7,30 @@ import typings.node.streamMod.TransformOptions
 import typings.node.streamMod.Writable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("json2csv/JSON2CSVAsyncParser", JSImport.Namespace)
 @js.native
 object json2csvasyncparserMod extends js.Object {
+  
   @js.native
   trait JSON2CSVAsyncParser[T]
     extends typings.json2csv.json2csvbaseMod.default[T] {
-    var input: Transform = js.native
-    var processor: Writable = js.native
-    var transform: typings.json2csv.json2csvtransformMod.default[T] = js.native
+    
     def fromInput(input: Readable): JSON2CSVAsyncParser[T] = js.native
+    
+    var input: Transform = js.native
+    
+    var processor: Writable = js.native
+    
     def promise(): js.Promise[js.UndefOr[String]] = js.native
     def promise(returnCSV: Boolean): js.Promise[js.UndefOr[String]] = js.native
+    
     def throughTransform(transform: Transform): JSON2CSVAsyncParser[T] = js.native
+    
     def toOutput(output: Writable): JSON2CSVAsyncParser[T] = js.native
+    
+    var transform: typings.json2csv.json2csvtransformMod.default[T] = js.native
   }
   
   @js.native
@@ -31,6 +39,4 @@ object json2csvasyncparserMod extends js.Object {
     def this(opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions) = this()
     def this(opts: Options[T], transformOpts: TransformOptions) = this()
   }
-  
 }
-

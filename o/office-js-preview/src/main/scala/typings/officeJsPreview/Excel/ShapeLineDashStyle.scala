@@ -2,11 +2,10 @@ package typings.officeJsPreview.Excel
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait ShapeLineDashStyle extends js.Object
-
 /**
   *
   * The dash style for a line.
@@ -16,6 +15,7 @@ sealed trait ShapeLineDashStyle extends js.Object
 @JSGlobal("Excel.ShapeLineDashStyle")
 @js.native
 object ShapeLineDashStyle extends js.Object {
+  
   @js.native
   sealed trait dash extends ShapeLineDashStyle
   
@@ -51,6 +51,4 @@ object ShapeLineDashStyle extends js.Object {
   
   @js.native
   sealed trait systemDot extends ShapeLineDashStyle
-  
 }
-

@@ -5,7 +5,7 @@ import typings.pixiJs.anon.Color
 import typings.std.Float32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Graphics class contains methods used to draw primitive shapes such as lines, circles and
@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Graphics extends Container {
+  
   /**
     * Current fill style
     *
@@ -29,6 +30,7 @@ trait Graphics extends Container {
     * @protected
     */
   var _fillStyle: FillStyle = js.native
+  
   /**
     * Current hole mode is enabled.
     *
@@ -37,118 +39,7 @@ trait Graphics extends Container {
     * @protected
     */
   var _holeMode: Boolean = js.native
-  /**
-    * Current line style
-    *
-    * @member {PIXI.LineStyle} PIXI.Graphics#_lineStyle
-    * @protected
-    */
-  var _lineStyle: LineStyle = js.native
-  /**
-    * Current shape transform matrix.
-    *
-    * @member {PIXI.Matrix} PIXI.Graphics#_matrix
-    * @protected
-    */
-  var _matrix: Matrix = js.native
-  /**
-    * Update dirty for limiting calculating batches.
-    *
-    * @protected
-    * @member {number} PIXI.Graphics#batchDirty
-    * @default -1
-    */
-  var batchDirty: Double = js.native
-  /**
-    * Update dirty for limiting calculating tints for batches.
-    *
-    * @protected
-    * @member {number} PIXI.Graphics#batchTint
-    * @default -1
-    */
-  var batchTint: Double = js.native
-  /**
-    * A collections of batches! These can be drawn by the renderer batch system.
-    *
-    * @protected
-    * @member {object[]} PIXI.Graphics#batches
-    */
-  var batches: js.Array[_] = js.native
-  /**
-    * The blend mode to be applied to the graphic shape. Apply a value of
-    * `PIXI.BLEND_MODES.NORMAL` to reset the blend mode.
-    *
-    * @member {number}
-    * @default PIXI.BLEND_MODES.NORMAL;
-    * @see PIXI.BLEND_MODES
-    */
-  var blendMode: Double = js.native
-  /**
-    * Current path
-    *
-    * @member {PIXI.Polygon} PIXI.Graphics#currentPath
-    * @protected
-    */
-  var currentPath: Polygon = js.native
-  /**
-    * The current fill style.
-    *
-    * @member {PIXI.FillStyle}
-    * @readonly
-    */
-  val fill: FillStyle = js.native
-  /**
-    * Includes vertex positions, face indices, normals, colors, UVs, and
-    * custom attributes within buffers, reducing the cost of passing all
-    * this data to the GPU. Can be shared between multiple Mesh or Graphics objects.
-    *
-    * @member {PIXI.GraphicsGeometry}
-    * @readonly
-    */
-  val geometry: GraphicsGeometry = js.native
-  /**
-    * The current line style.
-    *
-    * @member {PIXI.LineStyle}
-    * @readonly
-    */
-  val line: LineStyle = js.native
-  /**
-    * Renderer plugin for batching
-    *
-    * @member {string} PIXI.Graphics#pluginName
-    * @default 'batch'
-    */
-  var pluginName: String = js.native
-  /**
-    * Represents the vertex and fragment shaders that processes the geometry and runs on the GPU.
-    * Can be shared between multiple Graphics objects.
-    *
-    * @member {PIXI.Shader} PIXI.Graphics#shader
-    */
-  var shader: Shader = js.native
-  /**
-    * Represents the WebGL state the Graphics required to render, excludes shader and geometry. E.g.,
-    * blend mode, culling, depth testing, direction of rendering triangles, backface, etc.
-    *
-    * @member {PIXI.State} PIXI.Graphics#state
-    */
-  var state: State = js.native
-  /**
-    * The tint applied to the graphic shape. This is a hex value. A value of
-    * 0xFFFFFF will remove any tint effect.
-    *
-    * @member {number}
-    * @default 0xFFFFFF
-    */
-  var tint: Double = js.native
-  /**
-    * Copy of the object vertex data.
-    *
-    * @protected
-    * @member {Float32Array} PIXI.Graphics#vertexData
-    */
-  var vertexData: Float32Array = js.native
+  
   /**
     * Initialize the curve
     *
@@ -160,12 +51,30 @@ trait Graphics extends Container {
   /* protected */ def _initCurve(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   /* protected */ def _initCurve(x: Double): Unit = js.native
   /* protected */ def _initCurve(x: Double, y: Double): Unit = js.native
+  
+  /**
+    * Current line style
+    *
+    * @member {PIXI.LineStyle} PIXI.Graphics#_lineStyle
+    * @protected
+    */
+  var _lineStyle: LineStyle = js.native
+  
+  /**
+    * Current shape transform matrix.
+    *
+    * @member {PIXI.Matrix} PIXI.Graphics#_matrix
+    * @protected
+    */
+  var _matrix: Matrix = js.native
+  
   /**
     * Populating batches for rendering
     *
     * @protected
     */
   /* protected */ def _populateBatches(): Unit = js.native
+  
   /**
     * Renders the batches using the BathedRenderer plugin
     *
@@ -173,6 +82,7 @@ trait Graphics extends Container {
     * @param {PIXI.Renderer} renderer - The renderer
     */
   /* protected */ def _renderBatched(renderer: Renderer): Unit = js.native
+  
   /**
     * Renders the graphics direct
     *
@@ -180,6 +90,7 @@ trait Graphics extends Container {
     * @param {PIXI.Renderer} renderer - The renderer
     */
   /* protected */ def _renderDirect(renderer: Renderer): Unit = js.native
+  
   /**
     * Renders specific DrawCall
     *
@@ -187,6 +98,7 @@ trait Graphics extends Container {
     * @param {PIXI.BatchDrawCall} drawCall
     */
   def _renderDrawCallDirect(renderer: Renderer, drawCall: BatchDrawCall): Unit = js.native
+  
   /**
     * Resolves shader for direct rendering
     *
@@ -194,6 +106,7 @@ trait Graphics extends Container {
     * @param {PIXI.Renderer} renderer - The renderer
     */
   /* protected */ def _resolveDirectShader(renderer: Renderer): Unit = js.native
+  
   /**
     * The arc method creates an arc/curve (used to create circles, or parts of circles).
     *
@@ -217,6 +130,7 @@ trait Graphics extends Container {
     endAngle: Double,
     anticlockwise: Boolean
   ): Graphics = js.native
+  
   /**
     * The arcTo() method creates an arc/curve between two tangents on the canvas.
     *
@@ -230,6 +144,33 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def arcTo(x1: Double, y1: Double, x2: Double, y2: Double, radius: Double): Graphics = js.native
+  
+  /**
+    * Update dirty for limiting calculating batches.
+    *
+    * @protected
+    * @member {number} PIXI.Graphics#batchDirty
+    * @default -1
+    */
+  var batchDirty: Double = js.native
+  
+  /**
+    * Update dirty for limiting calculating tints for batches.
+    *
+    * @protected
+    * @member {number} PIXI.Graphics#batchTint
+    * @default -1
+    */
+  var batchTint: Double = js.native
+  
+  /**
+    * A collections of batches! These can be drawn by the renderer batch system.
+    *
+    * @protected
+    * @member {object[]} PIXI.Graphics#batches
+    */
+  var batches: js.Array[_] = js.native
+  
   /**
     * Specifies a simple one-color fill that subsequent calls to other Graphics methods
     * (such as lineTo() or drawCircle()) use when drawing.
@@ -242,6 +183,7 @@ trait Graphics extends Container {
   def beginFill(color: js.UndefOr[scala.Nothing], alpha: Double): Graphics = js.native
   def beginFill(color: Double): Graphics = js.native
   def beginFill(color: Double, alpha: Double): Graphics = js.native
+  
   /**
     * Begin adding holes to the last draw shape
     * IMPORTANT: holes must be fully inside a shape to work
@@ -251,6 +193,7 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} Returns itself.
     */
   def beginHole(): Graphics = js.native
+  
   /**
     * Begin the texture fill
     *
@@ -263,6 +206,7 @@ trait Graphics extends Container {
     */
   def beginTextureFill(): Graphics = js.native
   def beginTextureFill(options: Color): Graphics = js.native
+  
   /**
     * Calculate the points for a bezier curve and then draws it.
     *
@@ -275,29 +219,44 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def bezierCurveTo(cpX: Double, cpY: Double, cpX2: Double, cpY2: Double, toX: Double, toY: Double): Graphics = js.native
+  
+  /**
+    * The blend mode to be applied to the graphic shape. Apply a value of
+    * `PIXI.BLEND_MODES.NORMAL` to reset the blend mode.
+    *
+    * @member {number}
+    * @default PIXI.BLEND_MODES.NORMAL;
+    * @see PIXI.BLEND_MODES
+    */
+  var blendMode: Double = js.native
+  
   /**
     * Recalcuate the tint by applying tin to batches using Graphics tint.
     * @protected
     */
   /* protected */ def calculateTints(): Unit = js.native
+  
   /**
     * If there's a transform update or a change to the shape of the
     * geometry, recaculate the vertices.
     * @protected
     */
   /* protected */ def calculateVertices(): Unit = js.native
+  
   /**
     * Clears the graphics that were drawn to this Graphics object, and resets fill and line style settings.
     *
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def clear(): Graphics = js.native
+  
   /**
     * Closes the current path.
     *
     * @return {PIXI.Graphics} Returns itself.
     */
   def closePath(): Graphics = js.native
+  
   /**
     * Tests if a point is inside this graphics object
     *
@@ -305,6 +264,15 @@ trait Graphics extends Container {
     * @return {boolean} the result of the test
     */
   def containsPoint(point: IPointData): Boolean = js.native
+  
+  /**
+    * Current path
+    *
+    * @member {PIXI.Polygon} PIXI.Graphics#currentPath
+    * @protected
+    */
+  var currentPath: Polygon = js.native
+  
   /**
     * Draw Rectangle with chamfer corners.
     *
@@ -319,6 +287,7 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} Returns self.
     */
   def drawChamferRect(x: Double, y: Double, width: Double, height: Double, chamfer: Double): Graphics = js.native
+  
   /**
     * Draws a circle.
     *
@@ -328,6 +297,7 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def drawCircle(x: Double, y: Double, radius: Double): Graphics = js.native
+  
   /**
     * Draws an ellipse.
     *
@@ -338,6 +308,7 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def drawEllipse(x: Double, y: Double, width: Double, height: Double): Graphics = js.native
+  
   /**
     * Draw Rectangle with fillet corners.
     *
@@ -352,6 +323,7 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} Returns self.
     */
   def drawFilletRect(x: Double, y: Double, width: Double, height: Double, fillet: Double): Graphics = js.native
+  
   /**
     * Draws a polygon using the given path.
     *
@@ -359,6 +331,7 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def drawPolygon(path: ((js.Array[Double | Point]) | Polygon)*): Graphics = js.native
+  
   /**
     * Draws a rectangle shape.
     *
@@ -369,6 +342,7 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def drawRect(x: Double, y: Double, width: Double, height: Double): Graphics = js.native
+  
   /**
     * Draw a regular polygon where all sides are the same length.
     *
@@ -383,6 +357,7 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics}
     */
   def drawRegularPolygon(x: Double, y: Double, radius: Double, sides: Double, rotation: Double): Graphics = js.native
+  
   /**
     * Draw a rectangle shape with rounded/beveled corners.
     *
@@ -394,6 +369,7 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def drawRoundedRect(x: Double, y: Double, width: Double, height: Double, radius: Double): Graphics = js.native
+  
   /**
     * Draw any shape.
     *
@@ -405,6 +381,7 @@ trait Graphics extends Container {
   def drawShape(shape: Polygon): Graphics = js.native
   def drawShape(shape: Rectangle): Graphics = js.native
   def drawShape(shape: RoundedRectangle): Graphics = js.native
+  
   /**
     * Draw a star shape with an arbitrary number of points.
     *
@@ -427,6 +404,7 @@ trait Graphics extends Container {
   ): Graphics = js.native
   def drawStar(x: Double, y: Double, points: Double, radius: Double, innerRadius: Double): Graphics = js.native
   def drawStar(x: Double, y: Double, points: Double, radius: Double, innerRadius: Double, rotation: Double): Graphics = js.native
+  
   /**
     * Draw a torus shape, like a donut. Can be used for something like a circle loader.
     *
@@ -441,22 +419,44 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics}
     */
   def drawTorus(x: Double, y: Double, innerRadius: Double, outerRadius: Double, sweep: Double): Graphics = js.native
+  
   /**
     * Applies a fill to the lines and shapes that were added since the last call to the beginFill() method.
     *
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def endFill(): Graphics = js.native
+  
   /**
     * End adding holes to the last draw shape
     * @return {PIXI.Graphics} Returns itself.
     */
   def endHole(): Graphics = js.native
+  
+  /**
+    * The current fill style.
+    *
+    * @member {PIXI.FillStyle}
+    * @readonly
+    */
+  val fill: FillStyle = js.native
+  
   /**
     * Finish the polygon object.
     * @protected
     */
   /* protected */ def finishPoly(): Unit = js.native
+  
+  /**
+    * Includes vertex positions, face indices, normals, colors, UVs, and
+    * custom attributes within buffers, reducing the cost of passing all
+    * this data to the GPU. Can be shared between multiple Mesh or Graphics objects.
+    *
+    * @member {PIXI.GraphicsGeometry}
+    * @readonly
+    */
+  val geometry: GraphicsGeometry = js.native
+  
   /**
     * True if graphics consists of one rectangle, and thus, can be drawn like a Sprite and
     * masked with gl.scissor.
@@ -464,6 +464,15 @@ trait Graphics extends Container {
     * @returns {boolean} True if only 1 rect.
     */
   def isFastRect(): Boolean = js.native
+  
+  /**
+    * The current line style.
+    *
+    * @member {PIXI.LineStyle}
+    * @readonly
+    */
+  val line: LineStyle = js.native
+  
   /**
     * Specifies the line style used for subsequent calls to Graphics methods such as the lineTo()
     * method or the drawCircle() method.
@@ -594,6 +603,7 @@ trait Graphics extends Container {
   def lineStyle(width: Double, color: Double, alpha: Double, alignment: js.UndefOr[scala.Nothing], native: Boolean): Graphics = js.native
   def lineStyle(width: Double, color: Double, alpha: Double, alignment: Double): Graphics = js.native
   def lineStyle(width: Double, color: Double, alpha: Double, alignment: Double, native: Boolean): Graphics = js.native
+  
   /**
     * Like line style but support texture for line fill.
     *
@@ -613,6 +623,7 @@ trait Graphics extends Container {
     */
   def lineTextureStyle(): Graphics = js.native
   def lineTextureStyle(options: Alignment): Graphics = js.native
+  
   /**
     * Draws a line using the current line style from the current drawing position to (x, y);
     * The current drawing position is then set to (x, y).
@@ -622,6 +633,7 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def lineTo(x: Double, y: Double): Graphics = js.native
+  
   /**
     * Moves the current drawing position to x, y.
     *
@@ -630,6 +642,15 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def moveTo(x: Double, y: Double): Graphics = js.native
+  
+  /**
+    * Renderer plugin for batching
+    *
+    * @member {string} PIXI.Graphics#pluginName
+    * @default 'batch'
+    */
+  var pluginName: String = js.native
+  
   /**
     * Calculate the points for a quadratic bezier curve and then draws it.
     * Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier-curve-in-c
@@ -641,6 +662,7 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def quadraticCurveTo(cpX: Double, cpY: Double, toX: Double, toY: Double): Graphics = js.native
+  
   /**
     * Apply a matrix to the positional data.
     *
@@ -648,10 +670,43 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} Returns itself.
     */
   def setMatrix(matrix: Matrix): Graphics = js.native
+  
+  /**
+    * Represents the vertex and fragment shaders that processes the geometry and runs on the GPU.
+    * Can be shared between multiple Graphics objects.
+    *
+    * @member {PIXI.Shader} PIXI.Graphics#shader
+    */
+  var shader: Shader = js.native
+  
   /**
     * Start a polygon object internally
     * @protected
     */
   /* protected */ def startPoly(): Unit = js.native
+  
+  /**
+    * Represents the WebGL state the Graphics required to render, excludes shader and geometry. E.g.,
+    * blend mode, culling, depth testing, direction of rendering triangles, backface, etc.
+    *
+    * @member {PIXI.State} PIXI.Graphics#state
+    */
+  var state: State = js.native
+  
+  /**
+    * The tint applied to the graphic shape. This is a hex value. A value of
+    * 0xFFFFFF will remove any tint effect.
+    *
+    * @member {number}
+    * @default 0xFFFFFF
+    */
+  var tint: Double = js.native
+  
+  /**
+    * Copy of the object vertex data.
+    *
+    * @protected
+    * @member {Float32Array} PIXI.Graphics#vertexData
+    */
+  var vertexData: Float32Array = js.native
 }
-

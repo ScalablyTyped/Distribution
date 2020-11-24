@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DirectiveDecorator
@@ -13,6 +13,7 @@ trait DirectiveDecorator
   */
 Instantiable0[Directive]
      with Instantiable1[/* obj */ Directive, Directive] {
+  
   /**
     * Decorator that marks a class as an Angular directive.
     * You can define your own directives to attach custom behavior to elements in the DOM.
@@ -61,4 +62,3 @@ Instantiable0[Directive]
   def apply(): TypeDecorator = js.native
   def apply(obj: Directive): TypeDecorator = js.native
 }
-

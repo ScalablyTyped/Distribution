@@ -2,14 +2,14 @@ package typings.sharepoint.SP
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 sealed trait PageType extends js.Object
-
 @JSGlobal("SP.PageType")
 @js.native
 object PageType extends js.Object {
+  
   @js.native
   sealed trait defaultView extends PageType
   
@@ -48,6 +48,4 @@ object PageType extends js.Object {
   
   @js.native
   sealed trait view extends PageType
-  
 }
-

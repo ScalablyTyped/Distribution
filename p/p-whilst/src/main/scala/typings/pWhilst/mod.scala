@@ -3,19 +3,12 @@ package typings.pWhilst
 import typings.pWhilst.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p-whilst", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function pWhilst<ValueType>(
-  // 	condition: (value: ValueType | undefined) => boolean,
-  // 	action: () => ValueType | PromiseLike<ValueType>
-  // ): Promise<void>;
-  // export = pWhilst;
-  @JSName("default")
-  var default_Original: Call = js.native
+  
   /**
   	While `condition` returns `true`, executes `action` repeatedly, and then resolves the promise. Rejects if `action` returns a promise that rejects or if an error is thrown anywhere.
   	@param condition - Expected to return a boolean of whether to execute `action`.
@@ -38,6 +31,7 @@ object mod extends js.Object {
     condition: js.Function1[/* value */ js.UndefOr[ValueType], Boolean],
     action: js.Function0[ValueType | js.Thenable[ValueType]]
   ): js.Promise[Unit] = js.native
+  
   /**
   	While `condition` returns `true`, executes `action` repeatedly, and then resolves the promise. Rejects if `action` returns a promise that rejects or if an error is thrown anywhere.
   	@param condition - Expected to return a boolean of whether to execute `action`.
@@ -66,5 +60,12 @@ object mod extends js.Object {
     condition: js.Function1[/* value */ js.UndefOr[ValueType], Boolean],
     action: js.Function0[ValueType | js.Thenable[ValueType]]
   ): js.Promise[Unit] = js.native
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function pWhilst<ValueType>(
+  // 	condition: (value: ValueType | undefined) => boolean,
+  // 	action: () => ValueType | PromiseLike<ValueType>
+  // ): Promise<void>;
+  // export = pWhilst;
+  @JSName("default")
+  var default_Original: Call = js.native
 }
-

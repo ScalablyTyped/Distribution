@@ -3,7 +3,7 @@ package typings.postmark.serverMod
 import typings.postmark.messageSupportingTypesMod.LinkTrackingOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark/dist/client/models/server/Server", "UpdateServerRequest")
 @js.native
@@ -25,20 +25,34 @@ class UpdateServerRequest protected () extends js.Object {
     IncludeBounceContentInHook: js.UndefOr[Boolean],
     EnableSmtpApiErrorHooks: js.UndefOr[Boolean]
   ) = this()
+  
   var BounceHookUrl: js.UndefOr[String] = js.native
+  
   var ClickHookUrl: js.UndefOr[String] = js.native
+  
   var Color: js.UndefOr[String] = js.native
+  
   var DeliveryHookUrl: js.UndefOr[String] = js.native
+  
   var EnableSmtpApiErrorHooks: js.UndefOr[Boolean] = js.native
+  
   var InboundHookUrl: js.UndefOr[String] = js.native
+  
   var InboundSpamThreshold: js.UndefOr[Double] = js.native
+  
   var IncludeBounceContentInHook: js.UndefOr[Boolean] = js.native
+  
   var Name: js.UndefOr[String] = js.native
+  
   var OpenHookUrl: js.UndefOr[String] = js.native
+  
   var PostFirstOpenOnly: js.UndefOr[Boolean] = js.native
+  
   var RawEmailEnabled: js.UndefOr[Boolean] = js.native
+  
   var SmtpApiActivated: js.UndefOr[Boolean] = js.native
+  
   var TrackLinks: js.UndefOr[LinkTrackingOptions] = js.native
+  
   var TrackOpens: js.UndefOr[Boolean] = js.native
 }
-

@@ -4,11 +4,12 @@ import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.Diagnostic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.transpile")
 @js.native
 object transpile extends js.Object {
+  
   def apply(input: String): String = js.native
   def apply(
     input: String,
@@ -94,4 +95,3 @@ object transpile extends js.Object {
     moduleName: String
   ): String = js.native
 }
-

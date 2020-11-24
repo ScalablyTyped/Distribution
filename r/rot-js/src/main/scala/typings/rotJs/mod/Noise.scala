@@ -5,11 +5,12 @@ import org.scalablytyped.runtime.TopLevel
 import typings.rotJs.simplexMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rot-js", "Noise")
 @js.native
 object Noise extends js.Object {
+  
   @js.native
   /**
     * @param gradients Random gradients
@@ -17,10 +18,7 @@ object Noise extends js.Object {
   class Simplex () extends default {
     def this(gradients: Double) = this()
   }
-  
   @js.native
   object Simplex
     extends TopLevel[Instantiable1[/* gradients */ js.UndefOr[Double], default]]
-  
 }
-

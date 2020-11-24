@@ -2,7 +2,7 @@ package typings.pixiJs.global.PIXI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Transform that takes care about its versions
@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Transform ()
   extends typings.pixiJs.PIXI.Transform
-
 /* static members */
 @JSGlobal("PIXI.Transform")
 @js.native
 object Transform extends js.Object {
+  
   /**
     * A default (identity) transform
     *
@@ -28,4 +28,3 @@ object Transform extends js.Object {
     */
   var IDENTITY: typings.pixiJs.PIXI.Transform = js.native
 }
-

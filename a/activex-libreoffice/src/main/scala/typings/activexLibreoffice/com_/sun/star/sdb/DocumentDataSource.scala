@@ -14,7 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * simplifies the accessing of data sources and it's corresponding database document.
@@ -25,8 +25,8 @@ import scala.scalajs.js.annotation._
 trait DocumentDataSource
   extends DataSource
      with XDocumentDataSource
-
 object DocumentDataSource {
+  
   @scala.inline
   def apply(
     Bookmarks: XNameAccess,
@@ -72,4 +72,3 @@ object DocumentDataSource {
     __obj.asInstanceOf[DocumentDataSource]
   }
 }
-

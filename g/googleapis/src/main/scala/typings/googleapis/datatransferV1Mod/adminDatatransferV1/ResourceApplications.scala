@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/datatransfer_v1", "admin_datatransfer_v1.Resource$Applications")
 @js.native
 class ResourceApplications protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * datatransfer.applications.get
     * @desc Retrieves information about an application for the given
@@ -42,6 +44,7 @@ class ResourceApplications protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaApplication]
   ): Unit = js.native
+  
   /**
     * datatransfer.applications.list
     * @desc Lists the applications available for data transfer for a customer.
@@ -76,4 +79,3 @@ class ResourceApplications protected () extends js.Object {
     callback: BodyResponseCallback[SchemaApplicationsListResponse]
   ): Unit = js.native
 }
-

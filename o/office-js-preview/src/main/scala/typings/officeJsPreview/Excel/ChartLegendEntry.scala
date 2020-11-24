@@ -8,7 +8,7 @@ import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -18,9 +18,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ChartLegendEntry extends ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ChartLegendEntry: RequestContext = js.native
+  
   /**
     *
     * Specifies the height of the legendEntry on the chart legend.
@@ -28,6 +30,7 @@ trait ChartLegendEntry extends ClientObject {
     * [Api set: ExcelApi 1.8]
     */
   val height: Double = js.native
+  
   /**
     *
     * Specifies the index of the legendEntry in the chart legend.
@@ -35,6 +38,7 @@ trait ChartLegendEntry extends ClientObject {
     * [Api set: ExcelApi 1.8]
     */
   val index: Double = js.native
+  
   /**
     *
     * Specifies the left of a chart legendEntry.
@@ -42,27 +46,7 @@ trait ChartLegendEntry extends ClientObject {
     * [Api set: ExcelApi 1.8]
     */
   val left: Double = js.native
-  /**
-    *
-    * Specifies the top of a chart legendEntry.
-    *
-    * [Api set: ExcelApi 1.8]
-    */
-  val top: Double = js.native
-  /**
-    *
-    * Represents the visible of a chart legend entry.
-    *
-    * [Api set: ExcelApi 1.7]
-    */
-  var visible: Boolean = js.native
-  /**
-    *
-    * Represents the width of the legendEntry on the chart Legend.
-    *
-    * [Api set: ExcelApi 1.8]
-    */
-  val width: Double = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -73,6 +57,7 @@ trait ChartLegendEntry extends ClientObject {
   def load(propertyNamesAndPaths: Expand): ChartLegendEntry = js.native
   def load(propertyNames: String): ChartLegendEntry = js.native
   def load(propertyNames: js.Array[String]): ChartLegendEntry = js.native
+  
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartLegendEntry): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -88,10 +73,34 @@ trait ChartLegendEntry extends ClientObject {
     */
   def set(properties: ChartLegendEntryUpdateData): Unit = js.native
   def set(properties: ChartLegendEntryUpdateData, options: UpdateOptions): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.ChartLegendEntry object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendEntryData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): ChartLegendEntryData = js.native
+  
+  /**
+    *
+    * Specifies the top of a chart legendEntry.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
+  val top: Double = js.native
+  
+  /**
+    *
+    * Represents the visible of a chart legend entry.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
+  var visible: Boolean = js.native
+  
+  /**
+    *
+    * Represents the width of the legendEntry on the chart Legend.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
+  val width: Double = js.native
 }
-

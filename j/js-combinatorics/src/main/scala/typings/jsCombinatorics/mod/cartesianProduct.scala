@@ -2,11 +2,12 @@ package typings.jsCombinatorics.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-combinatorics", "cartesianProduct")
 @js.native
 object cartesianProduct extends js.Object {
+  
   def apply(a: js.Array[_]*): ICartesianProductGenerator[js.Array[_]] = js.native
   /**
     * Generates the cartesian product of the arrays. All arguments must be arrays with more than one element.
@@ -67,4 +68,3 @@ object cartesianProduct extends js.Object {
     a10: js.Array[T10]
   ): ICartesianProductGenerator[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = js.native
 }
-

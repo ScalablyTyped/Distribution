@@ -6,13 +6,15 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Volumes$Recommended")
 @js.native
 class ResourceVolumesRecommended protected () extends js.Object {
   def this(context: APIRequestContext) = this()
+  
   var context: APIRequestContext = js.native
+  
   /**
     * books.volumes.recommended.list
     * @desc Return a list of recommended books for the current user.
@@ -43,6 +45,7 @@ class ResourceVolumesRecommended protected () extends js.Object {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVolumes]
   ): Unit = js.native
+  
   /**
     * books.volumes.recommended.rate
     * @desc Rate a recommended book for the current user.
@@ -78,4 +81,3 @@ class ResourceVolumesRecommended protected () extends js.Object {
     callback: BodyResponseCallback[SchemaBooksVolumesRecommendedRateResponse]
   ): Unit = js.native
 }
-

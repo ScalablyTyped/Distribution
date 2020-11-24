@@ -10,7 +10,7 @@ import typings.std.ArrayBuffer
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Analogous to TLS1.1's CertificateRequest.
@@ -18,11 +18,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ClientCertificateRequest extends js.Object {
+  
   /**
     * List of distinguished names of certificate authorities allowed by the
     * server. Each entry must be a DER-encoded X.509 DistinguishedName.
     */
   var certificateAuthorities: js.Array[ArrayBuffer] = js.native
+  
   /**
     * This field is a list of the types of certificates requested, sorted in
     * order of the server's preference. Only certificates of a type contained
@@ -38,8 +40,8 @@ trait ClientCertificateRequest extends js.Object {
     ]
   ] = js.native
 }
-
 object ClientCertificateRequest {
+  
   @scala.inline
   def apply(
     certificateAuthorities: js.Array[ArrayBuffer],
@@ -54,21 +56,28 @@ object ClientCertificateRequest {
     val __obj = js.Dynamic.literal(certificateAuthorities = certificateAuthorities.asInstanceOf[js.Any], certificateTypes = certificateTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientCertificateRequest]
   }
+  
   @scala.inline
   implicit class ClientCertificateRequestOps[Self <: ClientCertificateRequest] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCertificateAuthoritiesVarargs(value: ArrayBuffer*): Self = this.set("certificateAuthorities", js.Array(value :_*))
+    
     @scala.inline
     def setCertificateAuthorities(value: js.Array[ArrayBuffer]): Self = this.set("certificateAuthorities", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def setCertificateTypesVarargs(
       value: (ToStringLiteral[
@@ -77,6 +86,7 @@ object ClientCertificateRequest {
           Exclude[/* keyof chrome-apps.anon.ECDSASIGN */ RSA_SIGN | ECDSA_SIGN, rsaSign | ecdsaSign]
         ])*
     ): Self = this.set("certificateTypes", js.Array(value :_*))
+    
     @scala.inline
     def setCertificateTypes(
       value: js.Array[
@@ -88,6 +98,4 @@ object ClientCertificateRequest {
         ]
     ): Self = this.set("certificateTypes", value.asInstanceOf[js.Any])
   }
-  
 }
-

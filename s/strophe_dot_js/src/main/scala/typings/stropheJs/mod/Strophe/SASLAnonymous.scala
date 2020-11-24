@@ -3,7 +3,7 @@ package typings.stropheJs.mod.Strophe
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants: SASL mechanisms
   *  Available authentication mechanisms
@@ -16,4 +16,3 @@ import scala.scalajs.js.annotation._
 @JSImport("strophe.js", "Strophe.SASLAnonymous")
 @js.native
 object SASLAnonymous extends TopLevel[SASLMechanism]
-

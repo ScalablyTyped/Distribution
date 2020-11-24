@@ -13,11 +13,14 @@ import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait dxFilterBuilderCustomOperation extends js.Object {
-  /** @name dxFilterBuilderCustomOperation.calculateFilterExpression */
+  
+  /**
+    * [descr:dxFilterBuilderCustomOperation.calculateFilterExpression]
+    */
   var calculateFilterExpression: js.UndefOr[
     js.Function2[
       /* filterValue */ js.Any, 
@@ -25,82 +28,123 @@ trait dxFilterBuilderCustomOperation extends js.Object {
       String | js.Array[_] | js.Function
     ]
   ] = js.native
-  /** @name dxFilterBuilderCustomOperation.caption */
+  
+  /**
+    * [descr:dxFilterBuilderCustomOperation.caption]
+    */
   var caption: js.UndefOr[String] = js.native
-  /** @name dxFilterBuilderCustomOperation.customizeText */
+  
+  /**
+    * [descr:dxFilterBuilderCustomOperation.customizeText]
+    */
   var customizeText: js.UndefOr[js.Function1[/* fieldInfo */ Field, String]] = js.native
-  /** @name dxFilterBuilderCustomOperation.dataTypes */
+  
+  /**
+    * [descr:dxFilterBuilderCustomOperation.dataTypes]
+    */
   var dataTypes: js.UndefOr[js.Array[string_ | number | date | boolean_ | `object` | datetime]] = js.native
-  /** @name dxFilterBuilderCustomOperation.editorTemplate */
+  
+  /**
+    * [descr:dxFilterBuilderCustomOperation.editorTemplate]
+    */
   var editorTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* conditionInfo */ SetValue, /* container */ dxElement, String | Element | JQuery])
   ] = js.native
-  /** @name dxFilterBuilderCustomOperation.hasValue */
+  
+  /**
+    * [descr:dxFilterBuilderCustomOperation.hasValue]
+    */
   var hasValue: js.UndefOr[Boolean] = js.native
-  /** @name dxFilterBuilderCustomOperation.icon */
+  
+  /**
+    * [descr:dxFilterBuilderCustomOperation.icon]
+    */
   var icon: js.UndefOr[String] = js.native
-  /** @name dxFilterBuilderCustomOperation.name */
+  
+  /**
+    * [descr:dxFilterBuilderCustomOperation.name]
+    */
   var name: js.UndefOr[String] = js.native
 }
-
 object dxFilterBuilderCustomOperation {
+  
   @scala.inline
   def apply(): dxFilterBuilderCustomOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[dxFilterBuilderCustomOperation]
   }
+  
   @scala.inline
   implicit class dxFilterBuilderCustomOperationOps[Self <: dxFilterBuilderCustomOperation] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    
     @scala.inline
     def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    
     @scala.inline
     def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
+      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+      x
     }
+    
     @scala.inline
     def setCalculateFilterExpression(
       value: (/* filterValue */ js.Any, /* field */ dxFilterBuilderField) => String | js.Array[_] | js.Function
     ): Self = this.set("calculateFilterExpression", js.Any.fromFunction2(value))
+    
     @scala.inline
     def deleteCalculateFilterExpression: Self = this.set("calculateFilterExpression", js.undefined)
+    
     @scala.inline
     def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteCaption: Self = this.set("caption", js.undefined)
+    
     @scala.inline
     def setCustomizeText(value: /* fieldInfo */ Field => String): Self = this.set("customizeText", js.Any.fromFunction1(value))
+    
     @scala.inline
     def deleteCustomizeText: Self = this.set("customizeText", js.undefined)
+    
     @scala.inline
     def setDataTypesVarargs(value: (string_ | number | date | boolean_ | `object` | datetime)*): Self = this.set("dataTypes", js.Array(value :_*))
+    
     @scala.inline
     def setDataTypes(value: js.Array[string_ | number | date | boolean_ | `object` | datetime]): Self = this.set("dataTypes", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteDataTypes: Self = this.set("dataTypes", js.undefined)
+    
     @scala.inline
     def setEditorTemplateFunction2(value: (/* conditionInfo */ SetValue, /* container */ dxElement) => String | Element | JQuery): Self = this.set("editorTemplate", js.Any.fromFunction2(value))
+    
     @scala.inline
     def setEditorTemplate(
       value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* conditionInfo */ SetValue, /* container */ dxElement, String | Element | JQuery])
     ): Self = this.set("editorTemplate", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteEditorTemplate: Self = this.set("editorTemplate", js.undefined)
+    
     @scala.inline
     def setHasValue(value: Boolean): Self = this.set("hasValue", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteHasValue: Self = this.set("hasValue", js.undefined)
+    
     @scala.inline
     def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteIcon: Self = this.set("icon", js.undefined)
+    
     @scala.inline
     def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
   }
-  
 }
-

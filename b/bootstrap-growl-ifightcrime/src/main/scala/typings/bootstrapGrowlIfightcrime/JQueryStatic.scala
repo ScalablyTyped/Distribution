@@ -5,10 +5,11 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQueryStatic extends js.Object {
+  
   /**
     * Show standard Bootstrap alerts into hovering "Growl-like" notifications
     * @param message to show.
@@ -18,4 +19,3 @@ trait JQueryStatic extends js.Object {
   def bootstrapGrowl(message: String): JQuery[HTMLElement] = js.native
   def bootstrapGrowl(message: String, options: Options): JQuery[HTMLElement] = js.native
 }
-

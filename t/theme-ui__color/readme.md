@@ -1,7 +1,7 @@
 
 # Scala.js typings for theme-ui__color
 
-Typings are for version 0.3
+Typings are for version 0.3.4
 
 ## Library description:
 Color manipulation utilities for Theme UI
@@ -10,9 +10,9 @@ Color manipulation utilities for Theme UI
 | ------------------ | :-------------: |
 | Full name          | @theme-ui/color |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 8 |
-| # downloads        | 26460 |
+| # releases         | 27 |
+| # dependents       | 40 |
+| # downloads        | 237263 |
 | # stars            | 0 |
 
 ## Links
@@ -21,7 +21,7 @@ Color manipulation utilities for Theme UI
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

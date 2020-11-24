@@ -2,7 +2,7 @@ package typings.hapi.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.hapi.hapiStrings.onPreStart
@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
   - typings.hapi.hapiStrings.onPostStop
 */
 trait ServerExtType extends js.Object
-
 object ServerExtType {
+  
   @scala.inline
   def onPostStart: typings.hapi.hapiStrings.onPostStart = "onPostStart".asInstanceOf[typings.hapi.hapiStrings.onPostStart]
+  
   @scala.inline
   def onPostStop: typings.hapi.hapiStrings.onPostStop = "onPostStop".asInstanceOf[typings.hapi.hapiStrings.onPostStop]
+  
   @scala.inline
   def onPreStart: typings.hapi.hapiStrings.onPreStart = "onPreStart".asInstanceOf[typings.hapi.hapiStrings.onPreStart]
+  
   @scala.inline
   def onPreStop: typings.hapi.hapiStrings.onPreStop = "onPreStop".asInstanceOf[typings.hapi.hapiStrings.onPreStop]
 }
-

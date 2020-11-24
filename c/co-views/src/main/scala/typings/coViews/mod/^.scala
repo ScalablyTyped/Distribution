@@ -2,11 +2,12 @@ package typings.coViews.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("co-views", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  
   /**
     * Pass views `dir` and `opts` to return a render function.
     */
@@ -15,4 +16,3 @@ object ^ extends js.Object {
   def apply(dir: String): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], _] = js.native
   def apply(dir: String, opts: Options): js.Function2[/* view */ String, /* locals */ js.UndefOr[js.Object], _] = js.native
 }
-

@@ -17,10 +17,11 @@ import typings.googleAppsScript.GoogleAppsScript.Sheets.Schema.UpdateValuesRespo
 import typings.googleAppsScript.GoogleAppsScript.Sheets.Schema.ValueRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ValuesCollection extends js.Object {
+  
   // Appends values to a spreadsheet. The input range is used to search for
   // existing data and find a "table" within that range. Values will be
   // appended to the next row of the table, starting with the first column of
@@ -49,49 +50,58 @@ trait ValuesCollection extends js.Object {
   // row-wise), it does not influence what cell the data starts being written
   // to.
   def append(resource: ValueRange, spreadsheetId: String, range: String, optionalArgs: js.Object): AppendValuesResponse = js.native
+  
   // Clears one or more ranges of values from a spreadsheet.
   // The caller must specify the spreadsheet ID and one or more ranges.
   // Only values are cleared -- all other properties of the cell (such as
   // formatting, data validation, etc..) are kept.
   def batchClear(resource: BatchClearValuesRequest, spreadsheetId: String): BatchClearValuesResponse = js.native
+  
   // Clears one or more ranges of values from a spreadsheet.
   // The caller must specify the spreadsheet ID and one or more
   // DataFilters. Ranges matching any of the specified data
   // filters will be cleared.  Only values are cleared -- all other properties
   // of the cell (such as formatting, data validation, etc..) are kept.
   def batchClearByDataFilter(resource: BatchClearValuesByDataFilterRequest, spreadsheetId: String): BatchClearValuesByDataFilterResponse = js.native
+  
   // Returns one or more ranges of values from a spreadsheet.
   // The caller must specify the spreadsheet ID and one or more ranges.
   def batchGet(spreadsheetId: String): BatchGetValuesResponse = js.native
   // Returns one or more ranges of values from a spreadsheet.
   // The caller must specify the spreadsheet ID and one or more ranges.
   def batchGet(spreadsheetId: String, optionalArgs: js.Object): BatchGetValuesResponse = js.native
+  
   // Returns one or more ranges of values that match the specified data filters.
   // The caller must specify the spreadsheet ID and one or more
   // DataFilters.  Ranges that match any of the data filters in
   // the request will be returned.
   def batchGetByDataFilter(resource: BatchGetValuesByDataFilterRequest, spreadsheetId: String): BatchGetValuesByDataFilterResponse = js.native
+  
   // Sets values in one or more ranges of a spreadsheet.
   // The caller must specify the spreadsheet ID,
   // a valueInputOption, and one or more
   // ValueRanges.
   def batchUpdate(resource: BatchUpdateValuesRequest, spreadsheetId: String): BatchUpdateValuesResponse = js.native
+  
   // Sets values in one or more ranges of a spreadsheet.
   // The caller must specify the spreadsheet ID,
   // a valueInputOption, and one or more
   // DataFilterValueRanges.
   def batchUpdateByDataFilter(resource: BatchUpdateValuesByDataFilterRequest, spreadsheetId: String): BatchUpdateValuesByDataFilterResponse = js.native
+  
   // Clears values from a spreadsheet.
   // The caller must specify the spreadsheet ID and range.
   // Only values are cleared -- all other properties of the cell (such as
   // formatting, data validation, etc..) are kept.
   def clear(resource: js.Any, /* Schema.ClearValuesRequest */ spreadsheetId: String, range: String): ClearValuesResponse = js.native
+  
   // Returns a range of values from a spreadsheet.
   // The caller must specify the spreadsheet ID and a range.
   def get(spreadsheetId: String, range: String): ValueRange = js.native
   // Returns a range of values from a spreadsheet.
   // The caller must specify the spreadsheet ID and a range.
   def get(spreadsheetId: String, range: String, optionalArgs: js.Object): ValueRange = js.native
+  
   // Sets values in a range of a spreadsheet.
   // The caller must specify the spreadsheet ID, range, and
   // a valueInputOption.
@@ -101,4 +111,3 @@ trait ValuesCollection extends js.Object {
   // a valueInputOption.
   def update(resource: ValueRange, spreadsheetId: String, range: String, optionalArgs: js.Object): UpdateValuesResponse = js.native
 }
-

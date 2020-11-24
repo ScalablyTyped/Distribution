@@ -3,7 +3,7 @@ package typings.paper.paperCoreMod
 import typings.paper.paper.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("paper/dist/paper-core", "PointText")
 @js.native
@@ -16,4 +16,3 @@ class PointText protected ()
     */
   def this(point: Point) = this()
 }
-

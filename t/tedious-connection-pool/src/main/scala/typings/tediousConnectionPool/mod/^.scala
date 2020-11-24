@@ -3,7 +3,7 @@ package typings.tediousConnectionPool.mod
 import typings.tedious.mod.ConnectionConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Tedious Connection Pool Class
@@ -18,4 +18,3 @@ class ^ protected () extends tcp {
     */
   def this(poolConfig: PoolConfig, connectionConfig: ConnectionConfig) = this()
 }
-

@@ -2,7 +2,7 @@ package typings.rdfjsDataset.datasetCoreMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line no-unnecessary-class
 @JSImport("@rdfjs/dataset/DatasetCore", JSImport.Namespace)
@@ -10,4 +10,3 @@ import scala.scalajs.js.annotation._
 class ^[InQuad] protected () extends DatasetCore[InQuad] {
   def this(quads: js.Array[InQuad]) = this()
 }
-

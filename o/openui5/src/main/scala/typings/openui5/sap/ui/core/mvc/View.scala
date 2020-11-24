@@ -6,16 +6,18 @@ import typings.openui5.sap.ui.core.Element
 import typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait View extends Control {
+  
   /**
     * Adds some content to the aggregation <code>content</code>.
     * @param oContent the content to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def addContent(oContent: Control): View = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterInit</code> event of this
     * <code>sap.ui.core.mvc.View</code>.When called, the context of the event handler (its
@@ -31,6 +33,7 @@ trait View extends Control {
     */
   def attachAfterInit(oData: js.Any, fnFunction: js.Any): View = js.native
   def attachAfterInit(oData: js.Any, fnFunction: js.Any, oListener: js.Any): View = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>afterRendering</code> event of this
     * <code>sap.ui.core.mvc.View</code>.When called, the context of the event handler (its
@@ -46,6 +49,7 @@ trait View extends Control {
     */
   def attachAfterRendering(oData: js.Any, fnFunction: js.Any): View = js.native
   def attachAfterRendering(oData: js.Any, fnFunction: js.Any, oListener: js.Any): View = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>beforeExit</code> event of this
     * <code>sap.ui.core.mvc.View</code>.When called, the context of the event handler (its
@@ -61,6 +65,7 @@ trait View extends Control {
     */
   def attachBeforeExit(oData: js.Any, fnFunction: js.Any): View = js.native
   def attachBeforeExit(oData: js.Any, fnFunction: js.Any, oListener: js.Any): View = js.native
+  
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>beforeRendering</code> event of this
     * <code>sap.ui.core.mvc.View</code>.When called, the context of the event handler (its
@@ -76,23 +81,27 @@ trait View extends Control {
     */
   def attachBeforeRendering(oData: js.Any, fnFunction: js.Any): View = js.native
   def attachBeforeRendering(oData: js.Any, fnFunction: js.Any, oListener: js.Any): View = js.native
+  
   /**
     * Returns an element by its ID in the context of the view.
     * @param sId View local ID of the element
     * @returns element by its ID or <code>undefined</code>
     */
   def byId(sId: String): Element = js.native
+  
   /**
     * Convert the given view local element ID to a globally unique IDby prefixing it with the view ID.
     * @param sId View local ID of the element
     * @returns prefixed id
     */
   def createId(sId: String): String = js.native
+  
   /**
     * Destroys all the content in the aggregation <code>content</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def destroyContent(): View = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>afterInit</code> event of this
     * <code>sap.ui.core.mvc.View</code>.The passed function and listener object must match the ones used
@@ -102,6 +111,7 @@ trait View extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAfterInit(fnFunction: js.Any, oListener: js.Any): View = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>afterRendering</code> event of this
     * <code>sap.ui.core.mvc.View</code>.The passed function and listener object must match the ones used
@@ -111,6 +121,7 @@ trait View extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachAfterRendering(fnFunction: js.Any, oListener: js.Any): View = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>beforeExit</code> event of this
     * <code>sap.ui.core.mvc.View</code>.The passed function and listener object must match the ones used
@@ -120,6 +131,7 @@ trait View extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachBeforeExit(fnFunction: js.Any, oListener: js.Any): View = js.native
+  
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>beforeRendering</code> event of this
     * <code>sap.ui.core.mvc.View</code>.The passed function and listener object must match the ones used
@@ -129,39 +141,46 @@ trait View extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def detachBeforeRendering(fnFunction: js.Any, oListener: js.Any): View = js.native
+  
   /**
     * Fires event <code>afterInit</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAfterInit(mArguments: js.Any): View = js.native
+  
   /**
     * Fires event <code>afterRendering</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireAfterRendering(mArguments: js.Any): View = js.native
+  
   /**
     * Fires event <code>beforeExit</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireBeforeExit(mArguments: js.Any): View = js.native
+  
   /**
     * Fires event <code>beforeRendering</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def fireBeforeRendering(mArguments: js.Any): View = js.native
+  
   /**
     * Gets content of aggregation <code>content</code>.Child Controls of the view
     */
   def getContent(): js.Array[Control] = js.native
+  
   /**
     * Returns the view's Controller instance or null for a controller-less View.
     * @returns Controller of this view.
     */
   def getController(): js.Any = js.native
+  
   /**
     * An (optional) method to be implemented by Views. When no controller instance is given at View
     * instantiation timeAND this method exists and returns the (package and class) name of a controller,
@@ -169,6 +188,7 @@ trait View extends Control {
     * @returns the name of the controller
     */
   def getControllerName(): String = js.native
+  
   /**
     * Gets current value of property <code>displayBlock</code>.Whether the CSS display should be set to
     * "block".Set this to "true" if the default display "inline-block" causes a vertical scrollbar with
@@ -178,11 +198,13 @@ trait View extends Control {
     * @returns Value of property <code>displayBlock</code>
     */
   def getDisplayBlock(): Boolean = js.native
+  
   /**
     * Gets current value of property <code>height</code>.The height
     * @returns Value of property <code>height</code>
     */
   def getHeight(): js.Any = js.native
+  
   /**
     * Returns the local ID of an element by removing the view ID prefix or<code>null</code> if the ID does
     * not contain a prefix.
@@ -191,33 +213,39 @@ trait View extends Control {
     * @returns ID without prefix or <code>null</code>
     */
   def getLocalId(sId: String): String = js.native
+  
   /**
     * Returns the info object which is also passed to the preprocessors
     * @param bSync Describes the view execution, true if sync
     * @returns Info object for the view
     */
   def getPreprocessorInfo(bSync: Boolean): js.Any = js.native
+  
   /**
     * Returns user specific data object
     * @returns viewData
     */
   def getViewData(): js.Any = js.native
+  
   /**
     * Gets current value of property <code>viewName</code>.Name of the View
     * @returns Value of property <code>viewName</code>
     */
   def getViewName(): String = js.native
+  
   /**
     * Gets current value of property <code>width</code>.The widthDefault value is <code>100%</code>.
     * @returns Value of property <code>width</code>
     */
   def getWidth(): js.Any = js.native
+  
   /**
     * Checks if any preprocessors are active for the specified type
     * @param sType Type of the preprocessor, e.g. "raw", "xml" or "controls"
     * @returns <code>true</code> if a preprocessor is active
     */
   def hasPreprocessor(sType: String): Boolean = js.native
+  
   /**
     * Checks for the provided <code>sap.ui.core.Control</code> in the aggregation <code>content</code>.and
     * returns its index if found or -1 otherwise.
@@ -225,6 +253,7 @@ trait View extends Control {
     * @returns The index of the provided control in the aggregation if found, or -1 otherwise
     */
   def indexOfContent(oContent: Control): Double = js.native
+  
   /**
     * Inserts a content into the aggregation <code>content</code>.
     * @param oContent the content to insert; if empty, nothing is inserted
@@ -235,6 +264,7 @@ trait View extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def insertContent(oContent: Control, iIndex: Double): View = js.native
+  
   /**
     * Creates a Promise representing the state of the view initialization.For views that are loading
     * asynchronously (by setting async=true) this Promise is created by viewinitialization. Synchronously
@@ -243,6 +273,7 @@ trait View extends Control {
     * @returns resolves with the complete view instance, reject with any thrown error
     */
   def loaded(): JQueryPromise[_] = js.native
+  
   /**
     * Register a preprocessor for all views of a specific type.The preprocessor can be registered for
     * several stages of view initialization, which aredependant from the view type, e.g. "raw", "xml" or
@@ -319,12 +350,14 @@ trait View extends Control {
     bOnDemand: Boolean,
     mSettings: js.Any
   ): Unit = js.native
+  
   /**
     * Removes all the controls from the aggregation <code>content</code>.Additionally, it unregisters them
     * from the hosting UIArea.
     * @returns An array of the removed elements (might be empty)
     */
   def removeAllContent(): js.Array[Control] = js.native
+  
   def removeContent(vContent: String): Control = js.native
   /**
     * Removes a content from the aggregation <code>content</code>.
@@ -333,6 +366,7 @@ trait View extends Control {
     */
   def removeContent(vContent: Double): Control = js.native
   def removeContent(vContent: Control): Control = js.native
+  
   def runPreprocessor(sType: String, vSource: String): JQueryPromise[_] | js.Any | String | Element = js.native
   def runPreprocessor(sType: String, vSource: String, bSync: Boolean): JQueryPromise[_] | js.Any | String | Element = js.native
   /**
@@ -347,6 +381,7 @@ trait View extends Control {
   def runPreprocessor(sType: String, vSource: js.Any, bSync: Boolean): JQueryPromise[_] | js.Any | String | Element = js.native
   def runPreprocessor(sType: String, vSource: Element): JQueryPromise[_] | js.Any | String | Element = js.native
   def runPreprocessor(sType: String, vSource: Element, bSync: Boolean): JQueryPromise[_] | js.Any | String | Element = js.native
+  
   /**
     * Sets a new value for property <code>displayBlock</code>.Whether the CSS display should be set to
     * "block".Set this to "true" if the default display "inline-block" causes a vertical scrollbar with
@@ -358,6 +393,7 @@ trait View extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setDisplayBlock(bDisplayBlock: Boolean): View = js.native
+  
   /**
     * Sets a new value for property <code>height</code>.The heightWhen called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -365,6 +401,7 @@ trait View extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setHeight(sHeight: js.Any): View = js.native
+  
   /**
     * Sets a new value for property <code>viewName</code>.Name of the ViewWhen called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
@@ -372,6 +409,7 @@ trait View extends Control {
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
   def setViewName(sViewName: String): View = js.native
+  
   /**
     * Sets a new value for property <code>width</code>.The widthWhen called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -381,10 +419,10 @@ trait View extends Control {
     */
   def setWidth(sWidth: js.Any): View = js.native
 }
-
 @JSGlobal("sap.ui.core.mvc.View")
 @js.native
 object View extends js.Object {
+  
   /**
     * Interface for Preprocessor implementations that can be hooked in the view life cycle.There are two
     * possibilities to use the preprocessor. It can be either passed to the view via the
@@ -395,6 +433,7 @@ object View extends js.Object {
     */
   @js.native
   trait Preprocessor extends js.Object {
+    
     /**
       * Processing method that must be implemented by a Preprocessor.
       * @param vSource the source to be processed
@@ -412,11 +451,12 @@ object View extends js.Object {
     */
   @js.native
   object mvc extends js.Object {
-    @js.native
-    sealed trait ViewType extends js.Object
     
     @js.native
+    sealed trait ViewType extends js.Object
+    @js.native
     object ViewType extends js.Object {
+      
       @js.native
       sealed trait HTML extends ViewType
       
@@ -431,10 +471,6 @@ object View extends js.Object {
       
       @js.native
       sealed trait XML extends ViewType
-      
     }
-    
   }
-  
 }
-

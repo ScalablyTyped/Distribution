@@ -10,11 +10,12 @@ import typings.jupyterlabNotebook.widgetMod.Notebook
 import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@jupyterlab/notebook/lib/actions", JSImport.Namespace)
 @js.native
 object actionsMod extends js.Object {
+  
   @js.native
   /**
     * A private constructor for the `NotebookActions` class.
@@ -26,10 +27,10 @@ object actionsMod extends js.Object {
     * does not yet exist, so it needs to be referenced via a getter.
     */
   class NotebookActions protected () extends js.Object
-  
   /* static members */
   @js.native
   object NotebookActions extends js.Object {
+    
     /**
       * Change the selected cell type(s).
       *
@@ -44,6 +45,7 @@ object actionsMod extends js.Object {
       * Any cells converted to markdown will be unrendered.
       */
     def changeCellType(notebook: Notebook, value: CellType): Unit = js.native
+    
     /**
       * Clear all the code outputs on the widget.
       *
@@ -53,6 +55,7 @@ object actionsMod extends js.Object {
       * The widget `mode` will be preserved.
       */
     def clearAllOutputs(notebook: Notebook): Unit = js.native
+    
     /**
       * Clear the code outputs of the selected cells.
       *
@@ -62,12 +65,14 @@ object actionsMod extends js.Object {
       * The widget `mode` will be preserved.
       */
     def clearOutputs(notebook: Notebook): Unit = js.native
+    
     /**
       * Copy the selected cell data to a clipboard.
       *
       * @param notebook - The target notebook widget.
       */
     def copy(notebook: Notebook): Unit = js.native
+    
     /**
       * Cut the selected cell data to a clipboard.
       *
@@ -78,6 +83,7 @@ object actionsMod extends js.Object {
       * A new code cell is added if all cells are cut.
       */
     def cut(notebook: Notebook): Unit = js.native
+    
     /**
       * Delete the selected cells.
       *
@@ -89,28 +95,33 @@ object actionsMod extends js.Object {
       * This action can be undone.
       */
     def deleteCells(notebook: Notebook): Unit = js.native
+    
     /**
       * Deselect all of the cells of the notebook.
       *
       * @param notebook - the targe notebook widget.
       */
     def deselectAll(notebook: Notebook): Unit = js.native
+    
     /**
       * Disable output scrolling for all selected cells.
       *
       * @param notebook - The target notebook widget.
       */
     def disableOutputScrolling(notebook: Notebook): Unit = js.native
+    
     /**
       * Enable output scrolling for all selected cells.
       *
       * @param notebook - The target notebook widget.
       */
     def enableOutputScrolling(notebook: Notebook): Unit = js.native
+    
     /**
       * A signal that emits whenever a cell is run.
       */
     def executed: ISignal[_, Cell] = js.native
+    
     /**
       * Extend the selection to the cell above.
       *
@@ -123,6 +134,7 @@ object actionsMod extends js.Object {
       */
     def extendSelectionAbove(notebook: Notebook): Unit = js.native
     def extendSelectionAbove(notebook: Notebook, toTop: Boolean): Unit = js.native
+    
     /**
       * Extend the selection to the cell below.
       *
@@ -135,30 +147,35 @@ object actionsMod extends js.Object {
       */
     def extendSelectionBelow(notebook: Notebook): Unit = js.native
     def extendSelectionBelow(notebook: Notebook, toBottom: Boolean): Unit = js.native
+    
     /**
       * Hide the code on all code cells.
       *
       * @param notebook - The target notebook widget.
       */
     def hideAllCode(notebook: Notebook): Unit = js.native
+    
     /**
       * Hide the output on all code cells.
       *
       * @param notebook - The target notebook widget.
       */
     def hideAllOutputs(notebook: Notebook): Unit = js.native
+    
     /**
       * Hide the code on selected code cells.
       *
       * @param notebook - The target notebook widget.
       */
     def hideCode(notebook: Notebook): Unit = js.native
+    
     /**
       * Hide the output on selected code cells.
       *
       * @param notebook - The target notebook widget.
       */
     def hideOutput(notebook: Notebook): Unit = js.native
+    
     /**
       * Insert a new code cell above the active cell.
       *
@@ -171,6 +188,7 @@ object actionsMod extends js.Object {
       * The new cell will the active cell.
       */
     def insertAbove(notebook: Notebook): Unit = js.native
+    
     /**
       * Insert a new code cell below the active cell.
       *
@@ -183,6 +201,7 @@ object actionsMod extends js.Object {
       * The new cell will be the active cell.
       */
     def insertBelow(notebook: Notebook): Unit = js.native
+    
     /**
       * Merge the selected cells.
       *
@@ -197,18 +216,21 @@ object actionsMod extends js.Object {
       * If the active cell is a markdown cell, it will be unrendered.
       */
     def mergeCells(notebook: Notebook): Unit = js.native
+    
     /**
       * Move the selected cell(s) down.
       *
       * @param notebook = The target notebook widget.
       */
     def moveDown(notebook: Notebook): Unit = js.native
+    
     /**
       * Move the selected cell(s) up.
       *
       * @param widget - The target notebook widget.
       */
     def moveUp(notebook: Notebook): Unit = js.native
+    
     /**
       * Paste cells from the application clipboard.
       *
@@ -231,6 +253,7 @@ object actionsMod extends js.Object {
     def paste_below(notebook: Notebook, mode: below): Unit = js.native
     @JSName("paste")
     def paste_replace(notebook: Notebook, mode: replace): Unit = js.native
+    
     /**
       * Redo a cell action.
       *
@@ -240,8 +263,10 @@ object actionsMod extends js.Object {
       * This is a no-op if there are no cell actions to redo.
       */
     def redo(notebook: Notebook): Unit = js.native
+    
     def renderAllMarkdown(notebook: Notebook): js.Promise[Boolean] = js.native
     def renderAllMarkdown(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
+    
     /**
       * Replaces the selection in the active cell of the notebook.
       *
@@ -249,6 +274,7 @@ object actionsMod extends js.Object {
       * @param text - The text to replace the selection.
       */
     def replaceSelection(notebook: Notebook, text: String): Unit = js.native
+    
     /**
       * Run the selected cell(s).
       *
@@ -264,6 +290,7 @@ object actionsMod extends js.Object {
       */
     def run(notebook: Notebook): js.Promise[Boolean] = js.native
     def run(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
+    
     /**
       * Run all of the cells in the notebook.
       *
@@ -279,6 +306,7 @@ object actionsMod extends js.Object {
       */
     def runAll(notebook: Notebook): js.Promise[Boolean] = js.native
     def runAll(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
+    
     /**
       * Run all of the cells before the currently active cell (exclusive).
       *
@@ -294,6 +322,7 @@ object actionsMod extends js.Object {
       */
     def runAllAbove(notebook: Notebook): js.Promise[Boolean] = js.native
     def runAllAbove(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
+    
     /**
       * Run all of the cells after the currently active cell (inclusive).
       *
@@ -309,6 +338,7 @@ object actionsMod extends js.Object {
       */
     def runAllBelow(notebook: Notebook): js.Promise[Boolean] = js.native
     def runAllBelow(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
+    
     /**
       * Run the selected cell(s) and advance to the next cell.
       *
@@ -326,6 +356,7 @@ object actionsMod extends js.Object {
       */
     def runAndAdvance(notebook: Notebook): js.Promise[Boolean] = js.native
     def runAndAdvance(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
+    
     /**
       * Run the selected cell(s) and insert a new code cell.
       *
@@ -343,6 +374,7 @@ object actionsMod extends js.Object {
       */
     def runAndInsert(notebook: Notebook): js.Promise[Boolean] = js.native
     def runAndInsert(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
+    
     /**
       * Select the above the active cell.
       *
@@ -355,12 +387,14 @@ object actionsMod extends js.Object {
       * The existing selection will be cleared.
       */
     def selectAbove(notebook: Notebook): Unit = js.native
+    
     /**
       * Select all of the cells of the notebook.
       *
       * @param notebook - the target notebook widget.
       */
     def selectAll(notebook: Notebook): Unit = js.native
+    
     /**
       * Select the cell below the active cell.
       *
@@ -373,6 +407,7 @@ object actionsMod extends js.Object {
       * The existing selection will be cleared.
       */
     def selectBelow(notebook: Notebook): Unit = js.native
+    
     /**
       * Go to the last cell that is run or current if it is running.
       *
@@ -382,6 +417,7 @@ object actionsMod extends js.Object {
       * @param notebook - The target notebook widget.
       */
     def selectLastRunCell(notebook: Notebook): Unit = js.native
+    
     /**
       * Set the markdown header level.
       *
@@ -397,30 +433,35 @@ object actionsMod extends js.Object {
       * The cells will be unrendered.
       */
     def setMarkdownHeader(notebook: Notebook, level: Double): Unit = js.native
+    
     /**
       * Show the code on all code cells.
       *
       * @param widget - The target notebook widget.
       */
     def showAllCode(notebook: Notebook): Unit = js.native
+    
     /**
       * Show the output on all code cells.
       *
       * @param notebook - The target notebook widget.
       */
     def showAllOutputs(notebook: Notebook): Unit = js.native
+    
     /**
       * Show the code on selected code cells.
       *
       * @param notebook - The target notebook widget.
       */
     def showCode(notebook: Notebook): Unit = js.native
+    
     /**
       * Show the output on selected code cells.
       *
       * @param notebook - The target notebook widget.
       */
     def showOutput(notebook: Notebook): Unit = js.native
+    
     /**
       * Split the active cell into two or more cells.
       *
@@ -436,6 +477,7 @@ object actionsMod extends js.Object {
       * This action can be undone.
       */
     def splitCell(notebook: Notebook): Unit = js.native
+    
     /**
       * Toggle the line number of all cells.
       *
@@ -446,6 +488,7 @@ object actionsMod extends js.Object {
       * The `mode` of the widget will be preserved.
       */
     def toggleAllLineNumbers(notebook: Notebook): Unit = js.native
+    
     /**
       * Trust the notebook after prompting the user.
       *
@@ -457,6 +500,7 @@ object actionsMod extends js.Object {
       * No dialog will be presented if the notebook is already trusted.
       */
     def trust(notebook: Notebook): js.Promise[Unit] = js.native
+    
     /**
       * Undo a cell action.
       *
@@ -467,6 +511,4 @@ object actionsMod extends js.Object {
       */
     def undo(notebook: Notebook): Unit = js.native
   }
-  
 }
-

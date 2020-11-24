@@ -38,11 +38,12 @@ import typings.vexdb.vexdbStrings.skills
 import typings.vexdb.vexdbStrings.teams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexdb", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  
   @JSName("get")
   def get_awards(endpoint: awards, params: AwardsRequestObject): js.Promise[js.Array[AwardsResponseObject]] = js.native
   @JSName("get")
@@ -57,6 +58,7 @@ object mod extends js.Object {
   def get_skills(endpoint: skills, params: SkillsRequestObject): js.Promise[js.Array[SkillsResponseObject]] = js.native
   @JSName("get")
   def get_teams(endpoint: teams, params: TeamsRequestObject): js.Promise[js.Array[TeamsResponseObject]] = js.native
+  
   def live(endpoint: String, params: LiveRequestObject[RequestObject]): LiveEventEmitter[RequestObject, ResponseObject] = js.native
   @JSName("live")
   def live_awards(endpoint: awards, params: LiveRequestObjectAwardsRe): LiveEventEmitter[AwardsRequestObject, AwardsResponseObject] = js.native
@@ -72,7 +74,9 @@ object mod extends js.Object {
   def live_skills(endpoint: skills, params: LiveRequestObjectSkillsRe): LiveEventEmitter[SkillsRequestObject, SkillsResponseObject] = js.native
   @JSName("live")
   def live_teams(endpoint: teams, params: LiveRequestObjectTeamsReq): LiveEventEmitter[TeamsRequestObject, TeamsResponseObject] = js.native
+  
   def request[T /* <: ResponseObject */](endpoint: js.Any, params: js.Any): js.Promise[APIResponse[T]] = js.native
+  
   @JSName("size")
   def size_awards(endpoint: awards, params: AwardsRequestObject): js.Promise[Double] = js.native
   @JSName("size")
@@ -87,8 +91,10 @@ object mod extends js.Object {
   def size_skills(endpoint: skills, params: SkillsRequestObject): js.Promise[Double] = js.native
   @JSName("size")
   def size_teams(endpoint: teams, params: TeamsRequestObject): js.Promise[Double] = js.native
+  
   @js.native
   object cache extends js.Object {
+    
     @JSName("resolve")
     def resolve_awards(endpoint: awards, params: AwardsRequestObject): js.Promise[APIResponse[AwardsRequestObject]] = js.native
     @JSName("resolve")
@@ -103,6 +109,7 @@ object mod extends js.Object {
     def resolve_skills(endpoint: skills, params: SkillsRequestObject): js.Promise[APIResponse[SkillsRequestObject]] = js.native
     @JSName("resolve")
     def resolve_teams(endpoint: teams, params: TeamsRequestObject): js.Promise[APIResponse[TeamsRequestObject]] = js.native
+    
     @JSName("store")
     def store_awards(endpoint: awards, params: AwardsRequestObject, data: APIResponse[AwardsResponseObject]): js.Promise[Boolean] = js.native
     @JSName("store")
@@ -125,14 +132,19 @@ object mod extends js.Object {
   
   @js.native
   object constant extends js.Object {
+    
     var SkillsType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof req.SkillsType */ js.Any = js.native
+    
     var endpoints: js.Array[Endpoint] = js.native
-    var isBrowser: js.Function = js.native
-    var passableParams: Awards = js.native
-    var settings: typings.vexdb.settingsMod.settings = js.native
+    
     def header(headers: StringDictionary[String]): Unit = js.native
+    
+    var isBrowser: js.Function = js.native
+    
     def param(params: RequestObject): Unit = js.native
+    
+    var passableParams: Awards = js.native
+    
+    var settings: typings.vexdb.settingsMod.settings = js.native
   }
-  
 }
-

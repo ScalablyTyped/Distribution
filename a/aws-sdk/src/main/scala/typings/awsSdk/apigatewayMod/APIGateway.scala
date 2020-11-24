@@ -1,17 +1,19 @@
 package typings.awsSdk.apigatewayMod
 
-import typings.awsSdk.configMod.ConfigBase
+import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait APIGateway extends Service {
+  
   @JSName("config")
   var config_APIGateway: ConfigBase with ClientConfiguration = js.native
+  
   /**
     * Create an ApiKey resource.  AWS CLI
     */
@@ -22,6 +24,7 @@ trait APIGateway extends Service {
     */
   def createApiKey(params: CreateApiKeyRequest): Request[ApiKey, AWSError] = js.native
   def createApiKey(params: CreateApiKeyRequest, callback: js.Function2[/* err */ AWSError, /* data */ ApiKey, Unit]): Request[ApiKey, AWSError] = js.native
+  
   /**
     * Adds a new Authorizer resource to an existing RestApi resource. AWS CLI
     */
@@ -35,6 +38,7 @@ trait APIGateway extends Service {
     params: CreateAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Authorizer, Unit]
   ): Request[Authorizer, AWSError] = js.native
+  
   /**
     * Creates a new BasePathMapping resource.
     */
@@ -48,6 +52,7 @@ trait APIGateway extends Service {
     params: CreateBasePathMappingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BasePathMapping, Unit]
   ): Request[BasePathMapping, AWSError] = js.native
+  
   /**
     * Creates a Deployment resource, which makes a specified RestApi callable over the internet.
     */
@@ -61,6 +66,7 @@ trait APIGateway extends Service {
     params: CreateDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Deployment, Unit]
   ): Request[Deployment, AWSError] = js.native
+  
   /**
     * 
     */
@@ -74,6 +80,7 @@ trait APIGateway extends Service {
     params: CreateDocumentationPartRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DocumentationPart, Unit]
   ): Request[DocumentationPart, AWSError] = js.native
+  
   /**
     * 
     */
@@ -87,6 +94,7 @@ trait APIGateway extends Service {
     params: CreateDocumentationVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DocumentationVersion, Unit]
   ): Request[DocumentationVersion, AWSError] = js.native
+  
   /**
     * Creates a new domain name.
     */
@@ -100,6 +108,7 @@ trait APIGateway extends Service {
     params: CreateDomainNameRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DomainName, Unit]
   ): Request[DomainName, AWSError] = js.native
+  
   /**
     * Adds a new Model resource to an existing RestApi resource.
     */
@@ -110,6 +119,7 @@ trait APIGateway extends Service {
     */
   def createModel(params: CreateModelRequest): Request[Model, AWSError] = js.native
   def createModel(params: CreateModelRequest, callback: js.Function2[/* err */ AWSError, /* data */ Model, Unit]): Request[Model, AWSError] = js.native
+  
   /**
     * Creates a ReqeustValidator of a given RestApi.
     */
@@ -123,6 +133,7 @@ trait APIGateway extends Service {
     params: CreateRequestValidatorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RequestValidator, Unit]
   ): Request[RequestValidator, AWSError] = js.native
+  
   /**
     * Creates a Resource resource.
     */
@@ -136,6 +147,7 @@ trait APIGateway extends Service {
     params: CreateResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Resource, Unit]
   ): Request[Resource, AWSError] = js.native
+  
   /**
     * Creates a new RestApi resource.
     */
@@ -146,6 +158,7 @@ trait APIGateway extends Service {
     */
   def createRestApi(params: CreateRestApiRequest): Request[RestApi, AWSError] = js.native
   def createRestApi(params: CreateRestApiRequest, callback: js.Function2[/* err */ AWSError, /* data */ RestApi, Unit]): Request[RestApi, AWSError] = js.native
+  
   /**
     * Creates a new Stage resource that references a pre-existing Deployment for the API. 
     */
@@ -156,6 +169,7 @@ trait APIGateway extends Service {
     */
   def createStage(params: CreateStageRequest): Request[Stage, AWSError] = js.native
   def createStage(params: CreateStageRequest, callback: js.Function2[/* err */ AWSError, /* data */ Stage, Unit]): Request[Stage, AWSError] = js.native
+  
   /**
     * Creates a usage plan with the throttle and quota limits, as well as the associated API stages, specified in the payload. 
     */
@@ -169,6 +183,7 @@ trait APIGateway extends Service {
     params: CreateUsagePlanRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UsagePlan, Unit]
   ): Request[UsagePlan, AWSError] = js.native
+  
   /**
     * Creates a usage plan key for adding an existing API key to a usage plan.
     */
@@ -182,6 +197,7 @@ trait APIGateway extends Service {
     params: CreateUsagePlanKeyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UsagePlanKey, Unit]
   ): Request[UsagePlanKey, AWSError] = js.native
+  
   /**
     * Creates a VPC link, under the caller's account in a selected region, in an asynchronous operation that typically takes 2-4 minutes to complete and become operational. The caller must have permissions to create and update VPC Endpoint services.
     */
@@ -192,6 +208,7 @@ trait APIGateway extends Service {
     */
   def createVpcLink(params: CreateVpcLinkRequest): Request[VpcLink, AWSError] = js.native
   def createVpcLink(params: CreateVpcLinkRequest, callback: js.Function2[/* err */ AWSError, /* data */ VpcLink, Unit]): Request[VpcLink, AWSError] = js.native
+  
   /**
     * Deletes the ApiKey resource.
     */
@@ -205,6 +222,7 @@ trait APIGateway extends Service {
     params: DeleteApiKeyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes an existing Authorizer resource. AWS CLI
     */
@@ -218,6 +236,7 @@ trait APIGateway extends Service {
     params: DeleteAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the BasePathMapping resource.
     */
@@ -231,6 +250,7 @@ trait APIGateway extends Service {
     params: DeleteBasePathMappingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the ClientCertificate resource.
     */
@@ -244,6 +264,7 @@ trait APIGateway extends Service {
     params: DeleteClientCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a Deployment resource. Deleting a deployment will only succeed if there are no Stage resources associated with it.
     */
@@ -257,6 +278,7 @@ trait APIGateway extends Service {
     params: DeleteDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * 
     */
@@ -270,6 +292,7 @@ trait APIGateway extends Service {
     params: DeleteDocumentationPartRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * 
     */
@@ -283,6 +306,7 @@ trait APIGateway extends Service {
     params: DeleteDocumentationVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the DomainName resource.
     */
@@ -296,6 +320,7 @@ trait APIGateway extends Service {
     params: DeleteDomainNameRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Clears any customization of a GatewayResponse of a specified response type on the given RestApi and resets it with the default settings.
     */
@@ -309,6 +334,7 @@ trait APIGateway extends Service {
     params: DeleteGatewayResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Represents a delete integration.
     */
@@ -322,6 +348,7 @@ trait APIGateway extends Service {
     params: DeleteIntegrationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Represents a delete integration response.
     */
@@ -335,6 +362,7 @@ trait APIGateway extends Service {
     params: DeleteIntegrationResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes an existing Method resource.
     */
@@ -348,6 +376,7 @@ trait APIGateway extends Service {
     params: DeleteMethodRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes an existing MethodResponse resource.
     */
@@ -361,6 +390,7 @@ trait APIGateway extends Service {
     params: DeleteMethodResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a model.
     */
@@ -371,6 +401,7 @@ trait APIGateway extends Service {
     */
   def deleteModel(params: DeleteModelRequest): Request[js.Object, AWSError] = js.native
   def deleteModel(params: DeleteModelRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a RequestValidator of a given RestApi.
     */
@@ -384,6 +415,7 @@ trait APIGateway extends Service {
     params: DeleteRequestValidatorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a Resource resource.
     */
@@ -397,6 +429,7 @@ trait APIGateway extends Service {
     params: DeleteResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes the specified API.
     */
@@ -410,6 +443,7 @@ trait APIGateway extends Service {
     params: DeleteRestApiRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a Stage resource.
     */
@@ -420,6 +454,7 @@ trait APIGateway extends Service {
     */
   def deleteStage(params: DeleteStageRequest): Request[js.Object, AWSError] = js.native
   def deleteStage(params: DeleteStageRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a usage plan of a given plan Id.
     */
@@ -433,6 +468,7 @@ trait APIGateway extends Service {
     params: DeleteUsagePlanRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a usage plan key and remove the underlying API key from the associated usage plan.
     */
@@ -446,6 +482,7 @@ trait APIGateway extends Service {
     params: DeleteUsagePlanKeyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes an existing VpcLink of a specified identifier.
     */
@@ -459,6 +496,7 @@ trait APIGateway extends Service {
     params: DeleteVpcLinkRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Flushes all authorizer cache entries on a stage.
     */
@@ -472,6 +510,7 @@ trait APIGateway extends Service {
     params: FlushStageAuthorizersCacheRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Flushes a stage's cache.
     */
@@ -485,6 +524,7 @@ trait APIGateway extends Service {
     params: FlushStageCacheRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Generates a ClientCertificate resource.
     */
@@ -498,6 +538,7 @@ trait APIGateway extends Service {
     params: GenerateClientCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ClientCertificate, Unit]
   ): Request[ClientCertificate, AWSError] = js.native
+  
   /**
     * Gets information about the current Account resource.
     */
@@ -508,6 +549,7 @@ trait APIGateway extends Service {
     */
   def getAccount(params: GetAccountRequest): Request[Account, AWSError] = js.native
   def getAccount(params: GetAccountRequest, callback: js.Function2[/* err */ AWSError, /* data */ Account, Unit]): Request[Account, AWSError] = js.native
+  
   /**
     * Gets information about the current ApiKey resource.
     */
@@ -518,6 +560,7 @@ trait APIGateway extends Service {
     */
   def getApiKey(params: GetApiKeyRequest): Request[ApiKey, AWSError] = js.native
   def getApiKey(params: GetApiKeyRequest, callback: js.Function2[/* err */ AWSError, /* data */ ApiKey, Unit]): Request[ApiKey, AWSError] = js.native
+  
   /**
     * Gets information about the current ApiKeys resource.
     */
@@ -528,6 +571,7 @@ trait APIGateway extends Service {
     */
   def getApiKeys(params: GetApiKeysRequest): Request[ApiKeys, AWSError] = js.native
   def getApiKeys(params: GetApiKeysRequest, callback: js.Function2[/* err */ AWSError, /* data */ ApiKeys, Unit]): Request[ApiKeys, AWSError] = js.native
+  
   /**
     * Describe an existing Authorizer resource. AWS CLI
     */
@@ -541,6 +585,7 @@ trait APIGateway extends Service {
     params: GetAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Authorizer, Unit]
   ): Request[Authorizer, AWSError] = js.native
+  
   /**
     * Describe an existing Authorizers resource. AWS CLI
     */
@@ -554,6 +599,7 @@ trait APIGateway extends Service {
     params: GetAuthorizersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Authorizers, Unit]
   ): Request[Authorizers, AWSError] = js.native
+  
   /**
     * Describe a BasePathMapping resource.
     */
@@ -567,6 +613,7 @@ trait APIGateway extends Service {
     params: GetBasePathMappingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BasePathMapping, Unit]
   ): Request[BasePathMapping, AWSError] = js.native
+  
   /**
     * Represents a collection of BasePathMapping resources.
     */
@@ -580,6 +627,7 @@ trait APIGateway extends Service {
     params: GetBasePathMappingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BasePathMappings, Unit]
   ): Request[BasePathMappings, AWSError] = js.native
+  
   /**
     * Gets information about the current ClientCertificate resource.
     */
@@ -593,6 +641,7 @@ trait APIGateway extends Service {
     params: GetClientCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ClientCertificate, Unit]
   ): Request[ClientCertificate, AWSError] = js.native
+  
   /**
     * Gets a collection of ClientCertificate resources.
     */
@@ -606,6 +655,7 @@ trait APIGateway extends Service {
     params: GetClientCertificatesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ClientCertificates, Unit]
   ): Request[ClientCertificates, AWSError] = js.native
+  
   /**
     * Gets information about a Deployment resource.
     */
@@ -619,6 +669,7 @@ trait APIGateway extends Service {
     params: GetDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Deployment, Unit]
   ): Request[Deployment, AWSError] = js.native
+  
   /**
     * Gets information about a Deployments collection.
     */
@@ -632,6 +683,7 @@ trait APIGateway extends Service {
     params: GetDeploymentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Deployments, Unit]
   ): Request[Deployments, AWSError] = js.native
+  
   /**
     * 
     */
@@ -645,6 +697,7 @@ trait APIGateway extends Service {
     params: GetDocumentationPartRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DocumentationPart, Unit]
   ): Request[DocumentationPart, AWSError] = js.native
+  
   /**
     * 
     */
@@ -658,6 +711,7 @@ trait APIGateway extends Service {
     params: GetDocumentationPartsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DocumentationParts, Unit]
   ): Request[DocumentationParts, AWSError] = js.native
+  
   /**
     * 
     */
@@ -671,6 +725,7 @@ trait APIGateway extends Service {
     params: GetDocumentationVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DocumentationVersion, Unit]
   ): Request[DocumentationVersion, AWSError] = js.native
+  
   /**
     * 
     */
@@ -684,6 +739,7 @@ trait APIGateway extends Service {
     params: GetDocumentationVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DocumentationVersions, Unit]
   ): Request[DocumentationVersions, AWSError] = js.native
+  
   /**
     * Represents a domain name that is contained in a simpler, more intuitive URL that can be called.
     */
@@ -697,6 +753,7 @@ trait APIGateway extends Service {
     params: GetDomainNameRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DomainName, Unit]
   ): Request[DomainName, AWSError] = js.native
+  
   /**
     * Represents a collection of DomainName resources.
     */
@@ -710,6 +767,7 @@ trait APIGateway extends Service {
     params: GetDomainNamesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DomainNames, Unit]
   ): Request[DomainNames, AWSError] = js.native
+  
   /**
     * Exports a deployed version of a RestApi in a specified format.
     */
@@ -723,6 +781,7 @@ trait APIGateway extends Service {
     params: GetExportRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ExportResponse, Unit]
   ): Request[ExportResponse, AWSError] = js.native
+  
   /**
     * Gets a GatewayResponse of a specified response type on the given RestApi.
     */
@@ -736,6 +795,7 @@ trait APIGateway extends Service {
     params: GetGatewayResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GatewayResponse, Unit]
   ): Request[GatewayResponse, AWSError] = js.native
+  
   /**
     * Gets the GatewayResponses collection on the given RestApi. If an API developer has not added any definitions for gateway responses, the result will be the API Gateway-generated default GatewayResponses collection for the supported response types.
     */
@@ -749,6 +809,7 @@ trait APIGateway extends Service {
     params: GetGatewayResponsesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GatewayResponses, Unit]
   ): Request[GatewayResponses, AWSError] = js.native
+  
   /**
     * Get the integration settings.
     */
@@ -762,6 +823,7 @@ trait APIGateway extends Service {
     params: GetIntegrationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Integration, Unit]
   ): Request[Integration, AWSError] = js.native
+  
   /**
     * Represents a get integration response.
     */
@@ -775,6 +837,7 @@ trait APIGateway extends Service {
     params: GetIntegrationResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ IntegrationResponse, Unit]
   ): Request[IntegrationResponse, AWSError] = js.native
+  
   /**
     * Describe an existing Method resource.
     */
@@ -785,6 +848,7 @@ trait APIGateway extends Service {
     */
   def getMethod(params: GetMethodRequest): Request[Method, AWSError] = js.native
   def getMethod(params: GetMethodRequest, callback: js.Function2[/* err */ AWSError, /* data */ Method, Unit]): Request[Method, AWSError] = js.native
+  
   /**
     * Describes a MethodResponse resource.
     */
@@ -798,6 +862,7 @@ trait APIGateway extends Service {
     params: GetMethodResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ MethodResponse, Unit]
   ): Request[MethodResponse, AWSError] = js.native
+  
   /**
     * Describes an existing model defined for a RestApi resource.
     */
@@ -808,6 +873,7 @@ trait APIGateway extends Service {
     */
   def getModel(params: GetModelRequest): Request[Model, AWSError] = js.native
   def getModel(params: GetModelRequest, callback: js.Function2[/* err */ AWSError, /* data */ Model, Unit]): Request[Model, AWSError] = js.native
+  
   /**
     * Generates a sample mapping template that can be used to transform a payload into the structure of a model.
     */
@@ -821,6 +887,7 @@ trait APIGateway extends Service {
     params: GetModelTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Template, Unit]
   ): Request[Template, AWSError] = js.native
+  
   /**
     * Describes existing Models defined for a RestApi resource.
     */
@@ -831,6 +898,7 @@ trait APIGateway extends Service {
     */
   def getModels(params: GetModelsRequest): Request[Models, AWSError] = js.native
   def getModels(params: GetModelsRequest, callback: js.Function2[/* err */ AWSError, /* data */ Models, Unit]): Request[Models, AWSError] = js.native
+  
   /**
     * Gets a RequestValidator of a given RestApi.
     */
@@ -844,6 +912,7 @@ trait APIGateway extends Service {
     params: GetRequestValidatorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RequestValidator, Unit]
   ): Request[RequestValidator, AWSError] = js.native
+  
   /**
     * Gets the RequestValidators collection of a given RestApi.
     */
@@ -857,6 +926,7 @@ trait APIGateway extends Service {
     params: GetRequestValidatorsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RequestValidators, Unit]
   ): Request[RequestValidators, AWSError] = js.native
+  
   /**
     * Lists information about a resource.
     */
@@ -867,6 +937,7 @@ trait APIGateway extends Service {
     */
   def getResource(params: GetResourceRequest): Request[Resource, AWSError] = js.native
   def getResource(params: GetResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ Resource, Unit]): Request[Resource, AWSError] = js.native
+  
   /**
     * Lists information about a collection of Resource resources.
     */
@@ -880,6 +951,7 @@ trait APIGateway extends Service {
     params: GetResourcesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Resources, Unit]
   ): Request[Resources, AWSError] = js.native
+  
   /**
     * Lists the RestApi resource in the collection.
     */
@@ -890,6 +962,7 @@ trait APIGateway extends Service {
     */
   def getRestApi(params: GetRestApiRequest): Request[RestApi, AWSError] = js.native
   def getRestApi(params: GetRestApiRequest, callback: js.Function2[/* err */ AWSError, /* data */ RestApi, Unit]): Request[RestApi, AWSError] = js.native
+  
   /**
     * Lists the RestApis resources for your collection.
     */
@@ -900,6 +973,7 @@ trait APIGateway extends Service {
     */
   def getRestApis(params: GetRestApisRequest): Request[RestApis, AWSError] = js.native
   def getRestApis(params: GetRestApisRequest, callback: js.Function2[/* err */ AWSError, /* data */ RestApis, Unit]): Request[RestApis, AWSError] = js.native
+  
   /**
     * Generates a client SDK for a RestApi and Stage.
     */
@@ -910,6 +984,7 @@ trait APIGateway extends Service {
     */
   def getSdk(params: GetSdkRequest): Request[SdkResponse, AWSError] = js.native
   def getSdk(params: GetSdkRequest, callback: js.Function2[/* err */ AWSError, /* data */ SdkResponse, Unit]): Request[SdkResponse, AWSError] = js.native
+  
   /**
     * 
     */
@@ -920,6 +995,7 @@ trait APIGateway extends Service {
     */
   def getSdkType(params: GetSdkTypeRequest): Request[SdkType, AWSError] = js.native
   def getSdkType(params: GetSdkTypeRequest, callback: js.Function2[/* err */ AWSError, /* data */ SdkType, Unit]): Request[SdkType, AWSError] = js.native
+  
   /**
     * 
     */
@@ -930,6 +1006,7 @@ trait APIGateway extends Service {
     */
   def getSdkTypes(params: GetSdkTypesRequest): Request[SdkTypes, AWSError] = js.native
   def getSdkTypes(params: GetSdkTypesRequest, callback: js.Function2[/* err */ AWSError, /* data */ SdkTypes, Unit]): Request[SdkTypes, AWSError] = js.native
+  
   /**
     * Gets information about a Stage resource.
     */
@@ -940,6 +1017,7 @@ trait APIGateway extends Service {
     */
   def getStage(params: GetStageRequest): Request[Stage, AWSError] = js.native
   def getStage(params: GetStageRequest, callback: js.Function2[/* err */ AWSError, /* data */ Stage, Unit]): Request[Stage, AWSError] = js.native
+  
   /**
     * Gets information about one or more Stage resources.
     */
@@ -950,6 +1028,7 @@ trait APIGateway extends Service {
     */
   def getStages(params: GetStagesRequest): Request[Stages, AWSError] = js.native
   def getStages(params: GetStagesRequest, callback: js.Function2[/* err */ AWSError, /* data */ Stages, Unit]): Request[Stages, AWSError] = js.native
+  
   /**
     * Gets the Tags collection for a given resource.
     */
@@ -960,6 +1039,7 @@ trait APIGateway extends Service {
     */
   def getTags(params: GetTagsRequest): Request[Tags, AWSError] = js.native
   def getTags(params: GetTagsRequest, callback: js.Function2[/* err */ AWSError, /* data */ Tags, Unit]): Request[Tags, AWSError] = js.native
+  
   /**
     * Gets the usage data of a usage plan in a specified time interval.
     */
@@ -970,6 +1050,7 @@ trait APIGateway extends Service {
     */
   def getUsage(params: GetUsageRequest): Request[Usage, AWSError] = js.native
   def getUsage(params: GetUsageRequest, callback: js.Function2[/* err */ AWSError, /* data */ Usage, Unit]): Request[Usage, AWSError] = js.native
+  
   /**
     * Gets a usage plan of a given plan identifier.
     */
@@ -983,6 +1064,7 @@ trait APIGateway extends Service {
     params: GetUsagePlanRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UsagePlan, Unit]
   ): Request[UsagePlan, AWSError] = js.native
+  
   /**
     * Gets a usage plan key of a given key identifier.
     */
@@ -996,6 +1078,7 @@ trait APIGateway extends Service {
     params: GetUsagePlanKeyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UsagePlanKey, Unit]
   ): Request[UsagePlanKey, AWSError] = js.native
+  
   /**
     * Gets all the usage plan keys representing the API keys added to a specified usage plan.
     */
@@ -1009,6 +1092,7 @@ trait APIGateway extends Service {
     params: GetUsagePlanKeysRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UsagePlanKeys, Unit]
   ): Request[UsagePlanKeys, AWSError] = js.native
+  
   /**
     * Gets all the usage plans of the caller's account.
     */
@@ -1022,6 +1106,7 @@ trait APIGateway extends Service {
     params: GetUsagePlansRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UsagePlans, Unit]
   ): Request[UsagePlans, AWSError] = js.native
+  
   /**
     * Gets a specified VPC link under the caller's account in a region.
     */
@@ -1032,6 +1117,7 @@ trait APIGateway extends Service {
     */
   def getVpcLink(params: GetVpcLinkRequest): Request[VpcLink, AWSError] = js.native
   def getVpcLink(params: GetVpcLinkRequest, callback: js.Function2[/* err */ AWSError, /* data */ VpcLink, Unit]): Request[VpcLink, AWSError] = js.native
+  
   /**
     * Gets the VpcLinks collection under the caller's account in a selected region.
     */
@@ -1042,6 +1128,7 @@ trait APIGateway extends Service {
     */
   def getVpcLinks(params: GetVpcLinksRequest): Request[VpcLinks, AWSError] = js.native
   def getVpcLinks(params: GetVpcLinksRequest, callback: js.Function2[/* err */ AWSError, /* data */ VpcLinks, Unit]): Request[VpcLinks, AWSError] = js.native
+  
   /**
     * Import API keys from an external source, such as a CSV-formatted file.
     */
@@ -1055,6 +1142,7 @@ trait APIGateway extends Service {
     params: ImportApiKeysRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ApiKeyIds, Unit]
   ): Request[ApiKeyIds, AWSError] = js.native
+  
   /**
     * 
     */
@@ -1068,6 +1156,7 @@ trait APIGateway extends Service {
     params: ImportDocumentationPartsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DocumentationPartIds, Unit]
   ): Request[DocumentationPartIds, AWSError] = js.native
+  
   /**
     * A feature of the API Gateway control service for creating a new API from an external API definition file.
     */
@@ -1078,6 +1167,7 @@ trait APIGateway extends Service {
     */
   def importRestApi(params: ImportRestApiRequest): Request[RestApi, AWSError] = js.native
   def importRestApi(params: ImportRestApiRequest, callback: js.Function2[/* err */ AWSError, /* data */ RestApi, Unit]): Request[RestApi, AWSError] = js.native
+  
   /**
     * Creates a customization of a GatewayResponse of a specified response type and status code on the given RestApi.
     */
@@ -1091,6 +1181,7 @@ trait APIGateway extends Service {
     params: PutGatewayResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GatewayResponse, Unit]
   ): Request[GatewayResponse, AWSError] = js.native
+  
   /**
     * Sets up a method's integration.
     */
@@ -1104,6 +1195,7 @@ trait APIGateway extends Service {
     params: PutIntegrationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Integration, Unit]
   ): Request[Integration, AWSError] = js.native
+  
   /**
     * Represents a put integration.
     */
@@ -1117,6 +1209,7 @@ trait APIGateway extends Service {
     params: PutIntegrationResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ IntegrationResponse, Unit]
   ): Request[IntegrationResponse, AWSError] = js.native
+  
   /**
     * Add a method to an existing Resource resource.
     */
@@ -1127,6 +1220,7 @@ trait APIGateway extends Service {
     */
   def putMethod(params: PutMethodRequest): Request[Method, AWSError] = js.native
   def putMethod(params: PutMethodRequest, callback: js.Function2[/* err */ AWSError, /* data */ Method, Unit]): Request[Method, AWSError] = js.native
+  
   /**
     * Adds a MethodResponse to an existing Method resource.
     */
@@ -1140,6 +1234,7 @@ trait APIGateway extends Service {
     params: PutMethodResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ MethodResponse, Unit]
   ): Request[MethodResponse, AWSError] = js.native
+  
   /**
     * A feature of the API Gateway control service for updating an existing API with an input of external API definitions. The update can take the form of merging the supplied definition into the existing API or overwriting the existing API.
     */
@@ -1150,6 +1245,7 @@ trait APIGateway extends Service {
     */
   def putRestApi(params: PutRestApiRequest): Request[RestApi, AWSError] = js.native
   def putRestApi(params: PutRestApiRequest, callback: js.Function2[/* err */ AWSError, /* data */ RestApi, Unit]): Request[RestApi, AWSError] = js.native
+  
   /**
     * Adds or updates a tag on a given resource.
     */
@@ -1160,6 +1256,7 @@ trait APIGateway extends Service {
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
   /**
     * Simulate the execution of an Authorizer in your RestApi with headers, parameters, and an incoming request body.  Use Lambda Function as Authorizer Use Cognito User Pool as Authorizer 
     */
@@ -1173,6 +1270,7 @@ trait APIGateway extends Service {
     params: TestInvokeAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TestInvokeAuthorizerResponse, Unit]
   ): Request[TestInvokeAuthorizerResponse, AWSError] = js.native
+  
   /**
     * Simulate the execution of a Method in your RestApi with headers, parameters, and an incoming request body.
     */
@@ -1186,6 +1284,7 @@ trait APIGateway extends Service {
     params: TestInvokeMethodRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TestInvokeMethodResponse, Unit]
   ): Request[TestInvokeMethodResponse, AWSError] = js.native
+  
   /**
     * Removes a tag from a given resource.
     */
@@ -1199,6 +1298,7 @@ trait APIGateway extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Changes information about the current Account resource.
     */
@@ -1209,6 +1309,7 @@ trait APIGateway extends Service {
     */
   def updateAccount(params: UpdateAccountRequest): Request[Account, AWSError] = js.native
   def updateAccount(params: UpdateAccountRequest, callback: js.Function2[/* err */ AWSError, /* data */ Account, Unit]): Request[Account, AWSError] = js.native
+  
   /**
     * Changes information about an ApiKey resource.
     */
@@ -1219,6 +1320,7 @@ trait APIGateway extends Service {
     */
   def updateApiKey(params: UpdateApiKeyRequest): Request[ApiKey, AWSError] = js.native
   def updateApiKey(params: UpdateApiKeyRequest, callback: js.Function2[/* err */ AWSError, /* data */ ApiKey, Unit]): Request[ApiKey, AWSError] = js.native
+  
   /**
     * Updates an existing Authorizer resource. AWS CLI
     */
@@ -1232,6 +1334,7 @@ trait APIGateway extends Service {
     params: UpdateAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Authorizer, Unit]
   ): Request[Authorizer, AWSError] = js.native
+  
   /**
     * Changes information about the BasePathMapping resource.
     */
@@ -1245,6 +1348,7 @@ trait APIGateway extends Service {
     params: UpdateBasePathMappingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BasePathMapping, Unit]
   ): Request[BasePathMapping, AWSError] = js.native
+  
   /**
     * Changes information about an ClientCertificate resource.
     */
@@ -1258,6 +1362,7 @@ trait APIGateway extends Service {
     params: UpdateClientCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ClientCertificate, Unit]
   ): Request[ClientCertificate, AWSError] = js.native
+  
   /**
     * Changes information about a Deployment resource.
     */
@@ -1271,6 +1376,7 @@ trait APIGateway extends Service {
     params: UpdateDeploymentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Deployment, Unit]
   ): Request[Deployment, AWSError] = js.native
+  
   /**
     * 
     */
@@ -1284,6 +1390,7 @@ trait APIGateway extends Service {
     params: UpdateDocumentationPartRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DocumentationPart, Unit]
   ): Request[DocumentationPart, AWSError] = js.native
+  
   /**
     * 
     */
@@ -1297,6 +1404,7 @@ trait APIGateway extends Service {
     params: UpdateDocumentationVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DocumentationVersion, Unit]
   ): Request[DocumentationVersion, AWSError] = js.native
+  
   /**
     * Changes information about the DomainName resource.
     */
@@ -1310,6 +1418,7 @@ trait APIGateway extends Service {
     params: UpdateDomainNameRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DomainName, Unit]
   ): Request[DomainName, AWSError] = js.native
+  
   /**
     * Updates a GatewayResponse of a specified response type on the given RestApi.
     */
@@ -1323,6 +1432,7 @@ trait APIGateway extends Service {
     params: UpdateGatewayResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GatewayResponse, Unit]
   ): Request[GatewayResponse, AWSError] = js.native
+  
   /**
     * Represents an update integration.
     */
@@ -1336,6 +1446,7 @@ trait APIGateway extends Service {
     params: UpdateIntegrationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Integration, Unit]
   ): Request[Integration, AWSError] = js.native
+  
   /**
     * Represents an update integration response.
     */
@@ -1349,6 +1460,7 @@ trait APIGateway extends Service {
     params: UpdateIntegrationResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ IntegrationResponse, Unit]
   ): Request[IntegrationResponse, AWSError] = js.native
+  
   /**
     * Updates an existing Method resource.
     */
@@ -1359,6 +1471,7 @@ trait APIGateway extends Service {
     */
   def updateMethod(params: UpdateMethodRequest): Request[Method, AWSError] = js.native
   def updateMethod(params: UpdateMethodRequest, callback: js.Function2[/* err */ AWSError, /* data */ Method, Unit]): Request[Method, AWSError] = js.native
+  
   /**
     * Updates an existing MethodResponse resource.
     */
@@ -1372,6 +1485,7 @@ trait APIGateway extends Service {
     params: UpdateMethodResponseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ MethodResponse, Unit]
   ): Request[MethodResponse, AWSError] = js.native
+  
   /**
     * Changes information about a model.
     */
@@ -1382,6 +1496,7 @@ trait APIGateway extends Service {
     */
   def updateModel(params: UpdateModelRequest): Request[Model, AWSError] = js.native
   def updateModel(params: UpdateModelRequest, callback: js.Function2[/* err */ AWSError, /* data */ Model, Unit]): Request[Model, AWSError] = js.native
+  
   /**
     * Updates a RequestValidator of a given RestApi.
     */
@@ -1395,6 +1510,7 @@ trait APIGateway extends Service {
     params: UpdateRequestValidatorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RequestValidator, Unit]
   ): Request[RequestValidator, AWSError] = js.native
+  
   /**
     * Changes information about a Resource resource.
     */
@@ -1408,6 +1524,7 @@ trait APIGateway extends Service {
     params: UpdateResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Resource, Unit]
   ): Request[Resource, AWSError] = js.native
+  
   /**
     * Changes information about the specified API.
     */
@@ -1418,6 +1535,7 @@ trait APIGateway extends Service {
     */
   def updateRestApi(params: UpdateRestApiRequest): Request[RestApi, AWSError] = js.native
   def updateRestApi(params: UpdateRestApiRequest, callback: js.Function2[/* err */ AWSError, /* data */ RestApi, Unit]): Request[RestApi, AWSError] = js.native
+  
   /**
     * Changes information about a Stage resource.
     */
@@ -1428,6 +1546,7 @@ trait APIGateway extends Service {
     */
   def updateStage(params: UpdateStageRequest): Request[Stage, AWSError] = js.native
   def updateStage(params: UpdateStageRequest, callback: js.Function2[/* err */ AWSError, /* data */ Stage, Unit]): Request[Stage, AWSError] = js.native
+  
   /**
     * Grants a temporary extension to the remaining quota of a usage plan associated with a specified API key.
     */
@@ -1438,6 +1557,7 @@ trait APIGateway extends Service {
     */
   def updateUsage(params: UpdateUsageRequest): Request[Usage, AWSError] = js.native
   def updateUsage(params: UpdateUsageRequest, callback: js.Function2[/* err */ AWSError, /* data */ Usage, Unit]): Request[Usage, AWSError] = js.native
+  
   /**
     * Updates a usage plan of a given plan Id.
     */
@@ -1451,6 +1571,7 @@ trait APIGateway extends Service {
     params: UpdateUsagePlanRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UsagePlan, Unit]
   ): Request[UsagePlan, AWSError] = js.native
+  
   /**
     * Updates an existing VpcLink of a specified identifier.
     */
@@ -1462,4 +1583,3 @@ trait APIGateway extends Service {
   def updateVpcLink(params: UpdateVpcLinkRequest): Request[VpcLink, AWSError] = js.native
   def updateVpcLink(params: UpdateVpcLinkRequest, callback: js.Function2[/* err */ AWSError, /* data */ VpcLink, Unit]): Request[VpcLink, AWSError] = js.native
 }
-

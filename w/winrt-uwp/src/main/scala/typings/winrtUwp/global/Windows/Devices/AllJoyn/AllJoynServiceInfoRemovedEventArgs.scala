@@ -2,7 +2,7 @@ package typings.winrtUwp.global.Windows.Devices.AllJoyn
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information that identifies an advertising app that is no longer available. */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynServiceInfoRemovedEventArgs")
@@ -15,4 +15,3 @@ class AllJoynServiceInfoRemovedEventArgs protected ()
     */
   def this(uniqueName: String) = this()
 }
-
